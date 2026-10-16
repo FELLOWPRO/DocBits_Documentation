@@ -1,58 +1,58 @@
-# Supplier General Settings
+# 供应商常规设置
 
-<figure><img src="../../../.gitbook/assets/supplier_general_settings.png" alt="Supplier General Settings"><figcaption><p>Supplier General Settings Page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_general_settings.png" alt="供应商常规设置"><figcaption><p>供应商常规设置页面</p></figcaption></figure>
 
-### Overview
+### 概览
 
-The **Supplier General Settings** interface provides administrators with essential tools to customize the supplier portal. Key features include the ability to upload a company logo and define the policy and privacy statement. These settings are crucial for maintaining brand consistency and ensuring compliance with legal requirements.
+**供应商常规设置**界面为管理员提供了自定义供应商门户所需的重要工具。主要功能包括上传公司徽标以及定义政策和隐私声明。这些设置对于保持品牌一致性并确保符合法律要求至关重要。
 
-### Upload Logo
+### 上传徽标
 
-#### Purpose
+#### 用途
 
-The **Upload Logo** feature allows administrators to customize the supplier portal by uploading their company's logo. This enhances brand recognition and provides a consistent visual experience for users accessing the portal.
+**上传徽标**功能允许管理员上传公司徽标，自定义供应商门户。这有助于提升品牌辨识度，并为访问门户的用户提供一致的视觉体验。
 
-#### Steps to Upload a Logo
+#### 上传徽标的步骤
 
-1. **Access Supplier General Settings**:
-   * Navigate to the **Supplier General Settings** section from the main menu.
-2. **Locate the Upload Logo Section**:
-   * Scroll down to the **Upload Logo** section within the settings page.
-3. **Upload a New Logo**:
-   * Click on the **Upload Logo** area to open the file selection dialog.
-   * Select the image file you wish to upload. Supported formats typically include `.png`, `.jpg`, or `.jpeg`.
-   * The uploaded logo will be displayed in the preview area.
-4. **Save the Uploaded Logo**:
-   * Once the logo is uploaded, click the **Save** button to apply the changes.
-   * The new logo will now be displayed across the supplier portal.
+1. **访问供应商常规设置**：
+   * 从主菜单进入**供应商常规设置**部分。
+2. **找到上传徽标部分**：
+   * 向下滚动到设置页面中的**上传徽标**部分。
+3. **上传新徽标**：
+   * 点击**上传徽标**区域，打开文件选择对话框。
+   * 选择要上传的图像文件。通常支持 `.png`、`.jpg` 或 `.jpeg` 格式。
+   * 上传的徽标会显示在预览区域。
+4. **保存上传的徽标**：
+   * 上传徽标后，点击**保存**按钮以应用更改。
+   * 新徽标随后会显示在整个供应商门户中。
 
-#### Best Practices
+#### 最佳实践
 
-* **Logo Dimensions**: Ensure that the logo's dimensions are optimized for both desktop and mobile views. The system might offer guidelines or automatic resizing.
-* **File Size**: Use a compressed image file to reduce load times and enhance user experience.
-* **Brand Consistency**: Use the same logo across all platforms to maintain a consistent brand identity.
+* **徽标尺寸**：确保徽标尺寸适合桌面端和移动端视图。系统可能会提供指南或自动调整尺寸。
+* **文件大小**：使用经过压缩的图像文件，以缩短加载时间并提升用户体验。
+* **品牌一致性**：在所有平台上使用相同的徽标，以保持一致的品牌形象。
 
-### Policy and Privacy Statement
+### 政策和隐私声明
 
-#### Purpose
+#### 用途
 
-The **Policy and Privacy Statement** section allows administrators to upload or define the legal documents that govern the use of the supplier portal. These documents are critical for compliance with legal and regulatory requirements, outlining the terms of use, data protection policies, and other essential information for users.
+**政策和隐私声明**部分允许管理员上传或定义管理供应商门户使用的法律文件。这些文件对于满足法律和监管要求至关重要，其中说明了使用条款、数据保护政策以及面向用户的其他重要信息。
 
-#### Steps to Upload Policy and Privacy Statement
+#### 上传政策和隐私声明的步骤
 
-1. **Access Supplier General Settings**:
-   * Navigate to the **Supplier General Settings** section from the main menu.
-2. **Locate the Policy and Privacy Statement Section**:
-   * Scroll down to the **Policy and Privacy Statement** section.
-3. **Upload or Update the Documents**:
-   * Click on the **Upload Document** button to select the relevant file(s).
-   * Choose the document file from your local storage. Supported formats typically include `.pdf`, `.docx`, or `.txt`.
-   * Uploaded documents will be listed in this section for review.
-4. **Save the Changes**:
-   * After uploading or updating the documents, click the **Save** button to ensure the new policies are applied.
+1. **访问供应商常规设置**：
+   * 从主菜单进入**供应商常规设置**部分。
+2. **找到政策和隐私声明部分**：
+   * 向下滚动到**政策和隐私声明**部分。
+3. **上传或更新文件**：
+   * 点击**上传文档**按钮，选择相关文件。
+   * 从本地存储中选择文档文件。通常支持 `.pdf`、`.docx` 或 `.txt` 格式。
+   * 上传的文件会列在此部分，供审核。
+4. **保存更改**：
+   * 上传或更新文件后，点击**保存**按钮，确保新政策已生效。
 
-#### Best Practices
+#### 最佳实践
 
-* **Regular Updates**: Regularly review and update the Policy and Privacy Statement to ensure they comply with the latest legal requirements and company policies.
-* **Clarity and Accessibility**: Ensure that the uploaded documents are clear, concise, and accessible to all users. Consider providing translations if your supplier base is international.
-* **Legal Review**: Have all documents reviewed by legal counsel before uploading to ensure compliance with relevant laws and regulations.
+* **定期更新**：定期检查并更新政策和隐私声明，确保其符合最新的法律要求和公司政策。
+* **清晰易用**：确保上传的文件清晰、简洁，并且所有用户都能访问。如果供应商群体来自多个国家或地区，可考虑提供翻译版本。
+* **法律审核**：上传前请法律顾问审核所有文件，确保其符合相关法律法规。

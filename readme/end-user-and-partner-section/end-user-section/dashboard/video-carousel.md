@@ -1,11 +1,11 @@
-# Video Carousel
+# 视频轮播
 
-A small area on the Prepare Dashboard that plays short tips about features in DocBits — handy things to try, places you might not have looked.
+Prepare Dashboard 上的一个小区域，用于播放 DocBits 功能的简短提示，介绍一些实用技巧和你可能还没发现的功能。
 
-## Where to find it
+## 在哪里找到
 
-The Video Carousel appears on the Prepare Dashboard while documents are being imported. On wide screens it sits to the right of the progress bar. It is hidden on small screens.
+导入文档时，视频轮播会显示在 Prepare Dashboard 上。在宽屏设备上，它位于进度条右侧；在小屏设备上会隐藏。
 
-## Using it
+## 使用方法
 
-Tips play one after another with a short caption underneath. Click the dots below the video to jump to a specific tip. There is no sound — read the caption to see what each tip is about.
+提示会依次播放，视频下方会显示简短说明。点击视频下方的圆点可跳转到特定提示。视频没有声音，请阅读说明了解每条提示的内容。

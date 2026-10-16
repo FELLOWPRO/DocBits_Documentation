@@ -1,47 +1,47 @@
-# Activating Permissions
+# 激活权限
 
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
-DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
+DocBits 群组与权限教程：设置用户角色、访问权限并保护您的工作区
 {% endembed %}
 
-Enabling or disabling the permission system using the switch has various effects on the functionality in DocBits.
+使用开关启用或禁用权限系统，会对 DocBits 中的功能产生多种影响。
 
-## **Enabling the permission system:**
+## **启用权限系统：**
 
-<figure><img src="../../../../../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (274).png" alt=""><figcaption></figcaption></figure>
 
-* When the permission system is enabled, the access permissions for users and groups are applied.
-* Users are only granted access to the resources they are explicitly authorized to access based on the permissions assigned.
-* Administrators can manage the permissions for individual users and groups and ensure that only authorized people can view or edit the data.
+* 启用权限系统后，系统会应用针对用户和群组设置的访问权限。
+* 用户只能访问根据分配的权限明确授权他们访问的资源。
+* 管理员可以管理各个用户和群组的权限，确保只有获授权的人员才能查看或编辑数据。
 
-<figure><img src="../../../../../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
 
-## Only Assigned Documents
+## 仅显示已分配的文档
 
-<figure><img src="../../../../../.gitbook/assets/image (346).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
 
-The **Only Assigned Documents** toggle button controls the visibility of documents for users based on their group assignments. When enabled, users can only view documents that are specifically assigned to them or a group they belong to. When disabled, users with the appropriate view permission can see all documents, regardless of assignment.
+**Only Assigned Documents**（仅显示已分配的文档）切换按钮根据用户所属的群组控制其可见的文档。启用后，用户只能查看明确分配给自己或其所属群组的文档。禁用后，拥有相应查看权限的用户可以看到所有文档，无论文档是否已分配。
 
-#### Functionality
+#### 功能说明
 
-* **Off State (Default)**:
-  * When the toggle is off, users who are part of a group can view all documents if they have the appropriate view permission. Document assignment does not affect visibility.
-* **On State**:
-  * When the toggle is on, users can only view documents that are explicitly assigned to them or a group they are a part of. This enforces stricter document visibility based on group assignments.
+* **关闭状态（默认）**：
+  * 关闭此开关时，群组成员只要拥有相应的查看权限，就可以查看所有文档。文档分配情况不会影响可见性。
+* **开启状态**：
+  * 开启此开关时，用户只能查看明确分配给自己或其所属群组的文档。这样会根据群组分配情况实施更严格的文档可见性控制。
 
-#### Example Scenario
+#### 示例场景
 
-1. **Default (Off State)**:
-   * A user who is part of the "Sales" group can see all documents in the system that they have permission to view, even if they are not assigned to those documents.
-2. **Enabled (On State)**:
-   * A user in the "Sales" group can only view documents that are assigned to them or the "Sales" group, restricting access to documents outside of their assignments.
+1. **默认（关闭状态）**：
+   * 属于“Sales”群组的用户可以查看系统中所有其有权查看的文档，即使这些文档并未分配给该用户。
+2. **已启用（开启状态）**：
+   * “Sales”群组中的用户只能查看分配给自己或“Sales”群组的文档，因此无法访问未分配给他们的文档。
 
-## Disabling the permission system:
+## 禁用权限系统：
 
-<figure><img src="../../../../../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (273).png" alt=""><figcaption></figcaption></figure>
 
-* When the permission system is disabled, all access permissions are removed and users typically have unrestricted access to all resources.
-* This can be useful when open collaboration is temporarily required without the restrictions of access control.
-* However, there may be an increased risk of data leakage or unauthorized access as users may be able to access sensitive information they are not authorized to access.
+* 禁用权限系统后，所有访问权限都会被移除，用户通常可以不受限制地访问所有资源。
+* 如果暂时需要开放协作，不受访问控制限制，此设置会很有用。
+* 但是，用户可能会访问其无权查看的敏感信息，从而增加数据泄露或未经授权访问的风险。
 
-Enabling or disabling the permission system is an important decision based on the security requirements and the way the organization operates. In environments where privacy and access control are critical, it is common to leave the permission system enabled to ensure data integrity and confidentiality. In other cases, disabling the permission system may be temporarily necessary to facilitate collaboration, but should be used with caution to minimize potential security risks.
+是否启用权限系统是一项重要决策，应根据安全要求和组织的运营方式来决定。在隐私和访问控制至关重要的环境中，通常应保持权限系统启用，以确保数据完整性和机密性。在其他情况下，为促进协作可能需要暂时禁用权限系统，但应谨慎操作，以尽量降低潜在的安全风险。

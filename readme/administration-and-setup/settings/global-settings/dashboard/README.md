@@ -1,67 +1,67 @@
-# Dashboard
+# 仪表板
 
-## Overview
+## 概述
 
-The Dashboard settings are designed to help administrators control the data presentation and interaction within the DocBits dashboard. These settings determine what information is immediately available upon logging in, ensuring that users have quick access to the most relevant data for their tasks.
+仪表板设置旨在帮助管理员控制 DocBits 仪表板中的数据显示和交互方式。这些设置决定用户登录后即可查看哪些信息，确保用户能够快速访问与其任务最相关的数据。
 
-<figure><img src="../../../../.gitbook/assets/dashboard_settings.png" alt="Dashboard Settings"><figcaption><p>Dashboard Settings Page</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dashboard_settings.png" alt="仪表板设置"><figcaption><p>仪表板设置页面</p></figcaption></figure>
 
-## Accessing the Dashboard Settings
+## 访问仪表板设置
 
-To access the dashboard settings, navigate to:\
-**Settings → Global Settings → Dashboard**
+要访问仪表板设置，请转到：\
+**设置 → 全局设置 → 仪表板**
 
 <figure><img src="../../../../.gitbook/assets/dashboard_settings.png" alt=""><figcaption></figcaption></figure>
 
-## **General**
+## **常规** <a id="general"></a>
 
-* **Reset filters**: Allows for the configuration of when dashboard filters should reset, such as after document upload, document restart, or document export. This helps in maintaining a clean slate for data viewing according to specific workflow stages.
-* **Dashboard data**:
-  * **Auto load dashboard upload**: Controls whether the dashboard should automatically load data upon user access, which can help in reducing load times and improving user experience by only loading data when needed.
-  *   **Export Dashboard Data**: This feature adds a new **Export** button to the dashboard toolbar, allowing you to export the current dashboard view as a **.csv** or **.xlsx** file.
+* **重置筛选器**：可配置仪表板筛选器在何时重置，例如在文档上传、文档重启或文档导出后重置。这有助于在工作流的特定阶段清除筛选条件，便于查看数据。
+* **仪表板数据**：
+  * **自动加载仪表板数据**：控制用户访问时仪表板是否自动加载数据。仅在需要时加载数据，有助于缩短加载时间并改善用户体验。
+  *   **导出仪表板数据**：此功能会在仪表板工具栏中添加一个新的 **导出** 按钮，允许您将当前仪表板视图导出为 **.csv** 或 **.xlsx** 文件。
 
       <figure><img src="../../../../.gitbook/assets/dashboard_settings_3.png" alt=""><figcaption></figcaption></figure>
 
-## **Export History**
+## **导出历史记录**
 
-In the **Export History**, you will see a table listing all past exports along with key information about each request.
+在 **导出历史记录** 中，您会看到一张表格，其中列出了以往的所有导出记录及每个请求的关键信息。
 
 <figure><img src="../../../../.gitbook/assets/dashboard_settings_4.png" alt=""><figcaption></figcaption></figure>
 
-The following details are included:
+其中包含以下详细信息：
 
-* **Email**: The email address from which the export was requested.
-* **Status**: The current status of the export (Pending, Completed).
-* **Requested At**: The date and time when the export was initiated.
-* **Completed At**: The date and time when the export was completed.
-* **Format**: The file format used for the export (CSV, XLSX).
-* **Filters Used**: Any filters that were applied to the dashboard at the time of export.
+* **电子邮件**：发起导出请求的电子邮件地址。
+* **状态**：导出的当前状态（待处理、已完成）。
+* **请求时间**：发起导出的日期和时间。
+* **完成时间**：导出完成的日期和时间。
+* **格式**：导出使用的文件格式（CSV、XLSX）。
+* **已用筛选器**：导出时应用于仪表板的所有筛选器。
 
-<mark style="color:red;">**Note**</mark>: To export tables the option Export Dashboard data in the [General](./#general) Section must be active
+<mark style="color:red;">**注意**</mark>：要导出表格，必须在[常规](./#general)部分启用“导出仪表板数据”选项。
 
-## **Action**
+## **操作**
 
-* **Assign to**: This feature allows users to define permissions for document assignment
-  * **Only for Admin**: Only admin-users can assign documents, regardless of permissions granted to non-admin users.
-  * **All Users**: All users who have been granted the necessary [permissions](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) can assign documents.
-* **Restart**: This feature allows users to define permissions for restarting documents
-  * **Only for Admin**: Only users with Admin privileges can restart documents, regardless of permissions granted to non-admin users.
-  * **Only Admin and Assignee**: Only users with Admin privileges and the assigned user can restart the document.
-  * **All Users**: All users who have been granted the necessary [permissions](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) can restart documents.
+* **分配给**：此功能允许用户定义文档分配权限。
+  * **仅限管理员**：无论授予非管理员用户何种权限，只有管理员用户可以分配文档。
+  * **所有用户**：所有已获得必要[权限](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md)的用户都可以分配文档。
+* **重启**：此功能允许用户定义文档重启权限。
+  * **仅限管理员**：无论授予非管理员用户何种权限，只有拥有管理员权限的用户可以重启文档。
+  * **仅限管理员和受分配者**：只有拥有管理员权限的用户和已分配的用户可以重启文档。
+  * **所有用户**：所有已获得必要[权限](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md)的用户都可以重启文档。
 
 <figure><img src="../../../../.gitbook/assets/dashboard_settings_2.png" alt=""><figcaption></figcaption></figure>
 
-## **Filters**
+## **筛选器**
 
-* **Status filter style**: Determines the presentation style of status filters, which can be set to default or customized according to the operational focus of the users.
-* **Custom status filter**: Enables the creation and application of custom filters that can target specific document statuses like "New", "Validating", or "Exporting". This allows users to quickly access documents in specific stages of processing.
+* **状态筛选器样式**：决定状态筛选器的显示样式，可设为默认样式，也可根据用户的运营重点进行自定义。
+* **自定义状态筛选器**：启用自定义筛选器的创建和应用，可针对“新建”、“验证中”或“导出中”等特定文档状态进行筛选。这样，用户可以快速访问处于特定处理阶段的文档。
 
 <figure><img src="../../../../.gitbook/assets/dashboard_settings_5.png" alt=""><figcaption></figcaption></figure>
 
-## Advance Shipment Dashboard
+## 高级装运仪表板
 
-* **Delivered Orders Visibility**: This feature allows the user to specify the duration for which delivered orders will be visible.
+* **已交付订单可见性**：此功能允许用户指定已交付订单的可见时长。
 
 <figure><img src="../../../../.gitbook/assets/dashboard_settings_6.png" alt=""><figcaption></figcaption></figure>
 
-These dashboard settings are crucial for ensuring that the DocBits platform is as responsive and useful as possible, providing users with a powerful tool to monitor and manage document processing activities directly from the dashboard.
+这些仪表板设置对于确保 DocBits 平台尽可能灵敏且实用至关重要，可为用户提供强大的工具，直接从仪表板监控和管理文档处理活动。

@@ -1,33 +1,33 @@
 ---
-description: XRECHNUNG 2.0.1 CII electronic document support in DocBits
+description: "DocBits 中对 XRECHNUNG 2.0.1 CII 电子文档的支持"
 ---
 
 # 🇩🇪 XRECHNUNG 2.0.1 CII
 
-| Property             | Value                                       |
+| 属性 | 值 |
 | -------------------- | ------------------------------------------- |
-| **Country / Region** | Germany                                     |
-| **Document Types**   | Invoice, Credit Note                        |
-| **Format**           | CII                                         |
-| **Standard**         | XRechnung 2.0.1                             |
-| **Based On**         | EN 16931 (UN/CEFACT Cross Industry Invoice) |
+| **国家/地区** | 德国 |
+| **文档类型** | 发票、贷项通知单 |
+| **格式** | CII |
+| **标准** | XRechnung 2.0.1 |
+| **基于** | EN 16931（UN/CEFACT 跨行业发票） |
 
-XRechnung 2.0.1 implements the EN 16931 Core Invoice standard with German CIUS (Core Invoice Usage Specification) extensions. This version introduced bugfixes and corrections to the 2.0 release, improving stability and interoperability.
+XRechnung 2.0.1 实现了 EN 16931 核心发票标准，并包含德国 CIUS（核心发票使用规范）扩展。此版本修复并更正了 2.0 版本中的问题，提升了稳定性和互操作性。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件 | 状态 |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览 | ✅ 支持 |
+| 字段提取 | ✅ 支持 |
+| 转换 | ✅ 支持 |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/xrechnung-cii-preview.png" alt="XRechnung 2.0.1 CII invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Germany XRechnung 2.0.1 CII invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/xrechnung-cii-preview.png" alt="DocBits 中的 XRechnung 2.0.1 CII 发票预览"><figcaption><p>DocBits 中德国 XRechnung 2.0.1 CII 发票的默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [XRechnung Configuration](../xrechnung/)
-* [XRechnung Field Mapping](../xrechnung/mapping-xrechnung-in-docbits/)
-* [Supported Electronic Documents](./)
+* [XRechnung 配置](../xrechnung/)
+* [XRechnung 字段映射](../xrechnung/mapping-xrechnung-in-docbits/)
+* [支持的电子文档](./)

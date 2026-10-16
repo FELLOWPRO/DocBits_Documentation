@@ -1,90 +1,81 @@
-# Purchase Order - FAQ
+# 采购订单 - 常见问题
 
-**Where do I check if the PurchaseOrderBOD synchronization updates are correctly implemented?**
+**在哪里可以检查 PurchaseOrderBOD 同步更新是否已正确实施？**
 
-Navigate to the _BOD Implementation Registration (bobod1100m000)_ session in LN. This session allows you to review, modify, and register both standard and custom BOD implementations, including the PurchaseOrderBOD.
+在 LN 中导航到 _BOD Implementation Registration (bobod1100m000)_ 会话。此会话允许你查看、修改和注册标准及自定义 BOD 实施，包括 PurchaseOrderBOD。
 
 \
-
 
 <figure><img src="../../../../.gitbook/assets/PO.png" alt=""><figcaption></figcaption></figure>
 
-**How can I identify the specific BOD implementation I need to verify?**
+**如何识别需要验证的特定 BOD 实施？**
 
-Look for the BOD Implementation Identifier and BOD Name fields. The BOD Name typically indicates the type of BOD (e.g., PurchaseOrderBOD). The BOD Implementation Identifier is a unique identifier for that BOD configuration.
-
-\
-
-
-**What does the ‘Public’ checkbox mean in the BOD Implementation Registration session?**
-
-The Public checkbox indicates whether the BOD implementation is available for external communication.
-
-• Selected: The BOD can be exchanged outside LN (public and protected interface).
-
-• Cleared: The BOD is for internal LN processing only (protected interface).
+查看 BOD Implementation Identifier 和 BOD Name 字段。BOD Name 通常表示 BOD 的类型（例如 PurchaseOrderBOD）。BOD Implementation Identifier 是该 BOD 配置的唯一标识符。
 
 \
 
+**BOD Implementation Registration 会话中的“Public”复选框是什么意思？**
 
-**I see a ‘Parent BOD Name’ field. What is it used for?**
+Public 复选框用于指示该 BOD 实施是否可用于外部通信。
 
-The Parent BOD Name field shows the parent BOD if the current BOD is a derived or dependent version. If the Public checkbox is selected, this field will be empty. Otherwise, it helps you understand the hierarchy of BOD implementations.
+• 已选中：可以在 LN 外部交换该 BOD（公共和受保护接口）。
 
-\
-
-
-**How do I know if the BOD implementation is a standard or a custom one?**
-
-Check the Standard checkbox.
-
-• Selected: The BOD is a standard, LN-delivered implementation.
-
-• Cleared: The BOD is a custom implementation that your team or a partner has defined.
+• 未选中：该 BOD 仅用于 LN 内部处理（受保护接口）。
 
 \
 
+**我看到一个“Parent BOD Name”字段。它有什么用途？**
 
-**What is the purpose of the ‘Staging’ checkbox?**
-
-The Staging checkbox, if selected, means BODs are first staged rather than immediately published. They can then be published from the _Publish Staged BODs (bobod2200m000)_ session.
-
-Note: For the ProjectBudgetBOD, staging is mandatory and cannot be changed. For standard master data BODs, staging can be enabled manually, and for custom BODs, it can always be configured.
+Parent BOD Name 字段显示当前 BOD 为派生版本或依赖版本时的父 BOD。如果选中了 Public 复选框，此字段将为空。否则，它可以帮助你了解 BOD 实施的层级结构。
 
 \
 
+**如何判断 BOD 实施是标准实施还是自定义实施？**
 
-**How does the ‘Synchronous Processing’ checkbox affect incoming BOD handling?**
+查看 Standard 复选框。
 
-Synchronous Processing determines the action if a follow-up process after receiving a BOD fails.
+• 已选中：该 BOD 是 LN 提供的标准实施。
 
-• Selected: The incoming BOD and the follow-up process must both succeed, or neither will be processed.
-
-• Cleared: The incoming BOD is processed, but if the follow-up process fails, it must be handled manually.
-
-\
-
-
-**Where do I verify if the ‘Stage’ feature is active or not for my BOD?**
-
-In the _BOD Implementation Registration (bobod1100m000)_ session, check the Staging checkbox. If it is not selected, staging is not active for that particular BOD.
+• 未选中：该 BOD 是由你的团队或合作伙伴定义的自定义实施。
 
 \
 
+**“Staging”复选框有什么作用？**
 
-**If the PurchaseOrderBOD is not triggered on all updates, what else should I consider?**
+如果选中 Staging 复选框，BOD 将先暂存，而不是立即发布。之后可以在 _Publish Staged BODs (bobod2200m000)_ 会话中发布这些 BOD。
 
-• Confirm that the Staging option is set as intended. If staging is off, the BOD should publish immediately.
-
-• Verify that the Synchronous Processing setting is correct for your workflow.
-
-• Ensure that the BOD Implementation Identifier and BOD Name are correct and that you’re working on the proper BOD configuration.
-
-• Check if the BOD is standard or custom and verify if any custom settings override standard behavior.
+注意：对于 ProjectBudgetBOD，暂存是强制要求，且无法更改。对于标准主数据 BOD，可以手动启用暂存；对于自定义 BOD，始终可以进行配置。
 
 \
 
+**“Synchronous Processing”复选框会如何影响传入 BOD 的处理？**
 
-**Are there any scenarios where I might not see the PurchaseOrderBOD updates as expected?**
+Synchronous Processing 用于确定接收到 BOD 后的后续流程失败时要采取的操作。
 
-Yes. If the BOD is not configured properly (wrong settings in Public, Staging, or Synchronous Processing) or if it’s a custom BOD implementation not aligned with your process requirements, updates may not trigger as expected. Review your configuration in the _bobod1100m000_ session and ensure all parameters match your intended process flow.
+• 已选中：传入 BOD 和后续流程都必须成功，否则两者都不会处理。
+
+• 未选中：传入 BOD 会被处理，但如果后续流程失败，则必须手动处理。
+
+\
+
+**在哪里可以验证我的 BOD 是否启用了“Stage”功能？**
+
+在 _BOD Implementation Registration (bobod1100m000)_ 会话中，查看 Staging 复选框。如果未选中，则该特定 BOD 未启用暂存。
+
+\
+
+**如果 PurchaseOrderBOD 并非在所有更新时都触发，还应考虑什么？**
+
+• 确认 Staging 选项的设置符合预期。如果关闭暂存，BOD 应立即发布。
+
+• 验证 Synchronous Processing 设置是否符合你的工作流。
+
+• 确保 BOD Implementation Identifier 和 BOD Name 正确，并确认你使用的是正确的 BOD 配置。
+
+• 检查该 BOD 是标准还是自定义实施，并确认是否有自定义设置覆盖了标准行为。
+
+\
+
+**是否存在某些情况下无法按预期看到 PurchaseOrderBOD 更新？**
+
+是。如果 BOD 配置不正确（Public、Staging 或 Synchronous Processing 设置有误），或者自定义 BOD 实施不符合流程要求，更新可能无法按预期触发。请在 _bobod1100m000_ 会话中检查配置，并确保所有参数都符合预期的流程。

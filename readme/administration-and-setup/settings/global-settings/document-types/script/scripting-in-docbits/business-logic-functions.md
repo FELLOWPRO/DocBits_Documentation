@@ -1,35 +1,35 @@
-# Business Logic Functions
+# 业务逻辑函数
 
-Functions for lookups, PO matching, tasks, user/group management, and status changes.
+用于查找、采购订单匹配、任务、用户/组管理和状态更改的函数。
 
-**Source:** `module/script/helper/document_script_functions.py`
+**来源：** `module/script/helper/document_script_functions.py`
 
 ---
 
-## get\_lookup\_records()
+## get\_lookup\_records() <a id="get_lookup_records"></a>
 
-Queries master data from lookup tables (suppliers, items, GL accounts, etc.).
+从查找表中查询主数据（供应商、物料、总账科目等）。
 
 ```python
 get_lookup_records(org_id, sub_org_id, lookup_name, filters, **kwargs)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `org_id` | `str` | Organization UUID |
-| `sub_org_id` | `str/None` | Sub-organization UUID (or `None`) |
-| `lookup_name` | `str` | Name of the lookup (e.g., `"supplier"`, `"item"`, `"gl_account"`) |
-| `filters` | `list` | Filter conditions (see formats below) |
-| `skip` | `int` | Offset for pagination (default: 0) |
-| `limit` | `int` | Max results (default: 100) |
-| `match_all` | `bool` | `True` = AND, `False` = OR (default: `True`) |
-| `sort_order` | `list` | Sorting (optional) |
+| `org_id` | `str` | 组织 UUID |
+| `sub_org_id` | `str/None` | 子组织 UUID（或 `None`） |
+| `lookup_name` | `str` | 查找表名称（例如 `"supplier"`、`"item"`、`"gl_account"`） |
+| `filters` | `list` | 筛选条件（参见下方格式） |
+| `skip` | `int` | 分页偏移量（默认值：0） |
+| `limit` | `int` | 最大结果数（默认值：100） |
+| `match_all` | `bool` | `True` = AND，`False` = OR（默认值：`True`） |
+| `sort_order` | `list` | 排序（可选） |
 
-### Filter Formats
+### 筛选格式
 
-Three formats are supported:
+支持三种格式：
 
 ```python
 # Format 1: Dict with field/operator/value
@@ -51,7 +51,7 @@ filters = [
 ]
 ```
 
-### Sorting
+### 排序
 
 ```python
 # Format 1: Dict
@@ -61,7 +61,7 @@ sort_order = [{"field": "NAME", "direction": "asc"}]
 sort_order = [["NAME", "asc"], ["VENDOR_ID", "desc"]]
 ```
 
-**Example — Lookup supplier by vendor ID:**
+**示例 — 按供应商 ID 查找供应商：**
 
 ```python
 # Find supplier by vendor ID
@@ -75,7 +75,7 @@ if records:
     set_field_value(document_data, "supplier_name", supplier.get("NAME", ""))
 ```
 
-**Example — Search GL accounts with multiple filters:**
+**示例 — 使用多个筛选条件搜索总账科目：**
 
 ```python
 records = get_lookup_records(
@@ -90,30 +90,30 @@ records = get_lookup_records(
 ```
 
 {% hint style="info" %}
-Internally uses `search_operator="SMART"` which supports fuzzy matching.
+内部使用支持模糊匹配的 `search_operator="SMART"`。
 {% endhint %}
 
 ---
 
 ## is\_supplier\_valid()
 
-Checks if a supplier exists in the lookup data.
+检查查找数据中是否存在某个供应商。
 
 ```python
 is_supplier_valid(user, filter_data_json, sub_org_id=None)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `user` | `UserAuthentication` | The `user` context object |
-| `filter_data_json` | `dict` | Filter in format `{"match_all": True, "filters": [...]}` |
-| `sub_org_id` | `str/None` | Sub-organization |
+| `user` | `UserAuthentication` | `user` 上下文对象 |
+| `filter_data_json` | `dict` | 格式为 `{"match_all": True, "filters": [...]}` 的筛选条件 |
+| `sub_org_id` | `str/None` | 子组织 |
 
-**Returns:** `True` if at least 1 match, otherwise `False`
+**返回值：** 如果至少匹配 1 条记录，则返回 `True`；否则返回 `False`
 
-**Example — Validate supplier:**
+**示例 — 验证供应商：**
 
 ```python
 supplier_id = get_field_value(document_data, "supplier_id", "")
@@ -127,25 +127,25 @@ if not is_valid:
 
 ---
 
-## auto\_po\_match\_for\_purchase\_orders()
+## auto\_po\_match\_for\_purchase\_orders() <a id="auto_po_match_for_purchase_orders"></a>
 
-Triggers automatic PO matching via the po-match-service microservice.
+通过 po-match-service 微服务触发自动采购订单匹配。
 
 ```python
 auto_po_match_for_purchase_orders(user, document_data, po_numbers)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `user` | `UserAuthentication` | Must be a real user object |
-| `document_data` | `dict` | Document context |
-| `po_numbers` | `str/list` | PO numbers (comma-separated or list) |
+| `user` | `UserAuthentication` | 必须是真实的用户对象 |
+| `document_data` | `dict` | 文档上下文 |
+| `po_numbers` | `str/list` | 采购订单编号（逗号分隔的字符串或列表） |
 
-**Returns:** Updated `document_data` with `po_items`, `po_match_status`, `po_multi_matched`
+**返回值：** 更新后的 `document_data`，包含 `po_items`、`po_match_status`、`po_multi_matched`
 
-**Example — Auto-match PO:**
+**示例 — 自动匹配采购订单：**
 
 ```python
 po_nr = get_field_value(document_data, "purchase_order", "")
@@ -154,30 +154,30 @@ if po_nr:
 ```
 
 {% hint style="warning" %}
-**Duplicate protection:** Already verified PO numbers are stored in `already_verified_po_numbers` and will not be matched again.
+**重复保护：** 已验证的采购订单编号会存储在 `already_verified_po_numbers` 中，不会再次进行匹配。
 {% endhint %}
 
 ---
 
 ## get\_next\_sequence\_number()
 
-Gets and atomically increments a sequence number in the database.
+从数据库获取并原子递增序列号。
 
 ```python
 get_next_sequence_number(org_id, sequence_name, default_value=1)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `org_id` | `str` | Organization UUID |
-| `sequence_name` | `str` | Must contain `"sequence"` (e.g., `"invoice_sequence"`) |
-| `default_value` | `int` | Start value when sequence is newly created |
+| `org_id` | `str` | 组织 UUID |
+| `sequence_name` | `str` | 必须包含 `"sequence"`（例如 `"invoice_sequence"`） |
+| `default_value` | `int` | 新建序列时的起始值 |
 
-**Returns:** `int` — the next number, or `None` if name is invalid
+**返回值：** `int` — 下一个编号；如果名称无效，则返回 `None`
 
-**Example — Generate internal document number:**
+**示例 — 生成内部文档编号：**
 
 ```python
 seq_nr = get_next_sequence_number(org_id, "invoice_sequence", 1000)
@@ -185,33 +185,33 @@ set_field_value(document_data, "internal_number", str(seq_nr))
 ```
 
 {% hint style="danger" %}
-**Naming rule:** The `sequence_name` must start or end with "sequence", or contain "SEQUENCE\_". Otherwise the function returns `None`.
+**命名规则：** `sequence_name` 必须以 "sequence" 开头或结尾，或者包含 "SEQUENCE\_"。否则函数会返回 `None`。
 {% endhint %}
 
 ---
 
-## create\_document\_task()
+## create\_document\_task() <a id="create_document_task"></a>
 
-Creates a task for the current document.
+为当前文档创建任务。
 
 ```python
 create_document_task(user, document_data, title, description, priority,
                      assigned_to_user_id, assigned_to_group_id, send_email)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `user` | `UserAuthentication` | User context |
-| `title` | `str` | Task title |
-| `description` | `str` | Description |
-| `priority` | `str/int` | Priority |
-| `assigned_to_user_id` | `str/None` | Assigned user |
-| `assigned_to_group_id` | `str/None` | Assigned group |
-| `send_email` | `bool` | Send email notification |
+| `user` | `UserAuthentication` | 用户上下文 |
+| `title` | `str` | 任务标题 |
+| `description` | `str` | 描述 |
+| `priority` | `str/int` | 优先级 |
+| `assigned_to_user_id` | `str/None` | 指定用户 |
+| `assigned_to_group_id` | `str/None` | 指定组 |
+| `send_email` | `bool` | 发送电子邮件通知 |
 
-**Example — Create task for high-amount invoices:**
+**示例 — 为金额较高的发票创建任务：**
 
 ```python
 amount = float(get_field_value(document_data, "total_amount", "0"))
@@ -231,17 +231,17 @@ if amount > 50000:
 
 ## set\_document\_sub\_org\_id()
 
-Assigns a sub-organization to a document.
+为文档指定子组织。
 
 ```python
 set_document_sub_org_id(document_data, sub_org_id)
 ```
 
-**Side effects:**
-- Sets `sub_org_id` in `document_json`
-- Saves directly to the database (if `doc_id` is present)
+**副作用：**
+- 在 `document_json` 中设置 `sub_org_id`
+- 直接保存到数据库（如果存在 `doc_id`）
 
-**Example — Route based on supplier:**
+**示例 — 根据供应商进行路由：**
 
 ```python
 supplier = get_field_value(document_data, "supplier_name", "", is_clean=True)
@@ -257,25 +257,25 @@ for key, sub_org in sub_org_map.items():
 
 ---
 
-## update\_document\_status\_with\_doc\_id()
+## update\_document\_status\_with\_doc\_id() <a id="update_document_status_with_doc_id"></a>
 
-Changes the status of a document.
+更改文档状态。
 
 ```python
 update_document_status_with_doc_id(doc_id, user, org_id, status, message=None,
                                     doc_classification_class=None)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `doc_id` | `str` | Document UUID |
-| `status` | `str` | New status (e.g., `"error"`, `"ready_for_validation"`) |
-| `message` | `str/None` | Status message |
-| `doc_classification_class` | `str/None` | For `CLASSIFIED` status: new document type |
+| `doc_id` | `str` | 文档 UUID |
+| `status` | `str` | 新状态（例如 `"error"`、`"ready_for_validation"`） |
+| `message` | `str/None` | 状态消息 |
+| `doc_classification_class` | `str/None` | 用于 `CLASSIFIED` 状态：新的文档类型 |
 
-**Example — Set document to error status:**
+**示例 — 将文档设为错误状态：**
 
 ```python
 doc_id = document_json["doc_id"]
@@ -286,22 +286,22 @@ update_document_status_with_doc_id(
 ```
 
 {% hint style="warning" %}
-**Caution:** Status changes trigger downstream actions (DocFlow workflows, status-change hooks). Only use when necessary.
+**注意：** 状态更改会触发下游操作（DocFlow 工作流、状态更改钩子）。仅在必要时使用。
 {% endhint %}
 
 ---
 
-## get\_document\_content()
+## get\_document\_content() <a id="get_document_content"></a>
 
-Returns the full OCR text of the document.
+返回文档的完整 OCR 文本。
 
 ```python
 get_document_content(document_data)
 ```
 
-**Returns:** `str` — Concatenated text of all pages
+**返回值：** `str` — 所有页面的拼接文本
 
-**Example — Search fulltext for keywords:**
+**示例 — 在全文中搜索关键词：**
 
 ```python
 content = get_document_content(document_data)
@@ -315,23 +315,23 @@ if match:
 ```
 
 {% hint style="info" %}
-The result is cached for 60 seconds (TTL cache with max 128 entries).
+结果会缓存 60 秒（TTL 缓存，最多 128 个条目）。
 {% endhint %}
 
 ---
 
 ## get\_user\_by\_id() / get\_user\_by\_email()
 
-Looks up a user by ID or email.
+按 ID 或电子邮件查找用户。
 
 ```python
 get_user_by_id(user_id)
 get_user_by_email(email)
 ```
 
-**Returns:** `UsersCache` object with attributes like `.email`, `.first_name`, `.last_name`, `.user_id`
+**返回值：** `UsersCache` 对象，包含 `.email`、`.first_name`、`.last_name`、`.user_id` 等属性
 
-**Example — Assign task to specific user:**
+**示例 — 将任务分配给指定用户：**
 
 ```python
 user_obj = get_user_by_email("manager@company.com")
@@ -347,18 +347,18 @@ if user_obj:
 
 ---
 
-## get\_group\_by\_id() / get\_group\_by\_name()
+## get\_group\_by\_id() / get\_group\_by\_name() <a id="get_group_by_id--get_group_by_name"></a>
 
-Looks up a user group by ID or name.
+按 ID 或名称查找用户组。
 
 ```python
 get_group_by_id(group_id)
 get_group_by_name(org_id, group_name)
 ```
 
-**Returns:** `GroupCache` object
+**返回值：** `GroupCache` 对象
 
-**Example — Find group for task assignment:**
+**示例 — 查找用于分配任务的组：**
 
 ```python
 finance_group = get_group_by_name(org_id, "Finance")
@@ -376,21 +376,21 @@ if finance_group:
 
 ## compare\_values()
 
-Intelligent value comparison with type conversion.
+支持类型转换的智能值比较。
 
 ```python
 compare_values(value1, value2)
 ```
 
-**Comparison logic:**
+**比较逻辑：**
 1. `None == None` → `True`
 2. `None != non-None` → `False`
-3. Strings that are numbers → numeric comparison (`"1.0" == "1.00"` → `True`)
-4. Strings → case-insensitive, space-insensitive (`"ABC " == " abc"` → `True`)
-5. Bool vs String → string comparison (`True == "true"` → `True`)
-6. Decimal comparison as fallback
+3. 数字字符串 → 数值比较（`"1.0" == "1.00"` → `True`）
+4. 字符串 → 忽略大小写和空格（`"ABC " == " abc"` → `True`）
+5. 布尔值与字符串 → 字符串比较（`True == "true"` → `True`）
+6. 兜底使用十进制比较
 
-**Example — Verify amounts match:**
+**示例 — 验证金额是否匹配：**
 
 ```python
 if compare_values(get_field_value(document_data, "net_amount"),
@@ -402,25 +402,25 @@ if compare_values(get_field_value(document_data, "net_amount"),
 
 ## get\_lov\_values()
 
-Retrieves List-of-Values (LOV) entries.
+检索值列表（LOV）条目。
 
 ```python
 get_lov_values(org_id, key, return_type="list_of_objects", sub_org_id=None, language_code="")
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `org_id` | `str` | Organization UUID |
-| `key` | `str` | LOV key |
-| `return_type` | `str` | `"list_of_objects"` or `"list_of_values"` |
-| `sub_org_id` | `str/None` | Optional sub-organization filter |
-| `language_code` | `str` | Language code (e.g., `"en"`, `"de"`) |
+| `org_id` | `str` | 组织 UUID |
+| `key` | `str` | LOV 键 |
+| `return_type` | `str` | `"list_of_objects"` 或 `"list_of_values"` |
+| `sub_org_id` | `str/None` | 可选的子组织筛选条件 |
+| `language_code` | `str` | 语言代码（例如 `"en"`、`"de"`） |
 
-**Returns:** LOV values as a list of objects or as a flat list.
+**返回值：** LOV 值，以对象列表或扁平列表的形式返回。
 
-**Example — Get configured tax codes:**
+**示例 — 获取已配置的税码：**
 
 ```python
 tax_codes = get_lov_values(org_id, "tax_codes", return_type="list_of_values")

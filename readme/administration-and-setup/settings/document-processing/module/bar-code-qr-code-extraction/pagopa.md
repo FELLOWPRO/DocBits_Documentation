@@ -1,39 +1,39 @@
 # PagoPA
 
-## Overview
+## 概述
 
-**PagoPA** is the payment QR standard of the Italian public administration. Every invoice issued by an Italian public-administration body (municipalities, universities, healthcare, tax authorities) carries a PagoPA QR code. DocBits decodes the payload and returns all four required payment fields in the document API response.
+**PagoPA** 是意大利公共行政部门使用的支付二维码标准。意大利公共行政机构（市政厅、大学、医疗机构、税务机关）签发的每张发票都带有 PagoPA 二维码。DocBits 会解码其载荷，并在文档 API 响应中返回全部四个必需的支付字段。
 
-### Feature Overview
+### 功能概述
 
-PagoPA payloads are compact and strictly structured: exactly **five pipe-separated fields** on a single line. Amounts are encoded in **cents** (integer) and automatically converted to a euro decimal by the extractor. The leading zeros of the `codice_avviso` (18-digit payment notice) are preserved — they must never be parsed as integer because the notice is a fixed-width identifier.
+PagoPA 载荷简洁且结构严格：单行中恰好包含 **五个以竖线分隔的字段**。金额以**分**（整数）编码，提取器会自动将其转换为欧元小数值。`codice_avviso`（18 位支付通知编号）的前导零会予以保留——绝不能将其解析为整数，因为该通知编号是定长标识符。
 
-#### Key Benefits
+#### 主要优势
 
-* **Mandatory coverage** for Italian PA invoices: `codice_avviso` and creditor fiscal code are extracted into named fields.
-* **Safe numeric handling**: 18-digit `codice_avviso` retains leading zeros; amount in cents is also exposed as a float euro value.
+* **覆盖意大利公共行政发票的强制需求**：`codice_avviso` 和债权人税号会提取到具名字段中。
+* **安全处理数值**：18 位 `codice_avviso` 会保留前导零；以分为单位的金额也会以欧元浮点值形式提供。
 
 ***
 
-### Detection
+### 检测
 
-- Magic prefix: `PAGOPA|002|`
-- Exactly **5 pipe-separated fields** after the prefix: `PAGOPA|002|<codice_avviso>|<fiscal_code_creditor>|<amount_cents>|<auth>`
-- **EUR-only** — no other currency is valid under the specification
+- 魔数前缀：`PAGOPA|002|`
+- 前缀后恰好包含 **5 个以竖线分隔的字段**：`PAGOPA|002|<codice_avviso>|<fiscal_code_creditor>|<amount_cents>|<auth>`
+- **仅支持欧元**——根据规范，其他货币均无效
 
-### Extracted Fields
+### 提取的字段
 
-All fields use the `pagopa_` prefix:
+所有字段均使用 `pagopa_` 前缀：
 
-| Field | Description |
+| 字段 | 描述 |
 |-------|-------------|
-| `pagopa_codice_avviso` | 18-digit payment notice number — leading zeros preserved (string) |
-| `pagopa_fiscal_code_creditor` | 11-digit creditor fiscal code (string) |
-| `pagopa_amount_cents` | Amount in cents (integer) |
-| `pagopa_amount` | Amount in euro (decimal, derived from `pagopa_amount_cents`) |
-| `pagopa_auth` | Optional auth/version indicator from the payload |
+| `pagopa_codice_avviso` | 18 位支付通知编号——保留前导零（字符串） |
+| `pagopa_fiscal_code_creditor` | 11 位债权人税号（字符串） |
+| `pagopa_amount_cents` | 以分为单位的金额（整数） |
+| `pagopa_amount` | 以欧元为单位的金额（小数，由 `pagopa_amount_cents` 推导得出） |
+| `pagopa_auth` | 载荷中的可选认证/版本指示符 |
 
-### Sample API Response
+### 示例 API 响应
 
 ```json
 {
@@ -46,15 +46,15 @@ All fields use the `pagopa_` prefix:
 
 ***
 
-### How to Enable
+### 如何启用
 
-PagoPA parsing is covered by the general **Bar-Code / QR Code Extraction** module toggle — no standard-specific configuration is required.
+PagoPA 解析由通用的**条形码 / 二维码提取**模块开关控制，无需特定标准的配置。
 
-1. **Navigate to Settings**:
-   * From the Dashboard, go to **Settings**.
-   * Select **Document Processing** and then choose **Module**.
-2. **Enable the Feature**:
-   * Scroll down to locate the **Bar-Code / QR Code Extraction** option.
-   * Toggle the slider to enable it.
+1. **前往设置**：
+   * 从仪表板进入**设置**。
+   * 选择**文档处理**，然后选择**模块**。
+2. **启用该功能**：
+   * 向下滚动，找到**条形码 / 二维码提取**选项。
+   * 切换滑块以启用该功能。
 
-For a full list of Payment QR Code standards, see the [Overview](./README.md) page.
+如需查看支付二维码标准的完整列表，请参阅[概述](./README.md)页面。

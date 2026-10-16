@@ -1,27 +1,27 @@
-# Scripting in DocBits
+# DocBits 中的脚本编写
 
-## Docbits Scripting Guide
+## DocBits 脚本指南
 
-Welcome to the Docbits scripting guide! Here, you'll learn how to use scripts to automate and enhance your document processing within Docbits. Scripts allow for custom field manipulation, data transformation, and logic implementation across various document types.
+欢迎阅读 DocBits 脚本指南！在这里，您将学习如何使用脚本自动化和增强 DocBits 中的文档处理。脚本可用于在各种文档类型中自定义字段、转换数据和实现逻辑。
 
-### Getting Started
+### 入门
 
-Scripts in Docbits are written in Python. They interact with document fields and metadata to perform a wide range of operations, from simple data formatting to complex logic.
+DocBits 中的脚本使用 Python 编写。它们与文档字段和元数据交互，以执行各种操作，从简单的数据格式化到复杂的逻辑处理。
 
-#### Key Functions
+#### 关键函数
 
-* `get_field_value(fields_dict, field_name, default=None)`: Retrieves the value of a specified field.
-* `set_field_value(fields_dict, field_name, value)`: Sets the value of a specified field.
-* `create_new_field(field_name, value)`: Creates a new field with a specified name and value.
-* `format_decimal_to_locale(value, locale)`: Formats a decimal value according to a specified locale.
+* `get_field_value(fields_dict, field_name, default=None)`：获取指定字段的值。
+* `set_field_value(fields_dict, field_name, value)`：设置指定字段的值。
+* `create_new_field(field_name, value)`：创建具有指定名称和值的新字段。
+* `format_decimal_to_locale(value, locale)`：根据指定区域设置格式化十进制值。
 
-### Example Scripts
+### 脚本示例
 
-Below are several examples demonstrating common scripting tasks.
+以下示例展示了常见的脚本编写任务。
 
-#### Example 1: Currency Mapping for Invoices
+#### 示例 1：发票币种映射
 
-Standardize currency symbols or text to ISO currency codes.
+将币种符号或文本统一转换为 ISO 币种代码。
 
 ```python
 currency_map = {
@@ -37,5 +37,3 @@ if currency_value:
         currency_value = currency_map[currency_value]
     set_field_value(fields_dict, "currency", currency_value)
 ```
-
-

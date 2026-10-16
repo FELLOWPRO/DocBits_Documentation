@@ -1,74 +1,74 @@
-# Table Extraction Troubleshoot
+# 表格提取故障排查
 
-## **Step 1: Open OCR View for Bad Extraction Results**
+## **步骤 1：打开 OCR 视图检查提取结果**
 
-If the table extraction training results are not good:
+如果表格提取训练结果不理想：
 
-1. Open the **OCR View** by clicking on the magnifying glass icon with **OCR** written on it.
-2. Review the extraction results and see if the OCR process can improve the data capture.
-3. If the results still look bad, try a different document to verify if the issue is document-specific.
-4. If the issue is document-specific, use another document for extraction.
-   * If the issue persists, follow the next steps.
+1. 点击带有 **OCR** 字样的放大镜图标，打开 **OCR View**（OCR 视图）。
+2. 查看提取结果，确认 OCR 处理能否改善数据采集。
+3. 如果结果仍然不理想，请尝试使用其他文档，确认问题是否仅与当前文档有关。
+4. 如果问题仅与当前文档有关，请使用另一份文档进行提取。
+   * 如果问题仍然存在，请继续执行以下步骤。
 
-## **Step 2: Check for E-Text Availability**
+## **步骤 2：检查是否有电子文本**
 
-1. Check if the document has **e-text** available.
-   * You can verify this using a tool like **Adobe Acrobat**.
-   * If the document contains e-text, follow **Step 3.**
-   * If the document does not contain e-text, follow **Step 4.**
+1. 检查文档是否包含 **电子文本**。
+   * 可以使用 **Adobe Acrobat** 等工具进行确认。
+   * 如果文档包含电子文本，请执行**步骤 3**。
+   * 如果文档不包含电子文本，请执行**步骤 4**。
 
-## **Step 3: Turn On E-Text Extraction**
+## **步骤 3：启用电子文本提取**
 
-If the document contains e-text, you have two options:
+如果文档包含电子文本，可以通过以下两种方式启用提取：
 
-1. **Turn on e-text extraction for just this supplier**:
-   * Go back to the **Documents Field Validation**.
-   * Click the square with the three dots in the left-side toolbar.
-   * Here, activate the **Use E-text if available** option to turn it on for just this supplier.
-2. **Turn on e-text extraction for all suppliers**:
-   * Go to **Settings** > **Document Processing** > **OCR Settings**.
-   * In this section, you will find the **Use E-text if available** option and can turn it on for all suppliers.
-3. After enabling e-text extraction, retry the **table extraction training**.
-   * If the results improve, the issue is resolved.
-   * If the results are still not good, proceed to **Step 4**.
+1. **仅为此供应商启用电子文本提取**：
+   * 返回 **Documents Field Validation**（文档字段验证）。
+   * 点击左侧工具栏中带有三个点的方框。
+   * 在此处启用 **Use E-text if available**（如果有电子文本则使用）选项，即可仅为此供应商启用该功能。
+2. **为所有供应商启用电子文本提取**：
+   * 前往 **设置** > **Document Processing**（文档处理）> **OCR Settings**（OCR 设置）。
+   * 在此部分找到 **Use E-text if available** 选项，即可为所有供应商启用该功能。
+3. 启用电子文本提取后，重新尝试**表格提取训练**。
+   * 如果结果有所改善，问题即已解决。
+   * 如果结果仍然不理想，请继续执行**步骤 4**。
 
-## **Step 4: No E-Text Available - Change AI OCR Version**
+## **步骤 4：没有电子文本时，更改 AI OCR 版本**
 
-If the document does not have e-text available:
+如果文档没有可用的电子文本：
 
-1. Go to **Settings** > **Document Processing** > **OCR Settings**.
-2. Change the **AI OCR Version** to a different version.
-3. Go back to the **Table Extraction Training** and try again.
-4. If the result is better:
-   * Check other documents from different suppliers to ensure the extraction results for those suppliers are not impacted by this change.
-   * **Be cautious, as this change can affect other suppliers' extraction results.**
-   * This change can impact other suppliers, so make sure to verify the results thoroughly to ensure it does not negatively affect other suppliers’ document extractions.
-5. If the result did not improve after changing the AI OCR version, please **contact us** for further assistance.
+1. 前往 **设置** > **Document Processing**（文档处理）> **OCR Settings**（OCR 设置）。
+2. 将 **AI OCR Version**（AI OCR 版本）更改为其他版本。
+3. 返回 **Table Extraction Training**（表格提取训练），然后重试。
+4. 如果结果有所改善：
+   * 检查其他供应商的文档，确保此更改没有影响这些供应商的提取结果。
+   * **请谨慎操作，因为此更改可能影响其他供应商的提取结果。**
+   * 此更改可能影响其他供应商，因此请彻底验证结果，确保没有对其他供应商的文档提取产生负面影响。
+5. 如果更改 AI OCR 版本后结果没有改善，请**联系我们**以获取进一步帮助。
 
-## Messages on the table
+## 表格中的消息 <a id="messages-on-the-table"></a>
 
-The extraction can look right and the document still refuses to be approved. These are the messages DocBits shows on or under the line-item table, what triggers them and how to clear them.
+提取结果看起来正确，文档却仍然无法通过审批。以下是 DocBits 在线项目表格中或其下方显示的消息、触发原因及解决方法。
 
-| Message | Cause | Fix |
+| 消息 | 原因 | 解决方法 |
 |---|---|---|
-| **Required column empty** (cell marked red, column name in the tooltip) | A column marked *Is Required* in the table-column settings has no value in this row. | Fill the cell. If the value never exists for this document type, an admin unticks *Is Required* under Settings → Document Types → Table Columns and you restart the document. |
-| **Line total does not match quantity x unit price (expected …, got …)** | DocBits checks every row: `TOTAL_AMOUNT = QUANTITY × UNIT_PRICE + CHARGES`, minus `DISCOUNT`, or × (100 − `DISCOUNT_PERCENT`) / 100, or minus `DISCOUNT_PER_UNIT × QUANTITY`, whichever discount column is filled. A difference above 0.02 raises the message. The check only runs when quantity, unit price and total are all filled. | Compare the four values with the document. Usually one of them was read into the wrong column, a charges or discount value in the wrong cell is the most common case. Correct the cell; the message disappears on save. |
-| **Line total does not match quantity x unit price minus discount / minus percentage discount / minus per-unit discount** | Same check, with the discount column that is filled. | As above; check the discount cell first. |
-| **Line items add up to … but the net total is …** (warning) | The sum of all `TOTAL_AMOUNT` cells differs from the net amount in the header. | Look for a missing row, a duplicated row, or a header net amount that was read wrongly. A warning does not block approval. |
-| **Total does not add up: expected …, got …** (header) | Net + tax (+ shipping in US layouts) differs from the header total. | Header check, not a table problem: correct the header amounts. |
-| **Line Item Table is missing Mandatory column for PO like (Item Number, Unit Price, Quantity and Total amount)** | PO matching needs those four default columns and one of them is hidden or replaced by a custom column. | Admin: unhide the default column under Table Columns, or map the value to it in table training. |
-| **Table is already extracted by AI. Do you want to train manually?** | You opened table training for a supplier whose table comes from the AI. | Confirm to train; the saved rules then replace the AI table for this supplier. Cancel to keep the AI table. |
-| **AI Table will display here. Enable in …** | AI table extraction is switched off for the organization. | Admin: Settings → Document Processing → Classification and Extraction → *AI Table extraction*. |
-| **No line items yet** | Nothing was extracted: no rules for this supplier and the AI found no table, or the document has no readable text. | Follow Steps 1–4 above (OCR view, E-Text). Then train the table once, or add rows manually with *Add new table row*. |
+| **必填列为空**（单元格标记为红色，工具提示中显示列名） | 此行中，表格列设置里标记为 *Is Required*（必填）的列没有值。 | 填写该单元格。如果此类文档中始终不存在该值，管理员可以在 Settings → Document Types → Table Columns（设置 → 文档类型 → 表格列）中取消勾选 *Is Required*，然后重新启动文档。 |
+| **行总额与数量 × 单价不匹配（预期 …，实际 …）** | DocBits 会检查每一行：`TOTAL_AMOUNT = QUANTITY × UNIT_PRICE + CHARGES`，再减去 `DISCOUNT`；或者乘以 (100 − `DISCOUNT_PERCENT`) / 100；或者减去 `DISCOUNT_PER_UNIT × QUANTITY`，具体取决于哪个折扣列已填写。差额超过 0.02 时会显示此消息。只有在数量、单价和总额均已填写时才会执行此检查。 | 将这四个值与文档进行对比。通常是某个值被读取到了错误的列中；最常见的情况是费用或折扣值被读入了错误的单元格。更正单元格后，保存时此消息会消失。 |
+| **行总额与数量 × 单价减折扣／减百分比折扣／减单件折扣不匹配** | 同一项检查，具体取决于已填写的折扣列。 | 同上；请先检查折扣单元格。 |
+| **行项目总和为 …，但净额为 …**（警告） | 所有 `TOTAL_AMOUNT` 单元格的总和与页眉中的净额不一致。 | 检查是否缺少行、存在重复行，或页眉净额读取错误。警告不会阻止审批。 |
+| **总额不匹配：预期 …，实际 …**（页眉） | 净额 + 税额（美国版式中还包括运费）与页眉总额不一致。 | 这是页眉检查，不是表格问题：请更正页眉金额。 |
+| **行项目表缺少 PO 所需的必填列（如 Item Number、Unit Price、Quantity 和 Total amount）** | PO 匹配需要这四个默认列，其中某一列被隐藏或替换为自定义列。 | 管理员：在 Table Columns（表格列）中取消隐藏默认列，或在表格训练中将值映射到该列。 |
+| **AI 已提取表格。是否要手动训练？** | 你为使用 AI 提取表格的供应商打开了表格训练。 | 确认以进行训练；保存的规则随后会替代此供应商的 AI 表格。取消则保留 AI 表格。 |
+| **AI 表格将在此处显示。请在 … 中启用** | 组织已关闭 AI 表格提取。 | 管理员：Settings → Document Processing → Classification and Extraction（设置 → 文档处理 → 分类与提取）> *AI Table extraction*（AI 表格提取）。 |
+| **尚无行项目** | 未提取到任何内容：此供应商没有规则，且 AI 未找到表格；或者文档中没有可读取的文本。 | 按照上面的步骤 1–4 操作（OCR 视图、电子文本）。然后训练一次表格，或使用 *Add new table row*（添加新表格行）手动添加行。 |
 
-### The AI keeps filling a column with the wrong value
+### AI 持续将错误的值填入某一列
 
-Example seen in practice: the AI writes the line total into `CHARGES`. Every row then fails the line-total check, because charges are added to quantity × unit price.
+实际案例：AI 将行总额写入 `CHARGES`。这样每一行都会未通过行总额检查，因为费用会加到数量 × 单价的结果上。
 
-1. If the supplier has saved rules, untick *Use AI* on that column (Settings → Document Types → Table Columns) so the rules fill it.
-2. If the supplier has no rules, train the table once so the column is bound to its position on the page, or hide the column if the supplier never prints that value.
-3. Add an [AI table tag](../../../end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md) such as *"charges column is empty on this supplier"*, tags are saved per supplier.
+1. 如果该供应商已保存规则，请取消勾选该列的 *Use AI*（使用 AI）（Settings → Document Types → Table Columns），以便由规则填充该列。
+2. 如果该供应商没有规则，请训练一次表格，让该列与页面上的位置绑定；如果供应商从不打印此值，也可以隐藏该列。
+3. 添加一个 [AI 表格标签](../../../end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md)，例如 *"该供应商的费用列为空"*；标签会按供应商保存。
 
-### Switching the table checks off
+### 关闭表格检查
 
-Settings → Document Types → *your type* → More Settings → **Skip table validation** marks the table of every document of that type as valid: line-total mismatches and empty required columns are no longer reported. The header checks (total = net + tax) stay. Use it only for document types whose tables are informational and not exported to the ERP.
+Settings → Document Types → *your type* → More Settings → **Skip table validation**（跳过表格验证）会将该类型每份文档的表格标记为有效：系统不再报告行总额不匹配和必填列为空的问题。页眉检查（总额 = 净额 + 税额）仍会执行。此设置仅适用于表格仅供参考且不会导出到 ERP 的文档类型。

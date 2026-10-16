@@ -1,10 +1,5 @@
+# 已上传文档概览
 
+仪表板的第二部分是所有已上传文档的概览。您可以查看所有文档，也可以只查看分配给自己的文档。您还可以按名称搜索文档。
 
-# Overview of Uploaded Documents
-
-The second part of the dashboard is an overview of all the uploaded documents. You can view all documents or just the ones assigned to you. You can also search for documents by name.
-
-Data will be extracted within seconds, and the status will change from “Running” to “Ready for Validation”.
-
-
-
+数据将在几秒钟内提取完成，状态将从“运行中”变为“等待验证”。

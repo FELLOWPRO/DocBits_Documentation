@@ -1,33 +1,33 @@
 ---
-description: ZUGFERD 1.0 COMFORT electronic document support in DocBits
+description: "DocBits 对 ZUGFERD 1.0 COMFORT 电子文档的支持"
 ---
 
 # 🇩🇪 ZUGFERD 1.0 COMFORT
 
-| Property             | Value                        |
+| 属性                 | 值                         |
 | -------------------- | ---------------------------- |
-| **Country / Region** | Germany                      |
-| **Document Types**   | Invoice, Credit Note         |
-| **Format**           | CII (PDF/A-3 embedded)       |
-| **Standard**         | ZUGFeRD 1.0, Comfort profile |
-| **Based On**         | ZUGFeRD 1.0 specification    |
+| **国家 / 地区**      | 德国                         |
+| **文档类型**         | 发票、贷项通知单             |
+| **格式**             | CII（嵌入 PDF/A-3）           |
+| **标准**             | ZUGFeRD 1.0，Comfort 配置文件 |
+| **基于**             | ZUGFeRD 1.0 规范              |
 
-The Comfort profile of ZUGFeRD 1.0 extends the Basic profile with additional fields for payment terms, delivery information, and detailed tax breakdowns. It enables fully automated invoice processing without manual data entry.
+ZUGFeRD 1.0 的 Comfort 配置文件在 Basic 配置文件的基础上，增加了付款条款、交付信息和详细税额明细等字段。它支持在无需手动录入数据的情况下全自动处理发票。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件             | 状态       |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览             | ✅ 支持     |
+| 字段提取         | ✅ 支持     |
+| 转换             | ✅ 支持     |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/zugferd-preview.png" alt="ZUGFeRD 1.0 Comfort invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Germany ZUGFeRD 1.0 Comfort invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/zugferd-preview.png" alt="DocBits 中的 ZUGFeRD 1.0 Comfort 发票预览"><figcaption><p>德国 ZUGFeRD 1.0 Comfort 发票的默认 DocBits 预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [ZUGFeRD Configuration](../zugferd/)
-* [ZUGFeRD Field Mapping](../zugferd/versions/)
-* [Supported Electronic Documents](./)
+* [ZUGFeRD 配置](../zugferd/)
+* [ZUGFeRD 字段映射](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/README.md)
+* [支持的电子文档](./)

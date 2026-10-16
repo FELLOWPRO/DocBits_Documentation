@@ -1,24 +1,24 @@
-# Delete lines with empty quantity and amount
+# 删除数量和金额为空的行
 
-#### Part 1: Delete Lines with Empty Quantity and Amount
+#### 第 1 部分：删除数量和金额为空的行
 
-This section of the script processes an invoice table to remove any lines where both the quantity and the total amount are zero or not provided.
+脚本的这一部分会处理发票表格，删除数量和总金额均为零或未提供的行。
 
-* **Check for INVOICE\_TABLE:** It starts by checking if the `INVOICE_TABLE` key exists in the `tables_dict` dictionary.
-* **Iterate Over Rows:** For each row in the table, the script initializes flags and variables to determine if the `TOTAL_AMOUNT` and `QUANTITY` columns exist and to capture their values.
-* **Check Column Names:** As it iterates through each column in a row, it looks for columns named `TOTAL_AMOUNT` and `QUANTITY`.
-  * If `TOTAL_AMOUNT` is found, it captures the value. If this value is non-zero, it converts it to a float.
-  * Similarly for `QUANTITY`, capturing and converting the value if it is non-zero.
-* **Mark Row for Deletion:** After checking both columns in a row, if both the total amount and quantity are effectively zero (either by being zero or not existing), the row is marked for deletion by setting `row['is_deleted']` to `True`.
+* **检查 INVOICE\_TABLE：** 首先检查 `tables_dict` 字典中是否存在 `INVOICE_TABLE` 键。
+* **遍历行：** 对表格中的每一行，脚本都会初始化标志和变量，用于确定是否存在 `TOTAL_AMOUNT` 和 `QUANTITY` 列，并获取相应的值。
+* **检查列名：** 遍历行中的每一列时，查找名为 `TOTAL_AMOUNT` 和 `QUANTITY` 的列。
+  * 如果找到 `TOTAL_AMOUNT`，则获取其值。如果该值非零，则将其转换为浮点数。
+  * 对 `QUANTITY` 列执行相同的操作：获取其值，并在非零时将其转换为浮点数。
+* **标记要删除的行：** 检查完一行中的两列后，如果总金额和数量都为零（包括值为零或列不存在的情况），则将 `row['is_deleted']` 设置为 `True`，标记该行以供删除。
 
-#### Part 2: Validate Line Total Against Invoice Total
+#### 第 2 部分：验证行项目总额与发票总额
 
-This section calculates the total amount from all lines in an invoice and compares it to the invoice’s reported total to validate their consistency.
+此部分会计算发票中所有行项目的金额总和，并与发票报告的总额进行比较，以验证两者是否一致。
 
-* **Initialize Line Total:** Starts by setting a variable `lines_total` to 0.0 to accumulate the total amount from all lines.
-* **Sum Line Amounts:** Iterates over each row in the `INVOICE_TABLE`, extracting the `TOTAL_AMOUNT` from each and adding it to `lines_total`.
-* **Retrieve and Convert Invoice Total:** Fetches the total invoice amount using a helper function `get_field_value` and converts it to a float.
-* **Compare Totals:** Finally, it checks if the absolute difference between the calculated line total (`lines_total`) and the reported invoice total (`total_amount`) exceeds a threshold of 0.05. If so, it marks the invoice total field as invalid using another helper function `set_field_as_invalid`, citing a mismatch.
+* **初始化行项目总额：** 将变量 `lines_total` 设为 0.0，用于累计所有行项目的金额。
+* **汇总行项目金额：** 遍历 `INVOICE_TABLE` 中的每一行，提取其中的 `TOTAL_AMOUNT` 并将其加到 `lines_total`。
+* **获取并转换发票总额：** 使用辅助函数 `get_field_value` 获取发票总金额，并将其转换为浮点数。
+* **比较总额：** 最后，检查计算出的行项目总额（`lines_total`）与发票报告的总额（`total_amount`）之间的绝对差值是否超过 0.05。如果超过，则使用另一个辅助函数 `set_field_as_invalid` 将发票总额字段标记为无效，并说明两者不匹配。
 
 ```python
 ##################################################
@@ -89,13 +89,11 @@ if abs(total_amount - lines_total) > 0.05:
     
 ```
 
-#### Summary
+#### 总结
 
-The script effectively ensures data integrity by:
+该脚本通过以下方式有效确保数据完整性：
 
-1. Removing data rows that do not contribute to the invoice’s financial total due to lacking quantities or amounts.
-2. Validating the consistency between the sum of individual line amounts and the overall invoice total, highlighting discrepancies for further action.
+1. 删除因缺少数量或金额而无法计入发票财务总额的数据行。
+2. 验证各行金额之和与发票总额是否一致，并标出差异以便后续处理。
 
-This automation helps maintain accurate financial records and can be crucial for systems like ERP that require precise data for accounting and financial reporting.
-
-
+此自动化有助于保持财务记录准确，对于 ERP 等要求会计和财务报告数据精确的系统尤为重要。

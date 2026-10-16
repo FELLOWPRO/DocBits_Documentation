@@ -1,14 +1,14 @@
-# Utility Functions
+# 实用函数
 
-Built-in functions for string processing, math, date operations, regex, and data types.
+用于字符串处理、数学运算、日期操作、正则表达式和数据类型的内置函数。
 
-**Source:** `module/script/helper/script_processor.py:get_allowed_functions_list()`
+**来源：** `module/script/helper/script_processor.py:get_allowed_functions_list()`
 
 ---
 
-## String Functions
+## 字符串函数
 
-### Type Conversion
+### 类型转换
 
 ```python
 str(value)       # Convert to string
@@ -17,7 +17,7 @@ float(value)     # Convert to float
 str_to_bool(s)   # "true"/"1"/"yes" → True, everything else → False
 ```
 
-### String Methods
+### 字符串方法
 
 ```python
 lower(s)              # str.lower — "ABC" → "abc"
@@ -29,7 +29,7 @@ endswith(s, suffix)   # str.endswith
 ```
 
 {% hint style="info" %}
-These are available as standalone functions but can also be called as methods on strings:
+这些函数既可作为独立函数使用，也可作为字符串的方法调用：
 
 ```python
 # Both work:
@@ -40,17 +40,17 @@ result = "hello".upper()     # → "HELLO"
 
 ---
 
-## Fuzzy String Matching
+## 模糊字符串匹配
 
 ### levenshtein\_distance()
 
-Calculates the edit distance between two strings (number of changes needed).
+计算两个字符串之间的编辑距离（即所需的字符更改次数）。
 
 ```python
 levenshtein_distance(s1, s2)
 ```
 
-**Example:**
+**示例：**
 
 ```python
 dist = levenshtein_distance("ACME Corp", "ACME Corporation")
@@ -62,13 +62,13 @@ if dist < 5:
 
 ### jaro\_winkler\_similarity()
 
-Calculates a similarity score between 0.0 and 1.0.
+计算 0.0 到 1.0 之间的相似度分数。
 
 ```python
 jaro_winkler_similarity(s1, s2)
 ```
 
-**Example:**
+**示例：**
 
 ```python
 score = jaro_winkler_similarity("Invoice", "Invocie")
@@ -79,28 +79,28 @@ score = jaro_winkler_similarity("Invoice", "Receipt")
 ```
 
 {% hint style="success" %}
-**When to use which?**
-- **Levenshtein**: Good for short strings, exact error count
-- **Jaro-Winkler**: Better for names/addresses, weights matches at the beginning more heavily
+**该使用哪种方法？**
+- **Levenshtein**：适用于较短的字符串，可精确计算错误数量
+- **Jaro-Winkler**：更适合名称和地址，会更重视开头部分的匹配
 {% endhint %}
 
 ---
 
-## Regex Functions
+## 正则表达式函数
 
-Based on Python's `re` module, but available as standalone functions.
+基于 Python 的 `re` 模块，但可作为独立函数使用。
 
 ### re\_search()
 
-Searches for the first occurrence of a pattern.
+搜索模式的首次匹配项。
 
 ```python
 re_search(pattern, string)
 ```
 
-**Returns:** Match object or `None`
+**返回值：** 匹配对象或 `None`
 
-**Example — Extract order number from fulltext:**
+**示例 — 从全文中提取订单号：**
 
 ```python
 content = get_document_content(document_data)
@@ -112,13 +112,13 @@ if match:
 
 ### re\_sub()
 
-Replaces pattern matches with a replacement string.
+将匹配的模式替换为替换字符串。
 
 ```python
 re_sub(pattern, replacement, string)
 ```
 
-**Example — Remove special characters from invoice ID:**
+**示例 — 从发票 ID 中移除特殊字符：**
 
 ```python
 inv_id = get_field_value(document_data, "invoice_id", "")
@@ -128,13 +128,13 @@ set_field_value(document_data, "invoice_id", cleaned)
 
 ### re\_findall()
 
-Finds all occurrences of a pattern.
+查找模式的所有匹配项。
 
 ```python
 re_findall(pattern, string)
 ```
 
-**Example — Find all PO numbers in document:**
+**示例 — 查找文档中的所有采购订单号：**
 
 ```python
 content = get_document_content(document_data)
@@ -145,11 +145,11 @@ if po_numbers:
 
 ---
 
-## Date/Time Functions
+## 日期/时间函数
 
 ### datetime\_today()
 
-Returns today's date as a `datetime` object.
+以 `datetime` 对象的形式返回今天的日期。
 
 ```python
 today = datetime_today()
@@ -157,7 +157,7 @@ today = datetime_today()
 
 ### datetime\_date
 
-The `date` class for date creation.
+用于创建日期的 `date` 类。
 
 ```python
 d = datetime_date(2026, 3, 25)  # date(2026, 3, 25)
@@ -165,13 +165,13 @@ d = datetime_date(2026, 3, 25)  # date(2026, 3, 25)
 
 ### strptime()
 
-Parses a date string into a datetime object.
+将日期字符串解析为 datetime 对象。
 
 ```python
 strptime(date_string, format)
 ```
 
-**Example — Parse and use invoice date:**
+**示例 — 解析并使用发票日期：**
 
 ```python
 inv_date_str = get_field_value(document_data, "invoice_date", "")
@@ -185,13 +185,13 @@ except ValueError:
 
 ### strftime()
 
-Formats a datetime object as a string.
+将 datetime 对象格式化为字符串。
 
 ```python
 strftime(datetime_obj, format)
 ```
 
-**Example — Set processing date:**
+**示例 — 设置处理日期：**
 
 ```python
 today = datetime_today()
@@ -201,13 +201,13 @@ set_field_value(document_data, "processing_date", formatted)
 
 ### fromisocalendar()
 
-Creates a date from ISO calendar week.
+根据 ISO 日历周创建日期。
 
 ```python
 fromisocalendar(year, week, day)
 ```
 
-**Example — Convert calendar week to date:**
+**示例 — 将日历周转换为日期：**
 
 ```python
 # CW 12/2026, Monday
@@ -216,7 +216,7 @@ set_date_value(document_data, "delivery_date", str(d))
 ```
 
 {% hint style="success" %}
-**Common with German customers:** Delivery dates are often specified as "KW 12". Pattern:
+**德国客户的常见情况：** 交货日期通常以“KW 12”的形式表示。模式：
 
 ```python
 content = get_document_content(document_data)
@@ -231,13 +231,13 @@ if match:
 
 ### calendar\_monthrange()
 
-Returns the weekday of the 1st and number of days in a month.
+返回某月 1 日是星期几，以及该月的天数。
 
 ```python
 weekday_of_first, num_days = calendar_monthrange(year, month)
 ```
 
-**Example:**
+**示例：**
 
 ```python
 _, days_in_month = calendar_monthrange(2026, 2)
@@ -246,17 +246,17 @@ _, days_in_month = calendar_monthrange(2026, 2)
 
 ---
 
-## Decimal/Locale Functions
+## 小数/区域设置函数
 
 ### parse\_decimal()
 
-Parses a string to a decimal number with locale detection.
+根据区域设置检测，将字符串解析为十进制数。
 
 ```python
 parse_decimal(value, locale="en_US")
 ```
 
-**Example:**
+**示例：**
 
 ```python
 amount = parse_decimal("1.234,56", "de_DE")  # → Decimal('1234.56')
@@ -265,13 +265,13 @@ amount = parse_decimal("1,234.56", "en_US")  # → Decimal('1234.56')
 
 ### format\_decimal\_to\_locale()
 
-Formats a decimal number according to locale.
+根据区域设置格式化十进制数。
 
 ```python
 format_decimal_to_locale(value, locale)
 ```
 
-**Example:**
+**示例：**
 
 ```python
 formatted = format_decimal_to_locale(1234.56, "de_DE")  # → "1.234,56"
@@ -280,31 +280,31 @@ formatted = format_decimal_to_locale(1234.56, "en_US")  # → "1,234.56"
 
 ---
 
-## Math Functions
+## 数学函数
 
-The full `math` module is available:
+完整的 `math` 模块均可使用：
 
-| Function | Description |
+| 函数 | 描述 |
 | -------- | ----------- |
-| `abs(x)` | Absolute value |
-| `round(x, n)` | Round to n decimal places |
-| `floor(x)` | Floor (round down) |
-| `ceil(x)` | Ceiling (round up) |
-| `sqrt(x)` | Square root |
-| `pow(x, y)` | Power |
-| `log(x)` / `log10(x)` | Logarithm |
+| `abs(x)` | 绝对值 |
+| `round(x, n)` | 四舍五入到 n 位小数 |
+| `floor(x)` | 向下取整 |
+| `ceil(x)` | 向上取整 |
+| `sqrt(x)` | 平方根 |
+| `pow(x, y)` | 幂运算 |
+| `log(x)` / `log10(x)` | 对数 |
 | `pi` | π (3.14159...) |
-| `e` | Euler's number (2.71828...) |
-| `sin`, `cos`, `tan` | Trigonometry |
-| `acos`, `asin`, `atan` | Inverse trigonometry |
-| `degrees`, `radians` | Degrees ↔ Radians |
-| `exp`, `fabs`, `fmod` | Additional math functions |
-| `hypot`, `ldexp`, `frexp` | Special calculations |
-| `modf` | Separate integer/decimal parts |
+| `e` | 欧拉数 (2.71828...) |
+| `sin`, `cos`, `tan` | 三角函数 |
+| `acos`, `asin`, `atan` | 反三角函数 |
+| `degrees`, `radians` | 度 ↔ 弧度 |
+| `exp`, `fabs`, `fmod` | 其他数学函数 |
+| `hypot`, `ldexp`, `frexp` | 特殊计算 |
+| `modf` | 分离整数部分和小数部分 |
 
 ---
 
-## Data Structure Functions
+## 数据结构函数
 
 ```python
 dict()            # New dictionary
@@ -322,5 +322,5 @@ print(x)          # Debug output (for testing only)
 ```
 
 {% hint style="warning" %}
-`print()` is only available for debugging purposes. Output goes to the server log, not to the user.
+`print()` 仅用于调试。输出会写入服务器日志，不会显示给用户。
 {% endhint %}

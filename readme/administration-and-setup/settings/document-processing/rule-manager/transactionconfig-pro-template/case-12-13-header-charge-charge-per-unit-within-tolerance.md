@@ -1,32 +1,32 @@
-# Charge Per Unit Within Tolerance
+# 单位抬头费用在容差范围内
 
-## Scenario:
+## 场景：
 
-The header charge per unit is within the acceptable tolerance range compared to the purchase order.
+与采购订单相比，单位抬头费用在可接受的容差范围内。
 
-## Action:
+## 操作：
 
-The system processes the header charge as invoiced, applying it without adjustments.
+系统按发票所列金额处理抬头费用，不作调整。
 
-## Example:
+## 示例：
 
-* **Purchase Order (PO):**
-  * Header Charge Per Unit: $3.50
-  * Quantity: 1,200 units
-  * Total Header Charge Amount: $4,200.00
-* **Invoice Received:**
-  * Header Charge Per Unit: $3.55 (within tolerance of 1.43%)
-  * Quantity: 1,200 units
-  * Total Header Charge Amount: $4,260.00
-* **Tolerance Levels:**
-  * Header Charge Per Unit Tolerance: ±2%
+* **采购订单 (PO)：**
+  * 单位抬头费用：$3.50
+  * 数量：1,200 件
+  * 抬头费用总额：$4,200.00
+* **收到的发票：**
+  * 单位抬头费用：$3.55（在 1.43% 的容差范围内）
+  * 数量：1,200 件
+  * 抬头费用总额：$4,260.00
+* **容差级别：**
+  * 单位抬头费用容差：±2%
 
-Since the header charge per unit ($3.55) is within the acceptable tolerance range of 2% compared to the purchase order, the system will:
+由于单位抬头费用（$3.55）与采购订单相比处于 2% 的可接受容差范围内，系统将：
 
-1. **Accept the Header Charge Per Unit:** The system accepts the invoiced header charge per unit of $3.55 as it falls within the defined tolerance limit.
-2. **Process the Header Charge:** The system processes the invoice with the total header charge amount based on the invoiced charge per unit and quantity:
-   * **Total Header Charge Amount = Quantity × Header Charge Per Unit**
-   * **Total Header Charge Amount = 1,200 units × $3.55 = $4,260.00**
-3. **Finalize the Invoice:** The system processes the transaction without any adjustments, accepting the invoice as it is.
+1. **接受单位抬头费用：**系统接受发票所列的单位抬头费用 $3.55，因为该金额在规定的容差限值内。
+2. **处理抬头费用：**系统根据发票所列的单位费用和数量，按抬头费用总额处理发票：
+   * **抬头费用总额 = 数量 × 单位抬头费用**
+   * **抬头费用总额 = 1,200 件 × $3.55 = $4,260.00**
+3. **完成发票处理：**系统无需进行任何调整即可处理该交易，并按原样接受发票。
 
-This approach ensures smooth and efficient processing of transactions when the header charges fall within the acceptable tolerance range, avoiding unnecessary rejections or delays.
+这种方法可确保在抬头费用处于可接受的容差范围内时，交易得到顺畅、高效的处理，避免不必要的拒收或延误。

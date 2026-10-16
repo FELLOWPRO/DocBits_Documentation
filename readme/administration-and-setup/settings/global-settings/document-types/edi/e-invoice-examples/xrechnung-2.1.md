@@ -1,13 +1,13 @@
 # XRechnung 2.1
 
-Exports to the document management system (IDM):
+导出到文档管理系统（IDM）：
 
-<figure><img src="../../../../../../.gitbook/assets/image (349).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
 
-Exported to Infor LN:
+导出到 Infor LN：
 
 <figure><img src="../../../../../../.gitbook/assets/image2-1.png" alt=""><figcaption></figcaption></figure>
 
-Exported to Infor M3:
+导出到 Infor M3：
 
-<figure><img src="../../../../../../.gitbook/assets/image (347).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (172).png" alt=""><figcaption></figcaption></figure>

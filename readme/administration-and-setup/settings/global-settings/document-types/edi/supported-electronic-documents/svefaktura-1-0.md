@@ -1,30 +1,30 @@
 ---
-description: SVEFAKTURA 1.0 electronic document support in DocBits
+description: "DocBits 对 SVEFAKTURA 1.0 电子文档的支持"
 ---
 
 # 🇸🇪 SVEFAKTURA 1.0
 
-| Property             | Value          |
+| 属性                 | 值             |
 | -------------------- | -------------- |
-| **Country / Region** | Sweden         |
-| **Document Types**   | Invoice        |
-| **Format**           | UBL XML        |
-| **Standard**         | Svefaktura 1.0 |
+| **国家 / 地区**      | 瑞典           |
+| **文档类型**         | 发票           |
+| **格式**             | UBL XML        |
+| **标准**             | Svefaktura 1.0 |
 
-Svefaktura 1.0 is the Swedish e-invoicing format based on UBL, maintained by the Swedish Association of Local Authorities and Regions (SFTI). While newer Swedish e-invoicing has moved to Peppol BIS, Svefaktura 1.0 remains in use and supported for processing legacy documents.
+Svefaktura 1.0 是基于 UBL 的瑞典电子发票格式，由瑞典地方政府与地区协会（SFTI）维护。虽然瑞典较新的电子发票已转向 Peppol BIS，但 Svefaktura 1.0 仍在使用中，DocBits 继续支持处理旧版文档。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件             | 状态          |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览             | ✅ 支持       |
+| 字段提取         | ✅ 支持       |
+| 转换             | ✅ 支持       |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/svefaktura-1-0-preview.png" alt="Svefaktura 1.0 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Sweden Svefaktura 1.0 invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/svefaktura-1-0-preview.png" alt="DocBits 中的 Svefaktura 1.0 发票预览"><figcaption><p>DocBits 默认显示的瑞典 Svefaktura 1.0 发票预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

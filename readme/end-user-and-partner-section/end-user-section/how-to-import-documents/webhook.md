@@ -1,8 +1,8 @@
 # Webhook
 
-With the Webhook API provided below, you can easily transfer documents directly to DocBits with a simple POST request. This API is designed to simplify the process of uploading files to DocBits, and all the necessary parameters are already filled in for you.
+借助下方提供的 Webhook API，您只需发送一个简单的 POST 请求，即可轻松将文档直接传输到 DocBits。此 API 旨在简化文件上传到 DocBits 的流程，所有必要参数都已为您填写。
 
-To get started, simply go to the following page (depending on the environment you are using):
+开始使用时，请根据您使用的环境前往以下页面：
 
 PROD: https://api.docbits.com/docs#/document/process\_documents\_document\_process\_documents\_post
 
@@ -10,4 +10,4 @@ SANDBOX: https://sandbox.api.docbits.com/docs#/document/process\_documents\_docu
 
 STAGE: https://stage.api.docbits.com/docs#/document/process\_documents\_document\_process\_documents\_post
 
-Make a call to the API using your API key. You can also include the file you want to upload as a parameter in your call.
+使用您的 API 密钥调用 API。您也可以在调用中将要上传的文件作为参数提供。

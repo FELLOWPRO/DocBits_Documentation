@@ -1,23 +1,23 @@
-# Email template
+# 电子邮件模板
 
-## Spalten
+## 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `name`: internal
-* `email_type`: internal
-* `value`: text
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
-* `subject`: internal
-* `last_modified_by`: internal
-* `deleted_by`: internal
-* `doc_type`: DOC Type
+* `id`：内部字段
+* `org_id`：组织 ID
+* `name`：内部字段
+* `email_type`：内部字段
+* `value`：文本
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `deleted_on`：带时区的时间戳
+* `subject`：内部字段
+* `last_modified_by`：内部字段
+* `deleted_by`：内部字段
+* `doc_type`：文档类型
 
-## Analyse & Beschreibung
+## 分析与说明
 
 ```markdown
 # Technical Documentation for `public.email_template` Table

@@ -1,38 +1,38 @@
-# Document Types
+# 文档类型
 
-Document types tell DocBits which kinds of documents your organisation works with. An administrator can find them under **Settings → Document Types** in the **Document Processing** section of the settings menu.
+文档类型用于告知 DocBits 您的组织处理哪些类型的文档。管理员可以在设置菜单的**文档处理**部分中，通过**设置 → 文档类型**找到这些类型。
 
-The page shows **Default Document Types**, which DocBits provides and you cannot delete, followed by **Custom Document Types** created for your organisation. Each type has its own card.
+页面首先显示 DocBits 提供且无法删除的**默认文档类型**，随后显示为您的组织创建的**自定义文档类型**。每种类型都有自己的卡片。
 
-<figure><img src="../../../.gitbook/assets/document-types-overview-en-20260928.png" alt="Document Types page with Invoice and other default document type cards, activation and extraction switches, settings gear, and configuration links"><figcaption><p>Choose a document type card to configure that type.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document-types-overview-en-20260928.png" alt="文档类型页面，显示发票及其他默认文档类型卡片、激活和提取开关、设置齿轮以及配置链接"><figcaption><p>选择文档类型卡片以配置该类型。</p></figcaption></figure>
 
-## What you can do on a card
+## 卡片上的可用操作
 
-| Control | What it does |
+| 控件 | 作用 |
 | --- | --- |
-| **Activate** | Makes this document type available or unavailable in your organisation. A blue switch is on; a grey switch is off. |
-| **Extraction** | Chooses the extraction mode: **Flex** when on or **Fix** when off. It does not simply switch extraction on or off. Hover over the switch to see its current mode. |
-| **Settings** (gear) | Opens **More Settings** for this type. Expand a category there to view its options. The categories depend on the document type. |
-| **Layouts** | Opens the layout configuration. See [Layout Builder](layout-builder.md) for the next steps. |
-| **Fields** | Opens the fields and recognition settings for this type. See [Fields](../../settings/global-settings/document-types/fields/README.md) for how to configure them. |
-| **Tables** | Opens the table column configuration for this type. |
-| **Scripts** | Opens processing scripts when this feature is available. |
-| **Model Training** | Opens model training for this type. |
-| **E-Doc** | Opens electronic document settings when the type supports them. |
-| **Document Sub Types** | Opens the subtypes for this document type. |
+| **激活** | 使此文档类型在您的组织中可用或不可用。蓝色开关表示开启；灰色开关表示关闭。 |
+| **提取** | 选择提取模式：开启时为 **Flex**，关闭时为 **Fix**。这并不是简单地开启或关闭提取。将鼠标悬停在开关上可查看当前模式。 |
+| **设置**（齿轮） | 打开此类型的**更多设置**。展开其中的类别即可查看选项。类别取决于文档类型。 |
+| **布局** | 打开布局配置。请参阅[布局构建器](layout-builder.md)了解后续步骤。 |
+| **字段** | 打开此类型的字段和识别设置。请参阅[字段](../../settings/global-settings/document-types/fields/README.md)了解如何进行配置。 |
+| **表格** | 打开此类型的表格列配置。 |
+| **脚本** | 当此功能可用时，打开处理脚本。 |
+| **模型训练** | 打开此类型的模型训练。 |
+| **电子文档** | 当此类型支持电子文档时，打开电子文档设置。 |
+| **文档子类型** | 打开此文档类型的子类型。 |
 
-You may see more links, such as validation or transformation rules, depending on your organisation's features. Choose the link on the card for the type you want to change.
+根据您组织启用的功能，您可能会看到验证规则或转换规则等其他链接。选择目标类型卡片上的链接进行修改。
 
-## Edit fields and recognition settings
+## 编辑字段和识别设置
 
-Click **Fields** on a card to view its field groups. At the top of that page, **OCR** and **Match Score** set recognition thresholds, **Restore Defaults** resets those thresholds, and **Search by Name** finds a field. Use **Create new group** to organise fields and **Create field** within a group to add one. **Master Data Settings** opens the related master data configuration.
+点击卡片上的**字段**可查看其字段组。在该页面顶部，**OCR**和**匹配分数**用于设置识别阈值，**恢复默认值**用于重置这些阈值，**按名称搜索**用于查找字段。使用**创建新组**整理字段，并在某个组内使用**创建字段**添加字段。**主数据设置**可打开相关的主数据配置。
 
-Each field row has controls such as **Required**, **Read Only**, **Hidden**, **Force Validation**, **Use AI**, OCR, Match Score and Formula. Review the [Fields guide](../../settings/global-settings/document-types/fields/README.md) before changing individual values. Click **Save Settings** on the Fields page to keep your changes.
+每个字段行都包含一些控件，例如**必填**、**只读**、**隐藏**、**强制验证**、**使用 AI**、OCR、匹配分数和公式。更改单个值前，请先查看[字段指南](../../settings/global-settings/document-types/fields/README.md)。在字段页面点击**保存设置**以保留更改。
 
-<figure><img src="../../../.gitbook/assets/document-types-invoice-fields-en-20260928.png" alt="Invoice Fields page with recognition settings, field groups, per-field controls, and Save Settings"><figcaption><p>The Fields page has its own Save Settings button.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document-types-invoice-fields-en-20260928.png" alt="发票字段页面，显示识别设置、字段组、各字段控件和保存设置"><figcaption><p>字段页面有自己的“保存设置”按钮。</p></figcaption></figure>
 
-## Create a custom document type
+## 创建自定义文档类型
 
-Scroll to **Custom Document Types** and click **+ New**. Follow [Adding/Editing Document Types](../../settings/global-settings/document-types/adding-editing-document-types.md) to set up the new type.
+滚动到**自定义文档类型**，然后点击**+ 新建**。按照[添加/编辑文档类型](../../settings/global-settings/document-types/adding-editing-document-types.md)设置新类型。
 
-<figure><img src="../../../.gitbook/assets/document-types-custom-new-en-20260928.png" alt="Bottom of Document Types page showing the Custom Document Types section and New button"><figcaption><p>Use New under Custom Document Types to begin creating a type.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document-types-custom-new-en-20260928.png" alt="文档类型页面底部，显示自定义文档类型部分和新建按钮"><figcaption><p>使用自定义文档类型下方的“新建”开始创建类型。</p></figcaption></figure>

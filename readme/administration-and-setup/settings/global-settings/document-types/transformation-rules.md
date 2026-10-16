@@ -1,224 +1,256 @@
-# Transformation Rules
+# 转换规则
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4" %}
 
-## Overview
+## 概述
 
-Transformation rules clean up or rewrite extracted data **automatically**, every time a document is processed and every time it is saved. A rule can change:
+转换规则会在每次处理文档和每次保存文档时，**自动**清理或重写提取的数据。规则可以更改：
 
-* a **header field** (invoice number, currency, supplier tax ID …),
-* a **column** in every row of a table (unit, item number, price basis …),
-* the **rows** of a table (clear them, add a row),
-* an **attribute of the document** — today the sub-organisation it belongs to (**Routing**).
+* 一个**抬头字段**（发票号码、币种、供应商税号等），
+* 表格每一行中的一个**列**（单位、项目编号、价格基准等），
+* 表格的**行**（清空行、添加行），
+* 文档的一个**属性**——目前是文档所属的子组织（**路由**）。
 
-Each rule **reads** a value, sends it through a short **pipeline** of steps, and **writes** the result back. Rules run **before** validation, scripts and purchase order matching, so everything downstream already sees the corrected values.
+每条规则都会**读取**一个值，将它传递给由若干步骤组成的**处理流程**，然后将结果写回。规则在验证、脚本和采购订单匹配之前运行，因此后续流程看到的都是已更正的值。
 
-Transformation rules replace most of the small scripts organisations used to write for "always trim this field", "map this supplier's unit codes", "add the prefix our ERP expects" or "collapse this supplier's lines into one total line" — with a form, a live preview and no code.
+转换规则通过表单、实时预览和免代码配置，取代了组织过去编写的大多数小型脚本，例如“始终去掉此字段的首尾空格”“映射此供应商的单位代码”“添加 ERP 所需的前缀”或“将此供应商的多个行项目合并为一个总额行”。
 
-### Problems they solve
+### 解决的问题
 
-| Requirement | Rule |
+| 需求 | 规则 |
 | --- | --- |
-| A supplier prints the invoice number without the `INV-` prefix our ERP expects | Header field *Invoice Number*, only for that supplier: Trim → UPPERCASE → Affix: add prefix `INV-` |
-| Suppliers send German unit codes (`STK`, `Std`), the ERP expects UN/ECE codes (`PCE`, `HUR`) | Table column *UNIT*: Map values `STK → PCE`, `KG → KGM`, `Std → HUR` |
-| Item numbers come with a prefix such as `Art.-Nr. 4711` | Table column *ITEM_NUMBER*: Affix: strip prefix `Art.-Nr. ` |
-| Tax IDs contain spaces and dots | Header field *Supplier Tax ID*: Sanitise, keep alphanumeric |
-| A supplier is matched on the total, not on lines | Table rows: Clear all rows → Add a row with the net amount |
-| All documents of certain suppliers belong to a sub-organisation | Routing: set the sub-organisation when *Supplier ID is one of …* |
-| Dates must be written in a fixed format into a free-text field | Header field: Reformat date `%d.%m.%Y` |
+| 供应商打印的发票号码没有 ERP 要求的 `INV-` 前缀 | 抬头字段 *Invoice Number*，仅适用于该供应商：Trim → UPPERCASE → Affix：添加前缀 `INV-` |
+| 供应商发送德国单位代码（`STK`、`Std`），ERP 需要 UN/ECE 代码（`PCE`、`HUR`） | 表格列 *UNIT*：映射值 `STK → PCE`、`KG → KGM`、`Std → HUR` |
+| 项目编号带有前缀，例如 `Art.-Nr. 4711` | 表格列 *ITEM_NUMBER*：Affix：去除前缀 `Art.-Nr. ` |
+| 税号中包含空格和句点 | 抬头字段 *Supplier Tax ID*：Sanitise，仅保留字母数字字符 |
+| 供应商按总额匹配，而不是按行项目匹配 | 表格行：Clear all rows → 添加一行并填入净额 |
+| 某些供应商的所有文档都属于某个子组织 | 路由：当 *Supplier ID 属于以下值之一时*，设置子组织 |
+| 日期必须以固定格式写入自由文本字段 | 抬头字段：Reformat date `%d.%m.%Y` |
+| PO 号码位于错误字段中（例如 *Invoice Number*） | 抬头字段 *Purchase Order*：从 *Invoice Number* 读取，仅当 *Purchase Order 为空时* |
+| PO 号码带有前导零或采购订单中没有的前缀 | 抬头字段 *Purchase Order*：使用 Trim 去除左侧的 `0`，或使用 Affix 去除前缀 |
+| 项目编号在大小写、空格或前缀方面与采购订单行项目不一致 | 表格列 *ITEM_NUMBER*：Affix：去除前缀 → Sanitise → UPPERCASE |
 
-{% hint style="info" %}
-While the feature is in beta, the settings described below only appear when the **Document Types** settings page is opened with `?beta=true` appended to the address.
-{% endhint %}
+## 启用转换规则
 
-## Enable transformation rules
+组织管理员可以**按文档类型**启用转换规则。
 
-Transformation rules are switched on **per document type** by an **organisation administrator**.
+1. 前往 **Settings → Global Settings → Document Types**。
+2. 点击文档类型卡片上的**设置**（齿轮）图标。
+3. 打开 **Transformation Rules** 并启用开关。点击 **Manage transformation rules** 打开规则列表。
 
-1. Go to **Settings → Global Settings → Document Types**.
-2. Click the **settings** (gear) icon on the document type card.
-3. Open **Transformation Rules** and turn the toggle on. Click **Manage transformation rules** to open the list.
+<figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="转换规则开关"><figcaption><p>文档类型附加设置中的 Transformation Rules 开关</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="The Transformation Rules toggle"><figcaption><p>The Transformation Rules toggle in the additional settings of a document type</p></figcaption></figure>
+现在，文档类型卡片上会显示 **Transformation Rules** 链接，以及用于查看执行日志的 **Logs** 链接。
 
-The card of the document type now shows a **Transformation Rules** link, and a **Logs** link for the execution logs.
+## 规则列表
 
-## The rule list
+列表会按照运行顺序显示该文档类型的所有规则，并为每条规则显示一句话摘要（“当 invoice_id 为 abcd 时，读取 invoice_id，将其转换为大写，然后写回。”）、适用范围（**抬头**、**表格**、**列**、**路由**）、步骤数、来源，以及是否启用了 **Log execution**。可以按适用范围和 **Active / Inactive** 筛选、搜索，也可以使用 **⋮** 菜单复制或删除规则。
 
-The list shows all rules of the document type in the order they run, each with a one-sentence summary ("When invoice_id is abcd, take invoice_id, make it UPPERCASE, and save it back."), its scope (**Header**, **Table**, **Column**, **Routing**), the number of steps, its source and whether **Log execution** is on. Filter by scope and by **Active / Inactive**, search, and use the **⋮** menu to duplicate or delete a rule.
+规则有三种来源，与验证规则相同：DocBits 提供的 **System default** 规则（点击 **Customize** 创建可编辑副本）、**Customized** 系统规则（使用 **Reset to Default** 还原原始规则），以及你创建的 **Custom** 规则。
 
-Rules come from three sources, as for validation rules: **System default** rules shipped with DocBits (click **Customize** to get an editable copy), **Customized** system rules (**Reset to Default** restores the original) and **Custom** rules you created.
+## 创建规则
 
-## Create a rule
+点击 **New rule**。构建器左侧有三个步骤，右侧是 **Live preview**。构建过程中，顶部会用一句话概述规则。
 
-Click **New rule**. The builder has three steps on the left and a **Live preview** on the right. At the top it summarises the rule in one sentence while you build it.
+<figure><img src="../../../../.gitbook/assets/transformation-rule-scope.png" alt="转换规则构建器的第 1 步"><figcaption><p>第 1 步：规则要更改的内容。顶部的句子会以通俗语言描述规则</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/transformation-rule-scope.png" alt="Step 1 of the transformation rule builder"><figcaption><p>Step 1: what the rule changes. The sentence at the top describes the rule in plain language</p></figcaption></figure>
+### 第 1 步 — 内容与范围
 
-### Step 1 — What & where
+**此规则要更改什么？**——适用范围：
 
-**What does this rule change?** — the scope:
-
-| Scope | Changes | Target | Runs |
+| 范围 | 更改内容 | 目标 | 运行次数 |
 | --- | --- | --- | --- |
-| **Header field** | one value per document | a header field, e.g. *Invoice Number* | once per document |
-| **Table rows** | whole line-item rows — clear them or add rows | a table, e.g. `INVOICE_TABLE` | once per document |
-| **Table column** | a value in every line-item row | a table and a column, e.g. `INVOICE_TABLE` / `UNIT` | once per row |
-| **Routing** | an attribute of the document — today the sub-organisation | *sub-organisation* | once per document |
+| **抬头字段** | 每个文档的一个值 | 一个抬头字段，例如 *Invoice Number* | 每个文档一次 |
+| **表格行** | 完整的行项目行——清空行或添加行 | 一个表格，例如 `INVOICE_TABLE` | 每个文档一次 |
+| **表格列** | 每个行项目行中的一个值 | 一个表格和一个列，例如 `INVOICE_TABLE` / `UNIT` | 每行一次 |
+| **路由** | 文档的一个属性——目前是子组织 | *子组织* | 每个文档一次 |
 
-Then enter the **Rule Name** (the **Rule key** is generated from it), pick the **Target field** / **Table name** / **Target column**, and optionally a **Description**. **Log execution** writes one log entry per application — useful while you tune a rule.
+然后输入 **Rule Name**（系统会根据名称生成 **Rule key**），选择 **Target field** / **Table name** / **Target column**，并可选择填写 **Description**。启用 **Log execution** 后，每次应用规则都会写入一条日志，便于调整规则时排查问题。
 
-### Step 2 — When it runs
+### 第 2 步 — 运行条件
 
-* **Always** — the rule runs on every document of the type.
-* **Only when…** — the rule runs only if a condition is true, for example *Supplier ID is HP0000278*. For **Table column** rules the condition can use the columns of the current row and is checked row by row. See [Rule Conditions (Applies when)](rule-conditions-applies-when.md) for all fields, operators and examples.
+* **Always** — 规则会应用于该类型的每个文档。
+* **Only when…** — 只有条件成立时才运行规则，例如 *Supplier ID is HP0000278*。对于 **Table column** 规则，条件可以使用当前行的列，并会逐行检查。所有字段、运算符和示例请参见[规则条件（应用条件）](rule-conditions-applies-when.md)。
 
-Two options control how often the rule applies:
+以下两个选项用于控制规则的应用频率：
 
-| Option | Effect |
+| 选项 | 效果 |
 | --- | --- |
-| **Run only once per document** | Normally rules run again on every save. With this on, the rule applies **at most once** to a document and is then finished with it. A pass in which the conditions do not match does not count, so the rule can still apply on a later save. Needed for steps that would change the value again on every save (see [Idempotency](#run-once-and-idempotency)) and for table rules that should not rebuild the lines again. |
-| **Run after lookup population (before PO match)** | *(newer versions)* Runs the rule in an additional pass after the lookup data (for example supplier master data) has been filled in, and before purchase order matching. Use it when the rule needs a value that a lookup provides. The rule still runs at the usual stages too; a run-once rule with this option waits for this pass instead of running right after extraction. |
+| **Run only once per document** | 规则通常会在每次保存时重新运行。启用此选项后，规则对每个文档**最多应用一次**，之后就不再处理该文档。条件不匹配的运行不计入次数，因此规则仍可在之后保存时应用。适用于每次保存都会再次更改值的步骤（请参见[幂等性](#run-once-and-idempotency)）以及不应反复重建行项目的表格规则。 |
+| **Run after lookup population (before PO match)** | *（较新版本）* 在查找数据（例如供应商主数据）填充后、采购订单匹配开始前，额外运行一次规则。若规则需要查找操作提供的值，请启用此选项。规则仍会在常规阶段运行；启用此选项的仅运行一次规则会等待此阶段，而不会在提取后立即运行。 |
 
-### Step 3 — The pipeline
+### 第 3 步 — 处理流程
 
-<figure><img src="../../../../.gitbook/assets/transformation-rule-pipeline.png" alt="The pipeline with three steps and the live preview"><figcaption><p>Read → Trim → Change case → Affix → Write, with the value after every step in the live preview</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/transformation-rule-pipeline.png" alt="包含三个步骤和实时预览的处理流程"><figcaption><p>读取 → Trim → 更改大小写 → Affix → 写入；实时预览会显示每个步骤之后的值</p></figcaption></figure>
 
-* **Read from** — **the field (or column) itself**, or **another field**. Reading from another field lets you fill a field from a different one, for example copy the purchase order number from a free-text field.
-* **Steps** — the value goes through the steps **from top to bottom**; the output of one step is the input of the next. Add steps with **+ Add a step**, reorder them with the arrows, remove them with **✕**. Every step shows the intermediate value of the sample on its right.
-* **Write to** — the target from step 1. DocBits writes the stored value and refreshes the display value automatically afterwards.
+* **Read from** — 读取**字段（或列）本身**的值，或者读取**另一个字段**的值。通过读取另一个字段，可以使用其他字段的值填充字段，例如从自由文本字段复制采购订单号码。
+* **Steps** — 值会按**从上到下**的顺序经过各个步骤；上一步的输出是下一步的输入。使用 **+ Add a step** 添加步骤，使用箭头调整顺序，使用 **✕** 移除步骤。每个步骤右侧都会显示样本的中间值。
+* **Write to** — 第 1 步中指定的目标。DocBits 会写入存储值，然后自动刷新显示值。
 
-### The steps
+### 步骤说明
 
-<figure><img src="../../../../.gitbook/assets/transformation-step-menu.png" alt="The step menu"><figcaption><p>All steps, grouped by purpose</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/transformation-step-menu.png" alt="步骤菜单"><figcaption><p>按用途分组的所有步骤</p></figcaption></figure>
 
-| Step | Settings | Example input → output |
+| 步骤 | 设置 | 输入 → 输出示例 |
 | --- | --- | --- |
-| **Change case** | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
-| **Trim** | side (both, left, right); characters (blank = whitespace) | `  4711 ` → `4711`; with characters `0` and side left: `004711` → `4711` |
-| **Pad** | length, fill character, side | length 10, `0`, left: `4711` → `0000004711` |
-| **Truncate** | maximum length | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
-| **Affix** | add prefix, add suffix, strip prefix, strip suffix; text | add prefix `INV-`: `4711` → `INV-4711`; strip prefix `Art.-Nr. `: `Art.-Nr. 4711` → `4711` |
-| **Sanitise** | keep only (alphanumeric, letters, digits, alphanumeric + space) or strip given characters | keep alphanumeric: `DE 123.456.789` → `DE123456789` |
-| **Take a slice** | start, length or end | start 0, length 4: `2026-09-29` → `2026` |
-| **Extract** | pattern, capture group | pattern `PO[- ]?(\d+)`, group 1: `Order PO-45001234` → `45001234` |
-| **Find & replace** | pattern, replace with, count (0 = all) | pattern `\s+`, replace with ` `: `ACME    GmbH` → `ACME GmbH` |
-| **Map values** | mappings (from → to), value when no match (blank = keep input), ignore case | `STK → PCE`: `stk` → `PCE` |
-| **Reformat date** | output pattern (`%d.%m.%Y`, `%m/%d/%Y`, `%Y-%m-%d`, `%d %b %Y`) | `%d.%m.%Y`: `2026-09-29` → `29.09.2026` |
-| **Format number** | locale (de_DE, en_US, en_GB, fr_FR), min. and max. decimals | de_DE, 2 decimals: `1234.5` → `1.234,50` |
-| **Fix value** | the value | always writes the value, whatever the field contained |
-| **Clear** | – | empties the field |
+| **Change case** | UPPERCASE、lowercase、Title Case、首字母大写 | `inv-4711` → `INV-4711` |
+| **Trim** | 侧边（两侧、左侧、右侧）；字符（留空表示空白字符） | `  4711 ` → `4711`；字符设为 `0` 且侧边设为左侧时：`004711` → `4711` |
+| **Pad** | 长度、填充字符、侧边 | 长度 10、字符 `0`、左侧：`4711` → `0000004711` |
+| **Truncate** | 最大长度 | 10：`ABCDEFGHIJKL` → `ABCDEFGHIJ` |
+| **Affix** | 添加前缀、添加后缀、去除前缀、去除后缀；文本 | 添加前缀 `INV-`：`4711` → `INV-4711`；去除前缀 `Art.-Nr. `：`Art.-Nr. 4711` → `4711` |
+| **Sanitise** | 仅保留（字母数字字符、字母、数字、字母数字字符及空格），或去除指定字符 | 仅保留字母数字字符：`DE 123.456.789` → `DE123456789` |
+| **Take a slice** | 起始位置、长度或结束位置 | 起始位置 0，长度 4：`2026-09-29` → `2026` |
+| **Extract** | 模式、捕获组 | 模式 `PO[- ]?(\d+)`，组 1：`Order PO-45001234` → `45001234` |
+| **Find & replace** | 模式、替换为、次数（0 = 全部） | 模式 `\s+`，替换为 ` `：`ACME    GmbH` → `ACME GmbH` |
+| **Map values** | 映射（从 → 到）、未匹配时的值（留空 = 保留输入）、忽略大小写 | `STK → PCE`：`stk` → `PCE` |
+| **Reformat date** | 输出格式（`%d.%m.%Y`、`%m/%d/%Y`、`%Y-%m-%d`、`%d %b %Y`） | `%d.%m.%Y`：`2026-09-29` → `29.09.2026` |
+| **Format number** | 区域设置（de_DE、en_US、en_GB、fr_FR）、小数位数最小值和最大值 | de_DE，2 位小数：`1234.5` → `1.234,50` |
+| **Fix value** | 值 | 无论字段原有内容是什么，始终写入此值 |
+| **Clear** | – | 清空字段 |
 
-**Table rows** rules use two different steps, which work on rows instead of values:
+**表格行**规则使用两个不同的步骤，这些步骤处理的是行而不是值：
 
-| Step | Effect |
+| 步骤 | 效果 |
 | --- | --- |
-| **Clear all rows** | deletes every extracted row. Rows added by a later step survive. |
-| **Add a row** | adds one row **after the last row** or **before the first row**. For each column choose **Value** (a fixed value) or **Field** (the value of a header field). Columns you leave out stay empty. |
+| **Clear all rows** | 删除所有已提取的行。之后步骤添加的行会保留。 |
+| **Add a row** | 在**最后一行之后**或**第一行之前**添加一行。对于每个列，可选择 **Value**（固定值）或 **Field**（抬头字段的值）。未设置的列保持为空。 |
 
 {% hint style="info" %}
-**Reformat date** expects the date as DocBits stores it internally (`YYYY-MM-DD`). Apply it to the field itself, not to a text that already contains a formatted date.
+**Reformat date** 需要使用 DocBits 内部存储日期的格式（`YYYY-MM-DD`）。请将其应用于字段本身，而不是已经包含格式化日期的文本。
 {% endhint %}
 
-### Live preview
+### 实时预览
 
-The live preview runs the rule on a sample while you build it:
+实时预览会在构建规则时使用样本运行规则：
 
-* **Sample input** — type a value as it would come from the document. For table rules, enter the number of extracted rows (**Sample table**) and values for the fields that new rows read (**Row source values**).
-* **Condition values** — for rules with a condition, type the values of the condition fields. The preview shows **Conditions match — rule runs** or **Conditions do not match — rule is skipped**.
-* Below, you see the value after **every step** and the final result that would be written ("invoice_id → INV-230620-03A", or "unchanged").
+* **Sample input** — 输入文档中可能出现的值。对于表格规则，输入提取行的数量（**Sample table**）以及新行所读取字段的值（**Row source values**）。
+* **Condition values** — 对于设有条件的规则，输入条件字段的值。预览会显示 **Conditions match — rule runs** 或 **Conditions do not match — rule is skipped**。
+* 下方会显示**每个步骤之后**的值，以及最终将写入的结果（“invoice_id → INV-230620-03A”或“unchanged”）。
 
-Nothing is saved while you use the preview. Click **Save** to store the rule.
+使用预览时不会保存任何内容。点击 **Save** 保存规则。
 
-## Examples
+## 示例
 
-### Clean up a supplier's invoice number
+### 清理供应商的发票号码
 
-Header field **Invoice Number** · only when *Supplier ID is HP0000278* · Trim → Change case UPPERCASE → Affix add prefix `INV-`.
-Sample `  230620-03a ` → `INV-230620-03A`. See the screenshot of the pipeline above.
+抬头字段 **Invoice Number** · 仅当 *Supplier ID is HP0000278* 时 · Trim → Change case UPPERCASE → Affix 添加前缀 `INV-`。
+样本 `  230620-03a ` → `INV-230620-03A`。请参见上方的处理流程截图。
 
-### Map unit codes
+### 映射单位代码 <a id="map-unit-codes"></a>
 
-Table column **INVOICE_TABLE / UNIT** · always · Trim → Map values `STK → PCE`, `KG → KGM`, `Std → HUR`, **Ignore case when matching** on, no-match value blank (keep input).
+表格列 **INVOICE_TABLE / UNIT** · 始终运行 · Trim → Map values：`STK → PCE`、`KG → KGM`、`Std → HUR`，启用 **Ignore case when matching**，未匹配时的值留空（保留输入值）。
 
-<figure><img src="../../../../.gitbook/assets/transformation-column-value-map.png" alt="A table column rule with Map values"><figcaption><p>Map values on the UNIT column: <code>stk</code> becomes <code>PCE</code></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/transformation-column-value-map.png" alt="包含 Map values 步骤的表格列规则"><figcaption><p>对 UNIT 列应用 Map values：<code>stk</code> 会转换为 <code>PCE</code></p></figcaption></figure>
 
-### One total line for a supplier matched on the total
+### 将供应商的多个行项目合并为一个总额行 <a id="one-total-line-for-a-supplier-matched-on-the-total"></a>
 
-Table rows **INVOICE_TABLE** · only when *Supplier ID is HP0000278* · Clear all rows → Add a row with `POSITION` = value `001`, `QUANTITY` = value `1`, `NET_AMOUNT` = field *Total Net Amount*.
+表格行 **INVOICE_TABLE** · 仅当 *Supplier ID is HP0000278* 时 · Clear all rows → 添加一行，其中 `POSITION` = 值 `001`、`QUANTITY` = 值 `1`、`NET_AMOUNT` = 字段 *Total Net Amount*。
 
-<figure><img src="../../../../.gitbook/assets/transformation-add-row-columns.png" alt="A table rows rule: clear all rows, then add a row"><figcaption><p>Three extracted rows are replaced by one row carrying the net amount</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/transformation-add-row-columns.png" alt="表格行规则：先清空所有行，再添加一行"><figcaption><p>三个已提取行被替换为一个包含净额的行</p></figcaption></figure>
 
-Order matters: **Clear all rows** must come **before** **Add a row**. The builder warns you if it does not ("Clear all rows runs after Add a row …"), and it also warns if an **Add a row** step is not preceded by **Clear all rows**, because the rule would then append another copy of the row on every save. Pair this rule with a match-on-total purchase order matching rule that is active for one-line documents.
+顺序很重要：**Clear all rows** 必须位于 **Add a row** 之前。如果顺序不正确，构建器会发出警告（“Clear all rows runs after Add a row …”）；如果 **Add a row** 步骤之前没有 **Clear all rows**，构建器也会发出警告，因为规则会在每次保存时再追加一份相同的行。请将此规则与适用于单行文档的按总额匹配采购订单规则配合使用。
 
-### More examples
+### 从发票号码字段填充采购订单号码 <a id="fill-the-purchase-order-from-the-invoice-number-field"></a>
 
-| Goal | Scope | Condition | Steps |
+抬头字段 **Purchase Order** · 仅当 *Purchase Order is empty* 时 · **Read from** *Invoice Number* → Trim → Change case UPPERCASE。
+
+<figure><img src="../../../../.gitbook/assets/transformation-po-from-invoice-number.png" alt="从 Invoice Number 填充 Purchase Order 的规则构建器和实时预览"><figcaption><p>规则及其实时预览：<code>po-4711</code> 在 <code>purchase_order</code> 中变为 <code>PO-4711</code>。测试文档类型上的示例规则。</p></figcaption></figure>
+
+有些供应商会把订单号码打印在提取程序用于识别发票号码的位置。此时 **Invoice Number** 中保存的是 PO 号码，而 **Purchase Order** 为空，导致采购订单匹配器找不到可匹配的号码。此规则会在开始匹配之前复制该值。在开发系统中进行的测试表明，保存文档并应用规则后，一个存在此问题的文档从*未匹配*变为*完全匹配*（2 行中的 2 行）。规则仅在 **Purchase Order** 为空时运行，因此不会覆盖已正确提取的号码。
+
+### 规范化项目编号以便进行采购订单匹配 <a id="make-item-numbers-comparable-for-purchase-order-matching"></a>
+
+表格列 **INVOICE_TABLE / ITEM_NUMBER** · 始终运行 · Affix：去除前缀 `Art.-Nr. ` → Sanitise：仅保留字母数字字符 → Change case UPPERCASE。
+
+<figure><img src="../../../../.gitbook/assets/transformation-item-number-compare.png" alt="包含实时预览的项目编号规则构建器"><figcaption><p>实时预览显示每个步骤：<code>Art.-Nr. ab-12/3</code> 变为 <code>AB123</code></p></figcaption></figure>
+
+如果发票上写的是 `Art.-Nr. ab-12/3`，而采购订单上是 `AB123`，行项目就无法匹配。此规则会将发票中的值转换为与采购订单相同的格式。请检查采购订单使用的格式，并相应调整步骤。
+
+### 更多示例
+
+| 目标 | 范围 | 条件 | 步骤 |
 | --- | --- | --- | --- |
-| Remove spaces and dots from the tax ID | Header *Supplier Tax ID* | always | Sanitise: keep alphanumeric |
-| Strip the article prefix | Column *ITEM_NUMBER* | always | Affix: strip prefix `Art.-Nr. ` |
-| 10-digit supplier numbers | Header *Supplier ID* | always | Trim → Pad length 10 with `0`, left |
-| Take the PO number out of a reference text | Header *Purchase Order*, read from another field | only when *Purchase Order is empty* | Extract `PO[- ]?(\d+)`, group 1 |
-| Always use one currency for a supplier | Header *Currency* | only when *Supplier ID is 10040* | Fix value `CHF` |
-| Remove a wrongly extracted value | Header *Discount Term* | only when *Supplier ID is 20723* | Clear |
-| Price basis per unit | Column *UNIT_PRICE_PER* | only when *row.UNIT_PRICE_PER is empty* | Fix value `1` |
-| Route suppliers to a sub-organisation | Routing | *Supplier ID is one of* `10040, 10041` | assign a fixed sub-organisation |
+| 去除税号中的空格和句点 | 抬头 *Supplier Tax ID* | 始终 | Sanitise：仅保留字母数字字符 |
+| 去除商品前缀 | 列 *ITEM_NUMBER* | 始终 | Affix：去除前缀 `Art.-Nr. ` |
+| 供应商编号为 10 位 | 抬头 *Supplier ID* | 始终 | Trim → Pad，长度 10，使用 `0` 填充，位于左侧 |
+| 从参考文本中提取 PO 号码 | 抬头 *Purchase Order*，从另一个字段读取 | 仅当 *Purchase Order is empty* 时 | Extract `PO[- ]?(\d+)`，组 1 |
+| 为某个供应商始终使用一种币种 | 抬头 *Currency* | 仅当 *Supplier ID is 10040* 时 | Fix value `CHF` |
+| 移除错误提取的值 | 抬头 *Discount Term* | 仅当 *Supplier ID is 20723* 时 | Clear |
+| 每单位价格基准 | 列 *UNIT_PRICE_PER* | 仅当 *row.UNIT_PRICE_PER is empty* 时 | Fix value `1` |
+| 将供应商路由到子组织 | 路由 | *Supplier ID 属于以下值之一*：`10040, 10041` | 指定固定子组织 |
+| 去除 PO 号码中的前导零 | 抬头 *Purchase Order* | 始终 | Trim 字符 `0`，侧边为左侧 |
+| 仅保留 PO 号码中的数字 | 抬头 *Purchase Order* | 始终 | Sanitise：仅保留数字（`PO-45001234` → `45001234`） |
+| 截断过长的 PO 参考编号 | 抬头 *Purchase Order* | 仅当 *Supplier ID is 20723* 时 | Truncate 为 10 个字符 |
+| 为 PO 号码添加 ERP 所需的前缀 | 抬头 *Purchase Order* | 仅当 *Supplier ID is 10040* 时 | Affix：添加前缀 `4500` |
+| 按 ERP 可读取的格式写入金额 | 抬头 *Total Amount* | 始终 | Format number，区域设置为 `de_DE`，保留 2 位小数 |
+| 去除项目编号中的空格 | 列 *ITEM_NUMBER* | 始终 | Sanitise：去除字符 ` `（空格） |
+| 将项目编号转换为大写 | 列 *ITEM_NUMBER* | 始终 | Change case UPPERCASE |
+| 将某个工厂的 PO 路由到子组织 | 路由 | *Purchase Order starts with* `4500` | 指定固定子组织 |
 
-## Routing rules (sub-organisation)
+## 路由规则（子组织）
 
-A **Routing** rule does not change a field. It stamps an attribute on the document when its conditions match — today the **sub-organisation**. Choose **Assign a fixed sub-organisation** and pick it from the list, or **Map from a field** to map values of an extracted field to sub-organisations. The document then belongs to that sub-organisation, with its users, permissions and settings. A value that is not a valid sub-organisation is never written.
+**路由**规则不会更改字段，而是在条件匹配时为文档设置一个属性——目前是**子组织**。选择 **Assign a fixed sub-organisation** 并从列表中选择子组织，或者选择 **Map from a field**，将提取字段中的值映射到子组织。之后，该文档属于此子组织，并使用其用户、权限和设置。无效的子组织值不会被写入。
 
-## When rules run
+## 规则的运行时机
 
-* **During processing**, after extraction and before master data lookup, validation, scripts and purchase order matching.
-* On **every save** of the document in which the extracted data changed. Rules without **Run only once per document** are applied again each time.
-* Within one pass, rules run scope by scope in this order: **Header → Routing → Table rows → Table column**. A column rule therefore also applies to rows that a table rule has just added. Within a scope, rules run by priority, then by key.
+* **处理过程中**：在提取后、主数据查找、验证、脚本和采购订单匹配之前运行。
+* 当提取数据发生变化时，文档**每次保存**都会运行。未启用 **Run only once per document** 的规则每次都会重新应用。
+* 在一次运行中，规则按适用范围依次运行，顺序为：**抬头 → 路由 → 表格行 → 表格列**。因此，列规则也会应用于表格规则刚添加的行。同一范围内的规则按优先级排序，然后按键排序。
 
-### Run once and idempotency
+### 仅运行一次与幂等性 <a id="run-once-and-idempotency"></a>
 
-Most steps give the same result when they run on their own output — trimming a trimmed value, mapping `PCE` again, adding a prefix that is already there. These rules can safely run on every save.
+大多数步骤在处理自身的输出时会产生相同结果，例如再次 Trim 已去除首尾空格的值、再次映射 `PCE`，或添加一个已经存在的前缀。这些规则可以在每次保存时安全运行。
 
-**Take a slice**, **Extract** and **Find & replace** are different: run again on their own result, they keep changing it (a slice takes the first four characters of the first four characters …). DocBits therefore does not let you save a rule that applies these steps to its own target field. Either:
+**Take a slice**、**Extract** 和 **Find & replace** 则不同：再次处理自身的结果时，值会继续变化（例如，截取前四个字符后再次截取，会继续从这四个字符中取出前四个字符……）。因此，DocBits 不允许保存将这些步骤应用于其自身目标字段的规则。你可以选择：
 
-* switch on **Run only once per document**, or
-* **Read from another field**, so the input stays unchanged.
+* 启用 **Run only once per document**，或者
+* **Read from another field**，这样输入值就不会变化。
 
-## Transformation rules and purchase order matching
+## 转换规则与采购订单匹配
 
-Table rules and column rules change what the PO matcher sees:
+规则在采购订单匹配之前运行，因此可以准确地预处理匹配器读取的内容：
 
-* A table rule that **rebuilds** lines (for example clear all rows and add one total line) keeps an existing purchase order match as long as it produces the **same lines again** — values are compared by meaning, so `1.0` and `1.00` are the same line. The lines keep their identity and the match survives every save.
-* If a rule **replaces or removes lines that were matched**, the match cannot be kept. The document then records which rule dropped it, the Purchase Order Matching screen shows this as the reason ("_The PO match could not be saved: the transformation rule "…" rebuilt the table_") and administrators get a link to the rule. The **matching history** of the document shows a _Transformation rules_ step before the first matching stage with the rules that ran.
-* The number of lines after the rules is what the [activation conditions](more-settings/purchase-order/purchase-order-matching-rules.md#activation-conditions) of the matching rules count. A rule that collapses an invoice into **one** line only makes sense together with a match-on-total rule that is active for one-line documents (`[[count(table_lines)]] >= 1`).
+| 匹配器读取的内容 | 规则可执行的操作 | 示例 |
+| --- | --- | --- |
+| 抬头中的采购订单号码 | 从其他字段复制、从文本中提取、去除前缀和前导零 | [从发票号码字段填充采购订单号码](#fill-the-purchase-order-from-the-invoice-number-field) |
+| 行项目的项目编号 | 去除前缀、移除特殊字符、统一大小写 | [规范化项目编号以便匹配](#make-item-numbers-comparable-for-purchase-order-matching) |
+| 单位代码 | 将供应商的代码映射为你使用的代码 | [映射单位代码](#map-unit-codes) |
+| 行项目数量 | 将多个行项目合并为一个总额行 | [合并为一个总额行](#one-total-line-for-a-supplier-matched-on-the-total) |
 
-## Logs
+表格规则和列规则会更改 PO 匹配器看到的内容：
 
-With **Log execution** on, every application of the rule is written to **Document Types → (document type) → Logs**, with the outcome (applied, no change, skipped), the document and — for skipped rules — the condition trace that explains why. See [Read the condition trace](rule-conditions-applies-when.md#read-the-condition-trace-in-the-logs).
+* 表格规则**重建**行项目时（例如清空所有行，再添加一个总额行），只要它再次生成**相同的行项目**，现有采购订单匹配就会保留——值按含义比较，因此 `1.0` 和 `1.00` 表示同一行。行项目会保留其标识，每次保存后匹配结果仍然有效。
+* 如果规则**替换或删除已匹配的行项目**，匹配结果就无法保留。文档会记录导致匹配结果丢失的规则，Purchase Order Matching 屏幕会显示原因（“_无法保存 PO 匹配：转换规则“…”重建了表格_”），管理员还会看到指向该规则的链接。文档的**匹配历史记录**会在第一个匹配阶段之前显示一个 _Transformation rules_ 步骤，其中列出运行过的规则。
+* 规则运行后剩余的行数决定了匹配规则的[启用条件](more-settings/purchase-order/purchase-order-matching-rules.md#activation-conditions)所计数的行数。只有在一行文档上启用的按总额匹配规则（`[[count(table_lines)]] >= 1`），才适用于将发票行项目合并为**一**行的转换规则。
 
-## Best practices
+## 日志
 
-* **One purpose per rule.** "Clean up invoice number" and "Map unit codes" are two rules, not one.
-* **Build with the live preview**, using real values copied from documents, including odd ones (spaces, lower case, prefixes).
-* **Limit supplier-specific rules with a condition** instead of letting them run on everything.
-* **Prefer idempotent steps.** Use run once only where you need it.
-* **Watch the purchase order match** after adding table rules; check the matching history of a few documents.
-* **Switch Log execution off** once the rule works.
+启用 **Log execution** 后，每次应用规则都会写入 **Document Types → (document type) → Logs**。日志会记录结果（已应用、无更改、已跳过）、文档，以及跳过规则时解释原因的条件追踪。请参见[读取条件追踪](rule-conditions-applies-when.md#read-the-condition-trace-in-the-logs)。
 
-## Troubleshooting
+## 最佳实践
 
-| Symptom | What to check |
+* **每条规则只负责一项任务。**“清理发票号码”和“映射单位代码”应当是两条规则，而不是一条。
+* 使用从文档中复制的真实值构建规则，并通过实时预览进行检查，包括不规则值（空格、小写字母、前缀）。
+* **使用条件限制特定供应商的规则**，不要让规则应用于所有文档。
+* **优先选择幂等步骤。**只有在确实需要时才启用仅运行一次。
+* **添加表格规则后，检查采购订单匹配结果**；抽查几份文档的匹配历史记录。
+* 规则正常运行后，**关闭 Log execution**。
+
+## 故障排查
+
+| 现象 | 检查内容 |
 | --- | --- |
-| The rule did not change anything | Is it active, and is the feature enabled for the document type? Is the condition true for this document (exact value, including spaces and case)? Has a **run once** rule already been applied to the document? Check the log trace. |
-| The value changes again on every save | The pipeline contains Take a slice, Extract or Find & replace. Switch on **Run only once per document**, or read from another field. |
-| A table gets one more row on every save | An **Add a row** step without **Clear all rows** before it. Add the clear step first, or switch on run once. |
-| The purchase order match is lost after saving | A table rule replaced the matched lines. The reason on the document names the rule; make the rule reproduce the same lines, or set it to run once. |
-| A matching rule never runs after the transformation | The rule changed the number of lines; adjust the activation condition of the matching rule. |
-| The rule needs a value from supplier master data, but it is still empty | Switch on **Run after lookup population (before PO match)**. |
-| A date is not reformatted | Reformat date expects `YYYY-MM-DD` as input. |
+| 规则没有更改任何内容 | 规则是否已启用，文档类型是否已启用此功能？此文档是否满足条件（精确值，包括空格和大小写）？此文档是否已应用过**仅运行一次**规则？请检查日志追踪。 |
+| 每次保存时值都会再次变化 | 处理流程中是否包含 Take a slice、Extract 或 Find & replace？启用 **Run only once per document**，或从另一个字段读取。 |
+| 每次保存时表格都会多出一行 | 存在 **Add a row** 步骤，但之前没有 **Clear all rows**。请先添加清空步骤，或启用仅运行一次。 |
+| 保存后采购订单匹配丢失 | 表格规则替换了已匹配的行项目。文档上的原因说明会指出对应规则；请修改规则，使其生成相同的行项目，或将规则设为仅运行一次。 |
+| 转换后匹配规则始终不运行 | 规则更改了行数；请调整匹配规则的启用条件。 |
+| 规则需要供应商主数据中的值，但该值仍为空 | 启用 **Run after lookup population (before PO match)**。 |
+| 日期未重新格式化 | Reformat date 需要以 `YYYY-MM-DD` 为输入。 |
 
-## Related
+## 相关内容
 
-* [Rule Conditions (Applies when)](rule-conditions-applies-when.md) — conditions in depth
-* [Custom Validation Rules](custom-validation-rules.md) — check the transformed values
-* [Layout Selection Rules](layout-manager/layout-selection-rules.md) — choose the layout a document uses
-* [Purchase Order Matching Rules](more-settings/purchase-order/purchase-order-matching-rules.md)
+* [规则条件（应用条件）](rule-conditions-applies-when.md) — 深入了解条件
+* [自定义验证规则](custom-validation-rules.md) — 检查转换后的值
+* [版式选择规则](layout-manager/layout-selection-rules.md) — 选择文档使用的版式
+* [采购订单匹配规则](more-settings/purchase-order/purchase-order-matching-rules.md)

@@ -1,29 +1,29 @@
-# Collect (sum) Policy
+# Collect (sum) 策略
 
-This policy collects all matching rules and sums the results. It only works for **Return Type Value**.
+此策略会收集所有匹配的规则并对结果求和。此策略仅适用于 **Return Type Value**。
 
-**Example:**
+**示例：**
 
-| Rule | Condition            | Return Value |
-| ---- | -------------------- | ------------ |
-| 1    | Total Amount <= 1000 | 1            |
-| 2    | Total Amount <= 2000 | 2            |
-| 3    | Total Amount <= 3000 | 3            |
-| 4    | Total Amount <= 4000 | 4            |
-| 5    | Total Amount <= 5000 | 5            |
+| 规则 | 条件                  | 返回值 |
+| ---- | --------------------- | ------ |
+| 1    | Total Amount <= 1000  | 1      |
+| 2    | Total Amount <= 2000  | 2      |
+| 3    | Total Amount <= 3000  | 3      |
+| 4    | Total Amount <= 4000  | 4      |
+| 5    | Total Amount <= 5000  | 5      |
 
-For the input value of **Total Amount = 2500**, the evaluation of rules would be:
+对于输入值 **Total Amount = 2500**，规则的评估结果如下：
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (does not match)
-* **Rule 3**: Total Amount <= 3000 (matches, Return Value = 3)
-* **Rule 4**: Total Amount <= 4000 (matches, Return Value = 4)
-* **Rule 5**: Total Amount <= 5000 (matches, Return Value = 5)
+* **规则 1**：Total Amount <= 1000（不匹配）
+* **规则 2**：Total Amount <= 2000（不匹配）
+* **规则 3**：Total Amount <= 3000（匹配，返回值 = 3）
+* **规则 4**：Total Amount <= 4000（匹配，返回值 = 4）
+* **规则 5**：Total Amount <= 5000（匹配，返回值 = 5）
 
-Since the **Collect (sum)** policy is applied, we sum the **Return Values** of the matching rules, which are **3, 4, 5**.
+由于应用了 **Collect (sum)** 策略，我们将匹配规则的 **返回值** 相加，分别为 **3、4、5**。
 
-**Summing these values** gives:
+**将这些值相加**：
 
 * 5 + 4 + 3 = **12**
 
-Thus, the result returned by the decision tree would be **12**, which is the sum of all matching return values.
+因此，决策树返回的结果为 **12**，即所有匹配规则的返回值之和。

@@ -1,22 +1,22 @@
-# Tfidf preferences
+# TF-IDF 偏好设置
 
-## Spalten
+## 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `tfidf_id`: internal
-* `pref_key`: internal
-* `pref_value`: text
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_by`: internal
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `deleted_by`: internal
-* `deleted_on`: timestamp with time zone
-* `supplier_id`: internal
+* `id`：内部标识
+* `org_id`：组织 ID
+* `tfidf_id`：内部标识
+* `pref_key`：内部标识
+* `pref_value`：文本
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_by`：内部标识
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `deleted_by`：内部标识
+* `deleted_on`：带时区的时间戳
+* `supplier_id`：内部标识
 
-## Analyse & Beschreibung
+## 分析与描述
 
 ```markdown
 # Technical Documentation for `public.tfidf_preferences` Table

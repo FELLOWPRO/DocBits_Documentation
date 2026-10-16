@@ -1,66 +1,66 @@
-# Configuring Field Properties
+# 配置字段属性
 
-## Configuring field properties is critical to ensure that the data captured in a document meets specific requirements and processing processes.
+## 配置字段属性对于确保文档中采集的数据符合特定要求和处理流程至关重要。
 
-### Here are the steps to configure field properties to meet specific data processing needs:
+### 以下是配置字段属性以满足特定数据处理需求的步骤：
 
-#### Select a field type:
+#### 选择字段类型：
 
-* Start by selecting the right field type for your data.
+* 首先，为数据选择合适的字段类型。
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-24 um 11.06.36.png" alt="" width="375"><figcaption></figcaption></figure>
 
-* This depends on what type of information the field will contain.
+* 字段类型取决于该字段要包含的信息类型。
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-24 um 11.06.56.png" alt="" width="139"><figcaption><p>Properties</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-24 um 11.06.56.png" alt="" width="139"><figcaption><p>属性</p></figcaption></figure>
 
-* Possible field types include text, number, date, drop-down menu, checkbox, etc.
+* 可选的字段类型包括文本、数字、日期、下拉菜单、复选框等。
 
-<figure><img src="../../../../../.gitbook/assets/image (146).png" alt="" width="241"><figcaption><p>Elements</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (247).png" alt="" width="241"><figcaption><p>元素</p></figcaption></figure>
 
-#### Set validation and formatting:
+#### 设置验证规则和格式：
 
-* Set validation rules to ensure that the data entered meets the expected criteria.
-* This may include checking for certain string patterns, numeric limits, date formats, or other conditions.
+* 设置验证规则，确保输入的数据符合预期条件。
+* 这可能包括检查特定的字符串模式、数值范围、日期格式或其他条件。
 
-<figure><img src="../../../../../.gitbook/assets/image (147).png" alt="" width="236"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (248).png" alt="" width="236"><figcaption></figcaption></figure>
 
-#### Define default values:
+#### 定义默认值：
 
-* If certain fields typically have a default value, you can set that as the default value.
-* This makes data entry easier because users don't have to enter the same value every time.
+* 如果某些字段通常具有默认值，可以将其设置为默认值。
+* 这样可以简化数据录入，因为用户无需每次都输入相同的值。
 
-<figure><img src="../../../../../.gitbook/assets/image (148).png" alt="" width="224"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (249).png" alt="" width="224"><figcaption></figcaption></figure>
 
-#### Set user permissions:
+#### 设置用户权限：
 
-* Determine which user groups should have access to the field and what type of access rights they have.
+* 确定哪些用户组应有权访问该字段，以及他们拥有哪些类型的访问权限。
 
-<figure><img src="../../../../../.gitbook/assets/image (150).png" alt=""><figcaption><p>Settings: Groups and Permissions</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (251).png" alt=""><figcaption><p>设置：组和权限</p></figcaption></figure>
 
-* This can include read, write, or edit rights.
+* 权限可以包括读取、写入或编辑权限。
 
-<figure><img src="../../../../../.gitbook/assets/image (151).png" alt=""><figcaption><p>View Permissions</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (252).png" alt=""><figcaption><p>查看权限</p></figcaption></figure>
 
-#### Link to other data:
+#### 链接其他数据：
 
-* In some cases, data from one field needs to be linked to data from another field or data source.
-* Configure appropriate links or relationships to ensure consistent data integration.
+* 在某些情况下，需要将一个字段的数据关联到另一个字段或数据源中的数据。
+* 配置适当的链接或关系，以确保数据集成一致。
 
-#### Apply visibility rules:
+#### 应用可见性规则：
 
-* Determine under what conditions a field should be visible or hidden.
-* This can be useful for dynamically adapting the user interface based on certain data or user actions.
+* 确定在什么条件下应显示或隐藏某个字段。
+* 这有助于根据特定数据或用户操作动态调整用户界面。
 
-<figure><img src="../../../../../.gitbook/assets/image (149).png" alt=""><figcaption><p>Setting Fields</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (250).png" alt=""><figcaption><p>设置字段</p></figcaption></figure>
 
-#### Enable historization:
+#### 启用历史记录：
 
-* If necessary, enable historization of fields to track changes historically.
-* This allows you to track changes to the data and monitor the history of data changes.
+* 如有必要，可启用字段历史记录以跟踪字段的历史变更。
+* 这样可以跟踪数据变更并监控数据变更历史。
 
-#### Add documentation notes:
+#### 添加文档说明：
 
-* Add notes or descriptions to explain to users how to use the field or what type of data is expected.
+* 添加备注或描述，向用户说明如何使用该字段，或该字段预期包含哪种类型的数据。
 
-By following these steps and configuring the appropriate field properties, you can ensure that your documents meet specific requirements for data handling, user access, and data accuracy.
+按照这些步骤配置相应的字段属性，即可确保文档满足数据处理、用户访问和数据准确性的特定要求。

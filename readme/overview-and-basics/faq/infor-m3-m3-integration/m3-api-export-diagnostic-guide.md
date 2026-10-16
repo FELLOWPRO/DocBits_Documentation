@@ -1,91 +1,91 @@
-# M3 API Export Diagnostic Guide
+# M3 API 导出诊断指南
 
-### 1. Initial Setup
+### 1. 初始设置
 
-Before you begin troubleshooting, ensure you’re familiar with the expected inputs for the M3 endpoint you're working with.
+开始排查问题前，请确保您了解所使用的 M3 端点所需的输入。
 
-#### 1.1 Access M3 API Documentation
+#### 1.1 查看 M3 API 文档
 
-* Log in to **M3**.
-* Go to **API Section → API Documentation**.
-* Locate and select the relevant endpoint (e.g., `APS450MI` for invoice-related exports).
-* Choose the appropriate function (e.g., `Add`).
+* 登录 **M3**。
+* 前往 **API Section → API Documentation**。
+* 找到并选择相关端点（例如，用于发票相关导出的 `APS450MI`）。
+* 选择相应的功能（例如 `Add`）。
 
-#### 1.2 Understand API Requirements
+#### 1.2 了解 API 要求
 
-* Review all **required fields** in the API documentation.
-* Pay attention to important fields like:
+* 查看 API 文档中的所有**必填字段**。
+* 留意以下重要字段：
   * `DIVI`
-  * `ACDT` (accounting date)
-  * `CUCD` (currency code)
-  * `SINO` (supplier invoice number)
-* Confirm field **data types**, **casing**, and **formatting rules** (e.g., `YYYY-MM-DD` for dates).
+  * `ACDT`（会计日期）
+  * `CUCD`（货币代码）
+  * `SINO`（供应商发票编号）
+* 确认字段的**数据类型**、**大小写**和**格式规则**（例如，日期格式为 `YYYY-MM-DD`）。
 
 
 
-### 2. Testing API Calls Directly in M3
+### 2. 在 M3 中直接测试 API 调用
 
-This step verifies that the M3 API behaves as expected using manual inputs.
+此步骤通过手动输入验证 M3 API 是否按预期运行。
 
-#### 2.1 Generate a Test Request in M3
+#### 2.1 在 M3 中生成测试请求
 
-* In the M3 API Documentation tool:
-  * Fill in test data for required fields.
-  * Click **Run** to execute the request.
-  * Copy the resulting **cURL** and **JSON body**.
+* 在 M3 API Documentation 工具中：
+  * 为必填字段填写测试数据。
+  * 点击 **Run** 执行请求。
+  * 复制生成的 **cURL** 和 **JSON 正文**。
 
-#### 2.2 Debug Using Postman
+#### 2.2 使用 Postman 调试
 
-* Open **Postman** and create a new **POST** request.
-* Paste the JSON body or cURL.
-* Add necessary headers (e.g., authorization).
-* Click **Send** and observe the result:
-  * `200 OK`: The request was successful.
-  * Error: Review the message for details on what went wrong.
-
-
-
-### 3. Comparing M3 API with DocBits Mapping
-
-Once you’ve confirmed the API works with test data, compare it to what DocBits is actually sending.
-
-#### 3.1 Export Sample Data from DocBits
-
-*   Open the **DocBits API documentation**:
-
-    Use the **/export/get\_infor\_export\_api\_json** endpoint.
-* Enter the **Document ID** of a problematic document.
-* Run the export to view the **JSON payload** that DocBits will send to M3.
-
-#### 3.2 Compare API Payloads
-
-* Place the **M3 test JSON** and the **DocBits export JSON** side by side.
-* Check for:
-  * **Field Names**: Ensure names match _exactly_, including case (`DIVI` ≠ `divi`).
-  * **Data Types**: Verify strings, numbers, and dates are properly formatted.
-  * **Missing Fields**: Identify any fields present in M3’s request but missing in DocBits.
+* 打开 **Postman** 并创建新的 **POST** 请求。
+* 粘贴 JSON 正文或 cURL。
+* 添加必要的请求头（例如授权信息）。
+* 点击 **Send** 并查看结果：
+  * `200 OK`：请求成功。
+  * 错误：查看错误消息，了解具体问题。
 
 
 
-### 4. Troubleshooting Common Issues
+### 3. 对比 M3 API 与 DocBits 映射
 
-| Issue                           | Likely Cause                              | Fix                                                             |
+确认 API 使用测试数据正常运行后，请将其与 DocBits 实际发送的内容进行对比。
+
+#### 3.1 从 DocBits 导出示例数据
+
+*   打开 **DocBits API 文档**：
+
+    使用 **/export/get\_infor\_export\_api\_json** 端点。
+* 输入有问题的文档的 **Document ID**。
+* 运行导出，以查看 DocBits 将发送到 M3 的 **JSON 负载**。
+
+#### 3.2 对比 API 负载
+
+* 将 **M3 测试 JSON** 与 **DocBits 导出 JSON** 并排放置。
+* 检查以下内容：
+  * **字段名称**：确保名称完全匹配，包括大小写（`DIVI` ≠ `divi`）。
+  * **数据类型**：确认字符串、数字和日期的格式正确。
+  * **缺失字段**：找出 M3 请求中存在、但 DocBits 中缺失的字段。
+
+
+
+### 4. 常见问题排查
+
+| 问题 | 可能原因 | 修复方法 |
 | ------------------------------- | ----------------------------------------- | --------------------------------------------------------------- |
-| Missing field error             | A required field is not mapped in DocBits | Add the missing field in the DocBits export configuration.      |
-| Field casing mismatch (`DIVI`)  | M3 is case-sensitive                      | Use the correct casing in the field mapping.                    |
-| Invalid `accountingDate` format | Wrong or missing date                     | Adjust to the format expected by M3 (e.g., `YYYY-MM-DD`).       |
-| Unexpected API error            | Extra or unrecognized fields              | Compare with known working payloads and clean unnecessary data. |
+| 缺少字段错误 | DocBits 中未映射必填字段 | 在 DocBits 导出配置中添加缺失字段。 |
+| 字段大小写不匹配（`DIVI`） | M3 区分大小写 | 在字段映射中使用正确的大小写。 |
+| `accountingDate` 格式无效 | 日期错误或缺失 | 调整为 M3 要求的格式（例如 `YYYY-MM-DD`）。 |
+| 出现意外的 API 错误 | 存在多余或无法识别的字段 | 与已知可用的负载进行对比，并清理不必要的数据。 |
 
-### 5. If Issues Persist
+### 5. 如果问题仍未解决
 
-If the issue isn’t resolved after following the above steps:
+如果按照上述步骤操作后问题仍未解决：
 
-1. **Document** the problem:
-   * Error message and status code
-   * Sample M3 request and DocBits export JSON
-2. **Summarize** your troubleshooting:
-   * What you’ve tried
-   * Key differences observed between test and failing payloads
-3. **Escalate** to a developer:
-   * Include all data and findings
-   * Highlight suspected problem areas
+1. **记录**问题：
+   * 错误消息和状态码
+   * M3 请求示例和 DocBits 导出 JSON
+2. **总结**排查过程：
+   * 已尝试的操作
+   * 测试负载与失败负载之间发现的关键差异
+3. **升级处理**，联系开发人员：
+   * 提供所有数据和发现
+   * 指出疑似问题区域

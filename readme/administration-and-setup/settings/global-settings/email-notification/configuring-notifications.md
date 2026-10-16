@@ -1,68 +1,68 @@
-# Configuring Notifications
+# 配置通知
 
 <figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-15 um 08.56.36.png" alt=""><figcaption></figcaption></figure>
 
-#### To get to email notification settings, follow these steps:
+#### 按照以下步骤进入电子邮件通知设置：
 
-* Navigate to the Global Settings section in your user account or administration panel.
-* Look for the option for email notifications
-* Click the appropriate option to open email notification settings.
+* 在用户帐户或管理面板中，前往全局设置部分。
+* 找到电子邮件通知选项。
+* 点击相应选项，打开电子邮件通知设置。
 
-Within these settings you can then make the desired configurations to ensure you receive notifications according to your preferences. Remember to adjust the settings based on your needs and ensure they comply with your organization's privacy policy and security standards.
+在这些设置中，您可以根据需要进行配置，以便按照您的偏好接收通知。请根据自身需求调整设置，并确保其符合组织的隐私政策和安全标准。
 
 <figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 10.15.45.png" alt=""><figcaption></figcaption></figure>
 
-**Create new notification:**
+**创建新通知：**
 
-* Click the button to add or create a new notification.
+* 点击添加或创建新通知的按钮。
 
 <figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-15 um 01.28.41.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (29).png" alt="" width="375"><figcaption></figcaption></figure>
 
-#### Key Features and Options
+#### 主要功能和选项
 
-1. **Email Notification Configuration**:
+1. **电子邮件通知配置**：
 
-* **Name**: Enter the name here
-* The identifier for the notification, helping users recognize the purpose of the notification setting.
+* **名称**：在此处输入名称。
+* 通知的标识符，可帮助用户识别此通知设置的用途。
 
-<figure><img src="../../../../.gitbook/assets/image (44) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (135).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Document Type**: Select the document type you want to receive a notification for. This could be adding a new document, deleting a document, updating a document, or other relevant events.
-* Associates the notification with a specific document type, allowing for targeted alerts based on the document's processing cycle.
+* **文档类型**：选择要接收通知的文档类型，例如新增、删除或更新文档，以及其他相关事件。
+* 将通知关联到特定文档类型，以便根据文档的处理周期发送有针对性的提醒。
 
-<figure><img src="../../../../.gitbook/assets/image (41) (1).png" alt="" width="264"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (132).png" alt="" width="264"><figcaption></figcaption></figure>
 
-*   **Select email template**: Choose a preconfigured template from the dropdown menu. Templates can be created or modified in [Email Templates settings](../../../../advanced-functions-and-tools/sql-access/sql-access/email-template.md).\\
+*   **选择电子邮件模板**：从下拉菜单中选择预配置的模板。您可以在[电子邮件模板设置](../../../../advanced-functions-and-tools/sql-access/sql-access/email-template.md)中创建或修改模板。\\
 
-    <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
-* **Status**: Specify the status or condition that should trigger a notification when it changes. This could be a specific workflow status, an approval status, an error status, or any other relevant status.
+    <figure><img src="../../../../.gitbook/assets/image (30).png" alt="" width="375"><figcaption></figcaption></figure>
+* **状态**：指定状态或条件发生变化时应触发通知的状态或条件。这可以是特定的工作流状态、审批状态、错误状态或其他相关状态。
 
-<figure><img src="../../../../.gitbook/assets/image (43) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (134).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Priority**: select the appropriate priority. For example, this could be "Low", "Medium" or "High".
-* Sets the urgency level of the notification, which can prioritize the email alert in the recipient's inbox.
+* **优先级**：选择相应的优先级，例如“低”、“中”或“高”。
+* 设置通知的紧急程度，可用于在收件人的收件箱中优先显示电子邮件提醒。
 
-<figure><img src="../../../../.gitbook/assets/image (42) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (133).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Delay**: Enter the desired amount of time to specify the delay time before sending the notification. This could be done in minutes, hours or days depending on your system settings.
-* By configuring a delay time before sending the notification, users have enough time for any cancellations or corrections before the alert is issued. This can help prevent errors and improve user experience.
+* **延迟**：输入所需时长，以指定发送通知前的延迟时间。根据系统设置，时间单位可以是分钟、小时或天。
+* 通过设置发送通知前的延迟时间，用户可以在提醒发出前处理取消或更正事项。这有助于避免错误并改善用户体验。
 
-<figure><img src="../../../../.gitbook/assets/image (45) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (136).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Repeat Option:** You can also enable a setting to **repeat the notification** at regular intervals **until the document status changes**. This ensures that important notifications are not missed and remain visible until the required action is taken.
+* **重复选项：**您还可以启用一项设置，让系统定期**重复发送通知，直到文档状态发生变化**。这样可以确保重要通知不会被遗漏，并在采取所需操作前持续显示。
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (31).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Email Address**: Enter the email addresses of the recipients to whom the notification should be sent. Users can enter multiple email addresses to specify multiple recipients. This could mean that notifications are sent to specific email addresses based on the properties of the document in question or the user's role.
+* **电子邮件地址**：输入要接收通知的收件人电子邮件地址。您可以输入多个电子邮件地址来指定多位收件人。系统可以根据相关文档的属性或用户角色，将通知发送到特定的电子邮件地址。
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (32).png" alt="" width="375"><figcaption></figcaption></figure>
 
-**Actionable Insights**:
+**可操作的提示：**
 
-* **Send Email to Assigned User/Group**: An optional setting that, when enabled, automatically sends notifications to the user assigned to the document, ensuring that the responsible party is always informed.
+* **向指定用户/组发送电子邮件**：这是一项可选设置。启用后，系统会自动向被分配处理该文档的用户发送通知，确保负责人及时知晓。
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (33).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Save:** After entering all the required information, click "Save" button to save the notification settings.
+* **保存：**输入所有必需信息后，点击“Save”（保存）按钮以保存通知设置。

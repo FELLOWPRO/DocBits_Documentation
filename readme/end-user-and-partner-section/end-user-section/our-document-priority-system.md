@@ -1,41 +1,41 @@
-# Our Document Priority System
+# 我们的文档优先级系统
 
-In our document processing system, we handle a large volume of documents from multiple customers daily. To ensure that every customer's documents are processed in a timely manner, we have implemented a sophisticated priority system. This system dynamically adjusts priorities based on the number of pending documents a customer has, ensuring **fairness** and **efficiency**. Let's dive into how this priority system works and when the task counter is reset.
+在我们的文档处理系统中，我们每天处理来自多个客户的大量文档。为确保及时处理每位客户的文档，我们实施了一套完善的优先级系统。该系统会根据客户的待处理文档数量动态调整优先级，确保**公平性**和**效率**。下面介绍优先级系统的工作方式，以及任务计数器何时重置。
 
-**Key Concepts of the Priority System**
+**优先级系统的关键概念**
 
-Our priority system revolves around a few key concepts:
+我们的优先级系统围绕几个关键概念运行：
 
-1. **Pending Documents**: This is a count of the documents a customer has submitted but are yet to be processed.
-2. **Reset Interval**: The system periodically resets the pending document count to zero to ensure that no customer can monopolize the processing resources indefinitely.
+1. **待处理文档**：指客户已提交但尚未处理的文档数量。
+2. **重置间隔**：系统会定期将待处理文档计数重置为零，以确保没有客户能够无限期独占处理资源。
 
-**How the Priority is Determined**
+**优先级的确定方式**
 
-Here's a step-by-step explanation of how the priority for processing documents is determined:
+以下是文档处理优先级的确定步骤：
 
-1. **Tracking Pending Docuemnts**: Each customer has a count of pending documents. This count helps us know how many documents are waiting to be processed for each customer.
-2. **Resetting the Count**: To maintain fairness, we reset the pending documents count to zero if a set amount of time (the reset interval) has passed since the last update. This interval is set to 1500 seconds (or 25 minutes) by default.
-3. **Updating the Count**: If the reset interval hasn't passed, we reduce the pending documents count by one each time we check, simulating the processing of a document.
-4. **Setting Priorities**: The priority for processing tasks is based on the number of pending documents. The fewer the pending documents, the higher the priority, meaning those tasks will be processed sooner. We have specific thresholds to assign priority levels from 1 (highest priority) to 9 (lowest priority).
+1. **跟踪待处理文档**：每位客户都有一个待处理文档计数。这个计数用于了解每位客户有多少文档正在等待处理。
+2. **重置计数**：为保持公平，如果自上次更新以来已超过设定的时间（即重置间隔），我们会将待处理文档计数重置为零。默认重置间隔为 1500 秒（即 25 分钟）。
+3. **更新计数**：如果尚未达到重置间隔，每次检查时都会将待处理文档计数减一，以模拟处理一份文档。
+4. **设置优先级**：处理任务的优先级取决于待处理文档的数量。待处理文档越少，优先级越高，这意味着这些任务会更早处理。我们设置了具体阈值，将优先级分为 1（最高）到 9（最低）。
 
-**Priority Levels**
+**优先级级别**
 
-The priority levels are assigned based on the pending documents count as follows:
+优先级级别根据待处理文档计数按以下规则分配：
 
-* **Priority 9**: If the pending documents count is less than -20
-* **Priority 8**: If the pending documents count is less than -14
-* **Priority 7**: If the pending documents count is less than -12
-* **Priority 6**: If the pending documents count is less than -10
-* **Priority 5**: If the pending documents count is less than -8
-* **Priority 4**: If the pending documents count is less than -6
-* **Priority 3**: If the pending documents count is less than -4
-* **Priority 2**: If the pending documents count is less than -2
-* **Priority 1**: If the pending documents count is greater than or equal to -2
+* **优先级 9**：待处理文档计数小于 -20 时
+* **优先级 8**：待处理文档计数小于 -14 时
+* **优先级 7**：待处理文档计数小于 -12 时
+* **优先级 6**：待处理文档计数小于 -10 时
+* **优先级 5**：待处理文档计数小于 -8 时
+* **优先级 4**：待处理文档计数小于 -6 时
+* **优先级 3**：待处理文档计数小于 -4 时
+* **优先级 2**：待处理文档计数小于 -2 时
+* **优先级 1**：待处理文档计数大于或等于 -2 时
 
 {% hint style="info" %}
-In simpler terms, as the number of pending documents increases, the priority level lowers, meaning those documents are processed later compared to others with higher priorities.
+简单来说，待处理文档数量增加时，优先级级别会降低，这意味着这些文档会比优先级更高的其他文档更晚处理。
 {% endhint %}
 
-**When the Counter is Reset**
+**计数器重置时间**
 
-The pending documents counter is reset to zero if more than the reset interval (**1500** seconds) has passed since the last update. This mechanism ensures that no customer can accumulate pending documents endlessly and hog the system resources. By periodically resetting the counter, we guarantee that every customer gets a fair share of processing time.
+如果自上次更新以来已超过重置间隔（**1500** 秒），待处理文档计数器就会重置为零。此机制可确保没有客户能够无限累积待处理文档并占用系统资源。通过定期重置计数器，我们可以确保每位客户都能公平地获得处理时间。

@@ -1,31 +1,31 @@
 ---
-description: OIOUBL 2.1 electronic document support in DocBits
+description: DocBits 对 OIOUBL 2.1 电子文档的支持
 ---
 
 # 🇩🇰 OIOUBL 2.1
 
-| Property             | Value                                     |
+| 属性 | 值 |
 | -------------------- | ----------------------------------------- |
-| **Country / Region** | Denmark                                   |
-| **Document Types**   | Invoice, Credit Note, Reminder, Statement |
-| **Format**           | UBL 2.1 XML                               |
-| **Standard**         | OIOUBL 2.1                                |
+| **国家 / 地区** | 丹麦 |
+| **文档类型** | 发票、贷项通知单、催款通知、对账单 |
+| **格式** | UBL 2.1 XML |
+| **标准** | OIOUBL 2.1 |
 
-OIOUBL 2.1 is the current version of the Danish e-invoicing standard. Based on OASIS UBL 2.1, it extends the international standard with Danish-specific business rules and code lists required by the Danish public sector.
+OIOUBL 2.1 是丹麦电子发票标准的当前版本。该标准基于 OASIS UBL 2.1，并扩展了丹麦公共部门所需的特定业务规则和代码列表。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件 | 状态 |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览 | ✅ 支持 |
+| 字段提取 | ✅ 支持 |
+| 转换 | ✅ 支持 |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/denmark-oioubl-preview.png" alt="OIOUBL 2.1 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Denmark OIOUBL 2.1 invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/denmark-oioubl-preview.png" alt="DocBits 中的 OIOUBL 2.1 发票预览"><figcaption><p>DocBits 中丹麦 OIOUBL 2.1 发票的默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
-* [Denmark OIOUBL](denmark-oioubl.md)
+* [支持的电子文档](./)
+* [丹麦 OIOUBL](denmark-oioubl.md)

@@ -1,43 +1,40 @@
-# DocBits Infor on Premise Customer
+# DocBits Infor 本地部署客户
 
-To send data to Infor onPremise customer we offer two ways Site2Site with IPsec or [WatchDog](https://docs.docbits.com/administration-and-setup/setup/watchdog)
+向 Infor 本地部署客户发送数据有两种方式：使用 IPsec 建立站点到站点连接，或使用 [WatchDog](../../administration-and-setup/setup/watchdog/README.md)。
 
-Sending Data to Infor On-Premise Customer
+向 Infor 本地部署客户发送数据
 
-To send data to an Infor on-premise customer, we offer two ways: Site-to-Site VPN with IPsec.
+向 Infor 本地部署客户发送数据有两种方式：使用 IPsec 建立站点到站点 VPN。
 
-## IPsec (Internet Protocol Security) Site-to-Site VPN Configuration
+## IPsec（互联网协议安全）站点到站点 VPN 配置
 
-### 1. Configuration Informations:
+### 1. 配置信息：
 
-| **IPSEC VPN Setup**            |                                                                 |
+| **IPSEC VPN 设置**            |                                                                 |
 | ------------------------------ | --------------------------------------------------------------- |
-|                                | **Endpoint B**                                                  |
-| **Customer**                   | _**FELLOWPRO AG**_                                              |
-| **Name of Contact**            | _**Daniel Lopez**_                                              |
-| **Mail**                       | [daniel.lopez@fellowpro.com](mailto:daniel.lopez@fellowpro.com) |
-| **Endpoint Hardware/Software** | _**StrongWAN**_                                                 |
-| **Location of Firewall**       | _**Frankfurt**_                                                 |
-| **Endpoint IP**                | _**46.101.133.158**_                                            |
-| **Network/Host 1**             | _**10.135.0.0/16**_                                             |
+|                                | **端点 B**                                                  |
+| **客户**                   | _**FELLOWPRO AG**_                                              |
+| **联系人姓名**            | _**Daniel Lopez**_                                              |
+| **邮箱**                       | [daniel.lopez@fellowpro.com](mailto:daniel.lopez@fellowpro.com) |
+| **端点硬件/软件** | _**StrongWAN**_                                                 |
+| **防火墙位置**       | _**法兰克福**_                                                 |
+| **端点 IP**                | _**46.101.133.158**_                                            |
+| **网络/主机 1**             | _**10.135.0.0/16**_                                             |
 
-### 2. For an IPsec site-to-site VPN, you need to configure and open the following ports:
+### 2. 对于 IPsec 站点到站点 VPN，您需要配置并开放以下端口：
 
-1\. UDP port 500: Used for Internet Key Exchange (IKE) phase 1 and phase 2.
+1\. UDP 端口 500：用于互联网密钥交换（IKE）第 1 阶段和第 2 阶段。
 
-2\. UDP port 4500: Used for NAT traversal (NAT-T), allowing VPN traffic to pass through NAT (Network Address Translation) devices.
+2\. UDP 端口 4500：用于 NAT 穿越（NAT-T），允许 VPN 流量通过 NAT（网络地址转换）设备。
 
-## Accessing Infor OS
+## 访问 Infor OS
 
-• Authentication URL: https://inforos.CustomerXYZad.net/
+• 身份验证 URL：https://inforos.CustomerXYZad.net/
 
-• Data URL: https://inforos.CustomerXYZad.net:7443/
+• 数据 URL：https://inforos.CustomerXYZad.net:7443/
 
-## Summary:
+## 摘要：
 
-For setting up an IPsec site-to-site VPN, ensure the above ports and protocols are configured and open.
+设置 IPsec 站点到站点 VPN 时，请确保已配置并开放上述端口和协议。
 
-Use the provided URLs to access Infor OS for authentication and data.
-
-
-
+使用提供的 URL 访问 Infor OS，以进行身份验证和数据访问。

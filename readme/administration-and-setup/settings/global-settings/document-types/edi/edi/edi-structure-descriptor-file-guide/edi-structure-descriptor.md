@@ -1,41 +1,41 @@
-# EDI Structure descriptor
+# EDI 结构描述符
 
-The primary goal of the structure descriptor is to outline the elements of an EDI message in a logical and organized manner, making it easier to manage and parse the data. By accurately reflecting the hierarchy of the message.
+结构描述符的主要目的是以逻辑清晰、有条理的方式列出 EDI 消息中的元素，从而更轻松地管理和解析数据。通过准确反映消息的层级结构。
 
-### Elements of the structure descriptor
+### 结构描述符的元素
 
-**N1** – Contains the following fields:
+**N1** – 包含以下字段：
 
-* **N1** – Name or Identifier of the entity (e.g., party, organization).
-* **N2** – Additional name information (usually a secondary name for the entity).
-* **N3** – Address information (typically the street address).
-* **N4** – Geographic location (city, state, ZIP code, country).\
+* **N1** – 实体的名称或标识符（例如，交易方、组织）。
+* **N2** – 其他名称信息（通常是该实体的次要名称）。
+* **N3** – 地址信息（通常是街道地址）。
+* **N4** – 地理位置信息（城市、州、邮政编码、国家/地区）。\
 
 
-**N9** – Contains the following field:
+**N9** – 包含以下字段：
 
-* **N9** – Reference identifier (e.g., purchase order number or control number).
-* **Loops:**
-  * **MSG01** – Contains the following field:
-    * **MSG01** – Free-form message text (usually a note or special instruction related to the transaction).
+* **N9** – 参考标识符（例如，采购订单号或控制编号）。
+* **循环：**
+  * **MSG01** – 包含以下字段：
+    * **MSG01** – 自由格式的消息文本（通常是与交易相关的备注或特别说明）。
 
-**IT1** – Contains the following fields:
+**IT1** – 包含以下字段：
 
-* **IT1** – Line item identifier (e.g., item number or product code).
-* **QTY** – Quantity of the item in the transaction (e.g., units ordered or shipped).
-* **TXI** – Tax information (e.g., tax rates, amounts, or classifications for the item).
-* **REF** – Reference information (e.g., lot number, serial number, or other identifiers related to the item).
-* **Loops:**
-  * **SAC** – Can repeat and contains the following fields:
-    * **SAC** – Service, promotion, allowance, or charge information (e.g., additional costs or discounts related to the item).
-    * **TXI** – Tax information related to SAC (e.g., taxes on charges or allowances).
+* **IT1** – 行项目标识符（例如，项目编号或产品代码）。
+* **QTY** – 交易中该项目的数量（例如，订购或发运的单位数）。
+* **TXI** – 税务信息（例如，该项目的税率、金额或分类）。
+* **REF** – 参考信息（例如，批号、序列号或与该项目相关的其他标识符）。
+* **循环：**
+  * **SAC** – 可重复，包含以下字段：
+    * **SAC** – 服务、促销、津贴或费用信息（例如，与该项目相关的额外费用或折扣）。
+    * **TXI** – 与 SAC 相关的税务信息（例如，对费用或津贴征收的税）。
 
-**SAC** – Contains the following fields:
+**SAC** – 包含以下字段：
 
-* **SAC** – Service, promotion, allowance, or charge information (can be used independently or within the IT1 loop to represent additional charges/discounts).
-* **TXI** – Tax information related to SAC (e.g., taxes on charges or allowances).
+* **SAC** – 服务、促销、津贴或费用信息（可独立使用，也可在 IT1 循环中用于表示额外费用或折扣）。
+* **TXI** – 与 SAC 相关的税务信息（例如，对费用或津贴征收的税）。
 
-### Here is the full example of a structure descriptor in a JSON format:
+### 以下是结构描述符的完整 JSON 格式示例：
 
 ```
 {
@@ -79,4 +79,3 @@ The primary goal of the structure descriptor is to outline the elements of an ED
     }
 }
 ```
-

@@ -1,19 +1,19 @@
-# Auto Accounting BOD Mapping
+# 自动会计 BOD 映射
 
-DocBits' auto-accounting workflow consumes two BODs from Infor M3 to enrich cost invoices with valid accounting dimensions:
+DocBits 的自动会计工作流会使用来自 Infor M3 的两个 BOD，为成本发票补充有效的会计维度：
 
-- **`Sync.CodeDefinition`** — supplies the list of valid values per accounting dimension (cost centre, project, account group, …).
-- **`Sync.ChartOfAccounts`** — supplies the chart of accounts together with the dimension profile attached to each account.
+- **`Sync.CodeDefinition`** — 提供每个会计维度（成本中心、项目、科目组等）的有效值列表。
+- **`Sync.ChartOfAccounts`** — 提供科目表以及附加到每个科目的维度配置。
 
 {% file src="../../../../.gitbook/assets/Sync.CodeDefinition.pdf" %}
-CodeDefinition — original BOD mapping reference (PDF)
+CodeDefinition — 原始 BOD 映射参考（PDF）
 {% endfile %}
 
 ## Sync.CodeDefinition
 
-→ DocBits Master Data Lookup Table: **m3flexdimension**
+→ DocBits 主数据查找表：**m3flexdimension**
 
-#### Case 1: Same ID occurs in multiple Dimensions
+#### 情况 1：同一 ID 出现在多个维度中
 
 ```json
 {
@@ -25,7 +25,7 @@ CodeDefinition — original BOD mapping reference (PDF)
 }
 ```
 
-#### Case 2: ID occurs in a single Dimension
+#### 情况 2：ID 只出现在一个维度中
 
 ```json
 {
@@ -37,33 +37,33 @@ CodeDefinition — original BOD mapping reference (PDF)
 }
 ```
 
-### Field reference
+### 字段参考
 
-| DocBits field | Description |
+| DocBits 字段 | 描述 |
 |---|---|
-| `ID` | Primary key in `m3flexdimension`. In **Case 1** the dimension code is prefixed onto the M3 `DocumentID/ID` to keep entries unique when the same code occurs in different dimensions; **Case 2** uses the raw M3 ID. |
-| `Dimension` | Dimension name (e.g. cost centre, project). Extracted from `CodeValue/@listID` via `substring(..., 21)` — see the note below. |
-| `ListID` | Full, unstripped `ListID` value. Kept alongside `Dimension` so the original namespace prefix is retained for audit and downstream tools. |
-| `CodeValue` | The actual dimension code value (e.g. cost-centre number `1000`). |
-| `Description` | Human-readable description of the code (e.g. "Marketing"). |
+| `ID` | `m3flexdimension` 中的主键。在**情况 1**中，会将维度代码添加为 M3 `DocumentID/ID` 的前缀，以确保同一代码出现在不同维度中时条目仍然唯一；**情况 2**使用原始 M3 ID。 |
+| `Dimension` | 维度名称（例如成本中心、项目）。通过 `substring(..., 21)` 从 `CodeValue/@listID` 中提取 — 详见下文说明。 |
+| `ListID` | 完整、未截断的 `ListID` 值。此值与 `Dimension` 一并保留，以便在审计和下游工具中保留原始命名空间前缀。 |
+| `CodeValue` | 实际的维度代码值（例如成本中心编号 `1000`）。 |
+| `Description` | 代码的易读描述（例如“市场营销”）。 |
 
-### About the `substring(..., 21)` expression
+### 关于 `substring(..., 21)` 表达式
 
-The second argument to XPath's `substring()` is a 1-based start position — it is **not** a `listID` value. M3 emits `@listID` with a namespace-style prefix of 20 characters (for example `lng.m3.dimension.D1`), so `substring(value, 21)` returns the dimension code after that prefix (`D1` in the example). If your M3 emits a different prefix length, the offset has to be adjusted — please share an example BOD before configuring auto-accounting against a non-standard tenant.
+XPath 的 `substring()` 函数的第二个参数是从 1 开始计数的起始位置，**不是** `listID` 值。M3 发出的 `@listID` 带有一个长度为 20 个字符的命名空间式前缀（例如 `lng.m3.dimension.D1`），因此 `substring(value, 21)` 会返回该前缀之后的维度代码（此例中为 `D1`）。如果你的 M3 发出的前缀长度不同，则必须调整偏移量 — 在针对非标准租户配置自动会计之前，请提供一个 BOD 示例。
 
-The canonical source for the dimension code value is `/SyncCodeDefinition/DataArea/CodeDefinition/DocumentID/ID`. The `substring(@listID, 21)` form is retained here as a fallback for tenants where `DocumentID/ID` is not populated. Aligning the mapping to prefer `DocumentID/ID` and to filter by `CodeDefinitionVariant='Accounting Dimension'` (see next section) is a planned refinement. <!-- tracked in DOCB-12315 -->
+维度代码值的规范来源是 `/SyncCodeDefinition/DataArea/CodeDefinition/DocumentID/ID`。此处保留 `substring(@listID, 21)` 形式，作为 `DocumentID/ID` 未填充的租户的备用方案。计划后续优化映射，使其优先使用 `DocumentID/ID`，并按 `CodeDefinitionVariant='Accounting Dimension'` 进行筛选（见下一节）。 <!-- tracked in DOCB-12315 -->
 
-### Which `CodeDefinition` variants does DocBits process?
+### DocBits 会处理哪些 `CodeDefinition` 变体？
 
-`Sync.CodeDefinition` is a generic BOD that M3 emits for many different objects (accounting dimensions, status codes, classification lists, …). For the auto-accounting workflow, only entries that carry `Property/NameValue[@name='CodeDefinitionVariant']='Accounting Dimension'` are relevant. Until the processor enforces this filter natively, the recommendation is to filter on `CodeDefinitionVariant` in your ION DataFlow before the BOD reaches DocBits — otherwise non-dimension `CodeDefinition` BODs are ingested into `m3flexdimension` and clutter the picker in the cost-invoice UI. <!-- tracked in DOCB-12315 -->
+`Sync.CodeDefinition` 是一种通用 BOD，M3 会针对许多不同对象（会计维度、状态代码、分类列表等）发出此类 BOD。对于自动会计工作流，只有包含 `Property/NameValue[@name='CodeDefinitionVariant']='Accounting Dimension'` 的条目才相关。在处理器原生支持此筛选之前，建议在 BOD 到达 DocBits 之前，于 ION DataFlow 中按 `CodeDefinitionVariant` 进行筛选 — 否则，非维度类的 `CodeDefinition` BOD 会被载入 `m3flexdimension`，导致成本发票 UI 中的选择器内容杂乱。 <!-- tracked in DOCB-12315 -->
 
-### How the dimensions feed into cost invoices
+### 维度如何应用于成本发票
 
-When an invoice is classified as a cost invoice, DocBits proposes accounting lines based on the chart of accounts (see below). For each dimension required by the proposed nominal account, the UI offers the values stored in `m3flexdimension` — pre-populated from the latest `Sync.CodeDefinition` BODs. The AP user picks the right value or accepts the auto-suggestion, and the result is exported back to M3 with the corresponding `Sync.SupplierInvoice` BOD.
+当发票被分类为成本发票时，DocBits 会根据科目表（见下文）建议会计行。对于建议的总账科目所需的每个维度，UI 都会提供存储在 `m3flexdimension` 中的值 — 这些值由最新的 `Sync.CodeDefinition` BOD 预先填充。AP 用户选择正确的值或接受自动建议，随后 DocBits 会通过相应的 `Sync.SupplierInvoice` BOD 将结果导出回 M3。
 
 ## Sync.ChartOfAccounts
 
-→ DocBits Master Data Lookup Table: **ChartOfAccounts**
+→ DocBits 主数据查找表：**ChartOfAccounts**
 
 ```json
 {

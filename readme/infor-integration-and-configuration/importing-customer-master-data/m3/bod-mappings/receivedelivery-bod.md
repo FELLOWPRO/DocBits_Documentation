@@ -1,4 +1,4 @@
-# ReceiveDelivery BOD Mapping
+# ReceiveDelivery BOD 映射
 
 ```python
 purchase_order_exists = True
@@ -12,7 +12,7 @@ OR
 "//DataArea/ReceiveDelivery/ReceiveDeliveryHeader/DocumentID/ID"
 ```
 
-<mark style="color:red;">Note</mark>: If the `DisplayID` is unavailable, the fallback XPath `DocumentID/ID` will be used.
+<mark style="color:red;">注意</mark>：如果 `DisplayID` 不可用，则使用备用 XPath `DocumentID/ID`。
 
 ```python
 ship_from_party_id = "//DataArea/ReceiveDelivery/ReceiveDeliveryHeader/ShipFromParty/PartyIDs/ID"
@@ -25,7 +25,7 @@ status = "//DataArea/ReceiveDelivery/ReceiveDeliveryHeader/Status/Code"
 status_effective_from = "//DataArea/ReceiveDelivery/ReceiveDeliveryHeader/Status/EffectiveDateTime"
 ```
 
-## **Line Items**
+## **行项目**
 
 ```python
 line_number = "//ReceiveDeliveryItem[{index}]/LineNumber"
@@ -48,7 +48,7 @@ status_effective_from = "//ReceiveDeliveryItem[{index}]/Status/EffectiveDateTime
 invoiced_quantity = "//ns:ReceiveDeliveryItem[{index}]/ns:UserArea/ns:Property/ns:NameValue[@name='InvoicedQuantity']"
 ```
 
-<mark style="color:red;">**Note**</mark>: Invoice Quantity will only be used if node exists in UserArea with name InvoicedQuantity.
+<mark style="color:red;">**注意**</mark>：仅当 UserArea 中存在名称为 InvoicedQuantity 的节点时，才会使用发票数量。
 
 ```python
 purchase_order_sub_line_number = 
@@ -59,4 +59,4 @@ OR
 "//ns:ReceiveDeliveryItem[{index}]/ns:PurchaseOrderReference/ns:ScheduleLineNumber"
 ```
 
-<mark style="color:red;">**Note**</mark>: If the XPath is unavailable, the fallback XPath will be used.
+<mark style="color:red;">**注意**</mark>：如果 XPath 不可用，则使用备用 XPath。

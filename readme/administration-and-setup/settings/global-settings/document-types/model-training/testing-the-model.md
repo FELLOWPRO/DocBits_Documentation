@@ -1,55 +1,42 @@
-# Testing the model
+# 测试模型
 
-## Steps to run classification tests to evaluate the accuracy and operational readiness of the model
+## 运行分类测试以评估模型准确性和运行就绪情况的步骤
 
-To test the trained model and evaluate its accuracy and operational readiness, you can follow the steps below:
+要测试训练好的模型并评估其准确性和运行就绪情况，请按照以下步骤操作：
 
+**准备测试数据：**
 
+* 收集具有代表性的测试数据样本，涵盖模型在实际使用中需要处理的不同文档类型和场景。确保测试数据质量高且标注正确。
 
-**Preparing the test data:**&#x20;
+**运行分类测试：**
 
-* Collect a representative sample of test data covering different types of documents and scenarios that the model will handle in the field. Ensure that the test data is of high quality and correctly labeled.
+* 使用准备好的测试数据运行分类测试。
+* 将测试数据输入模型，并让模型预测文档类别。
 
+<figure><img src="../../../../../.gitbook/assets/image (206).png" alt="" width="375"><figcaption><p>设置</p></figcaption></figure>
 
+* 添加新的分类规则，或编辑现有规则。
 
-**Running the classification tests:**&#x20;
+<figure><img src="../../../../../.gitbook/assets/image (207).png" alt=""><figcaption><p>设置：分类和提取</p></figcaption></figure>
 
-* Run the classification tests on the prepared test data.&#x20;
-* Feed the test data into the model and let the model make predictions for classifying the documents.
+<figure><img src="../../../../../.gitbook/assets/image (205).png" alt="" width="276"><figcaption><p>配置分类规则</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (91).png" alt="" width="375"><figcaption><p>Setting</p></figcaption></figure>
+**评估模型准确性：**
 
-* Add a new one or edit an existing classification rule.
-
-<figure><img src="../../../../../.gitbook/assets/image (92).png" alt=""><figcaption><p>Settings: Classification and Extraction </p></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/image (90).png" alt="" width="276"><figcaption><p>Configure classification Rule</p></figcaption></figure>
-
-**Evaluating the model accuracy:**&#x20;
-
-* Compare the model's predictions with the actual classifications of the test data. Calculate metrics such as accuracy, precision, recall, and F1 score to evaluate the model's performance. These metrics provide insight into how well the model classified the documents and how reliable it is.
+* 将模型的预测结果与测试数据的实际分类进行比较。计算准确率、精确率、召回率和 F1 分数等指标，以评估模型的性能。这些指标有助于了解模型对文档分类的效果及其可靠性。
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 08.53.41.png" alt=""><figcaption></figcaption></figure>
 
+**分析错误：**
 
+* 检查模型在测试数据分类过程中出现的错误，并分析原因。识别错误中的模式或趋势，并在必要时调整模型以提升其性能。
 
-**Analyze errors:**&#x20;
+**优化模型**：
 
-* Examine the errors the model made when classifying the test data and analyze their causes. Identify patterns or trends in the errors and, if necessary, make adjustments to the model to improve its performance.
+* 根据分类测试和错误分析的结果，您可以通过添加训练数据、调整训练参数或更改模型架构来优化模型。重复测试流程，检查优化是否提升了模型性能。
 
+**记录结果：**
 
+* 记录分类测试的结果，以及对模型所做的任何调整或优化。这有助于跟踪模型随时间的进展，并确保其持续改进。
 
-**Optimize the model**:&#x20;
-
-* Based on the results of the classification tests and error analysis, you can optimize the model by adding training data, adjusting training parameters, or changing the model architecture. Repeat the testing process to check if the optimizations improved the model's performance.
-
-
-
-**Document the results:**&#x20;
-
-* Document the results of the classification tests and any adjustments or optimizations made to the model. This will help you track the model's progress over time and ensure that it is constantly improving.
-
-By regularly running classification tests and evaluating the performance of your model, you can ensure that it is suitable for use in production and delivers accurate results.
-
-
-
+定期运行分类测试并评估模型性能，可以确保模型适用于生产环境并提供准确结果。

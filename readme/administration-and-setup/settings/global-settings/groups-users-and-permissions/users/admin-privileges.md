@@ -1,63 +1,60 @@
-# Admin Privileges
+# 管理员权限
 
-The role of an administrator is crucial for managing IT systems, networks and digital platforms in an organization. An administrator has advanced permissions and responsibilities that allow them to control various aspects of the technical infrastructure and ensure that it is operated efficiently and securely. Here are some of the main responsibilities of an administrator:
+管理员在组织的 IT 系统、网络和数字平台管理中发挥着至关重要的作用。管理员拥有高级权限和职责，可以控制技术基础设施的各个方面，并确保其高效、安全地运行。以下是管理员的主要职责：
 
-* **User management:** Administrators manage user accounts, access rights and permissions. They create new user accounts, assign them the necessary permissions and manage access control to ensure that only authorized users can access certain resources.
-* **Security:** Administrators are responsible for the security of IT systems to protect against data loss and unauthorized access.
-* **Troubleshooting and support:** The administrator is often the first point of contact for technical issues. They help users troubleshoot and resolve problems and ensure that the system is running smoothly.
+* **用户管理：** 管理员负责管理用户帐户、访问权限和授权。他们创建新用户帐户，为用户分配所需权限，并管理访问控制，确保只有经过授权的用户才能访问特定资源。
+* **安全：** 管理员负责 IT 系统的安全，防止数据丢失和未经授权的访问。
+* **故障排除与支持：** 管理员通常是处理技术问题的第一联系人。他们帮助用户排查并解决问题，确保系统平稳运行。
 
-In addition to these responsibilities, administrators are also tasked with managing sensitive settings and ensuring that systems meet compliance requirements and information security best practices. This includes managing sensitive data, configuring access controls and permissions, and monitoring and analyzing system logs to identify and address potential security risks.
+除了这些职责，管理员还负责管理敏感设置，并确保系统符合合规要求和信息安全最佳实践。这包括管理敏感数据、配置访问控制和权限，以及监控和分析系统日志，以识别并处理潜在的安全风险。
 
-## Admin vs System Admin
+## Admin 与 System Admin <a id="admin-vs-system-admin"></a>
 
-DocBits has two administrator roles: **Admin** and **System Admin**. They sound similar, but they do different jobs. Here is the simple version.
+DocBits 有两种管理员角色：**Admin** 和 **System Admin**。它们听起来相似，但承担的工作不同。简单来说：
 
-### Admin — a person who manages your organization
+### Admin — 管理组织的人员
 
-An **Admin** is a real person on your team who is allowed to manage DocBits. Admins can:
+**Admin** 是团队中获准管理 DocBits 的真实人员。Admin 可以：
 
-* Open all areas of **Settings** and change how your organization works.
-* Add new users, edit them, switch them on or off, and decide who else becomes an Admin.
-* Set up groups, permissions, integrations, and workflows.
+* 打开 **Settings**（设置）的所有区域，并更改组织的工作方式。
+* 添加用户、编辑用户、启用或停用用户，并决定由谁担任 Admin。
+* 设置用户组、权限、集成和工作流。
 
-You can have **as many Admins as you need**, and you can give or take away the Admin role from any user at any time. Most administrators on your team are this type.
+您可以根据需要设置**任意数量的 Admin**，并且可以随时为任何用户授予或撤销 Admin 角色。团队中的大多数管理员都属于这一类型。
 
-### System Admin — the account DocBits uses to work on its own
+### System Admin — DocBits 用于自动运行的帐户
 
-A **System Admin** is **one special account per organization** that DocBits uses for actions that happen **automatically, without anyone clicking a button** — for example when documents are imported from email, exported to another system, or passed along by a connected service in the background.
+**System Admin** 是**每个组织唯一的一个特殊帐户**，DocBits 使用它来执行**无需任何人点击按钮即可自动完成的操作**，例如从电子邮件导入文档、将文档导出到另一个系统，或由已连接的服务在后台传递文档。
 
-Think of it as the organization's "robot" account. When the system does something on its own, it does it **as the System Admin**, so that automatic activity is easy to recognize and is not mixed up with the work of your real team members.
+可以把它看作组织的“机器人”帐户。当系统自行执行操作时，会**以 System Admin 的身份**执行，因此很容易识别这些自动操作，也不会与真实团队成员的工作混淆。
 
-A System Admin is special in three ways:
+System Admin 有三个特别之处：
 
-* **It is always an Admin too.** Choosing System Admin automatically gives that account full Admin rights as well.
-* **There is only one per organization.** Once a System Admin exists, you cannot mark another user as System Admin.
-* **It is set only when the user is created.** You decide this at the moment you add the user. It **cannot be turned on or off later**.
+* **它同时始终是 Admin。** 选择 System Admin 会自动为该帐户授予完整的 Admin 权限。
+* **每个组织只能有一个。** System Admin 创建后，您不能再将其他用户标记为 System Admin。
+* **只能在创建用户时设置。** 添加用户时即可选择此角色，之后**无法启用或停用**。
 
-> **Recommendation:** Create a dedicated account for this purpose — for example `system@your-company.com` — and mark it as the System Admin. That way, anything DocBits does automatically clearly shows up as the **System Admin** in your logs and document history, separate from your real users.
+> **建议：** 为此用途创建一个专用帐户，例如 `system@your-company.com`，并将其标记为 System Admin。这样，DocBits 自动执行的所有操作都会在日志和文档历史记录中清楚地显示为 **System Admin**，与真实用户的操作区分开来。
 
-### At a glance
+### 一览
 
 | | Admin | System Admin |
 |---|---|---|
-| Full access to manage the organization | Yes | Yes |
-| How many you can have | As many as you need | Only one |
-| Can be changed after the user is created | Yes, anytime | No, only set at creation |
-| Used for automatic, behind-the-scenes actions | No | Yes |
-| Always has Admin rights | — | Yes |
+| 拥有管理组织的完整访问权限 | 是 | 是 |
+| 可设置的数量 | 根据需要设置 | 仅一个 |
+| 创建用户后能否更改 | 可以，随时更改 | 不可以，只能在创建时设置 |
+| 用于自动在后台执行的操作 | 否 | 是 |
+| 始终拥有 Admin 权限 | — | 是 |
 
-## Security Best Practice
+## 安全最佳实践
 
-Security is an essential aspect of any organization, especially when it comes to managing user accounts and access rights. Here are some best practices to maintain a secure user management protocol:
+安全是每个组织都必须重视的方面，尤其是在管理用户帐户和访问权限时。以下是维护安全用户管理机制的一些最佳实践：
 
-* **Regular password updates:** Encourage users to update their passwords regularly to keep their accounts secure. Establish password complexity policies and require the use of strong passwords that include a combination of letters, numbers, and special characters.
-* **Monitor administrator actions:** Implement mechanisms to monitor administrator activities to detect suspicious or unusual activity. Log all administrator actions, including access to sensitive data or settings, to ensure accountability and identify potential security breaches.
-* **Limit the number of administrators:** Reduce the number of administrators to a minimum and grant administrative privileges only to those who really need them. By limiting the number of administrators, you minimize the risk of security breaches and make it easier to manage and monitor user accounts.
-* **Zwei-Faktor-Authentifizierung (2FA):** Implementieren Sie eine Zwei-Faktor-Authentifizierung für Administratorkonten, um die Sicherheit zusätzlich zu erhöhen. Dadurch wird ein zusätzlicher Sicherheitsschritt eingeführt, der sicherstellt, dass selbst bei Kompromittierung eines Kennworts ein Angreifer keinen unbefugten Zugriff auf das Konto erhält.
-* **Regelmäßige Sicherheitsüberprüfungen:** Führen Sie regelmäßige Sicherheitsüberprüfungen und Audits durch, um potenzielle Sicherheitslücken oder Schwachstellen zu identifizieren und zu beheben. Überprüfen Sie die Zugriffsrechte und Berechtigungen von Benutzerkonten, um sicherzustellen, dass sie den aktuellen Anforderungen und Best Practices entsprechen.
-* **Training and awareness:** Regularly train employees and administrators on security best practices and awareness of phishing attacks and other cyber threats. Make them aware of the importance of security and encourage them to report suspicious activity.
+* **定期更新密码：** 鼓励用户定期更新密码，以确保帐户安全。制定密码复杂度策略，并要求使用包含字母、数字和特殊字符的强密码。
+* **监控管理员操作：** 建立机制以监控管理员活动，发现可疑或异常行为。记录所有管理员操作，包括访问敏感数据或设置的操作，以确保责任可追溯，并识别潜在的安全漏洞。
+* **限制管理员人数：** 尽量减少管理员人数，仅向确实需要管理权限的人员授予权限。限制管理员人数可以降低安全漏洞风险，也便于管理和监控用户帐户。
+* **双因素身份验证 (2FA)：** 为管理员帐户启用双因素身份验证，以进一步提高安全性。这样会增加一道安全验证步骤，确保即使密码遭到泄露，攻击者也无法未经授权访问帐户。
+* **定期安全检查：** 定期进行安全检查和审计，以识别并修复潜在的安全漏洞或弱点。检查用户帐户的访问权限和授权，确保其符合当前要求和最佳实践。
+* **培训与意识提升：** 定期为员工和管理员提供安全最佳实践培训，帮助他们识别网络钓鱼攻击和其他网络威胁。让他们了解安全的重要性，并鼓励他们报告可疑活动。
 
-By implementing these best practices, organizations can improve the security of their user management protocol and minimize the risk of security breaches and data loss. It is important to view security as an ongoing process and make regular updates and adjustments to keep up with ever-changing threats and security requirements.
-
-
-
+落实这些最佳实践有助于组织提升用户管理机制的安全性，并降低安全漏洞和数据丢失风险。安全应被视为一个持续的过程，组织应定期更新和调整措施，以跟上不断变化的威胁和安全要求。

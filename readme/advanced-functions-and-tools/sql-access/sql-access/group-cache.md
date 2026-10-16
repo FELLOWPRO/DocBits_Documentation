@@ -1,90 +1,90 @@
-# Group cache
+# 组缓存
 
-## Tabelle `public.group_cache`
+## 表 `public.group_cache`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `name`: internal
-* `description`: internal
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `only_assigned_documents`: boolean
+* `id`：内部字段
+* `org_id`：组织 ID
+* `name`：内部字段
+* `description`：内部字段
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `only_assigned_documents`：布尔值
 
-### Analyse & Beschreibung
+### 分析与说明
 
-## Technical Documentation for `public.group_cache` Table
+## `public.group_cache` 表的技术文档
 
-### Introduction
+### 简介
 
-The `public.group_cache` table appears to manage cached information related to organizational groups. Based on the column names and example data, it likely stores metadata about various groups, including identifiers, descriptive information, creation details, and status flags. This table facilitates efficient retrieval of group-related data, possibly for access control, categorization, or reporting purposes within an organization.
+`public.group_cache` 表似乎用于管理与组织群组相关的缓存信息。根据列名和示例数据，它可能存储各种群组的元数据，包括标识符、描述信息、创建详情和状态标记。此表有助于高效检索群组相关数据，可能用于组织内的访问控制、分类或报告。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: Unique identifier for each group entry in the cache.
-* **Role**: Primary Key
-* **Typical Contents**: UUID strings that uniquely identify a group entry.
-* **Note**: Essential for distinguishing each row in the table.
+* **含义**：缓存中每个群组条目的唯一标识符。
+* **作用**：主键
+* **典型内容**：用于唯一标识群组条目的 UUID 字符串。
+* **备注**：对于区分表中的每一行至关重要。
 
 #### org\_id
 
-* **Meaning**: Identifier for the organization to which the group belongs.
-* **Role**: Foreign Key
-* **Typical Contents**: UUID strings that relate the group to a specific organization.
-* **Note**: Links this table to the primary organization data, ensuring groups are associated with the correct entity.
+* **含义**：群组所属组织的标识符。
+* **作用**：外键
+* **典型内容**：用于将群组关联到特定组织的 UUID 字符串。
+* **备注**：将此表关联到组织主数据，确保群组与正确的实体关联。
 
 #### name
 
-* **Meaning**: The name of the group.
-* **Role**: Descriptive Field
-* **Typical Contents**: Short strings or acronyms representing the group name.
-* **Note**: Used for display purposes and may be utilized in search features.
+* **含义**：群组名称。
+* **作用**：描述字段
+* **典型内容**：表示群组名称的短字符串或缩写。
+* **备注**：用于显示，也可能用于搜索功能。
 
 #### description
 
-* **Meaning**: A more detailed description of the group.
-* **Role**: Descriptive Field
-* **Typical Contents**: Text providing additional context or information about the group.
-* **Note**: Helps users understand the purpose or nature of the group.
+* **含义**：对群组的详细说明。
+* **作用**：描述字段
+* **典型内容**：提供群组相关背景或信息的文本。
+* **备注**：帮助用户了解群组的用途或性质。
 
 #### created\_by
 
-* **Meaning**: Identifier of the user who created the group entry.
-* **Role**: Foreign Key
-* **Typical Contents**: Integer values referencing user identifiers.
-* **Note**: Useful for auditing and tracking changes, indicating which user added the group.
+* **含义**：创建群组条目的用户标识符。
+* **作用**：外键
+* **典型内容**：引用用户标识符的整数值。
+* **备注**：可用于审计和跟踪变更，指明添加群组的用户。
 
 #### created\_on
 
-* **Meaning**: Timestamp of when the group entry was created.
-* **Role**: Technical Field
-* **Typical Contents**: Timestamps with time zone information, indicating the creation date and time.
-* **Note**: Important for historical tracking and understanding data freshness.
+* **含义**：创建群组条目的时间戳。
+* **作用**：技术字段
+* **典型内容**：包含时区信息的时间戳，表示创建日期和时间。
+* **备注**：对于历史跟踪和了解数据时效性很重要。
 
 #### last\_modified\_on
 
-* **Meaning**: Timestamp of the last modification to the group entry.
-* **Role**: Technical Field
-* **Typical Contents**: Timestamps with time zone information, or `None` if not modified.
-* **Note**: Tracks when the data was last updated, aiding in maintaining data integrity.
+* **含义**：群组条目最后修改时间的时间戳。
+* **作用**：技术字段
+* **典型内容**：包含时区信息的时间戳；如果未修改，则为 `None`。
+* **备注**：记录数据最后更新时间，有助于维护数据完整性。
 
 #### is\_deleted
 
-* **Meaning**: Flag indicating whether the group entry is marked as deleted.
-* **Role**: Status Field
-* **Typical Contents**: Boolean values (`True` or `False`).
-* **Note**: Allows soft deletion of data, keeping entries in the database but marking them as inactive.
+* **含义**：指示群组条目是否已标记为删除的标志。
+* **作用**：状态字段
+* **典型内容**：布尔值（`True` 或 `False`）。
+* **备注**：允许软删除数据，即在数据库中保留条目，但将其标记为非活动状态。
 
 #### only\_assigned\_documents
 
-* **Meaning**: Flag indicating if the group is restricted to assigned documents only.
-* **Role**: Status Field
-* **Typical Contents**: Boolean values (`True` or `False`).
-* **Note**: Determines access or visibility restrictions on group-related documents, potentially used for security or organizational policy enforcement.
+* **含义**：指示群组是否仅限于已分配文档的标志。
+* **作用**：状态字段
+* **典型内容**：布尔值（`True` 或 `False`）。
+* **备注**：决定群组相关文档的访问或可见性限制，可能用于执行安全或组织政策。
 
-This documentation provides a comprehensive overview of the `public.group_cache` table, with detailed insights into each column's function and its role in the database schema.
+本文档全面概述了 `public.group_cache` 表，详细说明了各列的功能及其在数据库架构中的作用。

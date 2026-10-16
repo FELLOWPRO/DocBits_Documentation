@@ -1,46 +1,41 @@
-# not found in direct debit
+# 直接扣款中未找到
 
-## **Step 1: Check LN Configuration**
+## **步骤 1：检查 LN 配置**
 
-1. Log in to **LN CE**.
-2. Navigate to the **Options** menu and select **Run Program**.
-3. In the input field, type **ACP Parameters** and press Enter to open the program.
-4. Click on the arrow next to the **Actual Set** field to expand the settings.
-5. Go to the **Matching** section.
-   * **Check the Automatic Matching Setting:**
-     * If the **Automatic Matching** is set to **Match to Purchase Receipt**, proceed to the next step.
-     * If it is **not** set to **Match to Purchase Receipt**, but you still got this error, please contact us.
+1. 登录 **LN CE**。
+2. 前往 **Options** 菜单并选择 **Run Program**。
+3. 在输入框中输入 **ACP Parameters**，然后按 Enter 键打开该程序。
+4. 点击 **Actual Set** 字段旁边的箭头以展开设置。
+5. 前往 **Matching** 部分。
+   * **检查自动匹配设置：**
+     * 如果 **Automatic Matching** 设置为 **Match to Purchase Receipt**，请继续下一步。
+     * 如果未设置为 **Match to Purchase Receipt**，但您仍遇到此错误，请联系我们。
 
-## **Step 2: Open DocBits Settings**
+## **步骤 2：打开 DocBits 设置**
 
-If the **Automatic Matching** is set to **Match to Purchase Receipt**, proceed with the following steps in DocBits:
+如果 **Automatic Matching** 设置为 **Match to Purchase Receipt**，请在 DocBits 中执行以下步骤：
 
-1. Open **DocBits** and go to the **Settings** section.
-2. Navigate to **Document Processing**.
-3. Select **Export**.
-4. In the **Export** section, click on the **three dots** icon next to the export that is not working and select **Edit**.
-5. In the **Edit Export Settings** menu, click **Download the LN-Mapping** file.
+1. 打开 **DocBits** 并前往 **Settings** 部分。
+2. 前往 **Document Processing**。
+3. 选择 **Export**。
+4. 在 **Export** 部分，点击无法正常工作的导出项旁边的 **three dots** 图标，然后选择 **Edit**。
+5. 在 **Edit Export Settings** 菜单中，点击 **Download the LN-Mapping** 文件。
 
-## **Step 3: Edit LN-Mapping File**
+## **步骤 3：编辑 LN-Mapping 文件**
 
-1. Open the downloaded **LN-Mapping** file.
-2.  Search for the field **IRF\_PackingSlip**.
+1. 打开下载的 **LN-Mapping** 文件。
+2. 搜索字段 **IRF\_PackingSlip**。
+   * 如果存在字段 **IRF\_PackingSlip**，且其值为空（empty），请将其更新为 **TF\_packing\_slip**。
+   * 如果字段 **IRF\_PackingSlip** 不存在，请将其添加到文件中，并将其值设为 **TF\_packing\_slip**。
+3. 对于字段 **InvoiceReceiptFields**，请将 **PackingSlip** 添加到值中。
 
-    * If the field **IRF\_PackingSlip** is present and set to **nothing** (empty), update it to **TF\_packing\_slip**.
-    * If the field **IRF\_PackingSlip** is **not present**, add it to the file and set its value to **TF\_packing\_slip**.&#x20;
+文件应如下所示：
 
+<figure><img src="../../../../.gitbook/assets/image (390).png" alt=""><figcaption></figcaption></figure>
 
-3. For the field **InvoiceReceiptFields** add **PackingSlip** to the values.
+## **步骤 4：将更新后的文件添加回 DocBits**
 
-It should look like the following:
+1. 返回 DocBits 中之前下载 **LN-Mapping** 文件的 **Export** 部分。
+2. 上传已编辑并包含新更新的 **LN-Mapping** 文件。
 
-<figure><img src="../../../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
-
-
-
-## **Step 4: Add the Updated File Back to DocBits**
-
-1. Go back to the **Export** section in DocBits where you previously downloaded the **LN-Mapping** file.
-2. Upload the edited **LN-Mapping** file with the new updates.
-
-## If you still encounter the **Error exporting document to LN** with status code **500**, please contact us
+## 如果您仍遇到状态代码为 **500** 的 **Error exporting document to LN**，请联系我们

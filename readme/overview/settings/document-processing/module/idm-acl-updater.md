@@ -1,3 +1,0 @@
-# IDM ACL Updater
-
-

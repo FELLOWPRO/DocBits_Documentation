@@ -1,152 +1,152 @@
-# WatchDog Configuration
+# WatchDog 配置
 
-This guide explains how to configure the WatchDog service within the DocBits application. All configurations are managed directly in **Settings → Document Processing → WatchDog**.
+本指南介绍如何在 DocBits 应用中配置 WatchDog 服务。所有配置均可直接在 **设置 → 文档处理 → WatchDog** 中管理。
 
-<figure><img src="../../../.gitbook/assets/watchdog-v2-config-infographic.svg" alt="WatchDog Configuration Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-v2-config-infographic.svg" alt="WatchDog 配置概览"><figcaption></figcaption></figure>
 
 ---
 
-## 1. General Tab
+## 1. 常规选项卡
 
-The General tab provides setup instructions, download links, and update settings.
+“常规”选项卡提供设置说明、下载链接和更新设置。
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="WatchDog General Tab"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="WatchDog 常规选项卡"><figcaption></figcaption></figure>
 
-### 1.1 Download & Setup
+### 1.1 下载和设置
 
-* Download the latest `WatchDog.exe` directly from the General tab
-* Copy the displayed API Key
-* Run the configuration command in an Administrator Command Prompt:
+* 直接从“常规”选项卡下载最新版本的 `WatchDog.exe`
+* 复制显示的 API Key
+* 在管理员命令提示符中运行配置命令：
 
 ```powershell
 WatchDog.exe -api YOUR_API_KEY
 ```
 
-### 1.2 Auto-Update Schedule
+### 1.2 自动更新计划
 
-| Option | Interval |
+| 选项 | 间隔 |
 | :--- | :--- |
-| On Startup Only | Check once at start |
-| Hourly | Every 3600 seconds |
-| Daily | Every 86400 seconds |
-| Weekly | Every 604800 seconds |
+| 仅在启动时 | 启动时检查一次 |
+| 每小时 | 每 3600 秒 |
+| 每天 | 每 86400 秒 |
+| 每周 | 每 604800 秒 |
 
 ---
 
-## 2. Configurations Tab
+## 2. 配置选项卡
 
-Create and manage import and export configurations. All configurations are created directly in DocBits — no local config files needed.
+创建和管理导入与导出配置。所有配置均直接在 DocBits 中创建，无需本地配置文件。
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_03.png" alt="WatchDog Configurations Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog_v2_03.png" alt="WatchDog 配置概览"><figcaption></figcaption></figure>
 
-### 2.1 Import Configurations
+### 2.1 导入配置
 
-Define where WatchDog monitors for new documents.
+定义 WatchDog 监控新文档的位置。
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_02.png" alt="WatchDog Import Configuration"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog_v2_02.png" alt="WatchDog 导入配置"><figcaption></figcaption></figure>
 
-| Field | Description |
+| 字段 | 描述 |
 | :--- | :--- |
-| **Name** | Display name for this configuration |
-| **Watch Folder** | Directory to monitor for new documents (required) |
-| **Success Folder** | Where files are moved after successful import |
-| **Document Type** | INVOICE, CREDIT\_NOTE, PURCHASE\_ORDER, etc. |
-| **Sub-Organisation** | Optional — route documents to a specific sub-org |
+| **名称** | 此配置的显示名称 |
+| **监控文件夹** | 监控新文档的目录（必填） |
+| **成功文件夹** | 成功导入后移动文件的位置 |
+| **文档类型** | INVOICE、CREDIT\_NOTE、PURCHASE\_ORDER 等 |
+| **子组织** | 可选 — 将文档路由到特定子组织 |
 
-### 2.2 Export Configurations
+### 2.2 导出配置
 
-Define how and where processed documents are exported.
+定义已处理文档的导出方式和位置。
 
-> **Important:** Export configurations now **require a document type** (`doc_type`). Configurations without a document type will be rejected by the system.
+> **重要：**导出配置现在**必须指定文档类型**（`doc_type`）。未指定文档类型的配置将被系统拒绝。
 
-| Field | Description |
+| 字段 | 描述 |
 | :--- | :--- |
-| **Name** | Display name for this configuration |
-| **Document Type** | Required — INVOICE, CREDIT\_NOTE, etc. |
-| **Export Method** | How documents are exported (see below) |
-| **Export Folder** | Target directory for folder exports |
-| **Execution Order** | Priority when multiple configs match (default: 1) |
-| **XSLT Template** | Optional — XML transformation template |
+| **名称** | 此配置的显示名称 |
+| **文档类型** | 必填 — INVOICE、CREDIT\_NOTE 等 |
+| **导出方式** | 文档的导出方式（见下文） |
+| **导出文件夹** | 文件夹导出的目标目录 |
+| **执行顺序** | 匹配多个配置时的优先级（默认值：1） |
+| **XSLT 模板** | 可选 — XML 转换模板 |
 
-### 2.3 Export Methods
+### 2.3 导出方式
 
-| Method | Description |
+| 方式 | 描述 |
 | :--- | :--- |
-| **Folder (watcher)** | Export PDF + XML to a local folder |
-| **Infor IDM** | Upload to Infor Document Management |
-| **Infor BOD** | Send BOD XML to Infor LN/M3 |
-| **ION API** | Call Infor ION API endpoints |
-| **GLS840MI** | M3 batch processing (via REST API) |
-| **REST API** | Send to external API with ION OAuth authentication |
+| **文件夹（监控器）** | 将 PDF + XML 导出到本地文件夹 |
+| **Infor IDM** | 上传到 Infor Document Management |
+| **Infor BOD** | 将 BOD XML 发送到 Infor LN/M3 |
+| **ION API** | 调用 Infor ION API 端点 |
+| **GLS840MI** | M3 批处理（通过 REST API） |
+| **REST API** | 使用 ION OAuth 身份验证发送到外部 API |
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_04.png" alt="WatchDog Export Configuration"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog_v2_04.png" alt="WatchDog 导出配置"><figcaption></figcaption></figure>
 
-### 2.4 Processing Options
+### 2.4 处理选项
 
-* **Barcode Divider:** Automatically split multi-page documents based on barcodes
-* **DocBits Operator:** Enable browser automation tasks
+* **条码分隔符：**根据条码自动拆分多页文档
+* **DocBits 操作器：**启用浏览器自动化任务
 
 ---
 
-## 3. Status Tab
+## 3. 状态选项卡
 
-Monitor WatchDog service health and activity.
+监控 WatchDog 服务的运行状况和活动。
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_status.png" alt="WatchDog Service Status"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog_v2_status.png" alt="WatchDog 服务状态"><figcaption></figcaption></figure>
 
-### Status Information
+### 状态信息
 
-| Field | Description |
+| 字段 | 描述 |
 | :--- | :--- |
-| **Online/Offline** | Current connection status (30s heartbeat threshold) |
-| **Version** | Installed WatchDog version |
-| **Version First Seen** | When this version was first reported |
-| **Last Restart** | Timestamp of last service restart |
-| **Auto-Update Enabled** | Whether automatic updates are active |
-| **Latest Version** | Newest available version |
-| **Latest Version Checked At** | When the latest version was last checked |
-| **System Info** | Installation path, free RAM, free disk space |
+| **在线/离线** | 当前连接状态（心跳阈值为 30 秒） |
+| **版本** | 已安装的 WatchDog 版本 |
+| **首次检测到版本的时间** | 首次报告此版本的时间 |
+| **上次重启时间** | 服务上次重启的时间戳 |
+| **已启用自动更新** | 自动更新是否处于启用状态 |
+| **最新版本** | 当前可用的最新版本 |
+| **上次检查最新版本的时间** | 上次检查最新版本的时间 |
+| **系统信息** | 安装路径、可用 RAM、可用磁盘空间 |
 
-### Health Indicator
+### 运行状况指示器
 
-| Status | Meaning |
+| 状态 | 含义 |
 | :--- | :--- |
-| ✅ **Online** | WatchDog is connected and active |
-| ⚠️ **Offline** | No heartbeat received for 30+ seconds |
-| ❌ **Not Installed** | WatchDog has never connected to this organisation |
+| ✅ **在线** | WatchDog 已连接并处于活动状态 |
+| ⚠️ **离线** | 超过 30 秒未收到心跳 |
+| ❌ **未安装** | WatchDog 从未连接到此组织 |
 
 ---
 
-## 4. Logs Tab
+## 4. 日志选项卡
 
-View all WatchDog events stored in OpenSearch.
+查看存储在 OpenSearch 中的所有 WatchDog 事件。
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_05.png" alt="WatchDog Logs"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog_v2_05.png" alt="WatchDog 日志"><figcaption></figcaption></figure>
 
-* Filter by date, event type, or keywords
-* Event types: `FILE_IMPORT_STARTED`, `FILE_IMPORT_COMPLETED`, `FILE_IMPORT_FAILED`, `EXPORT_STARTED`, `EXPORT_COMPLETED`, `EXPORT_FAILED`, `FOLDER_VALIDATION_FAILED`, `CONFIG_LOADED`, `SERVICE_RESTART_INITIATED`, `SERVICE_RESTART_COMPLETED`
-
----
-
-## 5. XSLT Templates Tab
-
-Manage XSLT transformation templates used for XML exports.
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_06.png" alt="XSLT Templates List"><figcaption></figcaption></figure>
-
-* Upload and edit XSLT templates
-* **Live validation** — test templates against sample XML with field analysis
-* Link templates to export configurations
-* View usage count (which configs use each template)
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_07.png" alt="XSLT Template Editor"><figcaption></figcaption></figure>
+* 按日期、事件类型或关键字筛选
+* 事件类型：`FILE_IMPORT_STARTED`、`FILE_IMPORT_COMPLETED`、`FILE_IMPORT_FAILED`、`EXPORT_STARTED`、`EXPORT_COMPLETED`、`EXPORT_FAILED`、`FOLDER_VALIDATION_FAILED`、`CONFIG_LOADED`、`SERVICE_RESTART_INITIATED`、`SERVICE_RESTART_COMPLETED`
 
 ---
 
-## 6. Export Configurations Tab
+## 5. XSLT 模板选项卡
 
-Overview of all active export configurations with connection status.
+管理用于 XML 导出的 XSLT 转换模板。
 
-* Monitor the last successful connection timestamp
-* Manage configurations inline (edit, copy, delete)
-* Bulk copy configurations across sub-organisations
+<figure><img src="../../../.gitbook/assets/watchdog_v2_06.png" alt="XSLT 模板列表"><figcaption></figcaption></figure>
+
+* 上传和编辑 XSLT 模板
+* **实时验证** — 使用示例 XML 测试模板并分析字段
+* 将模板关联到导出配置
+* 查看使用次数（每个模板被哪些配置使用）
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_07.png" alt="XSLT 模板编辑器"><figcaption></figcaption></figure>
+
+---
+
+## 6. 导出配置选项卡
+
+查看所有启用的导出配置及其连接状态。
+
+* 监控上次成功连接的时间戳
+* 直接管理配置（编辑、复制、删除）
+* 批量将配置复制到多个子组织

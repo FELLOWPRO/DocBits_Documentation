@@ -1,30 +1,30 @@
 ---
-description: MEXICO CFDI 4.0 electronic document support in DocBits
+description: DocBits 对墨西哥 CFDI 4.0 电子文档的支持
 ---
 
-# 🇲🇽 MEXICO CFDI 4.0
+# 🇲🇽 墨西哥 CFDI 4.0
 
-| Property             | Value                                              |
+| 属性                 | 值                                                |
 | -------------------- | -------------------------------------------------- |
-| **Country / Region** | Mexico                                             |
-| **Document Types**   | Invoice, Credit Note, Payment Receipt              |
-| **Format**           | XML                                                |
-| **Standard**         | CFDI 4.0 (Comprobante Fiscal Digital por Internet) |
+| **国家 / 地区**      | 墨西哥                                             |
+| **文档类型**         | 发票、贷项通知单、付款收据                          |
+| **格式**             | XML                                                |
+| **标准**             | CFDI 4.0（Comprobante Fiscal Digital por Internet） |
 
-CFDI 4.0 is the current version of the Mexican digital tax receipt standard, mandatory since January 2023. It requires the receiver's name and tax regime (régimen fiscal), adds the export field, and includes the updated digital seal and SAT certificate chain.
+CFDI 4.0 是墨西哥当前版本的数字税务收据标准，自 2023 年 1 月起强制实施。该标准要求提供接收方名称和税务制度（régimen fiscal），新增出口字段，并包含更新后的数字印章和 SAT 证书链。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件             | 状态        |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览             | ✅ 支持      |
+| 字段提取         | ✅ 支持      |
+| 转换             | ✅ 支持      |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/mexico-cfdi-4-0-preview.png" alt="Mexico CFDI 4.0 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Mexico CFDI 4.0 invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/mexico-cfdi-4-0-preview.png" alt="DocBits 中的墨西哥 CFDI 4.0 发票预览"><figcaption><p>DocBits 中墨西哥 CFDI 4.0 发票的默认预览</p></figcaption></figure>
 
-## Related
+## 相关
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)</final

@@ -1,122 +1,121 @@
-# Troubleshooting
+# 故障排查
 
-## Troubleshooting document type configuration in DocBits can be complex because various factors can affect data recognition and extraction.&#x20;
+## 在 DocBits 中排查文档类型配置问题可能较为复杂，因为多种因素都会影响数据识别和提取。&#x20;
 
-### Here are some general troubleshooting tips that can help identify and resolve common issues:
+### 以下是一些通用故障排查建议，可帮助识别并解决常见问题：
 
-### Check layout configuration&#x20;
+### 检查布局配置&#x20;
 
-**Check consistency:**&#x20;
+**检查一致性：**&#x20;
 
-* Make sure all documents of the type have a consistent layout. Variations in layout can affect recognition.
+* 确保此类型的所有文档布局一致。布局差异可能会影响识别。
 
-**Check zones and areas:**&#x20;
+**检查区域和范围：**&#x20;
 
-* Check that the defined zones and areas are positioned correctly and cover the relevant information.
+* 检查已定义的区域和范围是否定位正确，并覆盖相关信息。
 
-**Update templates:**&#x20;
+**更新模板：**&#x20;
 
-* If the layout of the documents changes, update the templates accordingly.
+* 如果文档布局发生变化，请相应更新模板。
 
-### Check field definitions and metadata&#x20;
+### 检查字段定义和元数据&#x20;
 
-**Field names and data types:**&#x20;
+**字段名称和数据类型：**&#x20;
 
-* Make sure field names are correct and data types are properly defined.
+* 确保字段名称正确，且数据类型定义无误。
 
-**Formatting guidelines:**&#x20;
+**格式指南：**&#x20;
 
-* Check that the formatting guidelines for the fields are correct and match the actual data.
+* 检查字段的格式指南是否正确，并与实际数据一致。
 
-**Check required fields:**&#x20;
+**检查必填字段：**&#x20;
 
-* Make sure all required fields are correctly recognized and filled in.
+* 确保所有必填字段都能被正确识别并填写。
 
-### Adjust regex patterns and extraction rules&#x20;
+### 调整正则表达式模式和提取规则&#x20;
 
-**Test regex patterns:**&#x20;
+**测试正则表达式模式：**&#x20;
 
-* Use a regex tool to test the patterns and make sure they capture the desired data correctly.
+* 使用正则表达式工具测试这些模式，确保它们能正确捕获所需数据。
 
-**Increase specificity:**&#x20;
+**提高特异性：**&#x20;
 
-* Adjust the regex patterns to be more specific and avoid misinterpretation.
+* 调整正则表达式模式，使其更具针对性，避免误解。
 
-**Check anchor points:**&#x20;
+**检查锚点：**&#x20;
 
-* Make sure the anchor points for data extraction are set correctly. If the pattern is not working correctly, check if special characters or different formats need to be considered.
+* 确保数据提取的锚点设置正确。如果模式无法正常工作，请检查是否需要考虑特殊字符或不同格式。
 
-### Adjust validation rules&#x20;
+### 调整验证规则&#x20;
 
-**Analyze error messages:**&#x20;
+**分析错误消息：**&#x20;
 
-* Examine the error messages and log files for evidence of incorrect validations.
+* 检查错误消息和日志文件，查找验证不正确的迹象。
 
-**Refine rules:**&#x20;
+**优化规则：**&#x20;
 
-* Adjust the validation rules to make them more flexible or stricter if necessary.
+* 必要时调整验证规则，使其更灵活或更严格。
 
-**Multi-step validation:**&#x20;
+**多步骤验证：**&#x20;
 
-* Implement additional validation steps to improve data quality.
+* 实施额外的验证步骤，以提高数据质量。
 
-### Improve training data and models&#x20;
+### 改进训练数据和模型&#x20;
 
-**Collect representative data:**&#x20;
+**收集有代表性的数据：**&#x20;
 
-* Make sure the training data covers a wide range of examples that reflect all possible variations.
+* 确保训练数据涵盖大量示例，反映所有可能的变化。
 
-**Retrain models:**&#x20;
+**重新训练模型：**&#x20;
 
-* Retrain the models regularly, especially when new document variants are added.
+* 定期重新训练模型，尤其是在添加新的文档变体时。
 
-**Feedback loops:**&#x20;
+**反馈循环：**&#x20;
 
-* Use feedback loops to continuously improve the models.
+* 利用反馈循环持续改进模型。
 
-### Review automation workflows &#x20;
+### 检查自动化工作流&#x20;
 
-**Review workflow steps:**&#x20;
+**检查工作流步骤：**&#x20;
 
-* Review each step in the workflow to ensure that the data is processed and routed correctly.
+* 检查工作流中的每个步骤，确保数据得到正确处理和路由。
 
-**Analyze logs:**&#x20;
+**分析日志：**&#x20;
 
-* Analyze the workflow logs to identify and resolve sources of errors.
+* 分析工作流日志，以识别并解决错误来源。
 
-**Collect user feedback:**&#x20;
+**收集用户反馈：**&#x20;
 
-* Ask users about their experiences and issues with the workflows to identify potential weak points.
+* 询问用户使用工作流的体验和遇到的问题，以找出潜在的薄弱环节。
 
-### Review user rights and access control&#x20;
+### 检查用户权限和访问控制&#x20;
 
-**Review access rights:**&#x20;
+**检查访问权限：**&#x20;
 
-* Make sure the right users have access to the relevant document types and fields.
+* 确保正确的用户能够访问相关文档类型和字段。
 
-**Track changes:**&#x20;
+**跟踪变更：**&#x20;
 
-* Check whether recent changes in access rights may have affected document processing.
+* 检查近期的访问权限变更是否影响了文档处理。
 
-**Regular review:**&#x20;
+**定期检查：**&#x20;
 
-* Perform regular access rights reviews to ensure everything is configured correctly.
+* 定期检查访问权限，确保所有配置均正确。
 
-### General troubleshooting tips&#x20;
+### 通用故障排查建议&#x20;
 
-**Consult documentation:**&#x20;
+**查阅文档：**&#x20;
 
-* Use DocBits system documentation and support resources to find solutions to problems.
+* 通过 DocBits 系统文档和支持资源查找问题的解决方案。
 
-**Provide training:**&#x20;
+**提供培训：**&#x20;
 
-* Make sure all users are adequately trained to avoid common errors.
+* 确保所有用户都接受了充分培训，以避免常见错误。
 
-**Updates and patches:**&#x20;
+**更新和补丁：**&#x20;
 
-* Keep the system up to date by regularly applying updates and patches that contain bug fixes and improvements.
+* 定期安装包含错误修复和改进的更新和补丁，保持系统为最新状态。
 
 
 
-Troubleshooting document type configuration requires a systematic approach and careful review of all aspects of the configuration. By applying the tips above, you can identify and fix common problems to improve the accuracy and efficiency of document processing in DocBits.
-
+排查文档类型配置问题需要采用系统化的方法，并仔细检查配置的各个方面。通过应用上述建议，您可以识别并修复常见问题，从而提高 DocBits 中文档处理的准确性和效率。

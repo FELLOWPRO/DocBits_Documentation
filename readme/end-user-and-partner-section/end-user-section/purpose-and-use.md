@@ -1,46 +1,46 @@
-# Purpose and Use
+# 用途与使用方法
 
-## Overview:
+## 概述：
 
-The validation screen in DocBits is designed to verify the accuracy and completeness of data contained within documents before they are processed or saved. This functionality is crucial for ensuring that all data is correctly read and processed, thereby maintaining data integrity and quality.
+DocBits 中的验证界面用于在文档处理或保存之前，验证文档所含数据的准确性和完整性。此功能对于确保所有数据都被正确读取和处理至关重要，有助于维护数据的完整性和质量。
 
 <figure><img src="../../.gitbook/assets/napkin-selection (1).svg" alt=""><figcaption></figcaption></figure>
 
-## Detailed Description of the Validation Screen's Purpose and Use
+## 验证界面的用途与使用方法详述
 
-### Purpose of the Validation Screen
+### 验证界面的用途
 
-* **Ensuring Data Quality**: The validation screen checks the accuracy and completeness of extracted data to prevent the entry of incorrect or incomplete information.
-* **Data Integrity**: It ensures that the data complies with specified requirements and standards.
-* **Error Prevention**: By facilitating early detection and correction of errors, the validation screen helps mitigate potential issues during subsequent data processing.
-* **User Friendliness**: The system provides immediate feedback to users when errors or inconsistencies are detected, allowing for prompt corrections.
-* **Compliance**: The validation screen helps ensure adherence to legal and organizational regulations and standards.
-* **Efficiency**: It reduces the effort required for future corrections and minimizes the need for manual checks.
+* **确保数据质量**：验证界面会检查提取数据的准确性和完整性，以防止录入错误或不完整的信息。
+* **数据完整性**：确保数据符合指定的要求和标准。
+* **预防错误**：通过帮助及早发现并纠正错误，验证界面有助于减少后续数据处理过程中可能出现的问题。
+* **易于使用**：系统会在检测到错误或不一致时立即向用户提供反馈，以便及时更正。
+* **合规性**：验证界面有助于确保遵守法律和组织相关的规定与标准。
+* **提高效率**：减少后续更正所需的工作，并尽量减少人工检查的需要。
 
-### Using the Validation Screen
+### 使用验证界面
 
-* **Automatic Data Extraction**:
-  * **Optical Character Recognition (OCR)**: Automatically reads text from scanned documents or images.
-  * **Structured and Unstructured Data**: Processes data from various document types, including forms, invoices, and contracts.
-* **Checking and Validating Data**:
-  * **Format Validation**: Ensures that data is in the correct formats (e.g., date formats, phone numbers, email addresses).
-  * **Required Fields**: Confirms that all mandatory fields are completed.
-  * **Range Checking**: Validates numeric data to ensure it falls within specified limits.
-  * **Consistency Checking**: Verifies that related data fields contain consistent information (e.g., ensuring start and end dates align).
-* **User Interaction and Troubleshooting**:
-  * **Error Messages**: Displays clear and actionable error messages when data does not meet validation requirements.
-  * **Manual Review and Correction**: Allows users to manually review and amend data when automatic validations fail.
-* **Data Cleaning and Standardization**:
-  * **Automatic Correction**: Suggests or performs automatic corrections when errors are detected.
-  * **Data Formatting**: Standardizes data formats to ensure consistency across datasets.
-* **Security and Access Rights**:
-  * **Input Filters**: Protects against malicious inputs through robust validation and filtering mechanisms.
-  * **Access Control**: Ensures that only authorized users can access and modify sensitive data.
-* **Data Consistency**:
-  * **Cross Validation**: Checks for consistency among related data fields (e.g., validating that start and end dates align).
-  * **Duplicate Entries**: Prevents duplicate entries within the database.
-* **User Guidance**:
-  * **Error Messages**: Provides specific and understandable error messages when entries do not comply with requirements.
-  * **Help and Hints**: Offers help texts or tooltips to assist users in entering data correctly.
+* **自动提取数据**：
+  * **光学字符识别 (OCR)**：自动读取扫描文档或图像中的文本。
+  * **结构化和非结构化数据**：处理各种文档类型中的数据，包括表单、发票和合同。
+* **检查和验证数据**：
+  * **格式验证**：确保数据格式正确（例如日期格式、电话号码和电子邮件地址）。
+  * **必填字段**：确认所有必填字段均已填写。
+  * **范围检查**：验证数值数据是否在指定范围内。
+  * **一致性检查**：验证相关数据字段中的信息是否一致（例如，确保开始日期和结束日期相符）。
+* **用户交互与故障排查**：
+  * **错误消息**：当数据不符合验证要求时，显示清晰且可采取相应操作的错误消息。
+  * **人工审核与更正**：当自动验证失败时，允许用户人工审核并修改数据。
+* **数据清理与标准化**：
+  * **自动更正**：检测到错误时，建议或执行自动更正。
+  * **数据格式化**：统一数据格式，确保不同数据集之间的一致性。
+* **安全与访问权限**：
+  * **输入筛选器**：通过可靠的验证和筛选机制防范恶意输入。
+  * **访问控制**：确保只有授权用户才能访问和修改敏感数据。
+* **数据一致性**：
+  * **交叉验证**：检查相关数据字段之间的一致性（例如，验证开始日期和结束日期是否相符）。
+  * **重复条目**：防止数据库中出现重复条目。
+* **用户指引**：
+  * **错误消息**：当输入内容不符合要求时，提供具体且易于理解的错误消息。
+  * **帮助与提示**：提供帮助文本或工具提示，协助用户正确输入数据。
 
-In summary, the validation screen in DocBits is instrumental in ensuring the quality of extracted data, facilitating early error detection and correction, and enhancing the overall efficiency of data processing workflows.
+总之，DocBits 中的验证界面对于确保提取数据的质量、帮助及早发现并纠正错误，以及提高数据处理工作流的整体效率至关重要。

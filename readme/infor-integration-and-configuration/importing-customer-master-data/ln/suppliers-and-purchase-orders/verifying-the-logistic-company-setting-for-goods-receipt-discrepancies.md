@@ -1,34 +1,33 @@
-# Verifying the Logistic Company Setting for Goods Receipt Discrepancies
+# 核对货物接收差异的物流公司设置
 
-When working with large-scale procurement processes, it’s not uncommon to encounter situations where certain data points don’t align as expected. For example, you might see an error message like:
+在处理大规模采购流程时，遇到某些数据点与预期不符的情况并不少见。例如，你可能会看到类似以下的错误消息：
 
 **“Delivery Note L1234, Order Type: Purchase, Order 100000211, Position 10, Subsequent Number 1, Logistic Company&#x20;**<mark style="color:red;">**XXXX**</mark>**, Goods Receipt WE0000293 and Entry Position 10 not found in direct debit.”**
 
-This type of message often indicates that there’s a mismatch or missing information related to your logistic company configuration. The logistic company is a critical element in enterprise resource planning (ERP) systems, especially in complex supply chains spanning multiple legal or logistic entities.
+此类消息通常表示物流公司配置相关信息不匹配或缺失。物流公司是企业资源规划 (ERP) 系统中的关键要素，在涉及多个法律实体或物流实体的复杂供应链中尤为重要。
 
-**Why Does This Happen?**
+**为什么会发生这种情况？**
 
-In multi-entity environments, each transaction—purchasing, receiving goods, or initiating payments—must be correctly assigned to the right logistic company. The “logistic company” is more than just an identifier; it determines which warehouse, distribution center, or supply network node is responsible for the order and fulfillment tasks. If the company number doesn’t match the expected entity, downstream processes like goods receipt verification or direct debit settlements can fail.
+在多实体环境中，每笔交易——采购、收货或发起付款——都必须正确分配给相应的物流公司。“物流公司”不只是一个标识符；它决定由哪个仓库、配送中心或供应网络节点负责订单及其履约任务。如果公司编号与预期实体不匹配，货物接收验证或直接借记结算等下游流程就可能失败。
 
-## **Key Checks to Perform:**
+## **需要执行的关键检查：**
 
-### 1. Verify the Assigned Logistic Company:
+### 1. 验证分配的物流公司：
 
-Check the master data records to ensure the referenced logistic company (in this case, <mark style="color:red;">XXXX</mark>) is the correct entity for the given order. Is <mark style="color:red;">XXXX</mark> the right company code for handling purchases from this supplier or for this particular product line?
+检查主数据记录，确保所引用的物流公司（此处为 <mark style="color:red">XXXX</mark>）是该订单对应的正确实体。对于从此供应商采购或此特定产品线的采购，<mark style="color:red">XXXX</mark> 是否为正确的公司代码？
 
-### 2. Review Purchase Order (PO) Setup:
+### 2. 检查采购订单 (PO) 设置：
 
-Confirm that the purchase order’s logistic company aligns with your intended receiving location. Sometimes an order is created under one logistic company, but the goods are received under another if the setup isn’t consistent.
+确认采购订单的物流公司与预期收货地点一致。有时，如果设置不一致，订单会在一家物流公司下创建，但货物却由另一家物流公司接收。
 
-### 3. Cross-Reference Goods Receipt and Warehouse Records:
+### 3. 交叉核对货物接收和仓库记录：
 
-Look at the goods receipt (WE0000293) and ensure it was booked in the correct company’s warehouse. If the warehouse belongs to a different logistic company, you may need to correct the configuration or process a transfer to the right entity.
+查看货物接收记录 (WE0000293)，确保它登记在正确公司的仓库中。如果该仓库属于另一家物流公司，你可能需要更正配置，或将货物转移到正确的实体。
 
-### 4. Check Integration and Master Data Consistency:
+### 4. 检查集成和主数据一致性：
 
-Integration points between different modules (Purchasing, Warehousing, Finance) rely on consistent codes. Ensure that the logistic company is uniformly defined across all relevant modules.
+不同模块（采购、仓储、财务）之间的集成点依赖代码的一致性。确保物流公司在所有相关模块中的定义一致。
 
-### 5. Consult Documentation and Support:
+### 5. 查阅文档并联系支持团队：
 
-If internal checks fail to resolve the issue, consult your system documentation or reach out to your ERP support team. They can help verify if the logistic company code is set up correctly or if additional configuration steps are needed.
-
+如果内部检查未能解决问题，请查阅系统文档或联系 ERP 支持团队。他们可以帮助确认物流公司代码是否已正确设置，或是否需要执行其他配置步骤。

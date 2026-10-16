@@ -1,102 +1,102 @@
-# Chat Log
+# 聊天日志
 
-## Tabelle `public.chat_log`
+## 表 `public.chat_log`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `supplier_as_org_id`: internal
-* `message`: internal
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
-* `last_modified_by`: internal
-* `deleted_by`: internal
-* `chat_type`: internal
+* `id`：内部字段
+* `org_id`：组织 ID
+* `supplier_as_org_id`：内部字段
+* `message`：内部字段
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `deleted_on`：带时区的时间戳
+* `last_modified_by`：内部字段
+* `deleted_by`：内部字段
+* `chat_type`：内部字段
 
-### Analyse & Beschreibung
+### 分析与说明
 
-## Table Documentation: `public.chat_log`
+## 表文档：`public.chat_log`
 
-### Introduction
+### 简介
 
-The `public.chat_log` table appears to be designed for storing the history of chat messages within an organization. Based on the column names, it tracks details about each chat message, including its origin, content, and metadata related to its creation and modification. This table is likely central to applications or systems that involve communication logs between organizations and suppliers.
+`public.chat_log` 表似乎用于存储组织内聊天消息的历史记录。根据列名，该表会跟踪每条聊天消息的详细信息，包括消息来源、内容，以及与创建和修改相关的元数据。对于涉及组织与供应商之间通信记录的应用程序或系统而言，此表可能是核心组成部分。
 
-### Columns
+### 列
 
 #### id
 
-* **Meaning**: A unique identifier for each chat message in the log.
-* **Role**: Primary Key.
-* **Typical Contents**: A UUID string that uniquely identifies each entry.
+* **含义**：聊天日志中每条消息的唯一标识符。
+* **作用**：主键。
+* **典型内容**：用于唯一标识每条记录的 UUID 字符串。
 
 #### org\_id
 
-* **Meaning**: The identifier for the organization associated with the chat message.
-* **Role**: Foreign Key.
-* **Typical Contents**: A UUID string representing an organization.
+* **含义**：与聊天消息关联的组织标识符。
+* **作用**：外键。
+* **典型内容**：表示组织的 UUID 字符串。
 
 #### supplier\_as\_org\_id
 
-* **Meaning**: The identifier for the supplier acting as an organization in the chat.
-* **Role**: Foreign Key.
-* **Typical Contents**: A UUID string representing a supplier organization.
+* **含义**：聊天中作为组织的供应商标识符。
+* **作用**：外键。
+* **典型内容**：表示供应商组织的 UUID 字符串。
 
 #### message
 
-* **Meaning**: The content of the chat message.
-* **Role**: Data field.
-* **Typical Contents**: A text string containing the actual message sent in the chat.
+* **含义**：聊天消息的内容。
+* **作用**：数据字段。
+* **典型内容**：包含聊天中实际发送消息的文本字符串。
 
 #### created\_by
 
-* **Meaning**: The identifier of the user who created the chat message.
-* **Role**: Foreign Key (likely refers to a user table).
-* **Typical Contents**: An integer representing a user's ID.
+* **含义**：创建聊天消息的用户标识符。
+* **作用**：外键（可能引用用户表）。
+* **典型内容**：表示用户 ID 的整数。
 
 #### created\_on
 
-* **Meaning**: The timestamp when the chat message was created.
-* **Role**: Technical field.
-* **Typical Contents**: A timestamp with time zone showing the exact time of creation.
+* **含义**：创建聊天消息时的时间戳。
+* **作用**：技术字段。
+* **典型内容**：显示消息准确创建时间的带时区时间戳。
 
 #### last\_modified\_on
 
-* **Meaning**: The timestamp when the chat message was last modified.
-* **Role**: Technical field.
-* **Typical Contents**: A timestamp with time zone indicating when the message was last updated.
+* **含义**：上次修改聊天消息时的时间戳。
+* **作用**：技术字段。
+* **典型内容**：指示消息上次更新时间的带时区时间戳。
 
 #### is\_deleted
 
-* **Meaning**: Indicates whether the chat message has been deleted.
-* **Role**: Technical field.
-* **Typical Contents**: A boolean value (`True` or `False`).
+* **含义**：指示聊天消息是否已删除。
+* **作用**：技术字段。
+* **典型内容**：布尔值（`True` 或 `False`）。
 
 #### deleted\_on
 
-* **Meaning**: The timestamp when the chat message was marked as deleted.
-* **Role**: Technical field.
-* **Typical Contents**: A timestamp with time zone indicating the deletion time. Often set to a default ancient date if not deleted.
+* **含义**：将聊天消息标记为已删除时的时间戳。
+* **作用**：技术字段。
+* **典型内容**：指示删除时间的带时区时间戳。若未删除，通常会设为一个很早的默认日期。
 
 #### last\_modified\_by
 
-* **Meaning**: The identifier of the user who last modified the chat message.
-* **Role**: Foreign Key (likely refers to a user table).
-* **Typical Contents**: A UUID string representing a user ID.
+* **含义**：上次修改聊天消息的用户标识符。
+* **作用**：外键（可能引用用户表）。
+* **典型内容**：表示用户 ID 的 UUID 字符串。
 
 #### deleted\_by
 
-* **Meaning**: The identifier of the user who deleted the chat message.
-* **Role**: Foreign Key (likely refers to a user table).
-* **Typical Contents**: A UUID string representing a user ID.
+* **含义**：删除聊天消息的用户标识符。
+* **作用**：外键（可能引用用户表）。
+* **典型内容**：表示用户 ID 的 UUID 字符串。
 
 #### chat\_type
 
-* **Meaning**: The type or category of the chat message.
-* **Role**: Data field.
-* **Typical Contents**: A string indicating the type of chat, possibly categorizing messages (e.g., 'text', 'image', 'system').
+* **含义**：聊天消息的类型或类别。
+* **作用**：数据字段。
+* **典型内容**：指示聊天类型的字符串，可用于对消息进行分类（例如，'text'、'image'、'system'）。
 
-This documentation provides a detailed overview of the `public.chat_log` table's structure, helping developers understand the purpose of each column and its role in the system.
+本文档详细介绍了 `public.chat_log` 表的结构，帮助开发人员了解各列的用途及其在系统中的作用。

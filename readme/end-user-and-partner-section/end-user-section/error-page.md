@@ -1,86 +1,86 @@
-# Error
+# 错误
 
-## Overview
+## 概述
 
-If an error occurs during your document workflow, the document will enter the **Error** status. When this happens, you can click on the document to:
+如果文档工作流中发生错误，文档将进入 **Error** 状态。此时，您可以点击该文档来：
 
-* View critical details explaining why the error occurred
-* Add notes to the document
-* Print or download the document
+* 查看说明错误原因的关键信息
+* 为文档添加备注
+* 打印或下载文档
 
-This allows you to diagnose issues and take appropriate actions without losing access to the document itself.
+这样，您可以诊断问题并采取适当措施，同时仍能访问文档本身。
 
-This page provides an overview of the tools available to help you review and manage documents in the **Error** state.
+本页概述了可用于查看和管理处于 **Error** 状态的文档的工具。
 
-## Error Details
+## 错误详情
 
-On the right side of the document view, you will find the **Error Message**, which provides a brief description of what went wrong.\
-Below the error message, the **Exception** is displayed, showing where the error occurred in the code. This information is useful for troubleshooting and should be included when reporting the issue to support.
+在文档视图的右侧，您会看到 **Error Message**，其中简要说明了发生的问题。\
+错误消息下方会显示 **Exception**，指出代码中发生错误的位置。这些信息有助于排查问题；向支持团队报告问题时，请一并提供这些信息。
 
 <figure><img src="../../.gitbook/assets/error_2.png" alt=""><figcaption></figcaption></figure>
 
-## Editing Options
+## 编辑选项
 
-On the left side of the page, your document is displayed along with several tools for interaction and review.
+页面左侧显示文档以及可用于交互和查看的工具。
 
 <figure><img src="../../.gitbook/assets/error_3.png" alt=""><figcaption></figcaption></figure>
 
-### **Left Toolbar Options**
+### **左侧工具栏选项**
 
 <figure><img src="../../.gitbook/assets/error_4.png" alt=""><figcaption></figcaption></figure>
 
-The toolbar on the left side of the page provides tools to interact with the document:
+页面左侧的工具栏提供了与文档交互的工具：
 
-* **Toggle Thumbnail View**\
-  Show or hide the sidebar that displays all document pages as thumbnails for easy navigation.
-* **View the Document ID**\
-  Helpful when reporting an issue—include this ID in your support request.
-* **Track Current Page and Zoom Level**\
-  See which page you're viewing and at what zoom percentage.
-* **Fit to Height or Width**\
-  Adjust the document display to fit either the height or width of the viewer.
-* **Rotate the Document**\
-  Rotate the document for easier viewing of scanned or sideways content.
-* **Add Notations**\
-  Annotate the document with comments or highlights.
-* **Undo or Redo Actions**\
-  Quickly reverse or reapply recent actions.
+* **切换缩略图视图**\
+  显示或隐藏侧边栏，其中以缩略图形式列出文档的所有页面，方便导航。
+* **查看文档 ID**\
+  报告问题时很有帮助，请在支持请求中提供此 ID。
+* **跟踪当前页码和缩放级别**\
+  查看当前正在查看的页面及其缩放百分比。
+* **适应高度或宽度**\
+  调整文档显示效果，使其适应查看器的高度或宽度。
+* **旋转文档**\
+  旋转文档，方便查看扫描内容或横置内容。
+* **添加批注**\
+  使用评论或高亮标注文档。
+* **撤销或重做操作**\
+  快速撤销或重新执行最近的操作。
 
 ***
 
-### **Right Toolbar Options**
+### **右侧工具栏选项**
 
 <figure><img src="../../.gitbook/assets/error_5.png" alt=""><figcaption></figcaption></figure>
 
-The toolbar on the right side of the page offers additional functionality:
+页面右侧的工具栏提供了其他功能：
 
-* **Download the Document**\
-  Save the document to your device, with or without annotations.
-* **Print the Document**\
-  Send the document to a printer, including visible annotations.
-* **Switch Viewing Modes**\
-  Change between different display styles or reading modes.
-* **View Document Properties**\
-  Access metadata such as file name, type, size, and creation date.
+* **下载文档**\
+  将文档保存到设备，可选择是否包含批注。
+* **打印文档**\
+  将文档发送到打印机，包括当前显示的批注。
+* **切换查看模式**\
+  在不同的显示样式或阅读模式之间切换。
+* **查看文档属性**\
+  查看文件名、类型、大小和创建日期等元数据。
 
-## How to Proceed Further
+## 后续处理方式
 
-If a document enters the **Error** state, you have several options to continue:
+如果文档进入 **Error** 状态，您可以通过以下方式继续处理：
 
-**1. Restart the Document**
+**1. 重新启动文档**
 
-In many cases, restarting the document can resolve the issue and allow processing to resume.
+在许多情况下，重新启动文档可以解决问题并恢复处理。
 
-*   To restart the document:
+*   重新启动文档：
 
-    1. Click the three dots in the **Actions** column.
-    2. Select **Restart** from the menu.
+    1. 点击 **Actions** 列中的三个点。
+    2. 从菜单中选择 **Restart**。
 
     <figure><img src="../../.gitbook/assets/error_1.png" alt=""><figcaption></figcaption></figure>
 
-**2. Contact Support**
+**2. 联系支持团队**
 
-If the error persists after restarting, you can contact our support team for further assistance.\
-Please provide as much information as possible to help our team resolve the issue efficiently (e.g., document ID, error message, actions taken).
+如果重新启动后错误仍然存在，您可以联系支持团队以获取进一步帮助。\
+请尽可能提供详细信息，以便团队高效解决问题（例如文档 ID、错误消息和已采取的操作）。
 
-Instructions for submitting a support ticket can be found [here](ressources-and-support/user-support.md).
+提交支持工单的说明请参阅[此处](ressources-and-support/user-support.md)。

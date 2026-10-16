@@ -1,74 +1,74 @@
-# ZUGFeRD Configuration
+# ZUGFeRD 配置
 
 {% embed url="https://youtu.be/AxrHNEmmXtg" %}
-DocBits E-Invoice Tutorial: Process XRechnung / ZUGFeRD (Factur-X), Validate Data & Automate Workflows
+DocBits 电子发票教程：处理 XRechnung / ZUGFeRD (Factur-X)、验证数据并自动化工作流
 {% endembed %}
 
-## **Supported Versions of ZUGFeRD**
+## **ZUGFeRD 支持的版本**
 
-DocBits supports all major versions of ZUGFeRD, including:
+DocBits 支持所有主要的 ZUGFeRD 版本，包括：
 
 * **1.0**
 * **2.0**
-* **2.1** (compliant with FACTUR-X 1.0.05)
+* **2.1**（符合 FACTUR-X 1.0.05）
 * **2.2**
-* **2.3** (compliant with FACTUR-X 1.07.2)
+* **2.3**（符合 FACTUR-X 1.07.2）
 * **2.3.2**
 
-#### Standard Activation and Modification
+#### 标准的启用与修改
 
-The ZUGFeRD standard is always active by default, but you can make modifications to it if needed.
+ZUGFeRD 标准默认始终处于启用状态，但您可以根据需要进行修改。
 
-### **Steps to Modify ZUGFeRD Settings:**
+### **修改 ZUGFeRD 设置的步骤：**
 
-1. Navigate to **Settings → Global Settings → Document Types → Invoice**.
-2. Click on **E-Doc**.\\
-3. A list of all available e-docs will appear.
-4. Locate the **ZUGFeRD** version you want to modify.\\
+1. 前往 **Settings → Global Settings → Document Types → Invoice**。
+2. 点击 **E-Doc**。\\
+3. 系统将显示所有可用电子文档的列表。
+4. 找到要修改的 **ZUGFeRD** 版本。\\
 
-## **Transformation and XML Path Configuration:**
+## **转换与 XML 路径配置：**
 
-In the **transformation settings**, you can define the path to locate specific information within the XML file and save it in a new structure, making it easier to access the data.\
-<mark style="color:red;">**Note**</mark>: If you use this functionality, you must use the newly created XML paths, not the original XML paths, in the **Preview** and **Extraction Path**.
+在**转换设置**中，您可以定义 XML 文件中特定信息的位置，并将其保存为新的结构，以便更轻松地访问数据。\
+<mark style="color:red;">**注意**</mark>：如果使用此功能，请在 **Preview** 和 **Extraction Path** 中使用新创建的 XML 路径，而不是原始 XML 路径。
 
-### **Steps to Modify Transformation File:**
+### **修改转换文件的步骤：**
 
-1. Open the **Transformation**.
-2. Create a new draft by clicking the **pencil icon**.
-3. Select the newly created draft.
-4. Either create a new field or modify an existing one.
-5. Set the desired path for data extraction.
-6. Click **Save**.
+1. 打开 **Transformation**。
+2. 点击**铅笔图标**创建新草稿。
+3. 选择新创建的草稿。
+4. 创建新字段或修改现有字段。
+5. 设置所需的数据提取路径。
+6. 点击 **Save**。
 
-### Important Notes:
+### 重要说明：
 
-* The **preview file** is used only for **FACTUR-X** and not for **ZUGFeRD**. ZUGFeRD will use the original **PDF**.
+* **预览文件**仅用于 **FACTUR-X**，不用于 **ZUGFeRD**。ZUGFeRD 将使用原始 **PDF**。
 
-## Preview PDF Configuration
+## 预览 PDF 配置
 
-The **Preview PDF Configuration** is used to generate a user-readable version of the document. You can customize it with HTML to match your needs.
+**预览 PDF 配置**用于生成便于用户阅读的文档版本。您可以使用 HTML 对其进行自定义，以满足您的需求。
 
-### **Steps to Modify Preview File:**
+### **修改预览文件的步骤：**
 
-1. Open the **Preview**.
-2. Create a new draft by clicking the **pencil icon**.
-3. Select the newly created draft.
-4. Either create a new field or modify an existing one.
-5. Set the desired path for data extraction.
-6. Click **Save**.
+1. 打开 **Preview**。
+2. 点击**铅笔图标**创建新草稿。
+3. 选择新创建的草稿。
+4. 创建新字段或修改现有字段。
+5. 设置所需的数据提取路径。
+6. 点击 **Save**。
 
-## Extraction Paths Configuration
+## 提取路径配置
 
-The **Extraction Paths Configuration** is used to extract data and populate fields in the **validation screen**, such as the invoice table or fields configured in the invoice layout.
+**提取路径配置**用于提取数据并填充**验证界面**中的字段，例如发票表格或发票布局中配置的字段。
 
-### **Steps to Modify** **Extraction Paths**:
+### **修改** **提取路径**的步骤：
 
-1. Open the **Extraction Paths**.
-2. Create a new draft by clicking the **pencil icon**.
-3. Select the newly created draft.
-4. Create a new field or modify an existing one.
-5. The left side represents the **DocBits field ID**, which can be found in the **Settings → Global Settings → Document Types → Invoice → Fields**.\\
-6. The right side represents the **path to the field** created in the Transformation.
-7. Click **Save**.
+1. 打开 **Extraction Paths**。
+2. 点击**铅笔图标**创建新草稿。
+3. 选择新创建的草稿。
+4. 创建新字段或修改现有字段。
+5. 左侧表示 **DocBits 字段 ID**，可在 **Settings → Global Settings → Document Types → Invoice → Fields** 中找到。\\
+6. 右侧表示在 Transformation 中创建的**字段路径**。
+7. 点击 **Save**。
 
-By following these steps, you can ensure accurate data extraction and validation for ZUGFeRD invoices.
+按照这些步骤，您可以确保准确提取和验证 ZUGFeRD 发票数据。

@@ -1,35 +1,35 @@
-# Case 8b, 9b: Quantity Outside Tolerance (Approved), Unit Price Outside Tolerance (Approved)
+# 案例 8b、9b：数量超出容差（已审批），单价超出容差（已审批）
 
-## Scenario:
+## 场景：
 
-Both the quantity and unit price are outside the tolerance range but have been approved.
+数量和单价均超出容差范围，但都已获审批。
 
-## Action:
+## 操作：
 
-The system processes the transaction using the invoice values for both quantity and unit price, applying any necessary adjustments or line charges.
+系统使用发票中的数量和单价处理交易，并应用任何必要的调整或行项目费用。
 
-## Example:
+## 示例：
 
-* **Purchase Order (PO):**
-  * Quantity: 200 units
-  * Unit Price: $25.00 per unit
-  * Total Amount: $5,000.00
-* **Invoice Received:**
-  * Quantity: 220 units (outside tolerance of 10%, approved)
-  * Unit Price: $27.00 per unit (outside tolerance of 8%, approved)
-  * Total Amount: $5,940.00
-* **Tolerance Levels:**
-  * Quantity Tolerance: ±5%
-  * Unit Price Tolerance: ±2%
+* **采购订单 (PO)：**
+  * 数量：200 件
+  * 单价：每件 $25.00
+  * 总金额：$5,000.00
+* **收到的发票：**
+  * 数量：220 件（超出 10% 的容差，已审批）
+  * 单价：每件 $27.00（超出 8% 的容差，已审批）
+  * 总金额：$5,940.00
+* **容差级别：**
+  * 数量容差：±5%
+  * 单价容差：±2%
 
-Since both the quantity (220 units) and unit price ($27.00) are outside the acceptable tolerance limits but have been approved, the system will:
+由于数量（220 件）和单价（$27.00）均超出可接受的容差范围，但已获审批，系统将：
 
-1. **Accept the Approved Quantity:** The system accepts the invoiced quantity of 220 units as it has been approved despite being outside the tolerance range.
-2. **Accept the Approved Unit Price:** The system accepts the invoiced unit price of $27.00 per unit as it has been approved despite being outside the tolerance range.
-3. **Calculate the Total Amount:** The system calculates the total amount based on the approved invoice values:
-   * **Total Amount = Quantity × Unit Price**
-   * **Total Amount = 220 units × $27.00 per unit = $5,940.00**
-4. **Apply Necessary Adjustments or Line Charges:** If applicable, the system may apply any additional line charges or adjustments based on the organization's policies for handling approved variances.
-5. **Process the Invoice:** The system processes the invoice using the approved values for both quantity and unit price, finalizing the transaction at the total amount of $5,940.00.
+1. **接受已审批的数量：** 尽管发票数量超出容差范围，系统仍会接受 220 件这一数量，因为该数量已获审批。
+2. **接受已审批的单价：** 尽管发票单价超出容差范围，系统仍会接受每件 $27.00 的单价，因为该单价已获审批。
+3. **计算总金额：** 系统根据已审批的发票值计算总金额：
+   * **总金额 = 数量 × 单价**
+   * **总金额 = 220 件 × 每件 $27.00 = $5,940.00**
+4. **应用必要的调整或行项目费用：** 如适用，系统可能会根据组织处理已审批差异的政策，应用任何额外的行项目费用或调整。
+5. **处理发票：** 系统使用已审批的数量和单价处理发票，并以 $5,940.00 的总金额完成交易。
 
-This approach ensures that the transaction is processed according to the approved variances, allowing flexibility while maintaining accurate financial records.
+这种方式确保交易按照已审批的差异进行处理，在保持财务记录准确的同时提供灵活性。

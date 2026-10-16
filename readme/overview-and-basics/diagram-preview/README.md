@@ -3,11 +3,11 @@ hidden: true
 noIndex: true
 ---
 
-# Diagram Preview
+# 图表预览
 
-Preview pages for diagrams generated with Archify, embedded as SVG.
+使用 Archify 生成并以 SVG 嵌入的图表预览页面。
 
-* [Processing Pipeline](processing-pipeline.md)
-* [Document Status Lifecycle](document-status-lifecycle.md)
-* [Infor ERP Data Flow](infor-erp-data-flow.md)
-* [Platform Architecture](platform-architecture.md)
+* [处理流程](processing-pipeline.md)
+* [文档状态生命周期](document-status-lifecycle.md)
+* [Infor ERP 数据流](infor-erp-data-flow.md)
+* [平台架构](platform-architecture.md)

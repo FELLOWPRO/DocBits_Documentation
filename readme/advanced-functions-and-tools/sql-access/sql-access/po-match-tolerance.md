@@ -1,109 +1,109 @@
-# PO match tolerance
+# 采购订单匹配容差
 
-## Table `public.po_match_tolerance`
+## 表 `public.po_match_tolerance`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `item_number`: internal
-* `supplier_item_number`: internal
-* `description`: internal
-* `unit_price_tolerance`: double precision
-* `quantity_tolerance`: double precision
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `unit_price_tolerance_type`: internal
-* `quantity_tolerance_type`: internal
+* `id`：内部字段
+* `org_id`：组织 ID
+* `item_number`：内部字段
+* `supplier_item_number`：内部字段
+* `description`：内部字段
+* `unit_price_tolerance`：双精度浮点数
+* `quantity_tolerance`：双精度浮点数
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `unit_price_tolerance_type`：内部字段
+* `quantity_tolerance_type`：内部字段
 
-### Analyse & Beschreibung
+### 分析与说明
 
-## Technical Documentation for `public.po_match_tolerance` Table
+## `public.po_match_tolerance` 表技术文档
 
-### Introduction
+### 简介
 
-The `public.po_match_tolerance` table is designed to manage and store tolerance levels associated with purchase order (PO) matching processes. This typically involves the allowable discrepancies in unit prices and quantities between ordered and received goods. Each entry in the table represents tolerance settings for specific items, potentially helping organizations ensure consistency and accuracy in their procurement processes.
+`public.po_match_tolerance` 表用于管理和存储与采购订单（PO）匹配流程相关的容差级别。这通常涉及订购商品与已收商品在单价和数量方面允许存在的差异。表中的每条记录都代表特定行项目的容差设置，可能有助于组织确保采购流程的一致性和准确性。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: A unique identifier for each entry in the table.
-* **Role**: Primary key.
-* **Typical Contents**: A UUID string that uniquely identifies each tolerance setting record.
+* **含义**：表中每条记录的唯一标识符。
+* **作用**：主键。
+* **典型内容**：唯一标识每条容差设置记录的 UUID 字符串。
 
 #### org\_id
 
-* **Meaning**: Identifier for the organization associated with the tolerance settings.
-* **Role**: Foreign key.
-* **Typical Contents**: A UUID string linking to the organization within the system.
+* **含义**：与容差设置关联的组织标识符。
+* **作用**：外键。
+* **典型内容**：用于关联系统中组织的 UUID 字符串。
 
 #### item\_number
 
-* **Meaning**: The specific item number for which tolerance settings are defined.
-* **Role**: Business identifier.
-* **Typical Contents**: A string representing the code or number of the item in the organization's inventory.
+* **含义**：定义了容差设置的特定行项目编号。
+* **作用**：业务标识符。
+* **典型内容**：表示组织库存中行项目代码或编号的字符串。
 
 #### supplier\_item\_number
 
-* **Meaning**: The item number as provided by the supplier.
-* **Role**: Business identifier.
-* **Typical Contents**: A string which may be `None` if not provided, representing the supplier's code or number for the item.
+* **含义**：供应商提供的行项目编号。
+* **作用**：业务标识符。
+* **典型内容**：表示供应商为该行项目提供的代码或编号的字符串；如果未提供，其值可能为 `None`。
 
 #### description
 
-* **Meaning**: A textual description of the item.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string providing details about the item, which may be `None`.
+* **含义**：行项目的文本说明。
+* **作用**：描述字段。
+* **典型内容**：提供行项目详细信息的字符串，其值可能为 `None`。
 
 #### unit\_price\_tolerance
 
-* **Meaning**: The allowable variance in unit price for the item.
-* **Role**: Business rule.
-* **Typical Contents**: A numeric value indicating the percentage or absolute value tolerance in unit pricing.
+* **含义**：该行项目允许的单价偏差。
+* **作用**：业务规则。
+* **典型内容**：表示单价容差百分比或绝对值的数值。
 
 #### quantity\_tolerance
 
-* **Meaning**: The allowable variance in quantity for the item.
-* **Role**: Business rule.
-* **Typical Contents**: A numeric value indicating the percentage or absolute value tolerance in quantity.
+* **含义**：该行项目允许的数量偏差。
+* **作用**：业务规则。
+* **典型内容**：表示数量容差百分比或绝对值的数值。
 
 #### created\_by
 
-* **Meaning**: Identifier for the user who created the entry.
-* **Role**: Audit/logging field.
-* **Typical Contents**: An integer typically referencing a user ID in the system.
+* **含义**：创建此记录的用户标识符。
+* **作用**：审计/日志字段。
+* **典型内容**：通常引用系统中用户 ID 的整数。
 
 #### created\_on
 
-* **Meaning**: The timestamp when the entry was created.
-* **Role**: Audit/logging field.
-* **Typical Contents**: A datetime value with timezone indicating the creation date and time.
+* **含义**：创建此记录的时间戳。
+* **作用**：审计/日志字段。
+* **典型内容**：包含时区的日期时间值，表示创建日期和时间。
 
 #### last\_modified\_on
 
-* **Meaning**: The timestamp of the last modification to the entry.
-* **Role**: Audit/logging field.
-* **Typical Contents**: A datetime value with timezone indicating when the record was last updated, which may be `None` if not modified.
+* **含义**：最近一次修改此记录的时间戳。
+* **作用**：审计/日志字段。
+* **典型内容**：包含时区的日期时间值，表示记录最近更新的时间；如果记录从未修改，其值可能为 `None`。
 
 #### is\_deleted
 
-* **Meaning**: Indicates whether the entry is logically deleted.
-* **Role**: Technical/soft delete indicator.
-* **Typical Contents**: A boolean value where `False` means active and `True` means logically deleted.
+* **含义**：指示此记录是否已被逻辑删除。
+* **作用**：技术性/软删除标记。
+* **典型内容**：布尔值；`False` 表示记录处于活动状态，`True` 表示记录已被逻辑删除。
 
 #### unit\_price\_tolerance\_type
 
-* **Meaning**: Defines the type of unit price tolerance (e.g., percentage or absolute value).
-* **Role**: Business rule.
-* **Typical Contents**: A string, often 'value' indicating the type of tolerance measure.
+* **含义**：定义单价容差的类型（例如百分比或绝对值）。
+* **作用**：业务规则。
+* **典型内容**：字符串，通常为 'value'，表示容差的计量类型。
 
 #### quantity\_tolerance\_type
 
-* **Meaning**: Defines the type of quantity tolerance (e.g., percentage or absolute value).
-* **Role**: Business rule.
-* **Typical Contents**: A string, often 'value' indicating the type of tolerance measure.
+* **含义**：定义数量容差的类型（例如百分比或绝对值）。
+* **作用**：业务规则。
+* **典型内容**：字符串，通常为 'value'，表示容差的计量类型。
 
-This documentation provides a detailed overview of each field within the `public.po_match_tolerance` table, offering insights into their potential contents and roles in the context of purchase order management.
+本文档详细介绍了 `public.po_match_tolerance` 表中的每个字段，说明了它们在采购订单管理中的潜在内容和作用。

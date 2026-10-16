@@ -5,35 +5,35 @@ noIndex: true
 
 # FTP
 
-If you would like to integrate your SFTP with DocBits in order to import documents.
+如果您希望将 SFTP 与 DocBits 集成以导入文档。
 
-Requirements
+要求
 
-* Correctly configured, Linux compatible SFTP Server
-* SFTP Hostname, Username and Password
-* Dedicated Import folder
+* 配置正确且兼容 Linux 的 SFTP 服务器
+* SFTP 主机名、用户名和密码
+* 专用导入文件夹
 
-**Import Configuration**
+**导入配置**
 
-From the Dashboard, open Settings and navigate to Import. Under FTP Import, select to add a new configuration.
+在仪表板中，打开 Settings（设置）并导航至 Import（导入）。在 FTP Import（FTP 导入）下，选择添加新配置。
 
-<figure><img src="../../../.gitbook/assets/ftp1.png" alt="Add New FTP Configuration"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ftp1.png" alt="添加新的 FTP 配置"><figcaption></figcaption></figure>
 
-Enter SFTP credentials in the given spaces and select save (The API Key field will automatically be filled with the API Key of the environment you are working on).
+在相应字段中输入 SFTP 凭据，然后选择保存（API Key（API 密钥）字段会自动填入您当前使用环境的 API Key）。
 
-<figure><img src="../../../.gitbook/assets/ftp_import_configuration_form.png" alt="FTP Import Configuration Form"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ftp_import_configuration_form.png" alt="FTP 导入配置表单"><figcaption></figcaption></figure>
 
-Once you have entered all the necessary details of your SFTP, click SAVE.
+输入 SFTP 的所有必要信息后，点击 SAVE（保存）。
 
-### **FTP File Archiving**
+### **FTP 文件归档**
 
-1. **Enable File Archiving**
-   * Locate the "File Archiving" option.
-   * Toggle the switch to the "On" position to enable archiving.
-2. **Select the Archive Directory**
-   * Once the "File Archiving" switch is enabled, a field will appear allowing you to specify the directory path for archived files.
-   * Select the desired folder path on the SFTP/FTP server where the archived files should be stored.
-3. **Save Changes**
-   * Click the **Save** button to apply the changes.
+1. **启用文件归档**
+   * 找到“File Archiving”（文件归档）选项。
+   * 将开关切换到“On”（开启）位置以启用归档。
+2. **选择归档目录**
+   * 启用“File Archiving”（文件归档）开关后，会显示一个字段，供您指定归档文件的目录路径。
+   * 在 SFTP/FTP 服务器上选择用于存储归档文件的目标文件夹路径。
+3. **保存更改**
+   * 点击 **Save（保存）** 按钮以应用更改。
 
-<figure><img src="../../../.gitbook/assets/ftp_3.png" alt="FTP File Archiving Settings"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ftp_3.png" alt="FTP 文件归档设置"><figcaption></figcaption></figure>

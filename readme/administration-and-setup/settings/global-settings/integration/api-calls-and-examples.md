@@ -1,19 +1,19 @@
-# API Calls and Examples
+# API 调用与示例
 
-An API request lets another program read or update information in DocBits. Start with a read-only request so you can check the connection without changing documents.
+API 请求允许其他程序读取或更新 DocBits 中的信息。请先发送只读请求，以便在不更改文档的情况下检查连接。
 
-## Before you send a request
+## 发送请求前
 
-1. Ask an organization administrator for access and [create an API key](api-key-management.md) for the integration. Keep the key in a secret store; do not put it in a screenshot, document, or source file.
-2. Open the [current Sandbox API reference](https://sandbox.api.docbits.com/docs). It lists the available operations, required values, and example responses for that environment. Use the reference for your own environment when you leave the Sandbox.
+1. 请组织管理员授予访问权限，并为该集成[创建 API 密钥](api-key-management.md)。将密钥保存在密钥存储中；不要将其放入屏幕截图、文档或源文件。
+2. 打开[当前 Sandbox API 参考](https://sandbox.api.docbits.com/docs)。其中列出了此环境中可用的操作、必填值和响应示例。离开 Sandbox 后，请使用适用于你所在环境的 API 参考。
 
-<figure><img src="../../../../.gitbook/assets/api-calls-key-context-en.png" alt="English DocBits API Key section with Create API Key button; no key value is visible"><figcaption><p>Find API keys under Settings → Integration &amp; SSO. The image contains no key value.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/api-calls-key-context-en.png" alt="英文版 DocBits API Key 区域，包含 Create API Key 按钮；未显示密钥值"><figcaption><p>在“设置” → “Integration &amp; SSO”下查找 API 密钥。图中未包含密钥值。</p></figcaption></figure>
 
-## Example: read document types
+## 示例：读取文档类型
 
-The Sandbox reference lists **GET `/document_type/get_document_types`**. It returns the document types available to your organization. `GET` reads information; it does not create or change a document.
+Sandbox 参考中列出了 **GET `/document_type/get_document_types`**。它会返回组织可用的文档类型。`GET` 用于读取信息；不会创建或更改文档。
 
-Set your API key as a local environment variable, then send the request:
+将 API 密钥设为本地环境变量，然后发送请求：
 
 ```sh
 curl --fail-with-body \
@@ -21,10 +21,10 @@ curl --fail-with-body \
   "https://sandbox.api.docbits.com/sandbox-api/document_type/get_document_types"
 ```
 
-A successful response contains `success: true` and a `data` list of document types. A `401` response means the request was not authenticated; check the key and the environment before retrying. The URL above is for the Sandbox only.
+成功的响应包含 `success: true` 和一个由文档类型组成的 `data` 列表。`401` 响应表示请求未通过身份验证；请检查密钥和环境后再重试。上面的 URL 仅适用于 Sandbox。
 
-## Find the next operation
+## 查找下一个操作
 
-In the API reference, search for what you want to do, read that operation's description and required fields, and check whether it uses `GET`, `POST`, or another method. Use the reference's example response to confirm the result. For a Postman walkthrough, see [Postman for DocBits](../../../../advanced-functions-and-tools/postman-for-docbits/README.md); verify its older example URLs against the current API reference before sending a request.
+在 API 参考中搜索你要执行的操作，阅读该操作的说明和必填字段，并确认它使用的是 `GET`、`POST` 还是其他方法。使用参考中的响应示例确认结果。如需查看 Postman 操作指南，请参阅 [DocBits 的 Postman](../../../../advanced-functions-and-tools/postman-for-docbits/README.md)；发送请求前，请对照当前 API 参考核实其中较早的示例 URL。
 
-The four older images on this page described generic OCR, NLP, file conversion, and document-management APIs without showing verified DocBits endpoints. They have been removed; only the documented DocBits operation above is presented as an executable example.
+本页之前的四张图片介绍了通用 OCR、NLP、文件转换和文档管理 API，但没有展示经过验证的 DocBits 端点。这些图片已移除；这里只将上述有文档说明的 DocBits 操作作为可执行示例。

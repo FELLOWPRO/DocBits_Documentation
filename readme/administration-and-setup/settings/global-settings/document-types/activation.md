@@ -1,13 +1,13 @@
-# Activate or deactivate a document type
+# 激活或停用文档类型
 
-Administrators can choose which document types are available to their organization. You can change this on the **Document Types** page without deleting the type or its configuration.
+管理员可以选择组织可使用哪些文档类型。您可以在 **Document Types** 页面更改此设置，而无需删除该类型或其配置。
 
-1. Open **Settings → Document Types**.
-2. Find the document type, for example **Invoice**, under **Default Document Types** or **Custom Document Types**.
-3. Use the switch labelled **Activate** on that type's card. A colored switch means the type is active; a gray switch means it is inactive. Wait for the confirmation message before leaving the page. There is no separate Save button for this switch.
+1. 打开 **Settings → Document Types**。
+2. 在 **Default Document Types** 或 **Custom Document Types** 下找到该文档类型，例如 **Invoice**。
+3. 使用该类型卡片上的 **Activate** 开关。彩色开关表示该类型已激活；灰色开关表示该类型未激活。离开页面前，请等待确认消息。此开关没有单独的 Save 按钮。
 
-<figure><img src="../../../../.gitbook/assets/document-type-activation-en-2026.png" alt="English Document Types settings showing the Activate and Extraction switches on the Invoice, Delivery Note, and Order Confirmation cards"><figcaption><p>Each document type has its own Activate switch on the right side of its card.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/document-type-activation-en-2026.png" alt="英文 Document Types 设置页面，显示 Invoice、Delivery Note 和 Order Confirmation 卡片上的 Activate 和 Extraction 开关"><figcaption><p>每种文档类型的卡片右侧都有自己的 Activate 开关。</p></figcaption></figure>
 
-The **Extraction** switch beside **Activate** is a different setting. It selects the extraction mode (Flex or Fix); it does not activate or deactivate the document type. The gear icon opens more settings for that type. The links below the type name open its layouts, fields, tables, scripts, and other available configuration areas.
+**Activate** 旁边的 **Extraction** 开关是另一项设置，用于选择提取模式（Flex 或 Fix）；它不会激活或停用文档类型。齿轮图标可打开该类型的更多设置。类型名称下方的链接可打开其布局、字段、表格、脚本和其他可用配置区域。
 
-DocBits provides the default document types, which cannot be deleted. You can also create and manage custom types. See [Adding and Editing Document Types](adding-editing-document-types.md) for the next setup steps and [Table Columns](table-columns/README.md) to configure extracted line items.
+DocBits 提供无法删除的默认文档类型。您也可以创建和管理自定义类型。有关后续设置步骤，请参阅[添加和编辑文档类型](adding-editing-document-types.md)；有关配置提取的行项目，请参阅[表格列](table-columns/README.md)。

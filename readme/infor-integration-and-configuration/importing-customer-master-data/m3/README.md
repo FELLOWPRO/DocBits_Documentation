@@ -1,3 +1,3 @@
 # M3
 
-A guide to importing master data from INFOR M3.
+从 INFOR M3 导入主数据的指南。

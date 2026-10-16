@@ -1,47 +1,45 @@
-# PO Table in Layout Builder
+# 布局构建器中的采购订单表
 
-This setting controls the accessibility of the **Purchase Order (PO) table** in the **Layout Builder** and the **Validation Screen**.
+此设置用于控制**采购订单（PO）表**在**布局构建器**和**验证屏幕**中的可用性。
 
-### **How to Enable the PO Table**
+### **如何启用采购订单表**
 
-To enable this feature:
+启用此功能：
 
-1. Go to **Settings → General Settings → Document Types → More Settings → Purchase Order Section → PO Table in Layout Builder**.
-2. Enable the setting to make the **Purchase Order table** visible.
+1. 前往 **Settings → General Settings → Document Types → More Settings → Purchase Order Section → PO Table in Layout Builder**。
+2. 启用该设置，使**采购订单表**可见。
 
 <figure><img src="../../../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250210131953.jpg" alt=""><figcaption></figcaption></figure>
 
-### **Functionality:**
+### **功能：**
 
-* **When enabled**:
-  * The **Purchase Order table** appears inside the **Table Section** in the **Layout Builder**.
-  *   No notification about the module being disabled will be shown.\
+* **启用时**：
+  * **采购订单表**会显示在**布局构建器**的**表格部分**中。
+  *   不会显示有关模块已禁用的通知。\\
 
+      <figure><img src="../../../../../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+* **禁用时**：
+  * 会显示提示，说明该模块已禁用。
+  *   **PO 表**不会显示在**验证屏幕**中。\\
 
-      <figure><img src="../../../../../../.gitbook/assets/image (404).png" alt=""><figcaption></figcaption></figure>
-* **When disabled**:
-  * A hint will indicate that the module is disabled.
-  *   The **PO table** will not be visible in the **Validation Screen**.\
+      <figure><img src="../../../../../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
+**如何访问布局构建器**
 
-      <figure><img src="../../../../../../.gitbook/assets/image (403).png" alt=""><figcaption></figcaption></figure>
-
-**How to Access the Layout Builder**
-
-1. Navigate to **Settings → General Settings → Document Types → Edit Layout**.
+1. 前往 **Settings → General Settings → Document Types → Edit Layout**。
 
 <figure><img src="../../../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250210135142.jpg" alt=""><figcaption></figcaption></figure>
 
-**Adding the PO Table Back to the Layout**
+**将采购订单表添加回布局**
 
-If the **PO table** is missing or has been removed, follow these steps:
+如果**PO 表**缺失或已被移除，请按以下步骤操作：
 
-1. Open the **Layout Builder**.
-2. Under **Form Elements**, select **Extracted Tables**.
-3. Add the **PO table** to your layout.
+1. 打开**布局构建器**。
+2. 在**Form Elements**下，选择**Extracted Tables**。
+3. 将**PO 表**添加到布局中。
 
 <div align="left"><figure><img src="../../../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250210135437.jpg" alt=""><figcaption></figcaption></figure></div>
 
-Once added and enabled, the **PO table** will be visible in the **Layout Builder** and the **Validation Screen** when a **purchase order** is available for an invoice.
+添加并启用后，当发票有可用的**采购订单**时，**PO 表**将在**布局构建器**和**验证屏幕**中显示。
 
 <div align="center"><figure><img src="../../../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250210133655.jpg" alt=""><figcaption></figcaption></figure></div>

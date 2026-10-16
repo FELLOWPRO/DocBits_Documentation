@@ -1,16 +1,16 @@
-# Calculating Total Charges Script for Docbits
+# Docbits 总费用计算脚本
 
-The "Calculating Total Charges" script automates the process of summing up various charges and additional amounts within invoice documents. This guide walks you through the script setup, logic, and application to ensure accurate total charge calculations across your documents.
+“计算总费用”脚本可自动汇总发票文档中的各种费用和额外金额。本指南将介绍脚本的设置、逻辑和应用，帮助你准确计算文档中的总费用。
 
-### Purpose
+### 用途
 
-This script aims to provide a dynamic way to calculate the total charges on an invoice by adding up different charge types, such as base charges, freight (Fracht), and packaging (Verpackung). It then updates the invoice's total charges field with the calculated sum, ensuring accurate billing information.
+此脚本旨在动态计算发票总费用，方法是累加不同类型的费用，例如基本费用、运费（Fracht）和包装费（Verpackung）。随后，脚本会将计算结果更新到发票的总费用字段中，确保账单信息准确无误。
 
-### Script Overview
+### 脚本概览
 
-The script retrieves values from specified fields, converts them to floats, sums them up, and then updates the `total_charges` field with the result. If the `total_charges` field doesn't exist, the script creates this field and sets its value accordingly.
+脚本会从指定字段中获取值，将其转换为浮点数并求和，然后使用结果更新 `total_charges` 字段。如果 `total_charges` 字段不存在，脚本会创建该字段并设置相应的值。
 
-#### Code Snippet
+#### 代码片段
 
 ```python
 total_charges = get_field_value(fields_dict, 'total_charges', None)

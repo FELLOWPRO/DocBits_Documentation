@@ -1,38 +1,38 @@
-# Activity Logging
+# 活动日志
 
-<figure><img src="../../../.gitbook/assets/activity_logging.png" alt="Activity Logging"><figcaption><p>Activity Logging Page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/activity_logging.png" alt="活动日志"><figcaption><p>活动日志页面</p></figcaption></figure>
 
-Activity Logging provides a real-time view of system events across all DocBits services. Use it to monitor processing activity, troubleshoot errors, and audit system behavior.
+活动日志可实时查看所有 DocBits 服务中的系统事件。您可以使用它监控处理活动、排查错误并审计系统行为。
 
-## Analytics Banner
+## 分析横幅
 
-At the top of the page, a banner links to the **Analytics Dashboard** for charts, metrics, and real-time monitoring.
+页面顶部的横幅链接到 **Analytics Dashboard（分析仪表板）**，可查看图表、指标并进行实时监控。
 
-## Filters
+## 筛选器
 
-| Filter | Description |
+| 筛选器 | 描述 |
 |--------|-------------|
-| **Time Range** | Select a time window (e.g., Today, Last 7 Days, Last 30 Days). |
-| **Severity** | Toggle severity levels to include or exclude: **Debug**, **Info**, **Warning**, **Error**. Each chip shows the current count. |
-| **Service** | Filter logs by service (e.g., api, auth, api-service). |
-| **Search logs** | Free-text search across log messages. |
+| **时间范围** | 选择时间段（例如：今天、最近 7 天、最近 30 天）。 |
+| **严重级别** | 切换要包含或排除的严重级别：**Debug（调试）**、**Info（信息）**、**Warning（警告）**、**Error（错误）**。每个标签会显示当前计数。 |
+| **服务** | 按服务筛选日志（例如：api、auth、api-service）。 |
+| **搜索日志** | 在日志消息中进行自由文本搜索。 |
 
-## Log Table
+## 日志表格
 
-| Column | Description |
+| 列 | 描述 |
 |--------|-------------|
-| **Timestamp** | Date and time the event occurred. Sortable. |
-| **Severity** | Color-coded badge: Info (blue), Warning (yellow), Error (red), Debug (gray). |
-| **Component** | The service or module that generated the log (e.g., api, auth, api-service). |
-| **Message** | The full log message with event details. |
+| **时间戳** | 事件发生的日期和时间。可排序。 |
+| **严重级别** | 按颜色标记的徽标：Info（蓝色）、Warning（黄色）、Error（红色）、Debug（灰色）。 |
+| **组件** | 生成日志的服务或模块（例如：api、auth、api-service）。 |
+| **消息** | 包含事件详情的完整日志消息。 |
 
-Results are paginated — use the controls at the bottom to navigate pages.
+结果采用分页显示——使用底部的控件浏览各页。
 
-## Footer Actions
+## 页脚操作
 
-| Action | Description |
-|--------|-------------|
-| **Auto-refresh** | Toggle to automatically refresh the log view at regular intervals. |
-| **Refresh Now** | Manually refresh the log data. |
-| **Export JSON** | Export the current filtered logs as a JSON file. |
-| **Download Logs** | Download the complete log data. |
+| 操作 | 描述 |
+|-------------|-------------|
+| **自动刷新** | 切换是否按固定间隔自动刷新日志视图。 |
+| **立即刷新** | 手动刷新日志数据。 |
+| **导出 JSON** | 将当前筛选后的日志导出为 JSON 文件。 |
+| **下载日志** | 下载完整日志数据。 |

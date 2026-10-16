@@ -1,236 +1,236 @@
-# Example Export M3
+# M3 导出示例
 
 
 
-## General Overview
+## 概述
 
-The export to Infor M3 involves transferring invoice-related data from Docbits into Infor M3 in a structured manner. The data is organized into headers, tax lines, receipt lines, and cost lines. Each section includes static fields that remain constant across transactions and dynamic fields that vary based on the invoice or transaction details.
-
-
-
-## Field Mappings
-
-### Header Fields
-
-| Field in Infor M3 | Mapped Field in Docbits    | Description                  |
-| ----------------- | -------------------------- | ---------------------------- |
-| HF\_SUNO          | supplier\_id               | Supplier identifier          |
-| HF\_IVDT          | invoice\_date              | Invoice date                 |
-| HF\_SINO          | invoice\_id                | Invoice identifier           |
-| HF\_SPYN          | supplier\_id               | Supplier identifier          |
-| HF\_CUCD          | currency                   | Currency used in the invoice |
-| HF\_CUAM          | total\_amount              | Total amount                 |
-| HF\_VTAM          | total\_tax\_amount         | Total tax amount             |
-| HF\_ACDT          | accounting\_date           | Accounting Date              |
-| HF\_SERS          | invoice\_sub\_type         | Invoice sub type             |
-| HF\_FTCO          | supplier\_country\_code    | Supplier country code        |
-| HF\_PUNO          | purchase\_order            | Purchase order               |
-| HF\_TXAP          | tax\_country\_1            | Tax country                  |
-| HF\_CORI          | correlation\_id            | Correlation identifier       |
-| HF\_PAIN          | sqr\_field\_esr\_reference | Field Reference              |
-| HF\_TCHG          | additional\_amount         | Additional amount            |
-| HF\_CDC1          | negative\_amount           | Negative amount              |
-| HF\_APCD          | authorised\_user           | Authorised user              |
-| HF\_TEPY          | payment\_terms             | Payment terms                |
-| HF\_PYME          | payment\_method            | Payment method               |
-| HF\_BKID          | bank\_id                   | Bank identifier              |
-| HF\_GEOC          | geo\_code                  | Geo code                     |
-| HF\_TECD          | discount\_term             | Discount term                |
-| HF\_TXAP          | tax\_applicable            | Tax applicable               |
-| HF\_TXIN          | tax\_included              | Tax included                 |
+导出到 Infor M3 涉及将与发票相关的数据从 DocBits 以结构化方式传输到 Infor M3。数据分为抬头、税额行、收货行和成本行。每个部分都包含静态字段（在各笔交易中保持不变）和动态字段（随发票或交易详情而变化）。
 
 
 
-## Tax Line Fields
+## 字段映射
 
-| Field in Infor M3 | Mapped Field in Docbits | Description         |
-| ----------------- | ----------------------- | ------------------- |
-| ITF\_VTCD         | TF\_tax\_code           | Tax code            |
-| ITF\_VTA1         | TF\_tax\_amount         | Tax amount          |
-| ITF\_VTP1         | TF\_tax\_rate           | Tax rate            |
-| ITF\_CLAM         | TF\_gross\_amount       | Gross amount        |
-| ITF\_DIVI         | company\_id             | Company  identifier |
-| ITF\_TTXA         | TF\_amount              | Amount              |
-| ITF\_TAXC         | TF\_tax\_code           | Tax code            |
-| ITF\_GEOC         | TF\_geo\_code           | Geo code            |
+### 抬头字段
 
-## Order Header Extra Charges Fields <a href="#tax-line-fields" id="tax-line-fields"></a>
+| Infor M3 中的字段 | DocBits 中的映射字段 | 描述 |
+| ----------------- | ------------------- | ---- |
+| HF\_SUNO          | supplier\_id         | 供应商标识符 |
+| HF\_IVDT          | invoice\_date        | 发票日期 |
+| HF\_SINO          | invoice\_id           | 发票标识符 |
+| HF\_SPYN          | supplier\_id         | 供应商标识符 |
+| HF\_CUCD          | currency              | 发票使用的货币 |
+| HF\_CUAM          | total\_amount        | 总金额 |
+| HF\_VTAM          | total\_tax\_amount   | 总税额 |
+| HF\_ACDT          | accounting\_date     | 会计日期 |
+| HF\_SERS          | invoice\_sub\_type   | 发票子类型 |
+| HF\_FTCO          | supplier\_country\_code | 供应商国家/地区代码 |
+| HF\_PUNO          | purchase\_order       | 采购订单 |
+| HF\_TXAP          | tax\_country\_1      | 纳税国家/地区 |
+| HF\_CORI          | correlation\_id       | 关联标识符 |
+| HF\_PAIN          | sqr\_field\_esr\_reference | 字段引用 |
+| HF\_TCHG          | additional\_amount  | 附加金额 |
+| HF\_CDC1          | negative\_amount    | 负数金额 |
+| HF\_APCD          | authorised\_user    | 授权用户 |
+| HF\_TEPY          | payment\_terms       | 付款条件 |
+| HF\_PYME          | payment\_method      | 付款方式 |
+| HF\_BKID          | bank\_id             | 银行标识符 |
+| HF\_GEOC          | geo\_code            | 地理代码 |
+| HF\_TECD          | discount\_term      | 折扣条件 |
+| HF\_TXAP          | tax\_applicable     | 是否适用税费 |
+| HF\_TXIN          | tax\_included       | 是否含税 |
 
-| Field in Infor M3      | Mapped Field in Docbits | Description |
+
+
+## 税额行字段
+
+| Infor M3 中的字段 | DocBits 中的映射字段 | 描述 |
+| ----------------- | ------------------- | ---- |
+| ITF\_VTCD         | TF\_tax\_code        | 税码 |
+| ITF\_VTA1         | TF\_tax\_amount      | 税额 |
+| ITF\_VTP1         | TF\_tax\_rate        | 税率 |
+| ITF\_CLAM         | TF\_gross\_amount    | 总额 |
+| ITF\_DIVI         | company\_id          | 公司标识符 |
+| ITF\_TTXA         | TF\_amount           | 金额 |
+| ITF\_TAXC         | TF\_tax\_code        | 税码 |
+| ITF\_GEOC         | TF\_geo\_code        | 地理代码 |
+
+## 订单抬头附加费用字段 <a href="#tax-line-fields" id="tax-line-fields"></a>
+
+| Infor M3 中的字段 | DocBits 中的映射字段 | 描述 |
 | ---------------------- | ----------------------- | ----------- |
 | OrderExtraChargeFields | NLAM                    | NLAM        |
-| OECF\_NLAM             | TF\_amount              | Amount      |
+| OECF\_NLAM             | TF\_amount              | 金额      |
 
-## Receipt Line Fields
+## 收货行字段
 
-| Field in Infor M3 | Mapped Field in Docbits | Description           |
-| ----------------- | ----------------------- | --------------------- |
-| IRF\_IVQA         | TF\_quantity            | Invoiced quantity     |
-| IRF\_PUUN         | TF\_unit                | Unit number           |
-| IRF\_PUNO         | TF\_purchase\_order     | Purchase order number |
-| IRF\_PNLI         | TF\_line\_number        | Order line number     |
-| IRF\_ITNO         | TF\_item\_number        | Item number           |
-| IRF\_POPN         | TF\_item\_number        | Item number           |
-| IRF\_SUDO         | TF\_packing\_slip       | Packing slip          |
-| IRF\_NEPR         | TF\_net\_unit\_price    | Net unit price        |
-| IRF\_GRPR         | TF\_gross\_unit\_price  | Gross unit price      |
-| IRF\_PPUN         | TF\_unit\_code\_price   | Unit code price       |
-| IRF\_NLAM         | TF\_net\_amount         | Net amount            |
-| IRF\_GLAM         | TF\_gross\_amount       | Gross amount          |
-| IRF\_TCHG         | TF\_charges             | Charges               |
-| IRF\_CDC1         | TF\_discount            | Discount              |
-| IRF\_PNLS         | TF\_sub\_line\_number   | Sub line number       |
-| IRF\_REPN         | TF\_receipt\_number     | Receipt number        |
-| IRF\_DIVI         | company\_id             | Company  identifier   |
-| IRF\_IVCW         | TF\_catch\_weight       | Catch weight          |
-| IRF\_PUCD         | TF\_unit\_price\_per    | Unit price per        |
+| Infor M3 中的字段 | DocBits 中的映射字段 | 描述 |
+| ----------------- | ------------------- | ---- |
+| IRF\_IVQA         | TF\_quantity         | 开票数量 |
+| IRF\_PUUN         | TF\_unit             | 单位编号 |
+| IRF\_PUNO         | TF\_purchase\_order  | 采购订单编号 |
+| IRF\_PNLI         | TF\_line\_number     | 订单行编号 |
+| IRF\_ITNO         | TF\_item\_number     | 项目编号 |
+| IRF\_POPN         | TF\_item\_number     | 项目编号 |
+| IRF\_SUDO         | TF\_packing\_slip    | 装箱单 |
+| IRF\_NEPR         | TF\_net\_unit\_price | 不含税单价 |
+| IRF\_GRPR         | TF\_gross\_unit\_price | 含税单价 |
+| IRF\_PPUN         | TF\_unit\_code\_price | 单位代码价格 |
+| IRF\_NLAM         | TF\_net\_amount      | 净额 |
+| IRF\_GLAM         | TF\_gross\_amount    | 总额 |
+| IRF\_TCHG         | TF\_charges          | 费用 |
+| IRF\_CDC1         | TF\_discount         | 折扣 |
+| IRF\_PNLS         | TF\_sub\_line\_number | 子行编号 |
+| IRF\_REPN         | TF\_receipt\_number  | 收货编号 |
+| IRF\_DIVI         | company\_id          | 公司标识符 |
+| IRF\_IVCW         | TF\_catch\_weight    | 计价重量 |
+| IRF\_PUCD         | TF\_unit\_price\_per | 单位价格基准 |
 
-## Order Line Charges Fields <a href="#tax-line-fields" id="tax-line-fields"></a>
+## 订单行费用字段 <a href="#tax-line-fields" id="tax-line-fields"></a>
 
-| Field in Infor M3 | Mapped Field in Docbits | Description     |
-| ----------------- | ----------------------- | --------------- |
-| OLCF\_GRPR        | TF\_unit\_price         | Unit price      |
-| OLCF\_CHGT        | TF\_voucher\_text       | Voucher text    |
-| OLCF\_CEID        | TF\_costing\_element    | Costing element |
-| OLCF\_PUNO        | TF\_purchase\_order     | Purchase order  |
-| OLCF\_PNLI        | TF\_line\_number        | Line number     |
-| OLCF\_ITNO        | TF\_item\_number        | Item number     |
-| OLCF\_CDSE        | TF\_charge\_sequence    | Charge sequence |
-| OLCF\_PNLS        | TF\_sub\_line\_number   | Sub line number |
-| OLCF\_REPN        | TF\_receipt\_number     | Receipt number  |
-| OLCF\_IVQA        | TF\_quantity            | Quantity        |
-| OLCF\_SUDO        | TF\_packing\_slip       | Packing slip    |
+| Infor M3 中的字段 | DocBits 中的映射字段 | 描述 |
+| ----------------- | ------------------- | --------------- |
+| OLCF\_GRPR        | TF\_unit\_price      | 单价      |
+| OLCF\_CHGT        | TF\_voucher\_text    | 凭证文本    |
+| OLCF\_CEID        | TF\_costing\_element | 成本要素 |
+| OLCF\_PUNO        | TF\_purchase\_order  | 采购订单  |
+| OLCF\_PNLI        | TF\_line\_number     | 行编号    |
+| OLCF\_ITNO        | TF\_item\_number     | 项目编号    |
+| OLCF\_CDSE        | TF\_charge\_sequence | 费用顺序 |
+| OLCF\_PNLS        | TF\_sub\_line\_number | 子行编号 |
+| OLCF\_REPN        | TF\_receipt\_number  | 收货编号  |
+| OLCF\_IVQA        | TF\_quantity         | 数量        |
+| OLCF\_SUDO        | TF\_packing\_slip    | 装箱单    |
 
-## Order Charge Line Fields <a href="#tax-line-fields" id="tax-line-fields"></a>
+## 订单费用行字段 <a href="#tax-line-fields" id="tax-line-fields"></a>
 
-| Field in Infor M3 | Mapped Field in Docbits | Description     |
-| ----------------- | ----------------------- | --------------- |
-| OCF\_NLAM         | TF\_amount              | Amount          |
-| OCF\_CEID         | TF\_costing\_element    | Costing element |
-| OCF\_CDSE         | TF\_charge\_sequence    | Charge sequence |
+| Infor M3 中的字段 | DocBits 中的映射字段 | 描述 |
+| ----------------- | ------------------- | --------------- |
+| OCF\_NLAM         | TF\_amount           | 金额          |
+| OCF\_CEID         | TF\_costing\_element | 成本要素 |
+| OCF\_CDSE         | TF\_charge\_sequence | 费用顺序 |
 
-### Cost Line Fields
+### 成本行字段
 
-| Field in Infor M3 | Mapped Field in Docbits   | Description               |
+| Infor M3 中的字段 | DocBits 中的映射字段 | 描述 |
 | ----------------- | ------------------------- | ------------------------- |
-| ICF\_NLAM         | TF\_amount                | Amount in the transaction |
-| ICF\_VTXT         | TF\_voucher\_text         | Voucher text              |
-| ICF\_AIT1         | TF\_ledger\_account       | Ledger account            |
-| ICF\_AIT2         | TF\_dimension\_2          | Dimension 2               |
-| ICF\_AIT3         | TF\_dimension\_3          | Dimension 3               |
-| ICF\_AIT4         | supplier\_id              | Supplier identifier       |
-| ICF\_AIT5         | TF\_dimension\_5          | Dimension 5               |
-| ICF\_AIT6         | TF\_dimension\_6          | Dimension 6               |
-| ICF\_AIT7         | TF\_dimension\_7          | Dimension 7               |
-| ICF\_AO01         | TF\_accounting\_object\_1 | Accounting object 1       |
-| ICF\_AO02         | TF\_accounting\_object\_2 | Accounting object 2       |
-| ICF\_AO03         | TF\_accounting\_object\_3 | Accounting object 3       |
-| ICF\_AO04         | TF\_accounting\_object\_4 | Accounting object 4       |
-| ICF\_AO05         | TF\_accounting\_object\_5 | Accounting object 5       |
-| ICF\_AO06         | TF\_accounting\_object\_6 | Accounting object 6       |
-| ICF\_AO07         | TF\_accounting\_object\_7 | Accounting object 7       |
+| ICF\_NLAM         | TF\_amount                | 交易金额 |
+| ICF\_VTXT         | TF\_voucher\_text         | 凭证文本 |
+| ICF\_AIT1         | TF\_ledger\_account       | 总账科目 |
+| ICF\_AIT2         | TF\_dimension\_2          | 维度 2 |
+| ICF\_AIT3         | TF\_dimension\_3          | 维度 3 |
+| ICF\_AIT4         | supplier\_id              | 供应商标识符 |
+| ICF\_AIT5         | TF\_dimension\_5          | 维度 5 |
+| ICF\_AIT6         | TF\_dimension\_6          | 维度 6 |
+| ICF\_AIT7         | TF\_dimension\_7          | 维度 7 |
+| ICF\_AO01         | TF\_accounting\_object\_1 | 会计对象 1 |
+| ICF\_AO02         | TF\_accounting\_object\_2 | 会计对象 2 |
+| ICF\_AO03         | TF\_accounting\_object\_3 | 会计对象 3 |
+| ICF\_AO04         | TF\_accounting\_object\_4 | 会计对象 4 |
+| ICF\_AO05         | TF\_accounting\_object\_5 | 会计对象 5 |
+| ICF\_AO06         | TF\_accounting\_object\_6 | 会计对象 6 |
+| ICF\_AO07         | TF\_accounting\_object\_7 | 会计对象 7 |
 
-## Debit Note Header Fields <a href="#tax-line-fields" id="tax-line-fields"></a>
+## 借记单抬头字段 <a href="#tax-line-fields" id="tax-line-fields"></a>
 
-| Field in Infor M3 | Mapped Field in Docbits    | Description             |
+| Infor M3 中的字段 | DocBits 中的映射字段 | 描述 |
 | ----------------- | -------------------------- | ----------------------- |
-| DN\_HF\_SUNO      | supplier\_id               | Supplier identifier     |
-| DN\_HF\_IVDT      | invoice\_date              | Invoice date            |
-| DN\_HF\_SINO      | invoice\_id                | Invoice  identifier     |
-| DN\_HF\_SPYN      | supplier\_id               | Supplier identifier     |
-| DN\_HF\_CUCD      | currency                   | Currency                |
-| DN\_HF\_CUAM      | total\_net\_amount\_us     | Total net amount us     |
-| DN\_HF\_VTAM      | total\_tax\_amount         | Total tax amount        |
-| DN\_HF\_ACDT      | invoice\_date              | Invoice\_date           |
-| DN\_HF\_SERS      | invoice\_sub\_type         | Invoice sub type        |
-| DN\_HF\_FTCO      | supplier\_country\_code    | Supplier country code   |
-| DN\_HF\_TXAP      | tax\_country\_1            | Tax country             |
-| DN\_HF\_CORI      | correlation\_id            | Correlation  identifier |
-| DN\_HF\_PAIN      | sqr\_field\_esr\_reference | Sqr field esr reference |
-| DN\_HF\_TCHG      | additional\_amount         | Additional amount       |
-| DN\_HF\_CDC1      | negative\_amount           | Negative amount         |
-| DN\_HF\_APCD      | buyer\_id                  | Buyer  identifier       |
-| DN\_HF\_TEPY      | payment\_terms             | Payment terms           |
-| DN\_HF\_PYME      | payment\_method            | Payment Method          |
-| DN\_HF\_BKID      | bank\_id                   | Bank identifier         |
-| DN\_HF\_GEOC      | geo\_code                  | Geo Code                |
+| DN\_HF\_SUNO      | supplier\_id               | 供应商标识符 |
+| DN\_HF\_IVDT      | invoice\_date              | 发票日期 |
+| DN\_HF\_SINO      | invoice\_id                | 发票标识符 |
+| DN\_HF\_SPYN      | supplier\_id               | 供应商标识符 |
+| DN\_HF\_CUCD      | currency                   | 货币 |
+| DN\_HF\_CUAM      | total\_net\_amount\_us     | 净额总计（美元） |
+| DN\_HF\_VTAM      | total\_tax\_amount         | 总税额 |
+| DN\_HF\_ACDT      | invoice\_date              | 发票日期 |
+| DN\_HF\_SERS      | invoice\_sub\_type         | 发票子类型 |
+| DN\_HF\_FTCO      | supplier\_country\_code    | 供应商国家/地区代码 |
+| DN\_HF\_TXAP      | tax\_country\_1            | 纳税国家/地区 |
+| DN\_HF\_CORI      | correlation\_id            | 关联标识符 |
+| DN\_HF\_PAIN      | sqr\_field\_esr\_reference | Sqr 字段 ESR 引用 |
+| DN\_HF\_TCHG      | additional\_amount         | 附加金额 |
+| DN\_HF\_CDC1      | negative\_amount           | 负数金额 |
+| DN\_HF\_APCD      | buyer\_id                  | 买方标识符 |
+| DN\_HF\_TEPY      | payment\_terms             | 付款条件 |
+| DN\_HF\_PYME      | payment\_method            | 付款方式 |
+| DN\_HF\_BKID      | bank\_id                   | 银行标识符 |
+| DN\_HF\_GEOC      | geo\_code                  | 地理代码 |
 
-## Debit Note Cost Line Fields <a href="#tax-line-fields" id="tax-line-fields"></a>
+## 借记单成本行字段 <a href="#tax-line-fields" id="tax-line-fields"></a>
 
-<table><thead><tr><th width="252">Field in Infor M3</th><th>Mapped Field in Docbits</th><th>Description</th></tr></thead><tbody><tr><td>DebitNoteInvoiceCostFields</td><td>NLAM,AIT5</td><td>NLAM,AIT5</td></tr><tr><td>DNCF_NLAM</td><td>TF_amount</td><td>Amount</td></tr><tr><td>DNCF_AIT5</td><td>purchase_order</td><td>Purchase Order</td></tr></tbody></table>
+<table><thead><tr><th width="252">Infor M3 中的字段</th><th>DocBits 中的映射字段</th><th>描述</th></tr></thead><tbody><tr><td>DebitNoteInvoiceCostFields</td><td>NLAM,AIT5</td><td>NLAM,AIT5</td></tr><tr><td>DNCF_NLAM</td><td>TF_amount</td><td>金额</td></tr><tr><td>DNCF_AIT5</td><td>purchase_order</td><td>采购订单</td></tr></tbody></table>
 
-## Debit Note Receipt Line Fields <a href="#tax-line-fields" id="tax-line-fields"></a>
+## 借记单收货行字段 <a href="#tax-line-fields" id="tax-line-fields"></a>
 
-| Field in Infor M3 | Mapped Field in Docbits | Description      |
-| ----------------- | ----------------------- | ---------------- |
-| DNRF\_IVQA        | TF\_quantity            | Quantity         |
-| DNRF\_PUUN        | TF\_unit                | Unit             |
-| DNRF\_PUNO        | TF\_purchase\_order     | Purchase order   |
-| DNRF\_PNLI        | TF\_line\_number        | Line number      |
-| DNRF\_ITNO        | TF\_item\_number        | Item number      |
-| DNRF\_POPN        | TF\_item\_number        | Item number      |
-| DNRF\_SUDO        | TF\_packing\_slip       | Packing slip     |
-| DNRF\_NEPR        | TF\_net\_unit\_price    | Net unit price   |
-| DNRF\_GRPR        | TF\_gross\_unit\_price  | Gross unit price |
-| DNRF\_PPUN        | TF\_unit\_code\_price   | Unit code price  |
-| DNRF\_NLAM        | TF\_net\_amount         | Net amount       |
-| DNRF\_GLAM        | TF\_gross\_amount       | Gross amount     |
-| DNRF\_TCHG        | TF\_charges             | Charges          |
-| DNRF\_CDC1        | TF\_discount            | Discount         |
+| Infor M3 中的字段 | DocBits 中的映射字段 | 描述 |
+| ----------------- | ------------------- | ---------------- |
+| DNRF\_IVQA        | TF\_quantity         | 数量 |
+| DNRF\_PUUN        | TF\_unit             | 单位 |
+| DNRF\_PUNO        | TF\_purchase\_order  | 采购订单 |
+| DNRF\_PNLI        | TF\_line\_number     | 行编号 |
+| DNRF\_ITNO        | TF\_item\_number     | 项目编号 |
+| DNRF\_POPN        | TF\_item\_number     | 项目编号 |
+| DNRF\_SUDO        | TF\_packing\_slip    | 装箱单 |
+| DNRF\_NEPR        | TF\_net\_unit\_price | 不含税单价 |
+| DNRF\_GRPR        | TF\_gross\_unit\_price | 含税单价 |
+| DNRF\_PPUN        | TF\_unit\_code\_price | 单位代码价格 |
+| DNRF\_NLAM        | TF\_net\_amount      | 净额 |
+| DNRF\_GLAM        | TF\_gross\_amount    | 总额 |
+| DNRF\_TCHG        | TF\_charges          | 费用 |
+| DNRF\_CDC1        | TF\_discount         | 折扣 |
 
-## Credit Note Header <a href="#tax-line-fields" id="tax-line-fields"></a>
+## 贷项通知单抬头字段 <a href="#tax-line-fields" id="tax-line-fields"></a>
 
-| Field in Infor M3 | Mapped Field in Docbits    | Description             |
+| Infor M3 中的字段 | DocBits 中的映射字段 | 描述 |
 | ----------------- | -------------------------- | ----------------------- |
-| CN\_HF\_SUNO      | supplier\_id               | Supplier  identifier    |
-| CN\_HF\_IVDT      | invoice\_date              | Invoice date            |
-| CN\_HF\_SINO      | invoice\_id                | Invoice identifier      |
-| CN\_HF\_SPYN      | supplier\_id               | Supplier identifier     |
-| CN\_HF\_CUCD      | currency                   | Currency                |
-| CN\_HF\_CUAM      | total\_net\_amount\_us     | Total net amount us     |
-| CN\_HF\_VTAM      | total\_tax\_amount         | Total tax amount        |
-| CN\_HF\_ACDT      | invoice\_date              | Invoice date            |
-| CN\_HF\_SERS      | invoice\_sub\_type         | Invoice sub type        |
-| CN\_HF\_FTCO      | supplier\_country\_code    | Supplier country code   |
-| CN\_HF\_TXAP      | tax\_country\_1            | Tax country             |
-| CN\_HF\_CORI      | correlation\_id            | Correlation identifier  |
-| CN\_HF\_PAIN      | sqr\_field\_esr\_reference | Sqr field esr reference |
-| CN\_HF\_TCHG      | additional\_amount         | Additional amount       |
-| CN\_HF\_CDC1      | negative\_amount           | Negative amount         |
-| CN\_HF\_APCD      | buyer\_id                  | Buyer identifier        |
-| CN\_HF\_TEPY      | payment\_terms             | Payment terms           |
-| CN\_HF\_PYME      | payment\_method            | Payment method          |
-| CN\_HF\_BKID      | bank\_id                   | Bank identifier         |
-| CN\_HF\_GEOC      | geo\_code                  | Geo code                |
+| CN\_HF\_SUNO      | supplier\_id               | 供应商标识符 |
+| CN\_HF\_IVDT      | invoice\_date              | 发票日期 |
+| CN\_HF\_SINO      | invoice\_id                | 发票标识符 |
+| CN\_HF\_SPYN      | supplier\_id               | 供应商标识符 |
+| CN\_HF\_CUCD      | currency                   | 货币 |
+| CN\_HF\_CUAM      | total\_net\_amount\_us     | 净额总计（美元） |
+| CN\_HF\_VTAM      | total\_tax\_amount         | 总税额 |
+| CN\_HF\_ACDT      | invoice\_date              | 发票日期 |
+| CN\_HF\_SERS      | invoice\_sub\_type         | 发票子类型 |
+| CN\_HF\_FTCO      | supplier\_country\_code    | 供应商国家/地区代码 |
+| CN\_HF\_TXAP      | tax\_country\_1            | 纳税国家/地区 |
+| CN\_HF\_CORI      | correlation\_id            | 关联标识符 |
+| CN\_HF\_PAIN      | sqr\_field\_esr\_reference | Sqr 字段 ESR 引用 |
+| CN\_HF\_TCHG      | additional\_amount         | 附加金额 |
+| CN\_HF\_CDC1      | negative\_amount           | 负数金额 |
+| CN\_HF\_APCD      | buyer\_id                  | 买方标识符 |
+| CN\_HF\_TEPY      | payment\_terms             | 付款条件 |
+| CN\_HF\_PYME      | payment\_method            | 付款方式 |
+| CN\_HF\_BKID      | bank\_id                   | 银行标识符 |
+| CN\_HF\_GEOC      | geo\_code                  | 地理代码 |
 
-## Credit Note Cost Line Fields <a href="#tax-line-fields" id="tax-line-fields"></a>
+## 贷项通知单成本行字段 <a href="#tax-line-fields" id="tax-line-fields"></a>
 
-<table><thead><tr><th width="257">Field in Infor M3</th><th>Mapped Field in Docbits</th><th>Description</th></tr></thead><tbody><tr><td>CreditNoteInvoiceCostFields</td><td>NLAM,AIT5</td><td>NLAM, AIT5</td></tr><tr><td>CNCF_NLAM</td><td>TF_amount</td><td>Amount</td></tr><tr><td>CNCF_AIT5</td><td>purchase_order</td><td>Purchase order</td></tr></tbody></table>
+<table><thead><tr><th width="257">Infor M3 中的字段</th><th>DocBits 中的映射字段</th><th>描述</th></tr></thead><tbody><tr><td>CreditNoteInvoiceCostFields</td><td>NLAM,AIT5</td><td>NLAM, AIT5</td></tr><tr><td>CNCF_NLAM</td><td>TF_amount</td><td>金额</td></tr><tr><td>CNCF_AIT5</td><td>purchase_order</td><td>采购订单</td></tr></tbody></table>
 
-## Credit Note Receipt Line Fields <a href="#tax-line-fields" id="tax-line-fields"></a>
+## 贷项通知单收货行字段 <a href="#tax-line-fields" id="tax-line-fields"></a>
 
-| Field in Infor M3 | Mapped Field in Docbits | Description      |
-| ----------------- | ----------------------- | ---------------- |
-| CNRF\_IVQA        | TF\_quantity            | Quantity         |
-| CNRF\_PUUN        | TF\_unit                | Unit             |
-| CNRF\_PUNO        | TF\_purchase\_order     | Purchase order   |
-| CNRF\_PNLI        | TF\_line\_number        | Line number      |
-| CNRF\_ITNO        | TF\_item\_number        | Item number      |
-| CNRF\_POPN        | TF\_item\_number        | Item number      |
-| CNRF\_SUDO        | TF\_packing\_slip       | Packing slip     |
-| CNRF\_NEPR        | TF\_net\_unit\_price    | Net unit price   |
-| CNRF\_GRPR        | TF\_gross\_unit\_price  | Gross unit price |
-| CNRF\_PPUN        | TF\_unit\_code\_price   | Unit code price  |
-| CNRF\_NLAM        | TF\_net\_amount         | Net amount       |
-| CNRF\_GLAM        | TF\_gross\_amount       | Gross amount     |
-| CNRF\_TCHG        | TF\_charges             | Charges          |
-| CNRF\_CDC1        | TF\_discount            | Discount         |
+| Infor M3 中的字段 | DocBits 中的映射字段 | 描述 |
+| ----------------- | ------------------- | ---------------- |
+| CNRF\_IVQA        | TF\_quantity         | 数量 |
+| CNRF\_PUUN        | TF\_unit             | 单位 |
+| CNRF\_PUNO        | TF\_purchase\_order  | 采购订单 |
+| CNRF\_PNLI        | TF\_line\_number     | 行编号 |
+| CNRF\_ITNO        | TF\_item\_number     | 项目编号 |
+| CNRF\_POPN        | TF\_item\_number     | 项目编号 |
+| CNRF\_SUDO        | TF\_packing\_slip    | 装箱单 |
+| CNRF\_NEPR        | TF\_net\_unit\_price | 不含税单价 |
+| CNRF\_GRPR        | TF\_gross\_unit\_price | 含税单价 |
+| CNRF\_PPUN        | TF\_unit\_code\_price | 单位代码价格 |
+| CNRF\_NLAM        | TF\_net\_amount      | 净额 |
+| CNRF\_GLAM        | TF\_gross\_amount    | 总额 |
+| CNRF\_TCHG        | TF\_charges          | 费用 |
+| CNRF\_CDC1        | TF\_discount         | 折扣 |
 
-## Static Fields
+## 静态字段
 
-In addition to the dynamic mappings, there are several static fields used for each type of line, which are predefined as follows:
+除了动态映射外，各类型行还会使用若干静态字段，预定义如下：
 
-* **Header Static Fields**:
+* **抬头静态字段**：
   * StaticFields=DIVI,IBTP,BSCD,IMCD,APCD,CRTP,CONO,PVLD
   * SF\_DIVI=RFP
   * SF\_IBTP=20
@@ -240,42 +240,42 @@ In addition to the dynamic mappings, there are several static fields used for ea
   * SF\_APCD=MHIDALGO
   * SF\_CRTP=1
   * SF\_PVLD=1
-* **Tax Line Static Fields:**
+* **税额行静态字段：**
   * InvoiceTaxStaticFields=RDTP,DIVI,VTCD,CONO,TAXT
   * IT\_SF\_RDTP=3
   * IT\_SF\_DIVI=RFP
   * IT\_SF\_CONO=001
   * IT\_SF\_TAXT=2
-* **Order Header Extra Charge Static Static Fields:**
+* **订单抬头附加费用静态静态字段：**
   * OrderExtraChargeStaticFields=RDTP,DIVI,CONO,CDSE,CEID
   * OEC\_SF\_RDTP=2
   * OEC\_SF\_DIVI=RFP
   * OEC\_SF\_CONO=001
   * OEC\_SF\_CEID=INVPD
   * OEC\_SF\_CDSE=99
-* **Receipt Line Static Fields**:
+* **收货行静态字段**：
   * InvoiceReceiptStaticFields=RDTP,DIVI,SERS,RELP,VTCD,CONO
   * IR\_SF\_RDTP=1
   * IR\_SF\_DIVI=RFP
   * IR\_SF\_RELP=1
   * IR\_SF\_VTCD=52
   * IR\_SF\_CONO=001
-* **Order Line Charge Static Fields:**
+* **订单行费用静态字段：**
   * OrderLineChargeStaticFields=RDTP,DIVI,CONO
   * OLC\_SF\_RDTP=5
   * OLC\_SF\_DIVI=RFP
   * OLC\_SF\_CONO=001
-* **Order Charge Line Static Fields:**
+* **订单费用行静态字段：**
   * OrderChargeStaticFields=RDTP,DIVI,CONO
   * OC\_SF\_RDTP=2
   * OC\_SF\_DIVI=RFP
   * OC\_SF\_CONO=001
-* **Cost Line Static Fields**:
+* **成本行静态字段**：
   * InvoiceCostStaticFields=RDTP,DIVI,CONO
   * IC\_SF\_RDTP=8
   * IC\_SF\_DIVI=RFP
   * IC\_SF\_CONO=001
-* **Debit Note Header Static Fields:**
+* **借记单抬头静态字段：**
   * DNStaticFields=DIVI,IBTP,BSCD,IMCD,TEPY,PYME,APCD,CRTP,CONO
   * DN\_SF\_DIVI=RFP
   * DN\_SF\_IBTP=20
@@ -287,7 +287,7 @@ In addition to the dynamic mappings, there are several static fields used for ea
   * DN\_SF\_APCD=MHIDALGO
   * DN\_SF\_CRTP=1
   * DN\_SF\_BKID=DJ1
-* **Debit Note Cost Line Static Fields:**
+* **借记单成本行静态字段：**
   * DebitNoteCostStaticFields=RDTP,DIVI,CONO,AIT1,AIT2,AIT3,AIT4,AIT5,AIT6,AIT7
   * DNC\_SF\_RDTP=8
   * DNC\_SF\_DIVI=RFP
@@ -296,14 +296,14 @@ In addition to the dynamic mappings, there are several static fields used for ea
   * DNC\_SF\_AIT3=100
   * DNC\_SF\_AIT6=INVDN
   * DNC\_SF\_AIT7=PP20230
-* **Debit Note Receipt Line Static Fields**
+* **借记单收货行静态字段**
   * DebitNoteReceiptStaticFields=RDTP,DIVI,SERS,RELP,VTCD,CONO
   * DNR\_SF\_RDTP=1
   * DNR\_SF\_DIVI=RFP
   * DNR\_SF\_RELP=1
   * DNR\_SF\_VTCD=52
   * DNR\_SF\_CONO=001
-* **Credit Note Header Static Fields:**
+* **贷项通知单抬头静态字段：**
   * CNStaticFields=DIVI,IBTP,BSCD,IMCD,TEPY,PYME,APCD,CRTP,CONO
   * CN\_SF\_DIVI=RFP
   * CN\_SF\_IBTP=20
@@ -315,7 +315,7 @@ In addition to the dynamic mappings, there are several static fields used for ea
   * CN\_SF\_APCD=MHIDALGO
   * CN\_SF\_CRTP=1
   * CN\_SF\_BKID=DJ1
-* **Credit Note Cost Line Static Fields:**
+* **贷项通知单成本行静态字段：**
   * CreditNoteCostStaticFields=RDTP,DIVI,CONO,AIT1,AIT2,AIT3,AIT4,AIT5,AIT6,AIT7
   * CNC\_SF\_RDTP=8
   * CNC\_SF\_DIVI=RFP
@@ -324,7 +324,7 @@ In addition to the dynamic mappings, there are several static fields used for ea
   * CNC\_SF\_AIT3=100
   * CNC\_SF\_AIT6=INVDN
   * CNC\_SF\_AIT7=PP20230
-* **Credit Note Receipt Line Static Fields:**
+* **贷项通知单收货行静态字段：**
   * CreditNoteReceiptStaticFields=RDTP,DIVI,SERS,RELP,VTCD,CONO
   * CNR\_SF\_RDTP=1
   * CNR\_SF\_DIVI=RFP
@@ -336,7 +336,7 @@ In addition to the dynamic mappings, there are several static fields used for ea
 
 
 
-## Full Example
+## 完整示例
 
 ```
 ###########################

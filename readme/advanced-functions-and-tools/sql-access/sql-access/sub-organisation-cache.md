@@ -1,82 +1,82 @@
-# Sub Organisation Cache
+# 子组织缓存
 
-## Tabelle `public.sub_organisation_cache`
+## 表 `public.sub_organisation_cache`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `name`: internal
-* `description`: internal
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
+* `id`：内部字段
+* `org_id`：组织 ID
+* `name`：内部字段
+* `description`：内部字段
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
 
-### Analyse & Beschreibung
+### 分析与描述
 
-## Technical Documentation for `public.sub_organisation_cache` Table
+## `public.sub_organisation_cache` 表技术文档
 
-### Introduction
+### 简介
 
-The `public.sub_organisation_cache` table appears to store cached information about sub-organizations within a larger organizational structure. This table likely serves as a repository for metadata related to sub-organizations, capturing details such as their identifiers, names, descriptions, and timestamps for creation and modification. The table also tracks the status of the entries, such as whether they have been logically deleted.
+`public.sub_organisation_cache` 表似乎用于存储较大组织结构中各子组织的缓存信息。该表可能用作子组织相关元数据的存储库，记录其标识符、名称、描述以及创建和修改时间戳等详细信息。该表还会跟踪条目的状态，例如条目是否已被逻辑删除。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: Unique identifier for each entry in the table.
-* **Role**: Primary key.
-* **Typical Contents**: A UUID string that uniquely identifies a sub-organization cache entry.
-* **Note**: This field ensures each record can be uniquely referenced.
+* **含义**：表中每个条目的唯一标识符。
+* **作用**：主键。
+* **典型内容**：唯一标识子组织缓存条目的 UUID 字符串。
+* **备注**：此字段确保每条记录都可以被唯一引用。
 
 #### org\_id
 
-* **Meaning**: Identifier for the parent organization to which the sub-organization belongs.
-* **Role**: Foreign key.
-* **Typical Contents**: A UUID string representing a reference to an organization record.
-* **Note**: This links the sub-organization to its parent organization.
+* **含义**：子组织所属的上级组织的标识符。
+* **作用**：外键。
+* **典型内容**：表示组织记录引用的 UUID 字符串。
+* **备注**：此字段将子组织关联到其上级组织。
 
 #### name
 
-* **Meaning**: The name of the sub-organization.
-* **Role**: Descriptive field.
-* **Typical Contents**: A short text string, possibly an acronym or name, representing the sub-organization.
-* **Note**: Used for identification and display purposes.
+* **含义**：子组织的名称。
+* **作用**：描述性字段。
+* **典型内容**：代表子组织的简短文本字符串，可能是缩写或名称。
+* **备注**：用于识别和显示。
 
 #### description
 
-* **Meaning**: A brief description or additional detail about the sub-organization.
-* **Role**: Descriptive field.
-* **Typical Contents**: A text string providing more context or details related to the sub-organization.
-* **Note**: May be similar to the `name` in cases where detailed information is not available.
+* **含义**：对子组织的简要描述或补充详情。
+* **作用**：描述性字段。
+* **典型内容**：提供子组织更多背景或详情的文本字符串。
+* **备注**：在没有详细信息时，该字段可能与 `name` 相似。
 
 #### created\_by
 
-* **Meaning**: Identifier of the user or system that created the entry.
-* **Role**: Audit field.
-* **Typical Contents**: An integer representing the user ID who performed the creation action.
-* **Note**: Useful for tracking who initialized the record.
+* **含义**：创建该条目的用户或系统的标识符。
+* **作用**：审计字段。
+* **典型内容**：执行创建操作的用户 ID，以整数表示。
+* **备注**：有助于追踪初始化该记录的主体。
 
 #### created\_on
 
-* **Meaning**: Timestamp of when the entry was created.
-* **Role**: Audit field.
-* **Typical Contents**: A date and time, including timezone, marking when the record was created.
-* **Note**: Critical for understanding the timeline of data entry.
+* **含义**：条目的创建时间戳。
+* **作用**：审计字段。
+* **典型内容**：标记记录创建时间的日期和时间，包含时区。
+* **备注**：对于了解数据录入时间线至关重要。
 
 #### last\_modified\_on
 
-* **Meaning**: Timestamp of the last modification to the entry.
-* **Role**: Audit field.
-* **Typical Contents**: A date and time, including timezone, marking the most recent update to the record.
-* **Note**: Allows tracking of changes over time. May be `None` if no modifications have occurred since creation.
+* **含义**：条目的最后修改时间戳。
+* **作用**：审计字段。
+* **典型内容**：标记记录最近更新时间的日期和时间，包含时区。
+* **备注**：用于跟踪随时间发生的更改。如果创建后未进行任何修改，该值可能为 `None`。
 
 #### is\_deleted
 
-* **Meaning**: Indicates whether the entry has been logically deleted.
-* **Role**: Status field.
-* **Typical Contents**: A boolean value, `True` if the entry is marked as deleted, otherwise `False`.
-* **Note**: This field supports soft-deletion, enabling recovery of deleted entries if needed.
+* **含义**：指示该条目是否已被逻辑删除。
+* **作用**：状态字段。
+* **典型内容**：布尔值；如果条目标记为已删除，则为 `True`，否则为 `False`。
+* **备注**：此字段支持软删除，以便在需要时恢复已删除的条目。
 
-This documentation provides a detailed overview of the `public.sub_organisation_cache` table's structure and purpose, facilitating understanding and usage by developers and database administrators.
+本文档详细介绍了 `public.sub_organisation_cache` 表的结构和用途，帮助开发者和数据库管理员理解并使用该表。

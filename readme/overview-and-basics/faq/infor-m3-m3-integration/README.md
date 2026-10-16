@@ -1,2 +1,1 @@
-# Infor M3 (M3 Integration)
-
+# Infor M3（M3 集成）

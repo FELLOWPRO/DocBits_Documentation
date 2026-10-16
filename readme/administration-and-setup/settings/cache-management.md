@@ -1,25 +1,25 @@
-# Cache Management
+# 缓存管理
 
-<figure><img src="../../.gitbook/assets/cache_management.png" alt="Cache Management"><figcaption><p>Cache Management Page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/cache_management.png" alt="缓存管理"><figcaption><p>缓存管理页面</p></figcaption></figure>
 
-Cache Management controls automatic cache clearing for frequently accessed data. Enabling caching improves performance by reducing repeated API calls.
+缓存管理用于控制频繁访问数据的自动清除。启用缓存可减少重复的 API 调用，从而提升性能。
 
-## Clear Cache
+## 清除缓存
 
-Click the **Clear Cache** button (top-right) to manually invalidate all cached data immediately.
+点击右上角的 **Clear Cache** 按钮，即可立即手动使所有缓存数据失效。
 
-## Cache Table
+## 缓存表
 
-| Column | Description |
+| 列 | 说明 |
 |--------|-------------|
-| **Object** | The type of cached data (e.g., Receive Delivery Cache, Purchase Order Cache). |
-| **Status** | Toggle to enable or disable caching for this object. |
-| **TTL** | Time to Live in minutes — how long cached data remains valid before being automatically refreshed. Set to `0` to disable automatic expiry. |
+| **对象** | 缓存数据的类型（例如，收货缓存、采购订单缓存）。 |
+| **状态** | 切换此对象的缓存启用或禁用状态。 |
+| **TTL** | 生存时间，以分钟为单位——缓存数据在自动刷新前保持有效的时长。设置为 `0` 可禁用自动过期。 |
 
-## Available Caches
+## 可用缓存
 
-| Cache | Description |
+| 缓存 | 说明 |
 |-------|-------------|
-| **Receive Delivery Cache** | Caches delivery receipt data used during PO matching. |
-| **Purchase Order Cache** | Caches purchase order data for faster lookup during document processing. |
-| **Task and Notification Cache** | Caches task counts and notification data shown in the dashboard. |
+| **收货缓存** | 缓存用于采购订单匹配的收货数据。 |
+| **采购订单缓存** | 缓存采购订单数据，以便在文档处理中更快地查找。 |
+| **任务和通知缓存** | 缓存仪表板中显示的任务数量和通知数据。 |

@@ -1,2 +1,0 @@
-# API-Aufrufe und Beispiele
-

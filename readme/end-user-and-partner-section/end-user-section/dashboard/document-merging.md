@@ -1,33 +1,32 @@
 ---
-description: Document merge documents
+description: "合并文档"
 ---
 
-# Document Merging
+# 文档合并
 
-## Overview
+## 概述
 
-Document merging allows you to combine multiple documents.
+文档合并功能允许您将多个文档合并为一个文档。
 
-First, you need to select the documents you would like to merge. This can be done by selecting the checkboxes of the documents. Once you have selected the documents, click on the icon with three dots.
+首先，选择要合并的文档。您可以勾选文档旁边的复选框来选择。选好文档后，点击带有三个点的图标。
 
-A menu will then be displayed, select the “Merge” option which can be found at the bottom.
+随后会显示一个菜单，请选择底部的“Merge”（合并）选项。
 
 <figure><img src="../../../.gitbook/assets/document-merging (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://lh7-us.googleusercontent.com/TV2KGh2Q38KsO5Zi-O-GKp5v42Lam4WSj8I8Ia6KjVj2c4X6vce2nFt7yJYicRWmDwKOHZDxrAsfEYtMpN-9UD2mpJ9Sfs4ueb1AYAOjKngY25JKaeEBPzUwcbrylwQ4jj_v-jkGZYLey9p9i0LfL-I" alt=""><figcaption></figcaption></figure>
 
-Document merging is an important feature in a document management system that allows users to combine multiple documents into a single document. Here are some reasons why document merging can be useful:
+文档合并是文档管理系统中的一项重要功能，可帮助用户将多个文档合并为一个文档。文档合并有以下用途：
 
-* **Organizing Related Documents:** By merging multiple documents into a single document, users can organize and keep related information or files together. This can help improve efficiency in managing and accessing documents.
-* **Creating reports or summaries:** Merging multiple documents can be useful to create reports or summaries by combining data or information from different sources or documents. This allows users to create comprehensive reports or presentations without having to manually copy and paste the information.
-* **Archiving documents:** When multiple versions of a document exist, or when documents need to be summarized within a specific time period, merging documents can help ensure consistent archiving practices and optimize storage space.
-* **Workflow optimization:** Document merging can be part of an automated workflow where documents are automatically combined once certain conditions are met. This can be used, for example, in an approval process or when creating contracts or reports.
+* **整理相关文档：**将多个文档合并为一个文档，便于用户将相关信息或文件集中整理和保存。这有助于提高文档管理与访问效率。
+* **创建报告或摘要：**合并多个文档，可以汇总来自不同来源或文档的数据与信息，从而创建报告或摘要。用户无需手动复制粘贴信息，即可生成完整的报告或演示文稿。
+* **归档文档：**当某个文档存在多个版本，或需要汇总特定时间段内的文档时，合并文档有助于确保归档方式一致并优化存储空间。
+* **优化工作流：**文档合并可以作为自动化工作流的一部分，在满足特定条件后自动合并文档。例如，这可用于审批流程，或合同和报告的创建。
 
-## Examples of merging documents:
+## 文档合并示例：
 
-* **Combining Invoices:** A business needs to summarize all invoices from a given month for accounting purposes. Individual invoices are uploaded as separate documents and then merged to create a consolidated overview.
-* **Combining approval forms:** An application approval workflow requires multiple forms to be merged before being forwarded to management. The different forms are automatically combined as they are completed and submitted by the parties involved.
-* **Creating an Annual Report:** Multiple departments in a company work together to create a comprehensive annual report. Each department prepares its own section of the report as a separate document. These documents are then brought together to create the final annual report.
+* **合并发票：**企业需要汇总某个月的所有发票，以便进行会计处理。各张发票分别作为独立文档上传，然后合并为一份汇总文档。
+* **合并审批表：**申请审批工作流要求先合并多个表单，再转交管理层。相关各方完成并提交表单后，系统会自动将其合并。
+* **创建年度报告：**公司内的多个部门共同编制一份完整的年度报告。每个部门将自己负责的章节整理为单独的文档，然后合并这些文档，形成最终的年度报告。
 
-By merging documents, organizations can streamline their document management processes, improve collaboration, and increase efficiency.
-
+通过合并文档，组织可以简化文档管理流程、改善协作并提高效率。

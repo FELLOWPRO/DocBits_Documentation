@@ -1,7 +1,7 @@
-# Introduction
+# 简介
 
 {% embed url="https://youtu.be/boBCaqVe7Jw" %}
 
-Welcome to the **DocBits** Beginner Course, your comprehensive guide to revolutionizing document management for your business!
+欢迎参加 **DocBits** 入门课程！本课程将全面指导您如何革新企业的文档管理！
 
-In today's complex financial environment, managing order confirmations, delivery bills, invoicing, and cost accounting is no small feat. That's where **DocBits** shines. With over 20 integrations and unparalleled compatibility with Infor CloudSuite, LN, and M3, **DocBits** stands apart from other solutions on the market.
+在当今复杂的财务环境中，管理订单确认、送货单、开票和成本会计并非易事。此时，**DocBits** 就能大显身手。凭借 20 多种集成，以及与 Infor CloudSuite、LN 和 M3 无与伦比的兼容性，**DocBits** 在市场上的其他解决方案中脱颖而出。

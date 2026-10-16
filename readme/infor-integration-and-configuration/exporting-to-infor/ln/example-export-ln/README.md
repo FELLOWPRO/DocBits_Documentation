@@ -1,84 +1,84 @@
-# Example Export LN
+# LN 导出示例
 
-## General Overview
+## 总体概述
 
-The export to Infor LN involves transferring invoice-related data from Docbits into Infor LN in a structured manner. The data is organized into headers, tax lines, receipt lines, and cost lines. Each section includes static fields that remain constant across transactions and dynamic fields that vary based on the invoice or transaction details.
+导出到 Infor LN 的过程，是将与发票相关的数据从 Docbits 以结构化方式传输到 Infor LN。数据分为抬头、税额行、收货行和成本行。每个部分都包含静态字段和动态字段：静态字段在各笔交易中保持不变，动态字段则根据发票或交易详情变化。
 
-## Field Mappings
+## 字段映射
 
-### Header Fields
+### 抬头字段
 
-| Field in Infor LN         | Mapped Field in Docbits | Description                                   |
-| ------------------------- | ----------------------- | --------------------------------------------- |
-| SF\_FinancialCompany      | 0200                    | Financial company                             |
-| SF\_RateDeterminer        | docd                    | Rate determiner                               |
-| SF\_ExternalRateFactor    | 1                       | External rate factor                          |
-| SupplierCode              | supplier\_id            | Supplier identifier                           |
-| PurchaseType              | purchase\_type          | Type of purchase                              |
-| InvoiceType               | invoice\_sub\_type      | Subtype of the invoice                        |
-| InvoiceNumberSupplier     | invoice\_id             | Supplier's invoice number                     |
-| InvoiceDate               | invoice\_date           | Date of the invoice                           |
-| InvoiceCurrency           | currency                | Currency used in the invoice                  |
-| TaxCountry                | tax\_country\_1         | Tax country                                   |
-| DocumentIDExternalPackage | correlation\_id         | External package ID                           |
-| IDMReference              | idm\_reference          | IDM reference                                 |
-| RateDate                  | invoice\_date           | Rate determination date                       |
-| Reference                 | reference               | Reference number                              |
-| InvoiceAmount             | total\_amount           | Total invoice amount                          |
-| TaxBaseAmount             | total\_net\_amount      | Total net amount (before tax)                 |
-| InvoiceDocumentType       | invoice\_type           | Type of document (e.g., invoice, credit note) |
+| Infor LN 中的字段 | Docbits 中的映射字段 | 描述 |
+| ----------------- | ------------------- | ---- |
+| SF\_FinancialCompany | 0200 | 财务公司 |
+| SF\_RateDeterminer | docd | 汇率确定方式 |
+| SF\_ExternalRateFactor | 1 | 外部汇率因子 |
+| SupplierCode | supplier\_id | 供应商标识符 |
+| PurchaseType | purchase\_type | 采购类型 |
+| InvoiceType | invoice\_sub\_type | 发票子类型 |
+| InvoiceNumberSupplier | invoice\_id | 供应商发票号 |
+| InvoiceDate | invoice\_date | 发票日期 |
+| InvoiceCurrency | currency | 发票所用币种 |
+| TaxCountry | tax\_country\_1 | 税务国家 |
+| DocumentIDExternalPackage | correlation\_id | 外部包 ID |
+| IDMReference | idm\_reference | IDM 参考信息 |
+| RateDate | invoice\_date | 汇率确定日期 |
+| Reference | reference | 参考编号 |
+| InvoiceAmount | total\_amount | 发票总金额 |
+| TaxBaseAmount | total\_net\_amount | 总净额（税前） |
+| InvoiceDocumentType | invoice\_type | 文档类型（例如发票、贷项通知单） |
 
-### Tax Line Fields
+### 税额行字段
 
-| Field in Infor LN | Mapped Field in Docbits | Description         |
-| ----------------- | ----------------------- | ------------------- |
-| LineNumber        | TF\_line\_number        | Line number         |
-| TaxSequenceNumber | TF\_line\_number        | Tax sequence number |
-| TaxCode           | TF\_tax\_code           | Tax code            |
-| TaxBaseAmount     | TF\_net\_amount         | Taxable base amount |
-| TaxAmount         | TF\_tax\_amount         | Tax amount          |
-| TaxCountry        | TF\_tax\_country        | Country for tax     |
+| Infor LN 中的字段 | Docbits 中的映射字段 | 描述 |
+| ----------------- | ------------------- | ---- |
+| LineNumber | TF\_line\_number | 行号 |
+| TaxSequenceNumber | TF\_line\_number | 税额序号 |
+| TaxCode | TF\_tax\_code | 税码 |
+| TaxBaseAmount | TF\_net\_amount | 应税基数金额 |
+| TaxAmount | TF\_tax\_amount | 税额 |
+| TaxCountry | TF\_tax\_country | 税务所属国家 |
 
-### Receipt Line Fields
+### 收货行字段
 
-| Field in Infor LN | Mapped Field in Docbits | Description             |
-| ----------------- | ----------------------- | ----------------------- |
-| PackingSlip       | TF\_packing\_slip       | Packing slip number     |
-| Order             | TF\_purchase\_order     | Purchase order number   |
-| OrderPosition     | TF\_line\_number        | Order line number       |
-| Receipt           | TF\_delivery\_number    | Delivery/receipt number |
-| ReceiptLine       | TF\_delivery\_line      | Delivery/receipt line   |
-| InvoicedAmount    | TF\_amount              | Invoiced amount         |
-| InvoicedQuantity  | TF\_quantity            | Invoiced quantity       |
+| Infor LN 中的字段 | Docbits 中的映射字段 | 描述 |
+| ----------------- | ------------------- | ---- |
+| PackingSlip | TF\_packing\_slip | 装箱单编号 |
+| Order | TF\_purchase\_order | 采购订单编号 |
+| OrderPosition | TF\_line\_number | 订单行号 |
+| Receipt | TF\_delivery\_number | 交货/收货编号 |
+| ReceiptLine | TF\_delivery\_line | 交货/收货行 |
+| InvoicedAmount | TF\_amount | 开票金额 |
+| InvoicedQuantity | TF\_quantity | 开票数量 |
 
-### Cost Line Fields
+### 成本行字段
 
-| Field in Infor LN | Mapped Field in Docbits | Description                |
-| ----------------- | ----------------------- | -------------------------- |
-| LineNumber        | auto                    | Auto-generated line number |
-| LedgerAccount     | TF\_ledger\_account     | Ledger account             |
-| DebitCredit       | invoice\_type           | Debit or credit indicator  |
-| Amount            | TF\_amount              | Amount in the transaction  |
-| Dimension1-12     | TF\_dimension\_X        | Cost dimensions            |
-| Quantity1         | TF\_quantity            | Quantity 1                 |
-| Quantity2         | TF\_quantity2           | Quantity 2                 |
+| Infor LN 中的字段 | Docbits 中的映射字段 | 描述 |
+| ----------------- | ------------------- | ---- |
+| LineNumber | auto | 自动生成的行号 |
+| LedgerAccount | TF\_ledger\_account | 总账科目 |
+| DebitCredit | invoice\_type | 借方或贷方标识 |
+| Amount | TF\_amount | 交易金额 |
+| Dimension1-12 | TF\_dimension\_X | 成本维度 |
+| Quantity1 | TF\_quantity | 数量 1 |
+| Quantity2 | TF\_quantity2 | 数量 2 |
 
-## Static Fields
+## 静态字段
 
-In addition to the dynamic mappings, there are several static fields used for each type of line, which are predefined as follows:
+除了动态映射外，各类行还使用若干预定义的静态字段：
 
-* **Header Static Fields**:
-  * Financial Company: 0200
-  * Rate Determiner: docd
-  * External Rate Factor: 1
-* **Receipt Line Static Fields**:
-  * Order Type: purchase
-  * Logistic Company: 200
-  * Order Sequence: 1
-* **Cost Line Static Fields**:
-  * Target Company: 200
+* **抬头静态字段**：
+  * 财务公司：0200
+  * 汇率确定方式：docd
+  * 外部汇率因子：1
+* **收货行静态字段**：
+  * 订单类型：purchase
+  * 物流公司：200
+  * 订单序号：1
+* **成本行静态字段**：
+  * 目标公司：200
 
-### Full Example&#x20;
+### 完整示例&#x20;
 
 ````yaml
 ```properties

@@ -1,152 +1,152 @@
-# Training data
+# 训练数据
 
-## Tabelle `public.training_data`
+## 表 `public.training_data`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_type`: DOC Type
-* `doc_origin`: Doc Origin
-* `doc_locale`: Doc Locale
-* `doc_language`: Language
-* `first_page_content`: text
-* `supplier_name`: Supplier Name
-* `supplier_vat`: internal
-* `doc_created_on`: timestamp with time zone
-* `is_training_sample`: boolean
-* `sample_doc_id`: internal
-* `sample_file_name`: internal
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `is_table_training_sample`: boolean
+* `id`：内部标识
+* `org_id`：组织 ID
+* `doc_type`：文档类型
+* `doc_origin`：文档来源
+* `doc_locale`：文档区域设置
+* `doc_language`：语言
+* `first_page_content`：文本
+* `supplier_name`：供应商名称
+* `supplier_vat`：内部标识
+* `doc_created_on`：带时区的时间戳
+* `is_training_sample`：布尔值
+* `sample_doc_id`：内部标识
+* `sample_file_name`：内部标识
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `is_table_training_sample`：布尔值
 
-### Analyse & Beschreibung
+### 分析与说明
 
-## Technical Documentation for `public.training_data` Table
+## `public.training_data` 表技术文档
 
-### Introduction
+### 简介
 
-The `public.training_data` table appears to be designed for storing various document-related data, likely used for training models or systems that process and analyze document contents. The table includes information about the document type, origin, language, supplier details, and timestamps related to the creation and modification of records, among other attributes. It seems particularly focused on invoices and medical receipts, which suggests its use in financial or healthcare data processing applications.
+`public.training_data` 表似乎用于存储各种与文档相关的数据，可能用于训练处理和分析文档内容的模型或系统。该表包含文档类型、来源、语言、供应商详情，以及记录的创建和修改时间戳等信息。该表似乎尤其关注发票和医疗收据，这表明它可能用于财务或医疗保健数据处理应用。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: Unique identifier for each record in the table.
-* **Role**: Primary key.
-* **Typical Contents**: A universally unique identifier (UUID) in character format.
-* **Note**: Essential for uniquely identifying each entry.
+* **含义**：表中每条记录的唯一标识符。
+* **作用**：主键。
+* **典型内容**：字符格式的通用唯一标识符（UUID）。
+* **说明**：对于唯一标识每条记录至关重要。
 
 #### org\_id
 
-* **Meaning**: Identifier for the organization associated with the document.
-* **Role**: Foreign key that links to an organization record.
-* **Typical Contents**: UUID representing an organization.
-* **Note**: Helps in associating documents with specific organizations.
+* **含义**：与文档关联的组织标识符。
+* **作用**：用于关联组织记录的外键。
+* **典型内容**：代表组织的 UUID。
+* **说明**：有助于将文档与特定组织关联起来。
 
 #### doc\_type
 
-* **Meaning**: Type of document stored in the record.
-* **Role**: Descriptive field.
-* **Typical Contents**: Values such as 'INVOICE' or 'MEDICAL\_RECEIPT'.
-* **Note**: Useful for categorizing the documents.
+* **含义**：记录中存储的文档类型。
+* **作用**：描述性字段。
+* **典型内容**：例如 'INVOICE' 或 'MEDICAL\_RECEIPT'。
+* **说明**：可用于对文档进行分类。
 
 #### doc\_origin
 
-* **Meaning**: Origin or source country code of the document.
-* **Role**: Descriptive field.
-* **Typical Contents**: Country code like 'DE' for Germany.
-* **Note**: Indicates the geographical origin of the document.
+* **含义**：文档来源国家/地区的代码。
+* **作用**：描述性字段。
+* **典型内容**：国家/地区代码，例如德国的 'DE'。
+* **说明**：表示文档的地理来源。
 
 #### doc\_locale
 
-* **Meaning**: Locale information of the document.
-* **Role**: Descriptive field.
-* **Typical Contents**: Locale code such as 'en\_DE'.
-* **Note**: Combines language and region for localization purposes.
+* **含义**：文档的区域设置信息。
+* **作用**：描述性字段。
+* **典型内容**：区域代码，例如 'en\_DE'。
+* **说明**：结合语言和地区信息，用于本地化。
 
 #### doc\_language
 
-* **Meaning**: Language in which the document is written.
-* **Role**: Descriptive field.
-* **Typical Contents**: Language code like 'en' or 'de'.
-* **Note**: Indicates the primary language used in the document.
+* **含义**：文档使用的语言。
+* **作用**：描述性字段。
+* **典型内容**：语言代码，例如 'en' 或 'de'。
+* **说明**：表示文档使用的主要语言。
 
 #### first\_page\_content
 
-* **Meaning**: Content of the first page of the document.
-* **Role**: Descriptive field.
-* **Typical Contents**: Text data containing the document's first page content.
-* **Note**: May be used for text analysis or processing.
+* **含义**：文档第一页的内容。
+* **作用**：描述性字段。
+* **典型内容**：包含文档首页内容的文本数据。
+* **说明**：可用于文本分析或处理。
 
 #### supplier\_name
 
-* **Meaning**: Name of the supplier associated with the document.
-* **Role**: Descriptive field.
-* **Typical Contents**: Supplier's name in text format.
-* **Note**: Important for identifying the source or creator of the document.
+* **含义**：与文档关联的供应商名称。
+* **作用**：描述性字段。
+* **典型内容**：文本格式的供应商名称。
+* **说明**：对于识别文档来源或创建者很重要。
 
 #### supplier\_vat
 
-* **Meaning**: VAT identification number of the supplier.
-* **Role**: Descriptive field.
-* **Typical Contents**: VAT ID, e.g., 'DE 129375678'.
-* **Note**: Useful for fiscal and tax-related processes.
+* **含义**：供应商的增值税识别号。
+* **作用**：描述性字段。
+* **典型内容**：增值税识别号，例如 'DE 129375678'。
+* **说明**：可用于财务和税务相关流程。
 
 #### doc\_created\_on
 
-* **Meaning**: Timestamp when the document was created.
-* **Role**: Descriptive field.
-* **Typical Contents**: Date and time in UTC format.
-* **Note**: Provides temporal context for the document creation.
+* **含义**：文档创建时的时间戳。
+* **作用**：描述性字段。
+* **典型内容**：UTC 格式的日期和时间。
+* **说明**：为文档创建提供时间背景。
 
 #### is\_training\_sample
 
-* **Meaning**: Indicator of whether the record is used as a training sample.
-* **Role**: Technical field.
-* **Typical Contents**: Boolean value (`True` or `False`).
-* **Note**: Identifies records specifically marked for training purposes.
+* **含义**：标识该记录是否用作训练样本。
+* **作用**：技术字段。
+* **典型内容**：布尔值（`True` 或 `False`）。
+* **说明**：标识专门标记为训练用途的记录。
 
 #### sample\_doc\_id
 
-* **Meaning**: Identifier for the sample document.
-* **Role**: Descriptive field or possible foreign key.
-* **Typical Contents**: UUID linking to another document.
-* **Note**: May reference a related or original document used for sampling.
+* **含义**：样本文档的标识符。
+* **作用**：描述性字段或可能的外键。
+* **典型内容**：关联到另一份文档的 UUID。
+* **说明**：可能引用用于抽样的相关文档或原始文档。
 
 #### sample\_file\_name
 
-* **Meaning**: Name of the file associated with the document sample.
-* **Role**: Descriptive field.
-* **Typical Contents**: File name in text format.
-* **Note**: Useful for file management or retrieval processes.
+* **含义**：与文档样本关联的文件名。
+* **作用**：描述性字段。
+* **典型内容**：文本格式的文件名。
+* **说明**：可用于文件管理或检索流程。
 
 #### created\_on
 
-* **Meaning**: Timestamp when the record was created.
-* **Role**: Technical field.
-* **Typical Contents**: Date and time in UTC format.
-* **Note**: Indicates when the record was added to the database.
+* **含义**：记录创建时的时间戳。
+* **作用**：技术字段。
+* **典型内容**：UTC 格式的日期和时间。
+* **说明**：表示记录添加到数据库的时间。
 
 #### last\_modified\_on
 
-* **Meaning**: Timestamp of the last modification of the record.
-* **Role**: Technical field.
-* **Typical Contents**: Date and time in UTC format.
-* **Note**: Tracks when the record was last updated.
+* **含义**：记录最后修改时的时间戳。
+* **作用**：技术字段。
+* **典型内容**：UTC 格式的日期和时间。
+* **说明**：追踪记录最后更新的时间。
 
 #### is\_deleted
 
-* **Meaning**: Indicator of whether the record has been marked as deleted.
-* **Role**: Technical field.
-* **Typical Contents**: Boolean value (`True` or `False`).
-* **Note**: Supports soft delete functionality.
+* **含义**：标识记录是否已标记为删除。
+* **作用**：技术字段。
+* **典型内容**：布尔值（`True` 或 `False`）。
+* **说明**：支持软删除功能。
 
 #### is\_table\_training\_sample
 
-* **Meaning**: Indicator of whether the record is a table-specific training sample.
-* **Role**: Technical field.
-* **Typical Contents**: Boolean value (`True` or `False`).
-* **Note**: Differentiates from general training samples, focusing on table data.
+* **含义**：标识该记录是否为表格专用训练样本。
+* **作用**：技术字段。
+* **典型内容**：布尔值（`True` 或 `False`）。
+* **说明**：将此类样本与常规训练样本区分开来，重点用于表格数据。

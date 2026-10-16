@@ -1,43 +1,42 @@
-# Missing Text in OCR Extraction
+# OCR 提取中缺少文本
 
-## **Issue**
+## **问题**
 
-In some cases, text may appear to be missing in the **OCR View**, which prevents it from being extracted using the extraction feature.
+在某些情况下，**OCR View** 中可能会缺少文本，因此无法使用提取功能提取这些文本。
 
 <figure><img src="../../../../.gitbook/assets/troubleshooting_ocr_5.png" alt=""><figcaption></figcaption></figure>
 
-To verify this, click the **OCR View** button in the toolbar on the right. If the text does not appear there, it means it is not available for extraction.
+要确认这一点，请点击右侧工具栏中的 **OCR View** 按钮。如果其中没有显示该文本，就表示无法提取它。
 
 <figure><img src="../../../../.gitbook/assets/troubleshooting_ocr_6.png" alt=""><figcaption></figcaption></figure>
 
-## **Cause**
+## **原因**
 
-The most likely cause is that the text you’re trying to extract is part of an image (e.g. a logo or scanned section) within the document.\
-When the E-Text feature is enabled, text that appears on images or logos is not included in the extracted text layer. As a result, this text cannot be accessed or extracted through standard extraction logic.
+最可能的原因是，您尝试提取的文本位于文档中的图像内（例如徽标或扫描的内容）。\
+启用 E-Text 功能后，图像或徽标中的文本不会包含在提取的文本层中。因此，无法通过标准提取逻辑访问或提取这些文本。
 
-## **Fix**
+## **解决方法**
 
-To resolve this issue, disable the E-Text feature—either for the [specific supplier](missing-text-in-ocr-extraction.md#disable-e-text-for-a-specific-supplier) or for the [entire organization](missing-text-in-ocr-extraction.md#disable-e-text-for-the-entire-organization). Once E-Text is deactivated, DocBits will rely solely on OCR, which is capable of extracting text from images and logos within the document.
+要解决此问题，请禁用 E-Text 功能：可以针对[特定供应商](missing-text-in-ocr-extraction.md#disable-e-text-for-a-specific-supplier)禁用，也可以针对[整个组织](missing-text-in-ocr-extraction.md#disable-e-text-for-the-entire-organization)禁用。停用 E-Text 后，DocBits 将仅使用 OCR，从而能够从文档中的图像和徽标提取文本。
 
-### **Disable E-Text for a Specific Supplier**
+### **针对特定供应商禁用 E-Text** <a id="disable-e-text-for-a-specific-supplier"></a>
 
-1. Open a document from the specific supplier in the **Field Validation**.
-2.  Click the three-dot menu in the toolbar on the right.
+1. 在 **Field Validation** 中打开一份来自该供应商的文档。
+2.  点击右侧工具栏中的三点菜单。
 
     <figure><img src="../../../../.gitbook/assets/troubleshooting_ocr_2.png" alt=""><figcaption></figcaption></figure>
-3.  Uncheck **Use E-Text if available**.
+3.  取消勾选 **Use E-Text if available**。
 
     <figure><img src="../../../../.gitbook/assets/troubleshooting_ocr_3.png" alt=""><figcaption></figcaption></figure>
-4.  Click **Confirm** to restart processing for the document.
+4.  点击 **Confirm**，重新启动该文档的处理。
 
     <figure><img src="../../../../.gitbook/assets/troubleshooting_ocr_4.png" alt=""><figcaption></figcaption></figure>
 
-### Disable E-Text for the Entire Organization
+### 针对整个组织禁用 E-Text <a id="disable-e-text-for-the-entire-organization"></a>
 
-1.  Go to **Settings → Document Processing → OCR Settings**.
+1.  前往 **Settings → Document Processing → OCR Settings**。
 
     <figure><img src="../../../../.gitbook/assets/settings_ocr.png" alt=""><figcaption></figcaption></figure>
-2.  Under **General OCR Settings**, uncheck the option **Use E-Text if available**.
+2.  在 **General OCR Settings** 下，取消勾选 **Use E-Text if available** 选项。
 
     <figure><img src="../../../../.gitbook/assets/troubleshooting_ocr_1.png" alt=""><figcaption></figcaption></figure>
-

@@ -1,48 +1,48 @@
-# Field
+# 字段
 
-## Spalten
+## 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_type`: DOC Type
-* `is_sub_doc_type_field`: boolean
-* `profile`: internal
-* `field_name`: internal
-* `field_type`: internal
-* `title`: internal
-* `translation_key`: internal
-* `hide_label`: boolean
-* `input_type`: internal
-* `input_size`: internal
-* `icon_left`: internal
-* `icon_right`: internal
-* `icon_above`: internal
-* `group_id`: internal
-* `row_order`: integer
-* `sort_order`: integer
-* `fuzzy_name`: internal
-* `fuzzy_field`: internal
-* `fuzzy_primary_field`: boolean
-* `label_align`: internal
-* `calculation_formula`: text
-* `clean_field`: boolean
-* `alphanumeric_field`: boolean
-* `placeholder`: internal
-* `coordinates`: internal
-* `normalized_coordinates`: internal
-* `threshold`: internal
-* `reference_point`: internal
-* `checkbox_group`: internal
-* `list_of_values`: internal
-* `enforce_list_of_values`: boolean
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `costing_element`: internal
-* `erp_field_name`: internal
+* `id`：内部字段
+* `org_id`：组织 ID
+* `doc_type`：文档类型
+* `is_sub_doc_type_field`：布尔值
+* `profile`：内部字段
+* `field_name`：内部字段
+* `field_type`：内部字段
+* `title`：内部字段
+* `translation_key`：内部字段
+* `hide_label`：布尔值
+* `input_type`：内部字段
+* `input_size`：内部字段
+* `icon_left`：内部字段
+* `icon_right`：内部字段
+* `icon_above`：内部字段
+* `group_id`：内部字段
+* `row_order`：整数
+* `sort_order`：整数
+* `fuzzy_name`：内部字段
+* `fuzzy_field`：内部字段
+* `fuzzy_primary_field`：布尔值
+* `label_align`：内部字段
+* `calculation_formula`：文本
+* `clean_field`：布尔值
+* `alphanumeric_field`：布尔值
+* `placeholder`：内部字段
+* `coordinates`：内部字段
+* `normalized_coordinates`：内部字段
+* `threshold`：内部字段
+* `reference_point`：内部字段
+* `checkbox_group`：内部字段
+* `list_of_values`：内部字段
+* `enforce_list_of_values`：布尔值
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `costing_element`：内部字段
+* `erp_field_name`：内部字段
 
-## Analyse & Beschreibung
+## 分析与说明
 
 ```markdown
 # Technical Documentation for `public.field` Table

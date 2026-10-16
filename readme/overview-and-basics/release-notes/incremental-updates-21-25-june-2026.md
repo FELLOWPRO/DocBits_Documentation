@@ -1,110 +1,69 @@
-# Hotfixes 21–25 June 2026
+# 2026年6月21日至25日热修复
 
-_What this prod upgrade delivered, in plain language. Each service shows the
-version now live on production. Services not listed had no customer-facing changes
-in this window._
+_本次生产环境升级交付的内容，简明易懂。每项服务均显示当前生产环境版本。本时段未列出的服务没有面向客户的变更。_
 
 ---
 
-## Highlights
+## 重点更新
 
-- **Smarter dashboard search.** Search documents reliably by amounts and numbers —
-  find invoices above a value, or search by **requisition number** — with amount
-  ranges that compare real numbers, not text. Invoice sub-types are searchable by
-  their translated names.
-- **Reliable e-mail notifications.** Status-change alerts now go out for every
-  status (no more silently dropped e-mails), and inbound-import receipts and
-  failure notices are now properly DocBits-branded with per-recipient controls.
-- **Smoother sign-in across regions (EU/US).** Region switching is now a small
-  banner instead of a full-screen interruption, single sign-on lands in the
-  correct region, and staying signed in across multiple browser tabs is more
-  reliable.
-- **Permissions fixes.** Users get the access their group grants them — opening,
-  editing, approving and restarting documents now work correctly even when groups
-  and permissions are configured in less common ways.
-- **Steadier document processing.** Documents that previously got stuck after
-  upload are automatically picked up again, and a burst from one customer no
-  longer slows down others.
+- **更智能的仪表板搜索。** 可按金额和编号可靠地搜索文档——查找金额高于指定值的发票，或按**请购单编号**搜索；金额范围会按实际数值而非文本进行比较。发票子类型也可以按其译名搜索。
+- **可靠的电子邮件通知。** 现在所有状态的变更提醒都会发送（不再有电子邮件被静默丢弃的情况）；入站导入回执和失败通知现在采用规范的 DocBits 品牌样式，并可按收件人进行控制。
+- **跨区域登录更顺畅（EU/US）。** 切换区域时现在显示简短横幅，不再出现全屏中断；单点登录会进入正确的区域；在多个浏览器标签页中保持登录状态也更加可靠。
+- **权限修复。** 用户现在可以获得其用户组授予的访问权限——即使用户组和权限采用较少见的配置方式，打开、编辑、审批和重新启动文档也都能正常工作。
+- **文档处理更稳定。** 之前上传后卡住的文档现在会自动重新处理；单个客户的大量任务也不再拖慢其他客户的处理速度。
 
 ---
 
-## Web App — live: `10.32.4`
+## Web 应用 — 当前版本：`10.32.4`
 
-- **Quick search jump (Cmd/Ctrl + K)** straight to the **E-Invoice Validation**
-  setting.
-- **Region & sign-in:** region switch shown as a persistent banner instead of a
-  blocking screen; single sign-on now redirects to the correct region (EU/US);
-  staying logged in across multiple tabs is more reliable.
-- **Permissions:** fixed cases where users couldn't **approve**, **edit**, **open**
-  or **restart** documents despite having the right group permissions.
-- **Inbound e-mail settings:** new “Notify sender” and “Reply to sender on receipt”
-  toggles.
-- **Usability:** the duplicate-document warning now must be dismissed before
-  continuing; the “backend unavailable” banner only appears during real outages;
-  task counters update immediately when tasks are completed; dark-mode fix on the
-  AI table validation screen.
-- **Performance:** fixed a freeze on the e-document screen during field validation
-  and PO matching.
-- **Search invoice sub-types by their translated names.**
+- **快速搜索跳转（Cmd/Ctrl + K）**，可直接跳转到**电子发票验证**设置。
+- **区域与登录：** 区域切换现在以常驻横幅显示，不再显示阻断操作的屏幕；单点登录现在会重定向到正确的区域（EU/US）；在多个标签页中保持登录状态更加可靠。
+- **权限：** 修复了用户拥有正确的用户组权限却无法**审批**、**编辑**、**打开**或**重新启动**文档的情况。
+- **入站电子邮件设置：** 新增“通知发件人”和“收到邮件时回复发件人”开关。
+- **易用性：** 继续操作前必须先关闭重复文档警告；只有在实际发生服务中断时才会显示“后端不可用”横幅；任务完成后计数器会立即更新；修复了 AI 表格验证屏幕的深色模式问题。
+- **性能：** 修复了电子单据屏幕在进行字段验证和采购订单匹配时发生卡顿的问题。
+- **可按译名搜索发票子类型。**
 
-## API Service — live: `12.41.9`
+## API 服务 — 当前版本：`12.41.9`
 
-- **Dashboard search overhaul:** requisition number and requisitioner are now
-  searchable; amount and number searches return correct results (true numeric
-  comparison); total net amount and calculated columns display correctly.
-- **Reliable status-alert e-mails** for any document status, with send failures no
-  longer hidden.
-- **Permissions:** users without a group can open and approve their own documents;
-  document visibility for group-less users restored.
-- **Document processing reliability:** documents stuck in “new” are automatically
-  re-queued; fair-share processing so a large burst from one organisation doesn’t
-  starve others; self-healing for rare database sequence issues.
-- **Scanned PDFs with a broken text layer are routed to OCR** instead of producing
-  unreliable text.
-- **Extraction & PO accuracy:** supplier name filled from the connected purchase
-  order; duplicate item-number columns removed; better handling of special
-  (non-breaking) spaces.
-- **Infor ERP / SAP export:** fixed SFTP export authentication.
-- **E-invoicing:** ZUGFeRD / e-document extraction-path refinements.
+- **仪表板搜索全面改进：** 现在可以搜索请购单编号和请购人；金额和编号搜索会返回正确结果（按真实数值比较）；净额总计和计算列现在可以正确显示。
+- **状态提醒电子邮件更可靠：** 任何文档状态都会发送提醒，发送失败也不再被隐藏。
+- **权限：** 未加入用户组的用户现在可以打开并审批自己的文档；已恢复未加入用户组的用户对文档的可见性。
+- **文档处理更加可靠：** 卡在“新建”状态的文档会自动重新加入处理队列；采用公平共享处理机制，避免某个组织的大量任务导致其他组织无法处理；针对罕见的数据库序列问题提供自我修复机制。
+- **文本层损坏的扫描版 PDF 会转交 OCR 处理**，避免生成不可靠的文本。
+- **提取与采购订单准确性：** 从关联的采购订单中填充供应商名称；移除重复的行项目编号列；更好地处理特殊空格（不换行空格）。
+- **Infor ERP / SAP 导出：** 修复了 SFTP 导出身份验证问题。
+- **电子发票：** 优化 ZUGFeRD / 电子单据的提取路径。
 
-## Auth Service — live: `1.66.0`
+## Auth Service — 当前版本：`1.66.0`
 
-- **Fixed missing organisation assignment** for some users (empty org id).
+- **修复了部分用户缺少组织分配的问题**（组织 ID 为空）。
 
-## Docflow Service — live: `2.3.4`
+## Docflow Service — 当前版本：`2.3.4`
 
-- **Workflow trigger cooldown** is now configurable per environment.
+- 工作流触发冷却时间现在可以按环境配置。
 
-## Email Service — live: `1.35.9`
+## Email Service — 当前版本：`1.35.9`
 
-- **Branded e-mails:** inbound-import receipts and failure notices now use the real
-  DocBits logo and colours.
-- **Per-organisation controls:** confirmation e-mail on receipt, “notify sender”
-  on failure, and reply-to-sender options.
-- **More reliable inbound import:** import results are recorded correctly, partial
-  failures are reported as failures (not silent successes), and problem characters
-  in e-mail bodies no longer break import.
-- **EU/US routing:** per-organisation routing to the correct regional API.
+- **品牌电子邮件：** 入站导入回执和失败通知现在使用真实的 DocBits 徽标和配色。
+- **按组织控制：** 收到邮件时发送确认电子邮件、失败时“通知发件人”，以及回复发件人选项。
+- **入站导入更加可靠：** 导入结果现在会正确记录；部分失败会报告为失败（而非静默显示成功）；电子邮件正文中的问题字符不再导致导入中断。
+- **EU/US 路由：** 按组织将请求路由到正确的区域 API。
 
-## Fulltext Service — live: `1.34.5`
+## Fulltext Service — 当前版本：`1.34.5`
 
-- **Search by amounts and numbers** now works reliably, including thousands
-  separators and amount ranges (the engine behind the dashboard search overhaul).
-- **Steadier search infrastructure:** orphaned background queues are cleaned up so
-  they no longer tie up shared resources.
+- **金额和编号搜索**现在可以可靠运行，包括千位分隔符和金额范围（这是仪表板搜索全面改进的底层引擎）。
+- **搜索基础设施更稳定：** 清理孤立的后台队列，避免其继续占用共享资源。
 
-## PO Match Service — live: `1.54.7`
+## PO Match Service — 当前版本：`1.54.7`
 
-- **More robust purchase-order matching:** text-based packaging/packing-unit codes
-  no longer block a match, and manual line matching handles empty results safely.
+- **采购订单匹配更加稳健：** 基于文本的包装/包装单位代码不再阻碍匹配；手动行项目匹配现在可以安全处理空结果。
 
 ---
 
-## No customer-facing changes in this window
+## 本时段没有面向客户的变更
 
-Stable, no notable product changes between 21–25 June: Auto Accounting (`1.18.5`),
-Barcode (`1.15.6`), Docnet (`1.54.6`), Extraction (`1.48.6`), FTP (`1.30.0`),
-OCR (`1.6.8`), Operator (`1.39.5`).
+6月21日至25日期间保持稳定，没有值得注意的产品变更：Auto Accounting（`1.18.5`）、Barcode（`1.15.6`）、Docnet（`1.54.6`）、Extraction（`1.48.6`）、FTP（`1.30.0`）、OCR（`1.6.8`）、Operator（`1.39.5`）。
 
 <!-- Generated by the docbits-changelog skill (prod-delta mode). Versions read live
      from prod (do-fra1-polydocs/prod); window 2026-06-21 → 2026-06-25. -->

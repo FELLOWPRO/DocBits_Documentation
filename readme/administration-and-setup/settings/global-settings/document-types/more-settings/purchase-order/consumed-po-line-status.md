@@ -1,36 +1,34 @@
-# Consumed PO line status
+# 已消耗采购订单行状态
 
-**Consumed PO line status** colors purchase order lines in the matching view according to how much of each line has already been matched. Turn it on for the invoice document type if your team needs to spot unused, partly used, and fully used PO lines quickly. The color is a visual aid; check the **Matched Quantity** and the selected PO quantity column before deciding whether a line can be matched again.
+**已消耗采购订单行状态**会根据每个行项目已匹配的数量，在匹配视图中为采购订单行着色。如果团队需要快速识别未使用、部分使用和全部使用的采购订单行，请为发票文档类型启用此设置。颜色仅用于视觉辅助；在决定能否再次匹配某一行之前，请检查**已匹配数量**和所选的采购订单数量列。
 
-## Turn on the setting
+## 启用设置
 
-1. Open **Settings → Document Types**. Find the document type used for your invoices and select the gear on its card to open **More Settings**. The screenshot shows the **Invoice** card. Leave the **Activate** and **Extraction** switches as they are.
+1.  打开**设置 → 文档类型**。找到用于发票的文档类型，并选择其卡片上的齿轮图标以打开**更多设置**。截图显示的是**发票**卡片。请保持**激活**和**提取**开关的当前状态。
 
-   <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-document-types-en.png" alt="Document Types page with the Invoice card and its More Settings gear"><figcaption><p>Open More Settings from the Invoice card.</p></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-document-types-en.png" alt="文档类型页面，其中显示发票卡片及其更多设置齿轮图标"><figcaption><p>从发票卡片打开更多设置。</p></figcaption></figure>
+2.  如果**采购订单**处于折叠状态，请展开该部分。找到**已消耗采购订单行状态**并打开其开关。这是一个独立设置，与同一部分下方的**更新文档采购订单状态**不同。
 
-2. Expand **Purchase Order** if it is collapsed. Find **Consumed PO line status** and turn on its switch. This is a separate setting from **Update Document Purchase Order Status** further down the same section.
+    <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-settings-en.png" alt="更多设置中的采购订单部分，其中显示已消耗采购订单行状态开关"><figcaption><p>选择已消耗采购订单行状态开关。</p></figcaption></figure>
 
-   <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-settings-en.png" alt="Purchase Order section of More Settings, with the Consumed PO line status switch visible"><figcaption><p>Choose the Consumed PO line status switch.</p></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-toggle-en.png" alt="已消耗采购订单行状态标签和开关的近景"><figcaption><p>此示例中的开关处于关闭状态；打开后即可显示匹配颜色。</p></figcaption></figure>
+3. 打开启用了采购订单匹配的发票，并检查其中的采购订单行。以下示例展示了行颜色与匹配状态之间的关系。匹配步骤请参阅[采购订单匹配](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/)。
 
-   <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-toggle-en.png" alt="Close view of the Consumed PO line status label and switch"><figcaption><p>The switch is off in this example; turn it on to show the matching colors.</p></figcaption></figure>
+## 查看采购订单行颜色
 
-3. Open an invoice with purchase order matching and inspect its PO lines. The examples below show how the line colors relate to matching state. For the matching steps, see [Purchase Order Matching](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md).
+| 外观     | 含义                                                                                     | 检查事项                                                       |
+| -------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| 普通或白色 | 此采购订单行尚未匹配任何数量。                                           | 匹配前请检查采购订单数量和发票行。             |
+| 蓝色阴影      | 你在当前匹配视图中选中了该行。                                         | 选择是临时的；这并不表示该行已全部匹配。 |
+| 浅橙色    | 已匹配部分数量，但匹配数量低于所选采购订单数量。 | 检查剩余数量。                                    |
+| 浅紫色    | 匹配数量大于或等于所选采购订单数量。                                  | 不要假设还有更多可用数量。                           |
 
-## Read the PO line colors
+<figure><img src="../../../../../../.gitbook/assets/image (450).png" alt="采购订单行的已匹配数量为零，且没有状态颜色"><figcaption><p>尚未匹配任何数量。</p></figcaption></figure>
 
-| Appearance | Meaning | What to check |
-| --- | --- | --- |
-| Plain or white | No quantity on this PO line has been matched yet. | Check the PO quantity and invoice line before matching. |
-| Blue tint | You selected the line in the current matching view. | Selection is temporary; it does not mean the line is fully matched. |
-| Pale orange | Some quantity has been matched, but the matched quantity is below the selected PO quantity. | Check how much quantity remains. |
-| Pale violet | The matched quantity is at least the selected PO quantity. | Do not assume more quantity is available. |
+<figure><img src="../../../../../../.gitbook/assets/image (451).png" alt="匹配视图中带有蓝色选中阴影的采购订单行"><figcaption><p>该行已被选中用于当前匹配。</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (470).png" alt="PO line with zero matched quantity and no status color"><figcaption><p>No quantity has been matched yet.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/consumed_po_line_status.png" alt="背景为浅橙色且已匹配数量低于采购订单数量的采购订单行"><figcaption><p>该行已部分使用。</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (472).png" alt="PO line with a blue selection tint in the matching view"><figcaption><p>The line is selected for the current match.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (452).png" alt="背景为浅紫色且已匹配数量等于采购订单数量的采购订单行"><figcaption><p>该行已全部使用。</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/consumed_po_line_status.png" alt="PO line with a pale orange background and a matched quantity below the PO quantity"><figcaption><p>The line is partly used.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/image (473).png" alt="PO line with a pale violet background and a matched quantity equal to the PO quantity"><figcaption><p>The line is fully used.</p></figcaption></figure>
-
-A crossed-out line has a different meaning: its PO status may be excluded by [PO disable statuses](purchase-order-disable-statuses.md). Check that setting if a line cannot be selected.
+带删除线的行含义不同：其采购订单状态可能被[禁用的采购订单状态](purchase-order-disable-statuses.md)排除。如果某一行无法选中，请检查该设置。

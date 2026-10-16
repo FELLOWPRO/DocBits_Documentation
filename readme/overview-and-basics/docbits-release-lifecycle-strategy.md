@@ -1,155 +1,155 @@
-# DocBits Release Lifecycle Strategy
+# DocBits 发布生命周期策略
 
-**NOVA R1.1 availability:** Available in the sandbox since **16 October 2026**. The production release is planned for **4 November 2026**.
+**NOVA R1.1 可用时间：**自 **2026 年 10 月 16 日**起可在沙盒中使用。计划于 **2026 年 11 月 4 日**发布到生产环境。
 
-With the rollout of the upcoming minor release R1.1,&#x20;DocBits will introduce a new release lifecycle strategy based on two release channels: VESTA and NOVA.
+随着即将推出的小版本 R1.1，&#x20;DocBits 将采用新的发布生命周期策略，基于两个发布渠道：VESTA 和 NOVA。
 
-**NOVA** is the channel for introducing new major and minor releases, such as **Rx** and **Rx.y**. **VESTA** continues to provide the existing production release.
+**NOVA** 用于推出新的主版本和小版本，例如 **Rx** 和 **Rx.y**。**VESTA** 继续提供现有的生产版本。
 
-## Release channels
+## 发布渠道
 
-| Channel | Role in the lifecycle |
+| 渠道 | 在生命周期中的作用 |
 | --- | --- |
-| **VESTA** | Provides the current production release. |
-| **NOVA** | Provides the next release as it progresses through development, testing, and production availability. During parallel production, NOVA and VESTA both offer live production releases. |
+| **VESTA** | 提供当前生产版本。 |
+| **NOVA** | 提供下一个版本，并随其经历开发、测试和生产环境可用阶段而持续推进。在并行生产阶段，NOVA 和 VESTA 都提供可用的生产版本。 |
 
-## Lifecycle overview
+## 生命周期概览
 
-![DocBits VESTA and NOVA three-phase release lifecycle](../.gitbook/assets/docbits-release-lifecycle-strategy.png)
+![DocBits VESTA 和 NOVA 的三阶段发布生命周期](../.gitbook/assets/docbits-release-lifecycle-strategy.png)
 
-Each cycle consists of three phases. A FELLOWPRO-managed rollover then brings the NOVA production release into VESTA and starts the next cycle.
+每个周期包含三个阶段。随后由 FELLOWPRO 管理版本切换，将 NOVA 生产版本转入 VESTA，并开始下一个周期。
 
-| Phase | VESTA | NOVA | What this means for your organization |
+| 阶段 | VESTA | NOVA | 对贵组织的意义 |
 | --- | --- | --- | --- |
-| **1. Development** | R1.0.x in production | R1.1 in development | Continue using VESTA while the next release is prepared. |
-| **2. QA and acceptance testing** | R1.0.x in production | R1.1 in QA and UAT | Evaluate the upcoming release in the NOVA sandbox while production work continues on VESTA. |
-| **3. Parallel production** | R1.0.x in production | R1.1.x in production | Remain on VESTA or independently switch to NOVA when ready. |
+| **1. 开发** | R1.0.x 在生产环境中 | R1.1 正在开发 | 在准备下一个版本期间，继续使用 VESTA。 |
+| **2. QA 和验收测试** | R1.0.x 在生产环境中 | R1.1 正在进行 QA 和 UAT | 在 NOVA 沙盒中评估即将推出的版本，同时继续在 VESTA 上进行生产工作。 |
+| **3. 并行生产** | R1.0.x 在生产环境中 | R1.1.x 在生产环境中 | 继续使用 VESTA，或在准备就绪时自行切换到 NOVA。 |
 
-After the rollover, all customers use VESTA R1.1.x, and NOVA is recycled for development of R1.2. Phase 1 begins again with these updated versions.
+版本切换后，所有客户都将使用 VESTA R1.1.x，NOVA 则重新用于 R1.2 的开发。阶段 1 随更新后的版本号重新开始。
 
-### Phase 1 — Development
+### 阶段 1 — 开发
 
-VESTA provides the current production release, R1.0.x, while the next release, R1.1, is developed in NOVA. Your organization continues its day-to-day work on VESTA throughout this phase.
+VESTA 提供当前生产版本 R1.0.x，同时在 NOVA 中开发下一个版本 R1.1。在此阶段，贵组织继续在 VESTA 上开展日常工作。
 
-### Phase 2 — QA and acceptance testing
+### 阶段 2 — QA 和验收测试
 
-The upcoming NOVA release progresses through quality assurance (QA) and user acceptance testing (UAT). You can evaluate it in the NOVA sandbox to assess how the changes fit your organization's workflows and prepare for adoption.
+即将推出的 NOVA 版本将进入质量保证 (QA) 和用户验收测试 (UAT) 阶段。您可以在 NOVA 沙盒中评估该版本，了解这些更改是否适合贵组织的工作流，并为采用新版本做好准备。
 
-VESTA R1.0.x remains the production release during this phase. You can switch to NOVA for production use once it becomes available in Phase 3.
+在此阶段，VESTA R1.0.x 仍是生产版本。进入阶段 3 并可用后，您即可切换到 NOVA 用于生产。
 
-### Phase 3 — Parallel production
+### 阶段 3 — 并行生产
 
-VESTA R1.0.x and NOVA R1.1.x are both live production releases. Your organization decides whether and when to switch to NOVA, based on your needs and the results of your sandbox evaluation.
+VESTA R1.0.x 和 NOVA R1.1.x 都是可用的生产版本。贵组织可根据自身需求和沙盒评估结果，决定是否以及何时切换到 NOVA。
 
-To adopt NOVA during this phase:
+要在此阶段采用 NOVA：
 
-1. Evaluate the release in the NOVA sandbox.
-2. Check the release announcement or confirm with FELLOWPRO Support that both production environments are ready and available for switching.
-3. Decide when your organization is ready to use the new release in production.
-4. In DocBits, go to **Settings > Company Information > Release Channel** and select **NOVA**.
+1. 在 NOVA 沙盒中评估该版本。
+2. 查看发布公告，或联系 FELLOWPRO Support，确认两个生产环境均已准备就绪并可供切换。
+3. 决定贵组织何时准备好在生产环境中使用新版本。
+4. 在 DocBits 中，前往 **Settings > Company Information > Release Channel** 并选择 **NOVA**。
 
-During parallel production, you can also switch back to VESTA by going to **Settings > Company Information > Release Channel** and selecting **VESTA**.
+在并行生产期间，您也可以前往 **Settings > Company Information > Release Channel** 并选择 **VESTA**，切换回 VESTA。
 
-Channel switching is self-service. FELLOWPRO does not select which customers should move to NOVA. You may continue using VESTA throughout parallel production and adopt the new release through the subsequent rollover.
+渠道切换由客户自行操作。FELLOWPRO 不会为客户选择是否切换到 NOVA。在整个并行生产期间，您都可以继续使用 VESTA，并在后续版本切换时采用新版本。
 
-## Release rollover and the next cycle
+## 发布版本切换和下一个周期
 
-FELLOWPRO manages the rollover once the NOVA release is ready to become the common production release and acceptance of the planned transition has been obtained from all customers:
+当 NOVA 版本已准备好成为通用生产版本，并且已获得所有客户对计划转换的接受后，FELLOWPRO 将管理版本切换：
 
 **NOVA R1.1.x → VESTA R1.1.x**
 
-### Advance announcement and customer acceptance
+### 提前公告并征求客户接受
 
-FELLOWPRO announces the planned rollover to all customers in advance by email and seeks their acceptance of the transition. You are invited to contact FELLOWPRO with any concerns or objections so they can be discussed before the rollover. The rollover and recycling of NOVA proceed only once the release is ready and all customers have accepted the planned transition.
+FELLOWPRO 会提前通过电子邮件向所有客户公告计划中的版本切换，并征求他们对该转换的接受。欢迎您联系 FELLOWPRO，提出任何疑虑或异议，以便在版本切换前进行讨论。只有在版本准备就绪且所有客户都接受计划中的转换后，才会执行版本切换并重新启用 NOVA。
 
-### What changes at rollover
+### 版本切换时的变化
 
-| Change | Outcome |
+| 变化 | 结果 |
 | --- | --- |
-| **The NOVA release becomes the VESTA release** | R1.1.x becomes the common production release in VESTA for all customers. |
-| **The previous release is retired** | R1.0.x is decommissioned and is no longer available through either channel or by any other means. |
-| **NOVA is recycled for the next release** | Development of R1.2 begins in NOVA, starting Phase 1 of the next cycle. |
+| **NOVA 版本成为 VESTA 版本** | R1.1.x 成为 VESTA 中所有客户共用的生产版本。 |
+| **上一版本退役** | R1.0.x 将被停用，无法再通过任何一个渠道或其他方式使用。 |
+| **NOVA 重新用于下一个版本** | R1.2 开始在 NOVA 中开发，下一个周期的阶段 1 随之开始。 |
 
-The same three phases then repeat with the new version numbers.
+之后，同样的三个阶段将以新的版本号重复进行。
 
-The diagram below illustrates the release cycle described above in greater detail.
+下图更详细地展示了上述发布周期。
 
-![Detailed DocBits VESTA and NOVA release cycle](../.gitbook/assets/docbits-release-lifecycle-strategy-details.png)
+![DocBits VESTA 和 NOVA 发布周期详图](../.gitbook/assets/docbits-release-lifecycle-strategy-details.png)
 
-### Release cadence
+### 发布节奏
 
-The planned cadence differs between major and minor releases introduced through NOVA and hotfixes applied to the production releases in VESTA and NOVA.
+通过 NOVA 推出的主版本和小版本，与应用于 VESTA 和 NOVA 生产版本的热修复，计划节奏有所不同。
 
-#### Major and minor releases through NOVA
+#### 通过 NOVA 推出主版本和小版本
 
-FELLOWPRO currently plans a cycle of approximately **3–4 months for major and minor releases** introduced through the NOVA release channel, such as **Rx** and **Rx.y**. This estimate applies to the release lifecycle described above, including the subsequent rollover into VESTA and recycling of NOVA for the next release. It does not describe the frequency of hotfixes.
+FELLOWPRO 目前计划，**通过 NOVA 发布渠道推出主版本和小版本（例如 **Rx** 和 **Rx.y**）的周期约为 3–4 个月**。此估算适用于上述发布生命周期，包括随后切换到 VESTA 并将 NOVA 重新用于下一个版本。它不代表热修复的频率。
 
-This interval reflects our present planning estimate; it is not a fixed schedule, a maximum cycle duration, or a guarantee of a release or rollover date. The timing of each rollover and the recycling of NOVA depends on both **release readiness and acceptance of the planned transition by all customers**. If additional time is needed to achieve release readiness, address customer concerns, or obtain acceptance from every customer, the cycle will be extended and may take longer than four months.
+此周期是我们当前的计划估算；它不是固定日程、周期时长上限，也不构成发布或版本切换日期的保证。每次版本切换和 NOVA 重新启用的时间，取决于**版本是否准备就绪以及所有客户是否接受计划中的转换**。如果需要更多时间来确保版本准备就绪、处理客户疑虑或获得每位客户的接受，周期就会延长，可能超过四个月。
 
-FELLOWPRO communicates each planned rollover in advance. Any indicative timing remains subject to these conditions being met.
+FELLOWPRO 会提前通知每次计划中的版本切换。任何预估时间都以满足上述条件为前提。
 
-#### Hotfixes in VESTA production
+#### VESTA 生产环境中的热修复
 
-Hotfixes for the VESTA production release are expected approximately **once a month, or at somewhat longer intervals**. This is an indicative cadence rather than a fixed schedule or guaranteed delivery date.
+VESTA 生产版本预计**大约每月发布一次热修复，或以稍长的间隔发布**。这是参考节奏，而非固定日程或保证的交付日期。
 
-#### Stabilization hotfixes in NOVA production
+#### NOVA 生产环境中的稳定性热修复
 
-A general cadence cannot be specified for stabilization hotfixes in NOVA production. NOVA introduces entirely new releases, so the timing and frequency of these hotfixes depend on the stabilization needs of the particular release. They therefore do not follow the indicative monthly cadence for VESTA or the 3–4 month cycle for major and minor releases.
+无法为 NOVA 生产环境中的稳定性热修复指定通用节奏。NOVA 会推出全新的版本，因此此类热修复的时间和频率取决于特定版本的稳定性需求。因此，它们不会遵循 VESTA 的参考月度节奏，也不会遵循主版本和小版本的 3–4 个月周期。
 
-## Responsibilities and customer choice
+## 职责和客户选择
 
-| Transition | Who manages it | What to expect |
+| 转换 | 管理方 | 预期事项 |
 | --- | --- | --- |
-| **Switch between VESTA and NOVA during Phase 3** | Your organization | Evaluate NOVA in the sandbox and choose whether and when to switch. Use **Settings > Company Information > Release Channel** to select NOVA or return to VESTA during parallel production. |
-| **Roll over NOVA R1.1.x into VESTA R1.1.x** | FELLOWPRO | Review the advance email announcement, raise any concerns or objections, and confirm acceptance of the planned transition. FELLOWPRO proceeds once the release is ready and all customers have accepted. |
+| **在阶段 3 于 VESTA 和 NOVA 之间切换** | 贵组织 | 在沙盒中评估 NOVA，并选择是否以及何时切换。在并行生产期间，通过 **Settings > Company Information > Release Channel** 选择 NOVA，或切换回 VESTA。 |
+| **将 NOVA R1.1.x 切换为 VESTA R1.1.x** | FELLOWPRO | 查看提前发送的电子邮件公告，提出任何疑虑或异议，并确认接受计划中的转换。版本准备就绪且所有客户都已接受后，FELLOWPRO 才会继续执行。 |
 
-## Important: Check environment availability before switching
+## 重要提示：切换前请检查环境是否可用 <a id="important-check-environment-availability-before-switching"></a>
 
-Only switch between VESTA and NOVA through **Settings > Company Information > Release Channel** when releases are available in parallel and ready for use in the **corresponding environment on both channels**. Sandbox and production availability must be assessed separately:
+仅当 VESTA 和 NOVA 上的**对应环境**均有并行版本可用且已准备就绪时，才可通过 **Settings > Company Information > Release Channel** 在两个渠道之间切换。沙盒和生产环境的可用情况必须分别评估：
 
-- **Sandbox:** You can switch from VESTA Sandbox to NOVA Sandbox once the new release is ready and available in NOVA Sandbox, while VESTA Sandbox remains available. The same readiness requirement applies when switching back.
-- **Production:** You can switch between VESTA Production and NOVA Production only while both production releases are ready and available in parallel. Availability in NOVA Sandbox does not mean that NOVA Production is ready for use.
+- **沙盒：**当新版本已准备就绪并可在 NOVA 沙盒中使用，且 VESTA 沙盒仍可用时，您即可从 VESTA Sandbox 切换到 NOVA Sandbox。切换回来时也必须满足相同的准备就绪要求。
+- **生产环境：**只有当两个生产版本都已准备就绪并可并行使用时，您才可以在 VESTA Production 和 NOVA Production 之间切换。NOVA 沙盒可用并不意味着 NOVA Production 已准备好供您使用。
 
-Switching when the corresponding environment is not ready or available may disrupt your operations. FELLOWPRO sends release announcement emails a few days before releases become available in sandbox or production. Check these announcements before switching. If you are unsure whether a switch is available or appropriate for your organization, contact FELLOWPRO Support for confirmation.
+如果对应环境尚未准备就绪或不可用时进行切换，可能会影响您的运营。FELLOWPRO 会在版本即将在沙盒或生产环境中可用的几天前发送发布公告电子邮件。请在切换前查看这些公告。如果您不确定是否可以切换，或此切换是否适合贵组织，请联系 FELLOWPRO Support 确认。
 
-**Planned availability control:** FELLOWPRO is working on a Yes/No control that will allow Support to make the Release Channel setting read-only or enable channel switching independently of a software deployment. Once this control is available, Support will use it to enable switching when the corresponding environments are ready and to keep the setting read-only otherwise. This is intended to allow customers to switch safely between VESTA and NOVA when the setting is enabled. Until this control is introduced, an editable setting alone should not be treated as confirmation that switching is appropriate; follow the release announcements or confirm with Support.
+**计划中的可用性控制：**FELLOWPRO 正在开发一个 Yes/No 控制项，让 Support 能够将 Release Channel 设置设为只读，或独立于软件部署启用渠道切换。此控制项推出后，Support 将在对应环境准备就绪时启用切换，否则将设置保持为只读。这样，客户便可在该设置启用时安全地在 VESTA 和 NOVA 之间切换。在此控制项推出之前，即使设置可编辑，也不应将其视为适合切换的确认；请遵循发布公告，或向 Support 确认。
 
-## Frequently asked questions
+## 常见问题
 
-### How do we know whether it is safe to switch between VESTA and NOVA?
+### 如何确认在 VESTA 和 NOVA 之间切换是否安全？
 
-Check the release announcement for the environment you intend to use, or ask FELLOWPRO Support to confirm that switching is appropriate. Both corresponding environments must be ready and available in parallel; sandbox readiness does not confirm production readiness. See [Important: Check environment availability before switching](#important-check-environment-availability-before-switching) above for the full guidance, including the planned control for enabling or disabling channel switching.
+请查看您打算使用的环境对应的发布公告，或咨询 FELLOWPRO Support，确认是否适合切换。两个对应环境必须都已准备就绪并可并行使用；沙盒已准备就绪并不代表生产环境也已准备就绪。有关完整指导，包括用于启用或禁用渠道切换的计划控制项，请参阅上文的[重要提示：切换前请检查环境是否可用](#important-check-environment-availability-before-switching)。
 
-### Can we remain on VESTA while NOVA is available in production?
+### NOVA 在生产环境中可用时，我们可以继续使用 VESTA 吗？
 
-Yes. During Phase 3, you may remain on VESTA or switch to NOVA when your organization is ready. At the subsequent rollover, the new release becomes VESTA and the previous release is retired.
+可以。在阶段 3，您可以继续使用 VESTA，也可以在贵组织准备就绪时切换到 NOVA。在随后的版本切换中，新版本将成为 VESTA 版本，上一版本则会退役。
 
-### How do we switch to NOVA or back to VESTA?
+### 如何切换到 NOVA 或切回 VESTA？
 
-First, check that the corresponding environment is ready and available on both channels, as explained in [Check environment availability before switching](#important-check-environment-availability-before-switching). Sandbox availability and production availability are separate.
+首先，请按照[切换前请检查环境是否可用](#important-check-environment-availability-before-switching)中的说明，确认两个渠道上的对应环境均已准备就绪并可用。沙盒和生产环境的可用情况需要分别确认。
 
-During Phase 3, go to **Settings > Company Information > Release Channel** in DocBits and select **NOVA** to adopt the new production release, or **VESTA** to return to the current VESTA production release. Your organization makes this choice independently, based on its needs and evaluation of NOVA in the sandbox. This choice applies while both releases are available in parallel; the previous VESTA release is retired at rollover.
+在阶段 3，于 DocBits 中前往 **Settings > Company Information > Release Channel**，选择 **NOVA** 以采用新的生产版本，或选择 **VESTA** 以返回当前的 VESTA 生产版本。贵组织可根据自身需求和对 NOVA 的沙盒评估结果独立做出选择。该选择仅在两个版本并行可用期间有效；VESTA 上的上一版本会在版本切换时退役。
 
-### When is NOVA available for production use?
+### NOVA 何时可用于生产？
 
-NOVA becomes a live production release in Phase 3, after development and QA/UAT. During this phase, VESTA and NOVA run in production in parallel with different software versions.
+NOVA 在阶段 3 成为可用的生产版本，此前需经历开发和 QA/UAT。在此阶段，VESTA 和 NOVA 以不同的软件版本并行运行于生产环境中。
 
-### How will we know about the rollover, and can we raise objections?
+### 我们如何得知版本切换安排？可以提出异议吗？
 
-FELLOWPRO emails all customers in advance and seeks acceptance of the planned transition. You are invited to raise any concerns or objections with FELLOWPRO. The rollover and recycling of NOVA proceed only once the release is ready and acceptance has been obtained from all customers.
+FELLOWPRO 会提前通过电子邮件联系所有客户，并征求他们对计划中转换的接受。欢迎您向 FELLOWPRO 提出任何疑虑或异议。只有在版本准备就绪且获得所有客户接受后，才会执行版本切换并重新启用 NOVA。
 
-### Can we continue using R1.0.x after the rollover?
+### 版本切换后，我们还能继续使用 R1.0.x 吗？
 
-No. R1.0.x is decommissioned at rollover and is no longer available through either channel or by any other means. R1.1.x becomes the common VESTA production release for all customers.
+不能。R1.0.x 会在版本切换时停用，无法再通过任何一个渠道或其他方式使用。R1.1.x 将成为所有客户共用的 VESTA 生产版本。
 
-### How does the rollover differ from our switch to NOVA?
+### 版本切换与我们切换到 NOVA 有什么不同？
 
-Your switch to NOVA during Phase 3 is a self-service choice about when to adopt the new production release. The rollover is the subsequent transition managed by FELLOWPRO: NOVA R1.1.x becomes VESTA R1.1.x, the previous release is retired, and the next cycle begins.
+您在阶段 3 自行切换到 NOVA，是在自行决定何时采用新的生产版本。版本切换则是之后由 FELLOWPRO 管理的转换：NOVA R1.1.x 成为 VESTA R1.1.x，上一版本退役，下一个周期开始。
 
-### What happens to NOVA after the rollover?
+### 版本切换后 NOVA 会怎样？
 
-NOVA is recycled for development of the next release, R1.2 in this example. VESTA provides R1.1.x while NOVA progresses through development, QA/UAT, and parallel production again.
+NOVA 将重新用于下一个版本的开发，本例中为 R1.2。VESTA 提供 R1.1.x，同时 NOVA 再次经历开发、QA/UAT 和并行生产阶段。
 
-### Is a major or minor release guaranteed every three to four months?
+### 是否保证每三到四个月推出一个主版本或小版本？
 
-No. The approximate 3–4 month cadence for major and minor releases introduced through NOVA is a current planning estimate, not a guaranteed schedule or a maximum duration. Rollover and recycling of NOVA require both release readiness and acceptance from all customers. If either condition requires more time, the cycle will be extended and may exceed four months. FELLOWPRO communicates each planned rollover in advance.
+不能保证。通过 NOVA 推出主版本和小版本的约 3–4 个月节奏，是当前的计划估算，并非保证的日程或周期时长上限。切换版本并重新启用 NOVA，既要求版本准备就绪，也要求所有客户接受。如果满足任一条件需要更多时间，周期就会延长，可能超过四个月。FELLOWPRO 会提前通知每次计划中的版本切换。

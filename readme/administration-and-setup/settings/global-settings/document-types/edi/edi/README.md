@@ -1,24 +1,24 @@
-# EDI Settings: Overview & Benefits
+# EDI 设置：概述与优势
 
-## **What is EDI?**
+## **什么是 EDI？**
 
-Electronic Data Interchange (EDI) enables the automated, standardized exchange of business documents (e.g., orders, invoices, shipping notices) between companies without manual intervention. By replacing paper-based processes, EDI improves efficiency, accuracy, and speed in business communications.
+电子数据交换（EDI）支持企业之间自动、标准化地交换业务文档（例如订单、发票和发货通知），无需人工干预。通过取代纸质流程，EDI 能够提升业务沟通的效率、准确性和速度。
 
-## **Key Benefits of EDI Settings**
+## **EDI 设置的主要优势**
 
-1. **Supply Chain Optimization**
-   * Facilitates seamless communication between suppliers, manufacturers, distributors, and retailers.
-   * Automates exchange of purchase orders, shipping advices, and invoices, leading to:
-     * Improved inventory management
-     * Faster order fulfillment
-     * Reduced errors and delays
-2. **Streamlined Purchasing**
-   * Automates purchase orders and order confirmations between buyers and suppliers.
-   * Reduces processing time, minimizes manual errors, and enhances order tracking.
-3. **Efficient Financial Transactions**
-   * Enables electronic invoicing, payment advices, and other financial document exchanges.
-   * Accelerates payment cycles, reduces manual data entry, and ensures transaction accuracy.
+1. **优化供应链**
+   * 促进供应商、制造商、分销商和零售商之间顺畅沟通。
+   * 自动交换采购订单、发货通知和发票，从而实现：
+     * 改善库存管理
+     * 加快订单履行
+     * 减少错误和延误
+2. **简化采购流程**
+   * 自动处理买方与供应商之间的采购订单和订单确认。
+   * 缩短处理时间，减少人工错误，并改善订单跟踪。
+3. **提高财务交易效率**
+   * 支持电子发票、付款通知及其他财务文档的交换。
+   * 加快付款周期，减少人工数据录入，并确保交易准确性。
 
-## **Conclusion**
+## **结论**
 
-EDI settings are a cornerstone of modern business operations, driving efficiency, transparency, and automation across supply chains, procurement, and finance. By eliminating manual processes, businesses can achieve faster, more reliable, and cost-effective workflows.
+EDI 设置是现代业务运营的基石，可提高供应链、采购和财务领域的效率、透明度和自动化水平。通过消除人工流程，企业可以实现更快速、更可靠且更具成本效益的工作流。

@@ -1,5 +1,5 @@
-# Purchase Order
+# 采购订单
 
-This section offers a detailed overview of all purchase orders. It includes a search bar with various filters that you can select to quickly narrow down your results. Additionally, you can customize the arrangement of the column headers by using the drag-and-drop functionality for a more tailored viewing experience.
+本节详细概述所有采购订单。页面包含一个搜索栏，其中提供多种筛选条件，您可以选择这些条件来快速缩小搜索范围。此外，您可以使用拖放功能自定义列标题的排列方式，从而获得更符合个人需求的查看体验。
 
-<figure><img src="../../.gitbook/assets/purchase_order_dashboard_overview.png" alt="Purchase Order Dashboard Interface"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/purchase_order_dashboard_overview.png" alt="采购订单仪表板界面"><figcaption></figcaption></figure>

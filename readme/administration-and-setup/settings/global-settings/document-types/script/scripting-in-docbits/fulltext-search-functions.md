@@ -1,55 +1,55 @@
-# Fulltext & Vector Search Functions
+# 全文搜索与向量搜索函数
 
 {% hint style="info" %}
-**Available from version 11.48.0**
+**自版本 11.48.0 起可用**
 
-These functions require the **OPENSEARCH\_ENABLED** license/preference to be activated for your organization. Without it, all functions throw a `RuntimeError("Fulltext search license is missing")`.
+这些函数要求为您的组织启用 **OPENSEARCH\_ENABLED** 许可证/偏好设置。若未启用，所有函数都会抛出 `RuntimeError("Fulltext search license is missing")`。
 {% endhint %}
 
-Functions for searching document archives, finding similar documents, and querying ERP master data. These search across **all documents** of the organization — unlike `get_document_content()` which only reads the current document's text.
+用于搜索文档归档、查找相似文档以及查询 ERP 主数据的函数。这些函数会搜索组织中的**所有文档**，而 `get_document_content()` 只读取当前文档的文本。
 
 {% hint style="success" %}
-**Security:** The `org_id` is automatically injected by the script sandbox. You never need to pass it — your scripts always operate within your own organization's data.
+**安全性：**脚本沙箱会自动注入 `org_id`。您无需传入该参数，脚本始终只会访问您自己组织的数据。
 {% endhint %}
 
-**Source:** `module/script/helper/document_script_functions.py`
+**来源：** `module/script/helper/document_script_functions.py`
 
 ---
 
-## fulltext\_search()
+## fulltext\_search() <a id="fulltext_search"></a>
 
-Searches the full OCR text of **all documents** in the organization. Finds text in `pages.pageText`, `tfidfCustomPageText` and `ai_text` fields via the fulltextsearch microservice.
+搜索组织中**所有文档**的完整 OCR 文本。通过全文搜索微服务在 `pages.pageText`、`tfidfCustomPageText` 和 `ai_text` 字段中查找文本。
 
 ```python
 fulltext_search(query, **kwargs)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Default | Description |
+| 名称 | 类型 | 默认值 | 描述 |
 | ---- | ---- | ------- | ----------- |
-| `query` | `str` | required | Search term (searched in OCR text of all documents) |
-| `search_type` | `str` | `"match_phrase"` | `"match_phrase"` (exact phrase), `"fuzzy"` (typo-tolerant, up to 2 char difference), `"prefix"` (starts with) |
-| `doc_type` | `str` | `None` | Filter by document type (comma-separated, e.g. `"INVOICE,CREDIT_NOTE"`) |
-| `status` | `str` | `None` | Filter by document status (comma-separated, e.g. `"ready_for_validation,exported"`) |
-| `vendor_name` | `str` | `None` | Filter by vendor name |
-| `date_range` | `str` | `None` | `"last_30_days"`, `"last_90_days"`, `"last_180_days"`, `"last_365_days"` |
-| `size` | `int` | `10` | Max results (capped at 50) |
+| `query` | `str` | 必填 | 搜索词（在所有文档的 OCR 文本中搜索） |
+| `search_type` | `str` | `"match_phrase"` | `"match_phrase"`（精确短语）、`"fuzzy"`（容错拼写，最多允许相差 2 个字符）、`"prefix"`（前缀匹配） |
+| `doc_type` | `str` | `None` | 按文档类型筛选（逗号分隔，例如 `"INVOICE,CREDIT_NOTE"`） |
+| `status` | `str` | `None` | 按文档状态筛选（逗号分隔，例如 `"ready_for_validation,exported"`） |
+| `vendor_name` | `str` | `None` | 按供应商名称筛选 |
+| `date_range` | `str` | `None` | `"last_30_days"`、`"last_90_days"`、`"last_180_days"`、`"last_365_days"` |
+| `size` | `int` | `10` | 最大结果数（上限为 50） |
 
-**Returns:** `list[dict]` — Each dict contains:
+**返回值：**`list[dict]` — 每个字典包含：
 
-| Field | Description |
+| 字段 | 描述 |
 | ----- | ----------- |
-| `doc_id` | Document UUID |
-| `name` | Filename (e.g. `"INV-2026-001.pdf"`) |
-| `doc_type` | Document type (`"INVOICE"`, `"ORDER_CONFIRMATION"`, etc.) |
-| `vendor_name` | Vendor name |
-| `status` | Document status |
-| `total_amount` | Total amount |
-| `ocr_content` | Matched text excerpt from the document |
-| `highlights` | Dict with highlighted matches per field |
+| `doc_id` | 文档 UUID |
+| `name` | 文件名（例如 `"INV-2026-001.pdf"`） |
+| `doc_type` | 文档类型（`"INVOICE"`、`"ORDER_CONFIRMATION"` 等） |
+| `vendor_name` | 供应商名称 |
+| `status` | 文档状态 |
+| `total_amount` | 总金额 |
+| `ocr_content` | 文档中匹配到的文本摘录 |
+| `highlights` | 包含各字段高亮匹配项的字典 |
 
-**Example — Search for exact phrase:**
+**示例 — 搜索精确短语：**
 
 ```python
 results = fulltext_search("REVERSE CHARGE",
@@ -58,7 +58,7 @@ for doc in results:
     print(doc["name"], doc["ocr_content"])
 ```
 
-**Example — Fuzzy search (OCR typo tolerant):**
+**示例 — 模糊搜索（可容忍 OCR 错误）：**
 
 ```python
 # Finds "REVERSE CHARGE" even with OCR errors like "REVERS CHARG"
@@ -67,7 +67,7 @@ results = fulltext_search("REVERSE CHARGE",
                           vendor_name="ACME Corp")
 ```
 
-**Example — Prefix search:**
+**示例 — 前缀搜索：**
 
 ```python
 # Finds all documents containing words starting with "Rechn"
@@ -76,41 +76,41 @@ results = fulltext_search("Rechn", search_type="prefix",
 ```
 
 {% hint style="warning" %}
-**Empty query:** Passing an empty string returns `[]` immediately without making an HTTP call.
+**空查询：**传入空字符串会立即返回 `[]`，不会发起 HTTP 调用。
 {% endhint %}
 
 {% hint style="info" %}
-**Error handling:** If the fulltextsearch service is unreachable, the function returns `[]` and logs a warning. It does **not** throw an exception.
+**错误处理：**如果全文搜索服务不可用，函数会返回 `[]` 并记录警告，不会抛出异常。
 {% endhint %}
 
 ---
 
-## vector\_search()
+## vector\_search() <a id="vector_search"></a>
 
-Finds semantically similar documents using vector embeddings (k-NN search with 384-dimensional vectors). Useful for finding documents with similar content regardless of exact wording.
+使用向量嵌入查找语义相似的文档（基于 384 维向量的 k-NN 搜索）。无论措辞是否完全相同，都可用于查找内容相似的文档。
 
 ```python
 vector_search(doc_id, **kwargs)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Default | Description |
+| 名称 | 类型 | 默认值 | 描述 |
 | ---- | ---- | ------- | ----------- |
-| `doc_id` | `str` | required | Source document UUID (the document to find similar matches for) |
-| `k` | `int` | `5` | Number of similar documents to return (capped at 50) |
+| `doc_id` | `str` | 必填 | 源文档 UUID（要为其查找相似匹配项的文档） |
+| `k` | `int` | `5` | 要返回的相似文档数量（上限为 50） |
 
-**Returns:** `list[dict]` — Each dict contains:
+**返回值：**`list[dict]` — 每个字典包含：
 
-| Field | Description |
+| 字段 | 描述 |
 | ----- | ----------- |
-| `doc_id` | Similar document UUID |
-| `name` | Filename |
-| `doc_type` | Document type |
-| `similarity_score` | Raw similarity score (0-1) |
-| `similarity_percent` | Similarity as percentage (0-100) |
+| `doc_id` | 相似文档 UUID |
+| `name` | 文件名 |
+| `doc_type` | 文档类型 |
+| `similarity_score` | 原始相似度分数（0-1） |
+| `similarity_percent` | 相似度百分比（0-100） |
 
-**Example — Find similar documents:**
+**示例 — 查找相似文档：**
 
 ```python
 doc_id = document_json["doc_id"]
@@ -120,33 +120,33 @@ for doc in similar:
 ```
 
 {% hint style="info" %}
-**How it works:** Each document is converted to a 384-dimensional vector when indexed. The vector search finds the nearest neighbors in this vector space, which correspond to semantically similar documents.
+**工作原理：**每份文档在建立索引时都会转换为一个 384 维向量。向量搜索会在该向量空间中查找最近邻，这些最近邻对应语义相似的文档。
 {% endhint %}
 
 ---
 
-## fulltext\_search\_erp()
+## fulltext\_search\_erp() <a id="fulltext_search_erp"></a>
 
-Searches ERP master data (vendors, purchase orders, customers, materials) indexed in OpenSearch.
+搜索已编入 OpenSearch 索引的 ERP 主数据（供应商、采购订单、客户、物料）。
 
 ```python
 fulltext_search_erp(query, **kwargs)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Default | Description |
+| 名称 | 类型 | 默认值 | 描述 |
 | ---- | ---- | ------- | ----------- |
-| `query` | `str` | required | Search term |
-| `entity_types` | `str` | `None` | Filter by entity type (comma-separated: `"vendor"`, `"purchase_order"`, `"customer"`, `"material"`) |
-| `vendor_number` | `str` | `None` | Filter by vendor number |
-| `vendor_name` | `str` | `None` | Filter by vendor name |
-| `company_code` | `str` | `None` | Filter by company code |
-| `size` | `int` | `10` | Max results (capped at 50) |
+| `query` | `str` | 必填 | 搜索词 |
+| `entity_types` | `str` | `None` | 按实体类型筛选（逗号分隔：`"vendor"`、`"purchase_order"`、`"customer"`、`"material"`） |
+| `vendor_number` | `str` | `None` | 按供应商编号筛选 |
+| `vendor_name` | `str` | `None` | 按供应商名称筛选 |
+| `company_code` | `str` | `None` | 按公司代码筛选 |
+| `size` | `int` | `10` | 最大结果数（上限为 50） |
 
-**Returns:** `list[dict]` — Entity-type-specific fields (vendor records have `vendor_number`, `vendor_name`, etc.)
+**返回值：**`list[dict]` — 包含特定于实体类型的字段（供应商记录包含 `vendor_number`、`vendor_name` 等）。
 
-**Example — Validate vendor in ERP:**
+**示例 — 在 ERP 中验证供应商：**
 
 ```python
 vendor = get_field_value(document_data, "supplier_name", "")
@@ -158,7 +158,7 @@ if vendor:
                              "Vendor not found in ERP master data")
 ```
 
-**Example — Search purchase orders:**
+**示例 — 搜索采购订单：**
 
 ```python
 po_number = get_field_value(document_data, "purchase_order", "")
@@ -174,20 +174,20 @@ if po_number:
 
 ## fulltext\_suggestions()
 
-Returns autocomplete suggestions for search terms. Groups results by category (vendors, filenames, invoice numbers).
+返回搜索词的自动补全建议。结果按类别分组（供应商、文件名、发票编号）。
 
 ```python
 fulltext_suggestions(query, **kwargs)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Default | Description |
+| 名称 | 类型 | 默认值 | 描述 |
 | ---- | ---- | ------- | ----------- |
-| `query` | `str` | required | Prefix / search term |
-| `limit` | `int` | `10` | Max suggestions per category (capped at 20) |
+| `query` | `str` | 必填 | 前缀/搜索词 |
+| `limit` | `int` | `10` | 每个类别的最大建议数（上限为 20） |
 
-**Returns:** `dict` with grouped suggestions:
+**返回值：**按类别分组建议的 `dict`：
 
 ```python
 {
@@ -197,7 +197,7 @@ fulltext_suggestions(query, **kwargs)
 }
 ```
 
-**Example — Get vendor suggestions:**
+**示例 — 获取供应商建议：**
 
 ```python
 suggestions = fulltext_suggestions("ACM", limit=5)
@@ -205,34 +205,34 @@ vendor_list = suggestions.get("vendors", [])
 ```
 
 {% hint style="warning" %}
-**Empty query:** Passing an empty string returns `{}` immediately.
+**空查询：**传入空字符串会立即返回 `{}`。
 {% endhint %}
 
 ---
 
-## Quick Reference
+## 快速参考
 
-| Function | Purpose | Returns |
+| 函数 | 用途 | 返回值 |
 | -------- | ------- | ------- |
-| `fulltext_search(query, ...)` | Search OCR text across all documents | `list[dict]` |
-| `vector_search(doc_id, ...)` | Find semantically similar documents | `list[dict]` |
-| `fulltext_search_erp(query, ...)` | Search ERP master data | `list[dict]` |
-| `fulltext_suggestions(query, ...)` | Autocomplete suggestions | `dict` |
+| `fulltext_search(query, ...)` | 搜索所有文档的 OCR 文本 | `list[dict]` |
+| `vector_search(doc_id, ...)` | 查找语义相似的文档 | `list[dict]` |
+| `fulltext_search_erp(query, ...)` | 搜索 ERP 主数据 | `list[dict]` |
+| `fulltext_suggestions(query, ...)` | 自动补全建议 | `dict` |
 
 ---
 
-## Common Patterns
+## 常见模式
 
-### License Check
+### 许可证检查
 
-All four functions automatically check the `OPENSEARCH_ENABLED` preference. If not enabled:
+这四个函数都会自动检查 `OPENSEARCH_ENABLED` 偏好设置。如果未启用：
 
 ```python
 # This will raise RuntimeError("Fulltext search license is missing")
 results = fulltext_search("test")
 ```
 
-To handle this gracefully in scripts:
+在脚本中进行适当处理：
 
 ```python
 try:
@@ -242,7 +242,7 @@ except RuntimeError:
     results = []
 ```
 
-### Combining with Field Functions
+### 与字段函数结合使用
 
 ```python
 # Search → validate → set field

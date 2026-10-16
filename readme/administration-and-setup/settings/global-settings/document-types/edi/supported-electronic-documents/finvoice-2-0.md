@@ -1,30 +1,30 @@
 ---
-description: FINVOICE 2.0 electronic document support in DocBits
+description: "DocBits 对 FINVOICE 2.0 电子文档的支持"
 ---
 
 # 🇫🇮 FINVOICE 2.0
 
-| Property             | Value                |
-| -------------------- | -------------------- |
-| **Country / Region** | Finland              |
-| **Document Types**   | Invoice, Credit Note |
-| **Format**           | XML (SOAP envelope)  |
-| **Standard**         | Finvoice 2.0         |
+| 属性                   | 值                 |
+| ---------------------- | ------------------ |
+| **国家 / 地区**        | 芬兰               |
+| **文档类型**           | 发票、贷项通知单   |
+| **格式**               | XML（SOAP 信封）   |
+| **标准**               | Finvoice 2.0       |
 
-Finvoice 2.0 extended the standard with improved support for payment terms, delivery details, and EU VAT reporting. It maintained the SOAP-based transport model used by Finnish banking networks.
+Finvoice 2.0 扩展了该标准，增强了对付款条件、交付详情和欧盟增值税申报的支持。它沿用了芬兰银行网络使用的基于 SOAP 的传输模型。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 组件       | 状态       |
+| ---------- | ---------- |
+| 预览       | ✅ 支持     |
+| 字段提取   | ✅ 支持     |
+| 转换       | ✅ 支持     |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/finland-finvoice-preview.png" alt="Finvoice 2.0 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Finland Finvoice 2.0 invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/finland-finvoice-preview.png" alt="DocBits 中的 Finvoice 2.0 发票预览"><figcaption><p>DocBits 中芬兰 Finvoice 2.0 发票的默认预览</p></figcaption></figure>
 
-## Related
+## 相关
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

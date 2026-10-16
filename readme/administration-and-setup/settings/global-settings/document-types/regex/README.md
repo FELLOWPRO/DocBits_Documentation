@@ -1,18 +1,18 @@
-# Regex
+# 正则表达式
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.38.59.png" alt=""><figcaption><p>Magaging Rgexes</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.38.59.png" alt=""><figcaption><p>管理正则表达式</p></figcaption></figure>
 
-In Docbits, Regex settings allow administrators to define custom patterns that the system uses to find and extract data from documents. This feature is especially useful in situations where data needs to be extracted from unstructured text or when the data follows a predictable format that can be captured using regex patterns.
+在 DocBits 中，正则表达式设置允许管理员定义自定义模式，系统会使用这些模式在文档中查找并提取数据。此功能在需要从非结构化文本中提取数据，或数据遵循可通过正则表达式模式匹配的可预测格式时尤其有用。
 
-#### Key Features and Options
+#### 主要功能和选项
 
-1. **Managing Regexes**:
+1. **管理正则表达式**：
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.38.59.png" alt=""><figcaption><p>Magaging Regexes</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.38.59.png" alt=""><figcaption><p>管理正则表达式</p></figcaption></figure>
 
-**Managing Regexes**:
+**管理正则表达式**：
 
-* **Add**: Allows you to create a new regex pattern for a specific document type.
-* **Save Changes**: Saves modifications to existing regex configurations.
-* **Pattern**: Here, you can define the regex pattern that matches the specific data format required.
-* **Origin**: Is the Document Origin - For example you can define a different Regex in Germany
+* **添加**：允许您为特定文档类型创建新的正则表达式模式。
+* **保存更改**：保存对现有正则表达式配置所做的修改。
+* **模式**：在此处定义与所需特定数据格式匹配的正则表达式模式。
+* **来源**：即文档来源。例如，您可以为德国定义不同的正则表达式。

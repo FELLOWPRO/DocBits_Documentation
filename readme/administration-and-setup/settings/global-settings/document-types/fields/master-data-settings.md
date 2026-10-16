@@ -1,70 +1,70 @@
-# Master Data Settings
+# 主数据设置
 
-Master Data Settings connect a document's validation fields to data stored under [Lookup Master Data](../../../document-processing/master-data-lookup.md). Use **Lookup Master Data** to find and fill matching records. Use **LOV Master Data** to offer a list of values from a dataset.
+主数据设置将文档的验证字段连接到存储在[查找主数据](../../../document-processing/master-data-lookup.md)中的数据。使用 **Lookup Master Data** 查找并填入匹配的记录。使用 **LOV Master Data** 提供来自数据集的值列表。
 
-## Open the settings
+## 打开设置
 
-1. In **Settings**, open **Document Processing → Document Types**.
-2. Open the document type you want to configure, such as **Invoice**, and select **Fields**.
-3. Select **Master Data Settings**. The page contains separate **Lookup Master Data** and **LOV Master Data** sections. Select a section heading to expand it.
+1. 在 **Settings** 中，打开 **Document Processing → Document Types**。
+2. 打开要配置的文档类型，例如 **Invoice**，然后选择 **Fields**。
+3. 选择 **Master Data Settings**。此页面分为 **Lookup Master Data** 和 **LOV Master Data** 两个区域。选择区域标题可展开该区域。
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-202-overview-en.png" alt="Invoice Master Data Settings in the current DocBits Sandbox, showing Lookup Master Data and LOV Master Data"><figcaption>Choose the section that matches the type of field you want to configure.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-202-overview-en.png" alt="当前 DocBits Sandbox 中的发票主数据设置，显示 Lookup Master Data 和 LOV Master Data"><figcaption>选择与要配置的字段类型相符的区域。</figcaption></figure>
 
-## Match a record with Lookup Master Data
+## 使用 Lookup Master Data 匹配记录
 
-**Lookup Master Data** configurations search a dataset and map a matching record to document fields. The list shows each configuration's name and whether it is active. A **Default** badge identifies a DocBits configuration; you can deactivate it, but you cannot edit or delete it.
+**Lookup Master Data** 配置会搜索数据集，并将匹配的记录映射到文档字段。列表会显示每个配置的名称及其是否启用。**Default** 徽标表示这是 DocBits 配置；你可以停用该配置，但不能编辑或删除它。
 
-### Create a lookup configuration
+### 创建查找配置
 
-1. Select **Create Lookup Config**.
-2. Enter a **Lookup Name** and choose the **Lookup Dataset Name** that contains the records to search.
-3. Choose a **Conflict Handler** for cases where several records match:
-   * **Best Score** chooses the strongest match.
-   * **Return None** leaves the result empty for a user to decide.
-   * **Return First** uses the first result.
-4. Choose **HEADER** for document fields or **LINE** for fields in a document table. For **LINE**, also choose **Context Detail**, the table where the lookup applies.
-5. Turn on **Match All** if every configured search field must match a record. Leave it off if one matching field is enough. Select **Create**.
+1. 选择 **Create Lookup Config**。
+2. 输入 **Lookup Name**，并选择包含要搜索记录的 **Lookup Dataset Name**。
+3. 为匹配多条记录的情况选择 **Conflict Handler**：
+   * **Best Score** 选择匹配度最高的记录。
+   * **Return None** 将结果留空，供用户决定。
+   * **Return First** 使用第一条结果。
+4. 文档字段请选择 **HEADER**，文档表格中的字段请选择 **LINE**。如果选择 **LINE**，还要选择查找所应用的表格，即 **Context Detail**。
+5. 如果配置的每个搜索字段都必须匹配记录，请开启 **Match All**。如果任一字段匹配即可，请保持关闭。选择 **Create**。
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-202-lookup-config-en.png" alt="Create Master Data Config dialog with dataset, conflict handler, context type and Match All options"><figcaption>The lookup configuration form for an Invoice header.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-202-lookup-config-en.png" alt="创建主数据配置对话框，包含数据集、冲突处理器、上下文类型和 Match All 选项"><figcaption>适用于发票表头的查找配置表单。</figcaption></figure>
 
-**Match All** and **Conflict Handler** affect automatic supplier recognition. See [Fuzzy data configuration with master data](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md) for worked examples.
+**Match All** 和 **Conflict Handler** 会影响供应商的自动识别。请参阅[使用主数据配置模糊数据](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)中的示例。
 
-### Map fields in a configuration
+### 在配置中映射字段
 
-Expand a configuration to see its mapped fields. In the example below, **Supplier Name** is searchable, while **Supplier Number** is set to trigger the lookup automatically. Your organisation's mappings may differ.
+展开配置可查看其映射字段。在下面的示例中，**Supplier Name** 可用于搜索，而 **Supplier Number** 设置为自动触发查找。贵组织的映射可能有所不同。
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-202-supplier-fields-en.png" alt="Expanded Supplier lookup showing Lookup Field, Validation Field, Parent Field, Searchable, Auto Trigger and Actions columns"><figcaption>Expand a lookup to inspect the fields that participate in matching.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-202-supplier-fields-en.png" alt="已展开的 Supplier 查找，显示 Lookup Field、Validation Field、Parent Field、Searchable、Auto Trigger 和 Actions 列"><figcaption>展开查找配置，查看参与匹配的字段。</figcaption></figure>
 
-Select **Create** inside the expanded configuration to add a mapping:
+在展开的配置中选择 **Create**，即可添加映射：
 
-* **Lookup Field** is the dataset column to search.
-* **Validation Field** is the document field that receives the result.
-* **Parent Field** optionally checks the result against a related field.
-* **Search Operator** controls how text is compared. **Smart** ignores spaces and punctuation; the other choices include Contains, Starts With, Ends With and Exact.
-* **Auto Trigger** starts a lookup when this field is filled. **Searchable** lets the field participate in searches and supports manual lookup during validation.
+* **Lookup Field** 是要搜索的数据集列。
+* **Validation Field** 是用于接收结果的文档字段。
+* **Parent Field** 可选，用于根据相关字段检查结果。
+* **Search Operator** 控制文本的比较方式。**Smart** 会忽略空格和标点符号；其他选项包括 Contains、Starts With、Ends With 和 Exact。
+* **Auto Trigger** 会在此字段填入内容时启动查找。**Searchable** 允许该字段参与搜索，并支持在验证期间手动查找。
 
-Select **Create** to add the mapping. Use the three-dot **Actions** menu on a row to edit or delete an editable mapping. Default mappings can only be viewed.
+选择 **Create** 添加映射。使用行上的三点 **Actions** 菜单编辑或删除可编辑的映射。默认映射只能查看。
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-202-create-field-en.png" alt="Create Master Data Fields dialog with Lookup Field, Validation Field, Parent Field, Search Operator, Auto Trigger and Searchable"><figcaption>Choose how a dataset column maps to a document field.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-202-create-field-en.png" alt="创建主数据字段对话框，包含 Lookup Field、Validation Field、Parent Field、Search Operator、Auto Trigger 和 Searchable"><figcaption>选择数据集列与文档字段之间的映射方式。</figcaption></figure>
 
-Use the three-dot menu on a configuration to activate or deactivate it, duplicate it, or edit it. A default configuration offers **View** in place of **Edit** and cannot be deleted. Deleting a custom configuration or field removes its mapping; check which document fields depend on it first.
+使用配置上的三点菜单可启用或停用配置、复制配置或编辑配置。默认配置会显示 **View** 而非 **Edit**，且无法删除。删除自定义配置或字段会移除其映射；请先检查依赖于该映射的文档字段。
 
-## Offer a list with LOV Master Data
+## 使用 LOV Master Data 提供列表
 
-**LOV Master Data** creates dropdown choices from a master data dataset. You can also add filter fields so an earlier selection narrows the choices shown next.
+**LOV Master Data** 会根据主数据数据集创建下拉选项。你还可以添加筛选字段，使先前的选择缩小后续显示的选项范围。
 
-Expand **LOV Master Data**, then select **Create Lov Lookup Config**. If no configuration exists, the section shows only this button.
+展开 **LOV Master Data**，然后选择 **Create Lov Lookup Config**。如果尚无配置，此区域只会显示此按钮。
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-202-lov-overview-en.png" alt="Expanded LOV Master Data section with the Create Lov Lookup Config button"><figcaption>Open this section when a document field should offer dataset values as choices.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-202-lov-overview-en.png" alt="已展开的 LOV Master Data 区域，含 Create Lov Lookup Config 按钮"><figcaption>当文档字段需要提供数据集值作为选项时，请打开此区域。</figcaption></figure>
 
-In the form, enter **Lookup Lov Name**, choose **Lookup Lov Dataset Name**, and set **Context Type** to **HEADER** or **LINE**. For **LINE**, select **Context Detail** to identify the document table. Then choose:
+在表单中输入 **Lookup Lov Name**，选择 **Lookup Lov Dataset Name**，并将 **Context Type** 设为 **HEADER** 或 **LINE**。如果选择 **LINE**，请通过 **Context Detail** 指定文档表格。然后选择：
 
-* **Lookup Label Field**: the value users see in the dropdown.
-* **Lookup Value Field**: the value stored for the selection and used for filtering.
-* **Out Field**: the document field filled by the selected label.
+* **Lookup Label Field**：用户在下拉列表中看到的值。
+* **Lookup Value Field**：为所选项存储的值，也是筛选时使用的值。
+* **Out Field**：由所选标签填入的文档字段。
 
-Select **Create** to save the configuration. Expand it to inspect its fields, or use its three-dot menu to activate, duplicate, edit or delete it.
+选择 **Create** 保存配置。展开配置可查看其字段，也可以使用配置上的三点菜单启用、复制、编辑或删除配置。
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-202-lov-config-en.png" alt="Create LOV Master Data Config dialog with dataset, context, label field, value field and out field"><figcaption>Connect a dataset value and its visible label to a document field.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-202-lov-config-en.png" alt="创建 LOV 主数据配置对话框，包含数据集、上下文、标签字段、值字段和输出字段"><figcaption>将数据集中的值及其显示标签连接到文档字段。</figcaption></figure>
 
-To make dependent dropdowns, select **Create** inside an expanded LOV configuration and choose a **Lookup Field** and **Filter Field**. The filter field's value narrows the choices returned by the lookup. You can also set a static **Filter Value** and mark a field **Required**. Use the row's three-dot menu to edit or delete a custom filter field.
+要创建级联下拉列表，请在展开的 LOV 配置中选择 **Create**，然后选择 **Lookup Field** 和 **Filter Field**。筛选字段的值会缩小查找返回的选项范围。你也可以设置静态的 **Filter Value**，并将字段标记为 **Required**。使用行上的三点菜单编辑或删除自定义筛选字段。

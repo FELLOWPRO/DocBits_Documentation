@@ -1,14 +1,14 @@
-# Dynamic Required Fields
+# 动态必填字段
 
-## What does this script do?
+## 此脚本的作用
 
-Dynamically sets field requirements based on document content. In this example: when the invoice currency is not EUR, the exchange rate field becomes mandatory and visible. For EUR invoices, the exchange rate field is hidden and optional.
+根据文档内容动态设置字段要求。在此示例中：当发票币种不是 EUR 时，汇率字段将变为必填且可见。对于 EUR 发票，汇率字段将隐藏且为选填。
 
-## Trigger
+## 触发条件
 
-`ON_FIELD_CHANGE` on document type **INVOICE**
+在文档类型 **INVOICE** 上使用 `ON_FIELD_CHANGE`
 
-## Full Script
+## 完整脚本
 
 ```python
 # Read current currency
@@ -24,7 +24,7 @@ else:
     set_is_hidden(document_data, "exchange_rate", True)
 ```
 
-## Variation: Purchase invoice vs. cost invoice
+## 变体：采购发票与费用发票
 
 ```python
 po = get_field_value(document_data, "purchase_order", "")
@@ -40,21 +40,21 @@ else:
     delete_tables(document_data)
 ```
 
-## Step-by-Step Explanation
+## 分步说明
 
-1. **Read the controlling field** (currency in this case)
-2. **Apply business rules** — different field requirements based on the value
-3. **Set visibility** — hide irrelevant fields to keep the UI clean
-4. **Set requirements** — make relevant fields mandatory
+1. **读取控制字段**（此处为币种）
+2. **应用业务规则** — 根据字段值设置不同的要求
+3. **设置可见性** — 隐藏无关字段，使界面保持简洁
+4. **设置必填要求** — 将相关字段设为必填
 
 {% hint style="info" %}
-**Trigger choice:** `ON_FIELD_CHANGE` runs every time a user modifies a field, so the requirements update in real-time. `AFTER_FORMATTING` only runs once after initial extraction.
+**触发条件选择：** `ON_FIELD_CHANGE` 会在用户每次修改字段时运行，因此要求会实时更新。`AFTER_FORMATTING` 仅在初次提取完成后运行一次。
 {% endhint %}
 
-## Functions Used
+## 使用的函数
 
-- [get\_field\_value()](../field-functions.md#get\_field\_value) — Read controlling field
-- [set\_is\_required()](../field-functions.md#set\_is\_required) — Set field as mandatory/optional
-- [set\_is\_hidden()](../field-functions.md#set\_is\_hidden) — Show/hide fields
-- [set\_field\_value()](../field-functions.md#set\_field\_value) — Set category field
-- [delete\_tables()](../table-functions.md#delete\_tables) — Remove tables for cost invoices
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — 读取控制字段
+- [set\_is\_required()](../field-functions.md#set\_is\_required) — 将字段设为必填或选填
+- [set\_is\_hidden()](../field-functions.md#set\_is\_hidden) — 显示或隐藏字段
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — 设置类别字段
+- [delete\_tables()](../table-functions.md#delete\_tables) — 移除费用发票的表格

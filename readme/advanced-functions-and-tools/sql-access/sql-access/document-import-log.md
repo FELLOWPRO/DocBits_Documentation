@@ -1,31 +1,31 @@
-# Document Import log
+# 文档导入日志
 
-## Spalten
+## 列
 
-* `id`: integer
-* `org_id`: ID to organisation
-* `sub_org_id`: internal
-* `original_filename`: internal
-* `filename`: internal
-* `imported_on`: internal
-* `source_type`: internal
-* `source`: internal
-* `success`: boolean
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `import_id`: text
-* `extra_data`: text
-* `doc_id`: internal
-* `email_connection_id`: integer
-* `subject`: internal
-* `body`: text
-* `sender`: internal
-* `error_resp`: internal
-* `source_received_on`: timestamp with time zone
+* `id`：整数
+* `org_id`：组织 ID
+* `sub_org_id`：内部字段
+* `original_filename`：内部字段
+* `filename`：内部字段
+* `imported_on`：内部字段
+* `source_type`：内部字段
+* `source`：内部字段
+* `success`：布尔值
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `import_id`：文本
+* `extra_data`：文本
+* `doc_id`：内部字段
+* `email_connection_id`：整数
+* `subject`：内部字段
+* `body`：文本
+* `sender`：内部字段
+* `error_resp`：内部字段
+* `source_received_on`：带时区的时间戳
 
-## Analyse & Beschreibung
+## 分析与说明
 
 ```markdown
 # Technical Documentation for `public.document_import_log` Table

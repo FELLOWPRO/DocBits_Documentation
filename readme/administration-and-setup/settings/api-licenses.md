@@ -1,5 +1,5 @@
-# System Licenses
+# 系统许可证
 
-<figure><img src="../../.gitbook/assets/system_licenses.png" alt="System Licenses"><figcaption><p>System Licenses Page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/system_licenses.png" alt="系统许可证"><figcaption><p>系统许可证页面</p></figcaption></figure>
 
-The System Licenses page (also called API Licenses) displays all third-party software packages used by DocBits, including their version numbers and associated open-source licenses. This information is provided for compliance and transparency purposes.
+系统许可证页面（也称为 API 许可证）显示 DocBits 使用的所有第三方软件包，包括其版本号和对应的开源许可证。此信息用于合规与信息透明。

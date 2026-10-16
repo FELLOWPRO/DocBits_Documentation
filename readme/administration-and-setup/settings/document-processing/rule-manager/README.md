@@ -1,80 +1,80 @@
-# Rule Management
+# 规则管理
 
-<figure><img src="../../../../.gitbook/assets/rule_management.png" alt="Rule Management"><figcaption><p>Rule Management Page</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/rule_management.png" alt="规则管理"><figcaption><p>规则管理页面</p></figcaption></figure>
 
-Rule Management allows you to create and manage TOML-based conflict resolution rules used during PO matching and document export. Each rule set defines how DocBits handles discrepancies between invoice data and purchase order data.
+规则管理功能允许你创建和管理基于 TOML 的冲突解决规则，这些规则用于采购订单匹配和文档导出。每个规则集定义 DocBits 如何处理发票数据与采购订单数据之间的差异。
 
-## Rule List
+## 规则列表
 
-The main table shows all rule configurations:
+主表显示所有规则配置：
 
-| Column | Description |
+| 列 | 描述 |
 |--------|-------------|
-| **Name** | The rule set name. Items tagged **default** are system-provided templates. |
-| **Description** | A summary of what the rule set handles. |
-| **Last Modified By** | The user who last edited this rule set. |
-| **Last Modified At** | Timestamp of the last change. |
-| **Actions** | Three-dot menu to edit, copy, or delete. |
+| **名称** | 规则集的名称。标记为 **default** 的项目是系统提供的模板。 |
+| **描述** | 规则集处理内容的摘要。 |
+| **最后修改者** | 上次编辑此规则集的用户。 |
+| **最后修改时间** | 上次更改的时间戳。 |
+| **操作** | 三点菜单，可用于编辑、复制或删除。 |
 
-Click **+ New** to create a new rule set, or click an existing name to open the rule editor.
+点击 **+ New** 创建规则集，或点击现有名称打开规则编辑器。
 
 ---
 
-## Rule Structure Reference
+## 规则结构参考
 
-This section provides an in-depth explanation of the conflict resolution rules used in the DocBits invoicing system. These rules are designed to automatically handle discrepancies between invoice details and purchase order (PO) data, ensuring accurate financial reconciliation. The system applies these rules to process invoice lines, charges, and taxes, and generates appropriate adjustments or notes when necessary.
+本节深入说明 DocBits 开票系统中使用的冲突解决规则。这些规则旨在自动处理发票详情与采购订单（PO）数据之间的差异，确保财务对账准确无误。系统会应用这些规则来处理发票行、费用和税费，并在必要时生成相应的调整或备注。
 
-## Structure of the Rules
+## 规则结构
 
-### 1. Metadata
+### 1. 元数据
 
-• version: Identifies the version of the mapping file.
+• version：标识映射文件的版本。
 
-• revision: Revision number for tracking changes.
+• revision：用于跟踪更改的修订号。
 
-• author: Indicates the creator of the mapping file.
+• author：指明映射文件的创建者。
 
-• description: A brief description of the file’s purpose.
+• description：简要说明文件的用途。
 
-• created_at & updated_at: Timestamps for when the file was created and last updated.
+• created_at & updated_at：文件的创建和最后更新时间戳。
 
-### 2. Export Configuration
+### 2. 导出配置
 
-The export configuration section defines the mapping between the data fields in the system and the corresponding fields in the export files.
+导出配置部分定义系统中的数据字段与导出文件中相应字段之间的映射。
 
-• Header: Defines the header fields for the exported invoice data.
+• Header：定义导出发票数据的表头字段。
 
-• Tax Lines: Specifies the fields for tax line items in the export.
+• Tax Lines：指定税费行项目的字段。
 
-• Order Header Charges: Maps fields related to additional charges at the order header level.
+• Order Header Charges：映射与订单表头级别附加费用相关的字段。
 
-• Receipt Lines: Maps fields for individual line items in a receipt.
+• Receipt Lines：映射收货单中各个行项目的字段。
 
-• Order Line Charges: Defines the fields for charges related to specific order lines.
+• Order Line Charges：定义与特定订单行相关费用的字段。
 
-• Cost Lines: Specifies fields for cost allocation lines.
+• Cost Lines：指定成本分摊行的字段。
 
-• Debit Note & Credit Note: Defines fields for generating debit and credit notes in cases of discrepancies.
+• Debit Note & Credit Note：定义发生差异时生成借项通知单和贷项通知单所需的字段。
 
-### 3. Conflict Resolution Rules
+### 3. 冲突解决规则
 
-These rules handle discrepancies between invoice data and the corresponding PO data. Each rule is composed of several components:
+这些规则用于处理发票数据与相应采购订单数据之间的差异。每条规则由以下几个部分组成：
 
-• Name: The rule’s descriptive name, indicating the type of discrepancy it addresses.
+• Name：规则的描述性名称，表明其处理的差异类型。
 
-• Section: Indicates which part of the invoice (e.g., receipt_lines, line_charges) the rule applies to.
+• Section：指明规则适用的发票部分（例如 receipt_lines、line_charges）。
 
-• Active: Boolean value (true or false) indicating if the rule is currently active.
+• Active：布尔值（true 或 false），表示规则当前是否启用。
 
-• Match Criteria: Conditions that trigger the rule based on comparisons between actual invoice data and expected PO data.
+• Match Criteria：根据实际发票数据与预期采购订单数据之间的比较结果，定义触发规则的条件。
 
-• Actions: Defines what the system should do when the rule is triggered, including adjusting values, applying charges, or generating credit/debit notes.
+• Actions：定义触发规则后系统应执行的操作，包括调整数值、应用费用或生成贷项通知单/借项通知单。
 
-## Common Elements in the Rules
+## 规则中的常见元素
 
-### Comparison Operators
+### 比较运算符
 
-These operators define how the actual invoice values are compared to the expected PO values:
+这些运算符定义如何将发票实际值与采购订单预期值进行比较：
 
 • equal
 
@@ -91,9 +91,9 @@ These operators define how the actual invoice values are compared to the expecte
 • outside tolerance
 
 
-### Approval Status
+### 审批状态
 
-Indicates whether a discrepancy is approved or not:
+指明差异是否已获审批：
 
 • approved
 
@@ -102,9 +102,9 @@ Indicates whether a discrepancy is approved or not:
 • any
 
 
-### Action Types
+### 操作类型
 
-Defines specific actions to take when a discrepancy is detected:
+定义检测到差异时要执行的具体操作：
 
 • receipt line
 
@@ -135,69 +135,69 @@ Defines specific actions to take when a discrepancy is detected:
 • credit note tax line
 
 
-### Rule Examples
+### 规则示例
 
-#### [Case 1, 2, 3: Quantity and Unit Price Within Tolerance](transactionconfig-pro-template/case-1-2-3-quantity-and-unit-price-within-tolerance.md)
+#### [案例 1、2、3：数量和单价在容差范围内](transactionconfig-pro-template/case-1-2-3-quantity-and-unit-price-within-tolerance.md)
 
-• Purpose: Handles scenarios where both the quantity and unit price on the invoice are within the accepted tolerance limits compared to the PO.
+• 用途：处理发票上的数量和单价与采购订单相比均在可接受容差范围内的情况。
 
-• Action: The system accepts the invoice values and calculates the total amount.
-
-
-
-#### [Case 4, 5: Quantity Within Tolerance, Unit Price Outside Tolerance (Approved)](./#case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved)
-
-• Purpose: Applies when the quantity is within tolerance but the unit price is outside tolerance and has been approved.
-
-• Action: The system adjusts the unit price to match the PO and applies any necessary line charges.
+• 操作：系统接受发票中的值并计算总金额。
 
 
 
-#### [Case 6: Quantity Within Tolerance, Unit Price Outside Negative Tolerance (Rejected)](transactionconfig-pro-template/case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
+#### [案例 4、5：数量在容差范围内，单价超出容差范围（已审批）](./#case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved) <a id="case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved"></a>
 
-• Purpose: Deals with cases where the unit price is less than expected and outside the tolerance range, leading to rejection.
+• 用途：适用于数量在容差范围内、但单价超出容差范围且已获审批的情况。
 
-• Action: The system adjusts the unit price to match the PO, generates a credit note for the difference, and applies header charges as needed.
+• 操作：系统将单价调整为与采购订单一致，并应用所需的行费用。
 
 
-### Handling Charges and Taxes
 
-### Charge Per Unit Tolerance
+#### [案例 6：数量在容差范围内，单价低于负容差范围（已拒绝）](transactionconfig-pro-template/case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
 
-• Rules under this category handle discrepancies in charges per unit, with specific actions based on whether the charge is within or outside the tolerance and whether it is approved or rejected.
+• 用途：处理单价低于预期且超出容差范围，导致被拒绝的情况。
 
-### Tax Line Adjustments
+• 操作：系统将单价调整为与采购订单一致，为差额生成贷项通知单，并根据需要应用表头费用。
 
-• These rules manage tax discrepancies by adjusting the tax lines or generating corresponding credit or debit notes based on the differences between invoice and PO tax data.
 
-### Enums and Options
+### 费用和税费处理
 
-• Enums: Predefined lists of values ensuring consistency across the rules (e.g., comparison operators, approval types).
+### 每单位费用容差
 
-• Options: Predefined choices for handling quantities or unit prices, offering flexibility in rule definitions.
+• 此类别下的规则用于处理每单位费用的差异，并根据费用是否在容差范围内以及是否已获审批或被拒绝来执行相应操作。
 
-## Screenshots Explanation
+### 税费行调整
 
-### Screenshot 1: Rule Management Interface
+• 这些规则通过调整税费行，或根据发票税费数据与采购订单税费数据之间的差异生成相应的贷项通知单或借项通知单，来处理税费差异。
 
-<figure><img src="../../../../.gitbook/assets/rule_management_interface.png" alt="Rule Management Interface"><figcaption></figcaption></figure>
+### 枚举和选项
 
-This screenshot shows the Rule Management interface where administrators can view and manage all conflict resolution rules. Key elements include:
+• 枚举：预定义的值列表，用于确保规则中的值保持一致（例如比较运算符、审批类型）。
 
-• Add Rule Button: Allows adding new rules.
+• 选项：预定义的数量或单价处理选项，为规则定义提供灵活性。
 
-• List of Rules: Displays all active rules with details such as name, section, and active status.
+## 截图说明
 
-• Section Dropdown: Filters the rules based on the section they apply to (e.g., Receipt Lines, Line Charges).
+### 截图 1：规则管理界面
 
-### Screenshot 2: Detailed Rule Editing
+<figure><img src="../../../../.gitbook/assets/rule_management_interface.png" alt="规则管理界面"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/rule_detailed_editing.png" alt="Detailed Rule Editing"><figcaption></figcaption></figure>
+此截图展示了规则管理界面，管理员可在此查看和管理所有冲突解决规则。主要元素包括：
 
-his screenshot illustrates the detailed view of a specific rule being edited. Key elements include:
+• 添加规则按钮：用于添加新规则。
 
-• Criteria Section: Defines the conditions under which the rule is triggered. For example, the criteria might specify that if the quantity and unit price differ from the PO but are within tolerance, the rule should be applied.
+• 规则列表：显示所有启用规则的详情，例如名称、部分和启用状态。
 
-• Actions Section: Specifies what actions should be taken when the criteria are met. This can include adjusting the invoice lines, generating credit or debit notes, or applying additional charges.
+• 部分下拉菜单：根据规则适用的部分筛选规则（例如收货单行、行费用）。
 
-• Document Type and Costing Elements: Allows the administrator to map specific actions to document types and costing elements, providing flexibility in handling different scenarios.
+### 截图 2：规则详细编辑
+
+<figure><img src="../../../../.gitbook/assets/rule_detailed_editing.png" alt="规则详细编辑"><figcaption></figcaption></figure>
+
+此截图展示了正在编辑的特定规则的详细视图。主要元素包括：
+
+• 条件部分：定义触发规则的条件。例如，条件可以指定：如果数量和单价与采购订单不同，但差异在容差范围内，则应用该规则。
+
+• 操作部分：指定满足条件时应执行的操作，包括调整发票行、生成贷项通知单或借项通知单，或应用额外费用。
+
+• 文档类型和成本要素：允许管理员将特定操作映射到文档类型和成本要素，以便灵活处理不同场景。

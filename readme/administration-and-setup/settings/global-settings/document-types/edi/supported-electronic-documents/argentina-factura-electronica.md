@@ -1,72 +1,72 @@
 ---
-description: ARGENTINA FACTURA ELECTRONICA electronic document support in DocBits
+description: "DocBits 对阿根廷电子发票（ARGENTINA FACTURA ELECTRONICA）的支持"
 ---
 
-# 🇦🇷 ARGENTINA FACTURA ELECTRONICA
+# 🇦🇷 阿根廷电子发票（ARGENTINA FACTURA ELECTRONICA）
 
-| Property             | Value                                                                   |
+| 属性 | 值 |
 | -------------------- | ----------------------------------------------------------------------- |
-| **Country / Region** | Argentina                                                               |
-| **Document Types**   | Invoice                                                                 |
-| **Format**           | XML                                                                     |
-| **Standard**         | Argentina Factura Electrónica (AFIP comprobante types beyond Factura A) |
-| **Locale**           | `es_AR`                                                                 |
+| **国家 / 地区** | 阿根廷 |
+| **文档类型** | 发票 |
+| **格式** | XML |
+| **标准** | 阿根廷电子发票（Argentina Factura Electrónica）（除 Factura A 之外的 AFIP 凭证类型） |
+| **区域设置** | `es_AR` |
 
-ARGENTINA FACTURA ELECTRONICA covers the broader set of Argentine AFIP electronic documents beyond Factura A (type 001). This includes other comprobante types such as Factura B (type 006), Factura C (type 011), Nota de Crédito (type 003), and other variants. DocBits auto-detects the document type from `<tipoComprobante>` and applies the appropriate extraction.
+ARGENTINA FACTURA ELECTRONICA 涵盖 Factura A（类型 001）之外更广泛的阿根廷 AFIP 电子文档类型，包括 Factura B（类型 006）、Factura C（类型 011）、Nota de Crédito（类型 003）等凭证类型。DocBits 会从 `<tipoComprobante>` 自动检测文档类型，并应用相应的提取规则。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件 | 状态 |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览 | ✅ 支持 |
+| 字段提取 | ✅ 支持 |
+| 转换 | ✅ 支持 |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/argentina-factura-electronica-preview.png" alt="Argentina Factura Electronica preview in DocBits"><figcaption><p>Default DocBits preview for an ARGENTINA FACTURA ELECTRONICA document</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/argentina-factura-electronica-preview.png" alt="DocBits 中的阿根廷电子发票预览"><figcaption><p>ARGENTINA FACTURA ELECTRONICA 文档的 DocBits 默认预览</p></figcaption></figure>
 
-## Field Mapping
+## 字段映射
 
-### Header Fields
+### 抬头字段
 
-| DocBits Field    | Source XML Elements                                                       | Notes                                        |
+| DocBits 字段 | 源 XML 元素 | 备注 |
 | ---------------- | ------------------------------------------------------------------------- | -------------------------------------------- |
-| `invoice_id`     | `//NumeroFactura`, `//cbte_nro`, `//CbteNro`, `//InvoiceNumber`           | Multiple XPath fallbacks for variant schemas |
-| `invoice_date`   | `//FechaEmision`, `//cbte_fch`, `//CbteFch`, `//IssueDate`                |                                              |
-| `due_date`       | `//fechaVencimiento`, `//fechaVtoPago`                                    |                                              |
-| `currency`       | `//Moneda`, `//mon_id`, `//MonId`, fallback: `ARS`                        |                                              |
-| `total_amount`   | `//MontoTotal`, `//imp_total`, `//ImpTotal`, `//TotalAmount`              |                                              |
-| `net_amount`     | `//MontoNeto`, `//imp_neto`, `//ImpNeto`, `//NetAmount`                   |                                              |
-| `tax_amount`     | `//MontoIVA`, `//imp_iva`, `//ImpIVA`, `//TaxAmount`                      |                                              |
-| `supplier_name`  | `//NombreProveedor`, `//razon_social`, `//RazonSocial`, `//SellerName`    |                                              |
-| `supplier_id`    | `//CUITProveedor`, `//cuit`, `//Cuit`, `//SellerID`                       | CUIT = Argentine tax ID                      |
-| `buyer_name`     | `//NombreComprador`, `//nombre_cliente`, `//NombreCliente`, `//BuyerName` |                                              |
-| `buyer_id`       | `//CUITComprador`, `//doc_nro`, `//DocNro`, `//BuyerID`                   |                                              |
-| `iban`           | `//PAYMENT/IBAN`                                                          | Usually empty                                |
-| `bic`            | `//PAYMENT/BIC`                                                           | Usually empty                                |
-| `payment_terms`  | `//PAYMENT_TERMS`                                                         | Usually empty                                |
-| `purchase_order` | `//PURCHASE_ORDER`                                                        | Usually empty                                |
+| `invoice_id` | `//NumeroFactura`、`//cbte_nro`、`//CbteNro`、`//InvoiceNumber` | 为不同架构提供多个 XPath 回退选项 |
+| `invoice_date` | `//FechaEmision`、`//cbte_fch`、`//CbteFch`、`//IssueDate` | |
+| `due_date` | `//fechaVencimiento`、`//fechaVtoPago` | |
+| `currency` | `//Moneda`、`//mon_id`、`//MonId`，回退值：`ARS` | |
+| `total_amount` | `//MontoTotal`、`//imp_total`、`//ImpTotal`、`//TotalAmount` | |
+| `net_amount` | `//MontoNeto`、`//imp_neto`、`//ImpNeto`、`//NetAmount` | |
+| `tax_amount` | `//MontoIVA`、`//imp_iva`、`//ImpIVA`、`//TaxAmount` | |
+| `supplier_name` | `//NombreProveedor`、`//razon_social`、`//RazonSocial`、`//SellerName` | |
+| `supplier_id` | `//CUITProveedor`、`//cuit`、`//Cuit`、`//SellerID` | CUIT = 阿根廷税号 |
+| `buyer_name` | `//NombreComprador`、`//nombre_cliente`、`//NombreCliente`、`//BuyerName` | |
+| `buyer_id` | `//CUITComprador`、`//doc_nro`、`//DocNro`、`//BuyerID` | |
+| `iban` | `//PAYMENT/IBAN` | 通常为空 |
+| `bic` | `//PAYMENT/BIC` | 通常为空 |
+| `payment_terms` | `//PAYMENT_TERMS` | 通常为空 |
+| `purchase_order` | `//PURCHASE_ORDER` | 通常为空 |
 
-### Line Item Table (`INVOICE_TABLE`)
+### 行项目表（`INVOICE_TABLE`）
 
-Row path: `<items>/<item>`, `<Items>/<Item>`, or `<Detalle>/<Linea>`
+行路径：`<items>/<item>`、`<Items>/<Item>` 或 `<Detalle>/<Linea>`
 
-| Column        | Source Attribute / Element              | Notes                |
+| 列 | 源属性 / 元素 | 备注 |
 | ------------- | --------------------------------------- | -------------------- |
-| `POSITION`    | `@numero`, `<numero>`, or `position()`  | Item sequence number |
-| `DESCRIPTION` | `<descripcion>`, `<Descripcion>`        |                      |
-| `QUANTITY`    | `<cantidad>`, `<Cantidad>`              |                      |
-| `UNIT_PRICE`  | `<precioUnitario>`, `<PrecioUnitario>`  |                      |
-| `VAT_RATE`    | `<alicuotaIVA>`, `<AlicuotaIVA>`        | e.g. `21.00`         |
-| `VAT`         | `<importeIVA>`, `<ImporteIVA>`          |                      |
-| `NET_AMOUNT`  | `<subtotal>`, `<Subtotal>`, `<importe>` | Line total           |
+| `POSITION` | `@numero`、`<numero>` 或 `position()` | 行项目序号 |
+| `DESCRIPTION` | `<descripcion>`、`<Descripcion>` | |
+| `QUANTITY` | `<cantidad>`、`<Cantidad>` | |
+| `UNIT_PRICE` | `<precioUnitario>`、`<PrecioUnitario>` | |
+| `VAT_RATE` | `<alicuotaIVA>`、`<AlicuotaIVA>` | 例如 `21.00` |
+| `VAT` | `<importeIVA>`、`<ImporteIVA>` | |
+| `NET_AMOUNT` | `<subtotal>`、`<Subtotal>`、`<importe>` | 行项目总额 |
 
-## Classification Rule
+## 分类规则
 
-DocBits detects ARGENTINA FACTURA ELECTRONICA documents via the absence of the Factura A marker — documents with `<tipoComprobante>` values other than `001` (e.g. `003`, `006`, `011`) are routed to this standard.
+DocBits 通过缺少 Factura A 标记来检测 ARGENTINA FACTURA ELECTRONICA 文档——`<tipoComprobante>` 值不为 `001`（例如 `003`、`006`、`011`）的文档会被路由到此标准。
 
-## Related
+## 相关文档
 
 * [ARGENTINA AFIP](argentina-afip.md)
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

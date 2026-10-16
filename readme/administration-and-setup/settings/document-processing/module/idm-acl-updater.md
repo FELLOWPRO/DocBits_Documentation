@@ -1,30 +1,29 @@
 # IDM ACL Updater
 
-## Overview
+## 概述
 
-The ACL-Updater module is responsible for updating and managing Access Control Lists (ACLs) within DocBits. This ensures that appropriate permissions and security measures are in place for document access and handling.
+ACL-Updater 模块负责在 DocBits 中更新和管理访问控制列表（ACL）。这可确保文档访问和处理具备适当的权限和安全措施。
 
-## Activation Instructions
+## 激活说明
 
-To activate the ACL-Updater module, follow these steps:
+请按照以下步骤激活 ACL-Updater 模块：
 
-1. Navigate to **Settings**.
-2. Select **Document Processing**.
-3. Select **Module**.
-4. Go to **Document Type**.
-5. Activate the **IDM ACL-Updater** by enabling the corresponding slider.
+1. 前往 **Settings**（设置）。
+2. 选择 **Document Processing**（文档处理）。
+3. 选择 **Module**（模块）。
+4. 前往 **Document Type**（文档类型）。
+5. 启用对应的滑块，激活 **IDM ACL-Updater**。
 
-Once the module is activated, you can select an **ION Mapping File** to use.
+模块激活后，您可以选择要使用的 **ION Mapping File**（ION 映射文件）。
 
 <figure><img src="../../../../.gitbook/assets/IDM-ACL-UPDATER1.png" alt=""><figcaption></figcaption></figure>
 
-### Adding ACL Information
+### 添加 ACL 信息
 
-To add ACL information, click the **Add** button. You can then specify the following details:
+要添加 ACL 信息，请点击 **Add**（添加）按钮。然后可以指定以下详细信息：
 
-* **IDM Document Type**
-* **Current IDM ACL Status**
-* **New IDM ACL Status**
+* **IDM Document Type**（IDM 文档类型）
+* **Current IDM ACL Status**（当前 IDM ACL 状态）
+* **New IDM ACL Status**（新的 IDM ACL 状态）
 
 <figure><img src="../../../../.gitbook/assets/IDM-ACL-UPDATER2.png" alt="" width="563"><figcaption></figcaption></figure>
-

@@ -1,142 +1,142 @@
-# Document Status alert
+# 文档状态提醒
 
-## Table `public.document_status_alert`
+## 表 `public.document_status_alert`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_type_id`: internal
-* `doc_type_key`: internal
-* `doc_status`: internal
-* `email_address`: text
-* `send_to_assigned_user`: boolean
-* `delay_delta`: integer
-* `delay_delta_type`: internal
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `name`: internal
-* `is_recursive`: boolean
-* `is_active`: boolean
-* `priority`: internal
-* `email_template_id`: internal
+* `id`：内部标识
+* `org_id`：组织 ID
+* `doc_type_id`：内部标识
+* `doc_type_key`：内部标识
+* `doc_status`：内部标识
+* `email_address`：文本
+* `send_to_assigned_user`：布尔值
+* `delay_delta`：整数
+* `delay_delta_type`：内部标识
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `name`：内部标识
+* `is_recursive`：布尔值
+* `is_active`：布尔值
+* `priority`：内部标识
+* `email_template_id`：内部标识
 
-### Analyse & Beschreibung
+### 分析与描述
 
-## Table Documentation: `public.document_status_alert`
+## 表文档：`public.document_status_alert`
 
-### Introduction
+### 简介
 
-The `public.document_status_alert` table appears to be designed for managing alerts related to document statuses within an organization. Based on the column names, the table stores information about various document types and their statuses, including details about notifications and timing for alerts. This table is likely used to trigger alerts based on certain document statuses and conditions, possibly to notify users or escalate processes.
+`public.document_status_alert` 表似乎用于管理组织内与文档状态相关的提醒。根据列名，该表存储有关各种文档类型及其状态的信息，包括提醒通知和时间安排的详细信息。此表可能用于根据特定的文档状态和条件触发提醒，以通知用户或升级处理流程。
 
-### Column Descriptions
+### 列说明
 
 #### `id`
 
-* **Meaning**: Unique identifier for each alert record.
-* **Role**: Primary key.
-* **Typical Contents**: A UUID string that uniquely identifies each row in the table.
+* **含义**：每条提醒记录的唯一标识符。
+* **作用**：主键。
+* **典型内容**：唯一标识表中每一行的 UUID 字符串。
 
 #### `org_id`
 
-* **Meaning**: Identifier for the organization associated with the alert.
-* **Role**: Foreign key.
-* **Typical Contents**: A UUID string linking to an organization record.
+* **含义**：与该提醒关联的组织标识符。
+* **作用**：外键。
+* **典型内容**：关联到组织记录的 UUID 字符串。
 
 #### `doc_type_id`
 
-* **Meaning**: Identifier for the document type.
-* **Role**: Foreign key (assumed).
-* **Typical Contents**: Typically a UUID, though the example data shows `None`, indicating this field might be optional.
+* **含义**：文档类型的标识符。
+* **作用**：外键（推测）。
+* **典型内容**：通常为 UUID，但示例数据中显示为 `None`，表明此字段可能是可选的。
 
 #### `doc_type_key`
 
-* **Meaning**: Key representing the type of document.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string such as 'INVOICE' or 'XML\_INVOICE'.
+* **含义**：用于表示文档类型的键。
+* **作用**：描述性字段。
+* **典型内容**：例如 'INVOICE' 或 'XML\_INVOICE' 这样的字符串。
 
 #### `doc_status`
 
-* **Meaning**: Current status of the document.
-* **Role**: Descriptive field.
-* **Typical Contents**: Descriptive status strings like 'validated\_pending\_approval' or 'error'.
+* **含义**：文档的当前状态。
+* **作用**：描述性字段。
+* **典型内容**：例如 'validated\_pending\_approval' 或 'error' 这样的状态描述字符串。
 
 #### `email_address`
 
-* **Meaning**: Email address where alerts are sent.
-* **Role**: Notification field.
-* **Typical Contents**: An email address; can be `None` if no email is specified.
+* **含义**：发送提醒的电子邮件地址。
+* **作用**：通知字段。
+* **典型内容**：电子邮件地址；未指定电子邮件时可以为 `None`。
 
 #### `send_to_assigned_user`
 
-* **Meaning**: Indicates if the alert should be sent to the user assigned to the document.
-* **Role**: Boolean field.
-* **Typical Contents**: `True` or `False`.
+* **含义**：指示是否应将提醒发送给分配给该文档的用户。
+* **作用**：布尔字段。
+* **典型内容**：`True` 或 `False`。
 
 #### `delay_delta`
 
-* **Meaning**: Amount of time to delay the alert.
-* **Role**: Timing field.
-* **Typical Contents**: Integer representing the delay duration.
+* **含义**：提醒的延迟时长。
+* **作用**：时间字段。
+* **典型内容**：表示延迟时长的整数。
 
 #### `delay_delta_type`
 
-* **Meaning**: Unit of time for `delay_delta`.
-* **Role**: Timing field.
-* **Typical Contents**: Typically 'minutes'.
+* **含义**：`delay_delta` 的时间单位。
+* **作用**：时间字段。
+* **典型内容**：通常为 'minutes'。
 
 #### `created_by`
 
-* **Meaning**: Identifier of the user who created the alert record.
-* **Role**: Foreign key (assumed).
-* **Typical Contents**: Integer representing a user ID.
+* **含义**：创建该提醒记录的用户标识符。
+* **作用**：外键（推测）。
+* **典型内容**：表示用户 ID 的整数。
 
 #### `created_on`
 
-* **Meaning**: Timestamp when the alert record was created.
-* **Role**: Technical field.
-* **Typical Contents**: Datetime with timezone information.
+* **含义**：提醒记录的创建时间戳。
+* **作用**：技术字段。
+* **典型内容**：包含时区信息的日期时间。
 
 #### `last_modified_on`
 
-* **Meaning**: Timestamp of the last modification to the alert record.
-* **Role**: Technical field.
-* **Typical Contents**: Datetime with timezone information; can be `None` if not modified.
+* **含义**：提醒记录的最后修改时间戳。
+* **作用**：技术字段。
+* **典型内容**：包含时区信息的日期时间；未修改时可以为 `None`。
 
 #### `is_deleted`
 
-* **Meaning**: Indicates if the alert record is marked as deleted.
-* **Role**: Boolean field.
-* **Typical Contents**: `True` or `False`.
+* **含义**：指示提醒记录是否已标记为删除。
+* **作用**：布尔字段。
+* **典型内容**：`True` 或 `False`。
 
 #### `name`
 
-* **Meaning**: Name or label for the alert.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string representing the alert name.
+* **含义**：提醒的名称或标签。
+* **作用**：描述性字段。
+* **典型内容**：表示提醒名称的字符串。
 
 #### `is_recursive`
 
-* **Meaning**: Indicates if the alert should recur at set intervals.
-* **Role**: Boolean field.
-* **Typical Contents**: `True` or `False`.
+* **含义**：指示是否应按设定的时间间隔重复发送提醒。
+* **作用**：布尔字段。
+* **典型内容**：`True` 或 `False`。
 
 #### `is_active`
 
-* **Meaning**: Indicates if the alert is currently active.
-* **Role**: Boolean field.
-* **Typical Contents**: `True` or `False`.
+* **含义**：指示提醒当前是否处于启用状态。
+* **作用**：布尔字段。
+* **典型内容**：`True` 或 `False`。
 
 #### `priority`
 
-* **Meaning**: Priority level of the alert.
-* **Role**: Descriptive field.
-* **Typical Contents**: Could be strings like 'High', 'Medium', 'Low'; example data shows `None`.
+* **含义**：提醒的优先级。
+* **作用**：描述性字段。
+* **典型内容**：可能是 'High'、'Medium'、'Low' 等字符串；示例数据中显示为 `None`。
 
 #### `email_template_id`
 
-* **Meaning**: Identifier for the email template used for the alert.
-* **Role**: Foreign key (assumed).
-* **Typical Contents**: Typically a UUID; example data shows `None`, indicating this field might be optional.
+* **含义**：提醒所用电子邮件模板的标识符。
+* **作用**：外键（推测）。
+* **典型内容**：通常为 UUID；示例数据中显示为 `None`，表明此字段可能是可选的。

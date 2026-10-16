@@ -2,32 +2,32 @@
 hidden: true
 ---
 
-# Previewing EDI Messages
+# 预览 EDI 消息
 
-## How to use the preview feature to check the appearance and content of EDI messages before sending them to ensure they meet the partner's requirements.
+## 如何使用预览功能，在发送 EDI 消息之前检查其外观和内容，确保符合合作伙伴的要求。
 
-The preview feature is an extremely useful tool to check the appearance and content of EDI messages before they are actually sent.
+预览功能非常实用，可用于在实际发送 EDI 消息之前检查其外观和内容。
 
-**Here are some steps on how to use the preview feature to ensure that EDI messages meet the partner's requirements:**
+**以下是使用预览功能确保 EDI 消息符合合作伙伴要求的步骤：**
 
-**Previewing the EDI format:**
+**预览 EDI 格式：**
 
-* Open the preview feature in your EDI system to get a preview of the generated EDI format. This allows you to check the layout and structure of the message to ensure that it meets the standards and specifications that your business partner expects.
+* 在 EDI 系统中打开预览功能，查看生成的 EDI 格式。这样可以检查消息的布局和结构，确保符合业务合作伙伴的标准和规范。
 
-**Validating the data content:**
+**验证数据内容：**
 
-* Check the data content in the preview to ensure that all required fields are present and contain correct values. Make sure that data fields are placed in the correct segments and use the correct codes or labels.
+* 检查预览中的数据内容，确保包含所有必填字段且字段值正确。确保数据字段位于正确的段中，并使用正确的代码或标签。
 
-**Identifying formatting errors:**
+**识别格式错误：**
 
-* Ensure that the formatting of the EDI message follows standards, such as proper segment separators, field separators, and decimal separators. Also check the indentation and arrangement of segments to ensure the message is clear and easy to read.
+* 确保 EDI 消息的格式符合标准，例如正确使用段分隔符、字段分隔符和小数分隔符。还要检查段的缩进和排列，确保消息清晰易读。
 
-**Considering partner requirements:**
+**考虑合作伙伴的要求：**
 
-* Consider your business partner's specific requirements regarding the EDI format. This may include using certain segments, elements, or codes that need to be previewed to ensure they are implemented correctly.
+* 考虑业务合作伙伴对 EDI 格式的具体要求。这些要求可能包括使用某些段、元素或代码，应通过预览确认其已正确实现。
 
-**Conducting test transactions:**
+**执行测试交易：**
 
-* Use the preview feature to conduct test transactions with your business partner before sending real data. This allows you to identify and resolve potential problems early, before they impact business operations.
+* 使用预览功能，在发送真实数据之前与业务合作伙伴执行测试交易。这样可以及早发现并解决潜在问题，避免影响业务运营。
 
-Careful use of the preview feature helps you ensure that your EDI messages meet your business partner's requirements and ensure a smooth exchange of business data.
+谨慎使用预览功能有助于确保 EDI 消息符合业务合作伙伴的要求，并确保业务数据顺利交换。

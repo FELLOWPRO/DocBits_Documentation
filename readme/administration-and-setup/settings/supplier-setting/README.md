@@ -1,9 +1,6 @@
-# Supplier Setting
+# 供应商设置
 
-1. **Supplier Permissions**: This setting defines what actions a supplier can or cannot take within the system. For instance, you can control whether suppliers can view only their transactions, submit invoices, access payment histories, or update their information. Setting these permissions helps maintain system security and ensures suppliers only access the data necessary for their interactions with your business.
-2. **Supplier Group**: Suppliers can be categorized into different groups based on criteria such as the type of products they provide, their geographic location, or their role within the supply chain. Grouping suppliers allows for more streamlined management and can facilitate the application of specific workflows or rules to a collection of suppliers rather than individually.
-3. **User and Supplier Group Mapping**: This setting involves linking users within your organization to one or more supplier groups. This is crucial for managing which employees have access to information and interaction capabilities with specific supplier groups. For example, a procurement manager in your company may need access to all supplier groups, while a project manager may only need access to suppliers related to their projects.
-4. **Policy and Privacy Statement**: It's essential to have clear policies and privacy statements accessible to suppliers regarding how their data will be used and protected. This setting allows you to manage and communicate these documents to suppliers, ensuring compliance with legal standards and building trust with your suppliers by transparently showing how their information is handled.
-
-
-
+1. **供应商权限**：此设置用于定义供应商在系统中可以或不可以执行哪些操作。例如，您可以控制供应商是否只能查看自己的交易、提交发票、访问付款历史记录或更新其信息。设置这些权限有助于维护系统安全，并确保供应商只能访问其与贵公司的业务往来所需的数据。
+2. **供应商组**：可以根据供应商提供的产品类型、地理位置或其在供应链中的角色等标准，将供应商归入不同的组。对供应商分组可以简化管理，并便于对一组供应商应用特定的工作流或规则，而无需逐一设置。
+3. **用户与供应商组映射**：此设置用于将组织内的用户关联到一个或多个供应商组。这对于管理员工对特定供应商组的信息和交互功能的访问权限至关重要。例如，贵公司的采购经理可能需要访问所有供应商组，而项目经理可能只需要访问与其项目相关的供应商。
+4. **政策与隐私声明**：务必向供应商提供清晰的政策和隐私声明，说明其数据将如何使用和保护。此设置允许您管理并向供应商传达这些文档，确保符合法律标准，并通过透明说明如何处理供应商信息来建立信任。

@@ -1,13 +1,13 @@
-# Task Counter
+# 任务计数器
 
-The task counter is located in the upper-right corner of the Dashboard home page.
+任务计数器位于仪表板主页的右上角。
 
 <figure><img src="../../../.gitbook/assets/task-counter1.png" alt=""><figcaption></figcaption></figure>
 
-This is where you can see how many documents are in your queue for processing
+在这里，您可以查看队列中待处理的文档数量。
 
 <figure><img src="../../../.gitbook/assets/task-counter2.png" alt="" width="563"><figcaption></figcaption></figure>
 
-and how many documents are now ready for validation.
+还可以查看当前已准备好进行验证的文档数量。
 
 <figure><img src="../../../.gitbook/assets/task-counter3.png" alt="" width="563"><figcaption></figcaption></figure>

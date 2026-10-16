@@ -3,8 +3,8 @@ hidden: true
 noIndex: true
 ---
 
-# Document Status Lifecycle
+# 文档状态生命周期
 
-How a document moves through the DocBits statuses, from import to export, including approvals, rejection and errors. See [Document Status](../../end-user-and-partner-section/end-user-section/dashboard/document-status.md) for the full list of statuses.
+了解文档在 DocBits 中如何从导入到导出经历各个状态，包括审批、拒绝和错误。有关完整的状态列表，请参阅[文档状态](../../end-user-and-partner-section/end-user-section/dashboard/document-status.md)。
 
-<figure><img src="../../.gitbook/assets/archify-doc-status.svg" alt="Document Status Lifecycle"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/archify-doc-status.svg" alt="文档状态生命周期"><figcaption></figcaption></figure>

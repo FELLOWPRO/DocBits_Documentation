@@ -1,5 +1,3 @@
 # LN
 
-A guide to importing master data from INFOR LN.
-
-
+从 INFOR LN 导入主数据的指南。

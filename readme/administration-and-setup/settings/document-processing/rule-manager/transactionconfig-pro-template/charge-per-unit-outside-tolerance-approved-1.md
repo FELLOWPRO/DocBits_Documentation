@@ -1,32 +1,32 @@
-# Case 14: Charge Line - Charge Per Unit Outside Tolerance (Approved)
+# 案例 14：费用行 - 单位费用超出容差（已批准）
 
-## Scenario:
+## 场景：
 
-The charge per unit is outside tolerance but has been approved.
+单位费用超出容差，但已获批准。
 
-## Action:
+## 操作：
 
-The system accepts the charge per unit and applies the approved charges, processing the transaction accordingly.
+系统接受该单位费用并应用已批准的费用，据此处理交易。
 
-## Example:
+## 示例：
 
-* **Purchase Order (PO):**
-  * Charge Per Unit: $4.50
-  * Quantity: 1,000 units
-  * Total Charge Amount: $4,500.00
-* **Invoice Received:**
-  * Charge Per Unit: $5.00 (outside tolerance of 11.11%, approved)
-  * Quantity: 1,000 units
-  * Total Charge Amount: $5,000.00
-* **Tolerance Levels:**
-  * Charge Per Unit Tolerance: ±5%
+* **采购订单 (PO)：**
+  * 单位费用：$4.50
+  * 数量：1,000 件
+  * 费用总额：$4,500.00
+* **收到的发票：**
+  * 单位费用：$5.00（超出 11.11% 的容差，已批准）
+  * 数量：1,000 件
+  * 费用总额：$5,000.00
+* **容差级别：**
+  * 单位费用容差：±5%
 
-Since the charge per unit ($5.00) is outside the acceptable tolerance range of 5% but has been approved, the system will:
+由于单位费用（$5.00）超出 5% 的可接受容差范围，但已获批准，系统将：
 
-1. **Accept the Approved Charge Per Unit:** The system accepts the invoiced charge per unit of $5.00 as it has been approved despite exceeding the tolerance limit.
-2. **Process the Transaction:** The system processes the invoice using the approved charge per unit and the quantity:
-   * **Total Charge Amount = Quantity × Approved Charge Per Unit**
-   * **Total Charge Amount = 1,000 units × $5.00 = $5,000.00**
-3. **Finalize the Invoice:** The system processes the transaction with the approved charges, reflecting the total amount of $5,000.00.
+1. **接受已批准的单位费用：**尽管超出容差限制，系统仍接受已批准的发票单位费用 $5.00。
+2. **处理交易：**系统使用已批准的单位费用和数量处理发票：
+   * **费用总额 = 数量 × 已批准的单位费用**
+   * **费用总额 = 1,000 件 × $5.00 = $5,000.00**
+3. **完成发票处理：**系统使用已批准的费用处理交易，反映 $5,000.00 的总金额。
 
-This approach ensures that the system can accommodate approved variances in charges, allowing flexibility while maintaining accurate financial records.
+这种做法确保系统能够处理已批准的费用差异，在保持财务记录准确的同时提供灵活性。

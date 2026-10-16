@@ -1,47 +1,47 @@
-# Groups and Permissions
+# 用户组与权限
 
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
-DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
+DocBits 用户组与权限教程：设置用户角色、访问权限并保护您的工作区
 {% endembed %}
 
-<figure><img src="../../../../../.gitbook/assets/groups_and_permissions.png" alt="Groups and Permissions"><figcaption><p>Groups and Permissions Page</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/groups_and_permissions.png" alt="用户组与权限"><figcaption><p>用户组与权限页面</p></figcaption></figure>
 
-Groups and Permissions allow you to control which users can access specific document types and what actions they can perform.
+用户组与权限功能可用于控制哪些用户可以访问特定文档类型，以及他们可以执行哪些操作。
 
-## Activate/Deactivate Groups & Permissions
+## 启用/停用用户组与权限
 
-Use the toggle at the top of the page to enable or disable the groups and permissions system. When disabled, the system uses a simpler access model without group-based restrictions.
+使用页面顶部的切换开关启用或停用用户组与权限系统。停用后，系统将使用更简单的访问模型，不再基于用户组进行限制。
 
-## Group List
+## 用户组列表
 
-The table displays all configured groups with:
+该表格显示所有已配置的用户组，包括：
 
-| Column | Description |
+| 列 | 描述 |
 |--------|-------------|
-| **Group Name** | The name of the group. |
-| **Group Description** | A brief description of the group's purpose. |
-| **Actions** | Menu with options to edit or delete the group. |
+| **用户组名称** | 用户组的名称。 |
+| **用户组描述** | 对用户组用途的简要说明。 |
+| **操作** | 包含编辑或删除用户组选项的菜单。 |
 
-Use the **Search** bar to find groups by name. Click **+ New** to create a new group.
+使用**搜索**栏按名称查找用户组。点击**+ 新建**即可创建用户组。
 
-## Configuring Group Permissions
+## 配置用户组权限
 
-When you select a group (via the Actions menu → Edit), a permissions table appears where you can configure access per document type:
+选择一个用户组（通过“操作”菜单 →“编辑”）后，会显示权限表格，您可以在其中按文档类型配置访问权限：
 
-| Permission | Description |
+| 权限 | 描述 |
 |------------|-------------|
-| **View** | Permission to see documents of this type. |
-| **Update** | Permission to modify documents of this type. |
-| **Delete** | Permission to remove documents of this type. |
-| **First Approval** | Permission to perform the initial approval. |
-| **Second Approval** | Permission to perform a secondary level of approval (if applicable). |
+| **查看** | 查看此类型文档的权限。 |
+| **更新** | 修改此类型文档的权限。 |
+| **删除** | 移除此类型文档的权限。 |
+| **首次审批** | 执行首次审批的权限。 |
+| **二次审批** | 执行第二级审批的权限（如适用）。 |
 
-Each row in the permissions table represents a document type (e.g., Invoice, Credit Note, Delivery Note). Check or uncheck the boxes to grant or revoke permissions for that group.
+权限表格中的每一行代表一种文档类型（例如：发票、贷项通知单、交货单）。勾选或取消勾选复选框，即可为该用户组授予或撤销相应权限。
 
-## Creating a New Group
+## 创建新用户组
 
-1. Click **+ New** in the top-right corner.
-2. Enter a **Group Name** and optional **Description**.
-3. Configure the permissions for each document type.
-4. Assign users to the group.
-5. Click **Save** to apply.
+1. 点击右上角的**+ 新建**。
+2. 输入**用户组名称**和可选的**描述**。
+3. 为每种文档类型配置权限。
+4. 将用户分配到该用户组。
+5. 点击**保存**以应用更改。

@@ -1,33 +1,33 @@
 ---
-description: ZATCA FATOORAH electronic document support in DocBits
+description: DocBits 对 ZATCA FATOORAH 电子文档的支持
 ---
 
 # 🇸🇦 ZATCA FATOORAH
 
-| Property             | Value                                                     |
+| 属性                 | 值                                                     |
 | -------------------- | --------------------------------------------------------- |
-| **Country / Region** | Saudi Arabia                                              |
-| **Document Types**   | Invoice (Fatoorah)                                        |
-| **Format**           | UBL 2.1 XML                                               |
-| **Standard**         | ZATCA FATOORAH (ZATCA - Zakat, Tax and Customs Authority) |
+| **国家 / 地区** | 沙特阿拉伯                                              |
+| **文档类型**   | 发票（Fatoorah）                                        |
+| **格式**         | UBL 2.1 XML                                               |
+| **标准**         | ZATCA FATOORAH（ZATCA - 天课、税务和海关管理局） |
 
-ZATCA Fatoorah is the Saudi Arabian electronic invoicing standard operated by the Zakat, Tax and Customs Authority. Phase 1 (Generation) became mandatory in December 2022, and Phase 2 (Integration) requires real-time reporting to the ZATCA platform. Fatoorah is the standard tax invoice format used for B2B transactions exceeding SAR 1,000.
+ZATCA Fatoorah 是由天课、税务和海关管理局运营的沙特阿拉伯电子发票标准。第 1 阶段（生成）于 2022 年 12 月起成为强制要求，第 2 阶段（集成）要求向 ZATCA 平台实时报告。Fatoorah 是 B2B 交易金额超过 SAR 1,000 时使用的标准税务发票格式。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件        | 状态      |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览          | ✅ 支持 |
+| 字段提取 | ✅ 支持 |
+| 转换   | ✅ 支持 |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/zatca-fatoorah-preview.png" alt="ZATCA Fatoorah invoice preview in DocBits"><figcaption><p>Default DocBits preview for a ZATCA Fatoorah invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/zatca-fatoorah-preview.png" alt="DocBits 中的 ZATCA Fatoorah 发票预览"><figcaption><p>DocBits 中 ZATCA Fatoorah 发票的默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)
 * [ZATCA REPORTING](zatca-reporting.md)
 * [ZATCA SIMPLIFIED](zatca-simplified.md)
 * [ZATCA TAX INVOICE](zatca-tax-invoice.md)

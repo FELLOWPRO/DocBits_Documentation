@@ -1,32 +1,32 @@
-# Importing Supplier and Purchase Order Data into DocBits from CSV Files
+# 将供应商和采购订单数据从 CSV 文件导入 DocBits
 
-## Overview
+## 概述
 
-This Page describes how to import Supplier and Purchase Order data into DocBits using a Comma Separated Values (.csv) file.
+本页介绍如何使用逗号分隔值（.csv）文件将供应商和采购订单数据导入 DocBits。
 
-**Important:** Before importing any data, it is crucial to **review the .csv file thoroughly** to ensure data accuracy and proper configuration. Importing incorrect data can lead to inconsistencies. Refer to the [**CSV Specifications for Purchase Order**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#csv-specifications-for-purchase-order) or [**CSV Specifications for Supplier**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#csv-specifications-for-supplier) sections for details on required and optional fields. If required fields are missing, the import process will fail.
+**重要提示：** 导入任何数据之前，务必**彻底检查 .csv 文件**，以确保数据准确且配置正确。导入错误数据可能导致数据不一致。有关必填字段和可选字段的详细信息，请参阅[**采购订单的 CSV 规范**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#csv-specifications-for-purchase-order)或[**供应商的 CSV 规范**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#csv-specifications-for-supplier)部分。如果缺少必填字段，导入过程将失败。
 
-**Validation:** Always verify that your .csv file contains all the necessary columns as outlined in the respective specifications section before attempting the import.
+**验证：** 尝试导入之前，请务必根据相应的规范部分检查 .csv 文件是否包含所有必需的列。
 
-## Generall Requirements:
+## 一般要求：
 
-**Date Format:**
+**日期格式：**
 
-All dates provided in the .csv sheet **must** adhere to the following format:
+.csv 表格中的所有日期**必须**遵循以下格式：
 
 YYYY-MM-DD HH:MM:SS
 
-**Required Fields:**
+**必填字段：**
 
-For both Supplier and Purchase Order imports, all columns marked as "Required" in their respective specifications **must exist in the .csv file and must contain a value in each row**. If any required field is missing or empty for a row, the import process will fail.
+对于供应商和采购订单导入，相应规范中标记为“必填”的所有列**都必须存在于 .csv 文件中，并且每一行都必须包含相应的值**。如果某一行缺少必填字段或字段值为空，导入过程将失败。
 
-### CSV Specifications for Purchase Order
+### 采购订单的 CSV 规范 <a id="csv-specifications-for-purchase-order"></a>
 
-**Fields which are Required** - (column with name must exist & must contain data)
+**必填字段** -（列名必须存在且必须包含数据）
 
 * `purchase_order_number`
 
-**Fields which can be included**
+**可包含的字段**
 
 * `warehouse_id`
 * `location_id`
@@ -88,16 +88,16 @@ For both Supplier and Purchase Order imports, all columns marked as "Required" i
 * `geo_code`
 * `delivery_method`
 
-### CSV Specifications for Supplier
+### 供应商的 CSV 规范 <a id="csv-specifications-for-supplier"></a>
 
-**Fields which are Required** - (column with name must exist & must contain data)
+**必填字段** -（列名必须存在且必须包含数据）
 
 * `customer_number`
 * `supplier_number`
 * `supplier_name`
 * `country_code`
 
-**Fields which can be included**
+**可包含的字段**
 
 * `address_1`
 * `address_2`
@@ -133,18 +133,18 @@ For both Supplier and Purchase Order imports, all columns marked as "Required" i
 * `iban`
 * `currency`
 
-## Access Endpoint
+## 访问端点
 
-To import data, follow these steps:
+要导入数据，请按以下步骤操作：
 
-1. Visit: [https://api.docbits.com/](https://api.docbits.com/)
-2.  Click the **"Authorize"** button.
+1. 访问：[https://api.docbits.com/](https://api.docbits.com/)
+2. 点击 **“Authorize”** 按钮。
 
     <figure><img src="../.gitbook/assets/import_csv_1.png" alt=""><figcaption></figcaption></figure>
-3.  Enter the API-Key and click **"Authorize"**
+3. 输入 API-Key，然后点击 **“Authorize”**
 
-    * The API-Key can be found in DocBits in Settings -> Global Settings -> Integration&#x20;
-    * **Note:** The API key provided in your request determines the target organization and the user context under which the data will be imported.
+    * API-Key 可在 DocBits 的 Settings -> Global Settings -> Integration&#x20; 中找到。
+    * **注意：** 请求中提供的 API key 决定目标组织，以及导入数据时使用的用户上下文。
 
 
 
@@ -156,32 +156,32 @@ To import data, follow these steps:
 
 
 
-1. Press **CTRL + F** (or **CMD + F** on Mac) to open the search function, and search for `/master_data_lookup/import_data`.
-2.  Click on the request to view its details, then click on "**Try it out"** to proceed.
+1. 按 **CTRL + F**（Mac 上按 **CMD + F**）打开搜索功能，然后搜索 `/master_data_lookup/import_data`。
+2. 点击该请求以查看详细信息，然后点击 **“Try it out”** 继续。
 
     <figure><img src="../.gitbook/assets/import_csv_3.png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../.gitbook/assets/import_csv_6.png" alt=""><figcaption></figcaption></figure>
-3.  You can now enter the required parameters in the Request Body.\
+3. 现在可以在 Request Body 中输入所需参数。\
 
 
-    **Request Parameters:**
+    **请求参数：**
 
-    When making the import request, the following parameters need to be specified:
+    发起导入请求时，需要指定以下参数：
 
-    * **sub\_org\_id:** Remove any text from the text field to ensure the "Send empty value" option is enabled.
-    * **data\_type:** This parameter specifies the type of data being imported. It can be either `supplier` or `purchase_order` depending on the content of your .csv file.
-    * **replace\_all:** This boolean parameter determines whether all existing data in the respective database table (`supplier` or `purchase_order`) for the specified organization should be deleted before inserting the new data from the .csv file. Set this to `true` to replace all existing data or `false` to append or update with the new data.
-    *   **delimiter:** This parameter specifies the character used to separate the individual values within each row of your data file. **It is essential to identify the correct delimiter used in your file.** Common delimiters are the comma (`,`) and the semicolon (`;`).
+    * **sub\_org\_id：** 删除文本字段中的所有文字，以确保启用“Send empty value”选项。
+    * **data\_type：** 此参数指定要导入的数据类型。根据 .csv 文件的内容，可以是 `supplier` 或 `purchase_order`。
+    * **replace\_all：** 此布尔参数用于确定是否应在插入 .csv 文件中的新数据之前，删除指定组织相应数据库表（`supplier` 或 `purchase_order`）中的所有现有数据。设为 `true` 可替换所有现有数据；设为 `false` 则追加或使用新数据更新现有数据。
+    *   **delimiter：** 此参数指定用于分隔数据文件每一行中各个值的字符。**必须确认文件实际使用的分隔符。**常见分隔符包括逗号（`,`）和分号（`;`）。
 
-        **How to check the delimiter:**
+        **如何检查分隔符：**
 
-        1. Open your data file (e.g., the `.csv` file) with a plain text editor (like Notepad on Windows, TextEdit on Mac, or similar).
-        2. Examine the first few rows of data. Look for the character that consistently appears between the different pieces of information in each row. This character is your delimiter.
-        3. Set the `delimiter` parameter in your import request to this identified character (either `,` or `;`). Using the wrong delimiter will prevent the data from being parsed correctly and will result in a failed import.
-    * **on\_conflict & auto\_generate\_id:** The functionality for handling data conflicts (`on_conflict`) and automatically generating IDs (`auto_generate_id`) is currently **not implemented** for these data types.
+        1. 使用纯文本编辑器（例如 Windows 上的 Notepad、Mac 上的 TextEdit 或类似工具）打开数据文件（例如 `.csv` 文件）。
+        2. 检查前几行数据。找到每一行中各项信息之间反复出现的字符。该字符就是分隔符。
+        3. 在导入请求中，将 `delimiter` 参数设为识别出的字符（`,` 或 `;`）。使用错误的分隔符会导致数据无法正确解析，导入也会失败。
+    * **on\_conflict & auto\_generate\_id：** 目前尚未为这些数据类型实现冲突处理功能（`on_conflict`）和自动生成 ID 功能（`auto_generate_id`）。
 
     <figure><img src="../.gitbook/assets/import_csv_4.png" alt=""><figcaption></figcaption></figure>
-4.  If you have verified that all the information is correct, you can initiate the import process by clicking the **"Execute"** button.
+4. 确认所有信息均正确后，点击 **“Execute”** 按钮即可启动导入过程。
 
     <figure><img src="../.gitbook/assets/import_csv_5.png" alt=""><figcaption></figcaption></figure>

@@ -1,16 +1,14 @@
-# Best practices
+# 最佳实践
 
-Best practices for configuring and maintaining integration settings help ensure the efficiency, security, and reliability of the integration between DocBits and your Identity Service Provider (IdP).&#x20;
+配置和维护集成设置的最佳实践有助于确保 DocBits 与身份服务提供商（IdP）之间集成的效率、安全性和可靠性。&#x20;
 
-**Here are some best practices:**&#x20;
+**以下是一些最佳实践：**&#x20;
 
-* **Regularly review settings:** Perform regular reviews of integration settings to ensure all configurations are correct and up-to-date. Changes to systems or policies may require updates to the integration.&#x20;
-* **Certificate and metadata updates:** Monitor SAML certificate and metadata expiration dates and update them in a timely manner to avoid service disruptions. Use automated processes or reminders to ensure no expiration dates are missed.
-* **Security-conscious credential management:** Treat credentials such as API keys or certificates with the utmost confidentiality and protect them from unauthorized access. Use secure methods for storing and exchanging credentials to ensure the integrity of the integration.&#x20;
-* **Documentation and logging of changes:** Record and log all changes to integration settings in detailed documentation. This allows you to track changes and revert to previous configurations when needed.&#x20;
-* **Training administrators:** Ensure that the administrators responsible for configuring and maintaining integration settings have the necessary knowledge and skills. Provide training and resources to ensure they understand and can implement integration best practices.&#x20;
-* **Setting up alerts and notifications:** Configure alerts and notifications for critical events such as certificate expiration dates or failed authentication attempts. This will allow you to identify potential issues early and proactively address them.
+* **定期检查设置：** 定期检查集成设置，确保所有配置正确且为最新状态。系统或策略发生变化时，可能需要更新集成。&#x20;
+* **证书和元数据更新：** 监控 SAML 证书和元数据的到期日期，并及时更新，以避免服务中断。使用自动化流程或提醒，确保不会遗漏任何到期日期。
+* **谨慎管理凭据：** 对 API 密钥或证书等凭据严格保密，并防止其遭到未经授权的访问。使用安全的方法存储和交换凭据，以确保集成的完整性。&#x20;
+* **记录变更并进行日志记录：** 在详细文档中记录并记录所有集成设置变更。这样可以跟踪变更，并在需要时恢复到之前的配置。&#x20;
+* **培训管理员：** 确保负责配置和维护集成设置的管理员具备必要的知识和技能。提供培训和资源，确保他们理解并能够落实集成最佳实践。&#x20;
+* **设置提醒和通知：** 针对证书到期或身份验证失败等关键事件配置提醒和通知。这样可以及早发现潜在问题并主动处理。
 
-By following these best practices, you can ensure that the integration between DocBits and your identity service provider works smoothly, is secure, and meets the needs of your organization.
-
-
+遵循这些最佳实践，可以确保 DocBits 与身份服务提供商之间的集成顺畅、安全，并满足组织的需求。

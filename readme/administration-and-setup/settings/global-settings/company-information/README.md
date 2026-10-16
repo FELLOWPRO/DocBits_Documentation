@@ -1,84 +1,84 @@
-# Company Information
+# 公司信息
 
-<figure><img src="../../../../.gitbook/assets/company_information.png" alt="Company Information form in the English DocBits Sandbox test organization"><figcaption><p>Company Information: edit the organization name, address, legal identifiers and contact details, then select Save.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/company_information.png" alt="DocBits 英文沙盒测试组织中的公司信息表单"><figcaption><p>公司信息：编辑组织名称、地址、法定标识信息和联系方式，然后选择 Save。</p></figcaption></figure>
 
-The Company Information page lets you manage your company profile, preferences, and subscription details. It is organized into the following sections:
+公司信息页面用于管理公司资料、偏好设置和订阅详情。页面分为以下几个部分：
 
-## Company Information
+## 公司信息
 
-This section contains your core company data, grouped into four areas:
+此部分包含核心公司数据，分为四个区域：
 
-### Company Identity
+### 公司身份
 
-* **Name** *(required)*: The legal name of your company.
+* **Name**（必填）：公司的法定名称。
 
-### Address
+### 地址
 
-* **Street + Number**: Your company's street address.
-* **Postal Code**: ZIP or postal code.
-* **City**: City name.
-* **Country**: Select your country from the dropdown.
+* **Street + Number**：公司的街道地址。
+* **Postal Code**：邮政编码。
+* **City**：城市名称。
+* **Country**：从下拉菜单中选择国家/地区。
 
-### Legal Information
+### 法律信息
 
-* **Company ID**: A unique identifier for your company, used for integrations and internal reference.
-* **Tax ID**: Your tax identification number for financial reporting.
-* **Commercial Register ID**: Your commercial register number for legal documentation.
+* **Company ID**：公司的唯一标识符，用于集成和内部参考。
+* **Tax ID**：用于财务报告的税务识别号。
+* **Commercial Register ID**：用于法律文件的商业登记号。
 
-### Contact
+### 联系方式
 
-* **Official Company Phone Number**: The primary phone number for your company.
-* **E-Mail**: The main email address used for official communications.
+* **Official Company Phone Number**：公司的主要电话号码。
+* **E-Mail**：用于官方通信的主要电子邮箱地址。
 
-After entering or updating any fields, click **Save** to apply your changes. The **?** icons beside the legal identifiers show extra field guidance. Select the section heading to expand or collapse the form.
+输入或更新字段后，点击 **Save** 应用更改。法定标识信息旁的 **?** 图标会显示额外的字段说明。选择此部分的标题可展开或折叠表单。
 
-## E-mail domains
+## 电子邮件域名
 
-Organization admins can open **Settings → Company Information → E-mail domains** to manage the domains used for automatic organization assignment. When someone signs in with Microsoft or Google and is not yet a member of an organization, DocBits can assign them to this organization if their e-mail address uses one of its listed domains. A domain can belong to only one organization.
+组织管理员可以打开 **Settings → Company Information → E-mail domains**，管理用于自动分配组织的域名。当用户使用 Microsoft 或 Google 登录且尚未加入组织时，如果其电子邮件地址使用了该组织列出的域名，DocBits 可以将其分配到此组织。一个域名只能属于一个组织。
 
-<figure><img src="../../../../.gitbook/assets/company_email_domains_en.png" alt="Expanded E-mail domains section with an empty domain list, input field and Add domain button"><figcaption><p>The English E-mail domains section before a domain is added. Enter a company domain, then select Add domain.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/company_email_domains_en.png" alt="已展开的电子邮件域名部分，包含空域名列表、输入框和 Add domain 按钮"><figcaption><p>添加域名之前的英文 E-mail domains 部分。输入公司域名，然后选择 Add domain。</p></figcaption></figure>
 
-Enter the domain only, such as `example.com`, in the input and select **Add domain** or press Enter. The first domain becomes the primary domain. If more domains are listed, use **Make primary** on another row to change it, or the trash icon to remove a domain. Errors such as an invalid domain, a personal e-mail provider or a domain already assigned elsewhere appear under the input. **No domains assigned yet** means this organization has no domain rule.
+在输入框中仅输入域名，例如 `example.com`，然后选择 **Add domain** 或按 Enter。第一个域名会成为主域名。如果列表中有多个域名，可在其他行选择 **Make primary** 将其设为主域名，或选择垃圾桶图标将其删除。无效域名、个人电子邮件服务提供商域名或已分配给其他组织的域名等错误会显示在输入框下方。**No domains assigned yet** 表示此组织尚无域名规则。
 
-Before adding a domain, check which organization should receive new sign-ins. To manage existing memberships, continue with [Users](../groups-users-and-permissions/users/README.md).
+添加域名前，请确认哪个组织应接收新的登录用户。要管理现有成员资格，请参阅[用户](../groups-users-and-permissions/users/README.md)。
 
-## Company Preferences
+## 公司偏好设置
 
-Configure company-wide default settings:
+配置公司范围内的默认设置：
 
-* **Date Pattern**: Choose how dates are displayed throughout DocBits (e.g., `%m/%d/%Y`, `%d.%m.%Y`).
-* **Amount Formatting**: Select the number format for amounts (e.g., Deutsch for `1.000,00`, English for `1,000.00`).
-* **New Version Info Dialog**: Toggle whether users see a notification when a new DocBits version is released.
+* **Date Pattern**：选择 DocBits 中日期的显示格式（例如 `%m/%d/%Y`、`%d.%m.%Y`）。
+* **Amount Formatting**：选择金额的数字格式（例如，Deutsch 对应 `1.000,00`，English 对应 `1,000.00`）。
+* **New Version Info Dialog**：切换是否在 DocBits 发布新版本时向用户显示通知。
 
-Click **Save** after making changes.
+更改后点击 **Save**。
 
-## App-Color
+## 应用颜色
 
-Customize the primary color of the DocBits interface. This is useful for visually distinguishing different environments (e.g., dev vs. production).
+自定义 DocBits 界面的主色。此设置有助于通过视觉区分不同环境（例如开发环境与生产环境）。
 
-* **Color**: Enter a hex color code (e.g., `#2388AE`) or use the color picker.
-* Click **Save** to apply, or **Reset** to restore the default color.
+* **Color**：输入十六进制颜色代码（例如 `#2388AE`），或使用颜色选择器。
+* 点击 **Save** 应用更改，或点击 **Reset** 恢复默认颜色。
 
-## Subscription Plan
+## 订阅计划
 
-View your active subscription plans and their details:
+查看当前有效订阅计划及其详情：
 
-* **Plan Name**: The name of each active plan (e.g., DocBits, DocFlow Users, DocSearch).
-* **Days Left**: How many days remain until the plan expires.
-* **Start Date / End Date**: The subscription period.
-* **Users Count**: Total number of users in your organization.
-* **Sub Organizations Count**: Number of sub-organizations configured.
-* **Suppliers Count**: Number of suppliers registered.
+* **Plan Name**：每个有效计划的名称（例如 DocBits、DocFlow Users、DocSearch）。
+* **Days Left**：距离计划到期还剩多少天。
+* **Start Date / End Date**：订阅周期。
+* **Users Count**：组织中的用户总数。
+* **Sub Organizations Count**：已配置的子组织数量。
+* **Suppliers Count**：已登记的供应商数量。
 
-## Subscription Usage
+## 订阅用量
 
-Monitor your monthly token and workflow consumption:
+监控每月的令牌和工作流用量：
 
-| Column | Description |
+| 列 | 说明 |
 |--------|-------------|
-| **Type** | The usage type (Document or Workflow). |
-| **From / To** | The billing period dates. |
-| **Tokens Used** | Number of tokens consumed in the current period. |
-| **Remaining Tokens** | Tokens still available in the current period. |
+| **Type** | 用量类型（文档或工作流）。 |
+| **From / To** | 计费周期日期。 |
+| **Tokens Used** | 当前周期已使用的令牌数。 |
+| **Remaining Tokens** | 当前周期剩余可用令牌数。 |
 
-Use the **Select** button to filter by specific date ranges.
+使用 **Select** 按钮按特定日期范围筛选。

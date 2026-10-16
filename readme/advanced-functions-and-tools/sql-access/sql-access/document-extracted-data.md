@@ -1,19 +1,19 @@
-# Document extracted data
+# 文档提取数据
 
-## Spalten
+## 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_id`: internal
-* `field_name`: internal
-* `field_value`: internal
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `field_type`: internal
+* `id`：内部字段
+* `org_id`：组织 ID
+* `doc_id`：内部字段
+* `field_name`：内部字段
+* `field_value`：内部字段
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `field_type`：内部字段
 
-## Analyse & Beschreibung
+## 分析与描述
 
 ```markdown
 # Technical Documentation for `public.document_extracted_data` Table

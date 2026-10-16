@@ -1,43 +1,39 @@
-# EDI Videos
+# EDI 视频
 
-This page contains a series of short video guides explaining how DocBits processes EDI documents. The following videos illustrate different aspects of the process, including an example using an EDI 850 (Purchase Order).
+本页面包含一系列简短的视频指南，介绍 DocBits 如何处理 EDI 文档。以下视频展示了该流程的不同方面，其中包括使用 EDI 850（采购订单）的示例。
 
+## **了解结构描述文件**
 
-
-## **Understanding the Structure Descriptor File**
-
-&#x20;This video explains the purpose of the structure descriptor file used by DocBits to interpret EDI documents.
+&#x20;本视频介绍 DocBits 用于解析 EDI 文档的结构描述文件的用途。
 
 {% embed url="https://youtu.be/_U6yyYFMo84" %}
 
-**Related Guide**:\
-For a detailed walkthrough and editing instructions, see the [**Structure Descriptor File Guide**](edi-structure-descriptor-file-guide/)
+**相关指南**:\
+如需查看详细的操作步骤和编辑说明，请参阅[**结构描述文件指南**](edi-structure-descriptor-file-guide/)
 
+## **使用转换文件**
 
-
-## **Working with the Transformation File**
-
-&#x20;This video demonstrates how the transformation file defines the rules for converting EDI data into the desired output format within DocBits.
+&#x20;本视频演示转换文件如何定义规则，以便在 DocBits 中将 EDI 数据转换为所需的输出格式。
 
 {% embed url="https://www.youtube.com/watch?v=x7ZNkx13D5I" %}
 
-**Related Guide**:\
-For a detailed walkthrough and editing instructions, see the [**Transformation File Guide**](edi-transformation-file-guide.md)
+**相关指南**:\
+如需查看详细的操作步骤和编辑说明，请参阅[**转换文件指南**](edi-transformation-file-guide.md)
 
-## **Exploring the Preview Functionality**
+## **探索预览功能**
 
-&#x20;This video showcases how the preview feature in DocBits allows you to visualize the processed EDI data.
+&#x20;本视频展示 DocBits 中的预览功能如何帮助您查看已处理的 EDI 数据。
 
 {% embed url="https://youtu.be/9ioes44TAWs" %}
 
-**Related Guide**:\
-For a detailed walkthrough and editing instructions, see the [**Preview File Guide**](edi-preview-file-guide.md)
+**相关指南**:\
+如需查看详细的操作步骤和编辑说明，请参阅[**预览文件指南**](edi-preview-file-guide.md)
 
-## **Mapping Information to Header Fields**
+## **将信息映射到抬头字段**
 
-&#x20;This video details the process of mapping specific data elements from the EDI document to the corresponding header fields within DocBits.
+&#x20;本视频详细介绍如何将 EDI 文档中的特定数据元素映射到 DocBits 中对应的抬头字段。
 
 {% embed url="https://youtu.be/9xcXZY73GmE" %}
 
-**Related Guide**:\
-For a detailed walkthrough and editing instructions, see the [**Extraction Pahts File Guide**](edi-extraction-paths-file-guide.md)
+**相关指南**:\
+如需查看详细的操作步骤和编辑说明，请参阅[**提取路径文件指南**](edi-extraction-paths-file-guide.md)

@@ -1,63 +1,63 @@
 # DocBits
 
-Welcome to DocBits
+欢迎使用 DocBits
 
-Welcome to **DocBits**, your comprehensive source for documentation strategies and insights. At DocBits, we are dedicated to providing clear, concise, and up-to-date documentation resources for [enduser](end-user-and-partner-section/end-user-section/), [admins](administration-and-setup/settings/), and [partners](end-user-and-partner-section/partner-section/).
+欢迎来到 **DocBits**，这里汇集了全面的文档策略与见解。在 DocBits，我们致力于为[最终用户](end-user-and-partner-section/end-user-section/)、[管理员](administration-and-setup/settings/)和[合作伙伴](end-user-and-partner-section/partner-section/)提供清晰、简洁且及时更新的文档资源。
 
-## DocBits with Workflow
+## DocBits 工作流程
 
 {% @arcade/embed flowid="JqTpGV34UBKmI0iAumoX" url="https://app.arcade.software/share/JqTpGV34UBKmI0iAumoX" %}
 
-[**DocBits**](https://www.docbits.com) **by** [**FELLOWPRO AG**](https://www.fellowpro.com) is an advanced intelligent document processing (IDP) solution designed to optimize and automate the handling of business documents. 
+[**DocBits**](https://www.docbits.com) **由** [**FELLOWPRO AG**](https://www.fellowpro.com) 提供，是一款先进的智能文档处理（IDP）解决方案，旨在优化并自动处理业务文档。
 
-Official Documentation: [docs.docbits.com](https://docs.docbits.com/)
+官方文档：[docs.docbits.com](https://docs.docbits.com/)
 
-Below is a summary of its unique features and benefits:
+以下是其独特功能和优势的摘要：
 
-## **Key Features**
+## **主要功能**
 
-1. **Automatic Data Extraction**
-   * Utilizes AI and OCR (Optical Character Recognition) technology to extract data from various document types.
-   * Supports over 120 languages.
-   * Capable of extracting unstructured data at both header and line levels.
-2. **Swarm Intelligence**
-   * Leverages the power of AI swarm intelligence to deliver communal benefits across customers.
-   * Enhances the training of classification and extraction models with input from a wide range of users.
-   * Provides over 96% accuracy in data extraction and classification.
-3. [**PO Matching**](end-user-and-partner-section/end-user-section/purchase-order-matching/)
-   * Automates the reconciliation of purchase orders with incoming invoices.
-   * Ensures accurate financial transactions and promptly addresses discrepancies.
-   * Supports matching of various document types, not limited to invoices.
-4. [**Auto Accounting**](end-user-and-partner-section/end-user-section/accounting-for-cost-invoice-and-indirect-sales.md)
-   * Facilitates automatic booking to ledger accounts.
-   * Allows splitting of amounts by department.
-   * Supports the definition of ledger accounts by the accounts payable team.
-5. **Integrated Validation and** [**Approval**](broken-reference) **Processes**
-   * Provides integrated validation processes to ensure data accuracy.
-   * Features approval [workflows](administration-and-setup/workflow/) to streamline document handling.
-6. **Seamless Integration**
-   * Integrates seamlessly with Infor IDM (Intelligent Document Management) and Infor ERP (Enterprise Resource Planning) systems, including [M3](infor-integration-and-configuration/importing-customer-master-data/m3/) and [LN](infor-integration-and-configuration/importing-customer-master-data/ln/).
-   * Supports data import through [email](end-user-and-partner-section/end-user-section/how-to-import-documents/email/) or [FTP](end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md) connection and export to relevant ERP modules.
-7. **User-Friendly Interface**
-   * Offers a modern and simple UI that requires no IT resources for setup and maintenance.
-   * Features an interactive dashboard with unlimited document types and custom extracted columns.
-8. **Secure Cloud-Based Solution**
-   * Hosted on a secure cloud in Germany, ensuring data privacy and security.
-   * Facilitates easy migration from legacy solutions.
+1. **自动数据提取**
+   * 利用 AI 和 OCR（光学字符识别）技术，从各种类型的文档中提取数据。
+   * 支持 120 多种语言。
+   * 能够在页眉和行项目级别提取非结构化数据。
+2. **群体智能**
+   * 利用 AI 群体智能的力量，为所有客户带来共同收益。
+   * 汇集广泛用户的输入，改进分类和提取模型的训练。
+   * 数据提取和分类准确率超过 96%。
+3. [**采购订单匹配**](end-user-and-partner-section/end-user-section/purchase-order-matching/)
+   * 自动将采购订单与收到的发票进行核对。
+   * 确保财务交易准确，并及时处理差异。
+   * 支持匹配多种文档类型，不限于发票。
+4. [**自动记账**](end-user-and-partner-section/end-user-section/accounting-for-cost-invoice-and-indirect-sales.md)
+   * 支持自动记入分类账科目。
+   * 可按部门拆分金额。
+   * 支持由应付账款团队定义分类账科目。
+5. **集成式验证与**[**审批**](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/broken-reference/README.md)**流程**
+   * 提供集成式验证流程，确保数据准确。
+   * 提供[工作流程](administration-and-setup/workflow/)，简化文档处理。
+6. **无缝集成**
+   * 可与 Infor IDM（智能文档管理）和 Infor ERP（企业资源规划）系统无缝集成，包括 [M3](infor-integration-and-configuration/importing-customer-master-data/m3/) 和 [LN](infor-integration-and-configuration/importing-customer-master-data/ln/)。
+   * 支持通过[电子邮件](end-user-and-partner-section/end-user-section/how-to-import-documents/email/)或 [FTP](end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md) 连接导入数据，并将数据导出到相关 ERP 模块。
+7. **易于使用的界面**
+   * 提供现代、简洁的 UI，设置和维护无需 IT 资源。
+   * 提供交互式仪表板，支持不限数量的文档类型和自定义提取列。
+8. **安全的云端解决方案**
+   * 托管在德国的安全云端，确保数据隐私与安全。
+   * 便于从旧版解决方案迁移。
 
-**Benefits**
+**优势**
 
-* **Efficiency**: Automates repetitive tasks, reducing manual entry and errors.
-* **Accuracy**: High accuracy in data extraction and document classification.
-* **Scalability**: Can handle unlimited document types and volumes.
-* **Compliance**: Maintains an audit trail for compliance and review.
-* **Cost Savings**: Reduces the need for physical storage and manual processing.
+* **效率**：自动执行重复性任务，减少手动录入和错误。
+* **准确性**：提高数据提取和文档分类的准确度。
+* **可扩展性**：可处理不限数量的文档类型和文档量。
+* **合规性**：保留审计跟踪，便于合规检查与审查。
+* **节省成本**：减少对实体存储和人工处理的需求。
 
-**Use Cases**
+**应用场景**
 
-* Suitable for a wide range of industries and document types, including invoices, delivery notes, order confirmations, and more.
-* Ideal for businesses looking to optimize their document capturing processes and enhance operational efficiency.
+* 适用于各行各业和多种文档类型，包括发票、送货单、订单确认单等。
+* 适合希望优化文档采集流程并提高运营效率的企业。
 
-For more information, visit [FellowPRO AG](https://fellowpro.com/) or contact sales at sales@fellowpro.com. Follow us on [LinkedIn](https://www.linkedin.com/company/fellowpro).
+如需了解更多信息，请访问 [FellowPRO AG](https://fellowpro.com/) 或联系销售团队：sales@fellowpro.com。欢迎在 [LinkedIn](https://www.linkedin.com/company/fellowpro) 关注我们。
 
 {% embed url="https://youtu.be/p7GEJonM_wU" %}

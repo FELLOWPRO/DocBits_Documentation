@@ -1,46 +1,46 @@
-# Import master data from Infor M3 through ION API
+# 通过 ION API 从 Infor M3 导入主数据
 
-Use this guide when an Infor M3 administrator needs to deliver selected BODs to DocBits through Infor ION and API Gateway. The previous version of this page contained 42 screenshots from one older Infor tenant and fixed Sandbox API addresses. Those screens and addresses are not a safe configuration template for another tenant.
+当 Infor M3 管理员需要通过 Infor ION 和 API Gateway 向 DocBits 传送选定的 BOD 时，请使用本指南。本页的旧版本包含 42 张来自某个较早 Infor 租户的屏幕截图，以及固定的 Sandbox API 地址。这些屏幕和地址不能作为其他租户的安全配置模板。
 
-The path to check is **M3 publishes a BOD → ION routes it → API Gateway calls the DocBits API → DocBits shows the imported record**. Each stage has its own status. Seeing a record in DocBits is the final check; an active ION data flow alone does not prove an import.
+需要检查的路径是：**M3 发布 BOD → ION 路由 BOD → API Gateway 调用 DocBits API → DocBits 显示导入的记录**。每个阶段都有自己的状态。在 DocBits 中看到记录才是最终确认；仅有处于活动状态的 ION 数据流并不能证明已完成导入。
 
-## Before you configure the flow
+## 配置数据流之前
 
-1. Confirm the M3 company, ION tenant, DocBits organisation and environment you intend to connect. Ask a DocBits administrator for the current API base URL and the required API operation from that environment's OpenAPI description. Regional hosts may differ; do not copy a host or API Gateway proxy path from an old screenshot.
-2. Agree which document types the organisation needs. Supplier and purchase order master data can be checked in DocBits. Add delivery and accounting documents only when their use case and receiving operation are confirmed.
-3. Prepare an Infor service account with permission for the selected API operation and a DocBits API credential with the minimum required access. Enter credentials only in the authorised configuration screen. Do not paste a complete `.ionapi` file or an API key into a documentation page, Jira issue or screenshot.
-4. Keep one non-sensitive test identifier for each chosen BOD so you can trace the same record in M3, ION OneView and DocBits.
+1. 确认要连接的 M3 公司、ION 租户、DocBits 组织和环境。向 DocBits 管理员获取当前 API 基础 URL，以及该环境 OpenAPI 描述中要求的 API 操作。不同区域的主机可能不同；不要照搬旧屏幕截图中的主机或 API Gateway 代理路径。
+2. 确认组织需要哪些文档类型。在 DocBits 中可以检查供应商和采购订单主数据。只有在用途和接收操作均已确认时，才添加交付和会计文档。
+3. 准备一个有权调用所选 API 操作的 Infor 服务账户，以及一个仅具备所需最低权限的 DocBits API 凭据。只能在获准的配置界面中输入凭据。不要将完整的 `.ionapi` 文件或 API 密钥粘贴到文档页面、Jira 工单或屏幕截图中。
+4. 为每个选定的 BOD 准备一个不敏感的测试标识符，以便在 M3、ION OneView 和 DocBits 中追踪同一条记录。
 
-## Choose the document and receiving operation
+## 选择文档和接收操作
 
-The old tenant example used these BODs. Use the current API metadata and your integration design to confirm each mapping before creating a connection point:
+旧租户示例使用了以下 BOD。在创建连接点之前，请根据当前 API 元数据和集成设计确认每项映射：
 
-| BOD in the old example | Intended DocBits data | Where to check the receiving format |
+| 旧示例中的 BOD | 预期的 DocBits 数据 | 接收格式检查位置 |
 | --- | --- | --- |
-| `Sync.SupplierPartyMaster`, `Sync.RemitToPartyMaster` | Supplier master data | [Supplier BOD import](../importing-via-the-api/supplier-bod.md) |
-| `Sync.PurchaseOrder` | Purchase orders | [Purchase Order BOD import](../importing-via-the-api/purchase-order-bod.md) |
-| `Sync.ReceiveDelivery` | Delivery data | [Receive Delivery BOD import](../importing-via-the-api/receive-delivery-bod.md) |
-| `Sync.AdvanceShipNotice`, `Sync.ChartOfAccounts`, `Sync.CodeDefinition-AccountingDimension` | Additional master data for configured features | [Master data XML import](../importing-via-the-api/master-data-xml.md) and your tenant's API metadata |
+| `Sync.SupplierPartyMaster`, `Sync.RemitToPartyMaster` | 供应商主数据 | [供应商 BOD 导入](../importing-via-the-api/supplier-bod.md) |
+| `Sync.PurchaseOrder` | 采购订单 | [采购订单 BOD 导入](../importing-via-the-api/purchase-order-bod.md) |
+| `Sync.ReceiveDelivery` | 交付数据 | [Receive Delivery BOD 导入](../importing-via-the-api/receive-delivery-bod.md) |
+| `Sync.AdvanceShipNotice`, `Sync.ChartOfAccounts`, `Sync.CodeDefinition-AccountingDimension` | 已配置功能所需的其他主数据 | [主数据 XML 导入](../importing-via-the-api/master-data-xml.md)以及租户的 API 元数据 |
 
-`Acknowledge.SupplierInvoice` belongs to an invoice acknowledgement flow and should be configured separately from an M3-to-DocBits master-data import. The old page mixed these directions and included a tenant-specific request body; do not copy that body into a new flow without reviewing the endpoint contract and access controls.
+`Acknowledge.SupplierInvoice` 属于发票确认工作流，应与 M3 到 DocBits 的主数据导入分开配置。旧页面混淆了这两个方向，并包含特定于租户的请求正文；在未审核端点契约和访问控制之前，不要将该请求正文复制到新数据流中。
 
-## Configure Infor OS and ION
+## 配置 Infor OS 和 ION
 
-1. In Infor OS, prepare the API Gateway target for the **confirmed** DocBits API operation. Check the target URL, request method, request format and authentication with the DocBits administrator. Use the current [Infor API Gateway guide](https://docs.infor.com/inforos/2025.x/en-us/useradminlib_cloud/apigatewayag_cloud/ionapi_2025.x_apigatewayag_cloud_en-us.pdf) for the Gateway controls.
-2. In **ION → Connect → Connection Points**, create or select the connection point for the DocBits API. Add only the chosen BODs in **Documents**, select the matching Gateway operation and configure the request payload the operation expects. Infor's [API element instructions](https://docs.infor.com/inforos/latest/en-us/useradminlib_cloud/iondeskceug/hqg1491985489422.html) explain the service account and request settings.
-3. In **ION → Connect → Data Flows**, connect the M3 source and the API destination. Check the document list, filters and mappings; then save and activate the flow. Infor distinguishes [saving from activating a data flow](https://docs.infor.com/inforos/latest/en-us/useradminlib_cloud/iondeskceug/lsm1436532178755.html).
-4. Publish one approved test BOD from M3. In **ION OneView**, find that identifier and confirm which connection point, mapping and API call handled it. See [Infor OneView](https://docs.infor.com/inforos/latest/en-us/useradminlib_cloud/iondeskceug/lsm1436532196155.html). If no route or an error is shown, fix the ION flow before checking DocBits.
+1. 在 Infor OS 中，为**已确认**的 DocBits API 操作准备 API Gateway 目标。与 DocBits 管理员一起检查目标 URL、请求方法、请求格式和身份验证。Gateway 控件的说明请参阅当前的 [Infor API Gateway 指南](https://docs.infor.com/inforos/2025.x/en-us/useradminlib_cloud/apigatewayag_cloud/ionapi_2025.x_apigatewayag_cloud_en-us.pdf)。
+2. 在 **ION → Connect → Connection Points** 中，为 DocBits API 创建或选择连接点。只在 **Documents** 中添加选定的 BOD，选择匹配的 Gateway 操作，并配置该操作所需的请求负载。Infor 的 [API 元素说明](https://docs.infor.com/inforos/latest/en-us/useradminlib_cloud/iondeskceug/hqg1491985489422.html)介绍了服务账户和请求设置。
+3. 在 **ION → Connect → Data Flows** 中，连接 M3 源和 API 目标。检查文档列表、筛选条件和映射，然后保存并激活数据流。Infor 对[保存和激活数据流](https://docs.infor.com/inforos/latest/en-us/useradminlib_cloud/iondeskceug/lsm1436532178755.html)作了区分。
+4. 从 M3 发布一个已批准的测试 BOD。在 **ION OneView** 中查找该标识符，并确认处理该 BOD 的连接点、映射和 API 调用。请参阅 [Infor OneView](https://docs.infor.com/inforos/latest/en-us/useradminlib_cloud/iondeskceug/lsm1436532196155.html)。如果看不到路由或显示错误，请先修复 ION 数据流，再检查 DocBits。
 
-## Verify the result in DocBits
+## 在 DocBits 中验证结果
 
-Open **Settings → Document Processing → Lookup Master Data**. Expand **BOD Input data**, choose the relevant type, and search for the test identifier. The **Supplier** and **Purchase Order** tabs shown below are current English views in the synthetic **DocBits Documentation Test A** organisation. Their existing demo rows are **not evidence of an M3 import**.
+打开 **设置 → 文档处理 → 查找主数据**。展开 **BOD 输入数据**，选择相关类型，然后搜索测试标识符。下方显示的 **供应商**和**采购订单**选项卡，是合成的 **DocBits Documentation Test A** 组织当前使用的英文界面。界面中已有的演示行**不能证明数据来自 M3 导入**。
 
-<figure><img src="../../../.gitbook/assets/dbdc206-supplier-bod-input-en.png" alt="English DocBits Lookup Master Data screen with the Supplier tab and search controls for checking an imported supplier"><figcaption><p>Choose Supplier, select a search column and enter the test supplier identifier.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc206-supplier-bod-input-en.png" alt="DocBits 查找主数据英文界面，显示供应商选项卡和用于检查已导入供应商的搜索控件"><figcaption><p>选择 Supplier，选取搜索列，并输入测试供应商标识符。</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc206-purchase-order-bod-input-en.png" alt="English DocBits BOD Input data menu with Purchase Order selected and a searchable purchase order table"><figcaption><p>Choose Purchase Order and search for the test order; the rows pictured are synthetic demo data.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc206-purchase-order-bod-input-en.png" alt="DocBits BOD 输入数据菜单，已选中 Purchase Order，并显示可搜索的采购订单表格"><figcaption><p>选择 Purchase Order 并搜索测试订单；图中所示的行是合成演示数据。</p></figcaption></figure>
 
-In either tab, **Search by column** chooses the field, **Search String** accepts the identifier and the magnifier runs the search. The table headers sort the visible rows; the arrows at the bottom move between pages. **Actions** opens table operations and is not needed for this read-only check. The **×** on a tab closes it. The **Imported** plus button is for CSV uploads, not for receiving an ION BOD.
+在任一选项卡中，**Search by column** 用于选择字段，**Search String** 用于输入标识符，放大镜按钮用于执行搜索。表头可对可见行排序；底部的箭头可用于翻页。**Actions** 会打开表格操作；此只读检查不需要使用它。选项卡上的 **×** 可关闭该选项卡。**Imported** 旁的加号按钮用于上传 CSV，并非用于接收 ION BOD。
 
-If the BOD appears in OneView but the record is absent in DocBits, check the API operation and response, organisation/environment, document type, payload format and identifier used in the search. Ask the DocBits administrator for the corresponding import log. Do not infer success from an HTTP call or screenshot of an unrelated demo row.
+如果在 OneView 中能看到 BOD，但 DocBits 中没有对应记录，请检查 API 操作及响应、组织和环境、文档类型、负载格式，以及搜索时使用的标识符。向 DocBits 管理员索取相应的导入日志。不要仅凭 HTTP 调用或无关演示行的屏幕截图就推断导入成功。
 
-This page was updated using current DocBits Sandbox controls and Infor documentation. No Infor tenant or live M3-to-DocBits BOD transfer was available for an end-to-end test; a tenant administrator must validate the final mapping and result.
+本页根据当前 DocBits Sandbox 控件和 Infor 文档更新。由于无法使用 Infor 租户，也无法进行真实的 M3 到 DocBits BOD 传输，因此未完成端到端测试；租户管理员必须验证最终映射和结果。

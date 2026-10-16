@@ -1,75 +1,72 @@
-# Request validation; Attr. 'ReceiptLine', Value " " : the value must be numeric.
+# 请求验证；属性 'ReceiptLine'，值 " "：值必须为数字。
 
-## **Step 1: Investigate the Purchase Order**
+## **步骤 1：调查采购订单**
 
-**1. Check the Purchase Order from the Dashboard**
+**1. 在仪表板中检查采购订单**
 
-* If the document status is **Export Error**:
-  1. Locate the document on the dashboard.
-  2. Click on it and then select the **Fields Validation** button to navigate back to the field validation screen.
-* If the document status is **Ready for Validation**:
-  1. Click on the document to proceed directly to the **Field Validation** screen.
-* If the document is in **Pending Approval status**:
-  1. Navigate to the **Approval Screen**.
-  2. Next to the **Invoice Line Items**, locate the **Purchase Order Table.**
-  3. Go to 3. Check for the Delivery Number step.
+* 如果文档状态为 **导出错误**：
+  1. 在仪表板中找到该文档。
+  2. 点击该文档，然后选择 **字段验证** 按钮，返回字段验证屏幕。
+* 如果文档状态为 **待验证**：
+  1. 点击该文档，直接进入 **字段验证** 屏幕。
+* 如果文档处于 **待审批** 状态：
+  1. 转到 **审批屏幕**。
+  2. 在 **发票行项目** 旁边找到 **采购订单表**。
+  3. 转到“3. 检查交货编号”步骤。
 
-**2. Verify the Purchase Order**
+**2. 验证采购订单**
 
-1. On the **Field Validation** screen, ensure the correct Purchase Order is selected.
-2. Once the correct Purchase Order is confirmed, click on the Purchase Order next to the extracted table, to open the **Purchase Order Table** view.
+1. 在 **字段验证** 屏幕中，确保已选择正确的采购订单。
+2. 确认采购订单无误后，点击提取表格旁的采购订单，打开 **采购订单表** 视图。
 
-**3. Check for the Delivery Number**
+**3. 检查交货编号**
 
-* In the Purchase Order Table, look for the **Delivery Number** column:
-  * **If a Delivery Number is present**, proceed to the **Approval Screen** and check again if it is present, when present go to **Step 3**.
-  * **If no Delivery Number is present**, follow **Step 2** to address this issue.
+* 在采购订单表中，查找 **交货编号** 列：
+  * **如果存在交货编号**，转到 **审批屏幕**，再次检查该编号是否存在；如果存在，请转到 **步骤 3**。
+  * **如果不存在交货编号**，请按照 **步骤 2** 解决此问题。
 
-## Step 2: Verify the Purchase Order in LN
+## 步骤 2：在 LN 中验证采购订单
 
-Before sending the Purchase Order to DocBits, verify that the **Delivery Number** is correctly assigned in **LN**. Check the **Purchase Order** details in **LN** to ensure that it is complete and accurate. If the **Delivery Number** is missing or incorrect, this could be the cause of the export error.
+将采购订单发送到 DocBits 之前，请确认已在 **LN** 中正确分配 **交货编号**。检查 **LN** 中的 **采购订单** 详情，确保信息完整且准确。如果缺少交货编号或编号不正确，这可能是导致导出错误的原因。
 
-If the **Purchase Order** appears correct and contains the necessary details, you can proceed to the next step.
+如果 **采购订单** 看起来正确且包含所需详情，请继续下一步。
 
-## **Step 3: Open DocBits Settings**
+## **步骤 3：打开 DocBits 设置**
 
-1. Open **DocBits** and go to the **Settings** section.
-2. Navigate to **Document Processing**.
-3. Select **Export**.
-4. In the **Export** section, click on the **three dots** icon next to the export that is not working and select **Edit**.
-5. In the **Edit Export Settings** menu, click **Download the LN-Mapping** file.
+1. 打开 **DocBits**，转到 **设置** 部分。
+2. 转到 **文档处理**。
+3. 选择 **导出**。
+4. 在 **导出** 部分，点击无法正常工作的导出项旁边的 **三个点** 图标，然后选择 **编辑**。
+5. 在 **编辑导出设置** 菜单中，点击 **下载 LN-Mapping** 文件。
 
-## **Step 3: Edit LN-Mapping File**
+## **步骤 3：编辑 LN-Mapping 文件**
 
-1. Open the downloaded **LN-Mapping** file.
-2.  Search for the field **IRF\_ReceiptLine**.
+1. 打开下载的 **LN-Mapping** 文件。
+2. 搜索字段 **IRF\_ReceiptLine**。
+   * 如果字段 **IRF\_ReceiptLine** 存在且为空，请将其更新为 **TF\_delivery\_line**。
+   * 如果字段 **IRF\_ReceiptLine** 不存在，请将其添加到文件中，并将值设为 **TF\_delivery\_line**。
+3. 对于字段 **InvoiceReceiptFields，** 请在值中添加 **ReceiptLine**。
 
-    * If the field **IRF\_ReceiptLine** is present and set to **nothing** (empty), update it to **TF\_delivery\_line**.
-    * If the field **IRF\_ReceiptLine** is **not present**, add it to the file and set its value to **TF\_delivery\_line**.
+文件应如下所示：
 
+<figure><img src="../../../../.gitbook/assets/image (117).png" alt="" width="563"><figcaption></figcaption></figure>
 
-3. For the field **InvoiceReceiptFields,** add **ReceiptLine** to the values.
+## **步骤 4：将更新后的文件添加回 DocBits**
 
-It should look like the following:
+1. 返回 DocBits 中之前下载 **LN-Mapping** 文件所在的 **导出** 部分。
+2. 上传编辑后的 **LN-Mapping** 文件及其更新内容。
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+## 步骤 5：重试导出
 
-## **Step 4: Add the Updated File Back to DocBits**
+确认 **采购订单** 包含 **交货编号**，并确保 **导出文件正确** 后，请按以下步骤重试导出：
 
-1. Go back to the **Export** section in DocBits where you previously downloaded the **LN-Mapping** file.
-2. Upload the edited **LN-Mapping** file with the new updates.
-
-## Step 5: Retry the Export&#x20;
-
-After confirming that the **Purchase Order** has a **Delivery Number** and ensuring the **Export file is correct**, follow these steps to retry the export:
-
-1. **Return to the Dashboard:**
-   * Go back to the dashboard and find the document with the export error.
-2. **Retry the Export Process:**
-   * Click on the document with the export error.
-   * If the **Purchase Order** has a valid **Delivery Number** and the **Export file** is correct, proceed to retry the export.
-3. **Check the Export Result:**
-   * After retrying, check the export process again to see if the issue has been resolved and the document no longer shows as an export error.
-   * If the export is successful, the issue should be resolved.
-4. **Further Investigation (if the problem persists):**
-   * If the issue persists after retrying the export, contact support for further investigation into possible configuration or system issues.
+1. **返回仪表板：**
+   * 返回仪表板，找到出现导出错误的文档。
+2. **重试导出流程：**
+   * 点击出现导出错误的文档。
+   * 如果 **采购订单** 包含有效的 **交货编号**，且 **导出文件** 正确，请重试导出。
+3. **检查导出结果：**
+   * 重试后，再次检查导出流程，确认问题是否已解决，以及文档是否不再显示为导出错误。
+   * 如果导出成功，问题应已解决。
+4. **进一步排查（如果问题仍然存在）：**
+   * 如果重试导出后问题仍然存在，请联系支持团队，进一步排查可能的配置或系统问题。

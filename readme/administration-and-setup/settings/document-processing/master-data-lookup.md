@@ -1,51 +1,51 @@
-# Master Data Lookup
+# 主数据查询
 
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
 {% endembed %}
 
-**Master Data Lookup** (sidebar: **Lookup Master Data**) lets you view and manage the master data that DocBits uses to validate extracted document data against your ERP system. It is essential for accurate PO matching, supplier validation and field auto-completion. Open it from **Settings → Document Processing → Lookup Master Data**.
+**主数据查询**（侧边栏：**Lookup Master Data**）可让您查看和管理 DocBits 用于将提取的文档数据与 ERP 系统进行验证的主数据。它对于准确匹配采购订单、验证供应商以及自动补全字段至关重要。请从 **Settings → Document Processing → Lookup Master Data** 打开此页面。
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_overview.png" alt="Master Data Lookup"><figcaption><p>Master Data Lookup page — data sources and the data table</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/master_data_lookup_overview.png" alt="主数据查询"><figcaption><p>主数据查询页面 — 数据源和数据表</p></figcaption></figure>
 
-## Data Sources
+## 数据源
 
-The left panel lists four data-source categories:
+左侧面板列出四种数据源类别：
 
-| Source | Description |
+| 来源 | 说明 |
 |--------|-------------|
-| **BOD Input Data** | Data received via Infor BOD (Business Object Document) messages. |
-| **ERP API Data** | Data fetched directly from your ERP system via API. Click the gear icon to configure the API connection. |
-| **Imported** | Manually imported data (for example via CSV upload). Click the **+** icon to add new data. |
-| **DocBits Master Data** | Internal master data managed within DocBits. |
+| **BOD Input Data** | 通过 Infor BOD（业务对象文档）消息接收的数据。 |
+| **ERP API Data** | 通过 API 从 ERP 系统直接获取的数据。点击齿轮图标可配置 API 连接。 |
+| **Imported** | 手动导入的数据（例如通过 CSV 上传）。点击 **+** 图标可添加新数据。 |
+| **DocBits Master Data** | 在 DocBits 中管理的内部主数据。 |
 
-## Data Table
+## 数据表
 
-Selecting a data source opens its data in a searchable, sortable table on the right:
+选择数据源后，其数据会显示在右侧可搜索、可排序的表格中：
 
-* **Tabs** — each tab is a master-data type (for example Supplier, Purchase Order, Item).
-* **Search** — filter by column (**Search by column**) or search by text (**Search String**).
-* **Actions** — update column labels, hide empty columns, update aliases, or download the data as CSV.
-* **Pagination** — navigate large datasets with the page controls.
+* **Tabs** — 每个标签页对应一种主数据类型（例如供应商、采购订单、物料）。
+* **Search** — 按列筛选（**Search by column**）或按文本搜索（**Search String**）。
+* **Actions** — 更新列标签、隐藏空列、更新别名，或将数据下载为 CSV。
+* **Pagination** — 使用页面控件浏览大型数据集。
 
-The Supplier and Purchase Order tables include columns such as Supplier ID, Supplier Name, Address, Bank Id, PO Number, Item ID, Description, Quantity, Unit Price, Total Amount, Currency and Status, plus any custom fields.
+供应商和采购订单表格包含供应商 ID、供应商名称、地址、银行 ID、采购订单号、物料 ID、描述、数量、单价、总金额、币种和状态等列，以及任何自定义字段。
 
-## Settings
+## 设置
 
-Click **Settings** (gear icon) at the bottom-left of the data-sources panel to open the master-data settings.
+点击数据源面板左下角的 **Settings**（齿轮图标）可打开主数据设置。
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_settings.png" alt="Master Data Lookup settings"><figcaption><p>Supplier BOD and Purchase Order Deletion settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/master_data_lookup_settings.png" alt="主数据查询设置"><figcaption><p>供应商 BOD 和采购订单删除设置</p></figcaption></figure>
 
-### Supplier BOD
+### 供应商 BOD
 
-**Allow Multiple Supplier Accounts Sync**
+**允许同步多个供应商账户**
 
-* **Enabled**: a single supplier may have multiple `<FinancialParty>` elements in the BOD (often due to multiple IBANs or financial accounts). All `<FinancialParty>` entries are extracted and saved to the supplier table, so multiple financial attributes can be stored.
-* **Disabled**: only the last `<FinancialParty>` element found for the supplier is extracted. Earlier financial attributes (for example additional IBANs) are ignored, and only the data from the last occurrence is saved.
+* **Enabled**：单个供应商在 BOD 中可以有多个 `<FinancialParty>` 元素（通常是因为有多个 IBAN 或财务账户）。系统会提取所有 `<FinancialParty>` 条目并保存到供应商表中，因此可以存储多个财务属性。
+* **Disabled**：系统仅提取为该供应商找到的最后一个 `<FinancialParty>` 元素。此前的财务属性（例如其他 IBAN）会被忽略，且只保存最后一次出现的数据。
 
-### Purchase Order Deletion Assistant
+### 采购订单删除助手
 
-**Delete Purchase Order After** — choose when closed purchase orders should be removed. After the selected time span, the records are deleted automatically.
+**删除采购订单的时间** — 选择何时删除已关闭的采购订单。所选时间段结束后，记录将自动删除。
 
 {% hint style="info" %}
-To learn how to load master data into DocBits, see [Import Master Data](../../../infor-integration-and-configuration/importing-customer-master-data/).
+要了解如何将主数据加载到 DocBits，请参阅[导入主数据](../../../infor-integration-and-configuration/importing-customer-master-data/)。
 {% endhint %}

@@ -1,89 +1,88 @@
 ---
 description: >-
-  China Fapiao (FAPIAO, E-FAPIAO, General VAT Invoice, Special VAT Invoice)
-  electronic document support in DocBits
+  DocBits 支持中国发票（FAPIAO、E-FAPIAO、增值税普通发票、增值税专用发票）电子文档
 ---
 
-# 🇨🇳 CHINA FAPIAO
+# 🇨🇳 中国发票
 
-| Property             | Value                                                            |
-| -------------------- | ---------------------------------------------------------------- |
-| **Country / Region** | China                                                            |
-| **Document Types**   | General VAT Invoice (普通发票), Special VAT Invoice (专用发票), E-Fapiao |
-| **Format**           | XML                                                              |
-| **Standard**         | Fapiao (发票), State Taxation Administration                       |
-| **Locale**           | `zh_CN`                                                          |
+| 属性             | 值                                                               |
+| ---------------- | ---------------------------------------------------------------- |
+| **国家 / 地区**   | 中国                                                             |
+| **文档类型**     | 增值税普通发票 (普通发票)、增值税专用发票 (专用发票)、E-Fapiao |
+| **格式**         | XML                                                              |
+| **标准**         | 发票（Fapiao），国家税务总局                                        |
+| **区域设置**     | `zh_CN`                                                          |
 
-Fapiao (发票) is the Chinese tax invoice standard issued under the authority of the State Taxation Administration (STA / 国家税务总局). All Fapiao documents share the `urn:china:tax:fapiao:1.0` namespace. DocBits auto-detects the Fapiao type via the `fapiao_type` element and routes to the appropriate extraction rules:
+发票（Fapiao）是由国家税务总局（STA / 国家税务总局）主管的中国税务发票标准。所有发票文档共用 `urn:china:tax:fapiao:1.0` 命名空间。DocBits 通过 `fapiao_type` 元素自动检测发票类型，并应用相应的提取规则：
 
-| fapiao\_type value | Document Type                                      |
+| fapiao\_type 值 | 文档类型                                           |
 | ------------------ | -------------------------------------------------- |
-| 普通发票               | General VAT Invoice (FAPIAO / GENERAL VAT INVOICE) |
-| 专用发票               | Special VAT Invoice (SPECIAL VAT INVOICE)          |
-| 电子发票               | E-Fapiao (E-FAPIAO)                                |
+| 普通发票               | 增值税普通发票（FAPIAO / GENERAL VAT INVOICE） |
+| 专用发票               | 增值税专用发票（SPECIAL VAT INVOICE）          |
+| 电子发票               | 电子发票（E-FAPIAO）                                |
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 组件             | 状态       |
+| ---------------- | ---------- |
+| 预览             | ✅ 支持 |
+| 字段提取         | ✅ 支持 |
+| 转换             | ✅ 支持 |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/china-fapiao-preview.png" alt="China Fapiao General VAT Invoice preview in DocBits"><figcaption><p>Default DocBits preview for a China Fapiao General VAT Invoice (普通发票)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/china-fapiao-preview.png" alt="DocBits 中中国增值税普通发票预览"><figcaption><p>DocBits 中中国增值税普通发票（普通发票）的默认预览</p></figcaption></figure>
 
-## Field Mapping
+## 字段映射
 
-### Header Fields
+### 抬头字段
 
-| DocBits Field      | Source XML Element          | Notes                                  |
+| DocBits 字段      | 源 XML 元素                 | 说明                                     |
 | ------------------ | --------------------------- | -------------------------------------- |
-| `invoice_id`       | `fapiao_head/fapiao_number` | Fapiao number — 8 digits (发票号码)        |
-| `invoice_date`     | `fapiao_head/issue_date`    | Issue date (ISO 8601)                  |
-| `currency`         | Fixed: `CNY`                | Always Chinese Yuan Renminbi           |
-| `total_amount`     | `total/total_with_tax`      | Total amount incl. VAT (价税合计)          |
-| `net_amount`       | `total/total_amount`        | Net taxable amount excl. VAT (金额)      |
-| `tax_amount`       | `total/total_tax`           | Total VAT amount (税额)                  |
-| `supplier_name`    | `seller/name`               | Seller company name (销售方名称)            |
-| `supplier_id`      | `seller/taxpayer_id`        | Seller taxpayer ID — 18 chars (纳税人识别号) |
-| `supplier_address` | `seller/address`            | Seller address                         |
-| `supplier_country` | Fixed: `CN`                 | Always China                           |
-| `iban`             | `seller/bank_account`       | Seller bank account number             |
-| `buyer_name`       | `buyer/name`                | Buyer company name (购买方名称)             |
-| `buyer_id`         | `buyer/taxpayer_id`         | Buyer taxpayer ID (纳税人识别号)             |
-| `buyer_address`    | `buyer/address`             | Buyer address                          |
-| `buyer_country`    | Fixed: `CN`                 | Always China                           |
+| `invoice_id`       | `fapiao_head/fapiao_number` | 发票号码 — 8 位数字（发票号码）        |
+| `invoice_date`     | `fapiao_head/issue_date`    | 开具日期（ISO 8601）                  |
+| `currency`         | 固定值：`CNY`                | 始终为人民币           |
+| `total_amount`     | `total/total_with_tax`      | 含增值税的总金额（价税合计）          |
+| `net_amount`       | `total/total_amount`        | 不含增值税的应税金额（金額）      |
+| `tax_amount`       | `total/total_tax`           | 增值税总额（税额）                  |
+| `supplier_name`    | `seller/name`               | 销售方公司名称（销售方名称）            |
+| `supplier_id`      | `seller/taxpayer_id`        | 销售方纳税人识别号 — 18 个字符（纳税人识别号） |
+| `supplier_address` | `seller/address`            | 销售方地址                         |
+| `supplier_country` | 固定值：`CN`                 | 始终为中国                           |
+| `iban`             | `seller/bank_account`       | 销售方银行账号             |
+| `buyer_name`       | `buyer/name`                | 购买方公司名称（购买方名称）             |
+| `buyer_id`         | `buyer/taxpayer_id`         | 购买方纳税人识别号（纳税人识别号）             |
+| `buyer_address`    | `buyer/address`             | 购买方地址                          |
+| `buyer_country`    | 固定值：`CN`                 | 始终为中国                           |
 
-### Line Item Table (`INVOICE_TABLE`)
+### 行项目表 (`INVOICE_TABLE`)
 
-Row path: `items/item`
+行路径：`items/item`
 
-| Column        | Source XML Element | Notes                                      |
+| 列            | 源 XML 元素 | 说明                                      |
 | ------------- | ------------------ | ------------------------------------------ |
-| `POSITION`    | `seq`              | Line sequence number                       |
-| `DESCRIPTION` | `name` + `spec`    | Item name and specification (concatenated) |
-| `QUANTITY`    | `quantity`         | Quantity                                   |
-| `UNIT`        | `unit`             | Unit of measure (e.g. 箱, 台, 项)             |
-| `UNIT_PRICE`  | `unit_price`       | Unit price excl. VAT                       |
-| `VAT_RATE`    | `tax_rate`         | VAT rate in % (typically 6%, 9%, or 13%)   |
-| `VAT`         | `tax_amount`       | VAT amount per line                        |
-| `NET_AMOUNT`  | `amount`           | Line total excl. VAT                       |
+| `POSITION`    | `seq`              | 行序号                       |
+| `DESCRIPTION` | `name` + `spec`    | 项目名称和规格（拼接） |
+| `QUANTITY`    | `quantity`         | 数量                                   |
+| `UNIT`        | `unit`             | 计量单位（例如：箱、台、项）             |
+| `UNIT_PRICE`  | `unit_price`       | 不含增值税的单价                       |
+| `VAT_RATE`    | `tax_rate`         | 增值税税率（%）（通常为 6%、9% 或 13%）   |
+| `VAT`         | `tax_amount`       | 每行增值税额                        |
+| `NET_AMOUNT`  | `amount`           | 不含增值税的行总额                       |
 
-## Classification Rules
+## 分类规则
 
-DocBits detects China Fapiao documents by matching the XML namespace and `fapiao_type`:
+DocBits 通过匹配 XML 命名空间和 `fapiao_type` 来检测中国发票：
 
-| Electronic Document Type  | Pattern                                                        |
+| 电子文档类型               | 模式                                                           |
 | ------------------------- | -------------------------------------------------------------- |
-| CHINA GENERAL VAT INVOICE | `urn:china:tax:fapiao:1.0` + `<fapiao_type>普通发票</fapiao_type>` |
-| CHINA SPECIAL VAT INVOICE | `urn:china:tax:fapiao:1.0` + `<fapiao_type>专用发票</fapiao_type>` |
-| CHINA E-FAPIAO            | `urn:china:tax:fapiao:1.0` + `<fapiao_type>电子发票</fapiao_type>` |
+| 中国增值税普通发票 | `urn:china:tax:fapiao:1.0` + `<fapiao_type>普通发票</fapiao_type>` |
+| 中国增值税专用发票 | `urn:china:tax:fapiao:1.0` + `<fapiao_type>专用发票</fapiao_type>` |
+| 中国电子发票            | `urn:china:tax:fapiao:1.0` + `<fapiao_type>电子发票</fapiao_type>` |
 
-The root element is `<fapiao>` with namespace `urn:china:tax:fapiao:1.0`. Classification uses the **first-match-wins** principle, sorted by pattern length (longest first).
+根元素为 `<fapiao>`，其命名空间为 `urn:china:tax:fapiao:1.0`。分类遵循**先匹配优先**原则，并按模式长度排序（最长优先）。
 
-## Related
+## 相关内容
 
-* [Currently Supported E-Invoice Standards](../../currently-supported-e-invoice-standards/)
-* [Supported Electronic Documents](./)
+* [当前支持的电子发票标准](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/settings/global-settings/document-types/currently-supported-e-invoice-standards/README.md)
+* [支持的电子文档](./)

@@ -1,61 +1,61 @@
-# Purchase Order Matching Screen
+# 采购订单匹配界面
 
-Use **PO Matching** to compare the purchase order lines loaded for a document with its extracted invoice lines. The purchase order data may come from an ERP integration or another configured import. The screen shows the document alongside the two tables so you can check numbers, quantities, prices, and differences before saving or exporting.
+使用 **PO Matching** 比较为文档加载的采购订单行项目与提取出的发票行项目。采购订单数据可能来自 ERP 集成或其他已配置的导入方式。该界面会同时显示文档和两个表格，方便你在保存或导出前核对编号、数量、价格和差异。
 
 {% hint style="info" %}
-The example below uses a synthetic FellowPro invoice and purchase order in **DocBits Documentation Test A**. Its invoice table currently says **No line items found**. This demonstrates navigation and search, but it cannot demonstrate a successful line match. Do not export this example as a matched invoice.
+以下示例使用 **DocBits Documentation Test A** 中的合成 FellowPro 发票和采购订单。其发票表格目前显示 **No line items found**。此示例演示了导航和搜索，但无法展示成功的行项目匹配。请勿将此示例作为已匹配的发票导出。
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/dbdc-199-po-screen-en.png" alt="English PO Matching screen in the synthetic Sandbox organization: search, toolbar, purchase order lines, empty invoice line table, and invoice preview"><figcaption><p>The purchase order is loaded; the example invoice has no extracted lines to connect.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-199-po-screen-en.png" alt="合成 Sandbox 组织中的英文 PO Matching 界面：搜索、工具栏、采购订单行项目、空的发票行项目表格和发票预览"><figcaption><p>采购订单已加载；示例发票没有可关联的提取行项目。</p></figcaption></figure>
 
-## Find and inspect a purchase order
+## 查找并检查采购订单
 
-1. Open an invoice in **PO Matching**. If your organization has several purchase orders, enter a number in **Search purchase order number**.
-2. Select the filter icon beside the search box for **Keyword**, **Supplier**, **Status**, **Order Status**, dates, amount range, sorting, and the number of records shown. Select **More** for additional criteria. Select **Apply** to search or **Clear** to reset the filters.
-3. Select a purchase order number above the table to inspect its lines. The refresh icon beside the number reloads that order's data. A reload may depend on the configured integration.
-4. Compare each purchase order line with the invoice and its extracted table. The **+** on a line expands matching details; it does not itself connect the line to the invoice. In the example it displays **No multi-match Information** because no such match exists.
+1. 在 **PO Matching** 中打开一张发票。如果你的组织有多个采购订单，请在 **Search purchase order number** 中输入编号。
+2. 选择搜索框旁的筛选图标，可按 **Keyword**、**Supplier**、**Status**、**Order Status**、日期、金额范围、排序方式以及显示的记录数进行筛选。选择 **More** 查看其他条件。选择 **Apply** 执行搜索，或选择 **Clear** 重置筛选条件。
+3. 选择表格上方的采购订单编号，查看其行项目。编号旁的刷新图标会重新加载该订单的数据。重新加载可能取决于已配置的集成。
+4. 将每个采购订单行项目与发票及其提取表格进行比较。行项目上的 **+** 可展开匹配详情；它本身不会将该行项目关联到发票。在示例中，由于不存在此类匹配，展开后会显示 **No multi-match Information**。
 
-<figure><img src="../../../.gitbook/assets/dbdc-199-po-filters-en.png" alt="English purchase order search filters showing supplier, statuses, date and amount limits, sorting, and Apply and Clear buttons"><figcaption><p>Use the filter panel to narrow the purchase orders shown.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-199-po-filters-en.png" alt="英文采购订单搜索筛选器，显示供应商、状态、日期和金额限制、排序方式以及 Apply 和 Clear 按钮"><figcaption><p>使用筛选面板缩小显示的采购订单范围。</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc-199-po-line-en.png" alt="Expanded purchase order line with No multi-match Information and an empty invoice line table"><figcaption><p>The expanded line shows matching details when available.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-199-po-line-en.png" alt="已展开的采购订单行项目，显示 No multi-match Information 和空的发票行项目表格"><figcaption><p>有匹配详情时，展开的行项目会显示这些详情。</p></figcaption></figure>
 
-## Match lines and review the result
+## 匹配行项目并查看结果
 
-When both tables contain lines, connect an invoice line to the corresponding purchase order line by dragging it, or use the line context menu's matching actions. **Auto Match** attempts to connect eligible lines using your organization's rules. Check the result before saving: a matching item number alone does not prove that quantity, price, or delivery terms agree. See [Purchase Order Matching Tools](purchase-order-matching-tools.md) for the toolbar, column controls, and manual actions, and [Keyboard Shortcuts](keyboard-shortcuts.md) for keyboard actions.
+两个表格都包含行项目时，可通过拖动将发票行项目关联到对应的采购订单行项目，也可以使用行项目上下文菜单中的匹配操作。**Auto Match** 会根据组织的规则尝试关联符合条件的行项目。保存前请检查结果：仅行项目编号匹配，并不能证明数量、价格或交货条款一致。有关工具栏、列控件和手动操作，请参阅[采购订单匹配工具](purchase-order-matching-tools.md)；有关键盘操作，请参阅[键盘快捷键](keyboard-shortcuts.md)。
 
-If a document is not matched, read the reason shown above the purchase order area. It may say that the PO number is missing, the order was not found, its lines are unavailable, or the invoice has no extracted lines. Correct the document or configuration indicated by that reason. An administrator can inspect [matching rules](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) and [table extraction](../../../administration-and-setup/settings/document-processing/classification-and-extraction/README.md) when no invoice lines appear.
+如果文档未匹配，请查看采购订单区域上方显示的原因。提示可能指出缺少 PO 编号、未找到订单、订单行项目不可用，或发票没有提取行项目。请根据提示修正文档或配置。如果没有显示发票行项目，管理员可以检查[匹配规则](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)和[表格提取](../../../administration-and-setup/settings/document-processing/classification-and-extraction/README.md)。
 
-Common messages and next steps:
+常见提示及后续步骤：
 
-| What you see | What to check |
+| 你看到的内容 | 检查内容 |
 | --- | --- |
-| No purchase order number | Enter or correct the PO number on the document, then save. |
-| No purchase order was found | Check the number and whether the order was imported into this organization. |
-| The order was found but is not connected | Try **Auto Match**, or connect the lines manually after checking both tables. |
-| No order lines match | Compare the invoice values with the order and check the matching history. |
-| No invoice line items | Check [table extraction](../../../administration-and-setup/settings/document-processing/classification-and-extraction/README.md) before trying to match. |
-| No open order lines | Check the [consumed-line statuses](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md) and excluded statuses. |
+| No purchase order number | 在文档中输入或更正 PO 编号，然后保存。 |
+| No purchase order was found | 检查编号，以及该订单是否已导入此组织。 |
+| The order was found but is not connected | 尝试使用 **Auto Match**，或检查两个表格后手动关联行项目。 |
+| No order lines match | 将发票值与订单进行比较，并检查匹配历史记录。 |
+| No invoice line items | 尝试匹配前，请检查[表格提取](../../../administration-and-setup/settings/document-processing/classification-and-extraction/README.md)。 |
+| No open order lines | 检查[已消耗行项目状态](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md)和已排除的状态。 |
 
 {% hint style="warning" %}
-Saving can trigger matching again after a changed or newly detected PO number. Check the displayed result after saving. If a match cannot be saved, read the error shown on the screen and ask an administrator to check the [transformation](../../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) and [matching rules](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
+PO 编号发生更改或被新检测到后，保存操作可能会再次触发匹配。保存后请检查显示的结果。如果无法保存匹配结果，请阅读界面上显示的错误，并请管理员检查[转换](../../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md)和[匹配规则](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)。
 {% endhint %}
 
-Use **Matching history** (clock icon, where your permissions allow it) to inspect how a previous match was decided. It is a read-only view. You can review which rules ran and why a candidate did not match; opening history does not export the document.
+如果你的权限允许，可使用 **Matching history**（时钟图标）检查先前匹配的判定过程。此视图为只读。你可以查看运行了哪些规则，以及候选项为何未匹配；打开历史记录不会导出文档。
 
-### More than one line per match
+### 一次匹配多个行项目 <a id="multi-matches"></a>
 
-A single invoice line may correspond to several order lines, or the other way around, where your matching rules allow it. Open the **+** details on a line to inspect any existing multi-match. Check the combined quantity and price, not just one line. An empty detail panel like the synthetic example above means there is no multi-match to inspect. See [Purchase Order Matching Tools](purchase-order-matching-tools.md) for changing connections.
+如果匹配规则允许，一条发票行项目可能对应多个订单行项目，反之亦然。展开行项目上的 **+** 详情，检查现有的多行匹配。请核对合计数量和价格，而不只是其中一条行项目。像上方合成示例中的空详情面板表示没有可检查的多行匹配。有关更改关联的信息，请参阅[采购订单匹配工具](purchase-order-matching-tools.md)。
 
-### Quantities, differences, and discounts
+### 数量、差异和折扣
 
-Depending on configuration, matching can compare ordered, received, or remaining delivery quantity, as well as unit price, item number, and other mapped fields. A difference may be accepted if the document type has a configured tolerance. Check the displayed mismatch before accepting it. The [tolerance settings](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) and [discount guidance](discounts.md) explain these cases.
+根据配置，匹配时可以比较订购数量、已收货数量或剩余交货数量，以及单价、行项目编号和其他映射字段。如果文档类型配置了容差，差异可能会被接受。接受前请检查显示的不匹配项。[容差设置](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md)和[折扣说明](discounts.md)介绍了这些情况。
 
-The totals area, when available, helps reconcile the net amount from the invoice with matched lines and charges. If **Unsettled amount** remains, inspect the individual line values and any [costing element](../../../administration-and-setup/settings/document-processing/classification-and-extraction/table-extraction-for-costing-element.md) before export.
+如果提供了总计区域，可用它核对发票净额、已匹配行项目和费用。如果仍有 **Unsettled amount**，请检查各行项目的值，以及导出前是否有[成本要素](../../../administration-and-setup/settings/document-processing/classification-and-extraction/table-extraction-for-costing-element.md)。
 
-## Check totals and save
+## 检查总计并保存
 
-Review the invoice preview on the right and compare the line totals and any charges. For a full explanation of the actions in the top toolbar, see [Purchase Order Matching Tools](purchase-order-matching-tools.md). Select **Save** after changing matches. Select **Export** only after you have checked the document and the matching result; the arrow beside Export shows additional configured export choices. Your organization may have different export actions.
+查看右侧的发票预览，并比较行项目总计和任何费用。有关顶部工具栏中各项操作的完整说明，请参阅[采购订单匹配工具](purchase-order-matching-tools.md)。更改匹配后，请选择 **Save**。只有在检查文档和匹配结果后，才选择 **Export**；Export 旁边的箭头会显示其他已配置的导出选项。你的组织可能提供不同的导出操作。
 
-The preview toolbar lets you move between document pages, zoom, download the original, and open a larger view. Use it to verify that the purchase order number and line values really appear on the invoice. If you leave with unsaved matching changes, they may be lost.
+预览工具栏可用于切换文档页面、缩放、下载原件以及打开较大的视图。使用这些功能确认发票上确实显示了采购订单编号和行项目值。如果离开时仍有未保存的匹配更改，这些更改可能会丢失。
 
-The available comparisons and tolerance values depend on your document-type settings. Read [PO Matching Rules](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md), [Tolerance Settings](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md), [Disabled Statuses](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md), and [Consumed PO Line Status](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md) for administrator settings. For many-to-one lines, see [Discounts](discounts.md) and the [Matching Tools](purchase-order-matching-tools.md).
+可用的比较项和容差值取决于文档类型设置。有关管理员设置，请参阅 [PO Matching Rules](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)、[Tolerance Settings](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md)、[Disabled Statuses](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md)和 [Consumed PO Line Status](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md)。有关多对一行项目，请参阅 [Discounts](discounts.md)和[匹配工具](purchase-order-matching-tools.md)。

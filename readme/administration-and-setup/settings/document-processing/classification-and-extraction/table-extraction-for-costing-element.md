@@ -1,21 +1,21 @@
-# Table extraction for costing element
+# 成本要素表格提取
 
-Costing elements are charges or other amounts represented as invoice table lines. If this feature is enabled and the document has extracted lines, DocBits can classify those lines against the costing elements configured for the organization. A reviewer can correct a line's classification in the document table.
+成本要素是以发票表格行表示的费用或其他金额。启用此功能后，如果文档中已提取行项目，DocBits 可以根据组织配置的成本要素对这些行进行分类。审核人员可以在文档表格中更正行项目的分类。
 
-## Enable the setting
+## 启用设置
 
-1. Open **Settings → Document Processing → Classification and Extraction**.
-2. Stay on **General** and expand **Extraction**.
-3. Find **Table extraction for costing element** below the fields requested for table extraction. An administrator can turn on this switch for the organization.
+1. 打开 **设置 → 文档处理 → 分类与提取**。
+2. 保持在 **常规** 页面，并展开 **提取**。
+3. 在表格提取所需字段下方找到 **成本要素表格提取**。管理员可以为组织启用此开关。
 
-<figure><img src="../../../../.gitbook/assets/dbdc-146-costing-setting-en.png" alt="English Classification and Extraction settings in Test A with the Table extraction for costing element switch visible and off"><figcaption><p>The switch is off in the synthetic Test A organization. It was not changed for this guide.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-146-costing-setting-en.png" alt="Test A 中的英文分类与提取设置，显示处于关闭状态的“成本要素表格提取”开关"><figcaption><p>在合成的 Test A 组织中，此开关处于关闭状态。本指南未更改此设置。</p></figcaption></figure>
 
 {% hint style="info" %}
-The switch alone does not create costing elements or invoice rows. Configure the elements and import any required data first. The linked [costing-element setup guide](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md) explains the M3 example. Check [Classification and Extraction](README.md) for the other extraction controls.
+仅启用此开关不会创建成本要素或发票行。请先配置成本要素并导入所需数据。关联的[成本要素设置指南](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)介绍了 M3 示例。其他提取控制项请参阅[分类与提取](README.md)。
 {% endhint %}
 
-## Review or correct a line
+## 审核或更正行项目
 
-Open a document whose invoice table contains extracted lines and inspect the costing-element icon beside the relevant line. Select the icon to open the available classifications. Choose the correct configured costing element, or choose **Uncategorize** if the line is an ordinary item. Then review the resulting line and totals before saving the document.
+打开一份发票表格中包含已提取行项目的文档，并查看相关行旁的成本要素图标。选择该图标以打开可用的分类选项。选择正确的已配置成本要素；如果该行是普通项目，则选择 **取消分类**。然后检查生成的行项目和总额，再保存文档。
 
-If the icon or a classification is missing, first confirm that the document has extracted lines, the feature is enabled, and a costing element is configured for the organization. The synthetic Test A document used for this documentation check had no extracted invoice lines, so the classification menu could not be pictured or exercised. The steps above reflect the current document control; no classification was saved during this check.
+如果缺少该图标或分类选项，请先确认文档中有已提取行项目、已启用此功能，并且组织已配置成本要素。用于本次文档检查的合成 Test A 文档没有已提取的发票行，因此无法展示或操作分类菜单。上述步骤反映了当前的文档控件；本次检查未保存任何分类。

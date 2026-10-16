@@ -1,50 +1,50 @@
-# Calculate PO unit price
+# 计算采购订单单价
 
-## **Overview**
+## **概述**
 
-You can choose to automatically calculate the **unit price** of every purchase order line from the line's **amount** and **quantity**, instead of using the unit price that came with the purchase order. This is particularly useful when the unit price in the purchase order (in Infor ERP / SAP) differs from the price on the document. Such discrepancies may arise if a discount is applied to the unit price in the purchase order, while the document only applies the discount to the net amount.
+您可以选择根据每个采购订单行项目的**金额**和**数量**自动计算其**单价**，而不是使用采购订单中自带的单价。当采购订单（在 Infor ERP / SAP 中）的单价与文档上的价格不同时，这项功能尤其有用。这种差异可能是因为采购订单中的单价已应用折扣，而文档只对净额应用了折扣。
 
-## **Activation Steps**
+## **启用步骤**
 
-1.  Navigate to **Settings** -> **Global Settings** -> **Document Types**.
+1.  前往 **Settings** -> **Global Settings** -> **Document Types**。
 
     <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1.png" alt=""><figcaption></figcaption></figure>
-2.  Select the desired document type and click on **More Settings**.
+2.  选择所需的文档类型，然后点击 **More Settings**。
 
     <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2.png" alt=""><figcaption></figcaption></figure>
-3.  In the **Purchase Order** section, enable the option **Calculate PO Unit Price**.
+3.  在 **Purchase Order** 部分，启用 **Calculate PO Unit Price** 选项。
 
     <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_3.png" alt=""><figcaption></figcaption></figure>
 
-## How the price is calculated
+## 价格计算方式
 
-Once the setting is activated, the unit price of a purchase order line is calculated as:
+启用此设置后，采购订单行项目的单价按以下公式计算：
 
 **`Unit Price = Line Amount ÷ Quantity × Unit Price Per`**
 
-where the **line amount** is chosen like this:
+其中，**行项目金额**按以下方式确定：
 
-| Purchase order line carries                                                              | Line amount used                       |
+| 采购订单行项目包含的内容                                                              | 使用的行项目金额                       |
 | ---------------------------------------------------------------------------------------- | -------------------------------------- |
-| a **net amount** (`extended_amount`) that is greater than 0 and not above the line total | the net amount                         |
-| no net amount, or a net amount above the line total                                      | the line **total** (`total_amount`)    |
-| no positive amount at all, or no positive quantity                                       | nothing is calculated, the PO price stays |
+| 大于 0 且不超过行项目总额的**净额**（`extended_amount`） | 净额                         |
+| 没有净额，或净额超过行项目总额                                      | 行项目**总额**（`total_amount`）    |
+| 没有正金额，或没有正数量                                       | 不进行计算，保留采购订单中的价格 |
 
-Why the net amount comes first: ERP feeds (Infor BODs) send the net line amount as `extended_amount` and carry **tax and charges on top** in `total_amount`. Dividing a taxed total by the quantity gives a gross unit price, and every invoice that is priced net then shows as _unit price under-matched_ although it is correct. Example from a real purchase order line: quantity 9, net amount 879.84, total 954.63 (8.5 % tax) — the net-based price is 97.76 and matches the invoice; the total-based price would be 106.07.
+优先使用净额的原因：ERP 数据源（Infor BOD）会将行项目净额作为 `extended_amount` 发送，并将**税费和其他费用计入** `total_amount`。如果用含税总额除以数量，得出的就是含税单价；这样一来，即使发票定价正确，系统也会将其显示为_单价匹配不足_。一个实际采购订单行项目的示例：数量为 9，净额为 879.84，总额为 954.63（含 8.5% 税费）——按净额计算的价格为 97.76，与发票一致；按总额计算则为 106.07。
 
-A net amount that is **larger** than the line total cannot be a net amount, so the total is used in that case. A `Unit Price Per` of 0 or empty counts as 1.
+净额如果**大于**行项目总额，就不能作为净额使用，此时改用总额。`Unit Price Per` 为 0 或为空时，按 1 处理。
 
 {% hint style="info" %}
-The calculated price is written to the purchase order snapshot that is stored on the document, and it is **recalculated every time the document is matched** (Auto PO Match, manual match, matching on save). A document that was matched before the setting was changed therefore picks up the new price on its next match — no reload of the purchase order is needed.
+计算出的价格会写入存储在文档上的采购订单快照中，并且**每次匹配文档时都会重新计算**（自动采购订单匹配、手动匹配、保存时匹配）。因此，在更改此设置之前已匹配的文档会在下次匹配时使用新价格，无需重新加载采购订单。
 {% endhint %}
 
-## Example:
+## 示例：
 
 <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_4.png" alt="" width="563"><figcaption></figcaption></figure>
 
-In this case, the unit price (without the discount) is extracted from the document, while the purchase order in the ERP stores the unit price with the discount applied. This results in a mismatch in the unit price. With the setting activated, the unit price is taken from the line amount and quantity instead, so both sides agree.
+在此示例中，从文档中提取的是未折扣的单价，而 ERP 中的采购订单存储的是已应用折扣的单价，因此单价不匹配。启用此设置后，系统会改为根据行项目金额和数量计算单价，使两边的价格一致。
 
-## Related settings
+## 相关设置
 
-* [Purchase Order Matching Rules](purchase-order-matching-rules.md) — the rules compare the **effective** unit price, which is this calculated price when the setting is on.
-* [Purchase Order Tolerance Settings](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) — how much the invoice price may deviate from the calculated price.
+* [采购订单匹配规则](purchase-order-matching-rules.md) — 这些规则比较的是**有效**单价；启用此设置时，有效单价就是计算得出的价格。
+* [采购订单容差设置](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) — 设置发票价格与计算价格之间允许的偏差。

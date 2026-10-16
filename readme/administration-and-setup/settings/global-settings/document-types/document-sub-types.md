@@ -1,44 +1,39 @@
-# Document Sub Types
+# 文档子类型
 
 <figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-21 um 10.16.14.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 08.54.08.png" alt=""><figcaption></figcaption></figure>
 
-#### Overview
+#### 概览
 
-Document Sub Types are essentially specialized versions of the main document types. For example, under the main document type "Invoice", there might be sub-types like "Standard Invoice", "Pro-forma Invoice", and "Credit Invoice", each with slightly different data requirements or processing rules.
+文档子类型本质上是主要文档类型的专用版本。例如，在主要文档类型“发票”下，可能会有“标准发票”、“形式发票”和“贷项发票”等子类型，它们各自对数据的要求或处理规则略有不同。
 
-**Here are some reasons why subtypes are important:**
+**子类型之所以重要，有以下几个原因：**
 
-* **Specific processing requirements:** Often, different variations of the same document type require different processing requirements. For example, different types of invoices may require specific fields, approval workflows, or validation rules based on a company's internal policies or the requirements of external partners.
-* **Organizational customization:** Using subtypes allows organizations to customize their document processing to their specific needs. They can create subtypes that are tailored precisely to their individual business processes, rather than relying on generic solutions that may not meet all requirements.
-* **Clear structuring:** Using subtypes allows for clearer structuring of document management. Users can more easily navigate between different variations of a document type and find the specific information they need without being distracted by irrelevant data or options.
-* **Consistency and accuracy:** Subtypes can help ensure consistency and accuracy in document capture and processing. By standardizing subtypes, organizations can ensure that all relevant information is captured and that data is structured in a uniform manner.
-* **Efficient processing:** Using subtypes can increase efficiency in document processing because users have access to pre-built templates and workflows optimized for specific types of documents. This reduces manual effort and minimizes errors or delays in the process.
+* **特定处理要求：**同一文档类型的不同变体通常需要不同的处理要求。例如，根据公司的内部政策或外部合作伙伴的要求，不同类型的发票可能需要特定字段、审批工作流或验证规则。
+* **组织级自定义：**使用子类型可让组织根据自身需求自定义文档处理流程。组织可以创建与各自业务流程精确匹配的子类型，而不必依赖可能无法满足所有要求的通用解决方案。
+* **结构清晰：**使用子类型可以让文档管理结构更加清晰。用户可以更轻松地浏览文档类型的不同变体，并找到所需的具体信息，而不受无关数据或选项的干扰。
+* **一致性与准确性：**子类型有助于确保文档采集和处理的一致性与准确性。通过标准化子类型，组织可以确保采集所有相关信息，并以统一的方式组织数据。
+* **高效处理：**使用子类型可以提高文档处理效率，因为用户可以使用针对特定文档类型优化的预构建模板和工作流。这能减少人工操作，并最大限度地降低流程中的错误或延迟。
 
-Document subtypes in Docbits allow for more flexible and tailored management of document variations, resulting in improved efficiency, accuracy and adaptability. They provide a powerful way to manage the complexity of document processing and increase productivity within an organization.
+DocBits 中的文档子类型可更灵活地管理文档变体，并根据需要进行定制，从而提高效率、准确性和适应性。它们提供了一种强大的方式，帮助组织管理文档处理的复杂性并提升工作效率。
 
+#### 主要功能和选项
 
+1. **子类型列表**：
+   * 每一行代表一个主要文档类型的子类型。
+   * 包含子类型名称以及可对其执行的一组操作。
+2. **操作**：
 
-#### Key Features and Options
+<figure><img src="../../../../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
 
-1. **List of Sub Types**:
-   * Each row represents a sub-type of a primary document type.
-   * Includes the name of the sub-type and a set of actions that can be performed on it.
-2. **Actions**:
+* **字段**：配置子类型包含哪些数据字段，以及如何管理这些字段。
+* **编辑布局**：修改此子类型的信息显示和录入方式。
+* **脚本**：附加或编辑脚本，以便在处理此子类型的文档时执行特定操作。
+* **复制**：复制现有子类型配置，作为创建新子类型的基础。
+* **编辑文档子类型：**编辑子类型的名称或标题。
+* **删除**：移除不再需要的子类型。
 
-<figure><img src="../../../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+**添加新子类型**：
 
-* **Fields**: Configure which data fields are included in the sub-type and how they are managed.
-* **Edit Layout**: Modify the visual layout for how information is displayed and entered for this sub-type.
-* **Scripts**: Attach or edit scripts that execute specific operations when documents of this sub-type are processed.
-* **Copy**: Duplicate an existing sub-type configuration to use as a basis for a new one.
-* **Editing document Sub Type:** Edit the name or title of the sub-type.
-* **Delete**: Remove the sub-type if it is no longer needed.
-
-**Adding New Sub Types**:
-
-* The "+ New" button allows administrators to create new sub-types, defining unique properties and rules as needed.
-
-
-
+* “+ New”按钮允许管理员创建新子类型，并根据需要定义独特的属性和规则。

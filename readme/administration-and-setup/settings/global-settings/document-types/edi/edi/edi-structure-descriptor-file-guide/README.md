@@ -1,53 +1,53 @@
-# EDI Structure Descriptor File Guide
+# EDI 结构描述文件指南
 
-## **1. Overview**
+## **1. 概述**
 
-The **Structure Descriptor File** defines how repeating EDI segments (e.g., `N1`–`N4`) are grouped into structured JSON. It ensures:
+**结构描述文件**用于定义如何将重复出现的 EDI 片段（例如 `N1`–`N4`）分组为结构化 JSON。它可确保：
 
-* **Accurate parsing** of related elements as single units.
-* **Consistent output** for downstream systems.
+* **准确解析**相关元素，并将其作为单个单元处理。
+* **输出一致**，便于下游系统使用。
 
-_For a full example with segment details, see_ [_Structure Descriptor Example_](edi-structure-descriptor.md)_._
+_如需查看包含片段详情的完整示例，请参阅_ [_结构描述示例_](edi-structure-descriptor.md)_。_
 
-## **2. Access & Basic Editing**
+## **2. 访问与基本编辑**
 
-#### **Accessing the File**
+#### **访问文件**
 
-1.  **Settings** → **Document Type** → \[Your Document (e.g., _Purchase Order_)] → **E-Doc.**\\
+1.  **设置** → **文档类型** → \[你的文档（例如，_采购订单_）] → **电子文档。**\\
 
-    <figure><img src="../../../../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2. Under **E-Doc**, select your format (e.g., _EDI_ ).
-3.  Click **Structure Descriptor**.\\
+    <figure><img src="../../../../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+2. 在 **电子文档**下，选择你的格式（例如，_EDI_）。
+3.  点击 **结构描述**。\\
 
-    <figure><img src="../../../../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
-#### **Draft Management**
+#### **草稿管理**
 
-* **Create a Draft**: Click the ✏️ pencil icon to begin editing.
-* **Delete Drafts**: Use the 🗑️ trashcan icon to remove unused drafts.
-* **Activate Changes**: Click the ✅ checkmark icon to approve and publish your changes.
-  * <mark style="color:red;">**Note**</mark>: Activating a new version will **automatically deactivate** the previous one.
+* **创建草稿**：点击 ✏️ 铅笔图标开始编辑。
+* **删除草稿**：使用 🗑️ 垃圾桶图标删除不再使用的草稿。
+* **激活更改**：点击 ✅ 勾选图标以审批并发布更改。
+  * <mark style="color:red;">**注意**</mark>：激活新版本会**自动停用**之前的版本。
 
-## 3. Preview Function (Preview Parsed XML)
+## 3. 预览功能（预览已解析的 XML）
 
-The **Preview Function** allows you to test and preview how an uploaded EDI file is parsed using the current Structure Descriptor File.
+**预览功能**可让你使用当前的结构描述文件测试并预览上传的 EDI 文件的解析结果。
 
-#### Usage
+#### 用法
 
-* Upload an EDI file via the standard upload flow.
-* Copy the **Document ID** of the uploaded file.
-* Navigate to the **Structure Descriptor File** interface.
-*   Open the **Preview Function.**\\
+* 通过标准上传流程上传一个 EDI 文件。
+* 复制已上传文件的**文档 ID**。
+* 前往**结构描述文件**界面。
+*   打开**预览功能。**\\
 
-    <div align="left"><figure><img src="../../../../../../../.gitbook/assets/image (7) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
-* Enter the **Document ID** into the field and press **Test**.
-* The resulting **structured XML output** will be displayed.
+    <div align="left"><figure><img src="../../../../../../../.gitbook/assets/image (21).png" alt="" width="375"><figcaption></figcaption></figure></div>
+* 在输入框中输入**文档 ID**，然后点击**测试**。
+* 系统将显示生成的**结构化 XML 输出**。
 
-This is especially useful for debugging mappings and validating structural groupings in real time.
+此功能特别适用于实时调试映射和验证结构分组。
 
-<figure><img src="../../../../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-## 6. Video Walkthrough
+## 6. 视频演示
 
-A video guide for this file type is available on the [Videos page.](../edi-videos.md)\
-Use it to follow along with setup, editing, and previewing.
+此文件类型的视频指南可在[视频页面](../edi-videos.md)查看。\
+你可以跟随视频完成设置、编辑和预览操作。

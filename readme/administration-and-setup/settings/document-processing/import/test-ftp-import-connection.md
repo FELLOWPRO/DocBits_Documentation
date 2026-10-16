@@ -1,88 +1,86 @@
-# Test: FTP Import Connection
+# 测试：FTP 导入连接
 
-#### Purpose
+#### 目的
 
-These tests ensure that our FTP import system works correctly. We verify that we can add a new FTP import connection, test the connection, activate/deactivate it, and clean it up afterward.
+这些测试用于确保 FTP 导入系统能够正常工作。我们会验证是否可以添加新的 FTP 导入连接、测试连接、启用或停用连接，并在之后清理连接。
 
 
 
 {% embed url="https://grafana.polydocs.io/d-solo/b6ad3a9c-260c-46a3-9ade-47691e743d4d/docbits?from=1715746603760&orgId=1&panelId=84&refresh=1m&to=1715768203760" %}
 
-## Test Scenarios
+## 测试场景
 
-1. **Setup:**
-   * **Environment Variables:** Load necessary details like FTP server information and credentials from environment variables.
-2.  **FTP Connection Tests:**
+1. **设置：**
+   * **环境变量：** 从环境变量加载所需信息，例如 FTP 服务器信息和凭据。
+2.  **FTP 连接测试：**
 
-    **Add New Connection:**
+    **添加新连接：**
 
-    * **Test Add New FTP Import Connection (`test_add_new_ftp_import_connection`):**
-      * Add a new FTP import connection with the given credentials and server details.
-      * **Expected Outcome:** The connection should be added successfully.
+    * **测试添加新的 FTP 导入连接 (`test_add_new_ftp_import_connection`)：**
+      * 使用给定的凭据和服务器信息添加新的 FTP 导入连接。
+      * **预期结果：** 连接应成功添加。
 
-    **Deactivate Connection:**
+    **停用连接：**
 
-    * **Test Deactivate FTP Import Connection (`test_deactivate_ftp_import_connection`):**
-      * Deactivate the newly added FTP import connection.
-      * **Expected Outcome:** The connection should be deactivated successfully.
+    * **测试停用 FTP 导入连接 (`test_deactivate_ftp_import_connection`)：**
+      * 停用刚添加的 FTP 导入连接。
+      * **预期结果：** 连接应成功停用。
 
-    **Test Connection:**
+    **测试连接：**
 
-    * **Test FTP Connection (`test_test_ftp_connection`):**
-      * Test if the FTP import connection can successfully connect to the FTP server.
-      * **Expected Outcome:** The connection should be tested successfully.
+    * **测试 FTP 连接 (`test_test_ftp_connection`)：**
+      * 测试 FTP 导入连接是否能够成功连接到 FTP 服务器。
+      * **预期结果：** 连接应成功通过测试。
 
-    **Check Connection in List:**
+    **检查连接列表：**
 
-    * **Test Check FTP Connection in List (`test_check_ftp_connection_in_list`):**
-      * Check if the newly added FTP import connection is present in the list of connections.
-      * **Expected Outcome:** The connection should be found in the list.
+    * **测试检查列表中的 FTP 连接 (`test_check_ftp_connection_in_list`)：**
+      * 检查新添加的 FTP 导入连接是否出现在连接列表中。
+      * **预期结果：** 应在列表中找到该连接。
 
-    **Check Connection Deactivated:**
+    **检查连接是否已停用：**
 
-    * **Test Check FTP Connection Deactivated (`test_check_ftp_connection_deactivated`):**
-      * Verify that the FTP import connection is marked as inactive in the list.
-      * **Expected Outcome:** The connection should be inactive.
+    * **测试检查 FTP 连接是否已停用 (`test_check_ftp_connection_deactivated`)：**
+      * 验证连接列表中的 FTP 导入连接是否标记为未启用。
+      * **预期结果：** 连接应处于未启用状态。
 
-    **Add Test Folder:**
+    **添加测试文件夹：**
 
-    * **Test Add Test Folder to Connection (`test_add_test_folder_to_connection`):**
-      * Add a default directory (test folder) to the FTP import connection.
-      * **Expected Outcome:** The default directory should be added successfully.
+    * **测试向连接添加测试文件夹 (`test_add_test_folder_to_connection`)：**
+      * 向 FTP 导入连接添加默认目录（测试文件夹）。
+      * **预期结果：** 默认目录应成功添加。
 
-    **Reactivate Connection:**
+    **重新启用连接：**
 
-    * **Test Reactivate FTP Import Connection (`test_reactivate_ftp_import_connection`):**
-      * Reactivate the previously deactivated FTP import connection.
-      * **Expected Outcome:** The connection should be reactivated successfully.
+    * **测试重新启用 FTP 导入连接 (`test_reactivate_ftp_import_connection`)：**
+      * 重新启用此前停用的 FTP 导入连接。
+      * **预期结果：** 连接应成功重新启用。
 
-    **Check Connection Reactivated:**
+    **检查连接是否已重新启用：**
 
-    * **Test Check FTP Connection Reactivated (`test_check_ftp_connection_reactivated`):**
-      * Verify that the FTP import connection is marked as active in the list.
-      * **Expected Outcome:** The connection should be active.
+    * **测试检查 FTP 连接是否已重新启用 (`test_check_ftp_connection_reactivated`)：**
+      * 验证连接列表中的 FTP 导入连接是否标记为已启用。
+      * **预期结果：** 连接应处于已启用状态。
 
-    **Cleanup:**
+    **清理：**
 
-    * **Test Cleanup FTP Import (`test_cleanup_ftp_import`):**
-      * Delete the FTP import connection to clean up after the tests.
-      * **Expected Outcome:** The connection should be deleted successfully.
+    * **测试清理 FTP 导入连接 (`test_cleanup_ftp_import`)：**
+      * 删除 FTP 导入连接，以便在测试后进行清理。
+      * **预期结果：** 连接应成功删除。
 
-## Detailed Explanation of Each Test
+## 各项测试的详细说明
 
-* **Setup and Initialization:**
-  * **Initialize Shared Data:** Prepare shared data for tests.
-* **FTP Connection Tests:**
-  * **Add New Connection:** Add a new FTP import connection with the provided credentials and server details.
-  * **Deactivate Connection:** Deactivate the newly added FTP import connection.
-  * **Test Connection:** Test if the FTP import connection can successfully connect to the FTP server.
-  * **Check Connection in List:** Verify that the new FTP import connection is present in the list of connections.
-  * **Check Connection Deactivated:** Confirm that the FTP import connection is marked as inactive in the list.
-  * **Add Test Folder:** Add a default directory (test folder) to the FTP import connection.
-  * **Reactivate Connection:** Reactivate the previously deactivated FTP import connection.
-  * **Check Connection Reactivated:** Ensure that the FTP import connection is marked as active in the list.
-  * **Cleanup:** Delete the FTP import connection to clean up after the tests.
+* **设置和初始化：**
+  * **初始化共享数据：** 为测试准备共享数据。
+* **FTP 连接测试：**
+  * **添加新连接：** 使用提供的凭据和服务器信息添加新的 FTP 导入连接。
+  * **停用连接：** 停用刚添加的 FTP 导入连接。
+  * **测试连接：** 测试 FTP 导入连接是否能够成功连接到 FTP 服务器。
+  * **检查连接列表：** 验证新添加的 FTP 导入连接是否出现在连接列表中。
+  * **检查连接是否已停用：** 确认连接列表中的 FTP 导入连接是否标记为未启用。
+  * **添加测试文件夹：** 向 FTP 导入连接添加默认目录（测试文件夹）。
+  * **重新启用连接：** 重新启用此前停用的 FTP 导入连接。
+  * **检查连接是否已重新启用：** 确认连接列表中的 FTP 导入连接是否标记为已启用。
+  * **清理：** 删除 FTP 导入连接，以便在测试后进行清理。
 
 \
-
-

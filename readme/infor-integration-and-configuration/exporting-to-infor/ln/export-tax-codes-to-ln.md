@@ -1,231 +1,221 @@
-# Export Tax Codes to LN
+# 将税码导出到 LN
 
-## **Overview:**
+## **概述：**
 
 \
-This guide will walk you through the setup process to ensure tax codes are correctly exported from DocBits to LN.
+本指南将带您完成设置流程，确保税码能够从 DocBits 正确导出到 LN。
 
+## **单个税码**
 
+### **步骤 1：设置值列表**
 
-## **Single Tax Codes**
-
-### **Step 1: Set Up List of Values**
-
-1.  Go to **Settings** -> **Document Processing** -> **List of Values**.
+1.  前往 **Settings** -> **Document Processing** -> **List of Values**。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_1.png" alt=""><figcaption></figcaption></figure>
-2.  Click **New**.
+2.  点击 **New**。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2 (1).png" alt=""><figcaption></figcaption></figure>
-3.  Create a list with the name `Tax_Country` and click **Save**.
-
-
+3.  创建名为 `Tax_Country` 的列表，然后点击 **Save**。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_3.png" alt="" width="375"><figcaption></figcaption></figure>
-4.  Create the following three additional lists:
+4.  再创建以下三个列表：
 
     * `Tax_Code_Full`
     * `Tax_Code_Reduced`
     * `Tax_Code_Free`
 
     <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_28.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_29.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_30.png" alt=""><figcaption></figcaption></figure></div>
-5.  Click on one of the newly created lists to open it. Then, press the **Add Row** button to add a new row.
-
-
+5.  点击其中一个新建的列表以打开它。然后点击 **Add Row** 按钮添加新行。
 
     <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt=""><figcaption></figcaption></figure>
-6.  Enter the desired respective values from **LN** and press **Save** to save the changes.
+6.  输入 LN 中相应的所需值，然后点击 **Save** 保存更改。
 
-    * If you have multiple values, you can click **Add More Values** to add them.
+    * 如果有多个值，可以点击 **Add More Values** 添加。
 
     <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt=""><figcaption></figcaption></figure></div>
 
-    * **NOTE:** You can find the Tax Codes in LN under: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
+    * **注意：**您可以在 LN 中通过以下路径找到税码：**Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_LN.png" alt=""><figcaption></figcaption></figure>
 
-### **Step 2: Add Fields in DocBits**
+### **步骤 2：在 DocBits 中添加字段**
 
-1.  Navigate to **Settings** -> **Global Settings** -> **Document Types**.
+1.  前往 **Settings** -> **Global Settings** -> **Document Types**。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
-2.  Choose the **Fields** menu corresponding to the Document Type where you wish to add the fields.
+2.  在要添加字段的文档类型对应的菜单中选择 **Fields**。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
-3.  Under **VAT & Amounts**, create six new fields as follows:
+3.  在 **VAT & Amounts** 下，按如下方式创建六个新字段：
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_8.png" alt=""><figcaption></figcaption></figure>
 
-<table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>Name</strong></td><td><strong>Title</strong></td><td><strong>Field Type</strong></td><td><strong>List of Values</strong></td></tr><tr><td><code>tax_country</code></td><td>Tax Country</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>Tax Country Reduced</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>Tax Country Free</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>Tax Code</td><td>Dropdown</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>Tax Code Reduced</td><td>Dropdown</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>Tax Code Free</td><td>Dropdown</td><td>Tax_Code_Free</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>名称</strong></td><td><strong>标题</strong></td><td><strong>字段类型</strong></td><td><strong>值列表</strong></td></tr><tr><td><code>tax_country</code></td><td>税务国家/地区</td><td>下拉列表</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>税务国家/地区（减免）</td><td>下拉列表</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>免税国家/地区</td><td>下拉列表</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>税码</td><td>下拉列表</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>减免税码</td><td>下拉列表</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>免税税码</td><td>下拉列表</td><td>Tax_Code_Free</td></tr></tbody></table>
 
-<div><figure><img src="../../../.gitbook/assets/TaxCodes_10.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_11.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_12.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/TaxCodes_10 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_11 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_12.png" alt=""><figcaption></figcaption></figure></div>
 
-<div><figure><img src="../../../.gitbook/assets/TaxCodes_13.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_14.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_15.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/TaxCodes_13 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_14 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_15 (1).png" alt=""><figcaption></figcaption></figure></div>
 
-4.  After saving each field, click on **Save Settings** to apply the changes.
+4.  保存每个字段后，点击 **Save Settings** 应用更改。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_20 (2).png" alt=""><figcaption></figcaption></figure>
 
-### **Step 3: Edit Layout**
+### **步骤 3：编辑布局**
 
-1.  Go to **Settings** -> **Global Settings** -> **Document Types**.
+1.  前往 **Settings** -> **Global Settings** -> **Document Types**。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
-2.  Open the **Edit Layout** menu for the Document Type you want to edit.
+2.  打开要编辑的文档类型对应的 **Edit Layout** 菜单。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt=""><figcaption></figcaption></figure>
-3.  Select the appropriate **Document Origin** for which you want to apply the Tax Codes
+3.  选择要应用税码的 **Document Origin**。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_26.png" alt=""><figcaption></figcaption></figure>
-4.  Scroll down to the **Tax Details** section.
+4.  向下滚动到 **Tax Details** 部分。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_21.png" alt=""><figcaption></figcaption></figure>
-5. Expand the **Form Elements** dropdown menu.
-6.  In the **Tax Details** section, use the **Horizontal Separator Tool**. Drag and drop it between the sub-sections within the tax section to clearly separate them and reduce confusion.
+5. 展开 **Form Elements** 下拉菜单。
+6.  在 **Tax Details** 部分使用 **Horizontal Separator Tool**。将其拖放到税务部分的子部分之间，以便清楚地分隔各部分并减少混淆。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_22 (1).png" alt=""><figcaption></figcaption></figure>
-7. Expand the **Form Fields** dropdown menu.
-8.  Search for **Tax Country** and drag and drop the field into its respective area.
+7. 展开 **Form Fields** 下拉菜单。
+8.  搜索 **Tax Country**，然后将该字段拖放到相应区域。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_23 (2).png" alt=""><figcaption></figcaption></figure>
-9.  Search for **Tax Code** and drag and drop the field into its corresponding area.
+9.  搜索 **Tax Code**，然后将该字段拖放到对应区域。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_24 (1).png" alt=""><figcaption></figcaption></figure>
-10. Save the template.
+10. 保存模板。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_25.png" alt=""><figcaption></figcaption></figure>
 
-### Step 4: Verify that Everything Worked
+### 步骤 4：验证配置是否生效
 
-After uploading a new document into DocBits with the correct document settings selected, you should now be able to select the tax codes you added to the lists in Step 1.
+在 DocBits 中上传新文档并选择正确的文档设置后，您现在应该可以选择在步骤 1 的列表中添加的税码。
 
 <figure><img src="../../../.gitbook/assets/TaxCodes_31.png" alt=""><figcaption></figcaption></figure>
 
-## Multi Tax Code
+## 多个税码
 
-### **Step 1: Set Up List of Values**
+### **步骤 1：设置值列表**
 
-1.  Go to **Settings** -> **Document Processing** -> **List of Values**.
+1.  前往 **Settings** -> **Document Processing** -> **List of Values**。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_1.png" alt=""><figcaption></figcaption></figure>
-2.  Click **New**.
+2.  点击 **New**。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2 (1).png" alt=""><figcaption></figcaption></figure>
-3.  Create a list with the name `Tax_Country` and click **Save**.
-
-
+3.  创建名为 `Tax_Country` 的列表，然后点击 **Save**。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_3.png" alt="" width="375"><figcaption></figcaption></figure>
-4.  Create the following three additional lists:
+4.  再创建以下三个列表：
 
     * `Tax_Code_Full`
     * `Tax_Code_Reduced`
     * `Tax_Code_Free`
 
     <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_28.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_29.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_30.png" alt=""><figcaption></figcaption></figure></div>
-5.  Click on one of the newly created lists to open it. Then, press the **Add Row** button to add a new row.
-
-
+5.  点击其中一个新建的列表以打开它。然后点击 **Add Row** 按钮添加新行。
 
     <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt=""><figcaption></figcaption></figure>
-6.  Enter the desired respective values from **LN** and press **Save** to save the changes.
+6.  输入 LN 中相应的所需值，然后点击 **Save** 保存更改。
 
-    * If you have multiple values, you can click **Add More Values** to add them.
+    * 如果有多个值，可以点击 **Add More Values** 添加。
 
     <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt=""><figcaption></figcaption></figure></div>
 
-    * **NOTE:** You can find the Tax Codes in LN under: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
+    * **注意：**您可以在 LN 中通过以下路径找到税码：**Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_LN.png" alt=""><figcaption></figcaption></figure>
 
-### **Step 2: Add Fields in DocBits**
+### **步骤 2：在 DocBits 中添加字段**
 
-1.  Navigate to **Settings** -> **Global Settings** -> **Document Types**.
+1.  前往 **Settings** -> **Global Settings** -> **Document Types**。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
-2.  Choose the **Fields** menu corresponding to the Document Type where you wish to add the fields.
+2.  在要添加字段的文档类型对应的菜单中选择 **Fields**。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
-3.  Under **VAT & Amounts**, create six new fields as follows:
+3.  在 **VAT & Amounts** 下，按如下方式创建六个新字段：
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_8.png" alt=""><figcaption></figcaption></figure>
 
-<table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>Name</strong></td><td><strong>Title</strong></td><td><strong>Field Type</strong></td><td><strong>Value</strong></td></tr><tr><td><code>tax_country</code></td><td>Tax Country</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>Tax Country Reduced</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>Tax Country Free</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>Tax Code</td><td>Dropdown</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>Tax Code Reduced</td><td>Dropdown</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>Tax Code Free</td><td>Dropdown</td><td>Tax_Code_Free</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>名称</strong></td><td><strong>标题</strong></td><td><strong>字段类型</strong></td><td><strong>值</strong></td></tr><tr><td><code>tax_country</code></td><td>税务国家/地区</td><td>下拉列表</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>税务国家/地区（减免）</td><td>下拉列表</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>免税国家/地区</td><td>下拉列表</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>税码</td><td>下拉列表</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>减免税码</td><td>下拉列表</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>免税税码</td><td>下拉列表</td><td>Tax_Code_Free</td></tr></tbody></table>
 
-<div><figure><img src="../../../.gitbook/assets/TaxCodes_10.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_11.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_12.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/TaxCodes_10 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_11 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_12.png" alt=""><figcaption></figcaption></figure></div>
 
-<div><figure><img src="../../../.gitbook/assets/TaxCodes_13.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_14.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_15.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/TaxCodes_13 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_14 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_15 (1).png" alt=""><figcaption></figcaption></figure></div>
 
-4.  After saving each field, click on **Save Settings** to apply the changes.
+4.  保存每个字段后，点击 **Save Settings** 应用更改。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_20 (2).png" alt=""><figcaption></figcaption></figure>
 
-### **Step 3: Edit Layout**
+### **步骤 3：编辑布局**
 
-1.  Go to **Settings** -> **Global Settings** -> **Document Types**.
+1.  前往 **Settings** -> **Global Settings** -> **Document Types**。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
-2.  Open the **Edit Layout** menu for the Document Type you want to edit.
+2.  打开要编辑的文档类型对应的 **Edit Layout** 菜单。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt=""><figcaption></figcaption></figure>
-3.  Select the appropriate **Document Origin** for which you want to apply the Tax Codes
+3.  选择要应用税码的 **Document Origin**。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_26.png" alt=""><figcaption></figcaption></figure>
-4.  Scroll down to the **Tax Details** section.
+4.  向下滚动到 **Tax Details** 部分。
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_21.png" alt=""><figcaption></figcaption></figure>
-5. Expand the **Form Elements** dropdown menu.
-6.  In the Tax Details section use the **Sub Group** Tool. Drag and Drop it next to an existing field
+5. 展开 **Form Elements** 下拉菜单。
+6.  在 **Tax Details** 部分使用 **Sub Group** 工具。将其拖放到现有字段旁边。
 
     <figure><img src="../../../.gitbook/assets/TaxCodesMulti_1.png" alt=""><figcaption></figcaption></figure>
-7.  To name your subgroup, click on the subgroup and enter your desired name in the **Label** field.
+7.  要为子组命名，请点击该子组，并在 **Label** 字段中输入所需名称。
 
     <div><figure><img src="../../../.gitbook/assets/TaxCodesMulti_2.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodesMulti_3.png" alt=""><figcaption></figcaption></figure></div>
-8.  Drag and drop the fields that correspond to this group into the **Sub Group** field.
+8.  将与此组对应的字段拖放到 **Sub Group** 字段中。
 
     <figure><img src="../../../.gitbook/assets/TaxCodeMulti_4.png" alt=""><figcaption></figcaption></figure>
-9. Expand the **Fields** dropdown menu.
-10. Search for **Tax** and drag and drop the respective fields, such as **Tax Country** and **Tax Code**, into the corresponding subgroup.
+9. 展开 **Fields** 下拉菜单。
+10. 搜索 **Tax**，然后将相应字段（例如 **Tax Country** 和 **Tax Code**）拖放到对应的子组中。
 
     <figure><img src="../../../.gitbook/assets/TaxCodeMulti_5.png" alt=""><figcaption></figcaption></figure>
-11. Repeat steps 5 through 10 2 times to reach the following state:
+11. 将步骤 5 到 10 重复两次，直到达到以下状态：
 
     <figure><img src="../../../.gitbook/assets/TaxCodeMulti_6.png" alt=""><figcaption></figcaption></figure>
-12. Save the template.
+12. 保存模板。
 
     <figure><img src="../../../.gitbook/assets/TaxCodeMulti_7.png" alt=""><figcaption></figcaption></figure>
 
-### Step 4: Verify that Everything Worked and resulting changes
+### 步骤 4：验证配置是否生效以及结果变化
 
-After uploading a new document into DocBits with the correct document settings selected, you will be able to select the tax codes you added in Step 1 and add multiple tax codes configured in Step 3.
+在 DocBits 中上传新文档并选择正确的文档设置后，您可以选择在步骤 1 中添加的税码，并添加在步骤 3 中配置的多个税码。
 
-* The document will begin with three distinct sections: one for Tax Full amounts, one for Tax Reduced amounts, and one for Tax Free amounts.
-* Clicking the plus button within a section will create a duplicate, allowing multiple submissions at the selected tax rate.
+* 文档将显示三个不同的部分：分别用于完整税额、减免税额和免税额。
+* 点击某个部分中的加号按钮会创建副本，以便按选定的税率添加多笔申报。
 
 <figure><img src="../../../.gitbook/assets/TaxCodeMulti_8.png" alt=""><figcaption></figcaption></figure>
 
-* Sections can be deleted by clicking the remove button.
+* 点击移除按钮即可删除部分。
 
 <figure><img src="../../../.gitbook/assets/TaxCodeMulti_9.png" alt=""><figcaption></figcaption></figure>
 
-* Total Amounts will be calculated as a sum of all sections
-* Validation of Total Amount will be modified based on all tax-sections
-* Scripts for new sections can only be applied once fields have been added to the view.
+* 总金额将按所有部分的金额之和计算。
+* 总金额的验证将根据所有税务部分进行调整。
+* 只有在视图中添加字段后，才能对新部分应用脚本。
 
-### Note for LN:
+### LN 说明：
 
-In **LN** USt Position will be filled out based on the position number from the Tax Code/Tax Country dropdown menu. Only the Position number will be sent to export.
+在 **LN** 中，USt Position 将根据税码/税务国家（地区）下拉菜单中的位置编号填写。导出时只会发送位置编号。
 
 <figure><img src="../../../.gitbook/assets/TaxCodesLN_2.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/TaxCodesLN_3.png" alt=""><figcaption></figcaption></figure>
 
-#### **Export Mapping**
+#### **导出映射**
 
-To link the Tax Line with the Cost Line:
+要将税行关联到成本行：
 
-1. Add `TaxLine` to the **InvoiceCostFields** list.
-2. Add the following entry, following the example below:\
+1. 将 `TaxLine` 添加到 **InvoiceCostFields** 列表。
+2. 按照以下示例添加条目：\
    `ICF_TaxLine = TF_position`
 
 <figure><img src="../../../.gitbook/assets/TaxCodeMulti_10.png" alt=""><figcaption></figcaption></figure>

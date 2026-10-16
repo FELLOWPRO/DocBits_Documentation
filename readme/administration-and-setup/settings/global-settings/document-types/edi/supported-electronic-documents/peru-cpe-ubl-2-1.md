@@ -1,30 +1,30 @@
 ---
-description: PERU CPE UBL 2.1 electronic document support in DocBits
+description: "DocBits 对秘鲁 CPE UBL 2.1 电子文档的支持"
 ---
 
-# 🇵🇪 PERU CPE UBL 2.1
+# 🇵🇪 秘鲁 CPE UBL 2.1
 
-| Property             | Value                            |
+| 属性                 | 值                               |
 | -------------------- | -------------------------------- |
-| **Country / Region** | Peru                             |
-| **Document Types**   | Invoice, Credit Note, Debit Note |
-| **Format**           | UBL 2.1 XML                      |
-| **Standard**         | CPE UBL 2.1                      |
+| **国家 / 地区**      | 秘鲁                             |
+| **文档类型**         | 发票、贷项通知单、借项通知单     |
+| **格式**             | UBL 2.1 XML                      |
+| **标准**             | CPE UBL 2.1                      |
 
-Peru CPE UBL 2.1 is the current format for Peruvian electronic invoices submitted to SUNAT. It uses the OASIS UBL 2.1 standard with Peruvian extensions for RUC identification, IGV (VAT) tax calculations, and detracción/retención withholding mechanisms.
+秘鲁 CPE UBL 2.1 是提交给 SUNAT 的秘鲁电子发票现行格式。它采用 OASIS UBL 2.1 标准，并扩展支持 RUC 标识、IGV（增值税）计算以及 detracción/retención 预扣机制。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 组件             | 状态       |
+| ---------------- | ---------- |
+| 预览             | ✅ 支持     |
+| 字段提取         | ✅ 支持     |
+| 转换             | ✅ 支持     |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/peru-cpe-preview.png" alt="Peru CPE UBL 2.1 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Peru CPE UBL 2.1 invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/peru-cpe-preview.png" alt="DocBits 中的秘鲁 CPE UBL 2.1 发票预览"><figcaption><p>秘鲁 CPE UBL 2.1 发票的 DocBits 默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

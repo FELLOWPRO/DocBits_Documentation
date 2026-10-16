@@ -1,29 +1,29 @@
-# Discounts
+# 折扣
 
-## **Overview**
+## **概述**
 
-If your extracted table contains the **Discount** or **Discount Percentage** column, **DocBits** will automatically apply the corresponding discount to the Unit Price during processing in the [**Purchase Order Matching screen**](./).
+如果提取的表格包含 **折扣** 或 **折扣百分比** 列，**DocBits** 会在处理过程中，自动将相应的折扣应用于单价，详见[**采购订单匹配界面**](./)。
 
-## Exceptions
+## 例外情况
 
-Discounts will not be automatically applied when the multi-match feature is used. More information about the multi match feature can be found [here](./#multi-matches).
+使用多重匹配功能时，不会自动应用折扣。有关多重匹配功能的更多信息，请参阅[此处](./#multi-matches)。
 
-## Discount Calculation
+## 折扣计算
 
-When a **Discount** is present, the discounted unit price is calculated by subtracting the discount amount from the unit price:
+存在 **折扣** 时，折后单价的计算方式为从单价中减去折扣金额：
 
 ```
 UNIT_PRICE_DISCOUNTED = UNIT_PRICE - DISCOUNT
 ```
 
-## Discount Percentage Calculation
+## 折扣百分比计算
 
-When a **Discount Percentage** is present, the discounted unit price is calculated using the following formula:
+存在 **折扣百分比** 时，折后单价使用以下公式计算：
 
 ```
 UNIT_PRICE_DISCOUNTED = UNIT_PRICE * (1 - DISCOUNT_PERCENT / 100)
 ```
 
-## Rounding
+## 舍入
 
-All discounted unit price results are rounded to four decimal places for consistency in downstream processing.
+所有折后单价结果均舍入到小数点后四位，以确保后续处理的一致性。

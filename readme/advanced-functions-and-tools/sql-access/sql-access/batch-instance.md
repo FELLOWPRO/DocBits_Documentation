@@ -1,60 +1,60 @@
-# Batch instance
+# 批次实例
 
-## Tabelle `public.batch_instance`
+## 表 `public.batch_instance`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
+* `id`：内部字段
+* `org_id`：所属组织的 ID
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
 
-### Analyse & Beschreibung
+### 分析与描述
 
-## Table Documentation: `public.batch_instance`
+## 表文档：`public.batch_instance`
 
-### Introduction
+### 简介
 
-The `public.batch_instance` table is designed to store information about various batch instances within an organization. It contains key metadata about each instance, including its unique identification, the organization it belongs to, and its creation and modification details. This table is essential for tracking the lifecycle and management of batch instances, likely in a software application dealing with batch processing.
+`public.batch_instance` 表用于存储组织内各个批次实例的信息。它包含每个实例的关键元数据，包括唯一标识、所属组织以及创建和修改信息。对于跟踪批次实例的生命周期和管理至关重要，可能用于处理批次的软件应用程序中。
 
-### Columns
+### 列
 
 #### `id`
 
-* **Meaning**: This column stores the unique identifier for each batch instance.
-* **Role**: Primary Key (`id`).
-* **Typical Contents**: A UUID string that uniquely identifies each batch instance, e.g., `'e9aa9ad7-6c36-4d7c-b31c-6e10bb8fbd87'`.
+* **含义**：此列存储每个批次实例的唯一标识符。
+* **作用**：主键（`id`）。
+* **典型内容**：用于唯一标识每个批次实例的 UUID 字符串，例如 `'e9aa9ad7-6c36-4d7c-b31c-6e10bb8fbd87'`。
 
 #### `org_id`
 
-* **Meaning**: This column stores the identifier of the organization associated with the batch instance.
-* **Role**: Foreign Key (`org_id`).
-* **Typical Contents**: A UUID string representing the organization, e.g., `'23f3d697-7411-4c95-981d-faf089d266be'`.
+* **含义**：此列存储与批次实例关联的组织标识符。
+* **作用**：外键（`org_id`）。
+* **典型内容**：表示组织的 UUID 字符串，例如 `'23f3d697-7411-4c95-981d-faf089d266be'`。
 
 #### `created_by`
 
-* **Meaning**: This column indicates the user or system entity that created the batch instance.
-* **Role**: Possibly a Foreign Key, referencing a user table or similar.
-* **Typical Contents**: An integer representing the ID of the creator, e.g., `1`.
+* **含义**：此列表示创建批次实例的用户或系统实体。
+* **作用**：可能是外键，引用用户表或类似表。
+* **典型内容**：表示创建者 ID 的整数，例如 `1`。
 
 #### `created_on`
 
-* **Meaning**: This column records the timestamp of when the batch instance was created.
-* **Role**: Technical field for auditing and tracking purposes.
-* **Typical Contents**: A timestamp with time zone, e.g., `2021-09-22 10:55:59.755627+00`.
+* **含义**：此列记录批次实例的创建时间戳。
+* **作用**：用于审计和跟踪的技术字段。
+* **典型内容**：带时区的时间戳，例如 `2021-09-22 10:55:59.755627+00`。
 
 #### `last_modified_on`
 
-* **Meaning**: This column captures the timestamp of the last modification made to the batch instance.
-* **Role**: Technical field for auditing changes.
-* **Typical Contents**: Typically null or a timestamp with time zone if modifications have occurred.
+* **含义**：此列记录批次实例最后一次修改的时间戳。
+* **作用**：用于审计更改的技术字段。
+* **典型内容**：通常为 null；如果发生过修改，则为带时区的时间戳。
 
 #### `is_deleted`
 
-* **Meaning**: This column indicates whether the batch instance is marked as deleted.
-* **Role**: Technical field for soft deletion purposes.
-* **Typical Contents**: A boolean value, typically `False` if the instance is active, e.g., `False`.
+* **含义**：此列表示批次实例是否标记为已删除。
+* **作用**：用于软删除的技术字段。
+* **典型内容**：布尔值；实例处于活动状态时通常为 `False`，例如 `False`。
 
-This documentation provides a comprehensive overview of the `public.batch_instance` table, detailing the purpose and structure of each column, which is crucial for developers working with this data model.
+本文档全面介绍了 `public.batch_instance` 表，详细说明了每一列的用途和结构，这对使用此数据模型的开发人员至关重要。

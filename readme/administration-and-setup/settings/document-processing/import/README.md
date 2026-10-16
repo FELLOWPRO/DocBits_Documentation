@@ -1,76 +1,76 @@
-# Import
+# 导入
 
-<figure><img src="../../../../.gitbook/assets/ftp_0.png" alt="Import Settings"><figcaption><p>Import Settings Page</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ftp_0.png" alt="导入设置"><figcaption><p>导入设置页面</p></figcaption></figure>
 
-## Overview
+## 概述
 
-In the **Import** settings, you can configure document-specific options for importing, or set up automated imports via FTP or email. This page provides a detailed overview of all available settings.
+在 **导入** 设置中，您可以配置文档专属的导入选项，也可以通过 FTP 或电子邮件设置自动导入。本页详细介绍了所有可用设置。
 
-## How to Access
+## 如何访问
 
-1.  Navigate to **Settings** -> **Document Processing** -> **Import**
+1.  前往 **设置** -> **文档处理** -> **导入**
 
     <figure><img src="../../../../.gitbook/assets/ftp_0.png" alt=""><figcaption></figcaption></figure>
 
-## **Document Settings**
+## **文档设置**
 
-* **Restrict to pages**: This setting allows you to limit the processing to a certain number of pages per document. The default is **60 pages**, meaning documents exceeding this limit will be trimmed to **60 pages**, and any **remaining pages will be discarded.**
-* **Payment Terms Days**: Defines the default payment terms (in days) that can be applied to documents.
-* **Date Pattern**: Sets the pattern for how dates should be recognized and formatted within imported documents.
+* **限制页数**：此设置可限制每份文档的处理页数。默认值为 **60 页**，也就是说，超过此限制的文档会被截断至 **60 页**，**其余页面将被丢弃。**
+* **付款期限天数**：定义可应用于文档的默认付款期限（天数）。
+* **日期格式**：设置导入文档中日期的识别和格式化方式。
 
 <figure><img src="../../../../.gitbook/assets/document_settins_1.png" alt=""><figcaption></figcaption></figure>
 
-## **FTP Import**
+## **FTP 导入**
 
-### Requirements
+### 要求
 
-To use FTP for importing data automatically, ensure the following requirements are met:
+要使用 FTP 自动导入数据，请确保满足以下要求：
 
-* Correctly configured, Linux compatible FTP Server
-* FTP Hostname, Username and Password
-* Dedicated Import folder
+* 已正确配置且兼容 Linux 的 FTP 服务器
+* FTP 主机名、用户名和密码
+* 专用导入文件夹
 
-### Add new connection
+### 添加新连接
 
-1.  To add a new connection, click the **Add** button in the FTP section.
+1.  要添加新连接，请点击 FTP 区域中的 **添加** 按钮。
 
     <figure><img src="../../../../.gitbook/assets/ftp_7.png" alt=""><figcaption></figcaption></figure>
-2.  Enter your FTP credentials in the designated fields. The API Key field will be filled in automatically.
+2.  在指定字段中输入 FTP 凭据。API Key 字段会自动填充。
 
-    * **Type:** Specifies the FTP protocol to use. You can choose between **FTP**, **FTPS**, or **SFTP**.
-    * **Port:** Specifies the port number to be used for the selected FTP protocol.
-    * **Server Name (required):** The address of the server from which documents will be retrieved.
-    * **Username (required):** The login name used to access the FTP server.
-    * **Password (required):** The password associated with the username for accessing the FTP server.
-    * **File name matching patterns:** To specify which files to import based on their names.
-    * **Sub-Organizations:** Select which sub-organization the FTP import should apply to.
-    * **API Key (required):** This field will be automatically filled based on the organization you are logged into.
-    * **Primary Directory:** Specifies the directory on the FTP server from which files will be imported.
-    * **Import Directory:** Allows you to specify a subdirectory within the primary directory from which files will be imported.
-    * **Archive After Import:** Allows you to archive files after import. Once activated, you can specify the directory where files should be moved after a successful import.
-    * **Include Subfolder Files:** When enabled, subdirectories within the main directory will also be searched for files to import.
+    * **类型：**指定要使用的 FTP 协议。您可以选择 **FTP**、**FTPS** 或 **SFTP**。
+    * **端口：**指定所选 FTP 协议要使用的端口号。
+    * **服务器名称（必填）：**用于获取文档的服务器地址。
+    * **用户名（必填）：**用于访问 FTP 服务器的登录名。
+    * **密码（必填）：**与用户名关联、用于访问 FTP 服务器的密码。
+    * **文件名匹配模式：**指定根据文件名导入哪些文件。
+    * **子组织：**选择此 FTP 导入适用的子组织。
+    * **API Key（必填）：**此字段会根据您当前登录的组织自动填充。
+    * **主目录：**指定 FTP 服务器上用于导入文件的目录。
+    * **导入目录：**指定主目录下用于导入文件的子目录。
+    * **导入后归档：**允许您在导入后归档文件。启用后，您可以指定成功导入后文件要移至的目录。
+    * **包含子文件夹中的文件：**启用后，系统也会在主目录下的子目录中查找待导入文件。
 
     <figure><img src="../../../../.gitbook/assets/email_4.png" alt=""><figcaption></figcaption></figure>
-3. Once you have entered all the necessary details of your FTP, click **SAVE**.
-4. After saving your connection, you can activate it by clicking the three dots in the **Action** column of your connection, then selecting **Activate**.
+3. 输入所有必要的 FTP 连接信息后，点击 **保存**。
+4. 保存连接后，点击该连接 **操作** 列中的三个点，然后选择 **激活**，即可启用连接。
 
-### Actions for FTP
+### FTP 操作
 
-You can click the three dots in the **Action** column to access the following options for your connection:
+点击 **操作** 列中的三个点，可以访问以下连接选项：
 
 <figure><img src="../../../../.gitbook/assets/ftp_5.png" alt="" width="158"><figcaption></figcaption></figure>
 
-* **Test Connection:** Tests the connection to your FTP server.
-* **Connection Logs:** Opens the logs for your FTP connection, including error messages if any issues occur.
-* **Activate/Deactivate:** Activates/deactivates your connection.
-* **Edit:** Allows you to make changes to your connection.
-* **Delete:** Deletes your connection.
+* **测试连接：**测试与 FTP 服务器的连接。
+* **连接日志：**打开 FTP 连接日志；如果发生问题，日志中会显示错误消息。
+* **激活/停用：**激活或停用连接。
+* **编辑：**修改连接。
+* **删除：**删除连接。
 
-## **Email Import**
+## **电子邮件导入** <a id="email-import"></a>
 
-You can set up an email import that automatically imports documents from your inbox as soon as they arrive. You can choose to configure either an IMAP or an OAuth connection
+您可以设置电子邮件导入，在邮件到达收件箱后自动导入其中的文档。您可以选择配置 IMAP 或 OAuth 连接。
 
-<mark style="color:red;">**Note**</mark>: Only documents with the following file types will be imported:
+<mark style="color:red;">**注意**</mark>：仅导入以下文件类型的文档：
 
 * `.pdf`
 * `.tiff` / `.tif`
@@ -81,95 +81,95 @@ You can set up an email import that automatically imports documents from your in
 * `.purchaseorder`
 
 {% hint style="info" %}
-**How attachments are recognised**
+**如何识别附件**
 
-In addition to the file extensions listed above, DocBits also identifies a document by its **actual file content** (file signature), not only by the content type declared by the sending mail system. This matters for **forwarded** mails: intermediate mail servers/gateways frequently re-label an attachment with a generic type (`application/octet-stream`) instead of, for example, `application/pdf` or `application/xml`. DocBits still recognises and imports such attachments correctly.
+除了上述文件扩展名外，DocBits 还会根据文档的**实际文件内容**（文件签名）识别文档，而不只是依赖发送邮件系统声明的内容类型。这对于**转发的**邮件尤其重要：中间邮件服务器或网关经常会将附件重新标记为通用类型（`application/octet-stream`），而不是例如 `application/pdf` 或 `application/xml`。DocBits 仍可正确识别并导入此类附件。
 
-* **Forwarded `.eml`** messages and Outlook **`winmail.dat`** (TNEF) attachments are unpacked and the documents inside them are imported.
-* **XML encoding:** When an XML invoice is re-labelled with a generic type (`application/octet-stream`), DocBits recognises it by its `<?xml` declaration, tolerating a leading **UTF-8** or **UTF-16** (LE/BE) byte-order mark (BOM) — currently only these BOM encodings are auto-detected from content. An attachment that keeps a `.xml` filename is imported regardless of its encoding.
-* **Ignored:** inline images that ride along in a mail (signature logos / embedded graphics — PNG, JPG, GIF, BMP) are skipped silently and are **not** counted as failed imports.
+* **转发的 `.eml`** 邮件和 Outlook **`winmail.dat`**（TNEF）附件会被解包，其中的文档也会被导入。
+* **XML 编码：**如果 XML 发票被重新标记为通用类型（`application/octet-stream`），DocBits 会根据其 `<?xml` 声明识别该文件，并容许文件开头带有 **UTF-8** 或 **UTF-16**（LE/BE）字节顺序标记（BOM）——目前只会根据内容自动检测这些 BOM 编码。保留 `.xml` 文件名的附件无论采用何种编码都会被导入。
+* **忽略的文件：**邮件中附带的内嵌图片（签名徽标或嵌入的图形文件，如 PNG、JPG、GIF、BMP）会被静默跳过，且**不会**计为导入失败。
 
-If an attachment cannot be imported and the option **“Reply to this email if import can not be done”** is enabled for the inbound address, the configured reply address is notified.
+如果附件无法导入，且已为入站地址启用 **“Reply to this email if import can not be done”** 选项，系统会通知已配置的回复地址。
 {% endhint %}
 
-### Add new IMAP connection
+### 添加新的 IMAP 连接
 
-1.  To add a new IMAP connection, click the **Add** button in the **Email Import** section.
+1.  要添加新的 IMAP 连接，请点击 **电子邮件导入** 区域中的 **添加** 按钮。
 
     <figure><img src="../../../../.gitbook/assets/email_1.png" alt=""><figcaption></figcaption></figure>
-2. Select IMAP as the protocol.
-3. Enter your email credentials in the designated fields. The API Key field will be filled automatically.
-   * **Encryption:** Select the type of encryption to use — either **SSL** or **TLS**.
-   * **Server name:** The address of the email server.
-   * **Username:** The identifier used for your mail import configuration in DocBits.
-   * **E-mail:** The email address used for importing documents into the system.
-   * **Password:** The password associated with the provided email address.
-   * **Sub-Organizations:** Select the sub-organization to which the email import should apply.
-   * **API Key:** This field will be automatically filled based on the organization you are logged into.
-   * **Send Import Error Notice to this Email Address:** Specify an email address to receive error notifications if something goes wrong during the import process.
-   * **Port:** Specifies the port number to be used for the selected email import configuration.
-   * **Folder:** Select a folder from which the documents will be imported.\
-     <mark style="color:red;">**Note**</mark>: The **Folder** option becomes available only after you have successfully created an IMAP connection. To add a folder after creation, click the three dots in the **Action** column, then select **Edit**. The option should now be available.
-   * **Move Emails to Other Folder:** When enabled, allows you to specify a folder where emails will be moved after a successful import.\
-     <mark style="color:red;">**Note**</mark>: The **Move Emails to Other Folder** option becomes available only after you have successfully created an IMAP connection. To activate this setting, click the three dots in the **Action** column, then select **Edit**. The option should now be available.
-   * **Merge Attached Documents:** Combines multiple attached documents into a single document.
-   * **Send Email to Sender after Import:** Sends a confirmation email to the original sender after the import is complete. Once activated, you can specify the subject and body of the email.
-   * **Block Duplicate Filename Import:** Prevents import if a document with the same name already exists.
-4. After saving your connection, you can activate it by clicking the three dots in the **Action** column of your connection, then selecting **Activate**.
+2. 选择 IMAP 作为协议。
+3. 在指定字段中输入电子邮件凭据。API Key 字段会自动填充。
+   * **加密：**选择要使用的加密类型：**SSL** 或 **TLS**。
+   * **服务器名称：**电子邮件服务器的地址。
+   * **用户名：**在 DocBits 中用于标识邮件导入配置的名称。
+   * **电子邮件：**用于向系统导入文档的电子邮件地址。
+   * **密码：**与所提供电子邮件地址关联的密码。
+   * **子组织：**选择此电子邮件导入适用的子组织。
+   * **API Key：**此字段会根据您当前登录的组织自动填充。
+   * **将导入错误通知发送至此电子邮件地址：**指定接收导入过程中错误通知的电子邮件地址。
+   * **端口：**指定所选电子邮件导入配置要使用的端口号。
+   * **文件夹：**选择用于导入文档的文件夹。\
+     <mark style="color:red;">**注意**</mark>：只有成功创建 IMAP 连接后，**文件夹**选项才会显示。创建后要添加文件夹，请点击 **操作** 列中的三个点，然后选择 **编辑**。此时该选项应会显示。
+   * **将邮件移至其他文件夹：**启用后，可以指定成功导入后要将邮件移至的文件夹。\
+     <mark style="color:red;">**注意**</mark>：只有成功创建 IMAP 连接后，**将邮件移至其他文件夹**选项才会显示。要启用此设置，请点击 **操作** 列中的三个点，然后选择 **编辑**。此时该选项应会显示。
+   * **合并附件文档：**将多个附件合并为一份文档。
+   * **导入后向发件人发送电子邮件：**导入完成后，向原始发件人发送确认邮件。启用后，您可以指定邮件的主题和正文。
+   * **阻止导入重复文件名：**如果已存在同名文档，则阻止导入。
+4. 保存连接后，点击该连接 **操作** 列中的三个点，然后选择 **激活**，即可启用连接。
 
-### Actions for IMAP
+### IMAP 操作
 
-You can click the three dots in the **Action** column to access the following options for your connection:
+点击 **操作** 列中的三个点，可以访问以下连接选项：
 
 <figure><img src="../../../../.gitbook/assets/email_7.png" alt="" width="145"><figcaption></figcaption></figure>
 
-* **Test Connection:** Tests the connection to your IMAP client.
-* **Connection Logs:** Opens the logs for your email connection, including any error messages that occur during the process.
-* **Import Log:** Opens the logs of past imports for the respective connection, including any error messages that occurred during the process.
-* **Activate/Deactivate:** Activates/deactivates your connection.
-* **Edit:** Allows you to make changes to your connection.
-* **Delete:** Deletes your connection.
+* **测试连接：**测试与 IMAP 客户端的连接。
+* **连接日志：**打开电子邮件连接日志，其中包含过程中出现的错误消息。
+* **导入日志：**打开相应连接以往导入记录的日志，其中包含过程中出现的错误消息。
+* **激活/停用：**激活或停用连接。
+* **编辑：**修改连接。
+* **删除：**删除连接。
 
-### Add new OAuth Office365 connection
+### 添加新的 OAuth Office365 连接
 
-1.  To add a new OAuth Office365 connection, click the **Add** button in the **Email Import** section.
+1.  要添加新的 OAuth Office365 连接，请点击 **电子邮件导入** 区域中的 **添加** 按钮。
 
     <figure><img src="../../../../.gitbook/assets/email_1.png" alt=""><figcaption></figcaption></figure>
-2.  Select **OAuth Office365** as the protocol, then click on **Authenticate**.
+2.  选择 **OAuth Office365** 作为协议，然后点击 **Authenticate**。
 
     <figure><img src="../../../../.gitbook/assets/email_3.png" alt=""><figcaption></figcaption></figure>
-3.  You will be redirected to a Microsoft page where you’ll be asked to enter a code. To retrieve this code, return to DocBits—the code will be displayed there, as shown below. Copy the code and enter it on the Microsoft page. Afterward, you will be prompted to enter your Microsoft credentials.
+3.  您将被重定向到 Microsoft 页面，系统会要求您输入代码。要获取代码，请返回 DocBits，代码会显示在那里，如下图所示。复制代码并在 Microsoft 页面中输入。随后，系统会提示您输入 Microsoft 凭据。
 
     <figure><img src="../../../../.gitbook/assets/email_4.png" alt=""><figcaption></figcaption></figure>
-4. Follow the steps on the Microsoft page. Once you're done, return to DocBits and click **Finish Authentication**.
-5.  You can now configure the following settings:
+4. 按照 Microsoft 页面上的步骤操作。完成后，返回 DocBits 并点击 **Finish Authentication**。
+5.  您现在可以配置以下设置：
 
-    * **Sub-Organizations:** Select the sub-organization to which the email import should apply.
-    * **Use Folder:** Select a folder from which the documents will be imported.
-    * **Use Shared Mailbox:** Specify the shared email address from which documents should be imported.
-    * **Move Email to other folder:** Specify a folder to which emails should be moved after a successful import.
-    * **Send Import Error Notice to this Email-Address:** Specify an email address to receive error notifications if something goes wrong during the import process.
+    * **子组织：**选择此电子邮件导入适用的子组织。
+    * **使用文件夹：**选择用于导入文档的文件夹。
+    * **使用共享邮箱：**指定要从中导入文档的共享电子邮件地址。
+    * **将邮件移至其他文件夹：**指定成功导入后要将邮件移至的文件夹。
+    * **将导入错误通知发送至此电子邮件地址：**指定接收导入过程中错误通知的电子邮件地址。
 
     <figure><img src="../../../../.gitbook/assets/email_5.png" alt=""><figcaption></figcaption></figure>
-6. Once you’ve configured the desired behavior, you can either start importing emails by clicking **Import** or save your changes by clicking **Save**.
-7. After saving your connection, you can activate it by clicking the three dots in the **Action** column of your connection, then selecting **Activate**.
+6. 配置所需行为后，您可以点击 **Import** 开始导入电子邮件，或点击 **Save** 保存更改。
+7. 保存连接后，点击该连接 **操作** 列中的三个点，然后选择 **激活**，即可启用连接。
 
-### Actions for OAuth Office365
+### OAuth Office365 操作
 
-You can click the three dots in the **Action** column to access the following options for your connection:
+点击 **操作** 列中的三个点，可以访问以下连接选项：
 
 <figure><img src="../../../../.gitbook/assets/email_6.png" alt="" width="148"><figcaption></figcaption></figure>
 
-* **Connection Logs:** Opens the logs for your email connection, including any error messages that occur during the process.
-* **Import Log:** Opens the logs of past imports for the respective connection, including any error messages that occurred during the process.
-* **Activate/Deactivate:** Activates/deactivates your connection.
-* **Edit:** Allows you to make changes to your connection.
-* **Delete:** Deletes your connection.
+* **连接日志：**打开电子邮件连接日志，其中包含过程中出现的错误消息。
+* **导入日志：**打开相应连接以往导入记录的日志，其中包含过程中出现的错误消息。
+* **激活/停用：**激活或停用连接。
+* **编辑：**修改连接。
+* **删除：**删除连接。
 
-### Import Log
+### 导入日志
 
-You can view the import log of all created email connections, including any error messages that occurred during the process, by clicking the **Import Log** button in the top-right corner of the Email Import section.
+点击电子邮件导入区域右上角的 **导入日志** 按钮，即可查看所有已创建电子邮件连接的导入日志，其中包含过程中出现的错误消息。
 
 <figure><img src="../../../../.gitbook/assets/email_8.png" alt=""><figcaption></figcaption></figure>
 
-You can filter the logs by subject or sender, sort columns in ascending or descending order by clicking the column headers, and rearrange columns using drag-and-drop.
+您可以按主题或发件人筛选日志，点击列标题可按升序或降序排列列，也可以通过拖放重新排列列。

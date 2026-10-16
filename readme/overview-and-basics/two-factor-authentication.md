@@ -1,100 +1,100 @@
-# Two-Factor Authentication (2FA)
+# 双重身份验证（2FA）
 
-## Overview
+## 概述
 
-Two-Factor Authentication (2FA) adds a second step to your login. After your password, DocBits asks for a second factor that only you have — a code from an authenticator app, a code emailed to you, or a passkey (Touch ID, Windows Hello, YubiKey, 1Password). Even if someone learns your password, they cannot sign in without that second factor.
+双重身份验证（2FA）会在登录时增加第二个步骤。输入密码后，DocBits 会要求你提供只有你拥有的第二种验证方式：身份验证器应用中的验证码、发送到你邮箱的验证码，或通行密钥（Touch ID、Windows Hello、YubiKey、1Password）。即使有人得知了你的密码，没有第二种验证方式也无法登录。
 
-2FA is **optional for each user** and can be **required by your organisation's administrator**. Single sign-on (SSO) logins (Google, Microsoft, SAML) are exempt — your identity provider already enforces its own MFA.
+2FA 对**每位用户均为可选**，也可以由**组织管理员设为必需**。单点登录（SSO）登录方式（Google、Microsoft、SAML）不受此要求限制，因为你的身份提供方已实施自己的 MFA。
 
-You can enrol more than one method. The methods DocBits supports are:
+你可以注册多种验证方式。DocBits 支持以下方式：
 
-* **Authenticator app (TOTP)** — Google Authenticator, Microsoft Authenticator, 1Password, Authy, etc.
-* **Email code** — a 6-digit code sent to your account email.
-* **Passkey (WebAuthn/FIDO2)** — Touch ID, Windows Hello, a hardware key (YubiKey), or a password manager.
+* **身份验证器应用（TOTP）** — Google Authenticator、Microsoft Authenticator、1Password、Authy 等。
+* **邮箱验证码** — 发送到你账户邮箱的 6 位验证码。
+* **通行密钥（WebAuthn/FIDO2）** — Touch ID、Windows Hello、硬件密钥（YubiKey）或密码管理器。
 
-When you turn on your first factor, DocBits also gives you **ten backup codes** to use if you ever lose access to your method.
+启用第一种验证方式时，DocBits 还会提供**十个备用码**，以便你在无法使用验证方式时登录。
 
-## Where to find it
+## 查找位置
 
-Open your **profile / account settings** (top-right account menu → **Edit profile**) and select **Two-factor authentication**. The 2FA dialog shows your current status and the methods you can add.
+打开你的**个人资料 / 账户设置**（右上角账户菜单 → **编辑个人资料**），然后选择**双重身份验证**。2FA 对话框会显示当前状态以及可添加的验证方式。
 
-<figure><img src="../.gitbook/assets/mfa-2fa-dialog.png" alt="The Two-factor authentication dialog"><figcaption><p>The Two-factor authentication dialog. From here you can enable an authenticator app, email verification, add a passkey, or open <strong>Manage</strong>.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/mfa-2fa-dialog.png" alt="双重身份验证对话框"><figcaption><p>双重身份验证对话框。在此处可以启用身份验证器应用、邮箱验证、添加通行密钥，或打开<strong>管理</strong>。</p></figcaption></figure>
 
-## Set up an authenticator app (TOTP)
+## 设置身份验证器应用（TOTP）
 
-1. In the 2FA dialog, click **Enable 2FA**.
-2. Scan the QR code with your authenticator app (Google Authenticator, 1Password, Authy, …). If you cannot scan, use the **manual key** shown below the QR code.
-3. Enter the 6-digit code your app shows and confirm.
-4. DocBits enables 2FA and shows your **backup codes** (see below).
+1. 在 2FA 对话框中，点击**启用 2FA**。
+2. 使用身份验证器应用扫描二维码（Google Authenticator、1Password、Authy 等）。如果无法扫描，请使用二维码下方显示的**手动密钥**。
+3. 输入应用显示的 6 位验证码并确认。
+4. DocBits 会启用 2FA 并显示你的**备用码**（见下文）。
 
-<figure><img src="../.gitbook/assets/mfa-totp-setup.png" alt="The authenticator-app setup screen with QR code"><figcaption><p>Scan the QR code with your authenticator app, or enter the manual key. Then confirm with the 6-digit code the app shows.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/mfa-totp-setup.png" alt="显示二维码的身份验证器应用设置页面"><figcaption><p>使用身份验证器应用扫描二维码，或输入手动密钥。然后输入应用显示的 6 位验证码进行确认。</p></figcaption></figure>
 
-## Set up email verification
+## 设置邮箱验证
 
-1. In the 2FA dialog, click **Enable email verification**.
-2. DocBits emails a 6-digit code to your account address.
-3. Enter the code to confirm. Email verification is now on.
+1. 在 2FA 对话框中，点击**启用邮箱验证**。
+2. DocBits 会向你的账户邮箱发送一封包含 6 位验证码的邮件。
+3. 输入验证码进行确认。邮箱验证现已启用。
 
-## Add a passkey
+## 添加通行密钥
 
-1. In the 2FA dialog, click **Add a passkey**.
-2. Your browser or device prompts you to confirm with Touch ID, Windows Hello, a hardware key, or your password manager.
-3. The passkey is saved. You can add several passkeys and rename or remove them later.
+1. 在 2FA 对话框中，点击**添加通行密钥**。
+2. 浏览器或设备会提示你使用 Touch ID、Windows Hello、硬件密钥或密码管理器进行确认。
+3. 通行密钥已保存。你可以添加多个通行密钥，之后也可以为它们重命名或将其移除。
 
-## Backup codes
+## 备用码
 
-When you enable your **first** factor, DocBits shows **ten backup codes** — **once**. Each code works a single time and lets you sign in if you lose your authenticator or phone.
+启用**第一种**验证方式时，DocBits 会**仅显示一次****十个备用码**。每个备用码只能使用一次；如果无法使用身份验证器或手机，你可以用备用码登录。
 
-* Save them somewhere safe (a password manager is ideal).
-* You can generate a fresh set any time with **Regenerate backup codes** (this invalidates the old set).
+* 将备用码保存在安全的地方（密码管理器是理想选择）。
+* 你可以随时使用**重新生成备用码**创建一组新码（旧码将失效）。
 
-<figure><img src="../.gitbook/assets/mfa-backup-codes.png" alt="The backup codes screen"><figcaption><p>Your ten backup codes, shown once. Each works a single time — store them somewhere safe.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/mfa-backup-codes.png" alt="备用码页面"><figcaption><p>你的十个备用码，仅显示一次。每个码只能使用一次，请将它们保存在安全的地方。</p></figcaption></figure>
 
 {% hint style="warning" %}
-Backup codes are shown only at the moment they are generated. DocBits cannot show them again — store them immediately.
+备用码只会在生成时显示。DocBits 无法再次显示这些备用码，请立即保存。
 {% endhint %}
 
-## Signing in with 2FA
+## 使用 2FA 登录
 
-1. Enter your email and password as usual.
+1. 像往常一样输入邮箱和密码。
 
-    <figure><img src="../.gitbook/assets/mfa-login.png" alt="The DocBits login screen"><figcaption><p>The login screen. You can also sign in without a password using <strong>Sign in with a passkey</strong>.</p></figcaption></figure>
-2. DocBits asks for your second factor. Choose your method:
-   * **Authenticator** — type the current 6-digit code from your app.
-   * **Email** — click **Email me a code** to receive a code by email, then type it in.
-   * **Passkey** — click **Use a passkey** and confirm with Touch ID / Windows Hello / your key.
-   * **Backup code** — if you cannot use your usual method.
+    <figure><img src="../.gitbook/assets/mfa-login.png" alt="DocBits 登录页面"><figcaption><p>登录页面。你也可以点击<strong>使用通行密钥登录</strong>，无需密码即可登录。</p></figcaption></figure>
+2. DocBits 会要求你提供第二种验证方式。选择一种方式：
+   * **身份验证器** — 输入应用当前显示的 6 位验证码。
+   * **邮箱** — 点击**通过邮件发送验证码**接收验证码，然后输入验证码。
+   * **通行密钥** — 点击**使用通行密钥**，并使用 Touch ID / Windows Hello / 密钥进行确认。
+   * **备用码** — 如果无法使用常用验证方式，请使用备用码。
 
-    <figure><img src="../.gitbook/assets/mfa-challenge.png" alt="The second-factor challenge screen"><figcaption><p>After your password, DocBits asks for your second factor. Switch method with <strong>Use a passkey</strong> or <strong>Email me a code</strong>, and optionally trust the device for 30 days.</p></figcaption></figure>
-3. On success you are signed in.
+    <figure><img src="../.gitbook/assets/mfa-challenge.png" alt="第二步验证页面"><figcaption><p>输入密码后，DocBits 会要求你提供第二种验证方式。点击<strong>使用通行密钥</strong>或<strong>通过邮件发送验证码</strong>切换方式；你也可以选择信任此设备 30 天。</p></figcaption></figure>
+3. 验证成功后，你便会登录。
 
-### What the email code looks like
+### 邮箱验证码的样式
 
-If you choose **Email**, DocBits sends a message with a 6-digit code that expires in 10 minutes:
+如果选择**邮箱**，DocBits 会发送一封包含 6 位验证码的邮件，该验证码会在 10 分钟后过期：
 
-<figure><img src="../.gitbook/assets/mfa-email-otp.png" alt="The DocBits verification-code email"><figcaption><p>The verification-code email. The code expires after 10 minutes and can be used once.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/mfa-email-otp.png" alt="DocBits 验证码邮件"><figcaption><p>验证码邮件。验证码在 10 分钟后过期，且只能使用一次。</p></figcaption></figure>
 
-## Trust this device
+## 信任此设备
 
-On the second-factor screen you can tick **Remember this device**. DocBits then skips the 2FA step on that device for **30 days**. The trust is dropped automatically when you change your password, and you can revoke it yourself at any time (see below).
+在第二步验证页面，你可以勾选**记住此设备**。此后 2FA 将在这台设备上跳过**30 天**。更改密码后，系统会自动取消对该设备的信任；你也可以随时自行撤销信任（见下文）。
 
-## Manage your passkeys and trusted devices
+## 管理通行密钥和受信任设备
 
-Open the 2FA dialog and click **Manage** to review what is enrolled.
+打开 2FA 对话框并点击**管理**，即可查看已注册的验证方式。
 
-* **Passkeys** — rename a passkey (click its name) or delete it. Deleting your last remaining factor turns 2FA off.
-* **Trusted devices** — revoke a single device, or **Revoke all devices** to force a fresh 2FA prompt everywhere.
+* **通行密钥** — 点击通行密钥名称即可重命名，也可以将其删除。删除最后一个剩余的验证方式会关闭 2FA。
+* **受信任设备** — 撤销对单台设备的信任，或点击**撤销所有设备**，以便在所有设备上重新触发 2FA 验证。
 
-<figure><img src="../.gitbook/assets/mfa-passkeys-list.png" alt="Managing enrolled passkeys and trusted devices"><figcaption><p>The Manage view lists your enrolled passkeys and trusted devices, where you can rename or remove them.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/mfa-passkeys-list.png" alt="管理已注册的通行密钥和受信任设备"><figcaption><p>管理视图会列出已注册的通行密钥和受信任设备，你可以在此重命名或移除它们。</p></figcaption></figure>
 
-## Turn 2FA off
+## 关闭 2FA
 
-In the 2FA dialog click **Disable 2FA** and confirm with a current authenticator code or a backup code. Turning 2FA off also clears your backup codes and revokes your trusted devices.
+在 2FA 对话框中点击**禁用 2FA**，然后使用当前的身份验证器验证码或备用码进行确认。关闭 2FA 也会清除你的备用码并撤销对受信任设备的信任。
 
 {% hint style="info" %}
-If your organisation **requires** MFA, you cannot log in with a password until at least one factor is set up. Ask your administrator if you are unsure whether MFA is mandatory for your organisation.
+如果你的组织**要求**使用 MFA，那么在设置至少一种验证方式之前，你无法使用密码登录。如果不确定组织是否强制要求 MFA，请咨询管理员。
 {% endhint %}
 
-## Passwordless sign-in (optional)
+## 无密码登录（可选）
 
-Once you have a passkey, you can sign in **without typing your password** using **Sign in with a passkey** on the login screen. Your password keeps working as a fallback. Passwordless requires the passkey to verify you (Touch ID / Windows Hello / PIN), so it is both quicker and phishing-resistant.
+设置通行密钥后，你可以在登录页面点击**使用通行密钥登录**，**无需输入密码**即可登录。密码仍可用作备用方式。无密码登录需要通过通行密钥验证你的身份（Touch ID / Windows Hello / PIN），因此速度更快，也能抵御网络钓鱼。

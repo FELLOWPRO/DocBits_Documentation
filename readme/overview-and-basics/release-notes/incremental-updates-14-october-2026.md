@@ -1,266 +1,268 @@
-# VESTA Hotfix — 14 October 2026
+# VESTA 热修复版本 — 2026 年 10 月 14 日
 
-> **Release channel:** VESTA · **Release:** R1.0.15.
+> **发布渠道：** VESTA · **版本：** R1.0.15。
 >
-> **Comparing with NOVA?** The [NOVA major-release feature comparison](nova-major-release.md#what-nova-adds-for-customers) covers the Validation Assistant, reviewed automation improvements, expanded e-invoice reports, new import controls and other additions beyond this VESTA release.
+> **与 NOVA 对比？** [NOVA 主要版本功能对比](nova-major-release.md#what-nova-adds-for-customers) 涵盖了验证助手、已审核的自动化改进、扩展的电子发票报告、新的导入控制以及此 VESTA 版本之外的其他新增内容。
 >
-> **Next VESTA hotfix: [11 November 2026 (planned)](vesta-hotfix-11-november-2026.md).** All features previously available as beta in VESTA are now regular NOVA features and will become regular VESTA features with that hotfix.
+> **下一个 VESTA 热修复版本：[2026 年 11 月 11 日（计划中）](vesta-hotfix-11-november-2026.md)。** 所有之前在 VESTA 中作为 Beta 提供的功能现在都是 NOVA 的常规功能，并将随该热修复版本成为 VESTA 的常规功能。
 
-_What changes in the DocBits production hotfix on 14 October 2026 (release
-R1.0.15), covering everything since the [15 September hotfix](incremental-updates-15-september-2026.md).
-Each service lists the version being deployed, then what's new or fixed in
-plain language. Services not listed had no customer-facing changes._
+_2026 年 10 月 14 日 DocBits 生产环境热修复版本（版本
+R1.0.15）中的变更，涵盖自 [9 月 15 日热修复版本](incremental-updates-15-september-2026.md) 以来的所有内容。
+每个服务列出正在部署的版本，然后以通俗易懂的语言说明
+新增或修复的内容。未列出的服务没有面向客户的变更。_
+
+发布概览视频（英文）：
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/release-notes/2026-10-14/en.mp4" %}
 
 ---
 
-## Highlights
+## 亮点
 
-- **The Settings Assistant.** A chat bar on every settings page answers
-  questions about your organisation's setup, in your language and from the
-  DocBits documentation. It reads the current state of your settings and
-  explains them (group permissions, import channels, purchase order switches,
-  accounting). When you ask it to switch something on or off, it shows a
-  preview first, waits for your confirmation, and offers an undo. "Open
-  setting" jumps straight to the setting, even inside a collapsed section, and
-  highlights it. Organisation admins turn the assistant on or off on Company
-  Information. It only answers DocBits questions and never changes anything
-  without confirmation.
-- **New AI tiers.** The Fast and Full tiers run on new models. A new Auto tier
-  picks Fast or Full per document, and Nexus Flash joins Nexus. A vision mode
-  (hybrid or auto) decides when the page image is sent along. Stored AI model
-  preferences move to the new tiers on their own, and screens show tier names
-  only. "Use AI" is a dropdown (Standard, Yes, No) with a preview of what
-  structured extraction will request.
-- **Header field check.** The validation screen has a "Header field check"
-  button next to Save. Its report lists every header field with where the value
-  came from (AI, rule, script or master data), a compact table with source
-  filter, search and sorting, and the same field labels as the validation
-  screen. The origin popup shows the source of each value in one strip.
-- **Sign-in and organisation security.** An MFA challenge can be used once on
-  every sign-in path, and enrolling an authenticator needs the e-mail code.
-  Organisations own a list of verified e-mail domains; a social login (for
-  example Microsoft) joins the organisation that lists the domain and never
-  creates an organisation, user or subscription by itself. Only organisation
-  admins change organisation preferences and write or approve purchase order
-  match rules. Cached answers can no longer leak across organisations.
-- **Purchase order matching and charges.** Charges the purchase order expects
-  as zero get an absolute floor, charge tolerance also applies to charges the
-  order does not budget, and one field can list several costing elements whose
-  amounts are split in proportion to the purchase order. A match column can
-  carry an "allow mismatch" flag. Workflow cards compare charges per list, and
-  the workflow execution limit rises from 30 to 50.
-- **Fewer wrong numbers.** Amounts show in each user's personal format
-  (Switzerland and Slovenia included), date-only values keep their calendar day
-  in every timezone, the US total equation accounts for additional amounts and
-  multi-tax invoices, and documents with 0.00 header amounts no longer fall
-  into the wrong candidate pass.
-
----
-
-## Also fixed in this release
-
-- The dashboard no longer stays empty when a race sets the sub-organisation
-  filter to the organisation id and thereby excludes every document.
-- Dimension values can be selected again for every user.
-- A customer-reported upload error is fixed.
-- "Match on total" works for suppliers whose invoice has a single line, and
-  for the supplier setups that reported it.
-- SPS e-documents: the 810 charges are adjusted, the 855 charges layout is
-  updated, and the customer logo in the e-document preview is corrected.
+- **设置助手。** 每个设置页面上的聊天栏可回答
+  有关您组织设置的问题，使用您的语言并基于
+  DocBits 文档。它读取您设置的当前状态并
+  进行解释（组权限、导入通道、采购订单开关、
+  会计）。当您要求它开启或关闭某项功能时，它会先显示
+  预览，等待您的确认，并提供撤销选项。“打开
+  设置”可直接跳转到该设置，即使它在折叠部分内，并
+  高亮显示目标设置。组织管理员可在“公司信息”中开启或关闭助手。
+  助手仅回答 DocBits 相关问题，且任何设置更改都需要
+  您事先确认。
+- **新 AI 层级。** Fast 和 Full 层级运行在新模型上。新的 Auto 层级
+  为每个文档选择 Fast 或 Full，Nexus Flash 加入 Nexus。视觉模式
+  （混合或自动）决定何时发送页面图像。存储的 AI 模型
+  偏好设置会自动迁移至新的层级，界面仅显示层级名称。
+  “使用 AI”是一个下拉菜单（标准、是、否），并预览结构化提取
+  将请求的内容。
+- **表头字段检查。** 验证界面在“保存”按钮旁设有“表头字段检查”
+  按钮。其报告列出每个表头字段及其值的来源
+  （AI、规则、脚本或主数据），包含一个带有来源
+  筛选、搜索和排序功能的紧凑表格，以及验证界面
+  中相同的字段标签。来源弹窗在单一条带中显示每个值的来源。
+- **登录与组织安全。** MFA 挑战可在每个
+  登录路径上使用一次，注册身份验证器需要电子邮件验证码。
+  组织拥有已验证电子邮件域名列表；社交登录（例如
+  Microsoft）会加入列出该域名的组织，且绝不会自行
+  创建组织、用户或订阅。只有组织
+  管理员可以更改组织偏好设置，以及编写或批准采购订单
+  匹配规则。缓存答案不再跨组织泄露。
+- **采购订单匹配与费用。** 采购订单预期为零的费用
+  设有绝对下限，费用容差也适用于订单
+  未预算的费用，且一个字段可以列出多个成本要素，其
+  金额按采购订单比例拆分。匹配列可以
+  带有“允许不匹配”标志。工作流卡片按列表比较费用，且
+  工作流执行限制从 30 提高到 50。
+- **减少错误数字。** 金额以每个用户的个人格式显示
+  （包括瑞士和斯洛文尼亚），仅日期值在每个时区保持其日历日
+  不变，美国总额公式考虑了额外金额和
+  多税种发票，且表头金额为 0.00 的文档不再落入
+  错误的候选通过项。
 
 ---
 
-## Web App — `10.78.9.4`
+## 本版本中修复的其他问题
 
-**Settings Assistant**
-- A right-side chat drawer with a toggle sits on all settings pages. The
-  conversation survives page changes, is capped at 20 messages, and shows the
-  changes it applied with an undo.
-- Greets you with questions that fit the current settings page and shows
-  setting cards with an on/off switch. Esc closes menus first, Stop aborts a
-  running answer, and screenshots in answers open in a lightbox.
-- Applying a change opens a dialog with preview, confirm and undo.
-- Every setting is searchable from the sidebar, and the found setting is
-  highlighted in a different colour. "Open setting" scrolls to the target
-  inside a collapsed accordion.
-- An organisation admin switch for the assistant sits on Company Information.
-- AI advice is attributed to Nova, and only tier names appear, never model ids.
-
-**Validation screen and document handling**
-- New "Header field check" button with report, per-field origin and help page
-  (see Highlights). Source labels and status chips stay inside their cells.
-- The "from master data" text badges next to field labels are gone; the origin
-  popup carries that information.
-- One shared field validation runs everywhere, which removes the generic "One
-  or more fields need validation" error after Auto Accounting.
-- Tooltips on the field popup buttons (Delete, Clear, Confirm) say what each
-  does before you click.
-- An optimistic row now shows what was stored, not what was typed. A column
-  remap asks for confirmation only when a visible column loses its mapping.
-- Pages past the OCR page limit are read-only and marked, in the Auto
-  Accounting viewer too. The old import page-restriction panel is retired.
-- A PO table appears for every purchase order number in a multi-PO header
-  field, and the Layout Builder labels PO tabs from the PO table key and no
-  longer reports the module as disabled when the PO table is on.
-- The proposal card prints the tolerance instead of `[object Object]`, and the
-  Approval compare screen stops rounding configured comparison columns (item
-  numbers).
-
-**Accounts, settings and errors**
-- Every error toast and login error shows the trace id of the failed request,
-  so support can find it. Dashboard WebSocket errors reject exactly the request
-  they name.
-- Company Information lists the organisation's e-mail domains.
-- Admins can re-send the "Set your password" e-mail from the user page.
-- Global admins set the contract start in the subscription table.
-- Org admins see the Executive Dashboard tab and the XSLT add and delete
-  buttons. Members save layouts as their own preference.
-- A session without an organisation gets a clear error and the organisation
-  picker instead of an empty dashboard.
-- Amounts follow the user's personal number format, and date-only values keep
-  their day in every timezone.
-- Master data sends sub-organisation ids only when they differ from the
-  organisation id, and custom master data headers go out as headers.
-- The Tables mask no longer clips the "Use AI" dropdown, the AI hint text no
-  longer covers the training line, and the AI table keeps its direct Apply
-  button, with an icon-only header check and a licence message.
-- Table extraction icons render again after the old icon font was removed.
-
-**Tasks board**
-- The board loads its first page with fewer duplicate requests, Enter runs the
-  search at once, late answers are matched to the right search, the footer shows
-  the real hit count instead of the page capacity, and a delete started in one
-  organisation is cancelled before it is sent when you switch organisation.
+- 修复了仪表板空白的问题：此前，竞态条件可能将子组织筛选器
+  错误地设为组织 ID，导致所有文档被排除。
+- 所有用户均可再次选择维度值。
+- 修复了客户报告的上传错误。
+- “按总额匹配”适用于发票仅有一行的供应商，以及
+  报告此问题的供应商设置。
+- SPS 电子文档：调整了 810 费用，更新了 855 费用布局，
+  并修正了电子文档预览中的客户徽标。
 
 ---
 
-## API Service — `12.83.293`
+## Web 应用 — `10.78.9.4`
 
-**Settings Assistant and MCP**
-- Chat endpoint with guardrails: only DocBits questions, no change without
-  confirmation, unclear or meta questions get help instead of a refusal, and
-  answers stream cards first, then text.
-- Read-only building blocks for every settings area (group permissions, import
-  channels, PO matching, accounting, e-mail domains), a catalogue of deep links
-  with a find-setting tool, and doc search with images from the DocBits docs.
-- Wave 1 apply flow: preview, confirm and undo for supported settings, one
-  scope rule for all three, safe against double confirmation and expiry.
-- MCP tools never read files from the server in remote mode, and fixture and
-  lab tools run on dev only.
+**设置助手**
+- 所有设置页面右侧都有一个带切换开关的聊天抽屉。
+  对话在页面切换后保留，上限为 20 条消息，并显示
+  其应用的更改及撤销选项。
+- 以适合当前设置页面的问题问候用户，并显示
+  带有开/关开关的设置卡片。Esc 键首先关闭菜单，停止按钮中止
+  正在运行的回答，回答中的截图在灯箱中打开。
+- 应用更改会打开一个包含预览、确认和撤销的对话框。
+- 每个设置均可从侧边栏搜索，找到的设置
+  以不同颜色高亮显示。“打开设置”会滚动到折叠手风琴内的目标
+  位置。
+- 组织管理员可在“公司信息”页面切换助手功能。
+- AI 建议归属于 Nova，仅显示层级名称，绝不显示模型 ID。
+
+**验证界面与文档处理**
+- 新增“表头字段检查”按钮，包含报告、逐字段来源及帮助页面
+  （见亮点部分）。来源标签和状态芯片保留在各自单元格内。
+- 字段标签旁的“来自主数据”文本徽章已移除；该信息现由
+  来源弹窗承载。
+- 统一的字段验证逻辑在所有位置运行，从而消除了自动记账后出现的通用
+  “一个或多个字段需要验证”错误。
+- 字段弹窗按钮（删除、清除、确认）上的工具提示会在点击前说明
+  每个按钮的功能。
+- 乐观行现在显示已存储的内容，而非输入的内容。仅在可见列失去映射时，
+  列重映射才会请求确认。
+- 超过 OCR 页数限制的页面为只读并带有标记，在自动
+  记账查看器中也是如此。旧的导入页面限制面板已停用。
+- 对于多采购订单表头字段中的每个采购订单号，都会显示一个采购订单表格，且布局构建器
+  根据采购订单表格键对采购订单选项卡进行标签标注，当采购订单表格启用时，
+  不再报告模块为禁用状态。
+- 提案卡片打印容差值而非 `[object Object]`，且
+  审批比较界面停止对配置的比较列（项目
+  编号）进行四舍五入。
+
+**账户、设置和错误**
+- 每个错误提示和登录错误都会显示失败请求的跟踪 ID，
+  以便支持团队查找。Dashboard WebSocket 错误仅拒绝其指定的
+  请求。
+- “公司信息”列出组织的电子邮件域名。
+- 管理员可从用户页面重新发送“设置您的密码”电子邮件。
+- 全局管理员在订阅表中设置合同开始日期。
+- 组织管理员可见“执行仪表板”选项卡以及 XSLT 添加和删除
+  按钮。成员将布局保存为其个人偏好。
+- 没有关联组织的会话会收到清晰的错误提示，并显示组织
+  选择器，而不是空的仪表板。
+- 金额遵循用户的个人数字格式，且仅日期值在所有时区中
+  保持其日期不变。
+- 主数据仅在子组织 ID 与组织 ID 不同时才发送子组织 ID，且自定义主数据
+  标题作为标题发送。
+- 表格遮罩不再裁剪“使用 AI”下拉菜单，AI 提示文本不再
+  覆盖训练行，且 AI 表格保留其直接应用
+  按钮，配有仅图标表头检查和许可证消息。
+- 移除旧图标字体后，表格提取图标再次正常渲染。
+
+**任务看板**
+- 看板加载第一页时重复请求减少，按 Enter 键立即执行
+  搜索，延迟响应匹配到正确的搜索，页脚显示
+  实际命中数而非页面容量，且在切换组织时，
+  在一个组织中启动的删除操作会在发送前被取消。
+
+---
+
+## API 服务 — `12.83.293`
+
+**设置助手和 MCP**
+- 聊天端点设有保护措施：仅回答 DocBits 相关问题，任何更改均需
+  事先确认；对于含义不明或关于助手本身的问题，会提供帮助而非直接拒绝。
+  流式回答先显示卡片，再显示文本。
+- 每个设置区域（组权限、导入
+  渠道、采购订单匹配、会计、电子邮件域）的只读构建块，深度链接目录
+  以及查找设置工具，还有包含 DocBits 文档图片的文档搜索。
+- 第 1 阶段应用流程：对支持的设置提供预览、确认和撤销，
+  三个步骤遵循相同的权限范围规则，并防止重复确认或过期操作。
+- 在远程模式下，MCP 工具从不从服务器读取文件，且 fixture 和
+  lab 工具仅在开发环境中运行。
 
 **AI**
-- New models behind the Fast and Full tiers, the Auto tier, Nexus Flash and
-  the vision mode preference. Stored `AI_MODEL` preferences are moved to the
-  new tiers.
-- "Use AI" documents what structured extraction requests.
+- Fast 和 Full 层级背后的新模型、Auto 层级、Nexus Flash 以及
+  视觉模式偏好。存储的 `AI_MODEL` 偏好已迁移至
+  新层级。
+- “使用 AI”记录了结构化提取请求的内容。
 
-**Security and isolation**
-- Only organisation admins change organisation preferences.
-- The `/accounting/rebuild` call trains only the caller's organisation, fails
-  closed on a failed organisation lookup and answers 400 for a bad id.
-- XSLT, XML and PDF rendering deny file and network access, resolve no
-  external includes, and invoice bytes are sanitised before they reach the
-  transformer. Rendered PDF previews allow trusted image hosts only.
-- Cache keys carry the organisation and the same identifier always gives the
-  same key, so a foreign organisation id can no longer read cached data. Org-wide
-  dashboard cache clears on every document change are gone.
-- The organisation's e-mail domain list passes through to Auth.
+**安全与隔离**
+- 仅组织管理员可以更改组织偏好。
+- `/accounting/rebuild` 调用仅训练调用者的组织，在组织查找失败时
+  安全失败，并对无效 ID 返回 400。
+- XSLT、XML 和 PDF 渲染禁止访问文件和网络，不解析
+  外部引用，并在发票数据到达转换器前进行清理。渲染后的 PDF 预览
+  仅允许加载来自受信任主机的图片。
+- 缓存键包含组织信息，且相同的标识符始终生成
+  相同的键，因此外部组织 ID 不再能读取缓存数据。每次文档变更时清除
+  组织级仪表板缓存的做法已移除。
+- 组织的电子邮件域列表会传递至 Auth。
 
-**Purchase order matching and export**
-- A field can list several costing elements whose amounts are split in
-  proportion to the PO.
-- Approval substitutes link to the active approval request, healed-approval
-  saves no longer block, and a document pending approval is refused for export.
-- PDF/A annotation keeps catalog and embedded XML, so e-invoices keep their XML
-  after annotation. UBL invoices with the bare EN 16931 CustomizationID are
-  classified (e-invoice network).
-- GRPR rounds to the 6 decimals M3 accepts. Base unit of measure conversion factors are added to
-  the frozen line.
-- Soft-deleted trainings and formatting rules are respected, and MCP
-  `update_document_fields` no longer confirms a write it lost. `get_table_rules`
-  answers a typed miss, and an empty translations payload uses its fall-back.
-- Slovenian amounts use `sl_SI` and saved preferences are migrated. Custom
-  classification labels sent as UUID ids resolve. Shared dashboards keep
-  `created_by` and the share list on update.
-- Dashboard error frames carry the request's `request_id`, and every failed
-  JSON answer carries a trace id.
-- The system restarts only unhealthy workers instead of the whole API fleet
-  and checks the registered task list correctly. The hang monitor queue is
-  consumed again.
+**采购订单匹配与导出**
+- 一个字段可以列出多个成本要素，其金额按
+  采购订单比例进行拆分。
+- 审批代理与当前有效的审批请求关联；修复后的审批记录可以正常保存，
+  待审批文档仍不允许导出。
+- PDF/A 批注保留文档目录和嵌入的 XML，因此电子发票在添加批注后
+  仍保留其 XML。仅使用 EN 16931 CustomizationID 的 UBL 发票
+  也可正确分类（电子发票网络）。
+- GRPR 四舍五入至 M3 接受的 6 位小数。基本计量单位转换因子已添加至
+  冻结行。
+- 训练数据和格式规则的软删除状态得到正确处理；MCP
+  `update_document_fields` 不再将未成功保存的写入报告为成功。`get_table_rules`
+  对未找到的规则返回明确类型的结果；翻译内容为空时使用回退值。
+- 斯洛文尼亚语金额使用 `sl_SI` 且已保存的偏好已迁移。作为 UUID ID 发送的自定义
+  分类标签可解析。共享仪表板在更新时保留
+  `created_by` 和共享列表。
+- 仪表板错误帧携带请求的 `request_id`，且每个失败的
+  JSON 响应都携带跟踪 ID。
+- 系统仅重启不健康的 worker，而不是整个 API 集群
+  并正确检查已注册的任务列表。挂起监控队列再次
+  被消费。
 
 ---
 
 ## Auth Service — `1.78.49`
 
-- A multi-factor challenge is single-use on every sign-in path, not only the
-  MCP flow. Enrolling needs the e-mail code, no enrol token is issued after a
-  shared-password login, and users are notified when a factor is enrolled.
-- Organisations own a list of e-mail domains, each assignable once. A social
-  login joins the organisation that lists the verified domain, never invents an
-  organisation, user or subscription, and refuses without naming anybody while
-  the administrators are told instead. The domains Microsoft
-  returns are handled.
-- Every refused login carries a trace id. Admins can re-send the "Set your
-  password" e-mail. The contract balance is signed and the contract start is
-  audited.
+- 多因素挑战在每个登录路径上均为一次性使用，而不仅仅是
+  MCP 流程。注册需要电子邮件验证码，通过共享密码登录后不会颁发注册令牌，
+  并且在注册验证因子时会通知用户。
+- 组织拥有电子邮件域名列表，每个域名只能分配一次。社交
+  登录会加入列出了已验证域名的组织，绝不会自行创建
+  组织、用户或订阅，并且在拒绝登录时不会透露任何具体信息，而是
+  通知管理员。系统会处理 Microsoft
+  返回的域名。
+- 每次被拒绝的登录都带有跟踪 ID。管理员可以重新发送“设置您的
+  密码”电子邮件。合同余额已签名，合同开始日期
+  已进行审计。
 
 ## Auth Bridge — `0.5.7`
 
-- The EU and US account replication keeps its connection fed during
-  reconciliation, reattaches a dropped replication slot on its own, uses
-  bounded memory, and treats an existing replication origin as success. Cross
-  region sign-in is more reliable.
+- 欧盟与美国之间的账户复制在核对期间持续保持连接活跃，
+  自动重新连接断开的复制槽，限制内存使用，并将已存在的复制源
+  视为成功状态。
+  跨区域登录更加可靠。
 
 ## Docflow Service — `2.10.22`
 
-- The separate unit price card reads the organisation's default field
-  definitions for charges and compares every costing element a field lists.
-- The workflow execution limit rises from 30 to 50, and workflow log searches
-  reject an id that is not a UUID.
+- 独立的单价卡片读取组织针对附加费用设置的默认字段定义，
+  并比较字段中列出的每个成本要素。
+- 工作流执行限制从 30 提高到 50，并且工作流日志搜索
+  会拒绝非 UUID 的 ID。
 
 ## Docnet Service — `1.56.15`
 
-- `list_document_fields` reports every configured table column, including
-  those that are empty.
+- `list_document_fields` 报告每个配置的表格列，包括
+  那些为空的列。
 
 ## Extraction Service — `1.56.0.1`
 
-- Tiers: new models behind Fast and Full, Auto, Nexus Flash and a vision
-  mode. Vision requests to the inference host stay under its size limit.
-- Table extraction with Nexus batches pages (two per batch), runs batches in
-  parallel with a measured timeout, retries transient errors and splits a
-  batch that timed out. Header fields are read from all batches.
-- US totals: additional amounts are part of the total equation, pair 1 counts
-  in the pair-2 guard, low-score candidates are skipped when taxes are not
-  zero, and "above" and "below" match multi-word labels.
-- Identifier fields repair characters that really occur, and invisible
-  characters are treated by what they mean, so an "O" no longer turns into an
-  odd character.
+- 层级：Fast 和 Full 背后的新模型，Auto、Nexus Flash 和视觉
+  模式。向推理主机发送的视觉请求保持在其大小限制之内。
+- 使用 Nexus 提取表格时按批处理页面（每批两页），并行运行批次，
+  设置适当的超时时限，重试临时错误，并拆分超时的批次。
+  表头字段从所有批次中读取。
+- 美国总额计算：额外金额计入总额公式，配对 1 纳入配对 2 的检查，
+  税额不为零时跳过低分候选项；
+  “above”和“below”支持匹配由多个词组成的标签。
+- 标识符字段修复实际出现的字符，并且不可见
+  字符根据其含义进行处理，因此“O”不再变成
+  奇怪的字符。
 
 ## Fulltext Service — `1.42.41`
 
-- New index for the DocBits documentation, with ingest and search endpoints,
-  images in answers and a deadline for the whole search. It feeds the Settings
-  Assistant.
+- 为 DocBits 文档建立新索引，包含摄取和搜索端点、
+  答案中的图片以及整个搜索的截止时间。它为设置
+  助手提供数据。
 
 ## PO Match Service — `1.59.48`
 
-- Absolute floor for charges the purchase order expects as zero, and charge
-  tolerance for charges the order does not budget.
-- A column can carry an "allow mismatch" flag. Several costing elements per
-  field are split in proportion.
-- Only organisation admins write or approve match rules, and rule conditions
-  accept a whitelisted expression grammar only.
-- Rule changes can be simulated against an override rule set without writing,
-  for Touchless change proposals. PO extra columns to match are read from the
-  document type attribute, with a migration of the old preference.
+- 对于采购订单预期为零的费用，设置绝对下限；对于订单未预算的费用，
+  设置费用容差。
+- 列可以带有“允许不匹配”标志。每个字段的多个成本要素
+  按比例拆分。
+- 只有组织管理员可以编写或批准匹配规则，并且规则条件
+  仅接受白名单表达式语法。
+- 规则更改可以针对覆盖规则集进行模拟而无需写入，
+  用于 Touchless 变更提案。用于匹配的 PO 额外列从
+  文档类型属性中读取，并对旧偏好设置进行迁移。
 
 ---
 
-_Not affected in this release: Auto Accounting, Barcode, E-Mail, FTP, Ideas,
-OCR, Operator. FTP and Operator carry only internal maintenance._
+_本次发布不受影响的模块：自动记账、条形码、电子邮件、FTP、Ideas、
+OCR、操作员。FTP 和操作员仅包含内部维护内容。_
 
 <!-- Release R1.0.15 (sandbox 02-10-26, planned prod 14-10-26, deployed Wednesday 14 Oct 2026).
 Versions on prod before this deploy: API 12.83.222, Auth 1.78.38, Auth Bridge 0.4.2,
@@ -277,7 +279,7 @@ field stores "leave empty" on its own; field suppression).
 R1.2 / R1.4: DRFS-535 (receipt availability flag), DOP-53 (UOM conversion).
 Added from the Ready for Production Release list: DRFS-742, DU-220, MAR-67, DRFS-708, DRFS-820,
 DRFS-723, DRFS-724, DRFS-726. Not on the page (no matching code in the delta, check by hand):
-MEF-169 (S/MIME invoices from one supplier not arriving, Email Service version unchanged), DMB-391.
+MEF-169（某一供应商的 S/MIME 发票未送达，Email Service 版本未变更）、DMB-391。
 Shipped although Release No. is empty or stale: OBO-156, CORE-6102, CORE-6154, CORE-6155,
 CORE-6150, CORE-6169, CORE-6181, CORE-6183, CORE-6185, CORE-6187, CORE-2606, CORE-2461,
 CORE-2457, CORE-6092 (R1.0.14 labels). -->

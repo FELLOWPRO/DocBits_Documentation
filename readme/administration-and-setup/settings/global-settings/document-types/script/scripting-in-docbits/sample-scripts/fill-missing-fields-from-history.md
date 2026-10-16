@@ -1,18 +1,18 @@
-# Fill Missing Fields from Document History
+# 从文档历史记录填充缺失字段
 
 {% hint style="info" %}
-**Available from version 11.48.0** — Requires `OPENSEARCH_ENABLED` license.
+**从版本 11.48.0 起可用** — 需要 `OPENSEARCH_ENABLED` 许可证。
 {% endhint %}
 
-## What does this script do?
+## 此脚本的作用
 
-When a document has a PO number but is missing the supplier name, this script searches the document archive for other invoices containing the same PO number and copies the vendor name from the first match.
+当文档包含采购订单编号但缺少供应商名称时，此脚本会在文档归档中搜索包含相同采购订单编号的其他发票，并从第一个匹配项中复制供应商名称。
 
-## Trigger
+## 触发条件
 
-`AFTER_FORMATTING` on document type **INVOICE**
+文档类型 **INVOICE** 上的 `AFTER_FORMATTING`
 
-## Full Script
+## 完整脚本
 
 ```python
 po = get_field_value(document_data, "purchase_order", "")
@@ -32,14 +32,14 @@ if po and not supplier:
             break
 ```
 
-## Step-by-Step Explanation
+## 分步说明
 
-1. **Read PO number and supplier** from the current document
-2. **Check condition**: Only proceed if PO exists but supplier is missing
-3. **Search the archive** for documents containing the PO number
-4. **Copy vendor name** from the first match that has a vendor name set
+1. **读取采购订单编号和供应商**：从当前文档中读取
+2. **检查条件**：仅当存在采购订单编号但缺少供应商时继续
+3. **搜索归档**：查找包含该采购订单编号的文档
+4. **复制供应商名称**：从第一个已设置供应商名称的匹配项中复制
 
-## Variant: Fill Multiple Fields
+## 变体：填充多个字段
 
 ```python
 po = get_field_value(document_data, "purchase_order", "")
@@ -57,8 +57,8 @@ if po and not supplier:
             break
 ```
 
-## Functions Used
+## 使用的函数
 
-- [get\_field\_value()](../field-functions.md#get\_field\_value) — Read field value
-- [fulltext\_search()](../fulltext-search-functions.md#fulltext\_search) — Search OCR text across all documents
-- [set\_field\_value()](../field-functions.md#set\_field\_value) — Write field value
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — 读取字段值
+- [fulltext\_search()](../fulltext-search-functions.md#fulltext\_search) — 搜索所有文档中的 OCR 文本
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — 写入字段值

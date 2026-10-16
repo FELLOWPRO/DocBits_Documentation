@@ -1,36 +1,36 @@
-# Case 10a: Quantity Outside Tolerance (Negative Rejected), Unit Price Within Tolerance
+# 案例 10a：数量超出容差（负向偏差不予接受），单价在容差范围内
 
-## Scenario:
+## 场景：
 
-The quantity is below the acceptable range (negative tolerance) and is not approved, though the unit price is within tolerance.
+数量低于可接受范围（负向容差），因此未获批准；单价则在容差范围内。
 
-## Action:
+## 操作：
 
-The system adjusts the quantity to match the approved level, keeping the unit price consistent. The transaction is processed accordingly.
+系统将数量调整为已批准的数量，同时保持单价不变。随后按调整结果处理交易。
 
-## Example:
+## 示例：
 
-* **Purchase Order (PO):**
-  * Quantity: 150 units
-  * Unit Price: $20.00 per unit
-  * Total Amount: $3,000.00
-* **Invoice Received:**
-  * Quantity: 140 units (outside tolerance of -6.67%, rejected)
-  * Unit Price: $20.00 per unit (within tolerance)
-  * Total Amount: $2,800.00
-* **Tolerance Levels:**
-  * Quantity Tolerance: ±5%
-  * Unit Price Tolerance: ±2%
+* **采购订单（PO）：**
+  * 数量：150 件
+  * 单价：每件 $20.00
+  * 总金额：$3,000.00
+* **收到的发票：**
+  * 数量：140 件（超出 -6.67% 的容差范围，未获接受）
+  * 单价：每件 $20.00（在容差范围内）
+  * 总金额：$2,800.00
+* **容差级别：**
+  * 数量容差：±5%
+  * 单价容差：±2%
 
-Since the quantity (140 units) is below the acceptable tolerance limit (negative variance of -6.67%) and is not approved, but the unit price ($20.00) is within tolerance, the system will:
+由于数量（140 件）低于可接受的容差下限（负向偏差为 -6.67%），因此未获批准；但单价（$20.00）在容差范围内，系统将执行以下操作：
 
-1. **Reject the Lower Quantity:** The system does not accept the lower quantity since it is outside the approved tolerance range.
-2. **Adjust the Quantity:** The system adjusts the quantity to match the approved level specified in the purchase order.
-   * Approved Quantity = 150 units (from PO)
-3. **Maintain the Unit Price:** The unit price of $20.00 per unit is within tolerance and remains unchanged.
-4. **Recalculate the Total Amount:** The system calculates the total amount using the approved quantity and the accepted unit price:
-   * **Total Amount = Approved Quantity × Unit Price**
-   * **Total Amount = 150 units × $20.00 per unit = $3,000.00**
-5. **Process the Invoice:** The system processes the invoice with the adjusted total amount of $3,000.00, reflecting the approved quantity and unit price. The supplier is expected to invoice for the full approved quantity.
+1. **拒绝较低的数量：**数量超出已批准的容差范围，因此系统不接受较低的数量。
+2. **调整数量：**系统将数量调整为采购订单中指定的已批准数量。
+   * 已批准数量 = 150 件（来自 PO）
+3. **保持单价不变：**每件 $20.00 的单价在容差范围内，因此保持不变。
+4. **重新计算总金额：**系统使用已批准的数量和接受的单价计算总金额：
+   * **总金额 = 已批准数量 × 单价**
+   * **总金额 = 150 件 × 每件 $20.00 = $3,000.00**
+5. **处理发票：**系统按调整后的总金额 $3,000.00 处理发票，反映已批准的数量和单价。预期供应商会按全部已批准数量开具发票。
 
-This approach ensures that the financial transaction aligns with the purchase order's terms, and prevents under-invoicing while maintaining accurate financial records.
+这种处理方式可确保财务交易符合采购订单条款，避免少开票，并保持财务记录准确。

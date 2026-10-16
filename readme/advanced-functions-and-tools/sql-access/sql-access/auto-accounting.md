@@ -1,98 +1,98 @@
-# Auto accounting
+# 自动记账
 
-## Tabelle `public.auto_accounting`
+## 表 `public.auto_accounting`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `supplier_name`: Supplier Name
-* `description`: internal
-* `item_number`: internal
-* `line_amount`: double precision
-* `total_amount`: double precision
-* `mapped_amount`: double precision
-* `ledger_account`: internal
-* `doc_id`: internal
+* `id`：内部字段
+* `org_id`：组织 ID
+* `supplier_name`：供应商名称
+* `description`：内部字段
+* `item_number`：内部字段
+* `line_amount`：双精度
+* `total_amount`：双精度
+* `mapped_amount`：双精度
+* `ledger_account`：内部字段
+* `doc_id`：内部字段
 
-### Analyse & Beschreibung
+### 分析与说明
 
-## Technical Documentation for `public.auto_accounting` Table
+## `public.auto_accounting` 表技术文档
 
-### Introduction
+### 简介
 
-The `public.auto_accounting` table appears to be designed for managing and storing accounting data related to various suppliers and organizations. The table captures information about financial transactions, including amounts and ledger accounts, which are essential for financial reporting and analysis.
+`public.auto_accounting` 表似乎用于管理和存储与不同供应商及组织相关的会计数据。该表记录财务交易信息，包括金额和分类账账户，这些信息对于财务报告和分析至关重要。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: A unique identifier for each record in the table.
-* **Role**: Primary key.
-* **Typical Contents**: A UUID string representing each entry uniquely.
-* **Note**: Ensures each record can be distinctly identified.
+* **含义**：表中每条记录的唯一标识符。
+* **作用**：主键。
+* **典型内容**：用于唯一标识每条记录的 UUID 字符串。
+* **说明**：确保每条记录都能被单独识别。
 
 #### org\_id
 
-* **Meaning**: Identifier for the organization associated with the accounting entry.
-* **Role**: Foreign key.
-* **Typical Contents**: A UUID string linking to an organization in a parent table.
-* **Note**: Used to associate accounting entries with specific organizations.
+* **含义**：与会计分录关联的组织标识符。
+* **作用**：外键。
+* **典型内容**：用于关联父表中某个组织的 UUID 字符串。
+* **说明**：用于将会计分录关联到特定组织。
 
 #### supplier\_name
 
-* **Meaning**: The name of the supplier involved in the transaction.
-* **Role**: Descriptive field.
-* **Typical Contents**: Text representing the supplier's name, like "Fellow Consulting AG".
-* **Note**: Provides information about the supplier related to the transaction.
+* **含义**：交易涉及的供应商名称。
+* **作用**：描述性字段。
+* **典型内容**：表示供应商名称的文本，例如“Fellow Consulting AG”。
+* **说明**：提供与交易相关的供应商信息。
 
 #### description
 
-* **Meaning**: A short description of the transaction or item.
-* **Role**: Descriptive field.
-* **Typical Contents**: Text that describes the transaction, such as the name of an item ("apple" or "Peaches").
-* **Note**: Helpful for understanding the nature of the transaction.
+* **含义**：对交易或商品的简短描述。
+* **作用**：描述性字段。
+* **典型内容**：描述交易的文本，例如商品名称（“苹果”或“桃子”）。
+* **说明**：有助于了解交易的性质。
 
 #### item\_number
 
-* **Meaning**: Identifier for a specific item involved in the transaction.
-* **Role**: Descriptive field.
-* **Typical Contents**: Could be a product or SKU identifier, although no example data is provided.
-* **Note**: Useful for tracking or referencing specific items.
+* **含义**：交易中某个具体商品的标识符。
+* **作用**：描述性字段。
+* **典型内容**：可能是产品或 SKU 标识符，但未提供示例数据。
+* **说明**：便于跟踪或引用具体商品。
 
 #### line\_amount
 
-* **Meaning**: The monetary amount for a specific line item in the transaction.
-* **Role**: Financial field.
-* **Typical Contents**: A decimal value representing the amount for an individual line item.
-* **Note**: Important for detailed financial analysis at the line-item level.
+* **含义**：交易中某个行项目的金额。
+* **作用**：财务字段。
+* **典型内容**：表示单个行项目金额的十进制值。
+* **说明**：对于行项目级别的详细财务分析十分重要。
 
 #### total\_amount
 
-* **Meaning**: The total monetary amount for the transaction.
-* **Role**: Financial field.
-* **Typical Contents**: A decimal value representing the total transaction amount.
-* **Note**: Represents the sum of all line amounts in a transaction.
+* **含义**：交易总金额。
+* **作用**：财务字段。
+* **典型内容**：表示交易总金额的十进制值。
+* **说明**：表示交易中所有行金额的总和。
 
 #### mapped\_amount
 
-* **Meaning**: The amount that has been allocated or mapped to a specific account.
-* **Role**: Financial field.
-* **Typical Contents**: A decimal value indicating how much of the transaction has been allocated.
-* **Note**: Useful for understanding how funds are distributed across accounts.
+* **含义**：已分配或映射到特定账户的金额。
+* **作用**：财务字段。
+* **典型内容**：表示交易已分配金额的十进制值。
+* **说明**：有助于了解资金如何分配到不同账户。
 
 #### ledger\_account
 
-* **Meaning**: The account number in the ledger where the transaction is recorded.
-* **Role**: Descriptive field.
-* **Typical Contents**: Text representing an account number, such as "2200" or "2500".
-* **Note**: Critical for accounting purposes to track where transactions are posted.
+* **含义**：记录交易的分类账账户编号。
+* **作用**：描述性字段。
+* **典型内容**：表示账户编号的文本，例如“2200”或“2500”。
+* **说明**：对于跟踪交易入账账户的会计工作至关重要。
 
 #### doc\_id
 
-* **Meaning**: An identifier for a related document or record.
-* **Role**: Foreign key or reference.
-* **Typical Contents**: A UUID string or other identifier linking to related documents.
-* **Note**: Helps in associating transactions with specific documents or records for traceability.
+* **含义**：相关文档或记录的标识符。
+* **作用**：外键或引用。
+* **典型内容**：用于关联相关文档的 UUID 字符串或其他标识符。
+* **说明**：有助于将交易关联到特定文档或记录，以便追溯。
 
-This documentation provides a detailed overview of the `public.auto_accounting` table, describing its structure and the purpose of each column to aid developers and database administrators in understanding and utilizing the data effectively.
+本文档详细介绍了 `public.auto_accounting` 表，说明其结构以及各列的用途，帮助开发人员和数据库管理员理解并有效使用这些数据。

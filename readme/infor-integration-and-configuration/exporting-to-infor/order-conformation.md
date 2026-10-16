@@ -1,11 +1,9 @@
-# Order Confirmation
+# 订单确认
 
-Small update for Order Conformation
-
-
+订单确认小更新
 
 {% hint style="info" %}
-Link to the [File](../../../../../BOD-Mapping%20\(OrderConfirmation\).properties)
+链接到[文件](https://github.com/Fellow-Consulting-AG/docbits/tree/main/BOD-Mapping%20\(OrderConfirmation\).properties)
 {% endhint %}
 
 ```
@@ -202,9 +200,6 @@ TNP_InvoiceTable_name=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\Docume
 TNV_InvoiceTable_name=InvoiceRows
 ```
 
-
-
 {% hint style="info" %}
-See here a [sample](../../../../../M3\_CaptureDocumentToProcessPurchaseOrder2.xml) Infor OS Workflow - Update 11th June 2024
+请参阅此处的[示例](https://github.com/Fellow-Consulting-AG/docbits/tree/main/M3_CaptureDocumentToProcessPurchaseOrder2.xml)：Infor OS 工作流 - 2024 年 6 月 11 日更新
 {% endhint %}
-

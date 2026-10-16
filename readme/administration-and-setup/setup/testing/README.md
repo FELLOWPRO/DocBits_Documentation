@@ -1,5 +1,3 @@
-# Testing
+# 测试
 
-A guide on testing DocBits features once they are configured.
-
-
+本指南介绍如何在配置完成后测试 DocBits 功能。

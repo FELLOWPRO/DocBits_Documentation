@@ -1,30 +1,30 @@
 ---
-description: SI-UBL 2.0 electronic document support in DocBits
+description: DocBits 对 SI-UBL 2.0 电子文档的支持
 ---
 
 # 🇳🇱 SI-UBL 2.0
 
-| Property             | Value                                |
+| 属性                 | 值                                   |
 | -------------------- | ------------------------------------ |
-| **Country / Region** | Netherlands                          |
-| **Document Types**   | Invoice, Credit Note                 |
-| **Format**           | UBL 2.1 XML                          |
-| **Standard**         | SI-UBL 2.0 (Standaard Invoice - UBL) |
+| **国家 / 地区**      | 荷兰                                 |
+| **文档类型**         | 发票、贷项通知单                     |
+| **格式**             | UBL 2.1 XML                          |
+| **标准**             | SI-UBL 2.0（Standaard Invoice - UBL） |
 
-SI-UBL 2.0 is the Dutch e-invoicing standard based on OASIS UBL 2.1. It is maintained by NLCIUS (Netherlands Core Invoice Usage Specification) and aligns with EN 16931. SI-UBL is widely used in Dutch B2G and B2B transactions, particularly through the Peppol network.
+SI-UBL 2.0 是基于 OASIS UBL 2.1 的荷兰电子发票标准，由 NLCIUS（Netherlands Core Invoice Usage Specification）维护，并符合 EN 16931 标准。SI-UBL 广泛用于荷兰的 B2G 和 B2B 交易，尤其是通过 Peppol 网络进行的交易。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 组件               | 状态         |
+| ------------------ | ------------ |
+| 预览               | ✅ 支持       |
+| 字段提取           | ✅ 支持       |
+| 转换               | ✅ 支持       |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/si-ubl-2-0-preview.png" alt="SI-UBL 2.0 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Netherlands SI-UBL 2.0 invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/si-ubl-2-0-preview.png" alt="DocBits 中的 SI-UBL 2.0 发票预览"><figcaption><p>DocBits 默认显示的荷兰 SI-UBL 2.0 发票预览</p></figcaption></figure>
 
-## Related
+## 相关
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

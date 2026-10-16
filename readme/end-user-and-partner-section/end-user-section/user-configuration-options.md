@@ -1,41 +1,41 @@
-# User Configuration Options
+# 用户配置选项
 
-To configure your settings, click on the User Icon located in the bottom-left corner of the screen. Here you can customize several options:
+要配置设置，请点击屏幕左下角的用户图标。您可以在此自定义多项选项：
 
 {% embed url="https://youtu.be/TLmAHw3EXs4" %}
 
 
 <figure><img src="../../.gitbook/assets/User-Config.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/user_settings_menu_dropdown.png" alt="User Settings Menu Dropdown" width="308"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/user_settings_menu_dropdown.png" alt="用户设置菜单下拉列表" width="308"><figcaption></figcaption></figure>
 
 
 
-**Language**
+**语言**
 
 {% embed url="https://youtu.be/h_knkUZkNyI" %}
-How to Change Language in DocBits (User Settings Tutorial)
+如何在 DocBits 中更改语言（用户设置教程）
 {% endembed %}
 
-* **Select Preferred Language:** Choose your desired language from the available options.
+* **选择首选语言：** 从可用选项中选择您希望使用的语言。
 
-**Dark Mode**
+**深色模式**
 
-* **Switch to Dark Mode:** Enable or disable Dark Mode for a more comfortable viewing experience.
+* **切换到深色模式：** 启用或禁用深色模式，获得更舒适的观看体验。
 
-**User Settings**
+**用户设置**
 
-In this section, you can adjust the following preferences:
+在此部分，您可以调整以下偏好设置：
 
-* **Date Pattern:** Customize how dates are displayed.
-* **Amount Formatting:** Set your preferred format for numerical values.
-* **Name:** Update your name.
-* **Password:** Change your password for account security.
-* **Font Size:** Adjust the text size for better readability.
-* **Dual Monitor Mode:** Enable this feature if you’re using two monitors.
+* **日期格式：** 自定义日期的显示方式。
+* **金额格式：** 设置您偏好的数值格式。
+* **姓名：** 更新您的姓名。
+* **密码：** 更改密码以保障账户安全。
+* **字体大小：** 调整文字大小，以便更轻松地阅读。
+* **双显示器模式：** 如果您使用两台显示器，请启用此功能。
 
 <figure><img src="../../.gitbook/assets/user-config3.png" alt=""><figcaption></figcaption></figure>
 
-**Logout**
+**退出登录**
 
-* **Logout:** Click here to securely log out of your account.
+* **退出登录：** 点击此处安全地退出您的账户。

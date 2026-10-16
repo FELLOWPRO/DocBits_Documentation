@@ -1,74 +1,74 @@
-# Custom classification document
+# 自定义分类文档
 
-## Tabelle `public.custom_classification_document`
+## 表 `public.custom_classification_document`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `first_page_content`: text
-* `content`: text
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
+* `id`：内部字段
+* `org_id`：组织 ID
+* `first_page_content`：文本
+* `content`：文本
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
 
-### Analyse & Beschreibung
+### 分析与说明
 
-## Technical Documentation for `public.custom_classification_document` Table
+## `public.custom_classification_document` 表技术文档
 
-### Introduction
+### 简介
 
-The `public.custom_classification_document` table is designed to store detailed information about document classifications within an organization. This includes metadata about the document, such as its content, creation details, and organizational context. The table's structure suggests its use in managing documents related to organizational processes, possibly involving invoices or order forms, as inferred from the example data.
+`public.custom_classification_document` 表用于存储组织内文档分类的详细信息。这些信息包括文档元数据，例如文档内容、创建详情和组织上下文。根据示例数据推断，该表的结构表明它可能用于管理与组织流程相关的文档，例如发票或订单表单。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: This column likely stores a unique identifier for each document entry.
-* **Role**: Primary Key
-* **Typical Contents**: A UUID representing a unique document identifier.
+* **含义**：此列可能存储每条文档记录的唯一标识符。
+* **作用**：主键
+* **典型内容**：表示唯一文档标识符的 UUID。
 
 #### org\_id
 
-* **Meaning**: This column stores the identifier of the organization associated with the document.
-* **Role**: Foreign Key
-* **Typical Contents**: A UUID that links the document to a specific organization.
+* **含义**：此列存储与文档关联的组织标识符。
+* **作用**：外键
+* **典型内容**：将文档关联到特定组织的 UUID。
 
 #### first\_page\_content
 
-* **Meaning**: This column contains the text content of the first page of the document.
-* **Role**: Data Field
-* **Typical Contents**: Textual representation of an organization's document, possibly including headers, addresses, and initial details of an invoice or order.
+* **含义**：此列包含文档首页的文本内容。
+* **作用**：数据字段
+* **典型内容**：组织文档的文本表示，可能包括标题、地址，以及发票或订单的初始详情。
 
 #### content
 
-* **Meaning**: This column stores the complete text content of the document.
-* **Role**: Data Field
-* **Typical Contents**: Full textual content of the document, including all details present in the first page and subsequent pages.
+* **含义**：此列存储文档的完整文本内容。
+* **作用**：数据字段
+* **典型内容**：文档的完整文本内容，包括首页和后续页面上的所有详情。
 
 #### created\_by
 
-* **Meaning**: This column indicates the user who created the document entry.
-* **Role**: Data Field
-* **Typical Contents**: An integer representing the user ID of the creator.
+* **含义**：此列表示创建该文档记录的用户。
+* **作用**：数据字段
+* **典型内容**：表示创建者用户 ID 的整数。
 
 #### created\_on
 
-* **Meaning**: This column records the date and time when the document entry was created.
-* **Role**: Technical Field
-* **Typical Contents**: A timestamp with time zone information, indicating the creation date and time.
+* **含义**：此列记录创建文档记录的日期和时间。
+* **作用**：技术字段
+* **典型内容**：包含时区信息的时间戳，表示创建日期和时间。
 
 #### last\_modified\_on
 
-* **Meaning**: This column stores the date and time of the last modification of the document entry.
-* **Role**: Technical Field
-* **Typical Contents**: A timestamp with time zone information, indicating the last modification date and time. It is sometimes `None` if no modifications have occurred post-creation.
+* **含义**：此列存储文档记录最后修改的日期和时间。
+* **作用**：技术字段
+* **典型内容**：包含时区信息的时间戳，表示最后修改的日期和时间。如果创建后未进行修改，该值有时为 `None`。
 
 #### is\_deleted
 
-* **Meaning**: This column indicates whether the document entry has been marked as deleted.
-* **Role**: Technical Field
-* **Typical Contents**: A boolean value (`True` or `False`) showing the deletion status of the document entry.
+* **含义**：此列表示文档记录是否已标记为删除。
+* **作用**：技术字段
+* **典型内容**：布尔值（`True` 或 `False`），用于显示文档记录的删除状态。
 
-This table provides a robust structure for managing document data, ensuring each document can be uniquely identified, associated with an organization, and tracked through its lifecycle of creation and modification.
+此表为管理文档数据提供了稳健的结构，可确保每份文档都能被唯一识别、关联到某个组织，并在其创建和修改生命周期中得到跟踪。

@@ -1,27 +1,27 @@
-# Fields
+# 字段
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.02.31.png" alt=""><figcaption></figcaption></figure>
 
-## Overview
+## 概述
 
-The Fields setting provides a user interface where administrators can manage the properties and behavior of individual data fields associated with a document type. Each field can be adjusted to optimize the accuracy and efficiency of data capture and validation.
+“字段”设置提供了一个用户界面，供管理员管理与文档类型关联的各个数据字段的属性和行为。管理员可以调整每个字段，以提高数据采集和验证的准确性与效率。
 
 {% hint style="info" %}
-[Fields with Charges](new-fields-with-charges.md)
+[带费用的字段](new-fields-with-charges.md)
 {% endhint %}
 
-## Key Features and Options
+## 主要功能和选项
 
-1. **Fields Configuration**:
-   * **Field Names**: Lists the names of the fields, typically corresponding to the data elements within the document, like "Invoice Number" or "Purchase Order Date".
-   * **Required**: Administrators can mark fields as required, making sure that data must be entered or captured for these fields to complete the document processing.
-   * **Read Only**: Fields can be set to read-only to prevent modification after data capture or during certain stages of document processing.
-   * **Hidden**: Fields can be hidden from view in the user interface, useful for sensitive information or for simplifying user workflows.
-2. **Advanced Settings**:
-   * **Force Validation**: Ensures that data entered into a field passes certain validation rules before being accepted.
-   * **OCR (Optical Character Recognition)**: This toggle can be switched on to enable OCR processing for a specific field, useful for automated data extraction from scanned or digital documents.
-   * **Match Score**: Administrators can define a match score, a threshold used to determine the confidence level of data recognition or matching, impacting how data validation and quality checks are performed.
-3. **Action Buttons**:
-   * **Create New Field**: Allows adding new fields to the document type.
-   * **Edit Icons**: Each field has an edit icon that allows administrators to further configure field-specific settings, such as data type, default values, or connected business logic.
-   * **Save Settings**: Commits the changes made to the field configuration
+1. **字段配置**：
+   * **字段名称**：列出各个字段的名称，通常对应文档中的数据元素，例如“发票编号”或“采购订单日期”。
+   * **必填**：管理员可以将字段设为必填，确保完成文档处理时必须为这些字段输入或采集数据。
+   * **只读**：可以将字段设为只读，以防止在数据采集后或文档处理的特定阶段对其进行修改。
+   * **隐藏**：可以在用户界面中隐藏字段，适用于敏感信息，也有助于简化用户工作流。
+2. **高级设置**：
+   * **强制验证**：确保输入到字段中的数据通过特定验证规则后才会被接受。
+   * **OCR（光学字符识别）**：启用此开关可对特定字段进行 OCR 处理，适用于从扫描文档或数字文档中自动提取数据。
+   * **匹配分数**：管理员可以设置匹配分数，即用于确定数据识别或匹配置信度的阈值。这会影响数据验证和质量检查的执行方式。
+3. **操作按钮**：
+   * **创建新字段**：允许向文档类型添加新字段。
+   * **编辑图标**：每个字段都有一个编辑图标，管理员可通过该图标进一步配置特定字段的设置，例如数据类型、默认值或关联的业务逻辑。
+   * **保存设置**：提交对字段配置所做的更改。

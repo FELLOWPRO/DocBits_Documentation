@@ -1,30 +1,30 @@
-# API Key
+# API 密钥
 
-<figure><img src="../../../../.gitbook/assets/api-key-settings-page-en.png" alt="API Keys panel with the Create API Key button, key list columns and the key prefix hidden for documentation"><figcaption><p>Settings → Integration &amp; SSO → API Key. The key prefix is hidden in this screenshot.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/api-key-settings-page-en.png" alt="API 密钥面板，包含“创建 API 密钥”按钮、密钥列表列以及为文档隐藏的密钥前缀"><figcaption><p>设置 → 集成与 SSO → API 密钥。此截图中隐藏了密钥前缀。</p></figcaption></figure>
 
-The **API Key** section at the top of the Integration & SSO page lists every API key your organization has created. An API key lets another system — your ERP, a script, or a partner application — access DocBits without a user logging in. For step-by-step instructions, see [API Key Management](api-key-management.md).
+集成与 SSO 页面顶部的 **API 密钥** 部分会列出组织创建的所有 API 密钥。API 密钥允许其他系统（例如 ERP、脚本或合作伙伴应用程序）在无需用户登录的情况下访问 DocBits。有关分步说明，请参阅 [API 密钥管理](api-key-management.md)。
 
-### API Key list
+### API 密钥列表
 
-* **Key:** The first few characters of the key, followed by `****`. The full key is shown only once, when it is created, so it cannot be viewed again later. The copy icon next to the key copies the visible prefix to your clipboard.
-* **Name / Expires / Last Used / Status:** Each row shows the key's name, when it stops working, when a request last used it, and whether it is still active.
-* **Create API Key:** Opens a dialog to create a new key for an integration. See [API Key Management](api-key-management.md) for the fields and the one-time key display.
-* **Actions (three-dot menu):** Opens the actions for a key, where you can edit its name, revoke it, or delete a key that has already been revoked. Revoking switches the key off permanently.
+* **密钥：**显示密钥的前几个字符，后接 `****`。完整密钥仅在创建时显示一次，之后无法再次查看。密钥旁的复制图标会将可见的前缀复制到剪贴板。
+* **名称 / 过期时间 / 上次使用时间 / 状态：**每行会显示密钥名称、失效时间、上次用于请求的时间，以及密钥是否仍处于启用状态。
+* **创建 API 密钥：**打开对话框，为集成创建新密钥。有关字段和一次性密钥显示的说明，请参阅 [API 密钥管理](api-key-management.md)。
+* **操作（三点菜单）：**打开密钥的操作菜单，您可以在此编辑名称、撤销密钥，或删除已撤销的密钥。撤销后，密钥将永久停用。
 
-### SSO (Single Sign-On) Service Provider Settings
+### SSO（单点登录）服务提供商设置
 
-These are the values your Identity Provider needs in order to let users sign in to DocBits with your company login. For the full setup guide, see [Configuring Single Sign-On (SSO)](configuring-single-sign-on-sso/).
+这些值供身份提供商使用，以便用户通过公司的登录方式登录 DocBits。完整设置指南请参阅[配置单点登录（SSO）](configuring-single-sign-on-sso/)。
 
-* **Entity ID:** The identifier for DocBits as a service provider in the SSO configuration. The copy icon copies the value to your clipboard.
-* **SLO (Single Logout) URL:** The URL used to log a user out of all applications connected through SSO at the same time. The copy icon copies the value.
-* **SSO URL:** The URL used for initiating the single sign-on process. The copy icon copies the value.
-* **Download Certificate:** Downloads the security certificate your Identity Provider needs to trust DocBits.
-* **Download Metadata:** Downloads the SAML metadata file that can be imported directly into most Identity Providers.
+* **实体 ID：**SSO 配置中 DocBits 作为服务提供商的标识符。复制图标会将此值复制到剪贴板。
+* **SLO（单点注销）URL：**用于同时将用户从通过 SSO 连接的所有应用程序中注销的 URL。复制图标会复制此值。
+* **SSO URL：**用于发起单点登录流程的 URL。复制图标会复制此值。
+* **下载证书：**下载身份提供商信任 DocBits 所需的安全证书。
+* **下载元数据：**下载 SAML 元数据文件，该文件可直接导入大多数身份提供商。
 
-### Identity Service Provider Settings
+### 身份服务提供商设置
 
-Configure DocBits to use your external Identity Provider (IdP) for login. For the full guide, see [Identity Service Provider Configuration](identity-service-provider-configuration.md).
+配置 DocBits，使其使用外部身份提供商（IdP）进行登录。完整指南请参阅[身份服务提供商配置](identity-service-provider-configuration.md)。
 
-* **Tenant ID:** Your Identity Provider's tenant identifier, used when DocBits integrates with cloud services that manage access per tenant.
-* **Upload file:** Uploads the metadata or configuration file you received from your Identity Provider.
-* **Configure:** Saves the settings and applies the uploaded configuration. Enter the Tenant ID or upload the file first, then click **Configure**.
+* **租户 ID：**身份提供商的租户标识符；DocBits 与按租户管理访问权限的云服务集成时会使用此标识符。
+* **上传文件：**上传从身份提供商处收到的元数据或配置文件。
+* **配置：**保存设置并应用已上传的配置。请先输入租户 ID 或上传文件，然后点击 **配置**。

@@ -1,27 +1,20 @@
-# Prefect Local Setup Requirements
+# Prefect 本地设置要求
 
-#### Requirements
+#### 要求
 
-Make sure the following are installed on the host system:
+确保主机系统已安装以下组件：
 
 * **Docker Engine**
 * **Docker Compose v2**&#x20;
 
-#### Host OS Compatibility
+#### 主机操作系统兼容性
 
-* **Linux**: Recommended and fully supported.
-* **Windows**: Works with Docker Desktop (WSL2). Volume mounts may cause issues.
-* **macOS**: Supported via Docker Desktop. Similar to Windows in behavior.
+* **Linux**：推荐使用，并且得到全面支持。
+* **Windows**：可通过 Docker Desktop（WSL2）运行。卷挂载可能会导致问题。
+* **macOS**：通过 Docker Desktop 支持，行为与 Windows 类似。
 
-#### System Requirements
+#### 系统要求
 
-* **RAM**: 1–2 GB per container. For multiple flows: 2–4 GB.
-* **CPU**: 1–2 cores per container. For concurrent flows: 2–4 cores.
-* **Disk**: 2–3 GB for image and logs&#x20;
-
-
-
-
-
-
-
+* **内存**：每个容器需要 1–2 GB。运行多个流时需要 2–4 GB。
+* **CPU**：每个容器需要 1–2 个核心。并发运行流时需要 2–4 个核心。
+* **磁盘**：镜像和日志需要 2–3 GB&#x20。

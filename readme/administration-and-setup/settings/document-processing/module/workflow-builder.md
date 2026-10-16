@@ -1,40 +1,40 @@
-# Workflow Builder
+# 工作流构建器
 
-### Overview
+### 概述
 
-The **Workflow Builder** setting activates **DocFlow** for your organization. DocFlow is the workflow engine that automates what happens to your documents — routing, approval steps, conditions and follow-up actions. When this setting is enabled, the DocFlow workflow designer becomes available and documents start flowing through the workflows you build.
+**Workflow Builder** 设置会为您的组织启用 **DocFlow**。DocFlow 是工作流引擎，用于自动处理文档的流转、审批步骤、条件和后续操作。启用此设置后，DocFlow 工作流设计器将变为可用，文档也会开始按照您创建的工作流流转。
 
-This is a **subscription-based** feature and is **disabled by default**.
+此功能**基于订阅**，默认**处于禁用状态**。
 
-### What Does It Do?
+### 它有什么作用？
 
-Turning the toggle on does not just flip a switch — it starts a **DocFlow subscription**. A dialog appears where you choose your DocFlow plan (DocFlow Standard, and optionally DocFlow Advanced). The setting is only activated after the subscription is confirmed.
+开启此开关并非只是切换一个开关，而是会启动 **DocFlow 订阅**。系统会显示一个对话框，供您选择 DocFlow 计划（DocFlow Standard，以及可选的 DocFlow Advanced）。确认订阅后，此设置才会启用。
 
-* **Enabled** — DocFlow is activated for the organization. Documents are routed through your workflows and the Workflow Builder designer is available to create and edit them.
-* **Disabled** — DocFlow is switched off and the related subscription is cancelled. Documents no longer run through workflows.
+* **已启用** — DocFlow 已为组织激活。文档会通过您的工作流流转，并且可以使用 Workflow Builder 设计器创建和编辑工作流。
+* **已禁用** — DocFlow 已关闭，相关订阅也会取消。文档不再通过工作流处理。
 
 {% hint style="info" %}
-**Workflow Builder is the master switch that turns DocFlow on or off for the whole organization.** Because it manages a subscription, enabling it opens a plan-selection dialog, and disabling it cancels the active DocFlow subscription.
+**Workflow Builder 是用于为整个组织开启或关闭 DocFlow 的主开关。** 由于它管理订阅，启用时会打开计划选择对话框，禁用时会取消当前 DocFlow 订阅。
 {% endhint %}
 
-### Benefits
+### 优势
 
-* **Automation**: Replace manual handovers with automated steps (routing, approvals, conditions).
-* **Consistency**: Every document follows the same defined process.
-* **Visibility**: Workflows are designed and managed in one place.
+* **自动化**：用自动化步骤（流转、审批、条件）替代人工交接。
+* **一致性**：每份文档都遵循相同的既定流程。
+* **可见性**：在同一位置设计和管理工作流。
 
-### How to Use
+### 如何使用
 
-1. Go to **Settings**.
-2. Select **Document Processing**.
-3. Select **Module**.
-4. Open the **Document Type** section.
-5. Find **Workflow Builder** and switch the toggle on.
-6. In the dialog, choose your DocFlow plan (Standard, optionally Advanced) and confirm. DocFlow is activated once the subscription is created.
-7. Afterwards, design your document workflows in DocFlow — see the [Workflow](../../../workflow/README.md) section for how to build them.
+1. 前往 **Settings**。
+2. 选择 **Document Processing**。
+3. 选择 **Module**。
+4. 打开 **Document Type** 部分。
+5. 找到 **Workflow Builder**，然后开启开关。
+6. 在对话框中选择 DocFlow 计划（Standard，可选 Advanced），并确认。创建订阅后，DocFlow 即会启用。
+7. 然后，在 DocFlow 中设计文档工作流 — 有关如何构建工作流，请参阅[工作流](../../../workflow/README.md)部分。
 
-### When to Use This Feature
+### 何时使用此功能
 
-* **Automated document processes**: When documents need to move through defined steps such as review, approval or routing.
-* **Team workflows**: When several people or roles are involved in handling a document.
-* **Leave it off** if your organization does not use DocFlow / document workflows (turning it off also cancels the DocFlow subscription).
+* **自动化文档流程**：当文档需要按照既定步骤流转时，例如审核、审批或路由。
+* **团队工作流**：当处理文档需要多个员工或角色参与时。
+* **保持关闭**：如果您的组织不使用 DocFlow / 文档工作流（关闭此功能也会取消 DocFlow 订阅）。

@@ -1,66 +1,63 @@
-# Troubleshooting
+# 故障排除
 
-## Here is some advice on troubleshooting common scripting problems in DocBits: e.g. tips for debugging, dealing with unexpected script behavior, and performance optimization.
+## 以下是一些用于排查 DocBits 中常见脚本问题的建议，例如调试技巧、处理脚本行为异常的方法以及性能优化建议。
 
-### Debugging tips:
+### 调试技巧：
 
-**Use debugging tools:**
+**使用调试工具：**
 
-* Use debuggers or logging frameworks to trace the flow of your script and identify potential sources of errors.
+* 使用调试器或日志框架跟踪脚本的执行流程，并找出可能的错误来源。
 
-**Step-by-step execution:**&#x20;
+**逐步执行：**&#x20;
 
-* Run your script step-by-step and check after each step that the expected behavior occurs.&#x20;
-* This can help you pinpoint the exact time and cause of an error.
+* 逐步运行脚本，并在每一步之后检查是否出现预期行为。&#x20;
+* 这有助于准确定位错误发生的时间和原因。
 
-**Print intermediate results:**
+**输出中间结果：**
 
-* Include targeted output from variables or intermediate results in your script to check the state of the code and understand what is happening.
+* 在脚本中有针对性地输出变量或中间结果，以检查代码状态并了解正在发生的情况。
 
-### Dealing with unexpected script behavior:
+### 处理脚本行为异常：
 
-**Isolate the problem:**
+**隔离问题：**
 
-* Try to isolate the problem to a specific place in the code or a specific input data to find the source of the unexpected behavior.
+* 尝试将问题定位到代码中的特定位置或特定输入数据，从而找出异常行为的来源。
 
-**Check external dependencies:**
+**检查外部依赖项：**
 
-Make sure that external resources or libraries are installed and configured correctly and that your script can access them properly.
+确保外部资源或库已正确安装和配置，并且脚本能够正常访问它们。
 
-**Check changes:**
+**检查变更：**
 
-* If the unexpected behavior occurs after a code change, review your recent changes and consider whether they might have caused the problem.
+* 如果代码变更后出现异常行为，请检查最近的变更，并考虑这些变更是否可能导致了问题。
 
-### Performance tuning:
+### 性能调优：
 
-**Identify bottlenecks:**
+**找出瓶颈：**
 
-* Analyze your script to identify bottlenecks or inefficient areas that might affect performance.
+* 分析脚本，找出可能影响性能的瓶颈或低效部分。
 
-**Optimize critical sections:**
+**优化关键部分：**
 
-* Review critical sections of your code and look for ways to optimize them, such as using more efficient algorithms or data structures.
+* 检查代码中的关键部分，寻找优化方法，例如使用更高效的算法或数据结构。
 
-**Consider scaling:**
+**考虑扩展能力：**
 
-* Think about the scaling of your scripts and how they behave as the load increases.&#x20;
-* Test your script under different load conditions to make sure it works efficiently even under heavy use.
+* 考虑脚本的扩展能力，以及负载增加时的表现。&#x20;
+* 在不同负载条件下测试脚本，确保即使在高负载下也能高效运行。
 
-### Documentation and knowledge sharing:
+### 文档记录与知识共享：
 
-**Document your troubleshooting steps:**
+**记录故障排除步骤：**
 
-* Keep track of the steps you took to diagnose and resolve issues.&#x20;
-* This can help you identify and resolve similar issues more quickly in the future.
+* 记录诊断和解决问题时采取的步骤。&#x20;
+* 这有助于将来更快地识别和解决类似问题。
 
-**Seek resources and expertise:**
+**寻求资源与专业知识：**
 
-* Use online resources, forums, or the documentation of the scripting language you are using to get help with troubleshooting.&#x20;
-* Sharing experiences with other developers can also be helpful.
-
-
-
-Applying these tips will help you more effectively diagnose and resolve common scripting issues in DocBits and optimize the performance of your scripts.
+* 使用在线资源、论坛或所用脚本语言的文档来获取故障排除方面的帮助。&#x20;
+* 与其他开发者分享经验也会有所帮助。
 
 
 
+应用这些建议将帮助你更有效地诊断和解决 DocBits 中常见的脚本问题，并优化脚本性能。

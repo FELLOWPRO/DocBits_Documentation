@@ -1,30 +1,30 @@
 ---
-description: UAE VAT INVOICE electronic document support in DocBits
+description: "DocBits 对 UAE VAT INVOICE 电子文档的支持"
 ---
 
-# 🇦🇪 UAE VAT INVOICE
+# 🇦🇪 阿联酋 VAT 发票
 
-| Property             | Value                                   |
+| 属性                 | 值                                      |
 | -------------------- | --------------------------------------- |
-| **Country / Region** | United Arab Emirates                    |
-| **Document Types**   | Tax Invoice, Simplified Tax Invoice     |
-| **Format**           | XML/JSON                                |
-| **Standard**         | FTA VAT Invoice (Federal Tax Authority) |
+| **国家 / 地区**      | 阿拉伯联合酋长国                         |
+| **文档类型**         | 税务发票、简化税务发票                   |
+| **格式**             | XML/JSON                                |
+| **标准**             | FTA VAT 发票（联邦税务局）               |
 
-UAE VAT Invoice is the electronic invoice format aligned with the Federal Tax Authority (FTA) requirements. While the UAE has not yet mandated a specific e-invoicing format, DocBits supports processing of structured VAT invoice documents that comply with FTA VAT regulations, including TRN (Tax Registration Number) identification and VAT calculations at 5%.
+UAE VAT 发票是符合联邦税务局（FTA）要求的电子发票格式。虽然阿联酋尚未强制采用特定的电子发票格式，但 DocBits 支持处理符合 FTA VAT 法规的结构化 VAT 发票文档，包括 TRN（税务登记号）识别以及按 5% 计算 VAT。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件             | 状态        |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览             | ✅ 支持      |
+| 字段提取         | ✅ 支持      |
+| 转换             | ✅ 支持      |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/uae-vat-invoice-preview.png" alt="UAE VAT Invoice preview in DocBits"><figcaption><p>Default DocBits preview for a UAE VAT Invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/uae-vat-invoice-preview.png" alt="DocBits 中的 UAE VAT 发票预览"><figcaption><p>UAE VAT 发票的 DocBits 默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

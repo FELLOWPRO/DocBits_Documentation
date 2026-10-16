@@ -1,33 +1,30 @@
-# Troubleshooting
+# 故障排除
 
-## Even with careful configuration, document processing can occasionally encounter problems. Here are some troubleshooting tips for common problems that may arise from the configurations:
+## 即使配置得很仔细，文档处理过程中偶尔也可能遇到问题。以下是针对配置可能引发的常见问题的一些故障排除建议：
 
-### Additional order settings:
+### 附加订单设置：
 
-* Check that all additional parameters are correctly configured and meet business requirements.
-* Make sure that the configuration matches system requirements and user needs.
+* 检查所有附加参数是否配置正确并符合业务要求。
+* 确保配置符合系统要求和用户需求。
 
-### Export to IDM:
+### 导出到 IDM：
 
-* Make sure that the connection to the IDM system is correctly configured and that all necessary permissions are in place.
-* Check that the document format is compatible with the requirements of the IDM system.
+* 确保与 IDM 系统的连接配置正确，并已具备所有必要权限。
+* 检查文档格式是否符合 IDM 系统的要求。
 
-### Additional tolerance settings:
+### 附加容差设置：
 
-* Make sure that the tolerance limits are realistic and feasible.
-* Check regularly that the tolerance limits meet current business requirements.
+* 确保容差限值切合实际且可行。
+* 定期检查容差限值是否符合当前业务要求。
 
-### Alternative document export:
+### 备用文档导出：
 
-* Test the export in different formats to make sure that all required information is exported correctly.
-* Make sure that the export formats are compatible with the requirements of the recipients or target systems.
+* 使用不同格式测试导出，确保所有所需信息都已正确导出。
+* 确保导出格式符合接收方或目标系统的要求。
 
-### Order deactivation status:
+### 订单停用状态：
 
-* Review the status deactivation configuration to ensure it is not unnecessarily blocking the workflow.
-* Make sure all users are aware of the status changes and know how to respond.
+* 检查状态停用配置，确保其不会造成不必要的工作流阻塞。
+* 确保所有用户都了解状态变更，并知道如何应对。
 
-
-
-By applying these settings and best practices, organizations can streamline their document processing processes, improve data accuracy, and ensure regulatory compliance.
-
+应用这些设置和最佳实践后，组织可以简化文档处理流程、提高数据准确性并确保符合法规要求。

@@ -1,36 +1,31 @@
-# Purchase Order
+# 采购订单
 
-## Overview
+## 概述
 
-This setting enables the [**Purchase Order Matching**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/) section, which becomes accessible after document validation.
+此设置会启用[**采购订单匹配**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/)部分，该部分在文档验证后即可访问。
 
-<mark style="color:red;">**Note**</mark>: For the **Invoice** document type, the following additional requirements must be met:
+<mark style="color:red;">**注意**</mark>：对于**发票**文档类型，还必须满足以下要求：
 
-* The **Purchase Order** setting must be enabled (as described on this page)
-* The invoice must be of type **Purchase Invoice**
-* An **Extracted Table** must be present
+* 必须启用**采购订单**设置（如本页所述）
+* 发票类型必须为**采购发票**
+* 必须存在**已提取表格**
 
-## Activation Steps <a href="#activation-steps" id="activation-steps"></a>
+## 激活步骤 <a href="#activation-steps" id="activation-steps"></a>
 
-1. Go to **Settings** -> **Global Settings** -> **Document Types**
-2.  Select the desired document type and click on **More Settings**.
+1. 前往**设置** -> **全局设置** -> **文档类型**
+2.  选择所需的文档类型，然后点击**更多设置**。
 
     <figure><img src="../../../../../../.gitbook/assets/po_settings_1.png" alt=""><figcaption></figcaption></figure>
-3.  In the **Purchase Order** section, navigate to the **Purchase Order** option.
+3.  在**采购订单**部分中，找到**采购订单**选项。
 
     <figure><img src="../../../../../../.gitbook/assets/po_settings_po.png" alt=""><figcaption></figcaption></figure>
 
-## **Functionality**
+## **功能**
 
-Once activated, the [**Purchase Order Matching**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/) section becomes available after document validation.&#x20;
+激活后，[**采购订单匹配**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/)部分会在文档验证后变为可用。&#x20;
 
-You can also configure which type of quantity from **Infor** should be used for matching by selecting one of the following options from the dropdown menu next to the setting:
+你还可以通过选择设置旁边下拉菜单中的一个选项，配置匹配时使用哪种 **Infor** 数量类型：
 
-* **Quantity**
-* **Received Quantity**
-* **Received Delivery Open Quantity**
-
-
-
-
-
+* **数量**
+* **已收货数量**
+* **已收货未结交货数量**

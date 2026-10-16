@@ -1,30 +1,30 @@
 ---
-description: KOREA E-TAX INVOICE electronic document support in DocBits
+description: "DocBits 对韩国电子税务发票的支持"
 ---
 
-# 🇰🇷 KOREA E-TAX INVOICE
+# 🇰🇷 韩国电子税务发票
 
-| Property             | Value                              |
+| 属性 | 值 |
 | -------------------- | ---------------------------------- |
-| **Country / Region** | South Korea                        |
-| **Document Types**   | Tax Invoice                        |
-| **Format**           | XML                                |
-| **Standard**         | Korean E-Tax Invoice (NTS HomeTax) |
+| **国家 / 地区** | 韩国 |
+| **文档类型** | 税务发票 |
+| **格式** | XML |
+| **标准** | 韩国电子税务发票（NTS HomeTax） |
 
-Korea E-Tax Invoice is the electronic tax invoice standard operated by the National Tax Service (NTS) through the HomeTax system. Businesses must issue electronic tax invoices for B2B transactions and transmit them to the NTS. The format includes the business registration number, tax amount breakdown, and the NTS approval number.
+韩国电子税务发票是由韩国国税厅（NTS）通过 HomeTax 系统实施的电子税务发票标准。企业必须为 B2B 交易开具电子税务发票，并将其传送至 NTS。该格式包含企业注册号、税额明细和 NTS 批准号。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件 | 状态 |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览 | ✅ 支持 |
+| 字段提取 | ✅ 支持 |
+| 转换 | ✅ 支持 |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/korea-e-tax-invoice-preview.png" alt="Korea e-Tax Invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Korea e-Tax Invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/korea-nts-preview.png" alt="DocBits 中的韩国电子税务发票预览"><figcaption><p>韩国电子税务发票的默认 DocBits 预览</p></figcaption></figure>
 
-## Related
+## 相关
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

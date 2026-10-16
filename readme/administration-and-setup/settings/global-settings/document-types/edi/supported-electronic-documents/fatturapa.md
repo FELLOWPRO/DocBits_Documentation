@@ -1,30 +1,30 @@
 ---
-description: FATTURAPA electronic document support in DocBits
+description: "DocBits 对 FATTURAPA 电子文档的支持"
 ---
 
 # 🇮🇹 FATTURAPA
 
-| Property             | Value                                    |
+| 属性                 | 值                                      |
 | -------------------- | ---------------------------------------- |
-| **Country / Region** | Italy                                    |
-| **Document Types**   | Invoice, Credit Note, Simplified Invoice |
-| **Format**           | XML (FatturaPA 1.2.x)                    |
-| **Standard**         | FatturaPA (SDI)                          |
+| **国家 / 地区**      | 意大利                                  |
+| **文档类型**         | 发票、贷项通知单、简化发票              |
+| **格式**             | XML (FatturaPA 1.2.x)                    |
+| **标准**             | FatturaPA (SDI)                          |
 
-FatturaPA is the Italian electronic invoicing standard mandated by the Agenzia delle Entrate. Since January 2019, all invoices between Italian businesses must be transmitted through the Sistema di Interscambio (SDI). DocBits processes FatturaPA XML documents and extracts all header and line-item fields.
+FatturaPA 是由意大利税务局（Agenzia delle Entrate）规定的意大利电子发票标准。自 2019 年 1 月起，意大利企业之间的所有发票都必须通过 Sistema di Interscambio (SDI) 传输。DocBits 可处理 FatturaPA XML 文档，并提取所有抬头和行项目字段。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件         | 状态        |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览         | ✅ 支持      |
+| 字段提取     | ✅ 支持      |
+| 转换         | ✅ 支持      |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/fatturapa-preview.png" alt="FatturaPA invoice preview in DocBits"><figcaption><p>Default DocBits preview for an Italy FatturaPA invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/fatturapa-preview.png" alt="DocBits 中的 FatturaPA 发票预览"><figcaption><p>DocBits 中意大利 FatturaPA 发票的默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

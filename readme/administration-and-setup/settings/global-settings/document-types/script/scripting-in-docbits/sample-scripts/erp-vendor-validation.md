@@ -1,18 +1,18 @@
-# ERP Vendor Validation
+# ERP 供应商验证
 
 {% hint style="info" %}
-**Available from version 11.48.0** — Requires `OPENSEARCH_ENABLED` license.
+**从版本 11.48.0 起可用** — 需要 `OPENSEARCH_ENABLED` 许可证。
 {% endhint %}
 
-## What does this script do?
+## 此脚本的作用
 
-Validates whether the vendor on the invoice exists in the ERP master data indexed in OpenSearch. If the vendor is not found in ERP, the field is marked as invalid. This complements the existing `is_supplier_valid()` function by searching the ERP index rather than the lookup table.
+验证发票上的供应商是否存在于已编入 OpenSearch 索引的 ERP 主数据中。如果在 ERP 中找不到该供应商，则会将该字段标记为无效。此脚本通过搜索 ERP 索引而非查找表，补充现有的 `is_supplier_valid()` 函数。
 
-## Trigger
+## 触发条件
 
-`AFTER_FORMATTING` on document type **INVOICE**
+文档类型为 **INVOICE** 时触发 `AFTER_FORMATTING`
 
-## Full Script
+## 完整脚本
 
 ```python
 vendor = get_field_value(document_data, "supplier_name", "")
@@ -31,7 +31,7 @@ if vendor:
         )
 ```
 
-## Variant: Validate with Vendor Number
+## 变体：使用供应商编号进行验证
 
 ```python
 vendor_nr = get_field_value(document_data, "supplier_id", "")
@@ -56,16 +56,16 @@ if vendor_nr:
         )
 ```
 
-## Step-by-Step Explanation
+## 分步说明
 
-1. **Read vendor name** from the current document
-2. **Search ERP master data** with `fulltext_search_erp()` filtering by entity type `"vendor"`
-3. **If not found**: Mark the supplier name field as invalid
-4. **Variant**: Search by vendor number and auto-fill the vendor name from ERP data
+1. **读取供应商名称**：从当前文档中读取
+2. **搜索 ERP 主数据**：使用 `fulltext_search_erp()`，并按实体类型 `"vendor"` 筛选
+3. **如果未找到**：将供应商名称字段标记为无效
+4. **变体**：按供应商编号搜索，并使用 ERP 数据自动填充供应商名称
 
-## Functions Used
+## 使用的函数
 
-- [get\_field\_value()](../field-functions.md#get\_field\_value) — Read field value
-- [fulltext\_search\_erp()](../fulltext-search-functions.md#fulltext\_search\_erp) — Search ERP master data
-- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Show validation error
-- [set\_field\_value()](../field-functions.md#set\_field\_value) — Write field value
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — 读取字段值
+- [fulltext\_search\_erp()](../fulltext-search-functions.md#fulltext\_search\_erp) — 搜索 ERP 主数据
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — 显示验证错误
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — 写入字段值

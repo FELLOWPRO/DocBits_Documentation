@@ -1,35 +1,35 @@
-# Supplier Registration
+# 供应商注册
 
-1. You will receive an invitation with a link via E-mail to begin the registration process. Please click on “Go to Registration,” submit the required information, and accept the terms and conditions to get started.\
-   ![](<../../../.gitbook/assets/image (51).png>)![](<../../../.gitbook/assets/image (242).png>)
-2.  **Supplier Details**
+1. 您将通过电子邮件收到一封邀请，其中包含开始注册流程的链接。请点击“Go to Registration”，提交所需信息并接受条款和条件，即可开始注册。\
+   ![](<../../../.gitbook/assets/image (105).png>)![](<../../../.gitbook/assets/image (324).png>)
+2.  **供应商详情**
 
-    Please verify that the Supplier name is correct. This is a critical detail for identity and legal purposes that cannot be changed. Please provide all applicable information including the required fields. When completed, click on “Next” to continue to the Address Data section. To save your progress and continue later, click on “Save.”\\
+    请确认供应商名称正确。此信息对于身份识别和法律用途至关重要，且无法更改。请填写所有适用信息，包括必填字段。完成后，点击“Next”继续填写地址数据。若要保存进度并稍后继续，请点击“Save”。\\
 
-    <figure><img src="../../../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure>
-3.  **Address Data**\
-    Please provide all applicable information including the required fields. When completed, click on “Next” to continue to the Supplier Contact section. To save your progress and continue later, click on “Save.”\\
+    <figure><img src="../../../.gitbook/assets/image (325).png" alt=""><figcaption></figcaption></figure>
+3.  **地址数据**\
+    请填写所有适用信息，包括必填字段。完成后，点击“Next”继续填写供应商联系人信息。若要保存进度并稍后继续，请点击“Save”。\\
 
-    <figure><img src="../../../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>
-4.  **Supplier Contact**\
-    Please provide all applicable information including the required fields. When completed, click on “Next” to continue to the Supplier Financial section. To save your progress and continue later, click on “Save.”\\
+    <figure><img src="../../../.gitbook/assets/image (326).png" alt=""><figcaption></figcaption></figure>
+4.  **供应商联系人**\
+    请填写所有适用信息，包括必填字段。完成后，点击“Next”继续填写供应商财务信息。若要保存进度并稍后继续，请点击“Save”。\\
 
-    <figure><img src="../../../.gitbook/assets/image (248).png" alt=""><figcaption></figcaption></figure>
-5.  **Supplier Financial**\
-    Please provide all applicable information. When completed, click on “Next” to continue to the Supplier Purchase section. To save your progress and continue later, click on “Save.”\\
+    <figure><img src="../../../.gitbook/assets/image (327).png" alt=""><figcaption></figcaption></figure>
+5.  **供应商财务信息**\
+    请填写所有适用信息。完成后，点击“Next”继续填写供应商采购信息。若要保存进度并稍后继续，请点击“Save”。\\
 
-    <figure><img src="../../../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
-6.  **Supplier Purchase**\
-    Please provide all applicable information. When completed, click on “Next” to continue to the Supplier Certificates section. To save your progress and continue later, click on “Save.”\\
+    <figure><img src="../../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
+6.  **供应商采购信息**\
+    请填写所有适用信息。完成后，点击“Next”继续填写供应商证书信息。若要保存进度并稍后继续，请点击“Save”。\\
 
-    <figure><img src="../../../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>
-7.  **Supplier Certificates**\
-    Please upload all certificates required (Tax, Insurance, Vendor Diversification). Please save your progress if you need to return to complete the registration process later. When completed, click on “Send for Approval.”\\
+    <figure><img src="../../../.gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
+7.  **供应商证书**\
+    请上传所有必需的证书（税务、保险、供应商多元化）。如果需要稍后返回并完成注册流程，请保存当前进度。完成后，点击“Send for Approval”。\\
 
-    <figure><img src="../../../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
-8.  Please upload all certificates required (Tax, Insurance, Vendor Diversification). Please save your progress if you need to return to complete the registration process later. When completed, click on “Send for Approval.”\\
+    <figure><img src="../../../.gitbook/assets/image (330).png" alt=""><figcaption></figcaption></figure>
+8.  请上传所有必需的证书（税务、保险、供应商多元化）。如果需要稍后返回并完成注册流程，请保存当前进度。完成后，点击“Send for Approval”。\\
 
-    <figure><img src="../../../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
-9.  Please check your E-mail for a confirmation that you have completed the registration process.\\
+    <figure><img src="../../../.gitbook/assets/image (331).png" alt=""><figcaption></figcaption></figure>
+9.  请查收电子邮件，确认您已完成注册流程。\\
 
-    <figure><img src="../../../.gitbook/assets/image (253).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (332).png" alt=""><figcaption></figcaption></figure>

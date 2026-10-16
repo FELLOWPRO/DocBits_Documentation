@@ -1,19 +1,18 @@
-# Export not matched PO lines
+# 导出未匹配的采购订单行
 
-## **Where to Find It**
+## **在哪里可以找到**
 
-Go to **Settings → General Settings → Document Types → More Settings → Purchase Order Section → Export Not Matched PO Lines**.\
-Toggle the button to enable this setting.
+前往 **设置 → 常规设置 → 文档类型 → 更多设置 → 采购订单部分 → 导出未匹配的采购订单行**。\
+切换按钮以启用此设置。
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
-## **How It Works**
+## **工作原理**
 
-* **When disabled**, the system only exports purchase order lines that are matched with an order confirmation line. Unmatched purchase order lines will not be included in the export.
-* **When enabled**, the system exports all purchase order lines, even if they are not matched to an order confirmation line.
+* **禁用时**，系统只会导出与订单确认行匹配的采购订单行。未匹配的采购订单行不会包含在导出内容中。
+* **启用时**，系统会导出所有采购订单行，即使它们未与订单确认行匹配。
 
-For example, if a purchase order has **three lines**, but the supplier sends an **order confirmation with only one line**, you match that line to a purchase order line. The remaining two unmatched purchase order lines will be:
+例如，如果采购订单有 **三行**，但供应商发送的**订单确认只有一行**，您将该行与一条采购订单行匹配。其余两条未匹配的采购订单行将：
 
-* **Excluded from the export** if the setting is disabled.
-* **Included in the export** if the setting is enabled.
-
+* 如果禁用此设置，**不会包含在导出内容中**。
+* 如果启用此设置，**会包含在导出内容中**。

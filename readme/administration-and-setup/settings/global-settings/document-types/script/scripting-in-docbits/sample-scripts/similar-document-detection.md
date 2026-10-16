@@ -1,18 +1,18 @@
-# Similar Document Detection (Vector Search)
+# 相似文档检测（向量搜索）
 
 {% hint style="info" %}
-**Available from version 11.48.0** — Requires `OPENSEARCH_ENABLED` license.
+**自版本 11.48.0 起可用** — 需要 `OPENSEARCH_ENABLED` 许可证。
 {% endhint %}
 
-## What does this script do?
+## 此脚本的作用
 
-Uses vector-based similarity search to find documents that are semantically similar to the current one. If a document with more than 95% similarity is found, the invoice number is flagged as potentially fraudulent or duplicate.
+使用基于向量的相似性搜索，查找与当前文档在语义上相似的文档。如果找到相似度超过 95% 的文档，则会将发票编号标记为可能存在欺诈或重复。
 
-## Trigger
+## 触发器
 
-`AFTER_FORMATTING` on document type **INVOICE**
+文档类型 **INVOICE** 上的 `AFTER_FORMATTING`
 
-## Full Script
+## 完整脚本
 
 ```python
 doc_id = document_json["doc_id"]
@@ -27,23 +27,23 @@ for doc in similar:
         break
 ```
 
-## Step-by-Step Explanation
+## 分步说明
 
-1. **Get current document ID** from `document_json`
-2. **Find similar documents** with `vector_search()` returning the 5 nearest neighbors
-3. **Check similarity threshold**: If any document exceeds 95% similarity, flag it
-4. **Mark as invalid** with the similar document's name and similarity score
+1. **获取当前文档 ID**：从 `document_json` 获取
+2. **查找相似文档**：通过 `vector_search()` 返回最近的 5 个邻居
+3. **检查相似度阈值**：如果任何文档的相似度超过 95%，则将其标记
+4. **标记为无效**：附上相似文档的名称和相似度分数
 
-## How Vector Search Works
+## 向量搜索的工作原理
 
-Each document's OCR text is converted to a 384-dimensional vector embedding when indexed. `vector_search()` finds the nearest neighbors in this vector space using k-NN (k-Nearest Neighbors), returning documents whose content is semantically similar — even if the exact words differ.
+每个文档的 OCR 文本在建立索引时都会转换为 384 维向量嵌入。`vector_search()` 使用 k-NN（k-最近邻）在此向量空间中查找最近邻，返回内容在语义上相似的文档，即使具体用词不同也能找到。
 
-**Use cases:**
-- Fraud detection (nearly identical invoices from different "vendors")
-- Duplicate detection that goes beyond exact text matching
-- Finding related documents across different formats or languages
+**使用场景：**
+- 欺诈检测（来自不同“供应商”的几乎相同的发票）
+- 超越精确文本匹配的重复项检测
+- 跨不同格式或语言查找相关文档
 
-## Functions Used
+## 使用的函数
 
-- [vector\_search()](../fulltext-search-functions.md#vector\_search) — Find semantically similar documents
-- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Show validation error
+- [vector\_search()](../fulltext-search-functions.md#vector\_search) — 查找语义相似的文档
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — 显示验证错误

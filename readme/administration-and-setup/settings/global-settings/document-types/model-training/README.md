@@ -1,22 +1,22 @@
-# Model Training
+# 模型训练
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.07.01.png" alt=""><figcaption></figcaption></figure>
 
-#### Overview
+#### 概述
 
-Model Training allows administrators to oversee and manage the training of machine learning models specific to each document type. By providing a structured interface for importing sample data, training models, and testing their performance, Docbits ensures that its data extraction capabilities continuously improve over time.
+模型训练允许管理员监督和管理针对每种文档类型的机器学习模型训练。Docbits 提供了一个结构化界面，用于导入样本数据、训练模型和测试模型性能，确保其数据提取能力随着时间不断提升。
 
-#### Key Features and Options
+#### 主要功能和选项
 
-1. **Metrics Overview**:
-   * **Sample**: Number of sample documents used for training.
-   * **Exported**: Number of documents that have been successfully exported after processing.
-   * **Company Σ**: Total number of company-specific documents processed.
-   * **Overall Σ**: Total number of documents processed across all categories.
-2. **Training and Testing Options**:
-   * **Import**: Allows administrators to import new training data sets which are typically structured samples of documents that should be recognized by the system.
-   * **Train Model**: Starts the training process using the imported data to enhance the recognition and extraction capabilities of the system.
-   * **Test Classification**: Enables testing of the model to evaluate its performance on classifying and extracting data from new or unseen documents.
-3. **Action Buttons**:
-   * **Create Field**: Add new data fields that the model should recognize and extract.
-   * **Actions**: This dropdown can include options such as view details, edit configurations, or delete training data.
+1. **指标概览**：
+   * **样本**：用于训练的样本文档数量。
+   * **已导出**：处理后已成功导出的文档数量。
+   * **公司 Σ**：已处理的公司专属文档总数。
+   * **总计 Σ**：所有类别中已处理的文档总数。
+2. **训练和测试选项**：
+   * **导入**：允许管理员导入新的训练数据集，这些数据集通常是系统需要识别的结构化文档样本。
+   * **训练模型**：使用导入的数据启动训练流程，以提升系统的识别和提取能力。
+   * **测试分类**：允许测试模型，以评估其对新文档或未见过的文档进行分类和提取数据的性能。
+3. **操作按钮**：
+   * **创建字段**：添加模型需要识别和提取的新数据字段。
+   * **操作**：此下拉菜单可能包含查看详情、编辑配置或删除训练数据等选项。

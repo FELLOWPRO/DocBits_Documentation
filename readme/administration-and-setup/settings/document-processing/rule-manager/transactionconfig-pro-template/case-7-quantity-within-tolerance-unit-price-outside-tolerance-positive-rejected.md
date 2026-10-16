@@ -1,39 +1,39 @@
-# Case 7: Quantity Within Tolerance, Unit Price Outside Tolerance (Positive Rejected)
+# 案例 7：数量在容差范围内，单价超出容差（正向超差，已拒绝）
 
-## Scenario:
+## 场景：
 
-The quantity is within tolerance, but the unit price exceeds the acceptable range (positive tolerance) and is not approved.
+数量在容差范围内，但单价超出可接受范围（正向容差），且未获批准。
 
-## Action:
+## 操作：
 
-The system rejects the invoice unit price, adjusts it to match the purchase order, and may generate a debit note to account for the overcharged amount.
+系统拒绝发票单价，将其调整为与采购订单一致，并可能生成借项通知单，以处理多收的金额。
 
-## Example:
+## 示例：
 
-* **Purchase Order (PO):**
-  * Quantity: 200 units
-  * Unit Price: $15.00 per unit
-  * Total Amount: $3,000.00
-* **Invoice Received:**
-  * Quantity: 198 units (within tolerance of 1%)
-  * Unit Price: $17.00 per unit (outside positive tolerance of 13.33%)
-  * Total Amount: $3,366.00
-* **Tolerance Levels:**
-  * Quantity Tolerance: ±2%
-  * Unit Price Tolerance: ±1%
+* **采购订单（PO）：**
+  * 数量：200 件
+  * 单价：每件 $15.00
+  * 总金额：$3,000.00
+* **收到的发票：**
+  * 数量：198 件（在 1% 的容差范围内）
+  * 单价：每件 $17.00（超出正向容差 13.33%）
+  * 总金额：$3,366.00
+* **容差级别：**
+  * 数量容差：±2%
+  * 单价容差：±1%
 
-Since the quantity (198 units) is within the acceptable tolerance range but the unit price ($17.00) exceeds the acceptable tolerance and is not approved, the system will:
+由于数量（198 件）在可接受的容差范围内，但单价（$17.00）超出可接受的容差且未获批准，系统将：
 
-1. **Reject the Invoice Unit Price:** The system does not accept the invoiced unit price of $17.00.
-2. **Adjust the Unit Price:** The system adjusts the unit price to match the original purchase order unit price.
-   * Adjusted Unit Price = $15.00 (from PO)
-3. **Calculate the Corrected Total Amount:** Using the adjusted unit price, the system recalculates the total amount.
-   * **Corrected Total Amount = Quantity × Adjusted Unit Price**
-   * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**
-4. **Generate a Debit Note:** The system generates a debit note to account for the difference due to the overcharge.
-   * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
-   * **Debit Note Amount = $3,366.00 - $2,970.00 = $396.00**
-   * This debit note represents the amount overcharged by the supplier.
-5. **Process the Invoice:** The system processes the invoice with the corrected total amount of $2,970.00 and issues a debit note for $396.00 to offset the overcharge.
+1. **拒绝发票单价：**系统不接受发票中的单价 $17.00。
+2. **调整单价：**系统将单价调整为与原采购订单单价一致。
+   * 调整后的单价 = $15.00（取自 PO）
+3. **计算更正后的总金额：**系统使用调整后的单价重新计算总金额。
+   * **更正后的总金额 = 数量 × 调整后的单价**
+   * **更正后的总金额 = 198 件 × 每件 $15.00 = $2,970.00**
+4. **生成借项通知单：**系统生成借项通知单，以处理多收金额造成的差额。
+   * **借项通知单金额 = 原发票总金额 - 更正后的总金额**
+   * **借项通知单金额 = $3,366.00 - $2,970.00 = $396.00**
+   * 该借项通知单表示供应商多收的金额。
+5. **处理发票：**系统按更正后的总金额 $2,970.00 处理发票，并签发金额为 $396.00 的借项通知单，以抵消多收的金额。
 
-This approach ensures that any overcharging is corrected, aligning the transaction with the purchase order terms and protecting the financial interests of the business.
+这种做法可确保更正多收的金额，使交易符合采购订单条款，并保护企业的财务利益。

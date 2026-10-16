@@ -1,65 +1,65 @@
-# Custom classification tag
+# 自定义分类标签
 
-## Table `public.custom_classification_tag`
+## 表 `public.custom_classification_tag`
 
-### Spalten
+### 列
 
-* `id`: integer
-* `org_id`: ID to organisation
-* `name`: internal
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
+* `id`：整数
+* `org_id`：组织 ID
+* `name`：内部名称
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
 
-### Analyse & Beschreibung
+### 分析与描述
 
-## Technical Documentation for `public.custom_classification_tag` Table
+## `public.custom_classification_tag` 表技术文档
 
-### Introduction
+### 简介
 
-The `public.custom_classification_tag` table is designed to manage custom classification tags within an organization. It captures essential information about each tag, including its association with an organization, its creation and modification details, and its lifecycle status.
+`public.custom_classification_tag` 表用于管理组织内的自定义分类标签。该表记录每个标签的基本信息，包括所属组织、创建和修改信息，以及生命周期状态。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: A unique identifier for each classification tag.
-* **Role**: Primary key.
-* **Typical Contents**: An integer value that uniquely identifies each record in the table.
+* **含义**：每个分类标签的唯一标识符。
+* **作用**：主键。
+* **典型内容**：用于唯一标识表中每条记录的整数值。
 
 #### org\_id
 
-* **Meaning**: The identifier of the organization to which the classification tag belongs.
-* **Role**: Foreign key.
-* **Typical Contents**: A character string, likely a UUID, representing the organization's unique ID.
+* **含义**：分类标签所属组织的标识符。
+* **作用**：外键。
+* **典型内容**：表示组织唯一 ID 的字符串，可能是 UUID。
 
 #### name
 
-* **Meaning**: The name or label of the classification tag.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string that denotes the tag's name or description. It can be an empty string if the name is not provided.
+* **含义**：分类标签的名称或标签文本。
+* **作用**：描述性字段。
+* **典型内容**：表示标签名称或描述的字符串。如果未提供名称，该字段可以为空字符串。
 
 #### created\_by
 
-* **Meaning**: The identifier of the user who created the classification tag.
-* **Role**: Foreign key.
-* **Typical Contents**: An integer representing the user ID of the creator.
+* **含义**：创建分类标签的用户标识符。
+* **作用**：外键。
+* **典型内容**：表示创建者用户 ID 的整数值。
 
 #### created\_on
 
-* **Meaning**: The timestamp indicating when the classification tag was created.
-* **Role**: Technical field.
-* **Typical Contents**: A timestamp with time zone, capturing the exact date and time of creation.
+* **含义**：分类标签的创建时间戳。
+* **作用**：技术字段。
+* **典型内容**：带时区的时间戳，记录创建的准确日期和时间。
 
 #### last\_modified\_on
 
-* **Meaning**: The timestamp of the last modification made to the classification tag.
-* **Role**: Technical field.
-* **Typical Contents**: A timestamp with time zone, which may be `None` if no modifications have occurred since creation.
+* **含义**：分类标签的最后修改时间戳。
+* **作用**：技术字段。
+* **典型内容**：带时区的时间戳；如果创建后未发生修改，该值可能为 `None`。
 
 #### is\_deleted
 
-* **Meaning**: A flag indicating whether the classification tag has been marked as deleted.
-* **Role**: Technical field.
-* **Typical Contents**: A boolean value (`True` or `False`), where `False` means the tag is active and `True` indicates it has been deleted or deactivated.
+* **含义**：指示分类标签是否已标记为删除的标志。
+* **作用**：技术字段。
+* **典型内容**：布尔值（`True` 或 `False`），其中 `False` 表示标签处于启用状态，`True` 表示标签已删除或停用。

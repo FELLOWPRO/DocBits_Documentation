@@ -1,14 +1,14 @@
-# Due Date Calculation
+# 到期日计算
 
-## What does this script do?
+## 此脚本的作用
 
-Calculates the payment due date based on the invoice date by adding a configurable number of days (e.g., 30). Weekends are automatically skipped so the due date always falls on a business day.
+根据发票日期，通过增加可配置的天数（例如 30 天）来计算付款到期日。系统会自动跳过周末，因此到期日始终为工作日。
 
-## Trigger
+## 触发条件
 
-`AFTER_FORMATTING` on document type **INVOICE**
+文档类型 **INVOICE** 上的 `AFTER_FORMATTING`
 
-## Full Script
+## 完整脚本
 
 ```python
 # Read invoice date
@@ -23,39 +23,39 @@ if inv_date:
     set_date_value(document_data, "accounting_date", inv_date)
 ```
 
-## Variations
+## 变体
 
-### 14 days, excluding Mondays
+### 14 天，排除星期一
 
 ```python
 set_date_value(document_data, "due_date", inv_date,
                add_days=14, skip_weekend=True, exclude_final_days="MONDAY")
 ```
 
-### 60 days, no weekend skip
+### 60 天，不跳过周末
 
 ```python
 set_date_value(document_data, "due_date", inv_date, add_days=60)
 ```
 
-### Set delivery date to today
+### 将交付日期设为今天
 
 ```python
 set_date_value(document_data, "delivery_date", None)  # None = today
 ```
 
-## Step-by-Step Explanation
+## 分步说明
 
-1. **Read invoice date** from the document
-2. **Calculate due date** using `set_date_value()` with `add_days=30` and `skip_weekend=True`
-3. **Date formatting** is automatic — uses the document's `date_format_pattern` (e.g., `%d.%m.%Y`)
-4. **Weekend skip** ensures the due date falls on Mon-Fri
+1. **读取发票日期**：从文档中读取
+2. 使用 `set_date_value()` 和 `add_days=30`、`skip_weekend=True` **计算到期日**
+3. **日期格式会自动设置**：使用文档的 `date_format_pattern`（例如 `%d.%m.%Y`）
+4. **跳过周末**：确保到期日落在星期一至星期五
 
-## Day Codes for `exclude_final_days`
+## `exclude_final_days` 的星期代码
 
-`MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`, `FRIDAY`, `SATURDAY`, `SUNDAY`
+`MONDAY`、`TUESDAY`、`WEDNESDAY`、`THURSDAY`、`FRIDAY`、`SATURDAY`、`SUNDAY`
 
-## Functions Used
+## 使用的函数
 
-- [get\_field\_value()](../field-functions.md#get\_field\_value) — Read invoice date
-- [set\_date\_value()](../field-functions.md#set\_date\_value) — Calculate and set due date
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — 读取发票日期
+- [set\_date\_value()](../field-functions.md#set\_date\_value) — 计算并设置到期日

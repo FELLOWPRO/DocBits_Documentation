@@ -1,303 +1,303 @@
-# DocBits (FELLOWPRO AG) — Security & Compliance Questionnaire
+# DocBits (FELLOWPRO AG) — 安全与合规问卷
 
-**Vendor:** DocBits by FELLOWPRO AG | **Hosting:** Frankfurt, Germany | **ISO 27001 Certified** | **Date:** 2026-03-04
+**供应商：** FELLOWPRO AG 旗下 DocBits | **托管位置：** 德国法兰克福 | **已通过 ISO 27001 认证** | **日期：** 2026-03-04
 
-Credential storage and public-endpoint TLS information was reviewed on **16 October 2026**. See [Secure Storage of Credentials](secure-storage-of-credentials.md) for the verified scope and the deployment-specific details that still require confirmation.
+凭据存储和公共端点 TLS 信息已于 **2026 年 10 月 16 日**审核。请参阅[凭据的安全存储](secure-storage-of-credentials.md)，了解已核实的范围以及仍需确认的部署特定详情。
 
-Encryption-at-rest details were reviewed on **16 October 2026** against DigitalOcean security documentation and service metadata. See [Encryption at Rest](encryption-at-rest.md), including questionnaire item 4.8.
+静态加密详情已于 **2026 年 10 月 16 日**依据 DigitalOcean 安全文档和服务元数据审核。请参阅[静态加密](encryption-at-rest.md)，其中也包含问卷第 4.8 项。
 
 ---
 
-## Status Legend
+## 状态图例
 
-| Symbol | Meaning |
+| 符号 | 含义 |
 |--------|---------|
-| ✅ Confirmed | Answer verified from official DocBits documentation or public sources |
-| ✅ Partial | Partially answered; additional detail needed from DocBits team |
-| ❓ To Confirm | No public information available — must be confirmed directly with DocBits/FELLOWPRO |
-| ⚠️ Needs Clarification | Public information raises concerns or ambiguity that requires explicit vendor clarification |
+| ✅ 已确认 | 已根据 DocBits 官方文档或公开来源核实答案 |
+| ✅ 部分确认 | 已部分回答；还需要 DocBits 团队补充详情 |
+| ❓ 待确认 | 没有可用的公开信息 — 必须直接向 DocBits/FELLOWPRO 确认 |
+| ⚠️ 需要澄清 | 公开信息存在疑虑或歧义，需要供应商明确说明 |
 
 ---
 
-## 🔹 Data Location & Residency
+## 🔹 数据位置与驻留
 
-### 1. Where exactly is the production environment hosted?
+### 1. 生产环境具体托管在哪里？
 
-**Response:** The EU production environment is hosted on DigitalOcean cloud infrastructure in Frankfurt, Germany. DocBits uses DigitalOcean Spaces for storage and managed PostgreSQL, OpenSearch, and Valkey services. DocBits is ISO 27001 certified. See [Encryption at Rest](encryption-at-rest.md) and [Secure Storage of Credentials](secure-storage-of-credentials.md) for the encryption scope.
+**答复：** 欧盟生产环境托管在德国法兰克福的 DigitalOcean 云基础设施上。DocBits 使用 DigitalOcean Spaces 进行存储，并使用托管 PostgreSQL、OpenSearch 和 Valkey 服务。DocBits 已通过 ISO 27001 认证。有关加密范围，请参阅[静态加密](encryption-at-rest.md)和[凭据的安全存储](secure-storage-of-credentials.md)。
 
-**Status:** ✅ Confirmed
+**状态：** ✅ 已确认
 
-**Notes:** DigitalOcean Frankfurt: managed database service types confirmed from infrastructure metadata on 16 October 2026; Spaces use is documented in this FAQ.
-
----
-
-### 2. Where is the DR (Disaster Recovery) environment hosted?
-
-**Response:** DR leverages secondary backup location in Amsterdam, Netherlands (EU). Combined with primary Frankfurt site, this provides geographic redundancy within the EU.
-
-**Status:** ✅ Confirmed
-
-**Notes:** Frankfurt (primary) + Amsterdam (secondary). Both EU locations. Ask for RTO/RPO targets and failover process details.
+**备注：** DigitalOcean 法兰克福：托管数据库服务类型已于 2026 年 10 月 16 日根据基础设施元数据确认；本问卷中记录了 Spaces 的使用情况。
 
 ---
 
-### 3. Where are backups stored?
+### 2. 灾难恢复（DR）环境托管在哪里？
 
-**Response:** Backups stored in two EU locations:
-- **Primary:** Frankfurt, Germany
-- **Secondary:** Amsterdam, Netherlands
+**答复：** DR 使用位于荷兰阿姆斯特丹的次级备份位置（欧盟）。与法兰克福主站点结合后，可在欧盟境内提供地理冗余。
 
-Backup schedule: Daily, Weekly, Quarterly, and Yearly backups.
+**状态：** ✅ 已确认
 
-**Status:** ✅ Confirmed
-
-**Notes:** Comprehensive backup schedule (daily/weekly/quarterly/yearly) across two EU locations. All data stays within EU. Confirm backup encryption and restore testing frequency. The encryption of provider-managed database backups is described in [Encryption at Rest](encryption-at-rest.md); this does not verify every copy in the wider backup schedule.
+**备注：** 法兰克福（主位置）+ 阿姆斯特丹（次级位置）。两处均位于欧盟。请询问 RTO/RPO 目标和故障转移流程详情。
 
 ---
 
-### 4. Are there geo-partitioning options (e.g., UK-only)?
+### 3. 备份存储在哪里？
 
-**Response:** Two data center regions available:
-- **Frankfurt, Germany** — for all EU customers
-- **New York, USA** — for US customers only
+**答复：** 备份存储在欧盟的两个位置：
+- **主位置：** 德国法兰克福
+- **次级位置：** 荷兰阿姆斯特丹
 
-EU customer data is hosted exclusively in Frankfurt. No UK-only option currently available.
+备份计划：每日、每周、每季度和每年备份。
 
-**Status:** ✅ Confirmed
+**状态：** ✅ 已确认
 
-**Notes:** EU customers are Frankfurt-only — no cross-region data mixing. UK-only hosting not available; UK customers would be served from Frankfurt. Clarify if additional regions are on the roadmap.
-
----
-
-### 5. Is data encrypted at rest and in transit?
-
-**Response:** The public endpoints `app.docbits.com`, `auth.docbits.com`, and `api.docbits.com` support HTTPS with TLS 1.2 and TLS 1.3. Checks on 16 October 2026 rejected TLS 1.0 and TLS 1.1. Login passwords and keys created through API Key Management are protected using one-way hashing. Hashing is separate from encryption of databases, storage, and backups.
-
-**At rest:** DigitalOcean Managed Databases use full-volume LUKS encryption with AES-256-XTS; their managed backups use AES-256-CTR. Spaces uses 256-bit AES-XTS on physical disks. See [Encryption at Rest](encryption-at-rest.md) for methods, key management, backup coverage, and the answer to questionnaire item 4.8.
-
-**Status:** ✅ Partial
-
-**Notes:** This covers the named managed services. Additional exports, archives, backup copies, any field-level encryption, and every internal connection require separate deployment-specific confirmation. Storage encryption does not establish personnel access restrictions. See [Secure Storage of Credentials](secure-storage-of-credentials.md) for hashing and access distinctions.
+**备注：** 在欧盟两个位置执行完整的备份计划（每日/每周/每季度/每年）。所有数据均保留在欧盟境内。请确认备份加密和恢复测试频率。托管数据库备份的加密方式见[静态加密](encryption-at-rest.md)；这并不能验证更广泛备份计划中的每一份副本。
 
 ---
 
-## 🔹 AI/ML Model Handling
+### 4. 是否提供地理分区选项（例如，仅限英国）？
 
-### 6. Are invoice contents sent to any third-party model host (e.g., OpenAI, Azure AI)?
+**答复：** 提供两个数据中心区域：
+- **德国法兰克福** — 面向所有欧盟客户
+- **美国纽约** — 仅面向美国客户
 
-**Response:** AI models are NOT sent to third-party hosts. DocBits uses Mistral AI models running in Frankfurt, Germany — same location as production environment. No data leaves the Frankfurt region for AI processing.
+欧盟客户的数据仅托管在法兰克福。目前不提供仅限英国的选项。
 
-**Status:** ✅ Confirmed
+**状态：** ✅ 已确认
 
-**Notes:** Mistral models hosted in Frankfurt. No third-party API calls for document processing. Fully self-contained.
-
----
-
-### 7. Are extracted documents used to train broader models across customers?
-
-**Response:** Yes — DocBits uses "AI swarm intelligence" which trains classification and extraction models across all customers. However, the technology works like a map through the data — it learns the coordinates/structural positions of data fields on documents, NOT the actual document content. Raw document data is not shared across tenants.
-
-**Status:** ✅ Confirmed
-
-**Notes:** Swarm intelligence learns structural layout patterns (field coordinates/positions), not document content. This means no customer data (invoice amounts, supplier names, etc.) is shared across tenants — only document structure knowledge.
+**备注：** 欧盟客户仅使用法兰克福 — 不会跨区域混合数据。无法选择仅在英国托管；英国客户的数据将托管在法兰克福。请确认是否计划增加其他区域。
 
 ---
 
-### 8. Can you restrict model training to your tenant only?
+### 5. 数据在静态存储和传输过程中是否加密？
 
-**Response:** No per-tenant model isolation option. However, the shared AI models only learn document layout coordinates and structural patterns — not actual document content or business data. Customers can additionally train custom document types scoped to their own tenant.
+**答复：** 公共端点 `app.docbits.com`、`auth.docbits.com` 和 `api.docbits.com` 支持使用 TLS 1.2 和 TLS 1.3 的 HTTPS。2026 年 10 月 16 日的检查确认不接受 TLS 1.0 和 TLS 1.1。登录密码以及通过 API Key Management 创建的密钥均使用单向哈希保护。哈希与数据库、存储和备份的加密是不同的机制。
 
-**Status:** ✅ Confirmed
+**静态存储：** DigitalOcean Managed Databases 使用 AES-256-XTS 全卷 LUKS 加密；其托管备份使用 AES-256-CTR。Spaces 在物理磁盘上使用 256 位 AES-XTS。有关加密方法、密钥管理、备份覆盖范围以及问卷第 4.8 项的答复，请参阅[静态加密](encryption-at-rest.md)。
 
-**Notes:** Low risk: Shared models learn positional/structural data only (coordinates), not business content. Custom document type training remains tenant-scoped.
+**状态：** ✅ 部分确认
 
----
-
-### 9. Where are AI/ML models hosted and executed?
-
-**Response:** AI/ML models (Mistral) are hosted and executed in Frankfurt, Germany — same region as the production environment.
-
-**Status:** ✅ Confirmed
-
-**Notes:** Good: AI processing stays within Frankfurt. No data transfer to external AI infrastructure.
+**备注：** 此处涵盖所列的托管服务。其他导出文件、存档、备份副本、字段级加密以及每条内部连接，仍需根据具体部署单独确认。存储加密并不能证明人员访问受到限制。有关哈希和访问权限的区别，请参阅[凭据的安全存储](secure-storage-of-credentials.md)。
 
 ---
 
-### 10. What AI/ML technologies are used (OCR engine, LLM, NLP)?
+## 🔹 AI/ML 模型处理
 
-**Response:** DocBits uses AI, OCR, machine learning for extraction. Supports 120+ languages. Claims 96%+ accuracy. Also uses Gen AI for "AI Tags" feature.
+### 6. 发票内容是否会发送给任何第三方模型托管方（例如 OpenAI、Azure AI）？
 
-**Status:** ✅ Partial
+**答复：** AI 模型不会发送给第三方托管方。DocBits 使用在德国法兰克福运行的 Mistral AI 模型 — 与生产环境位于同一位置。AI 处理不会将数据传出法兰克福区域。
 
-**Notes:** Ask for specific model details: proprietary vs. third-party OCR, which LLM powers Gen AI features.
+**状态：** ✅ 已确认
 
----
-
-### 11. Is there an option for on-premise AI model deployment?
-
-**Response:** DocBits architecture documentation references both "DocBits Cloud customer" and "DocBits On premise" deployment options.
-
-**Status:** ✅ Partial
-
-**Notes:** Confirm scope of on-premise option: Does it include full AI processing or only document storage?
+**备注：** Mistral 模型托管在法兰克福。文档处理不会调用第三方 API。处理过程完全自包含。
 
 ---
 
-## 🔹 Data Access & Logging
+### 7. 提取的文档是否会用于训练跨客户通用模型？
 
-### 12. Who (vendor support/engineers) can access raw documents and Infor ERP / SAP data?
+**答复：** 是 — DocBits 使用“AI swarm intelligence（AI 群体智能）”，在所有客户之间训练分类和提取模型。不过，这项技术的工作方式类似于在数据中绘制地图 — 它学习文档中数据字段的坐标/结构位置，而不是实际文档内容。原始文档数据不会在租户之间共享。
 
-**Response:** FELLOWPRO AG has a designated Data Protection Officer (Daniel Jordan). DPAs with subprocessors are in place per GDPR. ISO 27001 mandates access controls.
+**状态：** ✅ 已确认
 
-**Status:** ✅ Partial
-
-**Notes:** Ask DocBits: Exact list of personnel roles with raw document access. Is access need-based / on-demand only?
+**备注：** 群体智能学习结构布局模式（字段坐标/位置），而不是文档内容。这意味着客户数据（发票金额、供应商名称等）不会在租户之间共享 — 只共享有关文档结构的知识。
 
 ---
 
-### 13. What access controls and logging exist for vendor personnel?
+### 8. 能否将模型训练限制在仅针对贵租户？
 
-**Response:** ISO 27001 certification requires documented access controls, audit trails, and security measures. DocBits maintains audit trail for compliance and review.
+**答复：** 不提供按租户隔离模型的选项。不过，共享 AI 模型只学习文档布局坐标和结构模式 — 不会学习实际文档内容或业务数据。客户还可以训练仅供自己租户使用的自定义文档类型。
 
-**Status:** ✅ Partial
+**状态：** ✅ 已确认
 
-**Notes:** Ask for: RBAC details, MFA requirements, privileged access management (PAM), and whether access is logged with immutable audit trails.
-
----
-
-### 14. How long are access logs retained?
-
-**Response:** Logs are stored on DigitalOcean Spaces in Frankfurt and OpenSearch. Customer-accessible logs retained for 30 days. Internal logs retained for 3 months.
-
-**Status:** ✅ Confirmed
-
-**Notes:** DigitalOcean Spaces + OpenSearch in Frankfurt. 30-day customer access / 3-month internal retention. Confirm if logs are immutable/tamper-proof.
+**备注：** 风险较低：共享模型只学习位置/结构数据（坐标），不学习业务内容。自定义文档类型训练仍限定在各自租户内。
 
 ---
 
-### 15. How long are uploaded documents / extracted data retained in DocBits?
+### 9. AI/ML 模型托管和运行在哪里？
 
-**Response:** Customers can configure data retention in settings. Options: 30 days or 3 months. After the configured period, documents and extracted data are automatically deleted from DocBits servers.
+**答复：** AI/ML 模型（Mistral）托管并运行在德国法兰克福 — 与生产环境位于同一区域。
 
-**Status:** ✅ Confirmed
+**状态：** ✅ 已确认
 
-**Notes:** Customer-configurable retention (30 days / 3 months). Confirm: Does deletion include all copies (DigitalOcean Spaces, OpenSearch, AI training data)?
-
----
-
-### 16. Can customers request data deletion on demand?
-
-**Response:** FELLOWPRO AG complies with GDPR data subject rights including erasure requests. DPO processes these requests per GDPR Art. 17.
-
-**Status:** ✅ Confirmed
-
-**Notes:** Confirm: Does deletion cover all copies including backups and AI training data derived from the tenant?
+**备注：** 良好：AI 处理留在法兰克福。数据不会传输到外部 AI 基础设施。
 
 ---
 
-### 17. What subprocessors have access to customer data?
+### 10. 使用了哪些 AI/ML 技术（OCR 引擎、LLM、NLP）？
 
-**Response:** Cloudflare is used for bot protection/DDoS. DPAs are in place with all subprocessors per GDPR requirements.
+**答复：** DocBits 使用 AI、OCR 和机器学习进行提取。支持 120 多种语言。准确率宣称达到 96% 以上。“AI Tags”功能还使用生成式 AI。
 
-**Status:** ✅ Partial
+**状态：** ✅ 部分确认
 
-**Notes:** Request full subprocessor list. Cloudflare confirmed; ask about cloud hosting provider, AI service providers, etc.
-
----
-
-### 18. What certifications and compliance frameworks does DocBits hold?
-
-**Response:** ISO 27001 certified. GDPR compliant. Maintains DPAs with all subprocessors. Designated DPO.
-
-**Status:** ✅ Confirmed
-
-**Notes:** Ask: SOC 2 Type II? Penetration test reports? ISO 27701 (privacy)? Annual audit schedule?
+**备注：** 请询问具体模型详情：OCR 是专有模型还是第三方模型，以及哪些 LLM 为生成式 AI 功能提供支持。
 
 ---
 
-## 🔹 Integration Scope (Infor ERP / SAP)
+### 11. 是否支持在本地部署 AI 模型？
 
-### 19. What is the exact list of data fields pulled from ERP masters for validation?
+**答复：** DocBits 架构文档提到了“DocBits Cloud customer”和“DocBits On premise”两种部署选项。
 
-**Response:** Master data imported via Infor BODs:
-- **Suppliers:** Sync.SupplierPartyMaster, Sync.RemitToPartyMaster
-- **Purchase Orders:** Sync.PurchaseOrder
-- **Chart of Accounts:** Sync.CodeDefinition (ChartOfAccounts)
-- **Flex Dimensions:** Sync.CodeDefinition (FlexDimensions)
-- **Tax Codes:** via BOD publish
+**状态：** ✅ 部分确认
 
-**Status:** ✅ Confirmed
-
-**Notes:** Ask DocBits for complete BOD list and field-level mapping documentation for your specific ERP configuration.
+**备注：** 请确认本地部署选项的范围：它是否包含完整的 AI 处理，还是仅包含文档存储？
 
 ---
 
-### 20. What specific header fields are exported back to the ERP?
+## 🔹 数据访问与日志记录
 
-**Response:** Header export fields include: SupplierCode, PurchaseType, InvoiceType, InvoiceNumberSupplier, InvoiceDate, InvoiceAmount, InvoiceCurrency, RateDeterminer, RateDate, TaxCountry, TransactionEntryDate, Reference, IDMReference, TaxBaseAmount, InvoiceDocumentType, and more.
+### 12. 哪些人员（供应商支持人员/工程师）可以访问原始文档和 Infor ERP / SAP 数据？
 
-**Status:** ✅ Confirmed
+**答复：** FELLOWPRO AG 指定了数据保护官（Daniel Jordan）。根据 GDPR 要求，已与子处理方签订数据处理协议（DPA）。ISO 27001 要求实施访问控制。
 
-**Notes:** Review field mapping file for your specific environment. Confirm all static fields match your ERP company setup.
+**状态：** ✅ 部分确认
 
----
-
-### 21. Are write-back operations scoped only to AP/PO interface objects?
-
-**Response:** Export uses Sync.CaptureDocument BOD which is transformed to target BODs (e.g., AP invoice BODs) in ION Desk. Data also exported to Infor IDM for document archival.
-
-**Status:** ✅ Partial
-
-**Notes:** Confirm: Does DocBits write ONLY to AP invoice and PO receipt objects? Any other ERP modules touched? What about IDM write scope?
+**备注：** 请向 DocBits 询问：哪些具体人员角色可以访问原始文档？访问是否仅基于需要并按需提供？
 
 ---
 
-### 22. What integration method is used (ION API, BODs, direct DB)?
+### 13. 供应商人员有哪些访问控制和日志记录措施？
 
-**Response:** Integration via Infor ION API, ION Desk, and Infor Standard BODs. No direct database access. Uses ION API files and service accounts for authentication.
+**答复：** ISO 27001 认证要求制定有据可查的访问控制、审计跟踪和安全措施。DocBits 会维护审计跟踪，以便合规审查。
 
-**Status:** ✅ Confirmed
+**状态：** ✅ 部分确认
 
-**Notes:** Good: No direct DB access. All communication via Infor standard integration layer.
-
----
-
-### 23. What authentication/authorization is used for ERP connectivity?
-
-**Response:** Uses ION API Files (OAuth2 client credentials) with ION API Client IDs and service accounts created in InforOS.
-
-**Status:** ✅ Confirmed
-
-**Notes:** Ensure service accounts follow least-privilege principle. Review permissions granted to the DocBits ION API user.
+**备注：** 请询问：RBAC 详情、MFA 要求、特权访问管理（PAM），以及访问是否记录在不可变的审计跟踪中。
 
 ---
 
-### 24. Is data transfer between DocBits and the ERP encrypted end-to-end?
+### 14. 访问日志保留多久？
 
-**Response:** The documented ION API integration uses HTTPS. The public DocBits API endpoint supports TLS 1.2 and TLS 1.3. This public-endpoint verification does not establish encryption across every internal processing step or the TLS policy of the customer's ERP endpoint.
+**答复：** 日志存储在法兰克福的 DigitalOcean Spaces 和 OpenSearch 中。客户可访问的日志保留 30 天。内部日志保留 3 个月。
 
-**Status:** ✅ Partial
+**状态：** ✅ 已确认
 
-**Notes:** Confirm the complete connection path, the ERP endpoint's TLS requirements, and certificate validation for the configured integration before making an end-to-end assurance. See [Secure Storage of Credentials](secure-storage-of-credentials.md#encryption-in-transit).
-
----
-
-### 25. What document types are supported beyond AP invoices?
-
-**Response:** Supports invoices, delivery notes/bills, quotations, order confirmations, contracts, and more. Handles PO and non-PO invoices.
-
-**Status:** ✅ Confirmed
-
-**Notes:** Clarify which document types write back to the ERP vs. are only stored in IDM.
+**备注：** DigitalOcean Spaces 和 OpenSearch 均位于法兰克福。客户访问日志保留 30 天 / 内部日志保留 3 个月。请确认日志是否不可变或具有防篡改能力。
 
 ---
 
-## Credential Storage and Account Recovery
+### 15. 上传的文档/提取的数据在 DocBits 中保留多久？
 
-### 26. Can the vendor view client credentials, and what happens if a password is lost?
+**答复：** 客户可以在设置中配置数据保留期限。可选期限：30 天或 3 个月。达到配置的期限后，文档和提取的数据会从 DocBits 服务器自动删除。
 
-**Response:** Login passwords are stored as salted, one-way hashes. Administrators and DocBits support cannot retrieve the original plaintext password from the stored hash. To resume password-based sign-in after forgetting a password, the user sets a new password through the email-based reset procedure. Configured SSO or passkey methods provide alternative sign-in options. API keys created through API Key Management are shown once and stored as one-way hashes; lost keys must be revoked and replaced.
+**状态：** ✅ 已确认
 
-**Status:** ✅ Partial
+**备注：** 客户可配置保留期限（30 天 / 3 个月）。请确认删除是否涵盖所有副本（DigitalOcean Spaces、OpenSearch、AI 训练数据）。
 
-**Notes:** These statements cover login passwords and DocBits-issued keys. Account details can be viewed by authorized organization administrators. Integration credentials may need to be read by the connecting service, and vendor personnel access requires separate confirmation. See [Secure Storage of Credentials](secure-storage-of-credentials.md) for the full distinction and customer questionnaire wording.
+---
+
+### 16. 客户能否按需请求删除数据？
+
+**答复：** FELLOWPRO AG 遵守 GDPR 规定的数据主体权利，包括删除请求。数据保护官会依据 GDPR 第 17 条处理此类请求。
+
+**状态：** ✅ 已确认
+
+**备注：** 请确认删除是否涵盖所有副本，包括备份和从该租户数据派生的 AI 训练数据。
+
+---
+
+### 17. 哪些子处理方可以访问客户数据？
+
+**答复：** Cloudflare 用于机器人防护/DDoS 防护。根据 GDPR 要求，已与所有子处理方签订数据处理协议（DPA）。
+
+**状态：** ✅ 部分确认
+
+**备注：** 请索取完整的子处理方清单。已确认使用 Cloudflare；请询问云托管服务商、AI 服务提供商等。
+
+---
+
+### 18. DocBits 持有哪些认证和合规框架资质？
+
+**答复：** 已通过 ISO 27001 认证。符合 GDPR 要求。与所有子处理方签订了数据处理协议（DPA）。已指定数据保护官。
+
+**状态：** ✅ 已确认
+
+**备注：** 请询问：是否通过 SOC 2 Type II 认证？能否提供渗透测试报告？是否通过 ISO 27701（隐私）认证？年度审计计划如何安排？
+
+---
+
+## 🔹 集成范围（Infor ERP / SAP）
+
+### 19. 从 ERP 主数据中提取哪些具体数据字段用于验证？
+
+**答复：** 通过 Infor BOD 导入主数据：
+- **供应商：** Sync.SupplierPartyMaster、Sync.RemitToPartyMaster
+- **采购订单：** Sync.PurchaseOrder
+- **会计科目表：** Sync.CodeDefinition (ChartOfAccounts)
+- **弹性维度：** Sync.CodeDefinition (FlexDimensions)
+- **税码：** 通过 BOD 发布
+
+**状态：** ✅ 已确认
+
+**备注：** 请向 DocBits 索取完整的 BOD 清单，以及针对您所用 ERP 配置的字段级映射文档。
+
+---
+
+### 20. 会导出哪些具体的抬头字段回写至 ERP？
+
+**答复：** 抬头导出字段包括：SupplierCode、PurchaseType、InvoiceType、InvoiceNumberSupplier、InvoiceDate、InvoiceAmount、InvoiceCurrency、RateDeterminer、RateDate、TaxCountry、TransactionEntryDate、Reference、IDMReference、TaxBaseAmount、InvoiceDocumentType 等。
+
+**状态：** ✅ 已确认
+
+**备注：** 请查看针对您具体环境的字段映射文件。确认所有静态字段都与您的 ERP 公司设置一致。
+
+---
+
+### 21. 回写操作是否仅限于应付账款/采购订单接口对象？
+
+**答复：** 导出使用 Sync.CaptureDocument BOD，该 BOD 会在 ION Desk 中转换为目标 BOD（例如应付发票 BOD）。数据也会导出到 Infor IDM，用于文档归档。
+
+**状态：** ✅ 部分确认
+
+**备注：** 请确认：DocBits 是否只会写入应付发票和采购订单收货对象？是否会涉及其他 ERP 模块？IDM 写入范围如何？
+
+---
+
+### 22. 使用什么集成方式（ION API、BOD、直接数据库）？
+
+**答复：** 通过 Infor ION API、ION Desk 和 Infor 标准 BOD 进行集成。不直接访问数据库。使用 ION API 文件和服务账户进行身份验证。
+
+**状态：** ✅ 已确认
+
+**备注：** 良好：不直接访问数据库。所有通信均通过 Infor 标准集成层进行。
+
+---
+
+### 23. ERP 连接使用什么身份验证/授权方式？
+
+**答复：** 使用 ION API Files（OAuth2 客户端凭据），以及在 InforOS 中创建的 ION API Client ID 和服务账户。
+
+**状态：** ✅ 已确认
+
+**备注：** 确保服务账户遵循最小权限原则。检查授予 DocBits ION API 用户的权限。
+
+---
+
+### 24. DocBits 与 ERP 之间的数据传输是否端到端加密？
+
+**答复：** 有文档记录的 ION API 集成使用 HTTPS。公共 DocBits API 端点支持 TLS 1.2 和 TLS 1.3。对公共端点的这一验证无法证明每个内部处理步骤均采用加密，也无法确定客户 ERP 端点的 TLS 策略。
+
+**状态：** ✅ 部分确认
+
+**备注：** 在作出端到端安全保证之前，请确认完整连接路径、ERP 端点的 TLS 要求，以及已配置集成的证书验证方式。请参阅[凭据的安全存储](secure-storage-of-credentials.md#encryption-in-transit)。
+
+---
+
+### 25. 除应付发票外，还支持哪些文档类型？
+
+**答复：** 支持发票、送货单/账单、报价单、订单确认函、合同等。支持采购订单发票和非采购订单发票。
+
+**状态：** ✅ 已确认
+
+**备注：** 请明确哪些文档类型会回写至 ERP，哪些仅存储在 IDM 中。
+
+---
+
+## 凭据存储与账户恢复
+
+### 26. 供应商能否查看客户凭据？如果密码丢失，会如何处理？
+
+**答复：** 登录密码以加盐单向哈希形式存储。管理员和 DocBits 支持人员无法从存储的哈希中还原原始明文密码。忘记密码后，用户需要通过基于电子邮件的重置流程设置新密码，才能继续使用密码登录。已配置的 SSO 或通行密钥方式可作为替代登录选项。通过 API Key Management 创建的 API 密钥只显示一次，并以单向哈希形式存储；密钥丢失后必须先撤销再更换。
+
+**状态：** ✅ 部分确认
+
+**备注：** 这些说明涵盖登录密码和 DocBits 签发的密钥。经授权的组织管理员可以查看账户详情。集成凭据可能需要由连接服务读取；供应商人员的访问权限仍需另行确认。有关完整区别和客户问卷措辞，请参阅[凭据的安全存储](secure-storage-of-credentials.md)。

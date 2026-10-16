@@ -1,5 +1,3 @@
-# Exporting in DocBits
+# 在 DocBits 中导出
 
-A guide to exporting documents in DocBits.
-
-
+DocBits 中的文档导出指南。

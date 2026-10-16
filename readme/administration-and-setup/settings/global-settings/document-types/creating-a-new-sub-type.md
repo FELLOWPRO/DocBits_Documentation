@@ -1,23 +1,23 @@
-# Creating a new Sub Type
+# 创建新的子类型
 
-Create a document subtype when one type of document needs its own field settings, validation layout, or scripts. You need access to **Settings → Document Types**.
+当某一类文档需要使用独立的字段设置、验证布局或脚本时，请创建文档子类型。你需要有权访问 **Settings → Document Types**。
 
-## 1. Open the document type
+## 1. 打开文档类型
 
-Open **Settings → Document Types**. In the card for the relevant document type, select **Document Sub Types**. The example below uses **Invoice**; choose the type that matches your documents. Other links in the card lead to settings for the whole document type.
+打开 **Settings → Document Types**。在相关文档类型的卡片中，选择 **Document Sub Types**。以下示例使用 **Invoice**；请选择与你的文档相匹配的类型。卡片中的其他链接用于配置整个文档类型的设置。
 
-<figure><img src="../../../../.gitbook/assets/new-subtype-document-type-en.png" alt="Invoice card in the English Document Types settings, with the Document Sub Types link"><figcaption><p>Open subtypes for the document type you want to configure.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc163-document-types-en.png" alt="英文 Document Types 设置中的 Invoice 卡片，包含 Document Sub Types 链接"><figcaption><p>打开要配置的文档类型的子类型。</p></figcaption></figure>
 
-## 2. Start a new subtype
+## 2. 新建子类型
 
-On **Document Sub Types**, select **+ New**. Existing subtypes appear in the list; the three-dot **Actions** menu is for an existing row. If **+ New** does not respond to a mouse click, focus the button with the keyboard and press **Enter**.
+在 **Document Sub Types** 页面中，选择 **+ New**。现有子类型会显示在列表中；三点 **Actions** 菜单适用于已有行。如果鼠标点击 **+ New** 按钮没有响应，请使用键盘将焦点移至该按钮，然后按 **Enter**。
 
-<figure><img src="../../../../.gitbook/assets/new-subtype-list-en.png" alt="English Document Sub Types list showing the New button and a synthetic example subtype"><figcaption><p>The documentation test organization contains only a synthetic example subtype.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/new-subtype-list-en.png" alt="英文 Document Sub Types 列表，显示 New 按钮和一个合成示例子类型"><figcaption><p>文档测试组织中仅包含一个合成示例子类型。</p></figcaption></figure>
 
-## 3. Name and save it
+## 3. 命名并保存
 
-Enter a **Name** using letters and underscores, then enter a descriptive **Title**. Both fields are required. The names in this screenshot are examples only. Select **Save** to create the subtype, or **Cancel** to leave without creating it.
+使用字母和下划线输入 **Name**，然后输入描述性的 **Title**。这两个字段都是必填项。此截图中的名称仅为示例。选择 **Save** 创建子类型，或选择 **Cancel** 离开且不创建。
 
-<figure><img src="../../../../.gitbook/assets/new-subtype-dialog-en.png" alt="Create New Sub Document Type dialog with Name, Title, Cancel, and Save in English"><figcaption><p>Only Name and Title are entered at creation time.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/new-subtype-dialog-en.png" alt="英文 Create New Sub Document Type 对话框，包含 Name、Title、Cancel 和 Save"><figcaption><p>创建时只需输入 Name 和 Title。</p></figcaption></figure>
 
-After saving, the new subtype appears in the list. To set its fields, layout, or scripts, open its **Actions** menu and follow [Configure subtypes](configure-subtypes.md). These settings are made after creation, not in the **+ New** dialog.
+保存后，新子类型会显示在列表中。要设置其字段、布局或脚本，请打开它的 **Actions** 菜单，并按照[配置子类型](configure-subtypes.md)中的说明操作。这些设置需要在创建后进行，而不是在 **+ New** 对话框中完成。

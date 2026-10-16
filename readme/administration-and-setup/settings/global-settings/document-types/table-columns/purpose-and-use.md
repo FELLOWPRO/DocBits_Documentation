@@ -1,35 +1,35 @@
-# Purpose and use
+# 目的和用途
 
-A table column is one field of the line-item table. Everything that DocBits does with a table (extraction, validation, PO matching, export) works on the columns configured here.
+表格列是行项目表格中的一个字段。DocBits 对表格执行的所有操作（提取、验证、采购订单匹配、导出）都会使用此处配置的列。
 
-## Where a column shows up
+## 列的显示位置
 
-| Place | What the column does there |
+| 位置 | 列在该处的作用 |
 |---|---|
-| **Validation screen** | One column in the line-item table. The *Title* is the header, the *Column Type* decides the editor (amount, date, text, yes/no). Hidden columns are not shown. |
-| **Table training** | When you train a supplier's table, you map each detected table column to one of these configured columns. Only configured columns can be mapped. |
-| **AI table extraction** | The AI fills the configured columns. A column marked *Use AI* is filled by the AI even for suppliers with trained rules. |
-| **Validation rules** | Line-item checks such as *quantity × unit price = line total* run on the default columns `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT`, `CHARGES`, `DISCOUNT`. |
-| **PO matching** | Needs the default columns item number, unit price, quantity and total amount. Without them the document shows *Line Item Table is missing Mandatory column for PO*. |
-| **Export** | Every non-hidden column is part of the line-item data sent to the ERP. The export mapping references the *Column name*. |
-| **Scripts** | Scripts read and write columns by *Column name*, for example `row["TOTAL_AMOUNT"]`. |
+| **验证界面** | 行项目表格中的一列。*Title* 是表头，*Column Type* 决定编辑器类型（金额、日期、文本、是/否）。隐藏列不会显示。 |
+| **表格训练** | 训练某个供应商的表格时，需要将检测到的每个表格列映射到这些已配置的列之一。只有已配置的列才能进行映射。 |
+| **AI 表格提取** | AI 会填充已配置的列。标记为 *Use AI* 的列即使对于已训练规则的供应商，也会由 AI 填充。 |
+| **验证规则** | 行项目检查（例如 *数量 × 单价 = 行总额*）会针对默认列 `QUANTITY`、`UNIT_PRICE`、`TOTAL_AMOUNT`、`CHARGES`、`DISCOUNT` 运行。 |
+| **采购订单匹配** | 需要默认列 item number、unit price、quantity 和 total amount。缺少这些列时，文档会显示 *Line Item Table is missing Mandatory column for PO*。 |
+| **导出** | 每个非隐藏列都会作为行项目数据的一部分发送到 ERP。导出映射会引用 *Column name*。 |
+| **脚本** | 脚本通过 *Column name* 读取和写入列，例如 `row["TOTAL_AMOUNT"]`。 |
 
-## Scope
+## 适用范围
 
-* Table columns are configured **per table**, and a table belongs to a **document type**. Invoice columns do not affect delivery notes.
-* The configuration is **per organization**. Sub-organizations inherit it.
-* Which columns are *filled* for a given supplier is decided by that supplier's training or by the AI; the column configuration only says which columns exist.
+* 表格列按**表格**配置，而表格属于某个**文档类型**。发票列不会影响交货单。
+* 配置按**组织**设置。子组织会继承此配置。
+* 某个供应商需要填充哪些列，由该供应商的训练结果或 AI 决定；列配置仅用于指定有哪些列。
 
-## Typical reasons to change the configuration
+## 更改配置的常见原因
 
-* A customer-specific value must be captured per line (cost centre, project number, internal article number) → add a column.
-* A default column is never used and clutters the validation screen → hide it.
-* A column must always be filled before export → mark it *Required*.
-* A value comes from the ERP lookup and must not be edited by users → mark it *Read Only*.
-* The AI captures a column better than the trained rules (for example free-text descriptions) → mark it *Use AI*.
+* 需要按行捕获客户特定的值（成本中心、项目编号、内部货号）→ 添加一列。
+* 某个默认列从未使用，却让验证界面显得杂乱 → 将其隐藏。
+* 导出前必须始终填写某一列 → 将其标记为 *Required*。
+* 某个值来自 ERP 查询，用户不得编辑 → 将其标记为 *Read Only*。
+* AI 对某列的提取效果优于训练规则（例如自由文本描述）→ 将其标记为 *Use AI*。
 
-## Related pages
+## 相关页面
 
-* [Adding a new column](adding-a-new-column.md)
-* [Editing and deleting columns](editing-and-deleting-columns.md)
-* [Table Extraction Troubleshoot](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md)
+* [添加新列](adding-a-new-column.md)
+* [编辑和删除列](editing-and-deleting-columns.md)
+* [表格提取故障排除](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md)

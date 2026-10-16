@@ -1,20 +1,20 @@
-# Sub document type
+# 子文档类型
 
-## Spalten
+## 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_type_key`: internal
-* `sub_doc_type_key`: internal
-* `name`: internal
-* `title`: internal
-* `translation_key`: internal
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
+* `id`：内部字段
+* `org_id`：组织 ID
+* `doc_type_key`：内部字段
+* `sub_doc_type_key`：内部字段
+* `name`：内部字段
+* `title`：内部字段
+* `translation_key`：内部字段
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
 
-## Analyse & Beschreibung
+## 分析与描述
 
 ```markdown
 # Table `public.sub_document_type`

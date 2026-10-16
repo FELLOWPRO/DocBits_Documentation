@@ -1,20 +1,20 @@
-# Preferences
+# 偏好设置
 
-## Spalten
+## 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `pref_key`: internal
-* `pref_value`: text
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `deleted_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `user_id`: integer
-* `sub_org_id`: internal
+* `id`：内部字段
+* `org_id`：组织 ID
+* `pref_key`：内部字段
+* `pref_value`：文本
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `deleted_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `user_id`：整数
+* `sub_org_id`：内部字段
 
-## Analyse & Beschreibung
+## 分析与描述
 
 ```markdown
 # Technical Documentation for `public.preferences` Table

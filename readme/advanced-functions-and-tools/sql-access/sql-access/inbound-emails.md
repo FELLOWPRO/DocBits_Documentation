@@ -1,107 +1,107 @@
-# Inbound Emails
+# 入站电子邮件
 
-## Tabelle `public.inbound_emails`
+## 表 `public.inbound_emails`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `is_active`: boolean
-* `email_senders`: internal
-* `email_receiver`: internal
-* `token`: internal
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_by`: internal
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `deleted_by`: internal
-* `deleted_on`: timestamp with time zone
+* `id`：内部字段
+* `org_id`：组织 ID
+* `is_active`：布尔值
+* `email_senders`：内部字段
+* `email_receiver`：内部字段
+* `token`：内部字段
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_by`：内部字段
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `deleted_by`：内部字段
+* `deleted_on`：带时区的时间戳
 
-### Analyse & Beschreibung
+### 分析与描述
 
-## Technical Documentation: `public.inbound_emails` Table
+## 技术文档：`public.inbound_emails` 表
 
-### Introduction
+### 简介
 
-The `public.inbound_emails` table is designed to store and manage information about emails received by an organization. This table keeps track of the sender and receiver details, the status of the email, and various metadata related to the creation, modification, and deletion of records. It appears to be part of an email management system within an organization, possibly used for tracking inbound email communications.
+`public.inbound_emails` 表用于存储和管理组织收到的电子邮件信息。此表会跟踪发件人和收件人详情、电子邮件状态，以及与记录创建、修改和删除相关的各种元数据。该表似乎属于组织内的电子邮件管理系统，可能用于跟踪入站电子邮件通信。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: Unique identifier for each record in the table.
-* **Role**: Primary key.
-* **Typical Contents**: A unique string, likely a UUID, such as `'42bf9383-73bf-4b46-9862-3c3a1d97ac80'`.
+* **含义**：表中每条记录的唯一标识符。
+* **作用**：主键。
+* **典型内容**：唯一字符串，可能是 UUID，例如 `'42bf9383-73bf-4b46-9862-3c3a1d97ac80'`。
 
 #### org\_id
 
-* **Meaning**: Identifier for the organization associated with the inbound email.
-* **Role**: Foreign key, linking to another table that holds organization details.
-* **Typical Contents**: A unique string, likely a UUID, such as `'23f3d697-7411-4c95-981d-faf089d266be'`.
+* **含义**：与入站电子邮件关联的组织标识符。
+* **作用**：外键，关联到存储组织详情的另一张表。
+* **典型内容**：唯一字符串，可能是 UUID，例如 `'23f3d697-7411-4c95-981d-faf089d266be'`。
 
 #### is\_active
 
-* **Meaning**: Indicates whether the email record is currently active.
-* **Role**: Status indicator.
-* **Typical Contents**: A boolean value, either `True` or `False`.
+* **含义**：表示电子邮件记录当前是否处于活动状态。
+* **作用**：状态指示字段。
+* **典型内容**：布尔值，可以是 `True` 或 `False`。
 
 #### email\_senders
 
-* **Meaning**: Stores information about the sender(s) of the email.
-* **Role**: Data field.
-* **Typical Contents**: A JSON-like string containing details of senders, e.g., `"[{'email': '', 'sub_org': ''}]"`.
+* **含义**：存储电子邮件发件人信息。
+* **作用**：数据字段。
+* **典型内容**：包含发件人详情的类 JSON 字符串，例如 `"[{'email': '', 'sub_org': ''}]"`。
 
 #### email\_receiver
 
-* **Meaning**: Email address of the primary recipient.
-* **Role**: Data field.
-* **Typical Contents**: A string with an email address. In the example, it is empty, suggesting optional or varying use.
+* **含义**：主要收件人的电子邮件地址。
+* **作用**：数据字段。
+* **典型内容**：包含电子邮件地址的字符串。示例中的值为空，表明此字段可能为可选字段，或用途有所不同。
 
 #### token
 
-* **Meaning**: A token associated with the email, possibly for authentication or identification.
-* **Role**: Authentication or tracking field.
-* **Typical Contents**: A long, randomly generated string.
+* **含义**：与电子邮件关联的令牌，可能用于身份验证或标识。
+* **作用**：身份验证或跟踪字段。
+* **典型内容**：随机生成的长字符串。
 
 #### created\_by
 
-* **Meaning**: Identifier for the user who created the record.
-* **Role**: Foreign key, linking to a user or employee table.
-* **Typical Contents**: An integer representing a user ID, such as `1`.
+* **含义**：创建记录的用户标识符。
+* **作用**：外键，关联到用户或员工表。
+* **典型内容**：表示用户 ID 的整数，例如 `1`。
 
 #### created\_on
 
-* **Meaning**: Timestamp for when the record was created.
-* **Role**: Metadata field.
-* **Typical Contents**: A datetime value with timezone information, e.g., `datetime.datetime(2024, 11, 25, 7, 43, 54, 266771, tzinfo=datetime.timezone.utc)`.
+* **含义**：记录的创建时间戳。
+* **作用**：元数据字段。
+* **典型内容**：包含时区信息的日期时间值，例如 `datetime.datetime(2024, 11, 25, 7, 43, 54, 266771, tzinfo=datetime.timezone.utc)`。
 
 #### last\_modified\_by
 
-* **Meaning**: Identifier for the user who last modified the record.
-* **Role**: Foreign key, linking to a user or employee table.
-* **Typical Contents**: Could be a user ID or null if no modifications have been made.
+* **含义**：最后修改记录的用户标识符。
+* **作用**：外键，关联到用户或员工表。
+* **典型内容**：可能是用户 ID；如果记录从未被修改，也可能为 null。
 
 #### last\_modified\_on
 
-* **Meaning**: Timestamp for when the record was last modified.
-* **Role**: Metadata field.
-* **Typical Contents**: A datetime value indicating the last modification time, e.g., `datetime.datetime(2024, 11, 25, 7, 44, 48, 505384, tzinfo=datetime.timezone.utc)`.
+* **含义**：记录最后修改时间的时间戳。
+* **作用**：元数据字段。
+* **典型内容**：表示最后修改时间的日期时间值，例如 `datetime.datetime(2024, 11, 25, 7, 44, 48, 505384, tzinfo=datetime.timezone.utc)`。
 
 #### is\_deleted
 
-* **Meaning**: Indicates whether the email record has been marked as deleted.
-* **Role**: Status indicator.
-* **Typical Contents**: A boolean value, either `True` or `False`.
+* **含义**：表示电子邮件记录是否已标记为删除。
+* **作用**：状态指示字段。
+* **典型内容**：布尔值，可以是 `True` 或 `False`。
 
 #### deleted\_by
 
-* **Meaning**: Identifier for the user who marked the record as deleted.
-* **Role**: Foreign key, linking to a user or employee table.
-* **Typical Contents**: Could be a user ID or null if the record is not deleted.
+* **含义**：将记录标记为删除的用户标识符。
+* **作用**：外键，关联到用户或员工表。
+* **典型内容**：如果记录未被删除，可能是用户 ID，也可能为 null。
 
 #### deleted\_on
 
-* **Meaning**: Timestamp for when the record was marked as deleted.
-* **Role**: Metadata field.
-* **Typical Contents**: A datetime value indicating the deletion time, or a default date if not applicable, e.g., `datetime.datetime(2, 1, 1, 11, 0, tzinfo=datetime.timezone.utc)`.
+* **含义**：记录被标记为删除的时间戳。
+* **作用**：元数据字段。
+* **典型内容**：表示删除时间的日期时间值；如果不适用，则可能为默认日期，例如 `datetime.datetime(2, 1, 1, 11, 0, tzinfo=datetime.timezone.utc)`。

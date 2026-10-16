@@ -1,131 +1,131 @@
-# Supplier Portal
+# 供应商门户
 
-## Overview
+## 概述
 
-This page explains how to activate and use the **Supplier Portal**, as well as where to find all relevant settings. The Supplier Portal allows you to invite suppliers to **DocBits**. Once access is granted, suppliers can log in to view the status of their **Purchase Orders** and **Invoices** directly within **DocBits**.
+本页介绍如何启用和使用**供应商门户**，以及如何找到所有相关设置。供应商门户允许您邀请供应商加入 **DocBits**。获得访问权限后，供应商可以直接在 **DocBits** 中登录并查看其**采购订单**和**发票**的状态。
 
-## How to Activate the Supplier Portal
+## 如何启用供应商门户
 
-1.  Go to **Settings → Document Processing → Module**.
+1.  前往 **Settings → Document Processing → Module**。
 
     <figure><img src="../../../.gitbook/assets/settings_module.png" alt=""><figcaption></figcaption></figure>
-2.  In the **Shipping & Supplier** section, enable the **Supplier Portal** option.
+2.  在 **Shipping & Supplier** 部分中，启用 **Supplier Portal** 选项。
 
     <figure><img src="../../../.gitbook/assets/supplier_portal_1.png" alt=""><figcaption></figcaption></figure>
 
-## Supplier Settings
+## 供应商设置
 
-Once the **Supplier Portal** feature is enabled, a new **Supplier Settings** section will appear at the bottom of the **Settings** menu.
+启用**供应商门户**功能后，**设置**菜单底部会显示新的 **Supplier Settings** 部分。
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (453).png" alt=""><figcaption></figcaption></figure>
 
-[**Supplier General Settings**](../../settings/supplier-setting/supplier-general-settings.md): Here, you can customize the **Supplier Portal** by uploading your company logo—displayed in the header of all email templates—and by managing legal documents such as the Terms of Use and Privacy Policy.
+[**Supplier General Settings**](../../settings/supplier-setting/supplier-general-settings.md)：在这里，您可以上传公司徽标来自定义**供应商门户**。徽标会显示在所有电子邮件模板的页眉中。您还可以管理法律文件，例如使用条款和隐私政策。
 
-[**Email Templates**](../../settings/supplier-setting/editing-email-templates.md)**:** Here you can create and test the invitation email templates that will be sent to invited suppliers.
+[**Email Templates**](../../settings/supplier-setting/editing-email-templates.md)**：**在这里，您可以创建并测试要发送给受邀供应商的邀请邮件模板。
 
-[**Supplier Layout**](../../settings/supplier-setting/supplier-layout.md)**:** Here you can create and manage the layouts that define which information new suppliers must provide during the registration process.
+[**Supplier Layout**](../../settings/supplier-setting/supplier-layout.md)**：**在这里，您可以创建和管理布局，以定义新供应商在注册过程中必须提供哪些信息。
 
-[**Export Configuration**](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md): Here you can define how data is mapped and synchronized between the **Supplier Portal** and the **Infor M3** system using ION and IDM mapping files.
+[**Export Configuration**](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md)：在这里，您可以使用 ION 和 IDM 映射文件定义**供应商门户**与 **Infor M3** 系统之间的数据映射和同步方式。
 
-[**Supplier Permissions**](../../settings/supplier-setting/supplier-permissions.md): Here you can configure the permissions that suppliers will have within the **Supplier Portal**. You can also group suppliers, making it easier to manage access and settings across multiple suppliers.
+[**Supplier Permissions**](../../settings/supplier-setting/supplier-permissions.md)：在这里，您可以配置供应商在**供应商门户**中的权限。您还可以对供应商进行分组，以便更轻松地管理多个供应商的访问权限和设置。
 
-A detailed guide to all Supplier Settings can be found [here](../../settings/supplier-setting/).
+所有供应商设置的详细指南请参见[此处](../../settings/supplier-setting/)。
 
-## Supplier Dashboard <a href="#supplier-permissions" id="supplier-permissions"></a>
+## 供应商仪表板 <a href="#supplier-permissions" id="supplier-permissions"></a>
 
-You can access the **Supplier Dashboard** from the left-hand menu, as shown below.
+您可以通过左侧菜单访问**供应商仪表板**，如下所示。
 
 <figure><img src="../../../.gitbook/assets/supplier_portal_2.png" alt=""><figcaption></figcaption></figure>
 
-All of your created Suppliers are displayed here.
+这里会显示您创建的所有供应商。
 
-## Filter for Suppliers
+## 筛选供应商
 
-You can search for suppliers by N**ame** or N**umber**, or use the advanced filters to narrow results by:
+您可以按供应商**姓名**或**编号**搜索，也可以使用高级筛选条件缩小结果范围：
 
-* **Supplier Groups**
-* **Status**
-* **Created On**
+* **供应商组**
+* **状态**
+* **创建时间**
 
-You can also specify how many suppliers should be displayed per page.
+您还可以指定每页显示的供应商数量。
 
 <figure><img src="../../../.gitbook/assets/supplier_portal_9.png" alt=""><figcaption></figcaption></figure>
 
-Additionally, you can quickly filter by the statuses **Pending Approval** or **Pending Registration** by clicking the corresponding category to the left of the filter ba&#x72;**.**
+此外，您可以点击筛选栏左侧的相应类别，快速筛选**待审批**或**待注册**状态的供应商。
 
 <figure><img src="../../../.gitbook/assets/supplier_portal_10.png" alt=""><figcaption></figcaption></figure>
 
-## Supplier Details (internal view)
+## 供应商详情（内部视图）
 
-Click a supplier's row in the **Supplier Dashboard** to open the **Supplier Details** view for that supplier. This internal view shows the same six sections that the supplier fills in during registration — **Supplier Details**, **Address Data**, **Supplier Contact**, **Supplier Financial**, **Supplier Purchase** and **Supplier Certificates** — together with the supplier's current **status** badge.
+在**供应商仪表板**中点击供应商所在行，即可打开该供应商的**供应商详情**视图。此内部视图会显示供应商在注册过程中填写的相同六个部分——**供应商详情**、**地址数据**、**供应商联系人**、**供应商财务信息**、**供应商采购信息**和**供应商证书**——以及供应商当前的**状态**徽标。
 
-Use this view to review a supplier's profile, correct or complete missing data, and prepare the approval decision. For a description of each section, see [Supplier Registration](supplier-registration.md). The back button at the top of the view returns you to the **Supplier Dashboard**.
+您可以在此视图中查看供应商资料、更正或补充缺失信息，并为审批决策做准备。有关各部分的说明，请参见[供应商注册](supplier-registration.md)。点击视图顶部的返回按钮即可返回**供应商仪表板**。
 
-## Supplier Status
+## 供应商状态
 
-If you're using the **Supplier Portal**, it's important to understand the different statuses that suppliers can have. Below is a list of all possible supplier statuses and their meanings:
+如果您使用**供应商门户**，了解供应商可能处于的不同状态很重要。以下列出了所有可能的供应商状态及其含义：
 
-* **Open**: Existing supplier who has not yet been invited to the portal.
-* **Pending Registration**: Supplier has been invited but has not yet completed the registration process.
-* **Pending Supplier Input**: Registration is complete, but further input or changes are required from the supplier.
-* **Pending Approval**: Supplier has completed registration and is awaiting the first approval.
-* **Pending AP Approval**: Supplier has received the first approval and is awaiting a second (Accounts Payable) approval.
-* **Approved**: Supplier has completed the process and has been fully approved.
-* **Rejected**: The supplier’s registration or approval has been rejected.
+* **未开放**：现有供应商，尚未收到门户邀请。
+* **待注册**：供应商已收到邀请，但尚未完成注册流程。
+* **待供应商补充信息**：注册已完成，但仍需供应商补充信息或进行更改。
+* **待审批**：供应商已完成注册，正在等待首次审批。
+* **待应付账款审批**：供应商已通过首次审批，正在等待第二次（应付账款）审批。
+* **已批准**：供应商已完成流程并通过全部审批。
+* **已拒绝**：供应商的注册或审批未获通过。
 
-## Tools in the Supplier Dashboard
+## 供应商仪表板中的工具
 
-To the right of the search bar, you'll find several tools that help you interact with and manage the dashboard more efficiently.
+在搜索栏右侧，您会看到几个工具，可帮助您更高效地使用和管理仪表板。
 
-### Refresh table <a href="#refresh-table" id="refresh-table"></a>
+### 刷新表格 <a href="#refresh-table" id="refresh-table"></a>
 
 <figure><img src="../../../.gitbook/assets/supplier_portal_3.png" alt=""><figcaption></figcaption></figure>
 
-Click this button to refresh the dashboard and load the most up-to-date data and statuses.
+点击此按钮可刷新仪表板，加载最新的数据和状态。
 
-### Set table columns for organization <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
+### 设置表格列以便整理 <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
 
 <figure><img src="../../../.gitbook/assets/supplier_portal_4.png" alt=""><figcaption></figcaption></figure>
 
-Click this button to open a menu where you can manage the visibility of columns in the purchase order table. Use the checkboxes and arrow buttons to move columns between the visible and hidden sections. You can also reorder columns by dragging and dropping the column names. Click **Done** to save your changes.
+点击此按钮可打开菜单，管理采购订单表格中列的显示情况。使用复选框和箭头按钮可在显示和隐藏区域之间移动列。您还可以拖放列名称来调整列的顺序。点击 **Done** 保存更改。
 
 <figure><img src="../../../.gitbook/assets/supplier_portal_7.png" alt=""><figcaption></figcaption></figure>
 
-### Analytics <a href="#analytics" id="analytics"></a>
+### 分析 <a href="#analytics" id="analytics"></a>
 
 <figure><img src="../../../.gitbook/assets/supplier_portal_5.png" alt=""><figcaption></figcaption></figure>
 
-Clicking this button will open a new section showing how many suppliers are set to expire and when.\
-Click on any category to apply a filter and view only those suppliers.
+点击此按钮会打开一个新部分，显示即将到期的供应商数量及其到期时间。\
+点击任意类别可应用筛选，仅查看符合条件的供应商。
 
 <figure><img src="../../../.gitbook/assets/supplier_portal_8.png" alt=""><figcaption></figcaption></figure>
 
-## Create Supplier and Send Registration Email
+## 创建供应商并发送注册邮件
 
-### **To create a new supplier:**
+### **创建新供应商：**
 
-1.  Click the plus (+) icon in the top right corner.
+1.  点击右上角的加号（+）图标。
 
     <figure><img src="../../../.gitbook/assets/supplier_portal_6.png" alt=""><figcaption></figcaption></figure>
-2.  Fill in the required fields, then click **Save**.
+2.  填写必填字段，然后点击 **Save**。
 
     <figure><img src="../../../.gitbook/assets/supplier_portal_11.png" alt=""><figcaption></figcaption></figure>
-3. The supplier will automatically receive an email with a link to create their account.
+3. 系统会自动向供应商发送一封包含账户创建链接的电子邮件。
 
-### **To send a registration email to an existing supplier:**
+### **向现有供应商发送注册邮件：**
 
-1. Locate the supplier in the **Supplier Dashboard**.
-2. Click the three-dot menu in the **Actions** column.
-3.  Select **Magic Link**.
+1. 在**供应商仪表板**中找到该供应商。
+2. 点击 **Actions** 列中的三点菜单。
+3.  选择 **Magic Link**。
 
     <figure><img src="../../../.gitbook/assets/supplier_portal_12.png" alt=""><figcaption></figcaption></figure>
-4. Verify the supplier’s details.
-5.  Click **Send** to email the registration link.
+4. 核实供应商信息。
+5.  点击 **Send**，通过电子邮件发送注册链接。
 
     <figure><img src="../../../.gitbook/assets/supplier_portal_13.png" alt=""><figcaption></figcaption></figure>
 
-## How Does the Registration Process Work for the Supplier?
+## 供应商的注册流程是怎样的？
 
-After an invitation email is sent, the supplier must complete the registration process to access the **Supplier Portal**.
+发送邀请邮件后，供应商必须完成注册流程才能访问**供应商门户**。
 
-A detailed step-by-step guide on the registration process can be found [here](supplier-registration.md).
+注册流程的详细分步指南请参见[此处](supplier-registration.md)。

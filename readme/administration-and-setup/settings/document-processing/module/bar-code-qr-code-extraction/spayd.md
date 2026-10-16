@@ -1,48 +1,48 @@
-# SPAYD / Short Payment Descriptor (Czech)
+# SPAYD / 简易付款描述符（捷克）
 
-## Overview
+## 概述
 
-**SPAYD** (Short Payment Descriptor), also known as **SPD**, is the standard payment QR code defined by the Czech Banking Association. It is printed on virtually every Czech business invoice and is also used in part of Slovakia. DocBits decodes SPAYD payloads and returns the complete payment instruction — including Czech-specific symbols (variable, specific, constant) — in the document API response.
+**SPAYD**（简易付款描述符），也称为 **SPD**，是由捷克银行协会定义的标准付款二维码。它印在几乎所有捷克企业发票上，在斯洛伐克部分地区也有使用。DocBits 可解码 SPAYD 载荷并返回完整的付款指令，包括捷克特有的符号（可变符号、特定符号和固定符号），这些内容会包含在文档 API 响应中。
 
-### Feature Overview
+### 功能概述
 
-A SPAYD payload is a star-separated list of key:value pairs. Values are percent-encoded, so UTF-8 recipient names and messages are preserved. DocBits supports the common `ACC` variant (IBAN plus optional BIC, plus-separated), `ALT-ACC` (alternative IBANs, comma-separated), and preserves any unknown vendor-specific keys in a dedicated `spayd_raw_pairs` field so downstream consumers never lose data.
+SPAYD 载荷是由星号分隔的键值对列表。值采用百分号编码，因此 UTF-8 收款人姓名和消息能够得到保留。DocBits 支持常见的 `ACC` 变体（IBAN 加可选 BIC，以加号分隔）和 `ALT-ACC`（以逗号分隔的备用 IBAN），并会将任何未知的供应商专用键保存在专用的 `spayd_raw_pairs` 字段中，确保下游使用方不会丢失数据。
 
-#### Key Benefits
+#### 主要优势
 
-* **Full Czech payment coverage**: IBAN/BIC plus VS/SS/KS symbols are extracted into named fields.
-* **Unicode-safe**: percent-encoded UTF-8 recipient names and messages round-trip cleanly.
-* **Forward-compatible**: unknown keys are preserved in `spayd_raw_pairs`.
+* **全面覆盖捷克付款信息**：IBAN/BIC 以及 VS/SS/KS 符号会提取到对应的命名字段中。
+* **安全支持 Unicode**：采用百分号编码的 UTF-8 收款人姓名和消息能够完整往返。
+* **向前兼容**：未知键会保存在 `spayd_raw_pairs` 中。
 
 ***
 
-### Detection
+### 检测
 
-- Magic prefix: `SPD*1.0*`
-- Payload is a `*`-separated list of `KEY:value` pairs, e.g. `SPD*1.0*ACC:CZ5508000000001234567899*AM:480.55*CC:CZK`
-- Values are **percent-encoded** (RFC 3986)
-- `ACC` may carry `IBAN+BIC` (plus-separated); `ALT-ACC` carries comma-separated alternative IBANs
+- 标识前缀：`SPD*1.0*`
+- 载荷是由 `*` 分隔的 `KEY:value` 键值对列表，例如 `SPD*1.0*ACC:CZ5508000000001234567899*AM:480.55*CC:CZK`
+- 值采用 **百分号编码**（RFC 3986）
+- `ACC` 可包含 `IBAN+BIC`（以加号分隔）；`ALT-ACC` 包含以逗号分隔的备用 IBAN
 
-### Extracted Fields
+### 提取的字段
 
-All fields use the `spayd_` prefix:
+所有字段均使用 `spayd_` 前缀：
 
-| Field | Description |
+| 字段 | 说明 |
 |-------|-------------|
-| `spayd_iban` | Primary IBAN (from `ACC`) |
-| `spayd_bic` | BIC (from `ACC`, if present) |
-| `spayd_alt_ibans` | List of alternative IBANs (from `ALT-ACC`) |
-| `spayd_amount` | Amount (decimal, from `AM`) |
-| `spayd_currency` | Currency (from `CC`, typically `CZK`) |
-| `spayd_variable_symbol` | Variable symbol (`VS`) — invoice / reference number |
-| `spayd_specific_symbol` | Specific symbol (`SS`) |
-| `spayd_constant_symbol` | Constant symbol (`KS`) |
-| `spayd_recipient_name` | Recipient / beneficiary name (from `RN`) |
-| `spayd_due_date` | Due date (from `DT`, `YYYYMMDD`) |
-| `spayd_message` | Free-text message (from `MSG`) |
-| `spayd_raw_pairs` | Any unknown or vendor-specific `KEY:value` pairs, preserved verbatim |
+| `spayd_iban` | 主要 IBAN（来自 `ACC`） |
+| `spayd_bic` | BIC（来自 `ACC`，如存在） |
+| `spayd_alt_ibans` | 备用 IBAN 列表（来自 `ALT-ACC`） |
+| `spayd_amount` | 金额（十进制数，来自 `AM`） |
+| `spayd_currency` | 货币（来自 `CC`，通常为 `CZK`） |
+| `spayd_variable_symbol` | 可变符号（`VS`）——发票编号 / 参考编号 |
+| `spayd_specific_symbol` | 特定符号（`SS`） |
+| `spayd_constant_symbol` | 固定符号（`KS`） |
+| `spayd_recipient_name` | 收款人 / 受益人姓名（来自 `RN`） |
+| `spayd_due_date` | 到期日（来自 `DT`，格式为 `YYYYMMDD`） |
+| `spayd_message` | 自由文本消息（来自 `MSG`） |
+| `spayd_raw_pairs` | 任何未知或供应商专用的 `KEY:value` 键值对，按原样保留 |
 
-### Sample API Response
+### API 响应示例
 
 ```json
 {
@@ -59,15 +59,15 @@ All fields use the `spayd_` prefix:
 
 ***
 
-### How to Enable
+### 如何启用
 
-SPAYD parsing is covered by the general **Bar-Code / QR Code Extraction** module toggle — no standard-specific configuration is required.
+SPAYD 解析由通用的 **条形码 / 二维码提取** 模块开关控制，无需进行标准专用配置。
 
-1. **Navigate to Settings**:
-   * From the Dashboard, go to **Settings**.
-   * Select **Document Processing** and then choose **Module**.
-2. **Enable the Feature**:
-   * Scroll down to locate the **Bar-Code / QR Code Extraction** option.
-   * Toggle the slider to enable it.
+1. **前往设置**：
+   * 在仪表板中，前往 **Settings**。
+   * 选择 **Document Processing**，然后选择 **Module**。
+2. **启用功能**：
+   * 向下滚动，找到 **Bar-Code / QR Code Extraction** 选项。
+   * 切换滑块以启用该功能。
 
-For a full list of Payment QR Code standards, see the [Overview](./README.md) page.
+如需查看付款二维码标准的完整列表，请参阅[概述](./README.md)页面。

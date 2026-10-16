@@ -1,36 +1,36 @@
-# Supplier Item Number Map
+# 供应商物料编号映射
 
-## **Overview**
+## **概述**
 
-This feature helps you manage and reconcile item numbers between your system and your suppliers. Often, the item numbers you use internally may not match the item numbers your suppliers use. Docbits makes it easier to handle these discrepancies by creating a mapping between your item numbers and those of your suppliers.
+此功能可帮助您管理并核对系统与供应商之间的物料编号。您在内部使用的物料编号通常可能与供应商使用的编号不同。DocBits 可通过建立内部物料编号与供应商物料编号之间的映射，帮助您轻松处理这些差异。
 
-<figure><img src="../../../.gitbook/assets/supplier_item_number_map_interface.png" alt="Supplier Item Number Map Interface"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_item_number_map_interface.png" alt="供应商物料编号映射界面"><figcaption></figcaption></figure>
 
-## **How It Works**
+## **工作原理**
 
 {% embed url="https://youtu.be/agxk8WQhtJA" %}
 
 
-1. **Manual Matching:**
-   * The first time you encounter a discrepancy between your item number and your supplier's item number, you need to match them manually.
-   * You can do this by entering the correct supplier item number corresponding to your internal item number.
-2. **Automatic Matching:**
-   * Once you have manually matched an item number with its supplier's item number, Docbits remembers this mapping.
-   * The next time the same item appears, Docbits will automatically match it based on the stored mapping, saving you time and reducing errors.
+1. **手动匹配：**
+   * 首次遇到内部物料编号与供应商物料编号不一致时，您需要手动匹配。
+   * 输入与内部物料编号对应的正确供应商物料编号即可完成匹配。
+2. **自动匹配：**
+   * 手动将物料编号与供应商物料编号匹配后，DocBits 会记住此映射关系。
+   * 下次出现相同物料时，DocBits 会根据已保存的映射自动匹配，从而节省时间并减少错误。
 
-## **Interface Breakdown**
+## **界面说明**
 
-* **Supplier ID:** The unique identifier for the supplier.
-* **Item Number:** Your internal item number for the product.
-* **Supplier Item Number:** The corresponding item number used by the supplier.
-* **Action:** Options to manage the mappings, such as deleting incorrect mappings.
+* **供应商 ID：** 供应商的唯一标识符。
+* **物料编号：** 产品在您内部使用的物料编号。
+* **供应商物料编号：** 供应商使用的对应物料编号。
+* **操作：** 用于管理映射的选项，例如删除错误的映射。
 
 {% hint style="info" %}
-See here the [Admin Section](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/supplier-item-number-map-admin-documentation.md) as well
+另请参阅[管理部分](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/supplier-item-number-map-admin-documentation.md)
 {% endhint %}
 
-## **Benefits**
+## **优势**
 
-* **Efficiency:** Reduces the need for repeated manual entry, making the process faster.
-* **Accuracy:** Minimizes errors by ensuring that item numbers are correctly matched.
-* **Convenience:** Simplifies the workflow by automating the matching process after the initial manual entry.
+* **效率：** 减少重复手动输入的需要，加快处理流程。
+* **准确性：** 确保物料编号正确匹配，从而减少错误。
+* **便捷性：** 首次手动输入后，匹配流程将自动完成，使工作流更加简便。

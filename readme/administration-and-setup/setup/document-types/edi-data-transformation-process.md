@@ -1,13 +1,13 @@
-# EDI Data Transformation Process
+# EDI 数据转换流程
 
 {% embed url="https://youtu.be/OmYbGG0ea0w?si=7okB6WP8kiKIZuec" %}
 
 <figure><img src="../../../.gitbook/assets/EDI.png" alt=""><figcaption></figcaption></figure>
 
-#### Step 1: Structure Descriptor
+#### 第 1 步：结构描述符
 
-* **Format**: JSON
-* **Purpose**: This step involves defining the structure of the EDI data. It includes specifying segments such as `SAC`, `N1`, and `PO1`, and details the fields contained within each segment. For segments that contain nested structures, loops are defined to properly organize the data hierarchy.
+* **格式**：JSON
+* **用途**：此步骤用于定义 EDI 数据的结构，包括指定 `SAC`、`N1` 和 `PO1` 等段，并详细说明每个段包含的字段。对于包含嵌套结构的段，会定义循环以妥善组织数据层级。
 
 ```json
 {
@@ -22,10 +22,10 @@
 }
 ```
 
-#### Step 2: Transformation Using XSLT
+#### 第 2 步：使用 XSLT 进行转换
 
-* **Format**: XSLT
-* **Purpose**: This step involves transforming the structured JSON data into a structured XML format, specifically tailoring the output to meet the requirements for further processing or integration. This transformation helps in extracting precise information like acknowledgement types, order details, and conditional elements based on specific values.
+* **格式**：XSLT
+* **用途**：此步骤用于将结构化 JSON 数据转换为结构化 XML 格式，并根据后续处理或集成的要求定制输出。此转换有助于提取确认类型、订单详情以及根据特定值确定的条件元素等精确信息。
 
 ```xml
 <xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -49,10 +49,10 @@
 
 ```
 
-#### Step 3: Preview (HTML Conversion)
+#### 第 3 步：预览（HTML 转换）
 
-* **Format**: XSLT (outputting HTML)
-* **Purpose**: Converts the XML data from Step 2 into an HTML format for previewing the transformed data in a readable and visually appealing format. The HTML layout includes styles for presentation and structures data like purchase orders, supplier details, and order terms for easy viewing.
+* **格式**：XSLT（输出 HTML）
+* **用途**：将第 2 步生成的 XML 数据转换为 HTML 格式，以便以清晰且直观的方式预览转换后的数据。HTML 布局包含用于展示的样式，并将采购订单、供应商详情和订单条款等数据进行结构化，便于查看。
 
 ```xml
 <xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -77,10 +77,10 @@
 
 ```
 
-#### Step 4: Extraction Paths
+#### 第 4 步：提取路径
 
-* **Format**: JSON
-* **Purpose**: Specifies JSON paths for extracting key values from the XML data produced in Step 2. These paths are used to retrieve specific data points such as purchase orders and currency, which are crucial for downstream processing and integration into other systems.
+* **格式**：JSON
+* **用途**：指定用于从第 2 步生成的 XML 数据中提取关键值的 JSON 路径。这些路径用于检索采购订单和货币等特定数据点，这些数据对于后续处理以及集成到其他系统至关重要。
 
 ```json
 {
@@ -102,4 +102,4 @@
 }
 ```
 
-This updated sequence ensures a thorough process, transforming raw EDI data into structured, actionable information using JSON for data structuring, XSLT for transformation and HTML preview, followed by JSON paths for data extraction and integration.
+这一更新后的流程确保了完整的处理过程：使用 JSON 对原始 EDI 数据进行结构化，使用 XSLT 进行转换并生成 HTML 预览，随后通过 JSON 路径提取数据并进行集成，最终将其转换为结构化且可操作的信息。

@@ -2,36 +2,36 @@
 hidden: true
 ---
 
-# Troubleshooting
+# 故障排查
 
-## Here is some advice on troubleshooting common problems:
+## 以下是排查常见问题的一些建议：
 
-**Data formatting errors:**
+**数据格式错误：**
 
-* Carefully review the EDI structure and format of your messages to ensure they comply with standards and specifications.
-* Validate data fields for correct syntax and formatting according to agreed standards such as ANSI X12 or EDIFACT.
-* Make sure the transformations and templates used are correctly configured to properly format and interpret the data.
+* 仔细检查消息的 EDI 结构和格式，确保其符合相关标准和规范。
+* 根据双方约定的标准（如 ANSI X12 或 EDIFACT），验证数据字段的语法和格式是否正确。
+* 确保转换和模板配置正确，以便正确格式化和解读数据。
 
-**Partner compatibility issues:**
+**合作伙伴兼容性问题：**
 
-* Review your business partner's configurations and specifications to ensure they match your own.
-* Communicate with your partner to identify any discrepancies or incompatibilities and work together to find solutions.
-* Implement adjustments in your EDI configurations if necessary to improve compatibility with your partner.
+* 检查业务合作伙伴的配置和规范，确保与您自己的配置和规范相匹配。
+* 与合作伙伴沟通，找出任何差异或不兼容之处，并共同寻找解决方案。
+* 如有必要，调整 EDI 配置，以提高与合作伙伴的兼容性。
 
-**Handling transmission errors:**
+**处理传输错误：**
 
-* Monitor your EDI transmissions regularly to identify potential errors or failures early.
-* Implement mechanisms for error detection and remediation, such as automated notifications of transmission errors or setting up retry mechanisms for failed transmissions.
-* Perform regular tests of your transmission processes to ensure they work reliably and without errors.
+* 定期监控 EDI 传输，以便及早发现潜在错误或故障。
+* 实施错误检测和补救机制，例如自动发送传输错误通知，或为失败的传输设置重试机制。
+* 定期测试传输流程，确保其可靠运行且没有错误。
 
-**Documentation and logging of errors:**
+**错误文档记录与日志：**
 
-* Keep detailed logging of all errors and problems in EDI transactions, including causes and actions taken.
-* Document solutions to recurring problems to resolve and prevent future errors more quickly.
+* 详细记录 EDI 事务中的所有错误和问题，包括原因及已采取的措施。
+* 记录反复出现的问题的解决方案，以便更快地解决问题并防止未来发生错误。
 
-**Involve subject matter experts:**
+**请教领域专家：**
 
-* When necessary, bring in subject matter experts or EDI consultants to solve complex problems or address specific challenges.
-* Use resources such as forums, training, or support from EDI providers for additional assistance with troubleshooting.
+* 必要时，请领域专家或 EDI 顾问协助解决复杂问题或应对特定挑战。
+* 利用论坛、培训或 EDI 提供商支持等资源，获取额外的故障排查帮助。
 
-By systematically applying these tips, you can effectively troubleshoot EDI transactions and ensure the reliability of your electronic business communications.
+系统地应用这些建议，可以有效排查 EDI 事务问题，并确保电子商务通信的可靠性。

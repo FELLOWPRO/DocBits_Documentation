@@ -1,30 +1,30 @@
 ---
-description: KSEF FA2 electronic document support in DocBits
+description: DocBits 中对 KSEF FA2 电子文档的支持
 ---
 
 # 🇵🇱 KSEF FA2
 
-| Property             | Value                       |
+| 属性                 | 值                         |
 | -------------------- | --------------------------- |
-| **Country / Region** | Poland                      |
-| **Document Types**   | Invoice, Corrective Invoice |
-| **Format**           | XML                         |
-| **Standard**         | KSeF FA(2)                  |
+| **国家 / 地区**      | 波兰                        |
+| **文档类型**         | 发票、更正发票               |
+| **格式**             | XML                         |
+| **标准**             | KSeF FA(2)                  |
 
-KSeF FA2 is the second schema version of the Polish National e-Invoice System. It defines the XML structure for structured invoices (faktury) including seller/buyer data, line items, VAT rates, and payment terms as required by Polish tax law.
+KSeF FA2 是波兰国家电子发票系统的第二版架构。它定义了结构化发票（faktury）的 XML 结构，包括卖方和买方数据、行项目、增值税税率和付款条款，以满足波兰税法的要求。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 组件               | 状态         |
+| ------------------ | ------------ |
+| 预览               | ✅ 支持      |
+| 字段提取           | ✅ 支持      |
+| 转换               | ✅ 支持      |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/ksef-preview.png" alt="KSeF FA(2) invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Poland KSeF FA(2) invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/ksef-preview.png" alt="DocBits 中 KSeF FA(2) 发票的预览"><figcaption><p>波兰 KSeF FA(2) 发票的默认 DocBits 预览</p></figcaption></figure>
 
-## Related
+## 相关
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

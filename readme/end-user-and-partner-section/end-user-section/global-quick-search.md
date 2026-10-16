@@ -1,49 +1,49 @@
-# Global Quick Search
+# 全局快速搜索
 
-Global Quick Search is a keyboard-driven launcher that finds pages, settings, dashboards, and in-page features from anywhere in DocBits. It replaces clicking through the sidebar when you already know what you want.
+全局快速搜索是一个由键盘驱动的启动器，可在 DocBits 的任何位置查找页面、设置、仪表板和页面内功能。如果你已经知道要找什么，它可以替代逐项点击侧边栏。
 
-## How to access
+## 如何访问
 
-Press <kbd>Cmd</kbd> + <kbd>K</kbd> on macOS or <kbd>Ctrl</kbd> + <kbd>K</kbd> on Windows and Linux. The shortcut works from any screen.
+在 macOS 上按 <kbd>Cmd</kbd> + <kbd>K</kbd>，或在 Windows 和 Linux 上按 <kbd>Ctrl</kbd> + <kbd>K</kbd>。在任何屏幕上都可以使用此快捷键。
 
-<figure><img src="../../.gitbook/assets/quick-search-modal.png" alt="Global Quick Search modal"><figcaption><p>Quick Search opens above the current page.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/quick-search-modal.png" alt="全局快速搜索弹窗"><figcaption><p>快速搜索会在当前页面上方打开。</p></figcaption></figure>
 
-## Searching
+## 搜索
 
-Start typing to filter the catalog of pages and in-page features. Quick Search uses fuzzy matching, so partial words and minor typos still find the right entry. The top eight results are shown ordered by relevance.
+开始输入即可筛选页面和页面内功能目录。快速搜索采用模糊匹配，因此输入部分词语或略有拼写错误也能找到正确条目。系统按相关性排序并显示前八个结果。
 
-Each result shows:
+每个结果会显示：
 
-* The feature or page label.
-* The category it belongs to (Settings, Dashboard, Validation, and so on).
-* A small badge indicating the entry type — Page, Dialog, Sidebar, Panel, Menu, or Action.
+* 功能或页面标签。
+* 所属类别（设置、仪表板、验证等）。
+* 表明条目类型的小徽标——页面、对话框、侧边栏、面板、菜单或操作。
 
-Use the up and down arrow keys to highlight a result, then press <kbd>Enter</kbd> to open it. Press <kbd>Esc</kbd> to close the modal.
+使用向上和向下箭头键高亮显示结果，然后按 <kbd>Enter</kbd> 打开。按 <kbd>Esc</kbd> 关闭弹窗。
 
-<mark>Only entries you have permission to use appear in the result list. Admin-only entries are hidden from non-admin users.</mark>
+<mark>结果列表只显示你有权限使用的条目。非管理员用户看不到仅限管理员使用的条目。</mark>
 
-## Recent searches
+## 最近搜索
 
-When the search input is empty, Quick Search displays your five most recent queries so you can return to common destinations with one keystroke. Recent searches are stored per browser and do not sync across devices.
+搜索框为空时，快速搜索会显示你最近的五条查询，方便你只按一次键就返回常用位置。最近搜索按浏览器存储，不会在设备之间同步。
 
-## Picker mode for document lookups
+## 用于文档查找的选择器模式
 
-Some destinations need extra information — for example, "Open document by ID" needs the document ID before it can navigate. When you pick such an entry, Quick Search switches to **picker mode**:
+某些目标需要额外信息才能打开，例如“按 ID 打开文档”需要先输入文档 ID。选择此类条目后，快速搜索会切换到**选择器模式**：
 
-* For document IDs, type or paste the ID and press <kbd>Enter</kbd>.
-* For document types, choose the type from the inline list.
+* 对于文档 ID，输入或粘贴 ID，然后按 <kbd>Enter</kbd>。
+* 对于文档类型，从内嵌列表中选择类型。
 
-Picker mode honours the dashboard's status permissions, so you only see documents you are allowed to open.
+选择器模式会遵循仪表板的状态权限，因此你只能看到有权打开的文档。
 
-## View all results
+## 查看所有结果
 
-If the eight visible results aren't enough, click the **View all results** link in the footer to open the [Sitemap](sitemap.md) pre-filtered with your current search.
+如果八个可见结果不够，请点击页脚中的**查看所有结果**链接，以当前搜索内容作为预筛选条件打开[站点地图](sitemap.md)。
 
-## Keyboard reference
+## 键盘快捷键参考
 
-| Key | Action |
+| 按键 | 操作 |
 |---|---|
-| <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> | Open Quick Search from anywhere |
-| <kbd>↑</kbd> / <kbd>↓</kbd> | Move between results |
-| <kbd>Enter</kbd> | Open the highlighted result |
-| <kbd>Esc</kbd> | Close the modal |
+| <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> | 从任何位置打开快速搜索 |
+| <kbd>↑</kbd> / <kbd>↓</kbd> | 在结果之间移动 |
+| <kbd>Enter</kbd> | 打开高亮显示的结果 |
+| <kbd>Esc</kbd> | 关闭弹窗 |

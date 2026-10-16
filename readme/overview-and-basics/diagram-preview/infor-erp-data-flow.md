@@ -3,8 +3,8 @@ hidden: true
 noIndex: true
 ---
 
-# Infor ERP Data Flow
+# Infor ERP 数据流
 
-How master data reaches DocBits from Infor ERP (LN/M3) through ION Desk, and how validated documents go back to Infor: PDF to IDM, plus either Sync.CaptureDocument through ION Messaging or a direct M3/LN API call. See [Architecture](../architecture/README.md) for details.
+主数据如何通过 ION Desk 从 Infor ERP（LN/M3）传入 DocBits，以及经过验证的文档如何返回 Infor：PDF 传至 IDM，此外还可通过 ION Messaging 中的 Sync.CaptureDocument，或直接调用 M3/LN API。详情请参阅[架构](../architecture/README.md)。
 
-<figure><img src="../../.gitbook/assets/archify-infor-dataflow.svg" alt="Infor ERP Data Flow"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/archify-infor-dataflow.svg" alt="Infor ERP 数据流"><figcaption></figcaption></figure>

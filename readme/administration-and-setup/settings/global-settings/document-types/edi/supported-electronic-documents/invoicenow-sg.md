@@ -1,31 +1,31 @@
 ---
-description: INVOICENOW SG electronic document support in DocBits
+description: "DocBits 对 INVOICENOW SG 电子文档的支持"
 ---
 
 # 🇸🇬 INVOICENOW SG
 
-| Property             | Value                                         |
-| -------------------- | --------------------------------------------- |
-| **Country / Region** | Singapore                                     |
-| **Document Types**   | Invoice, Credit Note                          |
-| **Format**           | UBL 2.1 XML (Peppol)                          |
-| **Standard**         | InvoiceNow SG (Singapore-specific Peppol BIS) |
+| 属性             | 值                                              |
+| ---------------- | ----------------------------------------------- |
+| **国家 / 地区**  | 新加坡                                         |
+| **文档类型**     | 发票、贷项通知单                              |
+| **格式**         | UBL 2.1 XML (Peppol)                          |
+| **标准**         | InvoiceNow SG（新加坡专属 Peppol BIS）        |
 
-InvoiceNow SG is the Singapore-specific localization of the Peppol BIS Billing standard. It extends the base Peppol model with Singapore-specific business rules, GST handling, and UEN (Unique Entity Number) identification requirements.
+InvoiceNow SG 是 Peppol BIS Billing 标准针对新加坡的本地化版本。它在 Peppol 基础模型上扩展了新加坡特定的业务规则、GST 处理方式和 UEN（唯一实体编号）识别要求。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件             | 状态        |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览             | ✅ 支持      |
+| 字段提取         | ✅ 支持      |
+| 转换             | ✅ 支持      |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/invoicenow-sg-preview.png" alt="InvoiceNow SG invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Singapore InvoiceNow SG invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/invoicenow-preview.png" alt="DocBits 中的 InvoiceNow SG 发票预览"><figcaption><p>DocBits 中新加坡 InvoiceNow SG 发票的默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)
 * [InvoiceNow](invoicenow.md)

@@ -1,29 +1,29 @@
-# Email Notification
+# 电子邮件通知
 
-<figure><img src="../../../../.gitbook/assets/email_notification.png" alt="Email Notification"><figcaption><p>Email Notification Page</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/email_notification.png" alt="电子邮件通知"><figcaption><p>电子邮件通知页面</p></figcaption></figure>
 
-Configuring email notifications is critical. Email notifications in DocBits can be configured to notify users of various document-related events, such as: Processing completion, import or export errors, or user intervention requests. This tool is essential for maintaining effective communication and operational continuity in document processing environments. Here are some reasons why this is important:
+配置电子邮件通知至关重要。在 DocBits 中，您可以配置电子邮件通知，在发生各种与文档相关的事件时通知用户，例如：处理完成、导入或导出错误，或需要用户介入的请求。这项功能对于在文档处理环境中保持有效沟通和运营连续性至关重要。以下是其重要性的几个原因：
 
-**Real-time communication:**
+**实时沟通：**
 
-* Email alerts allow users to be immediately notified of important events or changes in their document management system. This ensures that all relevant parties are immediately informed of important updates.
+* 电子邮件提醒可让用户立即获知文档管理系统中的重要事件或变更。这可确保所有相关人员及时收到重要更新。
 
-**Transparency and traceability:**
+**透明度和可追溯性：**
 
-* By configuring email notifications, users can track and monitor the status of document processing events. This improves transparency and traceability in the document management system.
+* 配置电子邮件通知后，用户可以跟踪和监控文档处理事件的状态。这有助于提升文档管理系统的透明度和可追溯性。
 
-**Timely reactions:**
+**及时响应：**
 
-* Automatic notification of events such as document releases, comments, or approvals allows users to quickly respond to requests or updates. This helps increase efficiency and productivity.
+* 自动通知文档发布、评论或审批等事件，可帮助用户快速响应请求或更新。这有助于提高效率和生产力。
 
-**Automation of workflows:**
+**工作流自动化：**
 
-* Email notifications can be integrated into workflows to automatically send notifications to relevant users when certain actions are taken. This enables seamless automation of business processes.
+* 电子邮件通知可以集成到工作流中，在执行特定操作时自动向相关用户发送通知。这有助于顺畅地实现业务流程自动化。
 
-**Reminders and deadlines:**
+**提醒和截止日期：**
 
-* Email notification configuration can be used to remind users of upcoming deadlines or outstanding tasks. This helps ensure important tasks are completed on time.
+* 配置电子邮件通知可用于提醒用户即将到来的截止日期或尚未完成的任务。这有助于确保重要任务按时完成。
 
-Overall, email notification configuration plays an important role in improving communication, increasing efficiency, and ensuring that document processing events are managed in a timely and effective manner. By automating notifications, organizations can ensure that important information is not lost and that all relevant parties are always kept up to date.
+总的来说，配置电子邮件通知对于改善沟通、提高效率，以及确保及时有效地管理文档处理事件发挥着重要作用。通过自动发送通知，组织可以确保重要信息不会遗漏，并让所有相关人员及时了解最新情况。
 
-This setting is critical for ensuring that stakeholders are kept informed about the processing status of important documents, which aids in rapid decision-making and efficient management of document workflows.
+此设置对于确保相关人员了解重要文档的处理状态至关重要，有助于快速决策和高效管理文档工作流。

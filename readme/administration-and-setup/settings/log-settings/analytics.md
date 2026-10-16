@@ -1,49 +1,49 @@
-# Analytics
+# 分析
 
-<figure><img src="../../../.gitbook/assets/analytics_settings.png" alt="Analytics in the English Sandbox showing View Event Logs, four tabs, time range, severity and service filters, and four summary cards"><figcaption><p>Use the tabs and filters to narrow the metrics you want to inspect.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/analytics_settings.png" alt="英文 Sandbox 中的分析页面，显示“查看事件日志”、四个选项卡、时间范围、严重性和服务筛选器，以及四张汇总卡片"><figcaption><p>使用选项卡和筛选器，缩小要检查的指标范围。</p></figcaption></figure>
 
-The Analytics page helps you inspect log patterns, authentication events, API usage, and an executive overview. Start with **Logs Analytics**. Choose **View Event Logs** to open the underlying event list when you need to investigate an individual entry.
+“分析”页面可帮助您检查日志模式、身份验证事件、API 使用情况和高层概览。请先查看 **Logs Analytics**。需要调查某条具体记录时，选择 **View Event Logs** 打开底层事件列表。
 
-## Tabs
+## 选项卡
 
-| Tab | Description |
+| 选项卡 | 说明 |
 |-----|-------------|
-| **Logs Analytics** | Log severity distribution, timeline charts, and service breakdown. |
-| **Auth Security** | Authentication events, login attempts, and security-related metrics. |
-| **API Metrics** | API request volumes, response times, and error rates. |
-| **Executive Dashboard** | Higher-level overview for organization administrators; other roles may not see this tab. |
+| **Logs Analytics** | 日志严重性分布、时间线图表和服务细分。 |
+| **Auth Security** | 身份验证事件、登录尝试和安全相关指标。 |
+| **API Metrics** | API 请求量、响应时间和错误率。 |
+| **Executive Dashboard** | 面向组织管理员的高层概览；其他角色可能看不到此选项卡。 |
 
-## Filters
+## 筛选器
 
-| Filter | Description |
+| 筛选器 | 说明 |
 |--------|-------------|
-| **Time Range** | Select a time window (e.g., Today, Last 7 Days) for the displayed metrics. |
-| **Severity** | Click Debug, Info, Warning, or Error to include or exclude that level. A number on a chip shows its current count. |
-| **Service** | Choose the service whose events you want to inspect. |
+| **Time Range** | 选择指标的时间范围（例如 Today、Last 7 Days）。 |
+| **Severity** | 点击 Debug、Info、Warning 或 Error，以包含或排除相应级别。筛选项上的数字表示当前数量。 |
+| **Service** | 选择要检查其事件的服务。 |
 
-## Summary Cards
+## 汇总卡片
 
-Four summary cards appear below the filters:
+筛选器下方会显示四张汇总卡片：
 
-| Card | Description |
+| 卡片 | 说明 |
 |------|-------------|
-| **Peak Activity** | Time of day with the highest log volume and total count. |
-| **Errors** | Total error count for the selected period. |
-| **Warnings** | Total warning count for the selected period. |
-| **Top Source** | The service producing the most logs with its count. |
+| **Peak Activity** | 日志量最高的时段及其总数。 |
+| **Errors** | 所选时段内的错误总数。 |
+| **Warnings** | 所选时段内的警告总数。 |
+| **Top Source** | 产生日志最多的服务及其数量。 |
 
-## Real User Monitoring (RUM)
+## 真实用户监控（RUM）
 
-Below the summary cards, RUM metrics show frontend performance data collected from real user browser sessions.
+汇总卡片下方的 RUM 指标显示从真实用户浏览器会话中收集的前端性能数据。
 
-## Analytics Charts
+## 分析图表
 
-In **Logs Analytics**, select one of the three chart buttons to change how the same filtered logs are displayed:
+在 **Logs Analytics** 中，选择三个图表按钮之一，以更改相同筛选后日志的显示方式：
 
-| View | Description |
+| 视图 | 说明 |
 |------|-------------|
-| **Severity** | Pie chart showing log level distribution (Debug, Info, Warning, Error). |
-| **Timeline** | Line chart showing log volume over time. |
-| **Service** | Bar chart breaking down logs by service. |
+| **Severity** | 饼图，显示日志级别分布（Debug、Info、Warning、Error）。 |
+| **Timeline** | 折线图，显示一段时间内的日志量。 |
+| **Service** | 条形图，按服务细分日志。 |
 
-If a chart says that no data is available, try a wider **Time Range** or fewer **Severity** filters. The figures in the screenshot belong to the synthetic Sandbox organization and will differ in your organization.
+如果图表显示没有可用数据，请尝试扩大 **Time Range** 范围或减少 **Severity** 筛选条件。截图中的数据属于合成 Sandbox 组织，您所在组织的数据会有所不同。

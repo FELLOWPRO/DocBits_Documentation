@@ -1,43 +1,45 @@
-# E-Mail templates
+# 电子邮件模板
 
-## **Overview**
+## **概述**
 
-Email Templates let you customize the automated emails that DocBits sends — for example approval reminders or error notifications. A template defines the subject line and body, and can include dynamic fields (e.g. `{{InvoiceNumber}}`), images and rich-text formatting.
+电子邮件模板可让您自定义 DocBits 自动发送的电子邮件，例如审批提醒或错误通知。模板定义主题行和正文，并可包含动态字段（例如 `{{InvoiceNumber}}`）、图片和富文本格式。
 
-## **Accessing Email Templates**
+## **访问电子邮件模板**
 
-Navigate to **Settings → Communication & Notifications → Email Templates**. The list shows every template with its **Name**, **Subject**, **Document Type**, **Last Modified** date and **Actions** (edit or delete).
+前往 **Settings → Communication & Notifications → Email Templates**。列表显示每个模板的 **Name**、**Subject**、**Document Type**、**Last Modified** 日期和 **Actions**（编辑或删除）。
 
-<figure><img src="../../../.gitbook/assets/email_templates_dashboard_list.png" alt="Email Templates list"><figcaption><p>The Email Templates list</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/email_templates_dashboard_list.png" alt="电子邮件模板列表"><figcaption><p>电子邮件模板列表</p></figcaption></figure>
 
-## **Creating a Template**
+## **创建模板**
 
-1. Click **+ New** in the top-right corner.
-2. Fill in the fields:
-   * **Name** — a descriptive identifier (e.g. "Document Error Notification").
-   * **Document Type** — the document type the template applies to (e.g. `INVOICE`).
-   * **Include Document As Attachment** — enable this toggle to attach the source document to the email.
-   * **Subject** — the email subject line. Click the **+** button next to the field to insert a dynamic field, or type `{{FieldID}}` directly.
-3. Design the body in the rich-text editor — format text (bold, italic, lists, alignment), insert images with **Upload**, edit raw HTML with the `<>` button, and use the **+** button to insert dynamic fields.
-4. Click **Save**.
+1. 点击右上角的 **+ New**。
+2. 填写以下字段：
+   * **Name** — 描述性标识（例如“文档错误通知”）。
+   * **Document Type** — 此模板适用的文档类型（例如 `INVOICE`）。
+   * **Include Document As Attachment** — 启用此开关，将源文档作为附件添加到电子邮件中。
+   * **Subject** — 电子邮件主题行。点击字段旁边的 **+** 按钮可插入动态字段，也可以直接输入 `{{FieldID}}`。
+3. 在富文本编辑器中设计正文 — 设置文本格式（粗体、斜体、列表、对齐方式），使用 **Upload** 插入图片，使用 `<>` 按钮编辑原始 HTML，并使用 **+** 按钮插入动态字段。
+4. 点击 **Save**。
 
-<figure><img src="../../../.gitbook/assets/email_templates_4.png" alt="Email Template editor"><figcaption><p>The template editor — name, document type, attachment toggle, subject and rich-text body</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/email_templates_4.png" alt="电子邮件模板编辑器"><figcaption><p>模板编辑器 — 名称、文档类型、附件开关、主题和富文本正文</p></figcaption></figure>
 
-## **Dynamic Fields**
+## **动态字段**
 
-Dynamic fields are replaced with document data when the email is sent. Insert them with the **+** button, or type them manually using double curly braces:
+发送电子邮件时，动态字段会替换为文档数据。使用 **+** 按钮插入字段，也可以手动输入双大括号格式：
 
-* `{{invoice_id}}` — the invoice number
-* `{{supplier_name}}` — the supplier name
-* `{{total_amount}}` — the total amount
-* `{{status}}` — the current document status
+* `{{invoice_id}}` — 发票编号
+* `{{supplier_name}}` — 供应商名称
+* `{{total_amount}}` — 总金额
+* `{{status}}` — 当前文档状态
 
-## **Sending a Test Email**
+## **发送测试电子邮件**
 
-Click **Send Test** in the editor, enter a **Receiver Email** address, and click **Send**. DocBits sends a preview of the template so you can check the layout and verify that the dynamic fields resolve correctly before saving.
+在编辑器中点击 **Send Test**，输入 **Receiver Email** 地址，然后点击 **Send**。DocBits 会发送模板预览，以便您在保存前检查布局并确认动态字段能正确解析。
 
-<figure><img src="../../../.gitbook/assets/test_email_configuration_dialog.png" alt="Send Test dialog"><figcaption><p>The Send Test dialog</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/test_email_configuration_dialog.png" alt="Send Test 对话框"><figcaption><p>Send Test 对话框</p></figcaption></figure>
 
-## **Using Templates in Notifications**
+## **在通知中使用模板**
 
-Saved templates can be linked to [**Email Notification**](email-notification/) workflows — for example approval reminders or status-change updates.
+已保存的模板可以关联到 [**Email Notification**](email-notification/) 工作流中，例如审批提醒或状态变更更新。
+
+</final>

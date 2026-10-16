@@ -1,30 +1,30 @@
 ---
-description: URUGUAY CFE 24 electronic document support in DocBits
+description: DocBits 对乌拉圭 CFE 24 电子文档的支持
 ---
 
-# 🇺🇾 URUGUAY CFE 24
+# 🇺🇾 乌拉圭 CFE 24
 
-| Property             | Value                  |
+| 属性                 | 值                     |
 | -------------------- | ---------------------- |
-| **Country / Region** | Uruguay                |
-| **Document Types**   | e-Invoice, Credit Note |
-| **Format**           | XML                    |
-| **Standard**         | CFE Schema Version 24  |
+| **国家 / 地区**      | 乌拉圭                 |
+| **文档类型**         | 电子发票、贷项通知单   |
+| **格式**             | XML                    |
+| **标准**             | CFE 架构版本 24        |
 
-Uruguay CFE 24 refers to schema version 24 of the Uruguayan CFE system. This version is used by many existing electronic documents and includes all required fields for DGI compliance including CAE (Código de Autorización Electrónico).
+乌拉圭 CFE 24 指乌拉圭 CFE 系统的第 24 版架构。许多现有电子文档都使用此版本，其中包含符合 DGI 要求的所有必需字段，包括 CAE（电子授权代码）。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 组件             | 状态       |
+| ---------------- | ---------- |
+| 预览             | ✅ 支持    |
+| 字段提取         | ✅ 支持    |
+| 转换             | ✅ 支持    |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/uruguay-cfe-preview.png" alt="Uruguay CFE v24 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Uruguay CFE v24 invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/uruguay-cfe-preview.png" alt="DocBits 中的乌拉圭 CFE v24 发票预览"><figcaption><p>DocBits 中乌拉圭 CFE v24 发票的默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

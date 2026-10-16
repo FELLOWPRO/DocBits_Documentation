@@ -1,59 +1,57 @@
-# Test: File Import 1
+# 测试：文件导入 1
 
-## Purpose
+## 目的
 
-These tests are designed to ensure that our file import system works correctly. We specifically test the import of PDF and TIFF files into the system, ensuring that they are processed and stored successfully.
+这些测试旨在确保文件导入系统正常运行。我们专门测试 PDF 和 TIFF 文件导入系统的情况，以确保文件成功处理并存储。
 
-#### Test Setup and Cleanup
+#### 测试设置与清理
 
-* **Setup:**
-  * Before each test, we log a setup message.
-  * **Cleanup:** After each test, we clean up by deleting any documents created by the test user from the database to ensure no leftover data affects subsequent tests.
+* **设置：**
+  * 每次测试前，我们都会记录一条设置日志。
+  * **清理：** 每次测试后，我们都会从数据库中删除测试用户创建的所有文档，确保没有残留数据影响后续测试。
 
-#### Test Scenarios
+#### 测试场景
 
-1. **Import PDF File:**
-   * **Test Import PDF (`test_import_pdf`):**
-     * Import a PDF file (`FellowBananaInvoice.pdf`) into the system.
-     * **Expected Outcome:** The file should be imported successfully, returning a document ID.
-2. **Import TIFF File:**
-   * **Test Import TIFF (`test_import_tiff`):**
-     * Import a TIFF file (`TIFF_FILE.TIF`) into the system.
-     * **Expected Outcome:** The file should be imported successfully, returning a document ID.
+1. **导入 PDF 文件：**
+   * **测试导入 PDF (`test_import_pdf`)：**
+     * 将 PDF 文件 (`FellowBananaInvoice.pdf`) 导入系统。
+     * **预期结果：** 文件应成功导入，并返回一个文档 ID。
+2. **导入 TIFF 文件：**
+   * **测试导入 TIFF (`test_import_tiff`)：**
+     * 将 TIFF 文件 (`TIFF_FILE.TIF`) 导入系统。
+     * **预期结果：** 文件应成功导入，并返回一个文档 ID。
 
-## Detailed Explanation of Each Test
+## 各项测试的详细说明
 
-* **Setup and Cleanup:**
-  * **Logging:** A setup and cleanup message is logged for each test.
-  * **Database Cleanup (`clean_documents`):** Deletes any documents created by the test user from the database to maintain a clean state.
-*   **File Import Tests:**
+* **设置与清理：**
+  * **日志记录：** 每项测试都会记录设置和清理日志。
+  * **数据库清理 (`clean_documents`)：** 从数据库中删除测试用户创建的所有文档，以保持环境干净。
+*   **文件导入测试：**
 
-    **Import PDF File:**
+    **导入 PDF 文件：**
 
-    * **Load User:** Load the test user.
-    * **File Path:** Specify the path to the PDF file (`tests/files/pdfs/FellowBananaInvoice.pdf`).
-    * **Import File:** Use the `FileImporter` class to import the PDF file.
-    * **Check Response:** Ensure the response is a list containing a success message and a document ID.
+    * **加载用户：** 加载测试用户。
+    * **文件路径：** 指定 PDF 文件的路径 (`tests/files/pdfs/FellowBananaInvoice.pdf`)。
+    * **导入文件：** 使用 `FileImporter` 类导入 PDF 文件。
+    * **检查响应：** 确保响应是一个列表，其中包含成功消息和文档 ID。
 
-    **Import TIFF File:**
+    **导入 TIFF 文件：**
 
-    * **Load User:** Load the test user.
-    * **File Path:** Specify the path to the TIFF file (`tests/files/pdfs/TIFF_FILE.TIF`).
-    * **Import File:** Use the `FileImporter` class to import the TIFF file.
-    * **Check Response:** Ensure the response is a list containing a success message and a document ID.
+    * **加载用户：** 加载测试用户。
+    * **文件路径：** 指定 TIFF 文件的路径 (`tests/files/pdfs/TIFF_FILE.TIF`)。
+    * **导入文件：** 使用 `FileImporter` 类导入 TIFF 文件。
+    * **检查响应：** 确保响应是一个列表，其中包含成功消息和文档 ID。
 
-## Code Structure
+## 代码结构
 
-* **Logger:** Used to log debug messages during setup, cleanup, and test execution.
-* **Database Helper:** Executes queries without returning results for cleanup.
-* **File Importer:** Handles the import of files into the system.
-* **Fixtures:** `set_up` fixture to manage setup and cleanup for tests.
-* **Tests:**
-  * `test_import_pdf`: Tests importing a PDF file.
-  * `test_import_tiff`: Tests importing a TIFF file.
+* **日志记录器：** 用于在设置、清理和测试执行期间记录调试消息。
+* **数据库助手：** 执行查询进行清理，但不返回结果。
+* **文件导入器：** 负责将文件导入系统。
+* **Fixture：** 使用 `set_up` fixture 管理测试的设置与清理。
+* **测试：**
+  * `test_import_pdf`：测试导入 PDF 文件。
+  * `test_import_tiff`：测试导入 TIFF 文件。
 
-#### Summary
+#### 总结
 
-These tests ensure that our file import functionality works as expected for both PDF and TIFF files. By following this approach, we verify that files are imported correctly and that the system can handle different file types without issues.
-
-
+这些测试确保文件导入功能按预期运行，适用于 PDF 和 TIFF 文件。通过这种方式，我们可以验证文件是否正确导入，以及系统能否顺利处理不同类型的文件。

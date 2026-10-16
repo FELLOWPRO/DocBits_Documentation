@@ -1,37 +1,37 @@
-# Test your BOD connection with Postman
+# 使用 Postman 测试 BOD 连接
 
-## Overview
+## 概述
 
-This page explains how to verify the successful processing of your BOD (Business Object Document) using Postman. You will test the relevant API endpoint by sending a request with your BOD mapping file. Follow the steps below to complete the process.
+本页介绍如何使用 Postman 验证 BOD（业务对象文档）是否已成功处理。您将通过发送包含 BOD 映射文件的请求来测试相关 API 端点。请按照以下步骤完成操作。
 
-## Accessing Your API Key and BOD Mapping File
+## 获取 API 密钥和 BOD 映射文件
 
-### Retrieving Your API Key
+### 获取 API 密钥
 
-1.  Go to **Settings → Global Settings → Integration & SSO**.
+1.  前往 **设置 → 全局设置 → 集成与单点登录**。
 
     <figure><img src="../../.gitbook/assets/settings_integration.png" alt=""><figcaption></figcaption></figure>
-2.  You can either manually copy your **API key** or click the copy button to copy it to your clipboard.
+2.  您可以手动复制 **API 密钥**，也可以点击复制按钮将其复制到剪贴板。
 
     <figure><img src="../../.gitbook/assets/test_bod_connection_postman_1.png" alt=""><figcaption></figcaption></figure>
 
-### **Downloading the BOD Mapping File**
+### **下载 BOD 映射文件**
 
-1.  Go to **Settings → Document Processing → Export**.
+1.  前往 **设置 → 文档处理 → 导出**。
 
     <figure><img src="../../.gitbook/assets/settings_export.png" alt=""><figcaption></figcaption></figure>
-2.  In the **Actions** column of the relevant export entry, click the three-dot menu and select **Edit**.
+2.  在相关导出条目的 **操作** 列中，点击三点菜单并选择 **编辑**。
 
     <figure><img src="../../.gitbook/assets/test_bod_connection_postman_2.png" alt=""><figcaption></figcaption></figure>
-3.  Locate the **BOD Mapping File** and click the **Download** button to save it.
+3.  找到 **BOD 映射文件**，然后点击 **下载** 按钮将其保存。
 
     <figure><img src="../../.gitbook/assets/test_bod_connection_postman_3.png" alt=""><figcaption></figcaption></figure>
 
-## Test the Endpoint in Postman
+## 在 Postman 中测试端点
 
-1.  **Paste the cURL Command in Postman**
+1.  **在 Postman 中粘贴 cURL 命令**
 
-    Open Postman and paste the following cURL command into the **Import** section. Postman will automatically configure the request.
+    打开 Postman，并将以下 cURL 命令粘贴到 **导入** 区域。Postman 会自动配置请求。
 
     ```bash
     curl -X 'POST' \
@@ -48,19 +48,19 @@ This page explains how to verify the successful processing of your BOD (Business
     <figure><img src="../../.gitbook/assets/test_bod_connection_postman_4.png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../.gitbook/assets/test_bod_connection_postman_5.png" alt=""><figcaption></figcaption></figure>
-2.  **Set the API Key**\
-    Go to the **Headers** tab, locate the `X-API-KEY` header, and paste your API key into the **Value** column.
+2.  **设置 API 密钥**\
+    转到 **Headers** 选项卡，找到 `X-API-KEY` 标头，然后在 **Value** 列中粘贴 API 密钥。
 
     <figure><img src="../../.gitbook/assets/test_bod_connection_postman_6.png" alt=""><figcaption></figcaption></figure>
-3.  **Upload the BOD File**\
-    Go to the **Body** tab, locate the `file` key, then click **Select Files** in the **Value** column and upload your BOD XML file.
+3.  **上传 BOD 文件**\
+    转到 **Body** 选项卡，找到 `file` 键，然后点击 **Value** 列中的 **Select Files**，并上传 BOD XML 文件。
 
     <figure><img src="../../.gitbook/assets/test_bod_connection_postman_7.png" alt=""><figcaption></figcaption></figure>
-4.  **Send the Request**\
-    Click **Send** to make the API call.
+4.  **发送请求**\
+    点击 **Send** 发起 API 调用。
 
     <figure><img src="../../.gitbook/assets/test_bod_connection_postman_8.png" alt=""><figcaption></figcaption></figure>
-5.  **Verify the Response**\
-    Check the response to confirm that your BOD was processed successfully.
+5.  **验证响应**\
+    检查响应，确认 BOD 已成功处理。
 
     <figure><img src="../../.gitbook/assets/test_bod_connection_postman_9.png" alt=""><figcaption></figcaption></figure>

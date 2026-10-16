@@ -2,365 +2,385 @@
 hidden: true
 ---
 
-# Workflow Card Release & Version History
+# 发布
 
-## Version Control Principles
+## 版本控制原则
 
-<figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 13.41.53.png" alt=""><figcaption>Workflow Version Control System</figcaption></figure>
+<figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 13.41.53.png" alt=""><figcaption><p>工作流版本控制系统</p></figcaption></figure>
 
-### Version 8.5.2024 - Core Versioning Features
+### 版本 8.5.2024 - 核心版本控制功能
 
-The DocBits Workflow Engine implements robust version control for all workflow cards:
+DocBits 工作流引擎为所有工作流卡片实现了稳健的版本控制：
 
-1. **Version Control**: Each card can have multiple versions, each representing a different set of conditions or actions. This allows you to experiment with or tweak the rules without affecting the currently active workflow.
-2. **Seamless Upgrades**: When you need to update a rule or condition due to changes in your document processing requirements, you can create a new version of the card. This approach ensures that any modifications are deliberate and tested before they replace the current version. It minimizes errors and potential disruptions in your document processing.
-3. **Maintaining Consistency**: Keeping the original card version unchanged until you decide to upgrade ensures that ongoing processes are not affected. You can run tests and validations on the new version without impacting live data or workflows.
-4. **Flexibility and Testing**: Multiple versions enable testing different scenarios in a controlled environment. You can see the effects of new rules or changes on your document processing workflow without making permanent changes. Once you are satisfied with the results, you can then choose to apply the new version.
+1. **版本控制**：每张卡片可以有多个版本，每个版本代表一组不同的条件或操作。这样，您可以试验或调整规则，而不影响当前启用的工作流。
+2. **无缝升级**：当文档处理要求发生变化，需要更新规则或条件时，您可以创建卡片的新版本。这样可以确保所有修改都经过有意制定和测试，然后再替换当前版本。这可以最大限度地减少文档处理中的错误和潜在中断。
+3. **保持一致性**：在您决定升级之前保持原始卡片版本不变，可确保正在进行的流程不受影响。您可以在新版本上运行测试和验证，而不会影响线上数据或工作流。
+4. **灵活性和测试**：多个版本支持在受控环境中测试不同场景。您可以查看新规则或变更对文档处理工作流的影响，而无需进行永久性修改。对结果满意后，您可以选择应用新版本。
 
----
+***
 
-## Card Versioning Overview
+## 卡片版本概览
 
-### Statistics
+### 统计数据
 
-| Metric | Value |
-|--------|-------|
-| **Cards with Multiple Versions** | 30+ |
-| **Total Version Records** | 90+ |
-| **Current Active Versions** | 81+ |
-| **Deprecated Versions** | 9 |
-| **Fully Disabled Cards** | 2 |
-| **Latest Version (Max)** | 5 (CONDITION_DOC_TO_PO_UNIT_PRICE) |
+| 指标 | 数值 |
+| -------------------------------- | --------------------------------------- |
+| **具有多个版本的卡片** | 30+ |
+| **版本记录总数** | 90+ |
+| **当前启用的版本** | 81+ |
+| **已弃用的版本** | 9 |
+| **已完全禁用的卡片** | 2 |
+| **最新版本（最高）** | 5 (CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE) |
 
-### Version Range
-- **Minimum:** v1
-- **Maximum:** v5
-- **Average Versions per Card:** 3
+### 版本范围
 
----
+* **最小值：** v1
+* **最大值：** v5
+* **每张卡片的平均版本数：** 3
 
-## Detailed Card Version Changes
+***
 
-### 🔧 ACTION CARDS - External Integration & Execution
+## 卡片版本变更详情
 
-#### 1. CALL_API
-**Versions:** v1, v2 (Current: v2)
+### 🔧 操作卡片 - 外部集成与执行
 
-📖 **Guide:** [Call External API Guide](../then/action/call-api-guide.md)
+#### 1. CALL\_API
 
-| Version | Translation | Status | Key Changes |
-|---------|-------------|--------|-------------|
-| v1 | No | Active | Basic API call without translation keys |
-| v2 | Yes | ✅ Current | Added `trnsl_%call_api` for multi-language support |
+**版本：** v1、v2（当前：v2）
 
-**What Changed:** Added internationalization (i18n) support with translation keys. Functionality remains identical.
+📖 **指南：** [调用外部 API 指南](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/then/action/call-api-guide.md)
 
-**Before (v1):**
+| 版本 | 翻译 | 状态 | 主要变更 |
+| ------- | ----------- | --------- | -------------------------------------------------- |
+| v1 | 否 | 启用 | 不含翻译键的基本 API 调用 |
+| v2 | 是 | ✅ 当前 | 添加了用于多语言支持的 `trnsl_%call_api` |
+
+**变更内容：**添加了带翻译键的国际化（i18n）支持。功能保持不变。
+
+**变更前（v1）：**
+
 ```
 Call Api: [endpoint] with method: [method], params: [params], data: [data]
 ```
 
-**After (v2):**
+**变更后（v2）：**
+
 ```
 trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [params], data: [data]
 ```
 
-**Recommendation:** Use v2 for all new workflows (includes language support)
-**Backward Compatibility:** ✅ v1 still works
+**建议：**所有新工作流均使用 v2（包含语言支持） **向后兼容性：**✅ v1 仍可使用
 
----
+***
 
-#### 2. HTTPS Request (HTTPS_REQUEST)
-**Versions:** v1, v2 (Current: v2)
+#### 2. HTTPS 请求 (HTTPS\_REQUEST)
 
-| Version | Translation | Status | Key Changes |
-|---------|-------------|--------|-------------|
-| v1 | No | Active | Simple HTTP request |
-| v2 | Yes | ✅ Current | Added `trnsl_%send_https_request` translation keys |
+**版本：** v1、v2（当前：v2）
 
-**What Changed:** Added translation support. Core webhook/request functionality unchanged.
-**Recommendation:** Use v2 (multi-language support)
+| 版本 | 翻译 | 状态 | 主要变更 |
+| ------- | ----------- | --------- | -------------------------------------------------- |
+| v1 | 否 | 启用 | 简单 HTTP 请求 |
+| v2 | 是 | ✅ 当前 | 添加了 `trnsl_%send_https_request` 翻译键 |
 
----
+**变更内容：**添加了翻译支持。核心 webhook/请求功能保持不变。 **建议：**使用 v2（支持多语言）
 
-#### 3. ACTION_RUN_DOCOPERATOR_SCRIPT ⚠️
-**Versions:** v2 (Current), v3, v4 (Deprecated & Disabled)
+***
 
-| Version | Translation | Status | Key Changes |
-|---------|-------------|--------|-------------|
-| v2 | Yes | Active | Original DocOperator implementation |
-| v3 | Yes | Active | Added "Execute the prompt" parameter for additional control |
-| v4 | Yes | ❌ DEPRECATED & DISABLED | Removed "Execute" parameter (reverted) |
+#### 3. ACTION\_RUN\_DOCOPERATOR\_SCRIPT ⚠️
 
-**Evolution Path:** v2 → v3 (added parameter) → v4 (reverted - not recommended)
+**版本：** v2（当前）、v3、v4（已弃用并禁用）
 
-**What Changed:**
-- v2 → v3: Added optional execution control parameter for more flexibility
-- v3 → v4: Removed the parameter after further analysis (deprecated)
+| 版本 | 翻译 | 状态 | 主要变更 |
+| ------- | ----------- | ----------------------- | ----------------------------------------------------------- |
+| v2 | 是 | 启用 | 原始 DocOperator 实现 |
+| v3 | 是 | 启用 | 添加了“执行提示”参数，以提供更多控制 |
+| v4 | 是 | ❌ 已弃用并禁用 | 移除了“执行”参数（回退） |
 
-**Recommendation:** Use v3 for new workflows (latest active version with all features)
-**Migration:** If using v4, switch to v3 ⚠️
+**演进路径：**v2 → v3（添加参数）→ v4（回退 - 不建议使用）
 
----
+**变更内容：**
 
-#### 4. ACTION_TASK_FOR_GROUP
-**Versions:** v2, v3 (Deprecated), v4 (Current)
+* v2 → v3：添加了可选的执行控制参数，以提高灵活性
+* v3 → v4：经过进一步分析后移除了该参数（已弃用）
 
-📖 **Guide:** [Task Assignment Guide](../then/task/task-assignment-guide.md)
+**建议：**新工作流使用 v3（功能最全的最新启用版本） **迁移：**如果正在使用 v4，请切换到 v3 ⚠️
 
-| Version | Changes | Status | Type Parameter |
-|---------|---------|--------|-----------------|
-| v2 | Original implementation | Active | "Task" (fixed) |
-| v3 | + Decision tree support | ❌ DEPRECATED | "Task" (fixed) |
-| v4 | - Decision tree, + Generic type | ✅ Current | Generic type (flexible) |
+***
 
-**Evolution:** v2 → v3 (decision tree experiment) → v4 (generic types, decision tree removed)
+#### 4. ACTION\_TASK\_FOR\_GROUP
 
-**v2 → v3 Change (Decision Tree Experiment):**
+**版本：** v2、v3（已弃用）、v4（当前）
+
+📖 **指南：**[任务分配指南](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/then/task/task-assignment-guide.md)
+
+| 版本 | 变更 | 状态 | 类型参数 |
+| ------- | ------------------------------- | ------------ | ----------------------- |
+| v2 | 原始实现 | 启用 | "Task"（固定） |
+| v3 | + 决策树支持 | ❌ 已弃用 | "Task"（固定） |
+| v4 | - 决策树，+ 通用类型 | ✅ 当前 | 通用类型（灵活） |
+
+**演进：**v2 → v3（决策树实验）→ v4（通用类型，移除决策树）
+
+**v2 → v3 变更（决策树实验）：**
+
 ```
 Before: "Create a new Task with the title: [param] ... and assign to group [param]"
 After:  "Create a new Task with the title: [param] ... and assign to group [param].
          Use decision tree, if available: [param]"
 ```
 
-**v3 → v4 Change (Generic Types + Decision Tree Removal):**
+**v3 → v4 变更（通用类型 + 移除决策树）：**
+
 ```
 Before (v3): "Create a new Task with the title: [param] ... "
 After (v4):  "Create a new [param] with the title: [param] ... "
 ```
 
-**What Changed:**
-- v2 → v3: Added `decision tree, if available: [param]` parameter
-- v3 → v4:
-  - ❌ Removed decision tree parameter
-  - ✅ Changed "Task" → generic `[param]` (supports Task, Ticket, Issue, etc.)
-  - Added translation key `trnsl_%task_for_group_v4`
+**变更内容：**
 
-**Why:** v3 decision tree approach was experimental. v4 provides better flexibility with generic work item types.
-**Recommendation:** Use v4 (current, most flexible)
+* v2 → v3：添加了 `decision tree, if available: [param]` 参数
+* v3 → v4：
+  * ❌ 移除了决策树参数
+  * ✅ 将“Task”改为通用的 `[param]`（支持 Task、Ticket、Issue 等）
+  * 添加了翻译键 `trnsl_%task_for_group_v4`
 
----
+**原因：**v3 的决策树方案属于实验性质。v4 提供了更好的灵活性，支持通用工作项类型。 **建议：**使用 v4（当前版本，灵活性最高）
 
-#### 5. ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP
-**Versions:** v2, v3 (Current)
+***
 
-| Version | Task Type | Status | Key Difference |
-|---------|-----------|--------|-----------------|
-| v2 | "task" (fixed) | Active | Original version |
-| v3 | Generic type | ✅ Current | Changed to flexible `[param]` |
+#### 5. ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP
 
-**What Changed:** v2 → v3: "Create a new task" → "Create a new [param]" (supports any work item type)
-**Recommendation:** Use v3
+**版本：**v2、v3（当前）
 
----
+| 版本 | 任务类型 | 状态 | 主要差异 |
+| ------- | -------------- | --------- | ----------------------------- |
+| v2 | "task"（固定） | 启用 | 原始版本 |
+| v3 | 通用类型 | ✅ 当前 | 改为灵活的 `[param]` |
 
-#### 6. RUN_WORKFLOW
-**Versions:** v1, v2 (Current)
+**变更内容：**v2 → v3：“Create a new task” → “Create a new \[param]”（支持任意工作项类型） **建议：**使用 v3
 
-**What Changed:** v1 → v2: Added `trnsl_%run_workflow` translation keys
-**Recommendation:** Use v2
+***
 
----
+#### 6. RUN\_WORKFLOW
 
-### 📊 PO COMPARISON & VALIDATION CARDS
+**版本：**v1、v2（当前）
 
-#### 1. CONDITION_DOC_TO_PO_UNIT_PRICE ⭐ (Most Evolved - 5 Versions)
-**Versions:** v2, v3, v4, v5 (Current)
+**变更内容：**v1 → v2：添加了 `trnsl_%run_workflow` 翻译键 **建议：**使用 v2
 
-📖 **Guide:** [PO Matching Complete Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md#2-unit-price-comparison-document-vs-po)
+***
 
-| Version | Changes | Status | Tolerance | Comparison |
-|---------|---------|--------|-----------|------------|
-| v2 | Basic price comparison | Active | ❌ No | Basic |
-| v3 | Same as v2 | Active | ❌ No | Basic |
-| v4 | + Compare mode parameter | Active | ❌ No | ✅ Yes |
-| v5 | + Tolerance parameters | ✅ Current | ✅ Yes (amount + unit) | ✅ Yes |
+### 📊 采购订单比较与验证卡片
 
-**Evolution Path:** v2 → v3 (no change) → v4 (comparison modes) → v5 (tolerance thresholds)
+#### 1. CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE ⭐（演进最多 - 5 个版本）
 
-**v2 → v3:** No functional change (same translation key)
+**版本：**v2、v3、v4、v5（当前）
 
-**v3 → v4 Change (Comparison Mode Added):**
+📖 **指南：**[采购订单匹配完整指南](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/and/compare-with-purchase-order/po-matching-complete-guide.md#2-unit-price-comparison-document-vs-po)
+
+| 版本 | 变更 | 状态 | 容差 | 比较 |
+| ------- | ------------------------ | --------- | --------------------- | ---------- |
+| v2 | 基本价格比较 | 启用 | ❌ 无 | 基本 |
+| v3 | 与 v2 相同 | 启用 | ❌ 无 | 基本 |
+| v4 | + 比较模式参数 | 启用 | ❌ 无 | ✅ 是 |
+| v5 | + 容差参数 | ✅ 当前 | ✅ 是（金额 + 单位） | ✅ 是 |
+
+**演进路径：**v2 → v3（无变化）→ v4（比较模式）→ v5（容差阈值）
+
+**v2 → v3：**无功能变化（使用相同翻译键）
+
+**v3 → v4 变更（添加比较模式）：**
+
 ```
 Before: "[document] unit price is [operator] to purchase order"
 After:  "[document] unit price is [operator] to purchase order. Compare as [mode]"
 ```
 
-**v4 → v5 Change (Tolerance Parameters Added):**
+**v4 → v5 变更（添加容差参数）：**
+
 ```
 Before: "[document] unit price is [operator] to purchase order. Compare as [mode]"
 After:  "[document] unit price is [operator] to purchase order, with tolerance of [amount] [unit].
          Compare as [mode]"
 ```
 
-**What Changed:**
-- **v2 → v3:** No functional change
-- **v3 → v4:** Added `Compare as [param]` - Support different comparison operators
-- **v4 → v5:** Added tolerance parameters:
-  - `with tolerance of [amount] [unit]`
-  - Example: "with tolerance of 2 %" or "with tolerance of 100 EUR"
-  - Supports: %, EUR, $, and other currencies
+**变更内容：**
 
-**Use Cases:**
-- v2/v3: Strict matching (exact prices only)
-- v4: Different comparison methods
-- v5: Flexible variance acceptance (e.g., accept 2% price differences) ✅ RECOMMENDED
+* **v2 → v3：**无功能变化
+* **v3 → v4：**添加了 `Compare as [param]`，支持不同的比较运算符
+* **v4 → v5：**添加了容差参数：
+  * `with tolerance of [amount] [unit]`
+  * 示例：“with tolerance of 2 %”或“with tolerance of 100 EUR”
+  * 支持：%、EUR、$ 及其他货币
 
-**Recommendation:** Use v5 for modern PO matching workflows
+**使用场景：**
 
----
+* v2/v3：严格匹配（仅接受完全相同的价格）
+* v4：不同的比较方法
+* v5：灵活接受偏差（例如，接受 2% 的价格差异）✅ 推荐
 
-#### 2. CONDITION_OC_TO_PO_ITEMS
-**Versions:** v1 (Deprecated), v2, v3, v4 (Current)
+**建议：**现代采购订单匹配工作流使用 v5
 
-| Version | Changes | Status | Compare Feature |
-|---------|---------|--------|-----------------|
-| v1 | No translation, no method | ❌ DEPRECATED | Basic |
-| v2 | + Translation keys, + method | Active | Basic method |
-| v3 | Same as v2 | Active | Basic method |
-| v4 | + Compare mode parameters | ✅ Current | ✅ Flexible |
+***
 
-**What Changed:**
-- **v1 → v2:** Added `trnsl_%in_order_confirmations_matches_purchase_order` + comparison method parameter
-- **v2 → v3:** No change
-- **v3 → v4:** Added `Compare as [param1] [param2]` for flexible comparison modes
+#### 2. CONDITION\_OC\_TO\_PO\_ITEMS
 
-**Recommendation:** Use v4 (avoid v1 which is deprecated)
+**版本：**v1（已弃用）、v2、v3、v4（当前）
 
----
+| 版本 | 变更 | 状态 | 比较功能 |
+| ------- | ---------------------------- | ------------ | --------------- |
+| v1 | 无翻译、无方法 | ❌ 已弃用 | 基本 |
+| v2 | + 翻译键、+ 方法 | 启用 | 基本方法 |
+| v3 | 与 v2 相同 | 启用 | 基本方法 |
+| v4 | + 比较模式参数 | ✅ 当前 | ✅ 灵活 |
 
-#### 3. CONDITION_DATES_OPERATOR_OC_LINE_ITEMS
-**Versions:** v2, v3 (Current)
+**变更内容：**
 
-| Version | Tolerance Days | Accepted Tolerance Days | Status |
-|---------|-----------------|------------------------|--------|
-| v2 | ❌ No | ❌ No | Active |
-| v3 | ✅ Yes | ✅ Yes | ✅ Current |
+* **v1 → v2：**添加了 `trnsl_%in_order_confirmations_matches_purchase_order` 和比较方法参数
+* **v2 → v3：**无变化
+* **v3 → v4：**添加了 `Compare as [param1] [param2]`，支持灵活的比较模式
 
-**What Changed:** v2 → v3: Added tolerance parameters:
-- `with [param] days as tolerance`
-- `and [param] as accepted tolerance days`
+**建议：**使用 v4（避免使用已弃用的 v1）
 
-**Example:** Accept delivery dates within 5 days of promised date
-**Recommendation:** Use v3
+***
 
----
+#### 3. CONDITION\_DATES\_OPERATOR\_OC\_LINE\_ITEMS
 
-#### 4. CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY
-**Versions:** v2, v3, v4 (Current)
+**版本：**v2、v3（当前）
 
-| Version | Comparison Mode | Status |
-|---------|-----------------|--------|
-| v2 | Basic | Active |
-| v3 | Basic (no change) | Active |
-| v4 | ✅ Flexible mode selection | ✅ Current |
+| 版本 | 容差天数 | 可接受的容差天数 | 状态 |
+| ------- | -------------- | ----------------------- | --------- |
+| v2 | ❌ 无 | ❌ 无 | 启用 |
+| v3 | ✅ 有 | ✅ 有 | ✅ 当前 |
 
-**What Changed:** v3 → v4: Added `compare [param]` for different comparison approaches
-**Recommendation:** Use v4
+**变更内容：**v2 → v3：添加了容差参数：
 
----
+* `with [param] days as tolerance`
+* `and [param] as accepted tolerance days`
 
-#### 5. COMBINED_PRICE_OF_QUANTITY_DIFFERENCE_OPERATOR_VALUE
-**Versions:** v2, v3, v4 (Current)
+**示例：**接受承诺交货日期前后 5 天内的交货日期 **建议：**使用 v3
 
-| Version | Comparison Mode | Status |
-|---------|-----------------|--------|
-| v2 | Standard | Active |
-| v3 | Standard (no change) | Active |
-| v4 | ✅ Flexible | ✅ Current |
+***
 
-**What Changed:** v3 → v4: Added `compare [param]` parameter
-**Recommendation:** Use v4
+#### 4. CONDITION\_LESS\_THAN\_TOLERANCE\_AS\_VALUE\_OF\_ORDERED\_QUANTITY
 
----
+**版本：**v2、v3、v4（当前）
 
-#### 6. CONDITION_CONFIRMED_DELIVERY_ACCEPTED_DATE_IN_CALENDAR_MASTER_DATA
-**Versions:** v2, v3 (Current)
+| 版本 | 比较模式 | 状态 |
+| ------- | ------------------------- | --------- |
+| v2 | 基本 | 启用 |
+| v3 | 基本（无变化） | 启用 |
+| v4 | ✅ 灵活模式选择 | ✅ 当前 |
 
-| Version | Delivery Type | Master Data Table | Status |
-|---------|---------------|-------------------|--------|
-| v2 | "Confirmed" (fixed) | Fixed reference | Active |
-| v3 | [Configurable param] | Dynamic [param] | ✅ Current |
+**变更内容：**v3 → v4：添加了 `compare [param]`，支持不同的比较方式 **建议：**使用 v4
 
-**What Changed:** v2 → v3:
-- Changed "Confirmed delivery" → `[param] delivery` (flexible delivery type)
-- Changed fixed table reference → `stored in [param]` (dynamic table selection)
+***
 
-**Flexibility:** v3 allows different delivery date types and supplier tables
-**Recommendation:** Use v3
+#### 5. COMBINED\_PRICE\_OF\_QUANTITY\_DIFFERENCE\_OPERATOR\_VALUE
 
----
+**版本：**v2、v3、v4（当前）
 
-#### 7. CONDIITON_UNIT_OF_MEASURE_EQUAL
-**Versions:** v2, v3 (Current)
+| 版本 | 比较模式 | 状态 |
+| ------- | -------------------- | --------- |
+| v2 | 标准 | 启用 |
+| v3 | 标准（无变化） | 启用 |
+| v4 | ✅ 灵活 | ✅ 当前 |
 
-| Version | Supplier Table Reference | Status |
-|---------|--------------------------|--------|
-| v2 | "supplier item price table" (fixed) | Active |
-| v3 | [Dynamic param] | ✅ Current |
+**变更内容：**v3 → v4：添加了 `compare [param]` 参数 **建议：**使用 v4
 
-**What Changed:** v2 → v3: Fixed table reference → `stored in [param]` (allows dynamic table selection)
-**Recommendation:** Use v3
+***
 
----
+#### 6. CONDITION\_CONFIRMED\_DELIVERY\_ACCEPTED\_DATE\_IN\_CALENDAR\_MASTER\_DATA
 
-### 👥 ASSIGNMENT & ROUTING CARDS
+**版本：**v2、v3（当前）
 
-#### 1. DOC_USER_ASSIGN
-**Versions:** v1, v2, v3 (Deprecated)
+| 版本 | 交货类型 | 主数据表 | 状态 |
+| ------- | --------------------- | ----------------- | --------- |
+| v2 | "Confirmed"（固定） | 固定引用 | 启用 |
+| v3 | \[可配置参数] | 动态 \[param] | ✅ 当前 |
 
-| Version | Translation | Decision Tree | Status |
-|---------|-------------|---------------|--------|
-| v1 | No | ❌ No | Active |
-| v2 | Yes | ❌ No | ✅ Current |
-| v3 | Yes | ✅ Yes | ❌ DEPRECATED |
+**变更内容：**v2 → v3：
 
-**Evolution:** v1 (no i18n) → v2 (with i18n) → v3 (+ decision tree experiment, now deprecated)
+* 将“Confirmed delivery”改为 `[param] delivery`（灵活的交货类型）
+* 将固定表引用改为 `stored in [param]`（动态选择数据表）
 
-**What Changed:**
-- v1 → v2: Added translation keys
-- v2 → v3: Added decision tree support (experimental, deprecated)
+**灵活性：**v3 支持不同的交货日期类型和供应商表 **建议：**使用 v3
 
-**Recommendation:** Use v2 (stable with i18n support)
+***
 
----
+#### 7. CONDIITON\_UNIT\_OF\_MEASURE\_EQUAL
 
-#### 2. DOC_GROUP_ASSIGN
-**Versions:** v2, v3 (Deprecated)
+**版本：**v2、v3（当前）
 
-| Version | Decision Tree | Status |
-|---------|---------------|--------|
-| v2 | ❌ No | ✅ Current |
-| v3 | ✅ Yes | ❌ DEPRECATED |
+| 版本 | 供应商表引用 | 状态 |
+| ------- | ----------------------------------- | --------- |
+| v2 | "supplier item price table"（固定） | 启用 |
+| v3 | \[动态参数] | ✅ 当前 |
 
-**What Changed:** v2 → v3: Added `Use decision tree, if available [param]` (later deprecated)
-**Recommendation:** Use v2
+**变更内容：**v2 → v3：将固定表引用改为 `stored in [param]`（支持动态选择数据表） **建议：**使用 v3
 
----
+***
 
-#### 3. OC_ASSIGN_DOC
-**Versions:** v1, v2 (Current)
+### 👥 分配与路由卡片
 
-**What Changed:** v1 → v2: Added `trnsl_%oc_assign_doc` translation keys
-**Recommendation:** Use v2
+#### 1. DOC\_USER\_ASSIGN
 
----
+**版本：**v1、v2、v3（已弃用）
 
-### 📋 TASK MANAGEMENT CARDS
+| 版本 | 翻译 | 决策树 | 状态 |
+| ------- | ----------- | ------------- | ------------ |
+| v1 | 否 | ❌ 否 | 启用 |
+| v2 | 是 | ❌ 否 | ✅ 当前 |
+| v3 | 是 | ✅ 是 | ❌ 已弃用 |
 
-#### 1. tasks_create ⭐ (Most Evolved Task Card - 4 Versions)
-**Versions:** v1 (Deprecated), v2 (Deprecated), v3 (Deprecated), v4 (Current)
+**演进：**v1（无 i18n）→ v2（支持 i18n）→ v3（+ 决策树实验，现已弃用）
 
-📖 **Guide:** [Task Assignment Guide](../then/task/task-assignment-guide.md#card-tasks_create--create-task-and-assign-to-user)
+**变更内容：**
 
-| Version | Translation | Decision Tree | Work Item Type | Status |
-|---------|-------------|---------------|-----------------|--------|
-| v1 | No | No | "Task" (fixed) | ❌ DEPRECATED |
-| v2 | Yes | No | "Task" (fixed) | ❌ DEPRECATED |
-| v3 | Yes | Yes | "Task" (fixed) | ❌ DEPRECATED |
-| v4 | Yes | No | [Generic param] | ✅ Current |
+* v1 → v2：添加了翻译键
+* v2 → v3：添加了决策树支持（实验性质，已弃用）
 
-**Evolution Timeline:**
+**建议：**使用 v2（稳定并支持 i18n）
+
+***
+
+#### 2. DOC\_GROUP\_ASSIGN
+
+**版本：**v2、v3（已弃用）
+
+| 版本 | 决策树 | 状态 |
+| ------- | ------------- | ------------ |
+| v2 | ❌ 否 | ✅ 当前 |
+| v3 | ✅ 是 | ❌ 已弃用 |
+
+**变更内容：**v2 → v3：添加了 `Use decision tree, if available [param]`（后来已弃用） **建议：**使用 v2
+
+***
+
+#### 3. OC\_ASSIGN\_DOC
+
+**版本：**v1、v2（当前）
+
+**变更内容：**v1 → v2：添加了 `trnsl_%oc_assign_doc` 翻译键 **建议：**使用 v2
+
+***
+
+### 📋 任务管理卡片
+
+#### 1. tasks\_create ⭐（演进最多的任务卡片 - 4 个版本）
+
+**版本：**v1（已弃用）、v2（已弃用）、v3（已弃用）、v4（当前）
+
+📖 **指南：**[任务分配指南](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/then/task/task-assignment-guide.md#card-tasks_create--create-task-and-assign-to-user)
+
+| 版本 | 翻译 | 决策树 | 工作项类型 | 状态 |
+| ------- | ----------- | ------------- | ---------------- | ------------ |
+| v1 | 否 | 否 | "Task"（固定） | ❌ 已弃用 |
+| v2 | 是 | 否 | "Task"（固定） | ❌ 已弃用 |
+| v3 | 是 | 是 | "Task"（固定） | ❌ 已弃用 |
+| v4 | 是 | 否 | \[通用参数] | ✅ 当前 |
+
+**演进时间线：**
+
 ```
 v1 (original)
   ↓ (add translation)
@@ -371,292 +391,303 @@ v3 (+ decision tree, BUT deprecated after this)
 v4 (CURRENT - flexible work items)
 ```
 
-**v1 → v2 Change (Translation Keys Added):**
+**v1 → v2 变更（添加翻译键）：**
+
 ```
 Before: "Create a new Task with the title: [param] ... and assign to user [param]"
 After:  "trnsl_%tasks_create trnsl_be_% Create a new Task with the title: [param] ... and assign to user [param]"
 ```
 
-**v2 → v3 Change (Decision Tree Experiment):**
+**v2 → v3 变更（决策树实验）：**
+
 ```
 Before: "Create a new Task with the title: [param] ... and assign to user [param]"
 After:  "Create a new Task with the title: [param] ... and assign it to the user [param].
          Use decision tree, if available: [param]"
 ```
 
-**v3 → v4 Change (Generic Types + Decision Tree Removal):**
+**v3 → v4 变更（通用类型 + 移除决策树）：**
+
 ```
 Before: "Create a new Task with the title: [param] ... "
 After:  "Create a new [param] with the title: [param] ... "
 ```
 
-**What Changed:**
-- **v1 → v2:** Added `trnsl_%tasks_create` translation keys
-- **v2 → v3:**
-  - Added decision tree support: `Use decision tree, if available: [param]`
-  - Changed "assign to user" → "assign it to the user"
-- **v3 → v4:**
-  - ❌ Removed decision tree parameter
-  - ✅ Changed "Task" → generic `[param]` (supports Task, Ticket, Issue, etc.)
-  - Updated translation key to `trnsl_%tasks_create_v4`
+**变更内容：**
 
-**Decision Tree Note:** v3 used decision trees to dynamically assign tasks. This approach was experimental and deprecated in v4 in favor of direct parameter-based work item type selection.
+* **v1 → v2：**添加了 `trnsl_%tasks_create` 翻译键
+* **v2 → v3：**
+  * 添加了决策树支持：`Use decision tree, if available: [param]`
+  * 将“assign to user”改为“assign it to the user”
+* **v3 → v4：**
+  * ❌ 移除了决策树参数
+  * ✅ 将“Task”改为通用的 `[param]`（支持 Task、Ticket、Issue 等）
+  * 将翻译键更新为 `trnsl_%tasks_create_v4`
 
-**Recommendation:** Use v4 exclusively for new workflows
-**Migration:** If using v1, v2, or v3, upgrade to v4 ✅
+**决策树说明：**v3 使用决策树动态分配任务。此方案属于实验性质，在 v4 中已弃用，改用基于直接参数的工作项类型选择。
 
----
+**建议：**新工作流仅使用 v4 **迁移：**如果正在使用 v1、v2 或 v3，请升级到 v4 ✅
 
-#### 2. OC_TASK
-**Versions:** v1, v2 (Current)
+***
 
-**What Changed:** v1 → v2: Added `trnsl_%oc_task` translation keys
-**Recommendation:** Use v2
+#### 2. OC\_TASK
 
----
+**版本：**v1、v2（当前）
 
-#### 3. ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK
-**Versions:** v1, v3 (Current - v2 Skipped)
+**变更内容：**v1 → v2：添加了 `trnsl_%oc_task` 翻译键 **建议：**使用 v2
 
-| Version | Work Item Type | Status |
-|---------|-----------------|--------|
-| v1 | "Task" (fixed) | Active |
-| v3 | [Generic param] | ✅ Current |
+***
 
-**What Changed:** v1 → v3: Generic type evolution (v2 was skipped in production)
-**Recommendation:** Use v3
+#### 3. ACTION\_ASSIGN\_TASK\_TO\_USER\_FROM\_FIELD\_WITH\_FALLBACK
 
----
+**版本：**v1、v3（当前 - 跳过 v2）
 
-#### 4. ACTION_DECISION_TREE_CREATE_TASKS
-**Versions:** v2, v3 (Current)
+| 版本 | 工作项类型 | 状态 |
+| ------- | ---------------- | --------- |
+| v1 | "Task"（固定） | 启用 |
+| v3 | \[通用参数] | ✅ 当前 |
 
-| Version | Assignment Text | Status |
-|---------|-----------------|--------|
-| v2 | "Assign task with title" | Active |
-| v3 | "Assign [generic] with title" | ✅ Current |
+**变更内容：**v1 → v3：演进为通用类型（生产环境跳过了 v2） **建议：**使用 v3
 
-**What Changed:** v2 → v3:
-- Changed "Assign task" → "Assign [generic param]"
-- Changed "return of decision" → "return of decision table" (clearer terminology)
+***
 
-**Recommendation:** Use v3
+#### 4. ACTION\_DECISION\_TREE\_CREATE\_TASKS
 
----
+**版本：**v2、v3（当前）
 
-### 🔄 DOCUMENT CONTROL CARDS
+| 版本 | 分配文本 | 状态 |
+| ------- | ------------------------------ | --------- |
+| v2 | "Assign task with title" | 启用 |
+| v3 | "Assign \[generic] with title" | ✅ 当前 |
+
+**变更内容：**v2 → v3：
+
+* 将“Assign task”改为“Assign \[generic param]”
+* 将“return of decision”改为“return of decision table”（术语更清晰）
+
+**建议：**使用 v3
+
+***
+
+### 🔄 文档控制卡片
 
 #### APPROVE
-**Versions:** v1, v2 (Current)
-**Change:** Added `trnsl_%approve_doc` translation keys
-**Recommendation:** Use v2
 
----
+**版本：**v1、v2（当前） **变更：**添加了 `trnsl_%approve_doc` 翻译键 **建议：**使用 v2
+
+***
 
 #### REJECT
-**Versions:** v1, v2 (Current)
-**Change:** Added `trnsl_%reject_doc` translation keys
-**Recommendation:** Use v2
 
----
+**版本：**v1、v2（当前） **变更：**添加了 `trnsl_%reject_doc` 翻译键 **建议：**使用 v2
 
-#### STAUS_CHANGE (Status Change)
-**Versions:** v1, v2, v3 (Current)
+***
 
-| Version | Workflow Trigger | Status |
-|---------|-----------------|--------|
-| v1 | ❌ No | Active |
-| v2 | ❌ No | Active |
-| v3 | ✅ Yes | ✅ Current |
+#### STAUS\_CHANGE（状态变更）
 
-**What Changed:** v2 → v3: Added `trigger Workflows [param]` - Auto-trigger workflows on status change
-**Recommendation:** Use v3
+**版本：**v1、v2、v3（当前）
 
----
+| 版本 | 工作流触发 | 状态 |
+| ------- | ---------------- | --------- |
+| v1 | ❌ 否 | 启用 |
+| v2 | ❌ 否 | 启用 |
+| v3 | ✅ 是 | ✅ 当前 |
+
+**变更内容：**v2 → v3：添加了 `trigger Workflows [param]`，在状态变更时自动触发工作流 **建议：**使用 v3
+
+***
 
 #### EXPORT
-**Versions:** v1, v2, v3 (Current)
 
-| Version | Validation | Status |
-|---------|------------|--------|
-| v1 | ❌ No | Active |
-| v2 | ❌ No | Active |
-| v3 | ✅ Yes | ✅ Current |
+**版本：**v1、v2、v3（当前）
 
-**What Changed:** v2 → v3: Added `Start Export with Validation: [param]`
-**Recommendation:** Use v3
+| 版本 | 验证 | 状态 |
+| ------- | ---------- | --------- |
+| v1 | ❌ 否 | 启用 |
+| v2 | ❌ 否 | 启用 |
+| v3 | ✅ 是 | ✅ 当前 |
 
----
+**变更内容：**v2 → v3：添加了 `Start Export with Validation: [param]` **建议：**使用 v3
 
-### 🧮 DATA MANIPULATION CARDS
+***
 
-#### CALC_COLUMNS, CALC_COLUMNS_REGEX, EDIT_COLUMN, AI_CALC_MTZ_ETZ
-**Pattern:** v1 → v2 (translation keys added)
-**Recommendation:** Use v2 for all
+### 🧮 数据处理卡片
 
----
+#### CALC\_COLUMNS、CALC\_COLUMNS\_REGEX、EDIT\_COLUMN、AI\_CALC\_MTZ\_ETZ
 
-#### CONDITION_DECISION_TREE_DATA
-**Versions:** v2, v3 (Current)
+**模式：**v1 → v2（添加翻译键） **建议：**全部使用 v2
 
-| Version | Data Usage | Status |
-|---------|------------|--------|
-| v2 | "Use return data in later cards" | Active |
-| v3 | "[Explicit param] returned data for use in subsequent cards" | ✅ Current |
+***
 
-**What Changed:** v2 → v3: More explicit control over decision tree data extraction
-**Recommendation:** Use v3
+#### CONDITION\_DECISION\_TREE\_DATA
 
----
+**版本：**v2、v3（当前）
 
-### ❌ DISABLED CARDS (Do Not Use)
+| 版本 | 数据使用方式 | 状态 |
+| ------- | ------------------------------------------------------------- | --------- |
+| v2 | “在后续卡片中使用返回数据” | 启用 |
+| v3 | "\[明确参数] 返回的数据可供后续卡片使用" | ✅ 当前 |
 
-#### DOC_SUBORG_CHANGE
-**Versions:** v1, v2 (both disabled)
-**Status:** No longer supported
-**Alternative:** Use document assignment features
+**变更内容：**v2 → v3：更明确地控制决策树数据提取 **建议：**使用 v3
 
----
+***
 
-#### RUN_SCRIPT
-**Versions:** v2, v3 (both disabled)
-**Status:** Replaced by ACTION_RUN_DOCOPERATOR_SCRIPT
-**Alternative:** Use ACTION_RUN_DOCOPERATOR_SCRIPT v3
+### ❌ 已禁用的卡片（请勿使用）
 
----
+#### DOC\_SUBORG\_CHANGE
 
-## 🎯 Common Version Patterns
+**版本：**v1、v2（均已禁用） **状态：**不再支持 **替代方案：**使用文档分配功能
 
-### Pattern 1: Translation Key Adoption (v1 → v2)
-**Affected:** 15+ cards
+***
 
-**Change:** Added `trnsl_%[card_name]` translation keys
+#### RUN\_SCRIPT
+
+**版本：**v2、v3（均已禁用） **状态：**已由 ACTION\_RUN\_DOCOPERATOR\_SCRIPT 替代 **替代方案：**使用 ACTION\_RUN\_DOCOPERATOR\_SCRIPT v3
+
+***
+
+## 🎯 常见版本模式
+
+### 模式 1：采用翻译键（v1 → v2）
+
+**受影响：**15+ 张卡片
+
+**变更：**添加了 `trnsl_%[card_name]` 翻译键
+
 ```
 v1: Plain text (no i18n)
 v2: trnsl_%[key] trnsl_be_% Plain text (with i18n)
 ```
 
-**Cards:** CALL_API, RUN_WORKFLOW, APPROVE, REJECT, CALC_COLUMNS, and more
-**Impact:** Enables multi-language support
+**卡片：**CALL\_API、RUN\_WORKFLOW、APPROVE、REJECT、CALC\_COLUMNS 等 **影响：**支持多语言
 
----
+***
 
-### Pattern 2: Decision Tree Integration (v2 → v3) - DEPRECATED
-**Affected:** 5 cards (ACTION_TASK_FOR_GROUP, tasks_create, DOC_USER_ASSIGN, DOC_GROUP_ASSIGN, ACTION_DECISION_TREE_CREATE_TASKS)
+### 模式 2：集成决策树（v2 → v3）- 已弃用
 
-**Change:** Added optional decision tree parameter
+**受影响：**5 张卡片 (ACTION\_TASK\_FOR\_GROUP, tasks\_create, DOC\_USER\_ASSIGN, DOC\_GROUP\_ASSIGN, ACTION\_DECISION\_TREE\_CREATE\_TASKS)
+
+**变更：**添加了可选的决策树参数
+
 ```
 v2: Standard task/assignment logic
 v3: + "Use decision tree, if available: [param]"
 ```
 
-**Status:** ❌ Mostly deprecated (except ACTION_DECISION_TREE_CREATE_TASKS)
-**Reason:** Simpler direct-parameter approach preferred
+**状态：**❌ 大多已弃用（ACTION\_DECISION\_TREE\_CREATE\_TASKS 除外） **原因：**更倾向于采用更简单的直接参数方案
 
----
+***
 
-### Pattern 3: Generic Type Evolution (v3 → v4)
-**Affected:** 4 cards (tasks_create, ACTION_TASK_FOR_GROUP, ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP, ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK)
+### 模式 3：通用类型演进（v3 → v4）
 
-**Change:** "Task" → generic type parameter
+**受影响：**4 张卡片 (tasks\_create, ACTION\_TASK\_FOR\_GROUP, ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP, ACTION\_ASSIGN\_TASK\_TO\_USER\_FROM\_FIELD\_WITH\_FALLBACK)
+
+**变更：**“Task” → 通用类型参数
+
 ```
 v3: Create a new Task with title: [param]
 v4: Create a new [param] with title: [param]
 ```
 
-**Impact:** Supports Task, Ticket, Issue, and other work item types
-**Benefit:** Greater flexibility and reusability
+**影响：**支持 Task、Ticket、Issue 和其他工作项类型 **优势：**灵活性和可复用性更高
 
----
+***
 
-### Pattern 4: Tolerance Parameters (PO Cards)
-**Affected:** 6 cards (CONDITION_DOC_TO_PO_UNIT_PRICE, CONDITION_DATES_OPERATOR_OC_LINE_ITEMS, CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY, etc.)
+### 模式 4：容差参数（采购订单卡片）
 
-**Change:** Added tolerance/variance support
+**受影响：**6 张卡片 (CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE, CONDITION\_DATES\_OPERATOR\_OC\_LINE\_ITEMS, CONDITION\_LESS\_THAN\_TOLERANCE\_AS\_VALUE\_OF\_ORDERED\_QUANTITY 等)
+
+**变更：**添加了容差/偏差支持
+
 ```
 v2: Value [operator] Reference Value
 v3+: Value [operator] Reference with tolerance [amount] [unit]
 ```
 
-**Examples:**
-- "with tolerance of 2 %"
-- "with tolerance of 100 EUR"
-- "with 5 days as tolerance"
+**示例：**
 
-**Impact:** Realistic matching criteria (not all values need to match exactly)
+* “with tolerance of 2 %”
+* “with tolerance of 100 EUR”
+* “with 5 days as tolerance”
 
----
+**影响：**匹配条件更贴合实际（不必要求所有值完全一致）
 
-### Pattern 5: Comparison Mode Parameters
-**Affected:** 3 cards (COMBINED_PRICE_OF_QUANTITY_DIFFERENCE_OPERATOR_VALUE, CONDITION_OC_TO_PO_ITEMS, CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY)
+***
 
-**Change:** Added flexible comparison method selection
+### 模式 5：比较模式参数
+
+**受影响：**3 张卡片 (COMBINED\_PRICE\_OF\_QUANTITY\_DIFFERENCE\_OPERATOR\_VALUE, CONDITION\_OC\_TO\_PO\_ITEMS, CONDITION\_LESS\_THAN\_TOLERANCE\_AS\_VALUE\_OF\_ORDERED\_QUANTITY)
+
+**变更：**添加了灵活的比较方法选择
+
 ```
 v3: Standard comparison
 v4: + "Compare as [param1] [param2]"
 ```
 
-**Impact:** Support different comparison algorithms
+**影响：**支持不同的比较算法
 
----
+***
 
-## ✅ Version Recommendations
+## ✅ 版本建议
 
-### For New Workflows
-**Rule:** Always use the highest enabled version number
-- Provides latest features
-- Best support
-- Most tested
-- Recommended approach
+### 用于新工作流
 
-### For Existing Workflows
-**Safe Approach:**
-- Continue using current version if it works
-- Plan gradual migration to newer versions
-- Test upgrades in sandbox first
+**规则：**始终使用编号最高且已启用的版本
 
-### Migration Priority
+* 提供最新功能
+* 支持最佳
+* 经过最多测试
+* 推荐的方案
 
-| Priority | Cards | Action |
-|----------|-------|--------|
-| **High** | tasks_create v1/v2/v3, ACTION_TASK_FOR_GROUP v3, CONDITION_DOC_TO_PO_UNIT_PRICE v2/v3/v4 | Upgrade to current version |
-| **Medium** | Other v1/v2 translation upgrades, PO cards v2/v3 | Consider upgrading |
-| **Low** | Cards with no functional changes | Optional |
+### 用于现有工作流
 
----
+**稳妥做法：**
 
-## ⚠️ Deprecated Versions - Do Not Use
+* 如果当前版本运行正常，请继续使用
+* 规划逐步迁移到较新版本
+* 先在沙盒环境中测试升级
 
-| Card | Version | Reason | Use Instead |
-|------|---------|--------|-------------|
-| tasks_create | v1, v2, v3 | Very old, or decision tree deprecated | v4 |
-| ACTION_TASK_FOR_GROUP | v3 | Decision tree approach deprecated | v4 |
-| DOC_USER_ASSIGN | v3 | Decision tree approach deprecated | v2 |
-| DOC_GROUP_ASSIGN | v3 | Decision tree approach deprecated | v2 |
-| CONDITION_DOC_TYPE_IS_ISNOT | v1 | Very old | v2 |
-| CONDITION_OC_TO_PO_ITEMS | v1 | Very old | v4 |
-| ACTION_RUN_DOCOPERATOR_SCRIPT | v4 | Features reverted | v3 |
+### 迁移优先级
 
----
+| 优先级 | 卡片 | 操作 |
+| ---------- | ------------------------------------------------------------------------------------------------- | -------------------------- |
+| **高** | tasks\_create v1/v2/v3、ACTION\_TASK\_FOR\_GROUP v3、CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE v2/v3/v4 | 升级到当前版本 |
+| **中** | 其他 v1/v2 翻译升级、采购订单卡片 v2/v3 | 考虑升级 |
+| **低** | 没有功能变更的卡片 | 可选 |
 
-## 🔄 Fully Disabled Cards - Cannot Use
+***
 
-| Card | Versions | Reason | Alternative |
-|------|----------|--------|-------------|
-| DOC_SUBORG_CHANGE | v1, v2 | No longer supported | Document assignment cards |
-| RUN_SCRIPT | v2, v3 | Replaced by DocOperator | ACTION_RUN_DOCOPERATOR_SCRIPT v3 |
+## ⚠️ 已弃用的版本 - 请勿使用
 
----
+| 卡片 | 版本 | 原因 | 替代版本 |
+| -------------------------------- | ---------- | ------------------------------------- | ----------- |
+| tasks\_create | v1、v2、v3 | 版本很旧，或决策树已弃用 | v4 |
+| ACTION\_TASK\_FOR\_GROUP | v3 | 决策树方案已弃用 | v4 |
+| DOC\_USER\_ASSIGN | v3 | 决策树方案已弃用 | v2 |
+| DOC\_GROUP\_ASSIGN | v3 | 决策树方案已弃用 | v2 |
+| CONDITION\_DOC\_TYPE\_IS\_ISNOT | v1 | 版本很旧 | v2 |
+| CONDITION\_OC\_TO\_PO\_ITEMS | v1 | 版本很旧 | v4 |
+| ACTION\_RUN\_DOCOPERATOR\_SCRIPT | v4 | 功能已回退 | v3 |
 
-## Related Documentation
+***
 
-- 📖 [Card Versioning Reference](../changelog/card-versioning.md) - Detailed version information
-- 📚 [Workflow Guides](../) - Step-by-step card usage
-- 🔄 [Card Version Database](../docs/card_version.md) - Complete version history
-- 📋 [Workflow Logs](../workflow-logs/) - Execution and debugging
+## 🔄 已完全禁用的卡片 - 无法使用
 
----
+| 卡片 | 版本 | 原因 | 替代方案 |
+| ------------------- | -------- | ----------------------- | ----------------------------------- |
+| DOC\_SUBORG\_CHANGE | v1、v2 | 不再支持 | 文档分配卡片 |
+| RUN\_SCRIPT | v2、v3 | 已由 DocOperator 替代 | ACTION\_RUN\_DOCOPERATOR\_SCRIPT v3 |
 
-**Last Updated:** October 23, 2025
-**Status:** Complete Version History
-**Database Source:** postgres-dev-docflow
+***
+
+## 相关文档
+
+* 📖 [卡片版本参考](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/changelog/card-versioning.md) - 版本信息详情
+* 📚 [工作流指南](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/README.md) - 卡片使用分步指南
+* 🔄 [卡片版本数据库](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/docs/card_version.md) - 完整版本历史
+* 📋 [工作流日志](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/workflow-logs/README.md) - 执行与调试
+
+***
+
+**最后更新：**2025 年 10 月 23 日 **状态：**版本历史完整 **数据库来源：**postgres-dev-docflow

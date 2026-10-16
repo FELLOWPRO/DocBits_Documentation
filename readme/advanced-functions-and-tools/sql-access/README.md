@@ -1,21 +1,21 @@
-# SQL Access
+# SQL 访问
 
-<figure><img src="../../.gitbook/assets/sql_direct_access_settings.png" alt="SQL Direct Access Settings"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sql_direct_access_settings.png" alt="SQL 直接访问设置"><figcaption></figcaption></figure>
 
-## Overview
+## 概述
 
-In the DocBits settings module, administrators can directly access the BI database using SQL. This feature is designed for advanced data management and custom reporting needs.
+在 DocBits 设置模块中，管理员可以使用 SQL 直接访问 BI 数据库。此功能面向高级数据管理和自定义报告需求。
 
-### Accessing SQL Direct Access
+### 访问 SQL 直接访问
 
-Navigate to the SQL Direct Access section in the settings module. Here, you will find credentials and access details, including username, password, database name, and host information.
+前往设置模块中的 SQL Direct Access 部分。在这里，您可以找到凭据和访问信息，包括用户名、密码、数据库名称和主机信息。
 
-* **Username:** user\_23f3d6
-* **Password:** _Encrypted_
-* **Database:** demo
-* **Host:** see in the Screenshot
+* **用户名：** user\_23f3d6
+* **密码：** _已加密_
+* **数据库：** demo
+* **主机：** 请参阅截图
 
-## **Example Access Details:**
+## **示例访问信息：**
 
 ```sql
 SELECT
@@ -29,27 +29,27 @@ GROUP BY
 
 ```
 
-#### Results of a Sample Query
+#### 示例查询结果
 
-The following results display the number of documents by their respective status and invoice type:
+以下结果显示了按状态和发票类型统计的文档数量：
 
-* **Ready for Validation:** 71 Invoices, 6 unspecified
-* **Pending Confirmation:** 1 unspecified
-* **Finished:** 3 unspecified, 1 Invoice
-* **Error:** 2 unspecified
+* **待验证：** 71 张发票，6 个未指定类型
+* **待确认：** 1 个未指定类型
+* **已完成：** 3 个未指定类型，1 张发票
+* **错误：** 2 个未指定类型
 
-#### Using clickhouse-client for Terminal Access
+#### 使用 clickhouse-client 通过终端访问
 
-For developers preferring terminal usage, access can be established via `clickhouse-client`:
+对于偏好使用终端的开发人员，可以通过 `clickhouse-client` 建立访问：
 
 ```bash
 clickhouse-client --host <hostname_or_ip> --port <port> --user <username> --password <your_password> --database <database_name>
 
 ```
 
-### Creating Materialized Views
+### 创建物化视图
 
-We recommend creating materialized views for pre-calculating data to enhance performance in analytics tools like PowerBI:
+我们建议创建物化视图，预先计算数据，以提升 PowerBI 等分析工具的性能：
 
 ```sql
 SELECT toStartOfWeek(created_on) as week_start, sum(toFloat64OrZero(field_value)) as total_sum
@@ -59,8 +59,8 @@ GROUP BY week_start
 
 ```
 
-This example shows how to group total amounts by the week they were created, which is useful for weekly financial summaries or audit trails.
+此示例展示了如何按创建周汇总总金额，可用于每周财务汇总或审计跟踪。
 
-## Additional Resources
+## 其他资源
 
-For further assistance or advanced configurations, please consult our support team or access our comprehensive video training available in the help section.
+如需进一步协助或高级配置，请联系支持团队，或在帮助部分观看我们提供的完整视频培训。

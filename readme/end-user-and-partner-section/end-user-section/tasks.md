@@ -1,7 +1,7 @@
-# Tasks
+# 任务
 
-This is where you can keep an eye on your tasks. You can pick between two different layouts – one is a bit more detailed than the other. You can also filter tasks by different criteria, like whether they're assigned to you or the status of the task.
+你可以在这里查看自己的任务。你可以选择两种不同的布局，其中一种显示的信息更详细。你还可以按不同条件筛选任务，例如任务是否分配给你，或任务的状态。
 
-<figure><img src="../../.gitbook/assets/tasks_dashboard_layout_1.png" alt="Tasks Dashboard Layout View"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tasks_dashboard_layout_1.png" alt="任务仪表板布局视图"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/tasks_dashboard_layout_2.png" alt="Tasks Dashboard Detailed View"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tasks_dashboard_layout_2.png" alt="任务仪表板详细视图"><figcaption></figcaption></figure>

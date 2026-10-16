@@ -1,30 +1,30 @@
 ---
-description: PARAGUAY DTE electronic document support in DocBits
+description: "DocBits 对巴拉圭 DTE 电子文档的支持"
 ---
 
-# 🇵🇾 PARAGUAY DTE
+# 🇵🇾 巴拉圭 DTE
 
-| Property             | Value                                  |
+| 属性                 | 值                                     |
 | -------------------- | -------------------------------------- |
-| **Country / Region** | Paraguay                               |
-| **Document Types**   | Invoice, Credit Note                   |
-| **Format**           | XML                                    |
-| **Standard**         | DTE (Documento Tributario Electrónico) |
+| **国家 / 地区**      | 巴拉圭                                 |
+| **文档类型**         | 发票、贷项通知单                       |
+| **格式**             | XML                                    |
+| **标准**             | DTE（Documento Tributario Electrónico） |
 
-Paraguay DTE is the Paraguayan electronic tax document standard regulated by the Subsecretaría de Estado de Tributación (SET). It covers electronic invoices and credit notes with Paraguayan-specific tax identification (RUC) and tax category requirements.
+巴拉圭 DTE 是由税务国务副秘书处（Subsecretaría de Estado de Tributación，SET）监管的巴拉圭电子税务文档标准。该标准涵盖电子发票和贷项通知单，并要求使用巴拉圭特有的税务识别号（RUC）和税务类别。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件         | 状态       |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览         | ✅ 支持     |
+| 字段提取     | ✅ 支持     |
+| 转换         | ✅ 支持     |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/paraguay-dte-preview.png" alt="Paraguay DTE invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Paraguay DTE invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/paraguay-dte-preview.png" alt="DocBits 中的巴拉圭 DTE 发票预览"><figcaption><p>巴拉圭 DTE 发票的默认 DocBits 预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [受支持的电子文档](./)

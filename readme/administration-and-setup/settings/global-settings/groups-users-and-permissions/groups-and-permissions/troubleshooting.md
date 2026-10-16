@@ -1,72 +1,72 @@
-# Troubleshooting Access Control & Permissions Issues
+# 访问控制和权限问题排查
 
-If users are experiencing unexpected access restrictions—such as missing documents, inability to edit fields, or denied actions—use the following checklist to identify and resolve the issue based on how permissions are configured in DocBits.
+如果用户遇到意外的访问限制，例如看不到文档、无法编辑字段或操作被拒绝，请根据 DocBits 中的权限配置，使用以下清单识别并解决问题。
 
-### 1. Verify If Access Control Is Enabled
+### 1. 确认是否已启用访问控制
 
-Access Control settings only apply if the feature is **enabled**.
+只有在**启用**该功能后，访问控制设置才会生效。
 
-* Navigate to: `Settings` > `Document Processing` > `Module`.
-* Ensure the **Access Control** switch is turned **on**.
-* If disabled, all users typically have unrestricted access regardless of group or field permissions.
+* 前往：`Settings` > `Document Processing` > `Module`。
+* 确认 **Access Control** 开关已**打开**。
+* 如果该功能已停用，通常所有用户都可以不受限制地访问，无论其组权限或字段权限如何。
 
-### 2. Check Group Assignments
+### 2. 检查组分配
 
-Ensure the user is correctly assigned to the appropriate group(s):
+确认用户已正确分配到相应的组：
 
-* Navigate to: `Settings` > `Global Settings` > `Groups, Users and Permissions`.
-* Select **Groups and Permissions**.
-* Confirm the user is listed under the expected group.
-* If the group uses specific access control, missing group assignment will block access to documents and actions.
+* 前往：`Settings` > `Global Settings` > `Groups, Users and Permissions`。
+* 选择 **Groups and Permissions**。
+* 确认该用户列在预期的组中。
+* 如果该组使用了特定的访问控制，未将用户分配到该组会阻止其访问文档和执行操作。
 
-### 3. Review Group Access Permissions
+### 3. 检查组访问权限
 
-Access is granted per document type and per action:
+访问权限按文档类型和操作授予：
 
-* In the **Access Control** screen for the group, check the document type (e.g., Invoice, Purchase Order).
-* Validate permissions like:
-  * **List**, **View**, **Edit**, **Delete**, **Mass Update**
-  * **Approval Levels** (1st, 2nd), **Unlock Document**
-* Ensure the access level is not limited to **Owner** or **Admin** unless appropriate.
+* 在该组的 **Access Control** 页面中，检查文档类型（例如，Invoice、Purchase Order）。
+* 验证以下权限：
+  * **List**、**View**、**Edit**、**Delete**、**Mass Update**
+  * **Approval Levels**（1st、2nd）、**Unlock Document**
+* 除非符合实际需要，否则请勿将访问级别限制为 **Owner** 或 **Admin**。
 
-### 4. Confirm Field-Level Permissions
+### 4. 确认字段级权限
 
-Access can also be restricted at the **field level**, which may block editing or visibility:
+访问权限也可以限制到**字段级别**，这可能会阻止用户编辑字段或查看字段：
 
-* In the group’s Access Control configuration, navigate to the document type and check field-level settings.
-* Confirm whether fields are set to:
-  * **Read/Write**, **Read Only**, **Owner Write**, **None**
-* Adjust if necessary based on the user's role.
+* 在组的 Access Control 配置中，前往相应的文档类型并检查字段级设置。
+* 确认字段权限是否设为：
+  * **Read/Write**、**Read Only**、**Owner Write**、**None**
+* 根据用户的角色按需调整。
 
-### 5. Check the "Only Assigned Documents" Setting
+### 5. 检查“Only Assigned Documents”设置
 
-This global setting limits document visibility:
+此全局设置会限制文档的可见范围：
 
-* Navigate to: `Settings` > `Global Settings` > `Groups, Users and Permissions`.
-* If **Only Assigned Documents** is **enabled**, users can only see documents explicitly assigned to them or their group.
-* If users can’t see expected documents:
-  * Check document assignments.
-  * Disable the setting temporarily to test if it’s the root cause.
+* 前往：`Settings` > `Global Settings` > `Groups, Users and Permissions`。
+* 如果已**启用** **Only Assigned Documents**，用户只能查看明确分配给自己或其所在组的文档。
+* 如果用户看不到预期的文档：
+  * 检查文档分配情况。
+  * 暂时停用此设置，测试它是否是问题根源。
 
-### 6. Test with a Known-Working User or Group
+### 6. 使用已知可正常访问的用户或组进行测试
 
-To isolate the issue:
+要隔离问题：
 
-* Log in with a user from a group that has confirmed access.
-* Compare document visibility and available actions.
-* This helps determine if the issue is user-specific, group-specific, or system-wide.
+* 使用已确认拥有访问权限的组中的用户登录。
+* 比较文档可见性和可执行的操作。
+* 这有助于判断问题是特定于用户、特定于组还是影响整个系统。
 
-### 7. Recheck Document Assignments
+### 7. 重新检查文档分配
 
-If “Only Assigned Documents” is **enabled**, ensure:
+如果已**启用**“Only Assigned Documents”，请确认：
 
-* The document is **assigned** to the user or one of their groups.
-* Use the assignment controls in the document detail view to make or review assignments.
+* 文档已**分配**给该用户或其所在的某个组。
+* 使用文档详情视图中的分配控件进行分配或检查现有分配。
 
-### 8. Reset or Reconfigure Permissions
+### 8. 重置或重新配置权限
 
-If permissions were recently changed or users were moved between groups:
+如果最近更改过权限，或用户已在不同组之间移动：
 
-* Reconfirm that Access Control settings reflect the new group configurations.
-* Adjust field and document permissions as needed.
-* If unsure, create a test group with broad permissions and test access behavior before applying changes to live groups.
+* 再次确认访问控制设置已反映新的组配置。
+* 根据需要调整字段和文档权限。
+* 如果不确定，请创建一个拥有广泛权限的测试组，并在更改正式组之前测试访问行为。

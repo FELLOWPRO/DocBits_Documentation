@@ -1,130 +1,130 @@
-# Electronic document extraction attributes
+# 电子文档提取属性
 
-## Table `public.electronic_document_extraction_attributes`
+## 表 `public.electronic_document_extraction_attributes`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_type_key`: internal
-* `sub_doc_type_key`: internal
-* `electronic_document_type`: internal
-* `attribute_name`: internal
-* `attribute_type`: internal
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
-* `last_modified_by`: internal
-* `deleted_by`: internal
+* `id`：内部字段
+* `org_id`：组织 ID
+* `doc_type_key`：内部字段
+* `sub_doc_type_key`：内部字段
+* `electronic_document_type`：内部字段
+* `attribute_name`：内部字段
+* `attribute_type`：内部字段
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `deleted_on`：带时区的时间戳
+* `last_modified_by`：内部字段
+* `deleted_by`：内部字段
 
-### Analyse & Beschreibung
+### 分析与描述
 
-## Technical Documentation for `public.electronic_document_extraction_attributes`
+## `public.electronic_document_extraction_attributes` 技术文档
 
-### Introduction
+### 简介
 
-The `public.electronic_document_extraction_attributes` table appears to manage attributes related to electronic document extraction. This involves storing various characteristics and metadata about electronic document types, their processing methods, and associated organizations. The table seems to support functionalities like document type identification, transformations, previews, and structure descriptions which are essential for handling electronic documents effectively.
+`public.electronic_document_extraction_attributes` 表用于管理与电子文档提取相关的属性。它会存储有关电子文档类型、处理方法及相关组织的各种特征和元数据。该表似乎支持文档类型识别、转换、预览和结构描述等功能，这些功能对于有效处理电子文档至关重要。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: A unique identifier for each record in the table.
-* **Role**: Primary key.
-* **Typical Contents**: A UUID string that uniquely identifies each document extraction attribute entry.
-* **Note**: This serves as the unique reference for each row.
+* **含义**：表中每条记录的唯一标识符。
+* **作用**：主键。
+* **典型内容**：唯一标识每条文档提取属性记录的 UUID 字符串。
+* **说明**：作为每一行的唯一引用。
 
 #### org\_id
 
-* **Meaning**: Identifier for the organization related to the document attributes.
-* **Role**: Foreign key.
-* **Typical Contents**: A UUID string that links to the associated organization.
-* **Note**: This connects the document extraction attributes to a specific organization.
+* **含义**：与文档属性相关的组织标识符。
+* **作用**：外键。
+* **典型内容**：用于关联相应组织的 UUID 字符串。
+* **说明**：将文档提取属性关联到特定组织。
 
 #### doc\_type\_key
 
-* **Meaning**: A key representing the type of document.
-* **Role**: Identifier for categorizing documents.
-* **Typical Contents**: A string that indicates the document type, such as 'INVOICE' or 'ORDER\_CONFIRMATION'.
-* **Note**: Used to determine the category of the document.
+* **含义**：表示文档类型的键。
+* **作用**：用于对文档进行分类的标识符。
+* **典型内容**：表示文档类型的字符串，例如 'INVOICE' 或 'ORDER\_CONFIRMATION'。
+* **说明**：用于确定文档所属的类别。
 
 #### sub\_doc\_type\_key
 
-* **Meaning**: Represents a sub-category of the main document type.
-* **Role**: Identifier for further classification.
-* **Typical Contents**: Null or specific sub-type string.
-* **Note**: Useful for further granularity in document classification.
+* **含义**：表示主文档类型子类别的键。
+* **作用**：用于进一步分类的标识符。
+* **典型内容**：空值或特定的子类型字符串。
+* **说明**：有助于更细致地对文档进行分类。
 
 #### electronic\_document\_type
 
-* **Meaning**: The format or standard of the electronic document.
-* **Role**: Descriptive field for document format.
-* **Typical Contents**: Strings like 'EDI' or 'FACTURX'.
-* **Note**: Indicates the standard or format of the document.
+* **含义**：电子文档的格式或标准。
+* **作用**：用于描述文档格式的字段。
+* **典型内容**：例如 'EDI' 或 'FACTURX' 的字符串。
+* **说明**：表示文档采用的标准或格式。
 
 #### attribute\_name
 
-* **Meaning**: The name of the attribute related to the document extraction process.
-* **Role**: Descriptive field.
-* **Typical Contents**: Strings like 'PREVIEW' or 'TRANSFORMATION'.
-* **Note**: Describes the specific attribute related to the document handling.
+* **含义**：与文档提取过程相关的属性名称。
+* **作用**：描述性字段。
+* **典型内容**：例如 'PREVIEW' 或 'TRANSFORMATION' 的字符串。
+* **说明**：描述与文档处理相关的具体属性。
 
 #### attribute\_type
 
-* **Meaning**: The type of the attribute related to the document extraction.
-* **Role**: Descriptive field.
-* **Typical Contents**: Strings such as 'XSLT' or 'JSON'.
-* **Note**: Specifies the data format or method used for the attribute.
+* **含义**：与文档提取相关的属性类型。
+* **作用**：描述性字段。
+* **典型内容**：例如 'XSLT' 或 'JSON' 的字符串。
+* **说明**：指定属性使用的数据格式或方法。
 
 #### created\_by
 
-* **Meaning**: ID of the user who created the record.
-* **Role**: Foreign key.
-* **Typical Contents**: Integer that represents a user ID.
-* **Note**: Tracks who initially created the record.
+* **含义**：创建记录的用户 ID。
+* **作用**：外键。
+* **典型内容**：表示用户 ID 的整数。
+* **说明**：记录最初创建该记录的用户。
 
 #### created\_on
 
-* **Meaning**: Timestamp of when the record was created.
-* **Role**: Technical field.
-* **Typical Contents**: Date and time in UTC.
-* **Note**: Indicates the creation time of the record.
+* **含义**：记录创建时间。
+* **作用**：技术字段。
+* **典型内容**：UTC 日期和时间。
+* **说明**：表示记录的创建时间。
 
 #### last\_modified\_on
 
-* **Meaning**: Timestamp of the last modification of the record.
-* **Role**: Technical field.
-* **Typical Contents**: Date and time in UTC, or null if not modified.
-* **Note**: Tracks the most recent update to the record.
+* **含义**：记录上次修改的时间。
+* **作用**：技术字段。
+* **典型内容**：UTC 日期和时间；如果未修改，则为空值。
+* **说明**：记录最近一次更新的时间。
 
 #### is\_deleted
 
-* **Meaning**: Indicates whether the record is marked as deleted.
-* **Role**: Technical field.
-* **Typical Contents**: Boolean value, `True` or `False`.
-* **Note**: Helps in soft deletion handling.
+* **含义**：表示记录是否已标记为删除。
+* **作用**：技术字段。
+* **典型内容**：布尔值 `True` 或 `False`。
+* **说明**：用于处理软删除。
 
 #### deleted\_on
 
-* **Meaning**: Timestamp of when the record was marked as deleted.
-* **Role**: Technical field.
-* **Typical Contents**: Date and time in UTC, or default ancient date if not deleted.
-* **Note**: Used to track when the record was deleted.
+* **含义**：记录标记为删除的时间。
+* **作用**：技术字段。
+* **典型内容**：UTC 日期和时间；如果未删除，则为默认的远古日期。
+* **说明**：用于追踪记录的删除时间。
 
 #### last\_modified\_by
 
-* **Meaning**: ID of the user who last modified the record.
-* **Role**: Foreign key.
-* **Typical Contents**: UUID string, or null if not modified.
-* **Note**: Identifies the user responsible for the last modification.
+* **含义**：上次修改记录的用户 ID。
+* **作用**：外键。
+* **典型内容**：UUID 字符串；如果未修改，则为空值。
+* **说明**：标识负责上次修改的用户。
 
 #### deleted\_by
 
-* **Meaning**: ID of the user who marked the record as deleted.
-* **Role**: Foreign key.
-* **Typical Contents**: UUID string, or null if not deleted.
-* **Note**: Tracks who performed the deletion action.
+* **含义**：将记录标记为删除的用户 ID。
+* **作用**：外键。
+* **典型内容**：UUID 字符串；如果未删除，则为空值。
+* **说明**：追踪执行删除操作的用户。
 
-This documentation provides a detailed overview of the table structure and its columns, facilitating better understanding and utilization by developers and database administrators.
+本文档详细概述了该表的结构及其列，帮助开发者和数据库管理员更好地理解和使用该表。

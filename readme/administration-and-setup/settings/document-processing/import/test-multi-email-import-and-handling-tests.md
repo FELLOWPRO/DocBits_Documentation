@@ -1,81 +1,79 @@
-# Test: Email Import and Handling Tests
+# 测试：电子邮件导入与处理测试
 
-## What's Being Tested?
+## 测试内容
 
-These tests ensure that our email import system works correctly. The main goals are to:
+这些测试用于确保我们的电子邮件导入系统正常运行。主要目标包括：
 
-1. **Send emails** with attachments.
-2. **Receive and move emails** to specific folders.
-3. **Check if emails are read or unread.**
-4. **Import emails into our system.**
-5. **Clean up** by deleting emails and imported documents afterward.
+1. **发送带附件的电子邮件。**
+2. **接收电子邮件并将其移动到指定文件夹。**
+3. **检查电子邮件是否已读或未读。**
+4. **将电子邮件导入我们的系统。**
+5. **清理数据：**随后删除电子邮件和已导入的文档。
 
-## Steps Involved
+## 涉及的步骤
 
-1. **Setup:**
-   * **Get Environment Settings:** Load the email server details and credentials from environment variables.
-   * **Encrypt Email Password:** Securely encrypt the email password.
-2. **Send and Manage Emails:**
-   * **Send Emails:** Use an SMTP function to send emails with specific subjects and attachments.
-   * **Move Emails:** Use IMAP functions to move emails to the target folder.
-   * **List Folders:** Check if the target folder exists.
-   * **Delete Emails:** Clean up emails by deleting them from folders.
-   * **Check Email Status:** Verify if emails are marked as unread or read.
-3.  **Test Sequence**
+1. **设置：**
+   * **获取环境设置：**从环境变量加载电子邮件服务器详细信息和凭据。
+   * **加密电子邮件密码：**安全地加密电子邮件密码。
+2. **发送和管理电子邮件：**
+   * **发送电子邮件：**使用 SMTP 函数发送带有指定主题和附件的电子邮件。
+   * **移动电子邮件：**使用 IMAP 函数将电子邮件移动到目标文件夹。
+   * **列出文件夹：**检查目标文件夹是否存在。
+   * **删除电子邮件：**从文件夹中删除电子邮件以清理数据。
+   * **检查电子邮件状态：**确认电子邮件是否标记为未读或已读。
+3.  **测试顺序**
 
-    **Initial Setup:**
+    **初始设置：**
 
-    * **Check Connection:** Verify connection to the email server and get the connection ID.
-    * **Login Test:** Confirm that logging in with stored credentials works.
-    * **Folder Check:** Ensure the target folder exists on the email server.
+    * **检查连接：**验证与电子邮件服务器的连接并获取连接 ID。
+    * **登录测试：**确认使用已存储的凭据可以成功登录。
+    * **文件夹检查：**确保电子邮件服务器上存在目标文件夹。
 
-    **Email Operations:**
+    **电子邮件操作：**
 
-    * **Send Test Emails:** Send three emails with unique subjects.
-    * **Retrieve Email IDs:** Get the IDs of the sent emails from the inbox.
-    * **Move Emails:** Move these emails from the inbox to the target folder.
-    * **Check Email Status:** Ensure the emails in the target folder are marked as unread.
+    * **发送测试电子邮件：**发送三封主题各不相同的电子邮件。
+    * **获取电子邮件 ID：**从收件箱获取已发送电子邮件的 ID。
+    * **移动电子邮件：**将这些电子邮件从收件箱移动到目标文件夹。
+    * **检查电子邮件状态：**确保目标文件夹中的电子邮件标记为未读。
 
-    **Email Importing:**
+    **电子邮件导入：**
 
-    * **Fetch Emails:** Import emails from the target folder into our system.
-    * **Check Imported Emails:** Ensure the imported emails are correctly fetched and logged.
+    * **获取电子邮件：**将目标文件夹中的电子邮件导入我们的系统。
+    * **检查已导入的电子邮件：**确保已正确获取并记录导入的电子邮件。
 
-    **Log Verification:**
+    **日志验证：**
 
-    * **Check Import Logs:** Verify that the subjects of the sent emails are recorded in the import logs.
+    * **检查导入日志：**确认已发送电子邮件的主题记录在导入日志中。
 
-    **Cleanup:**
+    **清理：**
 
-    * **Delete Imported Documents:** Remove the documents that were imported from the emails.
-    * **Delete Emails:** Clean up by deleting the sent and moved emails from the folders.
+    * **删除已导入的文档：**删除从电子邮件中导入的文档。
+    * **删除电子邮件：**从文件夹中删除已发送和移动的电子邮件以完成清理。
 
-### Detailed Explanation of Each Test
+### 各项测试的详细说明
 
-* **Setup and Initialization:**
-  * **Initialize Shared Data:** Prepare shared data for tests.
-* **Email Connection Tests:**
-  * **Get Connection ID:** Check if we can connect to the email server and get an ID for the connection.
-  * **Login Verification:** Ensure that logging in to the email server works properly.
-* **Folder Verification Tests:**
-  * **Check Target Folder:** Make sure the target folder exists on the email server.
-  * **Verify Folder Listing:** Ensure the list of folders from the server matches our expectations.
-* **Email Sending and ID Retrieval:**
-  * **Send Emails:** Send three test emails with specific subjects and attachments.
-  * **Get Email IDs:** Retrieve the unique IDs of these sent emails from the inbox.
-* **Email Moving and Status Checking:**
-  * **Move Emails to Folder:** Move the test emails from the inbox to the target folder.
-  * **Check Unread Status:** Ensure the emails are marked as unread after moving.
-* **Email Fetching and Response Validation:**
-  * **Fetch Emails from Folder:** Import the emails from the target folder into our system.
-  * **Validate Fetched Emails:** Confirm that the fetched emails match the sent emails.
-* **Import Log Verification:**
-  * **Fetch Import Log:** Retrieve the log of imported emails.
-  * **Check Email Subjects in Log:** Ensure the subjects of the test emails are present in the import log.
-* **Cleanup:**
-  * **Delete Imported Documents:** Remove the documents that were imported from the emails.
-  * **Delete Emails:** Delete the test emails from the inbox and the target folder to keep everything clean.
+* **设置和初始化：**
+  * **初始化共享数据：**为测试准备共享数据。
+* **电子邮件连接测试：**
+  * **获取连接 ID：**检查能否连接到电子邮件服务器并获取连接 ID。
+  * **登录验证：**确保能够正常登录电子邮件服务器。
+* **文件夹验证测试：**
+  * **检查目标文件夹：**确认电子邮件服务器上存在目标文件夹。
+  * **验证文件夹列表：**确保服务器返回的文件夹列表符合预期。
+* **电子邮件发送和 ID 获取：**
+  * **发送电子邮件：**发送三封带有指定主题和附件的测试电子邮件。
+  * **获取电子邮件 ID：**从收件箱中获取这些已发送电子邮件的唯一 ID。
+* **电子邮件移动和状态检查：**
+  * **将电子邮件移动到文件夹：**将测试电子邮件从收件箱移动到目标文件夹。
+  * **检查未读状态：**确保移动后这些电子邮件标记为未读。
+* **电子邮件获取和响应验证：**
+  * **从文件夹获取电子邮件：**将目标文件夹中的电子邮件导入我们的系统。
+  * **验证已获取的电子邮件：**确认获取的电子邮件与已发送的电子邮件相符。
+* **导入日志验证：**
+  * **获取导入日志：**检索已导入电子邮件的日志。
+  * **检查日志中的电子邮件主题：**确保测试电子邮件的主题出现在导入日志中。
+* **清理：**
+  * **删除已导入的文档：**删除从电子邮件中导入的文档。
+  * **删除电子邮件：**从收件箱和目标文件夹中删除测试电子邮件，保持数据整洁。
 
 \
-
-

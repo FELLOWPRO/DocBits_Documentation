@@ -1,36 +1,33 @@
-# Purpose and use
+# 用途
 
-Regex, short for "Regular Expressions", is an extremely powerful method for pattern recognition in texts. It allows you to search for specific strings or patterns within texts, offering a high level of flexibility and precision.&#x20;
+Regex 是“正则表达式”（Regular Expressions）的简称，是一种非常强大的文本模式识别方法。它可以在文本中搜索特定字符串或模式，具有高度的灵活性和精确性。&#x20;
 
-**In terms of data extraction from structured text formats such as documents, Regex plays a crucial role for several reasons:**
-
-
-
-**Precise pattern recognition:**&#x20;
-
-* Regex allows you to define precise patterns for which text should be searched.
-* &#x20;This is particularly useful when the data to be extracted follows a specific format or structure.
-
-**Flexible adaptation:**&#x20;
-
-* Since Regex offers a wide range of operators and constructs, complex patterns can be defined to extract data in different formats and variants.&#x20;
-* This allows for flexible adaptation to different document structures.
-
-**Efficient processing:**&#x20;
-
-* Regex enables efficient processing of large amounts of text, since pattern searches are usually quick and even large text documents can be searched in an acceptable time.
-
-**Automation:**&#x20;
-
-* Regex can be used in scripts and programs to automate the extraction process.&#x20;
-* This is especially useful when large volumes of documents need to be processed as extraction manually would be time-consuming and error-prone.
-
-**Validation and Cleansing:**&#x20;
-
-* Apart from extracting data, Regex also allows validation and cleaning of texts.
-* By defining patterns, unwanted strings can be identified and removed, resulting in cleaner and more consistent data.
-
-Overall, using Regex provides an effective way to analyze structured text formats and extract data accurately and efficiently, which in turn is of great use for various applications such as data analysis, text processing, information extraction, and machine learning.
+**在从文档等结构化文本格式中提取数据时，Regex 因以下几个原因发挥着关键作用：**
 
 
 
+**精确的模式识别：**&#x20;
+
+* Regex 可用于定义要在文本中搜索的精确模式。
+* &#x20;当要提取的数据遵循特定格式或结构时，这一点尤其有用。
+
+**灵活适配：**&#x20;
+
+* Regex 提供了丰富的运算符和结构，可以定义复杂模式，以提取不同格式和变体的数据。&#x20;
+* 这使其能够灵活适配不同的文档结构。
+
+**高效处理：**&#x20;
+
+* Regex 可高效处理大量文本，因为模式搜索通常速度很快，即使是大型文本文档，也能在可接受的时间内完成搜索。
+
+**自动化：**&#x20;
+
+* Regex 可用于脚本和程序，以自动化提取流程。&#x20;
+* 当需要处理大量文档时，这一点尤其有用，因为手动提取数据耗时且容易出错。
+
+**验证和清理：**&#x20;
+
+* 除了提取数据，Regex 还可用于验证和清理文本。
+* 通过定义模式，可以识别并删除不需要的字符串，从而让数据更加干净、一致。
+
+总的来说，使用 Regex 能有效分析结构化文本格式，并准确、高效地提取数据，因此在数据分析、文本处理、信息提取和机器学习等各种应用场景中都非常有用。

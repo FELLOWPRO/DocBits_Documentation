@@ -1,3 +1,3 @@
-# Infor SSO Configuration
+# Infor SSO 配置
 
-First check which type of M3 your organization is currently using, V1 or V2.
+首先检查贵组织当前使用的 M3 类型：V1 还是 V2。

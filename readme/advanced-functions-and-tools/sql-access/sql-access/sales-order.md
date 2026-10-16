@@ -1,226 +1,226 @@
-# Sales order
+# 销售订单
 
-## Table `public.sales_order`
+## 表 `public.sales_order`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `sub_org_id`: internal
-* `location_id`: internal
-* `order_number`: internal
-* `customer_purchase_order`: internal
-* `customer_id`: internal
-* `customer_name`: internal
-* `warehouse_id`: internal
-* `warehouse_name`: internal
-* `transportation_method`: internal
-* `requested_delivery_date`: timestamp with time zone
-* `order_date`: timestamp with time zone
-* `sales_person_id`: internal
-* `sales_person_name`: internal
-* `ship_to_party_id`: internal
-* `ship_to_party_name`: internal
-* `ship_to_party_city`: internal
-* `ship_to_party_state`: internal
-* `ship_to_party_country`: internal
-* `ship_to_party_zip`: internal
-* `status`: internal
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
-* `preview_path`: internal
-* `last_modified_by`: internal
-* `deleted_by`: internal
+* `id`：内部字段
+* `org_id`：组织 ID
+* `sub_org_id`：内部字段
+* `location_id`：内部字段
+* `order_number`：内部字段
+* `customer_purchase_order`：内部字段
+* `customer_id`：内部字段
+* `customer_name`：内部字段
+* `warehouse_id`：内部字段
+* `warehouse_name`：内部字段
+* `transportation_method`：内部字段
+* `requested_delivery_date`：带时区的时间戳
+* `order_date`：带时区的时间戳
+* `sales_person_id`：内部字段
+* `sales_person_name`：内部字段
+* `ship_to_party_id`：内部字段
+* `ship_to_party_name`：内部字段
+* `ship_to_party_city`：内部字段
+* `ship_to_party_state`：内部字段
+* `ship_to_party_country`：内部字段
+* `ship_to_party_zip`：内部字段
+* `status`：内部字段
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `deleted_on`：带时区的时间戳
+* `preview_path`：内部字段
+* `last_modified_by`：内部字段
+* `deleted_by`：内部字段
 
-### Analyse & Beschreibung
+### 分析与说明
 
-## Technical Documentation for `public.sales_order` Table
+## `public.sales_order` 表技术文档
 
-### Introduction
+### 简介
 
-The `public.sales_order` table is designed to capture and store information related to sales orders within a business context. This includes details about the order, the customer, the logistics, and various metadata associated with the order's lifecycle. The table serves as a central repository for tracking the status and history of sales transactions.
+`public.sales_order` 表用于在业务场景中记录和存储与销售订单相关的信息，包括订单、客户、物流详情，以及与订单生命周期相关的各种元数据。该表是跟踪销售交易状态和历史记录的中央存储库。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: Unique identifier for each sales order.
-* **Role**: Primary key.
-* **Typical Contents**: A UUID string (e.g., `'6ffe4673-7563-44dc-8e71-855e8f25534a'`).
+* **含义**：每个销售订单的唯一标识符。
+* **作用**：主键。
+* **典型内容**：UUID 字符串（例如：`'6ffe4673-7563-44dc-8e71-855e8f25534a'`）。
 
 #### org\_id
 
-* **Meaning**: Identifier for the organization that created the sales order.
-* **Role**: Foreign key.
-* **Typical Contents**: A UUID string representing the organization (e.g., `'23f3d697-7411-4c95-981d-faf089d266be'`).
+* **含义**：创建销售订单的组织的标识符。
+* **作用**：外键。
+* **典型内容**：表示组织的 UUID 字符串（例如：`'23f3d697-7411-4c95-981d-faf089d266be'`）。
 
 #### sub\_org\_id
 
-* **Meaning**: Identifier for a sub-organization, if applicable.
-* **Role**: Foreign key.
-* **Typical Contents**: May be `NULL` if not applicable.
+* **含义**：子组织的标识符（如适用）。
+* **作用**：外键。
+* **典型内容**：如果不适用，则可能为 `NULL`。
 
 #### location\_id
 
-* **Meaning**: Identifier for the location associated with the sales order.
-* **Role**: Foreign key.
-* **Typical Contents**: A string code representing a location (e.g., `'028'`).
+* **含义**：与销售订单关联的位置标识符。
+* **作用**：外键。
+* **典型内容**：表示位置的字符串代码（例如：`'028'`）。
 
 #### order\_number
 
-* **Meaning**: Unique number assigned to the sales order.
-* **Role**: Technical field for order tracking.
-* **Typical Contents**: A string (e.g., `'0010174175'`).
+* **含义**：分配给销售订单的唯一编号。
+* **作用**：用于跟踪订单的技术字段。
+* **典型内容**：字符串（例如：`'0010174175'`）。
 
 #### customer\_purchase\_order
 
-* **Meaning**: Reference number for the customer's purchase order.
-* **Role**: Technical field for cross-referencing.
-* **Typical Contents**: A string (e.g., `'1YFNC3'`).
+* **含义**：客户采购订单的参考编号。
+* **作用**：用于交叉引用的技术字段。
+* **典型内容**：字符串（例如：`'1YFNC3'`）。
 
 #### customer\_id
 
-* **Meaning**: Identifier for the customer placing the order.
-* **Role**: Foreign key.
-* **Typical Contents**: A string code (e.g., `'35623000'`).
+* **含义**：下单客户的标识符。
+* **作用**：外键。
+* **典型内容**：字符串代码（例如：`'35623000'`）。
 
 #### customer\_name
 
-* **Meaning**: Name of the customer.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string (e.g., `'DOLLAR GENERAL'`).
+* **含义**：客户名称。
+* **作用**：描述性字段。
+* **典型内容**：字符串（例如：`'DOLLAR GENERAL'`）。
 
 #### warehouse\_id
 
-* **Meaning**: Identifier for the warehouse responsible for fulfilling the order.
-* **Role**: Foreign key.
-* **Typical Contents**: A string code (e.g., `'028'`).
+* **含义**：负责履行订单的仓库的标识符。
+* **作用**：外键。
+* **典型内容**：字符串代码（例如：`'028'`）。
 
 #### warehouse\_name
 
-* **Meaning**: Name of the warehouse.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string (e.g., `'USCS - DENTON, TX'`).
+* **含义**：仓库名称。
+* **作用**：描述性字段。
+* **典型内容**：字符串（例如：`'USCS - DENTON, TX'`）。
 
 #### transportation\_method
 
-* **Meaning**: Method of transportation for delivering the order.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string code (e.g., `'001'`).
+* **含义**：交付订单所采用的运输方式。
+* **作用**：描述性字段。
+* **典型内容**：字符串代码（例如：`'001'`）。
 
 #### requested\_delivery\_date
 
-* **Meaning**: Date the customer requested for delivery.
-* **Role**: Descriptive field.
-* **Typical Contents**: A timestamp (e.g., `None`).
+* **含义**：客户要求的交付日期。
+* **作用**：描述性字段。
+* **典型内容**：时间戳（例如：`None`）。
 
 #### order\_date
 
-* **Meaning**: Date when the order was placed.
-* **Role**: Descriptive field.
-* **Typical Contents**: A timestamp (e.g., `datetime.datetime(2024, 1, 29, 0, 0, tzinfo=datetime.timezone.utc)`).
+* **含义**：订单下达日期。
+* **作用**：描述性字段。
+* **典型内容**：时间戳（例如：`datetime.datetime(2024, 1, 29, 0, 0, tzinfo=datetime.timezone.utc)`）。
 
 #### sales\_person\_id
 
-* **Meaning**: Identifier for the salesperson handling the order.
-* **Role**: Foreign key.
-* **Typical Contents**: A string (e.g., `'ROBERTDOCK'`).
+* **含义**：负责处理订单的销售人员的标识符。
+* **作用**：外键。
+* **典型内容**：字符串（例如：`'ROBERTDOCK'`）。
 
 #### sales\_person\_name
 
-* **Meaning**: Name of the salesperson.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string (e.g., `'ROBERT DOCKINS'`).
+* **含义**：销售人员姓名。
+* **作用**：描述性字段。
+* **典型内容**：字符串（例如：`'ROBERT DOCKINS'`）。
 
 #### ship\_to\_party\_id
 
-* **Meaning**: Identifier for the party to whom the order is shipped.
-* **Role**: Foreign key.
-* **Typical Contents**: A string (e.g., `'35623000 009'`).
+* **含义**：订单收货方的标识符。
+* **作用**：外键。
+* **典型内容**：字符串（例如：`'35623000 009'`）。
 
 #### ship\_to\_party\_name
 
-* **Meaning**: Name of the party to whom the order is shipped.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string (e.g., `'DOLLAR GENERAL DC 98061/96460'`).
+* **含义**：订单收货方名称。
+* **作用**：描述性字段。
+* **典型内容**：字符串（例如：`'DOLLAR GENERAL DC 98061/96460'`）。
 
 #### ship\_to\_party\_city
 
-* **Meaning**: City of the shipping address.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string (e.g., `'SAN ANTONIO'`).
+* **含义**：收货地址所在城市。
+* **作用**：描述性字段。
+* **典型内容**：字符串（例如：`'SAN ANTONIO'`）。
 
 #### ship\_to\_party\_state
 
-* **Meaning**: State of the shipping address.
-* **Role**: Descriptive field.
-* **Typical Contents**: May be `NULL`.
+* **含义**：收货地址所在州。
+* **作用**：描述性字段。
+* **典型内容**：可能为 `NULL`。
 
 #### ship\_to\_party\_country
 
-* **Meaning**: Country of the shipping address.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string (e.g., `'US'`).
+* **含义**：收货地址所在国家/地区。
+* **作用**：描述性字段。
+* **典型内容**：字符串（例如：`'US'`）。
 
 #### ship\_to\_party\_zip
 
-* **Meaning**: ZIP code of the shipping address.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string (e.g., `'78218'`).
+* **含义**：收货地址的邮政编码。
+* **作用**：描述性字段。
+* **典型内容**：字符串（例如：`'78218'`）。
 
 #### status
 
-* **Meaning**: Current status of the sales order.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string (e.g., `'Allocated'`).
+* **含义**：销售订单的当前状态。
+* **作用**：描述性字段。
+* **典型内容**：字符串（例如：`'Allocated'`）。
 
 #### created\_by
 
-* **Meaning**: Identifier of the user who created the entry.
-* **Role**: Technical field.
-* **Typical Contents**: An integer (e.g., `1`).
+* **含义**：创建该条目的用户标识符。
+* **作用**：技术字段。
+* **典型内容**：整数（例如：`1`）。
 
 #### created\_on
 
-* **Meaning**: Timestamp when the entry was created.
-* **Role**: Technical field.
-* **Typical Contents**: A timestamp (e.g., `datetime.datetime(2024, 3, 6, 11, 48, 43, 237208, tzinfo=datetime.timezone.utc)`).
+* **含义**：创建该条目的时间戳。
+* **作用**：技术字段。
+* **典型内容**：时间戳（例如：`datetime.datetime(2024, 3, 6, 11, 48, 43, 237208, tzinfo=datetime.timezone.utc)`）。
 
 #### last\_modified\_on
 
-* **Meaning**: Timestamp of the last modification.
-* **Role**: Technical field.
-* **Typical Contents**: A timestamp (e.g., `datetime.datetime(2024, 9, 4, 8, 42, 32, 912247, tzinfo=datetime.timezone.utc)`).
+* **含义**：最后一次修改的时间戳。
+* **作用**：技术字段。
+* **典型内容**：时间戳（例如：`datetime.datetime(2024, 9, 4, 8, 42, 32, 912247, tzinfo=datetime.timezone.utc)`）。
 
 #### is\_deleted
 
-* **Meaning**: Flag indicating if the order is marked as deleted.
-* **Role**: Technical field.
-* **Typical Contents**: A boolean (e.g., `False`).
+* **含义**：指示订单是否已标记为删除的标志。
+* **作用**：技术字段。
+* **典型内容**：布尔值（例如：`False`）。
 
 #### deleted\_on
 
-* **Meaning**: Timestamp when the order was marked as deleted.
-* **Role**: Technical field.
-* **Typical Contents**: Default date if not deleted (e.g., `datetime.datetime(2, 1, 1, 11, 0, tzinfo=datetime.timezone.utc)`).
+* **含义**：订单标记为删除时的时间戳。
+* **作用**：技术字段。
+* **典型内容**：未删除时的默认日期（例如：`datetime.datetime(2, 1, 1, 11, 0, tzinfo=datetime.timezone.utc)`）。
 
 #### preview\_path
 
-* **Meaning**: Path to a preview document for the sales order.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string representing a file path (e.g., `'previews/sales_order/23f3d697-7411-4c95-981d-faf089d266be/0010174175/0010174175_preview.pdf'`).
+* **含义**：销售订单预览文档的路径。
+* **作用**：描述性字段。
+* **典型内容**：表示文件路径的字符串（例如：`'previews/sales_order/23f3d697-7411-4c95-981d-faf089d266be/0010174175/0010174175_preview.pdf'`）。
 
 #### last\_modified\_by
 
-* **Meaning**: Identifier of the user who last modified the entry.
-* **Role**: Technical field.
-* **Typical Contents**: May be `NULL`.
+* **含义**：最后修改该条目的用户标识符。
+* **作用**：技术字段。
+* **典型内容**：可能为 `NULL`。
 
 #### deleted\_by
 
-* **Meaning**: Identifier of the user who marked the entry as deleted.
-* **Role**: Technical field.
-* **Typical Contents**: May be `NULL`.
+* **含义**：将该条目标记为删除的用户标识符。
+* **作用**：技术字段。
+* **典型内容**：可能为 `NULL`。

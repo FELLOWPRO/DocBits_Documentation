@@ -1,19 +1,19 @@
-# Auto test document
+# 自动测试文档
 
-## Spalten
+## 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_id`: internal
-* `doc_type`: DOC Type
-* `extracted_data`: text
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `filename`: internal
+* `id`：内部字段
+* `org_id`：组织 ID
+* `doc_id`：内部字段
+* `doc_type`：文档类型
+* `extracted_data`：文本
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `filename`：内部字段
 
-## Analyse & Beschreibung
+## 分析与描述
 
 ```markdown
 # Table Documentation: `public.auto_test_document`

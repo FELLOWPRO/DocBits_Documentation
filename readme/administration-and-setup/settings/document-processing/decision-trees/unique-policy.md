@@ -1,23 +1,23 @@
-# Unique Policy
+# 唯一策略
 
-Ensures that only a single rule is matched. If multiple rules are matched, the decision tree will return false.
+确保只匹配一条规则。如果匹配多条规则，决策树将返回 false。
 
-**Example:**
+**示例：**
 
-| Rule | Condition            | Return Group |
+| 规则 | 条件                 | 返回组   |
 | ---- | -------------------- | ------------ |
-| 1    | Total Amount <= 1000 | GROUP_1     |
-| 2    | Total Amount <= 2000 | GROUP_2     |
-| 3    | Total Amount <= 5000 | GROUP_5     |
-| 4    | Total Amount <= 4000 | GROUP_4     |
-| 5    | Total Amount <= 3000 | GROUP_3     |
+| 1    | 总金额 <= 1000       | GROUP_1     |
+| 2    | 总金额 <= 2000       | GROUP_2     |
+| 3    | 总金额 <= 5000       | GROUP_5     |
+| 4    | 总金额 <= 4000       | GROUP_4     |
+| 5    | 总金额 <= 3000       | GROUP_3     |
 
-If the total amount is **1500**, the rules evaluated will be:
+如果总金额为 **1500**，则评估的规则如下：
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (matches)
-* **Rule 3**: Total Amount <= 5000 (matches)
-* **Rule 4**: Total Amount <= 4000 (matches)
-* **Rule 5**: Total Amount <= 3000 (matches)
+* **规则 1**：总金额 <= 1000（不匹配）
+* **规则 2**：总金额 <= 2000（匹配）
+* **规则 3**：总金额 <= 5000（匹配）
+* **规则 4**：总金额 <= 4000（匹配）
+* **规则 5**：总金额 <= 3000（匹配）
 
-Since multiple rules are matched (**Rule 2**, **Rule 3**, **Rule 4**, **Rule 5**), the decision tree will return **false** because the **Unique** policy ensures only one rule can match.
+由于匹配了多条规则（**规则 2**、**规则 3**、**规则 4**、**规则 5**），决策树将返回 **false**，因为 **唯一** 策略确保最多只能匹配一条规则。

@@ -1,184 +1,184 @@
-# REST API Lookup Configurations
+# REST API 查找配置
 
-## Tabelle `public.rest_api_lookup_configurations`
+## 表 `public.rest_api_lookup_configurations`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `sub_org_id`: internal
-* `data_key`: internal
-* `url`: internal
-* `method`: internal
-* `params`: text
-* `headers`: text
-* `body`: text
-* `body_type`: internal
-* `authentication_type`: internal
-* `authentication_json`: text
-* `data_base_path`: internal
-* `column_paths`: text
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
-* `is_template`: boolean
-* `is_dynamic`: boolean
+* `id`：内部字段
+* `org_id`：组织 ID
+* `sub_org_id`：内部字段
+* `data_key`：内部字段
+* `url`：内部字段
+* `method`：内部字段
+* `params`：文本
+* `headers`：文本
+* `body`：文本
+* `body_type`：内部字段
+* `authentication_type`：内部字段
+* `authentication_json`：文本
+* `data_base_path`：内部字段
+* `column_paths`：文本
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `deleted_on`：带时区的时间戳
+* `is_template`：布尔值
+* `is_dynamic`：布尔值
 
-### Analyse & Beschreibung
+### 分析与说明
 
-## Technical Documentation: `public.rest_api_lookup_configurations` Table
+## 技术文档：`public.rest_api_lookup_configurations` 表
 
-### Introduction
+### 简介
 
-The `public.rest_api_lookup_configurations` table is designed to store configurations for REST API lookups within an organization. This table holds essential information for performing API requests, including details about the endpoints, authentication methods, and request/response configurations. It appears to be used for dynamically constructing API calls and parsing their results.
+`public.rest_api_lookup_configurations` 表用于存储组织内 REST API 查找的配置。此表包含执行 API 请求所需的重要信息，包括端点、身份验证方法以及请求和响应配置。它似乎用于动态构建 API 调用并解析其结果。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: A unique identifier for each configuration entry.
-* **Role**: Primary key.
-* **Typical Contents**: UUID strings like `5e9b3637-79a1-4535-99cf-9247dfa48960`.
-* **Note**: This is the unique key for identifying a specific API lookup configuration.
+* **含义**：每个配置条目的唯一标识符。
+* **作用**：主键。
+* **典型内容**：类似 `5e9b3637-79a1-4535-99cf-9247dfa48960` 的 UUID 字符串。
+* **备注**：用于标识特定 API 查找配置的唯一键。
 
 #### org\_id
 
-* **Meaning**: Identifier for the organization that owns the configuration.
-* **Role**: Foreign key.
-* **Typical Contents**: UUID strings representing organization IDs.
-* **Note**: Links the configuration to an organization.
+* **含义**：拥有该配置的组织的标识符。
+* **作用**：外键。
+* **典型内容**：表示组织 ID 的 UUID 字符串。
+* **备注**：将配置关联到某个组织。
 
 #### sub\_org\_id
 
-* **Meaning**: Identifier for a sub-organization within the primary organization.
-* **Role**: Foreign key.
-* **Typical Contents**: UUID strings representing sub-organization IDs.
-* **Note**: Allows further granularity within organizations.
+* **含义**：主组织内子组织的标识符。
+* **作用**：外键。
+* **典型内容**：表示子组织 ID 的 UUID 字符串。
+* **备注**：支持在组织内进行更细粒度的区分。
 
 #### data\_key
 
-* **Meaning**: A label or key for identifying the data or API endpoint.
-* **Role**: Descriptive field.
-* **Typical Contents**: Descriptive text like `bank_codes`.
-* **Note**: Used to distinguish between different types of data or end points.
+* **含义**：用于标识数据或 API 端点的标签或键。
+* **作用**：描述性字段。
+* **典型内容**：类似 `bank_codes` 的描述性文本。
+* **备注**：用于区分不同类型的数据或端点。
 
 #### url
 
-* **Meaning**: The URL of the API endpoint to be called.
-* **Role**: Descriptive field.
-* **Typical Contents**: URL strings like `/M3/m3api-rest/v2/execute/CRS692MI/LstByID`.
-* **Note**: Represents the endpoint to which the HTTP request is sent.
+* **含义**：要调用的 API 端点的 URL。
+* **作用**：描述性字段。
+* **典型内容**：类似 `/M3/m3api-rest/v2/execute/CRS692MI/LstByID` 的 URL 字符串。
+* **备注**：表示发送 HTTP 请求的目标端点。
 
 #### method
 
-* **Meaning**: HTTP method used for the API request.
-* **Role**: Descriptive field.
-* **Typical Contents**: Common HTTP methods like `GET`.
-* **Note**: Dictates the type of HTTP request to be performed.
+* **含义**：API 请求使用的 HTTP 方法。
+* **作用**：描述性字段。
+* **典型内容**：常见的 HTTP 方法，例如 `GET`。
+* **备注**：决定要执行的 HTTP 请求类型。
 
 #### params
 
-* **Meaning**: Parameters to be included in the API request.
-* **Role**: Configuration field.
-* **Typical Contents**: JSON or key-value pairs (often `None` if not used).
-* **Note**: Contains dynamic parameters for the request.
+* **含义**：要包含在 API 请求中的参数。
+* **作用**：配置字段。
+* **典型内容**：JSON 或键值对（通常在未使用时为 `None`）。
+* **备注**：包含请求的动态参数。
 
 #### headers
 
-* **Meaning**: HTTP headers to be included in the request.
-* **Role**: Configuration field.
-* **Typical Contents**: JSON or text data (often `None` if not used).
-* **Note**: Used to include additional metadata in the request.
+* **含义**：要包含在请求中的 HTTP 标头。
+* **作用**：配置字段。
+* **典型内容**：JSON 或文本数据（通常在未使用时为 `None`）。
+* **备注**：用于在请求中包含其他元数据。
 
 #### body
 
-* **Meaning**: The body of the HTTP request.
-* **Role**: Configuration field.
-* **Typical Contents**: JSON data or other serialized data (often `None` if not used).
-* **Note**: Contains the payload for POST/PUT requests.
+* **含义**：HTTP 请求的正文。
+* **作用**：配置字段。
+* **典型内容**：JSON 数据或其他序列化数据（通常在未使用时为 `None`）。
+* **备注**：包含 POST/PUT 请求的负载。
 
 #### body\_type
 
-* **Meaning**: Specifies the format of the request body.
-* **Role**: Descriptive field.
-* **Typical Contents**: MIME types like `application/json`.
-* **Note**: Indicates the content type of the body.
+* **含义**：指定请求正文的格式。
+* **作用**：描述性字段。
+* **典型内容**：类似 `application/json` 的 MIME 类型。
+* **备注**：表示正文的内容类型。
 
 #### authentication\_type
 
-* **Meaning**: Type of authentication used for the API request.
-* **Role**: Descriptive field.
-* **Typical Contents**: Authentication methods like `ionapi`.
-* **Note**: Determines how the request will be authenticated.
+* **含义**：API 请求使用的身份验证类型。
+* **作用**：描述性字段。
+* **典型内容**：类似 `ionapi` 的身份验证方法。
+* **备注**：决定请求的身份验证方式。
 
 #### authentication\_json
 
-* **Meaning**: Details of the authentication configuration in JSON format.
-* **Role**: Configuration field.
-* **Typical Contents**: JSON strings with authentication information.
-* **Note**: Contains credentials and endpoint details for authentication.
+* **含义**：JSON 格式的身份验证配置详细信息。
+* **作用**：配置字段。
+* **典型内容**：包含身份验证信息的 JSON 字符串。
+* **备注**：包含身份验证所需的凭据和端点详细信息。
 
 #### data\_base\_path
 
-* **Meaning**: Path within the API response to extract data from.
-* **Role**: Configuration field.
-* **Typical Contents**: JSON path expressions like `$[results][0][records]`.
-* **Note**: Used to parse the API response data.
+* **含义**：API 响应中用于提取数据的路径。
+* **作用**：配置字段。
+* **典型内容**：类似 `$[results][0][records]` 的 JSON 路径表达式。
+* **备注**：用于解析 API 响应数据。
 
 #### column\_paths
 
-* **Meaning**: Maps data fields to columns for extraction.
-* **Role**: Configuration field.
-* **Typical Contents**: JSON strings mapping API response fields to column names.
-* **Note**: Facilitates data extraction from the API response.
+* **含义**：将数据字段映射到用于提取的列。
+* **作用**：配置字段。
+* **典型内容**：将 API 响应字段映射到列名的 JSON 字符串。
+* **备注**：便于从 API 响应中提取数据。
 
 #### created\_by
 
-* **Meaning**: Identifier of the user who created the configuration.
-* **Role**: Technical field.
-* **Typical Contents**: Integer IDs like `1`.
-* **Note**: Tracks the creator of the configuration entry.
+* **含义**：创建该配置的用户的标识符。
+* **作用**：技术字段。
+* **典型内容**：类似 `1` 的整数 ID。
+* **备注**：记录配置条目的创建者。
 
 #### created\_on
 
-* **Meaning**: Timestamp when the configuration was created.
-* **Role**: Technical field.
-* **Typical Contents**: Timestamps like `2024-01-24T09:14:24.788788Z`.
-* **Note**: Indicates the creation date and time.
+* **含义**：创建配置时的时间戳。
+* **作用**：技术字段。
+* **典型内容**：类似 `2024-01-24T09:14:24.788788Z` 的时间戳。
+* **备注**：表示创建日期和时间。
 
 #### last\_modified\_on
 
-* **Meaning**: Timestamp of the last modification.
-* **Role**: Technical field.
-* **Typical Contents**: Timestamps (often `None` if not modified).
-* **Note**: Records the last update time.
+* **含义**：上次修改的时间戳。
+* **作用**：技术字段。
+* **典型内容**：时间戳（如果未修改，通常为 `None`）。
+* **备注**：记录上次更新时间。
 
 #### is\_deleted
 
-* **Meaning**: Flag indicating if a configuration is marked as deleted.
-* **Role**: Technical field.
-* **Typical Contents**: Boolean values like `False`.
-* **Note**: Used to soft delete configurations.
+* **含义**：表示配置是否已标记为删除的标志。
+* **作用**：技术字段。
+* **典型内容**：类似 `False` 的布尔值。
+* **备注**：用于软删除配置。
 
 #### deleted\_on
 
-* **Meaning**: Timestamp when the configuration was marked as deleted.
-* **Role**: Technical field.
-* **Typical Contents**: Timestamps (often a placeholder if not deleted).
-* **Note**: Records when the configuration was marked as deleted.
+* **含义**：配置标记为删除时的时间戳。
+* **作用**：技术字段。
+* **典型内容**：时间戳（如果未删除，通常为占位值）。
+* **备注**：记录配置标记为删除的时间。
 
 #### is\_template
 
-* **Meaning**: Indicates if the configuration serves as a template.
-* **Role**: Descriptive field.
-* **Typical Contents**: Boolean values like `True`.
-* **Note**: Identifies templates for reuse.
+* **含义**：表示该配置是否用作模板。
+* **作用**：描述性字段。
+* **典型内容**：类似 `True` 的布尔值。
+* **备注**：用于标识可重复使用的模板。
 
 #### is\_dynamic
 
-* **Meaning**: Specifies if the configuration is dynamic.
-* **Role**: Descriptive field.
-* **Typical Contents**: Boolean values like `False`.
-* **Note**: Determines if the configuration adjusts to changing data.
+* **含义**：指定该配置是否为动态配置。
+* **作用**：描述性字段。
+* **典型内容**：类似 `False` 的布尔值。
+* **备注**：决定配置是否会随数据变化而调整。

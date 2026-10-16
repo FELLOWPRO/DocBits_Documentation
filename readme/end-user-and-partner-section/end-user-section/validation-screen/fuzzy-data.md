@@ -1,57 +1,57 @@
-# Fuzzy Data
+# 模糊数据
 
-### **Overview**
+### **概述**
 
-Fuzzy Data fields allow users to populate related fields based on approximate matches from master data. These fields are identified by a **blue icon** next to them.
+模糊数据字段允许用户根据主数据中的近似匹配结果填充相关字段。这些字段旁边会显示一个**蓝色图标**。
 
-<figure><img src="../../../.gitbook/assets/fuzzy_data_field_icon.png" alt="Fuzzy Data Field Icon"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/fuzzy_data_field_icon.png" alt="模糊数据字段图标"><figcaption></figcaption></figure>
 
-### **Functionality**
+### **功能**
 
-#### **What Do Fuzzy Data Fields Do?**
+#### **模糊数据字段有什么作用？**
 
-* They populate related fields based on their value or input.
-* The three standard fields using Fuzzy Data are:
-  * **Purchase Order**
-  * **Supplier**
-  * **Vendor ID**
+* 根据字段值或输入内容填充相关字段。
+* 以下三个标准字段使用模糊数据：
+  * **采购订单**
+  * **供应商**
+  * **供应商 ID**
 
-#### **Using Fuzzy Data Fields**
+#### **使用模糊数据字段**
 
-1. **Selecting a Purchase Order**
-   *   Clicking the **blue icon** next to the Purchase Order field opens a **selection window**.
+1. **选择采购订单**
+   *   单击采购订单字段旁边的**蓝色图标**，打开**选择窗口**。
 
 
-       <figure><img src="../../../.gitbook/assets/fuzzy_data_selection_window.png" alt="Fuzzy Data Selection Window"><figcaption></figcaption></figure>
-   * This window contains a table with all purchase orders from the **master data lookup table**.
-   * Enabling the **"Display all columns"** option shows additional details.
-   * Select a **Purchase Order** and click **Proceed**:
-     * If the system finds a Purchase Order in the document, it filters for it automatically.
-     * If no match is found, you can **create custom filters** to find the correct Purchase Order.
-     * Multiple filters can be added; enabling **"Match all filters"** ensures that all conditions must be met.
-     * Available filter options:
-       * **Smart**
-       * **Contains**
-       * **Exact**
-       * **Starts with**
-       * **Ends with**
-   * A button next to **Proceed** allows users to **create a new task/notification**.
-2. **Selecting a Supplier or Vendor ID**
-   * The process is the same as for Purchase Orders.
-   * The difference is that **Supplier and Vendor ID fields use the Supplier Master Data Table** instead of the Purchase Order Header Master Data Table.
+       <figure><img src="../../../.gitbook/assets/fuzzy_data_selection_window.png" alt="模糊数据选择窗口"><figcaption></figcaption></figure>
+   * 此窗口中的表格包含主数据查询表中的所有采购订单。
+   * 启用 **“Display all columns”（显示所有列）** 选项可查看其他详细信息。
+   * 选择一个**采购订单**，然后单击 **Proceed（继续）**：
+     * 如果系统在文档中找到采购订单，会自动筛选出该订单。
+     * 如果未找到匹配项，可以**创建自定义筛选条件**，以查找正确的采购订单。
+     * 可以添加多个筛选条件；启用 **“Match all filters”（匹配所有筛选条件）** 可确保必须满足所有条件。
+     * 可用的筛选选项：
+       * **Smart（智能）**
+       * **Contains（包含）**
+       * **Exact（精确）**
+       * **Starts with（开头为）**
+       * **Ends with（结尾为）**
+   * **Proceed（继续）** 旁边的按钮允许用户**创建新任务/通知**。
+2. **选择供应商或供应商 ID**
+   * 操作过程与选择采购订单相同。
+   * 不同之处在于，**供应商和供应商 ID 字段使用供应商主数据表**，而不是采购订单抬头主数据表。
 
-#### **Field Population Hint**
+#### **字段填充提示**
 
-* If a field is populated using Fuzzy Data rather than being extracted from the document, a **small hint or info icon** appears to indicate that the data was **not extracted from the document** but filled based on master data.
+* 如果字段是通过模糊数据填充的，而非从文档中提取，系统会显示一个**小提示或信息图标**，表明该数据**并非从文档中提取**，而是根据主数据填充的。
 
-### **Administrator Configuration**
+### **管理员配置**
 
 {% content-ref url="../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-master-data.md" %}
-[fuzzy-data-configuration-with-master-data.md](../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-master-data.md)
+[使用主数据配置模糊数据](../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-master-data.md)
 {% endcontent-ref %}
 
 {% content-ref url="../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md" %}
-[fuzzy-data-configuration-with-list-of-values.md](../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md)
+[使用值列表配置模糊数据](../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md)
 {% endcontent-ref %}
 
 

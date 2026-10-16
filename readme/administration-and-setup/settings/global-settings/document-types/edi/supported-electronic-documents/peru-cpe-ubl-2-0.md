@@ -1,30 +1,30 @@
 ---
-description: PERU CPE UBL 2.0 electronic document support in DocBits
+description: "DocBits 对秘鲁 CPE UBL 2.0 电子文档的支持"
 ---
 
-# 🇵🇪 PERU CPE UBL 2.0
+# 🇵🇪 秘鲁 CPE UBL 2.0
 
-| Property             | Value                            |
+| 属性 | 值 |
 | -------------------- | -------------------------------- |
-| **Country / Region** | Peru                             |
-| **Document Types**   | Invoice, Credit Note, Debit Note |
-| **Format**           | UBL 2.0 XML                      |
-| **Standard**         | CPE UBL 2.0                      |
+| **国家 / 地区** | 秘鲁 |
+| **文档类型** | 发票、贷项通知单、借项通知单 |
+| **格式** | UBL 2.0 XML |
+| **标准** | CPE UBL 2.0 |
 
-Peru CPE UBL 2.0 is the earlier UBL-based format for Peruvian electronic invoices. While SUNAT has moved to UBL 2.1, many existing documents still use this version. DocBits processes these documents and extracts all header and line-item fields.
+秘鲁 CPE UBL 2.0 是秘鲁电子发票较早采用的 UBL 格式。虽然 SUNAT 已转向 UBL 2.1，但许多现有文档仍使用此版本。DocBits 会处理这些文档，并提取所有抬头和行项目字段。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件 | 状态 |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览 | ✅ 支持 |
+| 字段提取 | ✅ 支持 |
+| 转换 | ✅ 支持 |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/peru-cpe-preview.png" alt="Peru CPE UBL 2.0 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Peru CPE UBL 2.0 invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/peru-cpe-preview.png" alt="DocBits 中秘鲁 CPE UBL 2.0 发票的预览"><figcaption><p>秘鲁 CPE UBL 2.0 发票的 DocBits 默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

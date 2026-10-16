@@ -1,35 +1,35 @@
-# Identity Service Provider Configuration
+# 身份服务提供商配置
 
-Configuring the Identity Service Provider (IdP) to integrate with DocBits requires a few specific steps.Here is a guide to doing that:
+配置身份服务提供商（IdP）以与 DocBits 集成，需要执行几个特定步骤。以下是操作指南：
 
-<figure><img src="../../../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
 
-**Accessing the IdP configuration interface**
+**访问 IdP 配置界面**
 
-* Log in to your Identity Service Provider (IdP) as an administrator.
-* Navigate to the settings or configuration interface dedicated to managing SAML integrations.
+* 以管理员身份登录身份服务提供商（IdP）。
+* 前往用于管理 SAML 集成的设置或配置界面。
 
-**Entering the Tenant ID:**
+**输入租户 ID：**
 
-* Look for the section that allows configuration for new SAML integrations.
-* Enter the DocBits tenant ID. This ID identifies your Docbits account to the IdP and enables secure communication between the two systems.
+* 找到可配置新 SAML 集成的部分。
+* 输入 DocBits 租户 ID。此 ID 用于向 IdP 标识您的 DocBits 账户，并支持两个系统之间的安全通信。
 
-**Importing the required files:**
+**导入所需文件：**
 
-* DocBits usually requires downloading metadata or adding specific configuration details. Check your IdP's documentation to see what steps are required.
-* Download the DocBits metadata file or import it into your IdP's configuration menu. Alternatively, you can manually enter the required configuration details, depending on what your IdP supports.
+* DocBits 通常要求下载元数据或添加特定配置详细信息。请查阅 IdP 文档，了解所需步骤。
+* 下载 DocBits 元数据文件，或将其导入 IdP 的配置菜单。您也可以根据 IdP 支持的功能，手动输入所需的配置详细信息。
 
-**Configure integration settings:**
+**配置集成设置：**
 
-* Make sure the integration settings, such as the SSO URL, Entity ID, and SAML certificate, are correct.
-* Check that the Single Log-Out (SLO) URL and other required parameters are configured correctly. These are critical for smooth authentication and logout via SAML.
+* 确保集成设置（例如 SSO URL、实体 ID 和 SAML 证书）正确无误。
+* 检查单点注销（SLO）URL 和其他必需参数是否配置正确。这些参数对于通过 SAML 顺利进行身份验证和注销至关重要。
 
-**Verify configuration:**
+**验证配置：**
 
-* Take time to make sure all information entered is correct and that there are no typos or misconfigurations.
-* Run tests to ensure that users can successfully log into Docbits via SAML and that Single Log-Out is working properly.
+* 仔细检查所有输入的信息是否正确，以及是否存在拼写错误或配置错误。
+* 运行测试，确保用户能够通过 SAML 成功登录 DocBits，并且单点注销功能正常运行。
 
-**Security considerations:**
+**安全注意事项：**
 
-* Make sure all transferred files and configuration details are handled securely to avoid data leaks or unauthorized access.
-* Protect sensitive information such as SAML certificates and credentials from unauthorized access and store them in a safe location.
+* 确保安全处理所有传输的文件和配置详细信息，以避免数据泄露或未经授权的访问。
+* 防止未经授权的人员访问 SAML 证书和凭据等敏感信息，并将其存放在安全的位置。

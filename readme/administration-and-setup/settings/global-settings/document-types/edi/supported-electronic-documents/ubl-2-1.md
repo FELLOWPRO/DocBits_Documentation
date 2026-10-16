@@ -1,30 +1,30 @@
 ---
-description: UBL 2.1 electronic document support in DocBits
+description: "DocBits 对 UBL 2.1 电子文档的支持"
 ---
 
 # UBL 2.1
 
-| Property             | Value                                        |
+| 属性                   | 值                                           |
 | -------------------- | -------------------------------------------- |
-| **Country / Region** | International                                |
-| **Document Types**   | Invoice, Credit Note, Order, Despatch Advice |
-| **Format**           | UBL 2.1 XML                                  |
-| **Standard**         | OASIS UBL 2.1 (Universal Business Language)  |
+| **国家 / 地区**        | 国际                                          |
+| **文档类型**           | 发票、贷项通知单、订单、发货通知                     |
+| **格式**               | UBL 2.1 XML                                  |
+| **标准**               | OASIS UBL 2.1（通用商业语言）                    |
 
-UBL 2.1 (Universal Business Language) is the OASIS open standard for business documents. It serves as the foundation for many national e-invoicing standards including Peppol BIS, XRechnung (UBL variant), OIOUBL, and SI-UBL. DocBits processes generic UBL 2.1 invoices that don't match any country-specific standard.
+UBL 2.1（通用商业语言）是 OASIS 制定的商业文档开放标准。它是许多国家电子发票标准的基础，包括 Peppol BIS、XRechnung（UBL 变体）、OIOUBL 和 SI-UBL。DocBits 可处理不符合任何特定国家标准的通用 UBL 2.1 发票。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件       | 状态       |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览       | ✅ 支持 |
+| 字段提取   | ✅ 支持 |
+| 转换       | ✅ 支持 |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/ubl-2-1-preview.png" alt="UBL 2.1 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a UBL 2.1 invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/ubl-2-1-preview.png" alt="DocBits 中的 UBL 2.1 发票预览"><figcaption><p>UBL 2.1 发票的 DocBits 默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

@@ -1,36 +1,21 @@
-# Validation Rules
+# 电子发票验证
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/en.mp4" %}
 
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_setup.png" alt="Validation setup and accepted versions"><figcaption><p>Validation setup and accepted XRechnung versions</p></figcaption></figure>
+**电子发票验证**页面（**设置 → 电子文档 → 电子发票验证**，路径 `/settings/einvoice-validation`；早期名称为*验证规则*）用于控制 DocBits 如何验证收到的电子发票。它基于官方 **KoSIT XRechnung + ZUGFeRD** 规则集，以及验证器内部使用的发现代码，并允许你为组织覆盖每条规则的严重性。
 
-The **Validation Rules** page (**E-Documents → Rules**) controls how DocBits validates incoming e-invoices. It is based on the official **KoSIT XRechnung + ZUGFeRD** rule set plus the validator's in-house finding codes, and lets you override the severity of each rule for your organization.
+> 此页面适用于**电子发票**（XRechnung、ZUGFeRD、Factur-X）。它与**数据验证规则**不同，后者用于检查提取的文档字段。
 
-## Validation Setup
+## 此页面包含的内容
 
-The **Validation Setup** card shows your current validation profile (for example *B2G — Public Sector Receiver*). Click **Edit answers** to re-run the setup wizard and change which standard you validate against.
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings.png" alt="电子发票验证页面，其中显示“按文档类型验证”表格"><figcaption><p>电子发票验证页面。“<strong>规则和策略</strong>”选项卡从<strong>按文档类型验证</strong>表格开始。示例组织。</p></figcaption></figure>
 
-## Accepted XRechnung versions
-
-The **Accepted XRechnung versions** gate lists every XRechnung version. Tick the versions you accept — documents whose CustomizationID falls outside this list are rejected with `VAL-VERSION-NOT-ALLOWED` before any other check. An empty list means "accept everything". Each version is tagged **current**, **deprecated** or **EOL** together with its release date.
-
-## Accepted profiles and severity model
-
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_severity.png" alt="Accepted profiles and severity legend"><figcaption><p>Accepted profiles and what each severity means</p></figcaption></figure>
-
-Choose which **profiles** you accept (BASIC WL, BASIC, EN 16931 / COMFORT, EXTENDED, XRECHNUNG (CIUS)) using **Accept all** / **Clear**, then **Save**.
-
-Each validation rule has a **severity** that decides what happens when it fires:
-
-| Severity | Effect |
-|----------|--------|
-| **FATAL** | Stops processing immediately. No subsequent layer is checked; the document goes to Error. |
-| **ERROR** | The document is rejected. Other findings on the same document are still surfaced; the supplier notification (if enabled) fires. |
-| **WARNING** | Surfaces in the validation report, but the document proceeds through the pipeline normally. |
-| **INFO** | Audit-log only. No user-facing effect and no rejection. |
-
-## Overriding rule severities
-
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_table.png" alt="The validation-rule table"><figcaption><p>The full rule table with per-rule severity override</p></figcaption></figure>
-
-The rule table lists every validation rule (over 1,600 in total). Filter by **Layer**, **Profile** or **Version**, or search by code or field. For each rule you can override the **Severity** from the dropdown to match your organization's policy — for example, downgrading a rule from `ERROR` to `WARNING` so it no longer rejects the document.
+| 主题 | 功能 | 适用对象 |
+| --- | --- | --- |
+| [验证设置和接受的版本](validation-setup.md) | 设置向导、接受的 XRechnung 版本、接受的配置文件，以及每种严重性的含义。 | 组织管理员 |
+| [规则严重性](validation-rule-severities.md) | 规则表：更改组织中每条规则的严重性。 | 组织管理员 |
+| [按文档类型验证](validation-per-document-type.md) | 开启验证（**已启用**），并决定检查失败是否会阻止文档（**阻止**）。每次更改都需要确认。 | 组织管理员 |
+| [更改日志](validation-change-log.md) | 每项设置更改的记录：时间、操作者、规则，以及从 → 到的变化。 | 组织管理员 |
+| [被拒绝的电子发票错误页面](validation-error-screen.md) | 上传错误 XML 时显示的内容：说明、出错行和后续步骤。 | 所有处理发票的人员 |
+| [验证报告](validation-report.md) | 发票验证失败时用户看到的内容：以通俗语言说明发现的问题。此报告从文档打开，而非从此页面打开。 | 所有处理发票的人员 |
+| [后续步骤和拒绝文档](validation-next-step-and-reject.md) | 阅读报告后的操作、下载报告，以及**拒绝文档**。 | 所有处理发票的人员 |

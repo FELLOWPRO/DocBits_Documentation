@@ -1,39 +1,39 @@
-# Case 6: Quantity Within Tolerance, Unit Price Outside Negative Tolerance (Rejected)
+# 案例 6：数量在容差范围内，单价超出负向容差（拒绝）
 
-## Scenario:
+## 场景：
 
-The quantity is within tolerance, but the unit price is below the acceptable range (negative tolerance) and is not approved.
+数量在容差范围内，但单价低于可接受范围（负向容差），且未获批准。
 
-## Action:
+## 操作：
 
-The system rejects the unit price, adjusts it to match the purchase order, and generates a credit note for the difference. Additional header charges may be applied as necessary.
+系统拒绝该单价，将其调整为与采购订单一致，并针对差额生成贷项通知单。必要时还可应用额外的抬头费用。
 
-## Example:
+## 示例：
 
-* **Purchase Order (PO):**
-  * Quantity: 100 units
-  * Unit Price: $10.00 per unit
-  * Total Amount: $1,000.00
-* **Invoice Received:**
-  * Quantity: 100 units (within tolerance of 0%)
-  * Unit Price: $9.00 per unit (outside negative tolerance of -10%)
-  * Total Amount: $900.00
-* **Tolerance Levels:**
-  * Quantity Tolerance: ±2%
-  * Unit Price Tolerance: ±1%
+* **采购订单（PO）：**
+  * 数量：100 件
+  * 单价：每件 $10.00
+  * 总金额：$1,000.00
+* **收到的发票：**
+  * 数量：100 件（在 0% 容差范围内）
+  * 单价：每件 $9.00（超出 -10% 的负向容差）
+  * 总金额：$900.00
+* **容差级别：**
+  * 数量容差：±2%
+  * 单价容差：±1%
 
-Since the quantity (100 units) is within the acceptable tolerance range but the unit price ($9.00) is below the acceptable tolerance and is not approved, the system will:
+由于数量（100 件）在可接受的容差范围内，但单价（$9.00）低于可接受范围且未获批准，系统将：
 
-1. **Reject the Unit Price:** The system does not accept the invoiced unit price of $9.00.
-2. **Adjust the Unit Price:** The system adjusts the unit price to match the original purchase order unit price.
-   * Adjusted Unit Price = $10.00 (from PO)
-3. **Calculate the Corrected Total Amount:** Using the adjusted unit price, the system recalculates the total amount.
-   * **Corrected Total Amount = Quantity × Adjusted Unit Price**
-   * **Corrected Total Amount = 100 units × $10.00 per unit = $1,000.00**
-4. **Generate a Credit Note:** The system generates a credit note for the difference between the incorrect total amount on the invoice and the corrected total amount.
-   * **Credit Note Amount = Original Invoice Total - Corrected Total Amount**
-   * **Credit Note Amount = $900.00 - $1,000.00 = -$100.00**
-   * The credit note will effectively reverse the undercharge.
-5. **Process the Invoice:** The system processes the invoice with the adjusted total amount of $1,000.00 and applies the credit note for $100.00 to account for the undercharged unit price.
+1. **拒绝单价：**系统不接受发票中的 $9.00 单价。
+2. **调整单价：**系统将单价调整为与原采购订单中的单价一致。
+   * 调整后的单价 = $10.00（来自 PO）
+3. **计算更正后的总金额：**系统使用调整后的单价重新计算总金额。
+   * **更正后的总金额 = 数量 × 调整后的单价**
+   * **更正后的总金额 = 100 件 × 每件 $10.00 = $1,000.00**
+4. **生成贷项通知单：**系统针对发票错误总金额与更正后总金额之间的差额生成贷项通知单。
+   * **贷项通知单金额 = 原发票总金额 - 更正后的总金额**
+   * **贷项通知单金额 = $900.00 - $1,000.00 = -$100.00**
+   * 贷项通知单将有效冲销少收的金额。
+5. **处理发票：**系统以调整后的总金额 $1,000.00 处理发票，并应用金额为 $100.00 的贷项通知单，以弥补单价少计的金额。
 
-This approach ensures that the pricing aligns with the purchase order terms, even when an incorrect, lower price is invoiced.
+即使发票中填写了错误的较低价格，此方法也能确保定价符合采购订单条款。

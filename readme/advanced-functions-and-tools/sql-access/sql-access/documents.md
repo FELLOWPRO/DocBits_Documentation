@@ -1,80 +1,80 @@
-# Documents
+# 文档
 
-## Spalten
+## 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `batch_id`: internal
-* `doc_path`: internal
-* `doc_type`: DOC Type
-* `status`: internal
-* `message`: text
-* `export_attempts`: integer
-* `last_attempted_on`: timestamp with time zone
-* `next_attempt_on`: timestamp with time zone
-* `assigned_to`: integer
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `task_id`: internal
-* `filename`: internal
-* `assigned_on`: timestamp with time zone
-* `pages`: integer
-* `auto_processed`: boolean
-* `exception_info`: text
-* `doc_language`: Language
-* `is_trimmed`: boolean
-* `doc_origin`: Doc Origin
-* `doc_locale`: Doc Locale
-* `is_doc2landing_doc`: boolean
-* `extraction_time`: double precision
-* `export_time`: double precision
-* `po_all_matched`: boolean
-* `restart_allowed`: boolean
-* `table_version`: internal
-* `force_ocr`: boolean
-* `locked_by`: integer
-* `locked_on`: timestamp with time zone
-* `lock_renewed_on`: timestamp with time zone
-* `lock_key`: internal
-* `last_saved_by`: integer
-* `last_saved_on`: timestamp with time zone
-* `document_version`: integer
-* `lock_session_key`: internal
-* `sub_org_id`: internal
-* `doc_source`: internal
-* `sub_doc_type`: internal
-* `assigned_to_group`: internal
-* `status_changed_on`: timestamp with time zone
-* `improve_quality`: boolean
-* `priority`: integer
-* `metadata_field`: json
-* `doc_classification_label`: internal
-* `doc_start_page`: integer
-* `doc_classification_class`: internal
-* `celery_task_token`: internal
-* `celery_task_attempt`: integer
-* `celery_task_priority`: integer
-* `has_zugferd`: boolean
-* `has_peppol`: boolean
-* `timestamp_for_validation`: timestamp with time zone
-* `exception_details`: text
-* `has_annotated_version`: boolean
-* `po_match_status`: internal
-* `tr_ocr_extracted_data`: text
-* `pending_workflow_execution`: boolean
-* `extracted_document_id`: internal
-* `extracted_supplier_id`: internal
-* `classification_manually_corrected`: boolean
-* `supplier_as_org_id`: internal
-* `extracted_data_basic`: jsonb
-* `celery_task_queue`: internal
-* `extracted_data`: jsonb
-* `extracted_data_jsonb`: jsonb
-* `warnings`: jsonb
+* `id`：内部字段
+* `org_id`：组织 ID
+* `batch_id`：内部字段
+* `doc_path`：内部字段
+* `doc_type`：文档类型
+* `status`：内部字段
+* `message`：文本
+* `export_attempts`：整数
+* `last_attempted_on`：带时区的时间戳
+* `next_attempt_on`：带时区的时间戳
+* `assigned_to`：整数
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `task_id`：内部字段
+* `filename`：内部字段
+* `assigned_on`：带时区的时间戳
+* `pages`：整数
+* `auto_processed`：布尔值
+* `exception_info`：文本
+* `doc_language`：语言
+* `is_trimmed`：布尔值
+* `doc_origin`：文档来源
+* `doc_locale`：文档区域设置
+* `is_doc2landing_doc`：布尔值
+* `extraction_time`：双精度浮点数
+* `export_time`：双精度浮点数
+* `po_all_matched`：布尔值
+* `restart_allowed`：布尔值
+* `table_version`：内部字段
+* `force_ocr`：布尔值
+* `locked_by`：整数
+* `locked_on`：带时区的时间戳
+* `lock_renewed_on`：带时区的时间戳
+* `lock_key`：内部字段
+* `last_saved_by`：整数
+* `last_saved_on`：带时区的时间戳
+* `document_version`：整数
+* `lock_session_key`：内部字段
+* `sub_org_id`：内部字段
+* `doc_source`：内部字段
+* `sub_doc_type`：内部字段
+* `assigned_to_group`：内部字段
+* `status_changed_on`：带时区的时间戳
+* `improve_quality`：布尔值
+* `priority`：整数
+* `metadata_field`：json
+* `doc_classification_label`：内部字段
+* `doc_start_page`：整数
+* `doc_classification_class`：内部字段
+* `celery_task_token`：内部字段
+* `celery_task_attempt`：整数
+* `celery_task_priority`：整数
+* `has_zugferd`：布尔值
+* `has_peppol`：布尔值
+* `timestamp_for_validation`：带时区的时间戳
+* `exception_details`：文本
+* `has_annotated_version`：布尔值
+* `po_match_status`：内部字段
+* `tr_ocr_extracted_data`：文本
+* `pending_workflow_execution`：布尔值
+* `extracted_document_id`：内部字段
+* `extracted_supplier_id`：内部字段
+* `classification_manually_corrected`：布尔值
+* `supplier_as_org_id`：内部字段
+* `extracted_data_basic`：jsonb
+* `celery_task_queue`：内部字段
+* `extracted_data`：jsonb
+* `extracted_data_jsonb`：jsonb
+* `warnings`：jsonb
 
-## Analyse & Beschreibung
+## 分析与说明
 
 ```markdown
 # Technical Documentation for `public.documents` Table

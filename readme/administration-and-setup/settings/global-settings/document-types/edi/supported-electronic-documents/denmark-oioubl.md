@@ -1,89 +1,89 @@
 ---
-description: Denmark OIOUBL 2.1 electronic document support in DocBits
+description: "DocBits 对丹麦 OIOUBL 2.1 电子文档的支持"
 ---
 
-# 🇩🇰 DENMARK OIOUBL
+# 🇩🇰 丹麦 OIOUBL
 
-| Property             | Value                                         |
+| 属性                 | 值                                            |
 | -------------------- | --------------------------------------------- |
-| **Country / Region** | Denmark                                       |
-| **Document Types**   | Invoice (Faktura), Credit Note                |
-| **Format**           | XML (UBL 2.1)                                 |
-| **Standard**         | OIOUBL 2.1 (Offentlig Information Online UBL) |
-| **Locale**           | `da_DK`                                       |
+| **国家 / 地区**      | 丹麦                                         |
+| **文档类型**         | 发票（Faktura）、贷项通知单                   |
+| **格式**             | XML（UBL 2.1）                                |
+| **标准**             | OIOUBL 2.1（Offentlig Information Online UBL） |
+| **区域设置**         | `da_DK`                                       |
 
-OIOUBL (Offentlig Information Online UBL) is the Danish e-invoicing standard based on UBL 2.1. It is mandatory for invoices to Danish public-sector entities and widely used in B2B transactions. DocBits detects OIOUBL 2.1 documents by the presence of `<cbc:CustomizationID>OIOUBL-2.1</cbc:CustomizationID>`. The profile identifier `urn:www.nesubl.eu:profiles:profile5:ver2.0` indicates the NES (Northern European Subset) invoice profile.
+OIOUBL（Offentlig Information Online UBL）是基于 UBL 2.1 的丹麦电子发票标准。向丹麦公共部门实体开具发票时必须使用该标准，该标准也广泛用于 B2B 交易。DocBits 通过检测 `<cbc:CustomizationID>OIOUBL-2.1</cbc:CustomizationID>` 来识别 OIOUBL 2.1 文档。配置文件标识符 `urn:www.nesubl.eu:profiles:profile5:ver2.0` 表示 NES（北欧子集）发票配置文件。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 组件                 | 状态       |
+| -------------------- | ---------- |
+| 预览                 | ✅ 支持     |
+| 字段提取             | ✅ 支持     |
+| 转换                 | ✅ 支持     |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/denmark-oioubl-preview.png" alt="Denmark OIOUBL 2.1 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Denmark OIOUBL 2.1 invoice (Faktura)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/denmark-oioubl-preview.png" alt="DocBits 中的丹麦 OIOUBL 2.1 发票预览"><figcaption><p>DocBits 中丹麦 OIOUBL 2.1 发票（Faktura）的默认预览</p></figcaption></figure>
 
-## Field Mapping
+## 字段映射
 
-### Header Fields
+### 发票头字段
 
-| DocBits Field          | Source XML Element                                                                 | Notes                                            |
+| DocBits 字段          | 源 XML 元素                                                                        | 说明                                             |
 | ---------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------ |
-| `invoice_id`           | `cbc:ID`                                                                           | Invoice number                                   |
-| `invoice_date`         | `cbc:IssueDate`                                                                    | ISO 8601 issue date                              |
-| `due_date`             | `cbc:DueDate`                                                                      | Payment due date                                 |
-| `invoice_type`         | `cbc:InvoiceTypeCode`                                                              | UNCL 1001 code (380=Invoice, 381=Credit Note)    |
-| `currency`             | `cbc:DocumentCurrencyCode`                                                         | Always `DKK` (Danish Krone)                      |
-| `purchase_order`       | `cac:OrderReference/cbc:ID`                                                        | Buyer's order reference number                   |
-| `buyer_reference`      | `cbc:BuyerReference`                                                               | Buyer's internal reference / EAN location number |
-| `note`                 | `cbc:Note`                                                                         | Free-text payment instructions or notes          |
-| `net_amount`           | `cac:LegalMonetaryTotal/cbc:TaxExclusiveAmount`                                    | Net amount excl. VAT                             |
-| `tax_amount`           | `cac:TaxTotal/cbc:TaxAmount`                                                       | Total VAT amount (25% standard rate)             |
-| `total_amount`         | `cac:LegalMonetaryTotal/cbc:PayableAmount`                                         | Total amount incl. VAT                           |
-| `tax_rate`             | `cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:Percent`                         | VAT rate in %                                    |
-| `supplier_name`        | `cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name`                     | Supplier company name                            |
-| `supplier_id`          | `cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID`             | CVR number (e.g. `DK12345678`)                   |
-| `supplier_vat`         | `cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID`           | VAT/CVR number                                   |
-| `supplier_address`     | `cac:AccountingSupplierParty/.../cbc:StreetName`                                   | Supplier street address                          |
-| `supplier_city`        | `cac:AccountingSupplierParty/.../cbc:CityName`                                     | Supplier city                                    |
-| `supplier_postal_code` | `cac:AccountingSupplierParty/.../cbc:PostalZone`                                   | Supplier postal code                             |
-| `supplier_country`     | `cac:AccountingSupplierParty/.../cbc:IdentificationCode`                           | ISO country code (`DK`)                          |
-| `customer_name`        | `cac:AccountingCustomerParty/cac:Party/cac:PartyName/cbc:Name`                     | Customer company name                            |
-| `customer_id`          | `cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID`             | CVR number                                       |
-| `customer_vat`         | `cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID`           | VAT/CVR number                                   |
-| `customer_address`     | `cac:AccountingCustomerParty/.../cbc:StreetName`                                   | Customer street address                          |
-| `customer_city`        | `cac:AccountingCustomerParty/.../cbc:CityName`                                     | Customer city                                    |
-| `customer_postal_code` | `cac:AccountingCustomerParty/.../cbc:PostalZone`                                   | Customer postal code                             |
-| `customer_country`     | `cac:AccountingCustomerParty/.../cbc:IdentificationCode`                           | ISO country code (`DK`)                          |
-| `iban`                 | `cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID`                                | Bank account / IBAN                              |
-| `bic`                  | `cac:PaymentMeans/cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cbc:ID` | BIC/SWIFT code                                   |
+| `invoice_id`           | `cbc:ID`                                                                           | 发票编号                                         |
+| `invoice_date`         | `cbc:IssueDate`                                                                    | ISO 8601 开具日期                                |
+| `due_date`             | `cbc:DueDate`                                                                      | 付款到期日                                       |
+| `invoice_type`         | `cbc:InvoiceTypeCode`                                                              | UNCL 1001 代码（380=发票，381=贷项通知单）       |
+| `currency`             | `cbc:DocumentCurrencyCode`                                                         | 始终为 `DKK`（丹麦克朗）                         |
+| `purchase_order`       | `cac:OrderReference/cbc:ID`                                                        | 买方采购订单参考编号                             |
+| `buyer_reference`      | `cbc:BuyerReference`                                                               | 买方内部参考号 / EAN 地点编号                    |
+| `note`                 | `cbc:Note`                                                                         | 付款说明或备注自由文本                           |
+| `net_amount`           | `cac:LegalMonetaryTotal/cbc:TaxExclusiveAmount`                                    | 不含增值税的净额                                 |
+| `tax_amount`           | `cac:TaxTotal/cbc:TaxAmount`                                                       | 增值税总额（标准税率为 25%）                     |
+| `total_amount`         | `cac:LegalMonetaryTotal/cbc:PayableAmount`                                         | 含增值税的总额                                   |
+| `tax_rate`             | `cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:Percent`                         | 增值税税率（%）                                  |
+| `supplier_name`        | `cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name`                     | 供应商公司名称                                   |
+| `supplier_id`          | `cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID`             | CVR 编号（例如 `DK12345678`）                    |
+| `supplier_vat`         | `cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID`           | 增值税 / CVR 编号                                |
+| `supplier_address`     | `cac:AccountingSupplierParty/.../cbc:StreetName`                                   | 供应商街道地址                                   |
+| `supplier_city`        | `cac:AccountingSupplierParty/.../cbc:CityName`                                     | 供应商城市                                       |
+| `supplier_postal_code` | `cac:AccountingSupplierParty/.../cbc:PostalZone`                                   | 供应商邮政编码                                   |
+| `supplier_country`     | `cac:AccountingSupplierParty/.../cbc:IdentificationCode`                           | ISO 国家代码（`DK`）                            |
+| `customer_name`        | `cac:AccountingCustomerParty/cac:Party/cac:PartyName/cbc:Name`                     | 客户公司名称                                     |
+| `customer_id`          | `cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID`             | CVR 编号                                         |
+| `customer_vat`         | `cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID`           | 增值税 / CVR 编号                                |
+| `customer_address`     | `cac:AccountingCustomerParty/.../cbc:StreetName`                                   | 客户街道地址                                     |
+| `customer_city`        | `cac:AccountingCustomerParty/.../cbc:CityName`                                     | 客户城市                                         |
+| `customer_postal_code` | `cac:AccountingCustomerParty/.../cbc:PostalZone`                                   | 客户邮政编码                                     |
+| `customer_country`     | `cac:AccountingCustomerParty/.../cbc:IdentificationCode`                           | ISO 国家代码（`DK`）                            |
+| `iban`                 | `cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID`                                | 银行账户 / IBAN                                 |
+| `bic`                  | `cac:PaymentMeans/cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cbc:ID` | BIC/SWIFT 代码                                   |
 
-### Line Item Table (`INVOICE_TABLE`)
+### 行项目表（`INVOICE_TABLE`）
 
-Row path: `cac:InvoiceLine`
+行路径：`cac:InvoiceLine`
 
-| Column        | Source XML Element          | Notes                   |
+| 列            | 源 XML 元素                | 说明                    |
 | ------------- | --------------------------- | ----------------------- |
-| `POSITION`    | `cbc:ID`                    | Line sequence number    |
-| `DESCRIPTION` | `cac:Item/cbc:Name`         | Item name / description |
-| `QUANTITY`    | `cbc:InvoicedQuantity`      | Invoiced quantity       |
-| `UNIT_PRICE`  | `cac:Price/cbc:PriceAmount` | Unit price excl. VAT    |
-| `NET_AMOUNT`  | `cbc:LineExtensionAmount`   | Line total excl. VAT    |
+| `POSITION`    | `cbc:ID`                    | 行序号                  |
+| `DESCRIPTION` | `cac:Item/cbc:Name`         | 项目名称 / 描述         |
+| `QUANTITY`    | `cbc:InvoicedQuantity`      | 开票数量                |
+| `UNIT_PRICE`  | `cac:Price/cbc:PriceAmount` | 不含增值税的单价        |
+| `NET_AMOUNT`  | `cbc:LineExtensionAmount`   | 不含增值税的行总额      |
 
-## Classification Rule
+## 分类规则
 
-DocBits detects OIOUBL 2.1 documents by matching the `CustomizationID` element:
+DocBits 通过匹配 `CustomizationID` 元素来检测 OIOUBL 2.1 文档：
 
-| Electronic Document Type | Pattern                                                     |
+| 电子文档类型             | 模式                                                        |
 | ------------------------ | ----------------------------------------------------------- |
 | OIOUBL 2.1               | `<cbc:CustomizationID>OIOUBL-2\.1\s*</cbc:CustomizationID>` |
 
-The root element is `<Invoice>` (or `<CreditNote>`) in the UBL 2.1 namespace `urn:oasis:names:specification:ubl:schema:xsd:Invoice-2`.
+UBL 2.1 命名空间 `urn:oasis:names:specification:ubl:schema:xsd:Invoice-2` 中的根元素为 `<Invoice>`（或 `<CreditNote>`）。
 
-## Related
+## 相关内容
 
-* [Currently Supported E-Invoice Standards](../../currently-supported-e-invoice-standards/)
-* [Supported Electronic Documents](./)
+* [当前支持的电子发票标准](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/settings/global-settings/document-types/currently-supported-e-invoice-standards/README.md)
+* [支持的电子文档](./)

@@ -1,63 +1,63 @@
-# Training Line Fields/Table Training
+# 训练行字段/表格训练
 
-## Table Training: When and How to Use It
+## 表格训练：何时以及如何使用
 
-DocBits uses AI-based table extraction by default, which works across suppliers. However, when you need more control over how line items are extracted for a specific supplier, you can use **Table Training** to define the structure manually.
+DocBits 默认使用基于 AI 的表格提取功能，该功能适用于不同供应商。不过，如果您需要更好地控制某个特定供应商的行项目提取方式，可以使用**表格训练**手动定义表格结构。
 
-#### &#x20;**Important: Supplier-Specific Training**
+#### &#x20;**重要：供应商专属训练**
 
-Table training is **specific to each supplier**. If you train a table layout for one supplier, the rules apply only to that supplier’s documents.\
-Other suppliers will continue to use AI-based table extraction unless trained separately.
+表格训练**针对每个供应商单独设置**。如果您为某个供应商训练了表格布局，这些规则仅适用于该供应商的文档。\
+其他供应商仍会使用基于 AI 的表格提取功能，除非您也为他们单独进行训练。
 
-#### When Should You Use Table Training?
+#### 何时使用表格训练？
 
-Use Table Training **only when the document layout is stable**, and you want to ensure consistent, high-quality extraction. It is best suited for suppliers who:
+**仅在文档布局稳定**且您希望确保提取结果一致、质量上乘时，才使用表格训练。它最适合以下供应商：
 
-* Use a **fixed invoice format** over time.
-* Require **precise mapping** of line items to specific fields.
-* Are **high-volume suppliers**, where consistent automation is valuable.
+* 长期使用**固定的发票格式**。
+* 需要将行项目**精准映射**到特定字段。
+* 属于**高业务量供应商**，一致的自动化处理能带来价值。
 
-#### When Not to Use Table Training
+#### 何时不应使用表格训练
 
-Avoid using Table Training if:
+出现以下情况时，请避免使用表格训练：
 
-* The supplier **frequently changes their invoice layout** (e.g., every couple of months).
-* You do not regularly receive documents from that supplier.
-* The default AI extraction works **well enough** without manual training.
+* 供应商**经常更改发票布局**（例如，每隔几个月就更改一次）。
+* 您不经常收到该供应商的文档。
+* 默认 AI 提取效果已经**足够好**，无需手动训练。
 
-In such cases, retraining the table repeatedly would be inefficient and time-consuming.
-
-
-
-## How to use It:
-
-**Training Mode** is used to teach DocBits how to correctly extract line items from a specific supplier’s document layout.
-
-When you're in Training Mode, you define:
-
-* **Where the table is located** on the document.
-* **Which areas correspond to each column** (e.g., Quantity, Description, Unit Price).
-
-This mode creates a **reusable extraction template** for that supplier, so future documents with the same layout will be processed automatically — no need to retrain.
-
-**Key Characteristics:**
-
-* **Mapped columns are read-only** — you can’t manually change the text.
-* You **cannot add or delete rows**.
-* The focus is on **mapping positions**, not correcting values.
-* Once you’ve finished mapping the table and its columns, click **“Save Rules”** so DocBits learns and applies this training to similar documents from the same supplier.
+在这些情况下，反复重新训练表格会效率低下且耗费时间。
 
 
 
-**Correction Mode** allows you to **fix extraction errors** in the table data for the current document. It’s used when DocBits has already attempted to extract the table, but the results need small corrections.
+## 如何使用：
 
-Use Correction Mode when:
+**训练模式**用于教会 DocBits 如何从特定供应商的文档布局中正确提取行项目。
 
-* Some **values are missing or misaligned**.
-* An **empty or duplicate line** was extracted and needs to be removed.
+在训练模式下，您需要定义：
 
-**What You Can Do in Correction Mode:**
+* **表格在文档中的位置**。
+* **各区域对应的列**（例如，数量、描述、单价）。
 
-* **Manually adjust values** in mapped columns (e.g., fix misplacements).
-* **Delete rows** that shouldn’t be part of the table.
-* **Add rows** that were missed entirely during extraction.
+此模式会为该供应商创建一个**可重复使用的提取模板**，因此，后续具有相同布局的文档会自动处理，无需重新训练。
+
+**主要特征：**
+
+* **已映射的列为只读**——您无法手动更改其中的文本。
+* 您**无法添加或删除行**。
+* 重点在于**映射位置**，而不是更正数值。
+* 完成表格及其列的映射后，点击**“Save Rules”**，让 DocBits 学习并将此训练应用于该供应商的类似文档。
+
+
+
+**更正模式**用于更正当前文档表格数据中的**提取错误**。当 DocBits 已尝试提取表格，但结果需要进行少量更正时，请使用此模式。
+
+在以下情况下使用更正模式：
+
+* 某些**数值缺失或错位**。
+* 提取出了**空行或重复行**，需要将其删除。
+
+**在更正模式下可以执行的操作：**
+
+* **手动调整已映射列中的数值**（例如，修正错位的数值）。
+* **删除不应属于表格的行**。
+* **添加提取时完全遗漏的行**。

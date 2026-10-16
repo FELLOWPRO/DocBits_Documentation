@@ -1,341 +1,235 @@
-# Touchless Intelligence
+# 无接触智能
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/en.mp4" %}
 
-## Overview
+## 概览
 
-**Touchless Intelligence** answers two questions about your document processing:
+**无接触智能**回答有关文档处理的两个问题：
 
-1. **How many documents run through DocBits without anyone touching them?** This is your *touchless rate*.
-2. **Why do the others stop, and what should we change so that fewer stop?** This is the *diagnosis*.
+1. **有多少文档在 DocBits 中处理时无需任何人介入？**这就是您的*无接触率*。
+2. **其他文档为什么会停下来？我们应该做些什么来减少这种情况？**这就是*诊断*。
 
-It is a tab of the [Analytics Dashboard](analytics-dashboard.md). It does not add any work for your team: DocBits records what happens to every document in the processing pipeline and evaluates the result every 15 minutes.
+它是[分析仪表板](analytics-dashboard.md)中的一个标签页。它不会给团队增加任何工作：DocBits 会记录每份文档在处理管道中的情况，并每 15 分钟评估一次结果。
 
-<figure><img src="../.gitbook/assets/touchless-overview.png" alt="The Touchless Intelligence tab with five key figures, improvement suggestions and the touchless rate chart"><figcaption><p>The Touchless Intelligence tab. This view comes from a test organisation in which no document has reached a final outcome yet, so the rates show a dash (—). In your organisation the cards show real percentages.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-overview.png" alt="无接触智能标签页，显示五项关键指标、改进建议和无接触率图表"><figcaption><p>无接触智能标签页：关键指标、改进建议、随时间变化的无接触率，以及首次流失图表。示例组织使用演示数据；供应商名称均为虚构。</p></figcaption></figure>
 
-### What you can do with it
+### 您可以用它做什么
 
-| You want to… | Use | Example |
+| 您想要…… | 使用 | 示例 |
 | --- | --- | --- |
-| See how automated you are | The five **key figures** at the top | "63.2 % of our documents ran without a person last month" |
-| See the trend | **Touchless rate over time** | "The rate rose from 55 % to 68 % since we fixed supplier master data" |
-| Find out where documents get stuck | **Where touchless is lost first** | "Most documents stop at Field Validation" |
-| Decide which supplier to fix first | **Supplier opportunities** | "Supplier A would give us +4.0 percentage points" |
-| Understand one supplier | **Supplier Diagnosis** page | "Their invoices have no PO number, so PO matching fails" |
-| Understand one document | **Document Trace** | "This invoice stopped at stage 8, Field Validation" |
-| Compare suppliers | **Compare suppliers** | "Supplier A and B use the same template, but only B fails" |
-| Change a setting that helps | **Change proposals** | "Switch on automatic PO match: preview, apply, measure, undo" |
+| 查看自动化程度 | 顶部的五项**关键指标** | “上个月，我们有 63.2% 的文档无需人工介入便完成处理” |
+| 查看趋势 | **随时间变化的无接触率** | “修复供应商主数据后，无接触率从 55% 升至 68%” |
+| 找出文档卡住的位置 | **无接触处理首次流失的位置** | “大多数文档停在字段验证阶段” |
+| 决定先修复哪个供应商 | **供应商改进机会** | “修复供应商 A 可提升 4.0 个百分点” |
+| 了解某个供应商的情况 | **供应商诊断**页面 | “他们的发票没有 PO 编号，因此 PO 匹配失败” |
+| 了解某份文档的情况 | **文档追踪** | “这份发票停在第 8 阶段：字段验证” |
+| 比较供应商 | **比较供应商** | “供应商 A 和 B 使用相同模板，但只有 B 会失败” |
+| 更改有助于改善结果的设置 | **更改提案** | “启用自动 PO 匹配：预览、应用、衡量、撤销” |
 
-## Who can see it
+## 谁可以查看
 
-* The tab is part of the Analytics Dashboard. Your administrator enables it for the organisation. If the tab is missing, ask your administrator.
-* **Organisation administrators** always see it.
-* Other users see it when an administrator granted their role the **Analytics dashboard** tab (**Settings → Roles**). Without a grant, only administrators have access.
-* Some actions are for administrators only: **AI analysis**, **applying and undoing a change**, **learned rule proposals** and the **Consulting report**.
+* 此标签页属于分析仪表板。管理员可以为组织启用它。如果您看不到此标签页，请联系管理员。
+* **组织管理员**始终可以查看。
+* 如果管理员在**设置 → 角色**中为用户角色授予了**分析仪表板**标签页权限，其他用户也可以查看。未获授权时，只有管理员可以访问。
+* 某些操作仅限管理员使用：**AI 分析**、**应用和撤销更改**、**已学习的规则提案**以及**咨询报告**。
 
-If you are not allowed, the page shows *Action not allowed, please contact the administrator*.
+如果您没有权限，页面会显示*不允许执行此操作，请联系管理员*。
 
-## What "touchless" means
+## “无接触”的含义
 
-Every document ends in exactly **one** outcome:
+每份文档最终都会归入**一个**结果：
 
-| Outcome | Meaning | Counts in the rate |
+| 结果 | 含义 | 是否计入无接触率 |
 | --- | --- | --- |
-| **Pure touchless** | Processed from import to export with **no human involvement at all** | Yes, as a success |
-| **AP touchless** | Ran automatically, and a person only gave the **business approval**. No correction was needed | Yes, as a success |
-| **AP assisted** | A person had to **correct a field, restart the document** or otherwise step in | Yes, as a miss. It is not a failure, only automation that did not fully carry the document |
-| **Process exception** | Ended in an **error**, was **rejected**, was **refused by the ERP**, or **stalled** in the pipeline | Yes, as a miss |
-| **In progress** | Not finished yet | **No**. It has no outcome yet |
-| **Not eligible** | Deleted, archived, a test document, or an excluded document type | **No** |
+| **纯无接触** | 从导入到导出，全程处理，**完全没有人工介入** | 是，计为成功 |
+| **AP 无接触** | 自动处理完成，只有业务审批需要人工参与；无需更正 | 是，计为成功 |
+| **AP 辅助处理** | 需要人工**更正字段、重新启动文档**或以其他方式介入 | 是，计为未达成。这不代表处理失败，只表示自动化未能完整处理该文档 |
+| **流程异常** | 以**错误**结束、被**拒绝**、被 ERP **拒收**，或在处理管道中**停滞** | 是，计为未达成 |
+| **处理中** | 尚未完成 | **否**。尚无最终结果 |
+| **不符合条件** | 已删除、已归档、属于测试文档，或属于排除的文档类型 | **否** |
 
-The **touchless rate** is:
+**无接触率**为：
 
 ```
 rate = (Pure touchless + AP touchless)
        ÷ (Pure touchless + AP touchless + AP assisted + Process exception)
 ```
 
-Documents that are still **in progress** or **not eligible** are never in the calculation. This protects the rate: a document that arrived five minutes ago cannot pull it down.
+**处理中**或**不符合条件**的文档永远不会计入计算。这样可以避免影响无接触率：刚刚到达五分钟的文档不会拉低比率。
 
 {% hint style="info" %}
-**One touch counts for good.** Once a person has touched a document, it stays counted as touched, even if a later automatic run would have needed nobody. **Restarting a document does not make it touchless again.** The rate reflects the work that happened.
+**人工介入一次，就会一直计为已介入。**一旦有人处理过某份文档，即使之后自动运行时无需人工参与，它仍会被计为已介入。**重新启动文档不会让它重新变成无接触。**无接触率反映的是实际发生的工作。
 {% endhint %}
 
-### Example calculation (illustrative numbers)
+### 计算示例（数字仅供说明）
 
-In 30 days, 200 documents arrived:
+30 天内，共收到 200 份文档：
 
-| Outcome | Documents |
+| 结果 | 文档数 |
 | --- | --- |
-| Pure touchless | 120 |
-| AP touchless | 30 |
-| AP assisted | 30 |
-| Process exception | 10 |
-| In progress | 8 |
-| Not eligible (test documents) | 2 |
+| 纯无接触 | 120 |
+| AP 无接触 | 30 |
+| AP 辅助处理 | 30 |
+| 流程异常 | 10 |
+| 处理中 | 8 |
+| 不符合条件（测试文档） | 2 |
 
-* Denominator: 120 + 30 + 30 + 10 = **190**. The 8 in-progress and 2 not-eligible documents are left out.
-* **Pure touchless**: 120 ÷ 190 = **63.2 %**
-* **AP touchless**: 30 ÷ 190 = **15.8 %**
-* **Touchless rate**: (120 + 30) ÷ 190 = **78.9 %**
+* 分母：120 + 30 + 30 + 10 = **190**。8 份处理中和 2 份不符合条件的文档不计入。
+* **纯无接触**：120 ÷ 190 = **63.2%**
+* **AP 无接触**：30 ÷ 190 = **15.8%**
+* **无接触率**：(120 + 30) ÷ 190 = **78.9%**
 
-The tab shows a **target** (70 % unless your organisation uses a different one). In this example the rate is above the target.
+此标签页会显示一个**目标值**（默认为 70%，除非您的组织使用了其他目标值）。在此示例中，无接触率高于目标值。
 
-Click **How touchless is calculated** at the top right to open this explanation inside DocBits, with the numbers of your own period (documents in period, still in progress, excluded, measured).
+点击右上角的**无接触率的计算方式**，即可在 DocBits 中打开此说明，并查看您所选期间的实际数字（期间内文档数、仍在处理中的文档数、已排除文档数和已测量文档数）。
 
-<figure><img src="../.gitbook/assets/touchless-methodology.png" alt="The drawer How touchless is calculated with the six outcomes and the numbers of the period"><figcaption><p>The drawer <strong>How touchless is calculated</strong>: the formula, "Your numbers in this period" and what each outcome means.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-methodology.png" alt="无接触率的计算方式侧边栏，显示此期间的数字"><figcaption><p>**无接触率的计算方式**侧边栏：计算公式、**您在此期间的数据**（此处为 2,425 份文档、2,115 份仍在处理、310 份已测量）以及各项结果的含义。示例组织使用演示数据；供应商名称均为虚构。</p></figcaption></figure>
 
-### How current are the numbers
+### 数据的时效性
 
-Outcomes are **recalculated every 15 minutes**. A document's outcome can still change after it first appears: the ERP may confirm an export hours later. The line **Data as of …** at the bottom of the tab shows when the numbers were last computed.
+系统会**每 15 分钟重新计算一次**处理结果。文档首次显示后，其结果仍可能发生变化：ERP 可能会在数小时后确认导出。标签页底部的**数据截至……**一行会显示最近一次计算时间。
 
-## The overview tab
+## 概览标签页
 
-### Filters
+### 筛选条件
 
-| Filter | What it does |
+| 筛选条件 | 作用 |
 | --- | --- |
-| **7D / 30D / 90D** | The period for the key figures and the queue. The default is 30 days |
-| **Document Type** | Restricts every number to one type, for example INVOICE |
-| **Segment field / Segment value** | Only if your organisation runs several processes through one document type (for example direct, indirect and EAM orders in the field `order_type`). Pick a field to see the breakdown, pick a value to narrow everything to it |
-| **Document ID** | Opens the **Document Trace** for one document |
+| **7D / 30D / 90D** | 关键指标和队列所用的统计期间。默认值为 30 天 |
+| **文档类型** | 将所有数字限制为一种类型，例如 INVOICE |
+| **分段字段 / 分段值** | 仅适用于组织通过一种文档类型运行多种流程的情况（例如在 `order_type` 字段中区分直接订单、间接订单和 EAM 订单）。选择字段可查看细分情况；选择一个值可将所有数据限定为该值 |
+| **文档 ID** | 打开某份文档的**文档追踪** |
 
-The **sub-organisation** you selected at the top of DocBits narrows the key figures and the supplier queue. Issue clusters and the AI analysis always cover the whole organisation.
+您在 DocBits 顶部选择的**子组织**会缩小关键指标和供应商队列的范围。问题集群和 AI 分析始终覆盖整个组织。
 
-### The five key figures
+### 五项关键指标
 
-<figure><img src="../.gitbook/assets/touchless-kpi-cards.png" alt="The five key figures: Pure touchless, AP touchless, AP assisted, Process exceptions and Diagnosis coverage"><figcaption><p>The five key figures. Each one links to the documents behind the number.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-kpi-cards.png" alt="五项关键指标：纯无接触、AP 无接触、AP 辅助处理、流程异常和诊断覆盖率"><figcaption><p>五项关键指标。此处的纯无接触率为 50.3%（156 份文档），比 70% 的目标值低 19.7 个百分点，诊断覆盖率为 100%。示例组织使用演示数据；供应商名称均为虚构。</p></figcaption></figure>
 
-| Card | Shows | Example (illustrative) |
+| 卡片 | 显示内容 | 示例（仅供说明） |
 | --- | --- | --- |
-| **Pure touchless** | The percentage and the difference to the target | **63.2 %** · "120 documents" · "−6.8 pp vs 70 % target" (red, below target) |
-| **AP touchless** | The percentage | **15.8 %** · "30 documents" |
-| **AP assisted** | The number of documents and their share | **30** · 15.8 % |
-| **Process exceptions** | The number of documents and their share | **10** · 5.3 % |
-| **Diagnosis coverage** | How many blocked documents have a **known** cause | **80 %** · "10 without a known cause" |
+| **纯无接触** | 百分比和与目标值的差距 | **63.2%** · “120 份文档” · “比 70% 的目标值低 6.8 个百分点”（低于目标值时显示为红色） |
+| **AP 无接触** | 百分比 | **15.8%** · “30 份文档” |
+| **AP 辅助处理** | 文档数及其占比 | **30** · 15.8% |
+| **流程异常** | 文档数及其占比 | **10** · 5.3% |
+| **诊断覆盖率** | 有**已知**原因的受阻文档数量占比 | **80%** · “10 份文档的原因未知” |
 
-* A card shows a dash (—) instead of **0 %** when there is nothing to measure. A dash means "no data", not "zero".
-* **Diagnosis coverage** = documents with a known blocking reason ÷ all blocked documents. Example: 50 blocked documents, 10 with an unknown cause → 40 ÷ 50 = **80 %**. A low value means "we do not yet understand why documents stop". Improve it before you try to fix individual causes.
-* **Click a card** to open the document list behind the number in a new tab ("View the documents behind this number"). Cards with 0 documents are not clickable.
+* 没有可测量数据时，卡片会显示破折号（—），而不是 **0%**。破折号表示“无数据”，并非“零”。
+* **诊断覆盖率** = 原因已知的文档数 ÷ 所有受阻文档数。示例：50 份受阻文档中，10 份原因未知 → 40 ÷ 50 = **80%**。数值较低表示“我们还不了解文档为何停下”。在尝试修复具体原因之前，应先提高诊断覆盖率。
+* **点击卡片**可在新标签页中打开该数字对应的文档列表（“查看此数字对应的文档”）。文档数为 0 的卡片不可点击。
 
-### Touchless rate over time
+### 随时间变化的无接触率
 
-A chart with one line for **Pure touchless**, one for **AP touchless** and the **target line**. Short periods show daily points, long periods weekly points.
+<figure><img src="../.gitbook/assets/touchless-trend.png" alt="折线图，按天显示纯无接触率和 AP 无接触率，并标出 70% 的目标线"><figcaption><p>按天显示的无接触率和目标线。此处的比率保持在 40% 到 60% 之间，并从 10 月 10 日起大幅下降。示例组织使用演示数据；供应商名称均为虚构。</p></figcaption></figure>
 
-**Example.** After you switched on automatic PO matching on 1 October, the pure rate climbs from 55 % to 68 % within two weeks. The chart shows the day the curve turns, so you can match it to your change.
+图表中有一条**纯无接触**折线、一条 **AP 无接触**折线和一条**目标线**。较短的统计期间按天显示数据点，较长的统计期间按周显示数据点。
 
-### Where touchless is lost first
+**示例。**10 月 1 日启用自动 PO 匹配后，纯无接触率在两周内从 55% 上升至 68%。图表会显示曲线开始转向的日期，便于您将趋势与所做更改对应起来。
 
-A bar chart of **Blocked documents** per pipeline stage: the **first** stage that stopped a document.
+### 无接触处理首次流失的位置
 
-**Example.** Bars: Supplier Identification 12, Field Validation 41, PO Line Match 7. The biggest bar tells you to look at **Field Validation** first, usually because a required field is not extracted.
+<figure><img src="../.gitbook/assets/touchless-blocking-stages.png" alt="条形图，按首次受阻阶段和原因显示受阻文档数"><figcaption><p>按文档首次停下的阶段和原因显示受阻文档数。此处，**字段验证：缺少必填字段**导致的文档损失最多（58 份），其次是**导出映射失败**（46 份）和 **PO 行项目不匹配**（27 份）。示例组织使用演示数据；供应商名称均为虚构。</p></figcaption></figure>
 
-### Supplier opportunities
+此条形图按处理管道阶段显示**受阻文档**数量：每份文档**首次**停下的阶段。
 
-<figure><img src="../.gitbook/assets/touchless-supplier-queue.png" alt="The Supplier opportunities table with supplier, volume, pure rate, lost documents, root cause, recoverable, expected lift, confidence and status"><figcaption><p>The supplier queue. In a real organisation it is sorted by the documents you can win back.</p></figcaption></figure>
+**示例。**条形图数据：供应商识别 12 份、字段验证 41 份、PO 行项目匹配 7 份。最高的柱形提示您应先检查**字段验证**，通常是因为某个必填字段未被提取。
 
-The queue answers **"Which supplier should we fix first?"** It is sorted by **Recoverable** documents, highest first, 25 rows per page.
+### 供应商改进机会
 
-| Column | Meaning |
+<figure><img src="../.gitbook/assets/touchless-supplier-queue.png" alt="供应商改进机会表，显示业务量、纯无接触率、流失文档数、根本原因、可挽回文档数、预期提升、置信度和状态"><figcaption><p>供应商队列（仅显示前四行）。排名第一的供应商有 106 份文档，纯无接触率为 38.7%，有 65 份文档可挽回，因此修复该供应商可提升<strong>21 个百分点</strong>。示例组织使用演示数据；供应商名称均为虚构。</p></figcaption></figure>
+
+此队列回答**“我们应该先修复哪个供应商？”**它按**可挽回文档数**从高到低排序，每页显示 25 行。
+
+| 列 | 含义 |
 | --- | --- |
-| **Supplier Number / Supplier** | The supplier. Documents without a recognised supplier appear as **No supplier identified (n documents)** |
-| **Volume** | Eligible documents of the supplier in the period |
-| **Pure Rate** | Share of pure touchless documents. Green if at or above the target, red if below |
-| **Lost Documents** | Documents that ended as AP assisted or as a process exception. Not always a person: an ERP rejection or a document that stalled for seven days counts too |
-| **Root Cause** | Who owns the fix: Configuration, ERP integration, Export, Extraction, Master data, Measurement, PO matching, User process, Validation or Unknown |
-| **Recoverable** | Lost documents whose cause DocBits can fix: configuration, master data or supplier template |
-| **Expected Lift** | How many **percentage points** your organisation's rate would gain if every recoverable document of this supplier ran touchless (**+x pp**) |
-| **Confidence** | **High**, **Medium** or **Low**: how sure the diagnosis is |
-| **Status** | New, Open, Investigating, In progress, Confirmed, Resolved, Dismissed. A supplier with too few documents shows **NEEDS_DIAGNOSIS** |
+| **供应商编号 / 供应商** | 供应商信息。无法识别供应商的文档会显示为**未识别供应商（n 份文档）** |
+| **文档量** | 此供应商在所选期间内符合条件的文档数 |
+| **纯无接触率** | 纯无接触文档的占比。达到或超过目标值时显示为绿色；低于目标值时显示为红色 |
+| **流失文档数** | 以 AP 辅助处理或流程异常结束的文档数。流失并不总是由人工介入造成：ERP 拒收或在处理管道中停滞七天的文档也会计入 |
+| **根本原因** | 修复方：配置、ERP 集成、导出、提取、主数据、测量、PO 匹配、用户流程、验证或未知 |
+| **可挽回文档数** | 根本原因属于 DocBits 可修复范围的流失文档数：配置、主数据或供应商模板 |
+| **预期提升** | 如果该供应商所有可挽回文档都能无接触处理，贵组织的无接触率预计可提升多少**个百分点**（**+x 个百分点**） |
+| **置信度** | **高**、**中**或**低**：对诊断结果的确定程度 |
+| **状态** | 新建、已打开、调查中、处理中、已确认、已解决、已忽略。文档数太少的供应商会显示 **NEEDS_DIAGNOSIS** |
 
-**Example.** Your organisation has 1,000 eligible documents in the period. Supplier A has 40 recoverable documents, Supplier B has 90 lost documents but only 10 recoverable (their problem is on their side).
+**示例。**所选期间内，贵组织有 1,000 份符合条件的文档。供应商 A 有 40 份可挽回文档；供应商 B 有 90 份流失文档，但只有 10 份可挽回（问题出在供应商一方）。
 
-* Supplier A: 40 ÷ 1,000 = **+4.0 pp expected lift**
-* Supplier B: 10 ÷ 1,000 = **+1.0 pp**, although B has more lost documents
+* 供应商 A：40 ÷ 1,000 = **预期提升 4.0 个百分点**
+* 供应商 B：10 ÷ 1,000 = **预期提升 1.0 个百分点**，尽管 B 的流失文档更多
 
-The queue ranks A above B because **expected lift** is measured against your whole organisation, not against the supplier. A supplier with four bad documents cannot outrank one with four hundred.
+队列将 A 排在 B 前面，因为**预期提升**是以整个组织为基准衡量，而不是以单个供应商为基准。出现 4 份问题文档的供应商，不能排在出现 400 份问题文档的供应商前面。
 
-Use the search box ("Search supplier number or name") to find a supplier. Click a row to open the **Supplier Diagnosis**.
+使用搜索框（“搜索供应商编号或名称”）查找供应商。点击某一行可打开该供应商的**供应商诊断**。
 
-### Compare suppliers
+### 比较供应商
 
-Click **Compare suppliers**, tick **two to five** suppliers (each is listed with its number of blocked documents) and click **Compare**.
+<figure><img src="../.gitbook/assets/touchless-compare-suppliers.png" alt="比较供应商页面，显示并排对比的三家供应商和结果条形图"><figcaption><p>三家供应商并排显示：纯无接触率、流失和可挽回文档数、根本原因、预期提升，以及结果条形图。每个**打开**链接都会跳转到相应的供应商诊断。示例组织使用演示数据；供应商名称均为虚构。</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/touchless-compare-suppliers.png" alt="The dialog Compare suppliers with a searchable list of suppliers and a Compare button"><figcaption><p>Choose up to five suppliers. The button shows how many you picked, for example <strong>Compare 3</strong>.</p></figcaption></figure>
+点击**比较供应商**，勾选**两到五家**供应商（每家都会列出受阻文档数），然后点击**比较**。
 
-The comparison shows the suppliers side by side: **Pure rate**, **Lost documents**, **Recoverable**, **Root cause**, **Expected lift**, a bar chart of the outcomes, and a link to each **Supplier Diagnosis**.
+页面会并排显示供应商的**纯无接触率**、**流失文档数**、**可挽回文档数**、**根本原因**、**预期提升**、结果条形图，以及指向各供应商**供应商诊断**的链接。
 
-**Example.** Supplier A and B send the same invoice layout. B has a pure rate of 80 %, A only 35 %. Both have the root cause "Master data". The comparison shows that the layout is fine and that A's supplier record is incomplete. Fix A's master data instead of changing the template.
+**示例。**供应商 A 和 B 发送相同版式的发票。B 的纯无接触率为 80%，A 只有 35%。两者的根本原因都是“主数据”。比较结果表明发票版式没有问题，A 的供应商记录不完整。请修复 A 的主数据，而不是更改模板。
 
-### Analyse with AI
+### 使用 AI 分析
 
-The button **Analyse n clusters with AI** analyses the issue clusters with the highest touchless potential (at least a minimum number of documents each). It takes about 13 seconds per cluster and covers the **whole organisation**. Only administrators can start it.
+**使用 AI 分析 n 个集群**按钮会分析无接触处理潜力最高的问题集群（每个集群至少包含规定数量的文档）。每个集群约需 13 秒，并覆盖**整个组织**。只有管理员可以启动分析。
 
-While it runs you see **Queued**, **Running**, **Done**, **Already analysed** or **Error** for each cluster, with a link **Open cluster**. If AI is switched off or not configured in the environment, the button is disabled with the reason, and **everything else on the page keeps working**.
+分析运行期间，每个集群都会显示**排队中**、**运行中**、**已完成**、**已分析**或**错误**，并提供**打开集群**链接。如果环境中已关闭 AI 或尚未配置 AI，该按钮会显示为禁用状态并说明原因，且**页面上的其他功能仍可正常使用**。
 
-## Supplier Diagnosis
+## 深入了解
 
-Click a supplier in the queue to open its diagnosis page.
-
-<figure><img src="../.gitbook/assets/touchless-supplier-detail.png" alt="The Supplier Diagnosis page with the outcome tiles, the trend chart and the issue clusters"><figcaption><p>The Supplier Diagnosis page of one supplier: outcome tiles, trend, issue clusters, change history and recent examples. This test supplier has no evaluated documents yet.</p></figcaption></figure>
-
-The page shows:
-
-* **Six outcome tiles** (Pure touchless, AP touchless, AP assisted, Process exception, In progress, Not eligible), each linked to the documents.
-* **The trend** with its own period selector: 30 days, 90 days, 6 months, 1 year or a custom range (up to two years). This changes the chart only.
-* **Issue clusters** (see below).
-* **Change history**: the changes you applied for this supplier and what they did.
-* **Recent examples**: sample documents, in two tabs: **Needed attention** and **Went touchless**.
-* **Diagnose supplier with AI**: analyses all clusters of the supplier (administrators).
-
-A short note explains an empty page, for example: *5 documents from this supplier are still being processed and have no analysis result yet.* or *All 40 completed documents from this supplier ran touchless: there is nothing to diagnose.*
-
-### Issue clusters
-
-A **cluster** groups the documents of one supplier that stopped for the **same first reason**. Instead of 40 single problems you see "3 problems".
-
-**Example cluster (illustrative).**
-
-* **Headline**: *Required field missing* at stage *Field Validation*
-* **Affected**: 28 documents. **Recoverable**: 28 documents. **Expected lift**: +2.8 pp
-* **Suspected cause**: the supplier prints the PO number below the table, where the extraction does not look
-* **What to change**: *Master data change*: add the layout of this supplier. **Open** takes you to the right settings page
-* **Owner**: Consultant. **Confidence**: Medium. **Source**: Hypothesis
-
-What a cluster card shows:
-
-| Part | Meaning |
+| 页面 | 内容 |
 | --- | --- |
-| **First blocker** and **stage** | The reason and the pipeline stage where the documents stop. There are more than 30 reasons, for example *Supplier not identified*, *Purchase order not found*, *Unit price outside PO tolerance*, *Rejected by the ERP*, *E-invoice validation failed* |
-| **Affected / Recoverable / Expected lift** | How many documents, how many can be won back, how many percentage points it would give |
-| **Suspected cause / Confirmed cause** | What DocBits thinks (or a person confirmed) is the reason |
-| **Evidence** and **Missing evidence** | What the finding is based on, and what DocBits could **not** establish. Read **Missing evidence** before you trust the rest |
-| **What to change** | Concrete steps with **Open** links to the settings. A chip tells the type: *Configuration change*, *Master data change*, *Supplier template change*, *Process change*, *Supplier action needed*, *Not fixable* |
-| **Owner** | DocBits, Customer, Consultant, Supplier or Unassigned |
-| **Sample documents** | Real documents of the cluster to look at |
+| [供应商诊断和问题集群](touchless-supplier-diagnosis.md) | 深入了解单个供应商：结果卡片、趋势、问题集群，以及建议的来源 |
+| [PO 匹配诊断](touchless-po-matching-diagnosis.md) | 了解文档为何停在 PO 查找或 PO 行项目匹配阶段，以及 DocBits 如何将发票行项目与 PO 行项目匹配的决策流程 |
+| [文档追踪](touchless-document-trace.md) | 逐阶段查看一份文档的处理情况 |
+| [更改提案和报告](touchless-change-proposals.md) | 预览、应用、衡量和撤销更改；已学习的规则提案；咨询报告 |
 
-**Fixable in DocBits** and **Supplier action only** are shown in two groups. For *Supplier action only* nothing in DocBits changes the result: the supplier has to correct the document and send it again.
+## 使用无接触智能：日常流程
 
-### Where does a recommendation come from
+1. **每周**：打开标签页，根据目标值检查**无接触率**和**趋势**。
+2. 查看**诊断覆盖率**。低于约 80% 时，先查明文档停止的原因。
+3. 阅读**无接触处理首次流失的位置**，并选出数量最多的阶段。
+4. 打开**供应商改进机会**。按**预期提升**排序，选择状态为 **RECOVERABLE** 的排名第一的供应商。
+5. 阅读**问题集群**，检查**缺失证据**，然后按照**需要更改的内容**操作。
+6. 每次只应用一项更改，并先进行**预览**，以便**更改历史记录**能够衡量更改的效果。
+7. 两周后查看**更改前后**的结果。
 
-Every cause shows its **source**, so you can tell a derived finding from a guess:
+## 使用自然语言提问：DocBits MCP
 
-| Source | Meaning |
-| --- | --- |
-| **Deterministic** / **Rule-based** | A rule derived it from the recorded pipeline evidence. No language model was involved |
-| **Hypothesis** | A language model proposed it from the cluster evidence. Treat it as a lead and check it before you act |
-| **Confirmed** | A person reviewed the evidence and confirmed the cause |
+通过 [DocBits MCP](../advanced-functions-and-tools/docbits-mcp/README.md)，您的 AI 助手也可以访问以上所有信息。您可以这样提问：
 
-AI texts are written in your organisation's language. If a cluster was analysed in another language, use **Analyse in this language**.
+* “我们过去 30 天的无接触率是多少？”
+* “哪三家供应商导致我们损失的无接触文档最多？”
+* “为什么处理这家供应商的文档时需要人工介入？”
+* “这份文档的 PO 匹配为什么失败？”
 
-### PO matching decision flow
+## 常见问题
 
-For clusters about **PO matching**, the card shows how DocBits tries to match an invoice line to a purchase order line, as a diagram:
+**无接触率显示为破折号（—）。**\
+所选期间内没有文档达到最终结果，或已测量的文档数低于最低要求。仍在处理中的文档不计入。
 
-1. **Single match validation**: apply the rules in order of priority
-2. **Multi match validation**: after a single match, when several lines are involved
-3. **Total match validation**: only when nothing matched at all (PO line total against the sum of the table lines)
-4. **Single mismatch validation**: the unit price is ignored
-5. **Fallback logic**: one PO line and one table line are left, so they are paired
+**看不到该标签页。**\
+请联系管理员启用此模块，并为您的角色授予**分析仪表板**标签页权限。
 
-Inside the stages DocBits tries **Exact match for all rules**, then **Tolerance-based match**, then **Package criteria**. Each step asks *Match found?* **Yes** leads to **Match found**, **No match** moves on to the next step and, at the end, to **No match found**. The header lists the **rule set version**, who owns it and the **tolerances** (**Unit price tolerance**, **Quantity tolerance**).
+**文档被计为已介入，但这次处理时没有人参与。**\
+该文档在之前的运行中曾有人介入（例如进行过更正或重新启动）。无接触率会统计实际发生的工作。
 
-**Example.** An invoice line has a unit price of 10.40, the PO line says 10.00, the price tolerance is 5 %. The exact match fails, the tolerance match succeeds (4 % difference), the line is matched. With a tolerance of 3 % it fails, and the document stops with *Unit price outside PO tolerance*. The diagram shows exactly this path.
+**为什么数字会在几小时后发生变化？**\
+ERP 可能会在导出发送数小时后确认导出。系统每 15 分钟重新计算一次结果。
 
-## Change proposals: preview, apply, measure, undo
+**AI 会自行更改任何内容吗？**\
+不会。AI 只会生成说明。只有管理员预览并应用后，设置才会发生变化。
 
-A recommendation can come with a **change proposal**, a single setting change that should help. Administrators work with it in four steps:
+## 相关页面
 
-1. **Preview**: shows the change (current → proposed value) and what DocBits expects. Nothing is saved. **Apply** is only possible after you looked at a preview.
-2. **Apply**: saves exactly the previewed change. It is logged.
-3. **Measure**: DocBits compares the touchless rate of the same document type **before and after**, over equally long periods. At least **20 documents** are needed in each period, otherwise it says *not measurable*.
-4. **Undo**: takes the change back.
-
-{% hint style="warning" %}
-A before/after difference is an **observation**, not proof of cause. Other things can change at the same time (a new supplier, a seasonal peak).
-{% endhint %}
-
-**Example.** You apply *Switch on automatic PO match and export* for invoices. Two weeks later the **Change history** says: pure rate before 52 % (210 documents), after 61 % (198 documents). That is +9 pp, enough documents to be measurable.
-
-## Document Trace
-
-Enter a document ID in **Document ID**, or open a sample document from a cluster, to see **what happened to this one document**.
-
-<figure><img src="../.gitbook/assets/touchless-document-trace.png" alt="The Document Trace page with the 14-stage pipeline path and the stopped stage Field Validation"><figcaption><p>The Document Trace: the pipeline path with the stage where the document stopped, what that stage had in its hands, and the run history below.</p></figcaption></figure>
-
-The top shows the **pipeline path** with 14 stages: Intake, Classification, E-Document Validation, Supplier Identification, Text Recognition, Header Extraction, Table Extraction, Field Validation, PO Lookup, PO Line Match, Approval, Workflow Routing, Export, ERP Acknowledgement. Each box has a state:
-
-| State | Meaning |
-| --- | --- |
-| **passed** (green) | The stage ran fine |
-| **stopped here** (red) | The stage blocked the document |
-| **skipped or not applicable** | The stage does not apply to this document |
-| **not reached** | The document never got this far |
-| **unknown** (dashed) | Nothing was recorded for this stage |
-
-Below the path, a sentence names the cause. In the screenshot: *This document stopped at stage 8 "Field Validation", because a required field was not extracted.* The block **What this stage had in its hands** lists the facts: **Invalid field count 5** and the fields (`delivery_date`, `email`, `invoice_sub_type`, `payment_terms`, `supplier_id`), the rule (**REQUIRED**) and the validation codes. The block **Analysis** says whether it is **Rule-based** or AI-written.
-
-The **run history** below lists every run (**Run 1 · Initial run**, then each restart) with every stage and its recorded facts. If the document was corrected and restarted, a note reminds you that it **stays counted as touched**.
-
-**Example.** The documents of one supplier all stop at stage 8. In the trace you see the same five invalid fields every time. That is not an extraction problem of single documents, it is a missing default in your field configuration: fix it once and the whole cluster is recoverable.
-
-## Learned rule proposals and improvement requests
-
-Administrators also see two sections between the key figures and the charts:
-
-* **Improvement requests**: suggestions that users sent from the validation assistant, in two tabs **Open** and **History**.
-* **Learned rule proposals**: rules DocBits learned from your team's corrections, for example "for supplier X, replace the value in field Y". Before you create one, check the documents where it would replace a value your team had accepted. The section **After activation** shows the manual corrections of the target field before and after a rule went live.
-
-## Consulting report
-
-Administrators find the **Consulting report** at the bottom of the tab. Click **Create report** to load it. It combines, for your organisation:
-
-* the **changes with the biggest effect**, ranked, each with the domain, the problem, the recommended action, the number of documents and the **estimated** effect per month,
-* **the domain of every problem** (extraction, master data, PO matching, auto accounting, settings, process),
-* **table configuration checks**, for example *structured table output not used* or *table column type mismatch* per document type and column.
-
-The effect values are **estimates**. If the report answers *forbidden*, your role does not allow it.
-
-## Work with Touchless Intelligence: a routine
-
-1. **Weekly**: open the tab and check the **rate** and the **trend** against the target.
-2. Look at **Diagnosis coverage**. Below about 80 %, first find out why documents stop.
-3. Read **Where touchless is lost first** and pick the biggest stage.
-4. Open **Supplier opportunities**. Sort by **Expected lift** and take the top supplier with the status **RECOVERABLE**.
-5. Read the **issue clusters**, check **Missing evidence**, then follow **What to change**.
-6. Apply one change at a time with a **preview**, so the **Change history** can measure it.
-7. After two weeks check the **before/after** result.
-
-## Ask in plain language: DocBits MCP
-
-All of this is also available to your AI assistant through the [DocBits MCP](../advanced-functions-and-tools/docbits-mcp/README.md). Examples you can ask:
-
-* "What is our touchless rate for the last 30 days?"
-* "Which three suppliers cost us the most touchless documents?"
-* "Why do documents of this supplier stop for a human?"
-* "Why did the PO match fail for this document?"
-
-## FAQ
-
-**The rates show a dash (—).**
-No document has reached a final outcome in the period, or fewer documents than the minimum were measured. Documents that are still in progress are not counted.
-
-**The tab is missing.**
-Ask your administrator to enable the module and to grant your role the **Analytics dashboard** tab.
-
-**A document is counted as touched, but it ran through without anyone this time.**
-It was touched in an earlier run (a correction or a restart). The rate counts the work that happened.
-
-**Why does the number change after a few hours?**
-The ERP may confirm an export hours after it was sent. The outcome is recalculated every 15 minutes.
-
-**Does the AI change anything on its own?**
-No. AI writes explanations only. A setting changes only after an administrator previews and applies it.
-
-## Related pages
-
-* [Analytics Dashboard](analytics-dashboard.md)
-* [Settings Assistant](settings/global-settings/company-information/settings-assistant.md)
+* [供应商诊断和问题集群](touchless-supplier-diagnosis.md)
+* [PO 匹配诊断](touchless-po-matching-diagnosis.md)
+* [文档追踪](touchless-document-trace.md)
+* [更改提案和报告](touchless-change-proposals.md)
+* [分析仪表板](analytics-dashboard.md)
+* [设置助手](settings/global-settings/company-information/settings-assistant.md)
 * [DocBits MCP](../advanced-functions-and-tools/docbits-mcp/README.md)
 
-<!-- Source notes (not shown): facts read from the doc2app code (TouchlessIntelligence pages and components) and the dev UI on 14 Oct 2026; NOVA gates the tab with its own organisation flag, VESTA with the Analytics module. Screenshots are real but come from a test organisation without evaluated documents, so the figures show dashes; replace them with views from an organisation with data when available. Consulting report export format not verified, so no export is described. -->
+<!-- Source notes (not shown): facts read from the doc2app code (TouchlessIntelligence pages and components) and the dev UI on 14 Oct 2026; NOVA gates the tab with its own organisation flag, VESTA with the Analytics module. Screenshots come from the dev test organisation with synthetic demo data (seed script) and fictional supplier names. The consulting report export format is not verified, so no export is described. -->

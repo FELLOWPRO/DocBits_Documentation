@@ -1,37 +1,37 @@
-# Update Document Purchase Order Status
+# 更新文档采购订单状态
 
-This setting is for document types that use purchase orders. It controls whether a document can receive status updates from its linked purchase order. The switch is configured per document type. To see a PO status in the dashboard, the relevant field must also be available and visible as a column.
+此设置适用于使用采购订单的文档类型。它控制文档是否可以接收其关联采购订单的状态更新。此开关按文档类型配置。若要在仪表板中查看 PO 状态，相应字段也必须可用，并且已设为可见列。
 
-Before changing the setting, choose the correct organization and document type. You need administrator access to edit document type settings. A purchase order must be linked to a document before a status change can be checked.
+更改设置前，请选择正确的组织和文档类型。编辑文档类型设置需要管理员权限。要检查状态是否发生变化，必须先将采购订单关联到文档。
 
-## Turn on the setting
+## 开启此设置
 
-1. Open **Settings → Document Processing → Document Types**.
-2. Find the document type used for the PO-linked documents, such as **Invoice**, and select the gear on its card to open **More Settings**.
-3. Expand **Purchase Order**. Find **Update Document Purchase Order Status** and turn it on. The nearby help icon explains the option in the application. Changing this switch does not change the other PO settings in the same section.
+1. 打开 **设置 → 文档处理 → 文档类型**。
+2. 找到用于关联 PO 文档的文档类型，例如 **发票**，然后选择其卡片上的齿轮图标以打开 **更多设置**。
+3. 展开 **采购订单**。找到 **更新文档采购订单状态** 并将其开启。旁边的帮助图标会在应用中说明此选项。更改此开关不会影响同一部分中的其他 PO 设置。
 
-<figure><img src="../../../../../../.gitbook/assets/dbdc125_document_types_en.png" alt="Document Types page with the Invoice card and its More Settings gear"><figcaption>Open the settings for the document type you use.</figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/dbdc125_document_types_en.png" alt="文档类型页面，其中显示发票卡片及其“更多设置”齿轮图标"><figcaption>打开所用文档类型的设置。</figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/dbdc125_po_settings_en.png" alt="Purchase Order section of More Settings with Update Document Purchase Order Status switch"><figcaption>The status update switch in the Purchase Order settings.</figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/dbdc125_po_settings_en.png" alt="“更多设置”中的“采购订单”部分，其中包含“更新文档采购订单状态”开关"><figcaption>“采购订单”设置中的状态更新开关。</figcaption></figure>
 
-## Show a PO status on the dashboard
+## 在仪表板中显示 PO 状态
 
-1. Return to the dashboard and select the gear above the document table.
-2. Open **Columns settings** from the **Advanced settings** menu.
-3. Select **Add field from document type**, choose the document type, and search for **PO Status**. If that field is available, select it, choose **Add to visible columns**, then select **Done**.
+1. 返回仪表板，然后选择文档表格上方的齿轮图标。
+2. 在 **高级设置** 菜单中打开 **列设置**。
+3. 选择 **从文档类型添加字段**，选择文档类型，然后搜索 **PO 状态**。如果该字段可用，请选中它，选择 **添加到可见列**，然后选择 **完成**。
 
-The column dialog contains **Hidden columns** and **Visible columns**. Use the arrows to move a selected column between them. See [Change Document Columns](../../../../../../end-user-and-partner-section/end-user-section/dashboard/change-document-columns.md) for the full column guide. If **PO Status** is absent for the selected type, ask an administrator to check its field and lookup configuration; the display switch alone does not create a missing field.
+列对话框包含 **隐藏列** 和 **可见列**。使用箭头在两者之间移动选定的列。完整的列设置指南请参阅[更改文档列](../../../../../../end-user-and-partner-section/end-user-section/dashboard/change-document-columns.md)。如果所选类型中没有 **PO 状态**，请让管理员检查其字段和查找配置；仅开启显示开关不会创建缺失的字段。
 
-<figure><img src="../../../../../../.gitbook/assets/dbdc125_dashboard_columns_en.png" alt="Dashboard Columns settings dialog with Hidden columns, Visible columns, and Add field from document type"><figcaption>Choose which columns appear in the dashboard.</figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/dbdc125_dashboard_columns_en.png" alt="仪表板“列设置”对话框，其中包含“隐藏列”、“可见列”和“从文档类型添加字段”"><figcaption>选择要在仪表板中显示的列。</figcaption></figure>
 
-## Check the purchase order lookup
+## 检查采购订单查找
 
-In **Settings → Document Processing → Document Types → Fields → Master Data Settings**, expand **Lookup Master Data**, then **Purchase Order Header**. Check that the required PO field mapping exists and that the relevant lookup has **Auto Trigger** when automatic lookup is needed. The screenshot below shows the configuration list; its red crosses mean Auto Trigger is off for those example rows. It does not demonstrate an updated PO status.
+在 **设置 → 文档处理 → 文档类型 → 字段 → 主数据设置** 中，展开 **查找主数据**，然后展开 **采购订单抬头**。检查是否存在所需的 PO 字段映射；如果需要自动查找，还要确认相关查找已启用 **自动触发**。下方截图展示了配置列表；其中的红色叉号表示示例行已关闭“自动触发”。该截图并未展示 PO 状态已更新。
 
-<figure><img src="../../../../../../.gitbook/assets/dbdc125_lookup_po_header_en.png" alt="Purchase Order Header lookup configuration showing Searchable and Auto Trigger status for each field"><figcaption>Check the actual lookup rows for the document type.</figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/dbdc125_lookup_po_header_en.png" alt="采购订单抬头查找配置，显示每个字段的“可搜索”和“自动触发”状态"><figcaption>检查该文档类型对应的实际查找行。</figcaption></figure>
 
-For help setting up a lookup, see [Fuzzy Data Configuration with Master Data](../../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md).
+有关查找设置的帮助，请参阅[使用主数据配置模糊数据](../../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)。
 
-## Verify with a known document
+## 使用已知文档进行验证
 
-Use a document already linked to a test purchase order. Change that purchase order's status through your normal process, refresh the dashboard, and check the document and the visible PO status field. If the status does not update, check the document's PO link, the lookup configuration, and whether the relevant field was added to the dashboard. Do not infer a successful update from the switch alone.
+使用一份已关联到测试采购订单的文档。通过常规流程更改该采购订单的状态，刷新仪表板，然后检查文档及其可见的 PO 状态字段。如果状态未更新，请检查文档的 PO 关联、查找配置，以及相关字段是否已添加到仪表板。不要仅凭开关已开启就认定更新成功。

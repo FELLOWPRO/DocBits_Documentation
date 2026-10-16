@@ -1,30 +1,30 @@
-# Collect (min/max/count) Policy
+# 收集（最小值/最大值/计数）策略
 
-This policy collects all matching rules and either selects the **minimum**, **maximum**, or **counts** the occurrences. It only works for **Return Type Value**.
+此策略会收集所有匹配的规则，然后选择 **最小值**、**最大值**或对匹配项进行**计数**。它仅适用于 **Return Type Value**。
 
-**Example:**
+**示例：**
 
-| Rule | Condition            | Return Value |
-| ---- | -------------------- | ------------ |
-| 1    | Total Amount <= 1000 | 1            |
-| 2    | Total Amount <= 2000 | 2            |
-| 3    | Total Amount <= 3000 | 3            |
-| 4    | Total Amount <= 4000 | 4            |
-| 5    | Total Amount <= 5000 | 5            |
+| 规则 | 条件                  | 返回值 |
+| ---- | --------------------- | ------ |
+| 1    | Total Amount <= 1000  | 1      |
+| 2    | Total Amount <= 2000  | 2      |
+| 3    | Total Amount <= 3000  | 3      |
+| 4    | Total Amount <= 4000  | 4      |
+| 5    | Total Amount <= 5000  | 5      |
 
-1. If the **Collect (min)** option is selected, the result will return the **minimum** of the **Return Values** for the matching rules.
-   * For the input value of **Total Amount = 2500**, the evaluation of rules would be:
-     * **Rule 1**: Total Amount <= 1000 (does not match)
-     * **Rule 2**: Total Amount <= 2000 (does not match)
-     * **Rule 3**: Total Amount <= 3000 (matches, Return Value = 3)
-     * **Rule 4**: Total Amount <= 4000 (matches, Return Value = 4)
-     * **Rule 5**: Total Amount <= 5000 (matches, Return Value = 5)
-   * The **matching rules** are Rule 3, Rule 4, and Rule 5, with **Return Values** of **3, 4, and 5**.
-   * Since the **Collect (min)** policy is applied, the result will be the **minimum value**, which is **3**.
-   * **Result**: **3**
-2. If the **Collect (max)** option is selected, the result will return the **maximum** of the **Return Values** for the matching rules.
-   * For the same evaluation as above, the result will be:
-   * **Result**: **5**
-3. If the **Collect (count)** option is selected, the result will count the **number of matching rules**.
-   * For the same evaluation as above, the result will be:
-   * **Result**: **3** (since 3 rules matched).
+1. 如果选择 **Collect (min)** 选项，结果将返回匹配规则中 **Return Values** 的**最小值**。
+   * 输入值为 **Total Amount = 2500** 时，规则的评估结果如下：
+     * **规则 1**：Total Amount <= 1000（不匹配）
+     * **规则 2**：Total Amount <= 2000（不匹配）
+     * **规则 3**：Total Amount <= 3000（匹配，Return Value = 3）
+     * **规则 4**：Total Amount <= 4000（匹配，Return Value = 4）
+     * **规则 5**：Total Amount <= 5000（匹配，Return Value = 5）
+   * **匹配的规则**为规则 3、规则 4 和规则 5，其 **Return Values** 分别为 **3、4 和 5**。
+   * 由于应用了 **Collect (min)** 策略，结果将是**最小值**，即 **3**。
+   * **结果**：**3**
+2. 如果选择 **Collect (max)** 选项，结果将返回匹配规则中 **Return Values** 的**最大值**。
+   * 对于上述相同的评估，结果如下：
+   * **结果**：**5**
+3. 如果选择 **Collect (count)** 选项，结果将对**匹配规则的数量**进行计数。
+   * 对于上述相同的评估，结果如下：
+   * **结果**：**3**（因为有 3 条规则匹配）。

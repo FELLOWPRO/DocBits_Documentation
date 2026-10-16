@@ -1,44 +1,31 @@
-# Purpose and Use
+# 目的与用途
 
-## Proper configuration of fields in DocBits is critical to ensure that data can be captured, processed and stored correctly.&#x20;
+## 正确配置 DocBits 中的字段，对于确保数据能够被正确采集、处理和存储至关重要。
 
-<figure><img src="../../../../../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
 
-**Here are some reasons why this is important:**
+**以下是这项工作重要的几个原因：**
 
-**Data Integrity:**
+**数据完整性：**
 
-* Proper configuration of fields ensures that the data entered into the system is correct and meets the required standards.&#x20;
-* This helps to avoid errors and inaccuracies that could lead to incorrect analysis or decisions.
+* 正确配置字段可确保输入系统的数据准确无误，并符合所需标准。
+* 这有助于避免错误和不准确之处，以免导致错误的分析或决策。
 
+**数据一致性：**
 
+* 统一配置字段可确保以一致的方式采集数据，从而更便于比较和分析。
+* 例如，如果日期输入字段配置不当，允许使用不同的日期格式，就可能造成混淆和不一致。
 
-**Data Consistency:**
+**数据验证：**
 
-* Consistent field configuration ensures that data is captured in a uniform manner, making it easier to compare and analyze.&#x20;
-* For example, if a field for date inputs is incorrectly configured to allow different date formats, this can lead to confusion and inconsistencies.
+* 配置字段后，可以设置验证规则，确保只能输入有效数据。这有助于及早发现错误并提高数据质量。
 
+**数据处理效率：**
 
+* 准确配置字段有助于高效处理数据，因为系统能够更好地识别和处理数据，从而提高数据提取、转换和加载（ETL）的效率。
 
-**Data Validation:**
+**数据安全：**
 
-* Configuring fields allows validation rules to be set to ensure that only valid data can be entered. This helps to detect errors early and improve data quality.
+* 正确配置字段还有助于确保数据安全，例如通过加密或屏蔽敏感信息。
 
-
-
-**Data processing efficiency:**
-
-* Accurate configuration of fields enables efficient data processing as systems are better able to understand and process the data. This improves efficiency in data extraction, transformation, and loading (ETL).
-
-
-
-**Data security:**
-
-* Proper configuration of fields can also help ensure the security of data, for example by encrypting or masking sensitive information.
-
-
-
-Overall, accurate configuration of fields in DocBits is critical to ensure data quality, consistency, integrity, and security. It helps organizations make informed decisions by accessing reliable and accurate data.
-
-
-
+总之，准确配置 DocBits 中的字段对于确保数据质量、一致性、完整性和安全至关重要。组织可以通过访问可靠、准确的数据，做出明智的决策。

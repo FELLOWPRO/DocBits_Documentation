@@ -1,88 +1,88 @@
-# Document Script activation status
+# 文档脚本激活状态
 
-## Tabelle `public.document_script_activation_status`
+## 表 `public.document_script_activation_status`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `sort_order`: integer
-* `is_active`: boolean
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `script_id`: internal
+* `id`：内部标识
+* `org_id`：组织 ID
+* `sort_order`：整数
+* `is_active`：布尔值
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `script_id`：内部标识
 
-### Analyse & Beschreibung
+### 分析与描述
 
-## Table Documentation: `public.document_script_activation_status`
+## 表说明：`public.document_script_activation_status`
 
-### Introduction
+### 简介
 
-The `public.document_script_activation_status` table is designed to manage the activation status of scripts associated with documents within an organization. Each entry in the table corresponds to a specific script and its current activation status, potentially allowing organizations to control and organize the execution of scripts in relation to their documents.
+`public.document_script_activation_status` 表用于管理组织内与文档关联的脚本激活状态。表中的每条记录对应一个特定脚本及其当前激活状态，组织可借此控制和安排脚本与其文档相关的执行。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: This column stores a unique identifier for each entry in the table.
-* **Role**: Primary key.
-* **Typical Contents**: Universally unique identifier (UUID) such as `c599a3fa-a784-446a-a48e-cf37b95d93cd`.
-* **Note**: Ensures that each record is uniquely identifiable.
+* **含义**：此列存储表中每条记录的唯一标识符。
+* **作用**：主键。
+* **典型内容**：通用唯一标识符（UUID），例如 `c599a3fa-a784-446a-a48e-cf37b95d93cd`。
+* **说明**：确保每条记录都可被唯一识别。
 
 #### org\_id
 
-* **Meaning**: Represents the identifier for an organization.
-* **Role**: Foreign key, likely referencing an organization table.
-* **Typical Contents**: UUID that identifies the organization, e.g., `23f3d697-7411-4c95-981d-faf089d266be`.
-* **Note**: Links the script activation status to a specific organization.
+* **含义**：表示组织的标识符。
+* **作用**：外键，可能引用组织表。
+* **典型内容**：用于标识组织的 UUID，例如 `23f3d697-7411-4c95-981d-faf089d266be`。
+* **说明**：将脚本激活状态关联到特定组织。
 
 #### sort\_order
 
-* **Meaning**: Indicates the order in which scripts should be executed or displayed.
-* **Role**: Technical field.
-* **Typical Contents**: Integer values representing the sequence, such as `0`.
-* **Note**: May be used to prioritize or organize scripts.
+* **含义**：表示脚本的执行或显示顺序。
+* **作用**：技术字段。
+* **典型内容**：表示顺序的整数值，例如 `0`。
+* **说明**：可用于确定脚本优先级或整理脚本。
 
 #### is\_active
 
-* **Meaning**: Denotes whether a script is currently active.
-* **Role**: Technical field.
-* **Typical Contents**: Boolean values, `True` or `False`.
-* **Note**: Determines if the associated script should be executed.
+* **含义**：表示脚本当前是否处于激活状态。
+* **作用**：技术字段。
+* **典型内容**：布尔值，`True` 或 `False`。
+* **说明**：决定是否应执行关联的脚本。
 
 #### created\_by
 
-* **Meaning**: Identifier of the user who created the record.
-* **Role**: Foreign key, likely referencing a user table.
-* **Typical Contents**: Integer value representing a user ID, such as `1`.
-* **Note**: Tracks the creator of the record for auditing purposes.
+* **含义**：创建此记录的用户标识符。
+* **作用**：外键，可能引用用户表。
+* **典型内容**：表示用户 ID 的整数值，例如 `1`。
+* **说明**：记录创建者，以便进行审计。
 
 #### created\_on
 
-* **Meaning**: Timestamp of when the record was created.
-* **Role**: Technical field.
-* **Typical Contents**: Date and time with timezone, e.g., `2023-11-20 10:44:14.685170+00:00`.
-* **Note**: Provides a creation timestamp for record-keeping.
+* **含义**：记录的创建时间戳。
+* **作用**：技术字段。
+* **典型内容**：带时区的日期和时间，例如 `2023-11-20 10:44:14.685170+00:00`。
+* **说明**：提供记录创建时间，以供留存。
 
 #### last\_modified\_on
 
-* **Meaning**: Timestamp of the last modification to the record.
-* **Role**: Technical field.
-* **Typical Contents**: Date and time with timezone, or `None` if never modified.
-* **Note**: Useful for tracking changes over time.
+* **含义**：记录最后修改的时间戳。
+* **作用**：技术字段。
+* **典型内容**：带时区的日期和时间；如果从未修改，则为 `None`。
+* **说明**：有助于跟踪记录随时间发生的更改。
 
 #### is\_deleted
 
-* **Meaning**: Indicates whether the record is marked as deleted.
-* **Role**: Technical field.
-* **Typical Contents**: Boolean values, `True` or `False`.
-* **Note**: Allows soft deletion of records without physical removal from the database.
+* **含义**：表示记录是否已标记为删除。
+* **作用**：技术字段。
+* **典型内容**：布尔值，`True` 或 `False`。
+* **说明**：允许软删除记录，而不从数据库中实际移除记录。
 
 #### script\_id
 
-* **Meaning**: Identifier for the script associated with the record.
-* **Role**: Foreign key, likely referencing a script table.
-* **Typical Contents**: UUID that identifies the script, e.g., `4edc8cd7-e1bc-443a-9a23-dc490a09e80b`.
-* **Note**: Links the activation status to a specific script.
+* **含义**：与此记录关联的脚本标识符。
+* **作用**：外键，可能引用脚本表。
+* **典型内容**：用于标识脚本的 UUID，例如 `4edc8cd7-e1bc-443a-9a23-dc490a09e80b`。
+* **说明**：将激活状态关联到特定脚本。

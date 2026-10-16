@@ -1,33 +1,33 @@
-# Best practices
+# 最佳实践
 
-## Keep the default columns for amounts and quantities
+## 保留金额和数量的默认列
 
-The line-item checks (*quantity × unit price = line total*) and PO matching look for the default columns `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT`, `ITEM_NUMBER`. If you create your own columns for these values instead, the checks do not run and PO matching reports missing mandatory columns. Rename the *title* if the wording does not suit you; keep the column.
+行项目检查（*数量 × 单价 = 行项目总额*）和 PO 匹配会查找默认列 `QUANTITY`、`UNIT_PRICE`、`TOTAL_AMOUNT`、`ITEM_NUMBER`。如果你改为自行创建这些值的列，检查将不会运行，PO 匹配也会报告缺少必需列。如果列的措辞不合适，可以重命名 *标题*；但请保留该列。
 
-## Hide, don't delete
+## 隐藏，而非删除
 
-Default columns you do not need are hidden, not deleted; they cannot be deleted anyway. For your own columns, hiding is also the safer choice while you are not sure whether a script or an export mapping still references the column.
+不需要的默认列应隐藏，而不是删除；这些列本身也无法删除。对于自定义列，如果你还不确定脚本或导出映射是否仍引用该列，隐藏也是更安全的选择。
 
-## Mark as required only what blocks export
+## 仅将会阻止导出的列设为必填
 
-Every required column has to be filled in every row before a user can approve the document. Use it for values the ERP rejects when missing (for example the cost centre in an accounting export), not for values that are merely useful.
+在用户批准文档之前，每一行的所有必填列都必须填写。请将必填设置用于 ERP 缺少时会拒绝的值（例如会计导出中的成本中心），而不是仅仅有用的值。
 
-## Use *Read Only* for looked-up values
+## 对查找得到的值使用 *只读*
 
-Values that a script or a master-data lookup writes into the table (article description from the item master, tax code from the supplier) should be read-only, so users correct the source instead of the copy.
+由脚本或主数据查找写入表格的值（例如来自物料主数据的物料描述、来自供应商的税码）应设为只读，这样用户就会修正源数据，而不是副本。
 
-## Use AI per column, not per supplier
+## 按列使用 AI，而非按供应商使用
 
-For a supplier with trained rules, most columns come out right from the rules. If one column is unreliable (long descriptions that wrap, a discount that sometimes sits in a different place), set *Use AI* on that column only. The rules keep the rest.
+对于已配置训练规则的供应商，大多数列都能根据规则正确提取。如果某一列不可靠（例如换行的长描述，或有时出现在不同位置的折扣），只为该列设置 *使用 AI*。其余列仍由规则处理。
 
-## Name columns for the ERP, not for the document
+## 列名应对应 ERP，而非文档
 
-The *Column name* ends up in export mappings and scripts. `COST_CENTRE` is easier to map than `KST` and does not change when a supplier prints it differently.
+*列名* 最终会用于导出映射和脚本。`COST_CENTRE` 比 `KST` 更容易映射，而且不会因供应商以不同方式打印该值而改变。
 
-## Test on a restarted document
+## 在重启后的文档上测试
 
-After a change, restart one existing document of the document type and open it: the new column appears, the hidden one is gone, required cells are marked. Only then roll it out to users.
+更改后，重启一份该文档类型的现有文档并打开它：新列会显示，隐藏的列会消失，必填单元格会被标记。确认后再向用户推出。
 
-## One table per line-item structure
+## 每种行项目结构使用一张表
 
-Create a second table only when a document type really has two independent tables (for example item lines and a separate charges table). Extra empty tables show up on every document of the type.
+只有在某种文档类型确实包含两张相互独立的表时，才创建第二张表（例如行项目表和单独的费用表）。额外的空表会显示在该类型的每份文档中。

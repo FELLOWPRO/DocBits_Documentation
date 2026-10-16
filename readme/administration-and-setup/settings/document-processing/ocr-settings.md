@@ -1,65 +1,65 @@
-# OCR Settings
+# OCR 设置
 
 {% embed url="https://youtu.be/5XqEP-5fq6M" %}
-DocBits OCR & E-Text Explained: Settings, Quality & Header Extraction
+DocBits OCR 与电子文本说明：设置、质量与表头提取
 {% endembed %}
 
-## Overview
+## 概述
 
-In the **OCR (Optical Character Recognition)** settings, you can configure how OCR is applied during document processing. This includes specifying the minimum required quality, choosing whether to use embedded text (e-text), selecting the OCR version, and more. This page provides a detailed explanation of all available settings.
+在 **OCR（光学字符识别）** 设置中，您可以配置文档处理期间 OCR 的应用方式，包括指定最低质量要求、选择是否使用嵌入文本（电子文本）、选择 OCR 版本等。本页将详细介绍所有可用设置。
 
-## How to Access OCR Settings
+## 如何访问 OCR 设置
 
-To access the OCR settings:
+访问 OCR 设置：
 
-*   Navigate to: **Settings** → **Document Processing** → **OCR Settings**
+*   前往：**设置** → **文档处理** → **OCR 设置**
 
     <figure><img src="../../../.gitbook/assets/settings_ocr.png" alt=""><figcaption></figcaption></figure>
 
-## OCR Quality
+## OCR 质量
 
-In this section, you can set the minimum document quality required for OCR processing by adjusting the quality slider. Move the slider left or right to decrease or increase the quality threshold, respectively.
+在此部分，您可以通过调整质量滑块设置 OCR 处理所需的最低文档质量。向左或向右移动滑块可分别降低或提高质量阈值。
 
-If a document does not meet the defined quality level, DocBits provides three options for handling it:
+如果文档未达到设定的质量水平，DocBits 提供以下三种处理方式：
 
-* **Run Anyway**\
-  The document will be processed regardless of its quality.
-* **Run Again After Confirmation**\
-  **DocBits** will pause and prompt you to confirm whether to proceed with processing.
-* **Throw Error**\
-  Document processing will stop entirely, and an error message will be displayed, indicating that the document did not meet the required quality threshold.
+* **仍然运行**\
+  无论文档质量如何，都会继续处理。
+* **确认后重新运行**\
+  **DocBits** 会暂停，并提示您确认是否继续处理。
+* **抛出错误**\
+  文档处理将完全停止，并显示错误消息，指出文档未达到所需的质量阈值。
 
 <figure><img src="../../../.gitbook/assets/ocr_settings_1.png" alt=""><figcaption></figcaption></figure>
 
-## General OCR Settings
+## 常规 OCR 设置
 
-* **Use E-Text if Available**\
-  When enabled, **DocBits** will use embedded electronic text (e.g., from PDFs) instead of performing OCR. This improves both speed and accuracy, as the text is extracted directly without requiring OCR processing.
-* **Use DESKEW if Available**\
-  This option automatically corrects the alignment of scanned documents. Straightening skewed images helps improve OCR accuracy.
-*   **AI OCR Version**\
-    Allows you to select a specific version of the AI-based OCR engine.\
-    This can be useful if:
+* **如果可用，则使用电子文本**\
+  启用后，**DocBits** 将使用嵌入的电子文本（例如 PDF 中的文本），而不执行 OCR。这既能提高速度，也能提高准确性，因为系统可以直接提取文本，无需进行 OCR 处理。
+* **如果可用，则使用 DESKEW**\
+  此选项会自动校正扫描文档的对齐方式。拉直倾斜的图像有助于提高 OCR 准确性。
+*   **AI OCR 版本**\
+    可用于选择 AI OCR 引擎的特定版本。\
+    在以下情况下，此选项可能会有帮助：
 
-    * You are not achieving the desired results with the currently selected version.
-    * You are troubleshooting issues related to OCR performance or accuracy.
+    * 当前所选版本未能达到预期效果。
+    * 您正在排查与 OCR 性能或准确性有关的问题。
 
     <figure><img src="../../../.gitbook/assets/ocr_settings_2.png" alt=""><figcaption></figcaption></figure>
 
-## OCR Settings for Tables
+## 表格 OCR 设置
 
-* **Use AI Data for Tables if Available**\
-  When enabled, DocBits will use OCR data for tables instead of embedded electronic text (E-Text) — even if the **Use E-Text if Available** setting is turned on.
+* **如果可用，则对表格使用 AI 数据**\
+  启用后，DocBits 将对表格使用 OCR 数据，而不是嵌入的电子文本（E-Text），即使已启用 **如果可用，则使用电子文本** 设置也是如此。
 
-## OCR Settings for Header Fields
+## 表头字段 OCR 设置
 
-* **Use Rules Extraction**\
-  DocBits will apply your predefined extraction rules for identifying header fields.
-* **Use AI Extraction**\
-  DocBits will use AI to automatically detect and extract header fields.
+* **使用规则提取**\
+  DocBits 将应用预定义的提取规则来识别表头字段。
+* **使用 AI 提取**\
+  DocBits 将使用 AI 自动检测并提取表头字段。
 
-**Execution Order:**\
-If both options are enabled, **DocBits** will perform extraction in the following order:\
-**Rules Extraction → AI Extraction**\
+**执行顺序：**\
+如果同时启用这两个选项，**DocBits** 将按以下顺序执行提取：\
+**规则提取 → AI 提取**\
 \
-<mark style="color:red;">**Note**</mark>: For best results and consistent behavior, enable both options. This allows **DocBits** to use both rule-based and AI-based methods in combination during header extraction.
+<mark style="color:red;">**注意**</mark>：为获得最佳结果并保持行为一致，请同时启用这两个选项。这样，**DocBits** 就能在表头提取过程中结合使用基于规则的方法和基于 AI 的方法。

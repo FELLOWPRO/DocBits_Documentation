@@ -1,22 +1,22 @@
-# API credentials
+# API 凭据
 
-## Spalten
+## 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `sub_org_id`: internal
-* `title`: internal
-* `credentials_type`: internal
-* `credentials_json`: text
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
-* `last_modified_by`: internal
-* `deleted_by`: internal
+* `id`：内部字段
+* `org_id`：组织 ID
+* `sub_org_id`：内部字段
+* `title`：内部字段
+* `credentials_type`：内部字段
+* `credentials_json`：文本
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `deleted_on`：带时区的时间戳
+* `last_modified_by`：内部字段
+* `deleted_by`：内部字段
 
-## Analyse & Beschreibung
+## 分析与说明
 
 ```markdown
 # Table Documentation: `public.api_credentials`

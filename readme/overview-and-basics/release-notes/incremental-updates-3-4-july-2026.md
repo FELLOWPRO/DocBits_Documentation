@@ -1,140 +1,98 @@
-# DocBits Release Notes — 3–4 July 2026
+# DocBits 发布说明 — 2026 年 7 月 3–4 日
 
-_A rundown of what changed for you in this DocBits release. Every service below
-lists the version now running in production, followed by what's new or fixed in
-plain language — no ticket numbers, no engineering jargon. Services not listed
-had no customer-facing changes in this window._
+_以下概述了本次 DocBits 发布为您带来的变化。下文列出的每项服务都会先显示当前在生产环境中运行的版本，然后用通俗语言说明新增或修复的内容，不包含工单编号或工程术语。本时间段内未列出的服务没有面向客户的变化。_
 
 ---
 
-## Highlights
+## 重点
 
-- **Zero-downtime deploys, fleet-wide.** API, Auto Accounting, Docflow,
-  Extraction, OCR, and PO Match now shut down cleanly when a new release rolls
-  out. Previously, a request that was mid-flight during a deploy could be cut
-  off; now every in-flight request finishes before the old version stops, so
-  releases no longer cause brief blips for users.
-- **E-invoice export improvements.** Exporting a document to multiple export
-  configurations at once is now more reliable — duplicate-export checks run
-  once per batch instead of per item, and a new export endpoint prevents the
-  export status from flickering when several exports are triggered together.
-  XRechnung/ZUGFeRD documents also get more consistent field mapping.
-- **Steadier document processing.** Fixed a crash that could take down an
-  entire OCR document when a single page failed, fixed the Purchase-Order
-  delivery sync only ever fetching the first 100 records, and hardened several
-  services against brief database-connection drops.
-- **E-mail attachments recovered.** Fixed a case where e-mail attachments could
-  arrive corrupted or missing bytes during inbound import.
-- **Workflow reliability.** Fixed workflows getting stuck due to a lock that
-  didn't clear correctly, and fixed rescheduling logic so skipped workflow
-  steps are handled and logged correctly.
-- **New: Ideas Service.** A new backend service (Ideas, v0.3.0) has joined the
-  production fleet.
+- **全服务群实现零停机部署。** API、Auto Accounting、Docflow、Extraction、OCR 和 PO Match 现在会在新版本发布时正常关闭。以前，部署期间正在处理的请求可能会中断；现在，所有正在处理的请求都会在旧版本停止前完成，因此版本发布不再导致用户短暂遇到服务中断。
+- **电子发票导出改进。** 同时将文档导出到多个导出配置现在更加可靠——每批次只进行一次重复导出检查，而不是逐项检查；新增的导出端点可防止同时触发多个导出时导出状态反复闪烁。XRechnung/ZUGFeRD 文档的字段映射也更加一致。
+- **文档处理更加稳定。** 修复了单个页面处理失败可能导致整个 OCR 文档崩溃的问题；修复了采购订单交付同步始终只获取前 100 条记录的问题；并增强了多项服务应对短暂数据库连接中断的能力。
+- **恢复电子邮件附件。** 修复了入站导入期间电子邮件附件可能损坏或缺少字节的问题。
+- **工作流可靠性。** 修复了因锁未能正确清除而导致工作流卡住的问题，并修复了重新安排逻辑，使跳过的工作流步骤得到正确处理和记录。
+- **新增：Ideas Service。** 新的后端服务 Ideas（v0.3.0）已加入生产服务群。
 
 ---
 
-## API Service — live: `12.52.4`
+## API Service — 当前版本：`12.52.4`
 
-- **OCR reliability:** a crash on a single page no longer fails the whole
-  document.
-- **Export:** duplicate-export checks now run once per batch instead of once
-  per item; a new export endpoint prevents the export status from flickering
-  when multiple exports run at the same time; XRechnung/ZUGFeRD documents get
-  more consistent canonical field mapping.
-- **Purchase Orders:** fixed delivery sync only fetching the first 100 records
-  per order.
-- **Activity Logs:** fixed the "Next" page button jumping to an unrelated time
-  window.
-- **Master Data Lookup:** fixed a server error (HTTP 500).
-- **Search indexing:** added a delivery-proof marker and retry so documents are
-  reliably queued for full-text search.
-- **Zero-downtime deploys:** in-flight requests now finish before a release
-  restarts the service.
-- General stability fixes resolving several recurring background errors.
+- **OCR 可靠性：** 单个页面发生崩溃不再导致整个文档处理失败。
+- **导出：** 每批次只进行一次重复导出检查，而不是逐项检查；新增的导出端点可防止多个导出同时运行时导出状态反复闪烁；XRechnung/ZUGFeRD 文档的规范字段映射更加一致。
+- **采购订单：** 修复了每个订单的交付同步只获取前 100 条记录的问题。
+- **活动日志：** 修复了“下一页”按钮跳转到无关时间段的问题。
+- **主数据查询：** 修复了服务器错误（HTTP 500）。
+- **搜索索引：** 新增交付凭证标记和重试机制，确保文档可靠地进入全文搜索队列。
+- **零停机部署：** 版本发布并重启服务前，正在处理的请求现在会先完成。
+- 修复了多项反复出现的后台错误，提升了整体稳定性。
 
-## Auth Service — live: `1.68.7`
+## Auth Service — 当前版本：`1.68.7`
 
-- Internal reliability and maintenance only in this window.
+- 本时间段内仅进行了内部可靠性和维护工作。
 
-## Auto Accounting — live: `1.18.8`
+## Auto Accounting — 当前版本：`1.18.8`
 
-- **Zero-downtime deploys:** in-flight requests now finish before a release
-  restarts the service.
+- **零停机部署：** 版本发布并重启服务前，正在处理的请求现在会先完成。
 
-## Barcode Service — live: `1.15.8`
+## Barcode Service — 当前版本：`1.15.8`
 
-- Internal deployment-configuration fix only in this window.
+- 本时间段内仅修复了内部部署配置。
 
-## Docflow Service — live: `2.5.3`
+## Docflow Service — 当前版本：`2.5.3`
 
-- **New export option** for sending a document to multiple export
-  configurations at once.
-- **Fixed workflows getting stuck** due to a lock that didn't clear correctly
-  regardless of status.
-- **Fixed workflow rescheduling** so skipped steps are handled and logged
-  correctly instead of silently dropped.
-- **Faster startup:** databases are now pre-warmed in the background.
-- More resilient against brief database-connection drops.
-- Improved date-field parsing for workflow cards.
-- **Zero-downtime deploys:** in-flight requests now finish before a release
-  restarts the service.
+- **新增导出选项**，可同时将文档发送到多个导出配置。
+- **修复了工作流卡住的问题**，无论工作流处于何种状态，未能正确清除的锁都可能导致该问题。
+- **修复了工作流重新安排逻辑**，跳过的步骤现在会得到正确处理和记录，不再被静默丢弃。
+- **启动更快：** 现在会在后台预热数据库。
+- 增强了应对短暂数据库连接中断的能力。
+- 改进了工作流卡片的日期字段解析。
+- **零停机部署：** 版本发布并重启服务前，正在处理的请求现在会先完成。
 
-## Email Service — live: `1.37.9`
+## Email Service — 当前版本：`1.37.9`
 
-- **Fixed inbound attachments** that could arrive corrupted or missing bytes.
-- **Clearer errors** when a mailbox folder can't be fetched, instead of a
-  generic failure.
+- **修复了入站附件问题**，附件此前可能损坏或缺少字节。
+- **错误信息更加清晰：** 无法获取邮箱文件夹时会显示明确错误，而不是通用失败信息。
 
-## Extraction Service — live: `1.49.6`
+## Extraction Service — 当前版本：`1.49.6`
 
-- **Fixed crashes** on documents with an unrecognised document type and on
-  tables with an unusual/malformed shape.
-- More resilient against brief database-connection drops mid-query.
-- **Zero-downtime deploys:** in-flight requests now finish before a release
-  restarts the service.
+- **修复了崩溃问题**，包括文档类型无法识别的文档以及形状异常或格式错误的表格。
+- 增强了应对查询期间短暂数据库连接中断的能力。
+- **零停机部署：** 版本发布并重启服务前，正在处理的请求现在会先完成。
 
-## FTP Service — live: `1.30.3`
+## FTP Service — 当前版本：`1.30.3`
 
-- Internal framework upgrade only in this window.
+- 本时间段内仅升级了内部框架。
 
-## Fulltext Service — live: `1.36.3`
+## Fulltext Service — 当前版本：`1.36.3`
 
-- **Search indexing:** a periodic sweep now repairs any documents that failed
-  to reach the search index for any organisation.
-- **ERP sync:** fixed a stuck lock that could block ERP synchronisation after
-  a failed retry.
+- **搜索索引：** 定期扫描现在会修复任何未能进入任一组织搜索索引的文档。
+- **ERP 同步：** 修复了一个可能在重试失败后阻止 ERP 同步的锁定问题。
 
-## OCR Service — live: `1.7.8`
+## OCR Service — 当前版本：`1.7.8`
 
-- **Fixed OCR authentication** so organisation API keys work correctly again.
-- **Zero-downtime deploys:** in-flight requests now finish before a release
-  restarts the service.
+- **修复了 OCR 身份验证问题**，组织 API 密钥现在可以再次正常使用。
+- **零停机部署：** 版本发布并重启服务前，正在处理的请求现在会先完成。
 
-## Operator Service — live: `1.39.7`
+## Operator Service — 当前版本：`1.39.7`
 
-- Internal deployment-reliability fixes only in this window.
+- 本时间段内仅修复了内部部署可靠性问题。
 
-## PO Match Service — live: `1.56.0`
+## PO Match Service — 当前版本：`1.56.0`
 
-- **Fixed a crash** when sorting PO Match quantities that included empty
-  values.
-- **Zero-downtime deploys:** in-flight requests now finish before a release
-  restarts the service.
+- **修复了崩溃问题**，该问题会在排序包含空值的 PO Match 数量时发生。
+- **零停机部署：** 版本发布并重启服务前，正在处理的请求现在会先完成。
 
-## Web App — live: `10.36.9`
+## Web App — 当前版本：`10.36.9`
 
-- **Fixed an error** when returning to Field Validation from another screen.
-- **Fixed the "Scripts" button** routing to a 404 page.
-- **Activity Logs:** fixed an incorrect "Page 2 of 1" display and fixed the
-  WARN severity filter matching nothing.
+- **修复了错误**，该错误会在从其他屏幕返回“字段验证”（Field Validation）时出现。
+- **修复了“Scripts”按钮**跳转到 404 页面的问题。
+- **活动日志：** 修复了错误显示“第 2 页，共 1 页”的问题，并修复了 WARN 严重性筛选器不起作用的问题。
 
 ---
 
-## No customer-facing changes in this window
+## 本时间段内没有面向客户的变化
 
-Auth Service, Barcode Service, FTP Service, Operator Service, and Docnet
-Service (`1.54.6`, unchanged) received internal or deployment-configuration
-maintenance only.
+Auth Service、Barcode Service、FTP Service、Operator Service 和 Docnet Service（`1.54.6`，版本未变）仅进行了内部维护或部署配置维护。
 
 <!-- Generated by the docbits-changelog skill (version-boundary mode: exact
      git ranges between the ALT and NEU version-bump commits supplied by the

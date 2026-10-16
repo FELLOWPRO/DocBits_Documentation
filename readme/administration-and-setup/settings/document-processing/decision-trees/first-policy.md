@@ -1,18 +1,18 @@
-# First Policy
+# 第一条策略
 
-The first matching rule is applied, and no further rules are evaluated.
+应用第一个匹配的规则，之后不再评估其他规则。
 
-**Example:**
+**示例：**
 
-| Rule | Condition            | Return Group |
+| 规则 | 条件                 | 返回组    |
 | ---- | -------------------- | ------------ |
-| 1    | Total Amount <= 1000 | GROUP_1     |
-| 2    | Total Amount <= 2000 | GROUP_2     |
-| 3    | Total Amount <= 5000 | GROUP_5     |
-| 4    | Total Amount <= 4000 | GROUP_4     |
-| 5    | Total Amount <= 3000 | GROUP_3     |
+| 1    | 总金额 <= 1000 | GROUP_1     |
+| 2    | 总金额 <= 2000 | GROUP_2     |
+| 3    | 总金额 <= 5000 | GROUP_5     |
+| 4    | 总金额 <= 4000 | GROUP_4     |
+| 5    | 总金额 <= 3000 | GROUP_3     |
 
-If the total amount is **1500**, the rules evaluated will be:
+如果总金额为 **1500**，则会评估以下规则：
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (matches) → The decision tree stops evaluating further rules and applies **GROUP_2**.
+* **规则 1**：总金额 <= 1000（不匹配）
+* **规则 2**：总金额 <= 2000（匹配） → 决策树停止评估后续规则，并应用 **GROUP_2**。

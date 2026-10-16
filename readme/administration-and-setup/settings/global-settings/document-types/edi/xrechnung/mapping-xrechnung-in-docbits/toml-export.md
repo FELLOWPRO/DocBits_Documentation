@@ -1,10 +1,10 @@
-# TOML Export
+# TOML 导出
 
-**How XRechnung is Mapped in DocBits**
+**XRechnung 在 DocBits 中的映射方式**
 
-**1. Header Configuration (export\_configuration.header)**
+**1. 标题配置 (export\_configuration.header)**
 
-The header section in the XRechnung is mapped to fields in DocBits as follows:
+XRechnung 中的标题部分映射到 DocBits 中的字段如下：
 
 \[export\_configuration.header]\
 name = "header"
@@ -36,17 +36,17 @@ name = "header"
 &#x20; TXAP = "\[tax\_applicable]"\
 &#x20; TXIN = "\[tax\_included]"
 
-  •  **SUNO**: Supplier ID, mapped to \[supplier\_id] from XRechnung.
+  •  **SUNO**：供应商 ID，映射自 XRechnung 中的 \[supplier\_id]。
 
-  •  **IVDT**: Invoice Date, mapped to \[invoice\_date].
+  •  **IVDT**：发票日期，映射到 \[invoice\_date]。
 
-  •  **SINO**: Invoice Number, mapped to \[invoice\_id].
+  •  **SINO**：发票编号，映射到 \[invoice\_id]。
 
-  •  Other fields such as **total amount**, **currency**, and **payment terms** are similarly mapped from the XRechnung to DocBits fields.
+  •  **总金额**、**货币**和**付款条件**等其他字段，也会以类似方式从 XRechnung 映射到 DocBits 字段。
 
-**2. Tax Lines (export\_configuration.tax\_lines)**
+**2. 税行 (export\_configuration.tax\_lines)**
 
-Tax-related information is mapped using the following configuration:
+税务相关信息使用以下配置进行映射：
 
 \[export\_configuration.tax\_lines]\
 name = "tax\_lines"
@@ -60,13 +60,13 @@ name = "tax\_lines"
 &#x20; TTXA = "\[\[amount]]"\
 &#x20; TAXC = "\[\[tax\_code]]"
 
-  •  **GEOC**: Geo Code, mapped to the corresponding \[geo\_code] from XRechnung.
+  •  **GEOC**：地理代码，映射自 XRechnung 中对应的 \[geo\_code]。
 
-  •  **TAXC**: Tax Code, mapped to \[tax\_code].
+  •  **TAXC**：税码，映射到 \[tax\_code]。
 
-**3. Order Header Charges (export\_configuration.order\_header\_charges)**
+**3. 订单标题费用 (export\_configuration.order\_header\_charges)**
 
-This section handles any additional charges that need to be added at the header level of the XRechnung.
+此部分用于处理需要添加到 XRechnung 标题级别的额外费用。
 
 \[export\_configuration.order\_header\_charges]\
 name = "order\_header\_charges"
@@ -79,13 +79,13 @@ name = "order\_header\_charges"
 &#x20; CEID = "\[\[costing\_element]]"\
 &#x20; CDSE = "\[\[charge\_sequence]]"
 
-  •  **NLAM**: Amount for the order charge.
+  •  **NLAM**：订单费用金额。
 
-  •  **CEID**: Costing Element, which can be mapped from specific XRechnung elements.
+  •  **CEID**：成本要素，可映射自特定的 XRechnung 元素。
 
-**4. Receipt Lines (export\_configuration.receipt\_lines)**
+**4. 收货行 (export\_configuration.receipt\_lines)**
 
-Receipt lines, which represent line items in the XRechnung, are handled as follows:
+收货行表示 XRechnung 中的行项目，处理方式如下：
 
 \[export\_configuration.receipt\_lines]\
 name = "receipt\_lines"
@@ -109,13 +109,13 @@ name = "receipt\_lines"
 &#x20; REPN = "\[\[receipt\_number]]"\
 &#x20; PNLS = "\[\[sub\_line\_number]]"
 
-  •  **IVQA**: Quantity, mapped from the \[quantity] in the XRechnung line items.
+  •  **IVQA**：数量，映射自 XRechnung 行项目中的 \[quantity]。
 
-  •  **ITNO**: Item Number, mapped to \[item\_number].
+  •  **ITNO**：物料编号，映射到 \[item\_number]。
 
-**5. Cost Lines (export\_configuration.cost\_lines)**
+**5. 成本行 (export\_configuration.cost\_lines)**
 
-Cost lines, which handle additional costs in the XRechnung, are mapped using the following:
+XRechnung 中用于处理额外成本的成本行，按以下方式映射：
 
 \[export\_configuration.cost\_lines]\
 name = "cost\_lines"
@@ -140,8 +140,6 @@ name = "cost\_lines"
 &#x20; AIT5 = "\[\[dimension\_5]]"\
 &#x20; AIT6 = "\[\[dimension\_6]]"\
 &#x20; AIT7 = "\[\[dimension\_7]]"
-
-&#x20;
 
 &#x20;
 

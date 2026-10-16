@@ -1,2 +1,0 @@
-# Ordine di acquisto
-

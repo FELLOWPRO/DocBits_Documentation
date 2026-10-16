@@ -1,26 +1,26 @@
-# Export Configuration for Supplier Portal
+# 供应商门户导出配置
 
-<figure><img src="../../../.gitbook/assets/supplier_export_configuration.png" alt="Supplier Export Configuration"><figcaption><p>Supplier Export Configuration Page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_export_configuration.png" alt="供应商导出配置"><figcaption><p>供应商导出配置页面</p></figcaption></figure>
 
-## Overview
+## 概述
 
-The export configuration file is a crucial component in the supplier portal, defining how data is mapped between the supplier portal and the ERP system. This configuration ensures that data is accurately transferred and synchronized across systems, enabling smooth and efficient operations.
+导出配置文件是供应商门户中的关键组件，用于定义供应商门户与 ERP 系统之间的数据映射方式。此配置可确保数据在各系统间准确传输和同步，从而支持顺畅、高效的运营。
 
-## Structure of the Configuration File
+## 配置文件结构
 
-The export configuration file is structured as a JSON object that contains multiple mappings. Each mapping is associated with a specific program in the ERP system and defines the actions to be performed, the fields to be mapped, and any conditions to be applied.
+导出配置文件采用 JSON 对象结构，其中包含多个映射。每个映射都关联到 ERP 系统中的一个特定程序，并定义要执行的操作、要映射的字段以及要应用的条件。
 
-## Key Components
+## 主要组成部分
 
-### 1. Program
+### 1. 程序
 
-* **Definition**: Specifies the ERP program that the mapping applies to.
-* **Example**: `"program": "CRS620MI"`
+* **定义**：指定此映射适用的 ERP 程序。
+* **示例**：`"program": "CRS620MI"`
 
-### 2. Actions
+### 2. 操作
 
-* **Definition**: Defines the actions that can be performed, such as adding or updating records.
-*   **Example**:
+* **定义**：定义可以执行的操作，例如添加或更新记录。
+*   **示例**：
 
     ```json
     "actions": {
@@ -29,21 +29,21 @@ The export configuration file is structured as a JSON object that contains multi
     }
     ```
 
-### 3. Mapping
+### 3. 映射
 
-• Definition: Specifies the mapping between fields in the ERP system and fields in the supplier portal.
+• 定义：指定 ERP 系统中的字段与供应商门户中的字段之间的映射。
 
-• Components:
+• 组成部分：
 
-• erp\_field\_name: The field name in the ERP system.
+• erp\_field\_name：ERP 系统中的字段名称。
 
-• value\_field\_name: The corresponding field name in the supplier portal.
+• value\_field\_name：供应商门户中对应的字段名称。
 
-• value: A static value to be used if no corresponding field exists in the supplier portal.
+• value：如果供应商门户中没有对应字段，则使用此静态值。
 
-• if\_conditions: Optional conditions that determine the value based on certain criteria.
+• if\_conditions：可选条件，用于根据特定条件确定值。
 
-• Example:
+• 示例：
 
 ```json
 {
@@ -52,19 +52,19 @@ The export configuration file is structured as a JSON object that contains multi
 }
 ```
 
-### 4. Conditional Logic (if\_conditions)
+### 4. 条件逻辑 (if\_conditions)
 
-• Definition: Specifies conditions that must be met for a particular value to be used.
+• 定义：指定使用某个值必须满足的条件。
 
-• Components:
+• 组成部分：
 
-• field\_name: The field name in the supplier portal that is evaluated.
+• field\_name：要进行评估的供应商门户字段名称。
 
-• field\_value: The value that triggers the condition.
+• field\_value：触发条件的值。
 
-• then\_value: The value to use if the condition is met.
+• then\_value：满足条件时要使用的值。
 
-• Example:
+• 示例：
 
 ```json
 {
@@ -78,21 +78,21 @@ The export configuration file is structured as a JSON object that contains multi
 }
 ```
 
-### 5. Loops (loop\_on)
+### 5. 循环 (loop\_on)
 
-• Definition: Defines the sections where the configuration should iterate over a list of items, such as address or reference details.
+• 定义：指定配置应遍历项目列表的部分，例如地址或参考信息。
 
-• Example:
+• 示例：
 
 ```json
 "loop_on": "address_details"
 ```
 
-### 6. Calculated Fields (value\_field\_calculated)
+### 6. 计算字段 (value\_field\_calculated)
 
-• Definition: Specifies fields that should be calculated at runtime, such as generating the current date.
+• 定义：指定应在运行时计算的字段，例如生成当前日期。
 
-• Example:
+• 示例：
 
 ```json
 {
@@ -101,17 +101,17 @@ The export configuration file is structured as a JSON object that contains multi
 }
 ```
 
-### 7. Field Mappings with Lists (mapping\_field\_name and mapping\_list)
+### 7. 包含列表的字段映射 (mapping\_field\_name and mapping\_list)
 
-• Definition: Maps specific values from the supplier portal to corresponding values in the ERP system based on a predefined list.
+• 定义：根据预定义列表，将供应商门户中的特定值映射为 ERP 系统中的对应值。
 
-• Components:
+• 组成部分：
 
-• mapping\_field\_name: The field that determines the mapping.
+• mapping\_field\_name：用于确定映射关系的字段。
 
-• mapping\_list: A dictionary that translates values from the supplier portal to the ERP system.
+• mapping\_list：将供应商门户中的值转换为 ERP 系统中的值的字典。
 
-• Example:
+• 示例：
 
 ```json
 {
@@ -128,19 +128,19 @@ The export configuration file is structured as a JSON object that contains multi
 }
 ```
 
-## Example Configuration Breakdown
+## 配置示例解析
 
-### Supplier Addition and Update (CRS620MI)
+### 添加和更新供应商 (CRS620MI)
 
-• Program: CRS620MI
+• 程序：CRS620MI
 
-• Actions:
+• 操作：
 
-• Add Supplier: AddSupplier
+• 添加供应商：AddSupplier
 
-• Update Supplier: UpdSupplier
+• 更新供应商：UpdSupplier
 
-• Mapping Fields:
+• 映射字段：
 
 • SUNO → supplier\_number
 
@@ -150,19 +150,19 @@ The export configuration file is structured as a JSON object that contains multi
 
 • TINO → tax\_id
 
-• Additional fields include static values and conditional mappings.
+• 其他字段包括静态值和条件映射。
 
-### Address Details (CRS620MI)
+### 地址详情 (CRS620MI)
 
-• Loop On: _**address\_details**_
+• 循环对象：_**address\_details**_
 
-• Actions:
+• 操作：
 
-• Add Address: AddAddress
+• 添加地址：AddAddress
 
-• Update Address: AddAddress
+• 更新地址：AddAddress
 
-• Mapping Fields:
+• 映射字段：
 
 • SUNO → supplier\_number
 
@@ -170,55 +170,55 @@ The export configuration file is structured as a JSON object that contains multi
 
 • TOWN → city
 
-• Additional fields include calculated fields like now() for the current date.
+• 其他字段包括计算字段，例如用于获取当前日期的 now()。
 
-### Reference Details (CRS620MI)
+### 参考信息 (CRS620MI)
 
-• Loop On: _**reference\_details**_
+• 循环对象：_**reference\_details**_
 
-• Actions:
+• 操作：
 
-• Add Supplier Reference: AddSupplierRef
+• 添加供应商参考信息：AddSupplierRef
 
-• Update Supplier Reference: AddSupplierRef
+• 更新供应商参考信息：AddSupplierRef
 
-• Mapping Fields:
+• 映射字段：
 
 • SUNO → supplier\_number
 
 • RFTY → reference\_type
 
-• RFID is mapped using a list to translate types like “PURCHASING”, “QA”, and “FINANCE”.
+• RFID 使用列表进行映射，用于转换 “PURCHASING”、“QA” 和 “FINANCE” 等类型。
 
-## Using the Export Configuration
+## 使用导出配置
 
-### 1. Uploading the Configuration File
+### 1. 上传配置文件
 
-#### 1. Navigate to Export Configuration:
+#### 1. 前往导出配置：
 
-• Go to the Export Configuration section from the main menu.
+• 从主菜单进入“导出配置”部分。
 
-#### 2. Upload the Configuration File:
+#### 2. 上传配置文件：
 
-• Click on the ION-Mapping File or IDM Mapping File sections to upload the respective configuration file.
+• 点击 ION-Mapping File 或 IDM Mapping File 部分，上传相应的配置文件。
 
-#### 3. Save the Configuration:
+#### 3. 保存配置：
 
-• After uploading, click the Save button to apply the configuration.
+• 上传完成后，点击 Save 按钮以应用配置。
 
-### 2. Using Default Templates
+### 2. 使用默认模板
 
-• Click on the Use Default Template button if you wish to revert to the default configuration template provided by the system.
+• 如果要恢复为系统提供的默认配置模板，请点击 Use Default Template 按钮。
 
-### 3. Formatting the JSON
+### 3. 格式化 JSON
 
-• Use the Format button to automatically format the JSON code for better readability.
+• 使用 Format 按钮自动格式化 JSON 代码，以提高可读性。
 
-## Conclusion
+## 结论
 
-This configuration file is essential for ensuring that data between the supplier portal and the ERP system is correctly mapped and synchronized. By understanding the structure and key components, administrators can effectively manage and customize the export process to meet their specific business requirements.
+此配置文件对于确保供应商门户与 ERP 系统之间的数据正确映射和同步至关重要。了解其结构和主要组成部分后，管理员即可有效管理和自定义导出流程，以满足具体的业务需求。
 
-## Full Example&#x20;
+## 完整示例&#x20;
 
 ```json
 [{

@@ -1,23 +1,23 @@
-# Any Policy
+# 任一策略
 
-Multiple rules can be true, but the result of those rules must be the same.
+可以有多条规则同时成立，但这些规则的结果必须相同。
 
-**Example:**
+**示例：**
 
-| Rule | Condition            | Return Group |
+| 规则 | 条件            | 返回组 |
 | ---- | -------------------- | ------------ |
-| 1    | Total Amount <= 1000 | GROUP_1     |
-| 2    | Total Amount <= 2000 | GROUP_2     |
-| 3    | Total Amount <= 3000 | GROUP_3     |
-| 4    | Total Amount <= 4000 | GROUP_4     |
-| 5    | Total Amount <= 5000 | GROUP_5     |
+| 1    | 总金额 <= 1000 | GROUP_1     |
+| 2    | 总金额 <= 2000 | GROUP_2     |
+| 3    | 总金额 <= 3000 | GROUP_3     |
+| 4    | 总金额 <= 4000 | GROUP_4     |
+| 5    | 总金额 <= 5000 | GROUP_5     |
 
-If the total amount is **2500**, the rules evaluated will be:
+如果总金额为 **2500**，评估结果如下：
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (does not match)
-* **Rule 3**: Total Amount <= 3000 (matches)
-* **Rule 4**: Total Amount <= 4000 (matches)
-* **Rule 5**: Total Amount <= 5000 (matches)
+* **规则 1**：总金额 <= 1000（不匹配）
+* **规则 2**：总金额 <= 2000（不匹配）
+* **规则 3**：总金额 <= 3000（匹配）
+* **规则 4**：总金额 <= 4000（匹配）
+* **规则 5**：总金额 <= 5000（匹配）
 
-For **Any** to apply, all matching rules must return the same **Return Group**. Since the groups do not match across the different rules, the result would be **false**.
+要应用 **任一**，所有匹配的规则都必须返回相同的 **返回组**。由于不同规则返回的组不一致，因此结果为 **false**。

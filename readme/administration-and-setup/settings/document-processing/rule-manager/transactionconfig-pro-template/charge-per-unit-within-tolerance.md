@@ -1,32 +1,32 @@
-# Charge Per Unit Within Tolerance
+# 容差范围内的单位费用
 
-## Scenario:
+## 场景：
 
-The charge per unit on the invoice is within the acceptable tolerance range compared to the purchase order.
+发票上的单位费用与采购订单相比，处于可接受的容差范围内。
 
-## Action:
+## 操作：
 
-The system accepts the charge per unit as invoiced and processes the transaction without adjustments.
+系统接受发票上的单位费用，并且不做调整，直接处理该交易。
 
-## Example:
+## 示例：
 
-* **Purchase Order (PO):**
-  * Charge Per Unit: $5.00
-  * Quantity: 500 units
-  * Total Charge Amount: $2,500.00
-* **Invoice Received:**
-  * Charge Per Unit: $5.10 (within tolerance of 2%)
-  * Quantity: 500 units
-  * Total Charge Amount: $2,550.00
-* **Tolerance Levels:**
-  * Charge Per Unit Tolerance: ±3%
+* **采购订单 (PO)：**
+  * 单位费用：$5.00
+  * 数量：500 件
+  * 费用总额：$2,500.00
+* **收到的发票：**
+  * 单位费用：$5.10（在 2% 的容差范围内）
+  * 数量：500 件
+  * 费用总额：$2,550.00
+* **容差级别：**
+  * 单位费用容差：±3%
 
-Since the charge per unit ($5.10) is within the acceptable tolerance range of 3% compared to the purchase order, the system will:
+由于单位费用（$5.10）与采购订单相比处于 3% 的可接受容差范围内，系统将：
 
-1. **Accept the Charge Per Unit:** The system accepts the invoiced charge per unit of $5.10 as it falls within the defined tolerance limit.
-2. **Process the Transaction:** The system processes the invoice with the total charge amount based on the invoiced charge per unit and quantity:
-   * **Total Charge Amount = Quantity × Charge Per Unit**
-   * **Total Charge Amount = 500 units × $5.10 = $2,550.00**
-3. **Finalize the Invoice:** The system processes the transaction without any adjustments, accepting the invoice as it is.
+1. **接受单位费用：**系统接受发票上的单位费用 $5.10，因为它处于定义的容差限值内。
+2. **处理交易：**系统根据发票上的单位费用和数量，按费用总额处理发票：
+   * **费用总额 = 数量 × 单位费用**
+   * **费用总额 = 500 件 × $5.10 = $2,550.00**
+3. **完成发票处理：**系统不做任何调整，直接处理该交易并接受发票内容。
 
-This approach allows the system to accommodate minor acceptable variances in charges, ensuring smooth and efficient processing of transactions without unnecessary rejections or delays.
+这种方式使系统能够处理费用中的小幅可接受差异，确保交易处理顺畅高效，避免不必要的拒绝或延迟。

@@ -1,30 +1,30 @@
-# Field validation rules
+# 字段验证规则
 
-## Spalten
+## 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `field_id`: internal
-* `doc_type`: DOC Type
-* `is_sub_doc_type_field`: boolean
-* `profile`: internal
-* `field_name`: internal
-* `field_length`: integer
-* `field_label`: internal
-* `is_required`: boolean
-* `is_readonly`: boolean
-* `is_hidden`: boolean
-* `force_validation`: boolean
-* `validation_pattern`: internal
-* `confidence_threshold`: integer
-* `match_score_threshold`: integer
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `additional_attributes`: text
+* `id`：内部字段
+* `org_id`：组织 ID
+* `field_id`：内部字段
+* `doc_type`：文档类型
+* `is_sub_doc_type_field`：布尔值
+* `profile`：内部字段
+* `field_name`：内部字段
+* `field_length`：整数
+* `field_label`：内部字段
+* `is_required`：布尔值
+* `is_readonly`：布尔值
+* `is_hidden`：布尔值
+* `force_validation`：布尔值
+* `validation_pattern`：内部字段
+* `confidence_threshold`：整数
+* `match_score_threshold`：整数
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `additional_attributes`：文本
 
-## Analyse & Beschreibung
+## 分析与说明
 
 ```markdown
 # Technical Documentation for `public.field_validation_rules` Table

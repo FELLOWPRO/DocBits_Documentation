@@ -1,22 +1,22 @@
-# General Information
+# 基本信息
 
 <details>
 
-<summary>What types of documents does DocBits support?</summary>
+<summary>DocBits 支持哪些类型的文档？</summary>
 
-#### Supported document types
+#### 支持的文档类型
 
-* Invoice&#x20;
+* 发票&#x20;
 
-- Credit Note&#x20;
+- 贷项通知单&#x20;
 
-* Delivery Note
+* 交货单
 
-- Order Confirmation
+- 订单确认
 
-* Purchase Order&#x20;
+* 采购订单&#x20;
 
-- Custom Documents
+- 自定义文档
 
 </details>
 
@@ -24,9 +24,9 @@
 
 <details>
 
-<summary>Does DocBits support custom document types ? </summary>
+<summary>DocBits 支持自定义文档类型吗？</summary>
 
-* Yes Users are able to create there own document types.
+* 是的，用户可以创建自己的文档类型。
 
 </details>
 
@@ -34,9 +34,9 @@
 
 <details>
 
-<summary>What file types does DocBits support ? </summary>
+<summary>DocBits 支持哪些文件类型？</summary>
 
-#### Supported File types are:&#x20;
+#### 支持的文件类型：&#x20;
 
 * .pdf
 * .edi

@@ -1,32 +1,32 @@
 ---
-description: URUGUAY CFE electronic document support in DocBits
+description: DocBits 中对乌拉圭 CFE 电子文档的支持
 ---
 
-# 🇺🇾 URUGUAY CFE
+# 🇺🇾 乌拉圭 CFE
 
-| Property             | Value                                        |
+| 属性                 | 值                                           |
 | -------------------- | -------------------------------------------- |
-| **Country / Region** | Uruguay                                      |
-| **Document Types**   | e-Invoice, e-Ticket, Credit Note, Debit Note |
-| **Format**           | XML                                          |
-| **Standard**         | CFE (Comprobante Fiscal Electrónico)         |
+| **国家/地区**        | 乌拉圭                                       |
+| **文档类型**         | 电子发票、电子票据、贷项通知单、借项通知单   |
+| **格式**             | XML                                          |
+| **标准**             | CFE（Comprobante Fiscal Electrónico）         |
 
-CFE (Comprobante Fiscal Electrónico) is the Uruguayan electronic tax document standard regulated by the DGI (Dirección General Impositiva). It covers multiple document types including e-Factura (111), e-Ticket (101), and their credit/debit note variants.
+CFE（Comprobante Fiscal Electrónico，电子税务凭证）是乌拉圭的电子税务文档标准，由 DGI（Dirección General Impositiva）监管。该标准涵盖多种文档类型，包括 e-Factura（111）、e-Ticket（101）及其贷项/借项通知单变体。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件             | 状态         |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览             | ✅ 支持      |
+| 字段提取         | ✅ 支持      |
+| 转换             | ✅ 支持      |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/uruguay-cfe-preview.png" alt="Uruguay CFE invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Uruguay CFE invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/uruguay-cfe-preview.png" alt="DocBits 中的乌拉圭 CFE 发票预览"><figcaption><p>乌拉圭 CFE 发票的默认 DocBits 预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)
 * [Uruguay CFE 24](uruguay-cfe-24.md)
 * [Uruguay CFE 25](uruguay-cfe-25.md)

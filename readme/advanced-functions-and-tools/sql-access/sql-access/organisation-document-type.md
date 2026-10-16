@@ -1,22 +1,22 @@
-# Organisation document type
+# 组织文档类型
 
-## Spalten
+## 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `document_type_id`: internal
-* `document_type_key`: internal
-* `document_locale`: internal
-* `classification_method`: internal
-* `is_active`: boolean
-* `extraction_type`: internal
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `sub_org_id`: internal
+* `id`：内部字段
+* `org_id`：组织 ID
+* `document_type_id`：内部字段
+* `document_type_key`：内部字段
+* `document_locale`：内部字段
+* `classification_method`：内部字段
+* `is_active`：布尔值
+* `extraction_type`：内部字段
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `sub_org_id`：内部字段
 
-## Analyse & Beschreibung
+## 分析与描述
 
 ```markdown
 # Technical Documentation for Table `public.organisation_document_type`

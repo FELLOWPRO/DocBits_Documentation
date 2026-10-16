@@ -1,8 +1,7 @@
-# How to Import Documents
+# 如何导入文档
 
 {% embed url="https://youtu.be/5_11Q0JbeaU" %}
-DocBits Import Tutorial: Upload Documents, Drag & Drop + Manual vs Automatic Classification
+DocBits 导入教程：上传文档、拖放，以及手动与自动分类
 {% endembed %}
 
-A guide to uploading documents to DocBits.
-
+本指南介绍如何将文档上传到 DocBits。

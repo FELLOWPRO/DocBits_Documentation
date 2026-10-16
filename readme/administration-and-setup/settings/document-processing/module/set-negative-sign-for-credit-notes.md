@@ -1,37 +1,37 @@
-# Set Negative Sign for Credit Notes
+# 为贷项通知单设置负号
 
-### Overview
+### 概述
 
-The **Set Negative Sign for Credit Notes** setting makes sure that **credit notes** are stored with **negative amounts**. A credit note reverses or refunds part of an invoice, so in accounting its values should reduce the totals — that is, they should be negative. When this setting is on, DocBits applies that negative sign for you automatically.
+**为贷项通知单设置负号**用于确保**贷项通知单**以**负数金额**存储。贷项通知单会冲销或退还部分发票金额，因此在会计处理中，其数值应减少总额，也就是说应为负数。启用此设置后，DocBits 会自动为您添加负号。
 
-This setting is **enabled by default**.
+此设置**默认启用**。
 
-### What Does It Do?
+### 此设置有什么作用？
 
-When a document is recognized as a **credit note**, DocBits automatically turns its amounts into negative values during processing. This affects the monetary fields, including the net amounts, tax amounts and totals (e.g. net amount, tax amount, total tax amount, total net amount and total amount).
+当文档被识别为**贷项通知单**时，DocBits 会在处理过程中自动将其金额转换为负数。这会影响货币字段，包括净额、税额和总额（例如净额、税额、税额总计、净额总计和总金额）。
 
-* **Enabled (default)** — Credit note amounts are saved as negative values (for example, `150.00` becomes `-150.00`). Regular invoices are not affected.
-* **Disabled** — Amounts are kept exactly as they were read from the document, without any sign change.
+* **已启用（默认）** — 贷项通知单的金额会以负数保存（例如，`150.00` 会变为 `-150.00`）。普通发票不受影响。
+* **已禁用** — 金额保持从文档中读取的原样，不更改正负号。
 
 {% hint style="info" %}
-This only applies to documents identified as **credit notes**. Normal invoices are always left unchanged.
+此设置仅适用于被识别为**贷项通知单**的文档。普通发票始终保持不变。
 {% endhint %}
 
-### Benefits
+### 优点
 
-* **Correct bookkeeping**: Credit notes reduce balances, so negative values are what your accounting and ERP systems expect.
-* **No manual editing**: Your team doesn’t have to flip the sign by hand on every credit note.
-* **Consistency**: Every credit note is handled the same way across your organization.
+* **确保账务正确**：贷项通知单会减少余额，因此负数是会计和 ERP 系统所需的格式。
+* **无需手动编辑**：团队无需在每张贷项通知单上手动更改正负号。
+* **保持一致**：组织内的每张贷项通知单都会以相同方式处理。
 
-### How to Use
+### 使用方法
 
-1. Go to **Settings**.
-2. Select **Document Processing**.
-3. Select **Module**.
-4. Open the **Document Type** section.
-5. Find **Set Negative Sign for Credit Notes** and switch the toggle on or off.
+1. 前往**设置**（**Settings**）。
+2. 选择**文档处理**（**Document Processing**）。
+3. 选择**模块**（**Module**）。
+4. 打开**文档类型**（**Document Type**）部分。
+5. 找到**为贷项通知单设置负号**（**Set Negative Sign for Credit Notes**），然后打开或关闭开关。
 
-### When to Use This Feature
+### 何时使用此功能
 
-* **Keep it enabled** if your accounting or ERP system expects credit notes to arrive with negative amounts (this is the most common setup).
-* **Disable it** only if your downstream system already handles the sign itself, or expects credit note amounts to stay positive.
+* 如果您的会计或 ERP 系统要求贷项通知单以负数金额传入，请**保持启用**（这是最常见的配置）。
+* 仅当下游系统已自行处理正负号，或要求贷项通知单金额保持为正数时，才**禁用此设置**。

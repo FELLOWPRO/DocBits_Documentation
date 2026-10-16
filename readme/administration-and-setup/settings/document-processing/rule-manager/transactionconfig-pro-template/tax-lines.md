@@ -1,40 +1,40 @@
-# Tax Lines
+# 税费行
 
-## Scenario:
+## 场景：
 
-Handles discrepancies in tax amounts between the invoice and purchase order.
+处理发票与采购订单之间的税额差异。
 
-## Action:
+## 操作：
 
-The system adjusts the tax lines according to the approved tax rates and amounts, ensuring compliance with applicable tax regulations.
+系统根据已批准的税率和金额调整税费行，确保符合适用的税务法规。
 
-## Example:
+## 示例：
 
-* **Purchase Order (PO):**
-  * Subtotal Amount: $10,000.00
-  * Tax Rate: 8%
-  * Expected Tax Amount: $800.00
-  * Total Amount with Tax: $10,800.00
-* **Invoice Received:**
-  * Subtotal Amount: $10,000.00
-  * Tax Rate: 10% (discrepancy)
-  * Invoiced Tax Amount: $1,000.00
-  * Total Amount with Tax: $11,000.00
+* **采购订单 (PO)：**
+  * 小计金额：$10,000.00
+  * 税率：8%
+  * 预期税额：$800.00
+  * 含税总额：$10,800.00
+* **收到的发票：**
+  * 小计金额：$10,000.00
+  * 税率：10%（存在差异）
+  * 发票税额：$1,000.00
+  * 含税总额：$11,000.00
 
-Since the tax rate on the invoice (10%) differs from the expected tax rate (8%) and is not approved, the system will:
+由于发票上的税率（10%）与预期税率（8%）不同，且未获批准，系统将：
 
-1. **Reject the Invoiced Tax Rate:** The system does not accept the 10% tax rate because it does not match the approved rate in the purchase order.
-2. **Adjust the Tax Rate:** The system adjusts the tax rate to match the approved rate from the purchase order.
-   * Adjusted Tax Rate = 8% (from PO)
-3. **Recalculate the Tax Amount:** The system recalculates the tax amount based on the adjusted tax rate:
-   * **Corrected Tax Amount = Subtotal Amount × Adjusted Tax Rate**
-   * **Corrected Tax Amount = $10,000.00 × 8% = $800.00**
-4. **Recalculate the Total Amount:** The system recalculates the total amount including tax:
-   * **Corrected Total Amount with Tax = Subtotal Amount + Corrected Tax Amount**
-   * **Corrected Total Amount with Tax = $10,000.00 + $800.00 = $10,800.00**
-5. **Generate a Credit Note:** The system generates a credit note to correct the overcharged tax:
-   * **Credit Note Amount = Original Invoice Tax Amount - Corrected Tax Amount**
-   * **Credit Note Amount = $1,000.00 - $800.00 = $200.00**
-6. **Process the Invoice:** The system processes the invoice with the corrected tax amount of $800.00 and the total amount of $10,800.00, issuing a credit note for the $200.00 tax discrepancy.
+1. **拒绝发票税率：** 系统不接受 10% 的税率，因为它与采购订单中已批准的税率不一致。
+2. **调整税率：** 系统将税率调整为与采购订单中已批准的税率一致。
+   * 调整后的税率 = 8%（来自 PO）
+3. **重新计算税额：** 系统根据调整后的税率重新计算税额：
+   * **更正后的税额 = 小计金额 × 调整后的税率**
+   * **更正后的税额 = $10,000.00 × 8% = $800.00**
+4. **重新计算总额：** 系统重新计算含税总额：
+   * **更正后的含税总额 = 小计金额 + 更正后的税额**
+   * **更正后的含税总额 = $10,000.00 + $800.00 = $10,800.00**
+5. **生成贷项通知单：** 系统生成贷项通知单以更正多收的税款：
+   * **贷项通知单金额 = 原发票税额 - 更正后的税额**
+   * **贷项通知单金额 = $1,000.00 - $800.00 = $200.00**
+6. **处理发票：** 系统以更正后的税额 $800.00 和总额 $10,800.00 处理发票，并针对 $200.00 的税额差异开具贷项通知单。
 
-This approach ensures that the invoice tax is consistent with the purchase order and complies with applicable tax regulations, preventing overpayment and ensuring accuracy in financial records.
+这种方法可确保发票税额与采购订单一致，并符合适用的税务法规，防止多付款项，并确保财务记录准确。

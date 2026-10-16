@@ -1,15 +1,13 @@
-# Groups, Users and Permissions
+# 用户组、用户和权限
 
-These settings answer three different questions: who can sign in, which sub-organisation they work in, and what their group may do.
+这些设置分别回答三个不同的问题：谁可以登录、他们在哪个子组织中工作，以及其所属用户组可以执行哪些操作。
 
-| If you need to… | Open… |
+| 如果你需要…… | 打开…… |
 | --- | --- |
-| Add or edit a person's account | **Settings** → **Users**; then read [Users](users/README.md). |
-| Organise access across company units | **Settings** → **Sub-Organizations**; then read [Sub-Organizations](sub-organizations/README.md). |
-| Control access by group | **Settings** → **Groups and Permissions**; then read [Groups and Permissions](groups-and-permissions/README.md). |
+| 添加或编辑某人的账户 | **Settings** → **Users**；然后阅读[用户](users/README.md)。 |
+| 管理公司各单位的访问权限 | **Settings** → **Sub-Organizations**；然后阅读[子组织](sub-organizations/README.md)。 |
+| 按用户组控制访问权限 | **Settings** → **Groups and Permissions**；然后阅读[用户组和权限](groups-and-permissions/README.md)。 |
 
-<figure><img src="../../../../.gitbook/assets/dbdc232-groups-permissions-en.png" alt="English Groups and Permissions screen in the Sandbox"><figcaption>Current English Sandbox view for DocBits Documentation Test A. Groups and Permissions is off in this example; no permission was changed.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc232-groups-permissions-en.png" alt="Sandbox 中的英文用户组和权限界面"><figcaption>DocBits Documentation Test A 的当前英文 Sandbox 视图。此示例中，“Groups and Permissions”处于关闭状态；未更改任何权限。</figcaption></figure>
 
-If a user cannot see a document or action, check their account and organisation first. Then check the relevant group permissions. Use a non-admin test account to confirm the access a normal user will actually have before changing a live organisation.
-
-
+如果用户看不到某份文档或某项操作，请先检查其账户和所属组织，然后检查相关用户组的权限。在更改正式组织的设置前，请使用非管理员测试账户确认普通用户实际拥有的访问权限。

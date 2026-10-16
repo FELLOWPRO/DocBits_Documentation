@@ -1,65 +1,65 @@
-# Workflow Logs
+# 工作流日志
 
-## **Overview**
+## **概述**
 
-The **Workflow Logs** allow users to analyze which workflows were executed for a document, understand the execution results, and drill into condition-level details for debugging or validation.
+**工作流日志**允许用户分析某个文档执行了哪些工作流、了解执行结果，并深入查看条件级别的详细信息，以便进行调试或验证。
 
-## **Accessing Workflow Logs**
+## **访问工作流日志**
 
-To access workflow logs:
+要访问工作流日志：
 
-1. Navigate to the **Dashboard**.
-2. Click the **Actions menu** (three-dot icon) next to the desired document.
-3. Select **Workflow Logs** from the menu.
-   * <mark style="color:red;">**Note**</mark>: The Workflow feature must be enabled to access this option.
-4.  A **side panel** opens showing a summary of executed workflows.\\
+1. 前往**仪表板**。
+2. 点击所需文档旁的**操作菜单**（三点图标）。
+3. 从菜单中选择**工作流日志**。
+   * <mark style="color:red;">**注意**</mark>：必须启用工作流功能才能访问此选项。
+4.  将打开一个**侧边面板**，显示已执行工作流的摘要。\\
 
-    <div align="left"><figure><img src="../../.gitbook/assets/image (8).png" alt="" width="563"><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
-## **Components of the Workflow Logs Panel**
+## **工作流日志面板的组成部分**
 
-#### **1. Workflow Summary Counters**
+#### **1. 工作流摘要计数器**
 
-Located at the top of the logs panel:
+位于日志面板顶部：
 
-* **Blue**: Total number of workflows executed.
-* **Red**: Workflows that ended in **errors**.
-* **Yellow**: Workflows that were **not finished** due to condition mismatches.
-* **Green**: Successfully **executed** workflows.
+* **蓝色**：已执行工作流的总数。
+* **红色**：以**错误**结束的工作流。
+* **黄色**：因条件不匹配而**未完成**的工作流。
+* **绿色**：已成功**执行**的工作流。
 
-#### **2. Workflow Execution Table**
+#### **2. 工作流执行表**
 
-Each row in the table represents one workflow execution and includes:
+表格中的每一行代表一次工作流执行，包含：
 
-* **Workflow Name**
-* **Timestamp** (Created On)
-* **Runtime** (in seconds)
-* **Result Icon**:
-  * Green checkmark: Workflow executed successfully.
-  * Red cross: Workflow executed with an error.
-  * Orange dash: Execution was stopped due to a conditions was not met
+* **工作流名称**
+* **时间戳**（创建时间）
+* **运行时间**（秒）
+* **结果图标**：
+  * 绿色勾号：工作流已成功执行。
+  * 红色叉号：工作流执行时发生错误。
+  * 橙色短横线：由于未满足条件，执行已停止
 
-Clicking the **arrow** on the left of each row expands the **workflow detail view**.
+点击每行左侧的**箭头**可展开**工作流详细信息视图**。
 
 <div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="" width="563"><figcaption></figcaption></figure></div>
 
-### **Workflow Detail View**
+### **工作流详细信息视图**
 
-Clicking a specific workflow row opens its **detailed execution log**, showing:
+点击某个工作流行会打开其**详细执行日志**，其中显示：
 
-#### **Condition Evaluation**
+#### **条件评估**
 
-* **When...** block: Initial condition.
-* **And...** block(s): Additional conditions.
-* **Then...** block(s): Actions performed when all conditions are met.
+* **When...** 区块：初始条件。
+* **And...** 区块：附加条件。
+* **Then...** 区块：所有条件均满足时执行的操作。
 
-Each condition line shows:
+每个条件行会显示：
 
-* **Green check**: Condition was met.
-* **Orange dash**: Condition was not met.
-* **Red cross**: Condition failed **due to an error**
+* **绿色勾号**：条件已满足。
+* **橙色短横线**：条件未满足。
+* **红色叉号**：条件因**错误而失败**
 
-### **Important Behavior Note**
+### **重要行为说明**
 
-If a condition in a workflow is **not met**, the system **stops evaluating any further workflow cards** within that workflow. This behavior prevents unnecessary processing\
-As a visual indicator, the card that **did not meet its condition** is shown in **gray**, and all **subsequent cards** in the same workflow will also appear **gray**, indicating that they were **not executed**.
+如果工作流中的某个条件**未满足**，系统会**停止评估该工作流中的所有后续工作流卡片**。此行为可避免不必要的处理\
+作为视觉提示，**未满足其条件**的卡片会显示为**灰色**，同一工作流中的所有**后续卡片**也会显示为**灰色**，表示它们**尚未执行**。

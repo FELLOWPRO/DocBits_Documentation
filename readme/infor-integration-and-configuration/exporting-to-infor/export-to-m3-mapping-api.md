@@ -1,163 +1,163 @@
-# Export to M3 Mapping (API)
+# 导出到 M3 的映射（API）
 
-### Sections
+### 章节
 
-M3 export mapping file is divided in 5 sections and each section is further divided into 2 sections
+M3 导出映射文件分为 5 个章节，每个章节又分为 2 个小节：
 
-* Header
-  * Header Static Fields
-  * Header Fields
-* Tax Lines
-  * Tax Line Static Fields
-  * Tax Line Fields
-* Receipt Lines
-  * Receipt Line Static Fields
-  * Receipt Line Fields
-* Order Charge Lines (Additional Amounts)
-  * Order Charge Static Fields
-  * Order Charge Fields
-* Cost Lines
-  * Cost Line Static Fields
-  * Cost Line Fields
+* 表头
+  * 表头静态字段
+  * 表头字段
+* 税额行
+  * 税额行静态字段
+  * 税额行字段
+* 收货行
+  * 收货行静态字段
+  * 收货行字段
+* 订单费用行（附加金额）
+  * 订单费用静态字段
+  * 订单费用字段
+* 成本行
+  * 成本行静态字段
+  * 成本行字段
 
-### Adding and Removing Fields
+### 添加和移除字段
 
-Adding New Field:
+添加新字段：
 
-* First we need to add the **M3 api field name** to the relevant section’s fields list property (e.g. StaticFields, HeaderFields, InvoiceTaxFields)
-* Define the static value or document field name for the api field with appropriate prefix for the section
-  * Example 1: To define a static value of **AAA** for the M3 api field **DIVI.** First we added DIVI to **StaticFields** property. Then we add a line **SF\_DIVI = AAA** as SF\_ is the prefix for static fields
-  * Example2: To map header field **IVDT (invoice data)** to invoice\_date field of DocBits. First we add IVDT to **HeaderFields** property. Then we add a line HF\_IVDT = invoice\_date as HF\_ is the prefix for header fields
+* 首先，需要将 **M3 API 字段名称**添加到相关章节的字段列表属性中（例如 StaticFields、HeaderFields、InvoiceTaxFields）。
+* 使用适用于该章节的前缀，为 API 字段定义静态值或文档字段名称。
+  * 示例 1：要为 M3 API 字段 **DIVI** 定义静态值 **AAA**，首先将 DIVI 添加到 **StaticFields** 属性中，然后添加一行 **SF\_DIVI = AAA**，因为 SF\_ 是静态字段的前缀。
+  * 示例 2：要将表头字段 **IVDT（发票日期）**映射到 DocBits 的 invoice\_date 字段，首先将 IVDT 添加到 **HeaderFields** 属性中，然后添加一行 HF\_IVDT = invoice\_date，因为 HF\_ 是表头字段的前缀。
 
-Removing Field:
+移除字段：
 
-* Just remove the field from section’s field list property and remove the line defining value for the field.
+* 只需从章节的字段列表属性中移除该字段，并删除定义该字段值的行。
 
-#### **Available M3 Api Fields:**
+#### **可用的 M3 API 字段：**
 
-* Available M3 fields can be checked by opening appropriate screen in M3.
+* 打开 M3 中相应的界面，即可查看可用的 M3 字段。
 
 <figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee.png" alt=""><figcaption></figcaption></figure>
 
-* Similarly you can get field names for lines
+* 同样，也可以获取行项目的字段名称。
 
-### Header:
+### 表头：
 
 <figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt=""><figcaption></figcaption></figure>
 
-Fields List Property: StaticFields
+字段列表属性：StaticFields
 
-Section Fields Prefix: SF\_
+章节字段前缀：SF\_
 
-Available Fields: You can map any M3 api field with any static value
+可用字段：可以将任意 M3 API 字段映射到任意静态值。
 
-#### **Header Fields**
+#### **表头字段**
 
-Fields List Property: HeaderFields
+字段列表属性：HeaderFields
 
-Section Fields Prefix: HF\_
+章节字段前缀：HF\_
 
-Available Fields: You can map any DocBits field to any M3 api field
+可用字段：可以将任意 DocBits 字段映射到任意 M3 API 字段。
 
-### Tax Line:
+### 税额行：
 
-#### Tax Line Static Fields:
+#### 税额行静态字段：
 
-Fields List Property: InvoiceTaxStaticFields
+字段列表属性：InvoiceTaxStaticFields
 
-Section Fields Prefix: IT\_SF\_
+章节字段前缀：IT\_SF\_
 
-Available M3 Fields: Please check M3 API or UI
+可用的 M3 字段：请查看 M3 API 或界面。
 
-Available DocBits Fields: You can put any value as they are static fields
+可用的 DocBits 字段：这些是静态字段，可以填写任意值。
 
-#### Tax Line Fields:
+#### 税额行字段：
 
-Fields List Property: InvoiceTaxFields
+字段列表属性：InvoiceTaxFields
 
-M3 Fields Prefix: ITF\_
+M3 字段前缀：ITF\_
 
-DocBits Table Field Prefix: TF\_
+DocBits 表格字段前缀：TF\_
 
-Available M3 Fields: Please check M3 API or UI
+可用的 M3 字段：请查看 M3 API 或界面。
 
-Available DocBits Fields: line\_number, tax\_amount, tax\_rate, net\_amount, gross\_amount, tax\_code\_full, tax\_code, tax\_country
+可用的 DocBits 字段：line\_number、tax\_amount、tax\_rate、net\_amount、gross\_amount、tax\_code\_full、tax\_code、tax\_country
 
-### Receipt Line:
+### 收货行：
 
-#### Receipt Line Static Fields:
+#### 收货行静态字段：
 
-Fields List Property: InvoiceReceiptStaticFields
+字段列表属性：InvoiceReceiptStaticFields
 
-Section Fields Prefix: IR\_SF\_
+章节字段前缀：IR\_SF\_
 
-Available M3 Fields: Please check M3 API or UI
+可用的 M3 字段：请查看 M3 API 或界面。
 
-Available DocBits Fields: You can put any value as they are static fields
+可用的 DocBits 字段：这些是静态字段，可以填写任意值。
 
-#### Receipt Line Fields:
+#### 收货行字段：
 
-Fields List Property: InvoiceReceiptFields
+字段列表属性：InvoiceReceiptFields
 
-M3 Fields Prefix: IRF\_
+M3 字段前缀：IRF\_
 
-DocBits Table Field Prefix: TF\_
+DocBits 表格字段前缀：TF\_
 
-Available M3 Fields: Please check M3 API or UI
+可用的 M3 字段：请查看 M3 API 或界面。
 
-Available DocBits Fields: packing\_slip, purchase\_order, line\_number, line\_sequence, delivery\_number, delivery\_line, amount, quantity, total\_net\_amount
+可用的 DocBits 字段：packing\_slip、purchase\_order、line\_number、line\_sequence、delivery\_number、delivery\_line、amount、quantity、total\_net\_amount
 
-### Order Charge Line:
+### 订单费用行：
 
-#### Order Charge Static Fields:
+#### 订单费用静态字段：
 
-Fields List Property: OrderChargeStaticFields
+字段列表属性：OrderChargeStaticFields
 
-Section Fields Prefix: OC\_SF\_
+章节字段前缀：OC\_SF\_
 
-Available M3 Fields: Please check M3 API or UI
+可用的 M3 字段：请查看 M3 API 或界面。
 
-Available DocBits Fields: You can put any value as they are static fields
+可用的 DocBits 字段：这些是静态字段，可以填写任意值。
 
-#### Order Charge Fields:
+#### 订单费用字段：
 
-Fields List Property: OrderChargeFields
+字段列表属性：OrderChargeFields
 
-M3 Fields Prefix: OCF\_
+M3 字段前缀：OCF\_
 
-DocBits Table Field Prefix: TF\_
+DocBits 表格字段前缀：TF\_
 
-Available M3 Fields: Please check M3 API or UI
+可用的 M3 字段：请查看 M3 API 或界面。
 
-Available DocBits Fields: ledger\_account, dimension\_2-7, amount, quantity, quantity2, position
+可用的 DocBits 字段：ledger\_account、dimension\_2-7、amount、quantity、quantity2、position
 
-### Cost Line:
+### 成本行：
 
-#### Cost Line Static Fields:
+#### 成本行静态字段：
 
-Fields List Property: InvoiceCostStaticFields
+字段列表属性：InvoiceCostStaticFields
 
-Section Fields Prefix: IC\_SF\_
+章节字段前缀：IC\_SF\_
 
-Available M3 Fields: Please check M3 API or UI
+可用的 M3 字段：请查看 M3 API 或界面。
 
-Available DocBits Fields: You can put any value as they are static fields
+可用的 DocBits 字段：这些是静态字段，可以填写任意值。
 
-#### Cost Line Fields:
+#### 成本行字段：
 
-Fields List Property: InvoiceCostFields
+字段列表属性：InvoiceCostFields
 
-M3 Fields Prefix: ICF\_
+M3 字段前缀：ICF\_
 
-DocBits Table Field Prefix: TF\_
+DocBits 表格字段前缀：TF\_
 
-Available M3 Fields: Please check M3 API or UI
+可用的 M3 字段：请查看 M3 API 或界面。
 
-Available DocBits Fields: ledger\_account, dimension\_1-12, amount, quantity, quantity2, position
+可用的 DocBits 字段：ledger\_account、dimension\_1-12、amount、quantity、quantity2、position
 
-New update
+新更新
 
 ```
 ###########################
@@ -294,7 +294,7 @@ ICF_AO06=TF_accounting_object_6
 ICF_AO07=TF_accounting_object_7
 ```
 
-### For US Customer we update this mapping to V3
+### 对于美国客户，我们将此映射更新为 V3
 
 ````
 ```

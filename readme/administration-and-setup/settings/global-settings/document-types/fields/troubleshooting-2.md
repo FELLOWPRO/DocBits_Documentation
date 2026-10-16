@@ -1,31 +1,28 @@
-# Troubleshooting
+# 故障排除
 
-## Fix common problems
+## 解决常见问题
 
-Here is advice for troubleshooting common problems in a document processing system, including fields not capturing data correctly, OCR errors, and validation rule issues:
+以下建议可帮助你排查文档处理系统中的常见问题，包括字段无法正确捕获数据、OCR 错误以及验证规则问题：
 
-### Fields not capturing data correctly:
+### 字段无法正确捕获数据：
 
-* Check the configuration of the field in question to ensure the correct field type is being used and that all required properties are set correctly.
-* Make sure users have the correct instructions to enter data correctly into the field, and provide training or guidelines if necessary.
-* If the problem persists, run tests to verify whether the problem is systemic or only occurs with certain inputs. This can help you more accurately determine the cause of the problem.
+* 检查相关字段的配置，确认使用了正确的字段类型，并且所有必需属性都已正确设置。
+* 确保用户获得了正确的说明，知道如何在字段中正确输入数据；如有需要，请提供培训或指南。
+* 如果问题仍然存在，请运行测试，确认这是系统性问题，还是只会在某些输入情况下发生。这有助于你更准确地确定问题原因。
 
-### OCR errors:
+### OCR 错误：
 
-* Check the quality of the scanned documents, including the readability of the text and any distortion or blurring.
-* Adjust the OCR settings, including the language, text recognition algorithm, and other parameters, to improve accuracy. Perform OCR preview or test runs to check the performance of the OCR system and identify potential sources of errors.&#x20;
-* If OCR errors persist, you may want to consider implementing an advanced OCR system or looking into external OCR services.
+* 检查扫描文档的质量，包括文本是否清晰易读，以及是否存在变形或模糊。
+* 调整 OCR 设置，包括语言、文本识别算法和其他参数，以提高准确性。执行 OCR 预览或测试运行，检查 OCR 系统的性能并找出可能的错误来源。&#x20;
+* 如果 OCR 错误持续存在，可以考虑采用高级 OCR 系统，或了解外部 OCR 服务。
 
-### Validation rule issues:
+### 验证规则问题：
 
-* Review the configuration of validation rules to make sure they are set up correctly and meet the desired criteria.
-* Make sure validation rules are not too restrictive and that they carefully consider the actual data.
-* Run tests to make sure validation rules work as expected and check that they respond appropriately to unexpected data or edge cases.
-* Provide users with guidance and error messages to alert them to any validation errors and help them enter the correct data.
-
-
-
-By systematically reviewing and troubleshooting these common issues, you can improve the performance and accuracy of your document processing system and ensure that it runs smoothly and efficiently.
+* 检查验证规则的配置，确保规则设置正确并符合预期标准。
+* 确保验证规则没有过于严格，并且充分考虑了实际数据。
+* 运行测试，确认验证规则按预期工作，并检查其对意外数据或边缘情况的响应是否恰当。
+* 向用户提供指导和错误消息，提醒他们注意验证错误，并帮助他们输入正确的数据。
 
 
 
+通过系统地检查和排查这些常见问题，你可以提升文档处理系统的性能和准确性，并确保系统平稳、高效地运行。

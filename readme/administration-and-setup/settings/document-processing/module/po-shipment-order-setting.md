@@ -1,46 +1,46 @@
-# PO Shipment Order Setting
+# PO 发运订单设置
 
-## **Overview**
+## **概述**
 
-The **PO Shipment Order** section provides a breakdown of delivery and invoicing status for matched Purchase Order items. This section appears within the **Purchase Order Matching** screen when the feature is enabled.
+**PO Shipment Order（采购订单发运订单）**部分会显示已匹配采购订单行项目的交付和开票状态明细。启用此功能后，该部分会显示在**采购订单匹配**界面中。
 
-## **How to Enable**
+## **如何启用**
 
-To activate this feature:
+启用此功能：
 
-1. Go to **Settings** → **Document Processing** → **Module**.
-2. Select **Purchase Order**.
-3.  Enable the **PO Shipment Order** option.\
+1. 前往**设置** → **文档处理** → **模块**。
+2. 选择**采购订单**。
+3. 启用**PO Shipment Order**选项。\
     \
 
 
     <div align="left"><figure><img src="../../../../.gitbook/assets/PO-Shipment-Order-Setting.jpg" alt="" width="563"><figcaption></figcaption></figure></div>
 
-## **Where It Appears**
+## **显示位置**
 
-Once enabled, the PO Shipment Order section becomes visible in the Purchase Order Matching interface.
+启用后，**PO Shipment Order**部分会显示在采购订单匹配界面中。
 
 <figure><img src="../../../../.gitbook/assets/PO-Shipment-Order-1.jpg" alt=""><figcaption></figcaption></figure>
 
-### **PO Shipment Order – Field Descriptions**
+### **PO Shipment Order – 字段说明**
 
 * **Item ID**\
-  Identifies the specific item in the purchase order.
+  标识采购订单中的特定行项目。
 * **Delivery Number**\
-  Reference number for the shipment or delivery.
+  发运或交付的参考编号。
 * **Shipped Quantity**\
-  Quantity that has been delivered or received.
+  已交付或接收的数量。
 * **Invoiced Quantity**\
-  Quantity that has already been invoiced.
+  已开票的数量。
 * **Invoice Open Quantity**\
-  Quantity still open for invoicing (calculated as _Shipped Quantity – Invoiced Quantity_).
+  仍待开票的数量（计算方式为 _Shipped Quantity – Invoiced Quantity_）。
 * **Progress Bar and Percentage**
-  * Shows how much of the shipped quantity has been matched with invoices.
-  * Starts at 0% for new POs.
-  * Updates cumulatively across multiple invoices.
-  * Reflects total progress of invoiced vs. shipped items.
+  * 显示已与发票匹配的发运数量。
+  * 新建采购订单的进度从 0% 开始。
+  * 随着多张发票的处理，进度会累计更新。
+  * 反映已开票数量相对于发运数量的总体进度。
 * **Promised Delivery Date**\
-  The expected delivery date for the PO item.
+  该采购订单行项目的预计交付日期。
 *   **Late Indicator**
 
-    Displays the number of days the delivery is late based on the **Promised Delivery Date**.
+    根据**Promised Delivery Date**显示交付逾期的天数。

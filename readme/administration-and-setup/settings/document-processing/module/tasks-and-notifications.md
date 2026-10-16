@@ -1,44 +1,44 @@
-# Tasks & Notifications
+# 任务与通知
 
-### Overview
+### 概述
 
-The **Tasks & Notifications** setting turns on DocBits’ built-in task management. When it is enabled, team members can create tasks, assign documents to each other (for example for validation, correction or approval) and receive notifications about them. It also unlocks the **Dashboard Tasks Count** option described below.
+**任务与通知**设置可启用 DocBits 内置的任务管理功能。启用后，团队成员可以创建任务、将文档分配给彼此（例如用于验证、更正或审批），并接收相关通知。该设置还会解锁下文介绍的**仪表板任务计数**选项。
 
-This setting is **disabled by default**.
+此设置默认**禁用**。
 
-### What Does It Do?
+### 有什么作用？
 
-* **Enabled** — The Tasks & Notifications features become available across DocBits. Users can assign tasks, track their status and get notified when something needs their attention.
-* **Disabled** — Task assignment and the related notifications are turned off. (Turning this off also automatically turns off **Dashboard Tasks Count**.)
+* **已启用** — DocBits 中的任务与通知功能将变为可用。用户可以分配任务、跟踪任务状态，并在有事项需要处理时收到通知。
+* **已禁用** — 任务分配及相关通知将关闭。（关闭此设置也会自动关闭**仪表板任务计数**。）
 
-### Dashboard Tasks Count
+### 仪表板任务计数
 
-**Dashboard Tasks Count** is an additional option that appears only when **Tasks & Notifications** is enabled. It controls whether a **task counter** is shown on the Dashboard.
+**仪表板任务计数**是一个附加选项，仅在启用**任务与通知**后显示。它用于控制是否在仪表板上显示**任务计数器**。
 
-* **Enabled** — The Dashboard shows how many documents are waiting (for example in your queue and ready for validation), so the team sees at a glance how much work is open.
-* **Disabled** — The counter is hidden. Tasks still work normally; only the number on the Dashboard is not displayed.
+* **已启用** — 仪表板会显示待处理文档的数量（例如队列中等待验证的文档），让团队一眼了解当前未完成的工作量。
+* **已禁用** — 计数器将隐藏。任务仍可正常使用；仪表板上只是不显示数量。
 
 {% hint style="info" %}
-**Dashboard Tasks Count** depends on **Tasks & Notifications**. If you switch Tasks & Notifications off, the task counter is switched off as well.
+**仪表板任务计数**依赖于**任务与通知**。如果关闭任务与通知，任务计数器也会随之关闭。
 {% endhint %}
 
-### Benefits
+### 优势
 
-* **Clear responsibilities**: Documents can be assigned to the right person instead of relying on email.
-* **Nothing gets forgotten**: Notifications remind users about documents that need their action.
-* **At-a-glance workload**: With Dashboard Tasks Count, the team immediately sees how many documents are still open.
+* **职责明确**：可以将文档分配给合适的人员，无需依赖电子邮件。
+* **不遗漏任何事项**：通知会提醒用户处理需要他们跟进的文档。
+* **工作量一目了然**：使用仪表板任务计数后，团队可以立即看到仍有多少文档尚未处理。
 
-### How to Use
+### 如何使用
 
-1. Go to **Settings**.
-2. Select **Document Processing**.
-3. Select **Module**.
-4. Open the **Document Type** section.
-5. Switch **Tasks & Notifications** on.
-6. (Optional) Once it is on, the **Dashboard Tasks Count** toggle appears below it — switch it on to show the task counter on the Dashboard.
+1. 前往**设置**。
+2. 选择**文档处理**。
+3. 选择**模块**。
+4. 打开**文档类型**部分。
+5. 打开**任务与通知**。
+6. （可选）启用后，其下方会显示**仪表板任务计数**开关 — 打开该开关即可在仪表板上显示任务计数器。
 
-### When to Use This Feature
+### 何时使用此功能
 
-* **Teams that share document work**: Enable it when several people validate or approve documents and need to hand work to each other.
-* **Workload visibility**: Also enable Dashboard Tasks Count when supervisors want to see open work directly on the Dashboard.
-* **Single-user or fully automated setups**: You can leave it off if no one needs to assign documents or track tasks.
+* **需要协同处理文档的团队**：如果多人需要验证或审批文档，并需要互相交接工作，请启用此功能。
+* **查看工作量**：如果主管希望直接在仪表板上查看未完成的工作，也请启用仪表板任务计数。
+* **单用户或全自动化设置**：如果无需任何人分配文档或跟踪任务，可以保持关闭。

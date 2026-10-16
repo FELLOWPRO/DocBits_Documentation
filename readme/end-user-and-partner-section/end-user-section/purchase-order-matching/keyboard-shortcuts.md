@@ -1,21 +1,21 @@
-# Keyboard Shortcuts
+# 键盘快捷键
 
-The PO matching screen has dedicated shortcuts to streamline the matching process:
+PO 匹配界面提供专用快捷键，以简化匹配流程：
 
-* **Tab** – Moves between different menu points on the sidebar, allowing quick navigation without clicking.
-* **Control + M** – Moves between the buttons available in the PO matching section, helping users efficiently navigate action options.
-* **Enter** – Selects or clicks the currently focused button, confirming actions without needing to use the mouse.
-* **Control + H** – Opens the documentation for PO matching, providing immediate access to assistance.
-* **Control + K** – Opens the keyboard shortcuts menu, displaying all available shortcuts for this section.
-* **Control + D** – Enables or disables the purchase order training mode, allowing users to switch between normal and training modes.
-* **Control + A** – Performs automatic purchase order matching.
-* **Control + S** – Saves the document, ensuring all modifications are stored properly.
-* **Control + R** – Rejects the document, marking it for revision or additional verification.
-* **Control + E** – Exports the document, generating an export file based on the applied settings.
-* **Control + F** – Opens the purchase order search function, allowing users to quickly locate specific purchase orders.
-* **Control + P** – Selects the first row of the purchase order lines, making it easy to begin working with order data.
-* **Control + L** – Selects the first row of the invoice lines, allowing quick access to invoice details.
-* **Control + Left Click** – Selects or unselects rows of the purchase order, enabling flexible selection of multiple entries.
-* **Control + C / Alt + C** – Selects purchase order rows to begin mapping to invoice lines, setting up the mapping process.
-* **Control + V / Alt + V** – Maps the selected purchase order lines to the invoice lines, linking data efficiently.
-* **Option + Shift + Left Click** – Selects all purchase order lines between the first selected and the last selected row, simplifying the bulk selection process.
+* **Tab** – 在侧边栏的不同菜单项之间移动，无需点击即可快速导航。
+* **Control + M** – 在 PO 匹配区域的可用按钮之间移动，帮助用户高效浏览操作选项。
+* **Enter** – 选择或点击当前获得焦点的按钮，无需使用鼠标即可确认操作。
+* **Control + H** – 打开 PO 匹配文档，立即获取帮助。
+* **Control + K** – 打开键盘快捷键菜单，显示此区域的所有可用快捷键。
+* **Control + D** – 启用或禁用采购订单训练模式，让用户可以在正常模式和训练模式之间切换。
+* **Control + A** – 自动匹配采购订单。
+* **Control + S** – 保存文档，确保妥善保存所有修改。
+* **Control + R** – 拒绝文档，将其标记为需要修订或进一步验证。
+* **Control + E** – 导出文档，根据已应用的设置生成导出文件。
+* **Control + F** – 打开采购订单搜索功能，帮助用户快速查找特定采购订单。
+* **Control + P** – 选择采购订单行项目的第一行，方便开始处理订单数据。
+* **Control + L** – 选择发票行项目的第一行，快速查看发票详情。
+* **Control + Left Click** – 选择或取消选择采购订单的行，以便灵活选择多个条目。
+* **Control + C / Alt + C** – 选择采购订单行，以开始将其映射到发票行项目并设置映射流程。
+* **Control + V / Alt + V** – 将选中的采购订单行映射到发票行项目，高效关联数据。
+* **Option + Shift + Left Click** – 选择第一条和最后一条已选行之间的所有采购订单行，简化批量选择流程。

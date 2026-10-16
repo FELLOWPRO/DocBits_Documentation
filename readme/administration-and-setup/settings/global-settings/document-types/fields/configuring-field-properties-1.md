@@ -1,34 +1,34 @@
-# Configuring Field Properties
+# 配置字段属性
 
-Use **Settings → Document Types → Fields** to control how fields behave for a document type. Select the document type first; the example below shows **Invoice** in the English interface.
+使用 **设置 → 文档类型 → 字段** 控制某个文档类型的字段行为。请先选择文档类型；下方示例显示的是英文界面中的 **Invoice**。
 
-<figure><img src="../../../../../.gitbook/assets/dbdc155-field-properties-overview-en.png" alt="English Invoice field settings with recognition thresholds, search, field property columns, and Save Settings"><figcaption>Invoice field settings in a DocBits sandbox organization.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc155-field-properties-overview-en.png" alt="英文 Invoice 字段设置，包含识别阈值、搜索、字段属性列和 Save Settings"><figcaption>DocBits 沙盒组织中的 Invoice 字段设置。</figcaption></figure>
 
-## Find a field and change its properties
+## 查找字段并更改其属性
 
-1. In **Search by Name**, enter the field name or label. This filters the list; it does not change the field.
-2. Find the field row. For example, **Invoice number** has the technical name `invoice_id`.
-3. Adjust the controls in that row, then select **Save Settings**. The same save button is available above and below the table.
+1. 在 **Search by Name** 中输入字段名称或标签。此操作会筛选列表，不会更改字段。
+2. 找到字段所在行。例如，**Invoice number** 的技术名称为 `invoice_id`。
+3. 调整该行中的控件，然后选择 **Save Settings**。表格上方和下方均提供相同的保存按钮。
 
-<figure><img src="../../../../../.gitbook/assets/dbdc155-field-properties-filtered-en.png" alt="English Invoice number field showing Required, Read Only, Hidden, Force Validation, Use AI, OCR and Match Score controls"><figcaption>The Invoice number row after searching for `invoice_id`.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc155-field-properties-filtered-en.png" alt="英文 Invoice number 字段，显示 Required、Read Only、Hidden、Force Validation、Use AI、OCR 和 Match Score 控件"><figcaption>搜索 `invoice_id` 后显示的 Invoice number 行。</figcaption></figure>
 
-| Control | What to use it for |
+| 控件 | 用途 |
 | --- | --- |
-| **Required** | Mark information that must be present for validation. Check the document's validation result after changing this setting. |
-| **Read Only** | Show a field without allowing users to edit its value. |
-| **Hidden** | Keep the field out of the normal document view. |
-| **Force Validation** | Require the field to pass validation. Configure detailed rules separately; this checkbox is not a rule editor. |
-| **Use AI** | Request or stop AI extraction for this field. The row displays whether extraction is requested. |
-| **OCR** | Enter the field's OCR confidence threshold. This is a number, not an on/off switch or a language setting. |
-| **Match Score** | Enter the field's matching threshold. This is a number, not an on/off switch. |
+| **Required** | 将验证时必须填写的信息标记为必填。更改此设置后，请检查文档的验证结果。 |
+| **Read Only** | 显示字段，但不允许用户编辑其值。 |
+| **Hidden** | 在常规文档视图中隐藏该字段。 |
+| **Force Validation** | 要求字段通过验证。请另行配置详细规则；此复选框不是规则编辑器。 |
+| **Use AI** | 请求或停止对该字段进行 AI 提取。该行会显示是否已请求提取。 |
+| **OCR** | 输入字段的 OCR 置信度阈值。这是一个数值，不是开关或语言设置。 |
+| **Match Score** | 输入字段的匹配阈值。这是一个数值，不是开关。 |
 
-The **OCR** and **Match Score** sliders under **Recognition Settings** apply values across the field list. The checkboxes directly below the column titles apply **Required**, **Read Only**, **Hidden**, or **Force Validation** across the list. Review the affected rows before selecting **Save Settings**. **Restore Defaults** resets the field configuration; use it only when you intend to replace your changes.
+**Recognition Settings** 下的 **OCR** 和 **Match Score** 滑块会将相应的值应用到整个字段列表。列标题正下方的复选框会将 **Required**、**Read Only**、**Hidden** 或 **Force Validation** 应用到整个列表。选择 **Save Settings** 前，请检查受影响的行。**Restore Defaults** 会重置字段配置；只有在确实要替换自己的更改时才使用此选项。
 
-## Other controls in this view
+## 此视图中的其他控件
 
-- **Create new group** and **Create field** add a group or a field. See [Adding and Editing Fields](adding-and-editing-fields.md).
-- **Master Data Settings** opens the [master data configuration](master-data-settings.md).
-- The leftmost checkboxes select fields. The adjacent menu offers **Reassign Field Group** for selected fields.
-- The **Formula** plus button opens the formula editor for that field. The **info** icon shows field information. The delete icon is unavailable for standard fields.
+- **Create new group** 和 **Create field** 分别用于添加分组或字段。请参阅[添加和编辑字段](adding-and-editing-fields.md)。
+- **Master Data Settings** 会打开[主数据配置](master-data-settings.md)。
+- 最左侧的复选框用于选择字段。相邻菜单中的 **Reassign Field Group** 可用于重新分配所选字段的分组。
+- **Formula** 加号按钮会打开该字段的公式编辑器。**info** 图标会显示字段信息。标准字段无法使用删除图标。
 
-For more on validation and matching, see [Setting Validation and Match Score](setting-validation-and-match-score.md).
+有关验证和匹配的更多信息，请参阅[设置验证和匹配分数](setting-validation-and-match-score.md)。

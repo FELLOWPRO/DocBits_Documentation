@@ -2,37 +2,37 @@
 hidden: true
 ---
 
-# Best Practices
+# 最佳实践
 
-Best practices for managing EDI configurations include regular updates to adapt to changing standards, thorough testing of EDI templates, and maintaining clear documentation of all transformations and structure descriptions.
+管理 EDI 配置的最佳实践包括定期更新以适应不断变化的标准，全面测试 EDI 模板，并清晰记录所有转换和结构说明。
 
-## Here are some best practices for managing EDI configurations:
+## 管理 EDI 配置的一些最佳实践：
 
-**Regular updates and adaptations to changing standards:**
+**定期更新并适应不断变化的标准：**
 
-* Stay up to date with changes in the EDI standards such as ANSI X12, EDIFACT, or industry-specific standards.
-* Schedule regular reviews of your EDI configurations to ensure they comply with current standards.
-* Adapt your EDI templates and transformations accordingly to reflect new requirements and changes in the standards.
+* 随时了解 ANSI X12、EDIFACT 或行业专用标准等 EDI 标准的变化。
+* 定期检查 EDI 配置，确保其符合当前标准。
+* 相应地调整 EDI 模板和转换，以反映标准中的新要求和变化。
 
-**Thorough testing of EDI templates:**
+**全面测试 EDI 模板：**
 
-* Perform comprehensive testing of your EDI templates to ensure they deliver the expected results.
-* Use both automated and manual testing methods to verify the accuracy and reliability of your transformations. Test different scenarios and edge cases to ensure your templates are robust enough to handle different data formats.
+* 全面测试 EDI 模板，确保其能够产生预期结果。
+* 使用自动化和手动测试方法，验证转换的准确性和可靠性。测试不同的场景和边界情况，确保模板足够可靠，能够处理不同的数据格式。
 
-**Clear documentation of all transformations and structure descriptions:**
+**清晰记录所有转换和结构说明：**
 
-* Maintain detailed documentation of all EDI transformations, including the XSLT scripts or other transformation rules you use.
-* Also document the structure descriptions of your EDI messages, including the segment, element and data type definitions.
-* Keep the documentation up to date and accessible to all team members working with the EDI implementation.
+* 详细记录所有 EDI 转换，包括所使用的 XSLT 脚本或其他转换规则。
+* 同时记录 EDI 消息的结构说明，包括段、元素和数据类型定义。
+* 及时更新文档，并确保所有参与 EDI 实施的团队成员都能访问。
 
-**Versioning of configurations:**
+**配置版本管理：**
 
-* Implement versioning of your EDI configurations to track changes and revert to previous versions if necessary.
-* Use an appropriate version control system to track changes and ensure that all team members have access to the most current version.
+* 对 EDI 配置实施版本管理，以跟踪变更，并在必要时恢复到以前的版本。
+* 使用适当的版本控制系统跟踪变更，并确保所有团队成员都能访问最新版本。
 
-**Training and education of employees:**
+**员工培训与教育：**
 
-* Ensure that your employees have the necessary knowledge and skills to effectively handle the EDI configurations.
-* Provide training and education to ensure your team is aware of the latest developments in EDI standards and practices.
+* 确保员工具备有效处理 EDI 配置所需的知识和技能。
+* 提供培训和教育，确保团队了解 EDI 标准和实践的最新进展。
 
-By implementing these best practices, you can improve the efficiency, accuracy and reliability of your EDI configurations and ensure they meet the ever-changing needs of your business and your business partners.
+通过实施这些最佳实践，您可以提高 EDI 配置的效率、准确性和可靠性，并确保其满足业务及业务合作伙伴不断变化的需求。

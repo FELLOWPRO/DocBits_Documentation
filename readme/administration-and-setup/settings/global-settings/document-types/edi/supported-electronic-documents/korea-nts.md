@@ -1,31 +1,31 @@
 ---
-description: KOREA NTS electronic document support in DocBits
+description: "DocBits 对韩国 NTS 电子文档的支持"
 ---
 
-# 🇰🇷 KOREA NTS
+# 🇰🇷 韩国 NTS
 
-| Property             | Value                      |
+| 属性 | 值 |
 | -------------------- | -------------------------- |
-| **Country / Region** | South Korea                |
-| **Document Types**   | Tax Invoice, Cash Receipt  |
-| **Format**           | XML                        |
-| **Standard**         | NTS (National Tax Service) |
+| **国家 / 地区** | 韩国 |
+| **文档类型** | 税务发票、现金收据 |
+| **格式** | XML |
+| **标准** | NTS（National Tax Service，韩国国税厅） |
 
-Korea NTS refers to the broader National Tax Service electronic document system that encompasses tax invoices, cash receipts, and other tax-related documents. DocBits processes NTS documents and extracts all standard fields including business registration numbers, supply values, and tax amounts.
+韩国 NTS 指的是范围更广的韩国国税厅电子文档系统，涵盖税务发票、现金收据及其他税务相关文档。DocBits 可处理 NTS 文档，并提取所有标准字段，包括企业注册号、供应金额和税额。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件 | 状态 |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览 | ✅ 支持 |
+| 字段提取 | ✅ 支持 |
+| 转换 | ✅ 支持 |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/korea-nts-preview.png" alt="Korea NTS invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Korea NTS invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/korea-nts-preview.png" alt="DocBits 中的韩国 NTS 发票预览"><figcaption><p>DocBits 中韩国 NTS 发票的默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
-* [Korea E-Tax Invoice](korea-e-tax-invoice.md)
+* [支持的电子文档](./)
+* [韩国电子税务发票](korea-e-tax-invoice.md)

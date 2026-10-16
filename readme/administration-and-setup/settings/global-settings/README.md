@@ -1,22 +1,20 @@
-# Global Settings
+# 全局设置
 
-Use **Settings** to manage the organisation and the way documents are processed. The current app groups settings by purpose in the left menu; it does not show a separate screen named “Global Settings”.
+使用 **设置** 管理组织以及文档的处理方式。当前应用会在左侧菜单中按用途对设置进行分组，不会显示名为“全局设置”的独立页面。
 
-1. Select the gear icon to open **Settings**.
-2. Under **Organization & Access**, choose the area you need, such as **Company Information** or **Users**.
-3. Under **Document Processing**, choose **Document Types** to configure a particular kind of document.
+1. 选择齿轮图标以打开 **设置**。
+2. 在 **组织与访问权限** 下，选择所需区域，例如 **公司信息** 或 **用户**。
+3. 在 **文档处理** 下，选择 **文档类型**，以配置特定类型的文档。
 
-<figure><img src="../../../.gitbook/assets/dbdc230-global-settings-en.png" alt="English Settings menu and Company Information screen"><figcaption>Current English Sandbox view for DocBits Documentation Test A. Company Information is selected; no values were changed.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc230-global-settings-en.png" alt="英文版设置菜单和公司信息页面"><figcaption><p>DocBits Documentation Test A 的当前英文 Sandbox 视图。已选中“公司信息”；未更改任何值。</p></figcaption></figure>
 
-Start with the guide that matches your task:
+请根据您的任务从相应指南开始：
 
-* [Company Information](company-information/README.md) for company details and preferences.
-* [Groups, Users and Permissions](groups-users-and-permissions/README.md) for who can work in the organisation.
-* [Subscription Plan](subscription-plan/README.md) for plan information.
-* [Integration](integration/README.md) for connections and API keys.
-* [Document Types](document-types/README.md) for document-specific configuration.
-* [Email Notification](email-notification/README.md) and [E-Mail templates](e-mail-templates.md) for messages sent by DocBits.
+* [公司信息](company-information/)介绍公司详情和偏好设置。
+* [群组、用户和权限](groups-users-and-permissions/)介绍组织内的工作权限。
+* [订阅计划](subscription-plan.md)介绍计划信息。
+* [集成](integration/)介绍连接和 API 密钥。
+* [文档类型](document-types/)介绍针对特定文档的配置。
+* [电子邮件通知](email-notification/)和[电子邮件模板](e-mail-templates.md)介绍 DocBits 发送的消息。
 
-Settings can affect live documents and other users. Review the relevant guide and check changes in a test organisation before saving them in production.
-
-
+设置可能会影响实时文档和其他用户。请先查阅相关指南，并在测试组织中检查更改，然后再在生产环境中保存。

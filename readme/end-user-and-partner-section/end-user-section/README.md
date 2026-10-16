@@ -1,23 +1,23 @@
-# End User Section
+# 终端用户部分
 
-### Getting Started
+### 开始使用
 
-* **Login and Navigation:** How to access Docbits and navigate through the interface.
-* **Initial Configuration:** Setting up Docbits for first-time use.
+* **登录和导航：** 如何访问 DocBits 并浏览界面。
+* **初始配置：** 如何为首次使用设置 DocBits。
 
-### Daily Use
+### 日常使用
 
-* **Document Submission:** Instructions for submitting documents into Docbits.
-* **Document Review and Approval:**
-  * **Approving Orders:** Steps for reviewing and approving order forms.
-  * **Processing Invoices:** Guide on how to process incoming invoices for payment.
+* **提交文档：** 如何将文档提交到 DocBits。
+* **文档审查和审批：**
+  * **审批订单：** 审查和审批订单表单的步骤。
+  * **处理发票：** 如何处理收到的发票以便付款。
 
-### Managing Documents
+### 管理文档
 
-* **Search and Retrieve:** How to find and access documents within Docbits.
-* **Edit and Update:** Editing documents and updating their status.
+* **搜索和检索：** 如何在 DocBits 中查找和访问文档。
+* **编辑和更新：** 编辑文档并更新其状态。
 
-### Troubleshooting
+### 故障排除
 
-* **Common Issues:** Solutions to frequent problems encountered by users.
-* [**Support Contact**](ressources-and-support/user-support.md)**:** How to reach support for assistance.
+* **常见问题：** 用户经常遇到的问题及其解决方案。
+* [**支持联系**](ressources-and-support/user-support.md)**：** 如何联系支持团队以获取帮助。

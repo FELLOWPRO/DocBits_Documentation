@@ -1,7 +1,7 @@
-# Master PO Matching with DocBits
+# 使用 DocBits 掌握采购订单匹配
 
-Discover in this video how to professionally handle discrepancies during PO matching with **DocBits**. We guide you step by step through what to do when numbers don’t align. Whether you’re an experienced ERP manager or an aspiring financial accountant, you’ll learn how to efficiently and securely manage discrepancies.
+在本视频中，了解如何借助 **DocBits** 专业地处理采购订单匹配过程中的差异。我们将逐步指导您了解在数字不一致时该怎么做。无论您是经验丰富的 ERP 管理人员，还是有志成为财务会计师的从业者，都将学会如何高效、安全地管理差异。
 
 {% embed url="https://youtu.be/TUd0z7m70Y4" %}
 
-Learn how our special AI swarm intelligence in **DocBits** leads you through the entire process and how you can use our documentation to quickly find solutions to problems or uncertainties. Join the many satisfied customers who have optimized their processes with **DocBits**.
+了解 **DocBits** 的专属 AI 群体智能如何引导您完成整个流程，以及如何利用我们的文档快速找到问题或疑问的解决方案。加入众多满意客户的行列，借助 **DocBits** 优化您的流程。

@@ -1,14 +1,14 @@
-# Supplier Lookup Validation
+# 供应商查询验证
 
-## What does this script do?
+## 此脚本的作用是什么？
 
-Validates the supplier number from the invoice against master data in the lookup table. If the supplier is found, their name and payment terms are automatically filled in. If not found, the field is marked as invalid so the user can correct it.
+将发票中的供应商编号与查询表中的主数据进行验证。如果找到该供应商，系统会自动填入其名称和付款条款。如果未找到，则会将该字段标记为无效，以便用户更正。
 
-## Trigger
+## 触发条件
 
-`AFTER_FORMATTING` on document type **INVOICE**
+文档类型 **INVOICE** 上的 `AFTER_FORMATTING`
 
-## Full Script
+## 完整脚本
 
 ```python
 # Read supplier ID from the document
@@ -35,16 +35,16 @@ if supplier_id:
                              f"Supplier '{supplier_id}' not found in master data")
 ```
 
-## Step-by-Step Explanation
+## 分步说明
 
-1. **Read supplier ID** from the document using `get_field_value()`
-2. **Query lookup table** with `get_lookup_records()` using the vendor ID as filter
-3. **On match**: Auto-fill supplier name and payment terms from master data
-4. **On no match**: Mark supplier ID field as invalid with a descriptive error message
+1. **读取供应商 ID**：使用 `get_field_value()` 从文档中读取
+2. **查询查询表**：使用 `get_lookup_records()` 并将供应商 ID 作为筛选条件
+3. **找到匹配项时**：从主数据自动填入供应商名称和付款条款
+4. **未找到匹配项时**：将供应商 ID 字段标记为无效，并显示描述性错误消息
 
-## Functions Used
+## 使用的函数
 
-- [get\_field\_value()](../field-functions.md#get\_field\_value) — Read field value
-- [get\_lookup\_records()](../business-logic-functions.md#get\_lookup\_records) — Query master data
-- [set\_field\_value()](../field-functions.md#set\_field\_value) — Write field value
-- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Show validation error
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — 读取字段值
+- [get\_lookup\_records()](../business-logic-functions.md#get\_lookup\_records) — 查询主数据
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — 写入字段值
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — 显示验证错误

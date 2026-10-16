@@ -1,130 +1,130 @@
-# Lookup field configuration
+# 查找字段配置
 
-## Tabelle `public.lookup_field_configuration`
+## 表格 `public.lookup_field_configuration`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `lookup_rec_id`: internal
-* `field_id`: internal
-* `lookup_field`: internal
-* `is_searchable`: boolean
-* `parent_field_id`: internal
-* `auto_trigger`: boolean
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
-* `search_operator`: internal
-* `last_modified_by`: internal
-* `deleted_by`: internal
+* `id`：内部字段
+* `org_id`：组织 ID
+* `lookup_rec_id`：内部字段
+* `field_id`：内部字段
+* `lookup_field`：内部字段
+* `is_searchable`：布尔值
+* `parent_field_id`：内部字段
+* `auto_trigger`：布尔值
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `deleted_on`：带时区的时间戳
+* `search_operator`：内部字段
+* `last_modified_by`：内部字段
+* `deleted_by`：内部字段
 
-### Analyse & Beschreibung
+### 分析与描述
 
-## Table Documentation: `public.lookup_field_configuration`
+## 表文档：`public.lookup_field_configuration`
 
-### Introduction
+### 简介
 
-The `public.lookup_field_configuration` table appears to be a configuration table used to define and manage lookup fields within an application. The table includes metadata about each field, such as its identifier, associated organization, searchability, and audit information. This table is likely part of a larger system for managing dynamic or user-defined fields, allowing for complex querying and configuration capabilities.
+`public.lookup_field_configuration` 表似乎是一个配置表，用于在应用程序中定义和管理查找字段。该表包含每个字段的元数据，例如字段标识符、关联的组织、是否可搜索以及审计信息。该表可能属于一个更大型的系统，用于管理动态字段或用户定义字段，并支持复杂的查询和配置功能。
 
-### Column Descriptions
+### 列说明
 
 #### `id`
 
-* **Meaning**: The unique identifier for each record within the table.
-* **Role**: Primary Key.
-* **Typical Contents**: A UUID string that uniquely identifies each configuration entry.
+* **含义**：表中每条记录的唯一标识符。
+* **作用**：主键。
+* **典型内容**：用于唯一标识每条配置记录的 UUID 字符串。
 
 #### `org_id`
 
-* **Meaning**: The organization identifier that this configuration is associated with.
-* **Role**: Foreign Key.
-* **Typical Contents**: A UUID string representing the organization.
+* **含义**：此配置所关联的组织标识符。
+* **作用**：外键。
+* **典型内容**：表示组织的 UUID 字符串。
 
 #### `lookup_rec_id`
 
-* **Meaning**: An identifier for the specific lookup record this configuration applies to.
-* **Role**: Foreign Key.
-* **Typical Contents**: A UUID string referencing a specific lookup record.
+* **含义**：此配置所适用的特定查找记录的标识符。
+* **作用**：外键。
+* **典型内容**：引用特定查找记录的 UUID 字符串。
 
 #### `field_id`
 
-* **Meaning**: The identifier of the field being configured.
-* **Role**: Foreign Key.
-* **Typical Contents**: A UUID string referencing a particular field.
+* **含义**：正在配置的字段标识符。
+* **作用**：外键。
+* **典型内容**：引用特定字段的 UUID 字符串。
 
 #### `lookup_field`
 
-* **Meaning**: The name or label of the field being configured.
-* **Role**: Descriptive Field.
-* **Typical Contents**: A string representing the field name, such as "address\_1" or "taxratefree".
+* **含义**：正在配置的字段名称或标签。
+* **作用**：描述性字段。
+* **典型内容**：表示字段名称的字符串，例如 "address\_1" 或 "taxratefree"。
 
 #### `is_searchable`
 
-* **Meaning**: Indicates whether the field can be included in search operations.
-* **Role**: Configuration Flag.
-* **Typical Contents**: A boolean value (`True` or `False`).
+* **含义**：指示该字段是否可纳入搜索操作。
+* **作用**：配置标志。
+* **典型内容**：布尔值（`True` 或 `False`）。
 
 #### `parent_field_id`
 
-* **Meaning**: Identifier of the parent field, if applicable.
-* **Role**: Foreign Key.
-* **Typical Contents**: A UUID string or `None` if no parent field exists.
+* **含义**：父字段的标识符（如适用）。
+* **作用**：外键。
+* **典型内容**：UUID 字符串；如果不存在父字段，则为 `None`。
 
 #### `auto_trigger`
 
-* **Meaning**: Specifies if the field configuration should automatically trigger certain actions.
-* **Role**: Configuration Flag.
-* **Typical Contents**: A boolean value (`True` or `False`).
+* **含义**：指定该字段配置是否应自动触发某些操作。
+* **作用**：配置标志。
+* **典型内容**：布尔值（`True` 或 `False`）。
 
 #### `created_by`
 
-* **Meaning**: The identifier of the user who created the configuration entry.
-* **Role**: Audit Field.
-* **Typical Contents**: An integer representing the user ID.
+* **含义**：创建此配置记录的用户标识符。
+* **作用**：审计字段。
+* **典型内容**：表示用户 ID 的整数。
 
 #### `created_on`
 
-* **Meaning**: The timestamp when the configuration entry was created.
-* **Role**: Audit Field.
-* **Typical Contents**: A timestamp with timezone information.
+* **含义**：创建此配置记录的时间戳。
+* **作用**：审计字段。
+* **典型内容**：包含时区信息的时间戳。
 
 #### `last_modified_on`
 
-* **Meaning**: The timestamp of the most recent modification to the configuration entry.
-* **Role**: Audit Field.
-* **Typical Contents**: A timestamp with timezone information, or `None` if never modified.
+* **含义**：最近一次修改此配置记录的时间戳。
+* **作用**：审计字段。
+* **典型内容**：包含时区信息的时间戳；如果从未修改过，则为 `None`。
 
 #### `is_deleted`
 
-* **Meaning**: Indicates if the configuration entry has been marked as deleted.
-* **Role**: Soft Delete Flag.
-* **Typical Contents**: A boolean value (`True` or `False`).
+* **含义**：指示此配置记录是否已标记为删除。
+* **作用**：软删除标志。
+* **典型内容**：布尔值（`True` 或 `False`）。
 
 #### `deleted_on`
 
-* **Meaning**: The timestamp when the configuration entry was marked as deleted.
-* **Role**: Audit Field.
-* **Typical Contents**: A timestamp with timezone information, or `None` if not deleted.
+* **含义**：此配置记录被标记为删除的时间戳。
+* **作用**：审计字段。
+* **典型内容**：包含时区信息的时间戳；如果未删除，则为 `None`。
 
 #### `search_operator`
 
-* **Meaning**: Defines the search operator used for the field.
-* **Role**: Configuration Field.
-* **Typical Contents**: A string such as "contains" indicating the type of search operation.
+* **含义**：定义此字段使用的搜索运算符。
+* **作用**：配置字段。
+* **典型内容**：一个字符串，例如 "contains"，用于指示搜索操作的类型。
 
 #### `last_modified_by`
 
-* **Meaning**: Identifier of the user who last modified the configuration entry.
-* **Role**: Audit Field.
-* **Typical Contents**: A UUID string or `None` if never modified.
+* **含义**：最近一次修改此配置记录的用户标识符。
+* **作用**：审计字段。
+* **典型内容**：UUID 字符串；如果从未修改过，则为 `None`。
 
 #### `deleted_by`
 
-* **Meaning**: Identifier of the user who marked the entry as deleted.
-* **Role**: Audit Field.
-* **Typical Contents**: A UUID string or `None` if not deleted.
+* **含义**：将此记录标记为删除的用户标识符。
+* **作用**：审计字段。
+* **典型内容**：UUID 字符串；如果未删除，则为 `None`。
 
-This documentation provides a detailed view into the structure and purpose of each column in the `public.lookup_field_configuration` table, offering developers a comprehensive understanding of how lookup fields are configured and managed within the system.
+本文档详细介绍了 `public.lookup_field_configuration` 表中每一列的结构和用途，帮助开发人员全面了解系统中查找字段的配置和管理方式。

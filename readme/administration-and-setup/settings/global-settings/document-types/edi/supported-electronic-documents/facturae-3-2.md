@@ -1,30 +1,30 @@
 ---
-description: FACTURAE 3.2 electronic document support in DocBits
+description: "DocBits 对 FACTURAE 3.2 电子文档的支持"
 ---
 
 # 🇪🇸 FACTURAE 3.2
 
-| Property             | Value                                    |
+| 属性                 | 值                                       |
 | -------------------- | ---------------------------------------- |
-| **Country / Region** | Spain                                    |
-| **Document Types**   | Invoice, Credit Note, Corrective Invoice |
-| **Format**           | XML                                      |
-| **Standard**         | Facturae 3.2                             |
+| **国家 / 地区**      | 西班牙                                   |
+| **文档类型**         | 发票、贷项通知单、更正发票               |
+| **格式**             | XML                                      |
+| **标准**             | Facturae 3.2                             |
 
-Facturae 3.2 is a widely used version of the Spanish e-invoicing standard. It defines the XML structure for electronic invoices including seller/buyer identification, line items, tax details (IVA), and digital signature requirements.
+Facturae 3.2 是西班牙广泛使用的电子发票标准版本。它定义了电子发票的 XML 结构，包括卖方 / 买方标识、行项目、税务详情（IVA）以及数字签名要求。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 组件                 | 状态       |
+| -------------------- | ---------- |
+| 预览                 | ✅ 支持     |
+| 字段提取             | ✅ 支持     |
+| 转换                 | ✅ 支持     |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/spain-facturae-preview.png" alt="Facturae 3.2 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Spain Facturae 3.2 invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/spain-facturae-preview.png" alt="DocBits 中的 Facturae 3.2 发票预览"><figcaption><p>西班牙 Facturae 3.2 发票的 DocBits 默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

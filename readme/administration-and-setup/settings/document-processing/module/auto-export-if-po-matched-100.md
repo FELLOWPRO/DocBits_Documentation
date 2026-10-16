@@ -1,36 +1,36 @@
-# Auto Export if PO Matched 100%
+# PO 匹配度为 100% 时自动导出
 
-### Overview
+### 概述
 
-The **Auto Export if PO matched 100%** setting is a feature within the Purchase Order (PO) module that automates the export process when a purchase order matches perfectly with its expected criteria. This functionality is designed to streamline the workflow by reducing manual intervention in the export process, ensuring that perfectly matched purchase orders are handled efficiently.
+**PO 匹配度为 100% 时自动导出**设置是采购订单（PO）模块中的一项功能。当采购订单完全符合预期条件时，该功能会自动执行导出流程。它旨在通过减少导出过程中的人工干预来简化工作流，确保完全匹配的采购订单得到高效处理。
 
-### What Does It Do?
+### 它的作用
 
-When this setting is enabled, the system automatically exports the purchase order as soon as it matches 100% with the expected data. This means that if all items, quantities, prices, and other relevant details in the purchase order align with the predefined criteria, the order is immediately processed and exported without requiring additional steps from the user.
+启用此设置后，系统会在采购订单与预期数据达到 100% 匹配时立即自动导出采购订单。也就是说，如果采购订单中的所有物料、数量、价格及其他相关详情都符合预定义条件，系统便会立即处理并导出订单，无需用户执行其他步骤。
 
-### Benefits
+### 优势
 
-* **Efficiency**: By automating the export of perfectly matched POs, this feature saves time and reduces the workload on administrators and users.
-* **Accuracy**: Ensures that only those POs which have been verified to match 100% with the expected criteria are exported, reducing the risk of errors.
-* **Speed**: The immediate processing of matching POs allows for faster order handling and reduces delays in the supply chain.
+* **效率**：自动导出完全匹配的采购订单，节省时间并减轻管理员和用户的工作负担。
+* **准确性**：确保只有经验证、与预期条件达到 100% 匹配的采购订单才会被导出，从而降低出错风险。
+* **速度**：立即处理匹配的采购订单，加快订单处理速度并减少供应链延迟。
 
-### How to Use
+### 使用方法
 
-1. **Enable the Feature**:
-   * Go to Settings
-   * Select **Document Processing**.
-   * Select **Module**.
-   * Navigate to the **Purchase Order**.
-   * Activate the **Auto Export if PO matched 100%** by enabling the corresponding slider
-2. **Monitoring**:
-   * Once enabled, the system will automatically export POs that match 100% with their expected criteria.
-   * You can monitor the export activity through the PO dashboard or other related monitoring tools.
-3. **Considerations**:
-   * Ensure that your PO criteria are correctly defined and accurate to avoid any unwanted exports.
-   * Regularly review the POs processed through this feature to ensure that the automation is functioning as expected.
+1. **启用此功能**：
+   * 前往 Settings
+   * 选择 **Document Processing**。
+   * 选择 **Module**。
+   * 前往 **Purchase Order**。
+   * 启用对应的滑块，激活 **Auto Export if PO matched 100%**。
+2. **监控**：
+   * 启用后，系统会自动导出与预期条件达到 100% 匹配的采购订单。
+   * 您可以通过 PO 仪表板或其他相关监控工具查看导出活动。
+3. **注意事项**：
+   * 请确保采购订单条件定义正确且准确，以避免意外导出。
+   * 定期检查通过此功能处理的采购订单，确保自动化功能按预期运行。
 
-### When to Use This Feature
+### 何时使用此功能
 
-* **High Volume Processing**: Ideal for environments where a large number of POs are processed regularly, and there is a high confidence in the data matching.
-* **Routine Orders**: Useful for standard or routine orders where variations are minimal and accuracy is consistent.
-* **Time-Sensitive Orders**: Beneficial when time is of the essence, and you need to expedite the processing of matching POs.
+* **大批量处理**：适用于定期处理大量采购订单且对数据匹配有较高信心的场景。
+* **常规订单**：适用于差异较少且准确性稳定的标准或常规订单。
+* **时效性强的订单**：当时间紧迫且需要加快匹配订单的处理速度时，此功能会很有帮助。

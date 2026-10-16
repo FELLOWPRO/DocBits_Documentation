@@ -1,32 +1,32 @@
 ---
-description: PERU CPE electronic document support in DocBits
+description: DocBits 支持的秘鲁 CPE 电子文档
 ---
 
-# 🇵🇪 PERU CPE
+# 🇵🇪 秘鲁 CPE
 
-| Property             | Value                                 |
+| 属性                 | 值                                   |
 | -------------------- | ------------------------------------- |
-| **Country / Region** | Peru                                  |
-| **Document Types**   | Invoice, Credit Note, Debit Note      |
-| **Format**           | UBL XML                               |
-| **Standard**         | CPE (Comprobante de Pago Electrónico) |
+| **国家 / 地区**      | 秘鲁                                  |
+| **文档类型**         | 发票、贷项通知单、借项通知单          |
+| **格式**             | UBL XML                               |
+| **标准**             | CPE（Comprobante de Pago Electrónico） |
 
-CPE (Comprobante de Pago Electrónico) is the Peruvian electronic payment voucher standard regulated by SUNAT. DocBits supports both UBL 2.0 and 2.1 versions used for electronic invoicing in Peru.
+CPE（Comprobante de Pago Electrónico）是秘鲁的电子支付凭证标准，由 SUNAT 监管。DocBits 支持秘鲁电子发票使用的 UBL 2.0 和 2.1 版本。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件         | 状态       |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览         | ✅ 支持     |
+| 字段提取     | ✅ 支持     |
+| 转换         | ✅ 支持     |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/peru-cpe-preview.png" alt="Peru CPE invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Peru CPE invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/peru-cpe-preview.png" alt="DocBits 中的秘鲁 CPE 发票预览"><figcaption><p>秘鲁 CPE 发票的默认 DocBits 预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
-* [Peru CPE UBL 2.0](peru-cpe-ubl-2-0.md)
-* [Peru CPE UBL 2.1](peru-cpe-ubl-2-1.md)
+* [支持的电子文档](./)
+* [秘鲁 CPE UBL 2.0](peru-cpe-ubl-2-0.md)
+* [秘鲁 CPE UBL 2.1](peru-cpe-ubl-2-1.md)

@@ -1,30 +1,30 @@
 ---
-description: COSTA RICA electronic document support in DocBits
+description: "DocBits 对哥斯达黎加电子文档的支持"
 ---
 
-# 🇨🇷 COSTA RICA
+# 🇨🇷 哥斯达黎加
 
-| Property             | Value                                                  |
+| 属性                 | 值                                                |
 | -------------------- | ------------------------------------------------------ |
-| **Country / Region** | Costa Rica                                             |
-| **Document Types**   | Invoice (Factura Electrónica), Credit Note, Debit Note |
-| **Format**           | XML                                                    |
-| **Standard**         | Factura Electrónica (Ministerio de Hacienda)           |
+| **国家 / 地区**      | 哥斯达黎加                                             |
+| **文档类型**         | 发票（Factura Electrónica）、贷项通知单、借项通知单 |
+| **格式**             | XML                                                    |
+| **标准**             | Factura Electrónica（Ministerio de Hacienda）           |
 
-Costa Rica's electronic invoicing system is regulated by the Ministerio de Hacienda. Electronic documents must be submitted to the Hacienda platform for validation and include a digital signature. DocBits can process Costa Rican electronic invoices and extract key fields.
+哥斯达黎加的电子发票系统由 Ministerio de Hacienda 监管。电子文档必须提交至 Hacienda 平台进行验证，并包含数字签名。DocBits 可以处理哥斯达黎加电子发票并提取关键字段。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件             | 状态      |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | N/A         |
+| 预览             | ✅ 支持 |
+| 字段提取         | ✅ 支持 |
+| 转换             | N/A         |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/costa-rica-preview.png" alt="Costa Rica e-invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Costa Rica e-invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/ubl-2-1-preview.png" alt="DocBits 中的哥斯达黎加电子发票预览"><figcaption><p>哥斯达黎加电子发票的 DocBits 默认预览</p></figcaption></figure>
 
-## Related
+## 相关
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

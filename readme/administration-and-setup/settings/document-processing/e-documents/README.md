@@ -1,25 +1,27 @@
-# E-Documents
+# 电子文档
 
-DocBits validates incoming electronic invoices (e-invoices) against the official standards — **XRechnung**, **ZUGFeRD** and **Factur-X** — and routes any problems it finds to the right handler. The **E-Documents** settings group (under **Document Processing**) has two pages:
+DocBits 会根据官方标准——**XRechnung**、**ZUGFeRD** 和 **Factur-X**——验证收到的电子发票（e-invoice），并将发现的问题转交给相应的处理人员。**电子文档**设置组（位于**文档处理**下）包含以下页面：
 
-* **[Validation Rules](validation-rules.md)** — choose which e-invoice versions and profiles you accept, and set the severity of each validation rule for your organization.
-* **[Notification Routing](notification-routing.md)** — map validation findings to the AI Workforce agent that should handle them.
+* [**电子发票验证**](validation-rules/) — 选择接受哪些电子发票版本和配置文件，并为组织设置每条验证规则的严重级别。
+* [**验证报告**](validation-rules/validation-report.md) — 发票未通过验证时用户会看到的内容：通俗易懂的问题说明、后续步骤，以及拒绝文档的选项。
+* [**按文档类型验证**](validation-rules/validation-per-document-type.md) — 管理员可按文档类型启用验证并设置是否阻止处理，同时查看变更日志。
+* [**通知路由**](notification-routing.md) — 将验证问题分配给负责处理的 AI Workforce 代理。
 
-Together they let you decide **what counts as a problem** on an incoming e-invoice and **who deals with it**.
+这些设置共同决定收到的**电子发票中哪些情况算作问题**，以及**由谁处理**。
 
-## Enable or disable e-invoice validation
+## 启用或停用电子发票验证 <a id="enable-or-disable-e-invoice-validation"></a>
 
-The two E-Documents pages only take effect once **e-invoice validation is switched on for the document type**. The switch lives on the document type itself, not in the E-Documents menu.
+只有在**为文档类型启用电子发票验证**后，电子文档下的两个页面才会生效。开关位于文档类型本身，而不在电子文档菜单中。
 
-Go to **Settings → Document Types → Invoice → Advanced Settings** and open the **E-Invoice Validation** section.
+前往**设置 → 文档类型 → 发票 → 高级设置**，然后打开**电子发票验证**部分。
 
-<figure><img src="../../../../.gitbook/assets/edoc_enable_validation_toggle.png" alt="The E-Invoice Validation toggles on the Invoice document type"><figcaption><p>Turn e-invoice validation on or off per document type, with optional supplier notification</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-enable-toggle.png" alt="发票文档类型中的电子发票验证开关"><figcaption><p>按文档类型启用或停用电子发票验证，并可选择通知供应商</p></figcaption></figure>
 
-* **Validate incoming e-invoices** — the master switch. When **on**, every uploaded invoice is checked against the KoSIT XRechnung Schematron rules plus the L0 PDF/A-3 and L4 IBAN/VAT semantic checks, using the severities you set on the [Validation Rules](validation-rules.md) page. Invalid invoices are blocked. When **off**, invoices skip e-invoice validation entirely and the Validation Rules and Notification Routing pages have no effect.
-* **Notify supplier on rejection** — appears once validation is enabled. When **on**, a rejected invoice triggers an email to the supplier listing the missing or incorrect fields so they can reissue it. Who receives and handles each finding is configured on the [Notification Routing](notification-routing.md) page.
+* **验证收到的电子发票** — 主开关。开启后，每张上传的发票都会根据 KoSIT XRechnung Schematron 规则以及 L0 PDF/A-3 和 L4 IBAN/VAT 语义检查进行验证，并应用[验证规则](validation-rules/)页面中设置的严重级别。无效发票将被阻止。关闭后，发票将完全跳过电子发票验证，电子发票验证和通知路由页面也不会生效。
+* **拒绝时通知供应商** — 启用验证后显示。开启后，发票被拒绝时会向供应商发送电子邮件，列出缺失或错误的字段，以便供应商重新开具发票。每个问题由谁接收和处理，可在[通知路由](notification-routing.md)页面配置。
 
-> E-invoice validation is configured **per document type**. Today it applies to the **Invoice** document type; enable it on each document type that should be validated.
+> 电子发票验证按**文档类型**配置。目前适用于**发票**文档类型；请在每个需要验证的文档类型上启用此功能。
 
-You can also jump straight here with **Global Quick Search**: press <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> on Windows and Linux) anywhere in DocBits and type *e-invoice*.
+也可以通过**全局快速搜索**直接跳转到此处：在 DocBits 的任意位置按 <kbd>Cmd</kbd> + <kbd>K</kbd>（Windows 和 Linux 上按 <kbd>Ctrl</kbd> + <kbd>K</kbd>），然后输入 _e-invoice_。
 
-<figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="Global Quick Search jumping to E-Invoice Validation"><figcaption><p>Type "e-invoice" in Quick Search to jump straight to the toggle.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-quicksearch.png" alt="通过全局快速搜索跳转到电子发票验证"><figcaption><p>在快速搜索中输入 "e-invoice"，即可直接跳转到此开关。</p></figcaption></figure>

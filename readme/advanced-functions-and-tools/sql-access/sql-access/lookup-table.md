@@ -1,114 +1,114 @@
-# Lookup table
+# 查找表
 
-## Table `public.lookup_table`
+## 表 `public.lookup_table`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `data_key`: internal
-* `rec_id`: internal
-* `prop_name`: internal
-* `prop_value`: internal
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `prop_value_clean`: internal
-* `version`: integer
-* `deleted_on`: timestamp with time zone
-* `sub_org_id`: internal
+* `id`：内部字段
+* `org_id`：组织 ID
+* `data_key`：内部字段
+* `rec_id`：内部字段
+* `prop_name`：内部字段
+* `prop_value`：内部字段
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `prop_value_clean`：内部字段
+* `version`：整数
+* `deleted_on`：带时区的时间戳
+* `sub_org_id`：内部字段
 
-### Analyse & Beschreibung
+### 分析与说明
 
-## Technical Documentation for `public.lookup_table`
+## `public.lookup_table` 技术文档
 
-### Introduction
+### 简介
 
-The `public.lookup_table` is designed to store metadata about various properties associated with organizational data. It likely serves as a key-value store for different attributes related to customers or other entities within the organization. The table captures information such as property names, values, and the context (e.g., organization and sub-organization they belong to) along with audit information like creation and modification timestamps.
+`public.lookup_table` 用于存储与组织数据中各种属性相关的元数据。它可能充当键值存储，用于保存与组织内客户或其他实体相关的不同属性。该表记录属性名称、属性值及其上下文（例如所属的组织和子组织），以及创建和修改时间戳等审计信息。
 
-### Column Descriptions
+### 列说明
 
 #### `id`
 
-* **Meaning**: Unique identifier for each record in the table.
-* **Role**: Primary key.
-* **Typical Contents**: A UUID string that uniquely identifies each entry.
+* **含义**：表中每条记录的唯一标识符。
+* **作用**：主键。
+* **典型内容**：唯一标识每个条目的 UUID 字符串。
 
 #### `org_id`
 
-* **Meaning**: Identifier for the organization to which the data belongs.
-* **Role**: Foreign key, likely linking to an organization table.
-* **Typical Contents**: A UUID string representing the organization.
+* **含义**：数据所属组织的标识符。
+* **作用**：外键，可能关联到组织表。
+* **典型内容**：表示组织的 UUID 字符串。
 
 #### `data_key`
 
-* **Meaning**: A key representing a specific dataset or context within the organization.
-* **Role**: Contextual identifier for grouping related properties.
-* **Typical Contents**: Alphanumeric string indicating a category, such as `customer_amier`.
+* **含义**：表示组织内特定数据集或上下文的键。
+* **作用**：用于将相关属性分组的上下文标识符。
+* **典型内容**：指示类别的字母数字字符串，例如 `customer_amier`。
 
 #### `rec_id`
 
-* **Meaning**: Identifier for a specific record within the dataset.
-* **Role**: Contextual identifier, possibly a foreign key to another table.
-* **Typical Contents**: Alphanumeric string or null for records without a specific identifier.
+* **含义**：数据集中某条特定记录的标识符。
+* **作用**：上下文标识符，可能是另一张表的外键。
+* **典型内容**：字母数字字符串；对于没有特定标识符的记录，该值可能为 null。
 
 #### `prop_name`
 
-* **Meaning**: Name of the property or attribute.
-* **Role**: Descriptive field indicating what the property value represents.
-* **Typical Contents**: Strings like 'Kundennummer', 'Versandanschrift', 'Kundenname', etc.
+* **含义**：属性或特征的名称。
+* **作用**：描述性字段，用于说明属性值所表示的内容。
+* **典型内容**：例如“客户编号”“收货地址”“客户名称”等字符串。
 
 #### `prop_value`
 
-* **Meaning**: Value of the property described by `prop_name`.
-* **Role**: Descriptive field containing the actual data or value.
-* **Typical Contents**: Strings or numbers representing the value of the property.
+* **含义**：`prop_name` 所描述的属性值。
+* **作用**：描述性字段，包含实际数据或属性值。
+* **典型内容**：表示属性值的字符串或数字。
 
 #### `created_by`
 
-* **Meaning**: Identifier for the user or system that created the record.
-* **Role**: Technical field for audit purposes.
-* **Typical Contents**: Integer representing a user ID.
+* **含义**：创建该记录的用户或系统的标识符。
+* **作用**：用于审计的技术字段。
+* **典型内容**：表示用户 ID 的整数。
 
 #### `created_on`
 
-* **Meaning**: Timestamp indicating when the record was created.
-* **Role**: Technical field for audit purposes.
-* **Typical Contents**: Date and time with time zone information.
+* **含义**：指示记录创建时间的时间戳。
+* **作用**：用于审计的技术字段。
+* **典型内容**：包含时区信息的日期和时间。
 
 #### `last_modified_on`
 
-* **Meaning**: Timestamp indicating the last time the record was modified.
-* **Role**: Technical field for audit purposes.
-* **Typical Contents**: Date and time with time zone information, potentially null if not modified.
+* **含义**：指示记录最后修改时间的时间戳。
+* **作用**：用于审计的技术字段。
+* **典型内容**：包含时区信息的日期和时间；如果记录未被修改，该值可能为 null。
 
 #### `is_deleted`
 
-* **Meaning**: Flag indicating whether the record is deleted.
-* **Role**: Technical field indicating logical deletion.
-* **Typical Contents**: Boolean value (`True` or `False`).
+* **含义**：指示记录是否已删除的标志。
+* **作用**：指示逻辑删除状态的技术字段。
+* **典型内容**：布尔值（`True` 或 `False`）。
 
 #### `prop_value_clean`
 
-* **Meaning**: Cleaned or processed version of `prop_value`.
-* **Role**: Descriptive field for storing a normalized or standardized value.
-* **Typical Contents**: Similar to `prop_value`, potentially null if not applicable.
+* **含义**：`prop_value` 的清理或处理后版本。
+* **作用**：用于存储规范化或标准化值的描述性字段。
+* **典型内容**：与 `prop_value` 类似；如果不适用，该值可能为 null。
 
 #### `version`
 
-* **Meaning**: Version number of the record.
-* **Role**: Technical field for version control.
-* **Typical Contents**: Integer representing the version of the record.
+* **含义**：记录的版本号。
+* **作用**：用于版本控制的技术字段。
+* **典型内容**：表示记录版本的整数。
 
 #### `deleted_on`
 
-* **Meaning**: Timestamp indicating when the record was marked as deleted.
-* **Role**: Technical field for audit purposes.
-* **Typical Contents**: Date and time with time zone information, potentially null if not deleted.
+* **含义**：指示记录被标记为已删除时间的时间戳。
+* **作用**：用于审计的技术字段。
+* **典型内容**：包含时区信息的日期和时间；如果记录未被删除，该值可能为 null。
 
 #### `sub_org_id`
 
-* **Meaning**: Identifier for a sub-organization within the main organization.
-* **Role**: Foreign key, potentially linking to a sub-organization table.
-* **Typical Contents**: A UUID string representing the sub-organization, potentially null if not applicable.
+* **含义**：主组织内某个子组织的标识符。
+* **作用**：外键，可能关联到子组织表。
+* **典型内容**：表示子组织的 UUID 字符串；如果不适用，该值可能为 null。

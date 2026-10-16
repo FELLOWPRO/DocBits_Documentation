@@ -1,15 +1,13 @@
-# Troubleshooting Common Issues
+# 常见问题排查
 
-Here are troubleshooting steps for common issues while integrating DocBits with an Identity Service Provider (IdP) or other services:
+以下是将 DocBits 与身份服务提供商（IdP）或其他服务集成时，排查常见问题的步骤：
 
-* **Verify configuration:** Make sure the integration settings in DocBits are correctly configured and match your Identity Service Provider's requirements. In particular, check the SSO URL, Entity ID, and certificates.
-* **Monitor logs:** Monitor logs in both DocBits and on the Identity Service Provider's side to identify any error messages or warnings. These logs can provide clues as to where the problem lies.
-* **Verify network connections:** Make sure there are no network issues that could affect communication between DocBits and your Identity Service Provider. Check firewall settings, DNS configurations, and network access rules.
-* **Test SSO processes:** Perform test logins via Single Sign-On (SSO) to ensure users are successfully authenticated and redirected to DocBits. Be sure to note any error messages or redirection issues.
-* **Checking permissions:** Make sure users in DocBits have the required permissions to access the appropriate features or resources. Check the assignment of groups and roles.
-* **Updating certificates:** Make sure the SAML certificates and metadata are up to date on both sides. If a certificate has expired, you must update it and retest the integration.
-* **Communicating with support:** If you cannot identify the cause of the problem, contact DocBits support or your identity service provider. They can help you troubleshoot and provide specific guidance for your setup.
+* **验证配置：** 确保 DocBits 中的集成设置配置正确，并符合身份服务提供商的要求。尤其要检查 SSO URL、Entity ID 和证书。
+* **监控日志：** 监控 DocBits 和身份服务提供商端的日志，查找错误消息或警告。这些日志可以帮助判断问题所在。
+* **验证网络连接：** 确保没有影响 DocBits 与身份服务提供商之间通信的网络问题。检查防火墙设置、DNS 配置和网络访问规则。
+* **测试 SSO 流程：** 通过单点登录（SSO）执行测试登录，确保用户成功通过身份验证并重定向到 DocBits。请留意任何错误消息或重定向问题。
+* **检查权限：** 确保 DocBits 中的用户拥有访问相应功能或资源所需的权限。检查组和角色的分配情况。
+* **更新证书：** 确保双方的 SAML 证书和元数据均为最新版本。如果证书已过期，必须更新证书并重新测试集成。
+* **联系支持：** 如果无法确定问题原因，请联系 DocBits 支持团队或您的身份服务提供商。他们可以帮助您排查问题，并针对您的设置提供具体指导。
 
-By following these troubleshooting steps, you can quickly identify and resolve the most common issues during the integration between Docbits and your identity service provider.
-
-
+按照这些排查步骤，您可以快速发现并解决 Docbits 与身份服务提供商集成过程中最常见的问题。

@@ -1,29 +1,29 @@
-# Rule Order Policy
+# 规则顺序策略
 
-This policy applies rules in the order they appear in the decision tree and returns the result of the rule that matches first.
+此策略按照规则在决策树中的排列顺序应用规则，并返回第一个匹配规则的结果。
 
-**Example:**
+**示例：**
 
-| Rule | Condition            | Return Group |
+| 规则 | 条件                 | 返回组  |
 | ---- | -------------------- | ------------ |
-| 1    | Total Amount <= 1000 | GROUP_1     |
-| 2    | Total Amount <= 2000 | GROUP_2     |
-| 3    | Total Amount <= 3000 | GROUP_3     |
-| 4    | Total Amount <= 4000 | GROUP_4     |
-| 5    | Total Amount <= 5000 | GROUP_5     |
+| 1    | 总金额 <= 1000 | GROUP_1     |
+| 2    | 总金额 <= 2000 | GROUP_2     |
+| 3    | 总金额 <= 3000 | GROUP_3     |
+| 4    | 总金额 <= 4000 | GROUP_4     |
+| 5    | 总金额 <= 5000 | GROUP_5     |
 
-Given that the input value is **Total Amount = 2500**, the evaluation of the rules would be:
+假设输入值为 **总金额 = 2500**，规则的评估结果如下：
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (does not match)
-* **Rule 3**: Total Amount <= 3000 (matches)
-* **Rule 4**: Total Amount <= 4000 (matches)
-* **Rule 5**: Total Amount <= 5000 (matches)
+* **规则 1**：总金额 <= 1000（不匹配）
+* **规则 2**：总金额 <= 2000（不匹配）
+* **规则 3**：总金额 <= 3000（匹配）
+* **规则 4**：总金额 <= 4000（匹配）
+* **规则 5**：总金额 <= 5000（匹配）
 
-Under **Rule Order**, the tree will process the rules in the order they are listed. So, the matching rules will be:
+在 **规则顺序** 策略下，决策树会按照规则的列出顺序处理规则。因此，匹配的规则为：
 
-* **Rule 3**: GROUP_3
-* **Rule 4**: GROUP_4
-* **Rule 5**: GROUP_5
+* **规则 3**：GROUP_3
+* **规则 4**：GROUP_4
+* **规则 5**：GROUP_5
 
-**Result**: **GROUP_3**, **GROUP_4**, **GROUP_5**
+**结果**：**GROUP_3**、**GROUP_4**、**GROUP_5**

@@ -1,2 +1,1 @@
-# EDI Mappings
-
+# EDI 映射

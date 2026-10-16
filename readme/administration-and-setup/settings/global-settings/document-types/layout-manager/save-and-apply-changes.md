@@ -1,25 +1,25 @@
-# Save and apply changes
+# 保存和应用更改
 
-## Saving and applying changes made in the Layout Manager is an important step to ensure that your layout customizations are effectively applied in the document processing workflow.
+## 保存并应用在 Layout Manager 中所做的更改，是确保布局自定义设置在文档处理工作流中有效应用的重要步骤。
 
-### Here are the steps to save and apply changes:
+### 以下是保存和应用更改的步骤：
 
-#### Saving the changes:
+#### 保存更改：
 
-* After you have made the desired customizations in the Layout Manager, look for the "Save" button to save the changes.
-* Click this button to save your changes in the Layout Manager. This backs up your layout customizations and ensures that they are available for future editing sessions.
+* 在 Layout Manager 中完成所需的自定义设置后，请找到“Save”按钮以保存更改。
+* 点击此按钮，在 Layout Manager 中保存更改。此操作会备份您的布局自定义设置，并确保您以后仍可编辑这些设置。
 
-<figure><img src="../../../../../.gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (257).png" alt=""><figcaption></figcaption></figure>
 
-#### Applying the changes to the document processing workflow:
+#### 将更改应用于文档处理工作流：
 
-* Once your changes are saved in the Layout Manager, they are usually automatically applied to the document processing workflow that uses that specific document type.
-* New documents based on this template will inherit the updated layout settings when they are created. This means that the new documents will include the new groups, fields, or other layout customizations you made in Layout Manager.
-* Existing documents already created using this template may be treated differently depending on your software and configuration. In some cases, changes may be automatically applied to pre-existing documents, while in other cases, manual adjustments may be required to bring existing documents into line with the updated layout settings.
+* 在 Layout Manager 中保存更改后，这些更改通常会自动应用于使用相应文档类型的文档处理工作流。
+* 根据此模板创建的新文档会继承更新后的布局设置。这意味着新文档将包含您在 Layout Manager 中添加的新组、字段或其他布局自定义设置。
+* 使用此模板创建的现有文档可能会因软件和配置而采用不同的处理方式。在某些情况下，更改会自动应用于现有文档；在其他情况下，可能需要手动调整，才能使现有文档符合更新后的布局设置。
 
-#### Testing the changes:
+#### 测试更改：
 
-* After you have saved the layout changes and they have been applied to the document processing workflow, it is advisable to test the changes to ensure that they work as intended.
-* Create new test documents or review existing documents to ensure that the updated layout settings are applied correctly and that data is captured and displayed as expected.
+* 在保存布局更改并将其应用于文档处理工作流后，建议测试这些更改，以确保其按预期运行。
+* 创建新的测试文档或检查现有文档，确保更新后的布局设置已正确应用，并且数据已按预期采集和显示。
 
-By following these steps, you can effectively save changes in Layout Manager and apply them to the document processing workflow. This ensures a smooth integration of your layout customizations into the document creation and processing process.
+按照这些步骤，您可以有效地在 Layout Manager 中保存更改，并将其应用于文档处理工作流。这有助于将布局自定义设置顺利集成到文档创建和处理流程中。

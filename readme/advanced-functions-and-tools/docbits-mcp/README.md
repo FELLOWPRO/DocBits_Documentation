@@ -1,163 +1,163 @@
 # DocBits MCP
 
-DocBits exposes a **Model Context Protocol (MCP)** server that lets AI assistants work with your documents, extraction, search, analytics, and configuration — directly from a chat or coding session. Any MCP-compatible client can connect: **Claude Code**, **Claude Desktop**, **Google Gemini CLI**, **OpenAI Codex**, or any custom integration.
+DocBits 提供了一个 **Model Context Protocol (MCP)** 服务器，让 AI 助手可以直接在聊天或编码会话中处理您的文档、提取、搜索、分析和配置。任何兼容 MCP 的客户端都可以连接：**Claude Code**、**Claude Desktop**、**Google Gemini CLI**、**OpenAI Codex**，或任何自定义集成。
 
-The server is mounted on the DocBits API at `/v3/mcp` and is scoped to your organization — every call runs with the permissions of the user (or API key) that connected.
+该服务器挂载在 DocBits API 的 `/v3/mcp` 路径下，并限定于您的组织范围 — 每次调用都使用连接用户（或 API 密钥）的权限运行。
 
 {% hint style="info" %}
-**Endpoint — use your region (EU or US):**
+**端点 — 请使用您所在的区域（EU 或 US）：**
 
-- Production (EU) — `https://eu.api.docbits.com/v3/mcp`
-- Production (US) — `https://us.api.docbits.com/v3/mcp`
+* 生产环境（EU）— `https://eu.api.docbits.com/v3/mcp`
+* 生产环境（US）— `https://us.api.docbits.com/v3/mcp`
 
-See [Setup & Configuration](setup-and-configuration.md) for the full host matrix and how to sign in with OAuth.
+有关完整的主机列表以及如何使用 OAuth 登录，请参阅[设置与配置](setup-and-configuration.md)。
 {% endhint %}
 
-## What Can You Do?
+## 可以做什么？
 
-With DocBits MCP an assistant can, on your behalf:
+借助 DocBits MCP，助手可以代表您：
 
-- **Find and read documents** — list, search (full-text and fielded), open a document, read its status, logs, page images, and export preview
-- **Work on extracted data** — read extracted fields and tables, correct field values, extract tables with AI, validate, approve, and export to your ERP
-- **Query the dashboard** — run dashboard queries in natural language, compare search modes, and inspect search capabilities
-- **Pull analytics** — executive summaries, success rates, volume trends, top document types, and pending-task detail
-- **Handle e-invoices (eDocs)** — list electronic-document types, test and verify e-documents, manage custom extraction attributes
-- **Manage master data** — upsert vendor master data, trigger supplier lookups, import supplier-invoice BODs, maintain payment-term and discount mappings
-- **Read and change configuration** — organization preferences, document types, field settings, users, and cache
-- **Check health** — API and Celery health, current user, and API info
+* **查找和读取文档** — 列出、搜索（全文和字段搜索）、打开文档、读取其状态、日志、页面图像和导出预览
+* **处理提取的数据** — 读取提取的字段和表格、更正字段值、使用 AI 提取表格、验证、审批并导出到您的 ERP
+* **查询仪表板** — 使用自然语言运行仪表板查询、比较搜索模式并检查搜索功能
+* **获取分析数据** — 执行摘要、成功率、处理量趋势、热门文档类型和待处理任务详情
+* **处理电子发票（eDocs）** — 列出电子文档类型、测试和验证电子文档、管理自定义提取属性
+* **管理主数据** — 新建或更新供应商主数据、触发供应商查询、导入供应商发票 BOD、维护付款条件和折扣映射
+* **读取和更改配置** — 组织首选项、文档类型、字段设置、用户和缓存
+* **检查运行状况** — API 和 Celery 运行状况、当前用户和 API 信息
 
-## Tools Overview
+## 工具概览
 
-DocBits MCP groups well over a hundred tools into the categories below (the exact number grows with every release; your assistant lists the current set). Most mirror existing DocBits REST endpoints, see the [API Reference](../../README.md) for request/response detail. An assistant picks the right tool automatically from your request; the tables are a map of what is available.
+DocBits MCP 将一百多个工具分为以下类别（具体数量会随着每次发布而增加；您的助手会列出当前工具集）。大多数工具对应现有的 DocBits REST 端点，请参阅 [API 参考](../../)了解请求和响应详情。助手会根据您的请求自动选择合适的工具；下表列出了可用工具。
 
-### Documents & Processing
+### 文档与处理
 
-| Tool | Description |
-|------|-------------|
-| `list_documents` | List documents for the organization (filterable) |
-| `get_document` / `get_document_by_name` | Open a document by ID or filename |
-| `upload_document` | Upload a new document for processing |
-| `get_document_status` | Current pipeline status of a document |
-| `get_document_logs` | Processing log entries for a document |
-| `query_org_logs` | Page through the organization's service logs |
-| `restart_document` | Re-run the processing pipeline |
-| `delete_document` | Delete a document |
-| `get_pending_documents_count` | How many documents await validation |
+| 工具                                    | 描述                                      |
+| --------------------------------------- | ---------------------------------------- |
+| `list_documents`                        | 列出组织的文档（可筛选） |
+| `get_document` / `get_document_by_name` | 按 ID 或文件名打开文档                |
+| `upload_document`                       | 上传新文档以进行处理             |
+| `get_document_status`                   | 查看文档当前的处理流水线状态            |
+| `get_document_logs`                     | 查看文档的处理日志条目            |
+| `query_org_logs`                        | 分页查看组织的服务日志     |
+| `restart_document`                      | 重新运行处理流水线                   |
+| `delete_document`                       | 删除文档                                |
+| `get_pending_documents_count`           | 查看等待验证的文档数量              |
 
-### Extraction & Validation
+### 提取与验证
 
-| Tool | Description |
-|------|-------------|
-| `get_extracted_fields` / `get_document_fields` | Read extracted header fields |
-| `get_extracted_tables` | Read extracted line-item tables |
-| `get_document_for_validation` / `get_next_document` | Open a document the way the validation screen does; fetch the next one in the queue |
-| `get_page_image` | Page image for visual checks |
-| `update_document_fields` | Correct or set field values |
-| `validate_document` | Run field validation rules |
-| `approve_document` | Approve a validated document |
-| `validate_and_export` | Validate then export to the ERP |
-| `get_export_preview` | Preview the export payload before sending |
+| 工具                                                | 描述                                                                         |
+| --------------------------------------------------- | --------------------------------------------------------------------------- |
+| `get_extracted_fields` / `get_document_fields`      | 读取提取的抬头字段                                                        |
+| `get_extracted_tables`                              | 读取提取的行项目表格                                                     |
+| `get_document_for_validation` / `get_next_document` | 按验证屏幕的方式打开文档；获取队列中的下一份文档 |
+| `get_page_image`                                    | 获取页面图像以进行目视检查                                                        |
+| `update_document_fields`                            | 更正或设置字段值                                                         |
+| `validate_document`                                 | 运行字段验证规则                                                          |
+| `approve_document`                                  | 审批已验证的文档                                                        |
+| `validate_and_export`                               | 验证文档，然后导出到 ERP                                                     |
+| `get_export_preview`                                | 发送前预览导出载荷                                           |
 
-### Table Extraction
+### 表格提取
 
-Everything the validation screen and the table-column settings can do with line-item tables. Configuration tools change the organization's document types; extraction and correction tools work on one document; rule tools store what DocBits learned for a supplier.
+验证屏幕和表格列设置中针对行项目表格的所有功能。配置工具会更改组织的文档类型；提取和更正工具针对单份文档操作；规则工具则保存 DocBits 为某个供应商学习到的内容。
 
-| Tool | Description |
-|------|-------------|
-| `list_tables` / `get_table_config` | Tables and columns of a document type, with the Required / Read Only / Hidden / Use AI flags |
-| `create_table` | Add a second line-item table to a document type |
-| `add_table_column` / `delete_table_column` | Add or soft-delete a table column |
-| `set_ai_table_config` | Switch AI table extraction, vision and structured mode for the organization |
-| `extract_table_ai` | Run the AI table extraction on a document (text or vision) |
-| `extract_table_only` | Extract the table without touching the header fields (rules or AI) |
-| `extract_table_nonai` | Rule-based extraction from coordinates you pass, the first step of a table training through the API |
-| `apply_ai_table_formatting` / `apply_table_feedback` | Reformat an AI table: hide columns, remap, apply user feedback |
-| `remap_table_columns` | Change which extracted column feeds which configured column |
-| `save_table_rules` / `save_table_training_rules` | Store the coordinate rules or the AI formatting rules for the supplier, so the next document extracts the same way |
-| `delete_table_training_rules` | Remove a supplier's saved rules; the next document falls back to the AI |
-| `get_table_extraction_report` / `list_table_report_suppliers` | Per-supplier report of how tables are extracted (rules, AI, model), with a preview |
-| `compare_table_extraction_models` | Extract the same document with two AI tiers and compare the tables |
+| 工具                                                          | 描述                                                                                                        |
+| ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| `list_tables` / `get_table_config`                            | 文档类型的表格和列，以及 Required / Read Only / Hidden / Use AI 标记                       |
+| `create_table`                                                | 为文档类型添加第二个行项目表格                                                                    |
+| `add_table_column` / `delete_table_column`                    | 添加或软删除表格列                                                                                  |
+| `set_ai_table_config`                                         | 为组织切换 AI 表格提取、视觉和结构化模式                                        |
+| `extract_table_ai`                                            | 对文档运行 AI 表格提取（文本或视觉模式）                                                         |
+| `extract_table_only`                                          | 仅提取表格，不处理抬头字段（使用规则或 AI）                                                 |
+| `extract_table_nonai`                                         | 根据您传入的坐标进行基于规则的提取，这是通过 API 训练表格的第一步                |
+| `apply_ai_table_formatting` / `apply_table_feedback`          | 重新格式化 AI 表格：隐藏列、重新映射、应用用户反馈                                                     |
+| `remap_table_columns`                                         | 更改提取列与配置列之间的对应关系                                                        |
+| `save_table_rules` / `save_table_training_rules`              | 为供应商保存坐标规则或 AI 格式化规则，使下一份文档以相同方式提取 |
+| `delete_table_training_rules`                                 | 删除供应商已保存的规则；下一份文档将回退到 AI                                            |
+| `get_table_extraction_report` / `list_table_report_suppliers` | 按供应商报告表格的提取方式（规则、AI、模型），并提供预览                                 |
+| `compare_table_extraction_models`                             | 使用两个 AI 层级提取同一份文档并比较表格                                                 |
 
-### Search & Dashboard
+### 搜索与仪表板
 
-| Tool | Description |
-|------|-------------|
-| `search_documents` / `search_documents_by_name` | Full-text and filename search |
-| `query_document_dashboard` | Natural-language dashboard query |
-| `explain_document_dashboard_query` | Show how a query was interpreted |
-| `get_search_capabilities` | Which search features the org has enabled |
-| `compare_search_modes` | Compare keyword vs. vector results |
-| `diagnose_document_search` | Why a document does or does not show up for a given search, classical vs. full-text, side by side |
-| `inspect_document_search_index` | Whether a document is present in the document, text and vector indices, and when each was written |
-| `get_dashboard_columns` / `set_dashboard_columns` | Read or change the columns shown on the document dashboard |
+| 工具                                              | 描述                                                                                       |
+| ------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| `search_documents` / `search_documents_by_name`   | 全文和文件名搜索                                                                     |
+| `query_document_dashboard`                        | 使用自然语言查询仪表板                                                                  |
+| `explain_document_dashboard_query`                | 显示查询的解释方式                                                                  |
+| `get_search_capabilities`                         | 查看组织已启用的搜索功能                                                         |
+| `compare_search_modes`                            | 比较关键词搜索与向量搜索结果                                                                |
+| `diagnose_document_search`                        | 并排检查某份文档为何会或不会出现在特定搜索结果中，以及经典搜索与全文搜索的差异 |
+| `inspect_document_search_index`                   | 检查文档是否存在于文档、文本和向量索引中，以及各索引的写入时间 |
+| `get_dashboard_columns` / `set_dashboard_columns` | 读取或更改文档仪表板上显示的列                                        |
 
-### Touchless Intelligence
+### 无人干预智能
 
-Why documents need human involvement and what to change so that fewer do. Every tool here is read-only except `touchless_apply_change`, which writes exactly one previewed setting change.
+了解文档为何需要人工介入，以及如何减少这种情况。此处的工具均为只读，只有 `touchless_apply_change` 除外；该工具只会写入一项已预览的设置更改。
 
-| Tool | Description |
-|------|-------------|
-| `touchless_get_summary` | Touchless scorecard for the organization: how many documents went through untouched, by period and segment |
-| `touchless_list_segments` | Values you can segment the numbers by (supplier, document type, …) |
-| `touchless_rank_supplier_opportunities` | Suppliers ranked by how much manual work they cause |
-| `touchless_diagnose_supplier` | Why one supplier's documents stop for a human |
-| `touchless_get_issue_cluster` | One recurring issue and the documents it affected |
-| `touchless_get_document_trace` | Full touchless history of one document |
-| `touchless_explain_pipeline` | Where in the pipeline a document or a cluster stopped |
-| `touchless_explain_po_match` / `touchless_get_po_match_evidence` | Why PO matching succeeded or failed, with the rule set and tolerance maths |
-| `touchless_get_recommendations` | What to change, not just what went wrong |
-| `touchless_list_change_proposals` | Setting changes that would raise the touchless rate, with the expected lift |
-| `touchless_preview_change` | Dry-run one proposal: nothing is written |
-| `touchless_apply_change` | Apply one previewed proposal to the organization |
-| `touchless_verify_change` | What an applied change turned out to be worth |
+| 工具                                                             | 描述                                                                                                |
+| ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `touchless_get_summary`                                          | 组织的无人干预评分卡：按期间和细分统计未经人工干预处理的文档数量 |
+| `touchless_list_segments`                                        | 可用于细分数据的值（供应商、文档类型等）                                         |
+| `touchless_rank_supplier_opportunities`                          | 按供应商导致的人工工作量进行排名                                                        |
+| `touchless_diagnose_supplier`                                    | 诊断某个供应商的文档为何会停止处理并等待人工介入                                                              |
+| `touchless_get_issue_cluster`                                    | 查看一个重复出现的问题及其影响的文档                                                          |
+| `touchless_get_document_trace`                                   | 查看一份文档的完整无人干预处理历史                                                                     |
+| `touchless_explain_pipeline`                                     | 查看文档或问题集群在处理流水线的哪个环节停止                                                      |
+| `touchless_explain_po_match` / `touchless_get_po_match_evidence` | 查看采购订单匹配成功或失败的原因，以及规则集和容差计算                                 |
+| `touchless_get_recommendations`                                  | 查看建议的更改内容，而不只是已发现的问题                                                                   |
+| `touchless_list_change_proposals`                                | 查看能够提高无人干预率的设置更改及其预期提升幅度                                |
+| `touchless_preview_change`                                       | 对一项建议进行试运行：不会写入任何内容                                                                   |
+| `touchless_apply_change`                                         | 将一项已预览的建议应用到组织                                                                   |
+| `touchless_verify_change`                                        | 查看已应用的更改实际带来的收益                                                              |
 
-### Analytics & BI
+### 分析与 BI
 
-| Tool | Description |
-|------|-------------|
-| `get_executive_summary` | High-level KPIs for the organization |
-| `get_success_rates` | Touchless / straight-through rates |
-| `get_volume_trends` | Document volume over time |
-| `get_top_document_types` | Most frequent document types |
-| `get_pending_tasks_detail` | Detail of outstanding work |
+| 工具                       | 描述                          |
+| -------------------------- | ---------------------------- |
+| `get_executive_summary`    | 组织的高级 KPI |
+| `get_success_rates`        | 无人干预处理率 / 直通率   |
+| `get_volume_trends`        | 随时间变化的文档处理量            |
+| `get_top_document_types`   | 最常见的文档类型   |
+| `get_pending_tasks_detail` | 未完成工作的详情           |
 
-### Electronic Documents (e-invoices)
+### 电子文档（电子发票）
 
-| Tool | Description |
-|------|-------------|
-| `list_electronic_document_types` | Supported e-invoice formats (ZUGFeRD, XRechnung, Factur-X, UBL, …) |
-| `test_electronic_document` | Classify and extract a sample e-document |
-| `verify_electronic_documents` / `validate_all_edocs` | Verify e-document extraction |
-| `list_edoc_custom_attributes` / `create_edoc_custom_attribute` | Manage custom extraction attributes |
+| 工具                                                           | 描述                                                        |
+| -------------------------------------------------------------- | ---------------------------------------------------------- |
+| `list_electronic_document_types`                               | 支持的电子发票格式（ZUGFeRD、XRechnung、Factur-X、UBL 等） |
+| `test_electronic_document`                                     | 对电子文档样本进行分类和提取                           |
+| `verify_electronic_documents` / `validate_all_edocs`           | 验证电子文档提取                                       |
+| `list_edoc_custom_attributes` / `create_edoc_custom_attribute` | 管理自定义提取属性                                |
 
-### Master Data
+### 主数据
 
-| Tool | Description |
-|------|-------------|
-| `upsert_vendor_master_data` | Create or update vendor master data |
-| `trigger_supplier_lookup` | Enrich a document from supplier master data |
-| `import_supplier_invoice_bod` | Import a supplier-invoice BOD |
-| `get_supplier_invoice` | Read the persisted supplier-invoice (BOD) data by invoice, supplier or document |
-| `upsert_payment_term_mapping` / `upsert_discount_mapping` | Maintain calculation mappings |
+| 工具                                                      | 描述                                                                     |
+| --------------------------------------------------------- | ----------------------------------------------------------------------- |
+| `upsert_vendor_master_data`                               | 创建或更新供应商主数据                                             |
+| `trigger_supplier_lookup`                                 | 使用供应商主数据丰富文档                                     |
+| `import_supplier_invoice_bod`                             | 导入供应商发票 BOD                                                   |
+| `get_supplier_invoice`                                    | 按发票、供应商或文档读取已持久化的供应商发票（BOD）数据 |
+| `upsert_payment_term_mapping` / `upsert_discount_mapping` | 维护计算映射                                                   |
 
-### Configuration, Admin & Health
+### 配置、管理与运行状况
 
-| Tool | Description |
-|------|-------------|
-| `get_preferences` / `get_preference` / `set_preference` | Read and change org preferences |
-| `list_document_types` / `get_field_settings` | Inspect the document-type and field setup |
-| `list_users` | List organization users |
-| `clear_org_cache` | Clear cached configuration |
-| `check_api_health` / `check_celery_health` | Service health |
-| `get_current_user` / `get_api_info` | Identity and API metadata |
+| 工具                                                    | 描述                               |
+| ------------------------------------------------------- | --------------------------------- |
+| `get_preferences` / `get_preference` / `set_preference` | 读取和更改组织首选项           |
+| `list_document_types` / `get_field_settings`            | 检查文档类型和字段设置 |
+| `list_users`                                            | 列出组织用户                   |
+| `clear_org_cache`                                       | 清除缓存的配置                |
+| `check_api_health` / `check_celery_health`              | 服务运行状况                            |
+| `get_current_user` / `get_api_info`                     | 身份和 API 元数据                 |
 
-## Next steps
+## 后续步骤
 
-- [**Setup & Configuration**](setup-and-configuration.md) — connect Claude Code, Gemini CLI, or Codex (with login or API key)
-- [**Examples**](examples.md) — real things customers ask the assistant to do
-- [**Electronic Documents (eDocs)**](../edocs-mcp/README.md) — deep dive on the eDoc tools: inspect/test e-invoice processing and manage custom extraction/preview rules (same endpoint, same login)
-- [**Workflows & Cards (DocFlow)**](../docflow-mcp/README.md) — manage advanced workflows and partner cards
+* [**设置与配置**](setup-and-configuration.md) — 连接 Claude Code、Gemini CLI 或 Codex（使用登录或 API 密钥）
+* [**示例**](examples.md) — 客户让助手执行的实际任务
+* [**电子文档（eDocs）**](edocs-mcp/) — 深入了解 eDoc 工具：检查/测试电子发票处理，并管理自定义提取/预览规则（相同端点，相同登录）
+* [**工作流与卡片（DocFlow）**](docflow-mcp/) — 管理高级工作流和合作伙伴卡片
 
 {% hint style="info" %}
-**One MCP for everything.** The eDoc tools and the **Workflows & Cards (DocFlow)** tools run on the **same** `api.docbits.com/v3/mcp` endpoint with the same DocBits login. DocFlow tools appear there with the prefix `docflow_` (for example `docflow_list_workflows`); the DocFlow page documents them under their bare names. Connecting to the DocFlow host directly is still possible but no longer necessary.
+**一个 MCP，满足所有需求。** eDoc 工具和 **工作流与卡片（DocFlow）** 工具运行在**同一个** `api.docbits.com/v3/mcp` 端点上，并使用相同的 DocBits 登录凭据。DocFlow 工具在该端点中的前缀为 `docflow_`（例如 `docflow_list_workflows`）；DocFlow 页面则使用它们不带前缀的名称进行说明。仍然可以直接连接到 DocFlow 主机，但现在已无此必要。
 {% endhint %}

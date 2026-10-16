@@ -1,31 +1,31 @@
-# Field Functions
+# 字段函数
 
-Functions for reading, writing, and controlling document fields.
+用于读取、写入和控制文档字段的函数。
 
-**Source:** `module/script/helper/document_script_functions.py`
+**来源：** `module/script/helper/document_script_functions.py`
 
 ---
 
-## get\_field\_value()
+## get\_field\_value() <a id="get_field_value"></a>
 
-Reads the value of a field from the document.
+读取文档中某个字段的值。
 
 ```python
 get_field_value(document_data, field_name, default_value=None, is_clean=False)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `document_data` | `dict` | The `document_data` context object |
-| `field_name` | `str` | Name of the field (e.g., `"invoice_id"`) |
-| `default_value` | `any` | Return value if field is empty/missing (default: `None`) |
-| `is_clean` | `bool` | If `True`: value is converted to UPPERCASE with spaces removed |
+| `document_data` | `dict` | `document_data` 上下文对象 |
+| `field_name` | `str` | 字段名称（例如 `"invoice_id"`） |
+| `default_value` | `any` | 字段为空或缺失时的返回值（默认值：`None`） |
+| `is_clean` | `bool` | 如果为 `True`：将值转换为大写并移除空格 |
 
-**Returns:** The field value as string, or `default_value`
+**返回值：** 字段值（字符串），或 `default_value`
 
-**Example — Read invoice number with fallback:**
+**示例 — 读取发票编号并设置备用值：**
 
 ```python
 # Read field with default value
@@ -35,35 +35,35 @@ inv_id = get_field_value(document_data, "invoice_id", "UNKNOWN")
 inv_id = get_field_value(document_data, "invoice_id", "", is_clean=True)
 ```
 
-**What happens:** Returns the field value. When `is_clean=True`, the value is transformed via `value.upper().replace(" ", "").strip()` — useful for comparisons.
+**执行结果：** 返回字段值。当 `is_clean=True` 时，值会通过 `value.upper().replace(" ", "").strip()` 转换，适用于比较。
 
 ---
 
-## set\_field\_value()
+## set\_field\_value() <a id="set_field_value"></a>
 
-Sets the value of a field. Automatically creates the field if it does not exist.
+设置字段的值。如果字段不存在，会自动创建该字段。
 
 ```python
 set_field_value(document_data, field_name, value, remove_link=False)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `document_data` | `dict` | The `document_data` context object |
-| `field_name` | `str` | Name of the field |
-| `value` | `any` | New value |
-| `remove_link` | `bool` | If `True`: removes coords, confidence, rule, etc. |
+| `document_data` | `dict` | `document_data` 上下文对象 |
+| `field_name` | `str` | 字段名称 |
+| `value` | `any` | 新值 |
+| `remove_link` | `bool` | 如果为 `True`：移除 coords、confidence、rule 等属性 |
 
-**Returns:** `True` if value changed, `False` if identical
+**返回值：** 如果值已更改则返回 `True`，如果值相同则返回 `False`
 
-**Side effects:**
-- Sets `highlight_field = True` (visual indicator in UI)
-- Sets `extraction_method = "SCRIPT"`
-- Sets `formatted_value = value`
+**副作用：**
+- 设置 `highlight_field = True`（在界面中显示视觉提示）
+- 设置 `extraction_method = "SCRIPT"`
+- 设置 `formatted_value = value`
 
-**Example — Conditional value assignment:**
+**示例 — 条件赋值：**
 
 ```python
 # Set invoice ID
@@ -73,29 +73,29 @@ set_field_value(document_data, "invoice_id", "INV-2026-001")
 set_field_value(document_data, "custom_field", "Calculated", remove_link=True)
 ```
 
-**What happens:** The field value is updated and marked as script-modified. If the field does not exist, it is automatically created with `extraction_method: "SCRIPT"` and added to both `fields` and `fields_dict`.
+**执行结果：** 字段值会更新，并标记为由脚本修改。如果字段不存在，会自动创建该字段，并设置 `extraction_method: "SCRIPT"`，然后将其添加到 `fields` 和 `fields_dict` 中。
 
 ---
 
-## set\_date\_value()
+## set\_date\_value() <a id="set_date_value"></a>
 
-Sets a date value with automatic formatting and optional date arithmetic.
+设置日期值，并自动格式化，还可选择执行日期运算。
 
 ```python
 set_date_value(document_data, field_name, value, add_days=0, skip_weekend=False,
                remove_link=False, exclude_final_days=None)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `value` | `str` | ISO date: `"2026-03-25"`. If empty: today's date |
-| `add_days` | `int` | Days to add (e.g., `30` for payment terms) |
-| `skip_weekend` | `bool` | Skip weekends when adding days |
-| `exclude_final_days` | `str/list` | Additional days to exclude (e.g., `"MONDAY,FRIDAY"`) |
+| `value` | `str` | ISO 日期：`"2026-03-25"`。如果为空：使用今天的日期 |
+| `add_days` | `int` | 要增加的天数（例如，付款期限为 `30` 天） |
+| `skip_weekend` | `bool` | 增加天数时跳过周末 |
+| `exclude_final_days` | `str/list` | 要额外排除的日期（例如，`"MONDAY,FRIDAY"`） |
 
-**Example — Calculate payment due date (30 days, no weekends):**
+**示例 — 计算付款到期日（30 天，不含周末）：**
 
 ```python
 # Due date: 30 days after invoice date, skip weekends
@@ -111,49 +111,49 @@ set_date_value(document_data, "delivery_date", "2026-04-01",
                add_days=14, skip_weekend=True, exclude_final_days="MONDAY")
 ```
 
-**What happens:** The date is calculated by adding days (optionally skipping weekends/specific days) and automatically formatted according to the document's `date_format_pattern` (e.g., `%d.%m.%Y` for Germany).
+**执行结果：** 计算日期时会增加相应天数（可选择跳过周末或指定日期），并根据文档的 `date_format_pattern` 自动格式化（例如，德国使用 `%d.%m.%Y`）。
 
-**Day codes for `exclude_final_days`:**
-`MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`, `FRIDAY`, `SATURDAY`, `SUNDAY`
+**`exclude_final_days` 的日期代码：**
+`MONDAY`、`TUESDAY`、`WEDNESDAY`、`THURSDAY`、`FRIDAY`、`SATURDAY`、`SUNDAY`
 
 ---
 
-## set\_amount\_value()
+## set\_amount\_value() <a id="set_amount_value"></a>
 
-Sets an amount value with automatic locale formatting.
+设置金额值，并自动按区域格式进行格式化。
 
 ```python
 set_amount_value(document_data, field_name, value, remove_link=False)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `value` | `str/number` | Amount in English format (e.g., `"1234.56"`) |
+| `value` | `str/number` | 英文格式的金额（例如，`"1234.56"`） |
 
-**Example — Set net amount:**
+**示例 — 设置净额：**
 
 ```python
 set_amount_value(document_data, "net_amount", "1234.56")
 # formatted_value becomes e.g., "1.234,56" for de_DE locale
 ```
 
-**What happens:** The amount is formatted according to `amount_format_locale` from `document_json` (e.g., `de_DE`, `en_US`).
+**执行结果：** 金额会根据 `document_json` 中的 `amount_format_locale` 格式化（例如，`de_DE`、`en_US`）。
 
 ---
 
 ## create\_new\_field()
 
-Creates a new field dictionary (without adding it to the document).
+创建新的字段字典（不会将其添加到文档中）。
 
 ```python
 create_new_field(field_name, value="")
 ```
 
-**Returns:** Dict with `name`, `value`, `formatted_value`, `extraction_method: "SCRIPT"`
+**返回值：** 包含 `name`、`value`、`formatted_value`、`extraction_method: "SCRIPT"` 的字典
 
-**Example:**
+**示例：**
 
 ```python
 new_field = create_new_field("custom_reference", "REF-001")
@@ -162,22 +162,22 @@ fields_dict["custom_reference"] = new_field
 ```
 
 {% hint style="success" %}
-**Simpler alternative:** Use `set_field_value()` instead — it automatically creates the field if it does not exist. `create_new_field()` is only needed when you want to manually manipulate the field dict.
+**更简单的替代方案：** 使用 `set_field_value()` 代替——如果字段不存在，它会自动创建字段。只有在需要手动操作字段字典时，才需要使用 `create_new_field()`。
 {% endhint %}
 
 ---
 
 ## delete\_field()
 
-Removes a field from the document.
+从文档中移除字段。
 
 ```python
 delete_field(document_data, field_name)
 ```
 
-**Returns:** Tuple `(doc_json, fields_dict)` after deletion
+**返回值：** 删除后包含 `(doc_json, fields_dict)` 的元组
 
-**Example:**
+**示例：**
 
 ```python
 delete_field(document_data, "unnecessary_field")
@@ -185,29 +185,29 @@ delete_field(document_data, "unnecessary_field")
 
 ---
 
-## set\_field\_as\_invalid()
+## set\_field\_as\_invalid() <a id="set_field_as_invalid"></a>
 
-Marks a field as invalid with an error message.
+将字段标记为无效，并附上错误消息。
 
 ```python
 set_field_as_invalid(document_data, field_name, message, code=None)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `message` | `str` | Error message (displayed in UI) |
-| `code` | `str` | Error code (default: `INVALID_VALUE`) |
+| `message` | `str` | 错误消息（显示在界面中） |
+| `code` | `str` | 错误代码（默认值：`INVALID_VALUE`） |
 
-**Side effects:**
+**副作用：**
 - `is_valid = False`
 - `invalidated_by_script = True`
 - `highlight_field = True`
 - `validation_message = message`
 - `validation_code = code`
 
-**Example — IBAN validation:**
+**示例 — IBAN 验证：**
 
 ```python
 iban = get_field_value(document_data, "iban", "")
@@ -217,56 +217,56 @@ if len(iban) < 15:
                          "IBAN_TOO_SHORT")
 ```
 
-**What happens:** The field is highlighted red in the validation screen with the error message displayed to the user.
+**执行结果：** 在验证界面中，字段会以红色高亮显示，并向用户展示错误消息。
 
 ---
 
-## set\_field\_as\_valid()
+## set\_field\_as\_valid() <a id="set_field_as_valid"></a>
 
-Removes the invalid status from a field.
+移除字段的无效状态。
 
 ```python
 set_field_as_valid(document_data, field_name, message, code=None)
 ```
 
-**Example:**
+**示例：**
 
 ```python
 set_field_as_valid(document_data, "iban", "IBAN valid")
 ```
 
-**What happens:** Removes `invalidated_by_script`, `validation_message`, `validation_code` and sets `is_valid = True`.
+**执行结果：** 移除 `invalidated_by_script`、`validation_message`、`validation_code`，并设置 `is_valid = True`。
 
 ---
 
 ## set\_field\_attribute()
 
-Sets an arbitrary attribute on a field.
+设置字段的任意属性。
 
 ```python
 set_field_attribute(document_data, field_name, attribute_name, value)
 ```
 
-**Example:**
+**示例：**
 
 ```python
 set_field_attribute(document_data, "invoice_id", "highlight_field", True)
 set_field_attribute(document_data, "supplier_name", "custom_flag", "reviewed")
 ```
 
-See the full list of [Supported Attributes](#supported-attributes) below.
+下方列出了完整的[支持的属性](#supported-attributes)。
 
 ---
 
-## set\_is\_required()
+## set\_is\_required() <a id="set_is_required"></a>
 
-Makes a field mandatory or removes the requirement.
+将字段设为必填，或取消必填要求。
 
 ```python
 set_is_required(document_data, field_name, value)
 ```
 
-**Example — PO number required for purchase invoices:**
+**示例 — 采购发票必须填写采购订单编号：**
 
 ```python
 doc_type_detail = get_field_value(document_data, "document_type_detail", "")
@@ -280,19 +280,19 @@ else:
 
 ## set\_is\_readonly()
 
-Makes a field read-only or editable.
+将字段设为只读或可编辑。
 
 ```python
 set_is_readonly(document_data, field_name, value)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `value` | `bool/None` | `True` = readonly, `False` = editable, `None` = remove attribute |
+| `value` | `bool/None` | `True` = 只读，`False` = 可编辑，`None` = 移除属性 |
 
-**Example:**
+**示例：**
 
 ```python
 set_is_readonly(document_data, "total_amount", True)
@@ -300,15 +300,15 @@ set_is_readonly(document_data, "total_amount", True)
 
 ---
 
-## set\_is\_hidden()
+## set\_is\_hidden() <a id="set_is_hidden"></a>
 
-Hides or shows a field in the UI.
+在界面中隐藏或显示字段。
 
 ```python
 set_is_hidden(document_data, field_name, value)
 ```
 
-**Example — Show sub-org fields only when relevant:**
+**示例 — 仅在相关时显示子组织字段：**
 
 ```python
 if not document_json.get("sub_org_id"):
@@ -319,25 +319,25 @@ if not document_json.get("sub_org_id"):
 
 ## set\_force\_validation()
 
-Forces manual validation for a field.
+强制对字段进行手动验证。
 
 ```python
 set_force_validation(document_data, field_name, value, reset_validation=False)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `value` | `bool` | `True` = force validation, `False` = remove |
-| `reset_validation` | `bool` | If `True`: resets `is_validated` back to `False` |
+| `value` | `bool` | `True` = 强制验证，`False` = 移除 |
+| `reset_validation` | `bool` | 如果为 `True`：将 `is_validated` 重置为 `False` |
 
-**Side effects when `value=True`:**
+**当 `value=True` 时的副作用：**
 - `force_validation = True`
-- `is_valid = False` (if not yet validated)
+- 如果尚未验证，则设置 `is_valid = False`
 - `validation_code = "FORCED_VALIDATION"`
 
-**Example — Force validation for high amounts:**
+**示例 — 强制验证高额金额：**
 
 ```python
 amount = get_field_value(document_data, "total_amount", "0")
@@ -350,39 +350,39 @@ except ValueError:
 
 ---
 
-## Supported Attributes
+## 支持的属性 <a id="supported-attributes"></a>
 
-### Core Field Attributes
+### 核心字段属性
 
-| Attribute | Type | Description |
+| 属性 | 类型 | 描述 |
 | --------- | ---- | ----------- |
-| `value` | any | The raw field value |
-| `formatted_value` | string | Display-formatted value |
-| `content` | string | Original extracted content |
-| `is_required` | bool | Whether field is mandatory |
-| `is_valid` | bool | Validation status |
-| `is_validated` | bool | Whether field has been validated by user |
-| `is_readonly` | bool | Whether field is read-only |
-| `is_hidden` | bool | Whether field is hidden in UI |
-| `force_validation` | bool | Force user to validate this field |
-| `highlight_field` | bool | Highlight field in UI |
-| `extraction_method` | string | How value was extracted (e.g., `"SCRIPT"`) |
+| `value` | any | 原始字段值 |
+| `formatted_value` | string | 格式化后用于显示的值 |
+| `content` | string | 原始提取内容 |
+| `is_required` | bool | 字段是否为必填项 |
+| `is_valid` | bool | 验证状态 |
+| `is_validated` | bool | 用户是否已验证字段 |
+| `is_readonly` | bool | 字段是否为只读 |
+| `is_hidden` | bool | 字段是否在界面中隐藏 |
+| `force_validation` | bool | 强制用户验证此字段 |
+| `highlight_field` | bool | 在界面中高亮显示字段 |
+| `extraction_method` | string | 值的提取方式（例如，`"SCRIPT"`） |
 
-### Validation Attributes
+### 验证属性
 
-| Attribute | Type | Description |
+| 属性 | 类型 | 描述 |
 | --------- | ---- | ----------- |
-| `validation_message` | string | Error message shown to user |
-| `validation_code` | string | Error code (e.g., `"FORCED_VALIDATION"`, `"INVALID_VALUE"`) |
-| `invalidated_by_script` | bool | Marks field as invalidated by script |
+| `validation_message` | string | 向用户显示的错误消息 |
+| `validation_code` | string | 错误代码（例如，`"FORCED_VALIDATION"`、`"INVALID_VALUE"`） |
+| `invalidated_by_script` | bool | 标记字段由脚本设为无效 |
 
-### Extraction/OCR Attributes
+### 提取/OCR 属性
 
-| Attribute | Type | Description |
+| 属性 | 类型 | 描述 |
 | --------- | ---- | ----------- |
-| `coords` | object | Bounding box coordinates on document |
-| `confidence` | float | OCR/extraction confidence score |
-| `score` | float | Match/validation score |
-| `score_description` | string | Description of the score |
-| `page` | int | Page number where field was found |
-| `rule` | string | Extraction rule that was applied |
+| `coords` | object | 文档上的边界框坐标 |
+| `confidence` | float | OCR/提取置信度分数 |
+| `score` | float | 匹配/验证分数 |
+| `score_description` | string | 分数说明 |
+| `page` | int | 找到字段的页码 |
+| `rule` | string | 应用的提取规则 |

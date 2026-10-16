@@ -1,38 +1,38 @@
-# Customizable Sidebar
+# 可自定义侧边栏
 
-The sidebar can be rearranged to match how you work. Drag items into the order you prefer, hide entries you never use, and pin the ones you open most often to the top. Your layout is remembered for the next time you log in.
+你可以重新排列侧边栏，让它符合自己的工作习惯。将项目拖到所需位置，隐藏不常用的条目，并将最常打开的条目固定在顶部。下次登录时，系统会保留你的布局。
 
-## How to access
+## 如何访问
 
-Expand the sidebar (if you're in mini mode, click the toggle at the top), scroll to the bottom, and click **Customize**. The sidebar enters edit mode.
+展开侧边栏（如果处于迷你模式，请点击顶部的切换按钮），滚动到底部，然后点击 **Customize**。侧边栏将进入编辑模式。
 
-<figure><img src="../../.gitbook/assets/customizable-sidebar-edit-mode.png" alt="Sidebar in edit mode"><figcaption><p>In edit mode, each item shows a drag handle and a visibility toggle.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/customizable-sidebar-edit-mode.png" alt="侧边栏处于编辑模式"><figcaption><p>在编辑模式下，每个项目都会显示一个拖动手柄和一个可见性开关。</p></figcaption></figure>
 
-## Reordering items
+## 重新排列项目
 
-In edit mode every entry shows a drag handle (the six-dot icon on the left). Click and drag an item to a new position. Other items slide to make room. Release to drop.
+在编辑模式下，每个条目都会显示一个拖动手柄（左侧的六点图标）。点击并拖动项目，将它移到新位置。其他项目会滑动以腾出空间。松开鼠标即可放置。
 
-The order is per-user. Other people in your organisation see their own ordering.
+项目顺序仅对当前用户生效。组织中的其他人会看到各自的排序。
 
-## Hiding items
+## 隐藏项目
 
-Each entry has a visibility toggle on the right. Switch it off to hide the entry from your sidebar. Hidden entries are dimmed in edit mode so you can still see and re-enable them later.
+每个条目右侧都有一个可见性开关。关闭开关即可将该条目从侧边栏中隐藏。隐藏的条目在编辑模式下会显示为灰暗状态，方便你查看并在之后重新启用。
 
-Hiding an entry removes it from the sidebar — the underlying page is still reachable via [Global Quick Search](global-quick-search.md), the [Sitemap](sitemap.md), or a direct URL.
+隐藏条目会将其从侧边栏中移除，但仍可通过[全局快速搜索](global-quick-search.md)、[站点地图](sitemap.md)或直接 URL 访问对应页面。
 
-## Pinning to the top
+## 固定到顶部
 
-Some entries can be pinned. Pinned items always float to the top of the sidebar regardless of their position in the drag-and-drop order. Use this for the one or two screens you use multiple times a day.
+部分条目可以固定。无论拖放排序中的位置如何，已固定的项目始终显示在侧边栏顶部。你可以将每天多次使用的一两个界面固定在这里。
 
-## Saving and resetting
+## 保存和重置
 
-* **Done** — exits edit mode and applies your new order, visibility, and pinned items.
-* **Reset** — clears all customisations and restores the default sidebar.
+* **Done** — 退出编辑模式，并应用新的排序、可见性设置和固定项目。
+* **Reset** — 清除所有自定义设置，并恢复默认侧边栏。
 
-Your preferences are saved automatically when you press **Done**. They persist across sessions.
+按下 **Done** 后，系统会自动保存你的偏好设置。这些设置会在不同会话间保留。
 
-## New features
+## 新功能
 
-When a new feature is added to DocBits in a future release, it joins the end of your sidebar with default visibility. Reorder or hide it from edit mode to fit your routine.
+在未来版本中，DocBits 添加新功能时，该功能会以默认可见状态出现在侧边栏末尾。你可以在编辑模式下重新排列或隐藏它，让侧边栏符合你的日常工作习惯。
 
-<mark>Features you do not have permission to use are never shown in the customisation list — you cannot accidentally un-hide something your role cannot open.</mark>
+<mark>你无权使用的功能不会显示在自定义列表中，因此无法意外取消隐藏角色权限不允许你打开的内容。</mark>

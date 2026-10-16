@@ -1,33 +1,33 @@
-# Show Report
+# 显示报告
 
-### Overview
+### 概述
 
-The **Show Report** setting adds a **Report** entry to the main navigation menu. It gives your team one-click access to the reporting page, where you can review reporting on your document processing.
+**显示报告**设置会在主导航菜单中添加一个**报告**入口。团队成员可以一键访问报告页面，查看文档处理相关报告。
 
-This setting is **disabled by default**.
+此设置**默认处于禁用状态**。
 
-### What Does It Do?
+### 此设置的作用
 
-* **Enabled** — A **Report** item appears in the side menu, linking to the reporting page. Users can open it to view the report.
-* **Disabled** — The Report item is removed from the menu.
+* **启用** — 侧边菜单中会显示**报告**项，链接到报告页面。用户可以打开该页面查看报告。
+* **禁用** — 菜单中会移除**报告**项。
 
-### Benefits
+### 优势
 
-* **Insight**: Reach reporting on your document processing directly from the menu.
-* **Quick access**: The report is one click away when it is needed.
-* **Tidy interface**: Keep the menu focused by hiding the report for teams that don’t use it.
+* **深入了解**：直接从菜单访问文档处理相关报告。
+* **快速访问**：需要时，一键即可打开报告。
+* **界面整洁**：对于不使用报告的团队，可将其隐藏，让菜单保持简洁。
 
-### How to Use
+### 使用方法
 
-1. Go to **Settings**.
-2. Select **Document Processing**.
-3. Select **Module**.
-4. Open the **Document Type** section.
-5. Find **Show Report** and switch the toggle on.
-6. A **Report** entry then appears in the navigation menu for the organization.
+1. 前往**设置**。
+2. 选择**文档处理**。
+3. 选择**模块**。
+4. 打开**文档类型**部分。
+5. 找到**显示报告**并开启开关。
+6. 随后，组织的导航菜单中会显示一个**报告**入口。
 
-### When to Use This Feature
+### 何时使用此功能
 
-* **Monitoring and oversight**: When supervisors or admins want quick access to reporting.
-* **Regular reviews**: When the report is part of your team’s routine.
-* **Leave it off** if no one needs the report, to keep the navigation focused.
+* **监控与监督**：主管或管理员需要快速访问报告时。
+* **定期审查**：报告属于团队日常工作流程的一部分时。
+* 如果没有人需要报告，请**保持关闭**，让导航菜单保持简洁。

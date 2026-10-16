@@ -1,14 +1,14 @@
-# Task for High Invoice Amount
+# 高额发票任务
 
-## What does this script do?
+## 此脚本的作用是什么？
 
-Creates an approval task when the invoice total exceeds a threshold (e.g., 100,000). The task is assigned to the "Finance Approval" group and triggers an email notification to ensure timely review.
+当发票总额超过某个阈值（例如 100,000）时创建一个审批任务。任务会分配给“财务审批”组，并触发电子邮件通知，以确保及时审核。
 
-## Trigger
+## 触发器
 
-`AFTER_FORMATTING` on document type **INVOICE**
+文档类型 **INVOICE** 上的 `AFTER_FORMATTING`
 
-## Full Script
+## 完整脚本
 
 ```python
 # Read total amount from the document
@@ -34,15 +34,15 @@ except ValueError:
     pass
 ```
 
-## Step-by-Step Explanation
+## 分步说明
 
-1. **Read total amount** from the document
-2. **Check threshold** — only proceed if amount exceeds 100,000
-3. **Find group** by name using `get_group_by_name()` to get the group ID dynamically
-4. **Create task** assigned to the finance group with high priority and email notification
+1. **读取总金额**，从文档中获取总金额
+2. **检查阈值** — 仅当金额超过 100,000 时继续
+3. 使用 `get_group_by_name()` **按名称查找组**，以动态获取组 ID
+4. **创建任务**，将任务分配给财务组，并设置高优先级和电子邮件通知
 
-## Functions Used
+## 使用的函数
 
-- [get\_field\_value()](../field-functions.md#get\_field\_value) — Read field value
-- [get\_group\_by\_name()](../business-logic-functions.md#get\_group\_by\_id--get\_group\_by\_name) — Find group by name
-- [create\_document\_task()](../business-logic-functions.md#create\_document\_task) — Create approval task
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — 读取字段值
+- [get\_group\_by\_name()](../business-logic-functions.md#get\_group\_by\_id--get\_group\_by\_name) — 按名称查找组
+- [create\_document\_task()](../business-logic-functions.md#create\_document\_task) — 创建审批任务

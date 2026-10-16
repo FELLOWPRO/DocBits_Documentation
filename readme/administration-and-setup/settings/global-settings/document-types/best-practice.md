@@ -1,120 +1,119 @@
-# Best Practice
+# 最佳实践
 
-Configuring document types in Docbits requires care and expertise to ensure that document processing is efficient and accurate. Here are some best practices for configuring document types, including recommendations for setting up effective regex patterns and tips for training models to improve accuracy:
-
-
-
-### **Planning and analysis**&#x20;
-
-**Best practices**
-
-**Requirements analysis:**&#x20;
-
-* Conduct a thorough analysis of the requirements to understand which document types are needed and what information needs to be extracted from them.&#x20;
-
-**Pilot projects:**&#x20;
-
-* Start with pilot projects to test the configuration and extraction rules before applying them to the entire system.
-
-### Setting up layouts&#x20;
-
-**Best practices**
-
-**Consistency:**&#x20;
-
-* Make sure that documents of one type have a consistent layout. This makes configuration and data extraction easier.&#x20;
-
-**Use templates:**&#x20;
-
-* Use document templates to ensure consistency and simplify setup.
-
-### Field definitions and metadata&#x20;
-
-**Best practices**
-
-**Unique field names:**&#x20;
-
-* Use unique and meaningful names for fields to avoid confusion.&#x20;
-
-**Relevant metadata:**&#x20;
-
-* Define only the fields that are really necessary to reduce complexity and increase efficiency.&#x20;
-
-**Formatting guidelines:**&#x20;
-
-* Set clear formatting guidelines for each field to facilitate validation and extraction
-
-### Training models for data extraction&#x20;
-
-**Best practices**
-
-**Use quality data:**&#x20;
-
-* Use high-quality and representative data to train the models.&#x20;
-
-**Data enrichment:**&#x20;
-
-* Enrich the training dataset by adding different document examples to increase the robustness of the model.&#x20;
-
-**Iterative training:**&#x20;
-
-* Train the model iteratively and evaluate the results regularly to achieve continuous improvements.&#x20;
-
-**Tips:**&#x20;
-
-**Transfer learning:**&#x20;
-
-* Leverage pre-trained models and tune them with specific document examples to reduce training time and increase accuracy.&#x20;
-
-**Hyperparameter tuning:**&#x20;
-
-* Experiment with different hyperparameters to find the optimal configuration for your model.
-
-### Validation and extraction rules&#x20;
-
-**Best practices**&#x20;
-
-**Multi-step validation:**&#x20;
-
-* Implement multi-step validation rules to check the correctness of the extracted data.&#x20;
-
-**Combine rule-based and ML-based approaches:**&#x20;
-
-* Use a combination of rule-based and machine learning approaches to extract and validate data.&#x20;
-
-**Error management:**&#x20;
-
-* Set up mechanisms to detect and fix faulty extractions.
-
-### Automation workflows&#x20;
-
-**Best practices**
-
-**Clearly defined workflows:**&#x20;
-
-* Define clear and traceable automation workflows for each document type.&#x20;
-
-**Continuous monitoring:**&#x20;
-
-* Monitor automation workflows regularly to evaluate their performance and identify optimization potential.&#x20;
-
-**Incorporate user feedback:**&#x20;
-
-* Integrate user feedback to continuously improve workflows.
-
-### User rights and access control&#x20;
-
-**Best practices**&#x20;
-
-**Role-based access:**&#x20;
-
-* Implement role-based access controls to ensure that only authorized users have access to certain document types and fields.&#x20;
-
-**Regular review:**&#x20;
-
-* Regularly review access controls and adapt them to changing requirements.
+在 DocBits 中配置文档类型需要谨慎和专业知识，以确保文档处理高效、准确。以下是配置文档类型的一些最佳实践，包括设置有效正则表达式模式的建议，以及通过训练模型提高准确性的技巧：
 
 
 
-Configuring document types in Docbits requires careful planning and continuous adjustment to achieve optimal results. By applying the best practices above, you can significantly increase the efficiency and accuracy of document processing and data extraction.
+### **规划与分析**&#x20;
 
+**最佳实践**
+
+**需求分析：**&#x20;
+
+* 全面分析需求，了解需要哪些文档类型，以及需要从中提取哪些信息。&#x20;
+
+**试点项目：**&#x20;
+
+* 先通过试点项目测试配置和提取规则，再将其应用于整个系统。
+
+### 设置布局&#x20;
+
+**最佳实践**
+
+**一致性：**&#x20;
+
+* 确保同一类型的文档具有一致的布局。这有助于简化配置和数据提取。&#x20;
+
+**使用模板：**&#x20;
+
+* 使用文档模板来确保一致性并简化设置。
+
+### 字段定义和元数据&#x20;
+
+**最佳实践**
+
+**唯一的字段名称：**&#x20;
+
+* 为字段使用唯一且有意义的名称，以避免混淆。&#x20;
+
+**相关元数据：**&#x20;
+
+* 仅定义真正必要的字段，以降低复杂性并提高效率。&#x20;
+
+**格式指南：**&#x20;
+
+* 为每个字段制定明确的格式指南，以便于验证和提取。
+
+### 训练数据提取模型&#x20;
+
+**最佳实践**
+
+**使用高质量数据：**&#x20;
+
+* 使用高质量且具有代表性的数据来训练模型。&#x20;
+
+**数据增强：**&#x20;
+
+* 在训练数据集中添加不同的文档示例，以提高模型的鲁棒性。&#x20;
+
+**迭代训练：**&#x20;
+
+* 以迭代方式训练模型并定期评估结果，以实现持续改进。&#x20;
+
+**提示：**&#x20;
+
+**迁移学习：**&#x20;
+
+* 使用预训练模型，并通过特定的文档示例对其进行微调，以缩短训练时间并提高准确性。&#x20;
+
+**超参数调优：**&#x20;
+
+* 尝试不同的超参数，为模型找到最佳配置。
+
+### 验证和提取规则&#x20;
+
+**最佳实践**&#x20;
+
+**多步验证：**&#x20;
+
+* 实施多步验证规则，检查提取数据的正确性。&#x20;
+
+**结合基于规则和基于机器学习的方法：**&#x20;
+
+* 结合基于规则的方法和机器学习方法来提取和验证数据。&#x20;
+
+**错误管理：**&#x20;
+
+* 设置机制，以检测并修正错误的提取结果。
+
+### 自动化工作流&#x20;
+
+**最佳实践**
+
+**明确定义工作流：**&#x20;
+
+* 为每种文档类型定义清晰且可追溯的自动化工作流。&#x20;
+
+**持续监控：**&#x20;
+
+* 定期监控自动化工作流，评估其性能并发现优化空间。&#x20;
+
+**纳入用户反馈：**&#x20;
+
+* 整合用户反馈，持续改进工作流。
+
+### 用户权限和访问控制&#x20;
+
+**最佳实践**&#x20;
+
+**基于角色的访问：**&#x20;
+
+* 实施基于角色的访问控制，确保只有获授权的用户才能访问特定文档类型和字段。&#x20;
+
+**定期检查：**&#x20;
+
+* 定期检查访问控制，并根据需求变化进行调整。
+
+
+
+在 DocBits 中配置文档类型需要周密规划并持续调整，才能取得最佳效果。应用上述最佳实践，可以显著提高文档处理和数据提取的效率与准确性。

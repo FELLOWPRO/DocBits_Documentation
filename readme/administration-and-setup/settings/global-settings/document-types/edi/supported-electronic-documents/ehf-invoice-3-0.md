@@ -1,31 +1,31 @@
 ---
-description: EHF INVOICE 3.0 electronic document support in DocBits
+description: "DocBits 对 EHF INVOICE 3.0 电子文档的支持"
 ---
 
 # 🇳🇴 EHF INVOICE 3.0
 
-| Property             | Value                                             |
+| 属性                 | 值                                              |
 | -------------------- | ------------------------------------------------- |
-| **Country / Region** | Norway                                            |
-| **Document Types**   | Invoice, Credit Note                              |
-| **Format**           | UBL 2.1 XML                                       |
-| **Standard**         | EHF Invoice 3.0 (based on Peppol BIS Billing 3.0) |
+| **国家 / 地区**      | 挪威                                            |
+| **文档类型**         | 发票、贷项通知单                              |
+| **格式**             | UBL 2.1 XML                                       |
+| **标准**             | EHF Invoice 3.0（基于 Peppol BIS Billing 3.0） |
 
-EHF (Elektronisk Handelsformat) Invoice 3.0 is the Norwegian e-invoicing standard maintained by the Agency for Public Management and eGovernment (Difi). Version 3.0 is aligned with Peppol BIS Billing 3.0, making Norwegian e-invoices interoperable across the European Peppol network.
+EHF（Elektronisk Handelsformat）Invoice 3.0 是由挪威公共管理和电子政务局（Difi）维护的挪威电子发票标准。3.0 版本与 Peppol BIS Billing 3.0 保持一致，因此挪威电子发票可在欧洲 Peppol 网络中互操作。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件             | 状态        |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览             | ✅ 已支持 |
+| 字段提取         | ✅ 已支持 |
+| 转换             | ✅ 已支持 |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/ehf-invoice-3-0-preview.png" alt="EHF Invoice 3.0 preview in DocBits"><figcaption><p>Default DocBits preview for a Norway EHF Invoice 3.0</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/ehf-invoice-3-0-preview.png" alt="DocBits 中的 EHF Invoice 3.0 预览"><figcaption><p>挪威 EHF Invoice 3.0 的 DocBits 默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)
 * [Peppol BIS 3.0](peppol-bis-3-0.md)

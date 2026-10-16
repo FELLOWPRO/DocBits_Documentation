@@ -1,24 +1,24 @@
-# Script
+# 脚本
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.43.25.png" alt=""><figcaption></figcaption></figure>
 
 {% embed url="https://youtu.be/n8NpWWIjmlA" %}
-DocBits Document Scripts Explained: Automate Custom Logic in Your Document Workflow
+DocBits 文档脚本说明：在文档工作流中自动执行自定义逻辑
 {% endembed %}
 
-#### Overview
+#### 概述
 
-Scripts in Docbits are typically written in a scripting language supported by the system Python. They are triggered during the document processing workflow to apply complex business logic or to ensure data integrity and accuracy before the data is further processed or stored.
+DocBits 中的脚本通常使用系统支持的脚本语言 Python 编写。脚本会在文档处理工作流期间触发，用于应用复杂的业务逻辑，或在数据进一步处理或存储之前确保数据的完整性和准确性。
 
-#### Key Features and Options
+#### 主要功能和选项
 
-1. **Script Management**:
-   * **Name**: Each script is given a unique name for identification.
-   * **Document Type**: Associates the script with a specific document type, determining which documents the script will be applied to.
-   * **Trigger On**: Defines when the script is triggered (e.g., on document upload, before data export, after data validation).
-   * **Active/Inactive Status**: Allows administrators to activate or deactivate scripts without deleting them, providing flexibility in testing and deployment.
-2. **Script Editor**:
-   * Provides an interface where scripts can be written and edited. The editor typically supports syntax highlighting, error highlighting, and other features to assist in script development.
-   * **Example Script**: Scripts can include operations such as looping through invoice lines to validate totals or to remove entries that do not meet certain criteria.
+1. **脚本管理**：
+   * **名称**：为每个脚本指定一个唯一名称，以便识别。
+   * **文档类型**：将脚本关联到特定的文档类型，确定脚本适用于哪些文档。
+   * **触发时机**：定义脚本何时触发（例如，文档上传时、数据导出前、数据验证后）。
+   * **启用/停用状态**：管理员可以启用或停用脚本，而无需删除脚本，从而灵活地进行测试和部署。
+2. **脚本编辑器**：
+   * 提供用于编写和编辑脚本的界面。编辑器通常支持语法高亮、错误高亮和其他辅助脚本开发的功能。
+   * **脚本示例**：脚本可以执行多种操作，例如遍历发票行项目以验证总额，或移除不符合特定条件的条目。
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.43.37.png" alt=""><figcaption></figcaption></figure>

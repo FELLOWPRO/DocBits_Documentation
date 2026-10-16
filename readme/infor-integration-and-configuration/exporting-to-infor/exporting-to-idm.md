@@ -1,15 +1,13 @@
-# Exporting to IDM
+# 导出到 IDM
 
-If you only require your document to be exported to IDM or Document Management in INFOR, the configuration is similar to that of the export to IDM + LN/M3 but does not require any BOD Mapping file as there is no export to LN/M3 required.
+如果您只需要将文档导出到 INFOR 中的 IDM 或文档管理系统，配置与导出到 IDM + LN/M3 的配置类似，但无需 BOD Mapping 文件，因为不需要导出到 LN/M3。
 
-Select the following option for exporting.
+选择以下导出选项。
 
 ![](https://lh7-us.googleusercontent.com/ELtWrfGudPjyRoKqvszlrAlLX83byrejUsmJh0Z7VjBOQ2VNrVJ-B-o\_\_NoziePWk8HCMIBL2cvGo\_ORL\_oS6LluvfIUdNHuVOKzUQB\_HgxyPNgrjnIb3P5N24KvXiavFL7aBPQZ1gIimSyaxosm47c)
 
-You will be required to upload an ION API file as well as an IDM Mapping file.
+您需要上传 ION API 文件和 IDM Mapping 文件。
 
 ![](https://lh7-us.googleusercontent.com/AVoWKz3ocf-1KTrXCGmUmxQzY8brTeR0aIaBAvaB6rV5Otb\_BjYOCm0rzoAXV-ZNxcs\_95yZARY\_MiKPm8-FXDU9oOSQslpc\_JmtiF6dLaaPTQ8TwslL8xySiz2FefX1op73oOQHOfEs\_Yq-RKcmdv4)
 
-How to obtain these has been discussed earlier in this documentation. ION API file and IDM Mapping file.
-
-
+如何获取这些文件已在本文档前文中介绍：ION API 文件和 IDM Mapping 文件。

@@ -1,23 +1,21 @@
-# Using Actions
+# 使用操作
 
-Here is a guide on how to properly use the "Copy" and "Delete" actions for efficient subtype management:
+以下指南介绍如何正确使用“Copy”和“Delete”操作，以便高效管理子类型：
 
-## **Copying a sub-type:**  &#x20;
+## **复制子类型：**
 
-* Navigate to the sub-type management settings in your document management system.
-* Select the subtype you want to copy, click "Copy" and enter a new name for the copied subtype if necessary.
-* Confirm the action and the system will create a copy of the selected sub-type with all existing settings, fields, layouts and scripts.
+* 在文档管理系统中，导航至子类型管理设置。
+* 选择要复制的子类型，点击“Copy”，并根据需要为复制的子类型输入新名称。
+* 确认操作后，系统将复制所选子类型及其所有现有设置、字段、布局和脚本。
 
-<figure><img src="../../../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
 
-## Deleting a sub-type:
+## 删除子类型：
 
-* Navigate to the subtype management settings and select the subtype you want to delete.
-* Click the trash can icon on the right of the action menu.
-* Confirm the deletion action by accepting a confirmation message if prompted.
-* Note that deleting a subtype can irreversibly remove all documents and data associated with it. Make sure you take all necessary security precautions and check that the subtype is no longer needed before deleting it.
+* 导航至子类型管理设置，然后选择要删除的子类型。
+* 点击操作菜单右侧的垃圾桶图标。
+* 如果系统提示确认，请接受确认消息以确认删除操作。
+* 请注意，删除子类型可能会不可逆地移除与其关联的所有文档和数据。删除前，请采取所有必要的安全措施，并确认不再需要该子类型。
 
-Proper use of these actions allows you to streamline sub-type management. Copying allows you to leverage existing configurations for new sub-types, while deleting allows for efficient cleanup of sub-types that are no longer needed. However, it is important to be careful when deleting to avoid data loss.\
-\
-
-
+正确使用这些操作有助于简化子类型管理。复制功能可让您利用现有配置创建新的子类型；删除功能则可高效清理不再需要的子类型。不过，删除时务必谨慎，以免丢失数据。\
+\\

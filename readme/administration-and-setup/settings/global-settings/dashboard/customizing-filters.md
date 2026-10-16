@@ -1,75 +1,75 @@
-# Customizing Filters
+# 自定义筛选器
 
-If you are looking for one or more specific documents, the following options are available to you. Within the search bar, we have provided you with various tools to help you find the document you are looking for. To access them, select the following icon.
+如果您要查找一份或多份特定文档，可以使用以下选项。我们在搜索栏中提供了多种工具，帮助您找到所需的文档。要使用这些工具，请选择以下图标。
 
 <figure><img src="../../../../.gitbook/assets/customizing_filters_1.png" alt=""><figcaption></figcaption></figure>
 
-Using filters allows users to quickly find relevant information and reduce the amount of data to the essentials.
+使用筛选器可以帮助用户快速找到相关信息，并将数据范围缩小到必要内容。
 
-## How to customize and apply filters in DocBits
+## 如何在 DocBits 中自定义和应用筛选器
 
-**Accessing the filter settings Opening the dashboard:**
+**访问筛选器设置并打开仪表板：**
 
-* Log in to DocBits and open the dashboard that contains the data you want to filter.
+* 登录 DocBits，然后打开包含您要筛选数据的仪表板。
 
-**Accessing the filter menu:**
+**访问筛选器菜单：**
 
-* Click the filter icon or search field.
+* 点击筛选器图标或搜索字段。
 
-<figure><img src="../../../../.gitbook/assets/image (2) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (300).png" alt=""><figcaption></figcaption></figure>
 
-### Customizing filters
+### 自定义筛选器
 
-#### **Using predefined filters**
+#### **使用预定义筛选器**
 
-* Open the filter menu.
-* Choose from the predefined filter options (e.g. Date, Document Type, Assigned Person).
-* Adjust the filter criteria by selecting or entering the appropriate values ​​(e.g. date range, specific document type).
+* 打开筛选器菜单。
+* 从预定义的筛选器选项中选择（例如：日期、文档类型、分配人员）。
+* 选择或输入相应的值来调整筛选条件（例如：日期范围、特定文档类型）。
 
-#### **Create your own filters**
+#### **创建自定义筛选器**
 
-* Open the filter menu in the settings under Dashboard and click on "Filters".
+* 在设置中的“Dashboard”（仪表板）下打开筛选器菜单，然后点击“Filters”（筛选器）。
 
 <figure><img src="../../../../.gitbook/assets/customizing_filters_3.png" alt=""><figcaption></figcaption></figure>
 
-* Select the field to be filtered (e.g. Status).
+* 选择要筛选的字段（例如：状态）。
 
-<div data-full-width="true"><figure><img src="../../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../../../.gitbook/assets/image (301).png" alt=""><figcaption></figcaption></figure></div>
 
-* Define the filter criteria, e.g.: Status filter style.
+* 定义筛选条件，例如：状态筛选器样式。
 
 <figure><img src="../../../../.gitbook/assets/customizing_filters_5.png" alt=""><figcaption></figcaption></figure>
 
-* Dropdown menus: Choose from predefined options.
+* 下拉菜单：从预定义选项中选择。
 
-<figure><img src="../../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (302).png" alt=""><figcaption></figcaption></figure>
 
-* Save the custom filter by clicking "Apply".
+* 点击“Apply”（应用）以保存自定义筛选器。
 
-<figure><img src="../../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (303).png" alt=""><figcaption></figcaption></figure>
 
-#### **Use combined filters**
+#### **使用组合筛选器**
 
-* Open the filter menu and select multiple filter criteria at once.
-* Combine filter criteria.
-* **Example:** Documents that were created by both the author "Max Mustermann" AND were created in the last month.
-* Once you have selected a filter, it will be applied automatically.
+* 打开筛选器菜单，一次选择多个筛选条件。
+* 组合筛选条件。
+* **示例：** 查找由作者“Max Mustermann”创建，且创建时间在上个月的文档。
+* 选择筛选器后，它会自动应用。
 
-#### **Applying and Managing Filters**
+#### **应用和管理筛选器**
 
-**Applying Filters**
+**应用筛选器**
 
-* After you select and adjust the desired filters, the filters are automatically applied.
+* 选择并调整所需的筛选器后，筛选器会自动应用。
 
-**Removing Filters**
+**移除筛选器**
 
-* Open the Filters menu.
-* Step 2: Clear or remove the applied filters by clicking "Clear Filters", the X icon next to the selected filter either in the Filters menu or below the Filters bar.
+* 打开筛选器菜单。
+* 步骤 2：点击“Clear Filters”（清除筛选器）、已选筛选器旁的 X 图标（位于筛选器菜单或筛选器栏下方），以清除或移除已应用的筛选器。
 
-<figure><img src="../../../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (309).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/customizing_filters_9.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/customizing_filters_10.png" alt=""><figcaption></figcaption></figure>
 
-* The data is displayed again without the previous filter criteria.
+* 数据将重新显示，不再应用之前的筛选条件。

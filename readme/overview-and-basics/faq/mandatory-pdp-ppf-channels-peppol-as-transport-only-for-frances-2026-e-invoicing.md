@@ -1,44 +1,44 @@
-# Mandatory PDP/PPF Channels – PEPPOL as Transport Only for France’s 2026 E-Invoicing
+# 法国 2026 年电子发票：必须使用 PDP/PPF 渠道，PEPPOL 仅作为传输方式
 
-## PDP or PPF Required for Domestic B2B E-Invoices
+## 国内 B2B 电子发票必须通过 PDP 或 PPF
 
-Under France’s 2026 e-invoicing mandate, companies cannot rely solely on the PEPPOL network to exchange domestic B2B invoices. The law requires that all invoices between French VAT-registered businesses be routed through either a certified private platform (PDP) or the state’s public invoicing portal (PPF) to satisfy legal [requirements](https://www.ey.com/en_gl/technical/tax-alerts/france-revises-schedule-for-adopting-e-invoicing-reform) ￼. In other words, businesses will no longer send invoices directly to customers – they must transmit them via an approved e-invoicing platform (a PDP) or via the government [portal](https://www.avalara.com/blog/en/europe/2022/09/france-publishes-updated-specifications-for-e-invoicing-and-e-reporting.html) ￼. This ensures the tax authority receives the required data in real-time. Simply exchanging invoices over PEPPOL without involving an accredited PDP/PPF would not meet the mandated reporting and transmission obligations.
+根据法国 2026 年电子发票强制规定，企业不能仅依靠 PEPPOL 网络交换国内 B2B 发票。法律要求，法国增值税登记企业之间的所有发票都必须通过经认证的私人平台（PDP）或国家公共发票门户（PPF）传输，以满足法律[要求](https://www.ey.com/en_gl/technical/tax-alerts/france-revises-schedule-for-adopting-e-invoicing-reform) ￼。换言之，企业将不再直接向客户发送发票，而必须通过获批的电子发票平台（PDP）或政府[门户](https://www.avalara.com/blog/en/europe/2022/09/france-publishes-updated-specifications-for-e-invoicing-and-e-reporting.html) ￼进行传输。这样可确保税务机关实时收到所需数据。仅通过 PEPPOL 交换发票而不经过认可的 PDP/PPF，将无法满足强制规定的数据报告和传输义务。
 
 <figure><img src="../../.gitbook/assets/Picture 1.png" alt=""><figcaption></figcaption></figure>
 
-### Introduction to the service offer
+### 服务方案简介
 
-The API mode allows users to access all features available to them from the IT tools already deployed within the partner structures. There are two integration methods:
+API 模式使用户可以通过合作伙伴组织已部署的 IT 工具，使用其可用的所有功能。有两种集成方式：
 
-### ·       Integration into Information Systems (IS):
+### ·       集成到信息系统（IS）中：
 
-APIs are integrated directly into information systems or management software for parties issuing and receiving invoices or their dematerialising operators (ODs). Users can thus directly access the solution’s features and their upgrades from their usual IT tools, internal or offered by their OD.
+API 直接集成到开具和接收发票的各方所使用的信息系统或管理软件中，也可集成到其无纸化处理运营商（OD）的系统中。这样，用户就能直接通过日常使用的 IT 工具（无论是内部工具还是 OD 提供的工具）访问解决方案的功能及其升级。
 
-APIs can also be integrated into the IS of the PDPs to give them more flexibility (compared with EDI mode), with some APIs dedicated to their use.
+API 也可以集成到 PDP 的信息系统中，以提供更大的灵活性（相比 EDI 模式），其中一些 API 专供 PDP 使用。
 
-### ·       Integration into third-party software:
+### ·       集成到第三方软件中：
 
-Editors will be able to offer software based on the APIs. Depending on the mode chosen by the editor, connection can then be effected by the editor, or by the customer itself during installation or deployment in its IS. This third-party software will complement the customer’s information system by adding a communication layer to the PPF.
+软件开发商可以基于这些 API 提供软件。根据开发商选择的模式，连接可以由开发商完成，也可以由客户在其信息系统中安装或部署软件时自行完成。此类第三方软件会通过添加与 PPF 通信的层来扩展客户的信息系统。
 
 <figure><img src="../../.gitbook/assets/Picture 6.png" alt=""><figcaption></figcaption></figure>
 
-## PEPPOL Used Only as an Interoperability Layer
+## PEPPOL 仅用作互操作层
 
-France is adopting PEPPOL as part of its infrastructure, but only as a transport layer within the PDP framework, not as an independent compliance route.  The French tax authority (DGFiP) is becoming the Peppol Authority to standardize how PDPs [interconnect](https://www.avalara.com/blog/en/europe/2025/01/e-invoicing-reform-france.html) . All certified PDPs are required to interconnect via the PEPPOL network for exchanging [invoices](https://nymus.be/fr/facturation-electronique-en-france/) .  This means PEPPOL will facilitate interoperability between authorized platforms – not replace the need for those platforms.  In practice, a company may use PEPPOL only by working through a PDP (or the PPF acting in its limited role) that uses PEPPOL to send or receive invoices. This has been confirmed in official guidance: the public portal is focusing on data collection, while invoice distribution will happen exclusively through PDPs, with those PDPs leveraging networks like [PEPPOL](https://edicomgroup.com/blog/status-of-b2b-electronic-invoicing-in-france) for [exchange](https://nymus.be/fr/facturation-electronique-en-france/) .
+法国正在将 PEPPOL 纳入其基础设施，但仅将其作为 PDP 框架内的传输层，而不是独立的合规渠道。法国税务机关（DGFiP）将成为 Peppol Authority，以统一 PDP 之间的[互联](https://www.avalara.com/blog/en/europe/2025/01/e-invoicing-reform-france.html)方式。所有经认证的 PDP 都必须通过 PEPPOL 网络互联，以交换[发票](https://nymus.be/fr/facturation-electronique-en-france/)。这意味着 PEPPOL 将促进授权平台之间的互操作，而不会取代对这些平台的需求。实际上，企业只有通过使用 PEPPOL 发送或接收发票的 PDP（或在其有限职责范围内运行的 PPF），才能使用 PEPPOL。官方指南也已确认这一点：公共门户侧重于数据收集，而发票分发将完全由 PDP 负责，这些 PDP 会利用 [PEPPOL](https://edicomgroup.com/blog/status-of-b2b-electronic-invoicing-in-france) 等网络进行[交换](https://nymus.be/fr/facturation-electronique-en-france/)。
 
 \
 
 
 <figure><img src="../../.gitbook/assets/Picture 2.png" alt=""><figcaption></figcaption></figure>
 
-## Connection of a hub:
+## 枢纽连接：
 
-The hub provides its customers with a web or application solution to enable them to make the various API calls. **It is thus the hub that makes API calls on behalf of all its customers**. In this case, each partner must have a technical account, but only the hub needs an application under PISTE and a connection to the PPF.
+枢纽会向客户提供 Web 或应用程序解决方案，以便客户发起各类 API 调用。**因此，API 调用由枢纽代表其所有客户发起**。在这种情况下，每个合作伙伴都必须拥有一个技术账户，但只有枢纽需要在 PISTE 下注册应用程序并连接到 PPF。
 
 <figure><img src="../../.gitbook/assets/Picture 5.png" alt=""><figcaption></figcaption></figure>
 
 
 
-Source: Article 91 of France’s 2024 Finance Law (summarized by EY) mandates e-invoices be sent via a certified PDP or the state portal .  The French tax authority’s updates further clarify that after 2024 reforms, businesses must use a registered PDP for B2B e-invoicing (the PPF will no longer serve as a free exchange platform) .  PEPPOL is being implemented to connect these PDPs, not as an alternate channel outside the system . This confirms that using the PEPPOL network alone is insufficient – compliance in France’s 2026 e-invoicing regime requires integration with the PPF or a certified PDP, with PEPPOL serving only as the underlying delivery network among those platforms.
+来源：法国《2024 年财政法》第 91 条（由 EY 概述）规定，电子发票必须通过经认证的 PDP 或国家门户发送。法国税务机关的更新进一步明确，2024 年改革后，企业必须使用已注册的 PDP 进行 B2B 电子发票处理（PPF 将不再作为免费交换平台）。PEPPOL 正在用于连接这些 PDP，而不是作为系统之外的替代渠道。这证实，仅使用 PEPPOL 网络并不足以合规——要符合法国 2026 年电子发票制度的要求，必须接入 PPF 或经认证的 PDP，而 PEPPOL 仅作为这些平台之间的底层传输网络。
 
 <div><figure><img src="../../.gitbook/assets/Picture 3.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Picture 4.png" alt=""><figcaption></figcaption></figure></div>

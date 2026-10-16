@@ -1,124 +1,73 @@
-# Hotfixes 26–30 June 2026
+# 2026年6月26日至30日热修复
 
-_What this prod upgrade delivered, in plain language. Each service shows the
-version now live on production. Services not listed had no customer-facing changes
-in this window._
+_本次生产环境升级带来的变化，通俗说明。每项服务均标注当前生产环境版本。此期间未列出的服务没有面向客户的变更。_
 
 ---
 
-## Highlights
+## 亮点
 
-- **One connection for AI assistants ([DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp)).** A single, unified gateway now
-  serves all DocBits tools — including DocFlow — through the main API, so AI
-  assistants (Claude, Gemini CLI, Codex) connect through one reliable endpoint
-  instead of several.
-- **Smarter multilingual dashboard search.** Search connectors (**AND / OR**) now
-  appear in your language with colour highlighting, invoice sub-types offer a value
-  dropdown, and search-syntax messages are localised — with smoother keyboard
-  handling throughout.
-- **Smoother approvals & permissions.** Approval is no longer triggered when the
-  packaging unit from an order confirmation is empty, normal users can approve
-  costing elements again after the access-control migration, and document-level
-  permissions apply correctly even when a table column already exists.
-- **The app updates itself.** When a new version ships, DocBits now refreshes
-  automatically instead of interrupting you with a "Refresh Now" popup.
-- **More robust purchase-order matching.** Column value transforms, crash guards
-  for lines missing a price or quantity, and automatic retry on dropped database
-  connections make matching steadier.
-- **Fewer errors across the board.** Many rare server errors on dashboards,
-  supplier invoices, PO records and OCR jobs were tracked down and fixed.
+- **AI 助手只需一个连接（[DocBits MCP](../../advanced-functions-and-tools/docbits-mcp/README.md)）。** 现在，一个统一网关通过主 API 提供所有 DocBits 工具（包括 DocFlow），让 AI 助手（Claude、Gemini CLI、Codex）通过一个可靠的端点连接，而不必连接多个端点。
+- **多语言仪表板搜索更智能。** 搜索连接符（**AND / OR**）现在会以用户的语言显示并带有颜色高亮；发票子类型支持值下拉菜单；搜索语法提示也已本地化，键盘操作也更加流畅。
+- **审批与权限更顺畅。** 订单确认中的包装单位为空时，不会再触发审批；访问控制迁移后，普通用户可以再次审批成本要素；即使表格列已存在，文档级权限也能正确应用。
+- **应用会自动更新。** 发布新版本后，DocBits 现在会自动刷新，不再通过“Refresh Now”弹窗打断用户。
+- **采购订单匹配更可靠。** 列值转换、针对缺少价格或数量的行的崩溃防护，以及数据库连接断开后的自动重试，让匹配过程更加稳定。
+- **整体错误更少。** 已查明并修复仪表板、供应商发票、采购订单记录和 OCR 作业中的许多少见服务器错误。
 
 ---
 
-## Web App — live: `10.34.4`
+## Web App — 当前版本：`10.34.4`
 
-- **Dashboard quick search:** localised **AND / OR** connectors (de/fr) with
-  colour syntax highlighting; invoice sub-type value dropdown; localised
-  search-syntax error messages; smoother keyboard experience; the
-  "full-text required" warning now renders inline so the layout no longer jumps.
-- **Approvals & permissions:** fixed approval wrongly triggered when the packaging
-  unit from an order confirmation is empty; normal users can approve costing
-  elements again after the access-control migration; document-level permissions now
-  apply when a table column already exists.
-- **Auto-update:** the app refreshes automatically on a new version instead of
-  showing a "Refresh Now" popup; removed the old version-info dialog.
-- **Inbound e-mail settings:** new failure-notification recipients toggle and
-  field; the import log now shows outbound activity and the failure reason; the
-  inbound address copies reliably.
-- **Document split:** the Document Split screen now scrolls.
-- **Dark mode:** fixes for table extraction, the task counter, and closed-document
-  markers on the dashboard.
-- **Usability & stability:** dashboard export UI fixes; sticky table headers no
-  longer bleed through dialogs; the DocNet dashboard no longer crashes on a failed
-  stats request; field scripts no longer revert emptied fields back to their old
-  values; PO settings checkboxes and layout fixes; classify-list display fixes.
-- **Suppliers:** supplier organisations can now register via magic link.
+- **仪表板快速搜索：** 本地化的 **AND / OR** 连接符（德语/法语）并带有颜色语法高亮；发票子类型值下拉菜单；本地化的搜索语法错误提示；键盘操作更加流畅；“full-text required”警告现在以内嵌方式显示，避免页面布局跳动。
+- **审批与权限：** 修复了订单确认中的包装单位为空时错误触发审批的问题；访问控制迁移后，普通用户可以再次审批成本要素；即使表格列已存在，文档级权限也会正确应用。
+- **自动更新：** 发布新版本后，应用会自动刷新，不再显示“Refresh Now”弹窗；已移除旧版版本信息对话框。
+- **收件电子邮件设置：** 新增失败通知收件人开关和字段；导入日志现在显示发出活动和失败原因；收件地址现在可以可靠地复制。
+- **文档拆分：** 现在可以滚动浏览“Document Split”屏幕。
+- **深色模式：** 修复了表格提取、任务计数器和仪表板已关闭文档标记的问题。
+- **易用性与稳定性：** 修复仪表板导出界面；表格固定表头不再透过对话框显示；DocNet 仪表板在统计请求失败时不再崩溃；字段脚本不再将已清空的字段恢复为旧值；修复采购订单设置复选框和布局问题；修复分类列表显示问题。
+- **供应商：** 供应商组织现在可以通过魔法链接注册。
 
-## API Service — live: `12.46.8`
+## API Service — 当前版本：`12.46.8`
 
-- **DocBits MCP gateway:** a unified gateway now proxies DocFlow tools through the
-  main API, so AI assistants reach every DocBits tool through one endpoint; the MCP
-  endpoint is served without a redirect that could break connections.
-- **Accounting:** cost-center validation added for the accounting ID.
-- **OCR routing:** documents are sent for a full re-OCR when supplier e-text is
-  turned off, so text stays reliable.
-- **Infor ERP / SAP:** additional charges route correctly when the ERP already
-  holds the charge at a zero amount.
-- **Reliability (fewer server errors):** hardened dashboard, supplier-invoice,
-  PO-record and task-manager queries so they no longer return rare 500 errors;
-  more resilient organisation-cache synchronisation and stored-file cleanup.
-- **Cleaner dashboard filters:** removed the redundant invoice-number filter field;
-  corrected PO-matched quantity.
-- **Developer API docs:** the Swagger UI now offers a spec dropdown (OpenAPI 3.0
-  plus the Infor Swagger 2.0 view) with DocBits branding.
+- **DocBits MCP 网关：** 统一网关现在通过主 API 代理 DocFlow 工具，让 AI 助手通过一个端点访问所有 DocBits 工具；MCP 端点现在无需重定向即可提供服务，避免连接中断。
+- **会计：** 新增会计 ID 的成本中心验证。
+- **OCR 路由：** 关闭供应商电子文本后，文档会进行完整的重新 OCR，以确保文本可靠。
+- **Infor ERP / SAP：** 当 ERP 中该费用金额为零时，附加费用现在也会正确路由。
+- **可靠性（减少服务器错误）：** 加固了仪表板、供应商发票、采购订单记录和任务管理器查询，避免其偶尔返回 500 错误；提高了组织缓存同步和存储文件清理的可靠性。
+- **更简洁的仪表板筛选器：** 移除了冗余的发票编号筛选字段；修正了采购订单匹配数量。
+- **开发者 API 文档：** Swagger UI 现在提供规范下拉菜单（OpenAPI 3.0 和 Infor Swagger 2.0 视图），并采用 DocBits 品牌样式。
 
-## Auth Service — live: `1.68.0`
+## Auth Service — 当前版本：`1.68.0`
 
-- **Faster sign-out / token revocation:** bulk token revoke no longer runs for
-  minutes and drops the connection.
-- **Fixed set-password e-mails** so they render correctly.
-- **Suppliers:** supplier organisations can register with a magic link.
-- **Sign-in stability:** a member is no longer locked out on a transient
-  organisation-lookup miss, and an invalid organisation id now returns a clean
-  message instead of an error.
+- **更快地退出登录/撤销令牌：** 批量撤销令牌不再运行数分钟并导致连接断开。
+- **修复了设置密码电子邮件的显示问题。**
+- **供应商：** 供应商组织可以通过魔法链接注册。
+- **登录稳定性：** 临时未能查找到组织时，成员不再被锁定；组织 ID 无效时，现在会返回清晰的提示，而不是错误。
 
-## Docflow Service — live: `2.4.1`
+## Docflow Service — 当前版本：`2.4.1`
 
-- **Reliable AI gateway:** fixed hangs and timeouts on the DocFlow MCP endpoint
-  (handshake, client disconnects, duplicate responses) — the DocFlow side of the
-  unified DocBits MCP gateway.
+- **可靠的 AI 网关：** 修复了 DocFlow MCP 端点上的卡顿和超时问题（握手、客户端断开连接、重复响应），这是统一 DocBits MCP 网关中 DocFlow 一侧的组成部分。
 
-## OCR Service — live: `1.7.1`
+## OCR Service — 当前版本：`1.7.1`
 
-- **Steadier OCR processing:** background reply queues expire automatically and
-  transient connection failures are retried, so fewer OCR jobs get stuck.
+- **OCR 处理更稳定：** 后台回复队列会自动过期，并会重试暂时性连接故障，因此卡住的 OCR 作业更少。
 
-## PO Match Service — live: `1.55.7`
+## PO Match Service — 当前版本：`1.55.7`
 
-- **Value transforms** are now applied on item-id, unit-code and static-value
-  columns during rule matching.
-- **Crash guards:** a line missing a price or quantity, an unusual weighted-key
-  combination, or an impossible division no longer crash matching.
-- **Reliability:** database writes retry automatically on dropped or SSL-closed
-  connections.
-- **Infor ERP / SAP:** additional charges route correctly when the ERP holds the
-  charge at a zero amount.
+- 规则匹配期间，现在会对项目 ID、单位代码和静态值列应用值转换。
+- **崩溃防护：** 缺少价格或数量的行、异常的加权键组合或不可能的除法不再导致匹配崩溃。
+- **可靠性：** 数据库连接断开或因 SSL 关闭时，数据库写入会自动重试。
+- **Infor ERP / SAP：** 当 ERP 中费用金额为零时，附加费用现在也会正确路由。
 
-## Fulltext Service — live: `1.35.6`
+## Fulltext Service — 当前版本：`1.35.6`
 
-- **Faster re-indexing:** all synchronisation phases now fan out so autoscaling
-  kicks in, fixing slow serial re-indexing and a stuck 0% progress widget.
-- **Steadier statistics:** cross-region document-stats requests are bounded so they
-  no longer time out.
+- **重新索引更快：** 现在所有同步阶段都会并行展开，以触发自动扩缩容，解决了串行重新索引缓慢和进度组件卡在 0% 的问题。
+- **统计更稳定：** 跨区域文档统计请求现在设有时限，不再超时。
 
 ---
 
-## No customer-facing changes in this window
+## 此期间没有面向客户的变更
 
-Stable, no notable product changes between 26–30 June: Auto Accounting (`1.18.6`),
-Barcode (`1.15.6`), Docnet (`1.54.6`), Email (`1.36.4`), Extraction (`1.48.7`),
-FTP (`1.30.1`), Operator (`1.39.5`). Auto Accounting and FTP received internal
-maintenance only.
+6月26日至30日期间保持稳定，没有值得注意的产品变更：Auto Accounting (`1.18.6`)、Barcode (`1.15.6`)、Docnet (`1.54.6`)、Email (`1.36.4`)、Extraction (`1.48.7`)、FTP (`1.30.1`)、Operator (`1.39.5`)。Auto Accounting 和 FTP 仅进行了内部维护。
 
 <!-- Generated by the docbits-changelog skill (prod-delta mode). Versions read live
      from prod (do-fra1-polydocs/prod); window 2026-06-26 → 2026-06-30. -->

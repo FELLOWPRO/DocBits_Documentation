@@ -1,100 +1,100 @@
---- 
-description: Doc Scan offers very easy Document creation via your local Scanner.
+---
+description: "Doc Scan 可通过本地扫描仪轻松创建文档。"
 ---
 
 # Doc Scan
 
-### Download Scanner Software
+### 下载扫描仪软件
 
-Click Scan Document on the DocBits Dashboard
+在 DocBits 仪表板上点击 Scan Document
 
-<figure><img src="../../../../.gitbook/assets/doc_scan_dashboard_button.png" alt="Doc Scan Dashboard Button"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/doc_scan_dashboard_button.png" alt="Doc Scan 仪表板按钮"><figcaption></figcaption></figure>
 
-As your scanner is not installed yet, you
+由于尚未安装扫描仪，你
 
-<figure><img src="../../../../.gitbook/assets/doc_scan_download_prompt.png" alt="Doc Scan Download Prompt"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/doc_scan_download_prompt.png" alt="Doc Scan 下载提示"><figcaption></figcaption></figure>
 
-Depending on which operating system you use, press the appropriate button to download.
+根据你使用的操作系统，点击相应按钮进行下载。
 
-Open the installation file and you will see the following
+打开安装文件后，你将看到以下界面
 
-<figure><img src="../../../../.gitbook/assets/doc_scan_installer_start.png" alt="Doc Scan Installer Start"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/doc_scan_installer_start.png" alt="Doc Scan 安装程序启动"><figcaption></figcaption></figure>
 
-Click on `Continue`, accept the Software License Agreement with `Agree` and continue to install the software.
+点击 `Continue`，使用 `Agree` 接受软件许可协议，然后继续安装软件。
 
-Installing this software requires 33,6 MB of space. You can change the install location before clicking `Install` in the next step.
+安装此软件需要 33,6 MB 的空间。你可以在下一步点击 `Install` 之前更改安装位置。
 
-As soon as the following screen is displayed you
+显示以下屏幕后，你
 
-<figure><img src="../../../../.gitbook/assets/doc_scan_installation_complete.png" alt="Doc Scan Installation Complete"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/doc_scan_installation_complete.png" alt="Doc Scan 安装完成"><figcaption></figcaption></figure>
 
-Open web browser to test if the app works by entering: https://local.polydocs.io:12500/ If you see this message on the screen, you must first configure some settings in your FritzBox network settings if you are using one.
+打开网页浏览器并输入以下地址，以测试应用是否正常运行：https://local.polydocs.io:12500/ 如果屏幕上显示此消息，并且你正在使用 FritzBox，则必须先在 FritzBox 网络设置中配置一些设置。
 
-<figure><img src="../../../../.gitbook/assets/doc_scan_browser_test_error.png" alt="Doc Scan Browser Test Error"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/doc_scan_browser_test_error.png" alt="Doc Scan 浏览器测试错误"><figcaption></figcaption></figure>
 
-When you see this screen you are ready to click on DocBits.
+看到此屏幕后，即可点击 DocBits。
 
-<figure><img src="../../../../.gitbook/assets/doc_scan_browser_test_success.png" alt="Doc Scan Browser Test Success"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/doc_scan_browser_test_success.png" alt="Doc Scan 浏览器测试成功"><figcaption></figcaption></figure>
 
-You will be redirected to the DocBits login page where you can enter your credentials to access your dashboard.
+系统会将你重定向到 DocBits 登录页面，你可以在此输入凭据以访问仪表板。
 
-<figure><img src="../../../../.gitbook/assets/doc_scan_login_redirect.png" alt="Doc Scan Login Redirect"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/doc_scan_login_redirect.png" alt="Doc Scan 登录重定向"><figcaption></figcaption></figure>
 
-All you have to do now is activate Doc Scan in the settings under Modules.
+现在，你只需在 Modules 下的设置中激活 Doc Scan。
 
-<figure><img src="../../../../.gitbook/assets/doc_scan_module_settings.png" alt="Doc Scan Module Settings"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/doc_scan_module_settings.png" alt="Doc Scan 模块设置"><figcaption></figcaption></figure>
 
-### FritzBox network settings
+### FritzBox 网络设置
 
-If you get the following error after installing and calling up the url https://local.polydocs.io:12500/, here are the reasons:– DNS resolution of private IP addresses not possible.– DNS resolution for domain names that refer to private IP addresses in the FRITZ!Box home network is not possible via the FRITZ!Box. This means that server services in the FRITZ!Box home network cannot be accessed via the domain name.
-You may see one of the following error messages:“DNS timed out”“DNS request timed out”
-*Caused*
-For security reasons, the FRITZ!Box suppresses DNS responses that refer to IP addresses in your own home network. This is a security feature of the FRITZ!Box to protect against so-called DNS rebinding attacks.
-If you use a FritzBox, you must first make the following settings in the FritzBox menu:
-
-
-1. In the FRITZ!Box user interface, click on `Heimnetz`.
-2. `Heimnetz` Click in the menu `Netzwerk`.
-3. Click on the tab `Netzwerkeinstellungen`.
+如果安装后访问网址 https://local.polydocs.io:12500/ 时出现以下错误，原因如下：– 无法解析私有 IP 地址的 DNS。– 无法通过 FRITZ!Box 解析 FRITZ!Box 家庭网络中指向私有 IP 地址的域名。这意味着无法通过域名访问 FRITZ!Box 家庭网络中的服务器服务。
+你可能会看到以下错误消息之一：“DNS timed out”“DNS request timed out”
+*原因*
+出于安全原因，FRITZ!Box 会屏蔽指向你自己家庭网络中 IP 地址的 DNS 响应。这是 FRITZ!Box 的一项安全功能，用于防范所谓的 DNS 重绑定攻击。
+如果你使用 FritzBox，必须先在 FritzBox 菜单中进行以下设置：
 
 
-In the Hostname exceptions `DNS-Rebind-Schutz section`, enter local.polydocs.io for which DNS rebind protection should not apply. Confirm with .`Übernehmen`
+1. 在 FRITZ!Box 用户界面中，点击 `Heimnetz`。
+2. 在菜单中点击 `Heimnetz` 下的 `Netzwerk`。
+3. 点击 `Netzwerkeinstellungen` 选项卡。
 
-### Uninstall Doc2Scan Service Manager
 
-Run the following command to uninstall Doc2Scan Manager:
+在“Hostname exceptions（主机名例外）”中的 `DNS-Rebind-Schutz section` 部分，输入不应应用 DNS 重绑定保护的 local.polydocs.io。点击 `Übernehmen` 确认。
+
+### 卸载 Doc2Scan Service Manager
+
+运行以下命令以卸载 Doc2Scan Manager：
 
 ```javascript
 sudo bash /Library/doc2scan/uninstall.sh
 ```
 
-Copy
+复制
 
-### Scanner Compatability
+### 扫描仪兼容性
 
-**Legend:**
+**图例：**
 
-* Yes – device works perfectly
-* No – protocol not supported by device
-* ? – device works with sane-airscan, but protocol is not reported by user
-* Space – author has no information on this mode/device combination
+* 是 – 设备可正常工作
+* 否 – 设备不支持该协议
+* ? – 设备可与 sane-airscan 配合使用，但用户未报告所用协议
+* 空白 – 作者没有此模式/设备组合的信息
 
-**Definitions:**
+**定义：**
 
-* eSCL stands for Airscan is a SANE WebScan frontend that supports Apple
-* WSD stands for 
+* eSCL 是 Airscan 的缩写，是支持 Apple 的 SANE WebScan 前端
+* WSD 表示
 
-| Device                            | eSCL mode | WSD mode |
+| 设备                              | eSCL 模式 | WSD 模式 |
 | --------------------------------- | --------- | -------- |
-| Brother ADS-2700W                 | No        | Yes      |
-| Brother DCP-7055W                 | No        | Yes      |
-| Brother DCP-9020CDW               | No        | Yes      |
-| Brother DCP-J552DW                | No        | Yes      |
-| Brother DCP-L2540DW               | No        | Yes      |
-| Brother DCP-L2550DN / DCP-L2550DW | Yes       |          |
-| Brother HL-L2380DW series         | No        | Yes      |
-| Brother HL-L2395DW series         | Yes       |          |
-| Brother MFC-7360N                 | No        | Yes      |
-| Brother MFC-8710DW                | No        | Yes      |
+| Brother ADS-2700W                 | 否        | 是       |
+| Brother DCP-7055W                 | 否        | 是       |
+| Brother DCP-9020CDW               | 否        | 是       |
+| Brother DCP-J552DW                | 否        | 是       |
+| Brother DCP-L2540DW               | 否        | 是       |
+| Brother DCP-L2550DN / DCP-L2550DW | 是        |          |
+| Brother HL-L2380DW 系列            | 否        | 是       |
+| Brother HL-L2395DW 系列            | 是        |          |
+| Brother MFC-7360N                 | 否        | 是       |
+| Brother MFC-8710DW                | 否        | 是       |
 
-Showing 1 to 10 of 151 entriesPreviousNext
+显示第 1 至 10 条，共 151 条上一页下一页

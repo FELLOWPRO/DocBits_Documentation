@@ -1,20 +1,20 @@
 ---
-description: A script that sets USD as the default currency and checks if its valid or not
+description: "用于将 USD 设置为默认货币并检查其是否有效的脚本"
 ---
 
-# USD as Default Currency
+# 将 USD 设为默认货币
 
-### Overview
+### 概述
 
-The script is designed to set USD (United States Dollar) as the default currency for an application or system, ensuring that all monetary values are displayed and processed in USD unless specified otherwise.
+此脚本旨在将 USD（美元）设为应用程序或系统的默认货币，确保所有金额均以 USD 显示和处理，除非另有指定。
 
-### Objective
+### 目标
 
-The primary goal of this script is to automatically fill the currency field with USD and check if it is valid or not.
+此脚本的主要目标是自动将货币字段填入 USD，并检查其是否有效。
 
-### Script Implementation
+### 脚本实现
 
-#### Code Snippet
+#### 代码片段
 
 ```
 // currency = get_field_value(document_data, 'currency', None)

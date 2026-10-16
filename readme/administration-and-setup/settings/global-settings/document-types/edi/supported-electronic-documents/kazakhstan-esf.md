@@ -1,30 +1,30 @@
 ---
-description: KAZAKHSTAN ESF electronic document support in DocBits
+description: "DocBits 对哈萨克斯坦 ESF 电子文档的支持"
 ---
 
-# 🇰🇿 KAZAKHSTAN ESF
+# 🇰🇿 哈萨克斯坦 ESF
 
-| Property             | Value                                                |
-| -------------------- | ---------------------------------------------------- |
-| **Country / Region** | Kazakhstan                                           |
-| **Document Types**   | Invoice                                              |
-| **Format**           | XML                                                  |
-| **Standard**         | ESF (Электронные счета-фактуры / Electronic Invoice) |
+| 属性                   | 值                                                     |
+| ---------------------- | ------------------------------------------------------ |
+| **国家 / 地区**        | 哈萨克斯坦                                             |
+| **文档类型**           | 发票                                                   |
+| **格式**               | XML                                                    |
+| **标准**               | ESF (Электронные счета-фактуры / 电子发票)             |
 
-Kazakhstan ESF (Электронные счета-фактуры) is the electronic invoice system operated by the Committee of State Revenues. All VAT-registered businesses must issue electronic invoices through the ESF information system. Documents include the BIN/IIN tax identification, VAT calculations, and are digitally signed.
+哈萨克斯坦 ESF（Электронные счета-фактуры）是由国家收入委员会运营的电子发票系统。所有已注册 VAT 的企业都必须通过 ESF 信息系统开具电子发票。文档包含 BIN/IIN 税务识别号、VAT 计算信息，并带有数字签名。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 组件       | 状态       |
+| ---------- | ---------- |
+| 预览       | ✅ 支持     |
+| 字段提取   | ✅ 支持     |
+| 转换       | ✅ 支持     |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/kazakhstan-esf-preview.png" alt="Kazakhstan ESF invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Kazakhstan ESF invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/kazakhstan-esf-preview.png" alt="DocBits 中的哈萨克斯坦 ESF 发票预览"><figcaption><p>哈萨克斯坦 ESF 发票的 DocBits 默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

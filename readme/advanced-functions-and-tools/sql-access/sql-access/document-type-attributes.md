@@ -1,20 +1,20 @@
-# Document type attributes
+# 文档类型属性
 
-## Spalten
+## 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_type_key`: internal
-* `sub_doc_type_key`: internal
-* `attribute_key`: internal
-* `attribute_value`: text
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `sub_org_id`: internal
+* `id`：内部字段
+* `org_id`：组织 ID
+* `doc_type_key`：内部字段
+* `sub_doc_type_key`：内部字段
+* `attribute_key`：内部字段
+* `attribute_value`：文本
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `sub_org_id`：内部字段
 
-## Analyse & Beschreibung
+## 分析与说明
 
 ```markdown
 # Technical Documentation for `public.document_type_attributes` Table
@@ -81,4 +81,4 @@ The `public.document_type_attributes` table appears to be designed for managing 
 - **Typical Contents**: Typically `None`, indicating it may not always be used.
 ```
 
-This documentation provides a structured overview of the `public.document_type_attributes` table, allowing developers to understand the purpose and usage of each column.
+本文档对 `public.document_type_attributes` 表进行了结构化概述，帮助开发人员了解每一列的用途和用法。

@@ -1,9 +1,9 @@
-# AI Table
+# AI 表格
 
-Explore the revolutionary capabilities of **DocBits**, a state-of-the-art document handling tool that simplifies the complexities of table extraction, Purchase Order (PO) matching, and cost invoice management.
+探索 **DocBits** 的强大功能。这款先进的文档处理工具简化了表格提取、采购订单（PO）匹配和成本发票管理的复杂流程。
 
 {% embed url="https://youtu.be/89uEFyKKLCk" %}
 
-In this video, we delve into the unique features of **DocBits**, focusing on the AI table extraction that effortlessly handles even the most intricate table layouts. With an accuracy rate of up to 95%, the system automates extraction, allowing you to focus on what truly matters.
+本视频将介绍 **DocBits** 的独特功能，重点讲解 AI 表格提取如何轻松处理最复杂的表格布局。系统的准确率高达 95%，可自动完成提取，让您专注于真正重要的工作。
 
 \\

@@ -1,247 +1,247 @@
-# Classification and Extraction
+# 分类与提取
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction.png" alt="Classification and Extraction"><figcaption><p>Classification and Extraction Page</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction.png" alt="分类与提取"><figcaption><p>分类与提取页面</p></figcaption></figure>
 
-## Overview
+## 概述
 
-In the **Classification and Extraction** settings, you can:
+在**分类与提取**设置中，您可以：
 
-* Enable **Document Splitting** based on QR codes
-* Configure **amount formatting**
-* Set up **table extraction**
-* Toggle processing of unsupported **ZUGFeRD** files
-* Define special classification rules
-* Monitor Custom-Trained **AI Models** used in the classification process
+* 启用基于 QR 码的**文档拆分**
+* 配置**金额格式**
+* 设置**表格提取**
+* 切换是否处理不受支持的 **ZUGFeRD** 文件
+* 定义特殊分类规则
+* 监控分类过程中使用的自定义训练 **AI 模型**
 
-This page provides a detailed explanation of all available settings.
+本页详细介绍所有可用设置。
 
-## **Accessing Classification and Extraction Settings**
+## **访问分类与提取设置**
 
-To access the **Classification and Extraction** settings, go to:\
-**Settings → Document Processing → Classification and Extraction**
+要访问**分类与提取**设置，请前往：\
+**设置 → 文档处理 → 分类与提取**
 
 <figure><img src="../../../../.gitbook/assets/settings_classification_and_extraction.png" alt=""><figcaption></figcaption></figure>
 
-## Document Splitting
+## 文档拆分
 
-In the **Document Splitting** section, you can configure whether an uploaded document should be split into multiple documents whenever a **barcode** appears on one of its pages.
+在**文档拆分**部分，您可以配置：上传的文档页面上出现**条形码**时，是否将该文档拆分为多个文档。
 
-To activate this feature:
+要启用此功能：
 
-1. Go to the **Document Splitting** section.
-2.  Open the dropdown menu.
+1. 前往**文档拆分**部分。
+2.  打开下拉菜单。
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt=""><figcaption></figcaption></figure>
-3.  Select **Split by Barcode/QR Code**.
+3.  选择**按条形码/QR 码拆分**。
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt=""><figcaption></figcaption></figure>
 
-You will then have the option to:
+随后，您可以：
 
-* Select one or more barcode types to be detected.
-*   Specify a regex pattern that the barcode must match in order to trigger document splitting.
+* 选择要检测的一种或多种条形码类型。
+*   指定条形码必须匹配的正则表达式模式，以触发文档拆分。
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt=""><figcaption></figcaption></figure>
 
-## Amount Formatting
+## 金额格式
 
-In the **Amount Formatting** section, you have two options:
+在**金额格式**部分，您有两个选项：
 
-* **Allow Rounding During Amount Comparison:**\
-  If enabled, a tolerance of ±0.5 is allowed during amount comparison.\
-  If disabled, a default tolerance of ±0.05 applies.
-* **Require Exact Match for Amount Comparison:**\
-  If enabled, amounts must match exactly with zero tolerance.\
-  If disabled, a tolerance of ±0.05 is allowed.
+* **金额比较时允许舍入：**\
+  启用后，金额比较时允许 ±0.5 的误差范围。\
+  禁用后，默认误差范围为 ±0.05。
+* **金额比较时要求完全匹配：**\
+  启用后，金额必须完全匹配，误差范围为零。\
+  禁用后，允许 ±0.05 的误差范围。
 
-<mark style="color:red;">**Note**</mark>: Only one of these settings can be active at a time.
+<mark style="color:red;">**注意**</mark>：这两项设置一次只能启用一项。
 
-## Table Extraction
+## 表格提取
 
 {% hint style="info" %}
-**Prerequisites for a working table extraction**
+**表格提取的运行前提**
 
-* The document type has **table columns** (Settings → Global Settings → Document Types → [Table Columns](../../global-settings/document-types/table-columns/README.md)). Without columns there is nothing to extract into.
-* **Table Extraction** or **AI Table Extraction** is switched on below, for the whole organization.
-* The document has readable text: OCR ran, or E-Text is used for born-digital PDFs ([OCR Settings](../ocr-settings.md)).
-* Training and AI models are **per supplier**. A trained table applies only to documents of the supplier it was trained on.
+* 文档类型已配置**表格列**（设置 → 全局设置 → 文档类型 → [表格列](../../global-settings/document-types/table-columns/README.md)）。没有列就没有可供提取填入的字段。
+* 已在下方为整个组织启用**表格提取**或 **AI 表格提取**。
+* 文档包含可读取的文本：已运行 OCR，或者数字原生 PDF 使用了 E-Text（[OCR 设置](../ocr-settings.md)）。
+* 训练数据和 AI 模型均按**供应商**区分。训练好的表格仅适用于该供应商的文档。
 {% endhint %}
 
-You can extract tables from documents by enabling either **Table Extraction** or **AI Table Extraction**. A trained table (whether AI-based or manual) is always linked to a specific supplier.
+启用**表格提取**或 **AI 表格提取**即可从文档中提取表格。无论基于 AI 还是手动训练，训练好的表格始终关联到特定供应商。
 
-**Table Extraction:** Activates rule-based table extraction. Tables are trained per supplier on the validation screen (*Go to table extraction view*).\
-Learn more about training [here](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
+**表格提取：**启用基于规则的表格提取。表格按供应商在验证页面（*转到表格提取视图*）中训练。\
+[点击此处](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md)了解如何训练。
 
-**AI Table Extraction:** Uses AI to extract the table of any supplier without training. If the results for one supplier are not accurate enough, train that supplier's table; the saved rules then take precedence over the AI for that supplier.
+**AI 表格提取：**使用 AI 提取任意供应商的表格，无需训练。如果某个供应商的提取结果不够准确，可以训练该供应商的表格；保存的规则随后会优先于该供应商的 AI 提取结果。
 
-**Use Table Extraction Vision (AI):** The AI reads the page image instead of the text layer. Helps with scanned documents and tables without clear text structure; slower. The dropdown next to the switch chooses how aggressively the page image is used:
+**使用表格提取视觉功能（AI）：**AI 读取页面图像，而不是文本层。这有助于处理扫描文档以及文本结构不清晰的表格，但速度较慢。开关旁的下拉菜单用于选择使用页面图像的强度：
 
-* **Off (text only)** – Only the text layer is used. This is the default.
-* **Images only** – Only the page image is read.
-* **Hybrid (text and images)** – Text layer and page image are combined in the same request.
-* **Auto (decided per document)** – DocBits decides per document whether the text layer suffices.
+* **关闭（仅文本）** – 仅使用文本层。这是默认模式。
+* **仅图像** – 仅读取页面图像。
+* **混合（文本和图像）** – 在同一请求中结合文本层和页面图像。
+* **自动（按文档决定）** – DocBits 会针对每份文档判断文本层是否足够。
 
-The mode is stored under the preference key `TABLE_EXTRACTION_VISION_MODE`; the legacy switch `TABLE_EXTRACTION_USE_VISION` remains and effectively means *Images only*.
+此模式存储在偏好设置键 `TABLE_EXTRACTION_VISION_MODE` 下；旧版开关 `TABLE_EXTRACTION_USE_VISION` 仍然保留，实际含义等同于*仅图像*。
 
-**Use Structured Extraction (AI):** The AI returns the table in a fixed structure that maps directly onto the configured table columns. Recommended when column headers on the documents vary a lot. Clicking the setting opens a preview of exactly which fields and columns the AI will be asked for: header fields and line columns are listed with their source (requested or disabled standard fields), and the expected output mode (e.g. *strict* – no additional columns). Fields that are configured for the document type but switched off are not requested from the AI.
+**使用结构化提取（AI）：**AI 按固定结构返回表格，直接映射到已配置的表格列。当文档中的列标题差异较大时，推荐使用此选项。点击此设置会打开预览，准确显示 AI 将接收哪些字段和列：预览会列出表头字段和行项目列及其来源（请求的字段或已禁用的标准字段），并显示预期输出模式（例如 *strict* – 不添加其他列）。为文档类型配置但已关闭的字段不会请求 AI 提取。
 
-**Table Extraction for Costing Element:** When enabled, DocBits can extract costing elements from tables at the line level and classify them accordingly.\
-Detailed explanation available [here](table-extraction-for-costing-element.md).
+**表格提取（成本要素）：**启用后，DocBits 可以在行项目级别从表格中提取成本要素，并据此进行分类。\
+[此处](table-extraction-for-costing-element.md)提供详细说明。
 
-**Auto Extract Tax Code:** When enabled, the system automatically fills the **Tax Code** field on the Validation Screen, provided that a tax code field is configured.\
-More information on this setting [here](auto-extract-tax-code.md).
+**自动提取税码：**启用后，如果已配置税码字段，系统会在验证页面自动填充**税码**字段。\
+有关此设置的更多信息，请[点击此处](auto-extract-tax-code.md)。
 
-**Save extraction rules (Admin only):** Only administrators can click *Save Rules* in table training. Switch it on when users keep saving rules that break a supplier's extraction.
+**保存提取规则（仅管理员）：**只有管理员可以在表格训练中点击*保存规则*。如果用户反复保存导致某个供应商提取出错的规则，请启用此项。
 
-**AI Model:** Selects the AI tier used for table extraction. Six options are available: **Full** (highest accuracy, slowest, 2 tokens per document), **Fast** (default; 1 token per document), **Nexus** and **Nexus Flash** (alternative model family, opt-in), plus **Auto** and **Auto Nexus**, where DocBits decides per document how strong a model is needed. The table below the selector shows:
+**AI 模型：**选择用于表格提取的 AI 等级。共有六个选项：**Full**（准确度最高、速度最慢，每份文档消耗 2 个 token）、**Fast**（默认；每份文档消耗 1 个 token）、**Nexus** 和 **Nexus Flash**（可选用的另一模型系列），以及 **Auto** 和 **Auto Nexus**；对于这两项，DocBits 会按文档判断所需的模型能力。选择器下方的表格会显示：
 
-* Which **suppliers** use which AI model
-* Whether they use structured extraction (AI) and E-Text
-* Options to delete an entry and thereby reset the supplier to the default
+* 哪些**供应商**使用哪种 AI 模型
+* 他们是否使用结构化提取（AI）和 E-Text
+* 删除某条记录并将该供应商重置为默认设置的选项
 
-This setting is explained in detail [here](ai-model.md).
+[此处](ai-model.md)详细介绍此设置。
 
-### Why does the table look different per supplier?
+### 为什么不同供应商的表格看起来不一样？
 
-Everything that DocBits learns about a table is stored **per supplier**:
+DocBits 学到的所有表格信息都按**供应商**存储：
 
-* **Saved rules** (table training): position of the table and mapping of its columns on that supplier's layout.
-* **AI table tags and formatting rules**: hints the user saved for that supplier's AI table.
-* **Supplier-specific AI model**: the tier chosen for that supplier under *More settings* on the validation screen.
+* **已保存的规则**（表格训练）：表格在该供应商版面中的位置，以及该供应商版面对应的列映射。
+* **AI 表格标签和格式规则**：用户为该供应商的 AI 表格保存的提示。
+* **供应商专属 AI 模型**：在验证页面的*更多设置*中为该供应商选择的模型等级。
 
-So supplier A with saved rules shows a deterministic table in the *Extracted table* tab of the validation screen, while supplier B without rules gets the *AI Extracted table*. To make supplier B behave like A, train B's table once. To reset a supplier, delete its rules on the validation screen or reset its training data in the AI Model table.
+因此，供应商 A 有已保存的规则时，会在验证页面的*提取的表格*选项卡中显示确定性表格；而没有规则的供应商 B 则会显示 *AI 提取的表格*。要让供应商 B 的行为与 A 一致，请训练一次 B 的表格。要重置某个供应商，请在验证页面删除其规则，或在 AI 模型表格中重置其训练数据。
 
-### Preference keys
+### 偏好设置键
 
-Every toggle in this section is stored as an organization preference. Use the key when you set the value through the API (`/preferences/set_preference`), a script, or the DocBits MCP (`get_preference` / `set_preference`).
+本部分中的每个开关都存储为组织偏好设置。通过 API (`/preferences/set_preference`)、脚本或 DocBits MCP（`get_preference` / `set_preference`）设置值时，请使用对应的键。
 
-| Setting (UI label) | Preference key | Values |
+| 设置（UI 标签） | 偏好设置键 | 值 |
 |---|---|---|
-| Table Extraction | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
-| AI Table extraction | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
-| Use Table Extraction Vision (AI) | `TABLE_EXTRACTION_VISION_MODE` | `off` (default), `vision`, `hybrid`, `auto` |
-| Use Table Extraction Vision (AI) – legacy switch | `TABLE_EXTRACTION_USE_VISION` | `true` / `false`; effectively means `vision` |
-| Use Structured Extraction (AI) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
-| Table extraction for costing element | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
-| Auto extract tax code | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
-| Save extraction rules (Admin only) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
-| AI Model | `AI_MODEL` | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
-| Table extraction version (confirmation dialog) | `TBL_EXT_VERSION` | version string |
-| OCR Settings → Use AI data for tables if available | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
-| OCR Settings → Use E-Text if available | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
+| 表格提取 | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
+| AI 表格提取 | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
+| 使用表格提取视觉功能（AI） | `TABLE_EXTRACTION_VISION_MODE` | `off`（默认）、`vision`、`hybrid`、`auto` |
+| 使用表格提取视觉功能（AI）– 旧版开关 | `TABLE_EXTRACTION_USE_VISION` | `true` / `false`；实际含义等同于 `vision` |
+| 使用结构化提取（AI） | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
+| 成本要素表格提取 | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
+| 自动提取税码 | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
+| 保存提取规则（仅管理员） | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
+| AI 模型 | `AI_MODEL` | `gpt-6-sol`（Full）、`gpt-6-luna`（Fast）、`qwen3.8-max`（Nexus）、`glm-5.3-flash`（Nexus Flash）、`auto`（Auto）、`auto-nexus`（Auto Nexus） |
+| 表格提取版本（确认对话框） | `TBL_EXT_VERSION` | 版本字符串 |
+| OCR 设置 → 有可用 AI 数据时对表格使用 AI 数据 | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
+| OCR 设置 → 有可用 E-Text 时使用 E-Text | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
 
-Notes:
+说明：
 
-* Boolean preferences are stored as the strings `true` / `false`; a key that was never set counts as `false`. If you send `1` or `0`, DocBits stores `true` / `false`.
-* `AI_MODEL` unset means **Fast**.
-* `TABLE_EXTRACTION_VISION_MODE` unset is resolved from the legacy `TABLE_EXTRACTION_USE_VISION` switch: `true` resolves to `vision`, anything else to `off`.
-* Changing a key takes effect for documents processed afterwards. Restart a document to re-extract it with the new setting.
-* Per-supplier choices (E-Text, AI model, saved rules) are not organization preferences; they are set on the validation screen under *More settings* for a document of that supplier.
+* 布尔型偏好设置存储为字符串 `true` / `false`；从未设置过的键按 `false` 处理。如果发送 `1` 或 `0`，DocBits 会将其存储为 `true` / `false`。
+* 未设置 `AI_MODEL` 时，默认使用 **Fast**。
+* 未设置 `TABLE_EXTRACTION_VISION_MODE` 时，会根据旧版 `TABLE_EXTRACTION_USE_VISION` 开关确定：`true` 对应 `vision`，其他值对应 `off`。
+* 更改某个键后，设置会应用于之后处理的文档。要使用新设置重新提取文档，请重新启动该文档。
+* 按供应商设置的选项（E-Text、AI 模型、已保存的规则）不是组织偏好设置；请在该供应商文档验证页面的*更多设置*中进行设置。
 
-## Electronic Document
+## 电子文档
 
-**Process Unsupported ZUGFeRD PDF:** If enabled, unsupported **ZUGFeRD** versions will be processed as standard PDFs, and the embedded XML will be ignored.
+**处理不受支持的 ZUGFeRD PDF：**启用后，不受支持的 **ZUGFeRD** 版本将作为标准 PDF 处理，并忽略其中嵌入的 XML。
 
-The list of supported **ZUGFeRD** versions can be found [here](../../global-settings/document-types/edi/zugferd/README.md).
+[此处](../../global-settings/document-types/edi/zugferd/README.md)列出了受支持的 **ZUGFeRD** 版本。
 
-## **Classification Rules**
+## **分类规则**
 
-In the **Classification Rules** section, you can define specific **regex** patterns and criteria to help the system automatically classify documents during processing.
+在**分类规则**部分，您可以定义特定的**正则表达式**模式和条件，以帮助系统在处理过程中自动分类文档。
 
-To access this section, click the **Classification Rules** tab at the top of the page.
+要访问此部分，请点击页面顶部的**分类规则**选项卡。
 
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt=""><figcaption></figcaption></figure>
 
-### **Add a New Classification Rule**
+### **添加新的分类规则**
 
-To create a new rule:
+要创建新规则：
 
-1.  Click **Add** in the top-right corner.
+1.  点击右上角的**添加**。
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt=""><figcaption></figcaption></figure>
-2. Fill in the following fields:
-   * **Pattern**: The regex pattern the system should search for to trigger classification.
-   * **Type**: Where the pattern should be searched (e.g., **Barcode**).
-   * **Sub Organization** _(optional)_: Specify which sub organization the rule applies to.
-   * **Document Type**: Define the document type to assign when the pattern is matched.
-   *   **Sub Document Type** _(optional)_: Specify a sub type for more detailed classification.
+2. 填写以下字段：
+   * **模式**：系统用于触发分类的正则表达式模式。
+   * **类型**：指定要在哪个位置搜索该模式（例如 **Barcode**）。
+   * **子组织** _(可选)_: 指定此规则适用的子组织。
+   * **文档类型**：定义匹配该模式时要分配的文档类型。
+   *   **子文档类型** _(可选)_: 指定更具体的分类子类型。
 
        <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt=""><figcaption></figcaption></figure>
-3.  Click **Save** to save your classification rule.
+3.  点击**保存**以保存分类规则。
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
 
-### **Edit a Classification Rule**
+### **编辑分类规则**
 
-To edit an existing rule:
+要编辑现有规则：
 
-1.  Click the three dots in the **Actions** column.
+1.  点击**操作**列中的三个点。
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
-2.  Select **Edit**.
+2.  选择**编辑**。
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt=""><figcaption></figcaption></figure>
-3. Make your desired changes.
-4.  Click **Save** to apply the updates.
+3. 按需进行修改。
+4.  点击**保存**以应用更改。
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
 
-### **Delete a Classification Rule**
+### **删除分类规则**
 
-To delete a rule:
+要删除规则：
 
-1.  Click the three dots in the **Actions** column.
+1.  点击**操作**列中的三个点。
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
-2.  Select **Delete**.
+2.  选择**删除**。
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt=""><figcaption></figcaption></figure>
 
-## AI Models
+## AI 模型
 
-The **AI Models** section displays all custom-trained models that have been specifically fine-tuned for your needs.
+**AI 模型**部分会显示所有专为满足您的需求而定制训练的模型。
 
-### Accessing the AI Models Section
+### 访问 AI 模型部分
 
-To open this section, click the **AI Models** tab located at the top of the page.
+要打开此部分，请点击页面顶部的 **AI 模型**选项卡。
 
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt=""><figcaption></figcaption></figure>
 
-### Model Categories
+### 模型类别
 
-Models are organized into categories. Below each category name, the number of models it contains is shown.\
-Click on a category to view its details.
+模型按类别组织。每个类别名称下方会显示该类别包含的模型数量。\
+点击类别可查看详情。
 
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt=""><figcaption></figcaption></figure>
 
-At the top of the selected category page, you’ll see key information about each model:
+在所选类别页面顶部，您可以查看每个模型的重要信息：
 
-* **Type**: The type of model.
-* **First Page Only**: Indicates whether the model processes only the first page of a document.
-* **Version**: The version number of the model.
+* **类型**：模型的类型。
+* **仅第一页**：表示模型是否只处理文档的第一页。
+* **版本**：模型的版本号。
 
-### Model Table
+### 模型表格
 
-All models within a category are listed in a table, which includes the following information:
+类别中的所有模型都会列在表格中，其中包括以下信息：
 
-* **Name**: The name of the model.
-* **Next Model**: The model that will further process the output of the current model.
-* **Document Type**: The primary document type assigned by the model during classification.
-* **Document Sub Types**: The sub types into which the document is further classified.
-* **Priority**: The priority level that determines the model’s position in the classification queue.
+* **名称**：模型的名称。
+* **下一个模型**：将进一步处理当前模型输出的模型。
+* **文档类型**：模型在分类过程中分配的主要文档类型。
+* **文档子类型**：文档进一步细分的子类型。
+* **优先级**：决定模型在分类队列中位置的优先级。
 
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt=""><figcaption></figcaption></figure>
 
-### Editing a Model
+### 编辑模型
 
-To edit a model:
+要编辑模型：
 
-1.  Click the pen icon in the **Actions** column next to the model you want to edit.
+1.  点击要编辑的模型对应的**操作**列中的笔形图标。
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt=""><figcaption></figcaption></figure>
-2. Update the available fields:
-   * **Next Model**: Select the model that should process the output from the current model.
-   * **Document Type**: Choose the document type the model should classify the input as.
-3.  Click **Save** to apply your changes.
+2. 更新可用字段：
+   * **下一个模型**：选择应处理当前模型输出的模型。
+   * **文档类型**：选择模型应将输入分类为何种文档类型。
+3.  点击**保存**以应用更改。
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt=""><figcaption></figcaption></figure>

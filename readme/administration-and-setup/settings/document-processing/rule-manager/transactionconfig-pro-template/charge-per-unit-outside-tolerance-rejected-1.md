@@ -1,37 +1,37 @@
-# Charge Per Unit Outside Tolerance (Rejected)
+# 超出容差的单位费用（已拒绝）
 
-## Scenario:
+## 场景：
 
-The charge per unit is outside tolerance and has not been approved.
+单位费用超出容差，且尚未获得审批。
 
-## Action:
+## 操作：
 
-The system adjusts the charge per unit to match the purchase order or approved levels, generating any necessary debit or credit notes.
+系统会调整单位费用，使其与采购订单或已批准的金额一致，并按需生成借项通知单或贷项通知单。
 
-## Example:
+## 示例：
 
-* **Purchase Order (PO):**
-  * Charge Per Unit: $6.00
-  * Quantity: 800 units
-  * Total Charge Amount: $4,800.00
-* **Invoice Received:**
-  * Charge Per Unit: $7.00 (outside tolerance of 16.67%, rejected)
-  * Quantity: 800 units
-  * Total Charge Amount: $5,600.00
-* **Tolerance Levels:**
-  * Charge Per Unit Tolerance: ±5%
+* **采购订单 (PO)：**
+  * 单位费用：$6.00
+  * 数量：800 件
+  * 费用总额：$4,800.00
+* **收到的发票：**
+  * 单位费用：$7.00（超出 16.67% 的容差，已拒绝）
+  * 数量：800 件
+  * 费用总额：$5,600.00
+* **容差级别：**
+  * 单位费用容差：±5%
 
-Since the charge per unit ($7.00) exceeds the acceptable tolerance range of 5% and has not been approved, the system will:
+由于单位费用（$7.00）超出 5% 的可接受容差范围，且尚未获得审批，系统将执行以下操作：
 
-1. **Reject the Invoiced Charge Per Unit:** The system does not accept the invoiced charge per unit of $7.00 due to the variance exceeding the tolerance limit.
-2. **Adjust the Charge Per Unit:** The system adjusts the charge per unit to match the purchase order or the approved charge per unit:
-   * Adjusted Charge Per Unit = $6.00 (from PO)
-3. **Recalculate the Total Charge Amount:** The system recalculates the total charge amount based on the adjusted charge per unit:
-   * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**
-   * **Corrected Total Charge Amount = 800 units × $6.00 = $4,800.00**
-4. **Generate a Debit Note:** Since the original invoice total was higher than the corrected total, the system generates a debit note for the overcharged amount:
-   * **Debit Note Amount = Original Invoice Total - Corrected Total Charge Amount**
-   * **Debit Note Amount = $5,600.00 - $4,800.00 = $800.00**
-5. **Process the Invoice:** The system processes the invoice with the corrected total charge amount of $4,800.00 and issues a debit note for $800.00 to account for the overcharged amount.
+1. **拒绝发票中的单位费用：**由于差异超出容差限值，系统不接受发票中的单位费用 $7.00。
+2. **调整单位费用：**系统会将单位费用调整为与采购订单或已批准的单位费用一致：
+   * 调整后的单位费用 = $6.00（来自 PO）
+3. **重新计算费用总额：**系统会根据调整后的单位费用重新计算费用总额：
+   * **更正后的费用总额 = 数量 × 调整后的单位费用**
+   * **更正后的费用总额 = 800 件 × $6.00 = $4,800.00**
+4. **生成借项通知单：**由于原发票总额高于更正后的总额，系统会针对多收的金额生成借项通知单：
+   * **借项通知单金额 = 原发票总额 - 更正后的费用总额**
+   * **借项通知单金额 = $5,600.00 - $4,800.00 = $800.00**
+5. **处理发票：**系统会按更正后的费用总额 $4,800.00 处理发票，并开具 $800.00 的借项通知单，以处理多收的金额。
 
-This approach ensures that financial transactions are consistent with the purchase order terms, rejecting unapproved variances and maintaining accurate billing practices.
+此方法可确保财务交易符合采购订单条款，拒绝未经审批的差异，并保持计费准确。

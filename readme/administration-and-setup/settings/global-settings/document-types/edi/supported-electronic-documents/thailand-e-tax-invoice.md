@@ -1,30 +1,30 @@
 ---
-description: THAILAND E-TAX INVOICE electronic document support in DocBits
+description: "DocBits 中的泰国电子税务发票电子文档支持"
 ---
 
-# 🇹🇭 THAILAND E-TAX INVOICE
+# 🇹🇭 泰国电子税务发票
 
-| Property             | Value                                          |
-| -------------------- | ---------------------------------------------- |
-| **Country / Region** | Thailand                                       |
-| **Document Types**   | Tax Invoice, Receipt                           |
-| **Format**           | XML (PDF/A-3 embedded)                         |
-| **Standard**         | e-Tax Invoice & e-Receipt (Revenue Department) |
+| 属性                 | 值                                           |
+| -------------------- | -------------------------------------------- |
+| **国家 / 地区**      | 泰国                                         |
+| **文档类型**         | 税务发票、收据                               |
+| **格式**             | XML（嵌入 PDF/A-3）                          |
+| **标准**             | 电子税务发票和电子收据（税务局）              |
 
-Thailand e-Tax Invoice is the electronic tax invoice and receipt standard regulated by the Revenue Department. It uses a hybrid format similar to ZUGFeRD, embedding structured XML data within a PDF/A-3 document. The system requires digital signing with a certificate issued by a Thai CA.
+泰国电子税务发票是由税务局监管的电子税务发票和收据标准。它采用类似 ZUGFeRD 的混合格式，将结构化 XML 数据嵌入 PDF/A-3 文档中。该系统要求使用泰国认证机构 (CA) 签发的证书进行数字签名。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 组件         | 状态       |
+| ------------ | ---------- |
+| 预览         | ✅ 支持    |
+| 字段提取     | ✅ 支持    |
+| 转换         | ✅ 支持    |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/thailand-e-tax-invoice-preview.png" alt="Thailand e-Tax Invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Thailand e-Tax Invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/thailand-e-tax-invoice-preview.png" alt="DocBits 中的泰国电子税务发票预览"><figcaption><p>泰国电子税务发票的 DocBits 默认预览</p></figcaption></figure>
 
-## Related
+## 相关
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

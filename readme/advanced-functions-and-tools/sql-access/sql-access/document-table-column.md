@@ -1,24 +1,24 @@
-# Document table column
+# 文档表列
 
-## Spalten
+## 列
 
-* `id`: internal
-* `document_table_id`: internal
-* `table_name`: internal
-* `org_id`: ID to organisation
-* `column_name`: internal
-* `column_type`: internal
-* `title`: internal
-* `translation_key`: internal
-* `sort_order`: integer
-* `clean_field`: boolean
-* `alphanumeric_field`: boolean
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
+* `id`：内部字段
+* `document_table_id`：内部字段
+* `table_name`：内部字段
+* `org_id`：组织 ID
+* `column_name`：内部字段
+* `column_type`：内部字段
+* `title`：内部字段
+* `translation_key`：内部字段
+* `sort_order`：整数
+* `clean_field`：布尔值
+* `alphanumeric_field`：布尔值
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
 
-## Analyse & Beschreibung
+## 分析与说明
 
 ```markdown
 # Technical Documentation for `public.document_table_column`

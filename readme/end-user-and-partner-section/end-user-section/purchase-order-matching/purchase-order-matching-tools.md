@@ -1,40 +1,40 @@
-# Purchase Order Matching Tools
+# 采购订单匹配工具
 
-The PO Matching screen places the purchase order search and tools above the PO lines. The invoice preview remains on the right. The available actions can vary with your permissions, document data, and your organization's settings.
+PO 匹配屏幕在 PO 行项目上方显示采购订单搜索栏和工具。发票预览仍位于右侧。可用操作可能因您的权限、文档数据和组织设置而异。
 
-<figure><img src="../../../.gitbook/assets/dbdc-190-po-tools-overview-en.png" alt="English PO Matching screen in the DocBits Documentation Test A sandbox: PO search, action toolbar, PO lines, invoice section and document preview"><figcaption><p>Find the search field and action toolbar above the purchase order lines.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-190-po-tools-overview-en.png" alt="DocBits Documentation Test A 沙盒中的英文 PO 匹配屏幕：PO 搜索栏、操作工具栏、PO 行项目、发票区域和文档预览"><figcaption><p>搜索栏和操作工具栏位于采购订单行项目上方。</p></figcaption></figure>
 
-## Find the right purchase order
+## 查找正确的采购订单
 
-Enter a purchase order number in **Search purchase order number** and select a result. The filter icon beside the field opens additional search options: keyword, supplier, status, order status, date range, order amount, sort order, and number of records. Choose **Apply** to use the filters or **Clear** to reset them. Filtering the list does not match or export the invoice.
+在 **Search purchase order number** 中输入采购订单编号，然后选择一个结果。字段旁边的筛选图标可打开更多搜索选项：关键字、供应商、状态、订单状态、日期范围、订单金额、排序方式和记录数。选择 **Apply** 应用筛选条件，或选择 **Clear** 重置筛选条件。筛选列表不会匹配或导出发票。
 
-<figure><img src="../../../.gitbook/assets/dbdc-190-po-tools-filter-en.png" alt="Purchase order search filter with supplier, status, dates, amount and sorting fields"><figcaption><p>Open the filter icon beside the PO search field for more search options.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-190-po-tools-filter-en.png" alt="采购订单搜索筛选器，包含供应商、状态、日期、金额和排序字段"><figcaption><p>选择 PO 搜索栏旁边的筛选图标，打开更多搜索选项。</p></figcaption></figure>
 
-## Toolbar actions
+## 工具栏操作
 
-Read the tooltip for an icon before selecting it. The toolbar can show:
+选择图标前，请先阅读其提示文本。工具栏可能显示以下操作：
 
-| Action | What it does |
+| 操作 | 功能 |
 | --- | --- |
-| **Matching history** (clock) | Opens previous matching activity for this document. It does not start a new match. |
-| **Help** (?) | Opens the PO Matching help page in a new browser tab. |
-| **Keyboard shortcuts** (keyboard) | Shows the shortcuts available on this screen. See [Keyboard Shortcuts](keyboard-shortcuts.md). |
-| **Training mode** (table) | Turns dragging PO rows into the invoice table on or off. It is useful only when the document has invoice line items; the sample screen below has none. |
-| **Tasks / Create task** | Opens document tasks or creates a task when these actions are available for your document and role. See [Tasks](../tasks.md). |
-| **Auto Accounting** | Opens accounting for this document when accounting data is present. |
-| **Auto PO match** (wand) | Runs automatic matching. If the organization has enabled automatic export and the resulting match meets its conditions, this action can export too. Review the document before using it. See [Automatic Purchase Order Data Matching](automatic-purchase-order-data-matching.md). |
-| **Save** (disk) | Saves PO matching changes to the document. |
-| **Sync Data** | Available only for the corresponding PO quantity setting; refreshes selected PO data from the connected system. Use the displayed PO number and available sync options. |
-| **Export** | Exports the document after matching. If your organization offers multiple export targets, use the arrow beside **Export** to select one. |
+| **Matching history**（时钟） | 打开此文档之前的匹配活动记录。此操作不会启动新的匹配。 |
+| **Help**（?） | 在新的浏览器标签页中打开 PO 匹配帮助页面。 |
+| **Keyboard shortcuts**（键盘） | 显示此屏幕上可用的快捷键。请参阅 [键盘快捷键](keyboard-shortcuts.md)。 |
+| **Training mode**（表格） | 开启或关闭将 PO 行拖入发票表格的功能。仅当文档包含发票行项目时，此功能才有用；下方示例屏幕不包含发票行项目。 |
+| **Tasks / Create task** | 打开文档任务，或在这些操作适用于您的文档和角色时创建任务。请参阅 [任务](../tasks.md)。 |
+| **Auto Accounting** | 当此文档包含会计数据时，打开该文档的会计信息。 |
+| **Auto PO match**（魔棒） | 运行自动匹配。如果组织已启用自动导出，且匹配结果符合相关条件，此操作也可能导出文档。使用前请先检查文档。请参阅 [自动采购订单数据匹配](automatic-purchase-order-data-matching.md)。 |
+| **Save**（磁盘） | 将 PO 匹配更改保存到文档。 |
+| **Sync Data** | 仅适用于相应的 PO 数量设置；从已连接的系统刷新所选 PO 数据。请使用显示的 PO 编号和可用的同步选项。 |
+| **Export** | 匹配后导出文档。如果您的组织提供多个导出目标，请使用 **Export** 旁边的箭头选择目标。 |
 
-The PO tab also has a refresh icon for reloading that purchase order. The column settings icon at the right of the table header controls which PO columns are visible. These change the view of the PO table, not the invoice's extracted values.
+PO 标签页还提供刷新图标，可重新加载该采购订单。表格标题栏右侧的列设置图标用于控制显示哪些 PO 列。这些设置会更改 PO 表格的视图，不会更改发票中提取的值。
 
-## Keyboard shortcuts
+## 键盘快捷键
 
-Select the keyboard icon to see the current shortcut list. Common examples include **Ctrl+F** to focus PO search, **Ctrl+K** to reopen the shortcut dialog, **Ctrl+S** to save, and **Ctrl+E** to export. The dialog is the source for the complete list on your current screen.
+选择键盘图标，查看当前快捷键列表。常见示例包括 **Ctrl+F** 将焦点移至 PO 搜索栏、**Ctrl+K** 重新打开快捷键对话框、**Ctrl+S** 保存，以及 **Ctrl+E** 导出。当前屏幕上的完整快捷键列表以该对话框显示的内容为准。
 
-<figure><img src="../../../.gitbook/assets/dbdc-190-po-tools-shortcuts-en.png" alt="Keyboard shortcuts dialog on the English PO Matching screen"><figcaption><p>Open the keyboard icon to see the shortcuts supported by this screen.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-190-po-tools-shortcuts-en.png" alt="英文 PO 匹配屏幕上的键盘快捷键对话框"><figcaption><p>选择键盘图标，查看此屏幕支持的快捷键。</p></figcaption></figure>
 
 {% hint style="info" %}
-This screenshot uses a synthetic invoice and purchase order in the DocBits Documentation Test A sandbox. Its invoice has no extracted line items, so it cannot demonstrate a successful match. Match, save, sync, and export actions were not run for these screenshots.
+此截图使用 DocBits Documentation Test A 沙盒中的合成发票和采购订单。该发票没有提取的行项目，因此无法展示成功匹配。制作这些截图时未运行匹配、保存、同步或导出操作。
 {% endhint %}

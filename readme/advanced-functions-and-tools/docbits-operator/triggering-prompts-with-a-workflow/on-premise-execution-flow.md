@@ -1,19 +1,18 @@
-# On‑Premise Execution Flow
+# 本地部署执行流程
 
-For customers running DocBits Operator on‑premises, the following sequence describes how a processed document triggers and executes an Operator prompt via the local DocBits Agent.
+对于在本地部署 DocBits Operator 的客户，以下流程说明了已处理的文档如何通过本地 DocBits Agent 触发并执行 Operator 提示。
 
-1. **Document Uploade & Processing**\
-   A document is uploaded into DocBits and goes through the standard processing (Extraction, validation, etc.).
-2. **Workflow Trigger**\
-   Once processing completes, a configured Workflow in DocBits evaluates its trigger conditions. When those conditions are met, the Workflow creates a new **Operator Task**.
-3. **Task Creation & Dispatch**
-   * The workflow sends the script text, variables, max‑steps, max‑retries as a task payload to the shared Work Pool.
-4. **Agent Polling Loop**
-   * An on‑prem DocBits Agent (installed in the customer environment) polls the Work Pool every 5 minutes. If no tasks are found, the agent remains idle and retries after the interval.
-5. **Task Execution**
-   * When a task appears in the Work Pool, the Agent retrieves it and begins execution.
-6. **Log Generation**
-   * For each step—success or failure—the agent records detailed logs (actions, statuses, timestamps). Upon completion, it compiles the full log and final status.
-7. **Result Return & Display**
-   * The agent sends the logs and status back to DocBits. The originating workflow’s run history is updated, and users can review details in the **Workflow Logs** tab.
-
+1. **文档上传与处理**\
+   文档上传到 DocBits 后，会经过标准处理流程（提取、验证等）。
+2. **工作流触发**\
+   处理完成后，DocBits 中已配置的工作流会评估其触发条件。满足条件时，工作流会创建新的 **Operator Task**。
+3. **任务创建与派发**
+   * 工作流会将脚本文本、变量、最大步数和最大重试次数作为任务载荷发送到共享工作池。
+4. **Agent 轮询循环**
+   * 安装在客户环境中的本地 DocBits Agent 每 5 分钟轮询一次工作池。如果未找到任务，Agent 会保持空闲状态，并在间隔时间后重试。
+5. **任务执行**
+   * 工作池中出现任务时，Agent 会获取该任务并开始执行。
+6. **日志生成**
+   * 对每个步骤，无论成功还是失败，Agent 都会记录详细日志（操作、状态、时间戳）。任务完成后，Agent 会汇总完整日志和最终状态。
+7. **返回并显示结果**
+   * Agent 会将日志和状态发送回 DocBits。源工作流的运行历史记录会更新，用户可以在 **Workflow Logs** 选项卡中查看详情。

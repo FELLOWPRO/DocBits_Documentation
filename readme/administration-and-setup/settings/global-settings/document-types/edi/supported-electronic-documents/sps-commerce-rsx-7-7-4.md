@@ -1,26 +1,26 @@
 ---
-description: SPS COMMERCE RSX 7.7.4 electronic document support in DocBits
+description: DocBits 对 SPS COMMERCE RSX 7.7.4 电子文档的支持
 ---
 
 # SPS COMMERCE RSX 7.7.4
 
-| Property | Value |
+| 属性 | 值 |
 |----------|-------|
-| **Country / Region** | International (primarily North America) |
-| **Document Types** | Invoice (810), Purchase Order (850), ASN (856) |
-| **Format** | XML |
-| **Standard** | SPS Commerce RSX 7.7.4 (Retail Standard XML) |
+| **国家 / 地区** | 国际（主要为北美） |
+| **文档类型** | 发票 (810)、采购订单 (850)、ASN (856) |
+| **格式** | XML |
+| **标准** | SPS Commerce RSX 7.7.4（零售标准 XML） |
 
-SPS Commerce RSX (Retail Standard XML) 7.7.4 is an EDI-to-XML translation standard used in the retail supply chain. It provides XML representations of common EDI transactions including invoices (810), purchase orders (850), and advance ship notices (856). SPS Commerce is a leading EDI provider connecting retailers with suppliers.
+SPS Commerce RSX（零售标准 XML）7.7.4 是零售供应链中使用的 EDI 到 XML 转换标准。它为常见的 EDI 事务提供 XML 表示形式，包括发票 (810)、采购订单 (850) 和预先发货通知 (856)。SPS Commerce 是领先的 EDI 服务提供商，负责连接零售商与供应商。
 
-## Support Status
+## 支持状态
 
-| Component | Status |
+| 组件 | 状态 |
 |-----------|--------|
-| Preview | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation | ✅ Supported |
+| 预览 | ✅ 支持 |
+| 字段提取 | ✅ 支持 |
+| 转换 | ✅ 支持 |
 
-## Related
+## 相关内容
 
-- [Supported Electronic Documents](./)
+- [支持的电子文档](./)

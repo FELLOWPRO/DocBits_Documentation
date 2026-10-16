@@ -1,39 +1,39 @@
-# Personal Dashboards
+# 个人仪表板
 
-A personal dashboard saves a view of the document list so you can return to the filters and columns you use often. You can keep it private, make it visible to everyone in your organization, or share it with selected groups and users. To learn how to filter the document list before saving a view, see [Quick Search](quick-search.md).
+个人仪表板可保存文档列表视图，方便你再次使用常用的筛选条件和列。你可以将其设为仅自己可见、对组织中的所有人可见，或与选定的群组和用户共享。要了解如何在保存视图前筛选文档列表，请参阅[快速搜索](quick-search.md)。
 
-## Create a dashboard
+## 创建仪表板
 
-1. On the **Dashboard**, set the filters and columns you want to save.
-2. Select the dashboard badge below the search bar. It shows the current view and document count, such as **All documents (12)**.
-3. Select **Create new Dashboard**.
+1. 在 **Dashboard** 中，设置要保存的筛选条件和列。
+2. 选择搜索栏下方的仪表板徽标。徽标会显示当前视图和文档数量，例如 **All documents (12)**。
+3. 选择 **Create new Dashboard**。
 
-<figure><img src="../../../.gitbook/assets/dbdc189-dashboard-menu-en.png" alt="Dashboard badge menu with Create new Dashboard, Default Dashboard, and Save Dashboard Changes"><figcaption><p>Open the current dashboard badge to create a saved view.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc189-dashboard-menu-en.png" alt="仪表板徽标菜单，包含 Create new Dashboard、Default Dashboard 和 Save Dashboard Changes"><figcaption><p>打开当前仪表板徽标以创建已保存的视图。</p></figcaption></figure>
 
-4. Enter a name and choose who can see the dashboard:
-   * **Visible only to me** keeps the view private.
-   * **Visible to all users** makes it available to your organization.
-   * **Share with Groups and Users** lets you select specific groups or people.
-5. Select **Save**.
+4. 输入名称并选择可以查看此仪表板的人员：
+   * **Visible only to me** 将视图设为私有。
+   * **Visible to all users** 使组织中的所有用户都可以使用此视图。
+   * **Share with Groups and Users** 允许你选择特定群组或人员。
+5. 选择 **Save**。
 
-<figure><img src="../../../.gitbook/assets/dbdc189-dashboard-create-en.png" alt="Create new Dashboard dialog with name, visibility choices, and Save button"><figcaption><p>Name the dashboard and choose its visibility before saving it.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc189-dashboard-create-en.png" alt="Create new Dashboard 对话框，包含名称、可见性选项和 Save 按钮"><figcaption><p>保存前，为仪表板命名并选择其可见范围。</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc189-dashboard-share-options-en.png" alt="Dashboard sharing option with Groups and Select User fields"><figcaption><p>Select groups or users when you want to share a dashboard with specific people.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc189-dashboard-share-options-en.png" alt="仪表板共享选项，包含 Groups 和 Select User 字段"><figcaption><p>若要与特定人员共享仪表板，请选择群组或用户。</p></figcaption></figure>
 
-## Open or change a dashboard
+## 打开或更改仪表板
 
-Select the dashboard badge, then choose a saved dashboard from the list. Select **Default Dashboard** to return to the default view. The badge displays the name of the active dashboard.
+选择仪表板徽标，然后从列表中选择已保存的仪表板。选择 **Default Dashboard** 可返回默认视图。徽标会显示当前启用的仪表板名称。
 
-To change a dashboard that you own, hover over its name in the list and select the **pencil** icon. In **Edit Dashboard**, change its name or visibility and select **Save**. A dashboard shared with you by someone else cannot be edited from your account.
+若要更改自己创建的仪表板，请将鼠标悬停在列表中的仪表板名称上，然后选择**铅笔**图标。在 **Edit Dashboard** 中，更改名称或可见范围，然后选择 **Save**。其他人与你共享的仪表板无法通过你的账户进行编辑。
 
-<figure><img src="../../../.gitbook/assets/dbdc189-dashboard-edit-controls-en.png" alt="Saved dashboard row with pencil edit and trash delete icons visible on hover"><figcaption><p>Hover over a dashboard you own to reveal its edit and delete controls.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc189-dashboard-edit-controls-en.png" alt="悬停时显示铅笔编辑图标和垃圾桶删除图标的已保存仪表板行"><figcaption><p>将鼠标悬停在自己创建的仪表板上，即可显示编辑和删除控件。</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc189-dashboard-edit-dialog-en.png" alt="Edit Dashboard dialog showing the saved name and visibility choices"><figcaption><p>Use the Edit Dashboard dialog to rename the dashboard or change who can see it.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc189-dashboard-edit-dialog-en.png" alt="Edit Dashboard 对话框，显示已保存的名称和可见性选项"><figcaption><p>使用 Edit Dashboard 对话框重命名仪表板，或更改其可见范围。</p></figcaption></figure>
 
-## Save changes to the current view
+## 保存对当前视图的更改
 
-After changing filters or columns in a dashboard you own, select **Save Dashboard Changes** from the dashboard menu. The action is unavailable if no dashboard is selected, the view has not changed, or the selected dashboard belongs to someone else.
+更改自己创建的仪表板中的筛选条件或列后，请从仪表板菜单中选择 **Save Dashboard Changes**。如果未选择仪表板、视图尚未更改，或所选仪表板属于其他人，则此操作不可用。
 
-## Delete a dashboard
+## 删除仪表板
 
-Open the dashboard list, hover over a dashboard you own, and select the **trash** icon. Confirm with **Delete**. The delete control is unavailable for a dashboard that another person shared with you.
+打开仪表板列表，将鼠标悬停在自己创建的仪表板上，然后选择**垃圾桶**图标。选择 **Delete** 确认删除。对于其他人与你共享的仪表板，删除控件不可用。

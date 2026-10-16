@@ -1,261 +1,261 @@
-# Purchase Order line
+# 采购订单行
 
-## Tabelle `public.purchase_order_line`
+## 表 `public.purchase_order_line`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `purchase_order_id`: internal
-* `purchase_order_number`: internal
-* `line_number`: internal
-* `item_id`: internal
-* `supplier_item_id`: internal
-* `description`: internal
-* `quantity`: double precision
-* `unit_code`: internal
-* `unit_price`: double precision
-* `total_amount`: double precision
-* `currency`: internal
-* `status`: internal
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `deleted_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `open_quantity`: double precision
-* `received_quantity`: double precision
-* `confirmed_quantity`: double precision
-* `note`: text
-* `sub_org_id`: internal
-* `sub_line_number`: internal
-* `unit_price_per`: double precision
-* `buyer_id`: internal
-* `buyer_name`: internal
-* `unit_code_price`: internal
-* `geo_code`: internal
-* `promised_delivery_date`: timestamp with time zone
-* `delivery_method`: internal
-* `requested_ship_date`: date
-* `received_base_mou_quantity`: double precision
-* `extended_amount`: double precision
+* `id`：内部
+* `org_id`：组织 ID
+* `purchase_order_id`：内部
+* `purchase_order_number`：内部
+* `line_number`：内部
+* `item_id`：内部
+* `supplier_item_id`：内部
+* `description`：内部
+* `quantity`：双精度浮点数
+* `unit_code`：内部
+* `unit_price`：双精度浮点数
+* `total_amount`：双精度浮点数
+* `currency`：内部
+* `status`：内部
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `deleted_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `open_quantity`：双精度浮点数
+* `received_quantity`：双精度浮点数
+* `confirmed_quantity`：双精度浮点数
+* `note`：文本
+* `sub_org_id`：内部
+* `sub_line_number`：内部
+* `unit_price_per`：双精度浮点数
+* `buyer_id`：内部
+* `buyer_name`：内部
+* `unit_code_price`：内部
+* `geo_code`：内部
+* `promised_delivery_date`：带时区的时间戳
+* `delivery_method`：内部
+* `requested_ship_date`：日期
+* `received_base_mou_quantity`：双精度浮点数
+* `extended_amount`：双精度浮点数
 
-### Analyse & Beschreibung
+### 分析与说明
 
-## Technical Documentation for `public.purchase_order_line` Table
+## `public.purchase_order_line` 表技术文档
 
-### Introduction
+### 简介
 
-The `public.purchase_order_line` table is designed to store detailed information about each line item within a purchase order. It captures various attributes of a purchase order line such as item details, quantities, prices, and statuses. This table is integral for managing and tracking purchase orders and their fulfillment status within an organizational context.
+`public.purchase_order_line` 表用于存储采购订单中每个行项目的详细信息。它记录采购订单行的各种属性，例如商品详情、数量、价格和状态。此表对于在组织范围内管理和跟踪采购订单及其履行状态至关重要。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: Unique identifier for each purchase order line item.
-* **Role**: Primary Key.
-* **Typical Contents**: A UUID string uniquely identifying the purchase order line.
+* **含义**：每个采购订单行项目的唯一标识符。
+* **作用**：主键。
+* **典型内容**：用于唯一标识采购订单行的 UUID 字符串。
 
 #### org\_id
 
-* **Meaning**: Identifier for the organization associated with the purchase order.
-* **Role**: Foreign Key.
-* **Typical Contents**: A UUID string referencing an organization.
+* **含义**：与采购订单关联的组织标识符。
+* **作用**：外键。
+* **典型内容**：引用某个组织的 UUID 字符串。
 
 #### purchase\_order\_id
 
-* **Meaning**: Identifier for the purchase order to which the line item belongs.
-* **Role**: Foreign Key.
-* **Typical Contents**: A UUID string referencing a purchase order.
+* **含义**：行项目所属采购订单的标识符。
+* **作用**：外键。
+* **典型内容**：引用某个采购订单的 UUID 字符串。
 
 #### purchase\_order\_number
 
-* **Meaning**: The number assigned to the purchase order.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string representing the purchase order number.
+* **含义**：分配给采购订单的编号。
+* **作用**：描述性字段。
+* **典型内容**：表示采购订单编号的字符串。
 
 #### line\_number
 
-* **Meaning**: The line number of the item within the purchase order.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string denoting the line sequence in the purchase order.
+* **含义**：商品在采购订单中的行号。
+* **作用**：描述性字段。
+* **典型内容**：表示采购订单中行项目顺序的字符串。
 
 #### item\_id
 
-* **Meaning**: Identifier for the item being ordered.
-* **Role**: Foreign Key.
-* **Typical Contents**: A string representing the item code.
+* **含义**：所订购商品的标识符。
+* **作用**：外键。
+* **典型内容**：表示商品代码的字符串。
 
 #### supplier\_item\_id
 
-* **Meaning**: Supplier-specific identifier for the item.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string, may be null if not provided by the supplier.
+* **含义**：供应商特定的商品标识符。
+* **作用**：描述性字段。
+* **典型内容**：字符串；如果供应商未提供，则可能为 null。
 
 #### description
 
-* **Meaning**: Description of the item.
-* **Role**: Descriptive field.
-* **Typical Contents**: A text description of the item.
+* **含义**：商品说明。
+* **作用**：描述性字段。
+* **典型内容**：商品的文本说明。
 
 #### quantity
 
-* **Meaning**: The number of units ordered.
-* **Role**: Descriptive field.
-* **Typical Contents**: A numeric value indicating ordered quantity.
+* **含义**：订购的数量。
+* **作用**：描述性字段。
+* **典型内容**：表示订购数量的数值。
 
 #### unit\_code
 
-* **Meaning**: Code representing the unit of measurement for the item.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string representing units, e.g., 'EA' for each.
+* **含义**：表示商品计量单位的代码。
+* **作用**：描述性字段。
+* **典型内容**：表示计量单位的字符串，例如表示“每件”的 'EA'。
 
 #### unit\_price
 
-* **Meaning**: Price per unit of the item.
-* **Role**: Descriptive field.
-* **Typical Contents**: A numeric value representing the price per unit.
+* **含义**：商品的单价。
+* **作用**：描述性字段。
+* **典型内容**：表示单价的数值。
 
 #### total\_amount
 
-* **Meaning**: Total amount for the line item (quantity \* unit price).
-* **Role**: Descriptive field.
-* **Typical Contents**: A numeric value representing the total amount.
+* **含义**：行项目的总金额（数量 \* 单价）。
+* **作用**：描述性字段。
+* **典型内容**：表示总金额的数值。
 
 #### currency
 
-* **Meaning**: Currency in which the purchase is made.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string representing the currency code, e.g., 'USD'.
+* **含义**：采购所用的货币。
+* **作用**：描述性字段。
+* **典型内容**：表示货币代码的字符串，例如 'USD'。
 
 #### status
 
-* **Meaning**: Current status of the purchase order line.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string indicating status, e.g., 'Received', 'Invoiced'.
+* **含义**：采购订单行的当前状态。
+* **作用**：描述性字段。
+* **典型内容**：表示状态的字符串，例如 'Received'（已收货）、'Invoiced'（已开票）。
 
 #### created\_by
 
-* **Meaning**: Identifier for the user who created the entry.
-* **Role**: Foreign Key.
-* **Typical Contents**: An integer representing the user ID.
+* **含义**：创建此条目的用户标识符。
+* **作用**：外键。
+* **典型内容**：表示用户 ID 的整数。
 
 #### created\_on
 
-* **Meaning**: Timestamp of when the entry was created.
-* **Role**: Technical field.
-* **Typical Contents**: A timestamp with timezone information.
+* **含义**：条目的创建时间戳。
+* **作用**：技术字段。
+* **典型内容**：带时区信息的时间戳。
 
 #### last\_modified\_on
 
-* **Meaning**: Timestamp of the last modification.
-* **Role**: Technical field.
-* **Typical Contents**: A timestamp with timezone information, may be null if never modified.
+* **含义**：最近一次修改的时间戳。
+* **作用**：技术字段。
+* **典型内容**：带时区信息的时间戳；如果从未修改，则可能为 null。
 
 #### deleted\_on
 
-* **Meaning**: Timestamp of when the entry was marked as deleted.
-* **Role**: Technical field.
-* **Typical Contents**: A timestamp with timezone information, may be null if not deleted.
+* **含义**：条目标记为已删除的时间戳。
+* **作用**：技术字段。
+* **典型内容**：带时区信息的时间戳；如果未删除，则可能为 null。
 
 #### is\_deleted
 
-* **Meaning**: Indicates if the entry has been marked as deleted.
-* **Role**: Technical field.
-* **Typical Contents**: Boolean value (true/false).
+* **含义**：指示条目是否已标记为删除。
+* **作用**：技术字段。
+* **典型内容**：布尔值（true/false）。
 
 #### open\_quantity
 
-* **Meaning**: Quantity not yet received or invoiced.
-* **Role**: Descriptive field.
-* **Typical Contents**: A numeric value, typically zero if fully received.
+* **含义**：尚未收货或开票的数量。
+* **作用**：描述性字段。
+* **典型内容**：数值；全部收货时通常为零。
 
 #### received\_quantity
 
-* **Meaning**: Quantity that has been received.
-* **Role**: Descriptive field.
-* **Typical Contents**: A numeric value indicating received quantity.
+* **含义**：已收货的数量。
+* **作用**：描述性字段。
+* **典型内容**：表示已收货数量的数值。
 
 #### confirmed\_quantity
 
-* **Meaning**: Quantity confirmed by supplier.
-* **Role**: Descriptive field.
-* **Typical Contents**: A numeric value, may be null if not confirmed.
+* **含义**：供应商确认的数量。
+* **作用**：描述性字段。
+* **典型内容**：数值；如果尚未确认，则可能为 null。
 
 #### note
 
-* **Meaning**: Additional notes regarding the purchase order line.
-* **Role**: Descriptive field.
-* **Typical Contents**: Text, may include special instructions or comments.
+* **含义**：有关采购订单行的补充备注。
+* **作用**：描述性字段。
+* **典型内容**：文本，可能包含特殊说明或评论。
 
 #### sub\_org\_id
 
-* **Meaning**: Identifier for the sub-organization associated with the purchase order line.
-* **Role**: Foreign Key.
-* **Typical Contents**: A string, potentially null if not applicable.
+* **含义**：与采购订单行关联的子组织标识符。
+* **作用**：外键。
+* **典型内容**：字符串；如果不适用，则可能为 null。
 
 #### sub\_line\_number
 
-* **Meaning**: Sub-line number within the purchase order.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string representing sub-line sequence.
+* **含义**：采购订单中的子行号。
+* **作用**：描述性字段。
+* **典型内容**：表示子行顺序的字符串。
 
 #### unit\_price\_per
 
-* **Meaning**: Base unit price for the item.
-* **Role**: Descriptive field.
-* **Typical Contents**: A numeric value representing the base unit price.
+* **含义**：商品的基本单价。
+* **作用**：描述性字段。
+* **典型内容**：表示基本单价的数值。
 
 #### buyer\_id
 
-* **Meaning**: Identifier for the buyer responsible for the purchase.
-* **Role**: Foreign Key.
-* **Typical Contents**: A string representing the buyer ID.
+* **含义**：负责采购的买方标识符。
+* **作用**：外键。
+* **典型内容**：表示买方 ID 的字符串。
 
 #### buyer\_name
 
-* **Meaning**: Name of the buyer responsible.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string representing the buyer's name.
+* **含义**：负责采购的买方姓名。
+* **作用**：描述性字段。
+* **典型内容**：表示买方姓名的字符串。
 
 #### unit\_code\_price
 
-* **Meaning**: Unit code related to pricing.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string, similar to unit\_code.
+* **含义**：与定价相关的单位代码。
+* **作用**：描述性字段。
+* **典型内容**：与 unit\_code 类似的字符串。
 
 #### geo\_code
 
-* **Meaning**: Geographical code for delivery.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string representing a geographic location.
+* **含义**：用于配送的地理代码。
+* **作用**：描述性字段。
+* **典型内容**：表示地理位置的字符串。
 
 #### promised\_delivery\_date
 
-* **Meaning**: Date promised for delivery.
-* **Role**: Descriptive field.
-* **Typical Contents**: A timestamp with timezone information.
+* **含义**：承诺的交货日期。
+* **作用**：描述性字段。
+* **典型内容**：带时区信息的时间戳。
 
 #### delivery\_method
 
-* **Meaning**: Method of delivery for the purchase order line.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string representing delivery method.
+* **含义**：采购订单行的交付方式。
+* **作用**：描述性字段。
+* **典型内容**：表示交付方式的字符串。
 
 #### requested\_ship\_date
 
-* **Meaning**: Date requested for shipment.
-* **Role**: Descriptive field.
-* **Typical Contents**: A date value.
+* **含义**：要求的发货日期。
+* **作用**：描述性字段。
+* **典型内容**：日期值。
 
 #### received\_base\_mou\_quantity
 
-* **Meaning**: Quantity received in base measurement units.
-* **Role**: Descriptive field.
-* **Typical Contents**: A numeric value indicating base MOU quantity received.
+* **含义**：按基本计量单位计算的已收货数量。
+* **作用**：描述性字段。
+* **典型内容**：表示已收货基本计量单位数量的数值。
 
 #### extended\_amount
 
-* **Meaning**: Extended amount for the line item.
-* **Role**: Descriptive field.
-* **Typical Contents**: A numeric value representing the extended amount, which may be equal to total\_amount if no discounts or additional charges apply.
+* **含义**：行项目的扩展金额。
+* **作用**：描述性字段。
+* **典型内容**：表示扩展金额的数值；如果没有折扣或额外费用，可能等于 total\_amount。

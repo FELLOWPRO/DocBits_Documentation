@@ -1,11 +1,11 @@
-# Task Management
+# 任务管理
 
-In the "Task Management" setting under "Log Settings" section, you will be given an overview of all celery tasks, their Intervals,  when the task was ran for the last time and when it will be run again. In addition, you will also have the option to run a task again. If you are in search of a specific task, you can use the search bar for it.&#x20;
+在“日志设置”部分的“任务管理”设置中，你可以查看所有 Celery 任务的概览，包括任务间隔、任务上次运行时间以及下次运行时间。此外，你还可以选择重新运行任务。如果要查找特定任务，可以使用搜索栏。&#x20;
 
 
 
-<figure><img src="../../../.gitbook/assets/task_management_overview.png" alt="Task Management Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/task_management_overview.png" alt="任务管理概览"><figcaption></figcaption></figure>
 
-You have the option to sort the list using the little arrows next to the column name.&#x20;
+你可以使用列名旁边的小箭头对列表进行排序。&#x20;
 
-Columns can be rearranged by holding down the left mouse button and dragging them into place.&#x20;
+按住鼠标左键并拖动列，即可重新排列列的顺序。&#x20;

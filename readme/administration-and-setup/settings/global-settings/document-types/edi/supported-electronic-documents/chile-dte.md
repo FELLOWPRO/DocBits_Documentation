@@ -1,92 +1,92 @@
 ---
-description: CHILE DTE electronic document support in DocBits
+description: "DocBits 对 CHILE DTE 电子文档的支持"
 ---
 
 # 🇨🇱 CHILE DTE
 
-| Property             | Value                                                      |
+| 属性 | 值 |
 | -------------------- | ---------------------------------------------------------- |
-| **Country / Region** | Chile                                                      |
-| **Document Types**   | Invoice (Factura), Credit Note, Debit Note, Dispatch Guide |
-| **Format**           | XML                                                        |
-| **Standard**         | DTE (Documento Tributario Electrónico), SII                |
-| **Locale**           | `es_CL`                                                    |
+| **国家/地区** | 智利 |
+| **文档类型** | 发票（Factura）、贷项通知单、借项通知单、发货指南 |
+| **格式** | XML |
+| **标准** | DTE（Documento Tributario Electrónico），SII |
+| **区域设置** | `es_CL` |
 
-DTE (Documento Tributario Electrónico) is the Chilean electronic tax document standard regulated by the Servicio de Impuestos Internos (SII). All DTE documents share the `http://www.sii.cl/SiiDte` namespace. DocBits auto-detects the DTE type code (`TipoDTE`) and routes to the appropriate extraction rules:
+DTE（Documento Tributario Electrónico）是智利的电子税务文档标准，由 Servicio de Impuestos Internos（SII）监管。所有 DTE 文档均使用 `http://www.sii.cl/SiiDte` 命名空间。DocBits 会自动检测 DTE 类型代码（`TipoDTE`），并应用相应的提取规则：
 
-| Type Code | Document Type                                   |
+| 类型代码 | 文档类型 |
 | --------- | ----------------------------------------------- |
-| 33        | Factura Electrónica (Invoice)                   |
-| 34        | Factura No Afecta o Exenta (Tax-exempt invoice) |
-| 52        | Guía de Despacho (Dispatch Guide)               |
-| 56        | Nota de Débito (Debit Note)                     |
-| 61        | Nota de Crédito (Credit Note)                   |
+| 33 | Factura Electrónica（电子发票） |
+| 34 | Factura No Afecta o Exenta（免税发票） |
+| 52 | Guía de Despacho（发货指南） |
+| 56 | Nota de Débito（借项通知单） |
+| 61 | Nota de Crédito（贷项通知单） |
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件 | 状态 |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览 | ✅ 支持 |
+| 字段提取 | ✅ 支持 |
+| 转换 | ✅ 支持 |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/chile-dte-preview.png" alt="Chile DTE Factura preview in DocBits"><figcaption><p>Default DocBits preview for a CHILE DTE FACTURA (type 33)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/chile-dte-preview.png" alt="DocBits 中的智利 DTE Factura 预览"><figcaption><p>CHILE DTE FACTURA（类型 33）的 DocBits 默认预览</p></figcaption></figure>
 
-## Field Mapping
+## 字段映射
 
-### Header Fields
+### 页眉字段
 
-| DocBits Field      | Source XML Element | Notes                          |
+| DocBits 字段 | 源 XML 元素 | 说明 |
 | ------------------ | ------------------ | ------------------------------ |
-| `invoice_id`       | `Folio`            | Document folio number          |
-| `invoice_date`     | `FchEmis`          | ISO 8601 emission date         |
-| `due_date`         | `FchVenc`          | Payment due date               |
-| `currency`         | Fixed: `CLP`       | Always Chilean Peso            |
-| `total_amount`     | `MntTotal`         | Total amount incl. VAT         |
-| `net_amount`       | `MntNeto`          | Net taxable amount             |
-| `tax_amount`       | `IVA`              | VAT amount (19% standard rate) |
-| `supplier_name`    | `RznSoc` (Emisor)  | Issuer company name            |
-| `supplier_id`      | `RUTEmisor`        | Issuer RUT (e.g. `76123456-7`) |
-| `supplier_address` | `DirOrigen`        | Issuer street address          |
-| `supplier_city`    | `CiudadOrigen`     | Issuer city                    |
-| `supplier_country` | Fixed: `CL`        | Always Chile                   |
-| `buyer_name`       | `RznSocRecep`      | Recipient company name         |
-| `buyer_id`         | `RUTRecep`         | Recipient RUT                  |
-| `buyer_address`    | `DirRecep`         | Recipient street address       |
-| `buyer_city`       | `CiudadRecep`      | Recipient city                 |
-| `buyer_country`    | Fixed: `CL`        | Always Chile                   |
+| `invoice_id` | `Folio` | 文档流水号 |
+| `invoice_date` | `FchEmis` | ISO 8601 签发日期 |
+| `due_date` | `FchVenc` | 付款到期日 |
+| `currency` | 固定值：`CLP` | 始终为智利比索 |
+| `total_amount` | `MntTotal` | 含增值税的总金额 |
+| `net_amount` | `MntNeto` | 净应税金额 |
+| `tax_amount` | `IVA` | 增值税金额（标准税率为 19%） |
+| `supplier_name` | `RznSoc`（Emisor） | 开票方公司名称 |
+| `supplier_id` | `RUTEmisor` | 开票方 RUT（例如 `76123456-7`） |
+| `supplier_address` | `DirOrigen` | 开票方街道地址 |
+| `supplier_city` | `CiudadOrigen` | 开票方城市 |
+| `supplier_country` | 固定值：`CL` | 始终为智利 |
+| `buyer_name` | `RznSocRecep` | 收件方公司名称 |
+| `buyer_id` | `RUTRecep` | 收件方 RUT |
+| `buyer_address` | `DirRecep` | 收件方街道地址 |
+| `buyer_city` | `CiudadRecep` | 收件方城市 |
+| `buyer_country` | 固定值：`CL` | 始终为智利 |
 
-### Line Item Table (`INVOICE_TABLE`)
+### 行项目表（`INVOICE_TABLE`）
 
-Row path: `Detalle`
+行路径：`Detalle`
 
-| Column        | Source XML Element      | Notes                         |
+| 列 | 源 XML 元素 | 说明 |
 | ------------- | ----------------------- | ----------------------------- |
-| `POSITION`    | `NroLinDet`             | Line sequence number          |
-| `DESCRIPTION` | `NmbItem`               | Item name                     |
-| `QUANTITY`    | `QtyItem`               | Quantity                      |
-| `UNIT`        | `UnmdItem`              | Unit of measure               |
-| `UNIT_PRICE`  | `PrcItem`               | Unit price excl. VAT          |
-| `VAT_RATE`    | `TasaIVA` (from header) | IVA rate in % (typically 19%) |
-| `VAT`         | Calculated              | VAT per line                  |
-| `NET_AMOUNT`  | `MontoItem`             | Line total                    |
+| `POSITION` | `NroLinDet` | 行序号 |
+| `DESCRIPTION` | `NmbItem` | 项目名称 |
+| `QUANTITY` | `QtyItem` | 数量 |
+| `UNIT` | `UnmdItem` | 计量单位 |
+| `UNIT_PRICE` | `PrcItem` | 不含增值税的单价 |
+| `VAT_RATE` | `TasaIVA`（来自页眉） | IVA 税率（通常为 19%） |
+| `VAT` | 计算得出 | 每行增值税 |
+| `NET_AMOUNT` | `MontoItem` | 行合计 |
 
-## Classification Rules
+## 分类规则
 
-DocBits detects Chile DTE documents by matching the XML namespace and `TipoDTE`:
+DocBits 通过匹配 XML 命名空间和 `TipoDTE` 来检测智利 DTE 文档：
 
-| Electronic Document Type      | Pattern                                              |
+| 电子文档类型 | 匹配模式 |
 | ----------------------------- | ---------------------------------------------------- |
-| CHILE DTE FACTURA             | `http://www.sii.cl/SiiDte` + `<TipoDTE>33</TipoDTE>` |
+| CHILE DTE FACTURA | `http://www.sii.cl/SiiDte` + `<TipoDTE>33</TipoDTE>` |
 | CHILE DTE FACTURA ELECTRONICA | `http://www.sii.cl/SiiDte` + `<TipoDTE>34</TipoDTE>` |
-| CHILE DTE GUIA DESPACHO       | `http://www.sii.cl/SiiDte` + `<TipoDTE>52</TipoDTE>` |
-| CHILE DTE NOTA CREDITO        | `http://www.sii.cl/SiiDte` + `<TipoDTE>61</TipoDTE>` |
+| CHILE DTE GUIA DESPACHO | `http://www.sii.cl/SiiDte` + `<TipoDTE>52</TipoDTE>` |
+| CHILE DTE NOTA CREDITO | `http://www.sii.cl/SiiDte` + `<TipoDTE>61</TipoDTE>` |
 
-The envelope element is `<EnvioDTE>` and each DTE is wrapped in `<DTE><Documento>`.
+信封元素为 `<EnvioDTE>`，每个 DTE 都封装在 `<DTE><Documento>` 中。
 
-## Related
+## 相关内容
 
-* [Currently Supported E-Invoice Standards](../../currently-supported-e-invoice-standards/)
-* [Supported Electronic Documents](./)
+* [当前支持的电子发票标准](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/settings/global-settings/document-types/currently-supported-e-invoice-standards/README.md)
+* [支持的电子文档](./)

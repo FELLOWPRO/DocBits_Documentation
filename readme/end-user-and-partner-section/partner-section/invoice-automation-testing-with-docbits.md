@@ -1,58 +1,57 @@
-# Invoice Automation Testing with DocBits
+# 使用 DocBits 测试发票自动化
 
-## Overview
+## 概述
 
-This document outlines the testing plan for invoice automation using DocBits with Infor LN or M3. It includes details of test cases, testing preparation, execution steps, and support processes.
+本文档概述了使用 DocBits 与 Infor LN 或 M3 进行发票自动化的测试计划。其中包括测试用例、测试准备、执行步骤和支持流程的详细信息。
 
-## Testing Cases
+## 测试用例
 
-| ID | Testing Case                                                               | Description                                                                                                                                                       | Status       |
+| ID | 测试用例 | 描述 | 状态 |
 | -- | -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| 1  | Cost Invoices                                                              | Invoices with no purchase order are processed successfully in DocBits and exported to LN as “cost invoice”.                                                       | TO BE TESTED |
-| 2  | Purchase Order Related Invoice with Perfect Matching                       | Purchase order-related invoices are processed successfully in DocBits with a perfect match from invoice to PO, since item number, quantity, and unit price match. | TO BE TESTED |
-| 3  | Purchase Order Related Invoices with Different Quantity                    | Purchase order-related invoices are processed in DocBits but in the PO matching module, we have a mismatch on the quantity.                                       | TO BE TESTED |
-| 4  | Purchase Order Related Invoices with Different Unit Price                  | Purchase order-related invoices are processed in DocBits but in the PO matching module, we have a mismatch on the unit price.                                     | TO BE TESTED |
-| 5  | Purchase Order Related Invoices with Different or Non-Existing Item Number | Purchase order-related invoices are processed in DocBits but in the PO matching module, we have a mismatch or a non-existing item number.                         | TO BE TESTED |
-| 6  | Purchase Order Related Invoices with a Mismatch within Tolerance           | Purchase order-related invoices are processed in DocBits but in the PO matching module, we have a mismatch on quantity or unit price, but it’s within tolerance.  | TO BE TESTED |
-| 7  | Credit Notes                                                               | Credit notes are successfully processed in DocBits and exported to LN. Clarify whether amounts should be exported with a positive or negative sign.               | TO BE TESTED |
+| 1  | 成本发票 | 不含采购订单的发票在 DocBits 中成功处理，并以“成本发票”导出至 LN。 | 待测试 |
+| 2  | 采购订单相关发票，完全匹配 | 采购订单相关发票在 DocBits 中成功处理，且发票与 PO 完全匹配，因为物料编号、数量和单价均一致。 | 待测试 |
+| 3  | 采购订单相关发票，数量不同 | 采购订单相关发票在 DocBits 中处理，但在 PO 匹配模块中，数量不匹配。 | 待测试 |
+| 4  | 采购订单相关发票，单价不同 | 采购订单相关发票在 DocBits 中处理，但在 PO 匹配模块中，单价不匹配。 | 待测试 |
+| 5  | 采购订单相关发票，物料编号不同或不存在 | 采购订单相关发票在 DocBits 中处理，但在 PO 匹配模块中，物料编号不匹配或不存在。 | 待测试 |
+| 6  | 采购订单相关发票，差异在容差范围内 | 采购订单相关发票在 DocBits 中处理，但在 PO 匹配模块中，数量或单价存在差异，不过在容差范围内。 | 待测试 |
+| 7  | 贷项通知单 | 贷项通知单在 DocBits 中成功处理并导出至 LN。请明确金额应以正号还是负号导出。 | 待测试 |
 
-## Plan for Testing with Customer
+## 与客户共同进行测试的计划
 
-### 1. Set Up
+### 1. 设置
 
-* **Initial Meeting**: Schedule a kickoff meeting with the customer to explain the testing process and objectives.
-* **Access and Permissions**: Ensure the customer has all necessary access to DocBits and Infor LN or M3 for testing purposes.
+* **首次会议**：与客户安排启动会议，说明测试流程和目标。
+* **访问权限**：确保客户拥有测试所需的 DocBits 和 Infor LN 或 M3 访问权限。
 
-### 2. Testing Preparation
+### 2. 测试准备
 
-* **Training**: Provide comprehensive training to the customer’s team on how to use DocBits for invoice processing.
-* **Documentation**: Share detailed documentation on the testing procedures, including expected outcomes for each test case.
+* **培训**：为客户团队提供全面培训，讲解如何使用 DocBits 处理发票。
+* **文档**：分享详细的测试流程文档，包括每个测试用例的预期结果。
 
-### 3. Execution of Test Cases
+### 3. 执行测试用例
 
-* **Testing Environment**: Set up a testing environment that replicates the customer's production system as closely as possible.
-* **Step-by-Step Testing**: Work with the customer to execute each test case, ensuring they understand each step:
-  * Process invoices through DocBits.
-  * Verify the output in the PO matching module.
-  * Check the export results in LN or M3.
+* **测试环境**：设置一个尽可能贴近客户生产系统的测试环境。
+* **逐步测试**：与客户合作执行每个测试用例，并确保他们理解每个步骤：
+  * 通过 DocBits 处理发票。
+  * 在 PO 匹配模块中验证输出。
+  * 检查在 LN 或 M3 中的导出结果。
 
-### 4. Issue Resolution
+### 4. 问题解决
 
-* **Tracking**: Use a tracking system (like Jira or a simple spreadsheet) to log any issues or mismatches that occur during testing.
-* **Support**: Provide immediate support to resolve issues and clarify any doubts.
+* **跟踪**：使用跟踪系统（例如 Jira 或简单的电子表格）记录测试过程中出现的问题或差异。
+* **支持**：及时提供支持，以解决问题并解答疑问。
 
-### 5. Verification and Feedback
+### 5. 验证和反馈
 
-* **Verification**: After each test case, verify the results with the customer to ensure accuracy.
-* **Feedback Loop**: Collect feedback from the customer on the process and any improvements needed.
+* **验证**：每个测试用例完成后，与客户核对结果以确保准确性。
+* **反馈循环**：收集客户对流程的反馈以及所需改进。
 
-### 6. Finalization
+### 6. 最终确定
 
-* **Documentation of Results**: Document the results of each test case and provide a summary report to the customer.
-* **Review Meeting**: Conduct a review meeting to discuss the testing outcomes and any further steps required before going live.
+* **结果文档**：记录每个测试用例的结果，并向客户提供总结报告。
+* **评审会议**：召开评审会议，讨论测试结果以及上线前所需的后续步骤。
 
-### 7. Go Live Preparation
+### 7. 上线准备
 
-* **Training Refresh**: Offer a refresher training session if necessary.
-* **Support Plan**: Develop a support plan for the initial go-live phase to ensure smooth transition.
-
+* **复习培训**：如有需要，提供复习培训。
+* **支持计划**：制定初期上线阶段的支持计划，确保平稳过渡。

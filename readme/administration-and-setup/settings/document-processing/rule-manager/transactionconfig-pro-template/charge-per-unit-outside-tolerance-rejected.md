@@ -1,37 +1,37 @@
-# Case 15: Charge Line - Charge Per Unit Outside Tolerance (Rejected)
+# 案例 15：费用行 - 单位费用超出容差（已拒绝）
 
-## Scenario:
+## 场景：
 
-The header charge per unit is outside tolerance and has not been approved.
+抬头费用的单位费用超出容差，且尚未获批。
 
-## Action:
+## 操作：
 
-The system adjusts the header charge to match the purchase order, processing the transaction accordingly, and generating any necessary notes.
+系统会调整抬头费用，使其与采购订单一致，并据此处理交易，同时生成所需的备注。
 
-## Example:
+## 示例：
 
-* **Purchase Order (PO):**
-  * Header Charge Per Unit: $4.00
-  * Quantity: 1,500 units
-  * Total Header Charge Amount: $6,000.00
-* **Invoice Received:**
-  * Header Charge Per Unit: $5.00 (outside tolerance of 25%, rejected)
-  * Quantity: 1,500 units
-  * Total Header Charge Amount: $7,500.00
-* **Tolerance Levels:**
-  * Header Charge Per Unit Tolerance: ±5%
+* **采购订单 (PO)：**
+  * 抬头单位费用：$4.00
+  * 数量：1,500 件
+  * 抬头费用总额：$6,000.00
+* **收到的发票：**
+  * 抬头单位费用：$5.00（超出 25% 的容差，已拒绝）
+  * 数量：1,500 件
+  * 抬头费用总额：$7,500.00
+* **容差级别：**
+  * 抬头单位费用容差：±5%
 
-Since the header charge per unit ($5.00) exceeds the acceptable tolerance range of 5% and has not been approved, the system will:
+由于抬头单位费用（$5.00）超出 5% 的可接受容差范围，且尚未获批，系统将：
 
-1. **Reject the Invoiced Header Charge Per Unit:** The system does not accept the invoiced header charge per unit of $5.00 due to the variance exceeding the tolerance limit.
-2. **Adjust the Header Charge Per Unit:** The system adjusts the charge per unit to match the original purchase order or the approved charge per unit:
-   * Adjusted Header Charge Per Unit = $4.00 (from PO)
-3. **Recalculate the Total Header Charge Amount:** The system recalculates the total charge amount based on the adjusted charge per unit:
-   * **Corrected Total Header Charge Amount = Quantity × Adjusted Header Charge Per Unit**
-   * **Corrected Total Header Charge Amount = 1,500 units × $4.00 = $6,000.00**
-4. **Generate a Credit Note:** Since the original invoice total was higher than the corrected total, the system generates a credit note for the overcharged amount:
-   * **Credit Note Amount = Original Invoice Total - Corrected Total Header Charge Amount**
-   * **Credit Note Amount = $7,500.00 - $6,000.00 = $1,500.00**
-5. **Process the Invoice:** The system processes the invoice with the corrected total charge amount of $6,000.00 and issues a credit note for $1,500.00 to account for the overcharged amount.
+1. **拒绝发票中的抬头单位费用：**由于差异超出容差限额，系统不接受发票中的 $5.00 抬头单位费用。
+2. **调整抬头单位费用：**系统会将单位费用调整为与原采购订单或已获批的单位费用一致：
+   * 调整后的抬头单位费用 = $4.00（来自采购订单）
+3. **重新计算抬头费用总额：**系统会根据调整后的单位费用重新计算费用总额：
+   * **更正后的抬头费用总额 = 数量 × 调整后的抬头单位费用**
+   * **更正后的抬头费用总额 = 1,500 件 × $4.00 = $6,000.00**
+4. **生成贷项通知单：**由于原发票总额高于更正后的总额，系统会针对多收金额生成贷项通知单：
+   * **贷项通知单金额 = 原发票总额 - 更正后的抬头费用总额**
+   * **贷项通知单金额 = $7,500.00 - $6,000.00 = $1,500.00**
+5. **处理发票：**系统会按照更正后的 $6,000.00 费用总额处理发票，并针对多收金额开具 $1,500.00 的贷项通知单。
 
-This approach ensures that the transaction is aligned with the original terms of the purchase order, maintaining accurate financial processing while correcting any overcharges.
+这种处理方式可确保交易符合采购订单的原始条款，在更正多收费用的同时，保持财务处理准确。

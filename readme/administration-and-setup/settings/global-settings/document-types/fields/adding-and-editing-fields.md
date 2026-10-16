@@ -1,84 +1,84 @@
-# Adding and Editing Fields
+# 添加和编辑字段
 
-## Here are the steps to add a new field or modify existing fields in DocBits, including details on how to access advanced configuration options:
+## 以下是如何在 DocBits 中添加新字段或修改现有字段的步骤，包括如何访问高级配置选项：
 
-### Add a new field
+### 添加新字段
 
-* Log in and access Document Management:
+* 登录并访问文档管理：
 
-<figure><img src="../../../../../.gitbook/assets/settings_navigation_step1.png" alt="Settings Navigation Step 1"><figcaption><p>Settings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/settings_navigation_step1.png" alt="设置导航步骤 1"><figcaption><p>设置</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/settings_document_types_step2.png" alt="Settings Document Types Step 2"><figcaption><p>Settings Document Types</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/settings_document_types_step2.png" alt="设置文档类型步骤 2"><figcaption><p>设置文档类型</p></figcaption></figure>
 
-**Add a new field:**
+**添加新字段：**
 
-* Click the "Create Field" option.
+* 点击“Create Field”选项。
 
-<figure><img src="../../../../../.gitbook/assets/create_field_button.png" alt="Create Field Button"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/create_field_button.png" alt="创建字段按钮"><figcaption></figcaption></figure>
 
-**Basic Configuration:**
+**基本配置：**
 
-<figure><img src="../../../../../.gitbook/assets/field_basic_configuration_form.png" alt="Field Basic Configuration Form" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/field_basic_configuration_form.png" alt="字段基本配置表单" width="375"><figcaption></figcaption></figure>
 
-* **Name**
-  * Choose a meaningful and descriptive name.
-  * The name must be unique.
-  * <mark style="color:red;">**Note:**</mark> **Once created, the name cannot be changed.**
-* **Title**
-  * This is the displayed name of the field.
-  * It defines how the field appears in the user interface.
-  * <mark style="color:red;">**Note:**</mark> **The title can be changed later if needed.**
-*   **Select Field Type**
+* **名称**
+  * 选择一个有意义且能清楚描述字段的名称。
+  * 名称必须唯一。
+  * <mark style="color:red;">**注意：**</mark> **创建后，名称无法更改。**
+* **标题**
+  * 这是字段显示的名称。
+  * 它定义了字段在用户界面中的显示方式。
+  * <mark style="color:red;">**注意：**</mark> **之后可以根据需要更改标题。**
+*   **选择字段类型**
 
-    * Choose the type of field from a dropdown list.
-    * The available field types include various options to suit different data entry needs.
-    * <mark style="color:red;">**Note:**</mark> **Once created, the Type cannot be changed.**
+    * 从下拉列表中选择字段类型。
+    * 可用的字段类型包括多种选项，可满足不同的数据录入需求。
+    * <mark style="color:red;">**注意：**</mark> **创建后，类型无法更改。**
 
-    <figure><img src="../../../../../.gitbook/assets/field_type_selection.png" alt="Field Type Selection" width="375"><figcaption></figcaption></figure>
-* **Optional: Enable Charges Element**
-  * A checkbox labeled **Enable Charges Element** can be selected.
-  * If checked, you must select a charge element from a dropdown list.
-  * **Important:** Charge elements must be configured beforehand.
-    * [Charge Elements Configuration](../../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)
+    <figure><img src="../../../../../.gitbook/assets/field_type_selection.png" alt="字段类型选择" width="375"><figcaption></figcaption></figure>
+* **可选：启用费用元素**
+  * 可以勾选标记为 **Enable Charges Element** 的复选框。
+  * 勾选后，必须从下拉列表中选择一个费用元素。
+  * **重要：**必须事先配置费用元素。
+    * [费用元素配置](../../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)
 
-**Advanced Configuration:**
+**高级配置：**
 
-* Here you can set other properties such as validation rules, match values, read-only mode, hiding, and OCR settings.
+* 在此可以设置验证规则、匹配值、只读模式、隐藏选项和 OCR 设置等其他属性。
 
-<figure><img src="../../../../../.gitbook/assets/field_advanced_configuration_tab.png" alt="Field Advanced Configuration Tab"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/field_advanced_configuration_tab.png" alt="字段高级配置选项卡"><figcaption></figcaption></figure>
 
-**Save:**
+**保存：**
 
-* After you have made all the necessary configurations, click "Save" or a similar button to create the new field.
+* 完成所有必要配置后，点击“Save”或类似按钮以创建新字段。
 
-<figure><img src="../../../../../.gitbook/assets/field_save_button_small.png" alt="Field Save Button" width="75"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/field_save_button_small.png" alt="字段保存按钮" width="75"><figcaption></figcaption></figure>
 
-### Edit an existing field
+### 编辑现有字段
 
-**Access field editing:**
+**访问字段编辑：**
 
-* Navigate to the list of existing fields and find the field you want to edit.
+* 前往现有字段列表，找到要编辑的字段。
 
-<figure><img src="../../../../../.gitbook/assets/field_list_view.png" alt="Field List View"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/field_list_view.png" alt="字段列表视图"><figcaption></figcaption></figure>
 
-**Select a field:**
+**选择字段：**
 
-* Click the appropriate field to access the editing options.
+* 点击相应字段以访问编辑选项。
 
-<figure><img src="../../../../../.gitbook/assets/field_edit_selection.png" alt="Field Edit Selection"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/field_edit_selection.png" alt="字段编辑选择"><figcaption></figcaption></figure>
 
-**Change the configuration:**
+**更改配置：**
 
-* Change the properties of the field as needed. This may include changing the name, the field type, adding or removing validation rules, setting match values, or adjusting other advanced settings.
+* 根据需要更改字段属性。这可能包括更改名称或字段类型、添加或移除验证规则、设置匹配值，或调整其他高级设置。
 
-<mark style="color:red;">**Note:**</mark> If you change the **Title** of a field, you must delete and re-add the field in the layout builder for the changes to take effect.
+<mark style="color:red;">**注意：**</mark> 如果更改字段的 **Title**，必须在布局构建器中删除并重新添加该字段，所做更改才会生效。
 
-<figure><img src="../../../../../.gitbook/assets/field_edit_configuration_form.png" alt="Field Edit Configuration Form"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/field_edit_configuration_form.png" alt="字段编辑配置表单"><figcaption></figcaption></figure>
 
-**Save:**
+**保存：**
 
-* Click "Save" to save the changes you made to the field.
+* 点击“Save”以保存对字段所做的更改。
 
-<figure><img src="../../../../../.gitbook/assets/field_save_settings_button.png" alt="Field Save Settings Button" width="260"><figcaption><p>Save Settings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/field_save_settings_button.png" alt="字段保存设置按钮" width="260"><figcaption><p>保存设置</p></figcaption></figure>
 
-By providing steps to add new fields and edit existing fields, as well as access to advanced configuration options, you can maximize the flexibility and adaptability of your document processing system. This allows you to structure and process your data exactly as you need it.
+按照这些步骤添加新字段和编辑现有字段，并使用高级配置选项，可以最大限度地提高文档处理系统的灵活性和适应性。这样，您就可以根据需要组织和处理数据。

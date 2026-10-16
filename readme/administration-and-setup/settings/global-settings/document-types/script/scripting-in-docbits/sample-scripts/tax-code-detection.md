@@ -1,14 +1,14 @@
-# Tax Code Detection
+# 税码检测
 
-## What does this script do?
+## 此脚本的作用是什么？
 
-Automatically determines the correct tax code based on the document's fulltext content and tax/net amounts. Detects reverse charge scenarios, tax-free invoices, and calculates the tax rate to assign the appropriate code (e.g., S1 for 19%, S2 for 7%).
+根据文档全文内容以及税额/净额，自动确定正确的税码。检测反向征税情形和免税发票，并计算税率以分配相应的税码（例如，19% 对应 S1，7% 对应 S2）。
 
-## Trigger
+## 触发条件
 
-`AFTER_FORMATTING` on document type **INVOICE**
+文档类型为 **INVOICE** 时触发 `AFTER_FORMATTING`
 
-## Full Script
+## 完整脚本
 
 ```python
 # Get document fulltext and amounts
@@ -42,16 +42,16 @@ elif net > 0:
         set_field_value(document_data, "tax_code", "S3")    # Other rate
 ```
 
-## Step-by-Step Explanation
+## 分步说明
 
-1. **Read fulltext** with `get_document_content()` for keyword detection
-2. **Read tax and net amounts** for tax rate calculation
-3. **Check for reverse charge** keywords in the document text (German and English)
-4. **Check for zero tax** — if tax amount is 0, assign tax-free code
-5. **Calculate tax rate** from tax/net ratio and assign the matching code
+1. 使用 `get_document_content()` **读取全文**以检测关键词
+2. **读取税额和净额**以计算税率
+3. 在文档文本中**检查反向征税**关键词（德语和英语）
+4. **检查零税额**——如果税额为 0，则分配免税税码
+5. 根据税额/净额比值**计算税率**并分配匹配的税码
 
-## Functions Used
+## 使用的函数
 
-- [get\_document\_content()](../business-logic-functions.md#get\_document\_content) — Read OCR fulltext
-- [get\_field\_value()](../field-functions.md#get\_field\_value) — Read field values
-- [set\_field\_value()](../field-functions.md#set\_field\_value) — Set tax code
+- [get\_document\_content()](../business-logic-functions.md#get\_document\_content) — 读取 OCR 全文
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — 读取字段值
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — 设置税码

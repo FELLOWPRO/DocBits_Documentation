@@ -1,51 +1,51 @@
 ---
-description: AUNZ PINT SELF-BILLING electronic document support in DocBits
+description: DocBits 对 AUNZ PINT SELF-BILLING 电子文档的支持
 ---
 
 # 🇦🇺 AUNZ PINT SELF-BILLING
 
-| Property             | Value                   |
+| 属性 | 值 |
 | -------------------- | ----------------------- |
-| **Country / Region** | Australia / New Zealand |
-| **Document Types**   | Self-Billed Invoice     |
-| **Format**           | UBL 2.1 XML             |
-| **Standard**         | PINT A-NZ Self-Billing  |
-| **Locale**           | `en_AU`                 |
+| **国家 / 地区** | 澳大利亚 / 新西兰 |
+| **文档类型** | 自开票发票 |
+| **格式** | UBL 2.1 XML |
+| **标准** | PINT A-NZ Self-Billing |
+| **区域设置** | `en_AU` |
 
-AUNZ PINT Self-Billing is the self-billing variant of the A-NZ Peppol International invoice model. In self-billing scenarios, the buyer creates the invoice on behalf of the supplier. This document type follows the same PINT A-NZ structure but with reversed party roles — the `AccountingCustomerParty` becomes the invoicing party and the `AccountingSupplierParty` is the party being billed.
+AUNZ PINT Self-Billing 是 A-NZ Peppol 国际发票模型的自开票变体。在自开票场景中，买方代表供应商创建发票。此文档类型遵循相同的 PINT A-NZ 结构，但双方角色相反——`AccountingCustomerParty` 成为开票方，`AccountingSupplierParty` 则成为被开票方。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件 | 状态 |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览 | ✅ 支持 |
+| 字段提取 | ✅ 支持 |
+| 转换 | ✅ 支持 |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="AUNZ PINT Self-Billing invoice preview in DocBits"><figcaption><p>Default DocBits preview for an AUNZ PINT Self-Billing invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="DocBits 中的 AUNZ PINT Self-Billing 发票预览"><figcaption><p>AUNZ PINT Self-Billing 发票的 DocBits 默认预览</p></figcaption></figure>
 
-## Field Mapping
+## 字段映射
 
-The field mapping is identical to [AUNZ PINT](aunz-pint.md) with the following key difference:
+字段映射与 [AUNZ PINT](aunz-pint.md) 相同，主要区别如下：
 
-* **Party roles are reversed**: In self-billing, the buyer is the invoicing party and the supplier is the party being billed
-* The `CustomizationID` contains `urn:peppol.org:pint:selfbilling-1@aunz` instead of `billing-1@aunz`
+* **双方角色相反**：在自开票中，买方是开票方，供应商是被开票方
+* `CustomizationID` 包含 `urn:peppol.org:pint:selfbilling-1@aunz`，而不是 `billing-1@aunz`
 
-For the complete field mapping table, see [AUNZ PINT](aunz-pint.md#field-mapping).
+完整字段映射表请参见 [AUNZ PINT](aunz-pint.md#field-mapping)。
 
-## Classification Rule
+## 分类规则
 
-DocBits detects self-billing documents by matching the `CustomizationID`:
+DocBits 通过匹配 `CustomizationID` 来检测自开票文档：
 
 ```
 urn:peppol.org:pint:selfbilling-1@aunz
 ```
 
-Both self-billing and regular billing patterns classify under the `PINT A-NZ` electronic document type.
+自开票和常规开票模式都归类为 `PINT A-NZ` 电子文档类型。
 
-## Related
+## 相关内容
 
 * [AUNZ PINT](aunz-pint.md)
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

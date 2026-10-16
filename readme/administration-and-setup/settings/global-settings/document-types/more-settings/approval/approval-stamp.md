@@ -1,23 +1,23 @@
-# Approval Stamp
+# 审批印章
 
-An approval stamp is an annotation added during document approval when the option is enabled for that document type. It is useful when a reviewer needs to see who approved a document and when. The previous page showed six screenshots from an older interface and treated the stamp, IDM export and PDF download options as already verified together. Check each result in your own workflow before relying on it.
+启用该选项后，审批文档时会添加审批印章。当审核者需要查看谁在何时审批了文档时，此功能很有用。上一页展示了旧版界面的六张截图，并将印章、IDM 导出和 PDF 下载选项一并视为已验证。依赖这些结果之前，请先在自己的工作流中逐项检查。
 
-## Find the option
+## 查找此选项
 
-1. With an administrator account, open **Settings → Document Types**. Find the type you want to configure, such as **Invoice**, and select the **gear icon** on that card. The gear opens **More Settings** for that document type; **Layouts** and **Fields** open different editors.
+1. 使用管理员帐户打开 **Settings → Document Types**。找到要配置的类型，例如 **Invoice**，然后选择该卡片上的**齿轮图标**。齿轮图标会打开该文档类型的 **More Settings**；**Layouts** 和 **Fields** 会打开不同的编辑器。
 
-   <figure><img src="../../../../../../.gitbook/assets/dbdc126-document-types-en.png" alt="English DocBits Document Types page with an Invoice card and its gear icon for More Settings"><figcaption><p>Open the gear on the relevant document type.</p></figcaption></figure>
+   <figure><img src="../../../../../../.gitbook/assets/dbdc126-document-types-en.png" alt="英文 DocBits“Document Types”页面，显示一个 Invoice 卡片及其用于打开 More Settings 的齿轮图标"><figcaption><p>点击相关文档类型上的齿轮图标。</p></figcaption></figure>
 
-2. In **More Settings**, expand **Approval & Rejection**. Locate the **Approval Stamp** switch next to **Approve before export**, **Second Approval** and **Approval History**. The screenshot shows the synthetic **DocBits Documentation Test A** organisation with the stamp **off**. It does not show a stamped document.
+2. 在 **More Settings** 中展开 **Approval & Rejection**。找到 **Approval Stamp** 开关，它位于 **Approve before export**、**Second Approval** 和 **Approval History** 旁边。截图显示的是合成的 **DocBits Documentation Test A** 组织，审批印章处于**关闭**状态。截图未展示带印章的文档。
 
-   <figure><img src="../../../../../../.gitbook/assets/dbdc126-approval-stamp-en.png" alt="English Invoice More Settings page with Approval and Rejection expanded and Approval Stamp switched off"><figcaption><p>Check the Approval Stamp setting for the selected document type.</p></figcaption></figure>
+   <figure><img src="../../../../../../.gitbook/assets/dbdc126-approval-stamp-en.png" alt="英文 Invoice More Settings 页面，Approval and Rejection 已展开，Approval Stamp 处于关闭状态"><figcaption><p>检查所选文档类型的 Approval Stamp 设置。</p></figcaption></figure>
 
-3. Enable the switch only after agreeing how approvals and exports work in your organisation. Keep a record of the previous setting so you can verify the effect on a test invoice.
+3. 只有在组织内就审批和导出方式达成一致后，才启用此开关。记录更改前的设置，以便验证其对测试发票的影响。
 
-## Verify an approval
+## 验证审批印章
 
-Send a synthetic invoice of this document type through the configured approval workflow. On the **Ready for approval** screen, approve it with an authorised test account. The current DocBits web client checks the Approval Stamp option during approval and adds a stamp annotation with the approver name and date. Reopen the approved document and inspect the annotation and the downloaded PDF that your workflow actually uses. If the stamp is absent, check the document type, approval status, setting and export configuration.
+将此文档类型的合成发票提交到已配置的审批工作流。在 **Ready for approval** 页面上，使用获授权的测试帐户审批该发票。当前 DocBits Web 客户端会在审批时检查 Approval Stamp 选项，并添加包含审批人姓名和日期的印章注释。重新打开已审批的文档，检查其中的注释以及工作流实际使用的下载版 PDF。如果未显示印章，请检查文档类型、审批状态、相关设置和导出配置。
 
-An approval stamp is separate from **Second Approval** and **Approval History**. Enabling one does not prove that the others are configured. The available dashboard download actions and IDM export format depend on the environment and were not verified for this page, so this guide does not promise specific download menu labels or automatic IDM output.
+审批印章与 **Second Approval** 和 **Approval History** 相互独立。启用其中一项并不能证明其他选项也已配置。可用的仪表板下载操作和 IDM 导出格式取决于具体环境，本页面尚未验证这些内容，因此本指南不承诺特定的下载菜单标签或自动 IDM 输出。
 
-The two new screenshots were visually checked in the English Test A Sandbox. No switch was changed and no document was approved or exported during this check; the stamped end state needs a dedicated synthetic approved invoice.
+已在英文 Test A Sandbox 中对这两张新截图进行了目视检查。检查期间未更改开关，也未审批或导出任何文档；最终的带印章状态需要使用专门的合成已审批发票进行验证。

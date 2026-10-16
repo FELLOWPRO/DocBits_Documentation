@@ -1,7 +1,7 @@
-# Supplier Layout
+# 供应商布局
 
-<figure><img src="../../../.gitbook/assets/supplier_layout.png" alt="Supplier Layout"><figcaption><p>Supplier Layout Page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_layout.png" alt="供应商布局"><figcaption><p>供应商布局页面</p></figcaption></figure>
 
-This is where you decide what information you want to include and define what information is needed. You can easily design your layout using the drag-and-drop functions.
+在此页面，您可以决定要包含哪些信息，并定义需要哪些信息。您可以使用拖放功能轻松设计布局。
 
-You can use it to create layouts for supplier users and for supplier management.
+您可以使用此功能为供应商用户和供应商管理创建布局。

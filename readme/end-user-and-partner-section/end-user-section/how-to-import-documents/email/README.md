@@ -3,46 +3,46 @@ hidden: true
 noIndex: true
 ---
 
-# Email
+# 电子邮件
 
-DocBits can import documents from email in two ways. Both are configured under **Settings → Import** (Document Processing).
+DocBits 可以通过两种方式从电子邮件导入文档。两种方式都在 **设置 → 导入**（文档处理）下配置。
 
-## Method 1 — Email Import (connect a mailbox)
+## 方法 1 — 电子邮件导入（连接邮箱）
 
-Connect an email account and DocBits automatically imports documents as new emails arrive. On the Import page, open the **Email Import** section and click **+ New**.
+连接电子邮件帐户后，DocBits 会在收到新邮件时自动将文档导入为新邮件。在“导入”页面中，展开 **电子邮件导入** 部分并点击 **+ 新建**。
 
-<figure><img src="../../../../.gitbook/assets/email_import_section.png" alt="Email Import section"><figcaption>Email Import — connect a mailbox for automatic document import</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/email_import_section.png" alt="电子邮件导入部分"><figcaption>电子邮件导入 — 连接邮箱以自动导入文档</figcaption></figure>
 
-Then choose the protocol for your mailbox:
+然后选择邮箱使用的协议：
 
-* **IMAP** — see [IMAP](imap.md)
-* **OAuth (Office 365)** — see [OAuth Office365](oauth-office365.md)
+* **IMAP** — 请参阅 [IMAP](imap.md)
+* **OAuth（Office 365）** — 请参阅 [OAuth Office365](oauth-office365.md)
 
-## Method 2 — Inbound Emails (forward to DocBits)
+## 方法 2 — 收件电子邮件（转发至 DocBits）
 
-Forward — or send — emails directly to your organisation's unique inbound address and DocBits imports the attachments automatically. No mailbox connection is required. Open the **Inbound Emails** section on the Import page.
+将电子邮件转发或直接发送到您组织专属的收件地址，DocBits 会自动导入附件。无需连接邮箱。在“导入”页面中打开 **收件电子邮件** 部分。
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_section.png" alt="Inbound Emails section"><figcaption>Inbound Emails — forward documents to your DocBits address</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inbound_emails_section.png" alt="收件电子邮件部分"><figcaption>收件电子邮件 — 将文档转发到您的 DocBits 地址</figcaption></figure>
 
-* **Info / E-Mail** — your organisation's unique inbound address (format `<org-id>@inbound.docbits.com`). Forward your documents to this address; use the copy icon to copy it.
-* **Import Document only from predefined E-Mail(s)** — when enabled, only emails from the senders you add to the whitelist are imported; emails from any other sender are ignored.
-* **Reply to this email if import can not be done** — sends an automatic reply to the sender when the import fails.
-* **Notify sender when import fails** — notifies the sender if their email could not be imported.
-* **Logs** — open the inbound email processing log. Click **Save** to apply your changes.
+* **信息 / 电子邮件** — 您组织专属的收件地址（格式为 `<org-id>@inbound.docbits.com`）。将文档转发到此地址；点击复制图标即可复制地址。
+* **仅从预定义的电子邮件地址导入文档** — 启用后，系统只会导入来自您添加到白名单的发件人的电子邮件；其他发件人的邮件将被忽略。
+* **如果无法导入，请回复此电子邮件** — 导入失败时自动向发件人发送回复。
+* **导入失败时通知发件人** — 如果发件人的电子邮件无法导入，则通知发件人。
+* **日志** — 打开收件电子邮件处理日志。点击 **保存** 以应用更改。
 
-## Supported document attachments
+## 支持的文档附件
 
-Both email import methods accept these document attachments:
+两种电子邮件导入方式都支持以下文档附件：
 
-| Format | File extensions | Typical use |
+| 格式 | 文件扩展名 | 常见用途 |
 | --- | --- | --- |
-| PDF | `.pdf` | Invoices and other PDF documents |
-| TIFF | `.tif`, `.tiff` | Scanned documents |
-| XML | `.xml` | Structured electronic documents |
-| EDI / purchase order data | `.edi`, `.purchaseorder` | Electronic data interchange and purchase orders |
+| PDF | `.pdf` | 发票及其他 PDF 文档 |
+| TIFF | `.tif`、`.tiff` | 扫描文档 |
+| XML | `.xml` | 结构化电子文档 |
+| EDI / 采购订单数据 | `.edi`、`.purchaseorder` | 电子数据交换和采购订单 |
 
-If a forwarding service labels a PDF, TIFF, or XML file as a generic attachment, DocBits can identify it from the file content or a known file extension. Forwarded `.eml` messages can also contain supported documents; DocBits extracts those inner attachments before import.
+如果转发服务将 PDF、TIFF 或 XML 文件标记为通用附件，DocBits 可以根据文件内容或已知文件扩展名识别该文件。转发的 `.eml` 邮件也可能包含受支持的文档；DocBits 会在导入前提取其中的附件。
 
-Images such as PNG, JPG, GIF, and BMP are not imported as documents. Inline signature images and logos in forwarded email are skipped. Office files such as Word, Excel, and PowerPoint are not supported by these email import methods.
+PNG、JPG、GIF 和 BMP 等图像不会作为文档导入。转发邮件中的内嵌签名图片和徽标会被跳过。Word、Excel 和 PowerPoint 等 Office 文件不受这些电子邮件导入方式支持。
 
-For forwarded emails, check **Logs** under **Inbound Emails** if a document is missing. When **Notify sender when import fails** is enabled, the sender receives an explanation and a link to this page. For a connected mailbox, use the [IMAP](imap.md) or [OAuth (Office 365)](oauth-office365.md) setup guide.
+对于转发的电子邮件，如果文档缺失，请检查 **收件电子邮件** 下的 **日志**。启用 **导入失败时通知发件人** 后，发件人会收到说明以及指向此页面的链接。对于已连接的邮箱，请参阅 [IMAP](imap.md) 或 [OAuth（Office 365）](oauth-office365.md) 设置指南。

@@ -1,39 +1,36 @@
-# Manage training data
+# 管理训练数据
 
-## Manage existing training data, including adding, editing, or removing records.
-
-
-
-**To effectively manage training data, you can take the following steps:**&#x20;
-
-**Adding new records:**&#x20;
-
-* Collect new documents to serve as training data for your model.&#x20;
-* Make sure these documents are a representative sample of the different types of data the model is designed to process.&#x20;
-* Upload the new records to your training data repository.&#x20;
-
-**Editing existing records**:&#x20;
-
-* Regularly review your existing training data and update it as needed. This may include editing document metadata, adding additional labels, or removing erroneous or non-representative records.&#x20;
-
-**Removing records:**&#x20;
-
-* Identify outdated, inaccurate, or no longer relevant records and remove them from your training data set.&#x20;
-* Make sure you have a clear process for deciding which records to remove and document that process.&#x20;
-
-**Training data versioning:**&#x20;
-
-* Implement a version control system for your training data to track changes and keep a clear history of dataset changes. This allows you to restore older versions of the training data when needed and track changes.&#x20;
-
-**Training data security:**&#x20;
-
-* Ensure your training data is appropriately protected, especially if it contains sensitive or confidential information. Implement access controls to ensure only authorized users can access the training data, and encrypt the data during transfer and storage.&#x20;
-
-**Documentation and tracking:**&#x20;
-
-* Document all changes to your training data, including adding, editing, and removing datasets. This allows you to track the history of your training data and ensure you have current and relevant data for training your model.&#x20;
-
-By regularly managing and updating your training data, you can ensure that your model is trained with current and representative data and achieves optimal performance.
+## 管理现有训练数据，包括添加、编辑或移除记录。
 
 
 
+**有效管理训练数据，可以采取以下步骤：**&#x20;
+
+**添加新记录：**&#x20;
+
+* 收集新文档，作为模型的训练数据。&#x20;
+* 确保这些文档能够代表模型所要处理的不同类型的数据。&#x20;
+* 将新记录上传到训练数据存储库。&#x20;
+
+**编辑现有记录**：&#x20;
+
+* 定期检查现有训练数据，并根据需要进行更新。这可能包括编辑文档元数据、添加更多标签，或移除有错误或缺乏代表性的记录。&#x20;
+
+**移除记录：**&#x20;
+
+* 找出过时、不准确或不再相关的记录，并将其从训练数据集中移除。&#x20;
+* 确保有明确的记录移除决策流程，并记录该流程。&#x20;
+
+**训练数据版本管理：**&#x20;
+
+* 为训练数据实施版本控制系统，以跟踪更改并清晰记录数据集的变更历史。这样，您可以在需要时恢复训练数据的旧版本，并跟踪更改。&#x20;
+
+**训练数据安全：**&#x20;
+
+* 确保训练数据得到妥善保护，尤其是在其中包含敏感或机密信息时。实施访问控制，确保只有获授权的用户才能访问训练数据，并在传输和存储过程中对数据进行加密。&#x20;
+
+**文档记录与跟踪：**&#x20;
+
+* 记录训练数据的所有更改，包括添加、编辑和移除数据集。这样，您可以跟踪训练数据的历史，并确保用于训练模型的数据始终是最新且相关的。&#x20;
+
+定期管理和更新训练数据，可以确保模型使用最新且具有代表性的数据进行训练，并获得最佳性能。

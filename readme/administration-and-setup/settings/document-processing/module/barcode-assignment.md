@@ -1,69 +1,69 @@
-# Barcode Assignment
+# 条码分配
 
-### Overview
+### 概述
 
-The **Barcode Assignment** setting adds a barcode tool to the **document validation screen**. It reads the barcodes and QR codes DocBits found in a document and lets you **assign their values to the document’s fields** — for example, filling a purchase-order, reference or delivery-note number from a barcode instead of typing it.
+**条码分配**设置会在**文档验证界面**中添加一个条码工具。该工具会读取 DocBits 在文档中找到的条码和 QR 码，并让您**将其值分配给文档字段**，例如，从条码中填入采购订单号、参考编号或送货单号，无需手动输入。
 
-This setting is **disabled by default**.
+此设置默认**处于禁用状态**。
 
-### What You Get When You Enable It
+### 启用后可用的功能
 
-Once the setting is on, a new **barcode button** (a QR-code icon) appears in the toolbar on the right-hand side of the **validation screen** (`/field_validation_v1/…`). This is the entry point to the whole feature — without the setting, the icon is hidden.
+启用此设置后，**验证界面**（`/field_validation_v1/…`）右侧工具栏中会出现一个新的**条码按钮**（QR 码图标）。这是使用整个功能的入口；如果未启用此设置，该图标会被隐藏。
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_validation_icon.png" alt="The barcode (QR-code) icon in the validation toolbar"><figcaption><p>When the setting is enabled, the barcode icon appears in the validation toolbar.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/barcode_assignment_validation_icon.png" alt="验证工具栏中的条码（QR 码）图标"><figcaption><p>启用此设置后，验证工具栏中会显示条码图标。</p></figcaption></figure>
 
-Here is the icon in context on the validation screen, next to the document being reviewed:
+以下是在验证界面中查看文档时的图标位置：
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_validation_screen.png" alt="Validation screen with the barcode icon available"><figcaption><p>The validation screen — the barcode icon (highlighted, right toolbar) is only shown when Barcode Assignment is enabled.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/barcode_assignment_validation_screen.png" alt="验证界面中显示可用条码图标"><figcaption><p>验证界面——只有启用条码分配后才会显示条码图标（已突出显示，位于右侧工具栏）。</p></figcaption></figure>
 
-### How Barcodes Are Read
+### 条码的读取方式
 
-DocBits detects the barcodes during document processing and offers their decoded values for assignment. A single document can carry several barcode types — for instance a **QR code**, a **Code 128** and an **EAN-13** — each encoding a different value such as a purchase order, an invoice number or a supplier GLN.
+DocBits 会在文档处理期间检测条码，并提供解码后的值供您分配。单个文档中可能包含多种条码类型，例如 **QR 码**、**Code 128** 和 **EAN-13**，每种条码编码的值都可能不同，例如采购订单号、发票编号或供应商 GLN。
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_demo_invoice.png" alt="Demo invoice carrying several barcode types"><figcaption><p>Example DocBits demo invoice carrying three barcode types (QR code → purchase order, Code 128 → invoice number, EAN-13 → supplier GLN), each encoding a value you can map to a field.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/barcode_assignment_demo_invoice.png" alt="包含多种条码类型的演示发票"><figcaption><p>DocBits 演示发票示例，包含三种条码类型（QR 码 → 采购订单，Code 128 → 发票编号，EAN-13 → 供应商 GLN），每种条码都编码了一个可映射到字段的值。</p></figcaption></figure>
 
 {% hint style="info" %}
-Which barcode types are detected is controlled by the **Bar-Code / QR Code Extraction** setting (`Barcode Extraction Types`). If the dialog shows *“no barcodes extracted found”*, make sure barcode extraction is enabled and that the expected types (e.g. `QRCODE`, `CODE128`, `EAN13`) are selected. See [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).
+检测哪些条码类型由**条码/QR 码提取**设置（`Barcode Extraction Types`）控制。如果对话框显示 *“no barcodes extracted found”*，请确认已启用条码提取，并已选择预期的类型（例如 `QRCODE`、`CODE128`、`EAN13`）。请参阅[条码/QR 码提取](bar-code-qr-code-extraction/README.md)。
 {% endhint %}
 
-### Using the Barcode Assignment Dialog
+### 使用条码分配对话框
 
-1. Open a document on the **validation screen**.
-2. Click the **barcode icon** in the right-hand toolbar.
-3. The **Barcode Assignment** dialog lists every barcode DocBits detected in the document, shown as `Barcode <n> : <value>`.
+1. 在**验证界面**中打开一份文档。
+2. 点击右侧工具栏中的**条码图标**。
+3. **条码分配**对话框会列出 DocBits 在文档中检测到的所有条码，显示为 `Barcode <n> : <value>`。
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_dialog.png" alt="Barcode Assignment dialog listing the detected barcodes"><figcaption><p>The Barcode Assignment dialog lists each detected barcode with a dropdown to choose the target field.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/barcode_assignment_dialog.png" alt="列出检测到的条码的条码分配对话框"><figcaption><p>条码分配对话框会列出每个检测到的条码，并提供一个下拉菜单以选择目标字段。</p></figcaption></figure>
 
-4. For each barcode, open its dropdown and pick the field the value should go into.
+4. 对于每个条码，打开其下拉菜单并选择要填入该值的字段。
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_options.png" alt="Choosing the target field for a barcode"><figcaption><p>Each barcode can be mapped to any document field — e.g. Purchase Order, Invoice number, Supplier ID.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_options.png" alt="选择条码的目标字段"><figcaption><p>每个条码都可以映射到任意文档字段，例如“采购订单”、“发票编号”或“供应商 ID”。</p></figcaption></figure>
 
-5. As soon as you select a field, that field is filled with the barcode’s value.
+5. 选择字段后，该字段会立即填入条码的值。
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_mapped.png" alt="Barcode mapped to the Purchase Order field"><figcaption><p>After selecting a field (here Purchase Order), the field is populated with the barcode value.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_mapped.png" alt="条码已映射到“采购订单”字段"><figcaption><p>选择字段（此处为“采购订单”）后，该字段会填入条码值。</p></figcaption></figure>
 
-### How to Enable
+### 如何启用
 
-1. Go to **Settings**.
-2. Select **Document Processing**.
-3. Select **Module**.
-4. Open the **Document Type** section.
-5. Find **Barcode Assignment** and switch the toggle on.
+1. 前往**设置**。
+2. 选择**文档处理**。
+3. 选择**模块**。
+4. 打开**文档类型**部分。
+5. 找到**条码分配**并打开开关。
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_toggle.png" alt="Barcode Assignment toggle"><figcaption><p>The Barcode Assignment toggle in Settings → Document Processing → Module.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/barcode_assignment_toggle.png" alt="条码分配开关"><figcaption><p>“设置” → “文档处理” → “模块”中的条码分配开关。</p></figcaption></figure>
 
-### Benefits
+### 优势
 
-* **Faster, error-free entry**: Take values straight from a barcode instead of reading and typing them by hand.
-* **Fewer typos**: A scanned value is exactly what is encoded in the barcode.
-* **Stays in control**: You decide which barcode goes into which field during validation.
+* **录入更快、更准确**：直接从条码获取值，无需人工读取和输入。
+* **减少输入错误**：扫描得到的值与条码中编码的内容完全一致。
+* **保持掌控**：您可以在验证过程中决定将哪个条码分配给哪个字段。
 
-### When to Use This Feature
+### 适用场景
 
-* **Documents with barcodes**: When your documents carry barcodes/QR codes whose values belong in specific fields (e.g. order or reference numbers).
-* **Manual validation workflows**: When a person reviews documents and wants to fill fields quickly from barcodes.
-* **Leave it off** if your documents have no usable barcodes, or if you only need automatic barcode/QR **extraction** — see [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).
+* **包含条码的文档**：当文档包含条码/QR 码，且其值应填入特定字段时使用（例如订单号或参考编号）。
+* **手动验证工作流**：当人员审核文档并希望快速从条码填入字段时使用。
+* 如果文档没有可用的条码，或者您只需要自动进行条码/QR 码**提取**，请**保持此设置关闭**；请参阅[条码/QR 码提取](bar-code-qr-code-extraction/README.md)。
 
 {% hint style="info" %}
-**This feature is for reading a barcode/QR value and assigning it to a field during validation.** Automatically extracting structured data from payment codes (such as Swiss QR Bill or GiroCode) — and splitting a multi-page file at barcode separator pages — are handled by a **different** setting: [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).
+**此功能用于读取条码/QR 码的值，并在验证过程中将其分配给字段。** 从支付码（例如 Swiss QR Bill 或 GiroCode）自动提取结构化数据，以及在条码分隔页处分割多页文件，由**另一个**设置处理：[条码/QR 码提取](bar-code-qr-code-extraction/README.md)。
 {% endhint %}

@@ -1,37 +1,35 @@
-# Purpose and Use: Model Training
+# 用途与使用：模型训练
 
-Regular model training is critical to ensure that a document processing system continues to work effectively and accurately as document formats and content change.&#x20;
+定期进行模型训练对于确保文档处理系统在文档格式和内容发生变化时仍能有效、准确地运行至关重要。&#x20;
 
-**Here are some key reasons for regular model training:**&#x20;
-
-
-
-**Adaptation to new formats:**&#x20;
-
-* Documents are often created in different formats, be it PDF, Word, Excel, or others.&#x20;
-* New versions of these formats may have additional features or changes in formatting that the processing system may not recognize unless it is updated accordingly.
-* By regularly training the model, the system can adapt to these new formats to ensure smooth processing.
-
-**Adaptation to changing content:**&#x20;
-
-* The content of documents can change over time, be it due to updates to business processes, changes in policies, or new industry standards.&#x20;
-* Regular training allows the processing system to adapt to these changes and continue to deliver accurate results.
-
-**Optimizing accuracy:**
-
-* By training the model with new data, algorithms and models can be continuously improved to increase the accuracy of document processing.
-* This is especially important in areas where precision and reliability are critical, such as processing financial documents or medical records.&#x20;
-
-**Handling exceptions:**&#x20;
-
-* Regular model training allows the system to better identify and handle exceptions and boundary conditions.&#x20;
-* This can help reduce errors and improve overall system performance.&#x20;
-
-**Ensuring compliance:**  &#x20;
-
-* In industries with strict compliance requirements, it is important that the document processing system is always up to date to meet legal requirements.
-* Regular training and updating of the model can help ensure the system complies with current standards.
-
-Overall, regular model training is an essential component to the effectiveness and reliability of a document processing system. It allows the system to continuously adapt to changing requirements and deliver accurate results, which in turn improves efficiency and productivity.
+**以下是定期进行模型训练的一些主要原因：**&#x20;
 
 
+
+**适应新格式：**&#x20;
+
+* 文档通常以不同格式创建，例如 PDF、Word、Excel 等。&#x20;
+* 这些格式的新版本可能会增加新功能或调整格式；如果不相应更新，处理系统可能无法识别这些变化。
+* 定期训练模型可以帮助系统适应这些新格式，确保文档顺利处理。
+
+**适应内容变化：**&#x20;
+
+* 文档内容可能会随时间发生变化，例如业务流程更新、政策调整或新的行业标准。&#x20;
+* 定期训练可以让处理系统适应这些变化，并持续提供准确的结果。
+
+**优化准确性：**
+
+* 使用新数据训练模型，可以持续改进算法和模型，提高文档处理的准确性。
+* 这对于财务文档或医疗记录处理等对精确度和可靠性要求很高的领域尤为重要。&#x20;
+
+**处理异常情况：**&#x20;
+
+* 定期训练模型可以帮助系统更好地识别和处理异常情况及边界条件。&#x20;
+* 这有助于减少错误并提升系统的整体性能。&#x20;
+
+**确保合规性：**  &#x20;
+
+* 在合规要求严格的行业中，文档处理系统必须始终保持最新，以满足法律要求。
+* 定期训练和更新模型有助于确保系统符合当前标准。
+
+总的来说，定期进行模型训练是确保文档处理系统有效性和可靠性的重要组成部分。它使系统能够持续适应不断变化的要求并提供准确的结果，进而提高效率和生产力。

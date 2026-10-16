@@ -1,13 +1,13 @@
-# XRechnung Cross Industry Invoice
+# XRechnung 跨行业发票
 
-Exports to the document management system (IDM):
+导出到文档管理系统（IDM）：
 
-<figure><img src="../../../../../../.gitbook/assets/image (6) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (155).png" alt=""><figcaption></figcaption></figure>
 
-Exported to Infor LN:
+导出到 Infor LN：
 
-<figure><img src="../../../../../../.gitbook/assets/image (7) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
 
-Exported to Infor M3:
+导出到 Infor M3：
 
-<figure><img src="../../../../../../.gitbook/assets/image (8) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (157).png" alt=""><figcaption></figcaption></figure>

@@ -1,312 +1,160 @@
-# DocBits Release Notes — 14–29 July 2026
+# DocBits 发布说明 — 2026 年 7 月 14–29 日
 
-_What changed in the DocBits production upgrade on 29 July 2026 (the Nova
-channel update), covering everything since the 14 July release. Each service
-lists the version now live, then what's new or fixed in plain language.
-Services not listed had no customer-facing changes._
+_2026 年 7 月 29 日 DocBits 生产环境升级（Nova 渠道更新）带来的变化，涵盖自 7 月 14 日发布以来的所有内容。每项服务均列出当前上线版本，并以通俗语言说明新增或修复的内容。未列出的服务没有面向客户的变化。_
 
 ---
 
-## Highlights
+## 重点更新
 
-- **Two-factor authentication.** DocBits accounts can now be protected with a
-  second factor: an authenticator app (TOTP), a one-time code by e-mail, or a
-  passkey via Touch ID, Windows Hello, YubiKey and similar. Backup codes cover
-  the case of a lost device, and a trusted device can skip the second factor
-  for a while. Every user can switch it on for themselves; administrators can
-  require it for the whole organisation. See the
-  [Two-Factor Authentication guide](../two-factor-authentication.md).
-- **Support tickets from the error screen.** When something goes wrong, you can
-  now open a support ticket directly from the error record. The ticket already
-  contains the technical context, so you don't have to describe it.
-- **Region-correct inbound e-mail.** US organisations get inbound import
-  addresses in their own region, and Microsoft 365 mailboxes on national cloud
-  tenants (GCC, 21Vianet and similar) can now be configured with a Cloud
-  Instance selection.
-- **Clearer PO matching status.** Invoices whose line-item table couldn't be
-  mapped used to be labelled "purchase order not found", which sent people
-  searching for the wrong problem. They now get their own "table incomplete"
-  status with column-level detail on what didn't map.
-- **Tax code mapping for e-documents.** A new settings page maps your ERP tax
-  codes for electronic documents, and exports check the mapping up front
-  instead of failing in the ERP.
-- **Turbo AI tier retired.** The Turbo model has reached end of life. Anyone
-  who had it selected was moved to Fast automatically; no action needed.
+- **双因素身份验证。** 现在可以为 DocBits 账户启用第二种验证方式：身份验证器应用（TOTP）、电子邮件一次性验证码，或通过 Touch ID、Windows Hello、YubiKey 等方式使用通行密钥。备用代码可用于设备丢失的情况，可信设备可在一段时间内跳过第二因素验证。每位用户都可以自行启用；管理员可以要求整个组织启用。请参阅[双因素身份验证指南](../two-factor-authentication.md)。
+- **从错误页面提交支持工单。** 出现问题时，现在可以直接从错误记录中提交支持工单。工单已包含技术上下文，因此无需再描述问题。
+- **入站电子邮件使用正确区域。** 美国组织现在会在其所在区域获得入站导入地址；Microsoft 365 国家云租户（GCC、21Vianet 等）现在可通过 Cloud Instance 选择进行配置。
+- **采购订单匹配状态更清晰。** 过去，无法映射行项目表的发票会被标记为“未找到采购订单”，导致用户排查错误的问题。现在这类发票会显示独立的“表格不完整”状态，并提供未能映射的列级详情。
+- **电子单据税码映射。** 新增设置页面，可为电子单据映射 ERP 税码；导出前会检查映射，避免在 ERP 中失败。
+- **Turbo AI 层级已退役。** Turbo 模型已到生命周期终点。之前选择该模型的用户已自动切换到 Fast，无需采取任何操作。
 
 ---
 
-## Web App — live: `10.46.2`
+## Web App — 当前上线版本：`10.46.2`
 
-### Signing in
+### 登录
 
-- **Two-factor authentication:** set up an authenticator app, e-mail codes or a
-  passkey under your profile, print backup codes, and mark a device as trusted
-  so it doesn't ask every time. Passkey users can sign in without a password
-  entirely. Organisation admins get an enforcement switch and an adoption
-  overview showing who has enrolled.
-- **Deleted accounts:** logging in with a deleted account says so instead of
-  failing with a generic error.
-- **SSO:** fixed an error when signing in while a different region was
-  selected. SSO sessions now expire when the identity provider says they do,
-  not on a fixed local timer.
+- **双因素身份验证：** 在个人资料中设置身份验证器应用、电子邮件验证码或通行密钥，打印备用代码，并将设备标记为可信设备，这样便无需每次都进行二次验证。使用通行密钥的用户可以完全免密码登录。组织管理员可启用强制执行开关，并查看用户注册情况概览。
+- **已删除的账户：** 使用已删除的账户登录时，系统会明确提示账户已删除，而不再只显示通用错误。
+- **SSO：** 修复了选择其他区域时登录出错的问题。现在，SSO 会话会在身份提供商规定的时间到期，而不再使用固定的本地计时器。
 
-### Working with documents
+### 处理文档
 
-- **Deleted documents:** opening a document that was deleted in the meantime
-  shows a proper message instead of script errors.
-- **Field Validation:** the page-number input is wider and jumps to the page
-  on Enter. A field made read-only by a script still shows its field
-  connection. A warning popup that printed raw JavaScript now shows the actual
-  message, and the screen no longer freezes on documents with long e-document
-  line-item tables.
-- **Table extraction:** deleting a column frees its name for re-use, and
-  deleted headers no longer reappear in the saved table.
-- **Approvals:** opening a freshly pending document lands on the right approval
-  screen. Users can no longer approve a Sales Tax step their group has no
-  permission for, and the approval history shows all entries again. The
-  history also names the person who actually approved, including approvals an
-  admin made on behalf of the assignee.
-- **Suppliers:** the Accounting page no longer shows a false "Supplier is
-  missing" warning, and deleting a supplier that only exists from extraction
-  no longer leaves the dialog hanging.
-- **Master data:** tables on the master data page scroll again.
-- **Tasks and notifications:** deleting a task is no longer admin-only. Whether
-  non-admins may delete their own tasks is now an organisation setting, and
-  users who have a task on a document they can't open get a task-only view
-  instead of an error.
+- **已删除的文档：** 打开已被删除的文档时，现在会显示适当的提示，而不再出现脚本错误。
+- **字段验证：** 页码输入框加宽，按 Enter 后会跳转到对应页面。即使脚本将字段设为只读，字段连接仍会显示。过去会显示原始 JavaScript 的警告弹窗现在会显示实际消息；包含较长电子单据行项目表的文档也不再导致页面冻结。
+- **表格提取：** 删除列后，其名称可以重新使用；已删除的表头也不会再出现在保存后的表格中。
+- **审批：** 打开刚进入待处理状态的文档时，会进入正确的审批页面。用户无法再批准其所属组无权处理的销售税步骤；审批历史中的所有条目也都会重新显示。历史记录还会注明实际批准人，包括管理员代表受指派人完成的审批。
+- **供应商：** 会计页面不再错误地显示“缺少供应商”警告；删除仅在提取过程中出现的供应商时，对话框也不再一直卡住。
+- **主数据：** 主数据页面中的表格现可正常滚动。
+- **任务和通知：** 删除任务不再仅限管理员操作。是否允许非管理员删除自己的任务，现在可通过组织设置控制。如果用户有一个关联到自己无权打开的文档的任务，系统会显示仅包含任务的视图，而不再报错。
 
-### Dashboard and search
+### 仪表板和搜索
 
-- **Export:** exports use the dashboard you have selected, and the app warns
-  you before exporting a dashboard with unsaved changes.
-- **Search:** Invoice Type is available as a search field with its list of
-  values. When a result set is larger than the window the dashboard can show,
-  the count badge now says so instead of quietly truncating.
-- **Import log:** split documents can be found via their parent document, and
-  the Failed Filenames column lists only files that actually failed or were
-  skipped.
+- **导出：** 导出会使用当前选定的仪表板；如果仪表板有未保存的更改，应用会在导出前发出警告。
+- **搜索：** 发票类型现在可作为搜索字段使用，并提供其值列表。如果结果数量超过仪表板窗口可显示的范围，计数徽标现在会明确提示，而不再静默截断结果。
+- **导入日志：** 拆分后的文档可通过其父文档查找；“失败的文件名”列现在只列出确实导入失败或已跳过的文件。
 
-### Settings and administration
+### 设置和管理
 
-- **Support tickets:** create a ticket straight from an error record. Tickets
-  carry the environment and release channel, and the screenshot capture no
-  longer hangs.
-- **Groups and permissions:** unclassified documents can be granted as a
-  permission like any other document type.
-- **Workflow Builder:** newly created or renamed cards, e-mail templates and
-  other dropdown items appear immediately, without reloading the page.
-- **Decision Trees:** document field labels in the designer follow the
-  interface language instead of always showing the English name.
-- **Document Types:** new Structured Extraction setting in the extraction
-  section.
-- **E-Doc tax codes:** new settings page to map your ERP tax codes for
-  electronic documents (see Highlights).
-- **Auto Accounting:** dimensions show reliably instead of intermittently.
-- **AI model selection:** the retired Turbo tier is gone from the dropdown;
-  existing selections show Fast.
-- **Service Versions dialog:** now scrollable, includes the Auth Bridge
-  service, and shows the release channel names Vesta and Nova.
-- **Import page:** no longer crashes for organisations with an empty
-  subscription entry.
+- **支持工单：** 可直接从错误记录创建工单。工单会包含环境和发布渠道信息，截取屏幕截图也不再卡住。
+- **用户组和权限：** 未分类文档现在可以像其他文档类型一样被授予为一项权限。
+- **Workflow Builder：** 新建或重命名的卡片、电子邮件模板和其他下拉菜单项目会立即显示，无需重新加载页面。
+- **Decision Trees：** 设计器中的文档字段标签现在会遵循界面语言，而不再始终显示英文名称。
+- **文档类型：** 提取部分新增“结构化提取”设置。
+- **电子单据税码：** 新增设置页面，可为电子单据映射 ERP 税码（请参阅“重点更新”）。
+- **自动会计：** 维度现在会稳定显示，不再时有时无。
+- **AI 模型选择：** 已退役的 Turbo 层级已从下拉菜单中移除；现有选择会显示为 Fast。
+- **服务版本对话框：** 现在支持滚动，包含 Auth Bridge 服务，并显示 Vesta 和 Nova 发布渠道名称。
+- **导入页面：** 订阅条目为空的组织不再导致页面崩溃。
 
-### Smaller fixes
+### 其他修复
 
-Empty toast notifications are suppressed, the new/edit idea dialog scrolls,
-misaligned checkboxes in field settings are aligned again, blocked document
-deletions explain why, and E-Document settings handle switching from Default
-to Custom cleanly.
+空白提示通知不再显示；新建或编辑创意的对话框现在支持滚动；字段设置中错位的复选框已恢复对齐；被阻止的文档删除操作现在会说明原因；电子单据设置从 Default 切换到 Custom 时也能正常处理。
 
-## API Service — live: `12.68.1`
+## API Service — 当前上线版本：`12.68.1`
 
-- **Two-factor authentication:** all password-based login paths run through the
-  second-factor check, so no integration route bypasses it.
-- **E-Doc tax codes:** ERP tax-code mapping for electronic documents, with a
-  central check before export so missing codes surface early.
-- **Access control:** admins can grant non-admin users visibility of
-  unclassified documents.
-- **Deletion audit trail:** documents record who deleted them and when.
-- **Personal dashboards:** fixed sharing settings that wouldn't save.
-- **Dashboard search:** Invoice Type joins the extended search fields, and
-  documents created by a barcode or QR split are found via their parent
-  document.
-- **Dashboard freshness:** refreshing a table or reprocessing a document clears
-  the dashboard cache, so the list no longer shows the pre-change values.
-- **Uploads:** repeated uploads of the same file during a network retry no
-  longer create duplicate documents.
-- **Supplier lookup:** results arrive as soon as the data is ready instead of
-  after a fixed wait.
-- **Infor export:** unit prices keep four decimal places. M3 exports can
-  include zero-amount line charges, and negative LN cost lines are sent as
-  positive credits. Export also waits for a pending workflow to finish instead
-  of running mid-workflow.
-- **Approvals:** an approval is only linked to an approval request when the
-  approver is its assignee. Changes a workflow made on its own are attributed
-  to the System user rather than to the last person who touched the document.
-- **Login stability:** a temporary failure inside token validation no longer
-  logs users out; the app retries instead. Documents get the same treatment and
-  no longer fail outright on a brief auth hiccup.
-- **Classification:** source rules now match against every document source
-  field, not fixed positions.
-- **Validation stability:** a field without a name no longer crashes document
-  validation.
-- **AI models:** the Turbo tier (retired) is remapped to Fast everywhere,
-  including fine-tuned variants, with a guard so a retired model can never
-  run.
-- **Background jobs:** a wedged scheduler is detected and restarted, so
-  recurring jobs can't silently stop.
+- **双因素身份验证：** 所有基于密码的登录路径现在都会执行第二因素验证，因此没有任何集成路线可以绕过验证。
+- **电子单据税码：** 支持为电子单据映射 ERP 税码，并在导出前进行集中检查，以便及早发现缺失的税码。
+- **访问控制：** 管理员可以授予非管理员用户查看未分类文档的权限。
+- **删除审计跟踪：** 文档会记录删除人及删除时间。
+- **个人仪表板：** 修复了无法保存的共享设置。
+- **仪表板搜索：** 发票类型加入扩展搜索字段；通过条形码或 QR 码拆分创建的文档现在可通过其父文档查找。
+- **仪表板数据更新：** 刷新表格或重新处理文档时会清除仪表板缓存，因此列表不再显示更改前的值。
+- **上传：** 网络重试期间重复上传同一文件，不再创建重复文档。
+- **供应商查找：** 数据准备就绪后会立即返回结果，而不再等待固定时间。
+- **Infor 导出：** 单价保留四位小数。M3 导出可包含金额为零的行费用，LN 负数成本行会作为正数贷项发送。导出还会等待待处理工作流结束，而不再在工作流运行中途执行。
+- **审批：** 只有当审批人是某项审批请求的受指派人时，审批记录才会与该请求关联。工作流自行执行的更改会归于 System 用户，而不再归于最后操作文档的人。
+- **登录稳定性：** 令牌验证期间发生临时故障时，不再导致用户退出；应用会重试。文档也采用相同的处理方式，因此不会因短暂的身份验证故障而直接失败。
+- **分类：** 来源规则现在会匹配每个文档来源字段，而不再依赖固定位置。
+- **验证稳定性：** 没有名称的字段不再导致文档验证崩溃。
+- **AI 模型：** Turbo 层级退役后，所有位置（包括微调变体）都已映射到 Fast，并增加了防护措施，确保已退役模型无法运行。
+- **后台作业：** 系统会检测并重启卡住的调度器，防止定期作业无声停止。
 
-## Auth Service — live: `1.75.3`
+## Auth Service — 当前上线版本：`1.75.3`
 
-- **Two-factor authentication:** the backend behind the Highlights entry.
-  Authenticator apps, e-mail one-time codes, passkeys and trusted devices, plus
-  backup codes, per-organisation enforcement and passwordless passkey login.
-  Enrolling signs out your other sessions, changing your password revokes
-  trusted devices, and the verify endpoints are rate-limited with lockout and a
-  replay guard against reused codes.
-- **Login history:** sign-ins via SSO/SAML now appear in the login history,
-  and the last-login timestamp is stamped reliably for every login type.
-  Viewing another user's login history requires the appropriate admin level.
-- **Legacy accounts:** deleting a legacy user account works again instead of
-  silently doing nothing.
-- **Bulk user administration:** add existing users to sub-organisations and
-  groups in bulk via CSV, matched by e-mail address. Also fixed a crash on
-  unevenly filled CSV rows and a server error when adding two or more new
-  users at once.
-- **Member lists:** deleted users no longer appear in sub-organisation member
-  lists.
-- **Single sign-on:** a series of hardening fixes. Expired tokens now return a
-  clean "expired" response, organisations without a SAML configuration get a
-  proper not-found answer instead of a wrong login flow, logout always
-  completes even when the sign-out request can't be verified, and several
-  crashes around missing identity-provider configuration are gone. The token
-  lifetime the provider returns is passed on to the app.
-- **Session tokens:** fixed short-lived session tokens being rejected as
-  invalid even though they weren't expired.
-- **Management tooling:** organisation region is visible in the management
-  API, the system user of an organisation can be reassigned, and plan and
-  usage administration gained dedicated endpoints. These changes affect
-  DocBits staff tooling, not the customer app.
+- **双因素身份验证：** 为“重点更新”中的功能提供后端支持。包括身份验证器应用、电子邮件一次性验证码、通行密钥、可信设备、备用代码、按组织强制执行，以及使用通行密钥免密码登录。注册后，系统会退出你的其他会话；更改密码后，系统会撤销可信设备；验证端点设有速率限制和锁定机制，并防止重复使用验证码。
+- **登录历史：** 现在会在登录历史中显示通过 SSO/SAML 登录的记录，并会为每种登录类型可靠地记录上次登录时间。查看其他用户的登录历史需要相应的管理员级别。
+- **旧版账户：** 删除旧版用户账户的功能已恢复正常，不再无声地不起作用。
+- **批量用户管理：** 可通过 CSV 按电子邮件地址匹配用户，批量将现有用户添加到子组织和用户组中。修复了 CSV 行填充不均时发生的崩溃，以及一次添加两个或更多新用户时出现的服务器错误。
+- **成员列表：** 已删除的用户不再显示在子组织成员列表中。
+- **单点登录：** 完成了一系列加固修复。过期令牌现在会返回明确的“已过期”响应；未配置 SAML 的组织会返回正确的“未找到”响应，而不是进入错误的登录流程；即使无法验证登出请求，登出操作也会完成；此外，还修复了身份提供商配置缺失时发生的若干崩溃。身份提供商返回的令牌有效期现在会传递给应用。
+- **会话令牌：** 修复了有效但尚未过期的短期会话令牌被错误拒绝的问题。
+- **管理工具：** 管理 API 现在会显示组织区域；组织的 system 用户可以重新分配；计划和用量管理新增专用端点。这些变化影响 DocBits 员工使用的工具，不影响客户应用。
 
-## Email Service — live: `1.40.2`
+## Email Service — 当前上线版本：`1.40.2`
 
-- **Region-correct import:** inbound e-mail domains exist per region, and
-  mails arriving in the wrong region are forwarded to the right one. US
-  organisations no longer depend on the EU inbound path.
-- **Microsoft 365:** national cloud tenants are configured via a Cloud
-  Instance selection, fixing O365 imports for US customers. An invalid tenant
-  now produces a clear login error instead of a server error, and incomplete
-  tenant credentials fail immediately with a message rather than silently.
-- **Connection test:** testing an IMAP mailbox that doesn't answer fails with a
-  timeout message after a few seconds instead of running into a gateway
-  timeout.
-- **Inbox hygiene:** e-mails without attachments are moved out of the inbox
-  instead of piling up.
-- **No duplicates on retry:** uploads to the document API carry an idempotency
-  key, so a retried delivery can't create the same document twice.
-- **Source naming:** O365 sources with a folder configured include the account
-  e-mail in their name, so similar sources are distinguishable. The mailbox
-  address is read from the authenticated account rather than a typed-in field.
-- **Import log housekeeping:** import log entries are kept for 90 days and
-  cleaned up automatically after that.
+- **导入使用正确区域：** 每个区域都有各自的入站电子邮件域名，发往错误区域的邮件会被转发到正确区域。美国组织不再依赖 EU 入站路径。
+- **Microsoft 365：** 国家云租户现在通过 Cloud Instance 选择进行配置，修复了美国客户的 O365 导入问题。无效租户现在会显示明确的登录错误，而不再返回服务器错误；租户凭据不完整时也会立即显示错误消息，而不再无声失败。
+- **连接测试：** 测试无响应的 IMAP 邮箱时，几秒后会显示超时消息，而不再遇到网关超时。
+- **收件箱整理：** 没有附件的电子邮件会被移出收件箱，不再堆积其中。
+- **重试时不重复：** 向文档 API 上传时会携带幂等键，因此重试投递不会重复创建同一文档。
+- **来源命名：** 配置了文件夹的 O365 来源名称现在会包含账户电子邮件地址，以便区分相似来源。邮箱地址会从已认证的账户中读取，而不再使用手动填写的字段。
+- **导入日志清理：** 导入日志条目保留 90 天，之后会自动清理。
 
-## PO Match Service — live: `1.59.3`
+## PO Match Service — 当前上线版本：`1.59.3`
 
-- **"Table incomplete" status:** invoices whose line-item table couldn't be
-  mapped get their own status instead of the misleading "purchase order not
-  found" (see Highlights). The dashboard shows it with the not-matched icon.
-- **Better error detail:** table-mapping failures name the specific column
-  that didn't map.
-- **Faster on large invoices:** rules-based matching groups candidates by item
-  number and reads the tolerance settings once per organisation instead of once
-  per line.
-- **Cleaner API behaviour:** requests for PO rules that don't exist return a
-  proper not-found answer, and corrupt cache entries are dropped instead of
-  causing repeated errors.
-- **Match on total:** fixed a bug in matching against the purchase-order
-  total.
+- **“表格不完整”状态：** 无法映射行项目表的发票现在会显示独立状态，而不再误显示为“未找到采购订单”（请参阅“重点更新”）。仪表板会使用未匹配图标显示该状态。
+- **错误详情更完善：** 表格映射失败时会指出未能映射的具体列。
+- **大型发票处理更快：** 基于规则的匹配会按物料编号对候选项分组，并且每个组织只读取一次容差设置，而不再针对每一行读取。
+- **API 行为更规范：** 请求不存在的采购订单规则时会返回正确的“未找到”响应；损坏的缓存条目会被丢弃，而不再反复导致错误。
+- **按总额匹配：** 修复了根据采购订单总额进行匹配时的错误。
 
-## Fulltext Service — live: `1.39.1`
+## Fulltext Service — 当前上线版本：`1.39.1`
 
-- **European number formats:** amounts written with a decimal comma
-  (`1.234,56`) are normalised before indexing, so amount searches and filters
-  work regardless of number format.
-- **Honest result counts:** when a search matches more documents than the
-  dashboard window returns, the response says so instead of presenting a
-  truncated list as complete.
-- **ERP counts:** fixed a token error that could interrupt the live count
-  stream on the dashboard.
-- **Indexing resilience:** indexing now rides out temporary database and
-  auth-service hiccups (automatic retry, fallback to the primary database)
-  and discards malformed queue messages instead of retrying them forever.
+- **欧洲数字格式：** 以小数逗号格式书写的金额（`1.234,56`）会在索引前规范化，因此无论数字格式如何，金额搜索和筛选都能正常工作。
+- **结果数量准确：** 如果搜索匹配的文档多于仪表板窗口返回的数量，响应现在会明确说明，而不再将截断后的列表显示为完整结果。
+- **ERP 计数：** 修复了可能中断仪表板实时计数流的令牌错误。
+- **索引稳定性：** 临时数据库和 Auth Service 故障现在可自动重试，并会回退到主数据库；格式错误的队列消息会被丢弃，而不再无限重试。
 
-## OCR Service — live: `1.10.3`
+## OCR Service — 当前上线版本：`1.10.3`
 
-- **Stable reading order:** text is read in a deterministic order, so the same
-  document extracts the same way every time.
-- **Large documents:** the OCR time budget scales with document size, so very
-  large files no longer fail with a timeout.
-- **Unusual characters:** a sanitizer cleans characters the OCR engine can't
-  represent, fixing failures on documents with exotic symbols.
-- **Fewer transient failures:** temporary storage connection errors are
-  retried automatically, and a stalled worker is detected by whether it is
-  actually consuming work.
+- **读取顺序稳定：** 文本现在会按确定的顺序读取，因此同一文档每次都会以相同方式提取。
+- **大型文档：** OCR 时间预算会根据文档大小调整，因此超大文件不再因超时而失败。
+- **特殊字符：** 清理程序会处理 OCR 引擎无法表示的字符，修复了包含特殊符号的文档处理失败问题。
+- **临时故障减少：** 临时存储连接错误会自动重试；系统会根据工作进程是否实际在处理任务来检测其是否停滞。
 
-## Extraction Service — live: `1.53.3`
+## Extraction Service — 当前上线版本：`1.53.3`
 
-- **Zero-tax US invoices:** fixed a case where the correct net/tax pair was
-  dropped when the tax amount is zero.
-- **Table extraction:** tables stay editable when the configured mapping
-  expects more columns than the document provides, and a crash on unusual row
-  data is fixed.
-- **Stable reading order:** mirrors the OCR change above, so extraction sees
-  the same token order the OCR produced.
-- **AI models:** Turbo tier retirement, mirrored from the API Service.
+- **美国零税额发票：** 修复了税额为零时正确的净额/税额组合被丢弃的问题。
+- **表格提取：** 即使配置的映射所需列数多于文档提供的列数，表格仍可编辑；同时修复了处理异常行数据时发生的崩溃。
+- **读取顺序稳定：** 与上文的 OCR 更改相对应，确保提取服务看到的令牌顺序与 OCR 生成的顺序一致。
+- **AI 模型：** 同步处理 API Service 中已退役的 Turbo 层级。
 
-## Docflow Service — live: `2.7.3`
+## Docflow Service — 当前上线版本：`2.7.3`
 
-- **PO matching in workflows:** missing comparison values are treated as
-  missing data rather than a mismatch.
-- **Order confirmation cards:** buyer and responsible person are resolved
-  reliably.
-- **Quote cards:** the log now records when a quoted price exists but falls
-  outside the allowed date range, which used to look like missing data.
-- **Freight charges:** when neither side has charges, the case is resolved by
-  the operator card instead of stalling.
-- **Security:** workflow API tokens are validated against the organisation
-  they belong to.
-- **Faster triggering:** the check for active workflows is cached, and the
-  background workers restart cleanly instead of leaving stalled processes
-  behind.
+- **工作流中的采购订单匹配：** 缺失的比较值现在会被视为缺失数据，而不再视为不匹配。
+- **订单确认卡片：** 现在可以可靠地解析买方和责任人。
+- **报价卡片：** 如果存在报价价格但超出允许的日期范围，日志现在会记录这一情况；过去这看起来像是数据缺失。
+- **运费：** 双方都没有费用时，该情况现在会由操作员卡片处理，而不再停滞。
+- **安全性：** 工作流 API 令牌会根据所属组织进行验证。
+- **触发更快：** 活跃工作流检查现在会缓存；后台工作进程会正常重启，不再留下停滞进程。
 
-## Barcode Service — live: `1.18.1`
+## Barcode Service — 当前上线版本：`1.18.1`
 
-- **Long-running splits:** the connection to the task queue is kept alive
-  during long barcode jobs, so splitting large batches no longer stalls near
-  the end.
+- **长时间运行的拆分任务：** 长时间运行的条形码作业期间会保持与任务队列的连接，因此拆分大型批次时不会在接近结束时停滞。
 
-## FTP Service — live: `1.31.2`
+## FTP Service — 当前上线版本：`1.31.2`
 
-- **Import log housekeeping:** same 90-day retention and cleanup as the Email
-  Service.
+- **导入日志清理：** 与 Email Service 一样，日志保留 90 天并在之后自动清理。
 
-## Auth Bridge Service — live: `0.4.1`
+## Auth Bridge Service — 当前上线版本：`0.4.1`
 
-- **Accurate replication alerts:** the EU/US account replication bridge
-  measures a stall from the last real progress rather than the first error, and
-  counts only genuine replication motion as progress. The nightly false "bridge
-  stalled" alerts are gone. Nothing changes in the app.
+- **复制警报更准确：** EU/US 账户复制桥接服务现在会从上次实际取得进展的时间开始计算停滞时长，并且只将真正的复制活动计为进展。夜间误报的“桥接服务停滞”警报已消除。应用没有任何变化。
 
-## Operator Service — live: `1.42.1`
+## Operator Service — 当前上线版本：`1.42.1`
 
-- **Worker stability:** a stalled worker is detected by whether it is consuming
-  work, and idle chatter between workers is switched off.
+- **工作进程稳定性：** 系统会根据工作进程是否正在处理任务来检测其是否停滞，并已关闭工作进程之间的空闲消息。
 
 ---
 
-## Unchanged in this release
+## 本次发布未变更
 
-**Auto Accounting** (`1.21.1`) was rebuilt with no customer-facing changes.
-**Docnet** (`1.55.1`) and **Ideas** (`0.3.1`) carry no changes in this window.
+**Auto Accounting**（`1.21.1`）已重新构建，但没有面向客户的变化。**Docnet**（`1.55.1`）和 **Ideas**（`0.3.1`）在此期间均无变化。
 
 <!-- Generated by the docbits-changelog skill. Boundary: versions live in the
      prod namespace on 28 Jul 2026 (Web App 10.41.8, API 12.57.8, Auth 1.71.1)

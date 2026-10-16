@@ -1,30 +1,30 @@
 ---
-description: URUGUAY CFE 25 electronic document support in DocBits
+description: DocBits 对乌拉圭 CFE 25 电子文档的支持
 ---
 
-# 🇺🇾 URUGUAY CFE 25
+# 🇺🇾 乌拉圭 CFE 25
 
-| Property             | Value                  |
+| 属性             | 值                  |
 | -------------------- | ---------------------- |
-| **Country / Region** | Uruguay                |
-| **Document Types**   | e-Invoice, Credit Note |
-| **Format**           | XML                    |
-| **Standard**         | CFE Schema Version 25  |
+| **国家 / 地区** | 乌拉圭                |
+| **文档类型**   | 电子发票、贷项通知单 |
+| **格式**           | XML                    |
+| **标准**         | CFE 架构版本 25  |
 
-Uruguay CFE 25 is the latest schema version of the Uruguayan CFE system. It includes updated validation rules and field requirements for electronic documents submitted to the DGI.
+乌拉圭 CFE 25 是乌拉圭 CFE 系统的最新架构版本。此版本更新了提交至 DGI 的电子文档的验证规则和字段要求。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件        | 状态      |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览          | ✅ 支持 |
+| 字段提取 | ✅ 支持 |
+| 转换   | ✅ 支持 |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/uruguay-cfe-preview.png" alt="Uruguay CFE v25 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Uruguay CFE v25 invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/uruguay-cfe-preview.png" alt="DocBits 中的乌拉圭 CFE v25 发票预览"><figcaption><p>乌拉圭 CFE v25 发票的 DocBits 默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

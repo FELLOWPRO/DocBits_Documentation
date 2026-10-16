@@ -1,10 +1,10 @@
-# Document Export Mapping
+# 文档导出映射
 
 ## M3
 
-#### Document Types and Destinations
+#### 文档类型和目标位置
 
-* **Purchase Order**: Exported to **PPS200**&#x20;
-* **Invoice**: Exported to **APS450**&#x20;
-* **Order Confirmation**: Exported to **PPS250**
-* **Advance Shipping Notice (ASN)**: Exported to **MHS850**&#x20;
+* **采购订单**：导出到 **PPS200**&#x20;
+* **发票**：导出到 **APS450**&#x20;
+* **订单确认**：导出到 **PPS250**
+* **提前发货通知 (ASN)**：导出到 **MHS850**&#x20

@@ -2,61 +2,61 @@
 hidden: true
 ---
 
-# Fuzzy Data Configuration with List of Values
+# 使用值列表配置模糊数据
 
-### **Overview**
+### **概述**
 
-Each document type has its own List of Values (LoV) configurations, which must be set up separately. Unlike **Fuzzy Data with Master Data**, **List of Values** does not come with default lookup groups.
+每种文档类型都有自己的值列表 (LoV) 配置，必须分别设置。与**使用主数据配置模糊数据**不同，**值列表**不会提供默认查找组。
 
-### To configure List of Values, navigate to:
+### 配置值列表，请导航至：
 
-Settings → Global Settings → Document Types → Invoice → Fields → Master Data Settings → LOV Master Data
+设置 → 全局设置 → 文档类型 → 发票 → 字段 → 主数据设置 → LOV 主数据
 
-### **Creating a New List of Values Configuration**
+### **创建新的值列表配置**
 
-There are two ways to create a List of Values configuration:
+创建值列表配置有两种方式：
 
-**1. Duplicate an Existing Lookup**
+**1. 复制现有查找项**
 
-* This copies all information and fields from an existing group.
-* You only need to provide a **new name**.
+* 这会复制现有组中的所有信息和字段。
+* 您只需提供一个**新名称**。
 
-**2. Create a Lookup from Scratch**
+**2. 从头创建查找项**
 
-* Click **"Create List of Values"**.
-* Fill in the required details:
-  * **Configuration Name** → Name of the List of Values.
-  * **Lookup Table** → The table from which values will be retrieved.
-  * **Conflict Handler** → Choose one:
-    * Best Score
-    * Return None
-    * Return First
-  * **Context Type** → Determines if the LoV applies to the **Header** or **Line** level.
-  * **Match All** → _(More details needed)_
+* 点击**“创建值列表”**。
+* 填写所需信息：
+  * **配置名称** → 值列表的名称。
+  * **查找表** → 用于检索值的表。
+  * **冲突处理器** → 选择一项：
+    * 最佳分数
+    * 返回空值
+    * 返回第一项
+  * **上下文类型** → 确定 LoV 应用于**抬头**级别还是**行**级别。
+  * **全部匹配** → _(需要更多详细信息)_
 
-### **Managing Fields Within a List of Values Group**
+### **管理值列表组中的字段**
 
-Each LoV group contains fields that can be **added, removed or edited.**
+每个 LoV 组都包含可**添加、移除或编辑**的字段。
 
-**Adding a New Field**
+**添加新字段**
 
-To add a new field within a group:
+要在组中添加新字段：
 
-* Click **"Create"** inside the relevant group.
-* Provide the following details:
-  * **Lookup Field** → The column name from the lookup table.
-  * **Validation Field** → The corresponding DocBits field.
-  * **Parent Field** → _(More details needed)_
-  * **Search Operator** → Choose one:
-    * Smart
-    * Contains
-    * Exact
-    * Starts with
-    * Ends with
-  * **Checkboxes:**
-    * **Auto Trigger** → When enabled, if another field in a different lookup configuration shares the same column, this field will update **automatically** whenever the other field is updated.
-    * **Searchable** → Enables the field as a **List of Values** field, allowing searches in the lookup table.
+* 在相应组内点击**“创建”**。
+* 提供以下信息：
+  * **查找字段** → 查找表中的列名。
+  * **验证字段** → 对应的 DocBits 字段。
+  * **父字段** → _(需要更多详细信息)_
+  * **搜索运算符** → 选择一项：
+    * 智能
+    * 包含
+    * 完全匹配
+    * 开头为
+    * 结尾为
+  * **复选框：**
+    * **自动触发** → 启用后，如果另一个查找配置中的字段共享同一列，则每当该字段更新时，此字段也会**自动**更新。
+    * **可搜索** → 将该字段设为**值列表**字段，以便在查找表中进行搜索。
 
-#### **Final Step: Adding Fields to the Layout**
+#### **最后一步：将字段添加到布局**
 
-After configuring List of Values fields, **make sure to add them to the layout using the Layout Builder**. If fields are not added to the layout, they will not be available for use.
+配置好值列表字段后，**请务必使用布局构建器将其添加到布局中**。如果字段未添加到布局，则无法使用。

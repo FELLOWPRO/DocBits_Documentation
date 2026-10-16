@@ -1,31 +1,31 @@
-# Automatic Purchase Order Data Matching
+# 采购订单数据自动匹配
 
-Docbits is an advanced system designed to automate the matching of purchase order data (POs) with incoming invoice documents. This tool is specifically designed for efficient management and processing of invoice data within ERP systems. This documentation explains the basics of automatic matching through Docbits and defines the specific rules required for successful matching.
+Docbits 是一款先进的系统，旨在自动将采购订单（PO）数据与收到的发票文档进行匹配。该工具专为在 ERP 系统中高效管理和处理发票数据而设计。本文档介绍 Docbits 自动匹配的基本原理，并定义成功匹配所需的具体规则。
 
 <figure><img src="../../../.gitbook/assets/Automatic Purchase Order Data Matching.svg" alt=""><figcaption></figcaption></figure>
 
-## **Fundamental Principles of Auto Matching in Docbits**
+## **Docbits 自动匹配的基本原则**
 
-**Data Extraction:** Docbits begins the process by extracting relevant data from digitized invoice documents. Typically, this data includes item numbers, quantities, and unit prices of each invoice line. The precision of this extraction is crucial, as it forms the basis for the subsequent matching process.
+**数据提取：** Docbits 首先从数字化发票文档中提取相关数据。通常，这些数据包括每个发票行项目的项目编号、数量和单价。提取的准确性至关重要，因为它是后续匹配过程的基础。
 
-**Comparison with PO Data:** The extracted data are compared with the corresponding information in the stored purchase orders. Docbits checks whether the item numbers, quantities, and prices match those in the POs. For a successful match, the data in the invoices must correspond to the data in the purchase orders, considering defined tolerance thresholds.
+**与采购订单数据比较：** 提取的数据会与已存储采购订单中的相应信息进行比较。Docbits 会检查项目编号、数量和价格是否与采购订单中的信息相符。要成功匹配，发票中的数据必须与采购订单中的数据一致，并符合已定义的容差范围。
 
-**Automatic Matching:** Based on the comparison results, Docbits performs the matching. The system verifies whether the matching criteria fall within the set tolerance limits. If these criteria are met, the match is considered successful.
+**自动匹配：** Docbits 根据比较结果执行匹配。系统会验证匹配条件是否在设定的容差范围内。满足这些条件时，即视为匹配成功。
 
-**Reporting:** After completing the matching process, Docbits generates reports that show the status of the matches. These reports inform about successfully matched invoices and identify those with discrepancies.
+**报告：** 匹配过程完成后，Docbits 会生成显示匹配状态的报告。这些报告会说明哪些发票已成功匹配，并指出存在差异的发票。
 
-## **Definition of Matching Rules**
+## **匹配规则的定义**
 
-**Item Number:** The item number on the invoice must exactly match the item number in the purchase order. There is no tolerance for deviations in item numbers.
+**项目编号：** 发票上的项目编号必须与采购订单中的项目编号完全一致。项目编号不允许有偏差。
 
-**Quantities:** The quantity of goods delivered on the invoice may vary within a predefined tolerance range. Typically, a tolerance of ±5% might be acceptable to account for minor differences in delivery quantities.
+**数量：** 发票中交付货物的数量可以在预定义的容差范围内有所不同。通常，可接受 ±5% 的容差，以涵盖交付数量的细微差异。
 
-**Prices:** Price deviations are tolerable up to a set threshold. A common tolerance might be ±2% of the price to accept slight differences in price statements that arise from rounding differences or currency fluctuations.
+**价格：** 价格偏差在设定的阈值内可以接受。常见的容差可能为 ±2%，以接受因舍入差异或货币波动造成的轻微价格差异。
 
-## **Match Status:**
+## **匹配状态：**
 
-* **Full Match:** All data points (item number, quantity, and price) are within the set tolerance limits.
-* **Partial Match:** One or more data points deviate outside the tolerance limits, but the deviations are minimal and require manual review.
-* **No Match:** Significant deviations in one or more data points that require immediate correction or further investigation.
+* **完全匹配：** 所有数据点（项目编号、数量和价格）均在设定的容差范围内。
+* **部分匹配：** 一个或多个数据点超出容差范围，但偏差较小，需要人工审核。
+* **不匹配：** 一个或多个数据点存在较大偏差，需要立即更正或进一步调查。
 
-The precise definition of these rules and the setting of tolerance limits are crucial for the efficiency of the automatic matching and the reduction of manual interventions. Docbits allows for flexible configuration of these parameters to meet the needs of various businesses and industries.
+准确定义这些规则并设置容差范围，对于提高自动匹配效率和减少人工干预至关重要。Docbits 支持灵活配置这些参数，以满足不同企业和行业的需求。

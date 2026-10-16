@@ -1,14 +1,14 @@
-# Context Variables
+# 上下文变量
 
-Every script automatically receives the following variables in its execution context. These do **not** need to be imported — they are simply available.
+每个脚本都会在其执行上下文中自动获得以下变量。无需导入这些变量，它们可以直接使用。
 
 ---
 
-## Main Variables
+## 主要变量
 
-### `document_data` (alias: `doc`)
+### `document_data`（别名：`doc`）
 
-The root object containing all document data:
+包含所有文档数据的根对象：
 
 ```python
 document_data = {
@@ -21,12 +21,12 @@ document_data = {
 ```
 
 {% hint style="info" %}
-`doc` is an alias — `doc` and `document_data` point to the same object. Both can be used interchangeably.
+`doc` 是一个别名：`doc` 和 `document_data` 指向同一个对象。两者可以互换使用。
 {% endhint %}
 
 ### `document_json`
 
-Direct access to `document_data["document_json"]`. Contains:
+直接访问 `document_data["document_json"]`。其中包含：
 
 ```python
 document_json = {
@@ -46,7 +46,7 @@ document_json = {
 }
 ```
 
-### `fields` and `fields_dict`
+### `fields` 和 `fields_dict`
 
 ```python
 # fields = Array of all fields
@@ -88,10 +88,10 @@ fields_dict = {
 ```
 
 {% hint style="danger" %}
-**Auto-create with `set_field_value`:** If a field does not exist when using `set_field_value()`, it is **automatically created** and added to both `fields` and `fields_dict`.
+**使用 `set_field_value` 自动创建：** 如果使用 `set_field_value()` 时字段不存在，系统会**自动创建该字段**，并将其添加到 `fields` 和 `fields_dict` 中。
 {% endhint %}
 
-### `tables` and `tables_dict`
+### `tables` 和 `tables_dict`
 
 ```python
 # tables = Array of all tables
@@ -139,7 +139,7 @@ tables_dict = {
 }
 ```
 
-### `user_id`, `org_id`, `user`
+### `user_id`、`org_id`、`user`
 
 ```python
 user_id    # Integer — ID of the current user
@@ -148,14 +148,14 @@ user       # UserAuthentication object — for API calls like is_supplier_valid(
 ```
 
 {% hint style="warning" %}
-**`user` is not always fully available:** In Celery worker context (automatic processing), `user` has limited properties. In UI context (`ON_FIELD_CHANGE`, `ON_SAVE`) it is the full user object.
+**`user` 并非始终完整可用：** 在 Celery 工作进程上下文（自动处理）中，`user` 的属性有限。在 UI 上下文（`ON_FIELD_CHANGE`、`ON_SAVE`）中，它是完整的用户对象。
 {% endhint %}
 
 ---
 
-## Common Access Patterns
+## 常见访问方式
 
-### Read and write fields
+### 读取和写入字段
 
 ```python
 # Recommended: via helper functions
@@ -168,7 +168,7 @@ if inv_field:
     raw_value = inv_field["value"]
 ```
 
-### Iterate tables
+### 遍历表格
 
 ```python
 table = tables_dict.get("INVOICE_TABLE")
@@ -179,7 +179,7 @@ if table:
         set_column_value(row, "TOTAL", str(float(qty) * float(price)))
 ```
 
-### Fulltext search in document
+### 在文档中进行全文搜索
 
 ```python
 content = get_document_content(document_data)
@@ -187,7 +187,7 @@ if "REVERSE CHARGE" in content.upper():
     set_field_value(document_data, "tax_code", "RC")
 ```
 
-### Sub-org routing
+### 子组织路由
 
 ```python
 supplier = get_field_value(document_data, "supplier_name", "", is_clean=True)

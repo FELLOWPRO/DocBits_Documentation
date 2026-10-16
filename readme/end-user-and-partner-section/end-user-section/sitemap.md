@@ -1,43 +1,43 @@
-# Sitemap
+# 站点地图
 
-The Sitemap is the full, searchable index of everything DocBits exposes — every page, dialog, sidebar entry, action, and in-page feature, grouped by category. It is the long-form companion to [Global Quick Search](global-quick-search.md).
+站点地图是 DocBits 所有可用内容的完整可搜索索引，按类别分组列出每个页面、对话框、侧边栏条目、操作和页面内功能。它是 [全局快速搜索](global-quick-search.md) 的长篇补充。
 
-## How to access
+## 如何访问
 
-Open the Sitemap from the sidebar (entry near the bottom), or press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> and choose **View all results**. The direct URL is `/sitemap`.
+从侧边栏打开站点地图（靠近底部的条目），或按 <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd>，然后选择 **查看所有结果（View all results）**。直接访问 URL：`/sitemap`。
 
-<figure><img src="../../.gitbook/assets/sitemap-overview.png" alt="Sitemap overview"><figcaption><p>Sitemap with category overview and search header.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sitemap-overview.png" alt="站点地图概览"><figcaption><p>站点地图，包含类别概览和搜索栏。</p></figcaption></figure>
 
-## Browsing the catalog
+## 浏览目录
 
-The Sitemap is grouped into categories that mirror the structure of the app — Settings, Document Processing, Workflow, Validation, and so on. Each category lists its pages, then its in-page features grouped by subcategory.
+站点地图按类别分组，与应用的结构对应，例如“设置”“文档处理”“工作流”和“验证”。每个类别都列出其页面，并按子类别分组列出页面内功能。
 
-Entries are colour-coded by type:
+条目按类型以不同颜色标示：
 
-* **Page** — a full navigable route.
-* **Dialog** — a modal opened from somewhere in the app.
-* **Sidebar / Panel / Menu** — a navigation surface or contextual panel.
-* **Action** — a button or shortcut that performs something without navigating.
+* **页面（Page）** — 可导航到的完整路由。
+* **对话框（Dialog）** — 从应用某处打开的模态窗口。
+* **侧边栏 / 面板 / 菜单（Sidebar / Panel / Menu）** — 导航区域或上下文面板。
+* **操作（Action）** — 执行某项功能但不会跳转页面的按钮或快捷键。
 
-Click any entry to jump straight to it. Entries that need a parameter (such as a document type or document ID) include an inline selector — choose the value before clicking through.
+点击任意条目即可直接跳转到相应位置。需要参数的条目（例如文档类型或文档 ID）会包含内嵌选择器；先选择值，再点击跳转。
 
-## Searching and filtering
+## 搜索和筛选
 
-The sticky header at the top of the page hosts the search box and the filter pills. Type a few characters to live-filter the list across labels and descriptions. Use the type pills to narrow to a single entry type — for example, only **Dialog** entries.
+页面顶部的固定标题栏包含搜索框和筛选标签。输入几个字符，即可根据标签和描述实时筛选列表。使用类型标签可缩小范围，只显示一种条目类型，例如仅显示 **对话框（Dialog）** 条目。
 
-The current search and filter are added to the URL, so a filtered view can be bookmarked or shared.
+当前搜索和筛选条件会添加到 URL 中，因此可以为筛选后的视图添加书签或与他人分享。
 
-<mark>The Sitemap respects the same permission gating as the rest of DocBits. Pages you cannot access do not appear.</mark>
+<mark>站点地图遵循与 DocBits 其他部分相同的权限控制。您无权访问的页面不会显示。</mark>
 
-## Developer mode
+## 开发者模式
 
-A **User / Dev** toggle in the header turns on extra detail used by partner developers:
+标题栏中的 **用户 / 开发者（User / Dev）** 切换开关可显示合作伙伴开发者需要的额外详情：
 
-* The internal route path for each entry.
-* Parameter tags (`:docType`, `:docId`, deep-link keys).
+* 每个条目的内部路由路径。
+* 参数标签（`:docType`、`:docId`、深层链接键）。
 
-Developer mode is remembered in your browser. Switch back to User mode for the regular reading view.
+开发者模式会保存在浏览器中。切换回用户模式，即可返回常规阅读视图。
 
-## Back-to-top
+## 返回顶部
 
-The Sitemap is long. Once you scroll past the first screen, a back-to-top button appears in the bottom right corner.
+站点地图较长。向下滚动超过首屏后，右下角会出现返回顶部按钮。

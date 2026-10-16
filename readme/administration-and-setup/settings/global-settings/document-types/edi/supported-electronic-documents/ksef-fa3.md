@@ -1,30 +1,30 @@
 ---
-description: KSEF FA3 electronic document support in DocBits
+description: DocBits 对 KSEF FA3 电子文档的支持
 ---
 
 # 🇵🇱 KSEF FA3
 
-| Property             | Value                       |
+| 属性                 | 值                         |
 | -------------------- | --------------------------- |
-| **Country / Region** | Poland                      |
-| **Document Types**   | Invoice, Corrective Invoice |
-| **Format**           | XML                         |
-| **Standard**         | KSeF FA(3)                  |
+| **国家 / 地区**      | 波兰                        |
+| **文档类型**         | 发票、更正发票               |
+| **格式**             | XML                         |
+| **标准**             | KSeF FA(3)                  |
 
-KSeF FA3 is the latest schema version of the Polish National e-Invoice System. It adds support for additional document types, improved handling of corrective invoices, and updated validation rules aligned with the latest Polish VAT regulations.
+KSeF FA3 是波兰国家电子发票系统的最新架构版本。它支持更多文档类型，改进了更正发票的处理方式，并更新了验证规则，以符合最新的波兰增值税法规。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件               | 状态        |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览               | ✅ 支持      |
+| 字段提取           | ✅ 支持      |
+| 转换               | ✅ 支持      |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/ksef-preview.png" alt="KSeF FA(3) invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Poland KSeF FA(3) invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/ksef-preview.png" alt="DocBits 中的 KSeF FA(3) 发票预览"><figcaption><p>波兰 KSeF FA(3) 发票的默认 DocBits 预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

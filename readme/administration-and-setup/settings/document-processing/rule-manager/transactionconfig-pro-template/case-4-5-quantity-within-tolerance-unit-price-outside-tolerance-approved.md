@@ -1,61 +1,61 @@
-# Case 4, 5: Quantity Within Tolerance, Unit Price Outside Tolerance (Approved)
+# 情况 4、5：数量在容差范围内，单价超出容差（已审批）
 
-## Scenario:
+## 场景：
 
-The quantity on the invoice is within tolerance, but the unit price is outside the acceptable tolerance range. However, this variance in the unit price has been reviewed and approved by the appropriate authorities.
+发票上的数量在容差范围内，但单价超出可接受的容差范围。不过，相关主管部门已经审核并批准了这项单价差异。
 
-## Action:
+## 操作：
 
-The system adjusts the unit price to match the purchase order and applies any necessary line charges to account for the difference.
+系统会将单价调整为与采购订单一致，并应用必要的行费用来补足差额。
 
-## Example:
+## 示例：
 
-**Purchase Order (PO):**
+**采购订单 (PO)：**
 
-Quantity: <mark style="color:green;">100</mark> units
+数量：<mark style="color:green;">100</mark> 件
 
-Unit Price: $10.00 per unit
+单价：每件 $10.00
 
-Total Amount: <mark style="color:purple;">$1,000.00</mark>
+总金额：<mark style="color:purple;">$1,000.00</mark>
 
-**Invoice Received:**
+**收到的发票：**
 
-Quantity: <mark style="color:green;">100</mark> units (within tolerance)
+数量：<mark style="color:green;">100</mark> 件（在容差范围内）
 
-Unit Price: <mark style="color:red;">$11.00</mark> per unit (outside tolerance of ±5%)
+单价：每件 <mark style="color:red;">$11.00</mark>（超出 ±5% 的容差范围）
 
-Total Amount: <mark style="color:red;">$1,100.00</mark>
+总金额：<mark style="color:red;">$1,100.00</mark>
 
-**Tolerance Levels:**
+**容差级别：**
 
-Quantity Tolerance: ±2%
+数量容差：±2%
 
-Unit Price Tolerance: ±5% (expected range: $9.50 to $10.50)
+单价容差：±5%（预期范围：$9.50 至 $10.50）
 
-**Approval:**
+**审批：**
 
-• The $11.00 unit price is outside the tolerance range but has been manually approved by the appropriate department.
+• $11.00 的单价超出容差范围，但已由相关部门手动审批。
 
-Since the quantity is within tolerance but the unit price is outside tolerance (yet approved), the system will:
+由于数量在容差范围内，但单价超出容差范围（且已获批准），系统将：
 
-1\. **Adjust the Unit Price**: The system adjusts the unit price back to the PO’s unit price because the variance was approved:
+1\. **调整单价**：由于差异已获批准，系统会将单价调整回采购订单中的单价：
 
-• **Adjusted Unit Price = $10.00 per unit**
+• **调整后的单价 = 每件 $10.00**
 
-• **Adjusted Total Amount = 100 units × $10.00 per unit = $1,000.00**
+• **调整后的总金额 = 100 件 × 每件 $10.00 = $1,000.00**
 
-2\. **Apply a Line Charge for the Difference**: Since the approved unit price of $11.00 is higher than the PO unit price of $10.00, the system applies a line charge to account for this difference:
+2\. **应用差额行费用**：由于已批准的 $11.00 发票单价高于采购订单中的 $10.00 单价，系统会应用一笔行费用来补足差额：
 
-• **Line Charge Amount = (Approved Invoice Unit Price - PO Unit Price) × Quantity**
+• **行费用金额 =（已批准的发票单价 - 采购订单单价）× 数量**
 
-• **Line Charge Amount = ($11.00 - $10.00) × 100 units = $100.00**
+• **行费用金额 =（$11.00 - $10.00）× 100 件 = $100.00**
 
-3\. **Process the Invoice**: The system processes the invoice with:
+3\. **处理发票**：系统按以下金额处理发票：
 
-• **Base Amount:** $1,000.00
+• **基础金额：** $1,000.00
 
-• **Line Charge:** $100.00
+• **行费用：** $100.00
 
-• **Total Processed Amount:** $1,100.00
+• **处理后的总金额：** $1,100.00
 
-This ensures that while the base PO values are maintained for consistency, the approved variance in the unit price is accounted for through an additional line charge, resulting in accurate financial processing and record-keeping.
+这样既能保持采购订单基础值的一致性，也能通过额外的行费用计入已批准的单价差异，从而确保财务处理和记录准确无误。

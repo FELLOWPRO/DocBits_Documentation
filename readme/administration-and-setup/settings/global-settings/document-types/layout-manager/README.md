@@ -1,31 +1,29 @@
-# Layout Manager
+# 布局管理器
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 08.46.24.png" alt=""><figcaption></figcaption></figure>
 
-#### Overview
+#### 概述
 
-The Layout Manager allows administrators to visually configure and modify the layout of document types by setting properties for various data fields and groups within a document. This interface helps ensure that the extraction models and manual data entry points align precisely with the document's structure as scanned or uploaded into Docbits.
+布局管理器允许管理员通过设置文档中各种数据字段和分组的属性，以可视化方式配置和修改文档类型的布局。此界面有助于确保提取模型和手动数据录入位置与扫描或上传到 Docbits 的文档结构精确匹配。
 
-#### Key Components
+#### 关键组件
 
-1. **Groups and Fields**:
-   * **Groups**: Organizational units within a document type that categorize related fields (e.g., Invoice Details, Payment Details). These can be expanded or collapsed and arranged to mirror the logical grouping in the actual document.
-   * **Fields**: Individual data points within each group (e.g., Invoice Number, Payment Terms). Each field can be customized for how data is captured, displayed, and processed.
-2. **Properties Panel**:
-   * This panel displays the properties of the selected field or group, allowing for detailed configuration, such as:
-     * **Label**: The visible label for the field in the user interface.
-     * **Field Name**: The technical identifier used within the system.
-     * **Element Width in Percentage**: Determines the width of the field in relation to the document layout.
-     * **Tab Index**: Controls the tabbing order for navigation.
-     * **Run Script on Change**: Whether to execute a script when the field value changes.
-     * **Display Label On Left**: Whether the label is displayed to the left of the field or above it.
-     * **Is Textarea**: Specifies if the field should be a textarea, accommodating larger amounts of text.
-     * **Select Model Type**: Option to select which model type will handle the extraction of this field.
-     * **Field Length**: Maximum length of data to be accepted in this field.
-     * **Banned Keywords**: Keywords that are not allowed within the field.
-3. **Template Preview**:
-   * Shows a real-time preview of how the document will appear based on the current layout configuration. This helps in ensuring that the layout matches the actual document structure and is vital for testing and refining the document processing setup.
+1. **分组和字段**：
+   * **分组**：文档类型中的组织单元，用于对相关字段进行分类（例如，发票详情、付款详情）。这些分组可以展开或折叠，也可以调整顺序，使其与实际文档中的逻辑分组保持一致。
+   * **字段**：每个分组中的独立数据项（例如，发票号码、付款条款）。可以自定义每个字段的数据采集、显示和处理方式。
+2. **属性面板**：
+   * 此面板显示所选字段或分组的属性，可进行详细配置，例如：
+     * **标签**：字段在用户界面中显示的标签。
+     * **字段名称**：系统中使用的技术标识符。
+     * **元素宽度（百分比）**：字段相对于文档布局的宽度。
+     * **Tab 索引**：控制导航时的 Tab 键顺序。
+     * **更改时运行脚本**：字段值发生变化时是否执行脚本。
+     * **左侧显示标签**：标签显示在字段左侧还是上方。
+     * **是否为文本区域**：指定字段是否应为文本区域，以容纳较长文本。
+     * **选择模型类型**：选择用于处理此字段提取的模型类型。
+     * **字段长度**：此字段可接受数据的最大长度。
+     * **禁止使用的关键词**：字段中不允许出现的关键词。
+3. **模板预览**：
+   * 根据当前布局配置实时预览文档的显示效果。这有助于确认布局是否符合实际文档结构，对于测试和优化文档处理设置至关重要。
 
 {% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2490" %}
-
-

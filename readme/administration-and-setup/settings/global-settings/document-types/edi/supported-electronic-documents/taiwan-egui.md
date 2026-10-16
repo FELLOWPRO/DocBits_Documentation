@@ -1,30 +1,30 @@
 ---
-description: TAIWAN EGUI electronic document support in DocBits
+description: "DocBits 中对台湾 eGUI 电子文档的支持"
 ---
 
-# 🇹🇼 TAIWAN EGUI
+# 🇹🇼 台湾 eGUI
 
-| Property             | Value                                        |
+| 属性                 | 值                                             |
 | -------------------- | -------------------------------------------- |
-| **Country / Region** | Taiwan                                       |
-| **Document Types**   | Invoice (Uniform Invoice), Credit Note       |
-| **Format**           | XML                                          |
-| **Standard**         | eGUI (Electronic Government Uniform Invoice) |
+| **国家 / 地区**      | 台湾                                         |
+| **文档类型**         | 发票（统一发票）、贷项通知单                    |
+| **格式**             | XML                                          |
+| **标准**             | eGUI（电子政府统一发票）                       |
 
-Taiwan eGUI is the electronic Government Uniform Invoice system operated by the Ministry of Finance. It is a mandatory e-invoicing standard for all business transactions in Taiwan, with invoices stored on the government platform and identified by a unique invoice number format.
+台湾 eGUI 是由财政部运营的电子政府统一发票系统。它是台湾所有商业交易的强制性电子发票标准，发票存储在政府平台上，并通过唯一的发票号码格式进行识别。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件             | 状态        |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览             | ✅ 支持     |
+| 字段提取         | ✅ 支持     |
+| 转换             | ✅ 支持     |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/taiwan-egui-preview.png" alt="Taiwan eGUI invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Taiwan eGUI invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/taiwan-egui-preview.png" alt="DocBits 中的台湾 eGUI 发票预览"><figcaption><p>台湾 eGUI 发票的默认 DocBits 预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)</final

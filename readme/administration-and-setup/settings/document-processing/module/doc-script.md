@@ -2,5 +2,4 @@
 hidden: true
 ---
 
-# Doc Script
-
+# 文档脚本

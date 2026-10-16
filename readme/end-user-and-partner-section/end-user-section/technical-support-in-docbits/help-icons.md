@@ -1,8 +1,7 @@
-# Help Icons
+# 帮助图标
 
-Help icons have been placed all around DocBits in order to assist you in learning and understanding what a feature really does and how it can assist you with your document processing.
+DocBits 中各处都放置了帮助图标，帮助您了解各项功能的实际作用，以及它们如何协助您处理文档。
 
-These help icons look as follows
+这些帮助图标如下所示：
 
 <figure><img src="../../../.gitbook/assets/help-icon.png" alt=""><figcaption></figcaption></figure>
-

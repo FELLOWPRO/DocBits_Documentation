@@ -1,66 +1,66 @@
-# Idea Board
+# 创意看板
 
-The Idea Board is the place to submit feature requests, report missing functionality, and vote on what the product team should build next. Ideas are organised by channel and visible to everyone in your organisation, with comments and voting.
+创意看板用于提交功能请求、报告缺失的功能，以及为产品团队接下来应该开发的内容投票。创意按频道分类，并对组织中的所有人可见，大家可以评论和投票。
 
-## How to access
+## 如何访问
 
-Open the sidebar and click **Ideas**, or navigate to `/ideas` directly.
+打开侧边栏并点击 **Ideas**，或直接导航至 `/ideas`。
 
-<figure><img src="../../.gitbook/assets/idea-board-overview.png" alt="Idea Board overview"><figcaption><p>The Idea Board, with channel chips, filters, and idea cards.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/idea-board-overview.png" alt="创意看板概览"><figcaption><p>创意看板，显示频道标签、筛选器和创意卡片。</p></figcaption></figure>
 
-## Channels
+## 频道
 
-A row of channel chips sits at the top of the board: **All**, **General**, **DocNet**, **Workflow**, **Dashboard**, **Import / Export**, and **Document Processing**. Click a chip to show only the ideas in that product area; **All** clears the channel filter. Every idea belongs to one channel, shown as a badge on its card.
+看板顶部有一排频道标签：**All**、**General**、**DocNet**、**Workflow**、**Dashboard**、**Import / Export** 和 **Document Processing**。点击某个标签，仅显示对应产品领域中的创意；**All** 会清除频道筛选。每条创意都属于一个频道，该频道会以徽标形式显示在卡片上。
 
-## Browsing ideas
+## 浏览创意
 
-Each idea is shown as a card with:
+每条创意都显示为一张卡片，其中包含：
 
-* The title and a rich-text description, which can include images.
-* Separate **upvote** and **downvote** buttons, each with its own count.
-* A category badge — Feature, Improvement, Bug, Integration, or Other.
-* A channel badge — General, DocNet, Workflow, Dashboard, Import / Export, or Document Processing.
-* A status chip — New, Under Review, Planned, In Progress, Done, or Declined.
-* The submitter's name and organisation, and a relative timestamp.
-* A comments toggle that expands the discussion below the card.
+* 标题和富文本描述，描述中可以包含图片。
+* 单独的 **upvote** 和 **downvote** 按钮，各自显示投票数。
+* 类别徽标 — Feature、Improvement、Bug、Integration 或 Other。
+* 频道徽标 — General、DocNet、Workflow、Dashboard、Import / Export 或 Document Processing。
+* 状态标签 — New、Under Review、Planned、In Progress、Done 或 Declined。
+* 提交者的姓名和所属组织，以及相对时间戳。
+* 评论切换按钮，点击后可展开卡片下方的讨论内容。
 
-Pagination at the bottom of the list moves between pages.
+列表底部的分页控件可用于切换页面。
 
-## Submitting a new idea
+## 提交新创意
 
-Click **New idea** in the header. The dialog asks for:
+点击标题栏中的 **New idea**。对话框会要求填写：
 
-* **Title** — a short, descriptive name for the idea.
-* **Description** — an optional rich-text editor with bold, italic, underline, strike-through, lists, and links. You can also add images: paste them directly, or use the **Add image** button to insert one into the description.
-* **Category** — pick the closest match. The product team uses this to route ideas.
-* **Channel** — the product area the idea belongs to.
+* **Title** — 简短且能说明创意的名称。
+* **Description** — 可选的富文本编辑器，支持粗体、斜体、下划线、删除线、列表和链接。你还可以添加图片：直接粘贴图片，或使用 **Add image** 按钮将图片插入描述中。
+* **Category** — 选择最接近的类别。产品团队会据此分派创意。
+* **Channel** — 创意所属的产品领域。
 
-Press **Submit** to publish. The idea appears in the list with the **New** status.
+点击 **Submit** 发布。创意会以 **New** 状态显示在列表中。
 
-<figure><img src="../../.gitbook/assets/idea-board-new-idea.png" alt="New idea dialog"><figcaption><p>The New Idea dialog, with category and channel selectors.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/idea-board-new-idea.png" alt="新建创意对话框"><figcaption><p>新建创意对话框，包含类别和频道选择器。</p></figcaption></figure>
 
-## Voting
+## 投票
 
-Each idea has separate **upvote** and **downvote** buttons, each with its own count. Click a button to cast your vote, click the same button again to remove it, or click the opposite button to switch. Votes signal demand to the product team and feed the **Hot** and **Top Rated** sort orders.
+每条创意都有单独的 **upvote** 和 **downvote** 按钮，各自显示投票数。点击按钮即可投票；再次点击同一按钮可取消投票；点击相反按钮则可切换投票方向。投票可以向产品团队反映需求，并影响 **Hot** 和 **Top Rated** 排序结果。
 
-## Commenting
+## 评论
 
-Open an idea's comment thread to ask questions, add context, or share workarounds. You can upvote or downvote comments (but not your own) and delete comments you posted. The submitter and admins can also delete comments to keep threads on-topic.
+展开创意的评论串，即可提问、补充背景信息或分享临时解决方法。你可以为评论投赞成票或反对票（但不能为自己的评论投票），也可以删除自己发布的评论。创意提交者和管理员也可以删除评论，以确保讨论切合主题。
 
-## Filtering and sorting
+## 筛选和排序
 
-Above the list you can combine:
+列表上方可以组合使用以下选项：
 
-* The **channel** chips.
-* A search box matching against title and description.
-* A category dropdown.
-* A status dropdown.
-* A sort selector — **Newest**, **Hot**, or **Top Rated**.
+* **频道**标签。
+* 搜索框，可匹配标题和描述。
+* 类别下拉菜单。
+* 状态下拉菜单。
+* 排序选择器 — **Newest**、**Hot** 或 **Top Rated**。
 
-Filters combine, so you can narrow to, say, "Top Rated Improvements that are Under Review" in a few clicks.
+筛选条件可以组合使用，因此只需点击几下，就能缩小范围，例如查找“评分最高且正在审核中的改进”。
 
-## Editing or deleting your own idea
+## 编辑或删除自己的创意
 
-The card menu (three-dot button) lets you edit or delete an idea you submitted.
+卡片菜单（三点按钮）可用于编辑或删除你提交的创意。
 
-<mark>The Idea Board is for product feedback, not for incident reports. Use a support ticket for issues that are blocking your work today.</mark>
+<mark>创意看板用于收集产品反馈，不用于报告事件。如果问题正影响你当前的工作，请提交支持工单。</mark>

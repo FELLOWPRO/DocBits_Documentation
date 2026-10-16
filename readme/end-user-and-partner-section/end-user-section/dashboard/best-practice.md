@@ -2,43 +2,43 @@
 hidden: true
 ---
 
-# Best Practice
+# 最佳实践
 
-## Setting up a dashboard that aligns with users' daily routines requires careful planning and implementation.
+## 要让仪表板与用户的日常工作流程相契合，需要周密规划并妥善实施。
 
-**Here are best practices that can help you:**
+**以下最佳实践可以为您提供帮助：**
 
-**Custom views:**
+**自定义视图：**
 
-* Make sure the dashboard is customizable so users can customize their own views and layouts. This can be done through the ability to add, remove, or rearrange widgets.
+* 确保仪表板支持自定义，让用户能够调整自己的视图和布局。用户可以添加、移除或重新排列小组件来实现这一点。
 
-**Automatic updates:**
+**自动更新：**
 
-* Implement automatic updates to ensure data is always up-to-date. This is especially important for high-use environments.
-* You can enable this auto-refresh tool in the settings.
+* 实施自动更新，确保数据始终保持最新。这对于高频使用的环境尤其重要。
+* 您可以在设置中启用自动刷新工具。
 
-**User guidance and training:**
+**用户指导与培训：**
 
-* Offer a user-friendly interface and instructions on how to use the dashboard.
-* Train users regularly to ensure they understand all the features and capabilities of the dashboard.
+* 提供易于使用的界面，以及有关如何使用仪表板的说明。
+* 定期培训用户，确保他们了解仪表板的所有功能和特性。
 
-**Filters and views:**
+**筛选器和视图：**
 
-* Using filters can be very helpful when searching for documents, but also consider resetting filters to keep a consistent view of data.
+* 搜索文档时，筛选器非常有用；同时也应考虑重置筛选器，以保持数据视图一致。
 
-**Dashboard analytics:**
+**仪表板分析：**
 
-* Monitor dashboard usage and collect feedback from users.
-* Analyze which parts of the dashboard are used the most and what improvements can be made to further optimize the user experience.
+* 监控仪表板的使用情况并收集用户反馈。
+* 分析仪表板中哪些部分使用最频繁，以及可以进行哪些改进来进一步优化用户体验。
 
-**Data visualization:**
+**数据可视化：**
 
-* Use engaging and meaningful data visualizations to present information quickly and understandably.
-* Choose visualizations based on user needs and the type of data presented.
+* 使用直观且有意义的数据可视化，以便快速、清晰地呈现信息。
+* 根据用户需求和所呈现的数据类型选择可视化方式。
 
-**Security and privacy:**
+**安全与隐私：**
 
-* Ensure the dashboard adheres to security standards and sensitive data is adequately protected.
-* Implement access controls to ensure users can only access the data that is relevant to them.
+* 确保仪表板符合安全标准，并妥善保护敏感数据。
+* 实施访问控制，确保用户只能访问与其相关的数据。
 
-By considering these best practices, you can create a dashboard that effectively aligns with users' daily routines and helps them make informed decisions.
+遵循这些最佳实践，您可以创建一个与用户日常工作流程有效契合的仪表板，帮助他们做出明智的决策。

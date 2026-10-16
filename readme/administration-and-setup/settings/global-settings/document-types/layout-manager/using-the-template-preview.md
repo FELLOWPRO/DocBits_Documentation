@@ -1,47 +1,47 @@
-# Using the Template Preview
+# 使用模板预览
 
-## The Template Preview is an extremely useful tool for checking and adjusting layout settings in real time before making changes to a document or template.
+## 模板预览是一个非常实用的工具，可用于实时检查和调整布局设置，然后再对文档或模板进行更改。
 
-### Here's an explanation of how you can use the Template Preview:
+### 以下说明如何使用模板预览：
 
-<figure><img src="../../../../../.gitbook/assets/image (152).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (253).png" alt=""><figcaption></figcaption></figure>
 
-#### Opening the Template Preview:
+#### 打开模板预览：
 
-* You can usually find the Template Preview option in the template editor interface.
+* 通常可以在模板编辑器界面中找到模板预览选项。
 
-<figure><img src="../../../../../.gitbook/assets/image (153).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (254).png" alt=""><figcaption></figcaption></figure>
 
-#### Selecting the template:
+#### 选择模板：
 
-* Select the template whose layout you want to check.
-* This can be an existing template you want to make changes to or a new template you want to create.
+* 选择要检查其布局的模板。
+* 可以选择要修改的现有模板，也可以选择要创建的新模板。
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-24 um 12.31.04.png" alt="" width="186"><figcaption></figcaption></figure>
 
-#### Adjusting the layout settings:
+#### 调整布局设置：
 
-* Change the layout settings as needed. This can include adding, removing or adjusting groups, fields, columns, rows, fonts, etc.
+* 根据需要更改布局设置。这可能包括添加、移除或调整组、字段、列、行、字体等。
 
-<figure><img src="../../../../../.gitbook/assets/image (155).png" alt="" width="271"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (256).png" alt="" width="271"><figcaption></figcaption></figure>
 
-#### Real-time preview:
+#### 实时预览：
 
-* As you change the layout settings, the preview updates in real time.
-* You can immediately see how your changes affect the look and structure of the template.
+* 更改布局设置时，预览会实时更新。
+* 您可以立即查看更改对模板外观和结构的影响。
 
-#### Interactive customization:
+#### 交互式自定义：
 
-* Take advantage of the ability to interactively customize the layout by moving, resizing, or making other adjustments to elements while checking the effects in real time in the preview.
+* 检查预览中的实时效果，同时利用交互式自定义布局的功能，例如移动、调整元素大小或进行其他调整。
 
-#### Testing different configurations:
+#### 测试不同的配置：
 
-* Experiment with different layout configurations to find the best design for your needs.
-* Use the template preview to see how each change affects the final look.
+* 尝试不同的布局配置，找到最适合您需求的设计。
+* 使用模板预览查看每项更改对最终外观的影响。
 
-#### Saving and committing changes:
+#### 保存并提交更改：
 
-* Once you are happy with the layout, save your changes.
-* Depending on the software, you may also be able to find the option to commit your changes directly to update the template for use in other documents or processes.
+* 对布局满意后，保存更改。
+* 根据软件的不同，您还可以找到直接提交更改的选项，以更新模板，供其他文档或流程使用。
 
-Using the template preview allows you to make sure your layout meets your desired needs before committing changes. This allows you to efficiently customize the design and structure of your documents and ensure that they meet the desired visual and functional standards.
+使用模板预览可确保在提交更改之前，布局符合您的预期。这样，您就可以高效地自定义文档的设计和结构，并确保其符合预期的视觉和功能标准。

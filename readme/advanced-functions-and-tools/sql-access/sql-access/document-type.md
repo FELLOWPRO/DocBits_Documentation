@@ -1,23 +1,23 @@
-# Document type
+# 文档类型
 
-## Spalten
+## 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `document_key`: internal
-* `document_name`: internal
-* `title`: internal
-* `translation_key`: internal
-* `extraction_type`: internal
-* `document_type_category`: internal
-* `has_table`: boolean
-* `sort_order`: integer
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
+* `id`：内部
+* `org_id`：组织 ID
+* `document_key`：内部
+* `document_name`：内部
+* `title`：内部
+* `translation_key`：内部
+* `extraction_type`：内部
+* `document_type_category`：内部
+* `has_table`：布尔值
+* `sort_order`：整数
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
 
-## Analyse & Beschreibung
+## 分析与说明
 
 ```markdown
 # Table: public.document_type

@@ -1,62 +1,62 @@
-# Due Date Calculation
+# 到期日计算
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_overview.png" alt="Due Date Calculation settings"><figcaption><p>Due Date Calculation settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/due_date_calc_overview.png" alt="到期日计算设置"><figcaption><p>到期日计算设置</p></figcaption></figure>
 
-The **Due Date Calculation** page (**Document Processing → Due Date Calculation**) controls how DocBits computes invoice due dates, discount (Skonto) due dates and payment terms from the payment-term codes found on invoices.
+**到期日计算**页面（**文档处理 → 到期日计算**）用于控制 DocBits 如何根据发票中的付款条件代码计算发票到期日、折扣（Skonto）到期日和付款条件。
 
-## Show Calculated Fields
+## 显示计算字段
 
-Enable **Show Calculated Fields** to make the auto-calculated invoice fields — due date, discount due date, payment terms and AP assignment code — appear in Field Settings and as variables in Quick Search and email templates. Custom document types are never affected.
+启用**显示计算字段**后，自动计算的发票字段（到期日、折扣到期日、付款条件和 AP 分配代码）会显示在字段设置中，并作为变量供快速搜索和电子邮件模板使用。自定义文档类型不受影响。
 
-## Invoice Due Date Calculation
+## 发票到期日计算
 
-### Weekend Handling
+### 周末处理方式
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_weekend_options.png" alt="Weekend convention options"><figcaption><p>Weekend convention options</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/due_date_calc_weekend_options.png" alt="周末规则选项"><figcaption><p>周末规则选项</p></figcaption></figure>
 
-Choose how a due date that lands on a Saturday or Sunday is adjusted. This applies to **both** the invoice due date and the discount (Skonto) due date.
+选择到期日落在星期六或星期日时的调整方式。此设置同时适用于**发票到期日**和**折扣（Skonto）到期日**。
 
-| Convention             | Effect                                                                    |
-| ---------------------- | ------------------------------------------------------------------------- |
-| **None**               | Keep the calendar date (no adjustment).                                   |
-| **Following**          | Move Sat/Sun to the next Monday.                                          |
-| **Preceding**          | Move Sat/Sun to the previous Friday.                                      |
-| **Nearest**            | Saturday → Friday, Sunday → Monday.                                       |
-| **Modified Following** | Next Monday, unless it crosses into the next month, then previous Friday. |
+| 规则 | 效果 |
+| --- | --- |
+| **无** | 保留日历日期（不作调整）。 |
+| **顺延** | 将星期六或星期日移至下一个星期一。 |
+| **提前** | 将星期六或星期日移至前一个星期五。 |
+| **就近调整** | 星期六 → 星期五，星期日 → 星期一。 |
+| **修改后顺延** | 顺延至下一个星期一；如果跨入下个月，则改为前一个星期五。 |
 
-### AP Assignment Code
+### AP 分配代码
 
-Map vendor payment terms to AP assignment codes for automated invoice routing by choosing the **AP Assignment Code Field**.
+选择**AP 分配代码字段**，将供应商付款条件映射到 AP 分配代码，以便自动路由发票。
 
-## Discount Term Overwrites
+## 折扣条件覆盖
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_formats.png" alt="Discount term overwrites"><figcaption><p>Discount term overwrites</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/due_date_calc_formats.png" alt="折扣条件覆盖"><figcaption><p>折扣条件覆盖</p></figcaption></figure>
 
-Use **Discount Term Overwrites** to map a specific prefix to a discount percentage and a number of days. Click **+ Add Mapping** to add a row with **Prefix**, **Percentage** and **Days**.
+使用**折扣条件覆盖**将特定前缀映射到折扣百分比和天数。点击**+ 添加映射**，添加包含**前缀**、**百分比**和**天数**的行。
 
-## Supported formats
+## 支持的格式
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_formats.png" alt="Supported payment-term and discount formats"><figcaption><p>Supported payment-term and discount formats</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/due_date_calc_formats.png" alt="支持的付款条件和折扣格式"><figcaption><p>支持的付款条件和折扣格式</p></figcaption></figure>
 
-DocBits recognises the following payment-term and discount-term codes.
+DocBits 可识别以下付款条件代码和折扣条件代码。
 
-**Supported Payment Term Formats**
+**支持的付款条件格式**
 
-| Format     | Example             | Meaning                |
-| ---------- | ------------------- | ---------------------- |
-| Infor M3   | `N90`, `N30`        | Net 90 / 30 days       |
-| Infor M3   | `NET`               | Due on receipt         |
-| Infor M3   | `M20`               | 20th of next month     |
-| Infor M3   | `E15`               | End of month + 15 days |
-| Infor LN   | `030`, `30`         | Net 30 days            |
-| Reversed   | `14N`, `30N`        | Net 14 / 30 days       |
-| Text Codes | `REC`, `DUE`, `COD` | Due on receipt         |
+| 格式 | 示例 | 含义 |
+| --- | --- | --- |
+| Infor M3 | `N90`、`N30` | 净额 90 天／30 天 |
+| Infor M3 | `NET` | 收到发票时到期 |
+| Infor M3 | `M20` | 下个月 20 日 |
+| Infor M3 | `E15` | 月末 + 15 天 |
+| Infor LN | `030`、`30` | 净额 30 天 |
+| 反向格式 | `14N`、`30N` | 净额 14 天／30 天 |
+| 文本代码 | `REC`、`DUE`、`COD` | 收到发票时到期 |
 
-**Discount Term Format** — discount terms encode early-payment discounts as 3-digit codes: the first digit is the discount percentage, the last two are the days within which to pay.
+**折扣条件格式** — 折扣条件使用 3 位代码表示提前付款折扣：首位数字表示折扣百分比，后两位表示付款期限（天数）。
 
-| Code  | Meaning                            |
-| ----- | ---------------------------------- |
-| `210` | 2% discount if paid within 10 days |
-| `130` | 1% discount if paid within 30 days |
-| `545` | 5% discount if paid within 45 days |
-| `0`   | No discount                        |
+| 代码 | 含义 |
+| --- | --- |
+| `210` | 在 10 天内付款可享受 2% 折扣 |
+| `130` | 在 30 天内付款可享受 1% 折扣 |
+| `545` | 在 45 天内付款可享受 5% 折扣 |
+| `0` | 无折扣 |

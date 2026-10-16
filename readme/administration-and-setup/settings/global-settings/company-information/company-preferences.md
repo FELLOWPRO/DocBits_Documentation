@@ -1,76 +1,76 @@
-# Company Preferences
+# 公司偏好设置
 
-## Overview
+## 概览
 
 {% embed url="https://youtu.be/TLmAHw3EXs4" %}
 
 
-In the **Company Preferences**, you can configure key formatting and notification settings for the application. These include:
+在 **Company Preferences（公司偏好设置）** 中，您可以配置应用程序的关键格式和通知设置，包括：
 
-* Choosing the **date pattern** to be used throughout the application
-* Setting the **amount formatting** (e.g., decimal separators, digit grouping)
-* Enabling or disabling push-up notifications when a new update is available
+* 选择应用程序中使用的**日期格式**
+* 设置**金额格式**（例如，小数分隔符、数字分组方式）
+* 启用或停用有新版本可用时显示的弹出通知
 
-## How to Access
+## 如何访问
 
-To access the **Company Preferences**:
+要访问 **Company Preferences（公司偏好设置）**：
 
-1.  Navigate to **Settings** → **Global Settings** → **Company Information**
+1.  前往 **Settings（设置）** → **Global Settings（全局设置）** → **Company Information（公司信息）**
 
     <figure><img src="../../../../.gitbook/assets/settings_company_information.png" alt=""><figcaption></figcaption></figure>
-2.  Scroll to the **Company Preferences** section
+2.  滚动到 **Company Preferences（公司偏好设置）** 部分
 
     <figure><img src="../../../../.gitbook/assets/company_preferences_1.png" alt=""><figcaption></figcaption></figure>
 
-## Date Pattern
+## 日期格式
 
-In this setting, you can choose the **date format** to be used throughout **DocBits**. Several formatting options are available, allowing you to customize how dates are displayed.
+在此设置中，您可以选择 **DocBits** 中使用的**日期格式**。系统提供多种格式选项，您可以自定义日期的显示方式。
 
 <figure><img src="../../../../.gitbook/assets/company_preferences_2.png" alt=""><figcaption></figcaption></figure>
 
-The following placeholders are used in the date pattern:
+日期格式中使用以下占位符：
 
-* `%d` – Day (e.g., 07)
-* `%m` – Month (e.g., 07)
-* `%Y` – Full year (e.g., 2025)
-* `%y` – Two-digit year (e.g., 25)
+* `%d` – 日（例如，07）
+* `%m` – 月（例如，07）
+* `%Y` – 四位数年份（例如，2025）
+* `%y` – 两位数年份（例如，25）
 
-#### **Example formats:**
+#### **格式示例：**
 
 * `%d.%m.%Y` → 07.07.2025
 * `%m/%d/%y` → 07/07/25
 
-Select the format that best fits your organizational or regional requirements.
+请选择最符合您组织或地区需求的格式。
 
-After making your changes, click the **Save** button in the bottom-right corner to apply them.
+完成更改后，点击右下角的 **Save（保存）** 按钮以应用更改。
 
 <figure><img src="../../../../.gitbook/assets/company_preferences_5.png" alt=""><figcaption></figcaption></figure>
 
-## Amount Formatting
+## 金额格式
 
-This setting allows you to define how amounts are formatted throughout the application—for example, whether to use a comma ( , ) or period ( . ) as the decimal separator.
+此设置用于定义应用程序中金额的格式，例如，使用逗号 ( , ) 还是句点 ( . ) 作为小数分隔符。
 
-#### **Example formats:**
+#### **格式示例：**
 
-* `1,000.00` (US format)
-* `1.000,00` (European format)
+* `1,000.00`（美国格式）
+* `1.000,00`（欧洲格式）
 
 <figure><img src="../../../../.gitbook/assets/company_preferences_3.png" alt=""><figcaption></figcaption></figure>
 
-After making your changes, click the **Save** button in the bottom-right corner to apply them.
+完成更改后，点击右下角的 **Save（保存）** 按钮以应用更改。
 
 <figure><img src="../../../../.gitbook/assets/company_preferences_5.png" alt=""><figcaption></figcaption></figure>
 
-<mark style="color:red;">**Note**</mark>: This setting controls how amounts are displayed throughout **DocBits**. The **amount format** in the **Field Validation screen** is determined by the document’s **origin** setting.
+<mark style="color:red;">**注意**</mark>：此设置控制 **DocBits** 中金额的显示方式。**Field Validation（字段验证）屏幕**中的**金额格式**由文档的**来源**设置决定。
 
-## New Version Info Dialog
+## 新版本信息对话框
 
-This setting allows you to enable a popup notification when a new version of the application is released. When activated, a dialog will automatically appear if an update is available. To apply the update:
+此设置用于启用应用程序发布新版本时显示的弹出通知。启用后，有更新可用时会自动显示对话框。要应用更新：
 
 <figure><img src="../../../../.gitbook/assets/company_preferences_4.png" alt=""><figcaption></figcaption></figure>
 
-Click **Refresh to Close** in the dialog window. **DocBits** will reload and open with the most recent version. This ensures users are always working with the latest features, improvements, and bug fixes.
+在对话框中点击 **Refresh to Close（刷新并关闭）**。**DocBits** 将重新加载并以最新版本打开。这样可以确保用户始终使用最新功能、改进和错误修复。
 
-After toggling the setting on or off, click the **Save** button in the bottom-right corner to apply your changes.
+启用或停用此设置后，点击右下角的 **Save（保存）** 按钮以应用更改。
 
 <figure><img src="../../../../.gitbook/assets/company_preferences_5.png" alt=""><figcaption></figcaption></figure>

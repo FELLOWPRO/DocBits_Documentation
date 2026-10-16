@@ -1,30 +1,30 @@
 ---
-description: PERU FACTURA ELECTRONICA electronic document support in DocBits
+description: "DocBits 对 PERU FACTURA ELECTRONICA 电子文档的支持"
 ---
 
 # 🇵🇪 PERU FACTURA ELECTRONICA
 
-| Property             | Value                       |
+| 属性                 | 值                          |
 | -------------------- | --------------------------- |
-| **Country / Region** | Peru                        |
-| **Document Types**   | Invoice                     |
-| **Format**           | UBL XML                     |
-| **Standard**         | Factura Electrónica (SUNAT) |
+| **国家 / 地区**      | 秘鲁                        |
+| **文档类型**         | 发票                        |
+| **格式**             | UBL XML                     |
+| **标准**             | Factura Electrónica (SUNAT) |
 
-Peru Factura Electrónica is the electronic invoice document type within the SUNAT CPE system. It corresponds to document type code 01 (Factura) and includes all mandatory fields required by SUNAT including series, correlative number, and electronic signature.
+秘鲁 Factura Electrónica 是 SUNAT CPE 系统中的电子发票文档类型。它对应文档类型代码 01（Factura），包含 SUNAT 要求的所有必填字段，包括系列、连续编号和电子签名。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件         | 状态         |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览         | ✅ 支持       |
+| 字段提取     | ✅ 支持       |
+| 转换         | ✅ 支持       |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/peru-factura-electronica-preview.png" alt="Peru Factura Electronica preview in DocBits"><figcaption><p>Default DocBits preview for a Peru Factura Electronica</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/peru-factura-electronica-preview.png" alt="DocBits 中的秘鲁 Factura Electronica 预览"><figcaption><p>秘鲁 Factura Electronica 的 DocBits 默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

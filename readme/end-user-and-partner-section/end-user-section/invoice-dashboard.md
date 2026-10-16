@@ -1,5 +1,5 @@
-# Invoice Dashboard
+# 发票仪表板
 
-This section offers a detailed overview of all invoices. It includes a search bar with various filters that you can select to quickly narrow down your results. Additionally, you can customize the arrangement of the column headers by using the drag-and-drop functionality for a more tailored viewing experience.
+本节详细概览所有发票。页面包含一个搜索栏和多个筛选器，您可以选择筛选器来快速缩小结果范围。此外，您还可以使用拖放功能自定义列标题的排列方式，获得更符合需求的查看体验。
 
-<figure><img src="../../.gitbook/assets/invoice_dashboard_overview.png" alt="Invoice Dashboard Interface"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/invoice_dashboard_overview.png" alt="发票仪表板界面"><figcaption></figcaption></figure>

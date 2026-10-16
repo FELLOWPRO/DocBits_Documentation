@@ -1,31 +1,31 @@
 ---
-description: PEPPOL BIS 3.0 electronic document support in DocBits
+description: "DocBits 中支持 PEPPOL BIS 3.0 电子文档"
 ---
 
 # 🇪🇺 PEPPOL BIS 3.0
 
-| Property             | Value                                          |
+| 属性                 | 值                                             |
 | -------------------- | ---------------------------------------------- |
-| **Country / Region** | European Union / International (40+ countries) |
-| **Document Types**   | Invoice, Credit Note                           |
-| **Format**           | UBL 2.1 XML                                    |
-| **Standard**         | Peppol BIS Billing 3.0                         |
+| **国家 / 地区**      | 欧盟 / 国际（40 多个国家）                      |
+| **文档类型**         | 发票、贷项通知单                                |
+| **格式**             | UBL 2.1 XML                                    |
+| **标准**             | Peppol BIS Billing 3.0                         |
 
-Peppol BIS Billing 3.0 is the pan-European e-invoicing standard used across the Peppol network. It is based on OASIS UBL 2.1 and implements the EN 16931 European Norm for electronic invoicing. Peppol enables cross-border B2B and B2G invoice exchange across 40+ countries through certified Access Points.
+Peppol BIS Billing 3.0 是泛欧电子发票标准，在 Peppol 网络中广泛使用。它基于 OASIS UBL 2.1，并实施了电子发票欧洲标准 EN 16931。通过经过认证的接入点，Peppol 支持 40 多个国家/地区之间的跨境企业对企业（B2B）和企业对政府（B2G）发票交换。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件             | 状态        |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览             | ✅ 支持      |
+| 字段提取         | ✅ 支持      |
+| 转换             | ✅ 支持      |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/peppol-bis-3-0-preview.png" alt="Peppol BIS 3.0 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Peppol BIS 3.0 invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/peppol-bis-3-0-preview.png" alt="DocBits 中的 Peppol BIS 3.0 发票预览"><figcaption><p>DocBits 中 Peppol BIS 3.0 发票的默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)
 * [Peppol BIS Billing 3.0](../peppol-bis-billing-3.0)

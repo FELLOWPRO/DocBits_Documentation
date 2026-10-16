@@ -1,14 +1,14 @@
-# Auto PO Matching
+# 自动采购订单匹配
 
-## What does this script do?
+## 此脚本的作用是什么？
 
-Automatically triggers PO (Purchase Order) matching when a PO number is present on the invoice. The po-match-service microservice compares invoice line items against the PO and populates match results.
+当发票上存在采购订单号时，自动触发采购订单匹配。po-match-service 微服务会将发票行项目与采购订单进行比较，并填充匹配结果。
 
-## Trigger
+## 触发条件
 
-`AFTER_FORMATTING` on document type **INVOICE**
+文档类型为 **INVOICE** 时触发 `AFTER_FORMATTING`
 
-## Full Script
+## 完整脚本
 
 ```python
 # Read PO number from the document
@@ -29,22 +29,23 @@ if po_nr:
     auto_po_match_for_purchase_orders(user, document_data, po_nr)
 ```
 
-## Step-by-Step Explanation
+## 分步说明
 
-1. **Read PO number** from the invoice
-2. **Clean up** the PO number by removing common prefixes like "PO-" or "PO "
-3. **Update** the cleaned PO number back to the document
-4. **Trigger PO matching** which calls the po-match-service to compare invoice lines against PO lines
+1. 从发票中**读取采购订单号**
+2. 通过移除“PO-”或“PO ”等常见前缀，**清理**采购订单号
+3. 将清理后的采购订单号**更新**回文档
+4. **触发采购订单匹配**，调用 po-match-service 比较发票行项目与采购订单行项目
 
-## What happens after matching?
+## 匹配后会发生什么？
 
-The `document_data` is updated with:
-- `po_items` — Matched PO line items
-- `po_match_status` — Match result (`"matched"`, `"partially_matched"`, etc.)
-- `po_multi_matched` — Whether multiple POs were matched
+`document_data` 将更新以下内容：
 
-## Functions Used
+- `po_items` — 已匹配的采购订单行项目
+- `po_match_status` — 匹配结果（`"matched"`、`"partially_matched"` 等）
+- `po_multi_matched` — 是否匹配到多个采购订单
 
-- [get\_field\_value()](../field-functions.md#get\_field\_value) — Read field value
-- [set\_field\_value()](../field-functions.md#set\_field\_value) — Write cleaned PO number
-- [auto\_po\_match\_for\_purchase\_orders()](../business-logic-functions.md#auto\_po\_match\_for\_purchase\_orders) — Trigger PO matching
+## 使用的函数
+
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — 读取字段值
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — 写入清理后的采购订单号
+- [auto\_po\_match\_for\_purchase\_orders()](../business-logic-functions.md#auto\_po\_match\_for\_purchase\_orders) — 触发采购订单匹配

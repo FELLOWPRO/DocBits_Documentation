@@ -1,4 +1,4 @@
-# Create your Custom App in Infor OS
+# 在 Infor OS 中创建自定义应用
 
 
 
@@ -7,5 +7,5 @@
 
 
 {% hint style="warning" %}
-When your custom app imports the DocBits API specification, use the **Swagger 2.0** specification (`/openapi-swagger2.json`), not the OpenAPI 3.0 one. Infor OS's older swagger-ui needs the 2.0 dialect to build file uploads correctly — otherwise uploads fail with `400 — Missing boundary in multipart`. See [Infor OS with DocBits API Integration](infor-os-with-docbits-api-integration.md) for the full explanation and how to copy the URL.
+自定义应用导入 DocBits API 规范时，请使用 **Swagger 2.0** 规范（`/openapi-swagger2.json`），而不要使用 OpenAPI 3.0 规范。Infor OS 使用的旧版 swagger-ui 需要 2.0 方言才能正确构建文件上传请求，否则上传会失败并显示 `400 — Missing boundary in multipart`。完整说明及 URL 的复制方法请参阅 [Infor OS 与 DocBits API 集成](infor-os-with-docbits-api-integration.md)。
 {% endhint %}

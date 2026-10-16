@@ -1,78 +1,78 @@
-# Inbound Emails
+# 入站电子邮件
 
-### Overview
+### 概述
 
-DocBits can pick up documents straight from email — no manual upload needed. There are **two ways** to bring email documents in, both managed under **Settings → Document Processing → Import**:
+DocBits 可以直接从电子邮件获取文档，无需手动上传。导入电子邮件文档有 **两种方式**，均在 **Settings → Document Processing → Import** 中管理：
 
-| Method | How it works | Best for |
+| 方式 | 工作原理 | 适用场景 |
 |--------|--------------|----------|
-| **Email Import account** | DocBits connects to a mailbox you own (**IMAP**, **OAuth Office365**, or **OAuth Office365 – Tenant**) and imports the documents it finds. | A dedicated mailbox that already receives your documents (e.g. `invoices@yourcompany.com`). |
-| **Forward Emails (Inbound Emails)** | DocBits gives you a unique address; anyone you authorise can **forward** documents to it. | Ad‑hoc forwarding from many senders without sharing mailbox credentials. |
+| **Email Import 账户** | DocBits 连接到您拥有的邮箱（**IMAP**、**OAuth Office365** 或 **OAuth Office365 – Tenant**），并导入找到的文档。 | 专门用于接收文档的邮箱（例如 `invoices@yourcompany.com`）。 |
+| **转发电子邮件（Inbound Emails）** | DocBits 会为您提供一个唯一地址；您授权的任何人都可以将文档**转发**到该地址。 | 多个发件人临时转发文档，且无需共享邮箱凭据。 |
 
-You can use either method on its own or both together.
+您可以单独使用其中任一方式，也可以同时使用两种方式。
 
-### Method 1 — Connect a mailbox (Email Import)
+### 方式 1 — 连接邮箱（Email Import）
 
-Go to **Settings → Document Processing → Import** and open the **Email Import** section. Click **New** to add a mailbox connection.
+前往 **Settings → Document Processing → Import**，打开 **Email Import** 部分。点击 **New** 添加邮箱连接。
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_email_import_entry.png" alt="Email Import section with the New button"><figcaption><p>In the Email Import section, click <strong>New</strong> to connect a mailbox.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inbound_emails_email_import_entry.png" alt="Email Import 部分及 New 按钮"><figcaption><p>在 Email Import 部分，点击 <strong>New</strong> 以连接邮箱。</p></figcaption></figure>
 
-The setup wizard opens. The first field, **Protocol**, decides how DocBits connects — choose **IMAP**, **OAuth Office365**, or **OAuth Office365 – Tenant**.
+设置向导随即打开。第一个字段 **Protocol** 决定 DocBits 的连接方式 — 选择 **IMAP**、**OAuth Office365** 或 **OAuth Office365 – Tenant**。
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_protocol_select.png" alt="The Protocol dropdown showing IMAP, OAuth Office365 and OAuth Office365 - Tenant"><figcaption><p>The <strong>Protocol</strong> dropdown offers the three connection types.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inbound_emails_protocol_select.png" alt="Protocol 下拉菜单，显示 IMAP、OAuth Office365 和 OAuth Office365 - Tenant"><figcaption><p><strong>Protocol</strong> 下拉菜单提供三种连接类型。</p></figcaption></figure>
 
 #### IMAP
 
-For a standard mailbox, choose **IMAP** and fill in the server details and account credentials:
+对于标准邮箱，选择 **IMAP** 并填写服务器详细信息和账户凭据：
 
-* **Server name** and **Port** (default `993`) of your mail server.
-* **Encryption** — `SSL`, `TLS` or `None`.
-* **Username**, **E‑Mail** and **Password** of the mailbox.
+* 邮件服务器的 **Server name** 和 **Port**（默认值为 `993`）。
+* **Encryption** — `SSL`、`TLS` 或 `None`。
+* 邮箱的 **Username**、**E‑Mail** 和 **Password**。
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_imap.png" alt="IMAP connection form with server, port, encryption and credentials"><figcaption><p>The IMAP form: mail server connection plus the mailbox credentials.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inbound_emails_imap.png" alt="IMAP 连接表单，包含服务器、端口、加密方式和凭据"><figcaption><p>IMAP 表单：邮件服务器连接信息和邮箱凭据。</p></figcaption></figure>
 
 #### OAuth Office365
 
-For a single Microsoft 365 user mailbox, choose **OAuth Office365**. Instead of a password, you authorise DocBits through Microsoft: pick the **Document Routing** target, then click **Authenticate** and complete the Microsoft sign‑in.
+对于单个 Microsoft 365 用户邮箱，选择 **OAuth Office365**。您无需使用密码，而是通过 Microsoft 授权 DocBits：选择 **Document Routing** 目标，然后点击 **Authenticate** 并完成 Microsoft 登录。
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_o365.png" alt="OAuth Office365 form with Document Routing and an Authenticate button"><figcaption><p>OAuth Office365 connects through Microsoft sign‑in — no password is stored in DocBits.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inbound_emails_o365.png" alt="OAuth Office365 表单，包含 Document Routing 和 Authenticate 按钮"><figcaption><p>OAuth Office365 通过 Microsoft 登录进行连接 — DocBits 不会存储密码。</p></figcaption></figure>
 
 #### OAuth Office365 – Tenant
 
-To connect at the tenant (organisation) level via an Azure app registration, choose **OAuth Office365 – Tenant** and enter the Azure credentials: **Tenant ID**, **Client App ID** and **Client App Value** (client secret). Use **Test connection** to verify, then **Save**.
+若要通过 Azure 应用注册在租户（组织）级别连接，请选择 **OAuth Office365 – Tenant** 并输入 Azure 凭据：**Tenant ID**、**Client App ID** 和 **Client App Value**（客户端密钥）。使用 **Test connection** 验证连接，然后点击 **Save**。
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_o365_tenant.png" alt="Azure Tenant Configuration with Tenant ID, Client App ID and Client App Value"><figcaption><p>OAuth Office365 – Tenant uses an Azure app registration (Tenant ID, Client App ID, client secret).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inbound_emails_o365_tenant.png" alt="Azure Tenant Configuration，包含 Tenant ID、Client App ID 和 Client App Value"><figcaption><p>OAuth Office365 – Tenant 使用 Azure 应用注册（Tenant ID、Client App ID、客户端密钥）。</p></figcaption></figure>
 
 {% hint style="info" %}
-**Document Routing** decides where the imported documents go — **DocBits** (the standard dashboard) or **AI Workforce**. After connecting, the wizard’s next steps let you choose which mailbox **folder** to import from, an optional **shared mailbox**, and whether to **move** processed emails to another folder.
+**Document Routing** 决定导入的文档将发送到哪里 — **DocBits**（标准仪表板）或 **AI Workforce**。连接后，向导的后续步骤会让您选择要从哪个邮箱**文件夹**导入、可选的**共享邮箱**，以及是否将已处理的电子邮件**移动**到其他文件夹。
 {% endhint %}
 
-### Method 2 — Forward emails to DocBits (Inbound Emails)
+### 方式 2 — 将电子邮件转发到 DocBits（Inbound Emails）
 
-This method needs the **Inbound Email** module to be switched on first. Go to **Settings → Document Processing → Module**, open the **Document Type** section, find **Inbound Email** and enable the toggle.
+首先需要启用 **Inbound Email** 模块。前往 **Settings → Document Processing → Module**，打开 **Document Type** 部分，找到 **Inbound Email** 并启用开关。
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_1.png" alt="Enabling the Inbound Email module"><figcaption><p>Enable <strong>Inbound Email</strong> under Settings → Document Processing → Module.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inbound_emails_1.png" alt="启用 Inbound Email 模块"><figcaption><p>在 Settings → Document Processing → Module 下启用 <strong>Inbound Email</strong>。</p></figcaption></figure>
 
-Once enabled, an **Inbound Emails** section appears under **Settings → Document Processing → Import**. It gives you everything needed to receive forwarded documents:
+启用后，**Inbound Emails** 部分会显示在 **Settings → Document Processing → Import** 下。该部分提供接收转发文档所需的全部信息：
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_forward.png" alt="Inbound Emails section: import address, predefined senders and failure-reply address"><figcaption><p>The Inbound Emails section: your import address, the predefined‑senders list, and the failure‑notification address.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inbound_emails_forward.png" alt="Inbound Emails 部分：导入地址、预定义发件人和失败回复地址"><figcaption><p>Inbound Emails 部分：您的导入地址、预定义发件人列表和失败通知地址。</p></figcaption></figure>
 
-* **Import address** — a unique, system‑generated address in the form `org_id@environment.inbound.docbits.com`. Forward or send documents to this address and DocBits imports them automatically. Use the copy icon to grab it.
-* **Import Document only from predefined E‑Mail(s)** — when enabled, only the sender addresses you list here are accepted; emails from anyone else are ignored. For each sender you may pick a **Sub‑Organization** (leave it empty to assign to the main organisation). Use **Add** to list more senders and **Delete** to remove one.
-* **Reply to this email if import can not be done** — when enabled, enter an address that should be notified whenever an import attempt fails, so problems don’t go unnoticed.
+* **Import address** — 系统生成的唯一地址，格式为 `org_id@environment.inbound.docbits.com`。将文档转发或发送到此地址，DocBits 会自动导入。点击复制图标即可复制地址。
+* **Import Document only from predefined E‑Mail(s)** — 启用后，只接受此处列出的发件人地址；其他人的电子邮件将被忽略。您可以为每个发件人选择一个 **Sub-Organization**（留空则分配给主组织）。使用 **Add** 添加更多发件人，使用 **Delete** 删除发件人。
+* **Reply to this email if import can not be done** — 启用后，输入一个地址，以便在导入尝试失败时通知该地址，避免问题被忽略。
 
-Click **Save** to apply your changes.
+点击 **Save** 应用更改。
 
 {% hint style="info" %}
-**Which attachments are imported?** DocBits imports the supported document attachments — see [Import → Email Import](../import/README.md#email-import) for the full list of file types — and unpacks forwarded `.eml` messages and Outlook `winmail.dat` (TNEF) attachments to import the documents inside. Detection is also based on the **actual file content**, so attachments that a forwarding mail server re‑labels with a generic type (`application/octet-stream`) are still imported correctly. Inline images (signature logos / embedded graphics) are ignored.
+**会导入哪些附件？** DocBits 会导入受支持的文档附件 — 完整文件类型列表请参阅 [Import → Email Import](../import/README.md#email-import) — 并解包转发的 `.eml` 邮件和 Outlook `winmail.dat`（TNEF）附件，以导入其中的文档。检测也基于**实际文件内容**，因此，即使转发邮件服务器将附件重新标记为通用类型（`application/octet-stream`），仍能正确导入。内嵌图片（签名徽标／嵌入式图形）会被忽略。
 {% endhint %}
 
-### When to use which
+### 如何选择使用方式
 
-* **Use an Email Import account** when documents already land in a dedicated mailbox and you want DocBits to fetch them on its own — IMAP for generic mail servers, OAuth Office365 for Microsoft 365.
-* **Use Forward Emails** when people should forward documents on demand, or when you don’t want to share mailbox credentials with DocBits.
-* **Combine both** if some documents arrive in a fixed mailbox while others are forwarded ad‑hoc.
+* **使用 Email Import 账户**：适用于文档已进入专用邮箱，且您希望 DocBits 自动获取文档的情况 — 通用邮件服务器使用 IMAP，Microsoft 365 使用 OAuth Office365。
+* **使用转发电子邮件**：适用于用户需要按需转发文档，或您不希望向 DocBits 提供邮箱凭据的情况。
+* **两种方式结合使用**：适用于部分文档进入固定邮箱、其他文档由用户临时转发的情况。
 
 {% hint style="info" %}
-Restricting senders (Method 2) and choosing the right **Document Routing** target (Method 1) are the two most common ways to keep an inbound pipeline clean — only the documents you expect, sent where you want them.
+限制发件人（方式 2）并选择正确的 **Document Routing** 目标（方式 1），是保持入站流程整洁的两种常见方式 — 只接收您预期的文档，并将其发送到指定位置。
 {% endhint %}

@@ -1,5 +1,0 @@
-root: ./
-
-redirects:
-    administration-and-setup/setup/watchdog-installation: administration-and-setup/setup/watchdog/watchdog-installation.md
-    overview-and-basics/release-notes/nova-major-release-16-october-2026: overview-and-basics/release-notes/nova-major-release.md

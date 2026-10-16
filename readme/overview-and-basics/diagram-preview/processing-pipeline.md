@@ -3,8 +3,8 @@ hidden: true
 noIndex: true
 ---
 
-# Processing Pipeline
+# 处理流程
 
-How DocBits processes a document from import to export: splitting, OCR, classification, extraction, master data lookup, PO matching and the touchless decision. Optional steps are dashed.
+DocBits 如何从导入到导出处理文档：拆分、OCR、分类、提取、主数据查找、采购订单匹配以及无接触式处理决策。可选步骤以虚线表示。
 
-<figure><img src="../../.gitbook/assets/archify-pipeline.svg" alt="Processing Pipeline"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/archify-pipeline.svg" alt="处理流程"><figcaption></figcaption></figure>

@@ -1,63 +1,63 @@
-# Purchase order tolerance settings / Additional purchase order tolerance
+# 采购订单容差设置 / 其他采购订单容差
 
-## **Setting to configure Purchase Order Tolerances**&#x20;
+## **配置采购订单容差的设置**
 
-Go to **Settings → General Settings → Document Types → More Settings → Purchase Order Section → PO Tolerance Setting**
+前往 **Settings → General Settings → Document Types → More Settings → Purchase Order Section → PO Tolerance Setting**
 
-### **How It Works**
+### **工作原理**
 
-When enabled, this setting allows you to define tolerances for **Quantity** and/or **Unit Price**. These tolerances can be set either as a percentage or as a fixed value. This means that an invoice can deviate from the purchase order (PO) within the specified tolerance range without being flagged as a mismatch, providing flexibility while ensuring seamless processing.
+启用此设置后，您可以为**数量**和/或**单价**定义容差。容差可以按百分比或固定值设置。这意味着发票与采购订单（PO）之间的差异只要在指定的容差范围内，就不会被标记为不匹配，从而在确保顺畅处理的同时提供灵活性。
 
-<mark style="color:red;">**NOTE**</mark>**:** Tolerances work in both directions; that is, the invoice value may be either higher or lower than the PO value within the allowed range.
+<mark style="color:red;">**注意**</mark>**：**容差适用于两个方向；也就是说，在允许范围内，发票值可以高于或低于 PO 值。
 
-### **Setting It Up**
+### **设置方法**
 
-1. **Enable the Setting:**
-   * Turn on the PO Tolerance Setting using the toggle button.
-2. **Configure Tolerances:**
-   * Four fields will appear:
-     * One field for the **Quantity Tolerance Amount**.
-     * One field for the **Unit Price Tolerance Amount**.
-   * Behind each field, there is a dropdown menu where you can select the tolerance type:
-     * **Percent:** Indicates a percentage tolerance.
-     * **Value:** Indicates a fixed amount by which the value can differ.
+1. **启用设置：**
+   * 使用切换按钮打开 PO Tolerance Setting。
+2. **配置容差：**
+   * 页面上会显示四个字段：
+     * 一个用于设置**数量容差金额**。
+     * 一个用于设置**单价容差金额**。
+   * 每个字段旁边都有一个下拉菜单，可用于选择容差类型：
+     * **Percent：**表示按百分比设置容差。
+     * **Value：**表示按固定金额设置容差，规定数值可产生的差异。
 
-<figure><img src="../../../../../../.gitbook/assets/image (394).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (407).png" alt=""><figcaption></figcaption></figure>
 
-### **Example Scenario:**
+### **示例场景：**
 
-* Suppose the **Unit Price Tolerance** is set to **5%**.
-* The purchase order includes two lines:
-  * **Line 1:** Unit Price = **$5.00**
-  * **Line 2:** Unit Price = **$2.00**
-* On the invoice:
-  * **Line 1:** The unit price is adjusted to **$4.80** (**within** the 5% tolerance).
-  * **Line 2:** The unit price is adjusted to **$2.20** (**outside** the 5% tolerance).
-* **Outcome:**
-  * Line 1 is **not flagged** as a mismatch because $4.80 is within 5% of $5.00.
-  * Line 2 **is flagged** as a mismatch because $2.20 exceeds the allowed 5% deviation from $2.00. The user is now required to take action to resolve the mismatch before the invoice can be processed further.
+* 假设**单价容差**设置为 **5%**。
+* 采购订单包含两个行项目：
+  * **行项目 1：**单价 = **$5.00**
+  * **行项目 2：**单价 = **$2.00**
+* 发票上：
+  * **行项目 1：**单价调整为 **$4.80**（在 5% 容差范围内）。
+  * **行项目 2：**单价调整为 **$2.20**（超出 5% 容差范围）。
+* **结果：**
+  * 行项目 1**不会被标记**为不匹配，因为 $4.80 与 $5.00 的差异在 5% 以内。
+  * 行项目 2**会被标记**为不匹配，因为 $2.20 与 $2.00 的差异超过了允许的 5% 范围。此时，用户需要采取措施解决不匹配问题，然后才能继续处理发票。
 
-<figure><img src="../../../../../../.gitbook/assets/image (395).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (408).png" alt=""><figcaption></figcaption></figure>
 
-## Setting to configure Additional Purchase Order Tolerance Settings
+## 配置其他采购订单容差设置的设置 <a id="setting-to-configure-additional-purchase-order-tolerance-settings"></a>
 
-Go to **Settings → General Settings → Document Types → More Settings → Purchase Order Section → Additional PO Tolerance Setting**
+前往 **Settings → General Settings → Document Types → More Settings → Purchase Order Section → Additional PO Tolerance Setting**
 
-### **How It Works**
+### **工作原理**
 
-When enabled, this setting allows you to define tolerances for **Freight**, **Charges**, and/or **Tax**. These tolerances can be set either as a percentage or as a fixed value, enabling invoices to vary slightly from the PO values without being flagged as mismatches. This provides additional flexibility and ensures that minor differences do not interrupt the workflow.
+启用此设置后，您可以为**运费**、**费用**和/或**税费**定义容差。容差可以按百分比或固定值设置，使发票与 PO 值之间的小幅差异不会被标记为不匹配。这样可以提供更大的灵活性，并确保细微差异不会中断工作流。
 
-<mark style="color:red;">**NOTE**</mark>**:** Just like the standard tolerance settings, these tolerances apply in both directions—allowing for increases or decreases within the set limits.
+<mark style="color:red;">**注意**</mark>**：**与标准容差设置一样，这些容差也适用于两个方向——在设定的限值内，数值可以增加或减少。
 
-### **Setting It Up**
+### **设置方法**
 
-1. **Enable the Setting:**
-   * Turn on the Additional PO Tolerance Setting using the toggle button.
-2. **Configure Tolerances:**
-   * Six fields will become visible:
-     * One field each for the tolerance amounts for **Freight**, **Charges**, and **Tax**.
-   * Each field has an accompanying dropdown menu where you can choose the tolerance type:
-     * **Percent:** The tolerance is defined as a percentage.
-     * **Value:** The tolerance is defined as a fixed amount.
+1. **启用设置：**
+   * 使用切换按钮打开 Additional PO Tolerance Setting。
+2. **配置容差：**
+   * 页面上会显示六个字段：
+     * 分别用于设置**运费**、**费用**和**税费**的容差金额。
+   * 每个字段旁边都有一个下拉菜单，可用于选择容差类型：
+     * **Percent：**按百分比定义容差。
+     * **Value：**按固定金额定义容差。
 
-<figure><img src="../../../../../../.gitbook/assets/image (396).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (409).png" alt=""><figcaption></figcaption></figure>

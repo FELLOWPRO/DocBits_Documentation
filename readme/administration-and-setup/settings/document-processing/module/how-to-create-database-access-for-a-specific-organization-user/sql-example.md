@@ -2,5 +2,4 @@
 hidden: true
 ---
 
-# SQL Example
-
+# SQL 示例

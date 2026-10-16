@@ -1,15 +1,13 @@
+# 创建工单
 
-# Create a ticket
+在 DocBits 中验证文档时，如果遇到问题，可以在验证屏幕上使用此工具。
 
-This is a tool available to you, on the validation screen, in the event of some sort of issue occurring when validating your document in DocBits.
+此功能位于文档预览区域上方的菜单中，如下所示
 
-This feature is located in the menu above the document preview area, like below
+<figure><img src="../../../.gitbook/assets/a-technical-support-in-docbits-create-a-ticket-menu-en-20261006.png" alt="验证屏幕，鼠标悬停在右侧操作栏中的 Create ticket 按钮上。"><figcaption><p>验证屏幕操作栏中的 Create ticket 按钮。</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/a-technical-support-in-docbits-create-a-ticket-menu-en-20261006.png" alt="Validation screen with the mouse over the Create ticket button in the right action bar."><figcaption><p>The Create ticket button in the action bar of the validation screen.</p></figcaption></figure>
+点击后，将显示以下工单表单。
 
-Once clicked, the following ticket form will be displayed to you.
+<figure><img src="../../../.gitbook/assets/a-technical-support-in-docbits-create-a-ticket-form-en-20261006.png" alt="验证屏幕中打开的 Support Ticket 表单：姓名、电子邮件、主题、优先级、消息、屏幕截图和文件上传。"><figcaption><p>Support Ticket 表单。</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/a-technical-support-in-docbits-create-a-ticket-form-en-20261006.png" alt="Validation screen with the Support Ticket form open: name, e-mail, subject, priority, message, screenshot and file upload."><figcaption><p>The Support Ticket form.</p></figcaption></figure>
-
-This is where you will fill in your details as well as describe the error. You can also ,if applicable, attach a screenshot of the issue and attach a relevant file.
-
+在此填写您的详细信息并描述错误。您也可以（如适用）附上问题截图和相关文件。

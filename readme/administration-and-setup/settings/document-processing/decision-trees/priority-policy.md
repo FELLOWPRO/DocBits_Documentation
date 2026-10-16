@@ -1,17 +1,17 @@
-# Priority Policy
+# 优先级策略
 
-Choosing this option allows you to set priorities for each rule. The lower the selected number, the higher the priority (i.e., priority 1 has the highest priority). Rules are evaluated based on their priority order. The highest priority matching rule will be applied.
+选择此选项后，可以为每条规则设置优先级。所选数字越小，优先级越高（即优先级 1 最高）。系统会按优先级顺序评估规则，并应用匹配的最高优先级规则。
 
-**Example:**
+**示例：**
 
-<table><thead><tr><th width="137">Rule</th><th width="110">Priority</th><th width="268">Condition</th><th>Return Group</th></tr></thead><tbody><tr><td>1</td><td>5</td><td>Total Amount &#x3C;= 1000</td><td>GROUP_1</td></tr><tr><td>2</td><td>4</td><td>Total Amount &#x3C;= 2000</td><td>GROUP_2</td></tr><tr><td>3</td><td>3</td><td>Total Amount &#x3C;= 3000</td><td>GROUP_3</td></tr><tr><td>4</td><td>2</td><td>Total Amount &#x3C;= 4000</td><td>GROUP_4</td></tr><tr><td>5</td><td>1</td><td>Total Amount &#x3C;= 5000</td><td>GROUP_5</td></tr></tbody></table>
+<table><thead><tr><th width="137">规则</th><th width="110">优先级</th><th width="268">条件</th><th>返回组</th></tr></thead><tbody><tr><td>1</td><td>5</td><td>总金额 &#x3C;= 1000</td><td>GROUP_1</td></tr><tr><td>2</td><td>4</td><td>总金额 &#x3C;= 2000</td><td>GROUP_2</td></tr><tr><td>3</td><td>3</td><td>总金额 &#x3C;= 3000</td><td>GROUP_3</td></tr><tr><td>4</td><td>2</td><td>总金额 &#x3C;= 4000</td><td>GROUP_4</td></tr><tr><td>5</td><td>1</td><td>总金额 &#x3C;= 5000</td><td>GROUP_5</td></tr></tbody></table>
 
-If the total amount is **1500**, the rules evaluated will be:
+如果总金额为 **1500**，系统将评估以下规则：
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (matches)
-* **Rule 3**: Total Amount <= 3000 (matches)
-* **Rule 4**: Total Amount <= 4000 (matches)
-* **Rule 5**: Total Amount <= 5000 (matches)
+* **规则 1**：总金额 <= 1000（不匹配）
+* **规则 2**：总金额 <= 2000（匹配）
+* **规则 3**：总金额 <= 3000（匹配）
+* **规则 4**：总金额 <= 4000（匹配）
+* **规则 5**：总金额 <= 5000（匹配）
 
-Since the priority is applied in the order **5, 4, 3, 2, 1**, the highest priority matching rule will be **Rule 5** (**GROUP_5**). The decision tree will return **GROUP_5** because **Rule 5** has the highest priority (priority 1).
+由于优先级按 **5、4、3、2、1** 的顺序应用，匹配的最高优先级规则是 **规则 5**（**GROUP_5**）。决策树将返回 **GROUP_5**，因为 **规则 5** 的优先级最高（优先级 1）。

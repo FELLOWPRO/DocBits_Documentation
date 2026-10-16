@@ -1,30 +1,30 @@
 ---
-description: URUGUAY E-NOTA CREDITO electronic document support in DocBits
+description: "DocBits 中对乌拉圭 E-NOTA CREDITO 电子文档的支持"
 ---
 
-# 🇺🇾 URUGUAY E-NOTA CREDITO
+# 🇺🇾 乌拉圭 E-NOTA CREDITO
 
-| Property             | Value                            |
-| -------------------- | -------------------------------- |
-| **Country / Region** | Uruguay                          |
-| **Document Types**   | Credit Note (e-Nota de Crédito)  |
-| **Format**           | XML                              |
-| **Standard**         | e-Nota de Crédito (CFE Type 112) |
+| 属性                 | 值                              |
+| -------------------- | ------------------------------- |
+| **国家 / 地区**       | 乌拉圭                          |
+| **文档类型**          | 贷项通知单（e-Nota de Crédito） |
+| **格式**              | XML                             |
+| **标准**              | e-Nota de Crédito（CFE 类型 112）|
 
-Uruguay e-Nota de Crédito is the electronic credit note document type within the CFE system, identified by type code 112. It is used to adjust or cancel previously issued e-Facturas and must reference the original document.
+乌拉圭 e-Nota de Crédito 是 CFE 系统中的电子贷项通知单文档类型，类型代码为 112。它用于调整或取消先前签发的 e-Factura，并且必须引用原始文档。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 组件       | 状态       |
+| ---------- | ---------- |
+| 预览       | ✅ 支持     |
+| 字段提取   | ✅ 支持     |
+| 转换       | ✅ 支持     |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/uruguay-e-nota-credito-preview.png" alt="Uruguay E-Nota Credito invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Uruguay E-Nota Credito invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/uruguay-e-nota-credito-preview.png" alt="DocBits 中的乌拉圭 E-Nota Credito 发票预览"><figcaption><p>乌拉圭 E-Nota Credito 发票的 DocBits 默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

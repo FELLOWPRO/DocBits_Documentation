@@ -1,31 +1,31 @@
 ---
-description: TURKEY E-FATURA electronic document support in DocBits
+description: "DocBits 对土耳其 E-FATURA 电子文档的支持"
 ---
 
-# 🇹🇷 TURKEY E-FATURA
+# 🇹🇷 土耳其 E-FATURA
 
-| Property             | Value                                   |
+| 属性 | 值 |
 | -------------------- | --------------------------------------- |
-| **Country / Region** | Turkey                                  |
-| **Document Types**   | Invoice, Credit Note                    |
-| **Format**           | UBL-TR 1.2 XML                          |
-| **Standard**         | e-Fatura (GİB - Revenue Administration) |
+| **国家 / 地区** | 土耳其 |
+| **文档类型** | 发票、贷项通知单 |
+| **格式** | UBL-TR 1.2 XML |
+| **标准** | e-Fatura（GİB - 税务管理局） |
 
-Turkey e-Fatura is the primary electronic invoice standard mandated by the GİB (Revenue Administration) for B2B transactions between registered taxpayers. Invoices are exchanged through registered integrators and the GİB platform. The format uses UBL-TR, Turkey's localized version of UBL, with Turkish-specific fields for TCKN/VKN tax identification.
+土耳其 e-Fatura 是 GİB（税务管理局）针对已注册纳税人之间 B2B 交易规定的主要电子发票标准。发票通过注册的集成商和 GİB 平台交换。该格式采用 UBL-TR，这是土耳其本地化版本的 UBL，并包含用于 TCKN/VKN 纳税人识别的土耳其专用字段。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件 | 状态 |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览 | ✅ 支持 |
+| 字段提取 | ✅ 支持 |
+| 转换 | ✅ 支持 |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/turkey-e-fatura-preview.png" alt="Turkey E-Fatura invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Turkey E-Fatura invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/turkey-e-fatura-preview.png" alt="DocBits 中的土耳其 E-Fatura 发票预览"><figcaption><p>DocBits 中土耳其 E-Fatura 发票的默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
-* [TURKEY E-ARSIV](turkey-e-arsiv.md)
+* [支持的电子文档](./)
+* [土耳其 E-ARSIV](turkey-e-arsiv.md)

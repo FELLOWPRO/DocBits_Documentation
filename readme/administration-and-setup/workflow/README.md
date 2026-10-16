@@ -1,42 +1,42 @@
 ---
-description: DocBits Workflow Engine
+description: "DocBits 工作流引擎"
 ---
 
-# Workflow
+# 工作流
 
 <figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-03-12 um 19.42.57.png" alt=""><figcaption></figcaption></figure>
 
-## DocBits Workflow Engine: Simplifying Process Automation
+## DocBits 工作流引擎：简化流程自动化
 
 {% embed url="https://youtu.be/YQC13wCqTJI" %}
 
-### Introduction
+### 简介
 
-In the realm of process automation, the DocBits Workflow Engine stands out for its straightforward and intuitive approach. This engine streamlines the creation and management of workflows through a clear and simple rule-based structure. The core principle behind its design is the "Easy When-And-Then" rule, which breaks down the automation process into three fundamental components: Trigger, Condition, and Action. This guide explains how each component functions within the system and how they work together to facilitate seamless automation.
+在流程自动化领域，DocBits 工作流引擎以简洁直观的方式脱颖而出。该引擎通过清晰简单的基于规则的结构，简化工作流的创建和管理。其设计的核心原则是“简单的 When-And-Then”规则，将自动化流程拆分为三个基本组成部分：触发器、条件和操作。本指南将说明每个组成部分在系统中的功能，以及它们如何协同工作以实现顺畅的自动化。
 
-### The "Easy When-And-Then" Rule Explained
+### “简单的 When-And-Then”规则说明
 
-The DocBits Workflow Engine operates on a basic yet powerful principle that makes workflow automation accessible to users of all skill levels. This principle is encapsulated in the "Easy When-And-Then" rule, which can be broken down as follows:
+DocBits 工作流引擎遵循一个简单而强大的原则，让各种技能水平的用户都能轻松使用工作流自动化。该原则概括为“简单的 When-And-Then”规则，具体如下：
 
-#### [When](./#when-trigger) (Trigger)
+#### [When](./#when-trigger)（触发器） <a id="when-trigger"></a>
 
-* **Definition**: The "When" component represents the _Trigger_ of the workflow. This is the event or condition that initiates the execution of the workflow. Triggers can be a variety of occurrences such as the arrival of a new email, a specific date and time, or the creation of a new document.
-* **Example**: "When a new customer form is submitted..."
+* **定义**：“When”组成部分代表工作流的_触发器_。它是启动工作流执行的事件或条件。触发器可以是各种情况，例如收到新邮件、到达特定日期和时间，或创建新文档。
+* **示例**：“当提交新的客户表单时……”
 
-#### [And](./#and-condition) (Condition)
+#### [And](./#and-condition)（条件） <a id="and-condition"></a>
 
-* **Definition**: The "And" component introduces the _Condition_ that must be met for the action to proceed. Conditions serve as filters or criteria that refine the trigger, ensuring that the workflow is executed only under certain circumstances.
-* **Example**: "...and the customer is from the 'Enterprise' segment..."
+* **定义**：“And”组成部分引入了操作继续执行所必须满足的_条件_。条件充当筛选器或标准，用于细化触发器，确保工作流仅在特定情况下执行。
+* **示例**：“……并且客户属于‘Enterprise’细分群体……”
 
-#### [Then](./#then-action) (Action)
+#### [Then](./#then-action)（操作） <a id="then-action"></a>
 
-* **Definition**: Finally, the "Then" part specifies the _Action_ to be taken once the trigger occurs and the condition is satisfied. Actions are the tasks or operations executed by the workflow, such as sending an email, updating a database, or creating a task in a project management tool.
-* **Example**: "...then assign the lead to the enterprise sales team and send a welcome email."
+* **定义**：最后，“Then”部分指定了触发器发生且条件满足后要执行的_操作_。操作是工作流执行的任务或运作，例如发送邮件、更新数据库，或在项目管理工具中创建任务。
+* **示例**：“……然后将潜在客户分配给企业销售团队，并发送欢迎邮件。”
 
-### Combining Components for Powerful Automations
+### 组合各组成部分，创建强大的自动化流程
 
-By assembling these three components—Trigger, Condition, and Action—the DocBits Workflow Engine allows users to create highly customized and efficient workflows. This modular approach not only simplifies the process of setting up automations but also offers the flexibility to create complex workflows capable of handling a wide range of tasks and processes.
+通过组合这三个组成部分——触发器、条件和操作——DocBits 工作流引擎让用户能够创建高度定制且高效的工作流。这种模块化方式不仅简化了自动化设置流程，还提供了灵活性，可创建能够处理各种任务和流程的复杂工作流。
 
-### Conclusion
+### 结论
 
-The DocBits Workflow Engine's "Easy When-And-Then" rule exemplifies the engine's commitment to providing a user-friendly platform for automating processes. This straightforward rule, by breaking down automation into the essential elements of Trigger, Condition, and Action, makes it easier for users to conceptualize, create, and manage workflows. Whether you are new to workflow automation or an experienced professional, the DocBits Workflow Engine offers an efficient and accessible tool to enhance productivity and streamline operations.
+DocBits 工作流引擎的“简单的 When-And-Then”规则体现了该引擎致力于提供用户友好平台以实现流程自动化的理念。通过将自动化拆分为触发器、条件和操作这些基本要素，这条简单明了的规则让用户更容易理解、创建和管理工作流。无论您是刚接触工作流自动化，还是经验丰富的专业人士，DocBits 工作流引擎都能提供高效易用的工具，帮助提升工作效率并简化运营。

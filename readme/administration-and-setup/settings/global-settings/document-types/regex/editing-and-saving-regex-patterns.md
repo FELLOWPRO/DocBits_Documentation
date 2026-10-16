@@ -1,70 +1,70 @@
-# Editing and Saving Regex Patterns
+# 编辑和保存正则表达式模式
 
-## Guide to modifying existing patterns and the importance of testing those changes to ensure they work as expected without breaking existing functionality.
+## 修改现有模式指南，以及测试这些更改以确保其按预期工作且不会破坏现有功能的重要性。
 
-**To edit existing regex patterns and ensure the changes work as expected without breaking existing functionality, you can follow the guide below:**
+**如需编辑现有正则表达式模式，并确保更改按预期工作且不会破坏现有功能，请参阅以下指南：**
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 12.46.56.png" alt=""><figcaption><p>Settings: Document Type</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 12.46.56.png" alt=""><figcaption><p>设置：文档类型</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 14.18.25.png" alt=""><figcaption></figcaption></figure>
 
-**Analyze the existing pattern:**
+**分析现有模式：**
 
-* Examine the existing regex pattern to understand what data it captures and how it works.
-* Identify the parts of the pattern that need to be changed and the impact of those changes on the data captured.
+* 检查现有正则表达式模式，了解它捕获哪些数据以及其工作方式。
+* 确定需要更改的模式部分，以及这些更改对所捕获数据的影响。
 
-**For example: The invoice amount is to be read out:**
+**例如：需要读取发票金额：**
 
 *   (?<=Rechnungsbetrag:)\[\s]\*((((\d+)\[,.]{1,10})+\d{0,2})|(\d+(?!,)))
 
     Rechnungsbetrag: 100.00
-*   Read the amount with 1000s dot but NOT pass the dot
+*   读取带千位分隔点的金额，但不要传递该点
 
     \[\d.]_\[,\d]_
 
-    Allowed characters: 0123456789,
-*   The value "P32180" is to be read out. Anchor word here is "Invoice Date".
+    允许的字符：0123456789,
+*   需要读取值“P32180”。此处的锚定词是“Invoice Date”。
 
     (?<=InvoiceDate )\[\s]\*P\d{5}
 
     Customer number Invoice number Invoice date P32180 613976 05/13/2019
 
-<figure><img src="../../../../../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
 
-**Document the changes:**
+**记录更改：**
 
-* Take notes about the changes you plan to make to the regex pattern.
-* Note what new patterns you plan to add and what parts of the existing pattern may need to be changed or removed.
+* 记录计划对正则表达式模式所做的更改。
+* 说明计划添加哪些新模式，以及现有模式的哪些部分可能需要更改或移除。
 
-**Prepare test data:**
+**准备测试数据：**
 
-* Collect test data that is representative of the different types of data the regex pattern typically captures.
-* Make sure your test data covers both typical and edge cases to verify the robustness of your changes.
+* 收集能够代表正则表达式模式通常捕获的不同类型数据的测试数据。
+* 确保测试数据涵盖常见情况和边缘情况，以验证更改的稳健性。
 
-**Make changes to the regex pattern:**
+**更改正则表达式模式：**
 
-* Make the planned changes to the regex pattern.
-* This may include adding new patterns, removing or adjusting existing parts, or optimizing the pattern for better performance.
+* 按计划更改正则表达式模式。
+* 这可能包括添加新模式、移除或调整现有部分，或优化模式以提升性能。
 
-**Test the changes:**
+**测试更改：**
 
-* Apply the updated regex pattern to your test data and carefully review the results.
-* Verify that the pattern still correctly captures the desired data and that there are no unexpected impacts on other parts of the data or system.
+* 将更新后的正则表达式模式应用于测试数据，并仔细检查结果。
+* 验证该模式仍能正确捕获所需数据，且不会对数据或系统的其他部分造成意外影响。
 
-**Debugging and adapting:**
+**调试和调整：**
 
-* If test results are not as expected or unexpected issues occur, carefully review your changes and make further adjustments as needed.
-* This may include reverting certain changes or adding additional adjustments to fix the problem.
+* 如果测试结果不符合预期或出现意外问题，请仔细检查所做的更改，并根据需要进一步调整。
+* 这可能包括还原某些更改，或添加额外调整以解决问题。
 
-**Document the changes:**
+**记录更改：**
 
-* Update the documentation of your regex pattern to reflect the changes made.
-* Describe the updated patterns and the reasons for the changes made to help other developers understand and use the pattern.
+* 更新正则表达式模式的文档，反映所做的更改。
+* 描述更新后的模式和更改原因，帮助其他开发人员理解并使用该模式。
 
-**Saving the changes:**
+**保存更改：**
 
-* Once you are sure that the changes are successful and work as expected, save the updated regex pattern to your code base or configuration files to ensure they are available for future use.
+* 确认更改成功且按预期工作后，将更新后的正则表达式模式保存到代码库或配置文件中，以便日后使用。
 
-<figure><img src="../../../../../.gitbook/assets/image (109).png" alt=""><figcaption><p>Save Changes</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (224).png" alt=""><figcaption><p>保存更改</p></figcaption></figure>
 
-By following these steps and carefully testing changes to regex patterns, you can ensure that your regex pattern continues to work correctly while meeting new requirements.
+按照这些步骤并仔细测试正则表达式模式的更改，可确保模式持续正常工作，同时满足新的需求。

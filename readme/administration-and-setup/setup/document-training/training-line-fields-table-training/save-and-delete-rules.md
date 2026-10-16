@@ -1,22 +1,22 @@
-# Save and Delete Rules
+# 保存和删除规则
 
-Once you’ve completed the training or correction of a table, it’s important to **save your rules** so that DocBits can apply them automatically to future documents from the same supplier.
+完成表格的训练或更正后，保存规则非常重要，这样 DocBits 才能将其自动应用于来自同一供应商的后续文档。
 
-### Saving Rules
+### 保存规则
 
-After defining all columns and corrections:
+定义所有列并完成更正后：
 
-1. Click the **SAVE RULES** button at the top.
-2. A rule counter will confirm how many extraction rules have been saved.
+1. 点击顶部的 **SAVE RULES** 按钮。
+2. 规则计数器会显示已保存的提取规则数量。
 
-This ensures DocBits will automatically use your trained layout the next time it sees a similar document.
+这样，DocBits 下次遇到类似文档时，就会自动使用经过训练的布局。
 
-<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-save-and-delete-rules-save-rules-en-20261006.png" alt="Table extraction screen in training mode with the Save, Save Rules and Delete Rules buttons and a rule counter of 3."><figcaption><p>Save Rules stores the rules; the counter shows how many rules exist.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-save-and-delete-rules-save-rules-en-20261006.png" alt="处于训练模式的表格提取界面，其中包含 Save、Save Rules 和 Delete Rules 按钮，规则计数器显示 3。"><figcaption><p>Save Rules 用于保存规则；计数器会显示现有规则的数量。</p></figcaption></figure>
 
-### Deleting Rules
+### 删除规则
 
-You can remove saved rules using the **DELETE RULES** button if they were configured incorrectly or if the document layout has changed significantly.
+如果已保存的规则配置不正确，或者文档布局发生了重大变化，可以使用 **DELETE RULES** 按钮删除规则。
 
-<mark style="color:red;">**Warning**</mark>: Deleting rules affects all documents from the same supplier with the same layout. You will need to **retrain the table extraction from scratch**.
+<mark style="color:red;">**警告**</mark>：删除规则会影响来自同一供应商且布局相同的所有文档。您需要**从头重新训练表格提取**。
 
-<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-save-and-delete-rules-delete-rules-en-20261006.png" alt="Confirmation dialog shown after clicking Delete Rules."><figcaption><p>Deleting rules has to be confirmed.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-save-and-delete-rules-delete-rules-en-20261006.png" alt="点击 Delete Rules 后显示的确认对话框。"><figcaption><p>删除规则前必须确认。</p></figcaption></figure>

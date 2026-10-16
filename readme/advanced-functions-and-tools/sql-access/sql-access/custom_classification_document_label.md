@@ -1,80 +1,80 @@
-# Custom\_classification\_document\_label
+# 自定义_分类_文档_标签
 
-## Table `public.custom_classification_document_label`
+## 表 `public.custom_classification_document_label`
 
-### Spalten
+### 列
 
-* `id`: integer
-* `org_id`: ID to organisation
-* `doc_id`: internal
-* `label_id`: integer
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
+* `id`：整数
+* `org_id`：组织 ID
+* `doc_id`：内部
+* `label_id`：整数
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
 
-### Analyse & Beschreibung
+### 分析与描述
 
-## Technical Documentation for `public.custom_classification_document_label` Table
+## `public.custom_classification_document_label` 表技术文档
 
-### Introduction
+### 简介
 
-The `public.custom_classification_document_label` table is designed to manage and store associations between documents and their respective labels within an organization. This table facilitates the categorization and retrieval of documents based on custom labels, providing a structured way to manage document classification for various organizational needs.
+`public.custom_classification_document_label` 表用于管理和存储组织内文档与相应标签之间的关联。此表支持根据自定义标签对文档进行分类和检索，为满足各种组织需求的文档分类管理提供结构化方式。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: This column serves as the unique identifier for each record in the table.
-* **Role**: Primary Key
-* **Typical Contents**: An integer value that uniquely identifies each row.
-* **Note**: Each entry in the table has a distinct `id` to ensure data integrity and support efficient referencing.
+* **含义**：此列是表中每条记录的唯一标识符。
+* **作用**：主键
+* **典型内容**：用于唯一标识每一行的整数值。
+* **注意**：表中的每条记录都有不同的 `id`，以确保数据完整性并支持高效引用。
 
 #### org\_id
 
-* **Meaning**: Represents the organization to which the document-label association belongs.
-* **Role**: Foreign Key
-* **Typical Contents**: A character string, likely a UUID, that uniquely identifies an organization.
-* **Note**: Ensures the association of documents and labels is scoped to the correct organizational context.
+* **含义**：表示文档与标签关联所属的组织。
+* **作用**：外键
+* **典型内容**：字符字符串，可能是 UUID，用于唯一标识一个组织。
+* **注意**：确保文档与标签的关联处于正确的组织范围内。
 
 #### doc\_id
 
-* **Meaning**: Identifies the document being labeled.
-* **Role**: Foreign Key
-* **Typical Contents**: A character string, likely a UUID, that uniquely identifies a document.
-* **Note**: Allows for the linkage of specific documents to labels, enabling document categorization.
+* **含义**：标识被标记的文档。
+* **作用**：外键
+* **典型内容**：字符字符串，可能是 UUID，用于唯一标识一个文档。
+* **注意**：用于将特定文档关联到标签，从而实现文档分类。
 
 #### label\_id
 
-* **Meaning**: Refers to the label applied to the document.
-* **Role**: Foreign Key
-* **Typical Contents**: An integer that references a label from a separate labels table.
-* **Note**: Facilitates the association between documents and their respective labels.
+* **含义**：指应用于文档的标签。
+* **作用**：外键
+* **典型内容**：引用单独标签表中某个标签的整数。
+* **注意**：用于建立文档与相应标签之间的关联。
 
 #### created\_by
 
-* **Meaning**: Identifies the user who created the record.
-* **Role**: Foreign Key (potentially to a users table)
-* **Typical Contents**: An integer representing the user ID.
-* **Note**: Tracks the origin of each document-label association for auditing and accountability.
+* **含义**：标识创建该记录的用户。
+* **作用**：外键（可能指向用户表）
+* **典型内容**：表示用户 ID 的整数。
+* **注意**：跟踪每条文档与标签关联的来源，以便审计和追责。
 
 #### created\_on
 
-* **Meaning**: Indicates when the record was created.
-* **Role**: Technical Field
-* **Typical Contents**: A timestamp with time zone information.
-* **Note**: Provides a temporal context for when the document-label relationship was established.
+* **含义**：表示记录的创建时间。
+* **作用**：技术字段
+* **典型内容**：包含时区信息的时间戳。
+* **注意**：提供文档与标签关系建立时间的上下文。
 
 #### last\_modified\_on
 
-* **Meaning**: Records the last modification timestamp of the record.
-* **Role**: Technical Field
-* **Typical Contents**: A timestamp with time zone information, can be `None` if never modified.
-* **Note**: Useful for tracking the history of changes to the document-label associations.
+* **含义**：记录该记录最后修改的时间戳。
+* **作用**：技术字段
+* **典型内容**：包含时区信息的时间戳；如果从未修改过，则可以为 `None`。
+* **注意**：可用于跟踪文档与标签关联的变更历史。
 
 #### is\_deleted
 
-* **Meaning**: Flags if the record has been marked as deleted.
-* **Role**: Technical Field
-* **Typical Contents**: A boolean value (`True` or `False`).
-* **Note**: Supports soft deletion practices, allowing logical removal of data without physical deletion from the database.
+* **含义**：标记该记录是否已被标记为删除。
+* **作用**：技术字段
+* **典型内容**：布尔值（`True` 或 `False`）。
+* **注意**：支持软删除做法，可在不从数据库中物理删除数据的情况下逻辑移除数据。

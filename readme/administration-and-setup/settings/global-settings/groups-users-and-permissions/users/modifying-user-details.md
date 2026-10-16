@@ -1,49 +1,49 @@
-# Modifying User Details
+# 修改用户详细信息
 
-<figure><img src="../../../../../.gitbook/assets/user_settings_menu_overview.png" alt="User Settings Menu Overview"><figcaption><p>User Settings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/user_settings_menu_overview.png" alt="用户设置菜单概览"><figcaption><p>用户设置</p></figcaption></figure>
 
-* **Logging in as an administrator:** Log in with your administrator privileges.
-* **Accessing user management:** Navigate to user settings where you can edit existing users.
-* **Selecting users:** Find and select the user whose details you want to change. This can be done by clicking on the username or an edit button next to the user.
+* **以管理员身份登录：** 使用管理员权限登录。
+* **访问用户管理：** 导航至用户设置，在此可以编辑现有用户。
+* **选择用户：** 找到并选择要修改详细信息的用户。可以点击用户名或用户旁边的编辑按钮。
 
-<figure><img src="../../../../../.gitbook/assets/user_selection_list.png" alt="User Selection List"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/user_selection_list.png" alt="用户选择列表"><figcaption></figcaption></figure>
 
-*   **Editing user details:** A form will appear containing the user’s current details. Edit the required fields according to the changes you want to make. Typical details to edit include:
+*   **编辑用户详细信息：** 系统会显示一个表单，其中包含用户当前的详细信息。根据需要进行修改。通常需要编辑的详细信息包括：
 
-    * First and last name
-    * Email address
-    * User role or permission level
-
-
-
-    <figure><img src="../../../../../.gitbook/assets/user_edit_details_form.png" alt="User Edit Details Form" width="300"><figcaption></figcaption></figure>
-* **Saving Changes:** Review any changes you made and click Save to save the new user details.
-
-<figure><img src="../../../../../.gitbook/assets/user_save_changes_button.png" alt="User Save Changes Button"><figcaption></figcaption></figure>
-
-* **Review the impact of role changes:** If you changed the user's user role, review the impact of that change on security access levels. Make sure that after the role change, the user has the permissions required to continue performing their duties.
-* **Send notification (optional):** You can send a notification to the user to inform them of the changes made.
-
-After completing these steps, the user details are successfully updated and the user has the new information and permissions according to the changes made.
+    * 名字和姓氏
+    * 电子邮件地址
+    * 用户角色或权限级别
 
 
 
-## Removing Users:
+    <figure><img src="../../../../../.gitbook/assets/user_edit_details_form.png" alt="用户详细信息编辑表单" width="300"><figcaption></figcaption></figure>
+* **保存更改：** 检查所做的更改，然后点击 Save 保存新的用户详细信息。
 
-* **Selecting Users:** Find and select the user whose access you want to remove. This can be done by clicking the user name or an edit button next to the user.
+<figure><img src="../../../../../.gitbook/assets/user_save_changes_button.png" alt="保存用户更改按钮"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/user_delete_selection.png" alt="User Delete Selection"><figcaption></figcaption></figure>
+* **检查角色变更的影响：** 如果更改了用户角色，请检查此变更对安全访问级别的影响。确保角色变更后，用户仍拥有继续履行职责所需的权限。
+* **发送通知（可选）：** 可以向用户发送通知，告知其所做的更改。
 
-* **Removing Access:** Click "delete" to remove the user.
+完成这些步骤后，用户详细信息即已成功更新，用户将获得根据所做更改更新后的信息和权限。
 
-<figure><img src="../../../../../.gitbook/assets/user_delete_button.png" alt="User Delete Button"><figcaption></figcaption></figure>
 
-* **Confirmation:** You are asked to confirm the user’s removal.
 
-<figure><img src="../../../../../.gitbook/assets/user_delete_confirmation_dialog.png" alt="User Delete Confirmation Dialog"><figcaption></figcaption></figure>
+## 移除用户：
 
-* **Optional Notification:** You can optionally send a notification to the user to inform them of the removal of their access.
-* **Review Tasks and Documents:** Before removing the user, review what tasks or documents are assigned to the user. Move or transfer responsibility for those tasks or documents to another user to make sure nothing gets lost or left unfinished.
-* **Save Changes:** Confirm the user’s removal and save the changes.
+* **选择用户：** 找到并选择要移除其访问权限的用户。可以点击用户名或用户旁边的编辑按钮。
 
-By following these steps, you can ensure that the user’s access is safely removed while properly managing all relevant tasks and documents.
+<figure><img src="../../../../../.gitbook/assets/user_delete_selection.png" alt="用户删除选择"><figcaption></figcaption></figure>
+
+* **移除访问权限：** 点击 "delete" 移除该用户。
+
+<figure><img src="../../../../../.gitbook/assets/user_delete_button.png" alt="用户删除按钮"><figcaption></figcaption></figure>
+
+* **确认：** 系统会要求你确认移除该用户。
+
+<figure><img src="../../../../../.gitbook/assets/user_delete_confirmation_dialog.png" alt="用户删除确认对话框"><figcaption></figcaption></figure>
+
+* **可选通知：** 可以向用户发送通知，告知其访问权限已被移除。
+* **检查任务和文档：** 移除用户之前，请检查分配给该用户的任务或文档。将这些任务或文档的责任转交给其他用户，确保没有任何内容丢失或未完成。
+* **保存更改：** 确认移除该用户并保存更改。
+
+按照这些步骤操作，可以安全地移除用户的访问权限，同时妥善管理所有相关任务和文档。

@@ -1,30 +1,30 @@
 ---
-description: PHILIPPINES EIS electronic document support in DocBits
+description: "DocBits 对菲律宾 EIS 电子文档的支持"
 ---
 
-# 🇵🇭 PHILIPPINES EIS
+# 🇵🇭 菲律宾 EIS
 
-| Property             | Value                                   |
+| 属性                 | 值                                      |
 | -------------------- | --------------------------------------- |
-| **Country / Region** | Philippines                             |
-| **Document Types**   | Invoice, Official Receipt               |
-| **Format**           | XML/JSON                                |
-| **Standard**         | EIS (Electronic Invoicing System - BIR) |
+| **国家 / 地区**      | 菲律宾                                  |
+| **文档类型**         | 发票、正式收据                          |
+| **格式**             | XML/JSON                                |
+| **标准**             | EIS（电子发票系统 - BIR）               |
 
-Philippines EIS is the Electronic Invoicing System under the Bureau of Internal Revenue (BIR). It aims to digitize invoicing and receipting for Philippine businesses, requiring electronic transmission of sales data to the BIR's system for tax compliance monitoring.
+菲律宾 EIS 是菲律宾国内税务局（BIR）推出的电子发票系统。该系统旨在推动菲律宾企业的发票和收据数字化，要求将销售数据以电子方式传输至 BIR 系统，以便进行税务合规监控。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 组件             | 状态       |
+| ---------------- | ---------- |
+| 预览             | ✅ 支持     |
+| 字段提取         | ✅ 支持     |
+| 转换             | ✅ 支持     |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/philippines-eis-preview.png" alt="Philippines EIS invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Philippines EIS invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/philippines-eis-preview.png" alt="DocBits 中的菲律宾 EIS 发票预览"><figcaption><p>DocBits 中菲律宾 EIS 发票的默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

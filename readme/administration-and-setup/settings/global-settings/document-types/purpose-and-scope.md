@@ -1,47 +1,47 @@
-# Purpose and Scope
+# 目的和范围
 
-## The purpose and scope of correctly setting up document types in DocBits is critical to ensure the accuracy and efficiency of document processing.&#x20;
+## 在 DocBits 中正确设置文档类型，对于确保文档处理的准确性和效率至关重要。&#x20;
 
-### Here are some key points that explain the importance of this process:
+### 以下要点说明了此流程的重要性：
 
-### Purpose of correctly setting up document types Improved document organization
+### 正确设置文档类型的目的：改进文档整理
 
-By accurately classifying documents into specific types, they can be easily categorized and managed. This makes it easier to find and retrieve documents when they are needed.
+将文档准确分类到特定类型后，就可以轻松地对其进行归类和管理。这有助于在需要时更轻松地查找和检索文档。
 
-**Automated workflows:**
+**自动化工作流：**
 
-Many document management systems, including DocBits, use document types to drive automated workflows. For example, invoices can be automatically routed for approval while contract documents are sent for signature. Correct document type mapping allows these processes to be carried out efficiently and without errors.
+许多文档管理系统（包括 DocBits）都会使用文档类型来驱动自动化工作流。例如，发票可以自动转交审批，而合同文档则会发送给相关方签署。正确映射文档类型可以让这些流程高效、无误地运行。
 
-**Rights management and security:**
+**权限管理和安全性：**
 
-Different document types can be subject to different access controls and security levels. By correctly typecasting documents, it can be ensured that only authorized people have access to sensitive information.
+不同的文档类型可能适用不同的访问控制和安全级别。通过正确设置文档类型，可以确保只有获得授权的人员才能访问敏感信息。
 
-**Compliance and legal requirements:**
+**合规性和法律要求：**
 
-Many industries are subject to strict legal and regulatory requirements regarding the handling of documents. Setting up document types correctly helps ensure that all necessary compliance requirements are met by handling and storing documents according to their category.
+许多行业在文档处理方面受到严格的法律和监管要求约束。正确设置文档类型有助于根据文档类别对其进行处理和存储，从而确保满足所有必要的合规要求。
 
-### Scope of setting up document types correctly
+### 正确设置文档类型的范围
 
-**Defining specific document types:**
+**定义特定文档类型：**
 
-Every type of document managed in the system should have a clearly defined document type. This includes, for example, invoices, contracts, reports, emails and technical drawings.
+系统管理的每类文档都应有明确的文档类型。例如，这包括发票、合同、报告、电子邮件和技术图纸。
 
-**Attribution and metadata:**
+**属性和元数据：**
 
-Each document type should have specific attributes and metadata that facilitate its classification and processing. For example, invoices could contain attributes such as invoice number, date and amount, while contracts have attributes such as contract parties, term and conditions.
+每种文档类型都应具有特定属性和元数据，以便于分类和处理。例如，发票可以包含发票编号、日期和金额等属性，而合同则可以包含合同各方、期限和条款等属性。
 
-**Automation rules and workflows:**
+**自动化规则和工作流：**
 
-Specific rules and workflows should be defined for each document type. This can include automatic notifications, approval processes or archiving policies.
+应为每种文档类型定义特定规则和工作流。这些规则和工作流可以包括自动通知、审批流程或归档策略。
 
-**Training and user guidance:**
+**培训和用户指导：**
 
-Users should be trained to use the document types correctly and understand the importance of correct classification. This helps to minimize errors and maximize efficiency.
+应培训用户正确使用文档类型，并让他们了解正确分类的重要性。这有助于尽量减少错误并提高效率。
 
-**Regular review and adjustment:**
+**定期审查和调整：**
 
-The document types and associated processes should be regularly reviewed and adjusted as necessary to ensure they continue to meet current business needs and processes.
+应定期审查文档类型及其相关流程，并在必要时进行调整，以确保它们持续满足当前业务需求和流程。
 
 
 
-Setting up document types correctly is a key aspect of effectively using a document management system like DocBits. Not only does it make documents better organized and easier to find, it also enables automated processes, increases security, and ensures regulatory compliance. To fully realize the benefits, document types must be carefully defined, the corresponding processes implemented, and users trained regularly.
+正确设置文档类型是有效使用 DocBits 等文档管理系统的关键环节。它不仅能让文档更有条理、更易于查找，还能支持自动化流程、提高安全性并确保符合法规要求。要充分发挥这些优势，必须谨慎定义文档类型、落实相应流程，并定期对用户进行培训。

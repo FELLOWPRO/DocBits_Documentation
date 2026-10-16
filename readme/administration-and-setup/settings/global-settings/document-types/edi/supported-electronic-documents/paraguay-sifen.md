@@ -1,31 +1,31 @@
 ---
-description: PARAGUAY SIFEN electronic document support in DocBits
+description: DocBits 对巴拉圭 SIFEN 电子文档的支持
 ---
 
-# 🇵🇾 PARAGUAY SIFEN
+# 🇵🇾 巴拉圭 SIFEN
 
-| Property             | Value                                                         |
+| 属性                 | 值                                                         |
 | -------------------- | ------------------------------------------------------------- |
-| **Country / Region** | Paraguay                                                      |
-| **Document Types**   | Invoice, Credit Note, Debit Note, Withholding                 |
-| **Format**           | XML                                                           |
-| **Standard**         | SIFEN (Sistema Integrado de Facturación Electrónica Nacional) |
+| **国家 / 地区**       | 巴拉圭                                                      |
+| **文档类型**          | 发票、贷项通知单、借项通知单、预扣税凭证                 |
+| **格式**             | XML                                                           |
+| **标准**             | SIFEN（Sistema Integrado de Facturación Electrónica Nacional） |
 
-SIFEN is Paraguay's national integrated electronic invoicing system operated by SET. All electronic documents must be submitted to SIFEN for validation and receive a CDC (Código de Control Digital) unique identifier.
+SIFEN 是由 SET 运营的巴拉圭国家综合电子开票系统。所有电子文档都必须提交至 SIFEN 进行验证，并获取唯一标识符 CDC（Código de Control Digital）。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件        | 状态      |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览          | ✅ 支持 |
+| 字段提取 | ✅ 支持 |
+| 转换   | ✅ 支持 |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/paraguay-sifen-preview.png" alt="Paraguay SIFEN invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Paraguay SIFEN invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/paraguay-sifen-preview.png" alt="DocBits 中的巴拉圭 SIFEN 发票预览"><figcaption><p>巴拉圭 SIFEN 发票的 DocBits 默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
-* [Paraguay SIFEN 150](paraguay-sifen-150.md)
+* [支持的电子文档](./)
+* [巴拉圭 SIFEN 150](paraguay-sifen-150.md)

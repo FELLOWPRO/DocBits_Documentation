@@ -1,65 +1,65 @@
-# EDI Transformation File Guide
+# EDI 转换文件指南
 
-## 1. Overview
+## 1. 概述
 
-The **Transformation File** defines how the structured XML—created using the **Structure Descriptor File**—is converted into a custom XML format that matches your organization's specific document type or form requirements.
+**转换文件**定义了如何将使用**结构描述符文件**创建的结构化 XML 转换为自定义 XML 格式，以满足组织特定的文档类型或表单要求。
 
-This transformation is performed using **XSLT (Extensible Stylesheet Language Transformations)**, which can be authored and maintained through the **XSLT Editor** in the DocBits interface.
+此转换使用 **XSLT（可扩展样式表语言转换）**执行，可通过 DocBits 界面中的 **XSLT 编辑器**编写和维护。
 
-## 2. Purpose and Function
+## 2. 用途和功能
 
-* Transforms the **intermediate XML** (output from the Structure Descriptor) into a **final XML** aligned with your document schema.
-* Enables flexibility to accommodate varying EDI partner formats and internal system requirements.
-* Built using **XSLT rules**, which allow you to define mappings, value formatting, conditional logic, and structure.
+* 将**中间 XML**（结构描述符的输出）转换为符合文档架构的**最终 XML**。
+* 提供灵活性，以适应不同的 EDI 合作伙伴格式和内部系统要求。
+* 使用 **XSLT 规则**构建，可用于定义映射、值格式化、条件逻辑和结构。
 
-## 3. Access & Basic Editing
+## 3. 访问和基本编辑
 
-#### Accessing the File
+#### 访问文件
 
-1.  Go to **Settings → Document Type** → \[Your Document (e.g., _Purchase Order_)] → **E-Doc.**\\
+1. 前往 **设置 → 文档类型** → \[您的文档（例如，_采购订单_）] → **E-Doc.**\\
 
-    <figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2. Under the **E-Doc** tab, select your format (e.g., **EDI** ).
-3.  Click **Transformation** to view or edit.\\
+    <figure><img src="../../../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+2. 在 **E-Doc** 选项卡下，选择您的格式（例如，**EDI**）。
+3. 点击 **转换**以查看或编辑。\\
 
-    <figure><img src="../../../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
-#### Draft Management
+#### 草稿管理
 
-* **Create a Draft**: Click the ✏️ pencil icon.
-* **Delete Drafts**: Use the 🗑️ trashcan icon to remove unused drafts.
-* **Activate Changes**: Click the ✅ checkmark to publish a version.
-  * <mark style="color:red;">**Note**</mark>: Activating a new version will **automatically deactivate** the previous one.
+* **创建草稿**：点击 ✏️ 铅笔图标。
+* **删除草稿**：使用 🗑️ 垃圾桶图标移除未使用的草稿。
+* **激活更改**：点击 ✅ 对勾以发布一个版本。
+  * <mark style="color:red;">**注意**</mark>：激活新版本会**自动停用**之前的版本。
 
-## 4. XSLT Editor
+## 4. XSLT 编辑器
 
-The Transformation File is edited using an embedded **XSLT Editor** that supports syntax highlighting and validation.
+转换文件通过内嵌的 **XSLT 编辑器**进行编辑，该编辑器支持语法高亮和验证。
 
-* Add templates to map specific paths from the input XML to the desired structure.
-* Use conditional logic (e.g., `<xsl:if>`, `<xsl:choose>`) to handle optional or varying data formats.
-* Apply formatting functions as needed (e.g., string manipulation, date formatting).
+* 添加模板，将输入 XML 中的特定路径映射到所需结构。
+* 使用条件逻辑（例如，`<xsl:if>`、`<xsl:choose>`）处理可选数据或不同的数据格式。
+* 根据需要应用格式化函数（例如，字符串操作、日期格式化）。
 
-## 5. Preview Function (Preview Transformed XML)
+## 5. 预览功能（预览转换后的 XML）
 
-The **Preview Function** allows you to test and preview how an uploaded EDI file is processed using the current **Transformation File**.
+**预览功能**可用于测试和预览上传的 EDI 文件如何使用当前**转换文件**进行处理。
 
-#### Usage
+#### 使用方法
 
-* Upload an EDI file via the standard upload flow.
-* Copy the **Document ID** of the uploaded file.
-* Navigate to the **Transformation File** interface.
-*   Open the **Preview Function**.\\
+* 通过标准上传流程上传 EDI 文件。
+* 复制已上传文件的**文档 ID**。
+* 前往**转换文件**界面。
+* 打开**预览功能**。\\
 
-    <div align="left"><figure><img src="../../../../../../.gitbook/assets/image (7) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
-* Enter the **Document ID** into the field and press **Test**.
-* The resulting **transformed XML output** will be displayed.
+    <div align="left"><figure><img src="../../../../../../.gitbook/assets/image (21).png" alt="" width="375"><figcaption></figcaption></figure></div>
+* 在字段中输入**文档 ID**，然后点击 **Test**。
+* 系统将显示生成的**转换后 XML 输出**。
 
-This is especially useful for debugging XSLT mappings and ensuring the final XML structure meets your format requirements.
+这对于调试 XSLT 映射以及确保最终 XML 结构符合格式要求特别有用。
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-## 6. Video Walkthrough
+## 6. 视频演示
 
-A video guide for this file type is available on the [Videos page.](edi-videos.md)\
-Use it to follow along with setup, editing, and previewing.\
+此文件类型的视频指南可在[视频页面。](edi-videos.md)\
+可跟随视频完成设置、编辑和预览。\
 \\

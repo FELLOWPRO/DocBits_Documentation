@@ -1,14 +1,14 @@
-# Auto-Export Based on Conditions
+# 基于条件自动导出
 
-## What does this script do?
+## 此脚本的作用是什么？
 
-Automatically sets the document status to "ready for export" when specific conditions are met: the supplier is a known/trusted vendor AND the invoice amount is below a threshold. This skips manual validation for low-risk invoices.
+当满足特定条件时，自动将文档状态设为“ready for export”：供应商是已知/可信的供应商，且发票金额低于阈值。这样可以跳过低风险发票的手动验证。
 
-## Trigger
+## 触发器
 
-`AFTER_FORMATTING` on document type **INVOICE**
+文档类型 **INVOICE** 上的 `AFTER_FORMATTING`
 
-## Full Script
+## 完整脚本
 
 ```python
 # Read relevant fields
@@ -32,18 +32,18 @@ if any(s in supplier for s in auto_export_suppliers) and net_float < 500:
     )
 ```
 
-## Step-by-Step Explanation
+## 分步说明
 
-1. **Read net amount and supplier name** from the document (supplier with `is_clean=True` for comparison)
-2. **Define trusted suppliers** — list of known vendor names (cleaned/uppercase)
-3. **Check conditions** — supplier must be in the trusted list AND amount must be below 500
-4. **Change status** to `"ready_for_export"` with a descriptive message
+1. **读取净额和供应商名称**，从文档中获取（比较时供应商使用 `is_clean=True`）
+2. **定义可信供应商** — 列出已知供应商名称（已清理/大写）
+3. **检查条件** — 供应商必须在可信列表中，且金额必须低于 500
+4. **更改状态** 为 `"ready_for_export"`，并附上描述性消息
 
 {% hint style="warning" %}
-**Caution:** Status changes trigger downstream workflows (DocFlow, export hooks). Make sure the conditions are strict enough to avoid unintended exports.
+**注意：** 状态更改会触发下游工作流（DocFlow、导出钩子）。请确保条件足够严格，以避免意外导出。
 {% endhint %}
 
-## Functions Used
+## 使用的函数
 
-- [get\_field\_value()](../field-functions.md#get\_field\_value) — Read field values
-- [update\_document\_status\_with\_doc\_id()](../business-logic-functions.md#update\_document\_status\_with\_doc\_id) — Change document status
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — 读取字段值
+- [update\_document\_status\_with\_doc\_id()](../business-logic-functions.md#update\_document\_status\_with\_doc\_id) — 更改文档状态

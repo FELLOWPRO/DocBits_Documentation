@@ -1,46 +1,46 @@
-# Editing and deleting columns
+# 编辑和删除列
 
-Everything except the title is changed directly in the list; there is no edit dialog.
+除了标题以外，所有内容都直接在列表中更改；没有编辑对话框。
 
-**Where:** Settings → Global Settings → Document Types → Table Columns
+**位置：** Settings → Global Settings → Document Types → Table Columns
 
-## Switching a flag
+## 切换标记
 
-Tick or untick the checkbox in the row. The change is saved immediately (*Successfully saved*).
+勾选或取消勾选行中的复选框。更改会立即保存（*Successfully saved*）。
 
-| Flag | On | Off |
+| 标记 | 开启 | 关闭 |
 |---|---|---|
-| **Is Required** | Approval is blocked while the column is empty in any row; the validation screen marks the cell. | Empty cells are allowed. |
-| **Read Only** | The value is shown but cannot be typed over. Use it for values that come from a lookup or a script. | Users can edit the cell. |
-| **Hidden** | The column disappears from the validation screen and from the export. Its data is kept. | The column is shown and exported. |
-| **Use AI** | The AI table extraction fills this column, also for suppliers that have trained rules. | The column is filled by the trained rules, or by the AI when no rules exist. |
+| **Is Required** | 任何行中的该列为空时，审批会被阻止；验证界面会标记该单元格。 | 允许单元格为空。 |
+| **Read Only** | 显示该值，但无法覆盖输入。适用于来自查找或脚本的值。 | 用户可以编辑该单元格。 |
+| **Hidden** | 该列会从验证界面和导出结果中消失，但数据会保留。 | 显示并导出该列。 |
+| **Use AI** | AI 表格提取会填充此列，包括对已训练规则的供应商。 | 由已训练规则填充该列；如果没有规则，则由 AI 填充。 |
 
 {% hint style="info" %}
-Flags take effect on documents uploaded or restarted **after** the change. Open documents keep their current table until they are restarted.
+标记仅对更改后上传或重新启动的文档生效。打开的文档会保留当前表格，直到重新启动。
 {% endhint %}
 
-## Renaming the title
+## 重命名标题
 
-Click the translate icon in the *Actions* column (*Update translation key*), enter the new label and confirm. The info icon next to it shows which label is currently in effect and where it comes from. Only the label changes; the technical *Column name* stays the same, so scripts, export mappings and trained rules keep working.
+点击 *Actions* 列中的翻译图标（*Update translation key*），输入新标签并确认。旁边的信息图标会显示当前生效的标签及其来源。只有标签会更改；技术性的 *Column name* 保持不变，因此脚本、导出映射和已训练规则仍可正常工作。
 
-## Changing the type or the table
+## 更改类型或表格
 
-Not possible. Hide the column (or delete it if it is your own) and add a new one with the right type.
+无法更改。隐藏该列（如果是组织自建的列，也可以删除），然后添加一个类型正确的新列。
 
-## Deleting a column
+## 删除列
 
-The delete action is only offered for columns your organization created. Default columns cannot be deleted, hide them.
+只有组织创建的列才提供删除操作。默认列无法删除，可以将其隐藏。
 
-1. Open the three-dot menu in the *Actions* column and choose **Delete**. The entry is missing for default columns.
-2. Confirm.
+1. 打开 *Actions* 列中的三点菜单，然后选择 **Delete**。默认列不会显示此选项。
+2. 确认。
 
-What happens:
+删除后的影响：
 
-* The column is removed from the configuration. Documents processed **from now on** no longer have it.
-* Documents already extracted keep the column and its values until they are restarted.
-* Trained rules that mapped this column keep working for the other columns; the mapping for the deleted column is ignored.
-* If the column is referenced in an export mapping or a script, remove that reference; otherwise the export or the script fails with a missing-column error.
+* 该列会从配置中移除。**此后**处理的文档将不再包含该列。
+* 已提取的文档会保留该列及其值，直到重新启动。
+* 已训练规则中对该列的映射仍会对其他列继续生效；已删除列的映射会被忽略。
+* 如果导出映射或脚本引用了该列，请移除相应引用；否则导出或脚本会因找不到列而失败。
 
-## Undoing a deletion
+## 撤销删除
 
-A deleted column cannot be restored from the list. Add it again with the same title: the technical name is derived from the title, so a column created with the same title gets the same *Column name* and existing mappings match again.
+无法从列表中恢复已删除的列。重新添加同名列即可：技术名称根据标题生成，因此以相同标题创建的列会获得相同的 *Column name*，现有映射也会再次匹配。

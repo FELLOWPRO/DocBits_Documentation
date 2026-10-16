@@ -1,14 +1,14 @@
-# Table Sum Validation
+# 表格金额总和验证
 
-## What does this script do?
+## 此脚本的作用是什么？
 
-Validates that the sum of all line totals in the invoice table matches the document's net amount. If there is a discrepancy greater than 0.01, the calculated sum replaces the extracted net amount — ensuring consistency between line items and header fields.
+验证发票表格中所有行合计的总和是否与文档的净额一致。如果差异大于 0.01，则用计算出的总和替换提取的净额，确保行项目与表头字段保持一致。
 
-## Trigger
+## 触发条件
 
-`AFTER_FORMATTING` on document type **INVOICE**
+文档类型为 **INVOICE** 时触发 `AFTER_FORMATTING`
 
-## Full Script
+## 完整脚本
 
 ```python
 table = tables_dict.get("INVOICE_TABLE")
@@ -32,7 +32,7 @@ if table:
         pass
 ```
 
-## Variation: Mark as invalid instead of overwriting
+## 变体：标记为无效，而不是覆盖
 
 ```python
 table = tables_dict.get("INVOICE_TABLE")
@@ -57,17 +57,17 @@ if table:
         pass
 ```
 
-## Step-by-Step Explanation
+## 分步说明
 
-1. **Get invoice table** from `tables_dict`
-2. **Sum all LINE_TOTAL values** across table rows
-3. **Compare** calculated sum with the extracted net amount
-4. **Update or flag** — either replace the net amount or mark it as invalid
+1. 从 `tables_dict` **获取发票表格**
+2. **汇总**表格各行中的所有 LINE_TOTAL 值
+3. **比较**计算出的总和与提取的净额
+4. **更新或标记**——替换净额，或将其标记为无效
 
-## Functions Used
+## 使用的函数
 
-- [get\_column\_value()](../table-functions.md#get\_column\_value) — Read column values from rows
-- [get\_field\_value()](../field-functions.md#get\_field\_value) — Read net amount
-- [set\_amount\_value()](../field-functions.md#set\_amount\_value) — Set corrected amount
-- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Mark field as invalid
-- [set\_field\_as\_valid()](../field-functions.md#set\_field\_as\_valid) — Mark field as valid
+- [get\_column\_value()](../table-functions.md#get\_column\_value) — 读取行中的列值
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — 读取净额
+- [set\_amount\_value()](../field-functions.md#set\_amount\_value) — 设置更正后的金额
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — 将字段标记为无效
+- [set\_field\_as\_valid()](../field-functions.md#set\_field\_as\_valid) — 将字段标记为有效

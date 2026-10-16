@@ -1,43 +1,43 @@
-# ZUGFeRD + Swiss QR Code Field Mapping
+# ZUGFeRD + Swiss QR 代码字段映射
 
-## Overview
+## 概述
 
-When processing PDF invoices that contain both ZUGFeRD XML data and a Swiss QR Code, DocBits extracts data from both sources and intelligently merges them.
+处理同时包含 ZUGFeRD XML 数据和 Swiss QR 代码的 PDF 发票时，DocBits 会从这两个来源提取数据并智能合并。
 
-## How It Works
+## 工作原理
 
-1. **ZUGFeRD XML Extraction** - DocBits first extracts fields from the embedded ZUGFeRD XML
-2. **Swiss QR Code Detection** - The barcode service detects and parses Swiss QR codes
-3. **Smart Merge** - Empty fields are filled from Swiss QR data (fields with values are preserved)
-4. **Audit Trail** - Full QR code data is stored in `qr_code_data` for verification
+1. **ZUGFeRD XML 提取** - DocBits 首先从嵌入的 ZUGFeRD XML 中提取字段
+2. **Swiss QR 代码检测** - 条码服务检测并解析 Swiss QR 代码
+3. **智能合并** - 使用 Swiss QR 数据填充空字段（保留已有值的字段）
+4. **审计跟踪** - 完整的 QR 代码数据会存储在 `qr_code_data` 中，以供验证
 
-## Field Mapping Table
+## 字段映射表
 
-### Swiss QR Code → DocBits Field Mapping
+### Swiss QR 代码 → DocBits 字段映射
 
-| Swiss QR Field | DocBits Field | Description |
+| Swiss QR 字段 | DocBits 字段 | 说明 |
 | :--- | :--- | :--- |
-| IBAN | `supplier_iban` | Creditor's IBAN (e.g., CH9300762011...) |
-| Amount | `total_amount` | Payment amount (e.g., 1234.56) |
-| Currency | `currency` | Currency code (CHF or EUR) |
-| Reference | `payment_reference` / `esr_reference` | QR reference or ESR number |
-| Creditor.Name | `supplier_name` | Supplier company name |
-| Creditor.AddressLine1 | `supplier_address` | Street address |
-| Creditor.PostalCode | `supplier_plz` | Postal/ZIP code |
-| Creditor.City | `supplier_city` | City name |
-| Creditor.Country | `supplier_country` | Country code (CH) |
-| Debtor.Name | `company_name` | Recipient company name |
-| Debtor.AddressLine1 | `company_street` | Recipient street address |
-| Debtor.PostalCode | `company_plz` | Recipient postal code |
-| Debtor.City | `company_city` | Recipient city |
+| IBAN | `supplier_iban` | 债权人的 IBAN（例如 CH9300762011...） |
+| 金额 | `total_amount` | 付款金额（例如 1234.56） |
+| 币种 | `currency` | 币种代码（CHF 或 EUR） |
+| 参考编号 | `payment_reference` / `esr_reference` | QR 参考编号或 ESR 编号 |
+| Creditor.Name | `supplier_name` | 供应商公司名称 |
+| Creditor.AddressLine1 | `supplier_address` | 街道地址 |
+| Creditor.PostalCode | `supplier_plz` | 邮政编码 |
+| Creditor.City | `supplier_city` | 城市名称 |
+| Creditor.Country | `supplier_country` | 国家/地区代码（CH） |
+| Debtor.Name | `company_name` | 收款公司名称 |
+| Debtor.AddressLine1 | `company_street` | 收款方街道地址 |
+| Debtor.PostalCode | `company_plz` | 收款方邮政编码 |
+| Debtor.City | `company_city` | 收款方城市 |
 
-## Example: Sample Invoice Processing
+## 示例：样例发票处理
 
-### Input Document
+### 输入文档
 
-*   **PDF**: Invoice with embedded ZUGFeRD 1.0 XML + Swiss QR Code barcode
+*   **PDF**：包含嵌入式 ZUGFeRD 1.0 XML 和 Swiss QR 代码条码的发票
 
-### Swiss QR Code Data Extracted
+### 提取的 Swiss QR 代码数据
 
 ```json
 {
@@ -64,9 +64,9 @@ When processing PDF invoices that contain both ZUGFeRD XML data and a Swiss QR C
 }
 ```
 
-### Field Extraction Results
+### 字段提取结果
 
-| Field | Value | Source | Method |
+| 字段 | 值 | 来源 | 方法 |
 | :--- | :--- | :--- | :--- |
 | `supplier_iban` | CH9300762011623852957 | ZUGFeRD XML | ED |
 | `total_amount` | 1234.56 | ZUGFeRD XML | ED |
@@ -77,37 +77,36 @@ When processing PDF invoices that contain both ZUGFeRD XML data and a Swiss QR C
 | `supplier_plz` | 8000 | Swiss QR | SWISS_QR |
 | `supplier_city` | Zürich | Swiss QR | SWISS_QR |
 
-## Extraction Methods
+## 提取方法
 
-| Method Code | Description |
+| 方法代码 | 说明 |
 | :--- | :--- |
-| **ED** | Electronic Document (ZUGFeRD/XRechnung/PEPPOL XML) |
-| **SWISS_QR** | Swiss QR Code barcode extraction |
-| **OCR** | Optical Character Recognition |
-| **ML** | Machine Learning extraction |
+| **ED** | 电子文档（ZUGFeRD/XRechnung/PEPPOL XML） |
+| **SWISS_QR** | Swiss QR 代码条码提取 |
+| **OCR** | 光学字符识别 |
+| **ML** | 机器学习提取 |
 
-## Merge Priority
+## 合并优先级
 
-1.  **ZUGFeRD XML** has highest priority (structured, reliable data)
-2.  **Swiss QR Code** fills empty fields (guaranteed accurate for payment data)
-3.  **OCR/ML** used for fields not in electronic sources
+1. **ZUGFeRD XML** 优先级最高（结构化且可靠的数据）
+2. **Swiss QR 代码** 用于填充空字段（付款数据准确性有保障）
+3. **OCR/ML** 用于提取电子数据源中不存在的字段
 
-## Supported Swiss QR Code Versions
+## 支持的 Swiss QR 代码版本
 
-*   Swiss QR Bill format (ISO 20022)
-*   QR-IBAN format (starts with 30, 31)
-*   Standard IBAN format
-*   With/without structured reference (QRR, SCOR)
+* Swiss QR 账单格式（ISO 20022）
+* QR-IBAN 格式（以 30、31 开头）
+* 标准 IBAN 格式
+* 支持或不支持结构化参考编号（QRR、SCOR）
 
-## Version Requirement
+## 版本要求
 
-This feature requires **api version 10.95.6** and **barcode version 1.0.5** or higher.
+此功能需要 **api version 10.95.6** 和 **barcode version 1.0.5** 或更高版本。
 
-### Component Versions (Environment)
+### 组件版本（环境）
 
-| Component | Version | Description |
+| 组件 | 版本 | 说明 |
 | :--- | :--- | :--- |
-| `api` | 10.95.6 | Core API with ZUGFeRD 1.0 extraction support |
-| `barcode` | 1.0.5 | Swiss QR Code detection and parsing |
-| `Auth` | 1.48.8 | Authentication service |
-
+| `api` | 10.95.6 | 支持 ZUGFeRD 1.0 提取的核心 API |
+| `barcode` | 1.0.5 | Swiss QR 代码检测与解析 |
+| `Auth` | 1.48.8 | 身份验证服务 |

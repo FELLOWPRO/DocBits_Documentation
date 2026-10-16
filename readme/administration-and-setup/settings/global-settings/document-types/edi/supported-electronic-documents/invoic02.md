@@ -1,30 +1,30 @@
 ---
-description: INVOIC02 electronic document support in DocBits
+description: "DocBits 对 INVOIC02 电子文档的支持"
 ---
 
 # INVOIC02
 
-| Property             | Value                   |
-| -------------------- | ----------------------- |
-| **Country / Region** | International           |
-| **Document Types**   | Invoice                 |
-| **Format**           | EDIFACT                 |
-| **Standard**         | UN/EDIFACT INVOIC D.02B |
+| 属性                 | 值                       |
+| -------------------- | ------------------------ |
+| **国家 / 地区**       | 国际                     |
+| **文档类型**          | 发票                     |
+| **格式**              | EDIFACT                  |
+| **标准**              | UN/EDIFACT INVOIC D.02B |
 
-INVOIC02 is a UN/EDIFACT invoice message based on the D.02B directory version. EDIFACT (Electronic Data Interchange for Administration, Commerce and Transport) is a widely used EDI standard in logistics, retail, and manufacturing. DocBits parses the EDIFACT segment structure and extracts header, line item, and summary fields.
+INVOIC02 是基于 D.02B 目录版本的 UN/EDIFACT 发票报文。EDIFACT（行政、商业和运输电子数据交换）是物流、零售和制造业广泛使用的 EDI 标准。DocBits 会解析 EDIFACT 报文段结构，并提取抬头、行项目和汇总字段。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 组件        | 状态       |
+| ------------ | ---------- |
+| 预览         | ✅ 支持     |
+| 字段提取     | ✅ 支持     |
+| 转换         | ✅ 支持     |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/invoic02-preview.png" alt="INVOIC02 invoice preview in DocBits"><figcaption><p>Default DocBits preview for an INVOIC02 invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/invoic02-preview.png" alt="DocBits 中的 INVOIC02 发票预览"><figcaption><p>INVOIC02 发票的 DocBits 默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

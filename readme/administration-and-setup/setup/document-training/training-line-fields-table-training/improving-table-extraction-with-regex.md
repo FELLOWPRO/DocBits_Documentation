@@ -1,123 +1,123 @@
-# Structuring and Improving Table Extraction in DocBits
+# 在 DocBits 中组织和改进表格提取
 
-Once a table is extracted and the initial column mapping is complete, you can enhance the quality and structure of the data using several built-in tools. This guide walks you through:
+完成表格提取和初始列映射后，您可以使用多种内置工具提升数据的质量和结构。本指南将介绍：
 
-* Grouping rows
-* Manual row selection
-* Column mapping
-* Header refinement using regex
+* 对行进行分组
+* 手动选择行
+* 列映射
+* 使用正则表达式优化表头
 
-These tools are especially helpful when dealing with complex or inconsistent document layouts.
+处理复杂或不一致的文档版式时，这些工具尤其有用。
 
-### 1. Grouping Rows
+### 1. 对行进行分组
 
-Documents like invoices or order confirmations often contain table entries where one column (e.g., a description) spans multiple lines, while other columns (e.g., quantity or price) only use one line.
+发票或订单确认书等文档中的表格条目通常会出现这种情况：一列（例如描述）跨多行，而其他列（例如数量或价格）只占一行。
 
-Take this German invoice example — the “Bezeichnung” (description) column spans multiple rows:
+以下是一个德国发票示例，其中“Bezeichnung”（描述）列跨越多行：
 
-<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-multiline-doc-en-20261006.png" alt="German invoice table where the Bezeichnung (description) of each item spans several lines."><figcaption><p>A description column that spans several rows.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-overflow-doc-en-20261006.png" alt="德国发票表格，其中每个行项目的 Bezeichnung（描述）跨越多行。"><figcaption><p>描述列跨越多行。</p></figcaption></figure>
 
-Initially, DocBits extracts each row separately:
+最初，DocBits 会将每一行分别提取：
 
-<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-initial-extraction-en-20261006.png" alt="Extracted table where every text line of the description became its own row."><figcaption><p>DocBits first extracts each row separately.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-initial-extraction-en-20261006.png" alt="提取的表格中，描述的每一行文本都成为单独一行。"><figcaption><p>DocBits 首先分别提取每一行。</p></figcaption></figure>
 
-You can then **group rows based on a column**, such as “Position.” This merges related lines into a single, structured entry:
+然后，您可以**根据某一列对行进行分组**，例如“Position”。这样会将相关行合并为一个结构化条目：
 
-<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-grouped-result-en-20261006.png" alt="Extracted table with the description lines merged into one entry per position."><figcaption><p>After grouping by Position the related lines form one entry.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-result-en-20261006.png" alt="提取的表格中，描述行已合并，每个 Position 对应一个条目。"><figcaption><p>按 Position 分组后，相关行会组成一个条目。</p></figcaption></figure>
 
-### 2. Manual Row Selection
+### 2. 手动选择行
 
-In some cases, the text on a document is spread across several columns in a single row, making it difficult to assign automatically.
+有时，文档中的文本会分散在同一行的多个列中，因此难以自动分配。
 
-Here’s an example where the “PRAEF” line overlaps **Bezeichnung**, **Menge**, **ME**, and **Preis in EUR**:
+以下示例中，“PRAEF”行与**Bezeichnung**、**Menge**、**ME**和**Preis in EUR**列重叠：
 
-<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-misalignment-en-20261006.png" alt="Invoice table with a PRAEF line whose text runs across several columns."><figcaption><p>A PRAEF line that does not align with the column structure.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-misalignment-en-20261006.png" alt="发票表格中的 PRAEF 行，其文本跨越多个列。"><figcaption><p>PRAEF 行与列结构不对齐。</p></figcaption></figure>
 
-#### 🔧 How to Manually Assign Values:
+#### 🔧 如何手动分配值：
 
-1.  **Enable Training Mode**
+1.  **启用 Training Mode**
 
-    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-training-mode-en-20261006.png" alt="Table extraction screen with Training Mode switched on."><figcaption><p>Training Mode enabled.</p></figcaption></figure>
-2.  **Activate Row Edit Mode**
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-training-mode-en-20261006.png" alt="已开启 Training Mode 的表格提取界面。"><figcaption><p>Training Mode 已启用。</p></figcaption></figure>
+2.  **启用行编辑模式**
 
-    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-edit-mode-en-20261006.png" alt="Table extraction screen with the Row data edit mode toggle switched on and its tooltip shown."><figcaption><p>Row edit mode activated.</p></figcaption></figure>
-3.  **Select and Map Text**\
-    Click the correct piece of text and assign it to a **blue** column header.
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-edit-mode-en-20261006.png" alt="表格提取界面中已开启 Row data edit mode 开关，并显示其工具提示。"><figcaption><p>行编辑模式已启用。</p></figcaption></figure>
+3.  **选择并映射文本**\
+    点击正确的文本片段，并将其分配给**蓝色**列标题。
 
-    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-en-20261006.png" alt="Extracted table in row edit mode with the blue, not yet filled column headers that can be assigned manually."><figcaption><p>Blue column headers can be filled manually.</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-en-20261006.png" alt="处于行编辑模式的提取表格，其中尚未填充、可手动分配的列标题显示为蓝色。"><figcaption><p>可以手动填写蓝色列标题。</p></figcaption></figure>
 
-> Note: Violet-colored columns are already system-mapped and cannot be manually edited.
+> 注意：紫色列已由系统映射，无法手动编辑。
 
-### 3. Mapping Columns
+### 3. 映射列
 
-Column mapping links your extracted data to the expected column headers, ensuring consistency and exportability.
+列映射会将提取的数据关联到预期的列标题，以确保数据一致并可供导出。
 
-To map or remap a column:
+要映射或重新映射列：
 
-1. Click the column header in the extraction view.
-2. Choose the correct target column from the dropdown.
+1. 在提取视图中点击列标题。
+2. 从下拉菜单中选择正确的目标列。
 
-<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-mapping-dropdown-en-20261006.png" alt="Extracted table with the column header dropdown open listing the target columns Description, Item Number, Net amount, Position, Quantity, Total amount, Unit and Unit price."><figcaption><p>Choose the target column in the header dropdown.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-mapping-dropdown-en-20261006.png" alt="提取的表格中已打开列标题下拉菜单，列出了目标列 Description、Item Number、Net amount、Position、Quantity、Total amount、Unit 和 Unit price。"><figcaption><p>在表头下拉菜单中选择目标列。</p></figcaption></figure>
 
-You can adjust the mapping as often as needed.
+您可以根据需要随时调整映射。
 
-### 4. Extract From Above / Below
+### 4. 从上方/下方提取
 
-Some documents are structured in a way where relevant table values don't appear on the same row as other data. In these cases, DocBits allows you to control **where the data should be extracted from**:
+有些文档的结构会导致相关表格值与其他数据不在同一行。在这种情况下，DocBits 允许您控制**从何处提取数据**：
 
-* **Extract from Above**: Use this when the value for the current row appears **in the line above**.
-* **Extract from Below**: Use this when the value appears **in the line beneath** the current row.
+* **Extract from Above**：当当前行的值出现在**上一行**时使用此选项。
+* **Extract from Below**：当当前行的值出现在**下一行**时使用此选项。
 
-**Where to Find It**
+**在哪里可以找到此选项**
 
-1. Enter **Training Mode**.
-2. Click the three dots (⋯) on a column header.
-3. Under the **"Extract From"** option, choose `Above` or `Below` depending on the document layout.
+1. 进入**Training Mode**。
+2. 点击列标题上的三点图标（⋯）。
+3. 在**“Extract From”**选项下，根据文档版式选择 `Above` 或 `Below`。
 
-### 5. Amount Format
+### 5. 金额格式
 
-Some columns, such as **Quantity** or **Unit Price**, contain numeric or date values that may follow different formatting conventions depending on the document's origin or locale. DocBits allows you to specify the format these values should follow to ensure accurate extraction and interpretation.
+某些列（例如**Quantity**或**Unit Price**）包含数字或日期值，其格式可能因文档来源或区域设置而异。DocBits 允许您指定这些值应采用的格式，以确保准确提取和解读。
 
-**Amount Format Options:**
+**金额格式选项：**
 
-* Define the expected number or date format for the column, such as US (MM/DD/YYYY, decimal with dot), Poland (DD.MM.YYYY, decimal with comma), Germany, and others.
-* This helps DocBits correctly parse and standardize values even if the document uses a different regional format.
+* 为列指定预期的数字或日期格式，例如美国格式（MM/DD/YYYY，使用点号作为小数分隔符）、波兰格式（DD.MM.YYYY，使用逗号作为小数分隔符）、德国格式等。
+* 即使文档使用不同的区域格式，这也有助于 DocBits 正确解析并标准化值。
 
-**Where to Find It**
+**在哪里可以找到此选项**
 
-1. Enter **Training Mode**.
-2. Click the three dots (⋯) on the header of a supported column (e.g., Quantity, Unit Price).
-3. Under the **Amount Format** option, select the desired format matching your document's locale.
+1. 进入**Training Mode**。
+2. 点击受支持列（例如 Quantity、Unit Price）表头上的三点图标（⋯）。
+3. 在**Amount Format**选项下，选择与文档区域设置相符的所需格式。
 
-### 6. Improving Table Extraction with Regex
+### 6. 使用正则表达式改进表格提取
 
-### **What It Does**
+### **功能说明**
 
-This feature allows you to define a regex for each table header, improving extraction accuracy and ensuring correct results.
+此功能允许您为每个表头定义正则表达式，从而提高提取准确性并确保结果正确。
 
-### **How to Use It**
+### **使用方法**
 
-1. Open a document from the supplier for which you want to define a regex.
-2.  Navigate to the **Table Extraction** view.\\
+1. 打开一份来自您要为其定义正则表达式的供应商的文档。
+2.  转到**Table Extraction**视图。\\
 
-    <figure><img src="../../../../.gitbook/assets/image (417).png" alt=""><figcaption></figcaption></figure>
-3. Enable **Training Mode**.
-4.  Select the table header you want to refine, then choose **Regex**.\\
+    <figure><img src="../../../../.gitbook/assets/image (420).png" alt=""><figcaption></figcaption></figure>
+3. 启用**Training Mode**。
+4.  选择要优化的表头，然后选择**Regex**。\\
 
-    <figure><img src="../../../../.gitbook/assets/image (416).png" alt=""><figcaption></figcaption></figure>
-5.  A popup will appear where you can enter and define your regex.\\
+    <figure><img src="../../../../.gitbook/assets/image (419).png" alt=""><figcaption></figcaption></figure>
+5.  此时会弹出窗口，您可以在其中输入并定义正则表达式。\\
 
     <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250303135020.jpg" alt=""><figcaption></figcaption></figure>
-6.  Click **Validate** to check the regex, then **Save Changes** to apply it.\\
+6.  点击**Validate**检查正则表达式，然后点击**Save Changes**应用它。\\
 
     <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250303135153.jpg" alt=""><figcaption></figcaption></figure>
-7. **Save the rule and confirm** to apply the changes.
+7. **保存规则并确认**以应用更改。
 
-### When to Use Each Feature
+### 何时使用各项功能
 
-Use these tools to increase extraction accuracy and reduce manual work:
+使用这些工具可以提高提取准确性并减少手动工作：
 
-* **Grouping**: When a description or any column spans multiple rows and needs to be combined for clarity.
-* **Manual Row Selection**: When rows aren’t structured cleanly, and parts of the content fall into the wrong columns.
-* **Column Mapping**: When the automatically detected column names don’t match your structure or need refinement.
-* **Regex Rules**: When table headers vary slightly across documents from the same supplier or OCR introduces inconsistencies.
+* **分组**：当描述或其他列跨越多行，需要合并以便清晰呈现时使用。
+* **手动选择行**：当行结构不规整，且部分内容落入错误列时使用。
+* **列映射**：当自动检测的列名与您的结构不匹配，或需要优化时使用。
+* **正则表达式规则**：当同一供应商的不同文档中的表头略有差异，或 OCR 识别导致不一致时使用。

@@ -1,30 +1,30 @@
 ---
-description: PARAGUAY SIFEN 150 electronic document support in DocBits
+description: DocBits 对 PARAGUAY SIFEN 150 电子文档的支持
 ---
 
 # 🇵🇾 PARAGUAY SIFEN 150
 
-| Property             | Value                    |
+| 属性                 | 值                       |
 | -------------------- | ------------------------ |
-| **Country / Region** | Paraguay                 |
-| **Document Types**   | Invoice, Credit Note     |
-| **Format**           | XML                      |
-| **Standard**         | SIFEN Schema Version 150 |
+| **国家 / 地区**      | 巴拉圭                   |
+| **文档类型**         | 发票、贷项通知单         |
+| **格式**             | XML                      |
+| **标准**             | SIFEN Schema Version 150 |
 
-SIFEN 150 refers to schema version 150 of the Paraguayan SIFEN system. This version introduced updated validation rules and field requirements for electronic documents processed through the SET platform.
+SIFEN 150 指巴拉圭 SIFEN 系统的架构版本 150。此版本更新了通过 SET 平台处理的电子文档的验证规则和字段要求。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 组件               | 状态        |
+| ------------------ | ----------- |
+| 预览               | ✅ 支持     |
+| 字段提取           | ✅ 支持     |
+| 转换               | ✅ 支持     |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/paraguay-sifen-preview.png" alt="Paraguay SIFEN 150 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Paraguay SIFEN 150 invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/paraguay-sifen-preview.png" alt="DocBits 中的巴拉圭 SIFEN 150 发票预览"><figcaption><p>DocBits 中巴拉圭 SIFEN 150 发票的默认预览</p></figcaption></figure>
 
-## Related
+## 相关
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

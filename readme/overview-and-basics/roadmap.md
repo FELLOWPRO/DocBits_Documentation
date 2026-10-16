@@ -1,263 +1,185 @@
-# DocBits Roadmap
+# DocBits 路线图
 
-**NOVA R1.1 availability:** Available in the sandbox since **16 October 2026**. The production release is planned for **4 November 2026**.
+**NOVA R1.1 可用性：**自 **2026 年 10 月 16 日**起可在沙盒中使用。计划于 **2026 年 11 月 4 日**发布到生产环境。
 
-_Planning status as of 7 October 2026. Each release lists the planned
-sandbox date (when customers can test it) and the planned production date. The
-themes describe what is planned for the release, not what has already shipped;
-scope and dates can move. Hotfixes between releases are documented in the
-[Release Notes](release-notes/README.md)._
+_截至 2026 年 10 月 7 日的规划状态。每个版本都列出了计划的沙盒日期（客户可以开始测试的日期）和计划的生产日期。主题说明的是该版本的计划内容，并非已经发布的内容；范围和日期可能会调整。版本之间的热修复记录在[发布说明](release-notes/README.md)中。_
 
-| Release | Sandbox | Production |
+| 版本 | 沙盒 | 生产环境 |
 |---|---|---|
-| R1.1 | 16 October 2026 | 4 November 2026 |
-| R1.2 | 16 February 2027 | 3 March 2027 |
-| R1.3 | 1 June 2027 | 16 June 2027 |
-| R1.4 | 5 October 2027 | 20 October 2027 |
+| R1.1 | 2026 年 10 月 16 日 | 2026 年 11 月 4 日 |
+| R1.2 | 2027 年 2 月 16 日 | 2027 年 3 月 3 日 |
+| R1.3 | 2027 年 6 月 1 日 | 2027 年 6 月 16 日 |
+| R1.4 | 2027 年 10 月 5 日 | 2027 年 10 月 20 日 |
 
 ---
 
-## R1.1 — Sandbox 16 October 2026 · Production 4 November 2026
+## R1.1 — 沙盒：2026 年 10 月 16 日 · 生产环境：2026 年 11 月 4 日
 
-**Transformation rules and layouts**
+**转换规则和布局**
 
-- A rule engine for extracted field and column values: set, replace or derive
-  values with nested condition groups, with a settings screen to manage the
-  rules. The "is one of" condition takes several values, the rule list can be
-  searched by rule ID, and rules also run after the master data lookup.
-- Layout selection rules get the same nested conditions and an optional
-  execution log. Layout selection works independently of where a document came
-  from.
-- Manage Layouts, Custom Validation Rules and Transformation Rules no longer
-  need the beta switch.
-- Clear precedence rules for field labels on header fields and table columns.
-  Users can create their own translation keys for field settings and table
-  columns.
-- A table column can be assigned again after it was deleted, and the supplier
-  item price table shows all of its columns.
+- 新增用于提取字段值和列值的规则引擎：可以通过嵌套条件组设置、替换或派生值，并提供用于管理规则的设置页面。“is one of”条件可以接受多个值，规则列表可按规则 ID 搜索，并且在主数据查找后也会运行规则。
+- 布局选择规则也支持相同的嵌套条件，并可选择记录执行日志。布局选择不受文档来源影响。
+- 管理布局、自定义验证规则和转换规则不再需要启用 beta 开关。
+- 明确表头字段和表格列字段标签的优先级规则。用户可以为字段设置和表格列创建自己的翻译键。
+- 删除表格列后可以重新分配该列，供应商商品价格表会显示所有列。
 
-**Approval and validation screens**
+**审批和验证页面**
 
-- The three line-item tables on the approval screen (invoice lines, compare
-  lines, PO matching) share one style.
-- The last-opened side panel (activity stream or approval history) is
-  remembered per user.
-- Merge documents from the approval screen with the document uploader.
-- Custom validation rules handle shipping costs generically, show a field
-  message instead of a general error when a required field is empty, and rules
-  that reported a false negative are corrected. System default rules can be
-  duplicated.
-- A mismatch between quantity and net amount on an AI-extracted table is
-  reported, an invoice with a matched purchase order is no longer classified as
-  a cost invoice, and a date reformatted by a rule is accepted.
-- An approval screen that hung on the loading overlay after approving or
-  rejecting is fixed. A loading bar replaces the plain loading icon, and page
-  URLs are friendlier.
-- Opening a document link after the session has expired leads to the login
-  page instead of a 404.
+- 审批页面上的三个行项目表格（发票行、比较行、采购订单匹配）采用统一样式。
+- 系统会按用户记住最近打开的侧边面板（活动流或审批历史）。
+- 可以通过文档上传器从审批页面合并文档。
+- 自定义验证规则可通用地处理运费；必填字段为空时会显示字段提示，而不是一般错误；会修正报告错误否定结果的规则。系统默认规则可以复制。
+- 系统会报告 AI 提取表格中的数量与净额不匹配；与采购订单匹配的发票不再被归类为费用发票；规则重新格式化后的日期也会被接受。
+- 修复了审批或拒绝后审批页面一直停留在加载遮罩层的问题。普通加载图标已替换为加载进度条，页面 URL 也更加简洁易读。
+- 会话过期后打开文档链接时会进入登录页面，而不是显示 404。
 
-**Duplicate detection**
+**重复项检测**
 
-- Custom fields appear in the duplicate detection result, and the duplicate
-  settings can be searched.
-- "Block Duplicate Document Export" blocks the export of a detected duplicate.
+- 重复项检测结果中会显示自定义字段，并且可以搜索重复项设置。
+- “Block Duplicate Document Export”会阻止导出检测到的重复文档。
 
-**Workflows and tasks**
+**工作流和任务**
 
-- A "New workflow" button, logs for advanced workflows, a clearer watchdog log
-  screen, and workflow steps that change a field or checkbox apply reliably.
-- Adding a line in a decision tree keeps the user names instead of showing IDs.
-- Every status change of a document is logged.
-- Creating a new e-mail template works again.
-- The task list shows its tasks on first load.
+- 新增“New workflow”按钮、高级工作流日志和更清晰的监控日志页面；工作流中修改字段或复选框的步骤现在可以可靠执行。
+- 在决策树中添加行项目时会保留用户名，而不是显示 ID。
+- 系统会记录文档的每次状态变更。
+- 可以重新创建电子邮件模板。
+- 任务列表在首次加载时会显示任务。
 
-**Import**
+**导入**
 
-- E-mail import moves a mail out of the inbox only after the upload is
-  confirmed, treats a redelivered forward as one delivery, records who last
-  saved, and lists an attachment once with the reason when it fails.
-- FTP and SFTP import get a true delete-after-import option next to move and
-  archive. Passwords are no longer corrupted when a configuration is edited,
-  the connection test works for new SFTP connections, and a failed SFTP
-  connection or wrong login shows a specific message instead of a general error.
-- Administrators are told in the Settings Assistant when a configured FTP or
-  e-mail import stops working.
-- The scanner app upload works again.
-- Purchase order BOD files uploaded in the US region stay in the US region.
+- 电子邮件导入仅在确认上传后才会将邮件移出收件箱；重复投递的转发邮件会被视为一次投递；系统会记录最后保存者；附件失败时只会列出一次，并说明失败原因。
+- FTP 和 SFTP 导入新增真正的“导入后删除”选项，与移动和归档选项并列。编辑配置时密码不再损坏；新建 SFTP 连接时连接测试可以正常工作；SFTP 连接失败或登录信息错误时会显示具体消息，而不是一般错误。
+- 配置的 FTP 或电子邮件导入停止工作时，系统会在设置助手中通知管理员。
+- 扫描器应用的上传功能已恢复正常。
+- 在美国区域上传的采购订单 BOD 文件仍保留在美国区域。
 
-**Document processing and extraction**
+**文档处理和提取**
 
-- When the barcode service hangs, the document shows the error instead of
-  sitting in "Processing" indefinitely.
-- A new, cheaper AI model tier ("Eco") for extraction.
-- With structured AI extraction, trained supplier item numbers stay trained,
-  and item number and supplier item number are no longer swapped.
-- UBL e-document templates are adjusted; extraction corrections for amounts,
-  tax rates, unit prices and purchase order numbers on specific supplier
-  layouts.
-- Additional date formats are recognised.
-- A cost invoice with two VAT rates keeps both accounting lines.
+- 条码服务卡住时，文档会显示错误，而不会无限期停留在“Processing”状态。
+- 新增一种价格更低的 AI 提取模型级别（“Eco”）。
+- 使用结构化 AI 提取时，已训练的供应商商品编号会保留训练结果，商品编号和供应商商品编号也不再互换。
+- 调整了 UBL 电子文档模板；并针对特定供应商布局修正了金额、税率、单价和采购订单编号的提取。
+- 系统可识别更多日期格式。
+- 包含两种增值税率的费用发票会保留两条会计行。
 
-**Purchase order matching**
+**采购订单匹配**
 
-- Matching requires a quantity column, uses the price per base unit quantity,
-  and the last-line fallback can be switched per customer.
-- Delivery note lines can be selected individually.
-- The e-document screen no longer freezes on invoices with more than 250 lines.
+- 匹配时必须有数量列；系统会使用每个基本单位数量的价格；每位客户都可以单独启用或停用最后一行回退机制。
+- 可以单独选择交货单行。
+- 发票超过 250 行时，电子文档页面不再冻结。
 
 **Touchless Intelligence**
 
-- More detail in the Touchless report, and the Touchless checkbox reflects the
-  saved setting.
+- Touchless 报告提供更多详细信息，Touchless 复选框会反映已保存的设置。
 
-**Dashboard, accounts and subscription**
+**仪表板、账户和订阅**
 
-- The dashboard can hold up to 10,000 documents per search, and a custom date
-  filter is applied correctly.
-- Discount due date and invoice due date are available as layout fields and
-  filled on import.
-- Shared dashboard users are kept when a dashboard is saved, and "Updated by"
-  shows the right person.
-- Archived documents can be moved back out of the "Archived" status.
-- Users can log in again after a password reset.
-- The subscription plan page shows usage for the plan and its features.
+- 仪表板每次搜索最多可包含 10,000 份文档，自定义日期筛选器也会正确应用。
+- 折扣到期日和发票到期日可用作布局字段，并会在导入时填入。
+- 保存仪表板时会保留共享用户，“Updated by”会显示正确的人员。
+- 可以将已归档的文档移出“Archived”状态。
+- 密码重置后，用户可以再次登录。
+- 订阅计划页面会显示计划及其功能的使用情况。
 
-**Export and EDI**
+**导出和 EDI**
 
-- An additional Infor M3 export step for extra invoice information.
-- A packing list with several container numbers is exported as one record per
-  container.
-- Re-importing a receive delivery no longer fails on a duplicate key, and
-  receive delivery BODs are applied in the right order.
-- EDI mappings for invoice, purchase order and order confirmation are updated.
-- Testing the connection of a new Infor IDM or Infor LN export configuration
-  works.
+- 新增一个 Infor M3 导出步骤，用于导出额外的发票信息。
+- 包含多个集装箱编号的装箱单会按每个集装箱导出为一条记录。
+- 重新导入接收交货数据时不再因重复键而失败；接收交货 BOD 会按正确顺序应用。
+- 已更新发票、采购订单和订单确认的 EDI 映射。
+- 可以测试新建的 Infor IDM 或 Infor LN 导出配置的连接。
 
-**Security**
+**安全**
 
-- The organisation guard for API keys is enforced on every environment.
+- 所有环境都会强制执行针对 API 密钥的组织防护机制。
 
 ---
 
-## R1.2 — Sandbox 16 February 2027 · Production 3 March 2027
+## R1.2 — 沙盒：2027 年 2 月 16 日 · 生产环境：2027 年 3 月 3 日
 
-**Approval and purchase order matching**
+**审批和采购订单匹配**
 
-- A "Pending input" state pauses a document until someone answers, without
-  breaking the workflow or the audit history, and approvers can ask questions
-  without interrupting the approval flow.
-- A document can be reassigned to another user (first phase).
-- Pre-payment invoices can be matched before the goods receipt while "Match on
-  received quantity" stays active.
-- The matching screen offers only viable PO lines, and multi-line matches that
-  skip the price comparison still show the unit price on the approval screen.
-- A receipt availability flag compares invoiced and received quantities.
-- Order confirmations: costing elements shown while approval is pending,
-  colour-coded surcharge positions in PO matching, and the item number column
-  in the invoice line items.
-- Supplier RMA lines are handled.
+- “Pending input”状态会暂停文档，等待有人回复，同时不影响工作流或审计历史；审批人可以提出问题，而不会中断审批流程。
+- 可以将文档重新分配给其他用户（第一阶段）。
+- 预付款发票可以在收货前匹配，同时保持“Match on received quantity”处于启用状态。
+- 匹配页面只显示可行的采购订单行；即使多行匹配跳过了价格比较，审批页面仍会显示单价。
+- 收货可用性标记会比较发票数量和已收数量。
+- 订单确认：审批待处理期间显示成本要素；采购订单匹配中的附加费行采用颜色编码；发票行项目中显示商品编号列。
+- 支持处理供应商 RMA 行。
 
-**Import and classification**
+**导入和分类**
 
-- The supplier type is derived from the line items.
-- The support ticket form accepts attachments and links the organisation
-  automatically.
+- 根据行项目推导供应商类型。
+- 支持工单表单接受附件，并自动关联组织。
 
-**Settings and automation**
+**设置和自动化**
 
-- The "Set sub-organisation" script becomes a transformation rule.
-- Standard columns can be removed from a document type.
+- “Set sub-organisation”脚本改为转换规则。
+- 可以从文档类型中移除标准列。
 
-**Export**
+**导出**
 
-- The export history lists exported documents again.
-- Freight invoices export to Infor LN.
-- Export file names are configurable.
-- Extended Vertex tax integration.
+- 导出历史记录会重新列出已导出的文档。
+- 运费发票可导出到 Infor LN。
+- 可以配置导出文件名。
+- 扩展 Vertex 税务集成。
 
 ---
 
-## R1.3 — Sandbox 1 June 2027 · Production 16 June 2027
+## R1.3 — 沙盒：2027 年 6 月 1 日 · 生产环境：2027 年 6 月 16 日
 
-**Auto Accounting Rule Manager**
+**自动会计规则管理器**
 
-- Rules assign accounts and dimensions automatically, scoped per
-  sub-organisation and document type, with an audit screen that shows which
-  rule fired.
-- A rule can look up master data and assign several fields at once, or
-  populate a value from a table line column.
-- Fields and dimensions can be cleared individually, line items can be deleted
-  (including lines without an amount), and rules keep working on fields that
-  changed from text to dropdown.
-- Predictions support multiple tax codes and dimensions, vouchers and booking
-  references. The Auto Accounting screens are available in several languages.
+- 规则会自动分配科目和维度，并可按子组织和文档类型限定范围；审计页面会显示触发的规则。
+- 规则可以查找主数据并一次分配多个字段，也可以从表格行列填入值。
+- 可以单独清除字段和维度；可以删除行项目（包括没有金额的行）；字段从文本变为下拉列表后，规则仍可继续运行。
+- 预测支持多个税码和维度、凭证及记账参考编号。自动会计页面支持多种语言。
 
-**Purchase order matching**
+**采购订单匹配**
 
-- The match icon navigates, scrolls and highlights across tabs, including
-  one-to-many matches.
-- Unit conversion with aliases (for example KG and TO), a configurable
-  rounding variance with a rounding account, and calculations with four
-  decimals shown as three.
+- 匹配图标可以在不同标签页之间导航、滚动并高亮显示，也支持一对多匹配。
+- 支持带别名的单位换算（例如 KG 和 TO）、可配置的舍入差异及舍入科目；计算精度为四位小数，显示为三位小数。
 
-**Usability**
+**易用性**
 
-- The execution order of document scripts is visible in the frontend.
-- Enter and Tab move through fields on the keyboard.
+- 前端会显示文档脚本的执行顺序。
+- 可以使用键盘上的 Enter 和 Tab 键在字段间移动。
 
-**Export**
+**导出**
 
-- An incomplete document in Infor LN is deleted after a failed export.
-- The database connector includes all relevant tables.
+- Infor LN 中导出失败的未完成文档会被删除。
+- 数据库连接器会包含所有相关表。
 
 ---
 
-## R1.4 — Sandbox 5 October 2027 · Production 20 October 2027
+## R1.4 — 沙盒：2027 年 10 月 5 日 · 生产环境：2027 年 10 月 20 日
 
-**Auto Accounting on the approval screen**
+**审批页面中的自动会计**
 
-- Approvers can work with auto accounting directly on the approval screen.
-- Approval can be gated on accounting fields such as nominal code or country,
-  with an AP correction when a document is returned.
-- A tax code dropdown on Auto Accounting without setting up multiple tax
-  lines.
-- Dimensions are stored in a new structure so large dimension sets load
-  faster, and the Rule Manager gets a feedback round.
+- 审批人可以直接在审批页面使用自动会计。
+- 可以设置审批门槛，要求名义代码或国家等会计字段符合条件；文档退回时会进行 AP 更正。
+- 自动会计中的税码下拉列表无需设置多条税行。
+- 维度会存储在新结构中，以便更快加载大型维度集；规则管理器也会增加一轮反馈。
 
-**Approval**
+**审批**
 
-- An improved approval flow, delegation to another user during approval, and
-  an "Export & Next" button.
+- 改进审批流程；审批期间可将任务委派给其他用户；新增“Export & Next”按钮。
 
-**Purchase order matching and export guards**
+**采购订单匹配和导出限制**
 
-- Over-matched invoices, where the invoiced quantity exceeds the received
-  quantity, are recognised on the matching screen, and units of measure are
-  converted during invoice matching.
-- Charge codes (toll, transport, energy) are recognised and their cost
-  distributed.
-- Export is blocked with a warning when the matched quantity exceeds or differs
-  too much from the received quantity, or when the booking date is before the
-  warehouse entry date.
+- 匹配页面可以识别超额匹配的发票，即发票数量超过已收数量的情况；发票匹配期间会转换计量单位。
+- 系统会识别收费代码（通行费、运输费、能源费），并分摊相应成本。
+- 如果匹配数量超过已收数量、与已收数量差异过大，或记账日期早于仓库录入日期，导出会被阻止并显示警告。
 
-**Import and settings**
+**导入和设置**
 
-- A retry mechanism for FTP, e-mail and inbound e-mail import with automatic
-  and manual reprocessing, and the sender address is available from e-mail
-  import.
-- Settings can be searched across all toggles and sub-pages.
-- The e-mail server setup lets you replace an expired OAuth or client secret
-  without setting the mailbox up again.
-- The supplier item number map (item number conversion table) can be filled
-  from a CSV import.
-- The approval history can be exported through SFTP export.
+- FTP、电子邮件和入站电子邮件导入新增重试机制，支持自动和手动重新处理；可从电子邮件导入中获取发件人地址。
+- 可以搜索所有开关和子页面中的设置。
+- 电子邮件服务器设置允许更换已过期的 OAuth 或客户端密钥，无需重新设置邮箱。
+- 可以通过 CSV 导入填写供应商商品编号映射表（商品编号转换表）。
+- 可以通过 SFTP 导出审批历史。
 
 **DocNet Agents**
 
-- Order intake: a customer order becomes a sales order in Infor M3 or Infor
-  LN (first version, text documents).
-
-<!-- Generated from Jira "Release No." (customfield_10392) on 2026-10-07 by the
-     docbits-roadmap skill. Releases up to R1.4 only; R1.5 and later are not
-     published yet. Themes only; ticket keys, customer names and internal work
-     are deliberately left out. Rerun the skill to refresh. -->
+- 订单接收：客户订单会在 Infor M3 或 Infor LN 中转为销售订单（首个版本，支持文本类文档）。

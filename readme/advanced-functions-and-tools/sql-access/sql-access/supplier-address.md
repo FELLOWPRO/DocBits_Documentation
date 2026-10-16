@@ -1,27 +1,27 @@
-# Supplier address
+# 供应商地址
 
-## Spalten
+## 列
 
-* `org_id`: ID to organisation
-* `customer_number`: internal
-* `supplier_number`: internal
-* `address_id`: internal
-* `supplier_name`: Supplier Name
-* `address_1`: internal
-* `address_2`: internal
-* `address_3`: internal
-* `address_4`: internal
-* `zip_code`: internal
-* `town_city`: internal
-* `country_code`: internal
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `sub_org_id`: internal
-* `id`: internal
+* `org_id`：组织 ID
+* `customer_number`：内部字段
+* `supplier_number`：内部字段
+* `address_id`：内部字段
+* `supplier_name`：供应商名称
+* `address_1`：内部字段
+* `address_2`：内部字段
+* `address_3`：内部字段
+* `address_4`：内部字段
+* `zip_code`：内部字段
+* `town_city`：内部字段
+* `country_code`：内部字段
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `sub_org_id`：内部字段
+* `id`：内部字段
 
-## Analyse & Beschreibung
+## 分析与描述
 
 ```markdown
 # Technical Documentation for `public.supplier_address` Table

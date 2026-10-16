@@ -1,49 +1,49 @@
-# Architecture
+# 架构
 
-## **DocBits Cloud customer**
+## **DocBits 云端客户**
 
-<figure><img src="../../.gitbook/assets/docbits_cloud_customer_architecture.png" alt="DocBits Cloud Customer Architecture"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_cloud_customer_architecture.png" alt="DocBits 云端客户架构"><figcaption></figcaption></figure>
 
-## DocBits On premise
+## DocBits 本地部署
 
-<figure><img src="../../.gitbook/assets/docbits_on_premise_architecture.png" alt="DocBits On Premise Architecture"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_on_premise_architecture.png" alt="DocBits 本地部署架构"><figcaption></figcaption></figure>
 
-Doc**Bits** seamlessly integrates with Infor LN/M3 through ION API, ION Desk, and Infor Standard BODs. Our API integration allows us to export data to Infor and perform master data validation in Doc**Bits**.
+Doc**Bits** 通过 ION API、ION Desk 和 Infor 标准 BOD 与 Infor LN/M3 无缝集成。通过 API 集成，我们可以将数据导出到 Infor，并在 Doc**Bits** 中执行主数据验证。
 
-## **DocBits Operator Architecture**
+## **DocBits Operator 架构**
 
-All connections between components are secured using industry-standard encryption protocols. SSH, HTTPS, and other secure channels ensure data integrity and confidentiality throughout the system.
+组件之间的所有连接均使用行业标准加密协议进行保护。SSH、HTTPS 和其他安全通道可确保整个系统中的数据完整性和机密性。
 
-**On Premise:**&#x20;
+**本地部署：**&#x20;
 
 <figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt=""><figcaption></figcaption></figure>
 
 {% content-ref url="prefect-local-setup-requirements.md" %}
-[prefect-local-setup-requirements.md](prefect-local-setup-requirements.md)
+[Prefect 本地设置要求](prefect-local-setup-requirements.md)
 {% endcontent-ref %}
 
-**Cloud**:
+**云端**：
 
 <figure><img src="../../.gitbook/assets/Operator Cloud .png" alt=""><figcaption></figcaption></figure>
 
-## Exporting Data to Infor
+## 将数据导出到 Infor
 
-We use the ION API to send the PDF with attributes to IDM and the BOD Sync.CaptureDocument to ION Desk. In ION Desk, we transform the [Sync.CaptureDocument](../../infor-integration-and-configuration/exporting-in-docbits/) to the desired target BODs based on the document type being processed. These transformed Infor BODs are then automatically imported to LN or M3.
+我们使用 ION API 将带有属性的 PDF 发送到 IDM，并将 BOD Sync.CaptureDocument 发送到 ION Desk。在 ION Desk 中，我们根据正在处理的文档类型，将 [Sync.CaptureDocument](../../infor-integration-and-configuration/exporting-in-docbits/) 转换为所需的目标 BOD。随后，这些转换后的 Infor BOD 会自动导入 LN 或 M3。
 
 {% hint style="info" %}
-Export to [Infor](../../infor-integration-and-configuration/exporting-to-infor/)
+导出到 [Infor](../../infor-integration-and-configuration/exporting-to-infor/)
 {% endhint %}
 
-## Master Data Validation in DocBits
+## 在 DocBits 中验证主数据
 
-To identify the supplier or compare/match purchase order lines, we activate a trigger in LN/M3 that sends the Sync.RemitToPartyMaster, Sync.SupplierPartyMaster, and Sync.PurchaseOrder BODs to Doc**Bits**. We configure this process in ION Desk by defining the dataflow to a specific connection point to Doc**Bits**.
+为识别供应商或比较/匹配采购订单行，我们会在 LN/M3 中激活一个触发器，将 Sync.RemitToPartyMaster、Sync.SupplierPartyMaster 和 Sync.PurchaseOrder BOD 发送到 Doc**Bits**。我们在 ION Desk 中配置此流程，将数据流定义到 Doc**Bits** 的特定连接点。
 
 <figure><img src="../../.gitbook/assets/docbits_architecture (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-[Master Data Validation](../../infor-integration-and-configuration/importing-customer-master-data/)
+[主数据验证](../../infor-integration-and-configuration/importing-customer-master-data/)
 {% endhint %}
 
-## Email Import OAuth Office365
+## 电子邮件导入 OAuth Office365
 
 <figure><img src="../../.gitbook/assets/o365_architecture.png" alt=""><figcaption></figcaption></figure>

@@ -1,20 +1,19 @@
-# Technical Support in DocBits
+# DocBits 中的技术支持
 
-### Technical Support in DocBits <a href="#hy7z6t7p8psl" id="hy7z6t7p8psl"></a>
+### DocBits 中的技术支持 <a href="#hy7z6t7p8psl" id="hy7z6t7p8psl"></a>
 
-### **Help Icons** <a href="#gvm1kp4bwvnd" id="gvm1kp4bwvnd"></a>
+### **帮助图标** <a href="#gvm1kp4bwvnd" id="gvm1kp4bwvnd"></a>
 
-Help icons have been placed all around DocBits in order to assist you in learning and understanding what a feature really does and how it can assist you with your document processing.
+DocBits 中的各处都设有帮助图标，帮助您了解各项功能的实际作用，以及这些功能如何协助您处理文档。
 
-These help icons look as follows
+帮助图标如下所示
 
-### **Create a Ticket** <a href="#id-2mb0mw2kxioz" id="id-2mb0mw2kxioz"></a>
+### **创建工单** <a href="#id-2mb0mw2kxioz" id="id-2mb0mw2kxioz"></a>
 
-This is a tool available to you, on the validation screen, in the event of some sort of issue occurring when validating your document in DocBits.
+如果您在 DocBits 中验证文档时遇到问题，可以在验证屏幕上使用此工具。
 
-This feature is located in the menu above the document preview area, like below
+此功能位于文档预览区域上方的菜单中，如下所示
 
-Once clicked, the following ticket form will be displayed to you.
+点击后，系统会显示以下工单表单。
 
-This is where you will fill in your details as well as describe the error. You can also ,if applicable, attach a screenshot of the issue and attach a relevant file.
-
+您可以在此填写详细信息并描述错误。如果适用，您还可以附上问题截图和相关文件。

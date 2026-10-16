@@ -1,19 +1,18 @@
-# Keyboard Shortcuts
+# 键盘快捷键
 
-### Field Validation Shortcuts
+### 字段验证快捷键
 
-When working within the field validation section, users can utilize these shortcuts:
+在字段验证区域中操作时，用户可以使用以下快捷键：
 
-* **Enter** – Moves the cursor to the next field in the validation sequence.
-* **Tab** – Validates the current field and automatically jumps to the next field that requires validation, skipping already validated fields.
-* **ESC** - Takes you back to the Dashboard.
-* **Control + K** – Opens the keyboard shortcut menu specific to the field validation section.
-* **Control + H** – Opens the documentation page for more information and assistance.
-* **Space** – Toggles a checkbox selection, allowing users to quickly mark or unmark options.
-* **Control + G  / Alt + G** – Moves the focus to the next group of related fields, helping navigate structured input sections efficiently.
-* **Control + F** – Moves the cursor to the first field in the first group, allowing users to quickly return to the beginning of a form.
-* **Control + S / Alt + S** – Saves the document, ensuring all entered data is stored.
-* **Options + R / Alt + R** – Rejects the document, marking it as invalid or requiring further review.
-* **Control + T / Alt + T** – Jumps directly to the table section of the document.
-* **Control + plus (+) / Alt + plus (+)** Creates a new Table Line.
-
+* **Enter** – 将光标移至验证顺序中的下一个字段。
+* **Tab** – 验证当前字段，并自动跳转到下一个需要验证的字段，跳过已验证的字段。
+* **ESC** - 返回仪表板。
+* **Control + K** – 打开字段验证区域专用的键盘快捷键菜单。
+* **Control + H** – 打开文档页面，以获取更多信息和帮助。
+* **Space** – 切换复选框的选中状态，方便用户快速勾选或取消勾选选项。
+* **Control + G  / Alt + G** – 将焦点移至下一组相关字段，帮助用户高效浏览结构化输入区域。
+* **Control + F** – 将光标移至第一组中的第一个字段，方便用户快速返回表单开头。
+* **Control + S / Alt + S** – 保存文档，确保已输入的数据均已存储。
+* **Options + R / Alt + R** – 拒绝文档，将其标记为无效或需要进一步审核。
+* **Control + T / Alt + T** – 直接跳转到文档的表格区域。
+* **Control + plus (+) / Alt + plus (+)** 新建一行表格。

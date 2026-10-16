@@ -1,41 +1,41 @@
-# Editing Email Templates
+# 编辑电子邮件模板
 
-<figure><img src="../../../.gitbook/assets/supplier_email_templates.png" alt="Supplier Email Templates"><figcaption><p>Supplier Email Templates Page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_email_templates.png" alt="供应商电子邮件模板"><figcaption><p>供应商电子邮件模板页面</p></figcaption></figure>
 
-### Overview
+### 概述
 
-The Email Templates feature allows administrators to create and customize email communications that are automatically sent to suppliers. One of the key elements used in these templates is the `{{magic_link}}`, which provides a dynamic link tailored to each recipient.
+“电子邮件模板”功能允许管理员创建和自定义自动发送给供应商的电子邮件。其中一个关键元素是 `{{magic_link}}`，它会为每位收件人提供专属的动态链接。
 
-#### What is `{{magic_link}}`?
+#### 什么是 `{{magic_link}}`？
 
-The `{{magic_link}}` is a placeholder that is dynamically replaced with a unique URL when the email is sent. This URL usually directs the recipient to complete an action, such as registration, approval, or accessing a specific part of the supplier portal.
+`{{magic_link}}` 是一个占位符，发送电子邮件时会动态替换为唯一 URL。该 URL 通常会引导收件人完成某项操作，例如注册、审批，或访问供应商门户中的特定部分。
 
-### Editing Email Templates
+### 编辑电子邮件模板
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.35.53.png" alt=""><figcaption></figcaption></figure>
 
-#### Accessing the Email Template Editor
+#### 访问电子邮件模板编辑器
 
-1. **Navigate to Email Templates**:
-   * Go to the **Email Templates** section from the main menu.
-2. **Select a Template to Edit**:
-   * Choose the email template you want to edit by clicking on the template name (e.g., "Supplier Invitation Email").
-3. **Edit the Template**:
-   * The editor allows you to modify both the HTML code and the visual design of the email.
-   * You can switch between visual editing and code editing using the provided tabs.
+1. **导航至电子邮件模板**：
+   * 从主菜单进入 **Email Templates**（电子邮件模板）部分。
+2. **选择要编辑的模板**：
+   * 点击模板名称，选择要编辑的电子邮件模板（例如，“Supplier Invitation Email”（供应商邀请电子邮件））。
+3. **编辑模板**：
+   * 编辑器允许您修改电子邮件的 HTML 代码和视觉设计。
+   * 您可以使用提供的选项卡，在可视化编辑和代码编辑之间切换。
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt=""><figcaption></figcaption></figure>
 
-#### Defining `{{magic_link}}` as a Link
+#### 将 `{{magic_link}}` 设置为链接
 
-To define `{{magic_link}}` as a clickable link in the email, you need to ensure that it is properly formatted in the HTML code of the template. Follow these steps:
+要将 `{{magic_link}}` 设置为电子邮件中的可点击链接，请确保在模板的 HTML 代码中正确设置其格式。请按以下步骤操作：
 
-1. **Locate the Link Section in the HTML Code**:
-   * In the code editor, find the section where you want the magic link to appear. This is usually within an `<a>` (anchor) tag.
-2.  **Insert the `{{magic_link}}` Placeholder**:
+1. **在 HTML 代码中找到链接部分**：
+   * 在代码编辑器中，找到要放置 magic link 的部分。通常它位于 `<a>`（锚点）标签内。
+2. **插入 `{{magic_link}}` 占位符**：
 
-    * Replace the `href` attribute of the anchor tag with `{{magic_link}}`.
-    * Ensure the link is styled appropriately for the email template. Here's an example:
+   * 将锚点标签的 `href` 属性替换为 `{{magic_link}}`。
+   * 确保链接样式与电子邮件模板相符。示例如下：
 
     ```html
     <a href="{{magic_link}}" target="_blank" style="
@@ -53,31 +53,31 @@ To define `{{magic_link}}` as a clickable link in the email, you need to ensure 
     </a>
     ```
 
-### 3. Customize the Link Text:
+### 3. 自定义链接文本：
 
-• Modify the text between the opening \<a> and closing \</a> tags to reflect the action you want the user to take. For example, “Complete Registration” or “Access Your Account”.
+• 修改开始 \<a> 标签与结束 \</a> 标签之间的文本，以说明您希望用户执行的操作。例如，“Complete Registration”（完成注册）或“Access Your Account”（访问您的账户）。
 
-4\. Save and Test the Template:
+4\. 保存并测试模板：
 
-• After making the changes, click the Save button.
+• 完成修改后，点击 Save（保存）按钮。
 
-• You can use the Send Test button to send a test email to ensure that the link is working as expected.
+• 您可以使用 Send Test（发送测试）按钮发送测试电子邮件，以确认链接能否正常使用。
 
-## Best Practices for Using \{{magic\_link\}}
+## 使用 \{{magic\_link\}} 的最佳实践
 
-• Link Placement: Place the \{{magic\_link\}} prominently in the email to ensure it is easily accessible to recipients.
+• 链接位置：将 \{{magic\_link\}} 放在电子邮件中醒目的位置，确保收件人能够轻松找到。
 
-• Clear Call to Action: The text within the link should be a clear call to action, such as “Complete Registration” or “Confirm Your Email.”
+• 明确的行动号召：链接文本应清楚地说明要执行的操作，例如“Complete Registration”（完成注册）或“Confirm Your Email”（确认电子邮件地址）。
 
-• Styling: Ensure that the link is styled consistently with the rest of the email template and stands out visually.
+• 样式：确保链接的样式与电子邮件模板的其余部分保持一致，同时在视觉上足够醒目。
 
-• Testing: Always send a test email after editing the template to verify that the \{{magic\_link\}} resolves correctly and the styling is appropriate.
+• 测试：编辑模板后，务必发送测试电子邮件，验证 \{{magic\_link\}} 能否正确解析，以及样式是否合适。
 
-## Conclusion
+## 总结
 
-By properly defining the \{{magic\_link\}} in your email templates, you can ensure that recipients receive a personalized and actionable email that guides them to the appropriate task within your supplier portal. This enhances the user experience and ensures smooth onboarding and communication processes.
+在电子邮件模板中正确设置 \{{magic\_link\}}，可确保收件人收到个性化且便于操作的电子邮件，引导他们在供应商门户中完成相应任务。这有助于提升用户体验，并确保顺利完成入驻和沟通流程。
 
 \
 
 
-This documentation provides step-by-step instructions for administrators on how to define and use the \{{magic\_link\}} in email templates, ensuring that emails are both functional and visually appealing.
+本文档为管理员提供了逐步说明，介绍如何在电子邮件模板中设置和使用 \{{magic\_link\}}，确保电子邮件功能正常且外观清晰。

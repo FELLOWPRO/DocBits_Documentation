@@ -1,31 +1,31 @@
-# Alternate Export
+# 备用导出
 
-## **Step 1: Create a New Export**
+## **步骤 1：创建新的导出**
 
-1. Navigate to **Settings** > **Document Processing** > **Export**.
-2. Click on **Create New Export** to define a new export configuration.
-3. Save the configuration and ensure the export is **disabled**.
+1. 前往 **设置** > **文档处理** > **导出**。
+2. 点击 **创建新导出**，以定义新的导出配置。
+3. 保存配置，并确保导出处于**禁用**状态。
 
-<figure><img src="../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (187).png" alt=""><figcaption></figcaption></figure>
 
-### **Step 2: Enable Alternate Export**
+### **步骤 2：启用备用导出**
 
-1. Go to **Settings** > **Global Settings** > **Document Type** > **More Settings**.
-2. Locate the **Alternate Export** setting and toggle it **on**.
-3. Configure the following:
-   * **Document Status**: Specify the status of documents after the alternate export.
-   * **Export Configuration**: Select the newly created export configuration to be used for the alternate export.
+1. 前往 **设置** > **全局设置** > **文档类型** > **更多设置**。
+2. 找到 **备用导出** 设置并将其切换为**开启**。
+3. 配置以下内容：
+   * **文档状态**：指定备用导出后文档的状态。
+   * **导出配置**：选择要用于备用导出的新建导出配置。
 
-<figure><img src="../../.gitbook/assets/image (369).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>
 
-## Using the Alternate Export
+## 使用备用导出
 
-**In the PO-Matching Screen**
+**在 PO 匹配界面中**
 
-* After enabling the alternate export, you will have the option to select the alternate export directly in the **PO-Matching** screen.
+* 启用备用导出后，你可以直接在 **PO 匹配** 界面中选择备用导出。
 
-<figure><img src="../../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (189).png" alt=""><figcaption></figcaption></figure>
 
-**With the Workflow Card**
+**使用工作流卡片**
 
-* The **Alternate Export** workflow card can also be used to automate this process. Configure the card as needed to apply the alternate export logic to your workflow.
+* 也可以使用 **备用导出** 工作流卡片自动执行此流程。根据需要配置该卡片，将备用导出逻辑应用于工作流。

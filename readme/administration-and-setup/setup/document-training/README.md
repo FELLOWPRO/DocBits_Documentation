@@ -1,5 +1,3 @@
-# Document Training
+# 文档训练
 
-A guide to training new documnets with DocBits.
-
-
+本指南介绍如何使用 DocBits 训练新文档。

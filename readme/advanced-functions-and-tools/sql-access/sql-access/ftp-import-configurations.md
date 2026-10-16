@@ -1,34 +1,34 @@
-# FTP Import Configurations
+# FTP 导入配置
 
-## Spalten
+## 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `sub_org_id`: internal
-* `server_url`: internal
-* `username`: internal
-* `password`: internal
-* `is_active`: boolean
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
-* `port`: integer
-* `default_directory`: internal
-* `ftp_type`: internal
-* `token`: internal
-* `file_name_matching_patterns`: internal
-* `last_mtime`: internal
-* `auth_failed_count`: integer
-* `auth_message`: text
-* `ignore_certificate`: boolean
-* `move_after_import`: boolean
-* `destination_directory`: internal
-* `import_directory`: internal
-* `include_subfolder_content`: boolean
+* `id`：内部字段
+* `org_id`：组织 ID
+* `sub_org_id`：内部字段
+* `server_url`：内部字段
+* `username`：内部字段
+* `password`：内部字段
+* `is_active`：布尔值
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `deleted_on`：带时区的时间戳
+* `port`：整数
+* `default_directory`：内部字段
+* `ftp_type`：内部字段
+* `token`：内部字段
+* `file_name_matching_patterns`：内部字段
+* `last_mtime`：内部字段
+* `auth_failed_count`：整数
+* `auth_message`：文本
+* `ignore_certificate`：布尔值
+* `move_after_import`：布尔值
+* `destination_directory`：内部字段
+* `import_directory`：内部字段
+* `include_subfolder_content`：布尔值
 
-## Analyse & Beschreibung
+## 分析与说明
 
 ```markdown
 # FTP Import Configurations Table Documentation
@@ -165,4 +165,4 @@ The `public.ftp_import_configurations` table is designed to store configuration 
 - **Typical Contents**: `True` or `False`.
 ```
 
-This documentation provides a comprehensive understanding of each column in the `public.ftp_import_configurations` table, explaining its purpose, role, and typical contents, based on the given data and column names.
+本文档根据给定的数据和列名，全面说明 `public.ftp_import_configurations` 表中每一列的用途、作用和典型内容。

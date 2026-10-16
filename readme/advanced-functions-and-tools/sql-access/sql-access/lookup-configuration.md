@@ -1,128 +1,128 @@
-# Lookup Configuration
+# 查找配置
 
-## Tabelle `public.lookup_configuration`
+## 表 `public.lookup_configuration`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_type`: DOC Type
-* `lookup_dataset_name`: internal
-* `lookup_name`: internal
-* `conflict_handle`: internal
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
-* `match_all`: boolean
-* `last_modified_by`: internal
-* `deleted_by`: internal
-* `context`: internal
-* `context_detail`: internal
+* `id`：内部字段
+* `org_id`：组织 ID
+* `doc_type`：文档类型
+* `lookup_dataset_name`：内部字段
+* `lookup_name`：内部字段
+* `conflict_handle`：内部字段
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `deleted_on`：带时区的时间戳
+* `match_all`：布尔值
+* `last_modified_by`：内部字段
+* `deleted_by`：内部字段
+* `context`：内部字段
+* `context_detail`：内部字段
 
-### Analyse & Beschreibung
+### 分析与说明
 
-## Technical Documentation for `public.lookup_configuration` Table
+## `public.lookup_configuration` 表技术文档
 
-### Introduction
+### 简介
 
-The `public.lookup_configuration` table is designed to store configuration settings for various data lookup operations within an organization. It includes information about the organization, the type of documents involved, and specific datasets and names used for lookups. The table also tracks the creation and modification of these configurations, as well as their current status (active or deleted).
+`public.lookup_configuration` 表用于存储组织内各种数据查找操作的配置设置。它包含组织、涉及的文档类型以及查找所用特定数据集和名称的信息。该表还会跟踪这些配置的创建和修改情况，以及它们的当前状态（有效或已删除）。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: A unique identifier for each lookup configuration entry in the table.
-* **Role**: Primary key that uniquely identifies each row.
-* **Typical Contents**: UUID values, e.g., `'68454d10-e045-4d64-8dd3-774bcb5b6013'`.
+* **含义**：表中每条查找配置记录的唯一标识符。
+* **作用**：主键，用于唯一标识每一行。
+* **典型内容**：UUID 值，例如 `'68454d10-e045-4d64-8dd3-774bcb5b6013'`。
 
 #### org\_id
 
-* **Meaning**: Represents the organization associated with the lookup configuration.
-* **Role**: Foreign key, linking to an organization in another table.
-* **Typical Contents**: UUID values indicating organization identifiers, e.g., `'23f3d697-7411-4c95-981d-faf089d266be'`.
+* **含义**：与查找配置关联的组织。
+* **作用**：外键，用于关联另一张表中的组织。
+* **典型内容**：表示组织标识符的 UUID 值，例如 `'23f3d697-7411-4c95-981d-faf089d266be'`。
 
 #### doc\_type
 
-* **Meaning**: Specifies the type of document that the lookup configuration applies to.
-* **Role**: Descriptive field indicating the context of the configuration.
-* **Typical Contents**: Strings like `'MEDI_ORDER'`, `'INVOICE'`, etc.
+* **含义**：指定查找配置适用的文档类型。
+* **作用**：描述配置上下文的字段。
+* **典型内容**：类似 `'MEDI_ORDER'`、`'INVOICE'` 的字符串。
 
 #### lookup\_dataset\_name
 
-* **Meaning**: The name of the dataset used for performing lookups.
-* **Role**: Descriptive field used to identify datasets.
-* **Typical Contents**: Descriptive strings such as `'customer_tini'`, `'supplier'`.
+* **含义**：执行查找时使用的数据集名称。
+* **作用**：用于标识数据集的描述性字段。
+* **典型内容**：如 `'customer_tini'`、`'supplier'` 等描述性字符串。
 
 #### lookup\_name
 
-* **Meaning**: The specific name or alias used for the lookup operation.
-* **Role**: Descriptive field indicating the operational name.
-* **Typical Contents**: Strings like `'customer_tini'`, `'supplier (copy)'`.
+* **含义**：查找操作使用的具体名称或别名。
+* **作用**：表示操作名称的描述性字段。
+* **典型内容**：类似 `'customer_tini'`、`'supplier (copy)'` 的字符串。
 
 #### conflict\_handle
 
-* **Meaning**: Indicates the strategy to handle conflicts during lookups.
-* **Role**: Descriptive field for conflict resolution strategy.
-* **Typical Contents**: Values such as `'BEST_SCORE'`, `'RETURN_NONE'`.
+* **含义**：表示查找过程中处理冲突的策略。
+* **作用**：用于描述冲突解决策略的字段。
+* **典型内容**：如 `'BEST_SCORE'`、`'RETURN_NONE'` 等值。
 
 #### created\_by
 
-* **Meaning**: The ID of the user who created the lookup configuration.
-* **Role**: Technical field for tracking the creator of the entry.
-* **Typical Contents**: Integer values representing user IDs, e.g., `1`.
+* **含义**：创建查找配置的用户 ID。
+* **作用**：用于跟踪记录创建者的技术字段。
+* **典型内容**：表示用户 ID 的整数值，例如 `1`。
 
 #### created\_on
 
-* **Meaning**: Timestamp when the lookup configuration was created.
-* **Role**: Technical field for tracking creation time.
-* **Typical Contents**: Timestamps, e.g., `2024-02-08 11:24:14 UTC`.
+* **含义**：查找配置的创建时间戳。
+* **作用**：用于跟踪创建时间的技术字段。
+* **典型内容**：时间戳，例如 `2024-02-08 11:24:14 UTC`。
 
 #### last\_modified\_on
 
-* **Meaning**: Timestamp of the last modification made to the lookup configuration.
-* **Role**: Technical field for tracking the last update time.
-* **Typical Contents**: Timestamps, usually `None` if not modified.
+* **含义**：查找配置的最后修改时间戳。
+* **作用**：用于跟踪最后更新时间的技术字段。
+* **典型内容**：时间戳；若未修改，通常为 `None`。
 
 #### is\_deleted
 
-* **Meaning**: Indicates whether the lookup configuration has been marked as deleted.
-* **Role**: Boolean field for status tracking.
-* **Typical Contents**: Boolean values, `False` for active entries.
+* **含义**：表示查找配置是否已标记为删除。
+* **作用**：用于跟踪状态的布尔字段。
+* **典型内容**：布尔值，有效记录为 `False`。
 
 #### deleted\_on
 
-* **Meaning**: Timestamp of when the lookup configuration was marked as deleted.
-* **Role**: Technical field for tracking deletion time.
-* **Typical Contents**: Often default to a placeholder date, e.g., `0002-01-01 11:00:00 UTC`.
+* **含义**：查找配置标记为删除的时间戳。
+* **作用**：用于跟踪删除时间的技术字段。
+* **典型内容**：通常为占位日期，例如 `0002-01-01 11:00:00 UTC`。
 
 #### match\_all
 
-* **Meaning**: Specifies if the lookup should match all conditions.
-* **Role**: Boolean field for configuration settings.
-* **Typical Contents**: Boolean values, typically `False`.
+* **含义**：指定查找是否应匹配所有条件。
+* **作用**：用于配置设置的布尔字段。
+* **典型内容**：布尔值，通常为 `False`。
 
 #### last\_modified\_by
 
-* **Meaning**: The ID of the user who last modified the lookup configuration.
-* **Role**: Technical field for tracking the user who last updated the entry.
-* **Typical Contents**: UUID or identifier of the modifying user, often `None`.
+* **含义**：最后修改查找配置的用户 ID。
+* **作用**：用于跟踪最后更新记录的用户的技术字段。
+* **典型内容**：修改用户的 UUID 或标识符，通常为 `None`。
 
 #### deleted\_by
 
-* **Meaning**: The ID of the user who marked the lookup configuration as deleted.
-* **Role**: Technical field for tracking the user responsible for deletion.
-* **Typical Contents**: UUID or identifier, often `None`.
+* **含义**：将查找配置标记为删除的用户 ID。
+* **作用**：用于跟踪负责删除操作的用户的技术字段。
+* **典型内容**：UUID 或标识符，通常为 `None`。
 
 #### context
 
-* **Meaning**: The context in which the lookup is applied, such as a section of a document.
-* **Role**: Descriptive field for operational context.
-* **Typical Contents**: Strings like `'header'`.
+* **含义**：应用查找的上下文，例如文档中的某个部分。
+* **作用**：用于描述操作上下文的字段。
+* **典型内容**：类似 `'header'` 的字符串。
 
 #### context\_detail
 
-* **Meaning**: Additional details about the context for the lookup.
-* **Role**: Descriptive field for extended context information.
-* **Typical Contents**: Often `None`, used for additional context description.
+* **含义**：有关查找上下文的其他详细信息。
+* **作用**：用于扩展上下文信息的描述性字段。
+* **典型内容**：通常为 `None`，用于补充上下文说明。

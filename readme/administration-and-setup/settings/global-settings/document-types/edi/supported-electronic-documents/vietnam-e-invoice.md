@@ -1,30 +1,30 @@
 ---
-description: VIETNAM E-INVOICE electronic document support in DocBits
+description: "DocBits 对越南电子发票的支持"
 ---
 
-# 🇻🇳 VIETNAM E-INVOICE
+# 🇻🇳 越南电子发票
 
-| Property             | Value                                                 |
+| 属性 | 值 |
 | -------------------- | ----------------------------------------------------- |
-| **Country / Region** | Vietnam                                               |
-| **Document Types**   | Invoice                                               |
-| **Format**           | XML                                                   |
-| **Standard**         | Vietnamese E-Invoice (General Department of Taxation) |
+| **国家 / 地区** | 越南 |
+| **文档类型** | 发票 |
+| **格式** | XML |
+| **标准** | 越南电子发票（税务总局） |
 
-Vietnam E-Invoice is the electronic invoicing standard mandated by the General Department of Taxation under Decree 123/2020 and Circular 78/2021. All businesses in Vietnam must use e-invoices, which are transmitted to and validated by the tax authority's system. Each invoice includes a unique verification code.
+越南电子发票是税务总局根据第 123/2020 号法令和第 78/2021 号通知规定的电子开票标准。越南所有企业都必须使用电子发票，并将其传输至税务机关系统进行验证。每张发票都包含一个唯一的验证码。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
+| 组件 | 状态 |
 | ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 预览 | ✅ 支持 |
+| 字段提取 | ✅ 支持 |
+| 转换 | ✅ 支持 |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/vietnam-e-invoice-preview.png" alt="Vietnam E-Invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Vietnam E-Invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/vietnam-e-invoice-preview.png" alt="DocBits 中的越南电子发票预览"><figcaption><p>越南电子发票的默认 DocBits 预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
+* [支持的电子文档](./)

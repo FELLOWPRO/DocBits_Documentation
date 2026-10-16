@@ -1,2 +1,0 @@
-# Niestandardowe Filtry
-

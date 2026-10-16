@@ -1,51 +1,51 @@
-# Skip Hybrid PDF XML Extraction
+# 跳过混合 PDF XML 提取
 
-### Overview
+### 概述
 
-The **Skip Hybrid PDF XML Extraction** setting controls how DocBits handles **hybrid PDFs** — PDF invoices that carry an embedded structured e-invoice (ZUGFeRD / Factur-X). It decides whether the **structured XML inside the PDF** is the leading document for automated processing, or whether the **PDF itself** is processed via OCR as the primary document.
+**Skip Hybrid PDF XML Extraction（跳过混合 PDF XML 提取）**设置用于控制 DocBits 如何处理**混合 PDF**——即嵌入了结构化电子发票（ZUGFeRD / Factur-X）的 PDF 发票。它决定在自动化处理中，是将 **PDF 中的结构化 XML**作为主文档，还是通过 OCR 将 **PDF 本身**作为主文档处理。
 
-This setting is especially relevant for **US customers**. Unlike the EU/DE, the United States has no general B2B e-invoicing mandate, so US organizations typically want the PDF treated as the primary, human-readable invoice — even when a counterpart sends a ZUGFeRD/Factur-X file with embedded XML.
+此设置与**美国客户**尤其相关。与欧盟/德国不同，美国没有普遍适用的 B2B 电子发票强制规定，因此美国组织通常希望将 PDF 作为主文档处理，因为它是便于阅读的发票格式——即使交易对方发送的是带有嵌入式 XML 的 ZUGFeRD/Factur-X 文件。
 
-### What Does It Do?
+### 它有什么作用？
 
-A ZUGFeRD/Factur-X file is a single PDF that also contains a machine-readable XML invoice. By default DocBits detects that embedded XML and uses it as the leading source for extraction (the structured-electronic path).
+ZUGFeRD/Factur-X 文件是一个包含机器可读 XML 发票的单一 PDF。默认情况下，DocBits 会检测嵌入式 XML，并将其作为提取的主要来源（结构化电子文档处理路径）。
 
-* **Disabled (default)** — DocBits detects the embedded e-invoice XML and processes the document on the **structured electronic-document path**. The XML is the leading invoice. This is the legally correct behavior for EU/DE, where a structured e-invoice is the relevant invoice and the PDF is only a visualization / reading copy.
-* **Enabled** — DocBits **ignores the embedded XML** and routes the document to the **PDF processor (OCR)**. The PDF becomes the primary processing document. This is the typical choice for **US organizations** that want PDF-first processing.
+* **禁用（默认）** — DocBits 会检测嵌入式电子发票 XML，并通过**结构化电子文档处理路径**处理文档。XML 是主要发票数据。在欧盟/德国，这种处理方式符合法律要求，因为结构化电子发票才是相关发票，PDF 仅用于展示和阅读。
+* **启用** — DocBits 会**忽略嵌入式 XML**，并将文档路由到 **PDF 处理器（OCR）**。PDF 将成为主要处理文档。对于希望优先处理 PDF 的**美国组织**，通常会选择此设置。
 
 {% hint style="info" %}
-This setting only affects **hybrid PDFs** (ZUGFeRD / Factur-X = a `.pdf` with embedded XML). A pure XRechnung / EDI file uploaded as `.xml` is always processed on the structured electronic-document path — there is no PDF that could become the primary document.
+此设置仅影响**混合 PDF**（ZUGFeRD / Factur-X，即带有嵌入式 XML 的 `.pdf` 文件）。作为 `.xml` 上传的纯 XRechnung / EDI 文件始终通过结构化电子文档处理路径处理——没有可作为主文档的 PDF。
 {% endhint %}
 
-### Audit & Compliance — the original is always preserved
+### 审计与合规 — 始终保留原始文件
 
-Enabling this setting does **not** discard the e-invoice. The original artifact is always retained:
+启用此设置**不会**丢弃电子发票。原始文件始终会保留：
 
-* The original ZUGFeRD/Factur-X **PDF — including its embedded XML — remains stored** and downloadable. Nothing is deleted from the document’s stored copy.
-* Processing only changes **which content drives extraction** (PDF/OCR vs. embedded XML), not what is archived.
+* 原始 ZUGFeRD/Factur-X **PDF（包括其中嵌入的 XML）仍会存储**，并可供下载。文档存储副本中的内容不会被删除。
+* 此设置只会改变**由哪种内容驱动提取**（PDF/OCR 还是嵌入式 XML），不会改变归档的内容。
 
-So a US organization can process the PDF as primary while the structured e-invoice stays available for audit.
+因此，美国组织可以将 PDF 作为主文档处理，同时保留结构化电子发票以供审计。
 
 {% hint style="warning" %}
-For EU/DE organizations, leave this setting **disabled**. Under the 2025 e-invoicing rules a structured e-invoice (ZUGFeRD/Factur-X, XRechnung) is the legally relevant invoice; a plain PDF is only a reading copy. Processing the PDF as primary instead of the structured data is not appropriate where a valid e-invoice is present.
+欧盟/德国组织应将此设置保持为**禁用**。根据 2025 年电子发票规则，结构化电子发票（ZUGFeRD/Factur-X、XRechnung）才是具有法律效力的发票；普通 PDF 仅供阅读。在存在有效电子发票的情况下，将 PDF 而不是结构化数据作为主文档处理并不合适。
 {% endhint %}
 
-### How to Use
+### 使用方法
 
-1. **Open the setting**:
-   * Go to **Settings**.
-   * Select **Document Processing**.
-   * Select **Module**.
-   * Open the **Document Type** section.
-   * Find **Skip Hybrid PDF XML Extraction** and toggle the slider.
-2. **Choose the mode**:
-   * **US / PDF-first organizations** → enable the toggle so ZUGFeRD/Factur-X PDFs are processed via OCR as the primary document.
-   * **EU/DE organizations** → keep the toggle disabled so the structured e-invoice remains the leading document.
-3. **Verify**:
-   * Upload a ZUGFeRD/Factur-X PDF and check the document’s processing result — with the toggle enabled it is handled as a regular PDF (OCR); with it disabled the embedded e-invoice data is extracted.
+1. **打开设置**：
+   * 前往 **Settings（设置）**。
+   * 选择 **Document Processing（文档处理）**。
+   * 选择 **Module（模块）**。
+   * 打开 **Document Type（文档类型）**部分。
+   * 找到 **Skip Hybrid PDF XML Extraction（跳过混合 PDF XML 提取）**并切换滑块。
+2. **选择模式**：
+   * **美国 / 优先处理 PDF 的组织** → 启用此开关，以便通过 OCR 将 ZUGFeRD/Factur-X PDF 作为主文档处理。
+   * **欧盟/德国组织** → 保持此开关禁用，让结构化电子发票继续作为主文档。
+3. **验证**：
+   * 上传一个 ZUGFeRD/Factur-X PDF，并检查文档的处理结果——启用此开关时，文件会作为普通 PDF 进行处理（OCR）；禁用时，则会提取嵌入式电子发票数据。
 
-### When to Use This Feature
+### 何时使用此功能
 
-* **US customers / no e-invoice mandate**: enable it so the familiar PDF is the primary processing document while the embedded e-invoice stays archived.
-* **Mixed/PDF-first workflows**: enable it where downstream processes, validation, or review rely on the PDF layout rather than the XML.
-* **EU/DE compliance**: leave it disabled so structured e-invoice data drives processing, as required.
+* **美国客户 / 没有电子发票强制规定**：启用此设置，让熟悉的 PDF 成为主处理文档，同时保留归档的嵌入式电子发票。
+* **混合/优先处理 PDF 的工作流**：如果下游流程、验证或审核依赖 PDF 版式而不是 XML，请启用此设置。
+* **欧盟/德国合规**：保持此设置禁用，让结构化电子发票数据驱动处理，以满足相关要求。

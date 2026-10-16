@@ -1,59 +1,59 @@
-# Certifications
+# 认证
 
-DocBits is operated by **Fellowpro AG** under a comprehensive information-security, privacy and internal-controls program. The certifications below are independently audited each year; customers can download the official attestation reports directly from this page.
+DocBits 由 **Fellowpro AG** 运营，遵循全面的信息安全、隐私保护和内部控制计划。以下认证均每年接受独立审计；客户可直接从本页下载正式的鉴证报告。
 
 {% hint style="info" %}
-Need a certificate for your procurement, security or compliance team? Every report on this page is the signed auditor deliverable — no NDA required. For questions about scope, controls or upcoming audits, contact **compliance@fellowpro.com**.
+您的采购、安全或合规团队需要证书吗？本页上的每份报告都是经签署的审计交付文件，无需签署保密协议。如对范围、控制措施或即将进行的审计有疑问，请联系 **compliance@fellowpro.com**。
 {% endhint %}
 
 ## 1. ISO/IEC 27001
 
 <figure><img src="../../.gitbook/assets/ISO27001.png" alt=""><figcaption></figcaption></figure>
 
-This international standard defines the requirements for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS). It helps organizations protect data in a systematic and cost-effective way, including processes for risk management and information security controls.
+这项国际标准规定了建立、实施、维护并持续改进信息安全管理体系（ISMS）的要求。它通过风险管理流程和信息安全控制措施，帮助组织以系统且经济高效的方式保护数据。
 
-**Impact for clients:** Ensures that DocBits adheres to the highest standards of information security, providing confidence that sensitive data is well-protected.
+**对客户的影响：**确保 DocBits 遵循最高级别的信息安全标准，让客户确信敏感数据得到了妥善保护。
 
-**Latest audit:** Surveillance Audit SA1, 2025 — Fellowpro AG ISMS.
+**最近一次审计：**监督审计 SA1，2025 年——Fellowpro AG ISMS。
 
 {% file src="../../.gitbook/assets/FELLOWPRO-ISO27001-Client-Report-2025.pdf" %}
 
-## 2. SOC 1 (Service Organization Control 1)
+## 2. SOC 1（服务组织控制 1）
 
 <figure><img src="../../.gitbook/assets/SOC1.png" alt=""><figcaption></figcaption></figure>
 
-SOC 1 reports are designed for organizations that need to demonstrate the effectiveness of internal controls over financial reporting. It is particularly relevant for service providers that affect their clients’ financial reporting.
+SOC 1 报告面向需要证明财务报告相关内部控制有效性的组织。对于会影响客户财务报告的服务提供商而言，这类报告尤为重要。
 
-**Relevance to DocBits:** Demonstrates our commitment to maintaining stringent internal controls over financial data, providing assurance to clients about the reliability of our processes.
+**与 DocBits 的相关性：**体现我们致力于维持严格的财务数据内部控制，让客户确信我们的流程可靠。
 
-**Latest audit:** SOC 1 Type II — reporting period 2025.
+**最近一次审计：**SOC 1 Type II——报告期为 2025 年。
 
 {% file src="../../.gitbook/assets/FELLOWPRO-SOC1-Type2-Report-2025.pdf" %}
 
-## 3. SOC 2 (Service Organization Control 2)
+## 3. SOC 2（服务组织控制 2）
 
 <figure><img src="../../.gitbook/assets/SOC2.png" alt=""><figcaption></figcaption></figure>
 
-SOC 2 focuses on a service organization’s controls relevant to security, availability, processing integrity, confidentiality, and privacy of data. It is crucial for technology and cloud computing companies that handle sensitive information.
+SOC 2 关注与服务组织的数据安全性、可用性、处理完整性、保密性和隐私保护相关的控制措施。对于处理敏感信息的技术和云计算公司而言，这项认证至关重要。
 
-**Value for clients:** Provides independent validation that DocBits has implemented effective controls to protect client data, ensuring trustworthiness in our software and services.
+**对客户的价值：**通过独立验证，证明 DocBits 已实施有效控制措施来保护客户数据，确保我们的软件和服务值得信赖。
 
-**Latest audit:** SOC 2 Type II — reporting period 2026.
+**最近一次审计：**SOC 2 Type II——报告期为 2026 年。
 
 {% file src="../../.gitbook/assets/FELLOWPRO-SOC2-Type2-Report-2026.pdf" %}
 
-## 4. GDPR (General Data Protection Regulation) Compliance
+## 4. GDPR（通用数据保护条例）合规性
 
 <figure><img src="../../.gitbook/assets/GDPR.png" alt=""><figcaption></figcaption></figure>
 
-The GDPR is a regulation in EU law on data protection and privacy in the European Union and the European Economic Area. It also addresses the transfer of personal data outside the EU and EEA areas.
+GDPR 是欧盟法律中的一项法规，涉及欧盟和欧洲经济区的数据保护与隐私。该法规还涉及将个人数据传输到欧盟和欧洲经济区以外地区的情况。
 
-**Client assurance:** Compliance with GDPR ensures that DocBits processes personal data in line with EU regulations, protecting user privacy and adhering to strict data handling guidelines.
+**对客户的保障：**遵守 GDPR 可确保 DocBits 按照欧盟法规处理个人数据，保护用户隐私并遵循严格的数据处理准则。
 
-**Latest audit:** Independent GDPR Audit Report, 2025.
+**最近一次审计：**独立 GDPR 审计报告，2025 年。
 
 {% file src="../../.gitbook/assets/FELLOWPRO-GDPR-Audit-Report-2025.pdf" %}
 
 ---
 
-For additional documentation — DPA templates, sub-processor lists, penetration-test summaries or security questionnaires — reach out to **compliance@fellowpro.com** or your DocBits customer success contact.
+如需其他文档——例如 DPA 模板、子处理者名单、渗透测试摘要或安全问卷——请联系 **compliance@fellowpro.com** 或您的 DocBits 客户成功联系人。

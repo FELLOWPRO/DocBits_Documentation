@@ -1,39 +1,39 @@
-# Import sample documents for model training
+# 导入用于模型训练的示例文档
 
-Use this page to add sample PDFs for a document type, then train or test its classification model. You need access to **Settings** and **Document Types**. For the purpose of the training features, see [Purpose and Use: Model Training](purpose-and-use-model-training.md).
+使用此页面为文档类型添加示例 PDF，然后训练或测试其分类模型。你需要有权访问 **Settings** 和 **Document Types**。有关训练功能的用途，请参阅[用途：模型训练](purpose-and-use-model-training.md)。
 
-## Open the document type
+## 打开文档类型
 
-1. Go to **Settings → Document Types**.
-2. Find the document type you want to train. In its row, select **Model Training**. The example below uses **Invoice**.
+1. 前往 **Settings → Document Types**。
+2. 找到要训练的文档类型，然后在其所在行中选择 **Model Training**。以下示例使用 **Invoice**。
 
-<figure><img src="../../../../../.gitbook/assets/dbdc163-document-types-en.png" alt="Invoice row on the Document Types page with the Model Training link"><figcaption><p>Open Model Training from the chosen document type.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc163-document-types-en.png" alt="Document Types 页面上的 Invoice 行，其中包含 Model Training 链接"><figcaption><p>从所选文档类型打开 Model Training。</p></figcaption></figure>
 
-The other controls on this card serve different purposes: **Activate** enables the document type, **Extraction** switches its extraction mode, the gear opens its settings, and the remaining links open other configuration areas. You do not need to change them just to open Model Training.
+此卡片上的其他控件用途不同：**Activate** 用于启用文档类型，**Extraction** 用于切换其提取模式，齿轮图标用于打开其设置，其余链接用于打开其他配置区域。仅打开 Model Training 时，无需更改这些控件。
 
-The **Train Model** page shows the sample count and a list of uploaded training documents. In the example organization, the list is empty; your organization can show different documents and counts.
+**Train Model** 页面会显示示例数量以及已上传训练文档的列表。在示例组织中，该列表为空；你的组织中显示的文档和数量可能不同。
 
-<figure><img src="../../../../../.gitbook/assets/dbdc163-model-training-en.png" alt="Invoice Train Model page showing sample count, Import, Train model, Test classification, and the document list"><figcaption><p>The three actions are at the top right of the training list.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc163-model-training-en.png" alt="Invoice Train Model 页面，显示示例数量、Import、Train model、Test classification 以及文档列表"><figcaption><p>训练列表右上方有三个操作。</p></figcaption></figure>
 
-## Import sample PDFs
+## 导入示例 PDF
 
-1. Select **Import**.
-2. Choose the **Amount & Date Format** that matches the sample document. For example, choose **United States** for US number and date conventions. This selection tells DocBits how to interpret values in the uploaded document; it does not change the app language.
-3. Drag PDF files into the dialog or use **Upload** to select them. The current sample-document importer accepts **PDF files**; it rejects other file types. Selecting the files starts the upload.
-4. Close the dialog and check that the documents appear in the training list. If DocBits reports an upload error or a document already exists, correct the file or choose a different sample before continuing.
+1. 选择 **Import**。
+2. 选择与示例文档相符的 **Amount & Date Format**。例如，若使用美国的数字和日期格式，请选择 **United States**。此选项用于告知 DocBits 如何解析上传文档中的值；它不会更改应用语言。
+3. 将 PDF 文件拖入对话框，或使用 **Upload** 选择文件。当前的示例文档导入器只接受 **PDF 文件**，其他文件类型会被拒绝。选择文件后即开始上传。
+4. 关闭对话框，并检查文档是否出现在训练列表中。如果 DocBits 报告上传错误或提示文档已存在，请修正文件，或选择其他示例后再继续。
 
-<figure><img src="../../../../../.gitbook/assets/dbdc163-import-dialog-en.png" alt="Import dialog with Amount and Date Format selector, drag-and-drop area, and Upload field"><figcaption><p>Choose a format before selecting sample PDFs.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc163-import-dialog-en.png" alt="Import 对话框，包含 Amount and Date Format 选择器、拖放区域和 Upload 字段"><figcaption><p>选择格式后，再选择示例 PDF。</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/dbdc163-format-menu-en.png" alt="Amount and Date Format menu with country and region choices, including United States and Great Britain"><figcaption><p>Pick the format used in the document, not your preferred interface language.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc163-format-menu-en.png" alt="Amount and Date Format 菜单，包含国家和地区选项，如 United States 和 Great Britain"><figcaption><p>选择文档中使用的格式，而不是你偏好的界面语言。</p></figcaption></figure>
 
-For actions on imported samples, see [Manage training data](manage-training-data.md).
+有关导入示例的操作，请参阅[管理训练数据](manage-training-data.md)。
 
-## Train and check the model
+## 训练和检查模型
 
-When the intended sample PDFs are in the list, select **Train model**. DocBits may process training in the background; wait for its completion message before treating the new model as ready. The sample count and any plan limit shown on this page belong to your organization.
+所需的示例 PDF 出现在列表中后，选择 **Train model**。DocBits 可能会在后台处理训练；请等待完成提示后，再将新模型视为已就绪。此页面显示的示例数量和任何计划限制均适用于你的组织。
 
-To check classification, select **Test classification**, then upload a separate example file in the dialog. After processing, DocBits shows whether the predicted document type matches this page and reports classification details. The empty test dialog below is shown without submitting a file.
+如需检查分类结果，请选择 **Test classification**，然后在对话框中上传另一个示例文件。处理完成后，DocBits 会显示预测的文档类型是否与此页面对应的类型一致，并提供分类详情。下方显示的是尚未提交文件的空测试对话框。
 
-<figure><img src="../../../../../.gitbook/assets/dbdc163-test-dialog-en.png" alt="Test classification dialog with drag-and-drop area and Upload field"><figcaption><p>Use Test classification to check the model with another document.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc163-test-dialog-en.png" alt="Test classification 对话框，包含拖放区域和 Upload 字段"><figcaption><p>使用 Test classification，通过另一份文档检查模型。</p></figcaption></figure>
 
-For interpreting the result, see [Testing the model](testing-the-model.md). If the result is poor, review the [training data](manage-training-data.md) and the [troubleshooting guide](troubleshooting.md) before adding more samples.
+有关如何解读结果，请参阅[测试模型](testing-the-model.md)。如果结果不理想，请先查看[训练数据](manage-training-data.md)和[故障排除指南](troubleshooting.md)，再添加更多示例。

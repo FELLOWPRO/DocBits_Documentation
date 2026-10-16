@@ -1,27 +1,27 @@
-# Document Report
+# 文档报告
 
-## Spalten
+## 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_id`: internal
-* `doc_type`: DOC Type
-* `sub_doc_type`: internal
-* `time_spent`: internal
-* `fields_total`: integer
-* `fields_correct`: integer
-* `checkbox_fields_total`: integer
-* `checkbox_fields_correct`: integer
-* `table_values_total`: integer
-* `table_values_correct`: integer
-* `detail_report`: text
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `validated_by`: integer
-* `sub_org_id`: internal
+* `id`：内部字段
+* `org_id`：组织 ID
+* `doc_id`：内部字段
+* `doc_type`：文档类型
+* `sub_doc_type`：内部字段
+* `time_spent`：内部字段
+* `fields_total`：整数
+* `fields_correct`：整数
+* `checkbox_fields_total`：整数
+* `checkbox_fields_correct`：整数
+* `table_values_total`：整数
+* `table_values_correct`：整数
+* `detail_report`：文本
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `validated_by`：整数
+* `sub_org_id`：内部字段
 
-## Analyse & Beschreibung
+## 分析与描述
 
 ```markdown
 # Document Report Table Documentation

@@ -1,10 +1,9 @@
-# Keyboard Shortcuts
+# 键盘快捷键
 
-## Dashboard Shortcuts
+## 仪表板快捷键
 
-The dashboard includes the following shortcuts to enhance navigation and interaction:
+仪表板提供以下快捷键，可提升导航和交互体验：
 
-* **Control + K** – Opens the keyboard shortcut menu, providing a list of available shortcuts within the application.
-* **Control + Q** – Refreshes the dashboard table, ensuring that the latest data is displayed without needing to manually reload the page.
-* **Control + H** – Opens the documentation page for more information and assistance.
-
+* **Control + K** – 打开键盘快捷键菜单，显示应用程序中可用的快捷键列表。
+* **Control + Q** – 刷新仪表板表格，无需手动重新加载页面即可显示最新数据。
+* **Control + H** – 打开文档页面，获取更多信息和帮助。

@@ -2,27 +2,27 @@
 hidden: true
 ---
 
-# Using the XSLT Editor
+# 使用 XSLT 编辑器
 
-Guide to using the XSLT Editor to create or modify transformations. Includes tips for testing and validating XSLT scripts to ensure they correctly transform document data into the required EDI format.
+本指南介绍如何使用 XSLT 编辑器创建或修改转换，并提供测试和验证 XSLT 脚本的建议，确保它们能够正确地将文档数据转换为所需的 EDI 格式。
 
-## Here's a guide to using the XSLT Editor to create or modify transformations, as well as tips for testing and validating XSLT scripts:
+## 以下指南介绍如何使用 XSLT 编辑器创建或修改转换，以及测试和验证 XSLT 脚本的建议：
 
-**Opening the XSLT Editor:**
+**打开 XSLT 编辑器：**
 
-* Launch the XSLT editor of your choice. Popular options include Oxygen XML Editor, Altova XMLSpy, or simply a text editor with syntax highlighting for XSLT.
+* 启动你选择的 XSLT 编辑器。常用选项包括 Oxygen XML Editor、Altova XMLSpy，或支持 XSLT 语法高亮的文本编辑器。
 
-**Creating or modifying transformations:**
+**创建或修改转换：**
 
-* Define the rules for transforming the input data (e.g. XML) into the desired EDI format. Use XSLT templates to select the elements and attributes of the input XML and format them accordingly.
-* Use XSLT functions and statements such as [xsl:template](xsl:template), [xsl:apply-templates](xsl:apply-templates), [xsl:for-each](xsl:for-each)´, [xsl:value-of](xsl:value-of), etc. to perform the transformations.
-* Check your transformations carefully to ensure that all required data is extracted and formatted correctly.
+* 定义将输入数据（例如 XML）转换为所需 EDI 格式的规则。使用 XSLT 模板选择输入 XML 中的元素和属性，并按相应格式进行处理。
+* 使用 [xsl:template](xsl:template)、[xsl:apply-templates](xsl:apply-templates)、[xsl:for-each](xsl:for-each)´、[xsl:value-of](xsl:value-of) 等 XSLT 函数和语句执行转换。
+* 仔细检查转换，确保所有必需的数据都已正确提取并格式化。
 
-**Testing and validating XSLT scripts:**
+**测试和验证 XSLT 脚本：**
 
-* Use sample data to test your XSLT transformations. Ideally, this sample data should cover various scenarios and edge cases that may occur in the actual input data.
-* Run your XSLT scripts with the sample data and carefully check the output result. Make sure that the generated EDI output meets the expected specifications.
-* Validate your XSLT scripts against the XSLT specification to ensure they are syntactically correct and do not contain errors that could cause unexpected behavior.
-* Use tools such as XSLT debuggers to perform step-by-step testing when necessary and identify potential problems in your transformations.
+* 使用示例数据测试 XSLT 转换。理想情况下，示例数据应覆盖实际输入数据中可能出现的各种场景和边缘情况。
+* 使用示例数据运行 XSLT 脚本，并仔细检查输出结果。确保生成的 EDI 输出符合预期规范。
+* 根据 XSLT 规范验证脚本，确保语法正确，且不包含可能导致意外行为的错误。
+* 必要时使用 XSLT 调试器等工具逐步测试，并找出转换中可能存在的问题。
 
-By carefully creating, testing, and validating your XSLT scripts, you can ensure that they correctly transform the input data into the required EDI format. This is critical for successful electronic data interaction between different business systems.
+通过认真创建、测试和验证 XSLT 脚本，你可以确保它们能够正确地将输入数据转换为所需的 EDI 格式。这对于不同业务系统之间成功进行电子数据交互至关重要。

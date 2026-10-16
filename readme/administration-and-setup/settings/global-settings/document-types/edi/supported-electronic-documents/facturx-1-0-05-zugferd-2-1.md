@@ -1,33 +1,33 @@
 ---
-description: FACTURX 1.0.05 - ZUGFERD 2.1 electronic document support in DocBits
+description: "DocBits 支持 FACTURX 1.0.05 - ZUGFERD 2.1 电子文档"
 ---
 
-# 🇫🇷 FACTURX 1.0.05 - ZUGFERD 2.1
+# 🇫🇷 FACTURX 1.0.05 - ZUGERD 2.1
 
-| Property             | Value                         |
+| 属性                 | 值                            |
 | -------------------- | ----------------------------- |
-| **Country / Region** | France / Germany              |
-| **Document Types**   | Invoice, Credit Note          |
-| **Format**           | CII (PDF/A-3 embedded)        |
-| **Standard**         | Factur-X 1.0.05 / ZUGFeRD 2.1 |
-| **Based On**         | EN 16931                      |
+| **国家/地区**        | 法国 / 德国                    |
+| **文档类型**         | 发票、贷项通知单               |
+| **格式**             | CII（嵌入式 PDF/A-3）           |
+| **标准**             | Factur-X 1.0.05 / ZUGFeRD 2.1 |
+| **基于**             | EN 16931                      |
 
-Factur-X 1.0.05 is equivalent to ZUGFeRD 2.1. Released in 2020, it was the first jointly published version establishing full interoperability between the French and German e-invoicing ecosystems. Supports profiles: Minimum, Basic WL, Basic, EN 16931, Extended.
+Factur-X 1.0.05 与 ZUGFeRD 2.1 等效。该版本于 2020 年发布，是法国和德国电子发票生态系统首次联合发布的版本，建立了两者之间的全面互操作性。支持以下配置文件：Minimum、Basic WL、Basic、EN 16931、Extended。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 组件               | 状态         |
+| ------------------ | ------------ |
+| 预览               | ✅ 支持       |
+| 字段提取           | ✅ 支持       |
+| 转换               | ✅ 支持       |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/facturx-preview.png" alt="Factur-X 1.0.05 / ZUGFeRD 2.1 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Factur-X 1.0.05 / ZUGFeRD 2.1 invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/facturx-preview.png" alt="DocBits 中的 Factur-X 1.0.05 / ZUGFeRD 2.1 发票预览"><figcaption><p>Factur-X 1.0.05 / ZUGFeRD 2.1 发票的默认 DocBits 预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [ZUGFeRD Configuration](../zugferd/)
-* [ZUGFeRD Field Mapping](../zugferd/versions/)
-* [Supported Electronic Documents](./)
+* [ZUGFeRD 配置](../zugferd/)
+* [ZUGFeRD 字段映射](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/README.md)
+* [支持的电子文档](./)</final>

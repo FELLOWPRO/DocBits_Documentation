@@ -1,67 +1,67 @@
 ---
-description: How to Import Master Data directly within DocBits.
+description: "如何在 DocBits 中直接导入主数据。"
 ---
 
-# Custom Master Data
+# 自定义主数据
 
-#### Activating Custom Master Data <a href="#activating-custom-master-data" id="activating-custom-master-data"></a>
+#### 激活自定义主数据 <a href="#activating-custom-master-data" id="activating-custom-master-data"></a>
 
-From the Dashboard navigate to Settings → Document Processing → Module.
+在仪表板中，依次前往“设置” → “文档处理” → “模块”。
 
 ![](<../../.gitbook/assets/DocBits_CMD_1 (1).png>)
 
 <div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-In Module, activate Custom Master Data by pressing the slider as shown below.
+在“模块”中，按下方所示启用“自定义主数据”滑块。
 
 <div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_3.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-#### Feature Overview <a href="#feature-overview" id="feature-overview"></a>
+#### 功能概览 <a href="#feature-overview" id="feature-overview"></a>
 
-In order to add your own master data into DocBits, navigate to Master Data Lookup in Settings.
+要将自己的主数据添加到 DocBits 中，请前往“设置”中的“主数据查找”。
 
 <div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_4.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-Click on “Custom Master Data”
+点击“Custom Master Data”。
 
 <div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_5.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-You then have the option to create a Template or an Endpoint.
+随后，您可以选择创建模板或端点。
 
 <div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_6.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-#### Create a Template <a href="#create-a-template" id="create-a-template"></a>
+#### 创建模板 <a href="#create-a-template" id="create-a-template"></a>
 
-The first step is to choose between using your organizations ION API file or to use OAuth2 and enter the necessary data.
+首先，选择使用组织的 ION API 文件，或使用 OAuth2 并输入所需数据。
 
 <div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_7.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-Next, we will configure the presets. Here you will enter the Master Data table name the API call URL.
+接下来，我们将配置预设。在此处输入主数据表名称和 API 调用 URL。
 
 <div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-You will then be required to enter the JSON path using dot notation, for more information on dot notation click [here](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/).
+随后，您需要使用点表示法输入 JSON 路径。有关点表示法的更多信息，请点击[此处](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/)。
 
-Lastly, you will need to map the data to the columns you would like to create like in the example below.
+最后，您需要将数据映射到要创建的列中，如下例所示。
 
 <div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-After you have done this, click on Done for your new master data to be created and populated .
+完成后，点击“Done”以创建并填充新的主数据。
 
-#### Create an Endpoint <a href="#create-an-endpoint" id="create-an-endpoint"></a>
+#### 创建端点 <a href="#create-an-endpoint" id="create-an-endpoint"></a>
 
-The first step is to choose between using your organizations ION API file, to use OAuth2 or to leave this blank and enter the necessary data.
+首先，选择使用组织的 ION API 文件、使用 OAuth2，或将此项留空并输入所需数据。
 
 <div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_10.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-Next, we will configure the presets. Here you will enter the Master Data table name the API call URL.
+接下来，我们将配置预设。在此处输入主数据表名称和 API 调用 URL。
 
 <div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-You will then be required to enter the JSON path using dot notation, for more information on dot notation click [here](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/).
+随后，您需要使用点表示法输入 JSON 路径。有关点表示法的更多信息，请点击[此处](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/)。
 
-Lastly, you will need to map the data to the columns you would like to create like in the example below.
+最后，您需要将数据映射到要创建的列中，如下例所示。
 
 <div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-After you have done this, click on Done for your new master data to be created and populated .
+完成后，点击“Done”以创建并填充新的主数据。

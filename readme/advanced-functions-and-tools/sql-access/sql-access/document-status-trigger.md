@@ -1,88 +1,88 @@
-# Document status trigger
+# 文档状态触发器
 
-## Table `public.document_status_trigger`
+## 表 `public.document_status_trigger`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `trigger_doc_type`: internal
-* `trigger_doc_status`: internal
-* `trigger_url`: internal
-* `is_active`: boolean
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
+* `id`：内部字段
+* `org_id`：组织 ID
+* `trigger_doc_type`：内部字段
+* `trigger_doc_status`：内部字段
+* `trigger_url`：内部字段
+* `is_active`：布尔值
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
 
-### Analyse & Beschreibung
+### 分析与说明
 
-## Technical Documentation for `public.document_status_trigger` Table
+## `public.document_status_trigger` 表的技术文档
 
-### Introduction
+### 简介
 
-The `public.document_status_trigger` table is designed to manage and track the status of documents within an organization. This table appears to handle triggers related to document processing, likely in a workflow system. It captures information about document types and their status changes, potentially triggering actions or workflows through specified URLs.
+`public.document_status_trigger` 表用于管理和跟踪组织内文档的状态。该表似乎用于处理与文档处理相关的触发器，可能应用于工作流系统。它记录文档类型及其状态变更信息，并可通过指定的 URL 触发操作或工作流。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: This column stores a unique identifier for each record in the table.
-* **Role**: Primary key.
-* **Typical Contents**: A UUID string, e.g., `8103b700-c03c-40cb-9322-e9e1ddbe0cb1`.
+* **含义**：此列存储表中每条记录的唯一标识符。
+* **作用**：主键。
+* **典型内容**：UUID 字符串，例如 `8103b700-c03c-40cb-9322-e9e1ddbe0cb1`。
 
 #### org\_id
 
-* **Meaning**: Represents the unique identifier for an organization.
-* **Role**: Foreign key, linking to an organization entity.
-* **Typical Contents**: A UUID string, e.g., `23f3d697-7411-4c95-981d-faf089d266be`.
+* **含义**：表示组织的唯一标识符。
+* **作用**：外键，关联到组织实体。
+* **典型内容**：UUID 字符串，例如 `23f3d697-7411-4c95-981d-faf089d266be`。
 
 #### trigger\_doc\_type
 
-* **Meaning**: Specifies the type of document associated with the trigger.
-* **Role**: Descriptive field indicating the document type.
-* **Typical Contents**: Document type names, such as `INVOICE`.
+* **含义**：指定与触发器关联的文档类型。
+* **作用**：指示文档类型的描述性字段。
+* **典型内容**：文档类型名称，例如 `INVOICE`。
 
 #### trigger\_doc\_status
 
-* **Meaning**: Denotes the specific status of the document that activates the trigger.
-* **Role**: Descriptive field detailing the document status.
-* **Typical Contents**: Status descriptions, like `approved_pending_second_approval`.
+* **含义**：表示激活触发器的特定文档状态。
+* **作用**：描述文档状态的字段。
+* **典型内容**：状态描述，例如 `approved_pending_second_approval`。
 
 #### trigger\_url
 
-* **Meaning**: URL that is triggered when the document status meets certain conditions.
-* **Role**: Technical field for workflow automation.
-* **Typical Contents**: URLs, e.g., `https://test-wf-stage.workflow.polydocs.io/webhook/3c3ab41b-a1d9-40a9-8e33-2968d33c989e/webhook`.
+* **含义**：当文档状态满足特定条件时触发的 URL。
+* **作用**：用于工作流自动化的技术字段。
+* **典型内容**：URL，例如 `https://test-wf-stage.workflow.polydocs.io/webhook/3c3ab41b-a1d9-40a9-8e33-2968d33c989e/webhook`。
 
 #### is\_active
 
-* **Meaning**: Indicates whether the trigger is currently active.
-* **Role**: Technical field for managing trigger states.
-* **Typical Contents**: Boolean values, `True` or `False`.
+* **含义**：表示触发器当前是否处于启用状态。
+* **作用**：用于管理触发器状态的技术字段。
+* **典型内容**：布尔值 `True` 或 `False`。
 
 #### created\_by
 
-* **Meaning**: Identifies the user who created the record.
-* **Role**: Foreign key to a user entity.
-* **Typical Contents**: Integer user IDs, e.g., `1`.
+* **含义**：标识创建该记录的用户。
+* **作用**：关联到用户实体的外键。
+* **典型内容**：整数用户 ID，例如 `1`。
 
 #### created\_on
 
-* **Meaning**: Timestamp of when the record was created.
-* **Role**: Technical field for auditing and tracking changes.
-* **Typical Contents**: Timestamps with timezone, e.g., `2022-09-16 07:26:55 UTC`.
+* **含义**：记录创建时间的时间戳。
+* **作用**：用于审计和跟踪变更的技术字段。
+* **典型内容**：带时区的时间戳，例如 `2022-09-16 07:26:55 UTC`。
 
 #### last\_modified\_on
 
-* **Meaning**: Timestamp of the last modification to the record.
-* **Role**: Technical field for auditing and tracking changes.
-* **Typical Contents**: Timestamps with timezone, can be `None` if not modified.
+* **含义**：记录最后修改时间的时间戳。
+* **作用**：用于审计和跟踪变更的技术字段。
+* **典型内容**：带时区的时间戳；如果未修改，则可能为 `None`。
 
 #### is\_deleted
 
-* **Meaning**: Marks whether the record is considered deleted or inactive.
-* **Role**: Technical field for soft deletion.
-* **Typical Contents**: Boolean values, `True` or `False`.
+* **含义**：标记该记录是否被视为已删除或未启用。
+* **作用**：用于软删除的技术字段。
+* **典型内容**：布尔值 `True` 或 `False`。
 
-This table provides a structured approach to managing document statuses and associated triggers within an organization's workflow system, ensuring that actions can be taken automatically as documents progress through various states.
+此表为在组织的工作流系统中管理文档状态及相关触发器提供了结构化方式，确保文档在不同状态间流转时可以自动执行相应操作。

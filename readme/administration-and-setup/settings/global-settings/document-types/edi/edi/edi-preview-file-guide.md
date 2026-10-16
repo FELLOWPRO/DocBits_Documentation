@@ -1,69 +1,69 @@
-# EDI Preview File Guide
+# EDI 预览文件指南
 
-## 1. Overview
+## 1. 概述
 
-The **Preview File** defines how structured XML data is rendered into a human-readable, PDF-style format. It combines **HTML and CSS** for visual presentation and uses **XSLT `select` statements** to dynamically insert data from the Custom XML.\
-This preview is displayed during **field validation** and is also included when documents are exported to **IDM**.
+**Preview File（预览文件）**定义了如何将结构化 XML 数据渲染为易于阅读、类似 PDF 的格式。它结合使用 **HTML 和 CSS** 进行视觉呈现，并通过 **XSLT `select` 语句**动态插入来自 Custom XML 的数据。\
+此预览会在**字段验证**期间显示，也会随文档一起导出到 **IDM**。
 
-## 2. Purpose and Function
+## 2. 用途和功能
 
-* Converts machine-readable Custom XML into a visually formatted preview (PDF).
-* Enables human-friendly review and validation of extracted data.
-* Ensures consistent rendering of key document fields such as headers, tables, totals, etc.
-* Built using **HTML + CSS** for layout and design, and **XSLT** for binding data to the layout.
+* 将机器可读的 Custom XML 转换为经过视觉排版的预览（PDF）。
+* 便于用户查看和验证提取的数据。
+* 确保文档中的关键字段（如标题、表格、总计等）以一致的方式呈现。
+* 使用 **HTML + CSS** 构建布局和设计，并使用 **XSLT** 将数据绑定到布局中。
 
-## 3. Access & Basic Editing
+## 3. 访问和基本编辑
 
-#### **Accessing the File:**
+#### **访问文件：**
 
-1.  Go to **Settings** → **Document Type** → _\[Your Document (e.g., Purchase Order)]_ → **E-Doc**.\\
+1. 进入 **Settings（设置）** → **Document Type（文档类型）** → _\[Your Document (e.g., Purchase Order)]_ → **E-Doc**。\\
 
-    <figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2. Under the **E-Doc** tab, select your format (e.g., **EDI**).
-3.  Click **Preview** to view or edit the file.\\
+    <figure><img src="../../../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+2. 在 **E-Doc** 选项卡下，选择所需格式（例如 **EDI**）。
+3. 点击 **Preview（预览）**以查看或编辑文件。\\
 
-    <figure><img src="../../../../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
-#### **Draft Management:**
+#### **草稿管理：**
 
-* **Create a Draft:** Click the ✏️ pencil icon.
-* **Delete Drafts:** Use the 🗑️ trashcan icon to remove unused drafts.
-* **Activate Changes:** Click the ✅ checkmark to publish a version.
-  * <mark style="color:red;">**Note**</mark>: Activating a new version will **automatically deactivate** the previous one.
+* **创建草稿：**点击 ✏️ 铅笔图标。
+* **删除草稿：**使用 🗑️ 垃圾桶图标删除不再使用的草稿。
+* **激活更改：**点击 ✅ 勾选图标以发布一个版本。
+  * <mark style="color:red;">**注意**</mark>：激活新版本会**自动停用**之前的版本。
 
-## 4. HTML/XSLT/CSS Editor
+## 4. HTML/XSLT/CSS 编辑器
 
-The **Preview File** is edited in a dedicated editor that supports HTML, XSLT, and CSS.
+**Preview File（预览文件）**在专用编辑器中编辑，该编辑器支持 HTML、XSLT 和 CSS。
 
-* **HTML** defines the structure of the output document (e.g., tables, divs, layout).
-* **CSS** controls the styling (e.g., fonts, spacing, colors, alignment).
-*   **XSLT `select` statements** are used to dynamically populate fields from the Custom XML, such as:
+* **HTML** 定义输出文档的结构（例如表格、div、布局）。
+* **CSS** 控制样式（例如字体、间距、颜色、对齐方式）。
+*   **XSLT `select` 语句**用于从 Custom XML 动态填充字段，例如：
 
     ```xml
     <xsl:value-of select="/PURCHASE_ORDER/PURCHASE_ORDER_NUMBER/text()" />
     ```
-* You can also use **XSLT logic** (`<xsl:if>`, `<xsl:for-each>`, etc.) to handle conditional display or iterate over line items.
+* 你还可以使用 **XSLT 逻辑**（`<xsl:if>`、`<xsl:for-each>` 等）来处理条件显示或遍历行项目。
 
-## 5. Preview Function (Render Output)
+## 5. 预览功能（渲染输出）
 
-The Preview Function allows you to test and verify how an EDI document is rendered with the current Preview File.
+预览功能可用于测试和验证当前 Preview File 如何渲染 EDI 文档。
 
-#### **Usage:**
+#### **使用方法：**
 
-* Upload an EDI file through the standard upload process.
-* Copy the **Document ID** of the uploaded file.
-* Navigate to the **Preview** interface.
-* Open the **Preview Function**.\
+* 通过标准上传流程上传 EDI 文件。
+* 复制所上传文件的 **Document ID（文档 ID）**。
+* 前往 **Preview（预览）**界面。
+* 打开 **Preview Function（预览功能）**。\
   \
-  ![](<../../../../../../.gitbook/assets/image (7) (1) (1).png>)
-* Enter the Document ID and click **Test**.
-* The rendered PDF-style preview will be displayed using the HTML/CSS/XSLT setup.
+  ![](<../../../../../../.gitbook/assets/image (21).png>)
+* 输入 Document ID，然后点击 **Test（测试）**。
+* 系统将使用当前 HTML/CSS/XSLT 设置显示渲染后的类 PDF 预览。
 
-This feature is crucial for debugging data bindings, refining layout, and ensuring the document is both accurate and visually clear for users and downstream systems like **IDM**.
+此功能对于调试数据绑定、改进布局，以及确保文档准确且便于用户阅读，并能供下游系统（如 **IDM**）使用至关重要。
 
-<figure><img src="../../../../../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
-## 6. Video Walkthrough
+## 6. 视频演示
 
-A video guide for this file type is available on the [Videos page.](edi-videos.md)\
-Use it to follow along with setup, editing, and previewing.
+此文件类型的视频指南可在[视频页面](edi-videos.md)中查看。\
+可跟随视频了解设置、编辑和预览的操作流程。

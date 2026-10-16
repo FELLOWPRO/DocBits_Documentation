@@ -1,29 +1,29 @@
-# Table Functions
+# 表格函数
 
-Functions for reading, writing, and manipulating tables and table rows.
+用于读取、写入和处理表格及表格行的函数。
 
-**Source:** `module/script/helper/document_table_script_functions.py`
+**来源：** `module/script/helper/document_table_script_functions.py`
 
 ---
 
-## get\_column\_value()
+## get\_column\_value() <a id="get_column_value"></a>
 
-Reads the value of a column from a table row.
+读取表格行中某一列的值。
 
 ```python
 get_column_value(row, column_name, default_value=None, is_clean=False)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `row` | `dict` | A row object from `table["rows"]` |
-| `column_name` | `str` | Column name (case-insensitive) |
-| `default_value` | `any` | Return value if column is empty/missing |
-| `is_clean` | `bool` | If `True`: UPPERCASE with spaces removed |
+| `row` | `dict` | 来自 `table["rows"]` 的行对象 |
+| `column_name` | `str` | 列名（不区分大小写） |
+| `default_value` | `any` | 列为空或不存在时的返回值 |
+| `is_clean` | `bool` | 如果为 `True`：转换为大写并移除空格 |
 
-**Example — Iterate table rows:**
+**示例 — 遍历表格行：**
 
 ```python
 table = tables_dict.get("INVOICE_TABLE")
@@ -35,26 +35,26 @@ if table:
 ```
 
 {% hint style="info" %}
-Column name comparison is **case-insensitive**: `"DESCRIPTION"` also matches `"description"` or `"Description"`.
+列名比较**不区分大小写**：`"DESCRIPTION"` 也会匹配 `"description"` 或 `"Description"`。
 {% endhint %}
 
 ---
 
 ## set\_column\_value()
 
-Sets the value of a column in a table row.
+设置表格行中某一列的值。
 
 ```python
 set_column_value(row, column_name, value)
 ```
 
-**Returns:** `True` if value changed, `False` if identical
+**返回值：** 值发生变化时为 `True`，值相同时为 `False`
 
-**Side effects:**
-- Sets `extraction_method = "SCRIPT"`
-- Automatically creates the column if it does not exist
+**副作用：**
+- 设置 `extraction_method = "SCRIPT"`
+- 如果列不存在，则自动创建该列
 
-**Example — Calculate line totals:**
+**示例 — 计算行总额：**
 
 ```python
 table = tables_dict.get("INVOICE_TABLE")
@@ -73,26 +73,26 @@ if table:
 
 ## set\_column\_date\_value()
 
-Sets a date value in a table cell with formatting and date arithmetic.
+在表格单元格中设置日期值，并支持格式化和日期运算。
 
 ```python
 set_column_date_value(document_data, row, column_name, value,
                       add_days=0, skip_weekend=False, exclude_final_days=None)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `document_data` | `dict` | Required for `date_format_pattern` |
-| `row` | `dict` | Table row |
-| `column_name` | `str` | Column name |
-| `value` | `str` | ISO date `"2026-03-25"` |
-| `add_days` | `int` | Days to add |
-| `skip_weekend` | `bool` | Skip weekends |
-| `exclude_final_days` | `str/list` | Days to exclude |
+| `document_data` | `dict` | `date_format_pattern` 所必需 |
+| `row` | `dict` | 表格行 |
+| `column_name` | `str` | 列名 |
+| `value` | `str` | ISO 日期 `"2026-03-25"` |
+| `add_days` | `int` | 要增加的天数 |
+| `skip_weekend` | `bool` | 跳过周末 |
+| `exclude_final_days` | `str/list` | 要排除的日期 |
 
-**Example — Calculate delivery dates per row:**
+**示例 — 计算每行的交付日期：**
 
 ```python
 for row in table["rows"]:
@@ -106,13 +106,13 @@ for row in table["rows"]:
 
 ## set\_column\_amount\_value()
 
-Sets an amount value in a table cell with locale formatting.
+在表格单元格中设置金额值，并按区域设置格式化。
 
 ```python
 set_column_amount_value(document_data, row, column_name, value)
 ```
 
-**Example — Calculate and format line totals:**
+**示例 — 计算并格式化行总额：**
 
 ```python
 for row in table["rows"]:
@@ -122,33 +122,33 @@ for row in table["rows"]:
 ```
 
 {% hint style="info" %}
-`value` is automatically converted to `str()` before being set.
+设置前会自动将 `value` 转换为 `str()`。
 {% endhint %}
 
 ---
 
 ## add\_table\_column()
 
-Adds a new column to all rows of a table.
+向表格的所有行添加新列。
 
 ```python
 add_table_column(table, col_name, default_value=None)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `table` | `dict` | The table object (not `tables_dict`!) |
-| `col_name` | `str` | Name of the new column |
-| `default_value` | `any` | Initial value for all rows |
+| `table` | `dict` | 表格对象（不是 `tables_dict`！） |
+| `col_name` | `str` | 新列的名称 |
+| `default_value` | `any` | 所有行的初始值 |
 
-**Side effects:**
-- `is_extra_column = True` (marked as non-original)
-- `is_mapped = True`
-- `extraction_method = "SCRIPT"`
+**副作用：**
+- 设置 `is_extra_column = True`（标记为非原始列）
+- 设置 `is_mapped = True`
+- 设置 `extraction_method = "SCRIPT"`
 
-**Example — Add tax code column:**
+**示例 — 添加税码列：**
 
 ```python
 table = tables_dict.get("INVOICE_TABLE")
@@ -163,30 +163,30 @@ if table:
 ```
 
 {% hint style="warning" %}
-**Duplicate protection:** If the column already exists (case-insensitive check), it will **not** be added again.
+**重复保护：** 如果该列已存在（检查时不区分大小写），则**不会**再次添加。
 {% endhint %}
 
 ---
 
 ## remove\_rows\_from\_table()
 
-Removes a specific number of rows from a table.
+从表格中移除指定数量的行。
 
 ```python
 remove_rows_from_table(document_data, table_name, count, start)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `table_name` | `str` | Name of the table |
-| `count` | `int` | Number of rows to remove |
-| `start` | `int` | Start index (0-based) |
+| `table_name` | `str` | 表格名称 |
+| `count` | `int` | 要移除的行数 |
+| `start` | `int` | 起始索引（从 0 开始） |
 
-**Raises:** `ValueError` if `start` or `count` is out of range
+**抛出异常：** 如果 `start` 或 `count` 超出范围，则抛出 `ValueError`
 
-**Example — Remove header rows or last row:**
+**示例 — 移除表头行或最后一行：**
 
 ```python
 # Remove first 2 rows (e.g., header rows)
@@ -203,23 +203,23 @@ if table:
 
 ## remove\_all\_rows\_except\_one\_from\_table()
 
-Keeps only one specific row and removes all others.
+仅保留指定的一行，并移除其他所有行。
 
 ```python
 remove_all_rows_except_one_from_table(document_data, line_number)
 ```
 
-**Parameters:**
+**参数：**
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 | ---- | ---- | ----------- |
-| `line_number` | `int` | Row number (1-based!) |
+| `line_number` | `int` | 行号（从 1 开始！） |
 
 {% hint style="warning" %}
-`line_number=1` keeps the first row. Do not confuse with 0-based indices.
+`line_number=1` 会保留第一行。请勿与从 0 开始的索引混淆。
 {% endhint %}
 
-**Example:**
+**示例：**
 
 ```python
 # Keep only the 3rd row
@@ -228,19 +228,19 @@ remove_all_rows_except_one_from_table(document_data, 3)
 
 ---
 
-## delete\_tables()
+## delete\_tables() <a id="delete_tables"></a>
 
-Deletes all tables from the document (with backup).
+删除文档中的所有表格（并备份）。
 
 ```python
 delete_tables(document_data)
 ```
 
-**Side effects:**
-- Saves tables under `last_deleted_table`
-- Removes `po_items`, `po_multi_matched`, `po_match_status`
+**副作用：**
+- 将表格保存在 `last_deleted_table` 下
+- 移除 `po_items`、`po_multi_matched`、`po_match_status`
 
-**Example:**
+**示例：**
 
 ```python
 # Delete tables (e.g., for cost invoices without line items)
@@ -251,27 +251,27 @@ delete_tables(document_data)
 
 ## restore\_tables()
 
-Restores tables previously deleted with `delete_tables()`.
+恢复先前通过 `delete_tables()` 删除的表格。
 
 ```python
 restore_tables(document_data)
 ```
 
-**Example:**
+**示例：**
 
 ```python
 restore_tables(document_data)
 ```
 
 {% hint style="success" %}
-**Delete + Restore pattern:** Useful when you want to temporarily remove tables and restore them under certain conditions.
+**删除 + 恢复模式：** 如果需要临时移除表格，并在满足特定条件时恢复，可以使用此模式。
 {% endhint %}
 
 ---
 
-## Common Patterns
+## 常见模式
 
-### Calculate column sum
+### 计算列总和
 
 ```python
 table = tables_dict.get("INVOICE_TABLE")
@@ -286,7 +286,7 @@ if table:
     set_field_value(document_data, "calculated_total", str(round(total, 2)))
 ```
 
-### Filter empty rows
+### 筛选空行
 
 ```python
 table = tables_dict.get("INVOICE_TABLE")
@@ -302,7 +302,7 @@ if table:
         remove_rows_from_table(document_data, "INVOICE_TABLE", 1, idx)
 ```
 
-### Compute column from other columns
+### 根据其他列计算列值
 
 ```python
 table = tables_dict.get("INVOICE_TABLE")

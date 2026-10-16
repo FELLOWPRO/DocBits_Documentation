@@ -1,169 +1,168 @@
-# Customization Options
+# 自定义选项
 
-## The customization options for each document type in DocBits is crucial to optimize document processing and data extraction.&#x20;
+## DocBits 中每种文档类型的自定义选项对于优化文档处理和数据提取至关重要。&#x20;
 
-### Here are the most important customization options in detail and their impact on document processing and data extraction:
+### 以下详细介绍最重要的自定义选项及其对文档处理和数据提取的影响：
 
-1. **Layout Configuration Description:**
+1. **布局配置说明：**
 
-The layout configuration determines the structure and appearance of a document type.
+布局配置决定文档类型的结构和外观。
 
-**Options:**
+**选项：**
 
-**Templates:**&#x20;
+**模板：**&#x20;
 
-* Upload or create document templates that define the general layout.
+* 上传或创建用于定义总体布局的文档模板。
 
-**Zones:**&#x20;
+**区域：**
 
-* Specify specific areas (zones) on the document, e.g. header, footer, content area.
+* 指定文档上的特定区域，例如页眉、页脚和内容区。
 
-**Impact:**
+**影响：**
 
-**Improved accuracy:**&#x20;
+**提高准确性：**&#x20;
 
-* By accurately defining layouts, systems can better identify where to find certain information, improving the accuracy of data extraction.
+* 准确定义布局后，系统可以更好地识别特定信息的位置，从而提高数据提取的准确性。
 
-**Consistency:**&#x20;
+**一致性：**&#x20;
 
-* Ensuring that all documents of a type have a consistent layout makes processing and review easier.
+* 确保同一类型的所有文档都采用一致的布局，使处理和审核更加容易。
 
-2. **Field Definitions Description:**
+2. **字段定义说明：**
 
-Fields are specific data points extracted from documents.&#x20;
+字段是从文档中提取的特定数据点。&#x20;
 
-**Options:**
+**选项：**
 
-* Field name: The name of the field (e.g. "Invoice number", "Date", "Amount").
-* Data type: The type of data contained in the field (e.g. text, number, date).
-* Format: The format of the data (e.g. date in DD/MM/YYYY format).
-* Required field: Indicates whether a field is mandatory.
+* 字段名称：字段的名称（例如“发票编号”、“日期”、“金额”）。
+* 数据类型：字段中包含的数据类型（例如文本、数字、日期）。
+* 格式：数据的格式（例如日期采用 DD/MM/YYYY 格式）。
+* 必填字段：指明字段是否为必填项。
 
-**Impact:**
+**影响：**
 
-**Data extraction accuracy:**&#x20;
+**数据提取准确性：**&#x20;
 
-* By defining fields precisely, the correct data can be extracted precisely.
+* 精确定义字段后，便能准确提取正确的数据。
 
-**Error reduction:**&#x20;
+**减少错误：**&#x20;
 
-* Clear specification of field formats and data types reduces the likelihood of errors during data processing.
+* 明确指定字段格式和数据类型，可以降低数据处理过程中出错的可能性。
 
-**Automated validation:**&#x20;
+**自动验证：**&#x20;
 
-* Required fields and specific formats enable automatic validation of the extracted data.
+* 必填字段和特定格式可实现对提取数据的自动验证。
 
-3. **Extraction rules Description:**
+3. **提取规则说明：**
 
-Rules that determine how data is extracted from documents.
+用于确定如何从文档中提取数据的规则。
 
-**Options:**
+**选项：**
 
-**Regular expressions:**&#x20;
+**正则表达式：**&#x20;
 
-* Using regular expressions to match patterns.
+* 使用正则表达式匹配模式。
 
-**Anchor points:** .&#x20;
+**锚点：** .&#x20;
 
-* Using specific text anchors to identify the position of fields. Artificial intelligence: Using AI models for data extraction based on pattern recognition and machine learning
+* 使用特定文本锚点确定字段的位置。人工智能：使用基于模式识别和机器学习的 AI 模型提取数据
 
-**Impact:**
+**影响：**
 
-**Precision:**&#x20;
+**精确性：**&#x20;
 
-* By applying specific extraction rules, data can be extracted precisely and reliably.&#x20;
+* 应用特定的提取规则可以精确、可靠地提取数据。&#x20;
 
-**Flexibility:**&#x20;
+**灵活性：**&#x20;
 
-* Customizable rules make it possible to adapt the extraction to different document layouts and contents.&#x20;
+* 可自定义的规则能够适应不同的文档布局和内容。&#x20;
 
-**Efficiency:**&#x20;
+**效率：**&#x20;
 
-* Automated extraction rules reduce manual effort and speed up data processing.&#x20;
+* 自动化提取规则可以减少人工工作量并加快数据处理速度。&#x20;
 
 
 
-4. &#x20;**Validation rules Description:**
+4. &#x20;**验证规则说明：**
 
-Rules for checking the correctness and completeness of the extracted data.&#x20;
+用于检查提取数据的正确性和完整性的规则。&#x20;
 
-**Options:**
+**选项：**
 
-* **Format check:** Validating the data format (e.g. whether a date is correctly formatted).&#x20;
-* **Value check:** Checking whether the extracted values ​​are within a certain range.&#x20;
-* **Cross-check:** Comparing the extracted data with other data sources or data fields in the document.&#x20;
+* **格式检查：**验证数据格式（例如日期格式是否正确）。&#x20;
+* **值检查：**检查提取的值是否在特定范围内。&#x20;
+* **交叉检查：**将提取的数据与其他数据源或文档中的数据字段进行比较。&#x20;
 
-**Impact:**
+**影响：**
 
-**Data quality:**&#x20;
+**数据质量：**&#x20;
 
-* Ensuring that only correct and complete data is stored.&#x20;
+* 确保只存储正确且完整的数据。&#x20;
 
-**Error prevention:**&#x20;
+**错误预防：**&#x20;
 
-* Automatic validation reduces the risk of human error.&#x20;
+* 自动验证可降低人为错误的风险。&#x20;
 
-**Compliance:**&#x20;
+**合规性：**&#x20;
 
-* Adhering to regulations and standards through accurate data validation.&#x20;
+* 通过准确的数据验证遵守法规和标准。&#x20;
 
-5. &#x20;**Automation workflows Description:**
+5. &#x20;**自动化工作流说明：**
 
-Workflows that automate the processing steps of a document type.&#x20;
+用于自动执行文档类型处理步骤的工作流。&#x20;
 
-**Options:**
+**选项：**
 
-**Approval processes:**&#x20;
+**审批流程：**&#x20;
 
-* Automatic forwarding of documents for approval.&#x20;
+* 自动转发文档以供审批。&#x20;
 
-**Notifications:**&#x20;
+**通知：**&#x20;
 
-* Automatic notifications for certain events (e.g. receipt of an invoice).&#x20;
+* 在特定事件发生时自动发送通知（例如收到发票）。&#x20;
 
-**Archiving:**
+**归档：**
 
-* Automatic archiving of documents according to certain rules. Impact:
+* 根据特定规则自动归档文档。影响：
 
-**Increased efficiency:**&#x20;
+**提高效率：**&#x20;
 
-* Automated workflows speed up processing and reduce manual effort.&#x20;
+* 自动化工作流可加快处理速度并减少人工工作量。&#x20;
 
-**Transparency:**&#x20;
+**透明度：**&#x20;
 
-* Clear and traceable processes increase the transparency and traceability of document processing.&#x20;
+* 清晰且可追踪的流程能够提高文档处理的透明度和可追溯性。&#x20;
 
-**Compliance:**&#x20;
+**合规性：**&#x20;
 
-Automated workflows ensure that all steps are carried out in accordance with internal guidelines and legal regulations.&#x20;
+自动化工作流可确保所有步骤均按照内部准则和法律法规执行。&#x20;
 
-6. &#x20;**User rights and access control Description:**
+6. &#x20;**用户权限和访问控制说明：**
 
-Control of access to document types and their fields.&#x20;
+控制对文档类型及其字段的访问。&#x20;
 
-**Options:**
+**选项：**
 
-**Role-based access control:**&#x20;
+**基于角色的访问控制：**&#x20;
 
-* Specify which users or user groups can access certain document types.&#x20;
+* 指定哪些用户或用户组可以访问特定文档类型。&#x20;
 
-**Security levels:**&#x20;
+**安全级别：**&#x20;
 
-* Assign security levels to document types and fields.&#x20;
+* 为文档类型和字段分配安全级别。&#x20;
 
-**Impact:**
+**影响：**
 
-**Data security:**&#x20;
+**数据安全：**&#x20;
 
-* Protect sensitive data through restricted access.&#x20;
+* 通过限制访问来保护敏感数据。&#x20;
 
-**Compliance:**&#x20;
+**合规性：**&#x20;
 
-* Compliance with data protection regulations through targeted access controls.&#x20;
+* 通过有针对性的访问控制遵守数据保护法规。&#x20;
 
-**User-friendliness:**&#x20;
+**易用性：**&#x20;
 
-* Adaptation of the user interface depending on role and authorization increases user-friendliness.&#x20;
+* 根据角色和授权调整用户界面，可提高易用性。&#x20;
 
-The extensive customization options for document types in DocBits enable precise control of document processing and data extraction. By carefully configuring layouts, fields, extraction and validation rules, automation workflows, and user rights, organizations can ensure that their documents are processed efficiently, accurately, and securely. These customization options go a long way in optimizing the overall performance of the document management system and meeting the specific needs of the organization.
-
+DocBits 为文档类型提供丰富的自定义选项，从而能够精确控制文档处理和数据提取。通过仔细配置布局、字段、提取规则和验证规则、自动化工作流以及用户权限，组织可以确保文档得到高效、准确且安全的处理。这些自定义选项对于优化文档管理系统的整体性能、满足组织的具体需求具有重要作用。

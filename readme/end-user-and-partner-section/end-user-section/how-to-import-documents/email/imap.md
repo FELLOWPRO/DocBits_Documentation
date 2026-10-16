@@ -2,11 +2,11 @@
 
 {% embed url="https://www.youtube.com/watch?v=CIGk-f4x4ZE" %}
 
-Choose IMAP as the protocol and enter the information for your email provider: server name, port, encryption, username, email address and password. In the next steps you set the options and the email folder.
+选择 IMAP 作为协议，然后输入电子邮件服务提供商的信息：服务器名称、端口、加密方式、用户名、电子邮件地址和密码。接下来，设置相关选项和电子邮件文件夹。
 
-<figure><img src="../../../../.gitbook/assets/imap-email-server-setup-en-20261006.png" alt="Email Server Setup dialog with protocol IMAP, server name, port 993, SSL encryption, username, email address and password"><figcaption><p>Email Server Setup with example values. Replace them with the details of your email provider.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/imap-email-server-setup-en-20261006.png" alt="电子邮件服务器设置对话框，协议为 IMAP，包含服务器名称、端口 993、SSL 加密、用户名、电子邮件地址和密码"><figcaption><p>电子邮件服务器设置示例。请将示例值替换为您的电子邮件服务提供商提供的信息。</p></figcaption></figure>
 
-Things to Note
+注意事项
 
-* Input all needed information into the UI. Other information like the server, port, etc. depends on the host (a quick Google search should help).
-* Folder and Move-Imported have the same function here. Folder can not be disabled, but will use Inbox by default if left empty.
+* 在界面中输入所有必需的信息。服务器、端口等其他信息取决于主机（快速搜索一下 Google 应该会有所帮助）。
+* 在此处，“文件夹”和“移动已导入”具有相同的功能。“文件夹”无法禁用；如果留空，默认使用收件箱。

@@ -1,102 +1,102 @@
 # public.document\_log
 
-## Tabelle `public.document_log`
+## 表 `public.document_log`
 
-### Spalten
+### 列
 
-* `id`: integer
-* `org_id`: ID to organisation
-* `doc_id`: internal
-* `action_type`: internal
-* `action_description`: text
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `is_hidden`: boolean
-* `previous_status`: internal
-* `current_status`: internal
+* `id`：integer
+* `org_id`：组织 ID
+* `doc_id`：内部字段
+* `action_type`：内部字段
+* `action_description`：text
+* `created_by`：integer
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：boolean
+* `is_hidden`：boolean
+* `previous_status`：内部字段
+* `current_status`：内部字段
 
-### Analyse & Beschreibung
+### 分析与说明
 
-## Technical Documentation: `public.document_log` Table
+## 技术文档：`public.document_log` 表
 
-### Introduction
+### 简介
 
-The `public.document_log` table is designed to track the history and status changes of documents within an organization. It records actions performed on documents, such as status updates, along with details about the user who performed the action and timestamps indicating when these actions took place. This table is crucial for auditing document processing workflows and understanding the lifecycle of each document.
+`public.document_log` 表用于跟踪组织内文档的历史记录和状态变化。它会记录对文档执行的操作，例如状态更新，以及执行操作的用户信息和操作发生的时间戳。此表对于审计文档处理工作流和了解每份文档的生命周期至关重要。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: Unique identifier for each log entry.
-* **Role**: Primary key. This column serves as the unique identifier for each record in the table.
-* **Typical Contents**: Integer values that increment with each new entry.
+* **含义**：每条日志记录的唯一标识符。
+* **作用**：主键。此列用作表中每条记录的唯一标识符。
+* **典型内容**：随每条新记录递增的整数值。
 
 #### org\_id
 
-* **Meaning**: Identifier for the organization associated with the document.
-* **Role**: Foreign key. Links to an organization entity, though not explicitly defined in this context.
-* **Typical Contents**: Character strings, likely UUIDs, representing organization identifiers.
+* **含义**：与文档关联的组织标识符。
+* **作用**：外键。链接到组织实体，但此处未明确说明其定义。
+* **典型内容**：代表组织标识符的字符串，可能为 UUID。
 
 #### doc\_id
 
-* **Meaning**: Identifier for the document associated with the log entry.
-* **Role**: Foreign key. This column references a specific document within the system.
-* **Typical Contents**: Character strings, likely UUIDs, representing document identifiers.
+* **含义**：与日志记录关联的文档标识符。
+* **作用**：外键。此列引用系统中的特定文档。
+* **典型内容**：代表文档标识符的字符串，可能为 UUID。
 
 #### action\_type
 
-* **Meaning**: Type of action logged.
-* **Role**: Descriptive field. Indicates the category of the action performed.
-* **Typical Contents**: Strings such as `STATUS_CHANGE`, indicating the nature of the action.
+* **含义**：记录的操作类型。
+* **作用**：描述性字段。表示所执行操作的类别。
+* **典型内容**：例如 `STATUS_CHANGE` 这样的字符串，用于表示操作性质。
 
 #### action\_description
 
-* **Meaning**: Detailed description of the action performed.
-* **Role**: Descriptive field. Provides context or details about the action.
-* **Typical Contents**: Text descriptions, e.g., "Data extraction started", "Error occurred processing document".
+* **含义**：对所执行操作的详细描述。
+* **作用**：描述性字段。提供操作的背景或详细信息。
+* **典型内容**：文本描述，例如“数据提取已开始”“处理文档时发生错误”。
 
 #### created\_by
 
-* **Meaning**: Identifier of the user who created the log entry.
-* **Role**: Foreign key. Links to a user entity, indicating who performed the action.
-* **Typical Contents**: Integer values representing user identifiers.
+* **含义**：创建日志记录的用户标识符。
+* **作用**：外键。链接到用户实体，表示由谁执行了该操作。
+* **典型内容**：代表用户标识符的整数值。
 
 #### created\_on
 
-* **Meaning**: Timestamp of when the log entry was created.
-* **Role**: Technical field. Records the exact time an action was logged.
-* **Typical Contents**: Timestamps with time zone information, e.g., `2025-04-01 13:07:51.291193 UTC`.
+* **含义**：日志记录的创建时间戳。
+* **作用**：技术字段。记录操作写入日志的确切时间。
+* **典型内容**：带时区信息的时间戳，例如 `2025-04-01 13:07:51.291193 UTC`。
 
 #### last\_modified\_on
 
-* **Meaning**: Timestamp of the last modification of the log entry.
-* **Role**: Technical field. Indicates the last update time for the log entry.
-* **Typical Contents**: Timestamps, potentially null if not modified after creation.
+* **含义**：日志记录最后修改的时间戳。
+* **作用**：技术字段。表示日志记录的最后更新时间。
+* **典型内容**：时间戳；如果创建后未修改，则可能为 null。
 
 #### is\_deleted
 
-* **Meaning**: Flag indicating if the log entry is marked as deleted.
-* **Role**: Technical field. Used for logical deletion of entries.
-* **Typical Contents**: Boolean values, `False` indicating active entries and `True` for deleted ones.
+* **含义**：指示日志记录是否标记为已删除的标志。
+* **作用**：技术字段。用于对记录进行逻辑删除。
+* **典型内容**：布尔值，`False` 表示有效记录，`True` 表示已删除记录。
 
 #### is\_hidden
 
-* **Meaning**: Flag indicating if the log entry is hidden from normal view.
-* **Role**: Technical field. Used to control visibility of log entries.
-* **Typical Contents**: Boolean values, `False` indicating visible entries and `True` for hidden ones.
+* **含义**：指示日志记录是否对普通视图隐藏的标志。
+* **作用**：技术字段。用于控制日志记录的可见性。
+* **典型内容**：布尔值，`False` 表示可见记录，`True` 表示隐藏记录。
 
 #### previous\_status
 
-* **Meaning**: Status of the document before the action was performed.
-* **Role**: Descriptive field. Provides the state of the document prior to the logged action.
-* **Typical Contents**: Strings such as `new`, `validating`, `running`, representing document states.
+* **含义**：执行操作前文档的状态。
+* **作用**：描述性字段。提供记录的操作发生前文档所处的状态。
+* **典型内容**：例如 `new`、`validating`、`running` 这样的字符串，表示文档状态。
 
 #### current\_status
 
-* **Meaning**: Status of the document after the action was performed.
-* **Role**: Descriptive field. Indicates the updated state of the document following the action.
-* **Typical Contents**: Strings such as `running`, `ready_for_validation`, `error`, representing document states.
+* **含义**：执行操作后文档的状态。
+* **作用**：描述性字段。表示记录的操作完成后文档更新后的状态。
+* **典型内容**：例如 `running`、`ready_for_validation`、`error` 这样的字符串，表示文档状态。
 
-This documentation provides an overview of the `public.document_log` table, detailing the purpose and structure of each column, which is critical for developers managing document workflows and maintaining audit trails.
+本文档概述了 `public.document_log` 表，并详细说明了各列的用途和结构。这些信息对于管理文档工作流和维护审计跟踪的开发人员至关重要。

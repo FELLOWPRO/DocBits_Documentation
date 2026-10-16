@@ -1,31 +1,31 @@
 ---
-description: TURKEY E-ARSIV electronic document support in DocBits
+description: "DocBits 中的土耳其 E-ARSIV 电子文档支持"
 ---
 
-# 🇹🇷 TURKEY E-ARSIV
+# 🇹🇷 土耳其 E-ARSIV
 
-| Property             | Value                                         |
+| 属性                 | 值                                            |
 | -------------------- | --------------------------------------------- |
-| **Country / Region** | Turkey                                        |
-| **Document Types**   | Archive Invoice                               |
-| **Format**           | UBL-TR XML                                    |
-| **Standard**         | e-Arşiv Fatura (GİB - Revenue Administration) |
+| **国家 / 地区**      | 土耳其                                        |
+| **文档类型**         | 存档发票                                      |
+| **格式**             | UBL-TR XML                                    |
+| **标准**             | e-Arşiv Fatura（GİB - 税务管理局）             |
 
-Turkey e-Arşiv (e-Archive) is the electronic invoice format used for invoices issued to recipients who are not registered in the Turkish e-Fatura system. e-Arşiv invoices are stored on the GİB (Gelir İdaresi Başkanlığı) platform and can be delivered to recipients as PDF or paper. DocBits processes the UBL-TR XML format.
+土耳其 e-Arşiv（电子存档）是用于向未在土耳其 e-Fatura 系统注册的接收方开具发票的电子发票格式。e-Arşiv 发票存储在 GİB（Gelir İdaresi Başkanlığı）平台上，并可通过 PDF 或纸质形式交付给接收方。DocBits 处理 UBL-TR XML 格式。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 组件               | 状态        |
+| ------------------ | ----------- |
+| 预览               | ✅ 支持      |
+| 字段提取           | ✅ 支持      |
+| 转换               | ✅ 支持      |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/turkey-e-arsiv-preview.png" alt="Turkey E-Arsiv invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Turkey E-Arsiv invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/turkey-e-arsiv-preview.png" alt="DocBits 中的土耳其 E-Arsiv 发票预览"><figcaption><p>土耳其 E-Arsiv 发票的 DocBits 默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [Supported Electronic Documents](./)
-* [TURKEY E-FATURA](turkey-e-fatura.md)
+* [支持的电子文档](./)
+* [土耳其 E-FATURA](turkey-e-fatura.md)

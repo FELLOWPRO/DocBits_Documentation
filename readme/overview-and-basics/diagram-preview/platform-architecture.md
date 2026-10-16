@@ -3,8 +3,8 @@ hidden: true
 noIndex: true
 ---
 
-# Platform Architecture
+# 平台架构
 
-The DocBits platform grouped into layers: Edge / Web, Authentication, Import, Core API, Datastores and Background Services. See [Infrastructure](../../administration-and-setup/settings/infrastructure.md) for the live view in the product.
+DocBits 平台分为多个层：边缘 / Web、身份验证、导入、核心 API、数据存储和后台服务。有关产品中的实时视图，请参阅[基础设施](../../administration-and-setup/settings/infrastructure.md)。
 
-<figure><img src="../../.gitbook/assets/archify-platform.svg" alt="Platform Architecture"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/archify-platform.svg" alt="平台架构"><figcaption></figcaption></figure>

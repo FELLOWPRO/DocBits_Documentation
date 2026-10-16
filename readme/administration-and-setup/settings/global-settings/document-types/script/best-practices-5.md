@@ -1,45 +1,42 @@
-# Best Practices
+# 最佳实践
 
-## Here are some best practices for script development in DocBits, such as keeping scripts modular, handling errors properly, and documenting the purpose and function of each script.
+## 以下是 DocBits 脚本开发的一些最佳实践，例如保持脚本模块化、妥善处理错误，并记录每个脚本的用途和功能。
 
-### Modular Development:
+### 模块化开发：
 
-* Keep your scripts modular and well-structured.&#x20;
-* Break complex tasks into smaller, more manageable modules.&#x20;
-* Not only does this make your scripts easier to maintain and update, but it also allows you to reuse code and improve readability.
+* 保持脚本模块化且结构清晰。&#x20;
+* 将复杂任务拆分为更小、更易管理的模块。&#x20;
+* 这样不仅能让脚本更易于维护和更新，还能复用代码并提高可读性。
 
-### Error Handling:
+### 错误处理：
 
-* Implement robust error handling in your scripts.&#x20;
-* Make sure your code detects error cases and responds appropriately, whether by catching and logging errors, issuing helpful error messages, or taking action to recover.
+* 在脚本中实现健壮的错误处理。&#x20;
+* 确保代码能够检测错误情况并妥善响应，例如捕获并记录错误、提供有帮助的错误消息，或采取措施进行恢复。
 
-### Documentation:
+### 文档说明：
 
-* Document the purpose, functions, and usage of each script in detail.&#x20;
-* Describe what tasks the script performs, what inputs it expects, what outputs it generates, and how it integrates with the document processing workflow.&#x20;
-* Clear documentation makes it easier for other developers to understand and maintain your scripts.
+* 详细记录每个脚本的用途、功能和用法。&#x20;
+* 说明脚本执行哪些任务、预期输入是什么、生成哪些输出，以及它如何与文档处理工作流集成。&#x20;
+* 清晰的文档说明有助于其他开发人员理解和维护脚本。
 
-### Commenting:
+### 注释：
 
-* Comment your code thoroughly to explain its functionality and logic.&#x20;
-* Use meaningful comments to explain important steps or complex parts of the code.&#x20;
-* This not only makes the code easier for others to understand, but also for yourself when making future changes or updates.
+* 充分注释代码，解释其功能和逻辑。&#x20;
+* 使用有意义的注释说明重要步骤或复杂的代码部分。&#x20;
+* 这不仅能让其他人更容易理解代码，也有助于你在今后进行更改或更新时理解代码。
 
-### Versioning:
+### 版本控制：
 
-* Implement an effective version control system for your scripts.&#x20;
-* This allows you to track changes, manage different versions, and revert to previous versions when needed.&#x20;
-* This is especially useful when multiple developers are working on the same scripts or when you want to test different iterations.
+* 为脚本实施有效的版本控制系统。&#x20;
+* 这样可以跟踪更改、管理不同版本，并在需要时还原到先前版本。&#x20;
+* 在多名开发人员共同处理同一脚本，或需要测试不同迭代版本时，这尤其有用。
 
-### Security:&#x20;
+### 安全性：&#x20;
 
-* Make sure your scripts are secure and free of potential security vulnerabilities.&#x20;
-* For example, avoid unsafe practices such as directly executing user input or storing sensitive information in plain text.&#x20;
-* Instead, implement security best practices and regularly audit your code for security vulnerabilities.
-
-
-
-By following these best practices for script development in DocBits, you can create efficient, reliable, and well-documented scripts that improve the functionality and security of your document processing workflow.
+* 确保脚本安全，不存在潜在的安全漏洞。&#x20;
+* 例如，避免直接执行用户输入或以纯文本形式存储敏感信息等不安全做法。&#x20;
+* 应实施安全最佳实践，并定期审查代码中的安全漏洞。
 
 
 
+遵循这些 DocBits 脚本开发最佳实践，你可以创建高效、可靠且文档齐全的脚本，从而提升文档处理工作流的功能和安全性。

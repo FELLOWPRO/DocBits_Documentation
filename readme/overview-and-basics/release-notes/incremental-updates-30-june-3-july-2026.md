@@ -1,129 +1,81 @@
-# Hotfixes 30 June – 3 July 2026
+# 6月30日 – 2026年7月3日热修复
 
-_What this prod upgrade delivered, in plain language. Each service shows the
-version now live on production. Services not listed had no customer-facing changes
-in this window._
+_本次生产环境升级带来的改进，一目了然。每项服务都标明了当前在生产环境运行的版本。本时间段内未列出的服务没有面向客户的变更。_
 
 ---
 
-## Highlights
+## 亮点
 
-- **AI chat on Activity Logs.** A new AI chat panel on the Activity Logs page lets
-  you ask questions about log activity directly, without digging through raw
-  entries.
-- **Outbound e-mail import tracking.** The Import Log now records outbound mail
-  alongside inbound, with quick-filter chips for Errors / Inbound / Outbound —
-  failing mailboxes are automatically deactivated after repeated failures, admins
-  can be notified by e-mail on import failure, and retries now run up to 15 times
-  over roughly 5 hours before giving up.
-- **Clearer e-mail import errors.** Login failures now show the real underlying
-  reason, with dedicated messages for an invalid certificate or a wrong Gmail
-  app-password.
-- **Login loop fixed.** Some users could get stuck in a repeated sign-in loop
-  during token refresh — resolved.
-- **Steadier document processing.** Fixed a crash during data extraction from
-  unrounded coordinate values, barcode reading now retries recoverable failures
-  instead of giving up silently, and a rare case where a document could be
-  exported twice at the same time is fixed.
-- **Validation screen improvements.** You can now zoom further into documents,
-  fields no longer get cleared by scripts when their value hasn't actually
-  changed, and the dashboard remembers your page position when you navigate back.
+- **活动日志中的 AI 聊天。** 活动日志页面新增 AI 聊天面板，您可以直接询问日志活动相关问题，无需翻查原始记录。
+- **出站邮件导入跟踪。** 导入日志现在会同时记录出站邮件和入站邮件，并提供“错误 / 入站 / 出站”快速筛选标签；邮箱多次导入失败后会自动停用，导入失败时可通过邮件通知管理员，重试最多执行 15 次，持续约 5 小时，之后才会停止。
+- **更清晰的邮件导入错误信息。** 登录失败时现在会显示实际原因，并针对证书无效或 Gmail 应用专用密码错误提供专门提示。
+- **修复登录循环。** 已解决部分用户在刷新令牌时陷入反复登录循环的问题。
+- **文档处理更稳定。** 修复了使用未舍入坐标值提取数据时发生的崩溃；条码读取现在会对可恢复的失败进行重试，而不是静默放弃；还修复了文档可能在极少数情况下同时被导出两次的问题。
+- **验证页面改进。** 现在可以进一步缩放文档；如果字段的值实际上没有变化，脚本不会再将字段清空；返回仪表板时会记住您之前所在的页面位置。
 
 ---
 
-## Web App — live: `10.35.7`
+## Web App — 当前版本：`10.35.7`
 
-- **AI chat panel** added to the Activity Logs page (#15512).
-- **Import Log:** new Errors / Inbound / Outbound quick-filter chips; failure
-  notification recipients toggle and field for inbound e-mail settings.
-- **Validation screen:** document zoom now goes beyond the previous default size;
-  fields emptied by validation scripts now correctly keep their value when the
-  script returns the same value.
-- **Dashboard:** page position is kept when navigating back to the table; the
-  column-resize handle no longer spills outside the table header.
-- **Auto Accounting screen:** fixed a validation error.
-- **DocBits Tasks:** fixed a permissions issue.
-- **Watchdog logs:** added a time-range filter and an adjustable rows-per-page
-  selector.
-- **Fixes:** a chart error ("Element not found") on the Boards page; a broken
-  delete-export link on Activity Logs; layout fixes on the Layout Builder screen;
-  a missing translation on the Activity Logs time-range filter.
-- **Auto-update:** further hardening of the automatic app-update mechanism
-  (faster boot cleanup, more reliable version detection, cache purge before a
-  recovery reload).
+- **新增 AI 聊天面板**，位于活动日志页面 (#15512)。
+- **导入日志：** 新增“错误 / 入站 / 出站”快速筛选标签；入站邮件设置中新增失败通知收件人开关和输入框。
+- **验证页面：** 文档缩放范围现在可以超过之前的默认大小；验证脚本清空字段后，如果脚本返回相同的值，字段现在会正确保留该值。
+- **仪表板：** 返回表格时会保留页面位置；列宽调整手柄不再溢出表头。
+- **自动记账页面：** 修复了一项验证错误。
+- **DocBits 任务：** 修复了一项权限问题。
+- **Watchdog 日志：** 新增时间范围筛选器和可调整的每页行数选择器。
+- **修复：** 看板页面的图表错误（“找不到元素”）；活动日志中失效的删除导出链接；布局构建器页面的布局问题；活动日志时间范围筛选器中缺失的翻译。
+- **自动更新：** 进一步加固应用自动更新机制（加快启动时的清理速度、提高版本检测可靠性，并在恢复重载前清除缓存）。
 
-## API Service — live: `12.48.1`
+## API Service — 当前版本：`12.48.1`
 
-- **Faster document-script loading:** validation scripts are now cached
-  server-side (6-hour cache) instead of being fetched every time.
-- **More accurate amount confidence:** confidence scoring now accounts for
-  documents that use different decimal-separator conventions.
-- **Reliability:** document validation always runs the single active script
-  version, and which version ran is now logged; a rare case where a document
-  could be exported twice at the same time is fixed; supplier-specific
-  extraction rules apply correctly again after a forced re-OCR.
-- **E-mail import:** backend support added for outbound-mail logging and
-  failure-notification e-mails (see Email Service, below).
+- **更快地加载文档脚本：** 验证脚本现在会在服务器端缓存 6 小时，不再每次都重新获取。
+- **更准确的金额置信度：** 置信度评分现在会考虑使用不同小数分隔符惯例的文档。
+- **可靠性：** 文档验证始终运行唯一的活动脚本版本，并记录实际运行的版本；修复了文档可能在极少数情况下同时被导出两次的问题；强制重新 OCR 后，供应商专属提取规则现在会再次正确应用。
+- **邮件导入：** 已新增对出站邮件日志记录和失败通知邮件的后端支持（见下文“Email Service”）。
 
-## Auth Service — live: `1.68.5`
+## Auth Service — 当前版本：`1.68.5`
 
-- **Fixed a login loop** some users could hit while their session token was
-  being refreshed.
-- **Faster organisation-admin screens:** user and subscription data now loads in
-  bulk instead of one record at a time.
-- **Fixed a rare database conflict** when linking a user to an organisation.
+- **修复登录循环，**解决部分用户在会话令牌刷新时可能遇到的问题。
+- **加快组织管理员页面加载速度：** 用户和订阅数据现在会批量加载，不再逐条加载。
+- **修复用户关联到组织时偶尔发生的数据库冲突。**
 
-## Email Service — live: `1.37.4`
+## Email Service — 当前版本：`1.37.4`
 
-- **Import Log now tracks outbound mail** as well as inbound, with a filter to
-  show only inbound, outbound, or failed imports.
-- **Failing mailboxes are now auto-deactivated** after repeated failures, and
-  admins can be notified by e-mail when an import fails; retries now run up to
-  15 times over roughly 5 hours before giving up.
-- **Clearer login-failure messages:** shows the real underlying reason, a
-  dedicated message for an invalid certificate, and a specific message for a
-  wrong Gmail app-password.
-- **Fixed inbound routing** incorrectly rewriting server addresses for
-  EU-region accounts.
-- More resilient against brief Redis connection drops.
+- **导入日志现在会同时跟踪出站邮件和入站邮件，**并可筛选仅显示入站、出站或失败的导入。
+- **邮箱多次失败后会自动停用，**导入失败时还可通过邮件通知管理员；重试最多执行 15 次，持续约 5 小时，之后才会停止。
+- **登录失败提示更清晰：** 显示实际原因，并针对证书无效和 Gmail 应用专用密码错误提供专门提示。
+- **修复入站路由问题：** 对于 EU 区域账户，不再错误地改写服务器地址。
+- 短暂的 Redis 连接中断不再容易造成影响。
 
-## Extraction Service — live: `1.49.0`
+## Extraction Service — 当前版本：`1.49.0`
 
-- **Fixed a crash during extraction** caused by unrounded coordinate values.
-- **More accurate amount confidence** for documents with mixed decimal-separator
-  formats; small tax-total rounding differences no longer block a match.
+- **修复提取期间发生的崩溃，**该问题由未舍入的坐标值导致。
+- **提高使用混合小数分隔符格式的文档的金额置信度准确性；**较小的税额合计舍入差异不再阻止匹配。
 
-## Docflow Service — live: `2.4.2`
+## Docflow Service — 当前版本：`2.4.2`
 
-- **Reworked authentication for advanced (Celery-based) workflows**, with
-  guards so a failed authentication check can no longer crash a workflow run.
-- **Clearer response** when a workflow step tries to run against a workflow
-  that no longer exists.
+- **重新设计了高级（基于 Celery）工作流的身份验证，**并增加防护措施，确保身份验证失败不再导致工作流运行崩溃。
+- **工作流步骤尝试对已不存在的工作流执行操作时，**现在会返回更清晰的响应。
 
-## Barcode Service — live: `1.15.7`
+## Barcode Service — 当前版本：`1.15.7`
 
-- **Barcode reading now automatically retries** recoverable failures instead of
-  silently giving up.
+- **条码读取现在会自动重试可恢复的失败，**而不是静默放弃。
 
-## OCR Service — live: `1.7.3`
+## OCR Service — 当前版本：`1.7.3`
 
-- **Fixed an OCR failure** caused by a Redis hostname-lookup issue.
-- Health-check Redis disconnects are no longer logged as errors, cutting down
-  false alerts.
+- **修复由 Redis 主机名查询问题导致的 OCR 失败。**
+- 健康检查期间的 Redis 断开连接不再记录为错误，减少了误报。
 
-## PO Match Service — live: `1.55.8`
+## PO Match Service — 当前版本：`1.55.8`
 
-- **Fixed notes not appearing** on PO Match records.
+- **修复 PO Match 记录中备注不显示的问题。**
 
 ---
 
-## No customer-facing changes in this window
+## 本时间段内没有面向客户的变更
 
-Stable, no notable product changes between 30 June – 3 July: Auto Accounting
-(`1.18.7`), Docnet (`1.54.6`), FTP (`1.30.2`), Fulltext (`1.35.7`), Operator
-(`1.39.5`). Auto Accounting received internal deployment-configuration
-maintenance only. Ideas Service could not be reached for a version check during
-this window.
+6月30日 – 7月3日期间保持稳定，没有值得注意的产品变更：Auto Accounting (`1.18.7`)、Docnet (`1.54.6`)、FTP (`1.30.2`)、Fulltext (`1.35.7`)、Operator (`1.39.5`)。Auto Accounting 仅进行了内部部署配置维护。本时间段内无法连接 Ideas Service 以检查版本。
 
 <!-- Generated by the docbits-changelog skill (version-boundary mode, resolved
      from the prod version table supplied by the user). Window 2026-06-30 →

@@ -1,25 +1,22 @@
-# Best practices
+# 最佳实践
 
-## Best practices for efficient and precise document layouts.
+## 高效、精准的文档布局最佳实践
 
-### Logical organization of fields:
+### 字段的逻辑组织：
 
-* Group related fields together to create a logical and intuitive structure. This makes it easier for users to navigate and enter data.
-* Arrange fields so that frequently used or important information is easily accessible and placed in a prominent location.
+* 将相关字段分组，形成清晰直观的结构。这有助于用户浏览和录入数据。
+* 按重要性排列字段，让常用信息或重要信息易于访问，并放在醒目的位置。
 
-### Ensuring data completeness:
+### 确保数据完整：
 
-* Identify all required data fields and mark them accordingly. Ensure users are prompted to enter all necessary information to avoid incomplete records.
-* Use validation rules to ensure that entered data conforms to expected formats and criteria.
+* 找出所有必填数据字段并进行标记。确保系统提示用户输入所有必要信息，避免记录不完整。
+* 使用验证规则，确保录入的数据符合预期格式和标准。
 
-### Clear labels and instructions:
+### 使用清晰的标签和说明：
 
-* Use clear and precise labels for fields to help users enter the expected data.
-* Add instructions or notes when additional information is required to ensure users provide the correct data.
+* 为字段使用清晰、准确的标签，帮助用户录入预期数据。
+* 需要补充信息时，添加说明或备注，确保用户提供正确的数据。
 
-### Test and optimize:
+### 测试并优化：
 
-* Test the layout and data entry thoroughly to ensure that all data is captured and stored correctly. Collect feedback from users and make adjustments to continuously improve user experience and data integrity.
-
-
-
+* 充分测试布局和数据录入，确保所有数据都能正确采集和存储。收集用户反馈并进行调整，持续改善用户体验和数据完整性。

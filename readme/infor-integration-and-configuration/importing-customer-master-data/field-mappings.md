@@ -1,10 +1,10 @@
-# Field Mappings
+# 字段映射
 
-Below you will find the necessary field mappings for importing master data, from Infor, into DocBits.
+下面列出了从 Infor 导入主数据到 DocBits 所需的字段映射。
 
-## Auto Accounting (LN)
+## 自动会计（LN）
 
-### ChartOfAccounts
+### 科目表
 
 ```javascript
 {
@@ -22,7 +22,7 @@ Below you will find the necessary field mappings for importing master data, from
 }
 ```
 
-### TotalFlexDimensions
+### 总柔性维度
 
 ```javascript
 {
@@ -33,7 +33,7 @@ Below you will find the necessary field mappings for importing master data, from
 }
 ```
 
-### FinalFlexDimensions
+### 最终柔性维度
 
 ```javascript
 {
@@ -42,9 +42,9 @@ Below you will find the necessary field mappings for importing master data, from
 }
 ```
 
-## Auto Accounting (M3)
+## 自动会计（M3）
 
-### ChartOfAccounts
+### 科目表
 
 ```javascript
 {
@@ -70,7 +70,7 @@ Below you will find the necessary field mappings for importing master data, from
 }
 ```
 
-### FlexDimensions (CodeDefinition)
+### 柔性维度（代码定义）
 
 ```javascript
 {
@@ -82,9 +82,9 @@ Below you will find the necessary field mappings for importing master data, from
 }
 ```
 
-## Tax Code
+## 税码
 
-### Full
+### 全额
 
 ```javascript
 {
@@ -98,7 +98,7 @@ Below you will find the necessary field mappings for importing master data, from
 }
 ```
 
-### Reduced
+### 减免
 
 ```javascript
 {
@@ -112,7 +112,7 @@ Below you will find the necessary field mappings for importing master data, from
 }
 ```
 
-### Free
+### 免税
 
 ```javascript
 {
@@ -125,5 +125,3 @@ Below you will find the necessary field mappings for importing master data, from
     "TaxRateFree": "number(concat('0',//DataArea/LnTaxCode/SingularRatesGroup/SingularRate[2]/RateNumeric))*100"
 }
 ```
-
-

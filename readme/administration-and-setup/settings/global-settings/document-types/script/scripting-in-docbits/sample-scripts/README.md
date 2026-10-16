@@ -1,33 +1,38 @@
-# Sample Scripts
+# 示例脚本
 
-Production-ready script examples for common DocBits automation use cases. Each example includes the full script, a step-by-step explanation, and links to the functions used.
+适用于常见 DocBits 自动化用例的生产就绪脚本示例。每个示例都包含完整脚本、分步说明以及所用函数的链接。
 
-## Examples by Use Case
+## 按用例分类的示例
 
-### Data Validation
-- [Supplier Lookup Validation](lookup-supplier-validation.md) — Validate supplier against master data
-- [Table Sum Validation](table-sum-validation.md) — Verify line item totals match net amount
+### 数据验证
 
-### Automation
-- [Auto PO Matching](auto-po-matching.md) — Trigger automatic PO matching
-- [Auto-Export Based on Conditions](status-auto-export.md) — Skip validation for low-risk invoices
-- [Due Date Calculation](due-date-calculation.md) — Calculate payment terms with weekend skip
+- [供应商查询验证](lookup-supplier-validation.md) — 根据主数据验证供应商
+- [表格总和验证](table-sum-validation.md) — 验证行项目合计是否与净额一致
 
-### Business Rules
-- [Tax Code Detection](tax-code-detection.md) — Determine tax code from fulltext and amounts
-- [Task for High Amount](task-high-amount.md) — Create approval task for large invoices
-- [Dynamic Required Fields](dynamic-required-fields.md) — Adjust required fields based on currency
+### 自动化
 
-### Fulltext & Vector Search
-- [Duplicate Invoice Detection](duplicate-invoice-detection.md) — Find duplicate invoices using fulltext search
-- [Similar Document Detection](similar-document-detection.md) — Flag similar documents using vector search
-- [Compliance Text Search](compliance-text-search.md) — Search for compliance keywords (e.g. Reverse Charge)
-- [ERP Vendor Validation](erp-vendor-validation.md) — Validate vendor against ERP master data
-- [Fill Missing Fields from History](fill-missing-fields-from-history.md) — Auto-fill fields from similar past documents
+- [自动采购订单匹配](auto-po-matching.md) — 触发自动采购订单匹配
+- [根据条件自动导出](status-auto-export.md) — 跳过低风险发票的验证
+- [到期日计算](due-date-calculation.md) — 计算付款期限并跳过周末
 
-### Legacy Examples
-- [Calculating Total Charges](calculating-total-charges-script-for-docbits-1.md) — Sum freight and packaging amounts
-- [Delete Empty Lines](delete-lines-with-empty-quantity-and-amount.md) — Remove rows with zero quantity/amount
-- [Export Certificate Numbers](formatting-export-certificate-reference-numbers-script-for-docbits.md) — Pad reference numbers with leading zeros
-- [Extended Invoice Numbers](generating-extended-invoice-numbers-script-for-docbits-1.md) — Concatenate invoice ID and PO number
-- [USD Default Currency](usd-as-default-currency.md) — Set USD as default currency
+### 业务规则
+
+- [税码检测](tax-code-detection.md) — 根据全文和金额确定税码
+- [大额发票审批任务](task-high-amount.md) — 为大额发票创建审批任务
+- [动态必填字段](dynamic-required-fields.md) — 根据货币调整必填字段
+
+### 全文与向量搜索
+
+- [重复发票检测](duplicate-invoice-detection.md) — 使用全文搜索查找重复发票
+- [相似文档检测](similar-document-detection.md) — 使用向量搜索标记相似文档
+- [合规文本搜索](compliance-text-search.md) — 搜索合规关键词（例如，反向征税）
+- [ERP 供应商验证](erp-vendor-validation.md) — 根据 ERP 主数据验证供应商
+- [从历史记录填充缺失字段](fill-missing-fields-from-history.md) — 根据相似的历史文档自动填充字段
+
+### 旧版示例
+
+- [计算费用总额](calculating-total-charges-script-for-docbits-1.md) — 汇总运费和包装费金额
+- [删除空行](delete-lines-with-empty-quantity-and-amount.md) — 删除数量或金额为零的行
+- [导出证书编号](formatting-export-certificate-reference-numbers-script-for-docbits.md) — 在参考编号前补零
+- [扩展发票编号](generating-extended-invoice-numbers-script-for-docbits-1.md) — 拼接发票 ID 和采购订单编号
+- [USD 默认货币](usd-as-default-currency.md) — 将 USD 设为默认货币

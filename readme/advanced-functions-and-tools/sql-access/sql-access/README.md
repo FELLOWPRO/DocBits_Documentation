@@ -1,3 +1,3 @@
-# SQL Access
+# SQL 访问
 
-Here we explain how to access the data with SQL
+这里说明如何使用 SQL 访问数据。

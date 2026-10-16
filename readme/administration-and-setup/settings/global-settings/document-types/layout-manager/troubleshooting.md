@@ -1,30 +1,25 @@
-# Troubleshooting
+# 故障排除
 
-## Troubleshooting common issues&#x20;
+## 常见问题故障排除
 
-### Fields do not match the scanned documents:
+### 字段与扫描的文档不匹配：
 
-* Check the configuration of the fields in the Layout Manager and make sure they match the actual fields in the scanned documents.&#x20;
-* Check that the positions and dimensions of the fields in the layout are correct and that they cover all relevant information.&#x20;
+* 检查布局管理器中的字段配置，确保其与扫描文档中的实际字段相符。
+* 检查布局中字段的位置和尺寸是否正确，以及是否覆盖所有相关信息。
 
-### Data is not extracted correctly:
+### 数据提取不正确：
 
-* Check the validation rules and format settings for the affected fields to make sure that the expected data can be captured correctly.&#x20;
-* Make sure that the OCR (Optical Character Recognition) or other data capture technologies are properly configured and calibrated to ensure accurate extraction of the data.&#x20;
+* 检查受影响字段的验证规则和格式设置，确保能够正确捕获预期数据。
+* 确保 OCR（光学字符识别）或其他数据采集技术已正确配置并校准，以便准确提取数据。
 
-### Faulty data validation:
+### 数据验证错误：
 
-* Check the validation rules for fields to make sure they are appropriate and configured correctly.&#x20;
-* Adjust the validation rules if necessary to ensure that they meet the requirements and formats of the captured data.&#x20;
+* 检查字段的验证规则，确保规则适用且配置正确。
+* 必要时调整验证规则，确保其符合所捕获数据的要求和格式。
 
-### Document layouts are confusing or inefficient:
+### 文档布局难以理解或效率低下：
 
-* Revise the layout to improve the structure and organization of fields and ensure that important information is easily accessible.
-* Run user testing to get feedback on the usability of the layout and make adjustments to increase efficiency.
+* 修改布局，优化字段的结构和组织方式，并确保重要信息易于查找。
+* 开展用户测试，收集有关布局易用性的反馈，并进行调整以提高效率。
 
-
-
-By applying these best practices and troubleshooting as appropriate, you can create efficient and accurate document layouts that enable smooth data capture and processing.
-
-
-
+通过遵循这些最佳实践并在适当情况下进行故障排除，您可以创建高效、准确的文档布局，从而实现顺畅的数据采集和处理。

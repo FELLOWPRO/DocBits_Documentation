@@ -1,20 +1,20 @@
-# First & Adjacent Policy
+# 首条及相邻规则策略
 
-Chooses the result of the rule that is adjacent to the first rule that is true.
+选择紧邻首条符合条件规则的规则所返回的结果。
 
-**Example:**
+**示例：**
 
-| Rule | Condition            | Return Group |
+| 规则 | 条件 | 返回组 |
 | ---- | -------------------- | ------------ |
-| 1    | Total Amount <= 1000 | GROUP_1     |
-| 2    | Total Amount <= 2000 | GROUP_2     |
-| 3    | Total Amount <= 3000 | GROUP_3     |
-| 4    | Total Amount <= 4000 | GROUP_4     |
-| 5    | Total Amount <= 5000 | GROUP_5     |
+| 1    | 总金额 <= 1000 | GROUP_1     |
+| 2    | 总金额 <= 2000 | GROUP_2     |
+| 3    | 总金额 <= 3000 | GROUP_3     |
+| 4    | 总金额 <= 4000 | GROUP_4     |
+| 5    | 总金额 <= 5000 | GROUP_5     |
 
-If the total amount is **1500**, the rules evaluated will be:
+如果总金额为 **1500**，则会按以下顺序评估规则：
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (matches)
+* **规则 1**：总金额 <= 1000（不符合）
+* **规则 2**：总金额 <= 2000（符合）
 
-Since **Rule 2** is the first rule that matches, **First & Adjacent** would apply the result of **Rule 3**: **GROUP_3**.
+由于 **规则 2** 是首条符合条件的规则，**首条及相邻规则**策略将应用 **规则 3** 的结果：**GROUP_3**。

@@ -1,86 +1,86 @@
-# Ephesoft PO matching
+# Ephesoft 采购订单匹配
 
-## Tabelle `public.ephesoft_po_matching`
+## 表 `public.ephesoft_po_matching`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_id`: internal
-* `doc_type`: DOC Type
-* `ephesoft_doc_id`: internal
-* `extracted_data`: text
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
+* `id`：内部标识
+* `org_id`：组织 ID
+* `doc_id`：内部标识
+* `doc_type`：文档类型
+* `ephesoft_doc_id`：内部标识
+* `extracted_data`：文本
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
 
-### Analyse & Beschreibung
+### 分析与描述
 
-## Technical Documentation for `public.ephesoft_po_matching` Table
+## `public.ephesoft_po_matching` 表技术文档
 
-### Introduction
+### 简介
 
-The `public.ephesoft_po_matching` table is designed to store and manage data related to the matching of purchase orders with documents, such as invoices, processed by the Ephesoft system. This table captures various details about the documents, their extraction process, and the match status with purchase orders.
+`public.ephesoft_po_matching` 表用于存储和管理 Ephesoft 系统处理的采购订单与文档（如发票）匹配相关的数据。此表记录有关文档、其提取过程以及与采购订单匹配状态的各种详细信息。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: A unique identifier for each record in the table, likely representing a specific document or transaction processed.
-* **Role**: Primary key.
-* **Typical Contents**: Universally unique identifier (UUID) in string format, e.g., `ea587c89-0d4f-4a47-a3ac-89cfb2bed9cb`.
+* **含义**：表中每条记录的唯一标识符，可能代表已处理的特定文档或交易。
+* **作用**：主键。
+* **典型内容**：字符串格式的通用唯一标识符（UUID），例如 `ea587c89-0d4f-4a47-a3ac-89cfb2bed9cb`。
 
 #### org\_id
 
-* **Meaning**: Identifier for the organization associated with the document or transaction.
-* **Role**: Foreign key, possibly linking to an organization table.
-* **Typical Contents**: UUID in string format, e.g., `23f3d697-7411-4c95-981d-faf089d266be`.
+* **含义**：与文档或交易关联的组织标识符。
+* **作用**：外键，可能关联到组织表。
+* **典型内容**：字符串格式的 UUID，例如 `23f3d697-7411-4c95-981d-faf089d266be`。
 
 #### doc\_id
 
-* **Meaning**: Identifier for the document processed by the system.
-* **Role**: Foreign key, linking to a document table or similar.
-* **Typical Contents**: UUID in string format, e.g., `f46c6c90-568b-42ee-ae71-c5a3c22211de`.
+* **含义**：系统处理的文档标识符。
+* **作用**：外键，关联到文档表或类似的数据表。
+* **典型内容**：字符串格式的 UUID，例如 `f46c6c90-568b-42ee-ae71-c5a3c22211de`。
 
 #### doc\_type
 
-* **Meaning**: Type of the document processed, indicating the nature of the document (e.g., INVOICE).
-* **Role**: Descriptive field.
-* **Typical Contents**: String indicating document type, e.g., `INVOICE`.
+* **含义**：已处理文档的类型，用于说明文档的性质（例如 INVOICE）。
+* **作用**：描述性字段。
+* **典型内容**：表示文档类型的字符串，例如 `INVOICE`。
 
 #### ephesoft\_doc\_id
 
-* **Meaning**: Identifier used by the Ephesoft system to track the document.
-* **Role**: Descriptive field.
-* **Typical Contents**: Short string, possibly an identifier, e.g., `DOC1`.
+* **含义**：Ephesoft 系统用于跟踪文档的标识符。
+* **作用**：描述性字段。
+* **典型内容**：较短的字符串，可能是标识符，例如 `DOC1`。
 
 #### extracted\_data
 
-* **Meaning**: JSON data containing extracted information from the document, including fields, tables, and metadata.
-* **Role**: Data storage field for extracted document content.
-* **Typical Contents**: JSON structure with details like document type, fields, tables, and metadata.
+* **含义**：包含从文档中提取的信息的 JSON 数据，包括字段、表格和元数据。
+* **作用**：用于存储提取的文档内容。
+* **典型内容**：包含文档类型、字段、表格和元数据等详细信息的 JSON 结构。
 
 #### created\_by
 
-* **Meaning**: Identifier of the user or system that created the record.
-* **Role**: Foreign key, possibly linking to a users table.
-* **Typical Contents**: Integer representing user ID, e.g., `1`.
+* **含义**：创建该记录的用户或系统的标识符。
+* **作用**：外键，可能关联到用户表。
+* **典型内容**：表示用户 ID 的整数，例如 `1`。
 
 #### created\_on
 
-* **Meaning**: Timestamp of when the record was created.
-* **Role**: Technical field for record tracking.
-* **Typical Contents**: Timestamp with timezone, e.g., `2022-02-19 10:43:37 UTC`.
+* **含义**：记录的创建时间。
+* **作用**：用于跟踪记录的技术字段。
+* **典型内容**：带时区的时间戳，例如 `2022-02-19 10:43:37 UTC`。
 
 #### last\_modified\_on
 
-* **Meaning**: Timestamp of the last modification to the record.
-* **Role**: Technical field for record tracking.
-* **Typical Contents**: Timestamp with timezone, can be null if not modified since creation.
+* **含义**：记录的最后修改时间。
+* **作用**：用于跟踪记录的技术字段。
+* **典型内容**：带时区的时间戳；如果自创建后未修改，则可能为 null。
 
 #### is\_deleted
 
-* **Meaning**: Flag indicating whether the record is marked as deleted.
-* **Role**: Technical field for soft deletion.
-* **Typical Contents**: Boolean, `true` if the record is deleted, `false` otherwise.
+* **含义**：指示记录是否已标记为删除的标志。
+* **作用**：用于软删除的技术字段。
+* **典型内容**：布尔值；记录已删除时为 `true`，否则为 `false`。

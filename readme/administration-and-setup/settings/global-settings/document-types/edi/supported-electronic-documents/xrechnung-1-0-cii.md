@@ -1,33 +1,33 @@
 ---
-description: XRECHNUNG 1.0 CII electronic document support in DocBits
+description: "DocBits 对 XRECHNUNG 1.0 CII 电子文档的支持"
 ---
 
 # 🇩🇪 XRECHNUNG 1.0 CII
 
-| Property             | Value                                       |
-| -------------------- | ------------------------------------------- |
-| **Country / Region** | Germany                                     |
-| **Document Types**   | Invoice, Credit Note                        |
-| **Format**           | CII                                         |
-| **Standard**         | XRechnung 1.0                               |
-| **Based On**         | EN 16931 (UN/CEFACT Cross Industry Invoice) |
+| 属性                   | 值                                              |
+| ---------------------- | ----------------------------------------------- |
+| **国家 / 地区**        | 德国                                           |
+| **文档类型**           | 发票、贷项通知单                               |
+| **格式**               | CII                                            |
+| **标准**               | XRechnung 1.0                                  |
+| **基于**               | EN 16931（UN/CEFACT 跨行业发票）               |
 
-Early version of the XRechnung standard. Superseded by newer versions but still supported for processing legacy documents.
+XRechnung 标准的早期版本。虽然已被较新版本取代，但仍支持处理旧版文档。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 组件     | 状态       |
+| -------- | ---------- |
+| 预览     | ✅ 支持     |
+| 字段提取 | ✅ 支持     |
+| 转换     | ✅ 支持     |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/xrechnung-cii-preview.png" alt="XRechnung 1.0 CII invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Germany XRechnung 1.0 CII invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/xrechnung-cii-preview.png" alt="DocBits 中的 XRechnung 1.0 CII 发票预览"><figcaption><p>DocBits 中德国 XRechnung 1.0 CII 发票的默认预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [XRechnung Configuration](../xrechnung/)
-* [XRechnung Field Mapping](../xrechnung/mapping-xrechnung-in-docbits/)
-* [Supported Electronic Documents](./)
+* [XRechnung 配置](../xrechnung/)
+* [XRechnung 字段映射](../xrechnung/mapping-xrechnung-in-docbits/)
+* [支持的电子文档](./)

@@ -1,156 +1,156 @@
-# Additional charge costing element
+# 附加费用成本要素
 
-## Table `public.additional_charge_costing_element`
+## 表 `public.additional_charge_costing_element`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `costing_element`: internal
-* `description`: internal
-* `charge_type`: internal
-* `distribution_method`: internal
-* `distribution_type`: internal
-* `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
-* `sub_org_id`: internal
-* `charge_count`: integer
-* `charge_icon`: internal
-* `charge_category`: internal
-* `charge_sequence_number`: integer
-* `charge_operator`: integer
-* `last_modified_by`: internal
-* `deleted_by`: internal
+* `id`：内部字段
+* `org_id`：组织 ID
+* `costing_element`：内部字段
+* `description`：内部字段
+* `charge_type`：内部字段
+* `distribution_method`：内部字段
+* `distribution_type`：内部字段
+* `created_by`：整数
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `deleted_on`：带时区的时间戳
+* `sub_org_id`：内部字段
+* `charge_count`：整数
+* `charge_icon`：内部字段
+* `charge_category`：内部字段
+* `charge_sequence_number`：整数
+* `charge_operator`：整数
+* `last_modified_by`：内部字段
+* `deleted_by`：内部字段
 
-### Analyse & Beschreibung
+### 分析与描述
 
-## Table Documentation: `public.additional_charge_costing_element`
+## 表文档：`public.additional_charge_costing_element`
 
-### Introduction
+### 简介
 
-The `public.additional_charge_costing_element` table is designed to manage and store information about various additional charge costing elements within an organization. This includes data about the type of charges, how they are distributed, and administrative metadata like creation and modification details. This table is likely used for financial and operational management within an organization, focusing on additional costs that need to be tracked and analyzed.
+`public.additional_charge_costing_element` 表用于管理和存储组织内各种附加费用成本要素的信息。数据包括费用类型、费用分配方式，以及创建和修改等管理元数据。该表可能用于组织的财务和运营管理，重点是需要跟踪和分析的附加成本。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: This column stores a unique identifier for each record in the table.
-* **Role**: Primary Key.
-* **Typical Contents**: A unique alphanumeric string that identifies each costing element record.
+* **含义**：此列存储表中每条记录的唯一标识符。
+* **作用**：主键。
+* **典型内容**：用于标识每条成本要素记录的唯一字母数字字符串。
 
 #### org\_id
 
-* **Meaning**: The identifier of the organization to which this costing element belongs.
-* **Role**: Foreign Key.
-* **Typical Contents**: A UUID representing the organization.
+* **含义**：成本要素所属组织的标识符。
+* **作用**：外键。
+* **典型内容**：表示该组织的 UUID。
 
 #### costing\_element
 
-* **Meaning**: An identifier or code for the costing element.
-* **Role**: Descriptive field.
-* **Typical Contents**: An alphanumeric string that represents the specific costing element.
+* **含义**：成本要素的标识符或代码。
+* **作用**：描述性字段。
+* **典型内容**：表示具体成本要素的字母数字字符串。
 
 #### description
 
-* **Meaning**: A textual description of the costing element.
-* **Role**: Descriptive field.
-* **Typical Contents**: A brief textual explanation of the costing element.
+* **含义**：成本要素的文本描述。
+* **作用**：描述性字段。
+* **典型内容**：对成本要素的简短文本说明。
 
 #### charge\_type
 
-* **Meaning**: The type of charge associated with this costing element.
-* **Role**: Descriptive field.
-* **Typical Contents**: A code or short text indicating the charge type.
+* **含义**：与此成本要素关联的费用类型。
+* **作用**：描述性字段。
+* **典型内容**：表示费用类型的代码或简短文本。
 
 #### distribution\_method
 
-* **Meaning**: Method by which the charge is distributed.
-* **Role**: Descriptive field.
-* **Typical Contents**: A code or short text indicating the distribution method.
+* **含义**：费用的分配方式。
+* **作用**：描述性字段。
+* **典型内容**：表示分配方式的代码或简短文本。
 
 #### distribution\_type
 
-* **Meaning**: Type of distribution for the charge.
-* **Role**: Descriptive field.
-* **Typical Contents**: A code or short text indicating the distribution type.
+* **含义**：费用的分配类型。
+* **作用**：描述性字段。
+* **典型内容**：表示分配类型的代码或简短文本。
 
 #### created\_by
 
-* **Meaning**: Identifier of the user who created the record.
-* **Role**: Administrative field.
-* **Typical Contents**: An integer representing the user ID.
+* **含义**：创建此记录的用户标识符。
+* **作用**：管理字段。
+* **典型内容**：表示用户 ID 的整数。
 
 #### created\_on
 
-* **Meaning**: Timestamp indicating when the record was created.
-* **Role**: Administrative field.
-* **Typical Contents**: A timestamp with time zone information.
+* **含义**：记录的创建时间戳。
+* **作用**：管理字段。
+* **典型内容**：包含时区信息的时间戳。
 
 #### last\_modified\_on
 
-* **Meaning**: Timestamp of the last modification made to the record.
-* **Role**: Administrative field.
-* **Typical Contents**: A timestamp with time zone information.
+* **含义**：记录最后一次修改的时间戳。
+* **作用**：管理字段。
+* **典型内容**：包含时区信息的时间戳。
 
 #### is\_deleted
 
-* **Meaning**: Indicates whether the record is marked as deleted.
-* **Role**: Technical field.
-* **Typical Contents**: Boolean value (`True` or `False`).
+* **含义**：指示记录是否已标记为删除。
+* **作用**：技术字段。
+* **典型内容**：布尔值（`True` 或 `False`）。
 
 #### deleted\_on
 
-* **Meaning**: Timestamp when the record was marked as deleted.
-* **Role**: Administrative field.
-* **Typical Contents**: A timestamp with time zone information or `None` if not deleted.
+* **含义**：记录被标记为删除的时间戳。
+* **作用**：管理字段。
+* **典型内容**：包含时区信息的时间戳；如果未删除，则为 `None`。
 
 #### sub\_org\_id
 
-* **Meaning**: Identifier for a sub-organization related to the costing element.
-* **Role**: Foreign Key.
-* **Typical Contents**: A UUID representing the sub-organization.
+* **含义**：与此成本要素相关的子组织标识符。
+* **作用**：外键。
+* **典型内容**：表示该子组织的 UUID。
 
 #### charge\_count
 
-* **Meaning**: The number of charges associated with the costing element.
-* **Role**: Descriptive field.
-* **Typical Contents**: An integer representing the count of charges.
+* **含义**：与成本要素关联的费用数量。
+* **作用**：描述性字段。
+* **典型内容**：表示费用数量的整数。
 
 #### charge\_icon
 
-* **Meaning**: Icon or symbol associated with the charge.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string representing the icon, likely a path or identifier.
+* **含义**：与费用关联的图标或符号。
+* **作用**：描述性字段。
+* **典型内容**：表示图标的字符串，可能是路径或标识符。
 
 #### charge\_category
 
-* **Meaning**: The category under which the charge falls.
-* **Role**: Descriptive field.
-* **Typical Contents**: A string representing the charge category.
+* **含义**：费用所属的类别。
+* **作用**：描述性字段。
+* **典型内容**：表示费用类别的字符串。
 
 #### charge\_sequence\_number
 
-* **Meaning**: Sequence number for ordering charges.
-* **Role**: Descriptive field.
-* **Typical Contents**: An integer used to sequence charges.
+* **含义**：用于对费用排序的序号。
+* **作用**：描述性字段。
+* **典型内容**：用于对费用排序的整数。
 
 #### charge\_operator
 
-* **Meaning**: Identifier for the operator responsible for the charge.
-* **Role**: Descriptive field.
-* **Typical Contents**: An integer representing the operator ID.
+* **含义**：负责该费用的操作员标识符。
+* **作用**：描述性字段。
+* **典型内容**：表示操作员 ID 的整数。
 
 #### last\_modified\_by
 
-* **Meaning**: Identifier of the user who last modified the record.
-* **Role**: Administrative field.
-* **Typical Contents**: A string representing the user ID, potentially `None` if never modified.
+* **含义**：最后修改此记录的用户标识符。
+* **作用**：管理字段。
+* **典型内容**：表示用户 ID 的字符串；如果从未修改过，则可能为 `None`。
 
 #### deleted\_by
 
-* **Meaning**: Identifier of the user who marked the record as deleted.
-* **Role**: Administrative field.
-* **Typical Contents**: A string representing the user ID, potentially `None` if not deleted.
+* **含义**：将记录标记为删除的用户标识符。
+* **作用**：管理字段。
+* **典型内容**：表示用户 ID 的字符串；如果未删除，则可能为 `None`】【。

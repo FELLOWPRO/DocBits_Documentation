@@ -1,21 +1,21 @@
-# WatchDog Installation
+# WatchDog 安装
 
-<figure><img src="../../../.gitbook/assets/watchdog-installation-infographic.svg" alt="WatchDog Installation Steps"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-installation-infographic.svg" alt="WatchDog 安装步骤"><figcaption></figcaption></figure>
 
-> **Recommended:** Use the modern setup described below. WatchDog configurations are now created directly in the DocBits application — no local config files needed.
+> **推荐：** 使用下文介绍的现代设置方式。现在可以直接在 DocBits 应用中创建 WatchDog 配置，无需本地配置文件。
 
-## Prerequisites
+## 前提条件
 
-* Windows Server or Windows 10/11
-* Administrator access
-* Network connectivity to DocBits API
-* DocBits API Key (available in Settings → WatchDog → General Tab)
+* Windows Server 或 Windows 10/11
+* 管理员权限
+* 可连接到 DocBits API 的网络
+* DocBits API 密钥（可在“设置 → WatchDog → 常规”选项卡中获取）
 
-## Installation Steps
+## 安装步骤
 
-### 1. Create Required Folders
+### 1. 创建所需文件夹
 
-Create a main directory and subfolders for WatchDog:
+创建一个主目录和子文件夹，用于 WatchDog：
 
 ```
 C:\WatchDog\              ← WatchDog executable
@@ -24,113 +24,113 @@ C:\WatchDog\Processed\    ← Success folder for processed documents
 C:\WatchDog\Export\        ← Export folder for exported files
 ```
 
-> **Note:** It is recommended to use local paths. UNC network paths (e.g. `\\server\share`) are supported but may require a Polling Observer for reliable file detection.
+> **注意：** 建议使用本地路径。支持 UNC 网络路径（例如 `\\server\share`），但要可靠地检测文件，可能需要使用 Polling Observer。
 
-### 2. Download WatchDog
+### 2. 下载 WatchDog
 
-Download `WatchDog.exe` from the DocBits application:
+从 DocBits 应用中下载 `WatchDog.exe`：
 
-**Settings → Document Processing → WatchDog → General Tab → Download**
+**设置 → 文档处理 → WatchDog → 常规选项卡 → 下载**
 
-Place the downloaded `WatchDog.exe` file in `C:\WatchDog\`.
+将下载的 `WatchDog.exe` 文件放在 `C:\WatchDog\` 中。
 
-### 3. Configure API Connection
+### 3. 配置 API 连接
 
-Open **Command Prompt (CMD)** as **Administrator** and run:
+以**管理员**身份打开**命令提示符（CMD）**并运行：
 
 ```powershell
 cd C:\WatchDog
 WatchDog.exe -api YOUR_API_KEY
 ```
 
-This connects WatchDog to your DocBits organisation and fetches configurations automatically.
+此操作会将 WatchDog 连接到你的 DocBits 组织，并自动获取配置。
 
-### 4. Install as Windows Service
+### 4. 安装为 Windows 服务
 
 ```powershell
 WatchDog.exe install
 ```
 
-### 5. Start the Service
+### 5. 启动服务
 
 ```powershell
 WatchDog.exe start
 ```
 
-### 6. Create Configurations in DocBits
+### 6. 在 DocBits 中创建配置
 
-Navigate to **Settings → Document Processing → WatchDog → Configurations Tab** in DocBits:
+在 DocBits 中导航至**设置 → 文档处理 → WatchDog → 配置**选项卡：
 
-* Click **New Import Configuration** to set up watch folders
-* Click **New Export Configuration** to set up export destinations
+* 点击**新建导入配置**以设置监视文件夹
+* 点击**新建导出配置**以设置导出目标位置
 
-> **Important:** Export configurations require a **document type**. All configurations are managed centrally in DocBits, not in local config files.
+> **重要：** 导出配置需要指定**文档类型**。所有配置都在 DocBits 中集中管理，而不是保存在本地配置文件中。
 
-### 7. Set Automatic Startup
+### 7. 设置自动启动
 
-1. Open **Services** (`Win + R` → `services.msc`)
-2. Find **WatchDog** in the service list
-3. Double-click to open properties
-4. Set **Startup Type** to **Automatic (Delayed Start)**
-5. Click **OK**
+1. 打开**服务**（`Win + R` → `services.msc`）
+2. 在服务列表中找到 **WatchDog**
+3. 双击打开属性
+4. 将**启动类型**设为**自动（延迟启动）**
+5. 点击**确定**
 
-## Verify Installation
+## 验证安装
 
-After installation, check the WatchDog status in DocBits:
+安装完成后，请在 DocBits 中查看 WatchDog 状态：
 
-**Settings → WatchDog → General Tab**
+**设置 → WatchDog → 常规选项卡**
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="WatchDog General Tab — Service Status"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="WatchDog 常规选项卡 — 服务状态"><figcaption></figcaption></figure>
 
-* ✅ **Online** — WatchDog is connected and sending heartbeats
-* Version, last restart, and system information should be visible
+* ✅ **在线** — WatchDog 已连接并正在发送心跳信号
+* 应显示版本、上次重启时间和系统信息
 
-## Command Reference
+## 命令参考
 
-| Command | Description |
+| 命令 | 描述 |
 | :--- | :--- |
-| `WatchDog.exe -api KEY` | Configure API Key |
-| `WatchDog.exe install` | Install as Windows Service |
-| `WatchDog.exe start` | Start the service |
-| `WatchDog.exe stop` | Stop the service |
-| `WatchDog.exe debug` | Run in console mode (for troubleshooting) |
-| `WatchDog.exe remove` | Uninstall the service |
-| `WatchDog.exe --version` | Show current version |
-| `WatchDog.exe --list-folders` | List configured watch folders |
-| `WatchDog.exe --add-folder PATH` | Add a watch folder |
-| `WatchDog.exe --remove-folder PATH` | Remove a watch folder |
+| `WatchDog.exe -api KEY` | 配置 API 密钥 |
+| `WatchDog.exe install` | 安装为 Windows 服务 |
+| `WatchDog.exe start` | 启动服务 |
+| `WatchDog.exe stop` | 停止服务 |
+| `WatchDog.exe debug` | 在控制台模式下运行（用于故障排查） |
+| `WatchDog.exe remove` | 卸载服务 |
+| `WatchDog.exe --version` | 显示当前版本 |
+| `WatchDog.exe --list-folders` | 列出已配置的监视文件夹 |
+| `WatchDog.exe --add-folder PATH` | 添加监视文件夹 |
+| `WatchDog.exe --remove-folder PATH` | 移除监视文件夹 |
 
 ---
 
-## Legacy: V1 Configuration (Deprecated)
+## 旧版：V1 配置（已弃用）
 
-The following V1 setup method using local config files is **deprecated**. Use the modern API-based setup above instead.
+以下使用本地配置文件的 V1 设置方式已**弃用**。请改用上文介绍的基于 API 的现代设置方式。
 
 <details>
-<summary>V1 Setup (click to expand)</summary>
+<summary>V1 设置（点击展开）</summary>
 
-### Configuring WatchDog in DocBits (V1)
+### 在 DocBits 中配置 WatchDog（V1）
 
-1. **Access WatchDog Settings**
-   * Navigate to **Settings → Document Processing → WatchDog**
-2. **Folder Settings**
-   * Define the paths: `C:/WatchDog/Read` and `C:/WatchDog/Processed`
+1. **访问 WatchDog 设置**
+   * 导航至**设置 → 文档处理 → WatchDog**
+2. **文件夹设置**
+   * 定义路径：`C:/WatchDog/Read` 和 `C:/WatchDog/Processed`
 
-   <figure><img src="../../../.gitbook/assets/watchdog_folder_settings.png" alt="WatchDog Folder Settings"><figcaption></figcaption></figure>
+   <figure><img src="../../../.gitbook/assets/watchdog_folder_settings.png" alt="WatchDog 文件夹设置"><figcaption></figcaption></figure>
 
-3. **General Settings**
-   * Select document types, configure export destination
+3. **常规设置**
+   * 选择文档类型，配置导出目标位置
 
-   <figure><img src="../../../.gitbook/assets/watchdog_general_settings_doctypes.png" alt="WatchDog General Settings"><figcaption></figcaption></figure>
+   <figure><img src="../../../.gitbook/assets/watchdog_general_settings_doctypes.png" alt="WatchDog 常规设置"><figcaption></figcaption></figure>
 
-4. **Export Configurations**
-   * Shows configured exports for on-premise processing
+4. **导出配置**
+   * 显示为本地部署处理配置的导出项
 
-   <figure><img src="../../../.gitbook/assets/watchdog_export_configurations_list.png" alt="WatchDog Export Configurations"><figcaption></figcaption></figure>
+   <figure><img src="../../../.gitbook/assets/watchdog_export_configurations_list.png" alt="WatchDog 导出配置"><figcaption></figcaption></figure>
 
-5. **Download Configuration**
-   * Download `watchdog-config.json` and place in `C:\WatchDog\`
+5. **下载配置**
+   * 下载 `watchdog-config.json` 并将其放在 `C:\WatchDog\` 中
 
-   <figure><img src="../../../.gitbook/assets/watchdog_download_configuration.png" alt="Download Configuration"><figcaption></figcaption></figure>
+   <figure><img src="../../../.gitbook/assets/watchdog_download_configuration.png" alt="下载配置"><figcaption></figcaption></figure>
 
 </details>

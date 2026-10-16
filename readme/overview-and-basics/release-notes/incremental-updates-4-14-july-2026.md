@@ -1,218 +1,103 @@
-# DocBits Release Notes — 4–14 July 2026
+# DocBits 发布说明 — 2026 年 7 月 4–14 日
 
-_A rundown of what changed for you in this DocBits release. Every service below
-lists the version now rolling out, followed by what's new or fixed in plain
-language — no ticket numbers, no engineering jargon. Services not listed had no
-customer-facing changes in this window._
+_以下概述了本次 DocBits 发布为您带来的变化。每项服务下方先列出当前正在推出的版本，随后用通俗语言说明新增或修复的内容，不含工单编号或工程术语。本时间段内未列出的服务没有面向客户的变化。_
 
 ---
 
-## Highlights
+## 重点更新
 
-- **Multi-organisation login.** Users who belong to several organisations now
-  get a proper organisation picker at login, an organisation switcher in the
-  header, and a default-organisation setting. Sessions are securely bound to
-  one organisation at a time, and the app automatically follows the region of
-  the active organisation. Logging in against the wrong region now retries the
-  correct one automatically instead of failing.
-- **Release channels (frozen / latest).** Organisations can now be pinned to a
-  stable ("frozen") release while others receive the latest updates — enabling
-  controlled rollouts. The Service Versions dialog shows a new *Release*
-  column, and administrators manage the channel from Company Information.
-  Several services show larger version jumps in this window purely because of
-  the new channel version numbering — those jumps carry no functional change.
-- **Configurable rules engines.** Three new rule systems arrive in the API
-  (each off by default, enabled per organisation): **validation rules** that
-  check extracted values and flag failures directly on the document,
-  **transformation rules** that clean up or rewrite extracted field and table
-  values automatically, and **rule-based layout selection** that picks the
-  right document layout by rules instead of by where the document came from.
-- **E-mail import transparency.** The e-mail import log now shows one
-  expandable row per attachment, tells you which documents were created (with
-  buttons that jump straight to them on the dashboard), flags skipped and
-  split items, and lets you download the original e-mail as an `.eml` file.
-- **AI table extraction.** A new structured AI extraction mode for tables,
-  with a "Use AI" checkbox per table and per column in Document Type settings.
-- **Web App stability.** Fixed an infinite reload loop after an expired
-  session, fixed the broken Layout Builder, and extraction tables now have a
-  draggable height resizer.
-- **New: Auth Bridge Service.** A new service keeps login data continuously in
-  sync between the EU and US regions, with self-healing and monitoring built
-  in.
+- **多组织登录。** 属于多个组织的用户现在可以在登录时通过组织选择器选择组织，也可以使用页眉中的组织切换器，并设置默认组织。会话一次只与一个组织安全绑定，应用会自动使用当前组织所在的区域。如果在错误的区域登录，系统现在会自动重试正确的区域，而不是直接失败。
+- **发布渠道（冻结版 / 最新版）。** 现在可以将组织固定到稳定的“冻结版”发布渠道，同时让其他组织接收最新更新，从而实现受控发布。服务版本对话框新增了 *Release* 列，管理员可以在 Company Information 中管理发布渠道。本时间段内部分服务的版本号增幅较大，纯粹是因为启用了新的渠道版本编号方式，这些版本号变化不代表功能变化。
+- **可配置的规则引擎。** API 新增了三种规则系统（默认均关闭，可按组织启用）：**验证规则**用于检查提取的值，并直接在文档上标记失败项；**转换规则**用于自动清理或改写提取的字段值和表格值；**基于规则的布局选择**则根据规则选择合适的文档布局，而不再依据文档来源进行选择。
+- **电子邮件导入更透明。** 电子邮件导入日志现在会为每个附件显示一条可展开的记录，告知您创建了哪些文档（并提供可直接跳转到文档的按钮），标记已跳过和已拆分的项目，还允许您下载原始电子邮件的 `.eml` 文件。
+- **AI 表格提取。** 新增结构化 AI 表格提取模式，可在“文档类型”设置中为每个表格和每列勾选“Use AI”。
+- **Web App 稳定性。** 修复了会话过期后无限重新加载的问题和无法使用的布局构建器，并为提取表格新增可拖动的高度调节柄。
+- **新增：Auth Bridge Service。** 新服务可持续同步 EU 和 US 区域之间的登录数据，并内置自我修复和监控功能。
 
 ---
 
-## API Service — live: `12.57.8`
+## API Service — 当前版本：`12.57.8`
 
-- **Validation rules (new, per organisation):** an administrator-configurable
-  rules engine checks extracted values (totals, required fields, and more) and
-  marks failures directly on the document, including which rule fired. Rules
-  can be tested in a dry run before enabling, can be switched on per document
-  type, and ship with a starter catalogue of default rules (all disabled until
-  you opt in).
-- **Transformation rules (new, per organisation):** automatically clean up or
-  rewrite extracted field and table values during processing — configurable
-  per document type or for the whole organisation.
-- **Rule-based layout selection (new):** document layouts can now be chosen by
-  configurable rules instead of being tied to the document's origin. Existing
-  origin-based behaviour is migrated automatically, layout templates can be
-  renamed, and duplicate layout titles are prevented.
-- **Faster dashboard exports:** exports triggered from the dashboard are now
-  dispatched to a dedicated worker instead of waiting for a polling cycle, so
-  they start promptly.
-- **Duplicate Detection export block fixed:** the export block for suspected
-  duplicates works again.
-- **Settings that wouldn't stick:** fixed saved preferences occasionally not
-  persisting when an older deleted copy of the same setting existed.
-- **Documents with unusual characters:** fixed save errors caused by invisible
-  NUL characters in extracted data.
-- **Correct "Updated by":** documents uploaded automatically as e-documents no
-  longer show a system user as the last editor — the field stays empty until a
-  person actually edits.
-- **Scanned PDFs with a good text layer:** a new option lets DocBits trust the
-  text already embedded in a scanned page instead of re-running OCR — faster
-  and often more accurate.
-- **E-invoices:** more robust detection of embedded XML when the original file
-  needs to be re-checked.
-- **Tasks:** new organisation toggle that lets non-administrators use the
-  "All" filter in the task list.
-- **Line-item matching:** fuzzy-matching behaviour is now configurable per
-  line.
-- **Stability:** WebSocket connections close cleanly on errors instead of
-  raising server exceptions; permission-cache synchronisation verifies and
-  repairs itself; the service version is now visible on the health endpoint.
+- **验证规则（新增，按组织配置）：** 管理员可配置规则引擎，用于检查提取的值（如总额、必填字段等），并直接在文档上标记失败项，包括触发的规则。启用前可先进行试运行；规则可按文档类型启用；系统还提供一组默认规则作为起点（在您主动启用前均处于关闭状态）。
+- **转换规则（新增，按组织配置）：** 在处理期间自动清理或改写提取的字段值和表格值，可按文档类型配置，也可应用于整个组织。
+- **基于规则的布局选择（新增）：** 现在可以通过可配置的规则选择文档布局，而不再将布局与文档来源绑定。现有的基于来源的行为会自动迁移；布局模板可以重命名，并且不允许布局标题重复。
+- **加快仪表板导出：** 从仪表板触发的导出现在会分派给专用工作进程，而不必等待轮询周期，因此可以更快开始。
+- **修复重复项检测导出块：** 用于疑似重复项的导出块现已恢复正常。
+- **设置无法保存的问题：** 修复了在存在同一设置较早的已删除副本时，已保存的偏好设置偶尔无法持久保存的问题。
+- **包含特殊字符的文档：** 修复了提取数据中含有不可见 NUL 字符时导致的保存错误。
+- **“Updated by” 信息正确：** 自动上传为电子文档的文档不再将系统用户显示为最后编辑者；只有在人员实际编辑后，该字段才会显示内容。
+- **包含有效文本层的扫描 PDF：** 新增选项，允许 DocBits 使用扫描页面中已有的嵌入文本，而不重新运行 OCR，从而提升速度，并且通常能提高准确度。
+- **电子发票：** 当原始文件需要重新检查时，系统现在可以更可靠地检测其中嵌入的 XML。
+- **任务：** 新增组织级开关，允许非管理员在任务列表中使用“All”筛选器。
+- **行项目匹配：** 现在可以按行配置模糊匹配行为。
+- **稳定性：** WebSocket 连接遇到错误时会正常关闭，不再引发服务器异常；权限缓存同步会验证并自动修复自身；健康检查端点现在会显示服务版本。
 
-## Auth Service — live: `1.71.1`
+## Auth Service — 当前版本：`1.71.1`
 
-- **Multi-organisation login:** login now asks which organisation to enter
-  when a user belongs to several, sessions are bound to that organisation,
-  and new endpoints support selecting, switching, and setting a default
-  organisation. Duplicate or conflicting organisation memberships were cleaned
-  up and are now prevented at the database level, with faster membership
-  lookups.
-- **Default organisation fixes:** logging in auto-selects your default
-  organisation (not an arbitrary one), and changing the default takes effect
-  immediately instead of showing stale profile data.
-- **Logout fixed:** resolved a server error (HTTP 500) on logout and restored
-  the token-revocation endpoint.
-- **Token safety:** token verification and caching now respect the
-  organisation a token was issued for, and token revocation is centralised.
-- **Release channels:** the organisation's release channel is stored here,
-  manageable by org administrators, and exposed to the app and routing layer.
+- **多组织登录：** 如果用户属于多个组织，登录时会询问要进入哪个组织；会话会与该组织绑定；新增端点支持选择、切换组织和设置默认组织。重复或冲突的组织成员关系已清理，并在数据库层面加以防止；成员关系查询也更快了。
+- **默认组织修复：** 登录时会自动选择您设置的默认组织，而不是任意组织；更改默认组织后会立即生效，不再显示过时的个人资料数据。
+- **修复登出问题：** 修复了登出时的服务器错误（HTTP 500），并恢复了令牌撤销端点。
+- **令牌安全：** 令牌验证和缓存现在会遵循令牌签发时所属的组织；令牌撤销也已集中处理。
+- **发布渠道：** 组织的发布渠道信息存储在此服务中，可由组织管理员管理，并提供给应用和路由层使用。
 
-## Auth Bridge Service — live: `0.2.4.2` _(new service)_
+## Auth Bridge Service — 当前版本：`0.2.4.2` _(新服务)_
 
-- **What it is:** a new service that continuously replicates authentication
-  data between the EU and US regions, so accounts and logins stay consistent
-  across regions.
-- **Self-healing:** it detects and repairs data drift between regions —
-  including making sure deletions propagate — and recovers automatically from
-  connection loss instead of dropping data.
-- **Safety and monitoring:** an earlier bidirectional replication loop was
-  stopped and is now actively detected and gated; error tracking and alerting
-  are wired in; and the service reports its version in the Service Versions
-  dialog.
+- **服务用途：** 新服务可在 EU 和 US 区域之间持续复制身份验证数据，确保账户和登录信息在各区域保持一致。
+- **自我修复：** 服务可以检测并修复区域间的数据偏差，包括确保删除操作能同步传播；连接中断后也能自动恢复，而不会丢失数据。
+- **安全与监控：** 之前出现的双向复制循环已停止，现在会受到主动检测和拦截；错误跟踪和告警机制已接入；服务版本也会显示在“服务版本”对话框中。
 
-## Docflow Service — live: `2.6.1`
+## Docflow Service — 当前版本：`2.6.1`
 
-- **Workflow cards accept empty values:** checkbox and partner cards no longer
-  fail when a field is legitimately empty; card type checks are stricter and
-  more predictable.
-- **Workflows re-run on real changes:** the workflow lock again respects the
-  document status from the trigger, and now also tracks the document version —
-  so a document whose data genuinely changed can go through the workflow again
-  even with the same status, while true duplicates stay blocked.
-- **Bigger advanced workflows:** the limit on workflow nodes was raised and is
-  now configurable per environment.
-- **Alternate export:** workflow-triggered alternate exports are now labelled
-  as such so downstream systems can distinguish them.
-- **Resilience:** the service reconnects automatically when a database
-  connection is dropped mid-use, tolerates a slower message broker instead of
-  failing, and failed API requests are now logged with full context and
-  traceable execution IDs.
+- **工作流卡片接受空值：** 复选框卡片和合作伙伴卡片在字段确实为空时不再报错；卡片类型检查也更加严格、可预测。
+- **数据确有变化时重新运行工作流：** 工作流锁现在会再次遵循触发时的文档状态，同时也会跟踪文档版本。因此，即使文档状态相同，只要文档数据确实发生变化，文档就可以再次进入工作流；真正的重复项仍会被拦截。
+- **支持更大的高级工作流：** 工作流节点数量上限已提高，现在还可以按环境配置。
+- **备用导出：** 由工作流触发的备用导出现在会标注为备用导出，方便下游系统识别。
+- **弹性：** 数据库连接在使用过程中断开时，服务会自动重新连接；服务可以容忍消息代理响应变慢，而不再直接失败；API 请求失败时现在会记录完整上下文和可追踪的执行 ID。
 
-## Email Service — live: `1.38.4`
+## Email Service — 当前版本：`1.38.4`
 
-- **Import log, rebuilt for traceability:** every imported e-mail now records
-  which documents were created from it, with per-attachment detail rows.
-- **Original e-mail download:** the original message can be downloaded as an
-  `.eml` file straight from the import log.
-- **Attachment recovery:** the corruption-recovery path now also handles
-  plain-text messages, so more damaged inbound e-mails are recovered instead
-  of skipped.
+- **重建导入日志，提升可追溯性：** 现在会为每封导入的电子邮件记录由其创建的文档，并为每个附件提供详细记录。
+- **下载原始电子邮件：** 可以直接从导入日志下载原始邮件的 `.eml` 文件。
+- **附件恢复：** 损坏恢复流程现在也能处理纯文本邮件，因此更多受损的入站邮件可以恢复，而不会被跳过。
 
-## Extraction Service — live: `1.51.6`
+## Extraction Service — 当前版本：`1.51.6`
 
-- **Tax/net no longer swapped:** fixed a case on US documents where the tax
-  amount could be assigned as larger than the net amount when several
-  candidate pairs were found.
-- **Multiple tax rates per supplier:** extraction now handles suppliers whose
-  invoices carry different tax rates on one document.
-- **AI table extraction (new, opt-in):** structured AI extraction endpoints
-  for tables, activated per organisation via feature flag.
-- **Faster AI calls:** tuned the AI model configuration used during extraction
-  to avoid unnecessary processing time.
-- **Crash fix:** resolved an error on documents that produced an empty
-  candidate list during extraction.
+- **税额与净额不再互换：** 修复了美国文档中的一种情况：找到多个候选金额对时，税额可能被分配为大于净额。
+- **每个供应商支持多种税率：** 现在可以处理同一供应商发票在一份文档中包含不同税率的情况。
+- **AI 表格提取（新增，可选启用）：** 新增结构化 AI 表格提取端点，可通过功能标志按组织启用。
+- **加快 AI 调用：** 调整了提取过程中使用的 AI 模型配置，避免不必要的处理时间。
+- **修复崩溃问题：** 修复了提取过程中候选列表为空时在某些文档上发生的错误。
 
-## Fulltext Service — live: `1.37.2`
+## Fulltext Service — 当前版本：`1.37.2`
 
-- **Search index migrations repaired:** restored migration definitions that
-  had drifted, keeping search index upgrades reliable.
-- Internal routing work for the new release-channel infrastructure.
+- **修复搜索索引迁移：** 恢复了已发生偏差的迁移定义，确保搜索索引升级可靠。
+- 为新的发布渠道基础设施进行内部路由调整。
 
-## PO Match Service — live: `1.58.2`
+## PO Match Service — 当前版本：`1.58.2`
 
-- **More tolerant matching:** PO matching no longer fails on unusual data —
-  non-text item numbers, missing quantities, and non-text amount values are
-  now handled gracefully instead of erroring.
+- **提高匹配容错能力：** PO 匹配现在可以处理异常数据，不再因此失败；非文本行项目编号、缺失数量和非文本金额值现在都能妥善处理，不会引发错误。
 
-## Web App — live: `10.41.8`
+## Web App — 当前版本：`10.41.8`
 
-- **Multi-organisation experience:** new organisation picker page at login,
-  a dedicated organisation-switcher icon in the header, default-organisation
-  settings, and the app follows the region of your active organisation.
-  Logging in against the wrong region silently retries the correct region and
-  routes you to the organisation picker when needed.
-- **No more endless reloads:** fixed an infinite reload loop that could occur
-  when the server rejected a stored session token — the app now forces a real
-  token refresh instead of reloading forever.
-- **Layout Builder fixed:** the Layout Builder works again, and layout
-  selection is decoupled from the document's origin (matching the new
-  rule-based selection in the API).
-- **Extraction tables:** line-item tables now have a draggable resize handle
-  so you can give the table more room while validating.
-- **E-mail import log:** new skipped status and split badges, expandable
-  per-attachment rows, original-e-mail download, and document-ID buttons that
-  jump straight to the dashboard filtered to that document.
-- **Dashboard search:** the query-value dropdown now shows the localized label
-  for list-of-values fields, and the search help examples were reworked.
-- **Settings reliability:** user preferences now load reliably when signing in
-  via SSO, and the save confirmation is only shown when the save actually
-  succeeded.
-- **Tasks:** the "All" filter can be restored for non-administrators via a new
-  organisation toggle.
-- **Watchdog logs:** no longer capped at 10,000 entries, plus general
-  usability improvements.
-- **Support tickets:** the support form pre-fills your e-mail address from
-  your profile.
-- **Document Type settings:** new "Use AI" checkbox on tables and columns to
-  control AI-assisted table extraction.
-- **Service Versions dialog:** new *Release* column showing each service's
-  channel (frozen/latest), routed so it stays fast for pinned organisations.
-- **Field Validation:** fixed an error when returning to Field Validation from
-  another screen, and the "Scripts" button no longer routes to a 404 page.
+- **多组织体验：** 登录时新增组织选择页面；页眉中新增专用的组织切换图标；可设置默认组织；应用会自动使用当前组织所在的区域。如果在错误的区域登录，系统会静默重试正确的区域，并在需要时将您带到组织选择页面。
+- **告别无限重新加载：** 修复了服务器拒绝已存储的会话令牌时可能发生的无限重新加载问题。应用现在会强制刷新令牌，而不是无限重新加载。
+- **修复布局构建器：** 布局构建器现已恢复正常；布局选择也不再依赖文档来源，与 API 中新增的基于规则的选择方式保持一致。
+- **提取表格：** 行项目表格现在带有可拖动的大小调节柄，方便您在验证时为表格腾出更多空间。
+- **电子邮件导入日志：** 新增已跳过状态和已拆分标记、可展开的附件记录、原始邮件下载功能，以及文档 ID 按钮；点击按钮可直接打开仪表板并筛选到对应文档。
+- **仪表板搜索：** 查询值下拉菜单现在会显示值列表字段的本地化标签，搜索帮助示例也已重新整理。
+- **提高设置可靠性：** 通过 SSO 登录时，现在可以可靠地加载用户偏好设置；只有保存成功时才会显示保存确认信息。
+- **任务：** 通过新增的组织级开关，可以为非管理员恢复“All”筛选器。
+- **Watchdog 日志：** 日志数量不再受 10,000 条上限限制，并改进了一般可用性。
+- **支持工单：** 支持表单现在会从您的个人资料中预填电子邮件地址。
+- **文档类型设置：** 表格和列新增“Use AI”复选框，用于控制 AI 辅助的表格提取。
+- **服务版本对话框：** 新增 *Release* 列，显示每项服务的发布渠道（冻结版 / 最新版）；路由经过调整，可确保固定到某个渠道的组织仍能快速访问。
+- **字段验证：** 修复了从其他屏幕返回字段验证时发生的错误；“Scripts”按钮也不再跳转到 404 页面。
 
 ---
 
-## Version renumbering only (no functional changes)
+## 仅重新编号版本（无功能变化）
 
-**Auto Accounting** (`1.20.1`), **Barcode Service** (`1.17.1`), **OCR
-Service** (`1.9.1`), **FTP Service** (`1.31.1`), **Operator Service**
-(`1.40.2`), and **Ideas Service** (`0.3.1`) were re-versioned as part of the
-new release-channel infrastructure. Their larger-looking version jumps carry
-no feature or behaviour changes in this window. **Docnet Service** (`1.54.6`)
-is unchanged since 19 June.
+**Auto Accounting**（`1.20.1`）、**Barcode Service**（`1.17.1`）、**OCR Service**（`1.9.1`）、**FTP Service**（`1.31.1`）、**Operator Service**（`1.40.2`）和 **Ideas Service**（`0.3.1`）已作为新发布渠道基础设施的一部分重新编号。在本时间段内，这些版本号看起来增幅较大，但没有带来功能或行为变化。自 6 月 19 日以来，**Docnet Service**（`1.54.6`）没有变化。
 
 <!-- Generated by the docbits-changelog skill (version-boundary mode: exact
      git ranges between the ALT (2026-07-03/04) and NEU (2026-07-09..14)

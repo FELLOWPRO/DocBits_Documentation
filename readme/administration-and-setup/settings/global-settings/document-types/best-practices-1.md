@@ -1,28 +1,26 @@
-# Best Practices
+# 最佳实践
 
-## Here are some best practices for organizing document types and subtypes:
+## 以下是组织文档类型和子类型的一些最佳实践：
 
-* Use naming conventions: Use consistent and meaningful naming conventions for your document types and subtypes. This makes it easier for users and administrators to navigate and identify the different types.
-* Use subtypes only when necessary: Create a subtype only when it is necessary to manage variations within a main document type. If the differences between the documents are minimal, it may be more efficient to treat them as separate instances of the main type.
-* Logically divide documents: Subtypes should be used to create logical groupings of documents that have similar processing requirements. This can make organization and management easier by grouping similar documents together.
-* Regularly review and clean up: Regularly review your document types and subtypes to ensure they are up to date and meet your organization's needs. Remove types or subtypes that are no longer needed to optimize system performance and improve the user experience.
-* Create documentation policies: Create clear documentation policies for the use of document types and subtypes in your organization. This can include guidance on creating new types, assigning permissions, and using metadata.
-* Train users: Regularly train your users on the use of document types and subtypes, including proven methods and best practices. This helps increase efficiency and reduce errors.
+* 使用命名规范：为文档类型和子类型采用一致且有意义的命名规范。这有助于用户和管理员浏览并识别不同的类型。
+* 仅在必要时使用子类型：只有在需要管理某个主要文档类型的不同变体时，才创建子类型。如果文档之间的差异很小，将它们作为主要类型的独立实例处理可能更高效。
+* 按逻辑划分文档：使用子类型将处理要求相似的文档归为一组。将相似文档放在一起，可以让组织和管理更加轻松。
+* 定期检查并清理：定期检查文档类型和子类型，确保它们保持最新并满足组织需求。删除不再需要的类型或子类型，以优化系统性能并改善用户体验。
+* 制定文档管理政策：为组织中使用文档类型和子类型制定明确的管理政策。政策可以包括创建新类型、分配权限以及使用元数据的指导。
+* 培训用户：定期培训用户如何使用文档类型和子类型，包括有效的方法和最佳实践。这有助于提高效率并减少错误。
 
-By following these best practices, you can effectively organize and manage your document types and subtypes, resulting in better use of your document management system.
-
-
-
-## Troubleshooting
-
-Here are some troubleshooting tips for managing sub-types:
-
-* Resolve conflicts between similar subtypes: Check for conflicts between similar subtypes that could cause confusion. Make sure that the differences between subtypes are clearly defined and that they are different in their usage. If necessary, adjust configurations to resolve conflicts.
-* Resolve script execution errors: Check scripts configured to run when creating or editing subtypes for errors or inconsistencies. Check the syntax and logic of the scripts to make sure they work correctly. Test the scripts in a development environment to identify and fix problems before applying them to the production environment.
-* Ensure configuration consistency: Make sure that configurations for subtypes are consistent and do not have inconsistencies or contradictions. Check fields, layouts, permissions, and other settings to make sure they are configured correctly and meet the requirements of the subtypes.
-* Implement logging and auditing: Implement logging and auditing capabilities to identify and resolve subtype management errors and issues. Monitor subtype changes and track logs to identify and resolve potential issues early.
-* Provide user training and support: Provide training and support to users tasked with subtype management. Ensure they have the knowledge and skills required to effectively configure and manage subtypes. Provide support for any issues or questions that arise.
-
-By applying these troubleshooting tips, you can identify and resolve subtype management issues to ensure the efficiency and effectiveness of your document management system.
+遵循这些最佳实践，可以有效地组织和管理文档类型及子类型，从而更好地利用文档管理系统。
 
 
+
+## 故障排除
+
+以下是管理子类型的一些故障排除建议：
+
+* 解决相似子类型之间的冲突：检查相似子类型之间是否存在可能导致混淆的冲突。确保明确界定子类型之间的差异，并确保它们的用途各不相同。如有必要，请调整配置以解决冲突。
+* 解决脚本执行错误：检查配置为在创建或编辑子类型时运行的脚本，查看是否存在错误或不一致。检查脚本的语法和逻辑，确保其正常运行。在开发环境中测试脚本，以便在应用到生产环境前发现并修复问题。
+* 确保配置一致：确保子类型的配置一致，且不存在不一致或相互矛盾的情况。检查字段、布局、权限及其他设置，确保配置正确并满足子类型的要求。
+* 实施日志记录和审计：实施日志记录和审计功能，以识别并解决子类型管理中的错误和问题。监控子类型变更并跟踪日志，以便及早识别和解决潜在问题。
+* 提供用户培训和支持：为负责管理子类型的用户提供培训和支持。确保他们具备有效配置和管理子类型所需的知识和技能。针对出现的任何问题或疑问提供支持。
+
+应用这些故障排除建议，可以识别并解决子类型管理问题，确保文档管理系统高效、有效地运行。

@@ -1,55 +1,55 @@
-# Fulltext Search Settings
+# 全文搜索设置
 
-<figure><img src="../../../.gitbook/assets/fulltext_search_settings.png" alt="Fulltext Search Settings in the sandbox, with a dialog explaining that the module is required and buttons for Go to Modules and Enable Now"><figcaption><p>When Fulltext Search is disabled, this dialog explains the next steps.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/fulltext_search_settings.png" alt="沙盒环境中的全文搜索设置，显示一个说明需要启用该模块的对话框，以及“前往模块”和“立即启用”按钮"><figcaption><p>全文搜索处于禁用状态时，此对话框会说明后续步骤。</p></figcaption></figure>
 
-Fulltext Search Settings configures what DocBits indexes and how it makes that content searchable across documents, ERP master data, and templates. The settings page displays a requirement dialog until the **Fulltext Search module** is enabled — see [Fulltext Search](../document-processing/module/fulltext-search.md) for the user-facing query language.
+全文搜索设置用于配置 DocBits 要索引的内容，以及如何让用户在文档、ERP 主数据和模板中搜索这些内容。启用 **全文搜索模块**之前，设置页面会显示模块要求对话框。如需了解面向用户的查询语言，请参阅[全文搜索](../document-processing/module/fulltext-search.md)。
 
-## Prerequisites
+## 前提条件
 
-The Fulltext Search module must be activated in **Settings → Module → Dashboards & Analytics → Full text search**. If the module is not enabled, the dialog offers three actions:
+必须在 **设置 → 模块 → 仪表板与分析 → 全文搜索**中激活全文搜索模块。如果未启用该模块，对话框会提供以下三个操作：
 
-* **Help (?)** — Open the Fulltext Search documentation in a new tab before changing any setting.
-* **Go to Modules** — Open the Dashboards & Analytics module settings to review the configuration.
-* **Enable Now** — Open the subscription dialog. Review and confirm that dialog before the module is enabled; clicking this button alone does not enable it.
+* **帮助 (?)** — 在新标签页中打开全文搜索文档，然后再更改任何设置。
+* **前往模块** — 打开仪表板与分析模块设置，以查看配置。
+* **立即启用** — 打开订阅对话框。启用模块前，请查看并确认该对话框；仅点击此按钮并不会启用模块。
 
-The settings page itself becomes available once the module is active.
+模块激活后，即可使用设置页面。
 
-## Page layout
+## 页面布局
 
-The settings page is organised into three tabs, each scoping a different content type that Fulltext Search can index.
+设置页面分为三个标签页，每个标签页对应全文搜索可索引的一种内容类型。
 
-### Documents tab
+### 文档标签页
 
-The Documents tab covers everything related to indexing processed documents:
+“文档”标签页包含与已处理文档索引相关的所有设置：
 
-* **Indexing statistics** — totals for documents indexed and pending, refreshed on demand.
-* **Vector preferences** — three organisation-level toggles that control whether vector indexing runs alongside the text index for documents. Vector indexing powers the `vector:` query mode and the "Find Similar" feature.
-* **Reindex actions** — start a full or incremental reindex. While a reindex runs, you see live progress (documents per minute, ETA), the current stream status, and the last failure (if any).
-* **Sync diagnostics** — on-demand diagnostics for cases when the index appears out of sync with the underlying document store.
+* **索引统计信息** — 已索引和待索引的文档总数，可按需刷新。
+* **向量偏好设置** — 三个组织级开关，用于控制文档是否在文本索引之外同时进行向量索引。向量索引用于支持 `vector:` 查询模式和“查找相似项”功能。
+* **重新索引操作** — 启动完整或增量重新索引。重新索引期间，可以实时查看进度（每分钟处理的文档数、预计剩余时间）、当前流状态以及最近一次失败情况（如有）。
+* **同步诊断** — 按需运行诊断，用于排查索引与底层文档存储似乎不同步的情况。
 
-<mark>Reindexing is non-destructive — existing search continues to work while the new index is being rebuilt.</mark>
+<mark>重新索引不会造成破坏——重建新索引期间，现有搜索仍可正常使用。</mark>
 
-### ERP tab
+### ERP 标签页
 
-The ERP tab controls indexing for ERP master data — suppliers, customers, items, and similar entities. Each entity has its own toggle:
+“ERP”标签页用于控制 ERP 主数据的索引，包括供应商、客户、物料及类似实体。每个实体都有自己的开关：
 
-* **Indexing** — text-index the entity so it is searchable from the dashboard.
-* **Vector** — vector-index the entity so it can be matched by semantic queries.
+* **索引** — 为该实体建立文本索引，使其可在仪表板中搜索。
+* **向量** — 为该实体建立向量索引，使其可通过语义查询进行匹配。
 
-Use the **Toggle all** action at the top of the list to apply the same on/off state to every entity at once. Indexing kicks off in the background; an indicator on each row shows when it is in progress.
+使用列表顶部的 **全部切换**操作，一次性为所有实体应用相同的开启或关闭状态。索引会在后台启动；每一行上的指示标记会显示索引是否正在进行。
 
-### Templates tab
+### 模板标签页
 
-The Templates tab lists the template versions known to the Fulltext index. Use this view to confirm that the template versions you depend on are present in the index after a redeploy.
+“模板”标签页会列出全文索引已知的模板版本。重新部署后，可通过此视图确认所依赖的模板版本是否已包含在索引中。
 
-## What gets indexed
+## 索引内容
 
-Once enabled and configured, Fulltext Search lets users:
+启用并完成配置后，全文搜索可让用户：
 
-* Search across all document content (not just metadata fields).
-* Find documents by text contained within uploaded files.
-* Use advanced search operators for precise queries.
-* Access search results directly from the dashboard.
-* Use semantic search (`vector:` prefix) when vector indexing is on for that content type.
+* 搜索所有文档内容，而不只是元数据字段。
+* 根据上传文件中的文本查找文档。
+* 使用高级搜索运算符执行精确查询。
+* 直接从仪表板访问搜索结果。
+* 在相应内容类型启用向量索引后，使用语义搜索（`vector:`前缀）。
 
-See the [Fulltext Search](../document-processing/module/fulltext-search.md) module page for the complete query language reference, including range queries, smart filters, and the AI search mode.
+有关完整查询语言参考（包括范围查询、智能筛选器和 AI 搜索模式），请参阅[全文搜索](../document-processing/module/fulltext-search.md)模块页面。

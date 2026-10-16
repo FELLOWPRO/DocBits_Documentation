@@ -1,33 +1,33 @@
 ---
-description: ZUGFERD 1.0 EXTENDED electronic document support in DocBits
+description: DocBits 对 ZUGFERD 1.0 EXTENDED 电子文档的支持
 ---
 
 # 🇩🇪 ZUGFERD 1.0 EXTENDED
 
-| Property             | Value                         |
+| 属性                 | 值                            |
 | -------------------- | ----------------------------- |
-| **Country / Region** | Germany                       |
-| **Document Types**   | Invoice, Credit Note          |
-| **Format**           | CII (PDF/A-3 embedded)        |
-| **Standard**         | ZUGFeRD 1.0, Extended profile |
-| **Based On**         | ZUGFeRD 1.0 specification     |
+| **国家 / 地区**      | 德国                          |
+| **文档类型**         | 发票、贷项通知单                |
+| **格式**             | CII（嵌入 PDF/A-3）            |
+| **标准**             | ZUGFeRD 1.0，Extended 配置文件  |
+| **基于**             | ZUGFeRD 1.0 规范                |
 
-The Extended profile of ZUGFeRD 1.0 is the most comprehensive profile, supporting additional business scenarios such as trade accounting, factoring, and detailed logistics information. It includes all fields from Basic and Comfort plus industry-specific extensions.
+ZUGFeRD 1.0 的 Extended 配置文件是最全面的配置文件，支持贸易会计、保理和详细物流信息等其他业务场景。它包含 Basic 和 Comfort 中的所有字段，以及行业特定扩展。
 
-## Support Status
+## 支持状态
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | ✅ Supported |
+| 组件               | 状态        |
+| ------------------ | ----------- |
+| 预览               | ✅ 支持      |
+| 字段提取           | ✅ 支持      |
+| 转换               | ✅ 支持      |
 
-## Default Preview
+## 默认预览
 
-<figure><img src="../../../../../../.gitbook/assets/zugferd-preview.png" alt="ZUGFeRD 1.0 Extended invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Germany ZUGFeRD 1.0 Extended invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/zugferd-preview.png" alt="DocBits 中 ZUGFeRD 1.0 Extended 发票的预览"><figcaption><p>德国 ZUGFeRD 1.0 Extended 发票的默认 DocBits 预览</p></figcaption></figure>
 
-## Related
+## 相关内容
 
-* [ZUGFeRD Configuration](../zugferd/)
-* [ZUGFeRD Field Mapping](../zugferd/versions/)
-* [Supported Electronic Documents](./)
+* [ZUGFeRD 配置](../zugferd/)
+* [ZUGFeRD 字段映射](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/README.md)
+* [支持的电子文档](./)

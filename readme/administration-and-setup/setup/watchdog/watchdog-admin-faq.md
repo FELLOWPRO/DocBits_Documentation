@@ -1,139 +1,139 @@
-# WatchDog Admin FAQ & Troubleshooting
+# WatchDog 管理员常见问题与故障排查
 
-<figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-infographic.svg" alt="WatchDog Troubleshooting Quick Reference"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-infographic.svg" alt="WatchDog 故障排查快速参考"><figcaption></figcaption></figure>
 
-This documentation helps administrators understand WatchDog error messages and troubleshoot issues.
+本文档帮助管理员了解 WatchDog 错误消息并排查问题。
 
-**UI Location:** Settings → Document Processing → WatchDog
-
----
-
-## 1. WatchDog Settings Pages (UI)
-
-### 1.1 General Tab
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="WatchDog General Tab"><figcaption></figcaption></figure>
-
-* **Download:** Get the latest WatchDog.exe
-* **API Key:** Copy the configuration command
-* **Auto-Update Schedule:** Configure update frequency
-* **Installation Guide:** Step-by-step setup instructions
-
-### 1.2 Configurations Tab
-
-* **Import Configurations:** Define watch folders and document types
-* **Export Configurations:** Define export destinations and methods
-* **Bulk Copy:** Copy configurations across sub-organisations
-* **Import/Export:** Import/export configs as JSON
-
-> **Important:** Export configurations now **require a document type** (`doc_type`). Configurations without a valid document type will be rejected.
-
-### 1.3 Status Tab
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_status.png" alt="WatchDog Service Status"><figcaption></figcaption></figure>
-
-* Shows real-time WatchDog connection status
-* **New fields:** `last_restart`, `version_first_seen`, `latest_version_checked_at`
-* **System info:** Installation path, free RAM, free disk space
-
-### 1.4 Logs Tab
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_05.png" alt="WatchDog Logs"><figcaption></figcaption></figure>
-
-* Shows all WatchDog events from OpenSearch
-* Filterable by event type, time period, etc.
-* **Event Types:**
-  * `FILE_IMPORT_STARTED`: File import started
-  * `FILE_IMPORT_COMPLETED`: Import successful
-  * `FILE_IMPORT_FAILED`: Import failed
-  * `EXPORT_STARTED`: Export started
-  * `EXPORT_COMPLETED`: Export successful
-  * `EXPORT_FAILED`: Export failed
-  * `FOLDER_VALIDATION_FAILED`: Folder not reachable
-  * `CONFIG_LOADED`: Configuration loaded
-  * `SERVICE_RESTART_INITIATED`: Service restart requested
-  * `SERVICE_RESTART_COMPLETED`: Service restarted
-
-### 1.5 XSLT Templates Tab
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_06.png" alt="XSLT Templates List"><figcaption></figcaption></figure>
-
-* Upload and manage XSLT transformation templates
-* Live validation with field analysis
-* Link templates to export configurations
+**UI 位置：** 设置 → 文档处理 → WatchDog
 
 ---
 
-## 2. Folder Validation Error Messages
+## 1. WatchDog 设置页面（UI）
 
-| Error | Meaning | Solution |
+### 1.1 常规选项卡
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="WatchDog 常规选项卡"><figcaption></figcaption></figure>
+
+* **下载：** 获取最新的 WatchDog.exe
+* **API Key：** 复制配置命令
+* **自动更新计划：** 配置更新频率
+* **安装指南：** 分步设置说明
+
+### 1.2 配置选项卡
+
+* **导入配置：** 定义监视文件夹和文档类型
+* **导出配置：** 定义导出目标位置和方法
+* **批量复制：** 在子组织之间复制配置
+* **导入/导出：** 以 JSON 格式导入/导出配置
+
+> **重要：** 导出配置现在**必须指定文档类型**（`doc_type`）。缺少有效文档类型的配置将被拒绝。
+
+### 1.3 状态选项卡
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_status.png" alt="WatchDog 服务状态"><figcaption></figcaption></figure>
+
+* 显示 WatchDog 的实时连接状态
+* **新增字段：** `last_restart`、`version_first_seen`、`latest_version_checked_at`
+* **系统信息：** 安装路径、可用 RAM、可用磁盘空间
+
+### 1.4 日志选项卡
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_05.png" alt="WatchDog 日志"><figcaption></figcaption></figure>
+
+* 显示来自 OpenSearch 的所有 WatchDog 事件
+* 可按事件类型、时间段等筛选
+* **事件类型：**
+  * `FILE_IMPORT_STARTED`：文件导入已开始
+  * `FILE_IMPORT_COMPLETED`：导入成功
+  * `FILE_IMPORT_FAILED`：导入失败
+  * `EXPORT_STARTED`：导出已开始
+  * `EXPORT_COMPLETED`：导出成功
+  * `EXPORT_FAILED`：导出失败
+  * `FOLDER_VALIDATION_FAILED`：文件夹无法访问
+  * `CONFIG_LOADED`：配置已加载
+  * `SERVICE_RESTART_INITIATED`：已请求重启服务
+  * `SERVICE_RESTART_COMPLETED`：服务已重启
+
+### 1.5 XSLT 模板选项卡
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_06.png" alt="XSLT 模板列表"><figcaption></figcaption></figure>
+
+* 上传和管理 XSLT 转换模板
+* 使用字段分析进行实时验证
+* 将模板关联到导出配置
+
+---
+
+## 2. 文件夹验证错误消息
+
+| 错误 | 含义 | 解决方案 |
 | :--- | :--- | :--- |
-| `not_found` | Folder does not exist | Create folder or correct path |
-| `no_read_access` | No read permission | Set permissions for WatchDog Service Account |
-| `no_write_access` | No write permission | Grant write rights to Service Account |
-| `not_configured` | Folder path not configured | Enter path in configuration |
+| `not_found` | 文件夹不存在 | 创建文件夹或更正路径 |
+| `no_read_access` | 没有读取权限 | 为 WatchDog 服务账户设置权限 |
+| `no_write_access` | 没有写入权限 | 向服务账户授予写入权限 |
+| `not_configured` | 未配置文件夹路径 | 在配置中输入路径 |
 
-**Affected Folders:**
+**受影响的文件夹：**
 
-* **Watch Folder (Import):** Where WatchDog looks for new files
-* **Success Folder:** Where successfully imported files are moved
-* **Export Folder:** Where exported XML/PDF files are written
+* **监视文件夹（导入）：** WatchDog 查找新文件的位置
+* **成功文件夹：** 成功导入的文件移至此处
+* **导出文件夹：** 写入导出的 XML/PDF 文件的位置
 
 ---
 
-## 3. Import Error Messages
+## 3. 导入错误消息
 
-| Error | Meaning | Solution |
+| 错误 | 含义 | 解决方案 |
 | :--- | :--- | :--- |
-| `file_not_found` | File was deleted before import | Provide file again |
-| `invalid_file_type` | Only PDF files are supported | Remove other file types |
-| `api_not_accessible` | DocBits API not reachable | Check network/firewall, verify API URL |
-| `api_check_failed` | API Health Check failed | Check API Key and connection |
-| `upload_failed` | Upload to API failed | Check API Key, network, server status |
+| `file_not_found` | 文件在导入前已被删除 | 重新提供文件 |
+| `invalid_file_type` | 仅支持 PDF 文件 | 移除其他文件类型 |
+| `api_not_accessible` | 无法访问 DocBits API | 检查网络/防火墙，并确认 API URL |
+| `api_check_failed` | API 健康检查失败 | 检查 API Key 和连接 |
+| `upload_failed` | 上传到 API 失败 | 检查 API Key、网络和服务器状态 |
 
 ---
 
-## 4. Export Error Messages
+## 4. 导出错误消息
 
-| Error | Meaning | Solution |
+| 错误 | 含义 | 解决方案 |
 | :--- | :--- | :--- |
-| `transformation_error` | XSLT Transformation failed | Check XSLT Template, validate XML structure |
-| `folder_error` | Export folder not reachable | Create folder, check permissions |
-| `file_write_error` | File could not be written | Check disk space, permissions, file locks |
-| `permission_denied` | No write permission | Set Service Account permissions |
-| `creation_failed` | Folder could not be created | Check parent folder permissions |
-| `no_config_match` | No matching export configuration | Create export config with correct document type |
+| `transformation_error` | XSLT 转换失败 | 检查 XSLT 模板并验证 XML 结构 |
+| `folder_error` | 无法访问导出文件夹 | 创建文件夹并检查权限 |
+| `file_write_error` | 无法写入文件 | 检查磁盘空间、权限和文件锁定状态 |
+| `permission_denied` | 没有写入权限 | 设置服务账户权限 |
+| `creation_failed` | 无法创建文件夹 | 检查父文件夹权限 |
+| `no_config_match` | 没有匹配的导出配置 | 创建文档类型正确的导出配置 |
 
-> **Note:** Export configurations require a `doc_type`. If you see `no_config_match`, verify that an active export configuration exists for the document's type.
+> **注意：** 导出配置必须指定 `doc_type`。如果看到 `no_config_match`，请确认存在适用于该文档类型的启用导出配置。
 
 ---
 
-## 5. Configuration Disabled — Reasons
+## 5. 配置已禁用 — 原因
 
-When a configuration is disabled, one of these reasons appears:
+配置被禁用时，会显示以下原因之一：
 
-| Disabled Reason | Meaning |
+| 禁用原因 | 含义 |
 | :--- | :--- |
-| `Watch folder: not_found` | Import folder does not exist |
-| `Watch folder: no_read_access` | Import folder not readable |
-| `Export folder: not_found` | Export folder does not exist |
-| `Export folder: no_write_access` | Export folder not writable |
-| `Success folder: not_found` | Success folder does not exist |
-| `Success folder: no_write_access` | Success folder not writable |
+| `Watch folder: not_found` | 导入文件夹不存在 |
+| `Watch folder: no_read_access` | 无法读取导入文件夹 |
+| `Export folder: not_found` | 导出文件夹不存在 |
+| `Export folder: no_write_access` | 无法写入导出文件夹 |
+| `Success folder: not_found` | 成功文件夹不存在 |
+| `Success folder: no_write_access` | 无法写入成功文件夹 |
 
-**Automatic Reactivation:** WatchDog checks folders regularly (every 60 seconds). As soon as the folder is reachable again, the configuration is automatically reactivated.
+**自动重新启用：** WatchDog 会定期检查文件夹（每 60 秒）。文件夹一旦重新可访问，配置就会自动重新启用。
 
 ---
 
-## 6. Error Folder (`_error`)
+## 6. 错误文件夹（`_error`）
 
-Failed files are moved to the `_error` folder:
+失败的文件会移至 `_error` 文件夹：
 
-**Location:** `{import_folder}/_error/{error_type}/`
+**位置：** `{import_folder}/_error/{error_type}/`
 
-**File Format:** `{original_name}_{YYYYMMDD_HHMMSS}.pdf`
+**文件格式：** `{original_name}_{YYYYMMDD_HHMMSS}.pdf`
 
-**Sidecar File:** Each failed file has a `.error` companion file with:
+**伴随文件：** 每个失败文件都有一个 `.error` 伴随文件，其中包含：
 
 ```
 Error Type: transformation_error
@@ -145,78 +145,78 @@ Original Path: C:\WatchDog\Import\invoice_001.pdf
 
 ---
 
-## 7. Heartbeat & Connection Status
+## 7. 心跳与连接状态
 
-WatchDog sends a heartbeat to DocBits every ~10 seconds with system information:
+WatchDog 每隔约 10 秒向 DocBits 发送一次心跳，并附带系统信息：
 
-| Data Sent | Description |
+| 发送的数据 | 说明 |
 | :--- | :--- |
-| Timestamp | Current time |
-| Version | Installed WatchDog version |
-| Last Restart | Last service restart time |
-| Auto-Update Enabled | Whether auto-update is active |
-| Latest Version | Newest available version |
-| Installation Path | Where WatchDog is installed |
-| Free RAM / Disk | Available system resources |
+| Timestamp | 当前时间 |
+| Version | 已安装的 WatchDog 版本 |
+| Last Restart | 上次重启服务的时间 |
+| Auto-Update Enabled | 是否启用了自动更新 |
+| Latest Version | 可用的最新版本 |
+| Installation Path | WatchDog 的安装位置 |
+| Free RAM / Disk | 可用系统资源 |
 
-### Connection Status
+### 连接状态
 
-| Status | Meaning |
+| 状态 | 含义 |
 | :--- | :--- |
-| ✅ **Online** | WatchDog is connected and active |
-| ⚠️ **Offline** | No heartbeat for 30+ seconds |
-| ❌ **Not Installed** | WatchDog has never connected |
+| ✅ **在线** | WatchDog 已连接并处于活动状态 |
+| ⚠️ **离线** | 超过 30 秒未收到心跳 |
+| ❌ **未安装** | WatchDog 从未连接过 |
 
-**Heartbeat Errors:**
+**心跳错误：**
 
-* `Heartbeat failed - invalid API key` → API Key is invalid
-* `Heartbeat failed: 401` → Authentication failed
-* `Heartbeat failed: 5xx` → Server problem
+* `Heartbeat failed - invalid API key` → API Key 无效
+* `Heartbeat failed: 401` → 身份验证失败
+* `Heartbeat failed: 5xx` → 服务器问题
 
 ---
 
-## 8. Common Problems & Solutions
+## 8. 常见问题与解决方案
 
-### Problem: WatchDog does not import files
+### 问题：WatchDog 不导入文件
 
-1. Check if service is running: `services.msc` → WatchDog
-2. Check logs: Settings → WatchDog → Logs Tab
-3. Check folder permissions for WatchDog Service Account
-4. Test API connection: `WatchDog.exe debug` in CMD
-5. Verify file type is PDF
+1. 检查服务是否正在运行：`services.msc` → WatchDog
+2. 检查日志：设置 → WatchDog → 日志选项卡
+3. 检查 WatchDog 服务账户的文件夹权限
+4. 测试 API 连接：在 CMD 中运行 `WatchDog.exe debug`
+5. 确认文件类型为 PDF
 
-### Problem: Export does not work
+### 问题：导出无法正常工作
 
-1. Export configuration exists with correct document type?
-2. Document type matches between document and config?
-3. XSLT Template linked (for folder export)?
-4. Export folder writable by Service Account?
-5. For Infor exports: ION credentials configured correctly?
+1. 是否存在文档类型正确的导出配置？
+2. 文档和配置中的文档类型是否匹配？
+3. 是否已关联 XSLT 模板（用于文件夹导出）？
+4. 服务账户是否有权写入导出文件夹？
+5. 对于 Infor 导出：ION 凭据是否配置正确？
 
-### Problem: Configuration is disabled
+### 问题：配置已禁用
 
-1. Folder path exists?
-2. Permissions for `NT AUTHORITY\LOCAL SERVICE` or Service Account?
-3. Network drive reachable? (Check UNC paths)
-4. WatchDog will auto-reactivate when folders become available again
+1. 文件夹路径是否存在？
+2. `NT AUTHORITY\LOCAL SERVICE` 或服务账户是否拥有相应权限？
+3. 网络驱动器是否可访问？（检查 UNC 路径）
+4. 文件夹重新可用时，WatchDog 会自动重新启用配置
 
-### Problem: XSLT Transformation fails
+### 问题：XSLT 转换失败
 
-1. XSLT Template is valid? (use XSLT Templates Tab → Validate)
-2. Template fits document type?
-3. Check XML structure of the document
-4. V3 Folder Export uses server-side transformation — check API connectivity
+1. XSLT 模板是否有效？（在 XSLT 模板选项卡中使用 Validate）
+2. 模板是否适用于该文档类型？
+3. 检查文档的 XML 结构
+4. V3 文件夹导出使用服务器端转换——请检查 API 连接
 
-### Problem: REST API Export fails
+### 问题：REST API 导出失败
 
-1. ION OAuth credentials configured in export configuration?
-2. Target API endpoint reachable from WatchDog server?
-3. Check payload format matches target API expectations
-4. Review request chain configuration for JSONPath errors
+1. 是否在导出配置中配置了 ION OAuth 凭据？
+2. WatchDog 服务器是否可以访问目标 API 端点？
+3. 检查有效负载格式是否符合目标 API 的要求
+4. 检查请求链配置中是否存在 JSONPath 错误
 
 ---
 
-## 9. Command Line Commands
+## 9. 命令行命令
 
 ```bash
 # Configure API connection
@@ -253,15 +253,15 @@ sc query WatchDog
 
 ---
 
-## 10. Log Files
+## 10. 日志文件
 
-**Location:** `C:\WatchDog\logs\{module}\`
+**位置：** `C:\WatchDog\logs\{module}\`
 
-**Log Format:**
+**日志格式：**
 ```
 INFO  - 2026-03-26 10:00:00 - module_name - Message - function=func_name - line=42
 ```
 
-**Log Level:** DEBUG, INFO, WARNING, ERROR
+**日志级别：** DEBUG、INFO、WARNING、ERROR
 
-**Remote Logs:** WatchDog also sends logs to DocBits (viewable in Logs Tab) and optionally to Logtail cloud logging.
+**远程日志：** WatchDog 也会将日志发送到 DocBits（可在日志选项卡中查看），并可选择发送到 Logtail 云日志服务。

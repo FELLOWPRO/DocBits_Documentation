@@ -1,49 +1,49 @@
-# Case 1, 2, 3: Quantity and Unit Price Within Tolerance
+# 案例 1、2、3：数量和单价在容差范围内
 
-## Scenario:
+## 场景：
 
-Both the quantity and unit price on the invoice are within an acceptable tolerance range compared to the purchase order.
+与采购订单相比，发票上的数量和单价都在可接受的容差范围内。
 
-## Action:
+## 操作：
 
-The system accepts the invoice values and calculates the total amount based on the provided quantity and unit price.
+系统接受发票上的数值，并根据提供的数量和单价计算总金额。
 
-## Example:
+## 示例：
 
-**Purchase Order (PO):**
+**采购订单 (PO)：**
 
-Quantity: 100 units
+数量：100 件
 
-Unit Price: $10.00 per unit
+单价：每件 $10.00
 
-Total Amount: $1,000.00
+总金额：$1,000.00
 
-**Invoice Received:**
+**收到的发票：**
 
-Quantity: 101 units (within tolerance of 1%)
+数量：101 件（在 1% 的容差范围内）
 
-Unit Price: $10.05 per unit (within tolerance of 0.5%)
+单价：每件 $10.05（在 0.5% 的容差范围内）
 
-Total Amount: $1,015.05
+总金额：$1,015.05
 
-**Tolerance Levels:**
+**容差级别：**
 
-Quantity Tolerance: ±2%
+数量容差：±2%
 
-Unit Price Tolerance: ±1%\
-
-
-Since the quantity (101 units) and unit price ($10.05) are both within the acceptable tolerance levels compared to the purchase order, the system will:\
+单价容差：±1%\
 
 
-1\. **Accept the Invoice Values:** The quantity and unit price on the invoice are accepted as valid because they fall within the defined tolerance limits.
+由于数量（101 件）和单价（$10.05）都在与采购订单相比可接受的容差范围内，系统将：\
 
-2\. **Calculate the Total Amount:** The total amount is calculated using the accepted values:
 
-• Total Amount = Quantity × Unit Price
+1\. **接受发票数值：**由于发票上的数量和单价处于定义的容差范围内，因此将其视为有效值并予以接受。
 
-• Total Amount = 101 units × $10.05 per unit = $1,015.05
+2\. **计算总金额：**使用接受的数值计算总金额：
 
-3\. **Process the Invoice:** The invoice is processed with the total amount of $1,015.05, and the financial records are updated accordingly.
+• 总金额 = 数量 × 单价
 
-This approach ensures that minor discrepancies that fall within acceptable tolerance levels do not lead to invoice rejections or delays in payment, thus streamlining the financial process.
+• 总金额 = 101 件 × 每件 $10.05 = $1,015.05
+
+3\. **处理发票：**系统将按总金额 $1,015.05 处理发票，并相应更新财务记录。
+
+这种做法可确保在可接受容差范围内的轻微差异不会导致发票被拒或付款延迟，从而简化财务流程。

@@ -1,3 +1,3 @@
-# Data Synchronization
+# 数据同步
 
-In the "Data Synchronization" setting under "Log Settings" section, you will be able to see what data has been synchronized and when it was last synchronized.&#x20;
+在“日志设置”部分的“数据同步”设置中，您可以查看已同步的数据以及上次同步的时间。&#x20

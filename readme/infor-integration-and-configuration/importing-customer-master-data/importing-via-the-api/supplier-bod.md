@@ -1,124 +1,124 @@
 ---
-description: How to import a Supplier BOD into DocBits manually using the API
+description: 如何使用 API 手动将 Supplier BOD 导入 DocBits
 ---
 
-# Import Suppliers (Supplier BOD)
+# 导入供应商（Supplier BOD）
 
-Supplier master data normally reaches DocBits automatically through your ION data flow. This page describes how to send a **Supplier BOD** in by hand — useful when you want to re-import a supplier, load a batch that never arrived, or test a field mapping before switching the automatic flow on.
+供应商主数据通常会通过 ION 数据流自动传入 DocBits。本页介绍如何手动发送 **Supplier BOD**，适用于重新导入供应商、导入未成功送达的一批数据，或在启用自动数据流之前测试字段映射。
 
-## Two ways to send the same BOD
+## 通过两种方式发送同一个 BOD
 
-There are two endpoints, and they do the same thing. The only difference is how you hand over the BOD:
+有两个端点，功能相同。唯一的区别是提交 BOD 的方式：
 
-<figure><img src="../../../.gitbook/assets/import-supplier-endpoints.png" alt="The two supplier import endpoints"><figcaption><p>Upload a file, or send the XML in the request</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/import-supplier-endpoints.png" alt="两个供应商导入端点"><figcaption><p>上传文件，或在请求中发送 XML</p></figcaption></figure>
 
-| Endpoint | Use it when |
+| 端点 | 适用情况 |
 | --- | --- |
-| `/import/supplier_bod` | You have the BOD as an **XML file** and want to upload it. |
-| `/import/supplier_bod_xml` | You want to send the **XML content** in the request instead of a file. The BOD has to be wrapped in JSON, so this suits short XML or another system calling the API — for a full BOD by hand, upload the file. |
+| `/import/supplier_bod` | 您有一个 **XML 文件**形式的 BOD，并希望上传该文件。 |
+| `/import/supplier_bod_xml` | 您希望在请求中直接发送 **XML 内容**，而不是上传文件。BOD 必须封装在 JSON 中，因此适合较短的 XML，或由其他系统调用 API 的场景；如果要手动发送完整 BOD，请上传文件。 |
 
-Both are described below. Steps 1 and 2 are the same either way.
+下文将分别介绍这两个端点。无论使用哪种方式，步骤 1 和 2 都相同。
 
-## Before you start
+## 开始之前
 
-You will need:
+您需要准备：
 
-* **An API key.** See [API Key Management](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md) if you do not have one yet.
-* **The BOD** — a `SyncSupplierPartyMaster` or `SyncRemitToPartyMaster` XML file, or its content.
-* **Your Org ID**, from **Settings → Integration & SSO** in the **ID** section.
+* **API 密钥。** 如果还没有，请参阅 [API 密钥管理](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md)。
+* **BOD**——`SyncSupplierPartyMaster` 或 `SyncRemitToPartyMaster` XML 文件，或其内容。
+* **组织 ID（Org ID）**，可在 **设置 → 集成与 SSO** 的 **ID** 区域中找到。
 
-<figure><img src="../../../.gitbook/assets/import-org-id.png" alt="The ID section showing Org ID and Sub Org ID with their copy buttons"><figcaption><p>Settings → Integration &#x26; SSO → ID</p></figcaption></figure>
-
-{% hint style="info" %}
-**Sub Org ID** shows whichever sub-organization is selected in the header. With **CROSS** selected — the view across all sub-organizations — it shows the same value as **Org ID**. Switch to a specific sub-organization first if you need its ID.
-
-If you are not importing into a particular sub-organization, leave the `sub_org_id` field empty.
-{% endhint %}
-
-## Step-by-Step Instructions
-
-### 1. Open the API link
-
-Open the API test interface for the environment and region you are working with:
-
-* [Sandbox API (Europe)](https://eu.sandbox.api.docbits.com/docs#/import/import_supplier_bod_import_supplier_bod_post)
-* [Sandbox API (United States)](https://us.sandbox.api.docbits.com/docs#/import/import_supplier_bod_import_supplier_bod_post)
-* [Production API (Europe)](https://eu.api.docbits.com/docs#/import/import_supplier_bod_import_supplier_bod_post)
-* [Production API (United States)](https://us.api.docbits.com/docs#/import/import_supplier_bod_import_supplier_bod_post)
-
-Expand the endpoint you want by clicking on it.
+<figure><img src="../../../.gitbook/assets/import-org-id.png" alt="ID 区域显示 Org ID 和 Sub Org ID 及其复制按钮"><figcaption><p>设置 → 集成 &#x26; SSO → ID</p></figcaption></figure>
 
 {% hint style="info" %}
-Use the region your organization is hosted in — the same region you use to log in to DocBits. The European and American environments are separate, so an import sent to the wrong region will not show up in your organization.
+**Sub Org ID** 显示页眉中当前所选的子组织。如果选择了 **CROSS**（即跨所有子组织查看的视图），这里显示的值与 **Org ID** 相同。如果需要特定子组织的 ID，请先切换到该子组织。
 
-The addresses without a region prefix — `api.docbits.com` and `sandbox.api.docbits.com` — point to Europe. You will see those in older documentation and in existing configurations; they are the same environment as the `eu.` addresses above.
+如果您不打算导入到某个特定子组织，请将 `sub_org_id` 字段留空。
 {% endhint %}
 
-### 2. Authorize
+## 操作步骤
 
-Everything under **import** is locked until you authorize. There are two things to fill in: your organization and your API key.
+### 1. 打开 API 链接
 
-* Click the **lock icon** on the right of the endpoint.
+打开与您所使用的环境和区域对应的 API 测试界面：
 
-<figure><img src="../../../.gitbook/assets/import-supplier-lock.png" alt="The endpoint with the lock icon highlighted"><figcaption><p>Click the lock to open the authorization dialog</p></figcaption></figure>
+* [Sandbox API（欧洲）](https://eu.sandbox.api.docbits.com/docs#/import/import_supplier_bod_import_supplier_bod_post)
+* [Sandbox API（美国）](https://us.sandbox.api.docbits.com/docs#/import/import_supplier_bod_import_supplier_bod_post)
+* [Production API（欧洲）](https://eu.api.docbits.com/docs#/import/import_supplier_bod_import_supplier_bod_post)
+* [Production API（美国）](https://us.api.docbits.com/docs#/import/import_supplier_bod_import_supplier_bod_post)
 
-* The **Available authorizations** dialog opens with two entries.
-* Paste your **Org ID** into **X-ORG-ID** and click **Authorize**.
-
-<figure><img src="../../../.gitbook/assets/import-authorize-orgid.png" alt="The X-ORG-ID authorization with an empty value field"><figcaption><p>X-ORG-ID — paste the Org ID, then Authorize</p></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/import-authorize-orgid-done.png" alt="The X-ORG-ID authorization showing the Authorized state"><figcaption><p>X-ORG-ID is set</p></figcaption></figure>
-
-* Scroll down to **X-API-KEY**, paste your API key and click **Authorize**. In DocBits you find it under **Settings → Integration & SSO** in the **API Key** section, or you can [create a new key](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md#creating-an-api-key).
-
-<figure><img src="../../../.gitbook/assets/import-authorize-apikey.png" alt="The X-API-KEY authorization with an empty value field"><figcaption><p>X-API-KEY — paste the key, then Authorize</p></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/import-authorize-apikey-done.png" alt="The X-API-KEY authorization showing the Authorized state"><figcaption><p>X-API-KEY is set</p></figcaption></figure>
-
-* Click **Close**.
+点击所需端点将其展开。
 
 {% hint style="info" %}
-Paste the key on its own — do not type `Bearer` in front of it. Both authorizations stay set until you reload the page or click **Logout**.
+请选择组织所在的区域，也就是您登录 DocBits 时使用的区域。欧洲和美国环境相互独立，因此如果将导入请求发送到错误的区域，数据不会出现在您的组织中。
+
+没有区域前缀的地址——`api.docbits.com` 和 `sandbox.api.docbits.com`——指向欧洲。您可能会在旧版文档和现有配置中看到这些地址；它们与上方的 `eu.` 地址指向同一环境。
 {% endhint %}
 
-### 3. Fill in the fields
+### 2. 授权
 
-<figure><img src="../../../.gitbook/assets/import-tryitout.png" alt="The Try it out button on the endpoint"><figcaption><p>Try it out unlocks the form</p></figcaption></figure>
+在完成授权之前，**import** 下的所有内容都会被锁定。您需要填写两项内容：组织信息和 API 密钥。
 
-Click **Try it out**, then fill in the form for the endpoint you chose.
+* 点击端点右侧的**锁形图标**。
 
-#### Uploading a file — `/import/supplier_bod`
+<figure><img src="../../../.gitbook/assets/import-supplier-lock.png" alt="端点上的锁形图标已突出显示"><figcaption><p>点击锁形图标以打开授权对话框</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/import-supplier-bod-form.png" alt="The supplier import form filled in"><figcaption><p>The request body form, filled in</p></figcaption></figure>
+* 系统会打开 **Available authorizations** 对话框，其中包含两项。
+* 将您的 **Org ID** 粘贴到 **X-ORG-ID**，然后点击 **Authorize**。
 
-| Field | |
+<figure><img src="../../../.gitbook/assets/import-authorize-orgid.png" alt="X-ORG-ID 授权项及其空白值字段"><figcaption><p>X-ORG-ID — 粘贴 Org ID，然后点击 Authorize</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/import-authorize-orgid-done.png" alt="X-ORG-ID 授权项显示已授权状态"><figcaption><p>已设置 X-ORG-ID</p></figcaption></figure>
+
+* 向下滚动到 **X-API-KEY**，粘贴您的 API 密钥，然后点击 **Authorize**。您可以在 DocBits 的 **设置 → 集成与 SSO** 中找到该密钥，位置在 **API Key** 区域；也可以[创建新密钥](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md#creating-an-api-key)。
+
+<figure><img src="../../../.gitbook/assets/import-authorize-apikey.png" alt="X-API-KEY 授权项及其空白值字段"><figcaption><p>X-API-KEY — 粘贴密钥，然后点击 Authorize</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/import-authorize-apikey-done.png" alt="X-API-KEY 授权项显示已授权状态"><figcaption><p>已设置 X-API-KEY</p></figcaption></figure>
+
+* 点击 **Close**。
+
+{% hint style="info" %}
+只粘贴密钥本身，不要在前面输入 `Bearer`。重新加载页面或点击 **Logout** 之前，两项授权都会保持有效。
+{% endhint %}
+
+### 3. 填写字段
+
+<figure><img src="../../../.gitbook/assets/import-tryitout.png" alt="端点上的 Try it out 按钮"><figcaption><p>点击 Try it out 可解锁表单</p></figcaption></figure>
+
+点击 **Try it out**，然后填写所选端点的表单。
+
+#### 上传文件 — `/import/supplier_bod`
+
+<figure><img src="../../../.gitbook/assets/import-supplier-bod-form.png" alt="已填写的供应商导入表单"><figcaption><p>已填写的请求正文表单</p></figcaption></figure>
+
+| 字段 | |
 | --- | --- |
-| **file** | Required. Click **Choose file** and select your supplier BOD XML file. |
-| **org\_id** | Your Org ID — the same value you put into **X-ORG-ID** in step 2. Setting it here as well makes the request explicit about which organization it is writing to. It must be an organization your API key has access to; anything else is refused. |
-| **sub\_org\_id** | Only needed if you are importing into a particular sub-organization. |
-| **custom\_fields\_mapping** | Optional. Reads extra fields out of the BOD into the supplier's custom fields. See [Custom field mappings](#custom-field-mappings) below. |
+| **file** | 必填。点击 **Choose file**，然后选择供应商 BOD XML 文件。 |
+| **org\_id** | 您的 Org ID，也就是步骤 2 中填入 **X-ORG-ID** 的同一个值。在此处也填写该值，可以明确指定请求要写入哪个组织。该组织必须在您的 API 密钥权限范围内；否则请求会被拒绝。 |
+| **sub\_org\_id** | 只有在导入到某个特定子组织时才需要填写。 |
+| **custom\_fields\_mapping** | 可选。将 BOD 中的额外字段读取到供应商的自定义字段中。请参阅下文的[自定义字段映射](#custom-field-mappings)。 |
 
-There is no line-mapping field here — supplier master data has no lines.
+此处没有行映射字段，因为供应商主数据不包含行项目。
 
 {% hint style="warning" %}
-**`string` is a value, not a placeholder.** Swagger fills the optional fields with the word `string`, and it is sent as-is if you leave it there — an import with `org_id` set to `string` will fail.
+**`string` 是一个值，不是占位符。** Swagger 会在可选字段中填入 `string` 一词；如果您不清除该值，它就会原样发送。例如，`org_id` 为 `string` 的导入请求会失败。
 
-For every optional field you do not want to use, clear the field. Clearing it enables the **Send empty value** checkbox underneath, which you can then tick.
+对于不需要使用的可选字段，请清空字段。清空后，下方会启用 **Send empty value** 复选框，您可以勾选该选项。
 {% endhint %}
 
-#### Custom field mappings
+#### 自定义字段映射 <a id="custom-field-mappings"></a>
 
-The mapping field takes a JSON object. The **name on the left must be one of DocBits' own custom fields** — `custom_field_1` through `custom_field_5` for suppliers. Any other name is ignored without warning, so a typo here looks exactly like a mapping that did not work.
+映射字段接受 JSON 对象。**左侧的名称必须是 DocBits 自带的自定义字段之一**——供应商可使用 `custom_field_1` 到 `custom_field_5`。其他名称会被忽略，且不会显示警告，因此拼写错误看起来就像映射未生效一样。
 
-The value on the right is the XPath to read from. Write it without namespace prefixes — DocBits adds those itself:
+右侧的值是要读取的 XPath。请勿添加命名空间前缀——DocBits 会自行添加：
 
 ```json
 {"custom_field_2": "//SupplierPartyMaster/UserArea/Property/NameValue[@name='User defined 6']/text()"}
 ```
 
-#### Pasting the XML — `/import/supplier_bod_xml`
+#### 粘贴 XML — `/import/supplier_bod_xml`
 
-This endpoint does not take the BOD as a plain paste. The **xml** field is an object, pre-filled with `{"xml": "string"}`. Replace `string` with the content of your BOD, keeping the surrounding quotes and braces:
+此端点不能直接接受粘贴的 BOD。**xml** 字段是一个对象，预填内容为 `{"xml": "string"}`。请将 `string` 替换为 BOD 内容，并保留外层引号和花括号：
 
 ```json
 {
@@ -127,24 +127,24 @@ This endpoint does not take the BOD as a plain paste. The **xml** field is an ob
 ```
 
 {% hint style="warning" %}
-The BOD sits inside a JSON string, so every double quote in the XML has to be escaped as `\"` — and a BOD is full of them. If the result is not valid JSON the request fails with a **422** and nothing is imported.
+BOD 位于 JSON 字符串中，因此 XML 中的每个双引号都必须转义为 `\"`——而 BOD 中有很多双引号。如果结果不是有效的 JSON，请求会因 **422** 错误而失败，且不会导入任何内容。
 
-For a real BOD that is fiddly to do by hand, so prefer **uploading the file**.
+手动处理真实 BOD 时很繁琐，因此建议**上传文件**。
 {% endhint %}
 
-The `org_id`, `sub_org_id` and `custom_fields_mapping` fields work exactly as above.
+`org_id`、`sub_org_id` 和 `custom_fields_mapping` 字段的用法与上文完全相同。
 
 {% hint style="warning" %}
-Check which environment and which organization you are pointing at before you execute. An import writes straight into that organization's master data.
+执行前，请确认指向的环境和组织是否正确。导入会直接写入该组织的主数据。
 {% endhint %}
 
-### 4. Execute
+### 4. 执行
 
-Before you execute, check the **Servers** dropdown at the bottom of the form. It decides which environment the request is actually sent to, and it can differ from the page you opened.
+执行之前，请检查表单底部的 **Servers** 下拉菜单。它决定请求实际发送到哪个环境，可能与您打开的页面所对应的环境不同。
 
-<figure><img src="../../../.gitbook/assets/import-execute.png" alt="The Servers dropdown and the Execute button"><figcaption><p>Check the server, then Execute</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/import-execute.png" alt="Servers 下拉菜单和 Execute 按钮"><figcaption><p>检查服务器，然后点击 Execute</p></figcaption></figure>
 
-Click **Execute**. A successful import returns:
+点击 **Execute**。导入成功后会返回：
 
 ```json
 {
@@ -153,20 +153,20 @@ Click **Execute**. A successful import returns:
 }
 ```
 
-<figure><img src="../../../.gitbook/assets/import-supplier-response.png" alt="The curl command and the server response"><figcaption><p>A successful supplier import</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/import-supplier-response.png" alt="curl 命令和服务器响应"><figcaption><p>成功导入供应商</p></figcaption></figure>
 
-Supplier BODs are processed while you wait, so by the time you see this message the data is in.
+Supplier BOD 会在您等待期间完成处理，因此看到此消息时，数据已经导入。
 
-If something was wrong with the request, you get `"success": false` together with a message describing the problem. The most common causes are content that is not a supplier BOD, and an Org ID that your API key has no access to.
+如果请求有误，响应会包含 `"success": false`，并附上一条说明问题的消息。最常见的原因包括：内容不是供应商 BOD，或者您的 API 密钥无权访问该 Org ID。
 
-### 5. Check that the data arrived
+### 5. 检查数据是否已导入
 
-* In DocBits, go to **Settings → Document Processing → Lookup Master Data**.
-* Select **BOD Input Data** on the left, then open the **Supplier** tab.
-* Search for the supplier from your BOD.
+* 在 DocBits 中，前往 **设置 → 文档处理 → 查找主数据**。
+* 在左侧选择 **BOD Input Data**，然后打开 **Supplier** 选项卡。
+* 搜索 BOD 中的供应商。
 
 <!-- SCREENSHOT: Lookup Master Data with BOD Input Data selected and the Supplier tab open -->
 
 {% hint style="info" %}
-DocBits decides what to do with the BOD by reading the type inside it, not by which import endpoint you used. If you send a purchase order BOD here by mistake, it is imported as a purchase order rather than rejected — so check that the tab you find the data in is the one you expected.
+DocBits 会根据 BOD 内部的类型来决定如何处理，而不是根据您使用的导入端点来判断。如果您误将采购订单 BOD 发送到此处，它会作为采购订单导入，而不会被拒绝。因此，请确认数据出现在预期的选项卡中。
 {% endhint %}

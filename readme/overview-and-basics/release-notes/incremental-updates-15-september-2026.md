@@ -1,516 +1,260 @@
-# DocBits Release Notes — 15 September 2026
+# DocBits 发布说明 — 2026 年 9 月 15 日
 
-_What changes in the DocBits production hotfix on 15 September 2026 (release
-R1.0.13), covering everything since the 1 September release. Each service lists
-the version being deployed, then what's new or fixed in plain language. Services
-not listed had no customer-facing changes._
+_2026 年 9 月 15 日 DocBits 生产环境热修复（版本 R1.0.13）中的变更，涵盖自 9 月 1 日发布以来的所有内容。每项服务都会列出部署版本，然后用通俗语言说明新增或修复的内容。未列出的服务没有面向客户的变更。_
 
 ---
 
-## Highlights
+## 重点内容
 
-- **One set of rules for the dashboard search.** `field=value` is now exactly
-  this value on every search engine, `field:value` means contains (with `value*`
-  and `*value` for starts-with and ends-with), and `field!=value` also returns
-  documents that have no value at all. A search without a chip is a substring
-  search across every field, purchase order numbers, barcodes and requisition
-  numbers included. Result count, status tiles and pagination describe the same
-  set of documents, and a search that hit the result window or ran without the
-  full-text index says so instead of reporting "complete". The dashboard's own
-  search connection (WebSocket) never reached the full-text index before; it
-  does now.
-- **Suppliers are recognised more often.** When one lookup field (tax id,
-  IBAN, supplier number) matches exactly one supplier, that supplier is used
-  even if a broad field such as the name matches several. XRechnung CII and
-  Facturae documents carry their supplier fields again. Where
-  master data replaced an extracted value, the validation screen says so and
-  lets you restore the original.
-- **Purchase order matching explains itself.** The screen says why there is no
-  match, the mismatch tooltip names the column that failed, matching history
-  lists the transformation rules that ran, and PO unit prices are derived from
-  the net amount. Manual matches work again for organisations without a
-  fallback rule, removed purchase orders stay removed, and a killed matching
-  task marks the document as failed instead of parking it in "Queue" forever.
-- **Stuck documents and false errors.** Organisations that
-  upload continuously had documents demoted to a queue priority that was never
-  served during business hours (866 documents stuck in "new" at one customer).
-  A retry sweeper could overwrite a successfully exported document with
-  "error" hours later and fire the export-error mail for it. That path is
-  closed.
-- **Touchless Intelligence.** The Analytics tab that measures how many
-  documents pass through DocBits without a human touch gets its full first
-  release: issue clusters with AI advice, bulk analysis, change proposals with
-  preview, apply and undo, a supplier page with trend and examples, a
-  pipeline-flow diagram per document, and a purchase-order rule-set diagram
-  that says why a document did not pass.
-- **Faster where data is large.** Cold logins skip the credit ledger sum that
-  took up to 33 s, the accounting dropdown works for organisations
-  with more than 2,000 accounts, the E-Documents rules page pages its 1,600
-  rules on the server instead of freezing the browser, and Refresh on the
-  purchase order dashboard returns fresh data instead of a cached list.
-- **Security.** Frontend source maps stop shipping with every deploy,
-  master-data lookup filters are bound as SQL parameters instead of
-  interpolated, an expired token is rejected even on a cache hit, and the
-  organisation guard on the processing token is enforced independently of the
-  layer in front of it.
+- **仪表板搜索规则统一。** `field=value` 在所有搜索引擎中都表示精确匹配此值，`field:value` 表示包含（`value*` 和 `*value` 分别表示以此值开头和以此值结尾），`field!=value` 还会返回没有值的文档。未添加筛选条件的搜索会在所有字段中进行子字符串搜索，也包括采购订单号、条形码和请购单号。结果数量、状态磁贴和分页现在描述的是同一组文档；如果搜索触及结果窗口上限，或未使用全文索引，系统会明确说明，而不会报告“完整”。此前，仪表板自己的搜索连接（WebSocket）无法访问全文索引，现在已经可以。
+- **更常识别供应商。** 如果一个查找字段（税号、IBAN、供应商编号）恰好匹配一个供应商，即使名称等宽泛字段匹配了多个供应商，也会使用该唯一匹配的供应商。XRechnung CII 和 Facturae 文档现在会重新提供其供应商字段。如果主数据替换了提取出的值，验证屏幕会说明这一点，并允许恢复原值。
+- **采购订单匹配过程更清晰。** 屏幕会说明为何没有匹配结果；不匹配提示会指出未通过的列；匹配历史会列出运行过的转换规则；采购订单单价会根据净额计算。没有后备规则的组织现在也能手动匹配；已移除的采购订单会继续保持移除状态；被终止的匹配任务会将文档标记为失败，不再让它永远停留在“队列”中。
+- **卡住的文档和误报错误。** 持续上传文档的组织中，文档曾被降到营业时间内不会处理的队列优先级（某客户有 866 份文档卡在“新建”状态）。重试扫描器可能在文档成功导出数小时后将其改为“错误”，并触发导出错误邮件。此问题路径已修复。
+- **Touchless Intelligence。** 用于衡量有多少文档无需人工干预即可通过 DocBits 的 Analytics（分析）选项卡，现在首次完整发布：包含带 AI 建议的问题集群、批量分析、带预览的变更提案、应用与撤销、含趋势和示例的供应商页面、每份文档的处理流程图，以及用于说明文档未通过原因的采购订单规则集流程图。
+- **大数据场景下速度更快。** 冷启动登录会跳过耗时最长达 33 秒的积分账本汇总；拥有 2,000 多个账户的组织现在可以使用会计下拉列表；E-Documents（电子文档）规则页面会在服务器端对 1,600 条规则分页，不再冻结浏览器；采购订单仪表板上的 Refresh（刷新）现在会返回最新数据，而不是缓存列表。
+- **安全性。** 每次部署不再附带前端源映射；主数据查找筛选条件改用 SQL 参数绑定，不再插入查询字符串；即使命中缓存也会拒绝过期令牌；处理令牌的组织校验会独立于前置层执行。
 
 ---
 
 ## Web App — `10.66.3`
 
-### Signing in and accounts
+### 登录和账户
 
-- Login is faster. The subscription check at login asked for the full credit
-  balance, which summed millions of ledger rows and often ran past the client's
-  10 s timeout. The login now only asks whether a subscription exists; balances
-  are still calculated on Settings → Subscription.
-- Switching regions (EU ↔ US) keeps you signed in. The target region
-  answers "invalid token" for a few seconds until the session has replicated,
-  and two code paths read that as a dead session.
-- The "Updating DocBits v10.59.3.1 → v10.59.3.1" overlay that reloaded forever
-  on sandbox is fixed. A same-version reload no longer shows the overlay, the
-  loop is bounded per tab, and a banner offers manual recovery if it happens
-  again.
-- Administrators can grant the Analytics Dashboard tab to specific roles, and
-  role changes save reliably.
-- The System Admin checkbox can be ticked on an existing user. Creating a
-  system admin from the frontend now has an effect; a sync job used to reset
-  the flag on every run.
-- Settings → Roles: the members list renders instead of hanging behind a loader
-  when the server answers with an error.
-- Signing in to the DocBits MCP server enforces two-factor authentication and
-  single-use consent.
+- 登录速度更快。登录时的订阅检查曾请求完整积分余额，需要汇总数百万条账本记录，经常超过客户端 10 秒的超时限制。现在登录只检查订阅是否存在；余额仍会在 Settings → Subscription（设置 → 订阅）中计算。
+- 切换区域（EU ↔ US）时会保持登录状态。会话完成复制前，目标区域会有几秒钟返回“invalid token”（令牌无效）；此前有两条代码路径会将其误判为失效会话。
+- 已修复沙盒环境中“Updating DocBits v10.59.3.1 → v10.59.3.1”覆盖层无限重载的问题。同版本重载不再显示覆盖层；循环次数按标签页限制；如果问题再次发生，横幅会提供手动恢复选项。
+- 管理员可以向特定角色授予 Analytics Dashboard（分析仪表板）选项卡，角色变更也能可靠保存。
+- 可以在现有用户上勾选 System Admin（系统管理员）。从前端创建系统管理员现在会生效；此前同步作业每次运行都会重置此标记。
+- Settings → Roles（设置 → 角色）：服务器返回错误时，成员列表现在会正常显示，不再卡在加载状态。
+- 登录 DocBits MCP 服务器时会强制执行双重身份验证和单次使用的授权。
 
-### Dashboard and search
+### 仪表板和搜索
 
-- New operator rules, also described in the search help popup: `=` is exactly
-  this value (case-insensitive), `:` is contains, `: value*` starts with,
-  `: *value` ends with, `!=` is everything that is not exactly this value
-  including documents without a value. Quotes only group a value with spaces.
-- A quoted phrase such as `"Johnson and Johnson"` is searched as one phrase.
-  "and" and "or" inside quotes are no longer read as connectors.
-- When a bare search finds nothing, the dashboard explains the rule and offers
-  one-click chips (`Invoice number : <term>`, `Purchase order : <term>`,
-  `Supplier ID : <term>`).
-- A search with zero results resets the pager and every count on the page.
-  Before, the pagination kept the previous search's count.
-- Purchase order numbers, order numbers, barcodes, invoice types and
-  requisition numbers can be found without a chip.
+- 新的运算符规则也会显示在搜索帮助弹窗中：`=` 表示精确匹配此值（不区分大小写），`:` 表示包含，`: value*` 表示以此值开头，`: *value` 表示以此值结尾，`!=` 表示所有不与此值精确匹配的内容，包括没有值的文档。引号只用于将包含空格的值括为一组。
+- 带引号的短语（例如 `"Johnson and Johnson"`）会作为一个整体搜索。引号内的“and”和“or”不再被识别为连接符。
+- 裸搜索没有结果时，仪表板会解释规则，并提供一键筛选条件（`Invoice number : <term>`、`Purchase order : <term>`、`Supplier ID : <term>`）。
+- 搜索结果为零时，分页器和页面上的所有计数都会重置。此前，分页会保留上一次搜索的结果数量。
+- 不添加筛选条件也能找到采购订单号、订单号、条形码、发票类型和请购单号。
 
-### Validation screen
+### 验证屏幕
 
-- Values that master data replaced are marked. An amber badge shows the
-  original and the current value, the dataset and how it matched, and a button
-  restores the extracted value. Values confirmed by master data or filled from
-  the purchase order get their own labels. Before, all of them carried the
-  "Extracted using saved rules" badge.
-- The approval stamp is saved even when the page already carries another
-  annotation. Downloaded annotated documents were missing the stamp in that
-  case.
-- "Hide non mapped columns" keeps columns you trained by hand (for example Item
-  Number and Purchase Order).
-- Saving extraction rules works after you type a page number and then draw a
-  box for a field. That sequence used to crash the save.
-- Structured extraction can be switched on per supplier, in the tfidf popup of
-  the validation screen and as a read-only column in Settings → Classification
-  & Extraction.
-- Train Model runs in the background. The screen shows "training started",
-  polls for the result and reports success or failure. Large organisations
-  used to get a gateway error while training carried on server-side.
-- Dark mode: the scissors cursor on the split screen and the mode toggle on the
-  Auto Accounting screen are readable again.
+- 主数据替换的值现在会标记出来。琥珀色徽标会显示原值和当前值、数据集以及匹配方式，并提供恢复提取值的按钮。经主数据确认或从采购订单填入的值也会显示各自的标签。此前，这些值都显示“使用已保存规则提取”徽标。
+- 即使页面上已有其他批注，审批印章也会保存。此前在这种情况下，下载的带批注文档会缺少印章。
+- “Hide non mapped columns”（隐藏未映射列）会保留你手动训练的列（例如 Item Number（项目编号）和 Purchase Order（采购订单））。
+- 输入页码后再为字段绘制方框，现在可以正常保存提取规则。此前这种操作顺序会导致保存崩溃。
+- 可以按供应商启用结构化提取，也可以在验证屏幕的 tfidf 弹窗中启用；Settings → Classification & Extraction（设置 → 分类与提取）中则以只读列的形式显示。
+- Train Model（训练模型）会在后台运行。屏幕会显示“training started”（训练已开始），轮询结果并报告成功或失败。此前，大型组织会在训练仍由服务器执行时收到网关错误。
+- 深色模式：拆分屏幕上的剪刀光标和 Auto Accounting（自动会计）屏幕上的模式切换控件现在都清晰可见。
 
-### Purchase order matching
+### 采购订单匹配
 
-The changes announced in [Hotfixes 8 September 2026](incremental-updates-8-september-2026.md)
-reach production with this release: the match survives saving, matching runs
-again when the PO number is corrected, the screen says why there is no match
-and why a match was not kept, matching history shows the transformation rules,
-and the PO unit price is calculated from the net amount. In addition:
+[2026 年 9 月 8 日热修复](incremental-updates-8-september-2026.md)中公布的变更已随本次发布进入生产环境：匹配结果在保存后仍会保留；修正 PO 编号后会重新运行匹配；屏幕会说明未匹配以及匹配未保留的原因；匹配历史会显示转换规则；PO 单价会根据净额计算。此外：
 
-- The mismatch tooltip names the column that did not match. It used to be empty
-  because only matched columns were recorded, and the screen could only say
-  "Mismatched".
-- The Auto Match button also exports the document when "PO Auto Match and
-  Export" is on. Before, the export only happened when the document was opened
-  from the dashboard via "PO Match".
-- The quantity/unit price tolerance popup stays open when the server rejects the
-  save, so the entered values are not lost.
-- The purchase order dashboard's Refresh button clears the server-side cache
-  before reloading. A purchase order imported from the ERP appeared only after
-  seven to eight minutes.
-- The PO matching rules page draws the rule set as a flow chart, and the
-  matching history has moved into the action toolbar.
+- 不匹配提示会指出未通过的列。此前提示为空，因为系统只记录了匹配成功的列，屏幕只能显示“Mismatched”（不匹配）。
+- 启用“PO Auto Match and Export”（PO 自动匹配并导出）时，Auto Match（自动匹配）按钮也会导出文档。此前只有从仪表板通过“PO Match”（PO 匹配）打开文档时才会导出。
+- 服务器拒绝保存时，数量/单价容差弹窗会保持打开，因此已输入的值不会丢失。
+- 采购订单仪表板的 Refresh（刷新）按钮会在重新加载前清除服务器端缓存。从 ERP 导入的采购订单此前要等七到八分钟才会显示。
+- PO 匹配规则页面会用流程图展示规则集；匹配历史已移至操作工具栏。
 
-### Auto accounting
+### 自动会计
 
-- Organisations with more than 2,000 accounts search the account list on the
-  server. The dropdown was empty on sandbox for such organisations, and page
-  loads took five seconds.
-- Accounts referenced by a document are resolved in batches: a 100-line
-  document with two splits per line needs 4 requests instead of 403.
-- The Auto Accounting and PO tables headings follow the label set in the layout
-  builder instead of a hard-coded text.
+- 拥有 2,000 多个账户的组织现在会在服务器端搜索账户列表。此前，这些组织在沙盒环境中的下拉列表为空，页面加载需要五秒。
+- 文档引用的账户会批量解析：一份含 100 个行项目且每行拆分为两个账户的文档，现在需要 4 次请求，而不是 403 次。
+- Auto Accounting（自动会计）和 PO 表格的标题现在遵循布局构建器中设置的标签，而不再使用硬编码文本。
 
-### Settings
+### 设置
 
-- Settings → E-Documents → Rules pages, searches and sorts the 1,600-rule
-  catalogue on the server. The tab used to render every rule at once and
-  freeze the browser. "Reset all" is one call instead of one per rule.
-- Document type Advanced Settings show the stored state of each toggle. A saved
-  `false`, a `0` tolerance or an empty select were being replaced by the
-  default, and switching document types left the previous type's values
-  behind.
-- Transformation rules: a "Set value" action saves. The editor sent it under a
-  name the server rejects.
-- List of Values: the sidebar shows a new list and drops a deleted one without
-  a reload; late responses from a previous list no longer overwrite the
-  current one.
-- The document sub types link is shown on standard document types.
-- The SMB export's JPL mapping downloads as `.properties`, so the file can be
-  uploaded again. It was named `.xml` and rejected on the way back in.
+- Settings → E-Documents → Rules（设置 → 电子文档 → 规则）现在会在服务器端对 1,600 条规则的目录分页、搜索和排序。此前，该选项卡会一次性渲染所有规则，导致浏览器冻结。“Reset all”（全部重置）现在只需一次调用，而不是每条规则调用一次。
+- 文档类型的 Advanced Settings（高级设置）会显示每个开关已保存的状态。此前，已保存的 `false`、`0` 容差或空选择项会被默认值替换；切换文档类型后还会残留前一种类型的值。
+- 转换规则：“Set value”（设置值）操作现在可以保存。此前，编辑器使用了服务器不接受的名称提交该操作。
+- List of Values（值列表）：侧边栏会显示新列表，并在不重新加载的情况下移除已删除的列表；之前列表的延迟响应不再覆盖当前列表。
+- 标准文档类型现在会显示文档子类型链接。
+- SMB 导出的 JPL 映射现在会以 `.properties` 格式下载，因此可以再次上传。此前文件名为 `.xml`，重新上传时会被拒绝。
 
-### Workflows
+### 工作流
 
-- Renaming a workflow keeps the card changes made in the same session. New
-  workflows are created in one save request, and template renames are
-  persisted.
-- An exported workflow file contains the whole export envelope (version, name,
-  description). Advanced workflows can be imported again; before, the file lost
-  its version and was read back as a standard workflow and rejected.
-- Column filters on the workflow list combine with AND. With a name and a date
-  filter active, rows matching only the name slipped into the result.
-- Task deadlines use the date format from your user settings in the list, the
-  board and the detail view.
+- 重命名工作流会保留在同一会话中对卡片所做的更改。新工作流通过一次保存请求创建，模板重命名也会持久保存。
+- 导出的工作流文件包含完整的导出封装（版本、名称、描述）。高级工作流现在可以重新导入；此前文件会丢失版本信息，被识别为标准工作流后遭到拒绝。
+- 工作流列表中的列筛选条件现在按 AND 组合。名称和日期筛选同时启用时，此前仅符合名称条件的行也会出现在结果中。
+- 任务截止日期会在列表、看板和详情视图中使用用户设置里的日期格式。
 
-### Analytics: Touchless Intelligence
+### Analytics：Touchless Intelligence
 
-The Touchless tab (Analytics → Touchless) measures how many documents run
-through DocBits without a person touching them, and why the others did not.
-This release completes it:
+Touchless（无接触）选项卡（Analytics → Touchless）用于衡量有多少文档无需人工干预即可通过 DocBits，以及其他文档未能通过的原因。本次发布完成了此功能：
 
-- **Issue clusters with evidence.** Documents that needed a touch are grouped
-  by cause. Each cluster card names the fields, validation codes and error
-  messages it fails on, and its supplier, or says there is none. Clusters that
-  DocBits can fix (a rule, a field setting) are separated from those only the
-  supplier can fix, and the AI analysis budget goes to the fixable ones first.
-- **AI analysis, labelled as such.** A cluster card says whether a language
-  model wrote the advice or a rule did, what the analysis counted and when it
-  stopped being true, and whether a click will reuse a cached analysis. If the
-  AI advisor cannot run in this environment, the tab says why.
-- **Bulk analysis.** Analyse many clusters in one run, see cluster by cluster
-  what the run is doing, and find the results afterwards. The result list
-  survives navigation and reload, and the run no longer hangs on "Running · 0/6
-  done" in a sub-organisation view.
-- **Change proposals.** A recommendation becomes something you can act on: the
-  card explains the proposed change in four questions, lets you adjust it,
-  previews what it would do (nothing is saved), applies it, measures the
-  effect and can undo it. Fix steps deep-link to the settings page they name,
-  pre-filtered by document type, field or rule.
-- **Supplier page.** Pick a supplier from the tab or search the opportunity
-  queue by name or number. The page shows the supplier's touchless rate over
-  time (30 days to 1 year), its problem documents and the documents that went
-  well, and offers a per-supplier AI diagnosis. Up to five suppliers can be
-  compared side by side. The supplier number is shown instead of an internal
-  hash.
-- **Pipeline flow.** A diagram per document and per cluster shows the path
-  through intake, classification, e-document check, supplier, OCR, extraction,
-  validation, PO matching, approval and export, with the stage that stopped it.
-- **Purchase order matching, explained.** The PO rule set is drawn as a flow
-  chart on the settings page and in Touchless, with the path one document took
-  and a plain-language reason why it did not pass. Reason codes distinguish
-  "purchase order not found" from "line mismatch" and "required field missing".
-- **Segmentation.** KPIs, clusters and proposals can be split by a document
-  field, for example Order Type = Direct / Indirect.
-- **Correct numbers.** KPI tiles respect the sub-organisation filter and count
-  only documents the drill-down can list. A browser session by the
-  organisation's system user counts as human, so documents corrected by hand
-  are no longer filed as touchless.
-- The report's toolbar fits its controls on wide screens, and dark mode
-  colours come from the theme.
+- **包含证据的问题集群。** 需要人工处理的文档会按原因分组。每张集群卡片会列出导致失败的字段、验证代码和错误消息，以及相关供应商；如果没有供应商，也会明确说明。DocBits 可以修复的问题（规则、字段设置）会与只能由供应商修复的问题分开；AI 分析额度会优先用于可修复的问题。
+- **明确标注的 AI 分析。** 集群卡片会说明建议由语言模型还是规则生成、分析统计了哪些内容、何时不再适用，以及点击后是否会复用缓存分析。如果此环境无法运行 AI 顾问，选项卡会说明原因。
+- **批量分析。** 一次分析多个集群，逐个查看各集群的运行进度，并在之后查找结果。导航或重新加载后，结果列表仍会保留；在子组织视图中，运行过程也不再卡在“Running · 0/6 done”（运行中 · 已完成 0/6）。
+- **变更提案。** 建议现在可以直接执行：卡片会通过四个问题说明提议的变更，允许调整，预览变更效果（不会保存任何内容），然后应用、衡量效果并撤销。修复步骤会深度链接到提及的设置页面，并按文档类型、字段或规则预先筛选。
+- **供应商页面。** 可从选项卡中选择供应商，也可按名称或编号搜索待处理机会队列。页面会显示供应商一段时间内（30 天至 1 年）的无接触率、问题文档和处理顺利的文档，并提供针对该供应商的 AI 诊断。最多可并排比较五个供应商。页面显示的是供应商编号，而不是内部哈希值。
+- **处理流程。** 每份文档和每个集群都有一张流程图，展示文档经过接收、分类、电子文档检查、供应商、OCR、提取、验证、PO 匹配、审批和导出的路径，并指出文档停止处理的阶段。
+- **采购订单匹配说明。** 设置页面和 Touchless 中都会用流程图展示 PO 规则集、每份文档经过的路径，以及文档未通过的通俗原因。原因代码会区分“未找到采购订单”“行项目不匹配”和“缺少必填字段”。
+- **分段。** 可按文档字段拆分 KPI、集群和提案，例如 Order Type = Direct / Indirect（订单类型 = 直接 / 间接）。
+- **准确的数字。** KPI 磁贴会遵循子组织筛选条件，且只统计下钻列表中可见的文档。组织系统用户发起的浏览器会话会计为人工处理，因此人工更正文档不再被归为无接触处理。
+- 报告工具栏上的控件现在可以在宽屏上完整显示，深色模式颜色来自主题设置。
 
 ### DocNet
 
-- The Activities feed, the Recent Activity widget and the mission timeline are
-  translated. Audit summaries were English in all 22 languages.
-- Agents see fields the document type defines but extraction left empty. They
-  used to conclude such fields did not exist and skip mandated updates without
-  attempting a write.
+- Activities（活动）动态、Recent Activity（最近活动）小组件和任务时间线现已翻译。审计摘要此前在全部 22 种语言中都显示为英文。
+- 代理现在能看到文档类型定义但提取结果为空的字段。此前，代理会认为这些字段不存在，并跳过规定的更新操作，甚至不会尝试写入。
 
-### Security
+### 安全性
 
-- Frontend source maps are stripped from every deploy. Every environment
-  served them, production included.
+- 每次部署都会移除前端源映射。此前，所有环境（包括生产环境）都会提供这些文件。
 
 ---
 
 ## API Service — `12.83.156`
 
-### Supplier recognition and master data
+### 供应商识别和主数据
 
-- A supplier is identified when one lookup field is unique. With several
-  searchable fields, the results were combined as a union, so a broad name
-  match with four suppliers drowned out a tax id that matched exactly one.
-  Fields that match nothing no longer veto the fields that did. See
-  [Master Data Settings](../../administration-and-setup/settings/global-settings/document-types/fields/master-data-settings.md)
-  for how the fields work together.
-- Master-data replacements are recorded with their origin: dataset,
-  configuration, source field, operator and match kind. The validation screen
-  shows this and can restore the extracted value.
-- Cash Discount Term is imported from the supplier BOD; ERP-synced suppliers
-  had it empty. A Discount Term Overwrite entered as the full code ("143",
-  "012", "X08") is applied; only the percent prefix was consulted before.
-- Master data lookups are capped at 1,000 rows per page and pivot in SQL. A
-  19,000-record lookup took five seconds per call and blocked the API.
-- Filter property names and data types in the master-data lookup are bound as
-  SQL parameters. They were interpolated into the query.
+- 如果某个查找字段具有唯一匹配结果，就会据此识别供应商。此前，多个可搜索字段的结果会合并为并集，因此名称这种宽泛字段匹配到四个供应商时，会淹没恰好只匹配一个供应商的税号结果。没有匹配结果的字段不再否决其他字段的匹配结果。字段如何共同发挥作用，请参阅[主数据设置](../../administration-and-setup/settings/global-settings/document-types/fields/master-data-settings.md)。
+- 主数据替换会记录来源信息：数据集、配置、来源字段、运算符和匹配类型。验证屏幕会显示这些信息，并可恢复提取值。
+- Cash Discount Term（现金折扣期限）现在会从供应商 BOD 导入；此前与 ERP 同步的供应商此字段为空。以完整代码（“143”、“012”、“X08”）输入的 Discount Term Overwrite（折扣期限覆盖值）现在会生效；此前系统只检查百分比前缀。
+- 主数据查找每页最多返回 1,000 行，并在 SQL 中进行透视。此前，查找 19,000 条记录每次调用需要五秒，导致 API 阻塞。
+- 主数据查找中的筛选属性名称和数据类型现在会绑定为 SQL 参数。此前，这些内容会直接插入查询中。
 
-### Document processing
+### 文档处理
 
-- Documents from an organisation that uploads continuously were demoted to
-  priority 9, which the queue only serves when every higher priority is empty.
-  The demotion is now capped at 3. The reconciler that should re-queue stuck
-  documents had no working credentials in production; it does now.
-- A finished, exported document is never overwritten with "error". A workflow
-  flag that was never cleared kept the retry sweeper picking up a successfully
-  exported document once a minute until the retry limit stamped it "error" and
-  fired the customer's export-error mail, 2 h 17 min after the export.
-- Merging and appending accepts `.PDF` and `.Pdf` files. Scanner output named
-  `SCAN0001.PDF` was rejected with "Only PDF files are allowed."
-- Cache invalidation scans the key space once instead of twice and only clears
-  the lookup data types a BOD changed. Every BOD used to wipe the
-  whole lookup cache for the organisation, blocking the API while it walked
-  everyone's keys.
-- Model retraining runs as a background task and returns immediately with a
-  status the UI polls.
-- A processing token from another organisation is rejected independently of
-  the sub-organisation membership check in front of it.
-- The user sync leaves the system-user flag alone instead of resetting it on
-  every run.
+- 持续上传文档的组织中，文档曾被降至优先级 9；只有所有更高优先级队列都为空时，队列才会处理优先级 9。现在降级幅度最多为 3。生产环境中用于重新排队卡住文档的协调器此前没有可用凭证，现在已经修复。
+- 已完成并导出的文档绝不会再被改为“错误”。此前，工作流标记未被清除，重试扫描器每分钟都会重新处理已成功导出的文档，直到达到重试上限，将其标记为“错误”并发送客户导出错误邮件；此事发生在导出后 2 小时 17 分钟。
+- 合并和追加现在接受 `.PDF` 和 `.Pdf` 文件。此前，名为 `SCAN0001.PDF` 的扫描仪输出会因“Only PDF files are allowed.”（只允许 PDF 文件）而被拒绝。
+- 缓存失效现在只扫描一次键空间，而不是两次，并且只清除 BOD 更改过的查找数据类型。此前，每个 BOD 都会清除组织的整个查找缓存，扫描所有键时会阻塞 API。
+- 模型重新训练现在作为后台任务运行，并立即返回状态供 UI 轮询。
+- 即使前置层通过了子组织成员资格检查，来自其他组织的处理令牌仍会被拒绝。
+- 用户同步现在会保留系统用户标记，不再在每次运行时重置它。
 
-### Export
+### 导出
 
-- M3 receipt lines pair the exported unit price with the invoice line's own
-  price basis. The price travelled with the PO line's divisor and the ERP
-  repriced the line at 1,000 times the invoiced amount.
-- A table export survives a line whose purchase order has been removed; the
-  line is exported without a price basis.
-- IDM export: a multi-value field mapped to a numeric field (for example a
-  quantity) crashed the export payload. The value is converted to text first.
+- M3 收货行项目会将导出的单价与发票行项目自身的价格基数配对。此前，价格沿用了采购订单行项目的除数，导致 ERP 按发票金额的 1,000 倍重新计价。
+- 即使某行项目所属的采购订单已被移除，表格导出仍会继续；该行项目会在没有价格基数的情况下导出。
+- IDM 导出：映射到数值字段（例如数量）的多值字段此前会导致导出载荷崩溃。现在会先将其值转换为文本。
 
-### E-documents
+### 电子文档
 
-- XRechnung CII invoices whose due payable amount is 0.00 because a prepaid
-  amount offsets the total show the grand total (BT-112) as total amount. The
-  customer saw "total amount 0,00".
-- XRechnung CII and Facturae documents deliver their supplier fields again.
-  Stale organisation-level overrides were shadowing the correct default
-  mapping, so supplier recognition could never match.
-- The validation rules catalogue is paged, searched and sorted on the server,
-  with facets for the filter bar.
+- 对于 XRechnung CII 发票，如果预付金额抵消了总额，导致应付金额为 0.00，则总金额会显示总额（BT-112）。此前客户看到的“total amount 0,00”（总金额 0,00）不正确。
+- XRechnung CII 和 Facturae 文档现在会重新提供其供应商字段。过时的组织级覆盖设置此前遮蔽了正确的默认映射，导致供应商识别始终无法匹配。
+- 验证规则目录现在会在服务器端分页、搜索和排序，并为筛选栏提供分面选项。
 
-### Classification
+### 分类
 
-- Swiss documents are classified `de_CH`, `fr_CH` or `it_CH` from their content
-  (CHF amounts, CHE VAT numbers, CH IBAN). The locale was taken from the
-  organisation default and Swiss documents got `de_DE`.
+- 瑞士文档会根据其内容（CHF 金额、CHE 增值税号、CH IBAN）分类为 `de_CH`、`fr_CH` 或 `it_CH`。此前，系统采用组织默认区域设置，导致瑞士文档被分类为 `de_DE`。
 
-### Dashboard search
+### 仪表板搜索
 
-- One operator semantics on Postgres and ClickHouse: `=` exact, `:` contains
-  with edge wildcards, `!=` complement including empty values. On Postgres, `=`
-  used to be a prefix match, so `invoice_id=911892112` also returned
-  911892112333.
-- A bare search is a substring search over every field, business identifiers
-  included. Purchase order, order number, barcode, invoice type, invoice sub
-  type and requisition number had no bare-text arm at all.
-- The invoice number chip is exact on Postgres, as it already was on the
-  index. Leading zeros, float forms and case are treated the same in free text
-  and in chips.
-- The dashboard's WebSocket search carries the caller's credential to the
-  full-text service. Every delegation was refused before, so the dashboard
-  silently searched Postgres alone and presented the answer as complete.
-- Status tiles, result count and result list run on one set of predicates.
-  The tiles used to describe the whole organisation during any search.
-- Sub-organisation and document-type permissions are applied before the result
-  window, so permitted documents no longer fall out of the 500 / 10,000 cap.
-- Vector search caps at the real result window and reports the cap instead of
-  showing "(50)" as an exact total.
-- A search that ran without the full-text index (index missing, index minutes
-  behind, capability lookup failed, degraded field resolution) reports its
-  window status instead of "complete".
-- Dashboard exports of a truncated search carry a notice row in the CSV/XLSX
-  and in the notification mail.
-- Document scripts that call the full-text search authenticate correctly and
-  surface failures instead of returning an empty result.
+- Postgres 和 ClickHouse 现在使用相同的运算符语义：`=` 精确匹配，`:` 表示包含并支持边缘通配符，`!=` 表示补集且包含空值。此前，Postgres 上的 `=` 会进行前缀匹配，因此 `invoice_id=911892112` 也会返回 911892112333。
+- 裸搜索会在所有字段中进行子字符串搜索，包括业务标识符。采购订单、订单号、条形码、发票类型、发票子类型和请购单号此前完全没有裸文本搜索分支。
+- 发票编号筛选条件在 Postgres 上现在是精确匹配，此前它在索引中已经如此。自由文本搜索和筛选条件会以相同方式处理前导零、浮点数形式和大小写。
+- 仪表板的 WebSocket 搜索会将调用方凭证传递给全文服务。此前，每次委托都遭到拒绝，因此仪表板只会静默搜索 Postgres，却把结果作为完整结果显示。
+- 状态磁贴、结果数量和结果列表现在使用同一组谓词。此前，任何搜索都会导致状态磁贴描述整个组织的文档。
+- 子组织和文档类型权限会在结果窗口之前应用，因此获准查看的文档不会再被 500 / 10,000 条的上限排除。
+- 向量搜索现在会限制在实际结果窗口内，并报告达到上限，而不会把“(50)”显示为精确总数。
+- 未使用全文索引运行的搜索（索引缺失、索引落后数分钟、能力查询失败、字段解析降级）会报告结果窗口状态，而不会显示“完整”。
+- 被截断搜索的仪表板导出结果会在 CSV/XLSX 和通知邮件中包含提示行。
+- 调用全文搜索的文档脚本现在会正确进行身份验证，并显示失败信息，而不是返回空结果。
 
-### Purchase order matching (in-process matcher)
+### 采购订单匹配（进程内匹配器）
 
-For organisations that match in the API rather than in the PO Match Service:
+对于在 API 而非 PO Match Service 中执行匹配的组织：
 
-- Every column comparison is recorded, including unit price and quantity, so
-  the mismatch tooltip can name the column that failed.
-- Purchase orders removed by the user stay removed in automatic matching.
-- A corrected PO number is matched in the save that corrects it.
+- 现在会记录每列的比较结果，包括单价和数量，因此不匹配提示可以指出未通过的列。
+- 用户移除的采购订单在自动匹配中会继续保持移除状态。
+- 在保存 PO 编号修正的同时，会使用修正后的编号进行匹配。
 
-### Analytics
+### 分析
 
-- Touchless: all backend changes behind the Web App section above, including
-  stage evidence recorded by each pipeline stage, the PO-match trace, change
-  proposals with preview, apply and revert, segmentation, bulk status in one
-  call per tick, and the trend endpoint accepting any window and a supplier.
-- Three analytics background tasks that failed on every scheduled run are
-  fixed.
+- Touchless：包含上述 Web App 部分提到的所有后端变更，包括各处理阶段记录的阶段证据、PO 匹配轨迹、带预览、应用和撤销功能的变更提案、分段、每个周期通过一次调用完成的批量状态更新，以及可接受任意时间窗口和供应商的趋势端点。
+- 三个每次计划运行都会失败的分析后台任务现已修复。
 
 ---
 
 ## PO Match Service — `1.59.34`
 
-- A PO line's unit price is derived from its net amount, not its taxed total,
-  and a document's PO snapshot re-derives its unit prices at match time.
-- The service records where each PO number candidate came from and which
-  numbers a run looked up. A document's own invoice number is never a PO
-  candidate. A dropped match leaves its reason on the document for the screen.
-- The column that did not match is recorded, and the columns a fallback rule
-  removed are measured.
-- Purchase orders removed by the user are honoured, and stale background
-  matches are cleared after the final exclusion.
-- Manual matching works for organisations whose rules carry no `is_fallback`
-  flag. Users picked lines, pressed match, and nothing came back.
-- No more documents orphaned in "Queue": database statement timeouts,
-  keepalives and an explicit soft-time-limit handler mark the task as failed
-  instead of relying on a kill that left no trace.
-- Two production errors (a `NaN` unit price, a group without quantities) no
-  longer fail the whole match.
-- Tolerance changes are read per matching request, so a tolerance saved a
-  moment ago is used by the next match.
-- The five-stage decision trace is persisted per document for Touchless.
+- PO 行项目的单价现在根据净额而不是含税总额计算；文档的 PO 快照也会在匹配时重新计算单价。
+- 服务会记录每个 PO 编号候选值的来源，以及每次运行所查找的编号。文档自身的发票编号绝不会作为 PO 候选值。匹配结果被丢弃时，系统会在文档上保留原因，供屏幕显示。
+- 系统会记录未通过匹配的列，并测量后备规则移除了哪些列。
+- 用户移除的采购订单会被遵循；最终排除后，过时的后台匹配结果会被清除。
+- 对规则中没有 `is_fallback` 标记的组织，现在可以手动匹配。此前，用户选择行项目并点击匹配后，没有任何结果。
+- 不再有文档被遗弃在“队列”中：数据库语句超时、保活机制和明确的软时间限制处理器会将任务标记为失败，不再依赖无法留下任何记录的强制终止。
+- 两种生产环境错误（`NaN` 单价、没有数量的组）不再导致整个匹配失败。
+- 每次匹配请求都会读取容差设置，因此刚保存的容差会应用于下一次匹配。
+- Touchless 现在会按文档持久保存五阶段决策轨迹。
 
 ---
 
 ## Auth Service — `1.78.27`
 
-- `/organisation/subscriptions` can skip the credit balance, and the credit
-  calculation runs all contract-year windows in one statement instead of one
-  query per window (32 queries at about 700 ms each for the largest
-  organisation). A daily usage rollup is prepared for further use.
-- Remaining-token figures on organisation readers are calculated per contract
-  year.
-- Token expiry is enforced on cache hits. A cached entry could authenticate for
-  up to nine hours after the token expired.
-- Token verification stops writing an unchanged `org_id` back to the user
-  row on every request, which produced an UPDATE per call.
-- Health checks skip Redis I/O, and the Redis client is pooled. A
-  memory leak that drove the autoscaler to maximum replicas is fixed, and the
-  service is back to two workers.
-- A repeated supplier registration (magic link opened twice) reuses the
-  existing membership instead of failing with a duplicate-key error.
-- The password-reset mail thread uses the one registered Flask app; the reset
-  was failing with "current Flask app is not registered" since 25 August.
-- The system-user flag can be changed on an existing user when no other member
-  holds it.
-- MCP login: transaction-bound MFA, single-use consent, and a forced account
-  choice when the browser holds two session identities.
+- `/organisation/subscriptions` 可以跳过积分余额计算；积分计算现在会通过一条语句处理所有合同年度时间窗口，而不再为每个窗口单独查询（最大组织此前需要 32 次查询，每次约 700 毫秒）。系统还会准备每日使用量汇总，供后续使用。
+- 组织读取接口返回的剩余令牌数量现在按合同年度计算。
+- 即使命中缓存，也会执行令牌过期检查。此前，过期令牌仍可通过缓存条目完成身份验证，最长持续九小时。
+- 令牌验证不再在每次请求中将未更改的 `org_id` 写回用户记录；此前这会导致每次调用都执行一次 UPDATE。
+- 健康检查会跳过 Redis I/O，Redis 客户端也会被重复使用。导致自动扩缩器扩展到最大副本数的内存泄漏现已修复，服务恢复为两个工作进程。
+- 重复的供应商注册（魔术链接被打开两次）现在会复用现有成员关系，不再因重复键错误而失败。
+- 密码重置邮件线程现在会使用唯一已注册的 Flask 应用；自 8 月 25 日以来，密码重置一直因“current Flask app is not registered”（当前 Flask 应用未注册）而失败。
+- 如果没有其他成员持有系统用户标记，现在可以更改现有用户的该标记。
+- MCP 登录：与事务绑定的 MFA、单次使用的授权，以及浏览器持有两个会话身份时强制用户选择账户。
 
 ---
 
 ## Auth Bridge Service — `0.5.7`
 
-EU ↔ US authentication replication:
+EU ↔ US 身份验证复制：
 
-- The periodic reconcile keeps the replication stream alive. It took about
-  95 s while the sender timeout was 60 s, so every six-hourly reconcile dropped
-  the stream on schedule.
-- When the stream dies, the replication slot is reattached in place instead of
-  rebuilding the bridge and re-running the full startup reconcile.
-- Reconciliation diffs primary keys in pages instead of loading both sides into
-  memory, which no longer fits since the token table joined replication.
-- An existing replication origin is treated as success, not degradation.
+- 定期协调现在会保持复制流运行。此前，协调大约需要 95 秒，而发送方超时为 60 秒，因此每次每六小时执行的协调都会按时断开复制流。
+- 复制流中断时，现在会就地重新连接复制槽，而不是重建桥接服务并重新执行完整的启动协调。
+- 协调现在按页比较主键，而不是将两侧数据全部载入内存；令牌表加入复制后，原有做法已超出内存承受能力。
+- 现有复制源现在会被视为成功，而不是降级状态。
 
 ---
 
 ## Extraction Service — `1.55.33`
 
-- Structured extraction is resolved per supplier: a trained layout's setting
-  wins over the organisation preference, the same way the AI model does.
-- A learned column mapping cannot forbid columns the invoice has.
-- AI table extraction: amount columns are typed as numbers with a description,
-  and fabricated non-numeric values in amount columns (a "St." copied from the
-  neighbouring cell into unit price per) are dropped instead of stored.
-- US invoices: when the net amount already equals the total, tax resolves to 0
-  instead of keeping a spurious extracted tax. Sub-cent float noise no longer
-  decides between candidate net/tax pairs (268.28 + 22.13 was losing to
-  net = total, tax = 0).
-- A table whose header row was never mapped to real names is extracted
-  instead of failing entirely.
+- 结构化提取现在按供应商解析：已训练版式的设置优先于组织偏好，方式与 AI 模型相同。
+- 已学习的列映射不能禁止发票实际包含的列。
+- AI 表格提取：金额列现在会标记为数值类型并附带说明；金额列中生成的非数值内容（例如将相邻单元格中的“St.”复制到“单位价格单位”列）会被丢弃，而不是存储。
+- 美国发票：如果净额已经等于总额，税额会解析为 0，而不再保留误提取的税额。亚分浮点误差不再决定候选净额/税额组合（此前 268.28 + 22.13 会输给“净额 = 总额、税额 = 0”）。
+- 即使表头行从未映射到真实名称，系统现在也会提取表格，而不是让整个提取过程失败。
 
 ---
 
 ## Fulltext Service — `1.42.35`
 
-- The search-result cache is on in every environment; production, sandbox and
-  stage had been running without it since the active env files were created.
-  Upload and deletion invalidate it, so a search after an upload sees the new
-  document.
-- Exact `=` on a dynamic text field compares the whole value only. A wildcard
-  on the analysed path made `note_field=53173` match "PO 53173 / 2024".
-- A bare hyphenated identifier such as `2026-003` is one literal, not a bag of
-  tokens.
-- Purchase order numbers are found in every storage shape, including digits-only
-  identifiers whose exact clause was silently dropped.
-- Read paths stop creating the index they read. A missing or empty index
-  reported "complete, 0 results"; every zero-hit answer now carries a window
-  status and reason.
-- Written currency values, legacy boolean mappings, dates and tax flags survive
-  the slim index rebuild, and index entries without fields are detected and
-  recovered from extraction.
+- 所有环境现在都会启用搜索结果缓存；生产、沙盒和预发布环境自创建活动环境文件以来一直没有使用缓存。上传和删除操作会使缓存失效，因此上传后搜索可以看到新文档。
+- 动态文本字段上的精确 `=` 现在只会比较完整值。此前，分析路径上的通配符会导致 `note_field=53173` 匹配“PO 53173 / 2024”。
+- 类似 `2026-003` 这样带连字符的裸标识符现在会被视为一个字面值，而不是多个分词。
+- 在所有存储形式中都能找到采购订单号，包括此前精确匹配子句被静默丢弃的纯数字标识符。
+- 读取路径不再创建自己读取的索引。此前，缺失或空索引会报告“完整，0 个结果”；现在所有零命中结果都会带有结果窗口状态和原因。
+- 手写货币值、旧版布尔映射、日期和税务标记都会在精简索引重建中保留；不含字段的索引条目现在会被检测并从提取结果中恢复。
 
 ---
 
 ## Docflow Service — `2.10.11`
 
-- Advanced workflow imports are gated on the organisation's entitlement, and a
-  batch is checked before anything is written. An organisation without the
-  advanced module could import an advanced workflow it then had no way to open.
-- A workflow rename rides the save, and template renames are persisted.
-- The "pending workflow execution" update is retried on dropped connections. A
-  single failed request left the flag unchanged and kept the document out of
-  export until someone restarted it.
+- 导入高级工作流前会检查组织是否具备相应权益，并会在写入任何内容之前检查整个批次。此前，没有高级模块的组织可以导入高级工作流，却无法打开该工作流。
+- 重命名工作流会随保存操作提交，模板重命名也会持久保存。
+- 发生连接中断时，会重试“待处理工作流执行”更新。此前，单次请求失败就会使标记保持不变，导致文档无法导出，直到有人重新启动它。
 
 ---
 
 ## Docnet Service — `1.56.12`
 
-- Field discovery returns every header field the layout defines, populated or
-  not, and matches what the write guard checks. Agents skipped mandated field
-  updates because empty fields looked absent.
-- Identities are cached under the same organisation-scoped key the API uses,
-  so the organisation API-key boundary holds across both services.
+- 字段发现会返回版式定义的所有标头字段，无论字段是否已填充，并与写入保护检查的结果保持一致。此前，代理会因空字段看起来像不存在而跳过必填字段更新。
+- 身份信息现在会使用与 API 相同的组织范围键进行缓存，因此两个服务都能维持组织 API 密钥边界。
 
 ---
 
 ## Email Service — `1.41.6`
 
-- Shared Office 365 mailboxes with more than ten subfolders resolve every
-  folder. Microsoft Graph pages folders ten at a time; the 11th and later
-  configurations failed every poll with "unable to find the selected Folder".
+- 现在可以解析包含十个以上子文件夹的共享 Office 365 邮箱中的所有文件夹。Microsoft Graph 每次只会分页返回十个文件夹；此前，第 11 个及之后的配置会在每次轮询时因“unable to find the selected Folder”（找不到选定的文件夹）而失败。
 
 ---
 
 ## FTP Service — `1.32.18`
 
-- The SFTP scheduler starts in each worker process instead of before the fork.
-  Periodic SFTP imports were silently failing with a corrupted scheduler
-  state, while a fresh process worked fine.
+- SFTP 调度器现在会在每个工作进程中启动，而不是在派生进程前启动。此前，定期 SFTP 导入会因调度器状态损坏而静默失败，但新进程运行正常。
 
 ---
 
-## Auto Accounting `1.21.7`, Barcode `1.18.14`, OCR `1.10.11`, Operator `1.42.12`, Ideas `0.3.6`
+## Auto Accounting `1.21.7`、Barcode `1.18.14`、OCR `1.10.11`、Operator `1.42.12`、Ideas `0.3.6`
 
-Build and deployment changes only (base image update, CI credentials). No
-change in behaviour.
-
-<!-- Release R1.0.13. Everything in the prod->sandbox code delta is announced.
-     Held back because Jira "Release No." names the later release R1.1:
-     DRFS-778 (discount due dates on import), DRFS-712, MEF-165, MEF-166,
-     DOCB-14389. Announce them with R1.1. -->
+仅构建和部署变更（基础映像更新、CI 凭证）。行为没有变化。

@@ -1,190 +1,190 @@
-# Fellow kv table column rule
+# Fellow kv 表格列规则
 
-## Tabelle `public.fellow_kv_table_column_rule`
+## 表格 `public.fellow_kv_table_column_rule`
 
-### Spalten
+### 列
 
-* `id`: internal
-* `docType`: internal
-* `tableName`: internal
-* `dlfName`: internal
-* `multi_line`: boolean
-* `filterID1`: internal
-* `filterID2`: internal
-* `filterID3`: internal
-* `tfidf_doc_id`: internal
-* `tfidf_id`: internal
-* `valuePattern`: internal
-* `coordsY0`: integer
-* `coordsY1`: integer
-* `coordsX0`: integer
-* `coordsX1`: integer
-* `normalizedY0`: numeric
-* `normalizedY1`: numeric
-* `normalizedX0`: numeric
-* `normalizedX1`: numeric
-* `width`: integer
-* `height`: integer
-* `patternLeft`: internal
-* `patternRight`: internal
-* `patternAbove`: internal
-* `patternBelow`: internal
-* `wordLeft`: internal
-* `wordAbove`: internal
-* `ruleWeight`: integer
-* `user_id`: integer
-* `org_id`: ID to organisation
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `is_deleted`: boolean
-* `is_new`: boolean
+* `id`：内部字段
+* `docType`：内部字段
+* `tableName`：内部字段
+* `dlfName`：内部字段
+* `multi_line`：布尔值
+* `filterID1`：内部字段
+* `filterID2`：内部字段
+* `filterID3`：内部字段
+* `tfidf_doc_id`：内部字段
+* `tfidf_id`：内部字段
+* `valuePattern`：内部字段
+* `coordsY0`：整数
+* `coordsY1`：整数
+* `coordsX0`：整数
+* `coordsX1`：整数
+* `normalizedY0`：数值
+* `normalizedY1`：数值
+* `normalizedX0`：数值
+* `normalizedX1`：数值
+* `width`：整数
+* `height`：整数
+* `patternLeft`：内部字段
+* `patternRight`：内部字段
+* `patternAbove`：内部字段
+* `patternBelow`：内部字段
+* `wordLeft`：内部字段
+* `wordAbove`：内部字段
+* `ruleWeight`：整数
+* `user_id`：整数
+* `org_id`：组织 ID
+* `created_on`：带时区的时间戳
+* `last_modified_on`：带时区的时间戳
+* `is_deleted`：布尔值
+* `is_new`：布尔值
 
-### Analyse & Beschreibung
+### 分析与说明
 
-## Technical Documentation for `public.fellow_kv_table_column_rule`
+## `public.fellow_kv_table_column_rule` 技术文档
 
-### Introduction
+### 简介
 
-The `public.fellow_kv_table_column_rule` table appears to be designed for storing rules and patterns for processing or extracting data from documents. This is inferred from the presence of fields such as `docType`, `tableName`, `dlfName`, and various pattern and coordinate-related fields. The table seems to facilitate the application of rules to different document types, enabling pattern recognition and data extraction from structured documents like invoices or contracts.
+`public.fellow_kv_table_column_rule` 表似乎用于存储处理文档或从文档中提取数据时所需的规则和模式。这是根据 `docType`、`tableName`、`dlfName` 以及各种模式和坐标相关字段推断得出的。该表似乎用于将规则应用于不同类型的文档，从而支持对发票或合同等结构化文档进行模式识别和数据提取。
 
-### Column Descriptions
+### 列说明
 
 #### id
 
-* **Meaning**: Unique identifier for each rule.
-* **Role**: Primary key.
-* **Typical Contents**: UUID strings.
-* **Note**: Essential for identifying each row uniquely.
+* **含义**：每条规则的唯一标识符。
+* **作用**：主键。
+* **典型内容**：UUID 字符串。
+* **说明**：对于唯一标识每一行至关重要。
 
 #### docType
 
-* **Meaning**: Type of document the rule applies to.
-* **Role**: Descriptive field.
-* **Typical Contents**: Document types like 'INVOICE', 'CONTRACT'.
-* **Note**: Helps categorize rules by document type.
+* **含义**：该规则适用的文档类型。
+* **作用**：描述性字段。
+* **典型内容**：'INVOICE'、'CONTRACT' 等文档类型。
+* **说明**：用于按文档类型对规则进行分类。
 
 #### tableName
 
-* **Meaning**: Name of the table where the rule is applied.
-* **Role**: Descriptive field.
-* **Typical Contents**: Table names like 'INVOICE\_TABLE'.
-* **Note**: Indicates the context within which the rule is applied.
+* **含义**：应用该规则的表名称。
+* **作用**：描述性字段。
+* **典型内容**：例如 'INVOICE\_TABLE' 这样的表名。
+* **说明**：指明应用该规则的上下文。
 
 #### dlfName
 
-* **Meaning**: Specific field or column name in the document.
-* **Role**: Descriptive field.
-* **Typical Contents**: Field names such as 'COUNTRY\_ORIGIN'.
-* **Note**: Specifies the target field for data extraction.
+* **含义**：文档中特定字段或列的名称。
+* **作用**：描述性字段。
+* **典型内容**：例如 'COUNTRY\_ORIGIN' 这样的字段名。
+* **说明**：指定数据提取的目标字段。
 
 #### multi\_line
 
-* **Meaning**: Indicates whether the rule applies to multiline text.
-* **Role**: Boolean flag.
-* **Typical Contents**: `True` or `False`.
-* **Note**: Useful for handling multiline text fields.
+* **含义**：指示该规则是否适用于多行文本。
+* **作用**：布尔标志。
+* **典型内容**：`True` 或 `False`。
+* **说明**：适用于处理多行文本字段。
 
 #### filterID1, filterID2, filterID3
 
-* **Meaning**: Filters or conditions for applying the rule.
-* **Role**: Descriptive or conditional fields.
-* **Typical Contents**: Possibly strings representing filter conditions.
-* **Note**: Used to refine rule application based on certain conditions.
+* **含义**：应用该规则时使用的筛选条件。
+* **作用**：描述性字段或条件字段。
+* **典型内容**：可能是表示筛选条件的字符串。
+* **说明**：用于根据特定条件细化规则的应用范围。
 
 #### tfidf\_doc\_id, tfidf\_id
 
-* **Meaning**: Identifiers related to TF-IDF processing.
-* **Role**: Foreign key-like roles or identifiers.
-* **Typical Contents**: UUID strings.
-* **Note**: Likely related to text analysis and feature extraction.
+* **含义**：与 TF-IDF 处理相关的标识符。
+* **作用**：类似外键的角色或标识符。
+* **典型内容**：UUID 字符串。
+* **说明**：可能与文本分析和特征提取相关。
 
 #### valuePattern
 
-* **Meaning**: Regex pattern for value extraction.
-* **Role**: Pattern field.
-* **Typical Contents**: Regular expressions.
-* **Note**: Defines the pattern used to identify and extract values.
+* **含义**：用于提取值的正则表达式模式。
+* **作用**：模式字段。
+* **典型内容**：正则表达式。
+* **说明**：定义用于识别和提取值的模式。
 
 #### coordsY0, coordsY1, coordsX0, coordsX1
 
-* **Meaning**: Coordinates defining the bounding box for extraction.
-* **Role**: Coordinate fields.
-* **Typical Contents**: Integers representing pixel positions.
-* **Note**: Define the area of interest in a document for data extraction.
+* **含义**：定义提取边界框的坐标。
+* **作用**：坐标字段。
+* **典型内容**：表示像素位置的整数。
+* **说明**：定义文档中用于数据提取的关注区域。
 
 #### normalizedY0, normalizedY1, normalizedX0, normalizedX1
 
-* **Meaning**: Normalized coordinates for extraction.
-* **Role**: Coordinate fields.
-* **Typical Contents**: Numeric values representing proportional positions.
-* **Note**: Used for resolution-independent area definitions.
+* **含义**：用于提取的归一化坐标。
+* **作用**：坐标字段。
+* **典型内容**：表示比例位置的数值。
+* **说明**：用于定义与分辨率无关的区域。
 
 #### width, height
 
-* **Meaning**: Dimensions of the area defined by the coordinates.
-* **Role**: Dimensional fields.
-* **Typical Contents**: Integer values.
-* **Note**: Helps in defining the size of the extraction area.
+* **含义**：由这些坐标定义的区域尺寸。
+* **作用**：尺寸字段。
+* **典型内容**：整数值。
+* **说明**：帮助定义提取区域的大小。
 
 #### patternLeft, patternRight, patternAbove, patternBelow
 
-* **Meaning**: Contextual patterns surrounding the target data.
-* **Role**: Pattern fields.
-* **Typical Contents**: Regular expressions.
-* **Note**: Provide context for where data is located relative to other text.
+* **含义**：目标数据周围的上下文模式。
+* **作用**：模式字段。
+* **典型内容**：正则表达式。
+* **说明**：提供数据相对于其他文本所在位置的上下文。
 
 #### wordLeft, wordAbove
 
-* **Meaning**: Specific words located near the target data.
-* **Role**: Contextual fields.
-* **Typical Contents**: Specific words or phrases.
-* **Note**: Helps in refining the search for target data based on nearby words.
+* **含义**：位于目标数据附近的特定词语。
+* **作用**：上下文字段。
+* **典型内容**：特定词语或短语。
+* **说明**：根据附近的词语帮助缩小目标数据的搜索范围。
 
 #### ruleWeight
 
-* **Meaning**: Significance or priority of the rule.
-* **Role**: Weight or priority field.
-* **Typical Contents**: Integer values.
-* **Note**: Higher values might indicate higher priority or importance.
+* **含义**：规则的重要程度或优先级。
+* **作用**：权重或优先级字段。
+* **典型内容**：整数值。
+* **说明**：较大的值可能表示更高的优先级或重要性。
 
 #### user\_id
 
-* **Meaning**: Identifier of the user who created or modified the rule.
-* **Role**: Foreign key.
-* **Typical Contents**: Integer values.
-* **Note**: Links the rule to a specific user.
+* **含义**：创建或修改该规则的用户标识符。
+* **作用**：外键。
+* **典型内容**：整数值。
+* **说明**：将规则关联到特定用户。
 
 #### org\_id
 
-* **Meaning**: Identifier of the organization associated with the rule.
-* **Role**: Foreign key.
-* **Typical Contents**: UUID strings.
-* **Note**: Associates the rule with an organization.
+* **含义**：与该规则关联的组织标识符。
+* **作用**：外键。
+* **典型内容**：UUID 字符串。
+* **说明**：将规则关联到某个组织。
 
 #### created\_on
 
-* **Meaning**: Timestamp of when the rule was created.
-* **Role**: Technical field.
-* **Typical Contents**: Timestamp with time zone.
-* **Note**: Useful for tracking the creation history of the rule.
+* **含义**：规则的创建时间戳。
+* **作用**：技术字段。
+* **典型内容**：带时区的时间戳。
+* **说明**：用于追踪规则的创建历史。
 
 #### last\_modified\_on
 
-* **Meaning**: Timestamp of the last modification of the rule.
-* **Role**: Technical field.
-* **Typical Contents**: Timestamp with time zone or `None`.
-* **Note**: Tracks changes to the rule over time.
+* **含义**：规则最后修改时间的时间戳。
+* **作用**：技术字段。
+* **典型内容**：带时区的时间戳或 `None`。
+* **说明**：追踪规则随时间发生的变化。
 
 #### is\_deleted
 
-* **Meaning**: Indicates whether the rule is marked as deleted.
-* **Role**: Boolean flag.
-* **Typical Contents**: `True` or `False`.
-* **Note**: Used for soft deletion of rules.
+* **含义**：指示该规则是否已标记为删除。
+* **作用**：布尔标志。
+* **典型内容**：`True` 或 `False`。
+* **说明**：用于软删除规则。
 
 #### is\_new
 
-* **Meaning**: Indicates whether the rule is newly created.
-* **Role**: Boolean flag.
-* **Typical Contents**: `True` or `False`.
-* **Note**: Helps in identifying recently added rules.
+* **含义**：指示该规则是否为新创建的。
+* **作用**：布尔标志。
+* **典型内容**：`True` 或 `False`。
+* **说明**：帮助识别最近添加的规则。

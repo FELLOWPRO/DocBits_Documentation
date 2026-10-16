@@ -1,324 +1,182 @@
-# DocBits Release Notes — 12–25 August 2026
+# DocBits 发布说明 — 2026 年 8 月 12–25 日
 
-_What changes in the DocBits production upgrade on 25 August 2026, covering
-everything since the 12 August release. Each service lists the version being
-deployed, then what's new or fixed in plain language. Services not listed had
-no customer-facing changes._
+_2026 年 8 月 25 日 DocBits 生产环境升级内容，涵盖自 8 月 12 日发布以来的所有变更。每项服务先列出部署版本，再用通俗语言说明新增或修复的内容。未列出的服务没有面向客户的变更。_
 
 ---
 
-## Highlights
+## 重点
 
-- **Stricter organisation isolation.** A security sweep closed several places
-  where data from one organisation could be read or written from another:
-  document scripts, sub-organisation user lists, group memberships and the
-  processing token a document carries through the pipeline are now all checked
-  against the caller's organisation. Approvals also enforce four-eyes properly:
-  the second approver must be a different person than the first.
-- **Documents stop getting stuck.** Four separate causes of documents hanging
-  forever were fixed: exports that stayed in "Exporting" after being denied,
-  restarts that froze when a processing step crashed, barcode splits that never
-  reported back, and the accounting screen hanging on "Preparing…". In each
-  case the document now either finishes or shows a real error you can act on.
-- **Credit notes are recognised as credit notes.** XRechnung 3.0, 3.0.1 and
-  3.0.2 credit notes in CII syntax, pure CII credit notes and ZUGFeRD 2.4 /
-  Factur-X 1.08 documents are all classified correctly now, with the total
-  read from the right field. Scanned documents that mention both "invoice"
-  and "credit note" are resolved by which keyword sits closer to the document
-  type, and amounts turn positive again when you reclassify a credit note back
-  to an invoice.
-- **PO matching does arithmetic you can trust.** Tolerances are compared as
-  exact decimals instead of floating-point values, are based on the purchase
-  order value, and invoices that reference several purchase orders are matched
-  against all of them. Columns you never mapped no longer distort the line
-  amount check, and when required columns are missing, the error names them.
-- **Workflow runs keep their work.** A workflow that writes a field value now
-  writes it onto the document in a way a later export can't silently revert.
-  Retried triggers no longer discard what the run already did, and two
-  triggers hitting the same document queue up instead of stealing each other's
-  lock.
-- **Password-reset e-mails send again.** They were silently never leaving the
-  server. The reset form also shows real feedback after you submit, and the
-  response no longer reveals whether an account exists.
+- **组织隔离更加严格。** 一轮安全检查修复了多个漏洞，防止一个组织读取或写入另一个组织的数据：文档脚本、子组织用户列表、群组成员关系，以及文档在处理管道中携带的处理令牌，现在都会根据调用者所属组织进行校验。审批也正确执行了四眼原则：第二位审批人必须与第一位审批人不同。
+- **文档不再卡住。** 我们修复了四种会导致文档一直挂起的情况：被拒绝后仍停留在“Exporting”的导出、处理步骤崩溃后冻结的重启、未返回结果的条码拆分，以及一直挂在“Preparing…”的会计处理页面。现在，遇到这些情况时，文档都会完成处理，或显示可供处理的实际错误。
+- **贷项通知单会被正确识别。** 现在，采用 CII 语法的 XRechnung 3.0、3.0.1 和 3.0.2 贷项通知单、纯 CII 贷项通知单，以及 ZUGFeRD 2.4 / Factur-X 1.08 文档都会被正确分类，并从正确字段读取总额。对于同时提到“发票”和“贷项通知单”的扫描文档，系统会根据哪个关键词更接近文档类型来判定；将贷项通知单重新分类为发票后，金额也会恢复为正数。
+- **采购订单匹配的计算结果值得信赖。** 容差现在使用精确十进制值进行比较，而不再使用浮点数；比较基于采购订单金额；引用多个采购订单的发票会与所有相关采购订单进行匹配。未映射的列不再影响行金额检查；缺少必填列时，错误信息会列出具体列名。
+- **工作流运行会保留已完成的工作。** 工作流写入字段值时，现在会以不会被后续导出静默还原的方式写入文档。重试的触发器不再丢弃本次运行已完成的工作；两个触发器同时处理同一文档时，会排队执行，不再互相抢占锁。
+- **密码重置邮件恢复发送。** 这些邮件此前一直未发出，且没有任何提示。重置表单现在会在提交后显示实际反馈，响应也不再泄露某个账户是否存在。
 
 ---
 
-## Web App — `10.55.0`
+## Web 应用 — `10.55.0`
 
-### Signing in and accounts
+### 登录和账户
 
-- Password reset works end to end again: the mail arrives, the form confirms
-  the submission, and the answer is the same whether or not the address has an
-  account.
-- If your organisation requires two-factor enrollment, the login screen now
-  says so instead of failing without a message.
-- Administrators can no longer switch on organisation-wide MFA enforcement
-  before login enrollment is available, which previously could lock people
-  out.
+- 密码重置的整个流程恢复正常：邮件会送达，表单会确认已提交，而且无论该地址是否关联账户，响应都相同。
+- 如果组织要求用户注册双重身份验证，登录页面现在会明确提示，而不再无提示地失败。
+- 在登录注册功能可用之前，管理员无法再启用组织范围的 MFA 强制要求；此前这样做可能会导致用户无法登录。
 
-### Validation screen
+### 验证界面
 
-- The zoom slider now goes up to 150% (it used to stop at 80%), and zooming
-  into a table works past the container width instead of doing nothing.
-- Empty amount fields count as 0 instead of firing an error toast, and a
-  double click on the document image is ignored when no field is selected.
-- The banner shown when another session holds the document lock had no text;
-  it explains itself now. Tagging a table no longer triggers a false "document
-  was modified externally" warning about your own change.
-- In the AI table, a column remap that would unmap another column asks for
-  confirmation first, and values that aren't numbers are flagged in AMOUNT and
-  NUMBER columns.
-- The "Extracted table" tab links to manual table training again when it is
-  empty.
-- Item numbers in the Compare line-item table are shown as identifiers, not
-  rounded like amounts.
-- Approver fields resolve user and group ids to names, so they never show a
-  raw id or sit empty. Task deadlines are converted through one UTC-aware
-  path, so every viewer sees the same date.
-- Documents sent back to validation show a loading spinner instead of a dead
-  screen while they are prepared.
+- 缩放滑块现在最高可调至 150%（此前上限为 80%）；放大表格时也能超出容器宽度，不再毫无反应。
+- 空金额字段现在按 0 处理，不再弹出错误提示；未选中字段时，双击文档图像也会被忽略。
+- 其他会话持有文档锁时显示的横幅此前没有文字，现在会说明情况。为表格添加标签时，也不再错误地提示“文档已被外部修改”，把用户自己的更改当作外部更改。
+- 在 AI 表格中，如果重新映射某列会导致另一列取消映射，系统会先请求确认；AMOUNT 和 NUMBER 列中的非数字值也会被标记。
+- “Extracted table”选项卡为空时，会再次显示指向手动表格训练的链接。
+- “Compare line-item”表格中的项目编号会作为标识符显示，不再像金额一样被四舍五入。
+- 审批人字段会将用户 ID 和群组 ID 解析为名称，不再显示原始 ID 或留空。任务截止日期现在通过统一的时区感知路径转换，因此所有查看者看到的日期都一致。
+- 退回验证的文档在准备期间会显示加载动画，不再出现无响应的屏幕。
 
-### Accounting
+### 会计处理
 
-- Splitted line items keep their % sign after pressing Enter, and 0 % is
-  accepted as a value.
-- In the account filter, Enter commits the first matching account instead of
-  doing nothing.
-- Flexdimension characters are mapped by dimension id, so dimensions land in
-  the right column even when the order differs.
-- A failed accounting preparation recovers with an error message instead of
-  hanging on "Preparing…" forever, and reopening a document no longer serves
-  stale data from the previous one.
+- 拆分后的行项目按 Enter 后仍会保留 % 符号，0 % 也会被接受为有效值。
+- 在账户筛选器中按 Enter，会提交第一个匹配的账户，不再毫无反应。
+- Flexdimension 字符现在按维度 ID 映射，因此即使维度顺序不同，也会进入正确的列。
+- 会计准备失败后，现在会显示错误信息并恢复，不再永远停留在“Preparing…”；重新打开文档时，也不再显示上一个文档的过期数据。
 
-### PO matching
+### 采购订单匹配
 
-- Opening PO Matching without every mandatory column mapped is possible again;
-  when something needed is missing, the message names the exact columns.
-- Columns that aren't mapped to anything are hidden when the screen opens,
-  after asking you once, and they no longer flow into the line amount
-  calculation.
-- The matched quantity refreshes after saving, and the missing-column popup
-  routes you to Field Validation where you can fix it.
+- 未映射所有必填列时，也可以再次打开 PO Matching；缺少必要列时，提示信息会列出具体列名。
+- 屏幕打开时，未映射到任何内容的列会在询问一次后隐藏，也不再参与行金额计算。
+- 保存后会刷新匹配数量；缺少列的弹窗会引导用户前往 Field Validation 进行修复。
 
-### Dashboard and search
+### 仪表板和搜索
 
-- Dropdown-based columns (invoice type, status and similar) show their label
-  in your interface language instead of the raw stored value.
-- Free-text search accepts parentheses as plain text; it used to reject the
-  query. The "not equal" filter operator stays selected, and editing a filter
-  by hand no longer corrupts the field name.
-- Selecting a sub-organisation in quick search inserts its name, not its uuid,
-  and the sub-org autocomplete no longer lists duplicates.
-- The dashboard can now fetch up to 10,000 documents per search window, so
-  large result sets page correctly.
-- The duplicate-document panel shows the same resolved columns as the main
-  list, and multi-word supplier filter values survive pressing Enter.
+- 下拉列表列（发票类型、状态等）现在会以界面语言显示标签，而不再显示原始存储值。
+- 自由文本搜索现在将括号视为普通文本；此前包含括号的查询会被拒绝。“不等于”筛选运算符会保持选中状态，手动编辑筛选条件也不再破坏字段名称。
+- 在快速搜索中选择子组织时，会插入其名称而非 UUID；子组织自动补全也不再列出重复项。
+- 仪表板现在每个搜索窗口最多可获取 10,000 份文档，因此大型结果集可以正确分页。
+- 重复文档面板现在会显示与主列表相同的解析后列；多词供应商筛选值按 Enter 后也会保留。
 
-### Tasks
+### 任务
 
-- The assignment e-mail goes out when a task is assigned, once. Editing a task
-  or marking it done no longer re-sends it, and the "assigned on" date stays
-  the date of assignment. Task e-mails also render properly in Outlook.
+- 分配任务时，分配邮件会发送一次。编辑任务或将其标记为已完成时，不会再次发送邮件；“分配日期”也会保持为实际分配日期。任务邮件现在也能在 Outlook 中正确显示。
 
-### Workflow Builder
+### 工作流构建器
 
-- Search, sort order and pagination in the workflow list stay consistent
-  while you filter.
-- The "run workflow on change" toggle in the layout builder now gates the run,
-  and enabling it requires picking a workflow.
+- 工作流列表在筛选时，搜索、排序顺序和分页会保持一致。
+- 布局构建器中的“run workflow on change”切换项现在会控制是否运行工作流；启用该选项时，必须选择一个工作流。
 
-### Settings and administration
+### 设置和管理
 
-- The WatchDog download link and setup command point to the environment you
-  are in, not always production.
-- Decision Trees: the selected document field stays highlighted when the
-  picker reopens, truncated labels get a tooltip, and user names (not raw ids)
-  are shown when adding a line.
-- The System Admin checkbox is editable when editing a user.
-- Analytics: Core Web Vitals render from the real measurement data, and the
-  logs service view works.
-- "Use Default Template" in the layout manager copies the default layout as
-  intended.
-- Custom field labels no longer override the bundled translations of standard
-  fields.
-- Supplier portal quotes: submitting a quote with a REF1 value outside the
-  allowed list is blocked.
-- MediOrder gets duplicate document detection on its validation screen.
+- WatchDog 下载链接和设置命令现在会指向当前所在环境，而不再总是指向生产环境。
+- 决策树：重新打开字段选择器时，已选中的文档字段仍会突出显示；截断的标签会显示工具提示；添加行时会显示用户名，而非原始 ID。
+- 编辑用户时，可以修改 System Admin 复选框。
+- 分析：Core Web Vitals 现在使用真实测量数据进行渲染；日志服务视图也可以正常使用。
+- 布局管理器中的“Use Default Template”现在会按预期复制默认布局。
+- 自定义字段标签不再覆盖标准字段随附的翻译。
+- 供应商门户报价：如果提交的报价包含不在允许列表中的 REF1 值，系统会阻止提交。
+- MediOrder 的验证界面现在会检测重复文档。
 
-## API Service — `12.82.3`
+## API 服务 — `12.82.3`
 
-### Security and organisation isolation
+### 安全和组织隔离
 
-- Switching the acting organisation is validated against your actual
-  membership and fails closed, and an internal test endpoint that could be
-  abused to cross organisations was shut.
-- Document scripts can no longer be read or overwritten across organisations,
-  neither via the apply-to-document call nor via a foreign version id on save.
-- Sub-organisation user lists and group member lists only return people from
-  the caller's organisation, and adding several users to a group at once no
-  longer drops all but the first.
-- A credential from the wrong organisation is refused before it can become a
-  document's processing token, and full-text search queries run as the calling
-  user rather than a service identity.
-- Four-eyes approval is enforced: the second approver must differ from the
-  person who approved first.
-- The live PO Dashboard list is scoped to the user's sub-organisations.
+- 切换当前操作组织时，系统会根据用户的实际成员关系进行验证，并在无法验证时拒绝操作；一个可能被滥用来跨组织操作的内部测试端点也已关闭。
+- 现在无法跨组织读取或覆盖文档脚本，无论是通过应用到文档的调用，还是在保存时使用其他组织的版本 ID。
+- 子组织用户列表和群组成员列表只会返回调用者所在组织的人员；一次向群组添加多个用户时，也不再只保留第一个用户。
+- 来自错误组织的凭证会在成为文档处理令牌之前被拒绝；全文搜索查询现在以调用用户的身份运行，而非以服务身份运行。
+- 现在会强制执行四眼审批原则：第二位审批人必须与第一位审批人不同。
+- 实时 PO Dashboard 列表现在仅显示用户子组织范围内的数据。
 
-### Document pipeline
+### 文档处理管道
 
-- Documents denied for export no longer sit in "Exporting" forever, and export
-  errors always carry a message instead of an empty one.
-- When a processing step crashes, the document goes to an error state instead
-  of being stuck in "restart in progress" with no way out.
-- A barcode split that fails or times out marks the document as Error instead
-  of silently showing "Running", and a split that produces no children keeps
-  the parent and flags it instead of deleting everything.
-- A failed retry can no longer overwrite a document that meanwhile finished
-  processing.
-- Documents restarted without user interaction and split children now run
-  under a durable organisation token, so long-running processing doesn't die
-  with an expired session.
-- An empty layout-template response is no longer cached for six hours, which
-  used to make layouts vanish until the cache expired.
+- 被拒绝导出的文档不再永远停留在“Exporting”状态；导出错误现在始终包含错误消息，不再为空。
+- 处理步骤崩溃时，文档现在会进入错误状态，不再卡在“restart in progress”且无法恢复。
+- 条码拆分失败或超时时，文档会标记为 Error，而不再静默显示“Running”；拆分未生成子文档时，会保留父文档并将其标记出来，而不再删除所有内容。
+- 重试失败时，不再覆盖期间已完成处理的文档。
+- 无需用户交互即可重启的文档及拆分生成的子文档，现在会使用持久的组织令牌运行，因此长时间处理不会因会话过期而中断。
+- 空的布局模板响应不再缓存六小时；此前缓存会导致布局在缓存过期前消失。
 
-### Extraction and e-documents
+### 提取和电子文档
 
-- Amounts written with a trailing minus ("100,00-") are parsed as negative
-  instead of being dropped.
-- Swiss documents are detected as Swiss (CHF, CHE VAT numbers, CH IBANs)
-  instead of defaulting to German conventions, and dates written with
-  typographic dashes parse correctly.
-- XRechnung 3.0, 3.0.1 and 3.0.2 credit notes in CII syntax are classified as
-  credit notes with the total read from the grand total field; the same goes
-  for pure CII credit notes. A declared ZUGFeRD 2.4 / Factur-X 1.08 version
-  wins over the generic profile identifier, and bare XRechnung types resolve
-  to their UBL or CII twin instead of failing.
-- Dropdown (list-of-values) fields such as Tax Country and Tax Code keep their
-  value through field transformation; they were being emptied.
-- Table extraction: a failure in a numbers-only column stays in that column
-  instead of killing the whole table, AI table extraction gets a timeout that
-  survives multi-batch runs, and two crashes on unusual table shapes (rows
-  without page positions, ragged column counts) are fixed.
-- Source rule patterns match case-insensitively.
+- 以末尾负号表示的金额（“100,00-”）现在会解析为负数，不再被丢弃。
+- 瑞士文档现在会被识别为瑞士文档（CHF、CHE 增值税号、CH IBAN），不再默认使用德国格式；使用排版短横线的日期现在也能正确解析。
+- 采用 CII 语法的 XRechnung 3.0、3.0.1 和 3.0.2 贷项通知单现在会被分类为贷项通知单，并从总计字段读取金额；纯 CII 贷项通知单也同样如此。对于声明了 ZUGFeRD 2.4 / Factur-X 1.08 版本的文档，系统会优先采用该版本，而非通用配置文件标识；裸 XRechnung 类型现在会解析为对应的 UBL 或 CII 类型，不再失败。
+- Tax Country 和 Tax Code 等下拉列表（值列表）字段在字段转换过程中会保留其值，不再被清空。
+- 表格提取：仅限数字的列中出现错误时，该错误会保留在对应列中，不再导致整张表失败；AI 表格提取现在具有可在多批次运行中持续生效的超时限制；两种不常见表格形状（没有页面位置的行、列数不规则）导致的崩溃也已修复。
+- 源规则模式现在会忽略大小写进行匹配。
 
-### Export
+### 导出
 
-- A tax check that fails during export preview returns a readable error
-  instead of a server error, on both preview endpoints.
-- SFTP export can send the original document alongside the converted one.
-- When export configurations exist on several levels, the most specific one
-  wins consistently.
-- BOD exports can carry column type attributes via mapping.
+- 导出预览期间税务检查失败时，两个预览端点现在都会返回易读的错误信息，而非服务器错误。
+- SFTP 导出现在可以同时发送原始文档和转换后的文档。
+- 多个层级都存在导出配置时，现在会始终采用最具体的配置。
+- BOD 导出可以通过映射携带列类型属性。
 
-### Import and master data
+### 导入和主数据
 
-- The e-mail Import Log is complete: rejected and failed inbound e-mails
-  always get a log row with an accurate reason. No more silent drops.
-- Purchase order BOD imports keep sub-lines attached to the right line; a
-  carried-over flag used to attach them to the wrong one.
-- Importing a CSV with several new suppliers works (their generated ids no
-  longer collide), cash discount term aliases import and honour the
-  "on conflict" setting, and the on-conflict IGNORE choice applies beyond
-  suppliers.
-- The supplier suggestion (TF-IDF) keeps its supplier id when a preference is
-  updated, so suggestions stop pointing at nothing.
+- 电子邮件 Import Log 现在完整记录数据：被拒绝和导入失败的邮件都会生成日志行，并附有准确原因，不再被静默丢弃。
+- 采购订单 BOD 导入现在会将子行保留在正确的行下；此前沿用的标记可能会将子行关联到错误的行。
+- 导入包含多个新供应商的 CSV 现在可以正常工作（生成的 ID 不再冲突）；现金折扣条件别名现在可以导入并遵循“on conflict”设置；发生冲突时选择 IGNORE 的设置现在也适用于供应商以外的数据。
+- 更新偏好设置时，供应商建议（TF-IDF）会保留供应商 ID，因此建议结果不再指向不存在的记录。
 
-### Other fixes
+### 其他修复
 
-- Dashboard rows resolve dropdown labels in the user's language, without
-  blocking the request.
-- After editing fields, the PO match status updates instead of showing the
-  pre-edit state.
-- Purchase Order Change documents get five Purchase-Order-parity fields and a
-  default field validation layout.
-- Error responses across 152 endpoints return readable messages instead of raw
-  exception objects, and the logs analytics page no longer answers with 502
-  for organisations without a log index.
+- 仪表板行现在会解析并显示用户语言对应的下拉列表标签，且不会阻塞请求。
+- 编辑字段后，PO 匹配状态现在会更新，不再显示编辑前的状态。
+- Purchase Order Change 文档现在包含五个与 Purchase Order 对应的字段，并具有默认字段验证布局。
+- 152 个端点的错误响应现在会返回易读消息，而非原始异常对象；对于没有日志索引的组织，日志分析页面也不再返回 502。
 
-## Auth Service — `1.77.9`
+## Auth 服务 — `1.77.9`
 
-- Password-reset e-mails were silently never sending; fixed, together with the
-  thread-safety issue underneath it.
-- A replayed refresh token is rejected: the authoritative database check runs
-  every time now instead of being skipped on a cache hit.
-- Two-factor authentication: an authenticator app can be enrolled alongside
-  e-mail codes, and removing the last passkey or regenerating backup codes
-  requires a fresh second factor first.
-- A valid sub-organisation id is no longer rejected with "Organization not
-  found", and an API key created in a sub-organisation resolves its technical
-  user from that sub-organisation.
-- Editing an organisation validates the partner id and no longer resets the
-  organisation type as a side effect.
-- "Remaining tokens" in the subscription view is anchored to the contract
-  year, not the calendar year.
+- 密码重置邮件此前一直未发出；该问题及其底层的线程安全问题现已修复。
+- 重放的刷新令牌现在会被拒绝：每次都会检查权威数据库，不再因命中缓存而跳过检查。
+- 双重身份验证：用户现在可以在使用电子邮件验证码的同时注册验证器应用；移除最后一个通行密钥或重新生成备用验证码前，必须先通过新的第二因素验证。
+- 有效的子组织 ID 不再被错误地以“Organization not found”拒绝；在子组织中创建的 API 密钥现在会从该子组织解析其技术用户。
+- 编辑组织时会验证合作伙伴 ID，且不再顺带重置组织类型。
+- 订阅视图中的“Remaining tokens”现在按合同年份计算，而非按日历年份计算。
 
-## Auth Bridge Service — `0.5.7`
+## Auth Bridge 服务 — `0.5.7`
 
-- Account replication between the EU and US regions recovers on its own. A
-  dropped replication stream reattaches in place, replication keeps flowing
-  while a reconciliation runs, and reconciliation memory is bounded so the
-  service stops crash-looping on large tables.
+- EU 和 US 区域之间的账户复制现在可以自动恢复。复制流中断后会在原位置重新连接；协调过程运行时复制会继续进行；协调所占用的内存也受到限制，因此服务不再因大型表而反复崩溃重启。
 
-## Barcode Service — `1.18.7`
+## Barcode 服务 — `1.18.7`
 
-- Barcode reading runs under a time limit and reports a timeout instead of
-  hanging, which used to leave the document stuck in processing.
+- 条码读取现在有时间限制；超时时会报告超时，不再一直挂起并导致文档卡在处理中。
 
-## Docflow Service — `2.9.8`
+## Docflow 服务 — `2.9.8`
 
-- Field values written by a workflow card land on the document in both stored
-  representations, so a later export no longer reverts them.
-- A retried trigger keeps the work the run already did, contended triggers on
-  the same document queue up instead of stealing the lock, and an escalated
-  retry is ranked first in the queue.
-- Purchase order comparison cards: tolerances compare as exact decimals and
-  are based on the purchase order value, reversed comparison directions are
-  available as options, a group assignee is reported as a group instead of
-  failing a user-id comparison, assignment ids compare correctly as UUIDs,
-  lines with empty numeric values are skipped, and a "received" comparison
-  without any received data reports missing data instead of pretending to
-  match.
-- The Apply Decision Table card has been retired.
+- 工作流卡片写入的字段值现在会写入文档的两种存储表示，因此后续导出不会再将其还原。
+- 重试的触发器会保留本次运行已完成的工作；同时处理同一文档的触发器现在会排队执行，而非互相抢占锁；升级后的重试会在队列中优先处理。
+- 采购订单比较卡片：容差现在使用精确十进制值进行比较，并基于采购订单金额；现在可以选择反向比较方向；群组分配人会被报告为群组，不再因用户 ID 比较而失败；分配 ID 现在会作为 UUID 正确比较；数值为空的行会被跳过；如果“已接收”比较没有任何接收数据，系统会报告缺少数据，不再错误地认为匹配成功。
+- Apply Decision Table 卡片已停用。
 
-## Email Service — `1.41.0`
+## Email 服务 — `1.41.0`
 
-- Gmail imports pick up each attachment exactly once; duplicates from
-  overlapping fetches are gone.
-- The import read-cursor only advances after an import is confirmed, so a
-  crash mid-import can no longer skip e-mails.
-- When an import configuration is deactivated because a similar one exists,
-  that deactivation is visible and notified instead of silent.
+- Gmail 导入现在会对每个附件只导入一次；重叠抓取导致的重复项已消除。
+- 导入读取游标只有在确认导入后才会前移，因此即使导入过程中发生崩溃，也不会跳过邮件。
+- 类似配置存在而导致某项导入配置被停用时，现在会显示停用信息并发送通知，不再静默处理。
 
-## Extraction Service — `1.54.5`
+## Extraction 服务 — `1.54.5`
 
-- Whether a document is a credit note or an invoice is resolved by which
-  keyword sits closer to the document type mention, instead of first match
-  wins.
-- When several tax interpretations are within tolerance, the exact
-  reconciliation is preferred over a near miss.
-- After a forced re-OCR the document type and locale are restored, so table
-  extraction and training work on re-OCR'd documents again.
-- Documents without a document type no longer crash table rule lookup.
+- 判断文档是贷项通知单还是发票时，系统现在会根据哪个关键词更接近文档类型提及来判定，而不再一律采用第一个匹配项。
+- 多种税务解释都在容差范围内时，系统现在会优先选择完全核对一致的结果，而非接近但不完全一致的结果。
+- 强制重新 OCR 后，文档类型和区域设置现在会恢复，因此重新 OCR 的文档可以再次进行表格提取和训练。
+- 没有文档类型的文档不再导致表格规则查找崩溃。
 
-## FTP Service — `1.32.8`
+## FTP 服务 — `1.32.8`
 
-- Folder scanning does one listing round trip per folder with a bounded depth,
-  so imports from large FTP directories are much faster and stop timing out.
+- 文件夹扫描现在会对每个文件夹只进行一次目录查询往返，并限制扫描深度，因此从大型 FTP 目录导入会快得多，也不再超时。
 
-## Fulltext Service — `1.42.3`
+## Fulltext 服务 — `1.42.3`
 
-- Documents whose stored search payload had no extracted fields are re-indexed
-  from the database, so they show up in dashboard search again.
-- The dashboard search window supports up to 10,000 documents.
-- Facet searches no longer fail when semantic search is active.
+- 对于存储的搜索载荷中没有已提取字段的文档，现在会从数据库重新建立索引，因此这些文档会再次显示在仪表板搜索结果中。
+- 仪表板搜索窗口现在最多支持 10,000 份文档。
+- 启用语义搜索时，分面搜索不再失败。
 
-## OCR Service — `1.10.7`
+## OCR 服务 — `1.10.7`
 
-- The OCR time budget is sized by real per-page cost, so long documents finish
-  instead of hitting the pipeline limit.
+- OCR 时间预算现在根据实际的单页耗时计算，因此长文档可以完成处理，不再触发管道限制。
 
-## PO Match Service — `1.59.8`
+## PO Match 服务 — `1.59.8`
 
-- Table lines with zero quantity are skipped in mismatch checks instead of
-  producing false mismatches.
-- When required PO-match columns are missing, the result names them.
+- 不匹配检查现在会跳过数量为零的表格行，不再因此产生错误的不匹配结果。
+- 缺少必填 PO 匹配列时，结果会列出具体列名。

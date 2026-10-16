@@ -1,75 +1,75 @@
-# Creating and Editing Scripts
+# 创建和编辑脚本
 
 {% embed url="https://youtu.be/n8NpWWIjmlA" %}
-DocBits Document Scripts Explained: Automate Custom Logic in Your Document Workflow
+DocBits 文档脚本说明：自动化文档工作流中的自定义逻辑
 {% endembed %}
 
-## To create a new script in DocBits, follow these detailed instructions:
+## 按照以下详细说明在 DocBits 中创建新脚本：
 
-**Choose the scripting language:**
+**选择脚本语言：**
 
-First, you need to choose the scripting language you want to use. DocBits typically supports common scripting languages ​​such as Python, JavaScript, or SQL. The choice of language depends on the needs of your project and your own competency.
+首先，选择要使用的脚本语言。DocBits 通常支持 Python、JavaScript 或 SQL 等常用脚本语言。语言的选择取决于项目需求和您自身的熟练程度。
 
-**Open the script development environment:**
+**打开脚本开发环境：**
 
-Log in to DocBits and navigate to the script development environment. This is in the administration area.
+登录 DocBits 并导航到脚本开发环境。该环境位于管理区域。
 
-<figure><img src="../../../../../.gitbook/assets/script_development_environment_overview.png" alt="Script Development Environment Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/script_development_environment_overview.png" alt="脚本开发环境概览"><figcaption></figcaption></figure>
 
-**Create a new script:**
+**创建新脚本：**
 
-Click the "+ New" button to open a new script editor.
+点击“+ New”按钮，打开新的脚本编辑器。
 
-<figure><img src="../../../../../.gitbook/assets/create_new_script_button.png" alt="Create New Script Button"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/create_new_script_button.png" alt="创建新脚本按钮"><figcaption></figcaption></figure>
 
-**Write the code:**
+**编写代码：**
 
-Use the editor to write the code for your script. Start with the basic syntax of your chosen scripting language.
+使用编辑器编写脚本代码。请从所选脚本语言的基本语法开始。
 
-For example, if you are using Python, your script might look like this:
+例如，如果使用 Python，脚本可能如下所示：
 
-## 1. Example script in Python
+## 1. Python 脚本示例
 
-<figure><img src="../../../../../.gitbook/assets/python_script_example_1.png" alt="Python Script Example 1"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/python_script_example_1.png" alt="Python 脚本示例 1"><figcaption></figcaption></figure>
 
-## Function to clean patient names
+## 清理患者姓名的函数
 
-def clean\_patient\_name(name): cleaned\_name = name.strip().title() # Remove spaces and apply capitalization
+def clean\_patient\_name(name): cleaned\_name = name.strip().title() # 删除空格并应用首字母大写
 
 return cleaned\_name
 
-## Main program
+## 主程序
 
-if **name** == "**main**": patient\_name = " john doe " cleaned\_name = clean\_patient\_name(patient\_name) print("Cleaned patient name:", cleaned\_name)
+if **name** == "**main**": patient\_name = " john doe " cleaned\_name = clean\_patient\_name(patient\_name) print("清理后的患者姓名：", cleaned\_name)
 
-## 2. Example script
+## 2. 脚本示例
 
-<figure><img src="../../../../../.gitbook/assets/python_script_example_2.png" alt="Python Script Example 2"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/python_script_example_2.png" alt="Python 脚本示例 2"><figcaption></figcaption></figure>
 
-**Test the script:**
+**测试脚本：**
 
-Check the code for errors and test it in a test environment. Make sure the script produces the expected results and works correctly.
+检查代码是否存在错误，并在测试环境中进行测试。确保脚本能产生预期结果并正常运行。
 
-<figure><img src="../../../../../.gitbook/assets/script_testing_interface.png" alt="Script Testing Interface"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/script_testing_interface.png" alt="脚本测试界面"><figcaption></figcaption></figure>
 
-**Save the script:**
+**保存脚本：**
 
-Save the script in DocBits and give it a meaningful name that describes the purpose of the script.
+在 DocBits 中保存脚本，并为其指定一个能描述脚本用途的名称。
 
-<figure><img src="../../../../../.gitbook/assets/save_script_button.png" alt="Save Script Button" width="84"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/save_script_button.png" alt="保存脚本按钮" width="84"><figcaption></figcaption></figure>
 
-**Mapping the script to document types:**
+**将脚本映射到文档类型：**
 
-An important step is mapping the script to the appropriate document types. This determines when and how the script is applied. This can usually be done through a configuration interface in DocBits, where you can assign the script to a specific document type and specify under which conditions it should be applied.
+重要的一步是将脚本映射到相应的文档类型。这决定了脚本何时以及如何应用。通常可以通过 DocBits 中的配置界面完成此操作：将脚本分配给特定文档类型，并指定应用脚本的条件。
 
-<figure><img src="../../../../../.gitbook/assets/script_document_type_mapping.png" alt="Script Document Type Mapping"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/script_document_type_mapping.png" alt="脚本与文档类型的映射"><figcaption></figcaption></figure>
 
-**Review and publish:**
+**审核并发布：**
 
-After you have created, tested and mapped the script, check it again for errors and inconsistencies. If everything is OK, you can publish the script to the DocBits production environment.
+创建、测试并映射脚本后，再次检查是否存在错误或不一致之处。如果一切正常，就可以将脚本发布到 DocBits 生产环境。
 
-<figure><img src="../../../../../.gitbook/assets/script_review_and_publish.png" alt="Script Review and Publish"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/script_review_and_publish.png" alt="审核并发布脚本"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/script_publish_confirmation.png" alt="Script Publish Confirmation"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/script_publish_confirmation.png" alt="脚本发布确认"><figcaption></figcaption></figure>
 
-Through these steps, you can successfully create, test and implement a new script in DocBits to automate processes and improve the efficiency of medical documentation.
+按照这些步骤，您可以在 DocBits 中成功创建、测试并实施新脚本，从而实现流程自动化并提高医疗文档处理的效率。

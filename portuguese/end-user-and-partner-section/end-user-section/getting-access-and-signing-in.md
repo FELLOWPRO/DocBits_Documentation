@@ -2,9 +2,9 @@
 
 Esta página explica como obter uma conta DocBits e como iniciar sessão quando não tem a sua palavra-passe:
 
-* [Registo](getting-access-and-signing-in.md#registo) — crie a sua própria conta DocBits.
-* [Esqueceu-se da palavra-passe](getting-access-and-signing-in.md#esqueceu-se-da-palavra-passe) — redefina a sua palavra-passe com uma ligação de redefinição.
-* [Primeira palavra-passe para contas criadas pelo administrador](getting-access-and-signing-in.md#primeira-palavra-passe-para-contas-criadas-pelo-administrador) — defina a primeira palavra-passe de uma conta que o seu administrador criou para você.
+* [Registo](#registo) — crie a sua própria conta DocBits.
+* [Esqueceu-se da palavra-passe](#esqueceu-se-da-palavra-passe) — redefina a sua palavra-passe com uma ligação de redefinição.
+* [Primeira palavra-passe para contas criadas pelo administrador](#primeira-palavra-passe-para-contas-criadas-pelo-administrador) — defina a primeira palavra-passe de uma conta que o seu administrador criou para você.
 
 Iniciar sessão com uma conta existente e a Autenticação de Dois Fatores estão cobertos em [Autenticação de Dois Fatores (2FA)](../../overview-and-basics/two-factor-authentication.md). Use o menu de idioma no canto superior direito destes formulários se precisar de outro idioma de exibição.
 
@@ -51,13 +51,14 @@ O DocBits guarda as palavras-passe como hashes unidirecionais com salt. Uma pala
 Se se esqueceu da sua palavra-passe:
 
 1. No ecrã de início de sessão, clique em **Esqueceu sua senha**.
-2.  Na página **Esqueceu sua senha**, introduza o seu endereço de **E-mail** e clique em **Redefinir senha**. Se for mostrado um widget reCAPTCHA, complete-o primeiro.
+2. Na página **Esqueceu sua senha**, introduza o seu endereço de **E-mail** e clique em **Redefinir senha**. Se for mostrado um widget reCAPTCHA, complete-o primeiro.
 
-    <figure><img src="../../.gitbook/assets/dbdc746-getting-access-forgot-password-form-pt-20261011.png" alt="A página Esqueceu sua senha com o campo de e-mail"><figcaption><p>A página Esqueceu sua senha. Introduza o e-mail da sua conta e o DocBits enviar-lhe-á uma ligação de redefinição.</p></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/dbdc746-getting-access-forgot-password-form-pt-20261011.png" alt="A página Esqueceu sua senha com o campo de e-mail"><figcaption><p>A página Esqueceu sua senha. Introduza o e-mail da sua conta e o DocBits enviar-lhe-á uma ligação de redefinição.</p></figcaption></figure>
 
-    Se não quiser redefinir a sua palavra-passe, clique em **Voltar ao login** para voltar ao início de sessão.
+   Se não quiser redefinir a sua palavra-passe, clique em **Voltar ao login** para voltar ao início de sessão.
+
 3. O DocBits envia-lhe uma **ligação de redefinição de palavra-passe** por e-mail. Abra o e-mail e clique na ligação — ela abre a página de redefinição.
-4. Introduza a sua **nova palavra-passe duas vezes**. Aplicam-se as mesmas regras de palavra-passe do [registo](getting-access-and-signing-in.md#regras-de-palavra-passe) e uma lista de verificação mostra que regras são cumpridas.
+4. Introduza a sua **nova palavra-passe duas vezes**. Aplicam-se as mesmas regras de palavra-passe do [registo](#regras-de-palavra-passe) e uma lista de verificação mostra que regras são cumpridas.
 5. Clique em **Redefinir senha**. O DocBits confirma a alteração e devolve-o ao ecrã de início de sessão, onde pode iniciar sessão com a nova palavra-passe.
 
 {% hint style="info" %}
@@ -66,12 +67,12 @@ As ligações de redefinição expiram após um curto período de tempo. Se a li
 
 ## Primeira palavra-passe para contas criadas pelo administrador
 
-Quando o seu administrador o adiciona como utilizador (consulte [Usuários](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/)), recebe um e-mail com os seus dados de início de sessão e uma ligação para definir a sua **primeira palavra-passe**. A ligação abre a página **Definir senha**:
+Quando o seu administrador o adiciona como utilizador (consulte [Usuários](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)), recebe um e-mail com os seus dados de início de sessão e uma ligação para definir a sua **primeira palavra-passe**. A ligação abre a página **Definir senha**:
 
 <figure><img src="../../.gitbook/assets/dbdc746-getting-access-set-password-form-pt-20261011.png" alt="A página Definir senha com a mensagem de boas-vindas"><figcaption><p>A página Definir senha, mostrada depois de um administrador ter criado a sua conta.</p></figcaption></figure>
 
 1. Clique na ligação no e-mail de convite. A página dá-lhe as boas-vindas com "Bem-vindo ao DocBits! Sua conta foi criada. Por favor, defina sua senha para começar."
-2. Introduza a sua palavra-passe duas vezes — aplicam-se as mesmas [regras de palavra-passe](getting-access-and-signing-in.md#regras-de-palavra-passe).
+2. Introduza a sua palavra-passe duas vezes — aplicam-se as mesmas [regras de palavra-passe](#regras-de-palavra-passe).
 3. Clique em **Definir senha**. Depois pode iniciar sessão com o seu e-mail e esta palavra-passe.
 
 Os ícones de olho mostram ou ocultam o que introduziu. Se sair antes de definir uma palavra-passe, **Acesse a página de login** devolve-o ao início de sessão.

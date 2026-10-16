@@ -2,7 +2,7 @@
 
 > **Canal de lanzamiento:** VESTA · **Lanzamiento:** R1.0.15.
 >
-> **¿Comparando con NOVA?** La [comparación de funciones del lanzamiento principal de NOVA](nova-major-release-16-october-2026.md#what-nova-adds-for-customers) cubre el Asistente de validación, mejoras de automatización revisadas, informes ampliados de facturas electrónicas, nuevos controles de importación y otras adiciones más allá de este lanzamiento de VESTA.
+> **¿Comparando con NOVA?** La [comparación de funciones del lanzamiento principal de NOVA](nova-major-release.md#what-nova-adds-for-customers) cubre el Asistente de validación, mejoras de automatización revisadas, informes ampliados de facturas electrónicas, nuevos controles de importación y otras adiciones más allá de este lanzamiento de VESTA.
 >
 > **Siguiente hotfix de VESTA: [11 de noviembre de 2026 (planificado)](vesta-hotfix-11-november-2026.md).** Todas las funciones previamente disponibles como beta en VESTA son ahora funciones regulares de NOVA y se convertirán en funciones regulares de VESTA con ese hotfix.
 

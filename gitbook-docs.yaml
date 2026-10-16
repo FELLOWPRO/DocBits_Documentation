@@ -68,3 +68,4 @@ site:
       draft: true
       content:
         directory: ./china
+        language: zh

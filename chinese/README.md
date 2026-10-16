@@ -6,7 +6,7 @@
 
 ## DocBits 工作流程
 
-{% @arcade/embed flowid="JqTpGV34UBKmI0iAumoX" url="https://app.arcade.software/share/JqTpGV34UBKmI0iAumoX" %}
+{% embed url="https://app.arcade.software/share/JqTpGV34UBKmI0iAumoX" %}
 
 [**DocBits**](https://www.docbits.com) **由** [**FELLOWPRO AG**](https://www.fellowpro.com) 提供，是一款先进的智能文档处理（IDP）解决方案，旨在优化并自动处理业务文档。
 
@@ -32,7 +32,7 @@
    * 支持自动记入分类账科目。
    * 可按部门拆分金额。
    * 支持由应付账款团队定义分类账科目。
-5. **集成式验证与**[**审批**](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/broken-reference/README.md)**流程**
+5. **集成式验证与**[**审批**](administration-and-setup/settings/global-settings/document-types/more-settings/approval/README.md)**流程**
    * 提供集成式验证流程，确保数据准确。
    * 提供[工作流程](administration-and-setup/workflow/)，简化文档处理。
 6. **无缝集成**

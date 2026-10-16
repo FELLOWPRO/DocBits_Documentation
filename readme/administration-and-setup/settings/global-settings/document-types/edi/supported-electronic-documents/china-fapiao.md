@@ -43,7 +43,7 @@ description: >-
 | `invoice_date`     | `fapiao_head/issue_date`    | 开具日期（ISO 8601）                  |
 | `currency`         | 固定值：`CNY`                | 始终为人民币           |
 | `total_amount`     | `total/total_with_tax`      | 含增值税的总金额（价税合计）          |
-| `net_amount`       | `total/total_amount`        | 不含增值税的应税金额（金額）      |
+| `net_amount`       | `total/total_amount`        | 不含增值税的应税金额（金额）      |
 | `tax_amount`       | `total/total_tax`           | 增值税总额（税额）                  |
 | `supplier_name`    | `seller/name`               | 销售方公司名称（销售方名称）            |
 | `supplier_id`      | `seller/taxpayer_id`        | 销售方纳税人识别号 — 18 个字符（纳税人识别号） |

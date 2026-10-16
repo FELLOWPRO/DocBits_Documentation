@@ -78,7 +78,7 @@ DocBits 通过匹配根元素和版本属性来检测 Ecuador SRI 文档：
 
 | 电子文档类型                      | 模式                                         |
 | --------------------------------- | -------------------------------------------- |
-| ECUADOR SRI / FACTURA ELECTRONICA | `<factura id="comprobante"`                  |
+| ECUADOR SRI / FACTURA ELECTRONICA | `<factura id="comprobante"`（任意版本）     |
 | ECUADOR SRI 1.0.0                 | `<factura id="comprobante" version="1.0.0">` |
 | ECUADOR SRI 1.1.0                 | `<factura id="comprobante" version="1.1.0">` |
 | ECUADOR SRI 2.0.0                 | `<factura id="comprobante" version="2.0.0">` |

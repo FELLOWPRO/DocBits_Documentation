@@ -53,11 +53,11 @@
 **数学运算：**
 
 ```
-- Addition: Quantity + Bonus_Quantity = Total_Quantity
-- Subtraction: Invoice_Total - Tax_Amount = Net_Amount
-- Multiplication: Quantity × Unit_Price = Line_Total
-- Division: Total_Amount / Quantity = Unit_Price
-- Percentage: (Discount / Subtotal) × 100 = Discount_Percent
+- 加法：Quantity + Bonus_Quantity = Total_Quantity
+- 减法：Invoice_Total - Tax_Amount = Net_Amount
+- 乘法：Quantity × Unit_Price = Line_Total
+- 除法：Total_Amount / Quantity = Unit_Price
+- 百分比：(Discount / Subtotal) × 100 = Discount_Percent
 ```
 
 ### 2. 字符串操作
@@ -65,12 +65,12 @@
 **文本操作：**
 
 ```
-- Concatenation: First_Name + " " + Last_Name = Full_Name
-- Uppercase: "invoice" → "INVOICE"
-- Lowercase: "SUPPLIER" → "supplier"
-- Substring: "INV-2025-001" → "2025" (extract year)
-- Replace: "01/23/2025" → "2025-01-23"
-- Trim: "  ABC Corp  " → "ABC Corp"
+- 拼接：First_Name + " " + Last_Name = Full_Name
+- 转为大写："invoice" → "INVOICE"
+- 转为小写："SUPPLIER" → "supplier"
+- 子字符串："INV-2025-001" → "2025"（提取年份）
+- 替换："01/23/2025" → "2025-01-23"
+- 去除首尾空格："  ABC Corp  " → "ABC Corp"
 ```
 
 ### 3. 数据类型转换
@@ -78,11 +78,11 @@
 **类型转换：**
 
 ```
-- String to Number: "123.45" → 123.45
-- Number to String: 123.45 → "123.45"
-- Date to String: 2025-10-23 → "October 23, 2025"
-- String to Date: "23.10.2025" → 2025-10-23
-- Boolean to String: true → "Yes"
+- 字符串转数字："123.45" → 123.45
+- 数字转字符串：123.45 → "123.45"
+- 日期转字符串：2025-10-23 → "十月 23, 2025"
+- 字符串转日期："23.10.2025" → 2025-10-23
+- 布尔值转字符串：true → "Yes"
 ```
 
 ### 4. 单位换算
@@ -90,11 +90,11 @@
 **度量单位换算：**
 
 ```
-- Weight: kg → lbs, tons → kg
-- Length: cm → inches, m → ft
-- Volume: liters → gallons
-- Temperature: Celsius → Fahrenheit
-- Quantity: pieces → dozens, units → pallets
+- 重量：kg → lbs，tons → kg
+- 长度：cm → inches，m → ft
+- 体积：liters → gallons
+- 温度：Celsius → Fahrenheit
+- 数量：pieces → dozens，units → pallets
 ```
 
 ### 5. 货币换算
@@ -102,9 +102,9 @@
 **应用汇率：**
 
 ```
-- USD → EUR: Amount_USD × Rate = Amount_EUR
-- Multi-currency: Convert all to base currency
-- Historical rates: Use rate from invoice date
+- USD → EUR：Amount_USD × Rate = Amount_EUR
+- 多币种：全部转换为基准货币
+- 历史汇率：使用发票日期对应的汇率
 ```
 
 ### 6. 日期转换
@@ -112,10 +112,10 @@
 **日期操作：**
 
 ```
-- Format change: 10/23/2025 → 2025-10-23
-- Add days: Invoice_Date + 30 = Due_Date
-- Calculate age: Today - Invoice_Date = Age_Days
-- Extract parts: "2025-10-23" → Year: 2025, Month: 10, Day: 23
+- 更改格式：10/23/2025 → 2025-10-23
+- 增加天数：Invoice_Date + 30 = Due_Date
+- 计算天数：Today - Invoice_Date = Age_Days
+- 提取日期部分："2025-10-23" → 年：2025，月：10，日：23
 ```
 
 ***
@@ -159,32 +159,32 @@
 **针对每个行项目：**
 
 ```
-Field: Line_Total
-Formula: {{TABLE_FIELD:Quantity}} * {{TABLE_FIELD:Unit_Price}}
-Result Type: Number
-Decimal Places: 2
+字段：Line_Total
+公式：{{TABLE_FIELD:Quantity}} * {{TABLE_FIELD:Unit_Price}}
+结果类型：Number
+小数位数：2
 ```
 
 **示例：**
 
 ```
-Line 1:
-  Quantity: 100
-  Unit Price: €50.00
-  Calculation: 100 × 50.00 = €5,000.00
-  Store in: Line_Total
+行项目 1：
+  数量：100
+  单价：€50.00
+  计算：100 × 50.00 = €5,000.00
+  存储到：Line_Total
 
-Line 2:
-  Quantity: 50
-  Unit Price: €20.00
-  Calculation: 50 × 20.00 = €1,000.00
-  Store in: Line_Total
+行项目 2：
+  数量：50
+  单价：€20.00
+  计算：50 × 20.00 = €1,000.00
+  存储到：Line_Total
 
-Line 3:
-  Quantity: 25
-  Unit Price: €15.50
-  Calculation: 25 × 15.50 = €387.50
-  Store in: Line_Total
+行项目 3：
+  数量：25
+  单价：€15.50
+  计算：25 × 15.50 = €387.50
+  存储到：Line_Total
 ```
 
 **指南参考：** [字段操作指南 - 计算](../field-manipulation-guide.md)
@@ -200,21 +200,21 @@ Line 3:
 **配置：**
 
 ```
-Field: Calculated_Subtotal
-Formula: SUM({{TABLE_COLUMN:Line_Total}})
-Result Type: Number
-Decimal Places: 2
+字段：Calculated_Subtotal
+公式：SUM({{TABLE_COLUMN:Line_Total}})
+结果类型：Number
+小数位数：2
 ```
 
 **示例：**
 
 ```
-Line 1 Total: €5,000.00
-Line 2 Total: €1,000.00
-Line 3 Total: €387.50
+行项目 1 总额：€5,000.00
+行项目 2 总额：€1,000.00
+行项目 3 总额：€387.50
 
-Subtotal = 5000 + 1000 + 387.50 = €6,387.50
-Store in: Calculated_Subtotal
+小计 = 5000 + 1000 + 387.50 = €6,387.50
+存储到：Calculated_Subtotal
 ```
 
 ***
@@ -228,23 +228,23 @@ Store in: Calculated_Subtotal
 **配置：**
 
 ```
-Field: Calculated_Tax_Amount
-Formula: {{Calculated_Subtotal}} * ({{Tax_Rate}} / 100)
-Result Type: Number
-Decimal Places: 2
+字段：Calculated_Tax_Amount
+公式：{{Calculated_Subtotal}} * ({{Tax_Rate}} / 100)
+结果类型：Number
+小数位数：2
 ```
 
 **示例：**
 
 ```
-Calculated_Subtotal: €6,387.50
-Tax_Rate: 19% (VAT)
+Calculated_Subtotal：€6,387.50
+Tax_Rate：19% (VAT)
 
-Tax Amount = 6387.50 × (19 / 100)
+税额 = 6387.50 × (19 / 100)
           = 6387.50 × 0.19
           = €1,213.63
 
-Store in: Calculated_Tax_Amount
+存储到：Calculated_Tax_Amount
 ```
 
 ***
@@ -258,21 +258,21 @@ Store in: Calculated_Tax_Amount
 **配置：**
 
 ```
-Field: Calculated_Grand_Total
-Formula: {{Calculated_Subtotal}} + {{Calculated_Tax_Amount}}
-Result Type: Number
-Decimal Places: 2
+字段：Calculated_Grand_Total
+公式：{{Calculated_Subtotal}} + {{Calculated_Tax_Amount}}
+结果类型：Number
+小数位数：2
 ```
 
 **示例：**
 
 ```
-Calculated_Subtotal: €6,387.50
-Calculated_Tax_Amount: €1,213.63
+Calculated_Subtotal：€6,387.50
+Calculated_Tax_Amount：€1,213.63
 
-Grand Total = 6387.50 + 1213.63 = €7,601.13
+总计 = 6387.50 + 1213.63 = €7,601.13
 
-Store in: Calculated_Grand_Total
+存储到：Calculated_Grand_Total
 ```
 
 ***
@@ -286,9 +286,9 @@ Store in: Calculated_Grand_Total
 **配置：**
 
 ```
-Field: Invoice_Currency
-Operator: IS NOT EQUAL TO
-Value: EUR
+字段：Invoice_Currency
+运算符：IS NOT EQUAL TO
+值：EUR
 ```
 
 **如果需要换算：**
@@ -300,17 +300,17 @@ Value: EUR
 **配置：**
 
 ```
-Endpoint: https://api.exchangerate-api.com/v4/latest/{{Invoice_Currency}}
-Method: GET
-Response Path: rates.EUR
-Store in: Exchange_Rate_To_EUR
+端点：https://api.exchangerate-api.com/v4/latest/{{Invoice_Currency}}
+方法：GET
+响应路径：rates.EUR
+存储到：Exchange_Rate_To_EUR
 ```
 
 **示例：**
 
 ```
-Invoice Currency: USD
-API Response: {
+发票货币：USD
+API 响应：{
   "base": "USD",
   "rates": {
     "EUR": 0.92
@@ -327,21 +327,21 @@ Exchange_Rate_To_EUR = 0.92
 **配置：**
 
 ```
-Field: Grand_Total_EUR
-Formula: {{Calculated_Grand_Total}} * {{Exchange_Rate_To_EUR}}
-Result Type: Number
-Decimal Places: 2
+字段：Grand_Total_EUR
+公式：{{Calculated_Grand_Total}} * {{Exchange_Rate_To_EUR}}
+结果类型：Number
+小数位数：2
 ```
 
 **示例：**
 
 ```
-Grand Total (USD): $7,601.13
-Exchange Rate: 0.92
+总计（USD）：$7,601.13
+汇率：0.92
 
-Grand Total (EUR) = 7601.13 × 0.92 = €6,993.04
+总计（EUR） = 7601.13 × 0.92 = €6,993.04
 
-Store in: Grand_Total_EUR
+存储到：Grand_Total_EUR
 ```
 
 **指南参考：** [API 集成模式 - 货币换算](api-integration-pattern.md#currency-conversion-example)
@@ -357,29 +357,29 @@ Store in: Grand_Total_EUR
 **配置：**
 
 ```
-Lookup Table: GL_Account_Mapping
-Lookup Key: {{TABLE_FIELD:Product_Category}}
-Return Field: GL_Account_Number
-Store in: GL_Account
+查找表：GL_Account_Mapping
+查找键：{{TABLE_FIELD:Product_Category}}
+返回字段：GL_Account_Number
+存储到：GL_Account
 ```
 
 **示例：**
 
 ```
-Line 1:
-  Product Category: "Office Supplies"
-  Lookup → GL_Account_Mapping table
-  Result: GL Account "4200-100" (Office Expense)
+行项目 1：
+  产品类别: "Office Supplies"
+  查询 → GL_Account_Mapping 表
+  结果: 总账科目 "4200-100" (办公费用)
 
-Line 2:
-  Product Category: "IT Equipment"
-  Lookup → GL_Account_Mapping table
-  Result: GL Account "6100-200" (IT Assets)
+行项目 2：
+  产品类别: "IT Equipment"
+  查询 → GL_Account_Mapping 表
+  结果: 总账科目 "6100-200" (IT 资产)
 
-Line 3:
-  Product Category: "Services"
-  Lookup → GL_Account_Mapping table
-  Result: GL Account "5000-300" (Services Expense)
+行项目 3：
+  产品类别: "Services"
+  查询 → GL_Account_Mapping 表
+  结果: 总账科目 "5000-300" (服务费用)
 ```
 
 **指南参考：** [字段操作指南 - 主数据](../field-manipulation-guide.md)
@@ -395,39 +395,39 @@ Line 3:
 **配置：**
 
 ```
-Field 1: Calculated_Grand_Total
-Field 2: Invoice_Total (from OCR)
-Operator: Calculate Variance Percentage
-Tolerance: 1%
+字段 1：Calculated_Grand_Total
+字段 2：Invoice_Total（来自 OCR）
+运算符：计算差异百分比
+容差：1%
 ```
 
 **计算方式：**
 
 ```
-Variance % = |Calculated - Invoice| / Invoice × 100
+差异 % = |Calculated - Invoice| / Invoice × 100
 
-Example:
-  Calculated Total: €7,601.13
-  Invoice Total: €7,600.00
+示例：
+  计算总额：€7,601.13
+  发票总额：€7,600.00
 
-  Variance = |7601.13 - 7600.00| / 7600.00 × 100
+  差异 = |7601.13 - 7600.00| / 7600.00 × 100
           = 1.13 / 7600.00 × 100
           = 0.015%
 
-  Is 0.015% ≤ 1% tolerance? YES ✅
-  Result: PASS (calculations match invoice)
+  0.015% ≤ 1% 容差吗？是 ✅
+  结果：PASS（计算结果与发票相符）
 ```
 
 **逻辑：**
 
 ```
 IF Variance ≤ 1%:
-  Set Validation_Status = "PASS"
-  Continue processing
+  设置 Validation_Status = "PASS"
+  继续处理
 ELSE:
-  Set Validation_Status = "FAIL"
-  Create review task
-  Flag for manual verification
+  设置 Validation_Status = "FAIL"
+  创建审核任务
+  标记为需要人工验证
 ```
 
 **指南参考：** [条件卡片指南 - 字段比较](../condition-cards-complete-guide.md)
@@ -443,25 +443,25 @@ ELSE:
 **日期格式化：**
 
 ```
-Field: Invoice_Date_Formatted
-Value: FORMATDATE({{Invoice_Date}}, "YYYY-MM-DD")
-Example: 10/23/2025 → 2025-10-23
+字段：Invoice_Date_Formatted
+值：FORMATDATE({{Invoice_Date}}, "YYYY-MM-DD")
+示例：10/23/2025 → 2025-10-23
 ```
 
 **数字格式化：**
 
 ```
-Field: Amount_Formatted
-Value: FORMATNUMBER({{Grand_Total_EUR}}, 2, ",", ".")
-Example: 7601.13 → 7.601,13 (German format)
+字段：Amount_Formatted
+值：FORMATNUMBER({{Grand_Total_EUR}}, 2, ",", ".")
+示例：7601.13 → 7.601,13（德国格式）
 ```
 
 **文本格式化：**
 
 ```
-Field: Supplier_Name_Upper
-Value: UPPERCASE({{Supplier_Name}})
-Example: "ABC Corporation" → "ABC CORPORATION"
+字段：Supplier_Name_Upper
+值：UPPERCASE({{Supplier_Name}})
+示例："ABC Corporation" → "ABC CORPORATION"
 ```
 
 ***
@@ -473,26 +473,26 @@ Example: "ABC Corporation" → "ABC CORPORATION"
 **场景：** 每个行项目适用不同税率
 
 ```
-Line 1: Product A (Tax Rate 19%)
-Line 2: Product B (Tax Rate 7% - reduced)
-Line 3: Product C (Tax Rate 0% - exempt)
+行项目 1：Product A（税率 19%）
+行项目 2：Product B（税率 7% - 减免税率）
+行项目 3：Product C（税率 0% - 免税）
 
-Calculation:
-  Line 1 Tax = €5,000.00 × 0.19 = €950.00
-  Line 2 Tax = €1,000.00 × 0.07 = €70.00
-  Line 3 Tax = €387.50 × 0.00 = €0.00
+计算：
+  行项目 1 税额 = €5,000.00 × 0.19 = €950.00
+  行项目 2 税额 = €1,000.00 × 0.07 = €70.00
+  行项目 3 税额 = €387.50 × 0.00 = €0.00
 
-  Total Tax = €950.00 + €70.00 + €0.00 = €1,020.00
+  总税额 = €950.00 + €70.00 + €0.00 = €1,020.00
 ```
 
 **实施方式：**
 
 ```
-For each line:
-  1. Get product tax category
-  2. Lookup applicable tax rate
-  3. Calculate: Line_Net × Tax_Rate = Line_Tax
-  4. Sum all Line_Tax values = Total_Tax
+对每个行项目：
+  1. 获取产品税务类别
+  2. 查找适用的税率
+  3. 计算：Line_Net × Tax_Rate = Line_Tax
+  4. 汇总所有 Line_Tax 值 = Total_Tax
 ```
 
 ***
@@ -502,33 +502,33 @@ For each line:
 **场景：** 应用批量折扣和提前付款折扣
 
 ```
-Original Subtotal: €10,000.00
+原始小计: €10,000.00
 
-Step 1: Volume Discount (10% for orders > €5,000)
-  Discount = €10,000.00 × 0.10 = €1,000.00
-  After Volume Discount = €10,000.00 - €1,000.00 = €9,000.00
+步骤 1：批量折扣（订单金额 > €5,000 时折扣 10%）
+  折扣 = €10,000.00 × 0.10 = €1,000.00
+  扣除批量折扣后 = €10,000.00 - €1,000.00 = €9,000.00
 
-Step 2: Early Payment Discount (2% if paid within 10 days)
-  Discount = €9,000.00 × 0.02 = €180.00
-  After Payment Discount = €9,000.00 - €180.00 = €8,820.00
+步骤 2：提前付款折扣（10 天内付款时折扣 2%）
+  折扣 = €9,000.00 × 0.02 = €180.00
+  扣除付款折扣后 = €9,000.00 - €180.00 = €8,820.00
 
-Step 3: Calculate Tax (on discounted amount)
-  Tax = €8,820.00 × 0.19 = €1,675.80
+步骤 3：计算税额（按折扣后金额计算）
+  税额 = €8,820.00 × 0.19 = €1,675.80
 
-Final Total = €8,820.00 + €1,675.80 = €10,495.80
+最终总额 = €8,820.00 + €1,675.80 = €10,495.80
 ```
 
 **实施方式：**
 
 ```
-1. Check order value for volume discount eligibility
-2. Calculate volume discount
-3. Apply volume discount to subtotal
-4. Check payment terms for early payment discount
-5. Calculate early payment discount
-6. Apply early payment discount
-7. Calculate tax on final discounted amount
-8. Calculate grand total
+1. 检查订单金额是否符合批量折扣条件
+2. 计算批量折扣
+3. 将批量折扣应用于小计
+4. 检查付款条款是否适用提前付款折扣
+5. 计算提前付款折扣
+6. 应用提前付款折扣
+7. 按最终折扣后金额计算税额
+8. 计算总计
 ```
 
 ***
@@ -538,33 +538,33 @@ Final Total = €8,820.00 + €1,675.80 = €10,495.80
 **场景：** 将发票计量单位换算为标准计量单位
 
 ```
-Invoice shows:
-  Product: Steel Rods
-  Quantity: 50
-  Unit: Meters
-  Unit Price: €10.00/meter
-  Line Total: €500.00
+发票显示：
+  产品: Steel Rods
+  数量: 50
+  单位: Meters
+  单价: €10.00/meter
+  行项目总额: €500.00
 
-Company standard UOM: Feet
+公司标准计量单位 (UOM): Feet
 
-Conversion:
+换算：
   1 meter = 3.28084 feet
 
-  Quantity (feet) = 50 meters × 3.28084 = 164.042 feet
-  Unit Price (feet) = €10.00/meter ÷ 3.28084 = €3.05/foot
+  数量 (feet) = 50 meters × 3.28084 = 164.042 feet
+  单价 (feet) = €10.00/meter ÷ 3.28084 = €3.05/foot
 
-  Verification: 164.042 feet × €3.05/foot ≈ €500.00 ✅
+  验证: 164.042 feet × €3.05/foot ≈ €500.00 ✅
 ```
 
 **实施方式：**
 
 ```
-1. Identify invoice UOM
-2. Get conversion factor to standard UOM
-3. Convert quantity
-4. Convert unit price
-5. Verify line total remains same
-6. Store both original and converted values
+1. 确定发票计量单位（UOM）
+2. 获取转换为标准 UOM 的换算系数
+3. 转换数量
+4. 转换单价
+5. 验证行项目总额保持不变
+6. 存储原始值和转换后的值
 ```
 
 ***
@@ -574,32 +574,32 @@ Conversion:
 **场景：** 计算付款条件和到期日
 
 ```
-Invoice Date: 2025-10-23
-Payment Terms: NET30
+发票日期: 2025-10-23
+付款条款: NET30
 
-Calculations:
-  Due Date = Invoice Date + 30 days = 2025-11-22
+计算：
+  到期日期 = 发票日期 + 30 天 = 2025-11-22
 
-  Early Payment Discount Available If:
-    Payment Date ≤ Invoice Date + 10 days
-    Discount End Date = 2025-11-02
+  提前付款折扣适用条件：
+    付款日期 ≤ 发票日期 + 10 天
+    折扣截止日期 = 2025-11-02
 
-  Days Until Due = Due Date - Today
-    If Today = 2025-10-23: Days = 30
-    If Today = 2025-11-15: Days = 7
-    If Today = 2025-11-23: Days = -1 (overdue)
+  距到期天数 = 到期日期 - 今天
+    如果今天 = 2025-10-23：天数 = 30
+    如果今天 = 2025-11-15：天数 = 7
+    如果今天 = 2025-11-23：天数 = -1 (逾期)
 ```
 
 **实施方式：**
 
 ```
-1. Extract Invoice_Date
-2. Extract Payment_Terms (e.g., "NET30", "NET60", "2/10 NET30")
-3. Parse payment terms
-4. Calculate Due_Date
-5. Calculate Discount_End_Date (if applicable)
-6. Calculate Days_Until_Due
-7. Set Status: "Current", "Due Soon", "Overdue"
+1. 提取 Invoice_Date
+2. 提取 Payment_Terms（例如，"NET30"、"NET60"、"2/10 NET30"）
+3. 解析付款条款
+4. 计算 Due_Date
+5. 计算 Discount_End_Date（如适用）
+6. 计算 Days_Until_Due
+7. 设置状态: "Current"（当前）、"Due Soon"（即将到期）、"Overdue"（逾期）
 ```
 
 ***
@@ -609,23 +609,23 @@ Calculations:
 **场景：** 从非结构化文本中提取结构化数据
 
 ```
-Original Field: "PO-2025-ABC-12345-REV2"
+原始字段: "PO-2025-ABC-12345-REV2"
 
-Extract:
-  Year: "2025"
-  Department: "ABC"
-  PO Number: "12345"
-  Revision: "2"
+提取：
+  年份: "2025"
+  部门: "ABC"
+  采购订单编号: "12345"
+  修订版本: "2"
 
-Method:
-  Split by delimiter "-"
-  Array: ["PO", "2025", "ABC", "12345", "REV2"]
+方法：
+  使用分隔符 "-" 拆分
+  数组: ["PO", "2025", "ABC", "12345", "REV2"]
 
-  Extract:
+  提取：
     Year = Array[1] = "2025"
     Department = Array[2] = "ABC"
     PO_Number = Array[3] = "12345"
-    Revision = Extract digits from Array[4] = "2"
+    Revision = 从 Array[4] 提取数字 = "2"
 ```
 
 ***
@@ -633,78 +633,78 @@ Method:
 ## 完整转换工作流图
 
 ```
-INVOICE DATA EXTRACTED
+已提取发票数据
 │
-├─ STEP 1: LINE ITEM CALCULATIONS
-│  For each line:
+├─ 步骤 1：行项目计算
+│  对每个行项目：
 │    Quantity × Unit_Price = Line_Total
-│  Result: Line totals calculated
+│  结果：已计算各行项目总额
 │
-├─ STEP 2: SUBTOTAL CALCULATION
+├─ 步骤 2：小计计算
 │  SUM(All Line_Totals) = Subtotal
-│  Result: €6,387.50
+│  结果: €6,387.50
 │
-├─ STEP 3: TAX CALCULATION
+├─ 步骤 3：税额计算
 │  Subtotal × Tax_Rate = Tax_Amount
 │  €6,387.50 × 19% = €1,213.63
 │
-├─ STEP 4: GRAND TOTAL CALCULATION
+├─ 步骤 4：总计计算
 │  Subtotal + Tax_Amount = Grand_Total
 │  €6,387.50 + €1,213.63 = €7,601.13
 │
-├─ STEP 5: CURRENCY CHECK
+├─ 步骤 5：货币检查
 │  │
-│  ├─ Currency = EUR? YES
-│  │  → Skip conversion
-│  │  → Use Grand_Total as is
+│  ├─ Currency = EUR? 是
+│  │  → 跳过换算
+│  │  → 直接使用 Grand_Total
 │  │
-│  └─ Currency ≠ EUR? NO (e.g., USD)
+│  └─ Currency ≠ EUR? 否（例如，USD）
 │     │
-│     ├─ Call Exchange Rate API
-│     │  Get: USD → EUR rate (0.92)
+│     ├─ 调用汇率 API
+│     │  获取：USD → EUR 汇率 (0.92)
 │     │
-│     ├─ Convert Amount
+│     ├─ 换算金额
 │     │  $7,601.13 × 0.92 = €6,993.04
 │     │
-│     └─ Store converted amount
+│     └─ 存储换算后的金额
 │        Grand_Total_EUR = €6,993.04
 │
-├─ STEP 6: DATA ENRICHMENT
-│  For each line:
-│    Lookup Product_Category → GL_Account
-│    Store GL_Account in line item
-│  Result: All lines have GL accounts
+├─ 步骤 6：数据丰富
+│  对每个行项目：
+│    查询 Product_Category → GL_Account
+│    将 GL_Account 存储在行项目中
+│  结果：所有行项目都已关联总账科目
 │
-├─ STEP 7: VALIDATION
+├─ 步骤 7：验证
 │  │
-│  ├─ Compare Calculated vs Invoice Total
-│  │  Variance = |Calculated - Invoice| / Invoice × 100
+│  ├─ 比较计算总额与发票总额
+│  │  差异率 = |计算金额 - 发票金额| / 发票金额 × 100
 │  │
-│  ├─ Variance ≤ 1%? ✅
-│  │  Set Validation_Status = "PASS"
-│  │  Continue processing
+│  ├─ 差异率 ≤ 1%? ✅
+│  │  设置 Validation_Status = "PASS"
+│  │  继续处理
 │  │
-│  └─ Variance > 1%? ❌
-│     Set Validation_Status = "FAIL"
-│     Create review task
-│     Flag for manual check
+│  └─ 差异率 > 1%? ❌
+│     设置 Validation_Status = "FAIL"
+│     创建审核任务
+│     标记以供人工检查
 │
-├─ STEP 8: FORMATTING
+├─ 步骤 8：格式化
 │  │
-│  ├─ Format Dates
+│  ├─ 格式化日期
 │  │  10/23/2025 → 2025-10-23
 │  │
-│  ├─ Format Numbers
-│  │  7601.13 → 7.601,13 (locale-specific)
+│  ├─ 格式化数字
+│  │  7601.13 → 7.601,13 (因区域设置而异)
 │  │
-│  ├─ Format Text
+│  ├─ 格式化文本
 │  │  "abc corp" → "ABC CORP"
 │  │
-│  └─ Format for Export
-│     All fields in ERP-compatible format
+│  └─ 格式化以供导出
+│     所有字段均采用与 ERP 兼容的格式
 │
-└─ TRANSFORMATION COMPLETE
-   Document ready for next workflow step
+└─ 转换完成
+   文档已准备好进入工作流的下一步
 ```
 
 ***
@@ -792,51 +792,51 @@ INVOICE DATA EXTRACTED
 **错误 1：除以零**
 
 ```
-Problem: Unit_Price = Total / Quantity, but Quantity = 0
+问题：Unit_Price = Total / Quantity，但 Quantity = 0
 
-Solution:
+解决方案：
   IF Quantity = 0 OR Quantity IS NULL:
-    Set Unit_Price = 0
-    Flag for review
+    设置 Unit_Price = 0
+    标记为需要审核
   ELSE:
-    Calculate normally
+    正常计算
 ```
 
 **错误 2：数字格式无效**
 
 ```
-Problem: Field contains "€1,234.56" but need number 1234.56
+问题：字段包含 "€1,234.56"，但需要数字 1234.56
 
-Solution:
-  1. Remove currency symbols
-  2. Remove thousand separators
-  3. Convert decimal separator if needed
-  4. Parse to number
-  5. Validate result
+解决方案：
+  1. 移除货币符号
+  2. 移除千位分隔符
+  3. 如有需要，转换小数分隔符
+  4. 解析为数字
+  5. 验证结果
 ```
 
 **错误 3：日期解析失败**
 
 ```
-Problem: Date in unexpected format
+问题：日期格式不符合预期
 
-Solution:
-  1. Try multiple date formats
-  2. If all fail: Set to null
-  3. Flag for manual review
-  4. Log original value
+解决方案：
+  1. 尝试多种日期格式
+  2. 如果都失败：设为 null
+  3. 标记为需要人工审核
+  4. 记录原始值
 ```
 
 **错误 4：缺少换算系数**
 
 ```
-Problem: Unknown UOM conversion
+问题：未知的 UOM 换算
 
-Solution:
-  1. Check conversion table
-  2. If not found: Skip conversion
-  3. Flag for admin to add conversion
-  4. Use original values
+解决方案：
+  1. 检查换算表
+  2. 如果未找到：跳过换算
+  3. 标记管理员添加换算项
+  4. 使用原始值
 ```
 
 ***

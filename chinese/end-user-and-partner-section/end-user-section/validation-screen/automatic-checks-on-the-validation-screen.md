@@ -30,19 +30,19 @@ Vat rate = Tax amount * 100 / Net amount
 Tax amount = Net amount + Vat rate / 100
 ```
 
-### 减税净额：
+### 优惠税率净额：
 
 ```
 Net amount reduced = Reduced Tax amount * 100 / Vat rate reduced
 ```
 
-### 减税增值税税率：
+### 优惠税率增值税税率：
 
 ```
 Vat rate reduced = Reduced Tax amount * 100 / Net amount reduced
 ```
 
-### 减税税额：
+### 优惠税率税额：
 
 ```
 Tax amount reduced = Reduced Tax amount + Vat rate reduced / 100

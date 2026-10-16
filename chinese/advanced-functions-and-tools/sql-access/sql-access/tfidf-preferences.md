@@ -19,78 +19,78 @@
 ## 分析与描述
 
 ```markdown
-# Technical Documentation for `public.tfidf_preferences` Table
+# `public.tfidf_preferences` 表的技术文档
 
-## Introduction
+## 简介
 
-The `public.tfidf_preferences` table appears to be designed to store preferences related to TF-IDF (Term Frequency-Inverse Document Frequency) configurations or models. This table contains information about specific preferences set by organizations, including preference keys and their corresponding values, along with metadata about creation, modification, and deletion activities.
+`public.tfidf_preferences` 表似乎用于存储与 TF-IDF（词频-逆文档频率）配置或模型相关的偏好设置。此表包含组织设置的特定偏好信息，包括偏好键及其对应的值，以及有关创建、修改和删除操作的元数据。
 
-## Column Descriptions
+## 字段说明
 
 ### id
-- **Meaning**: A unique identifier for each record in the table.
-- **Role**: Primary Key.
-- **Typical Contents**: A UUID string representing the unique ID of a preference entry.
+- **含义**：表中每条记录的唯一标识符。
+- **作用**：主键。
+- **典型内容**：表示偏好条目唯一 ID 的 UUID 字符串。
 
 ### org_id
-- **Meaning**: Identifier for the organization associated with the preference.
-- **Role**: Foreign Key.
-- **Typical Contents**: A UUID string that links the preference to a specific organization.
+- **含义**：与该偏好设置关联的组织标识符。
+- **作用**：外键。
+- **典型内容**：将该偏好设置关联到特定组织的 UUID 字符串。
 
 ### tfidf_id
-- **Meaning**: Identifier for the specific TF-IDF configuration or model.
-- **Role**: Foreign Key.
-- **Typical Contents**: A UUID string representing the linked TF-IDF configuration.
+- **含义**：特定 TF-IDF 配置或模型的标识符。
+- **作用**：外键。
+- **典型内容**：表示关联的 TF-IDF 配置的 UUID 字符串。
 
 ### pref_key
-- **Meaning**: The key or name of the preference setting.
-- **Role**: Descriptive Field.
-- **Typical Contents**: A string representing the name of the preference, such as 'USE_ETEXT_IF_AVAILABLE' or 'AI_MODEL'.
+- **含义**：偏好设置的键或名称。
+- **作用**：描述性字段。
+- **典型内容**：表示偏好名称的字符串，例如 'USE_ETEXT_IF_AVAILABLE' 或 'AI_MODEL'。
 
 ### pref_value
-- **Meaning**: The value associated with the preference key.
-- **Role**: Descriptive Field.
-- **Typical Contents**: A string or text value that corresponds to the preference key, e.g., 'true', 'false', or 'Full'.
+- **含义**：与偏好键对应的值。
+- **作用**：描述性字段。
+- **典型内容**：与偏好键对应的字符串或文本值，例如 'true'、'false' 或 'Full'。
 
 ### created_by
-- **Meaning**: Identifier for the user who created the preference entry.
-- **Role**: Descriptive Field.
-- **Typical Contents**: An integer representing the user ID of the creator.
+- **含义**：创建该偏好条目的用户标识符。
+- **作用**：描述性字段。
+- **典型内容**：表示创建者用户 ID 的整数。
 
 ### created_on
-- **Meaning**: Timestamp of when the preference entry was created.
-- **Role**: Technical Field.
-- **Typical Contents**: A timestamp with timezone indicating the creation date and time.
+- **含义**：创建该偏好条目的时间戳。
+- **作用**：技术字段。
+- **典型内容**：包含时区的时间戳，表示创建日期和时间。
 
 ### last_modified_by
-- **Meaning**: Identifier for the user who last modified the preference entry.
-- **Role**: Descriptive Field.
-- **Typical Contents**: A UUID representing the user ID of the last person who modified the entry, if applicable.
+- **含义**：最后修改该偏好条目的用户标识符。
+- **作用**：描述性字段。
+- **典型内容**：表示最后修改该条目的用户 ID 的 UUID（如适用）。
 
 ### last_modified_on
-- **Meaning**: Timestamp of the last modification to the preference entry.
-- **Role**: Technical Field.
-- **Typical Contents**: A timestamp with timezone showing the last modification date and time.
+- **含义**：该偏好条目最后一次修改的时间戳。
+- **作用**：技术字段。
+- **典型内容**：包含时区的时间戳，表示最后修改的日期和时间。
 
 ### is_deleted
-- **Meaning**: Flag indicating whether the preference entry has been marked as deleted.
-- **Role**: Technical Field.
-- **Typical Contents**: A boolean value; `True` if the entry is deleted, otherwise `False`.
+- **含义**：指示该偏好条目是否已标记为删除的标志。
+- **作用**：技术字段。
+- **典型内容**：布尔值；条目已删除时为 `True`，否则为 `False`。
 
 ### deleted_by
-- **Meaning**: Identifier for the user who marked the preference entry as deleted.
-- **Role**: Descriptive Field.
-- **Typical Contents**: A UUID representing the user ID who deleted the entry, if applicable.
+- **含义**：将该偏好条目标记为删除的用户标识符。
+- **作用**：描述性字段。
+- **典型内容**：表示删除该条目的用户 ID 的 UUID（如适用）。
 
 ### deleted_on
-- **Meaning**: Timestamp of when the preference entry was marked as deleted.
-- **Role**: Technical Field.
-- **Typical Contents**: A timestamp with timezone indicating when the entry was deleted.
+- **含义**：该偏好条目标记为删除时的时间戳。
+- **作用**：技术字段。
+- **典型内容**：包含时区的时间戳，表示条目被删除的时间。
 
 ### supplier_id
-- **Meaning**: Identifier for the supplier associated with the preference.
-- **Role**: Foreign Key.
-- **Typical Contents**: A UUID string representing the supplier linked to the preference.
+- **含义**：与该偏好设置关联的供应商标识符。
+- **作用**：外键。
+- **典型内容**：表示与该偏好设置关联的供应商的 UUID 字符串。
 
-This documentation provides a detailed overview of the purpose and structure of the `public.tfidf_preferences` table, assisting developers in understanding how to interact with and utilize this data effectively.
+本文档详细介绍了 `public.tfidf_preferences` 表的用途和结构，帮助开发人员了解如何有效地与此数据交互并加以利用。
 ```

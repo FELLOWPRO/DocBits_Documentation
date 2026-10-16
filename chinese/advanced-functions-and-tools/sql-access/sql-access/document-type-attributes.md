@@ -17,68 +17,68 @@
 ## 分析与说明
 
 ```markdown
-# Technical Documentation for `public.document_type_attributes` Table
+# `public.document_type_attributes` 表技术文档
 
-## Introduction
+## 简介
 
-The `public.document_type_attributes` table appears to be designed for managing attributes related to various document types within an organizational context. This table likely supports configuration or metadata management for different types of documents, such as invoices or delivery notes, by associating specific attributes to each document type.
+`public.document_type_attributes` 表似乎用于在组织范围内管理与各种文档类型相关的属性。该表可能支持不同文档类型（例如发票或送货单）的配置或元数据管理，方法是将特定属性关联到每种文档类型。
 
-## Column Descriptions
+## 字段说明
 
 ### id
-- **Meaning**: A unique identifier for each record in the table.
-- **Role**: Primary key.
-- **Typical Contents**: A UUID string that uniquely identifies a row in the table.
+- **含义**：表中每条记录的唯一标识符。
+- **作用**：主键。
+- **典型内容**：用于唯一标识表中一行的 UUID 字符串。
 
 ### org_id
-- **Meaning**: Represents the organization to which the document type attribute belongs.
-- **Role**: Foreign key.
-- **Typical Contents**: A UUID string referencing an organization.
+- **含义**：该文档类型属性所属的组织。
+- **作用**：外键。
+- **典型内容**：引用某个组织的 UUID 字符串。
 
 ### doc_type_key
-- **Meaning**: The type of document to which the attribute applies (e.g., INVOICE, DELIVERY_NOTE).
-- **Role**: Descriptive field.
-- **Typical Contents**: A string representing a document type.
+- **含义**：该属性适用的文档类型（例如 INVOICE、DELIVERY_NOTE）。
+- **作用**：描述性字段。
+- **典型内容**：表示文档类型的字符串。
 
 ### sub_doc_type_key
-- **Meaning**: A more specific categorization within the document type, if applicable.
-- **Role**: Descriptive field.
-- **Typical Contents**: Typically `None`, indicating it may not always be used.
+- **含义**：文档类型中的更具体分类（如适用）。
+- **作用**：描述性字段。
+- **典型内容**：通常为 `None`，表示该字段可能并非总会使用。
 
 ### attribute_key
-- **Meaning**: The specific attribute or property key related to the document type.
-- **Role**: Descriptive field.
-- **Typical Contents**: A string representing an attribute key, such as `SECOND_APPROVAL_BEFORE_EXPORT`.
+- **含义**：与文档类型相关的具体属性或属性键。
+- **作用**：描述性字段。
+- **典型内容**：表示属性键的字符串，例如 `SECOND_APPROVAL_BEFORE_EXPORT`。
 
 ### attribute_value
-- **Meaning**: The value associated with the attribute key for the document type.
-- **Role**: Descriptive field.
-- **Typical Contents**: A string or numeric value that provides the value of the attribute, e.g., `true`, `123`.
+- **含义**：与文档类型的属性键关联的值。
+- **作用**：描述性字段。
+- **典型内容**：用于提供属性值的字符串或数值，例如 `true`、`123`。
 
 ### created_by
-- **Meaning**: The identifier of the user who created the record.
-- **Role**: Descriptive field.
-- **Typical Contents**: An integer representing a user ID.
+- **含义**：创建该记录的用户标识符。
+- **作用**：描述性字段。
+- **典型内容**：表示用户 ID 的整数。
 
 ### created_on
-- **Meaning**: The timestamp when the record was created.
-- **Role**: Technical field.
-- **Typical Contents**: A timestamp with time zone indicating when the record was created.
+- **含义**：创建该记录时的时间戳。
+- **作用**：技术字段。
+- **典型内容**：带时区的时间戳，表示记录的创建时间。
 
 ### last_modified_on
-- **Meaning**: The timestamp of the last modification made to the record.
-- **Role**: Technical field.
-- **Typical Contents**: A timestamp with time zone indicating the last update time.
+- **含义**：最后一次修改该记录的时间戳。
+- **作用**：技术字段。
+- **典型内容**：带时区的时间戳，表示最后更新时间。
 
 ### is_deleted
-- **Meaning**: Indicates whether the record is marked as deleted.
-- **Role**: Technical field.
-- **Typical Contents**: A boolean value, `false` implying the record is active.
+- **含义**：指示该记录是否标记为已删除。
+- **作用**：技术字段。
+- **典型内容**：布尔值；`false` 表示该记录处于活动状态。
 
 ### sub_org_id
-- **Meaning**: Represents a sub-organization within the main organization, if applicable.
-- **Role**: Foreign key.
-- **Typical Contents**: Typically `None`, indicating it may not always be used.
+- **含义**：主组织下属的子组织（如适用）。
+- **作用**：外键。
+- **典型内容**：通常为 `None`，表示该字段可能并非总会使用。
 ```
 
 本文档对 `public.document_type_attributes` 表进行了结构化概述，帮助开发人员了解每一列的用途和用法。

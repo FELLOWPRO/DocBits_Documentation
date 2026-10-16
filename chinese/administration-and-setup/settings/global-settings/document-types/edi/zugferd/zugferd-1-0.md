@@ -25,7 +25,7 @@ ZUGFeRD 1.0 是该标准的初始版本。虽然版本较旧，但仍有许多�
 
 ### 税额明细（按层级分类）
 
-`ApplicableTradeTax` 块会根据税率分配到三个层级（不按位置索引）：标准税率字段（`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`）对应税率 ≥ 19；减税率字段（`*_2`）对应 0 < 税率 < 19；零税率字段（`*_3`）对应税率 = 0。完整字段列表请参阅[ZUGFeRD 税额明细](./#tax-breakdown-tier-classified)。（ZUGFeRD 1.0 在其 TRANSFORMATION XSLT 中使用旧版 CII 词汇，但上述层级选择规则与 2.x 相同。）
+`ApplicableTradeTax` 块会根据税率分配到三个层级（不按位置索引）：标准税率字段（`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`）对应税率 ≥ 19；低税率字段（`*_2`）对应 0 < 税率 < 19；零税率字段（`*_3`）对应税率 = 0。完整字段列表请参阅[ZUGFeRD 税额明细](./#tax-breakdown-tier-classified)。（ZUGFeRD 1.0 在其 TRANSFORMATION XSLT 中使用旧版 CII 词汇，但上述层级选择规则与 2.x 相同。）
 
 ### 文档引用
 

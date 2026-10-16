@@ -73,13 +73,13 @@
 **示例（自然语言）：**
 
 ```
-1. Go to https://supplier.com/login
-2. Enter username: myuser
-3. Enter password: mypass
-4. Click Login button
-5. Search for product "ABC123"
-6. Extract the price
-7. Return the price
+1. 前往 https://supplier.com/login
+2. 输入用户名：myuser
+3. 输入密码：mypass
+4. 点击 Login 按钮
+5. 搜索产品 "ABC123"
+6. 提取价格
+7. 返回价格
 ```
 
 ### 变量
@@ -96,8 +96,8 @@ supplier_code: "SUPP-001"
 可在脚本中按如下方式使用这些变量：
 
 ```
-Search for product "{product_id}"
-Find supplier "{supplier_code}"
+搜索产品 "{product_id}"
+查找供应商 "{supplier_code}"
 ```
 
 ### 最大步骤数
@@ -131,14 +131,14 @@ Find supplier "{supplier_code}"
 **脚本定义：**
 
 ```
-Step 1: Open website https://prices.supplier-xyz.com
-Step 2: Click on "Product Lookup"
-Step 3: Enter product code: ABC-123
-Step 4: Click "Search"
-Step 5: Wait for results to load (3 seconds)
-Step 6: Extract price from the page
-Step 7: Extract available quantity
-Step 8: Return both values
+步骤 1：打开网站 https://prices.supplier-xyz.com
+步骤 2：点击“Product Lookup”
+步骤 3：输入产品代码：ABC-123
+步骤 4：点击“Search”
+步骤 5：等待结果加载（3 seconds）
+步骤 6：从页面提取价格
+步骤 7：提取可用数量
+步骤 8：返回这两个值
 ```
 
 **传入的变量：**
@@ -151,9 +151,9 @@ supplier_name = "Supplier XYZ"
 **使用变量的脚本：**
 
 ```
-Open website https://prices.{supplier_name}.com
-Enter product code: {product_code}
-Extract price and quantity
+打开网站 https://prices.{supplier_name}.com
+输入产品代码：{product_code}
+提取价格和数量
 ```
 
 **预期结果：**
@@ -211,11 +211,11 @@ quantity_available: 500
 **脚本：**
 
 ```
-1. Go to supplier website
-2. Search for product
-3. Extract price from results
-4. Return price to DocFlow
-5. Use price to validate invoice
+1. 前往供应商网站
+2. 搜索产品
+3. 从结果中提取价格
+4. 将价格返回给 DocFlow
+5. 使用价格验证发票
 ```
 
 ### 2. 检查库存情况
@@ -225,11 +225,11 @@ quantity_available: 500
 **脚本：**
 
 ```
-1. Log into supplier portal
-2. Search for product
-3. Extract availability status
-4. Extract delivery time
-5. Return both to DocFlow
+1. 登录供应商门户
+2. 搜索产品
+3. 提取可用状态
+4. 提取交付时间
+5. 将两项信息返回给 DocFlow
 ```
 
 ### 3. 自动提交表单
@@ -239,13 +239,13 @@ quantity_available: 500
 **脚本：**
 
 ```
-1. Navigate to form page
-2. Fill Company Name field
-3. Fill Contact Email field
-4. Select Country from dropdown
-5. Upload file attachment
-6. Click Submit button
-7. Capture confirmation message
+1. 前往表单页面
+2. 填写 Company Name 字段
+3. 填写 Contact Email 字段
+4. 从下拉菜单中选择 Country
+5. 上传附件
+6. 点击 Submit 按钮
+7. 获取确认消息
 ```
 
 ### 4. 验证数据录入
@@ -255,14 +255,14 @@ quantity_available: 500
 **脚本：**
 
 ```
-1. Go to System A
-2. Search for Order #123
-3. Extract order amount
-4. Go to System B
-5. Search for Order #123
-6. Extract order amount
-7. Compare amounts
-8. Return true/false if they match
+1. 前往 System A
+2. 搜索 Order #123
+3. 提取订单金额
+4. 前往 System B
+5. 搜索 Order #123
+6. 提取订单金额
+7. 比较金额
+8. 如果金额匹配，则返回 true/false
 ```
 
 ***
@@ -306,17 +306,17 @@ quantity_available: 500
 ✅ **建议：**
 
 ```
-1. Click the "Login" button
-2. Type the username in the login field
-3. Wait 2 seconds for form to process
+1. 点击 "Login" 按钮
+2. 在登录字段中输入用户名
+3. 等待 2 秒，让表单完成处理
 ```
 
 ❌ **不建议：**
 
 ```
-1. Do the login thing
-2. Enter stuff
-3. Wait for it
+1. 执行登录操作
+2. 输入所需内容
+3. 等待处理完成
 ```
 
 ### 使用具体的选择器
@@ -324,15 +324,15 @@ quantity_available: 500
 ✅ **建议：**
 
 ```
-Click the button labeled "Submit Order"
-Type in the field with placeholder "Enter Email"
+点击标有 "Submit Order" 的按钮
+在占位符为 "Enter Email" 的字段中输入内容
 ```
 
 ❌ **不建议：**
 
 ```
-Click somewhere
-Type in a field
+点击某处
+在字段中输入内容
 ```
 
 ### 错误处理
@@ -340,15 +340,15 @@ Type in a field
 ✅ **建议：**
 
 ```
-1. Try to click "Next" button
-2. If button not found, extract data from current page
-3. Return what we have
+1. 尝试点击 "Next" 按钮
+2. 如果未找到按钮，则从当前页面提取数据
+3. 返回已有内容
 ```
 
 ❌ **不建议：**
 
 ```
-Click "Next" (assumes it's always there)
+点击 "Next"（假定该按钮始终存在）
 ```
 
 ***
@@ -460,22 +460,22 @@ Click "Next" (assumes it's always there)
 ### 可用变量：
 
 ```
-{invoice_number} - From document field
-{supplier_code} - From document field
-{product_id} - From document field
-{quantity} - From document field
-{currency} - From document field
+{invoice_number} - 来自文档字段
+{supplier_code} - 来自文档字段
+{product_id} - 来自文档字段
+{quantity} - 来自文档字段
+{currency} - 来自文档字段
 ```
 
 ### 使用变量的脚本：
 
 ```
-1. Go to https://supplier.com/api/lookup
-2. Enter supplier code: {supplier_code}
-3. Search for product: {product_id}
-4. Enter quantity: {quantity}
-5. Extract price in currency: {currency}
-6. Return extracted price
+1. 前往 https://supplier.com/api/lookup
+2. 输入供应商代码：{supplier_code}
+3. 搜索产品：{product_id}
+4. 输入数量：{quantity}
+5. 提取以 {currency} 计价的价格
+6. 返回提取的价格
 ```
 
 ***

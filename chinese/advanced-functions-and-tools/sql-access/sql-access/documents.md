@@ -77,366 +77,366 @@
 ## 分析与说明
 
 ```markdown
-# Technical Documentation for `public.documents` Table
+# `public.documents` 表技术文档
 
-## Introduction
+## 简介
 
-The `public.documents` table is designed to store and manage metadata and processing information related to document handling within an organization. This includes tracking document status, processing attempts, language, and other administrative details. The table is structured to support document classification, processing workflow, and user assignments, making it integral to the document management system.
+`public.documents` 表用于存储和管理组织内文档处理相关的元数据和处理信息，包括跟踪文档状态、处理尝试次数、语言及其他管理详情。该表的结构支持文档分类、处理工作流和用户分配，是文档管理系统的重要组成部分。
 
-## Column Descriptions
+## 字段说明
 
 ### id
-- **Meaning**: Unique identifier for each document.
-- **Role**: Primary key.
-- **Typical Contents**: A UUID string representing the document.
+- **含义**：每份文档的唯一标识符。
+- **作用**：主键。
+- **典型内容**：表示文档的 UUID 字符串。
 
 ### org_id
-- **Meaning**: Identifier for the organization associated with the document.
-- **Role**: Foreign key.
-- **Typical Contents**: A UUID string representing the organization.
+- **含义**：与文档关联的组织标识符。
+- **作用**：外键。
+- **典型内容**：表示组织的 UUID 字符串。
 
 ### batch_id
-- **Meaning**: Identifier for the batch in which the document was processed.
-- **Role**: Foreign key.
-- **Typical Contents**: A UUID string representing the batch.
+- **含义**：文档处理所在批次的标识符。
+- **作用**：外键。
+- **典型内容**：表示批次的 UUID 字符串。
 
 ### doc_path
-- **Meaning**: File path where the document is stored.
-- **Role**: Technical field.
-- **Typical Contents**: Path to the document file, e.g., `documents/{id}/{id}.pdf`.
+- **含义**：文档的存储路径。
+- **作用**：技术字段。
+- **典型内容**：文档文件的路径，例如 `documents/{id}/{id}.pdf`。
 
 ### doc_type
-- **Meaning**: Type of document being stored (e.g., invoice).
-- **Role**: Document classification.
-- **Typical Contents**: A string such as `INVOICE`.
+- **含义**：所存储文档的类型（例如发票）。
+- **作用**：文档分类。
+- **典型内容**：例如 `INVOICE` 这样的字符串。
 
 ### status
-- **Meaning**: Current processing status of the document.
-- **Role**: Workflow indicator.
-- **Typical Contents**: A string indicating status, e.g., `ready_for_validation`.
+- **含义**：文档当前的处理状态。
+- **作用**：工作流指示字段。
+- **典型内容**：表示状态的字符串，例如 `ready_for_validation`。
 
 ### message
-- **Meaning**: Information about the document's processing state or errors.
-- **Role**: Descriptive field.
-- **Typical Contents**: Text describing errors or messages related to document processing.
+- **含义**：有关文档处理状态或错误的信息。
+- **作用**：描述性字段。
+- **典型内容**：描述文档处理相关错误或消息的文本。
 
 ### export_attempts
-- **Meaning**: Number of times an export attempt has been made for the document.
-- **Role**: Processing tracking.
-- **Typical Contents**: Integer count of export attempts.
+- **含义**：针对该文档尝试导出的次数。
+- **作用**：处理跟踪。
+- **典型内容**：导出尝试次数的整数计数。
 
 ### last_attempted_on
-- **Meaning**: Timestamp of the last attempt to process or export the document.
-- **Role**: Timestamp field.
-- **Typical Contents**: Date and time with time zone.
+- **含义**：最近一次尝试处理或导出文档的时间戳。
+- **作用**：时间戳字段。
+- **典型内容**：带时区的日期和时间。
 
 ### next_attempt_on
-- **Meaning**: Scheduled timestamp for the next attempt to process or export the document.
-- **Role**: Scheduling field.
-- **Typical Contents**: Date and time with time zone.
+- **含义**：计划进行下一次文档处理或导出的时间戳。
+- **作用**：调度字段。
+- **典型内容**：带时区的日期和时间。
 
 ### assigned_to
-- **Meaning**: Identifier for the user assigned to this document.
-- **Role**: Foreign key.
-- **Typical Contents**: Integer representing the user ID.
+- **含义**：分配给该文档的用户标识符。
+- **作用**：外键。
+- **典型内容**：表示用户 ID 的整数。
 
 ### created_by
-- **Meaning**: Identifier for the user who created or uploaded the document.
-- **Role**: Foreign key.
-- **Typical Contents**: Integer representing the user ID.
+- **含义**：创建或上传文档的用户标识符。
+- **作用**：外键。
+- **典型内容**：表示用户 ID 的整数。
 
 ### created_on
-- **Meaning**: Timestamp of when the document was created or uploaded.
-- **Role**: Timestamp field.
-- **Typical Contents**: Date and time with time zone.
+- **含义**：文档创建或上传的时间戳。
+- **作用**：时间戳字段。
+- **典型内容**：带时区的日期和时间。
 
 ### last_modified_on
-- **Meaning**: Timestamp of the last modification made to the document record.
-- **Role**: Timestamp field.
-- **Typical Contents**: Date and time with time zone.
+- **含义**：文档记录最近一次修改的时间戳。
+- **作用**：时间戳字段。
+- **典型内容**：带时区的日期和时间。
 
 ### is_deleted
-- **Meaning**: Indicates whether the document is marked as deleted.
-- **Role**: Logical deletion flag.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示文档是否已标记为删除。
+- **作用**：逻辑删除标记。
+- **典型内容**：布尔值（True 或 False）。
 
 ### task_id
-- **Meaning**: Identifier for the task associated with document processing.
-- **Role**: Foreign key.
-- **Typical Contents**: A UUID string representing the task.
+- **含义**：与文档处理相关任务的标识符。
+- **作用**：外键。
+- **典型内容**：表示任务的 UUID 字符串。
 
 ### filename
-- **Meaning**: Original filename of the document.
-- **Role**: Descriptive field.
-- **Typical Contents**: Name of the file, e.g., `document.pdf`.
+- **含义**：文档的原始文件名。
+- **作用**：描述性字段。
+- **典型内容**：文件名，例如 `document.pdf`。
 
 ### assigned_on
-- **Meaning**: Timestamp when the document was assigned to a user.
-- **Role**: Timestamp field.
-- **Typical Contents**: Date and time with time zone.
+- **含义**：文档分配给用户的时间戳。
+- **作用**：时间戳字段。
+- **典型内容**：带时区的日期和时间。
 
 ### pages
-- **Meaning**: Number of pages in the document.
-- **Role**: Descriptive field.
-- **Typical Contents**: Integer indicating the page count.
+- **含义**：文档的页数。
+- **作用**：描述性字段。
+- **典型内容**：表示页数的整数。
 
 ### auto_processed
-- **Meaning**: Indicates if the document was automatically processed.
-- **Role**: Processing status flag.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示文档是否经过自动处理。
+- **作用**：处理状态标记。
+- **典型内容**：布尔值（True 或 False）。
 
 ### exception_info
-- **Meaning**: Information on any exceptions encountered during processing.
-- **Role**: Descriptive field.
-- **Typical Contents**: Text describing processing exceptions.
+- **含义**：处理期间遇到的任何异常信息。
+- **作用**：描述性字段。
+- **典型内容**：描述处理异常的文本。
 
 ### doc_language
-- **Meaning**: Language of the document content.
-- **Role**: Language classification.
-- **Typical Contents**: ISO language code, e.g., `en`, `de`.
+- **含义**：文档内容的语言。
+- **作用**：语言分类。
+- **典型内容**：ISO 语言代码，例如 `en`、`de`。
 
 ### is_trimmed
-- **Meaning**: Indicates if the document has been trimmed or cropped.
-- **Role**: Document modification flag.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示文档是否经过裁切或剪裁。
+- **作用**：文档修改标记。
+- **典型内容**：布尔值（True 或 False）。
 
 ### doc_origin
-- **Meaning**: Origin of the document, possibly indicating the country or source system.
-- **Role**: Descriptive field.
-- **Typical Contents**: Country code or origin identifier, e.g., `DE`.
+- **含义**：文档的来源，可能表示国家或源系统。
+- **作用**：描述性字段。
+- **典型内容**：国家代码或来源标识符，例如 `DE`。
 
 ### doc_locale
-- **Meaning**: Locale settings of the document, indicating language and region.
-- **Role**: Locale classification.
-- **Typical Contents**: Locale string, e.g., `de_DE.ISO8859-1`.
+- **含义**：文档的区域设置，表示语言和地区。
+- **作用**：区域设置分类。
+- **典型内容**：区域设置字符串，例如 `de_DE.ISO8859-1`。
 
 ### is_doc2landing_doc
-- **Meaning**: Indicates if the document is related to a specific processing workflow (Doc2Landing).
-- **Role**: Workflow flag.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示文档是否与特定处理工作流（Doc2Landing）相关。
+- **作用**：工作流标记。
+- **典型内容**：布尔值（True 或 False）。
 
 ### extraction_time
-- **Meaning**: Time taken to extract data from the document.
-- **Role**: Performance metric.
-- **Typical Contents**: Double precision value representing extraction time.
+- **含义**：从文档中提取数据所用的时间。
+- **作用**：性能指标。
+- **典型内容**：表示提取耗时的双精度值。
 
 ### export_time
-- **Meaning**: Time taken to export the document.
-- **Role**: Performance metric.
-- **Typical Contents**: Double precision value representing export time.
+- **含义**：导出文档所用的时间。
+- **作用**：性能指标。
+- **典型内容**：表示导出耗时的双精度值。
 
 ### po_all_matched
-- **Meaning**: Indicates if all purchase orders related to the document have been matched.
-- **Role**: Matching status flag.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示与文档相关的所有采购订单是否均已匹配。
+- **作用**：匹配状态标记。
+- **典型内容**：布尔值（True 或 False）。
 
 ### restart_allowed
-- **Meaning**: Indicates if the document processing can be restarted.
-- **Role**: Workflow control flag.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示是否允许重新启动文档处理。
+- **作用**：工作流控制标记。
+- **典型内容**：布尔值（True 或 False）。
 
 ### table_version
-- **Meaning**: Version of the table structure used for the document.
-- **Role**: Version control.
-- **Typical Contents**: String indicating version, e.g., `v3`.
+- **含义**：该文档使用的表结构版本。
+- **作用**：版本控制。
+- **典型内容**：表示版本的字符串，例如 `v3`。
 
 ### force_ocr
-- **Meaning**: Indicates if OCR processing is forced for the document.
-- **Role**: Processing control flag.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示是否强制对文档执行 OCR 处理。
+- **作用**：处理控制标记。
+- **典型内容**：布尔值（True 或 False）。
 
 ### locked_by
-- **Meaning**: Identifier for the user who has locked the document for editing.
-- **Role**: Foreign key.
-- **Typical Contents**: Integer representing the user ID.
+- **含义**：锁定文档以进行编辑的用户标识符。
+- **作用**：外键。
+- **典型内容**：表示用户 ID 的整数。
 
 ### locked_on
-- **Meaning**: Timestamp when the document was locked for editing.
-- **Role**: Timestamp field.
-- **Typical Contents**: Date and time with time zone.
+- **含义**：文档被锁定以进行编辑的时间戳。
+- **作用**：时间戳字段。
+- **典型内容**：带时区的日期和时间。
 
 ### lock_renewed_on
-- **Meaning**: Timestamp when the document lock was last renewed.
-- **Role**: Timestamp field.
-- **Typical Contents**: Date and time with time zone.
+- **含义**：文档锁最近一次续期的时间戳。
+- **作用**：时间戳字段。
+- **典型内容**：带时区的日期和时间。
 
 ### lock_key
-- **Meaning**: Key associated with the document lock.
-- **Role**: Lock control.
-- **Typical Contents**: String representing the lock key.
+- **含义**：与文档锁关联的密钥。
+- **作用**：锁控制。
+- **典型内容**：表示锁密钥的字符串。
 
 ### last_saved_by
-- **Meaning**: Identifier for the user who last saved the document.
-- **Role**: Foreign key.
-- **Typical Contents**: Integer representing the user ID.
+- **含义**：最近一次保存文档的用户标识符。
+- **作用**：外键。
+- **典型内容**：表示用户 ID 的整数。
 
 ### last_saved_on
-- **Meaning**: Timestamp when the document was last saved.
-- **Role**: Timestamp field.
-- **Typical Contents**: Date and time with time zone.
+- **含义**：文档最近一次保存的时间戳。
+- **作用**：时间戳字段。
+- **典型内容**：带时区的日期和时间。
 
 ### document_version
-- **Meaning**: Version number of the document.
-- **Role**: Version tracking.
-- **Typical Contents**: Integer representing the document version.
+- **含义**：文档的版本号。
+- **作用**：版本跟踪。
+- **典型内容**：表示文档版本的整数。
 
 ### lock_session_key
-- **Meaning**: Session key associated with the document lock.
-- **Role**: Lock control.
-- **Typical Contents**: String representing the session key.
+- **含义**：与文档锁关联的会话密钥。
+- **作用**：锁控制。
+- **典型内容**：表示会话密钥的字符串。
 
 ### sub_org_id
-- **Meaning**: Identifier for a sub-organization associated with the document.
-- **Role**: Foreign key.
-- **Typical Contents**: A UUID string representing the sub-organization.
+- **含义**：与文档关联的子组织标识符。
+- **作用**：外键。
+- **典型内容**：表示子组织的 UUID 字符串。
 
 ### doc_source
-- **Meaning**: Source system or origin of the document.
-- **Role**: Descriptive field.
-- **Typical Contents**: String indicating the source, e.g., `doc2app`.
+- **含义**：文档的源系统或来源。
+- **作用**：描述性字段。
+- **典型内容**：表示来源的字符串，例如 `doc2app`。
 
 ### sub_doc_type
-- **Meaning**: Sub-type classification of the document.
-- **Role**: Document classification.
-- **Typical Contents**: String indicating the sub-type.
+- **含义**：文档的子类型分类。
+- **作用**：文档分类。
+- **典型内容**：表示子类型的字符串。
 
 ### assigned_to_group
-- **Meaning**: Identifier for the group to which the document is assigned.
-- **Role**: Assignment tracking.
-- **Typical Contents**: A UUID string representing the group.
+- **含义**：文档所分配到的组的标识符。
+- **作用**：分配跟踪。
+- **典型内容**：表示组的 UUID 字符串。
 
 ### status_changed_on
-- **Meaning**: Timestamp when the document's status was last changed.
-- **Role**: Timestamp field.
-- **Typical Contents**: Date and time with time zone.
+- **含义**：文档状态最近一次变更的时间戳。
+- **作用**：时间戳字段。
+- **典型内容**：带时区的日期和时间。
 
 ### improve_quality
-- **Meaning**: Indicates if quality improvement processes are applied to the document.
-- **Role**: Quality control flag.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示是否对文档应用了质量改进流程。
+- **作用**：质量控制标记。
+- **典型内容**：布尔值（True 或 False）。
 
 ### priority
-- **Meaning**: Processing priority of the document.
-- **Role**: Workflow control.
-- **Typical Contents**: Integer indicating priority level.
+- **含义**：文档的处理优先级。
+- **作用**：工作流控制。
+- **典型内容**：表示优先级的整数。
 
 ### metadata_field
-- **Meaning**: JSON field containing metadata related to the document.
-- **Role**: Metadata storage.
-- **Typical Contents**: JSON structure with various metadata fields.
+- **含义**：包含文档相关元数据的 JSON 字段。
+- **作用**：元数据存储。
+- **典型内容**：包含多个元数据字段的 JSON 结构。
 
 ### doc_classification_label
-- **Meaning**: Label indicating the classification of the document.
-- **Role**: Classification label.
-- **Typical Contents**: String indicating classification, e.g., `INVOICE`.
+- **含义**：表示文档分类的标签。
+- **作用**：分类标签。
+- **典型内容**：表示分类的字符串，例如 `INVOICE`。
 
 ### doc_start_page
-- **Meaning**: Page number where the document content starts.
-- **Role**: Descriptive field.
-- **Typical Contents**: Integer indicating the start page.
+- **含义**：文档内容开始的页码。
+- **作用**：描述性字段。
+- **典型内容**：表示起始页的整数。
 
 ### doc_classification_class
-- **Meaning**: Class indicating the detailed classification of the document.
-- **Role**: Classification detail.
-- **Typical Contents**: String indicating classification class.
+- **含义**：表示文档详细分类的类别。
+- **作用**：分类详情。
+- **典型内容**：表示分类类别的字符串。
 
 ### celery_task_token
-- **Meaning**: Token for tracking Celery task associated with the document.
-- **Role**: Task tracking.
-- **Typical Contents**: String representing the task token.
+- **含义**：用于跟踪与文档相关的 Celery 任务的令牌。
+- **作用**：任务跟踪。
+- **典型内容**：表示任务令牌的字符串。
 
 ### celery_task_attempt
-- **Meaning**: Number of attempts made for the Celery task.
-- **Role**: Task tracking.
-- **Typical Contents**: Integer count of task attempts.
+- **含义**：Celery 任务的尝试次数。
+- **作用**：任务跟踪。
+- **典型内容**：任务尝试次数的整数计数。
 
 ### celery_task_priority
-- **Meaning**: Priority level of the Celery task.
-- **Role**: Task control.
-- **Typical Contents**: Integer indicating task priority.
+- **含义**：Celery 任务的优先级。
+- **作用**：任务控制。
+- **典型内容**：表示任务优先级的整数。
 
 ### has_zugferd
-- **Meaning**: Indicates if the document is in ZUGFeRD format.
-- **Role**: Format indicator.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示文档是否采用 ZUGFeRD 格式。
+- **作用**：格式指示字段。
+- **典型内容**：布尔值（True 或 False）。
 
 ### has_peppol
-- **Meaning**: Indicates if the document is in PEPPOL format.
-- **Role**: Format indicator.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示文档是否采用 PEPPOL 格式。
+- **作用**：格式指示字段。
+- **典型内容**：布尔值（True 或 False）。
 
 ### timestamp_for_validation
-- **Meaning**: Timestamp for when the document was validated.
-- **Role**: Validation tracking.
-- **Typical Contents**: Date and time with time zone.
+- **含义**：文档经过验证的时间戳。
+- **作用**：验证跟踪。
+- **典型内容**：带时区的日期和时间。
 
 ### exception_details
-- **Meaning**: Detailed information about exceptions during processing.
-- **Role**: Descriptive field.
-- **Typical Contents**: Text with exception details.
+- **含义**：处理期间异常的详细信息。
+- **作用**：描述性字段。
+- **典型内容**：包含异常详情的文本。
 
 ### has_annotated_version
-- **Meaning**: Indicates if there is an annotated version of the document.
-- **Role**: Version indicator.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示文档是否有注释版本。
+- **作用**：版本指示字段。
+- **典型内容**：布尔值（True 或 False）。
 
 ### po_match_status
-- **Meaning**: Status of purchase order matching.
-- **Role**: Matching status indicator.
-- **Typical Contents**: String indicating match status.
+- **含义**：采购订单匹配状态。
+- **作用**：匹配状态指示字段。
+- **典型内容**：表示匹配状态的字符串。
 
 ### tr_ocr_extracted_data
-- **Meaning**: OCR extracted data from the document.
-- **Role**: Data storage.
-- **Typical Contents**: Text containing extracted data.
+- **含义**：通过 OCR 从文档中提取的数据。
+- **作用**：数据存储。
+- **典型内容**：包含提取数据的文本。
 
 ### pending_workflow_execution
-- **Meaning**: Indicates if there are pending workflow executions.
-- **Role**: Workflow status flag.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示是否有待执行的工作流。
+- **作用**：工作流状态标记。
+- **典型内容**：布尔值（True 或 False）。
 
 ### extracted_document_id
-- **Meaning**: Identifier for the extracted document.
-- **Role**: Extraction tracking.
-- **Typical Contents**: A UUID string representing the extracted document.
+- **含义**：提取文档的标识符。
+- **作用**：提取跟踪。
+- **典型内容**：表示提取文档的 UUID 字符串。
 
 ### extracted_supplier_id
-- **Meaning**: Identifier for the extracted supplier.
-- **Role**: Extraction tracking.
-- **Typical Contents**: A UUID string representing the extracted supplier.
+- **含义**：提取供应商的标识符。
+- **作用**：提取跟踪。
+- **典型内容**：表示供应商的 UUID 字符串。
 
 ### classification_manually_corrected
-- **Meaning**: Indicates if the document classification was manually corrected.
-- **Role**: Classification status flag.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示文档分类是否经过人工更正。
+- **作用**：分类状态标记。
+- **典型内容**：布尔值（True 或 False）。
 
 ### supplier_as_org_id
-- **Meaning**: Identifier for the supplier treated as an organization.
-- **Role**: Foreign key.
-- **Typical Contents**: A UUID string representing the supplier organization.
+- **含义**：作为组织处理的供应商的标识符。
+- **作用**：外键。
+- **典型内容**：表示供应商组织的 UUID 字符串。
 
 ### extracted_data_basic
-- **Meaning**: Basic extracted data in JSONB format.
-- **Role**: Data storage.
-- **Typical Contents**: JSONB structure with extracted data fields.
+- **含义**：以 JSONB 格式存储的基础提取数据。
+- **作用**：数据存储。
+- **典型内容**：包含提取数据字段的 JSONB 结构。
 
 ### celery_task_queue
-- **Meaning**: Name of the Celery task queue.
-- **Role**: Task management.
-- **Typical Contents**: String indicating the queue name.
+- **含义**：Celery 任务队列的名称。
+- **作用**：任务管理。
+- **典型内容**：表示队列名称的字符串。
 
 ### extracted_data
-- **Meaning**: Extracted data from the document in JSONB format.
-- **Role**: Data storage.
-- **Typical Contents**: JSONB structure with extracted data fields.
+- **含义**：以 JSONB 格式存储的文档提取数据。
+- **作用**：数据存储。
+- **典型内容**：包含提取数据字段的 JSONB 结构。
 
 ### extracted_data_jsonb
-- **Meaning**: JSONB field containing detailed extracted data.
-- **Role**: Data storage.
-- **Typical Contents**: JSONB structure with extracted data fields.
+- **含义**：包含详细提取数据的 JSONB 字段。
+- **作用**：数据存储。
+- **典型内容**：包含提取数据字段的 JSONB 结构。
 
 ### warnings
-- **Meaning**: Warnings related to document processing stored in JSONB format.
-- **Role**: Warning storage.
-- **Typical Contents**: JSONB structure with warning messages.
+- **含义**：以 JSONB 格式存储的文档处理相关警告。
+- **作用**：警告存储。
+- **典型内容**：包含警告消息的 JSONB 结构。
 ```

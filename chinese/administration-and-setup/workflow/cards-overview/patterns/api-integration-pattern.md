@@ -124,12 +124,12 @@ Status Code: 200
 **逻辑：**
 
 ```
-IF API returns 200 (success):
-  → Continue to store data
-ELSE:
-  → Route to "API Error" handling workflow
-  → Send email notification
-  → Create manual review task
+IF API 返回 200（成功）：
+  → 继续存储数据
+ELSE：
+  → 路由到 "API Error" 处理工作流
+  → 发送电子邮件通知
+  → 创建人工审核任务
 ```
 
 **指南参考：** [条件卡片指南 - HTTP 状态](../condition-cards-complete-guide.md#condition-https-request-status)
@@ -145,25 +145,25 @@ ELSE:
 **字段 1：Current\_API\_Price**
 
 ```
-Field Name: Current_API_Price
-Field Value: {{API_RESPONSE:data.unit_price}}
-Field Type: Number
+字段名称：Current_API_Price
+字段值：{{API_RESPONSE:data.unit_price}}
+字段类型：Number
 ```
 
 **字段 2：API\_Price\_Valid\_Until**
 
 ```
-Field Name: API_Price_Valid_Until
-Field Value: {{API_RESPONSE:data.valid_until}}
-Field Type: Date
+字段名称：API_Price_Valid_Until
+字段值：{{API_RESPONSE:data.valid_until}}
+字段类型：Date
 ```
 
 **字段 3：API\_Discount\_Available**
 
 ```
-Field Name: API_Discount_Available
-Field Value: {{API_RESPONSE:data.discount_applicable}}
-Field Type: Boolean
+字段名称：API_Discount_Available
+字段值：{{API_RESPONSE:data.discount_applicable}}
+字段类型：Boolean
 ```
 
 **结果：** API 中的数据现在已存储在文档字段中，供后续使用
@@ -179,24 +179,24 @@ Field Type: Boolean
 **配置：**
 
 ```
-Field 1: Invoice_Unit_Price (from OCR extraction)
-Field 2: Current_API_Price (from API response)
-Operator: Calculate variance percentage
-Tolerance: 5%
+字段 1：Invoice_Unit_Price（来自 OCR 提取）
+字段 2：Current_API_Price（来自 API 响应）
+运算符：计算差异百分比
+容差：5%
 ```
 
 **计算：**
 
 ```
-Variance % = |(Invoice_Price - API_Price)| / API_Price × 100
+差异百分比 = |(Invoice_Price - API_Price)| / API_Price × 100
 
-Example:
-  Invoice Price: €52.00
-  API Price: €50.00
-  Variance = |52 - 50| / 50 × 100 = 4%
+示例：
+  发票价格：€52.00
+  API 价格：€50.00
+  差异 = |52 - 50| / 50 × 100 = 4%
 
-  Is 4% ≤ 5% tolerance? YES ✅
-  Result: PASS
+  4% ≤ 5% 容差吗？YES ✅
+  结果：PASS
 ```
 
 **指南参考：** [条件卡片指南 - 字段比较](../condition-cards-complete-guide.md)
@@ -242,54 +242,54 @@ Example:
 ## 完整工作流图
 
 ```
-DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
+文档到达（发票，包含产品 ABC123，价格 €52）
 │
-├─ STEP 1: Call Pricing API
-│  Card: CALL_API
-│  Request: Get current price for ABC123
+├─ 步骤 1：调用定价 API
+│  卡片：CALL_API
+│  请求：获取 ABC123 的当前价格
 │  │
-│  ├─ SUCCESS (200) ✅
-│  │  Response: {"unit_price": 50.00}
+│  ├─ 成功 (200) ✅
+│  │  响应：{"unit_price": 50.00}
 │  │  │
-│  │  ├─ STEP 2: Check API Status
-│  │  │  Card: CONDITION_HTTPS_REQUEST_STATUS
-│  │  │  Result: 200 = Success
+│  │  ├─ 步骤 2：检查 API 状态
+│  │  │  卡片：CONDITION_HTTPS_REQUEST_STATUS
+│  │  │  结果：200 = 成功
 │  │  │  │
-│  │  │  ├─ STEP 3: Store API Data
-│  │  │  │  Card: ACTION_SET_FIELD_TO_TEXT
-│  │  │  │  Action: Store €50 in "Current_API_Price" field
+│  │  │  ├─ 步骤 3：存储 API 数据
+│  │  │  │  卡片：ACTION_SET_FIELD_TO_TEXT
+│  │  │  │  操作：将 €50 存入 "Current_API_Price" 字段
 │  │  │  │  │
-│  │  │  │  ├─ STEP 4: Compare Prices
-│  │  │  │  │  Card: CONDITION_COMPARE_TWO_DOCFIELD_VALUES
-│  │  │  │  │  Calculate: Variance = |52-50|/50 = 4%
+│  │  │  │  ├─ 步骤 4：比较价格
+│  │  │  │  │  卡片：CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+│  │  │  │  │  计算：偏差 = |52-50|/50 = 4%
 │  │  │  │  │  │
-│  │  │  │  │  ├─ IF Variance ≤ 5% (PASS) ✅
+│  │  │  │  │  ├─ IF 偏差 ≤ 5%（通过）✅
 │  │  │  │  │  │  │
-│  │  │  │  │  │  ├─ Set Status Field: "PASS"
-│  │  │  │  │  │  └─ Auto-Approve Document
-│  │  │  │  │  │     → END (Document Approved)
+│  │  │  │  │  │  ├─ 设置状态字段："PASS"
+│  │  │  │  │  │  └─ 自动批准文档
+│  │  │  │  │  │     → 结束（文档已批准）
 │  │  │  │  │  │
-│  │  │  │  │  └─ IF Variance > 5% (FAIL) ❌
+│  │  │  │  │  └─ IF 偏差 > 5%（失败）❌
 │  │  │  │  │     │
-│  │  │  │  │     ├─ Set Status Field: "FAIL"
-│  │  │  │  │     ├─ Create Review Task
-│  │  │  │  │     ├─ Assign to Procurement Manager
-│  │  │  │  │     └─ Send Email Notification
-│  │  │  │  │        → END (Pending Review)
+│  │  │  │  │     ├─ 设置状态字段："FAIL"
+│  │  │  │  │     ├─ 创建审核任务
+│  │  │  │  │     ├─ 分配给采购经理
+│  │  │  │  │     └─ 发送电子邮件通知
+│  │  │  │  │        → 结束（等待审核）
 │  │  │  │  │
-│  │  │  │  └─ [Field storage complete]
+│  │  │  │  └─ [字段存储完成]
 │  │  │  │
-│  │  │  └─ [Status check complete]
+│  │  │  └─ [状态检查完成]
 │  │  │
-│  │  └─ [API data retrieved]
+│  │  └─ [API 数据已获取]
 │  │
-│  └─ ERROR (Non-200) ❌
+│  └─ 错误（非 200）❌
 │     │
-│     ├─ Set Error Status
-│     ├─ Create "API Error" Task
-│     ├─ Assign to IT Support
-│     └─ Send Email to Admin
-│        → END (API Error - Manual Review)
+│     ├─ 设置错误状态
+│     ├─ 创建 "API Error"（API 错误）任务
+│     ├─ 分配给 IT 支持人员
+│     └─ 向管理员发送电子邮件
+│        → 结束（API 错误 - 人工审核）
 ```
 
 ***
@@ -390,16 +390,16 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 **解决方案：**
 
 ```
-1. Check API endpoint URL (typo?)
-2. Verify network connectivity
-3. Check API service status
-4. Implement timeout handling:
+1. 检查 API 端点 URL（是否有拼写错误？）
+2. 验证网络连接
+3. 检查 API 服务状态
+4. 实施超时处理：
 
    IF CONDITION_HTTPS_REQUEST_STATUS = TIMEOUT:
-     → Create "API Timeout" task
-     → Assign to IT Support
-     → Send email notification
-     → Use fallback value (if available)
+     → 创建 "API Timeout"（API 超时）任务
+     → 分配给 IT 支持人员
+     → 发送电子邮件通知
+     → 使用备用值（如果有）
 ```
 
 #### 错误 2：401 未授权
@@ -412,16 +412,16 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 **解决方案：**
 
 ```
-1. Verify API key is correct
-2. Check if API key expired
-3. Ensure Authorization header formatted correctly
-4. Implement auth error handling:
+1. 验证 API 密钥是否正确
+2. 检查 API 密钥是否已过期
+3. 确保 Authorization 标头格式正确
+4. 实施身份验证错误处理：
 
    IF CONDITION_HTTPS_REQUEST_STATUS = 401:
-     → Create "API Auth Failed" task
-     → Assign to Admin
-     → Log error details
-     → Stop workflow execution
+     → 创建 "API Auth Failed"（API 身份验证失败）任务
+     → 分配给管理员
+     → 记录错误详情
+     → 停止工作流执行
 ```
 
 #### 错误 3：响应格式无效
@@ -434,14 +434,14 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 **解决方案：**
 
 ```
-1. Verify API documentation
-2. Check response structure matches expectations
-3. Implement response validation:
+1. 查阅 API 文档
+2. 检查响应结构是否符合预期
+3. 实施响应验证：
 
    IF API_RESPONSE:data.unit_price IS NULL:
-     → Set default value
-     → Create "Invalid Response" task
-     → Log response for debugging
+     → 设置默认值
+     → 创建 "Invalid Response"（无效响应）任务
+     → 记录响应以便调试
 ```
 
 **指南参考：** [调用 API 故障排除](../call-api-guide.md#troubleshooting)
@@ -455,10 +455,10 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 **场景：** 需要从多个 API 获取数据
 
 ```
-Step 1: Call Supplier API → Get Supplier Details
-Step 2: Call Product API → Get Product Info (using Supplier ID from Step 1)
-Step 3: Call Pricing API → Get Price (using Product ID from Step 2)
-Step 4: Validate & Store all data
+步骤 1：调用供应商 API → 获取供应商详情
+步骤 2：调用产品 API → 获取产品信息（使用步骤 1 中的供应商 ID）
+步骤 3：调用定价 API → 获取价格（使用步骤 2 中的产品 ID）
+步骤 4：验证并存储所有数据
 ```
 
 ***
@@ -469,10 +469,10 @@ Step 4: Validate & Store all data
 
 ```
 IF DOCUMENT_TYPE = "Invoice" AND AMOUNT > 10000:
-  → Call Pricing Validation API
-  → Verify prices
-ELSE:
-  → Skip API call (not needed for small amounts)
+  → 调用定价验证 API
+  → 验证价格
+ELSE：
+  → 跳过 API 调用（小额无需调用）
 ```
 
 ***
@@ -482,13 +482,13 @@ ELSE:
 **场景：** 通过缓存响应减少 API 调用
 
 ```
-1. Check if "API_Last_Called" date is today
-2. IF Yes:
-     → Use cached value from "Cached_API_Price" field
-3. IF No:
-     → Call API
-     → Store response in "Cached_API_Price"
-     → Set "API_Last_Called" to today
+1. 检查 "API_Last_Called" 日期是否为今天
+2. IF 是：
+     → 使用 "Cached_API_Price" 字段中的缓存值
+3. IF 否：
+     → 调用 API
+     → 将响应存储在 "Cached_API_Price" 中
+     → 将 "API_Last_Called" 设为今天
 ```
 
 ***

@@ -20,6 +20,8 @@ description: "如何配置 PowerBI"
 * 通过控制面板或 Windows 搜索打开 **ODBC 数据源管理器 (64 位)**。
 * 转到 **系统 DSN** 选项卡，然后点击 **添加**。
 * 从列表中选择 **ClickHouse ODBC Driver**，然后点击 **完成**。
-* 填写必填字段。您可以在以下位置找到所需信息：
+* 填写必填的连接参数。
 
-  **DocBits**I'm not sure if I can help with that.
+{% hint style="warning" %}
+英文原文的配置说明在此处中断，尚未提供连接参数的位置及后续步骤。
+{% endhint %}

@@ -40,8 +40,8 @@
 #### 工作原理
 
 ```
-IF Condition is true
-    THEN Set Field "Category" to Value "Premium"
+IF 条件为 true
+    THEN 将字段 "Category" 设置为值 "Premium"
 ```
 
 #### 示例场景
@@ -49,31 +49,31 @@ IF Condition is true
 **场景 1：设置审批类别**
 
 ```
-Condition: Invoice amount > €10,000
+条件：发票金额 > €10,000
     ↓
-Action: Set "Approval_Category" field to "High Value"
+操作：将字段 "Approval_Category" 设置为 "High Value"
     ↓
-Result: Document now shows "Approval_Category: High Value"
+结果：文档现在显示 "Approval_Category: High Value"
 ```
 
 **场景 2：设置供应商类别**
 
 ```
-Condition: Supplier name contains "ABC"
+条件：供应商名称包含 "ABC"
     ↓
-Action: Set "Supplier_Type" field to "Preferred Supplier"
+操作：将字段 "Supplier_Type" 设置为 "Preferred Supplier"
     ↓
-Result: Document marked as "Preferred Supplier"
+结果：文档标记为 "Preferred Supplier"
 ```
 
 **场景 3：设置处理备注**
 
 ```
-Condition: Document has been rejected
+条件：文档已被拒绝
     ↓
-Action: Set "Processing_Notes" to "Requires supplier revision"
+操作：将 "Processing_Notes" 设置为 "Requires supplier revision"
     ↓
-Result: Note appears for next processor
+结果：下一位处理人员可以看到此备注
 ```
 
 #### 参数
@@ -81,13 +81,13 @@ Result: Note appears for next processor
 **字段名称** 要更新的字段
 
 ```
-Examples: Category, Type, Status, Comment, Notes
+示例：Category、Type、Status、Comment、Notes
 ```
 
 **文本值** 要填入字段的内容
 
 ```
-Examples: "Approved", "Pending Review", "High Priority"
+示例："Approved"、"Pending Review"、"High Priority"
 ```
 
 #### 配置步骤
@@ -115,8 +115,8 @@ Examples: "Approved", "Pending Review", "High Priority"
 #### 工作原理
 
 ```
-IF Condition is true
-    THEN Check/Uncheck the "Approved" box
+IF 条件为 true
+    THEN 勾选/取消勾选 "Approved" 复选框
 ```
 
 #### True = 已选中，False = 未选中
@@ -126,39 +126,39 @@ IF Condition is true
 **示例 1：标记为已验证**
 
 ```
-Condition: PO matches perfectly
+条件：采购订单完全匹配
     ↓
-Action: Check "Verified" checkbox
+操作：勾选 "Verified" 复选框
     ↓
-Result: ✅ Verified (checked)
+结果：✅ Verified（已勾选）
 ```
 
 **示例 2：标记为需人工审核**
 
 ```
-Condition: Price variance > 10%
+条件：价格差异 > 10%
     ↓
-Action: Check "Requires_Manual_Review" checkbox
+操作：勾选 "Requires_Manual_Review" 复选框
     ↓
-Result: ✅ Requires_Manual_Review (marked)
+结果：✅ Requires_Manual_Review（已标记）
 ```
 
 **示例 3：取消预填复选框的选中状态**
 
 ```
-Condition: Supplier is blacklisted
+条件：供应商已列入黑名单
     ↓
-Action: Uncheck "Approved_for_Payment" checkbox
+操作：取消勾选 "Approved_for_Payment" 复选框
     ↓
-Result: ☐ Approved_for_Payment (unchecked - blocked)
+结果：☐ Approved_for_Payment（未勾选 - 已拦截）
 ```
 
 #### 参数
 
 ```
-Checkbox Field: [Choose field]
-Set To: ☑ Checked (✅ True)
-   or: ☐ Unchecked (❌ False)
+复选框字段：[选择字段]
+设置为：☑ 已勾选（✅ True）
+   或：☐ 未勾选（❌ False）
 ```
 
 ***
@@ -179,29 +179,29 @@ Set To: ☑ Checked (✅ True)
 #### 工作原理
 
 ```
-Current state: ✅ (Checked)
+当前状态：✅（已勾选）
     ↓
-ACTION_INVERT: Toggle the box
+ACTION_INVERT：切换复选框状态
     ↓
-New state: ☐ (Unchecked)
+新状态：☐（未勾选）
 
 OR
 
-Current state: ☐ (Unchecked)
+当前状态：☐（未勾选）
     ↓
-ACTION_INVERT: Toggle the box
+ACTION_INVERT：切换复选框状态
     ↓
-New state: ✅ (Checked)
+新状态：✅（已勾选）
 ```
 
 #### 示例
 
 ```
-Invoice received with "Priority" checked
+收到的发票上已勾选 "Priority"
     ↓
-After processing, invert "Priority" checkbox
+处理后，切换 "Priority" 复选框状态
     ↓
-Checkbox now unchecked (no longer priority)
+复选框现在为未勾选状态（不再具有优先级）
 ```
 
 ***
@@ -222,13 +222,13 @@ Checkbox now unchecked (no longer priority)
 #### 工作原理
 
 ```
-Source Field: "Invoice_Supplier"  Value: "ABC Corp"
+源字段："Invoice_Supplier"  值："ABC Corp"
     ↓
-COPY TO
+复制到
     ↓
-Target Field: "Billing_Partner"  Value: "ABC Corp"
+目标字段："Billing_Partner"  值："ABC Corp"
 
-Both fields now have same value
+现在两个字段的值相同
 ```
 
 #### 实际示例
@@ -236,38 +236,38 @@ Both fields now have same value
 **示例 1：复制交货地址**
 
 ```
-Source: "Delivery_Address" = "123 Main St, Berlin"
+源："Delivery_Address" = "123 Main St, Berlin"
     ↓
-Copy to: "Billing_Address"
+复制到："Billing_Address"
     ↓
-Result: Both fields show "123 Main St, Berlin"
+结果：两个字段均显示 "123 Main St, Berlin"
 ```
 
 **示例 2：复制供应商代码**
 
 ```
-Source: "Supplier_Code_External" = "SUPP-789"
+源："Supplier_Code_External" = "SUPP-789"
     ↓
-Copy to: "Supplier_Code_Internal"
+复制到："Supplier_Code_Internal"
     ↓
-Result: Both codes match, system recognizes supplier
+结果：两个代码匹配，系统可识别该供应商
 ```
 
 **示例 3：复制金额以供验证**
 
 ```
-Source: "Invoice_Total" = "€5000"
+源："Invoice_Total" = "€5000"
     ↓
-Copy to: "Amount_to_Validate"
+复制到："Amount_to_Validate"
     ↓
-Result: Validation field has correct amount
+结果：验证字段中包含正确金额
 ```
 
 #### 参数
 
 ```
-Source Field: [Choose field to copy FROM]
-Target Field: [Choose field to copy TO]
+源字段：[选择要从中复制的字段]
+目标字段：[选择要复制到的字段]
 ```
 
 #### 备注
@@ -296,13 +296,13 @@ Target Field: [Choose field to copy TO]
 #### 工作原理
 
 ```
-Table Column: "Unit_Price"
-Original Values: [100, 105, 103]
+表格列："Unit_Price"
+原始值：[100, 105, 103]
     ↓
-FIND: Values matching condition
-REPLACE: With new value
+查找：符合条件的值
+替换：替换为新值
     ↓
-Updated Column: [100, 110, 110] (example)
+更新后的列：[100, 110, 110]（示例）
 ```
 
 #### 示例：修正定价
@@ -310,25 +310,25 @@ Updated Column: [100, 110, 110] (example)
 **场景：价格使用了错误的货币**
 
 ```
-Table "Line_Items" with column "Price"
+表格 "Line_Items"，包含列 "Price"
 
-Current prices: [100, 100, 100] (in wrong currency)
+当前价格：[100, 100, 100]（货币单位错误）
     ↓
-Condition: "If Price column equals 100"
+条件："如果 Price 列等于 100"
     ↓
-Action: Replace with 95 (corrected price)
+操作：替换为 95（修正后的价格）
     ↓
-Result: [95, 95, 95] (prices corrected)
+结果：[95, 95, 95]（价格已修正）
 ```
 
 #### 参数
 
 ```
-Table: [Choose table]
-Column: [Choose column to edit]
-Find: [Value to find]
-Replace with: [New value]
-Condition: [When to apply]
+表格：[选择表格]
+列：[选择要编辑的列]
+查找：[要查找的值]
+替换为：[新值]
+条件：[应用时机]
 ```
 
 #### 常见用途
@@ -356,12 +356,12 @@ Condition: [When to apply]
 #### 工作原理
 
 ```
-Column A (Quantity): 100
-Column B (Unit Price): €50
+列 A（数量）：100
+列 B（单价）：€50
     ↓
-CALCULATE: A × B
+计算：A × B
     ↓
-Column C (Line Total): €5000
+列 C（行项目总额）：€5000
 ```
 
 #### 计算类型
@@ -369,62 +369,62 @@ Column C (Line Total): €5000
 **类型 1：简单乘法**
 
 ```
-Formula: Qty × Unit Price = Line Total
+公式：数量 × 单价 = 行项目总额
 
-Example:
-100 units × €50/unit = €5000
+示例：
+100 件 × €50/件 = €5000
 
-Config:
-  Column 1: Quantity
-  Operator: ×
-  Column 2: Unit Price
-  Result Column: Line Total
+配置：
+  列 1：数量
+  运算符：×
+  列 2：单价
+  结果列：行项目总额
 ```
 
 **类型 2：加法**
 
 ```
-Formula: Base Price + Shipping + Tax = Total
+公式：基础价格 + 运费 + 税费 = 总额
 
-Example:
+示例：
 €5000 + €100 + €950 = €6050
 
-Config:
-  Column 1: Base Price
-  Operator: +
-  Column 2: Shipping
-  Operator: +
-  Column 3: Tax
-  Result Column: Total
+配置：
+  列 1：基础价格
+  运算符：+
+  列 2：运费
+  运算符：+
+  列 3：税费
+  结果列：总额
 ```
 
 **类型 3：百分比计算**
 
 ```
-Formula: Amount × (1 + Tax%) = Total with Tax
+公式：金额 × (1 + 税率%) = 含税总额
 
-Example:
+示例：
 €5000 × 1.19 = €5950
 
-Config:
-  Column: Amount
-  Operator: × (1 + Tax%)
-  Result Column: Amount_with_Tax
+配置：
+  列：金额
+  运算符：× (1 + Tax%)
+  结果列：Amount_with_Tax
 ```
 
 **类型 4：减法**
 
 ```
-Formula: Original Price - Discount = Final Price
+公式：原价 - 折扣 = 最终价格
 
-Example:
+示例：
 €100 - €10 = €90
 
-Config:
-  Column 1: Original Price
-  Operator: -
-  Column 2: Discount
-  Result Column: Final Price
+配置：
+  列 1：原价
+  运算符：-
+  列 2：折扣
+  结果列：最终价格
 ```
 
 #### 实际示例
@@ -432,37 +432,37 @@ Config:
 **发票行项目计算：**
 
 ```
-Table: Invoice_Lines
+表：Invoice_Lines
 
-Row 1:
-  Quantity: 100
-  Unit Price: €25.00
-  Calculate: 100 × €25.00 = €2500.00 (Line Total)
+行 1：
+  数量：100
+  单价：€25.00
+  计算：100 × €25.00 = €2500.00（行项目总额）
 
-Row 2:
-  Quantity: 50
-  Unit Price: €40.00
-  Calculate: 50 × €40.00 = €2000.00 (Line Total)
+行 2：
+  数量：50
+  单价：€40.00
+  计算：50 × €40.00 = €2000.00（行项目总额）
 
-Row 3:
-  Quantity: 200
-  Unit Price: €10.00
-  Calculate: 200 × €10.00 = €2000.00 (Line Total)
+行 3：
+  数量：200
+  单价：€10.00
+  计算：200 × €10.00 = €2000.00（行项目总额）
 
-Subtotal: €6500.00 (sum of line totals)
-Tax (19%): €1235.00
-Shipping: €100.00
-TOTAL: €7835.00
+小计：€6500.00（行项目总额之和）
+税费（19%）：€1235.00
+运费：€100.00
+总计：€7835.00
 ```
 
 #### 参数
 
 ```
-Table: [Select table]
-Column 1: [First column]
-Operator: [×, +, -, ÷, %]
-Column 2: [Second column] (if needed)
-Result Column: [Where to put answer]
+表格：[选择表格]
+列 1：[第一列]
+运算符：[×, +, -, ÷, %]
+列 2：[第二列]（如需要）
+结果列：[答案写入位置]
 ```
 
 ***
@@ -485,10 +485,10 @@ Result Column: [Where to put answer]
 **正则表达式模式匹配：**
 
 ```
-Original Value: "ABC-12345-XYZ"
-Pattern: Extract numbers only
-Calculation: Convert to "12345"
-Result: "12345"
+原始值："ABC-12345-XYZ"
+模式：仅提取数字
+计算：转换为 "12345"
+结果："12345"
 ```
 
 #### 示例：提取供应商代码
@@ -496,16 +496,16 @@ Result: "12345"
 **场景：商品编号中包含供应商信息**
 
 ```
-Table Column: "Article_Code"
-Values: ["SUPP001-2025-A", "SUPP002-2025-B"]
+表字段：“Article_Code”
+值：["SUPP001-2025-A", "SUPP002-2025-B"]
 
-Pattern: Extract supplier code (first 7 characters)
+模式：提取供应商代码（前 7 个字符）
     ↓
-Calculate: SUPP001, SUPP002
+计算：SUPP001、SUPP002
     ↓
-Store in: "Supplier_Code" column
+存入：“Supplier_Code”字段
 
-Result:
+结果：
 Article_Code: SUPP001-2025-A  →  Supplier_Code: SUPP001
 Article_Code: SUPP002-2025-B  →  Supplier_Code: SUPP002
 ```
@@ -515,9 +515,9 @@ Article_Code: SUPP002-2025-B  →  Supplier_Code: SUPP002
 **场景：电话号码未格式化**
 
 ```
-Original: "491234567890"
-Pattern: Format as: +49 123 4567 890
-Result: "+49 123 4567 890"
+原始值："491234567890"
+模式：格式化为：+49 123 4567 890
+结果："+49 123 4567 890"
 ```
 
 #### 示例：从文本中提取价格
@@ -525,29 +525,29 @@ Result: "+49 123 4567 890"
 **场景：价格采用文本格式**
 
 ```
-Original: "Price is 99.99 EUR"
-Pattern: Extract number only
-Result: "99.99"
+原始值："Price is 99.99 EUR"
+模式：仅提取数字
+结果："99.99"
 ```
 
 #### 参数
 
 ```
-Table: [Select table]
-Column: [Column to analyze]
-Regex Pattern: [Pattern to find]
-Replacement: [What to replace with]
-Result Column: [Where to store result]
+表格：[选择表格]
+列：[要分析的列]
+Regex Pattern：[要查找的模式]
+替换内容：[替换为的内容]
+结果列：[结果存储位置]
 ```
 
 #### 常见正则表达式模式
 
 ```
-Numbers only: [0-9]+
-Letters only: [a-zA-Z]+
-First word: ^\w+
-Extract €: €(\d+\.\d{2})
-Date format: \d{4}-\d{2}-\d{2}
+仅数字：[0-9]+
+仅字母：[a-zA-Z]+
+第一个单词：^\w+
+提取 €：€(\d+\.\d{2})
+日期格式：\d{4}-\d{2}-\d{2}
 ```
 
 ***
@@ -557,38 +557,38 @@ Date format: \d{4}-\d{2}-\d{2}
 ### 示例 1：发票总额计算
 
 ```
-Step 1: Calculate line totals
-  Each row: Qty × Unit Price
+步骤 1：计算行项目总额
+  每行：数量 × 单价
 
-Step 2: Sum all line totals
-  Sum: €2500 + €2000 + €2000 = €6500
+步骤 2：汇总所有行项目总额
+  总和：€2500 + €2000 + €2000 = €6500
 
-Step 3: Calculate tax
-  Tax: €6500 × 0.19 = €1235
+步骤 3：计算税费
+  税费：€6500 × 0.19 = €1235
 
-Step 4: Add shipping
-  Final: €6500 + €1235 + €100 = €7835
+步骤 4：添加运费
+  最终金额：€6500 + €1235 + €100 = €7835
 ```
 
 ### 示例 2：差异计算
 
 ```
-PO Price: €100
-Invoice Price: €103
+采购订单价格：€100
+发票价格：€103
 
-Variance = |(Invoice - PO)| / PO × 100
-Variance = |3| / 100 × 100 = 3%
+差异 = |(发票 - 采购订单)| / 采购订单 × 100
+差异 = |3| / 100 × 100 = 3%
 
-Store in "Price_Variance%" column
+存储在 "Price_Variance%" 列中
 ```
 
 ### 示例 3：应用折扣
 
 ```
-Original Price: €100
-Discount %: 10%
-Discount Amount: €100 × 0.10 = €10
-Final Price: €100 - €10 = €90
+原价：€100
+折扣率：10%
+折扣金额：€100 × 0.10 = €10
+最终价格：€100 - €10 = €90
 ```
 
 ***
@@ -596,23 +596,23 @@ Final Price: €100 - €10 = €90
 ## 字段操作工作流示例
 
 ```
-Document arrives
+文档到达
     ↓
-Check condition: "Amount > €5000?"
+检查条件：“Amount > €5000?”
     ↓
-YES → Set field "Category" = "High Value"
+是 → 将字段“Category”设为“High Value”（高价值）
     ↓
-Check condition: "Supplier is preferred?"
+检查条件：“Supplier is preferred?”（供应商是否为首选？）
     ↓
-YES → Check "FastTrack" checkbox
+是 → 勾选“FastTrack”复选框
     ↓
-Copy "Delivery_Address" to "Invoice_Address"
+将“Delivery_Address”复制到“Invoice_Address”
     ↓
-In table: Calculate line totals (Qty × Price)
+在表中：计算行项目总额（Qty × Price）
     ↓
-In table: Calculate total with tax
+在表中：计算含税总额
     ↓
-Document now has all calculated and populated fields
+文档现在已填充所有计算所得字段和其他字段
 ```
 
 ***

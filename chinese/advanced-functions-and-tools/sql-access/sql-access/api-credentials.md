@@ -19,76 +19,76 @@
 ## 分析与说明
 
 ```markdown
-# Table Documentation: `public.api_credentials`
+# 表文档：`public.api_credentials`
 
-## Introduction
+## 简介
 
-The `public.api_credentials` table is designed to store and manage API credential information. This table is crucial for organizations to handle their API authentication details securely, ensuring that various services can interact with each other using the correct credentials. It includes information about the type of credentials, the organization to which they belong, and metadata about their creation and modification.
+`public.api_credentials` 表用于存储和管理 API 凭据。该表对于组织安全地处理 API 身份验证信息至关重要，可确保各种服务使用正确的凭据彼此交互。表中包含凭据类型、所属组织以及创建和修改相关的元数据。
 
-## Column Descriptions
+## 字段说明
 
 ### id
-- **Meaning**: A unique identifier for each entry in the table.
-- **Role**: Primary key.
-- **Typical Contents**: A universally unique identifier (UUID) representing a specific set of API credentials.
+- **含义**：表中每条记录的唯一标识符。
+- **作用**：主键。
+- **典型内容**：表示一组特定 API 凭据的通用唯一标识符（UUID）。
 
 ### org_id
-- **Meaning**: Identifier for the organization that owns the credentials.
-- **Role**: Foreign key.
-- **Typical Contents**: A UUID that links to the organization's record in another table.
+- **含义**：拥有这些凭据的组织的标识符。
+- **作用**：外键。
+- **典型内容**：用于关联另一张表中该组织记录的 UUID。
 
 ### sub_org_id
-- **Meaning**: Identifier for a sub-organization within the main organization.
-- **Role**: Foreign key (optional).
-- **Typical Contents**: May contain a UUID linking to a sub-organization, or `None`.
+- **含义**：主组织内子组织的标识符。
+- **作用**：外键（可选）。
+- **典型内容**：可能包含关联子组织的 UUID，也可能为 `None`。
 
 ### title
-- **Meaning**: A descriptive title for the API credentials.
-- **Role**: Descriptive field.
-- **Typical Contents**: A string such as "supplier_auth" indicating the purpose or usage of the credentials.
+- **含义**：用于描述 API 凭据的标题。
+- **作用**：描述性字段。
+- **典型内容**：例如 "supplier_auth" 这样的字符串，用于表明凭据的用途或使用场景。
 
 ### credentials_type
-- **Meaning**: Specifies the type of credentials stored.
-- **Role**: Descriptive field.
-- **Typical Contents**: A string like "ionapi" indicating the format or protocol used by the credentials.
+- **含义**：指定所存储凭据的类型。
+- **作用**：描述性字段。
+- **典型内容**：例如 "ionapi" 这样的字符串，用于指明凭据采用的格式或协议。
 
 ### credentials_json
-- **Meaning**: A JSON object containing detailed credential information.
-- **Role**: Technical field.
-- **Typical Contents**: JSON string with various key-value pairs detailing authentication parameters.
+- **含义**：包含详细凭据信息的 JSON 对象。
+- **作用**：技术字段。
+- **典型内容**：包含多个键值对的 JSON 字符串，用于说明身份验证参数。
 
 ### created_by
-- **Meaning**: User ID of the individual who created the credentials record.
-- **Role**: Technical field.
-- **Typical Contents**: An integer representing the user ID.
+- **含义**：创建凭据记录的用户 ID。
+- **作用**：技术字段。
+- **典型内容**：表示用户 ID 的整数。
 
 ### created_on
-- **Meaning**: Timestamp indicating when the credentials were created.
-- **Role**: Technical field.
-- **Typical Contents**: A datetime value with timezone, e.g., `2024-04-08 11:54:55 UTC`.
+- **含义**：指示凭据创建时间的时间戳。
+- **作用**：技术字段。
+- **典型内容**：带时区的日期时间值，例如 `2024-04-08 11:54:55 UTC`。
 
 ### last_modified_on
-- **Meaning**: Timestamp indicating the last modification time of the credentials.
-- **Role**: Technical field.
-- **Typical Contents**: A datetime value with timezone, or `None` if never modified.
+- **含义**：指示凭据最后修改时间的时间戳。
+- **作用**：技术字段。
+- **典型内容**：带时区的日期时间值；如果从未修改，则为 `None`。
 
 ### is_deleted
-- **Meaning**: Flag indicating whether the credentials are marked as deleted.
-- **Role**: Technical field.
-- **Typical Contents**: A boolean value, where `False` indicates active credentials.
+- **含义**：指示凭据是否已标记为删除的标志。
+- **作用**：技术字段。
+- **典型内容**：布尔值，其中 `False` 表示凭据处于活动状态。
 
 ### deleted_on
-- **Meaning**: Timestamp indicating when the credentials were marked as deleted.
-- **Role**: Technical field.
-- **Typical Contents**: A datetime value with timezone, or `None` if not deleted.
+- **含义**：指示凭据被标记为删除时间的时间戳。
+- **作用**：技术字段。
+- **典型内容**：带时区的日期时间值；如果未删除，则为 `None`。
 
 ### last_modified_by
-- **Meaning**: Identifier of the user who last modified the credentials.
-- **Role**: Technical field.
-- **Typical Contents**: A character string representing the user's ID, or `None`.
+- **含义**：最后修改凭据的用户标识符。
+- **作用**：技术字段。
+- **典型内容**：表示用户 ID 的字符字符串，也可能为 `None`。
 
 ### deleted_by
-- **Meaning**: Identifier of the user who marked the credentials as deleted.
-- **Role**: Technical field.
-- **Typical Contents**: A character string representing the user's ID, or `None`.
+- **含义**：将凭据标记为删除的用户标识符。
+- **作用**：技术字段。
+- **典型内容**：表示用户 ID 的字符字符串，也可能为 `None`。
 ```

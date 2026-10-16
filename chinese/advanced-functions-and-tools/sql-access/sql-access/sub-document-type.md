@@ -17,66 +17,66 @@
 ## 分析与描述
 
 ```markdown
-# Table `public.sub_document_type`
+# 表 `public.sub_document_type`
 
-## Introduction
+## 简介
 
-The `sub_document_type` table is designed to store detailed information about various sub-document types within an organization. This includes unique identifiers, organizational associations, descriptive names, and metadata related to the creation and modification of these sub-document types. The table also maintains soft deletion status for records.
+`sub_document_type` 表用于存储组织内各种子文档类型的详细信息，包括唯一标识符、所属组织、描述性名称，以及与这些子文档类型的创建和修改相关的元数据。该表还会维护记录的软删除状态。
 
-## Column Descriptions
+## 字段说明
 
 ### id
-- **Meaning**: This column stores the unique identifier for each sub-document type.
-- **Role**: Primary Key.
-- **Typical Contents**: A UUID string that uniquely identifies a sub-document type record (e.g., `'c2cc2d62-e4be-491b-a43e-c4123dff5aa6'`).
+- **含义**：此字段存储每种子文档类型的唯一标识符。
+- **作用**：主键。
+- **典型内容**：用于唯一标识子文档类型记录的 UUID 字符串（例如，`'c2cc2d62-e4be-491b-a43e-c4123dff5aa6'`）。
 
 ### org_id
-- **Meaning**: This column indicates the organization to which the sub-document type belongs.
-- **Role**: Foreign Key.
-- **Typical Contents**: A UUID string that references an organization (e.g., `'23f3d697-7411-4c95-981d-faf089d266be'`).
+- **含义**：此字段表示子文档类型所属的组织。
+- **作用**：外键。
+- **典型内容**：引用某个组织的 UUID 字符串（例如，`'23f3d697-7411-4c95-981d-faf089d266be'`）。
 
 ### doc_type_key
-- **Meaning**: Represents the document type key that is associated with the sub-document type.
-- **Role**: Foreign Key (implied by naming convention).
-- **Typical Contents**: A string key that links to a broader document type (e.g., `'TEST_23f3d697-7411-4c95-981d-faf089d266be'`).
+- **含义**：表示与该子文档类型关联的文档类型键。
+- **作用**：外键（根据命名约定推定）。
+- **典型内容**：用于关联更广义文档类型的字符串键（例如，`'TEST_23f3d697-7411-4c95-981d-faf089d266be'`）。
 
 ### sub_doc_type_key
-- **Meaning**: Denotes a specific key for the sub-document type within a document category.
-- **Role**: Unique identifier for sub-document type within the scope of a document type.
-- **Typical Contents**: A string key that uniquely identifies a sub-document type (e.g., `'TEST_SUB_TEST_23f3d697-7411-4c95-981d-faf089d266be'`).
+- **含义**：表示文档类别中某个子文档类型的特定键。
+- **作用**：在某种文档类型的范围内唯一标识子文档类型。
+- **典型内容**：用于唯一标识子文档类型的字符串键（例如，`'TEST_SUB_TEST_23f3d697-7411-4c95-981d-faf089d266be'`）。
 
 ### name
-- **Meaning**: Stores a short name or code for the sub-document type.
-- **Role**: Descriptive.
-- **Typical Contents**: A succinct identifier or code (e.g., `'TEST_SUB_TEST'`).
+- **含义**：存储子文档类型的简短名称或代码。
+- **作用**：描述性字段。
+- **典型内容**：简洁的标识符或代码（例如，`'TEST_SUB_TEST'`）。
 
 ### title
-- **Meaning**: Contains a human-readable title for the sub-document type.
-- **Role**: Descriptive.
-- **Typical Contents**: A descriptive title for user interfaces or reports (e.g., `'Test Sub Test'`).
+- **含义**：包含便于人阅读的子文档类型标题。
+- **作用**：描述性字段。
+- **典型内容**：供用户界面或报告使用的描述性标题（例如，`'Test Sub Test'`）。
 
 ### translation_key
-- **Meaning**: Key used for internationalization and localization to translate the sub-document type name.
-- **Role**: Technical.
-- **Typical Contents**: A string used in translation files (e.g., `'test_sub_test'`).
+- **含义**：用于国际化和本地化、以翻译子文档类型名称的键。
+- **作用**：技术字段。
+- **典型内容**：翻译文件中使用的字符串（例如，`'test_sub_test'`）。
 
 ### created_by
-- **Meaning**: Identifies the user who created the sub-document type entry.
-- **Role**: Technical.
-- **Typical Contents**: An integer representing the user ID (e.g., `8`).
+- **含义**：标识创建该子文档类型条目的用户。
+- **作用**：技术字段。
+- **典型内容**：表示用户 ID 的整数（例如，`8`）。
 
 ### created_on
-- **Meaning**: Timestamp indicating when the sub-document type was created.
-- **Role**: Technical.
-- **Typical Contents**: A timestamp with timezone (e.g., `2022-12-13 08:34:13.932893+00:00`).
+- **含义**：表示子文档类型创建时间的时间戳。
+- **作用**：技术字段。
+- **典型内容**：带时区的时间戳（例如，`2022-12-13 08:34:13.932893+00:00`）。
 
 ### last_modified_on
-- **Meaning**: Timestamp indicating when the sub-document type was last modified.
-- **Role**: Technical.
-- **Typical Contents**: A timestamp with timezone, possibly `None` if never modified after creation.
+- **含义**：表示子文档类型最近一次修改时间的时间戳。
+- **作用**：技术字段。
+- **典型内容**：带时区的时间戳；如果创建后从未修改，则可能为 `None`。
 
 ### is_deleted
-- **Meaning**: Boolean flag indicating whether the sub-document type has been soft deleted.
-- **Role**: Technical.
-- **Typical Contents**: `True` or `False` indicating deletion status (e.g., `False`).
+- **含义**：用于指示子文档类型是否已软删除的布尔标志。
+- **作用**：技术字段。
+- **典型内容**：`True` 或 `False`，用于指示删除状态（例如，`False`）。
 ```

@@ -4,10 +4,6 @@ Benvenuto in DocBits
 
 Benvenuto in **DocBits**, la tua fonte completa di strategie e approfondimenti sulla documentazione. In DocBits ci impegniamo a offrire risorse documentali chiare, concise e sempre aggiornate per [utenti finali](end-user-and-partner-section/end-user-section/), [amministratori](administration-and-setup/settings/) e [partner](end-user-and-partner-section/partner-section/).
 
-## DocBits con Workflow
-
-{% @arcade/embed flowid="JqTpGV34UBKmI0iAumoX" url="https://app.arcade.software/share/JqTpGV34UBKmI0iAumoX" %}
-
 [**DocBits**](https://www.docbits.com) **di** [**FELLOWPRO AG**](https://www.fellowpro.com) è una soluzione avanzata di elaborazione intelligente dei documenti (IDP, Intelligent Document Processing) progettata per ottimizzare e automatizzare la gestione dei documenti aziendali. 
 
 Documentazione ufficiale: [docs.docbits.com](https://docs.docbits.com/)

@@ -2,6 +2,8 @@
 
 **Disponibilidade da NOVA R1.1:** Disponível no ambiente de testes desde **16 de outubro de 2026**. A entrada em produção está prevista para **4 de novembro de 2026**.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/pt.mp4" %}
+
 **DocBits é o produto. NOVA designa o ciclo de lançamentos.** [Ver o vídeo sobre o novo lançamento do DocBits](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/pt.mp4) · [Legendas](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/pt.vtt).
 
 Escolha um canal de lançamento para ver o que muda para a sua equipa. **O ciclo NOVA introduz a nova versão principal do DocBits com capacidades adicionais para clientes. Os hotfixes da VESTA melhoram a versão de produção atual.** Consulte o [ciclo de vida do lançamento](../docbits-release-lifecycle-strategy.md) para disponibilidade e mudança entre canais.
@@ -10,7 +12,7 @@ Escolha um canal de lançamento para ver o que muda para a sua equipa. **O ciclo
 
 | Canal de lançamento | Notas de lançamento | Foco |
 | --- | --- | --- |
-| **NOVA – Versão Principal** | [Novidades para clientes](nova-major-release-16-october-2026.md) · **4 de novembro de 2026 (prevista)** | Todas as antigas funcionalidades beta da VESTA, além de novas capacidades e extensões em comparação com a VESTA R1.0.15. |
+| **NOVA – Versão Principal** | [Novidades para clientes](nova-major-release.md) · **4 de novembro de 2026 (prevista)** | Todas as antigas funcionalidades beta da VESTA, além de novas capacidades e extensões em comparação com a VESTA R1.0.15. |
 | **VESTA — Próximo Hotfix (planeado)** | [11 de novembro de 2026](vesta-hotfix-11-november-2026.md) | Introduz todas as antigas funcionalidades beta da VESTA no conjunto de funcionalidades regular da VESTA. |
 | **VESTA — Lançamento de Hotfix** | [14 de outubro de 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Melhorias e correções para a versão de produção atual da VESTA. |
 
@@ -34,9 +36,9 @@ Escolha um canal de lançamento para ver o que muda para a sua equipa. **O ciclo
 * [**Regras de validação personalizadas**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md): defina verificações para campos e linhas de tabela, escolha condições e gravidade, e teste as suas regras. **Ver:** [Vídeo em inglês](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4).
 * [**Regras de correspondência de encomendas**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md): configure tipos de correspondência, tolerâncias e ordem de execução, e gerir versões de regras. **Vídeo relacionado — Escolher a Automação Certa:** [Ver vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/pt.mp4).
 
-[Ver todos os vídeos de funcionalidades](nova-major-release-16-october-2026.md#watch-the-feature-videos), incluindo layouts, Touchless Intelligence, Validação de Faturas Eletrónicas e a série de seis partes sobre AI Table.
+[Ver todos os vídeos de funcionalidades](nova-major-release.md#watch-the-feature-videos), incluindo layouts, Touchless Intelligence, Validação de Faturas Eletrónicas e a série de seis partes sobre AI Table.
 
-[Ler a comparação completa de funcionalidades NOVA](nova-major-release-16-october-2026.md), incluindo requisitos de ativação, melhorias adicionais e todas as **16 versões de serviço**.
+[Ler a comparação completa de funcionalidades NOVA](nova-major-release.md), incluindo requisitos de ativação, melhorias adicionais e todas as **16 versões de serviço**.
 
 **A base VESTA inclui funcionalidades existentes e funcionalidades beta:** o Assistente de definições original, avisos básicos de saúde da importação, níveis de IA, Verificação de Campos de Cabeçalho, painel Touchless Intelligence, motores de regras, transformações após pesquisa de dados mestres e registos básicos de execução de regras. As notas NOVA distinguem a transição de beta para disponibilidade regular de adições adicionais a estas capacidades.
 

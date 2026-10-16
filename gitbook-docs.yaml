@@ -67,7 +67,6 @@ site:
       localizedTitle:
         zh: Chinese
       path: chinese
-      draft: true
       content:
         directory: ./chinese
         language: zh

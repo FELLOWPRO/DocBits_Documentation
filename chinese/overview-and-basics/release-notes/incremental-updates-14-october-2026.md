@@ -2,7 +2,7 @@
 
 > **发布渠道：** VESTA · **版本：** R1.0.15。
 >
-> **与 NOVA 对比？** [NOVA 主要版本功能对比](nova-major-release-16-october-2026.md#what-nova-adds-for-customers) 涵盖了验证助手、已审核的自动化改进、扩展的电子发票报告、新的导入控制以及此 VESTA 版本之外的其他新增内容。
+> **与 NOVA 对比？** [NOVA 主要版本功能对比](nova-major-release.md#what-nova-adds-for-customers) 涵盖了验证助手、已审核的自动化改进、扩展的电子发票报告、新的导入控制以及此 VESTA 版本之外的其他新增内容。
 >
 > **下一个 VESTA 热修复版本：[2026 年 11 月 11 日（计划中）](vesta-hotfix-11-november-2026.md)。** 所有之前在 VESTA 中作为 Beta 提供的功能现在都是 NOVA 的常规功能，并将随该热修复版本成为 VESTA 的常规功能。
 

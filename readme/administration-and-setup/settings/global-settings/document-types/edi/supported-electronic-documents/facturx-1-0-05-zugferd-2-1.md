@@ -2,7 +2,7 @@
 description: "DocBits 支持 FACTURX 1.0.05 - ZUGFERD 2.1 电子文档"
 ---
 
-# 🇫🇷 FACTURX 1.0.05 - ZUGERD 2.1
+# 🇫🇷 FACTURX 1.0.05 - ZUGFeRD 2.1
 
 | 属性                 | 值                            |
 | -------------------- | ----------------------------- |

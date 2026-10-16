@@ -547,7 +547,7 @@
     * [供应商常规设置](administration-and-setup/settings/supplier-setting/supplier-general-settings.md)
     * [编辑电子邮件模板](administration-and-setup/settings/supplier-setting/editing-email-templates.md)
     * [供应商布局](administration-and-setup/settings/supplier-setting/supplier-layout.md)
-    * [供应商门户导出配置](administration-and-setup/settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md)
+    * [适用于 M3 的供应商门户导出配置](administration-and-setup/settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md)
     * [供应商权限](administration-and-setup/settings/supplier-setting/supplier-permissions.md)
   * [缓存管理](administration-and-setup/settings/cache-management.md)
   * [基础设施](administration-and-setup/settings/infrastructure.md)

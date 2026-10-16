@@ -135,7 +135,7 @@ supplier_code: "SUPP-001"
 步骤 2：点击“Product Lookup”
 步骤 3：输入产品代码：ABC-123
 步骤 4：点击“Search”
-步骤 5：等待结果加载（3 seconds）
+步骤 5：等待结果加载（3 秒）
 步骤 6：从页面提取价格
 步骤 7：提取可用数量
 步骤 8：返回这两个值
@@ -262,7 +262,7 @@ quantity_available: 500
 5. 搜索 Order #123
 6. 提取订单金额
 7. 比较金额
-8. 如果金额匹配，则返回 true/false
+8. 返回金额是否匹配的 true/false 结果
 ```
 
 ***

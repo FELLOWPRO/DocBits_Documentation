@@ -1,4 +1,6 @@
-# DocBits Release Notes — 14 October 2026
+# VESTA Hotfix — 14 October 2026
+
+> **Release channel:** VESTA · **Release:** R1.0.15. For the additional features in NOVA, see [NOVA — Major Release](nova-major-release-16-october-2026.md).
 
 _What changes in the DocBits production hotfix on 14 October 2026 (release
 R1.0.15), covering everything since the [15 September hotfix](incremental-updates-15-september-2026.md).

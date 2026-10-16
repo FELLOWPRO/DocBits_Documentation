@@ -1,5 +1,7 @@
 # Custom Validation Rules
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4" %}
+
 ## Overview
 
 Custom validation rules let an administrator define **their own checks** on the data DocBits extracts from a document — without writing a script and without waiting for a product change.

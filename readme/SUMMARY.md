@@ -9,6 +9,7 @@
   * [Certificeringen](overview-and-basics/architecture/certifications.md)
   * [Vereisten voor lokale Prefect-installatie](overview-and-basics/architecture/prefect-local-setup-requirements.md)
 * [Beveiliging & Compliance FAQ](overview-and-basics/security-and-compliance-faq.md)
+* [Veilige opslag van inloggegevens](overview-and-basics/secure-storage-of-credentials.md)
 * [Twee-factor-authenticatie (2FA)](overview-and-basics/two-factor-authentication.md)
 * [Infor Infrastructuur](overview-and-basics/infor-infrastructure.md)
 * [DocBits-releaselevenscyclusstrategie](overview-and-basics/docbits-release-lifecycle-strategy.md)

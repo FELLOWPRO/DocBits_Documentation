@@ -6,6 +6,8 @@ De informatie over de opslag van inloggegevens en TLS bij openbare eindpunten is
 
 De informatie over versleuteling van opgeslagen gegevens is op **16 oktober 2026** gecontroleerd aan de hand van beveiligingsdocumentatie van DigitalOcean en metadata van de diensten. Zie [Versleuteling van opgeslagen gegevens](encryption-at-rest.md), inclusief vraag 4.8.
 
+Voor vragen **4.15–4.17**, zie [Cookies en browseropslag](cookies-and-browser-storage.md), [Kwetsbaarhedenbeheer](vulnerability-management.md), [Overige beveiligingsmaatregelen](other-security-controls.md).
+
 ---
 
 ## Statuslegende

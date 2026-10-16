@@ -6,28 +6,28 @@
 
 * Öffnen Sie Ihren Webbrowser und melden Sie sich mit Ihren Zugangsdaten bei DocBits an.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_field_match_score_setting.png" alt="Docbits Field Match Score Setting"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (120).png" alt="Docbits Field Match Score Setting"><figcaption></figcaption></figure>
 
 **Navigieren zur Skriptverwaltung:**
 
 * Suchen Sie in der DocBits-Oberfläche nach der Option zur Verwaltung von Skripten.
 * Dies kann je nach Setup und Konfiguration von DocBits variieren.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_view_existing_scripts.png" alt="Docbits View Existing Scripts"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_edit_script_icon.png" alt="Docbits View Existing Scripts"><figcaption></figcaption></figure>
 
 **Anzeigen vorhandener Skripte:**
 
 * Sobald Sie sich in der Skriptverwaltungsoberfläche befinden, sehen Sie eine Liste aller vorhandenen Skripte.
 * Hier können Sie durch die Liste scrollen, um das gewünschte Skript zu finden, das Sie aktivieren, deaktivieren oder bearbeiten möchten.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_field_match_score_threshold.png" alt="Docbits Field Match Score Threshold"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (120).png" alt="Docbits Field Match Score Threshold"><figcaption></figcaption></figure>
 
 **Aktivieren oder Deaktivieren eines Skripts:**
 
 * Um ein Skript zu aktivieren oder zu deaktivieren, suchen Sie das entsprechende Skript in der Liste und betätigen Sie den entsprechenden Schalter.
 * Stellen Sie sicher, dass Sie die Änderungen nach Ihrer Auswahl speichern.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_save_script_changes.png" alt="Docbits Save Script Changes"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_edit_script_icon.png" alt="Docbits Save Script Changes"><figcaption></figcaption></figure>
 
 **Bearbeiten eines Skripts:**
 
@@ -38,14 +38,14 @@
 * Klicken Sie darauf, um den Editor zu öffnen, in dem Sie den Code des Skripts ändern können.
 * Nachdem Sie Ihre Änderungen vorgenommen haben, speichern Sie das Skript erneut.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_force_validation_setting.png" alt="Docbits Force Validation Setting"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (120).png" alt="Docbits Force Validation Setting"><figcaption></figcaption></figure>
 
 **Überprüfung und Test:**
 
 * Bevor Sie Änderungen an einem Skript vornehmen, überprüfen Sie sorgfältig den vorhandenen Code und überlegen Sie, welche Auswirkungen Ihre Änderungen haben könnten.
 * Testen Sie das Skript in einer Testumgebung, um sicherzustellen, dass es wie erwartet funktioniert.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_validation_rules_example.png" alt="Docbits Validation Rules Example"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (120).png" alt="Docbits Validation Rules Example"><figcaption></figcaption></figure>
 
 **Dokumentation:**
 

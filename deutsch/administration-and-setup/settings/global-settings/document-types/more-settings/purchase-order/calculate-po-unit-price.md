@@ -1,4 +1,4 @@
-# PO-Stückpreis berechnen
+# Berechnung des PO-Einzelpreises
 
 ## **Übersicht**
 
@@ -11,7 +11,7 @@ Sie können wählen, den **Stückpreis** jeder Bestellposition automatisch aus d
     <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1.png" alt=""><figcaption></figcaption></figure>
 2.  Wählen Sie den gewünschten Dokumenttyp aus und klicken Sie auf **Weitere Einstellungen**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 3.  Aktivieren Sie im Abschnitt **Bestellung** die Option **PO-Stückpreis berechnen**.
 
     <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_3.png" alt=""><figcaption></figcaption></figure>
@@ -24,11 +24,11 @@ Sobald die Einstellung aktiviert ist, wird der Stückpreis einer Bestellposition
 
 wobei der **Positionsbetrag** folgendermaßen gewählt wird:
 
-| Die Bestellposition enthält                                                               | Verwendeter Positionsbetrag            |
-| ----------------------------------------------------------------------------------------- | ------------------------------------- |
-| einen **Nettobetrag** (`extended_amount`), der größer als 0 und nicht über dem Positionsgesamtbetrag liegt | der Nettobetrag                       |
-| keinen Nettobetrag oder einen Nettobetrag über dem Positionsgesamtbetrag                  | der **Gesamtbetrag** der Position (`total_amount`) |
-| keinen positiven Betrag oder keine positive Menge                                         | es wird nichts berechnet, der PO-Preis bleibt |
+| Die Bestellposition enthält                                                                                | Verwendeter Positionsbetrag                        |
+| ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| einen **Nettobetrag** (`extended_amount`), der größer als 0 und nicht über dem Positionsgesamtbetrag liegt | der Nettobetrag                                    |
+| keinen Nettobetrag oder einen Nettobetrag über dem Positionsgesamtbetrag                                   | der **Gesamtbetrag** der Position (`total_amount`) |
+| keinen positiven Betrag oder keine positive Menge                                                          | es wird nichts berechnet, der PO-Preis bleibt      |
 
 Warum der Nettobetrag zuerst kommt: ERP-Feeds (Infor BODs) senden den Netto-Positionsbetrag als `extended_amount` und führen **Steuern und Gebühren zusätzlich** im `total_amount`. Die Division eines steuerpflichtigen Gesamtbetrags durch die Menge ergibt einen Bruttostückpreis, und jede Rechnung, die netto bepreist ist, erscheint dann als _unterbewerteter Stückpreis_, obwohl sie korrekt ist. Beispiel aus einer realen Bestellposition: Menge 9, Nettobetrag 879,84, Gesamt 954,63 (8,5 % Steuer) — der netto-basierte Preis ist 97,76 und stimmt mit der Rechnung überein; der gesamtbasierte Preis wäre 106,07.
 

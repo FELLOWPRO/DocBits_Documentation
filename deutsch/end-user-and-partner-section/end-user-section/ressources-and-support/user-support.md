@@ -1,4 +1,4 @@
-# Benutzer-Support
+# Benutzersupport
 
 {% embed url="https://youtu.be/fQUIrp-qz9c" %}
 DocBits Support Ticket Tutorial: Report Bugs, Attach Files & Get Help Faster
@@ -24,5 +24,4 @@ Im Validierungsbildschirm können Sie direkt Tickets für das jeweilige Dokument
 
 {% embed url="https://www.youtube.com/watch?v=zkpFu8Q1Z-A" %}
 
-<figure><img src="../../../.gitbook/assets/image%20(28).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure>

@@ -1,6 +1,6 @@
 # Purchase Invoice - 2nd Approval Unit Price Export
 
-<figure><img src="../../../../.gitbook/assets/And1 (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
 
 Dieser Titel weist darauf hin, dass die Regel zur Verwaltung der zweiten Genehmigungsphase von Einkaufsrechnungen mit Schwerpunkt auf dem Stückpreis eingerichtet ist und sicherstellt, dass dieser mit den vereinbarten Bedingungen übereinstimmt.
 

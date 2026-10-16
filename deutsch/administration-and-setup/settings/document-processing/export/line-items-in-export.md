@@ -6,7 +6,7 @@ Was mit der Positionstabelle geschieht, wenn ein Dokument freigegeben und export
 
 | Exportmethode                                                                                                                                       | Was für die Tabelle gesendet wird                                                                                                                                                                                                                                                                            |
 | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **webhook**, **watcher**, **sftp**, **infor\_sftp** (JSON / XML)                                                                                    | Die Tabelle so, wie sie im Validierungsbildschirm steht: jede nicht versteckte [Tabellenspalte](../../global-settings/document-types/table-columns.md) jeder Zeile, mit Wert, formatiertem Wert und Konfidenz.                                                                                               |
+| **webhook**, **watcher**, **sftp**, **infor\_sftp** (JSON / XML)                                                                                    | Die Tabelle so, wie sie im Validierungsbildschirm steht: jede nicht versteckte [Tabellenspalte](../../../../admin-section/settings/global-settings/document-types/table-columns.md) jeder Zeile, mit Wert, formatiertem Wert und Konfidenz.                                                                  |
 | **infor-m3-cloud**, **infor-m3-toml-cloud**, **infor-idm-**\*, **infor-gls840-onpremise**, **infor-m3-oc-charges-onpremise** (Infor ERP / SAP BODs) | Nicht die Rohtabelle. DocBits bildet daraus **Wareneingangszeilen** (receipt lines) und **Kostenzeilen** (cost lines) (siehe unten) und bildet sie mit dem unter [Exportieren nach INFOR](../../../../infor-integration-and-configuration/exporting-to-infor/) konfigurierten Mapping auf die BOD-Felder ab. |
 
 ## Wareneingangszeilen und Kostenzeilen (Infor-Exporte)
@@ -48,5 +48,5 @@ Partner und Support mit API- oder MCP-Zugang können die Export-Nutzlast eines D
 ## Weitere Seiten
 
 * [Export](./): Exportkonfigurationen und -methoden
-* [Tabellenspalten](../../global-settings/document-types/table-columns.md)
+* [Tabellenspalten](../../../../admin-section/settings/global-settings/document-types/table-columns.md)
 * [Exportieren nach INFOR](../../../../infor-integration-and-configuration/exporting-to-infor/): BOD-Feldzuordnungen für Wareneingangs-, Kosten- und Steuerzeilen

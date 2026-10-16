@@ -1,6 +1,6 @@
 # Workflow Example: Conditional Export Trigger
 
-<figure><img src="../../../.gitbook/assets/And1 (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
 
 Dieser Workflow beschreibt die Bedingungen, unter denen ein Export-Prozess gestartet werden soll. Er stellt sicher, dass nur Dokumente, die alle festgelegten Kriterien erfüllen, für den Export verarbeitet werden, wodurch die Datenintegrität und die Übereinstimmung mit Geschäftsregeln verbessert werden.
 

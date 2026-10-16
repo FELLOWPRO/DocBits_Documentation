@@ -1,4 +1,4 @@
-# Fehler
+# Error
 
 ## Überblick
 
@@ -23,7 +23,7 @@ Unterhalb der Fehlermeldung wird die **Ausnahme (Exception)** angezeigt, die zei
 
 Auf der linken Seite der Seite wird Ihr Dokument zusammen mit mehreren Werkzeugen zur Interaktion und Überprüfung angezeigt.
 
-<figure><img src="../../.gitbook/assets/error_3 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/error_3.png" alt=""><figcaption></figcaption></figure>
 
 ### **Optionen der linken Symbolleiste**
 

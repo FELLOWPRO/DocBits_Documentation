@@ -2,7 +2,7 @@
 description: Dokumente zusammenführen
 ---
 
-# Dokumente zusammenführen
+# Document Merging
 
 ## Überblick
 
@@ -12,7 +12,7 @@ Zunächst müssen Sie die Dokumente auswählen, die Sie zusammenführen möchten
 
 Es wird dann ein Menü angezeigt; wählen Sie die Option „Zusammenführen“, die sich ganz unten befindet.
 
-<figure><img src="../../../.gitbook/assets/document-merging (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document-merging.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://lh7-us.googleusercontent.com/TV2KGh2Q38KsO5Zi-O-GKp5v42Lam4WSj8I8Ia6KjVj2c4X6vce2nFt7yJYicRWmDwKOHZDxrAsfEYtMpN-9UD2mpJ9Sfs4ueb1AYAOjKngY25JKaeEBPzUwcbrylwQ4jj_v-jkGZYLey9p9i0LfL-I" alt=""><figcaption></figcaption></figure>
 

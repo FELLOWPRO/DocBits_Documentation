@@ -14,4 +14,4 @@ Wenn aktiviert, bietet das System einen **visuellen Indikator** im **Bestellabgl
 
 Um die Bestellung zu aktualisieren, klicke auf das **Aktualisierungssymbol** neben der Bestellnummer (siehe Bild unten).
 
-<div align="left"><figure><img src="../../../../../../.gitbook/assets/docbits_purchase_order_4.png" alt="Bestellung Übersicht"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (31).png" alt="Bestellung Übersicht"><figcaption></figcaption></figure></div>

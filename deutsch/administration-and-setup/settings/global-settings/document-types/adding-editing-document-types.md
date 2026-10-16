@@ -14,7 +14,7 @@ DocBits Document Types Explained: Create, Configure & Assign Processing Settings
 * **Navigieren:** Gehen Sie zu Einstellungen.
 * **Dokumenttypen:** Suchen Sie den Bereich "Dokumenttypen".
 
-<figure><img src="../../../../.gitbook/assets/docbits_document_types_section.png" alt="Docbits Document Types Section"><figcaption><p>Einstellungen</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/EDI (1).png" alt="Docbits Document Types Section"><figcaption><p>Einstellungen</p></figcaption></figure>
 
 ### Hinzufügen eines neuen Dokumenttyps
 
@@ -22,43 +22,43 @@ DocBits Document Types Explained: Create, Configure & Assign Processing Settings
 
 * Klicken Sie auf die Schaltfläche "+ Neu".
 
-<figure><img src="../../../../.gitbook/assets/docbits_new_document_type_basic_info.png" alt="Docbits New Document Type Basic Info"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (162).png" alt="Docbits New Document Type Basic Info"><figcaption></figcaption></figure>
 
 **Grundlegende Informationen:**
 
 * Geben Sie einen Namen für den neuen Dokumenttyp ein (z. B. "Rechnung", "Vertrag", "Bericht").
 * Fügen Sie eine Beschreibung hinzu, die den Zweck und die Verwendung des Dokumenttyps erklärt.
 
-<figure><img src="../../../../.gitbook/assets/docbits_script_publish_button.png" alt="Docbits Script Publish Button"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/docbits_script_example_2.png" alt="Docbits Script Publish Button"><figcaption></figcaption></figure>
 
 **Betrag- und Datumsformat**
 
 * Geben Sie das Format für Betrag und Datum ein.
 
-<figure><img src="../../../../.gitbook/assets/docbits_script_management_nav.png" alt="Docbits Script Management Nav"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/docbits_edit_script_icon.png" alt="Docbits Script Management Nav"><figcaption></figcaption></figure>
 
 **Beispieldokumente importieren**
 
 * Laden Sie Beispieldokumente per Drag & Drop hoch.
 * Für das Training müssen mindestens 10 Dokumente hochgeladen werden.
 
-<figure><img src="../../../../.gitbook/assets/docbits_script_list_enable_disable.png" alt="Docbits Script List Enable Disable"><figcaption><p>Hochladen & Trainieren</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/docbits_edit_script_icon.png" alt="Docbits Script List Enable Disable"><figcaption><p>Hochladen &#x26; Trainieren</p></figcaption></figure>
 
 **Gruppen hinzufügen**
 
 * Klicken Sie auf die Schaltfläche "Hinzufügen" und geben Sie den Gruppennamen ein.
 * Sie können auch einen vorhandenen Dokumenttyp klonen.
 
-<figure><img src="../../../../.gitbook/assets/docbits_script_save_changes_2.png" alt="Docbits Script Save Changes 2" width="375"><figcaption><p>Felder & Gruppen</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/docbits_script_example_2.png" alt="Docbits Script Save Changes 2" width="375"><figcaption><p>Felder &#x26; Gruppen</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (163).png" alt="" width="279"><figcaption><p>Neue Gruppe erstellen</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (162).png" alt="" width="279"><figcaption><p>Neue Gruppe erstellen</p></figcaption></figure>
 
 **Felder hinzufügen:**
 
 * Fügen Sie neue Felder hinzu, indem Sie auf "Hinzufügen" klicken.
 * Geben Sie den Namen des Feldes (z. B. "Rechnungsnummer", "Datum", "Betrag") und den Datentyp (z. B. Text, Zahl, Datum) ein.
 
-<figure><img src="../../../../.gitbook/assets/docbits_script_test_environment.png" alt="Docbits Script Test Environment" width="375"><figcaption><p>Felder & Gruppen</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/docbits_script_example_2.png" alt="Docbits Script Test Environment" width="375"><figcaption><p>Felder &#x26; Gruppen</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (162).png" alt="" width="278"><figcaption><p>Neues Feld erstellen</p></figcaption></figure>
 
@@ -66,7 +66,7 @@ DocBits Document Types Explained: Create, Configure & Assign Processing Settings
 
 * Sobald alle Details eingegeben sind, klicken Sie auf "Fertigstellen" und der neue Dokumenttyp wird erstellt.
 
-<figure><img src="../../../../.gitbook/assets/image (164).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
 
 ### Bearbeiten eines vorhandenen Dokumenttyps
 
@@ -75,17 +75,17 @@ DocBits Document Types Explained: Create, Configure & Assign Processing Settings
 * Wählen Sie den Dokumenttyp, den Sie bearbeiten möchten, aus der Liste der vorhandenen Dokumenttypen aus.
 * Unter dem Dokumenttyp finden Sie verschiedene Bearbeitungsoptionen, z. B. Bearbeiten des Layouts, der Felder, der Tabellenspalten usw.
 
-<figure><img src="../../../../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
 
 **Mehr Einstellungen:**
 
 * Klicken Sie auf die Schaltfläche Bearbeiten neben dem Dokumenttyp.
 
-<figure><img src="../../../../.gitbook/assets/docbits_field_elements_list.png" alt="Docbits Field Elements List"><figcaption><p>Mehr Einstellungen</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (162).png" alt="Docbits Field Elements List"><figcaption><p>Mehr Einstellungen</p></figcaption></figure>
 
 * Hier können Sie weitere Einstellungen für den Dokumenttyp vornehmen, z. B. Designvorlage, ob ein Dokument vor dem Export genehmigt werden muss und viele andere Details.
 
-<figure><img src="../../../../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
 
 ### Extraktionsregeln definieren
 

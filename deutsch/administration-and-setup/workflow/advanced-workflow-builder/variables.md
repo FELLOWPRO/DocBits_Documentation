@@ -1,4 +1,4 @@
-# Variables
+# Variablen
 
 Mit **Variablen** speichern Sie Werte einmal und verwenden sie über die Knoten eines Advanced Workflows hinweg wieder — zum Beispiel einen Schwellenwert, einen festen Empfänger oder einen Wert, den Sie aus dem Dokument lesen und an einen späteren Knoten weitergeben. Öffnen Sie das Variablen-Panel über die Schaltfläche **Variables** (das `{ }`-Symbol) in der Symbolleiste.
 
@@ -8,9 +8,9 @@ Mit **Variablen** speichern Sie Werte einmal und verwenden sie über die Knoten 
 
 Variablen werden nach ihrem Typ gruppiert:
 
-* **Text** — ein Zeichenkettenwert (z. B. eine Beschreibung oder eine feste Bezeichnung).
-* **Yes/No** — ein boolesches Kennzeichen (Yes / No).
-* **Document** — ein Verweis auf ein Dokument oder Dokumentfeld.
+- **Text** — ein Zeichenkettenwert (z. B. eine Beschreibung oder eine feste Bezeichnung).
+- **Yes/No** — ein boolesches Kennzeichen (Yes / No).
+- **Document** — ein Verweis auf ein Dokument oder Dokumentfeld.
 
 Verwenden Sie das Suchfeld, um eine Variable schnell zu finden, wenn die Liste wächst.
 
@@ -20,5 +20,5 @@ Klicken Sie auf **New Variable**, geben Sie ihr einen Namen und einen Typ und le
 
 ## Nächste Schritte
 
-* Sehen Sie, wie Knoten diese Werte verwenden, unter [Knoten](nodes.md).
-* Validieren und starten Sie den Workflow unter [Validierung & Test](validation-and-testing.md).
+- Sehen Sie, wie Knoten diese Werte verwenden, unter [Knoten](nodes.md).
+- Validieren und starten Sie den Workflow unter [Validierung & Test](validation-and-testing.md).

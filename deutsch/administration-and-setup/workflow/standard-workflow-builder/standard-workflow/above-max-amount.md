@@ -1,6 +1,6 @@
 # Above Max Amount
 
-<figure><img src="../../../../.gitbook/assets/And1 (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
 
 Dieser Titel weist darauf hin, dass die Regel dafür ausgelegt ist, Fälle zu verwalten, in denen der Rechnungsgesamtbetrag höher ist als der maximale Betrag, den ein Genehmiger bearbeiten darf.
 

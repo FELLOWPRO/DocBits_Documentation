@@ -22,13 +22,10 @@ When this setting is enabled, the system automatically exports the purchase orde
    * Select **Module**.
    * Navigate to the **Purchase Order**.
    * Activate the **Auto Export if PO matched 100%** by enabling the corresponding slider
-
-<figure><img src="../../../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
-
-1. **Monitoring**:
+2. **Monitoring**:
    * Once enabled, the system will automatically export POs that match 100% with their expected criteria.
    * You can monitor the export activity through the PO dashboard or other related monitoring tools.
-2. **Considerations**:
+3. **Considerations**:
    * Ensure that your PO criteria are correctly defined and accurate to avoid any unwanted exports.
    * Regularly review the POs processed through this feature to ensure that the automation is functioning as expected.
 

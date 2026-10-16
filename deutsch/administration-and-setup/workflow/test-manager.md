@@ -12,9 +12,9 @@ Ein Testszenario erfasst einen Workflow, eine Beispieleingabe und das **erwartet
 
 ## Arbeiten mit Szenarien
 
-- **Add Test Scenario** — erstellen Sie ein neues Szenario aus einem Workflow und einem Beispieldokument.
-- **Run All Tests** — führen Sie alle Szenarien auf einmal aus und sehen Sie auf einen Blick, welche Workflows noch bestehen.
-- **View Details** — öffnen Sie ein Szenario, um sein Ergebnis zu prüfen.
+* **Add Test Scenario** — erstellen Sie ein neues Szenario aus einem Workflow und einem Beispieldokument.
+* **Run All Tests** — führen Sie alle Szenarien auf einmal aus und sehen Sie auf einen Blick, welche Workflows noch bestehen.
+* **View Details** — öffnen Sie ein Szenario, um sein Ergebnis zu prüfen.
 
 <figure><img src="../../.gitbook/assets/workflow_test_manager_detail.png" alt="Workflow test scenario details with status, run time and data"><figcaption><p>Szenario-Details — Name, Status, Laufzeit sowie die tatsächlichen und extrahierten Daten, die der Lauf erzeugt hat.</p></figcaption></figure>
 
@@ -24,5 +24,5 @@ Die Detailansicht zeigt den Szenarionamen und **Status**, den **Workflow-Namen**
 
 Das sind zwei verschiedene Dinge:
 
-- **Test Manager** (diese Seite) — *gespeicherte, wiederholbare* Szenarien mit erwarteten Ergebnissen, die gemeinsam mit **Run All Tests** ausgeführt werden. Verwenden Sie ihn für Regressionstests nach Änderungen.
-- **Testen im Builder** — die direkten Steuerelemente **Validate** und **Test** innerhalb des Advanced Workflow-Builders, für schnelle Prüfungen während des Erstellens. Siehe [Validierung & Testen](advanced-workflow/validation-and-testing.md).
+* **Test Manager** (diese Seite) — _gespeicherte, wiederholbare_ Szenarien mit erwarteten Ergebnissen, die gemeinsam mit **Run All Tests** ausgeführt werden. Verwenden Sie ihn für Regressionstests nach Änderungen.
+* **Testen im Builder** — die direkten Steuerelemente **Validate** und **Test** innerhalb des Advanced Workflow-Builders, für schnelle Prüfungen während des Erstellens. Siehe [Validierung & Testen](advanced-workflow-builder/validation-and-testing.md).

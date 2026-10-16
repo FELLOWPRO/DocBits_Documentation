@@ -1,6 +1,6 @@
 # Purchase Invoice - 2nd Approval Quantity Export
 
-<figure><img src="../../../../.gitbook/assets/And1 (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
 
 Dieser Titel weist darauf hin, dass die Regel zur Verwaltung der zweiten Genehmigungsphase für Einkaufsrechnungen mit Schwerpunkt auf den Mengendetails eingerichtet ist und sicherstellt, dass die Mengen auf der Rechnung mit denen auf der ursprünglichen Bestellung übereinstimmen.
 

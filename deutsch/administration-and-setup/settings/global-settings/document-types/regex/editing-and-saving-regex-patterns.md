@@ -6,7 +6,7 @@
 
 <figure><img src="../../../../../.gitbook/assets/docbits_regex_edit_settings.png" alt="Docbits Regex Edit Settings"><figcaption><p>Einstellungen: Belegtyp</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_regex_pattern_analysis.png" alt="Docbits Regex Pattern Analysis"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_regex_edit_settings.png" alt="Docbits Regex Pattern Analysis"><figcaption></figcaption></figure>
 
 **Bestehendes Muster analysieren:**
 
@@ -15,21 +15,21 @@
 
 **Zum Beispiel: Der Rechnungsbetrag soll ausgelesen werden:**
 
-*   (?<=Rechnungsbetrag:)[\s]*((((\d+)[,.]{1,10})+\d{0,2})|(\d+(?!,)))
+*   (?<=Rechnungsbetrag:)\[\s]\*((((\d+)\[,.]{1,10})+\d{0,2})|(\d+(?!,)))
 
     Rechnungsbetrag: 100.00
 *   Den Betrag mit 1000er Punkt lesen, aber den Punkt NICHT mit übergeben
 
-    [\d.]_[\,\d]_
+    \[\d.]_\[,\d]_
 
     Erlaubte Zeichen: 0123456789,
 *   Der Wert "P32180" soll ausgelesen werden. Ankerwort ist hier "Invoice Date".
 
-    (?<=InvoiceDate )[\s]*P\d{5}
+    (?<=InvoiceDate )\[\s]\*P\d{5}
 
     Customer number Invoice number Invoice date P32180 613976 05/13/2019
 
-<figure><img src="../../../../../.gitbook/assets/docbits_import_start_process.png" alt="Docbits Import Start Process"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_regex_edit_settings.png" alt="Docbits Import Start Process"><figcaption></figcaption></figure>
 
 **Änderungen dokumentieren:**
 
@@ -65,6 +65,6 @@
 
 * Sobald Sie sicher sind, dass die Änderungen erfolgreich sind und wie erwartet funktionieren, speichern Sie das aktualisierte Regex-Muster in Ihrer Codebasis oder Ihren Konfigurationsdateien, um sicherzustellen, dass sie für die zukünftige Verwendung verfügbar sind.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_model_training_continuous.png" alt="Docbits Model Training Continuous"><figcaption><p>Änderungen speichern</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (85) (1).png" alt="Docbits Model Training Continuous"><figcaption><p>Änderungen speichern</p></figcaption></figure>
 
 Durch Befolgen dieser Schritte und sorgfältiges Testen von Änderungen an Regex-Mustern können Sie sicherstellen, dass Ihr Regex-Muster weiterhin korrekt funktioniert, während es neue Anforderungen erfüllt.

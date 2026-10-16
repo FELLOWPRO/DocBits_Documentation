@@ -3,7 +3,6 @@
 Diese Anleitung führt Sie durch die Verbindung der **schreibgeschützten Datenbank von DocBits mit Power BI Desktop** über den **PostgreSQL-ODBC-Treiber**. Sie behandelt die Treiberinstallation, die ODBC-Konfiguration, die Power-BI-Integration und die geplante Aktualisierung.
 
 {% embed url="https://youtu.be/O1MtuXf_R_M" %}
-{% endembed %}
 
 #### 1. PostgreSQL-ODBC-Treiber installieren
 
@@ -16,7 +15,7 @@ Diese Anleitung führt Sie durch die Verbindung der **schreibgeschützten Datenb
 * Öffnen Sie den **ODBC-Datenquellen-Administrator (64-Bit)** über die Systemsteuerung oder die Windows-Suche.
 * Wechseln Sie zur Registerkarte **System-DSN** und klicken Sie auf **Hinzufügen**.
 * Wählen Sie den Treiber **PostgreSQL Unicode(x64)** aus der Liste aus und klicken Sie auf **Fertig stellen**.
-* Tragen Sie in die erforderlichen Felder die Zugangsdaten aus folgendem Bereich ein:\n  **DocBits → Settings → Document Processing → Module → AI Dashboard → Read-Only DB Access**
+* Tragen Sie in die erforderlichen Felder die Zugangsdaten aus folgendem Bereich ein:\n **DocBits → Settings → Document Processing → Module → AI Dashboard → Read-Only DB Access**
 
 <figure><img src="../../.gitbook/assets/connect_read_only_4.png" alt=""><figcaption></figcaption></figure>
 
@@ -35,7 +34,7 @@ Diese Anleitung führt Sie durch die Verbindung der **schreibgeschützten Datenb
 * Öffnen Sie **Power BI Desktop**.
 *   Wählen Sie **Daten abrufen** → **ODBC** → **Verbinden**.
 
-    <figure><img src="../../.gitbook/assets/powerbi_get_data_odbc.png" alt="Power BI: Daten abrufen über ODBC"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/clickhouse_1.png" alt="Power BI: Daten abrufen über ODBC"><figcaption></figcaption></figure>
 * Wählen Sie in der DSN-Liste Ihre konfigurierte Datenquelle aus (z. B. `Sandbox-Read_Only`).
 
 <figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt=""><figcaption></figcaption></figure>
@@ -49,7 +48,7 @@ Diese Anleitung führt Sie durch die Verbindung der **schreibgeschützten Datenb
 * Öffnen Sie das Schema **`public`**.
 * Wählen Sie die Tabellen aus, die Sie importieren möchten.
 
-![](../../.gitbook/assets/connect_read_only_1.png)        ![](../../.gitbook/assets/connect_read_only_2.png)
+![](../../.gitbook/assets/connect_read_only_1.png)
 
 * Wählen Sie:
   * **Laden** → Direkter Import in Power BI
@@ -72,8 +71,8 @@ Diese Anleitung führt Sie durch die Verbindung der **schreibgeschützten Datenb
 * Im Power BI-Dienst:
   * Gehen Sie zu Ihrem Dataset → **Einstellungen** → **Geplante Aktualisierung**
   * Ordnen Sie Ihren DSN zu und geben Sie die Zugangsdaten an
-* Weitere Informationen finden Sie [hier](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).&#x20;
+* Weitere Informationen finden Sie [hier](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).
 
-#### 7. Beispiel-Dashboards und Datenansichten&#x20;
+#### 7. Beispiel-Dashboards und Datenansichten
 
 <div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Power-BI-Dashboard, Beispiel 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Power-BI-Dashboard, Beispiel 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Power-BI-Dashboard, Beispiel 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Power-BI-Dashboard, Beispiel 4"><figcaption></figcaption></figure></div>

@@ -8,7 +8,7 @@ Hier ist eine Anleitung, wie Sie die Aktionen "Kopieren" und "Löschen" für ein
 * Wählen Sie den Subtyp aus, den Sie kopieren möchten, klicken Sie auf "Kopieren" und geben Sie bei Bedarf einen neuen Namen für den kopierten Subtyp ein.
 * Bestätigen Sie die Aktion, und das System erstellt eine Kopie des ausgewählten Subtyps mit allen vorhandenen Einstellungen, Feldern, Layouts und Skripten.
 
-<figure><img src="../../../../.gitbook/assets/docbits_subtype_copy_action.png" alt="Docbits Subtype Copy Action"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/docbits_add_subtype_button.png" alt="Docbits Subtype Copy Action"><figcaption></figcaption></figure>
 
 ## Löschen eines Subtyps:
 

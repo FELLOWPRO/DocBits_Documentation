@@ -22,6 +22,8 @@ And: **Document type is:** Invoice
 
 Then: **Assign document to:** Stefan Reppermund
 
+![](../../../.gitbook/assets/3.png)
+
 **Test 2: Logic Card**
 
 When: **Assignee is:** Amier Haider
@@ -30,6 +32,8 @@ And: **Document type is:** Delivery Note
 
 Then: **Assign document to:** James Edwards
 
+![](../../../.gitbook/assets/4.png)
+
 **Test 3: Logic Card**
 
 **When:** **Assignee is:** Amier Haider
@@ -37,6 +41,8 @@ Then: **Assign document to:** James Edwards
 **And:** **Document type is:** Order Confirmation
 
 **Then:** **Assign document to:** Anian Sollinger
+
+![](../../../.gitbook/assets/5.png)
 
 Es ist auch möglich, ein Dokument von Anfang an einem bestimmten Mitarbeiter zuzuweisen, wenn es nicht einer einzelnen Person zugeordnet ist.
 
@@ -54,6 +60,8 @@ Für eine einfachere Übersicht darüber, was mit einem Dokument geschehen soll,
 
 <figure><img src="../../../.gitbook/assets/workflow_test4_delivery_note_status.png" alt="Workflow Test 4 Delivery Note Status"><figcaption></figcaption></figure>
 
+![](../../../.gitbook/assets/8.png)
+
 **Test 5: Logic Card**
 
 When: **Document type is:** Invoice
@@ -64,7 +72,11 @@ Then: **Change Status to:** Pending Second Approval
 
 <figure><img src="../../../.gitbook/assets/workflow_test5_invoice_approval_status.png" alt="Workflow Test 5 Invoice Approval Status"><figcaption></figcaption></figure>
 
+![](../../../.gitbook/assets/10.png)
+
 Wenn eine Rechnung oder ein anderes Dokument einen bestimmten Gesamtbetrag überschreitet, der eine vorherige Prüfung und Genehmigung erfordert, können diese Dokumente sofort der richtigen Person zugewiesen werden.
+
+![](../../../.gitbook/assets/11.png)
 
 **Test 6: Logic Card**
 
@@ -75,6 +87,8 @@ And: Docfield **total\_amount** is **Greater than 500**
 Then: **Assign document to:** Asad Usman Khan
 
 <figure><img src="../../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Workflow Test 6 Total Amount Assign"><figcaption></figcaption></figure>
+
+![](../../../.gitbook/assets/13.png)
 
 Es ist auch möglich, den Status in den Workflow einzutragen, sodass die zugewiesene Person sofort erkennen kann, welchen Status dieses Dokument hat und was als Nächstes damit geschehen soll.
 
@@ -90,7 +104,7 @@ Es ist auch möglich, den Status in den Workflow einzutragen, sodass die zugewie
 
 <figure><img src="../../../.gitbook/assets/workflow_test7_status_update.png" alt="Workflow Test 7 Status Update"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/And1 (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
 
 Wenn beispielsweise bestimmte oder wichtige Informationen in einem Dokument fehlen, die aber für die weitere Verarbeitung wichtig sind und enthalten sein müssen, können Sie den Workflow so einrichten, dass diese Dokumente sofort an den Einkäufer und einen Stellvertreter (Ersatz) weitergeleitet werden.
 
@@ -127,7 +141,7 @@ Diese Logic Card ist entscheidend, um sicherzustellen, dass die Details einer Au
 
 Wenn Sie eine andere Berechnung für Zuschläge haben oder diese nur bei einigen Artikeln auftreten, können Sie die generischen Tabellenberechnungs-Cards verwenden. Einige davon erlauben auch das Filtern nach regulären Ausdrücken.
 
-<figure><img src="../../../.gitbook/assets/And1 (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
 
 Oben sehen Sie ein Berechnungsbeispiel für MTZ mit einem Filter für Artikelnummern, die mit 01, 06, 9, 001 oder 000 beginnen.
 
@@ -135,7 +149,7 @@ Bei einer manuellen Einrichtung wird empfohlen, Berechnungen, die von neuen Spal
 
 **Run Workflow**
 
-<figure><img src="../../../.gitbook/assets/And1 (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
 
 Mit dieser Card können Sie den Namen eines Workflows angeben, der nach dem aktuellen Workflow ausgeführt werden soll, wenn dessen Bedingungen erfüllt sind und nach den vorherigen Then-Cards des aktuellen Workflows. Während sie ausführbare, aktive Workflows priorisiert, ermöglicht sie auch das Ausführen deaktivierter Workflows, sofern das Dokument die Bedingungen des Workflows erfüllt.
 

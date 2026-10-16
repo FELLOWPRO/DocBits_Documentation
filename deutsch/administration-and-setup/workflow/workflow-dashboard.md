@@ -6,13 +6,13 @@ Das **Workflow Dashboard** ist die Startseite des Workflow-Bereichs. Es zeigt, w
 
 ## Reiter
 
-- **Dashboard** — Kennzahlen zu den Ausführungen und letzte Aktivität (oben dargestellt).
-- **Workflow List** — jeder Workflow mit Typ, Ausführungsreihenfolge und Auslöser. Einen neuen Workflow legen Sie mit **New Workflow** an.
-- **Test Manager List** — Testszenarien, die Ihre Workflows validieren; führen Sie sie mit **Run All Tests** aus.
-- **License** — Informationen zur Workflow-Lizenzierung.
-- **Card SDK** — eigene Workflow-Karten erstellen und hochladen (siehe [Card SDK](card-sdk.md)).
+* **Dashboard** — Kennzahlen zu den Ausführungen und letzte Aktivität (oben dargestellt).
+* **Workflow List** — jeder Workflow mit Typ, Ausführungsreihenfolge und Auslöser. Einen neuen Workflow legen Sie mit **New Workflow** an.
+* **Test Manager List** — Testszenarien, die Ihre Workflows validieren; führen Sie sie mit **Run All Tests** aus.
+* **License** — Informationen zur Workflow-Lizenzierung.
+* **Card SDK** — eigene Workflow-Karten erstellen und hochladen (siehe [Card SDK](card-sdk.md)).
 
-Die Symbolleiste bietet außerdem **Templates**, das die Bibliothek [Workflow Templates](standard-workflow-builder.md#workflow-templates) öffnet, und **Import Workflow**, das einen Workflow aus einer JSON-Datei importiert.
+Die Symbolleiste bietet außerdem **Templates**, das die Bibliothek [Workflow Templates](standard-workflow-builder/#workflow-templates) öffnet, und **Import Workflow**, das einen Workflow aus einer JSON-Datei importiert.
 
 Im **Test Manager** können Sie Testszenarien pro Workflow speichern und gemeinsam ausführen, um zu bestätigen, dass Ihre Workflows sich nach Änderungen weiterhin korrekt verhalten:
 
@@ -20,5 +20,5 @@ Im **Test Manager** können Sie Testszenarien pro Workflow speichern und gemeins
 
 ## Nächste Schritte
 
-- Erstellen Sie mit dem Builder **Standard Workflow** eine lineare Automatisierung.
-- Erstellen Sie mit dem Builder **Advanced Workflow** einen verzweigten Ablauf.
+* Erstellen Sie mit dem Builder **Standard Workflow** eine lineare Automatisierung.
+* Erstellen Sie mit dem Builder **Advanced Workflow** einen verzweigten Ablauf.

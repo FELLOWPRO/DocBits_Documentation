@@ -57,11 +57,11 @@ Der Entscheidungsbaum-Designer ermöglicht es Ihnen, Regeln zu konfigurieren, di
 
 Dieser Entscheidungsbaum wertet das Feld **Total Amount** aus und ordnet es auf Basis vordefinierter Bedingungen verschiedenen Gruppen zu. Jede Regel vergleicht den Gesamtbetrag mit einem bestimmten Wert, und je nachdem, welche Bedingung wahr ist, wird die entsprechende **Group** zurückgegeben.
 
-<figure><img src="../../../../.gitbook/assets/And1 (44).png" alt="Entscheidungsbaum-Beispiel Total Amount"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="Entscheidungsbaum-Beispiel Total Amount"><figcaption></figcaption></figure>
 
 Dieser Entscheidungsbaum wertet zwei zentrale Bedingungen aus, um zu bestimmen, welche Gruppe zugewiesen werden soll: **Total Amount** und **Warehouse Status**. Der Baum verwendet Schwellenwerte auf Basis des Gesamtbetrags, um festzulegen, welche Gruppe zurückgegeben wird, mit der zusätzlichen Unterscheidung, ob das Lager als „Warehouse Main", „Warehouse Sub" oder „Not Warehouse Main" gekennzeichnet ist.
 
-<figure><img src="../../../../.gitbook/assets/And1 (44).png" alt="Entscheidungsbaum-Beispiel Warehouse Status"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="Entscheidungsbaum-Beispiel Warehouse Status"><figcaption></figcaption></figure>
 
 Jede Regel wird nacheinander ausgewertet.
 
@@ -88,23 +88,23 @@ Die Entscheidungsbaum-Policy legt fest, wie mehrere Regeln innerhalb eines Entsc
 
     * Suchen Sie im Entscheidungsbaum-Designer die Schaltfläche **Test**.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (44).png" alt="Entscheidungsbaum Test-Button" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Entscheidungsbaum Test-Button" width="563"><figcaption></figcaption></figure>
 2.  **Das Test-Popup öffnen:**
 
     * Klicken Sie auf die Schaltfläche **Test**.
     * Es erscheint ein Popup-Fenster mit Eingabefeldern, die den im Entscheidungsbaum verwendeten Kriterien entsprechen.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (44).png" alt="Entscheidungsbaum Test-Popup" width="421"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Entscheidungsbaum Test-Popup" width="421"><figcaption></figcaption></figure>
 3. **Eingabewerte angeben:**
    *   Geben Sie Werte in die Eingabefelder ein, um ein reales Szenario zu simulieren.
 
-       <figure><img src="../../../../.gitbook/assets/And1 (44).png" alt="Entscheidungsbaum Testeingabe" width="428"><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/And1.png" alt="Entscheidungsbaum Testeingabe" width="428"><figcaption></figcaption></figure>
 4.  **Die Ergebnisse auswerten:**
 
     * Nach der Eingabe verarbeitet der Baum die Werte auf Basis der gewählten Policy.
     * Das System hebt die Regel(n) hervor, die den angegebenen Eingaben entsprechen.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (44).png" alt="Entscheidungsbaum Testergebnis" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Entscheidungsbaum Testergebnis" width="563"><figcaption></figcaption></figure>
 5. **Rückmeldung bei fehlender Übereinstimmung prüfen:**
    * Wenn keine Regel hervorgehoben wird, zeigt das System eine Rückmeldung an, die erläutert, warum keine Regel zutraf.
    * Nutzen Sie diese Rückmeldung, um die Eingaben anzupassen oder die Konfiguration des Baums auf mögliche Probleme zu überprüfen.

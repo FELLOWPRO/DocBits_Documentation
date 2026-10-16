@@ -13,18 +13,18 @@ Unter **Weitere Einstellungen** finden Sie die Optionen, die zu einem einzelnen 
 
 Die Brotkrümelnavigation oben auf der Seite zeigt **Einstellungen / Dokumenttypen / Weitere Einstellungen**. Der Einstellungs-Assistent rechts auf der Seite erklärt die Einstellungen der geöffneten Karte.
 
-| Karte | Was Sie dort einstellen |
-| ----- | ----------------------- |
-| Bestellung | PO-Abgleich, Toleranzen, Export von PO-Positionen, Lieferantenartikelnummern |
-| Layouts verwalten | Schalter für die Übersicht Layouts verwalten |
-| Benutzerdefinierte Validierungsregeln | Ihre eigenen Validierungsregeln für diesen Dokumenttyp |
-| Transformationsregeln | Regeln, die einen Wert lesen, schrittweise ändern und zurückschreiben |
-| Genehmigung & Ablehnung | Genehmigungsworkflow sowie die Formulare "In Prüfung" und "Ablehnen" |
-| [Vertex Tax Verifizierung](vertex-tax-verification.md) | Das Formular für die Vertex-Steuerprüfung gestalten |
-| E-Rechnung Validierung | Validierung von XRechnung-, ZUGFeRD- und Factur-X-Rechnungen |
-| Tabelle Extraktion | Validierung extrahierter Tabellen überspringen |
-| Einstellungen exportieren | Mehrfachexport, PDF-Format, alternativer Export |
-| Duplikaterkennung | Doppelte Dokumente erkennen und blockieren |
+| Karte                                                  | Was Sie dort einstellen                                                      |
+| ------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| Bestellung                                             | PO-Abgleich, Toleranzen, Export von PO-Positionen, Lieferantenartikelnummern |
+| Layouts verwalten                                      | Schalter für die Übersicht Layouts verwalten                                 |
+| Benutzerdefinierte Validierungsregeln                  | Ihre eigenen Validierungsregeln für diesen Dokumenttyp                       |
+| Transformationsregeln                                  | Regeln, die einen Wert lesen, schrittweise ändern und zurückschreiben        |
+| Genehmigung & Ablehnung                                | Genehmigungsworkflow sowie die Formulare "In Prüfung" und "Ablehnen"         |
+| [Vertex Tax Verifizierung](vertex-tax-verification.md) | Das Formular für die Vertex-Steuerprüfung gestalten                          |
+| E-Rechnung Validierung                                 | Validierung von XRechnung-, ZUGFeRD- und Factur-X-Rechnungen                 |
+| Tabelle Extraktion                                     | Validierung extrahierter Tabellen überspringen                               |
+| Einstellungen exportieren                              | Mehrfachexport, PDF-Format, alternativer Export                              |
+| Duplikaterkennung                                      | Doppelte Dokumente erkennen und blockieren                                   |
 
 ## Bestellung
 
@@ -64,7 +64,7 @@ Unter dem Diagramm listet das Panel **Regeln nach Priorität, je Stufe** auf. Zu
 * Der Durchlauf **1.1 Exakter Abgleich aller Regeln** schlägt fehl, weil 10.40 nicht 10.00 ist. Der rote Pfeil führt zum nächsten Durchlauf.
 * Der Durchlauf **1.2 Abgleich mit Toleranz** ist erfolgreich. Die Abweichung beträgt 4 %, das liegt innerhalb von 5 %. Der grüne Pfeil führt zu **Match gefunden**, und die Verarbeitung endet.
 
-Im Diagramm ist das der Pfad 1.1, dann 1.2, dann **Match gefunden**. Den Pfad, den ein einzelnes Dokument genommen hat, finden Sie unter [Touchless Intelligence: Bestellabgleich-Diagnose](../../../../touchless-po-matching-diagnosis.md). Alle Details zur Regelseite finden Sie unter [Regeln für die Übereinstimmung von Bestellungen](purchase-order/purchase-order-matching-rules.md).
+Im Diagramm ist das der Pfad 1.1, dann 1.2, dann **Match gefunden**. Den Pfad, den ein einzelnes Dokument genommen hat, finden Sie unter [Touchless Intelligence: Bestellabgleich-Diagnose](../../../../analytics-dashboard/touchless-intelligence/touchless-po-matching-diagnosis.md). Alle Details zur Regelseite finden Sie unter [Regeln für die Übereinstimmung von Bestellungen](purchase-order/purchase-order-matching-rules.md).
 
 ### PO-Toleranzeinstellung
 
@@ -86,7 +86,7 @@ Die [**Lieferantenartikelnummernkarte**](purchase-order/supplier-item-number-map
 
 Drei Karten befinden sich direkt unter der Karte Bestellung:
 
-* **Layouts verwalten** schaltet die Übersicht Layouts verwalten für diesen Dokumenttyp ein. Siehe den [Layout Manager](../layout-manager/README.md).
+* **Layouts verwalten** schaltet die Übersicht Layouts verwalten für diesen Dokumenttyp ein. Siehe den [Layout Manager](../layout-manager/).
 * **Benutzerdefinierte Validierungsregeln** schaltet Ihre eigenen Validierungsregeln ein. **Validierungsregeln verwalten** öffnet sie. Siehe [Benutzerdefinierte Validierungsregeln](../custom-validation-rules.md).
 * **Transformationsregeln** schaltet die Transformationsregeln ein. **Transformationsregeln verwalten** öffnet sie. Siehe [Transformationsregeln](../transformation-rules.md).
 
@@ -106,7 +106,7 @@ Die Karte **Genehmigung & Ablehnung** enthält den Genehmigungsworkflow und die 
 * **Entwerfen des Überprüfungsformulars**: Konfiguriert das Layout des Prüfformulars mit dem **Layout Builder**.
 * **Entwerfen Sie das Ablehnungsformular**: Konfiguriert das Layout des Ablehnungsformulars mit dem **Layout Builder**.
 
-Zum **Layout Builder** siehe den [Layout Manager](../layout-manager/README.md).
+Zum **Layout Builder** siehe den [Layout Manager](../layout-manager/).
 
 ## Vertex Tax Verifizierung
 
@@ -114,7 +114,7 @@ Die Karte **Vertex Tax Verifizierung** enthält **Steuerprüfung für Design Ver
 
 ## E-Rechnung Validierung
 
-Die Karte **E-Rechnung Validierung** schaltet die Validierung eingehender E-Rechnungen ein und legt fest, ob der Lieferant benachrichtigt wird, wenn eine Rechnung abgelehnt wird. Siehe [E-Rechnung Validierung](../../../document-processing/e-documents/validation-rules.md).
+Die Karte **E-Rechnung Validierung** schaltet die Validierung eingehender E-Rechnungen ein und legt fest, ob der Lieferant benachrichtigt wird, wenn eine Rechnung abgelehnt wird. Siehe [E-Rechnung Validierung](../../../document-processing/e-documents/validation-rules/).
 
 ## Tabelle Extraktion
 

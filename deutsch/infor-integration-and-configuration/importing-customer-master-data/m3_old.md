@@ -20,7 +20,7 @@ Diese Anleitung erklärt, wie Sie ein API-Connection-Template importieren, um wi
 
 Laden Sie vor dem Import das erforderliche Connection-Template über die folgende Datei herunter:
 
-{% file src="../../.gitbook/assets/DocBits-Dev-Import-Template (1).xml" %}
+{% file src="../../.gitbook/assets/DocBits-Dev-Import-Template.xml" %}
 
 ### Template importieren
 

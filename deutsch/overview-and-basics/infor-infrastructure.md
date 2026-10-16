@@ -1,4 +1,4 @@
-# Infor-Infrastruktur
+# Infor Infrastructure
 
 ### Offener Port 443 & sichere Kommunikation
 
@@ -20,10 +20,10 @@ Wir erlauben für die Kommunikation mit unseren Servern ausschließlich HTTPS-ge
 
 ### Infor Cloud
 
-<figure><img src="../.gitbook/assets/DocBits_II_infra_cloud.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/inforInrastructure2.webp" alt=""><figcaption></figcaption></figure>
 
 ### Infor On-Prem
 
 Flexibilität ist entscheidend, und wir bieten sowohl Cloud- als auch On-Premise-Lösungen an. Mit unserer On-Premise-Option müssen keine Ports geöffnet werden, sodass die Sicherheit Ihres Netzwerks uneingeschränkt erhalten bleibt. Ob in der Cloud oder im eigenen Haus – wir haben für Sie die passende Lösung.
 
-<figure><img src="../.gitbook/assets/DocBits_II_infra-on-prem-1024x355.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/inforInfrastructure3.webp" alt=""><figcaption></figcaption></figure>

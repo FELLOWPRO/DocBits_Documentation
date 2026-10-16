@@ -24,7 +24,7 @@ DocBits PO Matching Tutorial: Auto/Manual Line Matching, Tolerances & Mismatch I
 * **v3 → v4:** Addition of comparison mode parameters
 * **v4 → v5:** Enhanced tolerance with multiple units (%, EUR, $, etc.)
 
-📖 [Complete Version History](https://github.com/Fellow-Consulting-AG/docbits/tree/de/readme/administration-and-setup/changelog/release.md#-po-comparison--validation-cards) | [Card Version Database](https://github.com/Fellow-Consulting-AG/docbits/tree/de/readme/DocFlow/docs/card_version.md)
+📖 [Complete Version History](../../changelog/release.md#-po-comparison--validation-cards) | [Card Version Database](../../../DocFlow/docs/card_version.md)
 
 ***
 

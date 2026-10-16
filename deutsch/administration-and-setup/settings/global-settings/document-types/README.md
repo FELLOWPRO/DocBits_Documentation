@@ -4,7 +4,7 @@
 DocBits Document Types Explained: Create, Configure & Assign Processing Settings
 {% endembed %}
 
-<figure><img src="../../../../.gitbook/assets/document_types.png" alt="Dokumenttypen"><figcaption><p>Seite „Dokumenttypen“</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/EDI (1).png" alt="Dokumenttypen"><figcaption><p>Seite „Dokumenttypen“</p></figcaption></figure>
 
 ## Übersicht
 
@@ -17,27 +17,27 @@ Die Seite „Document Types“ listet alle Dokumenttypen auf, die DocBits erkenn
 
 Jede Dokumenttyp-Karte zeigt:
 
-| Steuerelement | Beschreibung |
-|---------|-------------|
-| **Activate** | Schalter, um diesen Dokumenttyp für die Verarbeitung zu aktivieren oder zu deaktivieren. |
-| **Extraction** | Schalter, um die KI-basierte Datenextraktion für diesen Typ zu aktivieren oder zu deaktivieren. |
-| **Settings** (Zahnradsymbol) | Öffnet weitere Konfigurationsoptionen für den Dokumenttyp. |
+| Steuerelement                | Beschreibung                                                                                    |
+| ---------------------------- | ----------------------------------------------------------------------------------------------- |
+| **Activate**                 | Schalter, um diesen Dokumenttyp für die Verarbeitung zu aktivieren oder zu deaktivieren.        |
+| **Extraction**               | Schalter, um die KI-basierte Datenextraktion für diesen Typ zu aktivieren oder zu deaktivieren. |
+| **Settings** (Zahnradsymbol) | Öffnet weitere Konfigurationsoptionen für den Dokumenttyp.                                      |
 
 ## Konfigurations-Tabs
 
 Unterhalb jedes Dokumenttyps erreichen Sie die folgenden Konfigurations-Tabs:
 
-| Tab | Beschreibung |
-|-----|-------------|
-| **Labels** | Anzeigebezeichnungen und Übersetzungen für den Dokumenttyp verwalten. |
-| **Edit layout** | Anpassen, wie das Dokument in der Validierungsansicht erscheint, einschließlich der Feldpositionen. |
-| **Document Sub Types** | Unterkategorien für diesen Dokumenttyp konfigurieren (z. B. verschiedene Rechnungsformate). |
-| **Table columns** | Festlegen, welche Datenspalten in der Tabelle der Positionen erscheinen. |
-| **Fields** | Die aus dem Dokument extrahierten Datenfelder verwalten (Felder hinzufügen, bearbeiten oder entfernen). |
-| **Model Training** | Das KI-Modell zur Erkennung und Extraktion von Daten konfigurieren und trainieren. |
-| **Regex** | Reguläre Ausdrücke für die musterbasierte Datenextraktion einrichten. |
-| **Scripts** | Eigene Verarbeitungsskripte schreiben, die während der Dokumentenverarbeitung ausgeführt werden. |
-| **E-Doc** | Standards für elektronische Dokumente konfigurieren (XRechnung, ZUGFeRD, EDI, FatturaPA). |
+| Tab                    | Beschreibung                                                                                            |
+| ---------------------- | ------------------------------------------------------------------------------------------------------- |
+| **Labels**             | Anzeigebezeichnungen und Übersetzungen für den Dokumenttyp verwalten.                                   |
+| **Edit layout**        | Anpassen, wie das Dokument in der Validierungsansicht erscheint, einschließlich der Feldpositionen.     |
+| **Document Sub Types** | Unterkategorien für diesen Dokumenttyp konfigurieren (z. B. verschiedene Rechnungsformate).             |
+| **Table columns**      | Festlegen, welche Datenspalten in der Tabelle der Positionen erscheinen.                                |
+| **Fields**             | Die aus dem Dokument extrahierten Datenfelder verwalten (Felder hinzufügen, bearbeiten oder entfernen). |
+| **Model Training**     | Das KI-Modell zur Erkennung und Extraktion von Daten konfigurieren und trainieren.                      |
+| **Regex**              | Reguläre Ausdrücke für die musterbasierte Datenextraktion einrichten.                                   |
+| **Scripts**            | Eigene Verarbeitungsskripte schreiben, die während der Dokumentenverarbeitung ausgeführt werden.        |
+| **E-Doc**              | Standards für elektronische Dokumente konfigurieren (XRechnung, ZUGFeRD, EDI, FatturaPA).               |
 
 ## Benutzerdefinierte Validierungsregeln
 

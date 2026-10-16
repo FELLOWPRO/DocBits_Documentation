@@ -1,6 +1,6 @@
 # Less than Max Amount
 
-<figure><img src="../../../../.gitbook/assets/And1 (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
 
 Dieser Titel legt nahe, dass die eingerichtete Regel oder Bedingung dafür ausgelegt ist, Rechnungen zu behandeln, bei denen der Gesamtbetrag kleiner oder gleich einem festgelegten Maximalbetrag ist.
 

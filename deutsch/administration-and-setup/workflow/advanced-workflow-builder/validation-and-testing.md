@@ -1,6 +1,6 @@
-# Validation & Testing
+# Validierung & Testen
 
-Während Sie einen Advanced Workflow erstellen, können Sie ihn mit zwei Steuerelementen in der Symbolleiste prüfen, ohne den Builder zu verlassen. Diese sind für _schnelle Prüfungen während des Erstellens_ gedacht — für gespeicherte, wiederholbare Tests verwenden Sie den [Test Manager](../test-manager.md).
+Während Sie einen Advanced Workflow erstellen, können Sie ihn mit zwei Steuerelementen in der Symbolleiste prüfen, ohne den Builder zu verlassen. Diese sind für *schnelle Prüfungen während des Erstellens* gedacht — für gespeicherte, wiederholbare Tests verwenden Sie den [Test Manager](../test-manager.md).
 
 ## Validate
 
@@ -12,10 +12,10 @@ Klicken Sie auf das Steuerelement **Test** (das Abspielen-Symbol oder drücken S
 
 ## Wann was verwenden
 
-* **Validate / Test im Builder** (diese Seite) — sofortiges Feedback, während Sie den Ablauf entwerfen.
-* [**Test Manager**](../test-manager.md) — speichern Sie das Szenario, damit Sie es später erneut ausführen können (und gemeinsam mit allen Ihren anderen Szenarien), um Regressionen nach künftigen Änderungen zu erkennen.
+- **Validate / Test im Builder** (diese Seite) — sofortiges Feedback, während Sie den Ablauf entwerfen.
+- **[Test Manager](../test-manager.md)** — speichern Sie das Szenario, damit Sie es später erneut ausführen können (und gemeinsam mit allen Ihren anderen Szenarien), um Regressionen nach künftigen Änderungen zu erkennen.
 
 ## Nächste Schritte
 
-* Sehen Sie sich die Knotentypen und Verbindungen unter [Knoten](nodes.md) an.
-* Alle Steuerelemente von Symbolleiste und Arbeitsfläche finden Sie unter [Symbolleiste & Arbeitsfläche](toolbar-and-canvas.md).
+- Sehen Sie sich die Knotentypen und Verbindungen unter [Knoten](nodes.md) an.
+- Alle Steuerelemente von Symbolleiste und Arbeitsfläche finden Sie unter [Symbolleiste & Arbeitsfläche](toolbar-and-canvas.md).

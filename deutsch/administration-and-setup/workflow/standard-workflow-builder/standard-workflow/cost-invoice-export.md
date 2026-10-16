@@ -1,6 +1,6 @@
 # Cost Invoice - Export
 
-<figure><img src="../../../../.gitbook/assets/And1 (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
 
 Dieser Titel weist darauf hin, dass die Regel speziell für die Verwaltung von Kostenrechnungen konfiguriert ist und eine Export-Aktion umfasst, möglicherweise für Berichte, weitere Verarbeitung oder Integration mit anderen Systemen.
 

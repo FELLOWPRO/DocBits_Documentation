@@ -1,6 +1,6 @@
 # Purchase Invoice - 2nd Approval Quantity
 
-<figure><img src="../../../../.gitbook/assets/And1 (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
 
 Dieser Titel weist darauf hin, dass sich die Regel speziell auf die Behandlung von Einkaufsrechnungen während einer zweiten Genehmigungsphase bezieht, mit dem Schwerpunkt auf der Überprüfung der Richtigkeit der aufgeführten Mengen.
 

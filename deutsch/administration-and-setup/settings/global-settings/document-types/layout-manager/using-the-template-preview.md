@@ -4,7 +4,7 @@
 
 ### Hier ist eine Erklärung, wie Sie die Vorlagenvorschau verwenden können:
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_python_example_2.png" alt="Docbits Script Python Example 2"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_script_example_2.png" alt="Docbits Script Python Example 2"><figcaption></figcaption></figure>
 
 #### Öffnen der Vorlagenvorschau:
 
@@ -17,13 +17,13 @@
 * Wählen Sie die Vorlage aus, deren Layout Sie überprüfen möchten.
 * Dies kann eine bestehende Vorlage sein, an der Sie Änderungen vornehmen möchten, oder eine neue Vorlage, die Sie erstellen möchten.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_template_preview_adjust.png" alt="Docbits Template Preview Adjust" width="186"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (146).png" alt="Docbits Template Preview Adjust" width="186"><figcaption></figcaption></figure>
 
 #### Anpassen der Layouteinstellungen:
 
 * Ändern Sie die Layouteinstellungen nach Bedarf. Dies kann das Hinzufügen, Entfernen oder Anpassen von Gruppen, Feldern, Spalten, Zeilen, Schriftarten usw. beinhalten.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_save_name.png" alt="Docbits Script Save Name" width="271"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_script_example_2.png" alt="Docbits Script Save Name" width="271"><figcaption></figcaption></figure>
 
 #### Echtzeit-Vorschau:
 

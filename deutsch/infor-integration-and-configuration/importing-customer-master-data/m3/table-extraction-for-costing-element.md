@@ -1,4 +1,4 @@
-# Tabellenextraktion für Costing Element
+# Table Extraction for costing Element
 
 Navigieren Sie zu **Settings → Document Processing → Classification and Extraction**
 
@@ -40,7 +40,7 @@ _**„Costing elements are not properly configured. Please ask your admin to con
        <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
    *   **Nach der Änderung:**
 
-       <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
 5. **In CSV konvertieren:**
    * Speichern Sie die geänderte Excel-Datei als `.csv`
 6. **In DocBits hochladen:**

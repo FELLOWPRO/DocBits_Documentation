@@ -25,7 +25,7 @@ Neben dem rohen `INVOICE_TYPE_CODE` erzeugt das Standard-TRANSFORMATION-XSLT zwe
 
 ### Tax Breakdown (stufenklassifiziert)
 
-`ApplicableTradeTax`-Blöcke werden auf drei steuersatzbasierte Stufen verteilt (nicht über positionale Indexe): Felder zum Regelsatz (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) erfassen rate ≥ 19; Felder zum ermäßigten Satz (`*_2`) erfassen 0 < rate < 19; Felder zum Nullsatz (`*_3`) erfassen rate = 0. Siehe [ZUGFeRD Tax Breakdown](./#tax-breakdown-tier-classified) für die vollständige Feldliste.
+`ApplicableTradeTax`-Blöcke werden auf drei steuersatzbasierte Stufen verteilt (nicht über positionale Indexe): Felder zum Regelsatz (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) erfassen rate ≥ 19; Felder zum ermäßigten Satz (`*_2`) erfassen 0 < rate < 19; Felder zum Nullsatz (`*_3`) erfassen rate = 0. Siehe [ZUGFeRD Tax Breakdown](./#tax-breakdown-stufenklassifiziert) für die vollständige Feldliste.
 
 ### Daten
 

@@ -1,4 +1,4 @@
-# Key Concept: Tolerance Window
+# Schlüsselkonzept: Toleranzfenster
 
 Bevor wir uns die Operatoren ansehen, ist es wichtig zu verstehen, wie das Toleranzfenster berechnet wird.
 
@@ -12,7 +12,7 @@ Das Toleranzfenster definiert einen Bereich akzeptabler Daten rund um das zugesa
 * Toleranztage: **3**
 * Toleranzfenster: **6. Januar → 12. Januar**
 
-> <mark style="color:red;">Nur die ausgewählten</mark> <mark style="color:red;">**Zulässigen Toleranztage**</mark> <mark style="color:red;">(Wochentage) werden bei der Berechnung dieses Fensters gezählt.</mark>
+> <mark style="color:red;">Nur die ausgewählten</mark> <mark style="color:red;"></mark><mark style="color:red;">**Zulässigen Toleranztage**</mark> <mark style="color:red;"></mark><mark style="color:red;">(Wochentage) werden bei der Berechnung dieses Fensters gezählt.</mark>
 
 ### Visuelles Zeitachsen-Beispiel
 

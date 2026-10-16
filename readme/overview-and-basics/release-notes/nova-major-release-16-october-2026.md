@@ -1,4 +1,4 @@
-# NOVA — Versão Principal — 4 de novembro de 2026 (prevista)
+# NOVA – Versão Principal 4 de novembro de 2026
 
 **Disponibilidade da NOVA R1.1:** Disponível no ambiente de testes desde **16 de outubro de 2026**. A entrada em produção está prevista para **4 de novembro de 2026**.
 

@@ -4,6 +4,8 @@
 
 Informacje o przechowywaniu danych uwierzytelniających i TLS w publicznych punktach końcowych sprawdzono **16 października 2026 r.** Poniższa strona opisuje potwierdzony zakres oraz kwestie, które wymagają jeszcze potwierdzenia dla danego wdrożenia. Zobacz [Bezpieczne przechowywanie danych uwierzytelniających](secure-storage-of-credentials.md).
 
+Szczegóły szyfrowania w spoczynku zweryfikowano **16 października 2026 r.** na podstawie dokumentacji bezpieczeństwa DigitalOcean i metadanych usług. Zobacz [Szyfrowanie danych w spoczynku](encryption-at-rest.md), w tym pytanie 4.8.
+
 ---
 
 ## Legenda Statusu
@@ -21,11 +23,11 @@ Informacje o przechowywaniu danych uwierzytelniających i TLS w publicznych punk
 
 ### 1. Gdzie dokładnie hostowane jest środowisko produkcyjne?
 
-**Odpowiedź:** Hostowane na infrastrukturze chmury AWS we Frankfurcie w Niemczech. Używa S3 do przechowywania i OpenSearch do indeksowania dzienników. DocBits posiada certyfikat ISO 27001. Informacje o szyfrowaniu podczas przesyłania i zweryfikowanym zakresie zawiera strona [Bezpieczne przechowywanie danych uwierzytelniających](secure-storage-of-credentials.md).
+**Odpowiedź:** Środowisko produkcyjne UE jest hostowane w chmurze DigitalOcean we Frankfurcie w Niemczech. DocBits używa DigitalOcean Spaces do przechowywania oraz zarządzanych usług PostgreSQL, OpenSearch i Valkey. DocBits posiada certyfikat ISO 27001. Zakres szyfrowania opisują [Szyfrowanie danych w spoczynku](encryption-at-rest.md) i [Bezpieczne przechowywanie danych uwierzytelniających](secure-storage-of-credentials.md).
 
 **Status:** ✅ Potwierdzone
 
-**Notatki:** Frankfurt na AWS potwierdzony (S3 + OpenSearch). Zapytaj o konkretny kod regionu AWS (eu-central-1) i czy pojedyncza czy multi-AZ.
+**Notatki:** DigitalOcean Frankfurt: typy zarządzanych usług baz danych potwierdzono na podstawie metadanych infrastruktury 16 października 2026 r.; użycie Spaces opisano w tym FAQ.
 
 ---
 
@@ -49,7 +51,7 @@ Harmonogram kopii zapasowych: Codziennie, Co tydzień, Co kwartał i Co roku.
 
 **Status:** ✅ Potwierdzone
 
-**Notatki:** Kompleksowy harmonogram kopii zapasowych (codziennie/co tydzień/co kwartał/co roku) w dwóch lokalizacjach UE. Wszystkie dane pozostają w UE. Potwierdź szyfrowanie kopii zapasowych i częstotliwość testowania przywracania.
+**Notatki:** Kompleksowy harmonogram kopii zapasowych (codziennie/co tydzień/co kwartał/co roku) w dwóch lokalizacjach UE. Wszystkie dane pozostają w UE. Potwierdź szyfrowanie kopii zapasowych i częstotliwość testowania przywracania. Szyfrowanie kopii zarządzanych baz danych dostawcy opisano w [Szyfrowanie danych w spoczynku](encryption-at-rest.md); nie potwierdza to każdej kopii w szerszym harmonogramie kopii zapasowych.
 
 ---
 
@@ -71,9 +73,11 @@ Dane klientów z UE hostowane są wyłącznie we Frankfurcie. Obecnie niedostęp
 
 **Odpowiedź:** Publiczne punkty końcowe `app.docbits.com`, `auth.docbits.com` i `api.docbits.com` obsługują HTTPS z TLS 1.2 i TLS 1.3. Sprawdzenie 16 października 2026 r. potwierdziło odrzucanie TLS 1.0 i TLS 1.1. Hasła logowania i klucze utworzone w funkcji Zarządzanie kluczami API są chronione jednokierunkowym haszowaniem. Haszowanie jest odrębne od szyfrowania baz danych, magazynów danych i kopii zapasowych.
 
+**W spoczynku:** DigitalOcean Managed Databases stosuje szyfrowanie całych woluminów za pomocą LUKS i AES-256-XTS; zarządzane kopie zapasowe używają AES-256-CTR. Spaces używa 256-bitowego AES-XTS na fizycznych dyskach. [Szyfrowanie danych w spoczynku](encryption-at-rest.md) opisuje metody, zarządzanie kluczami, zakres kopii i odpowiedź na pytanie 4.8.
+
 **Status:** ✅ Częściowo potwierdzone
 
-**Notatki:** Szyfrowanie wszystkich przechowywanych informacji o kontach i kopii zapasowych, metody szyfrowania, zarządzanie kluczami i ochrona każdego połączenia wewnętrznego wymagają potwierdzenia dla konkretnego wdrożenia. Sam certyfikat ISO 27001 nie potwierdza określonego algorytmu ani zakresu jego stosowania. Zobacz [Bezpieczne przechowywanie danych uwierzytelniających](secure-storage-of-credentials.md).
+**Notatki:** Dotyczy to wymienionych usług zarządzanych. Dodatkowe eksporty, archiwa, kopie zapasowe, ewentualne szyfrowanie poszczególnych pól i każde połączenie wewnętrzne wymagają osobnego potwierdzenia dla wdrożenia. Szyfrowanie pamięci masowej nie potwierdza ograniczeń dostępu personelu. [Bezpieczne przechowywanie danych uwierzytelniających](secure-storage-of-credentials.md) wyjaśnia haszowanie i różnice w dostępie.
 
 ---
 
@@ -163,11 +167,11 @@ Dane klientów z UE hostowane są wyłącznie we Frankfurcie. Obecnie niedostęp
 
 ### 14. Jak długo przechowywane są dzienniki dostępu?
 
-**Odpowiedź:** Dzienniki przechowywane na AWS S3 we Frankfurcie i OpenSearch. Dzienniki dostępne dla klientów przechowywane przez 30 dni. Dzienniki wewnętrzne przechowywane przez 3 miesiące.
+**Odpowiedź:** Dzienniki przechowywane na DigitalOcean Spaces we Frankfurcie i OpenSearch. Dzienniki dostępne dla klientów przechowywane przez 30 dni. Dzienniki wewnętrzne przechowywane przez 3 miesiące.
 
 **Status:** ✅ Potwierdzone
 
-**Notatki:** S3 + OpenSearch we Frankfurcie. Przechowywanie dostępu dla klientów przez 30 dni / wewnętrzne przez 3 miesiące. Potwierdź czy dzienniki są niezmienne/zabezpieczone przed manipulacją.
+**Notatki:** DigitalOcean Spaces + OpenSearch we Frankfurcie. Przechowywanie dostępu dla klientów przez 30 dni / wewnętrzne przez 3 miesiące. Potwierdź czy dzienniki są niezmienne/zabezpieczone przed manipulacją.
 
 ---
 
@@ -177,7 +181,7 @@ Dane klientów z UE hostowane są wyłącznie we Frankfurcie. Obecnie niedostęp
 
 **Status:** ✅ Potwierdzone
 
-**Notatki:** Przechowywanie konfigurowalne przez klientów (30 dni / 3 miesiące). Potwierdź: Czy usunięcie obejmuje wszystkie kopie (S3, OpenSearch, dane treningu AI)?
+**Notatki:** Przechowywanie konfigurowalne przez klientów (30 dni / 3 miesiące). Potwierdź: Czy usunięcie obejmuje wszystkie kopie (DigitalOcean Spaces, OpenSearch, dane treningu AI)?
 
 ---
 

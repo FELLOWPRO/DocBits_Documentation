@@ -69,6 +69,8 @@ Weryfikacja obejmuje połączenia z tymi publicznymi punktami końcowymi, w tym 
 
 ## Szyfrowanie przechowywanych informacji o kontach
 
+DigitalOcean Managed Databases stosuje szyfrowanie całych woluminów za pomocą LUKS i AES-256-XTS; zarządzane kopie zapasowe używają AES-256-CTR. Spaces używa 256-bitowego AES-XTS na fizycznych dyskach. [Szyfrowanie danych w spoczynku](encryption-at-rest.md) opisuje metody, zarządzanie kluczami, zakres kopii i odpowiedź na pytanie 4.8.
+
 Haszowanie haseł i kluczy API jest innym zabezpieczeniem niż szyfrowanie baz danych, woluminów, obiektów i kopii zapasowych. Opisane kontrole nie dowodzą, że każda nazwa użytkownika, każde pole konta lub każdy sekret integracji są szyfrowane indywidualnie ani że wszystkie przechowywane dane korzystają z określonego algorytmu szyfrowania.
 
 Jeśli wymaganie obejmuje wszystkie informacje o kontach klientów, należy uzyskać od FELLOWPRO AG oświadczenie dotyczące konkretnego wdrożenia, obejmujące odpowiednie magazyny danych i kopie zapasowe, metody szyfrowania, zarządzanie kluczami oraz dostęp personelu. Sam model hostingu w chmurze lub serverless nie potwierdza tych właściwości.

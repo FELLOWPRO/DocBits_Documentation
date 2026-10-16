@@ -4,6 +4,8 @@
 
 De informatie over de opslag van inloggegevens en TLS bij openbare eindpunten is gecontroleerd op **16 oktober 2026**. De volgende pagina beschrijft de bevestigde reikwijdte en de details die nog per omgeving moeten worden bevestigd. Zie [Veilige opslag van inloggegevens](secure-storage-of-credentials.md).
 
+De informatie over versleuteling van opgeslagen gegevens is op **16 oktober 2026** gecontroleerd aan de hand van beveiligingsdocumentatie van DigitalOcean en metadata van de diensten. Zie [Versleuteling van opgeslagen gegevens](encryption-at-rest.md), inclusief vraag 4.8.
+
 ---
 
 ## Statuslegende
@@ -21,11 +23,11 @@ De informatie over de opslag van inloggegevens en TLS bij openbare eindpunten is
 
 ### 1. Waar precies wordt de productieomgeving gehost?
 
-**Antwoord:** Gehost op AWS-cloud-infrastructuur in Frankfurt, Duitsland. Gebruikt S3 voor opslag en OpenSearch voor logboekindexering. DocBits is ISO 27001 gecertificeerd. Zie voor versleuteling tijdens de overdracht en de geverifieerde reikwijdte [Veilige opslag van inloggegevens](secure-storage-of-credentials.md).
+**Antwoord:** De EU-productieomgeving wordt gehost op DigitalOcean-cloudinfrastructuur in Frankfurt, Duitsland. DocBits gebruikt DigitalOcean Spaces voor opslag en beheerde PostgreSQL-, OpenSearch- en Valkey-diensten. DocBits is ISO 27001 gecertificeerd. Zie [Versleuteling van opgeslagen gegevens](encryption-at-rest.md) en [Veilige opslag van inloggegevens](secure-storage-of-credentials.md) voor de reikwijdte van de versleuteling.
 
 **Status:** ✅ Bevestigd
 
-**Opmerkingen:** AWS Frankfurt bevestigd (S3 + OpenSearch). Vraag naar specifieke AWS-regiecode (eu-central-1) en of dit single of multi-AZ is.
+**Opmerkingen:** DigitalOcean Frankfurt: de typen beheerde databasediensten zijn op 16 oktober 2026 bevestigd aan de hand van infrastructuurmetadata; het gebruik van Spaces is in deze FAQ beschreven.
 
 ---
 
@@ -49,7 +51,7 @@ Back-upschema: Dagelijkse, wekelijkse, driemaandelijkse en jaarlijkse back-ups.
 
 **Status:** ✅ Bevestigd
 
-**Opmerkingen:** Uitgebreid back-upschema (dagelijks/wekelijks/driemaandelijks/jaarlijks) op twee EU-locaties. Alle gegevens blijven in de EU. Bevestig back-upversleuteling en hoe vaak herstel wordt getest.
+**Opmerkingen:** Uitgebreid back-upschema (dagelijks/wekelijks/driemaandelijks/jaarlijks) op twee EU-locaties. Alle gegevens blijven in de EU. Bevestig back-upversleuteling en hoe vaak herstel wordt getest. De versleuteling van door de aanbieder beheerde databaseback-ups staat beschreven in [Versleuteling van opgeslagen gegevens](encryption-at-rest.md); dit verifieert niet elke kopie in het bredere back-upschema.
 
 ---
 
@@ -71,9 +73,11 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Antwoord:** De openbare eindpunten `app.docbits.com`, `auth.docbits.com` en `api.docbits.com` ondersteunen HTTPS met TLS 1.2 en TLS 1.3. Bij de controles op 16 oktober 2026 werden TLS 1.0 en TLS 1.1 geweigerd. Inlogwachtwoorden en sleutels uit API-sleutelbeheer worden beschermd met eenrichtingshashes. Hashing is een andere maatregel dan versleuteling van databases, opslag en back-ups.
 
+**Tijdens opslag:** DigitalOcean Managed Databases gebruikt volledige volumeversleuteling met LUKS en AES-256-XTS; de beheerde back-ups gebruiken AES-256-CTR. Spaces gebruikt 256-bits AES-XTS op fysieke schijven. [Versleuteling van opgeslagen gegevens](encryption-at-rest.md) beschrijft methoden, sleutelbeheer, back-updekking en het antwoord op vraag 4.8.
+
 **Status:** ✅ Gedeeltelijk
 
-**Opmerkingen:** Versleuteling van alle opgeslagen accountgegevens en back-ups, versleutelingsmethoden, sleutelbeheer en bescherming van elke interne verbinding vereisen bevestiging voor de specifieke omgeving. ISO 27001-certificering op zichzelf toont geen bepaald algoritme of de dekking daarvan aan. Zie [Veilige opslag van inloggegevens](secure-storage-of-credentials.md).
+**Opmerkingen:** Dit dekt de genoemde beheerde diensten. Aanvullende exports, archieven, back-upkopieën, eventuele versleuteling per veld en elke interne verbinding vereisen bevestiging voor de specifieke omgeving. Opslagversleuteling toont geen toegangsbeperkingen voor medewerkers aan. [Veilige opslag van inloggegevens](secure-storage-of-credentials.md) legt hashing en de verschillen in toegang uit.
 
 ---
 
@@ -163,11 +167,11 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 ### 14. Hoe lang worden toegangslogboeken bewaard?
 
-**Antwoord:** Logboeken opgeslagen op AWS S3 in Frankfurt en OpenSearch. Logboeken die voor klanten toegankelijk zijn gedurende 30 dagen behouden. Interne logboeken gedurende 3 maanden behouden.
+**Antwoord:** Logboeken opgeslagen op DigitalOcean Spaces in Frankfurt en OpenSearch. Logboeken die voor klanten toegankelijk zijn gedurende 30 dagen behouden. Interne logboeken gedurende 3 maanden behouden.
 
 **Status:** ✅ Bevestigd
 
-**Opmerkingen:** S3 + OpenSearch in Frankfurt. 30-daagse klantentoegang / 3-maanden interne retentie. Bevestig of logboeken onveranderbaar/tamper-proof zijn.
+**Opmerkingen:** DigitalOcean Spaces + OpenSearch in Frankfurt. 30-daagse klantentoegang / 3-maanden interne retentie. Bevestig of logboeken onveranderbaar/tamper-proof zijn.
 
 ---
 
@@ -177,7 +181,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Status:** ✅ Bevestigd
 
-**Opmerkingen:** Door klanten configureerbare retentie (30 dagen / 3 maanden). Bevestig: Omvat verwijdering alle kopieën (S3, OpenSearch, AI-trainingsgegevens)?
+**Opmerkingen:** Door klanten configureerbare retentie (30 dagen / 3 maanden). Bevestig: Omvat verwijdering alle kopieën (DigitalOcean Spaces, OpenSearch, AI-trainingsgegevens)?
 
 ---
 

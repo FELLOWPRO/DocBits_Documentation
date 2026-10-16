@@ -2,9 +2,9 @@
 
 Diese Seite erklärt, wie Sie ein DocBits-Konto erhalten und wie Sie sich anmelden, wenn Sie Ihr Passwort nicht haben:
 
-* [Registrierung](getting-access-and-signing-in.md#registrierung) — erstellen Sie Ihr eigenes DocBits-Konto.
-* [Passwort vergessen](getting-access-and-signing-in.md#passwort-vergessen) — setzen Sie Ihr Passwort mit einem Reset-Link zurück.
-* [Erstes Passwort für vom Administrator angelegte Konten](getting-access-and-signing-in.md#erstes-passwort-für-vom-administrator-angelegte-konten) — legen Sie das erste Passwort für ein Konto fest, das Ihr Administrator für Sie erstellt hat.
+* [Registrierung](#registrierung) — erstellen Sie Ihr eigenes DocBits-Konto.
+* [Passwort vergessen](#passwort-vergessen) — setzen Sie Ihr Passwort mit einem Reset-Link zurück.
+* [Erstes Passwort für vom Administrator angelegte Konten](#erstes-passwort-für-vom-administrator-angelegte-konten) — legen Sie das erste Passwort für ein Konto fest, das Ihr Administrator für Sie erstellt hat.
 
 Die Anmeldung mit einem bestehenden Konto und die Zwei-Faktor-Authentifizierung werden unter [Zwei-Faktor-Authentifizierung (2FA)](../../overview-and-basics/two-factor-authentication.md) behandelt. Verwenden Sie das Sprachmenü oben rechts auf diesen Formularen, wenn Sie eine andere Anzeigesprache benötigen.
 
@@ -51,13 +51,14 @@ DocBits speichert Anmeldepasswörter als gesalzene Einweg-Hashes. Ein bestehende
 Wenn Sie Ihr Passwort vergessen haben:
 
 1. Klicken Sie auf dem Anmeldebildschirm auf **Passwort vergessen?**.
-2.  Geben Sie auf der Seite **Passwort vergessen** Ihre **E-Mail**-Adresse ein und klicken Sie auf **Passwort zurücksetzen**. Falls ein reCAPTCHA-Widget angezeigt wird, lösen Sie es zuerst.
+2. Geben Sie auf der Seite **Passwort vergessen** Ihre **E-Mail**-Adresse ein und klicken Sie auf **Passwort zurücksetzen**. Falls ein reCAPTCHA-Widget angezeigt wird, lösen Sie es zuerst.
 
-    <figure><img src="../../.gitbook/assets/getting-access-forget-password-form-de.png" alt="Die Seite Passwort vergessen mit dem E-Mail-Feld"><figcaption><p>Die Seite Passwort vergessen. Geben Sie Ihre Konto-E-Mail-Adresse ein, und DocBits sendet Ihnen einen Reset-Link.</p></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/getting-access-forget-password-form-de.png" alt="Die Seite Passwort vergessen mit dem E-Mail-Feld"><figcaption><p>Die Seite Passwort vergessen. Geben Sie Ihre Konto-E-Mail-Adresse ein, und DocBits sendet Ihnen einen Reset-Link.</p></figcaption></figure>
 
-    Wenn Sie Ihr Passwort nicht zurücksetzen wollen, klicken Sie auf **Zurück zu Login**, um zur Anmeldung zurückzukehren.
+   Wenn Sie Ihr Passwort nicht zurücksetzen wollen, klicken Sie auf **Zurück zu Login**, um zur Anmeldung zurückzukehren.
+
 3. DocBits sendet Ihnen einen **Passwort-Reset-Link** per E-Mail. Öffnen Sie die E-Mail und klicken Sie auf den Link — er öffnet die Reset-Seite.
-4. Geben Sie Ihr **neues Passwort zweimal** ein. Es gelten dieselben Passwortregeln wie bei der [Registrierung](getting-access-and-signing-in.md#passwortregeln), und eine Checkliste zeigt, welche Regeln erfüllt sind.
+4. Geben Sie Ihr **neues Passwort zweimal** ein. Es gelten dieselben Passwortregeln wie bei der [Registrierung](#passwortregeln), und eine Checkliste zeigt, welche Regeln erfüllt sind.
 5. Klicken Sie auf **Passwort zurücksetzen**. DocBits bestätigt die Änderung und bringt Sie zurück zum Anmeldebildschirm, wo Sie sich mit dem neuen Passwort anmelden können.
 
 {% hint style="info" %}
@@ -66,12 +67,12 @@ Reset-Links laufen nach kurzer Zeit ab. Wenn der Link nicht mehr funktioniert, w
 
 ## Erstes Passwort für vom Administrator angelegte Konten
 
-Wenn Ihr Administrator Sie als Benutzer anlegt (siehe [Benutzer](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/)), erhalten Sie eine E-Mail mit Ihren Anmeldedaten und einem Link zum Festlegen Ihres **ersten Passworts**. Der Link öffnet die Seite **Passwort festlegen**:
+Wenn Ihr Administrator Sie als Benutzer anlegt (siehe [Benutzer](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)), erhalten Sie eine E-Mail mit Ihren Anmeldedaten und einem Link zum Festlegen Ihres **ersten Passworts**. Der Link öffnet die Seite **Passwort festlegen**:
 
 <figure><img src="../../.gitbook/assets/getting-access-set-password-form-de.png" alt="Die Seite Passwort festlegen mit der Willkommensnachricht"><figcaption><p>Die Seite Passwort festlegen, angezeigt nachdem ein Administrator Ihr Konto erstellt hat.</p></figcaption></figure>
 
 1. Klicken Sie auf den Link in der Einladungs-E-Mail. Die Seite begrüßt Sie mit „Willkommen bei DocBits! Ihr Konto wurde erstellt. Bitte legen Sie Ihr Passwort fest, um zu beginnen."
-2. Geben Sie Ihr Passwort zweimal ein — es gelten dieselben [Passwortregeln](getting-access-and-signing-in.md#passwortregeln).
+2. Geben Sie Ihr Passwort zweimal ein — es gelten dieselben [Passwortregeln](#passwortregeln).
 3. Klicken Sie auf **Passwort festlegen**. Anschließend können Sie sich mit Ihrer E-Mail-Adresse und diesem Passwort anmelden.
 
 Die Augensymbole zeigen an oder verbergen, was Sie eingegeben haben. Wenn Sie das Festlegen abbrechen, bringt Sie **Zum Login** zurück zur Anmeldung.

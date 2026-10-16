@@ -38,7 +38,7 @@ Five unusual invoice layouts that DocBits reads right without any help, and what
 
 ### 6. The Assistant and who can change what
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part6/v1/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part6/v2/en.mp4" %}
 
 How the Assistant helps with the AI table, how to suggest an improvement, and what only admins can change.
 

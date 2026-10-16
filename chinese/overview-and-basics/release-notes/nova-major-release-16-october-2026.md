@@ -42,16 +42,14 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 
 将以下演示教程与发布说明配合使用，以了解相关功能及其配置。提供简体中文的视频已在下方链接；其他视频均明确标注为英文。
 
-| 主题 | 视频 |
-| --- | --- |
-| 选择合适的自动化方式——包括采购订单匹配规则的适用场景 | [英文视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4) |
-| 转换规则 | [英文视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4) |
-| 自定义验证规则 | [英文视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4) |
-| 布局和选择规则 | [英文视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/en.mp4) |
-| Touchless Intelligence | [英文视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/en.mp4) |
-| 电子发票验证 | [英文视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/en.mp4) |
-| 用户和管理员访问 | [简体中文视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/zh.mp4) · [英文视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/en.mp4) |
-| 子组织 | [简体中文视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/zh.mp4) · [英文视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/en.mp4) |
+* [选择合适的自动化方式——包括采购订单匹配规则的适用场景 (英文视频)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4)
+* [转换规则 (英文视频)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4)
+* [自定义验证规则 (英文视频)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4)
+* [布局和选择规则 (英文视频)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/en.mp4)
+* [Touchless Intelligence (英文视频)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/en.mp4)
+* [电子发票验证 (英文视频)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/en.mp4)
+* [用户和管理员访问](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/zh.mp4)
+* [子组织](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/zh.mp4)
 
 ### AI Table：六段短视频
 

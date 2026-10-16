@@ -13,13 +13,13 @@ Eksplorator grafów wiedzy (Knowledge Graph Explorer) pomaga zobaczyć powiązan
 
 ## Wybierz, co widzisz
 
-| Element sterowania                 | Do czego służy                                                                                                                                                                                                             |
-| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nawigacja**                      | Przełączaj między widokami: **Vendor Overview** (połączeni dostawcy), **Vendor Intelligence** (tabela dostawców), **Document Journey** (etapy i warianty przetwarzania dokumentów) oraz **Anomalies** (nietypowe relacje). |
-| **Typ**                            | Wybierz rodzaje elementów, na których chcesz się skupić, np. Documents, Vendors, Purchase Orders czy Invoices. Wybrane typy ograniczają również wyniki wyszukiwania.                                                       |
-| **Statystyki wykresu**             | Pokazuje liczbę węzłów (elementów) i krawędzi (połączeń) aktualnie dostępnych w grafie. W razie potrzeby tę sekcję można rozwinąć lub zwinąć.                                                                              |
-| **Zaufanie**                       | Otwórz tę sekcję, aby ustawić minimalne zaufanie do relacji przy rozwijaniu węzła. Wyższa wartość zawęża wyświetlane połączenia.                                                                                           |
-| **Odbuduj wykres**                 | Uruchamia nowe obliczanie grafu. Poczekaj na zakończenie postępu, zanim ponownie wyszukasz.                                                                                                                                |
-| **Eksplorator grafów / Analityka** | Przełączaj między interaktywnym grafem a wykresami podsumowującymi. Analityka pokazuje liczby i wykresy, gdy dane grafu istnieją; pusty graf pozostawia również pustą Analitykę.                                           |
+| Element sterowania | Do czego służy |
+| --- | --- |
+| **Nawigacja** | Przełączaj między widokami: **Vendor Overview** (połączeni dostawcy), **Vendor Intelligence** (tabela dostawców), **Document Journey** (etapy i warianty przetwarzania dokumentów) oraz **Anomalies** (nietypowe relacje). |
+| **Typ** | Wybierz rodzaje elementów, na których chcesz się skupić, np. Documents, Vendors, Purchase Orders czy Invoices. Wybrane typy ograniczają również wyniki wyszukiwania. |
+| **Statystyki wykresu** | Pokazuje liczbę węzłów (elementów) i krawędzi (połączeń) aktualnie dostępnych w grafie. W razie potrzeby tę sekcję można rozwinąć lub zwinąć. |
+| **Zaufanie** | Otwórz tę sekcję, aby ustawić minimalne zaufanie do relacji przy rozwijaniu węzła. Wyższa wartość zawęża wyświetlane połączenia. |
+| **Odbuduj wykres** | Uruchamia nowe obliczanie grafu. Poczekaj na zakończenie postępu, zanim ponownie wyszukasz. |
+| **Eksplorator grafów / Analityka** | Przełączaj między interaktywnym grafem a wykresami podsumowującymi. Analityka pokazuje liczby i wykresy, gdy dane grafu istnieją; pusty graf pozostawia również pustą Analitykę. |
 
-Jeśli musisz rozstrzygnąć różnicę między fakturą a zamówieniem, przejdź do ekranu [Dopasowanie zamówienia zakupu](../end-user-and-partner-section/end-user-section/purchase-order-matching/). Aby zobaczyć szersze wskaźniki poza grafem, zobacz [Panel Analityczny](../administration-and-setup/analytics-dashboard.md).
+Jeśli musisz rozstrzygnąć różnicę między fakturą a zamówieniem, przejdź do ekranu [Dopasowanie zamówienia zakupu](../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md). Aby zobaczyć szersze wskaźniki poza grafem, zobacz [Panel Analityczny](../administration-and-setup/analytics-dashboard.md).

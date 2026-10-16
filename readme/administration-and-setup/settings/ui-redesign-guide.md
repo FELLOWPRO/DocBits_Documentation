@@ -35,7 +35,7 @@ Les pages de paramètres comportant de nombreuses sections (comme les Paramètre
 
 La plupart des pages de paramètres, des boîtes de dialogue et des écrans d'outils affichent maintenant une petite icône **?** dans l'en-tête.
 
-<figure><img src="../../.gitbook/assets/ui-redesign-help-icon.png" alt="Icône d'aide dans un en-tête de page"><figcaption><p>L'icône d'aide ouvre la page de documentation correspondante dans un nouvel onglet.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ui-redesign-help-icon-fr.png" alt="Icône d'aide dans un en-tête de page"><figcaption><p>L'icône d'aide ouvre la page de documentation correspondante dans un nouvel onglet.</p></figcaption></figure>
 
 Un clic ouvre la page correspondante sur `docs.docbits.com` dans un nouvel onglet — sans devoir chercher la bonne page dans la documentation. L'icône respecte votre langue d'interface et ouvre la documentation traduite quand elle existe ; sinon, elle bascule sur l'anglais.
 

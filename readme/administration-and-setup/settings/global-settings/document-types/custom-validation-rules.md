@@ -1,5 +1,7 @@
 # Regole di convalida personalizzate
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/it.mp4" %}
+
 ## Panoramica
 
 Le regole di convalida personalizzate permettono a un amministratore di definire **controlli propri** sui dati che DocBits estrae da un documento, senza scrivere uno script e senza attendere una modifica del prodotto.

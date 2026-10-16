@@ -65,4 +65,4 @@ Se si hanno più chiavi di quante ne stiano in una pagina, usare i controlli di 
 
 Trattare la chiave come una password. Chiunque la possieda può operare sui documenti e sui dati della propria organizzazione.
 
-Vedere [Archiviazione sicura delle credenziali](../../../../overview-and-basics/secure-storage-of-credentials.md).
+Vedere [Archiviazione sicura delle credenziali](../../../../security/secure-storage-of-credentials.md).

@@ -4,7 +4,7 @@
 
 Le informazioni sull’archiviazione delle credenziali e su TLS negli endpoint pubblici sono state verificate il **16 ottobre 2026**. La pagina seguente descrive l’ambito confermato e i dettagli che richiedono ancora una conferma per lo specifico ambiente. Vedere [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md).
 
-I dettagli sulla crittografia a riposo sono stati verificati il **16 ottobre 2026** sulla base della documentazione di sicurezza DigitalOcean e dei metadati dei servizi. Vedere [Crittografia dei dati a riposo](../security/encryption-at-rest.md).
+I dettagli sulla crittografia a riposo sono stati verificati il **16 ottobre 2026** sulla base della documentazione di sicurezza DigitalOcean e dei metadati dei servizi. Vedere [Crittografia dei dati a riposo](encryption-at-rest.md).
 
 Ulteriori informazioni sulla sicurezza sono disponibili in [Cookie e archiviazione del browser](cookies-and-browser-storage.md), [Gestione delle vulnerabilità](vulnerability-management.md) e [Altri controlli di sicurezza](other-security-controls.md).
 
@@ -25,7 +25,7 @@ Ulteriori informazioni sulla sicurezza sono disponibili in [Cookie e archiviazio
 
 ### 1. Dove esattamente è ospitato l'ambiente di produzione?
 
-**Risposta:** L’ambiente di produzione UE è ospitato sull’infrastruttura cloud DigitalOcean a Francoforte, Germania. DocBits utilizza DigitalOcean Spaces per l’archiviazione e servizi gestiti PostgreSQL, OpenSearch e Valkey. DocBits è certificato ISO 27001. Vedere [Crittografia dei dati a riposo](../security/encryption-at-rest.md) e [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md) per l’ambito della crittografia.
+**Risposta:** L’ambiente di produzione UE è ospitato sull’infrastruttura cloud DigitalOcean a Francoforte, Germania. DocBits utilizza DigitalOcean Spaces per l’archiviazione e servizi gestiti PostgreSQL, OpenSearch e Valkey. DocBits è certificato ISO 27001. Vedere [Crittografia dei dati a riposo](encryption-at-rest.md) e [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md) per l’ambito della crittografia.
 
 **Stato:** ✅ Confermato
 
@@ -53,7 +53,7 @@ Calendario dei backup: Backup giornalieri, settimanali, trimestrali e annuali.
 
 **Stato:** ✅ Confermato
 
-**Note:** Calendario completo dei backup (giornaliero/settimanale/trimestrale/annuale) su due posizioni nell'UE. Tutti i dati rimangono all'interno dell'UE. Confermare la crittografia dei backup e la frequenza del test di ripristino. La crittografia dei backup dei database gestiti dal fornitore è descritta in [Crittografia dei dati a riposo](../security/encryption-at-rest.md); questo non verifica ogni copia del calendario generale dei backup.
+**Note:** Calendario completo dei backup (giornaliero/settimanale/trimestrale/annuale) su due posizioni nell'UE. Tutti i dati rimangono all'interno dell'UE. Confermare la crittografia dei backup e la frequenza del test di ripristino. La crittografia dei backup dei database gestiti dal fornitore è descritta in [Crittografia dei dati a riposo](encryption-at-rest.md); questo non verifica ogni copia del calendario generale dei backup.
 
 ---
 
@@ -75,7 +75,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Risposta:** Gli endpoint pubblici `app.docbits.com`, `auth.docbits.com` e `api.docbits.com` supportano HTTPS con TLS 1.2 e TLS 1.3. Le verifiche del 16 ottobre 2026 hanno confermato il rifiuto di TLS 1.0 e TLS 1.1. Le password e le chiavi create tramite la Gestione delle chiavi API sono protette mediante hashing unidirezionale. L’hashing è distinto dalla crittografia di database, archivi e backup.
 
-**A riposo:** DigitalOcean Managed Databases utilizza la crittografia dell’intero volume con LUKS e AES-256-XTS; i suoi backup gestiti utilizzano AES-256-CTR. Spaces utilizza AES-XTS a 256 bit sui dischi fisici. [Crittografia dei dati a riposo](../security/encryption-at-rest.md) descrive metodi, gestione delle chiavi e copertura dei backup.
+**A riposo:** DigitalOcean Managed Databases utilizza la crittografia dell’intero volume con LUKS e AES-256-XTS; i suoi backup gestiti utilizzano AES-256-CTR. Spaces utilizza AES-XTS a 256 bit sui dischi fisici. [Crittografia dei dati a riposo](encryption-at-rest.md) descrive metodi, gestione delle chiavi e copertura dei backup.
 
 **Stato:** ✅ Parziale
 

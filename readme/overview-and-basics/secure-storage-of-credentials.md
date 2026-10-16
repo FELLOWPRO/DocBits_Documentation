@@ -47,6 +47,24 @@ The public DocBits endpoints below support **TLS 1.2 and TLS 1.3** over HTTPS. C
 | `auth.docbits.com` | Authentication service | TLS 1.2 and TLS 1.3 |
 | `api.docbits.com` | API | TLS 1.2 and TLS 1.3 |
 
+### What types of encryption are supported in transit?
+
+| Questionnaire item | Answer for the public endpoints above |
+| --- | --- |
+| Is TLS 1.1 supported? | **No.** Connections using TLS 1.1 are rejected. |
+| Is TLS 1.2 supported? | **Yes.** |
+| Is TLS 1.3 supported? | **Yes.** |
+
+The following encryption methods were successfully negotiated on **all three endpoints** in certificate-validated tests on 16 October 2026:
+
+| Encryption method | Symmetric encryption key length | TLS versions verified |
+| --- | --- | --- |
+| AES-128-GCM | 128 bits | TLS 1.2 and TLS 1.3 |
+| AES-256-GCM | 256 bits | TLS 1.2 and TLS 1.3 |
+| ChaCha20-Poly1305 | 256 bits | TLS 1.3 |
+
+These methods provide authenticated encryption, protecting the confidentiality and integrity of data in transit. The negotiated method depends on the capabilities and configuration of the client and server. The bit lengths above refer to the symmetric data-encryption keys, independently of certificate key sizes. The tested TLS 1.2 cipher suites use ECDHE for ephemeral key exchange.
+
 This verification covers connections to these public endpoints, including clients or other servers connecting to them. It does not establish the protocol or encryption settings of every internal service connection, database connection, regional endpoint, or external integration. Those connections require confirmation for the applicable deployment and integration.
 
 ## Encryption of stored account information

@@ -38,6 +38,34 @@ The comparison below covers newly available former beta features, new capabiliti
 
 For availability in your environment and release-channel switching, see the [release lifecycle](../docbits-release-lifecycle-strategy.md).
 
+## Watch the feature videos
+
+Use these walkthroughs alongside the release notes to understand the related features and their configuration. Choose an English or German video below.
+
+| Topic | English video | German video |
+| --- | --- | --- |
+| Choose the Right Automation — including where PO Matching Rules fit | [Watch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4) | [Ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/de.mp4) |
+| Transformation Rules | [Watch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4) | [Ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/de.mp4) |
+| Custom Validation Rules | [Watch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4) | [Ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/de.mp4) |
+| Layouts and selection rules | [Watch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/en.mp4) | [Ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/de.mp4) |
+| Touchless Intelligence | [Watch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/en.mp4) | [Ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/de.mp4) |
+| E-Invoice Validation | [Watch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/en.mp4) | [Ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/de.mp4) |
+| Users and administrator access | [Watch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/en.mp4) | [Ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/de.mp4) |
+| Sub-organisations | [Watch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/en.mp4) | [Ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/de.mp4) |
+
+### AI Table: six short videos
+
+These videos are in English. Watch the full series or choose the topic you need.
+
+1. [Read the AI table](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part1/v1/en.mp4)
+2. [Fix a column and teach DocBits](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part2/v1/en.mp4)
+3. [Three typical problems](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part3/v1/en.mp4)
+4. [Discount, tax and zero-quantity lines](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part4/v1/en.mp4)
+5. [What the AI already reads correctly](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part5/v1/en.mp4)
+6. [The Assistant and who can change what](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part6/v2/en.mp4)
+
+For screenshots and detailed instructions, see the [AI Table guide](../../end-user-and-partner-section/end-user-section/ai-table/README.md).
+
 ## Validation Assistant: help with the document in front of you
 
 * **Find what blocks progress.** Ask why a document cannot continue. The assistant identifies the affected fields, explains the problem and offers a jump to the field or table cell. It uses the current document and the user's access rights.

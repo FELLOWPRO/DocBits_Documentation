@@ -2,9 +2,9 @@
 
 Cette page explique comment obtenir un compte DocBits et comment vous connecter lorsque vous n'avez pas votre mot de passe :
 
-* [Inscription](getting-access-and-signing-in.md#inscription) — créez votre propre compte DocBits.
-* [Mot de passe oublié](getting-access-and-signing-in.md#mot-de-passe-oublie) — réinitialisez votre mot de passe avec un lien de réinitialisation.
-* [Premier mot de passe pour les comptes créés par un administrateur](getting-access-and-signing-in.md#premier-mot-de-passe-pour-les-comptes-crees-par-un-administrateur) — définissez le premier mot de passe d'un compte créé pour vous par votre administrateur.
+* [Inscription](#inscription) — créez votre propre compte DocBits.
+* [Mot de passe oublié](#mot-de-passe-oublie) — réinitialisez votre mot de passe avec un lien de réinitialisation.
+* [Premier mot de passe pour les comptes créés par un administrateur](#premier-mot-de-passe-pour-les-comptes-crees-par-un-administrateur) — définissez le premier mot de passe d'un compte créé pour vous par votre administrateur.
 
 La connexion avec un compte existant et l'authentification à deux facteurs sont décrites dans [Authentification à deux facteurs (2FA)](../../overview-and-basics/two-factor-authentication.md). Utilisez le menu des langues en haut à droite de ces formulaires si vous avez besoin d'une autre langue d'affichage.
 
@@ -12,7 +12,7 @@ La connexion avec un compte existant et l'authentification à deux facteurs sont
 
 Vous pouvez créer vous-même un compte DocBits sur la page d'inscription. Ouvrez-la depuis le lien **Registre** sur l'écran de connexion, ou accédez à `https://app.docbits.com/register` (utilisez l'adresse web communiquée à votre organisation).
 
-<figure><img src="../../.gitbook/assets/dbdc742-getting-access-register-form-fr-20261011.png" alt="Le formulaire d&#x27;inscription DocBits avec des champs vides"><figcaption><p>Le formulaire d'inscription. Tous les champs sont obligatoires sauf indication contraire.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dbdc742-getting-access-register-form-fr-20261011.png" alt="Le formulaire d'inscription DocBits avec des champs vides"><figcaption><p>Le formulaire d'inscription. Tous les champs sont obligatoires sauf indication contraire.</p></figcaption></figure>
 
 Remplissez le formulaire :
 
@@ -51,13 +51,14 @@ DocBits stocke les mots de passe sous forme de hachages salés à sens unique. U
 Si vous avez oublié votre mot de passe :
 
 1. Sur l'écran de connexion, cliquez sur **Mot de passe oublié ?**.
-2.  Sur la page **Mot de passe oublié**, saisissez votre adresse **E-mail** et cliquez sur **Réinitialiser le mot de passe**. Si un widget reCAPTCHA est affiché, complétez-le d'abord.
+2. Sur la page **Mot de passe oublié**, saisissez votre adresse **E-mail** et cliquez sur **Réinitialiser le mot de passe**. Si un widget reCAPTCHA est affiché, complétez-le d'abord.
 
-    <figure><img src="../../.gitbook/assets/dbdc742-getting-access-forgot-password-form-fr-20261011.png" alt="La page Mot de passe oublié avec le champ e-mail"><figcaption><p>La page Mot de passe oublié. Saisissez l'e-mail de votre compte et DocBits vous enverra un lien de réinitialisation.</p></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/dbdc742-getting-access-forgot-password-form-fr-20261011.png" alt="La page Mot de passe oublié avec le champ e-mail"><figcaption><p>La page Mot de passe oublié. Saisissez l'e-mail de votre compte et DocBits vous enverra un lien de réinitialisation.</p></figcaption></figure>
 
-    Si vous ne souhaitez pas réinitialiser votre mot de passe, cliquez sur **Retour à la connexion** pour revenir à la page de connexion.
+   Si vous ne souhaitez pas réinitialiser votre mot de passe, cliquez sur **Retour à la connexion** pour revenir à la page de connexion.
+
 3. DocBits vous envoie par e-mail un **lien de réinitialisation de mot de passe**. Ouvrez l'e-mail et cliquez sur le lien — il ouvre la page de réinitialisation.
-4. Saisissez votre **nouveau mot de passe deux fois**. Les mêmes règles de mot de passe que lors de l'[inscription](getting-access-and-signing-in.md#regles-de-mot-de-passe) s'appliquent, et une liste de contrôle indique les règles déjà remplies.
+4. Saisissez votre **nouveau mot de passe deux fois**. Les mêmes règles de mot de passe que lors de l'[inscription](#regles-de-mot-de-passe) s'appliquent, et une liste de contrôle indique les règles déjà remplies.
 5. Cliquez sur **Réinitialiser le mot de passe**. DocBits confirme la modification et vous ramène à l'écran de connexion, où vous pouvez vous connecter avec le nouveau mot de passe.
 
 {% hint style="info" %}
@@ -66,12 +67,12 @@ Les liens de réinitialisation expirent après un court délai. Si le lien ne fo
 
 ## Premier mot de passe pour les comptes créés par un administrateur
 
-Lorsque votre administrateur vous ajoute comme utilisateur (voir [Utilisateurs](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/)), vous recevez un e-mail avec vos identifiants de connexion et un lien pour définir votre **premier mot de passe**. Le lien ouvre la page **Définir le mot de passe** :
+Lorsque votre administrateur vous ajoute comme utilisateur (voir [Utilisateurs](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)), vous recevez un e-mail avec vos identifiants de connexion et un lien pour définir votre **premier mot de passe**. Le lien ouvre la page **Définir le mot de passe** :
 
 <figure><img src="../../.gitbook/assets/dbdc742-getting-access-set-password-form-fr-20261011.png" alt="La page Définir le mot de passe avec le message de bienvenue"><figcaption><p>La page Définir le mot de passe, affichée après la création de votre compte par un administrateur.</p></figcaption></figure>
 
 1. Cliquez sur le lien dans l'e-mail d'invitation. La page vous accueille avec « Bienvenue sur DocBits ! Votre compte a été créé. Veuillez définir votre mot de passe pour commencer. »
-2. Saisissez votre mot de passe deux fois — les mêmes [règles de mot de passe](getting-access-and-signing-in.md#regles-de-mot-de-passe) s'appliquent.
+2. Saisissez votre mot de passe deux fois — les mêmes [règles de mot de passe](#regles-de-mot-de-passe) s'appliquent.
 3. Cliquez sur **Définir le mot de passe**. Vous pouvez ensuite vous connecter avec votre e-mail et ce mot de passe.
 
 Les icônes en forme d'œil affichent ou masquent ce que vous avez saisi. Si vous partez avant de définir un mot de passe, **Aller à la connexion** ramène à la page de connexion.

@@ -1,6 +1,6 @@
 # Model Training
 
-<figure><img src="../../../../../.gitbook/assets/docbits_train_model_action.png" alt="Docbits Model Training Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_model_training_overview.png" alt="Docbits Model Training Overview"><figcaption></figcaption></figure>
 
 #### Overview
 

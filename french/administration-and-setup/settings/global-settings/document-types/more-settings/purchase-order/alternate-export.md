@@ -19,7 +19,7 @@ Cette page explique comment configurer cette option.
 
 Une fois le paramètre activé, vous pouvez choisir un statut de document et attribuer une configuration d'exportation prédéfinie.
 
-Plus d'informations sur la configuration des exportations peuvent être trouvées [ici](../../../../document-processing/export/).
+Plus d'informations sur la configuration des exportations peuvent être trouvées [ici](../../../../document-processing/export.md).
 
 Vous pouvez choisir parmi les statuts suivants :
 

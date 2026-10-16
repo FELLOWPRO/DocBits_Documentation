@@ -1,4 +1,4 @@
-# Auto Accounting
+# Comptabilité automatique avec Infor LN
 
 Utilisez ce guide lorsqu'un administrateur Infor LN souhaite que DocBits utilise les données maîtres financières importées pour la comptabilité automatique. L'ancienne page montrait 48 écrans d'un mandant Infor particulier. Les noms de points de connexion, les mappages, les identifiants et les adresses d'endpoint de ce mandant ne constituent pas une configuration réutilisable.
 
@@ -8,9 +8,9 @@ Ouvrez **Paramètres → Module → Commande et financement → Comptabilité au
 
 Les captures suivantes proviennent de la Sandbox synthétique **DocBits Documentation Test A**. Dans cette organisation, **LN** était sélectionné et la Comptabilité automatique était **désactivée**. Le menu a été ouvert sans sélectionner une autre valeur ; aucun paramètre n'a été enregistré.
 
-<figure><img src="../../../.gitbook/assets/dbdc-620-auto-accounting-off-fr.png" alt="Paramètres DocBits français Commande et financement avec la Comptabilité automatique désactivée et le type LN sélectionné"><figcaption><p>Repérer la Comptabilité automatique et vérifier le type sélectionné avant de l'activer.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc782-auto-accounting-settings-fr-20261012.png" alt="Paramètres DocBits français Commande et financement avec la Comptabilité automatique désactivée et le type LN sélectionné"><figcaption><p>Repérer la Comptabilité automatique et vérifier le type sélectionné avant de l'activer.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc766-auto-accounting-type-options-fr-20261012.png" alt="Menu Type de la Comptabilité automatique dans DocBits en français, avec les choix LN et M3"><figcaption><p>LN et M3 sont les types disponibles dans cette Sandbox ; aucune sélection n'a été modifiée.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc782-auto-accounting-type-options-fr-20261012.png" alt="Menu Type de la Comptabilité automatique dans DocBits en français, avec les choix LN et M3"><figcaption><p>LN et M3 sont les types disponibles dans cette Sandbox ; aucune sélection n'a été modifiée.</p></figcaption></figure>
 
 ## Préparer LN et ION
 

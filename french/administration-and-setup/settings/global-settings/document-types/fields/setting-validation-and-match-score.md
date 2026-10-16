@@ -16,9 +16,9 @@ Ce paramètre vous permet de définir des règles qui vérifient si les données
 * Activez l'option Validation forcée.
 * Définissez les règles de validation à vérifier. Il peut s'agir, par exemple, de limites numériques, d'expressions régulières pour les champs de texte ou de relations avec d'autres champs.
 
-<figure><img src="../../../../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (94).png" alt="Docbits Decide Column Necessity" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_decide_column_necessity.png" alt="Docbits Decide Column Necessity" width="375"><figcaption></figcaption></figure>
 
 **Impact :**
 
@@ -26,7 +26,7 @@ Ce paramètre vous permet de définir des règles qui vérifient si les données
 
 ### Score de correspondance (Match Score) :
 
-<figure><img src="../../../../../.gitbook/assets/image (114).png" alt="" width="116"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (121).png" alt="" width="116"><figcaption></figcaption></figure>
 
 Ce paramètre vous permet de faire correspondre la valeur saisie par rapport à une valeur de référence prédéfinie.
 

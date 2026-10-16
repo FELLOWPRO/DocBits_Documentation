@@ -44,7 +44,7 @@ Voir ici ajouter [Script dans DocBits](../../../administration-and-setup/setting
 
 ### **Champs obligatoires :**
 
-<figure><img src="../../../.gitbook/assets/validation_screen6.png" alt="Champs obligatoires"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_required_fields.png" alt="Champs obligatoires"><figcaption></figcaption></figure>
 
 Les champs à vérifier affichent une bordure colorée ou une icône d'information. Dans l'exemple ci-dessous, le champ **Numéro de la facture** a une bordure rouge et une icône d'avertissement. La valeur est visible sur la facture à droite, mais DocBits ne l'a pas extraite du document. Sélectionnez le numéro sur le document ou corrigez le champ, puis enregistrez le document.
 
@@ -54,7 +54,7 @@ Survolez ou sélectionnez l'icône d'information à côté d'un champ pour lire 
 
 ## Tableau extrait (éléments de ligne)
 
-<figure><img src="../../../.gitbook/assets/validation_screen_line_items_table.png" alt="Tableau des éléments de ligne sur l&#x27;écran de validation avec la barre d&#x27;outils du tableau"><figcaption><p>Le tableau extrait sous les champs d'en-tête</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_line_items_table.png" alt="Tableau des éléments de ligne sur l'écran de validation avec la barre d'outils du tableau"><figcaption><p>Le tableau extrait sous les champs d'en-tête</p></figcaption></figure>
 
 Sous les champs d'en-tête, DocBits affiche le tableau des éléments de ligne du document : une ligne par ligne de facture, une colonne par [colonne de tableau](../../../administration-and-setup/settings/global-settings/document-types/table-columns.md) configurée pour le type de document. Lorsqu'un type de document comporte plusieurs tableaux (par exemple les articles et les frais), chaque tableau a son propre onglet au-dessus de la grille.
 
@@ -62,11 +62,11 @@ Sous les champs d'en-tête, DocBits affiche le tableau des éléments de ligne d
 
 Au-dessus de la grille figure un onglet par chemin d'extraction activé dans l'organisation :
 
-| Onglet                          | Signification                                                                                                                                                                                                                                                                                                                   |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Tableau extrait**             | Extraction basée sur des règles (paramètre _Extraction de tableaux_). Pour un fournisseur dont le tableau a été entraîné, ces lignes proviennent des règles enregistrées et sont extraites de la même manière sur chaque document de ce fournisseur ; pour un fournisseur non entraîné, l'onglet peut être vide.                |
-| **Tableau extrait par IA**      | L'extraction de tableau par IA (paramètre _Extraction de tableaux par IA_). Rempli lorsque le fournisseur n'a pas de règles enregistrées, et pour les colonnes marquées _Utiliser l'IA_ même lorsque des règles existent. Une info-bulle _AI table not found_ sur l'onglet signifie que l'IA n'a rien renvoyé pour ce document. |
-| **Tableaux de bon de commande** | Uniquement dans le générateur de mise en page : les lignes du bon de commande utilisées pour la correspondance.                                                                                                                                                                                                                 |
+| Onglet | Signification |
+|---|---|
+| **Tableau extrait** | Extraction basée sur des règles (paramètre *Extraction de tableaux*). Pour un fournisseur dont le tableau a été entraîné, ces lignes proviennent des règles enregistrées et sont extraites de la même manière sur chaque document de ce fournisseur ; pour un fournisseur non entraîné, l'onglet peut être vide. |
+| **Tableau extrait par IA** | L'extraction de tableau par IA (paramètre *Extraction de tableaux par IA*). Rempli lorsque le fournisseur n'a pas de règles enregistrées, et pour les colonnes marquées *Utiliser l'IA* même lorsque des règles existent. Une info-bulle *AI table not found* sur l'onglet signifie que l'IA n'a rien renvoyé pour ce document. |
+| **Tableaux de bon de commande** | Uniquement dans le générateur de mise en page : les lignes du bon de commande utilisées pour la correspondance. |
 
 Si aucun de ces onglets n'apparaît, les deux paramètres de tableau sont désactivés pour l'organisation (Paramètres → Traitement des documents → Classification et extraction). Le niveau d'IA qui lit le tableau est défini par organisation et peut être remplacé par fournisseur, voir [Modèle d'IA spécifique au fournisseur](supplier-specific-ai-model-for-field-and-table-extraction.md).
 
@@ -79,33 +79,33 @@ Si aucun de ces onglets n'apparaît, les deux paramètres de tableau sont désac
 * **Restaurer une colonne de tableau** : rétablit une colonne que vous aviez retirée de la vue pour ce document.
 * **Supprimer le tableau** : efface toutes les lignes de ce tableau sur ce document. La configuration n'est pas modifiée.
 * **Ajouter une nouvelle colonne de tableau** (administrateurs) : la même boîte de dialogue que dans les paramètres des colonnes de tableau, sans quitter le document.
-* **Étiquettes** (tableau AI uniquement) : de courtes indications textuelles pour l'IA, par exemple _« la dernière colonne est le montant net »_. Voir [Étiquettes de tableau AI](../ai-table/ai-table-tags.md).
-* **Appliquer** / **Enregistrer** / **Supprimer** à côté des étiquettes : _Appliquer_ relance le tableau AI pour ce document avec les étiquettes et les modifications de colonnes que vous avez faites, sans rien enregistrer (si le document comporte des lignes rapprochées avec un bon de commande, DocBits avertit que ces correspondances seront supprimées) ; _Enregistrer les règles_ enregistre le mappage de colonnes et les étiquettes actuels pour ce fournisseur ; _Supprimer les règles_ les supprime et relance l'extraction par IA pour ce document.
+* **Étiquettes** (tableau AI uniquement) : de courtes indications textuelles pour l'IA, par exemple *« la dernière colonne est le montant net »*. Voir [Étiquettes de tableau AI](../ai-table/ai-table-tags.md).
+* **Appliquer** / **Enregistrer** / **Supprimer** à côté des étiquettes : *Appliquer* relance le tableau AI pour ce document avec les étiquettes et les modifications de colonnes que vous avez faites, sans rien enregistrer (si le document comporte des lignes rapprochées avec un bon de commande, DocBits avertit que ces correspondances seront supprimées) ; *Enregistrer les règles* enregistre le mappage de colonnes et les étiquettes actuels pour ce fournisseur ; *Supprimer les règles* les supprime et relance l'extraction par IA pour ce document.
 * **Exporter** : télécharge le tableau sous forme de fichier CSV.
-* **Aller à la vue d'extraction de tableau** : ouvre l'entraînement de tableau pour ce document. Utilisez-la lorsque le même fournisseur donne systématiquement de mauvais résultats : tracez le tableau une fois, mappez les colonnes et cliquez sur _Enregistrer les règles_ ; à partir de là, les lignes apparaissent dans l'onglet _Tableau extrait_. Voir [Training Line Fields / Table Training](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/).
+* **Aller à la vue d'extraction de tableau** : ouvre l'entraînement de tableau pour ce document. Utilisez-la lorsque le même fournisseur donne systématiquement de mauvais résultats : tracez le tableau une fois, mappez les colonnes et cliquez sur *Enregistrer les règles* ; à partir de là, les lignes apparaissent dans l'onglet *Tableau extrait*. Voir [Training Line Fields / Table Training](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
 
 {% hint style="info" %}
-Si le tableau a été extrait par l'IA et que vous ouvrez l'entraînement de tableau, DocBits demande _Table is already extracted by AI. Do you want to train manually?_ Une fois les règles enregistrées, le tableau AI n'est plus utilisé pour ce fournisseur.
+Si le tableau a été extrait par l'IA et que vous ouvrez l'entraînement de tableau, DocBits demande *Table is already extracted by AI. Do you want to train manually?* Une fois les règles enregistrées, le tableau AI n'est plus utilisé pour ce fournisseur.
 {% endhint %}
 
 ### Réextraire le tableau
 
-* **Même document, tableau AI :** ajoutez ou modifiez des étiquettes et cliquez sur **Appliquer** ; le tableau AI est reconstruit pour ce document uniquement. Pour supprimer aussi les étiquettes et le formatage enregistrés pour le fournisseur, cliquez sur **Supprimer** (_Supprimer les règles_) : DocBits confirme _Rules has been deleted successfully_ et relance l'extraction par IA.
-* **Même document, règles entraînées :** ouvrez _Aller à la vue d'extraction de tableau_, corrigez le tableau et cliquez sur _Enregistrer et réextraire_.
-* **Document entier (en-tête et tableau) :** Tableau de bord → menu du document → _Redémarrer_. Nécessaire après qu'un administrateur a modifié les colonnes de tableau ou les paramètres d'extraction.
+* **Même document, tableau AI :** ajoutez ou modifiez des étiquettes et cliquez sur **Appliquer** ; le tableau AI est reconstruit pour ce document uniquement. Pour supprimer aussi les étiquettes et le formatage enregistrés pour le fournisseur, cliquez sur **Supprimer** (*Supprimer les règles*) : DocBits confirme *Rules has been deleted successfully* et relance l'extraction par IA.
+* **Même document, règles entraînées :** ouvrez *Aller à la vue d'extraction de tableau*, corrigez le tableau et cliquez sur *Enregistrer et réextraire*.
+* **Document entier (en-tête et tableau) :** Tableau de bord → menu du document → *Redémarrer*. Nécessaire après qu'un administrateur a modifié les colonnes de tableau ou les paramètres d'extraction.
 
 ### Ce qui bloque l'approbation
 
 Le tableau est contrôlé lors de l'enregistrement ou de l'approbation. Une cellule rouge ou un message sous le tableau signifie l'une des situations suivantes :
 
-| Message                                                               | Cause                                                                                                                                                         | Que faire                                                                                                                                                                                                                                                                                                                           |
-| --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Colonne obligatoire vide                                              | Une colonne marquée _Obligatoire_ n'a pas de valeur dans cette ligne.                                                                                         | Remplissez la cellule, ou demandez à un administrateur si la colonne doit vraiment être obligatoire.                                                                                                                                                                                                                                |
-| _Line total does not match quantity x unit price (expected …, got …)_ | `quantité × prix unitaire + frais − remise` s'écarte du total de ligne de plus de 0,02. Souvent, l'une des quatre valeurs a été lue dans la mauvaise colonne. | Corrigez la valeur erronée par rapport au document ; si une colonne telle que _Frais_ est systématiquement remplie avec la mauvaise valeur, prévenez votre administrateur (voir la section Dépannage de la page [Colonnes de tableau](../../../administration-and-setup/settings/global-settings/document-types/table-columns.md)). |
-| _Line items add up to … but the net total is …_                       | La somme des totaux de ligne diffère du montant net de l'en-tête.                                                                                             | Recherchez une ligne manquante ou en double, ou un montant d'en-tête mal lu.                                                                                                                                                                                                                                                        |
-| _Line Item Table is missing Mandatory column for PO_                  | La correspondance de bon de commande nécessite le numéro d'article, le prix unitaire, la quantité et le montant total ; l'une de ces colonnes est masquée.    | Administrateur : réaffichez la colonne sous Colonnes de tableau.                                                                                                                                                                                                                                                                    |
+| Message | Cause | Que faire |
+|---|---|---|
+| Colonne obligatoire vide | Une colonne marquée *Obligatoire* n'a pas de valeur dans cette ligne. | Remplissez la cellule, ou demandez à un administrateur si la colonne doit vraiment être obligatoire. |
+| *Line total does not match quantity x unit price (expected …, got …)* | `quantité × prix unitaire + frais − remise` s'écarte du total de ligne de plus de 0,02. Souvent, l'une des quatre valeurs a été lue dans la mauvaise colonne. | Corrigez la valeur erronée par rapport au document ; si une colonne telle que *Frais* est systématiquement remplie avec la mauvaise valeur, prévenez votre administrateur (voir la section Dépannage de la page [Colonnes de tableau](../../../administration-and-setup/settings/global-settings/document-types/table-columns.md)). |
+| *Line items add up to … but the net total is …* | La somme des totaux de ligne diffère du montant net de l'en-tête. | Recherchez une ligne manquante ou en double, ou un montant d'en-tête mal lu. |
+| *Line Item Table is missing Mandatory column for PO* | La correspondance de bon de commande nécessite le numéro d'article, le prix unitaire, la quantité et le montant total ; l'une de ces colonnes est masquée. | Administrateur : réaffichez la colonne sous Colonnes de tableau. |
 
-Un administrateur peut désactiver tous les contrôles de tableau pour un type de document avec _Ignorer la validation du tableau_ (Types de documents → Plus de paramètres) ; les écarts de ligne et les colonnes obligatoires vides ne sont alors plus signalés.
+Un administrateur peut désactiver tous les contrôles de tableau pour un type de document avec *Ignorer la validation du tableau* (Types de documents → Plus de paramètres) ; les écarts de ligne et les colonnes obligatoires vides ne sont alors plus signalés.
 
 En savoir plus sur les contrôles : [Vérifications automatiques sur l'écran de validation](automatic-checks-on-the-validation-screen.md) et [Dépannage de l'extraction de table](../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md).
 
@@ -151,9 +151,9 @@ Pour partager des informations internes, vous pouvez créer des tâches et les a
 
 ### **Mode annotation:**
 
-<figure><img src="../../../.gitbook/assets/image (34).png" alt="Annotation Mode Button" width="187"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_annotation_mode.png" alt="Annotation Mode Button" width="187"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (34).png" alt="Annotation Mode Example"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/annotation_mode_example.png" alt="Annotation Mode Example"><figcaption></figcaption></figure>
 
 {% embed url="https://youtu.be/ay0gGtwlqRE" %}
 DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Without Annotations

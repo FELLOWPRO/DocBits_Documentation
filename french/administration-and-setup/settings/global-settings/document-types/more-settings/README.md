@@ -13,18 +13,18 @@
 
 Le fil d'Ariane en haut de la page affiche **Paramètres / Types de documents / Plus de paramètres**. L'assistant de paramètres, à droite de la page, explique les paramètres de la carte ouverte.
 
-| Carte                                                     | Ce que vous y définissez                                                                             |
-| --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| Bon de commande                                           | Correspondance des BC, tolérances, exportation des lignes de BC, numéros d'articles des fournisseurs |
-| Gérer les mises en page                                   | Interrupteur pour l'aperçu Gérer les mises en page                                                   |
-| Règles de validation personnalisées                       | Vos propres règles de validation pour ce type de document                                            |
-| Règles de transformation                                  | Règles qui lisent une valeur, la modifient par étapes et la réécrivent                               |
-| Approbation et rejet                                      | Flux d'approbation et formulaires En révision et Rejet                                               |
-| [Vérification fiscale Vertex](vertex-tax-verification.md) | Concevoir le formulaire de la vérification fiscale Vertex                                            |
-| Validation des factures électroniques                     | Validation des factures XRechnung, ZUGFeRD et Factur-X                                               |
-| Extraction de table                                       | Ignorer la validation des tableaux extraits                                                          |
-| Paramètres d'exportation                                  | Exportation multiple, format PDF, exportation alternative                                            |
-| Détection des doublons                                    | Détecter et bloquer les documents en double                                                          |
+| Carte | Ce que vous y définissez |
+| ----- | ------------------------ |
+| Bon de commande | Correspondance des BC, tolérances, exportation des lignes de BC, numéros d'articles des fournisseurs |
+| Gérer les mises en page | Interrupteur pour l'aperçu Gérer les mises en page |
+| Règles de validation personnalisées | Vos propres règles de validation pour ce type de document |
+| Règles de transformation | Règles qui lisent une valeur, la modifient par étapes et la réécrivent |
+| Approbation et rejet | Flux d'approbation et formulaires En révision et Rejet |
+| [Vérification fiscale Vertex](vertex-tax-verification.md) | Concevoir le formulaire de la vérification fiscale Vertex |
+| Validation des factures électroniques | Validation des factures XRechnung, ZUGFeRD et Factur-X |
+| Extraction de table | Ignorer la validation des tableaux extraits |
+| Paramètres d'exportation | Exportation multiple, format PDF, exportation alternative |
+| Détection des doublons | Détecter et bloquer les documents en double |
 
 ## Bon de commande
 
@@ -51,7 +51,7 @@ Les règles de correspondance des BC sont plus qu'une liste. DocBits peut dessin
 1. Dans la carte **Bon de commande**, activez **Correspondance des commandes côté serveur** et cliquez sur **Configurer les règles de correspondance des commandes d'achat**.
 2. Cliquez sur **Ensemble de règles sous forme de diagramme** en haut de la page. Le diagramme s'ouvre dans un panneau à côté des règles.
 
-<figure><img src="../../../../../.gitbook/assets/po-match-rules-diagram-fr.png" alt="Le diagramme de l&#x27;ensemble de règles avec cinq phases, de Single match validation à Fallback logic"><figcaption><p>L'ensemble de règles sous forme de diagramme. Cinq phases, de haut en bas.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/po-match-rules-diagram-fr.png" alt="Le diagramme de l'ensemble de règles avec cinq phases, de Single match validation à Fallback logic"><figcaption><p>L'ensemble de règles sous forme de diagramme. Cinq phases, de haut en bas.</p></figcaption></figure>
 
 Lisez le diagramme de haut en bas. DocBits essaie les phases dans cet ordre : **Single match validation**, **Multi match validation**, **Total match validation**, **Single mismatch validation** et **Fallback logic**. Chaque phase comporte jusqu'à trois passages : **Exact match for all rules**, **Tolerance-based match** et **Package criteria**. Une flèche verte signifie qu'une correspondance a été trouvée et que le traitement s'arrête. Une flèche rouge signifie qu'il n'y a pas de correspondance, donc DocBits poursuit avec l'étape suivante. À la fin, le résultat est **Correspondance trouvée** ou **Aucun résultat trouvé**.
 
@@ -64,7 +64,7 @@ Sous le diagramme, le panneau répertorie les **Règles par ordre de priorité, 
 * Le passage **1.1 Exact match for all rules** échoue, car 10.40 n'est pas 10.00. La flèche rouge mène au passage suivant.
 * Le passage **1.2 Tolerance-based match** réussit. L'écart est de 4 %, ce qui est dans la limite de 5 %. La flèche verte mène à **Correspondance trouvée**, et le traitement s'arrête.
 
-Dans le diagramme, c'est le chemin 1.1, puis 1.2, puis **Correspondance trouvée**. Pour le chemin suivi par un seul document, voir [Touchless Intelligence : Diagnostic du rapprochement avec le BC](../../../../analytics-dashboard/touchless-intelligence/touchless-po-matching-diagnosis.md). Pour tous les détails de la page des règles, voir [Règles de Correspondance des Bons de Commande](purchase-order/purchase-order-matching-rules.md).
+Dans le diagramme, c'est le chemin 1.1, puis 1.2, puis **Correspondance trouvée**. Pour le chemin suivi par un seul document, voir [Touchless Intelligence : Diagnostic du rapprochement avec le BC](../../../../touchless-po-matching-diagnosis.md). Pour tous les détails de la page des règles, voir [Règles de Correspondance des Bons de Commande](purchase-order/purchase-order-matching-rules.md).
 
 ### Paramètre de tolérance PO
 
@@ -78,7 +78,7 @@ Lorsque l'attribut de type de document `CUSTOM_RANGE_FOR_PO_TOLERANCE` est activ
 
 ### Carte des numéros d'articles des fournisseurs
 
-<figure><img src="../../../../../.gitbook/assets/doc-type-settings-po-supplier-item-map-fr.png" alt="Le tableau Carte des numéros d&#x27;articles des fournisseurs"><figcaption><p>La Carte des numéros d'articles des fournisseurs.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/doc-type-settings-po-supplier-item-map-fr.png" alt="Le tableau Carte des numéros d'articles des fournisseurs"><figcaption><p>La Carte des numéros d'articles des fournisseurs.</p></figcaption></figure>
 
 La [**Carte des numéros d'articles des fournisseurs**](purchase-order/supplier-item-number-map-admin-documentation.md) associe les numéros d'articles des fournisseurs à vos numéros d'articles internes, afin que les lignes correspondent même lorsque le fournisseur utilise ses propres numéros. Recherchez par colonne pour trouver une entrée.
 
@@ -86,7 +86,7 @@ La [**Carte des numéros d'articles des fournisseurs**](purchase-order/supplier-
 
 Trois cartes se trouvent directement sous la carte Bon de commande :
 
-* **Gérer les mises en page** active l'aperçu Gérer les mises en page pour ce type de document. Voir le [Gestionnaire de mises en page](../layout-manager/).
+* **Gérer les mises en page** active l'aperçu Gérer les mises en page pour ce type de document. Voir le [Gestionnaire de mises en page](../layout-manager/README.md).
 * **Règles de validation personnalisées** active vos propres règles de validation. **Gérer les règles de validation** les ouvre. Voir [Règles de validation personnalisées](../custom-validation-rules.md).
 * **Règles de transformation** active les règles de transformation. **Gérer les règles de transformation** les ouvre. Voir [Règles de transformation](../transformation-rules.md).
 
@@ -106,7 +106,7 @@ La carte **Approbation et rejet** contient le flux d'approbation et les formulai
 * **Formulaire de conception en cours d'examen** : Configure la mise en page du formulaire de révision avec le **Module de création de mise en page**.
 * **Concevoir le formulaire de rejet** : Configure la mise en page du formulaire de rejet avec le **Module de création de mise en page**.
 
-Pour le **Module de création de mise en page**, voir le [Gestionnaire de mises en page](../layout-manager/).
+Pour le **Module de création de mise en page**, voir le [Gestionnaire de mises en page](../layout-manager/README.md).
 
 ## Vérification fiscale Vertex
 
@@ -114,7 +114,7 @@ La carte **Vérification fiscale Vertex** contient **Vérification fiscale du so
 
 ## Validation des factures électroniques
 
-La carte **Validation des factures électroniques** active la validation des factures électroniques entrantes et vous permet de décider si le fournisseur est informé lorsqu'une facture est rejetée. Voir [Validation des factures électroniques](../../../document-processing/e-documents/validation-rules/).
+La carte **Validation des factures électroniques** active la validation des factures électroniques entrantes et vous permet de décider si le fournisseur est informé lorsqu'une facture est rejetée. Voir [Validation des factures électroniques](../../../document-processing/e-documents/validation-rules.md).
 
 ## Extraction de table
 
@@ -124,7 +124,7 @@ La carte **Validation des factures électroniques** active la validation des fac
 
 ## Paramètres d'exportation
 
-<figure><img src="../../../../../.gitbook/assets/doc-type-settings-export-settings-fr.png" alt="La carte Paramètres d&#x27;exportation"><figcaption><p>La carte Paramètres d'exportation.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/doc-type-settings-export-settings-fr.png" alt="La carte Paramètres d'exportation"><figcaption><p>La carte Paramètres d'exportation.</p></figcaption></figure>
 
 * **Exportation multiple** : Permet d'exporter un document plus d'une fois.
 * **Exporter au format PDF** : **Format du fichier d'exportation** définit le format PDF utilisé lors de l'exportation des documents, par exemple **Document original**.

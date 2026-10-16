@@ -14,7 +14,7 @@ DocBits Document Types Explained: Create, Configure & Assign Processing Settings
 * **Naviguer :** Allez dans Paramètres.
 * **Types de Documents :** Trouvez la section "Types de Documents".
 
-<figure><img src="../../../../.gitbook/assets/image (78).png" alt="Docbits Document Types Section"><figcaption><p>Paramètres</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/docbits_document_types_section.png" alt="Docbits Document Types Section"><figcaption><p>Paramètres</p></figcaption></figure>
 
 ### Ajouter un nouveau type de document
 
@@ -22,7 +22,7 @@ DocBits Document Types Explained: Create, Configure & Assign Processing Settings
 
 * Cliquez sur le bouton "+ Nouveau".
 
-<figure><img src="../../../../.gitbook/assets/image (162).png" alt="Docbits New Document Type Basic Info"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/docbits_new_document_type_basic_info.png" alt="Docbits New Document Type Basic Info"><figcaption></figcaption></figure>
 
 **Informations de base :**
 
@@ -42,23 +42,23 @@ DocBits Document Types Explained: Create, Configure & Assign Processing Settings
 * Téléchargez des documents exemples par glisser-déposer
 * Au moins 10 documents doivent être téléchargés pour l'entraînement
 
-<figure><img src="../../../../.gitbook/assets/docbits_script_management_nav.png" alt="Docbits Script List Enable Disable"><figcaption><p>Télécharger &#x26; Entraîner</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/docbits_script_list_enable_disable.png" alt="Docbits Script List Enable Disable"><figcaption><p>Télécharger & Entraîner</p></figcaption></figure>
 
 **Ajouter des Groupes**
 
 * Cliquez sur le bouton "Ajouter" et entrez le nom du groupe.
 * Vous pouvez également cloner un type de document existant.
 
-<figure><img src="../../../../.gitbook/assets/docbits_script_publish_button.png" alt="Docbits Script Save Changes 2" width="375"><figcaption><p>Champs &#x26; Groupes</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/docbits_script_save_changes_2.png" alt="Docbits Script Save Changes 2" width="375"><figcaption><p>Champs & Groupes</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (162).png" alt="" width="279"><figcaption><p>Créer un Nouveau Groupe</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (163).png" alt="" width="279"><figcaption><p>Créer un Nouveau Groupe</p></figcaption></figure>
 
 **Ajouter des champs :**
 
 * Ajoutez de nouveaux champs en cliquant sur "Ajouter".
 * Entrez le nom du champ (par exemple, "Numéro de facture", "Date", "Montant") et le type de données (par exemple, Texte, Nombre, Date).
 
-<figure><img src="../../../../.gitbook/assets/docbits_script_publish_button.png" alt="Docbits Script Test Environment" width="375"><figcaption><p>Champs &#x26; Groupes</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/docbits_script_test_environment.png" alt="Docbits Script Test Environment" width="375"><figcaption><p>Champs & Groupes</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (162).png" alt="" width="278"><figcaption><p>Créer un Nouveau Champ</p></figcaption></figure>
 
@@ -66,7 +66,7 @@ DocBits Document Types Explained: Create, Configure & Assign Processing Settings
 
 * Une fois tous les détails saisis, cliquez sur "Terminer" et le nouveau type de document est créé
 
-<figure><img src="../../../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (164).png" alt=""><figcaption></figcaption></figure>
 
 ### Modifier un type de document existant
 
@@ -75,17 +75,17 @@ DocBits Document Types Explained: Create, Configure & Assign Processing Settings
 * Sélectionnez le type de document que vous souhaitez modifier dans la liste des types de documents existants.
 * Sous le type de document, vous trouverez diverses options d'édition, par exemple modifier la mise en page, les champs, les colonnes de tableau, etc.
 
-<figure><img src="../../../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
 
 **Plus de Paramètres :**
 
 * Cliquez sur le bouton Modifier à côté du type de document.
 
-<figure><img src="../../../../.gitbook/assets/image (162).png" alt="Docbits Field Elements List"><figcaption><p>Plus de Paramètres</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/docbits_field_elements_list.png" alt="Docbits Field Elements List"><figcaption><p>Plus de Paramètres</p></figcaption></figure>
 
 * Ici, vous pouvez effectuer d'autres réglages pour le type de document, tels que le modèle de conception, si un document doit être approuvé avant l'exportation et bien d'autres détails.
 
-<figure><img src="../../../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
 
 ### Définir les règles d'extraction
 

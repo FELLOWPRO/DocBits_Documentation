@@ -3,6 +3,7 @@
 Ce guide vous explique comment connecter la **base de données en lecture seule de DocBits à Power BI Desktop** à l'aide du **pilote ODBC PostgreSQL**. Il couvre l'installation du pilote, la configuration ODBC, l'intégration à Power BI et l'actualisation planifiée.
 
 {% embed url="https://youtu.be/O1MtuXf_R_M" %}
+{% endembed %}
 
 #### 1. Installer le pilote ODBC PostgreSQL
 
@@ -15,7 +16,7 @@ Ce guide vous explique comment connecter la **base de données en lecture seule 
 * Ouvrez l'**Administrateur de source de données ODBC (64 bits)** via le Panneau de configuration ou la recherche Windows.
 * Accédez à l'onglet **DSN système** et cliquez sur **Ajouter**.
 * Sélectionnez le pilote **PostgreSQL Unicode(x64)** dans la liste et cliquez sur **Terminer**.
-* Renseignez les champs requis avec les identifiants disponibles ici :\n **DocBits → Settings → Document Processing → Module → AI Dashboard → Read-Only DB Access**
+* Renseignez les champs requis avec les identifiants disponibles ici :\n  **DocBits → Settings → Document Processing → Module → AI Dashboard → Read-Only DB Access**
 
 <figure><img src="../../.gitbook/assets/connect_read_only_4.png" alt=""><figcaption></figcaption></figure>
 
@@ -48,7 +49,7 @@ Ce guide vous explique comment connecter la **base de données en lecture seule 
 * Ouvrez le schéma **`public`**.
 * Sélectionnez les tables que vous souhaitez importer.
 
-![](../../.gitbook/assets/connect_read_only_1.png)
+![](../../.gitbook/assets/connect_read_only_1.png)        ![](../../.gitbook/assets/connect_read_only_2.png)
 
 * Choisissez :
   * **Charger** → importe directement dans Power BI
@@ -71,8 +72,8 @@ Ce guide vous explique comment connecter la **base de données en lecture seule 
 * Dans le service Power BI :
   * Accédez à votre jeu de données → **Paramètres** → **Actualisation planifiée**
   * Associez votre DSN et fournissez les identifiants
-* Plus d'informations [ici](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).
+* Plus d'informations [ici](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).&#x20;
 
-#### 7. Exemples de tableaux de bord et de vues de données
+#### 7. Exemples de tableaux de bord et de vues de données&#x20;
 
 <div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Exemple de tableau de bord Power BI 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Exemple de tableau de bord Power BI 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Exemple de tableau de bord Power BI 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Exemple de tableau de bord Power BI 4"><figcaption></figcaption></figure></div>

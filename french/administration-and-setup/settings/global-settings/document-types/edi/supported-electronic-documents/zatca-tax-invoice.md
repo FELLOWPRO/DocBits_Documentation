@@ -23,7 +23,7 @@ ZATCA Tax Invoice est le format de facture fiscale B2B standard du système saou
 
 ## Aperçu par défaut
 
-<figure><img src="../../../../../../.gitbook/assets/zatca-reporting-preview.png" alt="Aperçu de la facture ZATCA Tax Invoice dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour une facture ZATCA Tax Invoice d'Arabie saoudite</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/zatca-tax-invoice-preview.png" alt="Aperçu de la facture ZATCA Tax Invoice dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour une facture ZATCA Tax Invoice d'Arabie saoudite</p></figcaption></figure>
 
 ## Pages liées
 

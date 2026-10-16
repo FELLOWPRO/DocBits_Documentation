@@ -20,7 +20,7 @@ Ce guide explique comment importer un modèle de connexion API (API Connection T
 
 Avant l'importation, téléchargez le modèle de connexion requis à l'aide du fichier ci-dessous :
 
-{% file src="../../.gitbook/assets/DocBits-Dev-Import-Template.xml" %}
+{% file src="../../.gitbook/assets/DocBits-Dev-Import-Template (1).xml" %}
 
 ### Importer le modèle
 

@@ -1,4 +1,4 @@
-# Exportation vers M3 Mapping (API)
+# Export vers le mappage M3 (API)
 
 ### Sections
 
@@ -37,15 +37,15 @@ Suppression d'un champ :
 
 * Les champs M3 disponibles peuvent être consultés en ouvrant l'écran approprié dans M3.
 
-<figure><img src="../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee.png" alt=""><figcaption></figcaption></figure>
 
 * Vous pouvez obtenir de la même manière les noms des champs pour les lignes
 
 ### En-tête (Header) :
 
-<figure><img src="../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt=""><figcaption></figcaption></figure>
 
 Propriété de liste de champs : StaticFields
 

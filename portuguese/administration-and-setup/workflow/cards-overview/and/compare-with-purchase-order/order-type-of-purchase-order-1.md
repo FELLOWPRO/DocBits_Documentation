@@ -4,7 +4,7 @@ hidden: true
 
 # Order Type of Purchase Order
 
-<figure><img src="../../../../../.gitbook/assets/And1 (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
 
 ## **Propósito**:
 

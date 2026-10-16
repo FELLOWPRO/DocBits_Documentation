@@ -22,6 +22,8 @@ And: **Document type is:** Invoice
 
 Then: **Assign document to:** Stefan Reppermund
 
+![](../../../.gitbook/assets/3.png)
+
 **Test 2: Logic Card**
 
 When: **Assignee is:** Amier Haider
@@ -30,6 +32,8 @@ And: **Document type is:** Delivery Note
 
 Then: **Assign document to:** James Edwards
 
+![](../../../.gitbook/assets/4.png)
+
 **Test 3: Logic Card**
 
 **When:** **Assignee is:** Amier Haider
@@ -37,6 +41,8 @@ Then: **Assign document to:** James Edwards
 **And:** **Document type is:** Order Confirmation
 
 **Then:** **Assign document to:** Anian Sollinger
+
+![](../../../.gitbook/assets/5.png)
 
 Também é possível, caso o documento não esteja atribuído a uma única pessoa, atribuí-lo a um colaborador específico desde o início.
 
@@ -54,6 +60,8 @@ Para uma visão geral mais fácil do que deve acontecer com um documento, você 
 
 <figure><img src="../../../.gitbook/assets/workflow_test4_delivery_note_status.png" alt="Workflow Test 4 Delivery Note Status"><figcaption></figcaption></figure>
 
+![](../../../.gitbook/assets/8.png)
+
 **Test 5: Logic Card**
 
 When: **Document type is:** Invoice
@@ -64,7 +72,11 @@ Then: **Change Status to:** Pending Second Approval
 
 <figure><img src="../../../.gitbook/assets/workflow_test5_invoice_approval_status.png" alt="Workflow Test 5 Invoice Approval Status"><figcaption></figcaption></figure>
 
+![](../../../.gitbook/assets/10.png)
+
 Se uma fatura ou outro documento exceder um determinado valor total que exija revisão e aprovação prévias, esses documentos podem ser atribuídos imediatamente à pessoa certa.
+
+![](../../../.gitbook/assets/11.png)
 
 **Test 6: Logic Card**
 
@@ -75,6 +87,8 @@ And: Docfield **total\_amount** is **Greater than 500**
 Then: **Assign document to:** Asad Usman Khan
 
 <figure><img src="../../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Workflow Test 6 Total Amount Assign"><figcaption></figcaption></figure>
+
+![](../../../.gitbook/assets/13.png)
 
 Também é possível inserir o status no workflow, para que a pessoa atribuída possa ver imediatamente em qual status este documento se encontra e o que deve acontecer em seguida com ele.
 
@@ -90,7 +104,7 @@ Também é possível inserir o status no workflow, para que a pessoa atribuída 
 
 <figure><img src="../../../.gitbook/assets/workflow_test7_status_update.png" alt="Workflow Test 7 Status Update"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/15.png" alt=""><figcaption></figcaption></figure>
 
 Por exemplo, se faltarem informações específicas ou importantes em um documento, mas que sejam essenciais e devam ser incluídas para o processamento posterior, você pode configurar o workflow para que esses documentos sejam encaminhados imediatamente ao comprador e a um substituto (suplente).
 
@@ -127,7 +141,7 @@ Este logic card é vital para garantir que os detalhes de uma confirmação de p
 
 Se você tiver um cálculo diferente para sobretaxas, ou tiver sobretaxas apenas em alguns itens, você pode usar os generic table calculation cards; alguns deles também permitem filtrar por expressões regulares.
 
-<figure><img src="../../../.gitbook/assets/19 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/19.png" alt=""><figcaption></figcaption></figure>
 
 Acima está um exemplo de cálculo para MTZ com um filtro para números de item que começam com 01, 06, 9, 001 ou 000.
 
@@ -135,7 +149,7 @@ Com uma configuração manual, é recomendável dividir os cálculos que depende
 
 **Run Workflow**
 
-<figure><img src="../../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/20.png" alt=""><figcaption></figcaption></figure>
 
 Com este card você pode especificar o nome de um workflow que deve ser executado após o workflow atual, caso suas condições sejam atendidas, e após os then cards anteriores do workflow atual. Embora ele priorize workflows executáveis e ativos, também permite executar workflows desativados se o documento atender às condições do workflow.
 

@@ -1,7 +1,5 @@
 # Workflow Example: Conditional Export Trigger
 
-<figure><img src="../../../.gitbook/assets/And1 (45).png" alt="DocBits Configurações Fluxo de trabalho"><figcaption></figcaption></figure>
-
 Este fluxo de trabalho descreve as condições sob as quais um processo de exportação deve ser iniciado. Garante que apenas os documentos que cumprem todos os critérios especificados são processados para exportação, reforçando a integridade dos dados e o alinhamento com as regras de negócio.
 
 ### When:

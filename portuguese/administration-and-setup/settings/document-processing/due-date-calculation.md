@@ -16,12 +16,12 @@ Ative **Mostrar campos calculados** para que os campos da fatura calculados auto
 
 Escolha como uma data de vencimento que calha a um sábado ou domingo é ajustada. Isto aplica-se **tanto** à data de vencimento da fatura como à do desconto (Skonto).
 
-| Convenção | Efeito |
-|-----------|--------|
-| **Nenhuma** | Manter a data de calendário (sem ajuste). |
-| **Seguinte** | Mover sábado/domingo para a segunda-feira seguinte. |
-| **Anterior** | Mover sábado/domingo para a sexta-feira anterior. |
-| **Mais próxima** | Sábado → sexta-feira, domingo → segunda-feira. |
+| Convenção               | Efeito                                                                                            |
+| ----------------------- | ------------------------------------------------------------------------------------------------- |
+| **Nenhuma**             | Manter a data de calendário (sem ajuste).                                                         |
+| **Seguinte**            | Mover sábado/domingo para a segunda-feira seguinte.                                               |
+| **Anterior**            | Mover sábado/domingo para a sexta-feira anterior.                                                 |
+| **Mais próxima**        | Sábado → sexta-feira, domingo → segunda-feira.                                                    |
 | **Seguinte modificada** | Segunda-feira seguinte, exceto se passar para o mês seguinte; nesse caso, a sexta-feira anterior. |
 
 ### Código de atribuição de AP
@@ -30,7 +30,7 @@ Associe as condições de pagamento do fornecedor a códigos de atribuição de 
 
 ## Substituições das condições de desconto
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_mappings.png" alt="Substituições das condições de desconto"><figcaption><p>Substituições das condições de desconto</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/due_date_calc_formats.png" alt="Substituições das condições de desconto"><figcaption><p>Substituições das condições de desconto</p></figcaption></figure>
 
 Use as **Substituições das condições de desconto** para associar um prefixo específico a uma percentagem de desconto e a um número de dias. Clique em **+ Adicionar associação** para acrescentar uma linha com **Prefixo**, **Percentagem** e **Dias**.
 
@@ -42,21 +42,21 @@ O DocBits reconhece os seguintes códigos de condições de pagamento e de desco
 
 **Formatos de condições de pagamento suportados**
 
-| Formato | Exemplo | Significado |
-|---------|---------|-------------|
-| Infor M3 | `N90`, `N30` | Líquido 90 / 30 dias |
-| Infor M3 | `NET` | Pagável na receção |
-| Infor M3 | `M20` | Dia 20 do mês seguinte |
-| Infor M3 | `E15` | Fim do mês + 15 dias |
-| Infor LN | `030`, `30` | Líquido 30 dias |
-| Reversed | `14N`, `30N` | Líquido 14 / 30 dias |
-| Códigos de texto | `REC`, `DUE`, `COD` | Pagável na receção |
+| Formato          | Exemplo             | Significado            |
+| ---------------- | ------------------- | ---------------------- |
+| Infor M3         | `N90`, `N30`        | Líquido 90 / 30 dias   |
+| Infor M3         | `NET`               | Pagável na receção     |
+| Infor M3         | `M20`               | Dia 20 do mês seguinte |
+| Infor M3         | `E15`               | Fim do mês + 15 dias   |
+| Infor LN         | `030`, `30`         | Líquido 30 dias        |
+| Reversed         | `14N`, `30N`        | Líquido 14 / 30 dias   |
+| Códigos de texto | `REC`, `DUE`, `COD` | Pagável na receção     |
 
 **Formato das condições de desconto** — as condições de desconto codificam os descontos por pagamento antecipado como códigos de 3 dígitos: o primeiro dígito é a percentagem de desconto, os dois últimos são os dias dentro dos quais pagar.
 
-| Código | Significado |
-|--------|-------------|
-| `210` | 2% de desconto se pago em 10 dias |
-| `130` | 1% de desconto se pago em 30 dias |
-| `545` | 5% de desconto se pago em 45 dias |
-| `0` | Sem desconto |
+| Código | Significado                       |
+| ------ | --------------------------------- |
+| `210`  | 2% de desconto se pago em 10 dias |
+| `130`  | 1% de desconto se pago em 30 dias |
+| `545`  | 5% de desconto se pago em 45 dias |
+| `0`    | Sem desconto                      |

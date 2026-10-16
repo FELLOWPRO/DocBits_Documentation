@@ -20,7 +20,7 @@ Os cartões de correspondência de pedidos desta página ficam no grupo **And** 
 * **v3 → v4:** Adição de parâmetros de modo de comparação
 * **v4 → v5:** Tolerância melhorada com várias unidades (%, EUR, $, etc.)
 
-📖 [Complete Version History](https://github.com/Fellow-Consulting-AG/docbits/tree/pt/readme/administration-and-setup/changelog/release.md#-po-comparison--validation-cards) | [Card Version Database](https://github.com/Fellow-Consulting-AG/docbits/tree/pt/readme/DocFlow/docs/card_version.md)
+📖 [Complete Version History](../../changelog/release.md#-po-comparison--validation-cards) | [Card Version Database](../../../DocFlow/docs/card_version.md)
 
 ***
 

@@ -2,57 +2,45 @@
 
 ## Visão geral
 
-O ZUGFeRD 2.2 foi a versão inicial do padrão. Embora seja antiga, muitos documentos ainda usam esse formato. O DocBits oferece suporte total para a extração de dados de arquivos XML do ZUGFeRD 2.2.
+O ZUGFeRD 2.2 continua o alinhamento com a EN 16931 e incorpora outras atualizações do padrão CII.
 
-## Mapeamento de campos de cabeçalho
+## Mapeamento dos campos de cabeçalho
 
 ### Identificação da fatura
 
-| Caminho ZUGFeRD CII               | Campo DocBits       | Campo Infor BOD    | Tipo   | Descrição                 |
-| --------------------------------- | ------------------- | ------------------ | ------ | ------------------------- |
-| `ExchangedDocument/ID`            | `INVOICE_NUMBER`    | `DocumentID`       | STRING | Número da fatura          |
-| `ExchangedDocument/TypeCode`      | `INVOICE_TYPE_CODE` | `DocumentType`     | STRING | Código do tipo de fatura  |
-| `ExchangedDocument/IssueDateTime` | `INVOICE_DATE`      | `DocumentDateTime` | DATE   | Data de emissão da fatura |
+| Caminho CII do ZUGFeRD            | Campo do DocBits | Campo do Infor BOD | Tipo   | Descrição                 |
+| --------------------------------- | ---------------- | ------------------ | ------ | ------------------------- |
+| `ExchangedDocument/ID`            | `INVOICE_NUMBER` | `DocumentID`       | STRING | Número da fatura          |
+| `ExchangedDocument/IssueDateTime` | `INVOICE_DATE`   | `DocumentDateTime` | DATE   | Data de emissão da fatura |
 
-### Tipo e subtipo do documento (orientado pelo TRA)
+### Tipo e subtipo do documento (orientados pelo TRA)
 
-O XSLT de TRANSFORMATION padrão emite dois campos derivados:
+O XSLT de TRANSFORMATION padrão gera dois campos derivados:
 
-| Campo DocBits      | Origem                                                                                                     | Lógica                                                                          |
+| Campo do DocBits   | Origem                                                                                                     | Lógica                                                                          |
 | ------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
 | `INVOICE_TYPE`     | `CrossIndustryInvoice/ExchangedDocument/TypeCode`                                                          | UNCL 1001 `381` ou `261` → **Credit Note**; qualquer outro código → **Invoice** |
 | `INVOICE_SUB_TYPE` | `SupplyChainTradeTransaction/ApplicableHeaderTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | Não vazio → **Purchase Invoice**; vazio/ausente → **Cost Invoice**              |
 
 ### Detalhamento de impostos (classificado por faixa)
 
-Os blocos `ApplicableTradeTax` são distribuídos em três faixas baseadas em alíquota (não índices posicionais): os campos de alíquota padrão (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) capturam alíquota ≥ 19; os campos de alíquota reduzida (`*_2`) capturam 0 < alíquota < 19; os campos de alíquota zero (`*_3`) capturam alíquota = 0. Consulte [Detalhamento de impostos ZUGFeRD](./#tax-breakdown-tier-classified) para a lista completa de campos.
+Os blocos `ApplicableTradeTax` são distribuídos em três faixas baseadas na alíquota (não em índices posicionais): os campos da alíquota padrão (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) capturam alíquota ≥ 19; os campos da alíquota reduzida (`*_2`) capturam 0 < alíquota < 19; os campos da alíquota zero (`*_3`) capturam alíquota = 0. Consulte [Detalhamento de impostos do ZUGFeRD](./#detalhamento-de-impostos-classificado-por-faixa) para ver a lista completa de campos.
 
-### Referências de documentos
+### Moeda e valores
 
-| Caminho ZUGFeRD CII                   | Campo DocBits     | Campo Infor BOD   | Tipo   | Descrição                     |
-| ------------------------------------- | ----------------- | ----------------- | ------ | ----------------------------- |
-| `BuyerOrderReferencedDocument/ID`     | `PURCHASE_ORDER`  | `CustomerOrderID` | STRING | Número do pedido de compra    |
-| `ContractReferencedDocument/ID`       | `CONTRACT_NUMBER` | `ContractID`      | STRING | Referência do contrato        |
-| `DespatchAdviceReferencedDocument/ID` | `DELIVERY_NOTE`   | `ShipmentID`      | STRING | Referência da nota de entrega |
+| Caminho CII do ZUGFeRD | Campo do DocBits   | Campo do Infor BOD    | Tipo   | Descrição               |
+| ---------------------- | ------------------ | --------------------- | ------ | ----------------------- |
+| `InvoiceCurrencyCode`  | `CURRENCY`         | `CurrencyCode`        | STRING | Moeda da fatura         |
+| `TaxBasisTotalAmount`  | `TOTAL_NET_AMOUNT` | `TaxBasisTotalAmount` | AMOUNT | Valor líquido total     |
+| `TaxTotalAmount`       | `TOTAL_TAX_AMOUNT` | `TaxTotalAmount`      | AMOUNT | Valor total de impostos |
+| `GrandTotalAmount`     | `TOTAL_AMOUNT`     | `GrandTotalAmount`    | AMOUNT | Total geral             |
 
-### Informações do fornecedor (vendedor)
+## Mapeamento dos itens de linha
 
-| Caminho ZUGFeRD CII                                | Campo DocBits        | Campo Infor BOD       | Tipo   | Descrição           |
-| -------------------------------------------------- | -------------------- | --------------------- | ------ | ------------------- |
-| `SellerTradeParty/ID`                              | `VENDOR_ID`          | `SupplierPartyID`     | STRING | ID do fornecedor    |
-| `SellerTradeParty/Name`                            | `VENDOR_NAME`        | `SupplierPartyName`   | STRING | Nome do fornecedor  |
-| `SellerTradeParty/PostalTradeAddress/Line1`        | `VENDOR_ADDRESS`     | `SupplierAddress1`    | STRING | Linha de endereço 1 |
-| `SellerTradeParty/PostalTradeAddress/PostcodeCode` | `VENDOR_POSTAL_CODE` | `SupplierPostalCode`  | STRING | Código postal       |
-| `SellerTradeParty/PostalTradeAddress/CityName`     | `VENDOR_CITY`        | `SupplierCity`        | STRING | Cidade              |
-| `SellerTradeParty/PostalTradeAddress/CountryID`    | `VENDOR_COUNTRY`     | `SupplierCountryCode` | STRING | Código do país      |
-
-## Mapeamento de itens de linha
-
-| Caminho ZUGFeRD CII                      | Campo DocBits  | Campo Infor BOD    | Tipo   | Descrição                   |
-| ---------------------------------------- | -------------- | ------------------ | ------ | --------------------------- |
-| `AssociatedDocumentLineDocument/LineID`  | `POSITION`     | `LineNumber`       | STRING | Número da linha             |
-| `SpecifiedTradeProduct/BuyerAssignedID`  | `ITEM_NUMBER`  | `BuyerItemID`      | STRING | Número do item do comprador |
-| `SpecifiedTradeProduct/Name`             | `DESCRIPTION`  | `ItemDescription`  | STRING | Descrição do item           |
-| `BilledQuantity`                         | `QUANTITY`     | `InvoicedQuantity` | NUMBER | Quantidade faturada         |
-| `NetPriceProductTradePrice/ChargeAmount` | `UNIT_PRICE`   | `UnitPrice`        | AMOUNT | Preço unitário líquido      |
-| `LineTotalAmount`                        | `TOTAL_AMOUNT` | `ExtendedAmount`   | AMOUNT | Total da linha              |
+| Caminho CII do ZUGFeRD                   | Campo do DocBits | Campo do Infor BOD | Tipo   | Descrição              |
+| ---------------------------------------- | ---------------- | ------------------ | ------ | ---------------------- |
+| `AssociatedDocumentLineDocument/LineID`  | `POSITION`       | `LineNumber`       | STRING | Número da linha        |
+| `SpecifiedTradeProduct/Name`             | `DESCRIPTION`    | `ItemDescription`  | STRING | Descrição do item      |
+| `BilledQuantity`                         | `QUANTITY`       | `InvoicedQuantity` | NUMBER | Quantidade faturada    |
+| `NetPriceProductTradePrice/ChargeAmount` | `UNIT_PRICE`     | `UnitPrice`        | AMOUNT | Preço unitário líquido |
+| `LineTotalAmount`                        | `TOTAL_AMOUNT`   | `ExtendedAmount`   | AMOUNT | Total da linha         |

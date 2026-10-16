@@ -12,7 +12,7 @@ A janela de tolerância define um intervalo de datas aceitáveis em torno da dat
 * Tolerance Days: **3**
 * Janela de Tolerância: **6 de janeiro → 12 de janeiro**
 
-> <mark style="color:red;">Apenas os</mark> <mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;">selecionados (dias da semana) são contabilizados ao calcular esta janela.</mark>
+> <mark style="color:red;">Apenas os</mark> <mark style="color:red;"></mark><mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;"></mark><mark style="color:red;">selecionados (dias da semana) são contabilizados ao calcular esta janela.</mark>
 
 ### Exemplo de cronologia visual
 

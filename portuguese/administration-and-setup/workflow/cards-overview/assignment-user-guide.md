@@ -16,7 +16,7 @@ Estes cartões ficam no grupo **Then** do Construtor de fluxos de trabalho — a
 
 **Importante:** As versões v3 adicionaram suporte de árvore de decisão, mas estão agora descontinuadas **Recomendação:** Utilize a v2 tanto para DOC\_USER\_ASSIGN como para DOC\_GROUP\_ASSIGN
 
-📖 [Complete Version History](https://github.com/Fellow-Consulting-AG/docbits/tree/pt/readme/administration-and-setup/changelog/release.md#-assignment--routing-cards) | [Card Version Database](https://github.com/Fellow-Consulting-AG/docbits/tree/pt/readme/DocFlow/docs/card_version.md)
+📖 [Complete Version History](../../changelog/release.md#-assignment--routing-cards) | [Card Version Database](../../../DocFlow/docs/card_version.md)
 
 ***
 

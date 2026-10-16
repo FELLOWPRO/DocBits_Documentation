@@ -16,9 +16,9 @@ Esta configuração permite definir regras que verificam se os dados inseridos a
 * Ative a opção Forçar Validação.
 * Defina as regras de validação a serem verificadas. Podem ser, por exemplo, limites numéricos, expressões regulares para campos de texto ou relações com outros campos.
 
-<figure><img src="../../../../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_decide_column_necessity.png" alt="Docbits Decide Column Necessity" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (99).png" alt="Docbits Decide Column Necessity" width="375"><figcaption></figcaption></figure>
 
 **Impacto:**
 
@@ -26,7 +26,7 @@ Esta configuração permite definir regras que verificam se os dados inseridos a
 
 ### Pontuação de Correspondência (Match Score):
 
-<figure><img src="../../../../../.gitbook/assets/image (121).png" alt="" width="116"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (114).png" alt="" width="116"><figcaption></figcaption></figure>
 
 Esta configuração permite que você compare o valor inserido com um valor de referência predefinido.
 

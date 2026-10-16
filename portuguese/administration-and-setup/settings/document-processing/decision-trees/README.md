@@ -1,4 +1,4 @@
-# Árvores de Decisão
+# Alberi Decisionali
 
 {% embed url="https://youtu.be/omFWSkSjlL0" %}
 Como criar uma Árvore de Decisão no DocBits (Condições, Políticas, Testes e Exportação)
@@ -57,11 +57,11 @@ O Editor de Árvores de Decisão permite-lhe configurar regras que regem a forma
 
 Esta árvore de decisão avalia o campo **Total Amount** e atribui-o a diferentes grupos com base em condições predefinidas. Cada regra compara o montante total com um valor específico e, com base na condição que é verdadeira, é devolvido o **Group** correspondente.
 
-<figure><img src="../../../../.gitbook/assets/And1 (37).png" alt="Exemplo de Árvore de Decisão Total Amount"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="Exemplo de Árvore de Decisão Total Amount"><figcaption></figcaption></figure>
 
 Esta árvore de decisão avalia duas condições principais para determinar qual o grupo a atribuir: **Total Amount** e **Warehouse Status**. A árvore utiliza limiares baseados no montante total para definir qual o grupo devolvido, com a distinção adicional de saber se o armazém é designado como "Warehouse Main", "Warehouse Sub" ou "Not Warehouse Main".
 
-<figure><img src="../../../../.gitbook/assets/And1 (37).png" alt="Exemplo de Árvore de Decisão Warehouse Status"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="Exemplo de Árvore de Decisão Warehouse Status"><figcaption></figcaption></figure>
 
 Cada regra é avaliada sequencialmente.
 
@@ -88,23 +88,23 @@ A Política da Árvore de Decisão define como as várias regras de uma árvore 
 
     * No editor de árvores de decisão, encontre o botão **Test**.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (37).png" alt="Botão Test da Árvore de Decisão" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Botão Test da Árvore de Decisão" width="563"><figcaption></figcaption></figure>
 2.  **Abrir o pop-up de teste:**
 
     * Clique no botão **Test**.
     * Será apresentada uma janela de pop-up, com campos de entrada correspondentes aos critérios utilizados na árvore de decisão.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (37).png" alt="Pop-up de Teste da Árvore de Decisão" width="421"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Pop-up de Teste da Árvore de Decisão" width="421"><figcaption></figcaption></figure>
 3. **Fornecer valores de entrada:**
    *   Introduza valores nos campos de entrada para simular um cenário real.
 
-       <figure><img src="../../../../.gitbook/assets/And1 (37).png" alt="Entrada de Teste da Árvore de Decisão" width="428"><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/And1.png" alt="Entrada de Teste da Árvore de Decisão" width="428"><figcaption></figcaption></figure>
 4.  **Avaliar os resultados:**
 
     * Após introduzir os dados, a árvore processa-os com base na política escolhida.
     * O sistema destaca a(s) regra(s) que corresponde(m) aos dados fornecidos.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (37).png" alt="Resultado de Teste da Árvore de Decisão" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Resultado de Teste da Árvore de Decisão" width="563"><figcaption></figcaption></figure>
 5. **Rever o feedback quando não há correspondência:**
    * Se nenhuma regra for destacada, o sistema apresentará feedback a explicar por que motivo nenhuma regra correspondeu.
    * Utilize este feedback para ajustar os dados de entrada ou rever a configuração da árvore quanto a potenciais problemas.

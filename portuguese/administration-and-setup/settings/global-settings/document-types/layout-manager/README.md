@@ -1,6 +1,6 @@
-# Layout Manager
+# Gestore Layout
 
-<figure><img src="../../../../../.gitbook/assets/docbits_layout_manager_overview.png" alt="Docbits Layout Manager Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (146).png" alt="Docbits Layout Manager Overview"><figcaption></figcaption></figure>
 
 #### Overview
 
@@ -27,5 +27,3 @@ The Layout Manager allows administrators to visually configure and modify the la
    * Shows a real-time preview of how the document will appear based on the current layout configuration. This helps in ensuring that the layout matches the actual document structure and is vital for testing and refining the document processing setup.
 
 {% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2490" %}
-
-

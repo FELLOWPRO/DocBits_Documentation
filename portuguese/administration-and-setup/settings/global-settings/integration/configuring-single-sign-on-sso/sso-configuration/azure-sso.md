@@ -2,7 +2,7 @@
 description: Usando o DocBits com o seu Login da Microsoft sem usar uma senha (separada)
 ---
 
-# Azure SSO
+# SSO do Azure
 
 ### Criar SAML SSO no Azure AD
 
@@ -17,11 +17,11 @@ Execute as etapas a seguir para adicionar SAML SSO no Azure AD:
 
 * Clique em \`+ New application
 
-<figure><img src="../../../../../../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
 
 * Clique em \`+ Create your own application\`
 
-<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure></div>
 
 * Insira um nome para a sua aplicação. Mantenha as demais seleções padrão.
 
@@ -49,7 +49,7 @@ Em seguida, atribua usuários ou grupos à configuração de SSO.
 
 ![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_8.png)
 
-<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (216) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure></div>
 
 * Acesse a lista de visualização \`Groups\` e localize os grupos atribuídos.
 

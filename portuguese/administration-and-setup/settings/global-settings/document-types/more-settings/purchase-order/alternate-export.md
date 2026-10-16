@@ -1,4 +1,4 @@
-# Exportação Alternativa
+# Esportazione alternativa
 
 ## Visão Geral
 
@@ -19,7 +19,7 @@ Esta página explica como configurar essa opção.
 
 Uma vez que a configuração esteja ativada, você pode escolher um status de documento e atribuir uma configuração de exportação predefinida.
 
-Mais informações sobre como configurar as configurações de exportação podem ser encontradas [aqui](../../../../document-processing/export.md).
+Mais informações sobre como configurar as configurações de exportação podem ser encontradas [aqui](../../../../document-processing/export/).
 
 Você pode escolher entre os seguintes status:
 

@@ -1,17 +1,17 @@
-# Configuring Single Sign-On (SSO)
+# Configuração de Single Sign-On (SSO)
 
 Configuring Single Sign-On (SSO) in DocBits requires a few steps to set up and configure. Here is a step-by-step guide:
 
 **Accessing SSO settings:**
 
-<figure><img src="../../../../../.gitbook/assets/docbits_new_sub_organization_form.png" alt="Docbits New Sub Organization Form"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (83).png" alt="Docbits New Sub Organization Form"><figcaption></figcaption></figure>
 
 * Log in to your DocBits account as an administrator.
 * Navigate to settings and look for Single Sign-On or SSO.
 
 **Configuring SSO parameters:**
 
-<figure><img src="../../../../../.gitbook/assets/docbits_sub_organizations_list.png" alt="Docbits Sub Organizations List"><figcaption><p>SSO Service Provider Settings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (83).png" alt="Docbits Sub Organizations List"><figcaption><p>SSO Service Provider Settings</p></figcaption></figure>
 
 * Enter the required SSO parameters such as the Entity ID, Single Log-Out (SLO) URL, and Single Sign-On (SSO) URL.
 * The Entity ID is a unique identifier for your service or application.
@@ -20,7 +20,7 @@ Configuring Single Sign-On (SSO) in DocBits requires a few steps to set up and c
 
 **Download certificates and metadata:**
 
-<figure><img src="../../../../../.gitbook/assets/docbits_new_sub_organization_button.png" alt="Docbits New Sub Organization Button"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (83).png" alt="Docbits New Sub Organization Button"><figcaption></figcaption></figure>
 
 * The identity provider (IdP) typically provides a certificate that DocBits uses to verify the SAML authentication response.
 * Download the certificate and store it securely.
@@ -29,7 +29,7 @@ Configuring Single Sign-On (SSO) in DocBits requires a few steps to set up and c
 
 **Identity provider (IdP) configuration:**
 
-<figure><img src="../../../../../.gitbook/assets/docbits_new_sub_organization_menu.png" alt="Docbits New Sub Organization Menu"><figcaption><p>Identity Service Provider Settings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (83).png" alt="Docbits New Sub Organization Menu"><figcaption><p>Identity Service Provider Settings</p></figcaption></figure>
 
 * Log in to the identity provider and configure the application or service for SAML integration.
 * Use the downloaded metadata or the manually entered SSO parameters to add DocBits as a trusted application or service.

@@ -25,7 +25,7 @@ Junto com o `INVOICE_TYPE_CODE` bruto, o XSLT de TRANSFORMATION padrão emite do
 
 ### Detalhamento de impostos (classificado por faixa)
 
-Os blocos `ApplicableTradeTax` são distribuídos em três faixas baseadas em alíquota (não índices posicionais): os campos de alíquota padrão (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) capturam alíquota ≥ 19; os campos de alíquota reduzida (`*_2`) capturam 0 < alíquota < 19; os campos de alíquota zero (`*_3`) capturam alíquota = 0. Consulte [Detalhamento de impostos ZUGFeRD](./#tax-breakdown-tier-classified) para a lista completa de campos. (O ZUGFeRD 1.0 usa o vocabulário CII legado em seu XSLT de TRANSFORMATION, mas as regras de seleção por faixa acima são idênticas às do 2.x.)
+Os blocos `ApplicableTradeTax` são distribuídos em três faixas baseadas em alíquota (não índices posicionais): os campos de alíquota padrão (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) capturam alíquota ≥ 19; os campos de alíquota reduzida (`*_2`) capturam 0 < alíquota < 19; os campos de alíquota zero (`*_3`) capturam alíquota = 0. Consulte [Detalhamento de impostos ZUGFeRD](./#detalhamento-de-impostos-classificado-por-faixa) para a lista completa de campos. (O ZUGFeRD 1.0 usa o vocabulário CII legado em seu XSLT de TRANSFORMATION, mas as regras de seleção por faixa acima são idênticas às do 2.x.)
 
 ### Referências de documentos
 

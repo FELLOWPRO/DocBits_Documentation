@@ -46,4 +46,4 @@ Este documento descreve o fluxo de trabalho para encomendar materiais a forneced
 * Garanta que todos os documentos são verificados e arquivados para efeitos de arquivo.
 * As discrepâncias nos detalhes da encomenda ou da fatura devem ser resolvidas prontamente para evitar atrasos.
 
-<figure><img src="../../../.gitbook/assets/embed (2).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/embed (3).svg" alt=""><figcaption></figcaption></figure>

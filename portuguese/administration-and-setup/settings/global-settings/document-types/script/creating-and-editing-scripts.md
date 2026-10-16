@@ -14,7 +14,7 @@ Primeiro, você precisa escolher a linguagem de script que deseja usar. O DocBit
 
 Faça login no DocBits e navegue até o ambiente de desenvolvimento de script. Ele fica na área de administração.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_dev_environment.png" alt="Docbits Script Dev Environment"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_new_script_editor.png" alt="Docbits Script Dev Environment"><figcaption></figcaption></figure>
 
 **Crie un novo script:**
 
@@ -30,46 +30,46 @@ Por exemplo, se você estiver usando Python, seu script pode ser assim:
 
 ## 1. Exemplo de script em Python
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_python_example.png" alt="Docbits Script Python Example"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_new_script_editor.png" alt="Docbits Script Python Example"><figcaption></figcaption></figure>
 
 ## Função para limpar nomes de pacientes
 
-def clean_patient_name(name): cleaned_name = name.strip().title() # Remove espaços e aplica capitalização
+def clean\_patient\_name(name): cleaned\_name = name.strip().title() # Remove espaços e aplica capitalização
 
-return cleaned_name
+return cleaned\_name
 
 ## Programa principal
 
-if __name__ == "__main__": patient_name = " john doe " cleaned_name = clean_patient_name(patient_name) print("Nome do paciente limpo:", cleaned_name)
+if **name** == "**main**": patient\_name = " john doe " cleaned\_name = clean\_patient\_name(patient\_name) print("Nome do paciente limpo:", cleaned\_name)
 
 ## 2. Exemplo de script
 
-<figure><img src="../../../../../.gitbook/assets/docbits_field_required_setting.png" alt="Docbits Field Required Setting"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (114).png" alt="Docbits Field Required Setting"><figcaption></figcaption></figure>
 
 **Teste o script:**
 
 Verifique se há erros no código e teste-o em um ambiente de teste. Certifique-se de que o script produza os resultados esperados e funcione corretamente.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_field_readonly_setting.png" alt="Docbits Field Readonly Setting"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (114).png" alt="Docbits Field Readonly Setting"><figcaption></figcaption></figure>
 
 **Salve o script:**
 
 Salve o script no DocBits e dê a ele um nome significativo que descreva o objetivo do script.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_field_hidden_setting.png" alt="Docbits Field Hidden Setting" width="84"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (114).png" alt="Docbits Field Hidden Setting" width="84"><figcaption></figcaption></figure>
 
 **Mapeamento do script para tipos de documento:**
 
 Uma etapa importante é mapear o script para os tipos de documento apropriados. Isso determina quando e como o script é aplicado. Isso geralmente pode ser feito por meio de uma interface de configuração no DocBits, onde você pode atribuir o script a um tipo de documento específico e especificar sob quais condições ele deve ser aplicado.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_field_ocr_setting.png" alt="Docbits Field Ocr Setting"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (114).png" alt="Docbits Field Ocr Setting"><figcaption></figcaption></figure>
 
 **Revisão e publicação:**
 
 Depois de criar, testar e mapear o script, verifique-o novamente em busca de erros e inconsistências. Se tudo estiver OK, você poderá publicar o script no ambiente de produção do DocBits.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_publish_script_button.png" alt="Docbits Publish Script Button"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_new_script_editor.png" alt="Docbits Publish Script Button"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_field_forced_validation_setting.png" alt="Docbits Field Forced Validation Setting"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (114).png" alt="Docbits Field Forced Validation Setting"><figcaption></figcaption></figure>
 
 Por meio dessas etapas, você pode criar, testar e implementar com sucesso um novo script no DocBits para automatizar processos e melhorar a eficiência da documentação médica.

@@ -1,6 +1,6 @@
-# Validation & Testing
+# Validação e Testes
 
-Enquanto constrói um Advanced Workflow, dois controlos na barra de ferramentas permitem-lhe verificá-lo sem sair do construtor. Estes destinam-se a _verificações rápidas durante a construção_ — para testes guardados e repetíveis, use o [Test Manager](../test-manager.md).
+Enquanto constrói um Advanced Workflow, dois controlos na barra de ferramentas permitem-lhe verificá-lo sem sair do construtor. Estes destinam-se a *verificações rápidas durante a construção* — para testes guardados e repetíveis, use o [Test Manager](../test-manager.md).
 
 ## Validate
 
@@ -12,10 +12,10 @@ Clique no controlo **Test** (o ícone de reprodução, ou prima <kbd>Cmd/Ctrl</k
 
 ## Quando usar qual
 
-* **Validate / Test no construtor** (esta página) — feedback instantâneo enquanto desenha o fluxo.
-* [**Test Manager**](../test-manager.md) — guarde o cenário para o poder voltar a executar mais tarde (e em conjunto com todos os seus outros cenários) para detetar regressões após alterações futuras.
+- **Validate / Test no construtor** (esta página) — feedback instantâneo enquanto desenha o fluxo.
+- **[Test Manager](../test-manager.md)** — guarde o cenário para o poder voltar a executar mais tarde (e em conjunto com todos os seus outros cenários) para detetar regressões após alterações futuras.
 
 ## Próximos passos
 
-* Reveja os tipos de nós e ligações em [Nós](nodes.md).
-* Veja todos os controlos da barra de ferramentas e da tela em [Barra de ferramentas e Tela](toolbar-and-canvas.md).
+- Reveja os tipos de nós e ligações em [Nós](nodes.md).
+- Veja todos os controlos da barra de ferramentas e da tela em [Barra de ferramentas e Tela](toolbar-and-canvas.md).

@@ -2,10 +2,10 @@
 
 O DocBits valida as faturas eletrónicas recebidas (e-invoices) face aos padrões oficiais — **XRechnung**, **ZUGFeRD** e **Factur-X** — e encaminha quaisquer problemas detetados para o responsável adequado. O grupo de definições **Documentos eletrónicos** (em **Processamento de documentos**) tem estas páginas:
 
-* **[Validação de faturas eletrônicas](validation-rules.md)** — escolha que versões e perfis de fatura eletrónica aceita e defina a gravidade de cada regra de validação para a sua organização.
-* **[Relatório de validação](validation-report.md)** — o que o utilizador vê quando uma fatura falha na validação: os resultados em linguagem simples, o próximo passo e a opção de rejeitar o documento.
-* **[Validação para cada tipo de documento](validation-per-document-type.md)** — para administradores: ative a validação e defina se bloqueia, por tipo de documento, com um registo de alterações.
-* **[Encaminhamento de notificações](notification-routing.md)** — associe os resultados de validação ao agente do AI Workforce que os deve tratar.
+* [**Validação de faturas eletrônicas**](validation-rules/) — escolha que versões e perfis de fatura eletrónica aceita e defina a gravidade de cada regra de validação para a sua organização.
+* [**Relatório de validação**](validation-rules/validation-report.md) — o que o utilizador vê quando uma fatura falha na validação: os resultados em linguagem simples, o próximo passo e a opção de rejeitar o documento.
+* [**Validação para cada tipo de documento**](validation-rules/validation-per-document-type.md) — para administradores: ative a validação e defina se bloqueia, por tipo de documento, com um registo de alterações.
+* [**Encaminhamento de notificações**](notification-routing.md) — associe os resultados de validação ao agente do AI Workforce que os deve tratar.
 
 Em conjunto, permitem decidir **o que conta como um problema** numa fatura eletrónica recebida e **quem trata disso**.
 
@@ -17,11 +17,11 @@ Vá a **Definições → Tipos de documento → Fatura → Definições avançad
 
 <figure><img src="../../../../.gitbook/assets/einvoice-enable-toggle-pt.png" alt="Os interruptores de validação de faturas eletrónicas no tipo de documento Fatura"><figcaption><p>Ative ou desative a validação de faturas eletrónicas por tipo de documento, com notificação opcional ao fornecedor</p></figcaption></figure>
 
-* **Validar faturas eletrónicas recebidas** — o interruptor principal. Quando **ativado**, cada fatura carregada é verificada segundo as regras Schematron KoSIT XRechnung e as verificações semânticas L0 (PDF/A-3) e L4 (IBAN/IVA), usando as gravidades que definiu na página [Validação de faturas eletrônicas](validation-rules.md). As faturas inválidas são bloqueadas. Quando **desativado**, as faturas ignoram totalmente a validação de faturas eletrónicas e as páginas Validação de faturas eletrônicas e Encaminhamento de notificações não têm efeito.
+* **Validar faturas eletrónicas recebidas** — o interruptor principal. Quando **ativado**, cada fatura carregada é verificada segundo as regras Schematron KoSIT XRechnung e as verificações semânticas L0 (PDF/A-3) e L4 (IBAN/IVA), usando as gravidades que definiu na página [Validação de faturas eletrônicas](validation-rules/). As faturas inválidas são bloqueadas. Quando **desativado**, as faturas ignoram totalmente a validação de faturas eletrónicas e as páginas Validação de faturas eletrônicas e Encaminhamento de notificações não têm efeito.
 * **Notificar o fornecedor em caso de rejeição** — aparece assim que a validação é ativada. Quando **ativado**, uma fatura rejeitada gera um e-mail ao fornecedor com os campos em falta ou incorretos para que possa reemiti-la. Quem recebe e trata cada resultado configura-se na página [Encaminhamento de notificações](notification-routing.md).
 
 > A validação de faturas eletrónicas é configurada **por tipo de documento**. Atualmente aplica-se ao tipo de documento **Fatura**; ative-a em cada tipo de documento que deva ser validado.
 
-Também pode saltar diretamente para aqui com a **pesquisa rápida global**: prima <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> no Windows e Linux) em qualquer parte do DocBits e escreva *e-invoice*.
+Também pode saltar diretamente para aqui com a **pesquisa rápida global**: prima <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> no Windows e Linux) em qualquer parte do DocBits e escreva _e-invoice_.
 
 <figure><img src="../../../../.gitbook/assets/einvoice-quicksearch-pt.png" alt="A pesquisa rápida global abre a Validação de faturas eletrónicas"><figcaption><p>Escreva «e-invoice» na pesquisa rápida para saltar diretamente para o interruptor.</p></figcaption></figure>

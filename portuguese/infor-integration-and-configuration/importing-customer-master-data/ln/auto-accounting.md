@@ -1,4 +1,4 @@
-# Contabilidade automática com Infor LN
+# Contabilità Automatica
 
 Utilize este guia quando um administrador do Infor LN pretender que o DocBits utilize dados mestres financeiros importados para a contabilidade automática. A página antiga mostrava 48 ecrãs de um determinado ambiente Infor. Os nomes dos pontos de ligação, os mapeamentos, as credenciais e os endereços de endpoint desse ambiente não constituem uma configuração reutilizável.
 
@@ -10,7 +10,7 @@ As capturas de ecrã seguintes provêm do ambiente Sandbox sintético **DocBits 
 
 <figure><img src="../../../.gitbook/assets/dbdc786-auto-accounting-settings-pt-20261012.png" alt="Configurações de Ordem E Finanças do DocBits em português, com a Contabilidade automática desativada e o tipo LN selecionado"><figcaption><p>Localize a Contabilidade automática e verifique o tipo selecionado antes de a ativar.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc786-auto-accounting-type-options-pt-20261012.png" alt="Menu Tipo da Contabilidade automática aberto no DocBits em português, com as opções LN e M3"><figcaption><p>LN e M3 são os tipos disponíveis neste ambiente Sandbox; nenhuma seleção foi alterada.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc770-auto-accounting-type-options-pt-20261011.png" alt="Menu Tipo da Contabilidade automática aberto no DocBits em português, com as opções LN e M3"><figcaption><p>LN e M3 são os tipos disponíveis neste ambiente Sandbox; nenhuma seleção foi alterada.</p></figcaption></figure>
 
 ## Preparar o LN e o ION
 

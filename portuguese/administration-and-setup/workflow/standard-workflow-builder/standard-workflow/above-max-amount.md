@@ -1,7 +1,5 @@
 # Above Max Amount
 
-<figure><img src="../../../../.gitbook/assets/And1 (38).png" alt="DocBits Fatura 2"><figcaption></figcaption></figure>
-
 Este título indica que a regra foi concebida para gerir os casos em que o total da fatura é superior ao montante máximo que um aprovador está autorizado a tratar.
 
 #### Configuração da regra:

@@ -1,6 +1,6 @@
 # Compare In
 
-<figure><img src="../../../../../.gitbook/assets/image (41) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (41).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

@@ -46,6 +46,8 @@ Nach dem Absenden des Formulars zeigt DocBits eine Bestätigungsseite an und sen
 
 ## Passwort vergessen
 
+DocBits speichert Anmeldepasswörter als gesalzene Einweg-Hashes. Ein bestehendes Passwort kann nicht aus seinem Hash abgerufen werden; mit diesem Verfahren legen Sie deshalb ein neues Passwort fest. Siehe [Sichere Speicherung von Zugangsdaten](../../overview-and-basics/secure-storage-of-credentials.md).
+
 Wenn Sie Ihr Passwort vergessen haben:
 
 1. Klicken Sie auf dem Anmeldebildschirm auf **Passwort vergessen?**.

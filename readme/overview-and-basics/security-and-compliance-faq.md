@@ -2,6 +2,8 @@
 
 **Anbieter:** DocBits von FELLOWPRO AG | **Hosting:** Frankfurt, Deutschland | **ISO 27001 zertifiziert** | **Datum:** 2026-03-04
 
+Die Angaben zur Speicherung von Zugangsdaten und zu TLS an öffentlichen Endpunkten wurden am **16. Oktober 2026** geprüft. Die folgende Seite beschreibt den bestätigten Umfang und die Angaben, die für die jeweilige Bereitstellung noch bestätigt werden müssen. Siehe [Sichere Speicherung von Zugangsdaten](secure-storage-of-credentials.md).
+
 ---
 
 ## Legendenzeichen Status
@@ -19,7 +21,7 @@
 
 ### 1. Wo genau wird die Produktionsumgebung gehostet?
 
-**Antwort:** Gehostet auf AWS Cloud-Infrastruktur in Frankfurt, Deutschland. Verwendet S3 für Speicherung und OpenSearch für Log-Indexierung. DocBits ist ISO 27001 zertifiziert. Alle Verbindungen sind durch SSH, HTTPS und branchenübliche Verschlüsselungsprotokolle gesichert.
+**Antwort:** Gehostet auf AWS Cloud-Infrastruktur in Frankfurt, Deutschland. Verwendet S3 für Speicherung und OpenSearch für Log-Indexierung. DocBits ist ISO 27001 zertifiziert. Informationen zur Transportverschlüsselung und zum geprüften Umfang finden Sie unter [Sichere Speicherung von Zugangsdaten](secure-storage-of-credentials.md).
 
 **Status:** ✅ Bestätigt
 
@@ -67,11 +69,11 @@ EU-Kundendaten werden ausschließlich in Frankfurt gehostet. Derzeit ist keine N
 
 ### 5. Sind Daten im Ruhezustand und während der Übertragung verschlüsselt?
 
-**Antwort:** Alle Verbindungen zwischen Komponenten sind mit branchenüblichen Verschlüsselungsprotokollen (SSH, HTTPS) gesichert. ISO 27001-Zertifizierung schreibt Verschlüsselungskontrollen vor.
+**Antwort:** Die öffentlichen Endpunkte `app.docbits.com`, `auth.docbits.com` und `api.docbits.com` unterstützen HTTPS mit TLS 1.2 und TLS 1.3. Bei den Prüfungen am 16. Oktober 2026 wurden TLS 1.0 und TLS 1.1 abgewiesen. Anmeldepasswörter und Schlüssel aus der API-Schlüsselverwaltung werden durch Einweg-Hashing geschützt. Hashing ist von der Verschlüsselung von Datenbanken, Speichern und Backups zu unterscheiden.
 
-**Status:** ✅ Bestätigt
+**Status:** ✅ Teilweise bestätigt
 
-**Notizen:** Bestätigen Sie spezifische Verschlüsselungsstandards (z. B. AES-256 im Ruhezustand, TLS 1.2+ während der Übertragung).
+**Notizen:** Die Verschlüsselung sämtlicher gespeicherter Kontoinformationen und Backups, Verschlüsselungsverfahren, Schlüsselverwaltung und der Schutz jeder internen Verbindung erfordern eine Bestätigung für die konkrete Bereitstellung. Eine ISO-27001-Zertifizierung allein belegt keinen bestimmten Algorithmus oder dessen Geltungsbereich. Siehe [Sichere Speicherung von Zugangsdaten](secure-storage-of-credentials.md).
 
 ---
 
@@ -268,11 +270,11 @@ EU-Kundendaten werden ausschließlich in Frankfurt gehostet. Derzeit ist keine N
 
 ### 24. Ist die Datenübertragung zwischen DocBits und LN durchgehend verschlüsselt?
 
-**Antwort:** Alle Verbindungen zwischen Komponenten sind mit branchenüblicher Verschlüsselung (SSH, HTTPS) gesichert.
+**Antwort:** Die dokumentierte ION-API-Integration verwendet HTTPS. Der öffentliche DocBits-API-Endpunkt unterstützt TLS 1.2 und TLS 1.3. Diese Prüfung belegt weder die Verschlüsselung jedes internen Verarbeitungsschritts noch die TLS-Richtlinie des ERP-Endpunkts des Kunden.
 
-**Status:** ✅ Bestätigt
+**Status:** ✅ Teilweise bestätigt
 
-**Notizen:** ION API-Kommunikation nutzt HTTPS/TLS. Bestätigen Sie die minimale TLS-Version (1.2+).
+**Notizen:** Bestätigen Sie den vollständigen Verbindungsweg, die TLS-Anforderungen des ERP-Endpunkts und die Zertifikatsprüfung der eingerichteten Integration, bevor Sie eine durchgehende Verschlüsselung zusichern. Siehe [Sichere Speicherung von Zugangsdaten](secure-storage-of-credentials.md).
 
 ---
 
@@ -283,3 +285,15 @@ EU-Kundendaten werden ausschließlich in Frankfurt gehostet. Derzeit ist keine N
 **Status:** ✅ Bestätigt
 
 **Notizen:** Klären Sie, welche Dokumenttypen zu LN zurückgeschrieben werden vs. nur in IDM gespeichert sind.
+
+---
+
+## Speicherung von Zugangsdaten und Kontowiederherstellung
+
+### 26. Kann der Anbieter Zugangsdaten einsehen, und was passiert bei einem verlorenen Passwort?
+
+**Antwort:** DocBits speichert Anmeldepasswörter als gesalzene Einweg-Hashes. Administratoren und der DocBits-Support können das ursprüngliche Klartextpasswort nicht aus dem gespeicherten Hash abrufen. Wer sein Passwort vergessen hat, muss über das Zurücksetzen per E-Mail ein neues festlegen, um sich wieder mit einem Passwort anzumelden. Eingerichtetes SSO oder Passkeys bieten alternative Anmeldemöglichkeiten. API-Schlüssel aus der DocBits-API-Schlüsselverwaltung werden nur einmal angezeigt und als Einweg-Hashes gespeichert. Weder Administratoren noch der DocBits-Support können den vollständigen Schlüssel danach erneut abrufen. Verlorene Schlüssel müssen widerrufen und ersetzt werden.
+
+**Status:** ✅ Teilweise bestätigt
+
+**Notizen:** Diese Aussagen gelten für Anmeldepasswörter und von DocBits ausgestellte Schlüssel. Berechtigte Organisationsadministratoren können Kontodaten einsehen. Integrationszugangsdaten müssen gegebenenfalls vom verbindenden Dienst ausgelesen werden; Mitarbeiterzugriffe beim Anbieter erfordern eine gesonderte Bestätigung. Siehe [Sichere Speicherung von Zugangsdaten](secure-storage-of-credentials.md).

@@ -4,13 +4,14 @@ description: DocBits Workflow Engine
 
 # Workflow
 
-<figure><img src="../../.gitbook/assets/And1.png" alt="DocBits Flujo de trabajo 3"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_workflow_3.png" alt="DocBits Flujo de trabajo 3"><figcaption></figcaption></figure>
 
 ## Motor de Flujo de Trabajo DocBits: Simplificación de la Automatización de Procesos
 
 ### Introducción
 
 {% embed url="https://youtu.be/YQC13wCqTJI" %}
+
 
 En el ámbito de la automatización de procesos, el Motor de Flujo de Trabajo DocBits destaca por su enfoque sencillo e intuitivo. Este motor optimiza la creación y gestión de flujos de trabajo a través de una estructura basada en reglas clara y simple. El principio fundamental detrás de su diseño es la regla "Easy When-And-Then" (Fácil Cuando-Y-Entonces), que descompone el proceso de automatización en tres componentes fundamentales: Disparador, Condición y Acción. Esta guía explica cómo funciona cada componente dentro del sistema y cómo trabajan juntos para facilitar una automatización fluida.
 

@@ -1,4 +1,4 @@
-# Exportación a M3 Mapeo (API)
+# Exportación a M3 Mapping (API)
 
 ### Secciones
 
@@ -37,15 +37,15 @@ Eliminar un campo:
 
 * Los campos de M3 disponibles se pueden consultar abriendo la pantalla correspondiente en M3.
 
-<figure><img src="../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee.png" alt=""><figcaption></figcaption></figure>
 
 * De la misma forma puede obtener los nombres de los campos de las líneas
 
 ### Cabecera (Header):
 
-<figure><img src="../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt=""><figcaption></figcaption></figure>
 
 Propiedad de lista de campos: StaticFields
 

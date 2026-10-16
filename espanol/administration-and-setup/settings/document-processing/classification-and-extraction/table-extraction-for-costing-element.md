@@ -1,4 +1,4 @@
-# Extracción de tablas para el elemento de costos
+# Table extraction for costing element
 
 ### **What Does It Do?**
 
@@ -22,19 +22,22 @@ You can find the **guide on setting up costing elements** in **DocBits** here.
 1. Go to **Settings → Document Processing → Classification and Extraction → Table Extraction**.
 2. Enable **Costing Element Extraction**.
 
-<figure><img src="../../../../.gitbook/assets/auto_extract_tax_code_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211105422.jpg" alt=""><figcaption></figcaption></figure>
 
 ### **How to Set or Change the Classification**
 
-1.  Click on the **box icon** next to the item.\\
+1.  Click on the **box icon** next to the item.\
 
-    <figure><img src="../../../../.gitbook/assets/auto_extract_tax_code_1.png" alt=""><figcaption></figcaption></figure>
-2.  A **dropdown menu** with all configured costing elements will appear.\\
 
-    <figure><img src="../../../../.gitbook/assets/auto_extract_tax_code_1.png" alt=""><figcaption></figcaption></figure>
-3.  Select the correct **costing element type**.\\
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211104810.jpg" alt=""><figcaption></figcaption></figure>
+2.  A **dropdown menu** with all configured costing elements will appear.\
 
-    <figure><img src="../../../../.gitbook/assets/auto_extract_tax_code_1.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102530.jpg" alt=""><figcaption></figcaption></figure>
+3.  Select the correct **costing element type**.\
+
+
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102650.jpg" alt=""><figcaption></figcaption></figure>
 4. The classification is now updated accordingly.
 
-<figure><img src="../../../../.gitbook/assets/auto_extract_tax_code_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211103411.jpg" alt=""><figcaption></figcaption></figure>

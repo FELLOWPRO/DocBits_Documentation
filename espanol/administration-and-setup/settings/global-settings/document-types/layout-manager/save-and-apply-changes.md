@@ -9,7 +9,7 @@
 * Después de haber realizado las personalizaciones deseadas en el Administrador de Diseños, busque el botón "Guardar" para guardar los cambios.
 * Haga clic en este botón para guardar sus cambios en el Administrador de Diseños. Esto respalda sus personalizaciones de diseño y asegura que estén disponibles para futuras sesiones de edición.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_publish_button.png" alt="Docbits Script Mapping Doc Type"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_script_mapping_doc_type.png" alt="Docbits Script Mapping Doc Type"><figcaption></figcaption></figure>
 
 #### Aplicar los cambios al flujo de trabajo de procesamiento de documentos:
 

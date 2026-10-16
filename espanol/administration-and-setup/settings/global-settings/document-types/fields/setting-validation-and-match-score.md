@@ -18,7 +18,7 @@ Esta configuración le permite establecer reglas que comprueban si los datos int
 
 <figure><img src="../../../../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (99).png" alt="Docbits Decide Column Necessity" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_decide_column_necessity.png" alt="Docbits Decide Column Necessity" width="375"><figcaption></figcaption></figure>
 
 **Impacto:**
 
@@ -26,7 +26,7 @@ Esta configuración le permite establecer reglas que comprueban si los datos int
 
 ### Puntuación de coincidencia (Match Score):
 
-<figure><img src="../../../../../.gitbook/assets/image (120).png" alt="" width="116"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (121).png" alt="" width="116"><figcaption></figcaption></figure>
 
 Esta configuración le permite comparar el valor introducido con un valor de referencia predefinido.
 

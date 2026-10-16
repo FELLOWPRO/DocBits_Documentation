@@ -1,10 +1,10 @@
-# Tipos de Documentos
+# Document Types
 
 {% embed url="https://youtu.be/pFz_6tvNlU4" %}
 DocBits Document Types Explained: Create, Configure & Assign Processing Settings
 {% endembed %}
 
-<figure><img src="../../../../.gitbook/assets/image (78).png" alt="Document Types"><figcaption><p>Página Document Types</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/document_types.png" alt="Document Types"><figcaption><p>Página Document Types</p></figcaption></figure>
 
 ## Descripción general
 
@@ -17,27 +17,27 @@ La página Document Types muestra todos los tipos de documento que DocBits recon
 
 Cada tarjeta de tipo de documento muestra:
 
-| Control                           | Descripción                                                                               |
-| --------------------------------- | ----------------------------------------------------------------------------------------- |
-| **Activate**                      | Interruptor para activar o desactivar este tipo de documento para su procesamiento.       |
-| **Extraction**                    | Interruptor para activar o desactivar la extracción de datos basada en IA para este tipo. |
-| **Settings** (icono de engranaje) | Abre opciones de configuración adicionales para el tipo de documento.                     |
+| Control | Descripción |
+|---------|-------------|
+| **Activate** | Interruptor para activar o desactivar este tipo de documento para su procesamiento. |
+| **Extraction** | Interruptor para activar o desactivar la extracción de datos basada en IA para este tipo. |
+| **Settings** (icono de engranaje) | Abre opciones de configuración adicionales para el tipo de documento. |
 
 ## Pestañas de configuración
 
 Debajo de cada tipo de documento puede acceder a las siguientes pestañas de configuración:
 
-| Pestaña                | Descripción                                                                                             |
-| ---------------------- | ------------------------------------------------------------------------------------------------------- |
-| **Labels**             | Gestione las etiquetas de visualización y las traducciones del tipo de documento.                       |
-| **Edit layout**        | Modifique cómo aparece el documento en la vista de validación, incluidas las posiciones de los campos.  |
-| **Document Sub Types** | Configure subcategorías para este tipo de documento (por ejemplo, distintos formatos de factura).       |
-| **Table columns**      | Personalice qué columnas de datos aparecen en la tabla de posiciones.                                   |
-| **Fields**             | Gestione los campos de datos extraídos del documento (añadir, editar o eliminar campos).                |
-| **Model Training**     | Configure y entrene el modelo de IA utilizado para reconocer y extraer datos.                           |
-| **Regex**              | Configure expresiones regulares para la extracción de datos basada en patrones.                         |
-| **Scripts**            | Escriba scripts de procesamiento personalizados que se ejecutan durante el procesamiento de documentos. |
-| **E-Doc**              | Configure estándares de documentos electrónicos (XRechnung, ZUGFeRD, EDI, FatturaPA).                   |
+| Pestaña | Descripción |
+|-----|-------------|
+| **Labels** | Gestione las etiquetas de visualización y las traducciones del tipo de documento. |
+| **Edit layout** | Modifique cómo aparece el documento en la vista de validación, incluidas las posiciones de los campos. |
+| **Document Sub Types** | Configure subcategorías para este tipo de documento (por ejemplo, distintos formatos de factura). |
+| **Table columns** | Personalice qué columnas de datos aparecen en la tabla de posiciones. |
+| **Fields** | Gestione los campos de datos extraídos del documento (añadir, editar o eliminar campos). |
+| **Model Training** | Configure y entrene el modelo de IA utilizado para reconocer y extraer datos. |
+| **Regex** | Configure expresiones regulares para la extracción de datos basada en patrones. |
+| **Scripts** | Escriba scripts de procesamiento personalizados que se ejecutan durante el procesamiento de documentos. |
+| **E-Doc** | Configure estándares de documentos electrónicos (XRechnung, ZUGFeRD, EDI, FatturaPA). |
 
 ## Custom Validation Rules
 

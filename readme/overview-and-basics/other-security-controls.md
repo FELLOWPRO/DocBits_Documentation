@@ -1,6 +1,6 @@
 # Weitere Sicherheitsmaßnahmen
 
-Geprüft am **16. Oktober 2026** für Frage **4.17**. Diese Seite unterscheidet veröffentlichte Auditnachweise von einer aktuellen Bestandsaufnahme der Infrastruktur.
+Geprüft am **16. Oktober 2026**. Diese Seite unterscheidet veröffentlichte Auditnachweise von einer aktuellen Bestandsaufnahme der Infrastruktur.
 
 | Maßnahme | Dokumentierter Umfang |
 | --- | --- |
@@ -17,6 +17,6 @@ Geprüft am **16. Oktober 2026** für Frage **4.17**. Diese Seite unterscheidet 
 
 Auditberichte und Prüfzeiträume finden Sie unter [Zertifizierungen](architecture/certifications.md). Historische Audits belegen die beschriebenen Maßnahmen für ihren geprüften Umfang; die Infrastrukturprüfung bestätigt vorhandene Ressourcen am Prüftag und ist kein vollständiges Konfigurationsaudit.
 
-Zur Verschlüsselung und Anmeldung siehe [Sichere Speicherung von Zugangsdaten](secure-storage-of-credentials.md) und [Verschlüsselung gespeicherter Daten](encryption-at-rest.md). Prüfungen, Updates und offene CVEs behandelt [Schwachstellenmanagement](vulnerability-management.md).
+Zur Verschlüsselung und Anmeldung siehe [Sichere Speicherung von Zugangsdaten](secure-storage-of-credentials.md) und [Verschlüsselung gespeicherter Daten](../security/encryption-at-rest.md). Prüfungen, Updates und offene CVEs behandelt [Schwachstellenmanagement](vulnerability-management.md).
 
 Für Einschränkungen Ihrer Bereitstellung, Mobilgeräteanforderungen oder aktuelle Richtliniennachweise: **compliance@fellowpro.com**.

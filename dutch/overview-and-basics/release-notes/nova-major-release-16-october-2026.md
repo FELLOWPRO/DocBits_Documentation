@@ -42,16 +42,14 @@ Raadpleeg de [releaselifecycle](../docbits-release-lifecycle-strategy.md) voor b
 
 Gebruik deze handleidingen naast de releasenotes om de gerelateerde functies en hun configuratie te begrijpen. Video's die in het Nederlands beschikbaar zijn, zijn hieronder gelinkt; andere video's zijn duidelijk gelabeld als Engels.
 
-| Onderwerp | Video |
-| --- | --- |
-| Kies de juiste automatisering — inclusief waar Inkoopordermatchingsregels passen | [Nederlandse video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/nl.mp4) · [Engelse video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4) |
-| Transformatieregels | [Nederlandse video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/nl.mp4) · [Engelse video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4) |
-| Aangepaste validatieregels | [Engelse video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4) |
-| Lay-outs en selectieregels | [Engelse video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/en.mp4) |
-| Touchless Intelligence | [Nederlandse video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/nl.mp4) · [Engelse video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/en.mp4) |
-| Validatie van e-facturen | [Nederlandse video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/nl.mp4) · [Engelse video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/en.mp4) |
-| Gebruikers en beheerderstoegang | [Nederlandse video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/nl.mp4) · [Engelse video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/en.mp4) |
-| Suborganisaties | [Nederlandse video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/nl.mp4) · [Engelse video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/en.mp4) |
+* [Kies de juiste automatisering — inclusief waar Inkoopordermatchingsregels passen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/nl.mp4)
+* [Transformatieregels](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/nl.mp4)
+* [Aangepaste validatieregels (Engelse video)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4)
+* [Lay-outs en selectieregels (Engelse video)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/en.mp4)
+* [Touchless Intelligence](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/nl.mp4)
+* [Validatie van e-facturen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/nl.mp4)
+* [Gebruikers en beheerderstoegang](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/nl.mp4)
+* [Suborganisaties](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/nl.mp4)
 
 ### AI Table: zes korte video's
 

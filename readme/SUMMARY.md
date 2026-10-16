@@ -116,6 +116,7 @@
 
 ## Administratie en instelling <a href="#administration-and-setup" id="administration-and-setup"></a>
 
+* [Kies de juiste automatisering](administration-and-setup/choose-the-right-automation.md)
 * [Instellingen](administration-and-setup/settings/README.md)
   * [Wegwijs in de Nieuwe Indeling](administration-and-setup/settings/ui-redesign-guide.md)
   * [Global Settings](administration-and-setup/settings/global-settings/README.md)

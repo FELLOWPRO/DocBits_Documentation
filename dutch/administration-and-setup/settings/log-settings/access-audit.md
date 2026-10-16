@@ -14,14 +14,14 @@ Zolang de dienst uit staat, kunnen de filters en de logtabel geen gebeurtenissen
 
 ## Een gebeurtenis vinden
 
-| Bediening                          | Wat deze doet                                                           |
-| ---------------------------------- | ----------------------------------------------------------------------- |
-| **Time Range**                     | Beperkt de lijst tot een periode zoals Last Hour, Today of Last 7 Days. |
-| **Create**, **Update**, **Delete** | Neemt die soorten acties op of sluit ze uit.                            |
-| **Resource Type**                  | Beperkt de resultaten tot een brontype, zoals documents of settings.    |
-| **Search logs**                    | Doorzoekt de zichtbare auditregels op tekst.                            |
-| **Refresh**                        | Laadt de nieuwste overeenkomende regels eenmalig.                       |
-| **Auto-refresh**                   | Houdt de lijst automatisch bijgewerkt zolang de pagina open is.         |
-| **Export**                         | Downloadt de huidige auditloggegevens als een JSON-bestand.             |
+| Bediening | Wat deze doet |
+|---|---|
+| **Time Range** | Beperkt de lijst tot een periode zoals Last Hour, Today of Last 7 Days. |
+| **Create**, **Update**, **Delete** | Neemt die soorten acties op of sluit ze uit. |
+| **Resource Type** | Beperkt de resultaten tot een brontype, zoals documents of settings. |
+| **Search logs** | Doorzoekt de zichtbare auditregels op tekst. |
+| **Refresh** | Laadt de nieuwste overeenkomende regels eenmalig. |
+| **Auto-refresh** | Houdt de lijst automatisch bijgewerkt zolang de pagina open is. |
+| **Export** | Downloadt de huidige auditloggegevens als een JSON-bestand. |
 
 De samenvattingskaarten tonen het totaal en het aantal aangemaakte, bijgewerkte en verwijderde acties voor de gekozen filters. In de tabel toont **Timestamp** wanneer een gebeurtenis plaatsvond, identificeert **User** de actor, benoemt **Action** de wijziging en identificeert **Resource** het betrokken item. Open de detailbediening van een rij om de vastgelegde wijziging te bekijken. Als er geen gebeurtenissen verschijnen, controleer dan of de dienst is ingeschakeld en verruim het tijdsbereik voordat u de andere filters wijzigt.

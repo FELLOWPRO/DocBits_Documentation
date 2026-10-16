@@ -13,13 +13,13 @@ De **Kennisgrafiekverkenner** helpt u verbindingen te zien tussen leveranciers, 
 
 ## Kies wat u ziet
 
-| Bedienelement                  | Wat het doet                                                                                                                                                                                                                  |
-| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Navigatie**                  | Schakelt tussen **Vendor Overview** (verbonden leveranciers), **Vendor Intelligence** (een leverancierstabel), **Document Journey** (stappen en varianten in documentverwerking) en **Anomalies** (ongebruikelijke relaties). |
-| **Type**                       | Selecteer de soorten items waarop u zich wilt richten, zoals Documents, Vendors, Purchase Orders of Invoices. Geselecteerde types beperken ook de zoekresultaten.                                                             |
-| **Grafiekstatistieken**        | Toont het aantal knooppunten (items) en randen (verbindingen) dat momenteel beschikbaar is. Vouw dit sectie in of uit zoals u wilt.                                                                                           |
-| **Vertrouwen**                 | Open deze sectie om de minimale relatiebetrouwbaarheid in te stellen bij het uitvouwen van een knooppunt. Een hogere waarde beperkt de getoonde verbindingen.                                                                 |
-| **Grafiek opnieuw opbouwen**   | Start een nieuwe grafiekberekening. Wacht tot de berekening is voltooid voordat u opnieuw zoekt.                                                                                                                              |
-| **Grafiekverkenner / Analyse** | Schakelt tussen de interactieve grafiek en overzichtsdiagrammen. **Analyse** toont aantallen en diagrammen wanneer grafiekgegevens bestaan; een lege grafiek laat ook **Analyse** leeg.                                       |
+| Bedienelement | Wat het doet |
+| --- | --- |
+| **Navigatie** | Schakelt tussen **Vendor Overview** (verbonden leveranciers), **Vendor Intelligence** (een leverancierstabel), **Document Journey** (stappen en varianten in documentverwerking) en **Anomalies** (ongebruikelijke relaties). |
+| **Type** | Selecteer de soorten items waarop u zich wilt richten, zoals Documents, Vendors, Purchase Orders of Invoices. Geselecteerde types beperken ook de zoekresultaten. |
+| **Grafiekstatistieken** | Toont het aantal knooppunten (items) en randen (verbindingen) dat momenteel beschikbaar is. Vouw dit sectie in of uit zoals u wilt. |
+| **Vertrouwen** | Open deze sectie om de minimale relatiebetrouwbaarheid in te stellen bij het uitvouwen van een knooppunt. Een hogere waarde beperkt de getoonde verbindingen. |
+| **Grafiek opnieuw opbouwen** | Start een nieuwe grafiekberekening. Wacht tot de berekening is voltooid voordat u opnieuw zoekt. |
+| **Grafiekverkenner / Analyse** | Schakelt tussen de interactieve grafiek en overzichtsdiagrammen. **Analyse** toont aantallen en diagrammen wanneer grafiekgegevens bestaan; een lege grafiek laat ook **Analyse** leeg. |
 
-Als u een verschil tussen een factuur en de bijbehorende order wilt oplossen, gaat u verder met het [Scherm voor het vergelijken van inkooporders](../end-user-and-partner-section/end-user-section/purchase-order-matching/). Voor bredere statistieken buiten de grafiek zie het [Analytics Dashboard](../administration-and-setup/analytics-dashboard.md).
+Als u een verschil tussen een factuur en de bijbehorende order wilt oplossen, gaat u verder met het [Scherm voor het vergelijken van inkooporders](../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md). Voor bredere statistieken buiten de grafiek zie het [Analytics Dashboard](../administration-and-setup/analytics-dashboard.md).

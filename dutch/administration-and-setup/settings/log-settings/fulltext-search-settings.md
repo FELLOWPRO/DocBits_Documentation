@@ -1,4 +1,4 @@
-# Volledige-Tekstzoek-Instellingen
+# Instellingen voor zoeken in volledige tekst
 
 <figure><img src="../../../.gitbook/assets/fulltext-search-settings-module-required-nl-20261011.png" alt="Instellingen voor zoeken in volledige tekst in de sandbox, met een dialoogvenster dat uitlegt dat de module vereist is en de knoppen Ga naar Modules en Nu inschakelen"><figcaption><p>Wanneer zoeken in volledige tekst is uitgeschakeld, legt dit dialoogvenster de volgende stappen uit.</p></figcaption></figure>
 
@@ -27,7 +27,7 @@ Het tabblad Documenten omvat alles wat te maken heeft met het indexeren van verw
 * **Herindex-acties** — start een volledige of incrementele herindexering. Tijdens een herindexering ziet u live voortgang (documenten per minuut, verwachte resterende tijd), de huidige streamstatus en de laatste fout (indien aanwezig).
 * **Synchronisatiediagnostiek** — diagnostiek op aanvraag voor gevallen waarin de index niet synchroon lijkt met de onderliggende documentopslag.
 
-Herindexering is niet-destructief — de bestaande zoekfunctie blijft werken terwijl de nieuwe index wordt opgebouwd.
+<mark>Herindexering is niet-destructief — de bestaande zoekfunctie blijft werken terwijl de nieuwe index wordt opgebouwd.</mark>
 
 ### Tabblad "ERP"
 

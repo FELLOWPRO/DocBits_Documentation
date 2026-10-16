@@ -2,6 +2,40 @@
 
 Die **KI Extrahierte Tabelle** ist die Positionstabelle, die DocBits mit KI liest, wenn ein Lieferant keine trainierten Tabellenregeln hat. Sie erscheint im Validierungsbildschirm unterhalb der Kopffelder. Diese Seite erklärt jedes Bedienelement rund um die Tabelle: wie Sie eine falsche Spalte korrigieren, wie Sie der KI Anweisungen geben, wie Sie eine Änderung testen, bevor Sie sie behalten, wie Sie sehen, was die KI getan hat, was der Assistent für Sie tun kann und was nicht, und wer was speichern darf.
 
+## Videoserie
+
+Kurze Videos für den Alltag. Schauen Sie sie der Reihe nach oder springen Sie zu dem, das Sie brauchen.
+
+### 1. Die KI-Tabelle lesen
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part1/v1/de.mp4" %}
+
+Was Sie in der KI-Tabelle sehen und was jede Schaltfläche macht. Etwa 1,8 Minuten.
+
+### 2. Eine Spalte korrigieren und DocBits anlernen
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part2/v1/de.mp4" %}
+
+Die richtige Spalte wählen, der KI Anweisungen geben, eine Änderung testen und für die nächsten Rechnungen behalten. Etwa 1,9 Minuten.
+
+### 3. Zwei typische Probleme
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part3/v1/de.mp4" %}
+
+Preiseinheit 1.000 oder 100 und ein doppelt abgezogener Rabatt. Was Sie sehen, was Sie schreiben, wie Sie prüfen. Etwa 1,6 Minuten.
+
+### 4. Das liest die KI richtig
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part5/v1/de.mp4" %}
+
+Fünf Layouts, die DocBits ohne Hilfe richtig liest, und was Sie zuerst tun. Etwa 1,3 Minuten.
+
+### 5. Der Assistent und wer was ändern darf
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part6/v1/de.mp4" %}
+
+Wie der Assistent bei der KI-Tabelle hilft, wie Sie dem Administrator eine Verbesserung vorschlagen und was nur Administratoren ändern dürfen. Etwa 1,5 Minuten.
+
 ## Wann Sie die KI-Tabelle erhalten
 
 * Ein Administrator hat **AI-Tabellen-Extraktion** eingeschaltet (Einstellungen → Dokumentenverarbeitung → Klassifizierung und Extraktion, siehe [Einstellungen für Administratoren](#einstellungen-fur-administratoren)). Ist sie ausgeschaltet, zeigt der Tabellenbereich *Hier wird die KI-Tabelle angezeigt. Aktivieren in …*.

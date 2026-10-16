@@ -11,7 +11,6 @@
 * [Security & Compliance FAQ](overview-and-basics/security-and-compliance-faq.md)
 * [Two-Factor Authentication (2FA)](overview-and-basics/two-factor-authentication.md)
 * [Infor Infrastructure](overview-and-basics/infor-infrastructure.md)
-* [When to use rules, workflows, or scripts](overview-and-basics/when-to-use-rules-workflows-and-scripts.md)
 * [Diagram Preview](overview-and-basics/diagram-preview/README.md)
   * [Processing Pipeline](overview-and-basics/diagram-preview/processing-pipeline.md)
   * [Document Status Lifecycle](overview-and-basics/diagram-preview/document-status-lifecycle.md)

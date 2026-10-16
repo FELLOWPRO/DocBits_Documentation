@@ -2,6 +2,8 @@
 
 **Verfügbarkeit von NOVA R1.1:** Seit dem **16. Oktober 2026** in der Sandbox verfügbar. Der Produktionsrelease ist für den **4. November 2026** geplant.
 
+**DocBits ist das Produkt. NOVA bezeichnet den Releasezyklus.** [Film zum neuen DocBits-Release ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/de.mp4) · [Untertitel](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/de.vtt).
+
 **Sandbox-Serviceversionen: Stand 16. Oktober 2026**
 
 NOVA umfasst alle Funktionen, die zuvor als Beta in VESTA verfügbar waren, nun als reguläre Funktionen, ergänzt um geführte Dokumentenvalidierung, weitere Möglichkeiten zur Automatisierungsverbesserung, klarere E-Rechnungsprüfungen und bessere Steuerung von Importen und Dokumentenverarbeitung. Diese Hinweise beschreiben die kundenseitigen Erweiterungen in den unten aufgeführten Serviceversionen im Vergleich zum zuletzt veröffentlichten [VESTA-Hotfix, R1.0.15 vom 14. Oktober 2026](incremental-updates-14-october-2026.md), einschließlich früherer VESTA-Hotfixes.

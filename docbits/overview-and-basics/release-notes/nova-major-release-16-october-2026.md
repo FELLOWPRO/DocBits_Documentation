@@ -6,16 +6,30 @@ NOVA adds guided document validation, more ways to improve automation, clearer e
 
 The snapshot identifies the builds covered by these notes. For availability in your sandbox or production environment and switching between channels, see the [DocBits release lifecycle](../docbits-release-lifecycle-strategy.md). Features that have an organisation or document-type switch still need to be enabled by an administrator.
 
-## What changes for a VESTA customer?
+## What NOVA adds for customers
 
-| Area | Already available in VESTA | What NOVA adds |
+The comparison below separates new capabilities from extensions to features that VESTA already provides.
+
+| Capability | Already in VESTA | What customers gain with NOVA |
 | --- | --- | --- |
-| Assistance | Settings Assistant and Header Field Check | A Validation Assistant inside documents, suggested actions, explanations and a separate chat window. |
-| Automation analysis | Touchless Intelligence, supplier diagnosis and change proposals | Proposals learned from repeated corrections, improvement requests, an administrator review view, a consulting report and follow-up measurement. |
-| Rules and layouts | Rule engines; some management controls required a beta link | Direct access to the management controls, richer layout selection, transformations after lookup and more accessible execution logs. |
-| E-invoices | E-document validation and a rule catalogue | A clearer report organised by validation level, policy controls, change history and rejection from the report. |
-| Imports | Email and FTP/SFTP import | A setup wizard, detailed FTP steps, retry settings, failure notifications, delete-after-import and proactive import-health guidance. |
-| Processing | Page limits, PO matching and export | Restart with a selected page count, matching in both directions, and separate Exported and Finished statuses. |
+| **Help while validating a document** | Settings Assistant and Header Field Check | **New Validation Assistant:** identify blocking fields, jump to the relevant value, review suggested corrections and keep the chat in a separate window. |
+| **Improve automation from everyday corrections** | Touchless Intelligence dashboard, supplier diagnosis and change proposals | **New review and measurement process:** submit improvement requests, review learned rule proposals, see affected-document evidence, rank opportunities and measure results after activation. |
+| **Understand and resolve e-invoice errors** | E-document checks, rule catalogue and XML viewer | **Expanded E-Invoice Validation:** reports grouped by validation level, policy controls and change history, rejection from the report and XML inspection inside supported PDF invoices. |
+| **Control FTP/SFTP imports** | Import connections and source-file retention or archiving | **New guided setup and controls:** connection wizard, step-by-step logs, configurable retries and failure notifications, and deletion of source files after successful import. |
+| **Work with rules and layouts** | Rule engines, execution logs and transformations after master data lookup; management panels required a beta link | **Broader access and better tools:** open management panels directly, search and preview target layouts, open a document's layout editor and record layout-selection execution. |
+| **Act from the Settings Assistant** | Settings chat, preview/confirm/undo and proactive import-health warnings | **Additional actions:** manage failing connections, see deactivation history, change selected configuration items, create an inactive validation rule from a catalogue and watch page explanations. |
+| **Control document processing** | Organisation page limits and document restart | **New document-level choices:** restart with a chosen page count, see processed versus total pages, and choose whether hidden fields are extracted. |
+| **Match complex deliveries** | Purchase order matching and manual line linking | **More flexible matching:** select lines in either direction, optionally retain each matched document sub-line and group export requests by configured line columns. |
+| **Keep exported and completed work distinct** | Existing export and Finished workflows | **New status controls:** use Exported for follow-up processing, optionally lock Finished documents, and find documents held back by the workflow execution limit. |
+
+### Enable the features that need configuration
+
+* **Validation Assistant:** an organisation administrator enables it under **Settings → Company Information → Assistants**. It is separate from the Settings Assistant and is off until enabled.
+* **Improvement review and consulting reports:** require organisation-administrator and Analytics access. Learned proposals need correction history; a measured result needs sufficient data and the follow-up period to complete.
+* **Rule and layout controls:** their document-type enable switches still apply. NOVA makes the management panels accessible without a beta link.
+* **Optional processing behaviour:** configure FTP cleanup and retries per connection. One-to-many sub-line expansion and the finished-document lock are opt-in settings.
+
+For availability in your environment and release-channel switching, see the [release lifecycle](../docbits-release-lifecycle-strategy.md).
 
 ## Validation Assistant: help with the document in front of you
 
@@ -39,11 +53,11 @@ The existing [Touchless Intelligence](../../administration-and-setup/touchless-i
 * **Supplier-specific matching advice.** Repeated supplier and item matching problems can inform proposals for tolerances or matching rules. Advice distinguishes a missing purchase order from a rule or tolerance issue.
 * **Follow-up summaries.** A weekly administrator summary brings together open improvement requests, leading opportunities and completed measurements when there is something to report. Requesters can be notified when a measured result is available.
 
-## Settings Assistant: more actions and import-health guidance
+## Settings Assistant: additional actions and page explanations
 
-The [Settings Assistant](../../administration-and-setup/settings/global-settings/company-information/settings-assistant.md) already shipped in VESTA. NOVA extends it with:
+The [Settings Assistant](../../administration-and-setup/settings/global-settings/company-information/settings-assistant.md), including proactive email/FTP health warnings, already shipped in VESTA. NOVA adds actions and context to that existing experience:
 
-* **Proactive import-health cards.** Failed email and FTP connections appear in separate channel cards, with an expandable list of affected configurations, their retry or disabled state and the reported reason. Administrators can open import settings or ask for help from the card.
+* **Connection actions from a health notice.** Open the affected connection, review the available action and confirm it from the assistant. Health notices can also be dismissed. The basic per-channel warning cards and their error/retry information already exist in VESTA.
 * **Visible deactivation history.** Where recorded, a disabled import shows when it was switched off and by whom.
 * **Additional reviewed actions.** Administrators can preview and confirm supported changes such as activating document types, renaming a group, changing a lookup field's search mode, deleting a field or creating an inactive custom-validation rule from the catalogue.
 * **Manage failing import connections.** Supported cards can switch off or delete a connection after confirmation. Reversible actions offer an undo; permanent deletion is identified as such.
@@ -52,10 +66,12 @@ The [Settings Assistant](../../administration-and-setup/settings/global-settings
 ## Rules and layouts: direct access and better diagnostics
 
 * **Management controls without a beta link.** Manage Layouts, Custom Validation Rules and Transformation Rules are visible in NOVA's document-type advanced settings. Their enable switches remain under administrator control. The underlying rule engines are not new to NOVA; the wider access and refinements are.
-* **Use values supplied by master data.** The transformation-rule option **Also run after master data lookup** lets an opted-in rule run after a lookup has populated fields, before purchase order matching. For example, a rule can use a supplier ID that only becomes known through the lookup.
-* **Inspect rule execution from the dashboard.** Open a document's rule logs to see the validation, transformation and layout-selection rules involved. Selection rules have a log-execution option; rule editors can be opened by their identifier.
-* **Choose layouts with more context.** The layout picker supports search and a preview of layout content. Selection rules can target approval layouts, and layout management fixes improve creating and cloning organisation layouts.
-* **Clearer rule editing.** Conditions such as “is one of” support multiple selected values. Rule editors use the available screen width, and validation messages identify incomplete rule data more clearly. Copying standard line or table validation rules preserves the required table information.
+* **More useful rule diagnostics.** Layout-selection rules gain a **Log execution** option. Rule search accepts rule identifiers, and opening an editor loads the current saved rule. The existing rule-execution log remains the place to review what ran.
+* **Choose and open layouts with more context.** Search target layouts, preview their content and open the target directly from a selection rule. Approval selection rules correctly accept the supported approval-layout types. Administrators also get a shortcut from document validation to that document type's layout editor.
+* **Select several condition values.** Conditions such as **is one of** support multiple selected values.
+* **Find duplicate-detection fields faster.** The field selector in the document type's duplicate settings is searchable.
+
+Transformations after master data lookup, the basic rule-execution log, wider rule editors and the standard-rule cloning fixes are already present in the VESTA baseline. NOVA carries those capabilities forward.
 
 See [Custom Validation Rules](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md), [Transformation Rules](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) and [Layout Selection Rules](../../administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md).
 
@@ -64,6 +80,7 @@ See [Custom Validation Rules](../../administration-and-setup/settings/global-set
 * **A report organised by validation level.** Findings are grouped into syntax, schema, business rules, cross-check rules and country-specific rules, with additional groups for other standards checks and value checks. Messages and summaries use the user's language where translations are available.
 * **More complete checks and clearer results.** The updated validator and report distinguish errors, warnings and the effective severity after organisation-specific configuration. The page is named **E-Invoice Validation**.
 * **Policies by document type.** Administrators can review whether e-invoice validation is enabled and whether failures block processing. The policy view identifies subtype overrides, and policy changes are recorded in a change history.
+* **Inspect the XML inside a PDF invoice.** The XML viewer can read the embedded XML in supported ZUGFeRD/Factur-X PDFs, open the position referenced by a finding and return to the document.
 * **Reject with a recorded reason.** An authorised reviewer can reject an eligible document from the validation report. The report prepares a reason from its errors for the reviewer to check before confirming.
 * **Further format corrections.** EDNA utility CII invoices are recognised, and corrections to XRechnung VAT mapping improve how relevant invoice values reach DocBits fields.
 
@@ -108,23 +125,27 @@ See [FTP Import](../../end-user-and-partner-section/end-user-section/how-to-impo
 * **More reliable task and dashboard views.** Tasks without an assignee can be listed, opened and assigned. The task board reloads when the selected organisation is ready, custom dashboard date ranges are applied correctly, and duplicate document rows are avoided.
 * **Better labels and logs.** Administrators can edit field and table-column translation keys. Document-log columns can be resized, custom dashboard columns handle mixed-case field identifiers, and long labels and filenames fit more consistently.
 * **Notification scope.** Document-status email rules can be limited to a sub-organisation.
-* **Supplier onboarding.** Supplier Portal registration magic links remain valid for **21 days instead of 7 days**.
+* **Supplier onboarding.** Supplier Portal registration magic links remain valid for **21 days instead of 7 days**. Administrators can also configure the upload-error heading for a file field in a supplier layout.
 * **Sign-in reliability.** SAML sign-in no longer reuses expired or revoked sessions. Management sign-in supports the required MFA step, and inactive memberships cannot receive a new set-password invitation.
 * **Idea Board images.** Uploaded images are stored and served separately from the idea description, improving image handling.
 * **Controlled channel switching.** The Release Channel setting can be made read-only when switching is not enabled for the environment. Follow the release announcement for availability.
 
-## Features already announced in VESTA
+## Connected assistants and integration tools
+
+For organisations and partners using the DocBits MCP integration, NOVA adds tools to list resolved validation rules, test one rule against a document without saving changes, and explain the stored rule-execution evidence. Connected assistants can also list improvement requests and submit an administrator-authorised approval through the same review process as the web app. Existing organisation and document permissions apply.
+
+## Capabilities already present in VESTA
 
 NOVA also carries existing capabilities. The following are **not** being announced as new in this major release:
 
-* The original Settings Assistant, its documentation search and basic preview/confirm/undo flow.
+* The original Settings Assistant, its documentation search, basic preview/confirm/undo flow and proactive email/FTP import-health warnings.
 * Fast, Full, Nexus and Auto AI tiers and the vision-mode setting.
 * The Header Field Check and the original value-origin report.
 * The first Touchless Intelligence release, supplier diagnosis, bulk analysis and the purchase order decision diagram.
-* The underlying validation, transformation and layout-selection rule engines.
+* The underlying validation, transformation and layout-selection rule engines, transformations after master data lookup and the basic rule-execution log.
 * Earlier dashboard search improvements, MFA, verified organisation email domains, charge tolerance and the increase of the workflow execution limit to 50.
 
-See the [14 October VESTA hotfix](incremental-updates-14-october-2026.md), [15 September hotfix](incremental-updates-15-september-2026.md) and [earlier release notes](README.md#vesta-hotfix-releases) for those announcements.
+See the [14 October VESTA hotfix](incremental-updates-14-october-2026.md), [15 September hotfix](incremental-updates-15-september-2026.md) and [earlier release notes](README.md#vesta-hotfix-releases) for the VESTA release history.
 
 ## NOVA service versions
 

@@ -69,6 +69,8 @@ La verifica copre le connessioni a questi endpoint pubblici, incluse quelle di c
 
 ## Crittografia delle informazioni degli account archiviate
 
+DigitalOcean Managed Databases utilizza la crittografia dell’intero volume con LUKS e AES-256-XTS; i suoi backup gestiti utilizzano AES-256-CTR. Spaces utilizza AES-XTS a 256 bit sui dischi fisici. [Crittografia dei dati a riposo](encryption-at-rest.md) descrive metodi, gestione delle chiavi, copertura dei backup e risposta alla domanda 4.8.
+
 L'hashing delle password e delle chiavi API è una misura distinta dalla crittografia di database, volumi di archiviazione, oggetti e backup. I controlli descritti non dimostrano che ogni nome utente, campo dell'account o segreto di integrazione sia cifrato singolarmente, né che tutti i dati archiviati utilizzino un determinato algoritmo di crittografia.
 
 Per un requisito che comprenda tutte le informazioni degli account dei clienti, richiedere a FELLOWPRO AG una dichiarazione specifica per l'ambiente che copra gli archivi di dati e i backup pertinenti, i metodi di crittografia, la gestione delle chiavi e l'accesso del personale. Un modello di hosting cloud o serverless, da solo, non dimostra queste proprietà.

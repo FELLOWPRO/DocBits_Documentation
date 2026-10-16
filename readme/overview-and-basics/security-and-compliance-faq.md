@@ -6,6 +6,8 @@ As informações sobre o armazenamento de credenciais e TLS nos pontos de acesso
 
 Os detalhes da cifragem em repouso foram verificados em **16 de outubro de 2026** com base na documentação de segurança da DigitalOcean e nos metadados dos serviços. Consulte [Cifragem em repouso](encryption-at-rest.md), incluindo a pergunta 4.8.
 
+Para as perguntas **4.15–4.17**, consulte [Cookies e armazenamento do navegador](cookies-and-browser-storage.md), [Gestão de vulnerabilidades](vulnerability-management.md), [Outros controlos de segurança](other-security-controls.md).
+
 ---
 
 ## Legenda de Status

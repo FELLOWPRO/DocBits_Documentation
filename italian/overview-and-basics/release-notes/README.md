@@ -1,6 +1,61 @@
-# Note della versione
+# Note di rilascio
 
-> **Ultima release hotfix:** [Hotfixes 14 ottobre 2026](incremental-updates-14-october-2026.md) (R1.0.15): la chat del Settings Assistant in ogni pagina delle impostazioni, nuovi livelli AI (Fast, Full, Nexus, Auto), il controllo dei campi di intestazione, accesso e accesso social più sicuri, e la corrispondenza degli addebiti degli ordini di acquisto. Precedente: [Hotfixes 15 settembre 2026](incremental-updates-15-september-2026.md). Tutte le pagine degli hotfix sono elencate nella navigazione sotto Note di rilascio.
+Scegli un canale di rilascio per vedere cosa cambia per il tuo team. **NOVA è il rilascio principale con capacità aggiuntive per i clienti. Gli hotfix di VESTA migliorano la release di produzione attuale.** Vedi il [ciclo di vita del rilascio](../docbits-release-lifecycle-strategy.md) per la disponibilità e il passaggio tra i canali.
+
+**Le ex funzionalità beta di VESTA sono ora incluse in NOVA.** Tutte le funzionalità precedentemente disponibili come beta in VESTA fanno parte del set di funzionalità standard di NOVA. Diventeranno anche funzionalità standard di VESTA con il [prossimo hotfix di VESTA, pianificato per l'**11 novembre 2026**](vesta-hotfix-11-november-2026.md).
+
+| Canale di rilascio | Note di rilascio | Focus |
+| --- | --- | --- |
+| **NOVA — Rilascio principale** | [Novità per i clienti](nova-major-release-16-october-2026.md) · Snapshot della versione del **16 ottobre 2026** | Tutte le ex funzionalità beta di VESTA, più nuove capacità ed estensioni rispetto a VESTA R1.0.15. |
+| **VESTA — Prossimo hotfix (pianificato)** | [11 novembre 2026](vesta-hotfix-11-november-2026.md) | Introduce tutte le ex funzionalità beta di VESTA nel set di funzionalità standard di VESTA. |
+| **VESTA — Rilascio hotfix** | [14 ottobre 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Miglioramenti e correzioni per la release di produzione attuale di VESTA. |
+
+## NOVA — Rilascio principale
+
+### Cosa ottiene il tuo team con NOVA
+
+* **Usa le ex funzionalità beta di VESTA come funzionalità standard di NOVA.** Tutte le funzionalità precedentemente offerte nella beta di VESTA sono incluse in NOVA, inclusi i controlli di gestione delle regole e dei layout. Si applicano ancora le impostazioni dell'organizzazione, gli interruttori per tipo di documento e le autorizzazioni.
+* **Risolvi i blocchi dei documenti con l'Assistente di convalida.** Chiedi cosa blocca un documento, passa al campo rilevante e rivedi le correzioni suggerite restando sul documento.
+* **Trasforma le correzioni ripetute in miglioramenti automatizzati revisionati.** I revisori possono inviare richieste di miglioramento; gli amministratori possono valutare le proposte di regole apprese, rivedere i documenti interessati e misurare il risultato dopo l'attivazione.
+* **Comprendi e agisci sugli errori delle fatture elettroniche.** Usa report raggruppati per livello di convalida, rivedi le policy per tipo di documento e la loro cronologia, e rifiuta una fattura idonea con una motivazione registrata.
+* **Configura e controlla gli importazioni FTP/SFTP.** Usa la procedura guidata di connessione, segui i passaggi di importazione per singolo file, configura i tentativi ripetuti e le notifiche di errore, e opzionalmente elimina i file sorgente dopo un'importazione riuscita.
+* **Abbina le righe di consegna con meno azioni ripetute.** Seleziona prima le righe del documento o dell'ordine di acquisto e collegale in entrambe le direzioni. Le esportazioni configurate possono preservare i dettagli delle sotto-righe e raggruppare i record per valori di riga.
+* **Mantieni il lavoro esportato separato dal lavoro completato.** Usa lo stato Exported per l'elaborazione di follow-up e opzionalmente blocca i documenti Finished contro la riapertura ordinaria.
+* **Accedi direttamente ai controlli di regole e layout.** Apri i pannelli di gestione senza un link beta, cerca e visualizza in anteprima i layout, e apri l'editor di layout da un documento.
+* **Controlla l'estrazione e l'amministrazione di routine.** Riavvia un documento con un numero di pagine scelto, scegli se estrarre i campi nascosti, usa ulteriori azioni dell'Assistente impostazioni e limita le regole di notifica a una sub-organizzazione.
+
+### Guide per la configurazione delle regole
+
+* [**Regole di trasformazione**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md): pulisci e riscrivi i valori estratti, crea una sequenza di passaggi e visualizza in anteprima il risultato. **Guarda:** [Video in italiano](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/it.mp4) · [Video in inglese](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4).
+* [**Regole di convalida personalizzate**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md): definisci controlli per i campi e le righe di tabella, scegli le condizioni e la gravità e testa le tue regole. **Guarda:** [Video in inglese](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4).
+* [**Regole di abbinamento degli ordini di acquisto**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md): configura i tipi di abbinamento, le tolleranze e l'ordine di esecuzione e gestisci le versioni delle regole. **Video correlato — Scegli l'automazione giusta:** [Video in italiano](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/it.mp4) · [Video in inglese](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4).
+
+[Sfoglia tutti i video delle funzionalità](nova-major-release-16-october-2026.md#watch-the-feature-videos), inclusi layout, Touchless Intelligence, convalida delle fatture elettroniche e la serie in sei parti su AI Table.
+
+[Leggi il confronto completo delle funzionalità NOVA](nova-major-release-16-october-2026.md), inclusi i requisiti di attivazione, i miglioramenti aggiuntivi e tutte le **16 versioni del servizio**.
+
+**La baseline VESTA include funzionalità esistenti e funzionalità beta:** l'originale Assistente impostazioni, avvisi di base sullo stato di salute dell'importazione, livelli AI, Controllo campo intestazione, dashboard Touchless Intelligence, motori di regole, trasformazioni dopo la ricerca dei dati anagrafici e registri di esecuzione delle regole di base. Le note NOVA distinguono il passaggio da beta a disponibilità standard dai ulteriori miglioramenti a queste funzionalità.
+
+## VESTA — Rilasci hotfix <a href="#vesta-hotfix-releases" id="vesta-hotfix-releases"></a>
+
+**Prossimo hotfix pianificato: [11 novembre 2026](vesta-hotfix-11-november-2026.md).** Tutte le funzionalità precedentemente disponibili come beta in VESTA, e ora incluse in NOVA, diventeranno funzionalità VESTA regolari in questo hotfix.
+
+**Ultimo hotfix rilasciato: [14 ottobre 2026 — R1.0.15](incremental-updates-14-october-2026.md).** Questo hotfix VESTA ha introdotto l'Assistente impostazioni, i livelli AI aggiornati, il Controllo campo intestazione, miglioramenti all'accesso e miglioramenti all'abbinamento dei costi degli ordini di acquisto.
+
+Note degli hotfix VESTA precedenti:
+
+* [15 settembre 2026 — R1.0.13](incremental-updates-15-september-2026.md)
+* [8 settembre 2026](incremental-updates-8-september-2026.md)
+* [12–25 agosto 2026](incremental-updates-12-25-august-2026.md)
+* [29 luglio – 12 agosto 2026](incremental-updates-29-july-12-august-2026.md)
+* [14–29 luglio 2026](incremental-updates-14-29-july-2026.md)
+* [4–14 luglio 2026](incremental-updates-4-14-july-2026.md)
+* [3–4 luglio 2026](incremental-updates-3-4-july-2026.md)
+* [30 giugno – 3 luglio 2026](incremental-updates-30-june-3-july-2026.md)
+* [26–30 giugno 2026](incremental-updates-26-30-june-2026.md)
+* [21–25 giugno 2026](incremental-updates-21-25-june-2026.md)
+
+Gli annunci di rilascio originali rimangono di seguito per riferimento.
 
 ## **Release R1.0 13/14 giugno 2026**
 

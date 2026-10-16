@@ -6,10 +6,10 @@ Les numéros de version utilisés dans ce guide (R1.0.x, R1.1.x et R1.2) sont do
 
 ## Canaux de version
 
-| Canal     | Rôle dans le cycle de vie                                                                                                                                                                                                          |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **VESTA** | Fournit la version de production actuelle.                                                                                                                                                                                         |
-| **NOVA**  | Fournit la version suivante au fil de son développement, de ses tests et de sa mise à disposition en production. Pendant la phase de production parallèle, NOVA et VESTA proposent toutes deux des versions de production actives. |
+| Canal | Rôle dans le cycle de vie |
+| --- | --- |
+| **VESTA** | Fournit la version de production actuelle. |
+| **NOVA** | Fournit la version suivante au fil de son développement, de ses tests et de sa mise à disposition en production. Pendant la phase de production parallèle, NOVA et VESTA proposent toutes deux des versions de production actives. |
 
 ## Vue d'ensemble du cycle de vie
 
@@ -17,11 +17,11 @@ Les numéros de version utilisés dans ce guide (R1.0.x, R1.1.x et R1.2) sont do
 
 Chaque cycle comprend trois phases. Une bascule gérée par FELLOWPRO intègre ensuite la version de production NOVA dans VESTA et lance le cycle suivant.
 
-| Phase                                  | VESTA                | NOVA                  | Ce que cela signifie pour votre organisation                                                              |
-| -------------------------------------- | -------------------- | --------------------- | --------------------------------------------------------------------------------------------------------- |
-| **1. Développement**                   | R1.0.x en production | R1.1 en développement | Continuez à utiliser VESTA pendant la préparation de la version suivante.                                 |
-| **2. Tests QA et tests d'acceptation** | R1.0.x en production | R1.1 en QA et UAT     | Évaluez la future version dans la sandbox NOVA tandis que le travail en production se poursuit sur VESTA. |
-| **3. Production parallèle**            | R1.0.x en production | R1.1.x en production  | Restez sur VESTA ou passez de manière autonome à NOVA lorsque vous êtes prêts.                            |
+| Phase | VESTA | NOVA | Ce que cela signifie pour votre organisation |
+| --- | --- | --- | --- |
+| **1. Développement** | R1.0.x en production | R1.1 en développement | Continuez à utiliser VESTA pendant la préparation de la version suivante. |
+| **2. Tests QA et tests d'acceptation** | R1.0.x en production | R1.1 en QA et UAT | Évaluez la future version dans la sandbox NOVA tandis que le travail en production se poursuit sur VESTA. |
+| **3. Production parallèle** | R1.0.x en production | R1.1.x en production | Restez sur VESTA ou passez de manière autonome à NOVA lorsque vous êtes prêts. |
 
 Après la bascule, tous les clients utilisent VESTA R1.1.x, et NOVA est réaffecté au développement de R1.2. La phase 1 recommence alors avec ces versions mises à jour.
 
@@ -59,11 +59,11 @@ FELLOWPRO annonce la bascule prévue à l'avance à tous les clients par e-mail 
 
 ### Ce qui change lors de la bascule
 
-| Changement                                   | Résultat                                                                                                            |
-| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| **La version NOVA devient la version VESTA** | R1.1.x devient la version de production commune dans VESTA pour tous les clients.                                   |
-| **La version précédente est retirée**        | R1.0.x est mise hors service et n'est plus disponible, ni par l'un ou l'autre des canaux, ni par aucun autre moyen. |
-| **NOVA est réaffecté à la version suivante** | Le développement de R1.2 commence dans NOVA, ce qui ouvre la phase 1 du cycle suivant.                              |
+| Changement | Résultat |
+| --- | --- |
+| **La version NOVA devient la version VESTA** | R1.1.x devient la version de production commune dans VESTA pour tous les clients. |
+| **La version précédente est retirée** | R1.0.x est mise hors service et n'est plus disponible, ni par l'un ou l'autre des canaux, ni par aucun autre moyen. |
+| **NOVA est réaffecté à la version suivante** | Le développement de R1.2 commence dans NOVA, ce qui ouvre la phase 1 du cycle suivant. |
 
 Les trois mêmes phases se répètent ensuite avec les nouveaux numéros de version.
 
@@ -81,10 +81,10 @@ FELLOWPRO communique chaque bascule prévue à l'avance. Tout calendrier indicat
 
 ## Responsabilités et choix du client
 
-| Transition                                     | Qui la gère        | À quoi vous attendre                                                                                                                                                                                                                                                                      |
-| ---------------------------------------------- | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Passage de VESTA à NOVA pendant la phase 3** | Votre organisation | Évaluez NOVA dans la sandbox et choisissez si et quand effectuer le passage à l'aide du paramètre Release Channel de l'application.                                                                                                                                                       |
-| **Bascule de NOVA R1.1.x vers VESTA R1.1.x**   | FELLOWPRO          | Prenez connaissance de l'annonce préalable envoyée par e-mail, faites part de vos éventuelles préoccupations ou objections et confirmez votre acceptation de la transition prévue. FELLOWPRO procède à la bascule une fois la version prête et l'acceptation de tous les clients obtenue. |
+| Transition | Qui la gère | À quoi vous attendre |
+| --- | --- | --- |
+| **Passage de VESTA à NOVA pendant la phase 3** | Votre organisation | Évaluez NOVA dans la sandbox et choisissez si et quand effectuer le passage à l'aide du paramètre Release Channel de l'application. |
+| **Bascule de NOVA R1.1.x vers VESTA R1.1.x** | FELLOWPRO | Prenez connaissance de l'annonce préalable envoyée par e-mail, faites part de vos éventuelles préoccupations ou objections et confirmez votre acceptation de la transition prévue. FELLOWPRO procède à la bascule une fois la version prête et l'acceptation de tous les clients obtenue. |
 
 ## Questions fréquentes
 

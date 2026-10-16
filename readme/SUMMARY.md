@@ -10,7 +10,6 @@
   * [Prérequis de l'installation locale de Prefect](overview-and-basics/architecture/prefect-local-setup-requirements.md)
 * [FAQ Sécurité & Conformité](overview-and-basics/security-and-compliance-faq.md)
 * [Stockage sécurisé des identifiants](overview-and-basics/secure-storage-of-credentials.md)
-* [Chiffrement au repos](overview-and-basics/encryption-at-rest.md)
 * [Cookies et stockage du navigateur](overview-and-basics/cookies-and-browser-storage.md)
 * [Gestion des vulnérabilités](overview-and-basics/vulnerability-management.md)
 * [Autres contrôles de sécurité](overview-and-basics/other-security-controls.md)
@@ -46,6 +45,10 @@
     * [votre administrateur de le configurer.](overview-and-basics/faq/infor-m3-m3-integration/costing-elements-are-not-properly-configured.-please-ask-your-admin-to-configure-it..md)
     * [Guide de diagnostic d'exportation de l'API M3](overview-and-basics/faq/infor-m3-m3-integration/m3-api-export-diagnostic-guide.md)
   * [Canaux PDP/PPF obligatoires – PEPPOL uniquement comme transport pour la facturation électronique 2026 en France](overview-and-basics/faq/mandatory-pdp-ppf-channels-peppol-as-transport-only-for-frances-2026-e-invoicing.md)
+
+## Sécurité <a href="#security" id="security"></a>
+
+* [Chiffrement au repos](security/encryption-at-rest.md)
 
 ## Section utilisateurs et partenaires <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 

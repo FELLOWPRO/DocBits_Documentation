@@ -1,6 +1,6 @@
 # Autres contrôles de sécurité
 
-Vérifié le **16 octobre 2026** pour la question **4.17**. Les preuves d'audit publiées sont distinguées de l'inventaire actuel de l'infrastructure.
+Vérifié le **16 octobre 2026**. Les preuves d'audit publiées sont distinguées de l'inventaire actuel de l'infrastructure.
 
 | Contrôle | Périmètre documenté |
 | --- | --- |
@@ -17,6 +17,6 @@ Vérifié le **16 octobre 2026** pour la question **4.17**. Les preuves d'audit 
 
 [Certifications](architecture/certifications.md) donne accès aux rapports et à leurs périodes. Les audits historiques étayent les contrôles pour leur périmètre évalué ; l'inventaire confirme la présence de ressources à la date de vérification, sans être un audit complet de configuration.
 
-Voir [Stockage sécurisé des identifiants](secure-storage-of-credentials.md), [Chiffrement au repos](encryption-at-rest.md) et [Gestion des vulnérabilités](vulnerability-management.md).
+Voir [Stockage sécurisé des identifiants](secure-storage-of-credentials.md), [Chiffrement au repos](../security/encryption-at-rest.md) et [Gestion des vulnérabilités](vulnerability-management.md).
 
 Pour les restrictions du déploiement, exigences mobiles ou politiques actuelles : **compliance@fellowpro.com**.

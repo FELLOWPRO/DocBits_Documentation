@@ -1,10 +1,10 @@
 ---
-description: Chiffrement au repos de DocBits sur DigitalOcean, avec bases de données, Spaces, couverture des sauvegardes et question 4.8.
+description: Chiffrement au repos de DocBits sur DigitalOcean, avec bases de données, Spaces et couverture des sauvegardes.
 ---
 
 # Chiffrement au repos
 
-DocBits utilise DigitalOcean Managed Databases et DigitalOcean Spaces. La vérification du **16 octobre 2026** a confirmé des services gérés PostgreSQL, OpenSearch et Valkey pour la production de l’UE à Francfort. La [FAQ Sécurité et conformité](security-and-compliance-faq.md) documente l’utilisation de Spaces pour le stockage.
+DocBits utilise DigitalOcean Managed Databases et DigitalOcean Spaces. La vérification du **16 octobre 2026** a confirmé des services gérés PostgreSQL, OpenSearch et Valkey pour la production de l’UE à Francfort. La [FAQ Sécurité et conformité](../overview-and-basics/security-and-compliance-faq.md) documente l’utilisation de Spaces pour le stockage.
 
 Cette page décrit les mesures de chiffrement publiées par DigitalOcean pour ces services. Les installations sur site et les copies stockées dans d’autres systèmes nécessitent leur propre évaluation.
 
@@ -25,20 +25,18 @@ Les informations sur les bases de données et les sauvegardes proviennent du [mo
 
 DigitalOcean gère le chiffrement d’infrastructure décrit ci-dessus. Pour Managed Databases, le fournisseur documente une clé aléatoire par instance et volume, supprimée à la destruction de l’instance. Les sauvegardes de bases de données gérées utilisent une clé aléatoire par fichier, protégée par une paire de clés RSA propre au service.
 
-Le chiffrement du stockage protège les données sur les supports. Les applications et utilisateurs autorisés de la base de données peuvent toujours lire les données via le service. Cela ne démontre ni que le personnel du fournisseur ne peut accéder aux informations de compte, ni que chaque champ est chiffré au niveau applicatif. Le hachage des mots de passe et des clés API constitue une mesure distincte ; voir [Stockage sécurisé des identifiants](secure-storage-of-credentials.md).
+Le chiffrement du stockage protège les données sur les supports. Les applications et utilisateurs autorisés de la base de données peuvent toujours lire les données via le service. Cela ne démontre ni que le personnel du fournisseur ne peut accéder aux informations de compte, ni que chaque champ est chiffré au niveau applicatif. Le hachage des mots de passe et des clés API constitue une mesure distincte ; voir [Stockage sécurisé des identifiants](../overview-and-basics/secure-storage-of-credentials.md).
 
 Spaces prend également en charge [SSE-C avec des clés fournies par le client](https://docs.digitalocean.com/products/spaces/reference/s3-compatibility/). Cette possibilité facultative ne prouve pas que DocBits utilise SSE-C ou des clés de chiffrement gérées par le client.
 
-## Couverture des sauvegardes
+## Chiffrement des sauvegardes
 
-Les sauvegardes de bases de données gérées, les instantanés de volumes et les sauvegardes d’images de Droplets sont des produits différents. Les [limites des sauvegardes de Droplets](https://docs.digitalocean.com/products/backups/details/limits/) indiquent que ces sauvegardes d’images ne sont pas chiffrées au repos. Cette vérification n’a pas établi que DocBits utilise ce produit de sauvegarde.
+Les sauvegardes créées par DigitalOcean Managed Databases sont chiffrées avec AES-256-CTR et protégées contre les modifications non détectées par HMAC-SHA256. Les clés de chiffrement propres à chaque fichier sont protégées par RSA-3072. Les instantanés de volumes héritent du chiffrement du volume DigitalOcean sous-jacent. Ces informations décrivent les fonctions de sauvegarde des services gérés nommés.
 
-Les mesures ci-dessus permettent donc une déclaration limitée aux services nommés. Les dumps de bases de données, fichiers exportés, archives à long terme et copies de reprise après sinistre supplémentaires nécessitent de confirmer la destination de stockage, le chiffrement et la gestion des clés avant d’étendre la garantie à toutes les copies. Un calendrier de sauvegarde ou une architecture cloud/serverless ne suffit pas à établir cette couverture.
+## Types de chiffrement au repos
 
-## 4.8 — Types de chiffrement au repos
-
-Le texte suivant peut être utilisé pour le périmètre documenté :
+Les principales méthodes de chiffrement des services nommés sont résumées ci-dessous :
 
 > DocBits utilise DigitalOcean Managed Databases et Spaces. Les données des bases de données gérées sont chiffrées au repos au niveau des volumes complets avec LUKS et AES-256-XTS (512 bits de matériel de clé XTS combiné). Les sauvegardes de ces bases utilisent AES-256-CTR avec HMAC-SHA256 pour l’intégrité et RSA-3072 pour protéger les clés de chiffrement propres à chaque fichier. Spaces applique un chiffrement intégral des disques par AES-XTS 256 bits sur son stockage physique.
 >
-> Ces mesures au niveau du stockage couvrent les données des volumes et disques protégés ; elles n’impliquent pas un chiffrement séparé de chaque champ de la base de données. DigitalOcean gère les clés de chiffrement d’infrastructure. Cette déclaration couvre les services gérés nommés. Le chiffrement et la gestion des clés des exports, archives et copies de sauvegarde supplémentaires nécessitent une confirmation distincte pour le déploiement concerné.
+> Ces mesures au niveau du stockage couvrent les données des volumes et disques protégés ; elles n’impliquent pas un chiffrement séparé de chaque champ de la base de données. DigitalOcean gère les clés de chiffrement d’infrastructure. Cette déclaration couvre les services gérés nommés.

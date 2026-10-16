@@ -4,7 +4,7 @@ description: "DocBits 在 DigitalOcean 上的静态数据加密，包括数据�
 
 # 静态数据加密
 
-DocBits 使用 DigitalOcean Managed Databases 和 DigitalOcean Spaces。**2026 年 10 月 16 日**的审查确认，欧盟生产环境使用托管 PostgreSQL、OpenSearch 和 Valkey 服务，部署在法兰克福。[安全与合规常见问题](../overview-and-basics/security-and-compliance-faq.md)说明了 Spaces 的存储用途。
+DocBits 使用 DigitalOcean Managed Databases 和 DigitalOcean Spaces。**2026 年 10 月 16 日**的审查确认，欧盟生产环境使用托管 PostgreSQL、OpenSearch 和 Valkey 服务，部署在法兰克福。[安全与合规常见问题](security-and-compliance-faq.md)说明了 Spaces 的存储用途。
 
 以下内容介绍 DigitalOcean 发布的这些服务的加密控制措施。本地部署以及存储在其他系统中的副本需要单独评估。
 
@@ -26,7 +26,7 @@ XTS 使用两个 AES 密钥。托管数据库服务使用的 512 位组合 XTS �
 
 DigitalOcean 管理上述基础设施加密。对于 Managed Databases，DigitalOcean 说明每个实例和卷都会使用随机生成的密钥，并在实例销毁时丢弃该密钥。托管数据库备份的每个文件使用随机密钥，并由服务专用的 RSA 密钥对保护。
 
-存储加密可保护存储介质上的数据。经过授权的应用程序和数据库用户仍可通过服务读取数据。这并不能证明供应商人员无法访问账户信息，也不能证明每个字段都经过应用层加密。登录密码和 API 密钥哈希属于单独的控制措施；请参阅[凭据的安全存储](../overview-and-basics/secure-storage-of-credentials.md)。
+存储加密可保护存储介质上的数据。经过授权的应用程序和数据库用户仍可通过服务读取数据。这并不能证明供应商人员无法访问账户信息，也不能证明每个字段都经过应用层加密。登录密码和 API 密钥哈希属于单独的控制措施；请参阅[凭据的安全存储](secure-storage-of-credentials.md)。
 
 Spaces 还支持[使用客户提供密钥的 SSE-C](https://docs.digitalocean.com/products/spaces/reference/s3-compatibility/)。这项可选功能并不能证明 DocBits 使用 SSE-C 或客户管理的加密密钥。
 

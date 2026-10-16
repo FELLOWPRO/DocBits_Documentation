@@ -6,7 +6,7 @@
 * [忘记密码](#forgot-password) — 使用重置链接重置密码。
 * [管理员创建账户后的首次密码](#first-password-for-admin-created-accounts) — 为管理员创建的账户设置首次密码。
 
-使用现有账户登录以及双重身份验证，请参阅[双重身份验证 (2FA)](../../overview-and-basics/two-factor-authentication.md)。如果需要使用其他显示语言，请使用这些表单右上角的语言菜单。
+使用现有账户登录以及双重身份验证，请参阅[双重身份验证 (2FA)](../../security/two-factor-authentication.md)。如果需要使用其他显示语言，请使用这些表单右上角的语言菜单。
 
 ## 注册 <a id="registration"></a>
 
@@ -46,7 +46,7 @@
 
 ## 忘记密码 <a id="forgot-password"></a>
 
-DocBits 会将登录密码保存为带盐的单向哈希值。无法从哈希值还原已有密码，因此此流程会设置新密码。有关密码存储和恢复的详情，请参阅[凭据的安全存储](../../overview-and-basics/secure-storage-of-credentials.md)。
+DocBits 会将登录密码保存为带盐的单向哈希值。无法从哈希值还原已有密码，因此此流程会设置新密码。有关密码存储和恢复的详情，请参阅[凭据的安全存储](../../security/secure-storage-of-credentials.md)。
 
 如果忘记密码：
 

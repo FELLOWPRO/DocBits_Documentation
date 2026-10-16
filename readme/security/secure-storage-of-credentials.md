@@ -69,7 +69,7 @@ DocBits 将登录密码存储为**加盐的单向密码哈希**。用户登录�
 
 ## 已存储账户信息的加密
 
-DigitalOcean Managed Databases 使用 AES-256-XTS 进行全卷 LUKS 加密；其托管备份使用 AES-256-CTR。Spaces 在物理磁盘上使用 256 位 AES-XTS。有关加密方法、密钥管理、备份覆盖范围，请参阅[静态数据加密](../security/encryption-at-rest.md)。
+DigitalOcean Managed Databases 使用 AES-256-XTS 进行全卷 LUKS 加密；其托管备份使用 AES-256-CTR。Spaces 在物理磁盘上使用 256 位 AES-XTS。有关加密方法、密钥管理、备份覆盖范围，请参阅[静态数据加密](encryption-at-rest.md)。
 
 密码哈希和 API 密钥哈希是与数据库、存储卷、对象及备份加密相互独立的控制措施。上述控制措施不能证明每个用户名、账户字段或集成秘密凭据都经过单独加密，也不能证明所有存储的数据都使用了特定加密算法。
 

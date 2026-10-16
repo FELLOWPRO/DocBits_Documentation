@@ -8,12 +8,6 @@
   * [DocBits Infor 本地部署客户](overview-and-basics/architecture/docbits-infor-on-premise-customer.md)
   * [认证](overview-and-basics/architecture/certifications.md)
   * [Prefect 本地设置要求](overview-and-basics/architecture/prefect-local-setup-requirements.md)
-* [DocBits (FELLOWPRO AG) — 安全与合规问卷](overview-and-basics/security-and-compliance-faq.md)
-* [凭据的安全存储](overview-and-basics/secure-storage-of-credentials.md)
-* [Cookie 与浏览器存储](overview-and-basics/cookies-and-browser-storage.md)
-* [漏洞管理](overview-and-basics/vulnerability-management.md)
-* [其他安全控制](overview-and-basics/other-security-controls.md)
-* [双重身份验证（2FA）](overview-and-basics/two-factor-authentication.md)
 * [Infor 基础设施](overview-and-basics/infor-infrastructure.md)
 * [图表预览](overview-and-basics/diagram-preview/README.md)
   * [处理流程](overview-and-basics/diagram-preview/processing-pipeline.md)
@@ -53,7 +47,13 @@
 
 ## 安全 <a href="#security" id="security"></a>
 
+* [DocBits (FELLOWPRO AG) — 安全与合规问卷](security/security-and-compliance-faq.md)
+* [凭据的安全存储](security/secure-storage-of-credentials.md)
 * [静态数据加密](security/encryption-at-rest.md)
+* [Cookie 与浏览器存储](security/cookies-and-browser-storage.md)
+* [漏洞管理](security/vulnerability-management.md)
+* [其他安全控制](security/other-security-controls.md)
+* [双重身份验证（2FA）](security/two-factor-authentication.md)
 
 ## 最终用户与合作伙伴
 

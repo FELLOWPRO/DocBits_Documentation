@@ -1,7 +1,5 @@
 # Less than Max Amount
 
-<figure><img src="../../../../.gitbook/assets/And1 (75).png" alt="DocBits Factuur Less Than Max"><figcaption></figcaption></figure>
-
 This title suggests that the rule or condition being set up is designed to handle invoices where the total amount is less than or equal to a specified maximum amount.
 
 #### Rule Configuration:

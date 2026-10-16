@@ -1,7 +1,5 @@
 # Purchase Invoice - 2nd Approval Unit Price Export
 
-<figure><img src="../../../../.gitbook/assets/And1 (88).png" alt="DocBits Regel Aankoop Factuur Unit Price Exporteren"><figcaption></figcaption></figure>
-
 Deze titel geeft aan dat de regel is opgezet om de tweede goedkeuringsfase van inkoopfacturen te beheren, met de nadruk op de eenheidsprijs, om ervoor te zorgen dat deze overeenkomt met de overeengekomen voorwaarden.
 
 #### Regelconfiguratie:

@@ -1,4 +1,4 @@
-# Meer instellingen
+# Meer Instellingen
 
 ## Overzicht
 
@@ -13,18 +13,18 @@
 
 De broodkruimel boven aan de pagina toont **Instellingen / Documenttypen / Meer instellingen**. De Settings Assistant rechts op de pagina legt de instellingen van de geopende kaart uit.
 
-| Kaart | Wat je daar instelt |
-| ----- | ------------------- |
-| Inkooporder | PO-matching, toleranties, export van PO-regels, leveranciersartikelnummers |
-| Lay-outs beheren | Schakelaar voor het overzicht Lay-outs beheren |
-| Aangepaste validatieregels | Je eigen validatieregels voor dit documenttype |
-| Transformatieregels | Regels die een waarde lezen, stapsgewijs wijzigen en terugschrijven |
-| Goedkeuring en afwijzing | Goedkeuringsworkflow en de formulieren voor beoordeling en afwijzing |
-| [Vertex belastingverificatie](vertex-tax-verification.md) | Het formulier voor de Vertex-belastingverificatie ontwerpen |
-| Validatie van elektronische facturen | Validatie van XRechnung-, ZUGFeRD- en Factur-X-facturen |
-| Tabel extractie | De validatie van geëxtraheerde tabellen overslaan |
-| Exportinstellingen | Meerdere exporten, PDF-formaat, alternatieve export |
-| Duplicaatdetectie | Dubbele documenten detecteren en blokkeren |
+| Kaart                                                     | Wat je daar instelt                                                        |
+| --------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Inkooporder                                               | PO-matching, toleranties, export van PO-regels, leveranciersartikelnummers |
+| Lay-outs beheren                                          | Schakelaar voor het overzicht Lay-outs beheren                             |
+| Aangepaste validatieregels                                | Je eigen validatieregels voor dit documenttype                             |
+| Transformatieregels                                       | Regels die een waarde lezen, stapsgewijs wijzigen en terugschrijven        |
+| Goedkeuring en afwijzing                                  | Goedkeuringsworkflow en de formulieren voor beoordeling en afwijzing       |
+| [Vertex belastingverificatie](vertex-tax-verification.md) | Het formulier voor de Vertex-belastingverificatie ontwerpen                |
+| Validatie van elektronische facturen                      | Validatie van XRechnung-, ZUGFeRD- en Factur-X-facturen                    |
+| Tabel extractie                                           | De validatie van geëxtraheerde tabellen overslaan                          |
+| Exportinstellingen                                        | Meerdere exporten, PDF-formaat, alternatieve export                        |
+| Duplicaatdetectie                                         | Dubbele documenten detecteren en blokkeren                                 |
 
 ## Inkooporder
 
@@ -64,7 +64,7 @@ Onder het diagram toont het paneel **Regels op basis van prioriteit, per fase**.
 * Pass **1.1 Exact match for all rules** mislukt, omdat 10.40 niet gelijk is aan 10.00. De rode pijl leidt naar de volgende pass.
 * Pass **1.2 Tolerance-based match** slaagt. Het verschil is 4 %, wat binnen 5 % valt. De groene pijl leidt naar **Overeenkomst gevonden** en de verwerking stopt.
 
-In het diagram is dit het pad 1.1, dan 1.2, dan **Overeenkomst gevonden**. Voor het pad dat een enkel document heeft afgelegd, zie [Touchless Intelligence: PO-matchingdiagnose](../../../../touchless-po-matching-diagnosis.md). Voor alle details van de regelpagina zie [Regels voor het matchen van inkooporders](purchase-order/purchase-order-matching-rules.md).
+In het diagram is dit het pad 1.1, dan 1.2, dan **Overeenkomst gevonden**. Voor het pad dat een enkel document heeft afgelegd, zie [Touchless Intelligence: PO-matchingdiagnose](../../../../analytics-dashboard/touchless-intelligence/touchless-po-matching-diagnosis.md). Voor alle details van de regelpagina zie [Regels voor het matchen van inkooporders](purchase-order/purchase-order-matching-rules.md).
 
 ### PO-tolerantie-instelling
 
@@ -86,7 +86,7 @@ De [**Leveranciersartikelnummerkaart**](purchase-order/supplier-item-number-map-
 
 Drie kaarten staan direct onder de kaart Inkooporder:
 
-* **Lay-outs beheren** schakelt het overzicht Lay-outs beheren in voor dit documenttype. Zie de [Layout Manager](../layout-manager/README.md).
+* **Lay-outs beheren** schakelt het overzicht Lay-outs beheren in voor dit documenttype. Zie de [Layout Manager](../layout-manager/).
 * **Aangepaste validatieregels** schakelt je eigen validatieregels in. **Validatieregels beheren** opent ze. Zie [Aangepaste validatieregels](../custom-validation-rules.md).
 * **Transformatieregels** schakelt de transformatieregels in. **Transformatieregels beheren** opent ze. Zie [Transformatieregels](../transformation-rules.md).
 
@@ -106,7 +106,7 @@ De kaart **Goedkeuring en afwijzing** bevat de goedkeuringsworkflow en de formul
 * **Ontwerp in beoordelingsformulier**: Configureert de lay-out van het beoordelingsformulier met de **Lay-outbouwer**.
 * **Ontwerp afwijzingsformulier**: Configureert de lay-out van het afwijzingsformulier met de **Lay-outbouwer**.
 
-Voor de **Lay-outbouwer** zie de [Layout Manager](../layout-manager/README.md).
+Voor de **Lay-outbouwer** zie de [Layout Manager](../layout-manager/).
 
 ## Vertex belastingverificatie
 
@@ -114,7 +114,7 @@ De kaart **Vertex belastingverificatie** bevat **Ontwerp Vertex Belastingverific
 
 ## Validatie van elektronische facturen
 
-De kaart **Validatie van elektronische facturen** schakelt de validatie van binnenkomende e-facturen in en laat je bepalen of de leverancier een bericht krijgt wanneer een factuur wordt afgewezen. Zie [Validatie van elektronische facturen](../../../document-processing/e-documents/validation-rules.md).
+De kaart **Validatie van elektronische facturen** schakelt de validatie van binnenkomende e-facturen in en laat je bepalen of de leverancier een bericht krijgt wanneer een factuur wordt afgewezen. Zie [Validatie van elektronische facturen](../../../document-processing/e-documents/validation-rules/).
 
 ## Tabel extractie
 

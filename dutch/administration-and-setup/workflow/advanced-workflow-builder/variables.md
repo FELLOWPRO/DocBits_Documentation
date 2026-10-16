@@ -8,9 +8,9 @@ Met **Variables** kun je waarden één keer opslaan en hergebruiken in de nodes 
 
 Variabelen worden gegroepeerd op hun type:
 
-* **Text** — een tekstwaarde (bijv. een beschrijving of een vast label).
-* **Yes/No** — een booleaanse vlag (Yes / No).
-* **Document** — een verwijzing naar een document of documentveld.
+- **Text** — een tekstwaarde (bijv. een beschrijving of een vast label).
+- **Yes/No** — een booleaanse vlag (Yes / No).
+- **Document** — een verwijzing naar een document of documentveld.
 
 Gebruik het zoekvak om snel een variabele te vinden wanneer de lijst groeit.
 
@@ -20,5 +20,5 @@ Klik op **New Variable**, geef deze een naam en een type, en stel de waarde in. 
 
 ## Volgende stappen
 
-* Bekijk hoe nodes deze waarden gebruiken in [Nodes](nodes.md).
-* Valideer en voer de workflow uit in [Validation & Testing](validation-and-testing.md).
+- Bekijk hoe nodes deze waarden gebruiken in [Nodes](nodes.md).
+- Valideer en voer de workflow uit in [Validation & Testing](validation-and-testing.md).

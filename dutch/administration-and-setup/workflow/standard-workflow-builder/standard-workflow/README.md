@@ -1,7 +1,5 @@
 # Workflow Examples
 
-<figure><img src="../../../../.gitbook/assets/docbits_standard_workflow_diagram_2.svg" alt="DocBits Standaardworkflow Diagram 2"><figcaption></figcaption></figure>
-
 #### Overzicht van de workflowcomponenten:
 
 * **AP Invoice Email**: Het proces begint waarschijnlijk met een factuur die per e-mail wordt ontvangen.

@@ -1,4 +1,4 @@
-# E-mailsjablonen bewerken
+# E-mail Sjablonen Bewerken
 
 <figure><img src="../../../.gitbook/assets/supplier_email_templates.png" alt="E-mailsjablonen voor leveranciers"><figcaption><p>Pagina E-mailsjablonen voor leveranciers</p></figcaption></figure>
 
@@ -12,7 +12,7 @@ De `{{magic_link}}` is een tijdelijke aanduiding die bij het verzenden van de e-
 
 ### E-mailsjablonen bewerken
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.35.53.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/docbits_email_template_editor_access.png" alt=""><figcaption></figcaption></figure>
 
 #### Toegang tot de sjablooneditor
 
@@ -77,7 +77,6 @@ Om `{{magic_link}}` als klikbare link in de e-mail te definiëren, moet u ervoor
 
 Door de \{{magic\_link\}} correct te definiëren in uw e-mailsjablonen, zorgt u ervoor dat ontvangers een gepersonaliseerde en actiegerichte e-mail ontvangen die hen naar de juiste taak in uw leveranciersportaal leidt. Dit verbetert de gebruikerservaring en zorgt voor een soepele onboarding en communicatie.
 
-\
-
+\\
 
 Deze documentatie biedt beheerders stapsgewijze instructies voor het definiëren en gebruiken van de \{{magic\_link\}} in e-mailsjablonen, zodat e-mails zowel functioneel als visueel aantrekkelijk zijn.

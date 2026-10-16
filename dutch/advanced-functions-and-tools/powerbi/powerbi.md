@@ -7,8 +7,6 @@ description: Hoe PowerBI te configureren
 Deze gids begeleidt u bij het verbinden van **ClickHouse** met **Power BI Desktop** met behulp van de **ODBC-driver**. Het behandelt driverinstallatie, ODBC-configuratie, Power BI-integratie en het instellen van gegevensvernieuwing.
 
 {% embed url="https://youtu.be/O1MtuXf_R_M" %}
-{% endembed %}
-
 
 #### 1. Installeer de ClickHouse ODBC-driver
 
@@ -40,14 +38,8 @@ Deze gids begeleidt u bij het verbinden van **ClickHouse** met **Power BI Deskto
 #### 3. Verbind ClickHouse met Power BI
 
 * Open **Power BI Desktop**.
-*   Selecteer **Gegevens ophalen** → **ODBC** → **Verbinden**.
-
-
-    <figure><img src="../../.gitbook/assets/Screenshot 2025-05-19 163621.png" alt=""><figcaption></figcaption></figure>
-*   Selecteer uit de DSN-lijst uw geconfigureerde bron (bijv. `ClickHouse_Prod`).
-
-
-    <figure><img src="../../.gitbook/assets/Screenshot 2025-05-19 163823.png" alt=""><figcaption></figcaption></figure>
+* Selecteer **Gegevens ophalen** → **ODBC** → **Verbinden**.
+* Selecteer uit de DSN-lijst uw geconfigureerde bron (bijv. `ClickHouse_Prod`).
 * Klik op **OK**. Voer inloggegevens opnieuw in indien gevraagd.
 
 #### 4. Gegevens Laden en Transformeren
@@ -55,17 +47,14 @@ Deze gids begeleidt u bij het verbinden van **ClickHouse** met **Power BI Deskto
 * In het deelvenster **Navigator**, blader en selecteer de tabellen of weergaven om te importeren.
 * Kies:
   * **Laden**: om direct te importeren
-  *   **Gegevens Transformeren**: om Power Query te openen voor gegevensvormgeving
-
-
-      <figure><img src="../../.gitbook/assets/Screenshot 2025-05-19 164134.png" alt=""><figcaption></figcaption></figure>
+  * **Gegevens Transformeren**: om Power Query te openen voor gegevensvormgeving
 
 #### 5. Visualiseer Uw Gegevens
 
 * Gebruik het rapportcanvas om visualisaties te bouwen.
 * Sleep velden, voeg slicers toe, kies grafiektypen en gebruik **DAX**-expressies indien nodig.
-* &#x20;Gebruik **Power Query Editor** om uw ClickHouse-gegevens op te schonen of te draaien voordat u visuals bouwt.
-* PowerBI documentatie:  [https://learn.microsoft.com/en-us/power-bi/](https://learn.microsoft.com/en-us/power-bi/)
+* Gebruik **Power Query Editor** om uw ClickHouse-gegevens op te schonen of te draaien voordat u visuals bouwt.
+* PowerBI documentatie: [https://learn.microsoft.com/en-us/power-bi/](https://learn.microsoft.com/en-us/power-bi/)
 
 #### 6. Schakel Geplande Vernieuwing In (Optioneel)
 
@@ -77,8 +66,6 @@ Deze gids begeleidt u bij het verbinden van **ClickHouse** met **Power BI Deskto
 * In Power BI Service:
   * Ga naar uw dataset → **Instellingen** → **Geplande Vernieuwing**
   * Wijs uw DSN toe en geef inloggegevens op
-* Meer informatie [hier](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).&#x20;
+* Meer informatie [hier](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).
 
-#### 7. Voorbeelddashboards & Gegevensweergaven&#x20;
-
-<div><figure><img src="../../.gitbook/assets/Screenshot 2025-05-13 at 12.23.07.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2025-05-13 at 12.23.17.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2025-05-13 at 12.23.26.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2025-05-13 at 12.23.34.png" alt=""><figcaption></figcaption></figure></div>
+#### 7. Voorbeelddashboards & Gegevensweergaven

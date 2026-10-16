@@ -1,6 +1,6 @@
 # Document Type
 
-<figure><img src="../../../../../.gitbook/assets/And1 (73).png" alt="DocBits Document Type Kaart" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/And1.png" alt="DocBits Document Type Kaart" width="563"><figcaption></figcaption></figure>
 
 ## Doel:
 

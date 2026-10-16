@@ -3,8 +3,6 @@
 Deze gids begeleidt u bij het verbinden van **DocBits' Alleen-Lezen Database met Power BI Desktop** met behulp van de **PostgreSQL ODBC-driver**. Het behandelt driverinstallatie, ODBC-configuratie, Power BI-integratie en geplande vernieuwing.
 
 {% embed url="https://youtu.be/O1MtuXf_R_M" %}
-{% endembed %}
-
 
 #### 1. Installeer de PostgreSQL ODBC-driver
 
@@ -35,9 +33,7 @@ Deze gids begeleidt u bij het verbinden van **DocBits' Alleen-Lezen Database met
 #### 3. Verbind Alleen-Lezen DB met Power BI
 
 * Open **Power BI Desktop**.
-*   Selecteer **Gegevens ophalen** → **ODBC** → **Verbinden**.
-
-    <figure><img src="../../.gitbook/assets/Screenshot 2025-05-19 163621.png" alt=""><figcaption></figcaption></figure>
+* Selecteer **Gegevens ophalen** → **ODBC** → **Verbinden**.
 * Selecteer uit de DSN-lijst uw geconfigureerde bron (bijv. `Sandbox-Read_Only`).
 
 <figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt=""><figcaption></figcaption></figure>
@@ -51,7 +47,7 @@ Deze gids begeleidt u bij het verbinden van **DocBits' Alleen-Lezen Database met
 * Open het **`public`** schema.
 * Selecteer de tabellen die u wilt importeren.
 
-![](../../.gitbook/assets/connect_read_only_1.png)        ![](../../.gitbook/assets/connect_read_only_2.png)
+![](../../.gitbook/assets/connect_read_only_1.png)
 
 * Kies:
   * **Laden** → Importeer direct in Power BI
@@ -74,8 +70,6 @@ Deze gids begeleidt u bij het verbinden van **DocBits' Alleen-Lezen Database met
 * In Power BI Service:
   * Ga naar uw dataset → **Instellingen** → **Geplande Vernieuwing**
   * Wijs uw DSN toe en geef inloggegevens op
-* Meer informatie [hier](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance). 
+* Meer informatie [hier](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).&#x20;
 
-#### 7. Voorbeelddashboards & Gegevensweergaven 
-
-<div><figure><img src="../../.gitbook/assets/Screenshot 2025-05-13 at 12.23.07.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2025-05-13 at 12.23.17.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2025-05-13 at 12.23.26.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2025-05-13 at 12.23.34.png" alt=""><figcaption></figcaption></figure></div>
+#### 7. Voorbeelddashboards & Gegevensweergaven&#x20;

@@ -8,15 +8,15 @@ DocBits biedt meerdere manieren om documenten te wijzigen, te controleren en te 
 
 ## Het korte antwoord
 
-| Ik wil … | Gebruik | Waarom |
-| --- | --- | --- |
-| Een waarde opschonen of herschrijven (trimmen, voorvoegsel, datumformaat, eenheidsmapping, standaardwaarde) | [Transformatieregels](settings/global-settings/document-types/transformation-rules.md) | Geen code, live voorbeeld, draait bij elke verwerking en elke opslag |
-| Zorgen dat gegevens compleet en aannemelijk zijn, en documenten stoppen die dat niet zijn | [Aangepaste validatieregels](settings/global-settings/document-types/custom-validation-rules.md) | Declaratieve controles, fout of waarschuwing, blokkeert automatische export |
-| Factuurregels matchen met inkooporderregels | [Regels voor het matchen van inkooporders](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) | Regelsets met toleranties, terugvalopties en een visueel diagram |
-| Iets doen wat een regel niet kan uitdrukken: een lookup, een berekening over velden en tabellen heen, een taak, een statuswijziging op een exact moment | [Script](settings/global-settings/document-types/script/README.md) | Python op 13 triggerpunten in de flow |
-| Bepalen **wat er hierna gebeurt** met een document: toewijzen, goedkeuren, een taak aanmaken, een e-mail versturen, exporteren, een API aanroepen | [Standaard workflow](workflow/standard-workflow-builder.md) | Kaarten Wanneer / En / Dan op statusgebeurtenissen |
-| Hetzelfde doen met vertakkingen, meerdere voorwaarden en foutpaden | [Geavanceerde workflow](workflow/advanced-workflow-builder.md) | Visuele knooppuntengrafiek |
-| Een actie nodig hebben die geen ingebouwde kaart biedt | [Workflow SDK (Card SDK)](workflow/card-sdk.md) | Uw eigen kaart, gecontroleerd door DocBits |
+| Ik wil …                                                                                                                                                | Gebruik                                                                                                                                           | Waarom                                                                      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| Een waarde opschonen of herschrijven (trimmen, voorvoegsel, datumformaat, eenheidsmapping, standaardwaarde)                                             | [Transformatieregels](settings/global-settings/document-types/transformation-rules.md)                                                            | Geen code, live voorbeeld, draait bij elke verwerking en elke opslag        |
+| Zorgen dat gegevens compleet en aannemelijk zijn, en documenten stoppen die dat niet zijn                                                               | [Aangepaste validatieregels](settings/global-settings/document-types/custom-validation-rules.md)                                                  | Declaratieve controles, fout of waarschuwing, blokkeert automatische export |
+| Factuurregels matchen met inkooporderregels                                                                                                             | [Regels voor het matchen van inkooporders](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) | Regelsets met toleranties, terugvalopties en een visueel diagram            |
+| Iets doen wat een regel niet kan uitdrukken: een lookup, een berekening over velden en tabellen heen, een taak, een statuswijziging op een exact moment | [Script](settings/global-settings/document-types/script/)                                                                                         | Python op 13 triggerpunten in de flow                                       |
+| Bepalen **wat er hierna gebeurt** met een document: toewijzen, goedkeuren, een taak aanmaken, een e-mail versturen, exporteren, een API aanroepen       | [Standaard workflow](workflow/standard-workflow-builder/)                                                                                         | Kaarten Wanneer / En / Dan op statusgebeurtenissen                          |
+| Hetzelfde doen met vertakkingen, meerdere voorwaarden en foutpaden                                                                                      | [Geavanceerde workflow](workflow/advanced-workflow-builder/)                                                                                      | Visuele knooppuntengrafiek                                                  |
+| Een actie nodig hebben die geen ingebouwde kaart biedt                                                                                                  | [Workflow SDK (Card SDK)](workflow/card-sdk.md)                                                                                                   | Uw eigen kaart, gecontroleerd door DocBits                                  |
 
 **Vuistregel: gebruik het minst krachtige hulpmiddel dat de klus klaart.** Eerst regels, dan Script, als laatste Workflow of SDK-kaart. Regels zijn makkelijker te lezen, makkelijker te testen en kunnen een document niet kapotmaken; code kan meer en vraagt daarom meer zorg.
 
@@ -46,14 +46,14 @@ Een workflow die een veld schrijft, gedraagt zich als een persoon die het docume
 
 <figure><img src="../.gitbook/assets/automation-reach-nl.svg" alt="Vergelijking van wat elk automatiseringshulpmiddel kan"><figcaption></figcaption></figure>
 
-| | Transformatieregels | Aangepaste validatieregels | Regels voor PO-matching | Script | Standaard workflow | Geavanceerde workflow | SDK-kaart |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| **Draait wanneer** | Bij elke transformatieronde en elke opslag | Bij elke validatierun | Na lookup, **Automatische PO-match**, nieuw PO-nummer | 13 triggerpunten | Na een statuswijziging | Na een statuswijziging | Wanneer de workflow draait |
-| **Kan lezen** | Headervelden, tabelkolommen | Velden, tabelcellen, totalen over rijen | Tabellen, PO-nummers, inkooporderregels, toleranties | Alle geëxtraheerde gegevens, lookups, gebruikers, groepen, full-text search | Documentgegevens, gebruikers, groepen, variabelen | Hetzelfde, plus resultaten van eerdere knooppunten | Velden, tabellen, lookups, gebruikers, groepen |
-| **Kan schrijven** | Veld- en kolomwaarden, rijen, suborganisatie | Niets: alleen markeringen geldig / ongeldig | Alleen matchgegevens | Velden, tabellen, taken, status | Velden, status, toewijzing, taken, export, e-mail, API-aanroep | Dezelfde kaarten, plus logica en variabelen | Velden, tabellen, status, taken |
-| **Kan een document stoppen** | Nee | Ja, fouten blokkeren automatische export en **Valideren** | Ja, zonder volledige match wacht de automatische export wanneer PO-matching actief is | Indirect: een veld ongeldig markeren, een taak aanmaken | Stelt status in, wijst toe, keurt goed, wijst af | Hetzelfde | Hetzelfde als het kaarttype |
-| **Heeft code nodig** | Nee | Nee | Nee | Ja, beperkt Python | Nee | Nee | Ja, Python in een sandbox |
-| **Typisch gebruik** | Waarden normaliseren | Verplichte velden, formaten, totalen | Regelmatching | Speciale logica | Routering en goedkeuring | Routering met vertakkingen | Acties van partners |
+|                              | Transformatieregels                          | Aangepaste validatieregels                                | Regels voor PO-matching                                                               | Script                                                                      | Standaard workflow                                             | Geavanceerde workflow                              | SDK-kaart                                      |
+| ---------------------------- | -------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------- |
+| **Draait wanneer**           | Bij elke transformatieronde en elke opslag   | Bij elke validatierun                                     | Na lookup, **Automatische PO-match**, nieuw PO-nummer                                 | 13 triggerpunten                                                            | Na een statuswijziging                                         | Na een statuswijziging                             | Wanneer de workflow draait                     |
+| **Kan lezen**                | Headervelden, tabelkolommen                  | Velden, tabelcellen, totalen over rijen                   | Tabellen, PO-nummers, inkooporderregels, toleranties                                  | Alle geëxtraheerde gegevens, lookups, gebruikers, groepen, full-text search | Documentgegevens, gebruikers, groepen, variabelen              | Hetzelfde, plus resultaten van eerdere knooppunten | Velden, tabellen, lookups, gebruikers, groepen |
+| **Kan schrijven**            | Veld- en kolomwaarden, rijen, suborganisatie | Niets: alleen markeringen geldig / ongeldig               | Alleen matchgegevens                                                                  | Velden, tabellen, taken, status                                             | Velden, status, toewijzing, taken, export, e-mail, API-aanroep | Dezelfde kaarten, plus logica en variabelen        | Velden, tabellen, status, taken                |
+| **Kan een document stoppen** | Nee                                          | Ja, fouten blokkeren automatische export en **Valideren** | Ja, zonder volledige match wacht de automatische export wanneer PO-matching actief is | Indirect: een veld ongeldig markeren, een taak aanmaken                     | Stelt status in, wijst toe, keurt goed, wijst af               | Hetzelfde                                          | Hetzelfde als het kaarttype                    |
+| **Heeft code nodig**         | Nee                                          | Nee                                                       | Nee                                                                                   | Ja, beperkt Python                                                          | Nee                                                            | Nee                                                | Ja, Python in een sandbox                      |
+| **Typisch gebruik**          | Waarden normaliseren                         | Verplichte velden, formaten, totalen                      | Regelmatching                                                                         | Speciale logica                                                             | Routering en goedkeuring                                       | Routering met vertakkingen                         | Acties van partners                            |
 
 ## Beslis met vier vragen
 
@@ -96,7 +96,7 @@ Een workflow die een veld schrijft, gedraagt zich als een persoon die het docume
 * **Het draait** op de triggerpunten die u kiest: na de extractie, vóór en na de transformatie, vóór de PO-matching, vóór en na de validatie, bij veld- en tabelwijzigingen, bij opslaan en bij goedkeuring.
 * **Het kan** het hele document lezen, stamgegevens-lookups en full-text search gebruiken, velden, vlaggen en tabellen wijzigen, taken aanmaken en de status wijzigen.
 * **Het kan niet** modules importeren of externe services aanroepen. Het is beperkt Python. Een fout in een script wordt gelogd en stopt de verwerking van het document nooit, dus een script is **geen** betrouwbare manier om een document te blokkeren: markeer het veld als ongeldig of maak een taak aan.
-* **Meer lezen:** [Script](settings/global-settings/document-types/script/README.md)
+* **Meer lezen:** [Script](settings/global-settings/document-types/script/)
 
 ### Standaard workflow
 
@@ -104,7 +104,7 @@ Een workflow die een veld schrijft, gedraagt zich als een persoon die het docume
 * **Hij draait** wanneer een document een status bereikt die u hebt gekozen, dus na de validatie. Hij kan ook starten vanuit een webhook, een schema of handmatig.
 * **Hij kan** een keten van kaarten uitvoeren: **Wanneer** (start), **En** (voorwaarden, alle moeten slagen), **Dan** (acties in volgorde).
 * **Hij kan niet** vertakken, op meerdere voorwaarden wachten of in een apart pad reageren op de fout van een kaart. Gebruik daarvoor een Geavanceerde workflow.
-* **Meer lezen:** [Standaard workflow](workflow/standard-workflow-builder.md)
+* **Meer lezen:** [Standaard workflow](workflow/standard-workflow-builder/)
 
 ### Geavanceerde workflow
 
@@ -112,7 +112,7 @@ Een workflow die een veld schrijft, gedraagt zich als een persoon die het docume
 * **Hij draait** op dezelfde gebeurtenissen als een Standaard workflow. Hij vereist het abonnement DocFlow Advanced.
 * **Hij kan** dezelfde kaarten gebruiken als een Standaard workflow, plus logica- en variabelenkaarten, getekend als grafiek.
 * **Hij kan niet** wat vóór de validatie gebeurt: hij start na een statuswijziging. Logica vóór de validatie hoort in een Script of een regel.
-* **Meer lezen:** [Geavanceerde workflow](workflow/advanced-workflow-builder.md)
+* **Meer lezen:** [Geavanceerde workflow](workflow/advanced-workflow-builder/)
 
 ### Workflow SDK (Card SDK)
 
@@ -135,20 +135,20 @@ Een workflow die een veld schrijft, gedraagt zich als een persoon die het docume
 
 ## Veelgemaakte fouten
 
-| Fout | Beter |
-| --- | --- |
-| Een Script dat waarden trimt en van een voorvoegsel voorziet | Een Transformatieregel |
-| Een workflow die een veld instelt na de validatie | Een Transformatieregel of een Script vóór de validatie |
-| Een Script dat een ongeldig document zou moeten stoppen | Een Aangepaste validatieregel |
-| Een Aangepaste validatieregel die een waarde zou moeten herstellen | Een Transformatieregel, daarna de validatieregel |
-| Het PO-nummer herschrijven in een regel voor PO-matching | Een Transformatieregel op het veld *Purchase Order*, vóór de match |
-| Een Geavanceerde workflow voor één enkele *Wanneer → Dan* | Een Standaard workflow |
-| Een SDK-kaart voor iets wat een ingebouwde kaart kan | De ingebouwde kaart |
+| Fout                                                               | Beter                                                              |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------ |
+| Een Script dat waarden trimt en van een voorvoegsel voorziet       | Een Transformatieregel                                             |
+| Een workflow die een veld instelt na de validatie                  | Een Transformatieregel of een Script vóór de validatie             |
+| Een Script dat een ongeldig document zou moeten stoppen            | Een Aangepaste validatieregel                                      |
+| Een Aangepaste validatieregel die een waarde zou moeten herstellen | Een Transformatieregel, daarna de validatieregel                   |
+| Het PO-nummer herschrijven in een regel voor PO-matching           | Een Transformatieregel op het veld _Purchase Order_, vóór de match |
+| Een Geavanceerde workflow voor één enkele _Wanneer → Dan_          | Een Standaard workflow                                             |
+| Een SDK-kaart voor iets wat een ingebouwde kaart kan               | De ingebouwde kaart                                                |
 
 ## Gerelateerde pagina's
 
 * [Transformatieregels](settings/global-settings/document-types/transformation-rules.md)
 * [Aangepaste validatieregels](settings/global-settings/document-types/custom-validation-rules.md)
 * [Regels voor het matchen van inkooporders](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
-* [Script](settings/global-settings/document-types/script/README.md)
-* [Workflow](workflow/README.md)
+* [Script](settings/global-settings/document-types/script/)
+* [Workflow](workflow/)

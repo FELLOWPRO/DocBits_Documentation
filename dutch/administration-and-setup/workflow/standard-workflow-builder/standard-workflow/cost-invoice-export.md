@@ -1,7 +1,5 @@
 # Cost Invoice - Export
 
-<figure><img src="../../../../.gitbook/assets/And1 (86).png" alt="DocBits Regel Cost Factuur"><figcaption></figcaption></figure>
-
 Deze titel geeft aan dat de regel specifiek is geconfigureerd voor het beheren van kostenfacturen en een exportactie omvat, mogelijk voor rapportage, verdere verwerking of integratie met andere systemen.
 
 #### Regelconfiguratie:

@@ -20,7 +20,7 @@ Deze handleiding legt uit hoe u een API-verbindingssjabloon importeert om snel b
 
 Download vóór het importeren het benodigde verbindingssjabloon via het onderstaande bestand:
 
-{% file src="../../.gitbook/assets/DocBits-Dev-Import-Template (1).xml" %}
+{% file src="../../.gitbook/assets/DocBits-Dev-Import-Template.xml" %}
 
 ### Sjabloon importeren
 

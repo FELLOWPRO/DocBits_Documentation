@@ -22,6 +22,8 @@ And: **Document type is:** Invoice
 
 Then: **Assign document to:** Stefan Reppermund
 
+![](<../../../.gitbook/assets/3 (1).png>)
+
 **Test 2: Logic Card**
 
 When: **Assignee is:** Amier Haider
@@ -30,6 +32,8 @@ And: **Document type is:** Delivery Note
 
 Then: **Assign document to:** James Edwards
 
+![](<../../../.gitbook/assets/4 (1).png>)
+
 **Test 3: Logic Card**
 
 **When:** **Assignee is:** Amier Haider
@@ -37,6 +41,8 @@ Then: **Assign document to:** James Edwards
 **And:** **Document type is:** Order Confirmation
 
 **Then:** **Assign document to:** Anian Sollinger
+
+![](<../../../.gitbook/assets/5 (1).png>)
 
 Het is ook mogelijk om, als het document niet aan één enkele persoon is toegewezen, het vanaf het begin aan een specifieke medewerker toe te wijzen.
 
@@ -54,6 +60,8 @@ Voor een eenvoudiger overzicht van wat er met een document moet gebeuren, kunt u
 
 <figure><img src="../../../.gitbook/assets/workflow_test4_delivery_note_status.png" alt="Workflow Test 4 Delivery Note Status"><figcaption></figcaption></figure>
 
+![](<../../../.gitbook/assets/8 (1).png>)
+
 **Test 5: Logic Card**
 
 When: **Document type is:** Invoice
@@ -64,7 +72,11 @@ Then: **Change Status to:** Pending Second Approval
 
 <figure><img src="../../../.gitbook/assets/workflow_test5_invoice_approval_status.png" alt="Workflow Test 5 Invoice Approval Status"><figcaption></figcaption></figure>
 
+![](<../../../.gitbook/assets/10 (1).png>)
+
 Als een factuur of ander document een bepaald totaalbedrag overschrijdt dat voorafgaande beoordeling en goedkeuring vereist, kunnen deze documenten onmiddellijk aan de juiste persoon worden toegewezen.
+
+![](<../../../.gitbook/assets/11 (1).png>)
 
 **Test 6: Logic Card**
 
@@ -75,6 +87,8 @@ And: Docfield **total\_amount** is **Greater than 500**
 Then: **Assign document to:** Asad Usman Khan
 
 <figure><img src="../../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Workflow Test 6 Total Amount Assign"><figcaption></figcaption></figure>
+
+![](<../../../.gitbook/assets/13 (1).png>)
 
 Het is ook mogelijk om de status in de workflow in te voeren, zodat de toegewezen persoon meteen kan zien welke status dit document heeft en wat er vervolgens mee moet gebeuren.
 
@@ -88,9 +102,9 @@ Het is ook mogelijk om de status in de workflow in te voeren, zodat de toegeweze
 
 **Change Status to:** Pending Approval
 
-<figure><img src="../../../.gitbook/assets/workflow_test7_status_update.png" alt="Workflow Test 7 Status Update"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/docbits_export_smb.png" alt="Workflow Test 7 Status Update"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/15 (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
 
 Als er bijvoorbeeld bepaalde of belangrijke informatie in een document ontbreekt die echter belangrijk is en voor verdere verwerking moet worden opgenomen, kunt u de workflow zo instellen dat deze documenten onmiddellijk worden doorgestuurd naar de inkoper en een vervanger.
 
@@ -127,7 +141,7 @@ Deze logic card is essentieel om ervoor te zorgen dat de gegevens van een orderb
 
 Als u een andere berekening voor toeslagen heeft, of deze slechts op sommige items van toepassing zijn, kunt u de generieke tabelberekeningskaarten gebruiken; sommige daarvan staan ook toe om te filteren op reguliere expressies.
 
-<figure><img src="../../../.gitbook/assets/19 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/19.png" alt=""><figcaption></figcaption></figure>
 
 Hierboven staat een berekeningsvoorbeeld voor MTZ met een filter voor artikelnummers die beginnen met 01, 06, 9, 001 of 000.
 
@@ -135,7 +149,7 @@ Bij een handmatige opzet wordt geadviseerd om berekeningen die afhankelijk zijn 
 
 **Run Workflow**
 
-<figure><img src="../../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/20.png" alt=""><figcaption></figcaption></figure>
 
 Met deze kaart kunt u de naam opgeven van een workflow die na de huidige workflow moet worden uitgevoerd als aan de voorwaarden ervan is voldaan en na voorgaande then-kaarten van de huidige workflow. Hoewel uitvoerbare, actieve workflows worden geprioriteerd, kunt u er ook gedeactiveerde workflows mee uitvoeren als het document aan de voorwaarden van de workflows voldoet.
 

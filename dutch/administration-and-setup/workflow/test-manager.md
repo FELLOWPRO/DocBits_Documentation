@@ -4,7 +4,7 @@ Met de **Test Manager** kunt u herbruikbare **testscenario's** voor uw workflows
 
 Open hem via **Workflow Dashboard → Test Manager List**.
 
-<figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Test Manager List met testscenario's, status en Run All Tests"><figcaption><p>De Test Manager List — elk opgeslagen scenario toont een geslaagd/mislukt-resultaat.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Test Manager List met testscenario&#x27;s, status en Run All Tests"><figcaption><p>De Test Manager List — elk opgeslagen scenario toont een geslaagd/mislukt-resultaat.</p></figcaption></figure>
 
 ## Wat een testscenario is
 
@@ -12,9 +12,9 @@ Een testscenario legt een workflow, een voorbeeldinvoer en de **verwachte uitkom
 
 ## Werken met scenario's
 
-- **Add Test Scenario** — maak een nieuw scenario op basis van een workflow en een voorbeelddocument.
-- **Run All Tests** — voer alle scenario's tegelijk uit en zie in één oogopslag welke workflows nog steeds slagen.
-- **View Details** — open een scenario om het resultaat te inspecteren.
+* **Add Test Scenario** — maak een nieuw scenario op basis van een workflow en een voorbeelddocument.
+* **Run All Tests** — voer alle scenario's tegelijk uit en zie in één oogopslag welke workflows nog steeds slagen.
+* **View Details** — open een scenario om het resultaat te inspecteren.
 
 <figure><img src="../../.gitbook/assets/workflow_test_manager_detail.png" alt="Details van een workflow-testscenario met status, uitvoeringstijd en gegevens"><figcaption><p>Scenariodetails — naam, status, uitvoeringstijd en de werkelijke versus geëxtraheerde gegevens die de uitvoering opleverde.</p></figcaption></figure>
 
@@ -24,5 +24,5 @@ De detailweergave toont de scenarionaam en **status**, de **workflownaam**, de *
 
 Dit zijn twee verschillende dingen:
 
-- **Test Manager** (deze pagina) — *opgeslagen, herhaalbare* scenario's met verwachte uitkomsten, samen uitgevoerd met **Run All Tests**. Gebruik dit voor regressietests na wijzigingen.
-- **Testen in de builder** — de inline **Validate**- en **Test**-knoppen in de Advanced Workflow-builder, voor snelle controles terwijl u aan het bouwen bent. Zie [Validatie & Testen](advanced-workflow/validation-and-testing.md).
+* **Test Manager** (deze pagina) — _opgeslagen, herhaalbare_ scenario's met verwachte uitkomsten, samen uitgevoerd met **Run All Tests**. Gebruik dit voor regressietests na wijzigingen.
+* **Testen in de builder** — de inline **Validate**- en **Test**-knoppen in de Advanced Workflow-builder, voor snelle controles terwijl u aan het bouwen bent. Zie [Validatie & Testen](advanced-workflow-builder/validation-and-testing.md).

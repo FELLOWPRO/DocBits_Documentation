@@ -1,7 +1,5 @@
 # Purchase Invoice - 2nd Approval Quantity
 
-<figure><img src="../../../../.gitbook/assets/And1 (76).png" alt="DocBits Regel Aankoop Factuur Quantity"><figcaption></figcaption></figure>
-
 This title indicates that the rule pertains specifically to handling purchase invoices during a secondary approval phase, with a focus on verifying the accuracy of the quantities listed.
 
 #### Rule Configuration:

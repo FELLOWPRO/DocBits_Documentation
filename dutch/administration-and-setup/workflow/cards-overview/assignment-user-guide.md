@@ -16,7 +16,7 @@ Deze kaarten horen in de **Then**-groep van de Workflow Builder — de acties di
 
 **Important:** v3 versions added decision tree support but are now deprecated **Recommendation:** Use v2 for both DOC\_USER\_ASSIGN and DOC\_GROUP\_ASSIGN
 
-📖 [Complete Version History](https://github.com/Fellow-Consulting-AG/docbits/tree/nl/readme/administration-and-setup/changelog/release.md#-assignment--routing-cards) | [Card Version Database](https://github.com/Fellow-Consulting-AG/docbits/tree/nl/readme/DocFlow/docs/card_version.md)
+📖 [Complete Version History](../../changelog/release.md#-assignment--routing-cards) | [Card Version Database](../../../DocFlow/docs/card_version.md)
 
 ***
 

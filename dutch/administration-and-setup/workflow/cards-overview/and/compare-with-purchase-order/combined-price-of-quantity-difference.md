@@ -1,8 +1,8 @@
 # Combined Price of Quantity Difference
 
-<figure><img src="../../../../../.gitbook/assets/And1 (73).png" alt="DocBits Combined Price Kaart" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/And1.png" alt="DocBits Combined Price Kaart" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/And1 (73).png" alt="Docbits Workflow Compare Two Fields" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/And1.png" alt="Docbits Workflow Compare Two Fields" width="563"><figcaption></figcaption></figure>
 
 ## **Doel**:
 

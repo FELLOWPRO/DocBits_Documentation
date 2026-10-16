@@ -276,13 +276,13 @@ Elk patroon bevat deze gestandaardiseerde secties:
 * [Complete Index Workflowgidsen](../../)
 * [Individuele Kaartgidsen](../then/action/)
 * [Referentie Conditiekaarten](../condition-cards-complete-guide.md)
-* [Workflow Koppelingskaart](https://github.com/Fellow-Consulting-AG/docbits/tree/nl/WORKFLOW_LINKING_MAP.md)
+* [Workflow Koppelingskaart](../../../../../WORKFLOW_LINKING_MAP.md)
 
 **Aanvullende Bronnen:**
 
-* [Snelle Referentiegids](https://github.com/Fellow-Consulting-AG/docbits/tree/nl/WORKFLOW_LINKING_QUICK_REFERENCE.md)
-* [Release Notes Oktober 2025](https://github.com/Fellow-Consulting-AG/docbits/tree/nl/readme/administration-and-setup/workflow/changelog/2025-10-october.md)
-* [Kaartversie Referentie](https://github.com/Fellow-Consulting-AG/docbits/tree/nl/readme/docs/card_version.md)
+* [Snelle Referentiegids](../../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
+* [Release Notes Oktober 2025](../../changelog/2025-10-october.md)
+* [Kaartversie Referentie](../../../../docs/card_version.md)
 
 **Contact:**
 
@@ -372,7 +372,7 @@ Hebt u een workflowpatroon waar anderen baat bij zouden hebben?
 **Meer Hulp Nodig?**
 
 * Bekijk [Overzicht Workflowdocumentatie](../../)
-* Bekijk [Snelle Referentiegids](https://github.com/Fellow-Consulting-AG/docbits/tree/nl/WORKFLOW_LINKING_QUICK_REFERENCE.md)
+* Bekijk [Snelle Referentiegids](../../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
 * Neem contact op met ondersteuningsteam
 
 ***

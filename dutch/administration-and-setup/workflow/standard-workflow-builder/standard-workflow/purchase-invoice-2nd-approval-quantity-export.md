@@ -1,7 +1,5 @@
 # Purchase Invoice - 2nd Approval Quantity Export
 
-<figure><img src="../../../../.gitbook/assets/And1 (87).png" alt="DocBits Regel Aankoop Factuur Quantity Exporteren"><figcaption></figcaption></figure>
-
 Deze titel geeft aan dat de regel is opgezet om de tweede goedkeuringsfase voor inkoopfacturen te beheren, met de nadruk op de hoeveelheidsgegevens, om ervoor te zorgen dat de hoeveelheden op de factuur overeenkomen met die op de oorspronkelijke inkooporder.
 
 #### Regelconfiguratie:

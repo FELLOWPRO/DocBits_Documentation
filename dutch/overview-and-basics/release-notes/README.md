@@ -1,4 +1,4 @@
-# Release Notes
+# Release-opmerkingen
 
 > **Laatste hotfix release:** [Hotfixes 14 oktober 2026](incremental-updates-14-october-2026.md) (R1.0.15): de Settings Assistant op elke instellingenpagina, nieuwe AI-niveaus (Fast, Full, Nexus, Auto), de controle van kopvelden, veiliger aanmelden en social login, en matching van purchase order toeslagen. Eerder: [Hotfixes 15 september 2026](incremental-updates-15-september-2026.md). Alle hotfix-pagina's staan vermeld in de navigatie onder Release Notes.
 
@@ -10,88 +10,60 @@
 
 * **Activity Logging / Access Audit:**\
   Gedetailleerde activiteitslogging en audit trail voor toegang in de gehele applicatie voor compliance en monitoring. Verschillende typen logging voor alle microservices en op basis van tijdsbereik.
-
 * **Globale snelzoekfunctie:**\
   Druk op Cmd+K / Ctrl+K vanaf elke plek in de app om te zoeken in meer dan 200 routes en meer dan 40 in-page functies. Toont de top 8 resultaten met fuzzy matching, navigatie met pijltoetsen en links naar de volledige App Index Page.
-
 * **Sitemap (App Index Page):**\
   Doorzoekbare indexpagina die elke navigeerbare pagina en elke in-page functie (dialogen, zijbalken, panelen) in DocBits catalogiseert. Georganiseerd in 18 categorieën met typefilters, categoriepillen, URL-gesynchroniseerd zoeken en op rechten gebaseerde vermeldingen die voor niet-beheerders als vergrendeld worden getoond.
-
 * **Analytics Dashboard:**\
   Uitgebreide analyses van documentverwerking met Executive Overview, API Metrics, Quality Metrics, Processing Performance, Document Flow Analytics, Activity Log, Event Log en Audit Trail.
-
 * **Dashboard-exportfunctionaliteit:**\
   Nieuwe dashboard-exportfunctionaliteit die het exporteren van een lijst in CSV- of XLSX-formaat mogelijk maakt.
-
 * **Full-Text Search / DocSearch:**\
   AI-gedreven vectorzoekfunctie over alle geïndexeerde documenten met realtime leveranciersfiltering, "Find Similar"-functie en configureerbare indexeringsinstellingen.
-
 * **Supplier Delivery Statistics:**\
   Nieuwe weergaven met inzichten in documentverwerkingsstatistieken met betrekking tot leveranciers.
-
 * **Debug Collector:**\
   Druk op Ctrl+Shift+P om een volledige debug-snapshot vast te leggen, inclusief API-aanroepen, WebSocket-status, fouten, console-logs, prestatiemetrics en omgevingsinformatie. Snapshots kunnen naar het klembord worden gekopieerd of direct als supportticket worden verzonden met een HTML-geformatteerd rapport en een bijgevoegd JSON-bestand.
-
 * **AI Agents (DocNet):**\
   Autonome achtergrondagenten die inkomende e-mails automatisch verwerken — documenten classificeren, extraheren en routeren zonder handmatige tussenkomst. Agenten werken zelfstandig aan toegewezen taken en escaleren via goedkeuringsverzoeken naar gebruikers wanneer menselijk oordeel nodig is. Bevat een speciaal agent-dashboard voor het monitoren van activiteit en prestaties.
-
 * **Nieuwe E-Documents:**\
   Meer dan 80 nieuwe wereldwijde e-invoice-types en meer dan 40 nieuwe formaten, waaronder XRechnung 3.0.2, ZUGFeRD 2.2/2.3.2, Factur-X-varianten en Asia-Pacific PINT Credit Notes. 100 % classificatie- en extractiedekking.
-
 * **AI Script Chat:**\
   AI-gestuurde chatassistent voor basale scriptontwikkeling met realtime streaming-antwoorden.
-
 * **Script Versioning:**\
   Volledige versiegeschiedenis voor scripts met wijzigingen traceren, vergelijken en herstellen. Biedt versiebeheer voor scripts, vergelijkbaar met hoe versies van E-Docs worden onderhouden.
-
 * **Exportgeschiedenis in Dashboard Actions:**\
   Toegang tot de exportgeschiedenis van een document direct vanuit het dashboard-actiemenu.
-
 * **Generic API Exporter (APS450, GLS840):**\
   Configureerbaar generiek API-exportdoel via een Mapping-File-configuratie, voor flexibele integratie met externe systemen. Ondersteuning voor APS450 en GLS840 is geïmplementeerd.
-
 * **Meerdere exportconfiguraties:**\
   Ondersteuning voor meerdere actieve exportconfiguraties per documenttype, met uitvoeringsvolgorde en een re-export-knop om opnieuw te proberen vanaf de mislukte stap.
-
 * **Nieuwe Watchdog-versie:**\
   Volledige herwerking van de WatchDog Settings-pagina. Nieuwe quality-of-life-functies toegevoegd, waaronder de huidige WatchDog-status, gids en commando's voor installatie, XSLT-template-configuratie en een instelling voor automatische updates. Ook is de functionaliteit geïmplementeerd waarmee WatchDog meerdere configuraties tegelijk kan afhandelen.
-
 * **Vertex-integratie:**\
   Consumer Use Tax-integratie via Vertex voor geautomatiseerde belastingberekening en compliance tijdens documentverwerking.
-
 * **UI-herontwerp & herziening van instellingen:**\
   Uitgebreide UI-vernieuwing in de gehele applicatie. Herontworpen login- en authenticatiepagina's. Herontworpen instellingengebied met inklapbare zijbalk, georganiseerde subcategorieën, ankergebaseerde navigatie, contextueel hulppaneel en status-tracking-badges. UI-wijzigingen in Document scripts. Nieuwe UI voor Document flow. Verbeterde List of Values-UI.
-
 * **Idea Board:**\
   Feature-request-bord waarop gebruikers nieuwe functies, verbeteringen, benodigde bugfixes enz. kunnen indienen, bespreken en daarop kunnen stemmen, met een rich text editor en ondersteuning voor afbeeldingen.
-
 * **API Key Management:**\
   Speciale instellingenpagina voor het aanmaken, bekijken en beheren van meerdere API-sleutels.
-
 * **Master Data Lookup-zoekfunctionaliteit:**\
   Verbeterde Master Data-zoekmogelijkheden door geschikte zoekopties te bieden op basis van de geselecteerde velden.
-
 * **User Activity Chart:**\
   Visuele grafiek die gebruikersactiviteitspatronen en engagement-statistieken toont. Dashboard voor login-activiteit met vergelijkende trendgrafieken, dagelijkse/wekelijkse aggregatie en GeoLite2-gebaseerde geolocatie.
-
 * **User Login History:**\
   Users Detail View met login-geschiedenis.
-
 * **Aanpasbare zijbalk:**\
   Drag-and-drop herordenen, show/hide-toggle en pin-to-top voor menu-items in de zijbalk. Voorkeuren worden per gebruiker opgeslagen met een "Reset to default"-optie. Respecteert feature flags.
-
 * **Video Carousel:**\
   Autoplay video-carousel op de prepare-dashboard-pagina met korte, geanimeerde productvideo's (Global Search, Keyboard Shortcuts, Document Upload, Table Customization). Indeling met twee kolommen met video's links en dashboardvoorbereiding rechts. Auto-redirect wordt gepauzeerd terwijl gebruikers door de video's bladeren.
-
 * **Advanced Workflow Designer:**\
   Visuele, op knooppunten gebaseerde automatiseringsbouwer met drag-and-drop-canvas voor meerstaps verwerkingspipelines. Ondersteunt wait steps, parallelle paden, herbruikbare templates, Or condition cards, handmatige test/run-knop, "Test from Here"-gedeeltelijke uitvoering en uitvoeringslogs per knooppunt met visuele flow-markering die precies laat zien welke knooppunten zijn uitgevoerd.
-
 * **Workflow KPI Dashboard:**\
   Dashboard met kernmetrieken voor het monitoren van workflow-uitvoering.
-
 * **Workflow Partner Card SDK:**\
   SDK voor externe ontwikkelaars om aangepaste workflow-kaarten te bouwen, met AI-gedreven review, sandbox-validatie en getting-started-documentatie.
-
 * **Workflow Test Manager:**\
   Geautomatiseerde test manager voor workflows, waarmee beheerders tests afzonderlijk of in bulk kunnen aanmaken en uitvoeren.
 
@@ -99,28 +71,20 @@
 
 * **Database (alle modules) — Migratie van ID-kolommen:**\
   Alle "ID"-databasekolommen in DocBits zijn intern gemigreerd van strings naar een speciaal ID-type (UUID7). De onderliggende Postgres-database is gemigreerd naar V18 om deze verbetering te ondersteunen.
-
 * **Documentverwerking — Verdere verbeteringen:**\
   De exportlogica met betrekking tot het maximaal aantal te overwegen pagina's is gewijzigd — nu wordt het hele document geëxporteerd. Tijdens documentvalidatie heeft de gebruiker de mogelijkheid om de standaard maximale pagina-limiet voor dat specifieke document te overschrijven. De berekening van de Pending Document Counter is verbeterd.
-
 * **Serviceversies, status & deploymentdatum:**\
   De beschikbaarheidsstatus van services wordt verstrekt in de "Service Versions"-popup.
-
 * **Taaluitbreiding:**\
   Ondersteuning uitgebreid naar 22 talen met bijgewerkte taalkiezer.
-
 * **Access Control-ontwerp op veldniveau:**\
   Herontworpen/verbeterde toegangscontrole met duidelijkere activatiestatus, toegang op veldniveau, consistente regelafhandeling en vereenvoudigde groepsgebaseerde rechten. Lost regelconflicten op tussen Access Control en View Permissions, toont de import-eigenaar in de UI en past toegangscontrole consistent toe op veldvalidatie, AI-geëxtraheerde tabellen en alle weergaven.
-
 * **Activity Stream voor alle schermen:**\
   De Activity Stream is nu beschikbaar op alle documentverwerkingsschermen (Ready for Validation, PO Matching, Accounting, Quote Details, Reject) — niet alleen op Pending Approval. Verplaatst naar een consistente positie in het rechterpaneel op alle schermen.
-
 * **Document Flow-pagina:**\
   Speciale pagina voor het visualiseren en volgen van de documentverwerkingsstroom, die statusovergangen en voortgang door de pipeline toont.
-
 * **Dual Monitor Mode (globale gebruikersinstelling):**\
   Dual Monitor Mode is verplaatst naar een globale gebruikersinstelling en blijft behouden tussen sessies.
-
 * **Layout Builder-verbeteringen:**\
   Ondersteuning voor verborgen en alleen-lezen velden met visuele indicatoren, een in grootte aanpasbare paneelverdeler en instellingen voor veldlengte. Pas de Default Layout toe op meerdere Origins zonder elke origin afzonderlijk te hoeven openen.
 
@@ -138,7 +102,7 @@
 * Een probleem opgelost waarbij exportfoutmeldingen van ION/MEC (bijv. Acknowledge.PurchaseOrder-fouten) niet werden weergegeven in DocBits, en de status "Exported" werd getoond ondanks dat de export was mislukt.
 * Een probleem opgelost waarbij de eenheidsprijs op het goedkeuringsscherm onjuist was wanneer AI-tabelextractie werd gebruikt.
 * Een probleem opgelost waarbij het Total Matching-script een fout genereerde op het validatiescherm.
-* Een probleem opgelost waarbij documentverwerking mislukte met een fout ("UserAuthentication object has no setter for 'org_id'").
+* Een probleem opgelost waarbij documentverwerking mislukte met een fout ("UserAuthentication object has no setter for 'org\_id'").
 * Een probleem opgelost waarbij tabeltraining niet werkte voor specifieke leveranciers — kolommen belandden in verborgen kolommen in plaats van in de toegewezen velden.
 * Een probleem opgelost waarbij PO Matching mislukte bij grote facturen (meer dan 10 pagina's) vanwege overschrijding van de multipart-request-groottelimiet.
 * Een probleem opgelost waarbij door script gevulde kolomwaarden niet behouden bleven na een documentherstart.
@@ -158,22 +122,16 @@
 
 * **Hybride PDF-verwerking — Door de gebruiker gestuurde XML-extractie:**\
   Wanneer een PDF ingebedde XML-gegevens bevat, kunnen gebruikers nu kiezen of DocBits de ingebedde XML moet gebruiken voor extractie of het document als een standaard PDF moet verwerken. Dit geeft organisaties volledige controle over hoe hybride documenten worden verwerkt, zodat de extractiemethode die het beste past bij hun workflow wordt toegepast.
-
 * **AP Assignment Code op het Approval-scherm:**\
   De AP Manager Approval-pagina bevat nu een AP Assignment Code-veld, geïntegreerd met Infor M3 CRS620. Dit stelt goedkeurders in staat om toewijzingscodes direct tijdens het goedkeuringsproces te controleren en te bevestigen zonder naar externe systemen te hoeven schakelen.
-
 * **PO-totaal afstemming met documenttotaal:**\
   DocBits ondersteunt nu het vergelijken van het inkoopordertotaal met het totaal op het document, wat een extra validatielaag biedt tijdens PO Matching om afwijkingen eerder in het proces te detecteren.
-
 * **Update van leveranciersartikelnummer en VPE:**\
   DocBits ondersteunt nu het bijwerken van de velden leveranciersartikelnummer en VPE (Verpackungseinheit / verpakkingseenheid) tijdens documentverwerking, waarbij de waarden bij export worden teruggesynchroniseerd naar M3.
-
 * **Verbeterde documentlayout-classificatie:**\
-  Het documentlayout-ID (tfidf_id) wordt nu alleen gegenereerd op basis van koptekst, met uitsluiting van voettekst. Dit verbetert de classificatienauwkeurigheid door te voorkomen dat voettekstinhoud de documenttypedetectie beïnvloedt.
-
+  Het documentlayout-ID (tfidf\_id) wordt nu alleen gegenereerd op basis van koptekst, met uitsluiting van voettekst. Dit verbetert de classificatienauwkeurigheid door te voorkomen dat voettekstinhoud de documenttypedetectie beïnvloedt.
 * **Export & Next-knop:**\
   Er is een nieuwe "Export & Next"-knop toegevoegd, waarmee gebruikers het huidige document kunnen exporteren en onmiddellijk naar het volgende in de wachtrij kunnen gaan, wat de beoordelings- en exportworkflow stroomlijnt.
-
 * **Goedkeuringsproces voor kostenfacturen:**\
   Het goedkeuringsproces voor kostenfacturen is verbeterd met geoptimaliseerde routering- en validatielogica.
 
@@ -304,7 +262,7 @@
 
     De e-mail template editor is opnieuw ontworpen om een duidelijkere structuur en soepelere ervaring te bieden. Het selecteren van documentvelden is nu intuïtiever en bijlagen kunnen direct binnen templates worden toegevoegd. Deze verbeteringen maken het sneller en gemakkelijker om professionele, op maat gemaakte e-mails te creëren.
 
-    <figure><img src="../../.gitbook/assets/image (310).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
 *   **Dashboard Verbeteringen:**
 
     Het dashboard is uitgebreid om navigatie en aanpassing te verbeteren. Met nieuwe tabbladen kunnen gebruikers sneller schakelen tussen verschillende documenttypen, waardoor de tijd die wordt besteed aan het zoeken naar de juiste weergave wordt verminderd.
@@ -388,15 +346,12 @@
 *   **Walkthrough:**\
     Een begeleide walkthrough is nu beschikbaar om gebruikers te helpen verschillende delen van de applicatie gemakkelijker te navigeren en begrijpen. Dit is vooral nuttig voor het inwerken van nieuwe gebruikers of het verkennen van onbekende functies.
 
-
     <figure><img src="../../.gitbook/assets/image (430).png" alt=""><figcaption></figcaption></figure>
 * **Verbeteringen aan Beslisboom:**\
   Er zijn verbeteringen aangebracht aan de beslisboominterface, inclusief een intuïtievere functie voor het toevoegen van rijen — nu bovenaan de boom geplaatst — om onderhoud en bewerking te vereenvoudigen.
-* **DocOperator**
-  Nieuwe AI-aangedreven tools zoals DocOperator helpen bij het automatiseren van repetitieve taken, wat de efficiëntie verbetert en handmatige inspanning bij documentworkflows vermindert.
+* **DocOperator** Nieuwe AI-aangedreven tools zoals DocOperator helpen bij het automatiseren van repetitieve taken, wat de efficiëntie verbetert en handmatige inspanning bij documentworkflows vermindert.
 *   **Elektronische Document Voorbeeld Optie:**\
     Een voorbeeldfunctie is toegevoegd voor elektronische documenten (eDocs), waardoor gebruikers wijzigingen direct binnen de instellingen kunnen testen en bekijken voordat ze worden geïmplementeerd.\\
-
 
     <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * **Nieuwe Taalondersteuning – Chinees:**\
@@ -419,7 +374,6 @@
 *   **Watchdog Verbeteringen:**\
     Watchdog-configuratie is verplaatst naar de hoofdapplicatie-UI, wat het gemakkelijker maakt om te beheren. Extra functionaliteiten zijn ook geïntroduceerd voor betere monitoring en controle.\\
 
-
     <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * **Verbeteringen voor Regelafwijzing:**\
   Het afwijzen van een regelitem vereist nu dat gebruikers een reden opgeven, wat betere traceerbaarheid en verantwoordelijkheid in beoordelingsworkflows garandeert.
@@ -427,7 +381,6 @@
   Een nieuwe instellingenweergave toont de AI-modellen die zijn toegewezen aan specifieke leveranciers, samen met een optie om ze te resetten. Dit verbetert transparantie en beheerbaarheid van leverancier-gebaseerde AI-configuraties.
 *   **Verbeteringen aan Document Log:**\
     De documentlogboeken bevatten nu meer gedetailleerde informatie om betere auditing en troubleshooting te ondersteunen.
-
 
     <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * **PNG en JPG Ondersteuning:**\

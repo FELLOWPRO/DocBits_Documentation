@@ -57,11 +57,11 @@ Met de Beslissingsboom-ontwerper kunt u regels configureren die bepalen hoe besl
 
 Deze beslissingsboom evalueert het veld **Total Amount** en wijst het toe aan verschillende groepen op basis van vooraf gedefinieerde voorwaarden. Elke regel vergelijkt het totaalbedrag met een specifieke waarde, en op basis van welke voorwaarde waar is, wordt de bijbehorende **Group** geretourneerd.
 
-<figure><img src="../../../../.gitbook/assets/And1 (73).png" alt="Beslissingsboom Voorbeeld Total Amount"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="Beslissingsboom Voorbeeld Total Amount"><figcaption></figcaption></figure>
 
 Deze beslissingsboom evalueert twee belangrijke voorwaarden om te bepalen welke groep moet worden toegewezen: **Total Amount** en **Warehouse Status**. De boom gebruikt drempelwaarden op basis van het totaalbedrag om te definiëren welke groep wordt geretourneerd, met het aanvullende onderscheid of het magazijn is aangemerkt als "Warehouse Main", "Warehouse Sub" of "Not Warehouse Main".
 
-<figure><img src="../../../../.gitbook/assets/And1 (73).png" alt="Beslissingsboom Voorbeeld Warehouse Status"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="Beslissingsboom Voorbeeld Warehouse Status"><figcaption></figcaption></figure>
 
 Elke regel wordt achtereenvolgens geëvalueerd.
 
@@ -88,23 +88,23 @@ Het Beslissingsboombeleid definieert hoe meerdere regels binnen een beslissingsb
 
     * Zoek in de beslissingsboom-ontwerper de knop **Test**.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (73).png" alt="Beslissingsboom Testknop" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Beslissingsboom Testknop" width="563"><figcaption></figcaption></figure>
 2.  **Open de test-pop-up:**
 
     * Klik op de knop **Test**.
     * Er verschijnt een pop-upvenster met invoervelden die overeenkomen met de criteria die in de beslissingsboom worden gebruikt.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (73).png" alt="Beslissingsboom Test-pop-up" width="421"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Beslissingsboom Test-pop-up" width="421"><figcaption></figcaption></figure>
 3. **Geef invoerwaarden op:**
    *   Voer waarden in de invoervelden in om een realistisch scenario te simuleren.
 
-       <figure><img src="../../../../.gitbook/assets/And1 (73).png" alt="Beslissingsboom Testinvoer" width="428"><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/And1.png" alt="Beslissingsboom Testinvoer" width="428"><figcaption></figcaption></figure>
 4.  **Evalueer de resultaten:**
 
     * Nadat u de invoer hebt ingevoerd, verwerkt de boom deze op basis van het gekozen beleid.
     * Het systeem markeert de regel(s) die overeenkomen met de opgegeven invoer.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (73).png" alt="Beslissingsboom Testresultaat" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Beslissingsboom Testresultaat" width="563"><figcaption></figcaption></figure>
 5. **Bekijk feedback bij geen overeenkomst:**
    * Als er geen regel wordt gemarkeerd, toont het systeem feedback met uitleg waarom geen enkele regel overeenkwam.
    * Gebruik deze feedback om de invoer aan te passen of de configuratie van de boom te controleren op mogelijke problemen.

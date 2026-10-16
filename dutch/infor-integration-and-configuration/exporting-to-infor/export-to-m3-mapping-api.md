@@ -36,16 +36,9 @@ Removing Field:
 #### **Available M3 Api Fields:**
 
 * Available M3 fields can be checked by opening appropriate screen in M3.
-
-<figure><img src="../../../.gitbook/assets/m3_export_mapping_screen.png" alt="M3 Exporteren Toewijzing Scherm"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/m3_export_mapping_field_names.png" alt="M3 Exporteren Toewijzing Field Names"><figcaption></figcaption></figure>
-
 * Similarly you can get field names for lines
 
 ### Header:
-
-<figure><img src="../../../.gitbook/assets/m3_export_mapping_header.png" alt="M3 Exporteren Toewijzing Koptekst"><figcaption></figcaption></figure>
 
 Fields List Property: StaticFields
 

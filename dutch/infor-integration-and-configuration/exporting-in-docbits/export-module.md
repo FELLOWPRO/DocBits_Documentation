@@ -16,4 +16,4 @@ Je kunt het vinden onder: **Instellingen** → **Documentverwerking** → **Expo
 
 Voor gedetailleerde instructies over hoe elk exporttype te configureren, inclusief schermafbeeldingen en veldbeschrijvingen, bezoek de volledige handleiding:
 
-[Bekijk Export Configuratiehandleiding](../../administration-and-setup/settings/document-processing/export.md)
+[Bekijk Export Configuratiehandleiding](../../administration-and-setup/settings/document-processing/export/)

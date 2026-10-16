@@ -45,5 +45,3 @@ Dit document beschrijft de workflow voor het bestellen van materialen bij levera
 
 * Zorg ervoor dat alle documenten geverifieerd en gearchiveerd zijn voor de administratie.
 * Afwijkingen in bestel- of factuurgegevens moeten direct worden opgelost om vertragingen te voorkomen.
-
-<figure><img src="../../../.gitbook/assets/docbits_material_workflow.svg" alt="DocBits Materiaal Workflow"><figcaption></figcaption></figure>

@@ -1,7 +1,5 @@
 # Purchase Invoice - 2nd Approval Unit Price
 
-<figure><img src="../../../../.gitbook/assets/And1 (77).png" alt="DocBits Regel Aankoop Factuur Unit Price"><figcaption></figcaption></figure>
-
 This title indicates that the rule is set up to manage the second approval phase of a purchase invoice, with a specific focus on validating the unit price.
 
 #### Rule Configuration:

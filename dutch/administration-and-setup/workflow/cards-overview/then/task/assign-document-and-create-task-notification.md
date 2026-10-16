@@ -1,6 +1,6 @@
 # Assign Document and Create Task/Notification
 
-<figure><img src="../../../../../.gitbook/assets/docbits_email_settings (1).png" alt="DocBits E-mail Instellingen" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_email_settings.png" alt="DocBits E-mail Instellingen" width="563"><figcaption></figcaption></figure>
 
 ## **Doel**
 

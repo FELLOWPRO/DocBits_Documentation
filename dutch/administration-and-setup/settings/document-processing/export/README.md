@@ -250,7 +250,7 @@ Om een nieuwe export te maken:
 * **Document Type** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
 * **ION Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder.
 * **IDM Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **LN Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk het LN Mapping Voorbeeld](https://github.com/Fellow-Consulting-AG/docbits/tree/nl/readme/infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/README.md)
+* **LN Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk het LN Mapping Voorbeeld](../../../../infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/)
 
 </details>
 
@@ -271,7 +271,7 @@ Om een nieuwe export te maken:
 * **Document Type** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
 * **ION Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder.
 * **IDM Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **M3 Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk het M3 Mapping Voorbeeld](https://github.com/Fellow-Consulting-AG/docbits/tree/nl/readme/infor-integration-and-configuration/exporting-to-infor/m3/example-export-m3.md)
+* **M3 Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk het M3 Mapping Voorbeeld](../../../../infor-integration-and-configuration/exporting-to-infor/m3/example-export-m3.md)
 
 </details>
 

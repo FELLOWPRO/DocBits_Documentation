@@ -1,6 +1,6 @@
-# Validation & Testing
+# Validatie & Testen
 
-Terwijl u een Advanced Workflow bouwt, kunt u deze met twee knoppen in de werkbalk controleren zonder de builder te verlaten. Deze zijn bedoeld voor _snelle controles tijdens het bouwen_ — voor opgeslagen, herhaalbare tests gebruikt u de [Test Manager](../test-manager.md).
+Terwijl u een Advanced Workflow bouwt, kunt u deze met twee knoppen in de werkbalk controleren zonder de builder te verlaten. Deze zijn bedoeld voor *snelle controles tijdens het bouwen* — voor opgeslagen, herhaalbare tests gebruikt u de [Test Manager](../test-manager.md).
 
 ## Validate
 
@@ -12,10 +12,10 @@ Klik op de **Test**-knop (het play-pictogram, of druk op <kbd>Cmd/Ctrl</kbd> + <
 
 ## Wanneer welke gebruiken
 
-* **Validate / Test in de builder** (deze pagina) — directe feedback terwijl u de flow ontwerpt.
-* [**Test Manager**](../test-manager.md) — sla het scenario op zodat u het later opnieuw kunt uitvoeren (en samen met al uw andere scenario's) om regressies na toekomstige wijzigingen op te sporen.
+- **Validate / Test in de builder** (deze pagina) — directe feedback terwijl u de flow ontwerpt.
+- **[Test Manager](../test-manager.md)** — sla het scenario op zodat u het later opnieuw kunt uitvoeren (en samen met al uw andere scenario's) om regressies na toekomstige wijzigingen op te sporen.
 
 ## Volgende stappen
 
-* Bekijk de nodetypen en verbindingen in [Nodes](nodes.md).
-* Bekijk alle werkbalk- en canvasknoppen in [Werkbalk & Canvas](toolbar-and-canvas.md).
+- Bekijk de nodetypen en verbindingen in [Nodes](nodes.md).
+- Bekijk alle werkbalk- en canvasknoppen in [Werkbalk & Canvas](toolbar-and-canvas.md).

@@ -40,18 +40,16 @@ For availability in your environment and release-channel switching, see the [rel
 
 ## Watch the feature videos
 
-Use these walkthroughs alongside the release notes to understand the related features and their configuration. Choose an English or German video below.
+Use these walkthroughs alongside the release notes to understand the related features and their configuration.
 
-| Topic | English video | German video |
-| --- | --- | --- |
-| Choose the Right Automation — including where PO Matching Rules fit | [Watch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4) | [Ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/de.mp4) |
-| Transformation Rules | [Watch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4) | [Ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/de.mp4) |
-| Custom Validation Rules | [Watch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4) | [Ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/de.mp4) |
-| Layouts and selection rules | [Watch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/en.mp4) | [Ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/de.mp4) |
-| Touchless Intelligence | [Watch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/en.mp4) | [Ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/de.mp4) |
-| E-Invoice Validation | [Watch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/en.mp4) | [Ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/de.mp4) |
-| Users and administrator access | [Watch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/en.mp4) | [Ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/de.mp4) |
-| Sub-organisations | [Watch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/en.mp4) | [Ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/de.mp4) |
+* [Choose the Right Automation — including where PO Matching Rules fit](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4)
+* [Transformation Rules](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4)
+* [Custom Validation Rules](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4)
+* [Layouts and selection rules](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/en.mp4)
+* [Touchless Intelligence](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/en.mp4)
+* [E-Invoice Validation](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/en.mp4)
+* [Users and administrator access](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/en.mp4)
+* [Sub-organisations](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/en.mp4)
 
 ### AI Table: six short videos
 

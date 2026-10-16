@@ -4,7 +4,7 @@
 
 Informacje o przechowywaniu danych uwierzytelniających i TLS w publicznych punktach końcowych sprawdzono **16 października 2026 r.** Poniższa strona opisuje potwierdzony zakres oraz kwestie, które wymagają jeszcze potwierdzenia dla danego wdrożenia. Zobacz [Bezpieczne przechowywanie danych uwierzytelniających](secure-storage-of-credentials.md).
 
-Szczegóły szyfrowania w spoczynku zweryfikowano **16 października 2026 r.** na podstawie dokumentacji bezpieczeństwa DigitalOcean i metadanych usług. Zobacz [Szyfrowanie danych w spoczynku](../security/encryption-at-rest.md).
+Szczegóły szyfrowania w spoczynku zweryfikowano **16 października 2026 r.** na podstawie dokumentacji bezpieczeństwa DigitalOcean i metadanych usług. Zobacz [Szyfrowanie danych w spoczynku](encryption-at-rest.md).
 
 Więcej informacji o bezpieczeństwie można znaleźć na stronach [Pliki cookie i pamięć przeglądarki](cookies-and-browser-storage.md), [Zarządzanie podatnościami](vulnerability-management.md) i [Pozostałe środki bezpieczeństwa](other-security-controls.md).
 
@@ -25,7 +25,7 @@ Więcej informacji o bezpieczeństwie można znaleźć na stronach [Pliki cookie
 
 ### 1. Gdzie dokładnie hostowane jest środowisko produkcyjne?
 
-**Odpowiedź:** Środowisko produkcyjne UE jest hostowane w chmurze DigitalOcean we Frankfurcie w Niemczech. DocBits używa DigitalOcean Spaces do przechowywania oraz zarządzanych usług PostgreSQL, OpenSearch i Valkey. DocBits posiada certyfikat ISO 27001. Zakres szyfrowania opisują [Szyfrowanie danych w spoczynku](../security/encryption-at-rest.md) i [Bezpieczne przechowywanie danych uwierzytelniających](secure-storage-of-credentials.md).
+**Odpowiedź:** Środowisko produkcyjne UE jest hostowane w chmurze DigitalOcean we Frankfurcie w Niemczech. DocBits używa DigitalOcean Spaces do przechowywania oraz zarządzanych usług PostgreSQL, OpenSearch i Valkey. DocBits posiada certyfikat ISO 27001. Zakres szyfrowania opisują [Szyfrowanie danych w spoczynku](encryption-at-rest.md) i [Bezpieczne przechowywanie danych uwierzytelniających](secure-storage-of-credentials.md).
 
 **Status:** ✅ Potwierdzone
 
@@ -53,7 +53,7 @@ Harmonogram kopii zapasowych: Codziennie, Co tydzień, Co kwartał i Co roku.
 
 **Status:** ✅ Potwierdzone
 
-**Notatki:** Kompleksowy harmonogram kopii zapasowych (codziennie/co tydzień/co kwartał/co roku) w dwóch lokalizacjach UE. Wszystkie dane pozostają w UE. Potwierdź szyfrowanie kopii zapasowych i częstotliwość testowania przywracania. Szyfrowanie kopii zarządzanych baz danych dostawcy opisano w [Szyfrowanie danych w spoczynku](../security/encryption-at-rest.md); nie potwierdza to każdej kopii w szerszym harmonogramie kopii zapasowych.
+**Notatki:** Kompleksowy harmonogram kopii zapasowych (codziennie/co tydzień/co kwartał/co roku) w dwóch lokalizacjach UE. Wszystkie dane pozostają w UE. Potwierdź szyfrowanie kopii zapasowych i częstotliwość testowania przywracania. Szyfrowanie kopii zarządzanych baz danych dostawcy opisano w [Szyfrowanie danych w spoczynku](encryption-at-rest.md); nie potwierdza to każdej kopii w szerszym harmonogramie kopii zapasowych.
 
 ---
 
@@ -75,7 +75,7 @@ Dane klientów z UE hostowane są wyłącznie we Frankfurcie. Obecnie niedostęp
 
 **Odpowiedź:** Publiczne punkty końcowe `app.docbits.com`, `auth.docbits.com` i `api.docbits.com` obsługują HTTPS z TLS 1.2 i TLS 1.3. Sprawdzenie 16 października 2026 r. potwierdziło odrzucanie TLS 1.0 i TLS 1.1. Hasła logowania i klucze utworzone w funkcji Zarządzanie kluczami API są chronione jednokierunkowym haszowaniem. Haszowanie jest odrębne od szyfrowania baz danych, magazynów danych i kopii zapasowych.
 
-**W spoczynku:** DigitalOcean Managed Databases stosuje szyfrowanie całych woluminów za pomocą LUKS i AES-256-XTS; zarządzane kopie zapasowe używają AES-256-CTR. Spaces używa 256-bitowego AES-XTS na fizycznych dyskach. [Szyfrowanie danych w spoczynku](../security/encryption-at-rest.md) opisuje metody, zarządzanie kluczami i zakres kopii.
+**W spoczynku:** DigitalOcean Managed Databases stosuje szyfrowanie całych woluminów za pomocą LUKS i AES-256-XTS; zarządzane kopie zapasowe używają AES-256-CTR. Spaces używa 256-bitowego AES-XTS na fizycznych dyskach. [Szyfrowanie danych w spoczynku](encryption-at-rest.md) opisuje metody, zarządzanie kluczami i zakres kopii.
 
 **Status:** ✅ Częściowo potwierdzone
 

@@ -69,6 +69,8 @@ Esta verificação abrange as ligações a estes pontos de acesso públicos, inc
 
 ## Cifragem das informações de conta armazenadas
 
+DigitalOcean Managed Databases utiliza cifragem de volumes completos com LUKS e AES-256-XTS; as suas cópias geridas utilizam AES-256-CTR. Spaces utiliza AES-XTS de 256 bits nos discos físicos. [Cifragem em repouso](encryption-at-rest.md) descreve métodos, gestão de chaves, cobertura das cópias e a resposta à pergunta 4.8.
+
 O hashing de palavras-passe e chaves API é uma medida distinta da cifragem de bases de dados, volumes de armazenamento, objetos e cópias de segurança. Os controlos descritos não demonstram que cada nome de utilizador, campo de conta ou segredo de integração é cifrado individualmente, nem que todos os dados armazenados utilizam um algoritmo de cifragem específico.
 
 Para um requisito que abranja todas as informações das contas de clientes, solicite à FELLOWPRO AG uma declaração específica da instalação sobre os repositórios de dados e as cópias de segurança pertinentes, os métodos de cifragem, a gestão de chaves e o acesso do pessoal. Um modelo de alojamento na nuvem ou serverless, por si só, não demonstra estas propriedades.

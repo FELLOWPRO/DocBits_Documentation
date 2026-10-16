@@ -4,6 +4,8 @@
 
 As informações sobre o armazenamento de credenciais e TLS nos pontos de acesso públicos foram verificadas a **16 de outubro de 2026**. A página seguinte descreve o âmbito confirmado e os detalhes que ainda exigem confirmação para a instalação em causa. Consulte [Armazenamento seguro de credenciais](secure-storage-of-credentials.md).
 
+Os detalhes da cifragem em repouso foram verificados em **16 de outubro de 2026** com base na documentação de segurança da DigitalOcean e nos metadados dos serviços. Consulte [Cifragem em repouso](encryption-at-rest.md), incluindo a pergunta 4.8.
+
 ---
 
 ## Legenda de Status
@@ -21,11 +23,11 @@ As informações sobre o armazenamento de credenciais e TLS nos pontos de acesso
 
 ### 1. Onde exatamente o ambiente de produção está hospedado?
 
-**Resposta:** Hospedado na infraestrutura de nuvem AWS em Frankfurt, Alemanha. Utiliza S3 para armazenamento e OpenSearch para indexação de logs. DocBits é certificado ISO 27001. Para informações sobre a cifragem durante a transmissão e o âmbito verificado, consulte [Armazenamento seguro de credenciais](secure-storage-of-credentials.md).
+**Resposta:** O ambiente de produção da UE está alojado na infraestrutura cloud DigitalOcean em Frankfurt, Alemanha. O DocBits utiliza DigitalOcean Spaces para armazenamento e serviços geridos PostgreSQL, OpenSearch e Valkey. O DocBits é certificado ISO 27001. Consulte [Cifragem em repouso](encryption-at-rest.md) e [Armazenamento seguro de credenciais](secure-storage-of-credentials.md) para o âmbito da cifragem.
 
 **Status:** ✅ Confirmado
 
-**Notas:** AWS Frankfurt confirmado (S3 + OpenSearch). Solicite o código de região AWS específico (eu-central-1) e se é single ou multi-AZ.
+**Notas:** DigitalOcean Frankfurt: os tipos de serviços de bases de dados geridas foram confirmados através de metadados da infraestrutura em 16 de outubro de 2026; a utilização de Spaces está documentada nestas perguntas frequentes.
 
 ---
 
@@ -49,7 +51,7 @@ Cronograma de backup: Backups diários, semanais, trimestrais e anuais.
 
 **Status:** ✅ Confirmado
 
-**Notas:** Cronograma de backup abrangente (diário/semanal/trimestral/anual) em duas localizações da EU. Todos os dados permanecem dentro da EU. Confirme criptografia de backup e frequência de testes de restauração.
+**Notas:** Cronograma de backup abrangente (diário/semanal/trimestral/anual) em duas localizações da EU. Todos os dados permanecem dentro da EU. Confirme criptografia de backup e frequência de testes de restauração. A cifragem das cópias de bases de dados geridas pelo fornecedor está descrita em [Cifragem em repouso](encryption-at-rest.md); isto não verifica cada cópia do calendário geral de cópias de segurança.
 
 ---
 
@@ -71,9 +73,11 @@ Dados de clientes da EU são hospedados exclusivamente em Frankfurt. Nenhuma op�
 
 **Resposta:** Os pontos de acesso públicos `app.docbits.com`, `auth.docbits.com` e `api.docbits.com` suportam HTTPS com TLS 1.2 e TLS 1.3. As verificações de 16 de outubro de 2026 confirmaram a rejeição de TLS 1.0 e TLS 1.1. As palavras-passe e as chaves criadas através da Gestão de chaves API são protegidas por hashes unidirecionais. O hashing é distinto da cifragem de bases de dados, armazenamento e cópias de segurança.
 
+**Em repouso:** DigitalOcean Managed Databases utiliza cifragem de volumes completos com LUKS e AES-256-XTS; as suas cópias geridas utilizam AES-256-CTR. Spaces utiliza AES-XTS de 256 bits nos discos físicos. [Cifragem em repouso](encryption-at-rest.md) descreve métodos, gestão de chaves, cobertura das cópias e a resposta à pergunta 4.8.
+
 **Status:** ✅ Parcial
 
-**Notas:** A cifragem de todas as informações de conta armazenadas e das cópias de segurança, os métodos de cifragem, a gestão de chaves e a proteção de cada ligação interna exigem confirmação específica da instalação. A certificação ISO 27001, por si só, não demonstra um algoritmo específico nem a sua cobertura. Consulte [Armazenamento seguro de credenciais](secure-storage-of-credentials.md).
+**Notas:** Isto abrange os serviços geridos indicados. Exportações, arquivos e cópias adicionais, eventual cifragem por campo e cada ligação interna exigem confirmação específica da instalação. A cifragem do armazenamento não demonstra restrições de acesso do pessoal. [Armazenamento seguro de credenciais](secure-storage-of-credentials.md) explica o hashing e as diferenças de acesso.
 
 ---
 
@@ -163,11 +167,11 @@ Dados de clientes da EU são hospedados exclusivamente em Frankfurt. Nenhuma op�
 
 ### 14. Quanto tempo os logs de acesso são retidos?
 
-**Resposta:** Logs são armazenados em AWS S3 em Frankfurt e OpenSearch. Logs acessíveis ao cliente retidos por 30 dias. Logs internos retidos por 3 meses.
+**Resposta:** Logs são armazenados em DigitalOcean Spaces em Frankfurt e OpenSearch. Logs acessíveis ao cliente retidos por 30 dias. Logs internos retidos por 3 meses.
 
 **Status:** ✅ Confirmado
 
-**Notas:** S3 + OpenSearch em Frankfurt. 30 dias de acesso do cliente / retenção interna de 3 meses. Confirme se logs são imutáveis/à prova de manipulação.
+**Notas:** DigitalOcean Spaces + OpenSearch em Frankfurt. 30 dias de acesso do cliente / retenção interna de 3 meses. Confirme se logs são imutáveis/à prova de manipulação.
 
 ---
 
@@ -177,7 +181,7 @@ Dados de clientes da EU são hospedados exclusivamente em Frankfurt. Nenhuma op�
 
 **Status:** ✅ Confirmado
 
-**Notas:** Retenção configurável pelo cliente (30 dias / 3 meses). Confirme: Exclusão inclui todas as cópias (S3, OpenSearch, dados de treinamento de IA)?
+**Notas:** Retenção configurável pelo cliente (30 dias / 3 meses). Confirme: Exclusão inclui todas as cópias (DigitalOcean Spaces, OpenSearch, dados de treinamento de IA)?
 
 ---
 

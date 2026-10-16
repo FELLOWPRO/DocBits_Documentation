@@ -1,6 +1,6 @@
 # Secure credentials: verification record
 
-Review date: 16 October 2026. This file records the basis and limits of the English customer response and documentation change. It is outside the GitBook `readme/` root.
+Review date: 16 October 2026. This file records the basis and limits of the customer response and multilingual documentation change. It is outside the published GitBook content roots.
 
 ## Evidence and scope
 
@@ -47,7 +47,26 @@ Before answering the entire questionnaire with an unqualified “yes”, obtain 
 2. Transport protection for internal service and database connections and for the customer's specific integration path.
 3. Which vendor roles may access account information or usable integration secrets, and the controls and audit records governing that access.
 
-The customer text explicitly limits its claims while these items remain unconfirmed. Cloud/serverless architecture and ISO certification are not substitutes for this evidence. This change prepares the English documentation and response; publication and translations are not evidenced by a local edit or draft pull request.
+The customer text explicitly limits its claims while these items remain unconfirmed. Cloud/serverless architecture and ISO certification are not substitutes for this evidence. These limits are retained in every translation.
+
+## Publication and translation mapping
+
+GitBook space settings and the public sitemap were checked on the review date. Eight languages are published. Their spaces import the following directories from `FELLOWPRO/DocBits_Documentation`, branch `main`:
+
+| Language | Publication directory | Source maintained for subsequent synchronization |
+| --- | --- | --- |
+| English | `docbits/` | `main:readme/` and `main:docbits/` |
+| German | `deutsch/` | `de:readme/` |
+| Spanish | `espanol/` | `es:readme/` |
+| French | `french/` | `fr:readme/` |
+| Italian | `italian/` | `it:readme/` |
+| Dutch | `dutch/` | `nl:readme/` |
+| Polish | `polish/` | `pl:readme/` |
+| Portuguese | `portuguese/` | `pt:readme/` |
+
+The change includes the credential-storage page, navigation entry, updated security FAQ, API-key storage wording and cross-reference, and password-reset cross-reference in each published language. The reusable response includes supported cipher methods and symmetric key lengths. The scheduled language-folder bridge copies the seven language branches into their publication directories, so both locations must retain the changes.
+
+Validation covers the TLS answer tables and cipher/key-length tables across languages, added relative links and English anchors, balanced GitBook tags and front matter, and the complete navigation/import structure of all eight publication directories. Existing missing-image warnings in other translated pages do not concern this text-only change. No screenshots, credentials, account records, or integration secrets were collected for publication.
 
 ## Published sources checked
 

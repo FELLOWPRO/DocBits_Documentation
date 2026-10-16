@@ -59,7 +59,7 @@ If you have more keys than fit on one page, use the paging controls at the botto
 5. Tick **I have copied and saved this key** and click **Done**.
 
 {% hint style="danger" %}
-**The full key is shown only once.** DocBits stores it in a scrambled form that cannot be turned back into the original, so nobody — not your administrators, not DocBits support — can look it up again afterwards. If you lose it, revoke the key and create a new one.
+**The full key is shown only once.** DocBits stores a one-way hash of the key and a short identifying prefix. Neither your administrators nor DocBits support can retrieve the original full key from that hash. If you lose it, revoke the key and create a new one.
 {% endhint %}
 
 Treat the key like a password. Anyone who has it can act on your organization's documents and data.

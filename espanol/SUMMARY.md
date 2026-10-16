@@ -9,6 +9,7 @@
   * [Certificaciones](overview-and-basics/architecture/certifications.md)
   * [Requisitos de la configuración local de Prefect](overview-and-basics/architecture/prefect-local-setup-requirements.md)
 * [Preguntas Frecuentes de Seguridad y Cumplimiento](overview-and-basics/security-and-compliance-faq.md)
+* [Almacenamiento seguro de credenciales](overview-and-basics/secure-storage-of-credentials.md)
 * [Autenticación de Dos Factores (2FA)](overview-and-basics/two-factor-authentication.md)
 * [Infraestructura de Infor](overview-and-basics/infor-infrastructure.md)
 * [Estrategia del ciclo de vida de versiones de DocBits](overview-and-basics/docbits-release-lifecycle-strategy.md)

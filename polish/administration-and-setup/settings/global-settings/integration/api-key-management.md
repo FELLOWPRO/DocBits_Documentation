@@ -59,7 +59,9 @@ Jeśli masz więcej kluczy, niż mieści się na jednej stronie, użyj elementó
 5. Zaznacz **I have copied and saved this key** i kliknij **Done**.
 
 {% hint style="danger" %}
-**Pełny klucz jest pokazywany tylko raz.** DocBits przechowuje go w zaszyfrowanej postaci, której nie da się odwrócić do oryginału, więc nikt — ani Twoi administratorzy, ani wsparcie DocBits — nie może go później odczytać. Jeśli go zgubisz, unieważnij klucz i utwórz nowy.
+**Pełny klucz jest pokazywany tylko raz.** DocBits zapisuje jednokierunkowy skrót klucza i krótki prefiks identyfikacyjny. Ani Twoi administratorzy, ani pomoc techniczna DocBits nie mogą odzyskać pełnego oryginalnego klucza z tego skrótu. Jeśli go utracisz, unieważnij klucz i utwórz nowy.
 {% endhint %}
 
 Traktuj klucz jak hasło. Każdy, kto go ma, może działać na dokumentach i danych Twojej organizacji.
+
+Zobacz [Bezpieczne przechowywanie danych uwierzytelniających](../../../../overview-and-basics/secure-storage-of-credentials.md).

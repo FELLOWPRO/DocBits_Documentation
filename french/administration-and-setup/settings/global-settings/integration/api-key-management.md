@@ -60,7 +60,9 @@ Si vous avez plus de clés qu'il n'en tient sur une page, utilisez les commandes
 5. Cochez **I have copied and saved this key** et cliquez sur **Done**.
 
 {% hint style="danger" %}
-**La clé complète n'est affichée qu'une seule fois.** DocBits la stocke sous une forme chiffrée qui ne peut pas être ramenée à l'original : personne — ni vos administrateurs, ni le support DocBits — ne peut la retrouver ensuite. Si vous la perdez, révoquez la clé et créez-en une nouvelle.
+**La clé complète n’est affichée qu’une seule fois.** DocBits stocke un hachage à sens unique de la clé et un court préfixe d’identification. Ni vos administrateurs ni le support DocBits ne peuvent récupérer la clé complète d’origine à partir de ce hachage. Si vous la perdez, révoquez-la et créez-en une nouvelle.
 {% endhint %}
 
 Traitez la clé comme un mot de passe. Quiconque la détient peut agir sur les documents et les données de votre organisation.
+
+Voir [Stockage sécurisé des identifiants](../../../../overview-and-basics/secure-storage-of-credentials.md).

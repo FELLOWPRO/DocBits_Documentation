@@ -46,6 +46,8 @@ Après avoir soumis le formulaire, DocBits affiche une page de confirmation et e
 
 ## Mot de passe oublié
 
+DocBits stocke les mots de passe sous forme de hachages salés à sens unique. Un mot de passe existant ne peut pas être récupéré à partir de son hachage ; cette procédure en définit donc un nouveau. Voir [Stockage sécurisé des identifiants](../../overview-and-basics/secure-storage-of-credentials.md).
+
 Si vous avez oublié votre mot de passe :
 
 1. Sur l'écran de connexion, cliquez sur **Mot de passe oublié ?**.

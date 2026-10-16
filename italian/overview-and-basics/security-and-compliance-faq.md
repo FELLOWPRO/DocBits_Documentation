@@ -2,6 +2,8 @@
 
 **Fornitore:** DocBits di FELLOWPRO AG | **Hosting:** Francoforte, Germania | **Certificazione ISO 27001** | **Data:** 2026-03-04
 
+Le informazioni sull’archiviazione delle credenziali e su TLS negli endpoint pubblici sono state verificate il **16 ottobre 2026**. La pagina seguente descrive l’ambito confermato e i dettagli che richiedono ancora una conferma per lo specifico ambiente. Vedere [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md).
+
 ---
 
 ## Legenda dello Stato
@@ -19,7 +21,7 @@
 
 ### 1. Dove esattamente è ospitato l'ambiente di produzione?
 
-**Risposta:** Ospitato su infrastruttura cloud AWS a Francoforte, Germania. Utilizza S3 per l'archiviazione e OpenSearch per l'indicizzazione dei log. DocBits è certificato ISO 27001. Tutte le connessioni sono protette tramite SSH, HTTPS e protocolli di crittografia standard del settore.
+**Risposta:** Ospitato su infrastruttura cloud AWS a Francoforte, Germania. Utilizza S3 per l'archiviazione e OpenSearch per l'indicizzazione dei log. DocBits è certificato ISO 27001. Per la crittografia in transito e l’ambito verificato, vedere [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md).
 
 **Stato:** ✅ Confermato
 
@@ -67,11 +69,11 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 ### 5. I dati sono crittografati a riposo e in transito?
 
-**Risposta:** Tutte le connessioni tra i componenti sono protette utilizzando protocolli di crittografia standard del settore (SSH, HTTPS). La certificazione ISO 27001 richiede controlli di crittografia.
+**Risposta:** Gli endpoint pubblici `app.docbits.com`, `auth.docbits.com` e `api.docbits.com` supportano HTTPS con TLS 1.2 e TLS 1.3. Le verifiche del 16 ottobre 2026 hanno confermato il rifiuto di TLS 1.0 e TLS 1.1. Le password e le chiavi create tramite la Gestione delle chiavi API sono protette mediante hashing unidirezionale. L’hashing è distinto dalla crittografia di database, archivi e backup.
 
-**Stato:** ✅ Confermato
+**Stato:** ✅ Parziale
 
-**Note:** Confermare gli standard di crittografia specifici (ad es., AES-256 a riposo, TLS 1.2+ in transito).
+**Note:** La crittografia di tutte le informazioni degli account archiviate e dei backup, i metodi di crittografia, la gestione delle chiavi e la protezione di ogni connessione interna richiedono una conferma specifica per l’ambiente. La certificazione ISO 27001, da sola, non dimostra un particolare algoritmo né il suo ambito di applicazione. Vedere [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md).
 
 ---
 
@@ -268,11 +270,11 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 ### 24. Il trasferimento dati tra DocBits e LN è crittografato end-to-end?
 
-**Risposta:** Tutte le connessioni tra i componenti sono protette utilizzando crittografia standard del settore (SSH, HTTPS).
+**Risposta:** L’integrazione ION API documentata utilizza HTTPS. L’endpoint pubblico dell’API DocBits supporta TLS 1.2 e TLS 1.3. Questa verifica non dimostra la crittografia di ogni fase di elaborazione interna né la politica TLS dell’endpoint ERP del cliente.
 
-**Stato:** ✅ Confermato
+**Stato:** ✅ Parziale
 
-**Note:** La comunicazione ION API utilizza HTTPS/TLS. Confermare la versione TLS minima (1.2+).
+**Note:** Confermare l’intero percorso di connessione, i requisiti TLS dell’endpoint ERP e la convalida dei certificati dell’integrazione configurata prima di garantire la crittografia end-to-end. Vedere [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md).
 
 ---
 
@@ -283,3 +285,15 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 **Stato:** ✅ Confermato
 
 **Note:** Chiarire quali tipi di documento vengono scritti di nuovo in LN rispetto a quelli archiviati solo in IDM.
+
+---
+
+## Archiviazione delle credenziali e recupero degli account
+
+### 26. Il fornitore può vedere le credenziali del cliente e cosa succede se si perde una password?
+
+**Risposta:** Le password di accesso a DocBits sono memorizzate come hash unidirezionali con salt. Gli amministratori e il supporto DocBits non possono recuperare la password originale in chiaro dall'hash memorizzato. Gli utenti che dimenticano la password devono impostarne una nuova tramite la procedura di reimpostazione via email per tornare ad accedere con una password. SSO o passkey configurati offrono modalità di accesso alternative. Le chiavi create tramite la Gestione delle chiavi API DocBits vengono mostrate una sola volta e memorizzate come hash unidirezionali. Né gli amministratori né il supporto DocBits possono recuperare la chiave completa in seguito. Le chiavi perse devono essere revocate e sostituite.
+
+**Stato:** ✅ Parziale
+
+**Note:** Queste affermazioni riguardano le password e le chiavi emesse da DocBits. Gli amministratori autorizzati dell’organizzazione possono consultare i dati degli account. Il servizio che stabilisce la connessione può dover leggere le credenziali di integrazione; l’accesso del personale del fornitore richiede una conferma separata. Vedere [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md).

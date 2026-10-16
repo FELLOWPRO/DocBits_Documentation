@@ -2,6 +2,8 @@
 
 **Vendor:** DocBits by FELLOWPRO AG | **Hosting:** Frankfurt, Germany | **ISO 27001 Certified** | **Date:** 2026-03-04
 
+Credential storage and public-endpoint TLS information was reviewed on **16 October 2026**. See [Secure Storage of Credentials](secure-storage-of-credentials.md) for the verified scope and the deployment-specific details that still require confirmation.
+
 ---
 
 ## Status Legend
@@ -19,7 +21,7 @@
 
 ### 1. Where exactly is the production environment hosted?
 
-**Response:** Hosted on DigitalOcean cloud infrastructure in Frankfurt, Germany. Uses DigitalOcean Spaces for storage and OpenSearch for log indexing. DocBits is ISO 27001 certified. All connections secured via SSH, HTTPS, and industry-standard encryption protocols.
+**Response:** Hosted on DigitalOcean cloud infrastructure in Frankfurt, Germany. Uses DigitalOcean Spaces for storage and OpenSearch for log indexing. DocBits is ISO 27001 certified. For transport encryption and its verified scope, see [Secure Storage of Credentials](secure-storage-of-credentials.md#encryption-in-transit).
 
 **Status:** ✅ Confirmed
 
@@ -67,11 +69,11 @@ EU customer data is hosted exclusively in Frankfurt. No UK-only option currently
 
 ### 5. Is data encrypted at rest and in transit?
 
-**Response:** All connections between components are secured using industry-standard encryption protocols (SSH, HTTPS). ISO 27001 certification mandates encryption controls.
+**Response:** The public endpoints `app.docbits.com`, `auth.docbits.com`, and `api.docbits.com` support HTTPS with TLS 1.2 and TLS 1.3. Checks on 16 October 2026 rejected TLS 1.0 and TLS 1.1. Login passwords and keys created through API Key Management are protected using one-way hashing. Hashing is separate from encryption of databases, storage, and backups.
 
-**Status:** ✅ Confirmed
+**Status:** ✅ Partial
 
-**Notes:** Confirm specific encryption standards (e.g., AES-256 at rest, TLS 1.2+ in transit).
+**Notes:** Encryption of all stored account information and backups, encryption methods, key management, and the protection of every internal connection require deployment-specific confirmation. ISO 27001 certification alone does not establish a particular algorithm or its coverage. See [Secure Storage of Credentials](secure-storage-of-credentials.md).
 
 ---
 
@@ -268,11 +270,11 @@ EU customer data is hosted exclusively in Frankfurt. No UK-only option currently
 
 ### 24. Is data transfer between DocBits and the ERP encrypted end-to-end?
 
-**Response:** All connections between components secured using industry-standard encryption (SSH, HTTPS).
+**Response:** The documented ION API integration uses HTTPS. The public DocBits API endpoint supports TLS 1.2 and TLS 1.3. This public-endpoint verification does not establish encryption across every internal processing step or the TLS policy of the customer's ERP endpoint.
 
-**Status:** ✅ Confirmed
+**Status:** ✅ Partial
 
-**Notes:** ION API communication uses HTTPS/TLS. Confirm minimum TLS version (1.2+).
+**Notes:** Confirm the complete connection path, the ERP endpoint's TLS requirements, and certificate validation for the configured integration before making an end-to-end assurance. See [Secure Storage of Credentials](secure-storage-of-credentials.md#encryption-in-transit).
 
 ---
 
@@ -283,3 +285,15 @@ EU customer data is hosted exclusively in Frankfurt. No UK-only option currently
 **Status:** ✅ Confirmed
 
 **Notes:** Clarify which document types write back to the ERP vs. are only stored in IDM.
+
+---
+
+## Credential Storage and Account Recovery
+
+### 26. Can the vendor view client credentials, and what happens if a password is lost?
+
+**Response:** Login passwords are stored as salted, one-way hashes. Administrators and DocBits support cannot retrieve the original plaintext password from the stored hash. To resume password-based sign-in after forgetting a password, the user sets a new password through the email-based reset procedure. Configured SSO or passkey methods provide alternative sign-in options. API keys created through API Key Management are shown once and stored as one-way hashes; lost keys must be revoked and replaced.
+
+**Status:** ✅ Partial
+
+**Notes:** These statements cover login passwords and DocBits-issued keys. Account details can be viewed by authorized organization administrators. Integration credentials may need to be read by the connecting service, and vendor personnel access requires separate confirmation. See [Secure Storage of Credentials](secure-storage-of-credentials.md) for the full distinction and customer questionnaire wording.

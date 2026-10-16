@@ -2,6 +2,8 @@
 
 **Leverancier:** DocBits door FELLOWPRO AG | **Hosting:** Frankfurt, Duitsland | **ISO 27001 Gecertificeerd** | **Datum:** 2026-03-04
 
+De informatie over de opslag van inloggegevens en TLS bij openbare eindpunten is gecontroleerd op **16 oktober 2026**. De volgende pagina beschrijft de bevestigde reikwijdte en de details die nog per omgeving moeten worden bevestigd. Zie [Veilige opslag van inloggegevens](secure-storage-of-credentials.md).
+
 ---
 
 ## Statuslegende
@@ -19,7 +21,7 @@
 
 ### 1. Waar precies wordt de productieomgeving gehost?
 
-**Antwoord:** Gehost op AWS-cloud-infrastructuur in Frankfurt, Duitsland. Gebruikt S3 voor opslag en OpenSearch voor logboekindexering. DocBits is ISO 27001 gecertificeerd. Alle verbindingen beveiligd via SSH, HTTPS en standaard encryptieprotocollen.
+**Antwoord:** Gehost op AWS-cloud-infrastructuur in Frankfurt, Duitsland. Gebruikt S3 voor opslag en OpenSearch voor logboekindexering. DocBits is ISO 27001 gecertificeerd. Zie voor versleuteling tijdens de overdracht en de geverifieerde reikwijdte [Veilige opslag van inloggegevens](secure-storage-of-credentials.md).
 
 **Status:** ✅ Bevestigd
 
@@ -67,11 +69,11 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 ### 5. Zijn gegevens versleuteld in rust en onderweg?
 
-**Antwoord:** Alle verbindingen tussen componenten zijn beveiligd met behulp van standaard encryptieprotocollen (SSH, HTTPS). ISO 27001-certificering vereist versleutelingscontroles.
+**Antwoord:** De openbare eindpunten `app.docbits.com`, `auth.docbits.com` en `api.docbits.com` ondersteunen HTTPS met TLS 1.2 en TLS 1.3. Bij de controles op 16 oktober 2026 werden TLS 1.0 en TLS 1.1 geweigerd. Inlogwachtwoorden en sleutels uit API-sleutelbeheer worden beschermd met eenrichtingshashes. Hashing is een andere maatregel dan versleuteling van databases, opslag en back-ups.
 
-**Status:** ✅ Bevestigd
+**Status:** ✅ Gedeeltelijk
 
-**Opmerkingen:** Bevestig specifieke versleutelingsnormen (bijv. AES-256 in rust, TLS 1.2+ onderweg).
+**Opmerkingen:** Versleuteling van alle opgeslagen accountgegevens en back-ups, versleutelingsmethoden, sleutelbeheer en bescherming van elke interne verbinding vereisen bevestiging voor de specifieke omgeving. ISO 27001-certificering op zichzelf toont geen bepaald algoritme of de dekking daarvan aan. Zie [Veilige opslag van inloggegevens](secure-storage-of-credentials.md).
 
 ---
 
@@ -268,11 +270,11 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 ### 24. Is gegevensoverdracht tussen DocBits en LN end-to-end versleuteld?
 
-**Antwoord:** Alle verbindingen tussen componenten zijn beveiligd met behulp van standaard encryptie (SSH, HTTPS).
+**Antwoord:** De gedocumenteerde ION API-integratie gebruikt HTTPS. Het openbare DocBits-API-eindpunt ondersteunt TLS 1.2 en TLS 1.3. Deze verificatie toont geen versleuteling aan voor elke interne verwerkingsstap of het TLS-beleid van het ERP-eindpunt van de klant.
 
-**Status:** ✅ Bevestigd
+**Status:** ✅ Gedeeltelijk
 
-**Opmerkingen:** ION API-communicatie gebruikt HTTPS/TLS. Bevestig minimale TLS-versie (1.2+).
+**Opmerkingen:** Bevestig het volledige verbindingspad, de TLS-eisen van het ERP-eindpunt en de certificaatvalidatie voor de ingestelde integratie voordat u end-to-end-versleuteling toezegt. Zie [Veilige opslag van inloggegevens](secure-storage-of-credentials.md).
 
 ---
 
@@ -283,3 +285,15 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 **Status:** ✅ Bevestigd
 
 **Opmerkingen:** Verduidelijk welke documenttypen teruggevoerd naar LN vs. alleen opgeslagen in IDM.
+
+---
+
+## Opslag van inloggegevens en accountherstel
+
+### 26. Kan de leverancier inloggegevens van klanten bekijken en wat gebeurt er als een wachtwoord verloren gaat?
+
+**Antwoord:** DocBits-inlogwachtwoorden worden opgeslagen als eenrichtingshashes met salt. Beheerders en DocBits-support kunnen het oorspronkelijke leesbare wachtwoord niet uit de opgeslagen hash ophalen. Gebruikers die hun wachtwoord vergeten, moeten via de resetprocedure per e-mail een nieuw wachtwoord instellen om weer met een wachtwoord te kunnen inloggen. Ingestelde SSO- of passkey-methoden bieden alternatieve inlogmogelijkheden. Sleutels die via DocBits-API-sleutelbeheer worden aangemaakt, worden slechts één keer getoond en als eenrichtingshashes opgeslagen. Beheerders en DocBits-support kunnen de volledige sleutel daarna niet meer ophalen. Verloren sleutels moeten worden ingetrokken en vervangen.
+
+**Status:** ✅ Gedeeltelijk
+
+**Opmerkingen:** Deze uitspraken gelden voor inlogwachtwoorden en door DocBits uitgegeven sleutels. Bevoegde organisatiebeheerders kunnen accountgegevens bekijken. De dienst die de verbinding maakt, moet mogelijk de inloggegevens voor de integratie kunnen lezen; toegang door medewerkers van de leverancier vereist afzonderlijke bevestiging. Zie [Veilige opslag van inloggegevens](secure-storage-of-credentials.md).

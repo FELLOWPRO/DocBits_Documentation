@@ -46,6 +46,8 @@ Nadat u het formulier heeft verzonden, toont DocBits een bevestigingspagina en s
 
 ## Wachtwoord vergeten
 
+DocBits slaat inlogwachtwoorden op als eenrichtingshashes met salt. Een bestaand wachtwoord kan niet uit de hash worden teruggehaald, dus met deze procedure stelt u een nieuw wachtwoord in. Zie [Veilige opslag van inloggegevens](../../overview-and-basics/secure-storage-of-credentials.md).
+
 Als u uw wachtwoord bent vergeten:
 
 1. Klik op het inlogscherm op **Wachtwoord vergeten**.

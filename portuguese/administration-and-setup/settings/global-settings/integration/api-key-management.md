@@ -60,7 +60,9 @@ Se tiver mais chaves do que cabem numa página, use os controlos de paginação 
 5. Assinale **I have copied and saved this key** e clique em **Done**.
 
 {% hint style="danger" %}
-**A chave completa é mostrada apenas uma vez.** O DocBits guarda-a de forma cifrada que não pode ser revertida ao original, pelo que ninguém — nem os seus administradores, nem o suporte do DocBits — a consegue consultar depois. Se a perder, revogue a chave e crie uma nova.
+**A chave completa é mostrada apenas uma vez.** O DocBits guarda um hash unidirecional da chave e um prefixo curto para identificação. Nem os seus administradores nem o suporte do DocBits podem recuperar a chave original completa a partir desse hash. Se a perder, revogue-a e crie uma nova.
 {% endhint %}
 
 Trate a chave como uma palavra-passe. Qualquer pessoa que a tenha pode atuar sobre os documentos e os dados da sua organização.
+
+Consulte [Armazenamento seguro de credenciais](../../../../overview-and-basics/secure-storage-of-credentials.md).

@@ -1,150 +1,54 @@
-# Etiquetas de la tabla AI
+# Etiquetas e instrucciones de la tabla AI
 
-### Instrucciones paso a paso sobre cómo agregar etiquetas a una tabla:
+Las etiquetas son la forma de decirle a la IA qué hacer con una tabla. En la tarjeta **Instrucciones para la IA** situada debajo de la tabla AI (consulta [Tabla AI](README.md)) das dos tipos de etiquetas:
 
-**Paso 1:** Elegir nombres de columnas (etiquetas)
+| Tipo | Dónde lo introduces | Qué hace la IA con ello |
+| --- | --- | --- |
+| **Instrucción** | **Prompt para la IA**, una instrucción por línea | La sigue mientras lee la tabla, por ejemplo cómo calcular o qué término usar. |
+| **Columna** | **Columnas adicionales para la IA** | Debe devolver esa columna además de las habituales, aunque el documento no la rotule con claridad. |
 
-* **Seleccionar nombres de columnas:** Revisa los nombres de las columnas de tu tabla y decide qué etiquetas agregar.
+Ambas se almacenan juntas como etiquetas de IA del proveedor cuando haces clic en **Guardar como entrenamiento**.
 
-<figure><img src="../../../.gitbook/assets/ai-table-tags1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ai-table-prompt-filled-es.png" alt="Una línea de prompt escrita en la tarjeta Instrucciones para la IA"><figcaption><p>Una instrucción por línea en <strong>Prompt para la IA</strong>.</p></figcaption></figure>
 
-**Paso 2:** Presionar el botón "Aplicar"
+## Añadir etiquetas paso a paso
 
-* **Presionar botón:** Una vez que hayas seleccionado la etiqueta apropiada para una columna, presiona el botón "Aplicar" junto a la columna y etiqueta seleccionadas.
+1. Abre el documento en la pantalla de validación y permanece en la pestaña **Tabla AI extraída**.
+2. En **Prompt para la IA** escribe lo que debe hacer la IA, una instrucción por línea. Escribe **@** para insertar una columna de tu configuración.
+3. O abre **Columnas adicionales para la IA** y elige las columnas que la IA debe devolver.
+4. ¿No sabes qué escribir? Haz clic en **Sugerir con Nexus** y usa **Insertar** o **Add column** en una sugerencia.
+5. Haz clic en **Cambio de prueba** para comparar el resultado con la tabla actual. Todavía no se escribe nada.
+6. ¿Conforme? Haz clic en **Aplicar** (o en **Aplicar el resultado a este documento** en el diálogo de prueba) para poner el resultado en este documento.
+7. Si todos los documentos de este proveedor lo necesitan, haz clic en **Guardar como entrenamiento**. **Borrar** elimina las etiquetas y reglas guardadas del diseño del proveedor.
 
-**Paso 3:** Agregar etiqueta a la tabla
+{% hint style="info" %}
+Cada línea de **Prompt para la IA** es una instrucción, incluso una sola palabra (DocBits añade un punto final para que la IA no la confunda con el nombre de una columna). Las columnas van en **Columnas adicionales para la IA**.
+{% endhint %}
 
-* **Agregar etiqueta:** La etiqueta seleccionada se añadirá a la tabla como una columna adicional junto a la columna correspondiente.
+## Cómo escribir buenas instrucciones
 
-<figure><img src="../../../.gitbook/assets/ai-table-tags2.png" alt=""><figcaption></figcaption></figure>
+* **Nombra la columna y el término del documento.** *Rellena la columna Descuento con la columna llamada "Rabatt"* funciona mejor que *busca el descuento*.
+* **Una cosa por línea.** Las líneas cortas son más fáciles de probar y de eliminar.
+* **Describe los cálculos con claridad.** *El precio unitario es el importe neto dividido por la cantidad*.
+* **Indica qué debe dejarse como está.** *Ignora las líneas de envío al final de la tabla*.
+* **Revisa toda la tabla.** Un prompt modificado vuelve a ejecutar la IA y puede cambiar todas las columnas.
+* **No repitas lo que ya se conoce.** Una etiqueta de columna que duplica otra etiqueta, o que coincide con un campo de cabecera, se ignora.
 
-**Paso 4:** Guardar o Eliminar Etiqueta
+## Ejemplos
 
-* **Guardar Etiqueta**: Presiona el botón Guardar para guardar la etiqueta deseada
-* **Eliminar Etiqueta:** Para eliminar la etiqueta seleccionada, presiona el botón Eliminar
+| Problema | Etiqueta |
+| --- | --- |
+| La columna de descuento queda vacía | Columna adicional **Descuento** y la instrucción *Rellena la columna Descuento con la columna llamada "Rabatt"* |
+| Cantidad y unidad están en una sola celda | *Pon el número en Cantidad y la unidad de medida en Unidad* |
+| El precio unitario no está impreso | *El precio unitario es el importe neto dividido por la cantidad* |
+| Las fechas deben estar en formato ISO | *Escribe todas las fechas como AAAA-MM-DD* |
+| Importes en una moneda extranjera | *Redondea todos los importes a dos decimales* |
 
-### Aquí hay una explicación detallada de cada columna y las posibles etiquetas:
+Las columnas que puedes elegir son las columnas de tabla configuradas para el tipo de documento; consulta [Table Columns](../../../administration-and-setup/settings/global-settings/document-types/table-columns/README.md).
 
-<figure><img src="../../../.gitbook/assets/ai-table-tags3.png" alt="" width="375"><figcaption></figcaption></figure>
+## Antes de guardar
 
-### **Posición:**
-
-**Descripción:** Posición u orden del artículo dentro del pedido.
-
-**Etiqueta:** Entero
-
-**Ejemplo:** 1, 2, 3...
-
-### **Descripción:**
-
-**Descripción:** Breve descripción del artículo.
-
-**Etiqueta:** Texto
-
-**Ejemplo:** Tornillo, Tuerca, Widget...
-
-### Orden de Compra:
-
-**Descripción:** El número del pedido asociado.
-
-**Etiqueta:** Alfanumérico
-
-**Ejemplo:** PO12345, PO98765...
-
-### Cantidad:
-
-**Descripción:** Número de unidades ordenadas.
-
-**Etiqueta:** Número
-
-**Ejemplo:** 100, 50, 200...
-
-### Unidad:
-
-**Descripción:** Unidad de medida (por ejemplo, pieza, kilogramo).
-
-**Etiqueta:** Texto
-
-**Ejemplo:** Pzs, kg, l...
-
-### Precio Unitario:
-
-**Descripción:** Precio por unidad del artículo.
-
-**Etiqueta:** Moneda
-
-**Ejemplo:** €10.00, €5.50, €100.00...
-
-### Monto Neto:
-
-**Descripción:** Precio total antes de deducciones e impuestos (calculado como cantidad \* precio unitario).
-
-**Etiqueta:** Moneda
-
-**Ejemplo:** €1,000.00, €275.00, €10,000.00...
-
-### Descuento:
-
-**Descripción:** Monto absoluto del descuento aplicado al monto neto.
-
-**Etiqueta:** Moneda
-
-**Ejemplo:** €50.00, €20.00, €500.00...
-
-### Porcentaje de Descuento:
-
-**Descripción:** Porcentaje de descuento aplicado al monto neto.
-
-**Etiqueta:** Porcentaje
-
-**Ejemplo:** 5%, 10%, 15%...
-
-### IVA:
-
-**Descripción:** Monto de IVA aplicado al artículo.
-
-**Etiqueta:** Moneda
-
-**Ejemplo:** €200.00, €55.00, €1,900.00...
-
-### Monto Total:
-
-**Descripción**: Monto final después de deducir el descuento y agregar el IVA.
-
-**Etiqueta:** Moneda
-
-**Ejemplo:** €1,150.00, €310.00, €11,400.00...
-
-### País de Origen:
-
-**Descripción:** País donde se fabricó o envió el artículo.
-
-**Etiqueta:** Texto
-
-**Ejemplo:** EE. UU., Alemania, China...
-
-### Número de Artículo:
-
-**Descripción:** Identificador único o SKU del artículo.
-
-**Etiqueta:** Alfanumérico
-
-**Ejemplo:** 987654, A12345, Z98765...
-
-### Número de Nota de Entrega:
-
-**Descripción:** Número de la nota de entrega asociada.
-
-**Etiqueta:** Alfanumérico
-
-**Ejemplo:** DN56789, DN12345...
-
-### Oración (información adicional):
-
-**Descripción:** Comentarios adicionales, códigos o información relevante.
-
-**Etiqueta:** Texto
-
-**Ejemplo:** Comentario, Especificación...
-
-Con esta estructura y etiquetas, la tabla está más claramente definida y la información puede ser mejor categorizada y procesada.
+* Usa primero **Cambio de prueba**. Nunca escribe nada.
+* **Guardar como entrenamiento** se aplica al diseño del proveedor, de modo que los siguientes documentos se leen con tus etiquetas. Comprueba en el siguiente documento que el chip indica **Entrenamiento aplicado**.
+* Si **Guardar reglas de extracción (solo para administradores)** está activado, pide a un administrador de la organización que guarde.
+* Las etiquetas cambian cómo lee la IA la tabla. Para posiciones de columna estables en un diseño recurrente, [entrena la tabla](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md) en su lugar.

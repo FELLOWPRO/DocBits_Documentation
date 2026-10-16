@@ -2,7 +2,7 @@
 
 > **Canal de lançamento:** VESTA · **Versão:** R1.0.15.
 >
-> **A comparar com a NOVA?** A [comparação de funcionalidades da versão principal NOVA](nova-major-release-16-october-2026.md#what-nova-adds-for-customers) abrange o Assistente de validação, melhorias de automação revistas, relatórios de faturas eletrónicas expandidos, novos controlos de importação e outras adições além desta versão VESTA.
+> **A comparar com a NOVA?** A [comparação de funcionalidades da versão principal NOVA](nova-major-release.md#what-nova-adds-for-customers) abrange o Assistente de validação, melhorias de automação revistas, relatórios de faturas eletrónicas expandidos, novos controlos de importação e outras adições além desta versão VESTA.
 >
 > **Próximo hotfix VESTA: [11 de novembro de 2026 (planeado)](vesta-hotfix-11-november-2026.md).** Todas as funcionalidades anteriormente disponíveis como beta na VESTA são agora funcionalidades regulares da NOVA e tornar-se-ão funcionalidades regulares da VESTA com esse hotfix.
 

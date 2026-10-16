@@ -2,6 +2,8 @@
 
 **Beschikbaarheid van NOVA R1.1:** Sinds **16 oktober 2026** beschikbaar in de sandbox. De productierelease staat gepland voor **4 november 2026**.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/nl.mp4" %}
+
 **DocBits is het product. NOVA is de naam van de releasecyclus.** [Bekijk de film over de nieuwe DocBits-release](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/nl.mp4) · [Ondertitels](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/nl.vtt).
 
 Kies een releasekanaal om te zien wat er verandert voor uw team. **In de NOVA-cyclus verschijnt de nieuwe grote DocBits-release met extra klantmogelijkheden. VESTA-hotfixes verbeteren de huidige productierelease.** Zie de [releaselifecycle](../docbits-release-lifecycle-strategy.md) voor beschikbaarheid en het wisselen tussen kanalen.
@@ -10,7 +12,7 @@ Kies een releasekanaal om te zien wat er verandert voor uw team. **In de NOVA-cy
 
 | Releasekanaal | Releaseopmerkingen | Focus |
 | --- | --- | --- |
-| **NOVA – Grote release** | [Wat is er nieuw voor klanten](nova-major-release-16-october-2026.md) · **4 november 2026 (gepland)** | Alle voormalige VESTA-bètafuncties, plus nieuwe mogelijkheden en uitbreidingen ten opzichte van VESTA R1.0.15. |
+| **NOVA – Grote release** | [Wat is er nieuw voor klanten](nova-major-release.md) · **4 november 2026 (gepland)** | Alle voormalige VESTA-bètafuncties, plus nieuwe mogelijkheden en uitbreidingen ten opzichte van VESTA R1.0.15. |
 | **VESTA — Volgende hotfix (gepland)** | [11 november 2026](vesta-hotfix-11-november-2026.md) | Introduceert alle voormalige VESTA-bètafuncties in de reguliere VESTA-functieset. |
 | **VESTA — Hotfix-release** | [14 oktober 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Verbeteringen en fixes voor de huidige VESTA-productierelease. |
 
@@ -34,9 +36,9 @@ Kies een releasekanaal om te zien wat er verandert voor uw team. **In de NOVA-cy
 * [**Aangepaste validatieregels**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md): definieer controles voor velden en tabelrijen, kies voorwaarden en ernst, en test uw regels. **Bekijk:** [Engelse video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4).
 * [**Inkoopordermatchingsregels**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md): configureer matchingtypes, toleranties en uitvoervolgorde, en beheer regelversies. **Gerelateerde video — Kies de juiste automatisering:** [Video bekijken](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/nl.mp4).
 
-[Bekijk alle functievideos](nova-major-release-16-october-2026.md#watch-the-feature-videos), inclusief lay-outs, Touchless Intelligence, e-factuurvalidatie en de zesdelige AI Table-serie.
+[Bekijk alle functievideos](nova-major-release.md#watch-the-feature-videos), inclusief lay-outs, Touchless Intelligence, e-factuurvalidatie en de zesdelige AI Table-serie.
 
-[Lees de volledige NOVA-functievergelijking](nova-major-release-16-october-2026.md), inclusief activeringsvereisten, aanvullende verbeteringen en alle **16 serviceversies**.
+[Lees de volledige NOVA-functievergelijking](nova-major-release.md), inclusief activeringsvereisten, aanvullende verbeteringen en alle **16 serviceversies**.
 
 **De VESTA-basislijn omvat bestaande functionaliteit en bètafuncties:** de oorspronkelijke Instellingenassistent, basiswaarschuwingen voor importgezondheid, AI-niveaus, Header Field Check, Touchless Intelligence-dashboard, regel-engines, transformaties na masterdata-opzoeking en basislogboeken voor regeluitvoering. De NOVA-opmerkingen onderscheiden de overgang van bèta naar reguliere beschikbaarheid van verdere toevoegingen aan deze mogelijkheden.
 

@@ -2,6 +2,8 @@
 
 **NOVA R1.1 可用性：** 自 **2026 年 10 月 16 日** 起已在沙盒环境中开放。生产环境发布计划于 **2026 年 11 月 4 日** 进行。
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/zh.mp4" %}
+
 **DocBits 是产品名称。NOVA 是发布周期的名称。** [观看 DocBits 新版本介绍视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/zh.mp4) · [字幕](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/zh.vtt).
 
 选择发布渠道以查看您的团队将发生哪些变化。**NOVA 发布周期推出 DocBits 的新主要版本，为客户提供更多功能。VESTA 热修复改进了当前的生产发布版本。** 有关可用性和渠道切换，请参阅 [发布生命周期（英文）](https://docs.docbits.com/overview-and-basics/docbits-release-lifecycle-strategy)。
@@ -10,7 +12,7 @@
 
 | 发布渠道 | 发布说明 | 重点 |
 | --- | --- | --- |
-| **NOVA – 主要版本** | [客户新功能](nova-major-release-16-october-2026.md) · **2026 年 11 月 4 日 (计划)** | 所有原 VESTA 测试版功能，以及与 VESTA R1.0.15 相比的新功能和扩展。 |
+| **NOVA – 主要版本** | [客户新功能](nova-major-release.md) · **2026 年 11 月 4 日 (计划)** | 所有原 VESTA 测试版功能，以及与 VESTA R1.0.15 相比的新功能和扩展。 |
 | **VESTA — 下一个热修复（计划中）** | [2026 年 11 月 11 日](vesta-hotfix-11-november-2026.md) | 将所有原 VESTA 测试版功能引入常规 VESTA 功能集。 |
 | **VESTA — 热修复发布版本** | [2026 年 10 月 14 日 — R1.0.15](incremental-updates-14-october-2026.md) | 针对当前 VESTA 生产发布版本的改进和修复。 |
 
@@ -34,9 +36,9 @@
 * [**自定义验证规则**（英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/custom-validation-rules)：定义字段和表格行的检查项，选择条件和严重性，并测试您的规则。**观看：** [英文视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4)。
 * [**采购订单匹配规则**（英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules)：配置匹配类型、容差和执行顺序，并管理规则版本。**相关视频 — 选择合适的自动化：** [英文视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4)。
 
-[浏览所有功能视频](nova-major-release-16-october-2026.md#watch-the-feature-videos)，包括布局、Touchless Intelligence、电子发票验证以及六部分 AI Table 系列。
+[浏览所有功能视频](nova-major-release.md#watch-the-feature-videos)，包括布局、Touchless Intelligence、电子发票验证以及六部分 AI Table 系列。
 
-[阅读完整的 NOVA 功能对比](nova-major-release-16-october-2026.md)，包括激活要求、额外改进以及所有 **16 个服务版本**。
+[阅读完整的 NOVA 功能对比](nova-major-release.md)，包括激活要求、额外改进以及所有 **16 个服务版本**。
 
 **VESTA 基线包含现有功能和 Beta 功能：** 原始设置助手、基本导入健康警告、AI 层级、表头字段检查、Touchless Intelligence 仪表板、规则引擎、主数据查找后的转换以及基本规则执行日志。NOVA 说明区分了从 Beta 到常规可用性的转变以及这些功能的进一步新增内容。
 

@@ -2,6 +2,8 @@
 
 **Dostępność NOVA R1.1:** Wersja jest dostępna w środowisku testowym od **16 października 2026 r.** Wydanie produkcyjne jest planowane na **4 listopada 2026 r.**
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/pl.mp4" %}
+
 **DocBits to produkt. NOVA to nazwa cyklu wydań.** [Obejrzyj film o nowym wydaniu DocBits](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/pl.mp4) · [Napisy](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/pl.vtt).
 
 Wybierz kanał wydania, aby zobaczyć zmiany dotyczące Twojego zespołu. **Cykl NOVA wprowadza nowe główne wydanie DocBits z dodatkowymi funkcjami dla klientów. Hotfixy VESTA ulepszają bieżącą wersję produkcyjną.** Zobacz [cykl życia wydania](../docbits-release-lifecycle-strategy.md), aby poznać dostępność i możliwość przełączania między kanałami.
@@ -10,7 +12,7 @@ Wybierz kanał wydania, aby zobaczyć zmiany dotyczące Twojego zespołu. **Cykl
 
 | Kanał wydania | Notatki do wydania | Zakres |
 | --- | --- | --- |
-| **NOVA – Wydanie główne** | [Nowości dla klientów](nova-major-release-16-october-2026.md) · **4 listopada 2026 r. (planowane)** | Wszystkie funkcje, które wcześniej były w wersji beta VESTA, plus nowe możliwości i rozszerzenia w porównaniu z VESTA R1.0.15. |
+| **NOVA – Wydanie główne** | [Nowości dla klientów](nova-major-release.md) · **4 listopada 2026 r. (planowane)** | Wszystkie funkcje, które wcześniej były w wersji beta VESTA, plus nowe możliwości i rozszerzenia w porównaniu z VESTA R1.0.15. |
 | **VESTA — Następny hotfix (planowany)** | [11 listopada 2026 r.](vesta-hotfix-11-november-2026.md) | Wprowadza wszystkie funkcje, które wcześniej były w wersji beta VESTA, do standardowego zestawu funkcji VESTA. |
 | **VESTA — Wydanie hotfix** | [14 października 2026 r. — R1.0.15](incremental-updates-14-october-2026.md) | Ulepszenia i poprawki dla bieżącej wersji produkcyjnej VESTA. |
 
@@ -34,9 +36,9 @@ Wybierz kanał wydania, aby zobaczyć zmiany dotyczące Twojego zespołu. **Cykl
 * [**Niestandardowe reguły walidacji**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md): definiuj sprawdzenia dla pól i wierszy tabel, wybieraj warunki i poziom ważności oraz testuj swoje reguły. **Obejrzyj:** [Film po angielsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4).
 * [**Reguły dopasowywania zamówień**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md): konfiguruj typy dopasowań, tolerancje i kolejność wykonania oraz zarządzaj wersjami reguł. **Powiązany film — Wybierz właściwą automatyzację:** [Obejrzyj film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/pl.mp4).
 
-[Przeglądaj wszystkie filmy dotyczące funkcji](nova-major-release-16-october-2026.md#watch-the-feature-videos), w tym dotyczące układów, Touchless Intelligence, walidacji e-faktur oraz sześcioodcinkowej serii AI Table.
+[Przeglądaj wszystkie filmy dotyczące funkcji](nova-major-release.md#watch-the-feature-videos), w tym dotyczące układów, Touchless Intelligence, walidacji e-faktur oraz sześcioodcinkowej serii AI Table.
 
-[Przeczytaj pełne porównanie funkcji NOVA](nova-major-release-16-october-2026.md), w tym wymagania dotyczące aktywacji, dodatkowe ulepszenia i wszystkie **16 wersji usługi**.
+[Przeczytaj pełne porównanie funkcji NOVA](nova-major-release.md), w tym wymagania dotyczące aktywacji, dodatkowe ulepszenia i wszystkie **16 wersji usługi**.
 
 **Bazowa wersja VESTA obejmuje istniejące funkcje i funkcje beta:** oryginalny Asystent ustawień, podstawowe ostrzeżenia dotyczące stanu importu, poziomy AI, Kontrola pól nagłówka, pulpit Touchless Intelligence, silniki reguł, transformacje po wyszukiwaniu danych podstawowych oraz podstawowe logi wykonania reguł. Notatki dotyczące NOVA odróżniają przejście z wersji beta do regularnej dostępności od dalszych rozszerzeń tych możliwości.
 

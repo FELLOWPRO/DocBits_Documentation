@@ -2,6 +2,8 @@
 
 **Disponibilidad de NOVA R1.1:** Disponible en el entorno de pruebas desde el **16 de octubre de 2026**. El lanzamiento en producción está previsto para el **4 de noviembre de 2026**.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/es.mp4" %}
+
 **DocBits es el producto. NOVA es el nombre del ciclo de versiones.** [Ver el vídeo sobre la nueva versión de DocBits](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/es.mp4) · [Subtítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/es.vtt).
 
 Elija un canal de versiones para ver qué cambios se aplican a su equipo. **El ciclo NOVA incorpora la nueva versión principal de DocBits con capacidades adicionales para clientes. Los hotfixes de VESTA mejoran la versión de producción actual.** Consulte el [ciclo de vida de versiones](../docbits-release-lifecycle-strategy.md) para conocer la disponibilidad y el cambio entre canales.
@@ -10,7 +12,7 @@ Elija un canal de versiones para ver qué cambios se aplican a su equipo. **El c
 
 | Canal de versiones | Notas de la versión | Enfoque |
 | --- | --- | --- |
-| **NOVA – Versión principal** | [Novedades para clientes](nova-major-release-16-october-2026.md) · **4 de noviembre de 2026 (previsto)** | Todas las funciones que antes estaban en beta en VESTA, además de nuevas capacidades y extensiones en comparación con VESTA R1.0.15. |
+| **NOVA – Versión principal** | [Novedades para clientes](nova-major-release.md) · **4 de noviembre de 2026 (previsto)** | Todas las funciones que antes estaban en beta en VESTA, además de nuevas capacidades y extensiones en comparación con VESTA R1.0.15. |
 | **VESTA — Siguiente hotfix (planificado)** | [11 de noviembre de 2026](vesta-hotfix-11-november-2026.md) | Introduce todas las funciones que antes estaban en beta en VESTA en el conjunto de funciones regular de VESTA. |
 | **VESTA — Versión hotfix** | [14 de octubre de 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Mejoras y correcciones para la versión de producción actual de VESTA. |
 
@@ -34,9 +36,9 @@ Elija un canal de versiones para ver qué cambios se aplican a su equipo. **El c
 * [**Reglas de validación personalizadas**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md): defina comprobaciones para campos y filas de tablas, elija condiciones y gravedad, y pruebe sus reglas. **Ver:** [Ver vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/es.mp4).
 * [**Reglas de conciliación de pedidos**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md): configure tipos de coincidencia, tolerancias y orden de ejecución, y gestione versiones de reglas. **Vídeo relacionado — Elija la automatización adecuada:** [Ver vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/es.mp4).
 
-[Ver todos los vídeos de funciones](nova-major-release-16-october-2026.md#watch-the-feature-videos), incluidos diseños, Touchless Intelligence, Validación de facturas electrónicas y la serie de seis partes de AI Table.
+[Ver todos los vídeos de funciones](nova-major-release.md#watch-the-feature-videos), incluidos diseños, Touchless Intelligence, Validación de facturas electrónicas y la serie de seis partes de AI Table.
 
-[Lea la comparación completa de funciones de NOVA](nova-major-release-16-october-2026.md), incluidos los requisitos de activación, mejoras adicionales y todas las **16 versiones de servicio**.
+[Lea la comparación completa de funciones de NOVA](nova-major-release.md), incluidos los requisitos de activación, mejoras adicionales y todas las **16 versiones de servicio**.
 
 **La línea base de VESTA incluye funcionalidad existente y funciones beta:** el Asistente de configuración original, advertencias básicas de estado de importación, niveles de IA, Header Field Check, panel de Touchless Intelligence, motores de reglas, transformaciones después de la búsqueda de datos maestros y registros básicos de ejecución de reglas. Las notas de NOVA distinguen el paso de beta a disponibilidad regular de las adiciones adicionales a estas capacidades.
 

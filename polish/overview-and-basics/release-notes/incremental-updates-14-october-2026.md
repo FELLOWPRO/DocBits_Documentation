@@ -2,7 +2,7 @@
 
 > **Kanał wydania:** VESTA · **Wydanie:** R1.0.15.
 >
-> **Porównujesz z NOVA?** [Porównanie funkcji dużego wydania NOVA](nova-major-release-16-october-2026.md#what-nova-adds-for-customers) obejmuje Asystenta walidacji, zweryfikowane ulepszenia automatyzacji, rozszerzone raporty e-faktur, nowe elementy sterujące importem i inne dodatki wykraczające poza to wydanie VESTA.
+> **Porównujesz z NOVA?** [Porównanie funkcji dużego wydania NOVA](nova-major-release.md#what-nova-adds-for-customers) obejmuje Asystenta walidacji, zweryfikowane ulepszenia automatyzacji, rozszerzone raporty e-faktur, nowe elementy sterujące importem i inne dodatki wykraczające poza to wydanie VESTA.
 >
 > **Następna poprawka VESTA: [11 listopada 2026 (planowane)](vesta-hotfix-11-november-2026.md).** Wszystkie funkcje wcześniej dostępne w VESTA jako beta są teraz standardowymi funkcjami NOVA i staną się standardowymi funkcjami VESTA wraz z tym wydaniem poprawki.
 

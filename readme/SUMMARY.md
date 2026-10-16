@@ -11,6 +11,7 @@
 * [Sicherheit & Compliance FAQ](overview-and-basics/security-and-compliance-faq.md)
 * [Zwei-Faktor-Authentifizierung (2FA)](overview-and-basics/two-factor-authentication.md)
 * [Infor Infrastructure](overview-and-basics/infor-infrastructure.md)
+* [DocBits Release-Lebenszyklus-Strategie](overview-and-basics/docbits-release-lifecycle-strategy.md)
 * [Versionshinweise](overview-and-basics/release-notes/README.md)
   * [NOVA — Hauptversion](overview-and-basics/release-notes/nova-major-release-16-october-2026.md)
   * [VESTA Hotfix — 11. November 2026 (geplant)](overview-and-basics/release-notes/vesta-hotfix-11-november-2026.md)

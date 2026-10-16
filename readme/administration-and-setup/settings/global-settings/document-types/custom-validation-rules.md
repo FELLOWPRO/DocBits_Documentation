@@ -1,5 +1,7 @@
 # Aangepaste validatieregels
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/nl.mp4" %}
+
 ## Overzicht
 
 Met aangepaste validatieregels kan een beheerder **eigen controles** definiëren op de gegevens die DocBits uit een document extraheert — zonder een script te schrijven en zonder te wachten op een productwijziging.

@@ -24,6 +24,12 @@ Choose a release channel to see what changes for your team. **NOVA is the major 
 * **Reach rule and layout controls directly.** Open the management panels without a beta link, search and preview layouts, and open the layout editor from a document.
 * **Control extraction and routine administration.** Restart a document with a chosen page count, choose whether hidden fields are extracted, use additional Settings Assistant actions and limit notification rules to a sub-organisation.
 
+### Guides for setting up rules
+
+* [**Transformation Rules**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md): clean up and rewrite extracted values, build a sequence of steps and preview the result.
+* [**Custom Validation Rules**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md): define checks for fields and table rows, choose conditions and severity, and test your rules.
+* [**PO Matching Rules**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md): configure matching types, tolerances and execution order, and manage rule versions.
+
 [Read the complete NOVA feature comparison](nova-major-release-16-october-2026.md), including activation requirements, additional improvements and all **16 service versions**.
 
 **The VESTA baseline includes existing functionality and beta features:** the original Settings Assistant, basic import-health warnings, AI tiers, Header Field Check, Touchless Intelligence dashboard, rule engines, transformations after master data lookup and basic rule-execution logs. The NOVA notes distinguish the move from beta to regular availability from further additions to these capabilities.

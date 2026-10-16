@@ -1,6 +1,6 @@
 # Audit Accesso
 
-<figure><img src="../../../.gitbook/assets/access_audit_settings_page_it.png" alt="Audit Logs con la registrazione audit disattivata; la pagina mostra il selettore dell&#x27;organizzazione, i filtri, Enable Now, Auto-refresh, Refresh ed Export"><figcaption><p>La pagina Sandbox in italiano prima che la registrazione audit sia attivata.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/access_audit_settings_page_it.png" alt="Audit Logs con la registrazione audit disattivata; la pagina mostra il selettore dell'organizzazione, i filtri, Enable Now, Auto-refresh, Refresh ed Export"><figcaption><p>La pagina Sandbox in italiano prima che la registrazione audit sia attivata.</p></figcaption></figure>
 
 Audit Accesso registra chi ha creato, modificato o eliminato una risorsa e quando. Apri **Impostazioni → Registro Attività → Audit Accesso** per consultare il registro. Attiva il servizio per un'organizzazione solo quando intendi raccogliere eventi di audit.
 
@@ -14,14 +14,14 @@ Finché il servizio è disattivato, i filtri e la tabella dei log non possono mo
 
 ## Trovare un evento
 
-| Controllo                          | Cosa fa                                                                       |
-| ---------------------------------- | ----------------------------------------------------------------------------- |
-| **Time Range**                     | Limita l'elenco a un periodo, ad esempio Last Hour, Today o Last 7 Days.      |
-| **Create**, **Update**, **Delete** | Include o esclude questi tipi di azione.                                      |
-| **Resource Type**                  | Limita i risultati a un tipo di risorsa, ad esempio documenti o impostazioni. |
-| **Search logs...**                 | Cerca nel testo delle voci di audit visibili.                                 |
-| **Refresh**                        | Carica una volta le voci più recenti corrispondenti.                          |
-| **Auto-refresh**                   | Mantiene l'elenco aggiornato automaticamente finché la pagina è aperta.       |
-| **Export**                         | Scarica i dati attuali del log di audit in un file JSON.                      |
+| Controllo | Cosa fa |
+|---|---|
+| **Time Range** | Limita l'elenco a un periodo, ad esempio Last Hour, Today o Last 7 Days. |
+| **Create**, **Update**, **Delete** | Include o esclude questi tipi di azione. |
+| **Resource Type** | Limita i risultati a un tipo di risorsa, ad esempio documenti o impostazioni. |
+| **Search logs...** | Cerca nel testo delle voci di audit visibili. |
+| **Refresh** | Carica una volta le voci più recenti corrispondenti. |
+| **Auto-refresh** | Mantiene l'elenco aggiornato automaticamente finché la pagina è aperta. |
+| **Export** | Scarica i dati attuali del log di audit in un file JSON. |
 
 Le schede di riepilogo mostrano le azioni totali, create, aggiornate ed eliminate per i filtri selezionati. Nella tabella **TIMESTAMP** indica quando un evento ha avuto luogo, **USER** identifica l'autore, **ACTION** nomina la modifica e **RESOURCE** identifica l'elemento interessato. Apri il controllo dei dettagli di una riga per esaminare la modifica registrata. Se non compaiono eventi, verifica che il servizio sia attivo e amplia l'intervallo di tempo prima di modificare gli altri filtri.

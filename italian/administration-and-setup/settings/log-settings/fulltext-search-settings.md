@@ -27,7 +27,7 @@ La scheda Documenti copre tutto ciò che riguarda l'indicizzazione dei documenti
 * **Azioni di reindicizzazione** — avvia una reindicizzazione completa o incrementale. Mentre la reindicizzazione è in corso, vedi il progresso in tempo reale (documenti al minuto, tempo rimanente stimato), lo stato del flusso e l'ultimo errore (se presente).
 * **Diagnostica di sincronizzazione** — diagnostica su richiesta per i casi in cui l'indice sembra non coincidere con l'archivio dei documenti sottostante.
 
-La reindicizzazione non è distruttiva — la ricerca esistente continua a funzionare mentre il nuovo indice viene ricostruito.
+<mark>La reindicizzazione non è distruttiva — la ricerca esistente continua a funzionare mentre il nuovo indice viene ricostruito.</mark>
 
 ### Scheda «ERP»
 

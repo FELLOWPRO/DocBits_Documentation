@@ -13,13 +13,13 @@ L'**Esploratore di grafici della conoscenza** ti aiuta a vedere le connessioni t
 
 ## Scegli cosa vedere
 
-| Controllo                            | Cosa fa                                                                                                                                                                                                                   |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Navigazione**                      | Passa da **Vendor Overview** (fornitori collegati) a **Vendor Intelligence** (una tabella di fornitori), **Document Journey** (passaggi e varianti nell'elaborazione dei documenti) e **Anomalies** (relazioni insolite). |
-| **Tipo**                             | Seleziona i tipi di elementi su cui concentrarti, ad esempio Documents, Vendors, Purchase Orders o Invoices. I tipi selezionati limitano anche i risultati della ricerca.                                                 |
-| **Statistiche del grafico**          | Mostra il numero di nodi (elementi) e confini (collegamenti) attualmente disponibili. Espandi o comprimi questa sezione in base alle esigenze.                                                                            |
-| **Fiducia**                          | Apri questa sezione per impostare la confidenza minima delle relazioni quando espandi un nodo. Un valore più alto restringe i collegamenti mostrati.                                                                      |
-| **Ricostruisci il grafico**          | Avvia un nuovo calcolo del grafo. Attendi la fine dell'avanzamento prima di cercare di nuovo.                                                                                                                             |
-| **Esploratore di grafici / Analisi** | Passa dal grafo interattivo ai grafici di riepilogo. Analisi mostra conteggi e grafici quando esistono dati del grafo; anche un grafo vuoto lascia Analisi vuota.                                                         |
+| Controllo | Cosa fa |
+| --- | --- |
+| **Navigazione** | Passa da **Vendor Overview** (fornitori collegati) a **Vendor Intelligence** (una tabella di fornitori), **Document Journey** (passaggi e varianti nell'elaborazione dei documenti) e **Anomalies** (relazioni insolite). |
+| **Tipo** | Seleziona i tipi di elementi su cui concentrarti, ad esempio Documents, Vendors, Purchase Orders o Invoices. I tipi selezionati limitano anche i risultati della ricerca. |
+| **Statistiche del grafico** | Mostra il numero di nodi (elementi) e confini (collegamenti) attualmente disponibili. Espandi o comprimi questa sezione in base alle esigenze. |
+| **Fiducia** | Apri questa sezione per impostare la confidenza minima delle relazioni quando espandi un nodo. Un valore più alto restringe i collegamenti mostrati. |
+| **Ricostruisci il grafico** | Avvia un nuovo calcolo del grafo. Attendi la fine dell'avanzamento prima di cercare di nuovo. |
+| **Esploratore di grafici / Analisi** | Passa dal grafo interattivo ai grafici di riepilogo. Analisi mostra conteggi e grafici quando esistono dati del grafo; anche un grafo vuoto lascia Analisi vuota. |
 
-Se devi risolvere una differenza tra una fattura e il suo ordine, continua con la [Schermata di Abbinamento Ordini di Acquisto](../end-user-and-partner-section/end-user-section/purchase-order-matching/). Per metriche più ampie al di fuori del grafo, consulta il [Dashboard di analisi](../administration-and-setup/analytics-dashboard.md).
+Se devi risolvere una differenza tra una fattura e il suo ordine, continua con la [Schermata di Abbinamento Ordini di Acquisto](../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md). Per metriche più ampie al di fuori del grafo, consulta il [Dashboard di analisi](../administration-and-setup/analytics-dashboard.md).

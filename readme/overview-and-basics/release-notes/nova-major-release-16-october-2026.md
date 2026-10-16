@@ -44,14 +44,14 @@ Utilice estos recorridos junto con las notas de la versión para comprender las 
 
 | Tema | Video |
 | --- | --- |
-| Elegir la automatización adecuada — incluido dónde encajan las Reglas de conciliación de pedidos | [Video en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/es.mp4) · [Video en English](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4) |
-| Reglas de transformación | [Video en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/es.mp4) · [Video en English](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4) |
-| Reglas de validación personalizadas | [Video en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/es.mp4) · [Video en English](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4) |
-| Diseños y reglas de selección | [Video en English](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/en.mp4) |
-| Touchless Intelligence | [Video en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/es.mp4) · [Video en English](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/en.mp4) |
-| Validación de facturas electrónicas | [Video en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/es.mp4) · [Video en English](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/en.mp4) |
-| Usuarios y acceso de administrador | [Video en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/es.mp4) · [Video en English](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/en.mp4) |
-| Suborganizaciones | [Video en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/es.mp4) · [Video en English](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/en.mp4) |
+| Elegir la automatización adecuada — incluido dónde encajan las Reglas de conciliación de pedidos | [Vídeo en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/es.mp4) · [Vídeo en inglés](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4) |
+| Reglas de transformación | [Vídeo en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/es.mp4) · [Vídeo en inglés](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4) |
+| Reglas de validación personalizadas | [Vídeo en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/es.mp4) · [Vídeo en inglés](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4) |
+| Diseños y reglas de selección | [Vídeo en inglés](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/en.mp4) |
+| Touchless Intelligence | [Vídeo en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/es.mp4) · [Vídeo en inglés](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/en.mp4) |
+| Validación de facturas electrónicas | [Vídeo en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/es.mp4) · [Vídeo en inglés](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/en.mp4) |
+| Usuarios y acceso de administrador | [Vídeo en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/es.mp4) · [Vídeo en inglés](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/en.mp4) |
+| Suborganizaciones | [Vídeo en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/es.mp4) · [Vídeo en inglés](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/en.mp4) |
 
 ### AI Table: seis videos breves
 

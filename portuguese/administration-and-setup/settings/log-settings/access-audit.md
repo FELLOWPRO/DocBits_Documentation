@@ -14,14 +14,14 @@ Enquanto o serviço estiver desativado, os filtros e a tabela de logs não poder
 
 ## Encontrar um evento
 
-| Controle                           | O que faz                                                                    |
-| ---------------------------------- | ---------------------------------------------------------------------------- |
-| **Time Range**                     | Limita a lista a um período, como Last Hour, Today ou Last 7 Days.           |
-| **Create**, **Update**, **Delete** | Inclui ou exclui esses tipos de ação.                                        |
-| **Resource Type**                  | Limita os resultados a um tipo de recurso, como documentos ou configurações. |
-| **Search logs...**                 | Pesquisa por texto nas entradas de auditoria visíveis.                       |
-| **Refresh**                        | Carrega uma vez as entradas correspondentes mais recentes.                   |
-| **Auto-refresh**                   | Mantém a lista atualizada automaticamente enquanto a página estiver aberta.  |
-| **Export**                         | Baixa os dados atuais do log de auditoria como um arquivo JSON.              |
+| Controle | O que faz |
+|---|---|
+| **Time Range** | Limita a lista a um período, como Last Hour, Today ou Last 7 Days. |
+| **Create**, **Update**, **Delete** | Inclui ou exclui esses tipos de ação. |
+| **Resource Type** | Limita os resultados a um tipo de recurso, como documentos ou configurações. |
+| **Search logs...** | Pesquisa por texto nas entradas de auditoria visíveis. |
+| **Refresh** | Carrega uma vez as entradas correspondentes mais recentes. |
+| **Auto-refresh** | Mantém a lista atualizada automaticamente enquanto a página estiver aberta. |
+| **Export** | Baixa os dados atuais do log de auditoria como um arquivo JSON. |
 
 Os cartões de resumo mostram as ações totais, criadas, atualizadas e excluídas para os filtros selecionados. Na tabela, **TIMESTAMP** mostra quando um evento ocorreu, **USER** identifica o autor, **ACTION** nomeia a alteração e **RESOURCE** identifica o item afetado. Abra o controle de detalhes de uma linha para inspecionar a alteração registrada. Se nenhum evento aparecer, verifique se o serviço está ativado e amplie o intervalo de tempo antes de alterar os outros filtros.

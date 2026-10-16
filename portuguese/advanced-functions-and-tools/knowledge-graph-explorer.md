@@ -13,13 +13,13 @@ O **Explorador de Gráficos de Conhecimento** ajuda-o a ver as ligações entre 
 
 ## Escolher o que vê
 
-| Controlo                             | O que faz                                                                                                                                                                                                                       |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Navegação**                        | Alterna entre **Vendor Overview** (fornecedores ligados), **Vendor Intelligence** (uma tabela de fornecedores), **Document Journey** (passos e variantes do processamento de documentos) e **Anomalies** (relações invulgares). |
-| **Tipo**                             | Selecione os tipos de itens em que se quer concentrar, como Documents, Vendors, Purchase Orders ou Invoices. Os tipos selecionados também limitam os resultados da pesquisa.                                                    |
-| **Estatísticas do gráfico**          | Mostra o número de nós (itens) e bordas (ligações) atualmente disponíveis. Expanda ou recolha esta secção conforme necessário.                                                                                                  |
-| **Confiança**                        | Abra esta secção para definir a confiança mínima das relações ao expandir um nó. Um valor mais alto restringe as ligações mostradas.                                                                                            |
-| **Reconstruir gráfico**              | Inicia um novo cálculo do gráfico. Aguarde que o progresso termine antes de voltar a pesquisar.                                                                                                                                 |
-| **Explorador de Gráficos / Análise** | Alterna entre o gráfico interativo e gráficos de resumo. A Análise mostra contagens e gráficos quando existem dados do gráfico; um gráfico vazio deixa também a Análise vazia.                                                  |
+| Controlo | O que faz |
+| --- | --- |
+| **Navegação** | Alterna entre **Vendor Overview** (fornecedores ligados), **Vendor Intelligence** (uma tabela de fornecedores), **Document Journey** (passos e variantes do processamento de documentos) e **Anomalies** (relações invulgares). |
+| **Tipo** | Selecione os tipos de itens em que se quer concentrar, como Documents, Vendors, Purchase Orders ou Invoices. Os tipos selecionados também limitam os resultados da pesquisa. |
+| **Estatísticas do gráfico** | Mostra o número de nós (itens) e bordas (ligações) atualmente disponíveis. Expanda ou recolha esta secção conforme necessário. |
+| **Confiança** | Abra esta secção para definir a confiança mínima das relações ao expandir um nó. Um valor mais alto restringe as ligações mostradas. |
+| **Reconstruir gráfico** | Inicia um novo cálculo do gráfico. Aguarde que o progresso termine antes de voltar a pesquisar. |
+| **Explorador de Gráficos / Análise** | Alterna entre o gráfico interativo e gráficos de resumo. A Análise mostra contagens e gráficos quando existem dados do gráfico; um gráfico vazio deixa também a Análise vazia. |
 
-Se precisar de resolver uma diferença entre uma fatura e a sua ordem de compra, continue com o ecrã de [Correspondência de Ordem de Compra](../end-user-and-partner-section/end-user-section/purchase-order-matching/). Para métricas mais amplas fora do gráfico, consulte o [Painel de Análises](../administration-and-setup/analytics-dashboard.md).
+Se precisar de resolver uma diferença entre uma fatura e a sua ordem de compra, continue com o ecrã de [Correspondência de Ordem de Compra](../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md). Para métricas mais amplas fora do gráfico, consulte o [Painel de Análises](../administration-and-setup/analytics-dashboard.md).

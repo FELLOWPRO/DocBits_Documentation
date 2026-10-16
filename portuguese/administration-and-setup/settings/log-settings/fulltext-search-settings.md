@@ -27,7 +27,7 @@ A aba Documentos cobre tudo relacionado à indexação de documentos processados
 * **Ações de reindexação** — inicie uma reindexação completa ou incremental. Enquanto uma reindexação é executada, você vê o progresso ao vivo (documentos por minuto, tempo restante estimado), o estado atual do fluxo e a última falha (se houver).
 * **Diagnóstico de sincronização** — diagnóstico sob demanda para os casos em que o índice parece estar fora de sincronia com o repositório de documentos subjacente.
 
-A reindexação não é destrutiva — a pesquisa existente continua funcionando enquanto o novo índice está sendo reconstruído.
+<mark>A reindexação não é destrutiva — a pesquisa existente continua funcionando enquanto o novo índice está sendo reconstruído.</mark>
 
 ### Aba «ERP»
 

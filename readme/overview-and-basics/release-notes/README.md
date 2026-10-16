@@ -26,9 +26,11 @@ Choose a release channel to see what changes for your team. **NOVA is the major 
 
 ### Guides for setting up rules
 
-* [**Transformation Rules**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md): clean up and rewrite extracted values, build a sequence of steps and preview the result.
-* [**Custom Validation Rules**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md): define checks for fields and table rows, choose conditions and severity, and test your rules.
-* [**PO Matching Rules**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md): configure matching types, tolerances and execution order, and manage rule versions.
+* [**Transformation Rules**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md): clean up and rewrite extracted values, build a sequence of steps and preview the result. **Watch:** [English](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4) · [Deutsch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/de.mp4).
+* [**Custom Validation Rules**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md): define checks for fields and table rows, choose conditions and severity, and test your rules. **Watch:** [English](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4) · [Deutsch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/de.mp4).
+* [**PO Matching Rules**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md): configure matching types, tolerances and execution order, and manage rule versions. **Related video — Choose the Right Automation:** [English](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4) · [Deutsch](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/de.mp4).
+
+[Browse all feature videos](nova-major-release-16-october-2026.md#watch-the-feature-videos), including layouts, Touchless Intelligence, E-Invoice Validation and the six-part AI Table series.
 
 [Read the complete NOVA feature comparison](nova-major-release-16-october-2026.md), including activation requirements, additional improvements and all **16 service versions**.
 

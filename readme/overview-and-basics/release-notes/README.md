@@ -2,15 +2,19 @@
 
 Choose a release channel to see what changes for your team. **NOVA is the major release with additional customer capabilities. VESTA hotfixes improve the current production release.** See the [release lifecycle](../docbits-release-lifecycle-strategy.md) for availability and switching between channels.
 
-| Release channel | Latest release notes | Focus |
+**Former VESTA beta features are now included in NOVA.** All features previously available as beta in VESTA are part of NOVA's regular feature set. They will also become regular VESTA features with the [next VESTA hotfix, planned for **11 November 2026**](vesta-hotfix-11-november-2026.md).
+
+| Release channel | Release notes | Focus |
 | --- | --- | --- |
-| **NOVA — Major Release** | [What's new for customers](nova-major-release-16-october-2026.md) · **16 October 2026** version snapshot | New capabilities and extensions compared with VESTA R1.0.15. |
+| **NOVA — Major Release** | [What's new for customers](nova-major-release-16-october-2026.md) · **16 October 2026** version snapshot | All former VESTA beta features, plus new capabilities and extensions compared with VESTA R1.0.15. |
+| **VESTA — Next Hotfix (planned)** | [11 November 2026](vesta-hotfix-11-november-2026.md) | Introduces all former VESTA beta features into the regular VESTA feature set. |
 | **VESTA — Hotfix Release** | [14 October 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Improvements and fixes for the current VESTA production release. |
 
 ## NOVA — Major Release
 
 ### What your team gains with NOVA
 
+* **Use former VESTA beta features as regular NOVA features.** All features previously offered in VESTA beta are included in NOVA, including the rule and layout management controls. Organisation settings, document-type switches and permissions still apply.
 * **Resolve document blockers with the Validation Assistant.** Ask what stops a document, jump to the relevant field and review suggested corrections while staying with the document.
 * **Turn repeated corrections into reviewed automation improvements.** Reviewers can submit improvement requests; administrators can assess learned rule proposals, review affected documents and measure the result after activation.
 * **Understand and act on e-invoice errors.** Use reports grouped by validation level, review document-type policies and their history, and reject an eligible invoice with a recorded reason.
@@ -22,11 +26,13 @@ Choose a release channel to see what changes for your team. **NOVA is the major 
 
 [Read the complete NOVA feature comparison](nova-major-release-16-october-2026.md), including activation requirements, additional improvements and all **16 service versions**.
 
-**Already part of VESTA:** the original Settings Assistant, basic import-health warnings, AI tiers, Header Field Check, Touchless Intelligence dashboard, rule engines, transformations after master data lookup and basic rule-execution logs. The NOVA notes identify the additions to these existing features.
+**The VESTA baseline includes existing functionality and beta features:** the original Settings Assistant, basic import-health warnings, AI tiers, Header Field Check, Touchless Intelligence dashboard, rule engines, transformations after master data lookup and basic rule-execution logs. The NOVA notes distinguish the move from beta to regular availability from further additions to these capabilities.
 
 ## VESTA — Hotfix Releases
 
-**Latest: [14 October 2026 — R1.0.15](incremental-updates-14-october-2026.md).** This VESTA hotfix introduced the Settings Assistant, updated AI tiers, the Header Field Check, sign-in improvements and purchase order charge-matching improvements.
+**Next planned hotfix: [11 November 2026](vesta-hotfix-11-november-2026.md).** All features previously available as beta in VESTA, and now included in NOVA, will become regular VESTA features in this hotfix.
+
+**Latest released hotfix: [14 October 2026 — R1.0.15](incremental-updates-14-october-2026.md).** This VESTA hotfix introduced the Settings Assistant, updated AI tiers, the Header Field Check, sign-in improvements and purchase order charge-matching improvements.
 
 Earlier VESTA hotfix notes:
 

@@ -46,6 +46,8 @@ Depois de enviar o formulário, o DocBits mostra uma página de confirmação e 
 
 ## Esqueceu-se da palavra-passe
 
+O DocBits guarda as palavras-passe como hashes unidirecionais com salt. Uma palavra-passe existente não pode ser recuperada a partir do hash, pelo que este procedimento define uma nova. Consulte [Armazenamento seguro de credenciais](../../overview-and-basics/secure-storage-of-credentials.md).
+
 Se se esqueceu da sua palavra-passe:
 
 1. No ecrã de início de sessão, clique em **Esqueceu sua senha**.

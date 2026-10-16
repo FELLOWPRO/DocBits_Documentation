@@ -24,6 +24,12 @@ How to pick the right column, give the AI instructions, test a change, and keep 
 
 One column fills three fields, a wrong unit price, and extra rows for freight and surcharge. What you see, what to write, how to check. About 1.7 minutes.
 
+### 4. Discount, tax and zero-quantity lines
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part4/v1/en.mp4" %}
+
+Discount and tax missing on Canadian and British invoices, and lines that were not shipped. About 1.4 minutes.
+
 ## When you get the AI table
 
 * An admin has switched on **AI Table extraction** (Settings → Document Processing → Classification and Extraction, see [Settings for admins](./#settings-for-admins)). If it is off, the table area shows _AI Table will display here. Enable in …_.

@@ -45,7 +45,7 @@ Dieser Leitfaden führt Sie durch den Einrichtungsprozess, um sicherzustellen, d
     <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
 2.  Wählen Sie das Menü **Felder** für den Dokumenttyp, in dem Sie die Felder hinzufügen möchten.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt="DocBits Bild"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/docbits_docbits_image_8.png" alt="DocBits Bild"><figcaption></figcaption></figure>
 3.  Unter **Mehrwertsteuer & Beträge** erstellen Sie sechs neue Felder wie folgt:
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_8.png" alt=""><figcaption></figcaption></figure>
@@ -135,7 +135,7 @@ Nachdem Sie ein neues Dokument in DocBits mit den ausgewählten korrekten Dokume
     <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
 2.  Wählen Sie das Menü **Felder** für den Dokumenttyp, in dem Sie die Felder hinzufügen möchten.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt="DocBits Bild"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/docbits_docbits_image_8.png" alt="DocBits Bild"><figcaption></figcaption></figure>
 3.  Unter **Mehrwertsteuer & Beträge** erstellen Sie sechs neue Felder wie folgt:
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_8.png" alt=""><figcaption></figcaption></figure>

@@ -2,6 +2,8 @@
 
 Die Verwendung von Skripten zur Automatisierung von Prozessen ist für Unternehmen jeder Größe und in fast jeder Branche von entscheidender Bedeutung. Diese Skripte ermöglichen nicht nur signifikante Effizienzsteigerungen, sondern gewährleisten auch die Genauigkeit und Konsistenz von Daten, was wiederum zu fundierten Entscheidungen und einer verbesserten betrieblichen Effizienz führt.
 
+<figure><img src="../../../../../admin-section/settings/global-settings/document-types/broken-reference" alt=""><figcaption><p>Skripte</p></figcaption></figure>
+
 **Hier sind einige Kernaspekte, wie Skripte zur Automatisierung von Prozessen und zur Gewährleistung der Datengenauigkeit eingesetzt werden können:**
 
 **Datenbereinigung:**

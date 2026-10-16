@@ -7,17 +7,17 @@ Detaillierte Anweisungen zum Importieren von Beispielbelegen für das Training, 
 * **Vorbereiten der Beispielbelege:** Stellen Sie sicher, dass die Beispielbelege in einem unterstützten Format vorliegen, wie z. B. PDF, Word, Excel usw. Diese Belege sollten eine Vielzahl von Typen und Formaten abdecken, die im Produktivbetrieb des Belegverarbeitungssystems auftreten können.
 * **Navigieren zur Importfunktion:** Melden Sie sich im Administrationsbereich des Belegverarbeitungssystems an und navigieren Sie zu dem Bereich, in dem Sie neue Belege importieren können.
 
-<figure><img src="../../../../../.gitbook/assets/image (85) (1).png" alt="Docbits Global Settings Import Nav"><figcaption><p>Globale Einstellungen</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_global_settings_import_nav.png" alt="Docbits Global Settings Import Nav"><figcaption><p>Globale Einstellungen</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (85) (1).png" alt="Docbits Import Function Area"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_import_function_area.png" alt="Docbits Import Function Area"><figcaption></figcaption></figure>
 
 * **Auswählen der Option zum Importieren von Belegen:** Klicken Sie auf die Schaltfläche oder den Link zum Importieren von Belegen. Es kann eine Option wie "Importieren" geben.
 
-<figure><img src="../../../../../.gitbook/assets/image (85) (1).png" alt="Docbits Import Documents Button"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_import_documents_button.png" alt="Docbits Import Documents Button"><figcaption></figcaption></figure>
 
 * **Betrags- & Datumsformat auswählen:**
 
-<figure><img src="../../../../../.gitbook/assets/image (85) (1).png" alt="Docbits Manage Users Button"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_manage_users_button.png" alt="Docbits Manage Users Button"><figcaption></figcaption></figure>
 
 **Betragsformat:**
 
@@ -44,13 +44,13 @@ Es ist wichtig, das spezifische Format zu beachten, um Missverständnisse zu ver
 * **Konfigurieren der Belegtypen und Untertypen (falls erforderlich):** Wenn Ihr System verschiedene Belegtypen oder Untertypen unterstützt, weisen Sie jedem importierten Beleg den entsprechenden Typ zu. Dies hilft dem System, die Belege korrekt zu kategorisieren und zu verarbeiten.
 * **Starten des Importvorgangs:** Bestätigen Sie die Auswahl der Belege und starten Sie den Importvorgang. Je nach Größe und Anzahl der Belege kann dieser Vorgang einige Zeit in Anspruch nehmen.
 
-<figure><img src="../../../../../.gitbook/assets/image (85) (1).png" alt="Docbits User Settings Menu"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_user_settings_menu.png" alt="Docbits User Settings Menu"><figcaption></figcaption></figure>
 
 * **Prüfen des Importstatus:** Überprüfen Sie den Status des Importvorgangs, um sicherzustellen, dass alle Belege erfolgreich importiert wurden. Stellen Sie sicher, dass keine Fehler aufgetreten sind und dass die Belege korrekt verarbeitet wurden.
 * **Trainieren des Modells:** Nachdem die Belege importiert wurden, verwenden Sie diese, um das Modell des Belegverarbeitungssystems zu trainieren. Führen Sie das Training gemäß den Anweisungen des Systems durch, um sicherzustellen, dass es die Beispieldaten effektiv verarbeiten kann.
 
-<figure><img src="../../../../../.gitbook/assets/image (85) (1).png" alt="Docbits User Role Edit"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_user_role_edit.png" alt="Docbits User Role Edit"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (85) (1).png" alt="Docbits Select User List" width="284"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_select_user_list.png" alt="Docbits Select User List" width="284"><figcaption></figcaption></figure>
 
 Durch regelmäßiges Hinzufügen von Beispielbelegen zum Training können Sie sicherstellen, dass Ihr Belegverarbeitungssystem immer auf dem neuesten Stand ist und eine genaue und effiziente Verarbeitung bietet.

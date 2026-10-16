@@ -652,7 +652,7 @@ IMAP-E-Mail-Einstellungen wurden so konfiguriert, dass Benachrichtigungen über 
 
 Die Einstellungen zur Stammdatenabfrage wurden mit einer verfeinerten Kategorisierung überarbeitet, sodass verschiedene Stammdatentypen schneller und genauer abgerufen werden können. Diese Verbesserung optimiert den Datenzugriff, indem Stammdaten in unterschiedliche Kategorien organisiert werden, was die Sucheffizienz und -genauigkeit erheblich steigert. Benutzer können nun die relevanten Daten schneller finden, was die Produktivität und Entscheidungsfindung in der gesamten Anwendung verbessert.
 
-<figure><img src="../../.gitbook/assets/image2.png" alt=""><figcaption><p>Stammdaten</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/MasterDataLookup.png" alt=""><figcaption><p>Stammdaten</p></figcaption></figure>
 
 #### Leistungsverbesserungen
 

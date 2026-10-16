@@ -1,4 +1,4 @@
-# Auto Accounting
+# Auto Accounting mit Infor LN
 
 Verwenden Sie diese Anleitung, wenn ein Infor-LN-Administrator DocBits so konfigurieren möchte, dass importierte Finanzstammdaten für die automatische Kontierung (Auto Accounting) verwendet werden. Die alte Seite zeigte 48 Bildschirme aus einem bestimmten Infor-Mandanten. Verbindungspunkt-Namen, Zuordnungen, Zugangsdaten und Endpunktadressen dieses Mandanten sind keine wiederverwendbare Konfiguration.
 
@@ -8,9 +8,9 @@ Verwenden Sie diese Anleitung, wenn ein Infor-LN-Administrator DocBits so konfig
 
 Die folgenden Screenshots stammen aus der synthetischen Sandbox **DocBits Documentation Test A**. In dieser Organisation war **LN** ausgewählt und Auto Accounting **aus**. Das Menü wurde geöffnet, ohne einen anderen Wert auszuwählen; keine Einstellung wurde gespeichert.
 
-<figure><img src="../../../.gitbook/assets/testing-auto-accounting-off-de-20261010.png" alt="Deutsche DocBits-Einstellungen für Bestellung &#x26; Finanzen mit deaktiviertem Auto Accounting und ausgewähltem Typ LN"><figcaption><p>Auto Accounting auffinden und den ausgewählten Typ prüfen, bevor es aktiviert wird.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc780-auto-accounting-settings-de-20261012.png" alt="Deutsche DocBits-Einstellungen für Bestellung &amp; Finanzen mit deaktiviertem Auto Accounting und ausgewähltem Typ LN"><figcaption><p>Auto Accounting auffinden und den ausgewählten Typ prüfen, bevor es aktiviert wird.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc207-auto-accounting-type-options-de.png" alt="Deutsches DocBits-Menü Typ von Auto Accounting mit den Optionen LN und M3"><figcaption><p>LN und M3 sind die in dieser Sandbox verfügbaren Typen; keine Auswahl wurde geändert.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc780-auto-accounting-type-options-de-20261012.png" alt="Deutsches DocBits-Menü Typ von Auto Accounting mit den Optionen LN und M3"><figcaption><p>LN und M3 sind die in dieser Sandbox verfügbaren Typen; keine Auswahl wurde geändert.</p></figcaption></figure>
 
 ## LN und ION vorbereiten
 

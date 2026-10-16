@@ -10,13 +10,13 @@ Durch die Verwendung dieser Einstellung können Benutzer sicherstellen, dass Bes
 
 1.  Gehe zu **Einstellungen → Globale Einstellungen → Dokumenttypen**
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1_de.png" alt="Bestellung Einstellungen Übersicht"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/docbits_purchase_order_settings.png" alt="Bestellung Einstellungen Übersicht"><figcaption></figcaption></figure>
 2.  Wähle den gewünschten Dokumenttyp aus und klicke auf **Weitere Einstellungen**.
 
     <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2_de.png" alt=""><figcaption></figcaption></figure>
 3.  Im Abschnitt **Bestellung** navigiere zur Option **PO-Deaktivierungsstatus**.
 
-    <figure><img src="../../../../../../.gitbook/assets/disable_po_status_3_de.png" alt="Bestellung Übersicht"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/docbits_purchase_order_5.png" alt="Bestellung Übersicht"><figcaption></figcaption></figure>
 
 ### **Wie man eine deaktivierte Bestellung identifiziert**
 

@@ -10,11 +10,11 @@ DocBits bietet volle Unterstützung für XRechnung und ermöglicht die Extraktio
 
 DocBits supports the following XRechnung CII versions:
 
-* [XRechnung 1.2](xrechnung-1-2.md)
-* [XRechnung 2.1](xrechnung-2-1.md)
-* [XRechnung 3.0](xrechnung-3-0.md)
-* [XRechnung 3.0.1](xrechnung-3-0-1.md)
-* [XRechnung 3.0.2](xrechnung-3-0-2.md)
+* [XRechnung 1.2](versions/xrechnung-1-2.md)
+* [XRechnung 2.1](versions/xrechnung-2-1.md)
+* [XRechnung 3.0](versions/xrechnung-3-0.md)
+* [XRechnung 3.0.1](versions/xrechnung-3-0-1.md)
+* [XRechnung 3.0.2](versions/xrechnung-3-0-2.md)
 
 ## Datenfluss
 
@@ -28,7 +28,6 @@ The data flow from an XRechnung document to your ERP system follows these steps:
 ## Mapping-Standards
 
 The mapping is based on the following standards:
-
 * **UN/CEFACT CII**: The base for XRechnung CII XML structure.
 * **OAGIS/OASIS**: The standard for Infor BODs.
 * **EN 16931**: The European standard for e-invoicing.

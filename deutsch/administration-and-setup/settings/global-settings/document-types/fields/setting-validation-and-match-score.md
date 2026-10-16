@@ -26,7 +26,7 @@ Diese Einstellung ermöglicht es Ihnen, Regeln festzulegen, die prüfen, ob die 
 
 ### Übereinstimmungswert (Match Score):
 
-<figure><img src="../../../../../.gitbook/assets/image (120).png" alt="" width="116"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (121).png" alt="" width="116"><figcaption></figcaption></figure>
 
 Diese Einstellung ermöglicht es Ihnen, den eingegebenen Wert mit einem vordefinierten Referenzwert abzugleichen.
 

@@ -28,11 +28,15 @@ La barra de búsqueda ofrece filtros estructurados, una vista de consulta direct
 
 Con la búsqueda de texto completo habilitada, el menú de contenido controla las búsquedas de texto simple: el modo automático busca primero en los campos comerciales y recurre al contenido si no encuentra coincidencias; incluir contenido añade coincidencias del documento; solo campos limita la búsqueda a los campos. Un indicador identifica los resultados procedentes del contenido. Un `+` tras el número de resultados indica una ventana limitada: concrete más la búsqueda.
 
+Si se muestra el control separado de fechas, elija un intervalo de importación predefinido o personalizado. Con la búsqueda de texto completo está oculto; utilice los campos de fecha disponibles en la barra de búsqueda.
+
 <figure><img src="../../../.gitbook/assets/dashboard-filters-es.png" alt="Filtre por estado, persona asignada y necesidad de reinicio."><figcaption><p>Filtre por estado, persona asignada y necesidad de reinicio.</p></figcaption></figure>
 
 ## Leer y organizar la tabla
 
 Cada fila representa un documento. Según las columnas configuradas, verá nombre, estado, tipo, datos de factura, proveedor, persona asignada, fechas e importes. Pulse una cabecera ordenable para cambiar el orden. Desplácese horizontalmente para ver más columnas y utilice la paginación y el número de documentos por página para recorrer los resultados.
+
+Si la agrupación está disponible, seleccione un campo sobre la tabla. Para fechas, elija día, semana o mes. Abra un grupo para ver sus documentos o quite la agrupación para volver a la lista normal.
 
 Use **+** junto a las pestañas de tipos de documento para mostrar otras pestañas. Puede reordenarlas arrastrándolas. Quitar una pestaña solo cambia la vista; no elimina documentos.
 
@@ -43,6 +47,8 @@ Abra el engranaje y los ajustes de columnas. Mueva columnas entre las listas de 
 ## Entender estados y acciones
 
 Los estados de procesamiento indican pasos como OCR, clasificación o exportación. **Listo para validación** significa que puede revisar el documento. Los estados de aprobación indican una aprobación pendiente. **Finalizado** indica que el procesamiento terminó. Pulse el estado **Error** para consultar los detalles disponibles.
+
+Si hay tiempos de procesamiento, sitúe el puntero sobre el estado para ver las fases y su duración. Los documentos con posibles duplicados muestran un icono de duplicado; ábralo para comparar los documentos relacionados.
 
 Abra la fila para trabajar en la pantalla de validación. El menú de acciones ofrece las operaciones permitidas, como asignar, descargar, consultar el historial o reiniciar el procesamiento. Las variantes de descarga dependen del documento y pueden incluir anotaciones o formatos de factura electrónica.
 

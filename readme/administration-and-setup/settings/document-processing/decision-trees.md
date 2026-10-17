@@ -19,7 +19,7 @@ Entscheidungsbäume sind eine leistungsstarke Funktion, die eine automatisierte 
 
 Die Entscheidungsbaum-Liste zeigt alle konfigurierten Entscheidungsbäume an. Öffnen Sie sie über **Settings → Document Processing → Decision Trees**.
 
-<figure><img src="../../../.gitbook/assets/decision_trees.png" alt="Liste der Entscheidungsbäume"><figcaption><p>Die Liste der Entscheidungsbäume</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/decision_trees-de.png" alt="Liste der Entscheidungsbäume"><figcaption><p>Die Liste der Entscheidungsbäume</p></figcaption></figure>
 
 Jeder Eintrag zeigt:
 

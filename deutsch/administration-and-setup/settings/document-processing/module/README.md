@@ -1,6 +1,6 @@
 # Modul
 
-<figure><img src="../../../../.gitbook/assets/module_settings.png" alt="Moduleinstellungen"><figcaption><p>Seite „Moduleinstellungen“</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/module_settings-de.png" alt="Moduleinstellungen"><figcaption><p>Seite „Moduleinstellungen“</p></figcaption></figure>
 
 Auf der Seite „Module“ aktivieren oder deaktivieren Sie optionale Funktionen in DocBits. Jeder Abschnitt fasst zusammengehörige Module zusammen, die ein- oder ausgeschaltet werden können.
 

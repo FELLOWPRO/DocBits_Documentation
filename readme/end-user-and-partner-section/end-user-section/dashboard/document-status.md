@@ -1,19 +1,11 @@
 # Documentstatus
 
-Als je de DocBits-software gebruikt voor documentverwerking, is het essentieel om de verschillende documentstatussen te begrijpen die je bestanden kunnen hebben. Hier is een complete lijst van alle mogelijke documentstatussen in DocBits:
+Verwerkingsstatussen tonen stappen zoals OCR, classificatie of export. **Klaar voor validatie** betekent dat het document kan worden gecontroleerd. Goedkeuringsstatussen geven aan dat goedkeuring nog nodig is. **Geëxporteerd** geeft aan dat de documentexport klaar is. Klik op de status **Fout** voor beschikbare foutdetails.
 
-* WatchDog Start: De Watchdog-module wordt gestart.
-* WatchDog Split: Het document wordt gesplitst in Watchdog.
-* WatchDog Upload: Het document wordt geüpload in Watchdog.
-* Upload: Het document wordt geüpload.
-* OCR: Optical Character Recognition (OCR) wordt momenteel uitgevoerd op het document.
-* Classification: Het document wordt geclassificeerd.
-* Zugferd import: Een Zugferd-document wordt geïmporteerd.
-* Ready for Validation: Het document is klaar voor validatie.
-* Zugferd export: Een Zugferd-document wordt geëxporteerd.
-* Workflow: Er wordt momenteel een workflow uitgevoerd met dit document.
-* Pending approval: Het document moet worden goedgekeurd.
-* Pending second approval: Het document moet een tweede keer worden goedgekeurd.
-* Auto Accounting: Automatische boekhouding wordt uitgevoerd.
-* Export: Het document wordt geëxporteerd.
-* Error: Er is een fout opgetreden in het document.
+Als verwerkingstijden beschikbaar zijn, houdt u de aanwijzer boven een status om de fasen en hun duur te zien. Documenten met mogelijke duplicaten tonen een duplicaatpictogram; open dit om de gerelateerde documenten te vergelijken.
+
+Open een rij om in het validatiescherm te werken. Het actiemenu biedt toegestane bewerkingen, zoals toewijzen, downloaden, geschiedenis bekijken of de verwerking opnieuw starten. Downloadvarianten hangen van het document af en kunnen aantekeningen of elektronische factuurformaten bevatten.
+
+Selecteer meerdere documenten met de selectievakjes en open het menu in de tabelkop voor toegestane bulkacties, zoals toewijzen, samenvoegen, herstarten, export herstarten of verwijderen. Controleer de selectie en iedere bevestiging. Deze acties kunnen documenten wijzigen; een weergave opslaan wijzigt alleen de presentatie van de werklijst.
+
+De [dashboardhandleiding](README.md) beschrijft zoeken, documentacties en opgeslagen weergaven.

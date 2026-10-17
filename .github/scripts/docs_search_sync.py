@@ -49,7 +49,11 @@ import urllib.parse
 import urllib.request
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-README_ROOT = "readme"
+# Folder the pages are read from. "readme" is the English space (main); the
+# language spaces are mirrored into main:<folder>/ by language_bridge.py
+# (deutsch/, espanol/, ...). The all-languages sync runs from main with
+# DOCS_ROOT set per language, so no language branch needs this script.
+README_ROOT = os.environ.get("DOCS_ROOT", "readme")
 SUMMARY_PATH = os.path.join(README_ROOT, "SUMMARY.md")
 BASE_DOCS_URL = "https://docs.docbits.com"
 # GitBook's asset convention (see resolve_images_in_markdown) — an
@@ -112,18 +116,31 @@ def published_rel_path(md_path: str) -> str | None:
     return None
 
 
+# Public URL segment of each GitBook language space. `docs.docbits.com/es/...`
+# is a 404 and `/de/` only redirects, the real spaces are these folders
+# (same names as the language_bridge folders). "" = site root (English).
+LANG_URL_SLUG = {
+    "main": "",
+    "de": "deutsch",
+    "es": "espanol",
+    "fr": "french",
+    "it": "italian",
+    "nl": "dutch",
+    "pl": "polish",
+    "pt": "portuguese",
+}
+
+
 def full_url(rel_path: str, lang: str) -> str:
     """Build the live docs.docbits.com URL for a page.
 
     Verified against live pages (see PR description): the `main` branch
-    (English) publishes at the site root with no prefix; other language
-    branches publish under a `/{lang}` path segment (confirmed for `de` —
-    `docs.docbits.com/de/...`). `lang` is otherwise a generic parameter (a
-    branch not yet wired to a live GitBook variant, e.g. `es`, would just
-    404 today — that's a docs-hosting decision, not something this script
-    special-cases).
+    (English) publishes at the site root with no prefix; the language
+    spaces publish under their folder name (see LANG_URL_SLUG). `lang` is otherwise a generic parameter (a
+    language without an entry in LANG_URL_SLUG is used as its own segment).
     """
-    prefix = BASE_DOCS_URL if lang == "main" else f"{BASE_DOCS_URL}/{lang}"
+    slug = LANG_URL_SLUG.get(lang, lang)
+    prefix = f"{BASE_DOCS_URL}/{slug}" if slug else BASE_DOCS_URL
     return prefix if not rel_path else f"{prefix}/{rel_path}"
 
 

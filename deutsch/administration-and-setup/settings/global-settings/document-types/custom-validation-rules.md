@@ -37,7 +37,7 @@ Benutzerdefinierte Validierungsregeln werden **pro Dokumenttyp** eingeschaltet. 
 3. Öffnen Sie den Abschnitt **Custom Validation Rules** und schalten Sie den Schalter ein.
 4. Klicken Sie auf **Manage validation rules**, um die Regelliste zu öffnen.
 
-<figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="Die Regelschalter in den zusätzlichen Einstellungen eines Dokumenttyps"><figcaption><p>Die Schalter für Manage Layouts, Custom Validation Rules und Transformation Rules</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles-de.png" alt="Die Regelschalter in den zusätzlichen Einstellungen eines Dokumenttyps"><figcaption><p>Die Schalter für Manage Layouts, Custom Validation Rules und Transformation Rules</p></figcaption></figure>
 
 Ab sofort zeigt die Karte des Dokumenttyps zusätzlich einen Link **Validation Rules**.
 

@@ -1,13 +1,5 @@
 # Contador de tareas
 
-El contador de tareas se encuentra en la esquina superior derecha de la página de inicio del Panel de control.
+El indicador opcional de documentos pendientes muestra a los administradores la cola de procesamiento de la organización. No cuenta los documentos asignados a usted. Para su trabajo, filtre por responsable y estado y compruebe la organización activa.
 
-<figure><img src="../../../.gitbook/assets/task-counter1.png" alt=""><figcaption></figcaption></figure>
-
-Aquí es donde puedes ver cuántos documentos están en tu cola para procesar
-
-<figure><img src="../../../.gitbook/assets/task-counter2.png" alt="" width="563"><figcaption></figcaption></figure>
-
-y cuántos documentos están listos para validación.
-
-<figure><img src="../../../.gitbook/assets/task-counter3.png" alt="" width="563"><figcaption></figcaption></figure>
+Consulte búsqueda, acciones y vistas guardadas en la [guía del panel](README.md).

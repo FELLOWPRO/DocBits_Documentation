@@ -28,11 +28,15 @@ La barra offre filtri strutturati, una vista per la query diretta e una guida a 
 
 Con la ricerca a testo completo attiva, il menu dei contenuti controlla le ricerche di testo semplice: la modalità automatica cerca prima nei campi aziendali e passa al contenuto se non trova risultati; includere il contenuto aggiunge le corrispondenze nel documento; solo campi esclude il contenuto. Un indicatore segnala i risultati provenienti dal contenuto. Un `+` dopo il numero di risultati indica una finestra limitata: restringi ulteriormente la ricerca.
 
+Se compare il controllo separato delle date, scegli un periodo di importazione predefinito o personalizzato. Con la ricerca full-text è nascosto: usa invece i campi data disponibili nella barra di ricerca.
+
 <figure><img src="../../../.gitbook/assets/dashboard-filters-it.png" alt="Filtra per stato, persona assegnata e necessità di riavvio."><figcaption><p>Filtra per stato, persona assegnata e necessità di riavvio.</p></figcaption></figure>
 
 ## Leggere e organizzare la tabella
 
 Ogni riga rappresenta un documento. In base alle colonne configurate, mostra nome, stato, tipo, dati della fattura, fornitore, assegnatario, date e importi. Fai clic su un’intestazione ordinabile per cambiare l’ordine. Scorri orizzontalmente per altre colonne e usa la paginazione e il numero di documenti per pagina per esplorare i risultati.
+
+Se il raggruppamento è disponibile, seleziona un campo sopra la tabella. Per i campi data, scegli giorno, settimana o mese. Apri un gruppo per vedere i suoi documenti oppure rimuovi il raggruppamento per tornare alla lista normale.
 
 Usa **+** accanto alle schede per mostrare altri tipi di documento. Riordina le schede trascinandole. Rimuovere una scheda cambia solo la vista e non elimina documenti.
 
@@ -43,6 +47,8 @@ Apri l’ingranaggio e le impostazioni delle colonne. Sposta le colonne tra gli 
 ## Comprendere stati e azioni
 
 Gli stati di elaborazione indicano passaggi come OCR, classificazione o esportazione. **Pronto per la convalida** indica che il documento può essere verificato. Gli stati di approvazione indicano un’approvazione in attesa. **Completato** indica che l’elaborazione è terminata. Fai clic sullo stato **Errore** per consultare i dettagli disponibili.
+
+Se sono disponibili i tempi di elaborazione, passa il puntatore sullo stato per vedere le fasi e la loro durata. Per i documenti con possibili duplicati compare un’icona: aprila per confrontare i documenti correlati.
 
 Apri una riga per lavorare nella schermata di convalida. Il menu delle azioni offre le operazioni consentite, come assegnazione, download, cronologia o riavvio dell’elaborazione. Le varianti di download dipendono dal documento e possono includere annotazioni o formati di fattura elettronica.
 

@@ -30,7 +30,7 @@ Regelbasierte Layouts werden **pro Dokumenttyp** von einem **Organisationsadmini
 2. Klicken Sie auf das **Einstellungen**-Symbol (Zahnrad) auf der Karte des Dokumenttyps.
 3. Öffnen Sie **Manage Layouts** und schalten Sie den Schalter ein.
 
-<figure><img src="../../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="Der Schalter Manage Layouts"><figcaption><p>Der Schalter Manage Layouts in den zusätzlichen Einstellungen eines Dokumenttyps</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/doc-type-settings-rule-toggles-de.png" alt="Der Schalter Manage Layouts"><figcaption><p>Der Schalter Manage Layouts in den zusätzlichen Einstellungen eines Dokumenttyps</p></figcaption></figure>
 
 Der Link **Layouts** auf der Karte des Dokumenttyps öffnet nun **Layouts & Selection Rules**.
 

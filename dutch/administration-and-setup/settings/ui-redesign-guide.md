@@ -35,7 +35,7 @@ Instellingenpagina's met veel secties (zoals Globale Instellingen of de configur
 
 De meeste instellingenpagina's, dialoogvensters en hulpschermen tonen nu een klein **?**-pictogram in de kop.
 
-<figure><img src="../../.gitbook/assets/ui-redesign-help-icon.png" alt="Helppictogram in een paginakop"><figcaption><p>Het helppictogram opent de bijbehorende documentatiepagina in een nieuw tabblad.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ui-redesign-help-icon-nl.png" alt="Helppictogram in een paginakop"><figcaption><p>Het helppictogram opent de bijbehorende documentatiepagina in een nieuw tabblad.</p></figcaption></figure>
 
 Een klik opent de bijbehorende pagina op `docs.docbits.com` in een nieuw tabblad — geen gezoek meer naar de juiste pagina in de documentatie. Het pictogram houdt rekening met uw interfacetaal en opent de vertaalde documentatie wanneer die bestaat; anders wordt teruggevallen op Engels.
 

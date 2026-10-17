@@ -28,11 +28,15 @@ De zoekbalk biedt gestructureerde zoekfilters, een directe queryweergave en hulp
 
 Bij ingeschakeld zoeken in volledige tekst bepaalt het inhoudsmenu hoe gewone tekst wordt gezocht: automatisch zoekt eerst in bedrijfsvelden en daarna in documentinhoud als velden geen treffers geven; inhoud meenemen voegt inhoudstreffers toe; alleen velden beperkt de zoekopdracht tot velden. Een aanduiding laat zien wanneer resultaten uit documentinhoud komen. Een `+` achter het aantal resultaten betekent dat het resultaatvenster begrensd is. Verfijn dan de zoekopdracht.
 
+Als de aparte datumkeuze zichtbaar is, kiest u een vooraf ingestelde of eigen importperiode. Bij zoeken in volledige tekst is deze verborgen; gebruik dan de beschikbare datumvelden in de zoekbalk.
+
 <figure><img src="../../../.gitbook/assets/dashboard-filters-nl.png" alt="Filter op status, toegewezen persoon en de noodzaak van een herstart."><figcaption><p>Filter op status, toegewezen persoon en de noodzaak van een herstart.</p></figcaption></figure>
 
 ## De documenttabel lezen en indelen
 
 Elke rij is een document. Afhankelijk van de kolommen ziet u naam, status, type, factuurgegevens, leverancier, toegewezen persoon, datums en bedragen. Klik op een sorteerbare kolomkop om de volgorde te wijzigen. Schuif horizontaal voor meer kolommen en gebruik de paginering en het aantal documenten per pagina om resultaten te bekijken.
+
+Als groeperen beschikbaar is, kiest u boven de tabel een groepeerveld. Kies bij datumvelden dag, week of maand. Open een groep om de documenten te bekijken of verwijder de groepering om terug te keren naar de gewone lijst.
 
 Met **+** naast de documenttypetabbladen toont u andere typen. Versleep de tabbladen om ze te ordenen. Een tabblad verwijderen wijzigt alleen de weergave en verwijdert geen documenten.
 
@@ -43,6 +47,8 @@ Open het tandwiel en de kolominstellingen. Verplaats kolommen tussen de verborge
 ## Statussen en documentacties begrijpen
 
 Verwerkingsstatussen tonen stappen zoals OCR, classificatie of export. **Gereed voor validatie** betekent dat het document kan worden gecontroleerd. Goedkeuringsstatussen geven aan dat goedkeuring nog nodig is. **Voltooid** geeft aan dat de verwerking klaar is. Klik op de status **Fout** voor beschikbare foutdetails.
+
+Als verwerkingstijden beschikbaar zijn, houdt u de aanwijzer boven een status om de fasen en hun duur te zien. Documenten met mogelijke duplicaten tonen een duplicaatpictogram; open dit om de gerelateerde documenten te vergelijken.
 
 Open een rij om in het validatiescherm te werken. Het actiemenu biedt toegestane bewerkingen, zoals toewijzen, downloaden, geschiedenis bekijken of de verwerking opnieuw starten. Downloadvarianten hangen van het document af en kunnen aantekeningen of elektronische factuurformaten bevatten.
 

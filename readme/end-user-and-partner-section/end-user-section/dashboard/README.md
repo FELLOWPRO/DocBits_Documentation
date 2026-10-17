@@ -46,7 +46,7 @@ Ouvrez l’engrenage, puis les paramètres des colonnes. Déplacez les colonnes 
 
 ## Comprendre les statuts et les actions
 
-Les statuts de traitement indiquent des étapes telles que l’OCR, la classification ou l’export. **Prêt pour validation** signifie que le document peut être vérifié. Les statuts d’approbation indiquent une approbation en attente. **Terminé** indique que le traitement est achevé. Cliquez sur le statut **Erreur** pour consulter les détails disponibles.
+Les statuts de traitement indiquent des étapes telles que l’OCR, la classification ou l’export. **Prêt pour la validation** signifie que le document peut être vérifié. Les statuts d’approbation indiquent une approbation en attente. **Terminé** indique que l’export du document est achevé. Cliquez sur le statut **Erreur** pour consulter les détails disponibles.
 
 Si des durées de traitement sont disponibles, survolez un statut pour voir les phases et leur durée. Une icône de doublon apparaît pour les documents ayant des doublons possibles ; ouvrez-la pour comparer les documents associés.
 
@@ -75,3 +75,5 @@ Les autres outils actualisent la liste, ouvrent les paramètres avancés, démar
 Vérifiez d’abord l’organisation, la vue active, le type de document, le texte recherché et les filtres. Actualisez la liste et consultez les autres pages. Si une commande reste absente, demandez à votre administrateur de vérifier les autorisations et les modules.
 
 **Ctrl/Cmd + K** ouvre la recherche rapide globale ; **Ctrl/Cmd + Q** actualise le tableau de bord ; **Ctrl/Cmd + H** ouvre l’aide. Le menu de l’engrenage contient la référence des raccourcis. Le compteur de documents en attente de toute l’organisation, s’il est affiché, est un indicateur d’administration, pas votre compteur personnel de tâches.
+
+Utilisez Ctrl sous Windows/Linux et Cmd sous macOS. Les raccourcis du navigateur ou du système peuvent avoir la priorité.

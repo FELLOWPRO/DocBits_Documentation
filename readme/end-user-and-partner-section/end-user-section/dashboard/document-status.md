@@ -1,6 +1,6 @@
 # Statut des documents
 
-Les statuts de traitement indiquent des étapes telles que l’OCR, la classification ou l’export. **Prêt pour validation** signifie que le document peut être vérifié. Les statuts d’approbation indiquent une approbation en attente. **Terminé** indique que le traitement est achevé. Cliquez sur le statut **Erreur** pour consulter les détails disponibles.
+Les statuts de traitement indiquent des étapes telles que l’OCR, la classification ou l’export. **Prêt pour la validation** signifie que le document peut être vérifié. Les statuts d’approbation indiquent une approbation en attente. **Terminé** indique que l’export du document est achevé. Cliquez sur le statut **Erreur** pour consulter les détails disponibles.
 
 Si des durées de traitement sont disponibles, survolez un statut pour voir les phases et leur durée. Une icône de doublon apparaît pour les documents ayant des doublons possibles ; ouvrez-la pour comparer les documents associés.
 

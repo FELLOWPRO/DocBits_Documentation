@@ -4,4 +4,6 @@ Vérifiez d’abord l’organisation, la vue active, le type de document, le tex
 
 **Ctrl/Cmd + K** ouvre la recherche rapide globale ; **Ctrl/Cmd + Q** actualise le tableau de bord ; **Ctrl/Cmd + H** ouvre l’aide. Le menu de l’engrenage contient la référence des raccourcis. Le compteur de documents en attente de toute l’organisation, s’il est affiché, est un indicateur d’administration, pas votre compteur personnel de tâches.
 
+Utilisez Ctrl sous Windows/Linux et Cmd sous macOS. Les raccourcis du navigateur ou du système peuvent avoir la priorité.
+
 Le [guide du tableau de bord](README.md) présente la recherche, les actions et les vues enregistrées.

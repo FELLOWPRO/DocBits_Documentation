@@ -1,7 +1,11 @@
-# Raccourcis Clavier
+# Raccourcis clavier
 
-Le tableau de bord comprend les raccourcis suivants pour améliorer la navigation et l'interaction :
+Utilisez Ctrl sous Windows/Linux et Cmd sous macOS. Les raccourcis du navigateur ou du système peuvent avoir la priorité.
 
-* **Option + K** – Ouvre le menu des raccourcis clavier, fournissant une liste des raccourcis disponibles dans l'application.
-* **Option + Q** – Actualise le tableau de bord, garantissant que les dernières données sont affichées sans avoir besoin de recharger manuellement la page.
+| Raccourci | Action |
+| --- | --- |
+| Ctrl/Cmd + K | Ouvrir la recherche rapide globale. |
+| Ctrl/Cmd + Q | Actualiser la liste du tableau de bord. |
+| Ctrl/Cmd + H | Ouvrir la documentation/l’aide. |
 
+Ouvrez l’engrenage et le bouton du clavier pour consulter les raccourcis dans l’application. Le point d’interrogation dans la recherche ouvre l’aide sur les champs et la syntaxe.

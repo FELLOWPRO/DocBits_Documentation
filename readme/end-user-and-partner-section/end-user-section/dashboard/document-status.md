@@ -1,6 +1,6 @@
 # Dokumentstatus
 
-Verarbeitungsstatus zeigen Schritte wie OCR, Klassifizierung oder Export an. **Bereit zur Validierung** bedeutet, dass Sie das Dokument prüfen können. Freigabestatus zeigen einen ausstehenden Genehmigungsschritt an. **Abgeschlossen** kennzeichnet die abgeschlossene Verarbeitung. Klicken Sie bei **Fehler** auf den Fehlerstatus, um verfügbare Fehlerdetails zu öffnen.
+Verarbeitungsstatus zeigen Schritte wie OCR, Klassifizierung oder Export an. **Bereit zur Validierung** bedeutet, dass Sie das Dokument prüfen können. Freigabestatus zeigen einen ausstehenden Genehmigungsschritt an. **Exportiert** kennzeichnet den abgeschlossenen Dokumentexport. Klicken Sie bei **Fehler** auf den Fehlerstatus, um verfügbare Fehlerdetails zu öffnen.
 
 Wenn Verarbeitungszeiten vorliegen, bewegen Sie den Mauszeiger über den Status, um Phasen und Dauer zu sehen. Bei möglichen Duplikaten erscheint ein Duplikatsymbol; öffnen Sie es, um die zugehörigen Dokumente zu vergleichen.
 

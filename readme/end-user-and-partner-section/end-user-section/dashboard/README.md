@@ -46,7 +46,7 @@ Wenn die Gruppierung verfügbar ist, wählen Sie oberhalb der Tabelle ein Gruppi
 
 ## Status und Dokumentaktionen verstehen
 
-Verarbeitungsstatus zeigen Schritte wie OCR, Klassifizierung oder Export an. **Bereit zur Validierung** bedeutet, dass Sie das Dokument prüfen können. Freigabestatus zeigen einen ausstehenden Genehmigungsschritt an. **Abgeschlossen** kennzeichnet die abgeschlossene Verarbeitung. Klicken Sie bei **Fehler** auf den Fehlerstatus, um verfügbare Fehlerdetails zu öffnen.
+Verarbeitungsstatus zeigen Schritte wie OCR, Klassifizierung oder Export an. **Bereit zur Validierung** bedeutet, dass Sie das Dokument prüfen können. Freigabestatus zeigen einen ausstehenden Genehmigungsschritt an. **Exportiert** kennzeichnet den abgeschlossenen Dokumentexport. Klicken Sie bei **Fehler** auf den Fehlerstatus, um verfügbare Fehlerdetails zu öffnen.
 
 Wenn Verarbeitungszeiten vorliegen, bewegen Sie den Mauszeiger über den Status, um Phasen und Dauer zu sehen. Bei möglichen Duplikaten erscheint ein Duplikatsymbol; öffnen Sie es, um die zugehörigen Dokumente zu vergleichen.
 
@@ -75,3 +75,5 @@ Die übrigen Werkzeuge aktualisieren die Liste, öffnen erweiterte Einstellungen
 Prüfen Sie zuerst Organisation, aktive Ansicht, Dokumenttyp, Suchtext und Filterchips. Aktualisieren Sie die Liste und prüfen Sie weitere Ergebnisseiten. Fehlt eine Funktion weiterhin, lassen Sie Berechtigungen und aktivierte Module durch Ihre Administration prüfen.
 
 **Strg/Cmd + K** öffnet die globale Schnellsuche. **Strg/Cmd + Q** aktualisiert das Dashboard; **Strg/Cmd + H** öffnet die Hilfe. Die Übersicht der Tastenkürzel finden Sie im Zahnradmenü. Ein gegebenenfalls angezeigter organisationsweiter Zähler ausstehender Dokumente ist eine Administratoranzeige und kein persönlicher Aufgabenzähler.
+
+Verwenden Sie unter Windows/Linux Strg und unter macOS Cmd. Tastenkürzel des Browsers oder Betriebssystems können Vorrang haben.

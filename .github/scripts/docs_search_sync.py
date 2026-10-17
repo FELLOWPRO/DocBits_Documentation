@@ -45,6 +45,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -129,20 +130,90 @@ LANG_URL_SLUG = {
     "nl": "dutch",
     "pl": "polish",
     "pt": "portuguese",
+    "zh": "chinese",
 }
+
+# The Chinese space publishes the top-level folders under their pinyin
+# titles (docs.docbits.com/chinese/zui-zhong-yong-hu-yu-he-zuo-huo-ban/
+# end-user-section/ai-table); everything below the first segment keeps the
+# folder/file names. Checked against the space's sitemap-pages.xml
+# (836 pages, same count as de/es).
+ZH_TOP_SEGMENT = {
+    "overview-and-basics": "gai-shu-yu-ji-chu",
+    "administration-and-setup": "guan-li-yu-she-zhi",
+    "advanced-functions-and-tools": "gao-ji-gong-neng-yu-gong-ju",
+    "end-user-and-partner-section": "zui-zhong-yong-hu-yu-he-zuo-huo-ban",
+    "infor-integration-and-configuration": "infor-ji-cheng-yu-pei-zhi",
+    "security": "security",
+}
+
+
+_SITEMAP_CACHE: dict[str, set[str] | None] = {}
+
+
+def _live_urls(lang: str) -> set[str] | None:
+    """Canonical page URLs of one language space, from GitBook's
+    sitemap-pages.xml (cached). None when it cannot be fetched (the caller then
+    keeps the path-derived URL)."""
+    if lang in _SITEMAP_CACHE:
+        return _SITEMAP_CACHE[lang]
+    slug = LANG_URL_SLUG.get(lang, lang)
+    url = f"{BASE_DOCS_URL}/{slug + '/' if slug else ''}sitemap-pages.xml"
+    urls: set[str] | None
+    try:
+        request = urllib.request.Request(url, headers={"User-Agent": "docs-search-sync"})
+        with urllib.request.urlopen(request, timeout=60) as response:
+            xml = response.read().decode("utf-8", "replace")
+        urls = {u.rstrip("/") for u in re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", xml)}
+        if not urls:
+            urls = None
+    except (urllib.error.URLError, TimeoutError, OSError) as exc:
+        print(f"::warning::sitemap {url} not available ({exc}); keeping path-derived URLs")
+        urls = None
+    _SITEMAP_CACHE[lang] = urls
+    return urls
+
+
+def _canonical(url: str, lang: str) -> str:
+    """GitBook builds a page's URL from its position in SUMMARY.md, not from the
+    file path (a page nested under another publishes below it), and a path-
+    derived URL then 404s or only redirects. Pick the real URL from the
+    sitemap: exact match, else the unique sitemap URL with the same last
+    segment, else the one sharing the longest path suffix (needs >= 2 segments
+    in common); otherwise keep the guess."""
+    live = _live_urls(os.environ.get("SYNC_SITEMAP_LANG", lang))
+    if not live or url in live:
+        return url
+    segments = url.split("/")
+    candidates = [u for u in live if u.rsplit("/", 1)[-1] == segments[-1]]
+    if len(candidates) == 1:
+        return candidates[0]
+    best, best_len, tie = None, 1, False
+    for candidate in candidates:
+        cs = candidate.split("/")
+        n = 0
+        while n < min(len(cs), len(segments)) and cs[-1 - n] == segments[-1 - n]:
+            n += 1
+        if n > best_len:
+            best, best_len, tie = candidate, n, False
+        elif n == best_len and best is not None:
+            tie = True
+    return best if best and not tie else url
 
 
 def full_url(rel_path: str, lang: str) -> str:
     """Build the live docs.docbits.com URL for a page.
 
-    Verified against live pages (see PR description): the `main` branch
-    (English) publishes at the site root with no prefix; the language
-    spaces publish under their folder name (see LANG_URL_SLUG). `lang` is otherwise a generic parameter (a
-    language without an entry in LANG_URL_SLUG is used as its own segment).
-    """
+    The language spaces publish under their folder name (see LANG_URL_SLUG);
+    English (`main`) at the site root. The path-derived guess is then replaced
+    by the real URL from the space's sitemap (see _canonical)."""
+    if lang == "zh" and rel_path:
+        first, _, rest = rel_path.partition("/")
+        rel_path = ZH_TOP_SEGMENT.get(first, first) + (f"/{rest}" if rest else "")
     slug = LANG_URL_SLUG.get(lang, lang)
     prefix = f"{BASE_DOCS_URL}/{slug}" if slug else BASE_DOCS_URL
-    return prefix if not rel_path else f"{prefix}/{rel_path}"
+    guess = prefix if not rel_path else f"{prefix}/{rel_path}"
+    return _canonical(guess, lang) if rel_path else guess
 
 
 def _parse_summary_links(text: str) -> set[str]:
@@ -355,19 +426,37 @@ def _call_endpoint(path: str, payload: dict, *, dry_run: bool) -> dict:
         return {}
     base_url = os.environ["DOCS_INGEST_URL"].rstrip("/")
     key = os.environ["DOCS_INGEST_KEY"]
-    request = urllib.request.Request(
-        f"{base_url}{path}",
-        data=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json", "X-Service-Key": key},
-        method="POST",
-    )
-    try:
-        with urllib.request.urlopen(request, timeout=60) as response:
-            return json.loads(response.read().decode("utf-8"))
-    except urllib.error.HTTPError as exc:
-        body = exc.read().decode("utf-8", "replace")
-        print(f"::error::POST {path} failed ({exc.code}): {body}", file=sys.stderr)
-        raise
+    data = json.dumps(payload).encode("utf-8")
+    # A long full sync meets gateway hiccups (502/503/504, timeouts) on the
+    # shared ingress; one bad page must not fail a 40 minute run. Client
+    # errors (4xx, e.g. 401/422) are never retried.
+    delays = (5, 15, 45)
+    for attempt in range(len(delays) + 1):
+        request = urllib.request.Request(
+            f"{base_url}{path}",
+            data=data,
+            headers={"Content-Type": "application/json", "X-Service-Key": key},
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=120) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            body = exc.read().decode("utf-8", "replace")
+            if exc.code in (502, 503, 504) and attempt < len(delays):
+                print(f"::warning::POST {path} {exc.code}, retry {attempt + 1}/{len(delays)}")
+                time.sleep(delays[attempt])
+                continue
+            print(f"::error::POST {path} failed ({exc.code}): {body}", file=sys.stderr)
+            raise
+        except (urllib.error.URLError, TimeoutError) as exc:
+            if attempt < len(delays):
+                print(f"::warning::POST {path} {exc}, retry {attempt + 1}/{len(delays)}")
+                time.sleep(delays[attempt])
+                continue
+            print(f"::error::POST {path} failed: {exc}", file=sys.stderr)
+            raise
+    raise RuntimeError("unreachable")
 
 
 def ingest_md_file(
@@ -666,6 +755,7 @@ VERIFY_QUERIES = {
     "nl": "Hoe lees ik de AI-tabel en wat doet elke knop?",
     "pl": "Jak czytać tabelę AI i co robi każdy przycisk?",
     "pt": "Como leio a tabela AI e o que faz cada botão?",
+    "zh": "如何阅读 AI 表格，每个按钮有什么作用？",
 }
 
 

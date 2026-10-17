@@ -20,7 +20,7 @@ on:
         description: "Language to process"
         type: choice
         default: all
-        options: [all, main, de, es, fr, it, nl, pl, pt]
+        options: [all, main, de, es, fr, it, nl, pl, pt, zh]
       mode:
         description: "refresh = ingest + reconcile, rebuild = purge the language index first"
         type: choice
@@ -49,11 +49,11 @@ jobs:
           - { lang: nl, root: dutch }
           - { lang: pl, root: polish }
           - { lang: pt, root: portuguese }
+          - { lang: zh, root: chinese }
     steps:
       - uses: actions/checkout@v4
         if: inputs.lang == 'all' || inputs.lang == matrix.lang
         with:
-          ref: main
           fetch-depth: 1
 
       - name: Purge index (rebuild only)

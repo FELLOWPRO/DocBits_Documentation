@@ -82,6 +82,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
+      # 9 languages ingesting at once overloaded the shared ingress (502s)
+      max-parallel: 3
       matrix:
         # lang = index key (docs branch name), root = folder on main that
         # GitBook publishes for that language (English: readme/).
@@ -94,10 +96,10 @@ jobs:
           - { lang: nl, root: dutch }
           - { lang: pl, root: polish }
           - { lang: pt, root: portuguese }
+          - { lang: zh, root: chinese }
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
           fetch-depth: 1
 
       - name: Full ingest + reconcile

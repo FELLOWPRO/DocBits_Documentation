@@ -78,3 +78,7 @@ Questa funzionalità è essenziale per verificare che le tue espressioni XPath s
 ## 6. Video Guida
 
 Una guida video per questo tipo di file è disponibile sulla [pagina dei Video.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Usala per seguire la configurazione, la modifica e l'anteprima.
+
+## Regole effettivamente utilizzate e attivazione
+
+Se una nota di credito elettronica appare come Invoice, seguite la [guida alla diagnosi della classificazione](../credit-note-recognized-as-invoice.md). Descrive la sorgente personalizzata o predefinita effettivamente utilizzata, i codici del tipo, Extraction Paths e l’attivazione in sicurezza.

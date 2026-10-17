@@ -1,20 +1,11 @@
 # Document Status
 
-If you’re using DocBits software for document processing, it’s essential to understand the different document statuses that your files can have. Here’s a complete list of all the possible document statuses in DocBits:
+Processing statuses show steps such as OCR, classification or export. **Ready for Validation** means the document is ready for review; approval statuses indicate that an approval step is pending. **Finished** indicates completed processing. For **Error**, click the error status to inspect the available error details.
 
-* WatchDog Start: The Watchdog module is starting.
-* WatchDog Split: The document is being split in Watchdog.
-* WatchDog Upload: The document is being uploaded in Watchdog.
-* Upload: The document is being uploaded.
-* OCR: Optical Character Recognition (OCR) is currently running on the document.
-* Classification: The document is being classified.
-* Zugferd import: A Zugferd document is being imported.
-* Ready for Validation: The document is ready for validation.
-* Zugferd export: A Zugferd document is being exported.
-* Workflow: A workflow is currently running with this document.
-* Pending approval: The document needs to be approved.
-* Pending second approval: The document needs to be approved a second time.
-* Auto Accounting: Automatic accounting is running.
-* Export: The document is being exported.
-* Error: An error occurred in the document.
+If processing times are available, hover over a status to see the phases and their durations. A duplicate icon appears for documents with possible duplicates; open it to compare the related documents.
 
+Open a document row to work in the validation screen. Use the row's **Actions** menu for the operations allowed for that document, such as assignment, download, history or restarting processing. Available download variants depend on the document and can include annotations or electronic invoice formats.
+
+Select the checkboxes for several documents and open the menu in the table header for permitted bulk actions, such as assignment, merging, restart, restart export or deletion. Check the selection and confirmation carefully. These actions can change documents; saving a view only changes how the worklist is displayed.
+
+For searching, document actions and saved views, return to the [dashboard guide](README.md).

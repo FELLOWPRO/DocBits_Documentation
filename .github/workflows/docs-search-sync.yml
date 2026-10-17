@@ -3,7 +3,7 @@ name: Docs Search Sync
 # Keeps the fulltextsearch docs search index (CORE-6111, Settings-Assistent)
 # in step with docs.docbits.com.
 #
-# - push to main/de: diffs the two commits and POSTs only the changed
+# - push to main (docbits/) or de (readme/): diffs the two commits and POSTs only the changed
 #   pages (see .github/scripts/docs_search_sync.py "diff" mode). A rename
 #   ingests the new URL before deleting the old one; a SUMMARY.md change
 #   also ingests any page newly reachable from it (even if that page's
@@ -36,6 +36,7 @@ on:
       - main
       - de
     paths:
+      - "docbits/**"
       - "readme/**"
   schedule:
     - cron: "17 3 * * *"
@@ -67,6 +68,9 @@ jobs:
           DOCS_INGEST_URL: ${{ secrets.DOCS_INGEST_URL }}
           DOCS_INGEST_KEY: ${{ secrets.DOCS_INGEST_KEY }}
           SYNC_LANG: ${{ github.ref_name }}
+          # English lives in docbits/ on main (the GitBook space imports it);
+          # the language branches keep their own readme/ layout.
+          DOCS_ROOT: ${{ github.ref_name == 'main' && 'docbits' || 'readme' }}
           SYNC_BEFORE: ${{ github.event.before }}
           SYNC_AFTER: ${{ github.event.after }}
         run: |
@@ -86,9 +90,9 @@ jobs:
       max-parallel: 3
       matrix:
         # lang = index key (docs branch name), root = folder on main that
-        # GitBook publishes for that language (English: readme/).
+        # GitBook publishes for that language (English: docbits/).
         include:
-          - { lang: main, root: readme }
+          - { lang: main, root: docbits }
           - { lang: de, root: deutsch }
           - { lang: es, root: espanol }
           - { lang: fr, root: french }

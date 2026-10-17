@@ -51,8 +51,10 @@ import urllib.parse
 import urllib.request
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-# Folder the pages are read from. "readme" is the English space (main); the
-# language spaces are mirrored into main:<folder>/ by language_bridge.py
+# Folder the pages are read from. English is `docbits/` on main (the GitBook
+# space imports it; `readme/` is an outdated copy, only 658 of its 832 pages
+# exist on the live site) and `readme/` is the layout of the language branches.
+# The language spaces are mirrored into main:<folder>/ by language_bridge.py
 # (deutsch/, espanol/, ...). The all-languages sync runs from main with
 # DOCS_ROOT set per language, so no language branch needs this script.
 README_ROOT = os.environ.get("DOCS_ROOT", "readme")
@@ -459,6 +461,37 @@ def _call_endpoint(path: str, payload: dict, *, dry_run: bool) -> dict:
     raise RuntimeError("unreachable")
 
 
+_VIDEO_EMBED_RE = re.compile(
+    r"\{%\s*embed\s+url=\"(https://docbits-videos\.fra1\.cdn\.digitaloceanspaces\.com/"
+    r"settings-assistant/[A-Za-z0-9_.-]+/v\d+/[a-z]{2}\.mp4)\"\s*%\}"
+)
+_HEADING_RE = re.compile(r"^#{1,6}\s+(.*?)\s*#*\s*$")
+MAX_VIDEOS_PER_PAGE = 20
+
+
+def extract_videos(markdown_text: str, page_title: str) -> list[dict]:
+    """Explainer videos of a page: every `{% embed url="...mp4" %}` on the
+    docbits-videos CDN, in page order, titled by the nearest heading above it
+    (a leading "3. " is dropped) or by the page title. The fulltext service
+    stores them on every chunk of the page and the Assistant shows them as
+    "Watch video" buttons; it validates the same URL pattern again."""
+    videos: list[dict] = []
+    seen: set[str] = set()
+    heading = ""
+    for line in markdown_text.splitlines():
+        match = _HEADING_RE.match(line)
+        if match:
+            heading = re.sub(r"^\d+\.\s*", "", match.group(1)).strip()
+            continue
+        for embed in _VIDEO_EMBED_RE.finditer(line):
+            url = embed.group(1)
+            if url in seen:
+                continue
+            seen.add(url)
+            videos.append({"title": (heading or page_title)[:200], "url": url})
+    return videos[:MAX_VIDEOS_PER_PAGE]
+
+
 def ingest_md_file(
     md_path: str,
     lang: str,
@@ -483,7 +516,8 @@ def ingest_md_file(
     title = extract_title(markdown_text, fallback=rel.rsplit("/", 1)[-1] or "DocBits")
     url = full_url(rel, lang)
     markdown_text = resolve_images_in_markdown(markdown_text, md_path, url)
-    print(f"ingest {md_path} -> {url}")
+    videos = extract_videos(markdown_text, title)
+    print(f"ingest {md_path} -> {url}" + (f" ({len(videos)} video)" if videos else ""))
     _call_endpoint(
         "/docs/ingest",
         {
@@ -492,6 +526,7 @@ def ingest_md_file(
             "lang": lang,
             "commit_sha": commit_sha,
             "markdown": markdown_text,
+            "videos": videos,
         },
         dry_run=dry_run,
     )

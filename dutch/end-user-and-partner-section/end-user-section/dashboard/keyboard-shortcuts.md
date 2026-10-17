@@ -1,8 +1,11 @@
-# Toetsenbord Sneltoetsen
+# Sneltoetsen
 
-### Dashboard Sneltoetsen
+Gebruik Ctrl op Windows/Linux en Cmd op macOS. Sneltoetsen van browser of besturingssysteem kunnen voorrang hebben.
 
-Het dashboard bevat de volgende sneltoetsen om de navigatie en interactie te verbeteren:
+| Sneltoets | Actie |
+| --- | --- |
+| Ctrl/Cmd + K | De globale snelzoekfunctie openen. |
+| Ctrl/Cmd + Q | De dashboardlijst vernieuwen. |
+| Ctrl/Cmd + H | Documentatie/hulp openen. |
 
-* **Option + K** – Opent het sneltoetsmenu, dat een lijst van beschikbare sneltoetsen binnen de applicatie biedt.
-* **Option + Q** – Vernieuwt de dashboardtabel, zodat de nieuwste gegevens worden weergegeven zonder de pagina handmatig te herladen.
+Open het tandwiel en de toetsenbordknop voor de sneltoetsen in de app. Het vraagteken in het zoekvak opent de hulp bij velden en syntaxis.

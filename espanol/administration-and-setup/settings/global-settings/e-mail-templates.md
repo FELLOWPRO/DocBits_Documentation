@@ -8,7 +8,7 @@ Las plantillas de correo electrónico (Email Templates) le permiten personalizar
 
 Vaya a **Settings → Communication & Notifications → Email Templates**. La lista muestra cada plantilla con su **Name**, **Subject**, **Document Type**, la fecha de **Last Modified** y **Actions** (editar o eliminar).
 
-<figure><img src="../../../.gitbook/assets/email_templates_dashboard_list.png" alt="Lista de Email Templates"><figcaption><p>La lista de Email Templates</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/email_templates_dashboard_list-es.png" alt="Lista de Email Templates"><figcaption><p>La lista de Email Templates</p></figcaption></figure>
 
 ## **Crear una plantilla**
 
@@ -21,7 +21,7 @@ Vaya a **Settings → Communication & Notifications → Email Templates**. La li
 3. Diseñe el cuerpo en el editor de texto enriquecido: dé formato al texto (negrita, cursiva, listas, alineación), inserte imágenes con **Upload**, edite el HTML sin procesar con el botón `<>` y use el botón **+** para insertar campos dinámicos.
 4. Haga clic en **Save**.
 
-<figure><img src="../../../.gitbook/assets/email_templates_4.png" alt="Editor de plantillas de correo electrónico"><figcaption><p>El editor de plantillas: nombre, tipo de documento, interruptor de adjunto, asunto y cuerpo de texto enriquecido</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/email_templates_4-es.png" alt="Editor de plantillas de correo electrónico"><figcaption><p>El editor de plantillas: nombre, tipo de documento, interruptor de adjunto, asunto y cuerpo de texto enriquecido</p></figcaption></figure>
 
 ## **Campos dinámicos**
 
@@ -36,7 +36,7 @@ Los campos dinámicos se sustituyen por los datos del documento cuando se envía
 
 Haga clic en **Send Test** en el editor, introduzca una dirección en **Receiver Email** y haga clic en **Send**. DocBits envía una vista previa de la plantilla para que pueda comprobar el diseño y verificar que los campos dinámicos se resuelven correctamente antes de guardar.
 
-<figure><img src="../../../.gitbook/assets/test_email_configuration_dialog.png" alt="Cuadro de diálogo Send Test"><figcaption><p>El cuadro de diálogo Send Test</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/test_email_configuration_dialog-es.png" alt="Cuadro de diálogo Send Test"><figcaption><p>El cuadro de diálogo Send Test</p></figcaption></figure>
 
 ## **Uso de plantillas en las notificaciones**
 

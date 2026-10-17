@@ -35,7 +35,7 @@ Strony ustawień z wieloma sekcjami (takie jak Ustawienia Globalne lub konfigura
 
 Większość stron ustawień, okien dialogowych i ekranów narzędzi pokazuje teraz małą ikonę **?** w nagłówku.
 
-<figure><img src="../../.gitbook/assets/ui-redesign-help-icon.png" alt="Ikona pomocy w nagłówku strony"><figcaption><p>Ikona pomocy otwiera odpowiednią stronę dokumentacji w nowej karcie.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ui-redesign-help-icon-pl.png" alt="Ikona pomocy w nagłówku strony"><figcaption><p>Ikona pomocy otwiera odpowiednią stronę dokumentacji w nowej karcie.</p></figcaption></figure>
 
 Kliknięcie otwiera odpowiednią stronę na `docs.docbits.com` w nowej karcie — bez konieczności wyszukiwania właściwej strony w dokumentacji. Ikona uwzględnia twój język interfejsu i otwiera przetłumaczoną dokumentację, jeśli istnieje; w przeciwnym razie przechodzi na angielski.
 

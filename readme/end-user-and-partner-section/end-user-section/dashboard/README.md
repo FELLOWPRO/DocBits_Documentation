@@ -28,6 +28,8 @@ A barra oferece filtros estruturados, uma vista de consulta direta e ajuda sobre
 
 Com a pesquisa de texto integral ativa, o menu de conteúdo controla a pesquisa de texto simples: o modo automático procura primeiro nos campos de negócio e recorre ao conteúdo quando não há resultados; incluir conteúdo acrescenta resultados dos documentos; apenas campos restringe a pesquisa aos campos. Um indicador identifica os resultados provenientes do conteúdo. Um `+` após o número de resultados indica uma janela limitada: refine a pesquisa.
 
+Se o controlo de datas separado estiver visível, escolha um período de importação predefinido ou personalizado. Com a pesquisa de texto integral está oculto; utilize os campos de data disponíveis na pesquisa.
+
 <figure><img src="../../../.gitbook/assets/dashboard-filters-pt.png" alt="Filtre por estado, pessoa atribuída e necessidade de reinício."><figcaption><p>Filtre por estado, pessoa atribuída e necessidade de reinício.</p></figcaption></figure>
 
 ## Ler e organizar a tabela

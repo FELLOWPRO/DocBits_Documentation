@@ -46,7 +46,7 @@ Apri l’ingranaggio e le impostazioni delle colonne. Sposta le colonne tra gli 
 
 ## Comprendere stati e azioni
 
-Gli stati di elaborazione indicano passaggi come OCR, classificazione o esportazione. **Pronto per la convalida** indica che il documento può essere verificato. Gli stati di approvazione indicano un’approvazione in attesa. **Completato** indica che l’elaborazione è terminata. Fai clic sullo stato **Errore** per consultare i dettagli disponibili.
+Gli stati di elaborazione indicano passaggi come OCR, classificazione o esportazione. **Pronto per la convalida** indica che il documento può essere verificato. Gli stati di approvazione indicano un’approvazione in attesa. **Esportato** indica che l’esportazione del documento è terminata. Fai clic sullo stato **Errore** per consultare i dettagli disponibili.
 
 Se sono disponibili i tempi di elaborazione, passa il puntatore sullo stato per vedere le fasi e la loro durata. Per i documenti con possibili duplicati compare un’icona: aprila per confrontare i documenti correlati.
 
@@ -75,3 +75,5 @@ Gli altri strumenti aggiornano l’elenco, aprono le impostazioni avanzate, avvi
 Controlla prima organizzazione, vista attiva, tipo di documento, testo cercato e filtri. Aggiorna l’elenco e consulta le altre pagine. Se una funzione manca ancora, chiedi all’amministratore di verificare autorizzazioni e moduli.
 
 **Ctrl/Cmd + K** apre la ricerca rapida globale; **Ctrl/Cmd + Q** aggiorna la dashboard; **Ctrl/Cmd + H** apre la guida. Il menu dell’ingranaggio contiene i riferimenti alle scorciatoie. Il contatore dei documenti in attesa dell’intera organizzazione, se visibile, è un indicatore per amministratori e non il tuo contatore personale di attività.
+
+Usa Ctrl su Windows/Linux e Cmd su macOS. Le scorciatoie del browser o del sistema possono avere la precedenza.

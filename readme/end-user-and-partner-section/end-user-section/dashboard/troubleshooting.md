@@ -4,4 +4,6 @@ Controlla prima organizzazione, vista attiva, tipo di documento, testo cercato e
 
 **Ctrl/Cmd + K** apre la ricerca rapida globale; **Ctrl/Cmd + Q** aggiorna la dashboard; **Ctrl/Cmd + H** apre la guida. Il menu dell’ingranaggio contiene i riferimenti alle scorciatoie. Il contatore dei documenti in attesa dell’intera organizzazione, se visibile, è un indicatore per amministratori e non il tuo contatore personale di attività.
 
+Usa Ctrl su Windows/Linux e Cmd su macOS. Le scorciatoie del browser o del sistema possono avere la precedenza.
+
 La [guida alla dashboard](README.md) descrive ricerca, azioni e viste salvate.

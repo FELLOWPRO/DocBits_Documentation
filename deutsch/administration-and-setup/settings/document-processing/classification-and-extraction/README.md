@@ -1,6 +1,6 @@
 # Klassifizierung und Extraktion
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction.png" alt="Klassifizierung und Extraktion"><figcaption><p>Seite „Klassifizierung und Extraktion“</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction-de.png" alt="Klassifizierung und Extraktion"><figcaption><p>Seite „Klassifizierung und Extraktion“</p></figcaption></figure>
 
 ## Übersicht
 

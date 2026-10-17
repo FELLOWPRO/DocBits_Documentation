@@ -1,13 +1,5 @@
 # 任务计数器
 
-任务计数器位于仪表板主页的右上角。
+可选的待处理文档指示器向管理员显示整个组织的处理队列，并非分配给您的文档数量。查看自己的工作时，请按分配对象和状态筛选，并检查当前组织。
 
-<figure><img src="../../../.gitbook/assets/task-counter1.png" alt=""><figcaption></figcaption></figure>
-
-在这里，您可以查看队列中待处理的文档数量。
-
-<figure><img src="../../../.gitbook/assets/task-counter2.png" alt="" width="563"><figcaption></figcaption></figure>
-
-还可以查看当前已准备好进行验证的文档数量。
-
-<figure><img src="../../../.gitbook/assets/task-counter3.png" alt="" width="563"><figcaption></figcaption></figure>
+搜索、文档操作和已保存视图的说明请参阅[仪表板指南](README.md)。

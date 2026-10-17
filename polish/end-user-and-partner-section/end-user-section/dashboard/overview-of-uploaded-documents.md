@@ -1,5 +1,15 @@
-# Przegląd Przesłanych Dokumentów
+# Przegląd przesłanych dokumentów
 
-Druga część pulpitu nawigacyjnego to przegląd wszystkich przesłanych dokumentów. Możesz wyświetlić wszystkie dokumenty lub tylko te przypisane do Ciebie. Możesz także wyszukiwać dokumenty według nazwy.
+Pulpit to codzienna lista pracy w DocBits. Znajdziesz tu zaimportowane dokumenty, sprawdzisz ich status, otworzysz je do walidacji i zorganizujesz pracę zespołu.
 
-Dane zostaną wyodrębnione w ciągu kilku sekund, a status zmieni się z „Uruchomione” na „Gotowe do Walidacji”.
+<figure><img src="../../../.gitbook/assets/dashboard-overview-pl.png" alt="Aktualny pulpit: wyszukiwanie, narzędzia, zapisane widoki, typy dokumentów i tabela. Wartości dokumentów ukryto w celu ochrony danych."><figcaption><p>Aktualny pulpit: wyszukiwanie, narzędzia, zapisane widoki, typy dokumentów i tabela. Wartości dokumentów ukryto w celu ochrony danych.</p></figcaption></figure>
+
+Każdy wiersz przedstawia dokument. Zależnie od konfiguracji kolumn zobaczysz nazwę, status, typ, dane faktury, dostawcę, przypisaną osobę, daty i kwoty. Kliknij nagłówek kolumny obsługującej sortowanie, aby zmienić kolejność. Przewijaj poziomo, aby zobaczyć kolejne kolumny. Użyj nawigacji stron i liczby dokumentów na stronę, aby przeglądać wyniki.
+
+Jeśli grupowanie jest dostępne, wybierz pole nad tabelą. Dla pól daty wybierz dzień, tydzień lub miesiąc. Otwórz grupę, aby zobaczyć jej dokumenty, albo usuń grupowanie, aby wrócić do zwykłej listy.
+
+Przycisk **+** obok kart typów dokumentów pokazuje dodatkowe typy. Zmieniaj kolejność kart przez przeciąganie. Usunięcie karty zmienia tylko widok i nie usuwa dokumentów.
+
+Otwórz koło zębate i ustawienia kolumn. Przenoś kolumny między listą ukrytych i widocznych oraz przeciągaj widoczne kolumny, aby je uporządkować. Możesz także dodać pola typu dokumentu. Zobacz [Zmiana kolumn dokumentu](change-document-columns.md).
+
+Wyszukiwanie, działania i widoki opisuje [przewodnik po pulpicie](README.md).

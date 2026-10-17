@@ -1,13 +1,5 @@
-# Taakenteller
+# Taakteller
 
-De taakenteller bevindt zich in de rechterbovenhoek van de startpagina van het Dashboard.
+De optionele indicator voor wachtende documenten toont beheerders de verwerkingswachtrij van de organisatie. Deze telt niet de aan u toegewezen documenten. Filter voor uw eigen werk op toegewezen persoon en status en controleer de actieve organisatie.
 
-<figure><img src="../../../.gitbook/assets/task-counter1.png" alt=""><figcaption></figcaption></figure>
-
-Hier kunt u zien hoeveel documenten er in uw wachtrij staan voor verwerking
-
-<figure><img src="../../../.gitbook/assets/task-counter2.png" alt="" width="563"><figcaption></figcaption></figure>
-
-en hoeveel documenten nu klaar zijn voor validatie.
-
-<figure><img src="../../../.gitbook/assets/task-counter3.png" alt="" width="563"><figcaption></figcaption></figure>
+De [dashboardhandleiding](README.md) beschrijft zoeken, documentacties en opgeslagen weergaven.

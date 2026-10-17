@@ -1,39 +1,21 @@
-# Cruscotti personali
+# Dashboard personali
 
-Un cruscotto personale salva una vista dell'elenco dei documenti, così puoi ritrovare i filtri e le colonne che usi spesso. Puoi mantenerlo privato, renderlo visibile a tutta la tua organizzazione oppure condividerlo con gruppi e utenti selezionati. Per imparare a filtrare l'elenco dei documenti prima di salvare una vista, consulta [Ricerca rapida](quick-search.md).
+Salva una lista di lavoro ricorrente con filtri, ordinamento e colonne visibili. Una dashboard salvata è una vista di documenti esistenti.
 
-## Creare un cruscotto
+## Creare e condividere una vista
 
-1. Nel **Cruscotto**, imposta i filtri e le colonne che vuoi salvare.
-2. Seleziona il badge del cruscotto sotto la barra di ricerca. Mostra la vista corrente e il numero di documenti, ad esempio **Tutti i documenti (10)**.
-3. Seleziona **Crea una nuova Dashboard**.
+1. Imposta ricerca, filtri, tipo di documento, ordinamento e colonne.
+2. Apri il pulsante blu della vista sotto la ricerca.
+3. Crea una nuova dashboard e assegna un nome chiaro.
+4. Scegli visibilità privata, tutti gli utenti oppure gruppi e utenti specifici.
+5. Scegli **Salva**.
 
-<figure><img src="../../../.gitbook/assets/dbdc607-dashboard-menu-it.png" alt="Menu del badge del cruscotto con Crea una nuova Dashboard, Dashboard predefinita e Salva le modifiche alla dashboard"><figcaption><p>Apri il badge del cruscotto corrente per creare una vista salvata.</p></figcaption></figure>
+La visibilità determina chi può usare la vista. Ogni persona vede comunque solo i documenti consentiti dalle proprie autorizzazioni.
 
-4. Inserisci un nome e scegli chi può vedere il cruscotto:
-   * **Visibile solo a me** mantiene la vista privata.
-   * **Visibile a tutti gli utenti** la rende disponibile alla tua organizzazione.
-   * **Condividi con gruppi e utenti** ti permette di selezionare gruppi o persone specifiche.
-5. Seleziona **Salva**.
+<figure><img src="../../../.gitbook/assets/dashboard-saved-view-it.png" alt="Crea una dashboard con un nome e scegli chi può visualizzarla."><figcaption><p>Crea una dashboard con un nome e scegli chi può visualizzarla.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc607-dashboard-create-it.png" alt="Finestra Crea una nuova Dashboard con nome, opzioni di visibilità e pulsante Salva"><figcaption><p>Assegna un nome al cruscotto e scegli la sua visibilità prima di salvarlo.</p></figcaption></figure>
+## Cambiare, aggiornare o rimuovere una vista
 
-<figure><img src="../../../.gitbook/assets/dbdc607-dashboard-share-options-it.png" alt="Opzione di condivisione del cruscotto con i campi Gruppi e Selezionare l'utente"><figcaption><p>Seleziona gruppi o utenti quando vuoi condividere un cruscotto con persone specifiche.</p></figcaption></figure>
+Seleziona una dashboard salvata o torna alla vista predefinita dal pulsante della vista. Dopo aver modificato una tua vista, salva i cambiamenti quando l’azione è disponibile. L’azione è disabilitata senza modifiche o quando la vista è condivisa da un’altra persona.
 
-## Aprire o cambiare un cruscotto
-
-Seleziona il badge del cruscotto, poi scegli un cruscotto salvato dall'elenco. Seleziona **Dashboard predefinita** per tornare alla vista predefinita. Il badge mostra il nome del cruscotto attivo.
-
-Per modificare un cruscotto che ti appartiene, passa il mouse sul suo nome nell'elenco e seleziona l'icona della **matita**. In **Modifica Dashboard**, cambia il nome o la visibilità e seleziona **Salva**. Un cruscotto condiviso con te da un'altra persona non può essere modificato dal tuo account.
-
-<figure><img src="../../../.gitbook/assets/dbdc607-dashboard-edit-controls-it.png" alt="Riga di un cruscotto salvato con le icone matita e cestino visibili al passaggio del mouse"><figcaption><p>Passa il mouse su un cruscotto che ti appartiene per mostrarne i controlli di modifica ed eliminazione.</p></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/dbdc607-dashboard-edit-dialog-it.png" alt="Finestra Modifica Dashboard con il nome salvato e le opzioni di visibilità"><figcaption><p>Usa la finestra Modifica Dashboard per rinominare il cruscotto o cambiare chi può vederlo.</p></figcaption></figure>
-
-## Salvare le modifiche alla vista corrente
-
-Dopo aver modificato filtri o colonne in un cruscotto che ti appartiene, seleziona **Salva le modifiche alla dashboard** dal menu del cruscotto. L'azione non è disponibile se non è selezionato alcun cruscotto, se la vista non è cambiata o se il cruscotto selezionato appartiene a un'altra persona.
-
-## Eliminare un cruscotto
-
-Apri l'elenco dei cruscotti, passa il mouse su un cruscotto che ti appartiene e seleziona l'icona del **cestino**. Conferma con **Elimina**. Il controllo di eliminazione non è disponibile per un cruscotto che un'altra persona ha condiviso con te.
+Usa il comando di modifica di una tua vista per cambiare nome o condivisione. Usa l’eliminazione e conferma solo per rimuovere la vista salvata. I documenti rimangono. Per adattare una vista condivisa da altri, crea una tua vista.

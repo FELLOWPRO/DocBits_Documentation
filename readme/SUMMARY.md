@@ -248,6 +248,7 @@
         * [Bonnes pratiques](administration-and-setup/settings/global-settings/document-types/script/best-practices-5.md)
         * [Dépannage](administration-and-setup/settings/global-settings/document-types/script/troubleshooting-4.md)
       * [e-docs](administration-and-setup/settings/global-settings/document-types/edi/README.md)
+        * [Un avoir électronique est reconnu comme une facture](administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md)
         * [Currently Supported E-Invoice Standards](administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md)
           * [Feuille de Route](administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/roadmap.md)
         * [Exemples de Factures Électroniques](administration-and-setup/settings/global-settings/document-types/edi/e-invoice-examples/README.md)

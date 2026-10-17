@@ -28,11 +28,15 @@ Pasek wyszukiwania udostępnia filtry strukturalne, widok bezpośredniego zapyta
 
 Przy włączonym wyszukiwaniu pełnotekstowym menu treści określa sposób szukania zwykłego tekstu: tryb automatyczny najpierw przeszukuje pola biznesowe, a przy braku wyników treść dokumentów; uwzględnianie treści dodaje trafienia z dokumentów; tryb tylko pól pomija treść. Wskaźnik oznacza wyniki pochodzące z treści. Znak `+` po liczbie wyników oznacza ograniczone okno wyników. Doprecyzuj wtedy wyszukiwanie.
 
+Jeśli widoczny jest osobny wybór dat, wybierz gotowy lub własny okres importu. Przy wyszukiwaniu pełnotekstowym jest ukryty; użyj wtedy dostępnych pól daty w pasku wyszukiwania.
+
 <figure><img src="../../../.gitbook/assets/dashboard-filters-pl.png" alt="Filtruj według statusu, przypisanej osoby i konieczności ponownego uruchomienia."><figcaption><p>Filtruj według statusu, przypisanej osoby i konieczności ponownego uruchomienia.</p></figcaption></figure>
 
 ## Odczytywanie i porządkowanie tabeli
 
 Każdy wiersz przedstawia dokument. Zależnie od konfiguracji kolumn zobaczysz nazwę, status, typ, dane faktury, dostawcę, przypisaną osobę, daty i kwoty. Kliknij nagłówek kolumny obsługującej sortowanie, aby zmienić kolejność. Przewijaj poziomo, aby zobaczyć kolejne kolumny. Użyj nawigacji stron i liczby dokumentów na stronę, aby przeglądać wyniki.
+
+Jeśli grupowanie jest dostępne, wybierz pole nad tabelą. Dla pól daty wybierz dzień, tydzień lub miesiąc. Otwórz grupę, aby zobaczyć jej dokumenty, albo usuń grupowanie, aby wrócić do zwykłej listy.
 
 Przycisk **+** obok kart typów dokumentów pokazuje dodatkowe typy. Zmieniaj kolejność kart przez przeciąganie. Usunięcie karty zmienia tylko widok i nie usuwa dokumentów.
 
@@ -43,6 +47,8 @@ Otwórz koło zębate i ustawienia kolumn. Przenoś kolumny między listą ukryt
 ## Statusy i działania na dokumentach
 
 Statusy przetwarzania wskazują etapy takie jak OCR, klasyfikacja i eksport. **Gotowy do walidacji** oznacza możliwość sprawdzenia dokumentu. Statusy zatwierdzania wskazują oczekiwanie na akceptację. **Zakończono** oznacza zakończenie przetwarzania. Kliknij status **Błąd**, aby zobaczyć dostępne szczegóły.
+
+Jeśli dostępne są czasy przetwarzania, najedź na status, aby zobaczyć etapy i czas ich trwania. Dokumenty z możliwymi duplikatami mają ikonę duplikatu; otwórz ją, aby porównać powiązane dokumenty.
 
 Otwórz wiersz, aby pracować na ekranie walidacji. Menu działań zawiera dozwolone operacje: przypisanie, pobieranie, historię i ponowne uruchomienie przetwarzania. Warianty pobierania zależą od dokumentu i mogą uwzględniać adnotacje lub formaty faktur elektronicznych.
 

@@ -8,7 +8,7 @@ Email Templates pozwalają dostosować automatyczne e-maile wysyłane przez DocB
 
 Przejdź do **Settings → Communication & Notifications → Email Templates**. Lista pokazuje każdy szablon wraz z **Name**, **Subject**, **Document Type**, datą **Last Modified** oraz **Actions** (edycja lub usunięcie).
 
-<figure><img src="../../../.gitbook/assets/email_templates_dashboard_list.png" alt="Lista Email Templates"><figcaption><p>Lista Email Templates</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/email_templates_dashboard_list-pl.png" alt="Lista Email Templates"><figcaption><p>Lista Email Templates</p></figcaption></figure>
 
 ## **Tworzenie szablonu**
 
@@ -21,7 +21,7 @@ Przejdź do **Settings → Communication & Notifications → Email Templates**. 
 3. Zaprojektuj treść w edytorze tekstu sformatowanego — formatuj tekst (pogrubienie, kursywa, listy, wyrównanie), wstawiaj obrazy przyciskiem **Upload**, edytuj surowy HTML przyciskiem `<>` i używaj przycisku **+**, aby wstawiać pola dynamiczne.
 4. Kliknij **Save**.
 
-<figure><img src="../../../.gitbook/assets/email_templates_4.png" alt="Edytor Email Template"><figcaption><p>Edytor szablonu — nazwa, typ dokumentu, przełącznik załącznika, temat i treść w edytorze tekstu sformatowanego</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/email_templates_4-pl.png" alt="Edytor Email Template"><figcaption><p>Edytor szablonu — nazwa, typ dokumentu, przełącznik załącznika, temat i treść w edytorze tekstu sformatowanego</p></figcaption></figure>
 
 ## **Pola dynamiczne**
 
@@ -36,7 +36,7 @@ Pola dynamiczne są zastępowane danymi dokumentu podczas wysyłania e-maila. Ws
 
 Kliknij **Send Test** w edytorze, wpisz adres e-mail w polu **Receiver Email** i kliknij **Send**. DocBits wysyła podgląd szablonu, abyś przed zapisaniem mógł sprawdzić układ i upewnić się, że pola dynamiczne są poprawnie rozwiązywane.
 
-<figure><img src="../../../.gitbook/assets/test_email_configuration_dialog.png" alt="Okno Send Test"><figcaption><p>Okno Send Test</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/test_email_configuration_dialog-pl.png" alt="Okno Send Test"><figcaption><p>Okno Send Test</p></figcaption></figure>
 
 ## **Używanie szablonów w powiadomieniach**
 

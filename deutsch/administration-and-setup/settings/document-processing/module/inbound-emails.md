@@ -51,7 +51,7 @@ Die **Dokumentenweiterleitung** legt fest, wohin die importierten Dokumente gehe
 
 Für diese Methode muss zuerst das Modul **Eingehende E-Mails** aktiviert sein. Gehen Sie zu **Einstellungen → Dokumentverarbeitung → Modul**, öffnen Sie den Abschnitt **Dokumenttyp**, suchen Sie **Eingehende E-Mails** und aktivieren Sie den Schalter.
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_1.png" alt="Aktivieren des Moduls Eingehende E-Mails"><figcaption><p>Aktivieren Sie <strong>Eingehende E-Mails</strong> unter Einstellungen → Dokumentverarbeitung → Modul.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inbound_emails_1-de.png" alt="Aktivieren des Moduls Eingehende E-Mails"><figcaption><p>Aktivieren Sie <strong>Eingehende E-Mails</strong> unter Einstellungen → Dokumentverarbeitung → Modul.</p></figcaption></figure>
 
 Sobald es aktiviert ist, erscheint unter **Einstellungen → Dokumentverarbeitung → Import** ein Abschnitt **Eingehende E-Mails**. Er enthält alles, was zum Empfang weitergeleiteter Dokumente nötig ist:
 

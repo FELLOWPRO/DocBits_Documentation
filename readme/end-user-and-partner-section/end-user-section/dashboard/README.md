@@ -46,7 +46,7 @@ Abra a engrenagem e as definições das colunas. Mova colunas entre as listas oc
 
 ## Compreender estados e ações
 
-Os estados de processamento indicam passos como OCR, classificação ou exportação. **Pronto para validação** significa que pode verificar o documento. Os estados de aprovação indicam uma aprovação pendente. **Concluído** indica o fim do processamento. Clique no estado **Erro** para consultar os detalhes disponíveis.
+Os estados de processamento indicam passos como OCR, classificação ou exportação. **Pronto para validação** significa que pode verificar o documento. Os estados de aprovação indicam uma aprovação pendente. **Exportado** indica que a exportação do documento terminou. Clique no estado **Erro** para consultar os detalhes disponíveis.
 
 Se houver tempos de processamento, passe o ponteiro sobre um estado para ver as fases e a sua duração. Os documentos com possíveis duplicados apresentam um ícone de duplicado; abra-o para comparar os documentos relacionados.
 
@@ -75,3 +75,5 @@ As outras ferramentas atualizam a lista, abrem definições avançadas, iniciam 
 Verifique primeiro a organização, a vista ativa, o tipo de documento, o texto pesquisado e os filtros. Atualize a lista e consulte outras páginas. Se uma função continuar em falta, peça ao administrador para verificar permissões e módulos.
 
 **Ctrl/Cmd + K** abre a pesquisa rápida global; **Ctrl/Cmd + Q** atualiza o painel; **Ctrl/Cmd + H** abre a ajuda. O menu da engrenagem contém a referência dos atalhos. O eventual contador de documentos pendentes da organização é um indicador para administradores, não o seu contador pessoal de tarefas.
+
+Use Ctrl em Windows/Linux e Cmd em macOS. Os atalhos do navegador ou sistema podem ter prioridade.

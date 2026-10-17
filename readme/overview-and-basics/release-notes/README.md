@@ -2,9 +2,9 @@
 
 **Dostępność NOVA R1.1:** Wersja jest dostępna w środowisku testowym od **16 października 2026 r.** Wydanie produkcyjne jest planowane na **4 listopada 2026 r.**
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/pl.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/pl.mp4" %}
 
-**DocBits to produkt. NOVA to nazwa cyklu wydań.** [Obejrzyj film o nowym wydaniu DocBits](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/pl.mp4) · [Napisy](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/pl.vtt).
+**DocBits to produkt. NOVA to nazwa cyklu wydań.** [Obejrzyj film o nowym wydaniu DocBits](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/pl.mp4) · [Napisy](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/pl.vtt).
 
 Wybierz kanał wydania, aby zobaczyć zmiany dotyczące Twojego zespołu. **Cykl NOVA wprowadza nowe główne wydanie DocBits z dodatkowymi funkcjami dla klientów. Hotfixy VESTA ulepszają bieżącą wersję produkcyjną.** Zobacz [cykl życia wydania](../docbits-release-lifecycle-strategy.md), aby poznać dostępność i możliwość przełączania między kanałami.
 

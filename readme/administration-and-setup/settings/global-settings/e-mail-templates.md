@@ -8,7 +8,7 @@ Met e-mailtemplates past u de geautomatiseerde e-mails aan die DocBits verzendt 
 
 Ga naar **Settings → Communication & Notifications → Email Templates**. De lijst toont elke template met de **Name**, het **Subject**, het **Document Type**, de datum **Last Modified** en **Actions** (bewerken of verwijderen).
 
-<figure><img src="../../../.gitbook/assets/email_templates_dashboard_list.png" alt="Lijst met e-mailtemplates"><figcaption><p>De lijst met e-mailtemplates</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/email_templates_dashboard_list-nl.png" alt="Lijst met e-mailtemplates"><figcaption><p>De lijst met e-mailtemplates</p></figcaption></figure>
 
 ## **Een template maken**
 
@@ -21,7 +21,7 @@ Ga naar **Settings → Communication & Notifications → Email Templates**. De l
 3. Ontwerp de berichttekst in de editor voor rijke tekst — maak tekst op (vet, cursief, lijsten, uitlijning), voeg afbeeldingen in met **Upload**, bewerk ruwe HTML met de knop `<>` en gebruik de knop **+** om dynamische velden in te voegen.
 4. Klik op **Save**.
 
-<figure><img src="../../../.gitbook/assets/email_templates_4.png" alt="Editor voor e-mailtemplates"><figcaption><p>De templateditor — naam, documenttype, schakelaar voor bijlage, onderwerp en berichttekst met rijke tekst</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/email_templates_4-nl.png" alt="Editor voor e-mailtemplates"><figcaption><p>De templateditor — naam, documenttype, schakelaar voor bijlage, onderwerp en berichttekst met rijke tekst</p></figcaption></figure>
 
 ## **Dynamische velden**
 
@@ -36,7 +36,7 @@ Dynamische velden worden bij het verzenden van de e-mail vervangen door document
 
 Klik in de editor op **Send Test**, voer een **Receiver Email**-adres in en klik op **Send**. DocBits verstuurt een voorbeeld van de template, zodat u de opmaak kunt controleren en vóór het opslaan kunt nagaan of de dynamische velden correct worden ingevuld.
 
-<figure><img src="../../../.gitbook/assets/test_email_configuration_dialog.png" alt="Dialoogvenster Send Test"><figcaption><p>Het dialoogvenster Send Test</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/test_email_configuration_dialog-nl.png" alt="Dialoogvenster Send Test"><figcaption><p>Het dialoogvenster Send Test</p></figcaption></figure>
 
 ## **Templates gebruiken in meldingen**
 

@@ -1,5 +1,7 @@
 # Workflow Logs
 
+For narrated explanations of the advanced log view, watch [Find the relevant execution](advanced-workflow-builder/videos.md#find-the-relevant-execution) and [Trace nodes and diagnose](advanced-workflow-builder/videos.md#trace-nodes-and-diagnose). Both chapters are available in English and German, with caption files and transcripts.
+
 ## **Overview**
 
 The **Workflow Logs** allow users to analyze which workflows were executed for a document, understand the execution results, and drill into condition-level details for debugging or validation.

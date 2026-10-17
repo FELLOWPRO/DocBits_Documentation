@@ -8,6 +8,26 @@ An **Advanced Workflow** routes a document through a graph of triggers, conditio
 
 Use a [Standard Workflow](../standard-workflow-builder/README.md) for a linear **When → And → Then** automation. Both builders use the same [card catalog](../cards-overview/README.md). The advanced builder adds explicit connections and control nodes.
 
+## Watch: builder and canvas
+
+Start with the narrated introduction to creating and editing an Advanced Workflow. Choose English or German. The videos use labelled teaching diagrams; the screenshots below show the application interface.
+
+{% tabs %}
+{% tab title="English" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v1/en.mp4" %}
+
+[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v1/en.vtt) · [Read the transcript](videos.md#builder-and-canvas)
+{% endtab %}
+
+{% tab title="Deutsch" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v1/de.mp4" %}
+
+[Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v1/de.vtt) · [Transkript lesen](videos.md#builder-and-canvas)
+{% endtab %}
+{% endtabs %}
+
+Continue with the [five-part video guide](videos.md) for nodes and routes, variables and testing, finding log entries and diagnosing an execution. Every chapter includes English and German narration, caption files and a transcript.
+
 ## Open or create an Advanced Workflow
 
 1. Open **Workflow Dashboard → Workflow List**.
@@ -58,14 +78,9 @@ The automatic-save indicator refers to a **local browser draft**, normally store
 
 Organization variables persist independently. Discarding a canvas draft does not undo a variable change.
 
-## Designer walkthrough
-
-{% embed url="https://youtu.be/EeNFVR6z7G8" %}
-Advanced Workflow Designer
-{% endembed %}
-
 ## Complete guide
 
+- [Video guide](videos.md): five narrated chapters in English and German, with captions and transcripts.
 - [Toolbar and canvas](toolbar-and-canvas.md): every control, selection, editing, notes and shortcuts.
 - [Nodes and connections](nodes.md): entry points, versions, result handles, merges and connection rules.
 - [Variables](variables.md): all four types, organization scope and immediate persistence.

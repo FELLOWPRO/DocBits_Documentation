@@ -46,7 +46,7 @@ Abra el engranaje y los ajustes de columnas. Mueva columnas entre las listas de 
 
 ## Entender estados y acciones
 
-Los estados de procesamiento indican pasos como OCR, clasificación o exportación. **Listo para validación** significa que puede revisar el documento. Los estados de aprobación indican una aprobación pendiente. **Finalizado** indica que el procesamiento terminó. Pulse el estado **Error** para consultar los detalles disponibles.
+Los estados de procesamiento indican pasos como OCR, clasificación o exportación. **Listo para la validación** significa que puede revisar el documento. Los estados de aprobación indican una aprobación pendiente. **Exportado** indica que la exportación del documento terminó. Pulse el estado **Error** para consultar los detalles disponibles.
 
 Si hay tiempos de procesamiento, sitúe el puntero sobre el estado para ver las fases y su duración. Los documentos con posibles duplicados muestran un icono de duplicado; ábralo para comparar los documentos relacionados.
 
@@ -75,3 +75,5 @@ Los demás botones actualizan la lista, abren ajustes avanzados, inician un esc�
 Compruebe organización, vista activa, tipo de documento, texto de búsqueda y filtros. Actualice la lista y revise otras páginas de resultados. Si sigue faltando una función, pida a su administrador que revise permisos y módulos.
 
 **Ctrl/Cmd + K** abre la búsqueda rápida global; **Ctrl/Cmd + Q** actualiza el panel; **Ctrl/Cmd + H** abre la ayuda. El menú del engranaje contiene la referencia de atajos. El contador de documentos pendientes de toda la organización, si aparece, es un indicador para administradores, no su contador personal de tareas.
+
+Use Ctrl en Windows/Linux y Cmd en macOS. Los atajos del navegador o sistema pueden tener prioridad.

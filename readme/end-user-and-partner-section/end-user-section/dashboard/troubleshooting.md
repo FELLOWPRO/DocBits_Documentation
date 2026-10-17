@@ -4,4 +4,6 @@ Compruebe organización, vista activa, tipo de documento, texto de búsqueda y f
 
 **Ctrl/Cmd + K** abre la búsqueda rápida global; **Ctrl/Cmd + Q** actualiza el panel; **Ctrl/Cmd + H** abre la ayuda. El menú del engranaje contiene la referencia de atajos. El contador de documentos pendientes de toda la organización, si aparece, es un indicador para administradores, no su contador personal de tareas.
 
+Use Ctrl en Windows/Linux y Cmd en macOS. Los atajos del navegador o sistema pueden tener prioridad.
+
 Consulte búsqueda, acciones y vistas guardadas en la [guía del panel](README.md).

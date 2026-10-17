@@ -1,6 +1,6 @@
 # Estado del documento
 
-Los estados de procesamiento indican pasos como OCR, clasificación o exportación. **Listo para validación** significa que puede revisar el documento. Los estados de aprobación indican una aprobación pendiente. **Finalizado** indica que el procesamiento terminó. Pulse el estado **Error** para consultar los detalles disponibles.
+Los estados de procesamiento indican pasos como OCR, clasificación o exportación. **Listo para la validación** significa que puede revisar el documento. Los estados de aprobación indican una aprobación pendiente. **Exportado** indica que la exportación del documento terminó. Pulse el estado **Error** para consultar los detalles disponibles.
 
 Si hay tiempos de procesamiento, sitúe el puntero sobre el estado para ver las fases y su duración. Los documentos con posibles duplicados muestran un icono de duplicado; ábralo para comparar los documentos relacionados.
 

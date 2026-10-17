@@ -38,7 +38,7 @@ Transformationsregeln werden **pro Dokumenttyp** von einem **Organisationsadmini
 2. Klicken Sie auf das **Einstellungen**-Symbol (Zahnrad) auf der Karte des Dokumenttyps.
 3. Öffnen Sie **Transformation Rules** und schalten Sie den Schalter ein. Klicken Sie auf **Manage transformation rules**, um die Liste zu öffnen.
 
-<figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="Der Schalter Transformation Rules"><figcaption><p>Der Schalter Transformation Rules in den zusätzlichen Einstellungen eines Dokumenttyps</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles-de.png" alt="Der Schalter Transformation Rules"><figcaption><p>Der Schalter Transformation Rules in den zusätzlichen Einstellungen eines Dokumenttyps</p></figcaption></figure>
 
 Die Karte des Dokumenttyps zeigt nun einen Link **Transformation Rules** und einen Link **Logs** für die Ausführungsprotokolle.
 

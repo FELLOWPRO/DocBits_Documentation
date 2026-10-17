@@ -41,7 +41,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - { lang: main, root: readme }
+          - { lang: main, root: docbits }
           - { lang: de, root: deutsch }
           - { lang: es, root: espanol }
           - { lang: fr, root: french }

@@ -1,10 +1,10 @@
 # NOVA – 主要版本 2026 年 11 月 4 日
 
-**NOVA R1.1 可用性：** 自 **2026 年 10 月 16 日** 起已在沙盒环境中开放。生产环境发布计划于 **2026 年 11 月 4 日** 进行。
+**NOVA R1.1 发布安排：** 自 **2026 年 10 月 16 日** 起可在沙盒环境中使用。生产环境计划于 **2026 年 11 月 4 日** 发布。
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/zh.mp4" %}
 
-**DocBits 是产品名称。NOVA 是发布周期的名称。** [观看 DocBits 新版本介绍视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/zh.mp4) · [字幕](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/zh.vtt).
+**DocBits 是产品名称，NOVA 是本次发布周期的名称。** [观看新版 DocBits 介绍视频（简体中文）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/zh.mp4) · [中文字幕](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/zh.vtt)。
 
 **沙盒服务版本快照：2026 年 10 月 16 日**
 
@@ -25,21 +25,21 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 | 功能 | VESTA 基线（包括测试版） | 客户通过 NOVA 获得的内容 |
 | --- | --- | --- |
 | **使用原测试版功能** | 通过 VESTA 测试版提供的功能 | **常规 NOVA 功能：** 包含所有原 VESTA 测试版功能。其作为常规 VESTA 功能的引入计划于 2026 年 11 月 11 日的热修复版本中进行。 |
-| **验证文档时提供帮助** | 设置助手和表头字段检查 | **新的验证助手：** 识别阻塞字段，跳转到相关值，查看建议的更正，并将聊天窗口保持在独立窗口中。 |
-| **通过日常更正改进自动化** | Touchless Intelligence 仪表板、供应商诊断和变更建议 | **新的审查和测量流程：** 提交改进请求，审查学习到的规则建议，查看受影响文档的证据，对机会进行排名，并在激活后测量结果。 |
+| **验证文档时提供帮助** | 设置助手和页眉字段检查 | **新的验证助手：** 识别阻塞字段，跳转到相关值，查看建议的更正，并将聊天窗口保持在独立窗口中。 |
+| **通过日常更正改进自动化** | 无接触智能仪表板、供应商诊断和变更建议 | **新的审查和测量流程：** 提交改进请求，审查学习到的规则建议，查看受影响文档的证据，对机会进行排名，并在激活后测量结果。 |
 | **理解和解决电子发票错误** | 电子文档检查、规则目录和 XML 查看器 | **扩展的电子发票验证：** 按验证级别分组的报告、策略控制和变更历史、从报告中拒绝以及在受支持的 PDF 发票内进行 XML 检查。 |
 | **控制 FTP/SFTP 导入** | 导入连接和源文件保留或归档 | **新的引导式设置和控制：** 连接向导、逐步日志、可配置的重试和失败通知，以及在成功导入后删除源文件。 |
 | **处理规则和布局** | 规则引擎、执行日志和主数据查找后的转换；管理面板需要测试版链接 | **更广泛的访问权限和更好的工具：** 直接打开管理面板，搜索和预览目标布局，打开文档的布局编辑器并记录布局选择执行。 |
 | **通过设置助手采取行动** | 设置聊天、预览/确认/撤销和主动导入健康警告 | **额外操作：** 管理失败的连接，查看停用历史，更改选定的配置项，从目录创建非活动验证规则，并观看页面解释。 |
 | **控制文档处理** | 组织页面限制和文档重启 | **新的文档级选择：** 使用选定的页数重启，查看已处理与总页数，并选择是否提取隐藏字段。 |
 | **匹配复杂交付** | 采购订单匹配和手动行链接 | **更灵活的匹配：** 在任一方向选择行，可选地保留每个匹配的文档子行，并按配置的行列分组导出请求。 |
-| **区分已导出和已完成的工作** | 现有导出和 Finished 工作流 | **新增状态控制：** 使用 Exported 进行后续处理，可选择锁定 Finished 文档，并查找因工作流执行限制而被搁置的文档。 |
+| **区分已导出和已完成的工作** | 现有导出和“已完成”工作流 | **新增状态控制：** 使用“已导出”状态进行后续处理，可选择锁定“已完成”文档，并查找因工作流执行限制而被搁置的文档。 |
 
 ### 启用需要配置的功能
 
 * **验证助手：** 由组织管理员在 **设置 → 公司信息 → 助手** 中启用。该功能独立于设置助手，默认关闭，需手动启用。
-* **改进审查和咨询报告：** 需要组织管理员和 Analytics 访问权限。已学习的建议需要修正历史记录；测量结果需要足够的数据并完成后续观察期。
-* **规则和布局控制：** 其文档类型启用开关仍然适用。NOVA 使管理面板无需 Beta 链接即可访问。
+* **改进审查和咨询报告：** 需要组织管理员权限和分析仪表板访问权限。已学习的建议需要修正历史记录；测量结果需要足够的数据并完成后续观察期。
+* **规则和布局控制：** 其文档类型启用开关仍然适用。NOVA 使管理面板无需测试版链接即可访问。
 * **可选处理行为：** 按连接配置 FTP 清理和重试。一对多子行展开和已完成文档锁定为可选启用设置。
 
 有关您环境中的可用性和发布渠道切换，请参阅[发布生命周期](../docbits-release-lifecycle-strategy.md)。
@@ -48,16 +48,16 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 
 将以下演示教程与发布说明配合使用，以了解相关功能及其配置。提供简体中文的视频已在下方链接；其他视频均明确标注为英文。
 
-* [选择合适的自动化方式——包括采购订单匹配规则的适用场景 (英文视频)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4)
-* [转换规则 (英文视频)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4)
-* [自定义验证规则 (英文视频)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4)
-* [布局和选择规则 (英文视频)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/en.mp4)
-* [Touchless Intelligence (英文视频)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/en.mp4)
-* [电子发票验证 (英文视频)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/en.mp4)
-* [用户和管理员访问](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/zh.mp4)
-* [子组织](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/zh.mp4)
+* [选择合适的自动化方式——包括采购订单匹配规则的适用场景（英文视频）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4)
+* [转换规则（英文视频）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4)
+* [自定义验证规则（英文视频）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4)
+* [布局和选择规则（英文视频）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/en.mp4)
+* [无接触智能（英文视频）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/en.mp4)
+* [电子发票验证（英文视频）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/en.mp4)
+* [用户和管理员访问（简体中文视频）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/zh.mp4)
+* [子组织（简体中文视频）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/zh.mp4)
 
-### AI Table：六段短视频
+### AI 表格：六段短视频 <a id="ai-table-liu-duan-duan-shi-pin"></a>
 
 这些视频为英文。可观看完整系列或选择您需要的主题。
 
@@ -68,7 +68,7 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 5. [AI 已正确识别的内容](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part5/v1/en.mp4)
 6. [助手及权限说明](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part6/v2/en.mp4)
 
-有关截图和详细操作说明，请参阅 [AI Table 指南](../../end-user-and-partner-section/end-user-section/ai-table/README.md)。
+有关截图和详细操作说明，请参阅 [AI 表格指南](../../end-user-and-partner-section/end-user-section/ai-table/README.md)。
 
 ## 验证助手：协助处理当前文档
 
@@ -83,10 +83,10 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 
 ## 将重复修正转化为自动化改进
 
-现有的 [Touchless Intelligence](../../administration-and-setup/analytics-dashboard/touchless-intelligence/README.md) 仪表板新增了审核和跟进流程：
+现有的 [无接触智能](../../administration-and-setup/analytics-dashboard/touchless-intelligence/README.md) 仪表板新增了审核和跟进流程：
 
 * **学习到的规则建议。** 重复的手动修正可以建议一条[转换规则](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md)。管理员可以查看该规则将写入的内容、支持示例，以及该规则将在哪些文档上替换团队已接受的值。建议需经审核后方可成为生效规则。
-* **来自审核者的改进请求。** 用户可以从文档助手提交改进请求，供管理员在 Touchless Intelligence 中审核。请求将说明和决策保留在一起。
+* **来自审核者的改进请求。** 用户可以从文档助手提交改进请求，供管理员在无接触智能中审核。请求将说明和决策保留在一起。
 * **衡量激活后的效果。** 对于支持的转换规则，DocBits 会比较激活前后的手动修正情况，并在旁边显示无接触处理率。衡量使用 14 天周期，并在数据不足时明确标识，而非虚构改进结果。修改规则会为该修订版启动新的衡量周期。
 * **咨询报告。** 管理员可以生成跨提取、主数据、采购订单匹配、会计、设置和处理流程的改进机会排名视图。在未经衡量之前，预估影响会标注为估算值。
 * **供应商特定的匹配建议。** 重复出现的供应商和物料匹配问题可以为容差或[采购订单匹配规则](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) 的建议提供依据。建议会区分采购订单缺失与规则或容差问题。
@@ -104,13 +104,13 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 
 ## 规则和布局：直接访问和更好的诊断
 
-* **原 Beta 控件成为正式功能。** 管理布局、[自定义验证规则](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) 和[转换规则](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) 在 NOVA 的文档类型高级设置中直接可见，无需 Beta 链接。其启用开关仍由管理员控制。这些控件将随所有其他原 VESTA Beta 功能一起包含在计划于 2026 年 11 月 11 日发布的 VESTA 热修复中。
+* **原测试版控件成为正式功能。** 管理布局、[自定义验证规则](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) 和[转换规则](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) 在 NOVA 的文档类型高级设置中直接可见，无需测试版链接。其启用开关仍由管理员控制。这些控件将随所有其他原 VESTA 测试版功能一起包含在计划于 2026 年 11 月 11 日发布的 VESTA 热修复中。
 * **更实用的规则诊断。** 布局选择规则新增了 **记录执行** 选项。规则搜索支持规则标识符，打开编辑器时会加载当前已保存的规则。现有的规则执行日志仍然是查看已执行内容的位置。
 * **选择并打开布局时获得更多上下文。** 搜索目标布局、预览其内容，并从选择规则中直接打开目标。审批选择规则可正确接受受支持的审批布局类型。管理员还可以从文档验证中获取快捷方式，直接跳转到该文档类型的布局编辑器。
 * **选择多个条件值。** 诸如 **属于以下之一** 等条件支持选择多个值。
 * **更快找到重复检测字段。** 文档类型重复设置中的字段选择器支持搜索。
 
-主数据查找后的转换、基本规则执行日志、更宽的规则编辑器以及标准规则克隆修复已在 VESTA 基线中实现。NOVA 延续了这些功能，并将原 Beta 管理控件作为常规功能提供。
+主数据查找后的转换、基本规则执行日志、更宽的规则编辑器以及标准规则克隆修复已在 VESTA 基线中实现。NOVA 延续了这些功能，并将原测试版管理控件作为常规功能提供。
 
 有关设置步骤、示例和测试，请参阅 [自定义验证规则](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) 和 [转换规则](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md)。要选择文档使用的布局，请参阅 [布局选择规则](../../administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md)。
 
@@ -155,7 +155,7 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 * **配置末行回退。** 组织可以控制剩余的文档行和采购订单行是否允许被单行回退匹配。
 * **更准确的匹配与显示。** 修复了包装换算匹配的正确价格基准保留问题，计划行继承采购订单行的状态，并显示来自收货行的已收数量。
 * **防止过早审批和重复操作。** 当相关采购订单差异尚未审批时，最终审批将被阻止。重复执行工作流不会为同一组创建另一个待办任务，且重复导出检查在审批前执行。
-* **区分 Exported 与 Finished。** 导出操作可在成功导出后选择状态。**Exported** 拥有独立的仪表板徽章。启用已完成文档锁定的组织可防止普通工作流或重启重新打开已完成文档；授权覆盖操作会被记录。
+* **区分“已导出”与“已完成”。** 导出操作可在成功导出后选择状态。 **“已导出”** 拥有独立的仪表板徽章。启用已完成文档锁定的组织可防止普通工作流或重启重新打开已完成文档；授权覆盖操作会被记录。
 * **更清晰的工作流排障。** 仪表板筛选器可查找因工作流执行限制而被搁置的文档。工作流运行可在弹窗中查看，被拒绝的状态变更会指明文档的状态。
 * **额外导出修复。** M3 验证和审批重试已调整，条件性供应商导出配置可正确处理。
 
@@ -167,7 +167,7 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 * **更好的标签和日志。** 管理员可以编辑字段和表格列的翻译键。文档日志列可以调整大小，自定义仪表板列可处理大小写混合的字段标识符，长标签和文件名显示更加一致。
 * **通知范围。** 文档状态邮件规则可以限定到子组织。
 * **供应商入驻。** 供应商门户注册魔法链接的有效期从 **7 天延长至 21 天**。管理员还可以为供应商布局中的文件字段配置上传错误标题。
-* **登录可靠性。** SAML 登录不再复用已过期或已撤销的会话。管理登录支持必需的 MFA 步骤，且非活跃成员资格无法接收新的设置密码邀请。
+* **登录可靠性。** SAML 登录不再复用已过期或已撤销的会话。管理登录支持必需的多因素身份验证（MFA）步骤，且非活跃成员资格无法接收新的设置密码邀请。
 * **创意板图片。** 上传的图片与创意描述分开存储和提供，从而改进了图片处理。
 * **受控渠道切换。** 当环境未启用切换功能时，可将发布渠道设置设为只读。可用性请遵循发布通知。
 
@@ -180,35 +180,35 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 NOVA 还延续了以下列出的功能。此前仅限 VESTA 测试版访问的功能，其常规可用性已包含在本次 NOVA 发布中，并计划于 2026 年 11 月 11 日的 VESTA 热修复中提供。以下列表描述了早期功能，以及上述可用性变更和增强功能：
 
 * 原始设置助手、其文档搜索、基本的预览/确认/撤销流程以及主动的电子邮件/FTP 导入健康警告。
-* Fast、Full、Nexus 和 Auto AI 层级以及视觉模式设置。
-* 表头字段检查以及原始的值来源报告。
-* 首个 Touchless Intelligence 发布版、供应商诊断、批量分析和采购订单决策图。
+* 快速（Fast）、完整（Full）、Nexus 和自动（Auto）AI 层级以及视觉模式设置。
+* 页眉字段检查以及原始的值来源报告。
+* 首个无接触智能发布版、供应商诊断、批量分析和采购订单决策图。
 * 底层验证、转换和布局选择规则引擎、主数据查找后的转换以及基本的规则执行日志。
-* 早期的仪表板搜索改进、MFA、已验证的组织电子邮件域名、费用容差以及将工作流执行限制增加到 50。
+* 早期的仪表板搜索改进、多因素身份验证、已验证的组织电子邮件域名、费用容差以及将工作流执行限制增加到 50。
 
 有关 VESTA 发布历史，请参阅 [10 月 14 日 VESTA 热修复](incremental-updates-14-october-2026.md)、[9 月 15 日热修复](incremental-updates-15-september-2026.md) 和 [早期发布说明](README.md#vesta-hotfix-releases)。
 
 ## NOVA 服务版本
 
-下表列出**自 2026 年 10 月 16 日起在沙盒中可用的 NOVA 构建版本**及各服务的部署时间。生产环境发布计划于 **2026 年 11 月 4 日** 进行；此沙盒快照不代表最终的生产环境构建版本。时间戳对应各个服务的部署。
+下表列出 **自 2026 年 10 月 16 日起在沙盒中可用的 NOVA 构建版本** 及各服务的部署时间。生产环境发布计划于 **2026 年 11 月 4 日** 进行；此沙盒快照不代表最终的生产环境构建版本。时间戳对应各个服务的部署。
 
-| 服务 | 版本 | 部署时间戳 |
+| 服务 | 版本 | 部署时间 |
 | --- | --- | --- |
-| API Service | `13.26.5` | 16.10.2026 11:57:49 |
-| Auth Bridge | `0.5.11` | 08.10.2026 10:56:15 |
-| Auth Service | `1.84.3` | 16.10.2026 12:19:50 |
-| Auto Accounting | `1.23.6` | 15.09.2026 09:42:57 |
-| Barcode Service | `1.20.3` | 15.10.2026 14:17:18 |
-| Docflow Service | `2.13.9` | 15.10.2026 16:14:37 |
-| Docnet Service | `1.59.1` | 12.10.2026 00:59:12 |
-| Email Service | `1.44.4` | 16.10.2026 11:44:58 |
-| Extraction Service | `1.63.1` | 15.10.2026 19:34:17 |
-| FTP Service | `1.37.4` | 15.10.2026 10:42:01 |
-| Fulltext Service | `1.46.1` | 12.10.2026 05:16:16 |
-| Ideas Service | `0.5.6` | 14.10.2026 12:06:00 |
-| OCR Service | `1.11.8` | 12.10.2026 01:00:00 |
-| Operator Service | `1.45.0` | 12.10.2026 09:35:25 |
-| PO Match Service | `1.65.7` | 14.10.2026 16:14:20 |
-| Web App | `10.72.2` | 16.10.2026 12:04:41 |
+| API 服务 | `13.26.5` | 2026 年 10 月 16 日 11:57:49 |
+| 认证桥接服务 | `0.5.11` | 2026 年 10 月 8 日 10:56:15 |
+| 认证服务 | `1.84.3` | 2026 年 10 月 16 日 12:19:50 |
+| 自动会计服务 | `1.23.6` | 2026 年 9 月 15 日 09:42:57 |
+| 条码服务 | `1.20.3` | 2026 年 10 月 15 日 14:17:18 |
+| 文档流服务 | `2.13.9` | 2026 年 10 月 15 日 16:14:37 |
+| 智能体服务（DocNet） | `1.59.1` | 2026 年 10 月 12 日 00:59:12 |
+| 电子邮件服务 | `1.44.4` | 2026 年 10 月 16 日 11:44:58 |
+| 数据提取服务 | `1.63.1` | 2026 年 10 月 15 日 19:34:17 |
+| FTP 服务 | `1.37.4` | 2026 年 10 月 15 日 10:42:01 |
+| 全文搜索服务 | `1.46.1` | 2026 年 10 月 12 日 05:16:16 |
+| 创意看板服务 | `0.5.6` | 2026 年 10 月 14 日 12:06:00 |
+| OCR 服务 | `1.11.8` | 2026 年 10 月 12 日 01:00:00 |
+| DocBits Operator 服务 | `1.45.0` | 2026 年 10 月 12 日 09:35:25 |
+| 采购订单匹配服务 | `1.65.7` | 2026 年 10 月 14 日 16:14:20 |
+| 网页应用 | `10.72.2` | 2026 年 10 月 16 日 12:04:41 |
 
-版本号在两个渠道上独立递增。较大的数字本身并不意味着服务具有新的客户功能。已审核的 Auto Accounting、Barcode、Docnet、Fulltext、OCR 和 Operator 变更属于维护或处理可靠性变更；它们在此对比中并未引入独立的客户工作流。Auth Bridge 更新提高了跨区域账户同步的可靠性。
+两条发布渠道的版本号分别递增。版本号较大本身并不代表新增了面向客户的功能。已审核的自动会计、条码、智能体、全文搜索、OCR 和 DocBits Operator 服务变更属于维护或处理可靠性改进；本次对比中，这些变更未引入独立的客户工作流。认证桥接服务的更新提高了跨区域账户同步的可靠性。

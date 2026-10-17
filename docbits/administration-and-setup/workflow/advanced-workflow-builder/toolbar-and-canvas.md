@@ -1,41 +1,71 @@
+---
+description: "Every Advanced Workflow toolbar control, canvas interaction, note function and keyboard shortcut."
+---
+
 # Toolbar & Canvas
 
-The Advanced Workflow toolbar runs along the bottom of the canvas and gives you everything you need to build, navigate and manage the flow.
+Use the bottom toolbar to configure the workflow and the canvas to arrange nodes. Panning, zooming and card positions change the view or layout. Connections determine execution.
 
-## Toolbar controls
+## Every toolbar control
 
-- **+ Add** — open the node menu to add a node (see [Nodes](nodes.md)).
-- **Undo / Redo** — step backward or forward through your changes.
-- **Zoom in / Zoom out** — change the canvas zoom level.
-- **Workflow name** — name the workflow inline.
-- **Edit description** — add a description for the workflow.
-- **Variables** — open the [Variables](variables.md) panel.
-- **Help** — open the keyboard shortcuts and help dialog.
-- **Validate / Test** — check and run the flow (see [Validation & Testing](validation-and-testing.md)).
-- **Snap to grid** — toggle snapping of nodes to the grid for tidy layouts.
-- **Mini-map** — toggle a small overview map for navigating large graphs.
-- **Save** — save the workflow. An **auto-save** indicator shows when the flow was last saved automatically.
+Controls follow their left-to-right order.
+
+| Control | Purpose and result |
+| --- | --- |
+| **+ Add** | When, And, Then, existing Start, Wait ALL, Wait ANY, OR and Note. See [Nodes](nodes.md). |
+| **Undo / Redo** | Undo or repeat supported canvas edits. Does not roll back executed actions or independently saved organization variables. |
+| **Zoom out / Zoom in** | Change the view scale. |
+| **Workflow Name** | Name the workflow before saving. |
+| **Edit description** | Explain the business purpose and exceptional routes. |
+| **Automatic-save indicator** | Shows the last local draft save after changes; not a server-save confirmation. |
+| **Variables — { }** | Open the organization-wide [variables](variables.md). |
+| **Help — ?** | Shortcuts, path highlighting and connection legend. |
+| **Validate — check-circle** | Report graph errors and warnings. |
+| **Test — play-circle** | Choose test input for the current canvas. See [testing](validation-and-testing.md). |
+| **Snap to grid** | Toggle alignment when moving nodes. |
+| **Mini-map** | Show or hide an overview for large graphs. |
+| **Export Image** | Download a diagram image. This is not an importable workflow configuration or execution recording. |
+| **Save — disk** | Write the workflow to the server. Wait for confirmation. |
+| **Activate / Deactivate — toggle** | Change the enabled state of a saved workflow. Unavailable before the first save; review any unsaved-change prompt. |
+| **Hide toolbar — down arrow** | Hide it. Use the remaining up arrow to restore it. |
+
+The current toolbar does not expose a separate Logs or Save as Template button. Open [Workflow Logs](../workflow-logs.md) from the document. Workflow List configuration import/export is separate from Export Image.
+
+## Navigate and select
+
+- Drag the blank background to pan; use wheel, pinch or zoom buttons to change scale.
+- Drag a node to move it. Connections remain attached.
+- Click a node to highlight incoming and outgoing paths; unrelated nodes dim.
+- **Shift + drag** selects an area. **Cmd/Ctrl + click** adds/removes a node from the selection.
+- Right-click the background for Add. The node context menu offers editing actions for the selection.
+
+Connectivity highlighting is different from [execution evidence](../workflow-logs.md).
+
+## Edit nodes and notes
+
+Copy, paste or duplicate a selection to reuse a configured section, then check its fields and connections. Review the selection before deleting: removing a node also removes its connections and can disconnect a downstream path. Undo/redo corrects canvas edits.
+
+Use **Note** to explain a decision, owner or configuration context. Edit its text and use the available color and size controls to keep it readable. Notes are annotations, not execution steps or logs.
 
 ## Keyboard shortcuts
 
-Press <kbd>?</kbd> on the canvas to open the shortcuts and help dialog at any time.
+Use **Cmd** on macOS and **Ctrl** on Windows/Linux. Finish typing in an input before using canvas-editing shortcuts. **?** opens the application's current reference.
 
-<figure><img src="../../../.gitbook/assets/workflow_advanced_shortcuts.png" alt="Keyboard shortcuts and help dialog"><figcaption><p>The keyboard shortcuts and help dialog — shortcuts, execution-path highlighting and connection colours.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/advanced_workflows_help_en.png" alt="Help dialog showing the keyboard shortcut reference"><figcaption><p>Built-in help provides the current editing shortcuts. Scroll to the connection legend or select Card setup for field-name guidance.</p></figcaption></figure>
 
 | Shortcut | Action |
-|---|---|
-| <kbd>Cmd/Ctrl</kbd> + <kbd>S</kbd> | Save workflow |
-| <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> | Validate workflow |
-| <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd> | Test workflow |
-| <kbd>Cmd/Ctrl</kbd> + <kbd>Z</kbd> / <kbd>Shift</kbd> + <kbd>Z</kbd> | Undo / Redo |
-| <kbd>Cmd/Ctrl</kbd> + <kbd>C</kbd> / <kbd>V</kbd> / <kbd>D</kbd> | Copy / Paste / Duplicate selected nodes |
-| <kbd>Cmd/Ctrl</kbd> + <kbd>A</kbd> | Select all nodes |
-| <kbd>Shift</kbd> + Drag | Select nodes (drag) |
-| <kbd>Cmd/Ctrl</kbd> + Left-click | Add/remove node from selection |
-| Right-click | Add node menu |
-| <kbd>Del</kbd> | Delete selected node |
-| <kbd>?</kbd> | Show this help |
+| --- | --- |
+| **Cmd/Ctrl + S** | Save to server. |
+| **Cmd/Ctrl + Shift + V** | Validate. |
+| **Cmd/Ctrl + Shift + T** | Open testing. |
+| **Cmd/Ctrl + Z** | Undo. |
+| **Cmd/Ctrl + Shift + Z** | Redo. |
+| **Cmd/Ctrl + C / V / D** | Copy / paste / duplicate selected nodes. |
+| **Cmd/Ctrl + A** | Select all nodes. |
+| **Shift + drag** | Area selection. |
+| **Cmd/Ctrl + left-click** | Add/remove one node from selection. |
+| **Right-click** | Open context menu. |
+| **Delete** | Delete selection. |
+| **?** | Open help. |
 
-## Next steps
-
-- Build the flow with [Nodes](nodes.md) and [Variables](variables.md).
+Before leaving, [validate, test and save](validation-and-testing.md). A local draft and an exported image do not replace a saved workflow.

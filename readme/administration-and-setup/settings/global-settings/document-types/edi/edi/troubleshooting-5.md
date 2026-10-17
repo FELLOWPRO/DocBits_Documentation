@@ -35,3 +35,7 @@ hidden: true
 * Use resources such as forums, training, or support from EDI providers for additional assistance with troubleshooting.
 
 By systematically applying these tips, you can effectively troubleshoot EDI transactions and ensure the reliability of your electronic business communications.
+
+## Effectieve regels en activering
+
+Als een elektronische creditnota als Invoice verschijnt, volg dan de [handleiding voor het oplossen van classificatieproblemen](../credit-note-recognized-as-invoice.md). Deze behandelt de effectieve aangepaste of standaardbron, typecodes, Extraction Paths en veilige activering.

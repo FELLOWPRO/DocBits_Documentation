@@ -139,3 +139,7 @@ Een poging om naar `00000000-0000-0000-0000-000000000000` te schrijven geeft als
   "detail": "Writing to the default org is forbidden via MCP. Default rules are immutable and shared across all customers."
 }
 ```
+
+## Effectieve regels en activering
+
+Als een elektronische creditnota als Invoice verschijnt, volg dan de [handleiding voor het oplossen van classificatieproblemen](../../administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md). Deze behandelt de effectieve aangepaste of standaardbron, typecodes, Extraction Paths en veilige activering.

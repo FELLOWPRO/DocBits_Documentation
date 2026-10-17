@@ -35,3 +35,7 @@ Dit geldt alleen voor documenten die als **creditnota** zijn geïdentificeerd. G
 
 * **Laat ingeschakeld** als uw boekhoud- of ERP-systeem verwacht dat creditnota's met negatieve bedragen binnenkomen (dit is de meest voorkomende opzet).
 * **Schakel uit** alleen als uw downstream-systeem het teken al zelf afhandelt of verwacht dat bedragen van creditnota's positief blijven.
+
+## Verkeerd documenttype?
+
+Deze instelling is afhankelijk van een correcte classificatie van creditnota's. Als een eDoc als Invoice wordt opgeslagen, controleer dan eerst de transformatie, Extraction Paths en latere scripts. Volg de [handleiding voor het oplossen van classificatieproblemen](../../global-settings/document-types/edi/credit-note-recognized-as-invoice.md) voordat u tekens van bedragen wijzigt of bestaande documenten opnieuw start.

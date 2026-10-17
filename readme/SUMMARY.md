@@ -248,6 +248,7 @@
         * [Best Practices](administration-and-setup/settings/global-settings/document-types/script/best-practices-5.md)
         * [Troubleshooting](administration-and-setup/settings/global-settings/document-types/script/troubleshooting-4.md)
       * [e-docs](administration-and-setup/settings/global-settings/document-types/edi/README.md)
+        * [Elektronische creditnota wordt herkend als factuur](administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md)
         * [Currently Supported E-Invoice Standards](administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md)
           * [Roadmap](administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/roadmap.md)
         * [E-Invoice examples](administration-and-setup/settings/global-settings/document-types/edi/e-invoice-examples/README.md)

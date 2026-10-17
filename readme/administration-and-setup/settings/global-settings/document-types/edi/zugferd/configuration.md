@@ -72,3 +72,7 @@ De **Extraction Paths Configuration** wordt gebruikt om gegevens te extraheren e
 7. Klik op **Save**.
 
 Door deze stappen te volgen, zorgt u voor nauwkeurige gegevensextractie en -validatie voor ZUGFeRD-facturen.
+
+## Effectieve regels en activering
+
+Organisatiespecifieke regels hebben voorrang op de standaardregels voor het gedetecteerde eDoc-formaat. Controleer de actieve TRANSFORMATION en controleer welke node invoice_type levert in de getransformeerde XML; het pad hangt af van het formaat. Save slaat een concept op; gebruik na het testen het vinkje om het te activeren. Een weergegeven Preview bewijst niet wat het opgeslagen documenttype is. Raadpleeg de [handleiding voor het oplossen van classificatieproblemen](../credit-note-recognized-as-invoice.md) voor codes 381/261, latere scripts en voorzorgsmaatregelen bij opnieuw verwerken.

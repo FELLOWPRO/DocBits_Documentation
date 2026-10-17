@@ -1,19 +1,11 @@
-# État du document
+# Statut des documents
 
-Si vous utilisez le logiciel DocBits pour le traitement de documents, il est essentiel de comprendre les différents états de document que vos fichiers peuvent avoir. Voici une liste complète de tous les états de document possibles dans DocBits :
+Les statuts de traitement indiquent des étapes telles que l’OCR, la classification ou l’export. **Prêt pour validation** signifie que le document peut être vérifié. Les statuts d’approbation indiquent une approbation en attente. **Terminé** indique que le traitement est achevé. Cliquez sur le statut **Erreur** pour consulter les détails disponibles.
 
-* WatchDog Start : Le module Watchdog démarre.
-* WatchDog Split : Le document est en train d'être divisé dans Watchdog.
-* WatchDog Upload : Le document est en cours de téléchargement dans Watchdog.
-* Upload : Le document est en cours de téléchargement.
-* OCR : La reconnaissance optique de caractères (OCR) est en cours d'exécution sur le document.
-* Classification : Le document est en cours de classification.
-* Importation Zugferd : Un document Zugferd est en cours d'importation.
-* Prêt pour validation : Le document est prêt pour la validation.
-* Exportation Zugferd : Un document Zugferd est en cours d'exportation.
-* Workflow : Un flux de travail est actuellement en cours avec ce document.
-* Approbation en attente : Le document doit être approuvé.
-* Deuxième approbation en attente : Le document doit être approuvé une deuxième fois.
-* Comptabilité automatique : La comptabilité automatique est en cours d'exécution.
-* Exportation : Le document est en cours d'exportation.
-* Erreur : Une erreur s'est produite dans le document.
+Si des durées de traitement sont disponibles, survolez un statut pour voir les phases et leur durée. Une icône de doublon apparaît pour les documents ayant des doublons possibles ; ouvrez-la pour comparer les documents associés.
+
+Ouvrez une ligne pour travailler dans l’écran de validation. Le menu d’actions propose les opérations autorisées : attribution, téléchargement, historique ou redémarrage du traitement. Les variantes de téléchargement dépendent du document et peuvent inclure des annotations ou des formats de facture électronique.
+
+Cochez plusieurs documents et ouvrez le menu de l’en-tête pour les actions groupées autorisées : attribution, fusion, redémarrage, relance d’export ou suppression. Vérifiez la sélection et chaque confirmation. Ces actions peuvent modifier les documents ; enregistrer une vue change uniquement la présentation de la liste.
+
+Le [guide du tableau de bord](README.md) présente la recherche, les actions et les vues enregistrées.

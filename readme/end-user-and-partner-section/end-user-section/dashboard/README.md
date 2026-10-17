@@ -17,7 +17,7 @@ Les commandes disponibles dépendent de vos autorisations, du statut du document
 1. Vérifiez l’organisation active et, si disponible, la sous-organisation.
 2. Choisissez un type de document ou conservez **Tous**.
 3. Utilisez la recherche et les filtres.
-4. Consultez **Statut** et **Attribué à**, puis ouvrez la ligne du document pour le traiter.
+4. Consultez **Statut** et **Assigné à**, puis ouvrez la ligne du document pour le traiter.
 5. Actualisez la liste après le traitement ou l’importation de documents.
 
 ## Rechercher et filtrer les documents
@@ -28,11 +28,15 @@ La recherche propose des filtres structurés, une vue de requête directe et une
 
 Lorsque la recherche plein texte est activée, le menu de contenu contrôle les recherches en texte simple : le mode automatique recherche d’abord dans les champs métier, puis dans le contenu si les champs ne donnent aucun résultat ; l’inclusion du contenu ajoute ses résultats ; le mode champs uniquement exclut le contenu. Un indicateur signale les résultats provenant du contenu. Un `+` après le nombre de résultats indique une fenêtre limitée : affinez la recherche.
 
+Si le sélecteur de dates séparé est affiché, choisissez une période d’import prédéfinie ou personnalisée. Il est masqué avec la recherche plein texte ; utilisez alors les champs de date de la barre de recherche.
+
 <figure><img src="../../../.gitbook/assets/dashboard-filters-fr.png" alt="Filtrez par statut, personne assignée et nécessité de redémarrage."><figcaption><p>Filtrez par statut, personne assignée et nécessité de redémarrage.</p></figcaption></figure>
 
 ## Lire et organiser le tableau
 
 Chaque ligne représente un document. Selon les colonnes configurées, elle indique son nom, son statut, son type, ses données de facture, son fournisseur, son responsable, ses dates et ses montants. Cliquez sur un en-tête triable pour modifier l’ordre. Faites défiler horizontalement pour voir d’autres colonnes et utilisez la pagination et le nombre de documents par page pour parcourir les résultats.
+
+Si le regroupement est disponible, sélectionnez un champ au-dessus du tableau. Pour les dates, choisissez le jour, la semaine ou le mois. Ouvrez un groupe pour voir ses documents, ou retirez le regroupement pour revenir à la liste normale.
 
 Le bouton **+** à côté des onglets permet d’afficher d’autres types de document. Réorganisez les onglets en les faisant glisser. Retirer un onglet modifie uniquement la vue et ne supprime aucun document.
 
@@ -43,6 +47,8 @@ Ouvrez l’engrenage, puis les paramètres des colonnes. Déplacez les colonnes 
 ## Comprendre les statuts et les actions
 
 Les statuts de traitement indiquent des étapes telles que l’OCR, la classification ou l’export. **Prêt pour validation** signifie que le document peut être vérifié. Les statuts d’approbation indiquent une approbation en attente. **Terminé** indique que le traitement est achevé. Cliquez sur le statut **Erreur** pour consulter les détails disponibles.
+
+Si des durées de traitement sont disponibles, survolez un statut pour voir les phases et leur durée. Une icône de doublon apparaît pour les documents ayant des doublons possibles ; ouvrez-la pour comparer les documents associés.
 
 Ouvrez une ligne pour travailler dans l’écran de validation. Le menu d’actions propose les opérations autorisées : attribution, téléchargement, historique ou redémarrage du traitement. Les variantes de téléchargement dépendent du document et peuvent inclure des annotations ou des formats de facture électronique.
 

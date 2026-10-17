@@ -2,7 +2,8 @@
 """Sync docs.docbits.com markdown pages into the fulltextsearch docs index
 (CORE-6111, Settings-Assistent doc search).
 
-Two modes:
+Four modes (diff/full ingest, plus purge and verify used by the manual
+"Docs Search Rebuild" workflow and the post-sync self test):
 
   diff --before SHA --after SHA --lang LANG
       Push mode. Diffs the two commits under readme/, POSTs changed pages
@@ -651,9 +652,65 @@ def run_full(lang: str, *, reconcile_only: bool, dry_run: bool) -> None:
     _call_endpoint("/docs/reconcile", {"lang": lang, "urls": urls}, dry_run=dry_run)
 
 
+# One real question per language and the page that must answer it. `verify`
+# asks the live search (hybrid kNN + BM25 + rerank through DigitalOcean
+# serverless) and fails the run when the page is missing from the top hits or
+# when the service had to fall back to BM25 only (= embedding/rerank broken).
+VERIFY_PAGE = "end-user-and-partner-section/end-user-section/ai-table"
+VERIFY_QUERIES = {
+    "main": "How do I read the AI table and what does each button do?",
+    "de": "Wie lese ich die KI-Tabelle und was macht jede Schaltfläche?",
+    "es": "¿Cómo leo la tabla AI y qué hace cada botón?",
+    "fr": "Comment lire le tableau IA et que fait chaque bouton ?",
+    "it": "Come leggo la tabella AI e cosa fa ogni pulsante?",
+    "nl": "Hoe lees ik de AI-tabel en wat doet elke knop?",
+    "pl": "Jak czytać tabelę AI i co robi każdy przycisk?",
+    "pt": "Como leio a tabela AI e o que faz cada botão?",
+}
+
+
+def purge_lang(lang: str, *, dry_run: bool) -> None:
+    """Drop one language's whole index (manual rebuild); the next ingest
+    re-creates it. Other languages are untouched."""
+    result = _call_endpoint("/docs/purge", {"lang": lang}, dry_run=dry_run)
+    print(f"purge lang={lang}: index_deleted={result.get('index_deleted')}")
+
+
+def verify_lang(lang: str, *, dry_run: bool) -> None:
+    query = VERIFY_QUERIES[lang]
+    result = _call_endpoint(
+        "/docs/search", {"query": query, "lang": lang, "k": 5}, dry_run=dry_run
+    )
+    if dry_run:
+        return
+    hits = result.get("hits", [])
+    urls = [hit.get("url", "") for hit in hits]
+    print(f"verify lang={lang}: {len(hits)} hits for {query!r}")
+    for hit in hits:
+        print(f"  {hit.get('score', 0):.3f} {hit.get('url')}")
+    problems = []
+    if not hits:
+        problems.append("no hits (index empty or language not indexed)")
+    if result.get("fallback_bm25_only"):
+        problems.append(
+            "fallback_bm25_only=true: DigitalOcean embedding/rerank was not used"
+        )
+    expected_prefix = full_url(VERIFY_PAGE, lang)
+    if hits and not any(url.startswith(expected_prefix) for url in urls):
+        problems.append(f"expected page {expected_prefix} not in the top 5")
+    wrong_lang = [u for u in urls if not u.startswith(full_url("", lang))]
+    if wrong_lang:
+        problems.append(f"hits outside the {lang} language space: {wrong_lang[:2]}")
+    if problems:
+        for problem in problems:
+            print(f"::error::verify lang={lang}: {problem}", file=sys.stderr)
+        sys.exit(1)
+    print(f"verify lang={lang}: OK")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("mode", choices=["diff", "full"])
+    parser.add_argument("mode", choices=["diff", "full", "purge", "verify"])
     parser.add_argument("--lang", required=True)
     parser.add_argument("--before")
     parser.add_argument("--after")
@@ -675,6 +732,12 @@ def main() -> None:
         )
         sys.exit(1)
 
+    if args.mode == "purge":
+        purge_lang(args.lang, dry_run=args.dry_run)
+        return
+    if args.mode == "verify":
+        verify_lang(args.lang, dry_run=args.dry_run)
+        return
     if args.mode == "diff":
         if not args.before or not args.after:
             parser.error("diff mode requires --before and --after")

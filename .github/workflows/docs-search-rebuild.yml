@@ -1,0 +1,84 @@
+name: Docs Search Rebuild
+
+# Manual: refresh or fully rebuild the docs search index (one language or all).
+#
+#   refresh  full ingest + reconcile (hash-skip: unchanged pages are not
+#            re-embedded, removed pages are deleted). Safe, cheap, default.
+#   rebuild  drops the language's whole OpenSearch index first (POST
+#            /docs/purge), then ingests every page again (re-embeds all).
+#            The language has no search results for a few minutes meanwhile.
+#
+# Both finish with the self test (one real question per language must find
+# its page through the live hybrid search). Shares the concurrency group with
+# Docs Search Sync, so runs queue instead of racing each other's index writes.
+# Targets whatever DOCS_INGEST_URL points to (secrets of this repo).
+
+on:
+  workflow_dispatch:
+    inputs:
+      lang:
+        description: "Language to process"
+        type: choice
+        default: all
+        options: [all, main, de, es, fr, it, nl, pl, pt]
+      mode:
+        description: "refresh = ingest + reconcile, rebuild = purge the language index first"
+        type: choice
+        default: refresh
+        options: [refresh, rebuild]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-search-sync
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { lang: main, root: readme }
+          - { lang: de, root: deutsch }
+          - { lang: es, root: espanol }
+          - { lang: fr, root: french }
+          - { lang: it, root: italian }
+          - { lang: nl, root: dutch }
+          - { lang: pl, root: polish }
+          - { lang: pt, root: portuguese }
+    steps:
+      - uses: actions/checkout@v4
+        if: inputs.lang == 'all' || inputs.lang == matrix.lang
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Purge index (rebuild only)
+        if: (inputs.lang == 'all' || inputs.lang == matrix.lang) && inputs.mode == 'rebuild'
+        env:
+          DOCS_INGEST_URL: ${{ secrets.DOCS_INGEST_URL }}
+          DOCS_INGEST_KEY: ${{ secrets.DOCS_INGEST_KEY }}
+          SYNC_LANG: ${{ matrix.lang }}
+          DOCS_ROOT: ${{ matrix.root }}
+        run: python3 .github/scripts/docs_search_sync.py purge --lang "$SYNC_LANG"
+
+      - name: Full ingest + reconcile
+        if: inputs.lang == 'all' || inputs.lang == matrix.lang
+        env:
+          DOCS_INGEST_URL: ${{ secrets.DOCS_INGEST_URL }}
+          DOCS_INGEST_KEY: ${{ secrets.DOCS_INGEST_KEY }}
+          SYNC_LANG: ${{ matrix.lang }}
+          DOCS_ROOT: ${{ matrix.root }}
+        run: python3 .github/scripts/docs_search_sync.py full --lang "$SYNC_LANG"
+
+      - name: Verify search
+        if: inputs.lang == 'all' || inputs.lang == matrix.lang
+        env:
+          DOCS_INGEST_URL: ${{ secrets.DOCS_INGEST_URL }}
+          DOCS_INGEST_KEY: ${{ secrets.DOCS_INGEST_KEY }}
+          SYNC_LANG: ${{ matrix.lang }}
+          DOCS_ROOT: ${{ matrix.root }}
+        run: python3 .github/scripts/docs_search_sync.py verify --lang "$SYNC_LANG"

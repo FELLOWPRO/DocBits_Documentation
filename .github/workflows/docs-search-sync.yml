@@ -109,3 +109,16 @@ jobs:
         run: |
           python3 .github/scripts/docs_search_sync.py full \
             --lang "$SYNC_LANG"
+
+      # Self test: one real question per language must find its page through
+      # the live hybrid search (kNN + BM25 + DigitalOcean rerank). Fails when
+      # the language index is empty, hits are outside the language space, or
+      # the service fell back to BM25 only (embedding/rerank not working).
+      - name: Verify search
+        env:
+          DOCS_INGEST_URL: ${{ secrets.DOCS_INGEST_URL }}
+          DOCS_INGEST_KEY: ${{ secrets.DOCS_INGEST_KEY }}
+          SYNC_LANG: ${{ matrix.lang }}
+          DOCS_ROOT: ${{ matrix.root }}
+        run: |
+          python3 .github/scripts/docs_search_sync.py verify --lang "$SYNC_LANG"

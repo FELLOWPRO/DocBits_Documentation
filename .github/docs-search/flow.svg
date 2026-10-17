@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Docs change to vector index to assistant answer">
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0L10 4L0 8z" fill="#1f7fa5"/></marker></defs>
+<rect width="1100" height="560" fill="#ffffff"/>
+<text x="30" y="40" font-size="22" font-weight="700" fill="#0f2a36">Docs search: how a docs change becomes an assistant answer</text>
+<text x="30" y="64" font-size="14" fill="#52707e">One index per language (docbits-docs-{env}-{lang}). Text and vector live together in OpenSearch.</text>
+<text x="30" y="108" font-size="15" font-weight="700" fill="#1f7fa5">1  WRITE: every docs change</text>
+<g font-size="14" fill="#0f2a36">
+<rect x="30" y="122" width="190" height="86" rx="10" fill="#e1f1f8" stroke="#1f7fa5"/><text x="125" y="156" text-anchor="middle" font-weight="700">Docs repo (main)</text><text x="125" y="178" text-anchor="middle">readme/ + deutsch/ espanol/</text><text x="125" y="196" text-anchor="middle">french/ italian/ ... folders</text>
+<rect x="290" y="122" width="210" height="86" rx="10" fill="#e1f1f8" stroke="#1f7fa5"/><text x="395" y="156" text-anchor="middle" font-weight="700">GitHub Action</text><text x="395" y="178" text-anchor="middle">Docs Search Sync (push, nightly,</text><text x="395" y="196" text-anchor="middle">after language bridge)</text>
+<rect x="570" y="122" width="230" height="86" rx="10" fill="#e1f1f8" stroke="#1f7fa5"/><text x="685" y="156" text-anchor="middle" font-weight="700">fulltextsearch /docs/ingest</text><text x="685" y="178" text-anchor="middle">cut into sections by heading,</text><text x="685" y="196" text-anchor="middle">skip unchanged (hash)</text>
+<rect x="870" y="122" width="200" height="86" rx="10" fill="#e3f5ea" stroke="#1c7a45"/><text x="970" y="150" text-anchor="middle" font-weight="700">DigitalOcean serverless</text><text x="970" y="172" text-anchor="middle">embedding model bge-m3</text><text x="970" y="192" text-anchor="middle">text to vector (1024)</text>
+</g>
+<g stroke="#1f7fa5" stroke-width="2.5" fill="none" marker-end="url(#a)"><path d="M220 165H286"/><path d="M500 165H566"/><path d="M800 165H866"/><path d="M970 208V262"/></g>
+<g font-size="14" fill="#0f2a36">
+<rect x="770" y="266" width="300" height="130" rx="10" fill="#fff3dd" stroke="#8a5a00"/><text x="920" y="296" text-anchor="middle" font-weight="700">OpenSearch (prod, one index)</text>
+<text x="920" y="322" text-anchor="middle">docbits-docs-{env}-main</text><text x="920" y="342" text-anchor="middle">docbits-docs-{env}-de  -es  -fr</text><text x="920" y="362" text-anchor="middle">-it  -nl  -pl  -pt</text><text x="920" y="384" text-anchor="middle" fill="#52707e">languages stay separate</text>
+</g>
+<text x="30" y="336" font-size="15" font-weight="700" fill="#1f7fa5">2  READ: every assistant question</text>
+<g font-size="14" fill="#0f2a36">
+<rect x="30" y="350" width="190" height="86" rx="10" fill="#e1f1f8" stroke="#1f7fa5"/><text x="125" y="384" text-anchor="middle" font-weight="700">Assistant chat</text><text x="125" y="406" text-anchor="middle">question in the UI language</text>
+<rect x="290" y="350" width="210" height="86" rx="10" fill="#e1f1f8" stroke="#1f7fa5"/><text x="395" y="384" text-anchor="middle" font-weight="700">doc2-api search_docs</text><text x="395" y="406" text-anchor="middle">picks the language index</text>
+<rect x="540" y="350" width="200" height="86" rx="10" fill="#e1f1f8" stroke="#1f7fa5"/><text x="640" y="378" text-anchor="middle" font-weight="700">/docs/search</text><text x="640" y="398" text-anchor="middle">keyword + vector, then</text><text x="640" y="418" text-anchor="middle">rerank (bge-reranker)</text>
+<rect x="290" y="468" width="450" height="64" rx="10" fill="#e3f5ea" stroke="#1c7a45"/><text x="515" y="494" text-anchor="middle" font-weight="700">Luna answers only from the best sections</text><text x="515" y="516" text-anchor="middle">with page link, video link, or "nothing in the docs"</text>
+</g>
+<g stroke="#1f7fa5" stroke-width="2.5" fill="none" marker-end="url(#a)"><path d="M220 393H286"/><path d="M500 393H536"/><path d="M740 393H766"/><path d="M640 436V440H515V464"/></g>
+<text x="30" y="548" font-size="12" fill="#52707e">Manual: Actions > Docs Search Rebuild (refresh or rebuild, one language or all). Self test runs after every sync.</text>
+</svg>

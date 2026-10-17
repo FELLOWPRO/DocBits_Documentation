@@ -1,19 +1,11 @@
-# Estado del Documento
+# Estado del documento
 
-Si estás utilizando el software DocBits para el procesamiento de documentos, es esencial comprender los diferentes estados que tus archivos pueden tener. Aquí tienes una lista completa de todos los posibles estados de documento en DocBits:
+Los estados de procesamiento indican pasos como OCR, clasificación o exportación. **Listo para la validación** significa que puede revisar el documento. Los estados de aprobación indican una aprobación pendiente. **Exportado** indica que la exportación del documento terminó. Pulse el estado **Error** para consultar los detalles disponibles.
 
-* WatchDog Start: El módulo Watchdog se está iniciando.
-* WatchDog Split: El documento se está dividiendo en Watchdog.
-* WatchDog Upload: El documento se está subiendo en Watchdog.
-* Upload: El documento se está subiendo.
-* OCR: El Reconocimiento Óptico de Caracteres (OCR) se está ejecutando actualmente en el documento.
-* Clasificación: El documento se está clasificando.
-* Importación de Zugferd: Se está importando un documento Zugferd.
-* Listo para Validación: El documento está listo para validación.
-* Exportación de Zugferd: Se está exportando un documento Zugferd.
-* Flujo de Trabajo: Un flujo de trabajo se está ejecutando actualmente con este documento.
-* Pendiente de Aprobación: El documento necesita ser aprobado.
-* Pendiente de Segunda Aprobación: El documento necesita ser aprobado por segunda vez.
-* Contabilidad Automática: La contabilidad automática se está ejecutando.
-* Exportación: El documento se está exportando.
-* Error: Se produjo un error en el documento.
+Si hay tiempos de procesamiento, sitúe el puntero sobre el estado para ver las fases y su duración. Los documentos con posibles duplicados muestran un icono de duplicado; ábralo para comparar los documentos relacionados.
+
+Abra la fila para trabajar en la pantalla de validación. El menú de acciones ofrece las operaciones permitidas, como asignar, descargar, consultar el historial o reiniciar el procesamiento. Las variantes de descarga dependen del documento y pueden incluir anotaciones o formatos de factura electrónica.
+
+Marque varios documentos y abra el menú de la cabecera para las acciones masivas permitidas, como asignar, fusionar, reiniciar, reiniciar la exportación o eliminar. Compruebe la selección y cada confirmación. Estas acciones pueden modificar documentos; guardar una vista solo cambia la presentación de la lista.
+
+Consulte búsqueda, acciones y vistas guardadas en la [guía del panel](README.md).

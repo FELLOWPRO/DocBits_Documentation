@@ -1,6 +1,6 @@
 # Einstellungen
 
-<figure><img src="../../.gitbook/assets/settings_overview.png" alt="Übersicht der Einstellungen"><figcaption><p>Übersichtsseite der Einstellungen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings_overview-de.png" alt="Übersicht der Einstellungen"><figcaption><p>Übersichtsseite der Einstellungen</p></figcaption></figure>
 
 Der Bereich „Settings“ ist Ihre zentrale Anlaufstelle für die Konfiguration von DocBits. Er ist in fünf Hauptbereiche gegliedert:
 

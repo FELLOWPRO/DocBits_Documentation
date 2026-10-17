@@ -16,13 +16,13 @@ Start with the narrated introduction to creating and editing an Advanced Workflo
 {% tab title="English" %}
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v1/en.mp4" %}
 
-[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v1/en.vtt) · [Read the transcript](videos.md#1-builder-and-canvas)
+[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v1/en.vtt) · [Read the transcript](videos.md#builder-and-canvas)
 {% endtab %}
 
 {% tab title="Deutsch" %}
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v1/de.mp4" %}
 
-[Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v1/de.vtt) · [Transkript lesen](videos.md#1-builder-and-canvas)
+[Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v1/de.vtt) · [Transkript lesen](videos.md#builder-and-canvas)
 {% endtab %}
 {% endtabs %}
 

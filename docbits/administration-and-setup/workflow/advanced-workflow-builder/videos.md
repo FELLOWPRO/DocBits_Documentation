@@ -10,15 +10,15 @@ The videos use labelled teaching diagrams. For application screenshots and compl
 
 Caption files are available in WebVTT format below each video. Open the expandable transcript to read the explanation without playing the video.
 
-| Chapter | What you will learn | English | Deutsch |
-| --- | --- | --- | --- |
-| [1. Builder and canvas](#1-builder-and-canvas) | Choose the builder, open the designer, add and configure cards, navigate and edit the graph, then finish the design. | 1:48 | 1:58 |
-| [2. Nodes and routes](#2-nodes-and-routes) | Understand node roles, connect success, false-condition and error outputs, build alternatives, use Wait ALL, Wait ANY and OR, and avoid invalid connections. | 1:42 | 1:56 |
-| [3. Variables, tests and activation](#3-variables-tests-and-activation) | Choose variable types and understand organization scope, validate the graph, select the test context, inspect results, save and check activation. | 1:54 | 1:52 |
-| [4. Find the relevant execution](#4-find-the-relevant-execution) | Open logs for a document, read counters and execution rows, filter results, check dates and pagination, and understand empty or special log states. | 1:52 | 1:59 |
-| [5. Trace nodes and diagnose](#5-trace-nodes-and-diagnose) | Expand an advanced execution, select nodes, distinguish false conditions, errors and skipped nodes, inspect merge results, then correct, test and verify the workflow. | 1:43 | 1:55 |
+| Chapter | English | Deutsch |
+| --- | --- | --- |
+| [1. Builder and canvas](#builder-and-canvas) | 1:48 | 1:58 |
+| [2. Nodes and routes](#nodes-and-routes) | 1:42 | 1:56 |
+| [3. Variables, tests and activation](#variables-tests-and-activation) | 1:54 | 1:52 |
+| [4. Find the relevant execution](#find-the-relevant-execution) | 1:52 | 1:59 |
+| [5. Trace nodes and diagnose](#trace-nodes-and-diagnose) | 1:43 | 1:55 |
 
-## 1. Builder and canvas
+## Builder and canvas
 
 Choose the builder, open the designer, add and configure cards, navigate and edit the graph, then finish the design.
 
@@ -71,7 +71,7 @@ Geben Sie Namen und Beschreibung ein. Die Werkzeugleiste öffnet Variablen, Hilf
 
 {% endtabs %}
 
-## 2. Nodes and routes
+## Nodes and routes
 
 Understand node roles, connect success, false-condition and error outputs, build alternatives, use Wait ALL, Wait ANY and OR, and avoid invalid connections.
 
@@ -124,7 +124,7 @@ Verarbeitungsknoten müssen von einem Einstieg erreichbar sein. Vermeiden Sie Sc
 
 {% endtabs %}
 
-## 3. Variables, tests and activation
+## Variables, tests and activation
 
 Choose variable types and understand organization scope, validate the graph, select the test context, inspect results, save and check activation.
 
@@ -177,7 +177,7 @@ Auto-Save sichert Änderungen etwa alle dreißig Sekunden als lokalen Browserent
 
 {% endtabs %}
 
-## 4. Find the relevant execution
+## Find the relevant execution
 
 Open logs for a document, read counters and execution rows, filter results, check dates and pagination, and understand empty or special log states.
 
@@ -230,7 +230,7 @@ Ein Hinweis und ein Sperrsymbol zeigen das Ausführungslimit des Dokuments. Prü
 
 {% endtabs %}
 
-## 5. Trace nodes and diagnose
+## Trace nodes and diagnose
 
 Expand an advanced execution, select nodes, distinguish false conditions, errors and skipped nodes, inspect merge results, then correct, test and verify the workflow.
 

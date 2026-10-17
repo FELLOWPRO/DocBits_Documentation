@@ -28,11 +28,15 @@ Die Suchleiste bietet außerdem strukturierte Suchchips, eine Ansicht für die d
 
 Bei aktivierter Volltextsuche steuert das Menü zur Inhaltssuche die Suche nach einfachem Text: Der automatische Modus durchsucht zuerst Geschäftsfelder und bei fehlenden Treffern den Dokumentinhalt. Der Modus zum Einbeziehen von Dokumentinhalten berücksichtigt auch Inhaltstreffer; der Modus nur für Felder beschränkt die Suche auf Felder. Ein Hinweis kennzeichnet Ergebnisse aus dem Dokumentinhalt. Ein `+` hinter der Trefferzahl zeigt ein begrenztes Ergebnisfenster an. Grenzen Sie die Suche dann weiter ein.
 
+Wenn die separate Datumsbereichsauswahl angezeigt wird, wählen Sie einen vordefinierten oder eigenen Importzeitraum. Bei aktivierter Volltextsuche ist sie ausgeblendet; verwenden Sie stattdessen die verfügbaren Datumsfelder im Suchfeld.
+
 <figure><img src="../../../.gitbook/assets/dashboard-filters-de.png" alt="Dokumente nach Status, zuständiger Person und erforderlichem Neustart filtern."><figcaption><p>Dokumente nach Status, zuständiger Person und erforderlichem Neustart filtern.</p></figcaption></figure>
 
 ## Die Dokumenttabelle lesen und anpassen
 
 Jede Zeile steht für ein Dokument. Je nach Spaltenkonfiguration sehen Sie Name, Status, Dokumenttyp, Rechnungsdaten, Lieferant, zuständige Person, Datumswerte und Beträge. Klicken Sie auf eine sortierbare Spaltenüberschrift, um die Reihenfolge zu ändern. Weitere Spalten erreichen Sie durch horizontales Scrollen. Mit der Seitennavigation und der Anzahl der Dokumente pro Seite wechseln Sie durch die Ergebnisse.
+
+Wenn die Gruppierung verfügbar ist, wählen Sie oberhalb der Tabelle ein Gruppierungsfeld. Bei Datumsfeldern wählen Sie Tag, Woche oder Monat. Öffnen Sie eine Gruppe, um ihre Dokumente zu sehen, oder entfernen Sie die Gruppierung für die normale Dokumentliste.
 
 Über **+** neben den Dokumenttyp-Reitern blenden Sie weitere Reiter ein. Ziehen Sie Reiter in die gewünschte Reihenfolge. Das Entfernen eines Reiters ändert nur die Ansicht und löscht keine Dokumente.
 
@@ -43,6 +47,8 @@ Jede Zeile steht für ein Dokument. Je nach Spaltenkonfiguration sehen Sie Name,
 ## Status und Dokumentaktionen verstehen
 
 Verarbeitungsstatus zeigen Schritte wie OCR, Klassifizierung oder Export an. **Bereit zur Validierung** bedeutet, dass Sie das Dokument prüfen können. Freigabestatus zeigen einen ausstehenden Genehmigungsschritt an. **Abgeschlossen** kennzeichnet die abgeschlossene Verarbeitung. Klicken Sie bei **Fehler** auf den Fehlerstatus, um verfügbare Fehlerdetails zu öffnen.
+
+Wenn Verarbeitungszeiten vorliegen, bewegen Sie den Mauszeiger über den Status, um Phasen und Dauer zu sehen. Bei möglichen Duplikaten erscheint ein Duplikatsymbol; öffnen Sie es, um die zugehörigen Dokumente zu vergleichen.
 
 Öffnen Sie eine Dokumentzeile, um in der Validierungsansicht zu arbeiten. Im Aktionsmenü der Zeile finden Sie die für das Dokument erlaubten Vorgänge, etwa Zuweisen, Herunterladen, Verlauf oder Neustart der Verarbeitung. Verfügbare Downloadvarianten hängen vom Dokument ab und können Anmerkungen oder elektronische Rechnungsformate enthalten.
 

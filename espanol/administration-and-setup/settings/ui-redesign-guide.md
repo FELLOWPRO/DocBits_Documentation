@@ -35,7 +35,7 @@ Las páginas de configuración con muchas secciones (como Configuración Global 
 
 La mayoría de las páginas de configuración, diálogos y pantallas de herramientas ahora muestran un pequeño icono **?** en la cabecera.
 
-<figure><img src="../../.gitbook/assets/ui-redesign-help-icon.png" alt="Icono de ayuda en la cabecera de una página"><figcaption><p>El icono de ayuda abre la página de documentación correspondiente en una pestaña nueva.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ui-redesign-help-icon-es.png" alt="Icono de ayuda en la cabecera de una página"><figcaption><p>El icono de ayuda abre la página de documentación correspondiente en una pestaña nueva.</p></figcaption></figure>
 
 Al hacer clic se abre la página correspondiente en `docs.docbits.com` en una pestaña nueva — sin necesidad de buscar la página correcta en la documentación. El icono respeta el idioma de la interfaz y abre la documentación traducida cuando existe; de lo contrario, recurre al inglés.
 

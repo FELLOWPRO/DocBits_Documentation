@@ -46,7 +46,7 @@ Otwórz koło zębate i ustawienia kolumn. Przenoś kolumny między listą ukryt
 
 ## Statusy i działania na dokumentach
 
-Statusy przetwarzania wskazują etapy takie jak OCR, klasyfikacja i eksport. **Gotowy do walidacji** oznacza możliwość sprawdzenia dokumentu. Statusy zatwierdzania wskazują oczekiwanie na akceptację. **Zakończono** oznacza zakończenie przetwarzania. Kliknij status **Błąd**, aby zobaczyć dostępne szczegóły.
+Statusy przetwarzania wskazują etapy takie jak OCR, klasyfikacja i eksport. **Gotowy do walidacji** oznacza możliwość sprawdzenia dokumentu. Statusy zatwierdzania wskazują oczekiwanie na akceptację. **Eksportowano** oznacza zakończenie eksportu dokumentu. Kliknij status **Błąd**, aby zobaczyć dostępne szczegóły.
 
 Jeśli dostępne są czasy przetwarzania, najedź na status, aby zobaczyć etapy i czas ich trwania. Dokumenty z możliwymi duplikatami mają ikonę duplikatu; otwórz ją, aby porównać powiązane dokumenty.
 
@@ -75,3 +75,5 @@ Pozostałe narzędzia odświeżają listę, otwierają ustawienia zaawansowane, 
 Najpierw sprawdź organizację, aktywny widok, typ dokumentu, szukany tekst i filtry. Odśwież listę i sprawdź kolejne strony wyników. Jeśli funkcja nadal jest niedostępna, poproś administratora o sprawdzenie uprawnień i modułów.
 
 **Ctrl/Cmd + K** otwiera globalne szybkie wyszukiwanie; **Ctrl/Cmd + Q** odświeża pulpit; **Ctrl/Cmd + H** otwiera pomoc. Menu koła zębatego zawiera listę skrótów. Widoczny czasem licznik oczekujących dokumentów całej organizacji jest wskaźnikiem administracyjnym, a nie osobistym licznikiem zadań.
+
+Używaj Ctrl w Windows/Linux i Cmd w macOS. Skróty przeglądarki lub systemu mogą mieć pierwszeństwo.

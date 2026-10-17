@@ -4,6 +4,12 @@ description: URUGUAY E-NOTA CREDITO electronic document support in DocBits
 
 # 🇺🇾 URUGUAY E-NOTA CREDITO
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Uruguay](countries/uruguay.md). Credit-note entries lack dedicated extraction bundles in the inspected status. Confirm the CFE version and the effective invoice or credit-note mapping.
+{% endhint %}
+
 | Property             | Value                            |
 | -------------------- | -------------------------------- |
 | **Country / Region** | Uruguay                          |

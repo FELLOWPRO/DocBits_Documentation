@@ -1,0 +1,316 @@
+{
+  "title": "eDocs formats, versions and country guides",
+  "description": "Find the configured eDocs family, syntax, version and profile before testing document processing.",
+  "intro": "Start with the source document and the matching country guide. A country name alone does not identify a file format. A version label, XML syntax and a business profile describe different things.",
+  "evidence": "The tables record a development-catalogue check on 17 October 2026 and the corresponding processing code. They describe available rules and configuration components, not a certification of every file, legal requirement or production rollout. Your organization can override the defaults.",
+  "distinctions_title": "Read the support matrix correctly",
+  "distinctions": [
+    "Family: the electronic-document format, such as XRechnung, Factur-X, KSeF or CFDI.",
+    "Syntax: the actual payload, such as UBL XML, CII XML or a PDF with embedded XML. A PDF scan, JSON export or QR image is not an equivalent XML payload.",
+    "Version: the declared publication or schema release. A generic family label does not establish support for every release.",
+    "Profile: a business or data subset, such as BASIC, EN16931, EXTENDED or self-billing. A profile is not a publication version.",
+    "Rule and components: classification, Transformation, Preview and Extraction Paths are separate. A configured profile does not necessarily have its own classification rule.",
+    "Validation and transmission: rendering or extracting a file does not by itself verify all legal rules, signatures, tax clearance or network delivery."
+  ],
+  "workflow_title": "Check a format in your organization",
+  "workflow": [
+    "Keep the original XML or the PDF with its embedded XML. Read the namespace, schema or customization identifier and the declared version/profile.",
+    "Open Settings → Document Types → E-Doc for the applicable business document. Search for the exact electronic-document format shown in the guide.",
+    "Check the effective Default or Custom source and its active configuration version. Inspect Transformation, Preview and Extraction Paths. Saving a draft does not activate it.",
+    "Test representative source files for each syntax, version and business document you need. Verify key fields, amounts, tax, invoice/credit-note classification and the ERP export.",
+    "Confirm validation policy and transport separately. Preserve custom mappings and check approvals and export history before restarting existing documents."
+  ],
+  "country_title": "Country guides",
+  "country_column": "Country / region",
+  "variants_column": "Families and version scope",
+  "status_column": "Catalogue result",
+  "configured": "Entries found",
+  "unconfirmed": "Not confirmed",
+  "format_column": "Exact format label",
+  "doctype_column": "Rule document key",
+  "components_column": "Available components",
+  "component_note": "C = classification, T = Transformation, P = Preview, E = Extraction Paths. The document key is the rule/configuration lookup key; it does not guarantee the final stored invoice_type. A transformation can classify a credit note through an INVOICE mapping.",
+  "missing_note": "A dash means the status check did not report a dedicated component for this exact format/document key. It does not rule out a shared or fallback mapping. Verify the effective resolver and a representative file before relying on that path.",
+  "only_title": "Additional configuration labels",
+  "only_note": "These labels have configuration entries but no standalone classification rule in the inspected catalogue. A generic family or identity refinement may select a compatible path. Their presence alone does not prove automatic detection of that publication or profile.",
+  "no_rule": "No matching classification or configuration entry was found. Current built-in support is not confirmed by this check.",
+  "screen_title": "Find the mapping in DocBits",
+  "screen_caption": "Real development UI: the representative format and its available configuration components. Other versions are listed in the matrix.",
+  "screen_empty_caption": "Real development UI: searching this country name returned no matching configuration entry in the inspected catalogue.",
+  "video_title": "Country explainer",
+  "video_caption": "Localized narration and WebVTT captions explain format selection, configuration and acceptance checks.",
+  "back": "All countries and support scope",
+  "related": "Related format reference",
+  "country_intro": "Use this guide to identify the configured family and version scope before testing a source file.",
+  "scope_title": "Variants and version limits",
+  "matrix_title": "Inspected rule and component matrix",
+  "acceptance_title": "Acceptance checks",
+  "acceptance": "A component check confirms configuration presence. It is not an end-to-end processing test for every version. Test the exact payload and the invoice or credit-note path required by your integration.",
+  "identity_title": "Factur-X / ZUGFeRD: do not invent a publication version",
+  "identity": "A harmonized CII Guideline ID can identify a family and profile while sharing the same 1p0 marker across several releases. Factur-X XMP Version 1.0 is a schema marker, not a publication such as 1.08 or 1.09. ZUGFeRD XMP can declare its version. When authoritative metadata is absent, keep the generic family result and confirm the original file with the sender.",
+  "profiles": "MINIMUM and BASIC WL can omit line-item information needed downstream. BASIC, EN16931/COMFORT and EXTENDED offer different data coverage. A more extensive profile can carry fields that your extraction mapping does not use. Check required fields with actual examples.",
+  "index_link": "See the country guides for exact format labels, syntax, version limits and the inspected configuration state.",
+  "leaf_link": "Check the country guide for version limits, effective configuration and the country explainer.",
+  "narration_workflow": "Open E-Doc for the detected format. Compare Transformation, Preview and Extraction Paths. Custom rules take precedence. Saving a draft does not activate it.",
+  "narration_accept": "Test an invoice and a credit note where applicable. Verify amounts, parties and the exported document type. Parsing does not prove tax clearance or network delivery.",
+  "narration_unconfirmed": "No matching built-in entry was found in this catalogue. Ask support to verify the deployed mapping. Test a representative source file before rollout.",
+  "labels": {
+    "formats": "Formats and versions",
+    "workflow": "Check the effective configuration",
+    "source": "Source document",
+    "detect": "Matching format",
+    "transform": "Transformation",
+    "preview": "Preview",
+    "extract": "Extraction Paths",
+    "custom": "Custom overrides Default",
+    "accept": "Test the required document path",
+    "invoice": "Invoice",
+    "credit": "Credit note",
+    "fields": "Fields and amounts",
+    "export": "ERP export",
+    "limits": "Validation and delivery need separate checks",
+    "unconfirmed": "Support not confirmed"
+  },
+  "countries": {
+    "austria": {
+      "name": "Austria",
+      "scope": "ebInterface 4.3, 5.0, 6.0 and 6.1 have separate entries.",
+      "distinction": "Match the XML namespace to the configured version. A different namespace can require another mapping.",
+      "narration": "ebInterface 4.3, 5.0, 6.0 and 6.1 have separate entries. Match the XML namespace to the configured version. A different namespace can require another mapping."
+    },
+    "denmark": {
+      "name": "Denmark",
+      "scope": "OIOUBL 2.1 is the named Danish entry.",
+      "distinction": "OIOUBL and Peppol BIS are distinct profiles. UBL syntax alone does not identify the national profile.",
+      "narration": "OIOUBL 2.1 is the named Danish entry. OIOUBL and Peppol BIS are distinct profiles. UBL syntax alone does not identify the national profile."
+    },
+    "finland": {
+      "name": "Finland",
+      "scope": "Finvoice 1.3, 2.0, 2.01 and 3.0 have separate entries. TEAPPSXML is another family.",
+      "distinction": "Check the source version before choosing a mapping. The TEAPPSXML label does not state a release.",
+      "narration": "Finvoice 1.3, 2.0, 2.01 and 3.0 have separate entries. TEAPPSXML is another family. Check the source version before choosing a mapping. The TEAPPSXML label does not state a release."
+    },
+    "france": {
+      "name": "France",
+      "scope": "Factur-X has generic and release-specific entries, including 1.0.05, 1.08 and 1.09. VRBL FR CIUS 1.0 is separate.",
+      "distinction": "The XML marker 1p0 and Factur-X XMP Version 1.0 do not identify a publication release. Keep the generic label when the release is unknown.",
+      "narration": "Factur-X has generic and release-specific entries, including 1.0.05, 1.08 and 1.09. VRBL FR CIUS 1.0 is separate. The XML marker 1p0 and Factur-X XMP Version 1.0 do not identify a publication release. Keep the generic label when the release is unknown."
+    },
+    "germany": {
+      "name": "Germany",
+      "scope": "XRechnung has thirteen version labels from 1.0 to 3.0.2, each in CII and UBL. ZUGFeRD includes legacy profiles and 2.5 CII and UBL entries.",
+      "distinction": "Syntax, publication version and profile are different choices. Do not infer a Factur-X publication from the shared 1p0 marker.",
+      "narration": "XRechnung has thirteen version labels from 1.0 to 3.0.2, each in CII and UBL. ZUGFeRD includes legacy profiles and 2.5 CII and UBL entries. Syntax, publication version and profile are different choices. Do not infer a Factur-X publication from the shared 1p0 marker."
+    },
+    "italy": {
+      "name": "Italy",
+      "scope": "FatturaPA is the configured Italian family.",
+      "distinction": "The family label does not certify every FatturaPA release or transmission through SDI. Check the source schema and receiver requirements.",
+      "narration": "FatturaPA is the configured Italian family. The family label does not certify every FatturaPA release or transmission through SDI. Check the source schema and receiver requirements."
+    },
+    "netherlands": {
+      "name": "Netherlands",
+      "scope": "SI-UBL 2.0 has a dedicated entry.",
+      "distinction": "A UBL file is not automatically SI-UBL 2.0. Check its customization identifier and the matching national mapping.",
+      "narration": "SI-UBL 2.0 has a dedicated entry. A UBL file is not automatically SI-UBL 2.0. Check its customization identifier and the matching national mapping."
+    },
+    "norway": {
+      "name": "Norway",
+      "scope": "EHF Invoice 3.0 is listed alongside EHF Order, Order Response and Despatch Advice.",
+      "distinction": "Choose the mapping for the actual business document. An order or despatch advice is not an invoice.",
+      "narration": "EHF Invoice 3.0 is listed alongside EHF Order, Order Response and Despatch Advice. Choose the mapping for the actual business document. An order or despatch advice is not an invoice."
+    },
+    "poland": {
+      "name": "Poland",
+      "scope": "KSeF has generic, FA2 and FA3 entries.",
+      "distinction": "FA2 and FA3 use different structures. Confirm the source schema and test the appropriate mapping; parsing does not submit an invoice to KSeF.",
+      "narration": "KSeF has generic, FA2 and FA3 entries. FA2 and FA3 use different structures. Confirm the source schema and test the appropriate mapping; parsing does not submit an invoice to KSeF."
+    },
+    "slovenia": {
+      "name": "Slovenia",
+      "scope": "e-SLOG 1.6 and 2.0 have separate entries.",
+      "distinction": "The two versions have different XML structures. Match the source schema rather than selecting a rule from the filename.",
+      "narration": "e-SLOG 1.6 and 2.0 have separate entries. The two versions have different XML structures. Match the source schema rather than selecting a rule from the filename."
+    },
+    "spain": {
+      "name": "Spain",
+      "scope": "Facturae has generic, 3.2, 3.2.1 and 3.2.2 entries.",
+      "distinction": "Check the namespace and schema version. Extracting a signed XML file does not by itself verify its signature or its acceptance by FACe.",
+      "narration": "Facturae has generic, 3.2, 3.2.1 and 3.2.2 entries. Check the namespace and schema version. Extracting a signed XML file does not by itself verify its signature or its acceptance by FACe."
+    },
+    "sweden": {
+      "name": "Sweden",
+      "scope": "Svefaktura 1.0 is the named Swedish entry.",
+      "distinction": "Keep this legacy family distinct from Peppol BIS Billing 3.0. Check which profile the recipient expects.",
+      "narration": "Svefaktura 1.0 is the named Swedish entry. Keep this legacy family distinct from Peppol BIS Billing 3.0. Check which profile the recipient expects."
+    },
+    "australia": {
+      "name": "Australia",
+      "scope": "PINT A-NZ has invoice and credit-note rule entries shared with New Zealand.",
+      "distinction": "The active family label has no fixed PINT release number. Check customization and profile identifiers; network delivery is a separate integration.",
+      "narration": "PINT A-NZ has invoice and credit-note rule entries shared with New Zealand. The active family label has no fixed PINT release number. Check customization and profile identifiers; network delivery is a separate integration."
+    },
+    "new-zealand": {
+      "name": "New Zealand",
+      "scope": "PINT A-NZ has invoice and credit-note rule entries shared with Australia.",
+      "distinction": "The active family label has no fixed PINT release number. Check customization and profile identifiers; network delivery is a separate integration.",
+      "narration": "PINT A-NZ has invoice and credit-note rule entries shared with Australia. The active family label has no fixed PINT release number. Check customization and profile identifiers; network delivery is a separate integration."
+    },
+    "india": {
+      "name": "India",
+      "scope": "India GST E-Invoice and GST CreditNote have separate entries.",
+      "distinction": "The documented adapter processes SignedInvoice XML. Do not assume that raw IRP JSON, a QR image or a PDF scan follows the same extraction path.",
+      "narration": "India GST E-Invoice and GST CreditNote have separate entries. The documented adapter processes SignedInvoice XML. Do not assume that raw IRP JSON, a QR image or a PDF scan follows the same extraction path."
+    },
+    "indonesia": {
+      "name": "Indonesia",
+      "scope": "Indonesia E-Faktur is the configured family.",
+      "distinction": "The entry does not state a release number. Confirm the actual XML payload; a printed invoice or QR image does not establish XML support.",
+      "narration": "Indonesia E-Faktur is the configured family. The entry does not state a release number. Confirm the actual XML payload; a printed invoice or QR image does not establish XML support."
+    },
+    "china": {
+      "name": "China",
+      "scope": "The catalogue includes Fapiao, E-Fapiao, General VAT Invoice and Special VAT Invoice.",
+      "distinction": "The documented adapter uses the XML namespace urn:china:tax:fapiao:1.0. Do not assume that every native OFD, PDF or tax-platform export uses that contract.",
+      "narration": "The catalogue includes Fapiao, E-Fapiao, General VAT Invoice and Special VAT Invoice. The documented adapter uses the XML namespace urn:china:tax:fapiao:1.0. Do not assume that every native OFD, PDF or tax-platform export uses that contract."
+    },
+    "japan": {
+      "name": "Japan",
+      "scope": "JP PINT and JP PINT Self-Billing are separate entries.",
+      "distinction": "Self-billing is a business-process variant, not a language choice. Check the customization identifier and the configured variant.",
+      "narration": "JP PINT and JP PINT Self-Billing are separate entries. Self-billing is a business-process variant, not a language choice. Check the customization identifier and the configured variant."
+    },
+    "korea": {
+      "name": "South Korea",
+      "scope": "Korea E-Tax Invoice and Korea NTS are configured families.",
+      "distinction": "The labels do not name a release. Match the actual XML structure and do not treat extraction as proof of tax-platform acceptance.",
+      "narration": "Korea E-Tax Invoice and Korea NTS are configured families. The labels do not name a release. Match the actual XML structure and do not treat extraction as proof of tax-platform acceptance."
+    },
+    "malaysia": {
+      "name": "Malaysia",
+      "scope": "MyInvois has invoice and credit-note rule entries.",
+      "distinction": "The inspected extraction path is XML based. The national platform also accepts JSON, but that does not establish JSON import support in this DocBits mapping.",
+      "narration": "MyInvois has invoice and credit-note rule entries. The inspected extraction path is XML based. The national platform also accepts JSON, but that does not establish JSON import support in this DocBits mapping."
+    },
+    "philippines": {
+      "name": "Philippines",
+      "scope": "Philippines EIS is the configured family.",
+      "distinction": "The label does not name a release. Check the payload schema and the applicable document type before relying on a generic EIS label.",
+      "narration": "Philippines EIS is the configured family. The label does not name a release. Check the payload schema and the applicable document type before relying on a generic EIS label."
+    },
+    "singapore": {
+      "name": "Singapore",
+      "scope": "InvoiceNow has invoice and credit-note entries; InvoiceNow SG is another configured label.",
+      "distinction": "Check the Singapore profile identifiers. A national profile and generic Peppol BIS can share UBL syntax without sharing all business rules.",
+      "narration": "InvoiceNow has invoice and credit-note entries; InvoiceNow SG is another configured label. Check the Singapore profile identifiers. A national profile and generic Peppol BIS can share UBL syntax without sharing all business rules."
+    },
+    "taiwan": {
+      "name": "Taiwan",
+      "scope": "Taiwan eGUI is the configured family.",
+      "distinction": "The family label does not certify every MIG release. Check the actual XML schema and test representative electronic invoices.",
+      "narration": "Taiwan eGUI is the configured family. The family label does not certify every MIG release. Check the actual XML schema and test representative electronic invoices."
+    },
+    "thailand": {
+      "name": "Thailand",
+      "scope": "Thailand E-Tax Invoice is the configured family.",
+      "distinction": "The label does not name a release. Confirm the source XML structure; signature verification and revenue-platform delivery need separate checks.",
+      "narration": "Thailand E-Tax Invoice is the configured family. The label does not name a release. Confirm the source XML structure; signature verification and revenue-platform delivery need separate checks."
+    },
+    "vietnam": {
+      "name": "Vietnam",
+      "scope": "Vietnam E-Invoice is the configured family.",
+      "distinction": "The label does not name a release. Check the source namespace and schema instead of assuming that all tax-platform exports have the same structure.",
+      "narration": "Vietnam E-Invoice is the configured family. The label does not name a release. Check the source namespace and schema instead of assuming that all tax-platform exports have the same structure."
+    },
+    "argentina": {
+      "name": "Argentina",
+      "scope": "Argentina AFIP and Factura Electronica are configured labels.",
+      "distinction": "The credit-note classification entry has no dedicated extraction bundle in the inspected status. Verify the effective mapping and test a real credit-note sample.",
+      "narration": "Argentina AFIP and Factura Electronica are configured labels. The credit-note classification entry has no dedicated extraction bundle in the inspected status. Verify the effective mapping and test a real credit-note sample."
+    },
+    "brazil": {
+      "name": "Brazil",
+      "scope": "Brazil has NF-e, NFC-e, CT-e, NFS-e and SPED NFS-e entries. NFS-e includes versions 1.00 and 2.00 to 2.04; SPED includes 1.00.02 and 1.01.",
+      "distinction": "These are different document families. A configured NFS-e version does not certify every municipal schema or every national service-invoice layout.",
+      "narration": "Brazil has NF-e, NFC-e, CT-e, NFS-e and SPED NFS-e entries. NFS-e includes versions 1.00 and 2.00 to 2.04; SPED includes 1.00.02 and 1.01. These are different document families. A configured NFS-e version does not certify every municipal schema or every national service-invoice layout."
+    },
+    "chile": {
+      "name": "Chile",
+      "scope": "Chile DTE has invoice, credit-note and despatch-guide entries.",
+      "distinction": "Select the business document type before checking fields. Invoice, credit note and delivery information use different mappings.",
+      "narration": "Chile DTE has invoice, credit-note and despatch-guide entries. Select the business document type before checking fields. Invoice, credit note and delivery information use different mappings."
+    },
+    "colombia": {
+      "name": "Colombia",
+      "scope": "Colombia Factura Electronica and Documento Soporte have separate entries.",
+      "distinction": "The credit-note classification entry has no dedicated extraction bundle in the inspected status. Confirm the effective mapping instead of inferring support from the invoice entry.",
+      "narration": "Colombia Factura Electronica and Documento Soporte have separate entries. The credit-note classification entry has no dedicated extraction bundle in the inspected status. Confirm the effective mapping instead of inferring support from the invoice entry."
+    },
+    "costa-rica": {
+      "name": "Costa Rica",
+      "scope": "The older documentation names Costa Rica, but no matching classification or configuration entry was found in the inspected development catalogue.",
+      "distinction": "Current built-in processing is not confirmed by this check. Ask support to verify the deployed mapping and test a representative source file before rollout.",
+      "narration": "The older documentation names Costa Rica, but no matching classification or configuration entry was found in the inspected development catalogue. Current built-in processing is not confirmed by this check. Ask support to verify the deployed mapping and test a representative source file before rollout."
+    },
+    "ecuador": {
+      "name": "Ecuador",
+      "scope": "Ecuador SRI has generic, 1.0.0, 1.1.0, 2.0.0 and 2.1.0 entries. Withholding is a separate document type.",
+      "distinction": "The credit-note classification entry has no dedicated extraction bundle in the inspected status. Check the effective mapping and the source document type.",
+      "narration": "Ecuador SRI has generic, 1.0.0, 1.1.0, 2.0.0 and 2.1.0 entries. Withholding is a separate document type. The credit-note classification entry has no dedicated extraction bundle in the inspected status. Check the effective mapping and the source document type."
+    },
+    "mexico": {
+      "name": "Mexico",
+      "scope": "Mexico CFDI 3.3 and 4.0 have separate entries.",
+      "distinction": "Check the namespace, version and TipoDeComprobante. A credit-note document is not identified by a negative amount alone; parsing does not certify SAT clearance.",
+      "narration": "Mexico CFDI 3.3 and 4.0 have separate entries. Check the namespace, version and TipoDeComprobante. A credit-note document is not identified by a negative amount alone; parsing does not certify SAT clearance."
+    },
+    "paraguay": {
+      "name": "Paraguay",
+      "scope": "Paraguay DTE, SIFEN and SIFEN 150 are configured labels.",
+      "distinction": "Credit-note classification entries lack dedicated extraction bundles in the inspected status. Verify the effective mapping and do not treat the labels as interchangeable.",
+      "narration": "Paraguay DTE, SIFEN and SIFEN 150 are configured labels. Credit-note classification entries lack dedicated extraction bundles in the inspected status. Verify the effective mapping and do not treat the labels as interchangeable."
+    },
+    "peru": {
+      "name": "Peru",
+      "scope": "Peru CPE has generic, UBL 2.0 and UBL 2.1 entries. Factura Electronica is another label.",
+      "distinction": "Select the actual UBL version and document structure. Processing a file does not prove acceptance by SUNAT.",
+      "narration": "Peru CPE has generic, UBL 2.0 and UBL 2.1 entries. Factura Electronica is another label. Select the actual UBL version and document structure. Processing a file does not prove acceptance by SUNAT."
+    },
+    "uruguay": {
+      "name": "Uruguay",
+      "scope": "Uruguay CFE has generic, 24 and 25 entries. E-Factura and E-Nota Credito are also listed.",
+      "distinction": "Credit-note entries lack dedicated extraction bundles in the inspected status. Confirm the CFE version and the effective invoice or credit-note mapping.",
+      "narration": "Uruguay CFE has generic, 24 and 25 entries. E-Factura and E-Nota Credito are also listed. Credit-note entries lack dedicated extraction bundles in the inspected status. Confirm the CFE version and the effective invoice or credit-note mapping."
+    },
+    "kazakhstan": {
+      "name": "Kazakhstan",
+      "scope": "Kazakhstan ESF is the configured family.",
+      "distinction": "The label does not state a release. Confirm the actual XML schema and do not infer tax-platform transmission from extraction support.",
+      "narration": "Kazakhstan ESF is the configured family. The label does not state a release. Confirm the actual XML schema and do not infer tax-platform transmission from extraction support."
+    },
+    "saudi-arabia": {
+      "name": "Saudi Arabia",
+      "scope": "ZATCA Fatoorah, Reporting, Simplified and Tax Invoice have separate entries.",
+      "distinction": "These labels describe different processes and invoice variants. Parsing does not prove signing, clearance or reporting through ZATCA.",
+      "narration": "ZATCA Fatoorah, Reporting, Simplified and Tax Invoice have separate entries. These labels describe different processes and invoice variants. Parsing does not prove signing, clearance or reporting through ZATCA."
+    },
+    "turkey": {
+      "name": "Turkey",
+      "scope": "Turkey E-Fatura and E-Arsiv are separate configured families.",
+      "distinction": "Check the source profile and document structure. The family label does not identify every UBL-TR release or establish delivery through the tax platform.",
+      "narration": "Turkey E-Fatura and E-Arsiv are separate configured families. Check the source profile and document structure. The family label does not identify every UBL-TR release or establish delivery through the tax platform."
+    },
+    "united-arab-emirates": {
+      "name": "United Arab Emirates",
+      "scope": "UAE VAT Invoice is the configured label.",
+      "distinction": "A VAT-invoice mapping does not establish support for every UAE Peppol or PINT release. Confirm the payload contract and the required delivery integration.",
+      "narration": "UAE VAT Invoice is the configured label. A VAT-invoice mapping does not establish support for every UAE Peppol or PINT release. Confirm the payload contract and the required delivery integration."
+    },
+    "international": {
+      "name": "International",
+      "scope": "International entries include Peppol BIS 3.0, UBL 2.1, pure CII, EDI, INVOIC02, cXML, OCI, BOD and SPS Commerce RSX 7.7.4.",
+      "distinction": "Invoice, order, response and despatch mappings are distinct. File processing does not itself provide a Peppol access point or trading-partner connectivity.",
+      "narration": "International entries include Peppol BIS 3.0, UBL 2.1, pure CII, EDI, INVOIC02, cXML, OCI, BOD and SPS Commerce RSX 7.7.4. Invoice, order, response and despatch mappings are distinct. File processing does not itself provide a Peppol access point or trading-partner connectivity."
+    }
+  }
+}

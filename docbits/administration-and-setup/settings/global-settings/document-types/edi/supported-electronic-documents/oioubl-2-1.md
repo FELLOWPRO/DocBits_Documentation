@@ -4,6 +4,12 @@ description: OIOUBL 2.1 electronic document support in DocBits
 
 # 🇩🇰 OIOUBL 2.1
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Denmark](countries/denmark.md). OIOUBL and Peppol BIS are distinct profiles. UBL syntax alone does not identify the national profile.
+{% endhint %}
+
 | Property             | Value                                     |
 | -------------------- | ----------------------------------------- |
 | **Country / Region** | Denmark                                   |

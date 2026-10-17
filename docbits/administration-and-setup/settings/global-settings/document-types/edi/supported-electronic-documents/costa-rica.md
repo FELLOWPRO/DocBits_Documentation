@@ -1,30 +1,16 @@
 ---
-description: COSTA RICA electronic document support in DocBits
+description: "The older documentation names Costa Rica, but no matching classification or configuration entry was found in the inspected development catalogue."
 ---
 
 # 🇨🇷 COSTA RICA
 
-| Property             | Value                                                  |
-| -------------------- | ------------------------------------------------------ |
-| **Country / Region** | Costa Rica                                             |
-| **Document Types**   | Invoice (Factura Electrónica), Credit Note, Debit Note |
-| **Format**           | XML                                                    |
-| **Standard**         | Factura Electrónica (Ministerio de Hacienda)           |
 
-Costa Rica's electronic invoicing system is regulated by the Ministerio de Hacienda. Electronic documents must be submitted to the Hacienda platform for validation and include a digital signature. DocBits can process Costa Rican electronic invoices and extract key fields.
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Costa Rica](countries/costa-rica.md). Current built-in processing is not confirmed by this check. Ask support to verify the deployed mapping and test a representative source file before rollout.
+{% endhint %}
 
-## Support Status
+The older documentation names Costa Rica, but no matching classification or configuration entry was found in the inspected development catalogue.
 
-| Component        | Status      |
-| ---------------- | ----------- |
-| Preview          | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation   | N/A         |
+Current built-in processing is not confirmed by this check. Ask support to verify the deployed mapping and test a representative source file before rollout.
 
-## Default Preview
-
-<figure><img src="../../../../../../.gitbook/assets/ubl-2-1-preview.png" alt="Costa Rica e-invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Costa Rica e-invoice</p></figcaption></figure>
-
-## Related
-
-* [Supported Electronic Documents](./)
+[Costa Rica](countries/costa-rica.md)

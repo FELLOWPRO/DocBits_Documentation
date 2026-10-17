@@ -4,6 +4,12 @@ description: KAZAKHSTAN ESF electronic document support in DocBits
 
 # 🇰🇿 KAZAKHSTAN ESF
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Kazakhstan](countries/kazakhstan.md). The label does not state a release. Confirm the actual XML schema and do not infer tax-platform transmission from extraction support.
+{% endhint %}
+
 | Property             | Value                                                |
 | -------------------- | ---------------------------------------------------- |
 | **Country / Region** | Kazakhstan                                           |

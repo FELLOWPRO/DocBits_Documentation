@@ -4,6 +4,12 @@ description: EHF INVOICE 3.0 electronic document support in DocBits
 
 # 🇳🇴 EHF INVOICE 3.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Norway](countries/norway.md). Choose the mapping for the actual business document. An order or despatch advice is not an invoice.
+{% endhint %}
+
 | Property             | Value                                             |
 | -------------------- | ------------------------------------------------- |
 | **Country / Region** | Norway                                            |

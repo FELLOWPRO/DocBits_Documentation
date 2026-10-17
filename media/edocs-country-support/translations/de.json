@@ -1,0 +1,316 @@
+{
+  "title": "eDocs-Formate, Versionen und Länderanleitungen",
+  "description": "Ermitteln Sie die konfigurierte eDocs-Familie, Syntax, Version und das Profil, bevor Sie die Dokumentverarbeitung testen.",
+  "intro": "Beginnen Sie mit dem Quelldokument und der passenden Länderanleitung. Ein Ländername allein bezeichnet kein Dateiformat. Eine Versionsbezeichnung, die XML-Syntax und ein Geschäftsprofil beschreiben unterschiedliche Eigenschaften.",
+  "evidence": "Die Tabellen dokumentieren eine Prüfung des Entwicklungskatalogs vom 17. Oktober 2026 und des zugehörigen Verarbeitungscodes. Sie beschreiben verfügbare Regeln und Konfigurationskomponenten, bestätigen jedoch nicht jede Datei, jede gesetzliche Anforderung oder die Einführung in Produktion. Ihre Organisation kann die Standardregeln überschreiben.",
+  "distinctions_title": "Die Unterstützungsmatrix richtig lesen",
+  "distinctions": [
+    "Familie: das elektronische Dokumentformat, zum Beispiel XRechnung, Factur-X, KSeF oder CFDI.",
+    "Syntax: der tatsächliche Dateninhalt, zum Beispiel UBL-XML, CII-XML oder ein PDF mit eingebettetem XML. Ein PDF-Scan, JSON-Export oder QR-Bild ist kein gleichwertiger XML-Dateninhalt.",
+    "Version: die angegebene Veröffentlichung oder Schemaversion. Eine generische Familienbezeichnung belegt nicht die Unterstützung jeder Version.",
+    "Profil: eine geschäftliche oder datenbezogene Teilmenge, zum Beispiel BASIC, EN16931, EXTENDED oder Selbstfakturierung. Ein Profil ist keine Veröffentlichungsversion.",
+    "Regel und Komponenten: Klassifizierung, Transformation, Preview und Extraction Paths sind voneinander getrennt. Ein konfiguriertes Profil hat nicht zwangsläufig eine eigene Klassifizierungsregel.",
+    "Validierung und Übertragung: Die Darstellung oder Extraktion einer Datei bestätigt für sich allein nicht alle gesetzlichen Regeln, Signaturen, steuerlichen Freigaben oder die Netzwerkzustellung."
+  ],
+  "workflow_title": "Ein Format in Ihrer Organisation prüfen",
+  "workflow": [
+    "Bewahren Sie das ursprüngliche XML oder das PDF mit seinem eingebetteten XML auf. Lesen Sie den Namespace, die Schema- oder Anpassungskennung sowie die angegebene Version und das Profil.",
+    "Öffnen Sie Einstellungen → Dokumenttypen → E-Doc für den entsprechenden Geschäftsdokumenttyp. Suchen Sie nach dem genauen elektronischen Dokumentformat aus der Anleitung.",
+    "Prüfen Sie die tatsächlich verwendete Quelle Default oder Custom und ihre aktive Konfigurationsversion. Prüfen Sie Transformation, Preview und Extraction Paths. Das Speichern eines Entwurfs aktiviert ihn nicht.",
+    "Testen Sie repräsentative Quelldateien für jede benötigte Syntax, Version und jeden Geschäftsdokumenttyp. Prüfen Sie wichtige Felder, Beträge, Steuern, die Klassifizierung als Rechnung oder Gutschrift und den ERP-Export.",
+    "Bestätigen Sie die Validierungsrichtlinie und den Übertragungsweg separat. Erhalten Sie angepasste Zuordnungen und prüfen Sie Freigaben und Exporthistorie, bevor Sie vorhandene Dokumente neu starten."
+  ],
+  "country_title": "Länderanleitungen",
+  "country_column": "Land / Region",
+  "variants_column": "Familien und Versionsumfang",
+  "status_column": "Katalogergebnis",
+  "configured": "Einträge gefunden",
+  "unconfirmed": "Nicht bestätigt",
+  "format_column": "Genaue Formatbezeichnung",
+  "doctype_column": "Dokumentschlüssel der Regel",
+  "components_column": "Verfügbare Komponenten",
+  "component_note": "C = Klassifizierung, T = Transformation, P = Preview, E = Extraction Paths. Der Dokumentschlüssel dient zur Suche nach Regeln und Konfigurationen; er garantiert nicht den endgültig gespeicherten Wert von invoice_type. Eine Transformation kann eine Gutschrift über eine INVOICE-Zuordnung klassifizieren.",
+  "missing_note": "Ein Strich bedeutet, dass die Statusprüfung für genau diese Kombination aus Format und Dokumentschlüssel keine eigene Komponente gemeldet hat. Eine gemeinsam genutzte Zuordnung oder eine Ausweichzuordnung ist damit nicht ausgeschlossen. Prüfen Sie die tatsächlich verwendete Auflösungslogik und eine repräsentative Datei, bevor Sie sich auf diesen Pfad verlassen.",
+  "only_title": "Zusätzliche Konfigurationsbezeichnungen",
+  "only_note": "Für diese Bezeichnungen gibt es Konfigurationseinträge, aber keine eigenständige Klassifizierungsregel im geprüften Katalog. Über eine generische Formatfamilie oder eine präzisere Identifizierung kann ein kompatibler Pfad ausgewählt werden. Das bloße Vorhandensein der Einträge belegt nicht die automatische Erkennung dieser Veröffentlichung oder dieses Profils.",
+  "no_rule": "Es wurde kein passender Klassifizierungs- oder Konfigurationseintrag gefunden. Diese Prüfung bestätigt die aktuelle integrierte Unterstützung nicht.",
+  "screen_title": "Die Zuordnung in DocBits finden",
+  "screen_caption": "Echte Entwicklungsoberfläche: das repräsentative Format und seine verfügbaren Konfigurationskomponenten. Weitere Versionen sind in der Matrix aufgeführt.",
+  "screen_empty_caption": "Echte Entwicklungsoberfläche: Die Suche nach diesem Ländernamen ergab im geprüften Katalog keinen passenden Konfigurationseintrag.",
+  "video_title": "Erklärvideo zum Land",
+  "video_caption": "Ein Sprechertext und WebVTT-Untertitel in der jeweiligen Sprache erklären Formatauswahl, Konfiguration und Abnahmeprüfungen.",
+  "back": "Alle Länder und Umfang der Unterstützung",
+  "related": "Weiterführende Formatreferenz",
+  "country_intro": "Verwenden Sie diese Anleitung, um die konfigurierte Familie und den Versionsumfang zu ermitteln, bevor Sie eine Quelldatei testen.",
+  "scope_title": "Varianten und Versionsgrenzen",
+  "matrix_title": "Geprüfte Regel- und Komponentenmatrix",
+  "acceptance_title": "Abnahmeprüfungen",
+  "acceptance": "Eine Komponentenprüfung bestätigt das Vorhandensein einer Konfiguration. Sie ist kein vollständiger Verarbeitungstest für jede Version. Testen Sie den genauen Dateninhalt und den von Ihrer Integration benötigten Verarbeitungsweg für Rechnungen oder Gutschriften.",
+  "identity_title": "Factur-X / ZUGFeRD: keine Veröffentlichungsversion erfinden",
+  "identity": "Eine harmonisierte CII Guideline ID kann eine Familie und ein Profil identifizieren, obwohl mehrere Veröffentlichungen dieselbe Kennung 1p0 verwenden. Factur-X XMP Version 1.0 ist eine Schemakennung, keine Veröffentlichung wie 1.08 oder 1.09. ZUGFeRD-XMP kann seine Version angeben. Fehlen maßgebliche Metadaten, behalten Sie das generische Familienergebnis bei und klären Sie die ursprüngliche Datei mit dem Absender.",
+  "profiles": "MINIMUM und BASIC WL können Positionsinformationen auslassen, die in nachgelagerten Schritten benötigt werden. BASIC, EN16931/COMFORT und EXTENDED decken unterschiedliche Datenumfänge ab. Ein umfangreicheres Profil kann Felder enthalten, die Ihre Extraktionszuordnung nicht verwendet. Prüfen Sie die erforderlichen Felder anhand tatsächlicher Beispiele.",
+  "index_link": "Die Länderanleitungen enthalten genaue Formatbezeichnungen, Syntax, Versionsgrenzen und den geprüften Konfigurationsstand.",
+  "leaf_link": "Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land.",
+  "narration_workflow": "Öffnen Sie E-Doc für das erkannte Format. Vergleichen Sie Transformation, Preview und Extraction Paths. Custom-Regeln haben Vorrang. Das Speichern eines Entwurfs aktiviert ihn nicht.",
+  "narration_accept": "Testen Sie, soweit zutreffend, eine Rechnung und eine Gutschrift. Prüfen Sie Beträge, Beteiligte und den exportierten Dokumenttyp. Das Einlesen bestätigt keine steuerliche Freigabe oder Netzwerkzustellung.",
+  "narration_unconfirmed": "In diesem Katalog wurde kein passender integrierter Eintrag gefunden. Bitten Sie den Support, die bereitgestellte Zuordnung zu prüfen. Testen Sie vor der Einführung eine repräsentative Quelldatei.",
+  "labels": {
+    "formats": "Formate und Versionen",
+    "workflow": "Tatsächlich verwendete Konfiguration prüfen",
+    "source": "Quelldokument",
+    "detect": "Passendes Format",
+    "transform": "Transformation",
+    "preview": "Preview",
+    "extract": "Extraction Paths",
+    "custom": "Custom hat Vorrang vor Default",
+    "accept": "Benötigten Verarbeitungsweg testen",
+    "invoice": "Rechnung",
+    "credit": "Gutschrift",
+    "fields": "Felder und Beträge",
+    "export": "ERP-Export",
+    "limits": "Validierung und Zustellung separat prüfen",
+    "unconfirmed": "Unterstützung nicht bestätigt"
+  },
+  "countries": {
+    "austria": {
+      "name": "Österreich",
+      "scope": "Für ebInterface 4.3, 5.0, 6.0 und 6.1 gibt es separate Einträge.",
+      "distinction": "Gleichen Sie den XML-Namespace mit der konfigurierten Version ab. Ein anderer Namespace kann eine andere Zuordnung erfordern.",
+      "narration": "Für ebInterface 4.3, 5.0, 6.0 und 6.1 gibt es separate Einträge. Gleichen Sie den XML-Namespace mit der konfigurierten Version ab. Ein anderer Namespace kann eine andere Zuordnung erfordern."
+    },
+    "denmark": {
+      "name": "Dänemark",
+      "scope": "OIOUBL 2.1 ist der namentlich aufgeführte dänische Eintrag.",
+      "distinction": "OIOUBL und Peppol BIS sind unterschiedliche Profile. Die UBL-Syntax allein identifiziert das nationale Profil nicht.",
+      "narration": "OIOUBL 2.1 ist der namentlich aufgeführte dänische Eintrag. OIOUBL und Peppol BIS sind unterschiedliche Profile. Die UBL-Syntax allein identifiziert das nationale Profil nicht."
+    },
+    "finland": {
+      "name": "Finnland",
+      "scope": "Für Finvoice 1.3, 2.0, 2.01 und 3.0 gibt es separate Einträge. TEAPPSXML ist eine weitere Familie.",
+      "distinction": "Prüfen Sie die Version der Quelldatei, bevor Sie eine Zuordnung auswählen. Die Bezeichnung TEAPPSXML nennt keine Veröffentlichungsversion.",
+      "narration": "Für Finvoice 1.3, 2.0, 2.01 und 3.0 gibt es separate Einträge. TEAPPSXML ist eine weitere Familie. Prüfen Sie die Version der Quelldatei, bevor Sie eine Zuordnung auswählen. Die Bezeichnung TEAPPSXML nennt keine Veröffentlichungsversion."
+    },
+    "france": {
+      "name": "Frankreich",
+      "scope": "Für Factur-X gibt es generische und veröffentlichungsspezifische Einträge, darunter 1.0.05, 1.08 und 1.09. VRBL FR CIUS 1.0 ist separat.",
+      "distinction": "Die XML-Kennung 1p0 und Factur-X XMP Version 1.0 identifizieren keine Veröffentlichungsversion. Behalten Sie die generische Bezeichnung bei, wenn die Veröffentlichung unbekannt ist.",
+      "narration": "Für Factur-X gibt es generische und veröffentlichungsspezifische Einträge, darunter 1.0.05, 1.08 und 1.09. VRBL FR CIUS 1.0 ist separat. Die XML-Kennung 1p0 und Factur-X XMP Version 1.0 identifizieren keine Veröffentlichungsversion. Behalten Sie die generische Bezeichnung bei, wenn die Veröffentlichung unbekannt ist."
+    },
+    "germany": {
+      "name": "Deutschland",
+      "scope": "XRechnung hat dreizehn Versionsbezeichnungen von 1.0 bis 3.0.2, jeweils in CII und UBL. ZUGFeRD umfasst ältere Profile sowie Einträge für 2.5 in CII und UBL.",
+      "distinction": "Syntax, Veröffentlichungsversion und Profil sind unterschiedliche Auswahlmerkmale. Leiten Sie aus der gemeinsamen Kennung 1p0 keine Factur-X-Veröffentlichung ab.",
+      "narration": "XRechnung hat dreizehn Versionsbezeichnungen von 1.0 bis 3.0.2, jeweils in CII und UBL. ZUGFeRD umfasst ältere Profile sowie Einträge für 2.5 in CII und UBL. Syntax, Veröffentlichungsversion und Profil sind unterschiedliche Auswahlmerkmale. Leiten Sie aus der gemeinsamen Kennung 1p0 keine Factur-X-Veröffentlichung ab."
+    },
+    "italy": {
+      "name": "Italien",
+      "scope": "FatturaPA ist die konfigurierte italienische Familie.",
+      "distinction": "Die Familienbezeichnung bestätigt nicht jede FatturaPA-Veröffentlichung oder die Übertragung über SDI. Prüfen Sie das Quellschema und die Anforderungen des Empfängers.",
+      "narration": "FatturaPA ist die konfigurierte italienische Familie. Die Familienbezeichnung bestätigt nicht jede FatturaPA-Veröffentlichung oder die Übertragung über SDI. Prüfen Sie das Quellschema und die Anforderungen des Empfängers."
+    },
+    "netherlands": {
+      "name": "Niederlande",
+      "scope": "Für SI-UBL 2.0 gibt es einen eigenen Eintrag.",
+      "distinction": "Eine UBL-Datei entspricht nicht automatisch SI-UBL 2.0. Prüfen Sie ihre Anpassungskennung und die passende nationale Zuordnung.",
+      "narration": "Für SI-UBL 2.0 gibt es einen eigenen Eintrag. Eine UBL-Datei entspricht nicht automatisch SI-UBL 2.0. Prüfen Sie ihre Anpassungskennung und die passende nationale Zuordnung."
+    },
+    "norway": {
+      "name": "Norwegen",
+      "scope": "EHF Invoice 3.0 ist neben EHF Order, Order Response und Despatch Advice aufgeführt.",
+      "distinction": "Wählen Sie die Zuordnung für den tatsächlichen Geschäftsdokumenttyp. Eine Bestellung oder Versandanzeige ist keine Rechnung.",
+      "narration": "EHF Invoice 3.0 ist neben EHF Order, Order Response und Despatch Advice aufgeführt. Wählen Sie die Zuordnung für den tatsächlichen Geschäftsdokumenttyp. Eine Bestellung oder Versandanzeige ist keine Rechnung."
+    },
+    "poland": {
+      "name": "Polen",
+      "scope": "Für KSeF gibt es generische Einträge sowie Einträge für FA2 und FA3.",
+      "distinction": "FA2 und FA3 verwenden unterschiedliche Strukturen. Bestätigen Sie das Quellschema und testen Sie die passende Zuordnung. Das Einlesen übermittelt keine Rechnung an KSeF.",
+      "narration": "Für KSeF gibt es generische Einträge sowie Einträge für FA2 und FA3. FA2 und FA3 verwenden unterschiedliche Strukturen. Bestätigen Sie das Quellschema und testen Sie die passende Zuordnung. Das Einlesen übermittelt keine Rechnung an KSeF."
+    },
+    "slovenia": {
+      "name": "Slowenien",
+      "scope": "Für e-SLOG 1.6 und 2.0 gibt es separate Einträge.",
+      "distinction": "Die beiden Versionen haben unterschiedliche XML-Strukturen. Orientieren Sie sich am Quellschema, statt eine Regel anhand des Dateinamens auszuwählen.",
+      "narration": "Für e-SLOG 1.6 und 2.0 gibt es separate Einträge. Die beiden Versionen haben unterschiedliche XML-Strukturen. Orientieren Sie sich am Quellschema, statt eine Regel anhand des Dateinamens auszuwählen."
+    },
+    "spain": {
+      "name": "Spanien",
+      "scope": "Für Facturae gibt es generische Einträge sowie Einträge für 3.2, 3.2.1 und 3.2.2.",
+      "distinction": "Prüfen Sie den Namespace und die Schemaversion. Die Extraktion einer signierten XML-Datei bestätigt für sich allein weder ihre Signatur noch ihre Annahme durch FACe.",
+      "narration": "Für Facturae gibt es generische Einträge sowie Einträge für 3.2, 3.2.1 und 3.2.2. Prüfen Sie den Namespace und die Schemaversion. Die Extraktion einer signierten XML-Datei bestätigt für sich allein weder ihre Signatur noch ihre Annahme durch FACe."
+    },
+    "sweden": {
+      "name": "Schweden",
+      "scope": "Svefaktura 1.0 ist der namentlich aufgeführte schwedische Eintrag.",
+      "distinction": "Unterscheiden Sie diese ältere Familie von Peppol BIS Billing 3.0. Prüfen Sie, welches Profil der Empfänger erwartet.",
+      "narration": "Svefaktura 1.0 ist der namentlich aufgeführte schwedische Eintrag. Unterscheiden Sie diese ältere Familie von Peppol BIS Billing 3.0. Prüfen Sie, welches Profil der Empfänger erwartet."
+    },
+    "australia": {
+      "name": "Australien",
+      "scope": "PINT A-NZ hat Regeleinträge für Rechnungen und Gutschriften, die gemeinsam mit Neuseeland verwendet werden.",
+      "distinction": "Die aktive Familienbezeichnung enthält keine feste PINT-Veröffentlichungsnummer. Prüfen Sie die Anpassungs- und Profilkennungen. Die Netzwerkzustellung erfordert eine separate Integration.",
+      "narration": "PINT A-NZ hat Regeleinträge für Rechnungen und Gutschriften, die gemeinsam mit Neuseeland verwendet werden. Die aktive Familienbezeichnung enthält keine feste PINT-Veröffentlichungsnummer. Prüfen Sie die Anpassungs- und Profilkennungen. Die Netzwerkzustellung erfordert eine separate Integration."
+    },
+    "new-zealand": {
+      "name": "Neuseeland",
+      "scope": "PINT A-NZ hat Regeleinträge für Rechnungen und Gutschriften, die gemeinsam mit Australien verwendet werden.",
+      "distinction": "Die aktive Familienbezeichnung enthält keine feste PINT-Veröffentlichungsnummer. Prüfen Sie die Anpassungs- und Profilkennungen. Die Netzwerkzustellung erfordert eine separate Integration.",
+      "narration": "PINT A-NZ hat Regeleinträge für Rechnungen und Gutschriften, die gemeinsam mit Australien verwendet werden. Die aktive Familienbezeichnung enthält keine feste PINT-Veröffentlichungsnummer. Prüfen Sie die Anpassungs- und Profilkennungen. Die Netzwerkzustellung erfordert eine separate Integration."
+    },
+    "india": {
+      "name": "Indien",
+      "scope": "Für India GST E-Invoice und GST CreditNote gibt es separate Einträge.",
+      "distinction": "Der dokumentierte Adapter verarbeitet SignedInvoice-XML. Setzen Sie nicht voraus, dass unbearbeitetes IRP-JSON, ein QR-Bild oder ein PDF-Scan denselben Extraktionspfad verwendet.",
+      "narration": "Für India GST E-Invoice und GST CreditNote gibt es separate Einträge. Der dokumentierte Adapter verarbeitet SignedInvoice-XML. Setzen Sie nicht voraus, dass unbearbeitetes IRP-JSON, ein QR-Bild oder ein PDF-Scan denselben Extraktionspfad verwendet."
+    },
+    "indonesia": {
+      "name": "Indonesien",
+      "scope": "Indonesia E-Faktur ist die konfigurierte Familie.",
+      "distinction": "Der Eintrag nennt keine Veröffentlichungsnummer. Bestätigen Sie den tatsächlichen XML-Dateninhalt. Eine gedruckte Rechnung oder ein QR-Bild belegt keine XML-Unterstützung.",
+      "narration": "Indonesia E-Faktur ist die konfigurierte Familie. Der Eintrag nennt keine Veröffentlichungsnummer. Bestätigen Sie den tatsächlichen XML-Dateninhalt. Eine gedruckte Rechnung oder ein QR-Bild belegt keine XML-Unterstützung."
+    },
+    "china": {
+      "name": "China",
+      "scope": "Der Katalog enthält Fapiao, E-Fapiao, General VAT Invoice und Special VAT Invoice.",
+      "distinction": "Der dokumentierte Adapter verwendet den XML-Namespace urn:china:tax:fapiao:1.0. Setzen Sie nicht voraus, dass jede native OFD-Datei, jedes PDF oder jeder Export einer Steuerplattform diesem Datenvertrag entspricht.",
+      "narration": "Der Katalog enthält Fapiao, E-Fapiao, General VAT Invoice und Special VAT Invoice. Der dokumentierte Adapter verwendet den XML-Namespace urn:china:tax:fapiao:1.0. Setzen Sie nicht voraus, dass jede native OFD-Datei, jedes PDF oder jeder Export einer Steuerplattform diesem Datenvertrag entspricht."
+    },
+    "japan": {
+      "name": "Japan",
+      "scope": "JP PINT und JP PINT Self-Billing sind separate Einträge.",
+      "distinction": "Selbstfakturierung ist eine Variante des Geschäftsprozesses, keine Sprachwahl. Prüfen Sie die Anpassungskennung und die konfigurierte Variante.",
+      "narration": "JP PINT und JP PINT Self-Billing sind separate Einträge. Selbstfakturierung ist eine Variante des Geschäftsprozesses, keine Sprachwahl. Prüfen Sie die Anpassungskennung und die konfigurierte Variante."
+    },
+    "korea": {
+      "name": "Südkorea",
+      "scope": "Korea E-Tax Invoice und Korea NTS sind konfigurierte Familien.",
+      "distinction": "Die Bezeichnungen nennen keine Veröffentlichungsversion. Gleichen Sie die tatsächliche XML-Struktur ab und betrachten Sie die Extraktion nicht als Nachweis einer Annahme durch die Steuerplattform.",
+      "narration": "Korea E-Tax Invoice und Korea NTS sind konfigurierte Familien. Die Bezeichnungen nennen keine Veröffentlichungsversion. Gleichen Sie die tatsächliche XML-Struktur ab und betrachten Sie die Extraktion nicht als Nachweis einer Annahme durch die Steuerplattform."
+    },
+    "malaysia": {
+      "name": "Malaysia",
+      "scope": "Für MyInvois gibt es Regeleinträge für Rechnungen und Gutschriften.",
+      "distinction": "Der geprüfte Extraktionspfad ist XML-basiert. Die nationale Plattform akzeptiert auch JSON. Das belegt jedoch keine JSON-Importunterstützung in dieser DocBits-Zuordnung.",
+      "narration": "Für MyInvois gibt es Regeleinträge für Rechnungen und Gutschriften. Der geprüfte Extraktionspfad ist XML-basiert. Die nationale Plattform akzeptiert auch JSON. Das belegt jedoch keine JSON-Importunterstützung in dieser DocBits-Zuordnung."
+    },
+    "philippines": {
+      "name": "Philippinen",
+      "scope": "Philippines EIS ist die konfigurierte Familie.",
+      "distinction": "Die Bezeichnung nennt keine Veröffentlichungsversion. Prüfen Sie das Datenschema und den betreffenden Dokumenttyp, bevor Sie sich auf eine generische EIS-Bezeichnung verlassen.",
+      "narration": "Philippines EIS ist die konfigurierte Familie. Die Bezeichnung nennt keine Veröffentlichungsversion. Prüfen Sie das Datenschema und den betreffenden Dokumenttyp, bevor Sie sich auf eine generische EIS-Bezeichnung verlassen."
+    },
+    "singapore": {
+      "name": "Singapur",
+      "scope": "Für InvoiceNow gibt es Rechnungs- und Gutschrifteinträge. InvoiceNow SG ist eine weitere konfigurierte Bezeichnung.",
+      "distinction": "Prüfen Sie die Profilkennungen für Singapur. Ein nationales Profil und generisches Peppol BIS können dieselbe UBL-Syntax verwenden, ohne alle Geschäftsregeln zu teilen.",
+      "narration": "Für InvoiceNow gibt es Rechnungs- und Gutschrifteinträge. InvoiceNow SG ist eine weitere konfigurierte Bezeichnung. Prüfen Sie die Profilkennungen für Singapur. Ein nationales Profil und generisches Peppol BIS können dieselbe UBL-Syntax verwenden, ohne alle Geschäftsregeln zu teilen."
+    },
+    "taiwan": {
+      "name": "Taiwan",
+      "scope": "Taiwan eGUI ist die konfigurierte Familie.",
+      "distinction": "Die Familienbezeichnung bestätigt nicht jede MIG-Veröffentlichung. Prüfen Sie das tatsächliche XML-Schema und testen Sie repräsentative elektronische Rechnungen.",
+      "narration": "Taiwan eGUI ist die konfigurierte Familie. Die Familienbezeichnung bestätigt nicht jede MIG-Veröffentlichung. Prüfen Sie das tatsächliche XML-Schema und testen Sie repräsentative elektronische Rechnungen."
+    },
+    "thailand": {
+      "name": "Thailand",
+      "scope": "Thailand E-Tax Invoice ist die konfigurierte Familie.",
+      "distinction": "Die Bezeichnung nennt keine Veröffentlichungsversion. Bestätigen Sie die XML-Struktur der Quelldatei. Signaturprüfung und Übermittlung an die Steuerplattform müssen separat geprüft werden.",
+      "narration": "Thailand E-Tax Invoice ist die konfigurierte Familie. Die Bezeichnung nennt keine Veröffentlichungsversion. Bestätigen Sie die XML-Struktur der Quelldatei. Signaturprüfung und Übermittlung an die Steuerplattform müssen separat geprüft werden."
+    },
+    "vietnam": {
+      "name": "Vietnam",
+      "scope": "Vietnam E-Invoice ist die konfigurierte Familie.",
+      "distinction": "Die Bezeichnung nennt keine Veröffentlichungsversion. Prüfen Sie Namespace und Schema der Quelldatei, statt vorauszusetzen, dass alle Exporte der Steuerplattform dieselbe Struktur haben.",
+      "narration": "Vietnam E-Invoice ist die konfigurierte Familie. Die Bezeichnung nennt keine Veröffentlichungsversion. Prüfen Sie Namespace und Schema der Quelldatei, statt vorauszusetzen, dass alle Exporte der Steuerplattform dieselbe Struktur haben."
+    },
+    "argentina": {
+      "name": "Argentinien",
+      "scope": "Argentina AFIP und Factura Electronica sind konfigurierte Bezeichnungen.",
+      "distinction": "Für den Gutschrift-Klassifizierungseintrag ist im geprüften Status kein eigenes Extraktionspaket ausgewiesen. Prüfen Sie die tatsächlich verwendete Zuordnung und testen Sie ein echtes Gutschriftbeispiel.",
+      "narration": "Argentina AFIP und Factura Electronica sind konfigurierte Bezeichnungen. Für den Gutschrift-Klassifizierungseintrag ist im geprüften Status kein eigenes Extraktionspaket ausgewiesen. Prüfen Sie die tatsächlich verwendete Zuordnung und testen Sie ein echtes Gutschriftbeispiel."
+    },
+    "brazil": {
+      "name": "Brasilien",
+      "scope": "Für Brasilien gibt es Einträge für NF-e, NFC-e, CT-e, NFS-e und SPED NFS-e. NFS-e umfasst die Versionen 1.00 und 2.00 bis 2.04, SPED die Versionen 1.00.02 und 1.01.",
+      "distinction": "Dies sind unterschiedliche Dokumentfamilien. Eine konfigurierte NFS-e-Version bestätigt nicht jedes kommunale Schema oder jedes nationale Format für Dienstleistungsrechnungen.",
+      "narration": "Für Brasilien gibt es Einträge für NF-e, NFC-e, CT-e, NFS-e und SPED NFS-e. NFS-e umfasst die Versionen 1.00 und 2.00 bis 2.04, SPED die Versionen 1.00.02 und 1.01. Dies sind unterschiedliche Dokumentfamilien. Eine konfigurierte NFS-e-Version bestätigt nicht jedes kommunale Schema oder jedes nationale Format für Dienstleistungsrechnungen."
+    },
+    "chile": {
+      "name": "Chile",
+      "scope": "Für Chile DTE gibt es Einträge für Rechnungen, Gutschriften und Versandbegleitdokumente.",
+      "distinction": "Wählen Sie den Geschäftsdokumenttyp aus, bevor Sie die Felder prüfen. Rechnungen, Gutschriften und Lieferinformationen verwenden unterschiedliche Zuordnungen.",
+      "narration": "Für Chile DTE gibt es Einträge für Rechnungen, Gutschriften und Versandbegleitdokumente. Wählen Sie den Geschäftsdokumenttyp aus, bevor Sie die Felder prüfen. Rechnungen, Gutschriften und Lieferinformationen verwenden unterschiedliche Zuordnungen."
+    },
+    "colombia": {
+      "name": "Kolumbien",
+      "scope": "Für Colombia Factura Electronica und Documento Soporte gibt es separate Einträge.",
+      "distinction": "Für den Gutschrift-Klassifizierungseintrag ist im geprüften Status kein eigenes Extraktionspaket ausgewiesen. Bestätigen Sie die tatsächlich verwendete Zuordnung, statt die Unterstützung aus dem Rechnungseintrag abzuleiten.",
+      "narration": "Für Colombia Factura Electronica und Documento Soporte gibt es separate Einträge. Für den Gutschrift-Klassifizierungseintrag ist im geprüften Status kein eigenes Extraktionspaket ausgewiesen. Bestätigen Sie die tatsächlich verwendete Zuordnung, statt die Unterstützung aus dem Rechnungseintrag abzuleiten."
+    },
+    "costa-rica": {
+      "name": "Costa Rica",
+      "scope": "Die ältere Dokumentation nennt Costa Rica. Im geprüften Entwicklungskatalog wurde jedoch kein passender Klassifizierungs- oder Konfigurationseintrag gefunden.",
+      "distinction": "Diese Prüfung bestätigt die aktuelle integrierte Verarbeitung nicht. Bitten Sie den Support, die bereitgestellte Zuordnung zu prüfen, und testen Sie vor der Einführung eine repräsentative Quelldatei.",
+      "narration": "Die ältere Dokumentation nennt Costa Rica. Im geprüften Entwicklungskatalog wurde jedoch kein passender Klassifizierungs- oder Konfigurationseintrag gefunden. Diese Prüfung bestätigt die aktuelle integrierte Verarbeitung nicht. Bitten Sie den Support, die bereitgestellte Zuordnung zu prüfen, und testen Sie vor der Einführung eine repräsentative Quelldatei."
+    },
+    "ecuador": {
+      "name": "Ecuador",
+      "scope": "Für Ecuador SRI gibt es generische Einträge sowie Einträge für 1.0.0, 1.1.0, 2.0.0 und 2.1.0. Quellensteuer ist ein separater Dokumenttyp.",
+      "distinction": "Für den Gutschrift-Klassifizierungseintrag ist im geprüften Status kein eigenes Extraktionspaket ausgewiesen. Prüfen Sie die tatsächlich verwendete Zuordnung und den Typ des Quelldokuments.",
+      "narration": "Für Ecuador SRI gibt es generische Einträge sowie Einträge für 1.0.0, 1.1.0, 2.0.0 und 2.1.0. Quellensteuer ist ein separater Dokumenttyp. Für den Gutschrift-Klassifizierungseintrag ist im geprüften Status kein eigenes Extraktionspaket ausgewiesen. Prüfen Sie die tatsächlich verwendete Zuordnung und den Typ des Quelldokuments."
+    },
+    "mexico": {
+      "name": "Mexiko",
+      "scope": "Für Mexico CFDI 3.3 und 4.0 gibt es separate Einträge.",
+      "distinction": "Prüfen Sie Namespace, Version und TipoDeComprobante. Ein negativer Betrag allein identifiziert keine Gutschrift. Das Einlesen bestätigt keine Freigabe durch SAT.",
+      "narration": "Für Mexico CFDI 3.3 und 4.0 gibt es separate Einträge. Prüfen Sie Namespace, Version und TipoDeComprobante. Ein negativer Betrag allein identifiziert keine Gutschrift. Das Einlesen bestätigt keine Freigabe durch SAT."
+    },
+    "paraguay": {
+      "name": "Paraguay",
+      "scope": "Paraguay DTE, SIFEN und SIFEN 150 sind konfigurierte Bezeichnungen.",
+      "distinction": "Für die Gutschrift-Klassifizierungseinträge sind im geprüften Status keine eigenen Extraktionspakete ausgewiesen. Prüfen Sie die tatsächlich verwendete Zuordnung und betrachten Sie die Bezeichnungen nicht als austauschbar.",
+      "narration": "Paraguay DTE, SIFEN und SIFEN 150 sind konfigurierte Bezeichnungen. Für die Gutschrift-Klassifizierungseinträge sind im geprüften Status keine eigenen Extraktionspakete ausgewiesen. Prüfen Sie die tatsächlich verwendete Zuordnung und betrachten Sie die Bezeichnungen nicht als austauschbar."
+    },
+    "peru": {
+      "name": "Peru",
+      "scope": "Für Peru CPE gibt es generische Einträge sowie Einträge für UBL 2.0 und UBL 2.1. Factura Electronica ist eine weitere Bezeichnung.",
+      "distinction": "Wählen Sie die tatsächliche UBL-Version und Dokumentstruktur aus. Die Verarbeitung einer Datei belegt keine Annahme durch SUNAT.",
+      "narration": "Für Peru CPE gibt es generische Einträge sowie Einträge für UBL 2.0 und UBL 2.1. Factura Electronica ist eine weitere Bezeichnung. Wählen Sie die tatsächliche UBL-Version und Dokumentstruktur aus. Die Verarbeitung einer Datei belegt keine Annahme durch SUNAT."
+    },
+    "uruguay": {
+      "name": "Uruguay",
+      "scope": "Für Uruguay CFE gibt es generische Einträge sowie Einträge für 24 und 25. E-Factura und E-Nota Credito sind ebenfalls aufgeführt.",
+      "distinction": "Für Gutschrifteinträge sind im geprüften Status keine eigenen Extraktionspakete ausgewiesen. Bestätigen Sie die CFE-Version und die tatsächlich verwendete Rechnungs- oder Gutschriftzuordnung.",
+      "narration": "Für Uruguay CFE gibt es generische Einträge sowie Einträge für 24 und 25. E-Factura und E-Nota Credito sind ebenfalls aufgeführt. Für Gutschrifteinträge sind im geprüften Status keine eigenen Extraktionspakete ausgewiesen. Bestätigen Sie die CFE-Version und die tatsächlich verwendete Rechnungs- oder Gutschriftzuordnung."
+    },
+    "kazakhstan": {
+      "name": "Kasachstan",
+      "scope": "Kazakhstan ESF ist die konfigurierte Familie.",
+      "distinction": "Die Bezeichnung nennt keine Veröffentlichungsversion. Bestätigen Sie das tatsächliche XML-Schema und leiten Sie aus der Extraktionsunterstützung keine Übermittlung an die Steuerplattform ab.",
+      "narration": "Kazakhstan ESF ist die konfigurierte Familie. Die Bezeichnung nennt keine Veröffentlichungsversion. Bestätigen Sie das tatsächliche XML-Schema und leiten Sie aus der Extraktionsunterstützung keine Übermittlung an die Steuerplattform ab."
+    },
+    "saudi-arabia": {
+      "name": "Saudi-Arabien",
+      "scope": "Für ZATCA Fatoorah, Reporting, Simplified und Tax Invoice gibt es separate Einträge.",
+      "distinction": "Diese Bezeichnungen beschreiben unterschiedliche Prozesse und Rechnungsvarianten. Das Einlesen belegt keine Signierung, Freigabe oder Meldung über ZATCA.",
+      "narration": "Für ZATCA Fatoorah, Reporting, Simplified und Tax Invoice gibt es separate Einträge. Diese Bezeichnungen beschreiben unterschiedliche Prozesse und Rechnungsvarianten. Das Einlesen belegt keine Signierung, Freigabe oder Meldung über ZATCA."
+    },
+    "turkey": {
+      "name": "Türkei",
+      "scope": "Turkey E-Fatura und E-Arsiv sind separate konfigurierte Familien.",
+      "distinction": "Prüfen Sie das Profil und die Dokumentstruktur der Quelldatei. Die Familienbezeichnung identifiziert nicht jede UBL-TR-Veröffentlichung und belegt keine Zustellung über die Steuerplattform.",
+      "narration": "Turkey E-Fatura und E-Arsiv sind separate konfigurierte Familien. Prüfen Sie das Profil und die Dokumentstruktur der Quelldatei. Die Familienbezeichnung identifiziert nicht jede UBL-TR-Veröffentlichung und belegt keine Zustellung über die Steuerplattform."
+    },
+    "united-arab-emirates": {
+      "name": "Vereinigte Arabische Emirate",
+      "scope": "UAE VAT Invoice ist die konfigurierte Bezeichnung.",
+      "distinction": "Eine Zuordnung für Mehrwertsteuerrechnungen belegt nicht die Unterstützung jeder Peppol- oder PINT-Veröffentlichung der VAE. Bestätigen Sie den Datenvertrag und die benötigte Zustellintegration.",
+      "narration": "UAE VAT Invoice ist die konfigurierte Bezeichnung. Eine Zuordnung für Mehrwertsteuerrechnungen belegt nicht die Unterstützung jeder Peppol- oder PINT-Veröffentlichung der VAE. Bestätigen Sie den Datenvertrag und die benötigte Zustellintegration."
+    },
+    "international": {
+      "name": "International",
+      "scope": "Internationale Einträge umfassen Peppol BIS 3.0, UBL 2.1, reines CII, EDI, INVOIC02, cXML, OCI, BOD und SPS Commerce RSX 7.7.4.",
+      "distinction": "Zuordnungen für Rechnungen, Bestellungen, Antworten und Versandanzeigen sind voneinander getrennt. Die Dateiverarbeitung selbst stellt weder einen Peppol-Zugangspunkt noch eine Verbindung zu Handelspartnern bereit.",
+      "narration": "Internationale Einträge umfassen Peppol BIS 3.0, UBL 2.1, reines CII, EDI, INVOIC02, cXML, OCI, BOD und SPS Commerce RSX 7.7.4. Zuordnungen für Rechnungen, Bestellungen, Antworten und Versandanzeigen sind voneinander getrennt. Die Dateiverarbeitung selbst stellt weder einen Peppol-Zugangspunkt noch eine Verbindung zu Handelspartnern bereit."
+    }
+  }
+}

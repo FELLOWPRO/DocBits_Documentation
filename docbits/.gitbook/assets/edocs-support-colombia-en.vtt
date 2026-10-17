@@ -1,0 +1,49 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.224
+Colombia Factura Electronica and Documento
+Soporte have separate entries. The
+
+formats_02
+00:00:05.224 --> 00:00:10.005
+credit-note classification entry has no
+dedicated extraction bundle in the
+
+formats_03
+00:00:10.005 --> 00:00:15.237
+inspected status. Confirm the effective
+mapping instead of inferring support from
+
+formats_04
+00:00:15.237 --> 00:00:16.400
+the invoice entry.
+
+workflow_01
+00:00:17.150 --> 00:00:21.643
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:21.643 --> 00:00:26.705
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:26.705 --> 00:00:27.733
+activate it.
+
+accept_01
+00:00:28.483 --> 00:00:33.243
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:33.243 --> 00:00:38.247
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:38.247 --> 00:00:39.200
+delivery.
+

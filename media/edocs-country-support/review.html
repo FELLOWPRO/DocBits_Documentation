@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DocBits eDocs country explainer review</title>
+<style>body{margin:0;padding:16px;font:16px system-ui;background:#0a2531;color:#f5f5f5}main{max-width:960px;margin:auto}video{width:100%;display:block}h1{font-size:22px}::cue{font:16px system-ui;background:#0a2531ee;color:white}p{overflow-wrap:anywhere}</style>
+<main><h1></h1><video controls playsinline preload="metadata" tabindex="0"><track kind="captions" default></video><p id="transcript"></p></main>
+<script type="module">
+const params=new URLSearchParams(location.search),locale=params.get('lang')||'de',country=params.get('country')||'germany';
+const text=await fetch(`translations/${locale}.json`).then(r=>r.json());
+const page='edocs_country_'+country.replaceAll('-','_');
+const folders={en:'docbits',de:'deutsch',es:'espanol',fr:'french',it:'italian',nl:'dutch',pl:'polish',pt:'portuguese',zh:'chinese'};
+const base=`../../${folders[locale]}/.gitbook/assets/edocs-support-${country}-${locale}`;
+document.documentElement.lang=locale;document.querySelector('h1').textContent=text.countries[country].name+' — '+text.video_title;
+const video=document.querySelector('video');video.src=base+'.mp4';video.poster=base+'.png';
+const track=video.querySelector('track');track.src=base+'.vtt';track.srclang=locale;track.label=locale;video.load();
+document.querySelector('#transcript').textContent=text.countries[country].narration+' '+(country==='costa-rica'?text.narration_unconfirmed:text.narration_workflow)+' '+text.narration_accept;
+</script>

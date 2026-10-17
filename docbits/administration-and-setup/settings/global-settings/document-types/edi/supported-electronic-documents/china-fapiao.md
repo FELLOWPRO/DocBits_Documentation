@@ -6,6 +6,12 @@ description: >-
 
 # 🇨🇳 CHINA FAPIAO
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [China](countries/china.md). The documented adapter uses the XML namespace urn:china:tax:fapiao:1.0. Do not assume that every native OFD, PDF or tax-platform export uses that contract.
+{% endhint %}
+
 | Property             | Value                                                            |
 | -------------------- | ---------------------------------------------------------------- |
 | **Country / Region** | China                                                            |
@@ -14,7 +20,7 @@ description: >-
 | **Standard**         | Fapiao (发票), State Taxation Administration                       |
 | **Locale**           | `zh_CN`                                                          |
 
-Fapiao (发票) is the Chinese tax invoice standard issued under the authority of the State Taxation Administration (STA / 国家税务总局). All Fapiao documents share the `urn:china:tax:fapiao:1.0` namespace. DocBits auto-detects the Fapiao type via the `fapiao_type` element and routes to the appropriate extraction rules:
+The catalogue includes Fapiao, E-Fapiao, General VAT Invoice and Special VAT Invoice. The documented adapter uses the XML namespace urn:china:tax:fapiao:1.0. Do not assume that every native OFD, PDF or tax-platform export uses that contract.
 
 | fapiao\_type value | Document Type                                      |
 | ------------------ | -------------------------------------------------- |

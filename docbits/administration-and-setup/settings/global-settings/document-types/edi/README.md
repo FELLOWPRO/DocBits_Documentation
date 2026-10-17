@@ -25,3 +25,7 @@ In Docbits, the EDI settings provide tools for defining and managing the structu
 ## Effective rules and activation
 
 If an electronic credit note appears as Invoice, follow the [classification troubleshooting guide](credit-note-recognized-as-invoice.md). It covers the effective custom/default source, type codes, Extraction Paths and safe activation.
+
+## Country guides
+
+See the country guides for exact format labels, syntax, version limits and the inspected configuration state. [eDocs formats, versions and country guides](supported-electronic-documents/README.md).

@@ -4,6 +4,12 @@ description: FACTURAE electronic document support in DocBits
 
 # 🇪🇸 FACTURAE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Spain](countries/spain.md). Check the namespace and schema version. Extracting a signed XML file does not by itself verify its signature or its acceptance by FACe.
+{% endhint %}
+
 | Property             | Value                                    |
 | -------------------- | ---------------------------------------- |
 | **Country / Region** | Spain                                    |

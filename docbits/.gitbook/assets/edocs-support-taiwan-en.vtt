@@ -1,0 +1,40 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.531
+Taiwan eGUI is the configured family. The
+family label does not certify every MIG
+
+formats_02
+00:00:06.531 --> 00:00:12.767
+release. Check the actual XML schema and
+test representative electronic invoices.
+
+workflow_01
+00:00:13.517 --> 00:00:18.010
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:18.010 --> 00:00:23.072
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:23.072 --> 00:00:24.100
+activate it.
+
+accept_01
+00:00:24.850 --> 00:00:29.610
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:29.610 --> 00:00:34.614
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:34.614 --> 00:00:35.567
+delivery.
+

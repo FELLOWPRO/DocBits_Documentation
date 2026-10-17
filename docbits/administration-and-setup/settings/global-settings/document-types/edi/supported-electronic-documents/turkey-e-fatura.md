@@ -4,6 +4,12 @@ description: TURKEY E-FATURA electronic document support in DocBits
 
 # 🇹🇷 TURKEY E-FATURA
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Turkey](countries/turkey.md). Check the source profile and document structure. The family label does not identify every UBL-TR release or establish delivery through the tax platform.
+{% endhint %}
+
 | Property             | Value                                   |
 | -------------------- | --------------------------------------- |
 | **Country / Region** | Turkey                                  |

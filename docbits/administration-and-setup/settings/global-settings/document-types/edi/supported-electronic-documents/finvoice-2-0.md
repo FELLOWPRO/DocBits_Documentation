@@ -4,6 +4,12 @@ description: FINVOICE 2.0 electronic document support in DocBits
 
 # 🇫🇮 FINVOICE 2.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Finland](countries/finland.md). Check the source version before choosing a mapping. The TEAPPSXML label does not state a release.
+{% endhint %}
+
 | Property             | Value                |
 | -------------------- | -------------------- |
 | **Country / Region** | Finland              |

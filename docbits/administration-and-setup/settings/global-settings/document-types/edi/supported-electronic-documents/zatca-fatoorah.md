@@ -4,6 +4,12 @@ description: ZATCA FATOORAH electronic document support in DocBits
 
 # 🇸🇦 ZATCA FATOORAH
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Saudi Arabia](countries/saudi-arabia.md). These labels describe different processes and invoice variants. Parsing does not prove signing, clearance or reporting through ZATCA.
+{% endhint %}
+
 | Property             | Value                                                     |
 | -------------------- | --------------------------------------------------------- |
 | **Country / Region** | Saudi Arabia                                              |

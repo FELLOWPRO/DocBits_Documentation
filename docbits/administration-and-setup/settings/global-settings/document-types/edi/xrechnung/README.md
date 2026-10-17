@@ -32,3 +32,7 @@ The mapping is based on the following standards:
 * **UN/CEFACT CII**: The base for XRechnung CII XML structure.
 * **OAGIS/OASIS**: The standard for Infor BODs.
 * **EN 16931**: The European standard for e-invoicing.
+
+## Country guides
+
+See the country guides for exact format labels, syntax, version limits and the inspected configuration state. [eDocs formats, versions and country guides](../supported-electronic-documents/README.md).

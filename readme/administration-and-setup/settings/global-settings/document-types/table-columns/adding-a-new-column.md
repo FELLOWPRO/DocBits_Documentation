@@ -13,7 +13,7 @@ Fügen Sie eine Spalte hinzu, wenn pro Position ein Wert erfasst werden muss, de
 1. Öffnen Sie **Settings → Global Settings → Document Types → Table Columns**.
 2. Klicken Sie auf **Add new table column**.
 
-<figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="Dialog Add new table column mit Title, Is column required, Select column type und Select Table"><figcaption><p>Add new table column</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog-de.png" alt="Dialog Add new table column mit Title, Is column required, Select column type und Select Table"><figcaption><p>Add new table column</p></figcaption></figure>
 
 3. Füllen Sie den Dialog aus:
 

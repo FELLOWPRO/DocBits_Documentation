@@ -200,3 +200,7 @@ DocBits 支持多个版本的 ZUGFeRD 标准：
 | `SpecifiedTradeProduct/OriginTradeCountry/ID`                 | `COUNTRY_OF_ORIGIN`      | `CountryOfOrigin`       | STRING | 原产国       |
 | `SpecifiedTradeProduct/ApplicableProductCharacteristic/Value` | `PRODUCT_CHARACTERISTIC` | `ProductCharacteristic` | STRING | 商品特征     |
 | `ActualDeliverySupplyChainEvent/OccurrenceDateTime`           | `DELIVERY_DATE`          | `ActualDeliveryDate`    | DATE   | 行项目交货日期 |
+
+## 实际生效的规则与激活
+
+如果电子贷项通知单显示为 Invoice，请按照[分类故障排查指南](../credit-note-recognized-as-invoice.md)进行检查。该指南涵盖实际生效的自定义或默认源代码、类型代码、Extraction Paths，以及安全激活步骤。

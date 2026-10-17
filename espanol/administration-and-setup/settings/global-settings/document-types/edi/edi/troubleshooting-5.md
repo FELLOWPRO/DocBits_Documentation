@@ -35,3 +35,7 @@ hidden: true
 * Utilice recursos como foros, capacitación o soporte de proveedores de EDI para obtener asistencia adicional con la resolución de problemas.
 
 Al aplicar sistemáticamente estos consejos, puede resolver eficazmente los problemas de las transacciones EDI y garantizar la fiabilidad de sus comunicaciones comerciales electrónicas.
+
+## Reglas utilizadas y activación
+
+Si una nota de crédito electrónica aparece como Invoice, siga la [guía de resolución de problemas de clasificación](../credit-note-recognized-as-invoice.md). Explica el origen personalizado o predeterminado que se está utilizando, los códigos de tipo, Extraction Paths y la activación segura.

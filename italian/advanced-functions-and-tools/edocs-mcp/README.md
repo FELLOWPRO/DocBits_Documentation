@@ -139,3 +139,7 @@ Il tentativo di scrivere su `00000000-0000-0000-0000-000000000000` restituisce:
   "detail": "Writing to the default org is forbidden via MCP. Default rules are immutable and shared across all customers."
 }
 ```
+
+## Regole effettivamente utilizzate e attivazione
+
+Se una nota di credito elettronica appare come Invoice, seguite la [guida alla diagnosi della classificazione](../../administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md). Descrive la sorgente personalizzata o predefinita effettivamente utilizzata, i codici del tipo, Extraction Paths e l’attivazione in sicurezza.

@@ -78,3 +78,7 @@ Cette fonction est essentielle pour vérifier que vos expressions XPath sont cor
 ## 6. Guide vidéo
 
 Un guide vidéo pour ce type de fichier est disponible sur la [page des vidéos.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Utilisez-le pour suivre la configuration, l'édition et l'aperçu.
+
+## Règles effectivement utilisées et activation
+
+Si un avoir électronique apparaît comme Invoice, suivez le [guide de diagnostic de la classification](../credit-note-recognized-as-invoice.md). Il couvre la source personnalisée ou par défaut effectivement utilisée, les codes de type, Extraction Paths et l’activation en toute sécurité.

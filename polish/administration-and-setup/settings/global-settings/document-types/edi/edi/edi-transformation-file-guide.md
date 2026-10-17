@@ -62,3 +62,7 @@ Jest to szczególnie przydatne do debugowania odwzorowań XSLT i zapewnienia, ż
 ## 6. Przewodnik Wideo
 
 Przewodnik wideo dla tego typu pliku jest dostępny na [Stronie z Filmami.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Użyj go, aby śledzić konfigurację, edycję i podgląd.
+
+## Faktycznie używane reguły i aktywacja
+
+Reguły specyficzne dla organizacji mają pierwszeństwo przed regułami domyślnymi dla wykrytego formatu eDoc. Sprawdź aktywną TRANSFORMATION i sprawdź, który węzeł dostarcza invoice_type w przekształconym pliku XML; ścieżka zależy od formatu. Save zapisuje wersję roboczą; po testach użyj znacznika wyboru, aby ją aktywować. Wygenerowany Preview nie potwierdza zapisanego typu dokumentu. [Przewodnik rozwiązywania problemów z klasyfikacją](../credit-note-recognized-as-invoice.md) opisuje kody 381/261, późniejsze skrypty i środki ostrożności przy ponownym przetwarzaniu.

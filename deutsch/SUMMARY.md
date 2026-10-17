@@ -248,6 +248,7 @@
         * [Best Practices](administration-and-setup/settings/global-settings/document-types/script/best-practices-5.md)
         * [Fehlerbehebung](administration-and-setup/settings/global-settings/document-types/script/troubleshooting-4.md)
       * [E-Dokumente](administration-and-setup/settings/global-settings/document-types/edi/README.md)
+        * [Elektronische Gutschrift wird als Rechnung erkannt](administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md)
         * [Currently Supported E-Invoice Standards](administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md)
           * [Roadmap](administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/roadmap.md)
         * [E-Rechnungs-Beispiele](administration-and-setup/settings/global-settings/document-types/edi/e-invoice-examples/README.md)

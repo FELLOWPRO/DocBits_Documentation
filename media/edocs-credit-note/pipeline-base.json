@@ -1,0 +1,13 @@
+{
+  "api_commit": "93003bcc594daf45813375c5a714223104fe7db6",
+  "renderer_image": "sha256:b3f6f7100ecc8c251a70b5294246b563b119b2c9ae5d83fb5c3472bbf94ce90f",
+  "environment_verification": "Passed original toolchain.verify(), unchanged lock",
+  "files": {
+    "build.py": "7262f7d7edd5c80ec697688f0722b071f24830503950a26becba3d0bbb34a517",
+    "tts.py": "e22e9243a6482e1e8f57c4da71c4163fa3fd92dc7d43ef7c7375a1008ff9af1c",
+    "qa.py": "3bc8f54bd39f003c3634d0ff1c4cf1a3e75452bde3c2c46e4b92bcb8e82b3a5f",
+    "manifest.py": "fa3bc195127fccd5eb90214c2e200aa6a4fc1929c029274b197b6804fbc23d2a",
+    "manifest.schema.json": "926be47b1b8c6f905e7e9f1658e74d5bedc5a53236968c3af4144f6a8d5e78d7",
+    "scenes/common.py": "31266b6be0f452375056400d0b4c1d93e723736e4ffc3e42bb7129d520065932"
+  }
+}

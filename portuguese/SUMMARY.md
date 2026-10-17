@@ -248,6 +248,7 @@
         * [Boas práticas](administration-and-setup/settings/global-settings/document-types/script/best-practices-5.md)
         * [Resolução de problemas](administration-and-setup/settings/global-settings/document-types/script/troubleshooting-4.md)
       * [Documenti Elettronici](administration-and-setup/settings/global-settings/document-types/edi/README.md)
+        * [Nota de crédito eletrónica reconhecida como fatura](administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md)
         * [Currently Supported E-Invoice Standards](administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md)
           * [Roteiro](administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/roadmap.md)
         * [Exemplos de Fatura Eletrônica](administration-and-setup/settings/global-settings/document-types/edi/e-invoice-examples/README.md)

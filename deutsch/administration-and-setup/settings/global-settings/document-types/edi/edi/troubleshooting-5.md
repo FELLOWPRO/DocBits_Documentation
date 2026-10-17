@@ -35,3 +35,7 @@ hidden: true
 * Nutzen Sie Ressourcen wie Foren, Schulungen oder Support von EDI-Anbietern für zusätzliche Unterstützung bei der Fehlerbehebung.
 
 Durch die systematische Anwendung dieser Tipps können Sie EDI-Transaktionen effektiv Fehler beheben und die Zuverlässigkeit Ihrer elektronischen Geschäftskommunikation sicherstellen.
+
+## Verwendete Regeln und Aktivierung
+
+Wenn eine elektronische Gutschrift als Invoice erscheint, folgen Sie der [Anleitung zur Fehlerbehebung bei der Klassifizierung](../credit-note-recognized-as-invoice.md). Sie erläutert die verwendete angepasste oder standardmäßige Quelle, die Typcodes, Extraction Paths und die sichere Aktivierung.

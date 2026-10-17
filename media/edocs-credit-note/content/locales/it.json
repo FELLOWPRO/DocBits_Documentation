@@ -1,0 +1,93 @@
+{
+  "locale": "it",
+  "title": "Verificare la classificazione delle note di credito elettroniche",
+  "english_audio_badge": "",
+  "segments": [
+    {
+      "id": "symptom",
+      "scene_id": "symptom",
+      "narration": "Una nota di credito elettronica appare come Invoice. Leggete l’XML originale. Il codice del tipo 381 identifica una nota di credito.",
+      "caption": "Una nota di credito elettronica appare come Invoice. Leggete l’XML originale. Il codice del tipo 381 identifica una nota di credito."
+    },
+    {
+      "id": "codes",
+      "scene_id": "codes",
+      "narration": "Le regole predefinite di FACTURX e ZUGFeRD riconoscono anche 261. I codici 383 e 384 indicano una nota di debito e una fattura corretta. Non classificateli come note di credito.",
+      "caption": "Le regole predefinite di FACTURX e ZUGFeRD riconoscono anche 261. I codici 383 e 384 indicano una nota di debito e una fattura corretta. Non classificateli come note di credito."
+    },
+    {
+      "id": "source",
+      "scene_id": "source",
+      "narration": "Aprite E-Doc per il formato rilevato. La trasformazione personalizzata dell’organizzazione ha la precedenza su quella predefinita. Verificate la versione attiva.",
+      "caption": "Aprite E-Doc per il formato rilevato. La trasformazione personalizzata dell’organizzazione ha la precedenza su quella predefinita. Verificate la versione attiva."
+    },
+    {
+      "id": "transform",
+      "scene_id": "transform",
+      "narration": "Per FACTURX, cercate INVOICE_TYPE. Una costante Invoice può eliminare il codice originale della nota di credito. Confrontate la trasformazione personalizzata con quella predefinita.",
+      "caption": "Per FACTURX, cercate INVOICE_TYPE. Una costante Invoice può eliminare il codice originale della nota di credito. Confrontate la trasformazione personalizzata con quella predefinita."
+    },
+    {
+      "id": "paths",
+      "scene_id": "paths",
+      "narration": "Provate l’XML trasformato. Verificate che Extraction Paths legga invoice_type dal nodo corretto per questo formato. Esaminate gli script successivi e il valore memorizzato.",
+      "caption": "Provate l’XML trasformato. Verificate che Extraction Paths legga invoice_type dal nodo corretto per questo formato. Esaminate gli script successivi e il valore memorizzato."
+    },
+    {
+      "id": "activate",
+      "scene_id": "activate",
+      "narration": "Create una bozza. Save non la attiva. Provate fatture e note di credito rappresentative. Attivatela con il segno di spunta solo dopo il superamento delle verifiche.",
+      "caption": "Create una bozza. Save non la attiva. Provate fatture e note di credito rappresentative. Attivatela con il segno di spunta solo dopo il superamento delle verifiche."
+    },
+    {
+      "id": "safety",
+      "scene_id": "safety",
+      "narration": "Verificate un nuovo documento, inclusi importi ed esportazione. Conservate le mappature personalizzate. Prima di riavviare un vecchio documento, controllate approvazioni, esportazioni e modifiche manuali.",
+      "caption": "Verificate un nuovo documento, inclusi importi ed esportazione. Conservate le mappature personalizzate. Prima di riavviare un vecchio documento, controllate approvazioni, esportazioni e modifiche manuali."
+    },
+    {
+      "id": "sign",
+      "scene_id": "sign",
+      "narration": "L’impostazione del segno negativo è attiva per impostazione predefinita, ma può essere disattivata. Confermate la classificazione e la convenzione del segno prevista da Infor ERP o SAP.",
+      "caption": "L’impostazione del segno negativo è attiva per impostazione predefinita, ma può essere disattivata. Confermate la classificazione e la convenzione del segno prevista da Infor ERP o SAP."
+    }
+  ],
+  "labels": {
+    "xml": "XML originale",
+    "stored": "Valore memorizzato",
+    "invoice": "Invoice",
+    "credit": "Credit Note",
+    "credit_codes": "Nota di credito",
+    "other_codes": "Altri tipi di documento",
+    "debit": "Nota di debito",
+    "corrected": "Fattura corretta",
+    "source": "Sorgente utilizzata",
+    "custom": "Custom",
+    "default": "Default",
+    "active": "Versione attiva",
+    "transform": "Trasformazione",
+    "constant": "Valore fisso",
+    "compare": "Confrontare le sorgenti",
+    "paths": "Extraction Paths",
+    "scripts": "Script successivi",
+    "verify": "Verificare il valore memorizzato",
+    "draft": "Bozza",
+    "save": "Salvare",
+    "test": "Testare",
+    "activate": "Attivare",
+    "saved": "Bozza salvata",
+    "check": "Segno di spunta",
+    "safety": "Nuovo documento di test",
+    "preserve": "Conservare le mappature personalizzate",
+    "history": "Verificare i documenti storici",
+    "approvals": "Approvazioni",
+    "exports": "Esportazioni",
+    "edits": "Modifiche manuali",
+    "sign": "Verificare il segno degli importi",
+    "enabled": "Attivo per impostazione predefinita",
+    "configurable": "Configurabile",
+    "result": "Classificazione + esportazione",
+    "transformed": "XML trasformato"
+  },
+  "notes": {}
+}

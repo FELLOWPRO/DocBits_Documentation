@@ -248,6 +248,7 @@
         * [Najlepsze praktyki](administration-and-setup/settings/global-settings/document-types/script/best-practices-5.md)
         * [Rozwiązywanie problemów](administration-and-setup/settings/global-settings/document-types/script/troubleshooting-4.md)
       * [e-dokumenty](administration-and-setup/settings/global-settings/document-types/edi/README.md)
+        * [Elektroniczna nota kredytowa jest rozpoznawana jako faktura](administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md)
         * [Currently Supported E-Invoice Standards](administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md)
           * [Mapa Drogowa](administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/roadmap.md)
         * [Przykłady E-Faktur](administration-and-setup/settings/global-settings/document-types/edi/e-invoice-examples/README.md)

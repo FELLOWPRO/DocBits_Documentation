@@ -1,0 +1,848 @@
+[
+  {
+    "loudness_lufs": -16.38,
+    "true_peak_dbtp": -4.63,
+    "locale": "en",
+    "duration_ms": 88367,
+    "bytes": 2927877,
+    "sha256": "587d07d5912aa354f2fa3b94cfaf3780d0d071ab72ee07f60542130aff74fd0b",
+    "frames": 2651,
+    "full_decode": true,
+    "faststart": true,
+    "codec": "H.264 Main / AAC-LC",
+    "transcript_bytes": 1147,
+    "audio_check": {
+      "audio_locale": "en",
+      "language_check": "cached request language and exact narration text; not acoustic recognition",
+      "decoded_sample_peak": 0.5826725363731384,
+      "silent_join_peak": 0.0,
+      "segments": [
+        {
+          "segment_id": "symptom",
+          "speech_ms": 7758.375,
+          "caption_start_ms": 250,
+          "caption_end_ms": 8033,
+          "speech_end_ms": 8008.375,
+          "tail_ms": 524.625,
+          "cache_key": "7c759543a84c4831ae0f236e468d942434667079c53ba55ca68f43d10211a2e9"
+        },
+        {
+          "segment_id": "codes",
+          "speech_ms": 12956.75,
+          "caption_start_ms": 8783,
+          "caption_end_ms": 21767,
+          "speech_end_ms": 21739.75,
+          "tail_ms": 527.25,
+          "cache_key": "8ac46766858ab250b5f905f4a0437e8cb3a52e7417dd76a060721c46ccd15fbf"
+        },
+        {
+          "segment_id": "source",
+          "speech_ms": 9874.292,
+          "caption_start_ms": 22517,
+          "caption_end_ms": 32400,
+          "speech_end_ms": 32391.292,
+          "tail_ms": 508.708,
+          "cache_key": "d37bb9b0a77d2c4227fdb414eafd0124e159a7e8def6f25e3c1477ab839912f9"
+        },
+        {
+          "segment_id": "transform",
+          "speech_ms": 10266.125,
+          "caption_start_ms": 33150,
+          "caption_end_ms": 43433,
+          "speech_end_ms": 43416.125,
+          "tail_ms": 516.875,
+          "cache_key": "5ea60d154f4bafa4568c9ad97469adba230aed19f2bcd96acd33ab44a643b7fe"
+        },
+        {
+          "segment_id": "paths",
+          "speech_ms": 10866.958,
+          "caption_start_ms": 44183,
+          "caption_end_ms": 55067,
+          "speech_end_ms": 55049.958,
+          "tail_ms": 517.042,
+          "cache_key": "3063d62b5cd1a2fcf41164166f7bbe9d47cde6baf3d6d0ff350aef23056136c5"
+        },
+        {
+          "segment_id": "activate",
+          "speech_ms": 10161.646,
+          "caption_start_ms": 55817,
+          "caption_end_ms": 66000,
+          "speech_end_ms": 65978.646,
+          "tail_ms": 521.354,
+          "cache_key": "d17666b1225d9371f979c502a3e039881877b0dc9d8b51c6848044c7e99d405d"
+        },
+        {
+          "segment_id": "safety",
+          "speech_ms": 10292.25,
+          "caption_start_ms": 66750,
+          "caption_end_ms": 77067,
+          "speech_end_ms": 77042.25,
+          "tail_ms": 524.75,
+          "cache_key": "45fd220e9b963d5a0095a912906c640a4a8f44759bab8ab1ca55302aca804bf3"
+        },
+        {
+          "segment_id": "sign",
+          "speech_ms": 10031.021,
+          "caption_start_ms": 77817,
+          "caption_end_ms": 87867,
+          "speech_end_ms": 87848.021,
+          "tail_ms": 518.979,
+          "cache_key": "6bd6912036d8200e36a6121e0f4cda75a0c972fb002f2052b4a146064c109f8c"
+        }
+      ],
+      "listening_review": "not performed; pronunciation and subjective clicks require listening"
+    }
+  },
+  {
+    "loudness_lufs": -16.34,
+    "true_peak_dbtp": -4.42,
+    "locale": "de",
+    "duration_ms": 113167,
+    "bytes": 3987235,
+    "sha256": "19e17cfccd50e1426f343246a5cb0d6feaecb86090758df6e7d806a28e53291a",
+    "frames": 3395,
+    "full_decode": true,
+    "faststart": true,
+    "codec": "H.264 Main / AAC-LC",
+    "transcript_bytes": 1461,
+    "audio_check": {
+      "audio_locale": "de",
+      "language_check": "cached request language and exact narration text; not acoustic recognition",
+      "decoded_sample_peak": 0.5890635251998901,
+      "silent_join_peak": 0.0,
+      "segments": [
+        {
+          "segment_id": "symptom",
+          "speech_ms": 10997.562,
+          "caption_start_ms": 250,
+          "caption_end_ms": 11267,
+          "speech_end_ms": 11247.562,
+          "tail_ms": 519.438,
+          "cache_key": "a000948c9c23f8dce31e65f0d38681d274f5b2c5cf93c06f16b34a01b38d949c"
+        },
+        {
+          "segment_id": "codes",
+          "speech_ms": 16613.896,
+          "caption_start_ms": 12017,
+          "caption_end_ms": 28633,
+          "speech_end_ms": 28630.896,
+          "tail_ms": 502.104,
+          "cache_key": "47266e0d0102e6275bdd122cdce756c4d3722c63b9c0ebe06b61b9c63fc5c180"
+        },
+        {
+          "segment_id": "source",
+          "speech_ms": 11049.812,
+          "caption_start_ms": 29383,
+          "caption_end_ms": 40433,
+          "speech_end_ms": 40432.812,
+          "tail_ms": 500.188,
+          "cache_key": "354846744a73fcb0ca2c93f6d66f998ad8be78c736c392291840a7439e1b44cd"
+        },
+        {
+          "segment_id": "transform",
+          "speech_ms": 12721.646,
+          "caption_start_ms": 41183,
+          "caption_end_ms": 53933,
+          "speech_end_ms": 53904.646,
+          "tail_ms": 528.354,
+          "cache_key": "3afa636fe7a456d1b3463ec50b49b8343cbc8bea7b1ca042c396a4a6a021975e"
+        },
+        {
+          "segment_id": "paths",
+          "speech_ms": 13792.667,
+          "caption_start_ms": 54683,
+          "caption_end_ms": 68500,
+          "speech_end_ms": 68475.667,
+          "tail_ms": 524.333,
+          "cache_key": "582e28b4e733b2ef00ddd05e8905e2787706bbbb1fe9ef28a647b33156190689"
+        },
+        {
+          "segment_id": "activate",
+          "speech_ms": 12120.833,
+          "caption_start_ms": 69250,
+          "caption_end_ms": 81400,
+          "speech_end_ms": 81370.833,
+          "tail_ms": 529.167,
+          "cache_key": "3e14bc3acd1315b6dab039220ac9671064ede0bf96b248f857dce305829c1821"
+        },
+        {
+          "segment_id": "safety",
+          "speech_ms": 14236.75,
+          "caption_start_ms": 82150,
+          "caption_end_ms": 96400,
+          "speech_end_ms": 96386.75,
+          "tail_ms": 513.25,
+          "cache_key": "3f204b120e5205cb37db7864215e9b55f56c787c86a49429ad1c126d0afbe9d8"
+        },
+        {
+          "segment_id": "sign",
+          "speech_ms": 15490.625,
+          "caption_start_ms": 97150,
+          "caption_end_ms": 112667,
+          "speech_end_ms": 112640.625,
+          "tail_ms": 526.375,
+          "cache_key": "d92e3e0f573840c3fd309b65234f2a8d932be5ba6a2f93c8407addf0183cb693"
+        }
+      ],
+      "listening_review": "not performed; pronunciation and subjective clicks require listening"
+    }
+  },
+  {
+    "loudness_lufs": -16.5,
+    "true_peak_dbtp": -4.31,
+    "locale": "es",
+    "duration_ms": 116767,
+    "bytes": 4196546,
+    "sha256": "a10c7b6151257978529711d1ad20a3430801d8f83a7588a7b25d368bfe1a99be",
+    "frames": 3503,
+    "full_decode": true,
+    "faststart": true,
+    "codec": "H.264 Main / AAC-LC",
+    "transcript_bytes": 1438,
+    "audio_check": {
+      "audio_locale": "es",
+      "language_check": "cached request language and exact narration text; not acoustic recognition",
+      "decoded_sample_peak": 0.6085159778594971,
+      "silent_join_peak": 0.0,
+      "segments": [
+        {
+          "segment_id": "symptom",
+          "speech_ms": 12016.333,
+          "caption_start_ms": 250,
+          "caption_end_ms": 12267,
+          "speech_end_ms": 12266.333,
+          "tail_ms": 500.667,
+          "cache_key": "026eb8531cf6a31bebe57fce95744e3f7cec8aab209fdc2f6127a97fe15f3015"
+        },
+        {
+          "segment_id": "codes",
+          "speech_ms": 17920.0,
+          "caption_start_ms": 13017,
+          "caption_end_ms": 30967,
+          "speech_end_ms": 30937.0,
+          "tail_ms": 530.0,
+          "cache_key": "0ae580e039c4767594accfc9fd58f7e66d66a6fc8c2e584f3f19dacb11add738"
+        },
+        {
+          "segment_id": "source",
+          "speech_ms": 10631.854,
+          "caption_start_ms": 31717,
+          "caption_end_ms": 42367,
+          "speech_end_ms": 42348.854,
+          "tail_ms": 518.146,
+          "cache_key": "8d0010dd26b87b80397a6335b193158d15a28a339cc88480fa94d874c4e43e4a"
+        },
+        {
+          "segment_id": "transform",
+          "speech_ms": 13818.792,
+          "caption_start_ms": 43117,
+          "caption_end_ms": 56967,
+          "speech_end_ms": 56935.792,
+          "tail_ms": 531.208,
+          "cache_key": "74729c5bb4d3af144f1beb783e13fb04b5b9c69e9bd75cc36b936aa26fa029f7"
+        },
+        {
+          "segment_id": "paths",
+          "speech_ms": 12800.0,
+          "caption_start_ms": 57717,
+          "caption_end_ms": 70533,
+          "speech_end_ms": 70517.0,
+          "tail_ms": 516.0,
+          "cache_key": "e6aaae54f6a7c5cc21e86b471b7e08410a4719cd5d441f812abab074df230902"
+        },
+        {
+          "segment_id": "activate",
+          "speech_ms": 14236.75,
+          "caption_start_ms": 71283,
+          "caption_end_ms": 85533,
+          "speech_end_ms": 85519.75,
+          "tail_ms": 513.25,
+          "cache_key": "54a68a9c067e24d9bf3cc7eca28d6c8b5da1f3904043e80a17a079e6f04da242"
+        },
+        {
+          "segment_id": "safety",
+          "speech_ms": 15647.354,
+          "caption_start_ms": 86283,
+          "caption_end_ms": 101933,
+          "speech_end_ms": 101930.354,
+          "tail_ms": 502.646,
+          "cache_key": "f654753d370c8ba5a13db08963b0538402870ccbd066e5998486104cfbb426a9"
+        },
+        {
+          "segment_id": "sign",
+          "speech_ms": 13557.562,
+          "caption_start_ms": 102683,
+          "caption_end_ms": 116267,
+          "speech_end_ms": 116240.562,
+          "tail_ms": 526.438,
+          "cache_key": "0583ef94af081a3ddfb38d1e490ca93c547aad4cbc814e6fa1f12113f44f7d26"
+        }
+      ],
+      "listening_review": "not performed; pronunciation and subjective clicks require listening"
+    }
+  },
+  {
+    "loudness_lufs": -16.3,
+    "true_peak_dbtp": -4.57,
+    "locale": "fr",
+    "duration_ms": 99567,
+    "bytes": 3487470,
+    "sha256": "80139d133fe0cfb91bfdcc150a6de99334fbb446c17fa46257021da69ac0edbb",
+    "frames": 2987,
+    "full_decode": true,
+    "faststart": true,
+    "codec": "H.264 Main / AAC-LC",
+    "transcript_bytes": 1352,
+    "audio_check": {
+      "audio_locale": "fr",
+      "language_check": "cached request language and exact narration text; not acoustic recognition",
+      "decoded_sample_peak": 0.5803227424621582,
+      "silent_join_peak": 0.0,
+      "segments": [
+        {
+          "segment_id": "symptom",
+          "speech_ms": 8489.812,
+          "caption_start_ms": 250,
+          "caption_end_ms": 8767,
+          "speech_end_ms": 8739.812,
+          "tail_ms": 527.188,
+          "cache_key": "53818094f60573611b39a19ff181d554fb0a421184be9be2b80552b20185bd31"
+        },
+        {
+          "segment_id": "codes",
+          "speech_ms": 16378.792,
+          "caption_start_ms": 9517,
+          "caption_end_ms": 25900,
+          "speech_end_ms": 25895.792,
+          "tail_ms": 504.208,
+          "cache_key": "e352475395df8266fe1914c98cf9fbc1dd1a623bccf0e606e69aa10eaebb41bb"
+        },
+        {
+          "segment_id": "source",
+          "speech_ms": 9874.292,
+          "caption_start_ms": 26650,
+          "caption_end_ms": 36533,
+          "speech_end_ms": 36524.292,
+          "tail_ms": 508.708,
+          "cache_key": "08fbcb53a17246d288b6f5d73ddc0ab33c87f1d04ffd1d641f9374a29bbedcb7"
+        },
+        {
+          "segment_id": "transform",
+          "speech_ms": 10866.958,
+          "caption_start_ms": 37283,
+          "caption_end_ms": 48167,
+          "speech_end_ms": 48149.958,
+          "tail_ms": 517.042,
+          "cache_key": "0189c82110b6deb22b304e3c42827cd80526873dc9e5d4d97f6f0476240a6bc2"
+        },
+        {
+          "segment_id": "paths",
+          "speech_ms": 12303.688,
+          "caption_start_ms": 48917,
+          "caption_end_ms": 61233,
+          "speech_end_ms": 61220.688,
+          "tail_ms": 512.312,
+          "cache_key": "2cae97d2cf43ad374d123134e270ad478e277fa4b945f311e08fa083bdf4e7d2"
+        },
+        {
+          "segment_id": "activate",
+          "speech_ms": 11128.167,
+          "caption_start_ms": 61983,
+          "caption_end_ms": 73133,
+          "speech_end_ms": 73111.167,
+          "tail_ms": 521.833,
+          "cache_key": "2fe5e096d26578dc5ea5827916ed13365ae24fa30400d368ecd0fef8e1dc8cd5"
+        },
+        {
+          "segment_id": "safety",
+          "speech_ms": 13505.312,
+          "caption_start_ms": 73883,
+          "caption_end_ms": 87400,
+          "speech_end_ms": 87388.312,
+          "tail_ms": 511.688,
+          "cache_key": "29d8fbfd68d7a0b4e4704dad25e1a6d67560e3d86a596ca367d9e87fce6ee851"
+        },
+        {
+          "segment_id": "sign",
+          "speech_ms": 10893.062,
+          "caption_start_ms": 88150,
+          "caption_end_ms": 99067,
+          "speech_end_ms": 99043.062,
+          "tail_ms": 523.938,
+          "cache_key": "c94b9e4fb93f33ea44b0b825a9e3b89b0978f7521724afb87ff69d96d114e5da"
+        }
+      ],
+      "listening_review": "not performed; pronunciation and subjective clicks require listening"
+    }
+  },
+  {
+    "loudness_lufs": -16.46,
+    "true_peak_dbtp": -4.4,
+    "locale": "it",
+    "duration_ms": 109667,
+    "bytes": 3853243,
+    "sha256": "629f8dfff42ac863c9dab6fd4ceef966b89fa1c97028d2617ec9b422387c5748",
+    "frames": 3290,
+    "full_decode": true,
+    "faststart": true,
+    "codec": "H.264 Main / AAC-LC",
+    "transcript_bytes": 1394,
+    "audio_check": {
+      "audio_locale": "it",
+      "language_check": "cached request language and exact narration text; not acoustic recognition",
+      "decoded_sample_peak": 0.5986758470535278,
+      "silent_join_peak": 0.0,
+      "segments": [
+        {
+          "segment_id": "symptom",
+          "speech_ms": 10814.708,
+          "caption_start_ms": 250,
+          "caption_end_ms": 11067,
+          "speech_end_ms": 11064.708,
+          "tail_ms": 502.292,
+          "cache_key": "d47dd8d642d7853b79eff3ee4097a55464dd99b675b3ed4aacc7169b6224c7cf"
+        },
+        {
+          "segment_id": "codes",
+          "speech_ms": 16117.562,
+          "caption_start_ms": 11817,
+          "caption_end_ms": 27967,
+          "speech_end_ms": 27934.562,
+          "tail_ms": 532.438,
+          "cache_key": "f340a1d5b09b66604056fb4206af476ada13ae68b2a0824c59d08786edb1adba"
+        },
+        {
+          "segment_id": "source",
+          "speech_ms": 11729.0,
+          "caption_start_ms": 28717,
+          "caption_end_ms": 40467,
+          "speech_end_ms": 40446.0,
+          "tail_ms": 521.0,
+          "cache_key": "6fee31d8077f4eb4dcfd17affae7b780494b0c0766eb45928f0de628d1e8d394"
+        },
+        {
+          "segment_id": "transform",
+          "speech_ms": 13688.167,
+          "caption_start_ms": 41217,
+          "caption_end_ms": 54933,
+          "speech_end_ms": 54905.167,
+          "tail_ms": 527.833,
+          "cache_key": "aeb96e44a4bf6f8a1ada5d99f6c9854e234a41ebfe3c4b43bf166990b9afc2df"
+        },
+        {
+          "segment_id": "paths",
+          "speech_ms": 13035.104,
+          "caption_start_ms": 55683,
+          "caption_end_ms": 68733,
+          "speech_end_ms": 68718.104,
+          "tail_ms": 514.896,
+          "cache_key": "e4cdff38020918b71c3be9d943e9a7d2a037af01224dcbd8a1510130193b2c6e"
+        },
+        {
+          "segment_id": "activate",
+          "speech_ms": 12146.958,
+          "caption_start_ms": 69483,
+          "caption_end_ms": 81633,
+          "speech_end_ms": 81629.958,
+          "tail_ms": 503.042,
+          "cache_key": "19353d44a1f06470e2e1dcf95e9f32ee4d9f83898c508223dc403b821c4f76be"
+        },
+        {
+          "segment_id": "safety",
+          "speech_ms": 13035.104,
+          "caption_start_ms": 82383,
+          "caption_end_ms": 95433,
+          "speech_end_ms": 95418.104,
+          "tail_ms": 514.896,
+          "cache_key": "1572ff9e3f0c9b31259aeb28ca40de96be93a961a79e203386dbc9c50d7de2fc"
+        },
+        {
+          "segment_id": "sign",
+          "speech_ms": 12956.75,
+          "caption_start_ms": 96183,
+          "caption_end_ms": 109167,
+          "speech_end_ms": 109139.75,
+          "tail_ms": 527.25,
+          "cache_key": "e2e007a22267af0d8cd90f39aef5c72fc316097a7891aae35c6aa435a64521eb"
+        }
+      ],
+      "listening_review": "not performed; pronunciation and subjective clicks require listening"
+    }
+  },
+  {
+    "loudness_lufs": -16.48,
+    "true_peak_dbtp": -4.39,
+    "locale": "nl",
+    "duration_ms": 97133,
+    "bytes": 3479916,
+    "sha256": "89cafea8ca53a68e7ecd82976c7e1eae20ff2a6bcfd3da920f8c10c17f6f43de",
+    "frames": 2914,
+    "full_decode": true,
+    "faststart": true,
+    "codec": "H.264 Main / AAC-LC",
+    "transcript_bytes": 1279,
+    "audio_check": {
+      "audio_locale": "nl",
+      "language_check": "cached request language and exact narration text; not acoustic recognition",
+      "decoded_sample_peak": 0.6034938097000122,
+      "silent_join_peak": 0.0,
+      "segments": [
+        {
+          "segment_id": "symptom",
+          "speech_ms": 8542.042,
+          "caption_start_ms": 250,
+          "caption_end_ms": 8800,
+          "speech_end_ms": 8792.042,
+          "tail_ms": 507.958,
+          "cache_key": "7d9d43871054c16d0203aea73fb47c72ee702ba44174bf9d1ac315718724720f"
+        },
+        {
+          "segment_id": "codes",
+          "speech_ms": 13635.938,
+          "caption_start_ms": 9550,
+          "caption_end_ms": 23200,
+          "speech_end_ms": 23185.938,
+          "tail_ms": 514.062,
+          "cache_key": "890e59780346086fa7ebbccf99642669973503ab3df3f70b44b8e5ca5d4d47b2"
+        },
+        {
+          "segment_id": "source",
+          "speech_ms": 10161.646,
+          "caption_start_ms": 23950,
+          "caption_end_ms": 34133,
+          "speech_end_ms": 34111.646,
+          "tail_ms": 521.354,
+          "cache_key": "7015be815bc117bafe34d6351933dd6a586818bf991b78ef9e247d0c146d3347"
+        },
+        {
+          "segment_id": "transform",
+          "speech_ms": 9978.792,
+          "caption_start_ms": 34883,
+          "caption_end_ms": 44867,
+          "speech_end_ms": 44861.792,
+          "tail_ms": 505.208,
+          "cache_key": "6c46b70a808cc8607b81c78ff50efb9dc35ea9c6b46e7be9cf854969c352a281"
+        },
+        {
+          "segment_id": "paths",
+          "speech_ms": 11546.125,
+          "caption_start_ms": 45617,
+          "caption_end_ms": 57167,
+          "speech_end_ms": 57163.125,
+          "tail_ms": 503.875,
+          "cache_key": "0882d96fe2ac2087cf2370ede4a8fd3a3602d3ce7135331c0481292b3a973327"
+        },
+        {
+          "segment_id": "activate",
+          "speech_ms": 11232.667,
+          "caption_start_ms": 57917,
+          "caption_end_ms": 69167,
+          "speech_end_ms": 69149.667,
+          "tail_ms": 517.333,
+          "cache_key": "8202b6074aea9cbdebacf94242569c9f9ad2952908af5083ff8a6a66dc553e0f"
+        },
+        {
+          "segment_id": "safety",
+          "speech_ms": 13792.667,
+          "caption_start_ms": 69917,
+          "caption_end_ms": 83733,
+          "speech_end_ms": 83709.667,
+          "tail_ms": 523.333,
+          "cache_key": "946641d7418ff105feb8e81df4ce258f866e3b4d2fe95a5e57d5f3a99f118e14"
+        },
+        {
+          "segment_id": "sign",
+          "speech_ms": 12120.833,
+          "caption_start_ms": 84483,
+          "caption_end_ms": 96633,
+          "speech_end_ms": 96603.833,
+          "tail_ms": 529.167,
+          "cache_key": "c639a1123fcf0ba586d0660f874a4eb06aab4ca67c770ebe8aa9ed1730bbbedc"
+        }
+      ],
+      "listening_review": "not performed; pronunciation and subjective clicks require listening"
+    }
+  },
+  {
+    "loudness_lufs": -16.38,
+    "true_peak_dbtp": -4.55,
+    "locale": "pl",
+    "duration_ms": 102500,
+    "bytes": 3738339,
+    "sha256": "e69135c9486b0d86cf8888b77e2e4b99afe452adce76594c0636549f336ad624",
+    "frames": 3075,
+    "full_decode": true,
+    "faststart": true,
+    "codec": "H.264 Main / AAC-LC",
+    "transcript_bytes": 1278,
+    "audio_check": {
+      "audio_locale": "pl",
+      "language_check": "cached request language and exact narration text; not acoustic recognition",
+      "decoded_sample_peak": 0.5916761755943298,
+      "silent_join_peak": 0.0,
+      "segments": [
+        {
+          "segment_id": "symptom",
+          "speech_ms": 11598.375,
+          "caption_start_ms": 250,
+          "caption_end_ms": 11867,
+          "speech_end_ms": 11848.375,
+          "tail_ms": 518.625,
+          "cache_key": "d6ab2b314ef4a44bcba9916427f2775941f1fdaac9c51a94727ed1e0620c5012"
+        },
+        {
+          "segment_id": "codes",
+          "speech_ms": 15490.625,
+          "caption_start_ms": 12617,
+          "caption_end_ms": 28133,
+          "speech_end_ms": 28107.625,
+          "tail_ms": 525.375,
+          "cache_key": "74f0702a5b16364067eb7b5548b9c36bf8d0f346ef9e0215b5a96dc56018686f"
+        },
+        {
+          "segment_id": "source",
+          "speech_ms": 10396.75,
+          "caption_start_ms": 28883,
+          "caption_end_ms": 39300,
+          "speech_end_ms": 39279.75,
+          "tail_ms": 520.25,
+          "cache_key": "a1526a8937f5ffba2967d6a39de9ab0e090a51525e338364c02de5c4625b0e35"
+        },
+        {
+          "segment_id": "transform",
+          "speech_ms": 11546.125,
+          "caption_start_ms": 40050,
+          "caption_end_ms": 51600,
+          "speech_end_ms": 51596.125,
+          "tail_ms": 503.875,
+          "cache_key": "2d02d1dd7fff89648b2370ec1f5a0e1926d0f2aea95d47e5dc58ea1e8c1371c1"
+        },
+        {
+          "segment_id": "paths",
+          "speech_ms": 11520.0,
+          "caption_start_ms": 52350,
+          "caption_end_ms": 63900,
+          "speech_end_ms": 63870.0,
+          "tail_ms": 530.0,
+          "cache_key": "c44fc08eb0248a42131698e037d8f0178de637c100405b1f4f340fed1347ec74"
+        },
+        {
+          "segment_id": "activate",
+          "speech_ms": 12486.542,
+          "caption_start_ms": 64650,
+          "caption_end_ms": 77167,
+          "speech_end_ms": 77136.542,
+          "tail_ms": 530.458,
+          "cache_key": "d0e25f098c6361ea98d703e1a288bd4664ce152e9e9b50d98c689d797a9cabff"
+        },
+        {
+          "segment_id": "safety",
+          "speech_ms": 12146.958,
+          "caption_start_ms": 77917,
+          "caption_end_ms": 90067,
+          "speech_end_ms": 90063.958,
+          "tail_ms": 503.042,
+          "cache_key": "fb628b540ffcc6e8dfe239c40f0793f76fa42c1aed8a81c1184a36fe0c3fd403"
+        },
+        {
+          "segment_id": "sign",
+          "speech_ms": 11180.417,
+          "caption_start_ms": 90817,
+          "caption_end_ms": 102000,
+          "speech_end_ms": 101997.417,
+          "tail_ms": 502.583,
+          "cache_key": "c4d8604317529663fe18acdf3916533da1a911b0151591463f7ba71a853a5ffc"
+        }
+      ],
+      "listening_review": "not performed; pronunciation and subjective clicks require listening"
+    }
+  },
+  {
+    "loudness_lufs": -16.28,
+    "true_peak_dbtp": -4.64,
+    "locale": "pt",
+    "duration_ms": 116533,
+    "bytes": 4143007,
+    "sha256": "cc03d3b9ec25afcf8e019af799a053c64362c754c93ee7571c973e77ee5807f1",
+    "frames": 3496,
+    "full_decode": true,
+    "faststart": true,
+    "codec": "H.264 Main / AAC-LC",
+    "transcript_bytes": 1391,
+    "audio_check": {
+      "audio_locale": "pt",
+      "language_check": "cached request language and exact narration text; not acoustic recognition",
+      "decoded_sample_peak": 0.5828495025634766,
+      "silent_join_peak": 0.0,
+      "segments": [
+        {
+          "segment_id": "symptom",
+          "speech_ms": 11363.271,
+          "caption_start_ms": 250,
+          "caption_end_ms": 11633,
+          "speech_end_ms": 11613.271,
+          "tail_ms": 519.729,
+          "cache_key": "a07c409bd56ea3e62a95ab299fcd75a20a7a6d06a294034616c01bfb6e532a80"
+        },
+        {
+          "segment_id": "codes",
+          "speech_ms": 18886.542,
+          "caption_start_ms": 12383,
+          "caption_end_ms": 31300,
+          "speech_end_ms": 31269.542,
+          "tail_ms": 530.458,
+          "cache_key": "edb0767a28a509417c102a348dac176c89411ad0e447040f12e3d9d17d99b39d"
+        },
+        {
+          "segment_id": "source",
+          "speech_ms": 11232.667,
+          "caption_start_ms": 32050,
+          "caption_end_ms": 43300,
+          "speech_end_ms": 43282.667,
+          "tail_ms": 517.333,
+          "cache_key": "dedf52f0b4337da8d5e9655708a5a3456a02d4617069b7d6b6307c661478dda3"
+        },
+        {
+          "segment_id": "transform",
+          "speech_ms": 12251.438,
+          "caption_start_ms": 44050,
+          "caption_end_ms": 56333,
+          "speech_end_ms": 56301.438,
+          "tail_ms": 531.562,
+          "cache_key": "37475374db378003dca7b87f20090a807db3a203f68897069bd3decfee9adb70"
+        },
+        {
+          "segment_id": "paths",
+          "speech_ms": 13740.417,
+          "caption_start_ms": 57083,
+          "caption_end_ms": 70833,
+          "speech_end_ms": 70823.417,
+          "tail_ms": 509.583,
+          "cache_key": "5751bd88406b131f2252f0e40c2b4eb32e8788e75d86c724147bbd9d4859ab03"
+        },
+        {
+          "segment_id": "activate",
+          "speech_ms": 14158.375,
+          "caption_start_ms": 71583,
+          "caption_end_ms": 85767,
+          "speech_end_ms": 85741.375,
+          "tail_ms": 525.625,
+          "cache_key": "40dfa3169a15631e3392023c4c25a53d5c23483e70739db1d48f75b205b2b5e9"
+        },
+        {
+          "segment_id": "safety",
+          "speech_ms": 15882.458,
+          "caption_start_ms": 86517,
+          "caption_end_ms": 102400,
+          "speech_end_ms": 102399.458,
+          "tail_ms": 500.542,
+          "cache_key": "b7f1a43eead5e8a0c52a6591bdc1c9a82cd98fa19d0d6d60ab64164353038df8"
+        },
+        {
+          "segment_id": "sign",
+          "speech_ms": 12852.25,
+          "caption_start_ms": 103150,
+          "caption_end_ms": 116033,
+          "speech_end_ms": 116002.25,
+          "tail_ms": 530.75,
+          "cache_key": "e1adec66d5652308763a571727689ea7da28cb772cf8f639d9f802977f335b7a"
+        }
+      ],
+      "listening_review": "not performed; pronunciation and subjective clicks require listening"
+    }
+  },
+  {
+    "loudness_lufs": -16.26,
+    "true_peak_dbtp": -4.45,
+    "locale": "zh",
+    "duration_ms": 96033,
+    "bytes": 2972897,
+    "sha256": "c84d9797b2f496e7040be0f71cf7d1eaeb63a8e7515512813c96984cc2ab8f98",
+    "frames": 2881,
+    "full_decode": true,
+    "faststart": true,
+    "codec": "H.264 Main / AAC-LC",
+    "transcript_bytes": 1106,
+    "audio_check": {
+      "audio_locale": "zh",
+      "language_check": "cached request language and exact narration text; not acoustic recognition",
+      "decoded_sample_peak": 0.5991045236587524,
+      "silent_join_peak": 0.0,
+      "segments": [
+        {
+          "segment_id": "symptom",
+          "speech_ms": 9090.625,
+          "caption_start_ms": 250,
+          "caption_end_ms": 9367,
+          "speech_end_ms": 9340.625,
+          "tail_ms": 526.375,
+          "cache_key": "0aa955a029d0409535f1fb81b67cf601b312b63bef9c7d8f1800e13cab431d13"
+        },
+        {
+          "segment_id": "codes",
+          "speech_ms": 15464.5,
+          "caption_start_ms": 10117,
+          "caption_end_ms": 25600,
+          "speech_end_ms": 25581.5,
+          "tail_ms": 518.5,
+          "cache_key": "7b7f480f29cd6a5d5d45936a0ed6babf1ac2d7d320f00b6fcae3795e6495b987"
+        },
+        {
+          "segment_id": "source",
+          "speech_ms": 8594.292,
+          "caption_start_ms": 26350,
+          "caption_end_ms": 34967,
+          "speech_end_ms": 34944.292,
+          "tail_ms": 522.708,
+          "cache_key": "f50409f4417faf328e1f944b5a41b0f6785b2e5ca60f2a38d57c9120bbac8d15"
+        },
+        {
+          "segment_id": "transform",
+          "speech_ms": 11964.083,
+          "caption_start_ms": 35717,
+          "caption_end_ms": 47700,
+          "speech_end_ms": 47681.083,
+          "tail_ms": 518.917,
+          "cache_key": "b4564e7be607755fa52f41fc471ee80000868f9cad6193276e8ff842df3f2f47"
+        },
+        {
+          "segment_id": "paths",
+          "speech_ms": 11049.812,
+          "caption_start_ms": 48450,
+          "caption_end_ms": 59500,
+          "speech_end_ms": 59499.812,
+          "tail_ms": 500.188,
+          "cache_key": "63c2bb1f45579960c0d4dd9a810cc316f1cd32e4454803659dbdfb42442ad36f"
+        },
+        {
+          "segment_id": "activate",
+          "speech_ms": 11363.271,
+          "caption_start_ms": 60250,
+          "caption_end_ms": 71633,
+          "speech_end_ms": 71613.271,
+          "tail_ms": 519.729,
+          "cache_key": "42c7618763e8ffd3deae1cf96d2d255988dadc720d0a56319fc80e6cd2a6599f"
+        },
+        {
+          "segment_id": "safety",
+          "speech_ms": 12800.0,
+          "caption_start_ms": 72383,
+          "caption_end_ms": 85200,
+          "speech_end_ms": 85183.0,
+          "tail_ms": 517.0,
+          "cache_key": "074f1517904ab2a31a43e4d97c05204de56e38d81f5cce411dc5683c7ff55115"
+        },
+        {
+          "segment_id": "sign",
+          "speech_ms": 9560.833,
+          "caption_start_ms": 85950,
+          "caption_end_ms": 95533,
+          "speech_end_ms": 95510.833,
+          "tail_ms": 522.167,
+          "cache_key": "7e26656aeed09084f421daa5beacc45b183d660989e49714fea257889eb7eb5d"
+        }
+      ],
+      "listening_review": "not performed; pronunciation and subjective clicks require listening"
+    }
+  }
+]

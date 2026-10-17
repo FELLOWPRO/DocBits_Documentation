@@ -62,3 +62,7 @@ Questo è particolarmente utile per il debug delle mappature XSLT e per garantir
 ## 6. Video Guida
 
 Una guida video per questo tipo di file è disponibile nella [pagina dei Video.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Utilizzala per seguire la configurazione, la modifica e l'anteprima.
+
+## Regole effettivamente utilizzate e attivazione
+
+Le regole specifiche dell’organizzazione hanno la precedenza su quelle predefinite per il formato eDoc rilevato. Verificate la TRANSFORMATION attiva e verificate quale nodo fornisce invoice_type nell’XML trasformato; il percorso dipende dal formato. Save salva una bozza; usate il segno di spunta per attivarla dopo i test. Il rendering di Preview non dimostra il tipo di documento memorizzato. Consultate la [guida alla diagnosi della classificazione](../credit-note-recognized-as-invoice.md) per i codici 381/261, gli script successivi e le precauzioni prima della rielaborazione.

@@ -200,3 +200,7 @@ L'XSLT di TRANSFORMATION predefinito distribuisce i blocchi `ApplicableTradeTax`
 | `SpecifiedTradeProduct/OriginTradeCountry/ID` | `COUNTRY_OF_ORIGIN` | `CountryOfOrigin` | STRING | Country of origin |
 | `SpecifiedTradeProduct/ApplicableProductCharacteristic/Value` | `PRODUCT_CHARACTERISTIC` | `ProductCharacteristic` | STRING | Product characteristic |
 | `ActualDeliverySupplyChainEvent/OccurrenceDateTime` | `DELIVERY_DATE` | `ActualDeliveryDate` | DATE | Line delivery date |
+
+## Regole effettivamente utilizzate e attivazione
+
+Se una nota di credito elettronica appare come Invoice, seguite la [guida alla diagnosi della classificazione](../credit-note-recognized-as-invoice.md). Descrive la sorgente personalizzata o predefinita effettivamente utilizzata, i codici del tipo, Extraction Paths e l’attivazione in sicurezza.

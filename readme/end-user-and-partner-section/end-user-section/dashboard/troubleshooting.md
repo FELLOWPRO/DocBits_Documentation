@@ -4,4 +4,6 @@ Controleer eerst organisatie, actieve weergave, documenttype, zoektekst en filte
 
 **Ctrl/Cmd + K** opent de globale snelzoekfunctie; **Ctrl/Cmd + Q** vernieuwt het dashboard; **Ctrl/Cmd + H** opent de hulp. Het tandwielmenu bevat de sneltoetsen. De eventuele teller voor openstaande documenten van de hele organisatie is een beheerdersindicator en geen persoonlijke taakenteller.
 
+Gebruik Ctrl op Windows/Linux en Cmd op macOS. Sneltoetsen van browser of besturingssysteem kunnen voorrang hebben.
+
 De [dashboardhandleiding](README.md) beschrijft zoeken, documentacties en opgeslagen weergaven.

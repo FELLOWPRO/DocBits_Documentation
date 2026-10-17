@@ -46,7 +46,7 @@ Open het tandwiel en de kolominstellingen. Verplaats kolommen tussen de verborge
 
 ## Statussen en documentacties begrijpen
 
-Verwerkingsstatussen tonen stappen zoals OCR, classificatie of export. **Gereed voor validatie** betekent dat het document kan worden gecontroleerd. Goedkeuringsstatussen geven aan dat goedkeuring nog nodig is. **Voltooid** geeft aan dat de verwerking klaar is. Klik op de status **Fout** voor beschikbare foutdetails.
+Verwerkingsstatussen tonen stappen zoals OCR, classificatie of export. **Klaar voor validatie** betekent dat het document kan worden gecontroleerd. Goedkeuringsstatussen geven aan dat goedkeuring nog nodig is. **Geëxporteerd** geeft aan dat de documentexport klaar is. Klik op de status **Fout** voor beschikbare foutdetails.
 
 Als verwerkingstijden beschikbaar zijn, houdt u de aanwijzer boven een status om de fasen en hun duur te zien. Documenten met mogelijke duplicaten tonen een duplicaatpictogram; open dit om de gerelateerde documenten te vergelijken.
 
@@ -75,3 +75,5 @@ De andere hulpmiddelen vernieuwen de lijst, openen geavanceerde instellingen, st
 Controleer eerst organisatie, actieve weergave, documenttype, zoektekst en filters. Vernieuw de lijst en bekijk andere resultaatpagina’s. Vraag uw beheerder om rechten en modules te controleren als een functie blijft ontbreken.
 
 **Ctrl/Cmd + K** opent de globale snelzoekfunctie; **Ctrl/Cmd + Q** vernieuwt het dashboard; **Ctrl/Cmd + H** opent de hulp. Het tandwielmenu bevat de sneltoetsen. De eventuele teller voor openstaande documenten van de hele organisatie is een beheerdersindicator en geen persoonlijke taakenteller.
+
+Gebruik Ctrl op Windows/Linux en Cmd op macOS. Sneltoetsen van browser of besturingssysteem kunnen voorrang hebben.

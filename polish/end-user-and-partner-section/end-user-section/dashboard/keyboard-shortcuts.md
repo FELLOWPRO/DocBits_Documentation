@@ -1,8 +1,11 @@
-# Skróty Klawiaturowe
+# Skróty klawiaturowe
 
-### Skróty na Pulpicie
+Używaj Ctrl w Windows/Linux i Cmd w macOS. Skróty przeglądarki lub systemu mogą mieć pierwszeństwo.
 
-Pulpit zawiera następujące skróty, które ułatwiają nawigację i interakcję:
+| Skrót | Działanie |
+| --- | --- |
+| Ctrl/Cmd + K | Otwórz globalne szybkie wyszukiwanie. |
+| Ctrl/Cmd + Q | Odśwież listę pulpitu. |
+| Ctrl/Cmd + H | Otwórz dokumentację/pomoc. |
 
-* **Option + K** – Otwiera menu skrótów klawiaturowych, zapewniając listę dostępnych skrótów w aplikacji.
-* **Option + Q** – Odświeża tabelę pulpitu, zapewniając wyświetlenie najnowszych danych bez potrzeby ręcznego przeładowania strony.
+Otwórz koło zębate i przycisk klawiatury, aby zobaczyć skróty w aplikacji. Znak zapytania w wyszukiwarce otwiera pomoc dotyczącą pól i składni.

@@ -1,13 +1,5 @@
-# Licznik Zadań
+# Licznik zadań
 
-Licznik zadań znajduje się w prawym górnym rogu strony głównej Dashboardu.
+Opcjonalny wskaźnik oczekujących dokumentów pokazuje administratorom kolejkę przetwarzania organizacji. Nie liczy dokumentów przypisanych do Ciebie. Dla własnej pracy filtruj według przypisanej osoby i statusu oraz sprawdź aktywną organizację.
 
-<figure><img src="../../../.gitbook/assets/task-counter1.png" alt=""><figcaption></figcaption></figure>
-
-Tutaj możesz zobaczyć, ile dokumentów znajduje się w Twojej kolejce do przetworzenia
-
-<figure><img src="../../../.gitbook/assets/task-counter2.png" alt="" width="563"><figcaption></figcaption></figure>
-
-oraz ile dokumentów jest teraz gotowych do walidacji.
-
-<figure><img src="../../../.gitbook/assets/task-counter3.png" alt="" width="563"><figcaption></figcaption></figure>
+Wyszukiwanie, działania i widoki opisuje [przewodnik po pulpicie](README.md).

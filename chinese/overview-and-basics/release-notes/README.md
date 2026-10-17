@@ -2,9 +2,9 @@
 
 **NOVA R1.1 可用情况：**自 **2026 年 10 月 16 日**起可在沙盒中使用。生产环境计划于 **2026 年 11 月 4 日**发布。
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/zh.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/zh.mp4" %}
 
-**DocBits 是产品。NOVA 是发布周期的名称。**[观看新 DocBits 版本介绍视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/zh.mp4) · [字幕](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/zh.vtt)。
+**DocBits 是产品。NOVA 是发布周期的名称。**[观看新 DocBits 版本介绍视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/zh.mp4) · [字幕](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/zh.vtt)。
 
 选择发布渠道，了解团队将获得哪些变化。**NOVA 周期推出全新的 DocBits 主版本，并提供更多客户功能。VESTA 热修复则改进当前生产版本。**有关可用情况和渠道切换方式，请参阅[发布生命周期](../docbits-release-lifecycle-strategy.md)。
 

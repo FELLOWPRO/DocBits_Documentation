@@ -2,9 +2,9 @@
 
 **Verfügbarkeit von NOVA R1.1:** Seit dem **16. Oktober 2026** in der Sandbox verfügbar. Der Produktionsrelease ist für den **4. November 2026** geplant.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/de.mp4" %}
 
-**DocBits ist das Produkt. NOVA bezeichnet den Releasezyklus.** [Film zum neuen DocBits-Release ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/de.mp4) · [Untertitel](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/de.vtt).
+**DocBits ist das Produkt. NOVA bezeichnet den Releasezyklus.** [Film zum neuen DocBits-Release ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/de.mp4) · [Untertitel](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/de.vtt).
 
 **Sandbox-Serviceversionen: Stand 16. Oktober 2026**
 

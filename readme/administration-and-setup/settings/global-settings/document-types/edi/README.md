@@ -21,3 +21,7 @@ DocBits 电子发票教程：处理 XRechnung / ZUGFeRD (Factur-X)、验证数�
    * 用于编辑和验证转换过程中使用的 XSLT（可扩展样式表语言转换）。XSLT 是一种功能强大的语言，专为将 XML 文档转换为其他 XML 文档或 HTML、文本等其他格式，甚至其他 XML 结构而设计。
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.49.59.png" alt=""><figcaption></figcaption></figure>
+
+## 实际生效的规则与激活
+
+如果电子贷项通知单显示为 Invoice，请按照[分类故障排查指南](credit-note-recognized-as-invoice.md)进行检查。该指南涵盖实际生效的自定义或默认源代码、类型代码、Extraction Paths，以及安全激活步骤。

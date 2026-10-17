@@ -253,6 +253,7 @@
         * [最佳实践](administration-and-setup/settings/global-settings/document-types/script/best-practices-5.md)
         * [故障排除](administration-and-setup/settings/global-settings/document-types/script/troubleshooting-4.md)
       * [电子单据](administration-and-setup/settings/global-settings/document-types/edi/README.md)
+        * [电子贷项通知单被识别为发票](administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md)
         * [当前支持的电子发票标准](administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md)
           * [路线图](administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/roadmap.md)
         * [电子发票示例](administration-and-setup/settings/global-settings/document-types/edi/e-invoice-examples/README.md)

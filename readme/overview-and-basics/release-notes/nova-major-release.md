@@ -2,9 +2,9 @@
 
 **Beschikbaarheid van NOVA R1.1:** Sinds **16 oktober 2026** beschikbaar in de sandbox. De productierelease staat gepland voor **4 november 2026**.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/nl.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/nl.mp4" %}
 
-**DocBits is het product. NOVA is de naam van de releasecyclus.** [Bekijk de film over de nieuwe DocBits-release](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/nl.mp4) · [Ondertitels](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/nl.vtt).
+**DocBits is het product. NOVA is de naam van de releasecyclus.** [Bekijk de film over de nieuwe DocBits-release](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/nl.mp4) · [Ondertitels](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/nl.vtt).
 
 **Serviceversies in de sandbox: stand van 16 oktober 2026**
 

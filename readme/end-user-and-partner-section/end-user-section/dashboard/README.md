@@ -46,7 +46,7 @@ Open the gear icon and the column-settings button to choose visible columns, mov
 
 ## Understand status and document actions
 
-Processing statuses show steps such as OCR, classification or export. **Ready for Validation** means the document is ready for review; approval statuses indicate that an approval step is pending. **Finished** indicates completed processing. For **Error**, click the error status to inspect the available error details.
+Processing statuses show steps such as OCR, classification or export. **Ready for validation** means the document is ready for review; approval statuses indicate that an approval step is pending. **Exported** means the document’s export has completed. For **Error**, click the error status to inspect the available error details.
 
 If processing times are available, hover over a status to see the phases and their durations. A duplicate icon appears for documents with possible duplicates; open it to compare the related documents.
 
@@ -75,3 +75,5 @@ The other toolbar buttons refresh the list, open advanced settings, start a scan
 Check the organization, active view, document type, search text and filter badges first. Refresh the list and check further result pages. If a control is still unavailable, ask your administrator to check your permissions and enabled modules.
 
 **Ctrl/Cmd + K** opens the global quick search. **Ctrl/Cmd + Q** refreshes the dashboard and **Ctrl/Cmd + H** opens help. The gear menu contains the keyboard-shortcut reference. An organization-wide pending-document counter, when shown, is an administrator indicator; it is not your personal task count.
+
+Use Ctrl on Windows/Linux and Cmd on macOS for the shortcuts below. Browser or operating-system shortcuts may take priority.

@@ -1,6 +1,6 @@
 # Document Status
 
-Processing statuses show steps such as OCR, classification or export. **Ready for Validation** means the document is ready for review; approval statuses indicate that an approval step is pending. **Finished** indicates completed processing. For **Error**, click the error status to inspect the available error details.
+Processing statuses show steps such as OCR, classification or export. **Ready for validation** means the document is ready for review; approval statuses indicate that an approval step is pending. **Exported** means the document’s export has completed. For **Error**, click the error status to inspect the available error details.
 
 If processing times are available, hover over a status to see the phases and their durations. A duplicate icon appears for documents with possible duplicates; open it to compare the related documents.
 

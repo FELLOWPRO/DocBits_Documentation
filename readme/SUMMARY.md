@@ -73,7 +73,7 @@
     * [Carrousel Vidéo](end-user-and-partner-section/end-user-section/dashboard/video-carousel.md)
     * [Bonnes pratiques](end-user-and-partner-section/end-user-section/dashboard/best-practice.md)
     * [Dépannage](end-user-and-partner-section/end-user-section/dashboard/troubleshooting.md)
-    * [Raccourcis Clavier](end-user-and-partner-section/end-user-section/dashboard/keyboard-shortcuts.md)
+    * [Raccourcis clavier](end-user-and-partner-section/end-user-section/dashboard/keyboard-shortcuts.md)
   * [Tâches](end-user-and-partner-section/end-user-section/tasks.md)
   * [Tableau de bord des expéditions anticipées](end-user-and-partner-section/end-user-section/advance-shipment-dashboard.md)
   * [Tableau de bord des bons de commande](end-user-and-partner-section/end-user-section/purchase-order-dashboard.md)

@@ -72,3 +72,7 @@ Die **Konfiguration der Extraktionspfade** wird verwendet, um Daten zu extrahier
 7. Klicken Sie auf **Speichern**.
 
 Wenn Sie diese Schritte befolgen, stellen Sie eine genaue Datenextraktion und Validierung für ZUGFeRD-Rechnungen sicher.
+
+## Verwendete Regeln und Aktivierung
+
+Organisationsspezifische Regeln haben Vorrang vor den Standardregeln für das erkannte eDoc-Format. Prüfen Sie die aktive TRANSFORMATION und prüfen Sie, welcher Knoten im transformierten XML invoice_type liefert; der Pfad hängt vom Format ab. Speichern sichert einen Entwurf; aktivieren Sie ihn nach dem Testen über das Häkchen. Eine gerenderte Preview belegt nicht den gespeicherten Dokumenttyp. Die [Anleitung zur Fehlerbehebung bei der Klassifizierung](../credit-note-recognized-as-invoice.md) erläutert die Codes 381/261, spätere Skripte und Vorsichtsmaßnahmen bei der erneuten Verarbeitung.

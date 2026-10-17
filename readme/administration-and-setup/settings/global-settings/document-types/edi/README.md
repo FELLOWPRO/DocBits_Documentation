@@ -21,3 +21,7 @@ In Docbits bieten die EDI-Einstellungen Tools zum Definieren und Verwalten der S
    * Wird zum Bearbeiten und Validieren der XSLT (eXtensible Stylesheet Language Transformations) verwendet, die im Transformationsprozess verwendet wird. XSLT ist eine leistungsstarke Sprache, die für die Transformation von XML-Dokumenten in andere XML-Dokumente oder andere Formate wie HTML, Text oder sogar andere XML-Strukturen entwickelt wurde.
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.49.59.png" alt=""><figcaption></figcaption></figure>
+
+## Verwendete Regeln und Aktivierung
+
+Wenn eine elektronische Gutschrift als Invoice erscheint, folgen Sie der [Anleitung zur Fehlerbehebung bei der Klassifizierung](credit-note-recognized-as-invoice.md). Sie erläutert die verwendete angepasste oder standardmäßige Quelle, die Typcodes, Extraction Paths und die sichere Aktivierung.

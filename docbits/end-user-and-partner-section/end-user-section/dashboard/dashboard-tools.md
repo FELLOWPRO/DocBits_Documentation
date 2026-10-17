@@ -1,58 +1,19 @@
 # Dashboard Tools
 
-The dashboard is your list of documents. Open a document by selecting its name. The controls above the table help you find documents, change what you see, and upload new files. Some controls depend on your organization's settings and your permissions, so your dashboard may show fewer buttons than the example below.
+The toolbar is beside the dashboard search. Hover over an icon to see its label. On narrower desktop windows, open **More** for additional actions.
 
-<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_main_en.png" alt="Current DocBits dashboard showing the date range, search bar, toolbar, saved dashboard, document table, and upload button"><figcaption><p>The dashboard in an English-language test organization.</p></figcaption></figure>
+| Tool | Use |
+| --- | --- |
+| Refresh | Reload the list and statuses. A change indicator on the refresh button means newer data is available. |
+| Advanced settings (gear) | Open column settings, the keyboard-shortcut reference and the email import log. Organization-wide settings require administrator access. |
+| Scan document | Open the scanner dialog when document scanning is enabled and a compatible scanner is available. Choose a device and scan settings before starting. |
+| Analytics | Show the dashboard status statistics. Select a status category to narrow the list. |
+| Start email import | Start an import using the organization's existing mailbox configuration. This does not configure a mailbox. |
+| Export this table | Request a CSV or Excel export when enabled. Save changes to a personal dashboard's columns first; the export reads its saved column configuration. |
+| Upload | Open the file dialog, select or drop files, optionally choose Classify As, then start the upload. |
 
-## Find documents
+<figure><img src="../../../.gitbook/assets/dashboard-upload.png" alt="Upload files and optionally choose their document type before importing."><figcaption><p>Upload files and optionally choose their document type before importing.</p></figcaption></figure>
 
-1. Choose a date range on the left: **30D**, **90D**, **180D**, **365D**, **All**, or **Custom**. This limits the documents shown when the date controls are available.
-2. Type a document name or ID into the search bar. The search also supports field-specific queries. Select the **?** beside the search bar to see examples and the available operators.
-3. Select the sliders icon inside the search bar to narrow the list by **Status**, **Assigned To**, or **Restart Required**, then select **Apply**. Use **Clear filters** to remove those choices.
-4. Select a column heading to sort the table. Use the page controls at the bottom to move between result pages or change **Documents per Page**.
+The import log helps you check email imports. Filter it by subject or sender and inspect the available import information. A successful table-export request confirms that the request was submitted; it does not mean that a document was exported to your ERP.
 
-The icon at the start of the search field opens a picker of available fields and shows which search capabilities your organization has. The **code** icon switches between the normal search view and a raw query view; use the normal view unless you already know the query syntax. The magnifying-glass icon opens **Search in document content**: **Automatic** searches visible fields first, **Always include document content** includes text inside files, and **Visible columns only** limits matches to the table fields. Searching inside files requires the relevant search capability to be enabled for your organization.
-
-<figure><img src="../../../.gitbook/assets/dbdc167_filter_panel_en.png" alt="Dashboard search filter panel with Status, Assigned To, Restart Required, Clear filters, and Apply"><figcaption><p>The filters inside the search bar.</p></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_content_mode_en.png" alt="Search in document content menu with Automatic, Always include document content, and Visible columns only"><figcaption><p>Choose what a simple search may match.</p></figcaption></figure>
-
-For a guided search, see [Quick Search](quick-search.md) and [Filtering Documents](filtering-documents.md). The **?** panel explains advanced search syntax; you do not need that syntax for a simple name search.
-
-<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_search_help_en.png" alt="Dashboard Search Fields and Syntax help window with search examples and operators"><figcaption><p>Search help in the dashboard.</p></figcaption></figure>
-
-## Refresh and customize the view
-
-* Select the circular arrow above the table to reload the document list. It does not restart document processing.
-* Select the gear to open **Advanced settings**. There you can open keyboard shortcuts, view the email import log, or manage visible table columns. Administrators may also see a link to dashboard settings. See [Keyboard Shortcuts](keyboard-shortcuts.md) and [Change Document Columns](change-document-columns.md) for the next steps.
-* Select the bar chart to show **Analytics** above the table. Choose a category card, such as **Pending User Input**, to filter the documents. Select the chart again to hide the cards.
-* Select the saved dashboard badge below the search bar to switch or manage your own dashboard. See [Personal Dashboards](personal-dashboards.md).
-* Select **+** beside the **All** tab to add a tab for a document type. In the test organization, **Invoice** is available. Select a tab to show that type of document.
-
-<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_advanced_en.png" alt="Advanced settings menu opened from the dashboard gear icon"><figcaption><p>Open the gear menu for dashboard options.</p></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_analytics_en.png" alt="Dashboard Analytics cards for All documents, In progress, Pending User Input, Pending Approval, Exported, and Error"><figcaption><p>Analytics cards above the document list.</p></figcaption></figure>
-
-## Upload documents
-
-Select **Upload**. Drag files into the **Document Uploader** or select **Click to upload** to choose them from your computer. If you know the document type, turn on **Classify as** and select the type; otherwise leave it off for automatic classification. Select **Upload** to submit the files. See [Overview of Uploaded Documents](overview-of-uploaded-documents.md) for what happens next.
-
-<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_upload_en.png" alt="Document Uploader dialog with drag-and-drop area, Click to upload, Classify as, Cancel, and Upload"><figcaption><p>The current upload dialog.</p></figcaption></figure>
-
-## Work with several documents
-
-Select the checkboxes beside the documents you want to act on, then open the three-dot menu in the table header. Depending on the documents and your permissions, the menu offers **Merge**, **Assign to**, **Restart**, **Restart export**, and **Delete**. Check the selected rows before choosing an action; **Delete** removes documents. For combining files, follow [Document Merging](document-merging.md).
-
-<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_bulk_en.png" alt="Dashboard bulk action menu with Merge, Assign to, Restart, Restart export, and Delete"><figcaption><p>Bulk actions beside the table selection checkboxes.</p></figcaption></figure>
-
-For one document, open the three-dot menu at the end of its row. It offers actions such as **Validate**, **Assign to**, **Document flow**, **Download**, **Restart**, **Document Logs**, and **Delete**, depending on the document and your permissions. **Validate** opens the document for review; **Document flow** shows its processing history; **Restart** begins processing again; **Delete** removes it. See [Document Flow](document-flow.md) and [Document Status](document-status.md) before changing a document that is being processed.
-
-<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_row_actions_en.png" alt="Actions menu for one document with Validate, Assign to, Document flow, Download, Restart, Document Logs, and Delete"><figcaption><p>Actions for one document.</p></figcaption></figure>
-
-## Other buttons your organization may show
-
-* The envelope button starts an email import using the organization's existing email import configuration. Ask an administrator if you are unsure whether your mailbox is configured; selecting it starts an import.
-* **Scan document** appears only when document scanning is enabled and a scanner is available.
-* **Export this table** appears only when dashboard export is enabled. Its menu offers CSV and Excel files. The export uses the documents currently displayed in the table.
-
-The available buttons can differ by screen width. On a narrow screen, open **More** to find some of the actions that appear separately on a desktop screen.
+For searching, document actions and saved views, return to the [dashboard guide](README.md).

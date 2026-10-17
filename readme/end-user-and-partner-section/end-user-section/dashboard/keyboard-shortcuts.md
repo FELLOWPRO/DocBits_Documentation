@@ -1,10 +1,11 @@
 # Keyboard Shortcuts
 
-## Dashboard Shortcuts
+Use Ctrl on Windows/Linux and Cmd on macOS for the shortcuts below. Browser or operating-system shortcuts may take priority.
 
-The dashboard includes the following shortcuts to enhance navigation and interaction:
+| Shortcut | Action |
+| --- | --- |
+| Ctrl/Cmd + K | Open the global quick search. |
+| Ctrl/Cmd + Q | Refresh the dashboard list. |
+| Ctrl/Cmd + H | Open documentation/help. |
 
-* **Control + K** – Opens the keyboard shortcut menu, providing a list of available shortcuts within the application.
-* **Control + Q** – Refreshes the dashboard table, ensuring that the latest data is displayed without needing to manually reload the page.
-* **Control + H** – Opens the documentation page for more information and assistance.
-
+Open the dashboard gear menu and choose the keyboard button to see the in-app shortcut reference. The question-mark button inside the search box opens the fields and syntax reference.

@@ -35,7 +35,7 @@
 
 现在，大多数设置页面、对话框和工具界面的标题区域都会显示一个小小的 **?** 图标。
 
-<figure><img src="../../.gitbook/assets/ui-redesign-help-icon.png" alt="页面标题区域中的帮助图标"><figcaption><p>帮助图标会在新标签页中打开对应的文档页面。</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ui-redesign-help-icon-zh.png" alt="页面标题区域中的帮助图标"><figcaption><p>帮助图标会在新标签页中打开对应的文档页面。</p></figcaption></figure>
 
 点击该图标会在新标签页中打开 `docs.docbits.com` 上对应的页面，无需在文档中搜索合适的页面。该图标会根据你选择的界面语言打开相应的本地化文档；如果尚未发布该语言的文档，则会回退到英文版。
 

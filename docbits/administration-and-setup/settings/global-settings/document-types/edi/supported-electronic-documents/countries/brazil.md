@@ -8,6 +8,18 @@ Use this guide to identify the configured family and version scope before testin
 
 [All countries and support scope](../README.md)
 
+## Country explainer
+
+Localized narration and WebVTT captions explain format selection, configuration and acceptance checks.
+
+This read-only walkthrough shows the country’s existing DocBits configuration. Check the effective source and active version, then validate representative invoices, credit notes and exports in your own organisation.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_brazil/v2/en.mp4" %}
+
+[Brazil — Country explainer](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_brazil/v2/en.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_brazil/v2/en.vtt)
+
 ## Variants and version limits
 
 Brazil has NF-e, NFC-e, CT-e, NFS-e and SPED NFS-e entries. NFS-e includes versions 1.00 and 2.00 to 2.04; SPED includes 1.00.02 and 1.01.
@@ -43,20 +55,6 @@ A dash means the status check did not report a dedicated component for this exac
 ## Find the mapping in DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-brazil-en.png" alt="Brazil: BRAZIL NFS-E"><figcaption><p>Real development UI: the representative format and its available configuration components. Other versions are listed in the matrix.</p></figcaption></figure>
-
-## Country explainer
-
-Localized narration and WebVTT captions explain format selection, configuration and acceptance checks.
-
-This read-only walkthrough shows the country’s existing DocBits configuration. Check the effective source and active version, then validate representative invoices, credit notes and exports in your own organisation.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-brazil-en-v2.mp4" %}
-Brazil — Country explainer
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-brazil-en-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Acceptance checks
 

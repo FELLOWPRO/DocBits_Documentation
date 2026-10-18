@@ -8,6 +8,18 @@ Skorzystaj z tego przewodnika, aby ustalić skonfigurowaną rodzinę i zakres we
 
 [Wszystkie kraje i zakres obsługi](../README.md)
 
+## Film objaśniający dla kraju
+
+Narracja i napisy WebVTT w wybranym języku wyjaśniają wybór formatu, konfigurację i kontrole akceptacyjne.
+
+Ten przegląd bez wprowadzania zmian pokazuje istniejącą konfigurację kraju w DocBits. Sprawdź używane źródło i aktywną wersję, a następnie przetestuj reprezentatywne faktury, noty kredytowe i eksporty we własnej organizacji.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_india/v2/pl.mp4" %}
+
+[Indie — Film objaśniający dla kraju](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_india/v2/pl.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_india/v2/pl.vtt)
+
 ## Warianty i ograniczenia wersji
 
 India GST E-Invoice i GST CreditNote mają osobne wpisy.
@@ -32,20 +44,6 @@ Myślnik oznacza, że kontrola statusu nie wykazała dedykowanego komponentu dla
 ## Znajdź mapowanie w DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-india-pl.png" alt="Indie"><figcaption><p>Rzeczywisty interfejs środowiska deweloperskiego: przykładowy format i dostępne komponenty konfiguracji. Pozostałe wersje wymieniono w macierzy.</p></figcaption></figure>
-
-## Film objaśniający dla kraju
-
-Narracja i napisy WebVTT w wybranym języku wyjaśniają wybór formatu, konfigurację i kontrole akceptacyjne.
-
-Ten przegląd bez wprowadzania zmian pokazuje istniejącą konfigurację kraju w DocBits. Sprawdź używane źródło i aktywną wersję, a następnie przetestuj reprezentatywne faktury, noty kredytowe i eksporty we własnej organizacji.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-india-pl-v2.mp4" %}
-Indie — Film objaśniający dla kraju
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-india-pl-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Kontrole akceptacyjne
 

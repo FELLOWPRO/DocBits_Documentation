@@ -8,6 +8,18 @@ Use this guide to identify the configured family and version scope before testin
 
 [All countries and support scope](../README.md)
 
+## Country explainer
+
+Localized narration and WebVTT captions explain format selection, configuration and acceptance checks.
+
+This read-only walkthrough shows the country’s existing DocBits configuration. Check the effective source and active version, then validate representative invoices, credit notes and exports in your own organisation.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_ecuador/v2/en.mp4" %}
+
+[Ecuador — Country explainer](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_ecuador/v2/en.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_ecuador/v2/en.vtt)
+
 ## Variants and version limits
 
 Ecuador SRI has generic, 1.0.0, 1.1.0, 2.0.0 and 2.1.0 entries. Withholding is a separate document type.
@@ -38,20 +50,6 @@ A dash means the status check did not report a dedicated component for this exac
 ## Find the mapping in DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-ecuador-en.png" alt="Ecuador: ECUADOR SRI 2.1.0"><figcaption><p>Real development UI: the representative format and its available configuration components. Other versions are listed in the matrix.</p></figcaption></figure>
-
-## Country explainer
-
-Localized narration and WebVTT captions explain format selection, configuration and acceptance checks.
-
-This read-only walkthrough shows the country’s existing DocBits configuration. Check the effective source and active version, then validate representative invoices, credit notes and exports in your own organisation.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-ecuador-en-v2.mp4" %}
-Ecuador — Country explainer
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-ecuador-en-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Acceptance checks
 

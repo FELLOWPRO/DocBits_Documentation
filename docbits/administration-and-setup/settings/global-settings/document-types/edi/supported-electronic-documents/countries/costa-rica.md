@@ -8,6 +8,18 @@ Use this guide to identify the configured family and version scope before testin
 
 [All countries and support scope](../README.md)
 
+## Country explainer
+
+Localized narration and WebVTT captions explain format selection, configuration and acceptance checks.
+
+This read-only walkthrough shows the country’s existing DocBits configuration. Check the effective source and active version, then validate representative invoices, credit notes and exports in your own organisation.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_costa_rica/v2/en.mp4" %}
+
+[Costa Rica — Country explainer](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_costa_rica/v2/en.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_costa_rica/v2/en.vtt)
+
 ## Variants and version limits
 
 The older documentation names Costa Rica, but no matching classification or configuration entry was found in the inspected development catalogue.
@@ -25,20 +37,6 @@ No matching classification or configuration entry was found. Current built-in su
 ## Find the mapping in DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-en.png" alt="Costa Rica: Not confirmed"><figcaption><p>Real development UI: searching this country name returned no matching configuration entry in the inspected catalogue.</p></figcaption></figure>
-
-## Country explainer
-
-Localized narration and WebVTT captions explain format selection, configuration and acceptance checks.
-
-This read-only walkthrough shows the country’s existing DocBits configuration. Check the effective source and active version, then validate representative invoices, credit notes and exports in your own organisation.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-en-v2.mp4" %}
-Costa Rica — Country explainer
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-en-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Acceptance checks
 

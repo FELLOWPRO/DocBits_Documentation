@@ -8,6 +8,18 @@ Utilice esta guía para identificar la familia configurada y el alcance de versi
 
 [Todos los países y alcance de la compatibilidad](../README.md)
 
+## Vídeo explicativo del país
+
+La narración y los subtítulos WebVTT en el idioma correspondiente explican la selección del formato, la configuración y las pruebas de aceptación.
+
+Este recorrido de solo lectura muestra la configuración existente del país en DocBits. Compruebe la fuente utilizada y la versión activa y valide facturas, notas de crédito y exportaciones representativas en su organización.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_united_arab_emirates/v2/es.mp4" %}
+
+[Emiratos Árabes Unidos — Vídeo explicativo del país](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_united_arab_emirates/v2/es.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_united_arab_emirates/v2/es.vtt)
+
 ## Variantes y límites de versión
 
 UAE VAT Invoice es la etiqueta configurada.
@@ -31,20 +43,6 @@ Un guion indica que la comprobación de estado no informó de un componente dedi
 ## Encuentre la asignación en DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-united-arab-emirates-es.png" alt="Emiratos Árabes Unidos: UAE VAT INVOICE"><figcaption><p>Interfaz real de desarrollo: el formato representativo y sus componentes de configuración disponibles. Las demás versiones figuran en la matriz.</p></figcaption></figure>
-
-## Vídeo explicativo del país
-
-La narración y los subtítulos WebVTT en el idioma correspondiente explican la selección del formato, la configuración y las pruebas de aceptación.
-
-Este recorrido de solo lectura muestra la configuración existente del país en DocBits. Compruebe la fuente utilizada y la versión activa y valide facturas, notas de crédito y exportaciones representativas en su organización.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-united-arab-emirates-es-v2.mp4" %}
-Emiratos Árabes Unidos — Vídeo explicativo del país
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-united-arab-emirates-es-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Pruebas de aceptación
 

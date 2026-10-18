@@ -64,3 +64,52 @@ The renderer must pass its original environment verification. `qa/` separates
 technical, visual and browser checks. **Direct acoustic/native-speaker listening
 has not been performed**; pronunciation approval is not claimed. GitBook preview
 publication is separate from merging into the live documentation.
+
+## Inline playback in GitBook
+
+The published guides use the DocBits video CDN. A GitBook `{% file %}` block is
+only a download card; it does not display an inline video player. Each delivered
+country film now appears before the format matrix, and the credit-note guide
+also embeds its localized film. Keep the direct MP4 and WebVTT links below the
+player. Existing screenshots and media bytes are unchanged.
+
+Use the retained renderer and publisher with their original source hashes and
+media QA. `publish_existing.py` checks that the build provenance, QA and original
+attachment hashes still match, then calls the retained create-only publisher.
+It performs no rendering or paid speech requests. From this repository root,
+with the publisher dependencies available:
+
+```sh
+python media/edocs-ui-v2/publish_existing.py \
+  --page edocs_country_germany --locale de --upload \
+  --credential-file /absolute/path/to/doc2api.env
+```
+
+Omit `--locale` to publish all delivered locales of that page. Omit `--upload`
+to recheck anonymous CDN access without loading credentials. Manifests and public
+verification receipts are written to `output/edocs-inline-video/`. The checked-in
+`publication/manifest.json` and `publication/receipt.json` record this migration.
+Existing different objects require a new immutable version; never overwrite them.
+
+The GitBook page must contain an embed, for example:
+
+```markdown
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_germany/v2/de.mp4" %}
+
+[Deutschland — Erklärvideo zum Land](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_germany/v2/de.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_germany/v2/de.vtt)
+```
+
+The historical `prepare_locale.py` and `prepare_countries.py` scripts package the
+original local attachments. Their output alone is not final publication: use the
+verified CDN URLs and an embed before committing documentation links. New video
+binaries must not be added to Git or uploaded to GitBook.
+
+Check the rendered GitBook preview in a real browser, including its nested player:
+play, seek and inspect playback progress and errors. Anonymous HTTP 200/206 and a
+working local review player do not establish that a published page has an inline
+player. WebVTT remains separately downloadable; the MP4 embed does not promise a
+native caption selector. The German Germany preview was played through to its
+end without media errors. Direct listening and pronunciation approval remain
+separate from these playback checks.

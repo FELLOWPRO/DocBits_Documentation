@@ -13,13 +13,11 @@ La vidéo montre une vérification en lecture seule dans DocBits, avec FACTURX 1
 
 L’ancien exemple XSLT montré dans la vidéo contient des branches pour 381 et 389. Vérifiez dans la Transformation réelle les codes conservés par cette version précise ; la liste générale ne prouve pas leur prise en charge dans toutes les anciennes correspondances.
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-fr-v2.mp4" %}
-Vérifier la classification des avoirs électroniques
-{% endfile %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/fr.mp4" %}
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-fr-v2.vtt" %}
-WebVTT
-{% endfile %}
+[Vérifier la classification des avoirs électroniques](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/fr.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/fr.vtt)
 
 ## Vérifier le code du document
 

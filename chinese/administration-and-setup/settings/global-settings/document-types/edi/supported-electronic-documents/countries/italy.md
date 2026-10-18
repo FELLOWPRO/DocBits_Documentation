@@ -8,6 +8,18 @@ description: "FatturaPA 是已配置的意大利格式系列。"
 
 [所有国家和支持范围](../README.md)
 
+## 国家说明视频
+
+本地化旁白和 WebVTT 字幕说明格式选择、配置和验收检查。
+
+此只读演示展示该国家或地区在 DocBits 中的现有配置。请检查实际使用的来源和活动版本，并在您自己的组织中测试有代表性的发票、贷项通知单和导出。
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_italy/v2/zh.mp4" %}
+
+[意大利 — 国家说明视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_italy/v2/zh.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_italy/v2/zh.vtt)
+
 ## 变体与版本限制
 
 FatturaPA 是已配置的意大利格式系列。
@@ -31,20 +43,6 @@ C = 分类，T = Transformation，P = Preview，E = Extraction Paths。文档键
 ## 在 DocBits 中查找映射
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-italy-zh.png" alt="意大利"><figcaption><p>真实开发界面：具有代表性的格式及其可用配置组件。其他版本列于矩阵中。</p></figcaption></figure>
-
-## 国家说明视频
-
-本地化旁白和 WebVTT 字幕说明格式选择、配置和验收检查。
-
-此只读演示展示该国家或地区在 DocBits 中的现有配置。请检查实际使用的来源和活动版本，并在您自己的组织中测试有代表性的发票、贷项通知单和导出。
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-italy-zh-v2.mp4" %}
-意大利 — 国家说明视频
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-italy-zh-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## 验收检查
 

@@ -1,0 +1,23 @@
+{
+  "page": "germany",
+  "locale": "de",
+  "preview": "https://docs.docbits.com/deutsch/~/revisions/jkdRxSGpfvkCaUDArMIl/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/germany",
+  "iframe": "https://iframely.net/QRnD6fF0",
+  "currentSrc": "https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_germany/v2/de.mp4",
+  "first_playback": {
+    "paused": false,
+    "currentTime": 0.174434,
+    "readyState": 4,
+    "duration": 55.2,
+    "error": null
+  },
+  "completion": {
+    "currentTime": 55.2,
+    "duration": 55.2,
+    "ended": true,
+    "paused": true,
+    "error": null
+  },
+  "listening": "not performed",
+  "caption_selector": "not promised by MP4 embed; separate WebVTT link"
+}

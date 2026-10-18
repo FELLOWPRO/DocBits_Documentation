@@ -14,9 +14,10 @@ All nine languages include the 40 country/international guides and the clarified
 | --- | --- | --- | --- |
 | EN, DE, ES, FR, IT | 40 each | 40 each | 40 each |
 | NL | 40 | 40 | 39; Vietnam pending |
-| PL, PT, ZH | 40 each | Pending | Pending |
+| PL, ZH | 40 each | 40 each | 40 each |
+| PT | 40 | 40 | 37; Austria, Thailand and Brazil pending |
 
-The Dutch Vietnam speech submission lost its response before a request ID was saved. The existing cache guard is preserved; no duplicate paid submission was made. The remaining country media is unfinished. Media capture and rendering continue one language at a time. The earlier credit-note diagnostic guides and their media remain complete in all nine languages.
+The Dutch Vietnam speech submission lost its response before a request ID was saved. The existing cache guard is preserved; no duplicate paid submission was made. Portuguese Austria, Thailand and Brazil also retain ambiguous speech-submission checkpoints. These four films remain pending; do not resubmit paid speech until the existing submissions have been reconciled. The earlier credit-note diagnostic guides and their media remain complete in all nine languages.
 
 The complete isolated renderer sources and tests are in `renderer-source.tar.gz`. Extract into a new directory; `renderer-source.sha256.json` lists every source file. Changed renderer modules are also readable in `renderer/`. Pinned fonts and logo can be restored from the retained local cache using the unchanged font/brand locks and the provisioning instructions in `../edocs-credit-note/`. Never put credentials in this package.
 
@@ -33,8 +34,8 @@ Speech uses the retained asynchronous provider adapter and full request hashes. 
 
 ## Review
 
-The GitBook pages contain MP4 and native WebVTT attachments. Serve the documentation checkout over localhost and open `review.html` to select a country and language, play the actual attachments, enable captions and read the transcript.
+The published GitBook guides embed the available version 2 films from the DocBits video CDN before the format matrix, with direct MP4 and WebVTT links. See `../edocs-ui-v2/publication/` for the verified immutable assets. The historical local review player still opens the original attachments and supports captions and transcripts.
 
 Per-language QA in `qa/` records full decode, streams, timing, captions, loudness, clipping, source freshness, real browser playback/seek/end, keyboard access, 380 px layout and HTTP byte ranges for the delivered films. `report.json` denotes a complete media locale; `partial-report.json` explicitly lists missing films and screenshots. Contact sheets cover each delivered film and its three scenes; the Dutch partial sheet marks the unavailable Vietnam film. Screenshot sheets contain every delivered UI capture. **Direct listening and native-speaker pronunciation review were not performed.** Text/language provenance and machine checks do not certify pronunciation.
 
-The videos are delivered as documentation attachments through the draft Git PRs. No CDN or application runtime catalog is published by these scripts.
+Version 2 publication uses the retained create-only CDN publisher, as documented in `../edocs-ui-v2/README.md`. A reachable attachment is not evidence of an inline player: verify playback on the actual GitBook page. This documentation delivery does not update the application runtime video catalog.

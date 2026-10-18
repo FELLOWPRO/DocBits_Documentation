@@ -447,5 +447,12 @@
       "thailand",
       "brazil"
     ]
+  },
+  "publication": {
+    "origin": "https://docbits-videos.fra1.cdn.digitaloceanspaces.com",
+    "manifest": "publication/manifest.json",
+    "receipt": "publication/receipt.json",
+    "player": "GitBook embed",
+    "variants": 365
   }
 }

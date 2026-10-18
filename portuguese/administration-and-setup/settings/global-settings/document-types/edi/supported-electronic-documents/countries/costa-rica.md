@@ -8,6 +8,18 @@ Utilize este guia para identificar a família configurada e o âmbito das versõ
 
 [Todos os países e âmbito do suporte](../README.md)
 
+## Vídeo explicativo do país
+
+A narração e as legendas WebVTT traduzidas explicam a seleção do formato, a configuração e as verificações de aceitação.
+
+Este percurso apenas de leitura mostra a configuração existente do país no DocBits. Verifique a fonte utilizada e a versão ativa e teste faturas, notas de crédito e exportações representativas na sua organização.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_costa_rica/v2/pt.mp4" %}
+
+[Costa Rica — Vídeo explicativo do país](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_costa_rica/v2/pt.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_costa_rica/v2/pt.vtt)
+
 ## Variantes e limites das versões
 
 A documentação anterior menciona a Costa Rica, mas não foi encontrada nenhuma entrada de classificação ou de configuração correspondente no catálogo de desenvolvimento examinado.
@@ -25,20 +37,6 @@ Não foi encontrada nenhuma entrada de classificação ou de configuração corr
 ## Encontrar o mapeamento no DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-pt.png" alt="Costa Rica"><figcaption><p>Interface real de desenvolvimento: a pesquisa pelo nome deste país não devolveu nenhuma entrada de configuração correspondente no catálogo examinado.</p></figcaption></figure>
-
-## Vídeo explicativo do país
-
-A narração e as legendas WebVTT traduzidas explicam a seleção do formato, a configuração e as verificações de aceitação.
-
-Este percurso apenas de leitura mostra a configuração existente do país no DocBits. Verifique a fonte utilizada e a versão ativa e teste faturas, notas de crédito e exportações representativas na sua organização.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-pt-v2.mp4" %}
-Costa Rica — Vídeo explicativo do país
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-pt-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Verificações de aceitação
 

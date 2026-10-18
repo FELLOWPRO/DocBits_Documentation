@@ -65,3 +65,5 @@ Ejecute el flujo con el control de reproducción, valídelo y guárdelo con el b
 
 - Vea qué hace cada tarjeta en la sección **Cards**.
 - Para automatizaciones lineales sencillas, el constructor **Standard Workflow** es más rápido de configurar.
+
+[Ver los cinco capítulos](advanced-workflow-videos.md)

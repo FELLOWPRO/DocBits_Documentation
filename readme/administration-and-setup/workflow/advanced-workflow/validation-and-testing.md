@@ -1,5 +1,42 @@
 # Validación y pruebas
 
+## Vídeo: Variables, pruebas y activación
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/es.mp4" %}
+
+[Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/es.vtt) · 1:53
+
+<details>
+<summary>Transcripción</summary>
+
+**Elija el tipo de variable**
+
+Abra Variables con las llaves. Elija texto, número, sí o no, o documento. Busque nombres. Document guarda una referencia mediante una acción específica; este formulario no admite valores de documento.
+
+**Variables de la organización**
+
+Elija nombre único, tipo y valor inicial. Crear, editar o eliminar se guarda inmediatamente para la organización. Otros workflows comparten estos valores. Guardar o descartar el lienzo no deshace cambios de variables.
+
+**Valide primero la estructura**
+
+Pulse Validar. Revise errores y advertencias sobre el lienzo. Pulse un mensaje para enfocar su nodo. Compruebe acciones, entradas, salidas, ciclos y uniones. Una estructura válida no garantiza datos correctos.
+
+**Elija el contexto de prueba**
+
+Reproducir en la barra abre la selección del documento. Elija documento, datos personalizados o prueba sin documento para tarjetas independientes. Start ejecuta directamente. Las pruebas incluyen cambios sin guardar y simulan acciones destructivas.
+
+**Revise los resultados**
+
+Revise mensajes y tiempos: verde, éxito; naranja, condición falsa; rojo, error; gris, omitido. Corrija y repita. Use el gestor de pruebas para escenarios repetibles con éxito, alternativas, datos ausentes y errores.
+
+**Guarde antes de activar**
+
+El guardado automático conserva un borrador local aproximadamente cada treinta segundos tras cambios. Guarde explícitamente en el servidor. Active después del primer guardado. Compruebe el estado en la lista antes de esperar ejecución automática.
+
+</details>
+
+[Ver los cinco capítulos](../advanced-workflow-videos.md)
+
 Mientras construyes un flujo de trabajo Avanzado, dos controles de la barra de herramientas te permiten comprobarlo sin salir del editor. Son para *comprobaciones rápidas durante la construcción*; para pruebas guardadas y repetibles, usa el [Test Manager](../test-manager.md).
 
 ## Validate

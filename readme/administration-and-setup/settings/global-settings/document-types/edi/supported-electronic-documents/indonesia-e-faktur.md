@@ -4,6 +4,12 @@ description: Ondersteuning voor INDONESIA E-FAKTUR elektronisch document in DocB
 
 # 🇮🇩 INDONESIA E-FAKTUR
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Indonesië](countries/indonesia.md). De vermelding geeft geen versienummer aan. Controleer de werkelijke XML-inhoud; een afgedrukte factuur of QR-afbeelding bevestigt geen XML-ondersteuning.
+{% endhint %}
+
 | Eigenschap | Waarde |
 |------------|--------|
 | **Land / Regio** | Indonesië |

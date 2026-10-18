@@ -4,6 +4,12 @@ description: Ondersteuning voor EHF INVOICE 3.0 elektronisch document in DocBits
 
 # 🇳🇴 EHF INVOICE 3.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Noorwegen](countries/norway.md). Kies de toewijzing voor het werkelijke bedrijfsdocument. Een order of verzendbericht is geen factuur.
+{% endhint %}
+
 | Eigenschap | Waarde |
 |------------|--------|
 | **Land / Regio** | Noorwegen |

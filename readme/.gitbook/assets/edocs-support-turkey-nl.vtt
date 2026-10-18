@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.010
+Turkey E-Fatura en E-Arsiv zijn
+afzonderlijke geconfigureerde families.
+
+formats_02
+00:00:05.010 --> 00:00:09.526
+Controleer het bronprofiel en de
+documentstructuur. Het familielabel
+
+formats_03
+00:00:09.526 --> 00:00:14.437
+identificeert niet elke UBL-TR-versie en
+bevestigt geen aflevering via het
+
+formats_04
+00:00:14.437 --> 00:00:15.733
+belastingplatform.
+
+workflow_01
+00:00:16.483 --> 00:00:22.137
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:22.137 --> 00:00:27.559
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:27.559 --> 00:00:29.033
+activeert het niet.
+
+accept_01
+00:00:29.783 --> 00:00:35.472
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:35.472 --> 00:00:40.754
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:40.754 --> 00:00:44.133
+fiscale goedkeuring of aflevering via een
+netwerk.
+

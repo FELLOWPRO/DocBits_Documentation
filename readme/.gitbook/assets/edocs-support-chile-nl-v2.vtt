@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:04.092
+Chile DTE heeft vermeldingen voor
+facturen, creditnota’s en
+
+formats_02
+00:00:04.092 --> 00:00:08.846
+verzenddocumenten. Selecteer het
+bedrijfsdocumenttype voordat u de velden
+
+formats_03
+00:00:08.846 --> 00:00:13.275
+controleert. Facturen, creditnota’s en
+leveringsinformatie gebruiken
+
+formats_04
+00:00:13.275 --> 00:00:15.033
+verschillende toewijzingen.
+
+workflow_01
+00:00:15.783 --> 00:00:21.437
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:21.437 --> 00:00:26.859
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:26.859 --> 00:00:28.333
+activeert het niet.
+
+accept_01
+00:00:29.083 --> 00:00:34.772
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:34.772 --> 00:00:40.054
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:40.054 --> 00:00:43.433
+fiscale goedkeuring of aflevering via een
+netwerk.
+

@@ -4,6 +4,12 @@ description: Ondersteuning voor PEPPOL BIS 3.0 elektronische documenten in DocBi
 
 # 🇪🇺 PEPPOL BIS 3.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Internationaal](countries/international.md). Toewijzingen voor facturen, orders, antwoorden en verzendberichten staan los van elkaar. Bestandsverwerking biedt op zichzelf geen Peppol-toegangspunt of verbinding met handelspartners.
+{% endhint %}
+
 | Eigenschap           | Waarde                                            |
 | -------------------- | ------------------------------------------------- |
 | **Land / Regio**     | Europese Unie / Internationaal (40+ landen)       |

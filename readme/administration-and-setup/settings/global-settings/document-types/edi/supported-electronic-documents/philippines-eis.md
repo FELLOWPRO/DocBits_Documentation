@@ -4,6 +4,12 @@ description: Ondersteuning voor PHILIPPINES EIS elektronische documenten in DocB
 
 # 🇵🇭 PHILIPPINES EIS
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Filipijnen](countries/philippines.md). Het label noemt geen versie. Controleer het schema van de gegevensinhoud en het betreffende documenttype voordat u op een algemeen EIS-label vertrouwt.
+{% endhint %}
+
 | Eigenschap           | Waarde                                  |
 | -------------------- | --------------------------------------- |
 | **Land / Regio**     | Filipijnen                              |

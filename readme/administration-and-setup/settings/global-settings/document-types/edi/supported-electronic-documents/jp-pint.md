@@ -4,6 +4,12 @@ description: Ondersteuning voor JP PINT elektronisch document in DocBits
 
 # 🇯🇵 JP PINT
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Japan](countries/japan.md). Selfbilling is een variant van een bedrijfsproces, geen taalkeuze. Controleer de aanpassingsidentificatie en de geconfigureerde variant.
+{% endhint %}
+
 | Eigenschap | Waarde |
 |------------|--------|
 | **Land / Regio** | Japan |

@@ -13,13 +13,11 @@ Das Video zeigt eine lesende Prüfung in DocBits am Beispiel FACTURX 1.0.05 / ZU
 
 Das gezeigte ältere XSLT-Beispiel enthält Zweige für 381 und 389. Prüfen Sie an der tatsächlichen Transformation, welche Codes diese konkrete Version erhält; die allgemeine Codeliste belegt keine Abdeckung in jeder historischen Zuordnung.
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-de-v2.mp4" %}
-Klassifizierung elektronischer Gutschriften prüfen
-{% endfile %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/de.mp4" %}
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-de-v2.vtt" %}
-WebVTT
-{% endfile %}
+[Klassifizierung elektronischer Gutschriften prüfen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/de.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/de.vtt)
 
 ## Dokumentcode prüfen
 

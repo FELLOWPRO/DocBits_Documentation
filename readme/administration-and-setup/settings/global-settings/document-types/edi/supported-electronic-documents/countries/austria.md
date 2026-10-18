@@ -8,6 +8,18 @@ Verwenden Sie diese Anleitung, um die konfigurierte Familie und den Versionsumfa
 
 [Alle Länder und Umfang der Unterstützung](../README.md)
 
+## Erklärvideo zum Land
+
+Ein Sprechertext und WebVTT-Untertitel in der jeweiligen Sprache erklären Formatauswahl, Konfiguration und Abnahmeprüfungen.
+
+Dieser lesende Rundgang zeigt die in DocBits vorhandene Konfiguration für das Land. Prüfen Sie die verwendete Quelle und aktive Version und testen Sie repräsentative Rechnungen, Gutschriften und Exporte in Ihrer eigenen Organisation.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_austria/v2/de.mp4" %}
+
+[Österreich — Erklärvideo zum Land](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_austria/v2/de.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_austria/v2/de.vtt)
+
 ## Varianten und Versionsgrenzen
 
 Für ebInterface 4.3, 5.0, 6.0 und 6.1 gibt es separate Einträge.
@@ -34,20 +46,6 @@ Ein Strich bedeutet, dass die Statusprüfung für genau diese Kombination aus Fo
 ## Die Zuordnung in DocBits finden
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-austria-de.png" alt="Österreich: EBINTERFACE 6.1"><figcaption><p>Echte Entwicklungsoberfläche: das repräsentative Format und seine verfügbaren Konfigurationskomponenten. Weitere Versionen sind in der Matrix aufgeführt.</p></figcaption></figure>
-
-## Erklärvideo zum Land
-
-Ein Sprechertext und WebVTT-Untertitel in der jeweiligen Sprache erklären Formatauswahl, Konfiguration und Abnahmeprüfungen.
-
-Dieser lesende Rundgang zeigt die in DocBits vorhandene Konfiguration für das Land. Prüfen Sie die verwendete Quelle und aktive Version und testen Sie repräsentative Rechnungen, Gutschriften und Exporte in Ihrer eigenen Organisation.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-austria-de-v2.mp4" %}
-Österreich — Erklärvideo zum Land
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-austria-de-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Abnahmeprüfungen
 

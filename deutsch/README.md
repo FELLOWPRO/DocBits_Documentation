@@ -1,5 +1,15 @@
 # DocBits
 
+**DocBits. Make room for ambition.**
+
+Von OCR und IDP zu Geschäftslogik, Freigaben und Advanced Workflows.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/de.mp4" %}
+
+*90 Sekunden · Produktoberfläche auf Englisch · Historische Szenen mit KI erstellt*
+
+[Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/de-transcript.md) · [Video herunterladen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/de.mp4)
+
 Willkommen bei DocBits
 
 Willkommen bei **DocBits**, Ihrer umfassenden Quelle für Dokumentationsstrategien und Einblicke. Bei DocBits stellen wir klare, prägnante und aktuelle Dokumentationsressourcen für [Endanwender](end-user-and-partner-section/end-user-section/), [Administratoren](administration-and-setup/settings/) und [Partner](end-user-and-partner-section/partner-section/) bereit.
@@ -55,5 +65,3 @@ Nachfolgend finden Sie eine Zusammenfassung der besonderen Funktionen und Vortei
 * Ideal für Unternehmen, die ihre Dokumentenerfassung optimieren und ihre betriebliche Effizienz steigern möchten.
 
 Weitere Informationen finden Sie bei [FellowPRO AG](https://fellowpro.com/), oder wenden Sie sich an den Vertrieb unter sales@fellowpro.com. Folgen Sie uns auf [LinkedIn](https://www.linkedin.com/company/fellowpro).
-
-{% embed url="https://youtu.be/p7GEJonM_wU" %}

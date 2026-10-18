@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:08.737
+e-SLOG 1.6 e 2.0 têm entradas distintas.
+As duas versões têm estruturas XML
+
+formats_02
+00:00:08.737 --> 00:00:13.776
+diferentes. Faça a correspondência pelo
+esquema de origem, em vez de selecionar
+
+formats_03
+00:00:13.776 --> 00:00:16.400
+uma regra com base no nome do ficheiro.
+
+workflow_01
+00:00:17.150 --> 00:00:22.537
+Abra E-Doc para o formato detetado.
+Compare Transformation, Preview e
+
+workflow_02
+00:00:22.537 --> 00:00:29.608
+Extraction Paths. As regras Custom têm
+prioridade. Guardar um rascunho não o
+
+workflow_03
+00:00:29.608 --> 00:00:30.533
+ativa.
+
+accept_01
+00:00:31.283 --> 00:00:37.239
+Teste uma fatura e uma nota de crédito,
+quando aplicável. Verifique os montantes,
+
+accept_02
+00:00:37.239 --> 00:00:43.102
+as partes envolvidas e o tipo de documento
+exportado. A análise do ficheiro não
+
+accept_03
+00:00:43.102 --> 00:00:47.633
+comprova a aprovação fiscal nem a entrega
+através da rede.
+

@@ -29,7 +29,23 @@ C = classificação, T = Transformation, P = Preview, E = Extraction Paths. A ch
 
 Um travessão significa que a verificação de estado não indicou um componente dedicado para esta combinação exata de formato e chave do documento. Isso não exclui a utilização de um mapeamento partilhado ou de recurso. Verifique o mecanismo de resolução efetivo e um ficheiro representativo antes de depender desse caminho.
 
-<!-- Country screenshot and narrated film pending; no unavailable media is linked. -->
+## Encontrar o mapeamento no DocBits
+
+<figure><img src="../../../../../../../.gitbook/assets/edocs-support-turkey-pt.png" alt="Turquia"><figcaption><p>Interface real de desenvolvimento: o formato representativo e os respetivos componentes de configuração disponíveis. As outras versões estão indicadas na matriz.</p></figcaption></figure>
+
+## Vídeo explicativo do país
+
+A narração e as legendas WebVTT traduzidas explicam a seleção do formato, a configuração e as verificações de aceitação.
+
+Este percurso apenas de leitura mostra a configuração existente do país no DocBits. Verifique a fonte utilizada e a versão ativa e teste faturas, notas de crédito e exportações representativas na sua organização.
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-turkey-pt-v2.mp4" %}
+Turquia — Vídeo explicativo do país
+{% endfile %}
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-turkey-pt-v2.vtt" %}
+WebVTT
+{% endfile %}
 
 ## Verificações de aceitação
 

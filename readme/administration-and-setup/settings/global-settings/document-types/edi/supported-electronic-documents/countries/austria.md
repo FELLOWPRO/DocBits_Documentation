@@ -31,7 +31,13 @@ C = classificação, T = Transformation, P = Preview, E = Extraction Paths. A ch
 
 Um travessão significa que a verificação de estado não indicou um componente dedicado para esta combinação exata de formato e chave do documento. Isso não exclui a utilização de um mapeamento partilhado ou de recurso. Verifique o mecanismo de resolução efetivo e um ficheiro representativo antes de depender desse caminho.
 
-<!-- Country screenshot and narrated film pending; no unavailable media is linked. -->
+## Encontrar o mapeamento no DocBits
+
+<figure><img src="../../../../../../../.gitbook/assets/edocs-support-austria-pt.png" alt="Áustria"><figcaption><p>Interface real de desenvolvimento: o formato representativo e os respetivos componentes de configuração disponíveis. As outras versões estão indicadas na matriz.</p></figcaption></figure>
+
+## Vídeo explicativo do país
+
+O filme narrado deste país ainda não está disponível.
 
 ## Verificações de aceitação
 

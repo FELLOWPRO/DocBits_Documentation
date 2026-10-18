@@ -22,7 +22,23 @@ As tabelas registam uma verificação do catálogo de desenvolvimento realizada 
 
 Não foi encontrada nenhuma entrada de classificação ou de configuração correspondente. Esta verificação não confirma o suporte incorporado atual.
 
-<!-- Country screenshot and narrated film pending; no unavailable media is linked. -->
+## Encontrar o mapeamento no DocBits
+
+<figure><img src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-pt.png" alt="Costa Rica"><figcaption><p>Interface real de desenvolvimento: a pesquisa pelo nome deste país não devolveu nenhuma entrada de configuração correspondente no catálogo examinado.</p></figcaption></figure>
+
+## Vídeo explicativo do país
+
+A narração e as legendas WebVTT traduzidas explicam a seleção do formato, a configuração e as verificações de aceitação.
+
+Este percurso apenas de leitura mostra a configuração existente do país no DocBits. Verifique a fonte utilizada e a versão ativa e teste faturas, notas de crédito e exportações representativas na sua organização.
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-pt-v2.mp4" %}
+Costa Rica — Vídeo explicativo do país
+{% endfile %}
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-pt-v2.vtt" %}
+WebVTT
+{% endfile %}
 
 ## Verificações de aceitação
 

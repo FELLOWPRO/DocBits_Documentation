@@ -4,6 +4,12 @@ description: Prise en charge du document électronique FACTURX 1.0.07.2 - ZUGFER
 
 # 🇫🇷 FACTURX 1.0.07.2 - ZUGFERD 2.3.2
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [France](countries/france.md). Le marqueur XML 1p0 et Factur-X XMP Version 1.0 n’identifient pas une version de publication. Conservez le libellé générique lorsque la publication est inconnue.
+{% endhint %}
+
 | Propriété              | Valeur                            |
 | ---------------------- | --------------------------------- |
 | **Pays / Région**      | France / Allemagne                |

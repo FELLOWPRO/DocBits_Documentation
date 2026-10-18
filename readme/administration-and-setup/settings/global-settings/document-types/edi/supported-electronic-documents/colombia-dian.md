@@ -4,6 +4,12 @@ description: Prise en charge des documents électroniques colombiens DIAN dans D
 
 # 🇨🇴 Colombia DIAN
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Colombie](countries/colombia.md). L’entrée de classification des avoirs ne possède pas d’ensemble d’extraction dédié dans l’état examiné. Confirmez la correspondance effectivement utilisée au lieu de déduire la prise en charge de l’entrée de facture.
+{% endhint %}
+
 | Propriété | Valeur |
 |-----------|--------|
 | **Pays / Région** | Colombia |

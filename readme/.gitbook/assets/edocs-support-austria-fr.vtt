@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.999
+ebInterface 4.3, 5.0, 6.0 et 6.1 possèdent
+des entrées distinctes. Faites
+
+formats_02
+00:00:05.999 --> 00:00:11.984
+correspondre l’espace de noms XML à la
+version configurée. Un espace de noms
+
+formats_03
+00:00:11.984 --> 00:00:16.000
+différent peut nécessiter une autre
+correspondance.
+
+workflow_01
+00:00:16.750 --> 00:00:22.520
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:22.520 --> 00:00:28.430
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:28.430 --> 00:00:29.500
+l’active pas.
+
+accept_01
+00:00:30.250 --> 00:00:35.231
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:35.231 --> 00:00:40.908
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:40.908 --> 00:00:44.100
+la validation fiscale ni la transmission
+réseau.
+

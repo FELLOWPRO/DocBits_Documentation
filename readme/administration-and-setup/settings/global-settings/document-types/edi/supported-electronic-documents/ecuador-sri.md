@@ -4,6 +4,12 @@ description: Prise en charge des documents électroniques Ecuador SRI (Factura E
 
 # 🇪🇨 Ecuador SRI
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Équateur](countries/ecuador.md). L’entrée de classification des avoirs ne possède pas d’ensemble d’extraction dédié dans l’état examiné. Vérifiez la correspondance effectivement utilisée et le type de document source.
+{% endhint %}
+
 | Propriété | Valeur |
 |-----------|--------|
 | **Pays / Région** | Équateur |

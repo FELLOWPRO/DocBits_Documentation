@@ -4,6 +4,12 @@ description: Prise en charge des documents électroniques JP PINT SELF-BILLING d
 
 # 🇯🇵 JP PINT SELF-BILLING
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Japon](countries/japan.md). L’autofacturation est une variante de processus métier, et non un choix de langue. Vérifiez l’identifiant de personnalisation et la variante configurée.
+{% endhint %}
+
 | Propriété | Valeur |
 | --------- | ------ |
 | **Pays / Région** | Japon |

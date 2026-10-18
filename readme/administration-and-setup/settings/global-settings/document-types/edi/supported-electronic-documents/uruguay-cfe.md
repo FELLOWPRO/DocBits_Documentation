@@ -4,6 +4,12 @@ description: Prise en charge du document électronique URUGUAY CFE dans DocBits
 
 # 🇺🇾 URUGUAY CFE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Uruguay](countries/uruguay.md). Les entrées d’avoir n’ont pas d’ensembles d’extraction dédiés dans l’état examiné. Confirmez la version CFE et la correspondance de facture ou d’avoir effectivement utilisée.
+{% endhint %}
+
 | Propriété              | Valeur                                                   |
 | ---------------------- | -------------------------------------------------------- |
 | **Pays / Région**      | Uruguay                                                  |

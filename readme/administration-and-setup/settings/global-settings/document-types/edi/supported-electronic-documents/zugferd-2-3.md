@@ -4,6 +4,12 @@ description: Prise en charge du document électronique ZUGFERD 2.3 dans DocBits
 
 # 🇩🇪 ZUGFERD 2.3
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Allemagne](countries/germany.md). La syntaxe, la version de publication et le profil sont des choix distincts. Ne déduisez pas une publication Factur-X du marqueur commun 1p0.
+{% endhint %}
+
 | Propriété | Valeur |
 | -------------------- | ------------------------- |
 | **Pays / Région** | Germany |

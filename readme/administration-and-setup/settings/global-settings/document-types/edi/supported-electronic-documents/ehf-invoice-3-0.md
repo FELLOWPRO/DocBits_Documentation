@@ -4,6 +4,12 @@ description: Prise en charge du document électronique EHF INVOICE 3.0 dans DocB
 
 # 🇳🇴 EHF INVOICE 3.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Norvège](countries/norway.md). Choisissez la correspondance du document métier réel. Une commande ou un avis d’expédition n’est pas une facture.
+{% endhint %}
+
 | Propriété              | Valeur                                            |
 | ---------------------- | ------------------------------------------------- |
 | **Pays / Région**      | Norvège                                           |

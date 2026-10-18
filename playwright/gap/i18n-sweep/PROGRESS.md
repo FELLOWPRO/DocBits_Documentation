@@ -156,6 +156,17 @@ Health check 2026-10-18 07:0xZ: all 3 checks clean. 37 pages verified live
 (20 merged de pages + zh `ui-redesign-guide` + 24/24 e-mail-templates trio
 bytes distinct from EN + 8/8 `ui-redesign-help-icon-<lang>` distinct shas).
 
+Health check 2026-10-18 08:5xZ (=06:56Z UTC): all 3 checks clean.
+1. Bridge: newest `schedule` `39105304237` 06:47:43Z `success` (~9 min old);
+   4/4 recent runs success — no dispatch needed.
+2. Live: 64 images verified, 0 problems (22 de pages + 8×3 e-mail-templates
+   + 8 `ui-redesign-help-icon`), same set as the 06:46Z run.
+   (`duplicate-document-handling` still counts as a candidate in check 3
+   because `DuplicateDocument_3/_4/_6/_7.png` stay English by decision —
+   expected, not drift.)
+3. Worklist drift: none. de 222 es 206 fr 208 it 212 nl 204 pl 216 pt 214
+   zh 389 — identical to the 08:2xZ run, no count went UP.
+
 Health check 2026-10-18 08:4xZ (=06:46Z UTC): all 3 checks clean.
 1. Bridge: newest completed `39104526963` 06:34:34Z `success` (the dispatch
    after #1037), newest `schedule` `39103517486` 06:17:29Z `success` (~29 min

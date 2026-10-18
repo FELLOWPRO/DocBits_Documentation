@@ -224,10 +224,17 @@ Use the `Write` tool to create scripts instead of `/bin/cat > … <<'PY'`.
   Import/O365-Tenant, Report-Page, Validation-Screen, Infor-Export/Import …
   → das ist der reale Rest-Umfang für de.
 
-Rest-Umfang de real ≈ **114 UI-Seiten** (statt 222 roh). Größte Brocken:
+Rest-Umfang de real ≈ **93 UI-Seiten** (gemessen auf `origin/de`: von den
+98 Nicht-Preview-Kandidaten referenzieren 5 bereits ein deutsches Asset →
+Worklist dort stale; 93 sind noch rein englisch). Größte Brocken:
 `export-tax-codes-to-ln` (29 Refs, 2 Pfad-Varianten),
 `validation-screen/README` (25), `import/o365-tenant` (23),
 `analytics-dashboard` + `/README` (19 je).
+
+Achtung beim Prüfen: die Worklist-Pfade sind `deutsch/…` (der GitBook-Ordner);
+auf Branch `de` liegt dieselbe Datei unter `readme/…`. Vor jedem
+„ist die Seite schon deutsch?"-Check den Präfix umschreiben, sonst meldet der
+Check 0 Treffer.
 
 Health check 2026-10-17 13:2xZ: all 3 checks clean. 22 live pages verified
 (6 de + 8-lang e-mail-templates ×3 assets + 8-lang ui-redesign-guide).

@@ -30,11 +30,13 @@ Non è stata trovata alcuna voce di classificazione o configurazione corrisponde
 
 La narrazione localizzata e i sottotitoli WebVTT spiegano la selezione del formato, la configurazione e le verifiche di accettazione.
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-it.mp4" %}
+Questa panoramica in sola lettura mostra la configurazione esistente del paese in DocBits. Verificate la fonte utilizzata e la versione attiva, quindi provate fatture, note di credito ed esportazioni rappresentative nella vostra organizzazione.
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-it-v2.mp4" %}
 Costa Rica — Video esplicativo del paese
 {% endfile %}
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-it.vtt" %}
+{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-it-v2.vtt" %}
 WebVTT
 {% endfile %}
 

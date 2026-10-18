@@ -37,7 +37,7 @@ const evidence={locale,environment:'development',captured_at:new Date().toISOStr
 async function shot(page,name,locator,focus,folder=out,receipt=evidence) {
   await ready(page);await clean(page);await page.mouse.move(0,0);await page.waitForTimeout(250);
   const file=path.join(folder,name+'.png');
-  if(locator)await locator.screenshot({path:file,animations:'disabled'});
+  if(locator)await locator.screenshot({path:file,animations:'disabled',timeout:120000});
   else await page.screenshot({path:file,clip:{x:320,y:55,width:1280,height:850},animations:'disabled'});
   receipt.captures.push({name,file:path.basename(file),url:page.url(),sha256:crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex'),focus:focus||null});
   fs.writeFileSync(path.join(folder,'capture.json'),JSON.stringify(receipt,null,2)+'\n');

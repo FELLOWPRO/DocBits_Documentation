@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:04.882
+FatturaPA è la famiglia italiana
+configurata. L’etichetta della famiglia
+
+formats_02
+00:00:04.882 --> 00:00:12.742
+non certifica ogni versione FatturaPA né
+la trasmissione tramite SDI. Verificate lo
+
+formats_03
+00:00:12.742 --> 00:00:16.167
+schema sorgente e i requisiti del
+destinatario.
+
+workflow_01
+00:00:16.917 --> 00:00:22.676
+Aprite E-Doc per il formato rilevato.
+Confrontate Transformation, Preview ed
+
+workflow_02
+00:00:22.676 --> 00:00:29.711
+Extraction Paths. Le regole Custom hanno
+la precedenza. Salvare una bozza non la
+
+workflow_03
+00:00:29.711 --> 00:00:30.633
+attiva.
+
+accept_01
+00:00:31.383 --> 00:00:37.362
+Provate una fattura e una nota di credito,
+se applicabile. Verificate gli importi, le
+
+accept_02
+00:00:37.362 --> 00:00:42.354
+parti e il tipo di documento esportato.
+L’analisi del file non dimostra
+
+accept_03
+00:00:42.354 --> 00:00:46.033
+l’autorizzazione fiscale né la consegna
+tramite rete.
+

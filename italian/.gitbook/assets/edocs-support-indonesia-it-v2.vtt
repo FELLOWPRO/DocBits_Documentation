@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.078
+Indonesia E-Faktur è la famiglia
+configurata. La voce non indica un numero
+
+formats_02
+00:00:06.078 --> 00:00:12.661
+di versione. Confermate il contenuto XML
+effettivo; una fattura stampata o
+
+formats_03
+00:00:12.661 --> 00:00:17.400
+un’immagine QR non dimostrano il supporto
+XML.
+
+workflow_01
+00:00:18.150 --> 00:00:23.909
+Aprite E-Doc per il formato rilevato.
+Confrontate Transformation, Preview ed
+
+workflow_02
+00:00:23.909 --> 00:00:30.944
+Extraction Paths. Le regole Custom hanno
+la precedenza. Salvare una bozza non la
+
+workflow_03
+00:00:30.944 --> 00:00:31.867
+attiva.
+
+accept_01
+00:00:32.617 --> 00:00:38.596
+Provate una fattura e una nota di credito,
+se applicabile. Verificate gli importi, le
+
+accept_02
+00:00:38.596 --> 00:00:43.588
+parti e il tipo di documento esportato.
+L’analisi del file non dimostra
+
+accept_03
+00:00:43.588 --> 00:00:47.267
+l’autorizzazione fiscale né la consegna
+tramite rete.
+

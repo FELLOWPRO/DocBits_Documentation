@@ -1,0 +1,9 @@
+{
+  "locale": "it",
+  "count": 40,
+  "visual": "Every actual capture and every composed film shot inspected; passed",
+  "technical": "passed",
+  "browser": "Actual documentation attachments: playback/seek/end, native captions, keyboard, 380 px and Range 206 passed",
+  "listening": "Not performed; pronunciation is not certified",
+  "kind": "Real UI screenshot walkthrough; no continuous screen recording or document acceptance test claimed"
+}

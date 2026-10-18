@@ -54,12 +54,19 @@ const only=process.argv[5]?.split(',');
      if(!selected)throw new Error('Missing '+rowName+' for '+country.slug);
      await selected.locator('td').first().click();await ready(page);await language(page);
      await page.locator('.code-editor-surface').waitFor({state:'visible',timeout:60000});
+     await page.waitForFunction(()=>{
+      const surface=document.querySelector('.code-editor-surface');let component=surface?.__vueParentComponent;
+      while(component&&!component.proxy?.editorInstance)component=component.parent;
+      const editor=surface?.env?.editor||component?.proxy?.editorInstance;
+      return Boolean(editor?.getValue()?.trim());
+     },null,{timeout:120000});
+     await ready(page);
      const focus=await seekCode(page,term);await page.waitForTimeout(200);
      await take(name,page.locator('.import-container'),focus);
      if(rowName==='TRANSFORMATION'){
       const preview=await page.evaluate(()=>document.querySelector('#q-app').__vue_app__.config.globalProperties.$t('preview'));
-      await page.getByRole('button',{name:preview,exact:true}).first().click();await take('preview-panel');
-      await page.getByRole('button',{name:preview,exact:true}).first().click();
+      await ready(page);await page.getByRole('button',{name:preview,exact:true}).first().click({timeout:120000});await take('preview-panel');
+      await ready(page);await page.getByRole('button',{name:preview,exact:true}).first().click({timeout:120000});
      }
      await page.goBack();await ready(page);await language(page);
      await card.waitFor({state:'visible',timeout:60000});await card.scrollIntoViewIfNeeded();

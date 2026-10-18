@@ -1,0 +1,136 @@
+{
+  "de": {
+    "branch": "codex/trl72-edocs-de",
+    "parent": "4b012846f1392bcfdd2d886380ac35dde3876fbc",
+    "commit": "c5ccc3bf9d5c3b8145344a3aecd5c3d38de2fe1a",
+    "changed_paths": [
+      "advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md",
+      "SUMMARY.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md",
+      "advanced-functions-and-tools/docbits-mcp/edocs-mcp/examples.md",
+      "advanced-functions-and-tools/docbits-mcp/edocs-mcp/README.md",
+      "advanced-functions-and-tools/edocs-mcp/examples.md",
+      "advanced-functions-and-tools/edocs-mcp/README.md",
+      "advanced-functions-and-tools/docbits-mcp/README.md"
+    ],
+    "mirror_parity": "passed"
+  },
+  "es": {
+    "branch": "codex/trl72-edocs-es",
+    "parent": "d9152297668c2cd9761c0401a73ccf9172921a67",
+    "commit": "29f46146dfb417e1c7569179a2d5da41d770c82c",
+    "changed_paths": [
+      "advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md",
+      "SUMMARY.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md",
+      "advanced-functions-and-tools/docbits-mcp/edocs-mcp/examples.md",
+      "advanced-functions-and-tools/docbits-mcp/edocs-mcp/README.md",
+      "advanced-functions-and-tools/edocs-mcp/examples.md",
+      "advanced-functions-and-tools/edocs-mcp/README.md",
+      "advanced-functions-and-tools/docbits-mcp/README.md"
+    ],
+    "mirror_parity": "passed"
+  },
+  "fr": {
+    "branch": "codex/trl72-edocs-fr",
+    "parent": "5a45985bf47f9405883cc808f0b38401fc2640d8",
+    "commit": "7cf15ea44d63a2a05aff30063687d5461e118f9a",
+    "changed_paths": [
+      "advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md",
+      "SUMMARY.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md",
+      "advanced-functions-and-tools/docbits-mcp/edocs-mcp/examples.md",
+      "advanced-functions-and-tools/docbits-mcp/edocs-mcp/README.md",
+      "advanced-functions-and-tools/edocs-mcp/examples.md",
+      "advanced-functions-and-tools/edocs-mcp/README.md",
+      "advanced-functions-and-tools/docbits-mcp/README.md"
+    ],
+    "mirror_parity": "passed"
+  },
+  "it": {
+    "branch": "codex/trl72-edocs-it",
+    "parent": "fd4205647e87482e811d4c4a2a3eb0982dc7e8be",
+    "commit": "5f262cf9ade2c0e9a9b1f7aa167b6f8446e27db5",
+    "changed_paths": [
+      "advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md",
+      "SUMMARY.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md",
+      "advanced-functions-and-tools/docbits-mcp/edocs-mcp/examples.md",
+      "advanced-functions-and-tools/docbits-mcp/edocs-mcp/README.md",
+      "advanced-functions-and-tools/edocs-mcp/examples.md",
+      "advanced-functions-and-tools/edocs-mcp/README.md",
+      "advanced-functions-and-tools/docbits-mcp/README.md"
+    ],
+    "mirror_parity": "passed"
+  },
+  "nl": {
+    "branch": "codex/trl72-edocs-nl",
+    "parent": "2eedd47d435e605dddea39acc1daf1558bc3ff75",
+    "commit": "2995e13762d44bd30e237fd8028918deae7bc8dd",
+    "changed_paths": [
+      "advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md",
+      "SUMMARY.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md",
+      "advanced-functions-and-tools/docbits-mcp/edocs-mcp/examples.md",
+      "advanced-functions-and-tools/docbits-mcp/edocs-mcp/README.md",
+      "advanced-functions-and-tools/edocs-mcp/examples.md",
+      "advanced-functions-and-tools/edocs-mcp/README.md",
+      "advanced-functions-and-tools/docbits-mcp/README.md"
+    ],
+    "mirror_parity": "passed"
+  },
+  "pl": {
+    "branch": "codex/trl72-edocs-pl",
+    "parent": "8b04192507ec52eef5c1b8016ed50f1d13ee6018",
+    "commit": "5934e4829190e4c2ee53c5a427a96c9c73801646",
+    "changed_paths": [
+      "advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md",
+      "SUMMARY.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md",
+      "advanced-functions-and-tools/docbits-mcp/edocs-mcp/examples.md",
+      "advanced-functions-and-tools/docbits-mcp/edocs-mcp/README.md",
+      "advanced-functions-and-tools/edocs-mcp/examples.md",
+      "advanced-functions-and-tools/edocs-mcp/README.md",
+      "advanced-functions-and-tools/docbits-mcp/README.md"
+    ],
+    "mirror_parity": "passed"
+  },
+  "pt": {
+    "branch": "codex/trl72-edocs-pt",
+    "parent": "91e84ce1ada53fbad565a4cab55cbeb7a7c5c5fb",
+    "commit": "81ff28f943372b7817616c43b50de8483f0bad8b",
+    "changed_paths": [
+      "advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md",
+      "SUMMARY.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md",
+      "advanced-functions-and-tools/docbits-mcp/edocs-mcp/examples.md",
+      "advanced-functions-and-tools/docbits-mcp/edocs-mcp/README.md",
+      "advanced-functions-and-tools/edocs-mcp/examples.md",
+      "advanced-functions-and-tools/edocs-mcp/README.md",
+      "advanced-functions-and-tools/docbits-mcp/README.md"
+    ],
+    "mirror_parity": "passed"
+  },
+  "zh": {
+    "branch": "codex/trl72-edocs-zh",
+    "parent": "1cfe9912ddc8a0be2dfd2734d2998772b151bb3a",
+    "commit": "ed60cc3c6abf1167c7a9516471041b0a3ec29da2",
+    "changed_paths": [
+      "advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md",
+      "SUMMARY.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md",
+      "advanced-functions-and-tools/docbits-mcp/edocs-mcp/examples.md",
+      "advanced-functions-and-tools/docbits-mcp/edocs-mcp/README.md",
+      "advanced-functions-and-tools/docbits-mcp/README.md"
+    ],
+    "mirror_parity": "passed"
+  }
+}

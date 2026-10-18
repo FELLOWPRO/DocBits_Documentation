@@ -48,7 +48,7 @@ The FACTURX/ZUGFeRD default credit note mapping includes **381 and 261**. A busi
 
 <figure><img src="../../../../../.gitbook/assets/edocs-transformation-en.png" alt="Read-only FACTURX transformation source in the DocBits version editor."><figcaption>Inspect the selected source and version before creating or activating a change.</figcaption></figure>
 
-The [eDocs MCP tools](../../../../../advanced-functions-and-tools/docbits-mcp/edocs-mcp/README.md) support the same checks: `list_edoc_custom_attributes`, `get_edoc_attribute_source` and `list_edoc_attribute_versions` identify the source; `compare_edoc_extraction` compares default, custom and candidate behavior. Use `test_electronic_document` for a dry run before activation.
+For the complete MCP procedure, follow [Configure DocBits with Claude or Codex](../../../../../advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md). `list_edoc_custom_attributes`, `get_edoc_attribute_source` and `list_edoc_attribute_versions` identify the source and active value. `preview_edoc_custom_xslt` previews a candidate Transformation. `compare_edoc_extraction` compares Extraction Paths only; it requires a custom Extraction Paths attribute. `test_electronic_document` tests the currently active configuration, not an inactive draft.
 
 ## Correct and activate safely
 

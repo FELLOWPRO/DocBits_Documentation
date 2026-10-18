@@ -1,146 +1,68 @@
 # 示例
 
-展示如何将 eDocs MCP 工具组合使用的端到端示例。
+可复制的提示词以及完整的诊断、草稿、激活和回退流程，请参阅[使用 Claude 或 Codex 配置 DocBits](../configuration-with-claude-or-codex.md)。以下示例使用当前参数。请将所有占位符替换为本组织响应中的值，并提供完整且正确进行 JSON 转义的源代码。
 
-## 示例 1：为 XRechnung 创建自定义预览
+## 1. 修改已有 Custom 规则
 
-本示例将演示自定义 PREVIEW 规则的完整生命周期：
-1. 检查现有规则
-2. 预览 XSLT，但不启用它
-3. 创建自定义规则
-4. 将其更新为新版本
-5. 恢复为默认规则
-
-### 步骤 1：检查现有自定义设置
-
-调用 `list_edoc_custom_attributes`：
+使用 `get_edoc_attribute_source` 读取实际生效的 `TRANSFORMATION`。格式名称必须与分类返回值完全一致：
 
 ```json
 {
-  "electronic_document_type": "XRECHNUNG 2.1 CII",
-  "doc_type_key": "INVOICE"
+  "electronic_document_type": "<detected_type_from_response>",
+  "attribute_name": "TRANSFORMATION",
+  "doc_type_key": "INVOICE",
+  "source": "effective"
 }
 ```
 
-响应会显示两个列表。如果 `PREVIEW` 属性的 `custom` 列表为空，说明贵组织当前使用的是内置默认预览样式表。
+记录 `attribute_id`、`active_value_id`、`active_version` 和 `value`。另行读取 `source: "default"` 以进行比较，并使用 `list_edoc_attribute_versions` 读取历史。以下操作要求本组织已有相应 Custom 属性。
 
-### 步骤 2：创建规则前测试 XSLT
-
-使用现有属性 ID（从 `list` 响应中选择一个默认 ID）以及以 base64 编码的示例 XML 文件调用 `preview_edoc_custom_xslt`：
+使用 `preview_edoc_custom_xslt` 预览完整候选代码，不保存。文档必须已存在于同一组织中：
 
 ```json
 {
-  "attribute_id": "<attribute_id_from_list>",
-  "file_content_base64": "<base64_encoded_xrechnung_xml>",
-  "file_name": "test_invoice.xml"
+  "attribute_id": "<custom_attribute_id_from_response>",
+  "candidate_value": "<complete_candidate_xslt>",
+  "doc_id": "<test_document_id_in_this_org>"
 }
 ```
 
-检查渲染后的输出，确认 XSLT 生成了预期结果，然后再提交。
+`TRANSFORMATION` 返回转换后的 XML，`PREVIEW` 返回 PDF，`EXTRACTION_PATHS` 返回字段和表格。预览不会选择已保存的草稿，也不测试后续脚本或导出。
 
-### 步骤 3：创建自定义规则
-
-调用 `create_edoc_custom_attribute`：
+审核差异与预览后，重新读取激活源代码，再使用 `update_edoc_custom_attribute` 保存草稿。必须明确传入 `activate: false`；工具默认值为 `true`。
 
 ```json
 {
-  "electronic_document_type": "XRECHNUNG 2.1 CII",
-  "attribute_name": "PREVIEW",
-  "attribute_value": "<?xml version=\"1.0\"?><xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" version=\"2.0\">...</xsl:stylesheet>",
-  "doc_type_key": "INVOICE"
+  "attribute_id": "<custom_attribute_id_from_response>",
+  "new_value": "<complete_reviewed_xslt>",
+  "activate": false
 }
 ```
 
-保存响应中的 `attribute_id`。从此之后，贵组织处理的每一张 XRechnung 2.1 CII 发票都会使用您的自定义预览。
-
-### 步骤 4：使用新版本更新规则
-
-之后，如果您想优化 XSLT，请调用 `update_edoc_custom_attribute`：
+在测试组织完成测试并确认具体更改后，调用 `activate_edoc_attribute_version`。`draft_id` 是版本值 ID。随后重新读取生效源代码。回退时使用同一调用，将之前记录的 `active_value_id` 作为版本值 ID。
 
 ```json
 {
-  "attribute_id": "<your_attribute_id>",
-  "new_value": "<?xml version=\"1.0\"?><xsl:stylesheet ...><!-- improved version --></xsl:stylesheet>",
-  "activate": true
+  "attribute_id": "<custom_attribute_id_from_response>",
+  "draft_id": "<value_id_of_reviewed_version>"
 }
 ```
 
-设置 `activate: true` 会立即切换到新版本。先前版本会保留在历史记录中。设置 `activate: false` 可将其保存为草稿，之后再单独启用。
+## 2. 如果还没有 Custom 属性
 
-### 步骤 5：恢复为内置默认规则
+`create_edoc_custom_attribute` 会创建立即激活的首个版本，而不是草稿。请在测试组织验证新的覆盖规则，或使用 DocBits 编辑器支持的流程。不要仅为获得预览而创建或删除生产覆盖规则。保留必要的自定义映射；不要全局修改共享默认规则。
 
-如果您想恢复默认预览，请调用 `delete_edoc_custom_attribute`：
+## 3. 测试当前激活的配置
+
+调用 `test_electronic_document`，将原始 XML 编码为 base64：
 
 ```json
 {
-  "attribute_id": "<your_attribute_id>"
+  "file_content_base64": "<base64_of_original_xml>",
+  "file_name": "credit-note-test.xml"
 }
 ```
 
-自定义规则将被移除，系统会自动回退到共享默认样式表。不会影响其他客户。
+此操作测试当前激活规则且不保存文档，不会测试未激活草稿。远程 HTTP MCP 无法读取您电脑上的本地 `file_path`。`compare_edoc_extraction` 只比较 Extraction Paths，并要求已有自定义提取路径属性；它不比较转换。
 
----
-
-## 示例 2：自定义 EDI 的提取路径
-
-贵组织收到的 EDI 发票使用了非标准字段布局。本示例展示如何为贵组织覆盖提取路径。
-
-### 步骤 1：检查当前规则
-
-```
-list_edoc_custom_attributes
-  electronic_document_type: "EDI"
-  doc_type_key: "INVOICE"
-```
-
-如果您在 `default` 中看到 `EXTRACTION_PATHS` 条目，但在 `custom` 中没有看到，说明贵组织继承了共享的 XPath 规则。
-
-### 步骤 2：创建自定义提取路径
-
-使用调整后的 XPath JSON 调用 `create_edoc_custom_attribute`：
-
-```json
-{
-  "electronic_document_type": "EDI",
-  "attribute_name": "EXTRACTION_PATHS",
-  "attribute_value": "{\"invoice_id\": \"//Invoice/ID/text()\", \"invoice_date\": \"//Invoice/IssueDate/text()\", \"total_amount\": \"//Invoice/LegalMonetaryTotal/TaxInclusiveAmount/text()\"}",
-  "doc_type_key": "INVOICE"
-}
-```
-
-### 步骤 3：通过试运行测试进行验证
-
-使用示例 EDI 文件调用 `test_electronic_document`，确认自定义提取路径能够提取正确的值：
-
-```json
-{
-  "file_content_base64": "<base64_encoded_edi_xml>",
-  "file_name": "sample_edi_invoice.xml"
-}
-```
-
-响应包含 `extracted_fields` 和一个 `preview.image_base64` PNG。请检查两者，确认无误后再投入使用。
-
----
-
-## 示例 3：运行完整的 eDoc 验证
-
-发布更改前，请验证所有受支持的 eDoc 测试样例仍能通过：
-
-```
-validate_all_edocs
-  fixture_filter: "xrechnung*"
-  limit: 0
-```
-
-该工具会将每个 XRechnung 测试样例送入处理流程，并按样例报告通过/失败/警告状态。全部通过表示您的自定义设置没有影响其他文档类型。
-
-若要快速测试单一类型：
-
-```
-verify_electronic_documents
-  fixture_filter: "zugferd*"
-  limit: 3
-```
-
-这会上传最多 3 个 ZUGFeRD 测试样例，等待处理完成，并端到端验证分类、提取和预览生成。
+`validate_all_edocs` 对可用服务器测试文件进行试运行。`verify_electronic_documents` 会上传并处理测试文件，因此会创建文档。两者都不能证明 ERP 已接收。请使用代表性样本，单独检查已保存字段、金额和导出，不要批量重新处理历史文档。

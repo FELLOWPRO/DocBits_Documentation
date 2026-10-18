@@ -1,0 +1,61 @@
+{
+  "checks": [
+    {
+      "locale": "en",
+      "changed_pages": 7,
+      "guide_title": "Configure DocBits with Claude or Codex",
+      "sections": 7
+    },
+    {
+      "locale": "de",
+      "changed_pages": 9,
+      "guide_title": "DocBits mit Claude oder Codex konfigurieren",
+      "sections": 7
+    },
+    {
+      "locale": "es",
+      "changed_pages": 9,
+      "guide_title": "Configurar DocBits con Claude o Codex",
+      "sections": 7
+    },
+    {
+      "locale": "fr",
+      "changed_pages": 9,
+      "guide_title": "Configurer DocBits avec Claude ou Codex",
+      "sections": 7
+    },
+    {
+      "locale": "it",
+      "changed_pages": 9,
+      "guide_title": "Configurare DocBits con Claude o Codex",
+      "sections": 7
+    },
+    {
+      "locale": "nl",
+      "changed_pages": 9,
+      "guide_title": "DocBits configureren met Claude of Codex",
+      "sections": 7
+    },
+    {
+      "locale": "pl",
+      "changed_pages": 9,
+      "guide_title": "Konfigurowanie DocBits przez Claude lub Codex",
+      "sections": 7
+    },
+    {
+      "locale": "pt",
+      "changed_pages": 9,
+      "guide_title": "Configurar o DocBits com Claude ou Codex",
+      "sections": 7
+    },
+    {
+      "locale": "zh",
+      "changed_pages": 7,
+      "guide_title": "使用 Claude 或 Codex 配置 DocBits",
+      "sections": 7
+    }
+  ],
+  "json_examples_checked_against_source_signatures": 107,
+  "result": "passed",
+  "scope": "Markdown structure, new/rewritten links, existing screenshot presence, navigation titles, real tool names and JSON argument contracts; no runtime configuration/ERP tests"
+}

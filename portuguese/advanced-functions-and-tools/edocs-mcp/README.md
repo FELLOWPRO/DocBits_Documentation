@@ -143,3 +143,5 @@ Tentar gravar em `00000000-0000-0000-0000-000000000000` retorna:
 ## Regras efetivas e ativação
 
 Se uma nota de crédito eletrónica aparecer como Invoice, siga o [guia de resolução de problemas de classificação](../../administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md). Este explica como verificar a origem personalizada ou predefinida efetivamente utilizada, os códigos de tipo, os Extraction Paths e a ativação segura.
+
+[Configurar o DocBits com Claude ou Codex](../docbits-mcp/configuration-with-claude-or-codex.md): ligação, prompts, pré-visualizações, alterações versionadas, verificações e reversão.

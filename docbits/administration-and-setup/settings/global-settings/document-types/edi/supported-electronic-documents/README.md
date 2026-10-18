@@ -83,3 +83,5 @@ MINIMUM and BASIC WL can omit line-item information needed downstream. BASIC, EN
 5. Confirm validation policy and transport separately. Preserve custom mappings and check approvals and export history before restarting existing documents.
 
 [Acceptance checks](../credit-note-recognized-as-invoice.md)
+
+[Configure DocBits with Claude or Codex](../../../../../../advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md): connection, copyable prompts, previews, versioned changes, checks and rollback.

@@ -1,146 +1,68 @@
 # Exemples
 
-Exemples de bout en bout montrant comment utiliser ensemble les outils eDocs MCP.
+Retrouvez les prompts et la procédure de diagnostic, brouillon, activation et retour arrière dans [Configurer DocBits avec Claude ou Codex](../configuration-with-claude-or-codex.md). Les exemples utilisent les arguments actuels. Remplacez tous les paramètres fictifs par les valeurs de votre organisation et fournissez des sources complètes correctement échappées en chaînes JSON.
 
-## Exemple 1 : Créer un aperçu personnalisé pour XRechnung
+## 1. Modifier une règle Custom existante
 
-Cet exemple parcourt le cycle de vie complet d'une règle PREVIEW personnalisée :
-1. Vérifier quelles règles existent déjà
-2. Prévisualiser le XSLT sans l'activer
-3. Créer la règle personnalisée
-4. La mettre à jour vers une nouvelle version
-5. Revenir à la règle par défaut
-
-### Étape 1 : Vérifier les personnalisations existantes
-
-Appelez `list_edoc_custom_attributes` :
+Lisez la `TRANSFORMATION` effective avec `get_edoc_attribute_source`, en utilisant le libellé exact du format renvoyé par la classification :
 
 ```json
 {
-  "electronic_document_type": "XRECHNUNG 2.1 CII",
-  "doc_type_key": "INVOICE"
+  "electronic_document_type": "<detected_type_from_response>",
+  "attribute_name": "TRANSFORMATION",
+  "doc_type_key": "INVOICE",
+  "source": "effective"
 }
 ```
 
-La réponse affiche deux listes. Si `custom` est vide pour l'attribut `PREVIEW`, votre organisation utilise actuellement la feuille de style d'aperçu par défaut intégrée.
+Notez `attribute_id`, `active_value_id`, `active_version` et `value`. Lisez séparément `source: "default"` pour comparer, puis l’historique avec `list_edoc_attribute_versions`. La suite suppose un attribut Custom existant appartenant à votre organisation.
 
-### Étape 2 : Tester votre XSLT avant de le créer
-
-Appelez `preview_edoc_custom_xslt` avec l'ID d'un attribut existant (utilisez un attribut par défaut de la réponse de `list`) et un exemple de fichier XML encodé en base64 :
+Prévisualisez le candidat complet sans l’enregistrer avec `preview_edoc_custom_xslt`. Utilisez un document déjà présent dans la même organisation :
 
 ```json
 {
-  "attribute_id": "<attribute_id_from_list>",
-  "file_content_base64": "<base64_encoded_xrechnung_xml>",
-  "file_name": "test_invoice.xml"
+  "attribute_id": "<custom_attribute_id_from_response>",
+  "candidate_value": "<complete_candidate_xslt>",
+  "doc_id": "<test_document_id_in_this_org>"
 }
 ```
 
-Examinez le résultat rendu pour vérifier que votre XSLT produit le résultat attendu avant de l'enregistrer.
+Le résultat est du XML transformé pour `TRANSFORMATION`, un PDF pour `PREVIEW` ou des champs/tableaux pour `EXTRACTION_PATHS`. L’aperçu ne sélectionne pas de brouillon enregistré et ne teste ni scripts ultérieurs ni exports.
 
-### Étape 3 : Créer la règle personnalisée
-
-Appelez `create_edoc_custom_attribute` :
+Après examen du diff et de l’aperçu, relisez la source active puis enregistrez un brouillon avec `update_edoc_custom_attribute`. Passez explicitement `activate: false` ; la valeur par défaut est `true`.
 
 ```json
 {
-  "electronic_document_type": "XRECHNUNG 2.1 CII",
-  "attribute_name": "PREVIEW",
-  "attribute_value": "<?xml version=\"1.0\"?><xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" version=\"2.0\">...</xsl:stylesheet>",
-  "doc_type_key": "INVOICE"
+  "attribute_id": "<custom_attribute_id_from_response>",
+  "new_value": "<complete_reviewed_xslt>",
+  "activate": false
 }
 ```
 
-Conservez l'`attribute_id` de la réponse. À partir de maintenant, chaque facture XRechnung 2.1 CII traitée par votre organisation utilisera votre aperçu personnalisé.
-
-### Étape 4 : Mettre à jour la règle avec une nouvelle version
-
-Plus tard, si vous souhaitez affiner le XSLT, appelez `update_edoc_custom_attribute` :
+Après les tests dans l’organisation de test et confirmation de la modification précise, appelez `activate_edoc_attribute_version`. `draft_id` est l’ID de valeur de version. Relisez la source effective. Pour revenir en arrière, utilisez l’ancien `active_value_id` dans le même appel.
 
 ```json
 {
-  "attribute_id": "<your_attribute_id>",
-  "new_value": "<?xml version=\"1.0\"?><xsl:stylesheet ...><!-- improved version --></xsl:stylesheet>",
-  "activate": true
+  "attribute_id": "<custom_attribute_id_from_response>",
+  "draft_id": "<value_id_of_reviewed_version>"
 }
 ```
 
-Avec `activate: true`, la nouvelle version est immédiatement activée. La version précédente est conservée dans l'historique. Définissez `activate: false` pour l'enregistrer comme brouillon et l'activer séparément.
+## 2. Si aucun attribut Custom n’existe
 
-### Étape 5 : Revenir à la règle par défaut intégrée
+`create_edoc_custom_attribute` crée une première version immédiatement active, pas un brouillon. Testez la nouvelle personnalisation dans une organisation de test ou utilisez le parcours pris en charge par l’éditeur DocBits. Ne créez ou supprimez pas de personnalisation de production uniquement pour obtenir un aperçu. Préservez les correspondances nécessaires ; ne modifiez pas globalement les règles partagées par défaut.
 
-Si vous souhaitez revenir à l'aperçu par défaut, appelez `delete_edoc_custom_attribute` :
+## 3. Tester la configuration active
+
+Appelez `test_electronic_document` avec le XML d’origine encodé en base64 :
 
 ```json
 {
-  "attribute_id": "<your_attribute_id>"
+  "file_content_base64": "<base64_of_original_xml>",
+  "file_name": "credit-note-test.xml"
 }
 ```
 
-La règle personnalisée est supprimée et le système revient automatiquement à la feuille de style par défaut partagée. Aucun autre client n'est affecté.
+Ce test utilise les règles actives sans enregistrer de document, et non un brouillon inactif. MCP HTTP distant ne peut pas lire un `file_path` local de votre machine. `compare_edoc_extraction` compare uniquement les Extraction Paths et nécessite un attribut personnalisé de chemins d’extraction ; il ne compare pas les transformations.
 
----
-
-## Exemple 2 : Personnaliser les chemins d'extraction pour EDI
-
-Votre organisation reçoit des factures EDI dont la disposition des champs n'est pas standard. Cet exemple montre comment remplacer les chemins d'extraction pour votre organisation.
-
-### Étape 1 : Vérifier les règles actuelles
-
-```
-list_edoc_custom_attributes
-  electronic_document_type: "EDI"
-  doc_type_key: "INVOICE"
-```
-
-Si vous voyez une entrée `EXTRACTION_PATHS` dans `default` mais pas dans `custom`, votre organisation hérite des règles XPath partagées.
-
-### Étape 2 : Créer vos chemins d'extraction personnalisés
-
-Appelez `create_edoc_custom_attribute` avec votre JSON XPath ajusté :
-
-```json
-{
-  "electronic_document_type": "EDI",
-  "attribute_name": "EXTRACTION_PATHS",
-  "attribute_value": "{\"invoice_id\": \"//Invoice/ID/text()\", \"invoice_date\": \"//Invoice/IssueDate/text()\", \"total_amount\": \"//Invoice/LegalMonetaryTotal/TaxInclusiveAmount/text()\"}",
-  "doc_type_key": "INVOICE"
-}
-```
-
-### Étape 3 : Vérifier avec un test à blanc
-
-Appelez `test_electronic_document` avec un exemple de fichier EDI pour confirmer que les chemins d'extraction personnalisés récupèrent les bonnes valeurs :
-
-```json
-{
-  "file_content_base64": "<base64_encoded_edi_xml>",
-  "file_name": "sample_edi_invoice.xml"
-}
-```
-
-La réponse contient `extracted_fields` et un PNG `preview.image_base64` — examinez les deux pour vérifier l'exactitude avant la mise en production.
-
----
-
-## Exemple 3 : Exécuter une vérification eDoc complète
-
-Avant de livrer une modification, vérifiez que tous les fixtures eDoc pris en charge réussissent toujours :
-
-```
-validate_all_edocs
-  fixture_filter: "xrechnung*"
-  limit: 0
-```
-
-L'outil exécute chaque fixture XRechnung dans le pipeline et indique le résultat réussite/échec/avertissement pour chacun. Une exécution sans problème confirme que vos personnalisations n'ont pas altéré les autres types de documents.
-
-Pour tester rapidement un seul type :
-
-```
-verify_electronic_documents
-  fixture_filter: "zugferd*"
-  limit: 3
-```
-
-Cet outil téléverse jusqu'à 3 fixtures ZUGFeRD, attend le traitement et vérifie de bout en bout la classification, l'extraction et la génération de l'aperçu.
+`validate_all_edocs` teste à blanc les fichiers disponibles sur le serveur. `verify_electronic_documents` les téléverse et les traite, créant des documents. Aucun ne prouve la livraison à l’ERP. Utilisez des exemples représentatifs, contrôlez séparément champs/montants enregistrés et export, et ne redémarrez pas en masse les anciens documents.

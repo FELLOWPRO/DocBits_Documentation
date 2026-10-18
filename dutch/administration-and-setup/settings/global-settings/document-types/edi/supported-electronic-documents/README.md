@@ -83,3 +83,5 @@ MINIMUM en BASIC WL kunnen regelgegevens weglaten die verderop in de verwerking 
 5. Bevestig het validatiebeleid en het transport afzonderlijk. Behoud aangepaste toewijzingen en controleer goedkeuringen en de exportgeschiedenis voordat u bestaande documenten opnieuw start.
 
 [Acceptatiecontroles](../credit-note-recognized-as-invoice.md)
+
+[DocBits configureren met Claude of Codex](../../../../../../advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md): verbinding, prompts, voorbeelden, wijzigingen met versiebeheer, controles en terugdraaien.

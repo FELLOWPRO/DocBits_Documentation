@@ -48,7 +48,7 @@ Die Standardzuordnung für Gutschriften in FACTURX/ZUGFeRD umfasst **381 und 261
 
 <figure><img src="../../../../../.gitbook/assets/edocs-transformation-de.png" alt="Schreibgeschützter Quelltext der FACTURX-Transformation im DocBits-Versionseditor."><figcaption>Prüfen Sie die ausgewählte Quelle und Version, bevor Sie eine Änderung erstellen oder aktivieren.</figcaption></figure>
 
-Die [eDocs-MCP-Werkzeuge](../../../../../advanced-functions-and-tools/edocs-mcp/README.md) unterstützen dieselben Prüfungen: `list_edoc_custom_attributes`, `get_edoc_attribute_source` und `list_edoc_attribute_versions` ermitteln die Quelle. `compare_edoc_extraction` vergleicht das Verhalten des Standards, der angepassten Version und eines Änderungsvorschlags. Verwenden Sie `test_electronic_document` für einen Testlauf vor der Aktivierung.
+Den vollständigen MCP-Ablauf beschreibt [DocBits mit Claude oder Codex konfigurieren](../../../../../advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md). `list_edoc_custom_attributes`, `get_edoc_attribute_source` und `list_edoc_attribute_versions` ermitteln Quelle und aktiven Wert. `preview_edoc_custom_xslt` prüft einen Transformationsvorschlag. `compare_edoc_extraction` vergleicht nur Extraction Paths und benötigt ein angepasstes Extraction-Paths-Attribut. `test_electronic_document` testet die aktuell aktive Konfiguration, keinen inaktiven Entwurf.
 
 ## Sicher korrigieren und aktivieren
 

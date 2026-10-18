@@ -83,3 +83,5 @@ MINIMUM e BASIC WL podem omitir informações de linhas de detalhe necessárias 
 5. Confirme separadamente a política de validação e a transmissão. Preserve os mapeamentos personalizados e verifique as aprovações e o histórico de exportação antes de reiniciar documentos existentes.
 
 [Verificações de aceitação](../credit-note-recognized-as-invoice.md)
+
+[Configurar o DocBits com Claude ou Codex](../../../../../../advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md): ligação, prompts, pré-visualizações, alterações versionadas, verificações e reversão.

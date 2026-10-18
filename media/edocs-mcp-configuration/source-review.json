@@ -1,0 +1,67 @@
+{
+  "reviewed_on": "2026-10-18",
+  "source_commit": "93003bcc594daf45813375c5a714223104fe7db6",
+  "source_files": [
+    {
+      "file": "mcp_server/tools/electronic_documents.py",
+      "sha256": "ea1d7fcf9260316403ca04af73cb597b94851cadb845f32fae4abf1695a23e8e",
+      "signatures": {
+        "test_electronic_document": "file_path: Optional[str]=None, file_content_base64: Optional[str]=None, file_name: Optional[str]=None, doc_type: Optional[str]=None",
+        "list_edoc_custom_attributes": "electronic_document_type: str, doc_type_key: str='INVOICE'",
+        "create_edoc_custom_attribute": "electronic_document_type: str, attribute_name: str, attribute_value: str, doc_type_key: str='INVOICE', sub_doc_type_key: Optional[str]=None",
+        "update_edoc_custom_attribute": "attribute_id: str, new_value: str, activate: bool=True",
+        "preview_edoc_custom_xslt": "attribute_id: str, candidate_value: str, doc_id: str",
+        "get_edoc_attribute_source": "electronic_document_type: str, attribute_name: str, doc_type_key: str='INVOICE', source: str='effective'",
+        "list_edoc_attribute_versions": "attribute_id: str, include_values: bool=False",
+        "activate_edoc_attribute_version": "attribute_id: str, draft_id: str",
+        "compare_edoc_extraction": "electronic_document_type: str, doc_id: str, candidate_value: Optional[str]=None, doc_type_key: str='INVOICE'"
+      }
+    },
+    {
+      "file": "mcp_server/tools/settings_assistant.py",
+      "sha256": "a047e85e1598a1bdf3cbb3b7e0d8a8a3e7cee232127222e80bc6047010f09ab3",
+      "signatures": {
+        "find_setting": "query: str",
+        "apply_setting": "setting_key: str, proposed_value: bool | str",
+        "confirm_setting_change": "preview_id: str",
+        "undo_setting_change": "undo_id: str",
+        "preview_settings_action": "kind: str, params: dict",
+        "confirm_settings_action": "preview_id: str",
+        "undo_settings_action": "undo_id: str"
+      }
+    },
+    {
+      "file": "mcp_server/tools/health.py",
+      "sha256": "d38f0e3eab64a78dc8190b44d1535f557eedeaf58be5d405731a82bcfd3f111f",
+      "signatures": {
+        "check_api_health": "",
+        "get_api_info": ""
+      }
+    },
+    {
+      "file": "mcp_server/tools/edoc_verify.py",
+      "sha256": "85a5e53d0123dfd436c50293041c59b09f34d6c7e6712d976099d5aee57aea05",
+      "signatures": {
+        "verify_electronic_documents": "limit: int=5, fixture_filter: Optional[str]=None, pdf_only: bool=False",
+        "validate_all_edocs": "fixture_filter: Optional[str]=None, limit: int=0"
+      }
+    },
+    {
+      "file": "routers/electronic_document/router.py",
+      "sha256": "9741b5091b54a35fe8c98a25b2648749faa9c95972f84dde8a09201a40e405df",
+      "signatures": {}
+    }
+  ],
+  "scope": "Read-only source and client-help review; no deployed tool call, configuration mutation or end-to-end acceptance test performed.",
+  "codex_official_url": "https://developers.openai.com/codex/mcp",
+  "claude_validation": "Installed claude mcp --help lists add and login; official page fetch returned HTTP 403.",
+  "notes": [
+    "create_edoc_custom_attribute creates an immediately active v1",
+    "update_edoc_custom_attribute defaults activate=True; examples explicitly use False",
+    "preview uses candidate_value/doc_id and returns XML for TRANSFORMATION",
+    "test_electronic_document has no candidate/draft parameter",
+    "compare_edoc_extraction only compares EXTRACTION_PATHS",
+    "settings previews expire after 5 min; undo after 15 min, subject to server response",
+    "preview backend accepts own or shared default attribute; guide uses existing own attribute to match tool contract"
+  ]
+}

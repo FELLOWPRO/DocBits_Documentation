@@ -48,7 +48,7 @@ FACTURX/ZUGFeRD 默认的贷项通知单映射包括 **381 和 261**。即使业
 
 <figure><img src="../../../../../.gitbook/assets/edocs-transformation-zh.png" alt="DocBits 版本编辑器中以只读方式显示的 FACTURX 转换源代码。"><figcaption>在创建或激活更改之前，请检查所选源代码和版本。</figcaption></figure>
 
-[eDocs MCP 工具](../../../../../advanced-functions-and-tools/docbits-mcp/edocs-mcp/README.md)支持同样的检查：`list_edoc_custom_attributes`、`get_edoc_attribute_source` 和 `list_edoc_attribute_versions` 用于确定来源；`compare_edoc_extraction` 用于比较默认规则、自定义规则和候选规则的行为。在激活之前，请使用 `test_electronic_document` 进行试运行。
+完整 MCP 流程请参阅[使用 Claude 或 Codex 配置 DocBits](../../../../../advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md)。`list_edoc_custom_attributes`、`get_edoc_attribute_source` 和 `list_edoc_attribute_versions` 用于确定源代码和激活值。`preview_edoc_custom_xslt` 可预览候选转换。`compare_edoc_extraction` 只比较 Extraction Paths，并要求已有自定义提取路径属性。`test_electronic_document` 测试当前激活配置，不会测试未激活草稿。
 
 ## 安全地纠正并激活
 

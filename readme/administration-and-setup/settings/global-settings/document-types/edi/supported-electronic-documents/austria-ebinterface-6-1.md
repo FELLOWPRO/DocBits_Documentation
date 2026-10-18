@@ -4,6 +4,12 @@ description: Ondersteuning voor AUSTRIA EBINTERFACE 6.1 elektronisch document in
 
 # 🇦🇹 AUSTRIA EBINTERFACE 6.1
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Oostenrijk](countries/austria.md). Stem de XML-naamruimte af op de geconfigureerde versie. Een andere naamruimte kan een andere toewijzing vereisen.
+{% endhint %}
+
 | Eigenschap | Waarde |
 |------------|--------|
 | **Land / Regio** | Austria |

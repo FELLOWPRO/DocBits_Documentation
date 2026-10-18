@@ -4,6 +4,12 @@ description: BRAZIL NFC-E ondersteuning voor elektronische documenten in DocBits
 
 # 🇧🇷 BRAZIL NFC-E
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Brazilië](countries/brazil.md). Dit zijn verschillende documentfamilies. Een geconfigureerde NFS-e-versie certificeert niet elk gemeentelijk schema of elke nationale indeling voor dienstenfacturen.
+{% endhint %}
+
 | Eigenschap | Waarde |
 |------------|--------|
 | **Land / Regio** | Brazilië |

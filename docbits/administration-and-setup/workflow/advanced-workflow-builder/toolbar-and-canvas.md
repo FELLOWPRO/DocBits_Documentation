@@ -4,6 +4,43 @@ description: "Every Advanced Workflow toolbar control, canvas interaction, note 
 
 # Toolbar & Canvas
 
+## Video: Builder and canvas
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/en.mp4" %}
+
+[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/en.vtt) · 1:38
+
+<details>
+<summary>Transcript</summary>
+
+**An invoice with two routes**
+
+Here is a real Advanced Workflow in DocBits. An invoice amount check leads to two actions. The connections define which action runs. This example uses an unsaved draft and demonstration fields.
+
+**Configure the amount check**
+
+Open Add, choose And, and select a Document Field condition. Set the amount field, choose Greater Than, and enter one thousand. Use the exact field key from your document configuration.
+
+**Configure the actions**
+
+Add two Then cards. Each card sets the demonstration field approval route. One writes Approval; the other writes Standard. These values label the route. Configure your business actions for a production workflow.
+
+**Connect the result outputs**
+
+Connect Start to the condition input. Connect blue Success to Approval, and orange Failed Condition to Standard. The red Error output handles evaluation errors separately. Card position alone does not create a route.
+
+**Prepare the test cases**
+
+Open Test in the toolbar. Choose a test document, or enter complete document data as JSON. Check amounts above, below, and exactly at one thousand. Also check missing values. Inspect the node results after execution.
+
+**Validate, save and activate**
+
+Validate the connections and card settings. Save explicitly to write the workflow to the server, then check activation separately. Automatic browser drafts do not replace Save. Execution and log access require the appropriate module and subscription.
+
+</details>
+
+[Watch all five chapters](videos.md)
+
 Use the bottom toolbar to configure the workflow and the canvas to arrange nodes. Panning, zooming and card positions change the view or layout. Connections determine execution.
 
 ## Every toolbar control

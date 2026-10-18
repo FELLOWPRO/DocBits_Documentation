@@ -2,9 +2,7 @@
 
 Le constructeur **Advanced Workflow** est un éditeur de graphe de nœuds pour les workflows nécessitant des branches, des chemins parallèles et un contrôle de flux — au-delà du modèle linéaire When/And/Then du constructeur Standard. Vous disposez des nœuds sur un canevas et les reliez pour définir le flux d'exécution.
 
-{% embed url="https://youtu.be/EeNFVR6z7G8" %}
-Advanced Workflow Designer
-{% endembed %}
+[Voir les cinq chapitres](../advanced-workflow-videos.md)
 
 ## Comment y accéder
 

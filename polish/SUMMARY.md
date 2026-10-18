@@ -561,6 +561,7 @@
     * [Workflow Example: Conditional Export Trigger](administration-and-setup/workflow/workflow-description-conditional-export-trigger.md)
     * [Przypisanie i status — Przykłady praktyczne](administration-and-setup/workflow/workflow-documentation.md)
   * [Advanced Workflow](administration-and-setup/workflow/advanced-workflow-builder.md)
+    * [Filmy Advanced Workflow](administration-and-setup/workflow/advanced-workflow-videos.md)
     * [Nodes](administration-and-setup/workflow/advanced-workflow/nodes.md)
     * [Variables](administration-and-setup/workflow/advanced-workflow/variables.md)
     * [Validation & Testing](administration-and-setup/workflow/advanced-workflow/validation-and-testing.md)

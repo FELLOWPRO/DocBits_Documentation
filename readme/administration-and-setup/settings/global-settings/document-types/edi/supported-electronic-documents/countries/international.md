@@ -8,6 +8,18 @@ Gebruik deze gids om de geconfigureerde familie en de versieomvang vast te stell
 
 [Alle landen en ondersteuningsomvang](../README.md)
 
+## Uitlegvideo per land
+
+Gesproken uitleg en WebVTT-ondertitels in de gekozen taal leggen formaatselectie, configuratie en acceptatiecontroles uit.
+
+Deze rondleiding zonder wijzigingen toont de bestaande DocBits-configuratie voor het land. Controleer de gebruikte bron en actieve versie en test representatieve facturen, creditnota’s en exports in uw eigen organisatie.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_international/v2/nl.mp4" %}
+
+[Internationaal — Uitlegvideo per land](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_international/v2/nl.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_international/v2/nl.vtt)
+
 ## Varianten en versiebeperkingen
 
 Internationale vermeldingen omvatten Peppol BIS 3.0, UBL 2.1, zuivere CII, EDI, INVOIC02, cXML, OCI, BOD en SPS Commerce RSX 7.7.4.
@@ -73,20 +85,6 @@ Een streepje betekent dat de statuscontrole geen eigen component voor deze exact
 ## Zoek de toewijzing in DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-international-nl.png" alt="Internationaal: UBL 2.1"><figcaption><p>Werkelijke ontwikkelinterface: het representatieve formaat en de beschikbare configuratiecomponenten. Andere versies staan in de matrix.</p></figcaption></figure>
-
-## Uitlegvideo per land
-
-Gesproken uitleg en WebVTT-ondertitels in de gekozen taal leggen formaatselectie, configuratie en acceptatiecontroles uit.
-
-Deze rondleiding zonder wijzigingen toont de bestaande DocBits-configuratie voor het land. Controleer de gebruikte bron en actieve versie en test representatieve facturen, creditnota’s en exports in uw eigen organisatie.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-international-nl-v2.mp4" %}
-Internationaal — Uitlegvideo per land
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-international-nl-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Acceptatiecontroles
 

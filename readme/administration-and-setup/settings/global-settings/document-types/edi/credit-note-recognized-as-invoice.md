@@ -13,13 +13,11 @@ De video toont een controle in DocBits zonder wijzigingen, met FACTURX 1.0.05 / 
 
 Het oudere XSLT-voorbeeld in de video bevat vertakkingen voor 381 en 389. Controleer in de werkelijke Transformation welke codes deze specifieke versie behoudt; de algemene codelijst bewijst geen dekking in elke historische toewijzing.
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-nl-v2.mp4" %}
-Controleer de classificatie van elektronische creditnota's
-{% endfile %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/nl.mp4" %}
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-nl-v2.vtt" %}
-WebVTT
-{% endfile %}
+[Controleer de classificatie van elektronische creditnota's](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/nl.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/nl.vtt)
 
 ## Controleer de documentcode
 

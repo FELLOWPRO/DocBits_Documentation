@@ -36,7 +36,9 @@
   async function loadLocale(locale) {
     picker.value = locale;
     player.pause();
-    const prefix = `../../${folders[locale]}/.gitbook/assets/edocs-credit-note-${locale}`;
+    const revisions = await fetch('../edocs-ui-v2/delivery.json').then(response => response.json());
+    const suffix = revisions.credit_note[locale] ? '-v2' : '';
+    const prefix = `../../${folders[locale]}/.gitbook/assets/edocs-credit-note-${locale}${suffix}`;
     player.replaceChildren();
     player.src = `${prefix}.mp4`;
     const track = document.createElement('track');

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "credit_note": {
+    "de": {
+      "version": 2,
+      "mp4_sha256": "7eba1c0d331ab160f6341ab79228516712ccd59a3b55bad7194e3747d7ecd2a2",
+      "vtt_sha256": "5e1a32495c64ddbe78d3a66c434521d743f42d30f4b60e476ef8ee59ed0ee57a",
+      "duration_ms": 113167,
+      "listening_review": "not performed"
+    }
+  },
+  "countries": {}
+}

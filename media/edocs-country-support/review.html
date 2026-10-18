@@ -6,6 +6,7 @@
 const params=new URLSearchParams(location.search),locale=params.get('lang')||'de',country=params.get('country')||'germany';
 const text=await fetch(`translations/${locale}.json`).then(r=>r.json());
 const delivery=await fetch('delivery.json').then(r=>r.json());
+const revisions=await fetch('../edocs-ui-v2/delivery.json').then(r=>r.json());
 const available=delivery.locales[locale];
 const language=document.querySelector('#language'),countrySelect=document.querySelector('#country');
 for(const [key,name] of Object.entries({en:'English',de:'Deutsch',es:'Español',fr:'Français',it:'Italiano',nl:'Nederlands',pl:'Polski',pt:'Português',zh:'中文'})){const option=new Option(name,key);option.selected=key===locale;language.add(option);}
@@ -18,8 +19,9 @@ const base=`../../${folders[locale]}/.gitbook/assets/edocs-support-${country}-${
 document.documentElement.lang=locale;document.querySelector('h1').textContent=text.countries[country].name+' — '+text.video_title;
 const video=document.querySelector('video');
 if(available.films.includes(country)){
- video.src=base+'.mp4';video.poster=base+'.png';
- const track=video.querySelector('track');track.src=base+'.vtt';track.srclang=locale;track.label=locale;video.load();
+ const suffix=revisions.countries[locale]?.includes(country)?'-v2':'';
+ video.src=base+suffix+'.mp4';video.poster=base+'.png';
+ const track=video.querySelector('track');track.src=base+suffix+'.vtt';track.srclang=locale;track.label=locale;video.load();
 }else{
  video.hidden=true;
  const pending={en:'This country video is still being prepared.',de:'Dieses Ländervideo wird noch vorbereitet.',es:'El vídeo de este país está en preparación.',fr:'La vidéo de ce pays est en préparation.',it:'Il video per questo paese è in preparazione.',nl:'Deze landvideo wordt nog voorbereid.',pl:'Film dla tego kraju jest w przygotowaniu.',pt:'O vídeo deste país está em preparação.',zh:'该国家或地区的视频仍在制作中。'};

@@ -1,5 +1,30 @@
 # Variablen
 
+## Video: Variablen, Tests und Aktivierung
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/de.mp4" %}
+
+[Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/de.vtt)
+
+<details>
+<summary>Transkript</summary>
+
+Öffnen Sie Variablen über die geschweiften Klammern. Wählen Sie Text, Number, Yes oder No oder Document. Die Suche findet Namen. Eine Workflow Aktion setzt die Dokumentreferenz. Das Formular nimmt keinen Dokumentwert an.
+
+Wählen Sie eindeutigen Namen, Typ und Anfangswert. Anlegen, Bearbeiten und Löschen speichern sofort für die Organisation. Andere Workflows können die Werte teilen. Speichern oder Verwerfen des Canvas macht Variablenänderungen nicht rückgängig.
+
+Wählen Sie Validieren. Ein Klick auf Fehler oder Warnungen zeigt den Knoten. Prüfen Sie Aktionen, Einstiegsverbindungen, Anschlüsse, Schleifen und Zusammenführungen. Strukturvalidierung beweist keine korrekten Laufzeitdaten.
+
+Die Wiedergabetaste öffnet Select Test Document. Wählen Sie Dokument, Custom Data oder Test Without Document für unabhängige Karten. Start spielt direkt ab. Tests verwenden ungespeicherte Änderungen und simulieren destruktive Aktionen.
+
+Prüfen Sie Ergebnisse, Meldungen und Dauer je Knoten. Grün bedeutet Erfolg, Orange eine nicht erfüllte Bedingung, Rot einen Fehler und Grau übersprungen. Testen Sie Korrekturen erneut. Speichern Sie Szenarien im Test Manager und prüfen Sie jeden Weg.
+
+Auto-Save sichert Änderungen etwa alle dreißig Sekunden als lokalen Browserentwurf. Speichern Sie ausdrücklich auf dem Server. Der Aktivierungsschalter bleibt vor dem ersten Speichern gesperrt. Prüfen Sie den aktiven Zustand in der Workflow Liste.
+
+</details>
+
+[Alle fünf Kapitel ansehen](../advanced-workflow-videos.md)
+
 Mit **Variablen** speichern Sie Werte einmal und verwenden sie über die Knoten eines Advanced Workflows hinweg wieder — zum Beispiel einen Schwellenwert, einen festen Empfänger oder einen Wert, den Sie aus dem Dokument lesen und an einen späteren Knoten weitergeben. Öffnen Sie das Variablen-Panel über die Schaltfläche **Variables** (das `{ }`-Symbol) in der Symbolleiste.
 
 <figure><img src="../../../.gitbook/assets/workflow_advanced_variables.png" alt="Variablen-Panel nach Typ gruppiert mit einer Schaltfläche New Variable"><figcaption><p>Das Variables-Panel — Variablen nach Typ gruppiert, mit Suche und <strong>New Variable</strong>.</p></figcaption></figure>

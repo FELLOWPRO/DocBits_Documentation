@@ -14,11 +14,11 @@ Welche Funktionen Sie sehen, hängt von Ihren Berechtigungen, dem Dokumentstatus
 
 ## Dashboard als Video
 
-Die deutsche Sprecherfassung führt Sie in 1:57 Minuten durch Suche, Filter, Spalten, Dokumentaktionen, gespeicherte Ansichten, Upload und Werkzeuge. Große Detailansichten zeigen die Bedienelemente. Deutsche Untertitel sind im Bild eingeblendet.
+Die deutsche Sprecherfassung führt Sie in rund zwei Minuten durch Suche, Filter, Spalten, Dokumentaktionen, gespeicherte Ansichten, Upload und Werkzeuge. Große Detailansichten zeigen die Bedienelemente. Das Suchbeispiel zeigt die tatsächliche Eingabe, die Bestätigung mit Enter und die gefilterte Trefferliste. Deutsche Untertitel sind im Bild eingeblendet.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v2/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v3/de.mp4" %}
 
-[Video mit deutscher Sprecherstimme öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v2/de.mp4) · [Deutsche Untertitel (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v2/de.vtt) · [Deutsches Transkript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v2/de.txt)
+[Video mit deutscher Sprecherstimme öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v3/de.mp4) · [Deutsche Untertitel (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v3/de.vtt) · [Deutsches Transkript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v3/de.txt)
 
 ## Die tägliche Arbeit beginnen
 
@@ -31,6 +31,8 @@ Die deutsche Sprecherfassung führt Sie in 1:57 Minuten durch Suche, Filter, Spa
 ## Dokumente suchen und filtern
 
 Geben Sie einen Dokumentnamen, eine Rechnungsnummer oder einen anderen Geschäftswert in das Suchfeld ein und drücken Sie **Enter**. Über das Filtersymbol im Suchfeld wählen Sie **Status**, **Zugewiesen an** und **Neustart erforderlich**; bestätigen Sie mit **Anwenden**. Entfernen Sie einzelne Filterchips oder verwenden Sie **Filter löschen**, wenn ein Dokument fehlt. Auch Dokumenttyp-Reiter und gespeicherte Ansichten grenzen die Liste ein.
+
+Im Video wird `filename:invoice` eingegeben und mit **Enter** bestätigt. Die Suche nach „invoice“ im Dokumentnamen reduziert die Liste im Testkonto von 15 auf zwei Dokumente.
 
 Die Suchleiste bietet außerdem strukturierte Suchchips, eine Ansicht für die direkte Suchabfrage und eine Hilfe zu Feldern und Syntax. Übernehmen Sie Feldnamen und Beispiele aus dieser Hilfe. Technische Feldnamen bleiben beim Sprachwechsel unverändert. Erweiterte Suchfunktionen setzen die entsprechenden Suchmodule Ihrer Organisation voraus.
 

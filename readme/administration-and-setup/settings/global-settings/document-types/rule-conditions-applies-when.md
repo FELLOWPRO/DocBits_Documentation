@@ -24,7 +24,7 @@ Eine Bedingung liest sich wie ein Satz. Der folgende Editor besagt:
 
 > **Wenn ALL** der folgenden Punkte zutreffen: Document Origin **is** Deutsch, Total Amount ist **greater than** 250, und (**ANY** von: Currency **is** EUR, Currency **is empty**).
 
-<figure><img src="../../../../.gitbook/assets/applies-when-nested-example.png" alt="Eine Bedingung mit zwei Zeilen und einer verschachtelten ANY-Gruppe"><figcaption><p>Zwei mit ALL verknüpfte Bedingungen sowie eine verschachtelte Gruppe, die mit ANY verknüpft ist</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/applies-when-nested-example-de.png" alt="Eine Bedingung mit zwei Zeilen und einer verschachtelten ANY-Gruppe"><figcaption><p>Zwei mit ALL verknüpfte Bedingungen sowie eine verschachtelte Gruppe, die mit ANY verknüpft ist</p></figcaption></figure>
 
 Mit dieser Bedingung gilt die Regel für:
 
@@ -75,7 +75,7 @@ Wenn Sie keine Zeilen hinzufügen, hat die Regel keine Bedingung und **gilt imme
 
 Öffnen Sie das Dropdown-Menü der Felder, um jedes Feld zu sehen, gruppiert nach seiner Herkunft. Geben Sie Text ein, um die Liste zu filtern.
 
-<figure><img src="../../../../.gitbook/assets/applies-when-field-picker.png" alt="Die Feldauswahl mit den Gruppen Document und Header fields"><figcaption><p>Die Feldauswahl: zuerst die Dokumentattribute, dann die Kopffelder des Dokumenttyps</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/applies-when-field-picker-de.png" alt="Die Feldauswahl mit den Gruppen Document und Header fields"><figcaption><p>Die Feldauswahl: zuerst die Dokumentattribute, dann die Kopffelder des Dokumenttyps</p></figcaption></figure>
 
 ### Dokumentattribute (`doc.`)
 
@@ -101,7 +101,7 @@ Spalten der aktuellen Tabellenzeile, zum Beispiel `row.QUANTITY` oder `row.ITEM_
 
 In diesen Regeln wird die Bedingung **für jede Zeile einzeln** geprüft. Eine Zeile, die nicht passt, wird übersprungen; die übrigen Zeilen werden weiterhin verarbeitet.
 
-<figure><img src="../../../../.gitbook/assets/applies-when-row-condition.png" alt="Eine Zeilenbedingung: ITEM_NUMBER is not empty"><figcaption><p>Eine Bedingung pro Zeile: Nur Zeilen mit einer Artikelnummer werden geprüft</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/applies-when-row-condition-de.png" alt="Eine Zeilenbedingung: ITEM_NUMBER is not empty"><figcaption><p>Eine Bedingung pro Zeile: Nur Zeilen mit einer Artikelnummer werden geprüft</p></figcaption></figure>
 
 Regeln, die einmal pro Dokument laufen (Kopfregeln, Regeln für die ganze Tabelle, Layoutregeln), können keine `row.`-Felder verwenden – es gibt keine einzelne Zeile, die sie betrachten könnten.
 
@@ -109,7 +109,7 @@ Regeln, die einmal pro Dokument laufen (Kopfregeln, Regeln für die ganze Tabell
 
 Am Ende der Auswahl verwandelt **Advanced → Custom JSON path…** das Feld in ein freies Textfeld mit der Markierung `$path`. Es liest einen Wert an beliebiger Stelle der extrahierten Daten des Dokuments, auch wenn er kein Feld des Dokumenttyps ist.
 
-<figure><img src="../../../../.gitbook/assets/applies-when-json-path.png" alt="Eine JSON-Pfad-Bedingung"><figcaption><p>Eine JSON-Pfad-Bedingung auf den Importkanal des Dokuments</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/applies-when-json-path-de.png" alt="Eine JSON-Pfad-Bedingung"><figcaption><p>Eine JSON-Pfad-Bedingung auf den Importkanal des Dokuments</p></figcaption></figure>
 
 * Der Pfad beginnt mit `$` und verwendet `.name` für Schlüssel und `[0]` für Listenpositionen, zum Beispiel `$.metadata.import_channel` oder `$.shipping.addresses[0].country`.
 * Er muss auf einem einzelnen Wert enden. Ein Pfad, der auf einer Liste oder einem Objekt endet, gilt als leer.
@@ -128,7 +128,7 @@ Verwenden Sie JSON-Pfade sparsam. Sie hängen von der internen Struktur der extr
 
 ## Operatoren
 
-<figure><img src="../../../../.gitbook/assets/applies-when-text-operators.png" alt="Die Operatorliste für ein Textfeld"><figcaption><p>Die für ein Textfeld angebotenen Operatoren</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/applies-when-text-operators-de.png" alt="Die Operatorliste für ein Textfeld"><figcaption><p>Die für ein Textfeld angebotenen Operatoren</p></figcaption></figure>
 
 | Operator | Trifft zu, wenn … | Wert | Beispiel |
 | --- | --- | --- | --- |

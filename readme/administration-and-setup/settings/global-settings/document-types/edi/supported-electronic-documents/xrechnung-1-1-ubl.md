@@ -4,6 +4,12 @@ description: Soporte de documentos electrónicos XRECHNUNG 1.1 UBL en DocBits
 
 # 🇩🇪 XRECHNUNG 1.1 UBL
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Alemania](countries/germany.md). La sintaxis, la versión de publicación y el perfil son opciones diferentes. No deduzca una publicación de Factur-X a partir del marcador compartido 1p0.
+{% endhint %}
+
 | Propiedad            | Valor                    |
 | -------------------- | ------------------------ |
 | **País / Región**    | Alemania                 |

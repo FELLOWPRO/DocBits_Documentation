@@ -4,6 +4,12 @@ description: Soporte de documentos electrónicos ZATCA REPORTING en DocBits
 
 # 🇸🇦 ZATCA REPORTING
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Arabia Saudí](countries/saudi-arabia.md). Estas etiquetas describen procesos y variantes de factura diferentes. Analizar el archivo no demuestra la firma, la autorización ni la comunicación a través de ZATCA.
+{% endhint %}
+
 | Propiedad            | Valor                                 |
 | -------------------- | ------------------------------------- |
 | **País / Región**    | Arabia Saudí                          |

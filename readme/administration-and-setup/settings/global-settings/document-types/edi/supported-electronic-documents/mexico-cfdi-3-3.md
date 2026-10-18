@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico MEXICO CFDI
 
 # 🇲🇽 MEXICO CFDI 3.3
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [México](countries/mexico.md). Compruebe el espacio de nombres, la versión y TipoDeComprobante. Un importe negativo por sí solo no identifica una nota de crédito. Analizar el archivo no certifica la autorización del SAT.
+{% endhint %}
+
 | Propiedad              | Valor                                              |
 | ---------------------- | -------------------------------------------------- |
 | **País / Región**      | México                                             |

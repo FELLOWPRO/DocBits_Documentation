@@ -4,6 +4,12 @@ description: Soporte de documentos electrónicos Ecuador SRI (Factura Electróni
 
 # 🇪🇨 Ecuador SRI
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Ecuador](countries/ecuador.md). La entrada de clasificación de notas de crédito no tiene un paquete de extracción dedicado en el estado inspeccionado. Compruebe la asignación utilizada y el tipo del documento de origen.
+{% endhint %}
+
 | Propiedad | Valor |
 |-----------|-------|
 | **País / Región** | Ecuador |

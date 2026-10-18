@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico PHILIPPINES
 
 # 🇵🇭 PHILIPPINES EIS
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Filipinas](countries/philippines.md). La etiqueta no indica una publicación. Compruebe el esquema del contenido y el tipo de documento aplicable antes de depender de una etiqueta EIS genérica.
+{% endhint %}
+
 | Propiedad              | Valor                                   |
 | ---------------------- | --------------------------------------- |
 | **País / Región**      | Filipinas                               |

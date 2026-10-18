@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:08.226
+Uruguay CFE tiene entradas genéricas, 24 y
+25. También figuran E-Factura y E-Nota
+
+formats_02
+00:00:08.226 --> 00:00:12.986
+Credito. Las entradas de notas de crédito
+carecen de paquetes de extracción
+
+formats_03
+00:00:12.986 --> 00:00:19.023
+dedicados en el estado inspeccionado.
+Confirme la versión CFE y la asignación de
+
+formats_04
+00:00:19.023 --> 00:00:22.667
+factura o nota de crédito utilizada.
+
+workflow_01
+00:00:23.417 --> 00:00:28.769
+Abra E-Doc para el formato detectado.
+Compare Transformation, Preview y
+
+workflow_02
+00:00:28.769 --> 00:00:34.528
+Extraction Paths. Las reglas Custom tienen
+prioridad. Guardar un borrador no lo
+
+workflow_03
+00:00:34.528 --> 00:00:35.367
+activa.
+
+accept_01
+00:00:36.117 --> 00:00:40.657
+Pruebe una factura y una nota de crédito
+cuando corresponda. Verifique los
+
+accept_02
+00:00:40.657 --> 00:00:45.916
+importes, las partes y el tipo de
+documento exportado. Analizar el archivo
+
+accept_03
+00:00:45.916 --> 00:00:49.767
+no demuestra la autorización fiscal ni la
+entrega por red.
+

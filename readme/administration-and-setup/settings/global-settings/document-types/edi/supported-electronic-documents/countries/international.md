@@ -1,0 +1,112 @@
+---
+description: "Las entradas internacionales incluyen Peppol BIS 3.0, UBL 2.1, CII puro, EDI, INVOIC02, cXML, OCI, BOD y SPS Commerce RSX 7.7.4."
+---
+
+# Internacional
+
+Utilice esta guía para identificar la familia configurada y el alcance de versiones antes de probar un archivo de origen.
+
+[Todos los países y alcance de la compatibilidad](../README.md)
+
+## Variantes y límites de versión
+
+Las entradas internacionales incluyen Peppol BIS 3.0, UBL 2.1, CII puro, EDI, INVOIC02, cXML, OCI, BOD y SPS Commerce RSX 7.7.4.
+
+**Sintaxis:** UBL / CII / EDI / cXML
+
+Las asignaciones de facturas, pedidos, respuestas y avisos de expedición son diferentes. El procesamiento de archivos no proporciona por sí mismo un punto de acceso Peppol ni conectividad con socios comerciales.
+
+Las tablas recogen una comprobación del catálogo de desarrollo realizada el 17 de octubre de 2026 y del código de procesamiento correspondiente. Describen las reglas y los componentes de configuración disponibles; no certifican todos los archivos, los requisitos legales ni el despliegue en producción. Su organización puede sobrescribir los valores predeterminados.
+
+## Matriz de reglas y componentes inspeccionados
+
+| Etiqueta de formato exacta | Clave de documento de la regla | Componentes disponibles |
+| --- | --- | --- |
+| `BOD` | `PURCHASE_ORDER` | C / — / — / — |
+| `CXML ORDER CONFIRMATION` | `ORDER_CONFIRMATION` | C / T / P / E |
+| `CXML PURCHASE ORDER` | `PURCHASE_ORDER` | C / T / P / E |
+| `EDI` | `PURCHASE_ORDER` | C / T / P / E |
+| `EDI` | `ORDER_CONFIRMATION` | C / T / P / E |
+| `EDI` | `INVOICE` | C / T / P / E |
+| `INVOIC02` | `INVOICE` | C / T / P / E |
+| `OCI CATALOG ORDER` | `PURCHASE_ORDER` | C / T / P / E |
+| `PEPPOL BIS 3.0` | `INVOICE` | C / T / P / E |
+| `PEPPOL DESPATCH ADVICE 3.0` | `DELIVERY_NOTE` | C / T / P / E |
+| `PEPPOL ORDER 3.0` | `PURCHASE_ORDER` | C / T / P / E |
+| `PEPPOL ORDER RESPONSE 3.0` | `ORDER_CONFIRMATION` | C / T / P / E |
+| `PURCHASE ORDER BOD` | `PURCHASE_ORDER` | C / T / P / E |
+| `PURE CII D16B EU` | `INVOICE` | C / T / P / E |
+| `PURE CII D16B EU CREDITNOTE` | `CREDIT_NOTE` | C / T / P / E |
+| `PURE CII D16B NON-EU` | `INVOICE` | C / T / P / E |
+| `PURE CII D16B NON-EU CREDITNOTE` | `CREDIT_NOTE` | C / T / P / E |
+| `PURE CII D22B EU` | `INVOICE` | C / T / P / E |
+| `PURE CII D22B EU CREDITNOTE` | `CREDIT_NOTE` | C / T / P / E |
+| `PURE CII D22B NON-EU` | `INVOICE` | C / T / P / E |
+| `PURE CII D22B NON-EU CREDITNOTE` | `CREDIT_NOTE` | C / T / P / E |
+| `PURE CII D23B EU` | `INVOICE` | C / T / P / E |
+| `PURE CII D23B EU CREDITNOTE` | `CREDIT_NOTE` | C / T / P / E |
+| `PURE CII D23B NON-EU` | `INVOICE` | C / T / P / E |
+| `PURE CII D23B NON-EU CREDITNOTE` | `CREDIT_NOTE` | C / T / P / E |
+| `PURE CII D24B EU` | `INVOICE` | C / T / P / E |
+| `PURE CII D24B EU CREDITNOTE` | `CREDIT_NOTE` | C / T / P / E |
+| `PURE CII D24B NON-EU` | `INVOICE` | C / T / P / E |
+| `PURE CII D24B NON-EU CREDITNOTE` | `CREDIT_NOTE` | C / T / P / E |
+| `PURE CII V1 EU` | `INVOICE` | C / T / P / E |
+| `PURE CII V1 EU CREDITNOTE` | `CREDIT_NOTE` | C / T / P / E |
+| `PURE CII V1 NON-EU` | `INVOICE` | C / T / P / E |
+| `PURE CII V1 NON-EU CREDITNOTE` | `CREDIT_NOTE` | C / T / P / E |
+| `SPS COMMERCE RSX 7.7.4` | `PURCHASE_ORDER_ACKNOWLEDGMENT` | C / T / P / E |
+| `SPS COMMERCE RSX 7.7.4` | `ADVANCE_SHIP_NOTICE` | C / T / P / E |
+| `SPS COMMERCE RSX 7.7.4` | `PURCHASE_ORDER` | C / T / P / E |
+| `SPS COMMERCE RSX 7.7.4` | `INVOICE` | C / T / P / E |
+| `SPS COMMERCE RSX 7.7.4` | `PURCHASE_ORDER_CHANGE` | C / T / P / E |
+| `UBL 2.1` | `INVOICE` | C / T / P / E |
+| `UBL 2.1 CREDITNOTE` | `CREDIT_NOTE` | C / T / P / E |
+| `UBL 2.1 DESPATCH ADVICE` | `DELIVERY_NOTE` | C / T / P / E |
+| `UBL 2.1 ORDER` | `PURCHASE_ORDER` | C / T / P / E |
+| `UBL 2.1 ORDER RESPONSE` | `ORDER_CONFIRMATION` | C / T / P / E |
+
+C = clasificación, T = Transformation, P = Preview, E = Extraction Paths. La clave de documento se utiliza para buscar la regla o configuración; no garantiza el valor final almacenado de invoice_type. Una transformación puede clasificar una nota de crédito mediante una asignación INVOICE.
+
+Un guion indica que la comprobación de estado no informó de un componente dedicado para esa combinación exacta de formato y clave de documento. No descarta una asignación compartida o alternativa. Verifique la lógica de resolución que se está utilizando y un archivo representativo antes de depender de esa ruta.
+
+## Encuentre la asignación en DocBits
+
+<figure><img src="../../../../../../../.gitbook/assets/edocs-support-international-es.png" alt="Internacional: UBL 2.1"><figcaption><p>Interfaz real de desarrollo: el formato representativo y sus componentes de configuración disponibles. Las demás versiones figuran en la matriz.</p></figcaption></figure>
+
+## Vídeo explicativo del país
+
+La narración y los subtítulos WebVTT en el idioma correspondiente explican la selección del formato, la configuración y las pruebas de aceptación.
+
+Este recorrido de solo lectura muestra la configuración existente del país en DocBits. Compruebe la fuente utilizada y la versión activa y valide facturas, notas de crédito y exportaciones representativas en su organización.
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-international-es-v2.mp4" %}
+Internacional — Vídeo explicativo del país
+{% endfile %}
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-international-es-v2.vtt" %}
+WebVTT
+{% endfile %}
+
+## Pruebas de aceptación
+
+Una comprobación de componentes confirma que existe una configuración. No es una prueba de procesamiento de principio a fin para todas las versiones. Pruebe el contenido exacto y la ruta de factura o nota de crédito que necesite su integración.
+
+## Compruebe un formato en su organización
+
+1. Conserve el XML original o el PDF con su XML incrustado. Consulte el espacio de nombres, el identificador de esquema o de personalización y la versión y el perfil declarados.
+
+2. Abra Configuración → Tipos de documento → E-Doc para el documento de negocio correspondiente. Busque el formato de documento electrónico exacto que aparece en la guía.
+
+3. Compruebe el origen Default o Custom que se está utilizando y su versión de configuración activa. Revise Transformation, Preview y Extraction Paths. Guardar un borrador no lo activa.
+
+4. Pruebe archivos de origen representativos de cada sintaxis, versión y documento de negocio que necesite. Verifique los campos clave, los importes, los impuestos, la clasificación como factura o nota de crédito y la exportación al ERP.
+
+5. Confirme por separado la política de validación y el transporte. Conserve las asignaciones personalizadas y compruebe las aprobaciones y el historial de exportación antes de reiniciar documentos existentes.
+
+## Referencia de formato relacionada
+
+- [INVOIC02](../invoic02.md)
+- [🇪🇺 PEPPOL BIS 3.0](../peppol-bis-3-0.md)
+- [SPS COMMERCE RSX 7.7.4](../sps-commerce-rsx-7-7-4.md)
+- [UBL 2.1](../ubl-2-1.md)

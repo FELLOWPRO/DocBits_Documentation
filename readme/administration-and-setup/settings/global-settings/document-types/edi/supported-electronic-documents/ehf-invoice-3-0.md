@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico EHF INVOICE
 
 # 🇳🇴 EHF INVOICE 3.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Noruega](countries/norway.md). Elija la asignación para el documento de negocio real. Un pedido o un aviso de expedición no es una factura.
+{% endhint %}
+
 | Propiedad              | Valor                                             |
 | ---------------------- | ------------------------------------------------- |
 | **País / Región**      | Noruega                                           |

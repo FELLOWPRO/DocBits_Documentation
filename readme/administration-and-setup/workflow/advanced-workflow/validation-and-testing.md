@@ -2,9 +2,9 @@
 
 ## Vídeo: Variáveis, testes e ativação
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/pt.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/pt.mp4" %}
 
-[Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/pt.vtt) · 1:56
+[Abrir vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/pt.mp4) · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/pt.vtt) · 1:57
 
 <details>
 <summary>Transcrição</summary>
@@ -25,9 +25,9 @@ Clique em Validar. Examine erros e avisos acima do canvas. Uma mensagem foca o n
 
 Reproduzir na barra abre a escolha do documento. Escolha documento, dados personalizados ou teste sem documento para cartões independentes. Start executa diretamente. Os testes incluem alterações não guardadas e simulam ações destrutivas.
 
-**Examine os resultados**
+**Preparar e rever cenários de teste**
 
-Examine mensagens e durações: verde, sucesso; laranja, condição falsa; vermelho, erro; cinzento, ignorado. Corrija e repita. Use o gestor de testes para cenários repetíveis: sucesso, alternativas, dados em falta e erros.
+Prepara testes separados acima, abaixo e exatamente em mil, além de dados em falta. Após a execução, verifica mensagens e durações: verde indica sucesso, laranja falso, vermelho erro e cinzento ignorado. Volta a testar as correções. Usa o gestor de testes para cenários repetíveis.
 
 **Guarde antes de ativar**
 

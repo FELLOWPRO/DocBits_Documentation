@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico KAZAKHSTAN 
 
 # 🇰🇿 KAZAKHSTAN ESF
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Kazajistán](countries/kazakhstan.md). La etiqueta no indica una publicación. Confirme el esquema XML real y no deduzca la transmisión a la plataforma fiscal a partir de la compatibilidad con la extracción.
+{% endhint %}
+
 | Propiedad              | Valor                                                |
 | ---------------------- | ---------------------------------------------------- |
 | **País / Región**      | Kazajistán                                           |

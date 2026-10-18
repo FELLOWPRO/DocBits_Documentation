@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:09.677
+Facturae tiene entradas genéricas, 3.2,
+3.2.1 y 3.2.2. Compruebe el espacio de
+
+formats_02
+00:00:09.677 --> 00:00:16.527
+nombres y la versión del esquema. Extraer
+datos de un XML firmado no verifica por sí
+
+formats_03
+00:00:16.527 --> 00:00:19.567
+solo su firma ni su aceptación por FACe.
+
+workflow_01
+00:00:20.317 --> 00:00:25.669
+Abra E-Doc para el formato detectado.
+Compare Transformation, Preview y
+
+workflow_02
+00:00:25.669 --> 00:00:31.428
+Extraction Paths. Las reglas Custom tienen
+prioridad. Guardar un borrador no lo
+
+workflow_03
+00:00:31.428 --> 00:00:32.267
+activa.
+
+accept_01
+00:00:33.017 --> 00:00:37.557
+Pruebe una factura y una nota de crédito
+cuando corresponda. Verifique los
+
+accept_02
+00:00:37.557 --> 00:00:42.816
+importes, las partes y el tipo de
+documento exportado. Analizar el archivo
+
+accept_03
+00:00:42.816 --> 00:00:46.667
+no demuestra la autorización fiscal ni la
+entrega por red.
+

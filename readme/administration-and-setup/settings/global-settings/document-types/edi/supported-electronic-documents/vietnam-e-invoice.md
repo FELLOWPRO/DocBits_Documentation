@@ -4,6 +4,12 @@ description: Soporte de documentos electrónicos VIETNAM E-INVOICE en DocBits
 
 # 🇻🇳 VIETNAM E-INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Vietnam](countries/vietnam.md). La etiqueta no indica una publicación. Compruebe el espacio de nombres y el esquema de origen, en lugar de suponer que todas las exportaciones de la plataforma fiscal tienen la misma estructura.
+{% endhint %}
+
 | Propiedad            | Valor                                                 |
 | -------------------- | ----------------------------------------------------- |
 | **País / Región**    | Vietnam                                               |

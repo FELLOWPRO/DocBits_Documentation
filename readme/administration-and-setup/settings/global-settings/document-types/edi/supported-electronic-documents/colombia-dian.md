@@ -4,6 +4,12 @@ description: Compatibilidad con documentos electrónicos DIAN de Colombia en Doc
 
 # 🇨🇴 Colombia DIAN
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Colombia](countries/colombia.md). La entrada de clasificación de notas de crédito no tiene un paquete de extracción dedicado en el estado inspeccionado. Confirme la asignación utilizada en lugar de deducir su compatibilidad a partir de la entrada de facturas.
+{% endhint %}
+
 | Propiedad | Valor |
 |----------|-------|
 | **País / Región** | Colombia |

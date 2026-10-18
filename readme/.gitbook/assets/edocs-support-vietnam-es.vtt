@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.149
+Vietnam E-Invoice es la familia
+configurada. La etiqueta no indica una
+
+formats_02
+00:00:05.149 --> 00:00:09.991
+publicación. Compruebe el espacio de
+nombres y el esquema de origen, en lugar
+
+formats_03
+00:00:09.991 --> 00:00:14.913
+de suponer que todas las exportaciones de
+la plataforma fiscal tienen la misma
+
+formats_04
+00:00:14.913 --> 00:00:15.967
+estructura.
+
+workflow_01
+00:00:16.717 --> 00:00:22.069
+Abra E-Doc para el formato detectado.
+Compare Transformation, Preview y
+
+workflow_02
+00:00:22.069 --> 00:00:27.828
+Extraction Paths. Las reglas Custom tienen
+prioridad. Guardar un borrador no lo
+
+workflow_03
+00:00:27.828 --> 00:00:28.667
+activa.
+
+accept_01
+00:00:29.417 --> 00:00:33.957
+Pruebe una factura y una nota de crédito
+cuando corresponda. Verifique los
+
+accept_02
+00:00:33.957 --> 00:00:39.216
+importes, las partes y el tipo de
+documento exportado. Analizar el archivo
+
+accept_03
+00:00:39.216 --> 00:00:43.067
+no demuestra la autorización fiscal ni la
+entrega por red.
+

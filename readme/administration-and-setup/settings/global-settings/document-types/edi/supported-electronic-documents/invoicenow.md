@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico INVOICENOW
 
 # 🇸🇬 INVOICENOW
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Singapur](countries/singapore.md). Compruebe los identificadores de perfil de Singapur. Un perfil nacional y Peppol BIS genérico pueden compartir sintaxis UBL sin compartir todas las reglas de negocio.
+{% endhint %}
+
 | Propiedad              | Valor                    |
 | ---------------------- | ------------------------ |
 | **País / Región**      | Singapur                 |

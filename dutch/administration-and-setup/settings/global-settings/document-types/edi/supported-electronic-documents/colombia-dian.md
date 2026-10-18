@@ -4,6 +4,12 @@ description: Ondersteuning voor Colombiaanse DIAN elektronische documenten in Do
 
 # 🇨🇴 Colombia DIAN
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Colombia](countries/colombia.md). De classificatievermelding voor creditnota’s heeft in de onderzochte status geen eigen extractiebundel. Bevestig de daadwerkelijk gebruikte toewijzing in plaats van ondersteuning af te leiden uit de factuurvermelding.
+{% endhint %}
+
 | Eigenschap | Waarde |
 |----------|-------|
 | **Land / Regio** | Colombia |

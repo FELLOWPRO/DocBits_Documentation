@@ -19,7 +19,7 @@ for offset in range(0,len(countries),8):
         if c['representative']:assert Image.open(file).height>300,file
         x=index%2*800;y=index//2*340;sheet.paste(im,(x,y));draw.text((x+8,y+306),c['slug'],fill='#111111')
     sheet.save(dest/f'screenshots-{offset//8}.jpg',quality=88)
-    if not (pipeline/'out'/('edocs_country_'+countries[offset]['slug'].replace('-','_'))/f'{lang}.provenance.json').exists():continue
+    if not all((pipeline/f'out/review/{lang}/edocs_country_{c["slug"].replace("-","_")}/{lang}-{segment}-drawer.png').exists() for c in countries[offset:offset+8] for segment in ('formats','workflow','accept')):continue
     sheet=Image.new('RGB',(1152,8*244),'#0a2531');draw=ImageDraw.Draw(sheet)
     for index,c in enumerate(countries[offset:offset+8]):
         page='edocs_country_'+c['slug'].replace('-','_')

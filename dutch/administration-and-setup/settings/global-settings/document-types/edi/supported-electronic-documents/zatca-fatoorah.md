@@ -4,6 +4,12 @@ description: Ondersteuning voor ZATCA FATOORAH elektronisch document in DocBits
 
 # 🇸🇦 ZATCA FATOORAH
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Saoedi-Arabië](countries/saudi-arabia.md). Deze labels beschrijven verschillende processen en factuurvarianten. Het parseren bewijst geen ondertekening, fiscale goedkeuring of rapportage via ZATCA.
+{% endhint %}
+
 | Eigenschap           | Waarde                                                    |
 | -------------------- | --------------------------------------------------------- |
 | **Land / Regio**     | Saoedi-Arabië                                             |

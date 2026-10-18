@@ -4,6 +4,12 @@ description: Ondersteuning voor FACTURAE 3.2.2 elektronisch document in DocBits
 
 # 🇪🇸 FACTURAE 3.2.2
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Spanje](countries/spain.md). Controleer de naamruimte en schemaversie. Gegevensextractie uit een ondertekend XML-bestand verifieert op zichzelf niet de handtekening of acceptatie door FACe.
+{% endhint %}
+
 | Eigenschap | Waarde |
 |------------|--------|
 | **Land / Regio** | Spanje |

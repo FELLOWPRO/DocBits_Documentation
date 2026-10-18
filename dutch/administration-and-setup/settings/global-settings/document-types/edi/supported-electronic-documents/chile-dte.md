@@ -4,6 +4,12 @@ description: Ondersteuning voor CHILE DTE elektronische documenten in DocBits
 
 # 🇨🇱 CHILE DTE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Chili](countries/chile.md). Selecteer het bedrijfsdocumenttype voordat u de velden controleert. Facturen, creditnota’s en leveringsinformatie gebruiken verschillende toewijzingen.
+{% endhint %}
+
 | Eigenschap | Waarde |
 |----------|-------|
 | **Land / Regio** | Chili |

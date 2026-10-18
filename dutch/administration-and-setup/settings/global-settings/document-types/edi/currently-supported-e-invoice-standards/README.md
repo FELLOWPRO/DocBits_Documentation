@@ -1,333 +1,50 @@
 # Currently Supported E-Invoice Standards
 
-{% embed url="https://www.youtube.com/watch?v=AxrHNEmmXtg" %}
-{% endembed %}
-
-## Supported Electronic Documents by Country
-
-DocBits supports **120+** electronic invoice and document standards across **30+ countries**. The table below is organized by country.
-
-### 🇦🇷 Argentina
-
-| Standard | Status |
-|---|---|
-| [ARGENTINA AFIP](../supported-electronic-documents/argentina-afip.md) | Supported |
-| [ARGENTINA FACTURA ELECTRONICA](../supported-electronic-documents/argentina-factura-electronica.md) | Supported |
-
-### 🇦🇹 Austria
-
-| Standard | Status |
-|---|---|
-| [AUSTRIA EBINTERFACE](../supported-electronic-documents/austria-ebinterface.md) (4.3 – 6.1) | Supported |
-| [AUSTRIA EBINTERFACE 6.0](../supported-electronic-documents/austria-ebinterface-6-0.md) | Supported |
-| [AUSTRIA EBINTERFACE 6.1](../supported-electronic-documents/austria-ebinterface-6-1.md) | Supported |
-
-### 🇦🇺 Australia / 🇳🇿 New Zealand
-
-| Standard | Status |
-|---|---|
-| [AUNZ PINT](../supported-electronic-documents/aunz-pint.md) (incl. Self-Billing) | Supported |
-| [PINT A-NZ](../supported-electronic-documents/pint-a-nz.md) | Supported |
-
-### 🇧🇷 Brazil
-
-| Standard | Status |
-|---|---|
-| [CT-e](../supported-electronic-documents/brazil-cte.md) | Supported |
-| [NF-e](../supported-electronic-documents/brazil-nfe.md) | Supported |
-| [NFC-e](../supported-electronic-documents/brazil-nfce.md) | Supported |
-| [NFS-e](../supported-electronic-documents/brazil-nfse.md) | Supported |
-
-### 🇨🇱 Chile
-
-| Standard | Status |
-|---|---|
-| [CHILE DTE](../supported-electronic-documents/chile-dte.md) | Supported |
-| [CHILE DTE FACTURA](../supported-electronic-documents/chile-dte.md) | Supported |
-| [CHILE DTE NOTA CREDITO](../supported-electronic-documents/chile-dte.md) | Supported |
-
-### 🇨🇳 China
-
-| Standard | Status |
-|---|---|
-| [E-FAPIAO](../supported-electronic-documents/china-fapiao.md) | Supported |
-| [FAPIAO](../supported-electronic-documents/china-fapiao.md) | Supported |
-| [GENERAL VAT INVOICE](../supported-electronic-documents/china-fapiao.md) | Supported |
-| [SPECIAL VAT INVOICE](../supported-electronic-documents/china-fapiao.md) | Supported |
-
-### 🇨🇴 Colombia
-
-| Standard | Status |
-|---|---|
-| [DOCUMENTO SOPORTE](../supported-electronic-documents/colombia-dian.md) | Supported |
-| [FACTURA ELECTRONICA](../supported-electronic-documents/colombia-dian.md) | Supported |
-
-### 🇩🇰 Denmark
-
-| Standard | Status |
-|---|---|
-| [OIOUBL 2.1](../supported-electronic-documents/denmark-oioubl.md) | Supported |
-
-### 🇪🇨 Ecuador
-
-| Standard | Status |
-|---|---|
-| [FACTURA ELECTRONICA](../supported-electronic-documents/ecuador-sri.md) | Supported |
-| [SRI](../supported-electronic-documents/ecuador-sri.md) | Supported |
-| [SRI 1.0.0](../supported-electronic-documents/ecuador-sri.md) | Supported |
-| [SRI 1.1.0](../supported-electronic-documents/ecuador-sri.md) | Supported |
-| [SRI 2.0.0](../supported-electronic-documents/ecuador-sri.md) | Supported |
-| [SRI 2.1.0](../supported-electronic-documents/ecuador-sri.md) | Supported |
-
-### 🇪🇸 Spain
-
-| Standard | Status |
-|---|---|
-| [Facturae](../supported-electronic-documents/spain-facturae.md) | Ondersteund |
-| [Facturae 3.2](../supported-electronic-documents/spain-facturae.md) | Ondersteund |
-| [Facturae 3.2.1](../supported-electronic-documents/spain-facturae.md) | Ondersteund |
-| [Facturae 3.2.2](../supported-electronic-documents/spain-facturae.md) | Ondersteund |
-
-### 🇪🇺 European Union
-
-| Standard | Status |
-|---|---|
-| PEPPOL BIS 3.0 | Supported |
-
-### 🇫🇮 Finland
-
-| Standard | Status |
-|---|---|
-| [Finvoice 1.3](../supported-electronic-documents/finland-finvoice.md) | Ondersteund |
-| [Finvoice 2.0](../supported-electronic-documents/finland-finvoice.md) | Ondersteund |
-| [Finvoice 2.01](../supported-electronic-documents/finland-finvoice.md) | Ondersteund |
-| [Finvoice 3.0](../supported-electronic-documents/finland-finvoice.md) | Ondersteund |
-| [TEAPPSXML](../supported-electronic-documents/finland-teappsxml.md) | Ondersteund |
-
-### 🇫🇷 France
-
-| Standard | Status |
-|---|---|
-| Factur-X | Supported |
-| Factur-X 1.0.05 / ZUGFeRD 2.1 | Supported |
-| Factur-X 1.0.07.2 / ZUGFeRD 2.3.2 | Supported |
-| [Factur-X 1.09 / ZUGFeRD 2.5](../supported-electronic-documents/facturx-1-09-zugferd-2-5.md) | Supported |
-
-### 🇩🇪 Germany
-
-| Standard | Status |
-|---|---|
-| XRechnung 1.0 CII | Supported |
-| XRechnung 1.0 UBL | Supported |
-| XRechnung 1.1 CII | Supported |
-| XRechnung 1.1 UBL | Supported |
-| XRechnung 1.2 CII | Supported |
-| XRechnung 1.2 UBL | Supported |
-| XRechnung 1.2.1 CII | Supported |
-| XRechnung 1.2.1 UBL | Supported |
-| XRechnung 1.2.2 CII | Supported |
-| XRechnung 1.2.2 UBL | Supported |
-| XRechnung 2.0 CII | Supported |
-| XRechnung 2.0 UBL | Supported |
-| XRechnung 2.0.1 CII | Supported |
-| XRechnung 2.0.1 UBL | Supported |
-| XRechnung 2.1 CII | Supported |
-| XRechnung 2.1 UBL | Supported |
-| XRechnung 2.2 CII | Supported |
-| XRechnung 2.2 UBL | Supported |
-| XRechnung 2.3 CII | Supported |
-| XRechnung 2.3 UBL | Supported |
-| XRechnung 3.0 CII | Supported |
-| XRechnung 3.0 UBL | Supported |
-| XRechnung 3.0.1 CII | Supported |
-| XRechnung 3.0.1 UBL | Supported |
-| XRechnung 3.0.2 CII | Supported |
-| XRechnung 3.0.2 UBL | Supported |
-| ZUGFeRD 1.0 | Supported |
-| ZUGFeRD 1.0 Basic | Supported |
-| ZUGFeRD 1.0 Comfort | Supported |
-| ZUGFeRD 1.0 Extended | Supported |
-| ZUGFeRD 2.2 | Supported |
-| ZUGFeRD 2.3 | Supported |
-| ZUGFeRD 2.3.2 | Supported |
-| [ZUGFeRD 2.5](../supported-electronic-documents/zugferd-2-5.md) | Supported |
-
-### 🇮🇳 India
-
-| Standard | Status |
-|---|---|
-| [GST E-Invoice](../supported-electronic-documents/india-gst-e-invoice.md) | Ondersteund |
-
-### 🇮🇩 Indonesia
-
-| Standard | Status |
-|---|---|
-| E-Faktur | Supported |
-
-### 🇮🇹 Italy
-
-| Standard | Status |
-|---|---|
-| FatturaPA | Supported |
-
-### 🇯🇵 Japan
-
-| Standard | Status |
-|---|---|
-| JP PINT | Supported |
-| JP PINT Self-Billing | Supported |
-
-### 🇰🇿 Kazakhstan
-
-| Standard | Status |
-|---|---|
-| ESF | Supported |
-
-### 🇰🇷 Korea
-
-| Standard | Status |
-|---|---|
-| E-Tax Invoice | Supported |
-| NTS | Supported |
-
-### 🇲🇾 Malaysia
-
-| Standard | Status |
-|---|---|
-| MyInvois | Supported |
-
-### 🇲🇽 Mexico
-
-| Standard | Status |
-|---|---|
-| CFDI 3.3 | Supported |
-| CFDI 4.0 | Supported |
-
-### 🇳🇱 Netherlands
-
-| Standard | Status |
-|---|---|
-| SI-UBL 2.0 | Supported |
-
-### 🇳🇴 Norway
-
-| Standard | Status |
-|---|---|
-| EHF Invoice 3.0 | Supported |
-
-### 🇵🇾 Paraguay
-
-| Standard | Status |
-|---|---|
-| DTE | Supported |
-| SIFEN | Supported |
-| SIFEN 150 | Supported |
-
-### 🇵🇪 Peru
-
-| Standard | Status |
-|---|---|
-| CPE | Supported |
-| CPE UBL 2.0 | Supported |
-| CPE UBL 2.1 | Supported |
-| FACTURA ELECTRONICA | Supported |
-
-### 🇵🇭 Philippines
-
-| Standard | Status |
-|---|---|
-| EIS | Supported |
-
-### 🇵🇱 Poland
-
-| Standard | Status |
-|---|---|
-| KSeF | Supported |
-| KSeF FA2 | Supported |
-| KSeF FA3 | Supported |
-
-### 🇸🇦 Saudi Arabia
-
-| Standard | Status |
-|---|---|
-| ZATCA Fatoorah | Supported |
-| ZATCA Reporting | Supported |
-| ZATCA Simplified | Supported |
-| ZATCA Tax Invoice | Supported |
-
-### 🇸🇬 Singapore
-
-| Standard | Status |
-|---|---|
-| InvoiceNow | Supported |
-| InvoiceNow SG | Supported |
-
-### 🇸🇮 Slovenia
-
-| Standard | Status |
-|---|---|
-| e-SLOG 1.6 | Supported |
-| e-SLOG 2.0 | Supported |
-
-### 🇸🇪 Sweden
-
-| Standard | Status |
-|---|---|
-| Svefaktura 1.0 | Supported |
-
-### 🇹🇼 Taiwan
-
-| Standard | Status |
-|---|---|
-| eGUI | Supported |
-
-### 🇹🇭 Thailand
-
-| Standard | Status |
-|---|---|
-| E-Tax Invoice | Supported |
-
-### 🇹🇷 Turkey
-
-| Standard | Status |
-|---|---|
-| E-Arsiv | Supported |
-| E-Fatura | Supported |
-
-### 🇦🇪 United Arab Emirates
-
-| Standard | Status |
-|---|---|
-| VAT Invoice | Supported |
-
-### 🇺🇾 Uruguay
-
-| Standard | Status |
-|---|---|
-| CFE | Supported |
-| CFE 24 | Supported |
-| CFE 25 | Supported |
-| E-Factura | Supported |
-| E-Nota Credito | Supported |
-
-### 🇻🇳 Vietnam
-
-| Standard | Status |
-|---|---|
-| E-Invoice | Supported |
-
-### International / Multi-Country Standards
-
-| Standard | Status |
-|---|---|
-| BOD | Supported |
-| EDI | Supported |
-| INVOIC02 | Supported |
-| SPS Commerce RSX 7.7.4 | Supported |
-| UBL 2.1 | Supported |
-
-## Roadmap for Upcoming Implementation
-
-{% content-ref url="roadmap.md" %}
-[roadmap.md](roadmap.md)
-{% endcontent-ref %}
+Begin met het brondocument en de bijbehorende landengids. Alleen een landnaam identificeert geen bestandsformaat. Een versielabel, XML-syntaxis en een bedrijfsprofiel beschrijven verschillende zaken.
+
+Raadpleeg de landengidsen voor exacte formaatlabels, syntaxis, versiebeperkingen en de onderzochte configuratiestatus. [eDocs-formaten, versies en landengidsen](../supported-electronic-documents/README.md).
+
+De tabellen beschrijven een controle van de ontwikkelcatalogus op 17 oktober 2026 en de bijbehorende verwerkingscode. Ze tonen de beschikbare regels en configuratiecomponenten; ze vormen geen certificering van elk bestand, elke wettelijke vereiste of een productie-uitrol. Uw organisatie kan de standaardinstellingen overschrijven.
+
+| Land / regio | Families en versieomvang | Catalogusresultaat |
+| --- | --- | --- |
+| [Oostenrijk](../supported-electronic-documents/countries/austria.md) | ebInterface 4.3, 5.0, 6.0 en 6.1 hebben afzonderlijke vermeldingen. | Vermeldingen gevonden |
+| [Denemarken](../supported-electronic-documents/countries/denmark.md) | OIOUBL 2.1 is de vermelde Deense variant. | Vermeldingen gevonden |
+| [Finland](../supported-electronic-documents/countries/finland.md) | Finvoice 1.3, 2.0, 2.01 en 3.0 hebben afzonderlijke vermeldingen. TEAPPSXML is een andere familie. | Vermeldingen gevonden |
+| [Frankrijk](../supported-electronic-documents/countries/france.md) | Factur-X heeft algemene en versiespecifieke vermeldingen, waaronder 1.0.05, 1.08 en 1.09. VRBL FR CIUS 1.0 staat hier los van. | Vermeldingen gevonden |
+| [Duitsland](../supported-electronic-documents/countries/germany.md) | XRechnung heeft dertien versielabels van 1.0 tot 3.0.2, elk in CII en UBL. ZUGFeRD omvat oudere profielen en 2.5-vermeldingen voor CII en UBL. | Vermeldingen gevonden |
+| [Italië](../supported-electronic-documents/countries/italy.md) | FatturaPA is de geconfigureerde Italiaanse familie. | Vermeldingen gevonden |
+| [Nederland](../supported-electronic-documents/countries/netherlands.md) | SI-UBL 2.0 heeft een eigen vermelding. | Vermeldingen gevonden |
+| [Noorwegen](../supported-electronic-documents/countries/norway.md) | EHF Invoice 3.0 staat vermeld naast EHF Order, Order Response en Despatch Advice. | Vermeldingen gevonden |
+| [Polen](../supported-electronic-documents/countries/poland.md) | KSeF heeft algemene, FA2- en FA3-vermeldingen. | Vermeldingen gevonden |
+| [Slovenië](../supported-electronic-documents/countries/slovenia.md) | e-SLOG 1.6 en 2.0 hebben afzonderlijke vermeldingen. | Vermeldingen gevonden |
+| [Spanje](../supported-electronic-documents/countries/spain.md) | Facturae heeft algemene vermeldingen en vermeldingen voor 3.2, 3.2.1 en 3.2.2. | Vermeldingen gevonden |
+| [Zweden](../supported-electronic-documents/countries/sweden.md) | Svefaktura 1.0 is de vermelde Zweedse variant. | Vermeldingen gevonden |
+| [Australië](../supported-electronic-documents/countries/australia.md) | PINT A-NZ heeft regelvermeldingen voor facturen en creditnota’s die met Nieuw-Zeeland worden gedeeld. | Vermeldingen gevonden |
+| [Nieuw-Zeeland](../supported-electronic-documents/countries/new-zealand.md) | PINT A-NZ heeft regelvermeldingen voor facturen en creditnota’s die met Australië worden gedeeld. | Vermeldingen gevonden |
+| [India](../supported-electronic-documents/countries/india.md) | India GST E-Invoice en GST CreditNote hebben afzonderlijke vermeldingen. | Vermeldingen gevonden |
+| [Indonesië](../supported-electronic-documents/countries/indonesia.md) | Indonesia E-Faktur is de geconfigureerde familie. | Vermeldingen gevonden |
+| [China](../supported-electronic-documents/countries/china.md) | De catalogus bevat Fapiao, E-Fapiao, General VAT Invoice en Special VAT Invoice. | Vermeldingen gevonden |
+| [Japan](../supported-electronic-documents/countries/japan.md) | JP PINT en JP PINT Self-Billing zijn afzonderlijke vermeldingen. | Vermeldingen gevonden |
+| [Zuid-Korea](../supported-electronic-documents/countries/korea.md) | Korea E-Tax Invoice en Korea NTS zijn geconfigureerde families. | Vermeldingen gevonden |
+| [Maleisië](../supported-electronic-documents/countries/malaysia.md) | MyInvois heeft regelvermeldingen voor facturen en creditnota’s. | Vermeldingen gevonden |
+| [Filipijnen](../supported-electronic-documents/countries/philippines.md) | Philippines EIS is de geconfigureerde familie. | Vermeldingen gevonden |
+| [Singapore](../supported-electronic-documents/countries/singapore.md) | InvoiceNow heeft vermeldingen voor facturen en creditnota’s; InvoiceNow SG is een ander geconfigureerd label. | Vermeldingen gevonden |
+| [Taiwan](../supported-electronic-documents/countries/taiwan.md) | Taiwan eGUI is de geconfigureerde familie. | Vermeldingen gevonden |
+| [Thailand](../supported-electronic-documents/countries/thailand.md) | Thailand E-Tax Invoice is de geconfigureerde familie. | Vermeldingen gevonden |
+| [Vietnam](../supported-electronic-documents/countries/vietnam.md) | Vietnam E-Invoice is de geconfigureerde familie. | Vermeldingen gevonden |
+| [Argentinië](../supported-electronic-documents/countries/argentina.md) | Argentina AFIP en Factura Electronica zijn geconfigureerde labels. | Vermeldingen gevonden |
+| [Brazilië](../supported-electronic-documents/countries/brazil.md) | Brazilië heeft NF-e-, NFC-e-, CT-e-, NFS-e- en SPED NFS-e-vermeldingen. NFS-e omvat de versies 1.00 en 2.00 tot 2.04; SPED omvat 1.00.02 en 1.01. | Vermeldingen gevonden |
+| [Chili](../supported-electronic-documents/countries/chile.md) | Chile DTE heeft vermeldingen voor facturen, creditnota’s en verzenddocumenten. | Vermeldingen gevonden |
+| [Colombia](../supported-electronic-documents/countries/colombia.md) | Colombia Factura Electronica en Documento Soporte hebben afzonderlijke vermeldingen. | Vermeldingen gevonden |
+| [Costa Rica](../supported-electronic-documents/countries/costa-rica.md) | De oudere documentatie noemt Costa Rica, maar in de onderzochte ontwikkelcatalogus is geen overeenkomende classificatie- of configuratievermelding gevonden. | Niet bevestigd |
+| [Ecuador](../supported-electronic-documents/countries/ecuador.md) | Ecuador SRI heeft algemene vermeldingen en vermeldingen voor 1.0.0, 1.1.0, 2.0.0 en 2.1.0. Withholding (bronbelasting) is een afzonderlijk documenttype. | Vermeldingen gevonden |
+| [Mexico](../supported-electronic-documents/countries/mexico.md) | Mexico CFDI 3.3 en 4.0 hebben afzonderlijke vermeldingen. | Vermeldingen gevonden |
+| [Paraguay](../supported-electronic-documents/countries/paraguay.md) | Paraguay DTE, SIFEN en SIFEN 150 zijn geconfigureerde labels. | Vermeldingen gevonden |
+| [Peru](../supported-electronic-documents/countries/peru.md) | Peru CPE heeft algemene vermeldingen en vermeldingen voor UBL 2.0 en UBL 2.1. Factura Electronica is een ander label. | Vermeldingen gevonden |
+| [Uruguay](../supported-electronic-documents/countries/uruguay.md) | Uruguay CFE heeft algemene vermeldingen en vermeldingen voor 24 en 25. E-Factura en E-Nota Credito staan ook vermeld. | Vermeldingen gevonden |
+| [Kazachstan](../supported-electronic-documents/countries/kazakhstan.md) | Kazakhstan ESF is de geconfigureerde familie. | Vermeldingen gevonden |
+| [Saoedi-Arabië](../supported-electronic-documents/countries/saudi-arabia.md) | ZATCA Fatoorah, Reporting, Simplified en Tax Invoice hebben afzonderlijke vermeldingen. | Vermeldingen gevonden |
+| [Turkije](../supported-electronic-documents/countries/turkey.md) | Turkey E-Fatura en E-Arsiv zijn afzonderlijke geconfigureerde families. | Vermeldingen gevonden |
+| [Verenigde Arabische Emiraten](../supported-electronic-documents/countries/united-arab-emirates.md) | UAE VAT Invoice is het geconfigureerde label. | Vermeldingen gevonden |
+| [Internationaal](../supported-electronic-documents/countries/international.md) | Internationale vermeldingen omvatten Peppol BIS 3.0, UBL 2.1, zuivere CII, EDI, INVOIC02, cXML, OCI, BOD en SPS Commerce RSX 7.7.4. | Vermeldingen gevonden |

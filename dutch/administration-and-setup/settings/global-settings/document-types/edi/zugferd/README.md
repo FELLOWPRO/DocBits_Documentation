@@ -204,3 +204,7 @@ De standaard TRANSFORMATION-XSLT verdeelt `ApplicableTradeTax`-blokken over drie
 ## Effectieve regels en activering
 
 Als een elektronische creditnota als Invoice verschijnt, volg dan de [handleiding voor het oplossen van classificatieproblemen](../credit-note-recognized-as-invoice.md). Deze behandelt de effectieve aangepaste of standaardbron, typecodes, Extraction Paths en veilige activering.
+
+## Landengidsen
+
+Raadpleeg de landengidsen voor exacte formaatlabels, syntaxis, versiebeperkingen en de onderzochte configuratiestatus. [eDocs-formaten, versies en landengidsen](../supported-electronic-documents/README.md).

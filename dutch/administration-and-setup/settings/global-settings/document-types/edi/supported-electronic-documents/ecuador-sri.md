@@ -4,6 +4,12 @@ description: Ondersteuning voor Ecuador SRI (Factura Electrónica, SRI 1.0.0 –
 
 # 🇪🇨 Ecuador SRI
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Ecuador](countries/ecuador.md). De classificatievermelding voor creditnota’s heeft in de onderzochte status geen eigen extractiebundel. Controleer de daadwerkelijk gebruikte toewijzing en het type brondocument.
+{% endhint %}
+
 | Eigenschap | Waarde |
 |-----------|--------|
 | **Land / Regio** | Ecuador |

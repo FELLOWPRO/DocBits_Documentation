@@ -50,9 +50,10 @@ async function clean(page){
    const filename=`edocs-support-${country.slug}-${locale}.png`;
    if(country.representative){
     const card=page.locator(`[data-edoc-format="${country.representative}"]`);
-    await card.waitFor({state:'visible',timeout:30000});
+    await card.waitFor({state:'visible',timeout:60000});
+    await card.scrollIntoViewIfNeeded({timeout:60000});
     if((await card.boundingBox()).height < 200){
-     await card.locator('.q-expansion-item__container > .q-item').first().click();
+     await card.locator('.q-expansion-item__container > .q-item').first().click({timeout:60000});
     }
     await page.waitForFunction(name=>document.querySelector('[data-edoc-format="'+name+'"]')?.getBoundingClientRect().height>300,country.representative,{timeout:30000});
     await card.locator('tr.xslt-row').first().waitFor({state:'visible'});

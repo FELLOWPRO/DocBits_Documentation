@@ -6,7 +6,7 @@ description: "Fünf Erklärvideos zu Advanced Workflows und Workflow Logs auf De
 
 Alle fünf Kapitel enthalten eine deutsche Tonspur, eine Untertiteldatei und ein Transkript. Jedes Kapitel dauert weniger als zwei Minuten.
 
-Das erste Kapitel zeigt einen konfigurierten Workflow in der echten DocBits-Oberfläche. Die weiteren Kapitel erklären die Ablauflogik mit gekennzeichneten Lehrgrafiken. Die [Advanced-Workflow-Anleitung](advanced-workflow-builder.md) und die [Workflow Logs](workflow-logs.md) ergänzen die Videos.
+Die ersten drei Kapitel zeigen die echte DocBits-Oberfläche: einen konfigurierten Workflow, verbundene Steuerknoten, Variablenformulare und Testbedienelemente. Die beiden Kapitel zu Workflow Logs verwenden derzeit gekennzeichnete Lehrgrafiken. Die [Advanced-Workflow-Anleitung](advanced-workflow-builder.md) und die [Workflow Logs](workflow-logs.md) ergänzen die Videos.
 
 ## Builder und Canvas
 
@@ -47,11 +47,12 @@ Validieren Sie Verbindungen und Karteneinstellungen. Speichern Sie explizit auf 
 
 ## Knoten und Routen
 
-Knotenrollen, Ergebnisanschlüsse, alternative Wege und die Regeln für Wait ALL, Wait ANY und OR.
+Ein verbundener Demoentwurf zeigt Erfolgs-, Alternativ- und Fehlerwege im echten DocBits-Designer. Zwei Quellknoten führen anschließend zu Wait ALL, Wait ANY und OR. Die Beispielaktionen schreiben Demowerte, um die Routen zu kennzeichnen.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v1/de.mp4" %}
 
-[Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v1/de.vtt)
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/de.mp4" %}
+
+[Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/de.vtt)
 
 <details>
 <summary>Transkript</summary>
@@ -72,11 +73,12 @@ Verarbeitungsknoten müssen von einem Einstieg erreichbar sein. Vermeiden Sie Sc
 
 ## Variablen, Tests und Aktivierung
 
-Variablentypen und Organisationskontext, Strukturprüfung, Testeingaben, Ergebnisse, Speichern und Aktivierung.
+Das Kapitel zeigt das Variablenformular, den Typ für Dokumentreferenzen, Validieren, die Auswahl des Testkontexts sowie Speichern und Aktivierung direkt in DocBits. Die Erklärung behandelt auch den organisationsweiten Geltungsbereich, Testfälle und die Prüfung der Ergebnisse nach einer Ausführung.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v1/de.mp4" %}
 
-[Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v1/de.vtt)
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/de.mp4" %}
+
+[Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/de.vtt)
 
 <details>
 <summary>Transkript</summary>

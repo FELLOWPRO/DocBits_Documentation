@@ -54,3 +54,10 @@ readme/setup/testing/.DS_Store
 readme/setup/testing/auto-accounting/.DS_Store
 .DS_Store
 .venv
+
+# Video files are hosted in DigitalOcean Spaces; commit CDN links only.
+*.mp4
+*.webm
+*.mov
+*.m4v
+*.mkv

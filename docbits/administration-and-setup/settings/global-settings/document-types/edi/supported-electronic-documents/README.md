@@ -21,6 +21,8 @@ The tables record a development-catalogue check on 17 October 2026 and the corre
 
 ## Country guides
 
+The overview links to 39 country guides and one international guide. Each guide lists exact format labels and configuration components, followed by available DocBits screenshots, videos and acceptance checks.
+
 | Country / region | Families and version scope | Catalogue result |
 | --- | --- | --- |
 | [Austria](countries/austria.md) | ebInterface 4.3, 5.0, 6.0 and 6.1 have separate entries. | Entries found |

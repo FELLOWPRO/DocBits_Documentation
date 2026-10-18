@@ -21,6 +21,8 @@ Die Tabellen dokumentieren eine Prüfung des Entwicklungskatalogs vom 17. Oktobe
 
 ## Länderanleitungen
 
+Die Übersicht verlinkt 39 Länderanleitungen und eine internationale Anleitung. Jede Anleitung nennt genaue Formatbezeichnungen und Konfigurationskomponenten sowie verfügbare DocBits-Screenshots, Videos und Abnahmeprüfungen.
+
 | Land / Region | Familien und Versionsumfang | Katalogergebnis |
 | --- | --- | --- |
 | [Österreich](countries/austria.md) | Für ebInterface 4.3, 5.0, 6.0 und 6.1 gibt es separate Einträge. | Einträge gefunden |

@@ -1,37 +1,12 @@
-# Roadmap
+# Additional formats and transmission requirements
 
-**Chorus Pro (France)**
+For the inspected format and version scope, use the [country overview](../supported-electronic-documents/README.md). The following families already have catalogue entries and country guides; they should not be read as promises of future support:
 
-  •  **Scope:** French platform for B2G invoicing, which also aligns with PEPPOL BIS and Factur-X.
+- [Sweden — Svefaktura 1.0](../supported-electronic-documents/countries/sweden.md)
+- [Denmark — OIOUBL 2.1](../supported-electronic-documents/countries/denmark.md)
+- [Norway — EHF Invoice 3.0](../supported-electronic-documents/countries/norway.md)
+- [France — Factur-X](../supported-electronic-documents/countries/france.md)
 
-  •  **Note:** While Chorus Pro is more of a platform than a format, supporting its data structures and validations might be beneficial for working with French public entities.
+Chorus Pro is a transmission platform. Processing Factur-X or Peppol XML does not establish connectivity to Chorus Pro or tax clearance. Confirm the required connector, environment and transmission process separately.
 
-**Svefaktura (Sweden)**
-
-  •  **Scope:** A legacy Swedish e-invoice format.
-
-  •  **Basis:** Based on UBL, historically used for B2G invoicing in Sweden.
-
-  •  **Common Version:** Svefaktura 1.0 (largely being superseded by PEPPOL BIS)
-
-  •  **Note:** Although being phased out in favor of PEPPOL BIS, still appears in some legacy scenarios.
-
-**OIOUBL (Denmark)**
-
-  •  **Scope:** Widely used for B2G invoicing in Denmark.
-
-  •  **Basis:** UBL-based format aligned with Danish national requirements.
-
-  •  **Common Version:** OIOUBL Invoice/2.02 (and subsequent updates)
-
-  •  **Note:** Predecessor to current EN 16931-based formats; may still be in use by Danish entities.
-
-**EHF (Norway)**
-
-  •  **Scope:** Norway’s national standard for electronic invoicing.
-
-  •  **Basis:** PEPPOL BIS Billing 3.0 compliant; EHF (Elektronisk Handelsformat) is essentially a localized profile.
-
-  •  **Common Version:** EHF Invoice and Credit Note 3.0
-
-  •  **Note:** Standard format for public sector invoices in Norway, strongly linked to PEPPOL.
+For an additional requirement, retain an original sample and identify its format, syntax, version, profile and business document type. Compare it with the country guide, then test the required extraction and export in your organization.

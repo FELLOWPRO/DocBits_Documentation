@@ -21,6 +21,8 @@ Le tabelle riportano una verifica del catalogo di sviluppo effettuata il 17 otto
 
 ## Guide per paese
 
+La panoramica rimanda a 39 guide nazionali e a una guida internazionale. Ogni guida elenca le etichette esatte dei formati e i componenti di configurazione, insieme alle schermate DocBits, ai video e alle verifiche di accettazione disponibili.
+
 | Paese / regione | Famiglie e ambito delle versioni | Risultato del catalogo |
 | --- | --- | --- |
 | [Austria](countries/austria.md) | ebInterface 4.3, 5.0, 6.0 e 6.1 hanno voci separate. | Voci trovate |

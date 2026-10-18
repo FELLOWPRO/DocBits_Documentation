@@ -21,6 +21,8 @@ De tabellen beschrijven een controle van de ontwikkelcatalogus op 17 oktober 202
 
 ## Landengidsen
 
+Het overzicht verwijst naar 39 landengidsen en één internationale gids. Elke gids vermeldt de exacte formaatlabels en configuratiecomponenten, gevolgd door beschikbare DocBits-schermafbeeldingen, video’s en acceptatiecontroles.
+
 | Land / regio | Families en versieomvang | Catalogusresultaat |
 | --- | --- | --- |
 | [Oostenrijk](countries/austria.md) | ebInterface 4.3, 5.0, 6.0 en 6.1 hebben afzonderlijke vermeldingen. | Vermeldingen gevonden |

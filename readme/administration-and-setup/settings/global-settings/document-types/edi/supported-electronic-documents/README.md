@@ -83,3 +83,5 @@ MINIMUM i BASIC WL mogą pomijać dane pozycji potrzebne w dalszym przetwarzaniu
 5. Osobno potwierdź zasady walidacji i transport. Zachowaj mapowania niestandardowe oraz sprawdź zatwierdzenia i historię eksportu przed ponownym uruchomieniem istniejących dokumentów.
 
 [Kontrole akceptacyjne](../credit-note-recognized-as-invoice.md)
+
+[Konfigurowanie DocBits przez Claude lub Codex](../../../../../../advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md): połączenie, prompty, podglądy, wersjonowane zmiany, kontrole i cofnięcie.

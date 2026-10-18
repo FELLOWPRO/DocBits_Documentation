@@ -143,3 +143,5 @@ Próba zapisu do `00000000-0000-0000-0000-000000000000` zwraca:
 ## Faktycznie używane reguły i aktywacja
 
 Jeśli elektroniczna nota kredytowa jest wyświetlana jako Invoice, skorzystaj z [przewodnika rozwiązywania problemów z klasyfikacją](../../administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md). Opisuje on faktycznie używane źródło niestandardowe lub domyślne, kody typów, Extraction Paths i bezpieczną aktywację.
+
+[Konfigurowanie DocBits przez Claude lub Codex](../docbits-mcp/configuration-with-claude-or-codex.md): połączenie, prompty, podglądy, wersjonowane zmiany, kontrole i cofnięcie.

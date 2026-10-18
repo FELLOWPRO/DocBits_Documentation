@@ -48,7 +48,7 @@ La correspondance par défaut des avoirs FACTURX/ZUGFeRD comprend **381 et 261**
 
 <figure><img src="../../../../../.gitbook/assets/edocs-transformation-fr.png" alt="Source de la transformation FACTURX en lecture seule dans l’éditeur de versions DocBits."><figcaption>Examinez la source et la version sélectionnées avant de créer ou d’activer une modification.</figcaption></figure>
 
-Les [outils MCP eDocs](../../../../../advanced-functions-and-tools/edocs-mcp/README.md) permettent les mêmes vérifications : `list_edoc_custom_attributes`, `get_edoc_attribute_source` et `list_edoc_attribute_versions` identifient la source ; `compare_edoc_extraction` compare le comportement par défaut, personnalisé et proposé. Utilisez `test_electronic_document` pour une simulation avant l’activation.
+La procédure MCP complète figure dans [Configurer DocBits avec Claude ou Codex](../../../../../advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md). `list_edoc_custom_attributes`, `get_edoc_attribute_source` et `list_edoc_attribute_versions` identifient source et valeur active. `preview_edoc_custom_xslt` teste une transformation candidate. `compare_edoc_extraction` compare uniquement les Extraction Paths et nécessite un attribut personnalisé de chemins d’extraction. `test_electronic_document` teste la configuration active, pas un brouillon inactif.
 
 ## Corriger et activer en toute sécurité
 

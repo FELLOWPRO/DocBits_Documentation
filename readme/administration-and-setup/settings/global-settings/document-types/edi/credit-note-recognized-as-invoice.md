@@ -9,11 +9,13 @@ Eine elektronische Gutschrift kann als **Invoice** erscheinen, obwohl die urspr�
 
 ## Klassifizierung elektronischer Gutschriften prüfen
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-de.mp4" %}
+Das Video zeigt eine lesende Prüfung in DocBits am Beispiel FACTURX 1.0.05 / ZUGFeRD 2.1. Zuordnungen und Versionen können in Ihrer Organisation abweichen. Prüfen Sie immer die aktive Transformation des erkannten Formats.
+
+{% file src="../../../../../.gitbook/assets/edocs-credit-note-de-v2.mp4" %}
 Klassifizierung elektronischer Gutschriften prüfen
 {% endfile %}
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-de.vtt" %}
+{% file src="../../../../../.gitbook/assets/edocs-credit-note-de-v2.vtt" %}
 WebVTT
 {% endfile %}
 

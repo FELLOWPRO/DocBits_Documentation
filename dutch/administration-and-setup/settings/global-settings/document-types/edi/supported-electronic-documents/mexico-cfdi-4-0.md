@@ -4,6 +4,12 @@ description: Ondersteuning voor MEXICO CFDI 4.0 elektronische documenten in DocB
 
 # 🇲🇽 MEXICO CFDI 4.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Mexico](countries/mexico.md). Controleer de naamruimte, versie en TipoDeComprobante. Een creditnota wordt niet alleen door een negatief bedrag geïdentificeerd; het parseren certificeert geen SAT-goedkeuring.
+{% endhint %}
+
 | Eigenschap           | Waarde                                             |
 | -------------------- | -------------------------------------------------- |
 | **Land / Regio**     | Mexico                                             |

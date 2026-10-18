@@ -1,0 +1,125 @@
+--- a/build.py
++++ b/build.py
+@@ -18,7 +18,12 @@
+ ROOT = Path(__file__).resolve().parent
+ PILOT = ("en", "de", "ja", "hu")
+ # The layouts pilot stays at four variants; users and sub_organizations cover every app locale.
+-PAGE_LOCALES = {"layouts": PILOT, "users": LOCALES, "sub_organizations": LOCALES}
++PAGE_LOCALES = {
++    "layouts": PILOT,
++    "users": LOCALES,
++    "sub_organizations": LOCALES,
++    "edocs_credit_note": ("en", "de", "es", "fr", "it", "nl", "pl", "pt", "zh"),
++}
+ 
+ 
+ def prepare(locale, out, page="layouts"):
+@@ -207,7 +212,9 @@
+         help="Immutable page version (positive integer)",
+     )
+     parser.add_argument(
+-        "--page", choices=("layouts", "users", "sub_organizations"), default="layouts"
++        "--page",
++        choices=("layouts", "users", "sub_organizations", "edocs_credit_note"),
++        default="layouts",
+     )
+     parser.add_argument("--locale", choices=LOCALES, action="append")
+     parser.add_argument("--out", type=Path, default=ROOT / "out")
+--- a/tts.py
++++ b/tts.py
+@@ -289,7 +289,9 @@
+     parser = argparse.ArgumentParser()
+     parser.add_argument("--online", action="store_true")
+     parser.add_argument(
+-        "--page", choices=("layouts", "users", "sub_organizations"), default="layouts"
++        "--page",
++        choices=("layouts", "users", "sub_organizations", "edocs_credit_note"),
++        default="layouts",
+     )
+     parser.add_argument("--locale", action="append", choices=LOCALES)
+     parser.add_argument(
+--- a/qa.py
++++ b/qa.py
+@@ -119,6 +119,7 @@
+     "layouts": ("en", "de", "ja", "hu"),
+     "users": LOCALES,
+     "sub_organizations": LOCALES,
++    "edocs_credit_note": ("en", "de", "es", "fr", "it", "nl", "pl", "pt", "zh"),
+ }
+ 
+ 
+@@ -257,7 +258,9 @@
+     parser = argparse.ArgumentParser()
+     parser.add_argument("--all", action="store_true")
+     parser.add_argument(
+-        "--page", choices=("layouts", "users", "sub_organizations"), default="layouts"
++        "--page",
++        choices=("layouts", "users", "sub_organizations", "edocs_credit_note"),
++        default="layouts",
+     )
+     parser.add_argument("--locale", action="append", choices=LOCALES)
+     parser.add_argument("--out", type=Path, default=ROOT / "out")
+--- a/manifest.py
++++ b/manifest.py
+@@ -12,6 +12,7 @@
+ ORIGIN = "https://docbits-videos.fra1.cdn.digitaloceanspaces.com"
+ PREFIX = "settings-assistant/"
+ ROUTES = {
++    "edocs_credit_note": [r"^/settings/manage-xslt/INVOICE(?:/.*)?$"],
+     "layouts": [
+         r"^/settings/doc-type-settings/[A-Za-z0-9_-]{1,128}/layouts$",
+         r"^/settings/doc-type-settings/[A-Za-z0-9_-]{1,128}/layouts/selection-rules/[A-Za-z0-9_-]{1,128}$",
+--- a/manifest.schema.json
++++ b/manifest.schema.json
+@@ -30,7 +30,7 @@
+     "pages": {
+       "type": "object",
+       "minProperties": 1,
+-      "maxProperties": 8,
++      "maxProperties": 9,
+       "propertyNames": {
+         "enum": [
+           "layouts",
+@@ -40,7 +40,8 @@
+           "lookup_configuration",
+           "master_data_mappings",
+           "users",
+-          "sub_organizations"
++          "sub_organizations",
++          "edocs_credit_note"
+         ]
+       },
+       "additionalProperties": {
+@@ -91,7 +92,7 @@
+       "properties": {
+         "key": {
+           "type": "string",
+-          "pattern": "^settings-assistant/(layouts|transformation_rules|custom_validation_rules|field_settings|lookup_configuration|master_data_mappings|sub_organizations|users)/v[1-9][0-9]*/(en|de|it|fr|es|nl|zh|bg|cs|hu|ja|ko|pl|pt|pt-br|ro|sk|sl|sv|th|tr|vi)\\.(mp4|vtt|png)$"
++          "pattern": "^settings-assistant/(edocs_credit_note|transformation_rules|custom_validation_rules|field_settings|lookup_configuration|master_data_mappings|sub_organizations|users)/v[1-9][0-9]*/(en|de|it|fr|es|nl|zh|bg|cs|hu|ja|ko|pl|pt|pt-br|ro|sk|sl|sv|th|tr|vi)\\.(mp4|vtt|png)$"
+         },
+         "sha256": {
+           "$ref": "#/$defs/hash"
+--- a/scenes/common.py
++++ b/scenes/common.py
+@@ -11,11 +11,19 @@
+ 
+ 
+ def font(locale):
+-    return "Noto Sans CJK JP" if locale == "ja" else "Noto Sans"
++    return (
++        "Noto Sans CJK SC"
++        if locale == "zh"
++        else "Noto Sans CJK JP" if locale == "ja" else "Noto Sans"
++    )
+ 
+ 
+ def check_glyphs(text, locale):
+-    name = "NotoSansCJKjp-Regular.otf" if locale == "ja" else "NotoSans-Regular.ttf"
++    name = (
++        "NotoSansCJKsc-Regular.otf"
++        if locale == "zh"
++        else "NotoSansCJKjp-Regular.otf" if locale == "ja" else "NotoSans-Regular.ttf"
++    )
+     with TTFont(ROOT / "cache/fonts" / name) as face:
+         available = set(face.getBestCmap())
+     with TTFont(ROOT / "cache/fonts/NotoSansSymbols2-Regular.ttf") as symbols:

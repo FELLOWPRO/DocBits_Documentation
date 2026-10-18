@@ -4,6 +4,12 @@ description: Prise en charge des documents électroniques KOREA E-TAX INVOICE da
 
 # 🇰🇷 KOREA E-TAX INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Corée du Sud](countries/korea.md). Les libellés ne précisent pas de version. Faites correspondre la structure XML réelle et ne considérez pas l’extraction comme une preuve d’acceptation par la plateforme fiscale.
+{% endhint %}
+
 | Propriété | Valeur |
 | --------- | ------ |
 | **Pays / Région** | Corée du Sud |

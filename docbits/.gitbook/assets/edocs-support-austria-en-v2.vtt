@@ -1,0 +1,40 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:09.201
+ebInterface 4.3, 5.0, 6.0 and 6.1 have
+separate entries. Match the XML namespace
+
+formats_02
+00:00:09.201 --> 00:00:13.900
+to the configured version. A different
+namespace can require another mapping.
+
+workflow_01
+00:00:14.650 --> 00:00:19.143
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:19.143 --> 00:00:24.205
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:24.205 --> 00:00:25.233
+activate it.
+
+accept_01
+00:00:25.983 --> 00:00:30.743
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:30.743 --> 00:00:35.747
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:35.747 --> 00:00:36.700
+delivery.
+

@@ -35,3 +35,7 @@ This only applies to documents identified as **credit notes**. Normal invoices a
 
 * **Keep it enabled** if your accounting or ERP system expects credit notes to arrive with negative amounts (this is the most common setup).
 * **Disable it** only if your downstream system already handles the sign itself, or expects credit note amounts to stay positive.
+
+## Wrong document type?
+
+This setting depends on correct credit note classification. If an eDoc is stored as Invoice, first check the transformation, Extraction Paths and later scripts. Follow the [classification troubleshooting guide](../../global-settings/document-types/edi/credit-note-recognized-as-invoice.md) before changing signs or restarting existing documents.

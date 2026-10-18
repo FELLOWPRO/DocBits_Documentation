@@ -17,3 +17,11 @@ In Docbits bieden de EDI-instellingen tools voor het definiëren en beheren van 
    * Gebruikt voor het bewerken en valideren van de XSLT (eXtensible Stylesheet Language Transformations) die wordt gebruikt in het transformatieproces. XSLT is een krachtige taal die is ontworpen voor het transformeren van XML-documenten naar andere XML-documenten of andere formaten zoals HTML, tekst of zelfs andere XML-structuren.
 
 <figure><img src="../../../../../.gitbook/assets/e-docs.jpg" alt=""><figcaption></figcaption></figure>
+
+## Effectieve regels en activering
+
+Als een elektronische creditnota als Invoice verschijnt, volg dan de [handleiding voor het oplossen van classificatieproblemen](credit-note-recognized-as-invoice.md). Deze behandelt de effectieve aangepaste of standaardbron, typecodes, Extraction Paths en veilige activering.
+
+## Landengidsen
+
+Raadpleeg de landengidsen voor exacte formaatlabels, syntaxis, versiebeperkingen en de onderzochte configuratiestatus. [eDocs-formaten, versies en landengidsen](supported-electronic-documents/README.md).

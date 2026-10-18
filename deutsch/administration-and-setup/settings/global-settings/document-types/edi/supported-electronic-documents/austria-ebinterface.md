@@ -4,6 +4,12 @@ description: Unterstützung für das elektronische Dokument AUSTRIA EBINTERFACE 
 
 # 🇦🇹 AUSTRIA EBINTERFACE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Österreich](countries/austria.md). Gleichen Sie den XML-Namespace mit der konfigurierten Version ab. Ein anderer Namespace kann eine andere Zuordnung erfordern.
+{% endhint %}
+
 | Eigenschaft | Wert |
 |-------------|------|
 | **Land / Region** | Austria |

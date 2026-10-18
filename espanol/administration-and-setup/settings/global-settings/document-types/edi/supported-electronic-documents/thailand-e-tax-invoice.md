@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico THAILAND E-
 
 # 🇹🇭 THAILAND E-TAX INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Tailandia](countries/thailand.md). La etiqueta no indica una publicación. Confirme la estructura XML de origen. La verificación de firmas y la entrega a la plataforma tributaria requieren comprobaciones independientes.
+{% endhint %}
+
 | Propiedad              | Valor                                          |
 | ---------------------- | ---------------------------------------------- |
 | **País / Región**      | Tailandia                                      |

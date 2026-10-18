@@ -4,11 +4,17 @@ description: Ondersteuning voor MYINVOIS elektronische documenten in DocBits
 
 # 🇲🇾 MYINVOIS
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Maleisië](countries/malaysia.md). De onderzochte extractieroute is gebaseerd op XML. Het nationale platform accepteert ook JSON, maar dat bevestigt geen JSON-importondersteuning in deze DocBits-toewijzing.
+{% endhint %}
+
 | Eigenschap           | Waarde                                                          |
 | -------------------- | --------------------------------------------------------------- |
 | **Land / Regio**     | Maleisië                                                        |
 | **Documenttypen**    | Factuur, Creditnota, Debetnota, Zelffacturatie-factuur          |
-| **Formaat**          | UBL 2.1 XML / JSON                                              |
+| **Formaat**          | UBL 2.1 XML                                              |
 | **Standaard**        | MyInvois (LHDN - Lembaga Hasil Dalam Negeri)                    |
 
 MyInvois is het e-factureringssysteem van Maleisië, beheerd door de Inland Revenue Board (LHDN). Het is sinds augustus 2024 van kracht voor grote ondernemingen en vereist dat alle facturen ter validatie worden ingediend bij het MyInvois-portaal, waarna ze een unieke identificatie ontvangen. Het systeem gebruikt UBL 2.1 en ondersteunt zowel XML- als JSON-indieningsformaten.

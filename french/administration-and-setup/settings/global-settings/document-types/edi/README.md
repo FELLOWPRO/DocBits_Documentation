@@ -21,3 +21,11 @@ In Docbits, the EDI settings provide tools for defining and managing the structu
    * Used for editing and validating the XSLT (eXtensible Stylesheet Language Transformations) used in the transformation process. XSLT is a powerful language designed for transforming XML documents into other XML documents or other formats like HTML, text, or even other XML structures.
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.49.59.png" alt=""><figcaption></figcaption></figure>
+
+## Règles effectivement utilisées et activation
+
+Si un avoir électronique apparaît comme Invoice, suivez le [guide de diagnostic de la classification](credit-note-recognized-as-invoice.md). Il couvre la source personnalisée ou par défaut effectivement utilisée, les codes de type, Extraction Paths et l’activation en toute sécurité.
+
+## Guides par pays
+
+Consultez les guides par pays pour connaître les libellés exacts des formats, la syntaxe, les limites de version et l’état de configuration examiné. [Formats eDocs, versions et guides par pays](supported-electronic-documents/README.md).

@@ -4,6 +4,12 @@ description: ARGENTINA FACTURA ELECTRONICA electronic document support in DocBit
 
 # 🇦🇷 ARGENTINA FACTURA ELECTRONICA
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Argentina](countries/argentina.md). The credit-note classification entry has no dedicated extraction bundle in the inspected status. Verify the effective mapping and test a real credit-note sample.
+{% endhint %}
+
 | Property             | Value                                                                   |
 | -------------------- | ----------------------------------------------------------------------- |
 | **Country / Region** | Argentina                                                               |

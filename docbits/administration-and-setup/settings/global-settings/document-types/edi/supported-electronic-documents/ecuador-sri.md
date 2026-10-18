@@ -6,6 +6,12 @@ description: >-
 
 # 🇪🇨 ECUADOR SRI
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Ecuador](countries/ecuador.md). The credit-note classification entry has no dedicated extraction bundle in the inspected status. Check the effective mapping and the source document type.
+{% endhint %}
+
 | Property             | Value                                                                                          |
 | -------------------- | ---------------------------------------------------------------------------------------------- |
 | **Country / Region** | Ecuador                                                                                        |

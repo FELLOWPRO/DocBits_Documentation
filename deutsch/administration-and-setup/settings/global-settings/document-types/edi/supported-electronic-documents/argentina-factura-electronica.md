@@ -4,6 +4,12 @@ description: Unterstützung des elektronischen Dokuments ARGENTINA FACTURA ELECT
 
 # 🇦🇷 ARGENTINA FACTURA ELECTRONICA
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Argentinien](countries/argentina.md). Für den Gutschrift-Klassifizierungseintrag ist im geprüften Status kein eigenes Extraktionspaket ausgewiesen. Prüfen Sie die tatsächlich verwendete Zuordnung und testen Sie ein echtes Gutschriftbeispiel.
+{% endhint %}
+
 | Eigenschaft          | Wert                                                                    |
 | -------------------- | ----------------------------------------------------------------------- |
 | **Land / Region**    | Argentinien                                                             |

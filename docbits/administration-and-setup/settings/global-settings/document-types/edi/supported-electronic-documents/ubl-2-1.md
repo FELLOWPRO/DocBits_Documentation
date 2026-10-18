@@ -4,6 +4,12 @@ description: UBL 2.1 electronic document support in DocBits
 
 # UBL 2.1
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [International](countries/international.md). Invoice, order, response and despatch mappings are distinct. File processing does not itself provide a Peppol access point or trading-partner connectivity.
+{% endhint %}
+
 | Property             | Value                                        |
 | -------------------- | -------------------------------------------- |
 | **Country / Region** | International                                |

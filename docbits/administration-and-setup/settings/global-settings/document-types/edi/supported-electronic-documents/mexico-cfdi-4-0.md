@@ -4,6 +4,12 @@ description: MEXICO CFDI 4.0 electronic document support in DocBits
 
 # 🇲🇽 MEXICO CFDI 4.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Mexico](countries/mexico.md). Check the namespace, version and TipoDeComprobante. A credit-note document is not identified by a negative amount alone; parsing does not certify SAT clearance.
+{% endhint %}
+
 | Property             | Value                                              |
 | -------------------- | -------------------------------------------------- |
 | **Country / Region** | Mexico                                             |

@@ -4,6 +4,12 @@ description: Supporto documenti elettronici UBL 2.1 in DocBits
 
 # UBL 2.1
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Internazionale](countries/international.md). Le mappature per fatture, ordini, risposte e avvisi di spedizione sono distinte. L’elaborazione dei file non fornisce, di per sé, un punto di accesso Peppol o la connettività con i partner commerciali.
+{% endhint %}
+
 | Proprietà             | Valore                                       |
 | --------------------- | -------------------------------------------- |
 | **Paese / Regione**   | Internazionale                               |

@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.033
+Indonesia E-Faktur ist die konfigurierte
+Familie. Der Eintrag nennt keine
+
+formats_02
+00:00:05.033 --> 00:00:10.653
+Veröffentlichungsnummer. Bestätigen Sie
+den tatsächlichen XML-Dateninhalt. Eine
+
+formats_03
+00:00:10.653 --> 00:00:15.333
+gedruckte Rechnung oder ein QR-Bild belegt
+keine XML-Unterstützung.
+
+workflow_01
+00:00:16.083 --> 00:00:21.389
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:21.389 --> 00:00:28.099
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:28.099 --> 00:00:29.733
+aktiviert ihn nicht.
+
+accept_01
+00:00:30.483 --> 00:00:35.115
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:35.115 --> 00:00:41.245
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:41.245 --> 00:00:44.367
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

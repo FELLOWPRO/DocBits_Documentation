@@ -139,3 +139,5 @@ Toute tentative d'écriture sur `00000000-0000-0000-0000-000000000000` renvoie :
   "detail": "Writing to the default org is forbidden via MCP. Default rules are immutable and shared across all customers."
 }
 ```
+
+[Configurer DocBits avec Claude ou Codex](../configuration-with-claude-or-codex.md) : connexion, prompts, aperçus, modifications versionnées, contrôles et retour arrière.

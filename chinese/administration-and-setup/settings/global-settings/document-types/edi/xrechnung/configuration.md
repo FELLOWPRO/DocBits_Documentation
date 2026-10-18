@@ -97,3 +97,7 @@ DocBits 电子发票教程：处理 XRechnung / ZUGFeRD (Factur-X)、验证数�
 ```json
 "shipping_address": "//INVOICE/SHIPPING/ADDRESS/text()"
 ```
+
+## 实际生效的规则与激活
+
+对于检测出的 eDoc 格式，组织专属规则优先于默认规则。请检查活动的 TRANSFORMATION，并确认转换后 XML 中哪个节点提供 invoice_type；路径取决于格式。Save 只保存草稿；测试后需使用勾号激活。渲染后的 Preview 不能证明已保存的文档类型正确。有关代码 381/261、后续脚本和重新处理的注意事项，请参阅[分类故障排查指南](../credit-note-recognized-as-invoice.md)。

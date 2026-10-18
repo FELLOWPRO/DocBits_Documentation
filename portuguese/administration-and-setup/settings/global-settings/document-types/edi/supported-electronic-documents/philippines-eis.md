@@ -4,6 +4,12 @@ description: Suporte para documentos eletrônicos PHILIPPINES EIS no DocBits
 
 # 🇵🇭 PHILIPPINES EIS
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [Filipinas](countries/philippines.md). A designação não indica uma edição. Verifique o esquema do conteúdo e o tipo de documento aplicável antes de depender de uma designação EIS genérica.
+{% endhint %}
+
 | Propriedade          | Valor                                   |
 | -------------------- | --------------------------------------- |
 | **País / Região**    | Filipinas                               |

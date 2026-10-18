@@ -4,6 +4,12 @@ description: Prise en charge du document électronique FINVOICE 2.01 dans DocBit
 
 # 🇫🇮 FINVOICE 2.01
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Finlande](countries/finland.md). Vérifiez la version source avant de choisir une correspondance. Le libellé TEAPPSXML ne précise pas de version.
+{% endhint %}
+
 | Propriété              | Valeur                    |
 | ---------------------- | ------------------------- |
 | **Pays / Région**      | Finlande                  |

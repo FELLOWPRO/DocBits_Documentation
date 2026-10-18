@@ -4,6 +4,12 @@ description: PARAGUAY DTE elektronische Dokumentenunterstützung in DocBits
 
 # 🇵🇾 PARAGUAY DTE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Paraguay](countries/paraguay.md). Für die Gutschrift-Klassifizierungseinträge sind im geprüften Status keine eigenen Extraktionspakete ausgewiesen. Prüfen Sie die tatsächlich verwendete Zuordnung und betrachten Sie die Bezeichnungen nicht als austauschbar.
+{% endhint %}
+
 | Eigenschaft          | Wert                                   |
 | -------------------- | -------------------------------------- |
 | **Land / Region**    | Paraguay                               |

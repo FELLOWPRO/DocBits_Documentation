@@ -4,6 +4,12 @@ description: Prise en charge des documents électroniques China Fapiao (FAPIAO, 
 
 # 🇨🇳 China Fapiao
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Chine](countries/china.md). L’adaptateur documenté utilise l’espace de noms XML urn:china:tax:fapiao:1.0. Ne supposez pas que chaque fichier OFD natif, PDF ou export de plateforme fiscale respecte ce contrat.
+{% endhint %}
+
 | Propriété | Valeur |
 |----------|-------|
 | **Pays / Région** | China |
@@ -12,7 +18,7 @@ description: Prise en charge des documents électroniques China Fapiao (FAPIAO, 
 | **Norme** | Fapiao (发票), State Taxation Administration |
 | **Locale** | `zh_CN` |
 
-Fapiao (发票) est la norme de facture fiscale chinoise émise sous l'autorité de la State Taxation Administration (STA / 国家税务总局). Tous les documents Fapiao partagent le namespace `urn:china:tax:fapiao:1.0`. DocBits détecte automatiquement le type de Fapiao via l'élément `fapiao_type` et achemine vers les règles d'extraction appropriées :
+Le catalogue comprend Fapiao, E-Fapiao, General VAT Invoice et Special VAT Invoice. L’adaptateur documenté utilise l’espace de noms XML urn:china:tax:fapiao:1.0. Ne supposez pas que chaque fichier OFD natif, PDF ou export de plateforme fiscale respecte ce contrat.
 
 | Valeur fapiao_type | Type de document |
 |-------------------|--------------|

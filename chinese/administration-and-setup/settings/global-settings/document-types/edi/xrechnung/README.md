@@ -32,3 +32,7 @@ XRechnung 文档到 ERP 系统的数据流包括以下步骤：
 * **UN/CEFACT CII**：XRechnung CII XML 结构的基础。
 * **OAGIS/OASIS**：Infor BOD 所采用的标准。
 * **EN 16931**：欧洲电子发票标准。
+
+## 国家指南
+
+请参阅国家指南，了解准确格式名称、语法、版本限制和已检查的配置状态。 [eDocs 格式、版本和国家指南](../supported-electronic-documents/README.md).

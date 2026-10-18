@@ -4,6 +4,12 @@ description: XRECHNUNG 3.0.1 UBL electronic document support in DocBits
 
 # 🇩🇪 XRECHNUNG 3.0.1 UBL
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Germany](countries/germany.md). Syntax, publication version and profile are different choices. Do not infer a Factur-X publication from the shared 1p0 marker.
+{% endhint %}
+
 | Property             | Value                    |
 | -------------------- | ------------------------ |
 | **Country / Region** | Germany                  |

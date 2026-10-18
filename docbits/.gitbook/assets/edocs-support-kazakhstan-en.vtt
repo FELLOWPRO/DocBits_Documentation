@@ -1,0 +1,44 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.266
+Kazakhstan ESF is the configured family.
+The label does not state a release.
+
+formats_02
+00:00:05.266 --> 00:00:10.629
+Confirm the actual XML schema and do not
+infer tax-platform transmission from
+
+formats_03
+00:00:10.629 --> 00:00:12.167
+extraction support.
+
+workflow_01
+00:00:12.917 --> 00:00:17.410
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:17.410 --> 00:00:22.472
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:22.472 --> 00:00:23.500
+activate it.
+
+accept_01
+00:00:24.250 --> 00:00:29.010
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:29.010 --> 00:00:34.014
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:34.014 --> 00:00:34.967
+delivery.
+

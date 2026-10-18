@@ -1,0 +1,19 @@
+{
+  "locale": "pt",
+  "country": "brazil",
+  "request_hash": "33aa712633c60718469323ff23f968ecbe485d3637ab510197690c4008bd0f46",
+  "state": "submitting",
+  "request_id": null,
+  "submission_started_at": "2026-10-18T12:47:58.125141+00:00",
+  "failure": "Remote end closed connection without response",
+  "checkpoint_sha256": "26494f76acbe69a495cc459aa6d46f47cdd062af829de71c1bb76d407cb466b9",
+  "request_sha256": "d9929b6b8682dff9500c1288855506c88a08f1975f29a23271427ac7e5c030c6",
+  "resubmitted": false,
+  "status": "Unresolved; do not resubmit before reconciliation.",
+  "reconciliation": {
+    "provider_signals_enabled": false,
+    "session_window_start": "2026-10-18T12:45:00Z",
+    "session_window_end": "2026-10-18T12:51:00Z",
+    "matching_sessions": 0
+  }
+}

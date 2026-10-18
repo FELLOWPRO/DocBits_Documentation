@@ -4,6 +4,12 @@ description: "DocBits 对 SVEFAKTURA 1.0 电子文档的支持"
 
 # 🇸🇪 SVEFAKTURA 1.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。 [瑞典](countries/sweden.md). 请区分这个早期格式系列与 Peppol BIS Billing 3.0，并确认接收方要求的业务规范。
+{% endhint %}
+
 | 属性                 | 值             |
 | -------------------- | -------------- |
 | **国家 / 地区**      | 瑞典           |

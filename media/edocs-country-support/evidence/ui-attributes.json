@@ -1,0 +1,3628 @@
+{
+  "ARGENTINA AFIP": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "ARGENTINA FACTURA ELECTRONICA": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": false
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "BOD": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": false
+    }
+  ],
+  "BRAZIL CT-E": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": false
+    }
+  ],
+  "BRAZIL NF-E": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": false
+    }
+  ],
+  "BRAZIL NF-E (Import)": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "BRAZIL NFC-E": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "BRAZIL NFS-E": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "BRAZIL NFS-E 1.00": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "BRAZIL NFS-E 2.00": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "BRAZIL NFS-E 2.01": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "BRAZIL NFS-E 2.02": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "BRAZIL NFS-E 2.03": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "BRAZIL NFS-E 2.04": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "BRAZIL SPED NFS-E 1.00.02": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "BRAZIL SPED NFS-E 1.01": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "CHILE DTE": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "CHILE DTE FACTURA": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "CHILE FACTURA ELECTRONICA": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "CHINA E-FAPIAO": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "CHINA FAPIAO": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "CHINA GENERAL VAT INVOICE": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "CHINA SPECIAL VAT INVOICE": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "COLOMBIA DOCUMENTO SOPORTE": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "COLOMBIA FACTURA ELECTRONICA": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "E-SLOG 1.6": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "E-SLOG 2.0": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "EBINTERFACE 4.3": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "EBINTERFACE 5.0": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "EBINTERFACE 6.0": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "EBINTERFACE 6.1": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "ECUADOR FACTURA ELECTRONICA": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "ECUADOR SRI": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "ECUADOR SRI 1.0.0": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "ECUADOR SRI 1.1.0": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "ECUADOR SRI 2.0.0": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "ECUADOR SRI 2.1.0": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "EDI": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": false
+    },
+    {
+      "attribute_name": "STRUCTURE_DESCRIPTOR",
+      "attribute_type": "JSON",
+      "is_default": false
+    }
+  ],
+  "EDNA UTILITY CII": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "EHF INVOICE 3.0": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "FACTURAE": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "FACTURAE 3.2": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "FACTURAE 3.2.1": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "FACTURAE 3.2.2": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "FACTURX": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.05 - ZUGFERD 2.1": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.05 BASIC": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.05 BASIC WL": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.05 EN16931": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.05 EXTENDED": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.05 MINIMUM": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.06 BASIC": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.06 BASIC WL": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.06 EN16931": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.06 EXTENDED": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.06 MINIMUM": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.07 BASIC": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.07 BASIC WL": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.07 EN16931": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.07 EXTENDED": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.07 MINIMUM": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.07.2 - ZUGFERD 2.3.2": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.07.2 BASIC": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.07.2 BASIC WL": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.07.2 EN16931": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.07.2 EXTENDED": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.0.07.2 MINIMUM": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.08 - ZUGFERD 2.4": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.08 BASIC": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.08 BASIC WL": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.08 EN16931": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.08 EXTENDED": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.08 MINIMUM": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.09 - ZUGFERD 2.5": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.09 BASIC": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.09 BASIC WL": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.09 EN16931": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.09 EXTENDED": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FACTURX 1.09 MINIMUM": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "FATTURAPA": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "FINVOICE 1.3": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "FINVOICE 2.0": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "FINVOICE 2.01": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "FINVOICE 3.0": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "INDIA GST E-INVOICE": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "INDONESIA E-FAKTUR": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "INVOIC02": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "INVOICENOW": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "INVOICENOW SG": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "JP PINT": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "JP PINT SELF-BILLING": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "KAZAKHSTAN ESF": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "KOREA E-TAX INVOICE": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "KOREA NTS": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "KSEF": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "KSEF FA2": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    }
+  ],
+  "KSEF FA3": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "MEXICO CFDI 3.3": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "MEXICO CFDI 4.0": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "MYINVOIS": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "OIOUBL 2.1": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PARAGUAY DTE": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PARAGUAY SIFEN": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PARAGUAY SIFEN 150": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PEPPOL BIS 3.0": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PERU CPE": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PERU CPE UBL 2.0": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PERU CPE UBL 2.1": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PERU FACTURA ELECTRONICA": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PHILIPPINES EIS": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PINT A-NZ": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PURE CII D16B EU": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PURE CII D16B NON-EU": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PURE CII D22B EU": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PURE CII D22B NON-EU": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PURE CII D23B EU": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PURE CII D23B NON-EU": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PURE CII D24B EU": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PURE CII D24B NON-EU": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PURE CII V1 EU": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "PURE CII V1 NON-EU": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "SI-UBL 2.0": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "SPS COMMERCE RSX 7.7.4": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "SVEFAKTURA 1.0": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "TAIWAN EGUI": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "TEAPPSXML": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "THAILAND E-TAX INVOICE": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "TURKEY E-ARSIV": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "TURKEY E-FATURA": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "UAE VAT INVOICE": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "UBL 2.1": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "URUGUAY CFE": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "URUGUAY CFE 24": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "URUGUAY CFE 25": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "URUGUAY E-FACTURA": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "URUGUAY E-NOTA CREDITO": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "VIETNAM E-INVOICE": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "VRBL FR CIUS 1.0": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 1.0 CII": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 1.0 UBL": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 1.1 CII": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 1.1 UBL": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 1.2 CII": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 1.2 UBL": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": false
+    }
+  ],
+  "XRECHNUNG 1.2.1 CII": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 1.2.1 UBL": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": false
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 1.2.2 CII": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 1.2.2 UBL": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 2.0 CII": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 2.0 UBL": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 2.0.1 CII": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 2.0.1 UBL": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 2.1 CII": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 2.1 UBL": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": false
+    }
+  ],
+  "XRECHNUNG 2.2 CII": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": false
+    }
+  ],
+  "XRECHNUNG 2.2 UBL": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 2.3 CII": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 2.3 UBL": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 3.0 CII": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 3.0 UBL": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 3.0.1 CII": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 3.0.1 UBL": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 3.0.2 CII": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "XRECHNUNG 3.0.2 UBL": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    }
+  ],
+  "ZATCA FATOORAH": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "ZATCA REPORTING": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "ZATCA SIMPLIFIED": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZATCA TAX INVOICE": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 1.0": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 1.0 BASIC": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 1.0 COMFORT": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 1.0 EXTENDED": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.1 BASIC": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.1 BASIC WL": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.1 EN16931": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.1 EXTENDED": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.1 MINIMUM": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.2": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.2 BASIC": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.2 BASIC WL": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.2 EN16931": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": false
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.2 EXTENDED": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.2 MINIMUM": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.3": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.3 BASIC": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.3 BASIC WL": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.3 EN16931": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.3 EXTENDED": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.3 MINIMUM": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.3.2": [
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.3.2 BASIC": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.3.2 BASIC WL": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.3.2 EN16931": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.3.2 EXTENDED": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.3.2 MINIMUM": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.4": [
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    },
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.4 BASIC": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.4 BASIC WL": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.4 EN16931": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.4 EXTENDED": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.4 MINIMUM": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.5 CII": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.5 CII BASIC": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.5 CII BASIC WL": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.5 CII EN16931": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.5 CII EXTENDED": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.5 CII MINIMUM": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.5 UBL": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.5 UBL BASIC": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.5 UBL BASIC WL": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.5 UBL EN16931": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.5 UBL EXTENDED": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ],
+  "ZUGFERD 2.5 UBL MINIMUM": [
+    {
+      "attribute_name": "PREVIEW",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "TRANSFORMATION",
+      "attribute_type": "XSLT",
+      "is_default": true
+    },
+    {
+      "attribute_name": "EXTRACTION_PATHS",
+      "attribute_type": "JSON",
+      "is_default": true
+    }
+  ]
+}

@@ -4,6 +4,12 @@ description: Soporte de documentos electrónicos URUGUAY E-FACTURA en DocBits
 
 # 🇺🇾 URUGUAY E-FACTURA
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Uruguay](countries/uruguay.md). Las entradas de notas de crédito carecen de paquetes de extracción dedicados en el estado inspeccionado. Confirme la versión CFE y la asignación de factura o nota de crédito utilizada.
+{% endhint %}
+
 | Propiedad            | Valor                    |
 | -------------------- | ------------------------ |
 | **País / Región**    | Uruguay                  |

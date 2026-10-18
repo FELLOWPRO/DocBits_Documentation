@@ -1,30 +1,16 @@
 ---
-description: Ondersteuning voor COSTA RICA elektronisch document in DocBits
+description: "De oudere documentatie noemt Costa Rica, maar in de onderzochte ontwikkelcatalogus is geen overeenkomende classificatie- of configuratievermelding gevonden."
 ---
 
 # 🇨🇷 COSTA RICA
 
-| Eigenschap | Waarde |
-|------------|--------|
-| **Land / Regio** | Costa Rica |
-| **Documenttypen** | Factuur (Factura Electrónica), Creditnota, Debetnota |
-| **Formaat** | XML |
-| **Standaard** | Factura Electrónica (Ministerio de Hacienda) |
 
-Het elektronische factureringssysteem van Costa Rica wordt gereguleerd door het Ministerio de Hacienda. Elektronische documenten moeten ter validatie worden ingediend bij het Hacienda-platform en bevatten een digitale handtekening. DocBits kan Costa Ricaanse elektronische facturen verwerken en de belangrijkste velden extraheren.
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Costa Rica](countries/costa-rica.md). Deze controle bevestigt geen huidige ingebouwde verwerking. Vraag support om de uitgerolde toewijzing te controleren en test vóór de uitrol een representatief bronbestand.
+{% endhint %}
 
-## Ondersteuningsstatus
+De oudere documentatie noemt Costa Rica, maar in de onderzochte ontwikkelcatalogus is geen overeenkomende classificatie- of configuratievermelding gevonden.
 
-| Component | Status |
-|-----------|--------|
-| Voorvertoning | ✅ Ondersteund |
-| Veldextractie | ✅ Ondersteund |
-| Transformatie | N.v.t. |
+Deze controle bevestigt geen huidige ingebouwde verwerking. Vraag support om de uitgerolde toewijzing te controleren en test vóór de uitrol een representatief bronbestand.
 
-## Standaard voorvertoning
-
-<figure><img src="../../../../../../.gitbook/assets/costa-rica-preview.png" alt="Voorvertoning van een Costa Ricaanse e-factuur in DocBits"><figcaption><p>Standaard DocBits-voorvertoning voor een Costa Ricaanse e-factuur</p></figcaption></figure>
-
-## Gerelateerd
-
-* [Ondersteunde elektronische documenten](./)
+[Costa Rica](countries/costa-rica.md)

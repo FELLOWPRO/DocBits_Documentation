@@ -4,6 +4,12 @@ description: Prise en charge des documents électroniques MEXICO CFDI 3.3 dans D
 
 # 🇲🇽 MEXICO CFDI 3.3
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Mexique](countries/mexico.md). Vérifiez l’espace de noms, la version et TipoDeComprobante. Un montant négatif ne suffit pas à identifier un avoir ; l’analyse du fichier ne certifie pas la validation par le SAT.
+{% endhint %}
+
 | Propriété | Valeur |
 | --------- | ------ |
 | **Pays / Région** | Mexique |

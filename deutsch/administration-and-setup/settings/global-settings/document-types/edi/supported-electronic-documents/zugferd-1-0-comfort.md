@@ -4,6 +4,12 @@ description: Unterstützung für das elektronische Dokument ZUGFERD 1.0 COMFORT 
 
 # 🇩🇪 ZUGFERD 1.0 COMFORT
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Deutschland](countries/germany.md). Syntax, Veröffentlichungsversion und Profil sind unterschiedliche Auswahlmerkmale. Leiten Sie aus der gemeinsamen Kennung 1p0 keine Factur-X-Veröffentlichung ab.
+{% endhint %}
+
 | Eigenschaft | Wert |
 |---|---|
 | **Land / Region** | Germany |

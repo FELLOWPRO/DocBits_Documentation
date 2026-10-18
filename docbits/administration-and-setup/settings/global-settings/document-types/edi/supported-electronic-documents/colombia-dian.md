@@ -6,6 +6,12 @@ description: >-
 
 # 🇨🇴 COLOMBIA DIAN
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Colombia](countries/colombia.md). The credit-note classification entry has no dedicated extraction bundle in the inspected status. Confirm the effective mapping instead of inferring support from the invoice entry.
+{% endhint %}
+
 | Property             | Value                                                                           |
 | -------------------- | ------------------------------------------------------------------------------- |
 | **Country / Region** | Colombia                                                                        |

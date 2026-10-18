@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:04.917
+Chile DTE possède des entrées de facture,
+d’avoir et de guide d’expédition.
+
+formats_02
+00:00:04.917 --> 00:00:10.200
+Sélectionnez le type de document métier
+avant de vérifier les champs. La facture,
+
+formats_03
+00:00:10.200 --> 00:00:15.133
+l’avoir et les informations de livraison
+utilisent des correspondances différentes.
+
+workflow_01
+00:00:15.883 --> 00:00:21.653
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:21.653 --> 00:00:27.563
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:27.563 --> 00:00:28.633
+l’active pas.
+
+accept_01
+00:00:29.383 --> 00:00:34.364
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:34.364 --> 00:00:40.041
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:40.041 --> 00:00:43.233
+la validation fiscale ni la transmission
+réseau.
+

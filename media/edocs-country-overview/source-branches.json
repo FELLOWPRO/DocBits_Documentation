@@ -1,0 +1,99 @@
+{
+  "de": {
+    "branch": "codex/trl72-edocs-de",
+    "parent": "c5ccc3bf9d5c3b8145344a3aecd5c3d38de2fe1a",
+    "commit": "07d5c8dc3a83b7830541fb3f6c02294039211d80",
+    "changed_paths": [
+      "administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/roadmap.md",
+      "SUMMARY.md"
+    ],
+    "mirror_parity": "passed"
+  },
+  "es": {
+    "branch": "codex/trl72-edocs-es",
+    "parent": "29f46146dfb417e1c7569179a2d5da41d770c82c",
+    "commit": "23a2a9b9050135340e313fe149aa64395d69f7ee",
+    "changed_paths": [
+      "administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/roadmap.md",
+      "SUMMARY.md"
+    ],
+    "mirror_parity": "passed"
+  },
+  "fr": {
+    "branch": "codex/trl72-edocs-fr",
+    "parent": "7cf15ea44d63a2a05aff30063687d5461e118f9a",
+    "commit": "ea746308ad9cae95ffea471707e38feb0d65dc11",
+    "changed_paths": [
+      "administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/roadmap.md",
+      "SUMMARY.md"
+    ],
+    "mirror_parity": "passed"
+  },
+  "it": {
+    "branch": "codex/trl72-edocs-it",
+    "parent": "5f262cf9ade2c0e9a9b1f7aa167b6f8446e27db5",
+    "commit": "04eb486c24e30afbe2ccf2d36a52057b9aa2b6e4",
+    "changed_paths": [
+      "administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/roadmap.md",
+      "SUMMARY.md"
+    ],
+    "mirror_parity": "passed"
+  },
+  "nl": {
+    "branch": "codex/trl72-edocs-nl",
+    "parent": "2995e13762d44bd30e237fd8028918deae7bc8dd",
+    "commit": "49efb1a54897a12472b0a387b546b7e1b5e02475",
+    "changed_paths": [
+      "administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/roadmap.md",
+      "SUMMARY.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/countries/vietnam.md"
+    ],
+    "mirror_parity": "passed"
+  },
+  "pl": {
+    "branch": "codex/trl72-edocs-pl",
+    "parent": "5934e4829190e4c2ee53c5a427a96c9c73801646",
+    "commit": "48412984fe577a762c875a12fdbf3b89f2c2a6ca",
+    "changed_paths": [
+      "administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/roadmap.md",
+      "SUMMARY.md"
+    ],
+    "mirror_parity": "passed"
+  },
+  "pt": {
+    "branch": "codex/trl72-edocs-pt",
+    "parent": "81ff28f943372b7817616c43b50de8483f0bad8b",
+    "commit": "534d17e5bf86fccbbbfabac35db4e2cf20cb22f2",
+    "changed_paths": [
+      "administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/roadmap.md",
+      "SUMMARY.md"
+    ],
+    "mirror_parity": "passed"
+  },
+  "zh": {
+    "branch": "codex/trl72-edocs-zh",
+    "parent": "ed60cc3c6abf1167c7a9516471041b0a3ec29da2",
+    "commit": "30805ce171da9d7b8723c7ed4aa338cd5096bc59",
+    "changed_paths": [
+      "administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md",
+      "administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/roadmap.md",
+      "SUMMARY.md"
+    ],
+    "mirror_parity": "passed"
+  }
+}

@@ -4,6 +4,12 @@ description: Obsługa dokumentu elektronicznego SI-UBL 2.0 w DocBits
 
 # 🇳🇱 SI-UBL 2.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Niderlandy](countries/netherlands.md). Plik UBL nie jest automatycznie plikiem SI-UBL 2.0. Sprawdź jego identyfikator dostosowania i pasujące mapowanie krajowe.
+{% endhint %}
+
 | Właściwość | Wartość |
 | ---------- | ------- |
 | **Kraj/Region** | Holandia |

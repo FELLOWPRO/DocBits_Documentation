@@ -1,0 +1,49 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:08.167
+Factur-X has generic and release-specific
+entries, including 1.0.05, 1.08 and 1.09.
+
+formats_02
+00:00:08.167 --> 00:00:15.797
+VRBL FR CIUS 1.0 is separate. The XML
+marker 1p0 and Factur-X XMP Version 1.0 do
+
+formats_03
+00:00:15.797 --> 00:00:23.237
+not identify a publication release. Keep
+the generic label when the release is
+
+formats_04
+00:00:23.237 --> 00:00:24.000
+unknown.
+
+workflow_01
+00:00:24.750 --> 00:00:29.243
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:29.243 --> 00:00:34.305
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:34.305 --> 00:00:35.333
+activate it.
+
+accept_01
+00:00:36.083 --> 00:00:40.843
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:40.843 --> 00:00:45.847
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:45.847 --> 00:00:46.800
+delivery.
+

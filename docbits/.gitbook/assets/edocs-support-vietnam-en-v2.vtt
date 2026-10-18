@@ -1,0 +1,44 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.695
+Vietnam E-Invoice is the configured
+family. The label does not name a release.
+
+formats_02
+00:00:05.695 --> 00:00:10.594
+Check the source namespace and schema
+instead of assuming that all tax-platform
+
+formats_03
+00:00:10.594 --> 00:00:12.900
+exports have the same structure.
+
+workflow_01
+00:00:13.650 --> 00:00:18.143
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:18.143 --> 00:00:23.205
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:23.205 --> 00:00:24.233
+activate it.
+
+accept_01
+00:00:24.983 --> 00:00:29.743
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:29.743 --> 00:00:34.747
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:34.747 --> 00:00:35.700
+delivery.
+

@@ -4,6 +4,12 @@ description: Prise en charge du document électronique ZATCA TAX INVOICE dans Do
 
 # 🇸🇦 ZATCA TAX INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Arabie saoudite](countries/saudi-arabia.md). Ces libellés décrivent des processus et variantes de facture différents. L’analyse du fichier ne prouve ni la signature, ni la validation fiscale, ni la déclaration via ZATCA.
+{% endhint %}
+
 | Propriété              | Valeur                     |
 | ---------------------- | -------------------------- |
 | **Pays / Région**      | Saudi Arabia               |

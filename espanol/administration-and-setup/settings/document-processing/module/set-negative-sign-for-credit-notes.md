@@ -35,3 +35,7 @@ Esto solo se aplica a los documentos identificados como **notas de crédito**. L
 
 * **Manténgala activada** si su sistema contable o ERP espera que las notas de crédito lleguen con importes negativos (esta es la configuración más habitual).
 * **Desactívela** solo si su sistema posterior ya gestiona el signo por sí mismo o espera que los importes de las notas de crédito sigan siendo positivos.
+
+## ¿Tipo de documento incorrecto?
+
+Esta opción depende de una clasificación correcta como nota de crédito. Si un eDoc se almacena como Invoice, compruebe primero la transformación, Extraction Paths y los scripts posteriores. Siga la [guía de resolución de problemas de clasificación](../../global-settings/document-types/edi/credit-note-recognized-as-invoice.md) antes de cambiar los signos o reiniciar documentos existentes.

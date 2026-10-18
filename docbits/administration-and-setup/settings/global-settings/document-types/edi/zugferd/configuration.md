@@ -72,3 +72,7 @@ The **Extraction Paths Configuration** is used to extract data and populate fiel
 7. Click **Save**.
 
 By following these steps, you can ensure accurate data extraction and validation for ZUGFeRD invoices.
+
+## Effective rules and activation
+
+Organization-specific rules take precedence over defaults for the detected eDoc format. Check the active TRANSFORMATION and check which node supplies invoice_type in the transformed XML; the path depends on the format. Save stores a draft; use the checkmark to activate it after testing. A rendered Preview does not prove the stored document type. See the [classification troubleshooting guide](../credit-note-recognized-as-invoice.md) for codes 381/261, later scripts and reprocessing safeguards.

@@ -1,0 +1,1109 @@
+{
+  "scope": "Local documentation media only; no CDN upload, push, PR, merge or deployment",
+  "renderer_image": "sha256:b3f6f7100ecc8c251a70b5294246b563b119b2c9ae5d83fb5c3472bbf94ce90f",
+  "source_reproduction": {
+    "status": "passed",
+    "base_commit": "93003bcc594daf45813375c5a714223104fe7db6",
+    "patch_files": [
+      "build.py",
+      "tts.py",
+      "qa.py",
+      "manifest.py",
+      "manifest.schema.json",
+      "scenes/common.py"
+    ],
+    "content_locales": 9,
+    "scene_and_locks_match": true
+  },
+  "renderer_regression_tests": "57 passed in the locked renderer: 53 pipeline regressions and 4 eDocs manifest contract checks; final sources present",
+  "documentation_validation": {
+    "languages": [
+      {
+        "locale": "en",
+        "directory": "docbits",
+        "pages_including_navigation": 12,
+        "new_links_checked": 17,
+        "screenshots": 2,
+        "videos": 1,
+        "captions": 1,
+        "source_branch": null,
+        "source_commit": null,
+        "status": "passed"
+      },
+      {
+        "locale": "de",
+        "directory": "deutsch",
+        "pages_including_navigation": 12,
+        "new_links_checked": 17,
+        "screenshots": 2,
+        "videos": 1,
+        "captions": 1,
+        "source_branch": "codex/trl72-edocs-de",
+        "source_commit": "67139811280cac1f847da4ad63df6976372397a0",
+        "status": "passed"
+      },
+      {
+        "locale": "es",
+        "directory": "espanol",
+        "pages_including_navigation": 12,
+        "new_links_checked": 17,
+        "screenshots": 2,
+        "videos": 1,
+        "captions": 1,
+        "source_branch": "codex/trl72-edocs-es",
+        "source_commit": "cca22313b1edd04100613ccc64b09c32fad0d489",
+        "status": "passed"
+      },
+      {
+        "locale": "fr",
+        "directory": "french",
+        "pages_including_navigation": 12,
+        "new_links_checked": 17,
+        "screenshots": 2,
+        "videos": 1,
+        "captions": 1,
+        "source_branch": "codex/trl72-edocs-fr",
+        "source_commit": "0a4dad9db0ef05a39606d82a5ce7e979ec3e2e74",
+        "status": "passed"
+      },
+      {
+        "locale": "it",
+        "directory": "italian",
+        "pages_including_navigation": 12,
+        "new_links_checked": 17,
+        "screenshots": 2,
+        "videos": 1,
+        "captions": 1,
+        "source_branch": "codex/trl72-edocs-it",
+        "source_commit": "0ae2270776843625bdaebe312b525ae2e12f8956",
+        "status": "passed"
+      },
+      {
+        "locale": "pt",
+        "directory": "portuguese",
+        "pages_including_navigation": 12,
+        "new_links_checked": 17,
+        "screenshots": 2,
+        "videos": 1,
+        "captions": 1,
+        "source_branch": "codex/trl72-edocs-pt",
+        "source_commit": "1da8d00061bdf5358e0beb56be0d464ba332c750",
+        "status": "passed"
+      },
+      {
+        "locale": "pl",
+        "directory": "polish",
+        "pages_including_navigation": 12,
+        "new_links_checked": 17,
+        "screenshots": 2,
+        "videos": 1,
+        "captions": 1,
+        "source_branch": "codex/trl72-edocs-pl",
+        "source_commit": "b91db69318f79a1f053748c5675a59a1e3c1e3e9",
+        "status": "passed"
+      },
+      {
+        "locale": "nl",
+        "directory": "dutch",
+        "pages_including_navigation": 12,
+        "new_links_checked": 17,
+        "screenshots": 2,
+        "videos": 1,
+        "captions": 1,
+        "source_branch": "codex/trl72-edocs-nl",
+        "source_commit": "5102e6f8f7e052d079710ae62ca1122623ab5439",
+        "status": "passed"
+      },
+      {
+        "locale": "zh",
+        "directory": "chinese",
+        "pages_including_navigation": 12,
+        "new_links_checked": 17,
+        "screenshots": 2,
+        "videos": 1,
+        "captions": 1,
+        "source_branch": "codex/trl72-edocs-zh",
+        "source_commit": "a6440f232bd1a2c8a5b1559945544e2cb47db515",
+        "status": "passed"
+      }
+    ],
+    "checks": "New navigation, matching titles, relative links and attachments, preserved metadata and original content, balanced GitBook blocks, exact screenshot bytes, approved video hashes, source-branch/mirror parity",
+    "status": "passed"
+  },
+  "locales": [
+    {
+      "locale": "en",
+      "mp4_sha256": "587d07d5912aa354f2fa3b94cfaf3780d0d071ab72ee07f60542130aff74fd0b",
+      "vtt_sha256": "cf499b7e87eb60c125af1f5298d9bcd236b0e725fbd0c5bec42445222227a6a8",
+      "source_inputs": {
+        "Dockerfile": "6ee1718316efe1ed4ceeace4f0507a998b5fd38acdcdc510f7325b0c4c9c7ae0",
+        "brand.lock.json": "43d7041857abe171c1e12acdffa0e090e4b1104b5cfb7a7467a6563875f3aca7",
+        "brand.py": "e456241526ad7ab7f920cffab69e95d78bd8f23b3c56a629260cdbb338ebcd29",
+        "build.py": "7262f7d7edd5c80ec697688f0722b071f24830503950a26becba3d0bbb34a517",
+        "cache.py": "949a3b9f0a570870d788a96c459cc3fb41b5aa60d34a05b32d12e7b8b1e660da",
+        "check_contract_parity.py": "fda4ecfd2377e2a06a364fcbbcfe0541ab86521f87a0951a35a061649ca002ec",
+        "content/edocs_credit_note/labels.yaml": "f1cfae7fbbf905d52d6f4fde750b1c9568581ec8660d2b5010a048842834fa47",
+        "content/edocs_credit_note/locales/de.json": "6cf09f18aacd5f536d4a4c6cb17798f871d5763f0d2a94241a1a8f3e42f6d508",
+        "content/edocs_credit_note/locales/en.json": "4c311084a5bdadda1fe041bc91444b0c959faa325f5f4457db8dc0d7f11bcf33",
+        "content/edocs_credit_note/locales/es.json": "2b9db6f2ed035f75c2a86baabb1680f09133ff167c3e3f9d88cad5df8befbab8",
+        "content/edocs_credit_note/locales/fr.json": "134cd7ea8ea226eed9445adb775fcbf724853bad6634b68de7516c695056d7e2",
+        "content/edocs_credit_note/locales/it.json": "f547af279e2b2eca965f6faf695c94af021b3415618544d8e1675f663ddbdeb5",
+        "content/edocs_credit_note/locales/nl.json": "6c4aec76f2bea0f7fe2ddf46609b4aae7d09c80c2dd36f0a9e7d7d61e720a565",
+        "content/edocs_credit_note/locales/pl.json": "8f23b6950a3adf360622cf9de3893aea4f7c6e0fff51377487f9f4d7ae1a3333",
+        "content/edocs_credit_note/locales/pt.json": "63818f9f6609f9d5790db1a8b8e1916ba49af1e59e17e863028f372463b44e1a",
+        "content/edocs_credit_note/locales/zh.json": "489096c8300149768fdd08aeb7c5eca73b939d6e43552a18231fad3cc256781e",
+        "content/edocs_credit_note/script.yaml": "9b80cb83c300b716bbe1f489fa5d093837c400629939c64e9b158361f3ec69b5",
+        "fonts.lock.json": "f6cb2a84f68c804013e072b300609e6b1563d0bbb8146f89bc737ccb5a927460",
+        "manifest.py": "fa3bc195127fccd5eb90214c2e200aa6a4fc1929c029274b197b6804fbc23d2a",
+        "manifest.schema.json": "926be47b1b8c6f905e7e9f1658e74d5bedc5a53236968c3af4144f6a8d5e78d7",
+        "mux.py": "8c7f5d5971decc85810bf71ab7bceb5f596107b2d0767d50c4fc1b8240bbc69b",
+        "publish.py": "98017748f70a9202aafac67161d768343410681c4a037b09e1003c1e9c390db9",
+        "qa.py": "3bc8f54bd39f003c3634d0ff1c4cf1a3e75452bde3c2c46e4b92bcb8e82b3a5f",
+        "requirements.lock": "5eba0d883a605a87f48912606b955750bdd1e3d17e6c67b24ebf1d686a928092",
+        "scenes/__init__.py": "0321b2b5f81faa2ff49e24f565ce97b3fb7fce784e487050cd627602c8c6eca2",
+        "scenes/common.py": "31266b6be0f452375056400d0b4c1d93e723736e4ffc3e42bb7129d520065932",
+        "scenes/edocs_credit_note.py": "7ff438e719c8378f9d47d82f93f03c920303cfa6cb05b694944b21c61785e677",
+        "timing.py": "e8526c6134318568f3cc9a6caf3d19942c00b1713d2bad455f2613b25d29d078",
+        "toolchain.lock.json": "6416dd59f7aa93b56ec826dd5cc6b62dbe4f8cf5956bf2617c59bc893808df8b",
+        "toolchain.py": "5aa7142e78fea709c79f7293a26c27baa0939bf1ce0cae850020e1021c06bd62",
+        "tts.py": "e22e9243a6482e1e8f57c4da71c4163fa3fd92dc7d43ef7c7375a1008ff9af1c",
+        "validate.py": "d8c63e2e0304935ae81b4fa2d9a1d1d17db4287aed5f671605a3bb8a994fc65b",
+        "voice_settings.json": "f5555ff9e12a1b874311a96079332586bda01a0390cc511183ebdbb5c8e524ce",
+        "vtt.py": "f6a44e361902d1c73ff462cb3ce1d520b240103041edf1115863841531765de4"
+      },
+      "technical": {
+        "bytes": 2927877,
+        "codec": "H.264 Main / AAC-LC",
+        "duration_ms": 88367,
+        "faststart": true,
+        "frames": 2651,
+        "full_decode": true,
+        "locale": "en",
+        "loudness": {
+          "input_i": "-25.99",
+          "input_lra": "2.50",
+          "input_thresh": "-36.18",
+          "input_tp": "-4.23",
+          "normalization_type": "dynamic",
+          "output_i": "-16.28",
+          "output_lra": "2.70",
+          "output_thresh": "-26.54",
+          "output_tp": "-2.00",
+          "target_offset": "0.28"
+        },
+        "loudness_lufs": -16.38,
+        "render_seconds": 46.919,
+        "sha256": "587d07d5912aa354f2fa3b94cfaf3780d0d071ab72ee07f60542130aff74fd0b",
+        "transcript_bytes": 1147,
+        "true_peak_dbtp": -4.63
+      },
+      "browser": {
+        "locale": "en",
+        "metadata": {
+          "duration": 88.366667,
+          "width": 1280,
+          "height": 720,
+          "language": "en",
+          "cues": 16
+        },
+        "playback": {
+          "time": 0.307745,
+          "frames": 14
+        },
+        "seek": {
+          "time": 44.183333,
+          "ready": 4
+        },
+        "mobile": {
+          "scroll": 380,
+          "width": 380,
+          "captions": [
+            "An electronic credit note appears as\nInvoice. Read the original XML. A type"
+          ],
+          "focusable": 0
+        },
+        "keyboardPlays": true,
+        "ended": true,
+        "range206": true,
+        "errors": []
+      },
+      "visual_review": {
+        "reviewer": "Codex",
+        "scope": "Eight scenes, native labels, layout/wrapping, setup/action/result frames, 380 px playback with captions",
+        "result": "passed"
+      },
+      "listening_review": {
+        "status": "not_performed",
+        "reason": "The available audio-file reader does not allow access to this worktree. No acoustic or native-speaker pronunciation review is claimed.",
+        "verified_instead": "Exact native narration text and language request, segment audio alignment, caption coverage, clipping, silent joins, final loudness and full decode"
+      },
+      "publication": "local_only"
+    },
+    {
+      "locale": "de",
+      "mp4_sha256": "19e17cfccd50e1426f343246a5cb0d6feaecb86090758df6e7d806a28e53291a",
+      "vtt_sha256": "5e1a32495c64ddbe78d3a66c434521d743f42d30f4b60e476ef8ee59ed0ee57a",
+      "source_inputs": {
+        "Dockerfile": "6ee1718316efe1ed4ceeace4f0507a998b5fd38acdcdc510f7325b0c4c9c7ae0",
+        "brand.lock.json": "43d7041857abe171c1e12acdffa0e090e4b1104b5cfb7a7467a6563875f3aca7",
+        "brand.py": "e456241526ad7ab7f920cffab69e95d78bd8f23b3c56a629260cdbb338ebcd29",
+        "build.py": "7262f7d7edd5c80ec697688f0722b071f24830503950a26becba3d0bbb34a517",
+        "cache.py": "949a3b9f0a570870d788a96c459cc3fb41b5aa60d34a05b32d12e7b8b1e660da",
+        "check_contract_parity.py": "fda4ecfd2377e2a06a364fcbbcfe0541ab86521f87a0951a35a061649ca002ec",
+        "content/edocs_credit_note/labels.yaml": "f1cfae7fbbf905d52d6f4fde750b1c9568581ec8660d2b5010a048842834fa47",
+        "content/edocs_credit_note/locales/de.json": "6cf09f18aacd5f536d4a4c6cb17798f871d5763f0d2a94241a1a8f3e42f6d508",
+        "content/edocs_credit_note/locales/en.json": "4c311084a5bdadda1fe041bc91444b0c959faa325f5f4457db8dc0d7f11bcf33",
+        "content/edocs_credit_note/locales/es.json": "2b9db6f2ed035f75c2a86baabb1680f09133ff167c3e3f9d88cad5df8befbab8",
+        "content/edocs_credit_note/locales/fr.json": "134cd7ea8ea226eed9445adb775fcbf724853bad6634b68de7516c695056d7e2",
+        "content/edocs_credit_note/locales/it.json": "f547af279e2b2eca965f6faf695c94af021b3415618544d8e1675f663ddbdeb5",
+        "content/edocs_credit_note/locales/nl.json": "6c4aec76f2bea0f7fe2ddf46609b4aae7d09c80c2dd36f0a9e7d7d61e720a565",
+        "content/edocs_credit_note/locales/pl.json": "8f23b6950a3adf360622cf9de3893aea4f7c6e0fff51377487f9f4d7ae1a3333",
+        "content/edocs_credit_note/locales/pt.json": "63818f9f6609f9d5790db1a8b8e1916ba49af1e59e17e863028f372463b44e1a",
+        "content/edocs_credit_note/locales/zh.json": "489096c8300149768fdd08aeb7c5eca73b939d6e43552a18231fad3cc256781e",
+        "content/edocs_credit_note/script.yaml": "9b80cb83c300b716bbe1f489fa5d093837c400629939c64e9b158361f3ec69b5",
+        "fonts.lock.json": "f6cb2a84f68c804013e072b300609e6b1563d0bbb8146f89bc737ccb5a927460",
+        "manifest.py": "fa3bc195127fccd5eb90214c2e200aa6a4fc1929c029274b197b6804fbc23d2a",
+        "manifest.schema.json": "926be47b1b8c6f905e7e9f1658e74d5bedc5a53236968c3af4144f6a8d5e78d7",
+        "mux.py": "8c7f5d5971decc85810bf71ab7bceb5f596107b2d0767d50c4fc1b8240bbc69b",
+        "publish.py": "98017748f70a9202aafac67161d768343410681c4a037b09e1003c1e9c390db9",
+        "qa.py": "3bc8f54bd39f003c3634d0ff1c4cf1a3e75452bde3c2c46e4b92bcb8e82b3a5f",
+        "requirements.lock": "5eba0d883a605a87f48912606b955750bdd1e3d17e6c67b24ebf1d686a928092",
+        "scenes/__init__.py": "0321b2b5f81faa2ff49e24f565ce97b3fb7fce784e487050cd627602c8c6eca2",
+        "scenes/common.py": "31266b6be0f452375056400d0b4c1d93e723736e4ffc3e42bb7129d520065932",
+        "scenes/edocs_credit_note.py": "7ff438e719c8378f9d47d82f93f03c920303cfa6cb05b694944b21c61785e677",
+        "timing.py": "e8526c6134318568f3cc9a6caf3d19942c00b1713d2bad455f2613b25d29d078",
+        "toolchain.lock.json": "6416dd59f7aa93b56ec826dd5cc6b62dbe4f8cf5956bf2617c59bc893808df8b",
+        "toolchain.py": "5aa7142e78fea709c79f7293a26c27baa0939bf1ce0cae850020e1021c06bd62",
+        "tts.py": "e22e9243a6482e1e8f57c4da71c4163fa3fd92dc7d43ef7c7375a1008ff9af1c",
+        "validate.py": "d8c63e2e0304935ae81b4fa2d9a1d1d17db4287aed5f671605a3bb8a994fc65b",
+        "voice_settings.json": "f5555ff9e12a1b874311a96079332586bda01a0390cc511183ebdbb5c8e524ce",
+        "vtt.py": "f6a44e361902d1c73ff462cb3ce1d520b240103041edf1115863841531765de4"
+      },
+      "technical": {
+        "bytes": 3987235,
+        "codec": "H.264 Main / AAC-LC",
+        "duration_ms": 113167,
+        "faststart": true,
+        "frames": 3395,
+        "full_decode": true,
+        "locale": "de",
+        "loudness": {
+          "input_i": "-25.70",
+          "input_lra": "2.30",
+          "input_thresh": "-35.88",
+          "input_tp": "-1.95",
+          "normalization_type": "dynamic",
+          "output_i": "-16.25",
+          "output_lra": "1.90",
+          "output_thresh": "-26.45",
+          "output_tp": "-2.00",
+          "target_offset": "0.25"
+        },
+        "loudness_lufs": -16.34,
+        "render_seconds": 58.842,
+        "sha256": "19e17cfccd50e1426f343246a5cb0d6feaecb86090758df6e7d806a28e53291a",
+        "transcript_bytes": 1461,
+        "true_peak_dbtp": -4.42
+      },
+      "browser": {
+        "locale": "de",
+        "metadata": {
+          "duration": 113.166667,
+          "width": 1280,
+          "height": 720,
+          "language": "de",
+          "cues": 22
+        },
+        "playback": {
+          "time": 0.307931,
+          "frames": 14
+        },
+        "seek": {
+          "time": 56.583333,
+          "ready": 4
+        },
+        "mobile": {
+          "scroll": 380,
+          "width": 380,
+          "captions": [
+            "Eine elektronische Gutschrift erscheint\nals Invoice. Prüfen Sie die ursprüngliche"
+          ],
+          "focusable": 0
+        },
+        "keyboardPlays": true,
+        "ended": true,
+        "range206": true,
+        "errors": []
+      },
+      "visual_review": {
+        "reviewer": "Codex",
+        "scope": "Eight scenes, native labels, layout/wrapping, setup/action/result frames, 380 px playback with captions",
+        "result": "passed"
+      },
+      "listening_review": {
+        "status": "not_performed",
+        "reason": "The available audio-file reader does not allow access to this worktree. No acoustic or native-speaker pronunciation review is claimed.",
+        "verified_instead": "Exact native narration text and language request, segment audio alignment, caption coverage, clipping, silent joins, final loudness and full decode"
+      },
+      "publication": "local_only"
+    },
+    {
+      "locale": "es",
+      "mp4_sha256": "a10c7b6151257978529711d1ad20a3430801d8f83a7588a7b25d368bfe1a99be",
+      "vtt_sha256": "7f33a60073c8e445576f0ffd9fc10c317ac078f33de93d661fbf6a2800f39bb8",
+      "source_inputs": {
+        "Dockerfile": "6ee1718316efe1ed4ceeace4f0507a998b5fd38acdcdc510f7325b0c4c9c7ae0",
+        "brand.lock.json": "43d7041857abe171c1e12acdffa0e090e4b1104b5cfb7a7467a6563875f3aca7",
+        "brand.py": "e456241526ad7ab7f920cffab69e95d78bd8f23b3c56a629260cdbb338ebcd29",
+        "build.py": "7262f7d7edd5c80ec697688f0722b071f24830503950a26becba3d0bbb34a517",
+        "cache.py": "949a3b9f0a570870d788a96c459cc3fb41b5aa60d34a05b32d12e7b8b1e660da",
+        "check_contract_parity.py": "fda4ecfd2377e2a06a364fcbbcfe0541ab86521f87a0951a35a061649ca002ec",
+        "content/edocs_credit_note/labels.yaml": "f1cfae7fbbf905d52d6f4fde750b1c9568581ec8660d2b5010a048842834fa47",
+        "content/edocs_credit_note/locales/de.json": "6cf09f18aacd5f536d4a4c6cb17798f871d5763f0d2a94241a1a8f3e42f6d508",
+        "content/edocs_credit_note/locales/en.json": "4c311084a5bdadda1fe041bc91444b0c959faa325f5f4457db8dc0d7f11bcf33",
+        "content/edocs_credit_note/locales/es.json": "2b9db6f2ed035f75c2a86baabb1680f09133ff167c3e3f9d88cad5df8befbab8",
+        "content/edocs_credit_note/locales/fr.json": "134cd7ea8ea226eed9445adb775fcbf724853bad6634b68de7516c695056d7e2",
+        "content/edocs_credit_note/locales/it.json": "f547af279e2b2eca965f6faf695c94af021b3415618544d8e1675f663ddbdeb5",
+        "content/edocs_credit_note/locales/nl.json": "6c4aec76f2bea0f7fe2ddf46609b4aae7d09c80c2dd36f0a9e7d7d61e720a565",
+        "content/edocs_credit_note/locales/pl.json": "8f23b6950a3adf360622cf9de3893aea4f7c6e0fff51377487f9f4d7ae1a3333",
+        "content/edocs_credit_note/locales/pt.json": "63818f9f6609f9d5790db1a8b8e1916ba49af1e59e17e863028f372463b44e1a",
+        "content/edocs_credit_note/locales/zh.json": "489096c8300149768fdd08aeb7c5eca73b939d6e43552a18231fad3cc256781e",
+        "content/edocs_credit_note/script.yaml": "9b80cb83c300b716bbe1f489fa5d093837c400629939c64e9b158361f3ec69b5",
+        "fonts.lock.json": "f6cb2a84f68c804013e072b300609e6b1563d0bbb8146f89bc737ccb5a927460",
+        "manifest.py": "fa3bc195127fccd5eb90214c2e200aa6a4fc1929c029274b197b6804fbc23d2a",
+        "manifest.schema.json": "926be47b1b8c6f905e7e9f1658e74d5bedc5a53236968c3af4144f6a8d5e78d7",
+        "mux.py": "8c7f5d5971decc85810bf71ab7bceb5f596107b2d0767d50c4fc1b8240bbc69b",
+        "publish.py": "98017748f70a9202aafac67161d768343410681c4a037b09e1003c1e9c390db9",
+        "qa.py": "3bc8f54bd39f003c3634d0ff1c4cf1a3e75452bde3c2c46e4b92bcb8e82b3a5f",
+        "requirements.lock": "5eba0d883a605a87f48912606b955750bdd1e3d17e6c67b24ebf1d686a928092",
+        "scenes/__init__.py": "0321b2b5f81faa2ff49e24f565ce97b3fb7fce784e487050cd627602c8c6eca2",
+        "scenes/common.py": "31266b6be0f452375056400d0b4c1d93e723736e4ffc3e42bb7129d520065932",
+        "scenes/edocs_credit_note.py": "7ff438e719c8378f9d47d82f93f03c920303cfa6cb05b694944b21c61785e677",
+        "timing.py": "e8526c6134318568f3cc9a6caf3d19942c00b1713d2bad455f2613b25d29d078",
+        "toolchain.lock.json": "6416dd59f7aa93b56ec826dd5cc6b62dbe4f8cf5956bf2617c59bc893808df8b",
+        "toolchain.py": "5aa7142e78fea709c79f7293a26c27baa0939bf1ce0cae850020e1021c06bd62",
+        "tts.py": "e22e9243a6482e1e8f57c4da71c4163fa3fd92dc7d43ef7c7375a1008ff9af1c",
+        "validate.py": "d8c63e2e0304935ae81b4fa2d9a1d1d17db4287aed5f671605a3bb8a994fc65b",
+        "voice_settings.json": "f5555ff9e12a1b874311a96079332586bda01a0390cc511183ebdbb5c8e524ce",
+        "vtt.py": "f6a44e361902d1c73ff462cb3ce1d520b240103041edf1115863841531765de4"
+      },
+      "technical": {
+        "bytes": 4196546,
+        "codec": "H.264 Main / AAC-LC",
+        "duration_ms": 116767,
+        "faststart": true,
+        "frames": 3503,
+        "full_decode": true,
+        "locale": "es",
+        "loudness": {
+          "input_i": "-26.34",
+          "input_lra": "2.00",
+          "input_thresh": "-36.47",
+          "input_tp": "-3.82",
+          "normalization_type": "dynamic",
+          "output_i": "-16.39",
+          "output_lra": "2.20",
+          "output_thresh": "-26.51",
+          "output_tp": "-2.00",
+          "target_offset": "0.39"
+        },
+        "loudness_lufs": -16.5,
+        "render_seconds": 62.404,
+        "sha256": "a10c7b6151257978529711d1ad20a3430801d8f83a7588a7b25d368bfe1a99be",
+        "transcript_bytes": 1438,
+        "true_peak_dbtp": -4.31
+      },
+      "browser": {
+        "locale": "es",
+        "metadata": {
+          "duration": 116.766667,
+          "width": 1280,
+          "height": 720,
+          "language": "es",
+          "cues": 22
+        },
+        "playback": {
+          "time": 0.306184,
+          "frames": 14
+        },
+        "seek": {
+          "time": 58.383333,
+          "ready": 4
+        },
+        "mobile": {
+          "scroll": 380,
+          "width": 380,
+          "captions": [
+            "Una nota de crédito electrónica aparece\ncomo Invoice. Consulte el XML original. El"
+          ],
+          "focusable": 0
+        },
+        "keyboardPlays": true,
+        "ended": true,
+        "range206": true,
+        "errors": []
+      },
+      "visual_review": {
+        "reviewer": "Codex",
+        "scope": "Eight scenes, native labels, layout/wrapping, setup/action/result frames, 380 px playback with captions",
+        "result": "passed"
+      },
+      "listening_review": {
+        "status": "not_performed",
+        "reason": "The available audio-file reader does not allow access to this worktree. No acoustic or native-speaker pronunciation review is claimed.",
+        "verified_instead": "Exact native narration text and language request, segment audio alignment, caption coverage, clipping, silent joins, final loudness and full decode"
+      },
+      "publication": "local_only"
+    },
+    {
+      "locale": "fr",
+      "mp4_sha256": "80139d133fe0cfb91bfdcc150a6de99334fbb446c17fa46257021da69ac0edbb",
+      "vtt_sha256": "423f0d68281a1d07b4c2543f16569d83722f953cd05dba76ed72c254b0aa39ce",
+      "source_inputs": {
+        "Dockerfile": "6ee1718316efe1ed4ceeace4f0507a998b5fd38acdcdc510f7325b0c4c9c7ae0",
+        "brand.lock.json": "43d7041857abe171c1e12acdffa0e090e4b1104b5cfb7a7467a6563875f3aca7",
+        "brand.py": "e456241526ad7ab7f920cffab69e95d78bd8f23b3c56a629260cdbb338ebcd29",
+        "build.py": "7262f7d7edd5c80ec697688f0722b071f24830503950a26becba3d0bbb34a517",
+        "cache.py": "949a3b9f0a570870d788a96c459cc3fb41b5aa60d34a05b32d12e7b8b1e660da",
+        "check_contract_parity.py": "fda4ecfd2377e2a06a364fcbbcfe0541ab86521f87a0951a35a061649ca002ec",
+        "content/edocs_credit_note/labels.yaml": "f1cfae7fbbf905d52d6f4fde750b1c9568581ec8660d2b5010a048842834fa47",
+        "content/edocs_credit_note/locales/de.json": "6cf09f18aacd5f536d4a4c6cb17798f871d5763f0d2a94241a1a8f3e42f6d508",
+        "content/edocs_credit_note/locales/en.json": "4c311084a5bdadda1fe041bc91444b0c959faa325f5f4457db8dc0d7f11bcf33",
+        "content/edocs_credit_note/locales/es.json": "2b9db6f2ed035f75c2a86baabb1680f09133ff167c3e3f9d88cad5df8befbab8",
+        "content/edocs_credit_note/locales/fr.json": "134cd7ea8ea226eed9445adb775fcbf724853bad6634b68de7516c695056d7e2",
+        "content/edocs_credit_note/locales/it.json": "f547af279e2b2eca965f6faf695c94af021b3415618544d8e1675f663ddbdeb5",
+        "content/edocs_credit_note/locales/nl.json": "6c4aec76f2bea0f7fe2ddf46609b4aae7d09c80c2dd36f0a9e7d7d61e720a565",
+        "content/edocs_credit_note/locales/pl.json": "8f23b6950a3adf360622cf9de3893aea4f7c6e0fff51377487f9f4d7ae1a3333",
+        "content/edocs_credit_note/locales/pt.json": "63818f9f6609f9d5790db1a8b8e1916ba49af1e59e17e863028f372463b44e1a",
+        "content/edocs_credit_note/locales/zh.json": "489096c8300149768fdd08aeb7c5eca73b939d6e43552a18231fad3cc256781e",
+        "content/edocs_credit_note/script.yaml": "9b80cb83c300b716bbe1f489fa5d093837c400629939c64e9b158361f3ec69b5",
+        "fonts.lock.json": "f6cb2a84f68c804013e072b300609e6b1563d0bbb8146f89bc737ccb5a927460",
+        "manifest.py": "fa3bc195127fccd5eb90214c2e200aa6a4fc1929c029274b197b6804fbc23d2a",
+        "manifest.schema.json": "926be47b1b8c6f905e7e9f1658e74d5bedc5a53236968c3af4144f6a8d5e78d7",
+        "mux.py": "8c7f5d5971decc85810bf71ab7bceb5f596107b2d0767d50c4fc1b8240bbc69b",
+        "publish.py": "98017748f70a9202aafac67161d768343410681c4a037b09e1003c1e9c390db9",
+        "qa.py": "3bc8f54bd39f003c3634d0ff1c4cf1a3e75452bde3c2c46e4b92bcb8e82b3a5f",
+        "requirements.lock": "5eba0d883a605a87f48912606b955750bdd1e3d17e6c67b24ebf1d686a928092",
+        "scenes/__init__.py": "0321b2b5f81faa2ff49e24f565ce97b3fb7fce784e487050cd627602c8c6eca2",
+        "scenes/common.py": "31266b6be0f452375056400d0b4c1d93e723736e4ffc3e42bb7129d520065932",
+        "scenes/edocs_credit_note.py": "7ff438e719c8378f9d47d82f93f03c920303cfa6cb05b694944b21c61785e677",
+        "timing.py": "e8526c6134318568f3cc9a6caf3d19942c00b1713d2bad455f2613b25d29d078",
+        "toolchain.lock.json": "6416dd59f7aa93b56ec826dd5cc6b62dbe4f8cf5956bf2617c59bc893808df8b",
+        "toolchain.py": "5aa7142e78fea709c79f7293a26c27baa0939bf1ce0cae850020e1021c06bd62",
+        "tts.py": "e22e9243a6482e1e8f57c4da71c4163fa3fd92dc7d43ef7c7375a1008ff9af1c",
+        "validate.py": "d8c63e2e0304935ae81b4fa2d9a1d1d17db4287aed5f671605a3bb8a994fc65b",
+        "voice_settings.json": "f5555ff9e12a1b874311a96079332586bda01a0390cc511183ebdbb5c8e524ce",
+        "vtt.py": "f6a44e361902d1c73ff462cb3ce1d520b240103041edf1115863841531765de4"
+      },
+      "technical": {
+        "bytes": 3487470,
+        "codec": "H.264 Main / AAC-LC",
+        "duration_ms": 99567,
+        "faststart": true,
+        "frames": 2987,
+        "full_decode": true,
+        "locale": "fr",
+        "loudness": {
+          "input_i": "-25.87",
+          "input_lra": "2.40",
+          "input_thresh": "-36.10",
+          "input_tp": "-2.72",
+          "normalization_type": "dynamic",
+          "output_i": "-16.20",
+          "output_lra": "2.30",
+          "output_thresh": "-26.43",
+          "output_tp": "-2.00",
+          "target_offset": "0.20"
+        },
+        "loudness_lufs": -16.3,
+        "render_seconds": 52.225,
+        "sha256": "80139d133fe0cfb91bfdcc150a6de99334fbb446c17fa46257021da69ac0edbb",
+        "transcript_bytes": 1352,
+        "true_peak_dbtp": -4.57
+      },
+      "browser": {
+        "locale": "fr",
+        "metadata": {
+          "duration": 99.566667,
+          "width": 1280,
+          "height": 720,
+          "language": "fr",
+          "cues": 20
+        },
+        "playback": {
+          "time": 0.306197,
+          "frames": 14
+        },
+        "seek": {
+          "time": 49.783333,
+          "ready": 4
+        },
+        "mobile": {
+          "scroll": 380,
+          "width": 380,
+          "captions": [
+            "Un avoir électronique apparaît comme\nInvoice. Lisez le XML d’origine. Le code"
+          ],
+          "focusable": 0
+        },
+        "keyboardPlays": true,
+        "ended": true,
+        "range206": true,
+        "errors": []
+      },
+      "visual_review": {
+        "reviewer": "Codex",
+        "scope": "Eight scenes, native labels, layout/wrapping, setup/action/result frames, 380 px playback with captions",
+        "result": "passed"
+      },
+      "listening_review": {
+        "status": "not_performed",
+        "reason": "The available audio-file reader does not allow access to this worktree. No acoustic or native-speaker pronunciation review is claimed.",
+        "verified_instead": "Exact native narration text and language request, segment audio alignment, caption coverage, clipping, silent joins, final loudness and full decode"
+      },
+      "publication": "local_only"
+    },
+    {
+      "locale": "it",
+      "mp4_sha256": "629f8dfff42ac863c9dab6fd4ceef966b89fa1c97028d2617ec9b422387c5748",
+      "vtt_sha256": "068992098bd00574578851955b6f111b69f7a820ad6b36c7608f02693af585e7",
+      "source_inputs": {
+        "Dockerfile": "6ee1718316efe1ed4ceeace4f0507a998b5fd38acdcdc510f7325b0c4c9c7ae0",
+        "brand.lock.json": "43d7041857abe171c1e12acdffa0e090e4b1104b5cfb7a7467a6563875f3aca7",
+        "brand.py": "e456241526ad7ab7f920cffab69e95d78bd8f23b3c56a629260cdbb338ebcd29",
+        "build.py": "7262f7d7edd5c80ec697688f0722b071f24830503950a26becba3d0bbb34a517",
+        "cache.py": "949a3b9f0a570870d788a96c459cc3fb41b5aa60d34a05b32d12e7b8b1e660da",
+        "check_contract_parity.py": "fda4ecfd2377e2a06a364fcbbcfe0541ab86521f87a0951a35a061649ca002ec",
+        "content/edocs_credit_note/labels.yaml": "f1cfae7fbbf905d52d6f4fde750b1c9568581ec8660d2b5010a048842834fa47",
+        "content/edocs_credit_note/locales/de.json": "6cf09f18aacd5f536d4a4c6cb17798f871d5763f0d2a94241a1a8f3e42f6d508",
+        "content/edocs_credit_note/locales/en.json": "4c311084a5bdadda1fe041bc91444b0c959faa325f5f4457db8dc0d7f11bcf33",
+        "content/edocs_credit_note/locales/es.json": "2b9db6f2ed035f75c2a86baabb1680f09133ff167c3e3f9d88cad5df8befbab8",
+        "content/edocs_credit_note/locales/fr.json": "134cd7ea8ea226eed9445adb775fcbf724853bad6634b68de7516c695056d7e2",
+        "content/edocs_credit_note/locales/it.json": "f547af279e2b2eca965f6faf695c94af021b3415618544d8e1675f663ddbdeb5",
+        "content/edocs_credit_note/locales/nl.json": "6c4aec76f2bea0f7fe2ddf46609b4aae7d09c80c2dd36f0a9e7d7d61e720a565",
+        "content/edocs_credit_note/locales/pl.json": "8f23b6950a3adf360622cf9de3893aea4f7c6e0fff51377487f9f4d7ae1a3333",
+        "content/edocs_credit_note/locales/pt.json": "63818f9f6609f9d5790db1a8b8e1916ba49af1e59e17e863028f372463b44e1a",
+        "content/edocs_credit_note/locales/zh.json": "489096c8300149768fdd08aeb7c5eca73b939d6e43552a18231fad3cc256781e",
+        "content/edocs_credit_note/script.yaml": "9b80cb83c300b716bbe1f489fa5d093837c400629939c64e9b158361f3ec69b5",
+        "fonts.lock.json": "f6cb2a84f68c804013e072b300609e6b1563d0bbb8146f89bc737ccb5a927460",
+        "manifest.py": "fa3bc195127fccd5eb90214c2e200aa6a4fc1929c029274b197b6804fbc23d2a",
+        "manifest.schema.json": "926be47b1b8c6f905e7e9f1658e74d5bedc5a53236968c3af4144f6a8d5e78d7",
+        "mux.py": "8c7f5d5971decc85810bf71ab7bceb5f596107b2d0767d50c4fc1b8240bbc69b",
+        "publish.py": "98017748f70a9202aafac67161d768343410681c4a037b09e1003c1e9c390db9",
+        "qa.py": "3bc8f54bd39f003c3634d0ff1c4cf1a3e75452bde3c2c46e4b92bcb8e82b3a5f",
+        "requirements.lock": "5eba0d883a605a87f48912606b955750bdd1e3d17e6c67b24ebf1d686a928092",
+        "scenes/__init__.py": "0321b2b5f81faa2ff49e24f565ce97b3fb7fce784e487050cd627602c8c6eca2",
+        "scenes/common.py": "31266b6be0f452375056400d0b4c1d93e723736e4ffc3e42bb7129d520065932",
+        "scenes/edocs_credit_note.py": "7ff438e719c8378f9d47d82f93f03c920303cfa6cb05b694944b21c61785e677",
+        "timing.py": "e8526c6134318568f3cc9a6caf3d19942c00b1713d2bad455f2613b25d29d078",
+        "toolchain.lock.json": "6416dd59f7aa93b56ec826dd5cc6b62dbe4f8cf5956bf2617c59bc893808df8b",
+        "toolchain.py": "5aa7142e78fea709c79f7293a26c27baa0939bf1ce0cae850020e1021c06bd62",
+        "tts.py": "e22e9243a6482e1e8f57c4da71c4163fa3fd92dc7d43ef7c7375a1008ff9af1c",
+        "validate.py": "d8c63e2e0304935ae81b4fa2d9a1d1d17db4287aed5f671605a3bb8a994fc65b",
+        "voice_settings.json": "f5555ff9e12a1b874311a96079332586bda01a0390cc511183ebdbb5c8e524ce",
+        "vtt.py": "f6a44e361902d1c73ff462cb3ce1d520b240103041edf1115863841531765de4"
+      },
+      "technical": {
+        "bytes": 3853243,
+        "codec": "H.264 Main / AAC-LC",
+        "duration_ms": 109667,
+        "faststart": true,
+        "frames": 3290,
+        "full_decode": true,
+        "locale": "it",
+        "loudness": {
+          "input_i": "-25.55",
+          "input_lra": "2.40",
+          "input_thresh": "-35.71",
+          "input_tp": "-4.17",
+          "normalization_type": "dynamic",
+          "output_i": "-16.36",
+          "output_lra": "2.30",
+          "output_thresh": "-26.51",
+          "output_tp": "-2.00",
+          "target_offset": "0.36"
+        },
+        "loudness_lufs": -16.46,
+        "render_seconds": 56.503,
+        "sha256": "629f8dfff42ac863c9dab6fd4ceef966b89fa1c97028d2617ec9b422387c5748",
+        "transcript_bytes": 1394,
+        "true_peak_dbtp": -4.4
+      },
+      "browser": {
+        "locale": "it",
+        "metadata": {
+          "duration": 109.666667,
+          "width": 1280,
+          "height": 720,
+          "language": "it",
+          "cues": 23
+        },
+        "playback": {
+          "time": 0.309969,
+          "frames": 14
+        },
+        "seek": {
+          "time": 54.833333,
+          "ready": 4
+        },
+        "mobile": {
+          "scroll": 380,
+          "width": 380,
+          "captions": [
+            "Una nota di credito elettronica appare\ncome Invoice. Leggete l’XML originale. Il"
+          ],
+          "focusable": 0
+        },
+        "keyboardPlays": true,
+        "ended": true,
+        "range206": true,
+        "errors": []
+      },
+      "visual_review": {
+        "reviewer": "Codex",
+        "scope": "Eight scenes, native labels, layout/wrapping, setup/action/result frames, 380 px playback with captions",
+        "result": "passed"
+      },
+      "listening_review": {
+        "status": "not_performed",
+        "reason": "The available audio-file reader does not allow access to this worktree. No acoustic or native-speaker pronunciation review is claimed.",
+        "verified_instead": "Exact native narration text and language request, segment audio alignment, caption coverage, clipping, silent joins, final loudness and full decode"
+      },
+      "publication": "local_only"
+    },
+    {
+      "locale": "nl",
+      "mp4_sha256": "89cafea8ca53a68e7ecd82976c7e1eae20ff2a6bcfd3da920f8c10c17f6f43de",
+      "vtt_sha256": "4a717f2bbdbf217da6ecf70e3003f57d095903ef1748e96589c20427cb6d0efd",
+      "source_inputs": {
+        "Dockerfile": "6ee1718316efe1ed4ceeace4f0507a998b5fd38acdcdc510f7325b0c4c9c7ae0",
+        "brand.lock.json": "43d7041857abe171c1e12acdffa0e090e4b1104b5cfb7a7467a6563875f3aca7",
+        "brand.py": "e456241526ad7ab7f920cffab69e95d78bd8f23b3c56a629260cdbb338ebcd29",
+        "build.py": "7262f7d7edd5c80ec697688f0722b071f24830503950a26becba3d0bbb34a517",
+        "cache.py": "949a3b9f0a570870d788a96c459cc3fb41b5aa60d34a05b32d12e7b8b1e660da",
+        "check_contract_parity.py": "fda4ecfd2377e2a06a364fcbbcfe0541ab86521f87a0951a35a061649ca002ec",
+        "content/edocs_credit_note/labels.yaml": "f1cfae7fbbf905d52d6f4fde750b1c9568581ec8660d2b5010a048842834fa47",
+        "content/edocs_credit_note/locales/de.json": "6cf09f18aacd5f536d4a4c6cb17798f871d5763f0d2a94241a1a8f3e42f6d508",
+        "content/edocs_credit_note/locales/en.json": "4c311084a5bdadda1fe041bc91444b0c959faa325f5f4457db8dc0d7f11bcf33",
+        "content/edocs_credit_note/locales/es.json": "2b9db6f2ed035f75c2a86baabb1680f09133ff167c3e3f9d88cad5df8befbab8",
+        "content/edocs_credit_note/locales/fr.json": "134cd7ea8ea226eed9445adb775fcbf724853bad6634b68de7516c695056d7e2",
+        "content/edocs_credit_note/locales/it.json": "f547af279e2b2eca965f6faf695c94af021b3415618544d8e1675f663ddbdeb5",
+        "content/edocs_credit_note/locales/nl.json": "6c4aec76f2bea0f7fe2ddf46609b4aae7d09c80c2dd36f0a9e7d7d61e720a565",
+        "content/edocs_credit_note/locales/pl.json": "8f23b6950a3adf360622cf9de3893aea4f7c6e0fff51377487f9f4d7ae1a3333",
+        "content/edocs_credit_note/locales/pt.json": "63818f9f6609f9d5790db1a8b8e1916ba49af1e59e17e863028f372463b44e1a",
+        "content/edocs_credit_note/locales/zh.json": "489096c8300149768fdd08aeb7c5eca73b939d6e43552a18231fad3cc256781e",
+        "content/edocs_credit_note/script.yaml": "9b80cb83c300b716bbe1f489fa5d093837c400629939c64e9b158361f3ec69b5",
+        "fonts.lock.json": "f6cb2a84f68c804013e072b300609e6b1563d0bbb8146f89bc737ccb5a927460",
+        "manifest.py": "fa3bc195127fccd5eb90214c2e200aa6a4fc1929c029274b197b6804fbc23d2a",
+        "manifest.schema.json": "926be47b1b8c6f905e7e9f1658e74d5bedc5a53236968c3af4144f6a8d5e78d7",
+        "mux.py": "8c7f5d5971decc85810bf71ab7bceb5f596107b2d0767d50c4fc1b8240bbc69b",
+        "publish.py": "98017748f70a9202aafac67161d768343410681c4a037b09e1003c1e9c390db9",
+        "qa.py": "3bc8f54bd39f003c3634d0ff1c4cf1a3e75452bde3c2c46e4b92bcb8e82b3a5f",
+        "requirements.lock": "5eba0d883a605a87f48912606b955750bdd1e3d17e6c67b24ebf1d686a928092",
+        "scenes/__init__.py": "0321b2b5f81faa2ff49e24f565ce97b3fb7fce784e487050cd627602c8c6eca2",
+        "scenes/common.py": "31266b6be0f452375056400d0b4c1d93e723736e4ffc3e42bb7129d520065932",
+        "scenes/edocs_credit_note.py": "7ff438e719c8378f9d47d82f93f03c920303cfa6cb05b694944b21c61785e677",
+        "timing.py": "e8526c6134318568f3cc9a6caf3d19942c00b1713d2bad455f2613b25d29d078",
+        "toolchain.lock.json": "6416dd59f7aa93b56ec826dd5cc6b62dbe4f8cf5956bf2617c59bc893808df8b",
+        "toolchain.py": "5aa7142e78fea709c79f7293a26c27baa0939bf1ce0cae850020e1021c06bd62",
+        "tts.py": "e22e9243a6482e1e8f57c4da71c4163fa3fd92dc7d43ef7c7375a1008ff9af1c",
+        "validate.py": "d8c63e2e0304935ae81b4fa2d9a1d1d17db4287aed5f671605a3bb8a994fc65b",
+        "voice_settings.json": "f5555ff9e12a1b874311a96079332586bda01a0390cc511183ebdbb5c8e524ce",
+        "vtt.py": "f6a44e361902d1c73ff462cb3ce1d520b240103041edf1115863841531765de4"
+      },
+      "technical": {
+        "bytes": 3479916,
+        "codec": "H.264 Main / AAC-LC",
+        "duration_ms": 97133,
+        "faststart": true,
+        "frames": 2914,
+        "full_decode": true,
+        "locale": "nl",
+        "loudness": {
+          "input_i": "-26.57",
+          "input_lra": "2.40",
+          "input_thresh": "-36.74",
+          "input_tp": "-4.00",
+          "normalization_type": "dynamic",
+          "output_i": "-16.35",
+          "output_lra": "2.40",
+          "output_thresh": "-26.54",
+          "output_tp": "-2.00",
+          "target_offset": "0.35"
+        },
+        "loudness_lufs": -16.48,
+        "render_seconds": 51.863,
+        "sha256": "89cafea8ca53a68e7ecd82976c7e1eae20ff2a6bcfd3da920f8c10c17f6f43de",
+        "transcript_bytes": 1279,
+        "true_peak_dbtp": -4.39
+      },
+      "browser": {
+        "locale": "nl",
+        "metadata": {
+          "duration": 97.133333,
+          "width": 1280,
+          "height": 720,
+          "language": "nl",
+          "cues": 19
+        },
+        "playback": {
+          "time": 0.30478,
+          "frames": 14
+        },
+        "seek": {
+          "time": 48.566666,
+          "ready": 4
+        },
+        "mobile": {
+          "scroll": 380,
+          "width": 380,
+          "captions": [
+            "Een elektronische creditnota verschijnt\nals Invoice. Lees de oorspronkelijke XML."
+          ],
+          "focusable": 0
+        },
+        "keyboardPlays": true,
+        "ended": true,
+        "range206": true,
+        "errors": []
+      },
+      "visual_review": {
+        "reviewer": "Codex",
+        "scope": "Eight scenes, native labels, layout/wrapping, setup/action/result frames, 380 px playback with captions",
+        "result": "passed"
+      },
+      "listening_review": {
+        "status": "not_performed",
+        "reason": "The available audio-file reader does not allow access to this worktree. No acoustic or native-speaker pronunciation review is claimed.",
+        "verified_instead": "Exact native narration text and language request, segment audio alignment, caption coverage, clipping, silent joins, final loudness and full decode"
+      },
+      "publication": "local_only"
+    },
+    {
+      "locale": "pl",
+      "mp4_sha256": "e69135c9486b0d86cf8888b77e2e4b99afe452adce76594c0636549f336ad624",
+      "vtt_sha256": "72d0d50380594ec472574afa98310e7a657447aff872006b14f408f6bc29c24c",
+      "source_inputs": {
+        "Dockerfile": "6ee1718316efe1ed4ceeace4f0507a998b5fd38acdcdc510f7325b0c4c9c7ae0",
+        "brand.lock.json": "43d7041857abe171c1e12acdffa0e090e4b1104b5cfb7a7467a6563875f3aca7",
+        "brand.py": "e456241526ad7ab7f920cffab69e95d78bd8f23b3c56a629260cdbb338ebcd29",
+        "build.py": "7262f7d7edd5c80ec697688f0722b071f24830503950a26becba3d0bbb34a517",
+        "cache.py": "949a3b9f0a570870d788a96c459cc3fb41b5aa60d34a05b32d12e7b8b1e660da",
+        "check_contract_parity.py": "fda4ecfd2377e2a06a364fcbbcfe0541ab86521f87a0951a35a061649ca002ec",
+        "content/edocs_credit_note/labels.yaml": "f1cfae7fbbf905d52d6f4fde750b1c9568581ec8660d2b5010a048842834fa47",
+        "content/edocs_credit_note/locales/de.json": "6cf09f18aacd5f536d4a4c6cb17798f871d5763f0d2a94241a1a8f3e42f6d508",
+        "content/edocs_credit_note/locales/en.json": "4c311084a5bdadda1fe041bc91444b0c959faa325f5f4457db8dc0d7f11bcf33",
+        "content/edocs_credit_note/locales/es.json": "2b9db6f2ed035f75c2a86baabb1680f09133ff167c3e3f9d88cad5df8befbab8",
+        "content/edocs_credit_note/locales/fr.json": "134cd7ea8ea226eed9445adb775fcbf724853bad6634b68de7516c695056d7e2",
+        "content/edocs_credit_note/locales/it.json": "f547af279e2b2eca965f6faf695c94af021b3415618544d8e1675f663ddbdeb5",
+        "content/edocs_credit_note/locales/nl.json": "6c4aec76f2bea0f7fe2ddf46609b4aae7d09c80c2dd36f0a9e7d7d61e720a565",
+        "content/edocs_credit_note/locales/pl.json": "8f23b6950a3adf360622cf9de3893aea4f7c6e0fff51377487f9f4d7ae1a3333",
+        "content/edocs_credit_note/locales/pt.json": "63818f9f6609f9d5790db1a8b8e1916ba49af1e59e17e863028f372463b44e1a",
+        "content/edocs_credit_note/locales/zh.json": "489096c8300149768fdd08aeb7c5eca73b939d6e43552a18231fad3cc256781e",
+        "content/edocs_credit_note/script.yaml": "9b80cb83c300b716bbe1f489fa5d093837c400629939c64e9b158361f3ec69b5",
+        "fonts.lock.json": "f6cb2a84f68c804013e072b300609e6b1563d0bbb8146f89bc737ccb5a927460",
+        "manifest.py": "fa3bc195127fccd5eb90214c2e200aa6a4fc1929c029274b197b6804fbc23d2a",
+        "manifest.schema.json": "926be47b1b8c6f905e7e9f1658e74d5bedc5a53236968c3af4144f6a8d5e78d7",
+        "mux.py": "8c7f5d5971decc85810bf71ab7bceb5f596107b2d0767d50c4fc1b8240bbc69b",
+        "publish.py": "98017748f70a9202aafac67161d768343410681c4a037b09e1003c1e9c390db9",
+        "qa.py": "3bc8f54bd39f003c3634d0ff1c4cf1a3e75452bde3c2c46e4b92bcb8e82b3a5f",
+        "requirements.lock": "5eba0d883a605a87f48912606b955750bdd1e3d17e6c67b24ebf1d686a928092",
+        "scenes/__init__.py": "0321b2b5f81faa2ff49e24f565ce97b3fb7fce784e487050cd627602c8c6eca2",
+        "scenes/common.py": "31266b6be0f452375056400d0b4c1d93e723736e4ffc3e42bb7129d520065932",
+        "scenes/edocs_credit_note.py": "7ff438e719c8378f9d47d82f93f03c920303cfa6cb05b694944b21c61785e677",
+        "timing.py": "e8526c6134318568f3cc9a6caf3d19942c00b1713d2bad455f2613b25d29d078",
+        "toolchain.lock.json": "6416dd59f7aa93b56ec826dd5cc6b62dbe4f8cf5956bf2617c59bc893808df8b",
+        "toolchain.py": "5aa7142e78fea709c79f7293a26c27baa0939bf1ce0cae850020e1021c06bd62",
+        "tts.py": "e22e9243a6482e1e8f57c4da71c4163fa3fd92dc7d43ef7c7375a1008ff9af1c",
+        "validate.py": "d8c63e2e0304935ae81b4fa2d9a1d1d17db4287aed5f671605a3bb8a994fc65b",
+        "voice_settings.json": "f5555ff9e12a1b874311a96079332586bda01a0390cc511183ebdbb5c8e524ce",
+        "vtt.py": "f6a44e361902d1c73ff462cb3ce1d520b240103041edf1115863841531765de4"
+      },
+      "technical": {
+        "bytes": 3738339,
+        "codec": "H.264 Main / AAC-LC",
+        "duration_ms": 102500,
+        "faststart": true,
+        "frames": 3075,
+        "full_decode": true,
+        "locale": "pl",
+        "loudness": {
+          "input_i": "-26.49",
+          "input_lra": "2.60",
+          "input_thresh": "-36.65",
+          "input_tp": "-3.75",
+          "normalization_type": "dynamic",
+          "output_i": "-16.28",
+          "output_lra": "2.60",
+          "output_thresh": "-26.44",
+          "output_tp": "-2.00",
+          "target_offset": "0.28"
+        },
+        "loudness_lufs": -16.38,
+        "render_seconds": 55.752,
+        "sha256": "e69135c9486b0d86cf8888b77e2e4b99afe452adce76594c0636549f336ad624",
+        "transcript_bytes": 1278,
+        "true_peak_dbtp": -4.55
+      },
+      "browser": {
+        "locale": "pl",
+        "metadata": {
+          "duration": 102.5,
+          "width": 1280,
+          "height": 720,
+          "language": "pl",
+          "cues": 20
+        },
+        "playback": {
+          "time": 0.30856,
+          "frames": 14
+        },
+        "seek": {
+          "time": 51.25,
+          "ready": 4
+        },
+        "mobile": {
+          "scroll": 380,
+          "width": 380,
+          "captions": [
+            "Elektroniczna nota kredytowa jest\nwyświetlana jako Invoice. Odczytaj"
+          ],
+          "focusable": 0
+        },
+        "keyboardPlays": true,
+        "ended": true,
+        "range206": true,
+        "errors": []
+      },
+      "visual_review": {
+        "reviewer": "Codex",
+        "scope": "Eight scenes, native labels, layout/wrapping, setup/action/result frames, 380 px playback with captions",
+        "result": "passed"
+      },
+      "listening_review": {
+        "status": "not_performed",
+        "reason": "The available audio-file reader does not allow access to this worktree. No acoustic or native-speaker pronunciation review is claimed.",
+        "verified_instead": "Exact native narration text and language request, segment audio alignment, caption coverage, clipping, silent joins, final loudness and full decode"
+      },
+      "publication": "local_only"
+    },
+    {
+      "locale": "pt",
+      "mp4_sha256": "cc03d3b9ec25afcf8e019af799a053c64362c754c93ee7571c973e77ee5807f1",
+      "vtt_sha256": "3fc20088bad8f2149f6294566c38fe9db9edecb038634f7cb829d760b44aa9a8",
+      "source_inputs": {
+        "Dockerfile": "6ee1718316efe1ed4ceeace4f0507a998b5fd38acdcdc510f7325b0c4c9c7ae0",
+        "brand.lock.json": "43d7041857abe171c1e12acdffa0e090e4b1104b5cfb7a7467a6563875f3aca7",
+        "brand.py": "e456241526ad7ab7f920cffab69e95d78bd8f23b3c56a629260cdbb338ebcd29",
+        "build.py": "7262f7d7edd5c80ec697688f0722b071f24830503950a26becba3d0bbb34a517",
+        "cache.py": "949a3b9f0a570870d788a96c459cc3fb41b5aa60d34a05b32d12e7b8b1e660da",
+        "check_contract_parity.py": "fda4ecfd2377e2a06a364fcbbcfe0541ab86521f87a0951a35a061649ca002ec",
+        "content/edocs_credit_note/labels.yaml": "f1cfae7fbbf905d52d6f4fde750b1c9568581ec8660d2b5010a048842834fa47",
+        "content/edocs_credit_note/locales/de.json": "6cf09f18aacd5f536d4a4c6cb17798f871d5763f0d2a94241a1a8f3e42f6d508",
+        "content/edocs_credit_note/locales/en.json": "4c311084a5bdadda1fe041bc91444b0c959faa325f5f4457db8dc0d7f11bcf33",
+        "content/edocs_credit_note/locales/es.json": "2b9db6f2ed035f75c2a86baabb1680f09133ff167c3e3f9d88cad5df8befbab8",
+        "content/edocs_credit_note/locales/fr.json": "134cd7ea8ea226eed9445adb775fcbf724853bad6634b68de7516c695056d7e2",
+        "content/edocs_credit_note/locales/it.json": "f547af279e2b2eca965f6faf695c94af021b3415618544d8e1675f663ddbdeb5",
+        "content/edocs_credit_note/locales/nl.json": "6c4aec76f2bea0f7fe2ddf46609b4aae7d09c80c2dd36f0a9e7d7d61e720a565",
+        "content/edocs_credit_note/locales/pl.json": "8f23b6950a3adf360622cf9de3893aea4f7c6e0fff51377487f9f4d7ae1a3333",
+        "content/edocs_credit_note/locales/pt.json": "63818f9f6609f9d5790db1a8b8e1916ba49af1e59e17e863028f372463b44e1a",
+        "content/edocs_credit_note/locales/zh.json": "489096c8300149768fdd08aeb7c5eca73b939d6e43552a18231fad3cc256781e",
+        "content/edocs_credit_note/script.yaml": "9b80cb83c300b716bbe1f489fa5d093837c400629939c64e9b158361f3ec69b5",
+        "fonts.lock.json": "f6cb2a84f68c804013e072b300609e6b1563d0bbb8146f89bc737ccb5a927460",
+        "manifest.py": "fa3bc195127fccd5eb90214c2e200aa6a4fc1929c029274b197b6804fbc23d2a",
+        "manifest.schema.json": "926be47b1b8c6f905e7e9f1658e74d5bedc5a53236968c3af4144f6a8d5e78d7",
+        "mux.py": "8c7f5d5971decc85810bf71ab7bceb5f596107b2d0767d50c4fc1b8240bbc69b",
+        "publish.py": "98017748f70a9202aafac67161d768343410681c4a037b09e1003c1e9c390db9",
+        "qa.py": "3bc8f54bd39f003c3634d0ff1c4cf1a3e75452bde3c2c46e4b92bcb8e82b3a5f",
+        "requirements.lock": "5eba0d883a605a87f48912606b955750bdd1e3d17e6c67b24ebf1d686a928092",
+        "scenes/__init__.py": "0321b2b5f81faa2ff49e24f565ce97b3fb7fce784e487050cd627602c8c6eca2",
+        "scenes/common.py": "31266b6be0f452375056400d0b4c1d93e723736e4ffc3e42bb7129d520065932",
+        "scenes/edocs_credit_note.py": "7ff438e719c8378f9d47d82f93f03c920303cfa6cb05b694944b21c61785e677",
+        "timing.py": "e8526c6134318568f3cc9a6caf3d19942c00b1713d2bad455f2613b25d29d078",
+        "toolchain.lock.json": "6416dd59f7aa93b56ec826dd5cc6b62dbe4f8cf5956bf2617c59bc893808df8b",
+        "toolchain.py": "5aa7142e78fea709c79f7293a26c27baa0939bf1ce0cae850020e1021c06bd62",
+        "tts.py": "e22e9243a6482e1e8f57c4da71c4163fa3fd92dc7d43ef7c7375a1008ff9af1c",
+        "validate.py": "d8c63e2e0304935ae81b4fa2d9a1d1d17db4287aed5f671605a3bb8a994fc65b",
+        "voice_settings.json": "f5555ff9e12a1b874311a96079332586bda01a0390cc511183ebdbb5c8e524ce",
+        "vtt.py": "f6a44e361902d1c73ff462cb3ce1d520b240103041edf1115863841531765de4"
+      },
+      "technical": {
+        "bytes": 4143007,
+        "codec": "H.264 Main / AAC-LC",
+        "duration_ms": 116533,
+        "faststart": true,
+        "frames": 3496,
+        "full_decode": true,
+        "locale": "pt",
+        "loudness": {
+          "input_i": "-25.50",
+          "input_lra": "2.80",
+          "input_thresh": "-35.67",
+          "input_tp": "-3.27",
+          "normalization_type": "dynamic",
+          "output_i": "-16.17",
+          "output_lra": "2.60",
+          "output_thresh": "-26.32",
+          "output_tp": "-2.00",
+          "target_offset": "0.17"
+        },
+        "loudness_lufs": -16.28,
+        "render_seconds": 61.984,
+        "sha256": "cc03d3b9ec25afcf8e019af799a053c64362c754c93ee7571c973e77ee5807f1",
+        "transcript_bytes": 1391,
+        "true_peak_dbtp": -4.64
+      },
+      "browser": {
+        "locale": "pt",
+        "metadata": {
+          "duration": 116.533333,
+          "width": 1280,
+          "height": 720,
+          "language": "pt",
+          "cues": 20
+        },
+        "playback": {
+          "time": 0.305185,
+          "frames": 13
+        },
+        "seek": {
+          "time": 58.266666,
+          "ready": 4
+        },
+        "mobile": {
+          "scroll": 380,
+          "width": 380,
+          "captions": [
+            "Uma nota de crédito eletrónica aparece\ncomo Invoice. Consulte o XML original. O"
+          ],
+          "focusable": 0
+        },
+        "keyboardPlays": true,
+        "ended": true,
+        "range206": true,
+        "errors": []
+      },
+      "visual_review": {
+        "reviewer": "Codex",
+        "scope": "Eight scenes, native labels, layout/wrapping, setup/action/result frames, 380 px playback with captions",
+        "result": "passed"
+      },
+      "listening_review": {
+        "status": "not_performed",
+        "reason": "The available audio-file reader does not allow access to this worktree. No acoustic or native-speaker pronunciation review is claimed.",
+        "verified_instead": "Exact native narration text and language request, segment audio alignment, caption coverage, clipping, silent joins, final loudness and full decode"
+      },
+      "publication": "local_only"
+    },
+    {
+      "locale": "zh",
+      "mp4_sha256": "c84d9797b2f496e7040be0f71cf7d1eaeb63a8e7515512813c96984cc2ab8f98",
+      "vtt_sha256": "1f435bb916e33f4f76f1730b0cd30f11c7b37a6848e234466fb64c4469c8524f",
+      "source_inputs": {
+        "Dockerfile": "6ee1718316efe1ed4ceeace4f0507a998b5fd38acdcdc510f7325b0c4c9c7ae0",
+        "brand.lock.json": "43d7041857abe171c1e12acdffa0e090e4b1104b5cfb7a7467a6563875f3aca7",
+        "brand.py": "e456241526ad7ab7f920cffab69e95d78bd8f23b3c56a629260cdbb338ebcd29",
+        "build.py": "7262f7d7edd5c80ec697688f0722b071f24830503950a26becba3d0bbb34a517",
+        "cache.py": "949a3b9f0a570870d788a96c459cc3fb41b5aa60d34a05b32d12e7b8b1e660da",
+        "check_contract_parity.py": "fda4ecfd2377e2a06a364fcbbcfe0541ab86521f87a0951a35a061649ca002ec",
+        "content/edocs_credit_note/labels.yaml": "f1cfae7fbbf905d52d6f4fde750b1c9568581ec8660d2b5010a048842834fa47",
+        "content/edocs_credit_note/locales/de.json": "6cf09f18aacd5f536d4a4c6cb17798f871d5763f0d2a94241a1a8f3e42f6d508",
+        "content/edocs_credit_note/locales/en.json": "4c311084a5bdadda1fe041bc91444b0c959faa325f5f4457db8dc0d7f11bcf33",
+        "content/edocs_credit_note/locales/es.json": "2b9db6f2ed035f75c2a86baabb1680f09133ff167c3e3f9d88cad5df8befbab8",
+        "content/edocs_credit_note/locales/fr.json": "134cd7ea8ea226eed9445adb775fcbf724853bad6634b68de7516c695056d7e2",
+        "content/edocs_credit_note/locales/it.json": "f547af279e2b2eca965f6faf695c94af021b3415618544d8e1675f663ddbdeb5",
+        "content/edocs_credit_note/locales/nl.json": "6c4aec76f2bea0f7fe2ddf46609b4aae7d09c80c2dd36f0a9e7d7d61e720a565",
+        "content/edocs_credit_note/locales/pl.json": "8f23b6950a3adf360622cf9de3893aea4f7c6e0fff51377487f9f4d7ae1a3333",
+        "content/edocs_credit_note/locales/pt.json": "63818f9f6609f9d5790db1a8b8e1916ba49af1e59e17e863028f372463b44e1a",
+        "content/edocs_credit_note/locales/zh.json": "489096c8300149768fdd08aeb7c5eca73b939d6e43552a18231fad3cc256781e",
+        "content/edocs_credit_note/script.yaml": "9b80cb83c300b716bbe1f489fa5d093837c400629939c64e9b158361f3ec69b5",
+        "fonts.lock.json": "f6cb2a84f68c804013e072b300609e6b1563d0bbb8146f89bc737ccb5a927460",
+        "manifest.py": "fa3bc195127fccd5eb90214c2e200aa6a4fc1929c029274b197b6804fbc23d2a",
+        "manifest.schema.json": "926be47b1b8c6f905e7e9f1658e74d5bedc5a53236968c3af4144f6a8d5e78d7",
+        "mux.py": "8c7f5d5971decc85810bf71ab7bceb5f596107b2d0767d50c4fc1b8240bbc69b",
+        "publish.py": "98017748f70a9202aafac67161d768343410681c4a037b09e1003c1e9c390db9",
+        "qa.py": "3bc8f54bd39f003c3634d0ff1c4cf1a3e75452bde3c2c46e4b92bcb8e82b3a5f",
+        "requirements.lock": "5eba0d883a605a87f48912606b955750bdd1e3d17e6c67b24ebf1d686a928092",
+        "scenes/__init__.py": "0321b2b5f81faa2ff49e24f565ce97b3fb7fce784e487050cd627602c8c6eca2",
+        "scenes/common.py": "31266b6be0f452375056400d0b4c1d93e723736e4ffc3e42bb7129d520065932",
+        "scenes/edocs_credit_note.py": "7ff438e719c8378f9d47d82f93f03c920303cfa6cb05b694944b21c61785e677",
+        "timing.py": "e8526c6134318568f3cc9a6caf3d19942c00b1713d2bad455f2613b25d29d078",
+        "toolchain.lock.json": "6416dd59f7aa93b56ec826dd5cc6b62dbe4f8cf5956bf2617c59bc893808df8b",
+        "toolchain.py": "5aa7142e78fea709c79f7293a26c27baa0939bf1ce0cae850020e1021c06bd62",
+        "tts.py": "e22e9243a6482e1e8f57c4da71c4163fa3fd92dc7d43ef7c7375a1008ff9af1c",
+        "validate.py": "d8c63e2e0304935ae81b4fa2d9a1d1d17db4287aed5f671605a3bb8a994fc65b",
+        "voice_settings.json": "f5555ff9e12a1b874311a96079332586bda01a0390cc511183ebdbb5c8e524ce",
+        "vtt.py": "f6a44e361902d1c73ff462cb3ce1d520b240103041edf1115863841531765de4"
+      },
+      "technical": {
+        "bytes": 2972897,
+        "codec": "H.264 Main / AAC-LC",
+        "duration_ms": 96033,
+        "faststart": true,
+        "frames": 2881,
+        "full_decode": true,
+        "locale": "zh",
+        "loudness": {
+          "input_i": "-26.48",
+          "input_lra": "2.40",
+          "input_thresh": "-36.67",
+          "input_tp": "-6.36",
+          "normalization_type": "dynamic",
+          "output_i": "-16.16",
+          "output_lra": "2.30",
+          "output_thresh": "-26.34",
+          "output_tp": "-2.00",
+          "target_offset": "0.16"
+        },
+        "loudness_lufs": -16.26,
+        "render_seconds": 53.648,
+        "sha256": "c84d9797b2f496e7040be0f71cf7d1eaeb63a8e7515512813c96984cc2ab8f98",
+        "transcript_bytes": 1106,
+        "true_peak_dbtp": -4.45
+      },
+      "browser": {
+        "locale": "zh",
+        "metadata": {
+          "duration": 96.033333,
+          "width": 1280,
+          "height": 720,
+          "language": "zh",
+          "cues": 15
+        },
+        "playback": {
+          "time": 0.311303,
+          "frames": 14
+        },
+        "seek": {
+          "time": 48.016666,
+          "ready": 4
+        },
+        "mobile": {
+          "scroll": 380,
+          "width": 380,
+          "captions": [
+            "电子贷项通知单显示为 Invoice。\n请查看原始 XML。"
+          ],
+          "focusable": 0
+        },
+        "keyboardPlays": true,
+        "ended": true,
+        "range206": true,
+        "errors": []
+      },
+      "visual_review": {
+        "reviewer": "Codex",
+        "scope": "Eight scenes, native labels, layout/wrapping, setup/action/result frames, 380 px playback with captions",
+        "result": "passed"
+      },
+      "listening_review": {
+        "status": "not_performed",
+        "reason": "The available audio-file reader does not allow access to this worktree. No acoustic or native-speaker pronunciation review is claimed.",
+        "verified_instead": "Exact native narration text and language request, segment audio alignment, caption coverage, clipping, silent joins, final loudness and full decode"
+      },
+      "publication": "local_only"
+    }
+  ],
+  "all_language_media_checks": "media-checks.json",
+  "listening_review": "Not performed: the available audio reader does not allow access to the worktree. No acoustic or native-speaker pronunciation approval is claimed."
+}

@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.974
+Taiwan eGUI ist die konfigurierte Familie.
+Die Familienbezeichnung bestätigt nicht
+
+formats_02
+00:00:05.974 --> 00:00:11.338
+jede MIG-Veröffentlichung. Prüfen Sie das
+tatsächliche XML-Schema und testen Sie
+
+formats_03
+00:00:11.338 --> 00:00:14.133
+repräsentative elektronische Rechnungen.
+
+workflow_01
+00:00:14.883 --> 00:00:20.189
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:20.189 --> 00:00:26.899
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:26.899 --> 00:00:28.533
+aktiviert ihn nicht.
+
+accept_01
+00:00:29.283 --> 00:00:33.915
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:33.915 --> 00:00:40.045
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:40.045 --> 00:00:43.167
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

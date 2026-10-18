@@ -161,3 +161,5 @@ Dlaczego dokumenty wymagają udziału człowieka i co zmienić, aby wymagało go
 {% hint style="info" %}
 **Jeden MCP do wszystkiego.** Narzędzia eDoc oraz **Przepływy pracy i karty (DocFlow)** działają na **tym samym** endpoincie `api.docbits.com/v3/mcp` z tym samym logowaniem DocBits. Narzędzia DocFlow pojawiają się tam z prefiksem `docflow_` (na przykład `docflow_list_workflows`); strona DocFlow opisuje je pod ich nazwami bez prefiksu. Bezpośrednie połączenie z hostem DocFlow nadal jest możliwe, ale nie jest już konieczne.
 {% endhint %}
+
+[Konfigurowanie DocBits przez Claude lub Codex](configuration-with-claude-or-codex.md): połączenie, prompty, podglądy, wersjonowane zmiany, kontrole i cofnięcie.

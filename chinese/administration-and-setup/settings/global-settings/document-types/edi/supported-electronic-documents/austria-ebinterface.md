@@ -4,6 +4,12 @@ description: "DocBits 对奥地利 EBINTERFACE 电子文档的支持"
 
 # 🇦🇹 奥地利 EBINTERFACE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。 [奥地利](countries/austria.md). 请将 XML 命名空间与已配置的版本匹配。不同的命名空间可能需要另一套映射。
+{% endhint %}
+
 | 属性                   | 值                               |
 | ---------------------- | -------------------------------- |
 | **国家 / 地区**       | 奥地利                           |

@@ -4,6 +4,12 @@ description: Obsługa dokumentu elektronicznego INDONESIA E-FAKTUR w DocBits
 
 # 🇮🇩 INDONESIA E-FAKTUR
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Indonezja](countries/indonesia.md). Wpis nie podaje numeru wydania. Potwierdź rzeczywistą zawartość XML; drukowana faktura ani obraz kodu QR nie potwierdzają obsługi XML.
+{% endhint %}
+
 | Właściwość           | Wartość                                    |
 | -------------------- | ------------------------------------------ |
 | **Kraj / Region**    | Indonezja                                  |

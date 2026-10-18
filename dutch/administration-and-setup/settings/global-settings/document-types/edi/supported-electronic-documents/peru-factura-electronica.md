@@ -4,6 +4,12 @@ description: Ondersteuning voor PERU FACTURA ELECTRONICA elektronische documente
 
 # 🇵🇪 PERU FACTURA ELECTRONICA
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Peru](countries/peru.md). Selecteer de werkelijke UBL-versie en documentstructuur. Het verwerken van een bestand bewijst geen acceptatie door SUNAT.
+{% endhint %}
+
 | Eigenschap           | Waarde                      |
 | -------------------- | --------------------------- |
 | **Land / Regio**     | Peru                        |

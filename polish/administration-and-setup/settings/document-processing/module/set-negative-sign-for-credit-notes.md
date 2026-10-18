@@ -35,3 +35,7 @@ Dotyczy to wyłącznie dokumentów zidentyfikowanych jako **noty kredytowe**. Zw
 
 * **Pozostaw włączone**, jeśli Twój system księgowy lub ERP oczekuje, że noty kredytowe będą przychodzić z kwotami ujemnymi (jest to najczęstsza konfiguracja).
 * **Wyłącz** tylko wtedy, gdy system docelowy sam obsługuje znak lub oczekuje, że kwoty not kredytowych pozostaną dodatnie.
+
+## Nieprawidłowy typ dokumentu?
+
+To ustawienie zależy od prawidłowej klasyfikacji not kredytowych. Jeśli eDoc jest zapisywany jako Invoice, najpierw sprawdź transformację, Extraction Paths i późniejsze skrypty. Zanim zmienisz znaki kwot lub ponownie uruchomisz istniejące dokumenty, skorzystaj z [przewodnika rozwiązywania problemów z klasyfikacją](../../global-settings/document-types/edi/credit-note-recognized-as-invoice.md).

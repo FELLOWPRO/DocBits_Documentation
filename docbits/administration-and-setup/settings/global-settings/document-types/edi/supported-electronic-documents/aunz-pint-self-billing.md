@@ -4,6 +4,12 @@ description: AUNZ PINT SELF-BILLING electronic document support in DocBits
 
 # 🇦🇺 AUNZ PINT SELF-BILLING
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Australia](countries/australia.md). The active family label has no fixed PINT release number. Check customization and profile identifiers; network delivery is a separate integration.
+{% endhint %}
+
 | Property             | Value                   |
 | -------------------- | ----------------------- |
 | **Country / Region** | Australia / New Zealand |

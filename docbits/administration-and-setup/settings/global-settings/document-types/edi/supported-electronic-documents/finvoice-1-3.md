@@ -4,6 +4,12 @@ description: FINVOICE 1.3 electronic document support in DocBits
 
 # 🇫🇮 FINVOICE 1.3
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Finland](countries/finland.md). Check the source version before choosing a mapping. The TEAPPSXML label does not state a release.
+{% endhint %}
+
 | Property             | Value               |
 | -------------------- | ------------------- |
 | **Country / Region** | Finland             |

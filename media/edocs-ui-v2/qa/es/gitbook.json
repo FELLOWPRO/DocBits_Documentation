@@ -1,0 +1,38 @@
+{
+  "commit": "db46899d91533e81d4253d2187185a44c4817ab0",
+  "import_state": "success",
+  "overview": "https://docs.docbits.com/espanol/~/revisions/wHkd8v3MMLr5bdflydB8/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents?review=db46899d9153",
+  "linked_country_guides": 40,
+  "attachments": [
+    {
+      "preview": "https://docs.docbits.com/espanol/~/revisions/wHkd8v3MMLr5bdflydB8/administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice?review=db46899d9153",
+      "url": "https://1268961071-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FGV2Ic4tr3s2meegz1037%2Fuploads%2Fgit-blob-2f7bb0113ec258bcf385e15dd521a6a8b9c1b58d%2Fedocs-credit-note-es-v2.mp4?alt=media",
+      "status": 200,
+      "mime": "video/mp4",
+      "bytes": 4373570,
+      "sha256": "7434128492e68c200f5217873ad3b5ccd19d72a337702df8a6b234164058495e",
+      "range206": true,
+      "content_range": "bytes 0-1023/4373570"
+    },
+    {
+      "preview": "https://docs.docbits.com/espanol/~/revisions/wHkd8v3MMLr5bdflydB8/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/germany?review=db46899d9153",
+      "url": "https://1268961071-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FGV2Ic4tr3s2meegz1037%2Fuploads%2Fgit-blob-80ff486a66816d3dc39a10ac8f6cf0d695504fd8%2Fedocs-support-germany-es-v2.mp4?alt=media",
+      "status": 200,
+      "mime": "video/mp4",
+      "bytes": 2269093,
+      "sha256": "292a099b97552fd00c585a64b43305fecdc44b83bd988d4d00809c9cb28dce1b",
+      "range206": true,
+      "content_range": "bytes 0-1023/2269093"
+    },
+    {
+      "preview": "https://docs.docbits.com/espanol/~/revisions/wHkd8v3MMLr5bdflydB8/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/costa-rica?review=db46899d9153",
+      "url": "https://1268961071-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FGV2Ic4tr3s2meegz1037%2Fuploads%2Fgit-blob-c2680a2dd4bb80e9acbebfd9c8c5c068173ce3bd%2Fedocs-support-costa-rica-es-v2.mp4?alt=media",
+      "status": 200,
+      "mime": "video/mp4",
+      "bytes": 1058632,
+      "sha256": "63ecf9a5495b0ee443d9c166722c189e5463517f1389a1a0b81c505bbddcaf1f",
+      "range206": true,
+      "content_range": "bytes 0-1023/1058632"
+    }
+  ]
+}

@@ -200,3 +200,11 @@ The default TRANSFORMATION XSLT distributes `ApplicableTradeTax` blocks across t
 | `SpecifiedTradeProduct/OriginTradeCountry/ID`                 | `COUNTRY_OF_ORIGIN`      | `CountryOfOrigin`       | STRING | Country of origin      |
 | `SpecifiedTradeProduct/ApplicableProductCharacteristic/Value` | `PRODUCT_CHARACTERISTIC` | `ProductCharacteristic` | STRING | Product characteristic |
 | `ActualDeliverySupplyChainEvent/OccurrenceDateTime`           | `DELIVERY_DATE`          | `ActualDeliveryDate`    | DATE   | Line delivery date     |
+
+## Effective rules and activation
+
+If an electronic credit note appears as Invoice, follow the [classification troubleshooting guide](../credit-note-recognized-as-invoice.md). It covers the effective custom/default source, type codes, Extraction Paths and safe activation.
+
+## Country guides
+
+See the country guides for exact format labels, syntax, version limits and the inspected configuration state. [eDocs formats, versions and country guides](../supported-electronic-documents/README.md).

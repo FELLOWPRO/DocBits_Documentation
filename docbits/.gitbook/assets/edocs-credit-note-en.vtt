@@ -1,0 +1,81 @@
+WEBVTT
+
+symptom_01
+00:00:00.250 --> 00:00:05.161
+An electronic credit note appears as
+Invoice. Read the original XML. A type
+
+symptom_02
+00:00:05.161 --> 00:00:08.033
+code of 381 identifies a credit note.
+
+codes_01
+00:00:08.783 --> 00:00:17.014
+FACTURX and ZUGFeRD defaults also
+recognize 261. Codes 383 and 384 mean
+
+codes_02
+00:00:17.014 --> 00:00:21.767
+debit note and corrected invoice. Do not
+classify them as credit notes.
+
+source_01
+00:00:22.517 --> 00:00:28.287
+Open E-Doc for the detected format. A
+custom organization transformation takes
+
+source_02
+00:00:28.287 --> 00:00:32.400
+precedence over the default. Check the
+active version.
+
+transform_01
+00:00:33.150 --> 00:00:38.885
+For FACTURX, search for INVOICE_TYPE. A
+constant Invoice can discard the original
+
+transform_02
+00:00:38.885 --> 00:00:43.433
+credit note code. Compare the custom
+transformation with the default.
+
+paths_01
+00:00:44.183 --> 00:00:50.336
+Test the transformed XML. Check that
+Extraction Paths reads invoice_type from
+
+paths_02
+00:00:50.336 --> 00:00:55.067
+the correct node for this format. Review
+later scripts and the stored value.
+
+activate_01
+00:00:55.817 --> 00:01:01.436
+Create a draft. Save does not activate it.
+Test representative invoices and credit
+
+activate_02
+00:01:01.436 --> 00:01:06.000
+notes. Activate with the checkmark only
+after the checks pass.
+
+safety_01
+00:01:06.750 --> 00:01:11.638
+Verify a new document, including amounts
+and export. Preserve custom mappings.
+
+safety_02
+00:01:11.638 --> 00:01:17.067
+Before restarting an old document, check
+approvals, exports and manual edits.
+
+sign_01
+00:01:17.817 --> 00:01:22.542
+The negative-sign setting is enabled by
+default but can be disabled. Confirm
+
+sign_02
+00:01:22.542 --> 00:01:27.867
+classification and the sign convention
+expected by Infor ERP or SAP.
+

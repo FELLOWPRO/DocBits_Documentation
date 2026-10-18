@@ -1,0 +1,93 @@
+{
+  "locale": "nl",
+  "title": "Controleer de classificatie van elektronische creditnota's",
+  "english_audio_badge": "",
+  "segments": [
+    {
+      "id": "symptom",
+      "scene_id": "symptom",
+      "narration": "Een elektronische creditnota verschijnt als Invoice. Lees de oorspronkelijke XML. Typecode 381 duidt een creditnota aan.",
+      "caption": "Een elektronische creditnota verschijnt als Invoice. Lees de oorspronkelijke XML. Typecode 381 duidt een creditnota aan."
+    },
+    {
+      "id": "codes",
+      "scene_id": "codes",
+      "narration": "De standaardregels voor FACTURX en ZUGFeRD herkennen ook 261. Codes 383 en 384 betekenen debetnota en gecorrigeerde factuur. Classificeer deze niet als creditnota's.",
+      "caption": "De standaardregels voor FACTURX en ZUGFeRD herkennen ook 261. Codes 383 en 384 betekenen debetnota en gecorrigeerde factuur. Classificeer deze niet als creditnota's."
+    },
+    {
+      "id": "source",
+      "scene_id": "source",
+      "narration": "Open E-Doc voor het gedetecteerde formaat. Een aangepaste organisatietransformatie heeft voorrang op de standaard. Controleer de actieve versie.",
+      "caption": "Open E-Doc voor het gedetecteerde formaat. Een aangepaste organisatietransformatie heeft voorrang op de standaard. Controleer de actieve versie."
+    },
+    {
+      "id": "transform",
+      "scene_id": "transform",
+      "narration": "Zoek voor FACTURX naar INVOICE_TYPE. Een constante Invoice kan de oorspronkelijke creditnotacode tenietdoen. Vergelijk de aangepaste transformatie met de standaard.",
+      "caption": "Zoek voor FACTURX naar INVOICE_TYPE. Een constante Invoice kan de oorspronkelijke creditnotacode tenietdoen. Vergelijk de aangepaste transformatie met de standaard."
+    },
+    {
+      "id": "paths",
+      "scene_id": "paths",
+      "narration": "Test de getransformeerde XML. Controleer of Extraction Paths invoice_type uit de juiste node voor dit formaat leest. Bekijk latere scripts en de opgeslagen waarde.",
+      "caption": "Test de getransformeerde XML. Controleer of Extraction Paths invoice_type uit de juiste node voor dit formaat leest. Bekijk latere scripts en de opgeslagen waarde."
+    },
+    {
+      "id": "activate",
+      "scene_id": "activate",
+      "narration": "Maak een concept. Save activeert het niet. Test representatieve facturen en creditnota's. Activeer pas met het vinkje nadat de controles geslaagd zijn.",
+      "caption": "Maak een concept. Save activeert het niet. Test representatieve facturen en creditnota's. Activeer pas met het vinkje nadat de controles geslaagd zijn."
+    },
+    {
+      "id": "safety",
+      "scene_id": "safety",
+      "narration": "Controleer een nieuw document, inclusief bedragen en export. Behoud aangepaste toewijzingen. Controleer goedkeuringen, exports en handmatige wijzigingen voordat u een oud document opnieuw start.",
+      "caption": "Controleer een nieuw document, inclusief bedragen en export. Behoud aangepaste toewijzingen. Controleer goedkeuringen, exports en handmatige wijzigingen voordat u een oud document opnieuw start."
+    },
+    {
+      "id": "sign",
+      "scene_id": "sign",
+      "narration": "De instelling voor negatieve tekens is standaard ingeschakeld, maar kan worden uitgeschakeld. Bevestig de classificatie en de tekenconventie die Infor ERP of SAP verwacht.",
+      "caption": "De instelling voor negatieve tekens is standaard ingeschakeld, maar kan worden uitgeschakeld. Bevestig de classificatie en de tekenconventie die Infor ERP of SAP verwacht."
+    }
+  ],
+  "labels": {
+    "xml": "Oorspronkelijke XML",
+    "stored": "Opgeslagen waarde",
+    "invoice": "Invoice",
+    "credit": "Credit Note",
+    "credit_codes": "Creditnota",
+    "other_codes": "Andere documenttypen",
+    "debit": "Debetnota",
+    "corrected": "Gecorrigeerde factuur",
+    "source": "Effectieve bron",
+    "custom": "Custom",
+    "default": "Default",
+    "active": "Actieve versie",
+    "transform": "Transformatie",
+    "constant": "Vaste waarde",
+    "compare": "Bronnen vergelijken",
+    "paths": "Extraction Paths",
+    "scripts": "Latere scripts",
+    "verify": "Opgeslagen waarde controleren",
+    "draft": "Concept",
+    "save": "Opslaan",
+    "test": "Testen",
+    "activate": "Activeren",
+    "saved": "Opgeslagen concept",
+    "check": "Vinkje",
+    "safety": "Nieuw testdocument",
+    "preserve": "Aangepaste toewijzingen behouden",
+    "history": "Historische documenten controleren",
+    "approvals": "Goedkeuringen",
+    "exports": "Exports",
+    "edits": "Handmatige wijzigingen",
+    "sign": "Tekens van bedragen controleren",
+    "enabled": "Standaard ingeschakeld",
+    "configurable": "Configureerbaar",
+    "result": "Classificatie + export",
+    "transformed": "Getransformeerde XML"
+  },
+  "notes": {}
+}

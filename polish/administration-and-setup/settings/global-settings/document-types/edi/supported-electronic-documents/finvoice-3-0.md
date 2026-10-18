@@ -4,6 +4,12 @@ description: Obsługa dokumentu elektronicznego FINVOICE 3.0 w DocBits
 
 # 🇫🇮 FINVOICE 3.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Finlandia](countries/finland.md). Sprawdź wersję źródłową przed wybraniem mapowania. Oznaczenie TEAPPSXML nie podaje wydania.
+{% endhint %}
+
 | Właściwość           | Wartość                       |
 | -------------------- | ----------------------------- |
 | **Kraj / Region**    | Finlandia                     |

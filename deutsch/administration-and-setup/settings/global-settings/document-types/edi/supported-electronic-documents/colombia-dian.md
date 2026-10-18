@@ -4,6 +4,12 @@ description: Unterstützung für elektronische Dokumente aus Kolumbien (DIAN) in
 
 # 🇨🇴 Colombia DIAN
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Kolumbien](countries/colombia.md). Für den Gutschrift-Klassifizierungseintrag ist im geprüften Status kein eigenes Extraktionspaket ausgewiesen. Bestätigen Sie die tatsächlich verwendete Zuordnung, statt die Unterstützung aus dem Rechnungseintrag abzuleiten.
+{% endhint %}
+
 | Eigenschaft | Wert |
 |-------------|------|
 | **Land / Region** | Colombia |

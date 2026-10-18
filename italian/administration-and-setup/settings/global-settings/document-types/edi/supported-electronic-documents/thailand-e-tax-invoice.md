@@ -4,6 +4,12 @@ description: Supporto documenti elettronici THAILAND E-TAX INVOICE in DocBits
 
 # 🇹🇭 THAILAND E-TAX INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Thailandia](countries/thailand.md). L’etichetta non indica una versione. Confermate la struttura XML sorgente; la verifica delle firme e la consegna alla piattaforma fiscale richiedono controlli separati.
+{% endhint %}
+
 | Proprietà             | Valore                                         |
 | --------------------- | ---------------------------------------------- |
 | **Paese / Regione**   | Thailandia                                     |

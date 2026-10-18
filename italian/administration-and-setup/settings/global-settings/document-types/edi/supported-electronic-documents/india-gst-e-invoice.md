@@ -4,6 +4,12 @@ description: Supporto per la fattura elettronica GST indiana in DocBits
 
 # 🇮🇳 India GST E-Invoice
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [India](countries/india.md). L’adattatore documentato elabora XML SignedInvoice. Non date per scontato che JSON IRP grezzo, un’immagine QR o un PDF acquisito tramite scansione segua lo stesso percorso di estrazione.
+{% endhint %}
+
 | Proprietà | Valore |
 |----------|-------|
 | **Paese / Regione** | India |

@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico PERU CPE
 
 # 🇵🇪 PERU CPE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Perú](countries/peru.md). Seleccione la versión UBL y la estructura de documento reales. Procesar un archivo no demuestra su aceptación por SUNAT.
+{% endhint %}
+
 | Propiedad              | Valor                                    |
 | ---------------------- | ---------------------------------------- |
 | **País / Región**      | Perú                                     |

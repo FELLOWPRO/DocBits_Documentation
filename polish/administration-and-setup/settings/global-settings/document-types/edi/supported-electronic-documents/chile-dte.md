@@ -4,6 +4,12 @@ description: Obsługa dokumentów elektronicznych CHILE DTE w DocBits
 
 # 🇨🇱 CHILE DTE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Chile](countries/chile.md). Wybierz typ dokumentu biznesowego przed sprawdzeniem pól. Faktury, noty kredytowe i informacje o dostawie używają różnych mapowań.
+{% endhint %}
+
 | Właściwość | Wartość |
 |----------|-------|
 | **Kraj / Region** | Chile |

@@ -4,6 +4,12 @@ description: "DocBits 对 JP PINT SELF-BILLING 电子文档的支持"
 
 # 🇯🇵 JP PINT 自开票
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。 [日本](countries/japan.md). 买方代开票是业务流程变体，而非语言选项。请检查自定义标识和已配置的变体。
+{% endhint %}
+
 | 属性                 | 值                   |
 | -------------------- | -------------------- |
 | **国家 / 地区**      | 日本                 |

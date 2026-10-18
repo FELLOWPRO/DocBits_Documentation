@@ -77,3 +77,7 @@ This feature is essential for verifying that your XPath expressions are correctl
 
 A video guide for this file type is available on the [Videos page.](edi-videos.md)\
 Use it to follow along with setup, editing, and previewing.
+
+## Effective rules and activation
+
+If an electronic credit note appears as Invoice, follow the [classification troubleshooting guide](../credit-note-recognized-as-invoice.md). It covers the effective custom/default source, type codes, Extraction Paths and safe activation.

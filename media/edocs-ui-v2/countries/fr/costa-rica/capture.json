@@ -1,0 +1,29 @@
+{
+  "locale": "fr",
+  "country": "costa-rica",
+  "representative": null,
+  "environment": "development",
+  "runtime_language": "fr",
+  "captured_at": "2026-10-18T08:02:12.987Z",
+  "viewport": {
+    "width": 1600,
+    "height": 1000,
+    "deviceScaleFactor": 2
+  },
+  "redactions": [
+    "version authors",
+    "user menu",
+    "notifications",
+    "mailto links"
+  ],
+  "mutations": [],
+  "captures": [
+    {
+      "name": "rules",
+      "file": "rules.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE?tab=BRAZIL+NFS-E",
+      "sha256": "2e2556b2eb70dfe4e118e15512a31b0a03e18dab47ee32d35669184f653c915f",
+      "focus": null
+    }
+  ]
+}

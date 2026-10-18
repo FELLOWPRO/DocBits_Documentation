@@ -4,6 +4,12 @@ description: Soporte de documentos electrónicos CHILE DTE en DocBits
 
 # 🇨🇱 CHILE DTE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Chile](countries/chile.md). Seleccione el tipo de documento de negocio antes de comprobar los campos. Las facturas, las notas de crédito y la información de entrega utilizan asignaciones diferentes.
+{% endhint %}
+
 | Propiedad | Valor |
 |----------|-------|
 | **País / Región** | Chile |

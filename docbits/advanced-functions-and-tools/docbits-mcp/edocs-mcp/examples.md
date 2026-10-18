@@ -1,146 +1,68 @@
 # Examples
 
-End-to-end examples showing how to use the eDocs MCP tools together.
+For copyable prompts and the full diagnosis, draft, activation and rollback procedure, see [Configure DocBits with Claude or Codex](../configuration-with-claude-or-codex.md). The examples below use the current tool arguments. Replace all placeholders with values returned for your own organization and pass complete, correctly JSON-escaped source code.
 
-## Example 1: Create a Custom Preview for XRechnung
+## 1. Change an existing Custom rule
 
-This example walks through the full lifecycle of a custom PREVIEW rule:
-1. Check what rules already exist
-2. Preview the XSLT without activating it
-3. Create the custom rule
-4. Update it to a new version
-5. Revert to the default
-
-### Step 1: Check existing customizations
-
-Call `list_edoc_custom_attributes`:
+Read the effective `TRANSFORMATION` with `get_edoc_attribute_source`. Use the exact format label returned by classification:
 
 ```json
 {
-  "electronic_document_type": "XRECHNUNG 2.1 CII",
-  "doc_type_key": "INVOICE"
+  "electronic_document_type": "<detected_type_from_response>",
+  "attribute_name": "TRANSFORMATION",
+  "doc_type_key": "INVOICE",
+  "source": "effective"
 }
 ```
 
-The response shows two lists. If `custom` is empty for the `PREVIEW` attribute, your org is currently using the built-in default preview stylesheet.
+Record `attribute_id`, `active_value_id`, `active_version` and `value`. Read `source: "default"` separately for comparison. Read history with `list_edoc_attribute_versions`. The following edit loop assumes an existing organization-owned Custom attribute.
 
-### Step 2: Test your XSLT before creating it
-
-Call `preview_edoc_custom_xslt` with an existing attribute ID (use a default one from the `list` response) and a sample XML file encoded as base64:
+Preview the full candidate without saving it with `preview_edoc_custom_xslt`. Use a document already present in the same organization:
 
 ```json
 {
-  "attribute_id": "<attribute_id_from_list>",
-  "file_content_base64": "<base64_encoded_xrechnung_xml>",
-  "file_name": "test_invoice.xml"
+  "attribute_id": "<custom_attribute_id_from_response>",
+  "candidate_value": "<complete_candidate_xslt>",
+  "doc_id": "<test_document_id_in_this_org>"
 }
 ```
 
-Inspect the rendered output to verify your XSLT produces the expected result before committing it.
+The result is transformed XML for `TRANSFORMATION`, PDF for `PREVIEW`, or fields/tables for `EXTRACTION_PATHS`. The preview does not select a saved draft and does not test later scripts or exports.
 
-### Step 3: Create the custom rule
-
-Call `create_edoc_custom_attribute`:
+After reviewing the diff and preview, reread the active source and save a draft with `update_edoc_custom_attribute`. Explicitly use `activate: false`; this tool defaults to `true`.
 
 ```json
 {
-  "electronic_document_type": "XRECHNUNG 2.1 CII",
-  "attribute_name": "PREVIEW",
-  "attribute_value": "<?xml version=\"1.0\"?><xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" version=\"2.0\">...</xsl:stylesheet>",
-  "doc_type_key": "INVOICE"
+  "attribute_id": "<custom_attribute_id_from_response>",
+  "new_value": "<complete_reviewed_xslt>",
+  "activate": false
 }
 ```
 
-Save the `attribute_id` from the response. From this point on, every XRechnung 2.1 CII invoice processed by your organization will use your custom preview.
-
-### Step 4: Update the rule with a new version
-
-Later, if you want to refine the XSLT, call `update_edoc_custom_attribute`:
+After tests in the test organization and confirmation of the exact change, call `activate_edoc_attribute_version`. `draft_id` is the version value ID. Then read the effective source again. Rollback uses the previously recorded `active_value_id` in the same call.
 
 ```json
 {
-  "attribute_id": "<your_attribute_id>",
-  "new_value": "<?xml version=\"1.0\"?><xsl:stylesheet ...><!-- improved version --></xsl:stylesheet>",
-  "activate": true
+  "attribute_id": "<custom_attribute_id_from_response>",
+  "draft_id": "<value_id_of_reviewed_version>"
 }
 ```
 
-Setting `activate: true` immediately switches to the new version. The previous version is preserved in history. Set `activate: false` to save as a draft and activate it separately.
+## 2. If no Custom attribute exists
 
-### Step 5: Revert to the built-in default
+`create_edoc_custom_attribute` creates an immediately active first version, not a draft. Test a new override in a test organization or use the supported DocBits editor flow. Do not create or delete a production override just to obtain a preview. Preserve required custom mappings; shared defaults must not be modified globally.
 
-If you want to go back to the default preview, call `delete_edoc_custom_attribute`:
+## 3. Test the active configuration
+
+Call `test_electronic_document` with the original XML encoded as base64:
 
 ```json
 {
-  "attribute_id": "<your_attribute_id>"
+  "file_content_base64": "<base64_of_original_xml>",
+  "file_name": "credit-note-test.xml"
 }
 ```
 
-The custom rule is removed and the system falls back to the shared default stylesheet automatically. No other customers are affected.
+This tests the currently active rules without saving a document. It does not test an inactive draft. Remote HTTP MCP cannot read a local `file_path` on your computer. `compare_edoc_extraction` compares Extraction Paths only and requires a Custom Extraction Paths attribute; it does not compare Transformations.
 
----
-
-## Example 2: Customize Extraction Paths for EDI
-
-Your organization receives EDI invoices with a non-standard field layout. This example shows how to override the extraction paths for your org.
-
-### Step 1: Check the current rules
-
-```
-list_edoc_custom_attributes
-  electronic_document_type: "EDI"
-  doc_type_key: "INVOICE"
-```
-
-If you see an `EXTRACTION_PATHS` entry in `default` but not in `custom`, your org inherits the shared XPath rules.
-
-### Step 2: Create your custom extraction paths
-
-Call `create_edoc_custom_attribute` with your adjusted XPath JSON:
-
-```json
-{
-  "electronic_document_type": "EDI",
-  "attribute_name": "EXTRACTION_PATHS",
-  "attribute_value": "{\"invoice_id\": \"//Invoice/ID/text()\", \"invoice_date\": \"//Invoice/IssueDate/text()\", \"total_amount\": \"//Invoice/LegalMonetaryTotal/TaxInclusiveAmount/text()\"}",
-  "doc_type_key": "INVOICE"
-}
-```
-
-### Step 3: Verify with a dry-run test
-
-Call `test_electronic_document` with a sample EDI file to confirm the custom extraction paths pick up the right values:
-
-```json
-{
-  "file_content_base64": "<base64_encoded_edi_xml>",
-  "file_name": "sample_edi_invoice.xml"
-}
-```
-
-The response includes `extracted_fields` and a `preview.image_base64` PNG — inspect both to verify correctness before going live.
-
----
-
-## Example 3: Run a Full eDoc Verification
-
-Before shipping a change, verify that all supported eDoc fixtures still pass:
-
-```
-validate_all_edocs
-  fixture_filter: "xrechnung*"
-  limit: 0
-```
-
-The tool runs every XRechnung fixture through the pipeline and reports pass/fail/warn per fixture. A clean run confirms your customizations haven't broken other document types.
-
-To test just a single type quickly:
-
-```
-verify_electronic_documents
-  fixture_filter: "zugferd*"
-  limit: 3
-```
-
-This uploads up to 3 ZUGFeRD fixtures, waits for processing, and verifies classification, extraction, and preview generation end-to-end.
+`validate_all_edocs` dry-runs the available server fixtures. `verify_electronic_documents` uploads and processes fixtures and therefore creates documents. Neither proves successful ERP delivery. Use representative samples, check stored fields/amounts and export separately, and do not bulk-restart historical documents.

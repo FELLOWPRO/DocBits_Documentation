@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico INDONESIA E
 
 # 🇮🇩 INDONESIA E-FAKTUR
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Indonesia](countries/indonesia.md). La entrada no indica un número de publicación. Confirme el contenido XML real. Una factura impresa o una imagen QR no demuestra la compatibilidad con XML.
+{% endhint %}
+
 | Propiedad              | Valor                                      |
 | ---------------------- | ------------------------------------------ |
 | **País / Región**      | Indonesia                                  |

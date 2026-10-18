@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.625
+Philippines EIS est la famille configurée.
+Le libellé ne précise pas de version.
+
+formats_02
+00:00:05.625 --> 00:00:10.455
+Vérifiez le schéma du contenu et le type
+de document concerné avant de vous fier à
+
+formats_03
+00:00:10.455 --> 00:00:13.033
+un libellé EIS générique.
+
+workflow_01
+00:00:13.783 --> 00:00:19.553
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:19.553 --> 00:00:25.463
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:25.463 --> 00:00:26.533
+l’active pas.
+
+accept_01
+00:00:27.283 --> 00:00:32.264
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:32.264 --> 00:00:37.941
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:37.941 --> 00:00:41.133
+la validation fiscale ni la transmission
+réseau.
+

@@ -1,0 +1,30 @@
+{
+  "locale": "fr",
+  "metadata": {
+    "duration": 99.566667,
+    "width": 1280,
+    "height": 720,
+    "language": "fr",
+    "cues": 20
+  },
+  "playback": {
+    "time": 0.312064,
+    "frames": 14
+  },
+  "seek": {
+    "time": 49.783333,
+    "ready": 4
+  },
+  "mobile": {
+    "scroll": 380,
+    "width": 380,
+    "captions": [
+      "Un avoir électronique apparaît comme\nInvoice. Lisez le XML d’origine. Le code"
+    ],
+    "focusable": 0
+  },
+  "keyboardPlays": true,
+  "ended": true,
+  "range206": true,
+  "errors": []
+}

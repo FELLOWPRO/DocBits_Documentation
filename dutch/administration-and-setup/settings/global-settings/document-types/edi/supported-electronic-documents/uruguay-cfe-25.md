@@ -4,6 +4,12 @@ description: Ondersteuning voor URUGUAY CFE 25 elektronisch document in DocBits
 
 # 🇺🇾 URUGUAY CFE 25
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Uruguay](countries/uruguay.md). Creditnotavermeldingen hebben in de onderzochte status geen eigen extractiebundels. Bevestig de CFE-versie en de daadwerkelijk gebruikte toewijzing voor facturen of creditnota’s.
+{% endhint %}
+
 | Eigenschap | Waarde |
 | ---------- | ------ |
 | **Land / Regio** | Uruguay |

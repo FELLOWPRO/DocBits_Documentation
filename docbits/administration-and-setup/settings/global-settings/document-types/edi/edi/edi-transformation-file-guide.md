@@ -63,3 +63,7 @@ This is especially useful for debugging XSLT mappings and ensuring the final XML
 A video guide for this file type is available on the [Videos page.](edi-videos.md)\
 Use it to follow along with setup, editing, and previewing.\
 \\
+
+## Effective rules and activation
+
+Organization-specific rules take precedence over defaults for the detected eDoc format. Check the active TRANSFORMATION and check which node supplies invoice_type in the transformed XML; the path depends on the format. Save stores a draft; use the checkmark to activate it after testing. A rendered Preview does not prove the stored document type. See the [classification troubleshooting guide](../credit-note-recognized-as-invoice.md) for codes 381/261, later scripts and reprocessing safeguards.

@@ -4,6 +4,12 @@ description: CHILE DTE electronic document support in DocBits
 
 # 🇨🇱 CHILE DTE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Chile](countries/chile.md). Select the business document type before checking fields. Invoice, credit note and delivery information use different mappings.
+{% endhint %}
+
 | Property             | Value                                                      |
 | -------------------- | ---------------------------------------------------------- |
 | **Country / Region** | Chile                                                      |

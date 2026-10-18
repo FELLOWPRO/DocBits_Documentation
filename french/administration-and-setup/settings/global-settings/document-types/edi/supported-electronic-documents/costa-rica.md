@@ -1,30 +1,16 @@
 ---
-description: Prise en charge du document électronique COSTA RICA dans DocBits
+description: "L’ancienne documentation mentionne le Costa Rica, mais aucune entrée de classification ou de configuration correspondante n’a été trouvée dans le catalogue de développement examiné."
 ---
 
 # 🇨🇷 COSTA RICA
 
-| Propriété            | Valeur                                                 |
-| -------------------- | ------------------------------------------------------ |
-| **Pays / Région**    | Costa Rica                                             |
-| **Types de documents** | Facture (Factura Electrónica), Avoir, Note de débit  |
-| **Format**           | XML                                                    |
-| **Norme**            | Factura Electrónica (Ministerio de Hacienda)           |
 
-Le système de facturation électronique du Costa Rica est réglementé par le Ministerio de Hacienda. Les documents électroniques doivent être soumis à la plateforme Hacienda pour validation et comporter une signature numérique. DocBits peut traiter les factures électroniques costaricaines et en extraire les champs clés.
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Costa Rica](countries/costa-rica.md). Cette vérification ne confirme pas le traitement intégré actuel. Demandez à l’assistance de vérifier la correspondance déployée et testez un fichier source représentatif avant le déploiement.
+{% endhint %}
 
-## Statut de prise en charge
+L’ancienne documentation mentionne le Costa Rica, mais aucune entrée de classification ou de configuration correspondante n’a été trouvée dans le catalogue de développement examiné.
 
-| Composant              | Statut             |
-| ---------------------- | ------------------ |
-| Aperçu                 | ✅ Pris en charge   |
-| Extraction des champs  | ✅ Pris en charge   |
-| Transformation         | N/A                |
+Cette vérification ne confirme pas le traitement intégré actuel. Demandez à l’assistance de vérifier la correspondance déployée et testez un fichier source représentatif avant le déploiement.
 
-## Aperçu par défaut
-
-<figure><img src="../../../../../../.gitbook/assets/costa-rica-preview.png" alt="Aperçu d'une facture électronique du Costa Rica dans DocBits"><figcaption><p>Aperçu DocBits par défaut d'une facture électronique du Costa Rica</p></figcaption></figure>
-
-## Voir aussi
-
-* [Documents électroniques pris en charge](./)
+[Costa Rica](countries/costa-rica.md)

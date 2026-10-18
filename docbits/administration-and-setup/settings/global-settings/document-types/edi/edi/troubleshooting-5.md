@@ -35,3 +35,7 @@ hidden: true
 * Use resources such as forums, training, or support from EDI providers for additional assistance with troubleshooting.
 
 By systematically applying these tips, you can effectively troubleshoot EDI transactions and ensure the reliability of your electronic business communications.
+
+## Effective rules and activation
+
+If an electronic credit note appears as Invoice, follow the [classification troubleshooting guide](../credit-note-recognized-as-invoice.md). It covers the effective custom/default source, type codes, Extraction Paths and safe activation.

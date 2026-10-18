@@ -4,6 +4,12 @@ description: Ondersteuning voor KSEF elektronische documenten in DocBits
 
 # 🇵🇱 KSEF
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Polen](countries/poland.md). FA2 en FA3 gebruiken verschillende structuren. Controleer het bronschema en test de juiste toewijzing; het parseren dient geen factuur in bij KSeF.
+{% endhint %}
+
 | Eigenschap           | Waarde                                       |
 | -------------------- | -------------------------------------------- |
 | **Land / Regio**     | Polen                                        |

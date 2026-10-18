@@ -1,0 +1,78 @@
+{
+  "locale": "nl",
+  "country": "japan",
+  "representative": "JP PINT",
+  "environment": "development",
+  "runtime_language": "nl",
+  "captured_at": "2026-10-18T11:23:58.881Z",
+  "viewport": {
+    "width": 1600,
+    "height": 1000,
+    "deviceScaleFactor": 2
+  },
+  "redactions": [
+    "version authors",
+    "user menu",
+    "notifications",
+    "mailto links"
+  ],
+  "mutations": [],
+  "captures": [
+    {
+      "name": "rules",
+      "file": "rules.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE?tab=CHINA+GENERAL+VAT+INVOICE",
+      "sha256": "cc5b6fd750039d87ada12f2ed13a7f3d30fd393e4175f64d15dcea31ba8904fa",
+      "focus": null
+    },
+    {
+      "name": "transformation-code",
+      "file": "transformation-code.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/62de573d-9758-55bb-9809-6e543b63f3c2/JP%20PINT?attribute_name=TRANSFORMATION&attribute_type=XSLT&title=INVOICE",
+      "sha256": "79202f212071cc34611a1dd380d06e0eb318e47399efadab628dce8d00a16301",
+      "focus": {
+        "found": true,
+        "line": 5,
+        "term": "INVOICE_TYPE"
+      }
+    },
+    {
+      "name": "preview-panel",
+      "file": "preview-panel.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/62de573d-9758-55bb-9809-6e543b63f3c2/JP%20PINT?attribute_name=TRANSFORMATION&attribute_type=XSLT&title=INVOICE",
+      "sha256": "a311fd7f2b8cfc05e3f9edbe555c73e158a2a98a428aec15ff2e58566181fc0c",
+      "focus": null
+    },
+    {
+      "name": "extraction-paths-code",
+      "file": "extraction-paths-code.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/5d0d8427-cbdd-4768-aa4d-8641c2d87c85/JP%20PINT?attribute_name=EXTRACTION%20PATHS&attribute_type=JSON&title=INVOICE",
+      "sha256": "e1d172b82d16362d51aac256ccb209bd7cd2af8643b17a853836f29e18a846aa",
+      "focus": {
+        "found": true,
+        "line": 1,
+        "term": "invoice_type"
+      }
+    }
+  ],
+  "rows": [
+    [
+      "TRANSFORMATION",
+      "Default",
+      "XSLT",
+      "—"
+    ],
+    [
+      "PREVIEW",
+      "Default",
+      "XSLT",
+      "—"
+    ],
+    [
+      "EXTRACTION PATHS",
+      "Default",
+      "JSON",
+      "—"
+    ]
+  ]
+}

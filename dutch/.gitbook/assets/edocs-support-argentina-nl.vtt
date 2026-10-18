@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:04.728
+Argentina AFIP en Factura Electronica zijn
+geconfigureerde labels. De
+
+formats_02
+00:00:04.728 --> 00:00:10.114
+classificatievermelding voor creditnota’s
+heeft in de onderzochte status geen eigen
+
+formats_03
+00:00:10.114 --> 00:00:14.851
+extractiebundel. Controleer de
+daadwerkelijk gebruikte toewijzing en test
+
+formats_04
+00:00:14.851 --> 00:00:16.733
+een echt creditnotavoorbeeld.
+
+workflow_01
+00:00:17.483 --> 00:00:23.137
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:23.137 --> 00:00:28.559
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:28.559 --> 00:00:30.033
+activeert het niet.
+
+accept_01
+00:00:30.783 --> 00:00:36.472
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:36.472 --> 00:00:41.754
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:41.754 --> 00:00:45.133
+fiscale goedkeuring of aflevering via een
+netwerk.
+

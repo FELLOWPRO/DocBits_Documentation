@@ -4,6 +4,12 @@ description: KAZAKHSTAN ESF elektronische Dokumentenunterstützung in DocBits
 
 # 🇰🇿 KAZAKHSTAN ESF
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Kasachstan](countries/kazakhstan.md). Die Bezeichnung nennt keine Veröffentlichungsversion. Bestätigen Sie das tatsächliche XML-Schema und leiten Sie aus der Extraktionsunterstützung keine Übermittlung an die Steuerplattform ab.
+{% endhint %}
+
 | Eigenschaft          | Wert                                                 |
 | -------------------- | ---------------------------------------------------- |
 | **Land / Region**    | Kasachstan                                           |

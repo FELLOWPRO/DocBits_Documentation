@@ -4,6 +4,12 @@ description: Ondersteuning voor OIOUBL 2.1 elektronische documenten in DocBits
 
 # 🇩🇰 OIOUBL 2.1
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Denemarken](countries/denmark.md). OIOUBL en Peppol BIS zijn verschillende profielen. Alleen UBL-syntaxis identificeert het nationale profiel niet.
+{% endhint %}
+
 | Eigenschap           | Waarde                                         |
 | -------------------- | ---------------------------------------------- |
 | **Land / Regio**     | Denemarken                                     |

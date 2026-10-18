@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico FINVOICE 3.
 
 # 🇫🇮 FINVOICE 3.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Finlandia](countries/finland.md). Compruebe la versión del archivo de origen antes de elegir una asignación. La etiqueta TEAPPSXML no indica una versión de publicación.
+{% endhint %}
+
 | Propiedad              | Valor                    |
 | ---------------------- | ------------------------ |
 | **País / Región**      | Finlandia                |

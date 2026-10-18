@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.657
+InvoiceNow tiene entradas para facturas y
+notas de crédito. InvoiceNow SG es otra
+
+formats_02
+00:00:07.657 --> 00:00:12.870
+etiqueta configurada. Compruebe los
+identificadores de perfil de Singapur. Un
+
+formats_03
+00:00:12.870 --> 00:00:18.617
+perfil nacional y Peppol BIS genérico
+pueden compartir sintaxis UBL sin
+
+formats_04
+00:00:18.617 --> 00:00:21.200
+compartir todas las reglas de negocio.
+
+workflow_01
+00:00:21.950 --> 00:00:27.302
+Abra E-Doc para el formato detectado.
+Compare Transformation, Preview y
+
+workflow_02
+00:00:27.302 --> 00:00:33.061
+Extraction Paths. Las reglas Custom tienen
+prioridad. Guardar un borrador no lo
+
+workflow_03
+00:00:33.061 --> 00:00:33.900
+activa.
+
+accept_01
+00:00:34.650 --> 00:00:39.190
+Pruebe una factura y una nota de crédito
+cuando corresponda. Verifique los
+
+accept_02
+00:00:39.190 --> 00:00:44.449
+importes, las partes y el tipo de
+documento exportado. Analizar el archivo
+
+accept_03
+00:00:44.449 --> 00:00:48.300
+no demuestra la autorización fiscal ni la
+entrega por red.
+

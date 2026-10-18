@@ -139,3 +139,9 @@ Toute tentative d'écriture sur `00000000-0000-0000-0000-000000000000` renvoie :
   "detail": "Writing to the default org is forbidden via MCP. Default rules are immutable and shared across all customers."
 }
 ```
+
+## Règles effectivement utilisées et activation
+
+Si un avoir électronique apparaît comme Invoice, suivez le [guide de diagnostic de la classification](../../administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md). Il couvre la source personnalisée ou par défaut effectivement utilisée, les codes de type, Extraction Paths et l’activation en toute sécurité.
+
+[Configurer DocBits avec Claude ou Codex](../docbits-mcp/configuration-with-claude-or-codex.md) : connexion, prompts, aperçus, modifications versionnées, contrôles et retour arrière.

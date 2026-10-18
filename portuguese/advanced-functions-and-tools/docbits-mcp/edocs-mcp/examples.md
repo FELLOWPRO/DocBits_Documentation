@@ -1,146 +1,68 @@
 # Exemplos
 
-Exemplos de ponta a ponta que mostram como usar as ferramentas do eDocs MCP em conjunto.
+Consulte os prompts e o procedimento completo de diagnóstico, rascunho, ativação e reversão em [Configurar o DocBits com Claude ou Codex](../configuration-with-claude-or-codex.md). Os exemplos usam os argumentos atuais. Substitua todos os marcadores por valores da sua organização e forneça fontes completas com escape JSON correto.
 
-## Exemplo 1: Criar uma Pré-visualização Personalizada para o XRechnung
+## 1. Alterar uma regra Custom existente
 
-Este exemplo percorre o ciclo de vida completo de uma regra PREVIEW personalizada:
-1. Verificar quais regras já existem
-2. Pré-visualizar o XSLT sem ativá-lo
-3. Criar a regra personalizada
-4. Atualizá-la para uma nova versão
-5. Voltar ao padrão
-
-### Passo 1: Verificar as personalizações existentes
-
-Chame `list_edoc_custom_attributes`:
+Leia a `TRANSFORMATION` efetiva com `get_edoc_attribute_source`, usando a etiqueta exata do formato devolvida pela classificação:
 
 ```json
 {
-  "electronic_document_type": "XRECHNUNG 2.1 CII",
-  "doc_type_key": "INVOICE"
+  "electronic_document_type": "<detected_type_from_response>",
+  "attribute_name": "TRANSFORMATION",
+  "doc_type_key": "INVOICE",
+  "source": "effective"
 }
 ```
 
-A resposta mostra duas listas. Se `custom` estiver vazia para o atributo `PREVIEW`, sua organização está usando atualmente a folha de estilo de pré-visualização padrão integrada.
+Registe `attribute_id`, `active_value_id`, `active_version` e `value`. Leia `source: "default"` separadamente para comparar e o histórico com `list_edoc_attribute_versions`. Os passos seguintes pressupõem um atributo Custom existente da sua organização.
 
-### Passo 2: Testar o XSLT antes de criá-lo
-
-Chame `preview_edoc_custom_xslt` com o ID de um atributo existente (use um padrão da resposta de `list`) e um arquivo XML de exemplo codificado em base64:
+Teste o candidato completo sem o guardar com `preview_edoc_custom_xslt`. Use um documento já existente na mesma organização:
 
 ```json
 {
-  "attribute_id": "<attribute_id_from_list>",
-  "file_content_base64": "<base64_encoded_xrechnung_xml>",
-  "file_name": "test_invoice.xml"
+  "attribute_id": "<custom_attribute_id_from_response>",
+  "candidate_value": "<complete_candidate_xslt>",
+  "doc_id": "<test_document_id_in_this_org>"
 }
 ```
 
-Inspecione o resultado renderizado para verificar se o seu XSLT produz o resultado esperado antes de confirmá-lo.
+O resultado é XML transformado para `TRANSFORMATION`, PDF para `PREVIEW` ou campos/tabelas para `EXTRACTION_PATHS`. A pré-visualização não seleciona um rascunho guardado nem testa scripts posteriores ou exportações.
 
-### Passo 3: Criar a regra personalizada
-
-Chame `create_edoc_custom_attribute`:
+Depois de rever diff e pré-visualização, volte a ler a fonte ativa e guarde um rascunho com `update_edoc_custom_attribute`. Indique explicitamente `activate: false`; o valor predefinido é `true`.
 
 ```json
 {
-  "electronic_document_type": "XRECHNUNG 2.1 CII",
-  "attribute_name": "PREVIEW",
-  "attribute_value": "<?xml version=\"1.0\"?><xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" version=\"2.0\">...</xsl:stylesheet>",
-  "doc_type_key": "INVOICE"
+  "attribute_id": "<custom_attribute_id_from_response>",
+  "new_value": "<complete_reviewed_xslt>",
+  "activate": false
 }
 ```
 
-Guarde o `attribute_id` da resposta. A partir desse momento, toda fatura XRechnung 2.1 CII processada pela sua organização usará a sua pré-visualização personalizada.
-
-### Passo 4: Atualizar a regra com uma nova versão
-
-Mais tarde, se quiser refinar o XSLT, chame `update_edoc_custom_attribute`:
+Após testes na organização de teste e confirmação da alteração concreta, chame `activate_edoc_attribute_version`. `draft_id` é o ID do valor de versão. Volte a ler a fonte efetiva. Para reverter, use o `active_value_id` anterior na mesma chamada.
 
 ```json
 {
-  "attribute_id": "<your_attribute_id>",
-  "new_value": "<?xml version=\"1.0\"?><xsl:stylesheet ...><!-- improved version --></xsl:stylesheet>",
-  "activate": true
+  "attribute_id": "<custom_attribute_id_from_response>",
+  "draft_id": "<value_id_of_reviewed_version>"
 }
 ```
 
-Definir `activate: true` muda imediatamente para a nova versão. A versão anterior é preservada no histórico. Defina `activate: false` para salvar como rascunho e ativá-lo separadamente.
+## 2. Quando não existe um atributo Custom
 
-### Passo 5: Voltar ao padrão integrado
+`create_edoc_custom_attribute` cria uma primeira versão imediatamente ativa, não um rascunho. Teste a nova personalização numa organização de teste ou use o fluxo suportado do editor DocBits. Não crie nem elimine personalizações de produção só para obter uma pré-visualização. Preserve mapeamentos necessários; não altere globalmente as regras predefinidas partilhadas.
 
-Se quiser voltar à pré-visualização padrão, chame `delete_edoc_custom_attribute`:
+## 3. Testar a configuração ativa
+
+Chame `test_electronic_document` com o XML original codificado em base64:
 
 ```json
 {
-  "attribute_id": "<your_attribute_id>"
+  "file_content_base64": "<base64_of_original_xml>",
+  "file_name": "credit-note-test.xml"
 }
 ```
 
-A regra personalizada é removida e o sistema volta automaticamente à folha de estilo padrão compartilhada. Nenhum outro cliente é afetado.
+Isto testa as regras ativas sem guardar um documento, não um rascunho inativo. MCP HTTP remoto não pode ler um `file_path` local do seu computador. `compare_edoc_extraction` compara apenas Extraction Paths e exige um atributo personalizado de caminhos de extração; não compara transformações.
 
----
-
-## Exemplo 2: Personalizar os Caminhos de Extração para EDI
-
-Sua organização recebe faturas EDI com um layout de campos fora do padrão. Este exemplo mostra como substituir os caminhos de extração para a sua organização.
-
-### Passo 1: Verificar as regras atuais
-
-```
-list_edoc_custom_attributes
-  electronic_document_type: "EDI"
-  doc_type_key: "INVOICE"
-```
-
-Se você vir uma entrada `EXTRACTION_PATHS` em `default`, mas não em `custom`, sua organização herda as regras XPath compartilhadas.
-
-### Passo 2: Criar seus caminhos de extração personalizados
-
-Chame `create_edoc_custom_attribute` com o seu JSON de XPath ajustado:
-
-```json
-{
-  "electronic_document_type": "EDI",
-  "attribute_name": "EXTRACTION_PATHS",
-  "attribute_value": "{\"invoice_id\": \"//Invoice/ID/text()\", \"invoice_date\": \"//Invoice/IssueDate/text()\", \"total_amount\": \"//Invoice/LegalMonetaryTotal/TaxInclusiveAmount/text()\"}",
-  "doc_type_key": "INVOICE"
-}
-```
-
-### Passo 3: Verificar com um teste de simulação (dry-run)
-
-Chame `test_electronic_document` com um arquivo EDI de exemplo para confirmar que os caminhos de extração personalizados capturam os valores corretos:
-
-```json
-{
-  "file_content_base64": "<base64_encoded_edi_xml>",
-  "file_name": "sample_edi_invoice.xml"
-}
-```
-
-A resposta inclui `extracted_fields` e um PNG `preview.image_base64` — inspecione ambos para verificar a correção antes de entrar em produção.
-
----
-
-## Exemplo 3: Executar uma Verificação Completa de eDoc
-
-Antes de publicar uma alteração, verifique se todos os fixtures de eDoc suportados continuam passando:
-
-```
-validate_all_edocs
-  fixture_filter: "xrechnung*"
-  limit: 0
-```
-
-A ferramenta executa todos os fixtures XRechnung no pipeline e relata aprovado/reprovado/aviso para cada fixture. Uma execução limpa confirma que as suas personalizações não quebraram outros tipos de documento.
-
-Para testar rapidamente apenas um tipo:
-
-```
-verify_electronic_documents
-  fixture_filter: "zugferd*"
-  limit: 3
-```
-
-Isso envia até 3 fixtures ZUGFeRD, aguarda o processamento e verifica de ponta a ponta a classificação, a extração e a geração da pré-visualização.
+`validate_all_edocs` testa sem persistência os ficheiros disponíveis no servidor. `verify_electronic_documents` carrega-os e processa-os, criando documentos. Nenhum comprova entrega ao ERP. Use amostras representativas, verifique separadamente campos/montantes guardados e exportação e não reinicie documentos históricos em massa.

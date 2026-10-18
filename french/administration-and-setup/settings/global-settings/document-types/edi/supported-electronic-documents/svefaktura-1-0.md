@@ -4,6 +4,12 @@ description: Prise en charge du document électronique SVEFAKTURA 1.0 dans DocBi
 
 # 🇸🇪 SVEFAKTURA 1.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Suède](countries/sweden.md). Distinguez cette famille historique de Peppol BIS Billing 3.0. Vérifiez le profil attendu par le destinataire.
+{% endhint %}
+
 | Propriété            | Valeur         |
 | -------------------- | -------------- |
 | **Pays / Région**    | Suède          |

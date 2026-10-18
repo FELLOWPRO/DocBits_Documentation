@@ -4,6 +4,12 @@ description: Obsługa dokumentów elektronicznych Ecuador SRI (Factura Electrón
 
 # 🇪🇨 Ecuador SRI
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Ekwador](countries/ecuador.md). Wpis klasyfikacji not kredytowych nie ma dedykowanego pakietu ekstrakcji w sprawdzonym stanie. Sprawdź faktycznie używane mapowanie i typ dokumentu źródłowego.
+{% endhint %}
+
 | Właściwość | Wartość |
 |-----------|---------|
 | **Kraj / Region** | Ekwador |

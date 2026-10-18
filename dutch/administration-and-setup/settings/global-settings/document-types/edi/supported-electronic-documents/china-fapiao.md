@@ -4,6 +4,12 @@ description: Ondersteuning voor China Fapiao (FAPIAO, E-FAPIAO, Algemene BTW-fac
 
 # 🇨🇳 China Fapiao
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [China](countries/china.md). De gedocumenteerde adapter gebruikt de XML-naamruimte urn:china:tax:fapiao:1.0. Ga er niet van uit dat elk oorspronkelijk OFD-, PDF- of belastingplatformexportbestand deze gegevensspecificatie gebruikt.
+{% endhint %}
+
 | Eigenschap | Waarde |
 |----------|-------|
 | **Land / Regio** | China |
@@ -12,7 +18,7 @@ description: Ondersteuning voor China Fapiao (FAPIAO, E-FAPIAO, Algemene BTW-fac
 | **Standaard** | Fapiao (发票), State Taxation Administration |
 | **Landinstelling** | `zh_CN` |
 
-Fapiao (发票) is de Chinese belastingfactuurstandaard uitgegeven onder de autoriteit van de State Taxation Administration (STA / 国家税务总局). Alle Fapiao-documenten delen de naamruimte `urn:china:tax:fapiao:1.0`. DocBits detecteert automatisch het Fapiao-type via het element `fapiao_type` en leidt dit naar de juiste extractieregels:
+De catalogus bevat Fapiao, E-Fapiao, General VAT Invoice en Special VAT Invoice. De gedocumenteerde adapter gebruikt de XML-naamruimte urn:china:tax:fapiao:1.0. Ga er niet van uit dat elk oorspronkelijk OFD-, PDF- of belastingplatformexportbestand deze gegevensspecificatie gebruikt.
 
 | Waarde fapiao_type | Documenttype |
 |-------------------|--------------|

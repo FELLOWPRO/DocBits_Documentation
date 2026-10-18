@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.135
+JP PINT y JP PINT Self-Billing son
+entradas independientes. La
+
+formats_02
+00:00:07.135 --> 00:00:12.046
+autofacturación es una variante del
+proceso de negocio, no una elección de
+
+formats_03
+00:00:12.046 --> 00:00:17.833
+idioma. Compruebe el identificador de
+personalización y la variante configurada.
+
+workflow_01
+00:00:18.583 --> 00:00:23.935
+Abra E-Doc para el formato detectado.
+Compare Transformation, Preview y
+
+workflow_02
+00:00:23.935 --> 00:00:29.694
+Extraction Paths. Las reglas Custom tienen
+prioridad. Guardar un borrador no lo
+
+workflow_03
+00:00:29.694 --> 00:00:30.533
+activa.
+
+accept_01
+00:00:31.283 --> 00:00:35.823
+Pruebe una factura y una nota de crédito
+cuando corresponda. Verifique los
+
+accept_02
+00:00:35.823 --> 00:00:41.082
+importes, las partes y el tipo de
+documento exportado. Analizar el archivo
+
+accept_03
+00:00:41.082 --> 00:00:44.933
+no demuestra la autorización fiscal ni la
+entrega por red.
+

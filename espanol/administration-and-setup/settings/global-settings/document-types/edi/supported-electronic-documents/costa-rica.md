@@ -1,30 +1,16 @@
 ---
-description: Compatibilidad de DocBits con el documento electrónico COSTA RICA
+description: "La documentación anterior menciona Costa Rica, pero no se encontró ninguna entrada de clasificación o configuración coincidente en el catálogo de desarrollo inspeccionado."
 ---
 
 # 🇨🇷 COSTA RICA
 
-| Propiedad                | Valor                                                  |
-| ------------------------ | ------------------------------------------------------ |
-| **País / Región**        | Costa Rica                                             |
-| **Tipos de documento**   | Factura (Factura Electrónica), Nota de crédito, Nota de débito |
-| **Formato**              | XML                                                    |
-| **Estándar**             | Factura Electrónica (Ministerio de Hacienda)           |
 
-El sistema de facturación electrónica de Costa Rica está regulado por el Ministerio de Hacienda. Los documentos electrónicos deben enviarse a la plataforma de Hacienda para su validación e incluyen una firma digital. DocBits puede procesar facturas electrónicas costarricenses y extraer los campos principales.
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Costa Rica](countries/costa-rica.md). Esta comprobación no confirma el procesamiento integrado actual. Pida a soporte que verifique la asignación desplegada y pruebe un archivo de origen representativo antes de la puesta en marcha.
+{% endhint %}
 
-## Estado de compatibilidad
+La documentación anterior menciona Costa Rica, pero no se encontró ninguna entrada de clasificación o configuración coincidente en el catálogo de desarrollo inspeccionado.
 
-| Componente             | Estado          |
-| ---------------------- | --------------- |
-| Vista previa           | ✅ Compatible    |
-| Extracción de campos   | ✅ Compatible    |
-| Transformación         | N/D             |
+Esta comprobación no confirma el procesamiento integrado actual. Pida a soporte que verifique la asignación desplegada y pruebe un archivo de origen representativo antes de la puesta en marcha.
 
-## Vista previa predeterminada
-
-<figure><img src="../../../../../../.gitbook/assets/costa-rica-preview.png" alt="Vista previa de la factura electrónica de Costa Rica en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una factura electrónica de Costa Rica</p></figcaption></figure>
-
-## Relacionado
-
-* [Documentos electrónicos compatibles](./)
+[Costa Rica](countries/costa-rica.md)

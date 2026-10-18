@@ -4,6 +4,12 @@ description: TAIWAN EGUI electronic document support in DocBits
 
 # 🇹🇼 TAIWAN EGUI
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Taiwan](countries/taiwan.md). The family label does not certify every MIG release. Check the actual XML schema and test representative electronic invoices.
+{% endhint %}
+
 | Property             | Value                                        |
 | -------------------- | -------------------------------------------- |
 | **Country / Region** | Taiwan                                       |

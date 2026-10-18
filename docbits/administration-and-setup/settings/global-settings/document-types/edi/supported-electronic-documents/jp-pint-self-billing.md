@@ -4,6 +4,12 @@ description: JP PINT SELF-BILLING electronic document support in DocBits
 
 # 🇯🇵 JP PINT SELF-BILLING
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Check the country guide for version limits, effective configuration and the country explainer. [Japan](countries/japan.md). Self-billing is a business-process variant, not a language choice. Check the customization identifier and the configured variant.
+{% endhint %}
+
 | Property             | Value                |
 | -------------------- | -------------------- |
 | **Country / Region** | Japan                |

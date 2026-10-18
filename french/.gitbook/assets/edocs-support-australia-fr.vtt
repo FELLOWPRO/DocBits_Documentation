@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.509
+PINT A-NZ possède des entrées de règles de
+facture et d’avoir partagées avec la
+
+formats_02
+00:00:05.509 --> 00:00:10.084
+Nouvelle-Zélande. Le libellé de famille
+actif ne comporte pas de numéro de
+
+formats_03
+00:00:10.084 --> 00:00:15.471
+publication PINT fixe. Vérifiez les
+identifiants de personnalisation et de
+
+formats_04
+00:00:15.471 --> 00:00:19.667
+profil ; la transmission réseau est une
+intégration distincte.
+
+workflow_01
+00:00:20.417 --> 00:00:26.187
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:26.187 --> 00:00:32.097
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:32.097 --> 00:00:33.167
+l’active pas.
+
+accept_01
+00:00:33.917 --> 00:00:38.898
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:38.898 --> 00:00:44.575
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:44.575 --> 00:00:47.767
+la validation fiscale ni la transmission
+réseau.
+

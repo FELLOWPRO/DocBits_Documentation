@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.335
+Paraguay DTE, SIFEN e SIFEN 150 são
+designações configuradas. As entradas de
+
+formats_02
+00:00:06.335 --> 00:00:12.981
+classificação de notas de crédito não têm
+conjuntos de extração dedicados no estado
+
+formats_03
+00:00:12.981 --> 00:00:18.826
+examinado. Verifique o mapeamento efetivo
+e não trate as designações como
+
+formats_04
+00:00:18.826 --> 00:00:19.867
+equivalentes.
+
+workflow_01
+00:00:20.617 --> 00:00:26.004
+Abra E-Doc para o formato detetado.
+Compare Transformation, Preview e
+
+workflow_02
+00:00:26.004 --> 00:00:33.075
+Extraction Paths. As regras Custom têm
+prioridade. Guardar um rascunho não o
+
+workflow_03
+00:00:33.075 --> 00:00:34.000
+ativa.
+
+accept_01
+00:00:34.750 --> 00:00:40.706
+Teste uma fatura e uma nota de crédito,
+quando aplicável. Verifique os montantes,
+
+accept_02
+00:00:40.706 --> 00:00:46.569
+as partes envolvidas e o tipo de documento
+exportado. A análise do ficheiro não
+
+accept_03
+00:00:46.569 --> 00:00:51.100
+comprova a aprovação fiscal nem a entrega
+através da rede.
+

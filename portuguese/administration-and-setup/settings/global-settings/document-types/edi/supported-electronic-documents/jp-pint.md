@@ -4,6 +4,12 @@ description: Suporte para o documento eletrônico JP PINT no DocBits
 
 # 🇯🇵 JP PINT
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [Japão](countries/japan.md). A autofaturação é uma variante do processo de negócio, não uma escolha de idioma. Verifique o identificador de personalização e a variante configurada.
+{% endhint %}
+
 | Propriedade          | Valor                                          |
 | -------------------- | ---------------------------------------------- |
 | **País / Região**    | Japão                                          |

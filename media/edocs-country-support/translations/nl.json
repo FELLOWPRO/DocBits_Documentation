@@ -1,0 +1,316 @@
+{
+  "title": "eDocs-formaten, versies en landengidsen",
+  "description": "Zoek de geconfigureerde eDocs-familie, syntaxis, versie en het profiel op voordat u de documentverwerking test.",
+  "intro": "Begin met het brondocument en de bijbehorende landengids. Alleen een landnaam identificeert geen bestandsformaat. Een versielabel, XML-syntaxis en een bedrijfsprofiel beschrijven verschillende zaken.",
+  "evidence": "De tabellen beschrijven een controle van de ontwikkelcatalogus op 17 oktober 2026 en de bijbehorende verwerkingscode. Ze tonen de beschikbare regels en configuratiecomponenten; ze vormen geen certificering van elk bestand, elke wettelijke vereiste of een productie-uitrol. Uw organisatie kan de standaardinstellingen overschrijven.",
+  "distinctions_title": "Lees de ondersteuningsmatrix op de juiste manier",
+  "distinctions": [
+    "Familie: het elektronische documentformaat, zoals XRechnung, Factur-X, KSeF of CFDI.",
+    "Syntaxis: de werkelijke gegevensinhoud, zoals UBL XML, CII XML of een PDF met ingesloten XML. Een PDF-scan, JSON-export of QR-afbeelding is geen gelijkwaardige XML-inhoud.",
+    "Versie: de gedeclareerde publicatie- of schemaversie. Een algemeen familielabel bevestigt niet dat elke versie wordt ondersteund.",
+    "Profiel: een deelverzameling van bedrijfsregels of gegevens, zoals BASIC, EN16931, EXTENDED of selfbilling. Een profiel is geen publicatieversie.",
+    "Regel en componenten: classificatie, Transformation, Preview en Extraction Paths staan los van elkaar. Een geconfigureerd profiel heeft niet noodzakelijk een eigen classificatieregel.",
+    "Validatie en verzending: het weergeven van een bestand of het extraheren van gegevens bevestigt op zichzelf niet alle wettelijke regels, handtekeningen, fiscale goedkeuring of aflevering via een netwerk."
+  ],
+  "workflow_title": "Controleer een formaat in uw organisatie",
+  "workflow": [
+    "Bewaar de oorspronkelijke XML of de PDF met ingesloten XML. Lees de naamruimte, het schema of de aanpassingsidentificatie en de gedeclareerde versie of het profiel.",
+    "Open Instellingen → Documenttypen → E-Doc voor het betreffende bedrijfsdocument. Zoek het exacte elektronische documentformaat dat in de gids staat.",
+    "Controleer de daadwerkelijk gebruikte bron, Default of Custom, en de actieve configuratieversie. Bekijk Transformation, Preview en Extraction Paths. Het opslaan van een concept activeert het niet.",
+    "Test representatieve bronbestanden voor elke syntaxis, versie en elk bedrijfsdocument dat u nodig hebt. Controleer de belangrijkste velden, bedragen, belastingen, de classificatie als factuur of creditnota en de ERP-export.",
+    "Bevestig het validatiebeleid en het transport afzonderlijk. Behoud aangepaste toewijzingen en controleer goedkeuringen en de exportgeschiedenis voordat u bestaande documenten opnieuw start."
+  ],
+  "country_title": "Landengidsen",
+  "country_column": "Land / regio",
+  "variants_column": "Families en versieomvang",
+  "status_column": "Catalogusresultaat",
+  "configured": "Vermeldingen gevonden",
+  "unconfirmed": "Niet bevestigd",
+  "format_column": "Exact formaatlabel",
+  "doctype_column": "Documentsleutel van de regel",
+  "components_column": "Beschikbare componenten",
+  "component_note": "C = classificatie, T = Transformation, P = Preview, E = Extraction Paths. De documentsleutel is de opzoeksleutel voor regels en configuratie; deze garandeert niet de uiteindelijk opgeslagen invoice_type. Een transformatie kan een creditnota classificeren via een INVOICE-toewijzing.",
+  "missing_note": "Een streepje betekent dat de statuscontrole geen eigen component voor deze exacte combinatie van formaat en documentsleutel heeft gemeld. Dit sluit een gedeelde of terugvaltoewijzing niet uit. Controleer de daadwerkelijk gebruikte resolver en een representatief bestand voordat u op die route vertrouwt.",
+  "only_title": "Aanvullende configuratielabels",
+  "only_note": "Deze labels hebben configuratievermeldingen, maar geen zelfstandige classificatieregel in de onderzochte catalogus. Een algemene familie of een verfijning van de formaatidentiteit kan een compatibele route selecteren. Alleen hun aanwezigheid bewijst niet dat deze publicatie of dit profiel automatisch wordt gedetecteerd.",
+  "no_rule": "Er is geen overeenkomende classificatie- of configuratievermelding gevonden. Deze controle bevestigt geen huidige ingebouwde ondersteuning.",
+  "screen_title": "Zoek de toewijzing in DocBits",
+  "screen_caption": "Werkelijke ontwikkelinterface: het representatieve formaat en de beschikbare configuratiecomponenten. Andere versies staan in de matrix.",
+  "screen_empty_caption": "Werkelijke ontwikkelinterface: zoeken op deze landnaam leverde geen overeenkomende configuratievermelding op in de onderzochte catalogus.",
+  "video_title": "Uitlegvideo per land",
+  "video_caption": "Gesproken uitleg en WebVTT-ondertitels in de gekozen taal leggen formaatselectie, configuratie en acceptatiecontroles uit.",
+  "back": "Alle landen en ondersteuningsomvang",
+  "related": "Gerelateerde formaatreferentie",
+  "country_intro": "Gebruik deze gids om de geconfigureerde familie en de versieomvang vast te stellen voordat u een bronbestand test.",
+  "scope_title": "Varianten en versiebeperkingen",
+  "matrix_title": "Onderzochte regels en componenten",
+  "acceptance_title": "Acceptatiecontroles",
+  "acceptance": "Een componentcontrole bevestigt dat er configuratie aanwezig is. Het is geen test van de volledige verwerking voor elke versie. Test de exacte gegevensinhoud en de factuur- of creditnotaroute die uw integratie nodig heeft.",
+  "identity_title": "Factur-X / ZUGFeRD: verzin geen publicatieversie",
+  "identity": "Een geharmoniseerde CII Guideline ID kan een familie en profiel identificeren, terwijl meerdere versies dezelfde 1p0-markering gebruiken. Factur-X XMP Version 1.0 is een schemamarkering, geen publicatie zoals 1.08 of 1.09. ZUGFeRD XMP kan zijn versie declareren. Behoud het algemene familieresultaat wanneer gezaghebbende metadata ontbreekt en verifieer het oorspronkelijke bestand bij de afzender.",
+  "profiles": "MINIMUM en BASIC WL kunnen regelgegevens weglaten die verderop in de verwerking nodig zijn. BASIC, EN16931/COMFORT en EXTENDED bieden een verschillende gegevensdekking. Een uitgebreider profiel kan velden bevatten die uw extractietoewijzing niet gebruikt. Controleer vereiste velden met echte voorbeelden.",
+  "index_link": "Raadpleeg de landengidsen voor exacte formaatlabels, syntaxis, versiebeperkingen en de onderzochte configuratiestatus.",
+  "leaf_link": "Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land.",
+  "narration_workflow": "Open E-Doc voor het gedetecteerde formaat. Vergelijk Transformation, Preview en Extraction Paths. Aangepaste regels hebben voorrang. Het opslaan van een concept activeert het niet.",
+  "narration_accept": "Test waar van toepassing een factuur en een creditnota. Controleer bedragen, partijen en het geëxporteerde documenttype. Het parseren bewijst geen fiscale goedkeuring of aflevering via een netwerk.",
+  "narration_unconfirmed": "Er is geen overeenkomende ingebouwde vermelding gevonden in deze catalogus. Vraag support om de uitgerolde toewijzing te controleren. Test een representatief bronbestand vóór de uitrol.",
+  "labels": {
+    "formats": "Formaten en versies",
+    "workflow": "Controleer de gebruikte configuratie",
+    "source": "Brondocument",
+    "detect": "Overeenkomend formaat",
+    "transform": "Transformatie",
+    "preview": "Voorbeeld",
+    "extract": "Extractiepaden",
+    "custom": "Custom overschrijft Default",
+    "accept": "Test de vereiste documentroute",
+    "invoice": "Factuur",
+    "credit": "Creditnota",
+    "fields": "Velden en bedragen",
+    "export": "ERP-export",
+    "limits": "Validatie en aflevering afzonderlijk controleren",
+    "unconfirmed": "Ondersteuning niet bevestigd"
+  },
+  "countries": {
+    "austria": {
+      "name": "Oostenrijk",
+      "scope": "ebInterface 4.3, 5.0, 6.0 en 6.1 hebben afzonderlijke vermeldingen.",
+      "distinction": "Stem de XML-naamruimte af op de geconfigureerde versie. Een andere naamruimte kan een andere toewijzing vereisen.",
+      "narration": "ebInterface 4.3, 5.0, 6.0 en 6.1 hebben afzonderlijke vermeldingen. Stem de XML-naamruimte af op de geconfigureerde versie. Een andere naamruimte kan een andere toewijzing vereisen."
+    },
+    "denmark": {
+      "name": "Denemarken",
+      "scope": "OIOUBL 2.1 is de vermelde Deense variant.",
+      "distinction": "OIOUBL en Peppol BIS zijn verschillende profielen. Alleen UBL-syntaxis identificeert het nationale profiel niet.",
+      "narration": "OIOUBL 2.1 is de vermelde Deense variant. OIOUBL en Peppol BIS zijn verschillende profielen. Alleen UBL-syntaxis identificeert het nationale profiel niet."
+    },
+    "finland": {
+      "name": "Finland",
+      "scope": "Finvoice 1.3, 2.0, 2.01 en 3.0 hebben afzonderlijke vermeldingen. TEAPPSXML is een andere familie.",
+      "distinction": "Controleer de bronversie voordat u een toewijzing kiest. Het TEAPPSXML-label vermeldt geen versie.",
+      "narration": "Finvoice 1.3, 2.0, 2.01 en 3.0 hebben afzonderlijke vermeldingen. TEAPPSXML is een andere familie. Controleer de bronversie voordat u een toewijzing kiest. Het TEAPPSXML-label vermeldt geen versie."
+    },
+    "france": {
+      "name": "Frankrijk",
+      "scope": "Factur-X heeft algemene en versiespecifieke vermeldingen, waaronder 1.0.05, 1.08 en 1.09. VRBL FR CIUS 1.0 staat hier los van.",
+      "distinction": "De XML-markering 1p0 en Factur-X XMP Version 1.0 identificeren geen publicatieversie. Behoud het algemene label als de versie onbekend is.",
+      "narration": "Factur-X heeft algemene en versiespecifieke vermeldingen, waaronder 1.0.05, 1.08 en 1.09. VRBL FR CIUS 1.0 staat hier los van. De XML-markering 1p0 en Factur-X XMP Version 1.0 identificeren geen publicatieversie. Behoud het algemene label als de versie onbekend is."
+    },
+    "germany": {
+      "name": "Duitsland",
+      "scope": "XRechnung heeft dertien versielabels van 1.0 tot 3.0.2, elk in CII en UBL. ZUGFeRD omvat oudere profielen en 2.5-vermeldingen voor CII en UBL.",
+      "distinction": "Syntaxis, publicatieversie en profiel zijn verschillende keuzes. Leid geen Factur-X-publicatie af uit de gedeelde 1p0-markering.",
+      "narration": "XRechnung heeft dertien versielabels van 1.0 tot 3.0.2, elk in CII en UBL. ZUGFeRD omvat oudere profielen en 2.5-vermeldingen voor CII en UBL. Syntaxis, publicatieversie en profiel zijn verschillende keuzes. Leid geen Factur-X-publicatie af uit de gedeelde 1p0-markering."
+    },
+    "italy": {
+      "name": "Italië",
+      "scope": "FatturaPA is de geconfigureerde Italiaanse familie.",
+      "distinction": "Het familielabel certificeert niet elke FatturaPA-versie of verzending via SDI. Controleer het bronschema en de vereisten van de ontvanger.",
+      "narration": "FatturaPA is de geconfigureerde Italiaanse familie. Het familielabel certificeert niet elke FatturaPA-versie of verzending via SDI. Controleer het bronschema en de vereisten van de ontvanger."
+    },
+    "netherlands": {
+      "name": "Nederland",
+      "scope": "SI-UBL 2.0 heeft een eigen vermelding.",
+      "distinction": "Een UBL-bestand is niet automatisch SI-UBL 2.0. Controleer de aanpassingsidentificatie en de bijbehorende nationale toewijzing.",
+      "narration": "SI-UBL 2.0 heeft een eigen vermelding. Een UBL-bestand is niet automatisch SI-UBL 2.0. Controleer de aanpassingsidentificatie en de bijbehorende nationale toewijzing."
+    },
+    "norway": {
+      "name": "Noorwegen",
+      "scope": "EHF Invoice 3.0 staat vermeld naast EHF Order, Order Response en Despatch Advice.",
+      "distinction": "Kies de toewijzing voor het werkelijke bedrijfsdocument. Een order of verzendbericht is geen factuur.",
+      "narration": "EHF Invoice 3.0 staat vermeld naast EHF Order, Order Response en Despatch Advice. Kies de toewijzing voor het werkelijke bedrijfsdocument. Een order of verzendbericht is geen factuur."
+    },
+    "poland": {
+      "name": "Polen",
+      "scope": "KSeF heeft algemene, FA2- en FA3-vermeldingen.",
+      "distinction": "FA2 en FA3 gebruiken verschillende structuren. Controleer het bronschema en test de juiste toewijzing; het parseren dient geen factuur in bij KSeF.",
+      "narration": "KSeF heeft algemene, FA2- en FA3-vermeldingen. FA2 en FA3 gebruiken verschillende structuren. Controleer het bronschema en test de juiste toewijzing; het parseren dient geen factuur in bij KSeF."
+    },
+    "slovenia": {
+      "name": "Slovenië",
+      "scope": "e-SLOG 1.6 en 2.0 hebben afzonderlijke vermeldingen.",
+      "distinction": "De twee versies hebben verschillende XML-structuren. Stem af op het bronschema in plaats van een regel te kiezen op basis van de bestandsnaam.",
+      "narration": "e-SLOG 1.6 en 2.0 hebben afzonderlijke vermeldingen. De twee versies hebben verschillende XML-structuren. Stem af op het bronschema in plaats van een regel te kiezen op basis van de bestandsnaam."
+    },
+    "spain": {
+      "name": "Spanje",
+      "scope": "Facturae heeft algemene vermeldingen en vermeldingen voor 3.2, 3.2.1 en 3.2.2.",
+      "distinction": "Controleer de naamruimte en schemaversie. Gegevensextractie uit een ondertekend XML-bestand verifieert op zichzelf niet de handtekening of acceptatie door FACe.",
+      "narration": "Facturae heeft algemene vermeldingen en vermeldingen voor 3.2, 3.2.1 en 3.2.2. Controleer de naamruimte en schemaversie. Gegevensextractie uit een ondertekend XML-bestand verifieert op zichzelf niet de handtekening of acceptatie door FACe."
+    },
+    "sweden": {
+      "name": "Zweden",
+      "scope": "Svefaktura 1.0 is de vermelde Zweedse variant.",
+      "distinction": "Houd deze oudere familie gescheiden van Peppol BIS Billing 3.0. Controleer welk profiel de ontvanger verwacht.",
+      "narration": "Svefaktura 1.0 is de vermelde Zweedse variant. Houd deze oudere familie gescheiden van Peppol BIS Billing 3.0. Controleer welk profiel de ontvanger verwacht."
+    },
+    "australia": {
+      "name": "Australië",
+      "scope": "PINT A-NZ heeft regelvermeldingen voor facturen en creditnota’s die met Nieuw-Zeeland worden gedeeld.",
+      "distinction": "Het actieve familielabel heeft geen vast PINT-versienummer. Controleer de aanpassings- en profielidentificaties; aflevering via een netwerk is een afzonderlijke integratie.",
+      "narration": "PINT A-NZ heeft regelvermeldingen voor facturen en creditnota’s die met Nieuw-Zeeland worden gedeeld. Het actieve familielabel heeft geen vast PINT-versienummer. Controleer de aanpassings- en profielidentificaties; aflevering via een netwerk is een afzonderlijke integratie."
+    },
+    "new-zealand": {
+      "name": "Nieuw-Zeeland",
+      "scope": "PINT A-NZ heeft regelvermeldingen voor facturen en creditnota’s die met Australië worden gedeeld.",
+      "distinction": "Het actieve familielabel heeft geen vast PINT-versienummer. Controleer de aanpassings- en profielidentificaties; aflevering via een netwerk is een afzonderlijke integratie.",
+      "narration": "PINT A-NZ heeft regelvermeldingen voor facturen en creditnota’s die met Australië worden gedeeld. Het actieve familielabel heeft geen vast PINT-versienummer. Controleer de aanpassings- en profielidentificaties; aflevering via een netwerk is een afzonderlijke integratie."
+    },
+    "india": {
+      "name": "India",
+      "scope": "India GST E-Invoice en GST CreditNote hebben afzonderlijke vermeldingen.",
+      "distinction": "De gedocumenteerde adapter verwerkt SignedInvoice XML. Ga er niet van uit dat ruwe IRP JSON, een QR-afbeelding of een PDF-scan dezelfde extractieroute volgt.",
+      "narration": "India GST E-Invoice en GST CreditNote hebben afzonderlijke vermeldingen. De gedocumenteerde adapter verwerkt SignedInvoice XML. Ga er niet van uit dat ruwe IRP JSON, een QR-afbeelding of een PDF-scan dezelfde extractieroute volgt."
+    },
+    "indonesia": {
+      "name": "Indonesië",
+      "scope": "Indonesia E-Faktur is de geconfigureerde familie.",
+      "distinction": "De vermelding geeft geen versienummer aan. Controleer de werkelijke XML-inhoud; een afgedrukte factuur of QR-afbeelding bevestigt geen XML-ondersteuning.",
+      "narration": "Indonesia E-Faktur is de geconfigureerde familie. De vermelding geeft geen versienummer aan. Controleer de werkelijke XML-inhoud; een afgedrukte factuur of QR-afbeelding bevestigt geen XML-ondersteuning."
+    },
+    "china": {
+      "name": "China",
+      "scope": "De catalogus bevat Fapiao, E-Fapiao, General VAT Invoice en Special VAT Invoice.",
+      "distinction": "De gedocumenteerde adapter gebruikt de XML-naamruimte urn:china:tax:fapiao:1.0. Ga er niet van uit dat elk oorspronkelijk OFD-, PDF- of belastingplatformexportbestand deze gegevensspecificatie gebruikt.",
+      "narration": "De catalogus bevat Fapiao, E-Fapiao, General VAT Invoice en Special VAT Invoice. De gedocumenteerde adapter gebruikt de XML-naamruimte urn:china:tax:fapiao:1.0. Ga er niet van uit dat elk oorspronkelijk OFD-, PDF- of belastingplatformexportbestand deze gegevensspecificatie gebruikt."
+    },
+    "japan": {
+      "name": "Japan",
+      "scope": "JP PINT en JP PINT Self-Billing zijn afzonderlijke vermeldingen.",
+      "distinction": "Selfbilling is een variant van een bedrijfsproces, geen taalkeuze. Controleer de aanpassingsidentificatie en de geconfigureerde variant.",
+      "narration": "JP PINT en JP PINT Self-Billing zijn afzonderlijke vermeldingen. Selfbilling is een variant van een bedrijfsproces, geen taalkeuze. Controleer de aanpassingsidentificatie en de geconfigureerde variant."
+    },
+    "korea": {
+      "name": "Zuid-Korea",
+      "scope": "Korea E-Tax Invoice en Korea NTS zijn geconfigureerde families.",
+      "distinction": "De labels noemen geen versie. Stem af op de werkelijke XML-structuur en beschouw extractie niet als bewijs van acceptatie door het belastingplatform.",
+      "narration": "Korea E-Tax Invoice en Korea NTS zijn geconfigureerde families. De labels noemen geen versie. Stem af op de werkelijke XML-structuur en beschouw extractie niet als bewijs van acceptatie door het belastingplatform."
+    },
+    "malaysia": {
+      "name": "Maleisië",
+      "scope": "MyInvois heeft regelvermeldingen voor facturen en creditnota’s.",
+      "distinction": "De onderzochte extractieroute is gebaseerd op XML. Het nationale platform accepteert ook JSON, maar dat bevestigt geen JSON-importondersteuning in deze DocBits-toewijzing.",
+      "narration": "MyInvois heeft regelvermeldingen voor facturen en creditnota’s. De onderzochte extractieroute is gebaseerd op XML. Het nationale platform accepteert ook JSON, maar dat bevestigt geen JSON-importondersteuning in deze DocBits-toewijzing."
+    },
+    "philippines": {
+      "name": "Filipijnen",
+      "scope": "Philippines EIS is de geconfigureerde familie.",
+      "distinction": "Het label noemt geen versie. Controleer het schema van de gegevensinhoud en het betreffende documenttype voordat u op een algemeen EIS-label vertrouwt.",
+      "narration": "Philippines EIS is de geconfigureerde familie. Het label noemt geen versie. Controleer het schema van de gegevensinhoud en het betreffende documenttype voordat u op een algemeen EIS-label vertrouwt."
+    },
+    "singapore": {
+      "name": "Singapore",
+      "scope": "InvoiceNow heeft vermeldingen voor facturen en creditnota’s; InvoiceNow SG is een ander geconfigureerd label.",
+      "distinction": "Controleer de Singaporese profielidentificaties. Een nationaal profiel en algemeen Peppol BIS kunnen dezelfde UBL-syntaxis gebruiken zonder alle bedrijfsregels te delen.",
+      "narration": "InvoiceNow heeft vermeldingen voor facturen en creditnota’s; InvoiceNow SG is een ander geconfigureerd label. Controleer de Singaporese profielidentificaties. Een nationaal profiel en algemeen Peppol BIS kunnen dezelfde UBL-syntaxis gebruiken zonder alle bedrijfsregels te delen."
+    },
+    "taiwan": {
+      "name": "Taiwan",
+      "scope": "Taiwan eGUI is de geconfigureerde familie.",
+      "distinction": "Het familielabel certificeert niet elke MIG-versie. Controleer het werkelijke XML-schema en test representatieve elektronische facturen.",
+      "narration": "Taiwan eGUI is de geconfigureerde familie. Het familielabel certificeert niet elke MIG-versie. Controleer het werkelijke XML-schema en test representatieve elektronische facturen."
+    },
+    "thailand": {
+      "name": "Thailand",
+      "scope": "Thailand E-Tax Invoice is de geconfigureerde familie.",
+      "distinction": "Het label noemt geen versie. Controleer de structuur van de bron-XML; handtekeningverificatie en aflevering bij het belastingplatform vereisen afzonderlijke controles.",
+      "narration": "Thailand E-Tax Invoice is de geconfigureerde familie. Het label noemt geen versie. Controleer de structuur van de bron-XML; handtekeningverificatie en aflevering bij het belastingplatform vereisen afzonderlijke controles."
+    },
+    "vietnam": {
+      "name": "Vietnam",
+      "scope": "Vietnam E-Invoice is de geconfigureerde familie.",
+      "distinction": "Het label noemt geen versie. Controleer de naamruimte en het schema van de bron in plaats van aan te nemen dat alle belastingplatformexports dezelfde structuur hebben.",
+      "narration": "Vietnam E-Invoice is de geconfigureerde familie. Het label noemt geen versie. Controleer de naamruimte en het schema van de bron in plaats van aan te nemen dat alle belastingplatformexports dezelfde structuur hebben."
+    },
+    "argentina": {
+      "name": "Argentinië",
+      "scope": "Argentina AFIP en Factura Electronica zijn geconfigureerde labels.",
+      "distinction": "De classificatievermelding voor creditnota’s heeft in de onderzochte status geen eigen extractiebundel. Controleer de daadwerkelijk gebruikte toewijzing en test een echt creditnotavoorbeeld.",
+      "narration": "Argentina AFIP en Factura Electronica zijn geconfigureerde labels. De classificatievermelding voor creditnota’s heeft in de onderzochte status geen eigen extractiebundel. Controleer de daadwerkelijk gebruikte toewijzing en test een echt creditnotavoorbeeld."
+    },
+    "brazil": {
+      "name": "Brazilië",
+      "scope": "Brazilië heeft NF-e-, NFC-e-, CT-e-, NFS-e- en SPED NFS-e-vermeldingen. NFS-e omvat de versies 1.00 en 2.00 tot 2.04; SPED omvat 1.00.02 en 1.01.",
+      "distinction": "Dit zijn verschillende documentfamilies. Een geconfigureerde NFS-e-versie certificeert niet elk gemeentelijk schema of elke nationale indeling voor dienstenfacturen.",
+      "narration": "Brazilië heeft NF-e-, NFC-e-, CT-e-, NFS-e- en SPED NFS-e-vermeldingen. NFS-e omvat de versies 1.00 en 2.00 tot 2.04; SPED omvat 1.00.02 en 1.01. Dit zijn verschillende documentfamilies. Een geconfigureerde NFS-e-versie certificeert niet elk gemeentelijk schema of elke nationale indeling voor dienstenfacturen."
+    },
+    "chile": {
+      "name": "Chili",
+      "scope": "Chile DTE heeft vermeldingen voor facturen, creditnota’s en verzenddocumenten.",
+      "distinction": "Selecteer het bedrijfsdocumenttype voordat u de velden controleert. Facturen, creditnota’s en leveringsinformatie gebruiken verschillende toewijzingen.",
+      "narration": "Chile DTE heeft vermeldingen voor facturen, creditnota’s en verzenddocumenten. Selecteer het bedrijfsdocumenttype voordat u de velden controleert. Facturen, creditnota’s en leveringsinformatie gebruiken verschillende toewijzingen."
+    },
+    "colombia": {
+      "name": "Colombia",
+      "scope": "Colombia Factura Electronica en Documento Soporte hebben afzonderlijke vermeldingen.",
+      "distinction": "De classificatievermelding voor creditnota’s heeft in de onderzochte status geen eigen extractiebundel. Bevestig de daadwerkelijk gebruikte toewijzing in plaats van ondersteuning af te leiden uit de factuurvermelding.",
+      "narration": "Colombia Factura Electronica en Documento Soporte hebben afzonderlijke vermeldingen. De classificatievermelding voor creditnota’s heeft in de onderzochte status geen eigen extractiebundel. Bevestig de daadwerkelijk gebruikte toewijzing in plaats van ondersteuning af te leiden uit de factuurvermelding."
+    },
+    "costa-rica": {
+      "name": "Costa Rica",
+      "scope": "De oudere documentatie noemt Costa Rica, maar in de onderzochte ontwikkelcatalogus is geen overeenkomende classificatie- of configuratievermelding gevonden.",
+      "distinction": "Deze controle bevestigt geen huidige ingebouwde verwerking. Vraag support om de uitgerolde toewijzing te controleren en test vóór de uitrol een representatief bronbestand.",
+      "narration": "De oudere documentatie noemt Costa Rica, maar in de onderzochte ontwikkelcatalogus is geen overeenkomende classificatie- of configuratievermelding gevonden. Deze controle bevestigt geen huidige ingebouwde verwerking. Vraag support om de uitgerolde toewijzing te controleren en test vóór de uitrol een representatief bronbestand."
+    },
+    "ecuador": {
+      "name": "Ecuador",
+      "scope": "Ecuador SRI heeft algemene vermeldingen en vermeldingen voor 1.0.0, 1.1.0, 2.0.0 en 2.1.0. Withholding (bronbelasting) is een afzonderlijk documenttype.",
+      "distinction": "De classificatievermelding voor creditnota’s heeft in de onderzochte status geen eigen extractiebundel. Controleer de daadwerkelijk gebruikte toewijzing en het type brondocument.",
+      "narration": "Ecuador SRI heeft algemene vermeldingen en vermeldingen voor 1.0.0, 1.1.0, 2.0.0 en 2.1.0. Withholding (bronbelasting) is een afzonderlijk documenttype. De classificatievermelding voor creditnota’s heeft in de onderzochte status geen eigen extractiebundel. Controleer de daadwerkelijk gebruikte toewijzing en het type brondocument."
+    },
+    "mexico": {
+      "name": "Mexico",
+      "scope": "Mexico CFDI 3.3 en 4.0 hebben afzonderlijke vermeldingen.",
+      "distinction": "Controleer de naamruimte, versie en TipoDeComprobante. Een creditnota wordt niet alleen door een negatief bedrag geïdentificeerd; het parseren certificeert geen SAT-goedkeuring.",
+      "narration": "Mexico CFDI 3.3 en 4.0 hebben afzonderlijke vermeldingen. Controleer de naamruimte, versie en TipoDeComprobante. Een creditnota wordt niet alleen door een negatief bedrag geïdentificeerd; het parseren certificeert geen SAT-goedkeuring."
+    },
+    "paraguay": {
+      "name": "Paraguay",
+      "scope": "Paraguay DTE, SIFEN en SIFEN 150 zijn geconfigureerde labels.",
+      "distinction": "Classificatievermeldingen voor creditnota’s hebben in de onderzochte status geen eigen extractiebundels. Controleer de daadwerkelijk gebruikte toewijzing en beschouw de labels niet als onderling uitwisselbaar.",
+      "narration": "Paraguay DTE, SIFEN en SIFEN 150 zijn geconfigureerde labels. Classificatievermeldingen voor creditnota’s hebben in de onderzochte status geen eigen extractiebundels. Controleer de daadwerkelijk gebruikte toewijzing en beschouw de labels niet als onderling uitwisselbaar."
+    },
+    "peru": {
+      "name": "Peru",
+      "scope": "Peru CPE heeft algemene vermeldingen en vermeldingen voor UBL 2.0 en UBL 2.1. Factura Electronica is een ander label.",
+      "distinction": "Selecteer de werkelijke UBL-versie en documentstructuur. Het verwerken van een bestand bewijst geen acceptatie door SUNAT.",
+      "narration": "Peru CPE heeft algemene vermeldingen en vermeldingen voor UBL 2.0 en UBL 2.1. Factura Electronica is een ander label. Selecteer de werkelijke UBL-versie en documentstructuur. Het verwerken van een bestand bewijst geen acceptatie door SUNAT."
+    },
+    "uruguay": {
+      "name": "Uruguay",
+      "scope": "Uruguay CFE heeft algemene vermeldingen en vermeldingen voor 24 en 25. E-Factura en E-Nota Credito staan ook vermeld.",
+      "distinction": "Creditnotavermeldingen hebben in de onderzochte status geen eigen extractiebundels. Bevestig de CFE-versie en de daadwerkelijk gebruikte toewijzing voor facturen of creditnota’s.",
+      "narration": "Uruguay CFE heeft algemene vermeldingen en vermeldingen voor 24 en 25. E-Factura en E-Nota Credito staan ook vermeld. Creditnotavermeldingen hebben in de onderzochte status geen eigen extractiebundels. Bevestig de CFE-versie en de daadwerkelijk gebruikte toewijzing voor facturen of creditnota’s."
+    },
+    "kazakhstan": {
+      "name": "Kazachstan",
+      "scope": "Kazakhstan ESF is de geconfigureerde familie.",
+      "distinction": "Het label vermeldt geen versie. Controleer het werkelijke XML-schema en leid verzending naar het belastingplatform niet af uit ondersteuning voor extractie.",
+      "narration": "Kazakhstan ESF is de geconfigureerde familie. Het label vermeldt geen versie. Controleer het werkelijke XML-schema en leid verzending naar het belastingplatform niet af uit ondersteuning voor extractie."
+    },
+    "saudi-arabia": {
+      "name": "Saoedi-Arabië",
+      "scope": "ZATCA Fatoorah, Reporting, Simplified en Tax Invoice hebben afzonderlijke vermeldingen.",
+      "distinction": "Deze labels beschrijven verschillende processen en factuurvarianten. Het parseren bewijst geen ondertekening, fiscale goedkeuring of rapportage via ZATCA.",
+      "narration": "ZATCA Fatoorah, Reporting, Simplified en Tax Invoice hebben afzonderlijke vermeldingen. Deze labels beschrijven verschillende processen en factuurvarianten. Het parseren bewijst geen ondertekening, fiscale goedkeuring of rapportage via ZATCA."
+    },
+    "turkey": {
+      "name": "Turkije",
+      "scope": "Turkey E-Fatura en E-Arsiv zijn afzonderlijke geconfigureerde families.",
+      "distinction": "Controleer het bronprofiel en de documentstructuur. Het familielabel identificeert niet elke UBL-TR-versie en bevestigt geen aflevering via het belastingplatform.",
+      "narration": "Turkey E-Fatura en E-Arsiv zijn afzonderlijke geconfigureerde families. Controleer het bronprofiel en de documentstructuur. Het familielabel identificeert niet elke UBL-TR-versie en bevestigt geen aflevering via het belastingplatform."
+    },
+    "united-arab-emirates": {
+      "name": "Verenigde Arabische Emiraten",
+      "scope": "UAE VAT Invoice is het geconfigureerde label.",
+      "distinction": "Een btw-factuurtoewijzing bevestigt geen ondersteuning voor elke UAE Peppol- of PINT-versie. Controleer de gegevensspecificatie en de vereiste integratie voor aflevering.",
+      "narration": "UAE VAT Invoice is het geconfigureerde label. Een btw-factuurtoewijzing bevestigt geen ondersteuning voor elke UAE Peppol- of PINT-versie. Controleer de gegevensspecificatie en de vereiste integratie voor aflevering."
+    },
+    "international": {
+      "name": "Internationaal",
+      "scope": "Internationale vermeldingen omvatten Peppol BIS 3.0, UBL 2.1, zuivere CII, EDI, INVOIC02, cXML, OCI, BOD en SPS Commerce RSX 7.7.4.",
+      "distinction": "Toewijzingen voor facturen, orders, antwoorden en verzendberichten staan los van elkaar. Bestandsverwerking biedt op zichzelf geen Peppol-toegangspunt of verbinding met handelspartners.",
+      "narration": "Internationale vermeldingen omvatten Peppol BIS 3.0, UBL 2.1, zuivere CII, EDI, INVOIC02, cXML, OCI, BOD en SPS Commerce RSX 7.7.4. Toewijzingen voor facturen, orders, antwoorden en verzendberichten staan los van elkaar. Bestandsverwerking biedt op zichzelf geen Peppol-toegangspunt of verbinding met handelspartners."
+    }
+  }
+}

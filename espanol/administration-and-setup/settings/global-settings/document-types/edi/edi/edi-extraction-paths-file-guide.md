@@ -78,3 +78,7 @@ Esta función es esencial para verificar que tus expresiones XPath estén correc
 ## 6. Video Tutorial
 
 Una guía en video para este tipo de archivo está disponible en la [página de Videos.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Úsala para seguir la configuración, edición y vista previa.
+
+## Reglas utilizadas y activación
+
+Si una nota de crédito electrónica aparece como Invoice, siga la [guía de resolución de problemas de clasificación](../credit-note-recognized-as-invoice.md). Explica el origen personalizado o predeterminado que se está utilizando, los códigos de tipo, Extraction Paths y la activación segura.

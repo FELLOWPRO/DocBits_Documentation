@@ -1,0 +1,78 @@
+{
+  "locale": "zh",
+  "country": "vietnam",
+  "representative": "VIETNAM E-INVOICE",
+  "environment": "development",
+  "runtime_language": "zh",
+  "captured_at": "2026-10-18T13:17:01.507Z",
+  "viewport": {
+    "width": 1600,
+    "height": 1000,
+    "deviceScaleFactor": 2
+  },
+  "redactions": [
+    "version authors",
+    "user menu",
+    "notifications",
+    "mailto links"
+  ],
+  "mutations": [],
+  "captures": [
+    {
+      "name": "rules",
+      "file": "rules.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE?tab=THAILAND+E-TAX+INVOICE",
+      "sha256": "afc92614736005d27ff9453ce41bf1b84ab30562b9de26883923767623bd0d35",
+      "focus": null
+    },
+    {
+      "name": "transformation-code",
+      "file": "transformation-code.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/facc55ee-95f2-4310-8b94-a88ff5bb7fbf/VIETNAM%20E-INVOICE?attribute_name=TRANSFORMATION&attribute_type=XSLT&title=INVOICE",
+      "sha256": "e2f7d23c4e4dc2dc2296210f92235cd463eabb81c49096b80de957fef88af843",
+      "focus": {
+        "found": true,
+        "line": 5,
+        "term": "INVOICE_TYPE"
+      }
+    },
+    {
+      "name": "preview-panel",
+      "file": "preview-panel.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/facc55ee-95f2-4310-8b94-a88ff5bb7fbf/VIETNAM%20E-INVOICE?attribute_name=TRANSFORMATION&attribute_type=XSLT&title=INVOICE",
+      "sha256": "96b44fbdfdd25eaea68d690f8cf8528822b7d7bbca9f1b1d0d56ae88e0230008",
+      "focus": null
+    },
+    {
+      "name": "extraction-paths-code",
+      "file": "extraction-paths-code.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/beaf6bfa-272d-4e95-b8cd-2e481a9415f9/VIETNAM%20E-INVOICE?attribute_name=EXTRACTION%20PATHS&attribute_type=JSON&title=INVOICE",
+      "sha256": "8eca7faba0436e9775104eb95903786bf6c7f5ab546580237012891c477955b9",
+      "focus": {
+        "found": true,
+        "line": 1,
+        "term": "invoice_type"
+      }
+    }
+  ],
+  "rows": [
+    [
+      "TRANSFORMATION",
+      "Default",
+      "XSLT",
+      "—"
+    ],
+    [
+      "PREVIEW",
+      "Default",
+      "XSLT",
+      "—"
+    ],
+    [
+      "EXTRACTION PATHS",
+      "Default",
+      "JSON",
+      "—"
+    ]
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "locale": "de",
+  "country": "costa-rica",
+  "representative": null,
+  "environment": "development",
+  "runtime_language": "de",
+  "captured_at": "2026-10-18T07:10:03.888Z",
+  "viewport": {
+    "width": 1600,
+    "height": 1000,
+    "deviceScaleFactor": 2
+  },
+  "redactions": [
+    "version authors",
+    "user menu",
+    "notifications",
+    "mailto links"
+  ],
+  "mutations": [],
+  "captures": [
+    {
+      "name": "rules",
+      "file": "rules.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE?tab=COLOMBIA+FACTURA+ELECTRONICA",
+      "sha256": "d6386596b55f76edb7efa8f008d5c46617badf11785cc55650d25e68a83b934d",
+      "focus": null
+    }
+  ]
+}

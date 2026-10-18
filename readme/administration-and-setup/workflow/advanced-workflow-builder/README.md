@@ -2,9 +2,44 @@
 
 **高级工作流**构建器是一种节点图编辑器，适用于需要分支、并行路径和流程控制的工作流，可实现标准构建器中线性的 When/And/Then 流程无法满足的需求。你可以在画布上排列节点并将它们连接起来，以定义执行流程。
 
-{% embed url="https://youtu.be/EeNFVR6z7G8" %}
-高级工作流设计器
-{% endembed %}
+## 视频：在 DocBits 中配置发票处理路径
+
+视频展示真实 DocBits 界面中已配置的工作流，包括金额检查、两个操作、路径连接和测试用例准备。
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/zh.mp4" %}
+
+[字幕文件（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/zh.vtt)
+
+画面中是尚未保存的演示草稿。`total_amount` 和 `approval_route` 是示例字段键名。`Approval` 和 `Standard` 用于标记路径。请为自己的流程配置实际的业务操作。
+
+<details>
+<summary>文字稿</summary>
+
+**一张发票，两条路径**
+
+这是 DocBits 中真实的高级工作流界面。发票金额检查连接到两个操作。连接关系决定执行哪一个操作。本示例使用尚未保存的草稿和演示字段。
+
+**配置金额检查**
+
+打开添加菜单，选择 And，再选择文档字段条件。设置金额字段，选择大于，并输入一千。请使用文档配置中准确的字段键名。
+
+**配置操作卡片**
+
+添加两张 Then 卡片。两张卡片都设置演示字段 approval route。一张写入 Approval，另一张写入 Standard。这些值用于标记路径。生产工作流需要配置实际的业务操作。
+
+**连接不同结果的输出**
+
+将 Start 连接到条件的输入端。将蓝色成功输出连接到 Approval，将橙色条件不满足输出连接到 Standard。红色错误输出用于单独处理求值错误。仅移动卡片的位置不会建立执行路径。
+
+**准备测试用例**
+
+在工具栏中打开测试。选择测试文档，或以 JSON 格式输入完整的文档数据。分别检查大于、小于和等于一千的金额，以及缺失值。执行后，请检查各个节点的结果。
+
+**验证、保存并检查启用状态**
+
+验证连接和卡片设置。明确保存到服务器，然后单独检查工作流是否已启用。浏览器自动草稿不能代替保存。执行工作流和访问日志需要相应的模块及订阅。
+
+</details>
 
 ## 如何访问
 

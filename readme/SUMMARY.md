@@ -299,6 +299,7 @@
           * [Mapowanie ZUGFeRD 2.3](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-2-3.md)
           * [Mapowanie ZUGFeRD 2.3.2](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-2-3-2.md)
         * [Mapowanie pól ZUGFeRD + Szwajcarski kod QR](administration-and-setup/settings/global-settings/document-types/edi/zugferd-and-swiss-qr-merge.md)
+        * [Faktura (FatturaPA)](administration-and-setup/settings/global-settings/document-types/edi/faktura.md)
         * [eSLOG 1.6 i 2.0](administration-and-setup/settings/global-settings/document-types/edi/eslog-1.6-and-2.0.md)
         * [Formaty eDocs, wersje i przewodniki krajowe](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md)
           * [Austria](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/countries/austria.md)

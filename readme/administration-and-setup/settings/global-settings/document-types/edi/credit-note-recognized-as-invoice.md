@@ -9,11 +9,15 @@ Elektroniczna nota kredytowa może być wyświetlana jako **Invoice**, mimo że 
 
 ## Sprawdź klasyfikację elektronicznych not kredytowych
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-pl.mp4" %}
+Film pokazuje sprawdzenie w DocBits bez wprowadzania zmian, na przykładzie FACTURX 1.0.05 / ZUGFeRD 2.1. Mapowania i wersje mogą się różnić w Twojej organizacji. Zawsze sprawdzaj aktywną Transformation dla wykrytego formatu.
+
+Starszy przykład XSLT pokazany w filmie zawiera gałęzie dla kodów 381 i 389. Sprawdź w rzeczywistej Transformation, które kody zachowuje ta konkretna wersja; ogólna lista kodów nie dowodzi ich obsługi w każdym historycznym mapowaniu.
+
+{% file src="../../../../../.gitbook/assets/edocs-credit-note-pl-v2.mp4" %}
 Sprawdź klasyfikację elektronicznych not kredytowych
 {% endfile %}
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-pl.vtt" %}
+{% file src="../../../../../.gitbook/assets/edocs-credit-note-pl-v2.vtt" %}
 WebVTT
 {% endfile %}
 

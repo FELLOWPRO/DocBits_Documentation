@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.486
+Brazylia ma wpisy NF-e, NFC-e, CT-e, NFS-e
+i SPED NFS-e. NFS-e obejmuje wersje 1.00 i
+
+formats_02
+00:00:07.486 --> 00:00:14.125
+od 2.00 do 2.04; SPED obejmuje 1.00.02 i
+1.01. Są to różne rodziny dokumentów.
+
+formats_03
+00:00:14.125 --> 00:00:20.340
+Skonfigurowana wersja NFS-e nie
+certyfikuje każdego schematu gminnego ani
+
+formats_04
+00:00:20.340 --> 00:00:24.000
+każdego krajowego układu faktury za
+usługi.
+
+workflow_01
+00:00:24.750 --> 00:00:30.218
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:30.218 --> 00:00:35.791
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:35.791 --> 00:00:38.600
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:39.350 --> 00:00:45.376
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:45.376 --> 00:00:51.308
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:51.308 --> 00:00:54.133
+podatkowego ani dostarczenia przez sieć.
+

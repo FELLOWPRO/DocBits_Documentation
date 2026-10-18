@@ -1,0 +1,49 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.427
+PINT A-NZ ma wpisy reguł faktur i not
+kredytowych współdzielone z Australią.
+
+formats_02
+00:00:06.427 --> 00:00:12.417
+Aktywne oznaczenie rodziny nie ma stałego
+numeru wydania PINT. Sprawdź
+
+formats_03
+00:00:12.417 --> 00:00:17.746
+identyfikatory dostosowania i profilu;
+dostarczenie przez sieć wymaga osobnej
+
+formats_04
+00:00:17.746 --> 00:00:18.967
+integracji.
+
+workflow_01
+00:00:19.717 --> 00:00:25.185
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:25.185 --> 00:00:30.758
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:30.758 --> 00:00:33.567
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:34.317 --> 00:00:40.343
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:40.343 --> 00:00:46.275
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:46.275 --> 00:00:49.100
+podatkowego ani dostarczenia przez sieć.
+

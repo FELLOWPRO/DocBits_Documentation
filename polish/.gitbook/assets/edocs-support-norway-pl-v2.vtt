@@ -1,0 +1,44 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:08.423
+EHF Invoice 3.0 jest wymieniony obok EHF
+Order, Order Response i Despatch Advice.
+
+formats_02
+00:00:08.423 --> 00:00:13.381
+Wybierz mapowanie dla rzeczywistego
+dokumentu biznesowego. Zamówienie ani
+
+formats_03
+00:00:13.381 --> 00:00:15.967
+awizo wysyłki nie są fakturą.
+
+workflow_01
+00:00:16.717 --> 00:00:22.185
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:22.185 --> 00:00:27.758
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:27.758 --> 00:00:30.567
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:31.317 --> 00:00:37.343
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:37.343 --> 00:00:43.275
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:43.275 --> 00:00:46.100
+podatkowego ani dostarczenia przez sieć.
+

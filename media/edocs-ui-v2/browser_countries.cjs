@@ -5,6 +5,8 @@ const assert=require('node:assert/strict');
 const locale=process.argv[2];
 const attachments=true;
 const subset=process.argv.find(value=>value.startsWith('--countries='))?.split('=')[1].split(',');
+const workers=Number(process.argv.find(value=>value.startsWith('--workers='))?.split('=')[1]||1);
+assert([1,2,3].includes(workers));
 const folders={en:'docbits',de:'deutsch',es:'espanol',fr:'french',it:'italian',nl:'dutch',pl:'polish',pt:'portuguese',zh:'chinese'};
 assert(folders[locale]);
 const countries=JSON.parse(fs.readFileSync(path.join(__dirname,'../edocs-country-support/evidence/catalog.json'),'utf8')).countries;
@@ -57,8 +59,9 @@ fs.mkdirSync(dest,{recursive:true});
   }catch(error){console.error(JSON.stringify({country:country.slug,locale,error:error.message}));throw error;}finally{await page.close();}
  }
  try{
-  // Three independent players, all in the one selected language.
-  let next=0;await Promise.all(Array.from({length:3},async()=>{while(next<countries.length){const country=countries[next++];if(!subset||subset.includes(country.slug))await check(country);}}));
+  // A single player matches normal review use and avoids competing media loads.
+  // Optional extra players remain confined to the one selected language.
+  let next=0;await Promise.all(Array.from({length:workers},async()=>{while(next<countries.length){const country=countries[next++];if(!subset||subset.includes(country.slug))await check(country);}}));
   fs.writeFileSync(path.join(dest,'browser.json'),JSON.stringify(results,null,2)+'\n');
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

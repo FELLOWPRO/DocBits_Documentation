@@ -37,7 +37,23 @@ Te oznaczenia mają wpisy konfiguracji, ale nie mają samodzielnej reguły klasy
 - `CHILE DTE`
 - `CHILE FACTURA ELECTRONICA`
 
-<!-- Country screenshot and narrated film pending; no unavailable media is linked. -->
+## Znajdź mapowanie w DocBits
+
+<figure><img src="../../../../../../../.gitbook/assets/edocs-support-chile-pl.png" alt="Chile"><figcaption><p>Rzeczywisty interfejs środowiska deweloperskiego: przykładowy format i dostępne komponenty konfiguracji. Pozostałe wersje wymieniono w macierzy.</p></figcaption></figure>
+
+## Film objaśniający dla kraju
+
+Narracja i napisy WebVTT w wybranym języku wyjaśniają wybór formatu, konfigurację i kontrole akceptacyjne.
+
+Ten przegląd bez wprowadzania zmian pokazuje istniejącą konfigurację kraju w DocBits. Sprawdź używane źródło i aktywną wersję, a następnie przetestuj reprezentatywne faktury, noty kredytowe i eksporty we własnej organizacji.
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-chile-pl-v2.mp4" %}
+Chile — Film objaśniający dla kraju
+{% endfile %}
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-chile-pl-v2.vtt" %}
+WebVTT
+{% endfile %}
 
 ## Kontrole akceptacyjne
 

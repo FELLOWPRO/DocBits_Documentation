@@ -83,3 +83,5 @@ MINIMUM e BASIC WL possono omettere informazioni sulle righe necessarie alle ela
 5. Confermate separatamente i criteri di validazione e il trasporto. Conservate le mappature personalizzate e controllate le approvazioni e la cronologia delle esportazioni prima di riavviare l’elaborazione dei documenti esistenti.
 
 [Verifiche di accettazione](../credit-note-recognized-as-invoice.md)
+
+[Configurare DocBits con Claude o Codex](../../../../../../advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md): connessione, prompt, anteprime, modifiche con versioni, verifiche e ripristino.

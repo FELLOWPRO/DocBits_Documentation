@@ -829,6 +829,7 @@
 * [AI Workforce](advanced-functions-and-tools/ai_workforce/README.md)
 * [DocBits MCP](advanced-functions-and-tools/docbits-mcp/README.md)
   * [Configurazione e setup](advanced-functions-and-tools/docbits-mcp/setup-and-configuration.md)
+  * [Configurare DocBits con Claude o Codex](advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md)
   * [Esempi](advanced-functions-and-tools/docbits-mcp/examples.md)
   * [eDocs MCP](advanced-functions-and-tools/edocs-mcp/README.md)
     * [Esempi](advanced-functions-and-tools/edocs-mcp/examples.md)

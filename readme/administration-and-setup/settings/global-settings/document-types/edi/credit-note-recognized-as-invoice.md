@@ -48,7 +48,7 @@ La mappatura predefinita delle note di credito FACTURX/ZUGFeRD comprende **381 e
 
 <figure><img src="../../../../../.gitbook/assets/edocs-transformation-it.png" alt="Sorgente della trasformazione FACTURX in sola lettura nell’editor delle versioni di DocBits."><figcaption>Esaminate la sorgente e la versione selezionate prima di creare o attivare una modifica.</figcaption></figure>
 
-Gli [strumenti MCP eDocs](../../../../../advanced-functions-and-tools/edocs-mcp/README.md) consentono le stesse verifiche: `list_edoc_custom_attributes`, `get_edoc_attribute_source` e `list_edoc_attribute_versions` identificano la sorgente; `compare_edoc_extraction` confronta il comportamento predefinito, personalizzato e proposto. Usate `test_electronic_document` per una simulazione prima dell’attivazione.
+La procedura MCP completa è descritta in [Configurare DocBits con Claude o Codex](../../../../../advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md). `list_edoc_custom_attributes`, `get_edoc_attribute_source` e `list_edoc_attribute_versions` identificano sorgente e valore attivo. `preview_edoc_custom_xslt` prova una trasformazione candidata. `compare_edoc_extraction` confronta solo Extraction Paths e richiede un attributo personalizzato dei percorsi di estrazione. `test_electronic_document` prova la configurazione attiva, non una bozza inattiva.
 
 ## Correggere e attivare in sicurezza
 

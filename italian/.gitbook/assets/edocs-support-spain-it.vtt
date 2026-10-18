@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:09.503
+Facturae ha voci generiche, 3.2, 3.2.1 e
+3.2.2. Verificate lo spazio dei nomi e la
+
+formats_02
+00:00:09.503 --> 00:00:15.900
+versione dello schema. L’estrazione di un
+file XML firmato non verifica, di per sé,
+
+formats_03
+00:00:15.900 --> 00:00:19.033
+la firma o l’accettazione da parte di
+FACe.
+
+workflow_01
+00:00:19.783 --> 00:00:25.542
+Aprite E-Doc per il formato rilevato.
+Confrontate Transformation, Preview ed
+
+workflow_02
+00:00:25.542 --> 00:00:32.577
+Extraction Paths. Le regole Custom hanno
+la precedenza. Salvare una bozza non la
+
+workflow_03
+00:00:32.577 --> 00:00:33.500
+attiva.
+
+accept_01
+00:00:34.250 --> 00:00:40.229
+Provate una fattura e una nota di credito,
+se applicabile. Verificate gli importi, le
+
+accept_02
+00:00:40.229 --> 00:00:45.221
+parti e il tipo di documento esportato.
+L’analisi del file non dimostra
+
+accept_03
+00:00:45.221 --> 00:00:48.900
+l’autorizzazione fiscale né la consegna
+tramite rete.
+

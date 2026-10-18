@@ -4,6 +4,12 @@ description: Supporto per documenti elettronici KAZAKHSTAN ESF in DocBits
 
 # 🇰🇿 KAZAKHSTAN ESF
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Kazakistan](countries/kazakhstan.md). L’etichetta non indica una versione. Confermate lo schema XML effettivo e non deducete la trasmissione alla piattaforma fiscale dal supporto per l’estrazione.
+{% endhint %}
+
 | Proprietà             | Valore                                               |
 | --------------------- | ---------------------------------------------------- |
 | **Paese / Regione**   | Kazakistan                                           |

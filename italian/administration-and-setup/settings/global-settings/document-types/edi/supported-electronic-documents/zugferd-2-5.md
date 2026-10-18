@@ -4,6 +4,12 @@ description: Supporto del documento elettronico ZUGFERD 2.5 in DocBits
 
 # 🇩🇪 ZUGFERD 2.5
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Germania](countries/germany.md). Sintassi, versione di pubblicazione e profilo sono scelte diverse. Non deducete una pubblicazione Factur-X dal marcatore condiviso 1p0.
+{% endhint %}
+
 | Proprietà | Valore |
 |----------|-------|
 | **Paese / Regione** | Germania |

@@ -4,6 +4,12 @@ description: Supporto documenti elettronici ZATCA FATOORAH in DocBits
 
 # 🇸🇦 ZATCA FATOORAH
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Arabia Saudita](countries/saudi-arabia.md). Queste etichette descrivono processi e varianti di fattura diversi. L’analisi del file non dimostra la firma, l’autorizzazione fiscale o la comunicazione tramite ZATCA.
+{% endhint %}
+
 | Proprietà               | Valore                                                    |
 | ----------------------- | --------------------------------------------------------- |
 | **Paese / Regione**     | Arabia Saudita                                            |

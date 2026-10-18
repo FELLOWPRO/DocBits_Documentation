@@ -8,6 +8,18 @@ Utilice esta guía para identificar la familia configurada y el alcance de versi
 
 [Todos los países y alcance de la compatibilidad](../README.md)
 
+## Vídeo explicativo del país
+
+La narración y los subtítulos WebVTT en el idioma correspondiente explican la selección del formato, la configuración y las pruebas de aceptación.
+
+Este recorrido de solo lectura muestra la configuración existente del país en DocBits. Compruebe la fuente utilizada y la versión activa y valide facturas, notas de crédito y exportaciones representativas en su organización.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_international/v2/es.mp4" %}
+
+[Internacional — Vídeo explicativo del país](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_international/v2/es.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_international/v2/es.vtt)
+
 ## Variantes y límites de versión
 
 Las entradas internacionales incluyen Peppol BIS 3.0, UBL 2.1, CII puro, EDI, INVOIC02, cXML, OCI, BOD y SPS Commerce RSX 7.7.4.
@@ -73,20 +85,6 @@ Un guion indica que la comprobación de estado no informó de un componente dedi
 ## Encuentre la asignación en DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-international-es.png" alt="Internacional: UBL 2.1"><figcaption><p>Interfaz real de desarrollo: el formato representativo y sus componentes de configuración disponibles. Las demás versiones figuran en la matriz.</p></figcaption></figure>
-
-## Vídeo explicativo del país
-
-La narración y los subtítulos WebVTT en el idioma correspondiente explican la selección del formato, la configuración y las pruebas de aceptación.
-
-Este recorrido de solo lectura muestra la configuración existente del país en DocBits. Compruebe la fuente utilizada y la versión activa y valide facturas, notas de crédito y exportaciones representativas en su organización.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-international-es-v2.mp4" %}
-Internacional — Vídeo explicativo del país
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-international-es-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Pruebas de aceptación
 

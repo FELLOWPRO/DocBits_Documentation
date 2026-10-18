@@ -25,3 +25,7 @@ In Docbits, the EDI settings provide tools for defining and managing the structu
 ## Faktycznie używane reguły i aktywacja
 
 Jeśli elektroniczna nota kredytowa jest wyświetlana jako Invoice, skorzystaj z [przewodnika rozwiązywania problemów z klasyfikacją](credit-note-recognized-as-invoice.md). Opisuje on faktycznie używane źródło niestandardowe lub domyślne, kody typów, Extraction Paths i bezpieczną aktywację.
+
+## Przewodniki krajowe
+
+Przewodniki krajowe zawierają dokładne oznaczenia formatów, składnię, ograniczenia wersji i sprawdzony stan konfiguracji. [Formaty eDocs, wersje i przewodniki krajowe](supported-electronic-documents/README.md).

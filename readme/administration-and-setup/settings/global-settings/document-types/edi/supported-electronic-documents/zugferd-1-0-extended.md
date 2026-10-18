@@ -4,6 +4,12 @@ description: Obsługa dokumentu elektronicznego ZUGFERD 1.0 EXTENDED w DocBits
 
 # 🇩🇪 ZUGFERD 1.0 EXTENDED
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Niemcy](countries/germany.md). Składnia, wersja publikacji i profil to różne wybory. Nie wnioskuj o publikacji Factur-X na podstawie wspólnego znacznika 1p0.
+{% endhint %}
+
 | Właściwość           | Wartość                       |
 | -------------------- | ----------------------------- |
 | **Kraj/Region**      | Niemcy                        |

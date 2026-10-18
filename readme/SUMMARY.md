@@ -130,7 +130,7 @@
 * [Escolha a automação certa](administration-and-setup/choose-the-right-automation.md)
 * [Impostazioni](administration-and-setup/settings/README.md)
   * [Orientação no Novo Layout](administration-and-setup/settings/ui-redesign-guide.md)
-  * [Impostazioni Globali](administration-and-setup/settings/global-settings/README.md)
+  * [Configurações Globais](administration-and-setup/settings/global-settings/README.md)
     * [Informazioni sulla Società](administration-and-setup/settings/global-settings/company-information/README.md)
       * [Preferenze aziendali](administration-and-setup/settings/global-settings/company-information/company-preferences.md)
       * [Assistente de Configurações: como ativá-lo](administration-and-setup/settings/global-settings/company-information/settings-assistant.md)

@@ -4,6 +4,12 @@ description: FINVOICE 3.0 elektronische Dokumentenunterstützung in DocBits
 
 # 🇫🇮 FINVOICE 3.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Finnland](countries/finland.md). Prüfen Sie die Version der Quelldatei, bevor Sie eine Zuordnung auswählen. Die Bezeichnung TEAPPSXML nennt keine Veröffentlichungsversion.
+{% endhint %}
+
 | Eigenschaft | Wert |
 | ----------- | ---- |
 | **Land / Region** | Finnland |

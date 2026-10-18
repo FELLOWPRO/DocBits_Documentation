@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.359
+Paraguay DTE, SIFEN und SIFEN 150 sind
+konfigurierte Bezeichnungen. Für die
+
+formats_02
+00:00:05.359 --> 00:00:10.400
+Gutschrift-Klassifizierungseinträge sind
+im geprüften Status keine eigenen
+
+formats_03
+00:00:10.400 --> 00:00:15.985
+Extraktionspakete ausgewiesen. Prüfen Sie
+die tatsächlich verwendete Zuordnung und
+
+formats_04
+00:00:15.985 --> 00:00:19.800
+betrachten Sie die Bezeichnungen nicht als
+austauschbar.
+
+workflow_01
+00:00:20.550 --> 00:00:25.856
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:25.856 --> 00:00:32.566
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:32.566 --> 00:00:34.200
+aktiviert ihn nicht.
+
+accept_01
+00:00:34.950 --> 00:00:39.582
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:39.582 --> 00:00:45.712
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:45.712 --> 00:00:48.833
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

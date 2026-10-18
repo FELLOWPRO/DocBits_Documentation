@@ -9247,8 +9247,8 @@
   "docs": {
     "locale": "en",
     "countries": 40,
-    "links": 313,
-    "files": 277,
+    "links": 354,
+    "files": 278,
     "status": "passed",
     "checks": "Navigation, new links, balanced blocks, media bytes, source freshness, browser QA, source/mirror parity"
   },

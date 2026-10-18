@@ -4,6 +4,12 @@ description: KOREA E-TAX INVOICE elektronische Dokumentenunterstützung in DocBi
 
 # 🇰🇷 KOREA E-TAX INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Südkorea](countries/korea.md). Die Bezeichnungen nennen keine Veröffentlichungsversion. Gleichen Sie die tatsächliche XML-Struktur ab und betrachten Sie die Extraktion nicht als Nachweis einer Annahme durch die Steuerplattform.
+{% endhint %}
+
 | Eigenschaft          | Wert                               |
 | -------------------- | ---------------------------------- |
 | **Land / Region**    | Südkorea                           |

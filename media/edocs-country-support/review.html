@@ -1,10 +1,15 @@
 <!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>DocBits eDocs country explainer review</title>
-<style>body{margin:0;padding:16px;font:16px system-ui;background:#0a2531;color:#f5f5f5}main{max-width:960px;margin:auto}video{width:100%;display:block}h1{font-size:22px}::cue{font:16px system-ui;background:#0a2531ee;color:white}p{overflow-wrap:anywhere}</style>
-<main><h1></h1><video controls playsinline preload="metadata" tabindex="0"><track kind="captions" default></video><p id="transcript"></p></main>
+<style>body{margin:0;padding:16px;font:16px system-ui;background:#0a2531;color:#f5f5f5}main{max-width:960px;margin:auto}video{width:100%;display:block}h1{font-size:22px}select{font:inherit;max-width:100%;padding:8px;margin:4px 0 12px}label{display:block}::cue{font:16px system-ui;background:#0a2531ee;color:white}p{overflow-wrap:anywhere}</style>
+<main><h1></h1><label>Language / Sprache <select id="language"></select></label><label><span id="country-label"></span> <select id="country"></select></label><video controls playsinline preload="metadata" tabindex="0"><track kind="captions" default></video><p id="transcript"></p></main>
 <script type="module">
 const params=new URLSearchParams(location.search),locale=params.get('lang')||'de',country=params.get('country')||'germany';
 const text=await fetch(`translations/${locale}.json`).then(r=>r.json());
+const language=document.querySelector('#language'),countrySelect=document.querySelector('#country');
+for(const [key,name] of Object.entries({en:'English',de:'Deutsch',es:'Español',fr:'Français',it:'Italiano',nl:'Nederlands',pl:'Polski',pt:'Português',zh:'中文'})){const option=new Option(name,key);option.selected=key===locale;language.add(option);}
+for(const [key,c] of Object.entries(text.countries)){const option=new Option(c.name,key);option.selected=key===country;countrySelect.add(option);}
+document.querySelector('#country-label').textContent=text.country_column;
+for(const select of [language,countrySelect])select.addEventListener('change',()=>{params.set('lang',language.value);params.set('country',countrySelect.value);location.search=params;});
 const page='edocs_country_'+country.replaceAll('-','_');
 const folders={en:'docbits',de:'deutsch',es:'espanol',fr:'french',it:'italian',nl:'dutch',pl:'polish',pt:'portuguese',zh:'chinese'};
 const base=`../../${folders[locale]}/.gitbook/assets/edocs-support-${country}-${locale}`;

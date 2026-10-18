@@ -4,6 +4,12 @@ description: Prise en charge du document électronique INDONESIA E-FAKTUR dans D
 
 # 🇮🇩 INDONESIA E-FAKTUR
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Indonésie](countries/indonesia.md). L’entrée ne précise pas de numéro de version. Confirmez le contenu XML réel ; une facture imprimée ou une image QR ne démontre pas la prise en charge XML.
+{% endhint %}
+
 | Propriété              | Valeur                                     |
 | ---------------------- | ------------------------------------------ |
 | **Pays / Région**      | Indonésie                                  |

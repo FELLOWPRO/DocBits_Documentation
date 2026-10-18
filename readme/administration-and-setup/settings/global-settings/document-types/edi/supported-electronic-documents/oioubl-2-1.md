@@ -4,6 +4,12 @@ description: Prise en charge des documents électroniques OIOUBL 2.1 dans DocBit
 
 # 🇩🇰 OIOUBL 2.1
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Danemark](countries/denmark.md). OIOUBL et Peppol BIS sont des profils distincts. La syntaxe UBL seule n’identifie pas le profil national.
+{% endhint %}
+
 | Propriété | Valeur |
 | --------- | ------ |
 | **Pays / Région** | Danemark |

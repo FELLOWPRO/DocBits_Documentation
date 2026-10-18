@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:12.046
+Finvoice 1.3, 2.0, 2.01 et 3.0 possèdent
+des entrées distinctes. TEAPPSXML est une
+
+formats_02
+00:00:12.046 --> 00:00:17.235
+autre famille. Vérifiez la version source
+avant de choisir une correspondance. Le
+
+formats_03
+00:00:17.235 --> 00:00:22.133
+libellé TEAPPSXML ne précise pas de
+version.
+
+workflow_01
+00:00:22.883 --> 00:00:28.653
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:28.653 --> 00:00:34.563
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:34.563 --> 00:00:35.633
+l’active pas.
+
+accept_01
+00:00:36.383 --> 00:00:41.364
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:41.364 --> 00:00:47.041
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:47.041 --> 00:00:50.233
+la validation fiscale ni la transmission
+réseau.
+

@@ -4,6 +4,12 @@ description: Prise en charge des documents électroniques INVOICENOW SG dans Doc
 
 # 🇸🇬 INVOICENOW SG
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Singapour](countries/singapore.md). Vérifiez les identifiants du profil singapourien. Un profil national et Peppol BIS générique peuvent partager la syntaxe UBL sans partager toutes les règles métier.
+{% endhint %}
+
 | Propriété | Valeur |
 | --------- | ------ |
 | **Pays / Région** | Singapour |

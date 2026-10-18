@@ -4,6 +4,12 @@ description: Prise en charge des documents électroniques KAZAKHSTAN ESF dans Do
 
 # 🇰🇿 KAZAKHSTAN ESF
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Kazakhstan](countries/kazakhstan.md). Le libellé ne précise pas de version. Confirmez le schéma XML réel et ne déduisez pas la transmission à la plateforme fiscale de la prise en charge de l’extraction.
+{% endhint %}
+
 | Propriété | Valeur |
 | --------- | ------ |
 | **Pays / Région** | Kazakhstan |

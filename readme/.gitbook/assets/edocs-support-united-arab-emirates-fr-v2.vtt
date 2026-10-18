@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.170
+UAE VAT Invoice est le libellé configuré.
+Une correspondance de facture de TVA ne
+
+formats_02
+00:00:07.170 --> 00:00:12.301
+démontre pas la prise en charge de chaque
+version Peppol ou PINT des Émirats arabes
+
+formats_03
+00:00:12.301 --> 00:00:17.467
+unis. Confirmez le contrat du contenu et
+l’intégration de transmission requise.
+
+workflow_01
+00:00:18.217 --> 00:00:23.987
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:23.987 --> 00:00:29.897
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:29.897 --> 00:00:30.967
+l’active pas.
+
+accept_01
+00:00:31.717 --> 00:00:36.698
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:36.698 --> 00:00:42.375
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:42.375 --> 00:00:45.567
+la validation fiscale ni la transmission
+réseau.
+

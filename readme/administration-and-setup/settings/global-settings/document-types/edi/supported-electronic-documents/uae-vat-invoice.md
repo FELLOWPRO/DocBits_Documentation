@@ -4,6 +4,12 @@ description: Prise en charge du document électronique UAE VAT INVOICE dans DocB
 
 # 🇦🇪 UAE VAT INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Émirats arabes unis](countries/united-arab-emirates.md). Une correspondance de facture de TVA ne démontre pas la prise en charge de chaque version Peppol ou PINT des Émirats arabes unis. Confirmez le contrat du contenu et l’intégration de transmission requise.
+{% endhint %}
+
 | Propriété              | Valeur                                   |
 | ---------------------- | ---------------------------------------- |
 | **Pays / Région**      | Émirats arabes unis                      |

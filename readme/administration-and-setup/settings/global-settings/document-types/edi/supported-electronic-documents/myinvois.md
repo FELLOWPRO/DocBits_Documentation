@@ -4,6 +4,12 @@ description: Prise en charge des documents électroniques MYINVOIS dans DocBits
 
 # 🇲🇾 MYINVOIS
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Malaisie](countries/malaysia.md). Le chemin d’extraction examiné repose sur XML. La plateforme nationale accepte aussi JSON, mais cela ne démontre pas la prise en charge de l’import JSON par cette correspondance DocBits.
+{% endhint %}
+
 | Propriété | Valeur |
 | --------- | ------ |
 | **Pays / Région** | Malaisie |

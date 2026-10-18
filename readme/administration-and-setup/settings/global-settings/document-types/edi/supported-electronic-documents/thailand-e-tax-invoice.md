@@ -4,6 +4,12 @@ description: Prise en charge du document électronique THAILAND E-TAX INVOICE da
 
 # 🇹🇭 THAILAND E-TAX INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Thaïlande](countries/thailand.md). Le libellé ne précise pas de version. Confirmez la structure XML source ; la vérification des signatures et la transmission à la plateforme fiscale nécessitent des contrôles distincts.
+{% endhint %}
+
 | Propriété              | Valeur                                         |
 | ---------------------- | ---------------------------------------------- |
 | **Pays / Région**      | Thaïlande                                      |

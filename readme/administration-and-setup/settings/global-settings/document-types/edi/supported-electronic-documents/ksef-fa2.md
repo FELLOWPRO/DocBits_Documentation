@@ -4,6 +4,12 @@ description: Prise en charge des documents électroniques KSEF FA2 dans DocBits
 
 # 🇵🇱 KSEF FA2
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Pologne](countries/poland.md). FA2 et FA3 utilisent des structures différentes. Confirmez le schéma source et testez la correspondance appropriée ; l’analyse d’une facture ne la soumet pas à KSeF.
+{% endhint %}
+
 | Propriété | Valeur |
 | --------- | ------ |
 | **Pays / Région** | Pologne |

@@ -4,6 +4,12 @@ description: Prise en charge des documents électroniques PHILIPPINES EIS dans D
 
 # 🇵🇭 PHILIPPINES EIS
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Philippines](countries/philippines.md). Le libellé ne précise pas de version. Vérifiez le schéma du contenu et le type de document concerné avant de vous fier à un libellé EIS générique.
+{% endhint %}
+
 | Propriété | Valeur |
 | --------- | ------ |
 | **Pays / Région** | Philippines |

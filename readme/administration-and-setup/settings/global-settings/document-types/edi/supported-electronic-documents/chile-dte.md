@@ -4,6 +4,12 @@ description: Prise en charge des documents électroniques CHILE DTE dans DocBits
 
 # 🇨🇱 CHILE DTE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Chili](countries/chile.md). Sélectionnez le type de document métier avant de vérifier les champs. La facture, l’avoir et les informations de livraison utilisent des correspondances différentes.
+{% endhint %}
+
 | Propriété | Valeur |
 |----------|-------|
 | **Pays / Région** | Chili |

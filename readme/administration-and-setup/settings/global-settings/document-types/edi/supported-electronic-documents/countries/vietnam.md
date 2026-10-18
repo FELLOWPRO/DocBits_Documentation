@@ -32,6 +32,12 @@ Een streepje betekent dat de statuscontrole geen eigen component voor deze exact
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-vietnam-nl.png" alt="Vietnam: VIETNAM E-INVOICE"><figcaption><p>Werkelijke ontwikkelinterface: het representatieve formaat en de beschikbare configuratiecomponenten. Andere versies staan in de matrix.</p></figcaption></figure>
 
+## Uitlegvideo per land
+
+{% hint style="info" %}
+De Nederlandse uitlegvideo voor Vietnam is nog niet beschikbaar. Gebruik de echte DocBits-schermafbeelding hierboven, de configuratiematrix en de acceptatiecontroles hieronder.
+{% endhint %}
+
 <!-- Dutch Vietnam film pending: the speech submission has no recoverable request ID. No repeat submission or unavailable media link. -->
 
 ## Acceptatiecontroles

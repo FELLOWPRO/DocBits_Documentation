@@ -39,11 +39,13 @@ Un tiret signifie que la vérification de l’état n’a pas signalé de compos
 
 La narration localisée et les sous-titres WebVTT expliquent le choix du format, la configuration et les vérifications d’acceptation.
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-austria-fr.mp4" %}
+Cette visite en lecture seule montre la configuration existante du pays dans DocBits. Vérifiez la source utilisée et la version active, puis testez des factures, des avoirs et des exports représentatifs dans votre organisation.
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-austria-fr-v2.mp4" %}
 Autriche — Vidéo explicative du pays
 {% endfile %}
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-austria-fr.vtt" %}
+{% file src="../../../../../../../.gitbook/assets/edocs-support-austria-fr-v2.vtt" %}
 WebVTT
 {% endfile %}
 

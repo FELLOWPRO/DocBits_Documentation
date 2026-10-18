@@ -23,7 +23,9 @@ fs.mkdirSync(dest,{recursive:true});
   try{
    await page.goto(`http://127.0.0.1:8765/${attachments?'media/edocs-country-support':'output/edocs-support'}/review.html?lang=${locale}&country=${country.slug}`);
    await page.waitForFunction(()=>Boolean(document.querySelector('video').currentSrc));
-   await page.locator('video').evaluate(v=>{v.preload='auto';v.load();});
+   // The review player already called load(). A second call can interrupt the
+   // native caption request while that first load is still in flight.
+   await page.locator('video').evaluate(v=>{v.preload='auto';});
    await page.waitForFunction(()=>document.querySelector('video').readyState>=2,null,{timeout:60000});
    await page.locator('video').evaluate(v=>v.textTracks[0].mode='showing');
    await page.waitForFunction(()=>document.querySelector('track').readyState===2,null,{timeout:60000});
@@ -51,7 +53,7 @@ fs.mkdirSync(dest,{recursive:true});
    const range=await page.request.get(await page.locator('video').evaluate(v=>v.currentSrc),{headers:{Range:'bytes=0-1023'}});
    assert.equal(range.status(),206);assert.equal((await range.body()).length,1024);
    const result={country:country.slug,locale,metadata,playback,seek,mobile,ended:true,range206:true,keyboard:true,errors};
-   results.push(result);console.log(JSON.stringify({country:country.slug,locale,stage:'browser-passed'}));
+   results.push(result);fs.writeFileSync(path.join(dest,'browser.partial.json'),JSON.stringify(results,null,2)+'\n');console.log(JSON.stringify({country:country.slug,locale,stage:'browser-passed'}));
   }catch(error){console.error(JSON.stringify({country:country.slug,locale,error:error.message}));throw error;}finally{await page.close();}
  }
  try{

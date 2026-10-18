@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.962
+Taiwan eGUI est la famille configurée. Le
+libellé de famille ne certifie pas chaque
+
+formats_02
+00:00:05.962 --> 00:00:11.628
+version MIG. Vérifiez le schéma XML réel
+et testez des factures électroniques
+
+formats_03
+00:00:11.628 --> 00:00:13.000
+représentatives.
+
+workflow_01
+00:00:13.750 --> 00:00:19.520
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:19.520 --> 00:00:25.430
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:25.430 --> 00:00:26.500
+l’active pas.
+
+accept_01
+00:00:27.250 --> 00:00:32.231
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:32.231 --> 00:00:37.908
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:37.908 --> 00:00:41.100
+la validation fiscale ni la transmission
+réseau.
+

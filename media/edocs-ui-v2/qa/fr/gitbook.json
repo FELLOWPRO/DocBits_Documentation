@@ -1,0 +1,18 @@
+{
+  "commit": "160fea9e59d859dd9adedc0fe3870c0f3b5bf89d",
+  "import_state": "success",
+  "overview": "https://docs.docbits.com/french/~/revisions/e2ZhjsINTeCQmug4zIbQ/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents?review=160fea9e59d8",
+  "linked_country_guides": 40,
+  "attachments": [
+    {
+      "preview": "https://docs.docbits.com/french/~/revisions/e2ZhjsINTeCQmug4zIbQ/administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice?review=160fea9e59d8",
+      "url": "https://920984434-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FGZNnVmsHh1akmBu1Fqum%2Fuploads%2Fgit-blob-39e0e0445e253605f2bfd9424c7af428a8ef1a96%2Fedocs-credit-note-fr-v2.mp4?alt=media",
+      "status": 200,
+      "mime": "video/mp4",
+      "bytes": 3848294,
+      "sha256": "d4a9de127e5316f6e81e829367f5d7d0f26260a27a215c15ed13c2b1b8c18426",
+      "range206": true,
+      "content_range": "bytes 0-1023/3848294"
+    }
+  ]
+}

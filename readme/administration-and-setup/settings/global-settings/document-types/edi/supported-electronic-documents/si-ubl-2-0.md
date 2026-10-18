@@ -4,6 +4,12 @@ description: DocBits 对 SI-UBL 2.0 电子文档的支持
 
 # 🇳🇱 SI-UBL 2.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。 [荷兰](countries/netherlands.md). UBL 文件不一定就是 SI-UBL 2.0。请检查其自定义标识和对应的国家映射。
+{% endhint %}
+
 | 属性                 | 值                                   |
 | -------------------- | ------------------------------------ |
 | **国家 / 地区**      | 荷兰                                 |

@@ -4,6 +4,12 @@ description: DocBits 对 ZATCA FATOORAH 电子文档的支持
 
 # 🇸🇦 ZATCA FATOORAH
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。 [沙特阿拉伯](countries/saudi-arabia.md). 这些名称描述不同的流程和发票变体。成功解析不代表已完成签名、核准或通过 ZATCA 申报。
+{% endhint %}
+
 | 属性                 | 值                                                     |
 | -------------------- | --------------------------------------------------------- |
 | **国家 / 地区** | 沙特阿拉伯                                              |

@@ -1,0 +1,3 @@
+# Preserve canonical generated WebVTT separators and CJK wrapping.
+**/.gitbook/assets/edocs-*.vtt whitespace=-blank-at-eof
+**/.gitbook/assets/edocs-support-*-zh-v2.vtt whitespace=-blank-at-eof,-blank-at-eol

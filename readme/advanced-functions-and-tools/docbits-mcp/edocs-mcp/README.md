@@ -139,3 +139,9 @@ delete_edoc_custom_attribute
   "detail": "Writing to the default org is forbidden via MCP. Default rules are immutable and shared across all customers."
 }
 ```
+
+## 实际生效的规则与激活
+
+如果电子贷项通知单显示为 Invoice，请按照[分类故障排查指南](../../../administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md)进行检查。该指南涵盖实际生效的自定义或默认源代码、类型代码、Extraction Paths，以及安全激活步骤。
+
+[使用 Claude 或 Codex 配置 DocBits](../configuration-with-claude-or-codex.md)：连接、提示词、预览、版本化更改、验证与回退。

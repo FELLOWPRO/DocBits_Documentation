@@ -4,6 +4,12 @@ description: "DocBits 对 FATTURAPA 电子文档的支持"
 
 # 🇮🇹 FATTURAPA
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。 [意大利](countries/italy.md). 格式系列名称并不认证所有 FatturaPA 发布版本，也不证明能够通过 SDI 传输。请检查原始架构和接收方要求。
+{% endhint %}
+
 | 属性                 | 值                                      |
 | -------------------- | ---------------------------------------- |
 | **国家 / 地区**      | 意大利                                  |

@@ -1,24 +1,21 @@
 # Historial de aprobaciones
 
-Para habilitar la función de **Historial de aprobaciones**:
+El **Historial de aprobaciones** permite revisar las decisiones del flujo de aprobación de un documento. La versión anterior de esta página enlazaba una ruta antigua de **Ajustes generales** y mostraba tres imágenes de una interfaz más antigua sin explicar los controles. Use la configuración actual de tipos de documento para activar la opción y verifique el resultado con una aprobación de prueba en su propia organización.
 
-1. Ve a **Ajustes** → **Ajustes generales** → **Tipos de documentos** → **Más ajustes** → **Aprobación**.
-2. Activa **Historial de aprobaciones**.
+## Activar la opción para un tipo de documento
 
-Una vez habilitado, el historial de aprobaciones será visible en la pantalla de **Pendiente de aprobación**. Puedes cambiar a la pantalla de **Historial de aprobaciones** haciendo clic en el botón en la esquina superior izquierda.
+1. Con una cuenta de administrador, abra **Ajustes** → **Tipos de documento**. Busque el tipo de documento, por ejemplo **Factura**, y seleccione su **icono de engranaje** para abrir **Más ajustes**. Los enlaces **Diseños** y **Campos** de la tarjeta llevan a otros editores.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_1.png)
+   <figure><img src="../../../../../../.gitbook/assets/dbdc222-document-types-es-20261009.png" alt="Página de Tipos de documento de DocBits en español con la tarjeta Factura y el icono de engranaje para Más ajustes"><figcaption><p>Abra **Más ajustes** en el tipo de documento cuyo flujo de aprobación desea revisar.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_2.png)
+2. Despliegue **Aprobación y rechazo** y busque **Historial de aprobaciones**. Este interruptor es independiente de **Aprobar antes de la exportación**, **Segunda aprobación** y **Sello de aprobación**. La captura en español muestra el tipo de documento **Factura** con datos de ejemplo inventados; los cuatro interruptores están **apagados** en este ejemplo. No se cambió ningún ajuste para esta guía.
 
-En la pantalla de **Historial de aprobaciones**, verás los siguientes detalles:
+   <figure><img src="../../../../../../.gitbook/assets/dbdc222-approval-history-es-20261009.png" alt="Página Más ajustes de Factura en español con Aprobación y rechazo desplegado y el interruptor Historial de aprobaciones apagado"><figcaption><p>Compruebe el interruptor **Historial de aprobaciones** del tipo de documento seleccionado.</p></figcaption></figure>
 
-* **Quién** aprobó o rechazó el documento.
-* La **hora** y **orden** de las aprobaciones o rechazos.
-* Si está configurado, **comentarios** que explican las razones detrás de las decisiones.
-* **Rojo** indica un **rechazo**.
-* El color que coincide con el entorno (por ejemplo, verde) indica **aprobación**.
+3. Active **Historial de aprobaciones** solo después de confirmar el flujo de aprobación previsto y quién puede ver sus decisiones. Anote el ajuste previo para poder compararlo con la prueba.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_3.png)
+## Verificar con un documento de prueba
 
-Esta función proporciona una mayor transparencia al rastrear y visualizar el proceso de aprobación.
+Use un documento de prueba del tipo configurado que entre realmente en el flujo de aprobación. Pida a un usuario de prueba autorizado que lo apruebe o lo rechace, abra después la vista de aprobación de ese documento y revise el historial disponible. Compare la decisión, el usuario, la hora y cualquier comentario introducido con la acción que realizó. En un flujo con más de un aprobador, compruebe la secuencia tras cada decisión. Si no se ve ningún historial, revise el tipo de documento, el estado del flujo, el interruptor y los permisos de visualización antes de tratarlo como un error de documentación o del producto.
+
+Los colores y la navegación superior izquierda de las imágenes antiguas no se presentan como comportamiento actual, porque no había ningún documento aprobado o rechazado disponible en la Sandbox. Las dos imágenes nuevas solo verifican la ruta de configuración actual y el interruptor; la vista de historial todavía necesita un documento de prueba con actividad de aprobación.

@@ -83,3 +83,5 @@ MINIMUM und BASIC WL können Positionsinformationen auslassen, die in nachgelage
 5. Bestätigen Sie die Validierungsrichtlinie und den Übertragungsweg separat. Erhalten Sie angepasste Zuordnungen und prüfen Sie Freigaben und Exporthistorie, bevor Sie vorhandene Dokumente neu starten.
 
 [Abnahmeprüfungen](../credit-note-recognized-as-invoice.md)
+
+[DocBits mit Claude oder Codex konfigurieren](../../../../../../advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md): Verbindung, kopierbare Prompts, Vorschauen, versionierte Änderungen, Prüfungen und Rückkehr.

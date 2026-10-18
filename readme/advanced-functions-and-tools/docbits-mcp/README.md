@@ -161,3 +161,5 @@ Warum Dokumente menschliches Eingreifen benötigen und was zu ändern ist, damit
 {% hint style="info" %}
 **Ein MCP für alles.** Die eDoc-Tools und die Tools für **Workflows & Karten (DocFlow)** laufen auf **demselben** Endpunkt `api.docbits.com/v3/mcp` mit derselben DocBits-Anmeldung. DocFlow-Tools erscheinen dort mit dem Präfix `docflow_` (zum Beispiel `docflow_list_workflows`); die DocFlow-Seite dokumentiert sie unter ihren einfachen Namen. Die direkte Verbindung zum DocFlow-Host ist weiterhin möglich, aber nicht mehr nötig.
 {% endhint %}
+
+[DocBits mit Claude oder Codex konfigurieren](configuration-with-claude-or-codex.md): Verbindung, kopierbare Prompts, Vorschauen, versionierte Änderungen, Prüfungen und Rückkehr.

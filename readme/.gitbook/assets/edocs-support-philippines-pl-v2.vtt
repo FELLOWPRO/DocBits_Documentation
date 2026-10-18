@@ -1,0 +1,44 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.823
+Philippines EIS jest skonfigurowaną
+rodziną. Oznaczenie nie podaje wydania.
+
+formats_02
+00:00:05.823 --> 00:00:11.605
+Zanim oprzesz się na ogólnym oznaczeniu
+EIS, sprawdź schemat danych i właściwy typ
+
+formats_03
+00:00:11.605 --> 00:00:12.633
+dokumentu.
+
+workflow_01
+00:00:13.383 --> 00:00:18.851
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:18.851 --> 00:00:24.424
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:24.424 --> 00:00:27.233
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:27.983 --> 00:00:34.009
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:34.009 --> 00:00:39.941
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:39.941 --> 00:00:42.767
+podatkowego ani dostarczenia przez sieć.
+

@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.576
+ZATCA Fatoorah, Reporting, Simplified i
+Tax Invoice mają osobne wpisy. Te
+
+formats_02
+00:00:07.576 --> 00:00:13.358
+oznaczenia opisują różne procesy i
+warianty faktur. Parsowanie nie dowodzi
+
+formats_03
+00:00:13.358 --> 00:00:17.767
+podpisywania, zatwierdzania ani
+raportowania przez ZATCA.
+
+workflow_01
+00:00:18.517 --> 00:00:23.985
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:23.985 --> 00:00:29.558
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:29.558 --> 00:00:32.367
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:33.117 --> 00:00:39.143
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:39.143 --> 00:00:45.075
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:45.075 --> 00:00:47.900
+podatkowego ani dostarczenia przez sieć.
+

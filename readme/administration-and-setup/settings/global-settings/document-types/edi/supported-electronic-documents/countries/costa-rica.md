@@ -22,7 +22,23 @@ Tabele przedstawiają wyniki kontroli katalogu środowiska deweloperskiego z 17 
 
 Nie znaleziono pasującego wpisu klasyfikacji ani konfiguracji. Ta kontrola nie potwierdza aktualnej wbudowanej obsługi.
 
-<!-- Country screenshot and narrated film pending; no unavailable media is linked. -->
+## Znajdź mapowanie w DocBits
+
+<figure><img src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-pl.png" alt="Kostaryka"><figcaption><p>Rzeczywisty interfejs środowiska deweloperskiego: wyszukiwanie nazwy tego kraju nie zwróciło pasującego wpisu konfiguracji w sprawdzonym katalogu.</p></figcaption></figure>
+
+## Film objaśniający dla kraju
+
+Narracja i napisy WebVTT w wybranym języku wyjaśniają wybór formatu, konfigurację i kontrole akceptacyjne.
+
+Ten przegląd bez wprowadzania zmian pokazuje istniejącą konfigurację kraju w DocBits. Sprawdź używane źródło i aktywną wersję, a następnie przetestuj reprezentatywne faktury, noty kredytowe i eksporty we własnej organizacji.
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-pl-v2.mp4" %}
+Kostaryka — Film objaśniający dla kraju
+{% endfile %}
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-pl-v2.vtt" %}
+WebVTT
+{% endfile %}
 
 ## Kontrole akceptacyjne
 

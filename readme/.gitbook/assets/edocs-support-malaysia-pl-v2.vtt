@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.403
+MyInvois ma wpisy reguł faktur i not
+kredytowych. Sprawdzona ścieżka ekstrakcji
+
+formats_02
+00:00:06.403 --> 00:00:11.999
+opiera się na XML. Platforma krajowa
+przyjmuje też JSON, ale nie potwierdza to
+
+formats_03
+00:00:11.999 --> 00:00:16.133
+obsługi importu JSON w tym mapowaniu
+DocBits.
+
+workflow_01
+00:00:16.883 --> 00:00:22.351
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:22.351 --> 00:00:27.924
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:27.924 --> 00:00:30.733
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:31.483 --> 00:00:37.509
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:37.509 --> 00:00:43.441
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:43.441 --> 00:00:46.267
+podatkowego ani dostarczenia przez sieć.
+

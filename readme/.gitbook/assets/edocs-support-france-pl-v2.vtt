@@ -1,0 +1,49 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.216
+Factur-X ma wpisy ogólne i przypisane do
+konkretnych wydań, w tym 1.0.05, 1.08 i
+
+formats_02
+00:00:07.216 --> 00:00:17.804
+1.09. VRBL FR CIUS 1.0 jest odrębny.
+Znacznik XML 1p0 i Factur-X XMP Version
+
+formats_03
+00:00:17.804 --> 00:00:22.913
+1.0 nie określają wydania publikacji.
+Zachowaj ogólne oznaczenie, gdy wydanie
+
+formats_04
+00:00:22.913 --> 00:00:24.000
+jest nieznane.
+
+workflow_01
+00:00:24.750 --> 00:00:30.218
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:30.218 --> 00:00:35.791
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:35.791 --> 00:00:38.600
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:39.350 --> 00:00:45.376
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:45.376 --> 00:00:51.308
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:51.308 --> 00:00:54.133
+podatkowego ani dostarczenia przez sieć.
+

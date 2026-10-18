@@ -1,0 +1,40 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.602
+Svefaktura 1.0 jest wymienionym szwedzkim
+wariantem. Odróżniaj tę starszą rodzinę od
+
+formats_02
+00:00:05.602 --> 00:00:10.900
+Peppol BIS Billing 3.0. Sprawdź, którego
+profilu oczekuje odbiorca.
+
+workflow_01
+00:00:11.650 --> 00:00:17.118
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:17.118 --> 00:00:22.691
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:22.691 --> 00:00:25.500
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:26.250 --> 00:00:32.276
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:32.276 --> 00:00:38.208
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:38.208 --> 00:00:41.033
+podatkowego ani dostarczenia przez sieć.
+

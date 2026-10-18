@@ -8,6 +8,18 @@ Gebruik deze gids om de geconfigureerde familie en de versieomvang vast te stell
 
 [Alle landen en ondersteuningsomvang](../README.md)
 
+## Uitlegvideo per land
+
+Gesproken uitleg en WebVTT-ondertitels in de gekozen taal leggen formaatselectie, configuratie en acceptatiecontroles uit.
+
+Deze rondleiding zonder wijzigingen toont de bestaande DocBits-configuratie voor het land. Controleer de gebruikte bron en actieve versie en test representatieve facturen, creditnota’s en exports in uw eigen organisatie.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_costa_rica/v2/nl.mp4" %}
+
+[Costa Rica — Uitlegvideo per land](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_costa_rica/v2/nl.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_costa_rica/v2/nl.vtt)
+
 ## Varianten en versiebeperkingen
 
 De oudere documentatie noemt Costa Rica, maar in de onderzochte ontwikkelcatalogus is geen overeenkomende classificatie- of configuratievermelding gevonden.
@@ -25,20 +37,6 @@ Er is geen overeenkomende classificatie- of configuratievermelding gevonden. Dez
 ## Zoek de toewijzing in DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-nl.png" alt="Costa Rica: Niet bevestigd"><figcaption><p>Werkelijke ontwikkelinterface: zoeken op deze landnaam leverde geen overeenkomende configuratievermelding op in de onderzochte catalogus.</p></figcaption></figure>
-
-## Uitlegvideo per land
-
-Gesproken uitleg en WebVTT-ondertitels in de gekozen taal leggen formaatselectie, configuratie en acceptatiecontroles uit.
-
-Deze rondleiding zonder wijzigingen toont de bestaande DocBits-configuratie voor het land. Controleer de gebruikte bron en actieve versie en test representatieve facturen, creditnota’s en exports in uw eigen organisatie.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-nl-v2.mp4" %}
-Costa Rica — Uitlegvideo per land
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-nl-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Acceptatiecontroles
 

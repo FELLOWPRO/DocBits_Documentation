@@ -8,6 +8,18 @@ Skorzystaj z tego przewodnika, aby ustalić skonfigurowaną rodzinę i zakres we
 
 [Wszystkie kraje i zakres obsługi](../README.md)
 
+## Film objaśniający dla kraju
+
+Narracja i napisy WebVTT w wybranym języku wyjaśniają wybór formatu, konfigurację i kontrole akceptacyjne.
+
+Ten przegląd bez wprowadzania zmian pokazuje istniejącą konfigurację kraju w DocBits. Sprawdź używane źródło i aktywną wersję, a następnie przetestuj reprezentatywne faktury, noty kredytowe i eksporty we własnej organizacji.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_finland/v2/pl.mp4" %}
+
+[Finlandia — Film objaśniający dla kraju](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_finland/v2/pl.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_finland/v2/pl.vtt)
+
 ## Warianty i ograniczenia wersji
 
 Finvoice 1.3, 2.0, 2.01 i 3.0 mają osobne wpisy. TEAPPSXML to inna rodzina.
@@ -35,20 +47,6 @@ Myślnik oznacza, że kontrola statusu nie wykazała dedykowanego komponentu dla
 ## Znajdź mapowanie w DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-finland-pl.png" alt="Finlandia"><figcaption><p>Rzeczywisty interfejs środowiska deweloperskiego: przykładowy format i dostępne komponenty konfiguracji. Pozostałe wersje wymieniono w macierzy.</p></figcaption></figure>
-
-## Film objaśniający dla kraju
-
-Narracja i napisy WebVTT w wybranym języku wyjaśniają wybór formatu, konfigurację i kontrole akceptacyjne.
-
-Ten przegląd bez wprowadzania zmian pokazuje istniejącą konfigurację kraju w DocBits. Sprawdź używane źródło i aktywną wersję, a następnie przetestuj reprezentatywne faktury, noty kredytowe i eksporty we własnej organizacji.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-finland-pl-v2.mp4" %}
-Finlandia — Film objaśniający dla kraju
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-finland-pl-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Kontrole akceptacyjne
 

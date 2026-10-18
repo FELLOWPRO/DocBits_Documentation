@@ -8,6 +8,18 @@ Use this guide to identify the configured family and version scope before testin
 
 [All countries and support scope](../README.md)
 
+## Country explainer
+
+Localized narration and WebVTT captions explain format selection, configuration and acceptance checks.
+
+This read-only walkthrough shows the country’s existing DocBits configuration. Check the effective source and active version, then validate representative invoices, credit notes and exports in your own organisation.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_denmark/v2/en.mp4" %}
+
+[Denmark — Country explainer](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_denmark/v2/en.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_denmark/v2/en.vtt)
+
 ## Variants and version limits
 
 OIOUBL 2.1 is the named Danish entry.
@@ -31,20 +43,6 @@ A dash means the status check did not report a dedicated component for this exac
 ## Find the mapping in DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-denmark-en.png" alt="Denmark: OIOUBL 2.1"><figcaption><p>Real development UI: the representative format and its available configuration components. Other versions are listed in the matrix.</p></figcaption></figure>
-
-## Country explainer
-
-Localized narration and WebVTT captions explain format selection, configuration and acceptance checks.
-
-This read-only walkthrough shows the country’s existing DocBits configuration. Check the effective source and active version, then validate representative invoices, credit notes and exports in your own organisation.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-denmark-en-v2.mp4" %}
-Denmark — Country explainer
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-denmark-en-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Acceptance checks
 

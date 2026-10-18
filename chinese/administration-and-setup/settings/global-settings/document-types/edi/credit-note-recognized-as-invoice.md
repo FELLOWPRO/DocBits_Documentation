@@ -13,13 +13,11 @@ description: "诊断并纠正电子贷项通知单的文档类型，同时保留
 
 视频中的旧版 XSLT 示例包含针对 381 和 389 的分支。请检查实际的 Transformation，确认这一具体版本保留哪些代码；通用代码列表不能证明每个历史映射都支持这些代码。
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-zh-v2.mp4" %}
-检查电子贷项通知单分类
-{% endfile %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/zh.mp4" %}
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-zh-v2.vtt" %}
-WebVTT
-{% endfile %}
+[检查电子贷项通知单分类](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/zh.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/zh.vtt)
 
 ## 检查文档代码
 

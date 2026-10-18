@@ -8,6 +8,18 @@ Use this guide to identify the configured family and version scope before testin
 
 [All countries and support scope](../README.md)
 
+## Country explainer
+
+Localized narration and WebVTT captions explain format selection, configuration and acceptance checks.
+
+This read-only walkthrough shows the country’s existing DocBits configuration. Check the effective source and active version, then validate representative invoices, credit notes and exports in your own organisation.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_france/v2/en.mp4" %}
+
+[France — Country explainer](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_france/v2/en.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_france/v2/en.vtt)
+
 ## Variants and version limits
 
 Factur-X has generic and release-specific entries, including 1.0.05, 1.08 and 1.09. VRBL FR CIUS 1.0 is separate.
@@ -77,20 +89,6 @@ MINIMUM and BASIC WL can omit line-item information needed downstream. BASIC, EN
 ## Find the mapping in DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-france-en.png" alt="France: FACTURX 1.09 - ZUGFERD 2.5"><figcaption><p>Real development UI: the representative format and its available configuration components. Other versions are listed in the matrix.</p></figcaption></figure>
-
-## Country explainer
-
-Localized narration and WebVTT captions explain format selection, configuration and acceptance checks.
-
-This read-only walkthrough shows the country’s existing DocBits configuration. Check the effective source and active version, then validate representative invoices, credit notes and exports in your own organisation.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-france-en-v2.mp4" %}
-France — Country explainer
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-france-en-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Acceptance checks
 

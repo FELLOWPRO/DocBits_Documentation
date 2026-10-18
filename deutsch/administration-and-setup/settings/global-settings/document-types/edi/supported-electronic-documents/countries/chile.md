@@ -8,6 +8,18 @@ Verwenden Sie diese Anleitung, um die konfigurierte Familie und den Versionsumfa
 
 [Alle Länder und Umfang der Unterstützung](../README.md)
 
+## Erklärvideo zum Land
+
+Ein Sprechertext und WebVTT-Untertitel in der jeweiligen Sprache erklären Formatauswahl, Konfiguration und Abnahmeprüfungen.
+
+Dieser lesende Rundgang zeigt die in DocBits vorhandene Konfiguration für das Land. Prüfen Sie die verwendete Quelle und aktive Version und testen Sie repräsentative Rechnungen, Gutschriften und Exporte in Ihrer eigenen Organisation.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_chile/v2/de.mp4" %}
+
+[Chile — Erklärvideo zum Land](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_chile/v2/de.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_chile/v2/de.vtt)
+
 ## Varianten und Versionsgrenzen
 
 Für Chile DTE gibt es Einträge für Rechnungen, Gutschriften und Versandbegleitdokumente.
@@ -40,20 +52,6 @@ Für diese Bezeichnungen gibt es Konfigurationseinträge, aber keine eigenständ
 ## Die Zuordnung in DocBits finden
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-chile-de.png" alt="Chile: CHILE DTE FACTURA"><figcaption><p>Echte Entwicklungsoberfläche: das repräsentative Format und seine verfügbaren Konfigurationskomponenten. Weitere Versionen sind in der Matrix aufgeführt.</p></figcaption></figure>
-
-## Erklärvideo zum Land
-
-Ein Sprechertext und WebVTT-Untertitel in der jeweiligen Sprache erklären Formatauswahl, Konfiguration und Abnahmeprüfungen.
-
-Dieser lesende Rundgang zeigt die in DocBits vorhandene Konfiguration für das Land. Prüfen Sie die verwendete Quelle und aktive Version und testen Sie repräsentative Rechnungen, Gutschriften und Exporte in Ihrer eigenen Organisation.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-chile-de-v2.mp4" %}
-Chile — Erklärvideo zum Land
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-chile-de-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Abnahmeprüfungen
 

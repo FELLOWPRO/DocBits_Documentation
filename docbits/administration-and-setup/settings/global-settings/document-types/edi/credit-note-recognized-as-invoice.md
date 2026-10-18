@@ -13,13 +13,11 @@ The video shows a read-only check in DocBits using FACTURX 1.0.05 / ZUGFeRD 2.1 
 
 The older example XSLT shown in the video contains branches for 381 and 389. Check the actual Transformation to establish which codes this specific version preserves; the general code list does not prove coverage in every historical mapping.
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-en-v2.mp4" %}
-Check electronic credit note classification
-{% endfile %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/en.mp4" %}
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-en-v2.vtt" %}
-WebVTT
-{% endfile %}
+[Check electronic credit note classification](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/en.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/en.vtt)
 
 ## Check the document code
 

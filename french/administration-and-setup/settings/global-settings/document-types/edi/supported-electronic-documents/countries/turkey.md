@@ -8,6 +8,18 @@ Utilisez ce guide pour identifier la famille configurée et le périmètre des v
 
 [Tous les pays et périmètre de prise en charge](../README.md)
 
+## Vidéo explicative du pays
+
+La narration localisée et les sous-titres WebVTT expliquent le choix du format, la configuration et les vérifications d’acceptation.
+
+Cette visite en lecture seule montre la configuration existante du pays dans DocBits. Vérifiez la source utilisée et la version active, puis testez des factures, des avoirs et des exports représentatifs dans votre organisation.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_turkey/v2/fr.mp4" %}
+
+[Turquie — Vidéo explicative du pays](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_turkey/v2/fr.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_turkey/v2/fr.vtt)
+
 ## Variantes et limites de version
 
 Turkey E-Fatura et E-Arsiv sont des familles configurées distinctes.
@@ -32,20 +44,6 @@ Un tiret signifie que la vérification de l’état n’a pas signalé de compos
 ## Trouver la correspondance dans DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-turkey-fr.png" alt="Turquie: TURKEY E-FATURA"><figcaption><p>Interface réelle de développement : le format représentatif et ses composants de configuration disponibles. Les autres versions figurent dans la matrice.</p></figcaption></figure>
-
-## Vidéo explicative du pays
-
-La narration localisée et les sous-titres WebVTT expliquent le choix du format, la configuration et les vérifications d’acceptation.
-
-Cette visite en lecture seule montre la configuration existante du pays dans DocBits. Vérifiez la source utilisée et la version active, puis testez des factures, des avoirs et des exports représentatifs dans votre organisation.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-turkey-fr-v2.mp4" %}
-Turquie — Vidéo explicative du pays
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-turkey-fr-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Vérifications d’acceptation
 

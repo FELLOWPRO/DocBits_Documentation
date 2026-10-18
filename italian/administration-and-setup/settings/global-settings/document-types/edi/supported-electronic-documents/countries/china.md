@@ -8,6 +8,18 @@ Usate questa guida per identificare la famiglia configurata e l’ambito delle v
 
 [Tutti i paesi e ambito del supporto](../README.md)
 
+## Video esplicativo del paese
+
+La narrazione localizzata e i sottotitoli WebVTT spiegano la selezione del formato, la configurazione e le verifiche di accettazione.
+
+Questa panoramica in sola lettura mostra la configurazione esistente del paese in DocBits. Verificate la fonte utilizzata e la versione attiva, quindi provate fatture, note di credito ed esportazioni rappresentative nella vostra organizzazione.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_china/v2/it.mp4" %}
+
+[Cina — Video esplicativo del paese](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_china/v2/it.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_china/v2/it.vtt)
+
 ## Varianti e limiti delle versioni
 
 Il catalogo comprende Fapiao, E-Fapiao, General VAT Invoice e Special VAT Invoice.
@@ -34,20 +46,6 @@ Un trattino indica che la verifica dello stato non ha rilevato un componente ded
 ## Trovare la mappatura in DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-china-it.png" alt="Cina: CHINA GENERAL VAT INVOICE"><figcaption><p>Interfaccia reale di sviluppo: il formato rappresentativo e i relativi componenti di configurazione disponibili. Le altre versioni sono elencate nella matrice.</p></figcaption></figure>
-
-## Video esplicativo del paese
-
-La narrazione localizzata e i sottotitoli WebVTT spiegano la selezione del formato, la configurazione e le verifiche di accettazione.
-
-Questa panoramica in sola lettura mostra la configurazione esistente del paese in DocBits. Verificate la fonte utilizzata e la versione attiva, quindi provate fatture, note di credito ed esportazioni rappresentative nella vostra organizzazione.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-china-it-v2.mp4" %}
-Cina — Video esplicativo del paese
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-china-it-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Verifiche di accettazione
 

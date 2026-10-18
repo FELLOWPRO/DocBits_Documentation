@@ -13,13 +13,11 @@ Film pokazuje sprawdzenie w DocBits bez wprowadzania zmian, na przykładzie FACT
 
 Starszy przykład XSLT pokazany w filmie zawiera gałęzie dla kodów 381 i 389. Sprawdź w rzeczywistej Transformation, które kody zachowuje ta konkretna wersja; ogólna lista kodów nie dowodzi ich obsługi w każdym historycznym mapowaniu.
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-pl-v2.mp4" %}
-Sprawdź klasyfikację elektronicznych not kredytowych
-{% endfile %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/pl.mp4" %}
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-pl-v2.vtt" %}
-WebVTT
-{% endfile %}
+[Sprawdź klasyfikację elektronicznych not kredytowych](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/pl.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/pl.vtt)
 
 ## Sprawdź kod dokumentu
 

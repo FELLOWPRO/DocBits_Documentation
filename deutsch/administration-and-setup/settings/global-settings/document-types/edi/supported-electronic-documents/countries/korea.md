@@ -8,6 +8,18 @@ Verwenden Sie diese Anleitung, um die konfigurierte Familie und den Versionsumfa
 
 [Alle Länder und Umfang der Unterstützung](../README.md)
 
+## Erklärvideo zum Land
+
+Ein Sprechertext und WebVTT-Untertitel in der jeweiligen Sprache erklären Formatauswahl, Konfiguration und Abnahmeprüfungen.
+
+Dieser lesende Rundgang zeigt die in DocBits vorhandene Konfiguration für das Land. Prüfen Sie die verwendete Quelle und aktive Version und testen Sie repräsentative Rechnungen, Gutschriften und Exporte in Ihrer eigenen Organisation.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_korea/v2/de.mp4" %}
+
+[Südkorea — Erklärvideo zum Land](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_korea/v2/de.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_korea/v2/de.vtt)
+
 ## Varianten und Versionsgrenzen
 
 Korea E-Tax Invoice und Korea NTS sind konfigurierte Familien.
@@ -32,20 +44,6 @@ Ein Strich bedeutet, dass die Statusprüfung für genau diese Kombination aus Fo
 ## Die Zuordnung in DocBits finden
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-korea-de.png" alt="Südkorea: KOREA E-TAX INVOICE"><figcaption><p>Echte Entwicklungsoberfläche: das repräsentative Format und seine verfügbaren Konfigurationskomponenten. Weitere Versionen sind in der Matrix aufgeführt.</p></figcaption></figure>
-
-## Erklärvideo zum Land
-
-Ein Sprechertext und WebVTT-Untertitel in der jeweiligen Sprache erklären Formatauswahl, Konfiguration und Abnahmeprüfungen.
-
-Dieser lesende Rundgang zeigt die in DocBits vorhandene Konfiguration für das Land. Prüfen Sie die verwendete Quelle und aktive Version und testen Sie repräsentative Rechnungen, Gutschriften und Exporte in Ihrer eigenen Organisation.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-korea-de-v2.mp4" %}
-Südkorea — Erklärvideo zum Land
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-korea-de-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Abnahmeprüfungen
 

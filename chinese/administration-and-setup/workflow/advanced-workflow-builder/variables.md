@@ -1,5 +1,42 @@
 # 变量
 
+## 视频: 变量、测试与激活
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/zh.mp4" %}
+
+[字幕文件（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/zh.vtt) · 1:48
+
+<details>
+<summary>文字稿</summary>
+
+**选择变量类型**
+
+点击花括号图标打开变量。选择文本、数字、是或否，或者文档，并按名称搜索。Document 变量存储由专用工作流动作设置的文档引用。此表单不接受文档值。
+
+**变量属于整个组织**
+
+设置唯一名称、类型和初始值。创建、修改或删除变量会立即保存到组织。其他工作流可以共用这些值。保存或放弃画布都无法撤销变量更改。
+
+**先验证结构**
+
+点击验证，查看画布上方的错误和警告。点击消息可以定位节点。检查动作、入口连接、输出、环路和合并节点。结构验证通过，并不代表运行时数据正确。
+
+**选择测试上下文**
+
+工具栏播放按钮打开测试文档选择器。选择文档、自定义数据，或对独立卡片选择无文档测试。Start 的播放按钮直接运行。测试使用当前画布，包括未保存的修改，并模拟破坏性动作。
+
+**检查测试结果**
+
+检查节点消息和耗时。绿色表示成功，橙色表示条件不成立，红色表示错误，灰色表示跳过。修正后重新测试。使用测试管理器建立可重复场景，覆盖成功、替代路径、缺失数据和错误。
+
+**保存后再激活**
+
+自动保存会在更改后约每三十秒保留本地浏览器草稿。请明确保存到服务器。首次保存前无法激活。在预期自动执行之前，检查工作流列表中的启用状态。
+
+</details>
+
+[查看全部五个章节](videos.md)
+
 **变量**可让你只需存储一次值，就能在高级工作流的各个节点中重复使用，例如阈值、固定收件人，或从文档中读取并传递给后续节点的值。点击工具栏中的**变量**按钮（`{ }` 图标）打开变量面板。
 
 <figure><img src="../../../.gitbook/assets/workflow_advanced_variables.png" alt="按类型分组的变量面板，带有 New Variable 按钮"><figcaption><p>变量面板——变量按类型分组，带有搜索框和<strong>New Variable</strong>。</p></figcaption></figure>

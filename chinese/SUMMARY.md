@@ -566,6 +566,7 @@
     * [工作流示例：条件导出触发器](administration-and-setup/workflow/standard-workflow-builder/workflow-description-conditional-export-trigger.md)
     * [分配与状态 — 示例](administration-and-setup/workflow/standard-workflow-builder/workflow-documentation.md)
   * [高级工作流](administration-and-setup/workflow/advanced-workflow-builder/README.md)
+    * [高级工作流视频教程](administration-and-setup/workflow/advanced-workflow-builder/videos.md)
     * [节点](administration-and-setup/workflow/advanced-workflow-builder/nodes.md)
     * [变量](administration-and-setup/workflow/advanced-workflow-builder/variables.md)
     * [验证与测试](administration-and-setup/workflow/advanced-workflow-builder/validation-and-testing.md)

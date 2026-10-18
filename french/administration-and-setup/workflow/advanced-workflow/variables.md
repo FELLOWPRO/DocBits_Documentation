@@ -1,5 +1,42 @@
 # Variables
 
+## Vidéo: Variables, tests et activation
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/fr.mp4" %}
+
+[Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/fr.vtt) · 1:53
+
+<details>
+<summary>Transcription</summary>
+
+**Choisissez le type**
+
+Ouvrez Variables avec les accolades. Choisissez texte, nombre, oui ou non, ou document. Recherchez les noms. Document contient une référence définie par une action dédiée ; ce formulaire n’accepte pas de valeur documentaire.
+
+**Portée de l’organisation**
+
+Choisissez un nom unique, un type et une valeur initiale. Création, modification et suppression sont enregistrées immédiatement dans l’organisation. D’autres workflows partagent ces valeurs. Enregistrer ou abandonner le canevas n’annule pas ces changements.
+
+**Validez la structure**
+
+Cliquez sur Valider. Examinez erreurs et avertissements au-dessus du canevas. Un message cible son nœud. Vérifiez actions, entrées, sorties, cycles et jonctions. Une structure valide ne garantit pas des données correctes.
+
+**Choisissez le contexte**
+
+La lecture dans la barre ouvre le choix du document. Choisissez document, données personnalisées ou test sans document pour les cartes indépendantes. Start lance directement. Les tests incluent les modifications non enregistrées et simulent les actions destructrices.
+
+**Examinez les résultats**
+
+Examinez messages et durées : vert, succès ; orange, condition fausse ; rouge, erreur ; gris, ignoré. Corrigez et retestez. Le gestionnaire de tests permet des scénarios reproductibles : succès, alternatives, données absentes et erreurs.
+
+**Enregistrez avant d’activer**
+
+Le brouillon local est enregistré automatiquement environ toutes les trente secondes après modification. Enregistrez explicitement sur le serveur. Activez après le premier enregistrement. Vérifiez l’état dans la liste avant d’attendre une exécution automatique.
+
+</details>
+
+[Voir les cinq chapitres](../advanced-workflow-videos.md)
+
 Les **Variables** vous permettent de stocker une valeur une seule fois et de la réutiliser dans les nœuds d'un Workflow Avancé — par exemple un seuil, un destinataire fixe ou une valeur que vous lisez dans le document et transmettez à un nœud ultérieur. Ouvrez le panneau des variables depuis le bouton **Variables** (l'icône `{ }`) dans la barre d'outils.
 
 <figure><img src="../../../.gitbook/assets/workflow_advanced_variables.png" alt="Panneau des variables regroupées par type avec un bouton New Variable"><figcaption><p>Le panneau Variables — variables regroupées par type, avec recherche et <strong>New Variable</strong>.</p></figcaption></figure>

@@ -1,5 +1,30 @@
 # Knoten
 
+## Video: Knoten und Routen
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/de.mp4" %}
+
+[Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/de.vtt)
+
+<details>
+<summary>Transkript</summary>
+
+Start ist der manuelle Einstieg. When reagiert auf Ereignisse. Beide haben keinen Eingang. And prüft Bedingungen, Then führt Aktionen aus. Beide Editoren verwenden denselben Kartenkatalog.
+
+Ziehen Sie einen Ausgang zum nächsten Eingang. Blau ist im Editor der Erfolgsweg. Orange bedeutet Bedingung falsch, Rot einen Ausführungsfehler. And hat drei Ergebnisse. Then hat Erfolg und Fehler. In Ergebnisansichten ist Erfolg grün.
+
+Prüfen Sie, ob ein Rechnungsbetrag einen Grenzwert überschreitet. Verbinden Sie Blau mit einer Freigabeaufgabe, Orange mit normaler Verarbeitung und Rot mit einer Fehlerbehandlung. Eine falsche Bedingung folgt ihrem verbundenen Weg. Sie stoppt nicht alle Zweige.
+
+Wait ALL führt Zweige zusammen. Jede Quelle muss einen zum Kontrollknoten verbundenen Weg genommen haben. Verbinden Sie beide Prüfungen und die nächste Aktion. Ein nicht gewählter Weg kann kein erforderliches Ergebnis liefern.
+
+Wait ANY und OR führen Zweige zusammen. Mindestens eine Quelle muss einen verbundenen Weg genommen haben. OR benötigt zwei verschiedene Quellknoten. Diese Knoten erzeugen keine exklusive Auswahl und brechen andere Aktionen nicht ab.
+
+Verarbeitungsknoten müssen von einem Einstieg erreichbar sein. Vermeiden Sie Schleifen und eingehende Verbindungen an Einstiegsknoten. Fügen Sie eine Then Aktion hinzu und validieren Sie. Importierte Delay Knoten brauchen eine positive Dauer. Das aktuelle Hinzufügen Menü bietet Delay nicht an.
+
+</details>
+
+[Alle fünf Kapitel ansehen](../advanced-workflow-videos.md)
+
 Ein Advanced Workflow ist ein Graph aus **Knoten**, die durch Kanten verbunden sind. Sie fügen Knoten über das Menü **+ Add** hinzu (oder per Rechtsklick auf die Arbeitsfläche) und verbinden sie, um den Ausführungsablauf festzulegen.
 
 <figure><img src="../../../.gitbook/assets/workflow_advanced_add_menu.png" alt="Menü zum Hinzufügen von Knoten mit den verfügbaren Knotentypen"><figcaption><p>Das Menü <strong>+ Add</strong> für Knoten — die verfügbaren Knotentypen.</p></figcaption></figure>

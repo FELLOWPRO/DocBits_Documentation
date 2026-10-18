@@ -1,5 +1,79 @@
 # Workflow Logs
 
+## Video
+
+Deze twee video’s gebruiken lesdiagrammen die als illustraties zijn aangeduid.
+
+### De juiste uitvoering vinden
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/nl.mp4" %}
+
+[Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/nl.vtt) · 1:49
+
+<details>
+<summary>Transcriptie</summary>
+
+**Open het documentlogboek**
+
+Kies in het documentdashboard Workflow Logs onder Acties. Workflowtoegang moet ingeschakeld zijn. Deze logboeken horen bij het gekozen document. Ontwerpertests en gebeurtenis- of activiteitenlogboeken van de organisatie staan hier los van.
+
+**Lees de tellers**
+
+Blauw telt uitvoeringen in de huidige resultaten, rood fouten, geel onware voorwaarden en groen successen. De tellers beschrijven uitvoeringen, geen workflowdefinities of knooppunten. Filters kunnen deze aantallen wijzigen.
+
+**Kies de exacte uitvoering**
+
+Elke rij toont workflownaam, aanmaaktijd, duur in seconden en resultaat. Eén workflow kan meermaals voor hetzelfde document draaien. Vergelijk tijdstempels. Een korte uitvoering kan door afronding nul komma nul nul seconden tonen.
+
+**Beperk de resultaten**
+
+Zoek een workflow met Zoeken. Het afstelpictogram opent sorteerrichting, sorteercriterium, status en begin- en einddatum. Sorteer op naam of aanmaaktijd. Voer datums in als jaar, maand, dag en selecteer Toepassen.
+
+**Controleer pagina’s en filters**
+
+Gebruik paginering voor oudere resultaten. Filters wissen laadt de lijst zonder filterkeuzes. Wis de zoektekst afzonderlijk. Controleer bij lege resultaten document, datums en status. Een lege lijst bewijst geen uitvoeringsfout.
+
+**Bijzondere toestanden**
+
+Een banner en blokkeerpictogram tonen de uitvoeringslimiet van het document. Onderzoek herhaalde triggers voordat u limieten wijzigt. Een DocOperator-videodownload verschijnt alleen bij een bestaande opname; die opname hoort bij de uitvoering.
+
+</details>
+
+### Knooppunten volgen en onderzoeken
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/nl.mp4" %}
+
+[Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/nl.vtt) · 1:43
+
+<details>
+<summary>Transcriptie</summary>
+
+**Vouw een uitvoering uit**
+
+Vouw de workflowrij uit. Een geavanceerde uitvoering toont de graaf links en meldingen rechts; een standaardworkflow toont een reeks kaarten. De gegevens beschrijven die uitvoering en kunnen afwijken van de huidige ontwerper.
+
+**Selecteer een knooppunt**
+
+Verschuif of vergroot de graaf en klik op een knooppunt. Card Logs toont de meldingen. Wait ALL en Wait ANY kunnen ook knooppuntmeldingen hebben. Lees de melding samen met het gekozen knooppunt en tijdstempel.
+
+**Onderscheid de uitkomsten**
+
+Groen betekent succes, oranje een onware voorwaarde, rood een fout, grijs overgeslagen. Een overgeslagen knooppunt is niet uitgevoerd. Controleer eerst of een andere tak werd gekozen of een vereiste ingang van de samenvoeging ontbreekt.
+
+**Volg de eerste afwijking**
+
+Volg de werkelijke route vanaf de ingang. Bekijk oranje bij een onware bedragcontrole. Lees bij een fout de melding en volg rood. Foutafhandeling kan slagen terwijl de gehele uitvoering de oorspronkelijke fout blijft melden.
+
+**Onderzoek samenvoegingen**
+
+Controleer bij Wait ALL elke bron en verbonden uitkomst. Zoek bij ANY of OR een passende bron. Twee uitgangen van één knooppunt zijn geen onafhankelijke goedkeuringen. Een oranje voorwaarderesultaat kan bedoeld zijn.
+
+**Corrigeer en controleer**
+
+Noteer workflownaam, documentverwijzing, tijdstempel, knooppunt en exacte melding. Corrigeer instellingen of gegevens en test een herhaalbaar scenario. Sla op en controleer activering. Vergelijk een nieuwe uitvoering met de oude; eerdere logboeken beschrijven eerder gedrag.
+
+</details>
+
 ## **Overzicht**
 
 De **Workflow Logs** stellen gebruikers in staat om te analyseren welke workflows zijn uitgevoerd voor een document, de uitvoeringsresultaten te begrijpen en in te zoomen op details op voorwaardeniveau voor debugging of validatie.

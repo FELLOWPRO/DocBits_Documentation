@@ -2,9 +2,7 @@
 
 El constructor **Advanced Workflow** es un editor de grafos de nodos para flujos de trabajo que necesitan ramificaciones, rutas paralelas y control de flujo, más allá del modelo lineal When/And/Then del constructor Standard. Usted dispone los nodos en un lienzo y los conecta para definir el flujo de ejecución.
 
-{% embed url="https://youtu.be/EeNFVR6z7G8" %}
-Advanced Workflow Designer
-{% endembed %}
+[Ver los cinco capítulos](../advanced-workflow-videos.md)
 
 ## Cómo acceder
 

@@ -65,3 +65,5 @@ Exécutez le flux avec la commande de lecture, validez-le, puis enregistrez avec
 
 - Découvrez ce que fait chaque carte dans la section **Cards**.
 - Pour des automatisations linéaires simples, le constructeur **Standard Workflow** est plus rapide à configurer.
+
+[Voir les cinq chapitres](advanced-workflow-videos.md)

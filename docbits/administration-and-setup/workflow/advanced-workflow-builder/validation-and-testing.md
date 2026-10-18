@@ -4,6 +4,31 @@ description: "Validate structure, choose document or custom test input, inspect 
 
 # Validation & Testing
 
+## Video: Variables, tests and activation
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/en.mp4" %}
+
+[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/en.vtt) · 1:54
+
+<details>
+<summary>Transcript (English)</summary>
+
+Open Variables with the braces icon. Choose Text, Number, Yes or No, or Document. Search finds variable names. A Document variable stores a reference set by a dedicated workflow action. This form does not accept document values.
+
+Choose a unique name, type and initial value. Creating, editing and deleting variables persist immediately for the organization. Other workflows can share these values. Saving or discarding the canvas cannot undo variable changes.
+
+Select Validate. Review errors and warnings above the canvas. Click a message to focus its node. Check actions, entry connections, handles, cycles and merges. Structural validation does not prove that runtime data is correct.
+
+Toolbar play opens Select Test Document. Choose a document, Custom Data, or Test Without Document for independent cards. Start play runs directly. Tests use the current canvas, including unsaved edits, and simulate destructive actions.
+
+Inspect node messages and durations. Green means success, orange false condition, red error, and gray skipped. Retest corrections. Use Test Manager for repeatable scenarios. Cover the successful route, alternatives, missing data and errors.
+
+Auto-save keeps a local browser draft about every thirty seconds after changes. Save explicitly to the server. The activation toggle is unavailable before the first save. Check the enabled state in Workflow List before expecting automatic execution.
+
+</details>
+
+[Watch all five chapters](videos.md)
+
 **Validate** checks graph structure. **Test** evaluates the current graph with specific input. A valid drawing or one green test does not prove that every production case is covered.
 
 ## Validate

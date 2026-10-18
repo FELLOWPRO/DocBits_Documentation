@@ -2,9 +2,7 @@
 
 O construtor **Advanced Workflow** é um editor de grafo de nós para fluxos de trabalho que precisam de ramificações, caminhos paralelos e controlo de fluxo — para além do When/And/Then linear do construtor Standard. Dispõe os nós numa tela e liga-os para definir o fluxo de execução.
 
-{% embed url="https://youtu.be/EeNFVR6z7G8" %}
-Advanced Workflow Designer
-{% endembed %}
+[Ver os cinco capítulos](../advanced-workflow-videos.md)
 
 ## Como aceder
 

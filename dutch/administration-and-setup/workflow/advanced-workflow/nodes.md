@@ -1,5 +1,42 @@
 # Nodes
 
+## Video: Knooppunten en routes
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/nl.mp4" %}
+
+[Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/nl.vtt) · 1:50
+
+<details>
+<summary>Transcriptie</summary>
+
+**De rol van elk knooppunt**
+
+Start begint handmatig. When definieert een gebeurtenis. Beide accepteren geen inkomende verbindingen. And controleert een voorwaarde. Then voert een actie uit. Beide bouwers delen de kaartcatalogus. Notities lichten het ontwerp toe zonder te worden uitgevoerd.
+
+**Drie verschillende uitkomsten**
+
+Sleep een uitgang naar de volgende ingang. In de ontwerper betekent blauw succes, oranje een onware voorwaarde en rood een fout. And heeft drie uitkomsten; Then succes en fout. Uitvoeringsweergaven tonen succes in groen.
+
+**Bouw een alternatief**
+
+Controleer of een factuur de drempel overschrijdt. Verbind blauw met goedkeuring, oranje met normale verwerking en rood met foutafhandeling. Een onware voorwaarde kan via de verbonden route doorgaan en stopt niet alle takken.
+
+**Samenvoegen met Wait ALL**
+
+Wait ALL voegt takken samen. Elk bronknooppunt moet een route naar de samenvoeging hebben gevolgd. Verbind beide vereiste controles en de volgende actie. Een niet gekozen route levert het vereiste resultaat niet.
+
+**Alternatieven met ANY en OR**
+
+Wait ANY en OR voegen takken samen als minstens één bron een verbonden route volgt. OR vereist twee verschillende bronknooppunten. Deze samenvoegingen maken keuzes niet exclusief en annuleren geen andere acties. Test de hele graaf.
+
+**Houd de graaf uitvoerbaar**
+
+Maak knooppunten bereikbaar vanaf een ingang. Vermijd cycli en inkomende verbindingen naar Start of When. Voeg een Then-actie toe en valideer routes. Geïmporteerde Delay-knooppunten vereisen een positieve duur; Toevoegen biedt geen Delay.
+
+</details>
+
+[Bekijk alle vijf hoofdstukken](../advanced-workflow-videos.md)
+
 Een Advanced Workflow is een graaf van **nodes** die met elkaar verbonden zijn door verbindingen. Je voegt nodes toe via het **+ Add**-menu (of door met de rechtermuisknop op het canvas te klikken) en verbindt ze om de uitvoeringsstroom te definiëren.
 
 <figure><img src="../../../.gitbook/assets/workflow_advanced_add_menu.png" alt="Menu Node toevoegen met de beschikbare nodetypes"><figcaption><p>Het <strong>+ Add</strong>-nodemenu — de beschikbare nodetypes.</p></figcaption></figure>

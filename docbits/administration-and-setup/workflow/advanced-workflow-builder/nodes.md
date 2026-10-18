@@ -4,6 +4,31 @@ description: "Configure every Advanced Workflow node type and connect success, f
 
 # Nodes
 
+## Video: Nodes and routes
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/en.mp4" %}
+
+[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/en.vtt) · 1:42
+
+<details>
+<summary>Transcript (English)</summary>
+
+Start is the manual entry. When defines an event trigger. Neither accepts incoming connections. And checks a condition. Then performs an action. Both builders share the card catalog. Notes explain the design without executing.
+
+Drag an output to the next input. Designer blue means success, orange means false condition, and red means error. And has three outcomes. Then has success and error. Execution views show success in green.
+
+Check whether an invoice exceeds a threshold. Connect blue to approval, orange to normal processing, and red to error handling. A false condition can continue through its connected route. It does not stop every branch.
+
+Wait ALL joins branches. Every source must have taken a route connected to the gate. Connect both required checks and the next action. An unselected route cannot provide a required result.
+
+Wait ANY and OR join branches when at least one source took a connected route. OR requires two different source nodes. These gates neither create exclusive choices nor cancel other actions. Test the complete graph.
+
+Keep processing nodes reachable from an entry. Avoid cycles and incoming connections to entry nodes. Include a Then action. Validate changed routes. Imported Delay nodes need a positive duration. The current Add menu does not offer Delay.
+
+</details>
+
+[Watch all five chapters](videos.md)
+
 Nodes perform work; connections carry their results to the next node. Use **+ Add** or right-click the canvas. **When**, **And** and **Then** open the card picker. Choose a category or search, select a card, then configure its fields.
 
 <figure><img src="../../../.gitbook/assets/advanced_workflows_condition_catalog_en.png" alt="Condition card picker with category navigation, search and configurable card fields"><figcaption><p>Choose a category or search for the operation you need. The card's highlighted fields are configuration inputs.</p></figcaption></figure>

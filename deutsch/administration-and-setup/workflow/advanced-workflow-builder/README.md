@@ -2,9 +2,7 @@
 
 Der **Advanced Workflow**-Builder ist ein Node-Graph-Editor für Workflows, die Verzweigungen, parallele Pfade und Ablaufsteuerung benötigen — über das lineare When/And/Then des Standard-Builders hinaus. Sie ordnen Knoten auf einer Canvas an und verbinden sie, um den Ausführungsfluss zu definieren.
 
-{% embed url="https://youtu.be/EeNFVR6z7G8" %}
-Advanced Workflow Designer
-{% endembed %}
+[Zur aktuellen Videoanleitung](../advanced-workflow-videos.md)
 
 ## Zugang
 

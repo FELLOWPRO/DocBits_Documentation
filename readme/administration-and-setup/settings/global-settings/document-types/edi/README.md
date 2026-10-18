@@ -25,3 +25,7 @@ In Docbits bieten die EDI-Einstellungen Tools zum Definieren und Verwalten der S
 ## Verwendete Regeln und Aktivierung
 
 Wenn eine elektronische Gutschrift als Invoice erscheint, folgen Sie der [Anleitung zur Fehlerbehebung bei der Klassifizierung](credit-note-recognized-as-invoice.md). Sie erläutert die verwendete angepasste oder standardmäßige Quelle, die Typcodes, Extraction Paths und die sichere Aktivierung.
+
+## Länderanleitungen
+
+Die Länderanleitungen enthalten genaue Formatbezeichnungen, Syntax, Versionsgrenzen und den geprüften Konfigurationsstand. [eDocs-Formate, Versionen und Länderanleitungen](supported-electronic-documents/README.md).

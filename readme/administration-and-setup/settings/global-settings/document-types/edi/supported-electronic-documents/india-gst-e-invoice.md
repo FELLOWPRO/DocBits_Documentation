@@ -4,6 +4,12 @@ description: India GST E-Rechnung – Unterstützung elektronischer Dokumente in
 
 # 🇮🇳 Indien GST E-Rechnung
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Indien](countries/india.md). Der dokumentierte Adapter verarbeitet SignedInvoice-XML. Setzen Sie nicht voraus, dass unbearbeitetes IRP-JSON, ein QR-Bild oder ein PDF-Scan denselben Extraktionspfad verwendet.
+{% endhint %}
+
 | Eigenschaft | Wert |
 |-------------|------|
 | **Land / Region** | Indien |

@@ -4,6 +4,12 @@ description: Unterstützung für das elektronische Dokument ZATCA TAX INVOICE in
 
 # 🇸🇦 ZATCA TAX INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Saudi-Arabien](countries/saudi-arabia.md). Diese Bezeichnungen beschreiben unterschiedliche Prozesse und Rechnungsvarianten. Das Einlesen belegt keine Signierung, Freigabe oder Meldung über ZATCA.
+{% endhint %}
+
 | Eigenschaft | Wert |
 |---|---|
 | **Land / Region** | Saudi Arabia |

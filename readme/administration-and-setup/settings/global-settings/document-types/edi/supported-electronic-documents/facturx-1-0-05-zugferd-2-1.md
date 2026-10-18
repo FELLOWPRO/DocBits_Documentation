@@ -4,6 +4,12 @@ description: FACTURX 1.0.05 - ZUGFERD 2.1 elektronische Dokumentenunterstützung
 
 # 🇫🇷 FACTURX 1.0.05 - ZUGFERD 2.1
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Frankreich](countries/france.md). Die XML-Kennung 1p0 und Factur-X XMP Version 1.0 identifizieren keine Veröffentlichungsversion. Behalten Sie die generische Bezeichnung bei, wenn die Veröffentlichung unbekannt ist.
+{% endhint %}
+
 | Eigenschaft | Wert |
 | ----------- | ---- |
 | **Land / Region** | Frankreich / Deutschland |

@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.130
+Für ZATCA Fatoorah, Reporting, Simplified
+und Tax Invoice gibt es separate Einträge.
+
+formats_02
+00:00:06.130 --> 00:00:10.400
+Diese Bezeichnungen beschreiben
+unterschiedliche Prozesse und
+
+formats_03
+00:00:10.400 --> 00:00:15.930
+Rechnungsvarianten. Das Einlesen belegt
+keine Signierung, Freigabe oder Meldung
+
+formats_04
+00:00:15.930 --> 00:00:16.700
+über ZATCA.
+
+workflow_01
+00:00:17.450 --> 00:00:22.756
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:22.756 --> 00:00:29.466
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:29.466 --> 00:00:31.100
+aktiviert ihn nicht.
+
+accept_01
+00:00:31.850 --> 00:00:36.482
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:36.482 --> 00:00:42.612
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:42.612 --> 00:00:45.733
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

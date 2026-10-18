@@ -4,6 +4,12 @@ description: Unterstützung für das elektronische Dokument SI-UBL 2.0 in DocBit
 
 # 🇳🇱 SI-UBL 2.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Niederlande](countries/netherlands.md). Eine UBL-Datei entspricht nicht automatisch SI-UBL 2.0. Prüfen Sie ihre Anpassungskennung und die passende nationale Zuordnung.
+{% endhint %}
+
 | Eigenschaft | Wert |
 | ----------- | ---- |
 | **Land / Region** | Niederlande |

@@ -834,6 +834,7 @@
 * [AI 工作团队](advanced-functions-and-tools/ai_workforce.md)
 * [DocBits MCP](advanced-functions-and-tools/docbits-mcp/README.md)
   * [设置与配置](advanced-functions-and-tools/docbits-mcp/setup-and-configuration.md)
+  * [使用 Claude 或 Codex 配置 DocBits](advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md)
   * [示例](advanced-functions-and-tools/docbits-mcp/examples.md)
   * [eDocs MCP](advanced-functions-and-tools/docbits-mcp/edocs-mcp/README.md)
     * [示例](advanced-functions-and-tools/docbits-mcp/edocs-mcp/examples.md)

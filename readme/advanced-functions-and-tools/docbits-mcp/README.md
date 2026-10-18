@@ -161,3 +161,5 @@ DocBits MCP 将一百多个工具分为以下类别（具体数量会随着每�
 {% hint style="info" %}
 **一个 MCP，满足所有需求。** eDoc 工具和 **工作流与卡片（DocFlow）** 工具运行在**同一个** `api.docbits.com/v3/mcp` 端点上，并使用相同的 DocBits 登录凭据。DocFlow 工具在该端点中的前缀为 `docflow_`（例如 `docflow_list_workflows`）；DocFlow 页面则使用它们不带前缀的名称进行说明。仍然可以直接连接到 DocFlow 主机，但现在已无此必要。
 {% endhint %}
+
+[使用 Claude 或 Codex 配置 DocBits](configuration-with-claude-or-codex.md)：连接、提示词、预览、版本化更改、验证与回退。

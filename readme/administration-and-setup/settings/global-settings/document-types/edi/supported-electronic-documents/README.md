@@ -83,3 +83,5 @@ MINIMUM 和 BASIC WL 可能不包含后续处理所需的行项目信息。BASIC
 5. 单独确认验证策略和传输方式。保留自定义映射，并在重新启动现有文档之前检查审批和导出历史。
 
 [验收检查](../credit-note-recognized-as-invoice.md)
+
+[使用 Claude 或 Codex 配置 DocBits](../../../../../../advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md)：连接、提示词、预览、版本化更改、验证与回退。

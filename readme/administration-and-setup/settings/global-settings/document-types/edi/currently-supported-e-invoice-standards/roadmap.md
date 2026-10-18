@@ -1,37 +1,12 @@
-# Roadmap
+# Formati aggiuntivi e requisiti di trasmissione
 
-**Chorus Pro (Francia)**
+Consultare la [panoramica per paese](../supported-electronic-documents/README.md) per l’ambito dei formati e delle versioni esaminati. Le seguenti famiglie dispongono già di voci nel catalogo e di guide nazionali; non rappresentano promesse di supporto futuro:
 
-  •  **Ambito:** Piattaforma francese per la fatturazione B2G, che si allinea anche con PEPPOL BIS e Factur-X.
+- [Svezia — Svefaktura 1.0](../supported-electronic-documents/countries/sweden.md)
+- [Danimarca — OIOUBL 2.1](../supported-electronic-documents/countries/denmark.md)
+- [Norvegia — EHF Invoice 3.0](../supported-electronic-documents/countries/norway.md)
+- [Francia — Factur-X](../supported-electronic-documents/countries/france.md)
 
-  •  **Nota:** Sebbene Chorus Pro sia più una piattaforma che un formato, supportare le sue strutture dati e le convalide potrebbe essere vantaggioso per lavorare con entità pubbliche francesi.
+Chorus Pro è una piattaforma di trasmissione. L’elaborazione di XML Factur-X o Peppol non dimostra la connettività a Chorus Pro né l’autorizzazione fiscale. Confermare separatamente il connettore, l’ambiente e il processo di trasmissione richiesti.
 
-**Svefaktura (Svezia)**
-
-  •  **Ambito:** Un formato di fattura elettronica svedese legacy.
-
-  •  **Base:** Basato su UBL, storicamente utilizzato per la fatturazione B2G in Svezia.
-
-  •  **Versione Comune:** Svefaktura 1.0 (largamente sostituita da PEPPOL BIS)
-
-  •  **Nota:** Sebbene sia in fase di eliminazione a favore di PEPPOL BIS, appare ancora in alcuni scenari legacy.
-
-**OIOUBL (Danimarca)**
-
-  •  **Ambito:** Ampiamente utilizzato per la fatturazione B2G in Danimarca.
-
-  •  **Base:** Formato basato su UBL allineato con i requisiti nazionali danesi.
-
-  •  **Versione Comune:** OIOUBL Invoice/2.02 (e aggiornamenti successivi)
-
-  •  **Nota:** Predecessore degli attuali formati basati su EN 16931; potrebbe essere ancora in uso da parte di entità danesi.
-
-**EHF (Norvegia)**
-
-  •  **Ambito:** Standard nazionale norvegese per la fatturazione elettronica.
-
-  •  **Base:** Conforme a PEPPOL BIS Billing 3.0; EHF (Elektronisk Handelsformat) è essenzialmente un profilo localizzato.
-
-  •  **Versione Comune:** Fattura e Nota di Credito EHF 3.0
-
-  •  **Nota:** Formato standard per le fatture del settore pubblico in Norvegia, fortemente legato a PEPPOL.
+Per un requisito aggiuntivo, conservare un esempio originale e identificarne formato, sintassi, versione, profilo e tipo di documento aziendale. Confrontarlo con la guida del paese, quindi provare l’estrazione e l’esportazione necessarie nella propria organizzazione.

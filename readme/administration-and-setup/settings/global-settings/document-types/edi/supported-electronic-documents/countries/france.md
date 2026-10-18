@@ -8,6 +8,18 @@ Utilisez ce guide pour identifier la famille configurée et le périmètre des v
 
 [Tous les pays et périmètre de prise en charge](../README.md)
 
+## Vidéo explicative du pays
+
+La narration localisée et les sous-titres WebVTT expliquent le choix du format, la configuration et les vérifications d’acceptation.
+
+Cette visite en lecture seule montre la configuration existante du pays dans DocBits. Vérifiez la source utilisée et la version active, puis testez des factures, des avoirs et des exports représentatifs dans votre organisation.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_france/v2/fr.mp4" %}
+
+[France — Vidéo explicative du pays](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_france/v2/fr.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_france/v2/fr.vtt)
+
 ## Variantes et limites de version
 
 Factur-X possède des entrées génériques et propres à certaines publications, notamment 1.0.05, 1.08 et 1.09. VRBL FR CIUS 1.0 est distinct.
@@ -77,20 +89,6 @@ MINIMUM et BASIC WL peuvent omettre des informations de lignes nécessaires aux 
 ## Trouver la correspondance dans DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-france-fr.png" alt="France: FACTURX 1.09 - ZUGFERD 2.5"><figcaption><p>Interface réelle de développement : le format représentatif et ses composants de configuration disponibles. Les autres versions figurent dans la matrice.</p></figcaption></figure>
-
-## Vidéo explicative du pays
-
-La narration localisée et les sous-titres WebVTT expliquent le choix du format, la configuration et les vérifications d’acceptation.
-
-Cette visite en lecture seule montre la configuration existante du pays dans DocBits. Vérifiez la source utilisée et la version active, puis testez des factures, des avoirs et des exports représentatifs dans votre organisation.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-france-fr-v2.mp4" %}
-France — Vidéo explicative du pays
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-france-fr-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Vérifications d’acceptation
 

@@ -14,15 +14,11 @@ Ein Sprechertext und WebVTT-Untertitel in der jeweiligen Sprache erklären Forma
 
 Dieser lesende Rundgang zeigt die in DocBits vorhandene Konfiguration für das Land. Prüfen Sie die verwendete Quelle und aktive Version und testen Sie repräsentative Rechnungen, Gutschriften und Exporte in Ihrer eigenen Organisation.
 
-{% embed url="https://2396827744-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhNyN4taXWt0p7OGOOSfW%2Fuploads%2Fgit-blob-87afa928877a27c1f28d461c88bb1d9da355804d%2Fedocs-support-germany-de-v2.mp4?alt=media" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_germany/v2/de.mp4" %}
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-germany-de-v2.mp4" %}
-Deutschland — Erklärvideo zum Land
-{% endfile %}
+[Deutschland — Erklärvideo zum Land](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_germany/v2/de.mp4)
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-germany-de-v2.vtt" %}
-WebVTT
-{% endfile %}
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_germany/v2/de.vtt)
 
 ## Varianten und Versionsgrenzen
 

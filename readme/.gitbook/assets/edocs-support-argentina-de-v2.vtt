@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.020
+Argentina AFIP und Factura Electronica
+sind konfigurierte Bezeichnungen. Für den
+
+formats_02
+00:00:06.020 --> 00:00:10.815
+Gutschrift-Klassifizierungseintrag ist im
+geprüften Status kein eigenes
+
+formats_03
+00:00:10.815 --> 00:00:16.190
+Extraktionspaket ausgewiesen. Prüfen Sie
+die tatsächlich verwendete Zuordnung und
+
+formats_04
+00:00:16.190 --> 00:00:18.933
+testen Sie ein echtes Gutschriftbeispiel.
+
+workflow_01
+00:00:19.683 --> 00:00:24.989
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:24.989 --> 00:00:31.699
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:31.699 --> 00:00:33.333
+aktiviert ihn nicht.
+
+accept_01
+00:00:34.083 --> 00:00:38.715
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:38.715 --> 00:00:44.845
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:44.845 --> 00:00:47.967
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

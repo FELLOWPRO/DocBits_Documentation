@@ -209,6 +209,26 @@ ui-redesign-guide.md` — dead weight, do not use it as the slug source.)
 cannot determine the safety of Bash right now") — the command does not run.
 Use the `Write` tool to create scripts instead of `/bin/cat > … <<'PY'`.
 
+**De-Kandidaten klassifiziert (08:4xZ, 222 Seiten).** Der Kandidatenfilter
+„Asset byte-identical to EN" zählt alles mit, auch legitim identische Bilder:
+- **92 Seiten sind EDI-Preview-only** (`*-preview.png`: XRechnung 2.1/2.2/UBL/CI,
+  ZUGFeRD, Facturae 3.2/3.2.1/3.2.2, Factur-X, Finvoice, KSeF, EHFs, Brazil
+  NF-e/CT-e/NFS-e, AFIP …). Diese Previews zeigen den **Beleg selbst** (XML/PDF),
+  nicht die DocBits-UI → in jeder Sprache gleich. **Kein Fix nötig**, aus dem
+  Rest-Umfang rausrechnen.
+- **16 Seiten sind `-en`-benannt** (`document-type-activation-en-2026.png`,
+  `custom_validation_rule_duplicate_en.png`, `dbdc-142-eslog-*-en.png` …) —
+  bewusst englische Infografiken; ob der Sweep die regenerieren soll, ist die
+  offene Produkt-Entscheidung (siehe Blocked).
+- **~114 Seiten sind echte UI-Captures** („other"): Dashboard, Analytics,
+  Import/O365-Tenant, Report-Page, Validation-Screen, Infor-Export/Import …
+  → das ist der reale Rest-Umfang für de.
+
+Rest-Umfang de real ≈ **114 UI-Seiten** (statt 222 roh). Größte Brocken:
+`export-tax-codes-to-ln` (29 Refs, 2 Pfad-Varianten),
+`validation-screen/README` (25), `import/o365-tenant` (23),
+`analytics-dashboard` + `/README` (19 je).
+
 Health check 2026-10-17 13:2xZ: all 3 checks clean. 22 live pages verified
 (6 de + 8-lang e-mail-templates ×3 assets + 8-lang ui-redesign-guide).
 All 32 `-<lang>` variants of the e-mail-templates trio + ui-redesign-help-icon

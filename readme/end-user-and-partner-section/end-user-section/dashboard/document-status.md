@@ -1,19 +1,11 @@
-# Stato del Documento
+# Stato dei documenti
 
-Se stai utilizzando il software DocBits per l'elaborazione dei documenti, è essenziale comprendere i diversi stati dei documenti che i tuoi file possono avere. Ecco un elenco completo di tutti i possibili stati dei documenti in DocBits:
+Gli stati di elaborazione indicano passaggi come OCR, classificazione o esportazione. **Pronto per la convalida** indica che il documento può essere verificato. Gli stati di approvazione indicano un’approvazione in attesa. **Esportato** indica che l’esportazione del documento è terminata. Fai clic sullo stato **Errore** per consultare i dettagli disponibili.
 
-* WatchDog Start: Il modulo Watchdog sta partendo.
-* WatchDog Split: Il documento viene diviso in Watchdog.
-* WatchDog Upload: Il documento viene caricato in Watchdog.
-* Upload: Il documento viene caricato.
-* OCR: Il riconoscimento ottico dei caratteri (OCR) è attualmente in esecuzione sul documento.
-* Classification: Il documento viene classificato.
-* Zugferd import: Un documento Zugferd viene importato.
-* Pronto per la convalida: Il documento è pronto per la convalida.
-* Zugferd export: Un documento Zugferd viene esportato.
-* Workflow: Un flusso di lavoro è attualmente in esecuzione con questo documento.
-* Approvazione in sospeso: Il documento deve essere approvato.
-* Seconda approvazione in sospeso: Il documento deve essere approvato una seconda volta.
-* Contabilità automatica: La contabilità automatica è in esecuzione.
-* Esportazione: Il documento viene esportato.
-* Errore: Si è verificato un errore nel documento.
+Se sono disponibili i tempi di elaborazione, passa il puntatore sullo stato per vedere le fasi e la loro durata. Per i documenti con possibili duplicati compare un’icona: aprila per confrontare i documenti correlati.
+
+Apri una riga per lavorare nella schermata di convalida. Il menu delle azioni offre le operazioni consentite, come assegnazione, download, cronologia o riavvio dell’elaborazione. Le varianti di download dipendono dal documento e possono includere annotazioni o formati di fattura elettronica.
+
+Seleziona più documenti con le caselle e apri il menu nell’intestazione per le azioni collettive consentite: assegnazione, unione, riavvio, riavvio dell’esportazione o eliminazione. Controlla selezione e conferme. Queste azioni possono modificare i documenti; salvare una vista cambia solo la presentazione dell’elenco.
+
+La [guida alla dashboard](README.md) descrive ricerca, azioni e viste salvate.

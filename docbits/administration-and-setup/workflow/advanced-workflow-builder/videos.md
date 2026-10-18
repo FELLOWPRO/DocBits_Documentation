@@ -6,7 +6,7 @@ description: "Watch five narrated chapters on Advanced Workflows and Workflow Lo
 
 Learn how to build, test and diagnose an Advanced Workflow. Each chapter has English narration and takes less than two minutes.
 
-The first chapter shows a configured workflow in the real DocBits interface. The other four chapters use labelled teaching diagrams. For complete control descriptions, use the [Advanced Workflows guide](README.md), [Toolbar & Canvas](toolbar-and-canvas.md), [Nodes](nodes.md), [Variables](variables.md) and [Validation & Testing](validation-and-testing.md).
+The first three chapters show the real DocBits interface: a configured workflow, connected control nodes, variable forms and test controls. The two Workflow Logs chapters currently use labelled teaching diagrams. For complete control descriptions, use the [Advanced Workflows guide](README.md), [Toolbar & Canvas](toolbar-and-canvas.md), [Nodes](nodes.md), [Variables](variables.md) and [Validation & Testing](validation-and-testing.md).
 
 Caption files are available in WebVTT format below each video. Open the expandable transcript to read the explanation without playing the video.
 
@@ -57,11 +57,11 @@ Validate the connections and card settings. Save explicitly to write the workflo
 
 ## Nodes and routes
 
-Understand node roles, connect success, false-condition and error outputs, build alternatives, use Wait ALL, Wait ANY and OR, and avoid invalid connections.
+Follow a connected demonstration draft in the real DocBits designer. See success, false-condition and error routes, then connect two source nodes to Wait ALL, Wait ANY and OR. The example actions write demonstration values to identify the routes.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v1/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/en.mp4" %}
 
-[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v1/en.vtt) · 1:42
+[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/en.vtt) · 1:42
 
 <details>
 <summary>Transcript (English)</summary>
@@ -82,11 +82,11 @@ Keep processing nodes reachable from an entry. Avoid cycles and incoming connect
 
 ## Variables, tests and activation
 
-Choose variable types and understand organization scope, validate the graph, select the test context, inspect results, save and check activation.
+See the actual DocBits variable form, document-reference type, Validate control, test context dialog, Save button and activation control. Learn organization scope, test coverage and how to inspect results after execution.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v1/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/en.mp4" %}
 
-[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v1/en.vtt) · 1:54
+[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/en.vtt) · 1:54
 
 <details>
 <summary>Transcript (English)</summary>

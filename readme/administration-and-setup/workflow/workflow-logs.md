@@ -1,5 +1,79 @@
 # Journaux de flux de travail
 
+## Vidéo
+
+Ces deux vidéos utilisent des schémas pédagogiques identifiés comme illustrations.
+
+### Trouver l’exécution pertinente
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/fr.mp4" %}
+
+[Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/fr.vtt) · 1:45
+
+<details>
+<summary>Transcription</summary>
+
+**Ouvrez les journaux**
+
+Dans le tableau de bord documentaire, ouvrez Workflow Logs depuis Actions. L’accès aux workflows doit être activé. Ces journaux concernent le document choisi. Les tests du concepteur et les journaux d’événements ou d’activité de l’organisation sont distincts.
+
+**Lisez les compteurs**
+
+Bleu compte les exécutions affichées ; rouge, les erreurs ; jaune, les conditions fausses ; vert, les succès. Les compteurs représentent des exécutions, pas des définitions de workflow ni des nœuds. Les filtres modifient ces nombres.
+
+**Choisissez le bon passage**
+
+Chaque ligne affiche nom du workflow, date de création, durée en secondes et résultat. Un workflow peut s’exécuter plusieurs fois sur un document. Comparez les horodatages. Une durée brève peut être arrondie à zéro virgule zéro zéro seconde.
+
+**Affinez les résultats**
+
+Recherchez un workflow. L’icône de réglage ouvre sens et critère de tri, état, date de début et date de fin. Triez par nom ou création. Entrez les dates dans l’ordre année, mois, jour, puis appliquez.
+
+**Vérifiez pages et filtres**
+
+La pagination donne accès aux résultats anciens. Effacer les filtres recharge la liste sans sélections. Effacez la recherche séparément. Sans résultat, vérifiez document, dates et état. Une liste vide ne prouve pas un échec.
+
+**États particuliers**
+
+Un bandeau et une icône de blocage signalent la limite d’exécutions du document. Examinez les déclenchements répétés avant de modifier cette limite. Le téléchargement vidéo DocOperator apparaît uniquement si un enregistrement existe ; il concerne cette exécution.
+
+</details>
+
+### Suivre les nœuds et diagnostiquer
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/fr.mp4" %}
+
+[Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/fr.vtt) · 1:47
+
+<details>
+<summary>Transcription</summary>
+
+**Développez une exécution**
+
+Développez la ligne du workflow. Une exécution avancée affiche le graphe à gauche et les messages à droite ; un workflow standard montre une suite de cartes. Ces données décrivent cette exécution et peuvent différer du concepteur actuel.
+
+**Sélectionnez un nœud**
+
+Déplacez ou zoomez le graphe, puis cliquez sur un nœud. Card Logs affiche ses messages. Wait ALL et Wait ANY peuvent aussi avoir des messages de nœud. Reliez le message au nœud sélectionné et à l’horodatage.
+
+**Distinguez les états**
+
+Vert signifie succès ; orange, condition fausse ; rouge, erreur ; gris, ignoré. Un nœud ignoré n’a pas été exécuté. Avant de le modifier, vérifiez si une autre branche a été choisie ou si une entrée de jonction manque.
+
+**Suivez la première divergence**
+
+Suivez le chemin réel depuis l’entrée. Pour un contrôle de montant faux, examinez orange ; pour une erreur, lisez le message et examinez rouge. Le traitement d’erreur peut réussir tandis que l’exécution conserve l’erreur initiale.
+
+**Vérifiez les jonctions**
+
+Pour Wait ALL, contrôlez chaque source et résultat connecté. Pour ANY ou OR, cherchez une source correspondante. Deux sorties du même nœud ne constituent pas des approbations indépendantes. Une condition orange peut être voulue.
+
+**Corrigez et vérifiez**
+
+Notez workflow, référence documentaire, horodatage, nœud et message exact. Corrigez données ou configuration, puis testez un scénario reproductible. Enregistrez et vérifiez l’activation. Comparez une nouvelle exécution à l’ancienne ; les anciens journaux conservent le comportement antérieur.
+
+</details>
+
 ## **Aperçu**
 
 Les **Journaux de flux de travail** permettent aux utilisateurs d'analyser quels flux de travail ont été exécutés pour un document, de comprendre les résultats de l'exécution et d'approfondir les détails au niveau des conditions pour le débogage ou la validation.

@@ -1,5 +1,42 @@
 # Barre d'outils & Canevas
 
+## Vidéo: Constructeur et canevas
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/fr.mp4" %}
+
+[Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/fr.vtt) · 1:52
+
+<details>
+<summary>Transcription</summary>
+
+**Une facture, deux chemins**
+
+Voici un véritable workflow avancé dans DocBits. Un contrôle du montant de la facture mène à deux actions. Les connexions déterminent l’action exécutée. Cet exemple utilise un brouillon non enregistré et des champs de démonstration.
+
+**Configurer le contrôle du montant**
+
+Ouvrez Ajouter, choisissez And et sélectionnez une condition de champ du document. Indiquez le champ du montant, choisissez Supérieur à et saisissez mille. Utilisez la clé exacte du champ définie dans votre configuration documentaire.
+
+**Configurer les actions**
+
+Ajoutez deux cartes Then. Chacune renseigne le champ de démonstration approval route. L’une écrit Approval, l’autre Standard. Ces valeurs identifient le chemin. Configurez vos actions métier pour un workflow de production.
+
+**Relier les sorties**
+
+Reliez Start à l’entrée de la condition. Reliez la sortie bleue de succès à Approval et la sortie orange de condition fausse à Standard. La sortie rouge traite séparément les erreurs d’évaluation. La position des cartes ne crée pas de chemin.
+
+**Préparer les cas de test**
+
+Ouvrez Tester dans la barre d’outils. Choisissez un document de test ou saisissez ses données complètes au format JSON. Vérifiez les montants supérieurs, inférieurs et égaux à mille, ainsi que les valeurs absentes. Examinez les résultats des nœuds après exécution.
+
+**Valider, enregistrer et activer**
+
+Validez les connexions et les paramètres des cartes. Enregistrez explicitement sur le serveur, puis vérifiez l’activation séparément. Les brouillons automatiques du navigateur ne remplacent pas l’enregistrement. L’exécution et les journaux nécessitent le module et l’abonnement appropriés.
+
+</details>
+
+[Voir les cinq chapitres](../advanced-workflow-videos.md)
+
 La barre d'outils du Workflow Avancé s'étend en bas du canevas et vous donne tout le nécessaire pour construire, naviguer et gérer le flux.
 
 ## Commandes de la barre d'outils

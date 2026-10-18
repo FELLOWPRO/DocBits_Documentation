@@ -6,7 +6,7 @@ description: "Cinq chapitres en français sur les workflows avancés et leurs jo
 
 Apprenez à créer, tester et diagnostiquer un workflow avancé. Les cinq chapitres sont commentés en français.
 
-Les trois premiers chapitres montrent l’interface réelle de DocBits. Les deux chapitres sur les journaux utilisent des schémas pédagogiques identifiés comme illustrations. Les captures montrent des brouillons de démonstration non enregistrés.
+Les trois premiers chapitres montrent le véritable concepteur DocBits avec des brouillons de démonstration. L’aperçu de recherche montre le traitement réel des documents et les commandes des journaux avec des résultats vides. Le chapitre de diagnostic utilise encore des schémas pédagogiques identifiés comme illustrations.
 
 Chaque vidéo propose des sous-titres WebVTT et une transcription dépliable.
 
@@ -125,36 +125,40 @@ Le brouillon local est enregistré automatiquement environ toutes les trente sec
 
 ## Trouver l’exécution pertinente {#find-the-relevant-execution}
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/fr.mp4" %}
+{% hint style="info" %}
+Aperçu à tester : véritables écrans DocBits avec actions du document, flux de documents, durée des étapes, journaux vides et filtres de statut et de date. Le document ne contient aucune exécution Advanced Workflow enregistrée. Cet aperçu ne montre pas encore les lignes d’exécution, la pagination ni le diagnostic des nœuds.
+{% endhint %}
 
-[Ouvrir la vidéo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/fr.mp4) · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/fr.vtt) · 1:45
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/fr.mp4" %}
+
+[Ouvrir la vidéo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/fr.mp4) · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/fr.vtt) · 1:46
 
 <details>
 <summary>Transcription</summary>
 
-**Ouvrez les journaux**
+**Commencer par le document**
 
-Dans le tableau de bord documentaire, ouvrez Workflow Logs depuis Actions. L’accès aux workflows doit être activé. Ces journaux concernent le document choisi. Les tests du concepteur et les journaux d’événements ou d’activité de l’organisation sont distincts.
+Dans le tableau de bord des documents, ouvrez le menu des actions et choisissez le flux de documents. L’historique réel montre l’importation et l’OCR. Ouvrez une étape pour examiner les temps d’attente et de traitement. Ces étapes sont distinctes des nœuds Advanced Workflow.
 
-**Lisez les compteurs**
+**Lire les compteurs réels**
 
-Bleu compte les exécutions affichées ; rouge, les erreurs ; jaune, les conditions fausses ; vert, les succès. Les compteurs représentent des exécutions, pas des définitions de workflow ni des nœuds. Les filtres modifient ces nombres.
+Voici les journaux de workflow du même document. Le bleu indique le total, le rouge les erreurs, le jaune les conditions non remplies et le vert les réussites. Ce document de démonstration ne contient aucune exécution enregistrée. Les quatre compteurs affichent donc zéro.
 
-**Choisissez le bon passage**
+**Vérifier les colonnes des exécutions**
 
-Chaque ligne affiche nom du workflow, date de création, durée en secondes et résultat. Un workflow peut s’exécuter plusieurs fois sur un document. Comparez les horodatages. Une durée brève peut être arrondie à zéro virgule zéro zéro seconde.
+Les colonnes indiquent le nom du workflow, la date de création, la durée et le résultat. Distinguez les exécutions répétées grâce à l’horodatage. Ce document ne contient aucune ligne à ouvrir.
 
-**Affinez les résultats**
+**Ouvrir les filtres de statut**
 
-Recherchez un workflow. L’icône de réglage ouvre sens et critère de tri, état, date de début et date de fin. Triez par nom ou création. Entrez les dates dans l’ordre année, mois, jour, puis appliquez.
+L’icône des filtres ouvre le véritable menu. Triez par nom ou date de création, dans l’ordre croissant ou décroissant. Le statut propose réussite, condition non remplie et erreur.
 
-**Vérifiez pages et filtres**
+**Choisir les dates et effacer les filtres**
 
-La pagination donne accès aux résultats anciens. Effacer les filtres recharge la liste sans sélections. Effacez la recherche séparément. Sans résultat, vérifiez document, dates et état. Une liste vide ne prouve pas un échec.
+Choisissez une période avec les dates de début et de fin ou le calendrier. Le format est année, mois et jour. Appliquer demande les résultats. Effacer les filtres réinitialise la sélection. Effacez la recherche séparément. Dans cette version, les mois du calendrier restent en anglais.
 
-**États particuliers**
+**Aperçu : une exécution enregistrée manque encore**
 
-Un bandeau et une icône de blocage signalent la limite d’exécutions du document. Examinez les déclenchements répétés avant de modifier cette limite. Le téléchargement vidéo DocOperator apparaît uniquement si un enregistrement existe ; il concerne cette exécution.
+Cet aperçu permet de vérifier l’accès au document, les détails du traitement et les commandes des journaux. Une exécution Advanced Workflow enregistrée manque encore pour montrer les lignes réelles, la pagination, les routes et les messages des nœuds. Ces résultats ne sont pas simulés dans la vidéo.
 
 </details>
 

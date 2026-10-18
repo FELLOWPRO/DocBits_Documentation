@@ -2,40 +2,43 @@
 
 ## Vídeo
 
-Estos dos vídeos utilizan gráficos explicativos identificados como ilustraciones.
-
+El vídeo de búsqueda es una vista previa con pantallas reales de DocBits. El vídeo de diagnóstico conserva los diagramas didácticos identificados como ilustraciones.
 ### Encontrar la ejecución relevante
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/es.mp4" %}
+{% hint style="info" %}
+Vista previa para pruebas: pantallas reales de DocBits con acciones del documento, flujo del documento, tiempos de los pasos, registros vacíos y filtros de estado y fecha. El documento no tiene una ejecución guardada de Advanced Workflow. Esta vista previa aún no incluye filas de ejecución, paginación ni diagnóstico de nodos.
+{% endhint %}
 
-[Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/es.vtt) · 1:56
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/es.mp4" %}
+
+[Abrir vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/es.mp4) · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/es.vtt) · 1:50
 
 <details>
 <summary>Transcripción</summary>
 
-**Abra los registros del documento**
+**Empezar por el documento**
 
-En el panel de documentos, seleccione Workflow Logs en Acciones. El acceso a workflows debe estar habilitado. Estos registros pertenecen al documento seleccionado. Las pruebas del diseñador y los registros de eventos o actividad de la organización son independientes.
+En el panel de documentos, abra el menú de acciones y elija Flujo del documento. El historial real muestra la importación y el OCR. Abra un paso para revisar los tiempos de espera y procesamiento. Estos pasos son distintos de los nodos de Advanced Workflow.
 
-**Interprete los contadores**
+**Leer los contadores reales**
 
-Azul cuenta ejecuciones del resultado actual; rojo, errores; amarillo, condiciones falsas; verde, éxitos. Los contadores describen ejecuciones, no definiciones de workflow ni nodos. Los filtros pueden cambiar estas cifras.
+Aquí se muestran los registros de workflow del mismo documento. Azul indica el total, rojo los errores, amarillo las condiciones fallidas y verde los éxitos. Este documento de demostración no tiene ejecuciones registradas. Por eso, los cuatro contadores muestran cero.
 
-**Elija la ejecución exacta**
+**Revisar las columnas de ejecución**
 
-Cada fila muestra nombre del workflow, fecha de creación, duración en segundos y resultado. Un workflow puede ejecutarse varias veces para el mismo documento. Compare las fechas. Una ejecución breve puede mostrar cero coma cero cero segundos por redondeo.
+Las columnas muestran nombre del workflow, fecha de creación, duración y resultado. Distinga ejecuciones repetidas por la marca de tiempo. Este documento no tiene una fila para abrir.
 
-**Limite los resultados**
+**Abrir los filtros de estado**
 
-Use Buscar para encontrar un workflow. El icono de ajustes abre dirección y criterio de ordenación, estado y fechas inicial y final. Ordene por nombre o creación. Introduzca fechas como año, mes, día y pulse Aplicar.
+El icono de filtros abre el menú real. Ordene por nombre o fecha de creación, en sentido ascendente o descendente. Estado ofrece éxito, condición fallida y error.
 
-**Revise filtros y páginas**
+**Elegir fechas y borrar filtros**
 
-Use la paginación para resultados antiguos. Borrar filtros recarga la lista sin selecciones. Vacíe Buscar por separado. Si no hay resultados, revise documento, fechas y estado. Una lista vacía no demuestra un error de ejecución.
+Elija el periodo con las fechas de inicio y fin o el calendario. El formato es año, mes y día. Aplicar solicita los resultados. Borrar filtros restablece la selección. Borre la búsqueda por separado.
 
-**Estados especiales**
+**Vista previa: falta una ejecución guardada**
 
-Un aviso y un icono de bloqueo indican el límite de ejecuciones del documento. Investigue disparadores repetidos antes de cambiar límites. La descarga de vídeo de DocOperator aparece solo si existe una grabación; corresponde a esa ejecución.
+Esta vista previa permite comprobar el acceso al documento, sus detalles de procesamiento y los controles de registro. Falta una ejecución guardada de Advanced Workflow para mostrar filas reales, paginación, rutas y mensajes de nodos. Esos resultados no se simulan en este vídeo.
 
 </details>
 

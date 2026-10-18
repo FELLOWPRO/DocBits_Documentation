@@ -6,7 +6,7 @@ description: "Watch five narrated chapters on Advanced Workflows and Workflow Lo
 
 Learn how to build, test and diagnose an Advanced Workflow. Each chapter has English narration and takes less than two minutes.
 
-The first three chapters show the real DocBits interface: a configured workflow, connected control nodes, variable forms and test controls. The two Workflow Logs chapters currently use labelled teaching diagrams. For complete control descriptions, use the [Advanced Workflows guide](README.md), [Toolbar & Canvas](toolbar-and-canvas.md), [Nodes](nodes.md), [Variables](variables.md) and [Validation & Testing](validation-and-testing.md).
+The first three chapters show the real DocBits designer with demonstration drafts. The execution-search preview shows genuine document processing and log controls with empty results. The diagnosis chapter still uses labelled teaching diagrams. For complete control descriptions, use the [Advanced Workflows guide](README.md), [Toolbar & Canvas](toolbar-and-canvas.md), [Nodes](nodes.md), [Variables](variables.md) and [Validation & Testing](validation-and-testing.md).
 
 Caption files are available in WebVTT format below each video. Open the expandable transcript to read the explanation without playing the video.
 
@@ -15,7 +15,7 @@ Caption files are available in WebVTT format below each video. Open the expandab
 | [1. Builder and canvas](#builder-and-canvas) | 1:38 |
 | [2. Nodes and routes](#nodes-and-routes) | 1:42 |
 | [3. Variables, tests and activation](#variables-tests-and-activation) | 1:53 |
-| [4. Find the relevant execution](#find-the-relevant-execution) | 1:52 |
+| [4. Find the relevant execution](#find-the-relevant-execution) | 1:50 |
 | [5. Trace nodes and diagnose](#trace-nodes-and-diagnose) | 1:43 |
 
 ## Builder and canvas
@@ -107,26 +107,40 @@ Auto-save keeps a local browser draft about every thirty seconds after changes. 
 
 ## Find the relevant execution
 
-Open logs for a document, read counters and execution rows, filter results, check dates and pagination, and understand empty or special log states.
+{% hint style="info" %}
+Preview for testing: genuine DocBits document actions, Document Flow, step timing, empty Workflow Logs and status/date filters. The demonstration document has no saved Advanced Workflow execution. Execution rows, pagination and node diagnosis are not included in this preview.
+{% endhint %}
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v1/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/en.mp4" %}
 
-[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v1/en.vtt) · 1:52
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/en.vtt) · 1:50
 
 <details>
 <summary>Transcript (English)</summary>
 
-Open the document Dashboard. Select Workflow Logs in the document Actions menu. Workflow access must be enabled. These logs describe the selected document's executions. Designer tests and organization event or activity logs are separate.
+**Start with the document**
 
-Blue counts executions in the current results. Red counts errors, yellow failed conditions, and green successes. The counters describe executions, not unique workflow definitions or graph nodes. Filters can change these counts.
+In the document Dashboard, open the Actions menu and choose Document flow. The real processing history shows import and OCR. Open a step to inspect waiting and processing time. These processing steps are separate from Advanced Workflow nodes.
 
-Each row shows workflow name, creation time, runtime in seconds and result. One workflow can run repeatedly for one document. Compare timestamps. Rounded runtime can display zero point zero zero seconds for a short execution.
+**Read the real log counters**
 
-Use Search to find a workflow. The tune icon opens Sort Direction, Sort By, Status, Start Date and End Date. Sort by name or creation time. Enter dates as year, month, day. Select Apply.
+Here are Workflow Logs for the same document. Blue is the total, red errors, yellow failed conditions, and green successes. This demonstration document has no recorded workflow executions. All four counters therefore show zero.
 
-Use pagination for older results. Clear Filters reloads the list without filter selections. Clear Search separately. For empty results, check document, dates and status. An empty list does not prove execution failed.
+**Check the execution columns**
 
-A banner and blocked icon identify the document's execution limit. Investigate repeated triggers before changing limits. A DocOperator video download appears only when a recording exists. It is an execution recording, separate from tutorial videos.
+The table has columns for workflow name, creation time, runtime and result. Use the timestamp to distinguish repeated runs. This preview has no execution row to open. An empty list alone does not prove an execution error.
+
+**Open the status filters**
+
+The tune icon opens the actual filter menu. Choose sorting by name or creation time and select ascending or descending order. Status offers success, failed condition and error. The interface shown here is the real DocBits screen.
+
+**Choose dates and reset filters**
+
+Use the start and end fields or the calendar to choose a period. Dates use year, month and day. Apply requests the results. Clear filters resets the selections. Clear the search separately. The calendar retains English month names in this version.
+
+**Preview: a saved execution is still missing**
+
+This preview lets you check document navigation, processing details and log controls. A saved Advanced Workflow execution is still needed to demonstrate actual rows, pagination, routes and node messages. Those results are not simulated in this video.
 
 </details>
 

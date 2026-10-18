@@ -21,6 +21,8 @@ Tabele przedstawiają wyniki kontroli katalogu środowiska deweloperskiego z 17 
 
 ## Przewodniki krajowe
 
+Przegląd zawiera odnośniki do 39 przewodników krajowych i jednego przewodnika międzynarodowego. Każdy przewodnik przedstawia dokładne oznaczenia formatów i komponenty konfiguracji oraz dostępne zrzuty ekranu DocBits, filmy i kontrole akceptacyjne.
+
 | Kraj / region | Rodziny i zakres wersji | Wynik kontroli katalogu |
 | --- | --- | --- |
 | [Austria](countries/austria.md) | ebInterface 4.3, 5.0, 6.0 i 6.1 mają osobne wpisy. | Znaleziono wpisy |

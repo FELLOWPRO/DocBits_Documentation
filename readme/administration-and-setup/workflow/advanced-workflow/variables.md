@@ -2,9 +2,9 @@
 
 ## Film: Zmienne, testy i aktywacja
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/pl.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/pl.mp4" %}
 
-[Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/pl.vtt) · 1:53
+[Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/pl.vtt) · 1:56
 
 <details>
 <summary>Transkrypcja</summary>
@@ -25,9 +25,9 @@ Wybierz walidację. Przejrzyj błędy i ostrzeżenia nad płótnem. Kliknij komu
 
 Odtwarzanie na pasku otwiera wybór dokumentu. Użyj dokumentu, danych niestandardowych lub testu bez dokumentu dla niezależnych kart. Odtwarzanie na Start uruchamia bezpośrednio. Test obejmuje bieżące płótno z niezapisanymi zmianami i symuluje działania destrukcyjne.
 
-**Sprawdź wyniki**
+**Przygotowanie i sprawdzanie scenariuszy testowych**
 
-Sprawdź komunikaty i czasy węzłów: zielony to sukces, pomarańczowy fałszywy warunek, czerwony błąd, szary pominięcie. Powtórz test po poprawkach. Menedżer testów zapewnia powtarzalne scenariusze: sukces, alternatywy, brak danych i błędy.
+Przygotuj oddzielne testy dla kwot powyżej, poniżej i równych tysiąc oraz brakujących danych. Po uruchomieniu sprawdź komunikaty i czasy: zielony oznacza sukces, pomarańczowy fałsz, czerwony błąd, szary pominięcie. Ponownie przetestuj poprawki. Menedżer testów pozwala powtarzać scenariusze.
 
 **Zapisz przed aktywacją**
 

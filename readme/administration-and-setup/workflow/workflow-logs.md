@@ -1,5 +1,79 @@
 # Registos do Fluxo de Trabalho
 
+## Vídeo
+
+Estes dois vídeos utilizam diagramas didáticos identificados como ilustrações.
+
+### Encontrar a execução relevante
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/pt.mp4" %}
+
+[Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/pt.vtt) · 1:58
+
+<details>
+<summary>Transcrição</summary>
+
+**Abra os registos**
+
+No painel de documentos, selecione Workflow Logs no menu Ações. O acesso aos workflows deve estar ativo. Estes registos pertencem ao documento escolhido. Os testes do editor e os registos de eventos ou atividade da organização são separados.
+
+**Leia os contadores**
+
+Azul conta execuções nos resultados atuais; vermelho, erros; amarelo, condições falsas; verde, sucessos. Os contadores representam execuções, não definições de workflow ou nós. Os filtros podem alterar estes números.
+
+**Escolha a execução exata**
+
+Cada linha mostra nome, data de criação, duração em segundos e resultado. Um workflow pode executar várias vezes no mesmo documento. Compare os horários. Uma duração curta pode aparecer como zero vírgula zero zero segundos por arredondamento.
+
+**Restrinja os resultados**
+
+Use Pesquisar para encontrar um workflow. O ícone de ajustes abre direção e critério de ordenação, estado e datas inicial e final. Ordene por nome ou criação. Introduza datas como ano, mês, dia e selecione Aplicar.
+
+**Verifique páginas e filtros**
+
+Use a paginação para resultados antigos. Limpar filtros recarrega a lista sem seleções. Limpe a pesquisa separadamente. Sem resultados, verifique documento, datas e estado. Uma lista vazia não demonstra um erro de execução.
+
+**Estados especiais**
+
+Um aviso e um ícone de bloqueio indicam o limite de execuções do documento. Investigue eventos repetidos antes de alterar limites. A transferência de vídeo DocOperator aparece apenas se existir gravação; corresponde àquela execução.
+
+</details>
+
+### Seguir nós e diagnosticar
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/pt.mp4" %}
+
+[Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/pt.vtt) · 1:55
+
+<details>
+<summary>Transcrição</summary>
+
+**Expanda uma execução**
+
+Expanda a linha do workflow. Uma execução avançada mostra o grafo à esquerda e mensagens à direita; um workflow padrão mostra cartões em sequência. Os dados descrevem aquela execução e podem diferir do editor atual.
+
+**Selecione um nó**
+
+Desloque ou amplie o grafo e selecione um nó. Card Logs mostra as mensagens. Wait ALL e Wait ANY também podem ter mensagens de nó. Relacione a mensagem com o nó selecionado e o horário da execução.
+
+**Distinga os resultados**
+
+Verde indica sucesso; laranja, condição falsa; vermelho, erro; cinzento, ignorado. Um nó ignorado não executou. Antes de o alterar, verifique se foi escolhido outro ramo ou falta uma entrada na junção.
+
+**Siga o primeiro desvio**
+
+Siga o percurso real desde a entrada. Numa condição de montante falsa, examine laranja; num erro, leia a mensagem e siga vermelho. O tratamento de erros pode funcionar enquanto a execução mantém o erro original.
+
+**Verifique as junções**
+
+Em Wait ALL, verifique cada origem e resultado ligado. Em ANY ou OR, procure uma origem correspondente. Duas saídas do mesmo nó não são aprovações independentes. Uma condição laranja pode ser intencional.
+
+**Corrija e verifique**
+
+Registe workflow, referência do documento, horário, nó e mensagem exata. Corrija configuração ou dados e teste um cenário repetível. Guarde e verifique a ativação. Compare uma execução nova com a anterior; registos antigos conservam o comportamento anterior.
+
+</details>
+
 ## **Visão Geral**
 
 Os **Registos do Fluxo de Trabalho** permitem aos usuários analisar quais fluxos de trabalho foram executados para um documento, entender os resultados da execução e aprofundar-se nos detalhes do nível de condição para depuração ou validação.

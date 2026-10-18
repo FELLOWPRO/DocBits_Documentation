@@ -65,3 +65,5 @@ Execute o fluxo com o controlo de reprodução, valide-o e guarde com o botão d
 
 - Veja o que cada cartão faz na secção **Cards**.
 - Para automações lineares simples, o construtor **Standard Workflow** é mais rápido de configurar.
+
+[Ver os cinco capítulos](advanced-workflow-videos.md)

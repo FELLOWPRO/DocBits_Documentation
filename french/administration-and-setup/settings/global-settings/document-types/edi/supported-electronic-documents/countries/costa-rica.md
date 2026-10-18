@@ -1,0 +1,59 @@
+---
+description: "L’ancienne documentation mentionne le Costa Rica, mais aucune entrée de classification ou de configuration correspondante n’a été trouvée dans le catalogue de développement examiné."
+---
+
+# Costa Rica
+
+Utilisez ce guide pour identifier la famille configurée et le périmètre des versions avant de tester un fichier source.
+
+[Tous les pays et périmètre de prise en charge](../README.md)
+
+## Variantes et limites de version
+
+L’ancienne documentation mentionne le Costa Rica, mais aucune entrée de classification ou de configuration correspondante n’a été trouvée dans le catalogue de développement examiné.
+
+**Syntaxe:** Non confirmé
+
+Cette vérification ne confirme pas le traitement intégré actuel. Demandez à l’assistance de vérifier la correspondance déployée et testez un fichier source représentatif avant le déploiement.
+
+Les tableaux consignent une vérification du catalogue de développement effectuée le 17 octobre 2026 et du code de traitement correspondant. Ils décrivent les règles et composants de configuration disponibles, sans certifier chaque fichier, exigence légale ou déploiement en production. Votre organisation peut remplacer les valeurs par défaut.
+
+## Matrice des règles et composants examinés
+
+Aucune entrée de classification ou de configuration correspondante n’a été trouvée. Cette vérification ne confirme pas la prise en charge intégrée actuelle.
+
+## Trouver la correspondance dans DocBits
+
+<figure><img src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-fr.png" alt="Costa Rica: Non confirmé"><figcaption><p>Interface réelle de développement : la recherche de ce nom de pays n’a renvoyé aucune entrée de configuration correspondante dans le catalogue examiné.</p></figcaption></figure>
+
+## Vidéo explicative du pays
+
+La narration localisée et les sous-titres WebVTT expliquent le choix du format, la configuration et les vérifications d’acceptation.
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-fr.mp4" %}
+Costa Rica — Vidéo explicative du pays
+{% endfile %}
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-fr.vtt" %}
+WebVTT
+{% endfile %}
+
+## Vérifications d’acceptation
+
+La vérification d’un composant confirme la présence d’une configuration. Ce n’est pas un test de traitement de bout en bout pour chaque version. Testez le contenu exact et le chemin de traitement de facture ou d’avoir requis par votre intégration.
+
+## Vérifier un format dans votre organisation
+
+1. Conservez le XML d’origine ou le PDF avec son XML intégré. Relevez l’espace de noms, le schéma ou l’identifiant de personnalisation, ainsi que la version et le profil déclarés.
+
+2. Ouvrez Paramètres → Types de documents → E-Doc pour le document métier concerné. Recherchez le format exact de document électronique indiqué dans le guide.
+
+3. Vérifiez la source Default ou Custom effectivement utilisée et sa version de configuration active. Examinez Transformation, Preview et Extraction Paths. Enregistrer un brouillon ne l’active pas.
+
+4. Testez des fichiers source représentatifs pour chaque syntaxe, version et document métier dont vous avez besoin. Vérifiez les champs clés, les montants, les taxes, la classification facture/avoir et l’export ERP.
+
+5. Confirmez séparément la politique de validation et le transport. Préservez les correspondances personnalisées et vérifiez les approbations ainsi que l’historique des exports avant de relancer des documents existants.
+
+## Référence de format associée
+
+- [🇨🇷 COSTA RICA](../costa-rica.md)

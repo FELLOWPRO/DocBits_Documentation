@@ -4,6 +4,12 @@ description: Prise en charge de la facture électronique GST indienne dans DocBi
 
 # 🇮🇳 India GST E-Invoice
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Inde](countries/india.md). L’adaptateur documenté traite du XML SignedInvoice. Ne supposez pas que du JSON IRP brut, une image QR ou un PDF numérisé suit le même chemin d’extraction.
+{% endhint %}
+
 | Propriété | Valeur |
 |----------|-------|
 | **Pays / Région** | Inde |

@@ -4,6 +4,12 @@ description: Prise en charge des documents électroniques PERU CPE UBL 2.1 dans 
 
 # 🇵🇪 PERU CPE UBL 2.1
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Pérou](countries/peru.md). Sélectionnez la version UBL et la structure réelles du document. Le traitement d’un fichier ne prouve pas son acceptation par la SUNAT.
+{% endhint %}
+
 | Propriété | Valeur |
 | --------- | ------ |
 | **Pays / Région** | Pérou |

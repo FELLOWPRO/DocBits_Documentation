@@ -4,6 +4,12 @@ description: Prise en charge du document électronique ARGENTINA AFIP dans DocBi
 
 # 🇦🇷 ARGENTINA AFIP
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Argentine](countries/argentina.md). L’entrée de classification des avoirs ne possède pas d’ensemble d’extraction dédié dans l’état examiné. Vérifiez la correspondance effectivement utilisée et testez un véritable exemple d’avoir.
+{% endhint %}
+
 | Propriété            | Valeur                                                                     |
 | -------------------- | -------------------------------------------------------------------------- |
 | **Country / Region** | Argentine                                                                  |

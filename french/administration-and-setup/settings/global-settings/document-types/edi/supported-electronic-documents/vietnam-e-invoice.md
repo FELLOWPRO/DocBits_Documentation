@@ -4,6 +4,12 @@ description: Prise en charge du document électronique VIETNAM E-INVOICE dans Do
 
 # 🇻🇳 VIETNAM E-INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Viêt Nam](countries/vietnam.md). Le libellé ne précise pas de version. Vérifiez l’espace de noms et le schéma source au lieu de supposer que tous les exports de la plateforme fiscale ont la même structure.
+{% endhint %}
+
 | Propriété              | Valeur                                                |
 | ---------------------- | ----------------------------------------------------- |
 | **Pays / Région**      | Viêt Nam                                              |

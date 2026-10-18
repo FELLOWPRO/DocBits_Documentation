@@ -4,6 +4,12 @@ description: Prise en charge des documents électroniques PARAGUAY SIFEN 150 dan
 
 # 🇵🇾 PARAGUAY SIFEN 150
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Paraguay](countries/paraguay.md). Les entrées de classification des avoirs n’ont pas d’ensembles d’extraction dédiés dans l’état examiné. Vérifiez la correspondance effectivement utilisée et ne considérez pas ces libellés comme interchangeables.
+{% endhint %}
+
 | Propriété | Valeur |
 | --------- | ------ |
 | **Pays / Région** | Paraguay |

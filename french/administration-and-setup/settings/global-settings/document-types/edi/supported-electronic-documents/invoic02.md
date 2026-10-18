@@ -4,6 +4,12 @@ description: Prise en charge du document électronique INVOIC02 dans DocBits
 
 # INVOIC02
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [International](countries/international.md). Les correspondances de facture, de commande, de réponse et d’expédition sont distinctes. Le traitement des fichiers ne fournit pas, à lui seul, de point d’accès Peppol ni de connexion aux partenaires commerciaux.
+{% endhint %}
+
 | Propriété              | Valeur                  |
 | ---------------------- | ----------------------- |
 | **Pays / Région**      | International           |

@@ -4,6 +4,12 @@ description: Prise en charge du document électronique TURKEY E-ARSIV dans DocBi
 
 # 🇹🇷 TURKEY E-ARSIV
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Turquie](countries/turkey.md). Vérifiez le profil source et la structure du document. Le libellé de famille n’identifie pas chaque version UBL-TR et ne démontre pas la transmission via la plateforme fiscale.
+{% endhint %}
+
 | Propriété              | Valeur                                        |
 | ---------------------- | --------------------------------------------- |
 | **Pays / Région**      | Turquie                                       |

@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:04.952
+Vietnam E-Invoice est la famille
+configurée. Le libellé ne précise pas de
+
+formats_02
+00:00:04.952 --> 00:00:10.002
+version. Vérifiez l’espace de noms et le
+schéma source au lieu de supposer que tous
+
+formats_03
+00:00:10.002 --> 00:00:13.733
+les exports de la plateforme fiscale ont
+la même structure.
+
+workflow_01
+00:00:14.483 --> 00:00:20.253
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:20.253 --> 00:00:26.163
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:26.163 --> 00:00:27.233
+l’active pas.
+
+accept_01
+00:00:27.983 --> 00:00:32.964
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:32.964 --> 00:00:38.641
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:38.641 --> 00:00:41.833
+la validation fiscale ni la transmission
+réseau.
+

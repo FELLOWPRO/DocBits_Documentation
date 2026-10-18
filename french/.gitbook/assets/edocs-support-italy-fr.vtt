@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.091
+FatturaPA est la famille italienne
+configurée. Le libellé de famille ne
+
+formats_02
+00:00:05.091 --> 00:00:11.082
+certifie pas chaque version de FatturaPA
+ni la transmission via SDI. Vérifiez le
+
+formats_03
+00:00:11.082 --> 00:00:14.333
+schéma source et les exigences du
+destinataire.
+
+workflow_01
+00:00:15.083 --> 00:00:20.853
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:20.853 --> 00:00:26.763
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:26.763 --> 00:00:27.833
+l’active pas.
+
+accept_01
+00:00:28.583 --> 00:00:33.564
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:33.564 --> 00:00:39.241
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:39.241 --> 00:00:42.433
+la validation fiscale ni la transmission
+réseau.
+

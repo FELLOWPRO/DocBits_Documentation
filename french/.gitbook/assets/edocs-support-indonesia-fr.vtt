@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:04.813
+Indonesia E-Faktur est la famille
+configurée. L’entrée ne précise pas de
+
+formats_02
+00:00:04.813 --> 00:00:10.397
+numéro de version. Confirmez le contenu
+XML réel ; une facture imprimée ou une
+
+formats_03
+00:00:10.397 --> 00:00:14.067
+image QR ne démontre pas la prise en
+charge XML.
+
+workflow_01
+00:00:14.817 --> 00:00:20.587
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:20.587 --> 00:00:26.497
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:26.497 --> 00:00:27.567
+l’active pas.
+
+accept_01
+00:00:28.317 --> 00:00:33.298
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:33.298 --> 00:00:38.975
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:38.975 --> 00:00:42.167
+la validation fiscale ni la transmission
+réseau.
+

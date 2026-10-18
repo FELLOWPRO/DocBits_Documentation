@@ -4,6 +4,12 @@ description: Prise en charge du document électronique FACTURAE dans DocBits
 
 # 🇪🇸 FACTURAE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Espagne](countries/spain.md). Vérifiez l’espace de noms et la version du schéma. L’extraction d’un fichier XML signé ne vérifie pas, à elle seule, sa signature ni son acceptation par FACe.
+{% endhint %}
+
 | Propriété              | Valeur                                   |
 | ---------------------- | ---------------------------------------- |
 | **Pays / Région**      | Espagne                                  |

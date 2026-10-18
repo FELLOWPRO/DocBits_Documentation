@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.252
+Colombia Factura Electronica en Documento
+Soporte hebben afzonderlijke vermeldingen.
+
+formats_02
+00:00:06.252 --> 00:00:10.792
+De classificatievermelding voor
+creditnota’s heeft in de onderzochte
+
+formats_03
+00:00:10.792 --> 00:00:16.040
+status geen eigen extractiebundel.
+Bevestig de daadwerkelijk gebruikte
+
+formats_04
+00:00:16.040 --> 00:00:20.867
+toewijzing in plaats van ondersteuning af
+te leiden uit de factuurvermelding.
+
+workflow_01
+00:00:21.617 --> 00:00:27.271
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:27.271 --> 00:00:32.693
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:32.693 --> 00:00:34.167
+activeert het niet.
+
+accept_01
+00:00:34.917 --> 00:00:40.606
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:40.606 --> 00:00:45.888
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:45.888 --> 00:00:49.267
+fiscale goedkeuring of aflevering via een
+netwerk.
+

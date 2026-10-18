@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:08.667
+SI-UBL 2.0 heeft een eigen vermelding. Een
+UBL-bestand is niet automatisch SI-UBL
+
+formats_02
+00:00:08.667 --> 00:00:13.067
+2.0. Controleer de
+aanpassingsidentificatie en de
+
+formats_03
+00:00:13.067 --> 00:00:15.400
+bijbehorende nationale toewijzing.
+
+workflow_01
+00:00:16.150 --> 00:00:21.804
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:21.804 --> 00:00:27.226
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:27.226 --> 00:00:28.700
+activeert het niet.
+
+accept_01
+00:00:29.450 --> 00:00:35.139
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:35.139 --> 00:00:40.421
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:40.421 --> 00:00:43.800
+fiscale goedkeuring of aflevering via een
+netwerk.
+

@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.171
+FatturaPA is de geconfigureerde Italiaanse
+familie. Het familielabel certificeert
+
+formats_02
+00:00:06.171 --> 00:00:12.324
+niet elke FatturaPA-versie of verzending
+via SDI. Controleer het bronschema en de
+
+formats_03
+00:00:12.324 --> 00:00:13.967
+vereisten van de ontvanger.
+
+workflow_01
+00:00:14.717 --> 00:00:20.371
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:20.371 --> 00:00:25.793
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:25.793 --> 00:00:27.267
+activeert het niet.
+
+accept_01
+00:00:28.017 --> 00:00:33.706
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:33.706 --> 00:00:38.988
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:38.988 --> 00:00:42.367
+fiscale goedkeuring of aflevering via een
+netwerk.
+

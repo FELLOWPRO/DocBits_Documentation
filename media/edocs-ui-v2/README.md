@@ -1,8 +1,10 @@
 # Real DocBits UI, version 2
 
 These revised films use real, localized development UI captures as their picture
-track. The retained settings explainer pipeline supplies the unchanged cached
-narration, timing, captions, audio normalization, encoding and media validation.
+track. The retained settings explainer pipeline supplies narration, timing,
+captions, audio normalization, encoding and media validation. Existing speech
+is reused unchanged; country films that previously had no speech use the same
+retained adapter for their first request.
 `ui_picture.py` uses the pipeline's existing external-picture-track interface.
 The pictures are a screenshot walkthrough, not a continuous screen recording.
 
@@ -11,8 +13,8 @@ preview panel and displays the negative-sign setting. It never saves, creates,
 activates or deletes a rule. Version authors, the user menu, email links and
 notifications are hidden. The shared user's language preference is unchanged;
 translation runs only in a disposable browser context. Process one locale at a
-time. `capture_country_pool.py` may divide that one locale into up to three disjoint
-country subsets with disposable, browser-local translations. It never starts a
+time. Run `capture_country_pool.py` with `--workers 1` to let the application
+finish loading each country's editors before continuing. It never starts a
 second locale or changes the shared profile. Inspect every capture and every
 composed shot before delivery.
 
@@ -27,9 +29,11 @@ the code list of another default or version from this particular screenshot.
 All v1 renderer sources, provenance and media remain unchanged. Version 2 uses
 new `-v2` attachment names. `delivery.json` records only delivered v2 variants;
 the review players use v1 for variants that have not yet been revised. Source
-and screenshot hashes are retained with each variant. No speech was resubmitted
-to make these visual changes. The ambiguous NL Vietnam speech checkpoint is
-preserved and must be reconciled before any paid retry.
+and screenshot hashes are retained with each variant. No existing speech was
+resubmitted to make these visual changes. `acquire_countries.py` acquires missing
+PL/PT/ZH country narration sequentially and stops on the first error. It refuses
+an ambiguous `submitting` checkpoint. The ambiguous NL Vietnam speech checkpoint
+is preserved and must be reconciled before any paid retry.
 
 To reproduce, unpack `renderer-source.tar.gz` into a separate workspace, provision
 the unchanged locks, pinned fonts/logo and the original speech cache, then run:

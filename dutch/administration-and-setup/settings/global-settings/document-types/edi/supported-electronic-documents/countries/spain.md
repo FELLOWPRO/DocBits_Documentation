@@ -39,11 +39,13 @@ Een streepje betekent dat de statuscontrole geen eigen component voor deze exact
 
 Gesproken uitleg en WebVTT-ondertitels in de gekozen taal leggen formaatselectie, configuratie en acceptatiecontroles uit.
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-spain-nl.mp4" %}
+Deze rondleiding zonder wijzigingen toont de bestaande DocBits-configuratie voor het land. Controleer de gebruikte bron en actieve versie en test representatieve facturen, creditnota’s en exports in uw eigen organisatie.
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-spain-nl-v2.mp4" %}
 Spanje — Uitlegvideo per land
 {% endfile %}
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-spain-nl.vtt" %}
+{% file src="../../../../../../../.gitbook/assets/edocs-support-spain-nl-v2.vtt" %}
 WebVTT
 {% endfile %}
 

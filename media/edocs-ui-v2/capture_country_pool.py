@@ -12,7 +12,7 @@ from prepare_locale import FOLDERS, PACKAGE, ROOT, WORK
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("locale", choices=FOLDERS)
-    parser.add_argument("--workers", type=int, choices=(1, 2, 3), default=3)
+    parser.add_argument("--workers", type=int, choices=(1, 2, 3), default=1)
     args = parser.parse_args()
     catalogue = ROOT / "output/edocs-support/catalog.json"
     countries = json.loads(catalogue.read_text())["countries"]

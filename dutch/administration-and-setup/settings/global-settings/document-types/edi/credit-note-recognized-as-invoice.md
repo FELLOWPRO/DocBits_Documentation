@@ -9,11 +9,15 @@ Een elektronische creditnota kan als **Invoice** verschijnen, ook als de oorspro
 
 ## Controleer de classificatie van elektronische creditnota's
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-nl.mp4" %}
+De video toont een controle in DocBits zonder wijzigingen, met FACTURX 1.0.05 / ZUGFeRD 2.1 als voorbeeld. Toewijzingen en versies kunnen in uw organisatie verschillen. Controleer altijd de actieve Transformation voor het gedetecteerde formaat.
+
+Het oudere XSLT-voorbeeld in de video bevat vertakkingen voor 381 en 389. Controleer in de werkelijke Transformation welke codes deze specifieke versie behoudt; de algemene codelijst bewijst geen dekking in elke historische toewijzing.
+
+{% file src="../../../../../.gitbook/assets/edocs-credit-note-nl-v2.mp4" %}
 Controleer de classificatie van elektronische creditnota's
 {% endfile %}
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-nl.vtt" %}
+{% file src="../../../../../.gitbook/assets/edocs-credit-note-nl-v2.vtt" %}
 WebVTT
 {% endfile %}
 

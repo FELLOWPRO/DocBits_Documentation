@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.312
+Svefaktura 1.0 is de vermelde Zweedse
+variant. Houd deze oudere familie
+
+formats_02
+00:00:05.312 --> 00:00:09.851
+gescheiden van Peppol BIS Billing 3.0.
+Controleer welk profiel de ontvanger
+
+formats_03
+00:00:09.851 --> 00:00:10.700
+verwacht.
+
+workflow_01
+00:00:11.450 --> 00:00:17.104
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:17.104 --> 00:00:22.526
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:22.526 --> 00:00:24.000
+activeert het niet.
+
+accept_01
+00:00:24.750 --> 00:00:30.439
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:30.439 --> 00:00:35.721
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:35.721 --> 00:00:39.100
+fiscale goedkeuring of aflevering via een
+netwerk.
+

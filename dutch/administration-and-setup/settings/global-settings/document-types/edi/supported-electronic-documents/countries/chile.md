@@ -45,11 +45,13 @@ Deze labels hebben configuratievermeldingen, maar geen zelfstandige classificati
 
 Gesproken uitleg en WebVTT-ondertitels in de gekozen taal leggen formaatselectie, configuratie en acceptatiecontroles uit.
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-chile-nl.mp4" %}
+Deze rondleiding zonder wijzigingen toont de bestaande DocBits-configuratie voor het land. Controleer de gebruikte bron en actieve versie en test representatieve facturen, creditnota’s en exports in uw eigen organisatie.
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-chile-nl-v2.mp4" %}
 Chili — Uitlegvideo per land
 {% endfile %}
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-chile-nl.vtt" %}
+{% file src="../../../../../../../.gitbook/assets/edocs-support-chile-nl-v2.vtt" %}
 WebVTT
 {% endfile %}
 

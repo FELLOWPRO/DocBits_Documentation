@@ -9,11 +9,15 @@ An electronic credit note can appear as **Invoice** even when its original XML c
 
 ## Check electronic credit note classification
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-en.mp4" %}
+The video shows a read-only check in DocBits using FACTURX 1.0.05 / ZUGFeRD 2.1 as an example. Mappings and versions can differ in your organisation. Always check the active Transformation for the detected format.
+
+The older example XSLT shown in the video contains branches for 381 and 389. Check the actual Transformation to establish which codes this specific version preserves; the general code list does not prove coverage in every historical mapping.
+
+{% file src="../../../../../.gitbook/assets/edocs-credit-note-en-v2.mp4" %}
 Check electronic credit note classification
 {% endfile %}
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-en.vtt" %}
+{% file src="../../../../../.gitbook/assets/edocs-credit-note-en-v2.vtt" %}
 WebVTT
 {% endfile %}
 

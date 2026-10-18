@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.892
+PINT A-NZ has invoice and credit-note rule
+entries shared with New Zealand. The
+
+formats_02
+00:00:05.892 --> 00:00:12.336
+active family label has no fixed PINT
+release number. Check customization and
+
+formats_03
+00:00:12.336 --> 00:00:17.467
+profile identifiers; network delivery is a
+separate integration.
+
+workflow_01
+00:00:18.217 --> 00:00:22.710
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:22.710 --> 00:00:27.772
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:27.772 --> 00:00:28.800
+activate it.
+
+accept_01
+00:00:29.550 --> 00:00:34.310
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:34.310 --> 00:00:39.314
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:39.314 --> 00:00:40.267
+delivery.
+

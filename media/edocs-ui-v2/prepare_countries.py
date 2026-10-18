@@ -1,6 +1,7 @@
 """Prepare and accept country films for one locale with exact mirror parity."""
 
 import argparse
+import html
 import importlib.util
 import json
 import os
@@ -30,11 +31,18 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("locale", choices=FOLDERS)
     parser.add_argument("--accept", action="store_true")
+    parser.add_argument("--new-media", action="store_true")
     args = parser.parse_args()
     locale = args.locale
-    available = json.loads(
+    original = json.loads(
         (ROOT / "media/edocs-country-support/delivery.json").read_text()
-    )["locales"][locale]["films"]
+    )["locales"]
+    available = original["en" if args.new_media else locale]["films"]
+    if args.new_media:
+        assert locale in ("pl", "pt", "zh") and len(available) == 40
+    translations = json.loads(
+        (ROOT / f"media/edocs-country-support/translations/{locale}.json").read_text()
+    )
     assert available, "No existing country films in this locale to revise"
     rows = []
     files = []
@@ -70,6 +78,41 @@ def main():
         relative = SECTION + "/" + country + ".md"
         path = mirror / relative
         text = path.read_text()
+        if args.new_media:
+            poster = f".gitbook/assets/edocs-support-{country}-{locale}.png"
+            source = WORK / "countries" / locale / country / "rules.png"
+            row = next(r for r in capture["captures"] if r["name"] == "rules")
+            assert digest(source) == row["sha256"]
+            shutil.copyfile(source, mirror / poster)
+            files.append(poster)
+            marker = "<!-- Country screenshot and narrated film pending; no unavailable media is linked. -->"
+            if marker in text:
+                country_text = translations["countries"][country]
+                caption = translations[
+                    (
+                        "screen_caption"
+                        if capture["representative"]
+                        else "screen_empty_caption"
+                    )
+                ]
+                image_ref = os.path.relpath(mirror / poster, path.parent)
+                video_ref = os.path.relpath(
+                    mirror / f".gitbook/assets/{filename}.mp4", path.parent
+                )
+                captions_ref = video_ref.removesuffix(".mp4") + ".vtt"
+                block = (
+                    f"## {translations['screen_title']}\n\n"
+                    f'<figure><img src="{image_ref}" alt="{html.escape(country_text["name"], quote=True)}">'
+                    f"<figcaption><p>{caption}</p></figcaption></figure>\n\n"
+                    f"## {translations['video_title']}\n\n"
+                    f"{translations['video_caption']}\n\n{NOTES[locale]}\n\n"
+                    f'{{% file src="{video_ref}" %}}\n'
+                    f"{country_text['name']} — {translations['video_title']}\n"
+                    "{% endfile %}\n\n"
+                    f'{{% file src="{captions_ref}" %}}\nWebVTT\n'
+                    "{% endfile %}"
+                )
+                text = text.replace(marker, block)
         if NOTES[locale] not in text:
             at = text.index("{% file ")
             text = text[:at] + NOTES[locale] + "\n\n" + text[at:]

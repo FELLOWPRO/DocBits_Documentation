@@ -1,0 +1,40 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.438
+e-SLOG 1.6 and 2.0 have separate entries.
+The two versions have different XML
+
+formats_02
+00:00:06.438 --> 00:00:11.567
+structures. Match the source schema rather
+than selecting a rule from the filename.
+
+workflow_01
+00:00:12.317 --> 00:00:16.810
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:16.810 --> 00:00:21.872
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:21.872 --> 00:00:22.900
+activate it.
+
+accept_01
+00:00:23.650 --> 00:00:28.410
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:28.410 --> 00:00:33.414
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:33.414 --> 00:00:34.367
+delivery.
+

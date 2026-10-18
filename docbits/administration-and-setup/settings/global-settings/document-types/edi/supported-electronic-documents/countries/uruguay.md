@@ -41,11 +41,13 @@ A dash means the status check did not report a dedicated component for this exac
 
 Localized narration and WebVTT captions explain format selection, configuration and acceptance checks.
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-uruguay-en.mp4" %}
+This read-only walkthrough shows the country’s existing DocBits configuration. Check the effective source and active version, then validate representative invoices, credit notes and exports in your own organisation.
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-uruguay-en-v2.mp4" %}
 Uruguay — Country explainer
 {% endfile %}
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-uruguay-en.vtt" %}
+{% file src="../../../../../../../.gitbook/assets/edocs-support-uruguay-en-v2.vtt" %}
 WebVTT
 {% endfile %}
 

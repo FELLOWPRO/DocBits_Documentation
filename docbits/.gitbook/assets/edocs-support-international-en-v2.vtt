@@ -1,0 +1,49 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.073
+International entries include Peppol BIS
+3.0, UBL 2.1, pure CII, EDI, INVOIC02,
+
+formats_02
+00:00:07.073 --> 00:00:13.982
+cXML, OCI, BOD and SPS Commerce RSX 7.7.4.
+Invoice, order, response and despatch
+
+formats_03
+00:00:13.982 --> 00:00:20.718
+mappings are distinct. File processing
+does not itself provide a Peppol access
+
+formats_04
+00:00:20.718 --> 00:00:24.000
+point or trading-partner connectivity.
+
+workflow_01
+00:00:24.750 --> 00:00:29.243
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:29.243 --> 00:00:34.305
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:34.305 --> 00:00:35.333
+activate it.
+
+accept_01
+00:00:36.083 --> 00:00:40.843
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:40.843 --> 00:00:45.847
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:45.847 --> 00:00:46.800
+delivery.
+

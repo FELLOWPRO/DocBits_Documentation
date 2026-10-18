@@ -16,7 +16,14 @@ const only=process.argv[5]?.split(',');
   await page.waitForURL(u=>!u.pathname.includes('/login'),{timeout:90000});await ready(page);
   await page.evaluate(code=>{localStorage.setItem('selected_language','__q_strn|'+code);localStorage.setItem('__tolgee_currentLanguage',code.split('-')[0]);},ui);
   const list='https://dev.docbits.com/nova/settings/manage-xslt/INVOICE?tab=FACTURX';
-  await page.goto(list,{waitUntil:'domcontentloaded'});
+  try { await page.goto(list,{waitUntil:'domcontentloaded'}); }
+  catch(error) {
+   // Login can still finish its own dashboard navigation after the first URL
+   // change. Resume once after that navigation, without changing any settings.
+   if(!error.message.includes('ERR_ABORTED'))throw error;
+   await page.waitForLoadState('domcontentloaded');await ready(page);
+   await page.goto(list,{waitUntil:'domcontentloaded'});
+  }
   await page.locator('[data-edoc-format="FACTURX"]').waitFor({state:'visible',timeout:120000});
   await ready(page);await language(page);
   for(const country of catalogue.countries){

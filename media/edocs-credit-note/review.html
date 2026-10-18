@@ -15,7 +15,7 @@
   @media(max-width: 480px) { body { padding: 16px; } }
 </style>
 <h1 id="title">eDocs: Klassifizierung elektronischer Gutschriften</h1>
-<p>Lokale Vorschau der Dokumentationsanhänge. Sprache, Wiedergabe und Untertitel können hier geprüft werden.</p>
+<p id="intro">Lokale Vorschau der Dokumentationsanhänge. Sprache, Wiedergabe und Untertitel können hier geprüft werden.</p>
 <label for="locale">Sprache</label>
 <select id="locale">
   <option value="en">English</option><option value="de" selected>Deutsch</option>
@@ -24,20 +24,32 @@
   <option value="pl">Polski</option><option value="pt">Português</option>
   <option value="zh">简体中文</option>
 </select>
+<p id="scope" hidden></p>
 <video id="player" controls preload="metadata" playsinline></video>
 <p><a id="guide">Dokumentationsseite</a> · <a id="captions">WebVTT</a></p>
 <p id="status" role="status"></p>
-<details open><summary>Transkript</summary><ol id="transcript"></ol></details>
+<details open><summary id="transcript-label">Transkript</summary><ol id="transcript"></ol></details>
 <script>
   const folders = {en:'docbits',de:'deutsch',es:'espanol',fr:'french',it:'italian',nl:'dutch',pl:'polish',pt:'portuguese',zh:'chinese'};
   const picker = document.querySelector('#locale');
   const player = document.querySelector('#player');
   const status = document.querySelector('#status');
+  let strings;
   async function loadLocale(locale) {
     picker.value = locale;
     player.pause();
+    const translations = await fetch('../edocs-ui-v2/translations.json').then(response => response.json());
+    strings = translations[locale];
+    document.documentElement.lang = locale;
+    document.querySelector('#intro').textContent = strings.intro;
+    document.querySelector('label[for="locale"]').textContent = strings.language;
+    document.querySelector('#guide').textContent = strings.guide;
+    document.querySelector('#transcript-label').textContent = strings.transcript;
     const revisions = await fetch('../edocs-ui-v2/delivery.json').then(response => response.json());
     const suffix = revisions.credit_note[locale] ? '-v2' : '';
+    const scope = document.querySelector('#scope');
+    scope.textContent = suffix ? strings.credit_scope : '';
+    scope.hidden = !suffix;
     const prefix = `../../${folders[locale]}/.gitbook/assets/edocs-credit-note-${locale}${suffix}`;
     player.replaceChildren();
     player.src = `${prefix}.mp4`;
@@ -46,7 +58,7 @@
     player.append(track);
     document.querySelector('#captions').href = `${prefix}.vtt`;
     document.querySelector('#guide').href = `../../${folders[locale]}/administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md`;
-    status.textContent = 'Lokale Mediendatei wird geladen …';
+    status.textContent = strings.loading;
     const response = await fetch(`content/locales/${locale}.json`);
     if (!response.ok) throw new Error(`Transkript: ${response.status}`);
     const content = await response.json();
@@ -61,7 +73,7 @@
     player.load();
   }
   player.addEventListener('loadedmetadata', () => { status.textContent = `${picker.selectedOptions[0].textContent} · ${player.duration.toFixed(1)} s`; });
-  player.addEventListener('error', () => { status.textContent = 'Die lokale Mediendatei konnte nicht geladen werden.'; });
+  player.addEventListener('error', () => { status.textContent = strings?.error || 'Media error'; });
   picker.addEventListener('change', () => loadLocale(picker.value).catch(error => { status.textContent = error.message; }));
   const requested = new URLSearchParams(location.search).get('lang');
   loadLocale(Object.hasOwn(folders, requested) ? requested : 'de').catch(error => { status.textContent = error.message; });

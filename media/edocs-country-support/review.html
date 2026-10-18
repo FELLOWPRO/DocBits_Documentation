@@ -1,12 +1,14 @@
 <!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>DocBits eDocs country explainer review</title>
 <style>body{margin:0;padding:16px;font:16px system-ui;background:#0a2531;color:#f5f5f5}main{max-width:960px;margin:auto}video,img{width:100%;display:block}[hidden]{display:none!important}h1{font-size:22px}select{font:inherit;max-width:100%;padding:8px;margin:4px 0 12px}label{display:block}::cue{font:16px system-ui;background:#0a2531ee;color:white}p{overflow-wrap:anywhere}</style>
-<main><h1></h1><label>Language / Sprache <select id="language"></select></label><label><span id="country-label"></span> <select id="country"></select></label><p id="status" role="status" hidden></p><img id="screenshot" alt="" hidden><video controls playsinline preload="metadata" tabindex="0"><track kind="captions" default></video><p id="transcript"></p></main>
+<main><h1></h1><label><span id="language-label"></span> <select id="language"></select></label><label><span id="country-label"></span> <select id="country"></select></label><p id="status" role="status" hidden></p><p id="scope" hidden></p><img id="screenshot" alt="" hidden><video controls playsinline preload="metadata" tabindex="0"><track kind="captions" default></video><p id="transcript"></p></main>
 <script type="module">
 const params=new URLSearchParams(location.search),locale=params.get('lang')||'de',country=params.get('country')||'germany';
 const text=await fetch(`translations/${locale}.json`).then(r=>r.json());
 const delivery=await fetch('delivery.json').then(r=>r.json());
 const revisions=await fetch('../edocs-ui-v2/delivery.json').then(r=>r.json());
+const strings=(await fetch('../edocs-ui-v2/translations.json').then(r=>r.json()))[locale];
+document.querySelector('#language-label').textContent=strings.language;
 const available=delivery.locales[locale];
 const language=document.querySelector('#language'),countrySelect=document.querySelector('#country');
 for(const [key,name] of Object.entries({en:'English',de:'Deutsch',es:'Español',fr:'Français',it:'Italiano',nl:'Nederlands',pl:'Polski',pt:'Português',zh:'中文'})){const option=new Option(name,key);option.selected=key===locale;language.add(option);}
@@ -18,8 +20,9 @@ const folders={en:'docbits',de:'deutsch',es:'espanol',fr:'french',it:'italian',n
 const base=`../../${folders[locale]}/.gitbook/assets/edocs-support-${country}-${locale}`;
 document.documentElement.lang=locale;document.querySelector('h1').textContent=text.countries[country].name+' — '+text.video_title;
 const video=document.querySelector('video');
-if(available.films.includes(country)){
+if(available.films.includes(country)||revisions.countries[locale]?.includes(country)){
  const suffix=revisions.countries[locale]?.includes(country)?'-v2':'';
+ if(suffix){document.querySelector('#scope').textContent=strings.country_scope;document.querySelector('#scope').hidden=false;}
  video.src=base+suffix+'.mp4';video.poster=base+'.png';
  const track=video.querySelector('track');track.src=base+suffix+'.vtt';track.srclang=locale;track.label=locale;video.load();
 }else{

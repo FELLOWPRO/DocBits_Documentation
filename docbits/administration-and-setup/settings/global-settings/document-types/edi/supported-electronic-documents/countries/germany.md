@@ -123,11 +123,13 @@ MINIMUM and BASIC WL can omit line-item information needed downstream. BASIC, EN
 
 Localized narration and WebVTT captions explain format selection, configuration and acceptance checks.
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-germany-en.mp4" %}
+This read-only walkthrough shows the country’s existing DocBits configuration. Check the effective source and active version, then validate representative invoices, credit notes and exports in your own organisation.
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-germany-en-v2.mp4" %}
 Germany — Country explainer
 {% endfile %}
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-germany-en.vtt" %}
+{% file src="../../../../../../../.gitbook/assets/edocs-support-germany-en-v2.vtt" %}
 WebVTT
 {% endfile %}
 

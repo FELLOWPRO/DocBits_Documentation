@@ -136,6 +136,8 @@ def main():
         shutil.copyfile(
             WORK / "browser" / locale / "browser-380.png", evidence / "browser-380.png"
         )
+        for sheet in (WORK / "credit-sheets" / locale).glob("*.png"):
+            shutil.copyfile(sheet, evidence / sheet.name)
         review = dict(
             visual="All 12 real UI captures and all 13 composed shots inspected, including enlarged code and mobile sample",
             browser="passed",

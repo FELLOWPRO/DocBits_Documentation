@@ -30,11 +30,13 @@ No matching classification or configuration entry was found. Current built-in su
 
 Localized narration and WebVTT captions explain format selection, configuration and acceptance checks.
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-en.mp4" %}
+This read-only walkthrough shows the country’s existing DocBits configuration. Check the effective source and active version, then validate representative invoices, credit notes and exports in your own organisation.
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-en-v2.mp4" %}
 Costa Rica — Country explainer
 {% endfile %}
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-en.vtt" %}
+{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-en-v2.vtt" %}
 WebVTT
 {% endfile %}
 

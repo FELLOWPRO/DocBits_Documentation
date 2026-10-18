@@ -13,13 +13,11 @@ El vídeo muestra una revisión de solo lectura en DocBits con FACTURX 1.0.05 / 
 
 El ejemplo XSLT antiguo del vídeo contiene ramas para 381 y 389. Compruebe en la Transformation real qué códigos conserva esta versión concreta; la lista general de códigos no demuestra su cobertura en todas las asignaciones históricas.
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-es-v2.mp4" %}
-Comprobar la clasificación de notas de crédito electrónicas
-{% endfile %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/es.mp4" %}
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-es-v2.vtt" %}
-WebVTT
-{% endfile %}
+[Comprobar la clasificación de notas de crédito electrónicas](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/es.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/es.vtt)
 
 ## Compruebe el código del documento
 

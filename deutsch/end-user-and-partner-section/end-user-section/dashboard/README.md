@@ -14,11 +14,11 @@ Welche Funktionen Sie sehen, hängt von Ihren Berechtigungen, dem Dokumentstatus
 
 ## Dashboard als Video
 
-Die deutsche Sprecherfassung führt Sie in rund zwei Minuten durch Suche, Filter, Spalten, Dokumentaktionen, gespeicherte Ansichten, Upload und Werkzeuge. Große Detailansichten zeigen die Bedienelemente. Das Suchbeispiel zeigt die tatsächliche Eingabe, die Bestätigung mit Enter und die gefilterte Trefferliste. Deutsche Untertitel sind im Bild eingeblendet.
+Die deutsche Sprecherfassung führt Sie in rund zwei Minuten durch Suche, Filter, Spalten, Dokumentaktionen, gespeicherte Ansichten, Upload und Werkzeuge. Vollständige Fenster und Menüs zeigen den Zusammenhang. Bei Vergrößerungen bleibt die Gesamtansicht daneben sichtbar. Das Suchbeispiel zeigt die tatsächliche Eingabe, die Bestätigung mit Enter und die gefilterte Trefferliste. Deutsche Untertitel sind im Bild eingeblendet.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v3/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v4/de.mp4" %}
 
-[Video mit deutscher Sprecherstimme öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v3/de.mp4) · [Deutsche Untertitel (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v3/de.vtt) · [Deutsches Transkript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v3/de.txt)
+[Video mit deutscher Sprecherstimme öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v4/de.mp4) · [Deutsche Untertitel (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v4/de.vtt) · [Deutsches Transkript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v4/de.txt)
 
 ## Die tägliche Arbeit beginnen
 

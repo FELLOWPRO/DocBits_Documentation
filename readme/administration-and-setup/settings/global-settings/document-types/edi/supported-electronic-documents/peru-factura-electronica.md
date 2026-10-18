@@ -4,6 +4,12 @@ description: "DocBits 对 PERU FACTURA ELECTRONICA 电子文档的支持"
 
 # 🇵🇪 PERU FACTURA ELECTRONICA
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。 [秘鲁](countries/peru.md). 请选择实际的 UBL 版本和文档结构。成功处理文件不代表已被 SUNAT 接受。
+{% endhint %}
+
 | 属性                 | 值                          |
 | -------------------- | --------------------------- |
 | **国家 / 地区**      | 秘鲁                        |

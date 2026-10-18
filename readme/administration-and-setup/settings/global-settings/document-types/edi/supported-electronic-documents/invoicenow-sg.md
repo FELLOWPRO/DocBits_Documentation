@@ -4,6 +4,12 @@ description: "DocBits 对 INVOICENOW SG 电子文档的支持"
 
 # 🇸🇬 INVOICENOW SG
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。 [新加坡](countries/singapore.md). 请检查新加坡业务规范标识。国家业务规范与通用 Peppol BIS 可以共用 UBL 语法，但业务规则未必完全相同。
+{% endhint %}
+
 | 属性             | 值                                              |
 | ---------------- | ----------------------------------------------- |
 | **国家 / 地区**  | 新加坡                                         |

@@ -4,6 +4,12 @@ description: DocBits 对 OIOUBL 2.1 电子文档的支持
 
 # 🇩🇰 OIOUBL 2.1
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。 [丹麦](countries/denmark.md). OIOUBL 与 Peppol BIS 是不同的业务规范。仅凭 UBL 语法无法确定国家业务规范。
+{% endhint %}
+
 | 属性 | 值 |
 | -------------------- | ----------------------------------------- |
 | **国家 / 地区** | 丹麦 |

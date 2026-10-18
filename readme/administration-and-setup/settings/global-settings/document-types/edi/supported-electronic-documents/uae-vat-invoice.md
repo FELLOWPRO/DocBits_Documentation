@@ -4,6 +4,12 @@ description: "DocBits 对 UAE VAT INVOICE 电子文档的支持"
 
 # 🇦🇪 阿联酋 VAT 发票
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。 [阿拉伯联合酋长国](countries/united-arab-emirates.md). 增值税发票映射并不证明支持阿联酋所有 Peppol 或 PINT 发布版本。请确认数据载荷约定和所需的送达集成。
+{% endhint %}
+
 | 属性                 | 值                                      |
 | -------------------- | --------------------------------------- |
 | **国家 / 地区**      | 阿拉伯联合酋长国                         |

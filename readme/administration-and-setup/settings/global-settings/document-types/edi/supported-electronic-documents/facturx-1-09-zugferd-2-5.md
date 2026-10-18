@@ -4,6 +4,12 @@ description: "DocBits 对 FACTUR-X 1.09 - ZUGFeRD 2.5 电子文档的支持"
 
 # 🇫🇷 FACTUR-X 1.09 - ZUGFeRD 2.5
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。 [法国](countries/france.md). XML 标记 1p0 和 Factur-X XMP Version 1.0 无法确定发布版本。版本未知时，请保留通用名称。
+{% endhint %}
+
 | 属性 | 值 |
 |----------|-------|
 | **国家 / 地区** | 法国 / 德国 |

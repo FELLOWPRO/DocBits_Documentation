@@ -5,6 +5,12 @@ description: >-
 
 # 🇨🇳 中国发票
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。 [中国](countries/china.md). 文档所述的适配器使用 XML 命名空间 urn:china:tax:fapiao:1.0。不要假定所有原生 OFD、PDF 或税务平台导出文件都遵循这一数据约定。
+{% endhint %}
+
 | 属性             | 值                                                               |
 | ---------------- | ---------------------------------------------------------------- |
 | **国家 / 地区**   | 中国                                                             |
@@ -13,7 +19,7 @@ description: >-
 | **标准**         | 发票（Fapiao），国家税务总局                                        |
 | **区域设置**     | `zh_CN`                                                          |
 
-发票（Fapiao）是由国家税务总局（STA / 国家税务总局）主管的中国税务发票标准。所有发票文档共用 `urn:china:tax:fapiao:1.0` 命名空间。DocBits 通过 `fapiao_type` 元素自动检测发票类型，并应用相应的提取规则：
+目录包含 Fapiao、E-Fapiao、General VAT Invoice 和 Special VAT Invoice。 文档所述的适配器使用 XML 命名空间 urn:china:tax:fapiao:1.0。不要假定所有原生 OFD、PDF 或税务平台导出文件都遵循这一数据约定。
 
 | fapiao\_type 值 | 文档类型                                           |
 | ------------------ | -------------------------------------------------- |

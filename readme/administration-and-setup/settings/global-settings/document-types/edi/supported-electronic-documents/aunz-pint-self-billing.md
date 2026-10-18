@@ -4,6 +4,12 @@ description: DocBits 对 AUNZ PINT SELF-BILLING 电子文档的支持
 
 # 🇦🇺 AUNZ PINT SELF-BILLING
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。 [澳大利亚](countries/australia.md). 活动的格式系列名称没有固定的 PINT 发布版本号。请检查自定义标识和业务规范标识；网络送达需要单独的集成。
+{% endhint %}
+
 | 属性 | 值 |
 | -------------------- | ----------------------- |
 | **国家 / 地区** | 澳大利亚 / 新西兰 |

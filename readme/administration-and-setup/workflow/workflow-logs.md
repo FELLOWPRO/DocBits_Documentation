@@ -2,40 +2,43 @@
 
 ## Video
 
-Deze twee video’s gebruiken lesdiagrammen die als illustraties zijn aangeduid.
-
+De zoekvideo is een testversie met echte DocBits-schermen. De diagnosevideo gebruikt nog steeds lesdiagrammen die als illustraties zijn aangeduid.
 ### De juiste uitvoering vinden
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/nl.mp4" %}
+{% hint style="info" %}
+Testversie: echte DocBits-schermen met documentacties, de documentstroom, staptijden, lege workflowlogs en status- en datumfilters. Het document heeft geen opgeslagen Advanced Workflow-uitvoering. Uitvoeringsrijen, paginering en nodediagnose zijn nog niet opgenomen in deze testversie.
+{% endhint %}
 
-[Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/nl.vtt) · 1:49
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/nl.mp4" %}
+
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/nl.mp4) · [Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/nl.vtt) · 1:52
 
 <details>
 <summary>Transcriptie</summary>
 
-**Open het documentlogboek**
+**Begin bij het document**
 
-Kies in het documentdashboard Workflow Logs onder Acties. Workflowtoegang moet ingeschakeld zijn. Deze logboeken horen bij het gekozen document. Ontwerpertests en gebeurtenis- of activiteitenlogboeken van de organisatie staan hier los van.
+Open op het documentdashboard het actiemenu en kies Documentstroom. De echte verwerkingsgeschiedenis toont import en OCR. Open een stap om de wachttijd en verwerkingstijd te bekijken. Deze verwerkingsstappen staan los van Advanced Workflow-nodes.
 
-**Lees de tellers**
+**Lees de echte tellers**
 
-Blauw telt uitvoeringen in de huidige resultaten, rood fouten, geel onware voorwaarden en groen successen. De tellers beschrijven uitvoeringen, geen workflowdefinities of knooppunten. Filters kunnen deze aantallen wijzigen.
+Hier staan de workflowlogs van hetzelfde document. Blauw is het totaal, rood zijn fouten, geel zijn niet-vervulde voorwaarden en groen zijn successen. Dit demonstratiedocument heeft geen opgeslagen workflowuitvoeringen. Daarom tonen alle vier de tellers nul.
 
-**Kies de exacte uitvoering**
+**Controleer de uitvoeringskolommen**
 
-Elke rij toont workflownaam, aanmaaktijd, duur in seconden en resultaat. Eén workflow kan meermaals voor hetzelfde document draaien. Vergelijk tijdstempels. Een korte uitvoering kan door afronding nul komma nul nul seconden tonen.
+De tabel bevat kolommen voor workflownaam, aanmaaktijd, looptijd en resultaat. Gebruik de tijdstempel om herhaalde uitvoeringen te onderscheiden. Deze testversie heeft geen uitvoeringsrij om te openen. Een lege lijst bewijst op zichzelf geen uitvoeringsfout.
 
-**Beperk de resultaten**
+**Open de statusfilters**
 
-Zoek een workflow met Zoeken. Het afstelpictogram opent sorteerrichting, sorteercriterium, status en begin- en einddatum. Sorteer op naam of aanmaaktijd. Voer datums in als jaar, maand, dag en selecteer Toepassen.
+Het filterpictogram opent het echte menu. Sorteer op naam of aanmaaktijd, oplopend of aflopend. Status biedt succes, een niet-vervulde voorwaarde en een fout. Je ziet hier de echte DocBits-interface.
 
-**Controleer pagina’s en filters**
+**Kies datums en wis filters**
 
-Gebruik paginering voor oudere resultaten. Filters wissen laadt de lijst zonder filterkeuzes. Wis de zoektekst afzonderlijk. Controleer bij lege resultaten document, datums en status. Een lege lijst bewijst geen uitvoeringsfout.
+Kies een periode met de start- en einddatum of de kalender. De volgorde is jaar, maand en dag. Toepassen vraagt de resultaten op. Filters wissen herstelt de selectie. Wis de zoekopdracht afzonderlijk. In deze versie blijven de maandnamen in de kalender Engels.
 
-**Bijzondere toestanden**
+**Testversie: een opgeslagen uitvoering ontbreekt nog**
 
-Een banner en blokkeerpictogram tonen de uitvoeringslimiet van het document. Onderzoek herhaalde triggers voordat u limieten wijzigt. Een DocOperator-videodownload verschijnt alleen bij een bestaande opname; die opname hoort bij de uitvoering.
+Met deze testversie controleer je de documenttoegang, verwerkingsdetails en logbediening. Een opgeslagen Advanced Workflow-uitvoering ontbreekt nog om echte rijen, paginering, routes en nodeberichten te tonen. Deze resultaten worden niet nagebootst in de video.
 
 </details>
 

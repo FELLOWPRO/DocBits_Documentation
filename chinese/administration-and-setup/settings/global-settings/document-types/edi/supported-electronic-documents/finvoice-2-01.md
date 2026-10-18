@@ -4,6 +4,12 @@ description: "DocBits 对 FINVOICE 2.01 电子文档的支持"
 
 # 🇫🇮 FINVOICE 2.01
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。 [芬兰](countries/finland.md). 选择映射之前，请检查原始文件的版本。TEAPPSXML 名称并未指明发布版本。
+{% endhint %}
+
 | 属性                 | 值                   |
 | -------------------- | -------------------- |
 | **国家 / 地区**      | 芬兰                 |

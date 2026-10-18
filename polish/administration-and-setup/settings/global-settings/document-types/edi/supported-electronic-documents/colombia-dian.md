@@ -4,6 +4,12 @@ description: Obsługa kolumbijskich dokumentów elektronicznych DIAN w DocBits (
 
 # 🇨🇴 Kolumbia DIAN
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Kolumbia](countries/colombia.md). Wpis klasyfikacji not kredytowych nie ma dedykowanego pakietu ekstrakcji w sprawdzonym stanie. Potwierdź faktycznie używane mapowanie zamiast wnioskować o obsłudze na podstawie wpisu faktury.
+{% endhint %}
+
 | Właściwość | Wartość |
 |----------|-------|
 | **Kraj / Region** | Colombia |

@@ -7983,726 +7983,6 @@
   ],
   "browser": [
     {
-      "country": "denmark",
-      "locale": "nl",
-      "metadata": {
-        "duration": 40.466667,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 8
-      },
-      "playback": {
-        "time": 0.31044,
-        "frames": 14
-      },
-      "seek": {
-        "time": 20.233333,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "OIOUBL 2.1 is de vermelde Deense variant.\nOIOUBL en Peppol BIS zijn verschillende"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "finland",
-      "locale": "nl",
-      "metadata": {
-        "duration": 48.433333,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 9
-      },
-      "playback": {
-        "time": 0.30988,
-        "frames": 14
-      },
-      "seek": {
-        "time": 24.216666,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "Finvoice 1.3, 2.0, 2.01 en 3.0 hebben\nafzonderlijke vermeldingen. TEAPPSXML is"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "austria",
-      "locale": "nl",
-      "metadata": {
-        "duration": 43.966667,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 9
-      },
-      "playback": {
-        "time": 0.304544,
-        "frames": 14
-      },
-      "seek": {
-        "time": 21.983333,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "ebInterface 4.3, 5.0, 6.0 en 6.1 hebben\nafzonderlijke vermeldingen. Stem de"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "germany",
-      "locale": "nl",
-      "metadata": {
-        "duration": 52.9,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 10
-      },
-      "playback": {
-        "time": 0.303107,
-        "frames": 13
-      },
-      "seek": {
-        "time": 26.45,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "XRechnung heeft dertien versielabels van\n1.0 tot 3.0.2, elk in CII en UBL. ZUGFeRD"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "france",
-      "locale": "nl",
-      "metadata": {
-        "duration": 52.9,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 10
-      },
-      "playback": {
-        "time": 0.303202,
-        "frames": 13
-      },
-      "seek": {
-        "time": 26.45,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "Factur-X heeft algemene en\nversiespecifieke vermeldingen, waaronder"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "italy",
-      "locale": "nl",
-      "metadata": {
-        "duration": 42.866667,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 9
-      },
-      "playback": {
-        "time": 0.308539,
-        "frames": 14
-      },
-      "seek": {
-        "time": 21.433333,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "FatturaPA is de geconfigureerde Italiaanse\nfamilie. Het familielabel certificeert"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "poland",
-      "locale": "nl",
-      "metadata": {
-        "duration": 44.633333,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 9
-      },
-      "playback": {
-        "time": 0.30958,
-        "frames": 14
-      },
-      "seek": {
-        "time": 22.316666,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "KSeF heeft algemene, FA2- en\nFA3-vermeldingen. FA2 en FA3 gebruiken"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "norway",
-      "locale": "nl",
-      "metadata": {
-        "duration": 43.233333,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 9
-      },
-      "playback": {
-        "time": 0.309296,
-        "frames": 14
-      },
-      "seek": {
-        "time": 21.616666,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "EHF Invoice 3.0 staat vermeld naast EHF\nOrder, Order Response en Despatch Advice."
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "netherlands",
-      "locale": "nl",
-      "metadata": {
-        "duration": 44.3,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 9
-      },
-      "playback": {
-        "time": 0.310781,
-        "frames": 14
-      },
-      "seek": {
-        "time": 22.15,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "SI-UBL 2.0 heeft een eigen vermelding. Een\nUBL-bestand is niet automatisch SI-UBL"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "slovenia",
-      "locale": "nl",
-      "metadata": {
-        "duration": 42.633333,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 9
-      },
-      "playback": {
-        "time": 0.309667,
-        "frames": 14
-      },
-      "seek": {
-        "time": 21.316666,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "e-SLOG 1.6 en 2.0 hebben afzonderlijke\nvermeldingen. De twee versies hebben"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "sweden",
-      "locale": "nl",
-      "metadata": {
-        "duration": 39.6,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 9
-      },
-      "playback": {
-        "time": 0.309731,
-        "frames": 14
-      },
-      "seek": {
-        "time": 19.8,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "Svefaktura 1.0 is de vermelde Zweedse\nvariant. Houd deze oudere familie"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "spain",
-      "locale": "nl",
-      "metadata": {
-        "duration": 47.233333,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 9
-      },
-      "playback": {
-        "time": 0.321189,
-        "frames": 14
-      },
-      "seek": {
-        "time": 23.616666,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "Facturae heeft algemene vermeldingen en\nvermeldingen voor 3.2, 3.2.1 en 3.2.2."
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "new-zealand",
-      "locale": "nl",
-      "metadata": {
-        "duration": 48.7,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 10
-      },
-      "playback": {
-        "time": 0.305133,
-        "frames": 13
-      },
-      "seek": {
-        "time": 24.35,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "PINT A-NZ heeft regelvermeldingen voor\nfacturen en creditnota’s die met Australië"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "australia",
-      "locale": "nl",
-      "metadata": {
-        "duration": 47.966667,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 10
-      },
-      "playback": {
-        "time": 0.304269,
-        "frames": 13
-      },
-      "seek": {
-        "time": 23.983333,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "PINT A-NZ heeft regelvermeldingen voor\nfacturen en creditnota’s die met"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "india",
-      "locale": "nl",
-      "metadata": {
-        "duration": 47.8,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 9
-      },
-      "playback": {
-        "time": 0.304658,
-        "frames": 13
-      },
-      "seek": {
-        "time": 23.9,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "India GST E-Invoice en GST CreditNote\nhebben afzonderlijke vermeldingen. De"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "indonesia",
-      "locale": "nl",
-      "metadata": {
-        "duration": 42.5,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 9
-      },
-      "playback": {
-        "time": 0.310884,
-        "frames": 14
-      },
-      "seek": {
-        "time": 21.25,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "Indonesia E-Faktur is de geconfigureerde\nfamilie. De vermelding geeft geen"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "china",
-      "locale": "nl",
-      "metadata": {
-        "duration": 52.9,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 10
-      },
-      "playback": {
-        "time": 0.309477,
-        "frames": 14
-      },
-      "seek": {
-        "time": 26.45,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "De catalogus bevat Fapiao, E-Fapiao,\nGeneral VAT Invoice en Special VAT"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "japan",
-      "locale": "nl",
-      "metadata": {
-        "duration": 43.8,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 9
-      },
-      "playback": {
-        "time": 0.310415,
-        "frames": 14
-      },
-      "seek": {
-        "time": 21.9,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "JP PINT en JP PINT Self-Billing zijn\nafzonderlijke vermeldingen. Selfbilling is"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "korea",
-      "locale": "nl",
-      "metadata": {
-        "duration": 44.3,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 9
-      },
-      "playback": {
-        "time": 0.310159,
-        "frames": 14
-      },
-      "seek": {
-        "time": 22.15,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "Korea E-Tax Invoice en Korea NTS zijn\ngeconfigureerde families. De labels noemen"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "philippines",
-      "locale": "nl",
-      "metadata": {
-        "duration": 44.166667,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 9
-      },
-      "playback": {
-        "time": 0.302716,
-        "frames": 13
-      },
-      "seek": {
-        "time": 22.083333,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "Philippines EIS is de geconfigureerde\nfamilie. Het label noemt geen versie."
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "malaysia",
-      "locale": "nl",
-      "metadata": {
-        "duration": 45.9,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 10
-      },
-      "playback": {
-        "time": 0.310282,
-        "frames": 14
-      },
-      "seek": {
-        "time": 22.95,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "MyInvois heeft regelvermeldingen voor\nfacturen en creditnota’s. De onderzochte"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "thailand",
-      "locale": "nl",
-      "metadata": {
-        "duration": 44.433333,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 9
-      },
-      "playback": {
-        "time": 0.302817,
-        "frames": 13
-      },
-      "seek": {
-        "time": 22.216666,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "Thailand E-Tax Invoice is de\ngeconfigureerde familie. Het label noemt"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "taiwan",
-      "locale": "nl",
-      "metadata": {
-        "duration": 41.433333,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 9
-      },
-      "playback": {
-        "time": 0.304128,
-        "frames": 13
-      },
-      "seek": {
-        "time": 20.716666,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "Taiwan eGUI is de geconfigureerde familie.\nHet familielabel certificeert niet elke"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
-      "country": "singapore",
-      "locale": "nl",
-      "metadata": {
-        "duration": 50.8,
-        "width": 1280,
-        "height": 720,
-        "language": "nl",
-        "cues": 10
-      },
-      "playback": {
-        "time": 0.305041,
-        "frames": 14
-      },
-      "seek": {
-        "time": 25.4,
-        "ready": 4
-      },
-      "mobile": {
-        "scroll": 380,
-        "width": 380,
-        "captions": [
-          "InvoiceNow heeft vermeldingen voor\nfacturen en creditnota’s; InvoiceNow SG is"
-        ]
-      },
-      "ended": true,
-      "range206": true,
-      "keyboard": true,
-      "errors": []
-    },
-    {
       "country": "argentina",
       "locale": "nl",
       "metadata": {
@@ -8713,8 +7993,8 @@
         "cues": 10
       },
       "playback": {
-        "time": 0.302512,
-        "frames": 13
+        "time": 0.307573,
+        "frames": 14
       },
       "seek": {
         "time": 22.816666,
@@ -8733,6 +8013,66 @@
       "errors": []
     },
     {
+      "country": "australia",
+      "locale": "nl",
+      "metadata": {
+        "duration": 47.966667,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 10
+      },
+      "playback": {
+        "time": 0.309799,
+        "frames": 14
+      },
+      "seek": {
+        "time": 23.983333,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "PINT A-NZ heeft regelvermeldingen voor\nfacturen en creditnota’s die met"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "austria",
+      "locale": "nl",
+      "metadata": {
+        "duration": 43.966667,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 9
+      },
+      "playback": {
+        "time": 0.304837,
+        "frames": 13
+      },
+      "seek": {
+        "time": 21.983333,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "ebInterface 4.3, 5.0, 6.0 en 6.1 hebben\nafzonderlijke vermeldingen. Stem de"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
       "country": "brazil",
       "locale": "nl",
       "metadata": {
@@ -8743,8 +8083,8 @@
         "cues": 10
       },
       "playback": {
-        "time": 0.30282,
-        "frames": 13
+        "time": 0.308335,
+        "frames": 14
       },
       "seek": {
         "time": 27.166666,
@@ -8773,8 +8113,8 @@
         "cues": 10
       },
       "playback": {
-        "time": 0.305875,
-        "frames": 14
+        "time": 0.303434,
+        "frames": 13
       },
       "seek": {
         "time": 21.966666,
@@ -8793,6 +8133,66 @@
       "errors": []
     },
     {
+      "country": "china",
+      "locale": "nl",
+      "metadata": {
+        "duration": 52.9,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 10
+      },
+      "playback": {
+        "time": 0.308809,
+        "frames": 14
+      },
+      "seek": {
+        "time": 26.45,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "De catalogus bevat Fapiao, E-Fapiao,\nGeneral VAT Invoice en Special VAT"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "colombia",
+      "locale": "nl",
+      "metadata": {
+        "duration": 49.766667,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 10
+      },
+      "playback": {
+        "time": 0.303451,
+        "frames": 13
+      },
+      "seek": {
+        "time": 24.883333,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "Colombia Factura Electronica en Documento\nSoporte hebben afzonderlijke vermeldingen."
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
       "country": "costa-rica",
       "locale": "nl",
       "metadata": {
@@ -8803,7 +8203,7 @@
         "cues": 10
       },
       "playback": {
-        "time": 0.303229,
+        "time": 0.303286,
         "frames": 13
       },
       "seek": {
@@ -8823,28 +8223,28 @@
       "errors": []
     },
     {
-      "country": "colombia",
+      "country": "denmark",
       "locale": "nl",
       "metadata": {
-        "duration": 49.766667,
+        "duration": 40.466667,
         "width": 1280,
         "height": 720,
         "language": "nl",
-        "cues": 10
+        "cues": 8
       },
       "playback": {
-        "time": 0.309895,
-        "frames": 14
+        "time": 0.305221,
+        "frames": 13
       },
       "seek": {
-        "time": 24.883333,
+        "time": 20.233333,
         "ready": 4
       },
       "mobile": {
         "scroll": 380,
         "width": 380,
         "captions": [
-          "Colombia Factura Electronica en Documento\nSoporte hebben afzonderlijke vermeldingen."
+          "OIOUBL 2.1 is de vermelde Deense variant.\nOIOUBL en Peppol BIS zijn verschillende"
         ]
       },
       "ended": true,
@@ -8863,7 +8263,7 @@
         "cues": 11
       },
       "playback": {
-        "time": 0.315772,
+        "time": 0.307419,
         "frames": 14
       },
       "seek": {
@@ -8883,6 +8283,336 @@
       "errors": []
     },
     {
+      "country": "finland",
+      "locale": "nl",
+      "metadata": {
+        "duration": 48.433333,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 9
+      },
+      "playback": {
+        "time": 0.30484,
+        "frames": 13
+      },
+      "seek": {
+        "time": 24.216666,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "Finvoice 1.3, 2.0, 2.01 en 3.0 hebben\nafzonderlijke vermeldingen. TEAPPSXML is"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "france",
+      "locale": "nl",
+      "metadata": {
+        "duration": 52.9,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 10
+      },
+      "playback": {
+        "time": 0.307674,
+        "frames": 14
+      },
+      "seek": {
+        "time": 26.45,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "Factur-X heeft algemene en\nversiespecifieke vermeldingen, waaronder"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "germany",
+      "locale": "nl",
+      "metadata": {
+        "duration": 52.9,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 10
+      },
+      "playback": {
+        "time": 0.304417,
+        "frames": 14
+      },
+      "seek": {
+        "time": 26.45,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "XRechnung heeft dertien versielabels van\n1.0 tot 3.0.2, elk in CII en UBL. ZUGFeRD"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "india",
+      "locale": "nl",
+      "metadata": {
+        "duration": 47.8,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 9
+      },
+      "playback": {
+        "time": 0.309675,
+        "frames": 14
+      },
+      "seek": {
+        "time": 23.9,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "India GST E-Invoice en GST CreditNote\nhebben afzonderlijke vermeldingen. De"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "indonesia",
+      "locale": "nl",
+      "metadata": {
+        "duration": 42.5,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 9
+      },
+      "playback": {
+        "time": 0.308637,
+        "frames": 14
+      },
+      "seek": {
+        "time": 21.25,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "Indonesia E-Faktur is de geconfigureerde\nfamilie. De vermelding geeft geen"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "international",
+      "locale": "nl",
+      "metadata": {
+        "duration": 54.666667,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 10
+      },
+      "playback": {
+        "time": 0.303439,
+        "frames": 13
+      },
+      "seek": {
+        "time": 27.333333,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "Internationale vermeldingen omvatten\nPeppol BIS 3.0, UBL 2.1, zuivere CII, EDI,"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "italy",
+      "locale": "nl",
+      "metadata": {
+        "duration": 42.866667,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 9
+      },
+      "playback": {
+        "time": 0.30667,
+        "frames": 14
+      },
+      "seek": {
+        "time": 21.433333,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "FatturaPA is de geconfigureerde Italiaanse\nfamilie. Het familielabel certificeert"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "japan",
+      "locale": "nl",
+      "metadata": {
+        "duration": 43.8,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 9
+      },
+      "playback": {
+        "time": 0.30756,
+        "frames": 14
+      },
+      "seek": {
+        "time": 21.9,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "JP PINT en JP PINT Self-Billing zijn\nafzonderlijke vermeldingen. Selfbilling is"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "kazakhstan",
+      "locale": "nl",
+      "metadata": {
+        "duration": 41.533333,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 9
+      },
+      "playback": {
+        "time": 0.309359,
+        "frames": 14
+      },
+      "seek": {
+        "time": 20.766666,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "Kazakhstan ESF is de geconfigureerde\nfamilie. Het label vermeldt geen versie."
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "korea",
+      "locale": "nl",
+      "metadata": {
+        "duration": 44.3,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 9
+      },
+      "playback": {
+        "time": 0.307602,
+        "frames": 14
+      },
+      "seek": {
+        "time": 22.15,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "Korea E-Tax Invoice en Korea NTS zijn\ngeconfigureerde families. De labels noemen"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "malaysia",
+      "locale": "nl",
+      "metadata": {
+        "duration": 45.9,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 10
+      },
+      "playback": {
+        "time": 0.309886,
+        "frames": 14
+      },
+      "seek": {
+        "time": 22.95,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "MyInvois heeft regelvermeldingen voor\nfacturen en creditnota’s. De onderzochte"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
       "country": "mexico",
       "locale": "nl",
       "metadata": {
@@ -8893,7 +8623,7 @@
         "cues": 10
       },
       "playback": {
-        "time": 0.309879,
+        "time": 0.310519,
         "frames": 14
       },
       "seek": {
@@ -8913,6 +8643,96 @@
       "errors": []
     },
     {
+      "country": "netherlands",
+      "locale": "nl",
+      "metadata": {
+        "duration": 44.3,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 9
+      },
+      "playback": {
+        "time": 0.310747,
+        "frames": 14
+      },
+      "seek": {
+        "time": 22.15,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "SI-UBL 2.0 heeft een eigen vermelding. Een\nUBL-bestand is niet automatisch SI-UBL"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "new-zealand",
+      "locale": "nl",
+      "metadata": {
+        "duration": 48.7,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 10
+      },
+      "playback": {
+        "time": 0.306537,
+        "frames": 13
+      },
+      "seek": {
+        "time": 24.35,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "PINT A-NZ heeft regelvermeldingen voor\nfacturen en creditnota’s die met Australië"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "norway",
+      "locale": "nl",
+      "metadata": {
+        "duration": 43.233333,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 9
+      },
+      "playback": {
+        "time": 0.311997,
+        "frames": 14
+      },
+      "seek": {
+        "time": 21.616666,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "EHF Invoice 3.0 staat vermeld naast EHF\nOrder, Order Response en Despatch Advice."
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
       "country": "paraguay",
       "locale": "nl",
       "metadata": {
@@ -8923,7 +8743,7 @@
         "cues": 10
       },
       "playback": {
-        "time": 0.310126,
+        "time": 0.306883,
         "frames": 14
       },
       "seek": {
@@ -8953,7 +8773,7 @@
         "cues": 10
       },
       "playback": {
-        "time": 0.319689,
+        "time": 0.306828,
         "frames": 14
       },
       "seek": {
@@ -8973,28 +8793,28 @@
       "errors": []
     },
     {
-      "country": "uruguay",
+      "country": "philippines",
       "locale": "nl",
       "metadata": {
-        "duration": 52.166667,
+        "duration": 44.166667,
         "width": 1280,
         "height": 720,
         "language": "nl",
-        "cues": 10
+        "cues": 9
       },
       "playback": {
-        "time": 0.302729,
-        "frames": 13
+        "time": 0.308522,
+        "frames": 14
       },
       "seek": {
-        "time": 26.083333,
+        "time": 22.083333,
         "ready": 4
       },
       "mobile": {
         "scroll": 380,
         "width": 380,
         "captions": [
-          "Uruguay CFE heeft algemene vermeldingen en\nvermeldingen voor 24 en 25. E-Factura en"
+          "Philippines EIS is de geconfigureerde\nfamilie. Het label noemt geen versie."
         ]
       },
       "ended": true,
@@ -9003,28 +8823,28 @@
       "errors": []
     },
     {
-      "country": "kazakhstan",
+      "country": "poland",
       "locale": "nl",
       "metadata": {
-        "duration": 41.533333,
+        "duration": 44.633333,
         "width": 1280,
         "height": 720,
         "language": "nl",
         "cues": 9
       },
       "playback": {
-        "time": 0.304034,
+        "time": 0.304669,
         "frames": 13
       },
       "seek": {
-        "time": 20.766666,
+        "time": 22.316666,
         "ready": 4
       },
       "mobile": {
         "scroll": 380,
         "width": 380,
         "captions": [
-          "Kazakhstan ESF is de geconfigureerde\nfamilie. Het label vermeldt geen versie."
+          "KSeF heeft algemene, FA2- en\nFA3-vermeldingen. FA2 en FA3 gebruiken"
         ]
       },
       "ended": true,
@@ -9043,7 +8863,7 @@
         "cues": 10
       },
       "playback": {
-        "time": 0.304978,
+        "time": 0.309703,
         "frames": 14
       },
       "seek": {
@@ -9063,6 +8883,186 @@
       "errors": []
     },
     {
+      "country": "singapore",
+      "locale": "nl",
+      "metadata": {
+        "duration": 50.8,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 10
+      },
+      "playback": {
+        "time": 0.310142,
+        "frames": 14
+      },
+      "seek": {
+        "time": 25.4,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "InvoiceNow heeft vermeldingen voor\nfacturen en creditnota’s; InvoiceNow SG is"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "slovenia",
+      "locale": "nl",
+      "metadata": {
+        "duration": 42.633333,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 9
+      },
+      "playback": {
+        "time": 0.310138,
+        "frames": 14
+      },
+      "seek": {
+        "time": 21.316666,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "e-SLOG 1.6 en 2.0 hebben afzonderlijke\nvermeldingen. De twee versies hebben"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "spain",
+      "locale": "nl",
+      "metadata": {
+        "duration": 47.233333,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 9
+      },
+      "playback": {
+        "time": 0.310227,
+        "frames": 14
+      },
+      "seek": {
+        "time": 23.616666,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "Facturae heeft algemene vermeldingen en\nvermeldingen voor 3.2, 3.2.1 en 3.2.2."
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "sweden",
+      "locale": "nl",
+      "metadata": {
+        "duration": 39.6,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 9
+      },
+      "playback": {
+        "time": 0.302554,
+        "frames": 13
+      },
+      "seek": {
+        "time": 19.8,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "Svefaktura 1.0 is de vermelde Zweedse\nvariant. Houd deze oudere familie"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "taiwan",
+      "locale": "nl",
+      "metadata": {
+        "duration": 41.433333,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 9
+      },
+      "playback": {
+        "time": 0.311503,
+        "frames": 14
+      },
+      "seek": {
+        "time": 20.716666,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "Taiwan eGUI is de geconfigureerde familie.\nHet familielabel certificeert niet elke"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
+      "country": "thailand",
+      "locale": "nl",
+      "metadata": {
+        "duration": 44.433333,
+        "width": 1280,
+        "height": 720,
+        "language": "nl",
+        "cues": 9
+      },
+      "playback": {
+        "time": 0.313935,
+        "frames": 14
+      },
+      "seek": {
+        "time": 22.216666,
+        "ready": 4
+      },
+      "mobile": {
+        "scroll": 380,
+        "width": 380,
+        "captions": [
+          "Thailand E-Tax Invoice is de\ngeconfigureerde familie. Het label noemt"
+        ]
+      },
+      "ended": true,
+      "range206": true,
+      "keyboard": true,
+      "errors": []
+    },
+    {
       "country": "turkey",
       "locale": "nl",
       "metadata": {
@@ -9073,7 +9073,7 @@
         "cues": 10
       },
       "playback": {
-        "time": 0.303205,
+        "time": 0.305592,
         "frames": 13
       },
       "seek": {
@@ -9103,8 +9103,8 @@
         "cues": 9
       },
       "playback": {
-        "time": 0.302257,
-        "frames": 13
+        "time": 0.305719,
+        "frames": 14
       },
       "seek": {
         "time": 22.35,
@@ -9123,28 +9123,28 @@
       "errors": []
     },
     {
-      "country": "international",
+      "country": "uruguay",
       "locale": "nl",
       "metadata": {
-        "duration": 54.666667,
+        "duration": 52.166667,
         "width": 1280,
         "height": 720,
         "language": "nl",
         "cues": 10
       },
       "playback": {
-        "time": 0.322238,
+        "time": 0.306708,
         "frames": 14
       },
       "seek": {
-        "time": 27.333333,
+        "time": 26.083333,
         "ready": 4
       },
       "mobile": {
         "scroll": 380,
         "width": 380,
         "captions": [
-          "Internationale vermeldingen omvatten\nPeppol BIS 3.0, UBL 2.1, zuivere CII, EDI,"
+          "Uruguay CFE heeft algemene vermeldingen en\nvermeldingen voor 24 en 25. E-Factura en"
         ]
       },
       "ended": true,
@@ -9160,5 +9160,6 @@
   "visual_review": "All 40 screenshots and all three scenes of 39 available films inspected; passed. Vietnam film unavailable.",
   "listening_review": "Not performed; no acoustic or native-speaker pronunciation approval.",
   "publication": "Documentation attachments in draft Git PR; no CDN upload or runtime deployment.",
-  "pending_reason": "Ambiguous prior provider submit without request ID; user exception requested. No repeat paid submit performed."
+  "pending_reason": "Ambiguous prior provider submit without request ID; user exception requested. No repeat paid submit performed.",
+  "browser_target": "Actual documentation attachments via media/edocs-country-support/review.html"
 }

@@ -4,6 +4,12 @@ description: DocBits 对印度 GST 电子发票的支持
 
 # 🇮🇳 印度 GST 电子发票
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。 [印度](countries/india.md). 文档所述的适配器处理 SignedInvoice XML。不要假定原始 IRP JSON、二维码图片或扫描 PDF 使用相同的提取路径。
+{% endhint %}
+
 | 属性                 | 值                                                 |
 | -------------------- | -------------------------------------------------- |
 | **国家 / 地区**      | 印度                                              |

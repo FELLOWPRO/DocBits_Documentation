@@ -4,6 +4,12 @@ description: Suporte a documentos eletrônicos FACTURX 1.0.07.2 - ZUGFERD 2.3.2 
 
 # 🇫🇷 FACTURX 1.0.07.2 - ZUGFERD 2.3.2
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [França](countries/france.md). O marcador XML 1p0 e Factur-X XMP Version 1.0 não identificam uma edição da publicação. Mantenha a designação genérica quando a edição for desconhecida.
+{% endhint %}
+
 | Propriedade | Valor |
 | --- | --- |
 | **País / Região** | França / Alemanha |

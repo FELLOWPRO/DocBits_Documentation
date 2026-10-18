@@ -4,6 +4,12 @@ description: Obsługa dokumentów elektronicznych EHF INVOICE 3.0 w DocBits
 
 # 🇳🇴 EHF INVOICE 3.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Norwegia](countries/norway.md). Wybierz mapowanie dla rzeczywistego dokumentu biznesowego. Zamówienie ani awizo wysyłki nie są fakturą.
+{% endhint %}
+
 | Właściwość           | Wartość                                           |
 | -------------------- | ------------------------------------------------- |
 | **Kraj / Region**    | Norwegia                                          |

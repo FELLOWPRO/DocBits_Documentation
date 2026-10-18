@@ -4,6 +4,12 @@ description: Suporte a documentos eletrônicos Denmark OIOUBL 2.1 no DocBits
 
 # 🇩🇰 DENMARK OIOUBL
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [Dinamarca](countries/denmark.md). OIOUBL e Peppol BIS são perfis distintos. A sintaxe UBL, por si só, não identifica o perfil nacional.
+{% endhint %}
+
 | Propriedade | Valor |
 | --- | --- |
 | **País / Região** | Dinamarca |

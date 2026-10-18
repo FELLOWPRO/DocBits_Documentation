@@ -4,6 +4,12 @@ description: Obsługa dokumentu elektronicznego MEXICO CFDI 3.3 w DocBits
 
 # 🇲🇽 MEXICO CFDI 3.3
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Meksyk](countries/mexico.md). Sprawdź przestrzeń nazw, wersję i TipoDeComprobante. Sama ujemna kwota nie identyfikuje noty kredytowej; parsowanie nie certyfikuje zatwierdzenia SAT.
+{% endhint %}
+
 | Właściwość           | Wartość                                            |
 | -------------------- | -------------------------------------------------- |
 | **Kraj / Region**    | Meksyk                                             |

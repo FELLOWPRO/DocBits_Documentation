@@ -4,6 +4,12 @@ description: "DocBits 中对乌拉圭 E-NOTA CREDITO 电子文档的支持"
 
 # 🇺🇾 乌拉圭 E-NOTA CREDITO
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。 [乌拉圭](countries/uruguay.md). 在所检查的状态中，贷项通知单条目缺少专用提取组件包。请确认 CFE 版本，以及实际生效的发票或贷项通知单映射。
+{% endhint %}
+
 | 属性                 | 值                              |
 | -------------------- | ------------------------------- |
 | **国家 / 地区**       | 乌拉圭                          |

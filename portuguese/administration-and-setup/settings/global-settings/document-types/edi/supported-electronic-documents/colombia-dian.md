@@ -4,6 +4,12 @@ description: Suporte a documentos eletrônicos DIAN da Colômbia no DocBits (Fac
 
 # 🇨🇴 Colômbia DIAN
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [Colômbia](countries/colombia.md). A entrada de classificação de notas de crédito não tem um conjunto de extração dedicado no estado examinado. Confirme o mapeamento efetivo, em vez de deduzir o suporte a partir da entrada de faturas.
+{% endhint %}
+
 | Propriedade | Valor |
 |----------|-------|
 | **País / Região** | Colombia |

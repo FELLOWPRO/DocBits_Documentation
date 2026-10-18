@@ -4,6 +4,12 @@ description: Suporte para documentos eletrônicos TAIWAN EGUI no DocBits
 
 # 🇹🇼 TAIWAN EGUI
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [Taiwan](countries/taiwan.md). A designação da família não certifica todas as edições MIG. Verifique o esquema XML real e teste faturas eletrónicas representativas.
+{% endhint %}
+
 | Propriedade          | Valor                                        |
 | -------------------- | -------------------------------------------- |
 | **País / Região**    | Taiwan                                       |

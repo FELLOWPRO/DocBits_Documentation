@@ -4,6 +4,12 @@ description: “INDONESIA E-FAKTUR” 在 DocBits 中的电子文档支持
 
 # 🇮🇩 印度尼西亚 E-FAKTUR
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。 [印度尼西亚](countries/indonesia.md). 条目未注明发布版本号。请确认实际 XML 数据载荷；纸质发票或二维码图片不能证明 XML 支持情况。
+{% endhint %}
+
 | 属性                 | 值                                         |
 | -------------------- | ------------------------------------------ |
 | **国家 / 地区**      | 印度尼西亚                                  |

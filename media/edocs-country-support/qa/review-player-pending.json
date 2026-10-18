@@ -1,0 +1,42 @@
+[
+  {
+    "locale": "nl",
+    "country": "vietnam",
+    "missingMediaRequested": false,
+    "localizedMessage": "Deze landvideo wordt nog voorbereid.",
+    "countries": 40,
+    "overflow": false,
+    "errors": [],
+    "failures": []
+  },
+  {
+    "locale": "pl",
+    "country": "vietnam",
+    "missingMediaRequested": false,
+    "localizedMessage": "Film dla tego kraju jest w przygotowaniu.",
+    "countries": 40,
+    "overflow": false,
+    "errors": [],
+    "failures": []
+  },
+  {
+    "locale": "pt",
+    "country": "vietnam",
+    "missingMediaRequested": false,
+    "localizedMessage": "O vídeo deste país está em preparação.",
+    "countries": 40,
+    "overflow": false,
+    "errors": [],
+    "failures": []
+  },
+  {
+    "locale": "zh",
+    "country": "vietnam",
+    "missingMediaRequested": false,
+    "localizedMessage": "该国家或地区的视频仍在制作中。",
+    "countries": 40,
+    "overflow": false,
+    "errors": [],
+    "failures": []
+  }
+]

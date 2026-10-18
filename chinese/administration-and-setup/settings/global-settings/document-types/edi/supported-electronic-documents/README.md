@@ -1,371 +1,85 @@
 ---
-description: >-
-  DocBits 在 30 多个国家/地区支持的电子文档标准完整列表
+description: "在测试文档处理之前，先确定已配置的 eDocs 格式系列、语法、版本和业务规范。"
 ---
 
-# 支持的电子文档
+# eDocs 格式、版本和国家指南
 
-DocBits 支持 **120 多种电子发票和文档标准**，覆盖 **30 多个国家/地区**。系统会自动检测并解析每种格式，提取其中的字段，从而实现无缝的文档处理。
-
-## 电子文档在 DocBits 中的工作方式
-
-1. **上传** — 上传 XML/EDI 文件，或通过 API/电子邮件接收文件
-2. **自动检测** — DocBits 识别确切的标准和版本
-3. **预览** — 生成便于阅读的 HTML 预览
-4. **字段提取** — 提取关键字段（发票编号、金额、行项目）
-5. **验证和导出** — 验证数据并将其导出到 ERP 系统
+从原始文档和对应的国家指南开始检查。仅凭国家名称无法确定文件格式。版本标识、XML 语法和业务规范描述的是不同的内容。
 
 {% hint style="info" %}
-有关详细配置，请参阅 [EDI 设置](../)。有关 Peppol、XRechnung 和 ZUGFeRD 的深入介绍，请参阅下方的专门页面。
+这些表格记录了 2026 年 10 月 17 日对开发环境目录及相应处理代码的检查结果。它们说明有哪些规则和配置组件可用，并不代表对所有文件、法律要求或生产部署的认证。组织配置可以覆盖默认规则。
 {% endhint %}
 
-## 快速链接
-
-| 主题                         | 链接                                                                         |
-| ---------------------------- | ---------------------------------------------------------------------------- |
-| EDI 概览                     | [EDI 设置](../)                                                              |
-| XRechnung（所有版本）        | [XRechnung](../xrechnung/)                                                   |
-| ZUGFeRD / Factur-X           | [ZUGFeRD](../zugferd/)                                                       |
-| Peppol BIS 3.0               | [Peppol BIS Billing](../peppol-bis-billing-3.0)                              |
-| 电子发票标准概览             | [当前支持的标准](../currently-supported-e-invoice-standards/)                 |
-
-***
-
-## 欧洲
-
-<figure><img src="../../../../../../.gitbook/assets/edocs-infographic-europe.png" alt="DocBits 支持的欧洲电子文档标准"><figcaption><p>欧洲电子发票标准概览</p></figcaption></figure>
-
-### 🇩🇪 德国
-
-<figure><img src="../../../../../../.gitbook/assets/edocs-infographic-germany-xrechnung.png" alt="DocBits 支持的 XRechnung 版本"><figcaption><p>XRechnung — 全部 26 个版本（CII &#x26; UBL）</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/edocs-infographic-germany-zugferd.png" alt="DocBits 支持的 ZUGFeRD 和 Factur-X 版本"><figcaption><p>ZUGFeRD / Factur-X — 所有版本</p></figcaption></figure>
-
-### 🇦🇹 奥地利
-
-| 标准                   | 页面                                                  |
-| ---------------------- | ----------------------------------------------------- |
-| ebInterface（概览）    | [AUSTRIA EBINTERFACE](austria-ebinterface.md)         |
-| ebInterface 6.0        | [AUSTRIA EBINTERFACE 6.0](austria-ebinterface-6-0.md) |
-| ebInterface 6.1        | [AUSTRIA EBINTERFACE 6.1](austria-ebinterface-6-1.md) |
-
-### 🇩🇰 丹麦
-
-| 标准              | 页面                                |
-| ----------------- | ----------------------------------- |
-| OIOUBL（概览）    | [DENMARK OIOUBL](denmark-oioubl.md) |
-| OIOUBL 2.1        | [OIOUBL 2.1](oioubl-2-1.md)         |
-
-### 🇫🇮 芬兰
-
-| 标准      | 页面                              |
-| --------- | --------------------------------- |
-| Finvoice 1.3  | [FINVOICE 1.3](finvoice-1-3.md)   |
-| Finvoice 2.0  | [FINVOICE 2.0](finvoice-2-0.md)   |
-| Finvoice 2.01 | [FINVOICE 2.01](finvoice-2-01.md) |
-| Finvoice 3.0  | [FINVOICE 3.0](finvoice-3-0.md)   |
-| TEAPPSXML     | [TEAPPSXML](teappsxml.md)         |
-
-### 🇫🇷 法国
-
-| 标准                               | 页面                                                  |
-| ---------------------------------- | ----------------------------------------------------- |
-| Factur-X（通用）                  | [FACTURX](facturx.md)                                 |
-| Factur-X 1.0.05 / ZUGFeRD 2.1     | [FACTURX 1.0.05](facturx-1-0-05-zugferd-2-1.md)       |
-| Factur-X 1.0.07.2 / ZUGFeRD 2.3.2 | [FACTURX 1.0.07.2](facturx-1-0-07-2-zugferd-2-3-2.md) |
-
-### 🇩🇪 德国
-
-| 标准                            | 页面                                                      |
-| ------------------------------- | --------------------------------------------------------- |
-| XRechnung 1.0–3.0.2（CII & UBL） | [26 个版本](xrechnung-1-0-cii.md) — 查看下方完整列表 |
-| ZUGFeRD 1.0–2.3.2               | [7 个版本](zugferd-1-0.md) — 查看下方完整列表        |
-
-<details>
-
-<summary>全部 26 个 XRechnung 版本</summary>
-
-| 版本    | CII                           | UBL                           |
-| ------- | ----------------------------- | ----------------------------- |
-| 1.0     | [CII](xrechnung-1-0-cii.md)   | [UBL](xrechnung-1-0-ubl.md)   |
-| 1.1     | [CII](xrechnung-1-1-cii.md)   | [UBL](xrechnung-1-1-ubl.md)   |
-| 1.2     | [CII](xrechnung-1-2-cii.md)   | [UBL](xrechnung-1-2-ubl.md)   |
-| 1.2.1   | [CII](xrechnung-1-2-1-cii.md) | [UBL](xrechnung-1-2-1-ubl.md) |
-| 1.2.2   | [CII](xrechnung-1-2-2-cii.md) | [UBL](xrechnung-1-2-2-ubl.md) |
-| 2.0     | [CII](xrechnung-2-0-cii.md)   | [UBL](xrechnung-2-0-ubl.md)   |
-| 2.0.1   | [CII](xrechnung-2-0-1-cii.md) | [UBL](xrechnung-2-0-1-ubl.md) |
-| 2.1     | [CII](xrechnung-2-1-cii.md)   | [UBL](xrechnung-2-1-ubl.md)   |
-| 2.2     | [CII](xrechnung-2-2-cii.md)   | [UBL](xrechnung-2-2-ubl.md)   |
-| 2.3     | [CII](xrechnung-2-3-cii.md)   | [UBL](xrechnung-2-3-ubl.md)   |
-| 3.0     | [CII](xrechnung-3-0-cii.md)   | [UBL](xrechnung-3-0-ubl.md)   |
-| 3.0.1   | [CII](xrechnung-3-0-1-cii.md) | [UBL](xrechnung-3-0-1-ubl.md) |
-| 3.0.2   | [CII](xrechnung-3-0-2-cii.md) | [UBL](xrechnung-3-0-2-ubl.md) |
-
-</details>
-
-<details>
-
-<summary>全部 7 个 ZUGFeRD 版本</summary>
-
-| 版本                   | 页面                                            |
-| ---------------------- | ----------------------------------------------- |
-| ZUGFeRD 1.0            | [ZUGFERD 1.0](zugferd-1-0.md)                   |
-| ZUGFeRD 1.0 Basic      | [ZUGFERD 1.0 BASIC](zugferd-1-0-basic.md)       |
-| ZUGFeRD 1.0 Comfort    | [ZUGFERD 1.0 COMFORT](zugferd-1-0-comfort.md)   |
-| ZUGFeRD 1.0 Extended   | [ZUGFERD 1.0 EXTENDED](zugferd-1-0-extended.md) |
-| ZUGFeRD 2.2            | [ZUGFERD 2.2](zugferd-2-2.md)                   |
-| ZUGFeRD 2.3            | [ZUGFERD 2.3](zugferd-2-3.md)                   |
-| ZUGFeRD 2.3.2          | [ZUGFERD 2.3.2](zugferd-2-3-2.md)               |
-
-</details>
-
-### 🇮🇹 意大利
-
-| 标准      | 页面                      |
-| --------- | ------------------------- |
-| FatturaPA | [FATTURAPA](fatturapa.md) |
-
-### 🇳🇱 荷兰
-
-| 标准       | 页面                        |
-| ---------- | --------------------------- |
-| SI-UBL 2.0 | [SI-UBL 2.0](si-ubl-2-0.md) |
-
-### 🇳🇴 挪威
-
-| 标准            | 页面                                  |
-| --------------- | ------------------------------------- |
-| EHF Invoice 3.0 | [EHF INVOICE 3.0](ehf-invoice-3-0.md) |
-
-### 🇵🇱 波兰
-
-| 标准     | 页面                    |
-| -------- | ----------------------- |
-| KSeF     | [KSEF](ksef.md)         |
-| KSeF FA2 | [KSEF FA2](ksef-fa2.md) |
-| KSeF FA3 | [KSEF FA3](ksef-fa3.md) |
-
-### 🇪🇸 西班牙
-
-| 标准                 | 页面                                |
-| -------------------- | ----------------------------------- |
-| Facturae（概览）     | [FACTURAE](facturae.md)             |
-| Facturae 3.2         | [FACTURAE 3.2](facturae-3-2.md)     |
-| Facturae 3.2.1       | [FACTURAE 3.2.1](facturae-3-2-1.md) |
-| Facturae 3.2.2       | [FACTURAE 3.2.2](facturae-3-2-2.md) |
-
-### 🇸🇪 瑞典
-
-| 标准          | 页面                                |
-| ------------- | ----------------------------------- |
-| Svefaktura 1.0 | [SVEFAKTURA 1.0](svefaktura-1-0.md) |
-
-***
-
-## 亚太地区
-
-<figure><img src="../../../../../../.gitbook/assets/edocs-infographic-apac.png" alt="DocBits 支持的亚太地区电子文档标准"><figcaption><p>亚太地区电子发票标准概览</p></figcaption></figure>
-
-### 🇦🇺 澳大利亚 / 🇳🇿 新西兰
-
-| 标准                   | 页面                                                |
-| ---------------------- | --------------------------------------------------- |
-| AUNZ PINT              | [AUNZ PINT](aunz-pint.md)                           |
-| AUNZ PINT Self-Billing | [AUNZ PINT SELF-BILLING](aunz-pint-self-billing.md) |
-| PINT A-NZ              | [PINT A-NZ](pint-a-nz.md)                           |
-
-### 🇮🇳 印度
-
-| 标准          | 页面                                          |
-| ------------- | --------------------------------------------- |
-| GST 电子发票 | [INDIA GST E-INVOICE](india-gst-e-invoice.md) |
-
-### 🇮🇩 印度尼西亚
-
-| 标准    | 页面                                        |
-| ------- | ------------------------------------------- |
-| E-Faktur | [INDONESIA E-FAKTUR](indonesia-e-faktur.md) |
-
-### 🇨🇳 中国
-
-| 标准             | 页面                            |
-| ---------------- | ------------------------------- |
-| Fapiao（概览）   | [CHINA FAPIAO](china-fapiao.md) |
-
-### 🇯🇵 日本
-
-| 标准                 | 页面                                            |
-| -------------------- | ----------------------------------------------- |
-| JP PINT              | [JP PINT](jp-pint.md)                           |
-| JP PINT Self-Billing | [JP PINT SELF-BILLING](jp-pint-self-billing.md) |
-
-### 🇰🇷 韩国
-
-| 标准          | 页面                                          |
-| ------------- | --------------------------------------------- |
-| E-Tax Invoice | [KOREA E-TAX INVOICE](korea-e-tax-invoice.md) |
-| NTS           | [KOREA NTS](korea-nts.md)                     |
-
-### 🇲🇾 马来西亚
-
-| 标准    | 页面                    |
-| ------- | ----------------------- |
-| MyInvois | [MYINVOIS](myinvois.md) |
-
-### 🇵🇭 菲律宾
-
-| 标准 | 页面                                  |
-| ---- | ------------------------------------- |
-| EIS  | [PHILIPPINES EIS](philippines-eis.md) |
-
-### 🇸🇬 新加坡
-
-| 标准          | 页面                              |
-| ------------- | --------------------------------- |
-| InvoiceNow    | [INVOICENOW](invoicenow.md)       |
-| InvoiceNow SG | [INVOICENOW SG](invoicenow-sg.md) |
-
-### 🇹🇼 台湾
-
-| 标准 | 页面                          |
-| ---- | ----------------------------- |
-| eGUI | [TAIWAN EGUI](taiwan-egui.md) |
-
-### 🇹🇭 泰国
-
-| 标准          | 页面                                                |
-| ------------- | --------------------------------------------------- |
-| E-Tax Invoice | [THAILAND E-TAX INVOICE](thailand-e-tax-invoice.md) |
-
-### 🇻🇳 越南
-
-| 标准       | 页面                                      |
-| ---------- | ----------------------------------------- |
-| E-Invoice | [VIETNAM E-INVOICE](vietnam-e-invoice.md) |
-
-***
-
-## 拉丁美洲
-
-<figure><img src="../../../../../../.gitbook/assets/edocs-infographic-latam.png" alt="DocBits 支持的拉丁美洲电子文档标准"><figcaption><p>拉丁美洲电子发票标准概览</p></figcaption></figure>
-
-### 🇦🇷 阿根廷
-
-| 标准                                   | 页面                                                              |
-| -------------------------------------- | ----------------------------------------------------------------- |
-| AFIP（Factura A）                     | [ARGENTINA AFIP](argentina-afip.md)                               |
-| 电子发票（其他所有类型）              | [ARGENTINA FACTURA ELECTRONICA](argentina-factura-electronica.md) |
-
-### 🇧🇷 巴西
-
-| 标准                                           | 页面                           |
-| ---------------------------------------------- | ------------------------------ |
-| NF-e（Nota Fiscal Eletrônica）                 | [BRAZIL NF-E](brazil-nfe.md)   |
-| NFC-e（Nota Fiscal de Consumidor Eletrônica）  | [BRAZIL NFC-E](brazil-nfce.md) |
-| CT-e（Conhecimento de Transporte Eletrônico）  | [BRAZIL CT-E](brazil-cte.md)   |
-| NFS-e（Nota Fiscal de Serviços Eletrônica）    | [BRAZIL NFS-E](brazil-nfse.md) |
-
-### 🇨🇱 智利
-
-| 标准 | 页面                      |
-| ---- | ------------------------- |
-| DTE  | [CHILE DTE](chile-dte.md) |
-
-### 🇨🇴 哥伦比亚
-
-| 标准 | 页面                              |
-| ---- | --------------------------------- |
-| DIAN | [COLOMBIA DIAN](colombia-dian.md) |
-
-### 🇨🇷 哥斯达黎加
-
-| 标准             | 页面                        |
-| ---------------- | --------------------------- |
-| 电子发票         | [COSTA RICA](costa-rica.md) |
-
-### 🇪🇨 厄瓜多尔
-
-| 标准 | 页面                          |
-| ---- | ----------------------------- |
-| SRI  | [ECUADOR SRI](ecuador-sri.md) |
-
-### 🇲🇽 墨西哥
-
-| 标准    | 页面                                  |
-| ------- | ------------------------------------- |
-| CFDI 3.3 | [MEXICO CFDI 3.3](mexico-cfdi-3-3.md) |
-| CFDI 4.0 | [MEXICO CFDI 4.0](mexico-cfdi-4-0.md) |
-
-### 🇵🇾 巴拉圭
-
-| 标准      | 页面                                        |
-| --------- | ------------------------------------------- |
-| DTE       | [PARAGUAY DTE](paraguay-dte.md)             |
-| SIFEN     | [PARAGUAY SIFEN](paraguay-sifen.md)         |
-| SIFEN 150 | [PARAGUAY SIFEN 150](paraguay-sifen-150.md) |
-
-### 🇵🇪 秘鲁
-
-| 标准               | 页面                                                    |
-| ------------------ | ------------------------------------------------------- |
-| CPE                | [PERU CPE](peru-cpe.md)                                 |
-| CPE UBL 2.0        | [PERU CPE UBL 2.0](peru-cpe-ubl-2-0.md)                 |
-| CPE UBL 2.1        | [PERU CPE UBL 2.1](peru-cpe-ubl-2-1.md)                 |
-| 电子发票           | [PERU FACTURA ELECTRONICA](peru-factura-electronica.md) |
-
-### 🇺🇾 乌拉圭
-
-| 标准            | 页面                                                |
-| --------------- | --------------------------------------------------- |
-| CFE             | [URUGUAY CFE](uruguay-cfe.md)                       |
-| CFE 24          | [URUGUAY CFE 24](uruguay-cfe-24.md)                 |
-| CFE 25          | [URUGUAY CFE 25](uruguay-cfe-25.md)                 |
-| E-Factura       | [URUGUAY E-FACTURA](uruguay-e-factura.md)           |
-| E-Nota Credito  | [URUGUAY E-NOTA CREDITO](uruguay-e-nota-credito.md) |
-
-***
-
-## 中东和中亚
-
-<figure><img src="../../../../../../.gitbook/assets/edocs-infographic-mena.png" alt="DocBits 支持的中东电子文档标准"><figcaption><p>中东和中亚电子发票标准概览</p></figcaption></figure>
-
-### 🇰🇿 哈萨克斯坦
-
-| 标准 | 页面                                |
-| ---- | ----------------------------------- |
-| ESF  | [KAZAKHSTAN ESF](kazakhstan-esf.md) |
-
-### 🇸🇦 沙特阿拉伯
-
-| 标准              | 页面                                      |
-| ----------------- | ----------------------------------------- |
-| ZATCA Fatoorah    | [ZATCA FATOORAH](zatca-fatoorah.md)       |
-| ZATCA Reporting   | [ZATCA REPORTING](zatca-reporting.md)     |
-| ZATCA Simplified  | [ZATCA SIMPLIFIED](zatca-simplified.md)   |
-| ZATCA Tax Invoice | [ZATCA TAX INVOICE](zatca-tax-invoice.md) |
-
-### 🇹🇷 土耳其
-
-| 标准     | 页面                                  |
-| -------- | ------------------------------------- |
-| E-Arsiv  | [TURKEY E-ARSIV](turkey-e-arsiv.md)   |
-| E-Fatura | [TURKEY E-FATURA](turkey-e-fatura.md) |
-
-### 🇦🇪 阿联酋
-
-| 标准        | 页面                                  |
-| ----------- | ------------------------------------- |
-| VAT 发票    | [UAE VAT INVOICE](uae-vat-invoice.md) |
-
-***
-
-## 国际标准
-
-<figure><img src="../../../../../../.gitbook/assets/edocs-infographic-international.png" alt="DocBits 支持的国际电子文档标准"><figcaption><p>国际标准概览（Peppol、UBL、EDIFACT、SPS Commerce）</p></figcaption></figure>
-
-| 标准                   | 页面                                                |
-| ---------------------- | --------------------------------------------------- |
-| PEPPOL BIS 3.0         | [PEPPOL BIS 3.0](peppol-bis-3-0.md)                 |
-| UBL 2.1                | [UBL 2.1](ubl-2-1.md)                               |
-| INVOIC02（EDIFACT）    | [INVOIC02](invoic02.md)                             |
-| SPS Commerce RSX 7.7.4 | [SPS COMMERCE RSX 7.7.4](sps-commerce-rsx-7-7-4.md) |
+## 正确理解支持矩阵
+
+- 格式系列：电子文档格式，例如 XRechnung、Factur-X、KSeF 或 CFDI。
+- 语法：实际的数据载荷，例如 UBL XML、CII XML 或内嵌 XML 的 PDF。扫描 PDF、JSON 导出文件或二维码图片并不等同于 XML 数据载荷。
+- 版本：文档声明的发布版本或架构版本。通用的格式系列名称不能证明所有版本均受支持。
+- 业务规范：业务或数据要求的一个子集，例如 BASIC、EN16931、EXTENDED 或买方代开票。业务规范不是发布版本。
+- 规则与组件：分类、Transformation、Preview 和 Extraction Paths 相互独立。已配置的业务规范不一定有独立的分类规则。
+- 验证与传输：呈现文件或提取数据本身，不能验证所有法律规则、签名、税务核准或网络送达情况。
+
+## 国家指南
+
+| 国家 / 地区 | 格式系列和版本范围 | 目录检查结果 |
+| --- | --- | --- |
+| [奥地利](countries/austria.md) | ebInterface 4.3、5.0、6.0 和 6.1 各有独立条目。 | 已找到条目 |
+| [丹麦](countries/denmark.md) | OIOUBL 2.1 是明确列出的丹麦条目。 | 已找到条目 |
+| [芬兰](countries/finland.md) | Finvoice 1.3、2.0、2.01 和 3.0 各有独立条目。TEAPPSXML 属于另一个格式系列。 | 已找到条目 |
+| [法国](countries/france.md) | Factur-X 既有通用条目，也有具体发布版本的条目，包括 1.0.05、1.08 和 1.09。VRBL FR CIUS 1.0 为独立条目。 | 已找到条目 |
+| [德国](countries/germany.md) | XRechnung 从 1.0 到 3.0.2 共有十三个版本名称，每个版本均有 CII 和 UBL 条目。ZUGFeRD 包含早期业务规范，以及 2.5 的 CII 和 UBL 条目。 | 已找到条目 |
+| [意大利](countries/italy.md) | FatturaPA 是已配置的意大利格式系列。 | 已找到条目 |
+| [荷兰](countries/netherlands.md) | SI-UBL 2.0 有专用条目。 | 已找到条目 |
+| [挪威](countries/norway.md) | 目录列出了 EHF Invoice 3.0，以及 EHF Order、Order Response 和 Despatch Advice。 | 已找到条目 |
+| [波兰](countries/poland.md) | KSeF 有通用、FA2 和 FA3 条目。 | 已找到条目 |
+| [斯洛文尼亚](countries/slovenia.md) | e-SLOG 1.6 和 2.0 各有独立条目。 | 已找到条目 |
+| [西班牙](countries/spain.md) | Facturae 有通用、3.2、3.2.1 和 3.2.2 条目。 | 已找到条目 |
+| [瑞典](countries/sweden.md) | Svefaktura 1.0 是明确列出的瑞典条目。 | 已找到条目 |
+| [澳大利亚](countries/australia.md) | PINT A-NZ 有与新西兰共用的发票和贷项通知单规则条目。 | 已找到条目 |
+| [新西兰](countries/new-zealand.md) | PINT A-NZ 有与澳大利亚共用的发票和贷项通知单规则条目。 | 已找到条目 |
+| [印度](countries/india.md) | India GST E-Invoice 和 GST CreditNote 各有独立条目。 | 已找到条目 |
+| [印度尼西亚](countries/indonesia.md) | Indonesia E-Faktur 是已配置的格式系列。 | 已找到条目 |
+| [中国](countries/china.md) | 目录包含 Fapiao、E-Fapiao、General VAT Invoice 和 Special VAT Invoice。 | 已找到条目 |
+| [日本](countries/japan.md) | JP PINT 和 JP PINT Self-Billing 是独立条目。 | 已找到条目 |
+| [韩国](countries/korea.md) | Korea E-Tax Invoice 和 Korea NTS 是已配置的格式系列。 | 已找到条目 |
+| [马来西亚](countries/malaysia.md) | MyInvois 有发票和贷项通知单规则条目。 | 已找到条目 |
+| [菲律宾](countries/philippines.md) | Philippines EIS 是已配置的格式系列。 | 已找到条目 |
+| [新加坡](countries/singapore.md) | InvoiceNow 有发票和贷项通知单条目；InvoiceNow SG 是另一个已配置的名称。 | 已找到条目 |
+| [台湾](countries/taiwan.md) | Taiwan eGUI 是已配置的格式系列。 | 已找到条目 |
+| [泰国](countries/thailand.md) | Thailand E-Tax Invoice 是已配置的格式系列。 | 已找到条目 |
+| [越南](countries/vietnam.md) | Vietnam E-Invoice 是已配置的格式系列。 | 已找到条目 |
+| [阿根廷](countries/argentina.md) | Argentina AFIP 和 Factura Electronica 是已配置的名称。 | 已找到条目 |
+| [巴西](countries/brazil.md) | 巴西有 NF-e、NFC-e、CT-e、NFS-e 和 SPED NFS-e 条目。NFS-e 包含版本 1.00 和 2.00 至 2.04；SPED 包含 1.00.02 和 1.01。 | 已找到条目 |
+| [智利](countries/chile.md) | Chile DTE 有发票、贷项通知单和发货单条目。 | 已找到条目 |
+| [哥伦比亚](countries/colombia.md) | Colombia Factura Electronica 和 Documento Soporte 各有独立条目。 | 已找到条目 |
+| [哥斯达黎加](countries/costa-rica.md) | 较早的文档提到了哥斯达黎加，但在所检查的开发环境目录中未找到匹配的分类或配置条目。 | 尚未确认 |
+| [厄瓜多尔](countries/ecuador.md) | Ecuador SRI 有通用、1.0.0、1.1.0、2.0.0 和 2.1.0 条目。预扣税是独立的文档类型。 | 已找到条目 |
+| [墨西哥](countries/mexico.md) | Mexico CFDI 3.3 和 4.0 各有独立条目。 | 已找到条目 |
+| [巴拉圭](countries/paraguay.md) | Paraguay DTE、SIFEN 和 SIFEN 150 是已配置的名称。 | 已找到条目 |
+| [秘鲁](countries/peru.md) | Peru CPE 有通用、UBL 2.0 和 UBL 2.1 条目。Factura Electronica 是另一个名称。 | 已找到条目 |
+| [乌拉圭](countries/uruguay.md) | Uruguay CFE 有通用、24 和 25 条目。目录还列出了 E-Factura 和 E-Nota Credito。 | 已找到条目 |
+| [哈萨克斯坦](countries/kazakhstan.md) | Kazakhstan ESF 是已配置的格式系列。 | 已找到条目 |
+| [沙特阿拉伯](countries/saudi-arabia.md) | ZATCA Fatoorah、Reporting、Simplified 和 Tax Invoice 各有独立条目。 | 已找到条目 |
+| [土耳其](countries/turkey.md) | Turkey E-Fatura 和 E-Arsiv 是独立配置的格式系列。 | 已找到条目 |
+| [阿拉伯联合酋长国](countries/united-arab-emirates.md) | UAE VAT Invoice 是已配置的名称。 | 已找到条目 |
+| [国际](countries/international.md) | 国际条目包括 Peppol BIS 3.0、UBL 2.1、纯 CII、EDI、INVOIC02、cXML、OCI、BOD 和 SPS Commerce RSX 7.7.4。 | 已找到条目 |
+
+## Factur-X / ZUGFeRD：不要臆测发布版本
+
+协调统一的 CII Guideline ID 可以标识格式系列和业务规范，但多个发布版本可能使用相同的 1p0 标记。Factur-X XMP Version 1.0 是架构标记，并非 1.08 或 1.09 这样的发布版本。ZUGFeRD XMP 可以声明其版本。如果缺少权威元数据，请保留通用格式系列的识别结果，并向发送方确认原始文件。
+
+MINIMUM 和 BASIC WL 可能不包含后续处理所需的行项目信息。BASIC、EN16931/COMFORT 和 EXTENDED 涵盖的数据范围各不相同。数据更全面的业务规范可能包含提取映射未使用的字段。请用真实样例检查必需字段。
+
+## 检查组织中的格式
+
+1. 保留原始 XML 或内嵌 XML 的 PDF。查看命名空间、架构或自定义标识，以及声明的版本和业务规范。
+
+2. 针对适用的业务文档，打开设置 → 文档类型 → E-Doc。搜索指南中所列的准确电子文档格式名称。
+
+3. 检查实际生效的 Default 或 Custom 来源及其活动配置版本。查看 Transformation、Preview 和 Extraction Paths。保存草稿不会将其激活。
+
+4. 针对所需的每一种语法、版本和业务文档，测试有代表性的原始文件。验证关键字段、金额、税额、发票或贷项通知单分类，以及 ERP 导出结果。
+
+5. 单独确认验证策略和传输方式。保留自定义映射，并在重新启动现有文档之前检查审批和导出历史。
+
+[验收检查](../credit-note-recognized-as-invoice.md)

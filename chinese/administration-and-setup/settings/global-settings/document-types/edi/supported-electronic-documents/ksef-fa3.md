@@ -4,6 +4,12 @@ description: DocBits 对 KSEF FA3 电子文档的支持
 
 # 🇵🇱 KSEF FA3
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。 [波兰](countries/poland.md). FA2 与 FA3 使用不同的结构。请确认原始架构并测试适当的映射；解析文件不会将发票提交到 KSeF。
+{% endhint %}
+
 | 属性                 | 值                         |
 | -------------------- | --------------------------- |
 | **国家 / 地区**      | 波兰                        |

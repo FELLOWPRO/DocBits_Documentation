@@ -4,6 +4,12 @@ description: Obsługa dokumentu elektronicznego UAE VAT INVOICE w DocBits
 
 # 🇦🇪 UAE VAT INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Zjednoczone Emiraty Arabskie](countries/united-arab-emirates.md). Mapowanie faktury VAT nie potwierdza obsługi każdego wydania UAE Peppol lub PINT. Potwierdź kontrakt danych i wymaganą integrację dostarczania.
+{% endhint %}
+
 | Właściwość | Wartość |
 | ---------- | ------- |
 | **Kraj/Region** | Zjednoczone Emiraty Arabskie |

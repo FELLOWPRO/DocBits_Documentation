@@ -4,6 +4,12 @@ description: Obsługa dokumentu elektronicznego AUSTRIA EBINTERFACE w DocBits
 
 # 🇦🇹 AUSTRIA EBINTERFACE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Austria](countries/austria.md). Dopasuj przestrzeń nazw XML do skonfigurowanej wersji. Inna przestrzeń nazw może wymagać innego mapowania.
+{% endhint %}
+
 | Właściwość | Wartość |
 |----------|-------|
 | **Kraj/Region** | Austria |

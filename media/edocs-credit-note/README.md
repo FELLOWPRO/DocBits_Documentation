@@ -1,6 +1,6 @@
 # Electronic credit note classification explainer
 
-Eight causal diagrams explain the diagnosis and safe configuration workflow described in the documentation. These diagrams are educational illustrations; the documentation screenshots come from the real development UI.
+Version 1 contains eight causal diagrams explaining the diagnosis and safe configuration workflow. These diagrams are educational illustrations. The [version 2 package](../edocs-ui-v2/README.md) replaces the picture track with real localized DocBits UI captures. Its delivery registry identifies revised variants; the review player selects version 2 when available.
 
 Locales: `en`, `de`, `es`, `fr`, `it`, `nl`, `pl`, `pt`, `zh`. Each locale has synthesized narration in its language, captions and labels. No customer data appears in the film.
 

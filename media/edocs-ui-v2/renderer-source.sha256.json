@@ -1145,7 +1145,7 @@
   "scripts/settings_assistant/explainer_videos/toolchain.lock.json": "6416dd59f7aa93b56ec826dd5cc6b62dbe4f8cf5956bf2617c59bc893808df8b",
   "scripts/settings_assistant/explainer_videos/toolchain.py": "5aa7142e78fea709c79f7293a26c27baa0939bf1ce0cae850020e1021c06bd62",
   "scripts/settings_assistant/explainer_videos/tts.py": "9bbcb1937debad04fd68c3abafad45309739ebf2a67aa34848e445bebb21c952",
-  "scripts/settings_assistant/explainer_videos/ui_picture.py": "fd4d8568ea22890a37a4c104922ef495b259dd99be01d25929cb0fde440e2f2a",
+  "scripts/settings_assistant/explainer_videos/ui_picture.py": "0c8b03f754e2bfecc0a5242027c19a35b002da827952af3aaa197063f72f5a45",
   "scripts/settings_assistant/explainer_videos/validate.py": "d8c63e2e0304935ae81b4fa2d9a1d1d17db4287aed5f671605a3bb8a994fc65b",
   "scripts/settings_assistant/explainer_videos/voice_settings.json": "f5555ff9e12a1b874311a96079332586bda01a0390cc511183ebdbb5c8e524ce",
   "scripts/settings_assistant/explainer_videos/vtt.py": "f6a44e361902d1c73ff462cb3ce1d520b240103041edf1115863841531765de4",

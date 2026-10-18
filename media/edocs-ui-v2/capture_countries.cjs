@@ -56,6 +56,8 @@ const only=process.argv[5]?.split(',');
      }
      await page.goBack();await ready(page);await language(page);
      await card.waitFor({state:'visible',timeout:60000});await card.scrollIntoViewIfNeeded();
+     if((await card.boundingBox()).height<200)await card.locator('.q-expansion-item__container > .q-item').first().click();
+     await card.locator('tr.xslt-row').first().waitFor({state:'visible',timeout:60000});
     }
    }
    fs.writeFileSync(path.join(folder,'capture.json'),JSON.stringify(evidence,null,2)+'\n');

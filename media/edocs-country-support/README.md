@@ -1,5 +1,7 @@
 # eDocs country formats and versions
 
+The [version 2 package](../edocs-ui-v2/README.md) revises the films to show real country-specific DocBits rule lists, Transformation code, Extraction Paths and the preview panel. Its delivery registry identifies revised variants; the review player uses version 2 when available. The original diagram renderer and its provenance below remain available as version 1.
+
 Forty country/international explainers accompany the support guides. Each film uses country-specific narration and three teaching scenes. The settings screenshots come from the real development UI; diagrams do not reproduce product controls.
 
 Languages: en, de, es, fr, it, nl, pl, pt, zh. The matrix distinguishes family, syntax, publication version, profile, classification and mapping components. It records catalogue presence, not legal certification or an end-to-end test of every file. Costa Rica is explicitly unconfirmed.

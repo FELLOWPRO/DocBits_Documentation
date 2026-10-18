@@ -38,11 +38,13 @@ Ein Strich bedeutet, dass die Statusprüfung für genau diese Kombination aus Fo
 
 Ein Sprechertext und WebVTT-Untertitel in der jeweiligen Sprache erklären Formatauswahl, Konfiguration und Abnahmeprüfungen.
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-colombia-de.mp4" %}
+Dieser lesende Rundgang zeigt die in DocBits vorhandene Konfiguration für das Land. Prüfen Sie die verwendete Quelle und aktive Version und testen Sie repräsentative Rechnungen, Gutschriften und Exporte in Ihrer eigenen Organisation.
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-colombia-de-v2.mp4" %}
 Kolumbien — Erklärvideo zum Land
 {% endfile %}
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-colombia-de.vtt" %}
+{% file src="../../../../../../../.gitbook/assets/edocs-support-colombia-de-v2.vtt" %}
 WebVTT
 {% endfile %}
 

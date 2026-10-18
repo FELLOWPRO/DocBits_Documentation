@@ -12,6 +12,16 @@ Welche Funktionen Sie sehen, hängt von Ihren Berechtigungen, dem Dokumentstatus
 
 <figure><img src="../../../.gitbook/assets/dashboard-overview-de.png" alt="Das aktuelle Dashboard mit Suche und Werkzeugen, gespeicherten Ansichten, Dokumenttypen und Dokumenttabelle. Dokumentwerte sind zum Datenschutz ausgeblendet."><figcaption><p>Das aktuelle Dashboard mit Suche und Werkzeugen, gespeicherten Ansichten, Dokumenttypen und Dokumenttabelle. Dokumentwerte sind zum Datenschutz ausgeblendet.</p></figcaption></figure>
 
+## Dashboard als Video
+
+Die deutsche Sprecherfassung erklärt in 1:57 Minuten Suche, Filter, Spalten, Dokumentaktionen, gespeicherte Ansichten, Upload und Werkzeuge. Deutsche Untertitel sind im Bild eingeblendet.
+
+{% file src="../../../.gitbook/assets/dashboard-tour-de-v1.mp4" %}
+Dashboard erklärt – mit deutscher Sprecherstimme
+{% endfile %}
+
+[Untertitel herunterladen (VTT)](../../../.gitbook/assets/dashboard-tour-de-v1.vtt) · [Transkript lesen](../../../.gitbook/assets/dashboard-tour-de-v1.txt)
+
 ## Die tägliche Arbeit beginnen
 
 1. Prüfen Sie die aktive Organisation und gegebenenfalls die Unterorganisation.

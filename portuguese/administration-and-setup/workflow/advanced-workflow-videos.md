@@ -20,7 +20,7 @@ Cada vídeo inclui legendas WebVTT e uma transcrição expansível.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/pt.mp4" %}
 
-[Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/pt.vtt) · 1:55
+[Abrir vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/pt.mp4) · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/pt.vtt) · 1:55
 
 <details>
 <summary>Transcrição</summary>
@@ -55,7 +55,7 @@ Valide as ligações e as definições dos cartões. Guarde explicitamente no se
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/pt.mp4" %}
 
-[Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/pt.vtt) · 2:00
+[Abrir vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/pt.mp4) · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/pt.vtt) · 2:00
 
 <details>
 <summary>Transcrição</summary>
@@ -88,9 +88,11 @@ Os nós devem ser acessíveis a partir de uma entrada. Evite ciclos e ligações
 
 ## Variáveis, testes e ativação {#variables-tests-and-activation}
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/pt.mp4" %}
+Acompanha o workflow de faturas ligado no verdadeiro designer DocBits. Abre Variáveis, compara os tipos e a referência de documento, localiza Validar, prepara testes com documentos ou dados personalizados e identifica Guardar e ativação. As cenas de teste mostram a configuração de dados de exemplo; não mostram um resultado executado.
 
-[Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/pt.vtt) · 1:56
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/pt.mp4" %}
+
+[Abrir vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/pt.mp4) · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/pt.vtt) · 1:57
 
 <details>
 <summary>Transcrição</summary>
@@ -111,9 +113,9 @@ Clique em Validar. Examine erros e avisos acima do canvas. Uma mensagem foca o n
 
 Reproduzir na barra abre a escolha do documento. Escolha documento, dados personalizados ou teste sem documento para cartões independentes. Start executa diretamente. Os testes incluem alterações não guardadas e simulam ações destrutivas.
 
-**Examine os resultados**
+**Preparar e rever cenários de teste**
 
-Examine mensagens e durações: verde, sucesso; laranja, condição falsa; vermelho, erro; cinzento, ignorado. Corrija e repita. Use o gestor de testes para cenários repetíveis: sucesso, alternativas, dados em falta e erros.
+Prepara testes separados acima, abaixo e exatamente em mil, além de dados em falta. Após a execução, verifica mensagens e durações: verde indica sucesso, laranja falso, vermelho erro e cinzento ignorado. Volta a testar as correções. Usa o gestor de testes para cenários repetíveis.
 
 **Guarde antes de ativar**
 
@@ -125,7 +127,7 @@ A gravação automática conserva um rascunho local cerca de trinta segundos ap�
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/pt.mp4" %}
 
-[Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/pt.vtt) · 1:58
+[Abrir vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/pt.mp4) · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/pt.vtt) · 1:58
 
 <details>
 <summary>Transcrição</summary>
@@ -160,7 +162,7 @@ Um aviso e um ícone de bloqueio indicam o limite de execuções do documento. I
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/pt.mp4" %}
 
-[Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/pt.vtt) · 1:55
+[Abrir vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/pt.mp4) · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/pt.vtt) · 1:55
 
 <details>
 <summary>Transcrição</summary>

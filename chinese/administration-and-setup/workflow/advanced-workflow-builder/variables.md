@@ -2,9 +2,9 @@
 
 ## 视频: 变量、测试与激活
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/zh.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/zh.mp4" %}
 
-[字幕文件（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/zh.vtt) · 1:48
+[打开视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/zh.mp4) · [字幕文件（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/zh.vtt) · 1:50
 
 <details>
 <summary>文字稿</summary>
@@ -25,9 +25,9 @@
 
 工具栏播放按钮打开测试文档选择器。选择文档、自定义数据，或对独立卡片选择无文档测试。Start 的播放按钮直接运行。测试使用当前画布，包括未保存的修改，并模拟破坏性动作。
 
-**检查测试结果**
+**准备和检查测试场景**
 
-检查节点消息和耗时。绿色表示成功，橙色表示条件不成立，红色表示错误，灰色表示跳过。修正后重新测试。使用测试管理器建立可重复场景，覆盖成功、替代路径、缺失数据和错误。
+分别准备用于大于、小于、等于一千以及缺少数据的测试。运行后，检查节点消息和耗时：绿色表示成功，橙色表示条件不成立，红色表示错误，灰色表示跳过。修正后重新测试。使用测试管理器重复运行测试场景。
 
 **保存后再激活**
 

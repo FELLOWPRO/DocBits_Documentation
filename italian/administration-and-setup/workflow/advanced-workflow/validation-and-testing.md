@@ -2,9 +2,9 @@
 
 ## Video: Variabili, test e attivazione
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/it.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/it.mp4" %}
 
-[Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/it.vtt) · 1:53
+[Apri video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/it.mp4) · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/it.vtt) · 1:56
 
 <details>
 <summary>Trascrizione</summary>
@@ -25,9 +25,9 @@ Premi Convalida. Esamina errori e avvisi sopra il canvas. Un messaggio individua
 
 La riproduzione nella barra apre la scelta del documento. Scegli documento, dati personalizzati o test senza documento per schede indipendenti. Start avvia direttamente. I test includono modifiche non salvate e simulano azioni distruttive.
 
-**Esamina i risultati**
+**Preparare e verificare gli scenari di test**
 
-Esamina messaggi e durate: verde, successo; arancione, condizione falsa; rosso, errore; grigio, saltato. Correggi e riprova. Usa il gestore dei test per scenari ripetibili: successo, alternative, dati mancanti ed errori.
+Prepara test separati sopra, sotto ed esattamente a mille, oltre ai dati mancanti. Dopo l’esecuzione, controlla messaggi e durate: verde indica successo, arancione falso, rosso errore e grigio saltato. Ripeti i test dopo le correzioni. Usa il gestore test per scenari ripetibili.
 
 **Salva prima di attivare**
 

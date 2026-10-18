@@ -8,6 +8,18 @@ Gebruik deze gids om de geconfigureerde familie en de versieomvang vast te stell
 
 [Alle landen en ondersteuningsomvang](../README.md)
 
+## Uitlegvideo per land
+
+Gesproken uitleg en WebVTT-ondertitels in de gekozen taal leggen formaatselectie, configuratie en acceptatiecontroles uit.
+
+Deze rondleiding zonder wijzigingen toont de bestaande DocBits-configuratie voor het land. Controleer de gebruikte bron en actieve versie en test representatieve facturen, creditnota’s en exports in uw eigen organisatie.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_brazil/v2/nl.mp4" %}
+
+[Brazilië — Uitlegvideo per land](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_brazil/v2/nl.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_brazil/v2/nl.vtt)
+
 ## Varianten en versiebeperkingen
 
 Brazilië heeft NF-e-, NFC-e-, CT-e-, NFS-e- en SPED NFS-e-vermeldingen. NFS-e omvat de versies 1.00 en 2.00 tot 2.04; SPED omvat 1.00.02 en 1.01.
@@ -43,20 +55,6 @@ Een streepje betekent dat de statuscontrole geen eigen component voor deze exact
 ## Zoek de toewijzing in DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-brazil-nl.png" alt="Brazilië: BRAZIL NFS-E"><figcaption><p>Werkelijke ontwikkelinterface: het representatieve formaat en de beschikbare configuratiecomponenten. Andere versies staan in de matrix.</p></figcaption></figure>
-
-## Uitlegvideo per land
-
-Gesproken uitleg en WebVTT-ondertitels in de gekozen taal leggen formaatselectie, configuratie en acceptatiecontroles uit.
-
-Deze rondleiding zonder wijzigingen toont de bestaande DocBits-configuratie voor het land. Controleer de gebruikte bron en actieve versie en test representatieve facturen, creditnota’s en exports in uw eigen organisatie.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-brazil-nl-v2.mp4" %}
-Brazilië — Uitlegvideo per land
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-brazil-nl-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Acceptatiecontroles
 

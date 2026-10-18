@@ -8,6 +8,18 @@ Gebruik deze gids om de geconfigureerde familie en de versieomvang vast te stell
 
 [Alle landen en ondersteuningsomvang](../README.md)
 
+## Uitlegvideo per land
+
+Gesproken uitleg en WebVTT-ondertitels in de gekozen taal leggen formaatselectie, configuratie en acceptatiecontroles uit.
+
+Deze rondleiding zonder wijzigingen toont de bestaande DocBits-configuratie voor het land. Controleer de gebruikte bron en actieve versie en test representatieve facturen, creditnota’s en exports in uw eigen organisatie.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_japan/v2/nl.mp4" %}
+
+[Japan — Uitlegvideo per land](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_japan/v2/nl.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_japan/v2/nl.vtt)
+
 ## Varianten en versiebeperkingen
 
 JP PINT en JP PINT Self-Billing zijn afzonderlijke vermeldingen.
@@ -32,20 +44,6 @@ Een streepje betekent dat de statuscontrole geen eigen component voor deze exact
 ## Zoek de toewijzing in DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-japan-nl.png" alt="Japan: JP PINT"><figcaption><p>Werkelijke ontwikkelinterface: het representatieve formaat en de beschikbare configuratiecomponenten. Andere versies staan in de matrix.</p></figcaption></figure>
-
-## Uitlegvideo per land
-
-Gesproken uitleg en WebVTT-ondertitels in de gekozen taal leggen formaatselectie, configuratie en acceptatiecontroles uit.
-
-Deze rondleiding zonder wijzigingen toont de bestaande DocBits-configuratie voor het land. Controleer de gebruikte bron en actieve versie en test representatieve facturen, creditnota’s en exports in uw eigen organisatie.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-japan-nl-v2.mp4" %}
-Japan — Uitlegvideo per land
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-japan-nl-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Acceptatiecontroles
 

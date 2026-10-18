@@ -14,7 +14,7 @@ Ein Rechnungsbetrag entscheidet zwischen zwei verbundenen Aktionen. Dieses Kapit
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/de.mp4" %}
 
-[Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/de.vtt)
+[Video öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/de.mp4) · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/de.vtt)
 
 <details>
 <summary>Transkript</summary>
@@ -52,7 +52,7 @@ Ein verbundener Demoentwurf zeigt Erfolgs-, Alternativ- und Fehlerwege im echten
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/de.mp4" %}
 
-[Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/de.vtt)
+[Video öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/de.mp4) · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/de.vtt)
 
 <details>
 <summary>Transkript</summary>
@@ -73,12 +73,11 @@ Verarbeitungsknoten müssen von einem Einstieg erreichbar sein. Vermeiden Sie Sc
 
 ## Variablen, Tests und Aktivierung
 
-Das Kapitel zeigt das Variablenformular, den Typ für Dokumentreferenzen, Validieren, die Auswahl des Testkontexts sowie Speichern und Aktivierung direkt in DocBits. Die Erklärung behandelt auch den organisationsweiten Geltungsbereich, Testfälle und die Prüfung der Ergebnisse nach einer Ausführung.
+Folgen Sie dem verbundenen Rechnungsworkflow im echten DocBits-Designer. Öffnen Sie Variablen, vergleichen Sie die Typen und die Dokumentreferenz, finden Sie Validieren, bereiten Sie Tests mit Dokumenten oder eigenen Daten vor und sehen Sie Speichern und Aktivierung. Die Testszenen zeigen die Eingabekonfiguration; sie zeigen kein ausgeführtes Testergebnis.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/de.mp4" %}
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/de.mp4" %}
-
-[Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/de.vtt)
+[Video öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/de.mp4) · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/de.vtt)
 
 <details>
 <summary>Transkript</summary>
@@ -91,7 +90,7 @@ Wählen Sie Validieren. Ein Klick auf Fehler oder Warnungen zeigt den Knoten. Pr
 
 Die Wiedergabetaste öffnet Select Test Document. Wählen Sie Dokument, Custom Data oder Test Without Document für unabhängige Karten. Start spielt direkt ab. Tests verwenden ungespeicherte Änderungen und simulieren destruktive Aktionen.
 
-Prüfen Sie Ergebnisse, Meldungen und Dauer je Knoten. Grün bedeutet Erfolg, Orange eine nicht erfüllte Bedingung, Rot einen Fehler und Grau übersprungen. Testen Sie Korrekturen erneut. Speichern Sie Szenarien im Test Manager und prüfen Sie jeden Weg.
+Bereite getrennte Tests über, unter und genau bei eintausend sowie mit fehlenden Daten vor. Prüfe nach dem Lauf Meldungen und Laufzeiten: Grün bedeutet Erfolg, Orange falsch, Rot Fehler und Grau übersprungen. Teste Korrekturen erneut. Der Testmanager verwaltet wiederholbare Szenarien.
 
 Auto-Save sichert Änderungen etwa alle dreißig Sekunden als lokalen Browserentwurf. Speichern Sie ausdrücklich auf dem Server. Der Aktivierungsschalter bleibt vor dem ersten Speichern gesperrt. Prüfen Sie den aktiven Zustand in der Workflow Liste.
 
@@ -103,7 +102,7 @@ Die passende Ausführung über Workflow-Suche, Status, Datum und Sortierung find
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v1/de.mp4" %}
 
-[Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v1/de.vtt)
+[Video öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v1/de.mp4) · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v1/de.vtt)
 
 <details>
 <summary>Transkript</summary>
@@ -128,7 +127,7 @@ Ausführungsreihenfolge und Zustände prüfen, Knotenmeldungen lesen und die Urs
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v1/de.mp4" %}
 
-[Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v1/de.vtt)
+[Video öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v1/de.mp4) · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v1/de.vtt)
 
 <details>
 <summary>Transkript</summary>

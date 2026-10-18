@@ -48,7 +48,7 @@ De standaardtoewijzing voor creditnota's in FACTURX/ZUGFeRD omvat **381 en 261**
 
 <figure><img src="../../../../../.gitbook/assets/edocs-transformation-nl.png" alt="Alleen-lezenbron van een FACTURX-transformatie in de versie-editor van DocBits."><figcaption>Bekijk de geselecteerde bron en versie voordat u een wijziging maakt of activeert.</figcaption></figure>
 
-De [eDocs MCP-tools](../../../../../advanced-functions-and-tools/edocs-mcp/README.md) ondersteunen dezelfde controles: `list_edoc_custom_attributes`, `get_edoc_attribute_source` en `list_edoc_attribute_versions` identificeren de bron; `compare_edoc_extraction` vergelijkt het gedrag van de standaard, de aangepaste bron en de voorgestelde wijziging. Gebruik `test_electronic_document` voor een proefuitvoering vóór activering.
+De volledige MCP-werkwijze staat in [DocBits configureren met Claude of Codex](../../../../../advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md). `list_edoc_custom_attributes`, `get_edoc_attribute_source` en `list_edoc_attribute_versions` bepalen bron en actieve waarde. `preview_edoc_custom_xslt` bekijkt een kandidaattransformatie. `compare_edoc_extraction` vergelijkt alleen Extraction Paths en vereist een aangepast Extraction Paths-attribuut. `test_electronic_document` test de actieve configuratie, geen inactief concept.
 
 ## Veilig corrigeren en activeren
 

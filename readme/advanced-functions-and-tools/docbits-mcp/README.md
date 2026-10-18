@@ -161,3 +161,5 @@ Waarom documenten menselijke tussenkomst nodig hebben en wat u kunt wijzigen zod
 {% hint style="info" %}
 **Eén MCP voor alles.** De eDoc-tools en de tools voor **Workflows en kaarten (DocFlow)** draaien op **hetzelfde** endpoint `api.docbits.com/v3/mcp` met dezelfde DocBits-aanmelding. DocFlow-tools verschijnen daar met het voorvoegsel `docflow_` (bijvoorbeeld `docflow_list_workflows`); de DocFlow-pagina documenteert ze onder hun kale namen. Rechtstreeks verbinden met de DocFlow-host is nog steeds mogelijk, maar niet langer nodig.
 {% endhint %}
+
+[DocBits configureren met Claude of Codex](configuration-with-claude-or-codex.md): verbinding, prompts, voorbeelden, wijzigingen met versiebeheer, controles en terugdraaien.

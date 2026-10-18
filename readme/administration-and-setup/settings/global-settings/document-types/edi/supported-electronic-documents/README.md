@@ -21,6 +21,8 @@ As tabelas registam uma verificação do catálogo de desenvolvimento realizada 
 
 ## Guias por país
 
+A visão geral contém ligações para 39 guias nacionais e um guia internacional. Cada guia apresenta as designações exatas dos formatos e os componentes de configuração, juntamente com as capturas de ecrã do DocBits, os vídeos e as verificações de aceitação disponíveis.
+
 | País / região | Famílias e âmbito das versões | Resultado no catálogo |
 | --- | --- | --- |
 | [Áustria](countries/austria.md) | ebInterface 4.3, 5.0, 6.0 e 6.1 têm entradas distintas. | Entradas encontradas |

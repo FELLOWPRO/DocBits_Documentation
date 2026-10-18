@@ -13,13 +13,11 @@ O vídeo mostra uma verificação apenas de leitura no DocBits, usando FACTURX 1
 
 O exemplo XSLT antigo apresentado no vídeo contém ramos para 381 e 389. Verifique na Transformation real quais os códigos preservados por esta versão específica; a lista geral de códigos não comprova a sua cobertura em todos os mapeamentos históricos.
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-pt-v2.mp4" %}
-Verificar a classificação das notas de crédito eletrónicas
-{% endfile %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/pt.mp4" %}
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-pt-v2.vtt" %}
-WebVTT
-{% endfile %}
+[Verificar a classificação das notas de crédito eletrónicas](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/pt.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_credit_note/v2/pt.vtt)
 
 ## Verificar o código do documento
 

@@ -20,7 +20,7 @@ Elke video heeft WebVTT-ondertiteling en een uitklapbare transcriptie.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/nl.mp4" %}
 
-[Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/nl.vtt) · 1:38
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/nl.mp4) · [Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/nl.vtt) · 1:38
 
 <details>
 <summary>Transcriptie</summary>
@@ -55,7 +55,7 @@ Valideer de verbindingen en kaartinstellingen. Sla de workflow expliciet op de s
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/nl.mp4" %}
 
-[Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/nl.vtt) · 1:50
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/nl.mp4) · [Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/nl.vtt) · 1:50
 
 <details>
 <summary>Transcriptie</summary>
@@ -88,9 +88,11 @@ Maak knooppunten bereikbaar vanaf een ingang. Vermijd cycli en inkomende verbind
 
 ## Variabelen, tests en activering {#variables-tests-and-activation}
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/nl.mp4" %}
+Volg de verbonden factuurworkflow in de echte DocBits-editor. Open Variabelen, vergelijk de typen en de documentverwijzing, zoek Valideren, bereid tests met documenten of aangepaste gegevens voor en bekijk Opslaan en activering. De testscènes tonen de configuratie van voorbeeldgegevens; ze tonen geen uitgevoerd testresultaat.
 
-[Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/nl.vtt) · 1:58
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/nl.mp4" %}
+
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/nl.mp4) · [Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/nl.vtt) · 2:00
 
 <details>
 <summary>Transcriptie</summary>
@@ -111,9 +113,9 @@ Selecteer Valideren. Bekijk fouten en waarschuwingen boven het canvas. Klik op e
 
 Afspelen op de werkbalk opent de documentkeuze. Kies een document, aangepaste gegevens of een test zonder document voor onafhankelijke kaarten. Afspelen op Start begint direct. Tests gebruiken het huidige canvas, inclusief niet opgeslagen wijzigingen, en simuleren destructieve acties.
 
-**Bekijk de resultaten**
+**Testscenario’s voorbereiden en controleren**
 
-Bekijk meldingen en tijden per knooppunt: groen is succes, oranje een onware voorwaarde, rood een fout, grijs overgeslagen. Test opnieuw na correcties. Gebruik Test Manager voor herhaalbare scenario’s: succes, alternatieven, ontbrekende gegevens en fouten.
+Maak aparte tests boven, onder en precies op duizend, plus ontbrekende gegevens. Controleer na uitvoering berichten en looptijden: groen betekent geslaagd, oranje onwaar, rood fout en grijs overgeslagen. Test correcties opnieuw. Gebruik Testbeheer voor herhaalbare scenario’s.
 
 **Sla op vóór activering**
 
@@ -125,7 +127,7 @@ Automatisch opslaan bewaart ongeveer elke dertig seconden na wijzigingen een lok
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/nl.mp4" %}
 
-[Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/nl.vtt) · 1:49
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/nl.mp4) · [Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/nl.vtt) · 1:49
 
 <details>
 <summary>Transcriptie</summary>
@@ -160,7 +162,7 @@ Een banner en blokkeerpictogram tonen de uitvoeringslimiet van het document. Ond
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/nl.mp4" %}
 
-[Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/nl.vtt) · 1:43
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/nl.mp4) · [Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/nl.vtt) · 1:43
 
 <details>
 <summary>Transcriptie</summary>

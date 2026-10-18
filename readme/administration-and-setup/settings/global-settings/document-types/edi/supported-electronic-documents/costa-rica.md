@@ -1,30 +1,16 @@
 ---
-description: Supporto in DocBits per i documenti elettronici della COSTA RICA
+description: "La documentazione precedente cita il Costa Rica, ma nel catalogo di sviluppo esaminato non è stata trovata alcuna voce di classificazione o configurazione corrispondente."
 ---
 
 # 🇨🇷 COSTA RICA
 
-| Proprietà             | Valore                                                 |
-| --------------------- | ------------------------------------------------------ |
-| **Paese / Regione**   | Costa Rica                                             |
-| **Tipi di documento** | Fattura (Factura Electrónica), nota di credito, nota di debito |
-| **Formato**           | XML                                                    |
-| **Standard**          | Factura Electrónica (Ministerio de Hacienda)           |
 
-Il sistema di fatturazione elettronica della Costa Rica è regolamentato dal Ministerio de Hacienda. I documenti elettronici devono essere inviati alla piattaforma Hacienda per la convalida e includono una firma digitale. DocBits può elaborare le fatture elettroniche costaricane ed estrarne i campi principali.
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Costa Rica](countries/costa-rica.md). Questa verifica non conferma l’attuale elaborazione integrata. Chiedete all’assistenza di verificare la mappatura distribuita e provate un file sorgente rappresentativo prima del rilascio.
+{% endhint %}
 
-## Stato del supporto
+La documentazione precedente cita il Costa Rica, ma nel catalogo di sviluppo esaminato non è stata trovata alcuna voce di classificazione o configurazione corrispondente.
 
-| Componente           | Stato         |
-| -------------------- | ------------- |
-| Anteprima            | ✅ Supportato |
-| Estrazione dei campi | ✅ Supportato |
-| Trasformazione       | N/D           |
+Questa verifica non conferma l’attuale elaborazione integrata. Chiedete all’assistenza di verificare la mappatura distribuita e provate un file sorgente rappresentativo prima del rilascio.
 
-## Anteprima predefinita
-
-<figure><img src="../../../../../../.gitbook/assets/costa-rica-preview.png" alt="Anteprima della fattura elettronica della Costa Rica in DocBits"><figcaption><p>Anteprima predefinita di DocBits per una fattura elettronica della Costa Rica</p></figcaption></figure>
-
-## Correlati
-
-* [Documenti elettronici supportati](./)
+[Costa Rica](countries/costa-rica.md)

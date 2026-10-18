@@ -4,6 +4,12 @@ description: Supporto documenti elettronici TURKEY E-FATURA in DocBits
 
 # 🇹🇷 TURKEY E-FATURA
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Turchia](countries/turkey.md). Verificate il profilo sorgente e la struttura del documento. L’etichetta della famiglia non identifica ogni versione UBL-TR né dimostra la consegna tramite la piattaforma fiscale.
+{% endhint %}
+
 | Proprietà             | Valore                                  |
 | --------------------- | --------------------------------------- |
 | **Paese / Regione**   | Turchia                                 |

@@ -161,3 +161,5 @@ Perché i documenti richiedono l'intervento umano e cosa modificare perché ne s
 {% hint style="info" %}
 **Un unico MCP per tutto.** Gli strumenti eDoc e quelli **Workflow e Card (DocFlow)** vengono eseguiti sullo **stesso** endpoint `api.docbits.com/v3/mcp` con lo stesso login DocBits. Gli strumenti DocFlow vi compaiono con il prefisso `docflow_` (ad esempio `docflow_list_workflows`); la pagina DocFlow li documenta con il loro nome senza prefisso. Collegarsi direttamente all'host DocFlow è ancora possibile, ma non è più necessario.
 {% endhint %}
+
+[Configurare DocBits con Claude o Codex](configuration-with-claude-or-codex.md): connessione, prompt, anteprime, modifiche con versioni, verifiche e ripristino.

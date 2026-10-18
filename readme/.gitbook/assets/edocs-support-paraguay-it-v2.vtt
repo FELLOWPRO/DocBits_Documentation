@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:08.841
+Paraguay DTE, SIFEN e SIFEN 150 sono
+etichette configurate. Le voci di
+
+formats_02
+00:00:08.841 --> 00:00:13.973
+classificazione delle note di credito non
+hanno insiemi di componenti di estrazione
+
+formats_03
+00:00:13.973 --> 00:00:20.300
+dedicati nello stato esaminato. Verificate
+la mappatura effettivamente utilizzata e
+
+formats_04
+00:00:20.300 --> 00:00:23.933
+non considerate le etichette
+intercambiabili.
+
+workflow_01
+00:00:24.683 --> 00:00:30.442
+Aprite E-Doc per il formato rilevato.
+Confrontate Transformation, Preview ed
+
+workflow_02
+00:00:30.442 --> 00:00:37.477
+Extraction Paths. Le regole Custom hanno
+la precedenza. Salvare una bozza non la
+
+workflow_03
+00:00:37.477 --> 00:00:38.400
+attiva.
+
+accept_01
+00:00:39.150 --> 00:00:45.129
+Provate una fattura e una nota di credito,
+se applicabile. Verificate gli importi, le
+
+accept_02
+00:00:45.129 --> 00:00:50.121
+parti e il tipo di documento esportato.
+L’analisi del file non dimostra
+
+accept_03
+00:00:50.121 --> 00:00:53.800
+l’autorizzazione fiscale né la consegna
+tramite rete.
+

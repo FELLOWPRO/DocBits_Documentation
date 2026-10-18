@@ -4,6 +4,12 @@ description: Supporto in DocBits per il documento elettronico FACTURX 1.0.05 - Z
 
 # 🇫🇷 FACTURX 1.0.05 - ZUGFERD 2.1
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Francia](countries/france.md). Il marcatore XML 1p0 e Factur-X XMP Version 1.0 non identificano una versione di pubblicazione. Mantenete l’etichetta generica quando la pubblicazione è sconosciuta.
+{% endhint %}
+
 | Proprietà             | Valore                        |
 | --------------------- | ----------------------------- |
 | **Paese / Regione**   | Francia / Germania            |

@@ -4,6 +4,12 @@ description: Supporto in DocBits per il documento elettronico EHF INVOICE 3.0
 
 # 🇳🇴 EHF INVOICE 3.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Norvegia](countries/norway.md). Scegliete la mappatura per il documento aziendale effettivo. Un ordine o un avviso di spedizione non è una fattura.
+{% endhint %}
+
 | Proprietà             | Valore                                            |
 | --------------------- | ------------------------------------------------- |
 | **Paese / Regione**   | Norvegia                                          |

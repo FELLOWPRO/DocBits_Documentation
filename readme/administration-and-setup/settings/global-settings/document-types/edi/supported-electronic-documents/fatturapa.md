@@ -4,6 +4,12 @@ description: Supporto in DocBits per il documento elettronico FATTURAPA
 
 # 🇮🇹 FATTURAPA
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Italia](countries/italy.md). L’etichetta della famiglia non certifica ogni versione FatturaPA né la trasmissione tramite SDI. Verificate lo schema sorgente e i requisiti del destinatario.
+{% endhint %}
+
 | Proprietà             | Valore                                   |
 | --------------------- | ---------------------------------------- |
 | **Paese / Regione**   | Italia                                   |

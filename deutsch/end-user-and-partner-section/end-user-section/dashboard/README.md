@@ -16,17 +16,9 @@ Welche Funktionen Sie sehen, hängt von Ihren Berechtigungen, dem Dokumentstatus
 
 Die deutsche Sprecherfassung erklärt in 1:57 Minuten Suche, Filter, Spalten, Dokumentaktionen, gespeicherte Ansichten, Upload und Werkzeuge. Deutsche Untertitel sind im Bild eingeblendet.
 
-{% file src="../../../.gitbook/assets/dashboard-tour-de-v1.mp4" %}
-Dashboard erklärt – mit deutscher Sprecherstimme
-{% endfile %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v1/de.mp4" %}
 
-{% file src="../../../.gitbook/assets/dashboard-tour-de-v1.vtt" %}
-Deutsche Untertitel herunterladen (VTT)
-{% endfile %}
-
-{% file src="../../../.gitbook/assets/dashboard-tour-de-v1.txt" %}
-Deutsches Transkript herunterladen
-{% endfile %}
+[Video mit deutscher Sprecherstimme öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v1/de.mp4) · [Deutsche Untertitel (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v1/de.vtt) · [Deutsches Transkript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v1/de.txt)
 
 ## Die tägliche Arbeit beginnen
 

@@ -157,6 +157,15 @@ Health check 2026-10-18 07:0xZ: all 3 checks clean. 37 pages verified live
 (20 merged de pages + zh `ui-redesign-guide` + 24/24 e-mail-templates trio
 bytes distinct from EN + 8/8 `ui-redesign-help-icon-<lang>` distinct shas).
 
+Health check 2026-10-18 09:0xZ (=08:37Z UTC): all 3 checks clean.
+1. Bridge: newest `schedule` `39110624344` 08:13:33Z `success` (~24 min old);
+   own dispatch `39111657746` 08:29:47Z `success` — no dispatch needed.
+2. Live: **71 images verified, 0 problems** — 23 de pages (incl. the new
+   `global-settings/dashboard`: 7/7 German) + 8×3 e-mail-templates + 8×1
+   `ui-redesign-help-icon`.
+3. Worklist drift: none up. de 222→**221** (down, one page localised),
+   es 206 fr 208 it 212 nl 204 pl 216 pt 214 zh 389 — unchanged.
+
 Health check 2026-10-18 08:5xZ (=06:56Z UTC): all 3 checks clean.
 1. Bridge: newest `schedule` `39105304237` 06:47:43Z `success` (~9 min old);
    4/4 recent runs success — no dispatch needed.

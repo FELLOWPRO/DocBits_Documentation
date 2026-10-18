@@ -1,5 +1,42 @@
 # Barra degli strumenti e canvas
 
+## Video: Costruttore e canvas
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/it.mp4" %}
+
+[Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/it.vtt) · 1:52
+
+<details>
+<summary>Trascrizione</summary>
+
+**Una fattura con due percorsi**
+
+Questo è un vero workflow avanzato in DocBits. Un controllo dell’importo della fattura conduce a due azioni. I collegamenti determinano quale azione viene eseguita. L’esempio utilizza una bozza non salvata e campi dimostrativi.
+
+**Configurare il controllo importo**
+
+Apri Aggiungi, scegli And e seleziona una condizione per un campo del documento. Imposta il campo dell’importo, scegli Maggiore di e inserisci mille. Usa la chiave esatta del campo definita nella configurazione del documento.
+
+**Configurare le azioni**
+
+Aggiungi due schede Then. Entrambe impostano il campo dimostrativo approval route. Una scrive Approval, l’altra Standard. Questi valori identificano il percorso. Configura le azioni aziendali necessarie per un workflow di produzione.
+
+**Collegare le uscite**
+
+Collega Start all’ingresso della condizione. Collega l’uscita blu di successo ad Approval e l’uscita arancione di condizione falsa a Standard. L’uscita rossa gestisce separatamente gli errori di valutazione. La posizione delle schede non crea un percorso.
+
+**Preparare i casi di test**
+
+Apri Test nella barra degli strumenti. Scegli un documento di prova o inserisci i suoi dati completi in formato JSON. Verifica importi superiori, inferiori e uguali a mille, oltre ai valori mancanti. Controlla i risultati dei nodi dopo l’esecuzione.
+
+**Convalidare, salvare e attivare**
+
+Convalida i collegamenti e le impostazioni delle schede. Salva esplicitamente sul server e verifica separatamente l’attivazione. Le bozze automatiche del browser non sostituiscono il salvataggio. Esecuzione e registri richiedono il modulo e l’abbonamento appropriati.
+
+</details>
+
+[Guarda i cinque capitoli](../advanced-workflow-videos.md)
+
 La barra degli strumenti dell'Advanced Workflow scorre lungo la parte inferiore del canvas e ti offre tutto ciò di cui hai bisogno per costruire, navigare e gestire il flusso.
 
 ## Controlli della barra degli strumenti

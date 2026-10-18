@@ -65,3 +65,5 @@ Esegui il flusso con il controllo di riproduzione, validalo e salvalo con il pul
 
 - Scopri cosa fa ogni scheda nella sezione **Cards**.
 - Per automazioni lineari semplici, il builder **Standard Workflow** è più rapido da configurare.
+
+[Guarda i cinque capitoli](advanced-workflow-videos.md)

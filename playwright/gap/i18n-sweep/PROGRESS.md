@@ -363,6 +363,30 @@ directory page `/table-columns` correctly serves `table-columns_list-de.png`;
 
 ## Blocked / needs a decision
 
+### Top-20-Triage (de) — Ergebnis 2026-10-18
+
+Alle Top-Kandidaten nach echter UI-Ref-Anzahl einzeln sondiert (Route + Datenlage
++ i18n-Stand). Ergebnis: die meisten sind **nicht** ehrlich capturebar. Beweise:
+
+| Seite | echte UI-Refs | Verdikt | Grund (gemessen) |
+|---|---|---|---|
+| `document-types/rule-conditions-applies-when` | 5 | **ERLEDIGT #1099** | 5/6 neu gecaptured, live verifiziert |
+| `analytics-dashboard` (+ `README`-Dublette) | 8 | blockiert | Tabs `status`/`modules`/`user` = „Keine Daten gefunden" (0 abgeschlossene Dokumente); nur `touchless` hat Daten (eigene Seite) |
+| `report-page` | 7 | blockiert | „Keine Dateneinträge im entsprechenden Zeitrahmen gefunden" |
+| `api-key-management` | 5 | blockiert | `api-key-created` zeigt das **Secret**; Liste real = 1282 BDD-Testkeys, kein Kundenbild |
+| `o365-tenant` | 23 | blockiert | Microsoft-Azure-Portal-Walkthrough (fremde UI, Tenant-IDs) |
+| `modifying-user-details` | 2 (von 7) | blockiert | Users-Liste real = 156 echte Nutzer + E-Mail-Adressen (PII) |
+| `document-processing/export` (+ `README`-Dublette) | 10 | blockiert | App weicht **von der Doku ab**: kein SMB, „Infor"-Sammeltyp + Infotyp statt 6 Varianten, neue Spalte „Ausführungsreihenfolge" → Screenshots würden veralteten Text konservieren |
+| `document-training/…/defining-tables-and-columns` | 10 | blockiert | Table-Training-Wizard ist **unübersetzt** (`Detail View`, `Table Selection`, `Table Extraction`, `Custom Columns & Rows`, `Custom Formatting`, `Finish`) → No-op |
+| `setup/supplier-portal/README` | 13 | blockiert | `?path=`-Route 404, Portal nicht aktiviert |
+| `/nova/supplier-dashboard`, `/nova/workflow`, `/nova/settings/activity-logging`, `/nova/settings/system-licenses`, `/nova/settings/document-processing/module` | — | blockiert | Route 404 (Pfad abweichend) |
+
+**Doable-Rest (noch nicht bearbeitet, Route gerendert deutsch mit Daten):**
+`/nova/settings/watchdog`, `/nova/settings/card-sdk`,
+`/nova/settings/master-data` (je ~1,3–3,0 K Text, DE/EN-Mix gering) — sowie
+`/nova/sitemap` (bereits #1012 erledigt).
+
+
 - **`dashboard/filtering-documents`**: the page documents a dashboard
   time-period filter ("Zeitbasierte Filterung", figures `FilteringDocs_4`/`_5`)
   that the NOVA dashboard no longer has, and all 9 refs are pre-NOVA. Decide:

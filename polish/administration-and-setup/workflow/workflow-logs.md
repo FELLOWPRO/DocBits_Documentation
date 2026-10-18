@@ -2,40 +2,43 @@
 
 ## Film
 
-Te dwa filmy korzystają ze schematów oznaczonych jako ilustracje.
-
+Film o wyszukiwaniu to wersja testowa z rzeczywistymi ekranami DocBits. Film o diagnostyce nadal korzysta ze schematów oznaczonych jako ilustracje.
 ### Znajdź właściwe wykonanie
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/pl.mp4" %}
+{% hint style="info" %}
+Wersja testowa: rzeczywiste ekrany DocBits z akcjami dokumentu, przepływem dokumentów, czasami kroków, pustymi logami oraz filtrami statusu i daty. Dokument nie ma zapisanego wykonania Advanced Workflow. Ta wersja nie obejmuje jeszcze wierszy wykonań, stronicowania ani diagnostyki węzłów.
+{% endhint %}
 
-[Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/pl.vtt) · 1:44
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/pl.mp4" %}
+
+[Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/pl.vtt) · 1:58
 
 <details>
 <summary>Transkrypcja</summary>
 
-**Otwórz dzienniki dokumentu**
+**Zacznij od dokumentu**
 
-W panelu dokumentów wybierz Workflow Logs z menu akcji. Dostęp do workflow musi być włączony. Dzienniki dotyczą wybranego dokumentu. Testy edytora oraz dzienniki zdarzeń i aktywności organizacji są oddzielne.
+Na pulpicie dokumentów otwórz menu akcji i wybierz Przepływ dokumentów. Rzeczywista historia pokazuje import i OCR. Otwórz krok, aby sprawdzić czas oczekiwania i przetwarzania. Te kroki są odrębne od węzłów Advanced Workflow.
 
-**Odczytaj liczniki**
+**Odczytaj rzeczywiste liczniki**
 
-Niebieski liczy wykonania w bieżących wynikach, czerwony błędy, żółty fałszywe warunki, zielony sukcesy. Liczniki dotyczą wykonań, a nie definicji workflow ani węzłów. Filtry mogą zmienić te liczby.
+Tutaj widzisz logi workflow tego samego dokumentu. Niebieski oznacza liczbę wszystkich wykonań, czerwony błędy, żółty niespełnione warunki, a zielony sukcesy. Ten dokument demonstracyjny nie ma zapisanych wykonań. Dlatego wszystkie cztery liczniki pokazują zero.
 
-**Wybierz dokładne wykonanie**
+**Sprawdź kolumny wykonań**
 
-Każdy wiersz pokazuje nazwę workflow, datę utworzenia, czas w sekundach i wynik. Jeden workflow może wykonać się wielokrotnie dla dokumentu. Porównaj znaczniki czasu. Krótkie wykonanie może pokazać zero przecinek zero zero sekund po zaokrągleniu.
+Tabela zawiera nazwę workflow, czas utworzenia, czas trwania i wynik. Rozróżniaj powtarzające się wykonania na podstawie znacznika czasu. W tej wersji testowej nie ma wiersza do otwarcia. Pusta lista sama w sobie nie dowodzi błędu wykonania.
 
-**Zawęź wyniki**
+**Otwórz filtry statusu**
 
-Wyszukaj workflow. Ikona ustawień otwiera kierunek i kryterium sortowania, status oraz daty początku i końca. Sortuj według nazwy lub utworzenia. Wpisuj daty w kolejności rok, miesiąc, dzień i zastosuj.
+Ikona filtrów otwiera rzeczywiste menu. Wybierz sortowanie według nazwy lub czasu utworzenia, rosnąco albo malejąco. Status oferuje sukces, niespełniony warunek i błąd. Na ekranie widzisz rzeczywisty interfejs DocBits.
 
-**Sprawdź strony i filtry**
+**Wybierz daty i wyczyść filtry**
 
-Paginacja udostępnia starsze wyniki. Wyczyść filtry ponownie wczytuje listę bez ustawień. Osobno usuń tekst wyszukiwania. Przy pustych wynikach sprawdź dokument, daty i status. Pusta lista nie dowodzi błędu wykonania.
+Wybierz okres za pomocą daty rozpoczęcia i zakończenia lub kalendarza. Format to rok, miesiąc i dzień. Przycisk zastosowania pobiera wyniki. Wyczyść filtry resetuje wybór. Wyszukiwanie wyczyść oddzielnie. W tej wersji nazwy miesięcy w kalendarzu pozostają angielskie.
 
-**Szczególne stany**
+**Podgląd: nadal brakuje zapisanego wykonania**
 
-Baner i ikona blokady wskazują limit wykonań dokumentu. Zbadaj powtarzające się wyzwalacze przed zmianą limitów. Pobieranie filmu DocOperator pojawia się tylko przy istniejącym nagraniu; jest to nagranie tego wykonania.
+Ta wersja testowa pozwala sprawdzić dostęp do dokumentu, szczegóły przetwarzania i elementy sterujące logami. Nadal brakuje zapisanego wykonania Advanced Workflow, aby pokazać rzeczywiste wiersze, stronicowanie, ścieżki i komunikaty węzłów. Film nie symuluje tych wyników.
 
 </details>
 

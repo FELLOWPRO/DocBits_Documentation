@@ -6,7 +6,7 @@ description: "Cinque capitoli in italiano sui workflow avanzati e sui log, con s
 
 Impara a creare, provare e diagnosticare un workflow avanzato. I cinque capitoli hanno narrazione in italiano.
 
-I primi tre capitoli mostrano l’interfaccia reale di DocBits. I due capitoli sui log utilizzano diagrammi didattici identificati come illustrazioni. Le schermate mostrano bozze dimostrative non salvate.
+I primi tre capitoli mostrano il vero designer DocBits con bozze dimostrative. L’anteprima della ricerca mostra l’elaborazione reale dei documenti e i comandi dei registri con risultati vuoti. Il capitolo di diagnosi usa ancora diagrammi didattici identificati come illustrazioni.
 
 Ogni video include sottotitoli WebVTT e una trascrizione espandibile.
 
@@ -125,36 +125,40 @@ Il salvataggio automatico conserva una bozza locale circa ogni trenta secondi do
 
 ## Trovare l’esecuzione pertinente {#find-the-relevant-execution}
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/it.mp4" %}
+{% hint style="info" %}
+Anteprima da provare: schermate reali DocBits con azioni del documento, flusso dei documenti, tempi dei passaggi, registri vuoti e filtri di stato e data. Il documento non ha un’esecuzione Advanced Workflow salvata. Questa anteprima non include ancora righe di esecuzione, paginazione o diagnosi dei nodi.
+{% endhint %}
 
-[Apri video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/it.mp4) · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/it.vtt) · 1:53
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/it.mp4" %}
+
+[Apri video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/it.mp4) · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/it.vtt) · 1:48
 
 <details>
 <summary>Trascrizione</summary>
 
-**Apri i log del documento**
+**Iniziare dal documento**
 
-Nel pannello documenti, scegli Workflow Logs dal menu Azioni. L’accesso ai workflow deve essere abilitato. I log riguardano il documento selezionato. I test del designer e i registri di eventi o attività dell’organizzazione sono separati.
+Nel dashboard dei documenti, apri il menu delle azioni e scegli Flusso dei documenti. La cronologia reale mostra importazione e OCR. Apri un passaggio per esaminare i tempi di attesa e di elaborazione. Questi passaggi sono distinti dai nodi Advanced Workflow.
 
-**Leggi i contatori**
+**Leggere i contatori reali**
 
-Blu conta le esecuzioni nei risultati attuali; rosso, gli errori; giallo, le condizioni false; verde, i successi. I contatori rappresentano esecuzioni, non definizioni di workflow o nodi. I filtri possono modificare questi numeri.
+Qui vedi i registri dei workflow dello stesso documento. Il blu indica il totale, il rosso gli errori, il giallo le condizioni non soddisfatte e il verde i successi. Questo documento dimostrativo non ha esecuzioni registrate. Tutti e quattro i contatori mostrano quindi zero.
 
-**Scegli l’esecuzione esatta**
+**Controllare le colonne delle esecuzioni**
 
-Ogni riga mostra nome, data di creazione, durata in secondi e risultato. Un workflow può essere eseguito più volte per un documento. Confronta gli orari. Una durata breve può apparire come zero virgola zero zero secondi per arrotondamento.
+Le colonne mostrano nome del workflow, data di creazione, durata e risultato. Distingui le esecuzioni ripetute dal timestamp. Questo documento non ha una riga da aprire.
 
-**Restringi i risultati**
+**Aprire i filtri di stato**
 
-Usa Cerca per trovare un workflow. L’icona delle regolazioni apre direzione e criterio di ordinamento, stato e date iniziale e finale. Ordina per nome o creazione. Inserisci le date come anno, mese, giorno e seleziona Applica.
+L’icona dei filtri apre il menu reale. Ordina per nome o data di creazione, in ordine crescente o decrescente. Lo stato offre successo, condizione non soddisfatta ed errore.
 
-**Controlla pagine e filtri**
+**Scegliere le date e cancellare i filtri**
 
-Usa la paginazione per i risultati precedenti. Cancella filtri ricarica l’elenco senza selezioni. Svuota Cerca separatamente. Se mancano risultati, controlla documento, date e stato. Un elenco vuoto non dimostra un errore di esecuzione.
+Scegli un periodo con le date di inizio e fine o il calendario. Il formato è anno, mese e giorno. Applicare richiede i risultati. Cancella i filtri reimposta la selezione. Svuota la ricerca separatamente.
 
-**Stati particolari**
+**Anteprima: manca un’esecuzione salvata**
 
-Un avviso e un’icona di blocco indicano il limite di esecuzioni del documento. Esamina gli eventi ripetuti prima di cambiare i limiti. Il download video DocOperator compare solo se esiste una registrazione; riguarda quella esecuzione.
+Questa anteprima permette di controllare l’accesso al documento, i dettagli di elaborazione e i comandi dei registri. Manca ancora un’esecuzione Advanced Workflow salvata per mostrare righe reali, paginazione, percorsi e messaggi dei nodi. Questi risultati non sono simulati nel video.
 
 </details>
 

@@ -3,7 +3,7 @@
   "import_state": "success",
   "attachments": [
     {
-      "preview": "https://docs.docbits.com/deutsch/~/revisions/uINzMX0tl24KrYGXFPzb/administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice",
+      "preview": "https://docs.docbits.com/deutsch/~/revisions/uINzMX0tl24KrYGXFPzb/administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice?review=56767e9730f8",
       "url": "https://2396827744-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhNyN4taXWt0p7OGOOSfW%2Fuploads%2Fgit-blob-8f709e7f569c2a3072ff3f7272fe6850ab693d49%2Fedocs-credit-note-de-v2.mp4?alt=media",
       "status": 200,
       "mime": "video/mp4",
@@ -11,6 +11,26 @@
       "sha256": "7eba1c0d331ab160f6341ab79228516712ccd59a3b55bad7194e3747d7ecd2a2",
       "range206": true,
       "content_range": "bytes 0-1023/4373500"
+    },
+    {
+      "preview": "https://docs.docbits.com/deutsch/~/revisions/uINzMX0tl24KrYGXFPzb/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/germany?review=56767e9730f8",
+      "url": "https://2396827744-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhNyN4taXWt0p7OGOOSfW%2Fuploads%2Fgit-blob-87afa928877a27c1f28d461c88bb1d9da355804d%2Fedocs-support-germany-de-v2.mp4?alt=media",
+      "status": 200,
+      "mime": "video/mp4",
+      "bytes": 2466557,
+      "sha256": "c2cbb3f1f92390fee9695093a62e9407412c4ef342d07c100c8a08dc1dfdc154",
+      "range206": true,
+      "content_range": "bytes 0-1023/2466557"
+    },
+    {
+      "preview": "https://docs.docbits.com/deutsch/~/revisions/uINzMX0tl24KrYGXFPzb/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/costa-rica?review=56767e9730f8",
+      "url": "https://2396827744-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhNyN4taXWt0p7OGOOSfW%2Fuploads%2Fgit-blob-502ab6bb0166d460d20efc9a3b2e541175190989%2Fedocs-support-costa-rica-de-v2.mp4?alt=media",
+      "status": 200,
+      "mime": "video/mp4",
+      "bytes": 1061797,
+      "sha256": "cad8ee22a3ec730f92c293cb7abe4518318ed53f321826b90291799d87ff9e3e",
+      "range206": true,
+      "content_range": "bytes 0-1023/1061797"
     }
   ]
 }

@@ -82,11 +82,13 @@ MINIMUM y BASIC WL pueden omitir información de líneas de detalle necesaria en
 
 La narración y los subtítulos WebVTT en el idioma correspondiente explican la selección del formato, la configuración y las pruebas de aceptación.
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-france-es.mp4" %}
+Este recorrido de solo lectura muestra la configuración existente del país en DocBits. Compruebe la fuente utilizada y la versión activa y valide facturas, notas de crédito y exportaciones representativas en su organización.
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-france-es-v2.mp4" %}
 Francia — Vídeo explicativo del país
 {% endfile %}
 
-{% file src="../../../../../../../.gitbook/assets/edocs-support-france-es.vtt" %}
+{% file src="../../../../../../../.gitbook/assets/edocs-support-france-es-v2.vtt" %}
 WebVTT
 {% endfile %}
 

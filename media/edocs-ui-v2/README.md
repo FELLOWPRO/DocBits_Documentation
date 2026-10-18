@@ -11,7 +11,10 @@ preview panel and displays the negative-sign setting. It never saves, creates,
 activates or deletes a rule. Version authors, the user menu, email links and
 notifications are hidden. The shared user's language preference is unchanged;
 translation runs only in a disposable browser context. Process one locale at a
-time. Inspect every capture and every composed shot before delivery.
+time. `capture_country_pool.py` may divide that one locale into up to three disjoint
+country subsets with disposable, browser-local translations. It never starts a
+second locale or changes the shared profile. Inspect every capture and every
+composed shot before delivery.
 
 The credit-note example is **FACTURX 1.0.05 / ZUGFeRD 2.1**. Its visible code is
 an observed example, not a promise that every version has identical mappings.

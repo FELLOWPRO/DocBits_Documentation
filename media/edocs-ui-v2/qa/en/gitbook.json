@@ -1,0 +1,36 @@
+{
+  "commit": "3b8d16f41bb7f427f324f4ff9a9e1d6fda147079",
+  "import_state": "success",
+  "attachments": [
+    {
+      "preview": "https://docs.docbits.com/~/revisions/pWmuxpzLcZLSPH6qYHz3/administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice?review=3b8d16f41bb7",
+      "url": "https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fgit-blob-0b20087627700c3d6f549614593f3dc3848d1797%2Fedocs-credit-note-en-v2.mp4?alt=media",
+      "status": 200,
+      "mime": "video/mp4",
+      "bytes": 3387879,
+      "sha256": "aaf161024efbe6d195d3445292c5b4578c83087ffaff9c264101761c57d4e2b4",
+      "range206": true,
+      "content_range": "bytes 0-1023/3387879"
+    },
+    {
+      "preview": "https://docs.docbits.com/~/revisions/pWmuxpzLcZLSPH6qYHz3/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/germany?review=3b8d16f41bb7",
+      "url": "https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fgit-blob-cfbffb67c3eab838c388598ea1d57655a1581325%2Fedocs-support-germany-en-v2.mp4?alt=media",
+      "status": 200,
+      "mime": "video/mp4",
+      "bytes": 1998295,
+      "sha256": "acb7b6bfaea891ff33c22350cafacef034c88f03024f329ca53c1e276d34ad74",
+      "range206": true,
+      "content_range": "bytes 0-1023/1998295"
+    },
+    {
+      "preview": "https://docs.docbits.com/~/revisions/pWmuxpzLcZLSPH6qYHz3/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/costa-rica?review=3b8d16f41bb7",
+      "url": "https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fgit-blob-afe3bb37c0b9e52eb16b745e1be06e352f04c756%2Fedocs-support-costa-rica-en-v2.mp4?alt=media",
+      "status": 200,
+      "mime": "video/mp4",
+      "bytes": 794632,
+      "sha256": "bb50a53ea593351174b66d080aeef7a670c8b8c8cb3acabc14910c1c8d7a7d69",
+      "range206": true,
+      "content_range": "bytes 0-1023/794632"
+    }
+  ]
+}

@@ -9,11 +9,15 @@ Una nota de crédito electrónica puede aparecer como **Invoice** aunque su XML 
 
 ## Comprobar la clasificación de notas de crédito electrónicas
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-es.mp4" %}
+El vídeo muestra una revisión de solo lectura en DocBits con FACTURX 1.0.05 / ZUGFeRD 2.1 como ejemplo. Las asignaciones y versiones pueden variar en su organización. Compruebe siempre la Transformation activa del formato detectado.
+
+El ejemplo XSLT antiguo del vídeo contiene ramas para 381 y 389. Compruebe en la Transformation real qué códigos conserva esta versión concreta; la lista general de códigos no demuestra su cobertura en todas las asignaciones históricas.
+
+{% file src="../../../../../.gitbook/assets/edocs-credit-note-es-v2.mp4" %}
 Comprobar la clasificación de notas de crédito electrónicas
 {% endfile %}
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-es.vtt" %}
+{% file src="../../../../../.gitbook/assets/edocs-credit-note-es-v2.vtt" %}
 WebVTT
 {% endfile %}
 

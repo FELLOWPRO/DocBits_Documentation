@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico FACTURX 1.0
 
 # 🇫🇷 FACTURX 1.0.07.2 - ZUGFERD 2.3.2
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Francia](countries/france.md). El marcador XML 1p0 y Factur-X XMP Version 1.0 no identifican una versión de publicación. Mantenga la etiqueta genérica cuando se desconozca la publicación.
+{% endhint %}
+
 | Propiedad              | Valor                             |
 | ---------------------- | --------------------------------- |
 | **País / Región**      | Francia / Alemania                |

@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico FACTURAE 3.
 
 # 🇪🇸 FACTURAE 3.2.2
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [España](countries/spain.md). Compruebe el espacio de nombres y la versión del esquema. Extraer datos de un XML firmado no verifica por sí solo su firma ni su aceptación por FACe.
+{% endhint %}
+
 | Propiedad              | Valor                                       |
 | ---------------------- | ------------------------------------------- |
 | **País / Región**      | España                                      |

@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico TAIWAN EGUI
 
 # 🇹🇼 TAIWAN EGUI
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Taiwán](countries/taiwan.md). La etiqueta de familia no certifica todas las publicaciones de MIG. Compruebe el esquema XML real y pruebe facturas electrónicas representativas.
+{% endhint %}
+
 | Propiedad              | Valor                                        |
 | ---------------------- | -------------------------------------------- |
 | **País / Región**      | Taiwán                                       |

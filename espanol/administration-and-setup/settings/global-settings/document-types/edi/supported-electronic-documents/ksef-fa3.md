@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico KSEF FA3
 
 # 🇵🇱 KSEF FA3
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Polonia](countries/poland.md). FA2 y FA3 utilizan estructuras diferentes. Confirme el esquema de origen y pruebe la asignación adecuada. Analizar el archivo no envía una factura a KSeF.
+{% endhint %}
+
 | Propiedad              | Valor                           |
 | ---------------------- | ------------------------------- |
 | **País / Región**      | Polonia                         |

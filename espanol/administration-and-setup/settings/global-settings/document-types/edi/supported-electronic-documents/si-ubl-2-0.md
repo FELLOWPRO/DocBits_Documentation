@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico SI-UBL 2.0
 
 # 🇳🇱 SI-UBL 2.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Países Bajos](countries/netherlands.md). Un archivo UBL no es automáticamente SI-UBL 2.0. Compruebe su identificador de personalización y la asignación nacional correspondiente.
+{% endhint %}
+
 | Propiedad              | Valor                                |
 | ---------------------- | ------------------------------------ |
 | **País / Región**      | Países Bajos                         |

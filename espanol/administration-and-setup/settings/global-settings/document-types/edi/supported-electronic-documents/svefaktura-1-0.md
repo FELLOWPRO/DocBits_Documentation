@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico SVEFAKTURA 
 
 # 🇸🇪 SVEFAKTURA 1.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Suecia](countries/sweden.md). Distinga esta familia antigua de Peppol BIS Billing 3.0. Compruebe qué perfil espera el destinatario.
+{% endhint %}
+
 | Propiedad              | Valor          |
 | ---------------------- | -------------- |
 | **País / Región**      | Suecia         |

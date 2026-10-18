@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico KOREA NTS
 
 # 🇰🇷 KOREA NTS
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Corea del Sur](countries/korea.md). Las etiquetas no indican una publicación. Haga coincidir la estructura XML real y no considere la extracción una prueba de aceptación por la plataforma fiscal.
+{% endhint %}
+
 | Propiedad              | Valor                                |
 | ---------------------- | ------------------------------------ |
 | **País / Región**      | Corea del Sur                        |

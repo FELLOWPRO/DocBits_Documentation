@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico PARAGUAY SI
 
 # 🇵🇾 PARAGUAY SIFEN
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Paraguay](countries/paraguay.md). Las entradas de clasificación de notas de crédito carecen de paquetes de extracción dedicados en el estado inspeccionado. Verifique la asignación utilizada y no trate las etiquetas como intercambiables.
+{% endhint %}
+
 | Propiedad              | Valor                                                         |
 | ---------------------- | ------------------------------------------------------------- |
 | **País / Región**      | Paraguay                                                      |

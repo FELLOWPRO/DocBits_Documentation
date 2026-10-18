@@ -32,7 +32,8 @@ async function clean(page){
   await page.locator('[data-test="email-input"]').first().fill(credentials.TEST_EMAIL2);
   await page.locator('[data-test="password-input"]').first().fill(credentials.TEST_PASSWORD2);
   await page.keyboard.press('Enter');
-  await page.waitForURL(u=>!u.pathname.includes('/login'),{timeout:60000});
+  await page.waitForURL(u=>u.pathname.startsWith('/nova/prepare-dashboard'),{timeout:90000});
+  await ready(page);
   await page.evaluate(code=>{localStorage.setItem('selected_language','__q_strn|'+code);localStorage.setItem('__tolgee_currentLanguage',code.split('-')[0]);},ui);
   await page.goto('https://dev.docbits.com/nova/settings/manage-xslt/INVOICE?tab=FACTURX',{waitUntil:'domcontentloaded'});
   await page.locator('[data-edoc-format="FACTURX"]').waitFor({state:'visible',timeout:120000});

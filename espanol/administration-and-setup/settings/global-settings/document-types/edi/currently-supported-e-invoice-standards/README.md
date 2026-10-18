@@ -1,333 +1,50 @@
 # Currently Supported E-Invoice Standards
 
-{% embed url="https://www.youtube.com/watch?v=AxrHNEmmXtg" %}
-{% endembed %}
-
-## Supported Electronic Documents by Country
-
-DocBits admite **120+** estándares de facturación electrónica y documentos en **30+ países**. La siguiente tabla está organizada por país.
-
-### 🇦🇷 Argentina
-
-| Standard | Estado |
-|---|---|
-| [ARGENTINA AFIP](../supported-electronic-documents/argentina-afip.md) | Compatible |
-| [ARGENTINA FACTURA ELECTRONICA](../supported-electronic-documents/argentina-factura-electronica.md) | Compatible |
-
-### 🇦🇹 Austria
-
-| Standard | Estado |
-|---|---|
-| ebInterface 4.3 | Compatible |
-| ebInterface 5.0 | Compatible |
-| ebInterface 6.0 | Compatible |
-| ebInterface 6.1 | Compatible |
-
-### 🇦🇺 Australia / 🇳🇿 New Zealand
-
-| Standard | Estado |
-|---|---|
-| PINT A-NZ | Compatible |
-
-### 🇧🇷 Brazil
-
-| Standard | Estado |
-|---|---|
-| [CT-e](../supported-electronic-documents/brazil-cte.md) | Compatible |
-| [NF-e](../supported-electronic-documents/brazil-nfe.md) | Compatible |
-| [NFC-e](../supported-electronic-documents/brazil-nfce.md) | Compatible |
-| [NFS-e](../supported-electronic-documents/brazil-nfse.md) | Compatible |
-
-### 🇨🇱 Chile
-
-| Standard | Estado |
-|---|---|
-| DTE | Compatible |
-| DTE FACTURA | Compatible |
-| FACTURA ELECTRONICA | Compatible |
-
-### 🇨🇳 China
-
-| Standard | Estado |
-|---|---|
-| E-FAPIAO | Compatible |
-| FAPIAO | Compatible |
-| GENERAL VAT INVOICE | Compatible |
-| SPECIAL VAT INVOICE | Compatible |
-
-### 🇨🇴 Colombia
-
-| Standard | Estado |
-|---|---|
-| [DOCUMENTO SOPORTE](../supported-electronic-documents/colombia-dian.md) | Compatible |
-| [FACTURA ELECTRONICA](../supported-electronic-documents/colombia-dian.md) | Compatible |
-
-### 🇩🇰 Denmark
-
-| Standard | Estado |
-|---|---|
-| [OIOUBL 2.1](../supported-electronic-documents/denmark-oioubl.md) | Compatible |
-
-### 🇪🇨 Ecuador
-
-| Standard | Estado |
-|---|---|
-| [FACTURA ELECTRONICA](../supported-electronic-documents/ecuador-sri.md) | Compatible |
-| [SRI](../supported-electronic-documents/ecuador-sri.md) | Compatible |
-| [SRI 1.0.0](../supported-electronic-documents/ecuador-sri.md) | Compatible |
-| [SRI 1.1.0](../supported-electronic-documents/ecuador-sri.md) | Compatible |
-| [SRI 2.0.0](../supported-electronic-documents/ecuador-sri.md) | Compatible |
-| [SRI 2.1.0](../supported-electronic-documents/ecuador-sri.md) | Compatible |
-
-### 🇪🇸 Spain
-
-| Standard | Estado |
-|---|---|
-| [Facturae](../supported-electronic-documents/spain-facturae.md) | Compatible |
-| [Facturae 3.2](../supported-electronic-documents/spain-facturae.md) | Compatible |
-| [Facturae 3.2.1](../supported-electronic-documents/spain-facturae.md) | Compatible |
-| [Facturae 3.2.2](../supported-electronic-documents/spain-facturae.md) | Compatible |
-
-### 🇪🇺 European Union
-
-| Standard | Estado |
-|---|---|
-| PEPPOL BIS 3.0 | Compatible |
-
-### 🇫🇮 Finland
-
-| Standard | Estado |
-|---|---|
-| [Finvoice 1.3](../supported-electronic-documents/finland-finvoice.md) | Compatible |
-| [Finvoice 2.0](../supported-electronic-documents/finland-finvoice.md) | Compatible |
-| [Finvoice 2.01](../supported-electronic-documents/finland-finvoice.md) | Compatible |
-| [Finvoice 3.0](../supported-electronic-documents/finland-finvoice.md) | Compatible |
-| [TEAPPSXML](../supported-electronic-documents/finland-teappsxml.md) | Compatible |
-
-### 🇫🇷 France
-
-| Standard | Estado |
-|---|---|
-| Factur-X | Compatible |
-| Factur-X 1.0.05 / ZUGFeRD 2.1 | Compatible |
-| Factur-X 1.0.07.2 / ZUGFeRD 2.3.2 | Compatible |
-| [Factur-X 1.09 / ZUGFeRD 2.5](../supported-electronic-documents/facturx-1-09-zugferd-2-5.md) | Compatible |
-
-### 🇩🇪 Germany
-
-| Standard | Estado |
-|---|---|
-| XRechnung 1.0 CII | Compatible |
-| XRechnung 1.0 UBL | Compatible |
-| XRechnung 1.1 CII | Compatible |
-| XRechnung 1.1 UBL | Compatible |
-| XRechnung 1.2 CII | Compatible |
-| XRechnung 1.2 UBL | Compatible |
-| XRechnung 1.2.1 CII | Compatible |
-| XRechnung 1.2.1 UBL | Compatible |
-| XRechnung 1.2.2 CII | Compatible |
-| XRechnung 1.2.2 UBL | Compatible |
-| XRechnung 2.0 CII | Compatible |
-| XRechnung 2.0 UBL | Compatible |
-| XRechnung 2.0.1 CII | Compatible |
-| XRechnung 2.0.1 UBL | Compatible |
-| XRechnung 2.1 CII | Compatible |
-| XRechnung 2.1 UBL | Compatible |
-| XRechnung 2.2 CII | Compatible |
-| XRechnung 2.2 UBL | Compatible |
-| XRechnung 2.3 CII | Compatible |
-| XRechnung 2.3 UBL | Compatible |
-| XRechnung 3.0 CII | Compatible |
-| XRechnung 3.0 UBL | Compatible |
-| XRechnung 3.0.1 CII | Compatible |
-| XRechnung 3.0.1 UBL | Compatible |
-| XRechnung 3.0.2 CII | Compatible |
-| XRechnung 3.0.2 UBL | Compatible |
-| ZUGFeRD 1.0 | Compatible |
-| ZUGFeRD 1.0 Basic | Compatible |
-| ZUGFeRD 1.0 Comfort | Compatible |
-| ZUGFeRD 1.0 Extended | Compatible |
-| ZUGFeRD 2.2 | Compatible |
-| ZUGFeRD 2.3 | Compatible |
-| ZUGFeRD 2.3.2 | Compatible |
-| [ZUGFeRD 2.5](../supported-electronic-documents/zugferd-2-5.md) | Compatible |
-
-### 🇮🇳 India
-
-| Standard | Estado |
-|---|---|
-| [GST E-Invoice](../supported-electronic-documents/india-gst-e-invoice.md) | Compatible |
-
-### 🇮🇩 Indonesia
-
-| Standard | Estado |
-|---|---|
-| E-Faktur | Compatible |
-
-### 🇮🇹 Italy
-
-| Standard | Estado |
-|---|---|
-| FatturaPA | Compatible |
-
-### 🇯🇵 Japan
-
-| Standard | Estado |
-|---|---|
-| JP PINT | Compatible |
-| JP PINT Self-Billing | Compatible |
-
-### 🇰🇿 Kazakhstan
-
-| Standard | Estado |
-|---|---|
-| ESF | Compatible |
-
-### 🇰🇷 Korea
-
-| Standard | Estado |
-|---|---|
-| E-Tax Invoice | Compatible |
-| NTS | Compatible |
-
-### 🇲🇾 Malaysia
-
-| Standard | Estado |
-|---|---|
-| MyInvois | Compatible |
-
-### 🇲🇽 Mexico
-
-| Standard | Estado |
-|---|---|
-| CFDI 3.3 | Compatible |
-| CFDI 4.0 | Compatible |
-
-### 🇳🇱 Netherlands
-
-| Standard | Estado |
-|---|---|
-| SI-UBL 2.0 | Compatible |
-
-### 🇳🇴 Norway
-
-| Standard | Estado |
-|---|---|
-| EHF Invoice 3.0 | Compatible |
-
-### 🇵🇾 Paraguay
-
-| Standard | Estado |
-|---|---|
-| DTE | Compatible |
-| SIFEN | Compatible |
-| SIFEN 150 | Compatible |
-
-### 🇵🇪 Peru
-
-| Standard | Estado |
-|---|---|
-| CPE | Compatible |
-| CPE UBL 2.0 | Compatible |
-| CPE UBL 2.1 | Compatible |
-| FACTURA ELECTRONICA | Compatible |
-
-### 🇵🇭 Philippines
-
-| Standard | Estado |
-|---|---|
-| EIS | Compatible |
-
-### 🇵🇱 Poland
-
-| Standard | Estado |
-|---|---|
-| KSeF | Compatible |
-| KSeF FA2 | Compatible |
-| KSeF FA3 | Compatible |
-
-### 🇸🇦 Saudi Arabia
-
-| Standard | Estado |
-|---|---|
-| ZATCA Fatoorah | Compatible |
-| ZATCA Reporting | Compatible |
-| ZATCA Simplified | Compatible |
-| ZATCA Tax Invoice | Compatible |
-
-### 🇸🇬 Singapore
-
-| Standard | Estado |
-|---|---|
-| InvoiceNow | Compatible |
-| InvoiceNow SG | Compatible |
-
-### 🇸🇮 Slovenia
-
-| Standard | Estado |
-|---|---|
-| e-SLOG 1.6 | Compatible |
-| e-SLOG 2.0 | Compatible |
-
-### 🇸🇪 Sweden
-
-| Standard | Estado |
-|---|---|
-| Svefaktura 1.0 | Compatible |
-
-### 🇹🇼 Taiwan
-
-| Standard | Estado |
-|---|---|
-| eGUI | Compatible |
-
-### 🇹🇭 Thailand
-
-| Standard | Estado |
-|---|---|
-| E-Tax Invoice | Compatible |
-
-### 🇹🇷 Turkey
-
-| Standard | Estado |
-|---|---|
-| E-Arsiv | Compatible |
-| E-Fatura | Compatible |
-
-### 🇦🇪 United Arab Emirates
-
-| Standard | Estado |
-|---|---|
-| VAT Invoice | Compatible |
-
-### 🇺🇾 Uruguay
-
-| Standard | Estado |
-|---|---|
-| CFE | Compatible |
-| CFE 24 | Compatible |
-| CFE 25 | Compatible |
-| E-Factura | Compatible |
-| E-Nota Credito | Compatible |
-
-### 🇻🇳 Vietnam
-
-| Standard | Estado |
-|---|---|
-| E-Invoice | Compatible |
-
-### International / Multi-Country Standards
-
-| Standard | Estado |
-|---|---|
-| BOD | Compatible |
-| EDI | Compatible |
-| INVOIC02 | Compatible |
-| SPS Commerce RSX 7.7.4 | Compatible |
-| UBL 2.1 | Compatible |
-
-## Roadmap for Upcoming Implementation
-
-{% content-ref url="roadmap.md" %}
-[roadmap.md](roadmap.md)
-{% endcontent-ref %}
+Empiece por el documento de origen y la guía del país correspondiente. El nombre de un país por sí solo no identifica un formato de archivo. Una etiqueta de versión, una sintaxis XML y un perfil de negocio describen aspectos diferentes.
+
+Consulte las guías por país para conocer las etiquetas de formato exactas, la sintaxis, los límites de versión y el estado de configuración inspeccionado. [Formatos, versiones y guías por país de eDocs](../supported-electronic-documents/README.md).
+
+Las tablas recogen una comprobación del catálogo de desarrollo realizada el 17 de octubre de 2026 y del código de procesamiento correspondiente. Describen las reglas y los componentes de configuración disponibles; no certifican todos los archivos, los requisitos legales ni el despliegue en producción. Su organización puede sobrescribir los valores predeterminados.
+
+| País / región | Familias y alcance de versiones | Resultado del catálogo |
+| --- | --- | --- |
+| [Austria](../supported-electronic-documents/countries/austria.md) | ebInterface 4.3, 5.0, 6.0 y 6.1 tienen entradas independientes. | Entradas encontradas |
+| [Dinamarca](../supported-electronic-documents/countries/denmark.md) | OIOUBL 2.1 es la entrada danesa identificada por nombre. | Entradas encontradas |
+| [Finlandia](../supported-electronic-documents/countries/finland.md) | Finvoice 1.3, 2.0, 2.01 y 3.0 tienen entradas independientes. TEAPPSXML es otra familia. | Entradas encontradas |
+| [Francia](../supported-electronic-documents/countries/france.md) | Factur-X tiene entradas genéricas y específicas de publicación, incluidas 1.0.05, 1.08 y 1.09. VRBL FR CIUS 1.0 es independiente. | Entradas encontradas |
+| [Alemania](../supported-electronic-documents/countries/germany.md) | XRechnung tiene trece etiquetas de versión de 1.0 a 3.0.2, cada una en CII y UBL. ZUGFeRD incluye perfiles antiguos y entradas 2.5 en CII y UBL. | Entradas encontradas |
+| [Italia](../supported-electronic-documents/countries/italy.md) | FatturaPA es la familia italiana configurada. | Entradas encontradas |
+| [Países Bajos](../supported-electronic-documents/countries/netherlands.md) | SI-UBL 2.0 tiene una entrada dedicada. | Entradas encontradas |
+| [Noruega](../supported-electronic-documents/countries/norway.md) | EHF Invoice 3.0 figura junto a EHF Order, Order Response y Despatch Advice. | Entradas encontradas |
+| [Polonia](../supported-electronic-documents/countries/poland.md) | KSeF tiene entradas genéricas, FA2 y FA3. | Entradas encontradas |
+| [Eslovenia](../supported-electronic-documents/countries/slovenia.md) | e-SLOG 1.6 y 2.0 tienen entradas independientes. | Entradas encontradas |
+| [España](../supported-electronic-documents/countries/spain.md) | Facturae tiene entradas genéricas, 3.2, 3.2.1 y 3.2.2. | Entradas encontradas |
+| [Suecia](../supported-electronic-documents/countries/sweden.md) | Svefaktura 1.0 es la entrada sueca identificada por nombre. | Entradas encontradas |
+| [Australia](../supported-electronic-documents/countries/australia.md) | PINT A-NZ tiene entradas de reglas para facturas y notas de crédito compartidas con Nueva Zelanda. | Entradas encontradas |
+| [Nueva Zelanda](../supported-electronic-documents/countries/new-zealand.md) | PINT A-NZ tiene entradas de reglas para facturas y notas de crédito compartidas con Australia. | Entradas encontradas |
+| [India](../supported-electronic-documents/countries/india.md) | India GST E-Invoice y GST CreditNote tienen entradas independientes. | Entradas encontradas |
+| [Indonesia](../supported-electronic-documents/countries/indonesia.md) | Indonesia E-Faktur es la familia configurada. | Entradas encontradas |
+| [China](../supported-electronic-documents/countries/china.md) | El catálogo incluye Fapiao, E-Fapiao, General VAT Invoice y Special VAT Invoice. | Entradas encontradas |
+| [Japón](../supported-electronic-documents/countries/japan.md) | JP PINT y JP PINT Self-Billing son entradas independientes. | Entradas encontradas |
+| [Corea del Sur](../supported-electronic-documents/countries/korea.md) | Korea E-Tax Invoice y Korea NTS son familias configuradas. | Entradas encontradas |
+| [Malasia](../supported-electronic-documents/countries/malaysia.md) | MyInvois tiene entradas de reglas para facturas y notas de crédito. | Entradas encontradas |
+| [Filipinas](../supported-electronic-documents/countries/philippines.md) | Philippines EIS es la familia configurada. | Entradas encontradas |
+| [Singapur](../supported-electronic-documents/countries/singapore.md) | InvoiceNow tiene entradas para facturas y notas de crédito. InvoiceNow SG es otra etiqueta configurada. | Entradas encontradas |
+| [Taiwán](../supported-electronic-documents/countries/taiwan.md) | Taiwan eGUI es la familia configurada. | Entradas encontradas |
+| [Tailandia](../supported-electronic-documents/countries/thailand.md) | Thailand E-Tax Invoice es la familia configurada. | Entradas encontradas |
+| [Vietnam](../supported-electronic-documents/countries/vietnam.md) | Vietnam E-Invoice es la familia configurada. | Entradas encontradas |
+| [Argentina](../supported-electronic-documents/countries/argentina.md) | Argentina AFIP y Factura Electronica son etiquetas configuradas. | Entradas encontradas |
+| [Brasil](../supported-electronic-documents/countries/brazil.md) | Brasil tiene entradas NF-e, NFC-e, CT-e, NFS-e y SPED NFS-e. NFS-e incluye las versiones 1.00 y de 2.00 a 2.04; SPED incluye 1.00.02 y 1.01. | Entradas encontradas |
+| [Chile](../supported-electronic-documents/countries/chile.md) | Chile DTE tiene entradas de facturas, notas de crédito y guías de despacho. | Entradas encontradas |
+| [Colombia](../supported-electronic-documents/countries/colombia.md) | Colombia Factura Electronica y Documento Soporte tienen entradas independientes. | Entradas encontradas |
+| [Costa Rica](../supported-electronic-documents/countries/costa-rica.md) | La documentación anterior menciona Costa Rica, pero no se encontró ninguna entrada de clasificación o configuración coincidente en el catálogo de desarrollo inspeccionado. | Sin confirmar |
+| [Ecuador](../supported-electronic-documents/countries/ecuador.md) | Ecuador SRI tiene entradas genéricas, 1.0.0, 1.1.0, 2.0.0 y 2.1.0. La retención es un tipo de documento independiente. | Entradas encontradas |
+| [México](../supported-electronic-documents/countries/mexico.md) | Mexico CFDI 3.3 y 4.0 tienen entradas independientes. | Entradas encontradas |
+| [Paraguay](../supported-electronic-documents/countries/paraguay.md) | Paraguay DTE, SIFEN y SIFEN 150 son etiquetas configuradas. | Entradas encontradas |
+| [Perú](../supported-electronic-documents/countries/peru.md) | Peru CPE tiene entradas genéricas, UBL 2.0 y UBL 2.1. Factura Electronica es otra etiqueta. | Entradas encontradas |
+| [Uruguay](../supported-electronic-documents/countries/uruguay.md) | Uruguay CFE tiene entradas genéricas, 24 y 25. También figuran E-Factura y E-Nota Credito. | Entradas encontradas |
+| [Kazajistán](../supported-electronic-documents/countries/kazakhstan.md) | Kazakhstan ESF es la familia configurada. | Entradas encontradas |
+| [Arabia Saudí](../supported-electronic-documents/countries/saudi-arabia.md) | ZATCA Fatoorah, Reporting, Simplified y Tax Invoice tienen entradas independientes. | Entradas encontradas |
+| [Turquía](../supported-electronic-documents/countries/turkey.md) | Turkey E-Fatura y E-Arsiv son familias configuradas independientes. | Entradas encontradas |
+| [Emiratos Árabes Unidos](../supported-electronic-documents/countries/united-arab-emirates.md) | UAE VAT Invoice es la etiqueta configurada. | Entradas encontradas |
+| [Internacional](../supported-electronic-documents/countries/international.md) | Las entradas internacionales incluyen Peppol BIS 3.0, UBL 2.1, CII puro, EDI, INVOIC02, cXML, OCI, BOD y SPS Commerce RSX 7.7.4. | Entradas encontradas |

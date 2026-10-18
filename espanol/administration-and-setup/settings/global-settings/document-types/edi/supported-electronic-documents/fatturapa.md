@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico FATTURAPA
 
 # 🇮🇹 FATTURAPA
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Italia](countries/italy.md). La etiqueta de familia no certifica todas las publicaciones de FatturaPA ni la transmisión por SDI. Compruebe el esquema de origen y los requisitos del receptor.
+{% endhint %}
+
 | Propiedad              | Valor                                    |
 | ---------------------- | ---------------------------------------- |
 | **País / Región**      | Italia                                   |

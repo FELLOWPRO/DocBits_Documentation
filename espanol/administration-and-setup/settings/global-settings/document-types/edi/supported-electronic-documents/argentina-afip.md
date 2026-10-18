@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico ARGENTINA A
 
 # 🇦🇷 ARGENTINA AFIP
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Argentina](countries/argentina.md). La entrada de clasificación de notas de crédito no tiene un paquete de extracción dedicado en el estado inspeccionado. Verifique la asignación utilizada y pruebe un ejemplo real de nota de crédito.
+{% endhint %}
+
 | Propiedad            | Valor                                                                      |
 | -------------------- | -------------------------------------------------------------------------- |
 | **País / Región**    | Argentina                                                                  |

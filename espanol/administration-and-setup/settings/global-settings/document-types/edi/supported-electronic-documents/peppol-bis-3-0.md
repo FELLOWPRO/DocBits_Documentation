@@ -4,6 +4,12 @@ description: Compatibilidad de DocBits con el documento electrónico PEPPOL BIS 
 
 # 🇪🇺 PEPPOL BIS 3.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Internacional](countries/international.md). Las asignaciones de facturas, pedidos, respuestas y avisos de expedición son diferentes. El procesamiento de archivos no proporciona por sí mismo un punto de acceso Peppol ni conectividad con socios comerciales.
+{% endhint %}
+
 | Propiedad              | Valor                                             |
 | ---------------------- | ------------------------------------------------- |
 | **País / Región**      | Unión Europea / Internacional (más de 40 países)  |

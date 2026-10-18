@@ -65,3 +65,5 @@ Uruchom przepływ za pomocą elementu sterującego odtwarzaniem, zweryfikuj go i
 
 - Zobacz, co robi każda karta, w sekcji **Cards**.
 - W przypadku prostych liniowych automatyzacji szybszy w konfiguracji jest kreator **Standard Workflow**.
+
+[Zobacz wszystkie pięć rozdziałów](advanced-workflow-videos.md)

@@ -2,9 +2,9 @@
 
 ## Vidéo: Variables, tests et activation
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/fr.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/fr.mp4" %}
 
-[Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/fr.vtt) · 1:53
+[Ouvrir la vidéo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/fr.mp4) · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/fr.vtt) · 1:57
 
 <details>
 <summary>Transcription</summary>
@@ -25,9 +25,9 @@ Cliquez sur Valider. Examinez erreurs et avertissements au-dessus du canevas. Un
 
 La lecture dans la barre ouvre le choix du document. Choisissez document, données personnalisées ou test sans document pour les cartes indépendantes. Start lance directement. Les tests incluent les modifications non enregistrées et simulent les actions destructrices.
 
-**Examinez les résultats**
+**Préparer et vérifier les scénarios de test**
 
-Examinez messages et durées : vert, succès ; orange, condition fausse ; rouge, erreur ; gris, ignoré. Corrigez et retestez. Le gestionnaire de tests permet des scénarios reproductibles : succès, alternatives, données absentes et erreurs.
+Préparez des tests au-dessus, au-dessous et exactement à mille, puis sans données. Après exécution, vérifiez les messages et les durées : vert signifie réussite, orange faux, rouge erreur, gris ignoré. Retestez les corrections. Le gestionnaire de tests permet de répéter les scénarios.
 
 **Enregistrez avant d’activer**
 

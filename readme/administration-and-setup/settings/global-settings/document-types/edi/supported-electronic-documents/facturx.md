@@ -4,6 +4,12 @@ description: Suporte a documentos eletrônicos FACTURX no DocBits
 
 # 🇫🇷 FACTURX
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [França](countries/france.md). O marcador XML 1p0 e Factur-X XMP Version 1.0 não identificam uma edição da publicação. Mantenha a designação genérica quando a edição for desconhecida.
+{% endhint %}
+
 | Propriedade | Valor |
 | --- | --- |
 | **País / Região** | França / Alemanha |
@@ -12,7 +18,7 @@ description: Suporte a documentos eletrônicos FACTURX no DocBits
 | **Padrão** | Factur-X |
 | **Baseado em** | EN 16931 |
 
-O Factur-X é a implementação francesa do padrão híbrido franco-alemão de fatura. Ele incorpora dados XML CII estruturados em um documento PDF/A-3, permitindo um faturamento legível por pessoas e processável por máquinas. O DocBits detecta automaticamente a versão e o perfil do Factur-X a partir do XML incorporado.
+Um Guideline ID CII harmonizado pode identificar uma família e um perfil, embora várias edições partilhem o mesmo marcador 1p0. Factur-X XMP Version 1.0 é um marcador de esquema, não uma edição da publicação como 1.08 ou 1.09. O XMP do ZUGFeRD pode declarar a sua versão. Se não existirem metadados fiáveis, mantenha o resultado da família genérica e confirme o ficheiro original com o remetente.
 
 ## Status de suporte
 

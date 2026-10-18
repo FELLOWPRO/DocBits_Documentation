@@ -4,6 +4,12 @@ description: Suporte para o documento eletrônico KOREA E-TAX INVOICE no DocBits
 
 # 🇰🇷 KOREA E-TAX INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [Coreia do Sul](countries/korea.md). As designações não indicam uma edição. Faça corresponder a estrutura XML real e não considere a extração como prova de aceitação pela plataforma fiscal.
+{% endhint %}
+
 | Propriedade          | Valor                              |
 | -------------------- | ---------------------------------- |
 | **País / Região**    | Coreia do Sul                      |

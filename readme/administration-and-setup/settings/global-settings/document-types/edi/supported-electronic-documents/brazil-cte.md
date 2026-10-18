@@ -4,6 +4,12 @@ description: Suporte a documentos eletrônicos BRAZIL CT-E no DocBits
 
 # 🇧🇷 BRAZIL CT-E
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [Brasil](countries/brazil.md). São famílias de documentos diferentes. Uma versão NFS-e configurada não certifica todos os esquemas municipais nem todos os formatos nacionais de faturas de serviços.
+{% endhint %}
+
 | Propriedade | Valor |
 | --- | --- |
 | **País / Região** | Brasil |

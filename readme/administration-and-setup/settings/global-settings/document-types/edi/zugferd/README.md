@@ -204,3 +204,7 @@ O XSLT de TRANSFORMATION padrão distribui os blocos `ApplicableTradeTax` em tr�
 ## Regras efetivas e ativação
 
 Se uma nota de crédito eletrónica aparecer como Invoice, siga o [guia de resolução de problemas de classificação](../credit-note-recognized-as-invoice.md). Este explica como verificar a origem personalizada ou predefinida efetivamente utilizada, os códigos de tipo, os Extraction Paths e a ativação segura.
+
+## Guias por país
+
+Consulte os guias por país para obter as designações exatas dos formatos, a sintaxe, os limites das versões e o estado da configuração examinada. [Formatos, versões e guias por país para eDocs](../supported-electronic-documents/README.md).

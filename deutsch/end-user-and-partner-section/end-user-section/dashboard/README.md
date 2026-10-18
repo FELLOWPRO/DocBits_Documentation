@@ -20,7 +20,13 @@ Die deutsche Sprecherfassung erklärt in 1:57 Minuten Suche, Filter, Spalten, Do
 Dashboard erklärt – mit deutscher Sprecherstimme
 {% endfile %}
 
-[Untertitel herunterladen (VTT)](../../../.gitbook/assets/dashboard-tour-de-v1.vtt) · [Transkript lesen](../../../.gitbook/assets/dashboard-tour-de-v1.txt)
+{% file src="../../../.gitbook/assets/dashboard-tour-de-v1.vtt" %}
+Deutsche Untertitel herunterladen (VTT)
+{% endfile %}
+
+{% file src="../../../.gitbook/assets/dashboard-tour-de-v1.txt" %}
+Deutsches Transkript herunterladen
+{% endfile %}
 
 ## Die tägliche Arbeit beginnen
 

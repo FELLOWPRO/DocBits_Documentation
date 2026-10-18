@@ -8,6 +8,22 @@ Verwenden Sie diese Anleitung, um die konfigurierte Familie und den Versionsumfa
 
 [Alle Länder und Umfang der Unterstützung](../README.md)
 
+## Erklärvideo zum Land
+
+Ein Sprechertext und WebVTT-Untertitel in der jeweiligen Sprache erklären Formatauswahl, Konfiguration und Abnahmeprüfungen.
+
+Dieser lesende Rundgang zeigt die in DocBits vorhandene Konfiguration für das Land. Prüfen Sie die verwendete Quelle und aktive Version und testen Sie repräsentative Rechnungen, Gutschriften und Exporte in Ihrer eigenen Organisation.
+
+{% embed url="https://2396827744-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhNyN4taXWt0p7OGOOSfW%2Fuploads%2Fgit-blob-87afa928877a27c1f28d461c88bb1d9da355804d%2Fedocs-support-germany-de-v2.mp4?alt=media" %}
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-germany-de-v2.mp4" %}
+Deutschland — Erklärvideo zum Land
+{% endfile %}
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-germany-de-v2.vtt" %}
+WebVTT
+{% endfile %}
+
 ## Varianten und Versionsgrenzen
 
 XRechnung hat dreizehn Versionsbezeichnungen von 1.0 bis 3.0.2, jeweils in CII und UBL. ZUGFeRD umfasst ältere Profile sowie Einträge für 2.5 in CII und UBL.
@@ -118,20 +134,6 @@ MINIMUM und BASIC WL können Positionsinformationen auslassen, die in nachgelage
 ## Die Zuordnung in DocBits finden
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-germany-de.png" alt="Deutschland: XRECHNUNG 3.0 CII"><figcaption><p>Echte Entwicklungsoberfläche: das repräsentative Format und seine verfügbaren Konfigurationskomponenten. Weitere Versionen sind in der Matrix aufgeführt.</p></figcaption></figure>
-
-## Erklärvideo zum Land
-
-Ein Sprechertext und WebVTT-Untertitel in der jeweiligen Sprache erklären Formatauswahl, Konfiguration und Abnahmeprüfungen.
-
-Dieser lesende Rundgang zeigt die in DocBits vorhandene Konfiguration für das Land. Prüfen Sie die verwendete Quelle und aktive Version und testen Sie repräsentative Rechnungen, Gutschriften und Exporte in Ihrer eigenen Organisation.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-germany-de-v2.mp4" %}
-Deutschland — Erklärvideo zum Land
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-germany-de-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Abnahmeprüfungen
 

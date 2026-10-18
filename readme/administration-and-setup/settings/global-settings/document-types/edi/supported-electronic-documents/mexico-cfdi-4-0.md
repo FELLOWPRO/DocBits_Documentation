@@ -4,6 +4,12 @@ description: Supporto per documenti elettronici MEXICO CFDI 4.0 in DocBits
 
 # 🇲🇽 MEXICO CFDI 4.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Messico](countries/mexico.md). Verificate lo spazio dei nomi, la versione e TipoDeComprobante. Un importo negativo non basta a identificare una nota di credito; l’analisi del file non certifica l’autorizzazione del SAT.
+{% endhint %}
+
 | Proprietà             | Valore                                             |
 | --------------------- | -------------------------------------------------- |
 | **Paese / Regione**   | Messico                                            |

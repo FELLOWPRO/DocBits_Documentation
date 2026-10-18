@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.765
+Colombia Factura Electronica e Documento
+Soporte hanno voci separate. La voce di
+
+formats_02
+00:00:05.765 --> 00:00:10.699
+classificazione delle note di credito non
+ha un insieme di componenti di estrazione
+
+formats_03
+00:00:10.699 --> 00:00:16.515
+dedicato nello stato esaminato. Confermate
+la mappatura effettivamente utilizzata
+
+formats_04
+00:00:16.515 --> 00:00:20.133
+anziché dedurre il supporto dalla voce per
+le fatture.
+
+workflow_01
+00:00:20.883 --> 00:00:26.642
+Aprite E-Doc per il formato rilevato.
+Confrontate Transformation, Preview ed
+
+workflow_02
+00:00:26.642 --> 00:00:33.677
+Extraction Paths. Le regole Custom hanno
+la precedenza. Salvare una bozza non la
+
+workflow_03
+00:00:33.677 --> 00:00:34.600
+attiva.
+
+accept_01
+00:00:35.350 --> 00:00:41.329
+Provate una fattura e una nota di credito,
+se applicabile. Verificate gli importi, le
+
+accept_02
+00:00:41.329 --> 00:00:46.321
+parti e il tipo di documento esportato.
+L’analisi del file non dimostra
+
+accept_03
+00:00:46.321 --> 00:00:50.000
+l’autorizzazione fiscale né la consegna
+tramite rete.
+

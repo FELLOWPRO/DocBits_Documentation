@@ -116,6 +116,7 @@
     * [Create a ticket](end-user-and-partner-section/end-user-section/technical-support-in-docbits/create-a-ticket.md)
     * [Help Icons](end-user-and-partner-section/end-user-section/technical-support-in-docbits/help-icons.md)
     * [Debug Collector](end-user-and-partner-section/end-user-section/debug-collector.md)
+    * [System Logs](end-user-and-partner-section/end-user-section/system-logs.md)
   * [Idea Board](end-user-and-partner-section/end-user-section/idea-board.md)
   * [Course](end-user-and-partner-section/end-user-section/course/README.md)
     * [Introduction](end-user-and-partner-section/end-user-section/course/introduction.md)

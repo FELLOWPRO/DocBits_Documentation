@@ -66,6 +66,22 @@ def main():
     out = PIPELINE / "out-v2/edocs_credit_note"
     mirror = ROOT / FOLDERS[locale]
     provenance = json.loads((out / f"{locale}.provenance.json").read_text())
+    capture_receipt = provenance["ui_picture"]["capture"]
+    assert capture_receipt["locale"] == locale and not capture_receipt["mutations"]
+    required_focus = {
+        "transformation",
+        "transformation-code",
+        "extraction-paths",
+        "extraction-paths-code",
+    }
+    focused = {
+        row["name"]
+        for row in capture_receipt["captures"]
+        if (row.get("focus") or {}).get("found")
+    }
+    assert (
+        required_focus <= focused
+    ), "Required classification code was not located before capture"
     for name, expected in provenance["source_inputs"].items():
         assert digest(PIPELINE / name) == expected, name
     qa = json.loads((out / f"{locale}.qa.json").read_text())

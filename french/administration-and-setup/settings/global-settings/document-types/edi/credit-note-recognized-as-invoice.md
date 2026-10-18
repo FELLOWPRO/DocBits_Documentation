@@ -9,11 +9,15 @@ Un avoir électronique peut apparaître comme **Invoice** alors que son XML d’
 
 ## Vérifier la classification des avoirs électroniques
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-fr.mp4" %}
+La vidéo montre une vérification en lecture seule dans DocBits, avec FACTURX 1.0.05 / ZUGFeRD 2.1 comme exemple. Les correspondances et les versions peuvent différer dans votre organisation. Vérifiez toujours la Transformation active du format détecté.
+
+L’ancien exemple XSLT montré dans la vidéo contient des branches pour 381 et 389. Vérifiez dans la Transformation réelle les codes conservés par cette version précise ; la liste générale ne prouve pas leur prise en charge dans toutes les anciennes correspondances.
+
+{% file src="../../../../../.gitbook/assets/edocs-credit-note-fr-v2.mp4" %}
 Vérifier la classification des avoirs électroniques
 {% endfile %}
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-fr.vtt" %}
+{% file src="../../../../../.gitbook/assets/edocs-credit-note-fr-v2.vtt" %}
 WebVTT
 {% endfile %}
 

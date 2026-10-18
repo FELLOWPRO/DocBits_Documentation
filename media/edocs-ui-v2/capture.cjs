@@ -43,7 +43,13 @@ async function shot(page,name,locator,focus,folder=out,receipt=evidence) {
   fs.writeFileSync(path.join(folder,'capture.json'),JSON.stringify(receipt,null,2)+'\n');
   console.log(JSON.stringify({locale,capture:name}));
 }
-async function seekCode(page,term) {
+async function seekCode(page,term,required=false) {
+  if(required)await page.waitForFunction(term=>{
+    const surface=document.querySelector('.code-editor-surface');let component=surface?.__vueParentComponent;
+    while(component&&!component.proxy?.editorInstance)component=component.parent;
+    const editor=surface?.env?.editor||component?.proxy?.editorInstance;
+    return editor?.getValue()?.toLowerCase().includes(term.toLowerCase());
+  },term,{timeout:60000});
   return page.evaluate(term=>{
     const surface=document.querySelector('.code-editor-surface');
     let component=surface?.__vueParentComponent;
@@ -83,7 +89,7 @@ async function main(){
       await card.locator('tr.xslt-row').nth(index).locator('td').first().click();
       await ready(page);await language(page);
       await page.locator('.code-editor-surface').waitFor({state:'visible',timeout:60000});
-      const focus=term?await seekCode(page,term):null;
+      const focus=term?await seekCode(page,term,true):null;
       await page.waitForTimeout(400);await shot(page,name,null,focus);
       await shot(page,name+'-code',page.locator('.import-container'),focus);
       if(index===0) {
@@ -97,7 +103,10 @@ async function main(){
       await card.waitFor({state:'visible',timeout:60000});await card.scrollIntoViewIfNeeded();
     }
     await page.goto('https://dev.docbits.com/nova/settings/modules/document-integration',{waitUntil:'domcontentloaded'});
+    await page.locator('.settings-toggle-label').first().waitFor({state:'visible',timeout:120000});
     await ready(page);await language(page);
+    // Settings data can finish loading after the route shell. Select the label
+    // only after the real controls exist and the local translation is applied.
     const signLabel=await page.evaluate(()=>document.querySelector('#q-app').__vue_app__.config.globalProperties.$t('set_negative_sign_for_credit_notes'));
     const sign=page.locator('.settings-card').filter({has:page.locator('.settings-toggle-label').filter({hasText:signLabel})}).first();
     await sign.waitFor({state:'visible',timeout:60000});await sign.scrollIntoViewIfNeeded();

@@ -21,6 +21,13 @@
       "vtt_sha256": "7f33a60073c8e445576f0ffd9fc10c317ac078f33de93d661fbf6a2800f39bb8",
       "duration_ms": 116767,
       "listening_review": "not performed"
+    },
+    "fr": {
+      "version": 2,
+      "mp4_sha256": "d4a9de127e5316f6e81e829367f5d7d0f26260a27a215c15ed13c2b1b8c18426",
+      "vtt_sha256": "423f0d68281a1d07b4c2543f16569d83722f953cd05dba76ed72c254b0aa39ce",
+      "duration_ms": 99567,
+      "listening_review": "not performed"
     }
   },
   "countries": {

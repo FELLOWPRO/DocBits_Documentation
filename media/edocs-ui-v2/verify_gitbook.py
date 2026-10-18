@@ -58,6 +58,23 @@ def main():
     section = SECTION
     if args.locale == "zh":
         section = section.replace("administration-and-setup", "guan-li-yu-she-zhi")
+    overview_url = f"{preview}/{section}/supported-electronic-documents?review={status['sha'][:12]}"
+    with get(overview_url) as response:
+        assert response.status == 200
+        overview_markup = response.read().decode()
+    catalogue = json.loads(
+        (ROOT / "media/edocs-country-support/evidence/catalog.json").read_text()
+    )
+    guide_slugs = [country["slug"] for country in catalogue["countries"]]
+    overview_links = {
+        html.unescape(value).split("?")[0].split("#")[0].rstrip("/")
+        for value in re.findall(r'href="([^"]+)"', overview_markup)
+    }
+    for slug in guide_slugs:
+        assert any(
+            link.endswith("/supported-electronic-documents/" + slug)
+            for link in overview_links
+        ), (overview_url, slug)
     for page, stem in targets:
         filename = f"{stem}-{args.locale}-v2.mp4"
         # A request made before import completion can leave a cached 404.
@@ -96,7 +113,13 @@ def main():
     evidence.mkdir(parents=True, exist_ok=True)
     (evidence / "gitbook.json").write_text(
         json.dumps(
-            dict(commit=status["sha"], import_state="success", attachments=receipts),
+            dict(
+                commit=status["sha"],
+                import_state="success",
+                overview=overview_url,
+                linked_country_guides=len(guide_slugs),
+                attachments=receipts,
+            ),
             indent=2,
         )
         + "\n"

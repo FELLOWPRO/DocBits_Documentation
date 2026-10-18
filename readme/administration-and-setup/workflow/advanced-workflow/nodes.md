@@ -1,5 +1,42 @@
 # Nodi
 
+## Video: Nodi e percorsi
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/it.mp4" %}
+
+[Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/it.vtt) · 1:53
+
+<details>
+<summary>Trascrizione</summary>
+
+**Il ruolo di ogni nodo**
+
+Start avvia manualmente. When definisce un evento. Nessuno dei due accetta connessioni in ingresso. And verifica una condizione. Then esegue un’azione. Entrambi i costruttori condividono il catalogo delle schede. Le note spiegano senza essere eseguite.
+
+**Tre risultati distinti**
+
+Trascina un’uscita sull’ingresso successivo. Nel designer, blu significa successo, arancione condizione falsa, rosso errore. And ha tre risultati; Then, successo ed errore. Le viste di esecuzione mostrano il successo in verde.
+
+**Crea un’alternativa**
+
+Verifica se una fattura supera la soglia. Collega blu all’approvazione, arancione all’elaborazione normale e rosso alla gestione errori. Una condizione falsa può continuare sul percorso collegato; non arresta tutti i rami.
+
+**Unisci con Wait ALL**
+
+Wait ALL unisce i rami. Ogni nodo sorgente deve aver seguito un percorso collegato alla giunzione. Collega entrambi i controlli richiesti e l’azione successiva. Un percorso non selezionato non fornisce il risultato necessario.
+
+**Alternative con ANY e OR**
+
+Wait ANY e OR uniscono i rami quando almeno una sorgente segue un percorso collegato. OR richiede due nodi sorgente distinti. Queste giunzioni non creano scelte esclusive né annullano altre azioni. Prova l’intero grafo.
+
+**Mantieni il grafo eseguibile**
+
+I nodi devono essere raggiungibili da un ingresso. Evita cicli e connessioni in ingresso a Start o When. Includi un’azione Then e convalida i percorsi. I nodi Delay importati richiedono una durata positiva; Aggiungi non offre Delay.
+
+</details>
+
+[Guarda i cinque capitoli](../advanced-workflow-videos.md)
+
 Un Advanced Workflow è un grafo di **nodi** collegati da archi. Aggiungi i nodi dal menu **+ Add** (o facendo clic con il tasto destro sul canvas) e li colleghi per definire il flusso di esecuzione.
 
 <figure><img src="../../../.gitbook/assets/workflow_advanced_add_menu.png" alt="Menu di aggiunta nodi con i tipi di nodo disponibili"><figcaption><p>Il menu nodi <strong>+ Add</strong> — i tipi di nodo disponibili.</p></figcaption></figure>

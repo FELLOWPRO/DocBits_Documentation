@@ -6,8 +6,7 @@ description: "Fünf Erklärvideos zu Advanced Workflows und Workflow Logs auf De
 
 Alle fünf Kapitel enthalten eine deutsche Tonspur, eine Untertiteldatei und ein Transkript. Jedes Kapitel dauert weniger als zwei Minuten.
 
-Die ersten drei Kapitel zeigen die echte DocBits-Oberfläche: einen konfigurierten Workflow, verbundene Steuerknoten, Variablenformulare und Testbedienelemente. Die beiden Kapitel zu Workflow Logs verwenden derzeit gekennzeichnete Lehrgrafiken. Die [Advanced-Workflow-Anleitung](advanced-workflow-builder.md) und die [Workflow Logs](workflow-logs.md) ergänzen die Videos.
-
+Die ersten drei Kapitel zeigen den echten DocBits-Designer mit Demonstrationsentwürfen. Die Testfassung zur Ausführungssuche zeigt echte Dokumentverarbeitung und Protokollfunktionen mit leeren Ergebnissen. Das Diagnosekapitel verwendet weiterhin gekennzeichnete Lehrgrafiken. Die [Advanced-Workflow-Anleitung](advanced-workflow-builder.md) und die [Workflow Logs](workflow-logs.md) ergänzen die Videos.
 ## Builder und Canvas
 
 Ein Rechnungsbetrag entscheidet zwischen zwei verbundenen Aktionen. Dieses Kapitel zeigt die echte DocBits-Oberfläche mit einem ungespeicherten Demonstrationsentwurf.
@@ -98,26 +97,40 @@ Auto-Save sichert Änderungen etwa alle dreißig Sekunden als lokalen Browserent
 
 ## Die passende Ausführung finden
 
-Die passende Ausführung über Workflow-Suche, Status, Datum und Sortierung finden.
+{% hint style="info" %}
+Testfassung: Echte DocBits-Aufnahmen zeigen Dokumentaktionen, Dokumentenfluss, Schrittzeiten, leere Workflow Logs sowie Status- und Datumsfilter. Das Demodokument enthält keine gespeicherte Advanced-Workflow-Ausführung. Ausführungszeilen, Seitenauswahl und Knotendiagnose sind in dieser Vorschau noch nicht enthalten.
+{% endhint %}
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v1/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/de.mp4" %}
 
-[Video öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v1/de.mp4) · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v1/de.vtt)
+[Video öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/de.mp4) · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/de.vtt) · 1:51
 
 <details>
 <summary>Transkript</summary>
 
-Öffnen Sie das Dokumenten Dashboard. Wählen Sie Workflow Logs im Aktionsmenü des Dokuments. Workflow Zugriff muss aktiviert sein. Diese Protokolle zeigen Dokumentausführungen. Testergebnisse und Ereignisprotokolle der Organisation sind getrennt.
+**Beim Dokument beginnen**
 
-Blau zählt Ausführungen in der Ergebnismenge, Rot Fehler, Gelb nicht erfüllte Bedingungen und Grün Erfolge. Die Zähler beschreiben Ausführungen, keine eindeutigen Workflow Definitionen oder Diagrammknoten. Filter können die Zähler verändern.
+Öffnen Sie im Dokumenten-Dashboard das Aktionsmenü und wählen Sie Dokumentenfluss. Die Verarbeitungshistorie zeigt Import und OCR. Öffnen Sie einen Schritt für Wartezeit und Verarbeitungszeit. Diese Schritte sind keine Advanced-Workflow-Knoten.
 
-Jede Zeile zeigt Workflow Namen, Erstellungszeit, Laufzeit in Sekunden und Ergebnis. Derselbe Workflow kann mehrfach erscheinen. Vergleichen Sie den Zeitstempel. Die Laufzeit ist gerundet. Ein kurzer Lauf kann null Komma null null Sekunden anzeigen.
+**Die echten Protokollzähler lesen**
 
-Search sucht Workflows. Das Filtersymbol öffnet Sortierrichtung, Sortieren nach, Status, Startdatum und Enddatum. Sortieren Sie nach Name oder Zeit, aufsteigend oder absteigend. Daten verwenden Jahr, Monat, Tag. Anwenden lädt die Ergebnisse.
+Hier sehen Sie die Workflow Logs desselben Dokuments. Blau zählt alle Läufe, Rot Fehler, Gelb nicht erfüllte Bedingungen und Grün Erfolge. Für dieses Demodokument sind keine Workflow-Ausführungen gespeichert. Deshalb zeigen alle vier Zähler null.
 
-Die Seitenauswahl zeigt ältere Ergebnisse. Filter zurücksetzen lädt ohne Filterauswahl neu. Leeren Sie die Suche gesondert. Prüfen Sie bei leeren Ergebnissen Dokument, Datum und Status. Eine leere Liste beweist keinen Fehler.
+**Die Ausführungsspalten prüfen**
 
-Ein Hinweis und ein Sperrsymbol zeigen das Ausführungslimit des Dokuments. Prüfen Sie wiederholte Auslöser, bevor Sie Limits ändern. Ein DocOperator Videodownload erscheint nur bei vorhandener Ausführungsaufnahme. Er ist vom Erklärvideo getrennt.
+Die Spalten zeigen Workflow-Name, Erstellungszeit, Laufzeit und Ergebnis. Unterscheiden Sie wiederholte Läufe am Zeitstempel. Dieses Demodokument enthält keine Ausführungszeile zum Öffnen.
+
+**Die Statusfilter öffnen**
+
+Das Filtersymbol öffnet das echte Filtermenü. Wählen Sie die Sortierung nach Name oder Erstellungszeit sowie aufsteigende oder absteigende Reihenfolge. Der Status bietet Erfolg, gescheiterte Bedingung und Fehler.
+
+**Zeitraum wählen und Filter löschen**
+
+Wählen Sie einen Zeitraum über Start, Ende oder den Kalender. Das Datumsformat ist Jahr, Monat und Tag. Anwenden lädt die Ergebnisse. Filter löschen setzt die Auswahl zurück. Leeren Sie die Suche gesondert. Die Monatsnamen im Kalender bleiben in dieser Version Englisch.
+
+**Testfassung: Ein gespeicherter Lauf fehlt noch**
+
+Mit dieser Testfassung prüfen Sie den Dokumentzugang, Verarbeitungsdetails und Protokollfunktionen. Für echte Ausführungszeilen, Seitenauswahl, Routen und Knotenmeldungen fehlt noch eine gespeicherte Advanced-Workflow-Ausführung. Diese Ergebnisse werden im Video nicht simuliert.
 
 </details>
 

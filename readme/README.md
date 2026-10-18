@@ -1,5 +1,15 @@
 # DocBits
 
+**DocBits. Make room for ambition.**
+
+从 OCR/IDP 走到业务逻辑、审批与 Advanced Workflows 的演进之旅。
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/zh.mp4" %}
+
+*90 秒 · 英文产品 UI · AI 想象的历史场景*
+
+[阅读文稿](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/zh-transcript.md) · [下载视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/zh.mp4)
+
 欢迎使用 DocBits
 
 欢迎来到 **DocBits**，这里汇集了全面的文档策略与见解。在 DocBits，我们致力于为[最终用户](end-user-and-partner-section/end-user-section/)、[管理员](administration-and-setup/settings/)和[合作伙伴](end-user-and-partner-section/partner-section/)提供清晰、简洁且及时更新的文档资源。
@@ -55,5 +65,3 @@
 * 适合希望优化文档采集流程并提高运营效率的企业。
 
 如需了解更多信息，请访问 [FellowPRO AG](https://fellowpro.com/) 或联系销售团队：sales@fellowpro.com。欢迎在 [LinkedIn](https://www.linkedin.com/company/fellowpro) 关注我们。
-
-{% embed url="https://youtu.be/p7GEJonM_wU" %}

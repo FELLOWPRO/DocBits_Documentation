@@ -1,0 +1,98 @@
+WEBVTT
+
+symptom_01
+00:00:00.250 --> 00:00:05.672
+Un avoir électronique apparaît comme
+Invoice. Lisez le XML d’origine. Le code
+
+symptom_02
+00:00:05.672 --> 00:00:08.767
+de type 381 désigne un avoir.
+
+codes_01
+00:00:09.517 --> 00:00:16.146
+Les règles par défaut de FACTURX et
+ZUGFeRD reconnaissent aussi 261. Les codes
+
+codes_02
+00:00:16.146 --> 00:00:24.343
+383 et 384 désignent une note de débit et
+une facture rectificative. Ne les classez
+
+codes_03
+00:00:24.343 --> 00:00:25.900
+pas comme des avoirs.
+
+source_01
+00:00:26.650 --> 00:00:31.143
+Ouvrez E-Doc pour le format détecté. La
+transformation personnalisée de
+
+source_02
+00:00:31.143 --> 00:00:36.533
+l’organisation a priorité sur celle par
+défaut. Vérifiez la version active.
+
+transform_01
+00:00:37.283 --> 00:00:42.856
+Pour FACTURX, recherchez INVOICE_TYPE. Une
+constante Invoice peut écarter le code
+
+transform_02
+00:00:42.856 --> 00:00:47.175
+d’avoir d’origine. Comparez la
+transformation personnalisée avec celle
+
+transform_03
+00:00:47.175 --> 00:00:48.167
+par défaut.
+
+paths_01
+00:00:48.917 --> 00:00:55.837
+Testez le XML transformé. Vérifiez
+qu’Extraction Paths lit invoice_type dans
+
+paths_02
+00:00:55.837 --> 00:01:01.233
+le bon nœud pour ce format. Examinez les
+scripts suivants et la valeur enregistrée.
+
+activate_01
+00:01:01.983 --> 00:01:07.161
+Créez un brouillon. Save ne l’active pas.
+Testez des factures et des avoirs
+
+activate_02
+00:01:07.161 --> 00:01:11.956
+représentatifs. Activez-le avec la coche
+uniquement après la réussite des
+
+activate_03
+00:01:11.956 --> 00:01:13.133
+vérifications.
+
+safety_01
+00:01:13.883 --> 00:01:18.701
+Vérifiez un nouveau document, y compris
+les montants et l’export. Préservez les
+
+safety_02
+00:01:18.701 --> 00:01:23.554
+correspondances personnalisées. Avant de
+relancer un ancien document, vérifiez les
+
+safety_03
+00:01:23.554 --> 00:01:27.400
+approbations, les exports et les
+modifications manuelles.
+
+sign_01
+00:01:28.150 --> 00:01:33.467
+Le signe négatif est activé par défaut,
+mais peut être désactivé. Confirmez la
+
+sign_02
+00:01:33.467 --> 00:01:39.067
+classification et la convention de signe
+attendue par Infor ERP ou SAP.
+

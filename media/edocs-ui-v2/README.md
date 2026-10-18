@@ -32,8 +32,13 @@ the review players use v1 for variants that have not yet been revised. Source
 and screenshot hashes are retained with each variant. No existing speech was
 resubmitted to make these visual changes. `acquire_countries.py` acquires missing
 PL/PT/ZH country narration sequentially and stops on the first error. It refuses
-an ambiguous `submitting` checkpoint. The ambiguous NL Vietnam speech checkpoint
-is preserved and must be reconciled before any paid retry.
+an ambiguous `submitting` checkpoint. The ambiguous NL Vietnam and PT Austria/Thailand/Brazil
+speech checkpoints are preserved and must be reconciled before any paid retry.
+The optional `--exclude-country` argument selects only distinct remaining
+country requests; it does not reset a checkpoint or change narration. The adapter
+still refuses an ambiguous request shared with any selected country. Use the
+same exclusion for offline building and country preparation. An excluded country
+retains its genuine screenshot and a localized notice that its film is pending.
 
 To reproduce, unpack `renderer-source.tar.gz` into a separate workspace, provision
 the unchanged locks, pinned fonts/logo and the original speech cache, then run:

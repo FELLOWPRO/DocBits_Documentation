@@ -30,21 +30,49 @@ def main():
         if not subset:
             return
         log = WORK / f"capture-countries-{args.locale}-{index}.log"
-        with log.open("w") as stream:
-            subprocess.run(
-                [
-                    "node",
-                    str(PACKAGE / "capture_countries.cjs"),
-                    args.locale,
-                    str(destination),
-                    str(catalogue),
-                    ",".join(subset),
-                ],
-                cwd=ROOT,
-                stdout=stream,
-                stderr=subprocess.STDOUT,
-                check=True,
-            )
+        failures_without_progress = 0
+        with log.open("a") as stream:
+            while subset:
+                result = subprocess.run(
+                    [
+                        "node",
+                        str(PACKAGE / "capture_countries.cjs"),
+                        args.locale,
+                        str(destination),
+                        str(catalogue),
+                        ",".join(subset),
+                    ],
+                    cwd=ROOT,
+                    stdout=stream,
+                    stderr=subprocess.STDOUT,
+                    check=False,
+                )
+                remaining = [
+                    country
+                    for country in subset
+                    if not (destination / country / "complete.json").is_file()
+                ]
+                if result.returncode == 0:
+                    assert not remaining
+                    break
+                failures_without_progress = (
+                    failures_without_progress + 1
+                    if len(remaining) == len(subset)
+                    else 0
+                )
+                if failures_without_progress >= 3:
+                    raise RuntimeError(
+                        f"Read-only capture failed repeatedly: {remaining}"
+                    )
+                # A fresh disposable browser recovers stalled loading overlays.
+                # Completed captures are retained; no settings or speech is changed.
+                subset = remaining
+                print(
+                    json.dumps(
+                        dict(locale=args.locale, subset=index, resuming=len(subset))
+                    ),
+                    flush=True,
+                )
         print(
             json.dumps(dict(locale=args.locale, subset=index, count=len(subset))),
             flush=True,

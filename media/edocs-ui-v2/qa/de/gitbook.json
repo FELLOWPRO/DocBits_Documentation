@@ -1,9 +1,11 @@
 {
-  "commit": "56767e9730f8bac7f234edb56ff99d03830817cf",
+  "commit": "d95dff87eed55d17ff5450f18a24c65f0664ec29",
   "import_state": "success",
+  "overview": "https://docs.docbits.com/deutsch/~/revisions/fxs2bqRbKo2ePmbhZkhZ/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents?review=d95dff87eed5",
+  "linked_country_guides": 40,
   "attachments": [
     {
-      "preview": "https://docs.docbits.com/deutsch/~/revisions/uINzMX0tl24KrYGXFPzb/administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice?review=56767e9730f8",
+      "preview": "https://docs.docbits.com/deutsch/~/revisions/fxs2bqRbKo2ePmbhZkhZ/administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice?review=d95dff87eed5",
       "url": "https://2396827744-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhNyN4taXWt0p7OGOOSfW%2Fuploads%2Fgit-blob-8f709e7f569c2a3072ff3f7272fe6850ab693d49%2Fedocs-credit-note-de-v2.mp4?alt=media",
       "status": 200,
       "mime": "video/mp4",
@@ -13,7 +15,7 @@
       "content_range": "bytes 0-1023/4373500"
     },
     {
-      "preview": "https://docs.docbits.com/deutsch/~/revisions/uINzMX0tl24KrYGXFPzb/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/germany?review=56767e9730f8",
+      "preview": "https://docs.docbits.com/deutsch/~/revisions/fxs2bqRbKo2ePmbhZkhZ/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/germany?review=d95dff87eed5",
       "url": "https://2396827744-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhNyN4taXWt0p7OGOOSfW%2Fuploads%2Fgit-blob-87afa928877a27c1f28d461c88bb1d9da355804d%2Fedocs-support-germany-de-v2.mp4?alt=media",
       "status": 200,
       "mime": "video/mp4",
@@ -23,7 +25,7 @@
       "content_range": "bytes 0-1023/2466557"
     },
     {
-      "preview": "https://docs.docbits.com/deutsch/~/revisions/uINzMX0tl24KrYGXFPzb/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/costa-rica?review=56767e9730f8",
+      "preview": "https://docs.docbits.com/deutsch/~/revisions/fxs2bqRbKo2ePmbhZkhZ/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/costa-rica?review=d95dff87eed5",
       "url": "https://2396827744-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhNyN4taXWt0p7OGOOSfW%2Fuploads%2Fgit-blob-502ab6bb0166d460d20efc9a3b2e541175190989%2Fedocs-support-costa-rica-de-v2.mp4?alt=media",
       "status": 200,
       "mime": "video/mp4",

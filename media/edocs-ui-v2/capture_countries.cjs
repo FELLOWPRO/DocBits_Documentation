@@ -7,6 +7,8 @@ const only=process.argv[5]?.split(',');
 (async()=>{
  const browser=await chromium.launch({headless:true});
  const context=await browser.newContext({viewport:{width:1600,height:1000},deviceScaleFactor:2});
+ context.setDefaultTimeout(120000);
+ context.setDefaultNavigationTimeout(120000);
  const page=await context.newPage();
  try{
   await page.goto('https://dev.docbits.com/login',{waitUntil:'domcontentloaded'});

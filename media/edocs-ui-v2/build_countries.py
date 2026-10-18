@@ -21,11 +21,14 @@ def main():
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--all-countries", action="store_true")
+    parser.add_argument("--exclude-country", action="append", default=[])
     args = parser.parse_args()
     original = json.loads(args.delivery.read_text())["locales"]
     targets = original["en" if args.all_countries else args.locale]["films"]
     if args.all_countries:
         assert args.locale in ("pl", "pt", "zh") and len(targets) == 40
+    assert set(args.exclude_country) <= set(targets)
+    targets = [country for country in targets if country not in args.exclude_country]
     pending = set(targets)
     active = {}
     deadline = time.monotonic() + 3600

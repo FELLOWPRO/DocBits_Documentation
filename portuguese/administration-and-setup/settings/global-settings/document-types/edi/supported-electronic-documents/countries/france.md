@@ -74,7 +74,23 @@ Um Guideline ID CII harmonizado pode identificar uma família e um perfil, embor
 
 MINIMUM e BASIC WL podem omitir informações de linhas de detalhe necessárias nas etapas seguintes. BASIC, EN16931/COMFORT e EXTENDED oferecem diferentes coberturas de dados. Um perfil mais abrangente pode incluir campos que o seu mapeamento de extração não utiliza. Verifique os campos obrigatórios com exemplos reais.
 
-<!-- Country screenshot and narrated film pending; no unavailable media is linked. -->
+## Encontrar o mapeamento no DocBits
+
+<figure><img src="../../../../../../../.gitbook/assets/edocs-support-france-pt.png" alt="França"><figcaption><p>Interface real de desenvolvimento: o formato representativo e os respetivos componentes de configuração disponíveis. As outras versões estão indicadas na matriz.</p></figcaption></figure>
+
+## Vídeo explicativo do país
+
+A narração e as legendas WebVTT traduzidas explicam a seleção do formato, a configuração e as verificações de aceitação.
+
+Este percurso apenas de leitura mostra a configuração existente do país no DocBits. Verifique a fonte utilizada e a versão ativa e teste faturas, notas de crédito e exportações representativas na sua organização.
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-france-pt-v2.mp4" %}
+França — Vídeo explicativo do país
+{% endfile %}
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-france-pt-v2.vtt" %}
+WebVTT
+{% endfile %}
 
 ## Verificações de aceitação
 

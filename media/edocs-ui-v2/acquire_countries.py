@@ -18,10 +18,14 @@ def main():
     parser.add_argument("--locale", required=True, choices=("pl", "pt", "zh"))
     parser.add_argument("--online", action="store_true")
     parser.add_argument("--credential-file", default="/run/tts-credential")
+    parser.add_argument("--exclude-country", action="append", default=[])
     args = parser.parse_args()
+    excluded = {"edocs_country_" + c.replace("-", "_") for c in args.exclude_country}
+    assert excluded <= set(COUNTRY_PAGES), excluded
+    pages = [page for page in COUNTRY_PAGES if page not in excluded]
     settings = json.loads((PIPELINE / "voice_settings.json").read_text())[args.locale]
     specs = {}
-    for page in COUNTRY_PAGES:
+    for page in pages:
         content = json.loads(
             (PIPELINE / f"content/{page}/locales/{args.locale}.json").read_text()
         )
@@ -50,7 +54,7 @@ def main():
     )
     if not args.online:
         return
-    for page in COUNTRY_PAGES:
+    for page in pages:
         # Stop on the first error; never retry an ambiguous paid submission.
         subprocess.run(
             [

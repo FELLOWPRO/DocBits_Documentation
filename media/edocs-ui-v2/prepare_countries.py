@@ -32,6 +32,7 @@ def main():
     parser.add_argument("locale", choices=FOLDERS)
     parser.add_argument("--accept", action="store_true")
     parser.add_argument("--new-media", action="store_true")
+    parser.add_argument("--exclude-country", action="append", default=[])
     args = parser.parse_args()
     locale = args.locale
     original = json.loads(
@@ -40,6 +41,11 @@ def main():
     available = original["en" if args.new_media else locale]["films"]
     if args.new_media:
         assert locale in ("pl", "pt", "zh") and len(available) == 40
+    assert set(args.exclude_country) <= set(available)
+    assert not args.exclude_country or args.new_media
+    available = [
+        country for country in available if country not in args.exclude_country
+    ]
     translations = json.loads(
         (ROOT / f"media/edocs-country-support/translations/{locale}.json").read_text()
     )
@@ -151,9 +157,47 @@ def main():
                 vtt_sha256=digest(out / f"{locale}.vtt"),
             )
         )
+    for country in args.exclude_country:
+        # A missing narration must not prevent delivery of the genuine screenshot.
+        relative = SECTION + "/" + country + ".md"
+        path = mirror / relative
+        poster = f".gitbook/assets/edocs-support-{country}-{locale}.png"
+        source = WORK / "countries" / locale / country
+        capture = json.loads((source / "capture.json").read_text())
+        row = next(r for r in capture["captures"] if r["name"] == "rules")
+        assert capture["locale"] == locale and not capture["mutations"]
+        assert digest(source / "rules.png") == row["sha256"]
+        shutil.copyfile(source / "rules.png", mirror / poster)
+        pending = {
+            "pl": "Film z narracją dla tego kraju nie jest jeszcze dostępny.",
+            "pt": "O filme narrado deste país ainda não está disponível.",
+            "zh": "此国家或地区的配音视频暂未提供。",
+        }[locale]
+        marker = "<!-- Country screenshot and narrated film pending; no unavailable media is linked. -->"
+        image_ref = os.path.relpath(mirror / poster, path.parent)
+        name = html.escape(translations["countries"][country]["name"], quote=True)
+        block = (
+            f"## {translations['screen_title']}\n\n"
+            f'<figure><img src="{image_ref}" alt="{name}">'
+            f"<figcaption><p>{translations['screen_caption']}</p></figcaption></figure>\n\n"
+            f"## {translations['video_title']}\n\n{pending}"
+        )
+        text = path.read_text()
+        if marker in text:
+            path.write_text(text.replace(marker, block))
+        assert pending in path.read_text() and "{% file " not in path.read_text()
+        files.extend([relative, poster])
+        destination = PACKAGE / "countries" / locale / country
+        destination.mkdir(parents=True, exist_ok=True)
+        for row in capture["captures"]:
+            assert digest(source / row["file"]) == row["sha256"]
+            shutil.copyfile(source / row["file"], destination / row["file"])
+        shutil.copyfile(source / "capture.json", destination / "capture.json")
     delivery_path = PACKAGE / "delivery.json"
     delivery = json.loads(delivery_path.read_text())
     delivery["countries"][locale] = available
+    if args.exclude_country:
+        delivery.setdefault("pending_countries", {})[locale] = args.exclude_country
     delivery_path.write_text(json.dumps(delivery, ensure_ascii=False, indent=2) + "\n")
     evidence = PACKAGE / "qa" / locale / "countries"
     evidence.mkdir(parents=True, exist_ok=True)

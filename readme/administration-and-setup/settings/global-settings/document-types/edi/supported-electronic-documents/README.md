@@ -21,6 +21,8 @@ Les tableaux consignent une vérification du catalogue de développement effectu
 
 ## Guides par pays
 
+La vue d’ensemble renvoie à 39 guides nationaux et à un guide international. Chaque guide présente les libellés exacts des formats et les composants de configuration, ainsi que les captures DocBits, vidéos et vérifications d’acceptation disponibles.
+
 | Pays / région | Familles et périmètre des versions | Résultat du catalogue |
 | --- | --- | --- |
 | [Autriche](countries/austria.md) | ebInterface 4.3, 5.0, 6.0 et 6.1 possèdent des entrées distinctes. | Entrées trouvées |

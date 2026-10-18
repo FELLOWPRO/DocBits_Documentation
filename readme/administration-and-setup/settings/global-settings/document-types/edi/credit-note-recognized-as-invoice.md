@@ -9,11 +9,15 @@ Una nota di credito elettronica può apparire come **Invoice** anche quando l’
 
 ## Verificare la classificazione delle note di credito elettroniche
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-it.mp4" %}
+Il video mostra una verifica in sola lettura in DocBits, usando FACTURX 1.0.05 / ZUGFeRD 2.1 come esempio. Le mappature e le versioni possono variare nella vostra organizzazione. Verificate sempre la Transformation attiva del formato rilevato.
+
+Il precedente esempio XSLT mostrato nel video contiene rami per 381 e 389. Verificate nella Transformation effettiva quali codici conserva questa versione specifica; l’elenco generale dei codici non ne dimostra la copertura in tutte le mappature storiche.
+
+{% file src="../../../../../.gitbook/assets/edocs-credit-note-it-v2.mp4" %}
 Verificare la classificazione delle note di credito elettroniche
 {% endfile %}
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-it.vtt" %}
+{% file src="../../../../../.gitbook/assets/edocs-credit-note-it-v2.vtt" %}
 WebVTT
 {% endfile %}
 

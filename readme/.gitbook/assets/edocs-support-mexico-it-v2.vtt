@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:08.876
+Mexico CFDI 3.3 e 4.0 hanno voci separate.
+Verificate lo spazio dei nomi, la versione
+
+formats_02
+00:00:08.876 --> 00:00:14.565
+e TipoDeComprobante. Un importo negativo
+non basta a identificare una nota di
+
+formats_03
+00:00:14.565 --> 00:00:19.933
+credito; l’analisi del file non certifica
+l’autorizzazione del SAT.
+
+workflow_01
+00:00:20.683 --> 00:00:26.442
+Aprite E-Doc per il formato rilevato.
+Confrontate Transformation, Preview ed
+
+workflow_02
+00:00:26.442 --> 00:00:33.477
+Extraction Paths. Le regole Custom hanno
+la precedenza. Salvare una bozza non la
+
+workflow_03
+00:00:33.477 --> 00:00:34.400
+attiva.
+
+accept_01
+00:00:35.150 --> 00:00:41.129
+Provate una fattura e una nota di credito,
+se applicabile. Verificate gli importi, le
+
+accept_02
+00:00:41.129 --> 00:00:46.121
+parti e il tipo di documento esportato.
+L’analisi del file non dimostra
+
+accept_03
+00:00:46.121 --> 00:00:49.800
+l’autorizzazione fiscale né la consegna
+tramite rete.
+

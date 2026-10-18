@@ -8,6 +8,18 @@ Utilize este guia para identificar a família configurada e o âmbito das versõ
 
 [Todos os países e âmbito do suporte](../README.md)
 
+## Vídeo explicativo do país
+
+A narração e as legendas WebVTT traduzidas explicam a seleção do formato, a configuração e as verificações de aceitação.
+
+Este percurso apenas de leitura mostra a configuração existente do país no DocBits. Verifique a fonte utilizada e a versão ativa e teste faturas, notas de crédito e exportações representativas na sua organização.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_france/v2/pt.mp4" %}
+
+[França — Vídeo explicativo do país](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_france/v2/pt.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_france/v2/pt.vtt)
+
 ## Variantes e limites das versões
 
 Factur-X tem entradas genéricas e específicas de cada edição, incluindo 1.0.05, 1.08 e 1.09. VRBL FR CIUS 1.0 é uma entrada distinta.
@@ -77,20 +89,6 @@ MINIMUM e BASIC WL podem omitir informações de linhas de detalhe necessárias 
 ## Encontrar o mapeamento no DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-france-pt.png" alt="França"><figcaption><p>Interface real de desenvolvimento: o formato representativo e os respetivos componentes de configuração disponíveis. As outras versões estão indicadas na matriz.</p></figcaption></figure>
-
-## Vídeo explicativo do país
-
-A narração e as legendas WebVTT traduzidas explicam a seleção do formato, a configuração e as verificações de aceitação.
-
-Este percurso apenas de leitura mostra a configuração existente do país no DocBits. Verifique a fonte utilizada e a versão ativa e teste faturas, notas de crédito e exportações representativas na sua organização.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-france-pt-v2.mp4" %}
-França — Vídeo explicativo do país
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-france-pt-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Verificações de aceitação
 

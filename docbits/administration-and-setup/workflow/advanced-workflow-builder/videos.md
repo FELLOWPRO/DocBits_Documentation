@@ -14,7 +14,7 @@ Caption files are available in WebVTT format below each video. Open the expandab
 | --- | --- |
 | [1. Builder and canvas](#builder-and-canvas) | 1:38 |
 | [2. Nodes and routes](#nodes-and-routes) | 1:42 |
-| [3. Variables, tests and activation](#variables-tests-and-activation) | 1:54 |
+| [3. Variables, tests and activation](#variables-tests-and-activation) | 1:53 |
 | [4. Find the relevant execution](#find-the-relevant-execution) | 1:52 |
 | [5. Trace nodes and diagnose](#trace-nodes-and-diagnose) | 1:43 |
 
@@ -24,7 +24,7 @@ Build an invoice amount check with two connected actions. The example shows an u
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/en.mp4" %}
 
-[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/en.vtt) · 1:38
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/en.vtt) · 1:38
 
 <details>
 <summary>Transcript</summary>
@@ -61,7 +61,7 @@ Follow a connected demonstration draft in the real DocBits designer. See success
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/en.mp4" %}
 
-[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/en.vtt) · 1:42
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/en.vtt) · 1:42
 
 <details>
 <summary>Transcript (English)</summary>
@@ -82,11 +82,11 @@ Keep processing nodes reachable from an entry. Avoid cycles and incoming connect
 
 ## Variables, tests and activation
 
-See the actual DocBits variable form, document-reference type, Validate control, test context dialog, Save button and activation control. Learn organization scope, test coverage and how to inspect results after execution.
+Follow the connected invoice workflow in the real DocBits designer. Open Variables, compare the types and document-reference form, locate Validate, prepare document or Custom Data tests, and identify Save and activation. The test scenes show example input configuration; they do not show an executed result.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/en.mp4" %}
 
-[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/en.vtt) · 1:54
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/en.vtt) · 1:53
 
 <details>
 <summary>Transcript (English)</summary>
@@ -99,7 +99,7 @@ Select Validate. Review errors and warnings above the canvas. Click a message to
 
 Toolbar play opens Select Test Document. Choose a document, Custom Data, or Test Without Document for independent cards. Start play runs directly. Tests use the current canvas, including unsaved edits, and simulate destructive actions.
 
-Inspect node messages and durations. Green means success, orange false condition, red error, and gray skipped. Retest corrections. Use Test Manager for repeatable scenarios. Cover the successful route, alternatives, missing data and errors.
+Prepare separate tests above, below and exactly at one thousand, plus missing data. After running, inspect node messages and durations: green success, orange false, red error, gray skipped. Retest fixes; use Test Manager for repeatable scenarios.
 
 Auto-save keeps a local browser draft about every thirty seconds after changes. Save explicitly to the server. The activation toggle is unavailable before the first save. Check the enabled state in Workflow List before expecting automatic execution.
 
@@ -111,7 +111,7 @@ Open logs for a document, read counters and execution rows, filter results, chec
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v1/en.mp4" %}
 
-[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v1/en.vtt) · 1:52
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v1/en.vtt) · 1:52
 
 <details>
 <summary>Transcript (English)</summary>
@@ -136,7 +136,7 @@ Expand an advanced execution, select nodes, distinguish false conditions, errors
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v1/en.mp4" %}
 
-[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v1/en.vtt) · 1:43
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v1/en.vtt) · 1:43
 
 <details>
 <summary>Transcript (English)</summary>

@@ -20,7 +20,7 @@ Chaque vidéo propose des sous-titres WebVTT et une transcription dépliable.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/fr.mp4" %}
 
-[Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/fr.vtt) · 1:52
+[Ouvrir la vidéo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/fr.mp4) · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/fr.vtt) · 1:52
 
 <details>
 <summary>Transcription</summary>
@@ -55,7 +55,7 @@ Validez les connexions et les paramètres des cartes. Enregistrez explicitement 
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/fr.mp4" %}
 
-[Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/fr.vtt) · 1:49
+[Ouvrir la vidéo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/fr.mp4) · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/fr.vtt) · 1:49
 
 <details>
 <summary>Transcription</summary>
@@ -88,9 +88,11 @@ Rendez les nœuds accessibles depuis une entrée. Évitez les cycles et les conn
 
 ## Variables, tests et activation {#variables-tests-and-activation}
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/fr.mp4" %}
+Suivez le workflow de facture connecté dans le véritable concepteur DocBits. Ouvrez Variables, comparez les types et la référence de document, repérez Valider, préparez des tests avec document ou données personnalisées, puis identifiez Enregistrer et l’activation. Les scènes de test montrent la configuration des données d’exemple ; elles ne montrent pas de résultat exécuté.
 
-[Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/fr.vtt) · 1:53
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/fr.mp4" %}
+
+[Ouvrir la vidéo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/fr.mp4) · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/fr.vtt) · 1:57
 
 <details>
 <summary>Transcription</summary>
@@ -111,9 +113,9 @@ Cliquez sur Valider. Examinez erreurs et avertissements au-dessus du canevas. Un
 
 La lecture dans la barre ouvre le choix du document. Choisissez document, données personnalisées ou test sans document pour les cartes indépendantes. Start lance directement. Les tests incluent les modifications non enregistrées et simulent les actions destructrices.
 
-**Examinez les résultats**
+**Préparer et vérifier les scénarios de test**
 
-Examinez messages et durées : vert, succès ; orange, condition fausse ; rouge, erreur ; gris, ignoré. Corrigez et retestez. Le gestionnaire de tests permet des scénarios reproductibles : succès, alternatives, données absentes et erreurs.
+Préparez des tests au-dessus, au-dessous et exactement à mille, puis sans données. Après exécution, vérifiez les messages et les durées : vert signifie réussite, orange faux, rouge erreur, gris ignoré. Retestez les corrections. Le gestionnaire de tests permet de répéter les scénarios.
 
 **Enregistrez avant d’activer**
 
@@ -125,7 +127,7 @@ Le brouillon local est enregistré automatiquement environ toutes les trente sec
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/fr.mp4" %}
 
-[Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/fr.vtt) · 1:45
+[Ouvrir la vidéo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/fr.mp4) · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/fr.vtt) · 1:45
 
 <details>
 <summary>Transcription</summary>
@@ -160,7 +162,7 @@ Un bandeau et une icône de blocage signalent la limite d’exécutions du docum
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/fr.mp4" %}
 
-[Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/fr.vtt) · 1:47
+[Ouvrir la vidéo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/fr.mp4) · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/fr.vtt) · 1:47
 
 <details>
 <summary>Transcription</summary>

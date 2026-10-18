@@ -2,9 +2,9 @@
 
 ## Vídeo: Variables, pruebas y activación
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/es.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/es.mp4" %}
 
-[Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/es.vtt) · 1:53
+[Abrir vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/es.mp4) · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/es.vtt) · 1:58
 
 <details>
 <summary>Transcripción</summary>
@@ -25,9 +25,9 @@ Pulse Validar. Revise errores y advertencias sobre el lienzo. Pulse un mensaje p
 
 Reproducir en la barra abre la selección del documento. Elija documento, datos personalizados o prueba sin documento para tarjetas independientes. Start ejecuta directamente. Las pruebas incluyen cambios sin guardar y simulan acciones destructivas.
 
-**Revise los resultados**
+**Preparar y revisar escenarios de prueba**
 
-Revise mensajes y tiempos: verde, éxito; naranja, condición falsa; rojo, error; gris, omitido. Corrija y repita. Use el gestor de pruebas para escenarios repetibles con éxito, alternativas, datos ausentes y errores.
+Prepara pruebas separadas por encima, por debajo y exactamente en mil, además de datos ausentes. Después, revisa mensajes y duraciones: verde indica éxito, naranja falso, rojo error y gris omitido. Repite las correcciones. Usa el gestor de pruebas para escenarios repetibles.
 
 **Guarde antes de activar**
 

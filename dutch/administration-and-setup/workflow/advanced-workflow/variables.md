@@ -2,9 +2,9 @@
 
 ## Video: Variabelen, tests en activering
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/nl.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/nl.mp4" %}
 
-[Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/nl.vtt) · 1:58
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/nl.mp4) · [Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/nl.vtt) · 2:00
 
 <details>
 <summary>Transcriptie</summary>
@@ -25,9 +25,9 @@ Selecteer Valideren. Bekijk fouten en waarschuwingen boven het canvas. Klik op e
 
 Afspelen op de werkbalk opent de documentkeuze. Kies een document, aangepaste gegevens of een test zonder document voor onafhankelijke kaarten. Afspelen op Start begint direct. Tests gebruiken het huidige canvas, inclusief niet opgeslagen wijzigingen, en simuleren destructieve acties.
 
-**Bekijk de resultaten**
+**Testscenario’s voorbereiden en controleren**
 
-Bekijk meldingen en tijden per knooppunt: groen is succes, oranje een onware voorwaarde, rood een fout, grijs overgeslagen. Test opnieuw na correcties. Gebruik Test Manager voor herhaalbare scenario’s: succes, alternatieven, ontbrekende gegevens en fouten.
+Maak aparte tests boven, onder en precies op duizend, plus ontbrekende gegevens. Controleer na uitvoering berichten en looptijden: groen betekent geslaagd, oranje onwaar, rood fout en grijs overgeslagen. Test correcties opnieuw. Gebruik Testbeheer voor herhaalbare scenario’s.
 
 **Sla op vóór activering**
 

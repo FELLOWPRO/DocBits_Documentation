@@ -4,6 +4,12 @@ description: Suporte a documentos eletrônicos FATTURAPA no DocBits
 
 # 🇮🇹 FATTURAPA
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [Itália](countries/italy.md). A designação da família não certifica todas as edições FatturaPA nem a transmissão através do SDI. Verifique o esquema de origem e os requisitos do destinatário.
+{% endhint %}
+
 | Propriedade | Valor |
 | --- | --- |
 | **País / Região** | Itália |

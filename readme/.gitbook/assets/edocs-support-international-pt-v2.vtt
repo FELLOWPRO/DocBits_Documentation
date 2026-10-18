@@ -1,0 +1,55 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.036
+As entradas internacionais incluem Peppol
+BIS 3.0, UBL 2.1, CII puro, EDI, INVOIC02,
+
+formats_02
+00:00:07.036 --> 00:00:13.418
+cXML, OCI, BOD e SPS Commerce RSX 7.7.4.
+Os mapeamentos de faturas, encomendas,
+
+formats_03
+00:00:13.418 --> 00:00:20.043
+respostas e expedições são distintos. O
+processamento de ficheiros, por si só, não
+
+formats_04
+00:00:20.043 --> 00:00:25.778
+disponibiliza um ponto de acesso Peppol
+nem conectividade com parceiros
+
+formats_05
+00:00:25.778 --> 00:00:26.667
+comerciais.
+
+workflow_01
+00:00:27.417 --> 00:00:32.804
+Abra E-Doc para o formato detetado.
+Compare Transformation, Preview e
+
+workflow_02
+00:00:32.804 --> 00:00:39.875
+Extraction Paths. As regras Custom têm
+prioridade. Guardar um rascunho não o
+
+workflow_03
+00:00:39.875 --> 00:00:40.800
+ativa.
+
+accept_01
+00:00:41.550 --> 00:00:47.506
+Teste uma fatura e uma nota de crédito,
+quando aplicável. Verifique os montantes,
+
+accept_02
+00:00:47.506 --> 00:00:53.369
+as partes envolvidas e o tipo de documento
+exportado. A análise do ficheiro não
+
+accept_03
+00:00:53.369 --> 00:00:57.900
+comprova a aprovação fiscal nem a entrega
+através da rede.
+

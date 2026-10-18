@@ -4,6 +4,12 @@ description: Suporte para o documento eletrônico MEXICO CFDI 3.3 no DocBits
 
 # 🇲🇽 MEXICO CFDI 3.3
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [México](countries/mexico.md). Verifique o espaço de nomes, a versão e TipoDeComprobante. Um documento de nota de crédito não é identificado apenas por um montante negativo; analisar o ficheiro não certifica a aprovação pelo SAT.
+{% endhint %}
+
 | Propriedade          | Valor                                              |
 | -------------------- | -------------------------------------------------- |
 | **País / Região**    | México                                             |

@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.208
+Factur-X tem entradas genéricas e
+específicas de cada edição, incluindo
+
+formats_02
+00:00:06.208 --> 00:00:13.090
+1.0.05, 1.08 e 1.09. VRBL FR CIUS 1.0 é
+uma entrada distinta. O marcador XML 1p0 e
+
+formats_03
+00:00:13.090 --> 00:00:19.552
+Factur-X XMP Version 1.0 não identificam
+uma edição da publicação. Mantenha a
+
+formats_04
+00:00:19.552 --> 00:00:24.000
+designação genérica quando a edição for
+desconhecida.
+
+workflow_01
+00:00:24.750 --> 00:00:30.137
+Abra E-Doc para o formato detetado.
+Compare Transformation, Preview e
+
+workflow_02
+00:00:30.137 --> 00:00:37.208
+Extraction Paths. As regras Custom têm
+prioridade. Guardar um rascunho não o
+
+workflow_03
+00:00:37.208 --> 00:00:38.133
+ativa.
+
+accept_01
+00:00:38.883 --> 00:00:44.839
+Teste uma fatura e uma nota de crédito,
+quando aplicável. Verifique os montantes,
+
+accept_02
+00:00:44.839 --> 00:00:50.702
+as partes envolvidas e o tipo de documento
+exportado. A análise do ficheiro não
+
+accept_03
+00:00:50.702 --> 00:00:55.233
+comprova a aprovação fiscal nem a entrega
+através da rede.
+

@@ -2,40 +2,43 @@
 
 ## Vídeo
 
-Estes dois vídeos utilizam diagramas didáticos identificados como ilustrações.
-
+O vídeo de pesquisa é uma pré-visualização com ecrãs reais do DocBits. O vídeo de diagnóstico mantém os diagramas didáticos identificados como ilustrações.
 ### Encontrar a execução relevante
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/pt.mp4" %}
+{% hint style="info" %}
+Pré-visualização para teste: ecrãs reais do DocBits com ações do documento, fluxo de documentos, tempos dos passos, registos vazios e filtros de estado e data. O documento não tem uma execução Advanced Workflow guardada. Esta pré-visualização ainda não inclui linhas de execução, paginação ou diagnóstico dos nós.
+{% endhint %}
 
-[Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/pt.vtt) · 1:58
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/pt.mp4" %}
+
+[Abrir vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/pt.mp4) · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/pt.vtt) · 1:52
 
 <details>
 <summary>Transcrição</summary>
 
-**Abra os registos**
+**Começar pelo documento**
 
-No painel de documentos, selecione Workflow Logs no menu Ações. O acesso aos workflows deve estar ativo. Estes registos pertencem ao documento escolhido. Os testes do editor e os registos de eventos ou atividade da organização são separados.
+No painel de documentos, abra o menu de ações e escolha Fluxo de documentos. O histórico real mostra a importação e o OCR. Abra um passo para verificar os tempos de espera e processamento. Estes passos são distintos dos nós de Advanced Workflow.
 
-**Leia os contadores**
+**Ler os contadores reais**
 
-Azul conta execuções nos resultados atuais; vermelho, erros; amarelo, condições falsas; verde, sucessos. Os contadores representam execuções, não definições de workflow ou nós. Os filtros podem alterar estes números.
+Aqui estão os registos de workflow do mesmo documento. Azul indica o total, vermelho os erros, amarelo as condições não cumpridas e verde os sucessos. Este documento de demonstração não tem execuções registadas. Por isso, os quatro contadores mostram zero.
 
-**Escolha a execução exata**
+**Verificar as colunas de execução**
 
-Cada linha mostra nome, data de criação, duração em segundos e resultado. Um workflow pode executar várias vezes no mesmo documento. Compare os horários. Uma duração curta pode aparecer como zero vírgula zero zero segundos por arredondamento.
+As colunas mostram o nome do workflow, a data de criação, a duração e o resultado. Distinga execuções repetidas pela data e hora. Este documento não tem uma linha para abrir.
 
-**Restrinja os resultados**
+**Abrir os filtros de estado**
 
-Use Pesquisar para encontrar um workflow. O ícone de ajustes abre direção e critério de ordenação, estado e datas inicial e final. Ordene por nome ou criação. Introduza datas como ano, mês, dia e selecione Aplicar.
+O ícone de filtros abre o menu real. Ordene por nome ou data de criação, de forma ascendente ou descendente. O estado oferece sucesso, condição não cumprida e erro.
 
-**Verifique páginas e filtros**
+**Escolher datas e limpar filtros**
 
-Use a paginação para resultados antigos. Limpar filtros recarrega a lista sem seleções. Limpe a pesquisa separadamente. Sem resultados, verifique documento, datas e estado. Uma lista vazia não demonstra um erro de execução.
+Escolha um período com as datas de início e fim ou o calendário. O formato é ano, mês e dia. Aplicar pede os resultados. Limpar filtros repõe a seleção. Limpe a pesquisa separadamente.
 
-**Estados especiais**
+**Pré-visualização: falta uma execução guardada**
 
-Um aviso e um ícone de bloqueio indicam o limite de execuções do documento. Investigue eventos repetidos antes de alterar limites. A transferência de vídeo DocOperator aparece apenas se existir gravação; corresponde àquela execução.
+Esta pré-visualização permite verificar o acesso ao documento, os detalhes do processamento e os controlos dos registos. Falta uma execução Advanced Workflow guardada para mostrar linhas reais, paginação, percursos e mensagens dos nós. Estes resultados não são simulados no vídeo.
 
 </details>
 

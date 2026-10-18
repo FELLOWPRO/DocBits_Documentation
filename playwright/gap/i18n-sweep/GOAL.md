@@ -23,12 +23,39 @@ wirklich fertig ist.
 4. Worklist-Count der Sprache geht **runter**, nie hoch.
 5. PROGRESS.md hat pro Seite eine Zeile mit PR-Nr + Live-Status.
 
-## Umfang (Stand 2026-10-18)
+## Umfang (Stand 2026-10-18, gemessen)
 
-- Fertig + live: **19 Seiten** (18 de + 1 zh) + 8×3 e-mail-templates + 8 ui-redesign.
-- **Nicht** zu fixen (Objekt sprachneutral): **92 de Seiten EDI-Preview-only**
-  (XRechnung/ZUGFeRD/Facturae/…-Previews zeigen den Beleg, nicht die UI).
-- Offen de real: **~93 UI-Seiten**. Dann es fr it nl pl pt zh.
+Zwei Filter reduzieren den Roh-Umfang massiv:
+
+1. **EDI-Previews sind sprachneutral** — `*-preview.png` zeigt den Beleg
+   (XML/PDF), nicht die DocBits-UI. Kein Fix.
+2. **Kleine Assets (<320×200 px) sind Icons/Glyphen** — sprachneutral.
+
+Danach bleibt pro Sprache (Seiten / echte UI-Bilder):
+
+| lang | Kandidaten roh | echte UI-Seiten | echte UI-Refs |
+|---|---|---|---|
+| de | 221 | 126 | 545 |
+| es | 206 | 116 | 481 |
+| fr | 208 | 118 | 473 |
+| it | 212 | 118 | 460 |
+| nl | 204 | 110 | 469 |
+| pl | 216 | 122 | 459 |
+| pt | 214 | 118 | 452 |
+| zh | 389 | 245 | 852 |
+| **Σ** | | **1.073** | **~4.190** |
+
+Dedup: **355 distinct Assets decken 121 de-Seiten** (132 Assets sind über 2
+Seiten geteilt; mehrere Bäume sind Dubletten, z. B. `exporting-to-infor` vs
+`exporting-to-infor-1`, `analytics-dashboard` vs `/README`).
+
+### Aktuelles Ziel (vom Nutzer gesetzt 2026-10-18)
+
+**Top-20 Seiten von de erledigen, dann Statusbericht.** Kein endloser Lauf.
+Danach entscheidet der Nutzer neu.
+
+- Fertig + live: **20 Seiten** (19 + `global-settings/dashboard`).
+- Reihenfolge: größte echte UI-Ref-Anzahl, Route zuerst sondieren.
 
 ## Arbeitszyklus pro Seite
 

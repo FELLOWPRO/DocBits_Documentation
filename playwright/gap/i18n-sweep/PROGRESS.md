@@ -60,6 +60,7 @@ are legitimately identical in every language.
 | 2026-10-17 | de | `purchase-order/calculate-po-unit-price` | 3 | #1016 | verified live (1.81 vs DE); ref-only fix, `_1/_2/_3_de` assets already existed |
 | 2026-10-18 | de | `more-settings/duplicate-document-handling` | 3 (of 7 refs) | #1037 | verified live (`_1_de` 147855B / `_2_de` 113285B / `_5_de` 137968B, distinct from EN); dropped the `raw.githubusercontent.com` hotlinks for relative refs; `_3/_4` reframed (EN 3830x1928 vs DE 2878x1170) and `_6` only a 658x498 typo-stem crop, `_7` has no `_de` → those 4 stay English by decision |
 | 2026-10-18 | de | `global-settings/dashboard` (README) | 7 | #1049 + #1054 | verified live — **7 distinct blobs**, all from the German space (`hNyN4taXWt0p7OGOOSfW`), 0 from the EN space; 7 new German captures, refs made relative. Capture trap: with a 906 px window the pane scrolls only 1075 px, so sections below that floor rendered the same frame — `_2/_5/_6` shipped byte-identical in #1049 and had to be re-captured in a **1103x2400 @dpr2** window scrolling to each heading's own offset (#1054). Masked e-mail + org-UUID; verified 0 visible after masking. Product i18n gap: the Exportverlauf table headers stay English on the German page (`Email`, `Status`, `Requested At`, `Completed At`, `Format`, `Filters Used`). |
+| 2026-10-18 | de | `document-types/rule-conditions-applies-when` | 5 (of 6 refs) | #1099 | merged, bridge dispatched; 5 new German captures: Feldauswahl, verschachtelte ALL/BELIEBIG-Gruppe, Zeilenbedingung `row.ITEM_NUMBER`, Textfeld-Operatoren, `$path`-Zeile. Refs waren bereits relativ/korrekt tief — nur Assetname getauscht. Maskiert: Benutzer-/Orgname, E-Mail, Org-UUID (0 sichtbar). **Bild 6 nicht capturebar:** `rule-execution-log-detail.png` braucht Zeilen in den Regelausführungsprotokollen; die dev-Org liefert für `GET /rule-execution-logs?rule_key=de_vat_id_format&doc_type=INVOICE` HTTP 200 mit **0 Einträgen** → Ansicht bleibt englisch. Routen für den Sweep: Editor `/nova/settings/custom-validation-rules/INVOICE/new`, Liste `/…/INVOICE`, Logs `/nova/settings/rule-execution-logs/INVOICE`. **Autosave-Test:** Entwurf verlassen ohne Speichern ändert die Regelliste nicht → Zustand zur Laufzeit baubar, kein Schreibzugriff auf Kundendaten. |
 
 ### `dashboard/filtering-documents` (de) — 9 shots, BLOCKED (see verdict at end)
 
@@ -375,6 +376,23 @@ directory page `/table-columns` correctly serves `table-columns_list-de.png`;
   - de **Performance-Report dialog is wholly hardcoded English**
     (`PerformanceAnalysisDialog.vue`, no `$t()`) — full inventory under
     "No-op: UI ships untranslated".
+- **`analytics-dashboard` (de) — NICHT capturebar ohne Fälschung.** Die Seite
+  beschreibt die Flow-Typen **Status / Verarbeitung / Benutzerinteraktion**
+  (19 Bilder). Die drei Tabs liefern in der dev-Org durchgehend
+  „**Keine Daten gefunden**" (kein einziges abgeschlossenes Dokument):
+  `?tab=status` → Durchschnittliche Zeit / Ablaufschritte / Top-Dokumente /
+  Zeittrend / Tabelle alle leer. Nur der vierte Tab `?tab=touchless` hat Daten,
+  ist aber die eigenständige Seite `touchless-intelligence`. Ehrliche Bilder der
+  drei dokumentierten Tabs sind derzeit nicht möglich. Route:
+  `/nova/analytics?tab=status|modules|user|touchless`.
+- **`rule-conditions-applies-when` (de), Bild 6/6 `rule-execution-log-detail`:**
+  braucht Zeilen in den Regelausführungsprotokollen. Die dev-Org liefert
+  `GET /rule-execution-logs?rule_key=de_vat_id_format&doc_type=INVOICE` → HTTP
+  200 mit **0 Einträgen** (die UI-Seite selbst antwortet bei jedem Filter mit
+  „Keine Regelausführungsprotokolle gefunden"). Ansicht bleibt englisch.
+- **`report-page` (de):** rendert vollständig deutsch, aber mit
+  „Keine Dateneinträge im entsprechenden Zeitrahmen gefunden" — die
+  datentragenden Kacheln sind derzeit leer, gleicher Blocker wie analytics.
 - Infographic assets with an explicit `-en` name are English-only on the de
   pages and are a real gap, but recreating them is a design task, not a
   screenshot: `administration-and-setup/setup/watchdog/README.md`

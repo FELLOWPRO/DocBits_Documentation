@@ -78,3 +78,7 @@ Diese Funktion ist entscheidend, um zu überprüfen, ob Ihre XPath-Ausdrücke ko
 ## 6. Videoanleitung
 
 Eine Videoanleitung für diesen Dateityp finden Sie auf der [Videos-Seite.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Verwenden Sie sie, um die Einrichtung, Bearbeitung und Vorschau zu verfolgen.
+
+## Verwendete Regeln und Aktivierung
+
+Wenn eine elektronische Gutschrift als Invoice erscheint, folgen Sie der [Anleitung zur Fehlerbehebung bei der Klassifizierung](../credit-note-recognized-as-invoice.md). Sie erläutert die verwendete angepasste oder standardmäßige Quelle, die Typcodes, Extraction Paths und die sichere Aktivierung.

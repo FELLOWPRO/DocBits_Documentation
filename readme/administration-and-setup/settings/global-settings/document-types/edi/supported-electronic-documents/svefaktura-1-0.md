@@ -4,6 +4,12 @@ description: Unterstützung für das elektronische Dokument SVEFAKTURA 1.0 in Do
 
 # 🇸🇪 SVEFAKTURA 1.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Schweden](countries/sweden.md). Unterscheiden Sie diese ältere Familie von Peppol BIS Billing 3.0. Prüfen Sie, welches Profil der Empfänger erwartet.
+{% endhint %}
+
 | Eigenschaft | Wert |
 | ----------- | ---- |
 | **Land / Region** | Schweden |

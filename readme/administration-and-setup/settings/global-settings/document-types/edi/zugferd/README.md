@@ -200,3 +200,11 @@ Das Standard-TRANSFORMATION-XSLT verteilt `ApplicableTradeTax`-Blöcke auf drei 
 | `SpecifiedTradeProduct/OriginTradeCountry/ID` | `COUNTRY_OF_ORIGIN` | `CountryOfOrigin` | STRING | Country of origin |
 | `SpecifiedTradeProduct/ApplicableProductCharacteristic/Value` | `PRODUCT_CHARACTERISTIC` | `ProductCharacteristic` | STRING | Product characteristic |
 | `ActualDeliverySupplyChainEvent/OccurrenceDateTime` | `DELIVERY_DATE` | `ActualDeliveryDate` | DATE | Line delivery date |
+
+## Verwendete Regeln und Aktivierung
+
+Wenn eine elektronische Gutschrift als Invoice erscheint, folgen Sie der [Anleitung zur Fehlerbehebung bei der Klassifizierung](../credit-note-recognized-as-invoice.md). Sie erläutert die verwendete angepasste oder standardmäßige Quelle, die Typcodes, Extraction Paths und die sichere Aktivierung.
+
+## Länderanleitungen
+
+Die Länderanleitungen enthalten genaue Formatbezeichnungen, Syntax, Versionsgrenzen und den geprüften Konfigurationsstand. [eDocs-Formate, Versionen und Länderanleitungen](../supported-electronic-documents/README.md).

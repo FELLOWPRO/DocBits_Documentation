@@ -4,6 +4,12 @@ description: MEXICO CFDI 3.3 elektronische Dokumentenunterstützung in DocBits
 
 # 🇲🇽 MEXICO CFDI 3.3
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Mexiko](countries/mexico.md). Prüfen Sie Namespace, Version und TipoDeComprobante. Ein negativer Betrag allein identifiziert keine Gutschrift. Das Einlesen bestätigt keine Freigabe durch SAT.
+{% endhint %}
+
 | Eigenschaft          | Wert                                               |
 | -------------------- | -------------------------------------------------- |
 | **Land / Region**    | Mexiko                                             |

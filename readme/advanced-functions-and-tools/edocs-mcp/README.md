@@ -139,3 +139,9 @@ Der Versuch, in `00000000-0000-0000-0000-000000000000` zu schreiben, liefert:
   "detail": "Writing to the default org is forbidden via MCP. Default rules are immutable and shared across all customers."
 }
 ```
+
+## Verwendete Regeln und Aktivierung
+
+Wenn eine elektronische Gutschrift als Invoice erscheint, folgen Sie der [Anleitung zur Fehlerbehebung bei der Klassifizierung](../../administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice.md). Sie erläutert die verwendete angepasste oder standardmäßige Quelle, die Typcodes, Extraction Paths und die sichere Aktivierung.
+
+[DocBits mit Claude oder Codex konfigurieren](../docbits-mcp/configuration-with-claude-or-codex.md): Verbindung, kopierbare Prompts, Vorschauen, versionierte Änderungen, Prüfungen und Rückkehr.

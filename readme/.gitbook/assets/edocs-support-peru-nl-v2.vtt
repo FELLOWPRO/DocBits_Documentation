@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.410
+Peru CPE heeft algemene vermeldingen en
+vermeldingen voor UBL 2.0 en UBL 2.1.
+
+formats_02
+00:00:05.410 --> 00:00:10.571
+Factura Electronica is een ander label.
+Selecteer de werkelijke UBL-versie en
+
+formats_03
+00:00:10.571 --> 00:00:15.731
+documentstructuur. Het verwerken van een
+bestand bewijst geen acceptatie door
+
+formats_04
+00:00:15.731 --> 00:00:16.133
+SUNAT.
+
+workflow_01
+00:00:16.883 --> 00:00:22.537
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:22.537 --> 00:00:27.959
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:27.959 --> 00:00:29.433
+activeert het niet.
+
+accept_01
+00:00:30.183 --> 00:00:35.872
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:35.872 --> 00:00:41.154
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:41.154 --> 00:00:44.533
+fiscale goedkeuring of aflevering via een
+netwerk.
+

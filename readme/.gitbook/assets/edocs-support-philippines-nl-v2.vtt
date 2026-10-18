@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.660
+Philippines EIS is de geconfigureerde
+familie. Het label noemt geen versie.
+
+formats_02
+00:00:05.660 --> 00:00:09.631
+Controleer het schema van de
+gegevensinhoud en het betreffende
+
+formats_03
+00:00:09.631 --> 00:00:15.267
+documenttype voordat u op een algemeen
+EIS-label vertrouwt.
+
+workflow_01
+00:00:16.017 --> 00:00:21.671
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:21.671 --> 00:00:27.093
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:27.093 --> 00:00:28.567
+activeert het niet.
+
+accept_01
+00:00:29.317 --> 00:00:35.006
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:35.006 --> 00:00:40.288
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:40.288 --> 00:00:43.667
+fiscale goedkeuring of aflevering via een
+netwerk.
+

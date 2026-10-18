@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.266
+Thailand E-Tax Invoice is de
+geconfigureerde familie. Het label noemt
+
+formats_02
+00:00:05.266 --> 00:00:10.896
+geen versie. Controleer de structuur van
+de bron-XML; handtekeningverificatie en
+
+formats_03
+00:00:10.896 --> 00:00:15.533
+aflevering bij het belastingplatform
+vereisen afzonderlijke controles.
+
+workflow_01
+00:00:16.283 --> 00:00:21.937
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:21.937 --> 00:00:27.359
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:27.359 --> 00:00:28.833
+activeert het niet.
+
+accept_01
+00:00:29.583 --> 00:00:35.272
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:35.272 --> 00:00:40.554
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:40.554 --> 00:00:43.933
+fiscale goedkeuring of aflevering via een
+netwerk.
+

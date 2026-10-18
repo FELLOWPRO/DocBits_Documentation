@@ -2,3 +2,4 @@
 **/.gitbook/assets/edocs-credit-note-*.vtt whitespace=-blank-at-eof
 # Blank context lines in a unified diff have a required space prefix.
 media/edocs-credit-note/pipeline.patch whitespace=-blank-at-eol
+**/.gitbook/assets/edocs-support-*.vtt whitespace=-blank-at-eof

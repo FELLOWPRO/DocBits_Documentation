@@ -65,3 +65,5 @@ Voer de flow uit met de afspeelknop, valideer hem en sla op met de opslagknop in
 
 - Bekijk in het **Cards**-gedeelte wat elke kaart doet.
 - Voor eenvoudige lineaire automatiseringen is de **Standard Workflow** builder sneller op te zetten.
+
+[Bekijk alle vijf hoofdstukken](advanced-workflow-videos.md)

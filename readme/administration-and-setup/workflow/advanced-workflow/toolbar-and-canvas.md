@@ -1,5 +1,42 @@
 # Toolbar & Canvas
 
+## Video: Bouwer en canvas
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/nl.mp4" %}
+
+[Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/nl.vtt) · 1:38
+
+<details>
+<summary>Transcriptie</summary>
+
+**Een factuur met twee routes**
+
+Dit is een echte geavanceerde workflow in DocBits. Een controle van het factuurbedrag leidt naar twee acties. De verbindingen bepalen welke actie wordt uitgevoerd. Het voorbeeld gebruikt een niet-opgeslagen concept en demonstratievelden.
+
+**De bedragcontrole instellen**
+
+Open Toevoegen, kies And en selecteer een voorwaarde voor een documentveld. Stel het bedragveld in, kies Groter dan en voer duizend in. Gebruik de exacte veldsleutel uit uw documentconfiguratie.
+
+**De acties instellen**
+
+Voeg twee Then-kaarten toe. Beide stellen het demonstratieveld approval route in. De ene schrijft Approval, de andere Standard. Deze waarden geven de route aan. Stel voor een productieworkflow uw bedrijfsacties in.
+
+**De resultaatuitgangen verbinden**
+
+Verbind Start met de ingang van de voorwaarde. Verbind de blauwe succesuitgang met Approval en de oranje uitgang voor een onware voorwaarde met Standard. De rode uitgang behandelt evaluatiefouten afzonderlijk. Alleen de positie van een kaart vormt geen route.
+
+**De testgevallen voorbereiden**
+
+Open Testen in de werkbalk. Kies een testdocument of voer de volledige documentgegevens in als JSON. Controleer bedragen boven, onder en precies op duizend, en ontbrekende waarden. Bekijk na de uitvoering de resultaten van de knooppunten.
+
+**Valideren, opslaan en activeren**
+
+Valideer de verbindingen en kaartinstellingen. Sla de workflow expliciet op de server op en controleer de activering afzonderlijk. Automatische browserconcepten vervangen Opslaan niet. Voor uitvoering en logboeken zijn de juiste module en het juiste abonnement nodig.
+
+</details>
+
+[Bekijk alle vijf hoofdstukken](../advanced-workflow-videos.md)
+
 De Advanced Workflow-werkbalk loopt langs de onderkant van het canvas en geeft je alles wat je nodig hebt om de stroom te bouwen, te navigeren en te beheren.
 
 ## Werkbalkbedieningen

@@ -1,5 +1,42 @@
 # Validatie & Testen
 
+## Video: Variabelen, tests en activering
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/nl.mp4" %}
+
+[Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/nl.vtt) · 1:58
+
+<details>
+<summary>Transcriptie</summary>
+
+**Kies het variabeletype**
+
+Open Variabelen met het accoladesymbool. Kies tekst, getal, ja of nee, of document. Zoek op naam. Een Document-variabele bevat een verwijzing die een specifieke workflowactie instelt; dit formulier accepteert geen documentwaarden.
+
+**Variabelen van de organisatie**
+
+Kies een unieke naam, type en beginwaarde. Aanmaken, wijzigen en verwijderen wordt direct voor de organisatie opgeslagen. Andere workflows kunnen deze waarden delen. Het canvas opslaan of verwerpen maakt variabelewijzigingen niet ongedaan.
+
+**Valideer eerst de structuur**
+
+Selecteer Valideren. Bekijk fouten en waarschuwingen boven het canvas. Klik op een melding om het knooppunt te vinden. Controleer acties, ingangen, uitgangen, cycli en samenvoegingen. Structurele validatie garandeert geen juiste uitvoeringsgegevens.
+
+**Kies de testcontext**
+
+Afspelen op de werkbalk opent de documentkeuze. Kies een document, aangepaste gegevens of een test zonder document voor onafhankelijke kaarten. Afspelen op Start begint direct. Tests gebruiken het huidige canvas, inclusief niet opgeslagen wijzigingen, en simuleren destructieve acties.
+
+**Bekijk de resultaten**
+
+Bekijk meldingen en tijden per knooppunt: groen is succes, oranje een onware voorwaarde, rood een fout, grijs overgeslagen. Test opnieuw na correcties. Gebruik Test Manager voor herhaalbare scenario’s: succes, alternatieven, ontbrekende gegevens en fouten.
+
+**Sla op vóór activering**
+
+Automatisch opslaan bewaart ongeveer elke dertig seconden na wijzigingen een lokale browserversie. Sla expliciet op de server op. Activering vereist de eerste opslag. Controleer de ingeschakelde status in de workflowlijst voordat u automatische uitvoering verwacht.
+
+</details>
+
+[Bekijk alle vijf hoofdstukken](../advanced-workflow-videos.md)
+
 Terwijl u een Advanced Workflow bouwt, kunt u deze met twee knoppen in de werkbalk controleren zonder de builder te verlaten. Deze zijn bedoeld voor *snelle controles tijdens het bouwen* — voor opgeslagen, herhaalbare tests gebruikt u de [Test Manager](../test-manager.md).
 
 ## Validate

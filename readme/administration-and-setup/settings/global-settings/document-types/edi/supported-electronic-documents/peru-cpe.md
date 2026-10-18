@@ -4,6 +4,12 @@ description: Obsługa dokumentu elektronicznego PERU CPE w DocBits
 
 # 🇵🇪 PERU CPE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Peru](countries/peru.md). Wybierz rzeczywistą wersję UBL i strukturę dokumentu. Przetworzenie pliku nie dowodzi akceptacji przez SUNAT.
+{% endhint %}
+
 | Właściwość | Wartość |
 | ---------- | ------- |
 | **Kraj/Region** | Peru |

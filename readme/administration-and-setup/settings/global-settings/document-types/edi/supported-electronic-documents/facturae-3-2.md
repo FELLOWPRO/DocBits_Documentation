@@ -4,6 +4,12 @@ description: Obsługa dokumentów elektronicznych FACTURAE 3.2 w DocBits
 
 # 🇪🇸 FACTURAE 3.2
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Hiszpania](countries/spain.md). Sprawdź przestrzeń nazw i wersję schematu. Wyodrębnienie danych z podpisanego pliku XML samo w sobie nie weryfikuje podpisu ani akceptacji przez FACe.
+{% endhint %}
+
 | Właściwość           | Wartość                                  |
 | -------------------- | ---------------------------------------- |
 | **Kraj / Region**    | Hiszpania                                |

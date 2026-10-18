@@ -4,6 +4,12 @@ description: Obsługa dokumentu elektronicznego JP PINT SELF-BILLING w DocBits
 
 # 🇯🇵 JP PINT SELF-BILLING
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Japonia](countries/japan.md). Samofakturowanie jest wariantem procesu biznesowego, a nie wyborem języka. Sprawdź identyfikator dostosowania i skonfigurowany wariant.
+{% endhint %}
+
 | Właściwość           | Wartość                       |
 | -------------------- | ----------------------------- |
 | **Kraj / Region**    | Japonia                       |

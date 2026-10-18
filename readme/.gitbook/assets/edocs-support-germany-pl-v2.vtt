@@ -1,0 +1,49 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:09.027
+XRechnung ma trzynaście oznaczeń wersji od
+1.0 do 3.0.2, każde w CII i UBL. ZUGFeRD
+
+formats_02
+00:00:09.027 --> 00:00:16.655
+obejmuje starsze profile oraz wpisy 2.5
+dla CII i UBL. Składnia, wersja publikacji
+
+formats_03
+00:00:16.655 --> 00:00:21.810
+i profil to różne wybory. Nie wnioskuj o
+publikacji Factur-X na podstawie wspólnego
+
+formats_04
+00:00:21.810 --> 00:00:24.000
+znacznika 1p0.
+
+workflow_01
+00:00:24.750 --> 00:00:30.218
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:30.218 --> 00:00:35.791
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:35.791 --> 00:00:38.600
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:39.350 --> 00:00:45.376
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:45.376 --> 00:00:51.308
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:51.308 --> 00:00:54.133
+podatkowego ani dostarczenia przez sieć.
+

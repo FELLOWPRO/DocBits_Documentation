@@ -1,0 +1,44 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.300
+UAE VAT Invoice jest skonfigurowanym
+oznaczeniem. Mapowanie faktury VAT nie
+
+formats_02
+00:00:05.300 --> 00:00:11.755
+potwierdza obsługi każdego wydania UAE
+Peppol lub PINT. Potwierdź kontrakt danych
+
+formats_03
+00:00:11.755 --> 00:00:14.300
+i wymaganą integrację dostarczania.
+
+workflow_01
+00:00:15.050 --> 00:00:20.518
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:20.518 --> 00:00:26.091
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:26.091 --> 00:00:28.900
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:29.650 --> 00:00:35.676
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:35.676 --> 00:00:41.608
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:41.608 --> 00:00:44.433
+podatkowego ani dostarczenia przez sieć.
+

@@ -35,3 +35,7 @@ hidden: true
 * Skorzystaj z zasobów takich jak fora, szkolenia lub wsparcie dostawców EDI w celu uzyskania dodatkowej pomocy w rozwiązywaniu problemów.
 
 Systematycznie stosując te wskazówki, możesz skutecznie rozwiązywać problemy z transakcjami EDI i zapewnić niezawodność swojej elektronicznej komunikacji biznesowej.
+
+## Faktycznie używane reguły i aktywacja
+
+Jeśli elektroniczna nota kredytowa jest wyświetlana jako Invoice, skorzystaj z [przewodnika rozwiązywania problemów z klasyfikacją](../credit-note-recognized-as-invoice.md). Opisuje on faktycznie używane źródło niestandardowe lub domyślne, kody typów, Extraction Paths i bezpieczną aktywację.

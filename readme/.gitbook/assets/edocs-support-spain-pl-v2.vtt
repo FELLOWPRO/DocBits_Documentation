@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:09.166
+Facturae ma wpisy ogólne oraz 3.2, 3.2.1 i
+3.2.2. Sprawdź przestrzeń nazw i wersję
+
+formats_02
+00:00:09.166 --> 00:00:14.472
+schematu. Wyodrębnienie danych z
+podpisanego pliku XML samo w sobie nie
+
+formats_03
+00:00:14.472 --> 00:00:17.900
+weryfikuje podpisu ani akceptacji przez
+FACe.
+
+workflow_01
+00:00:18.650 --> 00:00:24.118
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:24.118 --> 00:00:29.691
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:29.691 --> 00:00:32.500
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:33.250 --> 00:00:39.276
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:39.276 --> 00:00:45.208
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:45.208 --> 00:00:48.033
+podatkowego ani dostarczenia przez sieć.
+

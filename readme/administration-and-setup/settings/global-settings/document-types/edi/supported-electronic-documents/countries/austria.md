@@ -31,7 +31,23 @@ C = 分类，T = Transformation，P = Preview，E = Extraction Paths。文档键
 
 短横线表示状态检查未报告该准确格式与文档键组合的专用组件。这不排除使用共享或回退映射的可能性。在依赖此处理路径之前，请验证实际生效的映射选择逻辑，并测试有代表性的文件。
 
-<!-- Country screenshot and narrated film pending; no unavailable media is linked. -->
+## 在 DocBits 中查找映射
+
+<figure><img src="../../../../../../../.gitbook/assets/edocs-support-austria-zh.png" alt="奥地利"><figcaption><p>真实开发界面：具有代表性的格式及其可用配置组件。其他版本列于矩阵中。</p></figcaption></figure>
+
+## 国家说明视频
+
+本地化旁白和 WebVTT 字幕说明格式选择、配置和验收检查。
+
+此只读演示展示该国家或地区在 DocBits 中的现有配置。请检查实际使用的来源和活动版本，并在您自己的组织中测试有代表性的发票、贷项通知单和导出。
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-austria-zh-v2.mp4" %}
+奥地利 — 国家说明视频
+{% endfile %}
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-austria-zh-v2.vtt" %}
+WebVTT
+{% endfile %}
 
 ## 验收检查
 

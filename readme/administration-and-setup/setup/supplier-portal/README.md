@@ -55,6 +55,14 @@ Además, puedes filtrar rápidamente por los estados **Pendiente de aprobación*
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
 
+## Detalles del Proveedor (vista interna)
+
+Haga clic en la fila de un proveedor en el **Panel de proveedores** para abrir la vista **Detalles del Proveedor** de ese proveedor. Esta vista interna muestra las mismas seis secciones que el proveedor completa durante el registro — **Detalles del Proveedor**, **Datos de Dirección**, **Contacto del Proveedor**, **Financiera del Proveedor**, **Compras del Proveedor** y **Certificados del Proveedor** — junto con la insignia del **estado** actual del proveedor.
+
+Utilice esta vista para revisar el perfil de un proveedor, corregir o completar datos que falten y preparar la decisión de aprobación. Para una descripción de cada sección, consulte [Registro de Proveedores](supplier-registration.md). El botón de retroceso en la parte superior de la vista lo devuelve al **Panel de proveedores**.
+
+<figure><img src="../../../.gitbook/assets/supplier-portal-supplier-details-es-20261009.png" alt="Vista interna de Detalles del Proveedor en español en la interfaz de DocBits"><figcaption><p>Vista interna de Detalles del Proveedor con datos de ejemplo (organización de ejemplo Musterfirma GmbH, proveedor de ejemplo Fabrikam Metallbau KG, estado «Pendiente de aprobación»). Los nombres y datos son inventados; no se modificó ningún ajuste.</p></figcaption></figure>
+
 ## Estado del proveedor
 
 Si estás utilizando el **Panel de proveedores**, es importante entender los diferentes estados que pueden tener los proveedores. A continuación se muestra una lista de todos los posibles estados de los proveedores y sus significados:

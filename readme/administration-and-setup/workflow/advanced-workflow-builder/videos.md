@@ -20,7 +20,7 @@ description: "五个中文配音章节，讲解高级工作流与执行日志，
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/zh.mp4" %}
 
-[字幕文件（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/zh.vtt) · 1:35
+[打开视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/zh.mp4) · [字幕文件（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/zh.vtt) · 1:35
 
 <details>
 <summary>文字稿</summary>
@@ -55,7 +55,7 @@ description: "五个中文配音章节，讲解高级工作流与执行日志，
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/zh.mp4" %}
 
-[字幕文件（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/zh.vtt) · 1:46
+[打开视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/zh.mp4) · [字幕文件（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/zh.vtt) · 1:46
 
 <details>
 <summary>文字稿</summary>
@@ -88,9 +88,11 @@ Wait ANY 和 OR 在至少一个源节点选中已连接路径时合并分支。O
 
 ## 变量、测试与激活 {#variables-tests-and-activation}
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/zh.mp4" %}
+在真实的 DocBits 设计器中查看已连接的发票工作流。打开变量，比较变量类型和文档引用，找到验证按钮，准备用文档或自定义数据进行测试，并查看保存和激活控件。测试画面展示示例输入的配置，不展示已执行的测试结果。
 
-[字幕文件（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v2/zh.vtt) · 1:48
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/zh.mp4" %}
+
+[打开视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/zh.mp4) · [字幕文件（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/zh.vtt) · 1:50
 
 <details>
 <summary>文字稿</summary>
@@ -111,9 +113,9 @@ Wait ANY 和 OR 在至少一个源节点选中已连接路径时合并分支。O
 
 工具栏播放按钮打开测试文档选择器。选择文档、自定义数据，或对独立卡片选择无文档测试。Start 的播放按钮直接运行。测试使用当前画布，包括未保存的修改，并模拟破坏性动作。
 
-**检查测试结果**
+**准备和检查测试场景**
 
-检查节点消息和耗时。绿色表示成功，橙色表示条件不成立，红色表示错误，灰色表示跳过。修正后重新测试。使用测试管理器建立可重复场景，覆盖成功、替代路径、缺失数据和错误。
+分别准备用于大于、小于、等于一千以及缺少数据的测试。运行后，检查节点消息和耗时：绿色表示成功，橙色表示条件不成立，红色表示错误，灰色表示跳过。修正后重新测试。使用测试管理器重复运行测试场景。
 
 **保存后再激活**
 
@@ -125,7 +127,7 @@ Wait ANY 和 OR 在至少一个源节点选中已连接路径时合并分支。O
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/zh.mp4" %}
 
-[字幕文件（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/zh.vtt) · 1:48
+[打开视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/zh.mp4) · [字幕文件（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v2/zh.vtt) · 1:48
 
 <details>
 <summary>文字稿</summary>
@@ -160,7 +162,7 @@ Wait ANY 和 OR 在至少一个源节点选中已连接路径时合并分支。O
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/zh.mp4" %}
 
-[字幕文件（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/zh.vtt) · 1:47
+[打开视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/zh.mp4) · [字幕文件（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/zh.vtt) · 1:47
 
 <details>
 <summary>文字稿</summary>

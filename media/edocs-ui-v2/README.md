@@ -40,6 +40,16 @@ still refuses an ambiguous request shared with any selected country. Use the
 same exclusion for offline building and country preparation. An excluded country
 retains its genuine screenshot and a localized notice that its film is pending.
 
+The completed Chinese Germany request returned overlapping character timestamps
+in romanized text. `materialize_segment_alignment.py` recovers this existing
+audio offline, verifies the original MP3 decodes to the exact cached PCM, and
+preserves the original provider timestamps. It selects the renderer's measured
+segment captions with native Chinese text, without claiming word timing or
+submitting speech again. The request ID, unchanged audio hashes and fallback
+reason are recorded in `qa/zh/germany-segment-alignment.json`. The original
+provider response remains only in the local cache because it can contain a
+transient signed media URL. The frozen renderer and its source locks are unchanged.
+
 To reproduce, unpack `renderer-source.tar.gz` into a separate workspace, provision
 the unchanged locks, pinned fonts/logo and the original speech cache, then run:
 

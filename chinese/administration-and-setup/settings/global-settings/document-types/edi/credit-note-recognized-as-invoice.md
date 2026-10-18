@@ -9,11 +9,15 @@ description: "诊断并纠正电子贷项通知单的文档类型，同时保留
 
 ## 检查电子贷项通知单分类
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-zh.mp4" %}
+视频以 FACTURX 1.0.05 / ZUGFeRD 2.1 为例，展示在 DocBits 中进行只读检查的过程。您组织中的映射和版本可能不同。请始终检查所识别格式的活动 Transformation。
+
+视频中的旧版 XSLT 示例包含针对 381 和 389 的分支。请检查实际的 Transformation，确认这一具体版本保留哪些代码；通用代码列表不能证明每个历史映射都支持这些代码。
+
+{% file src="../../../../../.gitbook/assets/edocs-credit-note-zh-v2.mp4" %}
 检查电子贷项通知单分类
 {% endfile %}
 
-{% file src="../../../../../.gitbook/assets/edocs-credit-note-zh.vtt" %}
+{% file src="../../../../../.gitbook/assets/edocs-credit-note-zh-v2.vtt" %}
 WebVTT
 {% endfile %}
 

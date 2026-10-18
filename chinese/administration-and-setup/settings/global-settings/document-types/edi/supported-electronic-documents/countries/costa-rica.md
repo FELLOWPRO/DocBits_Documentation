@@ -22,7 +22,23 @@ description: "较早的文档提到了哥斯达黎加，但在所检查的开发
 
 未找到匹配的分类或配置条目。本次检查未能确认当前的内置支持。
 
-<!-- Country screenshot and narrated film pending; no unavailable media is linked. -->
+## 在 DocBits 中查找映射
+
+<figure><img src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-zh.png" alt="哥斯达黎加"><figcaption><p>真实开发界面：在所检查的目录中，搜索此国家名称未返回匹配的配置条目。</p></figcaption></figure>
+
+## 国家说明视频
+
+本地化旁白和 WebVTT 字幕说明格式选择、配置和验收检查。
+
+此只读演示展示该国家或地区在 DocBits 中的现有配置。请检查实际使用的来源和活动版本，并在您自己的组织中测试有代表性的发票、贷项通知单和导出。
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-zh-v2.mp4" %}
+哥斯达黎加 — 国家说明视频
+{% endfile %}
+
+{% file src="../../../../../../../.gitbook/assets/edocs-support-costa-rica-zh-v2.vtt" %}
+WebVTT
+{% endfile %}
 
 ## 验收检查
 

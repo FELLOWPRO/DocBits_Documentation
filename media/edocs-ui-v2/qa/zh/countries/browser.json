@@ -1,0 +1,1202 @@
+[
+  {
+    "country": "austria",
+    "locale": "zh",
+    "metadata": {
+      "duration": 44.366667,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 7
+    },
+    "playback": {
+      "time": 0.309233,
+      "frames": 14
+    },
+    "seek": {
+      "time": 22.183333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "ebInterface 4.3、5.0、\n6.0 和 6.1 各有独立条目。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "denmark",
+    "locale": "zh",
+    "metadata": {
+      "duration": 39.9,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 7
+    },
+    "playback": {
+      "time": 0.306576,
+      "frames": 14
+    },
+    "seek": {
+      "time": 19.95,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "OIOUBL 2.1 是明确列出的丹麦条目。\n OIOUBL 与 Peppol BIS 是不同"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "finland",
+    "locale": "zh",
+    "metadata": {
+      "duration": 48.233333,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.302717,
+      "frames": 13
+    },
+    "seek": {
+      "time": 24.116666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Finvoice 1.3、2.0、\n2.01 和 3.0 各有独立条目。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "france",
+    "locale": "zh",
+    "metadata": {
+      "duration": 52.333333,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.309224,
+      "frames": 14
+    },
+    "seek": {
+      "time": 26.166666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Factur-X 既有通用条目，也有具体发布版本\n的条目，包括 1.0.05、"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "germany",
+    "locale": "zh",
+    "metadata": {
+      "duration": 54.033333,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.302902,
+      "frames": 14
+    },
+    "seek": {
+      "time": 27.016666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "XRechnung 从 1.0 到 3.0.2 \n共有十三个版本名称，每个版本均有 CII 和 U"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "italy",
+    "locale": "zh",
+    "metadata": {
+      "duration": 42.2,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 7
+    },
+    "playback": {
+      "time": 0.304741,
+      "frames": 13
+    },
+    "seek": {
+      "time": 21.1,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "FatturaPA 是已配置的意大利格式系列。\n 格式系列名称并不认证所有 FatturaPA "
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "netherlands",
+    "locale": "zh",
+    "metadata": {
+      "duration": 40.866667,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 7
+    },
+    "playback": {
+      "time": 0.308211,
+      "frames": 13
+    },
+    "seek": {
+      "time": 20.433333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "SI-UBL 2.0 有专用条目。\n UBL 文件不一定就是 SI-UBL 2.0。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "norway",
+    "locale": "zh",
+    "metadata": {
+      "duration": 44.566667,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.302858,
+      "frames": 13
+    },
+    "seek": {
+      "time": 22.283333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "目录列出了 EHF Invoice 3.0，以及\n EHF Order、"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "poland",
+    "locale": "zh",
+    "metadata": {
+      "duration": 45.4,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 7
+    },
+    "playback": {
+      "time": 0.310392,
+      "frames": 14
+    },
+    "seek": {
+      "time": 22.7,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "KSeF 有通用、FA2 和 FA3 条目。\n FA2 与 FA3 使用不同的结构。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "slovenia",
+    "locale": "zh",
+    "metadata": {
+      "duration": 38.8,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 7
+    },
+    "playback": {
+      "time": 0.305866,
+      "frames": 14
+    },
+    "seek": {
+      "time": 19.4,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "e-SLOG 1.6 和 2.0 各有独立条目。\n 两个版本的 XML 结构不同。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "spain",
+    "locale": "zh",
+    "metadata": {
+      "duration": 47.5,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.305116,
+      "frames": 13
+    },
+    "seek": {
+      "time": 23.75,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Facturae 有通用、3.2、\n3.2.1 和 3.2.2 条目。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "sweden",
+    "locale": "zh",
+    "metadata": {
+      "duration": 39.366667,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.304571,
+      "frames": 13
+    },
+    "seek": {
+      "time": 19.683333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Svefaktura 1.0 是明确列出的瑞典条\n目。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "australia",
+    "locale": "zh",
+    "metadata": {
+      "duration": 47.5,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.303359,
+      "frames": 13
+    },
+    "seek": {
+      "time": 23.75,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "PINT A-NZ 有与新西兰共用的发票和贷项通\n知单规则条目。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "new-zealand",
+    "locale": "zh",
+    "metadata": {
+      "duration": 45.733333,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.302688,
+      "frames": 13
+    },
+    "seek": {
+      "time": 22.866666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "PINT A-NZ 有与澳大利亚共用的发票和贷项\n通知单规则条目。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "india",
+    "locale": "zh",
+    "metadata": {
+      "duration": 49.2,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.309238,
+      "frames": 14
+    },
+    "seek": {
+      "time": 24.6,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "India GST E-Invoice 和 GS\nT CreditNote 各有独立条目。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "indonesia",
+    "locale": "zh",
+    "metadata": {
+      "duration": 41.8,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 7
+    },
+    "playback": {
+      "time": 0.313207,
+      "frames": 14
+    },
+    "seek": {
+      "time": 20.9,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Indonesia E-Faktur 是已配置的\n格式系列。 条目未注明发布版本号。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "china",
+    "locale": "zh",
+    "metadata": {
+      "duration": 52.333333,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.305316,
+      "frames": 13
+    },
+    "seek": {
+      "time": 26.166666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "目录包含 Fapiao、E-Fapiao、\nGeneral VAT Invoice 和 Sp"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "japan",
+    "locale": "zh",
+    "metadata": {
+      "duration": 42.8,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 7
+    },
+    "playback": {
+      "time": 0.306611,
+      "frames": 13
+    },
+    "seek": {
+      "time": 21.4,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "JP PINT 和 JP PINT Self-B\nilling 是独立条目。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "korea",
+    "locale": "zh",
+    "metadata": {
+      "duration": 44.6,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.302441,
+      "frames": 13
+    },
+    "seek": {
+      "time": 22.3,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Korea E-Tax Invoice 和 Ko\nrea NTS 是已配置的格式系列。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "malaysia",
+    "locale": "zh",
+    "metadata": {
+      "duration": 43.633333,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 7
+    },
+    "playback": {
+      "time": 0.302925,
+      "frames": 13
+    },
+    "seek": {
+      "time": 21.816666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "MyInvois 有发票和贷项通知单规则条目。\n 已检查的提取路径基于 XML。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "philippines",
+    "locale": "zh",
+    "metadata": {
+      "duration": 42.466667,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 7
+    },
+    "playback": {
+      "time": 0.307343,
+      "frames": 14
+    },
+    "seek": {
+      "time": 21.233333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Philippines EIS 是已配置的格式系\n列。 该名称未指明发布版本。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "singapore",
+    "locale": "zh",
+    "metadata": {
+      "duration": 47.5,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.303044,
+      "frames": 13
+    },
+    "seek": {
+      "time": 23.75,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "InvoiceNow 有发票和贷项通知单条目；I\nnvoiceNow SG 是另一个已配置的名称。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "taiwan",
+    "locale": "zh",
+    "metadata": {
+      "duration": 42.7,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.310858,
+      "frames": 14
+    },
+    "seek": {
+      "time": 21.35,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Taiwan eGUI 是已配置的格式系列。\n 格式系列名称不代表所有 MIG 发布版本均已获"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "thailand",
+    "locale": "zh",
+    "metadata": {
+      "duration": 42.833333,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 7
+    },
+    "playback": {
+      "time": 0.311066,
+      "frames": 14
+    },
+    "seek": {
+      "time": 21.416666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Thailand E-Tax Invoice 是\n已配置的格式系列。 该名称未指明发布版本。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "vietnam",
+    "locale": "zh",
+    "metadata": {
+      "duration": 41.633333,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 7
+    },
+    "playback": {
+      "time": 0.30585,
+      "frames": 13
+    },
+    "seek": {
+      "time": 20.816666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Vietnam E-Invoice 是已配置的格\n式系列。 该名称未指明发布版本。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "argentina",
+    "locale": "zh",
+    "metadata": {
+      "duration": 45.766667,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.303697,
+      "frames": 13
+    },
+    "seek": {
+      "time": 22.883333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Argentina AFIP 和 Factura\n Electronica 是已配置的名称。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "brazil",
+    "locale": "zh",
+    "metadata": {
+      "duration": 52.333333,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.305356,
+      "frames": 13
+    },
+    "seek": {
+      "time": 26.166666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "巴西有 NF-e、NFC-e、CT-e、\nNFS-e 和 SPED NFS-e 条目。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "chile",
+    "locale": "zh",
+    "metadata": {
+      "duration": 42.233333,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 7
+    },
+    "playback": {
+      "time": 0.303707,
+      "frames": 13
+    },
+    "seek": {
+      "time": 21.116666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Chile DTE 有发票、\n贷项通知单和发货单条目。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "colombia",
+    "locale": "zh",
+    "metadata": {
+      "duration": 44.666667,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.308512,
+      "frames": 14
+    },
+    "seek": {
+      "time": 22.333333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Colombia Factura Electro\nnica 和 Documento Soporte"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "costa-rica",
+    "locale": "zh",
+    "metadata": {
+      "duration": 45.966667,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 7
+    },
+    "playback": {
+      "time": 0.308359,
+      "frames": 14
+    },
+    "seek": {
+      "time": 22.983333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "较早的文档提到了哥斯达黎加，但在所检查的开发环境\n目录中未找到匹配的分类或配置条目。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "ecuador",
+    "locale": "zh",
+    "metadata": {
+      "duration": 52.266667,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.306826,
+      "frames": 13
+    },
+    "seek": {
+      "time": 26.133333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Ecuador SRI 有通用、1.0.0、\n1.1.0、2.0.0 和 2.1.0 条目。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "mexico",
+    "locale": "zh",
+    "metadata": {
+      "duration": 45.133333,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.308466,
+      "frames": 14
+    },
+    "seek": {
+      "time": 22.566666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Mexico CFDI 3.3 和 4.0 各有\n独立条目。 请检查命名空间、"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "paraguay",
+    "locale": "zh",
+    "metadata": {
+      "duration": 45.966667,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.304814,
+      "frames": 14
+    },
+    "seek": {
+      "time": 22.983333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Paraguay DTE、\nSIFEN 和 SIFEN 150 是已配置的名"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "peru",
+    "locale": "zh",
+    "metadata": {
+      "duration": 44.466667,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.311247,
+      "frames": 14
+    },
+    "seek": {
+      "time": 22.233333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Peru CPE 有通用、\nUBL 2.0 和 UBL 2.1 条目。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "uruguay",
+    "locale": "zh",
+    "metadata": {
+      "duration": 51.066667,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.309341,
+      "frames": 14
+    },
+    "seek": {
+      "time": 25.533333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Uruguay CFE 有通用、\n24 和 25 条目。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "kazakhstan",
+    "locale": "zh",
+    "metadata": {
+      "duration": 41.4,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 7
+    },
+    "playback": {
+      "time": 0.309516,
+      "frames": 14
+    },
+    "seek": {
+      "time": 20.7,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Kazakhstan ESF 是已配置的格式系\n列。 该名称未注明发布版本。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "saudi-arabia",
+    "locale": "zh",
+    "metadata": {
+      "duration": 45.333333,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.304772,
+      "frames": 13
+    },
+    "seek": {
+      "time": 22.666666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "ZATCA Fatoorah、\nReporting、"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "turkey",
+    "locale": "zh",
+    "metadata": {
+      "duration": 45.866667,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.3076,
+      "frames": 14
+    },
+    "seek": {
+      "time": 22.933333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Turkey E-Fatura 和 E-Arsi\nv 是独立配置的格式系列。"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "united-arab-emirates",
+    "locale": "zh",
+    "metadata": {
+      "duration": 43.5,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 7
+    },
+    "playback": {
+      "time": 0.306095,
+      "frames": 13
+    },
+    "seek": {
+      "time": 21.75,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "UAE VAT Invoice 是已配置的名称。\n 增值税发票映射并不证明支持阿联酋所有 Pepp"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "international",
+    "locale": "zh",
+    "metadata": {
+      "duration": 52.333333,
+      "width": 1280,
+      "height": 720,
+      "language": "zh",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.319294,
+      "frames": 14
+    },
+    "seek": {
+      "time": 26.166666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "国际条目包括 Peppol BIS 3.0、\nUBL 2.1、纯 CII、EDI、"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  }
+]

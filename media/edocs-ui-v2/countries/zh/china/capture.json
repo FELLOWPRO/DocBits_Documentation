@@ -1,0 +1,74 @@
+{
+  "locale": "zh",
+  "country": "china",
+  "representative": "CHINA GENERAL VAT INVOICE",
+  "environment": "development",
+  "runtime_language": "zh",
+  "captured_at": "2026-10-18T13:15:49.708Z",
+  "viewport": {
+    "width": 1600,
+    "height": 1000,
+    "deviceScaleFactor": 2
+  },
+  "redactions": [
+    "version authors",
+    "user menu",
+    "notifications",
+    "mailto links"
+  ],
+  "mutations": [],
+  "captures": [
+    {
+      "name": "rules",
+      "file": "rules.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE?tab=INDONESIA+E-FAKTUR",
+      "sha256": "bc93ba22e226cdaa5411bd19088eea5fd58310384d9a4488c1d8e134d7c3a0b7",
+      "focus": null
+    },
+    {
+      "name": "transformation-code",
+      "file": "transformation-code.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/84e707f9-343d-5256-9180-fa95dcca0c25/CHINA%20GENERAL%20VAT%20INVOICE?attribute_name=TRANSFORMATION&attribute_type=XSLT&title=INVOICE",
+      "sha256": "2cfcda426b4d98857f2bc21ee6459b749b739c81833394f81c4394cbc15f6257",
+      "focus": {
+        "found": false
+      }
+    },
+    {
+      "name": "preview-panel",
+      "file": "preview-panel.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/84e707f9-343d-5256-9180-fa95dcca0c25/CHINA%20GENERAL%20VAT%20INVOICE?attribute_name=TRANSFORMATION&attribute_type=XSLT&title=INVOICE",
+      "sha256": "5ff4d664f78c5244290bb09849bc5200212a19f1f1b46a92c914a5b1bb37cd47",
+      "focus": null
+    },
+    {
+      "name": "extraction-paths-code",
+      "file": "extraction-paths-code.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/bb413ef0-a399-5587-b864-e8d685d20934/CHINA%20GENERAL%20VAT%20INVOICE?attribute_name=EXTRACTION%20PATHS&attribute_type=JSON&title=INVOICE",
+      "sha256": "7253a420567425addcb0d7aff2c6f2a4b65ad50d0807e8a26ca4a87014a1d8ae",
+      "focus": {
+        "found": false
+      }
+    }
+  ],
+  "rows": [
+    [
+      "TRANSFORMATION",
+      "Default",
+      "XSLT",
+      "—"
+    ],
+    [
+      "PREVIEW",
+      "Default",
+      "XSLT",
+      "—"
+    ],
+    [
+      "EXTRACTION PATHS",
+      "Default",
+      "JSON",
+      "—"
+    ]
+  ]
+}

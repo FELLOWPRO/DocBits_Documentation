@@ -156,6 +156,27 @@ Health check 2026-10-18 07:0xZ: all 3 checks clean. 37 pages verified live
 (20 merged de pages + zh `ui-redesign-guide` + 24/24 e-mail-templates trio
 bytes distinct from EN + 8/8 `ui-redesign-help-icon-<lang>` distinct shas).
 
+Health check 2026-10-18 08:4xZ (=06:46Z UTC): all 3 checks clean.
+1. Bridge: newest completed `39104526963` 06:34:34Z `success` (the dispatch
+   after #1037), newest `schedule` `39103517486` 06:17:29Z `success` (~29 min
+   old) — no dispatch needed.
+2. Live: **64 images verified** — 22 de pages (incl. #1037
+   `duplicate-document-handling`: `_1_de` / `_2_de` / `_5_de` served German),
+   8×3 e-mail-templates trio, 8×1 `ui-redesign-help-icon`. **0 problems.**
+   Two false alarms in the first pass, both my script's fault, not the docs':
+   (a) `de==en REGRESSION` on `Calculate_PO_unit_price_1_de.png` — the EN
+       folder `readme/.gitbook/assets/` on `main` carries a **stray copy under
+       the `_de` name** (`addc1d7e81a7`, identical to the `deutsch/` blob), so
+       looking the EN original up by the *un-stripped* name reported equality.
+       Real EN original `Calculate_PO_unit_price_1.png` = `efdf2aa1486b` ≠ de
+       `addc1d7e81a7`. **Always strip `-de`/`_de` before the EN lookup.**
+   (b) `no -de images` on e-mail-templates ×8 — wrong slug. The page is
+       `administration-and-setup/settings/global-settings/e-mail-templates`,
+       NOT `…/document-processing/module/e-mail-templates` (that path 404s).
+       With the right slug all 24 images verify (distinct shas per language).
+3. Worklist drift: all 8 counts unchanged from the 08:2xZ run
+   (de 222 es 206 fr 208 it 212 nl 204 pl 216 pt 214 zh 389) — none went UP.
+
 Health check 2026-10-18 08:2xZ (=06:21Z UTC): all 3 checks clean.
 1. Bridge: newest `39103517486` 06:17:29Z `success` (~4 min old), 4/4 recent
    runs success — no dispatch needed.

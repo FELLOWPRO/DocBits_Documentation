@@ -8,25 +8,46 @@ An **Advanced Workflow** routes a document through a graph of triggers, conditio
 
 Use a [Standard Workflow](../standard-workflow-builder/README.md) for a linear **When → And → Then** automation. Both builders use the same [card catalog](../cards-overview/README.md). The advanced builder adds explicit connections and control nodes.
 
-## Watch: builder and canvas
+## Watch: an invoice routing example
 
-Start with the narrated introduction to creating and editing an Advanced Workflow. Choose English or German. The videos use labelled teaching diagrams; the screenshots below show the application interface.
+Watch a configured workflow in the real DocBits interface: set an invoice amount condition, configure two actions, connect their routes and prepare test cases.
 
-{% tabs %}
-{% tab title="English" %}
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v1/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/en.mp4" %}
 
-[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v1/en.vtt) · [Read the transcript](videos.md#builder-and-canvas)
-{% endtab %}
+[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/en.vtt)
 
-{% tab title="Deutsch" %}
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v1/de.mp4" %}
+The recording shows an unsaved demonstration draft. The fields `total_amount` and `approval_route` are example keys. `Approval` and `Standard` label the routes; configure the actual business actions for your process.
 
-[Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v1/de.vtt) · [Transkript lesen](videos.md#builder-and-canvas)
-{% endtab %}
-{% endtabs %}
+<details>
+<summary>Transcript</summary>
 
-Continue with the [five-part video guide](videos.md) for nodes and routes, variables and testing, finding log entries and diagnosing an execution. Every chapter includes English and German narration, caption files and a transcript.
+**An invoice with two routes**
+
+Here is a real Advanced Workflow in DocBits. An invoice amount check leads to two actions. The connections define which action runs. This example uses an unsaved draft and demonstration fields.
+
+**Configure the amount check**
+
+Open Add, choose And, and select a Document Field condition. Set the amount field, choose Greater Than, and enter one thousand. Use the exact field key from your document configuration.
+
+**Configure the actions**
+
+Add two Then cards. Each card sets the demonstration field approval route. One writes Approval; the other writes Standard. These values label the route. Configure your business actions for a production workflow.
+
+**Connect the result outputs**
+
+Connect Start to the condition input. Connect blue Success to Approval, and orange Failed Condition to Standard. The red Error output handles evaluation errors separately. Card position alone does not create a route.
+
+**Prepare the test cases**
+
+Open Test in the toolbar. Choose a test document, or enter complete document data as JSON. Check amounts above, below, and exactly at one thousand. Also check missing values. Inspect the node results after execution.
+
+**Validate, save and activate**
+
+Validate the connections and card settings. Save explicitly to write the workflow to the server, then check activation separately. Automatic browser drafts do not replace Save. Execution and log access require the appropriate module and subscription.
+
+</details>
+
+Continue with the [five-part video guide](videos.md) for nodes and routes, variables and testing, finding log entries and diagnosing an execution. All chapters on this English page use English narration, caption files and transcripts.
 
 ## Open or create an Advanced Workflow
 
@@ -80,7 +101,7 @@ Organization variables persist independently. Discarding a canvas draft does not
 
 ## Complete guide
 
-- [Video guide](videos.md): five narrated chapters in English and German, with captions and transcripts.
+- [Video guide](videos.md): five narrated chapters in English, with captions and transcripts.
 - [Toolbar and canvas](toolbar-and-canvas.md): every control, selection, editing, notes and shortcuts.
 - [Nodes and connections](nodes.md): entry points, versions, result handles, merges and connection rules.
 - [Variables](variables.md): all four types, organization scope and immediate persistence.

@@ -8,6 +8,18 @@ Skorzystaj z tego przewodnika, aby ustalić skonfigurowaną rodzinę i zakres we
 
 [Wszystkie kraje i zakres obsługi](../README.md)
 
+## Film objaśniający dla kraju
+
+Narracja i napisy WebVTT w wybranym języku wyjaśniają wybór formatu, konfigurację i kontrole akceptacyjne.
+
+Ten przegląd bez wprowadzania zmian pokazuje istniejącą konfigurację kraju w DocBits. Sprawdź używane źródło i aktywną wersję, a następnie przetestuj reprezentatywne faktury, noty kredytowe i eksporty we własnej organizacji.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_austria/v2/pl.mp4" %}
+
+[Austria — Film objaśniający dla kraju](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_austria/v2/pl.mp4)
+
+[WebVTT](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_austria/v2/pl.vtt)
+
 ## Warianty i ograniczenia wersji
 
 ebInterface 4.3, 5.0, 6.0 i 6.1 mają osobne wpisy.
@@ -34,20 +46,6 @@ Myślnik oznacza, że kontrola statusu nie wykazała dedykowanego komponentu dla
 ## Znajdź mapowanie w DocBits
 
 <figure><img src="../../../../../../../.gitbook/assets/edocs-support-austria-pl.png" alt="Austria"><figcaption><p>Rzeczywisty interfejs środowiska deweloperskiego: przykładowy format i dostępne komponenty konfiguracji. Pozostałe wersje wymieniono w macierzy.</p></figcaption></figure>
-
-## Film objaśniający dla kraju
-
-Narracja i napisy WebVTT w wybranym języku wyjaśniają wybór formatu, konfigurację i kontrole akceptacyjne.
-
-Ten przegląd bez wprowadzania zmian pokazuje istniejącą konfigurację kraju w DocBits. Sprawdź używane źródło i aktywną wersję, a następnie przetestuj reprezentatywne faktury, noty kredytowe i eksporty we własnej organizacji.
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-austria-pl-v2.mp4" %}
-Austria — Film objaśniający dla kraju
-{% endfile %}
-
-{% file src="../../../../../../../.gitbook/assets/edocs-support-austria-pl-v2.vtt" %}
-WebVTT
-{% endfile %}
 
 ## Kontrole akceptacyjne
 

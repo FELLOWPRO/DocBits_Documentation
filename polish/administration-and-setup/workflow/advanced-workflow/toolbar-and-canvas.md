@@ -2,67 +2,36 @@
 
 ## Film: Edytor i płótno
 
-Poznaj Piotra i śledź jego wyjaśnienia w rzeczywistym polskim interfejsie DocBits. Sprawdza pulpit, listę workflow i licencję, a następnie otwiera niezapisany szkic w projektancie. Krok po kroku nadaje nazwę workflow, konfiguruje kontrolę kwoty oraz dwie akcje, rozmieszcza karty i łączy obie ścieżki. Następnie pokazuje przygotowanie testów z dokumentem lub własnymi danymi. Konto demonstracyjne nie ma subskrypcji Advanced Workflow i blokuje walidację; szkic pozostaje niezapisany i nieaktywny.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/pl.mp4" %}
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4" %}
-
-[Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.vtt) · [Transkrypcja (tekst)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.txt) · 5:26
-
-| W tym filmie | Początek |
-| --- | --- |
-| Poznaj administratora | [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=0) |
-| Sprawdź dostęp | [0:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=5) |
-| Nazwij workflow | [0:39](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=39) |
-| Skonfiguruj kontrolę kwoty | [1:04](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=64) |
-| Dodaj akcję Approval | [2:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=122) |
-| Dodaj akcję Standard | [2:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=151) |
-| Rozmieść karty | [2:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=178) |
-| Połącz ścieżki | [3:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=215) |
-| Przygotuj testy | [4:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=259) |
-| Walidacja, zapis i aktywacja | [4:54](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=294) |
+[Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/pl.vtt) · 1:44
 
 <details>
 <summary>Transkrypcja</summary>
 
-**Poznaj administratora**
+**Faktura z dwiema ścieżkami**
 
-Zarządzam DocBits. Zbudujemy kontrolę kwoty faktury.
+To prawdziwy zaawansowany workflow w DocBits. Sprawdzenie kwoty faktury prowadzi do dwóch działań. Połączenia określają, które działanie zostanie wykonane. Przykład wykorzystuje niezapisany szkic i pola demonstracyjne.
 
-**Sprawdź dostęp**
+**Konfiguracja kontroli kwoty**
 
-Zaczynam od pulpitu workflow i otwieram listę. Następnie sprawdzam licencję. Workflow i Advanced Workflow wymagają aktywnego dostępu. Po włączeniu obu uprawnień opcja Nowy workflow oferuje Advanced Workflow. To konto dokumentacyjne nie ma aktywnej licencji workflow. Dlatego pracuję dalej na niezapisanym podglądzie w projektancie.
+Otwórz Dodaj, wybierz And i warunek dotyczący pola dokumentu. Wskaż pole kwoty, wybierz Większe niż i wpisz tysiąc. Użyj dokładnego klucza pola z konfiguracji dokumentu.
 
-**Nazwij workflow**
+**Konfiguracja działań**
 
-Pracuję w prawdziwym projektancie DocBits. Najpierw nadaję wersji roboczej czytelną nazwę. Sprawdzimy kwotę faktury i pokażemy dwie możliwe ścieżki za pomocą prostych akcji. Ta demonstracja pozostanie niezapisana.
+Dodaj dwie karty Then. Obie ustawiają pole demonstracyjne approval route. Jedna wpisuje Approval, druga Standard. Wartości te oznaczają wybraną ścieżkę. W produkcyjnym workflow skonfiguruj właściwe działania biznesowe.
 
-**Skonfiguruj kontrolę kwoty**
+**Łączenie wyjść wyników**
 
-Otwieram menu dodawania i wybieram kartę warunku. W kategorii Pole dokumentu wybieram warunek Docfield. Wpisuję pole total_amount. Następnie wybieram porównanie większe niż. I wpisuję tysiąc. Użyjcie klucza pola ze swojego dokumentu. Kwota równa dokładnie tysiąc nie spełnia tego porównania.
+Połącz Start z wejściem warunku. Niebieskie wyjście sukcesu połącz z Approval, a pomarańczowe wyjście fałszywego warunku ze Standard. Czerwone wyjście obsługuje osobno błędy oceny. Samo położenie kart nie tworzy ścieżki.
 
-**Dodaj akcję Approval**
+**Przygotowanie testów**
 
-Teraz dodaję kartę akcji z kategorii Pole dokumentu. Akcja ustawia wartość pola dokumentu. Używam przykładowego klucza approval_route. I wpisuję wartość Approval. To oznacza ścieżkę. Rzeczywisty proces zatwierdzania wymaga odpowiednich akcji biznesowych.
-
-**Dodaj akcję Standard**
-
-Dodaję drugą kartę z tą samą akcją. Tym razem przykładowe pole otrzymuje wartość Standard. Obie karty są skonfigurowane. Potrzebują jeszcze połączeń, które określą wykonywaną akcję.
-
-**Rozmieść karty**
-
-Przeciągam karty, aby układ był czytelny. Obie akcje umieszczam po prawej stronie. Warunek znajduje się pośrodku, a Start po lewej. Przeniesienie karty zmienia jej położenie. Nie tworzy połączenia.
-
-**Połącz ścieżki**
-
-Przeciągam od wyjścia Start do wejścia warunku. Ścieżka sukcesu prowadzi do Approval przez niebieskie połączenie. Pomarańczowa ścieżka niespełnionego warunku prowadzi do Standard. Czerwone wyjście błędu jest osobnym wyjściem dla błędów oceny. Tutaj pozostaje niepołączone. W produkcyjnym workflow ustalcie sposób obsługi takich błędów.
-
-**Przygotuj testy**
-
-Przycisk testu na pasku otwiera wybór dokumentu testowego. Mogę wybrać dokument demonstracyjny albo przygotować kompletne dane niestandardowe. Przetestujcie kwoty większe, mniejsze i równe tysiąc. Sprawdźcie też brakującą kwotę. To konto nie ma licencji Advanced Workflow. Pokazuję przygotowanie testu, a nie wykonany wynik.
+Otwórz Test na pasku narzędzi. Wybierz dokument testowy lub wprowadź jego pełne dane w formacie JSON. Sprawdź kwoty powyżej, poniżej i równe tysiąc oraz brakujące wartości. Po wykonaniu przejrzyj wyniki węzłów.
 
 **Walidacja, zapis i aktywacja**
 
-Walidacja sprawdza połączenia i ustawienia kart. Tutaj brak licencji blokuje walidację. Na koncie z dostępem zapisałbym workflow bezpośrednio na serwerze. Następnie osobno sprawdziłbym aktywację. Przed pierwszym zapisem przełącznik jest wyłączony. Wskaźnik automatycznego szkicu dotyczy lokalnej kopii w przeglądarce. Nie oznacza, że workflow jest zapisany lub aktywny.
+Zweryfikuj połączenia i ustawienia kart. Zapisz workflow na serwerze, a następnie osobno sprawdź aktywację. Automatyczne szkice przeglądarki nie zastępują zapisu. Wykonywanie i dostęp do dzienników wymagają odpowiedniego modułu i subskrypcji.
 
 </details>
 

@@ -184,3 +184,7 @@ A Tabela de Dados fornece acesso completo a todos os dados de linha subjacentes 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
+
+## Touchless Intelligence
+
+A aba **Touchless Intelligence** mostra quantos documentos passam pelo DocBits sem que ninguém toque neles e por que os outros param. Veja [Touchless Intelligence](touchless-intelligence.md).

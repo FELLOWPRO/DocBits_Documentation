@@ -1,194 +1,203 @@
-# Rule Manager
+# Rule Management
 
-\
+<figure><img src="../../../../.gitbook/assets/rule_management.png" alt="Rule Management"><figcaption><p>Página Rule Management</p></figcaption></figure>
 
+O Rule Management permite criar e gerenciar regras de resolução de conflitos baseadas em TOML, usadas durante o PO Matching e a exportação de documentos. Cada conjunto de regras define como o DocBits trata as divergências entre os dados da fatura e os dados do pedido de compra.
 
-This document provides an in-depth explanation of the conflict resolution rules used in the DocBits invoicing system. These rules are designed to automatically handle discrepancies between invoice details and purchase order (PO) data, ensuring accurate financial reconciliation. The system applies these rules to process invoice lines, charges, and taxes, and generates appropriate adjustments or notes when necessary.
+## Lista de regras
 
-## Structure of the Rules
+A tabela principal mostra todas as configurações de regras:
 
-### &#x20;1. Metadata
+| Coluna | Descrição |
+|--------|-------------|
+| **Name** | O nome do conjunto de regras. Itens marcados como **default** são modelos fornecidos pelo sistema. |
+| **Description** | Um resumo do que o conjunto de regras trata. |
+| **Last Modified By** | O usuário que editou este conjunto de regras pela última vez. |
+| **Last Modified At** | Data e hora da última alteração. |
+| **Actions** | Menu de três pontos para editar, copiar ou excluir. |
 
-• version: Identifies the version of the mapping file.
+Clique em **+ New** para criar um novo conjunto de regras ou clique no nome de um existente para abrir o editor de regras.
 
-• revision: Revision number for tracking changes.
+---
 
-• author: Indicates the creator of the mapping file.
+## Referência da estrutura das regras
 
-• description: A brief description of the file’s purpose.
+Esta seção apresenta uma explicação detalhada das regras de resolução de conflitos usadas no sistema de faturamento do DocBits. Essas regras foram criadas para tratar automaticamente as divergências entre os detalhes da fatura e os dados do pedido de compra (PO), garantindo uma conciliação financeira precisa. O sistema aplica essas regras para processar linhas de fatura, encargos e impostos e, quando necessário, gera os ajustes ou as notas apropriados.
 
-• created\_at & updated\_at: Timestamps for when the file was created and last updated.
+## Estrutura das regras
 
-### &#x20;2. Export Configuration
+### 1. Metadata
 
-The export configuration section defines the mapping between the data fields in the system and the corresponding fields in the export files.
+• version: identifica a versão do arquivo de mapeamento.
 
-• Header: Defines the header fields for the exported invoice data.
+• revision: número de revisão para o controle de alterações.
 
-• Tax Lines: Specifies the fields for tax line items in the export.
+• author: indica o criador do arquivo de mapeamento.
 
-• Order Header Charges: Maps fields related to additional charges at the order header level.
+• description: uma breve descrição da finalidade do arquivo.
 
-• Receipt Lines: Maps fields for individual line items in a receipt.
+• created_at & updated_at: datas e horas de criação e da última atualização do arquivo.
 
-• Order Line Charges: Defines the fields for charges related to specific order lines.
+### 2. Export Configuration
 
-• Cost Lines: Specifies fields for cost allocation lines.
+A seção de configuração de exportação define o mapeamento entre os campos de dados do sistema e os campos correspondentes nos arquivos de exportação.
 
-• Debit Note & Credit Note: Defines fields for generating debit and credit notes in cases of discrepancies.
+• Header: define os campos de cabeçalho dos dados de fatura exportados.
+
+• Tax Lines: especifica os campos dos itens de linha de imposto na exportação.
+
+• Order Header Charges: mapeia os campos relacionados a encargos adicionais no nível do cabeçalho do pedido.
+
+• Receipt Lines: mapeia os campos de cada item de linha de um recebimento.
+
+• Order Line Charges: define os campos de encargos relacionados a linhas de pedido específicas.
+
+• Cost Lines: especifica os campos das linhas de alocação de custos.
+
+• Debit Note & Credit Note: define os campos para gerar notas de débito e de crédito em caso de divergências.
 
 ### 3. Conflict Resolution Rules
 
-These rules handle discrepancies between invoice data and the corresponding PO data. Each rule is composed of several components:
+Essas regras tratam as divergências entre os dados da fatura e os dados correspondentes do pedido de compra. Cada regra é composta por vários componentes:
 
-• Name: The rule’s descriptive name, indicating the type of discrepancy it addresses.
+• Name: o nome descritivo da regra, que indica o tipo de divergência tratado.
 
-• Section: Indicates which part of the invoice (e.g., receipt\_lines, line\_charges) the rule applies to.
+• Section: indica a qual parte da fatura (por exemplo, receipt_lines, line_charges) a regra se aplica.
 
-• Active: Boolean value (true or false) indicating if the rule is currently active.
+• Active: valor booleano (true ou false) que indica se a regra está ativa no momento.
 
-• Match Criteria: Conditions that trigger the rule based on comparisons between actual invoice data and expected PO data.
+• Match Criteria: condições que acionam a regra com base em comparações entre os dados reais da fatura e os dados esperados do pedido de compra.
 
-• Actions: Defines what the system should do when the rule is triggered, including adjusting values, applying charges, or generating credit/debit notes.
+• Actions: define o que o sistema deve fazer quando a regra é acionada, incluindo ajustar valores, aplicar encargos ou gerar notas de crédito/débito.
 
-## Common Elements in the Rules
+## Elementos comuns nas regras
 
-### Comparison Operators
+### Operadores de comparação
 
-These operators define how the actual invoice values are compared to the expected PO values:
+Esses operadores definem como os valores reais da fatura são comparados com os valores esperados do pedido de compra:
 
-• equal
+• igual a
 
-• greater than
+• maior que
 
-• greater than or equal to
+• maior ou igual a
 
-• less than
+• menor que
 
-• less than or equal to
+• menor ou igual a
 
-• within tolerance
+• dentro da tolerância
 
-• outside tolerance
+• fora da tolerância
 
-\
 
+### Status de aprovação
 
-### Approval Status
+Indica se uma divergência foi aprovada ou não:
 
-Indicates whether a discrepancy is approved or not:
+• aprovada
 
-• approved
+• rejeitada
 
-• rejected
+• qualquer
 
-• any
 
-\
+### Tipos de ação
 
+Define as ações específicas a executar quando uma divergência é detectada:
 
-### Action Types
+• linha de recebimento
 
-Defines specific actions to take when a discrepancy is detected:
+• linha de custo
 
-\
-• receipt line
+• encargo de cabeçalho
 
-• cost line
+• encargo de linha
 
-• header charge
+• linha de imposto
 
-• line charge
+• linha de recebimento de nota de débito
 
-• tax line
+• linha de custo de nota de débito
 
-• debit note receipt line
+• encargo de cabeçalho de nota de débito
 
-• debit note cost line
+• encargo de linha de nota de débito
 
-• debit note header charge
+• linha de recebimento de nota de crédito
 
-• debit note line charge
+• linha de custo de nota de crédito
 
-• credit note receipt line
+• encargo de cabeçalho de nota de crédito
 
-• credit note cost line
+• encargo de linha de nota de crédito
 
-• credit note header charge
+• linha de imposto de nota de crédito
 
-• credit note line charge
 
-• credit note tax line
+### Exemplos de regras
 
-\
+#### [Casos 1, 2, 3: quantidade e preço unitário dentro da tolerância](transactionconfig-pro-template/case-1-2-3-quantity-and-unit-price-within-tolerance.md)
 
+• Finalidade: trata cenários em que a quantidade e o preço unitário da fatura estão dentro dos limites de tolerância aceitos em comparação com o pedido de compra.
 
-### Rule Examples
+• Ação: o sistema aceita os valores da fatura e calcula o valor total.
 
-#### [Case 1, 2, 3: Quantity and Unit Price Within Tolerance](transactionconfig-pro-template/case-1-2-3-quantity-and-unit-price-within-tolerance.md)
 
-\
-• Purpose: Handles scenarios where both the quantity and unit price on the invoice are within the accepted tolerance limits compared to the PO.
 
-• Action: The system accepts the invoice values and calculates the total amount.
+#### [Casos 4, 5: quantidade dentro da tolerância, preço unitário fora da tolerância (aprovado)](./#caso-4-5-quantidade-dentro-da-tolerancia-preco-unitario-fora-da-tolerancia-aprovado)
 
+• Finalidade: aplica-se quando a quantidade está dentro da tolerância, mas o preço unitário está fora da tolerância e foi aprovado.
 
+• Ação: o sistema ajusta o preço unitário para corresponder ao pedido de compra e aplica os encargos de linha necessários.
 
-#### [Case 4, 5: Quantity Within Tolerance, Unit Price Outside Tolerance (Approved)](./#case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved)
 
-• Purpose: Applies when the quantity is within tolerance but the unit price is outside tolerance and has been approved.
 
-• Action: The system adjusts the unit price to match the PO and applies any necessary line charges.
+#### [Caso 6: quantidade dentro da tolerância, preço unitário fora da tolerância negativa (rejeitado)](transactionconfig-pro-template/case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
 
-\
+• Finalidade: trata casos em que o preço unitário é menor que o esperado e está fora da faixa de tolerância, resultando em rejeição.
 
+• Ação: o sistema ajusta o preço unitário para corresponder ao pedido de compra, gera uma nota de crédito pela diferença e aplica encargos de cabeçalho conforme necessário.
 
-#### [Case 6: Quantity Within Tolerance, Unit Price Outside Negative Tolerance (Rejected)](transactionconfig-pro-template/case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)&#x20;
 
-• Purpose: Deals with cases where the unit price is less than expected and outside the tolerance range, leading to rejection.
+### Tratamento de encargos e impostos
 
-• Action: The system adjusts the unit price to match the PO, generates a credit note for the difference, and applies header charges as needed.
+### Tolerância de encargo por unidade
 
+• As regras desta categoria tratam divergências nos encargos por unidade, com ações específicas conforme o encargo esteja dentro ou fora da tolerância e tenha sido aprovado ou rejeitado.
 
+### Ajustes de linhas de imposto
 
-### Handling Charges and Taxes
+• Essas regras gerenciam divergências de impostos, ajustando as linhas de imposto ou gerando as notas de crédito ou débito correspondentes com base nas diferenças entre os dados de imposto da fatura e do pedido de compra.
 
-### Charge Per Unit Tolerance
+### Enums e opções
 
-• Rules under this category handle discrepancies in charges per unit, with specific actions based on whether the charge is within or outside the tolerance and whether it is approved or rejected.
+• Enums: listas predefinidas de valores que garantem consistência entre as regras (por exemplo, operadores de comparação, tipos de aprovação).
 
-### Tax Line Adjustments
+• Opções: escolhas predefinidas para o tratamento de quantidades ou preços unitários, que oferecem flexibilidade na definição das regras.
 
-• These rules manage tax discrepancies by adjusting the tax lines or generating corresponding credit or debit notes based on the differences between invoice and PO tax data.
+## Explicação das capturas de tela
 
-### Enums and Options
+### Captura de tela 1: interface do Rule Management
 
-• Enums: Predefined lists of values ensuring consistency across the rules (e.g., comparison operators, approval types).
+<figure><img src="../../../../.gitbook/assets/rule_management_interface.png" alt="Interface do Rule Management"><figcaption></figcaption></figure>
 
-• Options: Predefined choices for handling quantities or unit prices, offering flexibility in rule definitions.
+Esta captura de tela mostra a interface do Rule Management, na qual os administradores podem visualizar e gerenciar todas as regras de resolução de conflitos. Os principais elementos incluem:
 
-## Screenshots Explanation
+• Botão Add Rule: permite adicionar novas regras.
 
-### Screenshot 1: Rule Management Interface
+• Lista de regras: exibe todas as regras ativas com detalhes como nome, seção e status de ativação.
 
-<figure><img src="../../../../.gitbook/assets/docbits_rule_manager_interface.png" alt="Docbits Rule Manager Interface"><figcaption></figcaption></figure>
+• Lista suspensa Section: filtra as regras com base na seção à qual se aplicam (por exemplo, Receipt Lines, Line Charges).
 
-This screenshot shows the Rule Management interface where administrators can view and manage all conflict resolution rules. Key elements include:
+### Captura de tela 2: edição detalhada de regras
 
-• Add Rule Button: Allows adding new rules.
+<figure><img src="../../../../.gitbook/assets/rule_detailed_editing.png" alt="Edição detalhada de regras"><figcaption></figcaption></figure>
 
-• List of Rules: Displays all active rules with details such as name, section, and active status.
+Esta captura de tela ilustra a visualização detalhada de uma regra específica em edição. Os principais elementos incluem:
 
-• Section Dropdown: Filters the rules based on the section they apply to (e.g., Receipt Lines, Line Charges).
+• Seção Criteria: define as condições em que a regra é acionada. Por exemplo, os critérios podem especificar que, se a quantidade e o preço unitário diferirem do pedido de compra, mas estiverem dentro da tolerância, a regra deve ser aplicada.
 
-### Screenshot 2: Detailed Rule Editing
+• Seção Actions: especifica as ações que devem ser executadas quando os critérios são atendidos. Isso pode incluir ajustar as linhas da fatura, gerar notas de crédito ou débito ou aplicar encargos adicionais.
 
-<figure><img src="../../../../.gitbook/assets/docbits_rule_editing_detail.png" alt="Docbits Rule Editing Detail"><figcaption></figcaption></figure>
-
-his screenshot illustrates the detailed view of a specific rule being edited. Key elements include:
-
-• Criteria Section: Defines the conditions under which the rule is triggered. For example, the criteria might specify that if the quantity and unit price differ from the PO but are within tolerance, the rule should be applied.
-
-• Actions Section: Specifies what actions should be taken when the criteria are met. This can include adjusting the invoice lines, generating credit or debit notes, or applying additional charges.
-
-• Document Type and Costing Elements: Allows the administrator to map specific actions to document types and costing elements, providing flexibility in handling different scenarios.
+• Document Type e Costing Elements: permite que o administrador associe ações específicas a tipos de documento e elementos de custo, oferecendo flexibilidade para tratar diferentes cenários.

@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:09.294
+Peru CPE tem entradas genéricas, UBL 2.0 e
+UBL 2.1. Factura Electronica é outra
+
+formats_02
+00:00:09.294 --> 00:00:15.680
+designação. Selecione a versão UBL e a
+estrutura de documento reais. Processar um
+
+formats_03
+00:00:15.680 --> 00:00:19.267
+ficheiro não comprova a aceitação pela
+SUNAT.
+
+workflow_01
+00:00:20.017 --> 00:00:25.404
+Abra E-Doc para o formato detetado.
+Compare Transformation, Preview e
+
+workflow_02
+00:00:25.404 --> 00:00:32.475
+Extraction Paths. As regras Custom têm
+prioridade. Guardar um rascunho não o
+
+workflow_03
+00:00:32.475 --> 00:00:33.400
+ativa.
+
+accept_01
+00:00:34.150 --> 00:00:40.106
+Teste uma fatura e uma nota de crédito,
+quando aplicável. Verifique os montantes,
+
+accept_02
+00:00:40.106 --> 00:00:45.969
+as partes envolvidas e o tipo de documento
+exportado. A análise do ficheiro não
+
+accept_03
+00:00:45.969 --> 00:00:50.500
+comprova a aprovação fiscal nem a entrega
+através da rede.
+

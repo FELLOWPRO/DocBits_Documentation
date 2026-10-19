@@ -4,6 +4,12 @@ description: Suporte para documento eletrônico AUSTRIA EBINTERFACE 6.0 no DocBi
 
 # 🇦🇹 AUSTRIA EBINTERFACE 6.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [Áustria](countries/austria.md). Faça corresponder o espaço de nomes XML à versão configurada. Um espaço de nomes diferente pode exigir outro mapeamento.
+{% endhint %}
+
 | Propriedade | Valor |
 |----------|-------|
 | **País/Região** | Áustria |

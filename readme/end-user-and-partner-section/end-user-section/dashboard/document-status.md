@@ -1,19 +1,11 @@
-# Status do Documento
+# Estado dos documentos
 
-Se você está usando o software DocBits para processamento de documentos, é essencial entender os diferentes status que seus arquivos podem ter. Aqui está uma lista completa de todos os possíveis status de documentos no DocBits:
+Os estados de processamento indicam passos como OCR, classificação ou exportação. **Pronto para validação** significa que pode verificar o documento. Os estados de aprovação indicam uma aprovação pendente. **Exportado** indica que a exportação do documento terminou. Clique no estado **Erro** para consultar os detalhes disponíveis.
 
-* WatchDog Start: O módulo Watchdog está iniciando.
-* WatchDog Split: O documento está sendo dividido no Watchdog.
-* WatchDog Upload: O documento está sendo carregado no Watchdog.
-* Upload: O documento está sendo carregado.
-* OCR: O Reconhecimento Óptico de Caracteres (OCR) está sendo executado no documento.
-* Classification: O documento está sendo classificado.
-* Zugferd import: Um documento Zugferd está sendo importado.
-* Ready for Validation: O documento está pronto para validação.
-* Zugferd export: Um documento Zugferd está sendo exportado.
-* Workflow: Um fluxo de trabalho está sendo executado com este documento.
-* Pending approval: O documento precisa ser aprovado.
-* Pending second approval: O documento precisa ser aprovado uma segunda vez.
-* Auto Accounting: A contabilidade automática está sendo executada.
-* Export: O documento está sendo exportado.
-* Error: Ocorreu um erro no documento.
+Se houver tempos de processamento, passe o ponteiro sobre um estado para ver as fases e a sua duração. Os documentos com possíveis duplicados apresentam um ícone de duplicado; abra-o para comparar os documentos relacionados.
+
+Abra uma linha para trabalhar no ecrã de validação. O menu de ações apresenta as operações permitidas, como atribuir, transferir, consultar o histórico ou reiniciar o processamento. As variantes de transferência dependem do documento e podem incluir anotações ou formatos de fatura eletrónica.
+
+Selecione vários documentos nas caixas e abra o menu do cabeçalho para as ações em lote permitidas: atribuição, união, reinício, reinício da exportação ou eliminação. Verifique a seleção e cada confirmação. Estas ações podem alterar documentos; guardar uma vista altera apenas a apresentação da lista.
+
+O [guia do painel](README.md) descreve pesquisa, ações e vistas guardadas.

@@ -17,7 +17,7 @@ visíveis para o cliente._
   dispositivo, e um dispositivo fiável pode dispensar o segundo fator durante
   algum tempo. Todos os utilizadores podem ativá-la para si próprios; os
   administradores podem torná-la obrigatória para toda a organização. Consulte
-  o [guia de Autenticação de Dois Fatores](../two-factor-authentication.md).
+  o [guia de Autenticação de Dois Fatores](../../security/two-factor-authentication.md).
 - **Tickets de suporte a partir do ecrã de erro.** Quando algo corre mal, pode
   agora abrir um ticket de suporte diretamente a partir do registo de erro. O
   ticket já inclui o contexto técnico, por isso não precisa de o descrever.

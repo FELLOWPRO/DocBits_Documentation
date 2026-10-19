@@ -2,79 +2,72 @@
 
 ## Visão geral dos cartões de ação "Then..."
 
-### **1. Ações de Document Field:**
+Um cartão **Then** indica ao fluxo de trabalho o que fazer depois do gatilho **When** e das eventuais condições **And**. No **Workflow Builder**, selecione **Adicionar cartão** sob **Então...**. Escolha uma categoria à esquerda ou digite um nome em **Cartão de Pesquisa**. Selecione uma pré-visualização de cartão para adicioná-lo, preencha os campos mostrados no cartão e guarde o fluxo de trabalho. Desloque-se dentro do seletor para ver mais cartões. Selecione **×** para fechar sem adicionar um cartão. Veja [Fluxo de trabalho](../README.md) para a sequência completa.
 
-* **Invert Checkbox:** Esta ação alterna o estado de um campo de caixa de verificação num documento.
-* **Set Checkbox:** Define o estado de um campo de caixa de verificação como verdadeiro (assinalado) ou falso (não assinalado).
-* **Set Field to Text:** Esta ação define um campo de documento especificado para um determinado valor de texto.
+As pré-visualizações abaixo mostram as ações disponíveis, não configurações já concluídas. Escolha a ação que corresponde ao resultado que pretende obter.
 
-<figure><img src="../../../.gitbook/assets/then1.png" alt=""><figcaption></figcaption></figure>
+## Campo de documento
 
-### **2. Ações de Document:**
+Defina ou inverta uma caixa de seleção, coloque texto num campo ou copie um campo para outro. Escolha os nomes dos campos e o valor solicitados pelo cartão. Veja [Campo de documento](document-field/README.md).
 
-* **Approve the Document:** Marca um documento como aprovado no sistema.
-* **Reject the Document:** Marca um documento como rejeitado.
+<figure><img src="../../../.gitbook/assets/then-category-document-field-pt.png" alt="Seletor de cartões Then em português com Campo de documento selecionado; as pré-visualizações mostram as ações de caixa de seleção, texto e cópia do campo."><figcaption>Altere um campo ou copie o seu conteúdo.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
+## Documento
 
-### **3. Ações de Export:**
+Escolha **Aprovar o Documento** ou **Rejeitar o documento** quando o fluxo de trabalho deve tomar essa decisão. Use primeiro uma condição **And** se a aprovação depender de uma verificação. Veja [Documento](document/README.md).
 
-* **Export document with export configuration:**   Inicia o processo de exportação com uma configuração de exportação específica.
-* **Start Export:** Inicia o processo de exportação.
+<figure><img src="../../../.gitbook/assets/then-category-document-pt.png" alt="Seletor de cartões Then em português com Documento selecionado; as pré-visualizações Aprovar o Documento e Rejeitar o documento estão visíveis."><figcaption>Aprove ou rejeite o documento atual.</figcaption></figure>
 
+## Lógica
 
+Use estes cartões para converter valores entre formato numérico, texto e booleano, ou para ler um valor de JSON. Escolha os campos de input e output no cartão selecionado.
 
-<figure><img src="../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/then-category-logic-pt.png" alt="Seletor de cartões Then em português com Lógica selecionado; as pré-visualizações visíveis convertem tipos de dados e leem valores de JSON."><figcaption>Transforme valores para um passo posterior do fluxo de trabalho.</figcaption></figure>
 
-### **4. Ações de Status:**
+## Status
 
+Escolha **Alterar status para** para levar o documento a um status selecionado. O cartão também pode acionar outro fluxo de trabalho. Veja [Status](status/README.md).
 
+<figure><img src="../../../.gitbook/assets/then-category-status-pt.png" alt="Seletor de cartões Then em português com Status selecionado; a pré-visualização Alterar status para inclui um campo de status e um acionador de fluxo de trabalho opcional."><figcaption>Leve o documento a outro status.</figcaption></figure>
 
-* **Change Status:** Altera o estado de um documento ou tarefa para um novo estado especificado.
+## Prompts e scripts
 
-<figure><img src="../../../.gitbook/assets/then3.png" alt=""><figcaption></figcaption></figure>
+Escolha esta categoria para executar um script de prompt DocOperator. Selecione o script e as variáveis solicitados pelo cartão. O cartão também oferece definições de execução, como tentativas.
 
-### **5. Ações de Task:**
+<figure><img src="../../../.gitbook/assets/then-category-prompts-scripts-pt.png" alt="Seletor de cartões Then em português com Prompts e scripts selecionado; uma pré-visualização de script de prompt DocOperator está visível."><figcaption>Execute um script de prompt DocOperator configurado.</figcaption></figure>
 
-* Atribuições e notificações:
-  * **Assign Task:** Cria e atribui uma tarefa com detalhes específicos a um indivíduo ou grupo, incluindo opções para os notificar por e-mail.
-  * **Create a New Task:** Semelhante a atribuir, mas focado na criação de uma tarefa totalmente nova no sistema.
+## Exportar
 
-<figure><img src="../../../.gitbook/assets/then4.png" alt=""><figcaption></figcaption></figure>
+Inicie uma exportação, exporte com uma configuração escolhida ou coloque uma exportação final na fila. Escolha a configuração de exportação e a opção de tarefas pendentes mostrada no seu cartão. Veja [Exportar](export/README.md).
 
-### **6. Ações de Table:**
+<figure><img src="../../../.gitbook/assets/then-category-export-pt.png" alt="Seletor de cartões Then em português com Exportar selecionado; as pré-visualizações mostram exportação inicial, configurada, em fila e alternativa."><figcaption>Escolha quando e como o documento é exportado.</figcaption></figure>
 
-* **Calculate in Table:** Realiza cálculos sobre dados de tabelas com base em condições especificadas e guarda os resultados numa coluna designada.
-* **Change Entries:** Atualiza entradas numa tabela com base em condições especificadas.
+## Tarefa
 
-<figure><img src="../../../.gitbook/assets/then5.png" alt=""><figcaption></figcaption></figure>
+Crie uma tarefa ou notificação e atribua-a a um utilizador ou grupo. Introduza o título, a descrição, a prioridade e as definições de notificação solicitados pelo cartão. Alguns cartões fazem atribuição sequencial. Veja [Tarefa](task/README.md).
 
-### **7. Ações de Assignee:**
+<figure><img src="../../../.gitbook/assets/then-category-task-pt.png" alt="Seletor de cartões Then em português com Tarefa selecionado; as pré-visualizações visíveis criam ou atribuem tarefas e notificações."><figcaption>Crie trabalho de acompanhamento para uma pessoa ou grupo.</figcaption></figure>
 
-* **Assign User from Field:** Atribui um utilizador a uma tarefa ou documento com base nos dados de utilizador guardados num campo específico, com a opção de um utilizador alternativo caso o principal não esteja disponível.
-* **Assign Document to User or Group:** Atribui diretamente um documento a um utilizador ou grupo, garantindo que a responsabilidade é devidamente designada.
+## E-mail
 
-<figure><img src="../../../.gitbook/assets/then6.png" alt=""><figcaption></figcaption></figure>
+Envie um e-mail usando um modelo selecionado, para destinatários ou para grupos. Escolha o modelo e o destino no cartão.
 
-### **8. Ações de Interação Externa:**
+<figure><img src="../../../.gitbook/assets/then-category-email-pt.png" alt="Seletor de cartões Then em português com E-mail selecionado; as pré-visualizações enviam um e-mail com modelo para destinatários ou grupos."><figcaption>Envie um e-mail com modelo.</figcaption></figure>
 
-* **Call API:** Envia um pedido a uma API externa, que pode ser personalizado com métodos, parâmetros e dados específicos.
-* **Send HTTPS Request:** Semelhante às chamadas de API, mas formatado especificamente para protocolos HTTPS.
+## Mesa
 
-<figure><img src="../../../.gitbook/assets/then7.png" alt=""><figcaption></figcaption></figure>
+Altere entradas ou calcule valores numa tabela do documento. Selecione a tabela, as colunas, o operador e a coluna de resultado solicitados pelo cartão. Veja [Mesa](table/README.md).
 
-### **9. Processamento Avançado:**
+<figure><img src="../../../.gitbook/assets/then-category-table-pt.png" alt="Seletor de cartões Then em português com Mesa selecionado; as pré-visualizações alteram entradas e calculam colunas de resultado."><figcaption>Atualize ou calcule dados da tabela.</figcaption></figure>
 
-* **Run Workflow:** Aciona outro fluxo de trabalho dentro do sistema, permitindo o encadeamento de processos complexos.
+## Cessionário
 
-#### Aplicação prática
+Atribua o documento a um utilizador, grupo, destinatário ou sub-organização. Alguns cartões usam um campo ou uma tabela de decisão e oferecem um valor de recurso. Escolha o destino correto e o recurso no cartão selecionado. Veja [Cessionário](assignee/README.md).
 
-Estes cartões de ação são utilizados para automatizar respostas com base em gatilhos específicos identificados nas partes anteriores da configuração do fluxo de trabalho. Por exemplo:
+<figure><img src="../../../.gitbook/assets/then-category-assignee-pt.png" alt="Seletor de cartões Then em português com Cessionário selecionado; as pré-visualizações visíveis atribuem a um utilizador, destinatário, grupo ou contacto do fornecedor."><figcaption>Encaminhe o documento para a próxima pessoa ou grupo responsável.</figcaption></figure>
 
-* Se um documento for identificado como necessitando de revisão, a ação "Approve the Document" pode ser acionada automaticamente assim que ele cumprir todas as condições especificadas.
-* Para tarefas de gestão de dados, as ações "Set Checkbox" ou "Set Field to Text" garantem que os campos do documento são atualizados automaticamente, reduzindo a introdução manual de dados e o potencial de erros.
-* Tarefas complexas, como interações de API ou alterações de estado, simplificam as interações não só dentro do sistema ERP, mas também com serviços e ferramentas externas, melhorando a integração e a funcionalidade.
+## Ação
 
-### Conclusão
+Execute outro fluxo de trabalho, envie uma solicitação HTTPS, faça uma chamada de API ou use o cartão de cálculo de aumento de custos. Estas ações podem afetar outros sistemas; pergunte ao seu administrador qual endpoint e definições usar. Veja [Ação](action/README.md).
 
-A secção "Then..." do seu sistema de fluxo de trabalho fornece ferramentas robustas para definir ações precisas que devem ocorrer como resultado do cumprimento de condições no fluxo de trabalho. Ao utilizar eficazmente estas ações, as empresas podem automatizar processos de rotina, garantir a precisão dos dados e responder dinamicamente a alterações de informação e de estados do sistema. Compreender como configurar e utilizar estas ações é fundamental para maximizar a eficiência e a eficácia das capacidades de fluxo de trabalho do seu sistema ERP.
+<figure><img src="../../../.gitbook/assets/then-category-action-pt.png" alt="Seletor de cartões Then em português com Ação selecionado; as pré-visualizações mostram Executar fluxo de trabalho, solicitação HTTPS, chamada de API e cálculo de aumento de custos."><figcaption>Inicie outro fluxo de trabalho ou ação de integração.</figcaption></figure>

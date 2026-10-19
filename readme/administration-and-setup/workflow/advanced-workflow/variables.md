@@ -1,5 +1,42 @@
 # Variables
 
+## Vídeo: Variáveis, testes e ativação
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/pt.mp4" %}
+
+[Abrir vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/pt.mp4) · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/pt.vtt) · 1:57
+
+<details>
+<summary>Transcrição</summary>
+
+**Escolha o tipo**
+
+Abra Variáveis pelas chavetas. Escolha texto, número, sim ou não, ou documento. Pesquise nomes. Document guarda uma referência definida por uma ação específica; o formulário não aceita valores de documento.
+
+**Variáveis da organização**
+
+Escolha nome único, tipo e valor inicial. Criar, editar ou eliminar guarda imediatamente na organização. Outros workflows partilham estes valores. Guardar ou descartar o canvas não anula alterações às variáveis.
+
+**Valide a estrutura**
+
+Clique em Validar. Examine erros e avisos acima do canvas. Uma mensagem foca o nó. Verifique ações, entradas, saídas, ciclos e junções. Uma estrutura válida não garante dados corretos.
+
+**Escolha o contexto**
+
+Reproduzir na barra abre a escolha do documento. Escolha documento, dados personalizados ou teste sem documento para cartões independentes. Start executa diretamente. Os testes incluem alterações não guardadas e simulam ações destrutivas.
+
+**Preparar e rever cenários de teste**
+
+Prepara testes separados acima, abaixo e exatamente em mil, além de dados em falta. Após a execução, verifica mensagens e durações: verde indica sucesso, laranja falso, vermelho erro e cinzento ignorado. Volta a testar as correções. Usa o gestor de testes para cenários repetíveis.
+
+**Guarde antes de ativar**
+
+A gravação automática conserva um rascunho local cerca de trinta segundos após alterações. Guarde explicitamente no servidor. Ative após a primeira gravação. Verifique o estado na lista antes de esperar execução automática.
+
+</details>
+
+[Ver os cinco capítulos](../advanced-workflow-videos.md)
+
 As **Variables** permitem-lhe guardar valores uma só vez e reutilizá-los em todos os nós de um Advanced Workflow — por exemplo, um limiar, um destinatário fixo ou um valor que lê do documento e passa a um nó posterior. Abra o painel de variáveis a partir do botão **Variables** (o ícone `{ }`) na barra de ferramentas.
 
 <figure><img src="../../../.gitbook/assets/workflow_advanced_variables.png" alt="Painel de variáveis agrupadas por tipo com um botão New Variable"><figcaption><p>O painel Variables — variáveis agrupadas por tipo, com pesquisa e **New Variable**.</p></figcaption></figure>

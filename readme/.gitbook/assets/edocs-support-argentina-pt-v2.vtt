@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.926
+Argentina AFIP e Factura Electronica são
+designações configuradas. A entrada de
+
+formats_02
+00:00:05.926 --> 00:00:11.960
+classificação de notas de crédito não tem
+um conjunto de extração dedicado no estado
+
+formats_03
+00:00:11.960 --> 00:00:17.492
+examinado. Verifique o mapeamento efetivo
+e teste uma amostra real de nota de
+
+formats_04
+00:00:17.492 --> 00:00:18.067
+crédito.
+
+workflow_01
+00:00:18.817 --> 00:00:24.204
+Abra E-Doc para o formato detetado.
+Compare Transformation, Preview e
+
+workflow_02
+00:00:24.204 --> 00:00:31.275
+Extraction Paths. As regras Custom têm
+prioridade. Guardar um rascunho não o
+
+workflow_03
+00:00:31.275 --> 00:00:32.200
+ativa.
+
+accept_01
+00:00:32.950 --> 00:00:38.906
+Teste uma fatura e uma nota de crédito,
+quando aplicável. Verifique os montantes,
+
+accept_02
+00:00:38.906 --> 00:00:44.769
+as partes envolvidas e o tipo de documento
+exportado. A análise do ficheiro não
+
+accept_03
+00:00:44.769 --> 00:00:49.300
+comprova a aprovação fiscal nem a entrega
+através da rede.
+

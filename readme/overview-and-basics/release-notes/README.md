@@ -6,17 +6,17 @@
 
 **DocBits est le produit. NOVA désigne le cycle de versions.** [Voir le film sur la nouvelle version de DocBits](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/fr.mp4) · [Sous-titres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/fr.vtt).
 
-Choisissez un canal de version pour voir les changements pour votre équipe. **Le cycle NOVA apporte la nouvelle version majeure de DocBits avec des capacités client supplémentaires. Les correctifs VESTA améliorent la version de production actuelle.** Consultez le [cycle de vie des versions](../docbits-release-lifecycle-strategy.md) pour la disponibilité et le changement de canal.
+Choisissez un canal de version pour voir les changements pour votre équipe. **Le cycle NOVA apporte la nouvelle version mineure de DocBits avec des capacités client supplémentaires. Les correctifs VESTA améliorent la version de production actuelle.** Consultez le [cycle de vie des versions](../docbits-release-lifecycle-strategy.md) pour la disponibilité et le changement de canal.
 
 **Les anciennes fonctionnalités bêta de VESTA sont incluses dans l’environnement de test de NOVA.** Toutes les fonctionnalités précédemment disponibles en bêta dans VESTA font partie des fonctionnalités standard de NOVA et peuvent être testées avant la mise en production prévue. Elles deviendront également des fonctionnalités standard de VESTA avec le [prochain correctif, prévu le **11 novembre 2026**](vesta-hotfix-11-november-2026.md).
 
 | Canal de version | Notes de version | Focus |
 | --- | --- | --- |
-| **NOVA – Version majeure** | [Nouveautés pour les clients](nova-major-release.md) · **4 novembre 2026 (prévue)** | Toutes les anciennes fonctionnalités bêta de VESTA, ainsi que de nouvelles capacités et extensions par rapport à VESTA R1.0.15. |
+| **NOVA – Version mineure** | [Nouveautés pour les clients](nova-major-release.md) · **4 novembre 2026 (prévue)** | Toutes les anciennes fonctionnalités bêta de VESTA, ainsi que de nouvelles capacités et extensions par rapport à VESTA R1.0.15. |
 | **VESTA — Prochain correctif (prévu)** | [11 novembre 2026](vesta-hotfix-11-november-2026.md) | Introduit toutes les anciennes fonctionnalités bêta de VESTA dans l'ensemble de fonctionnalités standard de VESTA. |
 | **VESTA — Version de correctif** | [14 octobre 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Améliorations et correctifs pour la version de production VESTA actuelle. |
 
-## NOVA – Version majeure 4 novembre 2026
+## NOVA – Version mineure 4 novembre 2026
 
 ### Ce que votre équipe gagne avec NOVA
 

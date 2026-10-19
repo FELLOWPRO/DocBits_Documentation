@@ -6,17 +6,17 @@
 
 **DocBits to produkt. NOVA to nazwa cyklu wydań.** [Obejrzyj film o nowym wydaniu DocBits](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/pl.mp4) · [Napisy](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/pl.vtt).
 
-Wybierz kanał wydania, aby zobaczyć zmiany dotyczące Twojego zespołu. **Cykl NOVA wprowadza nowe główne wydanie DocBits z dodatkowymi funkcjami dla klientów. Hotfixy VESTA ulepszają bieżącą wersję produkcyjną.** Zobacz [cykl życia wydania](../docbits-release-lifecycle-strategy.md), aby poznać dostępność i możliwość przełączania między kanałami.
+Wybierz kanał wydania, aby zobaczyć zmiany dotyczące Twojego zespołu. **Cykl NOVA wprowadza nowe wydanie minor DocBits z dodatkowymi funkcjami dla klientów. Hotfixy VESTA ulepszają bieżącą wersję produkcyjną.** Zobacz [cykl życia wydania](../docbits-release-lifecycle-strategy.md), aby poznać dostępność i możliwość przełączania między kanałami.
 
 **Funkcje dostępne wcześniej w wersji beta VESTA są zawarte w środowisku testowym NOVA.** Wszystkie te funkcje należą do standardowego zestawu funkcji NOVA i można je przetestować przed planowanym wydaniem produkcyjnym. Staną się również standardowymi funkcjami VESTA wraz z [następną poprawką VESTA, planowaną na **11 listopada 2026 r.**](vesta-hotfix-11-november-2026.md).
 
 | Kanał wydania | Notatki do wydania | Zakres |
 | --- | --- | --- |
-| **NOVA – Wydanie główne** | [Nowości dla klientów](nova-major-release.md) · **4 listopada 2026 r. (planowane)** | Wszystkie funkcje, które wcześniej były w wersji beta VESTA, plus nowe możliwości i rozszerzenia w porównaniu z VESTA R1.0.15. |
+| **NOVA – Wydanie minor** | [Nowości dla klientów](nova-major-release.md) · **4 listopada 2026 r. (planowane)** | Wszystkie funkcje, które wcześniej były w wersji beta VESTA, plus nowe możliwości i rozszerzenia w porównaniu z VESTA R1.0.15. |
 | **VESTA — Następny hotfix (planowany)** | [11 listopada 2026 r.](vesta-hotfix-11-november-2026.md) | Wprowadza wszystkie funkcje, które wcześniej były w wersji beta VESTA, do standardowego zestawu funkcji VESTA. |
 | **VESTA — Wydanie hotfix** | [14 października 2026 r. — R1.0.15](incremental-updates-14-october-2026.md) | Ulepszenia i poprawki dla bieżącej wersji produkcyjnej VESTA. |
 
-## NOVA – Wydanie główne 4 listopada 2026 r.
+## NOVA – Wydanie minor 4 listopada 2026 r.
 
 ### Co zyskuje Twój zespół dzięki NOVA
 

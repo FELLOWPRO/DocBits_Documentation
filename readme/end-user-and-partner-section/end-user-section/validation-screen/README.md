@@ -1,5 +1,13 @@
 # Ekran walidacji
 
+## Sprawdź fakturę i zakończ weryfikację
+
+Przejdź od panelu do przekazania faktury dalej: porównaj dostawcę, daty, numer, kwoty i walutę z oryginałem, odczytaj komunikat o wymaganym polu i zapisz poprawkę. W tym przykładzie faktura zostaje następnie przekazana do zatwierdzenia. Kolejny krok na Twoim koncie zależy od uprawnień i procesu skonfigurowanego w firmie.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v1/pl.mp4" %}
+
+## Dodatkowe wprowadzenie
+
 {% embed url="https://youtu.be/CmmQIxOaF6E?si=gYE-U-Jv4dLPi2xT" %}
 
 ## Przegląd

@@ -1,5 +1,13 @@
 # Écran de validation
 
+## Vérifier une facture et terminer son traitement
+
+Suivez une facture du tableau de bord à sa transmission : comparez le fournisseur, les dates, le numéro, les montants et la devise avec le document original, consultez un avertissement de champ obligatoire et enregistrez la correction. Dans cet exemple, la facture est ensuite transmise pour approbation. La suite dépend de vos droits et du processus de votre entreprise.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v1/fr.mp4" %}
+
+## Autre présentation
+
 {% embed url="https://youtu.be/CmmQIxOaF6E?si=gYE-U-Jv4dLPi2xT" %}
 
 ## Vue d'ensemble

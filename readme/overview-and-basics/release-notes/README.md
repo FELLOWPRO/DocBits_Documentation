@@ -12,7 +12,7 @@ Choisissez un canal de version pour voir les changements pour votre équipe. **L
 
 | Canal de version | Notes de version | Focus |
 | --- | --- | --- |
-| **NOVA – Version mineure** | [Nouveautés pour les clients](nova-major-release.md) · **4 novembre 2026 (prévue)** | Toutes les anciennes fonctionnalités bêta de VESTA, ainsi que de nouvelles capacités et extensions par rapport à VESTA R1.0.15. |
+| **NOVA – Version mineure** | [Nouveautés pour les clients](nova-minor-release-4-november-2026.md) · **4 novembre 2026 (prévue)** | Toutes les anciennes fonctionnalités bêta de VESTA, ainsi que de nouvelles capacités et extensions par rapport à VESTA R1.0.15. |
 | **VESTA — Prochain correctif (prévu)** | [11 novembre 2026](vesta-hotfix-11-november-2026.md) | Introduit toutes les anciennes fonctionnalités bêta de VESTA dans l'ensemble de fonctionnalités standard de VESTA. |
 | **VESTA — Version de correctif** | [14 octobre 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Améliorations et correctifs pour la version de production VESTA actuelle. |
 
@@ -36,9 +36,9 @@ Choisissez un canal de version pour voir les changements pour votre équipe. **L
 * [**Règles de validation personnalisées**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) : définissez des contrôles pour les champs et les lignes de tableau, choisissez les conditions et la sévérité, et testez vos règles. **Vidéo :** [Voir la vidéo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/fr.mp4).
 * [**Règles de rapprochement des commandes**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) : configurez les types de rapprochement, les tolérances et l'ordre d'exécution, et gérez les versions des règles. **Vidéo associée — Choisir la bonne automatisation :** [Voir la vidéo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/fr.mp4).
 
-[Parcourir toutes les vidéos des fonctionnalités](nova-major-release.md#watch-the-feature-videos), y compris les mises en page, Touchless Intelligence, la validation des factures électroniques et la série de six vidéos sur AI Table.
+[Parcourir toutes les vidéos des fonctionnalités](nova-minor-release-4-november-2026.md#watch-the-feature-videos), y compris les mises en page, Touchless Intelligence, la validation des factures électroniques et la série de six vidéos sur AI Table.
 
-[Lire la comparaison complète des fonctionnalités NOVA](nova-major-release.md), y compris les exigences d'activation, les améliorations supplémentaires et toutes les **16 versions de service**.
+[Lire la comparaison complète des fonctionnalités NOVA](nova-minor-release-4-november-2026.md), y compris les exigences d'activation, les améliorations supplémentaires et toutes les **16 versions de service**.
 
 **La base de référence VESTA inclut les fonctionnalités existantes et les fonctionnalités bêta :** l'Assistant de configuration original, les avertissements de base sur l'intégrité des imports, les niveaux d'IA, le Contrôle des champs d'en-tête, le tableau de bord Touchless Intelligence, les moteurs de règles, les transformations après la recherche de données de base et les journaux d'exécution de base des règles. Les notes NOVA distinguent le passage de la disponibilité bêta à la disponibilité standard des ajouts supplémentaires à ces capacités.
 

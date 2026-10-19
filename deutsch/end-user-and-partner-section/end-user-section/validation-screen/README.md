@@ -1,5 +1,13 @@
 # Validierungsbildschirm
 
+## Eine Rechnung prüfen und abschließen
+
+So prüfst du eine Rechnung vom Dashboard bis zur Übergabe: Vergleiche Lieferant, Datum, Rechnungsnummer, Beträge und Währung mit dem Original, lies einen Pflichtfeldhinweis und speichere die Korrektur. Im Beispiel wird der Beleg anschließend zur Freigabe weitergegeben. Welche Aktion bei dir folgt, hängt von euren Berechtigungen und eurem Ablauf ab.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v1/de.mp4" %}
+
+## Weitere Einführung
+
 {% embed url="https://youtu.be/CmmQIxOaF6E?si=gYE-U-Jv4dLPi2xT" %}
 
 ## Übersicht

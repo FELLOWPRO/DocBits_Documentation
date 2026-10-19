@@ -1,113 +1,36 @@
-# Aggiungere/Modificare Tipi di Documenti
+# Aggiungere e modificare tipi di documento
 
-{% embed url="https://youtu.be/pFz_6tvNlU4" %}
-DocBits Document Types Explained: Create, Configure & Assign Processing Settings
-{% endembed %}
+Gli amministratori possono creare un tipo di documento personalizzato o modificare le impostazioni di uno esistente. Aprire **Impostazioni → Elaborazione documenti → Tipi di documento**. La pagina separa i **Tipi di documento predefiniti** integrati dai **Tipi di documenti personalizzati**.
 
-## Aggiungere o modificare tipi di documenti in DocBits comporta diversi passaggi. Questi passaggi includono la definizione di layout, campi e regole di estrazione.
+<figure><img src="../../../../.gitbook/assets/dbdc180-document-types-overview-it.png" alt="Pagina Tipi di documento con la carta Fattura che mostra Attivare, Extraction, Altre impostazioni e i collegamenti a Layout, Campi, Tavoli, Script e Modello di formazione"><figcaption><p>Usare una carta di tipo di documento per aprire l'impostazione che si desidera modificare.</p></figcaption></figure>
 
-### Ecco una guida dettagliata:
+## Creare un tipo di documento personalizzato
 
-#### Accedere alla Gestione Tipi di Documenti
+1. Scorrere fino a **Tipi di documenti personalizzati** e selezionare **Nuovo**. I tipi predefiniti forniti da DocBits non possono essere eliminati; creare un tipo personalizzato per una nuova categoria.
+2. In **Creare**, inserire un **Nome** chiaro e una **Descrizione**. Selezionare **Tabella disponibile** se questo tipo di documento richiede tabelle con righe di dettaglio. Scegliere **Auto** per l'addestramento del modello con documenti di esempio oppure **Regex** per il riconoscimento basato su espressioni regolari.
+3. Selezionare **Avanti** per creare il tipo di documento e proseguire la configurazione. **Avanti salva il nuovo tipo in questo punto**; non è solo un'anteprima. Evitare di inserire un nome di prova in un'organizzazione di produzione.
+4. Per **Auto**, caricare almeno **10 documenti di esempio** prima di continuare. Per **Regex**, creare almeno **due espressioni regolari**. Questi requisiti derivano dall'attuale flusso di creazione. I dettagli sull'addestramento sono nella pagina [Addestramento del Modello](model-training/README.md).
+5. In **Campi e gruppi**, creare i gruppi necessari e almeno un campo. Se è stata selezionata **Tabella disponibile**, proseguire con la configurazione delle tabelle e configurarle. Selezionare **Finish** quando la configurazione richiesta è completa.
 
-* **Accedi:** Accedi a DocBits con i tuoi diritti di amministratore.
-* **Naviga:** Vai a Impostazioni.
-* **Tipi di Documenti:** Trova la sezione "Tipi di Documenti".
+<figure><img src="../../../../.gitbook/assets/dbdc180-custom-new-it.png" alt="Sezione Tipi di documenti personalizzati con il pulsante Nuovo"><figcaption><p>Il pulsante Nuovo avvia la procedura guidata per il tipo di documento personalizzato.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/docbits_document_types_section.png" alt="Docbits Document Types Section"><figcaption><p>Impostazioni</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc180-create-form-it.png" alt="Modulo Creare un nuovo tipo di documento con i controlli Creare, Nome, Tabella disponibile, Auto, Regex e Avanti"><figcaption><p>Scegliere il tipo e il metodo di riconoscimento prima di selezionare Avanti.</p></figcaption></figure>
 
-### Aggiungere un nuovo tipo di documento
+## Modificare un tipo di documento esistente
 
-**Creare un nuovo tipo di documento:**
+Trovare la carta del tipo sotto **Tipi di documento predefiniti** o **Tipi di documenti personalizzati**. I controlli su ogni carta hanno funzioni diverse:
 
-* Clicca sul pulsante "+ Nuovo".
+| Controllo | Funzione |
+| --- | --- |
+| **Attivare** | Accende o spegne l'elaborazione di questo tipo di documento. Verificare lo stato attuale prima di modificarlo. |
+| **Extraction** | Passa tra le modalità di estrazione **Flex** e **Fix**; non attiva né disattiva il tipo di documento. Passare il mouse sull'interruttore per vedere la modalità attuale. |
+| **Impostazioni** (ingranaggio) | Apre **Altre impostazioni** per quel tipo di documento. |
+| **Layout** | Apre il layout di validazione. Vedere [navigare il Layout Manager](layout-manager/navigating-the-layout-manager.md). |
+| **Campi** | Apre la configurazione dei campi. Vedere la pagina dei [Campi](fields/adding-and-editing-fields.md). |
+| **Tavoli** | Apre le colonne della tabella per questo tipo di documento. |
+| **Script** | Apre gli script di elaborazione quando la funzione è disponibile. |
+| **Modello di formazione** | Apre i dati di addestramento e le opzioni del modello. |
+| **E-Doc** | Apre le impostazioni dei documenti elettronici quando disponibili. Vedere [Documenti elettronici](edi/README.md). |
+| **Sottotipi di documento** | Apre le impostazioni dei sottotipi; vedere [Sottotipi di Documento](document-sub-types.md). |
 
-<figure><img src="../../../../.gitbook/assets/docbits_new_document_type_basic_info.png" alt="Docbits New Document Type Basic Info"><figcaption></figcaption></figure>
-
-**Informazioni di base:**
-
-* Inserisci un nome per il nuovo tipo di documento (ad es. "Fattura", "Contratto", "Rapporto").
-* Aggiungi una descrizione che spieghi lo scopo e l'uso del tipo di documento.
-
-<figure><img src="../../../../.gitbook/assets/docbits_script_publish_button.png" alt="Docbits Script Publish Button"><figcaption></figcaption></figure>
-
-**Formato importo e data**
-
-* Inserisci il formato per l'importo e la data
-
-<figure><img src="../../../../.gitbook/assets/docbits_script_management_nav.png" alt="Docbits Script Management Nav"><figcaption></figcaption></figure>
-
-**Importare Documenti di Esempio**
-
-* Carica documenti di esempio tramite trascinamento
-* Devono essere caricati almeno 10 documenti per l'addestramento
-
-<figure><img src="../../../../.gitbook/assets/docbits_script_list_enable_disable.png" alt="Docbits Script List Enable Disable"><figcaption><p>Carica e Addestra</p></figcaption></figure>
-
-**Aggiungere Gruppi**
-
-* Clicca sul pulsante "Aggiungi" e inserisci il nome del gruppo.
-* Puoi anche clonare un tipo di documento esistente.
-
-<figure><img src="../../../../.gitbook/assets/docbits_script_save_changes_2.png" alt="Docbits Script Save Changes 2" width="375"><figcaption><p>Campi e Gruppi</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/image (163).png" alt="" width="279"><figcaption><p>Crea Nuovo Gruppo</p></figcaption></figure>
-
-**Aggiungere campi:**
-
-* Aggiungi nuovi campi cliccando su "Aggiungi".
-* Inserisci il nome del campo (ad es. "Numero fattura", "Data", "Importo") e il tipo di dati (ad es. Testo, Numero, Data).
-
-<figure><img src="../../../../.gitbook/assets/docbits_script_test_environment.png" alt="Docbits Script Test Environment" width="375"><figcaption><p>Campi e Gruppi</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/image (162).png" alt="" width="278"><figcaption><p>Crea Nuovo Campo</p></figcaption></figure>
-
-**Fine**
-
-* Una volta inseriti tutti i dettagli, clicca su "Fine" e il nuovo tipo di documento viene creato
-
-<figure><img src="../../../../.gitbook/assets/image (164).png" alt=""><figcaption></figcaption></figure>
-
-### Modificare un tipo di documento esistente
-
-**Selezionare un tipo di documento:**
-
-* Seleziona il tipo di documento che desideri modificare dall'elenco dei tipi di documenti esistenti.
-* Sotto il tipo di documento troverai varie opzioni di modifica, ad esempio modificare il layout, i campi, le colonne della tabella, ecc.
-
-<figure><img src="../../../../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
-
-**Altre Impostazioni:**
-
-* Clicca sul pulsante Modifica accanto al tipo di documento.
-
-<figure><img src="../../../../.gitbook/assets/docbits_field_elements_list.png" alt="Docbits Field Elements List"><figcaption><p>Altre Impostazioni</p></figcaption></figure>
-
-* Qui puoi effettuare ulteriori impostazioni per il tipo di documento, come il modello di design, se un documento deve essere approvato prima dell'esportazione e molti altri dettagli.
-
-<figure><img src="../../../../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
-
-### Definire regole di estrazione
-
-**Definire regole:**
-
-* Vai alla sezione Regole di Estrazione.
-* Crea regole che specificano come estrarre i dati dai documenti. Questo può includere l'uso di espressioni regolari o altre tecniche di riconoscimento di pattern.
-
-**Testare le regole:**
-
-* Testa le regole di estrazione con documenti di esempio per assicurarti che i dati vengano riconosciuti ed estratti correttamente.
-
-**Ottimizzazione:**
-
-* Regola le regole di estrazione in base ai risultati del test per migliorare la precisione e l'efficienza.
-
-### Addestramento e Documentazione
-
-**Informare gli utenti:**
-
-* Informa gli utenti del nuovo tipo di documento o di quello modificato e fornisci formazione se necessario.
-
-**Documentazione:**
-
-Aggiorna la documentazione del sistema per descrivere i nuovi tipi di documenti o quelli modificati e il loro utilizzo. Configurando e gestendo attentamente i tipi di documenti in DocBits, puoi assicurarti che i documenti siano classificati correttamente ed elaborati in modo efficiente. Ciò migliora le prestazioni complessive del sistema di gestione documenti e contribuisce all'accuratezza e alla produttività della tua organizzazione.
+I collegamenti mostrati su una carta dipendono dalle funzioni abilitate dell'organizzazione e dal tipo di documento. Aprire la sezione pertinente, apportare lì la modifica prevista e verificare un documento di esempio nella vista di validazione prima di usare il tipo aggiornato nell'elaborazione ordinaria.

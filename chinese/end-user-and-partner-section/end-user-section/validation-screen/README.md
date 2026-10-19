@@ -1,5 +1,13 @@
 # 验证界面
 
+## 核对发票并完成审核
+
+从仪表板打开一张发票，对照原始单据核对供应商、日期、发票号码、金额和币种，查看必填字段提示并保存更正。本示例随后将发票提交给下一位同事进行审批。你在自己账户中可以执行的下一步操作，取决于权限和企业配置的流程。
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v1/zh.mp4" %}
+
+## 其他入门视频
+
 {% embed url="https://youtu.be/CmmQIxOaF6E?si=gYE-U-Jv4dLPi2xT" %}
 
 ## 概览

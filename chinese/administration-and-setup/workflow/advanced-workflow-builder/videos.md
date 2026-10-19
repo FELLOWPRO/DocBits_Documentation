@@ -4,13 +4,13 @@ description: "五个中文配音章节，讲解高级工作流与执行日志，
 
 # 高级工作流视频教程
 
-学习如何构建、测试和诊断高级工作流。全部五个章节均使用中文配音。
+五个章节均提供中文讲解、字幕文件和文字稿。第一章逐步演示如何创建示例工作流，其余章节进一步讲解各个主题。
 
 前三个章节使用演示草稿展示真实的 DocBits 设计器。执行查找预览展示真实的文档处理和日志控件，示例结果为空。诊断章节仍使用明确标注的教学示意图。
 
 每个视频均附 WebVTT 字幕和可展开的文字稿。
 
-1. [构建器与画布](#builder-and-canvas) · 1:35
+1. [构建器与画布](#builder-and-canvas) · 4:53
 2. [节点与路径](#nodes-and-routes) · 1:46
 3. [变量、测试与激活](#variables-tests-and-activation) · 1:48
 4. [查找相关执行](#find-the-relevant-execution) · 1:48
@@ -18,36 +18,67 @@ description: "五个中文配音章节，讲解高级工作流与执行日志，
 
 ## 构建器与画布 {#builder-and-canvas}
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/zh.mp4" %}
+认识陈伟，并在真实的中文 DocBits 界面中跟随他的讲解。他先检查工作流仪表板、工作流列表和许可证，然后打开未保存的设计器草稿。接下来，他逐步命名工作流、配置发票金额条件和两个操作、排列卡片，并连接两条处理路径，最后演示如何使用文档或自定义数据准备测试。演示账号没有 Advanced Workflow 订阅，因此验证被阻止；草稿保持未保存、未激活状态。
 
-[打开视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/zh.mp4) · [字幕文件（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/zh.vtt) · 1:35
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/zh.mp4" %}
+
+[打开视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/zh.mp4) · [字幕（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/zh.vtt) · [文字稿（文本）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/zh.txt) · 4:53
+
+| 本视频内容 | 开始时间 |
+| --- | --- |
+| 认识管理员 | [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/zh.mp4#t=0) |
+| 检查工作流权限 | [0:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/zh.mp4#t=5) |
+| 命名工作流 | [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/zh.mp4#t=37) |
+| 配置金额条件 | [0:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/zh.mp4#t=53) |
+| 添加 Approval 操作 | [1:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/zh.mp4#t=88) |
+| 添加 Standard 操作 | [1:56](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/zh.mp4#t=116) |
+| 排列卡片 | [2:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/zh.mp4#t=143) |
+| 连接处理路径 | [2:57](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/zh.mp4#t=177) |
+| 准备测试用例 | [3:44](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/zh.mp4#t=224) |
+| 验证、保存与启用 | [4:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/zh.mp4#t=260) |
 
 <details>
 <summary>文字稿</summary>
 
-**一张发票，两条路径**
+**认识管理员**
 
-这是 DocBits 中真实的高级工作流界面。发票金额检查连接到两个操作。连接关系决定执行哪一个操作。本示例使用尚未保存的草稿和演示字段。
+我来演示如何在 DocBits 中检查发票。
 
-**配置金额检查**
+**检查工作流权限**
 
-打开添加菜单，选择 And，再选择文档字段条件。设置金额字段，选择大于，并输入一千。请使用文档配置中准确的字段键名。
+我先打开工作流仪表板，再进入工作流列表，然后检查许可证。 Workflow 和 Advanced Workflow 都需要有效的使用权限。 启用这两项权限后，新建工作流中才会提供 Advanced Workflow。 这个文档演示账号没有有效的工作流许可证，因此我会继续使用设计器中未保存的预览。
 
-**配置操作卡片**
+**命名工作流**
 
-添加两张 Then 卡片。两张卡片都设置演示字段 approval route。一张写入 Approval，另一张写入 Standard。这些值用于标记路径。生产工作流需要配置实际的业务操作。
+这里是真实的 DocBits 设计器。首先给草稿起一个清楚的名称。我们将检查发票金额，再用两个简单操作展示不同的处理路径。这个演示草稿不会保存。
 
-**连接不同结果的输出**
+**配置金额条件**
 
-将 Start 连接到条件的输入端。将蓝色成功输出连接到 Approval，将橙色条件不满足输出连接到 Standard。红色错误输出用于单独处理求值错误。仅移动卡片的位置不会建立执行路径。
+我打开添加菜单，选择条件卡片。 在文档字段类别中，选择 Docfield 条件。 字段名称填写 total_amount。 然后选择大于这个比较条件。 并输入一千。 请使用你自己的文档字段标识。金额正好等于一千时，不满足这个比较条件。
+
+**添加 Approval 操作**
+
+接下来，从文档字段类别中添加一张操作卡片。 这个操作会设置文档字段的值。 这里使用演示字段 approval_route。 并输入 Approval 作为字段值。 这个值只是用来标记路径。实际的审批流程需要配置相应的业务操作。
+
+**添加 Standard 操作**
+
+我再添加一张卡片，使用同样的操作。 这一次，演示字段的值设为 Standard。 两张卡片都已配置，但还需要连接，才能确定执行哪个操作。
+
+**排列卡片**
+
+我拖动卡片，让布局更加清楚。 把两个操作放在右侧。 条件放在中间，Start 放在左侧。 移动卡片只会改变位置，不会创建连接。
+
+**连接处理路径**
+
+我从 Start 的输出端拖动到条件的输入端。 成功路径通过蓝色连接，通向 Approval。 条件不满足的橙色路径通向 Standard。 红色错误输出是独立的，用于处理条件计算出错的情况。 这里暂时没有连接这个输出。正式使用工作流时，需要明确这类错误的处理方式。
 
 **准备测试用例**
 
-在工具栏中打开测试。选择测试文档，或以 JSON 格式输入完整的文档数据。分别检查大于、小于和等于一千的金额，以及缺失值。执行后，请检查各个节点的结果。
+点击工具栏中的测试按钮，打开测试文档选择窗口。 可以选择演示文档，也可以准备完整的自定义数据。 请测试大于、小于和正好等于一千的金额，也要测试金额缺失的情况。 这个账号没有 Advanced Workflow 许可证，所以这里展示的是测试准备，而不是已经执行的测试结果。
 
-**验证、保存并检查启用状态**
+**验证、保存与启用**
 
-验证连接和卡片设置。明确保存到服务器，然后单独检查工作流是否已启用。浏览器自动草稿不能代替保存。执行工作流和访问日志需要相应的模块及订阅。
+验证功能用于检查连接和卡片设置。这个账号缺少许可证，因此验证被阻止。 在具备权限的账号中，我会明确地把工作流保存到服务器。 然后单独检查启用状态。第一次保存之前，启用开关不可用。 自动草稿提示指的是浏览器中的本地副本，并不表示工作流已经保存到服务器或已启用。
 
 </details>
 

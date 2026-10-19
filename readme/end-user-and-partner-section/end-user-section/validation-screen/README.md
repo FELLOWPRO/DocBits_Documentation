@@ -1,5 +1,13 @@
 # Pantalla de Validación
 
+## Revisar una factura y completar su comprobación
+
+Sigue una factura desde el panel hasta el siguiente paso: compara el proveedor, las fechas, el número, los importes y la moneda con el original, consulta un aviso de campo obligatorio y guarda la corrección. En este ejemplo, la factura se envía después para su aprobación. El siguiente paso depende de tus permisos y del proceso de tu empresa.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v1/es.mp4" %}
+
+## Otra introducción
+
 {% embed url="https://youtu.be/CmmQIxOaF6E?si=gYE-U-Jv4dLPi2xT" %}
 
 ## Descripción General

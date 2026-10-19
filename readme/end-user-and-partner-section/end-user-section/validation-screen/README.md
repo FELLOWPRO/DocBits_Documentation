@@ -44,23 +44,13 @@ Vedi qui aggiungi [Script in DocBits](../../../administration-and-setup/settings
 
 ### **Campi obbligatori:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_required_fields.png" alt="Campi obbligatori"><figcaption></figcaption></figure>
 
-Ci sono campi che sono richiesti per ulteriori modifiche, questi possono essere modificati nelle impostazioni.
+I campi da controllare mostrano un bordo colorato o un'icona informativa. Nell'esempio seguente, il campo **Numero di fattura** ha un bordo rosso e un'icona di avviso. Il valore è visibile sulla fattura a destra, ma DocBits non lo ha estratto dal documento. Seleziona il numero sul documento o correggi il campo, quindi salva il documento.
 
-Usa il suggerimento per scoprire se:
+Passa il mouse sopra l'icona informativa accanto a un campo o selezionala per leggere il motivo specifico. A seconda del campo, il messaggio può indicare un'estrazione mancante, un valore obbligatorio, una fiducia bassa o una convalida non corrispondente. Se l'avviso riguarda i totali, confronta i campi degli importi con la fattura e usa [Controlli automatici nella schermata di validazione](automatic-checks-on-the-validation-screen.md) per il controllo pertinente.
 
-* È un campo obbligatorio (richiesto)
-* Convalida richiesta
-* Bassa fiducia
-* Mismatch dell'importo totale delle tasse
-
-**Campi Obbligatori:**
-
-* **Scopo:** Identifica i campi obbligatori all'interno dei documenti che devono essere compilati o corretti prima di ulteriori elaborazioni.
-* **Caso d'uso:** Garantisce che i dati essenziali siano catturati accuratamente, mantenendo l'integrità dei dati e la conformità con le regole aziendali.
-
-<figure><img src="https://lh7-us.googleusercontent.com/3-ZXi-fUcWlM0nUaOAQbY7bynchbIN30JReKRdijyMFvX_GIHrnbcismANdOi6UfYa6GCPvk9wnOixya0E_rBk3V8hQduS-gBZJi4k0Kq8jeN93DxC2w5J-YRqeV9IkVB6oiH8tm0-y7gWJO_8fBplo" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation-required-field-it-2026.png" alt="Schermata di validazione DocBits in italiano con un avviso rosso sul numero di fattura e il numero corrispondente visibile su una fattura sintetica"><figcaption><p>Un campo da controllare accanto alla fattura usata per verificarne il valore.</p></figcaption></figure>
 
 ## Tabella estratta (voci di riga)
 

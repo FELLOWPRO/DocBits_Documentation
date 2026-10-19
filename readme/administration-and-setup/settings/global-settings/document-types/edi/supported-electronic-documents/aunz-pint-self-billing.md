@@ -4,6 +4,12 @@ description: Supporto documenti elettronici AUNZ PINT SELF-BILLING in DocBits
 
 # 🇦🇺 AUNZ PINT SELF-BILLING
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Australia](countries/australia.md). L’etichetta della famiglia attiva non ha un numero di pubblicazione PINT fisso. Verificate gli identificatori di personalizzazione e di profilo; la consegna tramite rete è un’integrazione separata.
+{% endhint %}
+
 | Proprietà | Valore |
 |----------|-------|
 | **Paese / Regione** | Australia / Nuova Zelanda |
@@ -33,7 +39,7 @@ La mappatura dei campi è identica a [AUNZ PINT](aunz-pint.md) con la seguente d
 - **I ruoli delle parti sono invertiti**: Nell'autofatturazione, l'acquirente è la parte fatturante e il fornitore è la parte fatturata
 - Il `CustomizationID` contiene `urn:peppol.org:pint:selfbilling-1@aunz` invece di `billing-1@aunz`
 
-Per la tabella completa della mappatura dei campi, vedere [AUNZ PINT](aunz-pint.md#field-mapping).
+Per la tabella completa della mappatura dei campi, vedere [AUNZ PINT](aunz-pint.md#mappatura-dei-campi).
 
 ## Regola di classificazione
 

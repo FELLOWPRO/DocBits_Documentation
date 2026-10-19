@@ -14,6 +14,18 @@ Welche Funktionen Sie sehen, hängt von Ihren Berechtigungen, dem Dokumentstatus
 
 ## Dashboard als Video
 
+### Suche im Arbeitsalltag
+
+Das kurze Suchbeispiel beginnt am Arbeitsplatz einer fiktiven Anwenderin in Köln. Anschließend sehen Sie die deutsche DocBits-Oberfläche bildfüllend: einen Teil des Dateinamens eingeben, mit Enter suchen und den Treffer prüfen. Das zweite Beispiel zeigt, wie die Suche mit aktiviertem Volltext-Modul auch den Dokumentinhalt findet.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/de.mp4" %}
+
+[Suchbeispiel mit deutscher Sprecherstimme öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/de.mp4) · [Deutsche Untertitel (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/de.vtt) · [Deutsches Transkript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/de.txt)
+
+Die Anwenderin und das Büro sind KI-generiert. Die Bedienung und die Suchergebnisse stammen aus echten Aufnahmen im DocBits-Testkonto.
+
+### Vollständiger Dashboard-Rundgang
+
 Die deutsche Sprecherfassung erklärt das Dashboard in rund sechs Minuten Schritt für Schritt: Suche, Filter, Spalten, Dokumentaktionen, gespeicherte Ansichten, Upload und Werkzeuge. Sie sehen jeweils eine Ansicht. Langsamere Erklärungen und kurze Pausen geben Zeit, die Bedienelemente zu finden und die Schritte nachzuvollziehen. Das Suchbeispiel zeigt die tatsächliche Eingabe, die Bestätigung mit Enter und die gefilterte Trefferliste. Deutsche Untertitel sind im Bild eingeblendet.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v5/de.mp4" %}

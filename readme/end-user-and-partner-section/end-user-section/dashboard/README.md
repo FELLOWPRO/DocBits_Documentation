@@ -12,6 +12,17 @@ description: "在当前 DocBits 仪表板中查找、检查和整理文档。"
 
 <figure><img src="../../../.gitbook/assets/dashboard-overview-zh.png" alt="当前仪表板包含搜索、工具、已保存视图、文档类型和文档表格。为保护数据，文档中的具体值已隐藏。"><figcaption><p>当前仪表板包含搜索、工具、已保存视图、文档类型和文档表格。为保护数据，文档中的具体值已隐藏。</p></figcaption></figure>
 
+## 不启用和启用全文搜索时如何查找文档
+
+视频从上海一位虚构客户的办公桌开始，随后全屏展示真实的中文 DocBits 界面。第一个例子演示不启用全文搜索模块时如何按文件名搜索：输入文件名片段，按回车键，然后查看结果。第二个例子演示启用全文搜索模块后如何将文档内容纳入搜索。
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/zh.mp4" %}
+
+[打开中文讲解视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/zh.mp4) · [中文字幕（VTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/zh.vtt) · [中文文字稿](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/zh.txt)
+
+客户和办公室场景由 AI 生成。实际操作与搜索结果录制于 DocBits 测试账户。
+
+
 ## 开始日常工作
 
 1. 检查当前组织，以及可用的子组织。

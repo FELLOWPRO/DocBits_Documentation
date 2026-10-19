@@ -1,5 +1,13 @@
 # Validation Screen
 
+## Review and finish processing an invoice
+
+Follow an invoice from the dashboard to the next workflow step: compare the supplier, dates, invoice number, amounts and currency with the original, read a required-field warning and save the correction. In this example, the invoice is then handed over for approval. The next action in your account depends on your permissions and workflow.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v1/en.mp4" %}
+
+## Another introduction
+
 {% embed url="https://youtu.be/CmmQIxOaF6E?si=gYE-U-Jv4dLPi2xT" %}
 
 ## Overview

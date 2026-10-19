@@ -55,7 +55,7 @@
 * [其他安全控制](security/other-security-controls.md)
 * [双重身份验证（2FA）](security/two-factor-authentication.md)
 
-## 最终用户与合作伙伴
+## 最终用户与合作伙伴 <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [终端用户部分](end-user-and-partner-section/end-user-section/README.md)
   * [获取访问权限并登录](end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md)

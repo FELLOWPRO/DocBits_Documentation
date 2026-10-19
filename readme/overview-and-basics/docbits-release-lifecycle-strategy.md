@@ -1,10 +1,18 @@
 # Estratégia de ciclo de vida de releases do DocBits
 
-**Disponibilidade da NOVA R1.1:** Disponível no ambiente de testes desde **16 de outubro de 2026**. A entrada em produção está prevista para **4 de novembro de 2026**.
+Com o lançamento da próxima release menor, a R1.1, o DocBits introduzirá uma nova estratégia de ciclo de vida de releases baseada em dois canais de release: VESTA e NOVA.
 
-O DocBits utiliza dois canais de release, **VESTA** e **NOVA**, para introduzir novas releases e dar à sua organização tempo para avaliá-las antes da adoção. Durante a produção paralela, você decide se e quando mudar para a nova release. Em seguida, a FELLOWPRO gerencia a transição (rollover) que a torna a release de produção comum para todos os clientes.
+**NOVA** é o canal para a introdução de novas releases maiores e menores, como **Rx** e **Rx.y**. **VESTA** continua a disponibilizar a release de produção existente.
 
-Os números de versão neste guia — R1.0.x, R1.1.x e R1.2 — são ilustrativos. O mesmo ciclo de vida se repete com as releases seguintes; `x` representa atualizações dentro de uma série de releases.
+{% hint style="success" %}
+**Importante: Uma única URL para VESTA e NOVA**
+
+Continue utilizando a URL habitual do seu aplicativo DocBits. VESTA e NOVA não possuem URLs de acesso separadas: ambos os canais de release são acessados pela mesma URL padrão que você já utiliza para o ambiente correspondente.
+
+Para mudar de canal, acesse **Settings > Company Information > Release Channel** e selecione **VESTA** ou **NOVA**. Não é necessário sair e entrar novamente. Seu próximo clique no aplicativo o levará automaticamente para a release do canal selecionado.
+
+Antes de mudar, verifique se ambos os canais estão prontos e disponíveis no seu ambiente, conforme explicado em [Verifique a disponibilidade do ambiente antes de mudar](#importante-verifique-a-disponibilidade-do-ambiente-antes-de-mudar).
+{% endhint %}
 
 ## Canais de release
 
@@ -44,10 +52,13 @@ O VESTA R1.0.x e o NOVA R1.1.x são ambos releases de produção ativas. Sua org
 Para adotar o NOVA durante esta fase:
 
 1. Avalie a release no sandbox do NOVA.
-2. Decida quando sua organização estará pronta para utilizá-la em produção.
-3. Mude do VESTA para o NOVA utilizando a configuração **Release Channel** no aplicativo DocBits.
+2. Consulte o comunicado da release ou confirme com o Suporte da FELLOWPRO que ambos os ambientes de produção estão prontos e disponíveis para a mudança.
+3. Decida quando sua organização estará pronta para utilizar a nova release em produção.
+4. No DocBits, acesse **Settings > Company Information > Release Channel** e selecione **NOVA**.
 
-Essa mudança é feita em regime de autoatendimento. A FELLOWPRO não seleciona quais clientes devem migrar para o NOVA. Você pode continuar utilizando o VESTA durante toda a produção paralela e adotar a nova release por meio do rollover subsequente.
+Durante a produção paralela, você também pode voltar para o VESTA acessando **Settings > Company Information > Release Channel** e selecionando **VESTA**.
+
+A mudança de canal é feita em regime de autoatendimento. A FELLOWPRO não seleciona quais clientes devem migrar para o NOVA. Você pode continuar utilizando o VESTA durante toda a produção paralela e adotar a nova release por meio do rollover subsequente.
 
 ## Rollover da release e o próximo ciclo
 
@@ -75,28 +86,57 @@ O diagrama abaixo ilustra com mais detalhes o ciclo de releases descrito acima.
 
 ### Cadência de releases
 
-Atualmente, a FELLOWPRO planeja um ciclo de releases de aproximadamente **3–4 meses**. Esse intervalo reflete nossa estimativa de planejamento atual; não se trata de um cronograma fixo, de uma duração máxima do ciclo nem de uma garantia de data de release ou de rollover.
+A cadência planejada difere entre as releases maiores e menores introduzidas por meio do NOVA e os hotfixes aplicados às releases de produção no VESTA e no NOVA.
 
-O momento de cada rollover e do reaproveitamento do NOVA depende tanto da **prontidão da release quanto da aceitação da transição planejada por todos os clientes**. Se for necessário tempo adicional para alcançar a prontidão da release, tratar preocupações dos clientes ou obter a aceitação de cada cliente, o ciclo será prorrogado e poderá ultrapassar quatro meses.
+#### Releases maiores e menores por meio do NOVA
+
+Atualmente, a FELLOWPRO planeja um ciclo de aproximadamente **3–4 meses para releases maiores e menores** introduzidas por meio do canal de release NOVA, como **Rx** e **Rx.y**. Essa estimativa se aplica ao ciclo de vida de releases descrito acima, incluindo o rollover subsequente para o VESTA e o reaproveitamento do NOVA para a próxima release. Ela não descreve a frequência dos hotfixes.
+
+Esse intervalo reflete nossa estimativa de planejamento atual; não se trata de um cronograma fixo, de uma duração máxima do ciclo nem de uma garantia de data de release ou de rollover. O momento de cada rollover e do reaproveitamento do NOVA depende tanto da **prontidão da release quanto da aceitação da transição planejada por todos os clientes**. Se for necessário tempo adicional para alcançar a prontidão da release, tratar preocupações dos clientes ou obter a aceitação de cada cliente, o ciclo será prorrogado e poderá ultrapassar quatro meses.
 
 A FELLOWPRO comunica cada rollover planejado com antecedência. Qualquer prazo indicativo permanece sujeito ao cumprimento dessas condições.
+
+#### Hotfixes na produção do VESTA
+
+Espera-se que os hotfixes para a release de produção do VESTA ocorram aproximadamente **uma vez por mês, ou em intervalos um pouco mais longos**. Trata-se de uma cadência indicativa, e não de um cronograma fixo nem de uma data de entrega garantida.
+
+#### Hotfixes de estabilização na produção do NOVA
+
+Não é possível especificar uma cadência geral para os hotfixes de estabilização na produção do NOVA. O NOVA introduz releases totalmente novas, de modo que o momento e a frequência desses hotfixes dependem das necessidades de estabilização de cada release. Por isso, eles não seguem a cadência mensal indicativa do VESTA nem o ciclo de 3–4 meses das releases maiores e menores.
 
 ## Responsabilidades e escolha do cliente
 
 | Transição | Quem a gerencia | O que esperar |
 | --- | --- | --- |
-| **Mudança do VESTA para o NOVA durante a Fase 3** | Sua organização | Avalie o NOVA no sandbox e escolha se e quando mudar utilizando a configuração Release Channel do aplicativo. |
+| **Mudança entre VESTA e NOVA durante a Fase 3** | Sua organização | Avalie o NOVA no sandbox e escolha se e quando mudar. Utilize **Settings > Company Information > Release Channel** para selecionar o NOVA ou voltar para o VESTA durante a produção paralela. |
 | **Rollover do NOVA R1.1.x para o VESTA R1.1.x** | FELLOWPRO | Analise o comunicado prévio enviado por e-mail, apresente quaisquer preocupações ou objeções e confirme a aceitação da transição planejada. A FELLOWPRO prossegue quando a release estiver pronta e todos os clientes tiverem aceitado. |
 
+## Importante: verifique a disponibilidade do ambiente antes de mudar
+
+Só mude entre VESTA e NOVA em **Settings > Company Information > Release Channel** quando as releases estiverem disponíveis em paralelo e prontas para uso no **ambiente correspondente em ambos os canais**. A disponibilidade em sandbox e em produção deve ser avaliada separadamente:
+
+- **Sandbox:** Você pode mudar do VESTA Sandbox para o NOVA Sandbox quando a nova release estiver pronta e disponível no NOVA Sandbox, enquanto o VESTA Sandbox continuar disponível. O mesmo requisito de prontidão se aplica ao voltar.
+- **Produção:** Você só pode mudar entre o VESTA Production e o NOVA Production enquanto ambas as releases de produção estiverem prontas e disponíveis em paralelo. A disponibilidade no NOVA Sandbox não significa que o NOVA Production esteja pronto para uso.
+
+Mudar quando o ambiente correspondente não estiver pronto ou disponível pode interromper suas operações. A FELLOWPRO envia e-mails de comunicado de release alguns dias antes de as releases ficarem disponíveis em sandbox ou produção. Consulte esses comunicados antes de mudar. Se não tiver certeza de que a mudança está disponível ou é adequada para sua organização, entre em contato com o Suporte da FELLOWPRO para obter confirmação.
+
+**Controle de disponibilidade planejado:** A FELLOWPRO está trabalhando em um controle Sim/Não que permitirá ao Suporte tornar a configuração Release Channel somente leitura ou habilitar a mudança de canal independentemente de uma implantação de software. Quando esse controle estiver disponível, o Suporte o utilizará para habilitar a mudança quando os ambientes correspondentes estiverem prontos e para manter a configuração somente leitura nos demais casos. A intenção é permitir que os clientes mudem com segurança entre VESTA e NOVA quando a configuração estiver habilitada. Até que esse controle seja introduzido, uma configuração editável, por si só, não deve ser considerada como confirmação de que a mudança é adequada; siga os comunicados de release ou confirme com o Suporte.
+
 ## Perguntas frequentes
+
+### Como saber se é seguro mudar entre VESTA e NOVA?
+
+Consulte o comunicado da release do ambiente que pretende utilizar ou peça ao Suporte da FELLOWPRO que confirme se a mudança é adequada. Ambos os ambientes correspondentes devem estar prontos e disponíveis em paralelo; a prontidão do sandbox não confirma a prontidão da produção. Consulte [Importante: verifique a disponibilidade do ambiente antes de mudar](#importante-verifique-a-disponibilidade-do-ambiente-antes-de-mudar) acima para obter as orientações completas, incluindo o controle planejado para habilitar ou desabilitar a mudança de canal.
 
 ### Podemos permanecer no VESTA enquanto o NOVA está disponível em produção?
 
 Sim. Durante a Fase 3, você pode permanecer no VESTA ou mudar para o NOVA quando sua organização estiver pronta. No rollover subsequente, a nova release torna-se o VESTA e a release anterior é descontinuada.
 
-### Como mudamos para o NOVA?
+### Como mudamos para o NOVA ou voltamos para o VESTA?
 
-Assim que o NOVA estiver disponível em produção, utilize a configuração **Release Channel** no aplicativo DocBits. Sua organização faz essa escolha de forma independente, com base em suas necessidades e na avaliação da release no sandbox do NOVA.
+Primeiro, verifique se o ambiente correspondente está pronto e disponível em ambos os canais, conforme explicado em [Verifique a disponibilidade do ambiente antes de mudar](#importante-verifique-a-disponibilidade-do-ambiente-antes-de-mudar). A disponibilidade em sandbox e a disponibilidade em produção são independentes.
+
+Durante a Fase 3, acesse **Settings > Company Information > Release Channel** no DocBits e selecione **NOVA** para adotar a nova release de produção, ou **VESTA** para voltar à release de produção atual do VESTA. Sua organização faz essa escolha de forma independente, com base em suas necessidades e na avaliação do NOVA no sandbox. Essa escolha vale enquanto ambas as releases estiverem disponíveis em paralelo; a release anterior do VESTA é descontinuada no rollover.
 
 ### Quando o NOVA fica disponível para uso em produção?
 
@@ -118,6 +158,6 @@ A sua mudança para o NOVA durante a Fase 3 é uma escolha em regime de autoaten
 
 O NOVA é reaproveitado para o desenvolvimento da próxima release, a R1.2 neste exemplo. O VESTA disponibiliza a R1.1.x enquanto o NOVA passa novamente pelas etapas de desenvolvimento, QA/UAT e produção paralela.
 
-### Há garantia de uma nova release a cada três a quatro meses?
+### Há garantia de uma release maior ou menor a cada três a quatro meses?
 
-Não. A cadência aproximada de 3–4 meses é uma estimativa de planejamento atual, não um cronograma garantido nem uma duração máxima. O rollover e o reaproveitamento do NOVA exigem tanto a prontidão da release quanto a aceitação de todos os clientes. Se qualquer uma dessas condições exigir mais tempo, o ciclo será prorrogado e poderá ultrapassar quatro meses. A FELLOWPRO comunica cada rollover planejado com antecedência.
+Não. A cadência aproximada de 3–4 meses para releases maiores e menores introduzidas por meio do NOVA é uma estimativa de planejamento atual, não um cronograma garantido nem uma duração máxima. O rollover e o reaproveitamento do NOVA exigem tanto a prontidão da release quanto a aceitação de todos os clientes. Se qualquer uma dessas condições exigir mais tempo, o ciclo será prorrogado e poderá ultrapassar quatro meses. A FELLOWPRO comunica cada rollover planejado com antecedência.

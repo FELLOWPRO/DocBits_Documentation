@@ -20,19 +20,13 @@ Das kurze Suchbeispiel beginnt am Arbeitsplatz einer fiktiven Anwenderin in Köl
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/de.mp4" %}
 
-[Suchbeispiel mit deutscher Sprecherstimme öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/de.mp4) · [Deutsche Untertitel (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/de.vtt) · [Deutsches Transkript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/de.txt)
-
 Die Anwenderin und das Büro sind KI-generiert. Die Bedienung und die Suchergebnisse stammen aus echten Aufnahmen im DocBits-Testkonto.
 
 ### Vollständiger Dashboard-Rundgang
 
-„Wollt ihr mehr sehen, was auf dem Dashboard noch alles geht? Ich zeige es euch.“ Mit dieser Einladung führt die Anwenderin aus dem Suchvideo durch ihren Arbeitsalltag. Der rund 8 Minuten lange Rundgang zeigt echte Bedienung: Statusfilter und Datumsbereiche, Dokumenttyp-Reiter, Sortierung und Seitennavigation, Spalten, Dokument- und Massenaktionen, persönliche Ansichten, Upload, Statistik, Werkzeuge und Hilfe.
-
-Die echte DocBits-Oberfläche sitzt im Monitor des Kölner Büros und wird anschließend vollständig und bildfüllend gezeigt. Deutsche Sprecherstimme und Pausen begleiten die einzelnen Schritte. Untertitel stehen als separate VTT-Datei zur Verfügung. Die Anwenderin und das Büro sind KI-generiert; Bedienung und Ergebnisse stammen aus dem DocBits-Testkonto.
+Im Video zeigt Ihnen die Anwenderin, wie Sie mit den weiteren Dashboard-Funktionen Ihre Dokumente organisieren, bearbeiten und Ihre persönliche Ansicht einrichten.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v1/de.mp4" %}
-
-[Dashboard-Rundgang mit deutscher Sprecherstimme öffnen (7:33 Minuten)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v1/de.mp4) · [Deutsche Untertitel (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v1/de.vtt) · [Deutsches Transkript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v1/de.txt)
 
 ## Die tägliche Arbeit beginnen
 

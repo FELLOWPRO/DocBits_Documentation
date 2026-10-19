@@ -26,11 +26,13 @@ Die Anwenderin und das Büro sind KI-generiert. Die Bedienung und die Suchergebn
 
 ### Vollständiger Dashboard-Rundgang
 
-Die deutsche Sprecherfassung erklärt das Dashboard in rund sechs Minuten Schritt für Schritt: Suche, Filter, Spalten, Dokumentaktionen, gespeicherte Ansichten, Upload und Werkzeuge. Sie sehen jeweils eine Ansicht. Langsamere Erklärungen und kurze Pausen geben Zeit, die Bedienelemente zu finden und die Schritte nachzuvollziehen. Das Suchbeispiel zeigt die tatsächliche Eingabe, die Bestätigung mit Enter und die gefilterte Trefferliste. Deutsche Untertitel sind im Bild eingeblendet.
+„Wollt ihr mehr sehen, was auf dem Dashboard noch alles geht? Ich zeige es euch.“ Mit dieser Einladung führt die Anwenderin aus dem Suchvideo durch ihren Arbeitsalltag. Der rund 8 Minuten lange Rundgang zeigt echte Bedienung: Statusfilter und Datumsbereiche, Dokumenttyp-Reiter, Sortierung und Seitennavigation, Spalten, Dokument- und Massenaktionen, persönliche Ansichten, Upload, Statistik, Werkzeuge und Hilfe.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v5/de.mp4" %}
+Die echte DocBits-Oberfläche sitzt im Monitor des Kölner Büros und wird anschließend vollständig und bildfüllend gezeigt. Deutsche Sprecherstimme und Pausen begleiten die einzelnen Schritte. Untertitel stehen als separate VTT-Datei zur Verfügung. Die Anwenderin und das Büro sind KI-generiert; Bedienung und Ergebnisse stammen aus dem DocBits-Testkonto.
 
-[Video mit deutscher Sprecherstimme öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v5/de.mp4) · [Deutsche Untertitel (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v5/de.vtt) · [Deutsches Transkript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard/v5/de.txt)
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v1/de.mp4" %}
+
+[Dashboard-Rundgang mit deutscher Sprecherstimme öffnen (7:33 Minuten)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v1/de.mp4) · [Deutsche Untertitel (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v1/de.vtt) · [Deutsches Transkript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v1/de.txt)
 
 ## Die tägliche Arbeit beginnen
 
@@ -44,7 +46,7 @@ Die deutsche Sprecherfassung erklärt das Dashboard in rund sechs Minuten Schrit
 
 Geben Sie einen Dokumentnamen, eine Rechnungsnummer oder einen anderen Geschäftswert in das Suchfeld ein und drücken Sie **Enter**. Über das Filtersymbol im Suchfeld wählen Sie **Status**, **Zugewiesen an** und **Neustart erforderlich**; bestätigen Sie mit **Anwenden**. Entfernen Sie einzelne Filterchips oder verwenden Sie **Filter löschen**, wenn ein Dokument fehlt. Auch Dokumenttyp-Reiter und gespeicherte Ansichten grenzen die Liste ein.
 
-Im Video wird `filename:invoice` eingegeben und mit **Enter** bestätigt. Die Suche nach „invoice“ im Dokumentnamen reduziert die Liste im Testkonto von 15 auf zwei Dokumente.
+Im Suchbeispiel wird `350495` als Teil eines Dateinamens eingegeben und mit **Enter** bestätigt. Die Trefferliste zeigt den passenden Demobeleg.
 
 Die Suchleiste bietet außerdem strukturierte Suchchips, eine Ansicht für die direkte Suchabfrage und eine Hilfe zu Feldern und Syntax. Übernehmen Sie Feldnamen und Beispiele aus dieser Hilfe. Technische Feldnamen bleiben beim Sprachwechsel unverändert. Erweiterte Suchfunktionen setzen die entsprechenden Suchmodule Ihrer Organisation voraus.
 

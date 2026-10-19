@@ -1,4 +1,4 @@
-# NOVA – Major Release 4.11.
+# NOVA – Minor Release 4.11.
 
 **Verfügbarkeit von NOVA R1.1:** Seit dem **16. Oktober 2026** in der Sandbox verfügbar. Der Produktionsrelease ist für den **4. November 2026** geplant.
 

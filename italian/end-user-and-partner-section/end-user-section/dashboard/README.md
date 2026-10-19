@@ -12,6 +12,17 @@ Le funzioni disponibili dipendono dalle autorizzazioni, dallo stato del document
 
 <figure><img src="../../../.gitbook/assets/dashboard-overview-it.png" alt="La dashboard attuale con ricerca, strumenti, viste salvate, tipi di documento e tabella. I valori dei documenti sono nascosti per tutelare la riservatezza."><figcaption><p>La dashboard attuale con ricerca, strumenti, viste salvate, tipi di documento e tabella. I valori dei documenti sono nascosti per tutelare la riservatezza.</p></figcaption></figure>
 
+## Cercare documenti senza e con ricerca a testo completo
+
+Questo breve video inizia alla scrivania di una cliente immaginaria a Milano. La vera interfaccia italiana di DocBits occupa poi tutto lo schermo. Il primo esempio mostra la ricerca per nome senza il modulo a testo completo: digitare parte del nome del file, premere Invio e controllare il risultato. Il secondo mostra come includere il contenuto dei documenti con il modulo a testo completo attivo.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/it.mp4" %}
+
+[Apri il video con voce italiana](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/it.mp4) · [Sottotitoli italiani (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/it.vtt) · [Trascrizione italiana](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/it.txt)
+
+La cliente e l’ufficio sono generati con IA. Le azioni e i risultati di ricerca provengono da registrazioni reali nell’account di prova DocBits.
+
+
 ## Iniziare il lavoro quotidiano
 
 1. Controlla l’organizzazione attiva e, se disponibile, la sotto-organizzazione.

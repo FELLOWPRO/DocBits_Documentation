@@ -6,17 +6,17 @@
 
 **DocBits is the product. NOVA names the release cycle.** [Watch the film about the new DocBits release](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/en.mp4) · [Subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/en.vtt).
 
-Choose a release channel to see what changes for your team. **The NOVA cycle delivers the new DocBits major release with additional customer capabilities. VESTA hotfixes improve the current production release.** See the [release lifecycle](../docbits-release-lifecycle-strategy.md) for availability and switching between channels.
+Choose a release channel to see what changes for your team. **The NOVA cycle delivers the new DocBits minor release with additional customer capabilities. VESTA hotfixes improve the current production release.** See the [release lifecycle](../docbits-release-lifecycle-strategy.md) for availability and switching between channels.
 
 **Former VESTA beta features are included in the NOVA sandbox.** All features previously available as beta in VESTA are part of NOVA's regular feature set, available for testing in the sandbox ahead of the planned production release. They will also become regular VESTA features with the [next VESTA hotfix, planned for **11 November 2026**](vesta-hotfix-11-november-2026.md).
 
 | Release channel | Release notes | Focus |
 | --- | --- | --- |
-| **NOVA – Major Release** | [What's new for customers](nova-major-release.md) · **4 November 2026 (planned)** | All former VESTA beta features, plus new capabilities and extensions compared with VESTA R1.0.15. |
+| **NOVA – Minor Release** | [What's new for customers](nova-minor-release-4-november-2026.md) · **4 November 2026 (planned)** | All former VESTA beta features, plus new capabilities and extensions compared with VESTA R1.0.15. |
 | **VESTA — Next Hotfix (planned)** | [11 November 2026](vesta-hotfix-11-november-2026.md) | Introduces all former VESTA beta features into the regular VESTA feature set. |
 | **VESTA — Hotfix Release** | [14 October 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Improvements and fixes for the current VESTA production release. |
 
-## NOVA – Major Release 4 November 2026
+## NOVA – Minor Release 4 November 2026
 
 ### What your team gains with NOVA
 
@@ -36,9 +36,9 @@ Choose a release channel to see what changes for your team. **The NOVA cycle del
 * [**Custom Validation Rules**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md): define checks for fields and table rows, choose conditions and severity, and test your rules. **Watch:** [Watch video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4).
 * [**PO Matching Rules**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md): configure matching types, tolerances and execution order, and manage rule versions. **Related video — Choose the Right Automation:** [Watch video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4).
 
-[Browse all feature videos](nova-major-release.md#watch-the-feature-videos), including layouts, Touchless Intelligence, E-Invoice Validation and the six-part AI Table series.
+[Browse all feature videos](nova-minor-release-4-november-2026.md#watch-the-feature-videos), including layouts, Touchless Intelligence, E-Invoice Validation and the six-part AI Table series.
 
-[Read the complete NOVA feature comparison](nova-major-release.md), including activation requirements, additional improvements and all **16 service versions**.
+[Read the complete NOVA feature comparison](nova-minor-release-4-november-2026.md), including activation requirements, additional improvements and all **16 service versions**.
 
 **The VESTA baseline includes existing functionality and beta features:** the original Settings Assistant, basic import-health warnings, AI tiers, Header Field Check, Touchless Intelligence dashboard, rule engines, transformations after master data lookup and basic rule-execution logs. The NOVA notes distinguish the move from beta to regular availability from further additions to these capabilities.
 

@@ -12,7 +12,7 @@ Scegli un canale di rilascio per vedere cosa cambia per il tuo team. **Il ciclo 
 
 | Canale di rilascio | Note di rilascio | Focus |
 | --- | --- | --- |
-| **NOVA – Rilascio minore** | [Novità per i clienti](nova-major-release.md) · **4 novembre 2026 (previsto)** | Tutte le ex funzionalità beta di VESTA, più nuove capacità ed estensioni rispetto a VESTA R1.0.15. |
+| **NOVA – Rilascio minore** | [Novità per i clienti](nova-minor-release-4-november-2026.md) · **4 novembre 2026 (previsto)** | Tutte le ex funzionalità beta di VESTA, più nuove capacità ed estensioni rispetto a VESTA R1.0.15. |
 | **VESTA — Prossimo hotfix (pianificato)** | [11 novembre 2026](vesta-hotfix-11-november-2026.md) | Introduce tutte le ex funzionalità beta di VESTA nel set di funzionalità standard di VESTA. |
 | **VESTA — Rilascio hotfix** | [14 ottobre 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Miglioramenti e correzioni per la release di produzione attuale di VESTA. |
 
@@ -36,9 +36,9 @@ Scegli un canale di rilascio per vedere cosa cambia per il tuo team. **Il ciclo 
 * [**Regole di convalida personalizzate**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md): definisci controlli per i campi e le righe di tabella, scegli le condizioni e la gravità e testa le tue regole. **Guarda:** [Video in inglese](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4).
 * [**Regole di abbinamento degli ordini di acquisto**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md): configura i tipi di abbinamento, le tolleranze e l'ordine di esecuzione e gestisci le versioni delle regole. **Video correlato — Scegli l'automazione giusta:** [Guarda il video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/it.mp4).
 
-[Sfoglia tutti i video delle funzionalità](nova-major-release.md#watch-the-feature-videos), inclusi layout, Touchless Intelligence, convalida delle fatture elettroniche e la serie in sei parti su AI Table.
+[Sfoglia tutti i video delle funzionalità](nova-minor-release-4-november-2026.md#watch-the-feature-videos), inclusi layout, Touchless Intelligence, convalida delle fatture elettroniche e la serie in sei parti su AI Table.
 
-[Leggi il confronto completo delle funzionalità NOVA](nova-major-release.md), inclusi i requisiti di attivazione, i miglioramenti aggiuntivi e tutte le **16 versioni del servizio**.
+[Leggi il confronto completo delle funzionalità NOVA](nova-minor-release-4-november-2026.md), inclusi i requisiti di attivazione, i miglioramenti aggiuntivi e tutte le **16 versioni del servizio**.
 
 **La baseline VESTA include funzionalità esistenti e funzionalità beta:** l'originale Assistente impostazioni, avvisi di base sullo stato di salute dell'importazione, livelli AI, Controllo campo intestazione, dashboard Touchless Intelligence, motori di regole, trasformazioni dopo la ricerca dei dati anagrafici e registri di esecuzione delle regole di base. Le note NOVA distinguono il passaggio da beta a disponibilità standard dai ulteriori miglioramenti a queste funzionalità.
 

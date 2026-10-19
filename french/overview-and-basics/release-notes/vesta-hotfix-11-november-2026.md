@@ -2,7 +2,7 @@
 
 > **Canal de publication :** VESTA · **Statut :** Prévu · **Date planifiée :** 11 novembre 2026.
 
-Le prochain correctif VESTA intègre **toutes les fonctionnalités précédemment disponibles en bêta dans VESTA aux fonctionnalités standard de VESTA**. Ces fonctionnalités sont déjà disponibles dans l’[environnement de test de NOVA](nova-major-release.md#former-vesta-beta-features-included-in-nova) ; la mise en production de NOVA est prévue le **4 novembre 2026**.
+Le prochain correctif VESTA intègre **toutes les fonctionnalités précédemment disponibles en bêta dans VESTA aux fonctionnalités standard de VESTA**. Ces fonctionnalités sont déjà disponibles dans l’[environnement de test de NOVA](nova-minor-release-4-november-2026.md#former-vesta-beta-features-included-in-nova) ; la mise en production de NOVA est prévue le **4 novembre 2026**.
 
 ## Ce qui change pour votre équipe
 
@@ -21,8 +21,8 @@ Le prochain correctif VESTA intègre **toutes les fonctionnalités précédemmen
 * [**Règles de validation personnalisées**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) : définissez des vérifications pour les champs et les lignes de tableau, choisissez les conditions et la gravité, et testez vos règles. **Regarder :** [Voir la vidéo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/fr.mp4).
 * [**Règles de rapprochement des commandes**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) : configurez les types de rapprochement, les tolérances et l'ordre d'exécution, et gérez les versions des règles. **Vidéo associée — Choisir la bonne automatisation :** [Voir la vidéo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/fr.mp4).
 
-[Parcourir toutes les vidéos des fonctionnalités](nova-major-release.md#watch-the-feature-videos), y compris les mises en page, Touchless Intelligence, la validation des factures électroniques et la série en six parties sur AI Table.
+[Parcourir toutes les vidéos des fonctionnalités](nova-minor-release-4-november-2026.md#watch-the-feature-videos), y compris les mises en page, Touchless Intelligence, la validation des factures électroniques et la série en six parties sur AI Table.
 
-Cette préversion annonce le déploiement des anciennes fonctionnalités bêta de VESTA. Les [notes de version NOVA](nova-major-release.md) décrivent également d'autres ajouts et améliorations NOVA. Les versions de service et les correctifs supplémentaires pour le correctif VESTA seront indiqués lorsque les détails de la version seront finalisés.
+Cette préversion annonce le déploiement des anciennes fonctionnalités bêta de VESTA. Les [notes de version NOVA](nova-minor-release-4-november-2026.md) décrivent également d'autres ajouts et améliorations NOVA. Les versions de service et les correctifs supplémentaires pour le correctif VESTA seront indiqués lorsque les détails de la version seront finalisés.
 
 Consultez le [dernier correctif VESTA publié — 14 octobre 2026](incremental-updates-14-october-2026.md) et l'[aperçu des versions](README.md).

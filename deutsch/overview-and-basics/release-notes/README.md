@@ -12,7 +12,7 @@ Wählen Sie einen Release-Kanal, um zu sehen, welche Änderungen für Ihr Team r
 
 | Release-Kanal | Versionshinweise | Schwerpunkt |
 | --- | --- | --- |
-| **NOVA – Minor Release** | [Neuigkeiten für Kunden](nova-major-release.md) · **4. November 2026 (geplant)** | Alle ehemaligen VESTA-Beta-Funktionen sowie neue Funktionen und Erweiterungen im Vergleich zu VESTA R1.0.15. |
+| **NOVA – Minor Release** | [Neuigkeiten für Kunden](nova-minor-release-4-november-2026.md) · **4. November 2026 (geplant)** | Alle ehemaligen VESTA-Beta-Funktionen sowie neue Funktionen und Erweiterungen im Vergleich zu VESTA R1.0.15. |
 | **VESTA — Nächster Hotfix (geplant)** | [11. November 2026](vesta-hotfix-11-november-2026.md) | Führt alle ehemaligen VESTA-Beta-Funktionen in den regulären VESTA-Funktionsumfang ein. |
 | **VESTA — Hotfix-Release** | [14. Oktober 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Verbesserungen und Korrekturen für die aktuelle VESTA-Produktionsversion. |
 
@@ -36,9 +36,9 @@ Wählen Sie einen Release-Kanal, um zu sehen, welche Änderungen für Ihr Team r
 * [**Benutzerdefinierte Validierungsregeln**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md): Definieren Sie Prüfungen für Felder und Tabellenzeilen, wählen Sie Bedingungen und Schweregrade aus und testen Sie Ihre Regeln. **Video:** [Video ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/de.mp4).
 * [**Bestellabgleichregeln**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md): Konfigurieren Sie Abgleicharten, Toleranzen und Ausführungsreihenfolge und verwalten Sie Regelversionen. **Zugehöriges Video — Die richtige Automatisierung wählen:** [Video ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/de.mp4).
 
-[Alle Funktionsvideos durchsuchen](nova-major-release.md#watch-the-feature-videos), einschließlich Layouts, Touchless Intelligence, E-Rechnungsvalidierung und der sechsteiligen AI-Table-Serie.
+[Alle Funktionsvideos durchsuchen](nova-minor-release-4-november-2026.md#watch-the-feature-videos), einschließlich Layouts, Touchless Intelligence, E-Rechnungsvalidierung und der sechsteiligen AI-Table-Serie.
 
-[Den vollständigen NOVA-Funktionsvergleich lesen](nova-major-release.md), einschließlich Aktivierungsvoraussetzungen, zusätzlicher Verbesserungen und aller **16 Serviceversionen**.
+[Den vollständigen NOVA-Funktionsvergleich lesen](nova-minor-release-4-november-2026.md), einschließlich Aktivierungsvoraussetzungen, zusätzlicher Verbesserungen und aller **16 Serviceversionen**.
 
 **Die VESTA-Basisversion umfasst bestehende Funktionen und Beta-Funktionen:** den ursprünglichen Einstellungs-Assistenten, grundlegende Import-Statuswarnungen, KI-Stufen, Header Field Check, Touchless-Intelligence-Dashboard, Regel-Engines, Transformationen nach der Stammdatenabfrage und grundlegende Regel-Ausführungsprotokolle. Die NOVA-Hinweise unterscheiden zwischen dem Übergang von Beta zur regulären Verfügbarkeit und weiteren Ergänzungen dieser Funktionen.
 

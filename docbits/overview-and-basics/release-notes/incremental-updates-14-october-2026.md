@@ -2,7 +2,7 @@
 
 > **Release channel:** VESTA · **Release:** R1.0.15.
 >
-> **Comparing with NOVA?** The [NOVA major-release feature comparison](nova-major-release.md#what-nova-adds-for-customers) covers the Validation Assistant, reviewed automation improvements, expanded e-invoice reports, new import controls and other additions beyond this VESTA release.
+> **Comparing with NOVA?** The [NOVA minor-release feature comparison](nova-minor-release-4-november-2026.md#what-nova-adds-for-customers) covers the Validation Assistant, reviewed automation improvements, expanded e-invoice reports, new import controls and other additions beyond this VESTA release.
 >
 > **Next VESTA hotfix: [11 November 2026 (planned)](vesta-hotfix-11-november-2026.md).** All features previously available as beta in VESTA are now regular NOVA features and will become regular VESTA features with that hotfix.
 

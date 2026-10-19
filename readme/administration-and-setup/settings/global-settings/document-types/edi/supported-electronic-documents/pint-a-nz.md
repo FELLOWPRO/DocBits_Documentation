@@ -4,6 +4,12 @@ description: Unterstützung für elektronisches Dokument PINT A-NZ in DocBits
 
 # 🇦🇺 PINT A-NZ
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Australien](countries/australia.md). Die aktive Familienbezeichnung enthält keine feste PINT-Veröffentlichungsnummer. Prüfen Sie die Anpassungs- und Profilkennungen. Die Netzwerkzustellung erfordert eine separate Integration.
+{% endhint %}
+
 | Eigenschaft | Wert |
 |----------|-------|
 | **Land/Regio** | Australien / Neuseeland |

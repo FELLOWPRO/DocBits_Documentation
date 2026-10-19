@@ -4,14 +4,14 @@
 
 Die Dashboard-Einstellungen sind darauf ausgelegt, Administratoren dabei zu helfen, die Datenpräsentation und Interaktion innerhalb des DocBits-Dashboards zu steuern. Diese Einstellungen bestimmen, welche Informationen sofort nach dem Einloggen verfügbar sind, sodass die Benutzer schnellen Zugriff auf die relevantesten Daten für ihre Aufgaben haben.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_1.png)
+<figure><img src="../../../../.gitbook/assets/dashboard-settings_1-de.png" alt="Die Dashboard-Einstellungen mit den Blöcken Allgemein und Exportverlauf"><figcaption><p>Die Dashboard-Einstellungen unter Globale Einstellungen → Dashboard.</p></figcaption></figure>
 
 ## Zugriff auf die Dashboard-Einstellungen
 
 Um auf die Dashboard-Einstellungen zuzugreifen, navigieren Sie zu:\
 **Einstellungen → Globale Einstellungen → Dashboard**
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_dashboard.png)
+<figure><img src="../../../../.gitbook/assets/settings-dashboard-de.png" alt="Der Eintrag Dashboard unter den globalen Einstellungen in der Seitenleiste"><figcaption><p>Der Bereich Dashboard in den globalen Einstellungen.</p></figcaption></figure>
 
 ## **Allgemein**
 
@@ -20,13 +20,13 @@ Um auf die Dashboard-Einstellungen zuzugreifen, navigieren Sie zu:\
   * **Automatisches Hochladen des Dashboards**: Steuert, ob das Dashboard Daten automatisch beim Zugriff des Benutzers laden soll, was helfen kann, die Ladezeiten zu reduzieren und die Benutzererfahrung zu verbessern, indem Daten nur bei Bedarf geladen werden.
   *   **Dashboard-Daten exportieren**: Diese Funktion fügt der Dashboard-Toolbar einen neuen **Export**-Button hinzu, mit dem Sie die aktuelle Dashboard-Ansicht als **.csv** oder **.xlsx**-Datei exportieren können.
 
-      ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_3.png)
+      <figure><img src="../../../../.gitbook/assets/dashboard-settings_3-de.png" alt="Die Option Dashboard-Daten exportieren"><figcaption><p>Die Option Dashboard-Daten exportieren fügt der Dashboard-Toolbar einen Export-Button hinzu.</p></figcaption></figure>
 
 ## **Exportverlauf**
 
 Im **Exportverlauf** sehen Sie eine Tabelle, die alle vergangenen Exporte zusammen mit wichtigen Informationen zu jeder Anfrage auflistet.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_4.png)
+<figure><img src="../../../../.gitbook/assets/dashboard-settings_4-de.png" alt="Der Exportverlauf mit den Spalten Email, Status, Requested At, Completed At, Format und Filters Used"><figcaption><p>Der Exportverlauf listet alle vergangenen Exporte auf.</p></figcaption></figure>
 
 Die folgenden Details sind enthalten:
 
@@ -49,19 +49,19 @@ Die folgenden Details sind enthalten:
   * **Nur Admin und Zuweisung**: Nur Benutzer mit Administratorrechten und der zugewiesene Benutzer können das Dokument neu starten.
   * **Alle Benutzer**: Alle Benutzer, die die erforderlichen [Berechtigungen](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) erhalten haben, können Dokumente neu starten.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_2.png)
+<figure><img src="../../../../.gitbook/assets/dashboard-settings_2-de.png" alt="Die Optionen Zuweisen an und Neustart im Abschnitt Aktion"><figcaption><p>Der Abschnitt Aktion steuert, wer Dokumente zuweisen und neu starten darf.</p></figcaption></figure>
 
 ## **Filter**
 
 * **Statusfilter-Stil**: Bestimmt den Präsentationsstil der Statusfilter, der auf Standard oder benutzerdefiniert gemäß dem operativen Fokus der Benutzer eingestellt werden kann.
 * **Benutzerdefinierter Statusfilter**: Ermöglicht die Erstellung und Anwendung von benutzerdefinierten Filtern, die auf spezifische Dokumentstatus wie "Neu", "Validierung" oder "Export" abzielen. Dies ermöglicht es Benutzern, schnell auf Dokumente in bestimmten Verarbeitungsstufen zuzugreifen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_5.png)
+<figure><img src="../../../../.gitbook/assets/dashboard-settings_5-de.png" alt="Der Abschnitt Filter mit Statusfilter-Stil und benutzerdefiniertem Statusfilter"><figcaption><p>Der Abschnitt Filter steuert Statusfilter-Stil und benutzerdefinierte Statusfilter.</p></figcaption></figure>
 
 ## Versand-Dashboard
 
 * **Sichtbarkeit gelieferter Bestellungen**: Diese Funktion ermöglicht es dem Benutzer, die Dauer anzugeben, für die gelieferte Bestellungen sichtbar sind.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_6.png)
+<figure><img src="../../../../.gitbook/assets/dashboard-settings_6-de.png" alt="Der Abschnitt Versand-Dashboard mit der Sichtbarkeit gelieferter Bestellungen"><figcaption><p>Der Abschnitt Versand-Dashboard steuert die Sichtbarkeit gelieferter Bestellungen.</p></figcaption></figure>
 
 Diese Dashboard-Einstellungen sind entscheidend, um sicherzustellen, dass die DocBits-Plattform so reaktionsschnell und nützlich wie möglich ist, und den Benutzern ein leistungsstarkes Werkzeug zur Verfügung zu stellen, um Dokumentenverarbeitungsaktivitäten direkt vom Dashboard aus zu überwachen und zu verwalten.

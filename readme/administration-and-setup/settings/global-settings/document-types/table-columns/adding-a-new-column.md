@@ -1,63 +1,42 @@
-# Hinzufügen einer neuen Spalte
+# Neue Spalte hinzufügen
 
-## Das Hinzufügen einer neuen Spalte zu einer bestehenden Tabelle erfordert eine sorgfältige Planung und Ausführung, um sicherzustellen, dass die Datenintegrität gewahrt bleibt und die Anforderungen der Anwendung erfüllt werden.
+Fügen Sie eine Spalte hinzu, wenn pro Position ein Wert erfasst werden muss, den die Standardspalten nicht abdecken, zum Beispiel eine Kostenstelle, eine Projektnummer oder eine interne Artikelnummer.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_table_columns_settings_nav.png" alt="Docbits Table Columns Settings Nav"><figcaption><p>Einstellungen: Belegtypen</p></figcaption></figure>
+## Bevor Sie beginnen
 
-<figure><img src="../../../../../.gitbook/assets/docbits_table_columns_view.png" alt="Docbits Table Columns View"><figcaption><p>Tabellenspalten</p></figcaption></figure>
+* Entscheiden Sie, zu welcher **Tabelle** die Spalte gehört. Die meisten Dokumenttypen haben eine Tabelle (zum Beispiel `INVOICE_TABLE`). Ist die Liste leer, klicken Sie zuerst auf **Create new table**; der Dialog fragt nur nach einem Tabellennamen.
+* Entscheiden Sie den **Typ**: `AMOUNT` für Geldbeträge, `NUMBER` für Mengen, `DATE`, `BOOLEAN` für Ja/Nein, `CURRENCY` für einen ISO-Währungscode, `STRING` für alles andere. Der Typ kann nach dem Speichern nicht mehr geändert werden.
+* Prüfen Sie, ob bereits eine **Standardspalte** mit derselben Bedeutung existiert, aber ausgeblendet ist. Ausgeblendete Spalten stehen mit gesetztem Flag *Hidden* in der Liste; blenden Sie sie wieder ein, statt ein Duplikat anzulegen.
 
-**Hier sind die detaillierten Schritte zum Hinzufügen einer neuen Spalte:**
+## Schritte
 
-<figure><img src="../../../../../.gitbook/assets/docbits_save_group_details.png" alt="Docbits Save Group Details"><figcaption></figcaption></figure>
+1. Öffnen Sie **Settings → Global Settings → Document Types → Table Columns**.
+2. Klicken Sie auf **Add new table column**.
 
-**Anforderungsanalyse:**
+<figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog-de.png" alt="Dialog Add new table column mit Title, Is column required, Select column type und Select Table"><figcaption><p>Add new table column</p></figcaption></figure>
 
-* Überprüfen Sie die Anforderungen Ihrer Anwendung und identifizieren Sie den Zweck der neuen Spalte. Welche Art von Daten wird gespeichert? Wie wird diese Spalte in der Anwendung verwendet?
+3. Füllen Sie den Dialog aus:
 
-<figure><img src="../../../../../.gitbook/assets/docbits_enable_groups_permissions.png" alt="Docbits Enable Groups Permissions" width="375"><figcaption><p>Neue Tabellenspalte hinzufügen</p></figcaption></figure>
+| Feld | Was Sie eingeben |
+|---|---|
+| **Title** | Bezeichnung, die der Benutzer in der Validierungsmaske sieht, zum Beispiel `Cost Centre`. Nur Buchstaben und Zahlen. DocBits leitet daraus den technischen *Column name* ab (`COST_CENTRE`). |
+| **Is column required?** | Aktivieren, wenn das Dokument nicht freigegeben werden darf, solange die Spalte in einer beliebigen Zeile leer ist. |
+| **Select column type** | Siehe die Typenliste oben. |
+| **Select Table** | Die Tabelle, die die Spalte erhält. |
 
-**Wahl des richtigen Spaltentyps:**
+4. Klicken Sie auf **Proceed**. Die Spalte erscheint in der Liste, wobei *Read Only*, *Hidden* und *Use AI* nicht gesetzt sind. Schalten Sie diese Flags bei Bedarf in der Liste um, siehe [Spalten bearbeiten und löschen](editing-and-deleting-columns.md).
 
-* Wählen Sie den am besten geeigneten Spaltentyp basierend auf den Daten, die in der Spalte gespeichert werden sollen. Dies kann AMOUNT für Beträge, STRING für Zeichenfolgen, DATE für Daten usw. sein.
-* Die Wahl des richtigen Spaltentyps ist wichtig, um die Datenintegrität sicherzustellen und den Speicherplatz effizient zu nutzen.
+## Nach dem Hinzufügen
 
-<figure><img src="../../../../../.gitbook/assets/docbits_enable_groups_permissions_2.png" alt="Docbits Enable Groups Permissions 2" width="375"><figcaption></figcaption></figure>
+* Die Spalte ist bei **bestehenden Dokumenten leer**. Sie wird bei Dokumenten gefüllt, die nach der Änderung hochgeladen oder neu gestartet werden.
+* Bei Lieferanten mit **trainierten Regeln** öffnen Sie eines ihrer Dokumente im Tabellentraining und ordnen die neue Spalte zu, sonst bleibt die Spalte für diesen Lieferanten leer. Siehe [Tabellen und Spalten definieren](../../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
+* Bei der **KI-Tabellenextraktion** füllt die KI die Spalte, wenn der Wert auf dem Dokument erkennbar ist. Markieren Sie die Spalte mit *Use AI*, wenn der Lieferant trainierte Regeln hat, diese Spalte aber trotzdem von der KI stammen soll.
+* Fügen Sie die Spalte dem **Export-Mapping** hinzu, wenn das ERP sie erhalten soll, siehe [Export](../../../document-processing/export.md).
 
-**Wahl der richtigen Tabelle:**
+## Meldungen
 
-* Um den korrekten Spaltentyp in einer bestimmten Tabelle, wie z. B. der Rechnungstabelle, auszuwählen, ist es wichtig, die spezifischen Anforderungen der in dieser Tabelle zu speichernden Daten zu berücksichtigen.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_subtype_actions_fields.png" alt="Docbits Subtype Actions Fields" width="375"><figcaption></figcaption></figure>
-
-
-
-**Entscheidung über die Notwendigkeit der Spalte:**
-
-* Überlegen Sie, ob die neue Spalte erforderlich ist oder ob sie NULL-Werte zulassen soll. Wenn die Spalte obligatorisch ist, sollte sie als NOT NULL markiert werden, um sicherzustellen, dass wichtige Daten nicht fehlen.
-* Überlegen Sie auch, ob die Spalte in Zukunft zu einem Pflichtfeld für Ihre Anwendung werden könnte.
-
-
-
-**Datenbanksicherung:**
-
-* Bevor Sie die neue Spalte hinzufügen, erstellen Sie eine Sicherungskopie Ihrer Datenbank, um sicherzustellen, dass Sie im Falle von Problemen auf eine funktionierende Version zurückgreifen können.
-
-
-
-**Ausführen der SQL-Anweisung:**
-
-*   Verwenden Sie die SQL-Anweisung ALTER TABLE, um die neue Spalte hinzuzufügen. Die genaue Syntax hängt von der verwendeten Datenbankplattform ab, aber im Allgemeinen sieht die SQL-Anweisung so aus:
-
-    <figure><img src="../../../../../.gitbook/assets/docbits_new_group_form.png" alt="Docbits New Group Form"><figcaption></figcaption></figure>
-
-    Ersetzen Sie table_name durch den Namen Ihrer Tabelle, new_column_name durch den Namen der neuen Spalte und data_type durch den von Ihnen gewählten Spaltentyp. Das Schlüsselwort [NOT NULL] gibt an, ob die Spalte obligatorisch ist.
-
-
-
-**Testen und Validieren:**
-
-* Nachdem die neue Spalte hinzugefügt wurde, überprüfen Sie gründlich, ob Ihre Anwendung ordnungsgemäß funktioniert. Führen Sie Tests durch, um sicherzustellen, dass Daten korrekt gespeichert und abgerufen werden und dass die neue Spalte wie erwartet funktioniert.
-
-
-
-Durch sorgfältiges Befolgen dieser Schritte können Sie erfolgreich und effektiv eine neue Spalte zu Ihrer Datenbanktabelle hinzufügen, den richtigen Spaltentyp wählen und sicherstellen, dass die Spalte erforderlich ist, wenn sie benötigt wird.
+| Meldung | Bedeutung |
+|---|---|
+| *Column name already exists* | Eine Spalte mit diesem technischen Namen ist bereits in der Tabelle vorhanden. Wählen Sie einen anderen Titel. |
+| *Column name already exists – Please activate it in Table Column settings* | Eine ausgeblendete Standardspalte hat diesen Namen. Entfernen Sie deren Flag *Hidden*, statt eine neue Spalte anzulegen. |
+| *No table exists. Please create table before creating columns.* | Der Dokumenttyp hat noch keine Tabelle: Klicken Sie zuerst auf **Create new table**. |

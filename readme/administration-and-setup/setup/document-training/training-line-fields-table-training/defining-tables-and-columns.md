@@ -1,51 +1,74 @@
-# Definieren von Tabellen und Spalten
+# Tabellen und Spalten definieren
 
-## Tabellen definieren
+Mit dieser Anleitung definieren Sie Tabellen und Spalten für die Extraktion von Positionszeilen in DocBits manuell. Das ist besonders nützlich, wenn die automatische Erkennung die Tabellenstruktur nicht vollständig erfasst oder wenn Sie eigene Felder hinzufügen möchten.
 
-Um Tabellen und Spalten in einem Dokument zu definieren, importieren Sie bitte ein Dokument, öffnen Sie es und gehen Sie zur Tabellenextraktionsansicht wie bereits bekannt (über "Zeilenpositionen").
+### 1. Ansicht zur Tabellenextraktion öffnen
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_1.png)
+Öffnen Sie Ihr Dokument in DocBits und klicken Sie auf die Schaltfläche **„Table Training“**, um die Ansicht zur Tabellenextraktion aufzurufen.
 
-Sie gelangen auf den folgenden Bildschirm, auf dem Sie den Trainingsmodus aktivieren können:
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_1.png" alt="" width="563"><figcaption></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_2.png)
+### 2. Trainingsmodus aktivieren
 
-Über die Schaltfläche "Bearbeiten" wird der Tabellenauswahlmodus aktiviert und Sie können das auf der linken Seite angezeigte Dokument bearbeiten:
+Um Tabellen und Spalten manuell zu definieren oder zu ändern, klicken Sie auf **„TRAINING MODE“**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_3.png)
+<div align="center"><figure><img src="../../../../.gitbook/assets/define_tables_and_columns_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-Im Allgemeinen können Sie jetzt die Funktion zur automatischen Erkennung von Tabellen verwenden, und das System wird automatisch die Tabellen im Dokument definieren:
+### 3. Tabellenbereich definieren
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_4.png)
+Nach dem Wechsel in den Trainingsmodus können Sie festlegen, wo sich die Tabelle im Dokument befindet. Dafür stehen zwei Möglichkeiten zur Verfügung:
 
-Wenn das System die Tabellen nicht automatisch finden kann, können Sie die Tabellen im Dokument manuell definieren, wie im folgenden Video gezeigt:
+#### Option 1: Automatische Erkennung verwenden
 
-## Spalten definieren
+Klicken Sie auf die Schaltfläche **„Auto-Detect Tables“**, damit DocBits versucht, den Tabellenbereich selbstständig zu erkennen.
 
-Sobald die Tabellen definiert sind, können Sie die Spalten manuell über die folgende Schaltfläche definieren:
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_3.png" alt="" width="375"><figcaption></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_5.png)
+Wenn die Erkennung erfolgreich ist, wird der Tabellenumriss automatisch angezeigt. Anschließend können Sie mit der Definition der Spalten fortfahren.
 
-Definieren und sortieren Sie die Spalten per Drag & Drop im Dokument. Wiederholen Sie dies auch für die Tabellen auf den anderen Seiten. Alternativ können Sie, wenn die Tabellen auf jeder Seite gleich sind, die folgende Schaltfläche verwenden, um dieselbe Spalte für alle im Dokument definierten Tabellen zu verwenden. Diese Funktion kopiert die von Ihnen definierten Spalten auch auf alle anderen Seiten:
+#### Option 2: Tabelle manuell definieren
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_6.png)
+Wenn die automatische Erkennung fehlschlägt oder ungenau ist, können Sie die Tabelle manuell definieren:
 
-Wenn das Dokument sehr verwirrend ist, kann es mit der "Vergrößern" und "Verkleinern" Funktion gezoomt werden. Dies ist hilfreich, wenn beispielsweise viele Informationen eng beieinander liegen und es schwierig macht, die Spalten zu definieren:
+1. Klicken Sie auf die Schaltfläche **„Edit“**, um den Tabellenauswahlmodus zu aktivieren.
+2. Zeichnen Sie in der Dokumentansicht auf der linken Seite ein Rechteck um den Tabellenbereich.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_7.png)
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_4.png" alt="" width="563"><figcaption></figcaption></figure>
 
-Wenn Sie eine Spalte versehentlich definiert haben, kann sie durch Klicken darauf ausgewählt und über die folgende Schaltfläche gelöscht werden:
+### 4. Spalten hinzufügen und definieren
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_8.png)
+Sobald die Tabellen definiert sind, können Sie die Spalten über die folgende Schaltfläche manuell definieren:\
 
-Hinweis: Die Schaltfläche ist nur sichtbar, wenn die Spalte ausgewählt ist.
 
-Wenn Sie alle Tabellen und Spalten in Ihrem Dokument definiert haben, verwenden Sie die Schaltfläche "Speichern", um Ihre Änderungen zu aktivieren und die Daten aus dem Dokument zu extrahieren:
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_5.png" alt="" width="563"><figcaption></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_9.png)
+Definieren und sortieren Sie die Spalten per Drag-and-drop im Dokument. Wiederholen Sie dies auch für die Tabellen auf den anderen Seiten. Alternativ können Sie, wenn die Tabellen auf jeder Seite gleich aufgebaut sind, die folgende Schaltfläche verwenden, um dieselben Spalten für alle im Dokument definierten Tabellen zu übernehmen. Diese Funktion kopiert die von Ihnen definierten Spalten auch auf alle anderen Seiten:
+
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_6.png" alt="" width="563"><figcaption></figcaption></figure>
+
+Verwenden Sie die **Zoom**-Funktion, um Spalten in unübersichtlichen oder komplexen Dokumenten besser zu definieren, zum Beispiel wenn viele Informationen dicht beieinander liegen und die Definition der Spalten dadurch erschwert wird:
+
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_7.png" alt="" width="277"><figcaption></figcaption></figure>
+
+Wenn Sie versehentlich eine Spalte definiert haben, können Sie sie durch Anklicken auswählen und über die folgende Schaltfläche löschen:
+
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_9.png" alt="" width="563"><figcaption></figcaption></figure>
+
+<mark style="color:red;">**Hinweis**</mark>: Die Schaltfläche ist nur sichtbar, wenn die Spalte ausgewählt ist.
+
+Wenn Sie alle Tabellen und alle Spalten in Ihrem Dokument definiert haben, klicken Sie auf die Schaltfläche „Save“, um Ihre Änderungen zu aktivieren und die Daten aus dem Dokument zu extrahieren:
+
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_8.png" alt="" width="563"><figcaption></figcaption></figure>
 
 Die Daten aller definierten Bereiche werden extrahiert und auf der rechten Seite angezeigt:
 
-&#x20;Im nächsten Abschnitt erfahren Sie, wie Sie die extrahierten Daten anpassen können.
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_10.png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_10.png" alt="" width="563"><figcaption></figcaption></figure>
+### 6. Speichern und extrahieren
+
+Klicken Sie auf **„Save Rules“**, sobald alle Tabellen und Spalten definiert sind.
+
+* Dadurch weiß DocBits, wo sich die Tabellendaten für diesen bestimmten Lieferanten befinden.
+* Wenn das nächste Mal ein Dokument desselben Lieferanten hochgeladen wird, extrahiert DocBits die Tabelle automatisch anhand der gespeicherten Regeln.
+
+<mark style="color:red;">**Hinweis**</mark>: Dieses Training gilt nur für den jeweiligen Lieferanten. Es wird nicht auf Dokumente anderer Lieferanten angewendet.

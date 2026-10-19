@@ -60,7 +60,9 @@ Wenn Sie mehr Keys haben, als auf eine Seite passen, verwenden Sie die Blättere
 5. Haken Sie **I have copied and saved this key** an und klicken Sie auf **Done**.
 
 {% hint style="danger" %}
-**Der vollständige Key wird nur ein einziges Mal angezeigt.** DocBits speichert ihn in einer verschlüsselten Form, die sich nicht in das Original zurückverwandeln lässt — niemand kann ihn danach noch nachschlagen, weder Ihre Administratoren noch der DocBits-Support. Wenn Sie ihn verlieren, widerrufen Sie den Key und erstellen einen neuen.
+**Der vollständige Key wird nur ein einziges Mal angezeigt.** DocBits speichert einen Einweg-Hash des Schlüssels und ein kurzes Präfix zur Identifizierung. Weder Ihre Administratoren noch der DocBits-Support können den ursprünglichen vollständigen Schlüssel aus diesem Hash abrufen. Wenn Sie ihn verlieren, widerrufen Sie ihn und erstellen Sie einen neuen.
 {% endhint %}
 
 Behandeln Sie den Key wie ein Passwort. Wer ihn hat, kann mit den Dokumenten und Daten Ihrer Organisation arbeiten.
+
+Siehe [Sichere Speicherung von Zugangsdaten](../../../../security/secure-storage-of-credentials.md).

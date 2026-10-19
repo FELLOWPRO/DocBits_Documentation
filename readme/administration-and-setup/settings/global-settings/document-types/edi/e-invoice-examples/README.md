@@ -32,8 +32,6 @@ Wie die Datei exportiert wird:
 
 * Beispieldatei:
 
-{% file src="../../../../../../.gitbook/assets/Xrechung_2-1_example.xml" %}
-
 Wie die Datei exportiert wird:
 
 {% content-ref url="xrechnung-2.1.md" %}

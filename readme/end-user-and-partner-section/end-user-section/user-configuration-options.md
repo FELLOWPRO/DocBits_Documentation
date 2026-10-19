@@ -32,7 +32,7 @@ In diesem Abschnitt können Sie die folgenden Präferenzen anpassen:
 * **Schriftgröße:** Passen Sie die Textgröße für bessere Lesbarkeit an.
 * **Dual Monitor Mode:** Aktivieren Sie diese Funktion, wenn Sie zwei Monitore verwenden.
 
-<figure><img src="../../.gitbook/assets/user-config3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/user-config3-de.png" alt=""><figcaption></figcaption></figure>
 
 **Ausloggen**
 

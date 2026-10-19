@@ -1,187 +1,238 @@
-# Classification And Extraction
+# Klassifizierung und Extraktion
 
-## Overview
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction-de.png" alt="Klassifizierung und Extraktion"><figcaption><p>Seite „Klassifizierung und Extraktion“</p></figcaption></figure>
 
-In the **Classification and Extraction** settings, you can:
+## Übersicht
 
-* Enable **Document Splitting** based on QR codes
-* Configure **amount formatting**
-* Set up **table extraction**
-* Toggle processing of unsupported **ZUGFeRD** files
-* Define special classification rules
-* Monitor Custom-Trained **AI Models** used in the classification process
+In den Einstellungen für **Classification and Extraction** (Klassifizierung und Extraktion) können Sie:
 
-This page provides a detailed explanation of all available settings.
+* die **Dokumentenaufteilung** (Document Splitting) auf Basis von QR-Codes aktivieren
+* die **Betragsformatierung** konfigurieren
+* die **Tabellenextraktion** einrichten
+* die Verarbeitung nicht unterstützter **ZUGFeRD**-Dateien ein- oder ausschalten
+* spezielle Klassifizierungsregeln definieren
+* die individuell trainierten **KI-Modelle** überwachen, die im Klassifizierungsprozess verwendet werden
 
-## **Accessing Classification and Extraction Settings**
+Diese Seite erklärt alle verfügbaren Einstellungen im Detail.
 
-To access the **Classification and Extraction** settings, go to:\
+## **Zugriff auf die Einstellungen für Klassifizierung und Extraktion**
+
+Um die Einstellungen für **Classification and Extraction** zu öffnen, gehen Sie zu:\
 **Settings → Document Processing → Classification and Extraction**
 
 <figure><img src="../../../../.gitbook/assets/settings_classification_and_extraction.png" alt=""><figcaption></figcaption></figure>
 
-## Document Splitting
+## Dokumentenaufteilung
 
-In the **Document Splitting** section, you can configure whether an uploaded document should be split into multiple documents whenever a **barcode** appears on one of its pages.
+Im Abschnitt **Document Splitting** legen Sie fest, ob ein hochgeladenes Dokument in mehrere Dokumente aufgeteilt werden soll, sobald auf einer seiner Seiten ein **Barcode** erscheint.
 
-To activate this feature:
+So aktivieren Sie diese Funktion:
 
-1. Go to the **Document Splitting** section.
-2.  Open the dropdown menu.
+1. Gehen Sie zum Abschnitt **Document Splitting**.
+2.  Öffnen Sie das Dropdown-Menü.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt=""><figcaption></figcaption></figure>
-3.  Select **Split by Barcode/QR Code**.
+3.  Wählen Sie **Split by Barcode/QR Code**.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt=""><figcaption></figcaption></figure>
 
-You will then have the option to:
+Anschließend können Sie:
 
-* Select one or more barcode types to be detected.
-*   Specify a regex pattern that the barcode must match in order to trigger document splitting.
+* einen oder mehrere Barcode-Typen auswählen, die erkannt werden sollen.
+*   ein Regex-Muster angeben, dem der Barcode entsprechen muss, damit die Dokumentenaufteilung ausgelöst wird.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt=""><figcaption></figcaption></figure>
 
-## Amount Formatting
+## Betragsformatierung
 
-In the **Amount Formatting** section, you have two options:
+Im Abschnitt **Amount Formatting** stehen Ihnen zwei Optionen zur Verfügung:
 
 * **Allow Rounding During Amount Comparison:**\
-  If enabled, a tolerance of ±0.5 is allowed during amount comparison.\
-  If disabled, a default tolerance of ±0.05 applies.
+  Wenn aktiviert, ist beim Betragsvergleich eine Toleranz von ±0,5 zulässig.\
+  Wenn deaktiviert, gilt eine Standardtoleranz von ±0,05.
 * **Require Exact Match for Amount Comparison:**\
-  If enabled, amounts must match exactly with zero tolerance.\
-  If disabled, a tolerance of ±0.05 is allowed.
+  Wenn aktiviert, müssen die Beträge ohne jede Toleranz exakt übereinstimmen.\
+  Wenn deaktiviert, ist eine Toleranz von ±0,05 zulässig.
 
-<mark style="color:red;">**Note**</mark>: Only one of these settings can be active at a time.
+<mark style="color:red;">**Hinweis**</mark>: Es kann immer nur eine dieser Einstellungen aktiv sein.
 
-## Table Extraction
+## Tabellenextraktion
 
-You can extract tables from documents by enabling either **Table Extraction** or **AI Table Extraction**. A trained table—whether AI-based or manual—will always be linked to a specific supplier.
+{% hint style="info" %}
+**Voraussetzungen für eine funktionierende Tabellenextraktion**
 
-**Table Extraction:** Activates manual **table extraction**. Tables must be trained manually.\
-Learn more about manual training [here](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
+* Der Dokumenttyp hat **Tabellenspalten** (Settings → Global Settings → Document Types → [Table Columns](../../global-settings/document-types/table-columns/README.md)). Ohne Spalten gibt es nichts, in das extrahiert werden könnte.
+* **Table Extraction** oder **AI Table Extraction** ist unten für die gesamte Organisation eingeschaltet.
+* Das Dokument enthält lesbaren Text: OCR wurde ausgeführt, oder bei digital erzeugten PDFs wird E-Text verwendet ([OCR-Einstellungen](../ocr-settings.md)).
+* Training und KI-Modelle gelten **pro Lieferant**. Eine trainierte Tabelle wird nur auf Dokumente des Lieferanten angewendet, für den sie trainiert wurde.
+{% endhint %}
 
-**AI Table Extraction:** Uses AI to automatically extract tables. If the results are not accurate enough, it's recommended to switch to manual **Table Extraction** for better control and training.
+Sie können Tabellen aus Dokumenten extrahieren, indem Sie entweder **Table Extraction** oder **AI Table Extraction** aktivieren. Eine trainierte Tabelle (ob KI-basiert oder manuell) ist immer an einen bestimmten Lieferanten gebunden.
 
-**Table Extraction for Costing Element:** When enabled, DocBits can extract costing elements from tables at the line level and classify them accordingly.\
-Detailed explanation available [here](table-extraction-for-costing-element.md).
+**Table Extraction:** Aktiviert die regelbasierte Tabellenextraktion. Tabellen werden pro Lieferant im Validierungsbildschirm trainiert (*Go to table extraction view*).\
+Mehr zum Training erfahren Sie [hier](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
 
-**Auto Extract Tax Code:** When enabled, the system automatically fills the **Tax Code** field on the Validation Screen—provided that a tax code field is configured.\
-More information on this setting [here](auto-extract-tax-code.md).
+**AI Table Extraction:** Nutzt KI, um die Tabelle beliebiger Lieferanten ohne Training zu extrahieren. Wenn die Ergebnisse für einen Lieferanten nicht genau genug sind, trainieren Sie die Tabelle dieses Lieferanten; die gespeicherten Regeln haben dann für diesen Lieferanten Vorrang vor der KI.
 
-**AI Model:** Allows you to specify which **AI model** is used for table extraction.\
-You’ll also see a table showing:
+**Use Table Extraction Vision (AI):** Die KI liest das Seitenbild statt der Textebene. Hilft bei gescannten Dokumenten und Tabellen ohne klare Textstruktur; langsamer.
 
-* Which **suppliers** are using which AI model
-* Whether they use E-Text
-* Options to delete an entry or reset the training data
+**Use Structured Extraction (AI):** Die KI liefert die Tabelle in einer festen Struktur, die direkt auf die konfigurierten Tabellenspalten abgebildet wird. Empfohlen, wenn die Spaltenüberschriften auf den Dokumenten stark variieren.
 
-This setting is explained in detail [here](ai-model.md).
+**Table Extraction for Costing Element:** Wenn aktiviert, kann DocBits Kostenelemente aus Tabellen auf Positionsebene extrahieren und entsprechend klassifizieren.\
+Eine ausführliche Erklärung finden Sie [hier](table-extraction-for-costing-element.md).
 
-## Electronic Document
+**Auto Extract Tax Code:** Wenn aktiviert, füllt das System das Feld **Tax Code** im Validierungsbildschirm automatisch aus, sofern ein Steuercode-Feld konfiguriert ist.\
+Weitere Informationen zu dieser Einstellung finden Sie [hier](auto-extract-tax-code.md).
 
-**Process Unsupported ZUGFeRD PDF:** If enabled, unsupported **ZUGFeRD** versions will be processed as standard PDFs, and the embedded XML will be ignored.
+**Save extraction rules (Admin only):** Nur Administratoren können im Tabellentraining auf *Save Rules* klicken. Schalten Sie diese Einstellung ein, wenn Benutzer immer wieder Regeln speichern, welche die Extraktion eines Lieferanten beeinträchtigen.
 
-The list of supported **ZUGFeRD** versions can be found [here](../../global-settings/document-types/edi/zugferd-1.0-2.1-and-2.3.md).
+**AI Model:** Wählt die KI-Stufe für die Tabellenextraktion: **Fast** (Standard), **Full** (höchste Genauigkeit, langsamer) oder **Nexus** (optionale dritte Stufe). Die Tabelle unterhalb der Auswahl zeigt:
 
-## **Classification Rules**
+* welche **Lieferanten** welches KI-Modell verwenden
+* ob sie E-Text verwenden
+* Optionen, um einen Eintrag zu löschen oder die Trainingsdaten zurückzusetzen
 
-In the **Classification Rules** section, you can define specific **regex** patterns and criteria to help the system automatically classify documents during processing.
+Diese Einstellung wird [hier](ai-model.md) ausführlich erklärt.
 
-To access this section, click the **Classification Rules** tab at the top of the page.
+### Warum sieht die Tabelle pro Lieferant anders aus?
+
+Alles, was DocBits über eine Tabelle lernt, wird **pro Lieferant** gespeichert:
+
+* **Gespeicherte Regeln** (Tabellentraining): Position der Tabelle und Zuordnung ihrer Spalten im Layout dieses Lieferanten.
+* **KI-Tabellen-Tags und Formatierungsregeln**: Hinweise, die der Benutzer für die KI-Tabelle dieses Lieferanten gespeichert hat.
+* **Lieferantenspezifisches KI-Modell**: die Stufe, die für diesen Lieferanten unter *More settings* im Validierungsbildschirm gewählt wurde.
+
+Lieferant A mit gespeicherten Regeln zeigt daher im Tab *Extracted table* des Validierungsbildschirms eine deterministische Tabelle, während Lieferant B ohne Regeln die *AI Extracted table* erhält. Damit sich Lieferant B wie A verhält, trainieren Sie die Tabelle von B einmal. Um einen Lieferanten zurückzusetzen, löschen Sie seine Regeln im Validierungsbildschirm oder setzen Sie seine Trainingsdaten in der Tabelle AI Model zurück.
+
+### Preference-Schlüssel
+
+Jeder Schalter in diesem Abschnitt wird als Organisations-Preference gespeichert. Verwenden Sie den Schlüssel, wenn Sie den Wert über die API (`/preferences/set_preference`), ein Skript oder den DocBits MCP (`get_preference` / `set_preference`) setzen.
+
+| Einstellung (UI-Bezeichnung) | Preference-Schlüssel | Werte |
+|---|---|---|
+| Table Extraction | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
+| AI Table extraction | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
+| Use Table Extraction Vision (AI) | `TABLE_EXTRACTION_USE_VISION` | `true` / `false` |
+| Use Structured Extraction (AI) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
+| Table extraction for costing element | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
+| Auto extract tax code | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
+| Save extraction rules (Admin only) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
+| AI Model | `AI_MODEL` | `gpt-5.4-mini` (Fast), `gpt-5.5` (Full), `qwen3.8-max` (Nexus) |
+| Table extraction version (Bestätigungsdialog) | `TBL_EXT_VERSION` | Versionszeichenfolge |
+| OCR Settings → Use AI data for tables if available | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
+| OCR Settings → Use E-Text if available | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
+
+Hinweise:
+
+* Boolesche Preferences werden als Zeichenfolgen `true` / `false` gespeichert; ein Schlüssel, der nie gesetzt wurde, gilt als `false`. Wenn Sie `1` oder `0` senden, speichert DocBits `true` / `false`.
+* Ein nicht gesetzter `AI_MODEL` bedeutet **Fast**.
+* Eine Änderung eines Schlüssels wirkt sich auf Dokumente aus, die danach verarbeitet werden. Starten Sie ein Dokument neu, um es mit der neuen Einstellung erneut zu extrahieren.
+* Lieferantenspezifische Auswahlen (E-Text, KI-Modell, gespeicherte Regeln) sind keine Organisations-Preferences; sie werden im Validierungsbildschirm unter *More settings* für ein Dokument dieses Lieferanten festgelegt.
+
+## Elektronisches Dokument
+
+**Process Unsupported ZUGFeRD PDF:** Wenn aktiviert, werden nicht unterstützte **ZUGFeRD**-Versionen als Standard-PDFs verarbeitet, und das eingebettete XML wird ignoriert.
+
+Die Liste der unterstützten **ZUGFeRD**-Versionen finden Sie [hier](../../global-settings/document-types/edi/zugferd/README.md).
+
+## **Klassifizierungsregeln**
+
+Im Abschnitt **Classification Rules** können Sie bestimmte **Regex**-Muster und Kriterien definieren, die dem System helfen, Dokumente während der Verarbeitung automatisch zu klassifizieren.
+
+Um diesen Abschnitt zu öffnen, klicken Sie oben auf der Seite auf den Tab **Classification Rules**.
 
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt=""><figcaption></figcaption></figure>
 
-### **Add a New Classification Rule**
+### **Neue Klassifizierungsregel hinzufügen**
 
-To create a new rule:
+So erstellen Sie eine neue Regel:
 
-1.  Click **Add** in the top-right corner.
+1.  Klicken Sie oben rechts auf **Add**.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt=""><figcaption></figcaption></figure>
-2. Fill in the following fields:
-   * **Pattern**: The regex pattern the system should search for to trigger classification.
-   * **Type**: Where the pattern should be searched (e.g., **Barcode**).
-   * **Sub Organization** _(optional)_: Specify which sub organization the rule applies to.
-   * **Document Type**: Define the document type to assign when the pattern is matched.
-   *   **Sub Document Type** _(optional)_: Specify a sub type for more detailed classification.
+2. Füllen Sie die folgenden Felder aus:
+   * **Pattern**: Das Regex-Muster, nach dem das System suchen soll, um die Klassifizierung auszulösen.
+   * **Type**: Wo nach dem Muster gesucht werden soll (z. B. **Barcode**).
+   * **Sub Organization** _(optional)_: Legen Sie fest, für welche Unterorganisation die Regel gilt.
+   * **Document Type**: Legen Sie den Dokumenttyp fest, der zugewiesen wird, wenn das Muster zutrifft.
+   *   **Sub Document Type** _(optional)_: Geben Sie einen Untertyp für eine detailliertere Klassifizierung an.
 
        <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt=""><figcaption></figcaption></figure>
-3.  Click **Save** to save your classification rule.
+3.  Klicken Sie auf **Save**, um Ihre Klassifizierungsregel zu speichern.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
 
-### **Edit a Classification Rule**
+### **Klassifizierungsregel bearbeiten**
 
-To edit an existing rule:
+So bearbeiten Sie eine vorhandene Regel:
 
-1.  Click the three dots in the **Actions** column.
+1.  Klicken Sie in der Spalte **Actions** auf die drei Punkte.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
-2.  Select **Edit**.
+2.  Wählen Sie **Edit**.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt=""><figcaption></figcaption></figure>
-3. Make your desired changes.
-4.  Click **Save** to apply the updates.
+3. Nehmen Sie die gewünschten Änderungen vor.
+4.  Klicken Sie auf **Save**, um die Änderungen zu übernehmen.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
 
-### **Delete a Classification Rule**
+### **Klassifizierungsregel löschen**
 
-To delete a rule:
+So löschen Sie eine Regel:
 
-1.  Click the three dots in the **Actions** column.
+1.  Klicken Sie in der Spalte **Actions** auf die drei Punkte.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
-2.  Select **Delete**.
+2.  Wählen Sie **Delete**.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt=""><figcaption></figcaption></figure>
 
-## AI Models
+## KI-Modelle
 
-The **AI Models** section displays all custom-trained models that have been specifically fine-tuned for your needs.
+Der Abschnitt **AI Models** zeigt alle individuell trainierten Modelle an, die gezielt auf Ihre Anforderungen abgestimmt wurden.
 
-### Accessing the AI Models Section
+### Zugriff auf den Abschnitt „AI Models“
 
-To open this section, click the **AI Models** tab located at the top of the page.
+Um diesen Abschnitt zu öffnen, klicken Sie oben auf der Seite auf den Tab **AI Models**.
 
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt=""><figcaption></figcaption></figure>
 
-### Model Categories
+### Modellkategorien
 
-Models are organized into categories. Below each category name, the number of models it contains is shown.\
-Click on a category to view its details.
+Die Modelle sind in Kategorien organisiert. Unter jedem Kategorienamen wird die Anzahl der enthaltenen Modelle angezeigt.\
+Klicken Sie auf eine Kategorie, um deren Details anzuzeigen.
 
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt=""><figcaption></figcaption></figure>
 
-At the top of the selected category page, you’ll see key information about each model:
+Oben auf der Seite der ausgewählten Kategorie sehen Sie wichtige Informationen zu jedem Modell:
 
-* **Type**: The type of model.
-* **First Page Only**: Indicates whether the model processes only the first page of a document.
-* **Version**: The version number of the model.
+* **Type**: Der Typ des Modells.
+* **First Page Only**: Gibt an, ob das Modell nur die erste Seite eines Dokuments verarbeitet.
+* **Version**: Die Versionsnummer des Modells.
 
-### Model Table
+### Modelltabelle
 
-All models within a category are listed in a table, which includes the following information:
+Alle Modelle einer Kategorie werden in einer Tabelle aufgelistet, die folgende Informationen enthält:
 
-* **Name**: The name of the model.
-* **Next Model**: The model that will further process the output of the current model.
-* **Document Type**: The primary document type assigned by the model during classification.
-* **Document Sub Types**: The sub types into which the document is further classified.
-* **Priority**: The priority level that determines the model’s position in the classification queue.
+* **Name**: Der Name des Modells.
+* **Next Model**: Das Modell, das die Ausgabe des aktuellen Modells weiterverarbeitet.
+* **Document Type**: Der primäre Dokumenttyp, den das Modell bei der Klassifizierung zuweist.
+* **Document Sub Types**: Die Untertypen, in die das Dokument weiter klassifiziert wird.
+* **Priority**: Die Prioritätsstufe, die die Position des Modells in der Klassifizierungswarteschlange bestimmt.
 
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt=""><figcaption></figcaption></figure>
 
-### Editing a Model
+### Ein Modell bearbeiten
 
-To edit a model:
+So bearbeiten Sie ein Modell:
 
-1.  Click the pen icon in the **Actions** column next to the model you want to edit.
+1.  Klicken Sie in der Spalte **Actions** auf das Stiftsymbol neben dem Modell, das Sie bearbeiten möchten.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt=""><figcaption></figcaption></figure>
-2. Update the available fields:
-   * **Next Model**: Select the model that should process the output from the current model.
-   * **Document Type**: Choose the document type the model should classify the input as.
-3.  Click **Save** to apply your changes.
+2. Aktualisieren Sie die verfügbaren Felder:
+   * **Next Model**: Wählen Sie das Modell, das die Ausgabe des aktuellen Modells verarbeiten soll.
+   * **Document Type**: Wählen Sie den Dokumenttyp, als den das Modell die Eingabe klassifizieren soll.
+3.  Klicken Sie auf **Save**, um Ihre Änderungen zu übernehmen.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt=""><figcaption></figcaption></figure>

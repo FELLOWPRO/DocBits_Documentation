@@ -1,0 +1,36 @@
+---
+description: FACTURAE 3.2 elektronische Dokumentenunterstützung in DocBits
+---
+
+# 🇪🇸 FACTURAE 3.2
+
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Spanien](countries/spain.md). Prüfen Sie den Namespace und die Schemaversion. Die Extraktion einer signierten XML-Datei bestätigt für sich allein weder ihre Signatur noch ihre Annahme durch FACe.
+{% endhint %}
+
+| Eigenschaft | Wert |
+| ----------- | ---- |
+| **Land / Region** | Spanien |
+| **Dokumenttypen** | Rechnung, Gutschrift, Berichtigungsrechnung |
+| **Format** | XML |
+| **Standard** | Facturae 3.2 |
+
+Facturae 3.2 ist eine weit verbreitete Version des spanischen E-Rechnungsstandards. Sie definiert die XML-Struktur für elektronische Rechnungen, einschließlich Verkäufer-/Käuferidentifikation, Rechnungspositionen, Steuerangaben (IVA) und Anforderungen an die digitale Signatur.
+
+## Unterstützungsstatus
+
+| Komponente | Status |
+| ---------- | ------ |
+| Vorschau | ✅ Unterstützt |
+| Feldextraktion | ✅ Unterstützt |
+| Transformation | ✅ Unterstützt |
+
+## Standard-Vorschau
+
+<figure><img src="../../../../../../.gitbook/assets/spain-facturae-preview.png" alt="Vorschau einer Facturae-3.2-Rechnung in DocBits"><figcaption><p>Standard-DocBits-Vorschau für eine spanische Facturae-3.2-Rechnung</p></figcaption></figure>
+
+## Verwandte Themen
+
+* [Supported Electronic Documents](./)

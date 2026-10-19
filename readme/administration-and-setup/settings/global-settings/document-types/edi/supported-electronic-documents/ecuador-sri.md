@@ -4,6 +4,12 @@ description: Ecuador SRI (Factura Electrónica, SRI 1.0.0 – 2.1.0) Unterstütz
 
 # 🇪🇨 Ecuador SRI
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Ecuador](countries/ecuador.md). Für den Gutschrift-Klassifizierungseintrag ist im geprüften Status kein eigenes Extraktionspaket ausgewiesen. Prüfen Sie die tatsächlich verwendete Zuordnung und den Typ des Quelldokuments.
+{% endhint %}
+
 | Eigenschaft | Wert |
 |-------------|------|
 | **Land / Region** | Ecuador |

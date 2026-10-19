@@ -1,4 +1,4 @@
-# NOVA – Versión principal 4 de noviembre de 2026
+# NOVA – Versión menor 4 de noviembre de 2026
 
 **Disponibilidad de NOVA R1.1:** Disponible en el entorno de pruebas desde el **16 de octubre de 2026**. El lanzamiento en producción está previsto para el **4 de noviembre de 2026**.
 

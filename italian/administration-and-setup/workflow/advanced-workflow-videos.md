@@ -4,13 +4,13 @@ description: "Cinque capitoli in italiano sui workflow avanzati e sui log, con s
 
 # Video di Advanced Workflow
 
-Tutti e cinque i capitoli includono una narrazione in italiano, un file di sottotitoli e una trascrizione. Il primo mostra la creazione del workflow di esempio passo dopo passo; gli altri approfondiscono i singoli argomenti.
+Impara a creare, provare e diagnosticare un workflow avanzato. I cinque capitoli hanno narrazione in italiano.
 
 I primi tre capitoli mostrano il vero designer DocBits con bozze dimostrative. L’anteprima della ricerca mostra l’elaborazione reale dei documenti e i comandi dei registri con risultati vuoti. Il capitolo di diagnosi usa ancora diagrammi didattici identificati come illustrazioni.
 
 Ogni video include sottotitoli WebVTT e una trascrizione espandibile.
 
-1. [Costruttore e canvas](#builder-and-canvas) · 4:57
+1. [Costruttore e canvas](#builder-and-canvas) · 1:52
 2. [Nodi e percorsi](#nodes-and-routes) · 1:53
 3. [Variabili, test e attivazione](#variables-tests-and-activation) · 1:53
 4. [Trovare l’esecuzione pertinente](#find-the-relevant-execution) · 1:53
@@ -18,67 +18,36 @@ Ogni video include sottotitoli WebVTT e una trascrizione espandibile.
 
 ## Costruttore e canvas {#builder-and-canvas}
 
-Conosci Roberto e segui la sua spiegazione nell’interfaccia reale di DocBits in italiano. Controlla la dashboard, l’elenco dei workflow e la licenza, poi apre una bozza non salvata nel designer. Passo dopo passo assegna un nome al workflow, configura il controllo dell’importo e due azioni, dispone le schede e collega entrambi i percorsi. Mostra poi come preparare i test con un documento o dati personalizzati. L’account dimostrativo non dispone di un abbonamento Advanced Workflow e blocca la validazione; la bozza rimane non salvata e inattiva.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/it.mp4" %}
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/it.mp4" %}
-
-[Apri video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/it.mp4) · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/it.vtt) · [Trascrizione (testo)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/it.txt) · 4:57
-
-| In questo video | Inizio |
-| --- | --- |
-| Presentazione dell’amministratore | [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/it.mp4#t=0) |
-| Controllare l’accesso | [0:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/it.mp4#t=5) |
-| Dare un nome al workflow | [0:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/it.mp4#t=36) |
-| Configurare il controllo importo | [0:57](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/it.mp4#t=57) |
-| Aggiungere l’azione Approval | [1:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/it.mp4#t=91) |
-| Aggiungere l’azione Standard | [2:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/it.mp4#t=120) |
-| Disporre le schede | [2:29](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/it.mp4#t=149) |
-| Collegare i percorsi | [3:01](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/it.mp4#t=181) |
-| Preparare i test | [3:45](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/it.mp4#t=225) |
-| Validare, salvare e attivare | [4:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/it.mp4#t=262) |
+[Apri video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/it.mp4) · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/it.vtt) · 1:52
 
 <details>
 <summary>Trascrizione</summary>
 
-**Presentazione dell’amministratore**
+**Una fattura con due percorsi**
 
-Gestisco DocBits. Creiamo un controllo delle fatture.
-
-**Controllare l’accesso**
-
-Parto dalla dashboard dei workflow e apro l’elenco. Poi controllo la licenza. Workflow e Advanced Workflow richiedono entrambi un accesso attivo. Con entrambi abilitati, Nuovo workflow offre Advanced Workflow. Questo account di documentazione non ha una licenza workflow attiva. Proseguo quindi con un’anteprima non salvata nel designer.
-
-**Dare un nome al workflow**
-
-Lavoro nel vero designer di DocBits. Per prima cosa assegno un nome chiaro alla bozza. Controlleremo l’importo di una fattura e useremo due semplici azioni per mostrare i percorsi possibili. Questa dimostrazione resta non salvata.
+Questo è un vero workflow avanzato in DocBits. Un controllo dell’importo della fattura conduce a due azioni. I collegamenti determinano quale azione viene eseguita. L’esempio utilizza una bozza non salvata e campi dimostrativi.
 
 **Configurare il controllo importo**
 
-Apro il menu per aggiungere e scelgo una scheda di condizione. Nella categoria Campo documento seleziono la condizione Docfield. Inserisco il campo total_amount. Poi scelgo il confronto maggiore di. E inserisco mille. Usate la chiave del vostro campo documento. Un importo esattamente uguale a mille non soddisfa questo confronto.
+Apri Aggiungi, scegli And e seleziona una condizione per un campo del documento. Imposta il campo dell’importo, scegli Maggiore di e inserisci mille. Usa la chiave esatta del campo definita nella configurazione del documento.
 
-**Aggiungere l’azione Approval**
+**Configurare le azioni**
 
-Ora aggiungo una scheda azione dalla categoria Campo documento. L’azione imposta un campo del documento. Uso la chiave dimostrativa approval_route. E inserisco il valore Approval. Questo identifica il percorso. Un processo di approvazione reale richiede le proprie azioni aziendali.
+Aggiungi due schede Then. Entrambe impostano il campo dimostrativo approval route. Una scrive Approval, l’altra Standard. Questi valori identificano il percorso. Configura le azioni aziendali necessarie per un workflow di produzione.
 
-**Aggiungere l’azione Standard**
+**Collegare le uscite**
 
-Aggiungo una seconda scheda con la stessa azione. Questa volta il campo dimostrativo riceve il valore Standard. Entrambe le schede sono configurate. Servono ancora le connessioni per stabilire quale azione verrà eseguita.
+Collega Start all’ingresso della condizione. Collega l’uscita blu di successo ad Approval e l’uscita arancione di condizione falsa a Standard. L’uscita rossa gestisce separatamente gli errori di valutazione. La posizione delle schede non crea un percorso.
 
-**Disporre le schede**
+**Preparare i casi di test**
 
-Trascino le schede per ottenere una disposizione leggibile. Le due azioni vanno a destra. La condizione sta al centro e Start a sinistra. Spostare una scheda cambia la posizione. Non crea una connessione.
+Apri Test nella barra degli strumenti. Scegli un documento di prova o inserisci i suoi dati completi in formato JSON. Verifica importi superiori, inferiori e uguali a mille, oltre ai valori mancanti. Controlla i risultati dei nodi dopo l’esecuzione.
 
-**Collegare i percorsi**
+**Convalidare, salvare e attivare**
 
-Trascino dall’uscita di Start all’ingresso della condizione. Il percorso di successo arriva ad Approval con una connessione blu. Il percorso arancione per la condizione non soddisfatta arriva a Standard. L’uscita rossa di errore è distinta e serve per gli errori di valutazione. Qui resta scollegata. In un workflow di produzione, decidete come gestire questi errori.
-
-**Preparare i test**
-
-Il pulsante di test nella barra apre la selezione del documento di prova. Posso scegliere un documento dimostrativo oppure preparare dati personalizzati completi. Provate importi superiori, inferiori e uguali a mille. Verificate anche un importo mancante. Questo account non ha una licenza Advanced Workflow. Mostro la preparazione del test, non un risultato eseguito.
-
-**Validare, salvare e attivare**
-
-La validazione controlla connessioni e impostazioni delle schede. Qui la licenza mancante impedisce la validazione. Con un account abilitato salverei esplicitamente sul server. Poi controllerei separatamente l’attivazione. Prima del primo salvataggio l’interruttore è disabilitato. L’indicatore della bozza automatica riguarda una copia locale nel browser. Non significa che il workflow sia salvato o attivato.
+Convalida i collegamenti e le impostazioni delle schede. Salva esplicitamente sul server e verifica separatamente l’attivazione. Le bozze automatiche del browser non sostituiscono il salvataggio. Esecuzione e registri richiedono il modulo e l’abbonamento appropriati.
 
 </details>
 

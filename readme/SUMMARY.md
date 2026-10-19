@@ -817,7 +817,7 @@
   * [M3](infor-integration-and-configuration/exporting-to-infor/m3/README.md)
     * [Example Export M3](infor-integration-and-configuration/exporting-to-infor/m3/example-export-m3.md)
     * [Handling Charges with Infor M3](infor-integration-and-configuration/exporting-to-infor/m3/handling-charges-with-infor-m3.md)
-    * [M3 Configuration](infor-integration-and-configuration/exporting-to-infor/m3/m3-configuration.md)
+    * [Een Infor M3-export configureren](infor-integration-and-configuration/exporting-to-infor/m3/m3-configuration.md)
   * [LN](infor-integration-and-configuration/exporting-to-infor/ln/README.md)
     * [Example Export LN](infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/README.md)
       * [Configuring the Default Tax Country for Export LN](infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/configuring-the-default-tax-country-for-export-ln.md)

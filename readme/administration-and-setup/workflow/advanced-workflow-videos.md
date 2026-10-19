@@ -4,43 +4,72 @@ description: "Fünf Erklärvideos zu Advanced Workflows und Workflow Logs auf De
 
 # Videoanleitung
 
-Alle fünf Kapitel enthalten eine deutsche Tonspur, eine Untertiteldatei und ein Transkript. Jedes Kapitel dauert weniger als zwei Minuten.
+Alle fünf Kapitel haben eine deutsche Tonspur, eine Untertiteldatei und ein Transkript. Das erste Kapitel zeigt die Erstellung des Beispielworkflows Schritt für Schritt; die weiteren Kapitel vertiefen die einzelnen Themen.
 
 Die ersten drei Kapitel zeigen den echten DocBits-Designer mit Demonstrationsentwürfen. Die Testfassung zur Ausführungssuche zeigt echte Dokumentverarbeitung und Protokollfunktionen mit leeren Ergebnissen. Das Diagnosekapitel verwendet weiterhin gekennzeichnete Lehrgrafiken. Die [Advanced-Workflow-Anleitung](advanced-workflow-builder.md) und die [Workflow Logs](workflow-logs.md) ergänzen die Videos.
 ## Builder und Canvas
 
-Ein Rechnungsbetrag entscheidet zwischen zwei verbundenen Aktionen. Dieses Kapitel zeigt die echte DocBits-Oberfläche mit einem ungespeicherten Demonstrationsentwurf.
+Lernen Sie Thomas kennen und folgen Sie seiner Erklärung direkt in der deutschen DocBits-Oberfläche. Er prüft Workflow-Dashboard, Workflow-Liste und Lizenz und öffnet anschließend einen ungespeicherten Designerentwurf. Schritt für Schritt benennt er den Workflow, konfiguriert die Betragsprüfung und zwei Aktionen, ordnet die Karten an und verbindet beide Routen. Danach zeigt er die Testvorbereitung mit Dokumenten und eigenen Daten. Das Demokonto besitzt kein Advanced-Workflow-Abonnement und blockiert die Validierung; der Entwurf bleibt ungespeichert und inaktiv.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-c/de.mp4" %}
 
-[Video öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/de.mp4) · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/de.vtt)
+[Video öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-c/de.mp4) · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-c/de.vtt) · [Transkript (Text)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-c/de.txt) · 4:53
+
+| In diesem Video | Start |
+| --- | --- |
+| Administrator kennenlernen | [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-c/de.mp4#t=0) |
+| Workflow-Zugang prüfen | [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-c/de.mp4#t=10) |
+| Workflow benennen | [0:41](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-c/de.mp4#t=41) |
+| Betragsprüfung einrichten | [0:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-c/de.mp4#t=58) |
+| Aktion Approval hinzufügen | [1:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-c/de.mp4#t=91) |
+| Aktion Standard hinzufügen | [1:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-c/de.mp4#t=118) |
+| Karten anordnen | [2:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-c/de.mp4#t=146) |
+| Routen verbinden | [2:59](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-c/de.mp4#t=179) |
+| Testfälle vorbereiten | [3:42](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-c/de.mp4#t=222) |
+| Validieren, speichern und aktivieren | [4:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-c/de.mp4#t=259) |
 
 <details>
 <summary>Transkript</summary>
 
-**Eine Rechnung mit zwei Routen**
+**Administrator kennenlernen**
 
-Hier sehen Sie einen echten Advanced Workflow in DocBits. Eine Prüfung des Rechnungsbetrags führt zu zwei Aktionen. Die Verbindungen bestimmen, welche Aktion ausgeführt wird. Das Beispiel verwendet einen ungespeicherten Entwurf und Demonstrationsfelder.
+Ich kümmere mich hier um DocBits. Ich zeige euch, wie ich einen Rechnungsworkflow mit zwei Routen aufbaue.
 
-**Betragsprüfung konfigurieren**
+**Workflow-Zugang prüfen**
 
-Öffnen Sie Hinzufügen, wählen Sie And und eine Bedingung für ein Dokumentfeld. Legen Sie das Betragsfeld fest, wählen Sie Größer als und geben Sie tausend ein. Verwenden Sie den genauen Feldschlüssel Ihrer Dokumentkonfiguration.
+Ich beginne im Workflow-Dashboard und öffne die Workflow-Liste. Dann prüfe ich die Lizenz. Workflow und Advanced Workflow benötigen beide einen aktiven Zugang. Mit diesen Freigaben bietet Neuer Workflow auch Advanced Workflow an. Dieses Dokumentationskonto hat keine aktive Workflow-Lizenz. Deshalb arbeite ich mit einer ungespeicherten Vorschau im Designer weiter.
 
-**Aktionen konfigurieren**
+**Workflow benennen**
 
-Fügen Sie zwei Then-Karten hinzu. Beide setzen das Demonstrationsfeld approval route. Eine schreibt Approval, die andere Standard. Die Werte kennzeichnen die Route. Für einen produktiven Workflow konfigurieren Sie hier Ihre fachlichen Aktionen.
+Ich arbeite im echten DocBits-Designer. Zuerst gebe ich dem Entwurf einen klaren Namen. Wir prüfen einen Rechnungsbetrag und zeigen die beiden möglichen Routen mit einfachen Aktionen. Der Entwurf bleibt ungespeichert.
 
-**Ergebnisausgänge verbinden**
+**Betragsprüfung einrichten**
 
-Verbinden Sie Start mit dem Eingang der Bedingung. Verbinden Sie den blauen Erfolgsausgang mit Approval und den orangefarbenen Ausgang für eine falsche Bedingung mit Standard. Der rote Fehlerausgang behandelt Auswertungsfehler separat. Die Kartenposition allein erzeugt keine Route.
+Ich öffne das Menü zum Hinzufügen und wähle eine Bedingungskarte. Unter Dokumentenfeld wähle ich die Docfield-Bedingung. Als Feld trage ich total_amount ein. Dann wähle ich den Vergleich größer als. Und gebe eintausend ein. Verwendet euren eigenen Dokumentenfeldschlüssel. Genau eintausend erfüllt diesen Vergleich nicht.
+
+**Aktion Approval hinzufügen**
+
+Jetzt füge ich eine Aktionskarte aus der Kategorie Dokumentenfeld hinzu. Die Aktion setzt ein Dokumentenfeld. Ich verwende den Beispielschlüssel approval_route. Und trage den Wert Approval ein. Das kennzeichnet die Route. Ein echter Freigabeprozess benötigt die passenden Geschäftsaktionen.
+
+**Aktion Standard hinzufügen**
+
+Ich füge eine zweite Aktionskarte mit derselben Aktion hinzu. Diesmal erhält das Beispielfeld den Wert Standard. Beide Karten sind konfiguriert. Erst ihre Verbindungen bestimmen, welche Aktion ausgeführt wird.
+
+**Karten anordnen**
+
+Ich ziehe die Karten in eine übersichtliche Anordnung. Die beiden Aktionen kommen nach rechts. Die Bedingung steht in der Mitte, Start links. Verschieben ändert nur die Position. Es erstellt keine Verbindung.
+
+**Routen verbinden**
+
+Ich ziehe vom Ausgang von Start zum Eingang der Bedingung. Die Erfolgsroute führt über die blaue Verbindung zu Approval. Die orange Route für eine nicht erfüllte Bedingung führt zu Standard. Der rote Fehlerausgang ist ein eigener Ausgang für Auswertungsfehler. Hier bleibt er unverbunden. Legt für einen produktiven Workflow fest, wie solche Fehler behandelt werden.
 
 **Testfälle vorbereiten**
 
-Öffnen Sie Testen in der Werkzeugleiste. Wählen Sie ein Testdokument oder geben Sie vollständige Dokumentdaten als JSON ein. Prüfen Sie Beträge über, unter und genau bei tausend sowie fehlende Werte. Kontrollieren Sie nach der Ausführung die Knotenergebnisse.
+Die Test-Schaltfläche in der Werkzeugleiste öffnet die Auswahl eines Testdokuments. Ich kann ein Beispieldokument auswählen oder vollständige benutzerdefinierte Daten vorbereiten. Testet Beträge über, unter und genau bei eintausend. Prüft auch einen fehlenden Betrag. Dieses Konto hat keine Advanced-Workflow-Lizenz. Ich zeige die Testvorbereitung, kein ausgeführtes Testergebnis.
 
 **Validieren, speichern und aktivieren**
 
-Validieren Sie Verbindungen und Karteneinstellungen. Speichern Sie explizit auf dem Server und prüfen Sie die Aktivierung separat. Automatische Browserentwürfe ersetzen das Speichern nicht. Ausführung und Logzugriff erfordern das passende Modul und Abonnement.
+Mit Validieren prüft man Verbindungen und Karteneinstellungen. Hier blockiert die fehlende Lizenz die Validierung. Mit einem freigeschalteten Konto würde ich ausdrücklich auf dem Server speichern. Danach prüfe ich die Aktivierung getrennt. Vor dem ersten Speichern ist der Schalter deaktiviert. Der automatische Entwurfsstatus bezieht sich auf eine lokale Browserkopie. Er bedeutet nicht, dass der Workflow gespeichert oder aktiviert ist.
 
 </details>
 

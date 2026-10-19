@@ -4,13 +4,13 @@ description: "Cinco capítulos em português sobre workflows avançados e regist
 
 # Vídeos do Advanced Workflow
 
-Os cinco capítulos têm narração em português, um ficheiro de legendas e uma transcrição. O primeiro mostra a criação do workflow de exemplo passo a passo; os restantes aprofundam cada tema.
+Aprenda a criar, testar e diagnosticar um workflow avançado. Os cinco capítulos têm narração em português.
 
 Os três primeiros capítulos mostram o verdadeiro designer do DocBits com rascunhos de demonstração. A pré-visualização da pesquisa mostra o processamento real de documentos e os controlos dos registos com resultados vazios. O capítulo de diagnóstico mantém os diagramas didáticos identificados como ilustrações.
 
 Cada vídeo inclui legendas WebVTT e uma transcrição expansível.
 
-1. [Construtor e canvas](#builder-and-canvas) · 4:47
+1. [Construtor e canvas](#builder-and-canvas) · 1:55
 2. [Nós e percursos](#nodes-and-routes) · 2:00
 3. [Variáveis, testes e ativação](#variables-tests-and-activation) · 1:56
 4. [Encontrar a execução relevante](#find-the-relevant-execution) · 1:58
@@ -18,67 +18,36 @@ Cada vídeo inclui legendas WebVTT e uma transcrição expansível.
 
 ## Construtor e canvas {#builder-and-canvas}
 
-Conheça o João e acompanhe a sua explicação na interface real do DocBits em português. Verifica o painel, a lista de workflows e a licença antes de abrir um rascunho não guardado no designer. Passo a passo, dá um nome ao workflow, configura a verificação do montante e duas ações, organiza os cartões e liga os dois percursos. Depois mostra como preparar testes com um documento ou dados personalizados. A conta de demonstração não tem uma subscrição Advanced Workflow e bloqueia a validação; o rascunho permanece não guardado e inativo.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/pt.mp4" %}
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pt.mp4" %}
-
-[Abrir vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pt.mp4) · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pt.vtt) · [Transcrição (texto)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pt.txt) · 4:47
-
-| Neste vídeo | Início |
-| --- | --- |
-| Conheça o administrador | [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pt.mp4#t=0) |
-| Verificar o acesso | [0:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pt.mp4#t=5) |
-| Dar um nome ao workflow | [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pt.mp4#t=35) |
-| Configurar a condição de montante | [0:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pt.mp4#t=53) |
-| Adicionar a ação Approval | [1:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pt.mp4#t=86) |
-| Adicionar a ação Standard | [1:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pt.mp4#t=113) |
-| Organizar os cartões | [2:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pt.mp4#t=140) |
-| Ligar os percursos | [2:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pt.mp4#t=173) |
-| Preparar os testes | [3:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pt.mp4#t=217) |
-| Validar, guardar e ativar | [4:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pt.mp4#t=253) |
+[Abrir vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/pt.mp4) · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/pt.vtt) · 1:55
 
 <details>
 <summary>Transcrição</summary>
 
-**Conheça o administrador**
+**Uma fatura com dois percursos**
 
-Administro o DocBits. Criamos uma verificação de faturas.
+Este é um workflow avançado real no DocBits. Uma verificação do montante da fatura conduz a duas ações. As ligações determinam qual a ação executada. O exemplo utiliza um rascunho não guardado e campos de demonstração.
 
-**Verificar o acesso**
+**Configurar a verificação**
 
-Começo no painel de workflows e abro a lista. Depois verifico a licença. Workflow e Advanced Workflow precisam ambos de acesso ativo. Com os dois acessos ativos, Novo workflow apresenta Advanced Workflow. Esta conta de documentação não tem uma licença de workflow ativa. Por isso, continuo com uma pré-visualização não guardada no editor.
+Abra Adicionar, escolha And e selecione uma condição de campo do documento. Indique o campo do montante, escolha Maior que e introduza mil. Utilize a chave exata do campo definida na configuração do documento.
 
-**Dar um nome ao workflow**
+**Configurar as ações**
 
-Estou no verdadeiro editor do DocBits. Primeiro, dou um nome claro ao rascunho. Vamos verificar o montante de uma fatura e usar duas ações simples para mostrar os percursos possíveis. Esta demonstração fica por guardar.
+Adicione dois cartões Then. Ambos definem o campo de demonstração approval route. Um escreve Approval e o outro Standard. Estes valores identificam o percurso. Configure as ações do seu processo para um workflow de produção.
 
-**Configurar a condição de montante**
+**Ligar as saídas**
 
-Abro o menu para adicionar e escolho um cartão de condição. Na categoria Campo do documento, seleciono a condição Docfield. Introduzo o campo total_amount. Depois escolho a comparação maior que. E introduzo mil. Utilize a chave do seu próprio campo de documento. Um montante exatamente igual a mil não satisfaz esta comparação.
+Ligue Start à entrada da condição. Ligue a saída azul de sucesso a Approval e a saída laranja de condição falsa a Standard. A saída vermelha trata os erros de avaliação separadamente. A posição dos cartões não cria um percurso.
 
-**Adicionar a ação Approval**
+**Preparar os casos de teste**
 
-Agora adiciono um cartão de ação da categoria Campo do documento. A ação define um campo do documento. Uso a chave de demonstração approval_route. E introduzo o valor Approval. Isto identifica o percurso. Um processo de aprovação real precisa das suas próprias ações de negócio.
-
-**Adicionar a ação Standard**
-
-Adiciono um segundo cartão com a mesma ação. Desta vez, o campo de demonstração recebe o valor Standard. Os dois cartões estão configurados. Ainda precisam de ligações para determinar qual a ação executada.
-
-**Organizar os cartões**
-
-Arrasto os cartões para uma disposição legível. As duas ações ficam à direita. A condição fica ao centro e Start à esquerda. Mover um cartão altera a posição. Não cria uma ligação.
-
-**Ligar os percursos**
-
-Arrasto da saída de Start para a entrada da condição. O percurso de sucesso segue uma ligação azul até Approval. O percurso laranja de condição não satisfeita segue para Standard. A saída vermelha de erro é distinta e destina-se a erros de avaliação. Aqui fica sem ligação. Num workflow de produção, defina como tratar estes erros.
-
-**Preparar os testes**
-
-O botão de teste na barra de ferramentas abre a seleção do documento de teste. Posso escolher um documento de demonstração ou preparar dados personalizados completos. Teste montantes superiores, inferiores e iguais a mil. Verifique também um montante em falta. Esta conta não tem licença Advanced Workflow. Mostro a preparação do teste, não um resultado executado.
+Abra Testar na barra de ferramentas. Escolha um documento de teste ou introduza os seus dados completos em JSON. Verifique montantes superiores, inferiores e iguais a mil, bem como valores em falta. Consulte os resultados dos nós após a execução.
 
 **Validar, guardar e ativar**
 
-A validação verifica ligações e configurações dos cartões. Nesta conta, a falta de licença impede a validação. Com uma conta autorizada, guardaria explicitamente no servidor. Depois verificaria a ativação em separado. Antes de guardar pela primeira vez, o interruptor está desativado. O indicador de rascunho automático refere-se a uma cópia local no navegador. Não significa que o workflow esteja guardado ou ativado.
+Valide as ligações e as definições dos cartões. Guarde explicitamente no servidor e verifique a ativação em separado. Os rascunhos automáticos do navegador não substituem a gravação. A execução e os registos exigem o módulo e a subscrição adequados.
 
 </details>
 

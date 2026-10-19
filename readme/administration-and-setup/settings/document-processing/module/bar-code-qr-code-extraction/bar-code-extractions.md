@@ -1,81 +1,65 @@
 # Bar Code Extractions
 
-## Overview
+## Descripción general
 
-This feature enables automatic detection of barcodes on documents. When activated, all supported barcode types are scanned and extracted during processing.
+Esta función permite la detección automática de códigos de barras en los documentos. Cuando está activada, todos los tipos de código de barras admitidos se escanean y se extraen durante el procesamiento.
 
-## How to Enable Bar-Code Extraction&#x20;
+## Cómo activar la extracción de códigos de barras
 
-To enable the Bar-Code Extraction feature, follow these steps:
+Para activar la función Bar-Code Extraction, siga estos pasos:
 
-1. **Navigate to Settings**:
-   * From the Dashboard, go to **Settings**.
-   * Select **Document Processing** and then choose **Module**.
-2. **Enable the Feature**:
-   * Scroll down to locate the **Bar-Code Extraction** option.
-   *   Toggle the slider to enable Bar-Code Extraction.\
+1. **Vaya a Settings**:
+   * Desde el Dashboard, vaya a **Settings**.
+   * Seleccione **Document Processing** y, a continuación, elija **Module**.
+2. **Active la función**:
+   * Desplácese hacia abajo para localizar la opción **Bar-Code Extraction**.
+   * Mueva el control deslizante para activar Bar-Code Extraction.\\
 
-
-       <figure><img src="../../../../../.gitbook/assets/image (445).png" alt=""><figcaption></figcaption></figure>
-
-## **Additional Settings**
+## **Ajustes adicionales**
 
 ### **Barcode Assignment**
 
-#### **Purpose:** Allows validators to manually assign an extracted barcode value to a specific document field during field validation.
+#### **Finalidad:** permite a los validadores asignar manualmente un valor de código de barras extraído a un campo concreto del documento durante la validación de campos.
 
-#### How to Enable **Barcode Assignment**&#x20;
+#### Cómo activar **Barcode Assignment**
 
-To enable the **Barcode Assignment** feature, follow these steps:
+Para activar la función **Barcode Assignment**, siga estos pasos:
 
-1. **Navigate to Settings**:
-   * From the Dashboard, go to **Settings**.
-   * Select **Document Processing** and then choose **Module**.
-2. **Enable the Feature**:
-   * Scroll down to locate the **Barcode Assignment** option.
-   *   Toggle the slider to enable **Barcode Assignment**.\
+1. **Vaya a Settings**:
+   * Desde el Dashboard, vaya a **Settings**.
+   * Seleccione **Document Processing** y, a continuación, elija **Module**.
+2. **Active la función**:
+   * Desplácese hacia abajo para localizar la opción **Barcode Assignment**.
+   * Mueva el control deslizante para activar **Barcode Assignment**.\\
 
+#### **Cómo funciona:**
 
-       <figure><img src="../../../../../.gitbook/assets/image (446).png" alt=""><figcaption></figcaption></figure>
-
-#### **How it works:**
-
-*   Enables an “Assign Barcode” option in the field validation screen.\
-
-
-    <div align="left"><figure><img src="../../../../../.gitbook/assets/image (450).png" alt="" width="185"><figcaption></figcaption></figure></div>
-*   Users can select a detected barcode value and map it to a document field like PO Number or Invoice Number.\
-
-
-    <div align="left"><figure><img src="../../../../../.gitbook/assets/image (451).png" alt="" width="315"><figcaption></figcaption></figure> <figure><img src="../../../../../.gitbook/assets/SCreen.jpg" alt="" width="280"><figcaption></figcaption></figure></div>
+* Habilita una opción “Assign Barcode” en la pantalla de validación de campos.\\
+* Los usuarios pueden seleccionar un valor de código de barras detectado y asignarlo a un campo del documento, como PO Number o Invoice Number.\\
 
 ### Split of Document by Barcode / QR Code
 
-**Purpose:**\
-Automatically splits multi-page documents into separate documents based on the presence of specific barcodes or QR codes.
+**Finalidad:** divide automáticamente los documentos de varias páginas en documentos independientes según la presencia de determinados códigos de barras o códigos QR.
 
-#### How to Enable Split of Document by Barcode / QR Code
+#### Cómo activar Split of Document by Barcode / QR Code
 
-To enable the  **Split of Document by Barcode / QR Code feature**, follow these steps:
+Para activar la función **Split of Document by Barcode / QR Code**, siga estos pasos:
 
-1. **Navigate to Settings**:
-   * From the Dashboard, go to **Settings**.
-   * Select **Document Processing** and then choose **Classification and Extraction**.
-2.  **Enable the Feature**:
+1. **Vaya a Settings**:
+   * Desde el Dashboard, vaya a **Settings**.
+   * Seleccione **Document Processing** y, a continuación, elija **Classification and Extraction**.
+2. **Active la función**:
+   * Localice la opción **Document Splitting**.
+   * En **Split**, seleccione **Split by Barcode / QR Code**.
+   * En **Barcode Type**, elija uno o varios tipos de código de barras admitidos de la lista.
+   * En **Barcode Pattern**, defina el patrón que debe provocar una división. Puede utilizar una **expresión regular** (regex) para detectar valores dinámicos de códigos de barras.
 
-    * Locate the **Document Splitting** option.
-    * For **Split**, select **Split by Barcode / QR Code**.
-    * For **Barcode Type**, choose one or more supported barcode types from the list.
-    * For **Barcode Pattern**, define the pattern that should trigger a split. You can use a **regular expression** (regex) to match dynamic barcode values.
+**Cómo funciona:**
 
-    <figure><img src="../../../../../.gitbook/assets/image (448).png" alt=""><figcaption></figcaption></figure>
+* Usted selecciona los tipos de código de barras que deben provocar una división.
+* Usted define un patrón que debe cumplir el código de barras; puede ser una cadena fija o una expresión regular (por ejemplo, `^INV\d{6}$` para detectar códigos de barras como `INV123456`).
+* Durante el procesamiento del documento, cada vez que una página contiene un código de barras coincidente, se **crea un nuevo documento** a partir de esa página.
 
-**How it works:**
+### Tipos de código admitidos
 
-* You select the barcode types that should trigger a split.
-* You define a pattern the barcode must match — this can be a fixed string or a regex (e.g., `^INV\d{6}$` to match barcodes like `INV123456`).
-* During document processing, each time a page contains a matching barcode, a **new document is created** starting from that page.
-
-### Supported Code Types
-
-See the [Overview Page](./) for the full list of supported barcode and QR code formats.
+Consulte la [página de descripción general](./) para ver la lista completa de formatos de código de barras y códigos QR admitidos.

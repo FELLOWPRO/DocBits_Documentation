@@ -4,6 +4,12 @@ description: Soporte de documentos electrónicos AUNZ PINT en DocBits
 
 # 🇦🇺 AUNZ PINT
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Australia](countries/australia.md). La etiqueta de familia activa no tiene un número fijo de publicación de PINT. Compruebe los identificadores de personalización y perfil. La entrega por red es una integración independiente.
+{% endhint %}
+
 | Propiedad | Valor |
 |----------|-------|
 | **País / Región** | Australia / Nueva Zelanda |

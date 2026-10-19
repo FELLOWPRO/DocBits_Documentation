@@ -40,7 +40,7 @@ Debajo del interruptor, el panel de **adopción de MFA** muestra qué tan extend
 
 ## Lo que ven los miembros
 
-A un miembro al que se le exige registrarse se le envía a la configuración de 2FA en su próximo inicio de sesión y elige un método (aplicación de autenticación, código por correo electrónico o clave de acceso). Los pasos para el usuario final se describen en [Autenticación de Dos Factores (2FA)](../../../../overview-and-basics/two-factor-authentication.md).
+A un miembro al que se le exige registrarse se le envía a la configuración de 2FA en su próximo inicio de sesión y elige un método (aplicación de autenticación, código por correo electrónico o clave de acceso). Los pasos para el usuario final se describen en [Autenticación de Dos Factores (2FA)](../../../../security/two-factor-authentication.md).
 
 ## Controles de seguridad relacionados
 

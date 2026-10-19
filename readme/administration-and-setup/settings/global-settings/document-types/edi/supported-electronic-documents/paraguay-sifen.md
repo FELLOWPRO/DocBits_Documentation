@@ -1,0 +1,37 @@
+---
+description: Compatibilidad de DocBits con el documento electrónico PARAGUAY SIFEN
+---
+
+# 🇵🇾 PARAGUAY SIFEN
+
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Paraguay](countries/paraguay.md). Las entradas de clasificación de notas de crédito carecen de paquetes de extracción dedicados en el estado inspeccionado. Verifique la asignación utilizada y no trate las etiquetas como intercambiables.
+{% endhint %}
+
+| Propiedad              | Valor                                                         |
+| ---------------------- | ------------------------------------------------------------- |
+| **País / Región**      | Paraguay                                                      |
+| **Tipos de documento** | Factura, Nota de crédito, Nota de débito, Retención           |
+| **Formato**            | XML                                                           |
+| **Estándar**           | SIFEN (Sistema Integrado de Facturación Electrónica Nacional) |
+
+SIFEN es el sistema nacional integrado de facturación electrónica de Paraguay, gestionado por la SET. Todos los documentos electrónicos deben enviarse a SIFEN para su validación y reciben un identificador único CDC (Código de Control Digital).
+
+## Estado de compatibilidad
+
+| Componente             | Estado          |
+| ---------------------- | --------------- |
+| Vista previa           | ✅ Compatible    |
+| Extracción de campos   | ✅ Compatible    |
+| Transformación         | ✅ Compatible    |
+
+## Vista previa predeterminada
+
+<figure><img src="../../../../../../.gitbook/assets/paraguay-sifen-preview.png" alt="Vista previa de la factura Paraguay SIFEN en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una factura Paraguay SIFEN</p></figcaption></figure>
+
+## Relacionado
+
+* [Documentos electrónicos compatibles](./)
+* [Paraguay SIFEN 150](paraguay-sifen-150.md)

@@ -1,8 +1,11 @@
-# Atajos de Teclado
+# Atajos de teclado
 
-### Atajos del Panel
+Use Ctrl en Windows/Linux y Cmd en macOS. Los atajos del navegador o sistema pueden tener prioridad.
 
-El panel incluye los siguientes atajos para mejorar la navegación y la interacción:
+| Atajo | Acción |
+| --- | --- |
+| Ctrl/Cmd + K | Abrir la búsqueda rápida global. |
+| Ctrl/Cmd + Q | Actualizar la lista del panel. |
+| Ctrl/Cmd + H | Abrir documentación/ayuda. |
 
-* **Option + K** – Abre el menú de atajos de teclado, proporcionando una lista de atajos disponibles dentro de la aplicación.
-* **Option + Q** – Actualiza la tabla del panel, asegurando que se muestren los datos más recientes sin necesidad de recargar manualmente la página.
+Abra el engranaje y el botón del teclado para consultar los atajos en la aplicación. El signo de interrogación del buscador abre la ayuda de campos y sintaxis.

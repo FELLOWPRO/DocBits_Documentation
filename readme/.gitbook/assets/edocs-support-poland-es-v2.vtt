@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:09.944
+KSeF tiene entradas genéricas, FA2 y FA3.
+FA2 y FA3 utilizan estructuras diferentes.
+
+formats_02
+00:00:09.944 --> 00:00:15.436
+Confirme el esquema de origen y pruebe la
+asignación adecuada. Analizar el archivo
+
+formats_03
+00:00:15.436 --> 00:00:18.500
+no envía una factura a KSeF.
+
+workflow_01
+00:00:19.250 --> 00:00:24.602
+Abra E-Doc para el formato detectado.
+Compare Transformation, Preview y
+
+workflow_02
+00:00:24.602 --> 00:00:30.361
+Extraction Paths. Las reglas Custom tienen
+prioridad. Guardar un borrador no lo
+
+workflow_03
+00:00:30.361 --> 00:00:31.200
+activa.
+
+accept_01
+00:00:31.950 --> 00:00:36.490
+Pruebe una factura y una nota de crédito
+cuando corresponda. Verifique los
+
+accept_02
+00:00:36.490 --> 00:00:41.749
+importes, las partes y el tipo de
+documento exportado. Analizar el archivo
+
+accept_03
+00:00:41.749 --> 00:00:45.600
+no demuestra la autorización fiscal ni la
+entrega por red.
+

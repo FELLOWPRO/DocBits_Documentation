@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.506
+Colombia Factura Electronica y Documento
+Soporte tienen entradas independientes. La
+
+formats_02
+00:00:07.506 --> 00:00:12.092
+entrada de clasificación de notas de
+crédito no tiene un paquete de extracción
+
+formats_03
+00:00:12.092 --> 00:00:18.118
+dedicado en el estado inspeccionado.
+Confirme la asignación utilizada en lugar
+
+formats_04
+00:00:18.118 --> 00:00:22.500
+de deducir su compatibilidad a partir de
+la entrada de facturas.
+
+workflow_01
+00:00:23.250 --> 00:00:28.602
+Abra E-Doc para el formato detectado.
+Compare Transformation, Preview y
+
+workflow_02
+00:00:28.602 --> 00:00:34.361
+Extraction Paths. Las reglas Custom tienen
+prioridad. Guardar un borrador no lo
+
+workflow_03
+00:00:34.361 --> 00:00:35.200
+activa.
+
+accept_01
+00:00:35.950 --> 00:00:40.490
+Pruebe una factura y una nota de crédito
+cuando corresponda. Verifique los
+
+accept_02
+00:00:40.490 --> 00:00:45.749
+importes, las partes y el tipo de
+documento exportado. Analizar el archivo
+
+accept_03
+00:00:45.749 --> 00:00:49.600
+no demuestra la autorización fiscal ni la
+entrega por red.
+

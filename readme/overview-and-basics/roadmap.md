@@ -1,5 +1,7 @@
 # Hoja de ruta de DocBits
 
+**Disponibilidad de NOVA R1.1:** Disponible en el entorno de pruebas desde el **16 de octubre de 2026**. El lanzamiento en producción está previsto para el **4 de noviembre de 2026**.
+
 _Estado de la planificación a 7 de octubre de 2026. Cada versión indica la
 fecha prevista en sandbox (cuando los clientes pueden probarla) y la fecha
 prevista en producción. Los temas describen lo que está previsto para la

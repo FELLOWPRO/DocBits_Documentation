@@ -16,7 +16,7 @@
   * [平台架构](overview-and-basics/diagram-preview/platform-architecture.md)
 * [DocBits 发布生命周期策略](overview-and-basics/docbits-release-lifecycle-strategy.md)
 * [发行说明](overview-and-basics/release-notes/README.md)
-  * [NOVA – 主要版本 2026 年 11 月 4 日](overview-and-basics/release-notes/nova-major-release.md)
+  * [NOVA – 次要版本 2026 年 11 月 4 日](overview-and-basics/release-notes/nova-minor-release-4-november-2026.md)
   * [VESTA 热修复 — 2026 年 11 月 11 日（计划中）](overview-and-basics/release-notes/vesta-hotfix-11-november-2026.md)
   * [VESTA 热修复版本 — 2026 年 10 月 14 日](overview-and-basics/release-notes/incremental-updates-14-october-2026.md)
   * [VESTA 热修复 — 2026 年 9 月 15 日](overview-and-basics/release-notes/incremental-updates-15-september-2026.md)

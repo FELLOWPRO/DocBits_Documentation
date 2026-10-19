@@ -12,6 +12,17 @@ The controls you see depend on your permissions, the document status and the mod
 
 <figure><img src="../../../.gitbook/assets/dashboard-overview.png" alt="The current dashboard: search and tools at the top, saved views and document types below, and the document table. Document values are hidden for privacy."><figcaption><p>The current dashboard: search and tools at the top, saved views and document types below, and the document table. Document values are hidden for privacy.</p></figcaption></figure>
 
+## Search in everyday work — video
+
+This short example starts at the desk of a fictional customer in Austin, Texas. The US English DocBits interface then fills the screen: type part of a file name, press Enter, and check the result. The second example shows how to include document content when the full-text search module is enabled.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/en.mp4" %}
+
+[Open the example with US English narration](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/en.mp4) · [English captions (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/en.vtt) · [English transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/en.txt)
+
+The customer and office are AI-generated. The actions and search results are real recordings from the DocBits test account.
+
+
 ## Start your daily work
 
 1. Check the active organization and, if available, the suborganization.

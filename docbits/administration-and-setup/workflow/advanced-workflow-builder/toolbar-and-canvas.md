@@ -6,7 +6,7 @@ description: "Every Advanced Workflow toolbar control, canvas interaction, note 
 
 ## Video: Builder and canvas
 
-A fictional, AI-generated administrator introduces the example, then checks Workflow List and License and explains his real actions in the English DocBits designer. The demonstration remains unsaved; this account has no Advanced Workflow subscription.
+Mike introduces the example, then checks Workflow List and License and explains his real actions in the English DocBits designer. The demonstration remains unsaved; this account has no Advanced Workflow subscription.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas-admin/v1/en.mp4" %}
 

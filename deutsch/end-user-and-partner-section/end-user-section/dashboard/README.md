@@ -20,8 +20,6 @@ Das kurze Suchbeispiel beginnt am Arbeitsplatz einer fiktiven Anwenderin in Köl
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/de.mp4" %}
 
-Die Anwenderin und das Büro sind KI-generiert. Die Bedienung und die Suchergebnisse stammen aus echten Aufnahmen im DocBits-Testkonto.
-
 ### Vollständiger Dashboard-Rundgang
 
 Im Video zeigt Ihnen die Anwenderin, wie Sie mit den weiteren Dashboard-Funktionen Ihre Dokumente organisieren, bearbeiten und Ihre persönliche Ansicht einrichten.

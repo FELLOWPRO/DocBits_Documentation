@@ -6,7 +6,7 @@ description: "Watch five narrated chapters on Advanced Workflows and Workflow Lo
 
 Learn how to build, test and diagnose an Advanced Workflow. Every chapter has English narration; durations are listed below.
 
-The first chapter opens with a fictional, AI-generated administrator, then shows his actions in the real DocBits designer. The next two chapters also use genuine DocBits demonstration drafts. The execution-search preview shows genuine document processing and log controls with empty results. The diagnosis chapter still uses labelled teaching diagrams. For complete control descriptions, use the [Advanced Workflows guide](README.md), [Toolbar & Canvas](toolbar-and-canvas.md), [Nodes](nodes.md), [Variables](variables.md) and [Validation & Testing](validation-and-testing.md).
+The first chapter introduces Mike, then shows his actions in the real DocBits designer. The next two chapters also use genuine DocBits demonstration drafts. The execution-search preview shows genuine document processing and log controls with empty results. The diagnosis chapter still uses labelled teaching diagrams. For complete control descriptions, use the [Advanced Workflows guide](README.md), [Toolbar & Canvas](toolbar-and-canvas.md), [Nodes](nodes.md), [Variables](variables.md) and [Validation & Testing](validation-and-testing.md).
 
 Caption files are available in WebVTT format below each video. Open the expandable transcript to read the explanation without playing the video.
 
@@ -20,7 +20,7 @@ Caption files are available in WebVTT format below each video. Open the expandab
 
 ## Builder and canvas
 
-Meet Mike, a fictional, AI-generated administrator, then follow his explanation directly in the real English DocBits interface. Follow Workflow Dashboard, Workflow List and License before he opens an unsaved designer preview. Watch him name a draft, configure an invoice amount check and two actions, arrange the cards, connect both routes and inspect the document and Custom Data test options. The demo account blocks validation because it has no Advanced Workflow subscription; the workflow stays unsaved and inactive.
+Meet Mike, then follow his explanation directly in the real English DocBits interface. Follow Workflow Dashboard, Workflow List and License before he opens an unsaved designer preview. Watch him name a draft, configure an invoice amount check and two actions, arrange the cards, connect both routes and inspect the document and Custom Data test options. The demo account blocks validation because it has no Advanced Workflow subscription; the workflow stays unsaved and inactive.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas-admin/v1/en.mp4" %}
 

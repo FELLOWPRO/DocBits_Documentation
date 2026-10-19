@@ -10,7 +10,7 @@ Use a [Standard Workflow](../standard-workflow-builder/README.md) for a linear *
 
 ## Watch: an invoice routing example
 
-Meet Mike, a fictional, AI-generated administrator, then follow his explanation and real actions in the English DocBits interface: inspect Workflow List and License, name a workflow, configure an invoice amount check and two actions, arrange the cards, connect both routes and inspect the document and Custom Data test options.
+Meet Mike, then follow his explanation and real actions in the English DocBits interface: inspect Workflow List and License, name a workflow, configure an invoice amount check and two actions, arrange the cards, connect both routes and inspect the document and Custom Data test options.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas-admin/v1/en.mp4" %}
 

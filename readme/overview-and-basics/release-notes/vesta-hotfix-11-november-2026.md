@@ -2,7 +2,7 @@
 
 > **Canal de lançamento:** VESTA · **Estado:** Planeado · **Data agendada:** 11 de novembro de 2026.
 
-O próximo hotfix da VESTA integra **todas as funcionalidades anteriormente disponíveis como beta na VESTA no conjunto de funcionalidades regulares da VESTA**. Estas funcionalidades já estão disponíveis no [ambiente de testes da NOVA](nova-major-release.md#former-vesta-beta-features-included-in-nova); a entrada da NOVA em produção está prevista para **4 de novembro de 2026**.
+O próximo hotfix da VESTA integra **todas as funcionalidades anteriormente disponíveis como beta na VESTA no conjunto de funcionalidades regulares da VESTA**. Estas funcionalidades já estão disponíveis no [ambiente de testes da NOVA](nova-minor-release-4-november-2026.md#former-vesta-beta-features-included-in-nova); a entrada da NOVA em produção está prevista para **4 de novembro de 2026**.
 
 ## O que muda para a sua equipa
 
@@ -21,8 +21,8 @@ O próximo hotfix da VESTA integra **todas as funcionalidades anteriormente disp
 * [**Regras de validação personalizadas**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md): defina verificações para campos e linhas de tabela, escolha condições e gravidade, e teste as suas regras. **Ver:** [Vídeo em inglês](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4).
 * [**Regras de correspondência de encomendas**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md): configure tipos de correspondência, tolerâncias e ordem de execução, e gerir versões de regras. **Vídeo relacionado — Escolher a Automação Correta:** [Ver vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/pt.mp4).
 
-[Ver todos os vídeos de funcionalidades](nova-major-release.md#watch-the-feature-videos), incluindo layouts, Touchless Intelligence, Validação de Faturas Eletrónicas e a série de seis partes da AI Table.
+[Ver todos os vídeos de funcionalidades](nova-minor-release-4-november-2026.md#watch-the-feature-videos), incluindo layouts, Touchless Intelligence, Validação de Faturas Eletrónicas e a série de seis partes da AI Table.
 
-Esta pré-visualização anuncia a implementação das antigas funcionalidades beta da VESTA. As [notas de lançamento da NOVA](nova-major-release.md) também descrevem adições e melhorias adicionais da NOVA. As versões de serviço e quaisquer correções adicionais para o hotfix da VESTA serão listadas quando os detalhes do lançamento forem finalizados.
+Esta pré-visualização anuncia a implementação das antigas funcionalidades beta da VESTA. As [notas de lançamento da NOVA](nova-minor-release-4-november-2026.md) também descrevem adições e melhorias adicionais da NOVA. As versões de serviço e quaisquer correções adicionais para o hotfix da VESTA serão listadas quando os detalhes do lançamento forem finalizados.
 
 Consulte o [mais recente hotfix da VESTA lançado — 14 de outubro de 2026](incremental-updates-14-october-2026.md) e a [visão geral do lançamento](README.md).

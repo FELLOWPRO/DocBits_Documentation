@@ -16,7 +16,7 @@
   * [Platform Architecture](overview-and-basics/diagram-preview/platform-architecture.md)
 * [DocBits Release Lifecycle Strategy](overview-and-basics/docbits-release-lifecycle-strategy.md)
 * [Release Notes](overview-and-basics/release-notes/README.md)
-  * [NOVA – Major Release 4 November 2026](overview-and-basics/release-notes/nova-major-release.md)
+  * [NOVA – Minor Release 4 November 2026](overview-and-basics/release-notes/nova-major-release.md)
   * [VESTA Hotfix — 11 November 2026 (Planned)](overview-and-basics/release-notes/vesta-hotfix-11-november-2026.md)
   * [VESTA Hotfix — 14 October 2026](overview-and-basics/release-notes/incremental-updates-14-october-2026.md)
   * [VESTA Hotfix — 15 September 2026](overview-and-basics/release-notes/incremental-updates-15-september-2026.md)

@@ -6,17 +6,17 @@
 
 **DocBits is the product. NOVA names the release cycle.** [Watch the film about the new DocBits release](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/en.mp4) · [Subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/en.vtt).
 
-Choose a release channel to see what changes for your team. **The NOVA cycle delivers the new DocBits major release with additional customer capabilities. VESTA hotfixes improve the current production release.** See the [release lifecycle](../docbits-release-lifecycle-strategy.md) for availability and switching between channels.
+Choose a release channel to see what changes for your team. **The NOVA cycle delivers the new DocBits minor release with additional customer capabilities. VESTA hotfixes improve the current production release.** See the [release lifecycle](../docbits-release-lifecycle-strategy.md) for availability and switching between channels.
 
 **Former VESTA beta features are included in the NOVA sandbox.** All features previously available as beta in VESTA are part of NOVA's regular feature set, available for testing in the sandbox ahead of the planned production release. They will also become regular VESTA features with the [next VESTA hotfix, planned for **11 November 2026**](vesta-hotfix-11-november-2026.md).
 
 | Release channel | Release notes | Focus |
 | --- | --- | --- |
-| **NOVA – Major Release** | [What's new for customers](nova-major-release.md) · **4 November 2026 (planned)** | All former VESTA beta features, plus new capabilities and extensions compared with VESTA R1.0.15. |
+| **NOVA – Minor Release** | [What's new for customers](nova-major-release.md) · **4 November 2026 (planned)** | All former VESTA beta features, plus new capabilities and extensions compared with VESTA R1.0.15. |
 | **VESTA — Next Hotfix (planned)** | [11 November 2026](vesta-hotfix-11-november-2026.md) | Introduces all former VESTA beta features into the regular VESTA feature set. |
 | **VESTA — Hotfix Release** | [14 October 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Improvements and fixes for the current VESTA production release. |
 
-## NOVA – Major Release 4 November 2026
+## NOVA – Minor Release 4 November 2026
 
 ### What your team gains with NOVA
 

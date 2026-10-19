@@ -2,7 +2,7 @@
 
 > **Canale di rilascio:** VESTA · **Rilascio:** R1.0.15.
 >
-> **Stai confrontando con NOVA?** Il [confronto delle funzionalità del rilascio minore NOVA](nova-major-release.md#what-nova-adds-for-customers) copre l'Assistente di convalida, i miglioramenti dell'automazione rivisti, i report sulle fatture elettroniche ampliati, i nuovi controlli di importazione e altre aggiunte oltre a questo rilascio VESTA.
+> **Stai confrontando con NOVA?** Il [confronto delle funzionalità del rilascio minore NOVA](nova-minor-release-4-november-2026.md#what-nova-adds-for-customers) copre l'Assistente di convalida, i miglioramenti dell'automazione rivisti, i report sulle fatture elettroniche ampliati, i nuovi controlli di importazione e altre aggiunte oltre a questo rilascio VESTA.
 >
 > **Prossimo hotfix VESTA: [11 novembre 2026 (pianificato)](vesta-hotfix-11-november-2026.md).** Tutte le funzionalità precedentemente disponibili come beta in VESTA sono ora funzionalità NOVA regolari e diventeranno funzionalità VESTA regolari con quell'hotfix.
 

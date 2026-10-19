@@ -1,10 +1,18 @@
 # DocBits Release Lifecycle Strategy
 
-**NOVA R1.1 availability:** Available in the sandbox since **16 October 2026**. The production release is planned for **4 November 2026**.
-
 With the rollout of the upcoming minor release R1.1,&#x20;DocBits will introduce a new release lifecycle strategy based on two release channels: VESTA and NOVA.
 
 **NOVA** is the channel for introducing new major and minor releases, such as **Rx** and **Rx.y**. **VESTA** continues to provide the existing production release.
+
+{% hint style="success" %}
+**Important: One URL for both VESTA and NOVA**
+
+Continue using your usual DocBits application URL. VESTA and NOVA do not have separate access URLs: both release channels are accessed through the same standard URL you already use for the corresponding environment.
+
+To switch channels, go to **Settings > Company Information > Release Channel** and select **VESTA** or **NOVA**. There is no need to log out and log in again. Your next click in the application automatically takes you to the release on the selected channel.
+
+Before switching, check that both channels are ready and available in your environment, as explained in [Check environment availability before switching](#important-check-environment-availability-before-switching).
+{% endhint %}
 
 ## Release channels
 

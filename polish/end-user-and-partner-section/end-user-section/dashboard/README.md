@@ -12,6 +12,17 @@ Dostępne funkcje zależą od uprawnień, statusu dokumentu i modułów włączo
 
 <figure><img src="../../../.gitbook/assets/dashboard-overview-pl.png" alt="Aktualny pulpit: wyszukiwanie, narzędzia, zapisane widoki, typy dokumentów i tabela. Wartości dokumentów ukryto w celu ochrony danych."><figcaption><p>Aktualny pulpit: wyszukiwanie, narzędzia, zapisane widoki, typy dokumentów i tabela. Wartości dokumentów ukryto w celu ochrony danych.</p></figcaption></figure>
 
+## Wyszukiwanie dokumentów bez modułu pełnotekstowego i z nim
+
+Film zaczyna się przy biurku fikcyjnej klientki w Warszawie. Następnie prawdziwy polski interfejs DocBits zajmuje cały ekran. Pierwszy przykład pokazuje wyszukiwanie po nazwie bez modułu pełnotekstowego: wpisz fragment nazwy pliku, naciśnij Enter i sprawdź wynik. Drugi pokazuje, jak uwzględnić treść dokumentów po włączeniu modułu pełnotekstowego.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/pl.mp4" %}
+
+[Otwórz film z polskim głosem](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/pl.mp4) · [Polskie napisy (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/pl.vtt) · [Polska transkrypcja](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/pl.txt)
+
+Klientka i biuro zostały wygenerowane przez AI. Czynności i wyniki wyszukiwania pochodzą z rzeczywistych nagrań na koncie testowym DocBits.
+
+
 ## Rozpoczęcie codziennej pracy
 
 1. Sprawdź aktywną organizację i ewentualnie podorganizację.

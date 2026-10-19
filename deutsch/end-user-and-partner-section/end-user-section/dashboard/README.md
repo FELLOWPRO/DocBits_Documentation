@@ -24,7 +24,7 @@ Das kurze Suchbeispiel beginnt am Arbeitsplatz einer fiktiven Anwenderin in Köl
 
 Im Video zeigt Ihnen die Anwenderin, wie Sie mit den weiteren Dashboard-Funktionen Ihre Dokumente organisieren, bearbeiten und Ihre persönliche Ansicht einrichten.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v1/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v2/de.mp4" %}
 
 ## Die tägliche Arbeit beginnen
 

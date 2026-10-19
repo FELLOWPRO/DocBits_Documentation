@@ -10,7 +10,7 @@ Pierwsze trzy rozdziały pokazują rzeczywisty edytor DocBits ze szkicami demons
 
 Każdy film zawiera napisy WebVTT i rozwijaną transkrypcję.
 
-1. [Edytor i płótno](#builder-and-canvas) · 5:26
+1. [Edytor i płótno](#builder-and-canvas) · 3:15
 2. [Węzły i ścieżki](#nodes-and-routes) · 1:44
 3. [Zmienne, testy i aktywacja](#variables-tests-and-activation) · 1:53
 4. [Znajdź właściwe wykonanie](#find-the-relevant-execution) · 1:44
@@ -20,22 +20,22 @@ Każdy film zawiera napisy WebVTT i rozwijaną transkrypcję.
 
 Poznaj Piotra i śledź jego wyjaśnienia w rzeczywistym polskim interfejsie DocBits. Sprawdza pulpit, listę workflow i licencję, a następnie otwiera niezapisany szkic w projektancie. Krok po kroku nadaje nazwę workflow, konfiguruje kontrolę kwoty oraz dwie akcje, rozmieszcza karty i łączy obie ścieżki. Następnie pokazuje przygotowanie testów z dokumentem lub własnymi danymi. Konto demonstracyjne nie ma subskrypcji Advanced Workflow i blokuje walidację; szkic pozostaje niezapisany i nieaktywny.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-paced-e/pl.mp4" %}
 
-[Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.vtt) · [Transkrypcja (tekst)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.txt) · 5:26
+[Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-paced-e/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-paced-e/pl.vtt) · [Transkrypcja (tekst)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-paced-e/pl.txt) · 3:15
 
 | W tym filmie | Początek |
 | --- | --- |
-| Poznaj administratora | [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=0) |
-| Sprawdź dostęp | [0:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=5) |
-| Nazwij workflow | [0:39](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=39) |
-| Skonfiguruj kontrolę kwoty | [1:04](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=64) |
-| Dodaj akcję Approval | [2:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=122) |
-| Dodaj akcję Standard | [2:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=151) |
-| Rozmieść karty | [2:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=178) |
-| Połącz ścieżki | [3:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=215) |
-| Przygotuj testy | [4:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=259) |
-| Walidacja, zapis i aktywacja | [4:54](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/pl.mp4#t=294) |
+| Poznaj administratora | [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-paced-e/pl.mp4#t=0) |
+| Sprawdź dostęp | [0:04](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-paced-e/pl.mp4#t=4) |
+| Nazwij workflow | [0:29](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-paced-e/pl.mp4#t=29) |
+| Skonfiguruj kontrolę kwoty | [0:42](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-paced-e/pl.mp4#t=42) |
+| Dodaj akcję Approval | [1:08](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-paced-e/pl.mp4#t=68) |
+| Dodaj akcję Standard | [1:29](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-paced-e/pl.mp4#t=89) |
+| Rozmieść karty | [1:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-paced-e/pl.mp4#t=109) |
+| Połącz ścieżki | [2:04](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-paced-e/pl.mp4#t=124) |
+| Przygotuj testy | [2:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-paced-e/pl.mp4#t=148) |
+| Walidacja, zapis i aktywacja | [2:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-paced-e/pl.mp4#t=169) |
 
 <details>
 <summary>Transkrypcja</summary>
@@ -62,7 +62,7 @@ Teraz dodaję kartę akcji z kategorii Pole dokumentu. Akcja ustawia wartość p
 
 **Dodaj akcję Standard**
 
-Dodaję drugą kartę z tą samą akcją. Tym razem przykładowe pole otrzymuje wartość Standard. Obie karty są skonfigurowane. Potrzebują jeszcze połączeń, które określą wykonywaną akcję.
+Dodaję drugą kartę z tą samą akcją. Akcja ustawia wartość pola dokumentu. Używam przykładowego klucza approval_route. Tym razem przykładowe pole otrzymuje wartość Standard. Obie karty są skonfigurowane. Potrzebują jeszcze połączeń, które określą wykonywaną akcję.
 
 **Rozmieść karty**
 

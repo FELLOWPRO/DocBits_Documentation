@@ -1,4 +1,4 @@
-# NOVA – Wydanie główne 4 listopada 2026 r.
+# NOVA – Wydanie minor 4 listopada 2026 r.
 
 **Dostępność NOVA R1.1:** Wersja jest dostępna w środowisku testowym od **16 października 2026 r.** Wydanie produkcyjne jest planowane na **4 listopada 2026 r.**
 

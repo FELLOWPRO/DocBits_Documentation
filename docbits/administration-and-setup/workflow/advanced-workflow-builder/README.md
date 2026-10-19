@@ -10,40 +10,56 @@ Use a [Standard Workflow](../standard-workflow-builder/README.md) for a linear *
 
 ## Watch: an invoice routing example
 
-Watch a configured workflow in the real DocBits interface: set an invoice amount condition, configure two actions, connect their routes and prepare test cases.
+Meet Mike, a fictional, AI-generated administrator, then follow his explanation and real actions in the English DocBits interface: inspect Workflow List and License, name a workflow, configure an invoice amount check and two actions, arrange the cards, connect both routes and inspect the document and Custom Data test options.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas-admin/v1/en.mp4" %}
 
-[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/en.vtt)
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas-admin/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas-admin/v1/en.vtt) · [Transcript (text)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas-admin/v1/en.txt) · 5:00
 
-The recording shows an unsaved demonstration draft. The fields `total_amount` and `approval_route` are example keys. `Approval` and `Standard` label the routes; configure the actual business actions for your process.
+The recording shows an unsaved demonstration draft. The fields `total_amount` and `approval_route` are example keys. `Approval` and `Standard` label the routes; configure the actual business actions for your process. This demo account has no Advanced Workflow subscription, so validation is blocked and no test, server save or activation is performed.
 
 <details>
 <summary>Transcript</summary>
 
-**An invoice with two routes**
+**Meet the administrator**
 
-Here is a real Advanced Workflow in DocBits. An invoice amount check leads to two actions. The connections define which action runs. This example uses an unsaved draft and demonstration fields.
+I look after DocBits here. Let me show you how I build an invoice check and connect its two routes.
+
+**Check workflow access**
+
+I start on Workflow Dashboard and open Workflow List. Then I check License. Workflow and Advanced Workflow both need active access. With those enabled, New Workflow offers Advanced Workflow. This documentation account has no active workflow subscription, so this video continues with an unsaved designer preview.
+
+**Name the workflow**
+
+I'm working in the real DocBits designer. First, I give this draft a clear name. We'll check an invoice amount, then use two simple actions to show the possible routes. This demonstration stays unsaved.
 
 **Configure the amount check**
 
-Open Add, choose And, and select a Document Field condition. Set the amount field, choose Greater Than, and enter one thousand. Use the exact field key from your document configuration.
+I open Add and choose And. Under Document Field, I select the Docfield condition. I set the field to total amount. Then I choose Greater Than. And enter one thousand. Use your own document field key. Exactly one thousand does not pass this comparison.
 
-**Configure the actions**
+**Add the Approval action**
 
-Add two Then cards. Each card sets the demonstration field approval route. One writes Approval; the other writes Standard. These values label the route. Configure your business actions for a production workflow.
+Now I add a Then card from Document Field. The action sets a document field. I use the demonstration key approval route, and enter Approval. This labels the route. A real approval process needs its own business actions.
 
-**Connect the result outputs**
+**Add the Standard action**
 
-Connect Start to the condition input. Connect blue Success to Approval, and orange Failed Condition to Standard. The red Error output handles evaluation errors separately. Card position alone does not create a route.
+I add a second Then card using the same action. This time, the demonstration field gets the value Standard. Both cards are configured. They still need connections to define which action runs.
 
-**Prepare the test cases**
+**Arrange the canvas**
 
-Open Test in the toolbar. Choose a test document, or enter complete document data as JSON. Check amounts above, below, and exactly at one thousand. Also check missing values. Inspect the node results after execution.
+I drag the cards into a readable layout. The two actions go on the right. The condition sits in the middle, with Start on the left. Moving cards changes their position. It does not create a connection.
+
+**Connect the routes**
+
+I drag from Start's output to the condition's input. The Success route goes to Approval, with a blue connection. The orange Failed Condition route goes to Standard. Red Error is a separate output for evaluation failures. Here it remains unconnected. In a production workflow, decide how you will handle those failures.
+
+**Prepare test cases**
+
+The toolbar Test button opens Select Test Document. I can select a demonstration document, or prepare complete Custom Data. Test amounts above, below, and exactly at one thousand. Check a missing amount too. This account has no Advanced Workflow subscription. I'm showing test preparation, not an executed result.
 
 **Validate, save and activate**
 
-Validate the connections and card settings. Save explicitly to write the workflow to the server, then check activation separately. Automatic browser drafts do not replace Save. Execution and log access require the appropriate module and subscription.
+I locate Validate to check connections and card settings. This account blocks validation because the subscription is unavailable. In an enabled account, I would save explicitly to the server. Then check activation separately. The switch is disabled before the first save. The automatic draft indicator refers to a local browser copy. It does not mean this workflow is saved or enabled.
 
 </details>
 

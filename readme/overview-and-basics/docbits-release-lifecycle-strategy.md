@@ -1,10 +1,18 @@
 # Estrategia del ciclo de vida de versiones de DocBits
 
-**Disponibilidad de NOVA R1.1:** Disponible en el entorno de pruebas desde el **16 de octubre de 2026**. El lanzamiento en producción está previsto para el **4 de noviembre de 2026**.
+Con el despliegue de la próxima versión menor R1.1, DocBits introducirá una nueva estrategia de ciclo de vida de versiones basada en dos canales de versiones: VESTA y NOVA.
 
-DocBits utiliza dos canales de versiones, **VESTA** y **NOVA**, para introducir nuevas versiones y dar a su organización tiempo para evaluarlas antes de adoptarlas. Durante la producción en paralelo, usted decide si cambia a la nueva versión y cuándo hacerlo. A continuación, FELLOWPRO gestiona la transición (rollover) que la convierte en la versión de producción común para todos los clientes.
+**NOVA** es el canal para introducir nuevas versiones mayores y menores, como **Rx** y **Rx.y**. **VESTA** continúa proporcionando la versión de producción existente.
 
-Los números de versión de esta guía (R1.0.x, R1.1.x y R1.2) son ilustrativos. El mismo ciclo de vida se repite con las versiones sucesivas; `x` representa las actualizaciones dentro de una serie de versiones.
+{% hint style="success" %}
+**Importante: una única URL para VESTA y NOVA**
+
+Continúe utilizando la URL habitual de su aplicación DocBits. VESTA y NOVA no tienen URL de acceso independientes: ambos canales de versiones se utilizan a través de la misma URL estándar que ya emplea para el entorno correspondiente.
+
+Para cambiar de canal, vaya a **Settings > Company Information > Release Channel** y seleccione **VESTA** o **NOVA**. No es necesario cerrar sesión y volver a iniciarla. Su siguiente clic en la aplicación le lleva automáticamente a la versión del canal seleccionado.
+
+Antes de cambiar, compruebe que ambos canales están preparados y disponibles en su entorno, como se explica en [Compruebe la disponibilidad del entorno antes de cambiar](#importante-compruebe-la-disponibilidad-del-entorno-antes-de-cambiar).
+{% endhint %}
 
 ## Canales de versiones
 
@@ -44,10 +52,13 @@ VESTA R1.0.x y NOVA R1.1.x son ambas versiones de producción activas. Su organi
 Para adoptar NOVA durante esta fase:
 
 1. Evalúe la versión en el entorno sandbox de NOVA.
-2. Decida cuándo está preparada su organización para utilizarla en producción.
-3. Cambie de VESTA a NOVA mediante el ajuste **Release Channel** de la aplicación DocBits.
+2. Consulte el anuncio de la versión o confirme con el soporte de FELLOWPRO que ambos entornos de producción están preparados y disponibles para el cambio.
+3. Decida cuándo está preparada su organización para utilizar la nueva versión en producción.
+4. En DocBits, vaya a **Settings > Company Information > Release Channel** y seleccione **NOVA**.
 
-Este cambio se realiza en modalidad de autoservicio. FELLOWPRO no selecciona qué clientes deben pasar a NOVA. Puede seguir utilizando VESTA durante toda la producción en paralelo y adoptar la nueva versión mediante la transición posterior.
+Durante la producción en paralelo, también puede volver a VESTA yendo a **Settings > Company Information > Release Channel** y seleccionando **VESTA**.
+
+El cambio de canal se realiza en modalidad de autoservicio. FELLOWPRO no selecciona qué clientes deben pasar a NOVA. Puede seguir utilizando VESTA durante toda la producción en paralelo y adoptar la nueva versión mediante la transición posterior.
 
 ## Transición de versiones y el siguiente ciclo
 
@@ -75,28 +86,57 @@ El siguiente diagrama ilustra con mayor detalle el ciclo de versiones descrito a
 
 ### Frecuencia de las versiones
 
-FELLOWPRO prevé actualmente un ciclo de versiones de aproximadamente **3–4 meses**. Este intervalo refleja nuestra estimación de planificación actual; no constituye un calendario fijo, una duración máxima del ciclo ni una garantía de fecha de publicación o de transición.
+La frecuencia prevista difiere entre las versiones mayores y menores introducidas a través de NOVA y los hotfixes aplicados a las versiones de producción en VESTA y NOVA.
 
-El momento de cada transición y de la reutilización de NOVA depende tanto de **que la versión esté preparada como de la aceptación de la transición prevista por parte de todos los clientes**. Si se necesita más tiempo para que la versión esté preparada, para atender las inquietudes de los clientes o para obtener la aceptación de cada uno de ellos, el ciclo se ampliará y podrá durar más de cuatro meses.
+#### Versiones mayores y menores a través de NOVA
+
+FELLOWPRO prevé actualmente un ciclo de aproximadamente **3–4 meses para las versiones mayores y menores** introducidas a través del canal de versiones NOVA, como **Rx** y **Rx.y**. Esta estimación se aplica al ciclo de vida descrito anteriormente, incluida la posterior transición a VESTA y la reutilización de NOVA para la próxima versión. No describe la frecuencia de los hotfixes.
+
+Este intervalo refleja nuestra estimación de planificación actual; no constituye un calendario fijo, una duración máxima del ciclo ni una garantía de fecha de publicación o de transición. El momento de cada transición y de la reutilización de NOVA depende tanto de **que la versión esté preparada como de la aceptación de la transición prevista por parte de todos los clientes**. Si se necesita más tiempo para que la versión esté preparada, para atender las inquietudes de los clientes o para obtener la aceptación de cada uno de ellos, el ciclo se ampliará y podrá durar más de cuatro meses.
 
 FELLOWPRO comunica con antelación cada transición prevista. Cualquier plazo orientativo queda sujeto al cumplimiento de estas condiciones.
+
+#### Hotfixes en la producción de VESTA
+
+Se espera que los hotfixes de la versión de producción de VESTA se publiquen aproximadamente **una vez al mes, o a intervalos algo mayores**. Se trata de una frecuencia orientativa, no de un calendario fijo ni de una fecha de entrega garantizada.
+
+#### Hotfixes de estabilización en la producción de NOVA
+
+No es posible especificar una frecuencia general para los hotfixes de estabilización en la producción de NOVA. NOVA introduce versiones completamente nuevas, por lo que el momento y la frecuencia de estos hotfixes dependen de las necesidades de estabilización de cada versión concreta. Por ello, no siguen la frecuencia mensual orientativa de VESTA ni el ciclo de 3–4 meses de las versiones mayores y menores.
 
 ## Responsabilidades y elección del cliente
 
 | Transición | Quién la gestiona | Qué esperar |
 | --- | --- | --- |
-| **Cambio de VESTA a NOVA durante la fase 3** | Su organización | Evalúe NOVA en el entorno sandbox y decida si cambia y cuándo hacerlo mediante el ajuste Release Channel de la aplicación. |
+| **Cambio entre VESTA y NOVA durante la fase 3** | Su organización | Evalúe NOVA en el entorno sandbox y decida si cambia y cuándo hacerlo. Utilice **Settings > Company Information > Release Channel** para seleccionar NOVA o volver a VESTA durante la producción en paralelo. |
 | **Transición de NOVA R1.1.x a VESTA R1.1.x** | FELLOWPRO | Revise el anuncio anticipado por correo electrónico, comunique cualquier inquietud u objeción y confirme su aceptación de la transición prevista. FELLOWPRO procede una vez que la versión está preparada y todos los clientes la han aceptado. |
 
+## Importante: compruebe la disponibilidad del entorno antes de cambiar
+
+Cambie entre VESTA y NOVA mediante **Settings > Company Information > Release Channel** únicamente cuando las versiones estén disponibles en paralelo y listas para su uso en el **entorno correspondiente de ambos canales**. La disponibilidad en sandbox y en producción debe evaluarse por separado:
+
+- **Sandbox:** Puede cambiar de VESTA Sandbox a NOVA Sandbox una vez que la nueva versión esté preparada y disponible en NOVA Sandbox, mientras VESTA Sandbox siga disponible. El mismo requisito de disponibilidad se aplica al volver atrás.
+- **Producción:** Puede cambiar entre VESTA Production y NOVA Production solo mientras ambas versiones de producción estén preparadas y disponibles en paralelo. La disponibilidad en NOVA Sandbox no significa que NOVA Production esté lista para su uso.
+
+Cambiar cuando el entorno correspondiente no está preparado o disponible puede interrumpir sus operaciones. FELLOWPRO envía correos electrónicos de anuncio de versión unos días antes de que las versiones estén disponibles en sandbox o en producción. Consulte estos anuncios antes de cambiar. Si no está seguro de si un cambio está disponible o es adecuado para su organización, póngase en contacto con el soporte de FELLOWPRO para obtener confirmación.
+
+**Control de disponibilidad previsto:** FELLOWPRO está trabajando en un control Sí/No que permitirá al soporte establecer el ajuste Release Channel como de solo lectura o habilitar el cambio de canal con independencia de un despliegue de software. Cuando este control esté disponible, el soporte lo utilizará para habilitar el cambio cuando los entornos correspondientes estén preparados y para mantener el ajuste en solo lectura en caso contrario. Con ello se pretende que los clientes puedan cambiar de forma segura entre VESTA y NOVA cuando el ajuste esté habilitado. Hasta que se introduzca este control, un ajuste editable por sí solo no debe considerarse una confirmación de que el cambio es adecuado; siga los anuncios de versión o confirme con el soporte.
+
 ## Preguntas frecuentes
+
+### ¿Cómo sabemos si es seguro cambiar entre VESTA y NOVA?
+
+Consulte el anuncio de la versión del entorno que desea utilizar o pida al soporte de FELLOWPRO que confirme que el cambio es adecuado. Ambos entornos correspondientes deben estar preparados y disponibles en paralelo; que el sandbox esté preparado no confirma que lo esté producción. Consulte [Importante: compruebe la disponibilidad del entorno antes de cambiar](#importante-compruebe-la-disponibilidad-del-entorno-antes-de-cambiar) más arriba para obtener la guía completa, incluido el control previsto para habilitar o deshabilitar el cambio de canal.
 
 ### ¿Podemos permanecer en VESTA mientras NOVA está disponible en producción?
 
 Sí. Durante la fase 3, puede permanecer en VESTA o cambiar a NOVA cuando su organización esté preparada. En la transición posterior, la nueva versión pasa a ser VESTA y la versión anterior se retira.
 
-### ¿Cómo cambiamos a NOVA?
+### ¿Cómo cambiamos a NOVA o volvemos a VESTA?
 
-Una vez que NOVA esté disponible en producción, utilice el ajuste **Release Channel** de la aplicación DocBits. Su organización toma esta decisión de forma independiente, en función de sus necesidades y de su evaluación de la versión en el entorno sandbox de NOVA.
+En primer lugar, compruebe que el entorno correspondiente está preparado y disponible en ambos canales, como se explica en [Compruebe la disponibilidad del entorno antes de cambiar](#importante-compruebe-la-disponibilidad-del-entorno-antes-de-cambiar). La disponibilidad en sandbox y en producción son independientes.
+
+Durante la fase 3, vaya a **Settings > Company Information > Release Channel** en DocBits y seleccione **NOVA** para adoptar la nueva versión de producción, o **VESTA** para volver a la versión de producción actual de VESTA. Su organización toma esta decisión de forma independiente, en función de sus necesidades y de su evaluación de NOVA en el entorno sandbox. Esta elección se aplica mientras ambas versiones estén disponibles en paralelo; la versión anterior de VESTA se retira con la transición.
 
 ### ¿Cuándo está disponible NOVA para su uso en producción?
 
@@ -118,6 +158,6 @@ Su cambio a NOVA durante la fase 3 es una decisión de autoservicio sobre cuánd
 
 NOVA se reutiliza para el desarrollo de la próxima versión, R1.2 en este ejemplo. VESTA proporciona R1.1.x mientras NOVA vuelve a avanzar por el desarrollo, QA/UAT y la producción en paralelo.
 
-### ¿Está garantizada una nueva versión cada tres o cuatro meses?
+### ¿Está garantizada una versión mayor o menor cada tres o cuatro meses?
 
-No. La frecuencia aproximada de 3–4 meses es una estimación de planificación actual, no un calendario garantizado ni una duración máxima. La transición y la reutilización de NOVA requieren tanto que la versión esté preparada como la aceptación de todos los clientes. Si alguna de estas condiciones requiere más tiempo, el ciclo se ampliará y podrá superar los cuatro meses. FELLOWPRO comunica con antelación cada transición prevista.
+No. La frecuencia aproximada de 3–4 meses para las versiones mayores y menores introducidas a través de NOVA es una estimación de planificación actual, no un calendario garantizado ni una duración máxima. La transición y la reutilización de NOVA requieren tanto que la versión esté preparada como la aceptación de todos los clientes. Si alguna de estas condiciones requiere más tiempo, el ciclo se ampliará y podrá superar los cuatro meses. FELLOWPRO comunica con antelación cada transición prevista.

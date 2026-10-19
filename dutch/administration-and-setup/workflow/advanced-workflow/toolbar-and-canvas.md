@@ -2,67 +2,36 @@
 
 ## Video: Bouwer en canvas
 
-Maak kennis met Jan en volg zijn uitleg in de echte Nederlandstalige DocBits-interface. Hij controleert het workflowdashboard, de workflowlijst en de licentie en opent daarna een niet-opgeslagen concept in de ontwerper. Stap voor stap geeft hij de workflow een naam, stelt hij de bedragcontrole en twee acties in, plaatst hij de kaarten en verbindt hij beide routes. Daarna laat hij zien hoe je tests voorbereidt met een document of eigen gegevens. Het demoaccount heeft geen Advanced Workflow-abonnement en blokkeert de validatie; het concept blijft niet opgeslagen en inactief.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/nl.mp4" %}
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/nl.mp4" %}
-
-[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/nl.mp4) · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/nl.vtt) · [Transcript (tekst)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/nl.txt) · 4:54
-
-| In deze video | Begin |
-| --- | --- |
-| Maak kennis met de beheerder | [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/nl.mp4#t=0) |
-| Toegang controleren | [0:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/nl.mp4#t=5) |
-| De workflow een naam geven | [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/nl.mp4#t=37) |
-| De bedragcontrole instellen | [0:54](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/nl.mp4#t=54) |
-| De actie Approval toevoegen | [1:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/nl.mp4#t=88) |
-| De actie Standard toevoegen | [1:56](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/nl.mp4#t=116) |
-| Kaarten ordenen | [2:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/nl.mp4#t=144) |
-| Routes verbinden | [2:56](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/nl.mp4#t=176) |
-| Tests voorbereiden | [3:41](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/nl.mp4#t=221) |
-| Valideren, opslaan en activeren | [4:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/review/advanced_workflows_canvas-admin/20261019-small-monitor-b/nl.mp4#t=258) |
+[Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_canvas/v2/nl.vtt) · 1:38
 
 <details>
-<summary>Transcript</summary>
+<summary>Transcriptie</summary>
 
-**Maak kennis met de beheerder**
+**Een factuur met twee routes**
 
-Ik beheer DocBits. We maken een factuurcontrole.
-
-**Toegang controleren**
-
-Ik begin op het workflowdashboard en open de workflowlijst. Daarna controleer ik de licentie. Workflow en Advanced Workflow hebben allebei actieve toegang nodig. Als beide zijn ingeschakeld, biedt Nieuwe workflow ook Advanced Workflow aan. Dit documentatieaccount heeft geen actieve workflowlicentie. Daarom ga ik verder met een niet opgeslagen voorbeeld in de ontwerper.
-
-**De workflow een naam geven**
-
-Ik werk in de echte DocBits-ontwerper. Eerst geef ik het concept een duidelijke naam. We controleren een factuurbedrag en gebruiken twee eenvoudige acties om de mogelijke routes te tonen. Dit voorbeeld blijft onopgeslagen.
+Dit is een echte geavanceerde workflow in DocBits. Een controle van het factuurbedrag leidt naar twee acties. De verbindingen bepalen welke actie wordt uitgevoerd. Het voorbeeld gebruikt een niet-opgeslagen concept en demonstratievelden.
 
 **De bedragcontrole instellen**
 
-Ik open het menu om iets toe te voegen en kies een voorwaardekaart. Onder Documentveld kies ik de Docfield-voorwaarde. Als veld vul ik total_amount in. Dan kies ik de vergelijking groter dan. En voer ik duizend in. Gebruik de veldsleutel van uw eigen document. Precies duizend voldoet niet aan deze vergelijking.
+Open Toevoegen, kies And en selecteer een voorwaarde voor een documentveld. Stel het bedragveld in, kies Groter dan en voer duizend in. Gebruik de exacte veldsleutel uit uw documentconfiguratie.
 
-**De actie Approval toevoegen**
+**De acties instellen**
 
-Nu voeg ik een actiekaart uit de categorie Documentveld toe. Deze actie stelt een documentveld in. Ik gebruik de voorbeeldsleutel approval_route. En vul de waarde Approval in. Dit geeft de route een herkenbare waarde. Een echt goedkeuringsproces heeft eigen bedrijfsacties nodig.
+Voeg twee Then-kaarten toe. Beide stellen het demonstratieveld approval route in. De ene schrijft Approval, de andere Standard. Deze waarden geven de route aan. Stel voor een productieworkflow uw bedrijfsacties in.
 
-**De actie Standard toevoegen**
+**De resultaatuitgangen verbinden**
 
-Ik voeg een tweede kaart met dezelfde actie toe. Dit keer krijgt het voorbeeldveld de waarde Standard. Beide kaarten zijn ingesteld. Er zijn nog verbindingen nodig om te bepalen welke actie wordt uitgevoerd.
+Verbind Start met de ingang van de voorwaarde. Verbind de blauwe succesuitgang met Approval en de oranje uitgang voor een onware voorwaarde met Standard. De rode uitgang behandelt evaluatiefouten afzonderlijk. Alleen de positie van een kaart vormt geen route.
 
-**Kaarten ordenen**
+**De testgevallen voorbereiden**
 
-Ik sleep de kaarten naar een leesbare indeling. De twee acties komen rechts. De voorwaarde staat in het midden, met Start links. Verplaatsen verandert alleen de positie. Het maakt geen verbinding.
-
-**Routes verbinden**
-
-Ik sleep van de uitgang van Start naar de ingang van de voorwaarde. De succesroute loopt via een blauwe verbinding naar Approval. De oranje route voor een onjuiste voorwaarde loopt naar Standard. De rode foutuitgang is een aparte uitgang voor evaluatiefouten. Hier blijft die zonder verbinding. Bepaal voor een productieworkflow hoe u zulke fouten afhandelt.
-
-**Tests voorbereiden**
-
-De testknop in de werkbalk opent de keuze van een testdocument. Ik kan een voorbeelddocument kiezen of volledige aangepaste gegevens voorbereiden. Test bedragen boven, onder en precies op duizend. Controleer ook een ontbrekend bedrag. Dit account heeft geen Advanced Workflow-licentie. Ik toon de voorbereiding van een test, geen uitgevoerd resultaat.
+Open Testen in de werkbalk. Kies een testdocument of voer de volledige documentgegevens in als JSON. Controleer bedragen boven, onder en precies op duizend, en ontbrekende waarden. Bekijk na de uitvoering de resultaten van de knooppunten.
 
 **Valideren, opslaan en activeren**
 
-Validatie controleert verbindingen en kaartinstellingen. Bij dit account blokkeert de ontbrekende licentie de validatie. Met een account dat toegang heeft, zou ik uitdrukkelijk op de server opslaan. Daarna controleer ik de activering apart. Vóór de eerste opslag is de schakelaar uitgeschakeld. De aanduiding voor het automatische concept verwijst naar een lokale browserkopie. Die betekent niet dat de workflow opgeslagen of ingeschakeld is.
+Valideer de verbindingen en kaartinstellingen. Sla de workflow expliciet op de server op en controleer de activering afzonderlijk. Automatische browserconcepten vervangen Opslaan niet. Voor uitvoering en logboeken zijn de juiste module en het juiste abonnement nodig.
 
 </details>
 

@@ -158,7 +158,7 @@
       * [Configuring Single Sign-On (SSO)](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/README.md)
         * [Configuration SSO d'Infor](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/README.md)
           * [V1 : SSO Infor Ming.le Portal](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/v1.md)
-          * [V2 : SSO Infor OS Portal](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/v2.md)
+          * [V2 : SSO du portail Infor OS Portal](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/v2.md)
           * [Azure SSO](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/azure-sso.md)
       * [Configuration du fournisseur de services d'identité](administration-and-setup/settings/global-settings/integration/identity-service-provider-configuration.md)
       * [Best practices](administration-and-setup/settings/global-settings/integration/best-practices.md)

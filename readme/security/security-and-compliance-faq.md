@@ -2,6 +2,12 @@
 
 **Fornitore:** DocBits di FELLOWPRO AG | **Hosting:** Francoforte, Germania | **Certificazione ISO 27001** | **Data:** 2026-03-04
 
+Le informazioni sull’archiviazione delle credenziali e su TLS negli endpoint pubblici sono state verificate il **16 ottobre 2026**. La pagina seguente descrive l’ambito confermato e i dettagli che richiedono ancora una conferma per lo specifico ambiente. Vedere [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md).
+
+I dettagli sulla crittografia a riposo sono stati verificati il **16 ottobre 2026** sulla base della documentazione di sicurezza DigitalOcean e dei metadati dei servizi. Vedere [Crittografia dei dati a riposo](encryption-at-rest.md).
+
+Ulteriori informazioni sulla sicurezza sono disponibili in [Cookie e archiviazione del browser](cookies-and-browser-storage.md), [Gestione delle vulnerabilità](vulnerability-management.md) e [Altri controlli di sicurezza](other-security-controls.md).
+
 ---
 
 ## Legenda dello Stato
@@ -19,11 +25,11 @@
 
 ### 1. Dove esattamente è ospitato l'ambiente di produzione?
 
-**Risposta:** Ospitato su infrastruttura cloud AWS a Francoforte, Germania. Utilizza S3 per l'archiviazione e OpenSearch per l'indicizzazione dei log. DocBits è certificato ISO 27001. Tutte le connessioni sono protette tramite SSH, HTTPS e protocolli di crittografia standard del settore.
+**Risposta:** L’ambiente di produzione UE è ospitato sull’infrastruttura cloud DigitalOcean a Francoforte, Germania. DocBits utilizza DigitalOcean Spaces per l’archiviazione e servizi gestiti PostgreSQL, OpenSearch e Valkey. DocBits è certificato ISO 27001. Vedere [Crittografia dei dati a riposo](encryption-at-rest.md) e [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md) per l’ambito della crittografia.
 
 **Stato:** ✅ Confermato
 
-**Note:** Francoforte AWS confermato (S3 + OpenSearch). Richiedere il codice della regione AWS specifica (eu-central-1) e se singola o multi-AZ.
+**Note:** DigitalOcean Francoforte: i tipi di servizi di database gestiti sono stati confermati dai metadati dell’infrastruttura il 16 ottobre 2026; l’uso di Spaces è documentato in queste FAQ.
 
 ---
 
@@ -47,7 +53,7 @@ Calendario dei backup: Backup giornalieri, settimanali, trimestrali e annuali.
 
 **Stato:** ✅ Confermato
 
-**Note:** Calendario completo dei backup (giornaliero/settimanale/trimestrale/annuale) su due posizioni nell'UE. Tutti i dati rimangono all'interno dell'UE. Confermare la crittografia dei backup e la frequenza del test di ripristino.
+**Note:** Calendario completo dei backup (giornaliero/settimanale/trimestrale/annuale) su due posizioni nell'UE. Tutti i dati rimangono all'interno dell'UE. Confermare la crittografia dei backup e la frequenza del test di ripristino. La crittografia dei backup dei database gestiti dal fornitore è descritta in [Crittografia dei dati a riposo](encryption-at-rest.md); questo non verifica ogni copia del calendario generale dei backup.
 
 ---
 
@@ -67,11 +73,13 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 ### 5. I dati sono crittografati a riposo e in transito?
 
-**Risposta:** Tutte le connessioni tra i componenti sono protette utilizzando protocolli di crittografia standard del settore (SSH, HTTPS). La certificazione ISO 27001 richiede controlli di crittografia.
+**Risposta:** Gli endpoint pubblici `app.docbits.com`, `auth.docbits.com` e `api.docbits.com` supportano HTTPS con TLS 1.2 e TLS 1.3. Le verifiche del 16 ottobre 2026 hanno confermato il rifiuto di TLS 1.0 e TLS 1.1. Le password e le chiavi create tramite la Gestione delle chiavi API sono protette mediante hashing unidirezionale. L’hashing è distinto dalla crittografia di database, archivi e backup.
 
-**Stato:** ✅ Confermato
+**A riposo:** DigitalOcean Managed Databases utilizza la crittografia dell’intero volume con LUKS e AES-256-XTS; i suoi backup gestiti utilizzano AES-256-CTR. Spaces utilizza AES-XTS a 256 bit sui dischi fisici. [Crittografia dei dati a riposo](encryption-at-rest.md) descrive metodi, gestione delle chiavi e copertura dei backup.
 
-**Note:** Confermare gli standard di crittografia specifici (ad es., AES-256 a riposo, TLS 1.2+ in transito).
+**Stato:** ✅ Parziale
+
+**Note:** Questo copre i servizi gestiti indicati. Esportazioni, archivi e copie aggiuntivi, l’eventuale crittografia per campo e ogni connessione interna richiedono una conferma specifica per l’ambiente. La crittografia dell’archiviazione non dimostra restrizioni di accesso per il personale. [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md) spiega hashing e differenze di accesso.
 
 ---
 
@@ -161,11 +169,11 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 ### 14. Quanto tempo vengono conservati i log di accesso?
 
-**Risposta:** I log sono archiviati su AWS S3 a Francoforte e OpenSearch. I log accessibili ai clienti sono conservati per 30 giorni. I log interni sono conservati per 3 mesi.
+**Risposta:** I log sono archiviati su DigitalOcean Spaces a Francoforte e OpenSearch. I log accessibili ai clienti sono conservati per 30 giorni. I log interni sono conservati per 3 mesi.
 
 **Stato:** ✅ Confermato
 
-**Note:** S3 + OpenSearch a Francoforte. Conservazione di 30 giorni per l'accesso dei clienti / 3 mesi per la conservazione interna. Confermare se i log sono immutabili/a prova di manomissione.
+**Note:** DigitalOcean Spaces + OpenSearch a Francoforte. Conservazione di 30 giorni per l'accesso dei clienti / 3 mesi per la conservazione interna. Confermare se i log sono immutabili/a prova di manomissione.
 
 ---
 
@@ -175,7 +183,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Stato:** ✅ Confermato
 
-**Note:** Conservazione configurabile dal cliente (30 giorni / 3 mesi). Confermare: l'eliminazione include tutte le copie (S3, OpenSearch, dati di addestramento AI)?
+**Note:** Conservazione configurabile dal cliente (30 giorni / 3 mesi). Confermare: l'eliminazione include tutte le copie (DigitalOcean Spaces, OpenSearch, dati di addestramento AI)?
 
 ---
 
@@ -268,11 +276,11 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 ### 24. Il trasferimento dati tra DocBits e LN è crittografato end-to-end?
 
-**Risposta:** Tutte le connessioni tra i componenti sono protette utilizzando crittografia standard del settore (SSH, HTTPS).
+**Risposta:** L’integrazione ION API documentata utilizza HTTPS. L’endpoint pubblico dell’API DocBits supporta TLS 1.2 e TLS 1.3. Questa verifica non dimostra la crittografia di ogni fase di elaborazione interna né la politica TLS dell’endpoint ERP del cliente.
 
-**Stato:** ✅ Confermato
+**Stato:** ✅ Parziale
 
-**Note:** La comunicazione ION API utilizza HTTPS/TLS. Confermare la versione TLS minima (1.2+).
+**Note:** Confermare l’intero percorso di connessione, i requisiti TLS dell’endpoint ERP e la convalida dei certificati dell’integrazione configurata prima di garantire la crittografia end-to-end. Vedere [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md).
 
 ---
 
@@ -283,3 +291,15 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 **Stato:** ✅ Confermato
 
 **Note:** Chiarire quali tipi di documento vengono scritti di nuovo in LN rispetto a quelli archiviati solo in IDM.
+
+---
+
+## Archiviazione delle credenziali e recupero degli account
+
+### 26. Il fornitore può vedere le credenziali del cliente e cosa succede se si perde una password?
+
+**Risposta:** Le password di accesso a DocBits sono memorizzate come hash unidirezionali con salt. Gli amministratori e il supporto DocBits non possono recuperare la password originale in chiaro dall'hash memorizzato. Gli utenti che dimenticano la password devono impostarne una nuova tramite la procedura di reimpostazione via email per tornare ad accedere con una password. SSO o passkey configurati offrono modalità di accesso alternative. Le chiavi create tramite la Gestione delle chiavi API DocBits vengono mostrate una sola volta e memorizzate come hash unidirezionali. Né gli amministratori né il supporto DocBits possono recuperare la chiave completa in seguito. Le chiavi perse devono essere revocate e sostituite.
+
+**Stato:** ✅ Parziale
+
+**Note:** Queste affermazioni riguardano le password e le chiavi emesse da DocBits. Gli amministratori autorizzati dell’organizzazione possono consultare i dati degli account. Il servizio che stabilisce la connessione può dover leggere le credenziali di integrazione; l’accesso del personale del fornitore richiede una conferma separata. Vedere [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md).

@@ -25,7 +25,7 @@ Oltre a `INVOICE_TYPE_CODE` grezzo, l'XSLT di TRANSFORMATION predefinito emette 
 
 ### Ripartizione fiscale (classificata per fascia)
 
-I blocchi `ApplicableTradeTax` vengono distribuiti su tre fasce basate sull'aliquota (non su indici posizionali): i campi ad aliquota standard (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) catturano aliquote ≥ 19; i campi ad aliquota ridotta (`*_2`) catturano 0 < aliquota < 19; i campi ad aliquota zero (`*_3`) catturano aliquota = 0. Vedi [Ripartizione fiscale ZUGFeRD](../README.md#tax-breakdown-tier-classified) per l'elenco completo dei campi. (ZUGFeRD 1.0 utilizza il vocabolario CII legacy nel proprio XSLT di TRANSFORMATION, ma le regole di selezione delle fasce indicate sopra sono identiche a quelle della 2.x.)
+I blocchi `ApplicableTradeTax` vengono distribuiti su tre fasce basate sull'aliquota (non su indici posizionali): i campi ad aliquota standard (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) catturano aliquote ≥ 19; i campi ad aliquota ridotta (`*_2`) catturano 0 < aliquota < 19; i campi ad aliquota zero (`*_3`) catturano aliquota = 0. Vedi [Ripartizione fiscale ZUGFeRD](../README.md#ripartizione-fiscale-classificata-per-fascia) per l'elenco completo dei campi. (ZUGFeRD 1.0 utilizza il vocabolario CII legacy nel proprio XSLT di TRANSFORMATION, ma le regole di selezione delle fasce indicate sopra sono identiche a quelle della 2.x.)
 
 ### Riferimenti ai documenti
 

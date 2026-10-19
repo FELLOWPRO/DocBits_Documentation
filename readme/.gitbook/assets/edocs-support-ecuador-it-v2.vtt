@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.469
+Ecuador SRI ha voci generiche, 1.0.0,
+1.1.0, 2.0.0 e 2.1.0. La ritenuta è un
+
+formats_02
+00:00:06.469 --> 00:00:13.016
+tipo di documento separato. La voce di
+classificazione delle note di credito non
+
+formats_03
+00:00:13.016 --> 00:00:19.890
+ha un insieme di componenti di estrazione
+dedicato nello stato esaminato. Verificate
+
+formats_04
+00:00:19.890 --> 00:00:25.700
+la mappatura effettivamente utilizzata e
+il tipo di documento sorgente.
+
+workflow_01
+00:00:26.450 --> 00:00:32.209
+Aprite E-Doc per il formato rilevato.
+Confrontate Transformation, Preview ed
+
+workflow_02
+00:00:32.209 --> 00:00:39.244
+Extraction Paths. Le regole Custom hanno
+la precedenza. Salvare una bozza non la
+
+workflow_03
+00:00:39.244 --> 00:00:40.167
+attiva.
+
+accept_01
+00:00:40.917 --> 00:00:46.896
+Provate una fattura e una nota di credito,
+se applicabile. Verificate gli importi, le
+
+accept_02
+00:00:46.896 --> 00:00:51.888
+parti e il tipo di documento esportato.
+L’analisi del file non dimostra
+
+accept_03
+00:00:51.888 --> 00:00:55.567
+l’autorizzazione fiscale né la consegna
+tramite rete.
+

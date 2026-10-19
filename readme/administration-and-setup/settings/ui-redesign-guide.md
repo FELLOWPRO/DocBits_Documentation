@@ -35,7 +35,7 @@ Le pagine di impostazioni con molte sezioni (come le Impostazioni Globali o la c
 
 La maggior parte delle pagine di impostazioni, finestre e schermi di strumenti mostra ora una piccola icona **?** nell'intestazione.
 
-<figure><img src="../../.gitbook/assets/ui-redesign-help-icon.png" alt="Icona di aiuto nell'intestazione di una pagina"><figcaption><p>L'icona di aiuto apre la pagina di documentazione corrispondente in una nuova scheda.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ui-redesign-help-icon-it.png" alt="Icona di aiuto nell'intestazione di una pagina"><figcaption><p>L'icona di aiuto apre la pagina di documentazione corrispondente in una nuova scheda.</p></figcaption></figure>
 
 Un clic apre la pagina corrispondente su `docs.docbits.com` in una nuova scheda — senza dover cercare la pagina giusta nella documentazione. L'icona rispetta la tua lingua dell'interfaccia e apre la documentazione tradotta quando esiste; altrimenti ripiega sull'inglese.
 

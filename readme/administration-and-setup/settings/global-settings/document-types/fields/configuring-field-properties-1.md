@@ -1,95 +1,34 @@
-# Configurazione delle Proprietà del Campo
+# Configurazione delle proprietà dei campi
 
-## Istruzioni dettagliate sull'impostazione di proprietà quali Obbligatorio, Sola lettura, Nascosto e OCR.
+Usa **Settings → Document Types → Fields** per controllare il comportamento dei campi di un tipo di documento. Seleziona prima il tipo di documento; l'esempio seguente mostra **Invoice** nell'interfaccia in inglese.
 
-### Obbligatorio (Required):
+<figure><img src="../../../../../.gitbook/assets/dbdc155-field-properties-overview-en.png" alt="Impostazioni dei campi Invoice in inglese con soglie di riconoscimento, ricerca, colonne delle proprietà dei campi e Save Settings"><figcaption>Impostazioni dei campi Invoice in un'organizzazione sandbox di DocBits.</figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_configure_classification_rule.png" alt="Docbits Configure Classification Rule"><figcaption></figcaption></figure>
+## Trovare un campo e modificarne le proprietà
 
-Se un campo è contrassegnato come Obbligatorio, significa che questo campo deve essere compilato prima che il documento possa essere salvato o elaborato.
+1. In **Search by Name** inserisci il nome o l'etichetta del campo. Questo filtra l'elenco, ma non modifica il campo.
+2. Trova la riga del campo. Ad esempio, **Invoice number** ha il nome tecnico `invoice_id`.
+3. Regola i controlli di quella riga, quindi seleziona **Save Settings**. Lo stesso pulsante di salvataggio è disponibile sopra e sotto la tabella.
 
-**Per impostare questa proprietà:**
+<figure><img src="../../../../../.gitbook/assets/dbdc155-field-properties-filtered-en.png" alt="Campo Invoice number in inglese con i controlli Required, Read Only, Hidden, Force Validation, Use AI, OCR e Match Score"><figcaption>La riga Invoice number dopo la ricerca di `invoice_id`.</figcaption></figure>
 
-* Navigare nelle impostazioni del campo nel sistema DocBits.
-* Abilitare l'opzione Obbligatorio per il campo pertinente.
+| Controllo | A cosa serve |
+| --- | --- |
+| **Required** | Contrassegna le informazioni che devono essere presenti per la convalida. Dopo aver modificato questa impostazione, controlla il risultato della convalida del documento. |
+| **Read Only** | Mostra un campo senza consentire agli utenti di modificarne il valore. |
+| **Hidden** | Mantiene il campo fuori dalla normale visualizzazione del documento. |
+| **Force Validation** | Richiede che il campo superi la convalida. Le regole dettagliate si configurano separatamente; questa casella di controllo non è un editor di regole. |
+| **Use AI** | Richiede o interrompe l'estrazione con AI per questo campo. La riga indica se l'estrazione è richiesta. |
+| **OCR** | Inserisci la soglia di affidabilità OCR del campo. È un numero, non un interruttore on/off né un'impostazione della lingua. |
+| **Match Score** | Inserisci la soglia di corrispondenza del campo. È un numero, non un interruttore on/off. |
 
-**Impatto:**
+Gli slider **OCR** e **Match Score** in **Recognition Settings** applicano i valori all'intero elenco dei campi. Le caselle di controllo direttamente sotto i titoli delle colonne applicano **Required**, **Read Only**, **Hidden** o **Force Validation** all'intero elenco. Controlla le righe interessate prima di selezionare **Save Settings**. **Restore Defaults** ripristina la configurazione dei campi; usalo solo se intendi sostituire le tue modifiche.
 
-* Questa impostazione garantisce che le informazioni importanti vengano acquisite e che nessun documento possa essere elaborato senza i dati richiesti.
+## Altri controlli in questa vista
 
-### Sola lettura (Read Only):
+- **Create new group** e **Create field** aggiungono un gruppo o un campo. Vedi [Aggiungere e modificare i campi](adding-and-editing-fields.md).
+- **Master Data Settings** apre la [configurazione dei dati anagrafici](master-data-settings.md).
+- Le caselle di controllo all'estrema sinistra selezionano i campi. Il menu adiacente offre **Reassign Field Group** per i campi selezionati.
+- Il pulsante più **Formula** apre l'editor di formule per quel campo. L'icona **info** mostra le informazioni sul campo. L'icona di eliminazione non è disponibile per i campi standard.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_model_prediction_test.png" alt="Docbits Model Prediction Test"><figcaption></figcaption></figure>
-
-Se un campo è contrassegnato come Sola lettura, significa che gli utenti possono visualizzare il contenuto di questo campo, ma non possono apportarvi modifiche.
-
-**Per impostare questa proprietà:**
-
-* Andare alle Opzioni del campo. Abilitare l'opzione Sola lettura per il campo desiderato.
-
-**Impatto:**
-
-* Questa impostazione può essere utile per proteggere informazioni sensibili o per garantire che i dati importanti non vengano modificati accidentalmente.
-
-### Nascosto (Hidden):
-
-<figure><img src="../../../../../.gitbook/assets/docbits_classification_extraction_settings.png" alt="Docbits Classification Extraction Settings"><figcaption></figcaption></figure>
-
-Se un campo è contrassegnato come "Nascosto", significa che il campo verrà nascosto nell'interfaccia utente e gli utenti non potranno vederlo né accedervi.
-
-**Per impostare questa proprietà:**
-
-* Andare alle opzioni del campo.
-* Abilitare l'opzione "Nascosto" per il campo corrispondente.
-
-**Impatto:**
-
-* Questa impostazione viene spesso utilizzata per nascondere campi interni o tecnici che sono irrilevanti per l'utente finale o sono necessari solo per l'elaborazione interna.
-
-### OCR (Riconoscimento ottico dei caratteri):
-
-<figure><img src="../../../../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
-
-Se un campo è configurato per l'OCR, significa che il sistema tenterà di estrarre il testo dal documento e inserirlo in questo campo. Questa impostazione viene solitamente utilizzata per i campi che devono essere compilati automaticamente.
-
-**Per configurarlo:**
-
-* Abilitare l'opzione OCR per il campo corrispondente.
-* Se necessario, configurare i parametri OCR come lingua, carattere, ecc.
-
-**Impatto:**
-
-* L'utilizzo dell'OCR consente di elaborare i documenti automaticamente estraendo informazioni dai testi e inserendole nei campi appropriati, riducendo lo sforzo manuale e aumentando l'efficienza.
-
-### Convalida forzata (Forced validation):
-
-<figure><img src="../../../../../.gitbook/assets/docbits_sql_alter_table_syntax.png" alt="Docbits Sql Alter Table Syntax"><figcaption></figcaption></figure>
-
-Configurare di conseguenza le regole di convalida, come limiti numerici, espressioni regolari o relazioni con altri campi.
-
-**Per configurarlo:**
-
-* Salvare le modifiche.
-
-**Impatto:**
-
-* La convalida forzata controlla i dati inseriti rispetto ai criteri specificati per garantire che siano validi. Ciò aiuta a rilevare tempestivamente gli errori e a migliorare la qualità dei dati.
-
-### Punteggio di corrispondenza (Match Score):
-
-<figure><img src="../../../../../.gitbook/assets/docbits_add_new_column_steps.png" alt="Docbits Add New Column Steps"><figcaption></figcaption></figure>
-
-Confrontando i dati di input con i dati di riferimento, il Match Score può aiutare a confermare l'accuratezza e la validità dei dati. Se il Match Score supera una certa soglia, la corrispondenza è considerata riuscita.
-
-**Per configurarlo:**
-
-* Abilitare l'opzione Match Score e impostare la soglia desiderata.
-* Salvare le modifiche.
-
-**Impatto:**
-
-* Il Match Score viene utilizzato per valutare l'accuratezza delle corrispondenze tra i dati di input e i valori di riferimento. Se il punteggio ottenuto supera la soglia impostata, la corrispondenza è considerata riuscita. Ciò è particolarmente utile per i campi che richiedono la convalida dei dati o la corrispondenza dei dati, come i campi con un nome, un indirizzo e-mail, ecc. ad esempio, durante il controllo dei dati dei clienti.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_column_requirements_analysis.png" alt="Docbits Column Requirements Analysis" width="258"><figcaption></figcaption></figure>
-
-Configurando attentamente queste proprietà del campo, è possibile ottimizzare i flussi di lavoro di elaborazione dei documenti e garantire che i dati vengano acquisiti correttamente, protetti ed elaborati in modo efficiente.
+Per maggiori informazioni su convalida e corrispondenza, vedi [Impostare convalida e Match Score](setting-validation-and-match-score.md).

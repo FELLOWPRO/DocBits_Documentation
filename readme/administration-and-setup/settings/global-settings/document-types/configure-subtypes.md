@@ -1,15 +1,23 @@
 # Configurare sottotipi
 
-La configurazione dei sottotipi consente di personalizzare la struttura e il comportamento dei documenti all'interno di un tipo specifico. Ecco una spiegazione di come puoi utilizzare le opzioni "Campi", "Modifica Layout" e "Script" per personalizzare ogni sottotipo in base a esigenze specifiche:
+Usare un sottotipo di documento quando fatture dello stesso tipo di documento richiedono campi diversi, un layout di convalida diverso o propri script di elaborazione. Prima [creare un sottotipo](creating-a-new-sub-type.md), poi aprire **Impostazioni → Tipi di Documento**, scegliere il tipo di documento e aprire **Sottotipi di Documento**. Nella riga del sottotipo, aprire **Azioni** (i tre puntini). Il menu offre **Campi**, **Costruttore di layout** e **Script**; contiene anche [Copia, Modifica ed Elimina](using-actions.md).
 
-*   **Campi:** L'opzione "Campi" consente di aggiungere, modificare o rimuovere campi di metadati personalizzati per il sottotipo. Questi campi possono contenere informazioni sui documenti di quel tipo come titolo, autore, data, categoria, ecc. Puoi utilizzare diversi tipi di campo come caselle di testo, elenchi a discesa, valori di data, ecc. per acquisire i dati in base alle tue esigenze.
+<figure><img src="../../../../.gitbook/assets/subtype-actions-menu-it.png" alt="Menu Azioni di un sottotipo di documento che mostra Campi, Costruttore di layout, Script, Copia, Modifica ed Elimina"><figcaption><p>Scegliere la parte del sottotipo che si desidera configurare.</p></figcaption></figure>
 
-<figure><img src="https://lh7-us.googleusercontent.com/M1uaFb0tg0q-xh941cnEZgUOHbRzlOm8MgR0Mz-oeXun4Eyf45YZD-APOVUyMhJY1FmTwBqy0hTVdTGCcvXX47dDSjH8tTwybFkXr2_73G0lQk9xNXBZgdsZ7_QACEEDTiPxSARrGV3s-isT1AoO8Co" alt=""><figcaption></figcaption></figure>
+## Campi
 
-*   **Modifica Layout:** L'opzione "Modifica Layout" consente di personalizzare l'aspetto e la disposizione dei campi nell'interfaccia utente. Puoi modificare l'ordine dei campi, creare gruppi di campi per raggruppare informazioni correlate e regolare le dimensioni e la posizione dei campi sulla pagina. Ciò consente di ottimizzare l'esperienza utente e migliorare l'usabilità.
+Selezionare **Campi** per decidere quali informazioni gli utenti vedono e inseriscono per questo sottotipo. È possibile creare un campo in un gruppo, contrassegnare un campo esistente come obbligatorio, di sola lettura o nascosto e regolare le opzioni di riconoscimento. Selezionare **Salva le impostazioni** dopo aver apportato le modifiche. Usare [Aggiungere e modificare i campi](fields/adding-and-editing-fields.md) per i passaggi, [Configurazione delle proprietà dei campi](fields/configuring-field-properties-1.md) per le opzioni delle colonne e [Impostazioni dei dati master](fields/master-data-settings.md) quando un campo deve usare dati di ricerca.
 
-<figure><img src="https://lh7-us.googleusercontent.com/thrOOaF54hZqhl1XVvgZfT1Hu4NOS1550gA9EmksjGaKTMLfKCEQct-OIM8e2qDh0E9Y9K8yf9CJ8kv1jmxgWSbqnAnk9dJpqA-fEhhU2scaMiR-xkcK_UFfiaSffvXb7e1Uvt-_y7U6fr9gAccJtfM" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/subtype-fields-it.png" alt="Impostazioni dei campi in italiano per un sottotipo di fattura sintetico, con gruppi di campi, colonne delle proprietà e Salva le impostazioni"><figcaption><p>Impostazioni dei campi nell'organizzazione di test della documentazione. Non vengono mostrati dati di clienti.</p></figcaption></figure>
 
-*   **Script:** L'opzione "Script" consente di aggiungere logica personalizzata o automazione per il sottotipo. Puoi utilizzare gli script per attivare azioni specifiche quando un documento di questo tipo viene creato, modificato o eliminato. Ciò può essere utile per implementare regole aziendali complesse, eseguire convalide o integrare sistemi esterni.
+## Costruttore di layout
 
-<figure><img src="https://lh7-us.googleusercontent.com/G1SlZE44I3ZrL2cJYVpexKgxeyXYHxirnExRXGo2vqG-R4cXzabxd9oMai1I0qCerGc37UKxe6PF5OCbYkLyIdPbbOR0q9LyJJ1glTPOdD0_cQCNVZ-vB3z8VQYDpsIHJxXiZzT0gqht62zkD79fmw8" alt=""><figcaption></figcaption></figure>
+Selezionare **Costruttore di layout** per organizzare gruppi e campi nella schermata di convalida del documento. Il lato sinistro elenca gli elementi; il lato destro accetta un documento di esempio per l'anteprima. Verificare il risultato e selezionare **Salva** quando il layout è pronto. La [guida del Costruttore di Layout](../../../setup/document-types/layout-builder.md) spiega gli elementi, l'anteprima del documento e il salvataggio di un layout.
+
+<figure><img src="../../../../.gitbook/assets/subtype-layout-it.png" alt="Costruttore di layout in italiano per un sottotipo di fattura sintetico, con gruppi, caricamento dell'anteprima e Salva"><figcaption><p>Layout del sottotipo prima di aggiungere un documento di esempio.</p></figcaption></figure>
+
+## Script
+
+Selezionare **Script** per visualizzare gli script di questo sottotipo. In un elenco vuoto, selezionare **Nuovo** o **Crea script** per iniziare. La ricerca e i filtri **Tutti**, **Attivo** e **Inattivo** aiutano a trovare gli script esistenti. Seguire [Creazione e modifica degli script](script/creating-and-editing-scripts.md) per crearne uno, e [Attivazione e gestione degli script](script/script-activation-and-management.md) prima di attivarlo per l'elaborazione.
+
+<figure><img src="../../../../.gitbook/assets/subtype-scripts-it.png" alt="Elenco vuoto di script in italiano per un sottotipo di fattura sintetico, con Nuovo e i filtri di stato"><figcaption><p>Nessuno script è stato creato nel sottotipo di test della documentazione.</p></figcaption></figure>

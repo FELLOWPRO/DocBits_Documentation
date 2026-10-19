@@ -1,5 +1,7 @@
 # Roadmap DocBits
 
+**Disponibilità di NOVA R1.1:** Disponibile nell’ambiente di test dal **16 ottobre 2026**. Il rilascio in produzione è previsto per il **4 novembre 2026**.
+
 _Stato della pianificazione al 7 ottobre 2026. Per ogni release sono indicate
 la data prevista per sandbox (quando i clienti possono testarla) e la data
 prevista per la produzione. I temi descrivono ciò che è pianificato per la

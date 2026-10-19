@@ -14,23 +14,6 @@ Elenca tutti i workflow dell'organizzazione corrente.
 
 **Parametri:** Nessuno
 
-**Esempio di Risposta:**
-
-```json
-[
-  {
-    "id": "a1b2c3d4-...",
-    "name": "Invoice Approval",
-    "version": 3,
-    "enabled": true,
-    "doc_types": ["INVOICE"],
-    "workflow_type": "advanced",
-    "created_on": "2025-01-15 10:30:00",
-    "last_modified_on": "2025-03-20 14:22:00"
-  }
-]
-```
-
 ## get\_workflow
 
 Ottieni i dettagli di un workflow specifico, inclusa la struttura di nodi e archi.
@@ -39,30 +22,7 @@ Ottieni i dettagli di un workflow specifico, inclusa la struttura di nodi e arch
 
 | Parametro | Tipo | Obbligatorio | Descrizione |
 |-----------|------|----------|-------------|
-| `workflow_id` | string | Si | UUID del workflow |
-
-**Esempio di Risposta:**
-
-```json
-{
-  "id": "a1b2c3d4-...",
-  "name": "Invoice Approval",
-  "version": 3,
-  "enabled": true,
-  "doc_types": ["INVOICE"],
-  "workflow_type": "advanced",
-  "description": "Routes invoices based on amount",
-  "advanced_config": {
-    "nodes": [
-      {"node_id": "when-1", "node_type": "when", "label": "Amount > 1000"},
-      {"node_id": "then-1", "node_type": "then", "label": "Send for Approval"}
-    ],
-    "edges": [
-      {"source_node_id": "when-1", "target_node_id": "then-1"}
-    ]
-  }
-}
-```
+| `workflow_id` | string | Sì | UUID del workflow |
 
 ## delete\_workflow
 
@@ -72,16 +32,7 @@ Elimina un workflow tramite ID (eliminazione logica).
 
 | Parametro | Tipo | Obbligatorio | Descrizione |
 |-----------|------|----------|-------------|
-| `workflow_id` | string | Si | UUID del workflow da eliminare |
-
-**Esempio di Risposta:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-..."
-}
-```
+| `workflow_id` | string | Sì | UUID del workflow da eliminare |
 
 ## test\_advanced\_workflow
 
@@ -91,32 +42,8 @@ Testa l'esecuzione di un workflow avanzato. Fornisci opzionalmente un ID documen
 
 | Parametro | Tipo | Obbligatorio | Descrizione |
 |-----------|------|----------|-------------|
-| `workflow_id` | string | Si | UUID del workflow avanzato |
+| `workflow_id` | string | Sì | UUID del workflow avanzato |
 | `doc_id` | string | No | UUID di un documento per il test |
-
-**Esempio di Risposta:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-...",
-  "execution_time": 0.234,
-  "workflow_result": "completed",
-  "node_results": {
-    "when-1": {"status": "success", "output": true},
-    "then-1": {"status": "success"}
-  },
-  "logs": [
-    {
-      "node_id": "when-1",
-      "node_type": "when",
-      "status": "success",
-      "error": null,
-      "duration_ms": 12
-    }
-  ]
-}
-```
 
 ## list\_test\_scenarios
 
@@ -124,56 +51,14 @@ Elenca tutti gli scenari di test dei workflow per l'organizzazione.
 
 **Parametri:** Nessuno
 
-**Esempio di Risposta:**
-
-```json
-[
-  {
-    "id": "scenario-uuid",
-    "name": "Invoice over 1000 EUR",
-    "workflow_id": "a1b2c3d4-...",
-    "enabled": true,
-    "status": "passed",
-    "last_run": "2025-03-20 14:00:00"
-  }
-]
-```
-
 ## list\_cards
 
 Elenca tutte le card disponibili per i workflow con le relative condizioni e configurazione.
 
 **Parametri:** Nessuno
 
-**Esempio di Risposta:**
-
-```json
-[
-  {
-    "id": "card-uuid",
-    "text": "Document Type Is",
-    "card_type": "document_type_is",
-    "card_version": 1,
-    "category": "Document",
-    "when_condition": true,
-    "and_condition": false,
-    "then_condition": false
-  },
-  {
-    "id": "card-uuid-2",
-    "text": "Send Email Notification",
-    "card_type": "send_email",
-    "card_version": 1,
-    "category": "Communication",
-    "when_condition": false,
-    "and_condition": false,
-    "then_condition": true
-  }
-]
-```
-
 {% hint style="info" %}
-Le card hanno flag di ruolo: `when_condition` (trigger), `and_condition` (condizione aggiuntiva) e `then_condition` (azione). Usa questi flag per determinare in quali tipi di nodo una card puo' essere utilizzata.
+Le card hanno flag di ruolo: `when_condition` (trigger), `and_condition` (condizione aggiuntiva) e `then_condition` (azione). Usa questi flag per determinare in quali tipi di nodo una card può essere utilizzata.
 {% endhint %}
 
 ## list\_workflow\_variables
@@ -190,7 +75,7 @@ Crea una variabile di workflow o ne aggiorna il valore. Le variabili di tipo doc
 
 | Parametro | Tipo | Obbligatorio | Descrizione |
 |-----------|------|----------|-------------|
-| `name` | string | Si | Nome della variabile |
+| `name` | string | Sì | Nome della variabile |
 | `value` | string | No | Nuovo valore |
 | `var_type` | string | No | Tipo della variabile al momento della creazione (ad esempio `string`, `number`, `document`) |
 
@@ -217,7 +102,7 @@ Dettaglio completo di una singola esecuzione: i log grezzi di esecuzione delle c
 
 | Parametro | Tipo | Obbligatorio | Descrizione |
 |-----------|------|----------|-------------|
-| `log_id` | string | Si | ID della voce di log da `search_workflow_logs` |
+| `log_id` | string | Sì | ID della voce di log da `search_workflow_logs` |
 
 ## run\_workflow\_with\_assertions
 
@@ -227,6 +112,6 @@ Inizializza le variabili del workflow, esegue un workflow avanzato con l'esecuto
 
 | Parametro | Tipo | Obbligatorio | Descrizione |
 |-----------|------|----------|-------------|
-| `workflow_id` | string | Si | UUID del workflow da eseguire |
+| `workflow_id` | string | Sì | UUID del workflow da eseguire |
 | `doc_id` | string | No | Documento su cui eseguire il workflow |
 | `seed_variables` | array | No | Variabili da creare o aggiornare prima dell'esecuzione; le variabili di tipo documento possono puntare a un `doc_id` tramite `value` |

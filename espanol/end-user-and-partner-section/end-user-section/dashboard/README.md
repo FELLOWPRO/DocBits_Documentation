@@ -12,6 +12,17 @@ Las funciones disponibles dependen de sus permisos, del estado del documento y d
 
 <figure><img src="../../../.gitbook/assets/dashboard-overview-es.png" alt="El panel actual con búsqueda, herramientas, vistas guardadas, tipos de documento y tabla. Los valores de los documentos están ocultos por privacidad."><figcaption><p>El panel actual con búsqueda, herramientas, vistas guardadas, tipos de documento y tabla. Los valores de los documentos están ocultos por privacidad.</p></figcaption></figure>
 
+## La búsqueda en el trabajo diario en vídeo
+
+Este breve ejemplo comienza en la oficina de una usuaria ficticia en Madrid. A continuación, la interfaz de DocBits en español ocupa toda la pantalla: introducir parte del nombre del archivo, pulsar Intro y comprobar el resultado. El segundo ejemplo muestra cómo incluir el contenido de los documentos cuando está activado el módulo de búsqueda de texto completo.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/es.mp4" %}
+
+[Abrir el ejemplo con narración en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/es.mp4) · [Subtítulos en español (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/es.vtt) · [Transcripción en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/es.txt)
+
+La usuaria y la oficina se han generado con IA. Las acciones y los resultados proceden de grabaciones reales en la cuenta de prueba de DocBits.
+
+
 ## Empezar el trabajo diario
 
 1. Compruebe la organización activa y, si está disponible, la suborganización.

@@ -12,6 +12,17 @@ Les commandes disponibles dépendent de vos autorisations, du statut du document
 
 <figure><img src="../../../.gitbook/assets/dashboard-overview-fr.png" alt="Le tableau de bord actuel : recherche, outils, vues enregistrées, types de document et tableau. Les valeurs des documents sont masquées pour protéger les données."><figcaption><p>Le tableau de bord actuel : recherche, outils, vues enregistrées, types de document et tableau. Les valeurs des documents sont masquées pour protéger les données.</p></figcaption></figure>
 
+## La recherche au quotidien en vidéo
+
+Cet exemple commence au bureau d’une utilisatrice fictive à Paris. L’interface française de DocBits occupe ensuite tout l’écran : saisir une partie du nom du fichier, appuyer sur Entrée et vérifier le résultat. Le second exemple montre comment inclure le contenu des documents lorsque le module de recherche plein texte est activé.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/fr.mp4" %}
+
+[Ouvrir l’exemple avec narration française](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/fr.mp4) · [Sous-titres français (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/fr.vtt) · [Transcription française](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/fr.txt)
+
+L’utilisatrice et le bureau sont générés par IA. Les manipulations et les résultats proviennent de véritables enregistrements dans le compte de test DocBits.
+
+
 ## Commencer votre travail quotidien
 
 1. Vérifiez l’organisation active et, si disponible, la sous-organisation.

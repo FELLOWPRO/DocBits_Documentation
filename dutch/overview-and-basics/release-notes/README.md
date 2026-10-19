@@ -6,17 +6,17 @@
 
 **DocBits is het product. NOVA is de naam van de releasecyclus.** [Bekijk de film over de nieuwe DocBits-release](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/nl.mp4) · [Ondertitels](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/nl.vtt).
 
-Kies een releasekanaal om te zien wat er verandert voor uw team. **In de NOVA-cyclus verschijnt de nieuwe grote DocBits-release met extra klantmogelijkheden. VESTA-hotfixes verbeteren de huidige productierelease.** Zie de [releaselifecycle](../docbits-release-lifecycle-strategy.md) voor beschikbaarheid en het wisselen tussen kanalen.
+Kies een releasekanaal om te zien wat er verandert voor uw team. **In de NOVA-cyclus verschijnt de nieuwe DocBits-minor-release met extra klantmogelijkheden. VESTA-hotfixes verbeteren de huidige productierelease.** Zie de [releaselifecycle](../docbits-release-lifecycle-strategy.md) voor beschikbaarheid en het wisselen tussen kanalen.
 
 **Voormalige VESTA-bètafuncties zijn opgenomen in de NOVA-sandbox.** Alle functies die eerder als bèta in VESTA beschikbaar waren, maken deel uit van de reguliere functies van NOVA en kunnen vóór de geplande productierelease in de sandbox worden getest. Ze worden ook reguliere VESTA-functies met de [volgende VESTA-hotfix, gepland voor **11 november 2026**](vesta-hotfix-11-november-2026.md).
 
 | Releasekanaal | Releaseopmerkingen | Focus |
 | --- | --- | --- |
-| **NOVA – Grote release** | [Wat is er nieuw voor klanten](nova-major-release.md) · **4 november 2026 (gepland)** | Alle voormalige VESTA-bètafuncties, plus nieuwe mogelijkheden en uitbreidingen ten opzichte van VESTA R1.0.15. |
+| **NOVA – Minor release** | [Wat is er nieuw voor klanten](nova-major-release.md) · **4 november 2026 (gepland)** | Alle voormalige VESTA-bètafuncties, plus nieuwe mogelijkheden en uitbreidingen ten opzichte van VESTA R1.0.15. |
 | **VESTA — Volgende hotfix (gepland)** | [11 november 2026](vesta-hotfix-11-november-2026.md) | Introduceert alle voormalige VESTA-bètafuncties in de reguliere VESTA-functieset. |
 | **VESTA — Hotfix-release** | [14 oktober 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Verbeteringen en fixes voor de huidige VESTA-productierelease. |
 
-## NOVA – Grote release 4 november 2026
+## NOVA – Minor release 4 november 2026
 
 ### Wat uw team krijgt met NOVA
 

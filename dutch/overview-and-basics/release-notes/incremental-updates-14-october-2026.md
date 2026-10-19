@@ -2,7 +2,7 @@
 
 > **Releasekanaal:** VESTA · **Release:** R1.0.15.
 >
-> **Vergelijking met NOVA?** De [NOVA-major-release-functievergelijking](nova-major-release.md#what-nova-adds-for-customers) behandelt de Validatieassistent, beoordeelde automatiseringsverbeteringen, uitgebreide e-factuurrapporten, nieuwe importcontroles en andere toevoegingen buiten deze VESTA-release.
+> **Vergelijking met NOVA?** De [NOVA-minor-release-functievergelijking](nova-major-release.md#what-nova-adds-for-customers) behandelt de Validatieassistent, beoordeelde automatiseringsverbeteringen, uitgebreide e-factuurrapporten, nieuwe importcontroles en andere toevoegingen buiten deze VESTA-release.
 >
 > **Volgende VESTA-hotfix: [11 november 2026 (gepland)](vesta-hotfix-11-november-2026.md).** Alle functies die eerder als bèta in VESTA beschikbaar waren, zijn nu reguliere NOVA-functies en worden met die hotfix reguliere VESTA-functies.
 

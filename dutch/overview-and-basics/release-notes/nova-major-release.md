@@ -1,4 +1,4 @@
-# NOVA – Grote release 4 november 2026
+# NOVA – Minor release 4 november 2026
 
 **Beschikbaarheid van NOVA R1.1:** Sinds **16 oktober 2026** beschikbaar in de sandbox. De productierelease staat gepland voor **4 november 2026**.
 

@@ -2,13 +2,10 @@
 
 ## Eine Rechnung prüfen und abschließen
 
-So prüfst du eine Rechnung vom Dashboard bis zur Übergabe: Vergleiche Lieferant, Datum, Rechnungsnummer, Beträge und Währung mit dem Original, lies einen Pflichtfeldhinweis und speichere die Korrektur. Im Beispiel wird der Beleg anschließend zur Freigabe weitergegeben. Welche Aktion bei dir folgt, hängt von euren Berechtigungen und eurem Ablauf ab.
+Prüfe eine Rechnung vom Dashboard bis zur Übergabe: Vergleiche Lieferant, Datum, Rechnungsnummer, Beträge und Währung mit dem Original und lies einen Pflichtfeldhinweis. Übernimm die Rechnungsnummer direkt aus dem Beleg, bestätige die Zuordnung und speichere die Extraktionsregel mit „Regeln speichern“. Im Beispiel wird die geprüfte Rechnung anschließend zur Freigabe weitergegeben. Die verfügbaren Aktionen hängen von euren Berechtigungen und eurem Ablauf ab.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v1/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v2/de.mp4" %}
 
-## Weitere Einführung
-
-{% embed url="https://youtu.be/CmmQIxOaF6E?si=gYE-U-Jv4dLPi2xT" %}
 
 ## Übersicht
 
@@ -16,9 +13,7 @@ So prüfst du eine Rechnung vom Dashboard bis zur Übergabe: Vergleiche Lieferan
 
 ### Dokumentursprung (Document Origin)
 
-{% embed url="https://youtu.be/-m45XGiIeig" %}
-DocBits Origin Setting Explained: Country Standards for Dates & Number Formats
-{% endembed %}
+Der Dokumentursprung bestimmt, wie DocBits Datumsangaben und Zahlenformate interpretiert. Wähle das zum Beleg passende Land und prüfe die übernommenen Werte am Original.
 
 ## **Speichern-Button:**
 
@@ -180,9 +175,6 @@ Um interne Informationen zu teilen, können Sie Aufgaben erstellen und sie einem
 
 <figure><img src="../../../.gitbook/assets/annotation_mode_example_de.png" alt="Beispiel für den Anmerkungsmodus"><figcaption></figcaption></figure>
 
-{% embed url="https://youtu.be/ay0gGtwlqRE" %}
-DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Without Annotations
-{% endembed %}
 
 Sie können Anmerkungen zu einem Dokument hinterlassen. Dies kann hilfreich sein, um Informationen für andere Benutzer zu hinterlassen, die dieses Dokument weiter bearbeiten.
 

@@ -2,13 +2,10 @@
 
 ## Vérifier une facture et terminer son traitement
 
-Suivez une facture du tableau de bord à sa transmission : comparez le fournisseur, les dates, le numéro, les montants et la devise avec le document original, consultez un avertissement de champ obligatoire et enregistrez la correction. Dans cet exemple, la facture est ensuite transmise pour approbation. La suite dépend de vos droits et du processus de votre entreprise.
+Suivez une facture du tableau de bord à sa transmission : comparez le fournisseur, les dates, le numéro, les montants et la devise avec l’original et consultez un avertissement de champ obligatoire. Sélectionnez le numéro directement dans le document, confirmez son association et conservez la règle d’extraction avec Enregistrer les règles. La facture vérifiée est ensuite transmise pour approbation dans cet exemple. Les actions disponibles dépendent de vos droits et de votre processus.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v1/fr.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v2/fr.mp4" %}
 
-## Autre présentation
-
-{% embed url="https://youtu.be/CmmQIxOaF6E?si=gYE-U-Jv4dLPi2xT" %}
 
 ## Vue d'ensemble
 
@@ -16,9 +13,7 @@ Suivez une facture du tableau de bord à sa transmission : comparez le fournisse
 
 ### Origine du Document (Document Origin)
 
-{% embed url="https://youtu.be/-m45XGiIeig" %}
-DocBits Origin Setting Explained: Country Standards for Dates & Number Formats
-{% endembed %}
+L’origine du document détermine la manière dont DocBits interprète les dates et les formats numériques. Choisissez le pays correspondant au document et vérifiez les valeurs extraites sur l’original.
 
 ### **Bouton Enregistrer:**
 
@@ -163,9 +158,6 @@ Pour partager des informations internes, vous pouvez créer des tâches et les a
 
 <figure><img src="../../../.gitbook/assets/annotation_mode_example.png" alt="Annotation Mode Example"><figcaption></figcaption></figure>
 
-{% embed url="https://youtu.be/ay0gGtwlqRE" %}
-DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Without Annotations
-{% endembed %}
 
 You can leave annotations on a document. This can be helpful to leave information for other users who further edit this document.
 

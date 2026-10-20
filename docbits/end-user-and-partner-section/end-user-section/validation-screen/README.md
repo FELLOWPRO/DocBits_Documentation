@@ -2,13 +2,10 @@
 
 ## Review and finish processing an invoice
 
-Follow an invoice from the dashboard to the next workflow step: compare the supplier, dates, invoice number, amounts and currency with the original, read a required-field warning and save the correction. In this example, the invoice is then handed over for approval. The next action in your account depends on your permissions and workflow.
+Follow an invoice from the dashboard to handoff: compare the supplier, dates, invoice number, amounts and currency with the original and read a required-field warning. Select the invoice number directly on the document, confirm its mapping and store the extraction rule with Save Rules. In this example, the checked invoice is then submitted for approval. The available actions depend on your permissions and workflow.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v1/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v2/en.mp4" %}
 
-## Another introduction
-
-{% embed url="https://youtu.be/CmmQIxOaF6E?si=gYE-U-Jv4dLPi2xT" %}
 
 ## Overview
 
@@ -16,9 +13,7 @@ Follow an invoice from the dashboard to the next workflow step: compare the supp
 
 ### Document Origin
 
-{% embed url="https://youtu.be/-m45XGiIeig" %}
-DocBits Origin Setting Explained: Country Standards for Dates & Number Formats
-{% endembed %}
+Document Origin determines how DocBits interprets dates and number formats. Choose the country that matches the document and check the extracted values against the original.
 
 ## **Save Button:**
 
@@ -174,9 +169,6 @@ To share internal information, you can create tasks and assign them to a specifi
 
 <figure><img src="../../../.gitbook/assets/annotation_mode_example.png" alt="Annotation Mode Example"><figcaption></figcaption></figure>
 
-{% embed url="https://youtu.be/ay0gGtwlqRE" %}
-DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Without Annotations
-{% endembed %}
 
 You can leave annotations on a document. This can be helpful to leave information for other users who further edit this document.
 

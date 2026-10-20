@@ -2,13 +2,10 @@
 
 ## 核对发票并完成审核
 
-从仪表板打开一张发票，对照原始单据核对供应商、日期、发票号码、金额和币种，查看必填字段提示并保存更正。本示例随后将发票提交给下一位同事进行审批。你在自己账户中可以执行的下一步操作，取决于权限和企业配置的流程。
+从仪表板打开发票，对照原始单据核对供应商、日期、发票号码、金额和币种，并查看必填字段提示。直接在原始单据上选择发票号码，确认字段对应，再通过“保存规则”保留这条提取规则。本示例随后将核对完成的发票提交审批。可执行的操作取决于你的权限和企业配置的流程。
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v1/zh.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v2/zh.mp4" %}
 
-## 其他入门视频
-
-{% embed url="https://youtu.be/CmmQIxOaF6E?si=gYE-U-Jv4dLPi2xT" %}
 
 ## 概览
 
@@ -16,9 +13,7 @@
 
 ### 文档来源
 
-{% embed url="https://youtu.be/-m45XGiIeig" %}
-DocBits 来源设置说明：日期和数字格式的国家/地区标准
-{% endembed %}
+单据来源决定DocBits如何解释日期和数字格式。请选择与单据相符的国家或地区，并对照原件核对提取结果。
 
 ## **保存按钮：**
 
@@ -174,9 +169,6 @@ DocBits 来源设置说明：日期和数字格式的国家/地区标准
 
 <figure><img src="../../../.gitbook/assets/annotation_mode_example.png" alt="批注模式示例"><figcaption></figcaption></figure>
 
-{% embed url="https://youtu.be/ay0gGtwlqRE" %}
-DocBits 批注模式教程：在验证界面添加备注，以及下载带批注或不带批注的文档
-{% endembed %}
 
 你可以在文档上留下批注，方便之后继续编辑该文档的其他用户查看相关信息。
 

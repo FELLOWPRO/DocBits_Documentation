@@ -1,63 +1,36 @@
 # Einstellungen zur Toleranz von Bestellungen / Zusätzliche Toleranz für Bestellungen
 
-### **Einstellung zur Konfiguration von Bestelltoleranzen**
+Mengen, Einzelpreise und zusätzliche Kosten dürfen nur innerhalb der fachlich festgelegten Grenzen vom Bestellwert abweichen. Administratoren richten diese Grenzen pro Dokumenttyp ein. Ein erfolgreicher Abgleich innerhalb der Toleranz ersetzt die Freigabe oder den Exportprozess nicht.
 
-Gehe zu **Einstellungen → Allgemeine Einstellungen → Dokumenttypen → Weitere Einstellungen → Bestellungen → Eigener Bereich für Bestelltoleranz**
+## Mengen- und Einzelpreistoleranzen einrichten
 
-#### **So funktioniert es**
+1. Öffnen Sie **Einstellungen → Dokumenttypen**, wählen Sie den Dokumenttyp, zum Beispiel **Rechnung**, und öffnen Sie **Weitere Einstellungen → Bestellung**.
+2. Aktivieren Sie **PO-Toleranzeinstellung**. Für **Menge** und **Einzelpreis** erscheint jeweils ein Zahlenfeld mit einer eigenen Auswahl **Einheit**.
+3. Wählen Sie **%** für einen Prozentsatz oder **Wert** für eine feste Abweichung und tragen Sie die fachlich erlaubte Grenze ein. Prüfen Sie beide Angaben getrennt.
+4. Kontrollieren Sie den angezeigten Wert nach dem Ändern. Schalter und Einheitenauswahl werden direkt gespeichert; ein Zahlenwert wird beim Verlassen des Feldes gespeichert.
+5. Lassen Sie im passenden numerischen Spaltenvergleich der [PO-Abgleichsregel](purchase-order-matching-rules.md) **Toleranz zulassen** zu. Testen Sie einen passenden Beleg sowie Werte innerhalb und außerhalb der Grenze, bevor Sie die Konfiguration im vorgesehenen Prozess verwenden.
 
-Wenn aktiviert, ermöglicht diese Einstellung, Toleranzen für **Menge** und/oder **Stückpreis** zu definieren. Diese Toleranzen können entweder als Prozentsatz oder als fester Wert festgelegt werden. Das bedeutet, dass eine Rechnung innerhalb des angegebenen Toleranzbereichs von der Bestellung (PO) abweichen kann, ohne als Abweichung markiert zu werden, was Flexibilität bietet und einen nahtlosen Ablauf gewährleistet.
+<figure><img src="../../../../../../.gitbook/assets/po-tolerances-five-percent-de.png" alt="Deutsche Dokumenttyp-Einstellungen: PO-Toleranzeinstellung aktiv, getrennte Werte für Menge und Einzelpreis, Einzelpreis auf fünf Prozent"><figcaption><p>Im Beispiel ist die Einzelpreistoleranz auf fünf Prozent eingestellt. Menge und Einzelpreis haben jeweils eine eigene Einheit.</p></figcaption></figure>
 
-<mark style="color:red;">**HINWEIS**</mark>**:** Toleranzen wirken in beide Richtungen; das heißt, der Rechnungswert kann sowohl höher als auch niedriger als der PO-Wert innerhalb des erlaubten Bereichs sein.
+## Prozent und fester Wert im Vergleich
 
-#### **Einrichten**
+Toleranzen gelten in beide Richtungen, bezogen auf den Bestellwert.
 
-* **Einstellung aktivieren:**
-  * Aktiviere die PO-Toleranzeinstellung.
-* **Toleranzen konfigurieren:**
-  * Es erscheinen vier Felder:
-    * Ein Feld für den **Mengen-Toleranzbetrag**.
-    * Ein Feld für den **Stückpreis-Toleranzbetrag**.
-  * Hinter jedem Feld gibt es ein Dropdown-Menü, in dem du den Toleranztyp auswählen kannst:
-    * **Prozent:** Gibt eine prozentuale Toleranz an.
-    * **Wert:** Gibt einen festen Betrag an, um den sich der Wert unterscheiden kann.
+| Einstellung | Bestellpreis | Erlaubter Bereich |
+| --- | --- | --- |
+| Einzelpreis **5 %** | 10,00 Euro | 9,50 bis 10,50 Euro |
+| Einzelpreis **5 %** | 20,00 Euro | 19,00 bis 21,00 Euro |
+| Einzelpreis **Wert 0,50** | 10,00 Euro | 9,50 bis 10,50 Euro |
+| Einzelpreis **Wert 0,50** | 20,00 Euro | 19,50 bis 20,50 Euro |
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_docbits_image_11.jpg" alt="DocBits Bild"><figcaption></figcaption></figure>
+Ein Preis von 10,60 Euro liegt außerhalb einer Toleranz von fünf Prozent bei 10,00 Euro Bestellpreis. Prüfen Sie die Ursache der Differenz, statt einen Rechnungswert für eine erfolgreiche Markierung zu verändern. Bei einer Mengentoleranz bezeichnet ein fester Wert eine Mengenabweichung und keinen Geldbetrag.
 
-#### **Beispielszenario:**
+Artikelbezogene Toleranzen können die allgemeinen Dokumenttyp-Werte übersteuern. Die Vorgabe für die eigene Artikelnummer hat dabei Vorrang vor einer Vorgabe über die Lieferantenartikelnummer. Prüfen Sie deshalb beim Bewerten eines Ergebnisses auch die zutreffenden Artikelvorgaben und die verwendete Abgleichregel.
 
-* Angenommen, die **Stückpreis** ist auf **5%** eingestellt.
-* Die Bestellung umfasst zwei Zeilen:
-  * **Zeile 1:** Stückpreis = **$5.00**
-  * **Zeile 2:** Stückpreis = **$2.00**
-* Auf der Rechnung:
-  * **Zeile 1:** Der Stückpreis wird auf **$4.80** angepasst (**innerhalb** der 5% Toleranz).
-  * **Zeile 2:** Der Stückpreis wird auf **$2.20** angepasst (**außerhalb** der 5% Toleranz).
-* **Ergebnis:**
-  * Zeile 1 wird **nicht als Abweichung markiert**, da $4.80 innerhalb von 5% von $5.00 liegt.
-  * Zeile 2 **wird als Abweichung markiert**, da $2.20 die erlaubte Abweichung von 5% von $2.00 überschreitet. Der Benutzer muss nun Maßnahmen ergreifen, bevor die Rechnung weiter bearbeitet werden kann.
+## Zusätzliche Toleranzen für Fracht, Zusatzkosten und Steuern
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_invoice_settings.jpg" alt="Rechnung Einstellungen Übersicht"><figcaption></figcaption></figure>
+Aktivieren Sie im selben Bereich **Zusätzliche PO-Toleranzeinstellung**. Für **Fracht**, **Gebühren** (Zusatzkosten) und **Steuer** werden getrennte Zahlenfelder und Einheiten angezeigt. Wählen Sie für jede Grenze Prozent oder einen festen Wert und prüfen Sie die gespeicherten Angaben. Auch diese Toleranzen gelten nach oben und unten.
 
-### Einstellung zur Konfiguration zusätzlicher Bestelltoleranzeinstellungen
+<figure><img src="../../../../../../.gitbook/assets/po-tolerances-additional-de.png" alt="Zusätzliche PO-Toleranzeinstellung mit getrennten Feldern und Einheiten für Fracht, Gebühren und Steuer"><figcaption><p>Die zusätzlichen Toleranzen bilden einen eigenen Bereich und ersetzen keine Mengen- oder Einzelpreisregel.</p></figcaption></figure>
 
-Gehe zu **Einstellungen → Allgemeine Einstellungen → Dokumenttypen → Weitere Einstellungen → Bestellabschnitt → Zusätzliche PO-Toleranzeinstellung**
-
-#### **So funktioniert es**
-
-Wenn aktiviert, ermöglicht diese Einstellung, Toleranzen für **Fracht**, **Gebühren** und/oder **Steuern** zu definieren. Diese Toleranzen können entweder als Prozentsatz oder als fester Wert festgelegt werden, sodass Rechnungen leicht von den PO-Werten abweichen können, ohne als Abweichungen markiert zu werden. Dies bietet zusätzliche Flexibilität und stellt sicher, dass geringfügige Unterschiede den Arbeitsablauf nicht unterbrechen.
-
-<mark style="color:red;">**HINWEIS**</mark>**:** Genau wie bei den standardmäßigen Toleranzeinstellungen gelten diese Toleranzen in beide Richtungen – sie erlauben sowohl Erhöhungen als auch Senkungen innerhalb der festgelegten Grenzen.
-
-#### **Einrichten**
-
-* **Einstellung aktivieren:**
-  * Aktiviere die zusätzliche PO-Toleranzeinstellung.
-* **Toleranzen konfigurieren:**
-  * Sechs Felder werden sichtbar:
-    * Je ein Feld für die Toleranzbeträge für **Fracht**, **Gebühren** und **Steuern**.
-  * Jedes Feld hat ein begleitendes Dropdown-Menü, in dem du den Toleranztyp auswählen kannst:
-    * **Prozent:** Die Toleranz wird als Prozentsatz definiert.
-    * **Wert:** Die Toleranz wird als fester Betrag definiert.
-
-<figure><img src="../../../../../../.gitbook/assets/docbits_docbits_image_12.jpg" alt="DocBits Bild"><figcaption></figcaption></figure>
+Der [Adminfilm zu PO-Abgleichsregeln und Toleranzen](purchase-order-matching-rules.md#video-po-abgleichsregeln-und-toleranzen-einrichten) zeigt die Einrichtung. Der [Anwenderfilm](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md#rechnungspositionen-prufen-und-mit-einer-bestellung-abgleichen) erläutert Full Match, Partial Match und die Bearbeitung von Ausnahmen.

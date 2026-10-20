@@ -1,4 +1,4 @@
-# Tela de Validação
+# Ecrã de validação
 
 ## Verificar uma fatura e concluir a conferência
 

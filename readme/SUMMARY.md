@@ -82,7 +82,7 @@
   * [Opzioni di Configurazione Utente](end-user-and-partner-section/end-user-section/user-configuration-options.md)
   * [Tabella AI](end-user-and-partner-section/end-user-section/ai-table/README.md)
     * [Tag della tabella AI](end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md)
-  * [Schermo di validazione](end-user-and-partner-section/end-user-section/validation-screen/README.md)
+  * [Ecrã de validação](end-user-and-partner-section/end-user-section/validation-screen/README.md)
     * [Modelo de IA Específico do Fornecedor para Extração de Campos e Tabelas](end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md)
     * [Controlli automatici nella schermata di validazione](end-user-and-partner-section/end-user-section/validation-screen/automatic-checks-on-the-validation-screen.md)
     * [Verificação de campos de cabeçalho: de onde vêm os dados](end-user-and-partner-section/end-user-section/validation-screen/header-field-check.md)

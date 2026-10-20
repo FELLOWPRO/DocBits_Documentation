@@ -10,7 +10,81 @@ description: Moteur de workflow DocBits
 
 ### Introduction
 
-{% embed url="https://youtu.be/YQC13wCqTJI" %}
+### Comprendre et préparer les workflows <a id="workflow-orientation"></a>
+
+Découvrez le véritable compte de test DocBits : huit exécutions dans le tableau de bord, deux workflows enregistrés avec un ordre d’exécution de 100/200 et trois scénarios de test réussis. Le tutoriel présente aussi les workflows Standard et Advanced, les licences, les modèles et le Card SDK.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/fr.mp4" %}
+
+[Regarder avec les sous-titres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/fr.html) · [Ouvrir la vidéo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/fr.mp4) · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/fr.vtt) · [Transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/fr.txt) · 3:19
+
+<details>
+<summary>Chapitres et transcription</summary>
+
+| Chapitre | Début |
+| --- | --- |
+| Rencontrer l’administrateur | [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/fr.mp4#t=0.000) |
+| Organisation et accès | [0:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/fr.mp4#t=2.042) |
+| Tableau de bord et filtres | [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/fr.mp4#t=14.792) |
+| Liste des workflows | [0:54](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/fr.mp4#t=54.375) |
+| Ordre d’exécution | [1:09](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/fr.mp4#t=69.875) |
+| Standard Workflow | [1:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/fr.mp4#t=88.000) |
+| Advanced Workflow | [1:41](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/fr.mp4#t=101.333) |
+| Licences | [1:59](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/fr.mp4#t=119.875) |
+| Modèles | [2:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/fr.mp4#t=138.583) |
+| Test Manager | [2:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/fr.mp4#t=152.625) |
+| Card SDK | [2:48](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/fr.mp4#t=168.458) |
+| Vérifier la préparation | [3:03](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/fr.mp4#t=183.417) |
+
+**Rencontrer l’administrateur**
+
+Je m’occupe de DocBits ici.
+
+**Organisation et accès**
+
+Bon, je vérifie d’abord l’organisation affichée en haut. Ces réglages de workflow concernent l’organisation sélectionnée. Pour cette démonstration, j’utilise notre compte de test documentaire.
+
+**Tableau de bord et filtres**
+
+Le tableau de bord des workflows donne une vue d’ensemble. Pour cette vue, j’ai exécuté manuellement deux workflows de formation huit fois sur une facture exemple. Je vois ici huit exécutions au total, dont six réussies. Lors de deux exécutions, la condition sur le montant n’était pas remplie. Le taux de réussite inclut aussi ces contrôles correctement terminés. Je filtre par nom de workflow et je vérifie la période. Les compteurs et le graphique suivent cette sélection. À droite, je passe des workflows enregistrés aux scénarios de test. Les exécutions du Test Manager sont comptées séparément.
+
+**Liste des workflows**
+
+La liste des workflows permet de gérer chaque workflow. Je vérifie le nom, le type Standard ou Advanced, l’ordre d’exécution, le déclencheur et les actions disponibles. Je recherche un workflow existant avant d’en créer un autre.
+
+**Ordre d’exécution**
+
+L’ordre d’exécution compte lorsque plusieurs workflows traitent le même document. Je vérifie lequel doit passer en premier et quelles données le suivant attend. Ici, le contrôle de facture a l’ordre cent et le contrôle suivant deux cents. Les valeurs les plus basses passent en premier.
+
+**Standard Workflow**
+
+Pour une règle linéaire, je choisis Standard Workflow. Quand définit le déclencheur, Et ajoute les conditions, puis Alors exécute les actions. La bibliothèque propose les cartes disponibles.
+
+**Advanced Workflow**
+
+Pour des chemins alternatifs, j’utilise Advanced Workflow. Cet aperçu du concepteur montre Start et des connexions explicites. Le succès, une condition non remplie et une erreur peuvent suivre des chemins différents. La position des cartes ne définit pas l’ordre.
+
+**Licences**
+
+Dans Licence, je vérifie séparément le module Workflow et Advanced Workflow. Ils sont tous deux inactifs ici. La boîte de dialogue présente les abonnements disponibles. Je ferme cet aperçu sans modification. Ouvrir le concepteur n’active pas le moteur.
+
+**Modèles**
+
+Les modèles permettent de réutiliser un point de départ. J’ouvre leur bibliothèque et l’option des modèles par défaut. Je vérifie toujours les champs, les destinataires et les actions pour mon propre processus.
+
+**Test Manager**
+
+Test Manager conserve des scénarios de test pour les workflows Standard et Advanced. Après la configuration, j’ajoute des entrées représentatives et les résultats attendus. Exécuter tous les tests permet de contrôler les modifications.
+
+**Card SDK**
+
+Card SDK sert aux extensions personnalisées. Les développeurs peuvent utiliser un modèle, téléverser un paquet ou importer depuis GitHub. Pour l’administration courante, je commence avec la bibliothèque de cartes existante.
+
+**Vérifier la préparation**
+
+Avant de construire, je confirme l’organisation, les accès, la licence nécessaire, les champs du document et le résultat attendu. Je décide si une règle linéaire suffit. La prochaine vidéo crée un Standard Workflow pas à pas.
+
+</details>
 
 
 Dans le domaine de l'automatisation des processus, le moteur de workflow DocBits se distingue par son approche simple et intuitive. Ce moteur simplifie la création et la gestion des workflows grâce à une structure basée sur des règles claires et simples. Le principe fondamental de sa conception est la règle "Quand-Et-Alors facile", qui décompose le processus d'automatisation en trois composants fondamentaux : Déclencheur, Condition et Action. Ce guide explique comment chaque composant fonctionne au sein du système et comment ils collaborent pour faciliter une automatisation fluide.

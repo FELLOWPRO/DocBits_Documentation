@@ -1,6 +1,11 @@
 # Validatiescherm
 
-{% embed url="https://youtu.be/CmmQIxOaF6E?si=gYE-U-Jv4dLPi2xT" %}
+## Een factuur controleren en de verificatie afronden
+
+Volg een factuur van het dashboard tot de overdracht: vergelijk leverancier, datums, factuurnummer, bedragen en valuta met het origineel en lees een melding over een verplicht veld. Selecteer het nummer rechtstreeks op het document, bevestig de koppeling en bewaar de extractieregel met Regels opslaan. In dit voorbeeld wordt de gecontroleerde factuur daarna ter goedkeuring doorgestuurd. De beschikbare acties hangen af van je rechten en het proces van je bedrijf.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v2/nl.mp4" %}
+
 
 ## Overzicht
 
@@ -8,9 +13,7 @@
 
 ### Document Oorsprong (Document Origin)
 
-{% embed url="https://youtu.be/-m45XGiIeig" %}
-DocBits Origin Setting Explained: Country Standards for Dates & Number Formats
-{% endembed %}
+De documentoorsprong bepaalt hoe DocBits datums en getalnotaties interpreteert. Kies het land dat bij het document past en controleer de uitgelezen waarden met het origineel.
 
 ### **Opslaan knop:**
 

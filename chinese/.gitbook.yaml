@@ -1,6 +1,17 @@
 root: ./
 
 redirects:
+    advanced-functions-and-tools/docbits-mcp: advanced-functions-and-tools/docbits-mcp/README.md
+    advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex: advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md
+    advanced-functions-and-tools/docbits-mcp/docflow-mcp: advanced-functions-and-tools/docbits-mcp/docflow-mcp/README.md
+    advanced-functions-and-tools/docbits-mcp/docflow-mcp/card-sdk-tools: advanced-functions-and-tools/docbits-mcp/docflow-mcp/card-sdk-tools.md
+    advanced-functions-and-tools/docbits-mcp/docflow-mcp/examples: advanced-functions-and-tools/docbits-mcp/docflow-mcp/examples.md
+    advanced-functions-and-tools/docbits-mcp/docflow-mcp/setup-and-configuration: advanced-functions-and-tools/docbits-mcp/docflow-mcp/setup-and-configuration.md
+    advanced-functions-and-tools/docbits-mcp/docflow-mcp/workflow-tools: advanced-functions-and-tools/docbits-mcp/docflow-mcp/workflow-tools.md
+    advanced-functions-and-tools/docbits-mcp/edocs-mcp: advanced-functions-and-tools/docbits-mcp/edocs-mcp/README.md
+    advanced-functions-and-tools/docbits-mcp/edocs-mcp/examples: advanced-functions-and-tools/docbits-mcp/edocs-mcp/examples.md
+    advanced-functions-and-tools/docbits-mcp/examples: advanced-functions-and-tools/docbits-mcp/examples.md
+    advanced-functions-and-tools/docbits-mcp/setup-and-configuration: advanced-functions-and-tools/docbits-mcp/setup-and-configuration.md
     overview-and-basics/release-notes: overview-and-basics/release-notes/README.md
     overview-and-basics/release-notes/nova-major-release-16-october-2026: overview-and-basics/release-notes/nova-minor-release-4-november-2026.md
     overview-and-basics/release-notes/nova-major-release: overview-and-basics/release-notes/nova-minor-release-4-november-2026.md

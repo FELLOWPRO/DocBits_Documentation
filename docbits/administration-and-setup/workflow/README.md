@@ -8,7 +8,81 @@ description: DocBits Workflow Engine
 
 ## DocBits Workflow Engine: Simplifying Process Automation
 
-{% embed url="https://youtu.be/YQC13wCqTJI" %}
+### Understand and prepare workflows <a id="workflow-orientation"></a>
+
+Follow the real DocBits test account: eight workflow executions in the dashboard, two saved workflows with execution order 100/200, and three passing test scenarios. The tutorial also explains Standard and Advanced Workflows, licenses, templates and the Card SDK.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4" %}
+
+[Watch with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.html) · [Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4) · [Subtitles (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.vtt) · [Transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.txt) · 3:35
+
+<details>
+<summary>Chapters and transcript</summary>
+
+| Chapter | Start |
+| --- | --- |
+| Meet the administrator | [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=0.000) |
+| Organization and access | [0:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=2.292) |
+| Dashboard and filters | [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=16.708) |
+| Workflow List | [0:56](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=56.875) |
+| Execution order | [1:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=74.083) |
+| Standard Workflow | [1:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=94.458) |
+| Advanced Workflow | [1:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=109.792) |
+| Licenses | [2:08](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=128.875) |
+| Templates | [2:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=150.667) |
+| Test Manager | [2:45](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=165.542) |
+| Card SDK | [3:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=182.875) |
+| Preparation checklist | [3:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=198.583) |
+
+**Meet the administrator**
+
+I look after DocBits here.
+
+**Organization and access**
+
+All right, I start by checking the organization at the top. These workflow settings belong to the selected organization. For this lesson I use our documentation test account.
+
+**Dashboard and filters**
+
+Workflow Dashboard gives me the overview. For this overview, I manually ran two training workflows eight times against a sample invoice. Here I see eight total runs and six successful runs. In two runs, the amount condition was not met. The success rate also counts these correctly completed checks. I filter by workflow name and check the date range. The counters and chart update for that selection. On the right, I switch between saved workflows and test scenarios. Test Manager runs are counted separately.
+
+**Workflow List**
+
+In Workflow List I manage individual workflows. I check the name, Standard or Advanced type, execution order, trigger and available actions. Search helps me find an existing workflow before creating another.
+
+**Execution order**
+
+Execution order matters when several workflows affect the same document. I check which workflow should run first and what data the next one needs. Here the invoice review has an order of one hundred and the next check has two hundred. Lower values run first.
+
+**Standard Workflow**
+
+For a linear rule I choose Standard Workflow. When defines the trigger, And adds conditions, and Then performs the actions. The card library provides the available building blocks.
+
+**Advanced Workflow**
+
+For alternative routes I use Advanced Workflow. This designer preview shows Start and explicit connections. Success, a false condition and an error can follow different routes. Card position alone does not define execution order.
+
+**Licenses**
+
+Under License I check the basic Workflow module and Advanced Workflow separately. Both are inactive here. The plan dialog shows available subscriptions. I close this inspection without changing the subscription. A designer preview is not an active workflow engine.
+
+**Templates**
+
+Templates help me reuse a starting point. I inspect the template library and its default-template option. I still check every field, recipient and action before using a template for my own process.
+
+**Test Manager**
+
+Test Manager holds saved test scenarios for Standard and Advanced workflows. After configuring a workflow, I add representative inputs and expected results. Run All Tests helps me check changes against those scenarios.
+
+**Card SDK**
+
+Card SDK is for custom extensions. Here developers can use a template, upload a package or import from GitHub. Ordinary workflow administration starts with the existing card library.
+
+**Preparation checklist**
+
+Before building, I confirm the organization, access, required license, document fields and intended result. I decide whether a linear rule is enough. The next lesson builds a Standard Workflow step by step.
+
+</details>
 
 ### Introduction
 

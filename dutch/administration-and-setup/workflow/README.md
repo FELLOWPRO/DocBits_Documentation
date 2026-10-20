@@ -8,7 +8,81 @@ description: DocBits Workflow Engine
 
 ## DocBits Workflow Engine: procesautomatisering eenvoudig gemaakt
 
-{% embed url="https://youtu.be/YQC13wCqTJI" %}
+### Workflows begrijpen en voorbereiden <a id="workflow-orientation"></a>
+
+Bekijk het echte DocBits-testaccount: acht uitvoeringen op het dashboard, twee opgeslagen workflows met uitvoeringsvolgorde 100/200 en drie geslaagde testscenario’s. De handleiding behandelt ook Standard en Advanced Workflows, licenties, sjablonen en de Card SDK.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/nl.mp4" %}
+
+[Bekijken met ondertiteling](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/nl.html) · [Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/nl.mp4) · [Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/nl.vtt) · [Transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/nl.txt) · 3:11
+
+<details>
+<summary>Hoofdstukken en transcript</summary>
+
+| Hoofdstuk | Start |
+| --- | --- |
+| Maak kennis met de beheerder | [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/nl.mp4#t=0.000) |
+| Organisatie en toegang | [0:01](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/nl.mp4#t=1.208) |
+| Dashboard en filters | [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/nl.mp4#t=14.333) |
+| Workflowlijst | [0:50](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/nl.mp4#t=50.750) |
+| Uitvoeringsvolgorde | [1:07](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/nl.mp4#t=67.000) |
+| Standard Workflow | [1:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/nl.mp4#t=87.000) |
+| Advanced Workflow | [1:40](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/nl.mp4#t=100.500) |
+| Licenties | [1:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/nl.mp4#t=118.542) |
+| Sjablonen | [2:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/nl.mp4#t=136.875) |
+| Test Manager | [2:29](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/nl.mp4#t=149.375) |
+| Card SDK | [2:42](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/nl.mp4#t=162.875) |
+| Voorbereiding controleren | [2:55](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/nl.mp4#t=175.875) |
+
+**Maak kennis met de beheerder**
+
+Ik beheer DocBits.
+
+**Organisatie en toegang**
+
+Goed, ik controleer eerst de organisatie bovenaan. Deze workflowinstellingen horen bij de geselecteerde organisatie. Voor deze uitleg gebruik ik ons testaccount voor documentatie.
+
+**Dashboard en filters**
+
+Het workflowdashboard geeft het overzicht. Voor dit overzicht heb ik twee trainingsworkflows acht keer handmatig uitgevoerd op een voorbeeldfactuur. Hier zie ik acht uitvoeringen in totaal en zes geslaagde uitvoeringen. Bij twee uitvoeringen was de bedragvoorwaarde niet vervuld. Het succespercentage telt ook deze correct afgeronde controles mee. Ik filter op workflownaam en controleer de periode. De tellers en de grafiek volgen die selectie. Rechts wissel ik tussen opgeslagen workflows en testscenario’s. Uitvoeringen in Test Manager worden apart geteld.
+
+**Workflowlijst**
+
+In de workflowlijst beheer ik elke workflow. Ik controleer de naam, het type Standard of Advanced, de uitvoeringsvolgorde, de trigger en de beschikbare acties. Ik zoek eerst naar een bestaande workflow voordat ik een nieuwe maak.
+
+**Uitvoeringsvolgorde**
+
+De uitvoeringsvolgorde is belangrijk als meerdere workflows hetzelfde document verwerken. Ik controleer welke eerst moet draaien en welke gegevens de volgende nodig heeft. Hier heeft de factuurcontrole volgorde honderd en de volgende controle tweehonderd. Lagere waarden worden eerder uitgevoerd.
+
+**Standard Workflow**
+
+Voor een regel met één pad gebruik ik een standaardworkflow. Wanneer bepaalt de trigger, En voegt voorwaarden toe, en Dan voert acties uit. De kaartbibliotheek bevat de beschikbare bouwstenen.
+
+**Advanced Workflow**
+
+Voor alternatieve routes gebruik ik Advanced Workflow. Dit ontwerpvoorbeeld toont Start en expliciete verbindingen. Succes, een onware voorwaarde en een fout kunnen verschillende routes volgen. De positie van kaarten bepaalt de volgorde niet.
+
+**Licenties**
+
+Onder Licentie controleer ik Workflow en Advanced Workflow afzonderlijk. Beide zijn hier inactief. Het venster toont de beschikbare abonnementen. Ik sluit deze inspectie zonder wijzigingen. Een ontwerpvoorbeeld activeert de workflowengine niet.
+
+**Sjablonen**
+
+Sjablonen bieden een herbruikbaar beginpunt. Ik open de bibliotheek en de optie voor standaardsjablonen. Ik controleer altijd de velden, ontvangers en acties voor mijn eigen proces.
+
+**Test Manager**
+
+Test Manager bewaart testscenario’s voor Standard en Advanced workflows. Na de configuratie voeg ik representatieve invoer en verwachte resultaten toe. Alle tests uitvoeren helpt mij wijzigingen te controleren.
+
+**Card SDK**
+
+Card SDK is voor eigen uitbreidingen. Ontwikkelaars kunnen een sjabloon gebruiken, een pakket uploaden of uit GitHub importeren. Voor normaal beheer begin ik met de bestaande kaartbibliotheek.
+
+**Voorbereiding controleren**
+
+Voordat ik begin, controleer ik de organisatie, toegang, benodigde licentie, documentvelden en het gewenste resultaat. Ik bepaal of een lineaire regel voldoende is. In de volgende video bouwen we stap voor stap een Standard Workflow.
+
+</details>
 
 ### Inleiding
 

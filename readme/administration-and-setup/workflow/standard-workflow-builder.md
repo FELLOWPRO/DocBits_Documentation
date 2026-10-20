@@ -6,30 +6,30 @@ Le constructeur **Standard Workflow** est l'éditeur linéaire, basé sur des ca
 
 Créez un Standard Workflow complet dans la véritable interface DocBits : sélectionnez la facture, vérifiez son numéro et un montant supérieur à 1000, affectez un vérificateur et modifiez le statut. Enregistrez la règle, exécutez trois scénarios de test et confirmez le résultat réel sur le document.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4" %}
 
-[Regarder avec les sous-titres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.html) · [Ouvrir la vidéo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.mp4) · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.vtt) · [Transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.txt) · 4:10
+[Regarder avec les sous-titres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.html) · [Ouvrir la vidéo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4) · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.vtt) · [Transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.txt) · 4:10
 
 <details>
 <summary>Chapitres et transcription</summary>
 
 | Chapitre | Début |
 | --- | --- |
-| Rôle de ce workflow | [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.mp4#t=0.000) |
-| Nommer le workflow | [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.mp4#t=14.917) |
-| When : type de document | [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.mp4#t=25.792) |
-| And : numéro de facture | [0:38](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.mp4#t=38.292) |
-| And : montant supérieur à 1000 | [0:52](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.mp4#t=52.833) |
-| Then : affecter un vérificateur | [1:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.mp4#t=72.500) |
-| Then : modifier le statut | [1:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.mp4#t=88.542) |
-| Vérifier et enregistrer | [1:41](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.mp4#t=101.792) |
-| Vérifier la règle enregistrée | [1:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.mp4#t=118.958) |
-| Préparer le scénario de test | [2:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.mp4#t=131.667) |
-| Exécuter le cas positif | [2:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.mp4#t=154.542) |
-| Tester la valeur limite | [2:55](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.mp4#t=175.000) |
-| Tester un autre numéro de facture | [3:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.mp4#t=193.917) |
-| Vérifier le résultat sur le document | [3:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.mp4#t=213.042) |
-| Activer la règle testée | [3:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/fr.mp4#t=233.042) |
+| Rôle de ce workflow | [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4#t=0.000) |
+| Nommer le workflow | [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4#t=14.917) |
+| When : type de document | [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4#t=25.792) |
+| And : numéro de facture | [0:38](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4#t=38.292) |
+| And : montant supérieur à 1000 | [0:52](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4#t=52.833) |
+| Then : affecter un vérificateur | [1:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4#t=72.500) |
+| Then : modifier le statut | [1:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4#t=88.542) |
+| Vérifier et enregistrer | [1:41](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4#t=101.792) |
+| Vérifier la règle enregistrée | [1:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4#t=118.958) |
+| Préparer le scénario de test | [2:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4#t=131.667) |
+| Exécuter le cas positif | [2:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4#t=154.542) |
+| Tester la valeur limite | [2:55](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4#t=175.000) |
+| Tester un autre numéro de facture | [3:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4#t=193.917) |
+| Vérifier le résultat sur le document | [3:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4#t=213.042) |
+| Activer la règle testée | [3:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4#t=233.042) |
 
 **Rôle de ce workflow**
 

@@ -2,13 +2,10 @@
 
 ## Sprawdź fakturę i zakończ weryfikację
 
-Przejdź od panelu do przekazania faktury dalej: porównaj dostawcę, daty, numer, kwoty i walutę z oryginałem, odczytaj komunikat o wymaganym polu i zapisz poprawkę. W tym przykładzie faktura zostaje następnie przekazana do zatwierdzenia. Kolejny krok na Twoim koncie zależy od uprawnień i procesu skonfigurowanego w firmie.
+Przejdź od panelu do przekazania faktury dalej: porównaj dostawcę, daty, numer, kwoty i walutę z oryginałem oraz odczytaj komunikat o wymaganym polu. Wybierz numer bezpośrednio na dokumencie, potwierdź powiązanie i zachowaj regułę odczytu przyciskiem Zapisz reguły. W tym przykładzie sprawdzona faktura zostaje następnie przekazana do zatwierdzenia. Dostępne działania zależą od uprawnień i procesu w Twojej firmie.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v1/pl.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v2/pl.mp4" %}
 
-## Dodatkowe wprowadzenie
-
-{% embed url="https://youtu.be/CmmQIxOaF6E?si=gYE-U-Jv4dLPi2xT" %}
 
 ## Przegląd
 
@@ -16,9 +13,7 @@ Przejdź od panelu do przekazania faktury dalej: porównaj dostawcę, daty, nume
 
 ### Pochodzenie dokumentu
 
-{% embed url="https://youtu.be/-m45XGiIeig" %}
-DocBits Origin Setting Explained: Country Standards for Dates & Number Formats
-{% endembed %}
+Pochodzenie dokumentu określa, jak DocBits interpretuje daty i formaty liczb. Wybierz kraj odpowiadający dokumentowi i porównaj odczytane wartości z oryginałem.
 
 ## **Przycisk Save:**
 
@@ -174,9 +169,6 @@ Aby udostępnić informacje wewnętrzne, możesz tworzyć zadania i przypisywać
 
 <figure><img src="../../../.gitbook/assets/annotation_mode_example.png" alt="Przykład trybu adnotacji"><figcaption></figcaption></figure>
 
-{% embed url="https://youtu.be/ay0gGtwlqRE" %}
-DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Without Annotations
-{% endembed %}
 
 Możesz zostawiać adnotacje w dokumencie. Może to być pomocne, aby przekazać informacje innym użytkownikom, którzy będą dalej edytować ten dokument.
 

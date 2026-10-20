@@ -589,6 +589,7 @@
   * [Infrastructure](administration-and-setup/settings/infrastructure.md)
 * [Workflow](administration-and-setup/workflow/README.md)
   * [Dashboard](administration-and-setup/workflow/workflow-dashboard.md)
+  * [Workflow-Änderungen mit Regressionstests prüfen](administration-and-setup/workflow/workflow-regression-tests.md)
   * [Standard Workflow](administration-and-setup/workflow/standard-workflow-builder.md)
     * [Workflow Examples](administration-and-setup/workflow/standard-workflow/README.md)
       * [Above Max Amount](administration-and-setup/workflow/standard-workflow/above-max-amount.md)

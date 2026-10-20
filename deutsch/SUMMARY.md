@@ -590,6 +590,7 @@
 * [Workflow](administration-and-setup/workflow/README.md)
   * [Dashboard](administration-and-setup/workflow/workflow-dashboard.md)
   * [Workflow-Änderungen mit Regressionstests prüfen](administration-and-setup/workflow/workflow-regression-tests.md)
+  * [Eine Rechnung von der Prüfung bis zum Export begleiten](administration-and-setup/workflow/invoice-approval-export-tutorial.md)
   * [Standard Workflow](administration-and-setup/workflow/standard-workflow-builder.md)
     * [Workflow Examples](administration-and-setup/workflow/standard-workflow/README.md)
       * [Above Max Amount](administration-and-setup/workflow/standard-workflow/above-max-amount.md)

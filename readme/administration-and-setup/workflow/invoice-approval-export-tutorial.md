@@ -133,4 +133,4 @@ Damit ist die Rechnung durchgängig geprüft: Positionen übernommen, Bestellung
 
 - [Einen Standard Workflow erstellen und testen](standard-workflow-builder.md#standard-workflow-tutorial)
 - [Workflow-Änderungen mit Regressionstests prüfen](workflow-regression-tests.md)
-- [PO-Abgleich](cards-overview/po-matching-complete-guide.md)
+- [PO-Abgleich](and/compare-with-purchase-order/po-matching-complete-guide.md)

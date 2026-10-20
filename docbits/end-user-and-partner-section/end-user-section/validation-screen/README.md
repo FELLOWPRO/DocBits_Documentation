@@ -6,246 +6,88 @@ Follow an invoice from the dashboard to handoff: compare the supplier, dates, in
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v2/en.mp4" %}
 
+## Open and navigate the validation screen
 
-## Overview
+Open a document from the dashboard. In **Field Validation**, compare the editable fields with the original document alongside them. The document type and configured layout determine which fields, tables and action buttons appear. Drag the divider to give the fields or the document more room.
 
-<div data-full-width="false"><figure><img src="../../../.gitbook/assets/validation_screen_overview.png" alt="Validation Screen Overview"><figcaption></figcaption></figure></div>
+Use the page controls for a multi-page document and the zoom controls to read small text. The arrows at the bottom navigate between documents; they are separate from the page controls.
 
 ### Document Origin
 
-Document Origin determines how DocBits interprets dates and number formats. Choose the country that matches the document and check the extracted values against the original.
+Check **Document Origin** before reviewing dates and amounts. It determines how DocBits interprets date and number formats; it does not translate the document or change the interface language. Choose the origin that matches the document and compare the displayed values with the original.
 
-## **Save Button:**
+## Correct a field and teach DocBits where to read it
 
-<figure><img src="../../../.gitbook/assets/validation_screen_save_button.png" alt="Save Button"><figcaption></figcaption></figure>
+For an invoice number that was not read correctly:
 
-* **Save Button:**
-  * **Purpose:** Saves the current state of the document or script being worked on.
-  * **Use Case:** After making changes or annotations to a document, use this button to ensure all modifications are saved.
+1. Select the **Invoice number** field.
+2. Double-click the complete number on the original document, or select the area containing it.
+3. Check the proposed field assignment and confirm it with the check mark when prompted.
+4. Verify the value in the field and its highlighted source area on the document. Select the area again if the number is incomplete or belongs to another field.
+5. Save the document. To retain the extraction training, also choose **Save Rules** and confirm the dialog.
 
-### **Add special Rules:**
-
-<figure><img src="../../../.gitbook/assets/validation_screen_add_special_rules.png" alt="Add Special Rules Button"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/validation_screen_add_script_example.png" alt="Add Script Example"><figcaption></figcaption></figure>
-
-* **Add Special Rules / Add Script in DocBits:**
-  * **Purpose:** Allows users to implement specific rules or scripts that customize how documents are processed.
-  * **Use Case:** Use this feature to automate tasks like data extraction or format validation, enhancing workflow efficiency.
+<figure><img src="../../../.gitbook/assets/validation-source-selection-en-2026.png" alt="The invoice number selected on the original, with its assignment to the Invoice number field. Confirm the assignment before saving the rule."><figcaption><p>The invoice number selected on the original, with its assignment to the Invoice number field. Confirm the assignment before saving the rule.</p></figcaption></figure>
 
 {% hint style="info" %}
-See here add[ Script in DocBits](../../../administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/)
+Typing a replacement value corrects this document; it does not create the source-area assignment needed for this extraction training. Select the value on the original, confirm the assignment and save the rule so DocBits can reuse it for matching documents from that supplier. Image-based training is unavailable for documents read directly as electronic-invoice data.
 {% endhint %}
 
-### **Fuzzy Fields:**
+## Save, save rules and continue processing
 
-<figure><img src="../../../.gitbook/assets/validation_screen_fuzzy_fields.png" alt="Fuzzy Fields"><figcaption></figcaption></figure>
+| Action | What it does |
+| --- | --- |
+| **Save** — disk icon above the fields | Stores changes to the current document. It does not by itself approve or export it. |
+| **Save Rules** | Stores extraction rules based on the document and its source assignments. This is separate from saving document values. |
+| **Export**, approval or another configured action | Sends the document to the next configured processing step after the relevant checks. The action and resulting status depend on the workflow and your permissions. |
 
-* **Fuzzy Fields:**
-  * **Purpose:** Helps in identifying and correcting fields where the data may not be a perfect match but is close enough.
-  * **Use Case:** Useful in data validation processes where exact matches are not always possible, such as slightly misspelled names or addresses.
+The video shows a workflow in which the reviewed invoice is submitted for approval. An **Export** label does not guarantee that the invoice has already arrived in the target ERP system. Check its new status on the dashboard and any reported processing errors.
 
-### **Required fields:**
+## Required fields and validation messages
 
-<figure><img src="../../../.gitbook/assets/validation_screen_required_fields.png" alt="Required Fields"><figcaption></figcaption></figure>
+A red border or warning icon calls attention to a field. Read its information message to find out whether a required value is missing, extraction needs review, or a configured check failed. A visible value alone does not prove that the field is valid.
 
-Fields that need attention show a colored border or an information icon. In the example below, the **Invoice number** field has a red border and warning icon. The value is visible on the invoice at the right, but DocBits did not extract it from the document. Select the number on the document or correct the field, then save the document.
+Compare supplier, invoice number, dates, amounts and currency with the original. For totals, check the relevant header values and any line items. Correct the cause described in the message before continuing. The checks depend on the document type and your organization's configuration; see [Automatic Checks](automatic-checks-on-the-validation-screen.md).
 
-Hover over or select the information icon beside a field to read the specific reason. Depending on the field, the message can indicate missing extraction, a required value, low confidence, or a validation mismatch. If the warning concerns the totals, compare the amount fields with the invoice and use [Automatic Checks on the Validation Screen](automatic-checks-on-the-validation-screen.md) for the relevant check.
+## Use the Assistant
 
-<figure><img src="../../../.gitbook/assets/validation-required-field-en-2026.png" alt="English DocBits validation screen with a red warning on the invoice number and the matching number visible on a synthetic invoice"><figcaption><p>A field needing attention beside the invoice used to check its value.</p></figcaption></figure>
+The **Assistant** button above the fields shows open validation issues. Open it and use **Go to field** to inspect the affected field. AI questions and suggestions depend on whether the assistant is enabled for your organization and your access. If they are unavailable, read the notice in the panel. Suggestions change the form; review them and save the document to retain the changes.
 
-## Extracted table (line items)
+## Select master data with a lookup
 
-<figure><img src="../../../.gitbook/assets/validation_screen_line_items_table.png" alt="Line-item table on the validation screen with the table toolbar"><figcaption><p>The extracted table below the header fields</p></figcaption></figure>
+Fields with a configured lookup can search supplier, purchase-order or other master data. Open the lookup control, narrow the results and select the correct record. A selection can populate several related fields, so review those values too. These values come from master data and may differ from the printed wording. See [Fuzzy Data](fuzzy-data.md).
 
-Below the header fields DocBits shows the line-item table of the document, one row per invoice line, one column per [table column](../../../administration-and-setup/settings/global-settings/document-types/table-columns/README.md) configured for the document type. When a document type has several tables (for example items and charges), each table has its own tab above the grid.
+## Review line items
 
-### Where the table comes from
+If the layout includes tables, compare the extracted rows, descriptions, quantities, prices and amounts with the document. **Extracted table** and **AI Extracted table** are different extraction views; which are available depends on the enabled extraction methods and the layout. An empty or missing tab does not by itself identify the cause of an extraction problem.
 
-Above the grid there is one tab per extraction path the organization has switched on:
+Correct individual cells and missing or duplicated rows using the available table controls. These edits correct the current document. Reusable table training, AI tags and header-field training are separate operations. See [AI Table Tags](../ai-table/ai-table-tags.md) and [Table Training](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
 
-| Tab | Meaning |
-|---|---|
-| **Extracted table** | Rule-based extraction (*Table Extraction* setting). For a supplier with a trained table these rows come from the saved rules and are extracted the same way on every document of that supplier; for an untrained supplier the tab may be empty. |
-| **AI Extracted table** | The AI table extraction (*AI Table Extraction* setting). Filled when the supplier has no saved rules, and for columns marked *Use AI* even when rules exist. A tooltip *AI table not found* on the tab means the AI returned nothing for this document. |
-| **PO Tables** | Only in the layout builder: the purchase-order lines used for matching. |
+Read table warnings for required columns, line calculations and totals. Before applying a new AI extraction or re-extracting a table, read the confirmation: existing purchase-order matches may need to be removed and recreated.
 
-If neither tab appears, both table settings are off for the organization (Settings → Document Processing → Classification and Extraction). Which AI tier reads the table is set per organization and can be overridden per supplier, see [Supplier-Specific AI Model](supplier-specific-ai-model-for-field-and-table-extraction.md).
+## Document viewer and collaboration tools
 
-### Working in the table
+Hover over a toolbar icon to read its label. Some tools are available only for certain modules, document types or permissions.
 
-* **Edit a cell**: click into it and type. Amount, number and date columns are validated while you type.
-* **Add new table row**: appends an empty row at the end. Use it when a line was not recognised.
-* **Delete a row**: the trash icon at the end of the row.
-* **Add empty mapped columns**: shows the configured columns the AI left empty, so you can fill them by hand.
-* **Restore Table Column**: brings back a column you removed from the view for this document.
-* **Delete table**: clears all rows of this table on this document. The configuration is not touched.
-* **Add new table column** (admins): the same dialog as in the table-column settings, without leaving the document.
-* **Tags** (AI table only): short text hints for the AI, for example *"the last column is the net amount"*. See [AI Table Tags](../ai-table/ai-table-tags.md).
-* **Apply** / **Save** / **Delete** next to the tags: *Apply* re-runs the AI table for this document with the tags and column changes you made, without storing anything (if the document has PO-matched lines, DocBits warns that the matches are removed); *Save Rules* stores the current column mapping and tags for this supplier; *Delete Rules* removes them and re-runs the AI extraction for this document.
-* **Export**: downloads the table as a CSV file.
-* **Go to table extraction view**: opens table training for this document. Use it when the same supplier keeps coming out wrong: draw the table once, map the columns and click *Save Rules*; from then on the rows appear in the *Extracted table* tab. See [Training Line Fields / Table Training](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
+| Tool | Use |
+| --- | --- |
+| **Magnify Glass** and zoom | Inspect small details in the original. |
+| **Open image in new window** | Show the same document image in a separate window, for example on another monitor. The interface identifies this as a Chrome feature. |
+| **Keyboard shortcuts** | Open the shortcut help; see [Keyboard Shortcuts](keyboard-shortcuts.md). |
+| **Tasks** | Create and follow internal work assigned to a person or group. |
+| **Activity Stream** | Review recorded activity on the document. |
+| **Approval History** | Review approval and rejection entries when this feature is enabled. |
+| **Annotation mode** | Add notes on the document when annotations are enabled. |
+| **Merge / add pages** | Combine documents or add missing pages using the available merge dialog. Check the selected pages before confirming. |
+| **OCR view** | Inspect text already recognized from the document. Opening this view does not start a new OCR extraction. It is unavailable for some electronic documents. |
+| **Create ticket** | Prepare a support request with document context and a description of the issue. Internal tasks are handled separately. |
+| **Script Logs** | Inspect messages from document scripts when the scripting module is enabled. This is a log viewer, not a script editor. |
 
-{% hint style="info" %}
-If the table was extracted by the AI and you open table training, DocBits asks *Table is already extracted by AI. Do you want to train manually?* After you save rules, the AI table is no longer used for this supplier.
-{% endhint %}
+## More options and administrator settings
 
-### Re-extracting the table
+For invoices, **More options → Document Flow** opens the processing flow. Depending on access and configuration, the menu can also contain document splitting, a layout-template shortcut and supplier extraction preferences.
 
-* **Same document, AI table:** add or change tags and click **Apply**; the AI table is rebuilt for this document only. To also drop the supplier's saved tags and formatting, click **Delete** (*Delete Rules*): DocBits confirms *Rules has been deleted successfully* and runs the AI extraction again.
-* **Same document, trained rules:** open *Go to table extraction view*, correct the table and click *Save & re-extract*.
-* **Whole document again (header and table):** Dashboard → document menu → *Restart*. Needed after an admin changed the table columns or the extraction settings.
+**Use E-Text if available**, **Use Structured Extraction (AI)** and **AI Model** are supplier extraction settings, not ordinary field corrections. Only authorized administrators can change them. Follow the restart confirmation when a change requires reprocessing. A layout template configures the validation form; it does not edit the invoice's printed layout. See [Supplier-Specific AI Model](supplier-specific-ai-model-for-field-and-table-extraction.md).
 
-### What blocks approval
+## If you cannot edit or continue
 
-The table is checked when you save or approve. A red cell or a message under the table means one of:
-
-| Message | Cause | What to do |
-|---|---|---|
-| Required column empty | A column marked *Is Required* has no value in this row. | Fill the cell, or ask an admin whether the column must be required. |
-| *Line total does not match quantity x unit price (expected …, got …)* | `quantity × unit price + charges − discount` differs from the line total by more than 0.02. Often one of the four values was read into the wrong column. | Correct the value that is wrong on the document; if a column such as *Charges* is consistently filled with the wrong value, tell your admin (see [Troubleshooting](../../../administration-and-setup/settings/global-settings/document-types/table-columns/troubleshooting-1.md)). |
-| *Line items add up to … but the net total is …* | The sum of the line totals differs from the net amount in the header. | Check for a missing or duplicated row, or a header amount read wrongly. |
-| *Line Item Table is missing Mandatory column for PO* | PO matching needs item number, unit price, quantity and total amount; one of them is hidden. | Admin: unhide the column under Table Columns. |
-
-An admin can switch all table checks off for a document type with *Skip table validation* (Document Types → More Settings); line mismatches and empty required columns are then not reported.
-
-More on the checks: [Automatic Checks on the Validation Screen](automatic-checks-on-the-validation-screen.md) and [Table Extraction Troubleshoot](../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md).
-
-### **Magnify Glass:**
-
-<figure><img src="../../../.gitbook/assets/validation_screen_magnifying_glass.png" alt="Magnifying Glass Icon" width="118"><figcaption></figcaption></figure>
-
-* **Magnifying Glass (Magnify Glass):**
-  * **Purpose:** Provides a zoomed-in view of a selected area of the document.
-  * **Use Case:** Helps in examining fine details or small text in documents, ensuring accuracy in data entry or review.
-
-<figure><img src="../../../.gitbook/assets/validation_screen_zoomed_view.png" alt="Zoomed Document View"><figcaption></figcaption></figure>
-
-### **Open new window:**
-
-<figure><img src="../../../.gitbook/assets/validation_screen_open_new_window.png" alt="Open New Window Icon" width="130"><figcaption></figcaption></figure>
-
-* **Open New Window:**
-  * **Purpose:** Opens a new window for side-by-side document comparison or multitasking.
-  * **Use Case:** Useful when comparing two documents or when referencing additional information without leaving the current document.
-
-### **Keyboard shortcuts:**
-
-<figure><img src="../../../.gitbook/assets/validation_screen_keyboard_shortcuts.png" alt="Keyboard Shortcuts Icon" width="145"><figcaption></figcaption></figure>
-
-1. **Keyboard Shortcuts:**
-   * **Purpose:** Allows users to perform actions quickly using keyboard combinations.
-   * **Use Case:** Enhances speed and efficiency in document navigation and processing by minimizing reliance on mouse navigation.
-
-### **Tasks:**
-
-<figure><img src="../../../.gitbook/assets/validation_screen_tasks_button.png" alt="Tasks Button" width="55"><figcaption></figcaption></figure>
-
-To share internal information, you can create tasks and assign them to a specific employee or group within the company.
-
-* **Tasks:**
-  * **Purpose:** Enables users to create tasks related to documents and assign them to team members.
-  * **Use Case:** Facilitates collaboration and task management within teams, ensuring everyone knows their responsibilities.
-
-<figure><img src="../../../.gitbook/assets/validation_screen_task_creation.png" alt="Task Creation Dialog" width="218"><figcaption></figcaption></figure>
-
-### Approval History
-
-<figure><img src="../../../.gitbook/assets/approval_history_button.png" alt="Approval History Button"><figcaption></figcaption></figure>
-
-**Note:** The approval history must be activated before it can be displayed here.
-
-**Approval History:**
-
-* **Purpose**: Displays document approval history in field validation, with red indicating rejected and the app's color indicating approved.
-* **Use Case**: Useful for organizations that require a transparent record of approval actions during field validation.
-
-<figure><img src="../../../.gitbook/assets/approval_history_list_view.png" alt="Approval History List View"><figcaption></figcaption></figure>
-
-### **Annotation mode:**
-
-<figure><img src="../../../.gitbook/assets/validation_screen_annotation_mode.png" alt="Annotation Mode Button" width="187"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/annotation_mode_example.png" alt="Annotation Mode Example"><figcaption></figcaption></figure>
-
-
-You can leave annotations on a document. This can be helpful to leave information for other users who further edit this document.
-
-* **Annotation Mode:**
-  * **Purpose:** Lets users leave notes or annotations directly on the document.
-  * **Use Case:** Useful for providing feedback, instructions, or important notes to other team members who will work on the document later.
-
-### **Merge:**
-
-<figure><img src="../../../.gitbook/assets/validation_screen_merge_documents.png" alt="Merge Documents Button" width="60"><figcaption></figcaption></figure>
-
-Documents can be merged here, for example if a page of an invoice was missing, these pages can be merged later in this way without the entire document having to be deleted or re-uploaded.
-
-* **Merge Documents:**
-  * **Purpose:** Combines multiple documents into a single file.
-  * **Use Case:** Handy in scenarios where parts of a document are scanned separately and need to be consolidated.
-
-### **OCR view:**
-
-<figure><img src="../../../.gitbook/assets/validation_screen_ocr_view_button.png" alt="OCR View Button" width="77"><figcaption></figcaption></figure>
-
-In the OCR view, the text is automatically filtered from the document. This is used to recognize relevant features, such as the postal code, contract number, invoice number and the sorting of a document.
-
-* **OCR View:**
-  * **Purpose:** Automatically recognizes text within documents using Optical Character Recognition technology.
-  * **Use Case:** Streamlines the process of digitizing printed or handwritten texts, making them searchable and editable.
-
-<figure><img src="../../../.gitbook/assets/validation_screen_ocr_view_example.png" alt="OCR View Example"><figcaption><p>OCR</p></figcaption></figure>
-
-### **Create ticket:**
-
-<figure><img src="../../../.gitbook/assets/validation_screen_create_ticket_button.png" alt="Create Ticket Button" width="97"><figcaption></figcaption></figure>
-
-Unlike tasks that are passed on internally within the company, this support ticket is important to notify us and to immediately create a ticket in the event of errors and/or discrepancies. This makes the process much easier because you can immediately send the bug with the appropriate document. There is also the option to set priority, take a screenshot of the document or upload one.
-
-* **Create Ticket:**
-  * **Purpose:** Allows users to report issues or discrepancies by creating a support ticket.
-  * **Use Case:** Essential for quick resolution of problems and bugs, helping maintain the integrity and smooth functioning of the system.
-
-<figure><img src="../../../.gitbook/assets/validation_screen_create_ticket_form.png" alt="Create Ticket Form" width="237"><figcaption></figcaption></figure>
-
-### **Document skript Logs:**
-
-<figure><img src="../../../.gitbook/assets/validation_screen_script_logs_button.png" alt="Document Script Logs Button" width="160"><figcaption></figcaption></figure>
-
-Scripts can be created in the settings under Document Types; this information will then be displayed here.
-
-* **Document Script Logs:**
-  * **Purpose:** Displays logs related to scripts that have been implemented for different document types.
-  * **Use Case:** Useful for tracking and debugging script actions on documents, helping users understand the automated processes and correct any issues.
-
-<figure><img src="../../../.gitbook/assets/document_script_logs_view.png" alt="Document Script Logs View"><figcaption></figcaption></figure>
-
-### **More settings:**
-
-<figure><img src="../../../.gitbook/assets/more_settings_menu_icon.png" alt="More Settings Menu Icon"><figcaption></figcaption></figure>
-
-### **Document Flow:**
-
-There you will find the flow of the document
-
-* **Purpose:** Shows the sequence and progression of document processing within the system.
-* **Use Case:** Helps in tracking document status through different stages, ensuring that all necessary processing steps are followed.
-
-### **Go to layout Template:**
-
-* With this option you will be redirected and can edit your layout or use the default template
-* **Go to Layout Template:**
-  * **Purpose:** Redirects users to a layout editor where they can modify existing templates or apply a default one.
-  * **Use Case:** Enables customization of document layouts to meet specific business needs or preferences, enhancing the document’s visual and functional alignment with company standards.
-
-### Use E-Text if Available
-
-* **Purpose:** Enables DocBits to use e-text for all documents from a specific supplier if available, improving extraction accuracy.
-* **Use Case:** Enhances text extraction by leveraging embedded text instead of OCR, which can lead to more precise results for this supplier.
-
-### [Supplier-Based AI Model](supplier-specific-ai-model-for-field-and-table-extraction.md)
-
-* **Purpose:** Allows selection between three different AI models to optimize extraction results for a specific supplier.
-* **Use Case:** Ensures better extraction accuracy by choosing the most suitable AI model for each supplier’s document structure and content.
+Read the displayed reason: the document may be locked, read-only, in another processing status or restricted by your role. Resolve validation messages and ask the responsible colleague or administrator about access or configuration. For an error that remains, use [Troubleshooting](troubleshooting/README.md) or prepare a support ticket with the document and the exact message.

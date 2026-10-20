@@ -362,6 +362,8 @@ directory page `/table-columns` correctly serves `table-columns_list-de.png`;
   strings in `src/tolgee/i18n/de.json`. Product i18n defect, not a docs one;
   page keeps the English ref. Verified 2026-10-17.
 
+| 2026-10-20 | de | `end-user-section/validation-screen` | 18 (of 22 refs) | #1141 | merged + bridge `39367728350` success; verified live — all 18 `_de` blobs byte-identical to the shipped assets (`validation_screen_zoomed_view_de.png` md5 `ef954d9512c4…`, `more_settings_menu_icon_de.png` md5 `d2372615b707…`), 0 live EN names left (`validation_screen_overview.png` etc. gone). **3 figures dropped — no honest German capture:** `add_script_example` (script panel lists configured scripts only; dev has none → renders nothing), `ocr_view_example` (OCR-view panel labels `Field Mapping` / `Header Fields` / `XPath Expression` are untranslated product strings), `approval_history_list_view` (approval history not enabled in the dev org — panel never opens on 4 documents, incl. scanned/ksef/ubl). **4 refs stay EN glyphs** (44–154 px, no language): `add_special_rules`, `fuzzy_fields`, `required_fields`, `ocr_view_button`. PII masked on `create_ticket_form` (Name + E-Mail filled white; no fabricated value). Capture traps: an English dev `<li>` banner ("Rules cannot be created …") sat inside 4 first-round shots and is **not** a `.q-notification` — hidden via `li[innerText~/Rules cannot be created/].style.display='none'`; the task dialog only opens after a **real mouse click** on `Eine Aufgabe hinzufügen` (a synthetic `.click()` does nothing); toolbar tooltips fade before `page.screenshot` — re-hover 1.2 s right before the shot and allow `timeout: 120000`. |
+
 ## Blocked / needs a decision
 
 ### Top-20-Triage (de) — Ergebnis 2026-10-18

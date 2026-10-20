@@ -1,5 +1,7 @@
 # DocBits MCP
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/docbits-mcp-admin/v1/fr.mp4" %}
+
 DocBits expose un serveur **Model Context Protocol (MCP)** qui permet aux assistants IA de travailler avec vos documents, l'extraction, la recherche, les analyses et la configuration — directement depuis un chat ou une session de code. Tout client compatible MCP peut s'y connecter : **Claude Code**, **Claude Desktop**, **Google Gemini CLI**, **OpenAI Codex** ou toute intégration personnalisée.
 
 Le serveur est monté sur l'API DocBits à l'adresse `/v3/mcp` et est limité à votre organisation — chaque appel s'exécute avec les autorisations de l'utilisateur (ou de la clé d'API) qui s'est connecté.

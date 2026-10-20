@@ -6,234 +6,88 @@ Volg een factuur van het dashboard tot de overdracht: vergelijk leverancier, dat
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v2/nl.mp4" %}
 
+## Het validatiescherm openen en gebruiken
 
-## Overzicht
+Open een document vanuit het dashboard. In **veldvalidatie** vergelijk je de bewerkbare velden met het origineel ernaast. Het documenttype en de ingestelde lay-out bepalen welke velden, tabellen en actieknoppen verschijnen. Versleep de scheidingslijn om de velden of het document meer ruimte te geven.
 
-<div data-full-width="false"><figure><img src="../../../.gitbook/assets/docbits_validation_screen_overview_nl.png" alt="Docbits Validation Screen Overview Nl"><figcaption></figcaption></figure></div>
+Gebruik de paginabediening bij documenten met meerdere pagina’s en de zoom om kleine tekst te lezen. De pijlen onderaan wisselen tussen documenten en staan los van de paginabediening.
 
-### Document Oorsprong (Document Origin)
+### Documentoorsprong
 
-De documentoorsprong bepaalt hoe DocBits datums en getalnotaties interpreteert. Kies het land dat bij het document past en controleer de uitgelezen waarden met het origineel.
+Controleer de **documentoorsprong** voordat je datums en bedragen bekijkt. Deze bepaalt hoe DocBits datum- en getalnotaties interpreteert; de instelling vertaalt het document niet en wijzigt de interfacetaal niet. Kies de oorsprong die bij het document hoort en vergelijk de waarden met het origineel.
 
-### **Opslaan knop:**
+## Een veld corrigeren en DocBits de bronlocatie leren
 
-<figure><img src="../../../.gitbook/assets/docbits_save_button_nl.png" alt="Docbits Save Button Nl"><figcaption></figcaption></figure>
+Als het factuurnummer verkeerd is uitgelezen:
 
-* **Opslaan knop:**
-  * **Doel:** Slaat de huidige staat van het document of script waar aan gewerkt wordt op.
-  * **Gebruiksscenario:** Na het aanbrengen van wijzigingen of annotaties in een document, gebruik deze knop om ervoor te zorgen dat alle aanpassingen zijn opgeslagen.
+1. Selecteer het veld **Factuurnummer**.
+2. Dubbelklik op het volledige nummer in het origineel of selecteer het gebied waarin het staat.
+3. Controleer het voorgestelde veld en bevestig de koppeling met het vinkje wanneer daarom wordt gevraagd.
+4. Controleer de veldwaarde en het gemarkeerde brongebied. Selecteer opnieuw als het nummer onvolledig is of aan het verkeerde veld is gekoppeld.
+5. Sla het document op. Gebruik daarnaast **Regels opslaan / Save Rules** en bevestig het venster om de extractietraining te bewaren.
 
-### **Speciale regels toevoegen:**
-
-<figure><img src="../../../.gitbook/assets/docbits_add_special_rules.png" alt="Docbits Add Special Rules"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/docbits_add_script_rule.png" alt="Docbits Add Script Rule"><figcaption></figcaption></figure>
-
-* **Speciale regels toevoegen / Script in DocBits toevoegen:**
-  * **Doel:** Stelt gebruikers in staat om specifieke regels of scripts te implementeren die aanpassen hoe documenten worden verwerkt.
-  * **Gebruiksscenario:** Gebruik deze functie om taken te automatiseren zoals gegevensextractie of formatvalidatie, wat de efficiëntie van de workflow verbetert.
+<figure><img src="../../../.gitbook/assets/validation-source-selection-nl-2026.png" alt="Het nummer geselecteerd op het origineel en gekoppeld aan het veld. Bevestig de koppeling voordat je de regel opslaat."><figcaption><p>Het nummer geselecteerd op het origineel en gekoppeld aan het veld. Bevestig de koppeling voordat je de regel opslaat.</p></figcaption></figure>
 
 {% hint style="info" %}
-Zie hier toevoegen [Script in DocBits](../../../administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/)
+Een vervangende waarde intypen corrigeert dit document, maar maakt niet de koppeling met het brongebied die voor deze extractietraining nodig is. Selecteer de waarde op het origineel, bevestig de koppeling en sla de regel op voor hergebruik bij passende documenten van deze leverancier. Training op basis van de afbeelding is niet beschikbaar voor documenten die rechtstreeks als elektronische factuurgegevens zijn gelezen.
 {% endhint %}
 
-### **Vage velden:**
+## Opslaan, regels bewaren en verder verwerken
 
-<figure><img src="../../../.gitbook/assets/docbits_fuzzy_fields_nl.png" alt="Docbits Fuzzy Fields Nl"><figcaption></figcaption></figure>
+| Actie | Resultaat |
+| --- | --- |
+| **Opslaan** — diskette boven de velden | Bewaart wijzigingen aan het huidige document. Deze actie keurt het document op zichzelf niet goed en exporteert het niet. |
+| **Regels opslaan / Save Rules** | Bewaart extractieregels op basis van het document en de koppelingen met brongebieden. Dit staat los van het opslaan van veldwaarden. |
+| **Export**, goedkeuring of een andere ingestelde actie | Stuurt het document na de bijbehorende controles naar de volgende ingestelde stap. Actie en nieuwe status hangen af van het proces en je rechten. |
 
-* **Vage velden:**
-  * **Doel:** Helpt bij het identificeren en corrigeren van velden waar de gegevens mogelijk niet perfect overeenkomen, maar dicht genoeg zijn.
-  * **Gebruiksscenario:** Nuttig in gegevensvalidatieprocessen waar exacte overeenkomsten niet altijd mogelijk zijn, zoals licht verkeerd gespelde namen of adressen.
+In de video wordt de gecontroleerde factuur ter goedkeuring doorgestuurd. Een knop **Export** garandeert niet dat de factuur al in het doelsysteem voor ERP is aangekomen. Controleer de nieuwe status op het dashboard en eventuele verwerkingsfouten.
 
-### **Verplichte velden:**
+## Verplichte velden en validatiemeldingen
 
-<figure><img src="../../../.gitbook/assets/docbits_mandatory_fields.png" alt="Docbits Mandatory Fields"><figcaption></figcaption></figure>
+Een rode rand of waarschuwingspictogram vraagt aandacht voor een veld. Lees de informatie: er kan een verplichte waarde ontbreken, de extractie kan controle vereisen of een ingestelde controle kan zijn mislukt. Een zichtbare waarde bewijst op zichzelf niet dat het veld geldig is.
 
-Velden die aandacht nodig hebben, tonen een gekleurd kader of een informatiepictogram. In het onderstaande voorbeeld heeft het veld **Factuurnummer** een rood kader en een waarschuwingspictogram. De waarde is zichtbaar op de factuur rechts, maar DocBits heeft deze niet uit het document geëxtraheerd. Selecteer het nummer op het document of corrigeer het veld en sla het document vervolgens op.
+Vergelijk leverancier, nummer, datums, bedragen en valuta met het origineel. Controleer bij totalen de betreffende kopvelden en eventuele regels. Verhelp de aangegeven oorzaak voordat je verdergaat. De controles hangen af van het documenttype en de organisatie-instellingen; zie [Automatische controles](automatic-checks-on-the-validation-screen.md).
 
-Beweeg de muis over het informatiepictogram naast een veld of selecteer het om de specifieke reden te lezen. Afhankelijk van het veld kan de melding een ontbrekende extractie, een verplichte waarde, lage betrouwbaarheid of een validatieafwijking aangeven. Als de waarschuwing de totalen betreft, vergelijk dan de bedragvelden met de factuur en gebruik [Automatische controles op het validatiescherm](automatic-checks-on-the-validation-screen.md) voor de betreffende controle.
+## De assistent gebruiken
 
-<figure><img src="../../../.gitbook/assets/validation-required-field-nl-20261011.png" alt="Nederlands DocBits-validatiescherm met een rode waarschuwing bij het factuurnummer en het bijbehorende nummer zichtbaar op een synthetische factuur"><figcaption><p>Een veld dat aandacht nodig heeft, naast de factuur waarmee de waarde wordt gecontroleerd.</p></figcaption></figure>
+De knop **Assistent** boven de velden toont openstaande validatieproblemen. Open deze en kies **Ga naar veld** om het betreffende veld te controleren. AI-vragen en suggesties hangen af van activering voor je organisatie en je rechten. Lees de melding in het paneel als ze niet beschikbaar zijn. Suggesties wijzigen het formulier: controleer ze en sla het document op om de wijzigingen te bewaren.
 
-## Geëxtraheerde tabel (regelitems)
+## Stamgegevens selecteren
 
-<figure><img src="../../../.gitbook/assets/validation_screen_line_items_table.png" alt="Regelitemtabel op het validatiescherm met de tabelwerkbalk"><figcaption><p>De geëxtraheerde tabel onder de koptekstvelden</p></figcaption></figure>
+Velden met een ingestelde zoekfunctie kunnen leveranciers, inkooporders of andere stamgegevens doorzoeken. Open de zoekfunctie bij het veld, beperk de resultaten en selecteer de juiste record. Hierdoor kunnen meerdere gekoppelde velden worden ingevuld: controleer die ook. Deze waarden komen uit stamgegevens en kunnen afwijken van de gedrukte tekst. Zie [Fuzzy Data](fuzzy-data.md).
 
-Onder de koptekstvelden toont DocBits de regelitemtabel van het document: één rij per factuurregel, één kolom per [tabelkolom](../../../administration-and-setup/settings/global-settings/document-types/table-columns/README.md) die voor het documenttype is geconfigureerd. Wanneer een documenttype meerdere tabellen heeft (bijvoorbeeld artikelen en kosten), heeft elke tabel een eigen tabblad boven het raster.
+## Factuurregels controleren
 
-### Waar de tabel vandaan komt
+Als de lay-out tabellen bevat, vergelijk je regels, omschrijvingen, aantallen, prijzen en bedragen met het document. **Geëxtraheerde tabel** en **Door AI geëxtraheerde tabel** zijn verschillende extractieweergaven. Hun beschikbaarheid hangt af van de ingeschakelde methoden en de lay-out. Een leeg of ontbrekend tabblad verklaart op zichzelf geen extractieprobleem.
 
-Boven het raster staat één tabblad per extractiepad dat de organisatie heeft ingeschakeld:
+Corrigeer cellen en ontbrekende of dubbele regels met de beschikbare bediening. Deze wijzigingen betreffen het huidige document. Herbruikbare tabeltraining, AI-tags en de training van kopvelden zijn afzonderlijke handelingen. Zie [AI-tabeltags](../ai-table/ai-table-tags.md) en [Tabeltraining](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
 
-| Tabblad | Betekenis |
-|---|---|
-| **Geëxtraheerde tabel** | Regelgebaseerde extractie (instelling *Tabel extractie*). Voor een leverancier met een getrainde tabel komen deze rijen uit de opgeslagen regels en worden ze op elk document van die leverancier op dezelfde manier geëxtraheerd; voor een niet-getrainde leverancier kan het tabblad leeg zijn. |
-| **AI Geëxtraheerde tabel** | De AI-tabelextractie (instelling *AI-tabel extractie*). Wordt gevuld wanneer de leverancier geen opgeslagen regels heeft, en voor kolommen met *AI gebruiken* ook wanneer er regels bestaan. Een tooltip *AI table not found* op het tabblad betekent dat de AI voor dit document niets heeft teruggegeven. |
-| **PO-tabellen** | Alleen in de layout builder: de inkooporderregels die voor de matching worden gebruikt. |
+Lees meldingen over verplichte kolommen, regelberekeningen en totalen. Lees de bevestiging voordat je een nieuwe AI-extractie toepast of een tabel opnieuw laat uitlezen: bestaande koppelingen met inkooporders moeten mogelijk worden verwijderd en opnieuw gemaakt.
 
-Als geen van beide tabbladen verschijnt, zijn beide tabelinstellingen voor de organisatie uitgeschakeld (Instellingen → Documentverwerking → Classificatie en extractie). Welke AI-tier de tabel leest, wordt per organisatie ingesteld en kan per leverancier worden overschreven, zie [Leverancierspecifiek AI-model](supplier-specific-ai-model-for-field-and-table-extraction.md).
+## Documentweergave en samenwerking
 
-### Werken in de tabel
+Beweeg de aanwijzer over een pictogram om de naam te lezen. Sommige hulpmiddelen vereisen bepaalde modules, documenttypen of rechten.
 
-* **Een cel bewerken**: klik in de cel en typ. Bedrag-, getal- en datumkolommen worden tijdens het typen gevalideerd.
-* **Nieuwe tabelrij toevoegen**: voegt onderaan een lege rij toe. Gebruik dit wanneer een regel niet is herkend.
-* **Een rij verwijderen**: het prullenbakpictogram aan het einde van de rij.
-* **Lege gekoppelde kolommen toevoegen**: toont de geconfigureerde kolommen die de AI leeg heeft gelaten, zodat u ze handmatig kunt invullen.
-* **Tabelkolom herstellen**: haalt een kolom terug die u voor dit document uit de weergave hebt verwijderd.
-* **Tabel verwijderen**: wist alle rijen van deze tabel op dit document. De configuratie blijft onaangeroerd.
-* **Nieuwe tabelkolom toevoegen** (beheerders): hetzelfde dialoogvenster als in de tabelkolominstellingen, zonder het document te verlaten.
-* **Tags** (alleen AI-tabel): korte tekstaanwijzingen voor de AI, bijvoorbeeld *"de laatste kolom is het nettobedrag"*. Zie [AI Tabel Tags](../ai-table/ai-table-tags.md).
-* **Toepassen** / **Opslaan** / **Verwijderen** naast de tags: *Toepassen* voert de AI-tabel voor dit document opnieuw uit met de tags en kolomwijzigingen die u hebt gemaakt, zonder iets op te slaan (als het document PO-gematchte regels heeft, waarschuwt DocBits dat de matches worden verwijderd); *Regels opslaan* slaat de huidige kolomkoppeling en tags voor deze leverancier op; *Regels verwijderen* verwijdert ze en voert de AI-extractie voor dit document opnieuw uit.
-* **Exporteren**: downloadt de tabel als CSV-bestand.
-* **Ga naar tabelextractieweergave**: opent de tabeltraining voor dit document. Gebruik dit wanneer dezelfde leverancier steeds verkeerd uitkomt: teken de tabel eenmalig, koppel de kolommen en klik op *Regels opslaan*; vanaf dan verschijnen de rijen in het tabblad *Geëxtraheerde tabel*. Zie [Training Line Fields / Tabeltraining](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
+| Hulpmiddel | Gebruik |
+| --- | --- |
+| **Vergrootglas** en zoom | Kleine details in het origineel bekijken. |
+| **Afbeelding in een nieuw venster openen** | Dezelfde afbeelding in een apart venster tonen, bijvoorbeeld op een tweede monitor. De interface vermeldt dat dit een Chrome-functie is. |
+| **Sneltoetsen** | De hulp openen; zie [Sneltoetsen](keyboard-shortcuts.md). |
+| **Taken** | Intern werk voor een persoon of groep aanmaken en volgen. |
+| **Activiteitenstroom** | Vastgelegde activiteiten van het document bekijken. |
+| **Goedkeuringsgeschiedenis** | Goedkeuringen en afwijzingen bekijken wanneer de functie is ingeschakeld. |
+| **Annotatiemodus** | Notities op het document plaatsen als annotaties zijn ingeschakeld. |
+| **Samenvoegen / pagina’s toevoegen** | Documenten combineren of ontbrekende pagina’s toevoegen via het beschikbare venster. Controleer de gekozen pagina’s voordat je bevestigt. |
+| **OCR-weergave** | Reeds herkende tekst bekijken. Het openen start geen nieuwe OCR-extractie. De functie is niet beschikbaar voor bepaalde elektronische documenten. |
+| **Ticket aanmaken** | Een ondersteuningsverzoek met documentcontext en probleembeschrijving voorbereiden. Interne taken worden apart behandeld. |
+| **Scriptlogboeken** | Meldingen van documentscripts bekijken als de module is ingeschakeld. Dit is een logboekweergave, geen scripteditor. |
 
-{% hint style="info" %}
-Als de tabel door de AI is geëxtraheerd en u de tabeltraining opent, vraagt DocBits *Table is already extracted by AI. Do you want to train manually?* Nadat u regels hebt opgeslagen, wordt de AI-tabel voor deze leverancier niet meer gebruikt.
-{% endhint %}
+## Meer opties en beheerinstellingen
 
-### De tabel opnieuw extraheren
+Bij facturen opent **Meer opties → Documentstroom** het verwerkingsverloop. Afhankelijk van toegang en inrichting kan het menu ook documentsplitsing, een koppeling naar de lay-outsjabloon en extractievoorkeuren voor de leverancier bevatten.
 
-* **Hetzelfde document, AI-tabel:** voeg tags toe of wijzig ze en klik op **Toepassen**; de AI-tabel wordt alleen voor dit document opnieuw opgebouwd. Om ook de opgeslagen tags en opmaak van de leverancier te verwijderen, klikt u op **Verwijderen** (*Regels verwijderen*): DocBits bevestigt *Rules has been deleted successfully* en voert de AI-extractie opnieuw uit.
-* **Hetzelfde document, getrainde regels:** open *Ga naar tabelextractieweergave*, corrigeer de tabel en klik op *Opslaan en opnieuw extraheren*.
-* **Het hele document opnieuw (koptekst en tabel):** Dashboard → documentmenu → *Opnieuw starten*. Nodig nadat een beheerder de tabelkolommen of de extractie-instellingen heeft gewijzigd.
+**E-Text gebruiken indien beschikbaar**, **Gestructureerde extractie (AI) gebruiken** en **AI-model** zijn extractie-instellingen voor de leverancier, geen gewone veldcorrecties. Alleen bevoegde beheerders kunnen ze wijzigen. Volg de herstartbevestiging als nieuwe verwerking nodig is. Een lay-outsjabloon stelt het validatieformulier in en wijzigt niet de gedrukte vormgeving van de factuur. Zie [AI-model per leverancier](supplier-specific-ai-model-for-field-and-table-extraction.md).
 
-### Wat de goedkeuring blokkeert
+## Als je niet kunt bewerken of doorgaan
 
-De tabel wordt gecontroleerd wanneer u opslaat of goedkeurt. Een rode cel of een melding onder de tabel betekent een van de volgende:
-
-| Melding | Oorzaak | Wat te doen |
-|---|---|---|
-| Verplichte kolom leeg | Een kolom met *Verplicht* heeft in deze rij geen waarde. | Vul de cel in, of vraag een beheerder of de kolom verplicht moet zijn. |
-| *Line total does not match quantity x unit price (expected …, got …)* | `hoeveelheid × eenheidsprijs + kosten − korting` wijkt meer dan 0,02 af van het regeltotaal. Vaak is een van de vier waarden in de verkeerde kolom gelezen. | Corrigeer de waarde die niet klopt met het document; als een kolom zoals *Kosten* steeds met de verkeerde waarde wordt gevuld, meld dit dan bij uw beheerder (zie [Probleemoplossing](../../../administration-and-setup/settings/global-settings/document-types/table-columns/troubleshooting-1.md)). |
-| *Line items add up to … but the net total is …* | De som van de regeltotalen wijkt af van het nettobedrag in de koptekst. | Controleer op een ontbrekende of dubbele rij, of een verkeerd gelezen kopbedrag. |
-| *Line Item Table is missing Mandatory column for PO* | PO-matching heeft artikelnummer, eenheidsprijs, hoeveelheid en totaalbedrag nodig; een daarvan is verborgen. | Beheerder: maak de kolom weer zichtbaar onder Tabelkolommen. |
-
-Een beheerder kan alle tabelcontroles voor een documenttype uitschakelen met *Tabelvalidatie overslaan* (Documenttypen → Meer instellingen); regelafwijkingen en lege verplichte kolommen worden dan niet meer gemeld.
-
-Meer over de controles: [Automatische controles op het validatiescherm](automatic-checks-on-the-validation-screen.md) en [Tabel Extractie Probleemoplossing](../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md).
-
-### **Vergrootglas:**
-
-<figure><img src="../../../.gitbook/assets/docbits_magnifying_glass_tool.png" alt="Docbits Magnifying Glass Tool" width="118"><figcaption></figcaption></figure>
-
-* **Vergrootglas:**
-  * **Doel:** Biedt een ingezoomd overzicht van een geselecteerd gebied van het document.
-  * **Gebruiksscenario:** Helpt bij het onderzoeken van fijne details of kleine tekst in documenten, waardoor de nauwkeurigheid bij gegevensinvoer of -beoordeling wordt gewaarborgd.
-
-<figure><img src="../../../.gitbook/assets/docbits_open_new_window_usage.png" alt="Docbits Open New Window Usage"><figcaption></figcaption></figure>
-
-### **Open nieuw venster:**
-
-<figure><img src="../../../.gitbook/assets/docbits_open_new_window_tool.png" alt="Docbits Open New Window Tool" width="130"><figcaption></figcaption></figure>
-
-* **Open nieuw venster:**
-  * **Doel:** Opent een nieuw venster voor zij-aan-zij documentvergelijking of multitasking.
-  * **Gebruiksscenario:** Nuttig bij het vergelijken van twee documenten of wanneer aanvullende informatie moet worden geraadpleegd zonder het huidige document te verlaten.
-
-### **Sneltoetsen:**
-
-<figure><img src="../../../.gitbook/assets/docbits_shortcuts_tool.png" alt="Docbits Shortcuts Tool" width="145"><figcaption></figcaption></figure>
-
-* **Sneltoetsen:**
-  * **Doel:** Stelt gebruikers in staat om acties snel uit te voeren met behulp van toetsencombinaties.
-  * **Gebruiksscenario:** Verhoogt de snelheid en efficiëntie in documentnavigatie en -verwerking door de afhankelijkheid van muisnavigatie te minimaliseren.
-
-<figure><img src="../../../.gitbook/assets/docbits_shortcuts_usage.png" alt="Docbits Shortcuts Usage" width="239"><figcaption><p>Keyboard</p></figcaption></figure>
-
-### **Taken:**
-
-<figure><img src="../../../.gitbook/assets/docbits_tasks_tool.png" alt="Docbits Tasks Tool" width="55"><figcaption></figcaption></figure>
-
-Om interne informatie te delen, kunt u taken aanmaken en deze toewijzen aan een specifieke werknemer of groep binnen het bedrijf.
-
-* **Taken:**
-  * **Doel:** Stelt gebruikers in staat om taken te creëren die verband houden met documenten en deze aan teamleden toe te wijzen.
-  * **Gebruiksscenario:** Vergemakkelijkt samenwerking en taakbeheer binnen teams, zodat iedereen op de hoogte is van zijn verantwoordelijkheden.
-
-<figure><img src="../../../.gitbook/assets/docbits_annotation_mode_usage.png" alt="Docbits Annotation Mode Usage" width="218"><figcaption></figcaption></figure>
-
-### **Annotatiemodus:**
-
-<figure><img src="../../../.gitbook/assets/docbits_annotation_mode_tool.png" alt="Docbits Annotation Mode Tool" width="187"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/docbits_validation_screen_annotations.png" alt="Docbits Validation Screen Annotations"><figcaption></figcaption></figure>
-
-U kunt annotaties op een document achterlaten. Dit kan nuttig zijn om informatie achter te laten voor andere gebruikers die dit document verder bewerken.
-
-* **Annotatiemodus:**
-  * **Doel:** Laat gebruikers notities of annotaties direct op het document achterlaten.
-  * **Gebruiksscenario:** Nuttig voor het geven van feedback, instructies of belangrijke notities aan andere teamleden die later aan het document zullen werken.
-
-### **Samenvoegen:**
-
-<figure><img src="../../../.gitbook/assets/docbits_merge_tool.png" alt="Docbits Merge Tool" width="60"><figcaption></figcaption></figure>
-
-Documenten kunnen hier worden samengevoegd, bijvoorbeeld als een pagina van een factuur ontbrak, kunnen deze pagina's later op deze manier worden samengevoegd zonder dat het hele document hoeft te worden verwijderd of opnieuw geüpload.
-
-* **Documenten samenvoegen:**
-  * **Doel:** Combineert meerdere documenten tot één bestand.
-  * **Gebruiksscenario:** Handig in scenario's waarin delen van een document afzonderlijk zijn gescand en moeten worden samengevoegd.
-
-### **OCR-weergave:**
-
-<figure><img src="../../../.gitbook/assets/docbits_ocr_view_tool.png" alt="Docbits Ocr View Tool" width="77"><figcaption></figcaption></figure>
-
-In de OCR-weergave wordt de tekst automatisch gefilterd uit het document. Dit wordt gebruikt om relevante kenmerken te herkennen, zoals de postcode, contractnummer, factuurnummer en de sortering van een document.
-
-* **OCR-weergave:**
-  * **Doel:** Herkent automatisch tekst binnen documenten met behulp van Optical Character Recognition-technologie.
-  * **Gebruiksscenario:** Vereenvoudigt het proces van het digitaliseren van gedrukte of handgeschreven teksten, waardoor ze doorzoekbaar en bewerkbaar worden.
-
-<figure><img src="../../../.gitbook/assets/docbits_ocr_usage.png" alt="Docbits Ocr Usage"><figcaption><p>OCR</p></figcaption></figure>
-
-### **Ticket aanmaken:**
-
-<figure><img src="../../../.gitbook/assets/docbits_create_ticket_tool.png" alt="Docbits Create Ticket Tool" width="97"><figcaption></figcaption></figure>
-
-In tegenstelling tot taken die intern binnen het bedrijf worden doorgegeven, is dit ondersteuningsticket belangrijk om ons te informeren en onmiddellijk een ticket aan te maken in geval van fouten en/of discrepanties. Dit maakt het proces veel gemakkelijker omdat u de bug onmiddellijk met het bijbehorende document kunt verzenden. Er is ook de optie om prioriteit in te stellen, een screenshot van het document te maken of er een te uploaden.
-
-* **Ticket aanmaken:**
-  * **Doel:** Stelt gebruikers in staat om problemen of discrepanties te melden door een ondersteuningsticket aan te maken.
-  * **Gebruiksscenario:** Essentieel voor een snelle oplossing van problemen en bugs, wat helpt om de integriteit en soepele werking van het systeem te behouden.
-
-<figure><img src="../../../.gitbook/assets/docbits_script_logs_usage.png" alt="Docbits Script Logs Usage" width="237"><figcaption></figcaption></figure>
-
-### **Document scriptlogs:**
-
-<figure><img src="../../../.gitbook/assets/docbits_script_logs_tool.png" alt="Docbits Script Logs Tool" width="160"><figcaption></figcaption></figure>
-
-Scripts kunnen worden aangemaakt in de instellingen onder Documenttypes; deze informatie wordt hier vervolgens weergegeven.
-
-* **Document scriptlogs:**
-  * **Doel:** Toont logs die verband houden met scripts die zijn geïmplementeerd voor verschillende documenttypes.
-  * **Gebruiksscenario:** Nuttig voor het volgen en debuggen van scriptacties op documenten, wat gebruikers helpt de geautomatiseerde processen te begrijpen en eventuele problemen te corrigeren.
-
-<figure><img src="../../../.gitbook/assets/docbits_validation_screen_debug.png" alt="Docbits Validation Screen Debug"><figcaption></figcaption></figure>
-
-### **Meer instellingen:**
-
-<figure><img src="../../../.gitbook/assets/docbits_validation_screen_more_settings_menu.jpg" alt="Docbits Validation Screen More Settings Menu"><figcaption></figcaption></figure>
-
-### **Documentflow:**
-
-Daar vindt u de flow van het document.
-
-* **Doel:** Toont de volgorde en voortgang van documentverwerking binnen het systeem.
-* **Gebruiksscenario:** Helpt bij het volgen van de documentstatus door verschillende fasen, en zorgt ervoor dat alle noodzakelijke verwerkingsstappen worden gevolgd.
-
-### **Ga naar lay-outsjabloon:**
-
-* Met deze optie wordt u doorgestuurd en kunt u uw lay-out bewerken of het standaard sjabloon gebruiken.
-* **Ga naar lay-outsjabloon:**
-  * **Doel:** Verwijst gebruikers naar een lay-outeditor waar ze bestaande sjablonen kunnen wijzigen of een standaard sjabloon kunnen toepassen.
-  * **Gebruiksscenario:** Maakt aanpassing van documentlay-outs mogelijk om te voldoen aan specifieke zakelijke behoeften of voorkeuren, waardoor de visuele en functionele afstemming van het document op de bedrijfsnormen wordt verbeterd.
-
-### Gebruik E-Text indien Beschikbaar
-
-* **Doel:** Stelt DocBits in staat om e-text te gebruiken voor alle documenten van een specifieke leverancier indien beschikbaar, wat de extractie-accuraatheid verbetert.
-* **Gebruikscase:** Verbetert de tekstextractie door gebruik te maken van ingebedde tekst in plaats van OCR, wat kan leiden tot nauwkeurigere resultaten voor deze leverancier.
-
-### [Leverancier-gebaseerd AI Model](supplier-specific-ai-model-for-field-and-table-extraction.md)
-
-* **Doel:** Maakt selectie mogelijk tussen drie verschillende AI-modellen om de extractieresultaten voor een specifieke leverancier te optimaliseren.
-* **Gebruikscase:** Zorgt voor een betere extractie-accuraatheid door het meest geschikte AI-model te kiezen voor de documentstructuur en inhoud van elke leverancier.
+Lees de weergegeven reden: het document kan vergrendeld, alleen-lezen, in een andere status of beperkt voor je rol zijn. Los validatiemeldingen op en overleg met de verantwoordelijke collega of beheerder over toegang en instellingen. Blijft de fout bestaan, raadpleeg dan [Problemen oplossen](troubleshooting/README.md) of bereid een ticket voor met het document en de exacte melding.

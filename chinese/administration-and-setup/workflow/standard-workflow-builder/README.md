@@ -6,30 +6,30 @@
 
 在真实的 DocBits 界面中创建完整的标准工作流：选择发票，检查发票号码和金额是否超过 1000，分配审核人并更改状态。保存规则，运行三个测试场景，然后查看文档的实际结果。
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.mp4" %}
 
-[观看带字幕的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.html) · [打开视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.mp4) · [字幕（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.vtt) · [文字稿](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.txt) · 3:41
+[观看带字幕的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.html) · [打开视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.mp4) · [字幕（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.vtt) · [文字稿](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.txt) · 3:41
 
 <details>
 <summary>章节与文字稿</summary>
 
 | 章节 | 开始时间 |
 | --- | --- |
-| 此工作流的作用 | [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.mp4#t=0.000) |
-| 命名工作流 | [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.mp4#t=14.042) |
-| When：文档类型 | [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.mp4#t=25.417) |
-| And：发票号码 | [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.mp4#t=37.375) |
-| And：金额超过 1000 | [0:51](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.mp4#t=51.667) |
-| Then：分配审核人 | [1:04](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.mp4#t=64.667) |
-| Then：更改状态 | [1:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.mp4#t=78.708) |
-| 检查并保存 | [1:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.mp4#t=90.208) |
-| 检查已保存的规则 | [1:46](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.mp4#t=106.500) |
-| 准备测试场景 | [1:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.mp4#t=118.542) |
-| 运行正向测试 | [2:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.mp4#t=138.833) |
-| 测试边界值 | [2:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.mp4#t=156.542) |
-| 测试其他发票号码 | [2:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.mp4#t=173.458) |
-| 检查文档结果 | [3:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.mp4#t=190.333) |
-| 启用已测试的规则 | [3:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v1/zh.mp4#t=206.583) |
+| 此工作流的作用 | [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.mp4#t=0.000) |
+| 命名工作流 | [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.mp4#t=14.042) |
+| When：文档类型 | [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.mp4#t=25.417) |
+| And：发票号码 | [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.mp4#t=37.375) |
+| And：金额超过 1000 | [0:51](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.mp4#t=51.667) |
+| Then：分配审核人 | [1:04](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.mp4#t=64.667) |
+| Then：更改状态 | [1:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.mp4#t=78.708) |
+| 检查并保存 | [1:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.mp4#t=90.208) |
+| 检查已保存的规则 | [1:46](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.mp4#t=106.500) |
+| 准备测试场景 | [1:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.mp4#t=118.542) |
+| 运行正向测试 | [2:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.mp4#t=138.833) |
+| 测试边界值 | [2:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.mp4#t=156.542) |
+| 测试其他发票号码 | [2:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.mp4#t=173.458) |
+| 检查文档结果 | [3:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.mp4#t=190.333) |
+| 启用已测试的规则 | [3:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.mp4#t=206.583) |
 
 **此工作流的作用**
 

@@ -2,7 +2,7 @@
 
 ## Vérifier une facture et terminer son traitement
 
-Suivez une facture du tableau de bord à sa transmission : comparez le fournisseur, les dates, le numéro, les montants et la devise avec l’original et consultez un avertissement de champ obligatoire. Sélectionnez le numéro directement dans le document, confirmez son association et conservez la règle d’extraction avec Enregistrer les règles. La facture vérifiée est ensuite transmise pour approbation dans cet exemple. Les actions disponibles dépendent de vos droits et de votre processus.
+Suivez une facture du tableau de bord à sa transmission : comparez le fournisseur, les dates, le numéro, les montants et la devise avec l’original et consultez un avertissement de champ obligatoire. Sélectionnez le numéro directement dans le document, confirmez son association et conservez la règle d’extraction avec **Save Rules**. La facture vérifiée est ensuite transmise pour approbation dans cet exemple. Les actions disponibles dépendent de vos droits et de votre processus.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v2/fr.mp4" %}
 
@@ -16,6 +16,8 @@ Utilisez les commandes de page pour un document de plusieurs pages et le zoom po
 
 Vérifiez l’**origine du document** avant les dates et les montants. Elle détermine l’interprétation des formats de date et de nombre ; elle ne traduit pas le document et ne change pas la langue de l’interface. Choisissez l’origine correspondant au document et comparez les valeurs affichées avec l’original.
 
+Un changement d’origine ouvre une boîte de dialogue de confirmation. Si vous continuez, le traitement du document redémarre. Vérifiez les nouvelles valeurs extraites une fois le traitement terminé.
+
 ## Corriger un champ et apprendre sa zone source à DocBits
 
 Si le numéro de facture est mal lu :
@@ -24,9 +26,9 @@ Si le numéro de facture est mal lu :
 2. Double-cliquez sur le numéro complet dans l’original ou sélectionnez la zone qui le contient.
 3. Vérifiez le champ proposé et confirmez l’association avec la coche si nécessaire.
 4. Contrôlez la valeur et la zone source surlignée. Recommencez la sélection si le numéro est incomplet ou associé au mauvais champ.
-5. Enregistrez le document. Pour conserver l’apprentissage d’extraction, utilisez aussi **Enregistrer les règles / Save Rules** et confirmez la boîte de dialogue.
+5. Enregistrez le document. Pour conserver l’apprentissage d’extraction, utilisez aussi **Save Rules** et confirmez la boîte de dialogue.
 
-<figure><img src="../../../.gitbook/assets/validation-source-selection-fr-2026.png" alt="Le numéro sélectionné sur l’original et son association au champ. Confirmez cette association avant d’enregistrer la règle."><figcaption><p>Le numéro sélectionné sur l’original et son association au champ. Confirmez cette association avant d’enregistrer la règle.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation-source-selection-fr-2026-v2.png" alt="Le numéro sélectionné sur l’original et son association au champ. Confirmez cette association avant d’enregistrer la règle."><figcaption><p>Le numéro sélectionné sur l’original et son association au champ. Confirmez cette association avant d’enregistrer la règle.</p></figcaption></figure>
 
 {% hint style="info" %}
 Saisir une nouvelle valeur corrige ce document, mais ne crée pas l’association à la zone source nécessaire à cet apprentissage. Sélectionnez la valeur dans l’original, confirmez l’association et enregistrez la règle pour la réutiliser sur les documents correspondants de ce fournisseur. Cet apprentissage à partir de l’image n’est pas disponible pour les documents lus directement comme données de facture électronique.
@@ -37,8 +39,8 @@ Saisir une nouvelle valeur corrige ce document, mais ne crée pas l’associatio
 | Action | Effet |
 | --- | --- |
 | **Enregistrer** — disquette au-dessus des champs | Enregistre les modifications du document actuel, sans l’approuver ni l’exporter à elle seule. |
-| **Enregistrer les règles / Save Rules** | Conserve les règles d’extraction à partir du document et de ses associations aux zones sources. C’est distinct de l’enregistrement des valeurs. |
-| **Export**, approbation ou autre action configurée | Transmet le document à l’étape configurée suivante après les contrôles applicables. L’action et le statut obtenu dépendent du processus et de vos droits. |
+| **Save Rules** | Conserve les règles d’extraction à partir du document et de ses associations aux zones sources. C’est distinct de l’enregistrement des valeurs. |
+| **Exporter / Export**, approbation ou autre action configurée | Transmet le document à l’étape configurée suivante après les contrôles applicables. L’action et le statut obtenu dépendent du processus et de vos droits. |
 
 Dans la vidéo, la facture vérifiée est soumise pour approbation. Un bouton **Export** ne garantit pas que la facture est déjà arrivée dans l’ERP cible. Vérifiez son nouveau statut dans le tableau de bord et les éventuelles erreurs de traitement.
 
@@ -58,7 +60,7 @@ Les champs disposant d’une recherche configurée peuvent consulter les fournis
 
 ## Vérifier les lignes de facture
 
-Si la mise en page comprend des tableaux, comparez lignes, descriptions, quantités, prix et montants avec le document. **Tableau extrait** et **Tableau extrait par l’IA** correspondent à des vues d’extraction différentes. Leur disponibilité dépend des méthodes activées et de la mise en page. Un onglet vide ou absent ne suffit pas à expliquer un problème d’extraction.
+Si la mise en page comprend des tableaux, comparez lignes, descriptions, quantités, prix et montants avec le document. **TABLEAU EXTRAIT** et **TABLEAU EXTRAIT IA** correspondent à des vues d’extraction différentes. Leur disponibilité dépend des méthodes activées et de la mise en page. Un onglet vide ou absent ne suffit pas à expliquer un problème d’extraction.
 
 Corrigez les cellules et les lignes manquantes ou dupliquées avec les commandes disponibles. Ces modifications concernent le document actuel. L’apprentissage de tableau réutilisable, les tags IA et l’apprentissage des champs d’en-tête sont des opérations distinctes. Voir [Tags des tableaux IA](../ai-table/ai-table-tags.md) et [Apprentissage des tableaux](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
 
@@ -75,18 +77,18 @@ Survolez une icône pour lire son libellé. Certains outils dépendent des modul
 | **Raccourcis clavier** | Ouvrir l’aide ; voir [Raccourcis clavier](keyboard-shortcuts.md). |
 | **Tâches** | Créer et suivre le travail interne attribué à une personne ou à un groupe. |
 | **Flux d’activité** | Consulter les activités enregistrées sur le document. |
-| **Historique des approbations** | Consulter approbations et rejets lorsque la fonction est activée. |
-| **Mode annotation** | Ajouter des notes sur le document si les annotations sont activées. |
+| **Historique de l’approbation** | Consulter approbations et rejets lorsque la fonction est activée. |
+| **Mode d’annotation** | Ajouter des notes sur le document si les annotations sont activées. |
 | **Fusionner / ajouter des pages** | Regrouper des documents ou ajouter des pages manquantes avec la boîte de dialogue disponible. Vérifier les pages sélectionnées avant de confirmer. |
 | **Vue OCR** | Consulter le texte déjà reconnu. Son ouverture ne lance pas de nouvelle extraction OCR. Elle n’est pas disponible pour certains documents électroniques. |
 | **Créer un ticket** | Préparer une demande d’assistance avec le contexte du document et une description du problème. Les tâches internes sont traitées séparément. |
-| **Journaux de scripts** | Lire les messages des scripts du document lorsque le module est activé. Il s’agit d’un affichage des journaux, pas d’un éditeur de scripts. |
+| **Journaux de script de document** | Lire les messages des scripts du document lorsque le module est activé. Il s’agit d’un affichage des journaux, pas d’un éditeur de scripts. |
 
 ## Autres options et réglages administrateur
 
-Pour les factures, **Autres options → Flux du document** ouvre le parcours de traitement. Selon vos droits et la configuration, le menu peut aussi proposer le fractionnement, l’accès au modèle de mise en page et les préférences d’extraction du fournisseur.
+Pour les factures, **Plus d’options → Flux de documents** ouvre le parcours de traitement. Selon vos droits et la configuration, le menu peut aussi proposer le fractionnement, l’accès au modèle de mise en page et les préférences d’extraction du fournisseur.
 
-**Utiliser le texte intégré si disponible**, **Utiliser l’extraction structurée (IA)** et **Modèle IA** sont des paramètres d’extraction du fournisseur. Seuls les administrateurs autorisés peuvent les modifier. Respectez la confirmation de redémarrage lorsqu’un nouveau traitement est nécessaire. Un modèle de mise en page configure le formulaire de validation ; il ne modifie pas la présentation imprimée de la facture. Voir [Modèle IA par fournisseur](supplier-specific-ai-model-for-field-and-table-extraction.md).
+**Utiliser l’E-Texte s’il est disponible**, **Utiliser l’extraction structurée (IA)** et **Modèle d’IA** sont des paramètres d’extraction du fournisseur. Seuls les administrateurs autorisés peuvent les modifier. Respectez la confirmation de redémarrage lorsqu’un nouveau traitement est nécessaire. Un modèle de mise en page configure le formulaire de validation ; il ne modifie pas la présentation imprimée de la facture. Voir [Modèle IA par fournisseur](supplier-specific-ai-model-for-field-and-table-extraction.md).
 
 ## Si vous ne pouvez pas modifier ou poursuivre
 

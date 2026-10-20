@@ -8,7 +8,81 @@ description: DocBits Workflow Engine
 
 ## DocBits Workflow Engine: uproszczona automatyzacja procesów
 
-{% embed url="https://youtu.be/YQC13wCqTJI" %}
+### Zrozumienie i przygotowanie przepływów pracy <a id="workflow-orientation"></a>
+
+Zobacz prawdziwe konto testowe DocBits: osiem wykonań w panelu, dwa zapisane workflow z kolejnością wykonania 100/200 i trzy zaliczone scenariusze testowe. Samouczek wyjaśnia również workflow Standard i Advanced, licencje, szablony oraz Card SDK.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pl.mp4" %}
+
+[Oglądaj z napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pl.html) · [Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pl.vtt) · [Transkrypcja](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pl.txt) · 3:04
+
+<details>
+<summary>Rozdziały i transkrypcja</summary>
+
+| Rozdział | Początek |
+| --- | --- |
+| Poznaj administratora | [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pl.mp4#t=0.000) |
+| Organizacja i dostęp | [0:01](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pl.mp4#t=1.875) |
+| Panel i filtry | [0:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pl.mp4#t=13.792) |
+| Lista workflow | [0:50](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pl.mp4#t=50.750) |
+| Kolejność wykonania | [1:04](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pl.mp4#t=64.458) |
+| Standard Workflow | [1:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pl.mp4#t=81.750) |
+| Advanced Workflow | [1:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pl.mp4#t=93.458) |
+| Licencje | [1:50](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pl.mp4#t=110.250) |
+| Szablony | [2:08](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pl.mp4#t=128.750) |
+| Test Manager | [2:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pl.mp4#t=142.458) |
+| Card SDK | [2:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pl.mp4#t=155.833) |
+| Sprawdzenie przygotowania | [2:50](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pl.mp4#t=170.167) |
+
+**Poznaj administratora**
+
+Zarządzam DocBits.
+
+**Organizacja i dostęp**
+
+Dobrze, najpierw sprawdzam organizację widoczną u góry. Te ustawienia workflow dotyczą wybranej organizacji. W tej demonstracji korzystam z konta testowego dokumentacji.
+
+**Panel i filtry**
+
+Panel workflow daje ogólny obraz. Do tego widoku uruchomiłem ręcznie dwa szkoleniowe przepływy pracy osiem razy na przykładowej fakturze. Tutaj widzę osiem uruchomień łącznie, w tym sześć zakończonych sukcesem. W dwóch uruchomieniach warunek kwoty nie został spełniony. Wskaźnik sukcesu uwzględnia również te poprawnie zakończone kontrole. Filtruję według nazwy przepływu i sprawdzam zakres dat. Liczniki i wykres zmieniają się zgodnie z wyborem. Po prawej przełączam zapisane przepływy i scenariusze testowe. Uruchomienia w Test Managerze są liczone osobno.
+
+**Lista workflow**
+
+Na liście zarządzam poszczególnymi workflow. Sprawdzam nazwę, typ Standard lub Advanced, kolejność wykonania, wyzwalacz i dostępne działania. Przed utworzeniem kolejnego szukam istniejącego workflow.
+
+**Kolejność wykonania**
+
+Kolejność wykonania ma znaczenie, gdy kilka workflow przetwarza ten sam dokument. Sprawdzam, który powinien działać pierwszy i jakich danych potrzebuje następny. Tutaj kontrola faktury ma kolejność sto, a następna kontrola dwieście. Niższe wartości są wykonywane wcześniej.
+
+**Standard Workflow**
+
+Dla reguły liniowej wybieram Standard Workflow. Kiedy określa wyzwalacz, I dodaje warunki, a Wtedy wykonuje działania. Biblioteka zawiera dostępne karty.
+
+**Advanced Workflow**
+
+Dla alternatywnych ścieżek używam Advanced Workflow. Ten podgląd projektanta pokazuje Start i jawne połączenia. Sukces, niespełniony warunek oraz błąd mogą prowadzić różnymi drogami. Położenie kart nie określa kolejności.
+
+**Licencje**
+
+W zakładce Licencja osobno sprawdzam Workflow i Advanced Workflow. Tutaj obie opcje są nieaktywne. Okno planów pokazuje dostępne subskrypcje. Zamykam ten podgląd bez zmian. Otwarcie projektanta nie uruchamia silnika.
+
+**Szablony**
+
+Szablony pozwalają ponownie wykorzystać punkt wyjścia. Otwieram bibliotekę oraz opcję domyślnych szablonów. Nadal sprawdzam pola, odbiorców i działania dla własnego procesu.
+
+**Test Manager**
+
+Test Manager przechowuje zapisane scenariusze dla workflow Standard i Advanced. Po konfiguracji dodaję reprezentatywne dane oraz oczekiwane wyniki. Uruchom wszystkie testy pomaga sprawdzić zmiany.
+
+**Card SDK**
+
+Card SDK służy do własnych rozszerzeń. Programiści mogą użyć szablonu, przesłać pakiet lub zaimportować go z GitHub. Zwykłą administrację zaczynam od istniejącej biblioteki kart.
+
+**Sprawdzenie przygotowania**
+
+Przed budową potwierdzam organizację, dostęp, potrzebną licencję, pola dokumentu i oczekiwany wynik. Decyduję, czy wystarczy reguła liniowa. W następnym filmie tworzymy Standard Workflow krok po kroku.
+
+</details>
 
 ### Wprowadzenie
 

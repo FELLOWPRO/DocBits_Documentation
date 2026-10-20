@@ -1,6 +1,11 @@
 # Tela de Validação
 
-{% embed url="https://youtu.be/CmmQIxOaF6E?si=gYE-U-Jv4dLPi2xT" %}
+## Verificar uma fatura e concluir a conferência
+
+Acompanhe uma fatura do painel até à passagem à etapa seguinte: compare fornecedor, datas, número, montantes e moeda com o original e leia um aviso de campo obrigatório. Selecione o número diretamente no documento, confirme a associação e conserve a regra de extração com Guardar regras. Neste exemplo, a fatura verificada é depois submetida para aprovação. As ações disponíveis dependem das permissões e do processo da sua empresa.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v2/pt.mp4" %}
+
 
 ## Visão Geral
 
@@ -8,9 +13,7 @@
 
 ### Origem do Documento (Document Origin)
 
-{% embed url="https://youtu.be/-m45XGiIeig" %}
-DocBits Origin Setting Explained: Country Standards for Dates & Number Formats
-{% endembed %}
+A origem do documento determina como o DocBits interpreta datas e formatos numéricos. Escolha o país correspondente ao documento e confira os valores extraídos com o original.
 
 ## **Botão Salvar:**
 
@@ -176,9 +179,6 @@ Para compartilhar informações internas, você pode criar tarefas e atribuí-la
 
 <figure><img src="../../../.gitbook/assets/annotation_mode_example.png" alt="Exemplo do Modo de Anotação"><figcaption></figcaption></figure>
 
-{% embed url="https://youtu.be/ay0gGtwlqRE" %}
-DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Without Annotations
-{% endembed %}
 
 Você pode deixar anotações em um documento. Isso pode ajudar a deixar informações para outros usuários que continuarão editando este documento.
 

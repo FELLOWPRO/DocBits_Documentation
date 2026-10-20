@@ -16,6 +16,8 @@ Use the page controls for a multi-page document and the zoom controls to read sm
 
 Check **Document Origin** before reviewing dates and amounts. It determines how DocBits interprets date and number formats; it does not translate the document or change the interface language. Choose the origin that matches the document and compare the displayed values with the original.
 
+Changing the origin opens a confirmation dialog and restarts document processing when you continue. Review the newly extracted values when processing has finished.
+
 ## Correct a field and teach DocBits where to read it
 
 For an invoice number that was not read correctly:

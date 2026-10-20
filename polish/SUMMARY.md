@@ -82,7 +82,7 @@
   * [Opcje Konfiguracji Użytkownika](end-user-and-partner-section/end-user-section/user-configuration-options.md)
   * [Tabela AI](end-user-and-partner-section/end-user-section/ai-table/README.md)
     * [Tagowanie tabeli AI](end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md)
-  * [Ekran Walidacji](end-user-and-partner-section/end-user-section/validation-screen/README.md)
+  * [Ekran walidacji](end-user-and-partner-section/end-user-section/validation-screen/README.md)
     * [Model AI Specyficzny dla Dostawcy do Ekstrakcji Pól i Tabel](end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md)
     * [Automatyczne Kontrole na Ekranie Walidacji](end-user-and-partner-section/end-user-section/validation-screen/automatic-checks-on-the-validation-screen.md)
     * [Kontrola pól nagłówka: skąd pochodzą dane](end-user-and-partner-section/end-user-section/validation-screen/header-field-check.md)

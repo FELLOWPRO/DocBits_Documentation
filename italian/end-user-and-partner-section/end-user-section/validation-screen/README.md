@@ -2,13 +2,10 @@
 
 ## Controllare una fattura e completare la verifica
 
-Segui una fattura dalla dashboard al passaggio successivo: confronta fornitore, date, numero, importi e valuta con il documento originale, leggi un avviso relativo a un campo obbligatorio e salva la correzione. In questo esempio, la fattura viene poi inoltrata per approvazione. Le azioni disponibili dipendono dai tuoi permessi e dal processo aziendale.
+Segui una fattura dalla dashboard al passaggio successivo: confronta fornitore, date, numero, importi e valuta con l’originale e leggi un avviso relativo a un campo obbligatorio. Seleziona il numero direttamente nel documento, conferma l’associazione e conserva la regola di estrazione con Salva regole. In questo esempio, la fattura verificata viene poi inoltrata per approvazione. Le azioni disponibili dipendono dai tuoi permessi e dal processo aziendale.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v1/it.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v2/it.mp4" %}
 
-## Un’altra introduzione
-
-{% embed url="https://youtu.be/CmmQIxOaF6E?si=gYE-U-Jv4dLPi2xT" %}
 
 ## Panoramica
 
@@ -16,9 +13,7 @@ Segui una fattura dalla dashboard al passaggio successivo: confronta fornitore, 
 
 ### Origine del Documento (Document Origin)
 
-{% embed url="https://youtu.be/-m45XGiIeig" %}
-DocBits Origin Setting Explained: Country Standards for Dates & Number Formats
-{% endembed %}
+L’origine del documento determina come DocBits interpreta date e formati numerici. Scegli il paese corrispondente al documento e controlla i valori acquisiti sull’originale.
 
 ### **Pulsante Salva:**
 
@@ -163,9 +158,6 @@ Per condividere informazioni interne, puoi creare compiti e assegnarli a un dipe
 
 <figure><img src="../../../.gitbook/assets/annotation_mode_example.png" alt="Annotation Mode Example"><figcaption></figcaption></figure>
 
-{% embed url="https://youtu.be/ay0gGtwlqRE" %}
-DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Without Annotations
-{% endembed %}
 
 You can leave annotations on a document. This can be helpful to leave information for other users who further edit this document.
 

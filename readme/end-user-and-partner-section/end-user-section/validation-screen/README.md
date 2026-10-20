@@ -12,7 +12,7 @@ So prüfst du eine Rechnung vom Dashboard bis zur Übergabe: Vergleiche Lieferan
 
 ## Übersicht
 
-<div data-full-width="false"><figure><img src="../../../.gitbook/assets/validation_screen_overview.png" alt="Übersicht des Validierungsbildschirms"><figcaption></figcaption></figure></div>
+<div data-full-width="false"><figure><img src="../../../.gitbook/assets/validation_screen_overview_de.png" alt="Übersicht des Validierungsbildschirms"><figcaption></figcaption></figure></div>
 
 ### Dokumentursprung (Document Origin)
 
@@ -22,7 +22,7 @@ DocBits Origin Setting Explained: Country Standards for Dates & Number Formats
 
 ## **Speichern-Button:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_save_button.png" alt="Speichern-Button"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_save_button_de.png" alt="Speichern-Button"><figcaption></figcaption></figure>
 
 * **Speichern-Button:**
   * **Zweck:** Speichert den aktuellen Zustand des Dokuments oder Skripts, an dem gearbeitet wird.
@@ -31,8 +31,6 @@ DocBits Origin Setting Explained: Country Standards for Dates & Number Formats
 ### **Spezielle Regeln hinzufügen:**
 
 <figure><img src="../../../.gitbook/assets/validation_screen_add_special_rules.png" alt="Button „Spezielle Regeln hinzufügen“"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/validation_screen_add_script_example.png" alt="Beispiel für ein hinzugefügtes Skript"><figcaption></figcaption></figure>
 
 * **Spezielle Regeln hinzufügen / Skript in DocBits hinzufügen:**
   * **Zweck:** Ermöglicht es Benutzern, spezifische Regeln oder Skripte zu implementieren, die anpassen, wie Dokumente verarbeitet werden.
@@ -72,7 +70,7 @@ Verwenden Sie den Tooltip, um herauszufinden, ob:
 
 ## Extrahierte Tabelle (Positionen)
 
-<figure><img src="../../../.gitbook/assets/validation_screen_line_items_table.png" alt="Positionstabelle im Validierungsbildschirm mit der Tabellen-Symbolleiste"><figcaption><p>Die extrahierte Tabelle unterhalb der Kopffelder</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_line_items_table_de.png" alt="Positionstabelle im Validierungsbildschirm mit der Tabellen-Symbolleiste"><figcaption><p>Die extrahierte Tabelle unterhalb der Kopffelder</p></figcaption></figure>
 
 Unterhalb der Kopffelder zeigt DocBits die Positionstabelle des Dokuments: eine Zeile pro Rechnungsposition, eine Spalte pro [Tabellenspalte](../../../administration-and-setup/settings/global-settings/document-types/table-columns/README.md), die für den Dokumenttyp konfiguriert ist. Hat ein Dokumenttyp mehrere Tabellen (zum Beispiel Positionen und Zuschläge), hat jede Tabelle einen eigenen Tab über dem Raster.
 
@@ -129,17 +127,17 @@ Mehr zu den Prüfungen: [Automatische Prüfungen im Validierungsbildschirm](auto
 
 ### **Lupe:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_magnifying_glass.png" alt="Lupen-Symbol" width="118"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_magnifying_glass_de.png" alt="Lupen-Symbol" width="118"><figcaption></figcaption></figure>
 
 * **Lupe:**
   * **Zweck:** Bietet eine vergrößerte Ansicht eines ausgewählten Bereichs des Dokuments.
   * **Anwendungsfall:** Hilft beim Untersuchen feiner Details oder kleiner Texte in Dokumenten, um Genauigkeit bei der Dateneingabe oder -überprüfung zu gewährleisten.
 
-<figure><img src="../../../.gitbook/assets/validation_screen_zoomed_view.png" alt="Vergrößerte Dokumentansicht"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_zoomed_view_de.png" alt="Vergrößerte Dokumentansicht"><figcaption></figcaption></figure>
 
 ### **Neues Fenster öffnen:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_open_new_window.png" alt="Symbol „Neues Fenster öffnen“" width="130"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_open_new_window_de.png" alt="Symbol „Neues Fenster öffnen“" width="130"><figcaption></figcaption></figure>
 
 * **Neues Fenster öffnen:**
   * **Zweck:** Öffnet ein neues Fenster für den Vergleich von Dokumenten nebeneinander oder für Multitasking.
@@ -147,7 +145,7 @@ Mehr zu den Prüfungen: [Automatische Prüfungen im Validierungsbildschirm](auto
 
 ### **Tastenkombinationen:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_keyboard_shortcuts.png" alt="Symbol für Tastenkombinationen" width="145"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_keyboard_shortcuts_de.png" alt="Symbol für Tastenkombinationen" width="145"><figcaption></figcaption></figure>
 
 1. **Tastenkombinationen:**
    * **Zweck:** Ermöglicht es Benutzern, Aktionen schnell mit Tastenkombinationen auszuführen.
@@ -155,7 +153,7 @@ Mehr zu den Prüfungen: [Automatische Prüfungen im Validierungsbildschirm](auto
 
 ### **Aufgaben:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_tasks_button.png" alt="Aufgaben-Button" width="55"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_tasks_button_de.png" alt="Aufgaben-Button" width="55"><figcaption></figcaption></figure>
 
 Um interne Informationen zu teilen, können Sie Aufgaben erstellen und sie einem bestimmten Mitarbeiter oder einer Gruppe innerhalb des Unternehmens zuweisen.
 
@@ -163,11 +161,11 @@ Um interne Informationen zu teilen, können Sie Aufgaben erstellen und sie einem
   * **Zweck:** Ermöglicht es Benutzern, auf Dokumente bezogene Aufgaben zu erstellen und sie Teammitgliedern zuzuweisen.
   * **Anwendungsfall:** Erleichtert die Zusammenarbeit und das Aufgabenmanagement innerhalb von Teams, sodass jeder seine Verantwortlichkeiten kennt.
 
-<figure><img src="../../../.gitbook/assets/validation_screen_task_creation.png" alt="Dialog zum Erstellen einer Aufgabe" width="218"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_task_creation_de.png" alt="Dialog zum Erstellen einer Aufgabe" width="218"><figcaption></figcaption></figure>
 
 ### Genehmigungsverlauf
 
-<figure><img src="../../../.gitbook/assets/approval_history_button.png" alt="Button „Genehmigungsverlauf“"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/approval_history_button_de.png" alt="Button „Genehmigungsverlauf“"><figcaption></figcaption></figure>
 
 **Hinweis:** Der Genehmigungsverlauf muss aktiviert sein, bevor er hier angezeigt werden kann.
 
@@ -176,13 +174,11 @@ Um interne Informationen zu teilen, können Sie Aufgaben erstellen und sie einem
 * **Zweck**: Zeigt den Genehmigungsverlauf des Dokuments in der Feldvalidierung an; Rot kennzeichnet abgelehnte Genehmigungen, die Farbe der App genehmigte.
 * **Anwendungsfall**: Nützlich für Organisationen, die bei der Feldvalidierung eine transparente Aufzeichnung der Genehmigungsaktionen benötigen.
 
-<figure><img src="../../../.gitbook/assets/approval_history_list_view.png" alt="Listenansicht des Genehmigungsverlaufs"><figcaption></figcaption></figure>
-
 ### **Anmerkungsmodus:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_annotation_mode.png" alt="Button „Anmerkungsmodus“" width="187"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_annotation_mode_de.png" alt="Button „Anmerkungsmodus“" width="187"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/annotation_mode_example.png" alt="Beispiel für den Anmerkungsmodus"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/annotation_mode_example_de.png" alt="Beispiel für den Anmerkungsmodus"><figcaption></figcaption></figure>
 
 {% embed url="https://youtu.be/ay0gGtwlqRE" %}
 DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Without Annotations
@@ -196,7 +192,7 @@ Sie können Anmerkungen zu einem Dokument hinterlassen. Dies kann hilfreich sein
 
 ### **Zusammenführen:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_merge_documents.png" alt="Button „Dokumente zusammenführen“" width="60"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_merge_documents_de.png" alt="Button „Dokumente zusammenführen“" width="60"><figcaption></figcaption></figure>
 
 Dokumente können hier zusammengeführt werden, zum Beispiel wenn eine Seite einer Rechnung fehlte, können diese Seiten später auf diese Weise zusammengeführt werden, ohne dass das gesamte Dokument gelöscht oder erneut hochgeladen werden muss.
 
@@ -214,11 +210,9 @@ In der OCR-Ansicht wird der Text automatisch aus dem Dokument gefiltert. Dies wi
   * **Zweck:** Erkennt automatisch Text innerhalb von Dokumenten mit Hilfe der optischen Zeichenerkennungstechnologie.
   * **Anwendungsfall:** Vereinfacht den Prozess der Digitalisierung von gedruckten oder handgeschriebenen Texten, sodass sie durchsuchbar und bearbeitbar werden.
 
-<figure><img src="../../../.gitbook/assets/validation_screen_ocr_view_example.png" alt="Beispiel der OCR-Ansicht"><figcaption><p>OCR</p></figcaption></figure>
-
 ### **Ticket erstellen:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_create_ticket_button.png" alt="Button „Ticket erstellen“" width="97"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_create_ticket_button_de.png" alt="Button „Ticket erstellen“" width="97"><figcaption></figcaption></figure>
 
 Im Gegensatz zu Aufgaben, die intern innerhalb des Unternehmens weitergegeben werden, ist dieses Support-Ticket wichtig, um uns zu benachrichtigen und sofort ein Ticket im Falle von Fehlern und/oder Unstimmigkeiten zu erstellen. Dies erleichtert den Prozess erheblich, da Sie den Fehler sofort mit dem entsprechenden Dokument senden können. Es gibt auch die Möglichkeit, die Priorität festzulegen, einen Screenshot des Dokuments zu machen oder einen hochzuladen.
 
@@ -226,11 +220,11 @@ Im Gegensatz zu Aufgaben, die intern innerhalb des Unternehmens weitergegeben we
   * **Zweck:** Ermöglicht es Benutzern, Probleme oder Unstimmigkeiten zu melden, indem sie ein Support-Ticket erstellen.
   * **Anwendungsfall:** Wesentlich für die schnelle Lösung von Problemen und Fehlern, um die Integrität und das reibungslose Funktionieren des Systems zu gewährleisten.
 
-<figure><img src="../../../.gitbook/assets/validation_screen_create_ticket_form.png" alt="Formular zum Erstellen eines Tickets" width="237"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_create_ticket_form_de.png" alt="Formular zum Erstellen eines Tickets" width="237"><figcaption></figcaption></figure>
 
 ### **Dokumentenskriptprotokolle:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_script_logs_button.png" alt="Button „Dokumentenskriptprotokolle“" width="160"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_script_logs_button_de.png" alt="Button „Dokumentenskriptprotokolle“" width="160"><figcaption></figcaption></figure>
 
 Skripte können in den Einstellungen unter Dokumenttypen erstellt werden; diese Informationen werden dann hier angezeigt.
 
@@ -238,11 +232,11 @@ Skripte können in den Einstellungen unter Dokumenttypen erstellt werden; diese 
   * **Zweck:** Zeigt Protokolle zu Skripten an, die für verschiedene Dokumenttypen implementiert wurden.
   * **Anwendungsfall:** Nützlich zur Verfolgung und Fehlerbehebung von Skriptaktionen auf Dokumenten, um Benutzern zu helfen, die automatisierten Prozesse zu verstehen und eventuelle Probleme zu beheben.
 
-<figure><img src="../../../.gitbook/assets/document_script_logs_view.png" alt="Ansicht der Dokumentenskriptprotokolle"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document_script_logs_view_de.png" alt="Ansicht der Dokumentenskriptprotokolle"><figcaption></figcaption></figure>
 
 ### **Weitere Einstellungen:**
 
-<figure><img src="../../../.gitbook/assets/more_settings_menu_icon.png" alt="Symbol des Menüs „Weitere Einstellungen“"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/more_settings_menu_icon_de.png" alt="Symbol des Menüs „Weitere Einstellungen“"><figcaption></figcaption></figure>
 
 ### **Dokumenten-Flow:**
 

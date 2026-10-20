@@ -1,5 +1,7 @@
 # DocBits MCP
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/docbits-mcp-admin/v1/zh.mp4" %}
+
 DocBits 提供了一个 **Model Context Protocol (MCP)** 服务器，让 AI 助手可以直接在聊天或编码会话中处理您的文档、提取、搜索、分析和配置。任何兼容 MCP 的客户端都可以连接：**Claude Code**、**Claude Desktop**、**Google Gemini CLI**、**OpenAI Codex**，或任何自定义集成。
 
 该服务器挂载在 DocBits API 的 `/v3/mcp` 路径下，并限定于您的组织范围 — 每次调用都使用连接用户（或 API 密钥）的权限运行。

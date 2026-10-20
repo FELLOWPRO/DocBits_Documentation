@@ -1,6 +1,7 @@
 root: ./
 
 redirects:
+    gao-ji-gong-neng-yu-gong-ju/docbits-mcp: advanced-functions-and-tools/docbits-mcp/README.md
     administration-and-setup/setup/watchdog-installation: administration-and-setup/setup/watchdog/watchdog-installation.md
     overview-and-basics/release-notes/nova-major-release-16-october-2026: overview-and-basics/release-notes/nova-minor-release-4-november-2026.md
     overview-and-basics/release-notes/nova-major-release: overview-and-basics/release-notes/nova-minor-release-4-november-2026.md

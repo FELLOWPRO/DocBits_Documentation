@@ -27,9 +27,9 @@ La usuaria y la oficina se han generado con IA. Las acciones y los resultados pr
 
 La usuaria ficticia de Madrid muestra la búsqueda combinada con AND, los filtros de estado, la ayuda de búsqueda, la configuración de columnas, las estadísticas y la actualización. La interfaz española se ha grabado en DocBits con datos de prueba sintéticos. El personaje y la voz se han generado con IA.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/es.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/es.mp4" %}
 
-[Abrir el reproductor con subtítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/es.html) · [Subtítulos en español (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/es.vtt) · [Transcripción](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/es.txt)
+[Abrir el reproductor con subtítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/es.html) · [Subtítulos en español (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/es.vtt) · [Transcripción](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/es.txt)
 
 ## Empezar el trabajo diario
 

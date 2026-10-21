@@ -40,16 +40,6 @@
     * [Guida diagnostica all'esportazione dell'API M3](overview-and-basics/faq/infor-m3-m3-integration/m3-api-export-diagnostic-guide.md)
   * [Canais PDP/PPF Obrigatórios – PEPPOL Apenas como Transporte na Fatura Eletrônica de 2026 da França](overview-and-basics/faq/mandatory-pdp-ppf-channels-peppol-as-transport-only-for-frances-2026-e-invoicing.md)
 
-## Segurança <a href="#security" id="security"></a>
-
-* [FAQ Segurança e Conformidade](security/security-and-compliance-faq.md)
-* [Armazenamento seguro de credenciais](security/secure-storage-of-credentials.md)
-* [Cifragem em repouso](security/encryption-at-rest.md)
-* [Cookies e armazenamento do navegador](security/cookies-and-browser-storage.md)
-* [Gestão de vulnerabilidades](security/vulnerability-management.md)
-* [Outros controlos de segurança](security/other-security-controls.md)
-* [Autenticação de Dois Fatores (2FA)](security/two-factor-authentication.md)
-
 ## Seção de usuários finais e parceiros <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [Sezione utente finale](end-user-and-partner-section/end-user-section/README.md)
@@ -902,3 +892,13 @@
 * [Conectando o DocBits ao Power BI](advanced-functions-and-tools/powerbi.md)
   * [Conectar via ClickHouse](advanced-functions-and-tools/powerbi/powerbi.md)
   * [Conectar via banco de dados somente leitura](advanced-functions-and-tools/powerbi/connect-via-read-only-database.md)
+
+## Segurança <a href="#security" id="security"></a>
+
+* [FAQ Segurança e Conformidade](security/security-and-compliance-faq.md)
+* [Armazenamento seguro de credenciais](security/secure-storage-of-credentials.md)
+* [Cifragem em repouso](security/encryption-at-rest.md)
+* [Cookies e armazenamento do navegador](security/cookies-and-browser-storage.md)
+* [Gestão de vulnerabilidades](security/vulnerability-management.md)
+* [Outros controlos de segurança](security/other-security-controls.md)
+* [Autenticação de Dois Fatores (2FA)](security/two-factor-authentication.md)

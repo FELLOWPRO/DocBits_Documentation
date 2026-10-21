@@ -416,7 +416,7 @@ Value: {{CALCULATED}}
 Options: "FULL MATCH" | "WITHIN TOLERANCE" | "OUT OF TOLERANCE" | "NO MATCH"
 ```
 
-**Feld 2: Preis\_Varianz\_Prozent**
+**Feld 2: Price\_Variance\_Percent**
 
 ```
 Field: Price_Variance_Percent
@@ -424,7 +424,7 @@ Value: {{CALCULATED_PRICE_VARIANCE}}
 Format: "4.5%" (example)
 ```
 
-**Feld 3: Menge\_Varianz\_Prozent**
+**Feld 3: Quantity\_Variance\_Percent**
 
 ```
 Field: Quantity_Variance_Percent
@@ -432,7 +432,7 @@ Value: {{CALCULATED_QUANTITY_VARIANCE}}
 Format: "2.0%" (example)
 ```
 
-**Feld 4: Übereinstimmung\_Details**
+**Feld 4: Match\_Details**
 
 ```
 Field: Match_Details
@@ -1001,7 +1001,7 @@ IF PO_Type = "Blanket":
 * **CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE** – [PO-Matching-Leitfaden](../and/compare-with-purchase-order/po-matching-complete-guide.md)
 * **CONDITION\_DOC\_TO\_PO\_QUANTITY** – [PO-Matching-Leitfaden](../and/compare-with-purchase-order/po-matching-complete-guide.md)
 * **CONDITION\_DOC\_TO\_PO\_TAX\_LINES** – [PO-Matching-Leitfaden](../and/compare-with-purchase-order/po-matching-complete-guide.md)
-* **Aufgaben\_create** – [Leitfaden Aufgabenzuweisung](../then/task/task-assignment-guide.md)
+* **tasks\_create** – [Leitfaden Aufgabenzuweisung](../then/task/task-assignment-guide.md)
 
 ### Nächste Schritte
 

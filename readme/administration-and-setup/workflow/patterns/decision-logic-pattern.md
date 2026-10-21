@@ -767,7 +767,7 @@ Exceptions: 15 (1.2%)
 * **CONDITION\_DOC\_TYPE\_IS\_ISNOT** – [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md)
 * **CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT** – [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md)
 * **ACTION\_ASSIGN\_TO\_USER** – [Zuweisungs-Leitfaden](../then/assignee/assignment-user-guide.md)
-* **Aufgaben\_create** – [Leitfaden Aufgabenzuweisung](../then/task/task-assignment-guide.md)
+* **tasks\_create** – [Leitfaden Aufgabenzuweisung](../then/task/task-assignment-guide.md)
 
 ### Nächste Schritte
 

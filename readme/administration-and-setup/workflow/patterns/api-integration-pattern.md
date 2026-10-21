@@ -142,7 +142,7 @@ ELSE:
 
 **Konfiguration:**
 
-**Feld 1: Aktueller\_API\_Preis**
+**Feld 1: Current\_API\_Price**
 
 ```
 Field Name: Current_API_Price
@@ -222,7 +222,7 @@ Example:
 * ACTION\_SET\_FIELD\_TO\_TEXT
   * Feld „Price\_Validation\_Status“ = „FAIL“ setzen
   * Feld „Price\_Variance\_Percent" = „12%" setzen (Beispiel)
-* Aufgaben\_create
+* tasks\_create
   * Aufgabentitel: „Review Price Variance - \{{DOCUMENT\_NUMBER\}}"
   * Aufgabenbeschreibung: „Invoice price (€\{{Invoice\_Unit\_Price\}}) exceeds API price (€\{{Current\_API\_Price\}}) by \{{Price\_Variance\_Percent\}}"
   * Priorität: Hoch

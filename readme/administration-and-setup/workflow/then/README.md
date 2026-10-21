@@ -10,7 +10,7 @@ Cochez ou inversez une case à cocher, placez du texte dans un champ ou copiez u
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-c9741b344fe2-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
-## Documenter
+## Document
 
 Choisissez **Approuver le document** ou **Rejeter le document** lorsque le flux de travail doit prendre cette décision. Utilisez d'abord une condition **Et** si l'approbation doit dépendre d'un contrôle. Voir [Document](document).
 

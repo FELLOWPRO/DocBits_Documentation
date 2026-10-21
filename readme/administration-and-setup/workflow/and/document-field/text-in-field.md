@@ -1,6 +1,6 @@
 # Text im Feld
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-61d692604341-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -11,7 +11,7 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen auf Basis des Vorhandenseins
 1. **Text**
    * **Beschreibung:** Gibt die Textzeichenfolge an, die innerhalb des Feldes geprüft wird.
    * **Detail:** Dies kann ein Wort, eine Phrase oder eine Zeichenfolge sein, die für den Workflow relevant ist.
-2. **Betreiber**
+2. **Operator**
    * **Beschreibung:** Legt die Bedingung für das Vorhandensein des Textes im Feld fest.
    * **Optionen:**
      * **Is:** Löst den Workflow aus, wenn der angegebene Text im Feld vorhanden ist.

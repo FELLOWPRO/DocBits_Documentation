@@ -1,8 +1,8 @@
 # Kombinierter Preis der Mengendifferenz
 
-<figure><img src="../../../../.gitbook/assets/image (17) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5e9d809dfde3-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-313edcefbea2-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck**:
 
@@ -10,7 +10,7 @@ Diese Workflow-Karte wertet den Gesamtpreis einer Mengendifferenz aus und vergle
 
 ## **Bestandteile der Karte**:
 
-1. **Betreiber**:
+1. **Operator**:
    * **Beschreibung:** Die Bedingung für den Vergleich des kombinierten Preises mit einem angegebenen Wert.
    * **Optionen:**
      * **Gleich (=)**: Prüft, ob der kombinierte Preis mit dem angegebenen Wert übereinstimmt.

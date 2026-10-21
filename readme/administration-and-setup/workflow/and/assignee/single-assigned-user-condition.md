@@ -1,6 +1,6 @@
 # Bedingung für einen einzelnen zugewiesenen Benutzer
 
-<figure><img src="../../../../.gitbook/assets/userlmn_77e991cee96598023f9a3ac7ad230e50 (1).png" alt="" width="552"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-901c3b37bac4-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 **Zweck**
 
@@ -8,7 +8,7 @@ Diese Workflow-Karte ermöglicht Operationen auf Basis der Zuweisung einer Aufga
 
 **Bestandteile der Karte**
 
-1. **Betreiber**
+1. **Operator**
    * **Beschreibung**: Gibt die Logik an, die auf die Benutzerzuweisung angewendet wird.
    * **Optionen**:
      * **IS**: Löst die Operation aus, wenn der zugewiesene Benutzer des Dokuments oder der Aufgabe mit dem angegebenen Benutzer übereinstimmt.

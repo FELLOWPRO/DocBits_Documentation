@@ -1,6 +1,6 @@
 # Bestelldaten in der Bestellbestätigung
 
-<figure><img src="../../../../.gitbook/assets/image (265).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-77711a53d4d0-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck**
 
@@ -14,7 +14,7 @@ Diese Workflow-Karte ist darauf ausgelegt, bestimmte Felder – **Stückpreis**,
      * **Stückpreis**: Vergleicht den Stückpreis in beiden Dokumenten.
      * **Rabatt**: Vergleicht den Rabattprozentsatz oder -wert.
      * **Menge**: Vergleicht die bestellte Menge.
-2. **Betreiber**
+2. **Operator**
    * **Beschreibung:** Legt die während des Vergleichs angewendete Bedingung fest.
    * **Optionen:**
      * **Gleich (=):** Prüft, ob der Wert im ausgewählten Feld zwischen der Auftragsbestätigung und der Bestellung übereinstimmt.

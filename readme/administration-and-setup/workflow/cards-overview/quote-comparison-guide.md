@@ -1,5 +1,7 @@
 # Angebotsvergleichskarten
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-4a7af1d99c73-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt.</p></figcaption></figure>
+
 Diese Und-Bedingungen verwenden die im Dokument verfügbaren Angebots- oder Lieferantenartikeldaten. Konfigurieren und testen Sie sie, nachdem die erforderlichen Angebotsdaten geladen wurden. Eine übereinstimmende Artikelkennung allein beweist nicht, dass der Preis oder die Maßeinheit korrekt sind.
 
 ## Wählen Sie den Scheck aus

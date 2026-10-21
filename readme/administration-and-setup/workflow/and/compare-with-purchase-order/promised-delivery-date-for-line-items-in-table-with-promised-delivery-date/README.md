@@ -1,6 +1,6 @@
 # Zugesagter Liefertermin für Positionen in der Tabelle mit versprochenem Liefertermin
 
-<figure><img src="../../../../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-264ee6d588cc-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## Zweck:
 
@@ -8,7 +8,7 @@ Diese Workflow-Karte ist darauf ausgelegt, das **zugesagte Lieferdatum von Posit
 
 ## Bestandteile der Karte:
 
-1. **Betreiber**
+1. **Operator**
    * **Beschreibung:**\
      Legt fest, wie das zugesagte Lieferdatum der Position mit dem zugesagten Lieferdatum der Bestellung verglichen wird.
    * **Optionen:**

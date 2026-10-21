@@ -9,7 +9,7 @@ Diese DocBits-Karte gewährleistet die korrekte Klassifizierung eines Dokuments,
 ## **Funktionalität:**
 
 * **Validierung mehrerer Dokumententypen:** Diese Karte ermöglicht es Benutzern zu überprüfen, ob ein Dokument einem Satz von angegebenen Dokumententypen entspricht, um eine flexible Kategorisierung für komplexere Dokumenten-Workflows sicherzustellen.
-* **Betreiber:** Benutzer können Bedingungen definieren, um das Dokument gegen mehrere Typen zu validieren. Verfügbare Operatoren sind:
+* **Operator:** Benutzer können Bedingungen definieren, um das Dokument gegen mehrere Typen zu validieren. Verfügbare Operatoren sind:
   * **Ist:** Bestätigt, dass das Dokument einem der angegebenen Dokumententypen entspricht.
   * **Ist nicht:** Stellt sicher, dass das Dokument keinem der ausgewählten Dokumententypen entspricht.
 * **Dokumententypen:** Benutzer können aus mehreren unterstützten Dokumententypen auswählen, darunter:

@@ -1,6 +1,6 @@
 # Wenn Land im Feld
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-70b0b5860da5-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -11,7 +11,7 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob ein angegebenes Land, 
 1. **Feldname**
    * **Beschreibung:** Gibt das Dokumentfeld an, in dem der Ländername oder -code gespeichert ist.
    * **Detail:** Dieser sollte exakt mit dem Feldbezeichner der Länderdaten innerhalb des Dokuments übereinstimmen.
-2. **Betreiber**
+2. **Operator**
    * **Beschreibung:** Gibt an, ob das Land im ausgewählten Feld mit der ausgewählten Region oder dem Abkommen übereinstimmen soll oder nicht.
    * **Optionen:**
      * **Is:** Das Land muss Teil des ausgewählten Abkommens (EU, Schengen oder NAFTA) sein, damit die Bedingung erfüllt ist.

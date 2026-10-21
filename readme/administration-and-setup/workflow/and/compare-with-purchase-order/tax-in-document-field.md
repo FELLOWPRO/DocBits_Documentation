@@ -1,6 +1,6 @@
 # Steuer im Belegfeld
 
-<figure><img src="../../../../.gitbook/assets/image (268).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-c8c9a92d10ce-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -11,7 +11,7 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob der Steuerwert in eine
 1. **Feldname**
    * **Beschreibung**: Gibt das Dokumentfeld an, das den mit dem Steuerwert in der Bestellung zu vergleichenden Steuerwert enthält.
    * **Detailliert**: Dieses Feld muss exakt mit dem Bezeichner für den Steuerwert im Dokument übereinstimmen.
-2. **Betreiber**
+2. **Operator**
    * **Beschreibung**: Legt die Bedingung fest, die auf den Vergleich zwischen dem Steuerwert des Dokuments und dem Steuerwert der Bestellung angewendet wird.
    * **Optionen**:
      * **Gleich (=)**: Prüft, ob die Steuer im Dokumentfeld mit der Steuer in der Bestellung übereinstimmt.

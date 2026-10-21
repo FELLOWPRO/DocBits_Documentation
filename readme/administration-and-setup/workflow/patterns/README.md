@@ -18,19 +18,19 @@ Workflow-Muster sind bewährte, wiederverwendbare Lösungen für häufige Heraus
 
 Jedes Muster auf dieser Seite wird im **Workflow-Builder** zusammengestellt. Sie erreichen es über **Workflow-Dashboard → Workflow-Liste → Workflow hinzufügen** (oder durch Öffnen eines vorhandenen Workflows). Das Dashboard zeigt Ihnen den Ausführungsverlauf und die Erfolgs-/Fehlerquoten für alle Ihre Workflows:
 
-<figure><img src="../../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard mit Lauf-Summen, Erfolgs- und Fehlerquoten, dem Lauf-Diagramm und der letzten Aktivität"><figcaption><p>Das Workflow Dashboard – Lauf-Summen, Erfolgs-/Fehlerquoten und letzte Aktivität für jeden Workflow.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-dashboard-c9339f546ced-de.png" alt="Das Workflow Dashboard – Lauf-Summen, Erfolgs-/Fehlerquoten und letzte Aktivität für jeden Workflow. Vertrauliche Namen und Dokumentverweise sind ausgeblendet."><figcaption><p>Das Workflow Dashboard – Lauf-Summen, Erfolgs-/Fehlerquoten und letzte Aktivität für jeden Workflow. Vertrauliche Namen und Dokumentverweise sind ausgeblendet.</p></figcaption></figure>
 
 Die Registerkarte **Workflow-Liste** listet jeden Workflow mit seinem Typ, seiner Ausführungsreihenfolge und seinem Auslöser auf. Verwenden Sie **Workflow hinzufügen**, um einen neuen zu erstellen, oder klicken Sie auf einen Workflow, um ihn im Builder zu öffnen:
 
-<figure><img src="../../../.gitbook/assets/workflow_list.png" alt="Reiter Workflow List mit Workflows nach Typ, Ausführungsreihenfolge und Auslöser"><figcaption><p>Die Workflow List – jede Zeile ist ein Workflow, den Sie öffnen, ein-/ausschalten oder bearbeiten können.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-dashboard-900cb4050b5b-de.png" alt="Die Workflow List – jede Zeile ist ein Workflow, den Sie öffnen, ein-/ausschalten oder bearbeiten können. Vertrauliche Namen und Dokumentverweise sind ausgeblendet."><figcaption><p>Die Workflow List – jede Zeile ist ein Workflow, den Sie öffnen, ein-/ausschalten oder bearbeiten können. Vertrauliche Namen und Dokumentverweise sind ausgeblendet.</p></figcaption></figure>
 
-Ein Workflow besteht aus drei Kartengruppen: **When** (der Auslöser), **And** (zusätzliche Bedingungen) und **Then** (die auszuführenden Aktionen). Das folgende Beispiel löst Rechnungen einer Unterorganisation aus und weist sie einem Benutzer zu:
+Ein Workflow besteht aus drei Kartengruppen: **Wenn** (Auslöser), **Und** (zusätzliche Bedingungen) und **Dann** (Aktionen). Das folgende, nicht gespeicherte Beispiel zeigt diese Struktur. Dokumenttyp, Unterorganisation und Benutzer sind noch auszuwählen:
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow-Builder-Canvas mit When-, And- und Then-Karten"><figcaption><p>Die Workflow-Builder-Canvas. Jedes Pattern unten ist nur eine andere Kombination aus When- / And- / Then-Karten.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-de.png" alt="Nicht gespeichertes Beispiel mit Wenn-, Und- und Dann-Karten. Füllen Sie alle Platzhalter vor der Ausführung aus."><figcaption><p>Nicht gespeichertes Beispiel mit Wenn-, Und- und Dann-Karten. Füllen Sie alle Platzhalter vor der Ausführung aus.</p></figcaption></figure>
 
 Klicken Sie in einer beliebigen Gruppe auf **Karte hinzufügen**, um die Kartenbibliothek zu öffnen. Die Karten sind nach Kategorien organisiert (Vergleich mit Bestellung, Partnerkarten, Dokumentfeld, Datum und Uhrzeit, Dokument, Logik, Status, Tabelle, Beauftragter usw.), sodass Sie den Baustein finden können, den jedes Muster erfordert:
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Dialog Add Card mit den Kartenkategorien und verfügbaren Karten"><figcaption><p>Die <strong>Add Card</strong>-Bibliothek – jede in den Patterns unten genannte Karte wird hier ausgewählt.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt.</p></figcaption></figure>
 
 ***
 

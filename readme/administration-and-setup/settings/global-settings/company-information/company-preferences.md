@@ -9,3 +9,5 @@ Escolha um formato de data adequado aos documentos. Os símbolos %d, %m e %Y sã
 <figure><img src="../../../../.gitbook/assets/prior-i004-pt.png" alt="Seleção do formato de data nas preferências da empresa."><figcaption><p>Seleção do formato de data nas preferências da empresa.</p></figcaption></figure>
 
 O formato de montante é uma definição separada; o nome configurado pode permanecer inalterado. Verifique ambos os formatos antes de guardar. A antiga janela de informação da versão não faz parte da vista atual. Não foram alteradas preferências para estas imagens.
+
+{% embed url="https://youtu.be/TLmAHw3EXs4" %}

@@ -875,7 +875,7 @@ ELSE:
 
 * [字段操作指南](../field-manipulation-guide.md) - 所有字段操作
 * [条件卡片指南](../condition-cards-complete-guide.md) - 验证条件
-* [Call API 指南](../call-api-guide.md) - 获取外部数据
+* [Call API 指南](../call-api-guide.md)
 
 ### 相关卡片
 

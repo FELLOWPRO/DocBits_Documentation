@@ -30,7 +30,7 @@ Diese Dokumentation hilft Administratoren, WatchDog-Fehlermeldungen zu verstehen
 
 ### 1.3 Registerkarte „Status“
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_status.png" alt="WatchDog-Dienststatus"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog_v2_status-de.png" alt="WatchDog-Dienststatus"><figcaption></figcaption></figure>
 
 * Zeigt den Verbindungsstatus von WatchDog in Echtzeit an
 * **Neue Felder:** `last_restart`, `version_first_seen`, `latest_version_checked_at`

@@ -4,7 +4,7 @@ Die Seite **Infrastruktur** bietet Administratoren eine aktuelle Übersicht auf 
 
 > **Zugriff:** Die Infrastruktur ist eine reine Administratorenseite. Öffnen Sie **Einstellungen → Organisation & Zugriff → Infrastruktur**.
 
-<figure><img src="../../.gitbook/assets/infrastructure_overview.png" alt="Infrastructure page with the Topology tab open"><figcaption><p>Die Seite „Infrastruktur", Registerkarte „Topologie"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/infrastructure_overview-de.png" alt="Die Seite Infrastruktur mit geöffneter Registerkarte Topologie"><figcaption><p>Die Seite „Infrastruktur", Registerkarte „Topologie"</p></figcaption></figure>
 
 Die Seite ist in drei Registerkarten unterteilt:
 
@@ -49,7 +49,7 @@ Komponenten, die zu einem optionalen Modul gehören (Volltextsuche, DocFlow, Aut
 
 Die Registerkarte „Verarbeitung" zeigt die Pipeline der Dokumentenverarbeitung für **Ihre Organisation** – wann jeder Schritt zuletzt ausgeführt wurde und ob die Arbeit fließt oder sich staut.
 
-<figure><img src="../../.gitbook/assets/infrastructure_processing.png" alt="Processing tasks table with status badges"><figcaption><p>Verarbeitungsstatus je Schritt für Ihre Organisation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/infrastructure_processing-de.png" alt="Tabelle der Verarbeitungsschritte mit Statusmarkierungen"><figcaption><p>Verarbeitungsstatus je Schritt für Ihre Organisation</p></figcaption></figure>
 
 | Spalte | Beschreibung |
 |--------|-------------|

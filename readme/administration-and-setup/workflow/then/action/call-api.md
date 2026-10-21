@@ -2,68 +2,24 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6a1c780ee588-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
-## Doel:
+<!-- workflow-card-call-api-contract-20261022 -->
 
-Met de workflow-kaart **"Call API"** kunnen gebruikers rechtstreeks vanuit de workflow HTTP-verzoeken naar opgegeven API-eindpunten doen. Deze kaart ondersteunt diverse HTTP-methoden en maakt dynamische interactie met externe systemen mogelijk door parameters en gegevens te verzenden. Hij stroomlijnt de integratie met diensten van derden en aangepaste API's en zorgt voor naadloze communicatie.
+## Doel
 
-## Onderdelen van de kaart:
+Gebruik `call_api` om een endpoint binnen de ingestelde DocBits-API aan te roepen. Het relatieve pad wordt aan het basisadres toegevoegd. Een willekeurige externe URL stelt geen integratie met een andere API in.
 
-1. **API-eindpunt**
-   * **Beschrijving:** De URL van de aan te roepen API.
-   * **Details:** Een tekstveld waarin gebruikers het eindpunt voor het API-verzoek opgeven.
-2. **HTTP-methode**
-   * **Beschrijving:** Het type HTTP-verzoek dat wordt gedaan.
-   * **Opties:**
-     1. **GET:** Haalt gegevens op van het opgegeven eindpunt.
-     2. **POST:** Verzendt gegevens naar het eindpunt.
-     3. **PUT:** Werkt bestaande gegevens op het eindpunt bij.
-     4. **DELETE:** Verwijdert gegevens op het eindpunt.
-3. **Parameters**
-   * **Beschrijving:** Queryparameters die in het API-verzoek worden opgenomen.
-   * **Details:** Een tekstveld of lijst voor het invoeren van sleutel-waardeparen voor de verzoek-URL.
-4. **Gegevens**
-   1. **Beschrijving:** De payload die in de body van het API-verzoek wordt verzonden (van toepassing voor POST- en PUT-methoden).
-   2. **Details:** Een veld voor het invoeren van de gegevens in JSON of andere gestructureerde formaten.
+## Configuratie
 
-## Functionaliteit:
+Vul het pad, de HTTP-methode, queryparameters en de door het endpoint ondersteunde gegevens in. De aanvraag gebruikt de context van de huidige DocBits-gebruiker. Ontbrekende waarden voor `org_id` en `triggered_by_docflow` worden automatisch toegevoegd. Parameter- en gegevensobjecten, of hun ondersteunde tekstweergave, moeten bij het formaat van deze kaartversie passen. Er is geen algemene koppeling van JSON-antwoordvelden.
 
-**Voorwaarde-evaluatie:** Het systeem evalueert de voorwaarden die zijn gedefinieerd in de "Where"- en "And"-secties:
+## Resultaat en beperkingen
 
-* Als beide voorwaarden **true** zijn, wordt het API-verzoek uitgevoerd zoals geconfigureerd.
-* Als een van beide voorwaarden **false** is, wordt de kaart niet uitgevoerd en wordt er geen API-aanroep gedaan.
-
-**API-verzoekuitvoering:**
-
-* De kaart verzendt het HTTP-verzoek naar het opgegeven eindpunt met de geselecteerde methode.
-* Eventueel opgegeven parameters worden aan de URL toegevoegd en de gegevens worden in de verzoekbody opgenomen (indien van toepassing).
-
-## Opzet en configuratie:
-
-1. **API-eindpunt definiëren:**\
-   Voer de URL in van de API die u wilt aanroepen.
-2. **HTTP-methode selecteren:**\
-   Kies een van de ondersteunde methoden (GET, POST, PUT, DELETE) op basis van de vereisten van uw API.
-3. **Parameters opgeven:**\
-   Voeg eventueel vereiste queryparameters toe als sleutel-waardeparen.
-4. **Gegevens opnemen (indien van toepassing):**\
-   Geef voor POST- of PUT-methoden de gegevens op die in de verzoekbody worden verzonden.
-5. **Voorwaardeconfiguratie:**\
-   Configureer de "Where"- en "And"-secties om te definiëren wanneer de API-aanroep moet plaatsvinden.
-
-## Conclusie:
-
-De workflow-kaart **"Call API"** verbetert de workflow-automatisering door directe interactie met externe systemen mogelijk te maken. Door flexibele configuraties voor eindpunten, methoden en gegevens te bieden, zorgt hij ervoor dat workflows naadloos kunnen integreren met API's van derden of aangepaste backends. De mogelijkheid om API-aanroepen voorwaardelijk uit te voeren, zorgt voor precisie en efficiëntie bij het automatiseren van externe communicatie.
-
-***
+De antwoordtekst wordt naar een booleaanse waarde omgezet: alleen `true`, `1`, `yes` of `on` levert waar op; een onbekend antwoord, waaronder een willekeurig JSON-object, levert standaard onwaar op. De HTTP-status alleen bepaalt deze waarde niet. Een time-out of aanvraagfout levert onwaar op. De kaarttest simuleert de aanroep en geeft waar terug zonder een aanvraag te versturen; dit bewijst geen authenticatie, bereikbaarheid of endpointgedrag.
 
 <!-- workflow-card-practical-example-20261021 -->
 
-## Praktisch voorbeeld
+## Praktijkvoorbeeld
 
-**Wanneer gebruiken:** Vraag een geconfigureerde externe dienst om aanvullende validatie.
+Gebruik deze kaart na de vereiste voorwaarden wanneer u een booleaanse waarde van een ingesteld DocBits-API-endpoint nodig hebt. Kies voor een geïsoleerde test een bestaand, gedocumenteerd endpoint dat alleen leest, met het bedoelde booleaanse antwoordcontract en de passende methode, bijvoorbeeld `GET`. Gebruik uitsluitend de ondersteunde demoparameters.
 
-**Configuratie:** Selecteer het geconfigureerde demo-API-eindpunt en de HTTP-methode. Geef de parameters en JSON-hoofdtekst op die voor dat eindpunt vereist zijn.
-
-**Verwacht resultaat en tegenvoorbeeld:** Controleer bij een gesimuleerde HTTP-respons met status `200` de verwerking van de respons door de volgende kaarten. Test ook `500`; het starten van het aanroep betekent niet dat de bedrijfscontrole is geslaagd.
-
-Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.
+Verwacht resultaat en tegenvoorbeeld: een hypothetisch HTTP-antwoord `200` met als volledige tekst `true` levert waar op; `false` levert onwaar op. Een object zoals `{"approved": true}` wordt niet automatisch naar waar omgezet. Controleer het werkelijke antwoord en de logboeken afzonderlijk. Dit voorbeeld is aan de uitvoeringscode getoetst; er is geen aanvraag of workflow uitgevoerd.

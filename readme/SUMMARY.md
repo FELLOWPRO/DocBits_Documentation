@@ -720,7 +720,7 @@
     * [Taaktoewijzing en creatiekaarten](administration-and-setup/workflow/then/task/task-assignment-guide.md)
     * [Kaarten voor veld- en tabelbewerkingen](administration-and-setup/workflow/then/document-field/field-manipulation-guide.md)
     * [Voer de DocOperator-prompt uit (automatiseringsscript)](administration-and-setup/workflow/then/action/docoperator-script-guide.md)
-    * [Externe API aanroepen](administration-and-setup/workflow/then/action/call-api-guide.md)
+    * [De DocBits-API aanroepen](administration-and-setup/workflow/then/action/call-api-guide.md)
     * [E-mail verzenden naar groepen](administration-and-setup/workflow/then/action/send-email-groups-guide.md)
     * [HTTPS-verzoek verzenden](administration-and-setup/workflow/then/action/https-request-guide.md)
     * [Gidsen voor workflowpatronen](administration-and-setup/workflow/patterns/README.md)

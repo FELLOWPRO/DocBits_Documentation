@@ -76,6 +76,6 @@ O cartão de fluxo de trabalho "Assign Document and Create Task/Notification Bas
 
 **Configuração:** Selecione a tabela de decisão de demonstração, título da tarefa `Review invoice`, descrição e prioridade. Configure o formato de retorno do responsável e a opção de e-mail exigidos pela versão selecionada.
 
-**Resultado esperado e contra-exemplo:** O cessionário retornado correspondente recebe a atribuição do documento documentado e a tarefa/notificação. Verifique ambos os resultados; um retorno de tabela vazio não é uma atribuição bem-sucedida.
+**Resultado esperado e contra-exemplo:** O responsável retornado correspondente recebe a atribuição do documento documentado e a tarefa/notificação. Verifique ambos os resultados; um retorno de tabela vazio não é uma atribuição bem-sucedida.
 
 Esta é uma configuração ilustrativa e resultado esperado. Utilize campos, usuários e grupos configurados em sua organização de teste; não é uma afirmação de que este exemplo foi executado.

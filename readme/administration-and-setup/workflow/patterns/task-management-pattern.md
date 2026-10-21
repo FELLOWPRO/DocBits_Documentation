@@ -4,15 +4,21 @@
 
 ***
 
-Este padrão é construído no **Construtor de fluxo de trabalho** (Workflow Dashboard → Workflow List → Add Workflow). Clique em **Adicionar cartão** para abrir a biblioteca de cartas e escolher as cartas utilizadas por este padrão — `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` e `CONDITION_TASK_STATUS` (a categoria **Responsável** contém as cartas de tarefa e de atribuição):
+<!-- workflow-card-task-pattern-scope-20261022 -->
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
+**Âmbito verificado:** Este é um modelo conceptual de coordenação, não uma configuração de fluxo de trabalho pronta para importar. Na biblioteca verificada, `tasks_create` pertence a **Tarefa**, `doc_user_assign` a **Responsável** e `action_send_email_to_groups` a **E-mail**.
+
+Os nomes anteriores `ACTION_ASSIGN_TO_USER` e `CONDITION_TASK_STATUS` são designações ilustrativas, não cartões registados que possam ser selecionados nesta biblioteca. O JSON abaixo é esquemático. Criar uma tarefa, por si só, não pausa um fluxo de trabalho nem configura a sua retoma automática. O encaminhamento após a conclusão, a espera e a escalada exigem configuração e verificação separadas.
+
+[Cartões de tarefas atuais](../then/task/README.md) · [Proteções de exportação e tarefas pendentes](../cards-overview/export-cards-guide.md).
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-pt.png" alt="Ilustração da biblioteca de cartões. A criação de tarefas, a atribuição de documentos e o envio de e-mail a grupos utilizam categorias distintas; escolha a versão disponível na sua organização. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Ilustração da biblioteca de cartões. A criação de tarefas, a atribuição de documentos e o envio de e-mail a grupos utilizam categorias distintas; escolha a versão disponível na sua organização. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
 ***
 
 ## Visão geral do padrão
 
-Este padrão demonstra como criar, atribuir, acompanhar e gerir tarefas em workflows do DocBits. As tarefas são itens de trabalho acionáveis, atribuídos a utilizadores ou grupos, que têm de ser concluídos antes de o workflow do documento poder continuar.
+Este modelo ilustra a criação e atribuição de tarefas e as notificações aos destinatários. Os passos após a conclusão descrevem uma arquitetura proposta; criar a tarefa não constitui uma operação de espera.
 
 **O que este padrão faz:**
 
@@ -127,6 +133,8 @@ Currency: EUR
 
 **Configuração:**
 
+**JSON esquemático:** Apenas ilustra a estrutura; não o importe como um fluxo de trabalho executável.
+
 ```json
 {
   "task_type": "Approval",
@@ -159,6 +167,8 @@ Currency: EUR
 
 **Tarefa 1: Aprovação pela Direção**
 
+**JSON esquemático:** Apenas ilustra a estrutura; não o importe como um fluxo de trabalho executável.
+
 ```json
 {
   "task_type": "First Approval",
@@ -173,6 +183,8 @@ Currency: EUR
 ```
 
 **Tarefa 2: Aprovação pelo Diretor (criada após a conclusão da Tarefa 1)**
+
+**JSON esquemático:** Apenas ilustra a estrutura; não o importe como um fluxo de trabalho executável.
 
 ```json
 {
@@ -231,6 +243,8 @@ User 3: CFO (only if User 2 approves)
 **Carta:** ACTION\_SEND\_EMAIL\_TO\_GROUPS
 
 **Configuração:**
+
+**JSON esquemático:** Apenas ilustra a estrutura; não o importe como um fluxo de trabalho executável.
 
 ```json
 {
@@ -445,6 +459,8 @@ INVOICE ARRIVES
 
 ### Modelo 1: Tarefa de aprovação simples
 
+**JSON esquemático:** Apenas ilustra a estrutura; não o importe como um fluxo de trabalho executável.
+
 ```json
 {
   "card": "tasks_create",
@@ -461,6 +477,8 @@ INVOICE ARRIVES
 
 ### Modelo 2: Tarefa de revisão com detalhes
 
+**JSON esquemático:** Apenas ilustra a estrutura; não o importe como um fluxo de trabalho executável.
+
 ```json
 {
   "card": "tasks_create",
@@ -476,6 +494,8 @@ INVOICE ARRIVES
 ***
 
 ### Modelo 3: Tarefa de escalonamento
+
+**JSON esquemático:** Apenas ilustra a estrutura; não o importe como um fluxo de trabalho executável.
 
 ```json
 {

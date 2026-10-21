@@ -129,7 +129,7 @@ Utilisez ce modèle lorsque vous devez :
 * Extraire les positions de la facture
 * Calculer les sommes des positions (quantité × prix)
 * Calculer le sous-total (somme des sommes des positions)
-* Calculer le montant de la taxe (sous-total × taux de taxe)
+* Calculer le montant de la taxe (sous-total × `Tax_Rate`)
 * Calculer la somme totale (sous-total + taxe)
 * Convertir en EUR si la facture est dans une autre devise
 * Formater les montants à 2 décimales

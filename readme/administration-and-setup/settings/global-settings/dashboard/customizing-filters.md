@@ -28,9 +28,9 @@ Die Verwendung von Filtern ermöglicht es den Benutzern, schnell relevante Infor
 
 #### **Eigene Filter erstellen**
 
-* Öffnen Sie das Filtermenü in den Einstellungen unter Dashboard und klicken Sie auf "Filter".
+* Öffnen Sie **Einstellungen → Dashboard** und dort den Abschnitt **Filter**. Hier finden Sie **Statusfilter-Stil** und **Benutzerdefinierter Statusfilter**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_3.png)
+![Deutscher Abschnitt Filter mit Statusfilter-Stil, benutzerdefiniertem Statusfilter und Anwenden.](../../../../.gitbook/assets/s50-customizing_filters_3-de.png)
 
 * Wählen Sie das Feld aus, das gefiltert werden soll (z.B. Status).
 

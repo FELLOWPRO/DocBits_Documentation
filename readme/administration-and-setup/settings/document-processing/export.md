@@ -54,6 +54,8 @@ Um einen neuen Export zu erstellen:
 
 ## Exportoptionen
 
+Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnungen, einige Platzhalter und **Deployment Type** bleiben im Produkt englisch. Der Exporttyp **SMB** wird in der Auswahl derzeit als **KMU** angezeigt.
+
 #### Webhook
 
 <details>
@@ -104,12 +106,12 @@ Um einen neuen Export zu erstellen:
 
 **Erweiterte Einstellungen:**
 
-* **Filename Export Mode** Gibt an, ob die exportierte Datei ihren ursprünglichen Dateinamen behält oder mit der DocBits-Dokument-ID umbenannt wird.
-* **Include Document History** Wenn aktiviert, enthält die exportierte Datei den Dokumentenverlauf basierend auf den im Dashboard verfügbaren Protokollen.
+* **Dateiname Exportmodus** Gibt an, ob die exportierte Datei ihren ursprünglichen Dateinamen behält oder mit der DocBits-Dokument-ID umbenannt wird.
+* **Dokumentenverlauf einbeziehen** Wenn aktiviert, enthält die exportierte Datei den Dokumentenverlauf basierend auf den im Dashboard verfügbaren Protokollen.
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_sftp_2.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_sftp_3.png)
+![Erweiterte SFTP-Einstellungen für Dateinamen und Dokumentenverlauf in der deutschen Oberfläche.](../../../.gitbook/assets/s50-export_sftp_3-de.png)
 
 </details>
 
@@ -119,18 +121,18 @@ Um einen neuen Export zu erstellen:
 
 <summary>Infor-Export nach SFTP</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_infor_sftp_configuration.png)
+![Deutsches Formular Infor Export nach SFTP mit Exportordnerpfad, BOD- und IDM-Mapping.](../../../.gitbook/assets/s50-export_infor_sftp_configuration-de.png)
 
 **Feldbeschreibungen**
 
-* **Title** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
-* **Sub-Organization** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
+* **Konfigurationstitel** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
+* **Unterorganisation** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
   * Wenn leer gelassen: gilt für die Hauptorganisation.
   * Wenn ausgewählt: gilt der Export nur für die ausgewählte Unterorganisation.
-* **Document Type** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
-* **IDM Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe IDM-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **BOD Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe BOD-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
-* **Folder** Der Pfad auf dem SFTP-Server, wohin Dokumente hochgeladen werden sollen (z. B. `/incoming/invoices/`). Muss existieren und beschreibbar sein.
+* **Dokumenttyp** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
+* **IDM-Mapping-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe IDM-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
+* **BOD-Zuordnungsdatei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe BOD-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
+* **Exportordnerpfad** Der Pfad auf dem SFTP-Server, wohin Dokumente hochgeladen werden sollen (z. B. `/incoming/invoices/`). Muss existieren und beschreibbar sein.
 
 </details>
 
@@ -140,20 +142,20 @@ Um einen neuen Export zu erstellen:
 
 <summary>SMB</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_smb_configuration.png)
+![Deutsches SMB-Exportformular. Die Exportauswahl heißt im Produkt derzeit KMU; gemeint ist die SMB-Freigabe.](../../../.gitbook/assets/s50-export_smb_configuration-de.png)
 
 **Feldbeschreibungen**
 
-* **Title** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
-* **Sub-Organization** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
+* **Konfigurationstitel** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
+* **Unterorganisation** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
   * Wenn leer gelassen: gilt für die Hauptorganisation.
   * Wenn ausgewählt: gilt der Export nur für die ausgewählte Unterorganisation.
-* **Document Type** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
-* **Username** Der Benutzername zur Verbindung mit dem SMB-Share.
-* **Password** Das entsprechende Passwort für die SMB-Authentifizierung.
-* **Server URL** Die Adresse des SMB-Servers.
+* **Dokumenttyp** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
+* **Benutzername** Der Benutzername zur Verbindung mit dem SMB-Share.
+* **Passwort** Das entsprechende Passwort für die SMB-Authentifizierung.
+* **Server-URL** Die Adresse des SMB-Servers.
 * **Port** Portnummer für den Zugriff auf den SMB-Share.
-* **Folder** Der Ordnerpfad innerhalb des SMB-Shares, wohin Dokumente gespeichert werden sollen (z. B. `/incoming/invoices/`). Muss existieren und beschreibbar sein.
+* **Exportordnerpfad** Der Ordnerpfad innerhalb des SMB-Shares, wohin Dokumente gespeichert werden sollen (z. B. `/incoming/invoices/`). Muss existieren und beschreibbar sein.
 *   **JPL Mapping File (Optional)**
 
     Die **JPL-Datei** wird verwendet, um eine Transformation der exportierten Daten vorzunehmen, bevor sie in den SMB-Share geschrieben werden.
@@ -169,17 +171,17 @@ Um einen neuen Export zu erstellen:
 
 <summary>Infor IDM</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_infor_idm_configuration.png)
+![Deutsches Exportformular für Infor IDM. Deployment Type und technische Formatbezeichnungen bleiben englisch.](../../../.gitbook/assets/s50-export_infor_idm_configuration-de.png)
 
 **Feldbeschreibungen**
 
-* **Title** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
-* **Sub-Organization** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
+* **Konfigurationstitel** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
+* **Unterorganisation** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
   * Wenn leer gelassen: gilt für die Hauptorganisation.
   * Wenn ausgewählt: gilt der Export nur für die ausgewählte Unterorganisation.
-* **Document Type** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
-* **ION Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager.
-* **IDM Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe IDM-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
+* **Dokumenttyp** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
+* **ION API-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager.
+* **IDM-Mapping-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe IDM-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **Cloud / On-Prem Toggle** Ein Schalter zur Angabe des Infor-Bereitstellungstyps:
   * **Cloud**: Wählen Sie dies, wenn Sie Infor CloudSuite-Kunde sind.
   * **On-Prem**: Wählen Sie dies, wenn Infor selbst gehostet wird.
@@ -192,17 +194,17 @@ Um einen neuen Export zu erstellen:
 
 <summary>Infor ION</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_infor_ion_configuration.png)
+![Deutsches Exportformular für Infor ION BOD mit ION-API und BOD-Zuordnungsdatei.](../../../.gitbook/assets/s50-export_infor_ion_configuration-de.png)
 
 **Feldbeschreibungen**
 
-* **Title** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
-* **Sub-Organization** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
+* **Konfigurationstitel** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
+* **Unterorganisation** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
   * Wenn leer gelassen: gilt für die Hauptorganisation.
   * Wenn ausgewählt: gilt der Export nur für die ausgewählte Unterorganisation.
-* **Document Type** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
-* **ION Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager.
-* **BOD Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe BOD-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
+* **Dokumenttyp** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
+* **ION API-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager.
+* **BOD-Zuordnungsdatei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe BOD-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
 * **Cloud / On-Prem Toggle** Ein Schalter zur Angabe des Infor-Bereitstellungstyps:
   * **Cloud**: Wählen Sie dies, wenn Sie Infor CloudSuite-Kunde sind.
   * **On-Prem**: Wählen Sie dies, wenn Infor selbst gehostet wird.
@@ -215,18 +217,18 @@ Um einen neuen Export zu erstellen:
 
 <summary>Infor IDM + ION BOD</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_infor_idm_ion_bod_configuration.png)
+![Deutsches Exportformular für Infor IDM + ION BOD mit ION-, IDM- und BOD-Dateien.](../../../.gitbook/assets/s50-export_infor_idm_ion_bod_configuration-de.png)
 
 **Feldbeschreibungen**
 
-* **Title** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
-* **Sub-Organization** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
+* **Konfigurationstitel** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
+* **Unterorganisation** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
   * Wenn leer gelassen: gilt für die Hauptorganisation.
   * Wenn ausgewählt: gilt der Export nur für die ausgewählte Unterorganisation.
-* **Document Type** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
-* **ION Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager.
-* **IDM Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe IDM-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **BOD Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe BOD-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
+* **Dokumenttyp** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
+* **ION API-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager.
+* **IDM-Mapping-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe IDM-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
+* **BOD-Zuordnungsdatei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe BOD-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
 * **Cloud / On-Prem Toggle** Ein Schalter zur Angabe des Infor-Bereitstellungstyps:
   * **Cloud**: Wählen Sie dies, wenn Sie Infor CloudSuite-Kunde sind.
   * **On-Prem**: Wählen Sie dies, wenn Infor selbst gehostet wird.
@@ -241,17 +243,17 @@ Um einen neuen Export zu erstellen:
 
 <summary>Infor IDM + LN</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_infor_idm_ln_configuration.png)
+![Deutsches Exportformular für die Infor-ERP-Variante mit zusätzlicher LN-Mapping-Datei.](../../../.gitbook/assets/s50-export_infor_idm_ln_configuration-de.png)
 
 **Feldbeschreibungen**
 
-* **Title** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
-* **Sub-Organization** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
+* **Konfigurationstitel** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
+* **Unterorganisation** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
   * Wenn leer gelassen: gilt für die Hauptorganisation.
   * Wenn ausgewählt: gilt der Export nur für die ausgewählte Unterorganisation.
-* **Document Type** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
-* **ION Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager.
-* **IDM Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe IDM-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
+* **Dokumenttyp** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
+* **ION API-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager.
+* **IDM-Mapping-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe IDM-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **LN Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe LN-Mapping-Beispiel](../../../infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/)
 
 </details>
@@ -262,17 +264,17 @@ Um einen neuen Export zu erstellen:
 
 <summary>Infor IDM + M3</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_infor_idm_m3_configuration.png)
+![Deutsches Exportformular für Infor IDM + M3 mit zusätzlicher M3-Mapping-Datei.](../../../.gitbook/assets/s50-export_infor_idm_m3_configuration-de.png)
 
 **Feldbeschreibungen**
 
-* **Title** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
-* **Sub-Organization** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
+* **Konfigurationstitel** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
+* **Unterorganisation** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
   * Wenn leer gelassen: gilt für die Hauptorganisation.
   * Wenn ausgewählt: gilt der Export nur für die ausgewählte Unterorganisation.
-* **Document Type** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
-* **ION Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager.
-* **IDM Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe IDM-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
+* **Dokumenttyp** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
+* **ION API-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager.
+* **IDM-Mapping-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe IDM-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **M3 Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe M3-Mapping-Beispiel](../../../infor-integration-and-configuration/exporting-to-infor/m3/example-export-m3.md)
 
 </details>
@@ -283,17 +285,17 @@ Um einen neuen Export zu erstellen:
 
 <summary>Infor IDM + M3 (toml)</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_infor_idm_m3_toml_configuration.png)
+![Deutsches Exportformular für Infor IDM + M3 (TOML) mit TOML-Zuordnungsdatei.](../../../.gitbook/assets/s50-export_infor_idm_m3_toml_configuration-de.png)
 
 **Feldbeschreibungen**
 
-* **Title** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
-* **Sub-Organization** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
+* **Konfigurationstitel** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
+* **Unterorganisation** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
   * Wenn leer gelassen: gilt für die Hauptorganisation.
   * Wenn ausgewählt: gilt der Export nur für die ausgewählte Unterorganisation.
-* **Document Type** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
-* **ION Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager.
-* **IDM Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe IDM-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
+* **Dokumenttyp** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
+* **ION API-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager.
+* **IDM-Mapping-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe IDM-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **M3 toml Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager oder verwenden Sie die Option Toml auswählen, um ein mit dem Regel-Manager erstelltes toml zu verwenden. [Benötigen Sie Hilfe bei der Erstellung? Siehe Regel-Manager-Leitfaden](rule-manager/)
 
 </details>

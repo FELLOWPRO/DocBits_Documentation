@@ -2,7 +2,7 @@
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/pt.mp4" %}
 
-<figure><img src="../../../../../.gitbook/assets/users_settings.png" alt="Gerenciamento de Usuários"><figcaption><p>Página de Gerenciamento de Usuários</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u046-pt.png" alt="Vista de utilizadores com nomes e contas ocultos."><figcaption><p>Vista de utilizadores com nomes e contas ocultos.</p></figcaption></figure>
 
 A página de Usuários permite que os administradores gerenciem todas as contas de usuário da sua organização no DocBits. Aqui você pode adicionar novos usuários, atribuir funções e controlar o acesso.
 
@@ -13,10 +13,10 @@ A tabela de usuários exibe as seguintes colunas:
 | Coluna | Descrição |
 |--------|-------------|
 | **Nome** | O nome completo do usuário. |
-| **E-Mail** | O endereço de e-mail do usuário, usado como identificador de login. |
+| **E-mail** | O endereço de e-mail do usuário, usado como identificador de login. |
 | **Último Login** | Data e hora do login mais recente do usuário. |
-| **Admin** | Caixa de seleção que indica se o usuário tem privilégios de administrador. Os Admins podem acessar todas as configurações e gerenciar outros usuários. |
-| **System Admin** | Caixa de seleção que indica o único System Admin da organização — a conta que o DocBits utiliza para ações automáticas, realizadas em segundo plano (como importações e exportações automatizadas). Um System Admin sempre tem também privilégios de Admin. Consulte [Privilégios de Administrador](admin-privileges.md#admin-vs-system-admin) para entender a diferença entre Admin e System Admin. |
+| **Administrador** | Caixa de seleção que indica se o usuário tem privilégios de administrador. Os Admins podem acessar todas as configurações e gerenciar outros usuários. |
+| **Administrador do sistema** | Caixa de seleção que indica o único System Admin da organização — a conta que o DocBits utiliza para ações automáticas, realizadas em segundo plano (como importações e exportações automatizadas). Um System Admin sempre tem também privilégios de Admin. Consulte [Privilégios de Administrador](admin-privileges.md#admin-vs-system-admin) para entender a diferença entre Admin e System Admin. |
 | **Ativo** | Caixa de seleção que mostra se a conta do usuário está atualmente ativa. Usuários inativos não conseguem fazer login. |
 | **Ações** | Menu com opções como editar os dados do usuário, redefinir senhas ou desativar a conta. |
 
@@ -39,4 +39,4 @@ Consulte [Análise de Logins](login-analytics.md) para o detalhamento completo.
    * **Função do Usuário**: Atribua a função adequada (Standard User, Admin ou System Admin).
 3. Clique em **Salvar** para criar a conta do usuário. O novo usuário receberá uma notificação por e-mail com seus dados de login e um link para definir a primeira senha na página Definir senha. Consulte [Obter acesso e iniciar sessão](../../../../../end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md#primeira-palavra-passe-para-contas-criadas-pelo-administrador).
 
-> **Observação:** A função de **System Admin** só pode ser escolhida ao criar um usuário — ela não pode ser adicionada ou removida depois. Cada organização pode ter apenas um System Admin, e escolher essa função concede automaticamente também os direitos de Admin. Consulte [Privilégios de Administrador](admin-privileges.md#admin-vs-system-admin) para saber quando utilizá-la.
+> **Observação:** A função de **Administrador do sistema** só pode ser escolhida ao criar um usuário — ela não pode ser adicionada ou removida depois. Cada organização pode ter apenas um System Admin, e escolher essa função concede automaticamente também os direitos de Admin. Consulte [Privilégios de Administrador](admin-privileges.md#admin-vs-system-admin) para saber quando utilizá-la.

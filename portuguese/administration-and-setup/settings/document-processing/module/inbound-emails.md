@@ -19,7 +19,7 @@ Vá para **Configurações → Processamento de Documentos → Importar** e abra
 
 O assistente de configuração abre. O primeiro campo, **Protocolo**, determina como o DocBits se conecta — escolha **IMAP**, **OAuth Office365** ou **OAuth Office365 – Tenant**.
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_protocol_select.png" alt="Lista suspensa Protocolo com IMAP, OAuth Office365 e OAuth Office365 - Tenant"><figcaption><p>A lista <strong>Protocolo</strong> oferece os três tipos de conexão.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-inbound_emails_protocol_select-pt.png" alt="Seleção do protocolo no assistente de e-mail recebido."><figcaption><p>Seleção do protocolo no assistente de e-mail recebido.</p></figcaption></figure>
 
 #### IMAP
 
@@ -44,7 +44,7 @@ Para conectar no nível do locatário (organização) por meio de um registro de
 <figure><img src="../../../../.gitbook/assets/inbound_emails_o365_tenant.png" alt="Configuração do locatário do Azure com ID do locatário, ID do aplicativo cliente e Valor do aplicativo cliente"><figcaption><p>O OAuth Office365 – Tenant usa um registro de aplicativo do Azure (ID do locatário, ID do aplicativo cliente, segredo do cliente).</p></figcaption></figure>
 
 {% hint style="info" %}
-O **Roteamento de documentos** decide para onde vão os documentos importados — **DocBits** (o painel padrão) ou **AI Workforce**. Após conectar, as próximas etapas do assistente permitem escolher de qual **pasta** importar, uma **caixa compartilhada** opcional e se os e-mails processados devem ser **movidos** para outra pasta.
+O **Roteamento de documentos** decide para onde vão os documentos importados — **DocBits** (o painel padrão) ou **Força de trabalho de IA**. Após conectar, as próximas etapas do assistente permitem escolher de qual **pasta** importar, uma **caixa compartilhada** opcional e se os e-mails processados devem ser **movidos** para outra pasta.
 {% endhint %}
 
 ### Método 2 — Encaminhar e-mails para o DocBits (E-mails recebidos)

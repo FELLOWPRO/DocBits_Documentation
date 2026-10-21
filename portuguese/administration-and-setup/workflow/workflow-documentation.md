@@ -16,31 +16,31 @@ Se uma fatura ou outro documento exceder um determinado valor total que exija re
 
 **Test 1: Logic Card**
 
-When: **Assignee is:** Amier Haider
+When: **Assignee is:** Responsável pela receção
 
 And: **Document type is:** Invoice
 
-Then: **Assign document to:** Stefan Reppermund
+Then: **Assign document to:** Responsável pela verificação da fatura
 
 ![](<../../.gitbook/assets/3 (1).png>)
 
 **Test 2: Logic Card**
 
-When: **Assignee is:** Amier Haider
+When: **Assignee is:** Responsável pela receção
 
 And: **Document type is:** Delivery Note
 
-Then: **Assign document to:** James Edwards
+Then: **Assign document to:** Responsável pela verificação da entrega
 
 ![](<../../.gitbook/assets/4 (1).png>)
 
 **Test 3: Logic Card**
 
-**When:** **Assignee is:** Amier Haider
+**When:** **Assignee is:** Responsável pela receção
 
 **And:** **Document type is:** Order Confirmation
 
-**Then:** **Assign document to:** Anian Sollinger
+**Then:** **Assign document to:** Responsável pela verificação da encomenda
 
 ![](<../../.gitbook/assets/5 (1).png>)
 
@@ -54,11 +54,11 @@ Para uma visão geral mais fácil do que deve acontecer com um documento, você 
 
 **When:** **Document type is:** Delivery Note
 
-**And:** **Assignee is:** Amier Haider
+**And:** **Assignee is:** Responsável pela receção
 
 **Then:** **Change Status to:** Pending Approval
 
-<figure><img src="../../.gitbook/assets/workflow_test4_delivery_note_status.png" alt="Workflow Test 4 Delivery Note Status"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test4_delivery_note_status-pt.png" alt="Rascunho de fluxo para alterar o estado, sem guardar."><figcaption><p>Rascunho de fluxo para alterar o estado, sem guardar.</p></figcaption></figure>
 
 ![](<../../.gitbook/assets/8 (1).png>)
 
@@ -66,7 +66,7 @@ Para uma visão geral mais fácil do que deve acontecer com um documento, você 
 
 When: **Document type is:** Invoice
 
-And: **Assignee is:** Stefan Reppermund
+And: **Assignee is:** Responsável pela verificação da fatura
 
 Then: **Change Status to:** Pending Second Approval
 
@@ -80,11 +80,11 @@ Se uma fatura ou outro documento exceder um determinado valor total que exija re
 
 **Test 6: Logic Card**
 
-When: **Assignee is:** Amier Haider
+When: **Assignee is:** Responsável pela receção
 
 And: Docfield **total\_amount** is **Greater than 500**
 
-Then: **Assign document to:** Asad Usman Khan
+Then: **Assign document to:** Responsável pela aprovação
 
 <figure><img src="../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Workflow Test 6 Total Amount Assign"><figcaption></figcaption></figure>
 
@@ -94,15 +94,15 @@ Também é possível inserir o status no workflow, para que a pessoa atribuída 
 
 **Test 7: Logic Card**
 
-**When:** **Assignee is:** Amier Haider
+**When:** **Assignee is:** Responsável pela receção
 
 **And:** Docfield **total\_amount** is **Greater then 500**
 
-**Then:** **Assign document to:** Asad Usman Khan
+**Then:** **Assign document to:** Responsável pela aprovação
 
 **Change Status to:** Pending Approval
 
-<figure><img src="../../.gitbook/assets/workflow_test7_status_update.png" alt="Workflow Test 7 Status Update"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test7_status_update-pt.png" alt="Ação de alteração de estado num rascunho de fluxo."><figcaption><p>Ação de alteração de estado num rascunho de fluxo.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -116,9 +116,9 @@ O Workflow com esses logic cards foi projetado para verificar automaticamente se
 
 Você pode atribuir a esses documentos um status específico ou atribuí-los a um colaborador específico.
 
-<div align="center"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Workflow Test 9 Match Check Overview"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_overview-pt.png" alt="Rascunho de fluxo com condição de comparação com uma ordem de compra."><figcaption><p>Rascunho de fluxo com condição de comparação com uma ordem de compra.</p></figcaption></figure></div>
 
-<figure><img src="../../.gitbook/assets/workflow_test9_match_check_detail.png" alt="Workflow Test 9 Match Check Detail"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_detail-pt.png" alt="Seleção de condições de comparação com uma ordem de compra. Mesa significa tabela de dados e Cessionário indica a atribuição a um responsável."><figcaption><p>Seleção de condições de comparação com uma ordem de compra. Mesa significa tabela de dados e Cessionário indica a atribuição a um responsável.</p></figcaption></figure>
 
 **Logic Card: Quantity or Unit Price or Discount Match**
 
@@ -128,9 +128,9 @@ Este logic card foi projetado para verificar automaticamente se a quantidade, o 
 
 A lógica é ativada quando qualquer uma das seguintes condições é atendida em uma confirmação de pedido em relação ao pedido de compra original:
 
-* **Quantity**: A quantidade de itens pedidos corresponde à quantidade confirmada pelo fornecedor.
-* **Unit Price**: O preço por item acordado corresponde à confirmação do fornecedor.
-* **Discount**: Quaisquer descontos aplicados são consistentes entre o pedido de compra e a confirmação de pedido.
+* **Quantidade**: A quantidade de itens pedidos corresponde à quantidade confirmada pelo fornecedor.
+* **Preço unitário**: O preço por item acordado corresponde à confirmação do fornecedor.
+* **Desconto**: Quaisquer descontos aplicados são consistentes entre o pedido de compra e a confirmação de pedido.
 * **Define Comparison Parameters**: Configure os campos específicos (quantidade, preço unitário, desconto) que o logic card verificará para uma correspondência.
 * **Automate Verification**: Configure o sistema para comparar automaticamente esses detalhes ao receber uma confirmação de pedido.
 * **Customize Alerts**: Decida sobre o fluxo de trabalho para lidar com discrepâncias, incluindo a personalização de alertas para revisão manual.
@@ -166,3 +166,5 @@ Após calcular as sobretaxas, você pode querer notificar um usuário específic
 <figure><img src="../../.gitbook/assets/workflow_notification_card_overview.png" alt="Workflow Notification Card"><figcaption></figcaption></figure>
 
 Dependendo das configurações, o usuário recebe uma nova tarefa atribuída no DocBits e, opcionalmente, um e-mail para notificá-lo sobre sua nova tarefa.
+
+As imagens atualizadas mostram rascunhos de condições e ações sem guardar. Adapte os perfis e as condições à sua organização.

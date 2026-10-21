@@ -40,25 +40,25 @@ Escolha a perspectiva certa para sua análise. Cada tipo de fluxo oferece uma pe
 
 Use o seletor **Tipo de Fluxo** na parte superior do painel para alternar entre as perspectivas.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_types.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_types-pt.png" alt="Vistas de processamento, interações dos utilizadores e estados."><figcaption><p>Vistas de processamento, interações dos utilizadores e estados.</p></figcaption></figure>
 
 ### Fluxo de Status
 
 Acompanha a jornada do documento de **Novo** a **Exportado** — útil para análise de ciclo de vida de ponta a ponta.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_status_flow.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_status_flow-pt.png" alt="Vista dos estados na análise. Correndo indica processamento em execução."><figcaption><p>Vista dos estados na análise. Correndo indica processamento em execução.</p></figcaption></figure>
 
 ### Fluxo de Processamento
 
 Analisa o desempenho em todos os **módulos técnicos de processamento** (OCR, classificação, extração, validação) — útil para identificar gargalos do lado do sistema.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_processing_flow.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_processing_flow-pt.png" alt="Vista do processo com as etapas agregadas."><figcaption><p>Vista do processo com as etapas agregadas.</p></figcaption></figure>
 
 ### Fluxo de Interação do Usuário
 
 Foca nos **pontos de contato humano** — tempo de espera na fila, validação manual, revisão e aprovação — útil para identificar gargalos de fluxo de trabalho e de pessoal.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_user_interaction_flow.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_user_interaction_flow-pt.png" alt="Vista agregada das interações dos utilizadores."><figcaption><p>Vista agregada das interações dos utilizadores.</p></figcaption></figure>
 
 ## Opções de Filtro
 
@@ -68,13 +68,13 @@ O painel suporta filtragem multidimensional poderosa. Todos os gráficos, cartõ
 
 Localize instantaneamente qualquer documento por **nome** ou **ID exclusivo**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_search.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_search-pt.png" alt="Análise filtrada pela etapa de validação."><figcaption><p>Análise filtrada pela etapa de validação.</p></figcaption></figure>
 
 ### Etapas do Fluxo
 
 Selecione etapas específicas para focar sua análise. Ativar/desativar etapas também recalcula as métricas de tempo nos demais componentes do painel.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_flow_steps.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_flow_steps-pt.png" alt="Seleção de etapas no filtro da análise."><figcaption><p>Seleção de etapas no filtro da análise.</p></figcaption></figure>
 
 ### Suborganização, Tipo de Documento, Fornecedor, Grupo
 
@@ -85,7 +85,7 @@ Compare o desempenho entre:
 * **Fornecedores** — para identificar quais fornecedores causam os maiores tempos de processamento
 * **Grupos** — para comparar o desempenho entre grupos de usuários atribuídos (disponível para os tipos de fluxo **Status** e **Interação do Usuário**)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_dimensions.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_dimensions-pt.png" alt="Filtros de análise por etapa, suborganização, tipo de documento e fornecedor."><figcaption><p>Filtros de análise por etapa, suborganização, tipo de documento e fornecedor.</p></figcaption></figure>
 
 <mark style="color:red;">**Observação**</mark>: O filtro **Grupo** aplica-se apenas a documentos que estão **atribuídos diretamente a um grupo**. Documentos atribuídos a um usuário individual — mesmo que esse usuário seja membro de um grupo — **não** são incluídos nos resultados do filtro de grupo.
 
@@ -95,13 +95,13 @@ Ativado por padrão — apenas os documentos que concluíram a exportação são
 
 <mark style="color:red;">**Observação**</mark>: Desativar essa opção pode resultar em valores médios imprecisos, pois os documentos que ainda não foram concluídos também são incluídos nos cálculos.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_only_exported_toggle.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_only_exported_toggle-pt.png" alt="Opção para analisar apenas documentos exportados."><figcaption><p>Opção para analisar apenas documentos exportados.</p></figcaption></figure>
 
 ### Intervalo de Tempo
 
 Analise qualquer período, de **7 dias** até **um ano completo**, ou defina um **intervalo personalizado** usando o seletor de datas.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_time_range.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_time_range-pt.png" alt="Opção de período personalizado nos filtros da análise."><figcaption><p>Opção de período personalizado nos filtros da análise.</p></figcaption></figure>
 
 ## Cartões de Etapas do Fluxo
 
@@ -115,7 +115,7 @@ Cada cartão exibe:
 
 Um seletor **Selecionar Todos** no cabeçalho permite incluir ou excluir todas as etapas de uma só vez.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_steps_card.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_steps_card-pt.png" alt="Cartões das etapas com tempos de processamento agregados."><figcaption><p>Cartões das etapas com tempos de processamento agregados.</p></figcaption></figure>
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
 
@@ -127,7 +127,7 @@ O seletor **Comparar com a Média Global** controla se a Média Global DocBits �
 * **Laranja** — seu Tempo Médio está até **+25%** acima da Média Global
 * **Vermelho** — seu Tempo Médio está **+25%** ou mais acima da Média Global
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_global_average_comparison.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_global_average_comparison-pt.png" alt="Duração média comparada com a média global."><figcaption><p>Duração média comparada com a média global.</p></figcaption></figure>
 
 ## Gráfico de Tempo Médio
 
@@ -179,7 +179,7 @@ A Tabela de Dados fornece acesso completo a todos os dados de linha subjacentes 
 * **Classifique** clicando nos cabeçalhos das colunas e **reordene** colunas arrastando-as e soltando-as.
 * **Baixar CSV** por meio do botão no cabeçalho do cartão — apenas as colunas atualmente visíveis são exportadas.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_data_table-pt.png" alt="Tabela de análise com rótulos em português; valores dos documentos ocultos. A etiqueta Mesa refere-se à tabela de dados, não a mobiliário."><figcaption><p>Tabela de análise com rótulos em português; valores dos documentos ocultos. A etiqueta Mesa refere-se à tabela de dados, não a mobiliário.</p></figcaption></figure>
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 

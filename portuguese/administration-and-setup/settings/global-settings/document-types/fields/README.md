@@ -1,27 +1,20 @@
-# Fields
+# Campos
 
-<figure><img src="../../../../../.gitbook/assets/docbits_fields_overview.png" alt="Docbits Fields Overview"><figcaption></figcaption></figure>
+Os campos definem os dados recolhidos para um tipo de documento e a forma de os verificar. Abra o tipo de documento nas definições e consulte os respetivos campos.
 
-## Overview
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_fields_overview-pt.png" alt="Campos do tipo de documento Fatura. PLACAR DA PARTIDA significa aqui limite de correspondência (Match Score), não um resultado desportivo."><figcaption><p>Campos do tipo de documento Fatura. PLACAR DA PARTIDA significa aqui limite de correspondência (Match Score), não um resultado desportivo.</p></figcaption></figure>
 
-The Fields setting provides a user interface where administrators can manage the properties and behavior of individual data fields associated with a document type. Each field can be adjusted to optimize the accuracy and efficiency of data capture and validation.
+## Propriedades e reconhecimento
 
-{% hint style="info" %}
-[Fields with Charges](new-fields-with-charges.md)
-{% endhint %}
+* **Obrigatório** exige um valor para a validação.
+* **Apenas leitura** impede a edição; **Oculto** retira o campo da vista habitual.
+* A **validação forçada** exige uma verificação explícita do campo. Não cria regras de comparação nem expressões regulares; configure separadamente as regras de validação personalizadas.
+* **OCR** define um limite numérico de confiança do reconhecimento. Não é um controlo para ativar ou desativar OCR.
+* **Match Score** define um limite numérico de correspondência. Não é um texto de referência nem uma lista de valores.
+* A opção **IA** controla a extração solicitada para o campo.
 
-## Key Features and Options
+Pesquise o campo pelo nome e verifique a respetiva linha antes de alterar propriedades. Pode organizar grupos, adicionar campos e abrir opções de fórmulas ou dados mestre. As ações disponíveis dependem do campo e das permissões; a eliminação de campos predefinidos pode ser limitada.
 
-1. **Fields Configuration**:
-   * **Field Names**: Lists the names of the fields, typically corresponding to the data elements within the document, like "Invoice Number" or "Purchase Order Date".
-   * **Required**: Administrators can mark fields as required, making sure that data must be entered or captured for these fields to complete the document processing.
-   * **Read Only**: Fields can be set to read-only to prevent modification after data capture or during certain stages of document processing.
-   * **Hidden**: Fields can be hidden from view in the user interface, useful for sensitive information or for simplifying user workflows.
-2. **Advanced Settings**:
-   * **Force Validation**: Ensures that data entered into a field passes certain validation rules before being accepted.
-   * **OCR (Optical Character Recognition)**: This toggle can be switched on to enable OCR processing for a specific field, useful for automated data extraction from scanned or digital documents.
-   * **Match Score**: Administrators can define a match score, a threshold used to determine the confidence level of data recognition or matching, impacting how data validation and quality checks are performed.
-3. **Action Buttons**:
-   * **Create New Field**: Allows adding new fields to the document type.
-   * **Edit Icons**: Each field has an edit icon that allows administrators to further configure field-specific settings, such as data type, default values, or connected business logic.
-   * **Save Settings**: Commits the changes made to the field configuration
+Guarde apenas as alterações pretendidas e verifique a validação com documentos representativos. As imagens não comprovam alterações guardadas.
+
+Consulte as [propriedades dos campos](configuring-field-properties-1.md), [validação e Match Score](setting-validation-and-match-score.md) e os [campos com encargos adicionais](new-fields-with-charges.md).

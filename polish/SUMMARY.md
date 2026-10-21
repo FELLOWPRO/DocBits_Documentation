@@ -40,16 +40,6 @@
     * [Przewodnik Diagnostyczny Eksportu M3 API](overview-and-basics/faq/infor-m3-m3-integration/m3-api-export-diagnostic-guide.md)
   * [Obowiązkowe kanały PDP/PPF – PEPPOL wyłącznie jako transport w francuskim e-fakturowaniu 2026](overview-and-basics/faq/mandatory-pdp-ppf-channels-peppol-as-transport-only-for-frances-2026-e-invoicing.md)
 
-## Bezpieczeństwo <a href="#security" id="security"></a>
-
-* [FAQ Bezpieczeństwo i Zgodność](security/security-and-compliance-faq.md)
-* [Bezpieczne przechowywanie danych uwierzytelniających](security/secure-storage-of-credentials.md)
-* [Szyfrowanie danych w spoczynku](security/encryption-at-rest.md)
-* [Pliki cookie i pamięć przeglądarki](security/cookies-and-browser-storage.md)
-* [Zarządzanie podatnościami](security/vulnerability-management.md)
-* [Pozostałe środki bezpieczeństwa](security/other-security-controls.md)
-* [Uwierzytelnianie dwuskładnikowe (2FA)](security/two-factor-authentication.md)
-
 ## Sekcja użytkowników końcowych i partnerów <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [Sekcja użytkownika końcowego](end-user-and-partner-section/end-user-section/README.md)
@@ -902,3 +892,13 @@
 * [Łączenie DocBits z Power BI](advanced-functions-and-tools/powerbi.md)
   * [Połączenie przez ClickHouse](advanced-functions-and-tools/powerbi/powerbi.md)
   * [Połączenie przez bazę danych tylko do odczytu](advanced-functions-and-tools/powerbi/connect-via-read-only-database.md)
+
+## Bezpieczeństwo <a href="#security" id="security"></a>
+
+* [FAQ Bezpieczeństwo i Zgodność](security/security-and-compliance-faq.md)
+* [Bezpieczne przechowywanie danych uwierzytelniających](security/secure-storage-of-credentials.md)
+* [Szyfrowanie danych w spoczynku](security/encryption-at-rest.md)
+* [Pliki cookie i pamięć przeglądarki](security/cookies-and-browser-storage.md)
+* [Zarządzanie podatnościami](security/vulnerability-management.md)
+* [Pozostałe środki bezpieczeństwa](security/other-security-controls.md)
+* [Uwierzytelnianie dwuskładnikowe (2FA)](security/two-factor-authentication.md)

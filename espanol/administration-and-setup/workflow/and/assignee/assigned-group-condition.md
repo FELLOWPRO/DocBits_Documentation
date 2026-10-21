@@ -37,3 +37,15 @@ Esta tarjeta de flujo de trabajo ejecuta operaciones en función de si una tarea
 
 **Conclusión:**\
 La tarjeta de flujo de trabajo "Assigned Group Condition" es esencial para gestionar flujos de trabajo de documentos y tareas que dependen de las asignaciones de grupo. Al permitir condiciones basadas en si una tarea o documento está asignado a grupos específicos, garantiza que los flujos de trabajo solo se disparen por las interacciones de grupo adecuadas, mejorando la responsabilidad y la gestión de tareas entre equipos.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Aplique la misma regla a dos equipos de revisión.
+
+**Configuración:** Seleccione uno de los grupos configurados `Demo Finance` y `Demo Procurement`.
+
+**Resultado esperado y contraejemplo:** Se aprueba un documento asignado a cualquiera de los grupos seleccionados. Un documento asignado únicamente a `Demo Support` falla.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

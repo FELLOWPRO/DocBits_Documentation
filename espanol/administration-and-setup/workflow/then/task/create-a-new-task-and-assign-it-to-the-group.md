@@ -45,7 +45,7 @@ La tarjeta de flujo de trabajo **"Crear tarea de grupo o notificación"** facili
 ## **Funcionalidad:**
 
 * **Evaluación de la condición**:\
-  Ejecuta la acción de la tarjeta solo cuando las secciones **"Donde"** y **"Y"** son verdaderas.
+  Ejecuta la acción de la tarjeta solo cuando las secciones **"Cuando"** y **"Y"** son verdaderas.
 * **Creación de tarea o notificación**:
   * Se crea una tarea para el grupo seleccionado con el título, la descripción y la prioridad especificados.
   * En la versión 4, la tarjeta puede crear una notificación en lugar de una tarea.
@@ -65,3 +65,15 @@ La tarjeta de flujo de trabajo **"Crear tarea de grupo o notificación"** facili
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo **"Crear tarea de grupo o notificación"** simplifica la gestión de tareas y notificaciones dirigiéndose directamente a los grupos. Su función de asignación dinámica, posibilitada por el árbol de decisión, mejora la flexibilidad, mientras que las notificaciones por correo electrónico garantizan una comunicación oportuna. Las versiones 3 y 4 añaden funcionalidad avanzada, lo que la convierte en una herramienta versátil para una ejecución eficiente del flujo de trabajo.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Asigne a un equipo compartido una tarea de revisión concreta.
+
+**Configuración:** Seleccione el grupo `Demo Finance`, título `Review invoice`, una descripción útil y prioridad. Desactive el correo electrónico para la primera prueba.
+
+**Resultado esperado y contraejemplo:** El grupo recibe la tarea. Confirme el título y el responsable en la lista de tareas; la entrega de correo electrónico es una verificación separada cuando está habilitada.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

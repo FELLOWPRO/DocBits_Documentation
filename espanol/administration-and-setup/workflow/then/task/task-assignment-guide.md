@@ -583,7 +583,7 @@ Task created for correct person
 * Incluir detalles específicos en el título de la tarea.
 * Establecer niveles de prioridad apropiados
 * Establecer plazos realistas
-* Notificar a los cesionarios
+* Notificar a los responsables
 * Incluir enlace al documento
 * Utilice descripciones claras y prácticas
 

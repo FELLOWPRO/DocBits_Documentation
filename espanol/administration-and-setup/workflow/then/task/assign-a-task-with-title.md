@@ -40,7 +40,7 @@ La tarjeta de flujo de trabajo "Assign Task / Notification from Decision Table" 
 ## **Funcionalidad:**
 
 * **Evaluación de la condición:**\
-  La tarjeta solo ejecuta su acción si las secciones **"Donde"** y **"Y"** se evalúan como verdaderas.
+  La tarjeta solo ejecuta su acción si las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
 * **Asignación de tarea / notificación**\
   La tarjeta asigna la tarea o notificación al usuario o grupo identificado por la tabla de decisión. La tabla de decisión evalúa dinámicamente las condiciones predefinidas y devuelve el destinatario correspondiente.
 * **Notificación por correo electrónico**\
@@ -62,3 +62,15 @@ La tarjeta de flujo de trabajo "Assign Task / Notification from Decision Table" 
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo **"Asignar tarea/notificación desde la tabla de decisiones"** automatiza la asignación de tareas o notificaciones según condiciones dinámicas definidas en una tabla de decisión. La versión 3 mejora su funcionalidad al permitir a los usuarios elegir entre crear una tarea o una notificación, y garantiza que siempre se asigne el destinatario correcto. La función de notificación por correo electrónico mantiene informados a los usuarios, agilizando la comunicación y la gestión de tareas.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo usar:** Cree una tarea para el asignado devuelta por una tabla de decisiones.
+
+**Configuración:** Utilice una regla de demostración coincidente que devuelva `Demo Reviewer A`, el título `Review invoice` y la prioridad deseada.
+
+**Resultado esperado y contraejemplo:** La tarea resultante se asigna de acuerdo con el asignado devuelto. Pruebe una regla incomparable por separado e inspeccione el registro de la tarjeta.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

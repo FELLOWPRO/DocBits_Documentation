@@ -19,3 +19,15 @@ Elija **Datos del pedido** de la confirmación de pedido y un **Operador** para 
 Elija **Cualquiera/Todos** para decidir si una o todas las condiciones seleccionadas deben coincidir. Después seleccione los **Datos del pedido**, el **Operador** y los **Datos comparativos** para la comparación con la orden de compra.
 
 Para los pasos siguientes, vea [Flujo de trabajo](../..) y [Comparar con la orden de compra](.).
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Verifique la confirmación de un pedido con su orden de compra vinculada.
+
+**Configuración:** Utilice un pedido de demostración y confirmación con el mismo proveedor, referencia de artículo y valores comparados. Seleccione la dirección de comparación deseada y los campos que ofrece esta versión.
+
+**Resultado esperado y contraejemplo:** Se pasa la comparación coincidente. Cambie el valor de un elemento comparado en un caso de prueba separado y verifique que se detecte; la falta de un pedido vinculado es un problema de datos aparte.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

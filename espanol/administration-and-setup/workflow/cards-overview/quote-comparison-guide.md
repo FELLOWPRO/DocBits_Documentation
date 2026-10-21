@@ -33,3 +33,58 @@ Por ejemplo, dos líneas comparables producen resultados verdaderos y falsos par
 Utilice los ID exactos de artículos y proveedores, la fuente de precios prevista y las unidades coincidentes. Pruebe que todas las líneas coincidan, obtendrá un resultado mixto, no hay precios comparables, faltan datos de cotización y una identificación de proveedor incorrecta. Verifique tanto el resultado de la comparación como las líneas que se omitieron. Mantener la aprobación o exportación detrás de los controles comerciales que realmente se requieren; una verificación exitosa del identificador no es una validación completa de la adquisición.
 
 Consulte [Coincidencia de órdenes de compra](../and/compare-with-purchase-order/po-matching-complete-guide.md) para comparar comparaciones de órdenes de compra y [Registros de flujo de trabajo](../workflow-logs.md)] para solucionar problemas.
+
+
+
+
+
+
+<!-- workflow-card-complete-example-20261021 condition_quotes_item_number_comparison -->
+
+### Ejemplo de comparación de número de artículo
+
+**Configuración:** Prepare dos líneas de cotización comparables: el artículo del proveedor `DEMO-S1` se asigna al artículo `DEMO-I1` en ambos lados; El artículo del proveedor `DEMO-S2` tiene el artículo de documento `DEMO-I2` y el artículo de matriz `DEMO-I9`. Elija igualdad y `match_all`.
+
+**Resultado esperado y contraejemplo:** El resultado de la condición es falso con `match_all`, porque un número de artículo comparable difiere. El resultado es verdadero con `match_any`, porque el primer número de artículo coincide. La búsqueda utiliza el número de artículo del proveedor. Una entrada de matriz sin un número de artículo se omite y se registra; si ninguna línea es comparable, el resultado de la condición es falso. Un registro de intervalo de fechas por sí solo no es una condición de validez independiente.
+
+Esta es una configuración de prueba ilustrativa y el resultado esperado; no fue ejecutado. Utilice datos y destinatarios configurados en su organización de prueba.
+
+<!-- workflow-card-complete-example-20261021 condition_quote_supplier_item_number_exists -->
+
+### Ejemplo de existencia de artículo de proveedor
+
+**Configuración:** El documento tiene números de artículo de proveedor `DEMO-S1` y `DEMO-S2`; los datos cargados del precio del artículo del proveedor contienen solo `DEMO-S1`. Elija el operador de presencia y `match_all`.
+
+**Resultado esperado y contraejemplo:** El resultado de la condición es falso con `match_all` y verdadero con `match_any`. Con el operador de ausencia, la segunda línea es un resultado de ausencia positivo. La existencia no prueba que el precio del artículo, la unidad o la clasificación del proveedor sean correctos. Cargue primero los datos de cotización válidos e inspeccione los errores de datos faltantes.
+
+Esta es una configuración de prueba ilustrativa y el resultado esperado; no fue ejecutado. Utilice datos y destinatarios configurados en su organización de prueba.
+
+<!-- workflow-card-complete-example-20261021 condition_quote_price_match -->
+
+### Ejemplo de precio de proveedor
+
+**Configuración:** Para dos líneas coincidentes, elija `ManagedPrice`, igualdad y `match_all`. Los precios de los documentos son `10` y `12`; los precios gestionados correspondientes son `10` y `13`, en monedas y unidades coincidentes.
+
+**Resultado esperado y contraejemplo:** El resultado de la condición es falso con `match_all` y verdadero con `match_any`. El cambio a `LastPrice` utiliza una fuente diferente y debe probarse de forma independiente. Una línea sin un precio numérico comparable se omite y se registra; si ninguna línea es comparable, la tarjeta informa que faltan datos del documento, no igualdad.
+
+Esta es una configuración de prueba ilustrativa y el resultado esperado; no fue ejecutado. Utilice datos y destinatarios configurados en su organización de prueba.
+
+<!-- workflow-card-complete-example-20261021 condition_specify_supplier_type -->
+
+### Ejemplo de clasificación de proveedores
+
+**Configuración:** Elija el tipo de proveedor `Contract`. Prepare dos entradas de cotización-proveedor cargadas con `managed_class` igual a `contract`.
+
+**Resultado esperado y contraejemplo:** La condición es verdadera cuando cada entrada cargada tiene esa clasificación. La condición es falsa si una entrada tiene la clasificación `managed`. El valor `Nonmanaged` seleccionable se normaliza a `unmanaged` por el backend. Esta clasificación no tiene relación con una forma jurídica de proveedor. Los datos de cotización que faltan no coinciden.
+
+Esta es una configuración de prueba ilustrativa y el resultado esperado; no fue ejecutado. Utilice datos y destinatarios configurados en su organización de prueba.
+
+<!-- workflow-card-complete-example-20261021 condiiton_unit_of_measure_equal -->
+
+### Ejemplo de unidad de medida
+
+**Configuración:** Prepare líneas de oferta vinculadas con la unidad del documento `EA` y la unidad de comparación del proveedor `EA`. Seleccione igualdad y `match_all`. Mantenga la versión de tarjeta que está probando.
+
+**Resultado esperado y contraejemplo:** La condición es verdadera para unidades comparables coincidentes; una segunda fila comparable que usa `KG` en lugar de `EA` hace que la condición sea falsa con `match_all`. Las unidades de comparación que faltan se omiten y registran; si ninguno es comparable, la tarjeta informa que faltan datos. La versión 3 puede aplicar la asignación de unidades configurada, así que verifique esa asignación por separado. Los precios de igualación por sí solos no establecen unidades de igualación.
+
+Esta es una configuración de prueba ilustrativa y el resultado esperado; no fue ejecutado. Utilice datos y destinatarios configurados en su organización de prueba.

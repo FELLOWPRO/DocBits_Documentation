@@ -43,7 +43,7 @@ La tarjeta de flujo de trabajo **"Crear tarea o notificación basada en campos"*
 ## **Funcionalidad:**
 
 * **Evaluación de la condición**:\
-  La tarjeta solo ejecuta su acción si las secciones **"Donde"** y **"Y"** se evalúan como verdaderas.
+  La tarjeta solo ejecuta su acción si las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
 * **Creación de tarea o notificación**:
   * Asigna la tarea o notificación al usuario identificado en el campo del documento.
   * En la versión 3, permite crear una tarea o una notificación.
@@ -63,3 +63,15 @@ La tarjeta de flujo de trabajo **"Crear tarea o notificación basada en campos"*
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo **"Crear tarea o notificación basada en campos"** agiliza la gestión de tareas y notificaciones al asignar dinámicamente responsabilidades según los campos del documento. Su mecanismo de usuario alternativo y las opciones mejoradas de la versión 3 proporcionan flexibilidad, garantizando que las tareas o notificaciones siempre se asignen, incluso cuando los datos del documento están incompletos.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo usar:** Cree una tarea de revisión para el usuario nombrado en los datos del documento.
+
+**Configuración:** Seleccione `reviewer_name`, usuario alternativo `Demo Reviewer A`, título `Review invoice` y prioridad.
+
+**Resultado esperado y contraejemplo:** Un usuario que puede resolverse en el campo recibe la tarea. Un campo vacío o que no se puede resolver utiliza el respaldo configurado; Pruebe ambos caminos.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

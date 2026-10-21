@@ -37,7 +37,7 @@ La tarjeta de flujo de trabajo **"Crear tarea con respaldo"** garantiza una dele
 ## **Funcionalidad:**
 
 * **Evaluación de la condición**:\
-  La tarjeta se ejecuta solo si se cumplen las condiciones de las secciones **"Donde"** y **"Y"**.
+  La tarjeta se ejecuta solo si se cumplen las condiciones de las secciones **"Cuando"** y **"Y"**.
 * **Asignación de la tarea**:
   * La tarea se asigna al rol seleccionado (disponent o purchaser).
   * Si no se encuentra el rol especificado, la tarea se asigna a un usuario de la lista desplegable alternativa.
@@ -54,3 +54,13 @@ La tarjeta de flujo de trabajo **"Crear tarea con respaldo"** garantiza una dele
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo **"Crear tarea con respaldo"** garantiza una delegación de tareas fluida al integrar un mecanismo alternativo. Al asignar tareas según los roles y proporcionar una opción de usuario alternativo, mejora la fiabilidad y la flexibilidad en los procesos de gestión de tareas.
+
+<!-- workflow-card-complete-example-20261021 oc_task -->
+
+### Ejemplo de tarea de destinatario
+
+**Configuración:** Ingrese el título `Review delivery date`, una descripción que identifique el documento sintético, una prioridad, rol Comprador y usuario alternativo configurado `DEMO_REVIEWER`. Desactive la notificación por correo electrónico para esta configuración ilustrativa.
+
+**Resultado esperado y contraejemplo:** Cuando se puede resolver un comprador, la nueva tarea se asigna a ese usuario. Si el rol no se puede resolver, se utiliza el respaldo configurado. Verificar la propiedad real de la tarea; la falta de un destinatario principal no es prueba de que el usuario alternativo exista o de que se haya creado una tarea.
+
+Esta es una configuración de prueba ilustrativa y el resultado esperado; no fue ejecutado. Utilice datos y destinatarios configurados en su organización de prueba.

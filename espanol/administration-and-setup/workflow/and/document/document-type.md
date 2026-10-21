@@ -31,3 +31,15 @@ Esta tarjeta de flujo de trabajo está diseñada para evaluar si un documento co
 ## Conclusión:
 
 La tarjeta de flujo de trabajo "Document Type Comparison" es esencial para garantizar que los flujos de trabajo continúen según el tipo de documento que se está procesando. Al comparar el tipo de documento, ayuda a las organizaciones a automatizar las tareas de enrutamiento y procesamiento de documentos, garantizando que los documentos se manejen de forma adecuada según su tipo.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo usarlo:** Ejecute una verificación específica de la factura.
+
+**Configuración:** Seleccione el tipo de documento `Invoice` y el operador igual.
+
+**Resultado esperado y contraejemplo:** Se aprueba una factura. Una nota de crédito no pasa esta condición.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

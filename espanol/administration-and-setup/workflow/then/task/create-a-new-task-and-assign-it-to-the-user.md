@@ -45,7 +45,7 @@ La tarjeta de flujo de trabajo **"Crear tarea o notificación"** agiliza la gest
 ## **Funcionalidad:**
 
 * **Evaluación de la condición**:\
-  Esta tarjeta se dispara solo si se cumplen las condiciones de las secciones **"Donde"** y **"Y"**.
+  Esta tarjeta se dispara solo si se cumplen las condiciones de las secciones **"Cuando"** y **"Y"**.
 * **Creación de tarea o notificación**:
   * Versiones 2 y 3: Se crea una tarea con el título, la descripción, la prioridad y el usuario asignado especificados.
   * Versión 4: Permite crear una tarea o una notificación.
@@ -70,3 +70,15 @@ La tarjeta de flujo de trabajo **"Crear tarea o notificación"** agiliza la gest
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo **"Crear tarea o notificación"** es una herramienta versátil para gestionar tareas y notificaciones. Al admitir la asignación dinámica de usuario mediante árboles de decisión y proporcionar opciones para la creación de tareas o notificaciones, mejora la adaptabilidad del flujo de trabajo y la eficiencia de la colaboración.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo usarlo:** Proporcione a un revisor un elemento de acción explícito.
+
+**Configuración:** Seleccione `Demo Reviewer A`, título `Review invoice`, descripción y prioridad.
+
+**Resultado esperado y contraejemplo:** El usuario seleccionado recibe la nueva tarea. Confirmar el título de la tarea y el responsable; la tarea aún debe ser completada por el revisor.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

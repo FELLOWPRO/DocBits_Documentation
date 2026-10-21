@@ -43,3 +43,15 @@ Esta tarjeta de flujo de trabajo está diseñada para evaluar si un país especi
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo "Country in Field Comparison" es una herramienta esencial para automatizar procesos que dependen de reglas geográficas, como el cumplimiento de acuerdos comerciales o afiliaciones políticas. Al comparar los datos del país con regiones específicas como la Unión Europea, el espacio Schengen o NAFTA, esta tarjeta garantiza que el sistema aplique la lógica de procesamiento correcta, mejorando la eficiencia y garantizando una ejecución precisa del flujo de trabajo según las condiciones geográficas.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Separe los documentos por región del país.
+
+**Configuración:** Elija un campo de país de documento que contenga `DE`, seleccione la región que contenga Alemania y establezca la opción de continuación en `true`.
+
+**Resultado esperado y contraejemplo:** El código de país alemán satisface la región seleccionada. Un código fuera de esa región no; Pruebe la opción de continuación por separado cuando necesite la rama inversa.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

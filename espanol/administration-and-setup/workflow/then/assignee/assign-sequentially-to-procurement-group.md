@@ -33,3 +33,15 @@ La tarjeta de flujo de trabajo "**Asignar el documento secuencialmente al grupo 
 ## **Conclusión**
 
 La tarjeta de flujo de trabajo "Assign the Document Sequentially to the Procurement Group" garantiza una asignación eficaz de documentos a los grupos de compras según la prioridad. Esto mejora la eficiencia organizativa y la gestión de tareas.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Priorizar un grupo de adquisiciones dentro de la revisión de documentos.
+
+**Configuración:** Seleccione `Demo Procurement` y prioridad `10`.
+
+**Resultado esperado y contraejemplo:** El documento recibe la asignación del grupo de adquisiciones con prioridad `10`. Compruebe que las tareas posteriores utilicen las prioridades numéricas más altas previstas.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

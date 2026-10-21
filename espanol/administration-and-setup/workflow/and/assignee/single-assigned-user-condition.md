@@ -36,3 +36,15 @@ Esta tarjeta de flujo de trabajo facilita operaciones basadas en la asignación 
 #### Conclusión
 
 La tarjeta de flujo de trabajo "Single Assigned User Condition" es esencial para una gestión precisa de documentos y tareas específica por usuario dentro de un sistema ERP. Simplifica los flujos de trabajo centrándose en asignaciones de usuario individuales, garantizando así que las acciones solo se ejecuten cuando corresponda, según el rol y las responsabilidades del usuario. Documentar claramente esta tarjeta ayudará a los usuarios a comprender su aplicación, permitiéndoles implementarla y gestionarla de forma eficaz en sus operaciones diarias. Esta documentación garantiza que todos los posibles usuarios puedan captar fácilmente el propósito de la tarjeta e integrarla sin problemas en sus flujos de trabajo.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Manejar la cola de un revisor en particular.
+
+**Configuración:** Seleccione el operador igual y `Demo Reviewer A`.
+
+**Resultado esperado y contraejemplo:** Pasa un documento asignado a ese usuario; otro usuario asignado falla.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

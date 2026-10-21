@@ -74,7 +74,7 @@ Utilice estas tarjetas para comparar un artículo con los datos de precios cotiz
 
 ## Responsable
 
-Utilice **Responsable** cuando la condición dependa del usuario o grupo asignado. Elija si comparar con un usuario o grupo o un conjunto seleccionado. Consulte [Cesionario](assignee).
+Utilice **Responsable** cuando la condición dependa del usuario o grupo asignado. Elija si comparar con un usuario o grupo o un conjunto seleccionado. Consulte [Responsable](assignee).
 
 <figure><img src="../../../.gitbook/assets/prior-u043-es.png" alt="Categoría de condiciones sobre asignaciones."><figcaption><p>Categoría de condiciones sobre asignaciones.</p></figcaption></figure>
 

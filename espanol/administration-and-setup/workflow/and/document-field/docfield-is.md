@@ -1,4 +1,4 @@
-# Estado del campo de documento
+# Comparar un campo de documento con un valor de referencia
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f38fe175443d-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
@@ -37,3 +37,15 @@ Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones compa
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo "DocField Comparison Validation" es una herramienta robusta para el procesamiento dinámico de documentos. Al automatizar acciones según las comparaciones de campos, esta tarjeta agiliza los flujos de trabajo, mejora la precisión y facilita la toma de decisiones basada en datos.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Revisar las facturas que superen un monto definido.
+
+**Configuración:** Seleccionar campo numérico `net_total`, operador `>` y valor de referencia `1000`.
+
+**Resultado esperado y contraejemplo:** Pasa un valor de `1200`. `1000` y `900` fallan porque la comparación es estrictamente mayor que.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

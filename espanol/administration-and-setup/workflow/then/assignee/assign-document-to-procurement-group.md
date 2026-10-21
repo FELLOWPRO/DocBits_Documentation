@@ -15,7 +15,7 @@ La tarjeta de flujo de trabajo **"Assign to Procurement Group"** se utiliza para
 ## **Funcionalidad:**
 
 * **Evaluación de la condición:**\
-  La tarjeta solo ejecuta su acción si las secciones **"Donde"** y **"Y"** se evalúan como verdaderas.
+  La tarjeta solo ejecuta su acción si las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
 * **Ejecución de la acción:**\
   Si ambas condiciones son verdaderas, el documento se asigna al grupo de compras especificado. Si cualquiera de las condiciones es falsa, no se realiza ninguna acción y el documento permanece sin asignar.
 
@@ -26,3 +26,15 @@ La tarjeta de flujo de trabajo **"Assign to Procurement Group"** se utiliza para
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo **"Assign to Procurement Group"** proporciona una forma sencilla pero eficaz de garantizar que los documentos se asignen automáticamente al equipo de compras correcto para su procesamiento adicional.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Enviar una excepción de compra a su grupo de adquisiciones.
+
+**Configuración:** Seleccione el grupo configurado `Demo Procurement`.
+
+**Resultado esperado y contraejemplo:** El documento se asigna a ese grupo de adquisiciones. No se debe suponer que un grupo ordinario con un nombre similar sea el mismo objetivo configurado.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

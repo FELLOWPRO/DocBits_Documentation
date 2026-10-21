@@ -18,7 +18,7 @@ La tarjeta de flujo de trabajo **"Asignar usuario desde el campo con respaldo"**
 ## **Funcionalidad:**
 
 * **Evaluación de la condición:**\
-  La tarjeta solo ejecuta su acción si las secciones **"Donde"** y **"Y"** se evalúan como verdaderas.
+  La tarjeta solo ejecuta su acción si las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
 * **Asignación de usuario basada en campo:**\
   La tarjeta primero intenta asignar la tarea o acción al usuario identificado en el **Nombre del campo**.
 * **Asignación de usuario alternativo:**\
@@ -34,3 +34,15 @@ La tarjeta de flujo de trabajo **"Asignar usuario desde el campo con respaldo"**
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo **"Asignar usuario desde el campo con respaldo"** garantiza que una tarea o acción siempre se asigne a un usuario válido. Si el usuario del campo del documento no está disponible, el usuario alternativo se asigna automáticamente, proporcionando flexibilidad y garantizando la finalización de la tarea.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Asigne el revisor nombrado según los datos del documento.
+
+**Configuración:** Seleccione el campo `reviewer_name` y el usuario alternativo `Demo Reviewer A`. Proporcione un nombre de usuario de demostración que se pueda resolver en la primera prueba.
+
+**Resultado esperado y contraejemplo:** Un valor de campo válido selecciona ese usuario. Un valor vacío o irresoluble utiliza el respaldo configurado; verificar ambos casos.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

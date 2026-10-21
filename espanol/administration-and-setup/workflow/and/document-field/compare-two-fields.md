@@ -42,3 +42,15 @@ Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones compa
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo "Compare Two Fields" es una herramienta esencial para comparar datos entre campos dentro de los documentos. Al automatizar acciones según las comparaciones de campos, esta tarjeta ayuda a optimizar la toma de decisiones, facilita la validación de datos y mejora la automatización del flujo de trabajo.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Compruebe que una referencia copiada sea igual a la referencia original.
+
+**Configuración:** Seleccione los campos de texto `purchase_order_number` y `confirmed_order_number` y el operador igual.
+
+**Resultado esperado y contraejemplo:** Los valores `PO-DEMO-001` y `PO-DEMO-001` pasan. Un segundo valor de `PO-DEMO-002` falla.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

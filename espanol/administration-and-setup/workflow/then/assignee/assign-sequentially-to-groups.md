@@ -31,3 +31,15 @@ La tarjeta de flujo de trabajo "**Asignar el documento secuencialmente a los gru
 ## **Conclusión**
 
 La tarjeta de flujo de trabajo "Assign the Document Sequentially to Groups" garantiza una asignación eficiente de documentos a uno o varios grupos según la prioridad. Esta función facilita un procesamiento de documentos flexible y organizado entre varios equipos o departamentos.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Priorizar la asignación de documentos a los equipos de revisión.
+
+**Configuración:** Seleccione los grupos de demostración configurados y establezca la prioridad requerida, por ejemplo `10`.
+
+**Resultado esperado y contraejemplo:** El documento recibe las asignaciones del grupo seleccionado con esa prioridad. Pruebe una segunda prioridad por separado cuando los grupos deban ocupar diferentes etapas.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

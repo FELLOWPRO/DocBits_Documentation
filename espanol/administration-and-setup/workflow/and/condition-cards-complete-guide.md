@@ -427,7 +427,7 @@ YES: Delivery date acceptable ✅
 
 ## Condiciones de lógica
 
-### Tarjeta: CONDITION\_DECISION\_TREE\_DATA / Devoluciones de Tabla de Decisión
+### Tarjeta: CONDITION\_DECISION\_TREE\_DATA / Resultados de la tabla de decisiones
 
 #### Propósito
 
@@ -767,3 +767,23 @@ SOME FALSE → Stop
 * **CONDITION\_DOC\_FIELD\_CONTAINS** - Comprobación del contenido de un campo
 * **CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES** - Comparación de campos
 * **CONDITION\_CHECKBOX\_IS** - Comprobación de casilla de verificación
+
+<!-- workflow-card-complete-example-20261021 condition_purchase_order_import -->
+
+### Ejemplo de activación de importación de orden de compra
+
+**Configuración:** En Cuándo, seleccione el evento de importación de nueva orden de compra (`wf_new_purchase_order`) y deje el evento de actualización (`wf_updated_purchase_order`) sin seleccionar. Configure acciones posteriores para este contexto de flujo de trabajo independiente del documento.
+
+**Resultado esperado y contraejemplo:** Una ejecución desencadenada por una orden de compra recién importada satisface esta condición. Una ejecución desencadenada únicamente por una actualización no lo hace. Seleccionar ambos eventos permite cualquiera de los eventos. Esto verifica la información del desencadenador del flujo de trabajo, no si una factura contiene actualmente un número de orden de compra.
+
+Esta es una configuración de prueba ilustrativa y el resultado esperado; no fue ejecutado. Utilice datos y destinatarios configurados en su organización de prueba.
+
+<!-- workflow-card-complete-example-20261021 condition_supplier_status_is_isnot -->
+
+### Ejemplo de activador de cambio de estado de proveedor
+
+**Configuración:** En Cuándo, elija el operador `is` y un estado objetivo realmente ofrecido en su organización. Llame a ese estado seleccionado A en este ejemplo. Deje otro estado B disponible sin seleccionar.
+
+**Resultado esperado y contraejemplo:** La condición es verdadera para un evento de cambio de estado de proveedor cuyo nuevo estado es A; es falso para un evento cuyo nuevo estado es B. Con el operador `is not`, esos resultados se invierten. Este es un desencadenador de evento basado en información de ejecución del flujo de trabajo, no una verificación general del estado del proveedor en una factura. Confirme el evento real y el estado seleccionado en el registro.
+
+Esta es una configuración de prueba ilustrativa y el resultado esperado; no fue ejecutado. Utilice datos y destinatarios configurados en su organización de prueba.

@@ -104,3 +104,38 @@ Seleccionar el evento Webhook no crea un punto final de webhook público ni su a
 ## Probar y diagnosticar
 
 Valide el gráfico, pruebe cada rama con información representativa e inspeccione los [Registros de flujo de trabajo](../workflow-logs.md). Incluya etiquetas faltantes, JSON no válido, tipos de variables incorrectos, límites numéricos y condiciones falsas. Una prueba sin documento no puede probar una acción dependiente de un documento. Vuelva a verificar la versión de la tarjeta guardada y el estado habilitado antes de confiar en la ejecución automática.
+
+<!-- workflow-card-logic-examples-20261021 -->
+
+## Ejemplos resueltos para cada tarjeta lógica.
+
+Estas son entradas ilustrativas y resultados esperados para la versión 2. Utilice tarjetas de variables de organización solo cuando el Generador avanzado exponga sus plantillas.
+
+| tarjeta | Configuración de ejemplo | Resultado esperado y contraejemplo. |
+| --- | --- | --- |
+| `ACTION_LOGIC_SET_TEXT_VAR` | Establezca la variable de texto de la organización `routing_label` en `review`. | La variable compartida contiene `review`. Un flujo de trabajo posterior puede leer la misma variable de organización. |
+| `ACTION_LOGIC_SET_NUMBER_VAR` | Establezca la variable numérica `approval_limit` en `1000.50`. | Almacena numérico `1000.5`. El texto `EUR 1000,50` no es una entrada numérica válida. |
+| `ACTION_LOGIC_CALC_NUMBER` | Almacene la expresión `(100 + 20) / 2` en la variable numérica `calculated_limit`. | El resultado es `60`. Un nombre de campo de documento o una división por cero no son un sustituto válido. |
+| `ACTION_LOGIC_SET_BOOLEAN_VAR` | Establezca la variable Sí/No `review_required` en el booleano ofrecido `true`. | La bandera de la organización es cierta. Utilice el valor booleano `false` en un caso separado para borrarlo. |
+| `ACTION_LOGIC_INVERT_BOOLEAN` | Comience con la variable de organización `demo_flag` igual a `true`. | Una ejecución lo convierte en `false`. La ejecución repetida lo convierte en `true`, por lo que la ejecución repetida no es idempotente. |
+| `ACTION_LOGIC_CREATE_TEXT_TAG` | Cree la etiqueta de ejecución `raw_amount` con el texto `125.50`. | La etiqueta contiene ese texto en esta ejecución; no es una nueva variable de organización ni un campo de documento. |
+| `ACTION_LOGIC_CONVERT_TO_NUMBER` | Convierta la etiqueta de entrada `raw_amount`, que contiene `125.50`, en la etiqueta de salida `amount_number`. | La salida es numérica `125.5`. `EUR 125,50` produce un error de conversión. |
+| `ACTION_LOGIC_CONVERT_TO_TEXT` | Convierta la etiqueta numérica `amount_number` que contiene `125.5` a `amount_text`. | La salida es texto `125.5`; no está localizado como un importe de moneda. |
+| `ACTION_LOGIC_CONVERT_TO_BOOLEAN` | Convierta una etiqueta de entrada numérica que contenga `1` en una etiqueta de salida `has_value`. | El resultado es verdadero. El numérico `0` produce falso. |
+| `ACTION_LOGIC_JSON_TO_NUMBER` | Cree la etiqueta de origen `payload` con `{"invoice":{"amount":"125.50"}}`; lea la ruta `invoice.amount` a `amount_number`. | La salida es numérica `125.5`. Una ruta ausente es un error, no un cero válido. |
+| `ACTION_LOGIC_JSON_TO_TEXT` | Utilice la etiqueta de origen `payload` que contenga `{"invoice":{"status":"review"}}` y la ruta `invoice.status`. | La etiqueta de salida contiene texto `review`. |
+| `ACTION_LOGIC_JSON_TO_BOOLEAN` | Utilice la etiqueta de origen `payload` que contenga `{"invoice":{"approved":false}}` y la ruta `invoice.approved`. | La salida es booleana falsa. Una ruta faltante no es lo mismo que una falsa almacenada. |
+| `ACTION_LOGIC_JSON_SET_NUMBER` | Utilice la etiqueta JSON existente `payload` que contenga `{"invoice":{}}`; establezca `invoice.total` en `125.5`. | La etiqueta contiene un total numérico JSON, no una cadena numérica entre comillas. |
+| `ACTION_LOGIC_JSON_SET_TEXT` | Utilice la etiqueta JSON existente `payload` que contenga `{"invoice":{}}`; establezca `invoice.status` en `review`. | El valor JSON almacenado es una cadena: `{"invoice":{"status":"review"}}`. |
+| `ACTION_LOGIC_JSON_SET_BOOLEAN` | Utilice la etiqueta JSON existente `payload` que contenga `{"invoice":{}}`; establezca `invoice.approved` con el texto `true`. | El valor JSON almacenado es booleano verdadero. Utilice `false` para borrarlo. |
+| `ACTION_LOGIC_JSON_SET_JSON` | Utilice la etiqueta JSON existente `payload` que contenga `{"invoice":{}}`; establezca `invoice.metadata` en JSON válido `{"source":"demo"}`. | El valor insertado es un objeto. Se debe informar el JSON no válido, no almacenarlo como una actualización de objeto exitosa. |
+| `CONDITION_LOGIC_VALUE_EQUALS` | Cree la etiqueta `route` con el texto `review` y compárela con `review`. | Pasa. La comparación con `Review` falla porque la comparación distingue entre mayúsculas y minúsculas. |
+| `CONDITION_LOGIC_BOOLEAN_IS` | Utilice la etiqueta `review_required` que contenga booleano real `true`. | Pasa; falso o una etiqueta faltante no establece un resultado verdadero. |
+| `CONDITION_LOGIC_TEXT_CONTAINS` | Utilice la etiqueta `note` con el texto `manual review` y busque `review`. | Pasa. La búsqueda de `REVIEW` mayúscula falla. Una cadena de búsqueda vacía coincide y debe evitarse a menos que sea así. |
+| `CONDITION_LOGIC_NUMBER_LESS` | Utilice la etiqueta numérica `amount` igual a `50` y el valor de comparación `100`. | Pasa. Un valor de `100` no supera la estricta comparación menor que. |
+| `CONDITION_LOGIC_NUMBER_GREATER` | Utilice la etiqueta numérica `amount` igual a `125` y el valor de comparación `100`. | Pasa. `100` falla en la comparación estricta mayor que. |
+| `CONDITION_LOGIC_EXPRESSION` | Seleccione valor1 `120`, operador `>` y valor2 `100`. | La comparación numérica pasa. Utilice `80` como valor1 para una rama falsa; Esta no es una expresión de Python de forma libre. |
+| `CONDITION_LOGIC_VAR_CHANGED` | Seleccione una variable de organización cuyo valor anterior sea `new` y el valor actual proporcionado sea `review`. | El evento de valor cambiado coincide. Repetir `review` ya que el valor anterior y el actual no coinciden. |
+| `CONDITION_LOGIC_WEBHOOK_EVENT` | Seleccione el nombre del evento `invoice.ready` y proporcione un evento de integración configurado con la carga útil `{"event":"invoice.ready"}`. | Coincide. `{"event":"invoice.updated"}` y ningún evento no coincide. La tarjeta no crea un punto final de webhook. |
+
+La acción opcional de referencia de documento `ACTION_LOGIC_SET_DOCUMENT_VAR` no tiene una plantilla inicial en la fuente marcada. Si su administrador proporciona una plantilla compatible, seleccione una variable de documento y ejecútela con un documento de demostración actual: almacena ese ID de documento. Sin documento reporta `NO_DOCUMENT`. No la trate como una tarjeta disponible simplemente porque la implementación existe.

@@ -41,3 +41,15 @@ Esta tarjeta de flujo de trabajo está diseñada para evaluar si un país especi
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo "Country in Field Comparison with List" es una herramienta valiosa para automatizar acciones según si un país forma parte de un grupo predefinido. Al comparar los datos del país con una lista de países permitidos o restringidos, esta tarjeta mejora la eficiencia del flujo de trabajo y garantiza que los procesos del sistema sigan las reglas geográficas correctas.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Enrutar facturas de dos países específicos.
+
+**Configuración:** Seleccione el campo de país, es uno de, códigos de país `DE` y `FR`, y continuación `true`.
+
+**Resultado esperado y contraejemplo:** `DE` pasa; `US` no cumple con la lista de países seleccionados.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

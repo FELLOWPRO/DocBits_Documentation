@@ -33,3 +33,15 @@ Esta tarjeta de flujo de trabajo evalúa si un documento forma parte de una subo
 ## Conclusión:
 
 La tarjeta de flujo de trabajo "Document in Sub-organization" es una herramienta útil para automatizar acciones según si un documento pertenece a una suborganización particular. Al garantizar que los documentos se procesen según las reglas específicas de la suborganización, esta tarjeta mejora la eficiencia del flujo de trabajo y garantiza que las acciones se ejecuten dentro del contexto organizativo correcto.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Enrutar documentos que pertenecen a una unidad de negocio.
+
+**Configuración:** Seleccione la suborganización `Demo North` y el operador igual.
+
+**Resultado esperado y contraejemplo:** Se aprueba un documento en `Demo North`. Un documento en `Demo South` falla.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

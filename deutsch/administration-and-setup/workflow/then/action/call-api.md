@@ -55,3 +55,15 @@ Die Workflow-Karte **"Call API"** ermöglicht es Benutzern, HTTP-Anfragen direkt
 Die Workflow-Karte **"Call API"** verbessert die Workflow-Automatisierung, indem sie eine direkte Interaktion mit externen Systemen ermöglicht. Durch flexible Konfigurationen für Endpunkte, Methoden und Daten stellt sie sicher, dass Workflows nahtlos in Drittanbieter-APIs oder benutzerdefinierte Backends integriert werden können. Die Möglichkeit, API-Aufrufe bedingt auszuführen, gewährleistet Präzision und Effizienz bei der Automatisierung externer Kommunikation.
 
 ***
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Wann zu verwenden ist:** Bitten Sie einen konfigurierten externen Dienst um eine zusätzliche Validierung.
+
+**Konfiguration:** Wählen Sie den konfigurierten Demo-API-Endpunkt und die HTTP-Methode aus. Geben Sie die für diesen Endpunkt erforderlichen Parameter und den JSON-Text an.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Überprüfen Sie für eine simulierte Antwort `200` die von den folgenden Karten erwartete Antwortverarbeitung. Testen Sie auch `500`; Das Starten des Aufrufs stellt nicht sicher, dass die Geschäftsprüfung erfolgreich war.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

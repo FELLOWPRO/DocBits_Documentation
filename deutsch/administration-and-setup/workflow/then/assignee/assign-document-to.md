@@ -1,6 +1,6 @@
 # Dokument zuordnen
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-0e17d9fb5a83-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-0e17d9fb5a83-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
 ## Zweck:
 
@@ -17,7 +17,7 @@ Die Workflow-Karte **„Dokument basierend auf Entscheidungstabelle \[Benutzer/G
 
 ## Funktionalität:
 
-* **Bedingungsauswertung:** Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
+* **Bedingungsauswertung:** Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wenn“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Dynamische Dokumentzuweisung:** Das Dokument wird dem **Benutzer** oder der **Gruppe** zugewiesen, der bzw. die durch die **Entscheidungstabelle** bestimmt wird.
 
 ## Einrichtung und Konfiguration:
@@ -28,3 +28,15 @@ Die Workflow-Karte **„Dokument basierend auf Entscheidungstabelle \[Benutzer/G
 ## Fazit:
 
 Die Workflow-Karte **„Dokument basierend auf Entscheidungstabelle \[Benutzer/Gruppe] zuweisen“** bietet dynamische Möglichkeiten zur Dokumentzuweisung auf Basis von Entscheidungslogik. Dies sorgt für eine präzise und effiziente Verarbeitung, indem Dokumente automatisch an den passenden **Benutzer** oder die passende **Gruppe** geleitet werden, und steigert so die Workflow-Automatisierung.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Wählen Sie einen Dokumentverantwortlichen aus einer Entscheidungstabelle.
+
+**Konfiguration:** Wählen Sie eine Demo-Entscheidungstabelle aus, deren Übereinstimmungsregel den konfigurierten Prüfer zurückgibt, und wählen Sie den von dieser Kartenversion angebotenen Beauftragtentyp aus.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Der zurückgegebene Benutzer oder die zurückgegebene Gruppe wird zum Dokumentverantwortlichen. Ein leeres Entscheidungstabellenergebnis muss separat diagnostiziert werden.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

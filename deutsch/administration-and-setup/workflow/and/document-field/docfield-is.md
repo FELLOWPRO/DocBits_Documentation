@@ -1,4 +1,4 @@
-# Status des Dokumentfelds
+# Dokumentfeld mit Referenzwert vergleichen
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f38fe175443d-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
@@ -37,3 +37,15 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen zu automatisieren, indem sie
 ## **Fazit:**
 
 Die Workflow-Karte "DocField Comparison Validation" ist ein robustes Werkzeug für die dynamische Dokumentverarbeitung. Indem sie Aktionen auf Basis von Feldvergleichen automatisiert, optimiert diese Karte Workflows, erhöht die Genauigkeit und unterstützt datengestützte Entscheidungen.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Wann zu verwenden:** Überprüfen Sie Rechnungen über einem definierten Betrag.
+
+**Konfiguration:** Wählen Sie das numerische Feld `net_total`, den Operator `>` und den Referenzwert `1000`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein Wert von `1200` gilt. `1000` und `900` schlagen fehl, weil der Vergleich unbedingt größer als ist.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

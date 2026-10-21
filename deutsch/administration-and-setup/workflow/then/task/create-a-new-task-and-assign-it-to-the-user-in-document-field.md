@@ -43,7 +43,7 @@ Die Workflow-Karte **„Feldbasierte Aufgabe oder Benachrichtigung erstellen“*
 ## **Funktionalität:**
 
 * **Bedingungsauswertung**:\
-  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wenn“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Erstellung von Aufgabe oder Benachrichtigung**:
   * Weist die Aufgabe oder Benachrichtigung dem im Dokumentfeld identifizierten Benutzer zu.
   * In Version 3 ist die Erstellung entweder einer Aufgabe oder einer Benachrichtigung möglich.
@@ -63,3 +63,15 @@ Die Workflow-Karte **„Feldbasierte Aufgabe oder Benachrichtigung erstellen“*
 ## **Fazit:**
 
 Die Workflow-Karte **„Feldbasierte Aufgabe oder Benachrichtigung erstellen“** optimiert das Management von Aufgaben und Benachrichtigungen, indem sie Verantwortlichkeiten dynamisch auf Basis von Dokumentfeldern zuweist. Ihr Ersatzbenutzer-Mechanismus und die erweiterten Optionen in Version 3 bieten Flexibilität und stellen sicher, dass Aufgaben oder Benachrichtigungen stets zugewiesen werden, auch wenn die Dokumentdaten unvollständig sind.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Erstellen Sie eine Überprüfungsaufgabe für den in den Dokumentdaten genannten Benutzer.
+
+**Konfiguration:** Wählen Sie `reviewer_name`, Ersatzbenutzer `Demo Reviewer A`, Titel `Review invoice` und Priorität.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein auflösbarer Benutzer im Feld erhält die Aufgabe. Ein leeres oder nicht auflösbares Feld verwendet den konfigurierten Fallback; Testen Sie beide Pfade.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

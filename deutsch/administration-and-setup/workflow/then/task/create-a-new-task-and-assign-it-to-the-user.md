@@ -45,7 +45,7 @@ Die Workflow-Karte **„Aufgabe oder Benachrichtigung erstellen“** optimiert d
 ## **Funktionalität:**
 
 * **Bedingungsauswertung**:\
-  Diese Karte wird nur ausgelöst, wenn die Bedingungen in den Abschnitten **„Wo“** und **„Und“** erfüllt sind.
+  Diese Karte wird nur ausgelöst, wenn die Bedingungen in den Abschnitten **„Wenn“** und **„Und“** erfüllt sind.
 * **Erstellung von Aufgabe oder Benachrichtigung**:
   * Versionen 2 und 3: Es wird eine Aufgabe mit dem angegebenen Titel, der Beschreibung, der Priorität und dem zugewiesenen Benutzer erstellt.
   * Version 4: Ermöglicht die Erstellung entweder einer Aufgabe oder einer Benachrichtigung.
@@ -70,3 +70,15 @@ Die Workflow-Karte **„Aufgabe oder Benachrichtigung erstellen“** optimiert d
 ## **Fazit:**
 
 Die Workflow-Karte **„Aufgabe oder Benachrichtigung erstellen“** ist ein vielseitiges Werkzeug zur Verwaltung von Aufgaben und Benachrichtigungen. Indem sie die dynamische Benutzerzuweisung über Entscheidungsbäume unterstützt und Optionen für die Erstellung von Aufgaben oder Benachrichtigungen bietet, verbessert sie die Anpassungsfähigkeit des Workflows und die Effizienz der Zusammenarbeit.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Wann zu verwenden ist:** Geben Sie einem Prüfer ein explizites Aktionselement.
+
+**Konfiguration:** Wählen Sie `Demo Reviewer A`, Titel `Review invoice`, Beschreibung und Priorität.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Der ausgewählte Benutzer erhält die neue Aufgabe. Bestätigen Sie den Aufgabentitel und den Beauftragten. Die Aufgabe muss noch vom Gutachter erledigt werden.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

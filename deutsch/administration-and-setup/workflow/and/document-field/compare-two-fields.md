@@ -42,3 +42,15 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen zu automatisieren, indem sie
 ## **Fazit:**
 
 Die Workflow-Karte "Compare Two Fields" ist ein unverzichtbares Werkzeug, um Daten zwischen Feldern innerhalb von Dokumenten zu vergleichen. Indem sie Aktionen auf Basis von Feldvergleichen automatisiert, hilft diese Karte, die Entscheidungsfindung zu optimieren, unterstützt die Datenvalidierung und steigert die Workflow-Automatisierung.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Überprüfen Sie, ob eine kopierte Referenz mit der Originalreferenz übereinstimmt.
+
+**Konfiguration:** Wählen Sie die Textfelder `purchase_order_number` und `confirmed_order_number` und den Gleichheitsoperator aus.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Die Werte `PO-DEMO-001` und `PO-DEMO-001` bestehen. Ein zweiter Wert von `PO-DEMO-002` schlägt fehl.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

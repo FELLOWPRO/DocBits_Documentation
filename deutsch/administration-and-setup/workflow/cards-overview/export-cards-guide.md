@@ -40,3 +40,13 @@ Wählen Sie beispielsweise `exported` aus, wenn bei einem erfolgreichen Export d
 ## Erforderliche Kontrollen
 
 Testen Sie eine gültige Konfiguration, eine fehlende Konfiguration, ausstehende Aufgaben mit beiden Einstellungen und beiden Ergebnisstatus. Testen Sie die bereits in einem bestehenden Workflow verwendete Version, bevor Sie sie ändern. Überprüfen Sie bei einem Export in der Warteschlange die endgültige Ausführung. Für einen sofortigen Export überprüfen Sie das eigene Ergebnis. Überprüfen Sie [Workflow-Protokolle](../workflow-logs.md) und verwechseln Sie eine übersprungene Karte nicht mit Erfolg.
+
+<!-- workflow-card-complete-example-20261021 action_export_with_config_deferred -->
+
+### Beispiel für einen verzögerten Export
+
+**Konfiguration:** Wählen Sie in Version 3 die Testkonfiguration `DEMO_EXPORT`, lassen Sie „Ausstehende Aufgaben ignorieren“ deaktiviert und wählen Sie `exported` als Status nach dem Export aus. Platzieren Sie die Karte in der vorgesehenen validierten Route.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Die Karte sammelt eine Exportanforderung für das Ende der Workflow-Ausführung. Nur eine erfolgreiche endgültige Ausführung stellt sicher, dass das Ziel die Daten erhalten hat und das Dokument als `exported` geöffnet bleibt. Der Erfolg einer Karte in der Warteschlange allein beweist noch keinen Export; Eine nicht gelöste Sperraufgabe darf nicht als Zustellung behandelt werden.
+
+Dies ist eine beispielhafte Testkonfiguration und das erwartete Ergebnis. es wurde nicht ausgeführt. Verwenden Sie die in Ihrer Testorganisation konfigurierten Daten und Empfänger.

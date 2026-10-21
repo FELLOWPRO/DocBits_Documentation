@@ -60,3 +60,15 @@ Die Workflow-Karte "**Ordnen Sie das Dokument der Beschaffungsgruppe zu und erst
 ## **Fazit**
 
 Die Workflow-Karte "Assign Document to Procurement Group and Create Task/Notification" stellt sicher, dass Dokumente mit klaren Aufgabenanweisungen und Prioritätsstufen an die passende Gruppe geleitet werden. Durch die Aktivierung optionaler E-Mail-Benachrichtigungen verbessert diese Karte die Sichtbarkeit von Aufgaben und sorgt für eine reibungslose Workflow-Ausführung.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Kombinieren Sie eine priorisierte Beschaffungsaufgabe mit einer Überprüfungsaufgabe.
+
+**Konfiguration:** Wählen Sie `Demo Procurement`, Titel `Review order variance`, Aufgabenpriorität und Zuweisungspriorität.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Das konfigurierte Beschaffungsziel erhält den dokumentierten Auftrag und die Aufgabe/Benachrichtigung. Überprüfen Sie beide und ihre Prioritäten im Ergebnis.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

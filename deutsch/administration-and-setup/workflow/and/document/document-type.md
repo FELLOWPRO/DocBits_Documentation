@@ -31,3 +31,15 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob ein Dokument einem bes
 ## Fazit:
 
 Die Workflow-Karte "Document Type Comparison" ist unverzichtbar, um sicherzustellen, dass Workflows auf Basis des Typs des verarbeiteten Dokuments ablaufen. Durch den Vergleich des Dokumenttyps hilft sie Organisationen, die Weiterleitung und Verarbeitung von Dokumenten zu automatisieren, und stellt sicher, dass Dokumente entsprechend ihrem Typ angemessen behandelt werden.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Führen Sie eine rechnungsspezifische Prüfung durch.
+
+**Konfiguration:** Wählen Sie den Dokumenttyp `Invoice` und den Gleichheitsoperator.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Eine Rechnung wird angenommen. Eine Gutschrift erfüllt diese Bedingung nicht.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

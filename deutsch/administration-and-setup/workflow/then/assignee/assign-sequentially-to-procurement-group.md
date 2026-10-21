@@ -33,3 +33,15 @@ Die Workflow-Karte "**Ordnen Sie das Dokument der Reihe nach der Beschaffungsgru
 ## **Fazit**
 
 Die Workflow-Karte "Assign the Document Sequentially to the Procurement Group" sorgt für eine effektive Dokumentzuweisung an Beschaffungsgruppen auf Basis der Priorität. Dies steigert die organisatorische Effizienz und das Aufgabenmanagement.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Priorisieren Sie eine Beschaffungsgruppe innerhalb der Dokumentenprüfung.
+
+**Konfiguration:** Wählen Sie `Demo Procurement` und Priorität `10`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Das Dokument erhält die Beschaffungsgruppenzuordnung mit der Priorität `10`. Überprüfen Sie, ob spätere Zuweisungen die vorgesehenen höheren numerischen Prioritäten verwenden.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

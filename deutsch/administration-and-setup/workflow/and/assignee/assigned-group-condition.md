@@ -37,3 +37,15 @@ Diese Workflow-Karte führt Operationen abhängig davon aus, ob eine Aufgabe ode
 
 **Fazit:**\
 Die Workflow-Karte "Assigned Group Condition" ist unverzichtbar für die Verwaltung von Dokument- und Aufgaben-Workflows, die von Gruppenzuweisungen abhängen. Indem sie Bedingungen darauf basieren lässt, ob eine Aufgabe oder ein Dokument bestimmten Gruppen zugewiesen ist, stellt sie sicher, dass Workflows nur durch passende Gruppeninteraktionen ausgelöst werden, und verbessert so die Nachvollziehbarkeit und das Aufgabenmanagement über Teams hinweg.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Wann zu verwenden ist:** Wenden Sie dieselbe Regel auf zwei Prüfteams an.
+
+**Konfiguration:** Wählen Sie eine der konfigurierten Gruppen `Demo Finance` und `Demo Procurement` aus.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein Dokument, das einer der ausgewählten Gruppen zugeordnet ist, besteht. Ein Dokument, das nur `Demo Support` zugewiesen ist, schlägt fehl.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

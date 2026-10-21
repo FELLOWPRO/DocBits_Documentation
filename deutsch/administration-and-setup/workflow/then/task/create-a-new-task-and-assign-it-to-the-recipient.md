@@ -37,7 +37,7 @@ Die Workflow-Karte **„Aufgabe mit Fallback erstellen“** sorgt für eine effi
 ## **Funktionalität:**
 
 * **Bedingungsauswertung**:\
-  Die Karte wird nur ausgeführt, wenn die Bedingungen in den Abschnitten **„Wo“** und **„Und“** erfüllt sind.
+  Die Karte wird nur ausgeführt, wenn die Bedingungen in den Abschnitten **„Wenn“** und **„Und“** erfüllt sind.
 * **Aufgabenzuweisung**:
   * Die Aufgabe wird der ausgewählten Rolle (Disponent oder Einkäufer) zugewiesen.
   * Wird die angegebene Rolle nicht gefunden, wird die Aufgabe einem Benutzer aus der Ersatz-Dropdown-Liste zugewiesen.
@@ -54,3 +54,13 @@ Die Workflow-Karte **„Aufgabe mit Fallback erstellen“** sorgt für eine effi
 ## **Fazit:**
 
 Die Workflow-Karte **„Aufgabe mit Fallback erstellen“** sorgt durch die Integration eines Ersatzmechanismus für eine nahtlose Aufgabendelegation. Indem sie Aufgaben auf Basis von Rollen zuweist und eine alternative Benutzeroption bietet, erhöht sie die Zuverlässigkeit und Flexibilität in den Prozessen des Aufgabenmanagements.
+
+<!-- workflow-card-complete-example-20261021 oc_task -->
+
+### Beispiel für eine Empfängeraufgabe
+
+**Konfiguration:** Geben Sie den Titel `Review delivery date`, eine Beschreibung zur Identifizierung des synthetischen Dokuments, eine Priorität, die Rolle „Käufer“ und den konfigurierten Fallback-Benutzer `DEMO_REVIEWER` ein. Deaktivieren Sie die E-Mail-Benachrichtigung für diese beispielhafte Einrichtung.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Wenn ein Käufer gelöst werden kann, wird die neue Aufgabe diesem Benutzer zugewiesen. Wenn die Rolle nicht aufgelöst werden kann, wird der konfigurierte Fallback verwendet. Überprüfen Sie den tatsächlichen Aufgabeneigentümer. Ein fehlender primärer Empfänger ist kein Beweis dafür, dass der Fallback-Benutzer existiert oder dass eine Aufgabe erstellt wurde.
+
+Dies ist eine beispielhafte Testkonfiguration und das erwartete Ergebnis. es wurde nicht ausgeführt. Verwenden Sie die in Ihrer Testorganisation konfigurierten Daten und Empfänger.

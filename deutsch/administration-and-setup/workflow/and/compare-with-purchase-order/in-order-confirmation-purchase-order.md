@@ -19,3 +19,15 @@ Wählen Sie **Bestellungsdaten** aus der Auftragsbestätigung und einen **Operat
 Wählen Sie **Beliebig/Alle**, um festzulegen, ob eine oder alle ausgewählten Bedingungen übereinstimmen müssen. Wählen Sie anschließend die **Bestellungsdaten**, den **Operator** und die **Vergleichsdaten** für den Bestellvergleich.
 
 Die umgebenden Schritte finden Sie unter [Workflow](../..) und [Mit Bestellung vergleichen](.).
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Vergleichen Sie eine Bestellbestätigung mit der verknüpften Bestellung.
+
+**Konfiguration:** Verwenden Sie eine Demo-Bestellung und Bestätigung mit demselben Lieferanten, derselben Artikelreferenz und denselben Vergleichswerten. Wählen Sie die gewünschte Vergleichsrichtung und die Felder aus, die diese Version bietet.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Der passende Vergleich ist erfolgreich. Ändern Sie einen verglichenen Elementwert in einem separaten Testfall und überprüfen Sie, ob er erkannt wird. Eine fehlende verknüpfte Bestellung ist ein separates Datenproblem.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

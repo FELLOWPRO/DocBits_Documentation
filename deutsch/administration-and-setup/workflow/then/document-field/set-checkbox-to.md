@@ -4,7 +4,7 @@
 
 ## **Zweck:**
 
-Diese Workflow-Karte ist darauf ausgelegt, ein Kontrollkästchenfeld auf einen angegebenen Wert (true oder false) zu setzen, basierend auf den in den Abschnitten **„Wo“** und **„Und“** definierten Bedingungen. Sie bietet eine einfache, aber effektive Möglichkeit, Kontrollkästchenaktualisierungen zu automatisieren, wenn bestimmte Kriterien erfüllt sind, und sorgt so für eine optimierte Dokumentverarbeitung.
+Diese Workflow-Karte ist darauf ausgelegt, ein Kontrollkästchenfeld auf einen angegebenen Wert (true oder false) zu setzen, basierend auf den in den Abschnitten **„Wenn“** und **„Und“** definierten Bedingungen. Sie bietet eine einfache, aber effektive Möglichkeit, Kontrollkästchenaktualisierungen zu automatisieren, wenn bestimmte Kriterien erfüllt sind, und sorgt so für eine optimierte Dokumentverarbeitung.
 
 ## **Bestandteile der Karte:**
 
@@ -19,8 +19,8 @@ Diese Workflow-Karte ist darauf ausgelegt, ein Kontrollkästchenfeld auf einen a
 
 ## **Funktionalität:**
 
-* **Bedingungsauswertung**: Das System wertet die Bedingungen sowohl im Abschnitt **„Wo“** als auch im Abschnitt **„Und“** aus.
-* **Ausführung der Aktion**: Werden sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet, wird das Kontrollkästchenfeld auf den angegebenen Wert (true oder false) aktualisiert. Ist eine der Bedingungen nicht erfüllt, wird keine Aktion ausgeführt, und das Kontrollkästchen bleibt unverändert.
+* **Bedingungsauswertung**: Das System wertet die Bedingungen sowohl im Abschnitt **„Wenn“** als auch im Abschnitt **„Und“** aus.
+* **Ausführung der Aktion**: Werden sowohl der **„Wenn“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet, wird das Kontrollkästchenfeld auf den angegebenen Wert (true oder false) aktualisiert. Ist eine der Bedingungen nicht erfüllt, wird keine Aktion ausgeführt, und das Kontrollkästchen bleibt unverändert.
 
 ## **Einrichtung und Konfiguration:**
 
@@ -28,8 +28,20 @@ Um diese Karte zu konfigurieren, müssen Benutzer:
 
 1. **Das Ziel-Kontrollkästchenfeld angeben**, das bei Erfüllung der Bedingungen auf true oder false gesetzt wird.
 2. **Den Wert (true oder false) auswählen**, auf den das Kontrollkästchen bei der Bedingungsauswertung gesetzt wird.
-3. Die Karte führt ihre Aktion nur aus, wenn beide Bedingungen in den Abschnitten **„Wo“** und **„Und“** als erfüllt ausgewertet werden.
+3. Die Karte führt ihre Aktion nur aus, wenn beide Bedingungen in den Abschnitten **„Wenn“** und **„Und“** als erfüllt ausgewertet werden.
 
 ## **Fazit:**
 
-Die Workflow-Karte **"Set Checkbox"** ist ein einfaches und effektives Automatisierungswerkzeug, um Kontrollkästchenfelder auf Basis bestimmter Bedingungen zu aktualisieren. Indem sie sicherstellt, dass sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt erfüllt sind, ermöglicht sie es Benutzern, Prozesse zu automatisieren und manuelle Eingriffe zu reduzieren, und sorgt so für eine reibungslosere und effizientere Dokumentverarbeitung.
+Die Workflow-Karte **"Set Checkbox"** ist ein einfaches und effektives Automatisierungswerkzeug, um Kontrollkästchenfelder auf Basis bestimmter Bedingungen zu aktualisieren. Indem sie sicherstellt, dass sowohl der **„Wenn“**- als auch der **„Und“**-Abschnitt erfüllt sind, ermöglicht sie es Benutzern, Prozesse zu automatisieren und manuelle Eingriffe zu reduzieren, und sorgt so für eine reibungslosere und effizientere Dokumentverarbeitung.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Wann zu verwenden ist:** Markieren Sie eine erfolgreiche Validierung mit einem expliziten Flag.
+
+**Konfiguration:** Aktivieren Sie das Kontrollkästchenfeld `review_complete` und stellen Sie es auf `true` ein.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Das Feld wird überprüft. Führen Sie die Aktion mit `false` in einem separaten Test aus, wenn Sie die Flagge löschen müssen.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

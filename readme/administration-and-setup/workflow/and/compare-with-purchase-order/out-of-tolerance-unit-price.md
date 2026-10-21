@@ -1,6 +1,6 @@
-# Out of Tolerance Unit Price
+# Prix unitaire hors tolérance
 
-<figure><img src="../../../../.gitbook/assets/image (272).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-443397191f7c-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -8,25 +8,25 @@ Cette carte de workflow est conçue pour évaluer si la valeur combinée des pri
 
 ## **Composants de la carte :**
 
-1. **Field Name :**
-   * **Description** : spécifie le champ de document qui contient la valeur à combiner avec le prix unitaire.
+1. **Nom du champ :**
+   * **Descriptif** : spécifie le champ de document qui contient la valeur à combiner avec le prix unitaire.
    * **Détail** : la valeur de ce champ sera combinée au prix unitaire pour créer la valeur combinée totale à comparer.
-2. **Operator :**
-   * **Description** : définit la condition de comparaison de la valeur combinée du prix unitaire et de la valeur du champ par rapport à la valeur spécifiée.
-   * **Options** :
-     * **Equals (=)** : vérifie si la valeur combinée du prix unitaire et du champ correspond à la valeur spécifiée.
-     * **Not Equals (≠)** : s'assure que la valeur combinée du prix unitaire et du champ diffère de la valeur spécifiée.
-     * **Greater Than (>)** : vérifie si la valeur combinée du prix unitaire et du champ dépasse la valeur spécifiée.
-     * **Greater or Equals (≥)** : vérifie si la valeur combinée du prix unitaire et du champ est supérieure ou égale à la valeur spécifiée.
-     * **Lesser Than (<)** : vérifie si la valeur combinée du prix unitaire et du champ est inférieure à la valeur spécifiée.
-     * **Lesser or Equals (≤)** : vérifie si la valeur combinée du prix unitaire et du champ est inférieure ou égale à la valeur spécifiée.
-3. **Value :**
-   * **Description** : spécifie la valeur à laquelle la valeur combinée du prix unitaire et du champ sera comparée.
+2. **Opérateur :**
+   * **Descriptif** : définit la condition de comparaison de la valeur combinée du prix unitaire et de la valeur du champ par rapport à la valeur spécifiée.
+   * **Possibilités** :
+     * **Égal à (=)** : vérifie si la valeur combinée du prix unitaire et du champ correspond à la valeur spécifiée.
+     * **Pas égal à (≠)** : s'assure que la valeur combinée du prix unitaire et du champ diffère de la valeur spécifiée.
+     * **Supérieur à (>)** : vérifie si la valeur combinée du prix unitaire et du champ dépasse la valeur spécifiée.
+     * **Supérieur ou égal à (≥)** : vérifie si la valeur combinée du prix unitaire et du champ est supérieure ou égale à la valeur spécifiée.
+     * **Inférieur à (<)** : vérifie si la valeur combinée du prix unitaire et du champ est inférieure à la valeur spécifiée.
+     * **Inférieur ou égal à (≤)** : vérifie si la valeur combinée du prix unitaire et du champ est inférieure ou égale à la valeur spécifiée.
+3. **Valeur :**
+   * **Descriptif** : spécifie la valeur à laquelle la valeur combinée du prix unitaire et du champ sera comparée.
    * **Détail** : cette valeur numérique représente le seuil de comparaison. Si la valeur combinée du prix unitaire et du champ dépasse ou n'atteint pas cette valeur (selon l'opérateur sélectionné), la condition déclenchera les actions spécifiées.
 
 ## **Fonctionnalité :**
 
-* &#x20;**Évaluation de la condition :** le système calcule la valeur combinée en multipliant ou en additionnant le prix unitaire avec la valeur du champ, selon la configuration. Le résultat est ensuite comparé à la valeur spécifiée à l'aide de l'opérateur sélectionné. Si la condition est satisfaite (c.-à-d. que la valeur combinée est hors tolérance), le workflow poursuit avec l'étape suivante, qu'il s'agisse d'une approbation, d'un rejet ou d'un examen complémentaire.
+* **Évaluation de la condition :** le système calcule la valeur combinée en multipliant ou en additionnant le prix unitaire avec la valeur du champ, selon la configuration. Le résultat est ensuite comparé à la valeur spécifiée à l'aide de l'opérateur sélectionné. Si la condition est satisfaite (c.-à-d. que la valeur combinée est hors tolérance), le workflow poursuit avec l'étape suivante, qu'il s'agisse d'une approbation, d'un rejet ou d'un examen complémentaire.
 * **Exécution de l'action :**
   * **Condition vraie** : si la comparaison renvoie vrai (c.-à-d. que la valeur combinée satisfait la condition), le workflow déclenche l'action associée à la condition vraie (par ex. approbation ou notification).
   * **Condition fausse** : si la comparaison renvoie faux (c.-à-d. que la valeur combinée ne satisfait pas la condition), le workflow ne se poursuit pas.

@@ -1,6 +1,6 @@
-# Items Have Shelf Life
+# Les articles ont une durée de conservation
 
-<figure><img src="../../../../.gitbook/assets/image (44).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4e7c22460ee3-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -11,16 +11,14 @@ Cette carte DocBits vérifie si les articles d'un ensemble de données satisfont
 * **Validation de la durée de conservation :** cette carte vérifie la durée de conservation des articles par rapport à une condition spécifiée. Les utilisateurs peuvent choisir de valider **un quelconque** article ou **tous** les articles de l'ensemble de données et d'appliquer divers opérateurs de comparaison pour définir la condition.
 * **Sélection des articles :** les utilisateurs peuvent choisir entre :
   * **Any Item :** la carte se déclenche si au moins un article satisfait la condition de durée de conservation spécifiée.
-  * **All Items :** la carte ne se déclenche que si tous les articles satisfont la condition de durée de conservation spécifiée.
-* **Operators :** les opérateurs suivants sont disponibles pour définir la condition de durée de conservation :
-  * **Equals (=) :** vérifie si la durée de conservation est exactement égale à la valeur spécifiée.
-  * **Not Equals (≠) :** s'assure que la durée de conservation n'est pas égale à la valeur spécifiée.
-  * **Greater Than (>) :** confirme que la durée de conservation est supérieure à la valeur spécifiée.
-  * **Greater or Equals (≥) :** s'assure que la durée de conservation est supérieure ou égale à la valeur spécifiée.
+  * **Tous les articles :** la carte ne se déclenche que si tous les articles satisfont la condition de durée de conservation spécifiée.
+* **Opérateurs :** les opérateurs suivants sont disponibles pour définir la condition de durée de conservation :
+  * **Est égal à (=) :** vérifie si la durée de conservation est exactement égale à la valeur spécifiée.
+  * **Différent (≠) :** s'assure que la durée de conservation n'est pas égale à la valeur spécifiée.
+  * **Supérieur à (>) :** confirme que la durée de conservation est supérieure à la valeur spécifiée.
+  * **Supérieur ou égal à (≥) :** s'assure que la durée de conservation est supérieure ou égale à la valeur spécifiée.
   * **Less Than (<) :** vérifie si la durée de conservation est inférieure à la valeur spécifiée.
-  * **Less or Equals (≤) :** s'assure que la durée de conservation est inférieure ou égale à la valeur spécifiée.
-
-
+  * **Inférieur ou égal à (≤) :** s'assure que la durée de conservation est inférieure ou égale à la valeur spécifiée.
 
 ## **Utilisation :**
 

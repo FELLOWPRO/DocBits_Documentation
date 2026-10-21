@@ -1,6 +1,6 @@
-# Today
+# Aujourd'hui
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-bd785752f7b5-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -9,12 +9,12 @@ Cette carte DocBits compare la date du jour à une date spécifiée, permettant 
 ## **Fonctionnalité :**
 
 * **Comparaison de dates :** cette carte évalue la date du jour par rapport à une date spécifiée à l'aide des conditions suivantes :
-  * **Equals (=) :** vérifie si la date du jour correspond à la date spécifiée.
-  * **Not Equals (≠) :** s'assure que la date du jour diffère de la date spécifiée.
-  * **Greater Than (>) :** confirme que la date du jour est postérieure à la date spécifiée.
-  * **Greater or Equals (≥) :** s'assure que la date du jour est égale ou postérieure à la date spécifiée.
-  * **Lesser Than (<) :** vérifie si la date du jour est antérieure à la date spécifiée.
-  * **Less or Equals (≤) :** s'assure que la date du jour est égale ou antérieure à la date spécifiée.
+  * **Est égal à (=) :** vérifie si la date du jour correspond à la date spécifiée.
+  * **Différent (≠) :** s'assure que la date du jour diffère de la date spécifiée.
+  * **Supérieur à (>) :** confirme que la date du jour est postérieure à la date spécifiée.
+  * **Supérieur ou égal à (≥) :** s'assure que la date du jour est égale ou postérieure à la date spécifiée.
+  * **Inférieur à (<) :** vérifie si la date du jour est antérieure à la date spécifiée.
+  * **Inférieur ou égal à (≤) :** s'assure que la date du jour est égale ou antérieure à la date spécifiée.
 * **Saisie de la date :** les utilisateurs fournissent la date à comparer à la date du jour.
 
 ## **Utilisation :**

@@ -59,3 +59,7 @@ Cliquez sur **New Variable**, donnez-lui un nom et un type, puis définissez sa 
 
 - Découvrez comment les nœuds utilisent ces valeurs dans [Nœuds](nodes.md).
 - Validez et exécutez le workflow dans [Validation & Test](validation-and-testing.md).
+
+## Variables numériques
+
+**Number (Nombre)** est un type de variable distinct, avec Text, Yes/No et Document. Saisissez une valeur numérique sans symbole monétaire. Les variables de l’organisation sont partagées entre les workflows ; leur création, modification ou suppression est enregistrée immédiatement, indépendamment de l’enregistrement ou de l’abandon du canevas. Avant une modification, vérifiez les workflows concernés et testez des valeurs inférieures, égales et supérieures au seuil.

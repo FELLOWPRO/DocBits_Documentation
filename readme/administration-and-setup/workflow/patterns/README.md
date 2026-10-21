@@ -1,227 +1,233 @@
-# Guides des modèles de workflow
+# Guides des modèles de flux de travail
 
-**Version :** 1.0
-**Dernière mise à jour :** 23 octobre 2025
+**Version :** 1.0 **Dernière mise à jour :** 23 octobre 2025
 
----
+***
 
-## Vue d'ensemble
+## Aperçu
 
-Ce répertoire contient des guides complets de modèles de workflow qui montrent comment combiner plusieurs cartes de workflow pour résoudre des scénarios métier courants. Chaque modèle fournit des instructions de mise en œuvre étape par étape, des exemples complets et des bonnes pratiques.
+Ce répertoire contient des guides complets sur les modèles de flux de travail qui montrent comment combiner plusieurs cartes de flux de travail pour résoudre des scénarios commerciaux courants. Chaque modèle fournit des instructions de mise en œuvre étape par étape, des exemples complets et des bonnes pratiques.
 
-**Que sont les modèles de workflow ?**
+**Que sont les modèles de flux de travail ?**
 
-Les modèles de workflow sont des solutions éprouvées et réutilisables pour les défis courants du traitement documentaire. Au lieu de partir de zéro, vous pouvez utiliser ces modèles comme gabarits et les adapter à vos besoins spécifiques.
+Les modèles de flux de travail sont des solutions éprouvées et réutilisables aux défis courants du traitement de la documentation. Au lieu de repartir de zéro, vous pouvez utiliser ces modèles comme modèles et les adapter à vos besoins spécifiques.
 
----
+***
 
 ## Le Workflow Builder en un coup d'œil
 
-Chaque modèle de cette page est assemblé dans le **Workflow Builder**. Vous y accédez via **Workflow Dashboard → Workflow List → Add Workflow** (ou en ouvrant un workflow existant). Le tableau de bord vous donne l'historique des exécutions ainsi que les taux de réussite/échec de tous vos workflows :
+Chaque modèle de cette page est assemblé dans le **Générateur de flux de travail**. Vous y accédez depuis **Tableau de bord du workflow → Liste des workflows → Ajouter un workflow** (ou en ouvrant un workflow existant). Le tableau de bord vous donne l'historique d'exécution et les taux de réussite/échec pour tous vos flux de travail :
 
-<figure><img src="../../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard affichant les totaux d'exécutions, les taux de réussite et d'échec, le graphique des exécutions de workflow et l'activité récente"><figcaption><p>Le Workflow Dashboard — totaux d'exécutions, taux de réussite/échec et activité récente pour chaque workflow.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-dashboard-c9339f546ced-fr.png" alt="Le Workflow Dashboard — totaux d&#x27;exécutions, taux de réussite/échec et activité récente pour chaque workflow. Les noms et références de documents confidentiels sont masqués."><figcaption><p>Le Workflow Dashboard — totaux d&#x27;exécutions, taux de réussite/échec et activité récente pour chaque workflow. Les noms et références de documents confidentiels sont masqués.</p></figcaption></figure>
 
-L'onglet **Workflow List** liste chaque workflow avec son type, son ordre d'exécution et son déclencheur. Utilisez **Add Workflow** pour en créer un nouveau, ou cliquez sur un workflow pour l'ouvrir dans le builder :
+L'onglet **Liste des flux de travail** répertorie chaque workflow avec son type, son ordre d'exécution et son déclencheur. Utilisez **Ajouter un workflow** pour en créer un nouveau, ou cliquez sur un workflow pour l'ouvrir dans le générateur :
 
-<figure><img src="../../../.gitbook/assets/workflow_list.png" alt="Onglet Workflow List listant les workflows avec leur type, leur ordre d'exécution et leur déclencheur"><figcaption><p>La Workflow List — chaque ligne est un workflow que vous pouvez ouvrir, activer/désactiver ou modifier.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-dashboard-900cb4050b5b-fr.png" alt="La Workflow List — chaque ligne est un workflow que vous pouvez ouvrir, activer/désactiver ou modifier. Les noms et références de documents confidentiels sont masqués."><figcaption><p>La Workflow List — chaque ligne est un workflow que vous pouvez ouvrir, activer/désactiver ou modifier. Les noms et références de documents confidentiels sont masqués.</p></figcaption></figure>
 
-Un workflow est construit à partir de trois groupes de cartes — **When** (le déclencheur), **And** (conditions supplémentaires) et **Then** (les actions à exécuter). L'exemple ci-dessous se déclenche sur les factures appartenant à une sous-organisation et les affecte à un utilisateur :
+Un workflow comprend trois groupes de cartes : **Quand** (déclencheur), **Et** (conditions supplémentaires) et **Alors** (actions). Cet exemple non enregistré illustre cette structure. Le type de document, la sous-organisation et l’utilisateur restent à sélectionner :
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Canevas du Workflow Builder avec des cartes When, And et Then"><figcaption><p>Le canevas du Workflow Builder. Chaque modèle ci-dessous n'est qu'une combinaison différente de cartes When / And / Then.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-fr.png" alt="Exemple non enregistré avec les cartes Quand, Et et Alors. Renseignez tous les champs avant exécution."><figcaption><p>Exemple non enregistré avec les cartes Quand, Et et Alors. Renseignez tous les champs avant exécution.</p></figcaption></figure>
 
-Cliquez sur **Add Card** dans n'importe quel groupe pour ouvrir la bibliothèque de cartes. Les cartes sont organisées par catégorie (Compare with Purchase Order, Partner Cards, Document Field, Date &#x26; Time, Document, Logic, Status, Table, Assignee, …) afin que vous trouviez le bloc de construction dont chaque modèle a besoin :
+Cliquez sur **Ajouter une carte** dans n'importe quel groupe pour ouvrir la bibliothèque de cartes. Les cartes sont organisées par catégorie (Comparer avec le bon de commande, les cartes partenaires, le champ du document, la date et l'heure, le document, la logique, le statut, la table, le destinataire, …) afin que vous puissiez trouver l'élément de base requis par chaque modèle :
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Boîte de dialogue Add Card affichant les catégories de cartes et les cartes disponibles"><figcaption><p>La bibliothèque <strong>Add Card</strong> — chaque carte référencée dans les modèles ci-dessous est sélectionnée ici.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
----
+***
 
 ## Modèles disponibles
 
-### 1. [Modèle d'intégration d'API](api-integration-pattern.md)
+### 1. [Modèle d'intégration API](api-integration-pattern.md)
 
-**Complexité :** Moyenne | **Temps de mise en place :** 45-60 minutes
+**Complexité :** Moyen | **Temps d'installation :** 45-60 minutes
 
-Apprenez à intégrer DocBits à des API externes pour récupérer, valider et stocker des données provenant de systèmes externes.
+Découvrez comment intégrer DocBits à des API externes pour récupérer, valider et stocker des données à partir de systèmes externes.
 
-**Cas d'usage :**
-- Récupérer des tarifs en temps réel depuis des systèmes externes
-- Valider les informations fournisseur par rapport à des bases de données de référence
-- Rechercher des détails produit dans des systèmes de catalogue
-- Obtenir des taux de change auprès de services de devises
-- Vérifier des adresses avec des services de géocodage
+**Cas d'utilisation :**
 
-**Cartes utilisées :** CALL_API, CONDITION_HTTPS_REQUEST_STATUS, ACTION_SET_FIELD_TO_TEXT, CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+* Récupérez les prix en temps réel à partir de systèmes externes
+* Valider les informations des fournisseurs par rapport aux bases de données principales
+* Rechercher les détails des produits à partir des systèmes de catalogue
+* Obtenez les taux de change des services de change
+* Vérifier les adresses avec les services de géocodage
 
-**[Voir le modèle complet →](api-integration-pattern.md)**
+**Cartes utilisées :** CALL\_API, CONDITION\_HTTPS\_REQUEST\_STATUS, ACTION\_SET\_FIELD\_TO\_TEXT, CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES
 
----
+[**Afficher le modèle complet →**](api-integration-pattern.md)
+
+***
 
 ### 2. [Modèle de gestion des tâches](task-management-pattern.md)
 
-**Complexité :** Faible-Moyenne | **Temps de mise en place :** 30-45 minutes
+**Complexité :** Faible-Moyenne | **Temps d'installation :** 30-45 minutes
 
-Maîtrisez l'art de créer, affecter, suivre et gérer des tâches dans les workflows DocBits pour les processus d'approbation et de révision.
+Maîtrisez l'art de créer, d'attribuer, de suivre et de gérer des tâches dans les flux de travail DocBits pour les processus d'approbation et de révision.
 
-**Cas d'usage :**
-- Créer des workflows d'approbation
-- Affecter des tâches de révision aux utilisateurs
-- Traiter les exceptions nécessitant une intervention humaine
-- Escalader les problèmes vers les responsables
-- Créer des chaînes d'approbation à plusieurs niveaux
-- Suivre l'achèvement des tâches et les échéances
+**Cas d'utilisation :**
 
-**Cartes utilisées :** tasks_create, ACTION_ASSIGN_TO_USER, ACTION_SEND_EMAIL_TO_GROUPS, CONDITION_TASK_STATUS
+* Créer des workflows d'approbation
+* Attribuer des tâches de révision aux utilisateurs
+* Gérer les exceptions nécessitant une intervention humaine
+* Faire remonter les problèmes aux managers
+* Créer des chaînes d'approbation à plusieurs niveaux
+* Suivre l’achèvement des tâches et les délais
 
-**[Voir le modèle complet →](task-management-pattern.md)**
+**Cartes utilisées :** tasks\_create, ACTION\_ASSIGN\_TO\_USER, ACTION\_SEND\_EMAIL\_TO\_GROUPS, CONDITION\_TASK\_STATUS
 
----
+[**Afficher le modèle complet →**](task-management-pattern.md)
 
-### 3. [Modèle de rapprochement de commandes (PO Matching)](po-matching-pattern.md)
+***
 
-**Complexité :** Moyenne-Élevée | **Temps de mise en place :** 60-90 minutes
+### 3. [Modèle de correspondance PO](po-matching-pattern.md)
 
-Mettez en place des workflows complets de rapprochement de commandes (PO Matching) pour valider les factures par rapport aux commandes avec un routage basé sur la tolérance.
+**Complexité :** Moyen-Élevé | **Temps d'installation :** 60-90 minutes
 
-**Cas d'usage :**
-- Valider les factures par rapport aux commandes
-- Détecter les erreurs de prix avant le paiement
-- Identifier les écarts de quantité
-- Faire respecter les contrôles d'approvisionnement
-- Empêcher les paiements en double
-- Automatiser le rapprochement à trois voies
+Mettez en œuvre des workflows complets de rapprochement des bons de commande pour valider les factures par rapport aux bons de commande avec un routage basé sur les tolérances.
 
-**Cartes utilisées :** PURCHASE_ORDER_FULL_MATCH, CONDITION_DOC_TO_PO_UNIT_PRICE, CONDITION_DOC_TO_PO_QUANTITY, CONDITION_DOC_TO_PO_TAX_LINES
+**Cas d'utilisation :**
 
-**[Voir le modèle complet →](po-matching-pattern.md)**
+* Valider les factures par rapport aux bons de commande
+* Détecter les erreurs de prix avant le paiement
+* Identifier les écarts de quantité
+* Appliquer les contrôles d’approvisionnement
+* Évitez les paiements en double
+* Automatisez la correspondance à trois
 
----
+**Cartes utilisées :** PURCHASE\_ORDER\_FULL\_MATCH, CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE, CONDITION\_DOC\_TO\_PO\_QUANTITY, CONDITION\_DOC\_TO\_PO\_TAX\_LINES
 
-### 4. [Modèle de logique de décision](decision-logic-pattern.md)
+[**Afficher le modèle complet →**](po-matching-pattern.md)
 
-**Complexité :** Moyenne | **Temps de mise en place :** 30-45 minutes
+***
 
-Mettez en place des arbres de décision complexes et une logique de routage conditionnel pour traiter les documents selon différents chemins en fonction des règles métier.
+### 4. [Modèle logique de décision](decision-logic-pattern.md)
 
-**Cas d'usage :**
-- Router les documents par seuils de montant
-- Appliquer des règles différentes selon les types de documents
-- Mettre en place une logique d'approbation à plusieurs niveaux
-- Gérer des politiques métier complexes
-- Créer un routage dynamique basé sur plusieurs critères
-- Mettre en place des matrices d'approbation
+**Complexité :** Moyen | **Temps d'installation :** 30-45 minutes
 
-**Cartes utilisées :** CONDITION_DOC_FIELD_AMOUNT, CONDITION_DOC_TYPE_IS_ISNOT, CONDITION_SUPPLIER_STATUS_IS_ISNOT, ACTION_ASSIGN_TO_USER
+Implémentez des arbres de décision complexes et une logique de routage conditionnel pour traiter les documents via différents chemins basés sur des règles métier.
 
-**[Voir le modèle complet →](decision-logic-pattern.md)**
+**Cas d'utilisation :**
 
----
+* Acheminer les documents par seuils de montant
+* Appliquer différentes règles pour différents types de documents
+* Implémenter une logique d’approbation à plusieurs niveaux
+* Gérer des politiques commerciales complexes
+* Créer un routage dynamique basé sur plusieurs critères
+* Mettre en œuvre des matrices d’approbation
+
+**Cartes utilisées :** CONDITION\_DOC\_FIELD\_AMOUNT, CONDITION\_DOC\_TYPE\_IS\_ISNOT, CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT, ACTION\_ASSIGN\_TO\_USER
+
+[**Afficher le modèle complet →**](decision-logic-pattern.md)
+
+***
 
 ### 5. [Modèle de transformation des données](data-transformation-pattern.md)
 
-**Complexité :** Moyenne | **Temps de mise en place :** 30-45 minutes
+**Complexité :** Moyen | **Temps d'installation :** 30-45 minutes
 
-Transformez, calculez, formatez et enrichissez les données des documents pour préparer l'export, effectuer des calculs et standardiser les formats.
+Transformez, calculez, formatez et enrichissez les données du document pour préparer l'exportation, effectuer des calculs et standardiser les formats.
 
-**Cas d'usage :**
-- Calculer des totaux, sous-totaux, taxes
-- Convertir des devises ou des unités
-- Formater des dates, des nombres, du texte
-- Dériver des valeurs à partir de champs existants
-- Enrichir les données à partir de sources externes
-- Standardiser les formats de données
-- Valider les calculs
+**Cas d'utilisation :**
 
-**Cartes utilisées :** ACTION_CALCULATE_FIELD, ACTION_SET_FIELD_TO_TEXT, ACTION_COPY_FIELD_VALUE, CALL_API, CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+* Calculer les totaux, sous-totaux, taxes
+* Convertir des devises ou des unités
+* Formater les dates, les nombres, le texte
+* Dériver des valeurs à partir de champs existants
+* Enrichir les données provenant de sources externes
+* Standardiser les formats de données
+* Valider les calculs
 
-**[Voir le modèle complet →](data-transformation-pattern.md)**
+**Cartes utilisées :** ACTION\_CALCULATE\_FIELD, ACTION\_SET\_FIELD\_TO\_TEXT, ACTION\_COPY\_FIELD\_VALUE, CALL\_API, CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES
 
----
+[**Afficher le modèle complet →**](data-transformation-pattern.md)
 
-## Aide au choix du modèle
+***
+
+## Guide de sélection des motifs
 
 ### Par complexité
 
-| Complexité | Modèles | Idéal pour |
-|------------|----------|----------|
-| **Faible-Moyenne** | [Gestion des tâches](task-management-pattern.md) | Débutants, workflows simples |
-| **Moyenne** | [Intégration d'API](api-integration-pattern.md)<br>[Logique de décision](decision-logic-pattern.md)<br>[Transformation des données](data-transformation-pattern.md) | Utilisateurs intermédiaires, workflows standard |
-| **Moyenne-Élevée** | [PO Matching](po-matching-pattern.md) | Utilisateurs avancés, validation complexe |
+| Complexité      | Modèles                                                                                                                                                                                      | Idéal pour                               |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| **Faible-Moyen**  | [Gestion des tâches](task-management-pattern.md)                                                                                                                                                 | Débutants, flux de travail simples            |
+| **Moyen**      | <p><a href="api-integration-pattern.md">Intégration API</a><br><a href="decision-logic-pattern.md">Logique de décision</a><br><a href="data-transformation-pattern.md">Transformation des données</a></p> | Utilisateurs intermédiaires, workflows standards |
+| **Moyen-Élevé** | [Correspondance PO](po-matching-pattern.md)                                                                                                                                                         | Utilisateurs avancés, validation complexe     |
 
----
+***
 
-### Par cas d'usage
+### Par cas d'utilisation
 
-| J'ai besoin de… | Utiliser ce modèle |
-|--------------|------------------|
-| Intégrer des systèmes externes | [Modèle d'intégration d'API](api-integration-pattern.md) |
-| Créer des workflows d'approbation | [Modèle de gestion des tâches](task-management-pattern.md) |
-| Valider par rapport aux commandes | [Modèle de rapprochement de commandes (PO Matching)](po-matching-pattern.md) |
-| Router en fonction de conditions | [Modèle de logique de décision](decision-logic-pattern.md) |
-| Calculer et transformer des données | [Modèle de transformation des données](data-transformation-pattern.md) |
+| J'ai besoin de...                     | Utilisez ce modèle                                              |
+| -------------------------------- | ------------------------------------------------------------- |
+| Intégration avec des systèmes externes  | [Modèle d'intégration API](api-integration-pattern.md)         |
+| Créer des workflows d'approbation        | [Modèle de gestion des tâches](task-management-pattern.md)         |
+| Valider par rapport aux bons de commande | [Modèle de correspondance PO](po-matching-pattern.md)                 |
+| Itinéraire selon conditions        | [Modèle logique de décision](decision-logic-pattern.md)           |
+| Calculer et transformer des données     | [Modèle de transformation des données](data-transformation-pattern.md) |
 
----
+***
 
-### Par secteur/service
+### Par industrie/département
 
-| Secteur/Service | Modèles recommandés |
-|---------------------|---------------------|
-| **Finance/Comptabilité** | [PO Matching](po-matching-pattern.md), [Gestion des tâches](task-management-pattern.md), [Transformation des données](data-transformation-pattern.md) |
-| **Achats** | [PO Matching](po-matching-pattern.md), [Logique de décision](decision-logic-pattern.md), [Intégration d'API](api-integration-pattern.md) |
-| **Opérations** | [Gestion des tâches](task-management-pattern.md), [Logique de décision](decision-logic-pattern.md) |
-| **IT/Intégration** | [Intégration d'API](api-integration-pattern.md), [Transformation des données](data-transformation-pattern.md) |
-| **Tous les services** | [Logique de décision](decision-logic-pattern.md), [Gestion des tâches](task-management-pattern.md) |
+| Industrie/Département    | Modèles recommandés                                                                                                                        |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Finance/Comptabilité** | [Correspondance de PO](po-matching-pattern.md), [Gestion des tâches](task-management-pattern.md), [Transformation des données](data-transformation-pattern.md) |
+| **Approvisionnement**        | [Correspondance de PO](po-matching-pattern.md), [Logique de décision](decision-logic-pattern.md), [Intégration API](api-integration-pattern.md)           |
+| **Opérations**         | [Gestion des tâches](task-management-pattern.md), [Logique de décision](decision-logic-pattern.md)                                                  |
+| **IT/Intégration**     | [Intégration API](api-integration-pattern.md), [Transformation des données](data-transformation-pattern.md)                                        |
+| **Tous les départements**    | [Logique de décision](decision-logic-pattern.md), [Gestion des tâches](task-management-pattern.md)                                                  |
 
----
+***
 
 ## Comment utiliser ces modèles
 
-### Étape 1 : Choisir un modèle
+### Étape 1 : Choisissez un modèle
 
-1. Passez en revue les descriptions des modèles ci-dessus
-2. Identifiez le modèle qui correspond à votre cas d'usage
-3. Vérifiez la complexité et le temps de mise en place estimé
-4. Lisez la section « Quand l'utiliser » du guide du modèle
+1. Consultez les descriptions des modèles ci-dessus
+2. Identifiez quel modèle correspond à votre cas d'utilisation
+3. Vérifiez la complexité et le temps de configuration estimé
+4. Consultez la section « Quand utiliser » dans le guide des modèles.
 
-### Étape 2 : Vérifier les prérequis
+### Étape 2 : Vérifier les conditions préalables
 
-Chaque guide de modèle liste :
-- Les connaissances requises
-- Les guides connexes à lire en premier
-- Les cartes qui seront utilisées
-- Les exigences de configuration
+Chaque guide de modèles répertorie :
 
-### Étape 3 : Suivre les instructions étape par étape
+* Connaissances requises
+* Guides connexes à lire en premier
+* Cartes qui seront utilisées
+* Exigences de configuration
 
-Chaque modèle fournit :
-- Un exemple de workflow complet
-- Un guide de mise en œuvre étape par étape
-- Des modèles de configuration
-- Des exemples concrets
-- Des conseils de dépannage
+### Étape 3 : suivez les instructions étape par étape
 
-### Étape 4 : Adapter à vos besoins
+Chaque modèle fournit :
 
-- Adaptez l'exemple à vos règles métier
-- Ajustez les seuils et les tolérances
-- Modifiez la logique de routage
-- Ajoutez ou supprimez des étapes selon vos besoins
-- Testez minutieusement avant la mise en production
+* Exemple de flux de travail complet
+* Guide de mise en œuvre étape par étape
+* Modèles de configuration
+* Exemples concrets
+* Conseils de dépannage
 
-### Étape 5 : Surveiller et optimiser
+### Étape 4 : Personnalisez selon vos besoins
 
-- Suivez les performances du workflow
-- Surveillez les taux de réussite
-- Recueillez les retours des utilisateurs
-- Affinez la configuration
-- Documentez les personnalisations
+* Adaptez l'exemple à vos règles métier
+* Ajuster les seuils et les tolérances
+* Modifier la logique de routage
+* Ajouter/supprimer des étapes selon vos besoins
+* Testez minutieusement avant utilisation en production
 
----
+### Étape 5 : Surveiller et optimiser
 
-## Combinaisons de modèles
+* Suivre les performances du flux de travail
+* Surveiller les taux de réussite
+* Recueillir les commentaires des utilisateurs
+* Affiner la configuration
+* Personnalisations de documents
 
-De nombreux scénarios réels nécessitent la combinaison de plusieurs modèles :
+***
 
-### Exemple 1 : Traitement complet des factures
+## Combinaisons de motifs
+
+De nombreux scénarios du monde réel nécessitent de combiner plusieurs modèles :
+
+### Exemple 1 : Terminer le traitement des factures
 
 ```
 1. API Integration Pattern → Fetch current pricing
@@ -231,7 +237,7 @@ De nombreux scénarios réels nécessitent la combinaison de plusieurs modèles 
 5. Task Management Pattern → Create approval tasks
 ```
 
-### Exemple 2 : Approbation de factures de montant élevé
+### Exemple 2 : Approbation de factures de grande valeur
 
 ```
 1. Data Transformation Pattern → Calculate amounts
@@ -240,7 +246,7 @@ De nombreux scénarios réels nécessitent la combinaison de plusieurs modèles 
 4. API Integration Pattern → Notify external systems
 ```
 
-### Exemple 3 : Gestion des exceptions
+### Exemple 3 : gestion des exceptions
 
 ```
 1. PO Matching Pattern → Detect variances
@@ -249,130 +255,134 @@ De nombreux scénarios réels nécessitent la combinaison de plusieurs modèles 
 4. Data Transformation Pattern → Calculate impact
 ```
 
----
+***
 
-## Gabarits de modèles
+## Modèles de modèles
 
-Chaque modèle contient ces sections standardisées :
+Chaque modèle comprend ces sections standardisées :
 
-1. **Vue d'ensemble** - Ce que fait le modèle
-2. **Quand l'utiliser** - Cas d'usage appropriés
-3. **Exemple complet** - Scénario réel
-4. **Étape par étape** - Instructions de mise en œuvre
-5. **Configuration** - Gabarits de configuration des cartes
-6. **Diagramme de workflow** - Représentation visuelle
-7. **Variantes avancées** - Mises en œuvre alternatives
+1. **Aperçu** - Que fait le modèle
+2. **Quand utiliser** - Cas d'utilisation appropriés
+3. **Exemple complet** - Scénario du monde réel
+4. **Pas à pas** - Instructions de mise en œuvre
+5. **Configuration** - Modèles de configuration de carte
+6. **Schéma de workflow** - Représentation visuelle
+7. **Variations avancées** - Implémentations alternatives
 8. **Gestion des erreurs** - Problèmes courants et solutions
-9. **Liste de vérification de test** - Étapes de validation
-10. **Modèles connexes** - Modèles complémentaires
-11. **Guides connexes** - Documentation de référence
+9. **Liste de contrôle des tests** - Étapes de validation
+10. **Modèles associés** - Modèles complémentaires
+11. **Guides associés** - Documentation de référence
 
----
+***
 
 ## Obtenir de l'aide
 
-### Ressources de support pour les modèles
+### Ressources de support de modèle
 
-**Documentation :**
-- [Index complet des guides de workflow](../README.md)
-- [Guides de cartes individuels](../then/action/)
-- [Référence des cartes de condition](../and/condition-cards-complete-guide.md)
-- [Carte des liens du workflow](../../../../WORKFLOW_LINKING_MAP.md)
+**Documentation :**
 
-**Ressources complémentaires :**
-- [Guide de référence rapide](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
-- [Notes de version d'octobre 2025](../changelog/2025-10-october.md)
-- [Référence du versionnage des cartes](../../../docs/card_version.md)
+* [Index complet du guide de flux de travail](..)
+* [Guides de cartes individuelles](../then/action)
+* [Référence des cartes de condition](../and/condition-cards-complete-guide.md)
+* [Carte de liaison du flux de travail](https://github.com/Fellow-Consulting-AG/docbits/tree/main/WORKFLOW_LINKING_MAP.md)
 
-**Contact :**
-- Retours sur les modèles : docs@docbits.com
-- Support technique : support@docbits.com
-- Aide à la mise en œuvre : consulting@docbits.com
+**Ressources supplémentaires :**
 
----
+* [Guide de référence rapide](https://github.com/Fellow-Consulting-AG/docbits/tree/main/WORKFLOW_LINKING_QUICK_REFERENCE.md)
+* [Notes de version d'octobre 2025](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/workflow/changelog/2025-10-october.md)
+* [Référence de version de carte](../cards-overview/po-comparison-versions-guide.md)
 
-## Statistiques des modèles
+**Contacter :**
 
-| Indicateur | Valeur |
-|--------|-------|
-| **Nombre total de modèles** | 5 |
-| **Nombre total de cartes couvertes** | 30+ |
-| **Documentation combinée** | ~1 200 lignes |
-| **Scénarios d'exemple** | 25+ |
-| **Gabarits de configuration** | 15+ |
-| **Diagrammes de workflow** | 5 diagrammes complets |
-| **Références croisées** | 87+ liens internes |
+* Commentaires sur les modèles : docs@docbits.com
+* Support technique : support@docbits.com
+* Aide à la mise en œuvre : consulting@docbits.com
 
----
+***
+
+## Statistiques de modèles
+
+| Métrique                      | Valeur               |
+| --------------------------- | ------------------- |
+| **Modèles totaux**          | 5                   |
+| **Total des cartes couvertes**     | 30+                 |
+| **Documentation combinée**  | \~1 200 lignes       |
+| **Exemples de scénarios**       | 25+                 |
+| **Modèles de configuration** | 15+                 |
+| **Diagrammes de flux de travail**       | 5 schémas complets |
+| **Références croisées**        | 87+ liens internes  |
+
+***
 
 ## Contribuer aux modèles
 
-Vous avez un modèle de workflow qui pourrait profiter à d'autres ?
+Vous disposez d'un modèle de flux de travail qui pourrait profiter à d'autres ?
 
-**Consignes de contribution :**
+**Directives de contribution aux modèles :**
 
-1. **Documentez votre workflow**
-   - Scénario métier clair
-   - Mise en œuvre étape par étape
-   - Exemples de configuration fonctionnels
-   - Résultats de tests en conditions réelles
+1. **Documentez votre flux de travail**
+   * Scénario commercial clair
+   * Mise en œuvre étape par étape
+   * Exemples de configuration de travail
+   * Résultats des tests en situation réelle
+2. **Modèle de modèle de suivi**
+   * Utiliser la structure de section standard
+   * Inclure tous les éléments requis
+   * Fournir des diagrammes/exemples
+   * Ajouter un guide de dépannage
+3. **Soumettre pour examen**
+   * Envoyez un e-mail à : docs@docbits.com
+   * Inclure : description du modèle, cas d'utilisation, guide de mise en œuvre
+   * Nous examinerons et éventuellement ajouterons à la documentation officielle
 
-2. **Suivez le gabarit de modèle**
-   - Utilisez la structure de sections standard
-   - Incluez tous les éléments requis
-   - Fournissez des diagrammes/exemples
-   - Ajoutez un guide de dépannage
+**Avantages :**
 
-3. **Soumettez pour relecture**
-   - Envoyez un e-mail à : docs@docbits.com
-   - Joignez : description du modèle, cas d'usage, guide de mise en œuvre
-   - Nous l'examinerons et l'ajouterons éventuellement à la documentation officielle
+* Aidez les autres utilisateurs de DocBits
+* Soyez reconnu dans la documentation
+* Améliorer la base de connaissances globale des produits
+* Recevez des commentaires sur votre mise en œuvre
 
-**Avantages :**
-- Aidez les autres utilisateurs de DocBits
-- Soyez reconnu dans la documentation
-- Améliorez la base de connaissances globale du produit
-- Recevez des retours sur votre mise en œuvre
-
----
+***
 
 ## Journal des modifications
 
 ### Version 1.0 (23 octobre 2025)
-- Première publication de 5 modèles de workflow complets
-- Ajout du modèle d'intégration d'API
-- Ajout du modèle de gestion des tâches
-- Ajout du modèle de rapprochement de commandes (PO Matching)
-- Ajout du modèle de logique de décision
-- Ajout du modèle de transformation des données
-- Mise en place des liens de références croisées (87 liens)
-- Création de l'aide au choix du modèle
 
----
+* Version initiale de 5 modèles de flux de travail complets
+* Modèle d'intégration d'API ajouté
+* Modèle de gestion des tâches ajouté
+* Modèle de correspondance de bon de commande ajouté
+* Modèle logique de décision ajouté
+* Modèle de transformation de données ajouté
+* Mise en place de liens de références croisées (87 liens)
+* Création d'un guide de sélection de motifs
+
+***
 
 ## Prochaines étapes
 
-**Nouveau dans les modèles de workflow ?**
-1. Commencez par le [Modèle de gestion des tâches](task-management-pattern.md) - le plus facile à comprendre
-2. Consultez le [Modèle de logique de décision](decision-logic-pattern.md) - fondamental pour tous les workflows
-3. Explorez le [Modèle d'intégration d'API](api-integration-pattern.md) - besoin d'intégration fréquent
+**Nouveau dans les modèles de flux de travail ?**
+
+1. Commencez par [Task Management Pattern](task-management-pattern.md) - le plus simple à comprendre
+2. Examinez [Modèle logique de décision](decision-logic-pattern.md) - fondateur pour tous les flux de travail
+3. Explorez [Modèle d'intégration API](api-integration-pattern.md) - besoin d'intégration courant
 
 **Prêt à mettre en œuvre ?**
+
 1. Choisissez votre modèle dans la liste ci-dessus
-2. Lisez le guide complet du modèle
-3. Vérifiez les prérequis et les guides connexes
+2. Lire le guide complet des modèles
+3. Examiner les conditions préalables et les guides associés
 4. Suivez les instructions étape par étape
-5. Testez avec des documents d'exemple
-6. Passez en production
-7. Surveillez et optimisez
+5. Testez avec des exemples de documents
+6. Déployer en production
+7. Surveiller et optimiser
 
 **Besoin d'aide supplémentaire ?**
-- Consultez la [Vue d'ensemble de la documentation des workflows](../README.md)
-- Consultez le [Guide de référence rapide](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
-- Contactez l'équipe de support
 
----
+* Consultez [Présentation de la documentation sur le workflow](..)
+* Consultez le [Guide de référence rapide](https://github.com/Fellow-Consulting-AG/docbits/tree/main/WORKFLOW_LINKING_QUICK_REFERENCE.md)
+* Contacter l'équipe d'assistance
 
-**Dernière mise à jour :** 23 octobre 2025
-**Maintenu par :** Équipe Documentation
-**Version :** 1.0
+***
+
+**Dernière mise à jour :** 23 octobre 2025 **Maintenu par :** Équipe de documentation **Version :** 1.0

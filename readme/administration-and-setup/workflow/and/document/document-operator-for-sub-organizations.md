@@ -1,6 +1,6 @@
-# Document Operator for Sub-Organizations
+# Opérateur de documents pour les sous-organisations
 
-<figure><img src="../../../../.gitbook/assets/image (42).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f97575f86ed-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## Objectif :
 
@@ -8,13 +8,13 @@ Cette carte de workflow évalue si un document fait partie d'une sous-organisati
 
 ## Composants de la carte :
 
-1. **Operator**
-   * **Description :** définit si le document doit ou non faire partie de la sous-organisation spécifiée.
-   * **Options :**
+1. **Opérateur**
+   * **Descriptif :** définit si le document doit ou non faire partie de la sous-organisation spécifiée.
+   * **Possibilités :**
      * **Is :** le document doit faire partie de la sous-organisation spécifiée pour que la condition soit vraie.
-     * **Is Not :** le document ne doit pas faire partie de la sous-organisation spécifiée pour que la condition soit vraie.
-2. **Sub-org**
-   * **Description :** spécifie la sous-organisation à laquelle le document doit être comparé.
+     * **N'est-ce pas :** le document ne doit pas faire partie de la sous-organisation spécifiée pour que la condition soit vraie.
+2. **Sous-org**
+   * **Descriptif :** spécifie la sous-organisation à laquelle le document doit être comparé.
    * **Détail :** elle doit correspondre à l'identifiant de la sous-organisation. La comparaison vérifie si le document appartient à la sous-organisation spécifiée.
 
 ## Fonctionnalité :
@@ -33,3 +33,15 @@ Cette carte de workflow évalue si un document fait partie d'une sous-organisati
 ## Conclusion :
 
 La carte de workflow « Document in Sub-organization » est un outil utile pour automatiser des actions selon qu'un document appartient ou non à une sous-organisation particulière. En garantissant que les documents sont traités selon des règles propres à la sous-organisation, cette carte améliore l'efficacité du workflow et garantit que les actions sont exécutées dans le bon contexte organisationnel.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemple pratique
+
+**Quand utiliser :** Acheminer les documents appartenant à une unité commerciale.
+
+**Configuration :** Sélectionnez la sous-organisation `Demo North` et l'opérateur égal.
+
+**Résultat attendu et contre-exemple :** Un document en `Demo North` est réussi. Un document dans `Demo South` échoue.
+
+Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.

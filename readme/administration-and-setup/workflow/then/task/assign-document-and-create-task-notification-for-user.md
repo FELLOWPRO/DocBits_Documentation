@@ -1,38 +1,38 @@
-# Assign Document and Create Task/Notification for User
+# Attribuer un document et créer une tâche/notification pour l'utilisateur
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-b4ef3c2e3a99-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif**
 
-La carte de workflow « **Assign Document and Create Task/Notification for User** » assigne un document à un utilisateur spécifié, crée une tâche ou une notification avec des détails configurables, et envoie éventuellement une notification par e-mail à l'utilisateur. Cette carte permet également de définir une valeur de priorité numérique pour déterminer l'ordre d'exécution.
+La carte de workflow « **Attribuer un document et créer une tâche/notification pour l'utilisateur** » assigne un document à un utilisateur spécifié, crée une tâche ou une notification avec des détails configurables, et envoie éventuellement une notification par e-mail à l'utilisateur. Cette carte permet également de définir une valeur de priorité numérique pour déterminer l'ordre d'exécution.
 
 ## **Composants de la carte**
 
-1. **User**
-   * **Description :** spécifie l'utilisateur qui recevra la tâche ou la notification.
+1. **Utilisateur**
+   * **Descriptif :** spécifie l'utilisateur qui recevra la tâche ou la notification.
    * **Détail :** un menu déroulant pour sélectionner l'utilisateur auquel le document et la tâche/notification seront assignés.
-2. **Task/Notification**
-   * **Description :** spécifie le type d'action à créer pour l'utilisateur.
+2. **Tâche/Notification**
+   * **Descriptif :** spécifie le type d'action à créer pour l'utilisateur.
    * **Détail :** une liste déroulante pour choisir « Task » ou « Notification » selon l'action prévue.
-3. **Title**
-   * **Description :** le titre de la tâche ou de la notification.
+3. **Titre**
+   * **Descriptif :** le titre de la tâche ou de la notification.
    * **Détail :** un champ pour fournir un titre concis et descriptif à la tâche ou à la notification.
-4. **Description**
-   * **Description :** des détails supplémentaires sur la tâche ou la notification.
+4. **Descriptif**
+   * **Descriptif :** des détails supplémentaires sur la tâche ou la notification.
    * **Détail :** un champ pour décrire l'objet de la tâche ou fournir un contexte à la notification.
-5. **Priority**
-   * **Description :** définit le niveau d'urgence de la tâche ou de la notification.
-   * **Options :**
+5. **Priorité**
+   * **Descriptif :** définit le niveau d'urgence de la tâche ou de la notification.
+   * **Possibilités :**
      * **High :** nécessite une attention immédiate.
-     * **Medium :** important mais non urgent.
+     * **Moyen :** important mais non urgent.
      * **Low :** peut être traité plus tard.
-6. **Send Mail**
-   * **Description :** configure si une notification par e-mail est envoyée à l'utilisateur.
-   * **Options :**
+6. **Envoyer un courrier**
+   * **Descriptif :** configure si une notification par e-mail est envoyée à l'utilisateur.
+   * **Possibilités :**
      * **True :** envoie une notification par e-mail à l'utilisateur.
      * **False :** aucune notification par e-mail n'est envoyée.
-7. **Value**
-   * **Description :** définit la priorité numérique de l'attribution du document.
+7. **Valeur**
+   * **Descriptif :** définit la priorité numérique de l'attribution du document.
    * **Détail :** un champ pour saisir une valeur numérique, où les nombres les plus faibles indiquent une priorité plus élevée.
 
 ## **Fonctionnalité**
@@ -61,3 +61,15 @@ La carte de workflow « **Assign Document and Create Task/Notification for User*
 ## **Conclusion**
 
 La carte de workflow « Assign Document and Create Task/Notification for User » garantit que les documents sont assignés à l'utilisateur approprié tout en créant des tâches ou des notifications avec des priorités définies et des notifications par e-mail facultatives. Cette carte aide à rationaliser la délégation des tâches et améliore l'efficacité du workflow.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemple pratique
+
+**Quand utiliser :** Créez une tâche de révision par l'utilisateur parallèlement à l'attribution de documents prioritaires.
+
+**Configuration :** Sélectionnez `Demo Reviewer A`, le titre de la tâche `Review invoice`, la priorité de la tâche et la priorité de l'affectation.
+
+**Résultat attendu et contre-exemple :** Vérifiez que l'affectation du document et la tâche/notification existent pour l'utilisateur sélectionné, avec les priorités prévues.
+
+Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.

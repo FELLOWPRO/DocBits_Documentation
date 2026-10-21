@@ -1,6 +1,6 @@
-# Unit Price Combined with Fields
+# Prix unitaire combiné avec les champs
 
-<figure><img src="../../../../.gitbook/assets/image (26) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-34234b404af7-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -8,20 +8,20 @@ Cette carte de workflow est conçue pour évaluer si le prix unitaire, combiné 
 
 ## **Composants de la carte :**
 
-1. **Field Name**
-   * **Description :** spécifie le champ de document qui contient la valeur à combiner avec le prix unitaire.
+1. **Nom du champ**
+   * **Descriptif :** spécifie le champ de document qui contient la valeur à combiner avec le prix unitaire.
    * **Détail :** il doit correspondre à l'identifiant exact du premier champ dans le document.
-2. **Operator**
-   * **Description :** définit la condition qui sera appliquée à la comparaison entre la valeur combinée et la valeur spécifiée.
-   * **Options :**
-     * **Equals (=) :** vérifie si la valeur combinée du prix unitaire et du champ correspond à la valeur spécifiée.
-     * **Not Equals (≠) :** s'assure que la valeur combinée du prix unitaire et du champ diffère de la valeur spécifiée.
-     * **Greater Than (>) :** vérifie si la valeur combinée est supérieure à la valeur spécifiée.
-     * **Greater or Equals (≥) :** vérifie si la valeur combinée est supérieure ou égale à la valeur spécifiée.
-     * **Lesser Than (<) :** vérifie si la valeur combinée est inférieure à la valeur spécifiée.
-     * **Lesser or Equals (≤) :** vérifie si la valeur combinée est inférieure ou égale à la valeur spécifiée.
-3. **Value**
-   * **Description :** spécifie la valeur à laquelle la valeur combinée du prix unitaire et du champ sera comparée.
+2. **Opérateur**
+   * **Descriptif :** définit la condition qui sera appliquée à la comparaison entre la valeur combinée et la valeur spécifiée.
+   * **Possibilités :**
+     * **Est égal à (=) :** vérifie si la valeur combinée du prix unitaire et du champ correspond à la valeur spécifiée.
+     * **Différent (≠) :** s'assure que la valeur combinée du prix unitaire et du champ diffère de la valeur spécifiée.
+     * **Supérieur à (>) :** vérifie si la valeur combinée est supérieure à la valeur spécifiée.
+     * **Supérieur ou égal à (≥) :** vérifie si la valeur combinée est supérieure ou égale à la valeur spécifiée.
+     * **Inférieur à (<) :** vérifie si la valeur combinée est inférieure à la valeur spécifiée.
+     * **Inférieur ou égal à (≤) :** vérifie si la valeur combinée est inférieure ou égale à la valeur spécifiée.
+3. **Valeur**
+   * **Descriptif :** spécifie la valeur à laquelle la valeur combinée du prix unitaire et du champ sera comparée.
    * **Détail :** la valeur doit être une valeur numérique.
 
 ## **Fonctionnalité :**

@@ -1,48 +1,48 @@
-# Modèle de logique de décision
+# Modèle logique de décision
 
-**Type de modèle :** Routage & logique conditionnels
-**Complexité :** Moyenne
-**Mise en place estimée :** 30-45 minutes
-**Cas d'usage courants :** Routage multi-chemins, traitement conditionnel, arbres de décision, mise en œuvre de règles métier
+**Type de modèle :** Routage & logique conditionnels **Complexité :** Moyenne **Mise en place estimée :** 30-45 minutes **Cas d'usage courants :** Routage multi-chemins, traitement conditionnel, arbres de décision, mise en œuvre de règles métier
 
----
+***
 
-Vous construisez ce modèle dans le **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Cliquez sur **Add Card** et ouvrez la catégorie **Logic** — elle contient les cartes de condition et de branchement qui pilotent l'arbre de décision, et que vous combinez avec le groupe **And** pour évaluer plusieurs conditions :
+Vous construisez ce modèle dans le **Générateur de flux de travail** (Workflow Dashboard → Workflow List → Add Workflow). Cliquez sur **Ajouter une carte** et ouvrez la catégorie **Logique** — elle contient les cartes de condition et de branchement qui pilotent l'arbre de décision, et que vous combinez avec le groupe **Et** pour évaluer plusieurs conditions :
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Bibliothèque Add Card dans le Workflow Builder, regroupée par catégorie"><figcaption><p>La bibliothèque <strong>Add Card</strong> — les cartes de condition et de branchement se trouvent sous la catégorie <strong>Logic</strong>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
----
+***
 
 ## Vue d'ensemble du modèle
 
 Ce modèle montre comment mettre en place une logique de décision complexe dans les workflows DocBits à l'aide de cartes de condition pour acheminer les documents par différents chemins de traitement en fonction des attributs des documents, des valeurs de champs et des règles métier.
 
 **Ce que fait ce modèle :**
+
 1. Évalue plusieurs conditions de façon séquentielle ou parallèle
 2. Route les documents vers différents chemins en fonction des conditions
 3. Met en œuvre des règles et des politiques métier
 4. Traite des arbres de décision complexes
 5. Combine plusieurs critères pour les décisions de routage
 
----
+***
 
 ## Quand utiliser ce modèle
 
 Utilisez ce modèle lorsque vous devez :
-- ✅ Router les documents par seuils de montant
-- ✅ Appliquer des règles différentes selon les types de documents
-- ✅ Mettre en œuvre une logique d'approbation à plusieurs niveaux
-- ✅ Gérer des politiques métier complexes
-- ✅ Créer un routage dynamique basé sur plusieurs critères
-- ✅ Mettre en œuvre une logique de gestion des exceptions
-- ✅ Créer des matrices d'approbation
+
+* ✅ Router les documents par seuils de montant
+* ✅ Appliquer des règles différentes selon les types de documents
+* ✅ Mettre en œuvre une logique d'approbation à plusieurs niveaux
+* ✅ Gérer des politiques métier complexes
+* ✅ Créer un routage dynamique basé sur plusieurs critères
+* ✅ Mettre en œuvre une logique de gestion des exceptions
+* ✅ Créer des matrices d'approbation
 
 **N'utilisez pas ce modèle lorsque :**
-- ❌ un workflow linéaire simple suffit
-- ❌ tous les documents suivent le même chemin
-- ❌ aucun traitement conditionnel n'est nécessaire
 
----
+* ❌ un workflow linéaire simple suffit
+* ❌ tous les documents suivent le même chemin
+* ❌ aucun traitement conditionnel n'est nécessaire
+
+***
 
 ## Types de logique de décision
 
@@ -56,6 +56,7 @@ ELSE:
 ```
 
 **Exemple :**
+
 ```
 IF Amount > €10,000:
   → Assign to Director
@@ -73,6 +74,7 @@ ELSE:
 ```
 
 **Exemple :**
+
 ```
 IF Amount > €10,000 AND Supplier = "New" AND Department = "IT":
   → Assign to IT Director + CFO (dual approval)
@@ -90,6 +92,7 @@ ELSE:
 ```
 
 **Exemple :**
+
 ```
 IF Amount > €50,000 OR Supplier is "Blocked" OR Document has "Urgent" flag:
   → Escalate immediately
@@ -113,6 +116,7 @@ ELSE:
 ```
 
 **Exemple :**
+
 ```
 IF Document_Type = "Invoice":
   IF Amount > €10,000:
@@ -126,13 +130,14 @@ ELSE IF Document_Type = "Credit Note":
     → Standard credit workflow
 ```
 
----
+***
 
 ## Exemple complet de workflow
 
 ### Scénario : Matrice d'approbation des factures
 
 **Règles métier :**
+
 1. Montant < 1 000 € : Approbation automatique
 2. Montant 1 000-10 000 € : Approbation par la responsable
 3. Montant > 10 000 € ET nouveau fournisseur : Approbation par le directeur + CFO
@@ -179,13 +184,14 @@ STEP 3: Amount-Based Routing (if not urgent)
         → Deadline: 2 days
 ```
 
----
+***
 
 ## Mise en œuvre étape par étape
 
 ### Étape 1 : Définir les cartes de condition
 
 **Condition 1 : Seuil de montant**
+
 ```
 Card: CONDITION_DOC_FIELD_AMOUNT
 Field: Total_Amount
@@ -195,6 +201,7 @@ Currency: EUR
 ```
 
 **Condition 2 : Vérification du type de document**
+
 ```
 Card: CONDITION_DOC_TYPE_IS_ISNOT
 Document Type: IS
@@ -202,6 +209,7 @@ Type: Invoice
 ```
 
 **Condition 3 : Statut du fournisseur**
+
 ```
 Card: CONDITION_SUPPLIER_STATUS_IS_ISNOT
 Supplier Status: IS
@@ -209,6 +217,7 @@ Status: ACTIVE
 ```
 
 **Condition 4 : Vérification d'un nouveau fournisseur**
+
 ```
 Card: CONDITION_DOC_FIELD_DATE
 Field: Supplier_First_Transaction_Date
@@ -218,11 +227,12 @@ Value: {{TODAY_MINUS_180_DAYS}}
 
 **Référence du guide :** [Guide complet des cartes de condition](../and/condition-cards-complete-guide.md)
 
----
+***
 
 ### Étape 2 : Construire l'arbre de décision
 
 **Niveau 1 : Type de document**
+
 ```
 Workflow: "Invoice Processing"
 
@@ -240,6 +250,7 @@ ELSE:
 ```
 
 **Niveau 2 : Seuils de montant (pour les factures)**
+
 ```
 IF Amount < €1,000:
   → Branch to "Auto-Approve Path"
@@ -257,6 +268,7 @@ ELSE (Amount ≥ €50,000):
 ```
 
 **Niveau 3 : Analyse du fournisseur (pour les factures de montant élevé)**
+
 ```
 IF Supplier_Status = "BLOCKED":
   → STOP processing
@@ -277,11 +289,12 @@ ELSE:
   → Standard high-value workflow
 ```
 
----
+***
 
 ### Étape 3 : Créer les actions de routage
 
 **Chemin A : Approbation automatique (montant < 1 000 €)**
+
 ```
 Actions:
 1. Set field "Approval_Type" = "AUTO"
@@ -292,6 +305,7 @@ Actions:
 ```
 
 **Chemin B : Approbation par la responsable (1 000-10 000 €)**
+
 ```
 Actions:
 1. Set field "Approval_Type" = "MANUAL"
@@ -308,6 +322,7 @@ Actions:
 ```
 
 **Chemin C : Approbation par le directeur (10 000-50 000 €)**
+
 ```
 Actions:
 1. Set field "Approval_Type" = "MANUAL"
@@ -328,6 +343,7 @@ Actions:
 ```
 
 **Chemin D : Approbation par la direction générale (≥ 50 000 €)**
+
 ```
 Actions:
 1. Set field "Approval_Type" = "EXECUTIVE"
@@ -345,7 +361,7 @@ Actions:
 10. If any rejected: Executive review meeting
 ```
 
----
+***
 
 ## Modèles avancés de logique de décision
 
@@ -373,6 +389,7 @@ Routing:
 ```
 
 **Mise en œuvre :**
+
 ```
 1. ACTION_CALCULATE_FIELD: Calculate risk score
 2. ACTION_SET_FIELD_TO_NUMBER: Store score
@@ -380,7 +397,7 @@ Routing:
 4. Route based on score
 ```
 
----
+***
 
 ### Modèle 2 : Matrice basée sur le service
 
@@ -407,6 +424,7 @@ Department Matrix:
 ```
 
 **Mise en œuvre :**
+
 ```
 1. Check Department field
 2. Based on department, check amount threshold
@@ -414,7 +432,7 @@ Department Matrix:
 4. Different thresholds per department
 ```
 
----
+***
 
 ### Modèle 3 : Logique basée sur le temps
 
@@ -448,7 +466,7 @@ Fiscal Period:
     - Additional checks
 ```
 
----
+***
 
 ### Modèle 4 : Routage basé sur les exceptions
 
@@ -485,7 +503,7 @@ Exception Types:
   - Amount discrepancy
 ```
 
----
+***
 
 ## Diagramme complet de logique de décision
 
@@ -616,13 +634,14 @@ INVOICE ARRIVES
 └─ [All decision levels processed]
 ```
 
----
+***
 
 ## Bonnes pratiques de configuration
 
 ### 1. Garder la logique claire et maintenable
 
 ✅ **Bon :**
+
 ```
 IF Amount > 10000:
   → High value path
@@ -631,12 +650,14 @@ ELSE:
 ```
 
 ❌ **Mauvais (trop complexe) :**
+
 ```
 IF (Amount > 10000 AND (Supplier = "A" OR Supplier = "B") AND NOT (Status = "X" OR Status = "Y") AND Department IN [1,2,3]):
   → Complex path
 ```
 
 **Mieux : Décomposer en étapes :**
+
 ```
 Step 1: IF Amount > 10000: Continue, ELSE: Standard path
 Step 2: IF Supplier in allowed list: Continue, ELSE: Review
@@ -644,17 +665,19 @@ Step 3: IF Status valid: Continue, ELSE: Reject
 Step 4: IF Department authorized: Approve, ELSE: Escalate
 ```
 
----
+***
 
 ### 2. Documenter la logique de décision
 
 **Toujours inclure :**
-- L'objectif de chaque point de décision
-- La règle métier mise en œuvre
-- Les résultats attendus
-- La gestion des exceptions
+
+* L'objectif de chaque point de décision
+* La règle métier mise en œuvre
+* Les résultats attendus
+* La gestion des exceptions
 
 **Exemple de documentation :**
+
 ```
 Decision Point: Amount Threshold Check
 Business Rule: BR-INV-001 (Invoice Approval Matrix)
@@ -668,34 +691,36 @@ Updated: 2025-10-23
 Owner: Finance Department
 ```
 
----
+***
 
 ### 3. Tester tous les chemins
 
 **Matrice de test :**
 
-| Cas de test | Montant | Type | Fournisseur | Chemin attendu | Statut |
-|-----------|--------|------|----------|---------------|--------|
-| TC1 | €500 | Invoice | Existing | Auto-approve | ✅ |
-| TC2 | €5,000 | Invoice | Existing | Manager | ✅ |
-| TC3 | €15,000 | Invoice | New | Director+CFO | ✅ |
-| TC4 | €60,000 | Invoice | Existing | Executive | ✅ |
-| TC5 | €2,000 | Credit Note | Existing | Credit workflow | ✅ |
-| TC6 | €100,000 | Invoice | Blocked | Stop & Escalate | ✅ |
+| Cas de test | Montant  | Tapez        | Fournisseur | Chemin attendu  | Statut |
+| ----------- | -------- | ----------- | ----------- | --------------- | ------ |
+| TC1         | €500     | Facture     | Existant    | Auto-approve    | ✅      |
+| TC2         | €5,000   | Facture     | Existant    | Gestionnaire         | ✅      |
+| TC3         | €15,000  | Facture     | New         | Director+CFO    | ✅      |
+| TC4         | €60,000  | Facture     | Existant    | Executive       | ✅      |
+| TC5         | €2,000   | Note de crédit | Existant    | Flux de travail de crédit | ✅      |
+| TC6         | €100,000 | Facture     | Bloqué     | Arrêter et escalader | ✅      |
 
----
+***
 
 ### 4. Surveiller les indicateurs de décision
 
 **Suivre :**
-- La répartition sur les chemins de décision
-- Le taux d'approbation automatique
-- Le taux de révision manuelle
-- Le temps de traitement moyen par chemin
-- Les taux d'exception
-- L'utilisation des chemins
+
+* La répartition sur les chemins de décision
+* Le taux d'approbation automatique
+* Le taux de révision manuelle
+* Le temps de traitement moyen par chemin
+* Les taux d'exception
+* L'utilisation des chemins
 
 **Exemple d'indicateurs :**
+
 ```
 Month: October 2025
 Total Invoices: 1,250
@@ -715,42 +740,41 @@ Processing Time:
 Exceptions: 15 (1.2%)
 ```
 
----
+***
 
 ## Modèles connexes
 
 ### Modèles qui fonctionnent bien ensemble :
 
-- **[Modèle de gestion des tâches](task-management-pattern.md)** – Créer des tâches en fonction des décisions
-- **[Modèle d'intégration d'API](api-integration-pattern.md)** – Récupérer des données pour la prise de décision
-- **[Modèle de rapprochement de commandes (PO Matching)](po-matching-pattern.md)** – Utiliser les résultats de commande dans les décisions
-- **[Modèle de transformation des données](data-transformation-pattern.md)** – Transformer les données avant les décisions
+* [**Modèle de gestion des tâches**](task-management-pattern.md) – Créer des tâches en fonction des décisions
+* [**Modèle d'intégration d'API**](api-integration-pattern.md) – Récupérer des données pour la prise de décision
+* [**Modèle de rapprochement de commandes (PO Matching)**](po-matching-pattern.md) – Utiliser les résultats de commande dans les décisions
+* [**Modèle de transformation des données**](data-transformation-pattern.md) – Transformer les données avant les décisions
 
----
+***
 
 ## Guides connexes
 
 ### Prérequis
-- [Guide complet des cartes de condition](../and/condition-cards-complete-guide.md) – Toutes les cartes de condition
-- [Guide de manipulation des champs](../then/document-field/field-manipulation-guide.md) – Opérations sur les champs
-- [Guide d'affectation](../then/assignee/assignment-user-guide.md) – Logique de routage
+
+* [Guide complet des cartes de condition](../and/condition-cards-complete-guide.md) – Toutes les cartes de condition
+* [Guide de manipulation des champs](../then/document-field/field-manipulation-guide.md) – Opérations sur les champs
+* [Guide d'affectation](../then/assignee/assignment-user-guide.md) – Logique de routage
 
 ### Cartes connexes
-- **CONDITION_DOC_FIELD_AMOUNT** – [Guide des cartes de condition](../and/condition-cards-complete-guide.md#field-conditions)
-- **CONDITION_DOC_TYPE_IS_ISNOT** – [Guide des cartes de condition](../and/condition-cards-complete-guide.md#condition-doc-type-is-isnot)
-- **CONDITION_SUPPLIER_STATUS_IS_ISNOT** – [Guide des cartes de condition](../and/condition-cards-complete-guide.md#condition-supplier-status-is-isnot)
-- **ACTION_ASSIGN_TO_USER** – [Guide d'affectation](../then/assignee/assignment-user-guide.md)
-- **tasks_create** – [Guide d'affectation des tâches](../then/task/task-assignment-guide.md)
+
+* **CONDITION\_DOC\_FIELD\_AMOUNT** – [Guide des cartes de condition](../and/condition-cards-complete-guide.md)
+* **CONDITION\_DOC\_TYPE\_IS\_ISNOT** – [Guide des cartes de condition](../and/condition-cards-complete-guide.md)
+* **CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT** – [Guide des cartes de condition](../and/condition-cards-complete-guide.md)
+* **ACTION\_ASSIGN\_TO\_USER** – [Guide d'affectation](../then/assignee/assignment-user-guide.md)
+* **tasks\_create** – [Guide d'affectation des tâches](../then/task/task-assignment-guide.md)
 
 ### Prochaines étapes
-- Créer des tâches : [Modèle de gestion des tâches](task-management-pattern.md)
-- Ajouter un rapprochement complexe : [Modèle de rapprochement de commandes (PO Matching)](po-matching-pattern.md)
-- Intégrer des API : [Modèle d'intégration d'API](api-integration-pattern.md)
 
----
+* Créer des tâches : [Modèle de gestion des tâches](task-management-pattern.md)
+* Ajouter un rapprochement complexe : [Modèle de rapprochement de commandes (PO Matching)](po-matching-pattern.md)
+* Intégrer des API : [Modèle d'intégration d'API](api-integration-pattern.md)
 
-**Version du modèle :** 1.0
-**Dernière mise à jour :** 23 octobre 2025
-**Difficulté :** Moyenne
-**Temps estimé :** 30-45 minutes
-**Taux de réussite :** Élevé
+***
+
+**Version du modèle :** 1.0 **Dernière mise à jour :** 23 octobre 2025 **Difficulté :** Moyenne **Temps estimé :** 30-45 minutes **Taux de réussite :** Élevé

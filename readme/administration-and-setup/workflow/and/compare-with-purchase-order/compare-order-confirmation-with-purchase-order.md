@@ -1,52 +1,54 @@
-# Compare Order Confirmation with Purchase order
+# Comparer la confirmation de commande avec le bon de commande
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4bbb1060027b-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (267).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-d49578e0648e-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
-## Objectif :
+## Objectif :
 
-Cette carte DocBits est conçue pour comparer un champ de données de commande spécifique — comme la quantité, la remise ou le prix unitaire — entre une confirmation de commande et un bon de commande. En permettant une comparaison ciblée d'un champ à la fois, elle garantit la précision dans la validation des points de données clés, préservant l'exactitude des commandes. La **Version 4** étend cette fonctionnalité en permettant des comparaisons entre différentes entités telles que le bon de commande, les quantités reçues et le document lui-même, ajoutant davantage de flexibilité et de contrôle au workflow.
+Cette carte DocBits est conçue pour comparer un champ de données de commande spécifique, tel que la quantité, la remise ou le prix unitaire, entre une confirmation de commande et un bon de commande. En permettant une comparaison ciblée d'un champ à la fois, il garantit la précision dans la validation des points de données clés, maintenant ainsi l'exactitude des commandes. La **Version 4** étend cette fonctionnalité en permettant des comparaisons entre différentes entités telles que le bon de commande, les quantités reçues et le document lui-même, ajoutant plus de flexibilité et de contrôle au flux de travail.
 
-## Composants de la carte :
+## Composants de la carte :
 
-1. **Any/All**&#x20;
-   * **Description :** détermine si la condition s'applique à une ou à toutes les lignes de la confirmation de commande.\
-     **Options :**
-     * **Any** : la comparaison se déclenche si la valeur du champ sélectionné dans une quelconque ligne de la confirmation de commande correspond à la valeur correspondante du bon de commande.
-     * **All** : la comparaison ne se déclenche que si la valeur du champ sélectionné dans toutes les lignes de la confirmation de commande correspond à la valeur correspondante du bon de commande.
-2. **Order Data Field**
-   * **Description** : spécifie le champ de données à comparer entre la confirmation de commande et le bon de commande.
-   * **Détail** : les utilisateurs peuvent sélectionner l'un des champs suivants pour la comparaison :
-     * **Quantity** : compare la quantité commandée à la quantité confirmée.
-     * **Discount** : vérifie que la remise de la confirmation correspond au bon de commande.
-     * **Unit Price** : garantit que le prix unitaire de la confirmation est aligné sur le bon de commande.
-3. **Operator**
-   * **Description** : définit la condition appliquée à la comparaison du champ de données sélectionné.
-   * **Options** :
-     * **Equals (=)** : confirme que la valeur correspond au bon de commande.
-     * **Not Equals (≠)** : s'assure que la valeur diffère du bon de commande.
-     * **Greater Than (>)** : vérifie que la valeur dépasse celle du bon de commande.
-     * **Greater or Equals (≥)** : confirme que la valeur est égale ou supérieure à celle du bon de commande.
-     * **Less Than (<)** : vérifie que la valeur est inférieure à celle du bon de commande.
-     * **Less or Equals (≤)** : confirme que la valeur est inférieure ou égale à celle du bon de commande.
+1. **Tous/Tous**
+   * **Descriptif :** Détermine si la condition s'applique à une ou à toutes les lignes de la confirmation de commande.\
+     **Options :**
+     * **Any** : La comparaison se déclenchera si la valeur du champ sélectionné dans n'importe quelle ligne de la confirmation de commande correspond à la valeur correspondante dans le bon de commande.
+     * **Tous** : La comparaison ne se déclenchera que si la valeur du champ sélectionné dans toutes les lignes de la confirmation de commande correspond à la valeur correspondante dans le bon de commande.
+2. **Champ de données de commande**
+   * **Descriptif** : Spécifie le champ de données à comparer entre la confirmation de commande et le bon de commande.
+   * **Détail** : Les utilisateurs peuvent sélectionner l'un des champs suivants à des fins de comparaison :
+     * **Quantité** : Compare la quantité commandée avec la quantité confirmée.
+     * **Remise** : Valide que la remise dans la confirmation correspond au bon de commande.
+     * **Prix unitaire** : garantit que le prix unitaire dans la confirmation correspond au bon de commande.
+3. **Opérateur**
+   * **Descriptif** : Définit la condition appliquée à la comparaison du champ de données sélectionné.
+   * **Possibilités** :
+     * **Égal à (=)** : Confirme que la valeur correspond au bon de commande.
+     * **Pas égal à (≠)** : garantit que la valeur est différente de celle du bon de commande.
+     * **Plus grand que (>)** : Vérifie que la valeur dépasse la valeur du bon de commande.
+     * **Supérieur ou égal à (≥)** : Confirme que la valeur est égale ou supérieure à la valeur du bon de commande.
+     * **Less Than (<)** : Vérifie que la valeur est inférieure à la valeur du bon de commande.
+     * **Moins ou égal à (≤)** : Confirme que la valeur est inférieure ou égale à la valeur du bon de commande.
 
-## **Composants supplémentaires dans la Version 4** :
+## **Composants supplémentaires dans la version 4** :
 
-* **Comparison Type** : sélectionne les entités à comparer. Les options incluent :
-  * **Purchase Order to Document** : compare les données du bon de commande au document associé.
-  * **Received to Document** : compare les données reçues (par ex. les quantités reçues) au document.
-  * **Purchase Order to Received** : compare les données du bon de commande aux quantités reçues.
+* **Type de comparaison** : Sélectionne les entités à comparer. Les options incluent :
+  * **Bon de commande vers document** : Compare les données du bon de commande avec le document associé.
+  * **Reçu dans le document** : Compare les données reçues (par exemple, les quantités reçues) avec le document.
+  * **Bon de commande à reçu** : Compare les données du bon de commande avec les quantités reçues.
 
-## Fonctionnalité :
+## Fonctionnalité :
 
-* **Comparaison de champ** : le système compare le champ de données de commande sélectionné (Unit Price, Discount ou Quantity) de la confirmation de commande à la valeur correspondante du bon de commande.
-* **Exécution de l'action** : selon le résultat de la comparaison et la condition de l'opérateur, la carte peut déclencher des actions de suivi, telles que des notifications ou des alertes.
+* **Comparaison de champs** : Le système compare le champ de données de commande sélectionné (Prix unitaire, Remise ou Quantité) de la confirmation de commande à la valeur correspondante dans le bon de commande.
+* **Exécution d'action** : en fonction du résultat de la comparaison et de l'état de l'opérateur, la carte peut déclencher des actions de suivi, telles que des notifications ou des alertes.
 
-## Scénario d'exemple :
+## Exemple de scénario :
 
-* Une confirmation de commande spécifie un **prix unitaire** de 50 $, tandis que le bon de commande indique 45 $. À l'aide de l'opérateur « Greater Than », la carte signale l'écart, permettant à l'équipe d'approvisionnement de le traiter avant le traitement.
+* Une confirmation de commande précise un **prix unitaire** de 50 $, tandis que le bon de commande indique 45 $. À l'aide de l'opérateur « Supérieur à », la carte signale l'écart, permettant à l'équipe d'approvisionnement d'y remédier avant le traitement.
 
-## Conclusion :
+## Conclusion :
 
-Cette carte simplifie la validation des champs de données de commande individuels, garantissant la conformité aux conditions du bon de commande. En isolant un champ à la fois pour la comparaison, elle facilite les examens ciblés et la prévention des erreurs dans le traitement des commandes.
+Cette carte simplifie la validation des champs de données de commande individuels, garantissant le respect des conditions du bon de commande. En isolant un champ à la fois à des fins de comparaison, il prend en charge les examens ciblés et la prévention des erreurs dans le traitement des commandes.
+
+Voir [direction de comparaison, base de tolérance et versions de carte enregistrée](../../cards-overview/po-comparison-versions-guide.md) avant de modifier les côtés de comparaison.

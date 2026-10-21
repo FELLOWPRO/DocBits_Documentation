@@ -1,6 +1,6 @@
-# If Country in Field is One of
+# Si le pays dans le champ est l'un des
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-364a45ddb67d-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif**
 
@@ -8,20 +8,20 @@ Cette carte de workflow est conçue pour évaluer si un pays spécifié, situé 
 
 ## **Composants de la carte :**
 
-1. **Field Name**
-   * **Description :** spécifie le champ de document où le nom ou le code du pays est stocké.
-   * **Détail :** il doit correspondre à l'identifiant exact du champ des données de pays dans le document.&#x20;
-2. **Operator**
-   * **Description :** définit si le pays du champ doit faire partie d'une liste prédéfinie de pays.
-   * **Options :**
+1. **Nom du champ**
+   * **Descriptif :** spécifie le champ de document où le nom ou le code du pays est stocké.
+   * **Détail :** il doit correspondre à l'identifiant exact du champ des données de pays dans le document.
+2. **Opérateur**
+   * **Descriptif :** définit si le pays du champ doit faire partie d'une liste prédéfinie de pays.
+   * **Possibilités :**
      * **Is :** le pays doit être inclus dans la liste de pays spécifiée pour que la condition soit vraie.
-     * **Is Not :** le pays ne doit pas être inclus dans la liste de pays spécifiée pour que la condition soit vraie.
-3. **Countries**
-   * **Description :** spécifie la liste de pays à laquelle le pays sélectionné sera comparé.
+     * **N'est-ce pas :** le pays ne doit pas être inclus dans la liste de pays spécifiée pour que la condition soit vraie.
+3. **Pays**
+   * **Descriptif :** spécifie la liste de pays à laquelle le pays sélectionné sera comparé.
    * **Détail :** il s'agit d'une liste de pays séparés par des virgules. La comparaison vérifie si le pays du champ est inclus dans cette liste.
-4. **Continue Condition**
-   * **Description :** définit le résultat de la comparaison. Si le pays satisfait la condition, le workflow se poursuit avec la valeur booléenne spécifiée.
-   * **Options :**
+4. **Continuer la condition**
+   * **Descriptif :** définit le résultat de la comparaison. Si le pays satisfait la condition, le workflow se poursuit avec la valeur booléenne spécifiée.
+   * **Possibilités :**
      * **True :** le workflow se poursuit si la condition correspond.
      * **False :** le workflow se poursuit si la condition ne correspond pas.
 
@@ -41,3 +41,15 @@ Cette carte de workflow est conçue pour évaluer si un pays spécifié, situé 
 ## **Conclusion :**
 
 La carte de workflow « Country in Field Comparison with List » est un outil précieux pour automatiser des actions selon qu'un pays fait partie ou non d'un groupe prédéfini. En comparant les données de pays à une liste de pays autorisés ou restreints, cette carte améliore l'efficacité du workflow et garantit que les processus du système respectent les règles géographiques appropriées.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemple pratique
+
+**Quand utiliser :** Acheminer les factures de deux pays spécifiés.
+
+**Configuration :** Sélectionnez le champ du pays, l'un des codes de pays `DE` et `FR`, et la suite `true`.
+
+**Résultat attendu et contre-exemple :** `DE` réussit ; `US` ne satisfait pas à la liste des pays sélectionnés.
+
+Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.

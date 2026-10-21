@@ -1,6 +1,6 @@
-# Assigned User Condition
+# Condition d'utilisateur assignée
 
-<figure><img src="../../../../.gitbook/assets/userlmn_5e16e9b23626ec1211c753fec5333513 (1).png" alt="" width="552"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3e450ede5dea-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 **Objectif**
 
@@ -8,13 +8,13 @@ Cette carte de workflow gère l'exécution d'opérations selon qu'une tâche ou 
 
 **Composants de la carte**
 
-1. **Operator**
-   * **Description** : définit la condition logique à appliquer à l'attribution d'utilisateur.
-   * **Options** :
+1. **Opérateur**
+   * **Descriptif** : définit la condition logique à appliquer à l'attribution d'utilisateur.
+   * **Possibilités** :
      * **IS** : déclenche l'opération si l'utilisateur assigné au document ou à la tâche correspond à l'un des utilisateurs de la liste spécifiée.
-     * **IS NOT** : déclenche l'opération si l'utilisateur assigné au document ou à la tâche ne correspond à aucun des utilisateurs de la liste spécifiée.
-2. **User List**
-   * **Description** : une liste ou une sélection d'utilisateurs à comparer à l'utilisateur assigné.
+     * **N'EST PAS** : déclenche l'opération si l'utilisateur assigné au document ou à la tâche ne correspond à aucun des utilisateurs de la liste spécifiée.
+2. **Liste des utilisateurs**
+   * **Descriptif** : une liste ou une sélection d'utilisateurs à comparer à l'utilisateur assigné.
    * **Détail** : cette liste peut inclure un ou plusieurs utilisateurs, permettant à la carte de gérer efficacement les conditions à un seul utilisateur comme à plusieurs utilisateurs. La sélection peut se faire au moyen de cases à cocher, d'une liste déroulante à sélection multiple ou d'éléments d'interface similaires.
 
 **Fonctionnalité**
@@ -22,7 +22,7 @@ Cette carte de workflow gère l'exécution d'opérations selon qu'une tâche ou 
 * **Identification de l'attribution d'utilisateur** : identifie automatiquement le ou les utilisateurs assignés à une tâche ou à un document particulier dans le système ERP.
 * **Évaluation de la condition** :
   * Avec l'opérateur **IS**, la carte vérifie si l'utilisateur assigné fait partie de ceux répertoriés dans la User List.
-  * Avec l'opérateur **IS NOT**, la carte s'assure que l'utilisateur assigné ne fait pas partie de ceux répertoriés.
+  * Avec l'opérateur **N'EST PAS**, la carte s'assure que l'utilisateur assigné ne fait pas partie de ceux répertoriés.
 * **Exécution de l'action** :
   * **Condition vraie** : si l'attribution d'utilisateur satisfait la condition (IS ou IS NOT), les actions pertinentes sont déclenchées, telles que des notifications, le lancement de tâches, des approbations ou d'autres étapes du workflow.
   * **Condition fausse** : si la condition n'est pas remplie, le workflow ne se poursuit pas.
@@ -36,3 +36,15 @@ Cette carte de workflow gère l'exécution d'opérations selon qu'une tâche ou 
 #### Conclusion
 
 La carte de workflow « Assigned User Condition » est un outil essentiel pour gérer les workflows de documents et de tâches qui dépendent d'attributions d'utilisateurs. En autorisant des conditions basées sur l'attribution ou non d'une tâche ou d'un document à des utilisateurs spécifiques, elle garantit que les workflows ne sont déclenchés que par les interactions utilisateur appropriées, renforçant à la fois la responsabilité et l'alignement des tâches au sein des équipes. Documenter clairement cette carte aidera les utilisateurs à comprendre son importance et à l'intégrer efficacement dans leurs workflows, garantissant des opérations fluides et efficaces, adaptées aux rôles et responsabilités des utilisateurs.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemple pratique
+
+**Quand utiliser :** Continuez uniquement lorsqu'un document est attribué à un réviseur approuvé.
+
+**Configuration :** Sélectionnez l'un des utilisateurs de démonstration configurés `Demo Reviewer A` et `Demo Reviewer B`.
+
+**Résultat attendu et contre-exemple :** Un document attribué à `Demo Reviewer B` réussit ; celui attribué à un autre utilisateur échoue.
+
+Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.

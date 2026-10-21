@@ -13,7 +13,7 @@ Cette carte DocBits garantit la classification correcte d'un document en vérifi
   * **Est:** Confirme que le document correspond à l'un des types de document spécifiés.
   * **N'est pas:** Assure que le document ne correspond à aucun des types de document sélectionnés.
 * **Types de documents:** Les utilisateurs peuvent choisir parmi plusieurs types de documents pris en charge, notamment:
-  * **Facture:** Enregistrements financiers soumis pour paiement.
+  * **Facture :** Enregistrements financiers soumis pour paiement.
   * **Avoir:** Documents indiquant un ajustement augmentant le montant dû.
   * **Avoir:** Documents indiquant une réduction du montant dû.
   * **Bon de commande:** Documents détaillant la commande d'un acheteur.

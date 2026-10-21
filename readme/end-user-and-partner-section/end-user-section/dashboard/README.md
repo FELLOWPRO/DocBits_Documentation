@@ -16,9 +16,9 @@ De beschikbare functies hangen af van uw rechten, de documentstatus en de ingesc
 
 De fictieve klant in Amsterdam laat gecombineerd zoeken met AND, statusfilters, zoekhulp, kolominstellingen, statistieken en vernieuwen zien. De Nederlandse interface is opgenomen in DocBits met synthetische testgegevens. Het personage en de stem zijn met AI gemaakt.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/nl.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/nl.mp4" %}
 
-[Open de speler met ondertiteling](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/nl.html) · [Nederlandse ondertiteling (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/nl.vtt) · [Transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/nl.txt)
+[Open de speler met ondertiteling](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/nl.html) · [Nederlandse ondertiteling (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/nl.vtt) · [Transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/nl.txt)
 
 ## Uw dagelijkse werk beginnen
 

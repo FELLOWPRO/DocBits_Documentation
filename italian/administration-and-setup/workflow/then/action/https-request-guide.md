@@ -25,11 +25,7 @@ Aggiungi questa scheda al gruppo **Allora** del Workflow Builder: le azioni che 
 
 ## Scopo
 
-Questa carta invia un messaggio sicuro a un sito Web o un servizio e può ricevere una risposta. È più semplice della scheda "Call API" ed è utile per integrazioni rapide.
-
-**Esempio reale:** Invia i dati della fattura al tuo sistema contabile o chiedi a un sistema esterno se un dipendente è autorizzato a elaborare questo acquisto.
-
-***
+La scheda di richiesta HTTPS usa un URL HTTPS configurato e intestazioni proprie. `call_api` usa un percorso relativo della API DocBits e il contesto dell’utente corrente; il risultato deriva dal testo della risposta. Scegliere in base all’endpoint e al contratto di risposta, non distinguendo tra API semplice e complessa.
 
 ## Quando utilizzare questa carta
 
@@ -313,13 +309,7 @@ Headers: Authorization: Bearer token
 
 ## Differenza dalla scheda "Call API".
 
-| Caratteristica        | Richiesta HTTPS      | Chiama l'API          |
-| -------------- | ------------------ | ----------------- |
-| Semplicità     | Semplice             | Più complesso      |
-| Parametri     | Essenziale              | Avanzato          |
-| Gestione degli errori | Essenziale              | Dettagliato          |
-| Utilizzare per        | Integrazioni rapide | API complesse      |
-| Meglio per       | Webhook           | API professionali |
+La scheda di richiesta HTTPS usa un URL HTTPS configurato e intestazioni proprie. `call_api` usa un percorso relativo della API DocBits e il contesto dell’utente corrente; il risultato deriva dal testo della risposta. Scegliere in base all’endpoint e al contratto di risposta, non distinguendo tra API semplice e complessa.
 
 ***
 

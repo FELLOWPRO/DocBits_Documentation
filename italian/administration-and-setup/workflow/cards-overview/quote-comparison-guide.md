@@ -83,7 +83,7 @@ Questa è una configurazione di test illustrativa e il risultato atteso; non è 
 
 ### Esempio di unità di misura
 
-**Configurazione:** Preparare le righe del preventivo abbinato con l'unità del documento `EA` e l'unità di confronto del fornitore `EA`. Scegli l’uguaglianza e `match_all`; conservare la versione della carta in fase di test.
+**Configurazione:** Preparare righe di preventivo abbinate con unità del documento `EA` e unità di confronto del fornitore `EA`. Scegliere uguaglianza e `match_all`. Mantenere la versione della scheda da verificare.
 
 **Risultato atteso e controesempio:** La condizione è vera per l'abbinamento di unità comparabili; una seconda riga comparabile utilizzando `KG` invece di `EA` rende falsa la condizione con `match_all`. Le unità di confronto mancanti vengono saltate e registrate; se nessuno è comparabile, la scheda segnala i dati mancanti. La versione 3 può applicare la mappatura dell'unità configurata, quindi verificare tale mappatura separatamente. L'abbinamento dei prezzi da solo non stabilisce le unità corrispondenti.
 

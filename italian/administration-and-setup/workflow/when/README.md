@@ -4,7 +4,7 @@ Le carte in questa categoria, mostrate nella libreria **Aggiungi carta** del Wor
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9e133ac3ffcb-it.png" alt="Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso."><figcaption><p>Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-2e62c5e0aa4e-it.png" alt="Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso."><figcaption><p>Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-2e62c5e0aa4e-it.png" alt="Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale."><figcaption><p>Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
 #### Comprendere il "Quando" nelle configurazioni del flusso di lavoro
 

@@ -4,15 +4,21 @@
 
 ***
 
-Costruisci questo pattern nel **Costruttore di flussi di lavoro** (Workflow Dashboard → Workflow List → Add Workflow). Clicca **Aggiungi carta** per aprire la libreria delle card e scegli le card usate da questo pattern — `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` e `CONDITION_TASK_STATUS` (la categoria **Assegnatario** contiene le card di task e assegnazione):
+<!-- workflow-card-task-pattern-scope-20261022 -->
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-it.png" alt="Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale."><figcaption><p>Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
+**Ambito verificato:** Questo è un modello concettuale di orchestrazione, non una configurazione di workflow importabile. Nella libreria verificata, `tasks_create` appartiene a **Compito**, `doc_user_assign` ad **Assegnatario** e `action_send_email_to_groups` a **E-mail**.
+
+I nomi precedenti `ACTION_ASSIGN_TO_USER` e `CONDITION_TASK_STATUS` sono denominazioni illustrative, non schede registrate selezionabili in questa libreria. Il JSON seguente è schematico. La sola creazione di un’attività non sospende un workflow e non ne configura la ripresa automatica. L’instradamento dopo il completamento, l’attesa e l’escalation richiedono una configurazione e una verifica separate.
+
+[Schede delle attività attuali](../then/task/README.md) · [Protezioni di esportazione e attività in sospeso](../cards-overview/export-cards-guide.md).
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-it.png" alt="Illustrazione della libreria delle schede. La creazione di attività, l’assegnazione dei documenti e le e-mail ai gruppi utilizzano categorie distinte; scegliere la versione disponibile nella propria organizzazione. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale."><figcaption><p>Illustrazione della libreria delle schede. La creazione di attività, l’assegnazione dei documenti e le e-mail ai gruppi utilizzano categorie distinte; scegliere la versione disponibile nella propria organizzazione. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
 ***
 
 ## Panoramica del pattern
 
-Questo pattern mostra come creare, assegnare, monitorare e gestire i task all'interno dei workflow di DocBits. I task sono elementi di lavoro azionabili assegnati a utenti o gruppi che richiedono il completamento prima che il workflow del documento possa proseguire.
+Questo modello illustra la creazione e l’assegnazione di attività e le notifiche ai destinatari. I passaggi successivi al completamento descrivono un’architettura prevista; creare l’attività non costituisce un’operazione di attesa.
 
 **Cosa fa questo pattern:**
 
@@ -127,6 +133,8 @@ Currency: EUR
 
 **Configurazione:**
 
+**JSON schematico:** Illustra soltanto la struttura; non importarlo come workflow eseguibile.
+
 ```json
 {
   "task_type": "Approval",
@@ -159,6 +167,8 @@ Currency: EUR
 
 **Task 1: Approvazione del Manager**
 
+**JSON schematico:** Illustra soltanto la struttura; non importarlo come workflow eseguibile.
+
 ```json
 {
   "task_type": "First Approval",
@@ -173,6 +183,8 @@ Currency: EUR
 ```
 
 **Task 2: Approvazione del Director (creato dopo il completamento del Task 1)**
+
+**JSON schematico:** Illustra soltanto la struttura; non importarlo come workflow eseguibile.
 
 ```json
 {
@@ -231,6 +243,8 @@ User 3: CFO (only if User 2 approves)
 **Carta:** ACTION\_SEND\_EMAIL\_TO\_GROUPS
 
 **Configurazione:**
+
+**JSON schematico:** Illustra soltanto la struttura; non importarlo come workflow eseguibile.
 
 ```json
 {
@@ -445,6 +459,8 @@ INVOICE ARRIVES
 
 ### Modello 1: Task di approvazione semplice
 
+**JSON schematico:** Illustra soltanto la struttura; non importarlo come workflow eseguibile.
+
 ```json
 {
   "card": "tasks_create",
@@ -461,6 +477,8 @@ INVOICE ARRIVES
 
 ### Modello 2: Task di revisione con dettagli
 
+**JSON schematico:** Illustra soltanto la struttura; non importarlo come workflow eseguibile.
+
 ```json
 {
   "card": "tasks_create",
@@ -476,6 +494,8 @@ INVOICE ARRIVES
 ***
 
 ### Modello 3: Compito di escalation
+
+**JSON schematico:** Illustra soltanto la struttura; non importarlo come workflow eseguibile.
 
 ```json
 {

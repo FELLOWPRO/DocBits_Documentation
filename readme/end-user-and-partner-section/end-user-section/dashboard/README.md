@@ -23,6 +23,14 @@ Cet exemple commence au bureau d’une utilisatrice fictive à Paris. L’interf
 L’utilisatrice et le bureau sont générés par IA. Les manipulations et les résultats proviennent de véritables enregistrements dans le compte de test DocBits.
 
 
+## Visite complète du tableau de bord
+
+La cliente fictive de Paris présente la recherche combinée avec AND, les filtres de statut, l’aide à la recherche, les paramètres des colonnes, les statistiques et l’actualisation. L’interface française est enregistrée dans DocBits avec des données de test synthétiques. Le personnage et la voix sont générés par IA.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/fr.mp4" %}
+
+[Ouvrir le lecteur avec sous-titres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/fr.html) · [Sous-titres français (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/fr.vtt) · [Transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/fr.txt)
+
 ## Commencer votre travail quotidien
 
 1. Vérifiez l’organisation active et, si disponible, la sous-organisation.

@@ -45,16 +45,6 @@
     * [M3 API 导出诊断指南](overview-and-basics/faq/infor-m3-m3-integration/m3-api-export-diagnostic-guide.md)
   * [法国 2026 年电子发票：必须使用 PDP/PPF 渠道，PEPPOL 仅作为传输方式](overview-and-basics/faq/mandatory-pdp-ppf-channels-peppol-as-transport-only-for-frances-2026-e-invoicing.md)
 
-## 安全 <a href="#security" id="security"></a>
-
-* [DocBits (FELLOWPRO AG) — 安全与合规问卷](security/security-and-compliance-faq.md)
-* [凭据的安全存储](security/secure-storage-of-credentials.md)
-* [静态数据加密](security/encryption-at-rest.md)
-* [Cookie 与浏览器存储](security/cookies-and-browser-storage.md)
-* [漏洞管理](security/vulnerability-management.md)
-* [其他安全控制](security/other-security-controls.md)
-* [双重身份验证（2FA）](security/two-factor-authentication.md)
-
 ## 最终用户与合作伙伴 <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [终端用户部分](end-user-and-partner-section/end-user-section/README.md)
@@ -907,3 +897,13 @@
 * [将 DocBits 连接到 Power BI](advanced-functions-and-tools/powerbi/README.md)
   * [通过 ClickHouse 连接](advanced-functions-and-tools/powerbi/powerbi.md)
   * [通过只读数据库连接](advanced-functions-and-tools/powerbi/connect-via-read-only-database.md)
+
+## 安全 <a href="#security" id="security"></a>
+
+* [DocBits (FELLOWPRO AG) — 安全与合规问卷](security/security-and-compliance-faq.md)
+* [凭据的安全存储](security/secure-storage-of-credentials.md)
+* [静态数据加密](security/encryption-at-rest.md)
+* [Cookie 与浏览器存储](security/cookies-and-browser-storage.md)
+* [漏洞管理](security/vulnerability-management.md)
+* [其他安全控制](security/other-security-controls.md)
+* [双重身份验证（2FA）](security/two-factor-authentication.md)

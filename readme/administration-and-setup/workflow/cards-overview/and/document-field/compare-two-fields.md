@@ -1,6 +1,6 @@
 # 比较两个字段
 
-<figure><img src="../../../../../.gitbook/assets/image (53).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-e8895ad20ae3-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ## **用途：**
 
@@ -42,3 +42,15 @@
 ## **结论：**
 
 “比较两个字段”工作流卡片是比较文档字段间数据的重要工具。通过根据字段比较结果自动执行操作，此卡片有助于优化决策、支持数据验证并提升工作流自动化水平。
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## 实际例子
+
+**何时使用：** 检查复制的引用是否等于原始引用。
+
+**配置：** 选择文本字段`purchase_order_number`和`confirmed_order_number`以及等于运算符。
+
+**预期结果及反例：**值`PO-DEMO-001`和`PO-DEMO-001`通过。 `PO-DEMO-002` 的第二个值失败。
+
+这是说明性配置和预期结果。使用测试组织中配置的字段、用户和组；这并不是说这个例子已经被执行了。

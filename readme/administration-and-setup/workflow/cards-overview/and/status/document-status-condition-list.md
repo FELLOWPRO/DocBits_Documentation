@@ -1,6 +1,6 @@
 # 文档状态条件列表
 
-<figure><img src="../../../../../.gitbook/assets/userlmn_e9d6da331deceed4f330358635d6b605.png" alt="" width="521"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-8dc08a110089-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 **用途**
 
@@ -37,3 +37,13 @@
 #### 结论
 
 “文档状态条件”工作流卡片对于确保文档根据其当前状态得到正确处理至关重要，有助于加强 ERP 系统中的控制并提升效率。在系统手册中清晰地说明此卡片，将帮助用户有效地实施和管理它，并利用其功能维护顺畅且合规的文档工作流。此卡片在管理文档生命周期、确保只有满足特定条件的文档才能进入业务流程后续阶段方面尤其有用。
+
+<!-- workflow-card-complete-example-20261021 condition_doc_status_is_isnot_in_list -->
+
+### 状态列表示例
+
+**配置：** 选择需要当前状态位于列表内的运营商。 Select `Pending Approval` and `Pending Second Approval` in the status list.
+
+**预期结果和反例：**对于具有任一选定状态的文档，条件为真。 It is false for a document with status `Ready in Validation`.对于要求状态位于列表之外的运算符，这些条件结果会相反。检查实际列表而不是比较以逗号分隔的自由文本值。
+
+这是一个说明性的测试配置和预期结果；它没有被执行。使用测试组织中配置的数据和收件人。

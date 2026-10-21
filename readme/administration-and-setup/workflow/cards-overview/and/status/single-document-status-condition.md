@@ -1,6 +1,6 @@
 # 单个文档状态条件
 
-<figure><img src="../../../../../.gitbook/assets/userlmn_928e514bc0e2aa775894e4ec5f992bd9.png" alt="" width="528"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-c0315ad39a89-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 **用途**
 
@@ -37,3 +37,13 @@
 #### 结论
 
 “单个文档状态条件”工作流卡片通过聚焦于单个状态条件，简化了文档管理。当需要精准控制文档流转时，尤其是在处理标准严格的环境中，此规范有助于满足相关需求。清晰记录此版本的卡片，可确保用户充分了解其用途，并能将其有效集成到日常操作中，从而提升文档处理的合规性和效率。
+
+<!-- workflow-card-complete-example-20261021 condition_doc_status_is_isnot -->
+
+### 单一状态示例
+
+**配置：**选择运营商`is`和状态`Pending Approval`。添加适合该状态的以下审核操作。
+
+**预期结果及反例：**当前文档`Pending Approval`条件为真； it is false for a document with status `Ready in Validation`.使用您的版本中实际选择的状态。更改状态本身并不导出文档。
+
+这是一个说明性的测试配置和预期结果；它没有被执行。使用测试组织中配置的数据和收件人。

@@ -1,6 +1,6 @@
 # 字段中的文本
 
-<figure><img src="../../../../../.gitbook/assets/image (52).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-61d692604341-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ## **用途：**
 
@@ -36,3 +36,15 @@
 ## **结论：**
 
 “字段中的文本”工作流卡是用于分析文档内容的简单而强大的工具。通过根据文本检测结果自动执行操作，此卡可支持更智能的工作流，提高文档处理准确性并减少人工工作。
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## 实际例子
+
+**何时使用：** 查找带有审阅标记的文档。
+
+**配置：**选择文本字段`review_note`，包含运算符和文本`manual review`。
+
+**预期结果及反例：**`Please start manual review`通过。 `Ready for export` 不包含所选文本并且失败。
+
+这是说明性配置和预期结果。使用测试组织中配置的字段、用户和组；这并不是说这个例子已经被执行了。

@@ -27,9 +27,9 @@ La cliente e l’ufficio sono generati con IA. Le azioni e i risultati di ricerc
 
 La cliente immaginaria di Milano mostra la ricerca combinata con AND, i filtri di stato, la guida alla ricerca, le impostazioni delle colonne, le statistiche e l’aggiornamento. L’interfaccia italiana è stata registrata in DocBits con dati di prova sintetici. Il personaggio e la voce sono generati dall’IA.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/it.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/it.mp4" %}
 
-[Apri il lettore con sottotitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/it.html) · [Sottotitoli italiani (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/it.vtt) · [Trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/it.txt)
+[Apri il lettore con sottotitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/it.html) · [Sottotitoli italiani (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/it.vtt) · [Trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/it.txt)
 
 ## Iniziare il lavoro quotidiano
 

@@ -12,7 +12,7 @@
   "cases": [
     {
       "id": "S001",
-      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "doc": "docbits/administration-and-setup/analytics-dashboard/README.md",
       "action": "replace",
       "old_blob": "eabdd149dd5efa58d18683ba51de3e305fbc4577",
       "original_references": [
@@ -26,7 +26,7 @@
     },
     {
       "id": "S002",
-      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "doc": "docbits/administration-and-setup/analytics-dashboard/README.md",
       "action": "replace",
       "old_blob": "02986181a9a73ec8d059f6df36a3365b393f1ac8",
       "original_references": [
@@ -40,7 +40,7 @@
     },
     {
       "id": "S003",
-      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "doc": "docbits/administration-and-setup/analytics-dashboard/README.md",
       "action": "replace",
       "old_blob": "53cbeddbd830b2e600df0070ca4a3b84f5b6ce29",
       "original_references": [
@@ -54,7 +54,7 @@
     },
     {
       "id": "S004",
-      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "doc": "docbits/administration-and-setup/analytics-dashboard/README.md",
       "action": "replace",
       "old_blob": "cdb306d4e240cddf1df8b494ac0ef2fdd662257c",
       "original_references": [
@@ -68,7 +68,7 @@
     },
     {
       "id": "S005",
-      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "doc": "docbits/administration-and-setup/analytics-dashboard/README.md",
       "action": "replace",
       "old_blob": "e10cd0cbdb06984c851f901735c8af053ba5640a",
       "original_references": [
@@ -82,7 +82,7 @@
     },
     {
       "id": "S006",
-      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "doc": "docbits/administration-and-setup/analytics-dashboard/README.md",
       "action": "replace",
       "old_blob": "24d8f019f2a9574d2e6379346693b131da3abd29",
       "original_references": [
@@ -96,7 +96,7 @@
     },
     {
       "id": "S007",
-      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "doc": "docbits/administration-and-setup/analytics-dashboard/README.md",
       "action": "replace",
       "old_blob": "ab925c32da026e21fd4bcf0b33274384092066c7",
       "original_references": [
@@ -110,7 +110,7 @@
     },
     {
       "id": "S008",
-      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "doc": "docbits/administration-and-setup/analytics-dashboard/README.md",
       "action": "replace",
       "old_blob": "d05e17b32ee3c32937c4ce255a5b59474aee6e19",
       "original_references": [
@@ -124,7 +124,7 @@
     },
     {
       "id": "S009",
-      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "doc": "docbits/administration-and-setup/analytics-dashboard/README.md",
       "action": "replace",
       "old_blob": "d8061592247ecd7cc7a62a146e6cb381174b9b58",
       "original_references": [
@@ -138,7 +138,7 @@
     },
     {
       "id": "S010",
-      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "doc": "docbits/administration-and-setup/analytics-dashboard/README.md",
       "action": "replace",
       "old_blob": "9d288370e43004b581bce4d8961174b18932ed4c",
       "original_references": [
@@ -152,7 +152,7 @@
     },
     {
       "id": "S011",
-      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "doc": "docbits/administration-and-setup/analytics-dashboard/README.md",
       "action": "replace",
       "old_blob": "d9dffaf4242a66f59409db491e20fc03e0f86402",
       "original_references": [
@@ -166,7 +166,7 @@
     },
     {
       "id": "S012",
-      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "doc": "docbits/administration-and-setup/analytics-dashboard/README.md",
       "action": "replace",
       "old_blob": "f4aecce8f26c9ecc253f5fb86e703fc0a8fbc8de",
       "original_references": [

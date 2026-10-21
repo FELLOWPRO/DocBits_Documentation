@@ -1,30 +1,30 @@
 # Activity Logging
 
-<figure><img src="../../../.gitbook/assets/activity_logging.png" alt="Activity Logging"><figcaption><p>La pagina Activity Logging</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t011-it.png" alt="Filtri del registro delle attività; le voci sono nascoste."><figcaption><p>Filtri del registro delle attività; le voci sono nascoste.</p></figcaption></figure>
 
 Activity Logging offre una vista in tempo reale degli eventi di sistema di tutti i servizi DocBits. Usalo per monitorare l'attività di elaborazione, risolvere gli errori e verificare il comportamento del sistema.
 
 ## Analytics Banner
 
-In cima alla pagina, un banner rimanda alla **Analytics Dashboard** per grafici, metriche e monitoraggio in tempo reale.
+In cima alla pagina, un banner rimanda alla **Dashboard di analisi** per grafici, metriche e monitoraggio in tempo reale.
 
 ## Filtri
 
 | Filtro | Descrizione |
 |--------|-------------|
-| **Time Range** | Seleziona un intervallo di tempo (ad es. Today, Last 7 Days, Last 30 Days). |
-| **Severity** | Attiva o disattiva i livelli di gravità da includere o escludere: **Debug**, **Info**, **Warning**, **Error**. Ogni chip mostra il conteggio attuale. |
-| **Service** | Filtra i log per servizio (ad es. api, auth, api-service). |
+| **Intervallo di tempo** | Seleziona un intervallo di tempo (ad es. Today, Last 7 Days, Last 30 Days). |
+| **Gravità** | Attiva o disattiva i livelli di gravità da includere o escludere: **Debug**, **Informazioni**, **Avvertimento**, **Errore**. Ogni chip mostra il conteggio attuale. |
+| **Servizio** | Filtra i log per servizio (ad es. api, auth, api-service). |
 | **Search logs** | Ricerca a testo libero nei messaggi di log. |
 
 ## Tabella dei Log
 
 | Colonna | Descrizione |
 |--------|-------------|
-| **Timestamp** | Data e ora in cui si è verificato l'evento. Ordinabile. |
-| **Severity** | Badge colorato: Info (blu), Warning (giallo), Error (rosso), Debug (grigio). |
-| **Component** | Il servizio o il modulo che ha generato il log (ad es. api, auth, api-service). |
-| **Message** | Il messaggio di log completo con i dettagli dell'evento. |
+| **Marca temporale** | Data e ora in cui si è verificato l'evento. Ordinabile. |
+| **Gravità** | Badge colorato: Info (blu), Warning (giallo), Error (rosso), Debug (grigio). |
+| **Componente** | Il servizio o il modulo che ha generato il log (ad es. api, auth, api-service). |
+| **Messaggio** | Il messaggio di log completo con i dettagli dell'evento. |
 
 I risultati sono paginati — usa i controlli in basso per scorrere le pagine.
 

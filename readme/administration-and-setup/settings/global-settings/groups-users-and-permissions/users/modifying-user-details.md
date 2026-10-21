@@ -1,6 +1,6 @@
 # Modifica dei Dettagli Utente
 
-<figure><img src="../../../../../.gitbook/assets/user_settings_menu_overview.png" alt="Panoramica del menu delle impostazioni utente"><figcaption><p>Impostazioni utente</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u001-it.png" alt="Amministrazione degli utenti con i dati personali nascosti."><figcaption><p>Amministrazione degli utenti con i dati personali nascosti.</p></figcaption></figure>
 
 * **Accesso come amministratore:** Accedi con i tuoi privilegi di amministratore.
 * **Accesso alla gestione utenti:** Naviga nelle impostazioni utente dove puoi modificare gli utenti esistenti.
@@ -14,9 +14,7 @@
     * Indirizzo email
     * Ruolo utente o livello di autorizzazione
 
-
-
-    <figure><img src="../../../../../.gitbook/assets/user_edit_details_form.png" alt="Modulo di modifica dei dettagli utente" width="300"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/prior-u002-it.png" alt="Modulo di modifica di un utente; i valori sono nascosti."><figcaption><p>Modulo di modifica di un utente; i valori sono nascosti.</p></figcaption></figure>
 * **Salvataggio delle Modifiche:** Rivedi eventuali modifiche apportate e clicca su Save per salvare i nuovi dettagli dell'utente.
 
 <figure><img src="../../../../../.gitbook/assets/user_save_changes_button.png" alt="Pulsante per salvare le modifiche all'utente"><figcaption></figcaption></figure>
@@ -25,8 +23,6 @@
 * **Invia notifica (opzionale):** Puoi inviare una notifica all'utente per informarlo delle modifiche apportate.
 
 Dopo aver completato questi passaggi, i dettagli dell'utente sono stati aggiornati con successo e l'utente ha le nuove informazioni e autorizzazioni secondo le modifiche apportate.
-
-
 
 ## Rimozione degli Utenti:
 

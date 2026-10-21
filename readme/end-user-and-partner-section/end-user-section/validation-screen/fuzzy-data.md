@@ -12,8 +12,8 @@ I campi Dati Fuzzy consentono agli utenti di compilare campi correlati in base a
 
 * Compilano i campi correlati in base al loro valore o al testo inserito.
 * I tre campi standard che usano i Dati Fuzzy sono:
-  * **Purchase Order**
-  * **Supplier**
+  * **Ordine di acquisto**
+  * **Fornitore**
   * **Vendor ID**
 
 #### **Utilizzo dei campi Dati Fuzzy**
@@ -21,21 +21,20 @@ I campi Dati Fuzzy consentono agli utenti di compilare campi correlati in base a
 1. **Selezione di un Purchase Order**
    *   Cliccando sull'**icona blu** accanto al campo Purchase Order si apre una **finestra di selezione**.
 
-
-       <figure><img src="../../../.gitbook/assets/fuzzy_data_selection_window.png" alt="Finestra di selezione Dati Fuzzy"><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/s150-fuzzy_data_selection_window-it.png" alt="Finestra di ricerca nei dati anagrafici; i record sono nascosti."><figcaption><p>Finestra di ricerca nei dati anagrafici; i record sono nascosti.</p></figcaption></figure>
    * Questa finestra contiene una tabella con tutti gli ordini di acquisto della **tabella di lookup dei dati master**.
    * Attivando l'opzione **"Display all columns"** vengono mostrati ulteriori dettagli.
-   * Seleziona un **Purchase Order** e clicca su **Proceed**:
+   * Seleziona un **Ordine di acquisto** e clicca su **Procedere**:
      * Se il sistema trova un Purchase Order nel documento, lo filtra automaticamente.
      * Se non viene trovata alcuna corrispondenza, puoi **creare filtri personalizzati** per trovare il Purchase Order corretto.
      * È possibile aggiungere più filtri; attivando **"Match all filters"** si assicura che tutte le condizioni siano soddisfatte.
      * Opzioni di filtro disponibili:
        * **Smart**
-       * **Contains**
-       * **Exact**
-       * **Starts with**
-       * **Ends with**
-   * Un pulsante accanto a **Proceed** permette di **creare una nuova attività/notifica**.
+       * **Contiene**
+       * **Esatto**
+       * **Inizia con**
+       * **Termina con**
+   * Un pulsante accanto a **Procedere** permette di **creare una nuova attività/notifica**.
 2. **Selezione di un Supplier o Vendor ID**
    * Il procedimento è lo stesso dei Purchase Order.
    * La differenza è che i campi **Supplier e Vendor ID usano la tabella dei dati master dei fornitori** invece della tabella dei dati master delle testate degli ordini di acquisto.
@@ -53,7 +52,5 @@ I campi Dati Fuzzy consentono agli utenti di compilare campi correlati in base a
 {% content-ref url="../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md" %}
 [fuzzy-data-configuration-with-list-of-values.md](../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md)
 {% endcontent-ref %}
-
-
 
 {% embed url="https://www.youtube.com/watch?v=vT5HuGjAYV0" %}

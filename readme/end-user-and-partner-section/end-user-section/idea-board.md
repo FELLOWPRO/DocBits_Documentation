@@ -37,7 +37,7 @@ Clicca su **Nuova idea** nell'intestazione. La finestra chiede:
 
 Premi **Invia** per pubblicare. L'idea appare nella lista con lo stato **Nuova**.
 
-<figure><img src="../../.gitbook/assets/idea-board-new-idea.png" alt="Finestra Nuova idea"><figcaption><p>La finestra Nuova idea, con i selettori di categoria e canale.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-idea-board-new-idea-it.png" alt="Finestra per proporre un’idea senza dati personali. Alcune etichette, tra cui New Idea e Submit, restano in inglese."><figcaption><p>Finestra per proporre un’idea senza dati personali. Alcune etichette, tra cui New Idea e Submit, restano in inglese.</p></figcaption></figure>
 
 ## Votare
 

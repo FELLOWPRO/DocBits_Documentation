@@ -13,4 +13,4 @@ DocBits Import Tutorial: Upload Documents, Drag & Drop + Manual vs Automatic Cla
 * Dopo che i file sono stati caricati, avranno lo stato iniziale di "In esecuzione". Durante questo periodo, il caricamento viene elaborato e non è possibile modificare il file. Il tempo di elaborazione può variare a seconda delle dimensioni e della complessità del file.
 * Una volta che il file è stato elaborato, riceverà lo stato di "Pronto per la convalida". Ora puoi avviare il processo di convalida.
 
-<figure><img src="../../../.gitbook/assets/manual-import1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-manual-import1-it.png" alt="Finestra di importazione manuale dei documenti."><figcaption><p>Finestra di importazione manuale dei documenti.</p></figcaption></figure>

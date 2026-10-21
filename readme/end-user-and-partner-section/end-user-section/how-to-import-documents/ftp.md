@@ -3,24 +3,22 @@ hidden: true
 noIndex: true
 ---
 
-# FTP
+# Importazione FTP e SFTP
 
-Se desideri integrare il tuo SFTP con DocBits per importare documenti.
+L’importazione automatica richiede i parametri di connessione approvati e una cartella accessibile all’account del server.
 
-Requisiti
+## Creare una connessione
 
-* Server SFTP correttamente configurato e compatibile con Linux
-* Nome host SFTP, nome utente e password
-* Cartella di importazione dedicata
+Aprire le impostazioni di importazione e creare una nuova connessione nella sezione FTP.
 
-**Configurazione di Importazione**
+<figure><img src="../../../.gitbook/assets/s150-ftp1-it.png" alt="Panoramica delle connessioni FTP con i dati di connessione nascosti."><figcaption><p>Panoramica delle connessioni FTP con i dati di connessione nascosti.</p></figcaption></figure>
 
-Dal Dashboard, apri Impostazioni e vai su Importazione. In Importazione FTP, seleziona per aggiungere una nuova configurazione.
+La procedura inizia con la configurazione del server. Scegliere protocollo, server, porta e credenziali previsti. Usare i valori forniti dall’amministratore del server.
 
-<figure><img src="../../../.gitbook/assets/ftp1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-ftp_import_configuration_form-it.png" alt="Prima fase della procedura di importazione FTP: configurazione del server."><figcaption><p>Prima fase della procedura di importazione FTP: configurazione del server.</p></figcaption></figure>
 
-Inserisci le credenziali SFTP negli spazi forniti e seleziona salva (Il campo Chiave API verrà automaticamente compilato con la Chiave API dell'ambiente su cui stai lavorando).
+Passare alle opzioni e alla configurazione. Verificare tutta la connessione prima di salvarla.
 
-![](https://lh7-us.googleusercontent.com/m11trSpnDmv9aco98vPG6xuIhYxngp6TauG7lDYEWB2VguNmX0ypXMi3Fc4Ey6V4Iy_YwOy4Zooh3rj_WoAQ3PQgVIjw5vqToOuq_lIxN7IqPE2fv1puzsnEO96y5mn5FHjFtC1wYrEf9sxjHk1GL2I)
+## Archiviazione dei file
 
-Una volta inseriti tutti i dettagli necessari del tuo SFTP, clicca SALVA.
+Se la connessione offre l’archiviazione, configurarla nelle opzioni di importazione. Verificare che l’account possa scrivere nella cartella di archivio e provare il comportamento con un file di esempio. Il vecchio modulo di archiviazione separato è sostituito dalla procedura attuale.

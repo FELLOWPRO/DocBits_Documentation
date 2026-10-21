@@ -8,20 +8,20 @@ DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Yo
 
 * **Naviga alle Impostazioni del Gruppo:** Accedi al tuo account admin e vai alle Impostazioni del Gruppo nel pannello di amministrazione.
 
-<figure><img src="../../../../../.gitbook/assets/groups_settings_overview.png" alt="Panoramica delle impostazioni dei gruppi"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-t002-it.png" alt="Accesso alle impostazioni di gruppi e autorizzazioni."><figcaption><p>Accesso alle impostazioni di gruppi e autorizzazioni.</p></figcaption></figure>
 
 Si aprirà questa finestra:
 
-<figure><img src="../../../../../.gitbook/assets/groups_list_overview.png" alt="Panoramica dell'elenco dei gruppi"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-t003-it.png" alt="Elenco dei gruppi con i nomi nascosti."><figcaption><p>Elenco dei gruppi con i nomi nascosti.</p></figcaption></figure>
 
 * **Clicca sul pulsante + New:** Se desideri aggiungere un nuovo gruppo, clicca sul pulsante + New per avviare il processo di aggiunta di un nuovo gruppo.
 
-<figure><img src="../../../../../.gitbook/assets/add_new_group_button.png" alt="Pulsante Aggiungi nuovo gruppo"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u005-it.png" alt="Finestra di creazione di un gruppo non salvato."><figcaption><p>Finestra di creazione di un gruppo non salvato.</p></figcaption></figure>
 
 * **Compila la tabella:** Fornisci il nome del gruppo e una descrizione del gruppo.
 * **Salva i dettagli:** Una volta che hai compilato il nome e la descrizione del gruppo, clicca sul pulsante "Save".
 
-<figure><img src="../../../../../.gitbook/assets/new_group_form_save.png" alt="Salvataggio del modulo del nuovo gruppo"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u006-it.png" alt="Amministrazione di gruppi e autorizzazioni."><figcaption><p>Amministrazione di gruppi e autorizzazioni.</p></figcaption></figure>
 
 ## Modifica dei Gruppi:
 

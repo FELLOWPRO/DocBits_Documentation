@@ -1,6 +1,6 @@
 # Script
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto%202024-05-08%20um%2009.43.25.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-25-it.png" alt="Elenco degli script con nomi e date nascosti."><figcaption><p>Elenco degli script con nomi e date nascosti.</p></figcaption></figure>
 
 {% embed url="https://youtu.be/n8NpWWIjmlA" %}
 DocBits Document Scripts Explained: Automate Custom Logic in Your Document Workflow
@@ -24,6 +24,6 @@ Gli script in Docbits sono tipicamente scritti in un linguaggio di scripting sup
 * Fornisce un'interfaccia in cui gli script possono essere scritti e modificati. L'editor supporta tipicamente l'evidenziazione della sintassi, l'evidenziazione degli errori e altre funzionalità per assistere nello sviluppo degli script.
 * **Esempio di Script**: Gli script possono includere operazioni come il loop attraverso le righe della fattura per convalidare i totali o per rimuovere voci che non soddisfano determinati criteri.
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto%202024-05-08%20um%2009.43.37.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-37-it.png" alt="Editor degli script con un esempio tecnico in Python."><figcaption><p>Editor degli script con un esempio tecnico in Python.</p></figcaption></figure>
 
-{% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2498" %}
+{% @jira/embed url=" %}

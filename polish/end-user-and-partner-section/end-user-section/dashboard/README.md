@@ -23,6 +23,14 @@ Film zaczyna się przy biurku fikcyjnej klientki w Warszawie. Następnie prawdzi
 Klientka i biuro zostały wygenerowane przez AI. Czynności i wyniki wyszukiwania pochodzą z rzeczywistych nagrań na koncie testowym DocBits.
 
 
+## Pełna prezentacja pulpitu
+
+Fikcyjna klientka z Warszawy pokazuje wyszukiwanie z operatorem AND, filtry statusu, pomoc wyszukiwania, ustawienia kolumn, statystyki i odświeżanie. Polski interfejs nagrano w DocBits z syntetycznymi danymi testowymi. Postać i głos wygenerowano za pomocą AI.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/pl.mp4" %}
+
+[Otwórz odtwarzacz z napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/pl.html) · [Polskie napisy (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/pl.vtt) · [Transkrypcja](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/pl.txt)
+
 ## Rozpoczęcie codziennej pracy
 
 1. Sprawdź aktywną organizację i ewentualnie podorganizację.

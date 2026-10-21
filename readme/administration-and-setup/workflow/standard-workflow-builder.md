@@ -97,7 +97,7 @@ Zurück in der Workflow-Liste aktiviere ich die getestete Regel und prüfe den e
 
 Öffnen Sie **Workflow Dashboard → Workflow List** und klicken Sie auf **Add Workflow**, um einen neuen Standard-Workflow zu erstellen, oder klicken Sie einen bestehenden Workflow zum Bearbeiten an.
 
-<figure><img src="../../.gitbook/assets/workflow_list.png" alt="Workflow List mit Typ, Ausführungsreihenfolge und Auslöser"><figcaption><p>Die Workflow List — jede Zeile ist ein Workflow, den Sie öffnen, ein-/ausschalten oder bearbeiten können.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s50-workflow_list-de.png" alt="Deutsche Workflow-Liste mit Suche, Typ und Workflow-Ausführungsreihenfolge. Konfigurierte Workflowdaten sind ausgeblendet."><figcaption><p>Deutsche Workflow-Liste mit Suche, Typ und Workflow-Ausführungsreihenfolge. Konfigurierte Workflowdaten sind ausgeblendet.</p></figcaption></figure>
 
 ## Das When- / And- / Then-Modell
 

@@ -6,11 +6,11 @@
 
 1. Öffnen Sie **Settings → Document Types**. Suchen Sie den Dokumenttyp, den Sie für Ihre Rechnungen verwenden, und wählen Sie das Zahnrad auf der Karte, um **More Settings** zu öffnen. Der Screenshot zeigt die **Invoice**-Karte. Lassen Sie die Schalter **Activate** und **Extraction** unverändert.
 
-   <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-document-types-en.png" alt="Seite Document Types mit der Invoice-Karte und ihrem More-Settings-Zahnrad"><figcaption><p>Öffnen Sie More Settings über die Invoice-Karte.</p></figcaption></figure>
+   <figure><img src="../../../../../../.gitbook/assets/s50-consumed-po-line-document-types-de.png" alt="Deutsche Dokumenttypenübersicht. Über das Zahnrad der Rechnung öffnen Sie die weiteren Einstellungen."><figcaption><p>Deutsche Dokumenttypenübersicht. Über das Zahnrad der Rechnung öffnen Sie die weiteren Einstellungen.</p></figcaption></figure>
 
 2. Klappen Sie **Purchase Order** auf, falls der Bereich eingeklappt ist. Suchen Sie **Consumed PO line status** und aktivieren Sie den zugehörigen Schalter. Dies ist eine eigene Einstellung und nicht dasselbe wie **Update Document Purchase Order Status** weiter unten im selben Abschnitt.
 
-   <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-settings-en.png" alt="Abschnitt Purchase Order in More Settings, in dem der Schalter Consumed PO line status sichtbar ist"><figcaption><p>Wählen Sie den Schalter Consumed PO line status.</p></figcaption></figure>
+   <figure><img src="../../../../../../.gitbook/assets/s50-consumed-po-line-settings-de.png" alt="Deutsche Bestelleinstellungen mit Status der verbrauchten Bestellposition. Die Schalter zeigen den vorgefundenen Zustand."><figcaption><p>Deutsche Bestelleinstellungen mit Status der verbrauchten Bestellposition. Die Schalter zeigen den vorgefundenen Zustand.</p></figcaption></figure>
 
    <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-toggle-en.png" alt="Nahansicht der Beschriftung und des Schalters Consumed PO line status"><figcaption><p>Der Schalter ist in diesem Beispiel ausgeschaltet; schalten Sie ihn ein, um die Abgleichsfarben anzuzeigen.</p></figcaption></figure>
 

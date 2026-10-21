@@ -1,10 +1,10 @@
-# Login Analytics
+# Anmelde-Analyse
 
 Die **Anmelde-Analyse** bietet Administratoren einen schreibgeschützten, organisationsweiten Überblick darüber, *wann* und *wie oft* sich Personen bei DocBits anmelden. Sie beantwortet Fragen wie „Steigt die Zahl der Anmeldungen?“, „Wie viele unterschiedliche Benutzer waren in diesem Monat aktiv?“ und „Wann treten die Nutzungsspitzen auf?“ – ganz ohne die Anmeldedaten oder personenbezogenen Daten einzelner Benutzer offenzulegen.
 
 > **Zugriff:** Öffnen Sie **Einstellungen → Organisation & Zugriff → Users** und klicken Sie oben rechts auf die Schaltfläche **Anmelde-Analyse** (`/settings/login-analytics`).
 
-<figure><img src="../../../../../.gitbook/assets/login_analytics_overview.png" alt="Login Analytics page with the activity chart and summary cards"><figcaption><p>Anmeldeaktivität der Organisation über den ausgewählten Zeitraum</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s50-login_analytics_overview-de.png" alt="Deutsche Anmelde-Analyse mit Zeitraum, Anmeldeaktivität und zusammengefassten Kennzahlen."><figcaption><p>Deutsche Anmelde-Analyse mit Zeitraum, Anmeldeaktivität und zusammengefassten Kennzahlen.</p></figcaption></figure>
 
 ## Zeitraum
 

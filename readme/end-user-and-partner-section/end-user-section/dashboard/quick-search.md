@@ -90,7 +90,7 @@ Invoice.xml   iNVoice.xml   iNvoiCE.edi   …
 Es stimmt **nicht** mit `XYZ_Invoice.pdf` überein (dort steht „invoice“ in der Mitte — verwenden Sie
 dafür `:`).
 
-<figure><img src="../../../.gitbook/assets/quick_search_02_filename_starts.png" alt="filename=invoice matches only names that start with invoice, any case"><figcaption><p><code>filename=invoice</code> — nur Namen, die mit „invoice“ <strong>beginnen</strong>, in beliebiger Groß-/Kleinschreibung (<code>Invoice.pdf</code>, <code>iNVoice.pdf</code>, <code>INVOICE_2026.pdf</code> … alle stimmen überein). Vergleichen Sie mit <code>:</code> unten.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s50-quick_search_02_filename_starts-de.png" alt="Suche filename = invoice mit deutschen Tabellenüberschriften. Dieses Beispiel hat keine Treffer."><figcaption><p>Suche filename = invoice mit deutschen Tabellenüberschriften. Dieses Beispiel hat keine Treffer.</p></figcaption></figure>
 
 #### `:` → enthält (an beliebiger Stelle)
 
@@ -243,7 +243,7 @@ ist lediglich eine Kurzform für eine Abfrage, die Sie auch selbst eingeben kön
 Die drei **Bestellabgleich**-Filter und die Volltextfelder erfordern, dass die Volltextsuche
 für Ihre Organisation aktiviert ist.
 
-<figure><img src="../../../.gitbook/assets/quick_search_11_smart_filters.png" alt="The Smart Filters dropdown panel"><figcaption><p>Die Smart-Filter oben im Dropdown-Menü der Schnellsuche — ein Klick wendet den Filter an (Überfällig, Bald fällig, Mir zugewiesen, Heutiger Posteingang, Ausstehende Validierung, Elektronische Dokumente, Vollständiger / Teilweiser / Unter-Bestellabgleich).</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s50-quick_search_11_smart_filters-de.png" alt="Deutsche Schnellfilter im Menü der Schnellsuche, darunter Überfällig, Bald fällig und Mir zugewiesen."><figcaption><p>Deutsche Schnellfilter im Menü der Schnellsuche, darunter Überfällig, Bald fällig und Mir zugewiesen.</p></figcaption></figure>
 
 ---
 
@@ -261,7 +261,7 @@ Die Liste zeigt dann einklappbare **Gruppenüberschriften**, jede mit dem Namen 
 einer **Anzahl** (z. B. *Ruiz Foods (12)*). Klicken Sie auf eine Überschrift, um diese Gruppe ein- oder
 auszuklappen. Bei Datumsfeldern können Sie nach **Tag, Woche oder Monat** gruppieren.
 
-<figure><img src="../../../.gitbook/assets/quick_search_16_grouping.png" alt="Results grouped by supplier with collapsible headers"><figcaption><p><code>group by supplier_name</code> — die Ergebnisse werden zu einer einklappbaren Überschrift pro Lieferant zusammengefasst.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s50-quick_search_16_grouping-de.png" alt="Gruppieren nach Lieferantenname in der deutschen Oberfläche. Lieferantendaten und Tabellenwerte sind ausgeblendet."><figcaption><p>Gruppieren nach Lieferantenname in der deutschen Oberfläche. Lieferantendaten und Tabellenwerte sind ausgeblendet.</p></figcaption></figure>
 
 Die Gruppierung lässt sich mit jedem Filter kombinieren — `status=ready_for_validation group by
 supplier_name` gruppiert nur die übereinstimmenden Dokumente. Das Klicken in eine Gruppe

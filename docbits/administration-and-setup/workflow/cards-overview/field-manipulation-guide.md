@@ -18,7 +18,7 @@ The field and table cards on this page go in the **Then** group of the Workflow 
 
 **Version Pattern:** All field manipulation cards follow v1 → v2 pattern **Key Change:** v2 adds internationalization (i18n) support with translation keys
 
-📖 [Complete Version History](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/changelog/release.md#-data-manipulation-cards) | [Card Version Database](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/DocFlow/docs/card_version.md)
+📖 [Complete Version History](../release.md) | [Card versions and behavior](card-versions-guide.md)
 
 ***
 

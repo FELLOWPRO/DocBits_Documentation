@@ -132,7 +132,7 @@ ELSE:
   → Create manual review task
 ```
 
-**Guide Reference:** [Condition Cards Guide - HTTP Status](../condition-cards-complete-guide.md#condition-https-request-status)
+**Guide Reference:** [Condition Cards Guide - HTTP Status](../condition-cards-complete-guide.md)
 
 ***
 
@@ -168,7 +168,7 @@ Field Type: Boolean
 
 **Result:** Data from API is now stored in document fields for later use
 
-**Guide Reference:** [Field Manipulation Guide - API Data Storage](../field-manipulation-guide.md#storing-api-data)
+**Guide Reference:** [Field Manipulation Guide - API Data Storage](../field-manipulation-guide.md)
 
 ***
 
@@ -199,7 +199,7 @@ Example:
   Result: PASS
 ```
 
-**Guide Reference:** [Condition Cards Guide - Field Comparison](../condition-cards-complete-guide.md#field-comparison)
+**Guide Reference:** [Condition Cards Guide - Field Comparison](../condition-cards-complete-guide.md)
 
 ***
 
@@ -605,9 +605,9 @@ Before deploying this pattern:
 
 * **CALL\_API** - [Call API Guide](../call-api-guide.md)
 * **ACTION\_HTTPS\_REQUEST** - [HTTPS Request Guide](../https-request-guide.md)
-* **CONDITION\_HTTPS\_REQUEST\_STATUS** - [Condition Cards Guide](../condition-cards-complete-guide.md#condition-https-request-status)
-* **ACTION\_SET\_FIELD\_TO\_TEXT** - [Field Manipulation Guide](../field-manipulation-guide.md#set-field)
-* **CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES** - [Condition Cards Guide](../condition-cards-complete-guide.md#field-comparison)
+* **CONDITION\_HTTPS\_REQUEST\_STATUS** - [Condition Cards Guide](../condition-cards-complete-guide.md)
+* **ACTION\_SET\_FIELD\_TO\_TEXT** - [Field Manipulation Guide](../field-manipulation-guide.md)
+* **CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES** - [Condition Cards Guide](../condition-cards-complete-guide.md)
 
 ### Next Steps
 
@@ -622,7 +622,7 @@ Before deploying this pattern:
 **Need Help?**
 
 * Review [Call API Troubleshooting](../call-api-guide.md#troubleshooting)
-* Check [API Response Codes](../call-api-guide.md#response-scenarios)
+* Check [API Response Codes](../call-api-guide.md)
 * Test API with Postman first
 * Contact API provider support
 

@@ -69,3 +69,5 @@ Assign the document to a user, group, recipient, or sub-organization. Some cards
 Run another workflow, send an HTTPS request, call an API, or use the cost-increase calculation card. These actions can affect other systems; ask your administrator which endpoint and settings to use. See [Action](action/).
 
 <figure><img src="../../../../.gitbook/assets/then-category-action-en.png" alt="English Then card picker with Action selected; previews show Run workflow, HTTPS request, API call, and cost increase calculation."><figcaption><p>Start another workflow or integration action.</p></figcaption></figure>
+
+[Detailed logic-card fields, JSON paths, triggers and tests](../logic-cards-guide.md).

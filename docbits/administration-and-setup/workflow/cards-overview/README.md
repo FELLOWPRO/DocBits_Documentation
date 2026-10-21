@@ -17,3 +17,5 @@ For a complete reference of each card and its options, see the _complete guide_ 
 ## Combining cards
 
 To see proven combinations of cards that solve common business scenarios, see the **Workflow Pattern Guides**.
+
+[Logic cards: full reference](logic-cards-guide.md).

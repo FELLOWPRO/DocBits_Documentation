@@ -57,3 +57,5 @@ Use these cards to compare an item with quoted price data. The visible choices c
 Use **Assignee** when the condition depends on the assigned user or group. Choose whether to compare with one user or group or a selected set. See [Assignee](assignee/).
 
 <figure><img src="../../../../.gitbook/assets/and-category-assignee-en.png" alt="English And card picker with Assignee selected; previews compare the assigned user or group with one or several choices."><figcaption><p>Assignee conditions check the user or group assigned to the document.</p></figcaption></figure>
+
+[Detailed quote comparison cards and Any/All behavior](../quote-comparison-guide.md).

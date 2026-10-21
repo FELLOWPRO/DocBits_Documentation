@@ -763,9 +763,9 @@ Exceptions: 15 (1.2%)
 
 ### Related Cards
 
-* **CONDITION\_DOC\_FIELD\_AMOUNT** - [Condition Cards Guide](../condition-cards-complete-guide.md#field-conditions)
-* **CONDITION\_DOC\_TYPE\_IS\_ISNOT** - [Condition Cards Guide](../condition-cards-complete-guide.md#condition-doc-type-is-isnot)
-* **CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT** - [Condition Cards Guide](../condition-cards-complete-guide.md#condition-supplier-status-is-isnot)
+* **CONDITION\_DOC\_FIELD\_AMOUNT** - [Condition Cards Guide](../condition-cards-complete-guide.md)
+* **CONDITION\_DOC\_TYPE\_IS\_ISNOT** - [Condition Cards Guide](../condition-cards-complete-guide.md)
+* **CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT** - [Condition Cards Guide](../condition-cards-complete-guide.md)
 * **ACTION\_ASSIGN\_TO\_USER** - [Assignment Guide](../assignment-user-guide.md)
 * **tasks\_create** - [Task Assignment Guide](../task-assignment-guide.md)
 

@@ -187,7 +187,7 @@ Line 3:
   Store in: Line_Total
 ```
 
-**Guide Reference:** [Field Manipulation Guide - Calculations](../field-manipulation-guide.md#calculate-field)
+**Guide Reference:** [Field Manipulation Guide - Calculations](../field-manipulation-guide.md)
 
 ***
 
@@ -344,7 +344,7 @@ Grand Total (EUR) = 7601.13 × 0.92 = €6,993.04
 Store in: Grand_Total_EUR
 ```
 
-**Guide Reference:** [API Integration Pattern - Currency Conversion](api-integration-pattern.md#currency-conversion-example)
+**Guide Reference:** [API Integration Pattern - Currency Conversion](api-integration-pattern.md)
 
 ***
 
@@ -382,7 +382,7 @@ Line 3:
   Result: GL Account "5000-300" (Services Expense)
 ```
 
-**Guide Reference:** [Field Manipulation Guide - Master Data](../field-manipulation-guide.md#master-data-lookup)
+**Guide Reference:** [Field Manipulation Guide - Master Data](../field-manipulation-guide.md)
 
 ***
 
@@ -430,7 +430,7 @@ ELSE:
   Flag for manual verification
 ```
 
-**Guide Reference:** [Condition Cards Guide - Field Comparison](../condition-cards-complete-guide.md#field-comparison)
+**Guide Reference:** [Condition Cards Guide - Field Comparison](../condition-cards-complete-guide.md)
 
 ***
 
@@ -879,9 +879,9 @@ Solution:
 
 ### Related Cards
 
-* **ACTION\_CALCULATE\_FIELD** - [Field Manipulation Guide](../field-manipulation-guide.md#calculate-field)
-* **ACTION\_SET\_FIELD\_TO\_TEXT** - [Field Manipulation Guide](../field-manipulation-guide.md#set-field)
-* **ACTION\_COPY\_FIELD\_VALUE** - [Field Manipulation Guide](../field-manipulation-guide.md#copy-field)
+* **ACTION\_CALCULATE\_FIELD** - [Field Manipulation Guide](../field-manipulation-guide.md)
+* **ACTION\_SET\_FIELD\_TO\_TEXT** - [Field Manipulation Guide](../field-manipulation-guide.md)
+* **ACTION\_COPY\_FIELD\_VALUE** - [Field Manipulation Guide](../field-manipulation-guide.md)
 * **CALL\_API** - [Call API Guide](../call-api-guide.md)
 * **CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES** - [Condition Cards Guide](../condition-cards-complete-guide.md)
 

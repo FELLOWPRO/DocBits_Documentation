@@ -48,7 +48,7 @@ The DocBits Workflow Engine implements robust version control for all workflow c
 
 **Versions:** v1, v2 (Current: v2)
 
-📖 **Guide:** [Call External API Guide](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/then/action/call-api-guide.md)
+📖 **Guide:** [Call External API Guide](cards-overview/call-api-guide.md)
 
 | Version | Translation | Status    | Key Changes                                        |
 | ------- | ----------- | --------- | -------------------------------------------------- |
@@ -111,7 +111,7 @@ trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [
 
 **Versions:** v2, v3 (Deprecated), v4 (Current)
 
-📖 **Guide:** [Task Assignment Guide](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/then/task/task-assignment-guide.md)
+📖 **Guide:** [Task Assignment Guide](cards-overview/task-assignment-guide.md)
 
 | Version | Changes                         | Status       | Type Parameter          |
 | ------- | ------------------------------- | ------------ | ----------------------- |
@@ -175,7 +175,7 @@ After (v4):  "Create a new [param] with the title: [param] ... "
 
 **Versions:** v2, v3, v4, v5 (Current)
 
-📖 **Guide:** [PO Matching Complete Guide](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/and/compare-with-purchase-order/po-matching-complete-guide.md#2-unit-price-comparison-document-vs-po)
+📖 **Guide:** [PO Matching Complete Guide](cards-overview/po-matching-complete-guide.md)
 
 | Version | Changes                  | Status    | Tolerance             | Comparison |
 | ------- | ------------------------ | --------- | --------------------- | ---------- |
@@ -370,7 +370,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 
 **Versions:** v1 (Deprecated), v2 (Deprecated), v3 (Deprecated), v4 (Current)
 
-📖 **Guide:** [Task Assignment Guide](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/then/task/task-assignment-guide.md#card-tasks_create--create-task-and-assign-to-user)
+📖 **Guide:** [Task Assignment Guide](cards-overview/task-assignment-guide.md)
 
 | Version | Translation | Decision Tree | Work Item Type   | Status       |
 | ------- | ----------- | ------------- | ---------------- | ------------ |
@@ -683,10 +683,10 @@ v4: + "Compare as [param1] [param2]"
 
 ## Related Documentation
 
-* 📖 [Card Versioning Reference](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/changelog/card-versioning.md) - Detailed version information
-* 📚 [Workflow Guides](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/README.md) - Step-by-step card usage
-* 🔄 [Card Version Database](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/docs/card_version.md) - Complete version history
-* 📋 [Workflow Logs](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/workflow-logs/README.md) - Execution and debugging
+* 📖 [Card Versioning Reference](cards-overview/po-comparison-versions-guide.md) - Detailed version information
+* 📚 [Workflow Guides](README.md) - Step-by-step card usage
+* 🔄 [Card Version Database](cards-overview/po-comparison-versions-guide.md) - Complete version history
+* 📋 [Workflow Logs](workflow-logs.md) - Execution and debugging
 
 ***
 

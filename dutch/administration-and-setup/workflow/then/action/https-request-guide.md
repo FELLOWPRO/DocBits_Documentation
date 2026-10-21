@@ -25,11 +25,7 @@ Voeg deze kaart toe aan de groep **Dan** van de Workflow Builder — de acties d
 
 ## Doel
 
-Deze kaart stuurt een beveiligd bericht naar een website of dienst en kan een reactie terugkrijgen. Het is eenvoudiger dan de "Call API"-kaart en is handig voor snelle integraties.
-
-**Voorbeeld uit de praktijk:** Stuur factuurgegevens naar uw boekhoudsysteem, of vraag een extern systeem of een medewerker toestemming heeft om deze aankoop te verwerken.
-
-***
+De HTTPS-aanvraagkaart gebruikt een ingestelde HTTPS-URL en eigen headers. `call_api` gebruikt een relatief DocBits-API-pad en de context van de huidige gebruiker; het resultaat komt uit de antwoordtekst. Kies op basis van endpoint en antwoordcontract, niet op basis van een eenvoudige of complexe API.
 
 ## Wanneer moet u deze kaart gebruiken?
 
@@ -313,13 +309,7 @@ Headers: Authorization: Bearer token
 
 ## Verschil met de "Call API"-kaart
 
-| Functie        | HTTPS-verzoek      | API aanroepen          |
-| -------------- | ------------------ | ----------------- |
-| Eenvoud     | Eenvoudig             | Complexer      |
-| Parameters     | Basis              | Geavanceerd          |
-| Foutafhandeling | Basis              | Gedetailleerd          |
-| Gebruik voor        | Snelle integraties | Complexe API's      |
-| Beste voor       | Webhaken           | Professionele API's |
+De HTTPS-aanvraagkaart gebruikt een ingestelde HTTPS-URL en eigen headers. `call_api` gebruikt een relatief DocBits-API-pad en de context van de huidige gebruiker; het resultaat komt uit de antwoordtekst. Kies op basis van endpoint en antwoordcontract, niet op basis van een eenvoudige of complexe API.
 
 ***
 

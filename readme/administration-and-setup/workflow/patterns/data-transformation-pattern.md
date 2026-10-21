@@ -873,7 +873,7 @@ Oplossing:
 
 * [Gids Veldmanipulatie](../then/document-field/field-manipulation-guide.md) - Alle veldoperaties
 * [Gids Conditiekaarten](../and/condition-cards-complete-guide.md) - Validatiecondities
-* [Call API Gids](../then/action/call-api-guide.md) - Externe gegevens ophalen
+* [Call API Gids](../then/action/call-api-guide.md)
 
 ### Gerelateerde Kaarten
 

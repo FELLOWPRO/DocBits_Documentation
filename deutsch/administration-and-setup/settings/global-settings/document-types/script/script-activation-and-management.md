@@ -13,8 +13,6 @@
 * Suchen Sie in der DocBits-Oberfläche nach der Option zur Verwaltung von Skripten.
 * Dies kann je nach Setup und Konfiguration von DocBits variieren.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_view_existing_scripts.png" alt="Docbits View Existing Scripts"><figcaption></figcaption></figure>
-
 **Anzeigen vorhandener Skripte:**
 
 * Sobald Sie sich in der Skriptverwaltungsoberfläche befinden, sehen Sie eine Liste aller vorhandenen Skripte.
@@ -26,8 +24,6 @@
 
 * Um ein Skript zu aktivieren oder zu deaktivieren, suchen Sie das entsprechende Skript in der Liste und betätigen Sie den entsprechenden Schalter.
 * Stellen Sie sicher, dass Sie die Änderungen nach Ihrer Auswahl speichern.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_save_script_changes.png" alt="Docbits Save Script Changes"><figcaption></figcaption></figure>
 
 **Bearbeiten eines Skripts:**
 

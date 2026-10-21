@@ -19,7 +19,7 @@ Ga naar **Instellingen → Documentverwerking → Importeren** en open de sectie
 
 De installatiewizard opent. Het eerste veld, **Protocol**, bepaalt hoe DocBits verbinding maakt — kies **IMAP**, **OAuth Office365** of **OAuth Office365 – Tenant**.
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_protocol_select.png" alt="Vervolgkeuzelijst Protocol met IMAP, OAuth Office365 en OAuth Office365 - Tenant"><figcaption><p>De lijst <strong>Protocol</strong> biedt de drie verbindingstypen.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-inbound_emails_protocol_select-nl.png" alt="Protocolselectie in de wizard voor inkomende e-mail."><figcaption><p>Protocolselectie in de wizard voor inkomende e-mail.</p></figcaption></figure>
 
 #### IMAP
 

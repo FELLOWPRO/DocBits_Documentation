@@ -1,5 +1,7 @@
 # Exportconfiguratie voor Leverancierportaal voor M3
 
+<figure><img src="../../../.gitbook/assets/prior-t014-nl.png" alt="Exportconfiguratie van het leveranciersportaal."><figcaption><p>Exportconfiguratie van het leveranciersportaal.</p></figcaption></figure>
+
 ## Overzicht
 
 Het exportconfiguratiebestand is een cruciaal onderdeel van het leveranciersportaal, dat definieert hoe gegevens worden gemapt tussen het leveranciersportaal en het ERP-systeem. Deze configuratie zorgt ervoor dat gegevens nauwkeurig worden overgedragen en gesynchroniseerd tussen systemen, wat zorgt voor soepele en efficiënte operaties.

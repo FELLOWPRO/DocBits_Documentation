@@ -64,6 +64,6 @@ De workflow-kaart **"Call API"** verbetert de workflow-automatisering door direc
 
 **Configuratie:** Selecteer het geconfigureerde demo-API-eindpunt en de HTTP-methode. Geef de parameters en JSON-hoofdtekst op die voor dat eindpunt vereist zijn.
 
-**Verwacht resultaat en tegenvoorbeeld:** Voor een nepantwoord `200`, controleer de reactieverwerking die wordt verwacht door de volgende kaarten. Test ook `500`; het starten van het gesprek betekent niet dat de bedrijfscontrole is geslaagd.
+**Verwacht resultaat en tegenvoorbeeld:** Controleer bij een gesimuleerde HTTP-respons met status `200` de verwerking van de respons door de volgende kaarten. Test ook `500`; het starten van het aanroep betekent niet dat de bedrijfscontrole is geslaagd.
 
 Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

@@ -1,6 +1,6 @@
 # Advanced Workflow
 
-De **Advanced Workflow** builder is een node-grafiek-editor voor workflows die vertakkingen, parallelle paden en flow-besturing nodig hebben — verder dan de lineaire When/And/Then van de Standard builder. U plaatst nodes op een canvas en verbindt ze om de uitvoeringsstroom te definiëren.
+De **Geavanceerde workflow** builder is een node-grafiek-editor voor workflows die vertakkingen, parallelle paden en flow-besturing nodig hebben — verder dan de lineaire When/And/Then van de Standard builder. U plaatst nodes op een canvas en verbindt ze om de uitvoeringsstroom te definiëren.
 
 ## Video: factuurroutes in DocBits
 
@@ -70,27 +70,27 @@ Validatie controleert verbindingen en kaartinstellingen. Bij dit account blokkee
 
 ## Toegang krijgen
 
-Open de Advanced Workflow-ontwerper vanuit het workflow-gedeelte (het canvas van de advanced builder). U begint bij een **Start**-node en bouwt de flow uit door nodes toe te voegen.
+Open de Advanced Workflow-ontwerper vanuit het workflow-gedeelte (het canvas van de advanced builder). U begint bij een **Begin**-node en bouwt de flow uit door nodes toe te voegen.
 
 <figure><img src="../../.gitbook/assets/workflow_advanced_canvas.png" alt="Advanced Workflow node-grafiek-canvas met werkbalk"><figcaption><p>Het Advanced Workflow-canvas — een node-grafiek met zoom-, run-, raster- en opslagbesturing. Geef de workflow een naam in de werkbalk.</p></figcaption></figure>
 
 ## Nodes toevoegen
 
-Klik op **+ Add** om het node-menu te openen. Naast de bekende **When**-, **And**- en **Then**-kaarten voegt de advanced builder flow-besturingsnodes toe:
+Klik op **+ Add** om het node-menu te openen. Naast de bekende **Wanneer**-, **En**- en **Dan**-kaarten voegt de advanced builder flow-besturingsnodes toe:
 
-<figure><img src="../../.gitbook/assets/workflow_advanced_add_menu.png" alt="Advanced Workflow Add-menu met node-typen"><figcaption><p>Het <strong>+ Add</strong>-node-menu: When / And / Then plus Wait ALL, Wait ANY, OR en Note.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-u034-nl.png" alt="Knooppuntmenu van de geavanceerde workflowbouwer. De twee verschillende wachtkaarten voor alle of een van de voorafgaande takken heten in deze productversie beide Wacht even. Controleer het kaarttype en de verbindingen; de gedeelde titel onderscheidt de voorwaarden niet."><figcaption><p>Knooppuntmenu van de geavanceerde workflowbouwer. De twee verschillende wachtkaarten voor alle of een van de voorafgaande takken heten in deze productversie beide Wacht even. Controleer het kaarttype en de verbindingen; de gedeelde titel onderscheidt de voorwaarden niet.</p></figcaption></figure>
 
 - **When / And / Then** — dezelfde voorwaarde- en actiekaarten als de Standard builder.
-- **Wait ALL** — wacht tot *alle* binnenkomende vertakkingen zijn voltooid voordat er wordt verdergegaan.
-- **Wait ANY** — ga verder zodra *een* van de binnenkomende vertakkingen is voltooid.
+- **Wachten op alle takken (Wait ALL)** — wacht tot *alle* binnenkomende vertakkingen zijn voltooid voordat er wordt verdergegaan.
+- **Wachten op een tak (Wait ANY)** — ga verder zodra *een* van de binnenkomende vertakkingen is voltooid.
 - **OR** — vertak de flow langs alternatieve paden.
-- **Note** — een vrije-tekstaantekening op het canvas (heeft geen invloed op de uitvoering).
+- **Opmerking** — een vrije-tekstaantekening op het canvas (heeft geen invloed op de uitvoering).
 
 Voer de flow uit met de afspeelknop, valideer hem en sla op met de opslagknop in de werkbalk.
 
 ## Volgende stappen
 
-- Bekijk in het **Cards**-gedeelte wat elke kaart doet.
+- Bekijk in het **Kaarten**-gedeelte wat elke kaart doet.
 - Voor eenvoudige lineaire automatiseringen is de **Standard Workflow** builder sneller op te zetten.
 
 [Bekijk alle vijf hoofdstukken](advanced-workflow-videos.md)

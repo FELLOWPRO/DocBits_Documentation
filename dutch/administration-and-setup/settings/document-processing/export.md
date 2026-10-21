@@ -10,9 +10,9 @@ De Export-pagina toont alle geconfigureerde exportinstellingen, inclusief of ze 
 
 ## Waar te vinden
 
-Je kunt het vinden onder: **Instellingen** → **Documentverwerking** → **Export**
+Je kunt het vinden onder: **Instellingen** → **Documentverwerking** → **Exporteren**
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_settings_menu_access.png)
+<figure><img src="../../../.gitbook/assets/s150-export_settings_menu_access-nl.png" alt="Toegang tot exportconfiguraties vanuit de instellingen."><figcaption><p>Toegang tot exportconfiguraties vanuit de instellingen.</p></figcaption></figure>
 
 ## **Gebruik van de Export-pagina**
 
@@ -28,8 +28,6 @@ Elke rij in de lijst toont:
 * **Sub-organisatie** – als de export beperkt is tot een specifieke sub-organisatie
 * **Exportmethode** – waar het document naartoe wordt gestuurd (bijv. Infor, IDM, SFTP)
 * **Acties** – knoppen om de configuratie te **bewerken, verwijderen** of **activeren/deactiveren**
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_list_view.png)
 
 #### **Belangrijke regels voor exportconfiguratie**
 
@@ -47,7 +45,10 @@ Het is echter mogelijk om:
 
 Om een nieuwe export te maken:
 
-1. Klik op de knop **"Nieuw"**. ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_create_new_button.png)
+1. Klik op de knop **"Nieuw"**.
+
+<figure><img src="../../../.gitbook/assets/s150-export_create_new_button-nl.png" alt="Niet-opgeslagen concept van een exportconfiguratie."><figcaption><p>Niet-opgeslagen concept van een exportconfiguratie.</p></figcaption></figure>
+
 2. Selecteer het **Exporttype** dat je wilt configureren (bijv. Infor, IDM, SFTP).
 3. Vul de vereiste velden in op basis van het exporttype.
 4. Sla de configuratie op.
@@ -60,15 +61,15 @@ Om een nieuwe export te maken:
 
 <summary>Webhook</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_webhook_configuration.png)
+<figure><img src="../../../.gitbook/assets/prior-t006-nl.png" alt="Concept van een exportconfiguratie via Webhook. De toelichting onder Export URL blijft Engelstalig."><figcaption><p>Concept van een exportconfiguratie via Webhook. De toelichting onder Export URL blijft Engelstalig.</p></figcaption></figure>
 
 **Veldbeschrijvingen**
 
-* **Title** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
-* **Sub-Organization** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
+* **Titel** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
+* **Suborganisatie** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
   * Indien leeg gelaten: van toepassing op de hoofdorganisatie.
   * Indien geselecteerd: de export is alleen van toepassing op de gekozen sub-organisatie.
-* **Document Type** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
+* **Documenttype** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
 * **Export URL** De bestemmings-URL waar het document naartoe geëxporteerd moet worden.
 
 </details>
@@ -79,20 +80,20 @@ Om een nieuwe export te maken:
 
 <summary>SFTP</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_sftp_configuration.png)
+<figure><img src="../../../.gitbook/assets/prior-t007-nl.png" alt="Concept van een exportconfiguratie via SFTP."><figcaption><p>Concept van een exportconfiguratie via SFTP.</p></figcaption></figure>
 
 **Veldbeschrijvingen**
 
-* **Title** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
-* **Sub-Organization** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
+* **Titel** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
+* **Suborganisatie** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
   * Indien leeg gelaten: van toepassing op de hoofdorganisatie.
   * Indien geselecteerd: de export is alleen van toepassing op de gekozen sub-organisatie.
-* **Document Type** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
-* **Username** De gebruikersnaam die wordt gebruikt om te authenticeren tegen de SFTP-server.
-* **Password** Het bijbehorende wachtwoord voor het SFTP-account. Zorg ervoor dat het account schrijftoegang heeft tot de gespecificeerde map.
-* **Server URL** De hostnaam of het IP-adres van de doel-SFTP-server.
+* **Documenttype** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
+* **Gebruikersnaam** De gebruikersnaam die wordt gebruikt om te authenticeren tegen de SFTP-server.
+* **Wachtwoord** Het bijbehorende wachtwoord voor het SFTP-account. Zorg ervoor dat het account schrijftoegang heeft tot de gespecificeerde map.
+* **Server-URL** De hostnaam of het IP-adres van de doel-SFTP-server.
 * **Port** De poort die wordt gebruikt om verbinding te maken met de SFTP-server.
-* **Folder** Het pad op de SFTP-server waar documenten moeten worden geüpload (bijv. `/incoming/invoices/`). Moet bestaan en beschrijfbaar zijn.
+* **Map** Het pad op de SFTP-server waar documenten moeten worden geüpload (bijv. `/incoming/invoices/`). Moet bestaan en beschrijfbaar zijn.
 *   **XSLT File (Optioneel)**
 
     Het **XSLT-bestand** maakt transformatie van het standaard DocBits-exportformaat mogelijk.
@@ -100,16 +101,14 @@ Om een nieuwe export te maken:
     * **Wanneer te gebruiken:** Alleen als het ontvangende systeem een andere structuur of specifieke opmaak vereist die verschilt van de standaard van DocBits.
     * **Laat het leeg** als het standaard exportformaat voldoet aan de vereisten.
 
-
-
 **Geavanceerde instellingen:**
 
-* **Filename Export Mode** Specificeert of het geëxporteerde bestand zijn oorspronkelijke bestandsnaam behoudt of wordt hernoemd met het DocBits document-ID.
-* **Include Document History** Wanneer ingeschakeld, bevat het geëxporteerde bestand de documentgeschiedenis gebaseerd op de logs beschikbaar in het dashboard.
+* **Bestandsnaam Exportmodus** Specificeert of het geëxporteerde bestand zijn oorspronkelijke bestandsnaam behoudt of wordt hernoemd met het DocBits document-ID.
+* **Documentgeschiedenis opnemen** Wanneer ingeschakeld, bevat het geëxporteerde bestand de documentgeschiedenis gebaseerd op de logs beschikbaar in het dashboard.
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_sftp_2.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_sftp_3.png)
+<figure><img src="../../../.gitbook/assets/prior-u016-nl.png" alt="Niet-opgeslagen geavanceerde SFTP-exportopties."><figcaption><p>Niet-opgeslagen geavanceerde SFTP-exportopties.</p></figcaption></figure>
 
 </details>
 
@@ -119,18 +118,18 @@ Om een nieuwe export te maken:
 
 <summary>Infor Export naar SFTP</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_infor_sftp_configuration.png)
+<figure><img src="../../../.gitbook/assets/prior-u017-nl.png" alt="Exportconcept via Infor SFTP."><figcaption><p>Exportconcept via Infor SFTP.</p></figcaption></figure>
 
 **Veldbeschrijvingen**
 
-* **Title** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
-* **Sub-Organization** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
+* **Titel** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
+* **Suborganisatie** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
   * Indien leeg gelaten: van toepassing op de hoofdorganisatie.
   * Indien geselecteerd: de export is alleen van toepassing op de gekozen sub-organisatie.
-* **Document Type** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
-* **IDM Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **BOD Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de BOD Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
-* **Folder** Het pad op de SFTP-server waar documenten moeten worden geüpload (bijv. `/incoming/invoices/`). Moet bestaan en beschrijfbaar zijn.
+* **Documenttype** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
+* **IDM-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
+* **BOD-kaartbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de BOD Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
+* **Map** Het pad op de SFTP-server waar documenten moeten worden geüpload (bijv. `/incoming/invoices/`). Moet bestaan en beschrijfbaar zijn.
 
 </details>
 
@@ -140,20 +139,20 @@ Om een nieuwe export te maken:
 
 <summary>SMB</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_smb_configuration.png)
+<figure><img src="../../../.gitbook/assets/prior-u018-nl.png" alt="Exportconcept via SMB; het bedoelde protocol behouden. MKB is hier een onjuiste productvertaling van het protocol SMB."><figcaption><p>Exportconcept via SMB; het bedoelde protocol behouden. MKB is hier een onjuiste productvertaling van het protocol SMB.</p></figcaption></figure>
 
 **Veldbeschrijvingen**
 
-* **Title** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
-* **Sub-Organization** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
+* **Titel** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
+* **Suborganisatie** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
   * Indien leeg gelaten: van toepassing op de hoofdorganisatie.
   * Indien geselecteerd: de export is alleen van toepassing op de gekozen sub-organisatie.
-* **Document Type** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
-* **Username** De gebruikersnaam die wordt gebruikt om verbinding te maken met de SMB-share.
-* **Password** Het bijbehorende wachtwoord voor SMB-authenticatie.
-* **Server URL** Het adres van de SMB-server.
+* **Documenttype** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
+* **Gebruikersnaam** De gebruikersnaam die wordt gebruikt om verbinding te maken met de SMB-share.
+* **Wachtwoord** Het bijbehorende wachtwoord voor SMB-authenticatie.
+* **Server-URL** Het adres van de SMB-server.
 * **Port** Poortnummer dat wordt gebruikt om toegang te krijgen tot de SMB-share.
-* **Folder** Het mappad binnen de SMB-share waar documenten moeten worden opgeslagen (bijv. `/incoming/invoices/`). Moet bestaan en beschrijfbaar zijn.
+* **Map** Het mappad binnen de SMB-share waar documenten moeten worden opgeslagen (bijv. `/incoming/invoices/`). Moet bestaan en beschrijfbaar zijn.
 *   **JPL Mapping File (Optioneel)**
 
     Het **JPL-bestand** wordt gebruikt om een transformatie van de geëxporteerde gegevens te definiëren voordat deze naar de SMB-share worden geschreven.
@@ -169,17 +168,17 @@ Om een nieuwe export te maken:
 
 <summary>Infor IDM</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_infor_idm_configuration.png)
+<figure><img src="../../../.gitbook/assets/prior-u019-nl.png" alt="Exportconcept naar Infor IDM."><figcaption><p>Exportconcept naar Infor IDM.</p></figcaption></figure>
 
 **Veldbeschrijvingen**
 
-* **Title** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
-* **Sub-Organization** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
+* **Titel** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
+* **Suborganisatie** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
   * Indien leeg gelaten: van toepassing op de hoofdorganisatie.
   * Indien geselecteerd: de export is alleen van toepassing op de gekozen sub-organisatie.
-* **Document Type** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
+* **Documenttype** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
 * **ION Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder.
-* **IDM Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
+* **IDM-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **Cloud / On-Prem Toggle** Een schakelaar om het Infor-implementatietype aan te geven:
   * **Cloud**: Selecteer dit als je een Infor CloudSuite-klant bent.
   * **On-Prem**: Selecteer dit als Infor zelf gehost is.
@@ -192,17 +191,17 @@ Om een nieuwe export te maken:
 
 <summary>Infor ION</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_infor_ion_configuration.png)
+<figure><img src="../../../.gitbook/assets/prior-u020-nl.png" alt="Exportconcept naar Infor ION. Informatie ION BOD verwijst naar Infor ION BOD."><figcaption><p>Exportconcept naar Infor ION. Informatie ION BOD verwijst naar Infor ION BOD.</p></figcaption></figure>
 
 **Veldbeschrijvingen**
 
-* **Title** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
-* **Sub-Organization** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
+* **Titel** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
+* **Suborganisatie** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
   * Indien leeg gelaten: van toepassing op de hoofdorganisatie.
   * Indien geselecteerd: de export is alleen van toepassing op de gekozen sub-organisatie.
-* **Document Type** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
+* **Documenttype** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
 * **ION Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder.
-* **BOD Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de BOD Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
+* **BOD-kaartbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de BOD Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
 * **Cloud / On-Prem Toggle** Een schakelaar om het Infor-implementatietype aan te geven:
   * **Cloud**: Selecteer dit als je een Infor CloudSuite-klant bent.
   * **On-Prem**: Selecteer dit als Infor zelf gehost is.
@@ -215,18 +214,18 @@ Om een nieuwe export te maken:
 
 <summary>Infor IDM + ION BOD</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_infor_idm_ion_bod_configuration.png)
+<figure><img src="../../../.gitbook/assets/prior-u021-nl.png" alt="Exportconcept naar Infor IDM ION BOD."><figcaption><p>Exportconcept naar Infor IDM ION BOD.</p></figcaption></figure>
 
 **Veldbeschrijvingen**
 
-* **Title** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
-* **Sub-Organization** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
+* **Titel** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
+* **Suborganisatie** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
   * Indien leeg gelaten: van toepassing op de hoofdorganisatie.
   * Indien geselecteerd: de export is alleen van toepassing op de gekozen sub-organisatie.
-* **Document Type** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
+* **Documenttype** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
 * **ION Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder.
-* **IDM Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **BOD Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de BOD Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
+* **IDM-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
+* **BOD-kaartbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de BOD Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
 * **Cloud / On-Prem Toggle** Een schakelaar om het Infor-implementatietype aan te geven:
   * **Cloud**: Selecteer dit als je een Infor CloudSuite-klant bent.
   * **On-Prem**: Selecteer dit als Infor zelf gehost is.
@@ -241,18 +240,18 @@ Om een nieuwe export te maken:
 
 <summary>Infor IDM + LN</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_infor_idm_ln_configuration.png)
+<figure><img src="../../../.gitbook/assets/prior-u022-nl.png" alt="Exportconcept naar Infor IDM LN."><figcaption><p>Exportconcept naar Infor IDM LN.</p></figcaption></figure>
 
 **Veldbeschrijvingen**
 
-* **Title** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
-* **Sub-Organization** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
+* **Titel** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
+* **Suborganisatie** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
   * Indien leeg gelaten: van toepassing op de hoofdorganisatie.
   * Indien geselecteerd: de export is alleen van toepassing op de gekozen sub-organisatie.
-* **Document Type** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
+* **Documenttype** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
 * **ION Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder.
-* **IDM Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **LN Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk het LN Mapping Voorbeeld](../../../infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/)
+* **IDM-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
+* **LN-mappingbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk het LN Mapping Voorbeeld](../../../infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/)
 
 </details>
 
@@ -262,18 +261,18 @@ Om een nieuwe export te maken:
 
 <summary>Infor IDM + M3</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_infor_idm_m3_configuration.png)
+<figure><img src="../../../.gitbook/assets/prior-u023-nl.png" alt="Exportconcept naar Infor IDM M3."><figcaption><p>Exportconcept naar Infor IDM M3.</p></figcaption></figure>
 
 **Veldbeschrijvingen**
 
-* **Title** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
-* **Sub-Organization** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
+* **Titel** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
+* **Suborganisatie** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
   * Indien leeg gelaten: van toepassing op de hoofdorganisatie.
   * Indien geselecteerd: de export is alleen van toepassing op de gekozen sub-organisatie.
-* **Document Type** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
+* **Documenttype** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
 * **ION Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder.
-* **IDM Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **M3 Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk het M3 Mapping Voorbeeld](../../../infor-integration-and-configuration/exporting-to-infor/m3/example-export-m3.md)
+* **IDM-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
+* **M3-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk het M3 Mapping Voorbeeld](../../../infor-integration-and-configuration/exporting-to-infor/m3/example-export-m3.md)
 
 </details>
 
@@ -283,17 +282,17 @@ Om een nieuwe export te maken:
 
 <summary>Infor IDM + M3 (toml)</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_infor_idm_m3_toml_configuration.png)
+<figure><img src="../../../.gitbook/assets/prior-u024-nl.png" alt="Exportconcept naar Infor IDM M3 met TOML."><figcaption><p>Exportconcept naar Infor IDM M3 met TOML.</p></figcaption></figure>
 
 **Veldbeschrijvingen**
 
-* **Title** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
-* **Sub-Organization** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
+* **Titel** De naam van de exportconfiguratie. Dit verschijnt in de exportlijst.
+* **Suborganisatie** _(optioneel)_ Een dropdown met alle beschikbare sub-organisaties.
   * Indien leeg gelaten: van toepassing op de hoofdorganisatie.
   * Indien geselecteerd: de export is alleen van toepassing op de gekozen sub-organisatie.
-* **Document Type** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
+* **Documenttype** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
 * **ION Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder.
-* **IDM Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
+* **IDM-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **M3 toml Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder of gebruik de optie Toml selecteren om een toml te gebruiken die is gemaakt met de regelbeheerder. [Hulp nodig bij het maken? Bekijk de Rule Manager Gids](rule-manager/)
 
 </details>

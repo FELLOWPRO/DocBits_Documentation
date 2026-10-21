@@ -2,8 +2,6 @@
 
 Met de volledige tekstzoekopdracht kunnen gebruikers de werkelijke inhoud van documenten en elk geëxtraheerd veld doorzoeken — niet alleen bestandsnamen en ID's.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-required-dialog.png" alt="Dialoogvenster „Fulltext Module Required“ wanneer de module is uitgeschakeld"><figcaption><p>Het dialoogvenster «Fulltext Module Required» verschijnt op pagina's die afhankelijk zijn van de module.</p></figcaption></figure>
-
 ## Zonder de module
 
 Wanneer de volledige tekstzoekopdracht niet is ingeschakeld, kan de zoekbalk van het dashboard slechts een kleine reeks gestructureerde velden doorzoeken. Vrije tekst valt terug op het matchen tegen:
@@ -19,7 +17,7 @@ Alles buiten deze velden wordt genegeerd. Er is geen zoeken op inhoud en geen on
 
 Door de volledige tekstzoekopdracht te activeren wordt zoeken in elk geëxtraheerd veld van een document mogelijk en wordt de zoekbalk van het dashboard vervangen door een rijkere zoektaal. Query's kunnen veldfilters, bereikvergelijkingen, logische operatoren, relatieve datums en slimme filters combineren.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-dashboard-query.png" alt="Zoekbalk van het dashboard met een bereikquery en de gefilterde documentenlijst"><figcaption><p>De zoekbalk van het dashboard accepteert de uitgebreide zoektaal. Typ een query en druk op <kbd>Enter</kbd> om de documentenlijst te filteren.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u049-nl.png" alt="Een bedragquery in het dashboard invoeren."><figcaption><p>Een bedragquery in het dashboard invoeren.</p></figcaption></figure>
 
 ### Veldgebonden query's
 
@@ -102,7 +100,7 @@ ai: invoices from Ruiz over 1000 last quarter
 
 AI-zoekopdracht en vectorzoeken zijn niet uitwisselbaar: vectorzoeken vindt vergelijkbare inhoud, AI-zoekopdracht vertaalt taal naar filters. De AI-zoekopdracht heeft geen eigen schakelaar — zij maakt gebruik van de bestaande volledige-tekst- en vectorindexen.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-settings-page.png" alt="Pagina „Instellingen volledige tekstzoekopdracht“ met de sub-indexen Documents, Vector Index en Fulltext (Text)"><figcaption><p>Instellingen volledige tekstzoekopdracht. De vectorindex heeft een eigen schakelaar; de tekstindex draait zolang de module actief is.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u048-nl.png" alt="Instellingen en informatie over volledige-tekstindexering. De meldingen en acties voor ontbrekende indexdocumenten, Backfill en Full Rebuild blijven in deze productversie Engelstalig."><figcaption><p>Instellingen en informatie over volledige-tekstindexering. De meldingen en acties voor ontbrekende indexdocumenten, Backfill en Full Rebuild blijven in deze productversie Engelstalig.</p></figcaption></figure>
 
 ## Vereisten
 
@@ -113,11 +111,11 @@ AI-zoekopdracht en vectorzoeken zijn niet uitwisselbaar: vectorzoeken vindt verg
 ## De module inschakelen
 
 1. Ga naar **Instellingen → Documentverwerking → Module**.
-2. Schakel onder de groep **Dashboards** de optie **Full text search** in.
+2. Schakel onder de groep **Dashboards** de optie **Volledige tekst zoeken** in.
 3. Bevestig het abonnementsvenster indien dit verschijnt.
 4. Wacht totdat de eerste herindexering is voltooid voordat u op volledige-tekstquery's vertrouwt.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-module-toggle.png" alt="Modulepagina met de schakelaar „Full text search“ onder de groep Dashboards"><figcaption><p>De schakelaar <strong>Full text search</strong> staat onder <strong>Module → Dashboards &#x26; Analytics</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u050-nl.png" alt="Beschikbaarheid van de module voor volledige-tekstzoeken."><figcaption><p>Beschikbaarheid van de module voor volledige-tekstzoeken.</p></figcaption></figure>
 
 {% hint style="info" %}
 De prijsstelling van de module voor volledige tekstzoekopdrachten loopt via uw DocBits-verkoopcontact. De abonnementsbevestiging verschijnt bij de eerste activering van de module.
@@ -128,3 +126,5 @@ De prijsstelling van de module voor volledige tekstzoekopdrachten loopt via uw D
 * [Instellingen volledige tekstzoekopdracht](../../log-settings/fulltext-search-settings.md) — indexbeheer en schakelaar voor de vectorindex.
 * [Fulltext- en Vector Search-functies](../../global-settings/document-types/script/scripting-in-docbits/fulltext-search-functions.md) — scripting-API voor `fulltext_search()` en `vector_search()`.
 * [Overzicht modules](README.md) — volledige lijst met optionele DocBits-modules.
+
+Voor volledige-tekstzoeken zijn de juiste module en rechten nodig. Verschijnt er een melding over een vereiste module, vraag dan de beheerder om beschikbaarheid en toegang te controleren.

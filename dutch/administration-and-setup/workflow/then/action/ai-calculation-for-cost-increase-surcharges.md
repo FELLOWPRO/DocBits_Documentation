@@ -14,7 +14,7 @@ De weergegeven kaart heeft geen invoer voor Kostenverhogingsfactor, Basiskostenv
 
 Een succesvolle servicereactie markeert de kaart als succesvol. Een time-out of een mislukte reactie leidt tot een kaartfout. Inspecteer het kaartlogboek en de daaruit voortvloeiende toeslaggegevens van het document; Het succes van de oproep alleen duidt niet op een bepaald bedrag.
 
-In de kaarttestmodus wordt het gesprek overgeslagen en wordt succes gesimuleerd. Dit is handig voor het testen van de workflow-structuur, maar het bewijst niet dat de service heeft gedraaid of dat er een toeslag is berekend.
+In de kaarttestmodus wordt het aanroep overgeslagen en wordt succes gesimuleerd. Dit is handig voor het testen van de workflow-structuur, maar het bewijst niet dat de service heeft gedraaid of dat er een toeslag is berekend.
 
 <!-- workflow-card-practical-example-20261021 -->
 

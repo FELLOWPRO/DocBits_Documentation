@@ -12,11 +12,11 @@ Een testscenario legt een workflow, een voorbeeldinvoer en de **verwachte uitkom
 
 ## Werken met scenario's
 
-- **Add Test Scenario** — maak een nieuw scenario op basis van een workflow en een voorbeelddocument.
-- **Run All Tests** — voer alle scenario's tegelijk uit en zie in één oogopslag welke workflows nog steeds slagen.
-- **View Details** — open een scenario om het resultaat te inspecteren.
+- **Testscenario toevoegen** — maak een nieuw scenario op basis van een workflow en een voorbeelddocument.
+- **Alle tests uitvoeren** — voer alle scenario's tegelijk uit en zie in één oogopslag welke workflows nog steeds slagen.
+- **Bekijk details** — open een scenario om het resultaat te inspecteren.
 
-<figure><img src="../../.gitbook/assets/workflow_test_manager_detail.png" alt="Details van een workflow-testscenario met status, uitvoeringstijd en gegevens"><figcaption><p>Scenariodetails — naam, status, uitvoeringstijd en de werkelijke versus geëxtraheerde gegevens die de uitvoering opleverde.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-u027-nl.png" alt="Details van een testscenario; gegevens zijn afgeschermd."><figcaption><p>Details van een testscenario; gegevens zijn afgeschermd.</p></figcaption></figure>
 
 De detailweergave toont de scenarionaam en **status**, de **workflownaam**, de **uitvoeringstijd** en de **werkelijke** en **geëxtraheerde gegevens** die de uitvoering opleverde — zodat u precies kunt zien waarom een scenario is geslaagd of mislukt.
 
@@ -24,5 +24,5 @@ De detailweergave toont de scenarionaam en **status**, de **workflownaam**, de *
 
 Dit zijn twee verschillende dingen:
 
-- **Test Manager** (deze pagina) — *opgeslagen, herhaalbare* scenario's met verwachte uitkomsten, samen uitgevoerd met **Run All Tests**. Gebruik dit voor regressietests na wijzigingen.
-- **Testen in de builder** — de inline **Validate**- en **Test**-knoppen in de Advanced Workflow-builder, voor snelle controles terwijl u aan het bouwen bent. Zie [Validatie & Testen](advanced-workflow/validation-and-testing.md).
+- **Test Manager** (deze pagina) — *opgeslagen, herhaalbare* scenario's met verwachte uitkomsten, samen uitgevoerd met **Alle tests uitvoeren**. Gebruik dit voor regressietests na wijzigingen.
+- **Testen in de builder** — de inline **Valideren**- en **Test**-knoppen in de Advanced Workflow-builder, voor snelle controles terwijl u aan het bouwen bent. Zie [Validatie & Testen](advanced-workflow/validation-and-testing.md).

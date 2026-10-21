@@ -1,5 +1,13 @@
 # Navigeren in de Lay-outbouwer
 
+<figure><img src="../../../../../.gitbook/assets/prior-u011-nl.png" alt="Toegang tot documenttypen vanuit de instellingen."><figcaption><p>Toegang tot documenttypen vanuit de instellingen.</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/prior-u012-nl.png" alt="Elementen en groepen van een bestaande lay-out."><figcaption><p>Elementen en groepen van een bestaande lay-out.</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/prior-u013-nl.png" alt="Beschikbare velden in de lay-outbouwer."><figcaption><p>Beschikbare velden in de lay-outbouwer.</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/prior-u014-nl.png" alt="Formulierelementen in de lay-outbouwer. De namen van formulierelementen blijven Engelstalig."><figcaption><p>Formulierelementen in de lay-outbouwer. De namen van formulierelementen blijven Engelstalig.</p></figcaption></figure>
+
 Gebruik de **Lay-outbouwer** om de velden en groepen te rangschikken die gebruikers op een document zien. Deze handleiding gebruikt de Nederlandse indeling **Factuur** in een sandbox-organisatie.
 
 ## De Factuur-indeling openen

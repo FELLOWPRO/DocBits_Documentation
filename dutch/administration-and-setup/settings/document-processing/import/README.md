@@ -1,5 +1,9 @@
 # Importeren
 
+<figure><img src="../../../../.gitbook/assets/s150-ftp_0-nl.png" alt="Overzicht van FTP-importverbindingen."><figcaption><p>Overzicht van FTP-importverbindingen.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/s150-ftp_5-nl.png" alt="Serverconfiguratie in de FTP-importwizard."><figcaption><p>Serverconfiguratie in de FTP-importwizard.</p></figcaption></figure>
+
 ## Overzicht
 
 In de **Importeren** instellingen kunt u document-specifieke opties voor importeren configureren, of geautomatiseerde imports via FTP of e-mail instellen. Deze pagina biedt een gedetailleerd overzicht van alle beschikbare instellingen.

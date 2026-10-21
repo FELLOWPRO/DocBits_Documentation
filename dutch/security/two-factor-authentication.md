@@ -18,7 +18,7 @@ Wanneer u uw eerste factor inschakelt, geeft DocBits u ook **tien back-upcodes**
 
 Open uw **profiel-/accountinstellingen** (rechtsboven in het accountmenu → **Profiel bewerken**) en selecteer **Twee-factor-authenticatie**. Het 2FA-dialoogvenster toont uw huidige status en de methoden die u kunt toevoegen.
 
-<figure><img src="../.gitbook/assets/mfa-2fa-dialog.png" alt="The Two-factor authentication dialog"><figcaption><p>Het dialoogvenster Twee-factor-authenticatie. Vanaf hier kunt u een authenticator-app of e-mailverificatie inschakelen, een passkey toevoegen, of <strong>Beheren</strong> openen.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/prior-u047-nl.png" alt="Beschikbare methoden voor tweefactorauthenticatie. Het venster noemt dit Voeg een wachtwoord toe, maar hier registreert u een passkey voor aanmelden zonder wachtwoord."><figcaption><p>Beschikbare methoden voor tweefactorauthenticatie. Het venster noemt dit Voeg een wachtwoord toe, maar hier registreert u een passkey voor aanmelden zonder wachtwoord.</p></figcaption></figure>
 
 ## Een authenticator-app (TOTP) instellen
 
@@ -26,8 +26,6 @@ Open uw **profiel-/accountinstellingen** (rechtsboven in het accountmenu → **P
 2. Scan de QR-code met uw authenticator-app (Google Authenticator, 1Password, Authy, …). Als u niet kunt scannen, gebruik dan de **handmatige sleutel** die onder de QR-code wordt weergegeven.
 3. Voer de 6-cijferige code in die uw app toont en bevestig.
 4. DocBits schakelt 2FA in en toont uw **back-upcodes** (zie hieronder).
-
-<figure><img src="../.gitbook/assets/mfa-totp-setup.png" alt="The authenticator-app setup screen with QR code"><figcaption><p>Scan de QR-code met uw authenticator-app, of voer de handmatige sleutel in. Bevestig vervolgens met de 6-cijferige code die de app toont.</p></figcaption></figure>
 
 ## E-mailverificatie instellen
 
@@ -48,8 +46,6 @@ Wanneer u uw **eerste** factor inschakelt, toont DocBits **tien back-upcodes** �
 * Bewaar ze op een veilige plek (een wachtwoordmanager is ideaal).
 * U kunt op elk moment een nieuwe set genereren met **Back-upcodes opnieuw genereren** (hiermee vervalt de oude set).
 
-<figure><img src="../.gitbook/assets/mfa-backup-codes.png" alt="The backup codes screen"><figcaption><p>Uw tien back-upcodes, eenmalig weergegeven. Elke code werkt één keer — bewaar ze op een veilige plek.</p></figcaption></figure>
-
 {% hint style="warning" %}
 Back-upcodes worden alleen weergegeven op het moment dat ze worden gegenereerd. DocBits kan ze niet opnieuw tonen — bewaar ze onmiddellijk.
 {% endhint %}
@@ -65,14 +61,11 @@ Back-upcodes worden alleen weergegeven op het moment dat ze worden gegenereerd. 
    * **Passkey** — klik op **Een passkey gebruiken** en bevestig met Touch ID / Windows Hello / uw sleutel.
    * **Back-upcode** — als u uw gebruikelijke methode niet kunt gebruiken.
 
-    <figure><img src="../.gitbook/assets/mfa-challenge.png" alt="The second-factor challenge screen"><figcaption><p>Na uw wachtwoord vraagt DocBits om uw tweede factor. Wissel van methode met <strong>Een passkey gebruiken</strong> of <strong>E-mail mij een code</strong>, en vertrouw het apparaat desgewenst 30 dagen.</p></figcaption></figure>
 3. Bij succes bent u ingelogd.
 
 ### Hoe de e-mailcode eruitziet
 
 Als u **E-mail** kiest, stuurt DocBits een bericht met een 6-cijferige code die na 10 minuten verloopt:
-
-<figure><img src="../.gitbook/assets/mfa-email-otp.png" alt="The DocBits verification-code email"><figcaption><p>De e-mail met de verificatiecode. De code verloopt na 10 minuten en kan één keer worden gebruikt.</p></figcaption></figure>
 
 ## Dit apparaat vertrouwen
 
@@ -85,8 +78,6 @@ Open het 2FA-dialoogvenster en klik op **Beheren** om te bekijken wat is geregis
 * **Passkeys** — hernoem een passkey (klik op de naam) of verwijder deze. Als u uw laatst overgebleven factor verwijdert, wordt 2FA uitgeschakeld.
 * **Vertrouwde apparaten** — trek een enkel apparaat in, of **Alle apparaten intrekken** om overal een nieuwe 2FA-prompt af te dwingen.
 
-<figure><img src="../.gitbook/assets/mfa-passkeys-list.png" alt="Managing enrolled passkeys and trusted devices"><figcaption><p>De weergave Beheren toont uw geregistreerde passkeys en vertrouwde apparaten, waar u ze kunt hernoemen of verwijderen.</p></figcaption></figure>
-
 ## 2FA uitschakelen
 
 Klik in het 2FA-dialoogvenster op **2FA uitschakelen** en bevestig met een actuele authenticator-code of een back-upcode. Het uitschakelen van 2FA wist ook uw back-upcodes en trekt uw vertrouwde apparaten in.
@@ -98,3 +89,9 @@ Als uw organisatie MFA **verplicht** stelt, kunt u niet met een wachtwoord inlog
 ## Aanmelden zonder wachtwoord (optioneel)
 
 Zodra u een passkey heeft, kunt u **zonder uw wachtwoord te typen** inloggen via **Aanmelden met een wachtwoord** op het inlogscherm. Uw wachtwoord blijft werken als terugvaloptie. Aanmelden zonder wachtwoord vereist dat de passkey u verifieert (Touch ID / Windows Hello / pincode), waardoor het zowel sneller als phishingbestendig is.
+
+Bewaar herstelcodes veilig en afzonderlijk van het authenticatieapparaat. Elke code kan slechts eenmaal worden gebruikt.
+
+Stel e-mailverificatie in via het venster voor tweefactorauthenticatie. Voer de code in die u op uw eigen account ontvangt en doorloop de bedoelde bevestiging.
+
+Stel een authenticator-app in via het tweefactorvenster. Bewaar het geheim uitsluitend in de goedgekeurde app en bevestig met de huidige tijdelijke code.

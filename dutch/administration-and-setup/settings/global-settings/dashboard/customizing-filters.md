@@ -30,7 +30,7 @@ Het gebruik van filters stelt gebruikers in staat om snel relevante informatie t
 
 * Open het filtermenu in de instellingen onder Dashboard en klik op "Filters".
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_3.png)
+<figure><img src="../../../../.gitbook/assets/prior-u015-nl.png" alt="Statusfilterstijl en aangepast dashboardfilter."><figcaption><p>Statusfilterstijl en aangepast dashboardfilter.</p></figcaption></figure>
 
 * Selecteer het veld dat gefilterd moet worden (bijv. Status).
 

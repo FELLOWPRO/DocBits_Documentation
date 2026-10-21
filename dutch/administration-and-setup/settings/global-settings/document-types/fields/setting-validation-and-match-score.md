@@ -1,44 +1,21 @@
-# Setting Validation and Match Score
+# Validatie en overeenkomstscore
 
-## Instructions for using the Force Validation and Match Value settings to improve data integrity and recognition accuracy.
+Verplicht, geforceerde validatie, OCR en Match Score zijn verschillende veldeigenschappen. Bekijk de velden van het documenttype om ze te controleren.
 
-Here are instructions for using the Force Validation and Match Value settings to improve data integrity and recognition accuracy in a document processing system:
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_choose_column_type-nl.png" alt="Afzonderlijke kolommen voor geforceerde validatie, OCR en Match Score. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie."><figcaption><p>Afzonderlijke kolommen voor geforceerde validatie, OCR en Match Score. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie.</p></figcaption></figure>
 
-### Force Validation:
+## Geforceerde validatie
 
-<figure><img src="../../../../../.gitbook/assets/docbits_force_validation_setting.png" alt="Docbits Force Validation Setting" width="151"><figcaption></figcaption></figure>
+Geforceerde validatie vereist een expliciete controle van het veld. Deze optie maakt op zichzelf geen reguliere expressie of vergelijkingsregel. Aangepaste validatieregels stelt u afzonderlijk in.
 
-This setting allows you to set rules that check whether the data entered meets certain criteria.
+<figure><img src="../../../../../.gitbook/assets/s150-image-120-nl.png" alt="Validatie en herkenning afzonderlijk per veld instellen. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie."><figcaption><p>Validatie en herkenning afzonderlijk per veld instellen. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie.</p></figcaption></figure>
 
-**To set this up:**
+## OCR en Match Score
 
-* Go to the settings of the field in question.
-* Enable the Force Validation option.
-* Define the validation rules to check. These can be, for example, numeric limits, regular expressions for text fields, or relationships to other fields.
+OCR bepaalt de herkenningsdrempel van het veld. Match Score is een numerieke drempel voor overeenkomst. Het is geen referentietekst of keuzelijst voor de te vergelijken waarde.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_validation_rules_regex.png" alt="Docbits Validation Rules Regex"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_decide_column_necessity-nl.png" alt="Gefilterd factuurnummer met geforceerde validatie en Match Score. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie."><figcaption><p>Gefilterd factuurnummer met geforceerde validatie en Match Score. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_validation_rules_example.png" alt="Docbits Validation Rules Example" width="375"><figcaption></figcaption></figure>
+Controleer het gedrag met representatieve documenten voordat u instellingen opslaat. Een verplicht veld vervangt geforceerde validatie niet.
 
-**Impact:**
-
-* Enforcing validation rules helps detect errors early and improves data quality. Users are prompted to enter correct data, which increases the integrity of the database.
-
-### Match Score:
-
-<figure><img src="../../../../../.gitbook/assets/docbits_match_score_setting.png" alt="Docbits Match Score Setting" width="116"><figcaption></figcaption></figure>
-
-This setting allows you to match the entered value against a predefined reference value.
-
-**To set this up:**
-
-* Navigate to the field's settings.
-* Enable the Match Value option.
-* Enter the reference value to compare the entered value against.
-
-**Impact:**
-
-* Setting a match value allows you to ensure that the entered data matches a known standard or predefined norm. This is especially useful when you want to ensure that the data is consistent and meets certain criteria.
-* Using these settings can improve data integrity and recognition accuracy in your document processing system.
-
-You ensure that only correct and valid data is captured, increasing the quality of your database and improving the reliability of your analytics and reports.
+Het productlabel Wedstrijdscore betekent hier de overeenkomstscore (Match Score), geen sportuitslag. FORCE VALIDATIE betekent geforceerde validatie.

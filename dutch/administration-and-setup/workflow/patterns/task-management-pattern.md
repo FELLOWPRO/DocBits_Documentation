@@ -4,13 +4,19 @@
 
 ***
 
-U bouwt dit patroon in de **Workflow-bouwer** (Workflow Dashboard → Workflowlijst → Workflow Toevoegen). Klik op **Kaart toevoegen** om de kaartbibliotheek te openen en kies de kaarten die dit patroon gebruikt — `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` en `CONDITION_TASK_STATUS` (de categorie **Ontvanger** bevat de taak- en toewijzingskaarten):
+<!-- workflow-card-task-pattern-scope-20261022 -->
+
+**Geverifieerd bereik:** Dit is een conceptueel procesontwerp, geen importeerbare workflowconfiguratie. In de gecontroleerde bibliotheek staat `tasks_create` onder **Taak**, `doc_user_assign` onder **Toewijzing** en `action_send_email_to_groups` onder **E-mail**.
+
+De eerdere namen `ACTION_ASSIGN_TO_USER` en `CONDITION_TASK_STATUS` zijn illustratieve aanduidingen, geen geregistreerde kaarten die in deze bibliotheek kunnen worden geselecteerd. De onderstaande JSON is schematisch. Alleen een taak aanmaken pauzeert een workflow niet en stelt geen automatische hervatting in. Routering na voltooiing, wachten en escalatie moeten afzonderlijk worden geconfigureerd en gecontroleerd.
+
+[Huidige taakkaarten](../then/task/README.md) · [Exportbeveiliging en openstaande taken](../cards-overview/export-cards-guide.md).
 
 ***
 
 ## Patroonoverzicht
 
-Dit patroon demonstreert hoe u taken in DocBits workflows kunt creëren, toewijzen, volgen en beheren. Taken zijn actievere werkitems die zijn toegewezen aan gebruikers of groepen en die voltooiing vereisen voordat de documentworkflow kan doorgaan.
+Dit patroon illustreert het aanmaken en toewijzen van taken en het informeren van ontvangers. De stappen na taakvoltooiing beschrijven een beoogd ontwerp; het aanmaken van de taak is zelf geen wachtbewerking.
 
 **Wat Dit Patroon Doet:**
 
@@ -125,6 +131,8 @@ Valuta: EUR
 
 **Configuratie:**
 
+**Schematische JSON:** Alleen ter illustratie; importeer dit niet als uitvoerbare workflow.
+
 ```json
 {
   "task_type": "Approval",
@@ -157,6 +165,8 @@ Valuta: EUR
 
 **Taak 1: Manager Goedkeuring**
 
+**Schematische JSON:** Alleen ter illustratie; importeer dit niet als uitvoerbare workflow.
+
 ```json
 {
   "task_type": "First Approval",
@@ -171,6 +181,8 @@ Valuta: EUR
 ```
 
 **Taak 2: Directeur Goedkeuring (Aangemaakt na voltooiing Taak 1)**
+
+**Schematische JSON:** Alleen ter illustratie; importeer dit niet als uitvoerbare workflow.
 
 ```json
 {
@@ -229,6 +241,8 @@ Gebruiker 3: CFO (alleen als Gebruiker 2 goedkeurt)
 **Kaart:** ACTION\_SEND\_EMAIL\_TO\_GROUPS
 
 **Configuratie:**
+
+**Schematische JSON:** Alleen ter illustratie; importeer dit niet als uitvoerbare workflow.
 
 ```json
 {
@@ -443,6 +457,8 @@ FACTUUR KOMT AAN
 
 ### Sjabloon 1: Eenvoudige Goedkeuringstaak
 
+**Schematische JSON:** Alleen ter illustratie; importeer dit niet als uitvoerbare workflow.
+
 ```json
 {
   "card": "tasks_create",
@@ -459,6 +475,8 @@ FACTUUR KOMT AAN
 
 ### Sjabloon 2: Beoordelingstaak met Details
 
+**Schematische JSON:** Alleen ter illustratie; importeer dit niet als uitvoerbare workflow.
+
 ```json
 {
   "card": "tasks_create",
@@ -474,6 +492,8 @@ FACTUUR KOMT AAN
 ***
 
 ### Sjabloon 3: Escalatietaak
+
+**Schematische JSON:** Alleen ter illustratie; importeer dit niet als uitvoerbare workflow.
 
 ```json
 {

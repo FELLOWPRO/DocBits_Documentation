@@ -20,6 +20,6 @@ Binnen het Validatiescherm kunt u direct tickets aanmaken voor het specifieke do
 
 <figure><img src="../../../.gitbook/assets/docbits_validation_screen_ticket.png" alt="Docbits Validation Screen Ticket"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/user-support4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-user-support4-nl.png" alt="Ondersteuningsformulier vóór verzending."><figcaption><p>Ondersteuningsformulier vóór verzending.</p></figcaption></figure>
 
 {% embed url="https://www.youtube.com/watch?v=zkpFu8Q1Z-A" %}

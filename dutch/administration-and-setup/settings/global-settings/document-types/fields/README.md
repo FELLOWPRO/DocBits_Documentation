@@ -1,6 +1,6 @@
 # Velden
 
-<figure><img src="../../../../../.gitbook/assets/docbits_fields_overview.png" alt="Docbits Fields Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_fields_overview-nl.png" alt="Velden van het documenttype Factuur. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie."><figcaption><p>Velden van het documenttype Factuur. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie.</p></figcaption></figure>
 
 ## Overzicht
 

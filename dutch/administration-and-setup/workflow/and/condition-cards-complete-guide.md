@@ -214,7 +214,7 @@ NO: Use cached PO data
 
 ***
 
-## Voorwaarden van de cessionaris
+## Voorwaarden voor de verantwoordelijke
 
 ### Kaart: CONDITION\_USER\_IS\_ISNOT / Gebruikerscontrole
 

@@ -37,7 +37,7 @@ Cliquez sur **Nouvelle idée** dans l'en-tête. La boîte de dialogue demande :
 
 Appuyez sur **Envoyer** pour publier. L'idée apparaît dans la liste avec le statut **Nouvelle**.
 
-<figure><img src="../../.gitbook/assets/idea-board-new-idea.png" alt="Boîte de dialogue Nouvelle idée"><figcaption><p>La boîte de dialogue Nouvelle idée, avec les sélecteurs de catégorie et de canal.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-idea-board-new-idea-fr.png" alt="Dialogue de proposition d’une idée sans données personnelles."><figcaption><p>Dialogue de proposition d’une idée sans données personnelles.</p></figcaption></figure>
 
 ## Voter
 

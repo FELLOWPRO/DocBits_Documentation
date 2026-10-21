@@ -6,8 +6,6 @@ Le Debug Collector capture un instantané complet de votre session DocBits — a
 
 Appuyez sur <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> sous Windows et Linux, ou <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> sous macOS. La boîte de dialogue Performance Report s'ouvre immédiatement.
 
-<figure><img src="../../.gitbook/assets/debug-collector-dialog.png" alt="Boîte de dialogue Debug Collector"><figcaption><p>La boîte de dialogue Performance Report affiche l'instantané capturé et un formulaire intégré de création de ticket.</p></figcaption></figure>
-
 ## Ce qui est capturé
 
 * **Appels API** — les 60 derniers appels REST et WebSocket, avec durées, codes de statut et URLs sollicitées. Les appels de plus de deux secondes sont signalés séparément.
@@ -35,3 +33,5 @@ Si vous voulez une copie locale de l'instantané, utilisez **Copy Debug Data** p
 * Rien ne quitte votre navigateur tant que vous n'appuyez pas sur **Send Report** — le raccourci ouvre simplement la boîte de dialogue.
 
 <mark>Relisez l'instantané avant de l'envoyer si vous traitiez des documents contenant des données clients. Les identifiants de documents visibles dans les URLs apparaîtront dans le rapport.</mark>
+
+Ouvrez le rapport de diagnostic depuis les commandes d’assistance, décrivez le problème et vérifiez les informations recueillies avant de les partager. Le rapport rassemble des preuves ; il n’identifie pas à lui seul la cause.

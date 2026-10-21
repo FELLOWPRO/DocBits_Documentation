@@ -6,7 +6,7 @@ Paramètre Origin de DocBits expliqué : Normes de pays pour les formats de date
 
 DocBits excelle dans l'adaptation des mises en page de documents en fonction de leurs origines géographiques tout en standardisant des éléments tels que les formats de devise en fonction des paramètres du navigateur de l'utilisateur. Explorons comment vous pouvez utiliser le Layout Builder pour personnaliser les mises en page pour différentes origines, comme les États-Unis et l'Allemagne.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_1.png)
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_1-fr.png" alt="Générateur de mise en page avec les commandes françaises."><figcaption><p>Générateur de mise en page avec les commandes françaises.</p></figcaption></figure>
 
 ## **Comprendre la personnalisation basée sur l'origine**
 
@@ -36,10 +36,10 @@ DocBits excelle dans l'adaptation des mises en page de documents en fonction de 
 
 Lorsque vous souhaitez appliquer la mise en page par défaut à plusieurs origines, appuyez sur **Appliquer la disposition par défaut à Origins**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_3.png)
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_3-fr.png" alt="Sélection d’origine ; les noms d’origine configurés restent inchangés."><figcaption><p>Sélection d’origine ; les noms d’origine configurés restent inchangés.</p></figcaption></figure>
 
 Une fenêtre contextuelle apparaîtra où vous pouvez sélectionner les origines auxquelles vous souhaitez appliquer la mise en page par défaut. Vous pouvez utiliser **Tout sélectionner** ou **Tout désélectionner** pour gérer rapidement votre sélection. La fenêtre contextuelle affiche le nombre d'origines actuellement sélectionnées.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_4.png)
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_4-fr.png" alt="Dialogue d’application de la mise en page par défaut aux origines."><figcaption><p>Dialogue d’application de la mise en page par défaut aux origines.</p></figcaption></figure>
 
 Après avoir fait votre sélection, cliquez sur **Appliquer aux Origins**. Un message de succès confirmera que les origines ont été mises à jour.

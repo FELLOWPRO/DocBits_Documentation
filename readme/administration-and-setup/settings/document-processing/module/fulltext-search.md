@@ -2,8 +2,6 @@
 
 La recherche plein texte permet aux utilisateurs de rechercher dans le contenu réel des documents et dans chaque champ extrait, et non plus seulement dans les noms de fichiers et les ID.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-required-dialog.png" alt="Boîte de dialogue „Fulltext Module Required“ affichée lorsque le module est désactivé"><figcaption><p>La boîte de dialogue « Fulltext Module Required » apparaît sur les pages qui dépendent du module.</p></figcaption></figure>
-
 ## Sans le module
 
 Lorsque la recherche plein texte n'est pas activée, la barre de recherche du tableau de bord ne peut interroger qu'un petit ensemble de champs structurés. Le texte libre saisi est uniquement comparé à :
@@ -19,7 +17,7 @@ Tout ce qui sort de ces champs est ignoré. Aucune recherche sur le contenu, auc
 
 L'activation de la recherche plein texte ouvre la recherche à tous les champs extraits d'un document et remplace la barre de recherche du tableau de bord par un langage de requête enrichi. Une requête peut combiner des filtres par champ, des comparaisons de plage, des opérateurs logiques, des dates relatives et des filtres intelligents.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-dashboard-query.png" alt="Barre de recherche du tableau de bord avec une requête de plage et la liste de documents filtrée"><figcaption><p>La barre de recherche du tableau de bord accepte le langage de requête étendu. Saisissez une requête puis appuyez sur <kbd>Entrée</kbd> pour filtrer la liste.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u049-fr.png" alt="Saisie d’une requête de montant dans le tableau de bord."><figcaption><p>Saisie d’une requête de montant dans le tableau de bord.</p></figcaption></figure>
 
 ### Requêtes ciblées sur un champ
 
@@ -102,7 +100,7 @@ ai: invoices from Ruiz over 1000 last quarter
 
 La recherche IA et la recherche vectorielle ne sont pas interchangeables : la vectorielle trouve du contenu similaire, la recherche IA traduit le langage naturel en filtres. La recherche IA n'a pas d'interrupteur dédié — elle s'appuie sur les index plein texte et vectoriel existants.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-settings-page.png" alt="Page „Paramètres de recherche plein texte“ avec les sous-index Documents, Vector Index et Fulltext (Text)"><figcaption><p>Paramètres de recherche plein texte. L'index vectoriel possède son propre interrupteur ; l'index de texte fonctionne tant que le module est activé.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u048-fr.png" alt="Paramètres et informations de l’indexation en texte intégral."><figcaption><p>Paramètres et informations de l’indexation en texte intégral.</p></figcaption></figure>
 
 ## Prérequis
 
@@ -113,11 +111,11 @@ La recherche IA et la recherche vectorielle ne sont pas interchangeables : la ve
 ## Activation du module
 
 1. Allez dans **Paramètres → Traitement de document → Module**.
-2. Dans le groupe **Dashboards**, activez **Full text search**.
+2. Dans le groupe **Tableaux de bord**, activez **Recherche de texte intégral**.
 3. Confirmez la boîte de dialogue d'abonnement si elle s'affiche.
 4. Attendez la fin de la première réindexation avant d'utiliser les requêtes plein texte.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-module-toggle.png" alt="Page „Modules“ avec l'interrupteur „Full text search“ sous le groupe Dashboards"><figcaption><p>L'interrupteur <strong>Full text search</strong> se trouve dans <strong>Module → Dashboards &#x26; Analytics</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u050-fr.png" alt="Disponibilité du module de recherche en texte intégral."><figcaption><p>Disponibilité du module de recherche en texte intégral.</p></figcaption></figure>
 
 {% hint style="info" %}
 La tarification du module de recherche plein texte est gérée par votre interlocuteur commercial DocBits. La confirmation d'abonnement apparaît lors de la première activation du module.
@@ -128,3 +126,5 @@ La tarification du module de recherche plein texte est gérée par votre interlo
 * [Paramètres de recherche plein texte](../../log-settings/fulltext-search-settings.md) — gestion de l'index et interrupteur de l'index vectoriel.
 * [Fonctions Fulltext & Vector Search](../../global-settings/document-types/script/scripting-in-docbits/fulltext-search-functions.md) — API de scripting pour `fulltext_search()` et `vector_search()`.
 * [Vue d'ensemble des modules](README.md) — liste complète des modules optionnels de DocBits.
+
+La recherche en texte intégral nécessite le module et les permissions correspondants. Si un avis de module requis apparaît, demandez à votre administrateur de vérifier la disponibilité et l’accès.

@@ -8,20 +8,20 @@ DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Yo
 
 * **Accédez aux paramètres des groupes :** Connectez-vous à votre compte administrateur et allez dans Group Settings dans le panneau d'administration.
 
-<figure><img src="../../../../../.gitbook/assets/groups_settings_overview.png" alt="Vue d'ensemble des paramètres des groupes"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-t002-fr.png" alt="Accès aux paramètres des groupes et permissions."><figcaption><p>Accès aux paramètres des groupes et permissions.</p></figcaption></figure>
 
 Cette fenêtre s'ouvre :
 
-<figure><img src="../../../../../.gitbook/assets/groups_list_overview.png" alt="Vue d'ensemble de la liste des groupes"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-t003-fr.png" alt="Liste des groupes avec les noms masqués."><figcaption><p>Liste des groupes avec les noms masqués.</p></figcaption></figure>
 
 * **Cliquez sur le bouton + New :** Si vous souhaitez ajouter un nouveau groupe, cliquez sur le bouton + New pour démarrer le processus d'ajout d'un nouveau groupe.
 
-<figure><img src="../../../../../.gitbook/assets/add_new_group_button.png" alt="Bouton d'ajout d'un nouveau groupe"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u005-fr.png" alt="Dialogue de création d’un groupe non enregistré."><figcaption><p>Dialogue de création d’un groupe non enregistré.</p></figcaption></figure>
 
 * **Remplissez le formulaire :** Indiquez le nom du groupe et une description du groupe.
 * **Enregistrez les informations :** Une fois le nom et la description du groupe renseignés, cliquez sur le bouton « Save ».
 
-<figure><img src="../../../../../.gitbook/assets/new_group_form_save.png" alt="Enregistrement du formulaire de nouveau groupe"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u006-fr.png" alt="Administration des groupes et permissions."><figcaption><p>Administration des groupes et permissions.</p></figcaption></figure>
 
 ## Modification des groupes :
 

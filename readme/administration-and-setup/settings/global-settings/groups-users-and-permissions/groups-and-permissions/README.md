@@ -4,7 +4,7 @@
 DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
 {% endembed %}
 
-<figure><img src="../../../../../.gitbook/assets/groups_and_permissions.png" alt="Groupes et autorisations"><figcaption><p>Page Groups and Permissions</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-t009-fr.png" alt="Détails du groupe sélectionné ; les données personnelles sont masquées."><figcaption><p>Détails du groupe sélectionné ; les données personnelles sont masquées.</p></figcaption></figure>
 
 Les groupes et les autorisations vous permettent de contrôler quels utilisateurs peuvent accéder à des types de documents spécifiques et quelles actions ils peuvent effectuer.
 
@@ -18,11 +18,11 @@ Le tableau affiche tous les groupes configurés avec :
 
 | Colonne | Description |
 |--------|-------------|
-| **Group Name** | Le nom du groupe. |
-| **Group Description** | Une brève description de l'objectif du groupe. |
-| **Actions** | Menu avec les options pour modifier ou supprimer le groupe. |
+| **Nom du groupe** | Le nom du groupe. |
+| **Description du groupe** | Une brève description de l'objectif du groupe. |
+| **Actes** | Menu avec les options pour modifier ou supprimer le groupe. |
 
-Utilisez la barre **Search** pour rechercher des groupes par nom. Cliquez sur **+ New** pour créer un nouveau groupe.
+Utilisez la barre **Recherche** pour rechercher des groupes par nom. Cliquez sur **+ New** pour créer un nouveau groupe.
 
 ## Configurer les autorisations d'un groupe
 
@@ -30,18 +30,18 @@ Lorsque vous sélectionnez un groupe (via le menu Actions → Edit), un tableau 
 
 | Autorisation | Description |
 |------------|-------------|
-| **View** | Autorisation de voir les documents de ce type. |
-| **Update** | Autorisation de modifier les documents de ce type. |
-| **Delete** | Autorisation de supprimer les documents de ce type. |
-| **First Approval** | Autorisation d'effectuer l'approbation initiale. |
-| **Second Approval** | Autorisation d'effectuer un second niveau d'approbation (le cas échéant). |
+| **Vue** | Autorisation de voir les documents de ce type. |
+| **Mettre à jour** | Autorisation de modifier les documents de ce type. |
+| **Supprimer** | Autorisation de supprimer les documents de ce type. |
+| **Première approbation** | Autorisation d'effectuer l'approbation initiale. |
+| **Deuxième approbation avant l'exportation** | Autorisation d'effectuer un second niveau d'approbation (le cas échéant). |
 
 Chaque ligne du tableau d'autorisations représente un type de document (par exemple Invoice, Credit Note, Delivery Note). Cochez ou décochez les cases pour accorder ou retirer des autorisations à ce groupe.
 
 ## Créer un nouveau groupe
 
 1. Cliquez sur **+ New** en haut à droite.
-2. Saisissez un **Group Name** et, facultativement, une **Description**.
+2. Saisissez un **Nom du groupe** et, facultativement, une **Description**.
 3. Configurez les autorisations pour chaque type de document.
 4. Affectez des utilisateurs au groupe.
-5. Cliquez sur **Save** pour appliquer.
+5. Cliquez sur **Enregistrer** pour appliquer.

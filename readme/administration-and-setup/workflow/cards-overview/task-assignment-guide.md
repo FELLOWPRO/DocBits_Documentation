@@ -1,62 +1,62 @@
-# 任务分配与创建卡片
+# 任务分配和创建卡
 
-## 任务分配与创建卡片 — 完整指南
+## 任务分配和创建卡 - 完整指南
 
-**涵盖内容：**12 个任务相关卡片
+**涵盖：** 12张任务相关卡片
 
 ***
 
-本页介绍的任务卡片位于工作流构建器的 **Then** 组中，也就是 **When/And** 条件匹配后执行的操作：
+此页面上的任务卡位于工作流生成器的 **则** 组中 — 一旦“何时/与”条件匹配，就会运行的操作：
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="包含 When、And 和 Then 卡片组的工作流构建器画布"><figcaption><p>通过 <strong>Add Card</strong> 将任务和创建卡片添加到 <strong>Then</strong> 组。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-zh.png" alt="包含“当”“且”和“则”卡片的未保存示例。执行前请配置所有占位字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>包含“当”“且”和“则”卡片的未保存示例。执行前请配置所有占位字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ***
 
 ### 📌 版本信息
 
-**演进最多的卡片：**tasks\_create（共 4 个版本，最新为 v4） **其他多版本卡片：**ACTION\_TASK\_FOR\_GROUP（v4）、ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP（v3）、ACTION\_ASSIGN\_TASK\_TO\_USER\_FROM\_FIELD\_WITH\_FALLBACK（v3）、ACTION\_DECISION\_TREE\_CREATE\_TASKS（v3）
+**进化最多的卡：**tasks\_create（4个版本，v4最新）**其他多版本卡：**ACTION\_TASK\_FOR\_GROUP（v4），ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP（v3），ACTION\_ASSIGN\_TASK\_TO\_USER\_FROM\_FIELD\_WITH\_FALLBACK（v3），ACTION\_DECISION\_TREE\_CREATE\_TASKS（v3）
 
-**主要变更：**
+**主要变化：**
 
-* **v3 → v4 演进：**移除了决策树方案，新增通用工作项类型（Task、Ticket、Issue）
-* **v2 → v3 迁移：**增加了决策树支持（目前已基本弃用）
+* **v3 → v4 演变：** 删除了决策树方法，添加了通用工作项类型（任务、工单、问题）
+* **v2 → v3 迁移：** 添加了决策树支持（现在大部分已弃用）
 
-📖 [完整版本历史](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/changelog/release.md#-task-management-cards) | [卡片版本数据库](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/DocFlow/docs/card_version.md)
+📖【完整版本历史](../release.md) | [卡牌版本和行为](card-versions-guide.md)
 
 ***
 
 ### 概述
 
-任务卡片用于为团队成员创建工作分配。当发票需要审批时，您可以自动创建任务并将其分配给合适的人员。
+任务卡为团队成员创建工作分配。当发票需要审批时，您可以自动创建任务并将其分配给合适的人员。
 
 ***
 
-## 创建基本任务
+## 基本任务创建
 
-### 卡片：tasks\_create / 创建任务并分配给用户
+### 卡：tasks\_create / 创建任务并分配给用户
 
-#### 用途
+#### 目的
 
-创建任务并将其分配给指定人员
+创建任务并将其分配给特定人员
 
-#### 适用场景
+#### 何时使用
 
-* 发票需要由特定人员审核
-* 需要指定个人审批
-* 需要将工作交接给特定团队成员
+* 发票需要专人审核
+* 需要指定个人的批准
+* 移交给特定团队成员
 
 #### 参数
 
-**标题** 任务名称或主题
+**标题**任务名称/主题
 
 ```
-示例: "Review Invoice #INV-2025-001 for approval"
+Example: "Review Invoice #INV-2025-001 for approval"
 ```
 
-**描述** 任务详情
+**描述**有关任务的详细信息
 
 ```
-示例: "Invoice from Supplier ABC needs review.
+Example: "Invoice from Supplier ABC needs review.
 Amount: €5000
 Deadline: 2025-10-30
 Please verify pricing and quality."
@@ -64,608 +64,608 @@ Please verify pricing and quality."
 
 **优先级**
 
-* 🔴 **高：**紧急，立即处理
-* 🟡 **中：**普通优先级
-* 🟢 **低：**可以稍后处理
+* 🔴**High**：紧急，立即做
+* 🟡 **中**：普通优先级
+* 🟢 **低**：可以稍后完成
 
-**分配用户** 接收任务的人员
-
-```
-示例: John Smith (Finance Manager)
-```
-
-**电子邮件通知** 是否向被分配人员发送电子邮件提醒？
+**分配的用户**谁获得任务
 
 ```
-✅ 是：人员会收到电子邮件
-❌ 否：任务仅显示在系统中
+Example: John Smith (Finance Manager)
+```
+
+**电子邮件通知** 向指定人员发送电子邮件警报？
+
+```
+✅ Yes: Person gets email
+❌ No: Task only in system
 ```
 
 #### 示例
 
 ```
-Condition（条件）: "Invoice amount > €10,000"
+Condition: "Invoice amount > €10,000"
     ↓
-Create Task（创建任务）:
-- Title（标题）: "High-Value Invoice Review Required"
-- Description（描述）: "Invoice #INV-2025-789 for €15,000 needs approval"
-- Priority（优先级）: High
-- Assigned to（分配给）: Sarah Johnson (Finance Approver)
-- Send Email（发送电子邮件）: Yes
+Create Task:
+- Title: "High-Value Invoice Review Required"
+- Description: "Invoice #INV-2025-789 for €15,000 needs approval"
+- Priority: High
+- Assigned to: Sarah Johnson (Finance Approver)
+- Send Email: Yes
     ↓
-Sarah 收到任务和电子邮件通知
+Sarah receives task and email notification
 ```
 
 ***
 
-### 卡片：ACTION\_TASK\_FOR\_GROUP / 为组创建任务
+### 卡片：ACTION\_TASK\_FOR\_GROUP / 为小组创建任务
 
-#### 用途
+#### 目的
 
-创建任务并分配给一个组（所有成员都可以看到）
+创建任务并将其分配给组（所有成员都可以看到）
 
-#### 适用场景
+#### 何时使用
 
-* 多人都可以执行此任务
-* 任务面向团队，而非个人
-* 由最先有空的人员处理
+* 多人可以完成任务
+* 团队的任务，而不是个人的任务
+* 第一个人应该处理
 
 #### 与个人任务的区别
 
 ```
-个人任务：
-- 只有 John 能看到
-- 必须由 John 完成
-- 其他人看不到
+Individual Task:
+- Only John sees it
+- John must do it
+- Others can't see it
 
-群组任务：
-- 群组中的每个人都能看到
-- 群组中的任何成员都可以认领
-- 工作量得以分配
+Group Task:
+- Everyone in group sees it
+- Any group member can claim it
+- Distributed workload
 ```
 
-#### 工作流示例
+#### 示例工作流程
 
 ```
-文档到达
+Document arrives
     ↓
-Condition（条件）: "Is supplier new?"
+Condition: "Is supplier new?"
     ↓
-为采购团队创建任务:
-- Title（标题）: "Verify New Supplier Details"
-- Description（描述）: "Please validate supplier information"
-- Priority（优先级）: Medium
-- Group（组）: Procurement Team (10 members)
-- Notify（通知）: Yes
+Create Task for Procurement Team:
+- Title: "Verify New Supplier Details"
+- Description: "Please validate supplier information"
+- Priority: Medium
+- Group: Procurement Team (10 members)
+- Notify: Yes
     ↓
-采购团队的全部 10 名成员都能看到该任务
-由第一位有空的成员接手
+All 10 procurement team members see task
+First person available takes it
 ```
 
 ***
 
-### 卡片：ACTION\_DECISION\_TREE\_CREATE\_TASKS
+### 卡牌：ACTION\_DECISION\_TREE\_CREATE\_TASKS
 
-#### 用途
+#### 目的
 
 根据决策表逻辑创建任务
 
-#### 工作方式
+#### 它是如何运作的
 
 ```
-Decision Table Returns（决策表返回）:
-  如果发票来自 Supplier A → 分配给采购部门
-  如果发票来自 Supplier B → 分配给质量团队
-  如果发票来自 Supplier C → 分配给财务部门
+Decision Table Returns:
+  If invoice from Supplier A → Assign to Procurement
+  If invoice from Supplier B → Assign to Quality Team
+  If invoice from Supplier C → Assign to Finance
 
-系统会根据满足的条件
-自动创建并分配任务
+Task is automatically created and assigned
+based on which condition is true
 ```
 
-#### 适用场景
+#### 何时使用
 
-* 不同供应商需要不同的审批流程
-* 根据多个因素进行复杂路由
-* 根据文档类型分配给不同团队
+* 不同的供应商需要不同的批准
+* 基于多种因素的复杂路由
+* 根据文档类型不同的团队
 
 #### 示例
 
 ```
-文档：来自 ABC Corp (Supplier A) 的发票
+Document: Invoice from ABC Corp (Supplier A)
     ↓
-决策表检查：供应商是哪一家？
+Decision Table checks: Which supplier?
     ↓
-结果：Supplier A → 采购团队
+Result: Supplier A → Procurement Team
     ↓
-创建任务并分配给采购团队
+Create and assign task to Procurement Team
 ```
 
 ***
 
-### 卡片：ACTION\_DECISION\_TREE\_TASKS\_SEQUENTIAL
+### 卡牌：ACTION\_DECISION\_TREE\_TASKS\_SEQUENTIAL
 
-#### 用途
+#### 目的
 
-根据决策表依次创建任务。任务按优先级顺序逐个分配
+根据决策表顺序创建任务 任务按优先级顺序一次分配一个
 
-#### 适用场景
+#### 何时使用
 
-* 需要按顺序进行多次审批
-* 工作流审批链
-* 每个人审核后再交给下一位
+* 需要依次获得多个批准
+* 工作流程审批链
+* 每个人评论然后传递给下一个
 
-#### 工作方式
-
-```
-步骤 1：为采购经理创建任务
-        (优先级 1)
-    ↓
-步骤 2：采购经理审批
-    ↓
-步骤 3：为财务经理创建任务
-        (优先级 2)
-    ↓
-步骤 4：财务经理审批
-    ↓
-步骤 5：导出
-```
-
-#### 优先级系统
+#### 它是如何运作的
 
 ```
-优先级 1 → 分配给：Person A
-优先级 2 → 分配给：Person B
-优先级 3 → 分配给：Person C
+Step 1: Create Task for Procurement Manager
+        (Priority 1)
+    ↓
+Step 2: Procurement Manager approves
+    ↓
+Step 3: Create Task for Finance Manager
+        (Priority 2)
+    ↓
+Step 4: Finance Manager approves
+    ↓
+Step 5: Export
+```
 
-必须按顺序完成 (1→2→3)
+#### 优先权制度
+
+```
+Priority 1 → Assign to: Person A
+Priority 2 → Assign to: Person B
+Priority 3 → Assign to: Person C
+
+They must complete in order (1→2→3)
 ```
 
 #### 配置示例
 
 ```
-Decision Table Returns（决策表返回）:
+Decision Table Returns:
   Level 1: Sarah Johnson (Finance)
   Level 2: Mike Smith (Manager)
   Level 3: Director (for approval)
 
-Task Flow（任务流程）:
-1. Sarah 审核 → 添加评论
-2. 转交给 Mike → 他进行审核
-3. 转交给 Director → 最终审批
-4. 全部完成 → 导出
+Task Flow:
+1. Sarah reviews → Comments
+2. Passes to Mike → He reviews
+3. Passes to Director → Final approval
+4. All complete → Export
 ```
 
 ***
 
-### 卡片：ACTION\_CREATE\_TASK\_FOR\_USER\_SEQUENTIAL
+### 卡牌：ACTION\_CREATE\_TASK\_FOR\_USER\_SEQUENTIAL
 
-#### 用途
+#### 目的
 
-将文档分配给一位用户，并创建顺序任务
+将文档分配给一个用户并创建顺序任务
 
-#### 适用场景
+#### 何时使用
 
-* 同时分配文档并创建任务
-* 文档需要由特定人员审核
-* 同时跟踪文档分配和任务创建
+* 分配文档并同时创建任务
+* 文件需要由特定人员审核
+* 跟踪分配和任务创建
 
-#### 工作方式
+#### 它是如何运作的
 
 ```
-会同时发生两件事：
-1. 文档分配给：Person A
-2. 为 Person A 创建任务
+Two things happen:
+1. Document is assigned to: Person A
+2. Task is created for: Person A
 
-通过一次操作完成
+Both in one action
 ```
 
 #### 示例
 
 ```
-高金额发票到达
+High-value invoice arrives
     ↓
 ACTION_CREATE_TASK_FOR_USER_SEQUENTIAL:
-- 将文档分配给: Finance Manager
-- 创建任务: "Review & Approve High Value Invoice"
-- Priority（优先级）: High
+- Assign Document to: Finance Manager
+- Create Task: "Review & Approve High Value Invoice"
+- Priority: High
     ↓
-文档和任务都会转交给 Finance Manager
+Document AND task both go to Finance Manager
 ```
 
 ***
 
-### 卡片：ACTION\_CREATE\_TASK\_FOR\_GROUP\_SEQUENTIAL
+### 卡牌：ACTION\_CREATE\_TASK\_FOR\_GROUP\_SEQUENTIAL
 
-#### 用途
+#### 目的
 
-将文档分配给一个组并创建任务
+将文档分配给组并创建任务
 
-#### 适用场景
+#### 何时使用
 
-* 文档需要由一个组处理
-* 需要跟踪任务创建
-* 先创建初始任务，再分配文档
+* 文件需要群体关注
+* 想要跟踪任务创建
+* 创建初始任务然后记录分配
 
 #### 示例
 
 ```
-新供应商评估
+New supplier evaluation
     ↓
 ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL:
-- 将文档分配给: Supplier Management Group
-- 创建任务: "Evaluate New Supplier Credentials"
-- 将任务分配给: 同一组
-- Priority（优先级）: Medium
+- Document assigned to: Supplier Management Group
+- Create Task: "Evaluate New Supplier Credentials"
+- Assign Task to: Same group
+- Priority: Medium
     ↓
-组内成员都能看到文档和任务
+Group members see document and task
 ```
 
 ***
 
-## 创建高级任务
+## 高级任务创建
 
-### 卡片：ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP
+### 卡牌：ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP
 
-#### 用途
+#### 目的
 
 为特定设施组创建任务
 
-#### 适用场景
+#### 何时使用
 
-* 面向仓库或设施团队的任务
-* 特定设施的运营工作
-* 需要考虑实际地点
-
-#### 示例
-
-```
-文档：发货通知
-    ↓
-为设施群组创建任务：
-- 群组：Berlin Warehouse Team
-- 任务："Prepare items for shipment"
-- 行项目：来自文档
-    ↓
-柏林仓库团队会收到任务
-```
-
-***
-
-### 卡片：ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP\_SEQUENTIAL
-
-#### 用途
-
-在多个设施之间依次分配任务
-
-#### 适用场景
-
-* 涉及多个设施的运营
-* 任务在不同设施之间流转
-* 按顺序处理设施相关工作
-
-#### 工作方式
-
-```
-工厂 A (步骤 1)：生产
-    ↓
-质量检查 (步骤 2)：验证
-    ↓
-仓库 (步骤 3)：包装
-    ↓
-发货 (步骤 4)：派送
-```
+* 仓库/设施团队的任务
+* 设施特定操作
+* 物理位置很重要
 
 #### 示例
 
 ```
-制造业文档
+Document: Shipment notification
     ↓
-创建顺序任务:
-- 任务 1: Factory A（制造）- 优先级 1
-- 任务 2: Quality Team（测试）- 优先级 2
-- 任务 3: Warehouse（打包）- 优先级 3
-- 任务 4: Shipping（发运）- 优先级 4
+Create Task for Facility Group:
+- Group: Berlin Warehouse Team
+- Task: "Prepare items for shipment"
+- Items: From document
     ↓
-每个团队完成后 → 转交给下一个团队
+Berlin warehouse team gets task
 ```
 
 ***
 
-### 卡片：ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP
+### 卡牌：ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP\_SEQUENTIAL
 
-#### 用途
+#### 目的
+
+跨设施的顺序任务分配
+
+#### 何时使用
+
+* 多设施运营
+* 任务从一个设施传递到另一个设施
+* 顺序设施处理
+
+#### 它是如何运作的
+
+```
+Factory A (Step 1): Production
+    ↓
+Quality Check (Step 2): Verification
+    ↓
+Warehouse (Step 3): Packaging
+    ↓
+Shipping (Step 4): Dispatch
+```
+
+#### 示例
+
+```
+Manufacturing Document
+    ↓
+Create Sequential Tasks:
+- Task 1: Factory A (Manufacturing) - Priority 1
+- Task 2: Quality Team (Testing) - Priority 2
+- Task 3: Warehouse (Packing) - Priority 3
+- Task 4: Shipping (Dispatch) - Priority 4
+    ↓
+Each team completes → Passes to next
+```
+
+***
+
+### 卡牌：ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP
+
+#### 目的
 
 为采购部门创建任务
 
-#### 适用场景
+#### 何时使用
 
-* 面向采购团队的任务
+* 采购团队的任务
 * 供应商管理任务
 * 采购相关工作
 
 #### 示例
 
 ```
-供应商状态变更通知
+Supplier status change notification
     ↓
-为采购群组创建任务：
-- 任务："Update supplier records"
-- 供应商：ABC Corp
-- 操作：将状态更改为 'On Hold'
-- 优先级：High
+Create Task for Procurement Group:
+- Task: "Update supplier records"
+- Supplier: ABC Corp
+- Action: Change status to 'On Hold'
+- Priority: High
     ↓
-采购团队会收到通知
+Procurement team is notified
 ```
 
 ***
 
-### 卡片：ACTION\_ASSIGN\_TASK\_PROCUREMENT\_GROUP\_SEQUENTIAL
+### 卡牌：ACTION\_ASSIGN\_TASK\_PROCUREMENT\_GROUP\_SEQUENTIAL
 
-#### 用途
+#### 目的
 
-在采购部门内部依次路由任务
+采购中的顺序任务路由
 
-#### 适用场景
+#### 何时使用
 
 * 多步骤采购流程
 * 采购审批链
-* 升级处理路径
+* 升级路径
 
 #### 示例
 
 ```
-收到采购申请
+Purchase Requisition received
     ↓
-步骤 1：采购员验证 (优先级 1)
+Step 1: Buyer verifies (Priority 1)
     ↓
-步骤 2：审批人审批 (优先级 2)
+Step 2: Approver approves (Priority 2)
     ↓
-步骤 3：主管签字确认 (优先级 3)
+Step 3: Director signs off (Priority 3)
     ↓
-所有签字确认完成 → 发送给供应商
+All sign-offs complete → Release to supplier
 ```
 
 ***
 
-### 卡片：ACTION\_ASSIGN\_TASK\_TO\_USER\_FROM\_FIELD\_WITH\_FALLBACK
+### 卡牌：ACTION\_ASSIGN\_TASK\_TO\_USER\_FROM\_FIELD\_WITH\_FALLBACK
 
-#### 用途
+#### 目的
 
-从文档字段中获取用户并分配任务。如果找不到该用户，则使用备用用户
+从文档字段获取用户，分配任务如果找不到用户，则使用后备用户
 
-#### 适用场景
+#### 何时使用
 
-* 用户信息存储在文档字段中
-* 文档指定了审核人员
-* 指定用户不可用时有备用人员
+* 用户存储在文档字段中
+* 文件规定了谁应该审查
+* 如果指定用户不可用，请有备份人员
 
-#### 工作方式
+#### 它是如何运作的
 
 ```
-文档包含字段："Approver Name: John Smith"
+Document has field: "Approver Name: John Smith"
 
-卡片检查：系统中是否有 John？
-    If YES → 将任务分配给 John
-    If NO → 分配给备用用户 (Sarah)
+Card checks: Is John in system?
+    If YES → Assign task to John
+    If NO → Assign to Fallback User (Sarah)
 ```
 
 #### 示例
 
 ```
-发票字段："Contact: Mike Johnson"
+Invoice field: "Contact: Mike Johnson"
 
-尝试将任务分配给 Mike Johnson
+Try to assign task to Mike Johnson
     ↓
-如果系统中不存在 Mike：
+If Mike doesn't exist in system:
     ↓
-使用备用人员：团队负责人 (Robert Brown)
+Use Fallback: Team Lead (Robert Brown)
 ```
 
 #### 参数
 
 ```
-- 要读取的字段："Approver Name"
-- 备用用户：Robert Brown
-- 任务详情：标题、描述、优先级
+- Field to Read: "Approver Name"
+- Fallback User: Robert Brown
+- Task Details: Title, Description, Priority
 ```
 
 ***
 
 ## 常用任务参数
 
-所有任务卡片都使用以下参数：
+所有任务卡都使用以下参数：
 
 #### 标题
 
 ```
-好："Review Invoice #INV-12345 - €5000 - Supplier ABC"
-不好："Approve something"
+Good: "Review Invoice #INV-12345 - €5000 - Supplier ABC"
+Bad: "Approve something"
 ```
 
 #### 描述
 
 ```
-应包含：
-✅ 要做什么
-✅ 截止日期
-✅ 任何特殊要求
-✅ 联系谁
-✅ 文档链接
+Should include:
+✅ What to do
+✅ Deadline
+✅ Any special requirements
+✅ Who to contact
+✅ Link to document
 ```
 
 #### 优先级
 
 ```
-🔴 HIGH（高）
-   - 需在数小时内处理
-   - 会阻塞其他流程
-   - 示例：缺少供应物资、紧急审批
+🔴 HIGH
+   - Action needed within hours
+   - Blocks other processes
+   - Example: Supply missing, urgent approval
 
-🟡 MEDIUM（中）
-   - 常规处理
-   - 正常时限
-   - 示例：常规发票审核
+🟡 MEDIUM
+   - Standard processing
+   - Normal timeline
+   - Example: Regular invoice review
 
-🟢 LOW（低）
-   - 可以等待数天/数周
-   - 非紧急
-   - 示例：归档旧文档
+🟢 LOW
+   - Can wait days/weeks
+   - Non-urgent
+   - Example: Archive old documents
 ```
 
-#### 截止日期（如有）
+#### 截止日期（如果有）
 
 ```
-任务应在什么时候之前完成？
-示例：2025-10-30 (从现在起 5 天)
+When should task be completed by?
+Example: 2025-10-30 (5 days from now)
 ```
 
 ***
 
-## 任务工作流场景
+## 任务工作流程场景
 
-### 场景 1：简单审批
-
-```
-收到发票 (€2000)
-    ↓
-条件：金额是否在 €1000-€5000 之间？
-    ↓
-是：为财务经理创建任务
-    ↓
-财务经理审核并批准
-```
-
-### 场景 2：多级审批
+### 场景一：简单审批
 
 ```
-收到发票 (€50,000 - 高价值)
+Invoice Arrives (€2000)
     ↓
-创建顺序任务：
-1. 财务团队 (初步审核)
-2. 财务经理 (审批)
-3. 主管 (最终签字确认)
+Condition: Amount between €1000-€5000?
     ↓
-每个层级完成后 → 开始下一个层级
+YES: Create Task for Finance Manager
+    ↓
+Finance Manager reviews and approves
+```
+
+### 场景二：多级审批
+
+```
+Invoice Arrives (€50,000 - High Value)
+    ↓
+Create Sequential Tasks:
+1. Finance Team (Initial review)
+2. Finance Manager (Approval)
+3. Director (Final sign-off)
+    ↓
+Each level completes → Next begins
 ```
 
 ### 场景 3：并行任务
 
 ```
-发票到达（来自新供应商）
+Invoice Arrives (From New Supplier)
     ↓
-创建任务 1: 质量团队（验证供应商）
-创建任务 2: 财务团队（检查价格）
-创建任务 3: 采购部门（检查合同）
+Create Task 1: Quality Team (verify supplier)
+Create Task 2: Finance Team (check prices)
+Create Task 3: Procurement (check contract)
     ↓
-所有团队同时开展工作
-继续下一步前，所有任务都必须完成
+All teams work simultaneously
+All must complete before proceeding
 ```
 
 ### 场景 4：条件路由
 
 ```
-收到发票
+Invoice Arrives
     ↓
-决策表：
-  If 金额 > €10k → 分配给主管
-  If 金额 €1k-€10k → 分配给经理
-  If 金额 < €1k → 分配给团队负责人
+Decision Table:
+  If amount > €10k → Assign to Director
+  If amount €1k-€10k → Assign to Manager
+  If amount < €1k → Assign to Team Lead
     ↓
-为相应人员创建任务
+Task created for correct person
 ```
 
 ***
 
 ## 任务分配最佳实践
 
-✅ **建议：**
+✅ **做：**
 
-* 在任务标题中加入具体信息
-* 设置合适的优先级
-* 设置切实可行的截止日期
-* 通知被分配人员
-* 添加文档链接
-* 使用清晰且可执行的描述
+* 在任务标题中包含具体详细信息
+* 设置适当的优先级
+* 设定切合实际的截止日期
+* 通知分配对象
+* 包含文档链接
+* 使用清晰、可操作的描述
 
-❌ **避免：**
+❌**不要：**
 
-* 创建含糊的任务标题（“审核一下”）
-* 将所有任务都设为高优先级
-* 忘记通知被分配人员
-* 为同一项工作创建多个任务
-* 将任务分配给无法处理的人员
+* 创建模糊的任务标题（“查看此”）
+* 将所有内容设置为高优先级
+* 忘记通知指定人员
+* 为同一工作创建多个任务
+* 分配给无法联系的人
 
 ***
 
-## 任务故障排除
+## 故障排除任务
 
 ### “任务未分配给任何人”
 
-**原因：**用户不存在或组为空
+**原因：** 用户不存在或组为空
 
-**解决方法：**
+**解：**
 
-* 核对用户名拼写
-* 检查用户在系统中是否处于启用状态
-* 确认组内有成员
-* 必要时使用备用用户
+* 验证用户名拼写
+* 检查用户在系统中是否处于活动状态
+* 验证组有成员
+* 如果需要，使用后备
 
-### “对方说没有收到通知”
+### “有人说他们没有收到通知”
 
-**原因：**电子邮件通知已禁用，或电子邮件地址错误
+**原因：** 邮件通知被禁用或邮件错误
 
-**解决方法：**
+**解：**
 
-* 检查是否已启用“Send Email”复选框
-* 核实收件人电子邮件地址
+* 检查“发送电子邮件”复选框已启用
+* 验证收件人电子邮件地址
 * 检查垃圾邮件文件夹
 * 手动重新发送通知
 
-### “任务分配给了错误的人”
+### “错误的人得到了任务”
 
 **原因：**路由逻辑不正确
 
-**解决方法：**
+**解：**
 
 * 检查决策表条件
-* 核实备用设置
+* 验证后备设置
 * 使用示例文档进行测试
-* 检查用户名是否有拼写错误
+* 检查用户名中是否有拼写错误
 
-### “创建了太多任务”
+### “创建的任务太多”
 
-**原因：**卡片被多次触发
+**原因：**卡多次触发
 
-**解决方法：**
+**解：**
 
 * 检查条件是否足够具体
-* 确认每份文档只运行一次该卡片
-* 检查“And”条件
-* 添加其他筛选条件
+* 验证卡每个文档仅运行一次
+* 查看“与”条件
+* 添加额外的过滤
 
 ***
 
-## 任务卡片对比表
+## 任务卡对照表
 
-| 卡片                                                        | 创建任务 | 分配对象         | 适用时机   |
-| ----------------------------------------------------------- | -------- | ---------------- | ---------- |
-| tasks\_create                                               | 是       | 个人             | 始终       |
-| ACTION\_TASK\_FOR\_GROUP                                    | 是       | 组               | 始终       |
-| ACTION\_DECISION\_TREE\_CREATE\_TASKS                       | 是       | 决策表结果       | 有条件     |
-| ACTION\_DECISION\_TREE\_TASKS\_SEQUENTIAL                   | 是       | 多人（依次）     | 有条件     |
-| ACTION\_CREATE\_TASK\_FOR\_USER\_SEQUENTIAL                 | 是       | 用户与文档       | 有条件     |
-| ACTION\_CREATE\_TASK\_FOR\_GROUP\_SEQUENTIAL                | 是       | 组与文档         | 有条件     |
-| ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP                   | 是       | 设施组           | 有条件     |
-| ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP\_SEQUENTIAL       | 是       | 多个设施         | 有条件     |
-| ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP                | 是       | 采购团队         | 有条件     |
-| ACTION\_ASSIGN\_TASK\_PROCUREMENT\_GROUP\_SEQUENTIAL        | 是       | 多人（依次）     | 有条件     |
-| ACTION\_ASSIGN\_TASK\_TO\_USER\_FROM\_FIELD\_WITH\_FALLBACK | 是       | 字段/备用用户    | 有条件     |
+| 卡                                                        | 创建任务 | 分配给            | When        |
+| ----------------------------------------------------------- | ------------ | --------------------- | ----------- |
+| tasks\_create                                               | 是          | 个人            | 总是      |
+| ACTION\_TASK\_FOR\_GROUP                                    | 是          | 集团                 | 总是      |
+| ACTION\_DECISION\_TREE\_CREATE\_TASKS                       | 是          | 决策表结果 | 有条件的 |
+| ACTION\_DECISION\_TREE\_TASKS\_SEQUENTIAL                   | 是          | 多个（顺序） | 有条件的 |
+| ACTION\_CREATE\_TASK\_FOR\_USER\_SEQUENTIAL                 | 是          | 用户+文档       | 有条件的 |
+| ACTION\_CREATE\_TASK\_FOR\_GROUP\_SEQUENTIAL                | 是          | 小组+文件      | 有条件的 |
+| ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP                   | 是          | 设施组        | 有条件的 |
+| ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP\_SEQUENTIAL       | 是          | 多种设施   | 有条件的 |
+| ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP                | 是          | 采购团队      | 有条件的 |
+| ACTION\_ASSIGN\_TASK\_PROCUREMENT\_GROUP\_SEQUENTIAL        | 是          | 多个（顺序） | 有条件的 |
+| ACTION\_ASSIGN\_TASK\_TO\_USER\_FROM\_FIELD\_WITH\_FALLBACK | 是          | 现场/后备        | 有条件的 |
 
 ***
 
-## 相关卡片
+## 相关卡牌
 
-* **ACTION\_ASSIGN\_DOCUMENT\_TO\_USER** - 分配文档但不创建任务
-* **ACTION\_SEND\_EMAIL** - 直接通知相关人员
-* **STAUS\_CHANGE** - 更改状态，而不是创建任务
-* **RUN\_WORKFLOW** - 触发其他工作流
+* **ACTION\_ASSIGN\_DOCUMENT\_TO\_USER** - 分配文档而不创建任务
+* **ACTION\_SEND\_EMAIL** - 直接通知人们
+* **STAUS\_CHANGE** - 更改状态而不是创建任务
+* **RUN\_WORKFLOW** - 触发不同的工作流程

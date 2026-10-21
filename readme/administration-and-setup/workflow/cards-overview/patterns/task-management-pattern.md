@@ -4,9 +4,9 @@
 
 ***
 
-在 **Workflow Builder**（工作流仪表板 → 工作流列表 → 添加工作流）中构建此模式。点击 **Add Card** 打开卡片库，然后选择此模式使用的卡片 — `tasks_create`、`ACTION_ASSIGN_TO_USER`、`ACTION_SEND_EMAIL_TO_GROUPS` 和 `CONDITION_TASK_STATUS`（**Assignee** 类别中包含任务和分配卡片）：
+在 **工作流程生成器**（工作流仪表板 → 工作流列表 → 添加工作流）中构建此模式。点击 **添加卡** 打开卡片库，然后选择此模式使用的卡片 — `tasks_create`、`ACTION_ASSIGN_TO_USER`、`ACTION_SEND_EMAIL_TO_GROUPS` 和 `CONDITION_TASK_STATUS`（**分配对象** 类别中包含任务和分配卡片）：
 
-<figure><img src="../../../../.gitbook/assets/workflow_add_card_picker.png" alt="Workflow Builder 中按类别分组的 Add Card 卡片库"><figcaption><p><strong>Add Card</strong> 卡片库 — 任务、分配和通知卡片位于 <strong>Assignee</strong> 和 <strong>Status</strong> 类别下。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-zh.png" alt="所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ***
 
@@ -114,7 +114,7 @@
 
 * ACTION\_SET\_FIELD\_TO\_TEXT
   * 将 "Approval\_Type" 设为 "AUTO"
-  * 将 "Approval\_Reason" 设为 "Amount below threshold"
+  * 将“Approval\_Reason”设为“金额低于阈值”
 * ACTION\_APPROVE\_DOCUMENT
 
 **结果：**文档自动获批，不会创建任务
@@ -772,7 +772,7 @@ ELSE：
 
 * 添加电子邮件通知：[发送电子邮件指南](../send-email-groups-guide.md)
 * 实施复杂路由：[决策逻辑模式](decision-logic-pattern.md)
-* 解决任务错误：上方的[错误处理](task-management-pattern.md#error-handling)
+* 解决任务错误：上方的[错误处理](task-management-pattern.md)
 
 ***
 

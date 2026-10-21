@@ -1,781 +1,801 @@
-# 文档分配与用户卡片
+# 文件分配和用户卡
 
-## 文档分配与用户卡片 - 完整指南
+## 文件分配和用户卡 - 完整指南
 
-**涵盖：**13 个分配和用户相关卡片
+**涵盖：** 13张分配和用户相关卡
 
 ***
 
-本页中的卡片位于 Workflow Builder 的 **Then** 组中——当 When/And 条件匹配时执行的操作：
+此页面上的卡片位于工作流程生成器的 **则** 组中 — 一旦“何时/与”条件匹配，就会运行的操作：
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder 画布，包含 When、And 和 Then 卡片组"><figcaption><p>通过 <strong>Add Card</strong> 将分配和用户卡片添加到 <strong>Then</strong> 组。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-zh.png" alt="包含“当”“且”和“则”卡片的未保存示例。执行前请配置所有占位字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>包含“当”“且”和“则”卡片的未保存示例。执行前请配置所有占位字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ***
 
 ### 📌 版本信息
 
-**多版本卡片：** DOC\_USER\_ASSIGN（最新版本 v2，v3 已弃用）、DOC\_GROUP\_ASSIGN（最新版本 v2，v3 已弃用）、OC\_ASSIGN\_DOC（v2）
+**多版本卡：**DOC\_USER\_ASSIGN（v2最新，v3已弃用），DOC\_GROUP\_ASSIGN（v2最新，v3已弃用），OC\_ASSIGN\_DOC（v2）
 
-**重要：**v3 版本增加了决策树支持，但现已弃用。**建议：**DOC\_USER\_ASSIGN 和 DOC\_GROUP\_ASSIGN 均使用 v2
+**重要：** v3 版本添加了决策树支持，但现已弃用 **建议：** DOC\_USER\_ASSIGN 和 DOC\_GROUP\_ASSIGN 使用 v2
 
-📖 [完整版本历史](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/changelog/release.md#-assignment--routing-cards) | [卡片版本数据库](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/DocFlow/docs/card_version.md)
+📖【完整版本历史](../release.md) | [卡牌版本和行为](card-versions-guide.md)
 
 ***
 
 ## 基本文档分配
 
-### 卡片：DOC\_USER\_ASSIGN / 将文档分配给用户
+### 卡：DOC\_USER\_ASSIGN / 将文档分配给用户
 
-#### 用途
+#### 目的
 
-将文档分配给特定人员，由其处理
+将文档分配给特定人员以执行其操作
 
-#### 适用场景
+#### 何时使用
 
-* 需要由特定人员审核文档
-* 将工作移交给某位团队成员
-* 跟踪责任归属
+* 文件需要专人审核
+* 移交给个别团队成员
+* 问责追踪
 * 将工作分配给指定人员
 
-#### 工作方式
+#### 它是如何运作的
 
 ```
-文档“分配给”= John Smith
-只有 John 能在“分配给自己”中看到该文档
-John 负责处理此文档
-```
-
-#### 示例
-
-```
-收到发票
-    ↓
-将文档分配给：John Smith（财务经理）
-    ↓
-只有 John 能在“分配给自己”中看到该文档
-John 必须处理该文档
-```
-
-#### 参数
-
-```
-用户：[选择人员]
-```
-
-#### 注意
-
-分配意味着：
-
-* 对该人员而言，文档会显示为“分配给我”
-* 该人员负责处理文档
-* 其他人仍可查看文档（但文档不会显示为分配给他们）
-* 每份文档同一时间只能有一个分配对象
-
-***
-
-### 卡片：DOC\_GROUP\_ASSIGN / 将文档分配给组
-
-#### 用途
-
-将文档分配给一个组（所有成员都会看到文档已分配给他们）
-
-#### 适用场景
-
-* 文档由团队处理，而非某个个人
-* 多人都可以处理
-* 共同承担责任
-* 在团队之间分配工作量
-
-#### 工作方式
-
-```
-文档“分配给”= 财务团队（10 人）
-所有 10 名团队成员都能在“分配给我的组”中看到该文档
-任何团队成员都可以处理该文档
+Document is "assigned to" = John Smith
+Only John can see it as assigned to him
+John is responsible for this document
 ```
 
 #### 示例
 
 ```
-收到新的供应商发票
+Invoice arrives
     ↓
-将文档分配给：采购团队
+Assign Document to: John Smith (Finance Manager)
     ↓
-所有采购团队成员都能看到该文档
-由第一位有空的人员处理
+Only John sees "Assigned to Me"
+John must take action on it
 ```
 
 #### 参数
 
 ```
-组：[选择组]
+User: [Select which person]
 ```
 
-#### 区别
+#### 注意事项
+
+赋值的意思是：
+
+* 该人的文档显示为“已分配给我”
+* 那个人有责任
+* 其他人仍然可以查看文档（但不是分配给他们的）
+* 每个文档一次分配一项作业
+
+***
+
+### 卡：DOC\_GROUP\_ASSIGN / 将文档分配给组
+
+#### 目的
+
+将文档分配给一个组（所有成员都将其视为已分配给他们）
+
+#### 何时使用
+
+* 团队而非个人的文档
+* 多人即可处理
+* 共同责任
+* 团队工作量分配
+
+#### 它是如何运作的
 
 ```
-个人分配：
-- 由一个人负责
-- 此人会看到“Assigned to Me”
-- 其他人看不到该分配
+Document is "assigned to" = Finance Team (10 people)
+All 10 team members see "Assigned to My Group"
+Any team member can take action
+```
 
-群组分配：
-- 由团队负责
-- 所有成员都会看到“Assigned to My Group”
-- 任何人都可以认领/处理
+#### 示例
+
+```
+New vendor invoice
+    ↓
+Assign Document to: Procurement Team
+    ↓
+All procurement team members see it
+First available person handles it
+```
+
+#### 参数
+
+```
+Group: [Select which group]
+```
+
+#### 差异
+
+```
+Individual Assignment:
+- One person responsible
+- That person sees "Assigned to Me"
+- Others don't see assignment
+
+Group Assignment:
+- Team responsible
+- All members see "Assigned to My Group"
+- Anyone can claim/process
 ```
 
 ***
 
-### 卡片：ACTION\_ASSIGN\_DOC\_BASED\_ON\_DECISION\_TABLE
+### 卡牌：ACTION\_ASSIGN\_DOC\_BASED\_ON\_DECISION\_TABLE
 
-#### 用途
+#### 目的
 
 根据决策表逻辑分配文档
 
-#### 适用场景
+#### 何时使用
 
-* 不同供应商需要由不同人员处理
-* 根据金额进行分配
+* 不同的供应商需要不同的处理程序
+* 根据金额分配
 * 复杂的路由逻辑
-* 根据多个条件进行分配
+* 多种分配条件
 
-#### 工作方式
+#### 它是如何运作的
 
 ```
-决策表逻辑：
-  如果供应商 = "ABC Corp" → 分配给：采购团队
-  如果供应商 = "XYZ Inc" → 分配给：直属经理
-  如果金额 > €10000 → 分配给：财务总监
+Decision Table Logic:
+  If Supplier = "ABC Corp" → Assign to: Procurement Team
+  If Supplier = "XYZ Inc" → Assign to: Direct Manager
+  If Amount > €10000 → Assign to: Finance Director
 
-文档到达
+Document arrives
     ↓
-检查：匹配哪个条件？
+Check: Which condition matches?
     ↓
-据此分配
+Assign accordingly
 ```
 
-#### 示例：按金额分配
+#### 示例：基于金额的分配
 
 ```
-发票：来自 ABC Corp 的 €2000 发票
+Invoice: €2000 from ABC Corp
 
-决策表检查：
-  金额是否 > €10000？否
-  金额是否 > €5000？否
-  金额是否 > €1000？是
+Decision Table checks:
+  Is amount > €10000? NO
+  Is amount > €5000? NO
+  Is amount > €1000? YES
 
-结果：分配给：财务经理
+Result: Assign to: Finance Manager
 ```
 
-#### 示例：按供应商分配
+#### 示例：基于供应商的分配
 
 ```
-来自：优选供应商的发票
+Invoice from: Preferred Supplier
 
-决策表：
-  如果是优选供应商 → 财务团队
-  如果是新供应商 → 采购经理
-  如果已列入黑名单 → 总监审核
+Decision Table:
+  If preferred supplier → Finance Team
+  If new supplier → Procurement Manager
+  If blacklisted → Director Review
 
-结果：分配给：财务团队
+Result: Assign to: Finance Team
 ```
 
 #### 参数
 
 ```
-决策表：[选择决策表]
-（决策表包含分配逻辑）
+Decision Table: [Select decision table]
+(Decision table contains assignment logic)
 ```
 
 ***
 
-### 卡片：ACTION\_ASSIGN\_DOC\_DECISION\_TABLE\_SEQUENTIAL
+### 卡牌：ACTION\_ASSIGN\_DOC\_DECISION\_TABLE\_SEQUENTIAL
 
-#### 用途
+#### 目的
 
-根据带有优先级的决策表按顺序分配文档
+根据具有优先级的决策表按顺序分配文档
 
-#### 适用场景
+#### 何时使用
 
-* 多个连续审批
-* 不同级别由不同人员处理
-* 根据金额设置审批链
-* 设置升级路径
+* 多次连续批准
+* 不同层次的人不同
+* 基于金额的审批链
+* 升级路径
 
-#### 工作方式
-
-```
-第一个决策：谁先审批？
-    ↓
-分配给：人员 1
-    ↓
-人员 1 审批
-    ↓
-第二个决策：接下来由谁审批？
-    ↓
-分配给：人员 2
-    ↓
-人员 2 审批（最终审批）
-    ↓
-文档完成
-```
-
-#### 优先级系统
+#### 它是如何运作的
 
 ```
-优先级 1：第一次分配
-优先级 2：第二次分配
-优先级 3：第三次分配
-（依此类推）
+First Decision: Who approves first?
+    ↓
+Assign to: Person 1
+    ↓
+Person 1 approves
+    ↓
+Second Decision: Who approves next?
+    ↓
+Assign to: Person 2
+    ↓
+Person 2 approves (final)
+    ↓
+Document Complete
+```
 
-每个步骤都必须完成后，才能开始下一步
+#### 优先权制度
+
+```
+Priority 1: First assignment
+Priority 2: Second assignment
+Priority 3: Third assignment
+(etc.)
+
+Each must complete before next begins
 ```
 
 #### 示例：多级审批
 
 ```
-发票：€50,000
+Invoice: €50,000
 
-决策表：
-  €1k-€5k → 分配给：财务经理（优先级 1）
-  €5k-€20k → 然后：分配给：财务总监（优先级 2）
-  €20k+ → 然后：分配给：CFO（优先级 3）
+Decision Table:
+  €1k-€5k → Assign to: Finance Manager (Priority 1)
+  €5k-€20k → Then: Assign to: Finance Director (Priority 2)
+  €20k+ → Then: Assign to: CFO (Priority 3)
 
-发票流程：
-1. 财务经理审核 → 批准
-2. 财务总监审核 → 批准
-3. CFO 审核 → 最终批准
+Invoice Flow:
+1. Finance Manager reviews → approves
+2. Finance Director reviews → approves
+3. CFO reviews → approves final
 
-每个步骤都取决于上一步是否完成
+Each step depends on previous completion
 ```
 
 #### 参数
 
 ```
-决策表：[选择]
-优先顺序：[由决策表决定]
+Decision Table: [Select]
+Priority Order: [Determined by decision table]
 ```
 
 ***
 
-### 卡片：ACTION\_ASSIGN\_DOC\_TO\_USER\_SEQUENTIAL
+### 卡牌：ACTION\_ASSIGN\_DOC\_TO\_USER\_SEQUENTIAL
 
-#### 用途
+#### 目的
 
-按顺序优先级将文档分配给用户
+将文档分配给具有顺序优先级的用户
 
-#### 适用场景
+#### 何时使用
 
-* 文档需要由特定人员处理
-* 需要明确的顺序处理流程
-* 按顺序进行单次分配
+* 文件需要特定人员
+* 清晰的顺序处理
+* 带顺序的单一作业
 
-#### 工作方式
+#### 它是如何运作的
 
 ```
-将文档分配给：用户 A（优先级 1）
+Assign Document to: User A (Priority 1)
     ↓
-用户 A 处理
+User A processes
     ↓
-然后：分配给用户 B（优先级 2）
+Then: Assign to User B (Priority 2)
     ↓
-用户 B 处理
+User B processes
 ```
 
 #### 示例
 
 ```
-发票处理：
-1. 分配给：应付账款文员
-2. 然后：分配给：财务经理
-3. 然后：分配给：总监
+Invoice processing:
+1. Assign to: Accounts Payable Clerk
+2. Then: Assign to: Finance Manager
+3. Then: Assign to: Director
 
-每个人依次处理
+Each person has their turn
 ```
 
 ***
 
-### 卡片：ACTION\_ASSIGN\_DOC\_TO\_GROUP\_SEQUENTIAL
+### 卡牌：ACTION\_ASSIGN\_DOC\_TO\_GROUP\_SEQUENTIAL
 
-#### 用途
+#### 目的
 
-按顺序将文档分配给多个组
+将文档按顺序分配给组
 
-#### 适用场景
+#### 何时使用
 
-* 需要多个组审批
-* 每个阶段由不同部门处理
-* 按顺序进行团队处理
+* 多个团体批准
+* 每个阶段不同部门
+* 基于团队的顺序处理
 
-#### 工作方式
+#### 它是如何运作的
 
 ```
-步骤 1：分配给组 A（质量团队）
-        质量团队进行验证
+Step 1: Assign to Group A (Quality Team)
+        Quality verifies
     ↓
-步骤 2：分配给组 B（财务团队）
-        财务团队进行审核
+Step 2: Assign to Group B (Finance Team)
+        Finance reviews
     ↓
-步骤 3：分配给组 C（采购部）
-        采购部进行审批
+Step 3: Assign to Group C (Procurement)
+        Procurement approves
 ```
 
 #### 示例
 
 ```
-新供应商入驻：
+New Supplier Onboarding:
 
-步骤 1：质量团队
-  - 评估供应商能力
-  - 检查认证
+Step 1: Quality Team
+  - Evaluate supplier capability
+  - Check certifications
 
-步骤 2：财务团队
-  - 检查付款条款
-  - 验证定价
+Step 2: Finance Team
+  - Check payment terms
+  - Verify pricing
 
-步骤 3：采购团队
-  - 批准供应商
-  - 在系统中设置
+Step 3: Procurement Team
+  - Approve supplier
+  - Set up in system
 
-文档会依次经过全部三个步骤
+Document passes through all three
 ```
 
 ***
 
-### 卡片：ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP
+### 卡牌：ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP
 
-#### 用途
+#### 目的
 
 将文档分配给特定设施组
 
-#### 适用场景
+#### 何时使用
 
-* 文档对应特定仓库或设施
-* 基于设施开展运营
-* 按地点进行处理
+* 特定仓库/设施的文件
+* 基于设施的运营
+* 特定地点的处理
 
 #### 示例
 
 ```
-发货通知
+Shipment notification
 
-分配给：柏林仓库团队
+Assign to: Berlin Warehouse Team
     ↓
-柏林仓库处理发货
+Berlin warehouse processes shipment
     ↓
-或者
+Or
 
-分配给：慕尼黑仓库团队
+Assign to: Munich Warehouse Team
     ↓
-慕尼黑仓库处理发货
+Munich warehouse processes shipment
 ```
 
 ***
 
-### 卡片：ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP\_SEQUENTIAL
+### 卡牌：ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP\_SEQUENTIAL
 
-#### 用途
+#### 目的
 
-按顺序在多个设施之间进行分配
+跨设施按顺序分配
 
-#### 适用场景
+#### 何时使用
 
 * 多地点处理
-* 货物在多个设施之间流转
-* 基于地点的工作流
+* 货物通过设施
+* 基于位置的工作流程
 
 #### 示例
 
 ```
-制造订单：
+Manufacturing Order:
 
-步骤 1：Factory A（制造）- 制造产品
-步骤 2：Quality Center（测试）- 测试产品
-步骤 3：Distribution Center（包装）- 包装产品
-步骤 4：Warehouse（存储）- 存放产品
+Step 1: Factory A (Manufacturing) - Build product
+Step 2: Quality Center (Testing) - Test product
+Step 3: Distribution Center (Packing) - Package
+Step 4: Warehouse (Storage) - Store
 
-文档/货物会依次经过每个环节
+Document/shipment passes through each
 ```
 
 ***
 
-### 卡片：ACTION\_ASSIGN\_DOC\_TO\_PROCUREMENT\_GROUP
+### 卡牌：ACTION\_ASSIGN\_DOC\_TO\_PROCUREMENT\_GROUP
 
-#### 用途
+#### 目的
 
-将文档分配给采购部门
+将文件分配给采购部门
 
-#### 适用场景
+#### 何时使用
 
-* 由采购团队处理
-* 与供应商相关的工作
-* 与采购订单相关的工作
+* 采购团队处理
+* 供应商相关工作
+* 采购订单相关
 
 #### 示例
 
 ```
-供应商评估文档
+Vendor evaluation document
     ↓
-分配给：采购组
+Assign to: Procurement Group
     ↓
-采购团队评估供应商
+Procurement team evaluates vendor
 ```
 
 ***
 
-### 卡片：ACTION\_ASSIGN\_DOC\_TO\_PROCUREMENT\_GROUP\_SEQUENTIAL
+### 卡牌：ACTION\_ASSIGN\_DOC\_TO\_PROCUREMENT\_GROUP\_SEQUENTIAL
 
-#### 用途
+#### 目的
 
-在采购部门内按顺序分配
+采购中的顺序分配
 
-#### 适用场景
+#### 何时使用
 
 * 多步骤采购流程
-* 采购部门的审批链
+* 采购审批链
 
 #### 示例
 
 ```
-采购申请：
+Purchase Requisition:
 
-步骤 1：采购员（创建采购订单）
-步骤 2：审批人（审核）
-步骤 3：总监（最终签批）
+Step 1: Buyer (Creates PO)
+Step 2: Approver (Reviews)
+Step 3: Director (Final sign-off)
 
-每个步骤依次进行
+Each step in sequence
 ```
 
 ***
 
-### 卡片：ACTION\_CHANGE\_DOC\_SUBORG / 更改文档子组织
+### 卡：ACTION\_CHANGE\_DOC\_SUBORG / 更改文档子组织
 
-#### 用途
+#### 目的
 
-将文档分配给其他子组织
+将文档分配给不同的子组织
 
-#### 适用场景
+#### 何时使用
 
-* 选错组织
-* 需要将文档转到正确的部门
+* 选择了错误的组织
+* 需要调到正确的部门
 * 组织架构调整
 
-#### 工作方式
+#### 它是如何运作的
 
 ```
-当前子组织：财务部
+Current Sub-Org: Finance Department
     ↓
-更改为：会计部
+Change to: Accounting Department
     ↓
-文档现在归属会计部
+Document now belongs to Accounting
 ```
 
 #### 示例
 
 ```
-文档适用于：柏林办公室
+Document for: Berlin Office
     ↓
-确认应为：慕尼黑办公室
+Realize should be: Munich Office
     ↓
-将子组织更改为：慕尼黑办公室
+Change Sub-Organization to: Munich Office
 ```
 
 ***
 
-### 卡片：ACTION\_CHANGE\_DOC\_SUBORG\_BY\_FIELD\_TEXT
+### 卡牌：ACTION\_CHANGE\_DOC\_SUBORG\_BY\_FIELD\_TEXT
 
-#### 用途
+#### 目的
 
 根据文档字段值更改子组织
 
-#### 适用场景
+#### 何时使用
 
-* 字段中存储了子组织信息
-* 根据字段将文档地点进行匹配
-* 自动分配组织
+* 子组织存储在字段中
+* 将文档位置与字段匹配
+* 自动组织分配
 
-#### 工作方式
+#### 它是如何运作的
 
 ```
-文档字段：“Delivery_Location” = “Berlin”
+Document Field: "Delivery_Location" = "Berlin"
     ↓
-决策表：
-  如果位置 = “Berlin” → 分配给：柏林子组织
-  如果位置 = “Munich” → 分配给：慕尼黑子组织
+Decision Table:
+  If location = "Berlin" → Assign to: Berlin Sub-Org
+  If location = "Munich" → Assign to: Munich Sub-Org
 
     ↓
-文档已分配给：柏林子组织
+Document assigned to: Berlin Sub-Org
 ```
 
 #### 示例
 
 ```
-发票字段：“Cost Center: CC-Berlin-001”
+Invoice field: "Cost Center: CC-Berlin-001"
     ↓
-系统识别出：柏林位置
+System recognizes: Berlin location
     ↓
-将文档更改为：柏林子组织
+Change document to: Berlin Sub-Organization
 ```
 
 ***
 
-### 卡片：ACTION\_ASSIGN\_USER\_FROM\_FIELD\_WITH\_FALLBACK
+### 卡牌：ACTION\_ASSIGN\_USER\_FROM\_FIELD\_WITH\_FALLBACK
 
-#### 用途
+#### 目的
 
-根据字段将文档分配给用户；如果找不到该用户，则使用备用用户
+从字段将文档分配给用户，如果未找到用户则进行回退
 
-#### 适用场景
+#### 何时使用
 
-* 文档字段中存储了用户名
-* 该用户可能不存在于系统中
-* 用户不可用时需要备用人员
+* 存储在文档字段中的用户名
+* 系统中可能不存在
+* 如果用户不可用则需要备份
 
-#### 工作方式
+#### 它是如何运作的
 
 ```
-文档字段：“Approver: John Smith”
+Document Field: "Approver: John Smith"
     ↓
-尝试分配给：John Smith
+Try to assign to: John Smith
     ↓
-如果系统中不存在 John：
+If John doesn't exist:
     ↓
-使用备用用户：Sarah Johnson（经理）
+Use Fallback: Sarah Johnson (Manager)
     ↓
-文档已分配给：Sarah Johnson
+Document assigned to: Sarah Johnson
 ```
 
 #### 参数
 
 ```
-来源字段：[包含用户名的字段]
-备用用户：[如果找不到来源用户]
+Source Field: [Field containing user name]
+Fallback User: [If source user not found]
 ```
 
 #### 示例
 
 ```
-发票包含字段：“Contact Person: Mike Johnson”
+Invoice has field: "Contact Person: Mike Johnson"
 
-尝试分配给：Mike Johnson
+Try to assign to: Mike Johnson
     ↓
-如果系统中没有 Mike：
+If Mike not in system:
     ↓
-改为分配给：财务经理（Robert）
+Fallback to: Finance Manager (Robert)
 ```
 
 ***
 
-### 卡片：ACTION\_ASSIGN\_USER\_TO\_SUPPLIER
+### 卡牌：ACTION\_ASSIGN\_USER\_TO\_SUPPLIER
 
-#### 用途
+#### 目的
 
-将文档分配给负责该供应商的用户
+将文档分配给管理该供应商的用户
 
-#### 适用场景
+#### 何时使用
 
-* 用户与供应商关联
+* 用户链接到供应商
 * 供应商客户经理
-* 供应商关系负责人
+* 供应商关系所有者
 
-#### 工作方式
+#### 它是如何运作的
 
 ```
-文档供应商：ABC Corp
+Document Supplier: ABC Corp
     ↓
-系统检查：谁负责管理 ABC Corp？
+System checks: Who manages ABC Corp?
     ↓
-分配给：John Smith（ABC Corp 客户经理）
+Assign to: John Smith (ABC Corp Account Manager)
 ```
 
 ***
 
 ## 分配决策树
 
-### 决策表示例 1：按金额
+### 决策表示例 1：基于金额
 
 ```
-金额 ≤ €1000
-  → 分配给：财务团队
+Amount ≤ €1000
+  → Assign to: Finance Team
 
-金额 €1000-€5000
-  → 分配给：财务经理
+Amount €1000-€5000
+  → Assign to: Finance Manager
 
-金额 €5000-€20000
-  → 分配给：财务总监
+Amount €5000-€20000
+  → Assign to: Finance Director
 
-金额 > €20000
-  → 分配给：首席财务官
+Amount > €20000
+  → Assign to: CFO
 ```
 
-### 决策表示例 2：按供应商
+### 决策表示例 2：基于供应商
 
 ```
-供应商类型 = “Preferred”
-  → 分配给：客户经理
+Supplier Type = "Preferred"
+  → Assign to: Account Manager
 
-供应商类型 = “New”
-  → 分配给：采购经理
+Supplier Type = "New"
+  → Assign to: Procurement Manager
 
-供应商类型 = “Problem”
-  → 分配给：采购总监
+Supplier Type = "Problem"
+  → Assign to: Procurement Director
 ```
 
-### 决策表示例 3：按文档类型
+### 决策表示例 3：基于文档类型
 
 ```
-文档类型 = “Invoice”
-  → 分配给：应付账款团队
+Document Type = "Invoice"
+  → Assign to: Accounts Payable Team
 
-文档类型 = “Credit Memo”
-  → 分配给：财务经理
+Document Type = "Credit Memo"
+  → Assign to: Finance Manager
 
-文档类型 = “PO”
-  → 分配给：采购团队
+Document Type = "PO"
+  → Assign to: Procurement Team
 ```
 
 ***
 
-## 分配工作流示例
+## 分配工作流程示例
 
 ### 示例 1：简单路由
 
 ```
-收到文档
+Document Arrives
     ↓
-检查：供应商 = “ABC Corp”？是
+Check: Supplier = "ABC Corp"? YES
     ↓
-分配给：John Smith
-（John 负责 ABC Corp）
+Assign to: John Smith
+(John handles ABC Corp)
     ↓
-John 审核并批准
+John reviews and approves
 ```
 
-### 示例 2：顺序审批
+### 示例 2：顺序批准
 
 ```
-收到文档
+Document Arrives
     ↓
-分配给：财务经理（步骤 1）
+Assign to: Finance Manager (Step 1)
     ↓
-经理审核
+Manager reviews
     ↓
-传递给：财务总监（步骤 2）
+Passes to: Finance Director (Step 2)
     ↓
-总监审核
+Director reviews
     ↓
-传递给：首席财务官（步骤 3）
+Passes to: CFO (Step 3)
     ↓
-首席财务官最终批准
+CFO approves final
 ```
 
-### 示例 3：按金额路由
+### 示例 3：基于金额的路由
 
 ```
-发票：€50,000
+Invoice: €50,000
     ↓
-决策表：金额 > €20k？
+Decision Table: Amount > €20k?
     ↓
-是 → 分配给：首席财务官
+YES → Assign to: CFO
     ↓
-首席财务官直接批准
+CFO approves directly
 ```
 
-### 示例 4：按设施分配
+### 示例 4：基于设施
 
 ```
-发往：柏林办公室的货物
+Shipment for: Berlin Office
     ↓
-分配给：柏林仓库团队
+Assign to: Berlin Warehouse Team
     ↓
-然后分配给：柏林配送团队
+Then assign to: Berlin Distribution Team
     ↓
-两个团队依次处理
+Both teams process in sequence
 ```
 
 ***
 
-## 分配最佳实践
+## 作业最佳实践
 
-✅ **建议：**
+✅ **做：**
 
-* 保持决策表简洁
-* 使用样例测试路由逻辑
-* 确保所有路径都有去向
-* 为找不到用户的情况设置备用用户
+* 保持决策表简单
+* 使用示例测试路由逻辑
+* 确保所有路径都通向某个地方
+* 为丢失的用户提供后备方案
 * 记录路由决策
 
-❌ **避免：**
+❌**不要：**
 
-* 创建循环分配（A→B→A）
-* 分配给不存在的用户（未设置备用用户时）
-* 让路由过于复杂
+* 创建循环分配 (A→B→A)
+* 分配给不存在的用户（无回退）
+* 使路由过于复杂
 * 忘记测试路由
-* 分配给不可用人员
+* 分配给无法联系的人
 
 ***
 
-## 分配故障排查
+## 故障排除分配
 
 ### “文档未分配”
 
 **原因：**条件不满足或用户不存在
 
-**解决方案：**
+**解：**
 
 * 检查条件是否为真
-* 确认用户存在于系统中
-* 检查备用设置
-* 查看决策表逻辑
+* 验证系统中是否存在用户
+* 检查后备设置
+* 检查决策表逻辑
 
-### “分配给了错误的人员”
+### “分配了错误的人”
 
 **原因：**决策表或路由逻辑不正确
 
-**解决方案：**
+**解：**
 
 * 测试决策表
 * 检查条件
-* 确认用户映射
+* 验证用户映射
 * 查看字段值
 
-### “分配似乎跳过了某个人”
+### “作业似乎跳过了某人”
 
-**原因：**顺序不正确
+**原因：**顺序错误
 
-**解决方案：**
+**解：**
 
-* 检查优先级编号
-* 确认顺序正确
-* 使用样例进行测试
-* 检查决策表的排序
+* 检查优先级号码
+* 验证序列是否正确
+* 样品测试
+* 查看决策表排序
 
 ***
 
-## 分配卡片对比
+## 作业卡比较
 
-| 卡片                                                    | 分配对象                 | 路由类型  | 使用场景                   |
+| 卡                                                    | 分配给               | 航线类型  | 使用案例                   |
 | ------------------------------------------------------- | ------------------------ | ----------- | -------------------------- |
-| DOC\_USER\_ASSIGN                                       | 个人                     | 直接      | 简单分配          |
-| DOC\_GROUP\_ASSIGN                                      | 组                       | 直接      | 团队分配            |
-| ACTION\_ASSIGN\_DOC\_BASED\_ON\_DECISION\_TABLE         | 决策结果                 | 条件式 | 复杂路由            |
-| ACTION\_ASSIGN\_DOC\_DECISION\_TABLE\_SEQUENTIAL        | 多个对象（按顺序）    | 条件式 | 审批链             |
-| ACTION\_ASSIGN\_DOC\_TO\_USER\_SEQUENTIAL               | 用户（按顺序）        | 有序     | 用户顺序处理步骤      |
-| ACTION\_ASSIGN\_DOC\_TO\_GROUP\_SEQUENTIAL              | 多个组（按顺序）      | 有序     | 组顺序处理步骤     |
-| ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP                | 设施组           | 直接      | 特定设施处理          |
-| ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP\_SEQUENTIAL    | 多个设施（按顺序）  | 有序     | 多设施处理             |
-| ACTION\_ASSIGN\_DOC\_TO\_PROCUREMENT\_GROUP             | 采购部门              | 直接      | 采购工作流       |
-| ACTION\_ASSIGN\_DOC\_TO\_PROCUREMENT\_GROUP\_SEQUENTIAL | 采购部门（按顺序） | 有序     | 采购审批链 |
-| ACTION\_CHANGE\_DOC\_SUBORG                             | 子组织         | 直接      | 部门变更          |
-| ACTION\_CHANGE\_DOC\_SUBORG\_BY\_FIELD\_TEXT            | 按字段分配子组织         | 条件式 | 基于字段分配     |
-| ACTION\_ASSIGN\_USER\_FROM\_FIELD\_WITH\_FALLBACK       | 字段/备用用户           | 条件式 | 动态用户分配    |
+| DOC\_USER\_ASSIGN                                       | 个人               | 直接      | 简单的分配          |
+| DOC\_GROUP\_ASSIGN                                      | 集团                    | 直接      | 团队分配            |
+| ACTION\_ASSIGN\_DOC\_BASED\_ON\_DECISION\_TABLE         | 决策结果          | 有条件的 | 复杂的路由            |
+| ACTION\_ASSIGN\_DOC\_DECISION\_TABLE\_SEQUENTIAL        | 多个（顺序）    | 有条件的 | 审批链             |
+| ACTION\_ASSIGN\_DOC\_TO\_USER\_SEQUENTIAL               | 用户（顺序）        | 已订购     | 连续的用户步骤      |
+| ACTION\_ASSIGN\_DOC\_TO\_GROUP\_SEQUENTIAL              | 组（顺序）      | 已订购     | 连续的组步骤     |
+| ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP                | 设施组           | 直接      | 特定设施          |
+| ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP\_SEQUENTIAL    | 设施（顺序）  | 已订购     | 多功能设施             |
+| ACTION\_ASSIGN\_DOC\_TO\_PROCUREMENT\_GROUP             | 采购              | 直接      | 采购工作流程       |
+| ACTION\_ASSIGN\_DOC\_TO\_PROCUREMENT\_GROUP\_SEQUENTIAL | 采购（顺序） | 已订购     | 采购审批链 |
+| ACTION\_CHANGE\_DOC\_SUBORG                             | 下属组织         | 直接      | 部门变动          |
+| ACTION\_CHANGE\_DOC\_SUBORG\_BY\_FIELD\_TEXT            | 按领域划分的子组织         | 有条件的 | 实地作业     |
+| ACTION\_ASSIGN\_USER\_FROM\_FIELD\_WITH\_FALLBACK       | 现场/后备           | 有条件的 | 动态用户分配    |
 
 ***
 
-## 相关卡片
+## 相关卡牌
 
-* **ACTION\_CREATE\_TASK\_FOR\_USER** - 将任务分配给同一人员
-* **ACTION\_SEND\_EMAIL** - 通知已分配人员
-* **CONDITION\_USER\_IS\_ISNOT** - 检查是否分配给了正确的人员
-* **CONDITION\_GROUP\_IS\_ISNOT** - 检查是否分配给了正确的组
+* **ACTION\_CREATE\_TASK\_FOR\_USER** - 将任务分配给同一个人
+* **ACTION\_SEND\_EMAIL** - 通知指定人员
+* **CONDITION\_USER\_IS\_ISNOT** - 检查是否分配了正确的人员
+* **CONDITION\_GROUP\_IS\_ISNOT** - 检查是否分配了正确的组
+
+<!-- workflow-card-example-action_assign_doc_to_first_user_and_tasks-20261021 -->
+
+### 将文档分配给第一个返回的用户并创建任务
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-ae5af7c6bdc2-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
+
+`ACTION_ASSIGN_DOC_TO_FIRST_USER_AND_TASKS`·版本2
+
+使用演示决策表规则按顺序返回配置的用户 `Demo Reviewer A` 和 `Demo Reviewer B`。选择任务/通知选项、标题`Review invoice`、描述、优先级和电子邮件首选项。第一个返回的用户是文档分配目标，配置的任务/通知以返回的用户为目标。检查两个输出；空返回不能被视为赋值。
+
+<!-- workflow-card-example-action_assign_supplier_user_first_return_of_dt-20261021 -->
+
+### 将第一个返回的用户分配给供应商
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-0c3d87c8a5e7-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
+
+`ACTION_ASSIGN_SUPPLIER_USER_FIRST_RETURN_OF_DT`·版本2
+
+使用注册的演示供应商和第一个用户结果为`Demo Supplier Owner`的决策表规则。选择决策表，并根据需要选择电子邮件模板。供应商-用户关联使用第一个返回的用户；它与分配文档的操作不同。单独验证供应商结果并测试空规则返回。

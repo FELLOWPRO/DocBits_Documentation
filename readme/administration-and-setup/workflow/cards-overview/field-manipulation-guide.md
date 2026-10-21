@@ -1,93 +1,93 @@
-# 字段和表格操作卡片
+# 字段和表格操作卡
 
-## 字段和表格操作卡片 - 完整指南
+## 字段和表格操作卡 - 完整指南
 
-**涵盖：** 用于修改文档字段和表格的 9 张卡片
+**涵盖：** 9张用于修改文档字段和表格的卡片
 
 ***
 
-本页中的字段和表格卡片位于工作流构建器的 **Then** 组中 — 当 When/And 条件匹配后运行的操作：
+此页面上的字段和表格卡位于工作流程生成器的 **则** 组中 — 一旦“何时/与”条件匹配，就会运行的操作：
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="工作流构建器画布，包含 When、And 和 Then 卡片组"><figcaption><p>通过 <strong>Add Card</strong> 将字段和表格操作卡片添加到 <strong>Then</strong> 组。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-zh.png" alt="包含“当”“且”和“则”卡片的未保存示例。执行前请配置所有占位字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>包含“当”“且”和“则”卡片的未保存示例。执行前请配置所有占位字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ***
 
 ### 📌 版本信息
 
-**多版本卡片：** CALC\_COLUMNS (v2)、CALC\_COLUMNS\_REGEX (v2)、EDIT\_COLUMN (v2)、AI\_CALC\_MTZ\_ETZ (v2)
+**多版本卡：** CALC\_COLUMNS (v2)、CALC\_COLUMNS\_REGEX (v2)、EDIT\_COLUMN (v2)、AI\_CALC\_MTZ\_ETZ (v2)
 
-**版本模式：** 所有字段操作卡片都遵循 v1 → v2 模式 **关键更改：** v2 增加了国际化 (i18n) 支持，使用翻译键
+**版本模式：**所有字段操作卡都遵循 v1 → v2 模式**密钥更改：**v2 添加了带有翻译密钥的国际化 (i18n) 支持
 
-📖 [完整版本历史](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/changelog/release.md#-data-manipulation-cards) | [卡片版本数据库](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/DocFlow/docs/card_version.md)
+📖【完整版本历史](../release.md) | [卡牌版本和行为](card-versions-guide.md)
 
 ***
 
-## 文档字段操作 <a id="storing-api-data"></a>
+## 文档字段操作
 
-### 卡片：ACTION\_SET\_FIELD\_TO\_TEXT / 将字段设为文本值 <a id="set-field"></a>
+### 卡：ACTION\_SET\_FIELD\_TO\_TEXT / 将字段设置为文本值
 
-#### 用途
+#### 目的
 
-自动将指定文本填入文档字段
+自动用特定文本填充文档字段
 
-#### 使用场景
+#### 何时使用
 
-* 根据决策填写字段
+* 根据决策填充字段
 * 设置默认值
 * 填写标准化信息
 * 根据条件更新字段
 
-#### 工作原理
+#### 它是如何运作的
 
 ```
-IF 条件为 true
-    THEN 将字段 "Category" 设置为值 "Premium"
+IF Condition is true
+    THEN Set Field "Category" to Value "Premium"
 ```
 
 #### 示例场景
 
-**场景 1：设置审批类别**
+**场景一：设置审批类别**
 
 ```
-条件：发票金额 > €10,000
+Condition: Invoice amount > €10,000
     ↓
-操作：将字段 "Approval_Category" 设置为 "High Value"
+Action: Set "Approval_Category" field to "High Value"
     ↓
-结果：文档现在显示 "Approval_Category: High Value"
+Result: Document now shows "Approval_Category: High Value"
 ```
 
-**场景 2：设置供应商类别**
+**场景2：设置供应商类别**
 
 ```
-条件：供应商名称包含 "ABC"
+Condition: Supplier name contains "ABC"
     ↓
-操作：将字段 "Supplier_Type" 设置为 "Preferred Supplier"
+Action: Set "Supplier_Type" field to "Preferred Supplier"
     ↓
-结果：文档标记为 "Preferred Supplier"
+Result: Document marked as "Preferred Supplier"
 ```
 
-**场景 3：设置处理备注**
+**场景3：设置加工备注**
 
 ```
-条件：文档已被拒绝
+Condition: Document has been rejected
     ↓
-操作：将 "Processing_Notes" 设置为 "Requires supplier revision"
+Action: Set "Processing_Notes" to "Requires supplier revision"
     ↓
-结果：下一位处理人员可以看到此备注
+Result: Note appears for next processor
 ```
 
 #### 参数
 
-**字段名称** 要更新的字段
+**字段名称**要更新哪个字段
 
 ```
-示例：Category、Type、Status、Comment、Notes
+Examples: Category, Type, Status, Comment, Notes
 ```
 
-**文本值** 要填入字段的内容
+**文本值**字段中应放置的内容
 
 ```
-示例："Approved"、"Pending Review"、"High Priority"
+Examples: "Approved", "Pending Review", "High Priority"
 ```
 
 #### 配置步骤
@@ -99,24 +99,24 @@ IF 条件为 true
 
 ***
 
-### 卡片：ACTION\_SET\_BOOLEAN\_FIELD / 设置复选框字段
+### 卡：ACTION\_SET\_BOOLEAN\_FIELD / 设置复选框字段
 
-#### 用途
+#### 目的
 
 自动选中或取消选中复选框字段
 
-#### 使用场景
+#### 何时使用
 
 * 标记为已处理
-* 设置审批标记
+* 设置批准标志
 * 启用/禁用选项
-* 标记为待导出
+* 导出标记
 
-#### 工作原理
+#### 它是如何运作的
 
 ```
-IF 条件为 true
-    THEN 勾选/取消勾选 "Approved" 复选框
+IF Condition is true
+    THEN Check/Uncheck the "Approved" box
 ```
 
 #### True = 已选中，False = 未选中
@@ -126,242 +126,242 @@ IF 条件为 true
 **示例 1：标记为已验证**
 
 ```
-条件：采购订单完全匹配
+Condition: PO matches perfectly
     ↓
-操作：勾选 "Verified" 复选框
+Action: Check "Verified" checkbox
     ↓
-结果：✅ Verified（已勾选）
+Result: ✅ Verified (checked)
 ```
 
-**示例 2：标记为需人工审核**
+**示例 2：手动审核标记**
 
 ```
-条件：价格差异 > 10%
+Condition: Price variance > 10%
     ↓
-操作：勾选 "Requires_Manual_Review" 复选框
+Action: Check "Requires_Manual_Review" checkbox
     ↓
-结果：✅ Requires_Manual_Review（已标记）
+Result: ✅ Requires_Manual_Review (marked)
 ```
 
-**示例 3：取消预填复选框的选中状态**
+**示例3：取消勾选预填充框**
 
 ```
-条件：供应商已列入黑名单
+Condition: Supplier is blacklisted
     ↓
-操作：取消勾选 "Approved_for_Payment" 复选框
+Action: Uncheck "Approved_for_Payment" checkbox
     ↓
-结果：☐ Approved_for_Payment（未勾选 - 已拦截）
+Result: ☐ Approved_for_Payment (unchecked - blocked)
 ```
 
 #### 参数
 
 ```
-复选框字段：[选择字段]
-设置为：☑ 已勾选（✅ True）
-   或：☐ 未勾选（❌ False）
+Checkbox Field: [Choose field]
+Set To: ☑ Checked (✅ True)
+   or: ☐ Unchecked (❌ False)
 ```
 
 ***
 
-### 卡片：ACTION\_INVERT\_BOOLEAN\_FIELD / 切换复选框
+### 卡：ACTION\_INVERT\_BOOLEAN\_FIELD / 切换复选框
 
-#### 用途
+#### 目的
 
-切换复选框状态（已选中 → 未选中，反之亦然）
+翻转复选框状态（选中 → 未选中，反之亦然）
 
-#### 使用场景
+#### 何时使用
 
-* 切换审批状态
+* 切换批准状态
 * 切换处理模式
-* 反转先前状态
-* 更新布尔标记
+* 反转之前的状态
+* 更新布尔标志
 
-#### 工作原理
+#### 它是如何运作的
 
 ```
-当前状态：✅（已勾选）
+Current state: ✅ (Checked)
     ↓
-ACTION_INVERT：切换复选框状态
+ACTION_INVERT: Toggle the box
     ↓
-新状态：☐（未勾选）
+New state: ☐ (Unchecked)
 
 OR
 
-当前状态：☐（未勾选）
+Current state: ☐ (Unchecked)
     ↓
-ACTION_INVERT：切换复选框状态
+ACTION_INVERT: Toggle the box
     ↓
-新状态：✅（已勾选）
+New state: ✅ (Checked)
 ```
 
 #### 示例
 
 ```
-收到的发票上已勾选 "Priority"
+Invoice received with "Priority" checked
     ↓
-处理后，切换 "Priority" 复选框状态
+After processing, invert "Priority" checkbox
     ↓
-复选框现在为未勾选状态（不再具有优先级）
+Checkbox now unchecked (no longer priority)
 ```
 
 ***
 
-### 卡片：ACTION\_COPY\_DOCFIELD\_TO\_DOCFIELD / 复制字段值 <a id="copy-field"></a>
+### 卡：ACTION\_COPY\_DOCFIELD\_TO\_DOCFIELD / 复制字段值
 
-#### 用途
+#### 目的
 
-将一个字段的值复制到另一个字段
+将值从一个字段复制到另一字段
 
-#### 使用场景
+#### 何时使用
 
 * 将供应商信息复制到账单信息
-* 在多个字段间复制数据
-* 统一数据格式
-* 创建值的备份
+* 跨字段重复数据
+* 标准化数据格式
+* 创建字段值备份
 
-#### 工作原理
-
-```
-源字段："Invoice_Supplier"  值："ABC Corp"
-    ↓
-复制到
-    ↓
-目标字段："Billing_Partner"  值："ABC Corp"
-
-现在两个字段的值相同
-```
-
-#### 实际示例
-
-**示例 1：复制交货地址**
+#### 它是如何运作的
 
 ```
-源："Delivery_Address" = "123 Main St, Berlin"
+Source Field: "Invoice_Supplier"  Value: "ABC Corp"
     ↓
-复制到："Billing_Address"
+COPY TO
     ↓
-结果：两个字段均显示 "123 Main St, Berlin"
+Target Field: "Billing_Partner"  Value: "ABC Corp"
+
+Both fields now have same value
 ```
 
-**示例 2：复制供应商代码**
+#### 真实例子
+
+**例1：复制送货地址**
 
 ```
-源："Supplier_Code_External" = "SUPP-789"
+Source: "Delivery_Address" = "123 Main St, Berlin"
     ↓
-复制到："Supplier_Code_Internal"
+Copy to: "Billing_Address"
     ↓
-结果：两个代码匹配，系统可识别该供应商
+Result: Both fields show "123 Main St, Berlin"
 ```
 
-**示例 3：复制金额以供验证**
+**示例2：复制供应商代码**
 
 ```
-源："Invoice_Total" = "€5000"
+Source: "Supplier_Code_External" = "SUPP-789"
     ↓
-复制到："Amount_to_Validate"
+Copy to: "Supplier_Code_Internal"
     ↓
-结果：验证字段中包含正确金额
+Result: Both codes match, system recognizes supplier
+```
+
+**示例3：复制金额进行验证**
+
+```
+Source: "Invoice_Total" = "€5000"
+    ↓
+Copy to: "Amount_to_Validate"
+    ↓
+Result: Validation field has correct amount
 ```
 
 #### 参数
 
 ```
-源字段：[选择要从中复制的字段]
-目标字段：[选择要复制到的字段]
+Source Field: [Choose field to copy FROM]
+Target Field: [Choose field to copy TO]
 ```
 
-#### 备注
+#### 注释
 
-* 原字段保持不变
-* 目标字段会被源字段的值覆盖
-* 适用于统一数据
+* 原始字段不变
+* 目标字段被源值覆盖
+* 有利于标准化数据
 
 ***
 
-## 表格操作
+## 表操作
 
-### 卡片：EDIT\_COLUMN / 编辑表格列
+### 卡：EDIT\_COLUMN / 编辑表格列
 
-#### 用途
+#### 目的
 
-根据条件更改表格列中的值
+根据条件更改表列中的值
 
-#### 使用场景
+#### 何时使用
 
-* 修正行项目中的定价错误
+* 修复订单项中的定价错误
 * 更新数量
-* 更正商品描述
-* 统一值
+* 正确的物品描述
+* 标准化字段值
 
-#### 工作原理
-
-```
-表格列："Unit_Price"
-原始值：[100, 105, 103]
-    ↓
-查找：符合条件的值
-替换：替换为新值
-    ↓
-更新后的列：[100, 110, 110]（示例）
-```
-
-#### 示例：修正定价
-
-**场景：价格使用了错误的货币**
+#### 它是如何运作的
 
 ```
-表格 "Line_Items"，包含列 "Price"
+Table Column: "Unit_Price"
+Original Values: [100, 105, 103]
+    ↓
+FIND: Values matching condition
+REPLACE: With new value
+    ↓
+Updated Column: [100, 110, 110] (example)
+```
 
-当前价格：[100, 100, 100]（货币单位错误）
+#### 示例：固定定价
+
+**场景：货币价格错误**
+
+```
+Table "Line_Items" with column "Price"
+
+Current prices: [100, 100, 100] (in wrong currency)
     ↓
-条件："如果 Price 列等于 100"
+Condition: "If Price column equals 100"
     ↓
-操作：替换为 95（修正后的价格）
+Action: Replace with 95 (corrected price)
     ↓
-结果：[95, 95, 95]（价格已修正）
+Result: [95, 95, 95] (prices corrected)
 ```
 
 #### 参数
 
 ```
-表格：[选择表格]
-列：[选择要编辑的列]
-查找：[要查找的值]
-替换为：[新值]
-条件：[应用时机]
+Table: [Choose table]
+Column: [Choose column to edit]
+Find: [Value to find]
+Replace with: [New value]
+Condition: [When to apply]
 ```
 
 #### 常见用途
 
-* 修正单价
-* 统一描述
-* 更正数量
+* 固定单价
+* 标准化描述
+* 正确的数量
 * 更新 SKU 编号
 
 ***
 
-### 卡片：CALC\_COLUMNS / 计算列值
+### 卡：CALC\_COLUMNS / 计算列值
 
-#### 用途
+#### 目的
 
-对表格列执行计算并保存结果
+对表列执行计算并存储结果
 
-#### 使用场景
+#### 何时使用
 
-* 计算行项目总额（数量 × 单价）
-* 汇总列
+* 计算行总计（数量 × 单价）
+* 总和列
 * 计算折扣
 * 计算百分比
 
-#### 工作原理
+#### 它是如何运作的
 
 ```
-列 A（数量）：100
-列 B（单价）：€50
+Column A (Quantity): 100
+Column B (Unit Price): €50
     ↓
-计算：A × B
+CALCULATE: A × B
     ↓
-列 C（行项目总额）：€5000
+Column C (Line Total): €5000
 ```
 
 #### 计算类型
@@ -369,271 +369,271 @@ ACTION_INVERT：切换复选框状态
 **类型 1：简单乘法**
 
 ```
-公式：数量 × 单价 = 行项目总额
+Formula: Qty × Unit Price = Line Total
 
-示例：
-100 件 × €50/件 = €5000
+Example:
+100 units × €50/unit = €5000
 
-配置：
-  列 1：数量
-  运算符：×
-  列 2：单价
-  结果列：行项目总额
+Config:
+  Column 1: Quantity
+  Operator: ×
+  Column 2: Unit Price
+  Result Column: Line Total
 ```
 
 **类型 2：加法**
 
 ```
-公式：基础价格 + 运费 + 税费 = 总额
+Formula: Base Price + Shipping + Tax = Total
 
-示例：
+Example:
 €5000 + €100 + €950 = €6050
 
-配置：
-  列 1：基础价格
-  运算符：+
-  列 2：运费
-  运算符：+
-  列 3：税费
-  结果列：总额
+Config:
+  Column 1: Base Price
+  Operator: +
+  Column 2: Shipping
+  Operator: +
+  Column 3: Tax
+  Result Column: Total
 ```
 
-**类型 3：百分比计算**
+**类型3：百分比计算**
 
 ```
-公式：金额 × (1 + 税率%) = 含税总额
+Formula: Amount × (1 + Tax%) = Total with Tax
 
-示例：
+Example:
 €5000 × 1.19 = €5950
 
-配置：
-  列：金额
-  运算符：× (1 + Tax%)
-  结果列：Amount_with_Tax
+Config:
+  Column: Amount
+  Operator: × (1 + Tax%)
+  Result Column: Amount_with_Tax
 ```
 
 **类型 4：减法**
 
 ```
-公式：原价 - 折扣 = 最终价格
+Formula: Original Price - Discount = Final Price
 
-示例：
+Example:
 €100 - €10 = €90
 
-配置：
-  列 1：原价
-  运算符：-
-  列 2：折扣
-  结果列：最终价格
+Config:
+  Column 1: Original Price
+  Operator: -
+  Column 2: Discount
+  Result Column: Final Price
 ```
 
-#### 实际示例
+#### 现实世界的例子
 
 **发票行项目计算：**
 
 ```
-表：Invoice_Lines
+Table: Invoice_Lines
 
-行 1：
-  数量：100
-  单价：€25.00
-  计算：100 × €25.00 = €2500.00（行项目总额）
+Row 1:
+  Quantity: 100
+  Unit Price: €25.00
+  Calculate: 100 × €25.00 = €2500.00 (Line Total)
 
-行 2：
-  数量：50
-  单价：€40.00
-  计算：50 × €40.00 = €2000.00（行项目总额）
+Row 2:
+  Quantity: 50
+  Unit Price: €40.00
+  Calculate: 50 × €40.00 = €2000.00 (Line Total)
 
-行 3：
-  数量：200
-  单价：€10.00
-  计算：200 × €10.00 = €2000.00（行项目总额）
+Row 3:
+  Quantity: 200
+  Unit Price: €10.00
+  Calculate: 200 × €10.00 = €2000.00 (Line Total)
 
-小计：€6500.00（行项目总额之和）
-税费（19%）：€1235.00
-运费：€100.00
-总计：€7835.00
+Subtotal: €6500.00 (sum of line totals)
+Tax (19%): €1235.00
+Shipping: €100.00
+TOTAL: €7835.00
 ```
 
 #### 参数
 
 ```
-表格：[选择表格]
-列 1：[第一列]
-运算符：[×, +, -, ÷, %]
-列 2：[第二列]（如需要）
-结果列：[答案写入位置]
+Table: [Select table]
+Column 1: [First column]
+Operator: [×, +, -, ÷, %]
+Column 2: [Second column] (if needed)
+Result Column: [Where to put answer]
 ```
 
 ***
 
-### 卡片：CALC\_COLUMNS\_REGEX / 使用正则表达式模式计算
+### 卡：CALC\_COLUMNS\_REGEX / 使用正则表达式模式计算
 
-#### 用途
+#### 目的
 
 根据模式匹配计算列值
 
-#### 使用场景
+#### 何时使用
 
 * 使用模式从文本中提取值
-* 根据规则设置数据格式
+* 根据规则格式化数据
 * 根据模式转换值
 * 解析结构化文本
 
-#### 工作原理
+#### 它是如何运作的
 
 **正则表达式模式匹配：**
 
 ```
-原始值："ABC-12345-XYZ"
-模式：仅提取数字
-计算：转换为 "12345"
-结果："12345"
+Original Value: "ABC-12345-XYZ"
+Pattern: Extract numbers only
+Calculation: Convert to "12345"
+Result: "12345"
 ```
 
 #### 示例：提取供应商代码
 
-**场景：商品编号中包含供应商信息**
+**场景：商品编号包含供应商信息**
 
 ```
-表格列：“Article_Code”
-值：["SUPP001-2025-A", "SUPP002-2025-B"]
+Table Column: "Article_Code"
+Values: ["SUPP001-2025-A", "SUPP002-2025-B"]
 
-模式：提取供应商代码（前 7 个字符）
+Pattern: Extract supplier code (first 7 characters)
     ↓
-计算：SUPP001、SUPP002
+Calculate: SUPP001, SUPP002
     ↓
-存入：“Supplier_Code”列
+Store in: "Supplier_Code" column
 
-结果：
+Result:
 Article_Code: SUPP001-2025-A  →  Supplier_Code: SUPP001
 Article_Code: SUPP002-2025-B  →  Supplier_Code: SUPP002
 ```
 
 #### 示例：设置电话号码格式
 
-**场景：电话号码未格式化**
+**场景：未格式化的电话号码**
 
 ```
-原始值："491234567890"
-模式：格式化为：+49 123 4567 890
-结果："+49 123 4567 890"
+Original: "491234567890"
+Pattern: Format as: +49 123 4567 890
+Result: "+49 123 4567 890"
 ```
 
 #### 示例：从文本中提取价格
 
-**场景：价格采用文本格式**
+**场景：文本格式价格**
 
 ```
-原始值："Price is 99.99 EUR"
-模式：仅提取数字
-结果："99.99"
+Original: "Price is 99.99 EUR"
+Pattern: Extract number only
+Result: "99.99"
 ```
 
 #### 参数
 
 ```
-表格：[选择表格]
-列：[要分析的列]
-Regex Pattern：[要查找的模式]
-替换内容：[替换为的内容]
-结果列：[结果存储位置]
+Table: [Select table]
+Column: [Column to analyze]
+Regex Pattern: [Pattern to find]
+Replacement: [What to replace with]
+Result Column: [Where to store result]
 ```
 
-#### 常见正则表达式模式
+#### 常见的正则表达式模式
 
 ```
-仅数字：[0-9]+
-仅字母：[a-zA-Z]+
-第一个单词：^\w+
-提取 €：€(\d+\.\d{2})
-日期格式：\d{4}-\d{2}-\d{2}
+Numbers only: [0-9]+
+Letters only: [a-zA-Z]+
+First word: ^\w+
+Extract €: €(\d+\.\d{2})
+Date format: \d{4}-\d{2}-\d{2}
 ```
 
 ***
 
 ## 计算示例
 
-### 示例 1：发票总额计算
+### 示例1：发票总计计算
 
 ```
-步骤 1：计算行项目总额
-  每行：数量 × 单价
+Step 1: Calculate line totals
+  Each row: Qty × Unit Price
 
-步骤 2：汇总所有行项目总额
-  总和：€2500 + €2000 + €2000 = €6500
+Step 2: Sum all line totals
+  Sum: €2500 + €2000 + €2000 = €6500
 
-步骤 3：计算税费
-  税费：€6500 × 0.19 = €1235
+Step 3: Calculate tax
+  Tax: €6500 × 0.19 = €1235
 
-步骤 4：添加运费
-  最终金额：€6500 + €1235 + €100 = €7835
+Step 4: Add shipping
+  Final: €6500 + €1235 + €100 = €7835
 ```
 
-### 示例 2：差异计算
+### 示例2：方差计算
 
 ```
-采购订单价格：€100
-发票价格：€103
+PO Price: €100
+Invoice Price: €103
 
-差异 = |(发票 - 采购订单)| / 采购订单 × 100
-差异 = |3| / 100 × 100 = 3%
+Variance = |(Invoice - PO)| / PO × 100
+Variance = |3| / 100 × 100 = 3%
 
-存储在 "Price_Variance%" 列中
+Store in "Price_Variance%" column
 ```
 
-### 示例 3：应用折扣
+### 示例3：折扣申请
 
 ```
-原价：€100
-折扣率：10%
-折扣金额：€100 × 0.10 = €10
-最终价格：€100 - €10 = €90
+Original Price: €100
+Discount %: 10%
+Discount Amount: €100 × 0.10 = €10
+Final Price: €100 - €10 = €90
 ```
 
 ***
 
-## 字段操作工作流示例
+## 现场操作工作流程示例
 
 ```
-文档到达
+Document arrives
     ↓
-检查条件：“Amount > €5000?”
+Check condition: "Amount > €5000?"
     ↓
-是 → 将字段“Category”设为“High Value”（高价值）
+YES → Set field "Category" = "High Value"
     ↓
-检查条件：“Supplier is preferred?”（供应商是否为首选？）
+Check condition: "Supplier is preferred?"
     ↓
-是 → 勾选“FastTrack”复选框
+YES → Check "FastTrack" checkbox
     ↓
-将“Delivery_Address”复制到“Invoice_Address”
+Copy "Delivery_Address" to "Invoice_Address"
     ↓
-在表中：计算行项目总额（Qty × Price）
+In table: Calculate line totals (Qty × Price)
     ↓
-在表中：计算含税总额
+In table: Calculate total with tax
     ↓
-文档现在已填充所有计算所得字段和其他字段
+Document now has all calculated and populated fields
 ```
 
 ***
 
 ## 最佳实践
 
-✅ **建议：**
+✅ **做：**
 
 * 保持公式简单
-* 使用示例数据测试计算
-* 确认结果合理
-* 记录更改字段的原因
-* 数据相同时使用复制字段卡片
+* 使用样本数据测试计算
+* 验证结果是否有意义
+* 记录您更改字段的原因
+* 当数据相同时使用复制字段
 
-❌ **避免：**
+❌**不要：**
 
-* 创建循环引用（A=B，B=A）
+* 创建循环引用（A=B、B=A）
 * 无故覆盖重要数据
-* 编写过于复杂的正则表达式模式
-* 忘记核实计算结果
-* 在错误的表格或列上执行计算
+* 创建过于复杂的正则表达式模式
+* 忘记验证计算结果
+* 计算错误的表/列
 
 ***
 
@@ -641,43 +641,43 @@ Regex Pattern：[要查找的模式]
 
 ### “字段未更新”
 
-**原因：** 条件未满足或卡片未触发
+**原因：**条件不满足或卡未触发
 
-**解决方案：**
+**解：**
 
 * 检查条件是否为真
-* 确认卡片已添加到工作流
-* 使用示例数据进行测试
+* 验证卡是否在工作流程中
+* 使用样本数据进行测试
 * 检查字段名称是否有拼写错误
 
 ### “计算结果错误”
 
-**原因：** 选择了错误的列或公式不正确
+**原因：**选择了错误的列或公式不正确
 
-**解决方案：**
+**解：**
 
-* 核实源列
+* 验证源列
 * 检查公式是否正确
 * 手动测试
-* 检查小数位数和舍入方式
+* 检查小数位/四舍五入
 
-### “表格显示错误”
+### “表显示错误”
 
-**原因：** 引用的列不存在
+**原因：**引用的列不存在
 
-**解决方案：**
+**解：**
 
-* 核实列名拼写
-* 检查列中是否有数据
+* 验证列名称拼写
+* 检查列是否有数据
 * 确保列数据类型与计算匹配
-* 如有需要，添加缺失的列
+* 如果需要，添加缺失的列
 
 ***
 
-## 相关卡片
+## 相关卡牌
 
 * **ACTION\_COPY\_DOCFIELD\_TO\_DOCFIELD** - 复制值
-* **EDIT\_COLUMN** - 更改表格值
+* **EDIT\_COLUMN** - 更改表值
 * **CALC\_COLUMNS** - 计算公式
 * **ACTION\_SET\_FIELD\_TO\_TEXT** - 设置文本值
-* **ACTION\_SET\_BOOLEAN\_FIELD** - 选中复选框
+* **ACTION\_SET\_BOOLEAN\_FIELD** - 复选框

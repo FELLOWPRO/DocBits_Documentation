@@ -1,6 +1,6 @@
 # 发送 HTTPS 请求
 
-<figure><img src="../../../../../.gitbook/assets/Then_Send_HTTPS_1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-5349352840a3-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ## 用途：
 
@@ -8,7 +8,7 @@
 
 ## 卡片组件：
 
-1. **URL**
+1. **网址**
    * **说明：**指定 HTTPS 请求的发送目标端点。
    * **详细信息：**输入要连接的 API 或 Web 服务的完整 URL。
 2. **Headers（请求标头）**
@@ -30,7 +30,7 @@
 
 ## 功能：
 
-* **条件评估：**只有当 **“Where”** 和 **“And Sections”** 的条件评估结果为 true 时，卡片才会发送 HTTPS 请求。
+* **条件评估：**只有当 **“当”** 和 **“且”** 的条件评估结果为 true 时，卡片才会发送 HTTPS 请求。
   * 如果任一条件为 false，则不会发送请求。
 * **请求执行：**
   * 条件满足时，系统会根据指定配置发送 HTTPS 请求。
@@ -42,11 +42,11 @@
 3. **选择 HTTP 方法：**根据要执行的操作，选择合适的方法（**GET**、**POST**、**PUT** 或 **DELETE**）。
 4. **添加参数：**指定端点所需的查询参数。
 5. **提供数据载荷：**如有需要，按要求的格式（例如 JSON）输入请求正文。
-6. **配置条件：**定义 **“Where”** 和 **“And Sections”**，确保仅在满足特定条件时发送请求。
+6. **配置条件：**定义 **“当”** 和 **“且”**，确保仅在满足特定条件时发送请求。
 
 ## 卡片示例：
 
-<figure><img src="../../../../../.gitbook/assets/Then_Send_HTTPS_2.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-5349352840a3-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ## 总结：
 

@@ -1,6 +1,6 @@
 # 调用 API
 
-<figure><img src="../../../../../.gitbook/assets/Then_Call_API.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-6a1c780ee588-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。</p></figcaption></figure>
 
 ## 用途：
 
@@ -55,3 +55,15 @@
 **“Call API”** 工作流卡片通过支持与外部系统直接交互，增强了工作流自动化。借助灵活的端点、方法和数据配置，工作流可以顺畅地集成第三方 API 或自定义后端。按条件执行 API 调用的能力可确保外部通信自动化的精准性和效率。
 
 ***
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## 实际例子
+
+**何时使用：** 请求配置的外部服务进行补充验证。
+
+**配置：** 选择配置的演示 API 端点和 HTTP 方法。提供该端点所需的参数和 JSON 正文。
+
+**预期结果和反例：** 对于模拟响应`200`，验证以下卡片预期的响应处理。还测试`500`；开始呼叫并不表明业务检查成功。
+
+这是说明性配置和预期结果。使用测试组织中配置的字段、用户和组；这并不是说这个例子已经被执行了。

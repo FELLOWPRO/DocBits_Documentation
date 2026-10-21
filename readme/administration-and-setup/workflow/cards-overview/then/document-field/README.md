@@ -1,5 +1,5 @@
 # 文档字段
 
-此类别中的卡片显示在工作流构建器的 **Add Card** 库中：
+此类别中的卡片显示在工作流构建器的 **添加卡** 库中：
 
-<figure><img src="../../../../../.gitbook/assets/workflow_cards_then_doc_field.png" alt="工作流构建器卡片类别"><figcaption><p>此类别中的卡片。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-category-c9741b344fe2-zh.png" alt="所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>

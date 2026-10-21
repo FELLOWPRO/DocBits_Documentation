@@ -2,20 +2,32 @@
 hidden: true
 ---
 
-# 订单确认采购订单
+# 订单确认与采购订单的比较
 
-当需要根据采购订单检查订单确认时，请在工作流生成器中使用 **Compare with Purchase Order**。将此卡片添加到 **And...** 下方，然后选择订单数据、运算符以及结果的处理方式。以下截图展示了英文界面中的两个可用卡片版本。其字段仍为占位内容；保存前请根据自己的工作流进行设置。
+当需要根据采购订单检查订单确认时，请在工作流生成器中使用 **与采购订单比较**。将此卡片添加到 **And...** 下方，然后选择订单数据、运算符以及结果的处理方式。以下截图展示了英文界面中的两个可用卡片版本。其字段仍为占位内容；保存前请根据自己的工作流进行设置。
 
 ## 将结果写入字段
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-133-workflow-card-write-text.png" alt="工作流生成器中的 Compare with Purchase Order 卡片，包含 Order Data、Operator、Text、Field Name 和 Result of condition 占位内容。" width="563"><figcaption><p>版本 2：根据条件结果将文本写入字段。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-77711a53d4d0-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
-从订单确认中选择 **Order Data**，并选择用于与采购订单进行比较的 **Operator**。输入要写入的 **Text**，选择 **Field Name**，然后选择触发写入的 **Result of condition**。
+从订单确认中选择 **订单数据**，并选择用于与采购订单进行比较的 **运算符**。输入要写入的 **文字**，选择 **字段名称**，然后选择触发写入的 **Result of condition**。
 
 ## 比较数据
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-133-workflow-card-compare-as.png" alt="工作流生成器中的 Compare with Purchase Order 卡片，包含 Any/All、Order Data、Operator 和 Comparison Data 占位内容。" width="563"><figcaption><p>版本 4：将选定的订单确认数据与采购订单数据进行比较。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-d49578e0648e-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
-选择 **Any/All**，以决定是否必须有一个或所有选定条件匹配。然后选择用于采购订单比较的 **Order Data**、**Operator** 和 **Comparison Data**。
+选择 **任意/全部**，以决定是否必须有一个或所有选定条件匹配。然后选择用于采购订单比较的 **订单数据**、**运算符** 和 **Comparison Data**。
 
-有关周边步骤，请参阅 [工作流](../../../) 和 [Compare with Purchase Order](./)。
+有关周边步骤，请参阅 [工作流](../../..) 和 [Compare with Purchase Order](.)。
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## 实际例子
+
+**何时使用：** 根据链接的采购订单检查订单确认。
+
+**配置：** 使用演示订单并与相同的供应商、文章参考和比较值进行确认。选择预期的比较方向以及该版本提供的字段。
+
+**预期结果及反例：**匹配比较通过。在单独的测试用例中更改一个比较项值并验证是否检测到；缺少链接订单是一个单独的数据问题。
+
+这是说明性配置和预期结果。使用测试组织中配置的字段、用户和组；这并不是说这个例子已经被执行了。

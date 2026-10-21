@@ -4,9 +4,9 @@
 
 ***
 
-您可以在 **Workflow Builder**（工作流仪表板 → 工作流列表 → 添加工作流）中构建此模式。点击 **Add Card** 打开卡片库，并选择此模式使用的卡片 — `CALL_API`、`CONDITION_HTTPS_REQUEST_STATUS`、`ACTION_SET_FIELD_TO_TEXT` 和 `CONDITION_COMPARE_TWO_DOCFIELD_VALUES`：
+您可以在 **工作流程生成器**（工作流仪表板 → 工作流列表 → 添加工作流）中构建此模式。点击 **添加卡** 打开卡片库，并选择此模式使用的卡片 — `CALL_API`、`CONDITION_HTTPS_REQUEST_STATUS`、`ACTION_SET_FIELD_TO_TEXT` 和 `CONDITION_COMPARE_TWO_DOCFIELD_VALUES`：
 
-<figure><img src="../../../../.gitbook/assets/workflow_add_card_picker.png" alt="Workflow Builder 中按类别分组的 Add Card 卡片库"><figcaption><p><strong>Add Card</strong> 卡片库 — 从这些类别中选择此模式使用的 API、条件和字段卡片。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-zh.png" alt="所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ***
 
@@ -132,7 +132,7 @@ ELSE：
   → 创建人工审核任务
 ```
 
-**指南参考：** [条件卡片指南 - HTTP 状态](../condition-cards-complete-guide.md#condition-https-request-status)
+**指南参考：** [条件卡片指南 - HTTP 状态](../condition-cards-complete-guide.md)
 
 ***
 
@@ -150,7 +150,7 @@ ELSE：
 字段类型：Number
 ```
 
-**字段 2：API\_Price\_Valid\_Until**
+**字段2：API\_Price\_Valid\_Until**
 
 ```
 字段名称：API_Price_Valid_Until
@@ -158,7 +158,7 @@ ELSE：
 字段类型：Date
 ```
 
-**字段 3：API\_Discount\_Available**
+**字段3：API\_Discount\_Available**
 
 ```
 字段名称：API_Discount_Available
@@ -168,7 +168,7 @@ ELSE：
 
 **结果：** API 中的数据现在已存储在文档字段中，供后续使用
 
-**指南参考：** [字段操作指南 - API 数据存储](../field-manipulation-guide.md#storing-api-data)
+**指南参考：** [字段操作指南 - API 数据存储](../field-manipulation-guide.md)
 
 ***
 
@@ -444,7 +444,7 @@ ELSE：
      → 记录响应以便调试
 ```
 
-**指南参考：** [调用 API 故障排除](../call-api-guide.md#troubleshooting)
+**指南参考：** [调用 API 故障排除](../call-api-guide.md)
 
 ***
 
@@ -605,13 +605,13 @@ ELSE：
 
 * **CALL\_API** - [调用 API 指南](../call-api-guide.md)
 * **ACTION\_HTTPS\_REQUEST** - [HTTPS 请求指南](../https-request-guide.md)
-* **CONDITION\_HTTPS\_REQUEST\_STATUS** - [条件卡片指南](../condition-cards-complete-guide.md#condition-https-request-status)
-* **ACTION\_SET\_FIELD\_TO\_TEXT** - [字段操作指南](../field-manipulation-guide.md#set-field)
+* **CONDITION\_HTTPS\_REQUEST\_STATUS** - [条件卡片指南](../condition-cards-complete-guide.md)
+* **ACTION\_SET\_FIELD\_TO\_TEXT** - [字段操作指南](../field-manipulation-guide.md)
 * **CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES** - [条件卡片指南](../condition-cards-complete-guide.md)
 
 ### 后续步骤
 
-* 解决 API 错误：[错误处理](api-integration-pattern.md#error-handling)（见上文）
+* 解决 API 错误：[错误处理](api-integration-pattern.md)（见上文）
 * 添加任务创建：[任务管理模式](task-management-pattern.md)
 * 转换数据：[数据转换模式](data-transformation-pattern.md)
 
@@ -621,8 +621,8 @@ ELSE：
 
 **需要帮助？**
 
-* 查看[调用 API 故障排除](../call-api-guide.md#troubleshooting)
-* 查看 [API 响应代码](../call-api-guide.md#response-scenarios)
+* 查看[调用 API 故障排除](../call-api-guide.md)
+* 查看 [API 响应代码](../call-api-guide.md)
 * 先使用 Postman 测试 API
 * 联系 API 提供商支持
 

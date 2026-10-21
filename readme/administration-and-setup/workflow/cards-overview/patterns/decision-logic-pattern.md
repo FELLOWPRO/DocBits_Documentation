@@ -4,9 +4,9 @@
 
 ***
 
-您可以在 **Workflow Builder**（Workflow Dashboard → Workflow List → Add Workflow）中构建此模式。点击 **Add Card** 并打开 **Logic** 类别——其中包含用于驱动决策树的条件卡片和分支卡片，您可以将它们与 **And** 组结合起来评估多个条件：
+您可以在 **工作流程生成器**（Workflow Dashboard → Workflow List → Add Workflow）中构建此模式。点击 **添加卡** 并打开 **逻辑** 类别——其中包含用于驱动决策树的条件卡片和分支卡片，您可以将它们与 **且** 组结合起来评估多个条件：
 
-<figure><img src="../../../../.gitbook/assets/workflow_add_card_picker.png" alt="Workflow Builder 中按类别分组的 Add Card 卡片库"><figcaption><p><strong>Add Card</strong> 卡片库——条件卡片和分支卡片位于 <strong>Logic</strong> 类别下。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-zh.png" alt="所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ***
 
@@ -764,8 +764,8 @@ IF (Amount > 10000 AND (Supplier = "A" OR Supplier = "B") AND NOT (Status = "X" 
 ### 相关卡片
 
 * **CONDITION\_DOC\_FIELD\_AMOUNT** - [条件卡片指南](../condition-cards-complete-guide.md)
-* **CONDITION\_DOC\_TYPE\_IS\_ISNOT** - [条件卡片指南](../condition-cards-complete-guide.md#condition-doc-type-is-isnot)
-* **CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT** - [条件卡片指南](../condition-cards-complete-guide.md#condition-supplier-status-is-isnot)
+* **CONDITION\_DOC\_TYPE\_IS\_ISNOT** - [条件卡片指南](../condition-cards-complete-guide.md)
+* **CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT** - [条件卡片指南](../condition-cards-complete-guide.md)
 * **ACTION\_ASSIGN\_TO\_USER** - [分配指南](../assignment-user-guide.md)
 * **tasks\_create** - [任务分配指南](../task-assignment-guide.md)
 

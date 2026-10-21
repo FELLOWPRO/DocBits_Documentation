@@ -4,15 +4,21 @@
 
 ***
 
-You build this pattern in the **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Click **Add Card** to open the card library and pick the cards this pattern uses — `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` and `CONDITION_TASK_STATUS` (the **Assignee** category holds the task and assignment cards):
+<!-- workflow-card-task-pattern-scope-20261022 -->
 
-<figure><img src="../../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library in the Workflow Builder, grouped by category"><figcaption><p>The <strong>Add Card</strong> library — the task, assignment and notification cards live under the <strong>Assignee</strong> and <strong>Status</strong> categories.</p></figcaption></figure>
+**Verified scope:** This is a conceptual orchestration pattern, not an importable workflow configuration. In the verified library, `tasks_create` belongs to **Task**, `doc_user_assign` to **Assignee**, and `action_send_email_to_groups` to **Email**.
+
+The earlier names `ACTION_ASSIGN_TO_USER` and `CONDITION_TASK_STATUS` are illustrative aliases, not selectable registered cards in this library. The JSON below is schematic. Creating a task alone does not pause a workflow or arrange automatic resumption. Completion-dependent routing, waiting and escalation need separately configured and verified behavior.
+
+[Current task cards](../then/task/README.md) · [Export guards and pending tasks](../export-cards-guide.md).
+
+<figure><img src="../../../../.gitbook/assets/workflow_add_card_picker.png" alt="Card-library illustration. Task creation, document assignment and group email use separate categories; choose the version available in your organization."><figcaption><p>Card-library illustration. Task creation, document assignment and group email use separate categories; choose the version available in your organization.</p></figcaption></figure>
 
 ***
 
 ## Pattern Overview
 
-This pattern demonstrates how to create, assign, track, and manage tasks within DocBits workflows. Tasks are actionable work items assigned to users or groups that require completion before the document workflow can continue.
+This pattern illustrates creating and assigning tasks and notifying recipients. Its completion-routing steps describe an intended architecture; task creation itself is not a wait operation.
 
 **What This Pattern Does:**
 
@@ -127,6 +133,8 @@ Currency: EUR
 
 **Configuration:**
 
+**Schematic JSON:** Illustrative structure only; do not import it as a runnable workflow.
+
 ```json
 {
   "task_type": "Approval",
@@ -159,6 +167,8 @@ Currency: EUR
 
 **Task 1: Manager Approval**
 
+**Schematic JSON:** Illustrative structure only; do not import it as a runnable workflow.
+
 ```json
 {
   "task_type": "First Approval",
@@ -173,6 +183,8 @@ Currency: EUR
 ```
 
 **Task 2: Director Approval (Created after Task 1 completion)**
+
+**Schematic JSON:** Illustrative structure only; do not import it as a runnable workflow.
 
 ```json
 {
@@ -231,6 +243,8 @@ User 3: CFO (only if User 2 approves)
 **Card:** ACTION\_SEND\_EMAIL\_TO\_GROUPS
 
 **Configuration:**
+
+**Schematic JSON:** Illustrative structure only; do not import it as a runnable workflow.
 
 ```json
 {
@@ -445,6 +459,8 @@ INVOICE ARRIVES
 
 ### Template 1: Simple Approval Task
 
+**Schematic JSON:** Illustrative structure only; do not import it as a runnable workflow.
+
 ```json
 {
   "card": "tasks_create",
@@ -461,6 +477,8 @@ INVOICE ARRIVES
 
 ### Template 2: Review Task with Details
 
+**Schematic JSON:** Illustrative structure only; do not import it as a runnable workflow.
+
 ```json
 {
   "card": "tasks_create",
@@ -476,6 +494,8 @@ INVOICE ARRIVES
 ***
 
 ### Template 3: Escalation Task
+
+**Schematic JSON:** Illustrative structure only; do not import it as a runnable workflow.
 
 ```json
 {

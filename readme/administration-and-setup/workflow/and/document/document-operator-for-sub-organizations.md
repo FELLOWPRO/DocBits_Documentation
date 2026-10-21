@@ -1,6 +1,6 @@
-# Document Operator for Sub-Organizations
+# Documentoperator voor suborganisaties
 
-<figure><img src="../../../../.gitbook/assets/image (42).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f97575f86ed-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## Doel:
 
@@ -8,14 +8,14 @@ Deze workflow-kaart evalueert of een document deel uitmaakt van een specifieke s
 
 ## Onderdelen van de kaart:
 
-1. **Operator**
+1. **Exploitant**
    * **Beschrijving:** Definieert of het document wel of niet deel moet uitmaken van de opgegeven suborganisatie.
    * **Opties:**
      * **Is:** Het document moet deel uitmaken van de opgegeven suborganisatie om de voorwaarde true te maken.
-     * **Is Not:** Het document mag geen deel uitmaken van de opgegeven suborganisatie om de voorwaarde true te maken.
+     * **Is niet:** Het document mag geen deel uitmaken van de opgegeven suborganisatie om de voorwaarde true te maken.
 2. **Sub-org**
    * **Beschrijving:** Geeft de suborganisatie op waarmee het document wordt vergeleken.
-   * **Detail:** Dit moet overeenkomen met de identifier van de suborganisatie. De vergelijking controleert of het document tot de opgegeven suborganisatie behoort.
+   * **Details:** Dit moet overeenkomen met de identifier van de suborganisatie. De vergelijking controleert of het document tot de opgegeven suborganisatie behoort.
 
 ## Functionaliteit:
 
@@ -33,3 +33,15 @@ Deze workflow-kaart evalueert of een document deel uitmaakt van een specifieke s
 ## Conclusie:
 
 De workflow-kaart "Document in Sub-organization" is een handig hulpmiddel voor het automatiseren van acties op basis van de vraag of een document tot een bepaalde suborganisatie behoort. Door ervoor te zorgen dat documenten volgens suborganisatiespecifieke regels worden verwerkt, verbetert deze kaart de workflow-efficiëntie en zorgt hij ervoor dat acties binnen de juiste organisatorische context worden uitgevoerd.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Documenten routeren die tot één bedrijfseenheid behoren.
+
+**Configuratie:** Selecteer suborganisatie `Demo North` en de gelijk-operator.
+
+**Verwacht resultaat en tegenvoorbeeld:** Een document in `Demo North` is geslaagd. Een document in `Demo South` mislukt.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

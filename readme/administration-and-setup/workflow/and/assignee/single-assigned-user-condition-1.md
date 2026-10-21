@@ -1,29 +1,29 @@
-# Single Assigned User Condition
+# Voorwaarde voor één toegewezen groep
 
-<figure><img src="../../../../.gitbook/assets/docbits_purchase_order_4.png" alt="DocBits Aankoop Bestelling 4" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-d12f96578747-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
 **Doel:**\
 Deze workflow-kaart voert bewerkingen uit op basis van de vraag of een taak of document is toegewezen aan een bepaalde groep. Hij gebruikt een eenvoudige voorwaarde om acties te triggeren of te voorkomen op basis van de groepstoewijzing.
 
 **Onderdelen van de kaart:**
 
-1. **Operator**
+1. **Exploitant**
    * **Beschrijving:** Definieert de logische voorwaarde die op de groepstoewijzing wordt toegepast.
    * **Opties:**
      * **IS:** Triggert de bewerking als de toegewezen groep van het document of de taak overeenkomt met de opgegeven groep.
-     * **IS NOT:** Triggert de bewerking als de toegewezen groep van het document of de taak niet overeenkomt met de opgegeven groep.
-2. **Group**
+     * **IS NIET:** Triggert de bewerking als de toegewezen groep van het document of de taak niet overeenkomt met de opgegeven groep.
+2. **Groep**
    * **Beschrijving:** Geeft de groep op om mee te vergelijken met de toegewezen groep.
-   * **Detail:** Met dit veld kunt u één enkele groep selecteren om de toewijzing mee te vergelijken.
+   * **Details:** Met dit veld kunt u één enkele groep selecteren om de toewijzing mee te vergelijken.
 
 **Functionaliteit:**
 
 * **Identificatie van groepstoewijzing:** Identificeert automatisch de groep die aan een bepaalde taak of document is toegewezen.
 * **Voorwaarde-evaluatie:**
   * Met de **IS**-operator controleert de kaart of de toegewezen groep overeenkomt met de opgegeven groep.
-  * Met de **IS NOT**-operator zorgt de kaart ervoor dat de toegewezen groep niet overeenkomt met de opgegeven groep.
+  * Met de **IS NIET**-operator zorgt de kaart ervoor dat de toegewezen groep niet overeenkomt met de opgegeven groep.
 * **Actie-uitvoering:**
-  * **True-voorwaarde:** Als de groepstoewijzing aan de voorwaarde voldoet (**IS** of **IS NOT**), worden relevante acties getriggerd, zoals meldingen, het starten van taken, goedkeuringen of andere workflow-stappen.
+  * **True-voorwaarde:** Als de groepstoewijzing aan de voorwaarde voldoet (**IS** of **IS NIET**), worden relevante acties getriggerd, zoals meldingen, het starten van taken, goedkeuringen of andere workflow-stappen.
   * **False-voorwaarde:** Als niet aan de voorwaarde wordt voldaan, kan het document of de taak via een andere routing verlopen, of kunnen alternatieve acties worden opgegeven.
 
 **Gebruikersinteracties:**
@@ -37,3 +37,15 @@ Deze workflow-kaart voert bewerkingen uit op basis van de vraag of een taak of d
 
 **Conclusie:**\
 De workflow-kaart "Assigned Group Condition" is essentieel voor het beheren van document- en taakworkflows op basis van groepstoewijzingen. Door voorwaarden toe te staan op basis van de vraag of een taak of document aan een specifieke groep is toegewezen, zorgt hij ervoor dat workflows alleen worden getriggerd door de juiste groepsinteracties, wat het taakbeheer en de workflow-efficiëntie verbetert.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Pas een regel toe op de wachtrij voor financiële beoordelingen.
+
+**Configuratie:** Selecteer de gelijk-operator en groep `Demo Finance`.
+
+**Verwacht resultaat en tegenvoorbeeld:** Een document toegewezen aan `Demo Finance` is geslaagd. Toewijzing aan een individuele gebruiker alleen betekent niet dat u lid bent van deze geselecteerde documenttoewijzingsgroep.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

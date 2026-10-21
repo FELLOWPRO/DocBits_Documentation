@@ -1,73 +1,75 @@
-# Any / All Quantity
+# Elke/alle hoeveelheid
 
-<figure><img src="../../../../.gitbook/assets/image (269).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-b9da38d5468f-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (270).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8fb535fd03a4-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel:**
 
-Deze workflow-kaart is ontworpen om de hoeveelheid in een document te vergelijken met de tolerantie die in de inkooporder is gedefinieerd. Hij stelt gebruikers in staat te evalueren of de hoeveelheid aan bepaalde voorwaarden voldoet, zoals gelijkheid of het overschrijden van de opgegeven tolerantie. In Version 4 breidt de kaart de functionaliteit uit met de mogelijkheid om meerdere entiteiten te vergelijken, waaronder de inkooporder, de ontvangen hoeveelheden en de documenthoeveelheden, wat meer flexibiliteit biedt bij het afhandelen van verschillende scenario's.
+Deze workflowkaart is ontworpen om de hoeveelheid in een document te vergelijken met de tolerantie die in de inkooporder is gedefinieerd. Hiermee kunnen gebruikers evalueren of de hoeveelheid aan bepaalde voorwaarden voldoet, zoals gelijkheid of overschrijding van de opgegeven tolerantie. In Versie 4 breidt de kaart de functionaliteit uit door de mogelijkheid toe te voegen om meerdere entiteiten te vergelijken, inclusief de inkooporder, ontvangen hoeveelheden en documenthoeveelheden, wat een grotere flexibiliteit biedt bij het omgaan met verschillende scenario's.
 
-## **Onderdelen van de kaart:**
+## **Componenten van de kaart:**
 
-1. **Any / All:**
-   * **Beschrijving**: Geeft op hoe de vergelijking over meerdere items of voorwaarden moet worden toegepast.
+1. **Elk / Alles:**
+   * **Beschrijving**: specificeert hoe de vergelijking moet worden toegepast op meerdere items of voorwaarden.
    * **Opties**:
-     * **Any**: Ten minste een van de voorwaarden moet waar zijn om de actie te triggeren.
+     * **Any**: Ten minste één van de voorwaarden moet waar zijn voordat de actie wordt geactiveerd.
      * **All**: Alle voorwaarden moeten waar zijn om de actie te laten doorgaan.
-2. **Operator:**
+2. **Exploitant:**
    * **Beschrijving**: Definieert de voorwaarde die wordt toegepast om de documenthoeveelheid te vergelijken met de opgegeven tolerantie.
    * **Opties**:
-     * **Equals (=)**: Controleert of de hoeveelheid overeenkomt met de opgegeven tolerantiewaarde.
-     * **Not Equals (≠)**: Zorgt ervoor dat de hoeveelheid verschilt van de opgegeven tolerantiewaarde.
-     * **Greater Than (>)**: Verifieert of de hoeveelheid groter is dan de opgegeven tolerantie.
-     * **Greater or Equals (≥)**: Controleert of de hoeveelheid groter dan of gelijk is aan de opgegeven tolerantie.
-     * **Lesser Than (<)**: Verifieert of de hoeveelheid kleiner is dan de opgegeven tolerantie.
-     * **Lesser or Equals (≤)**: Controleert of de hoeveelheid kleiner dan of gelijk is aan de opgegeven tolerantie.
-3. **Tolerance Amount:**
-   * **Beschrijving**: Geeft de tolerantiewaarde op waarmee de documenthoeveelheid wordt vergeleken.
-   * **Detail**: Deze waarde is numeriek en vertegenwoordigt de drempel van de toegestane afwijking in de hoeveelheid
-4. **Tolerance Type:**
+     * **Is gelijk aan (=)**: Controleert of de hoeveelheid overeenkomt met de opgegeven tolerantiewaarde.
+     * **Niet gelijk aan (≠)**: Zorgt ervoor dat de hoeveelheid afwijkt van de opgegeven tolerantiewaarde.
+     * **Groter dan (>)**: Controleert of de hoeveelheid groter is dan de opgegeven tolerantie.
+     * **Groter of gelijk aan (≥)**: Controleert of de hoeveelheid groter is dan of gelijk is aan de opgegeven tolerantie.
+     * **Kleiner dan (<)**: Controleert of de hoeveelheid kleiner is dan de opgegeven tolerantie.
+     * **Kleiner of gelijk aan (≤)**: Controleert of de hoeveelheid kleiner is dan of gelijk is aan de opgegeven tolerantie.
+3. **Tolerantiebedrag:**
+   * **Beschrijving**: Specificeert de tolerantiewaarde waarmee de documenthoeveelheid wordt vergeleken.
+   * **Details**: deze waarde is numeriek en vertegenwoordigt de drempelwaarde voor toegestane variantie in de hoeveelheid
+4. **Tolerantietype:**
    * **Beschrijving**: Definieert het type tolerantie dat wordt toegepast.
    * **Opties**:
-     * **Percentage**: De tolerantie wordt berekend als een percentage van de inkooporderhoeveelheid.
-     * **Value**: De tolerantie wordt opgegeven als een vaste numerieke waarde.
+     * **Percentage**: Tolerantie wordt berekend als een percentage van de inkooporderhoeveelheid.
+     * **Waarde**: Tolerantie wordt opgegeven als een vaste numerieke waarde.
 
-## **Aanvullende onderdelen in Version 4:**
+## **Extra componenten in versie 4:**
 
-* **Comparison Type**: Selecteert de te vergelijken entiteiten, wat in Version 4 meer flexibiliteit biedt in de manier waarop de hoeveelheden worden geëvalueerd.
-  * **Purchase Order to Document**: Vergelijkt de hoeveelheid in de inkooporder met de hoeveelheid in het gerelateerde document.
-  * **Received to Document**: Vergelijkt de ontvangen hoeveelheid met de hoeveelheid in het document.
-  * **Purchase Order to Received**: Vergelijkt de inkooporderhoeveelheid met de ontvangen hoeveelheid.
+* **Vergelijkingstype**: Selecteert de entiteiten die moeten worden vergeleken, waardoor er meer flexibiliteit ontstaat bij de manier waarop de hoeveelheden worden geëvalueerd in Versie 4.
+  * **Inkooporder met document**: vergelijkt de hoeveelheid in de inkooporder met de hoeveelheid in het gerelateerde document.
+  * **Ontvangen in document**: vergelijkt de ontvangen hoeveelheid met de hoeveelheid in het document.
+  * **Inkooporder met ontvangen**: vergelijkt de inkooporderhoeveelheid met de ontvangen hoeveelheid.
 
 ## **Functionaliteit:**
 
-* **Voorwaarde-evaluatie:** Het systeem vergelijkt de hoeveelheid in het document met de tolerantie in de inkooporder op basis van de geselecteerde operator en het tolerantiebedrag/-type. In Version 4 maakt de **Comparison Type** het mogelijk om verschillende hoeveelheden te vergelijken, zoals inkooporder tot ontvangen, of inkooporder tot document, wat een dynamischere vergelijking biedt.
+* **Conditie-evaluatie:** Het systeem vergelijkt de hoeveelheid in het document met de tolerantie in de inkooporder op basis van de geselecteerde operator en het tolerantiebedrag/-type. In Versie 4 maakt het **Vergelijkingstype** het mogelijk om verschillende hoeveelheden te vergelijken, zoals inkooporder met ontvangen, of inkooporder met document, waardoor een meer dynamische vergelijking ontstaat.
 * **Actie-uitvoering:**
-  * **True-voorwaarde**: Als de vergelijking true oplevert (bijv. de documenthoeveelheid valt binnen het acceptabele tolerantiebereik), gaat de workflow verder.
-  * **False-voorwaarde**: Als de vergelijking false oplevert (bijv. de hoeveelheid voldoet niet aan de tolerantie), gaat de workflow niet verder.
+  * **Ware toestand**: Als de vergelijking True oplevert (de documenthoeveelheid ligt bijvoorbeeld binnen het acceptabele tolerantiebereik), gaat de workflow verder.
+  * **Valse toestand**: Als de vergelijking false oplevert (de hoeveelheid voldoet bijvoorbeeld niet aan de tolerantie), gaat de workflow niet verder.
 
-## **Opzet en configuratie:**
+## **Installatie en configuratie:**
 
-**Version 3:**
+**Versie 3:**
 
-* Gebruikers configureren de kaart door de documenthoeveelheid te selecteren, het tolerantiebedrag en tolerantietype te definiëren en de juiste operator te kiezen om de hoeveelheid met de tolerantie te vergelijken. De kaart evalueert of de hoeveelheid binnen de tolerantiedrempel valt en gaat door met de "True"- of "False"-actie op basis van het resultaat.
+* Gebruikers configureren de kaart door het documentaantal te selecteren, het tolerantiebedrag en het tolerantietype te definiëren en de juiste operator te kiezen om het aantal met de tolerantie te vergelijken. De kaart evalueert of de hoeveelheid binnen de tolerantiedrempel ligt en gaat op basis van het resultaat verder met de actie "Wanneer" of "Niet waar".
 
-**Version 4:**
+**Versie 4:**
 
-* Naast de configuratie in Version 3 kunnen gebruikers de **Comparison Type** selecteren, waardoor vergelijkingen tussen verschillende entiteiten mogelijk zijn, zoals:
-  * **Purchase Order to Document**
-  * **Received to Document**
-  * **Purchase Order to Received**
+* Naast de configuratie in versie 3 kunnen gebruikers het **Vergelijkingstype** selecteren, waardoor vergelijkingen tussen verschillende entiteiten mogelijk zijn, zoals:
+  * **Inkooporder naar document**
+  * **Ontvangen op document**
+  * **Inkooporder naar ontvangen**
 
 ## **Voorbeeldscenario:**
 
-Een factuur toont dat 100 eenheden werden geleverd, maar de inkooporder autoriseerde slechts 90 eenheden. Het tolerantiebedrag is ingesteld op 10 eenheden en het tolerantietype is absoluut.
+Op een factuur staat dat er 100 stuks zijn geleverd, maar op de inkooporder zijn slechts 90 stuks geautoriseerd. Het tolerantiebedrag is ingesteld op 10 eenheden en het tolerantietype is absoluut.
 
-* **Version 3**: De kaart vergelijkt de 100 eenheden in het document met de tolerantie van 90 eenheden van de inkooporder. Als de hoeveelheid de tolerantie overschrijdt, markeert de kaart de afwijking voor verdere beoordeling.
-* **Version 4**: De kaart kan de **inkooporderhoeveelheid** (90 eenheden) vergelijken met de **ontvangen hoeveelheid** (100 eenheden) of de **documenthoeveelheid** (100 eenheden). Afhankelijk van de geselecteerde **Comparison Type** controleert hij of het verschil tussen de twee entiteiten de tolerantie overschrijdt en triggert hij de bijbehorende actie.
+* **Versie 3**: De kaart vergelijkt de 100 eenheden in het document met de tolerantie van de inkooporder van 90 eenheden. Als de hoeveelheid de tolerantie overschrijdt, markeert de kaart het verschil voor verdere beoordeling.
+* **Versie 4**: De kaart kan de **aankooporderhoeveelheid** (90 eenheden) vergelijken met de **ontvangen hoeveelheid** (100 eenheden) of de **documenthoeveelheid** (100 eenheden). Afhankelijk van het geselecteerde **Vergelijkingstype** wordt gecontroleerd of het verschil tussen de twee entiteiten de tolerantie overschrijdt en wordt de bijbehorende actie geactiveerd.
 
 ## **Conclusie:**
 
-* **Version 3**: Deze workflow-kaart vergelijkt de documenthoeveelheid met de inkoopordertolerantie, wat helpt om ervoor te zorgen dat afwijkingen in hoeveelheid worden gemarkeerd en op de juiste manier worden afgehandeld.
-* **Version 4**: Breidt deze functionaliteit uit door gebruikers verschillende entiteiten te laten vergelijken, zoals inkooporder tot ontvangen of inkooporder tot document, wat meer flexibiliteit biedt bij het afhandelen van complexere scenario's. Version 4 zorgt voor strakkere controle over inkoop- en ontvangstworkflows en biedt dynamischere vergelijkingen en acties op basis van het gekozen vergelijkingstype.
+* **Versie 3**: Deze workflowkaart vergelijkt de documenthoeveelheid met de inkoopordertolerantie, waardoor ervoor wordt gezorgd dat afwijkingen in de hoeveelheid worden gemarkeerd en op de juiste manier worden afgehandeld.
+* **Versie 4**: breidt deze functionaliteit uit door gebruikers in staat te stellen verschillende entiteiten te vergelijken, zoals inkooporder met ontvangen of inkooporder met document, waardoor meer flexibiliteit wordt geboden bij het omgaan met complexere scenario's. Versie 4 zorgt voor een strakkere controle over inkoop- en ontvangstworkflows en biedt meer dynamische vergelijkingen en acties op basis van het gekozen vergelijkingstype.
+
+Zie [vergelijkingsrichting, tolerantiebasis en versies van opgeslagen kaarten](../../cards-overview/po-comparison-versions-guide.md) voordat u de vergelijkingszijden wijzigt.

@@ -1,54 +1,72 @@
-# Send Email to Groups
+# E-mail verzenden naar groepen
 
-Deze kaarten horen in de **Then**-groep van de Workflow Builder — de acties die worden uitgevoerd zodra aan de When/And-voorwaarden is voldaan:
+***
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Kaarten worden via <strong>Add Card</strong> aan de <strong>Then</strong>-groep toegevoegd.</p></figcaption></figure>
+Voeg deze kaart toe aan de groep **Dan** van de Workflow Builder — de acties die worden uitgevoerd zodra de When/And-voorwaarden overeenkomen:
 
-## Purpose
-This card automatically sends email notifications to groups of users. Instead of assigning work to individual people, you send the message to a group, and all members of that group receive it.
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-nl.png" alt="Niet-opgeslagen voorbeeld met Wanneer-, En- en Dan-kaarten. Vul alle velden in vóór uitvoering. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Niet-opgeslagen voorbeeld met Wanneer-, En- en Dan-kaarten. Vul alle velden in vóór uitvoering. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-**Real-world example:** When a high-value invoice arrives, automatically send an email notification to everyone in the "Finance Team" group so they're aware it needs review.
+***
 
----
+## 📌 Versie-informatie
 
-## When to Use This Card
+**Status:** ✅ Enkele versie (geen belangrijke wijzigingen) **Nieuwste versie:** v1 (actief) **Opmerking:** Deze kaart maakt gebruik van een enkel versiemodel met meertalige ondersteuning via vertaalsleutels.
 
-Use this card when you need to:
-- Notify multiple people at once
-- Send alerts to team groups
-- Broadcast updates to departments
-- Notify groups about document status changes
-- Send reminders to group members
+📖 [Volledige kaartdatabase](../../cards-overview/export-cards-guide.md)
 
-**Common scenarios:**
-- Notify procurement team about new suppliers
-- Alert finance team about high-value invoices
-- Notify warehouse team about shipments
-- Broadcast document status changes
+***
 
----
+## Doel
 
-## How It Works
+Deze kaart verzendt automatisch e-mailmeldingen naar groepen gebruikers. In plaats van werk aan individuele mensen toe te wijzen, verzendt u het bericht naar een groep, en alle leden van die groep ontvangen het.
 
-1. **Condition Check**: Workflow checks "Where" and "And" conditions
-2. **Prepare Email**: System prepares the email using template
-3. **Get Group Members**: System finds all members of specified group
-4. **Send**: Email is sent to each group member
-5. **Log**: Email sending is recorded
+**Voorbeeld uit de praktijk:** Wanneer een factuur met een hoge waarde binnenkomt, stuurt u automatisch een e-mailmelding naar iedereen in de groep 'Financieel team', zodat ze zich ervan bewust zijn dat de factuur moet worden gecontroleerd.
 
----
+***
 
-## Parameters Explained
+## Wanneer moet u deze kaart gebruiken?
 
-### Email Template
-The email message to be sent
+Gebruik deze kaart wanneer u:
 
-**Options:**
-- Choose from existing templates
-- Each template has predefined subject, body, and formatting
-- Templates can include placeholders like {document_number}, {supplier_name}
+* Breng meerdere mensen tegelijk op de hoogte
+* Stuur waarschuwingen naar teamgroepen
+* Updates naar afdelingen uitzenden
+* Breng groepen op de hoogte van wijzigingen in de documentstatus
+* Stuur herinneringen naar groepsleden
 
-**Example Template:**
+**Gemeenschappelijke scenario's:**
+
+* Inkoopteam op de hoogte stellen van nieuwe leveranciers
+* Waarschuw het financiële team over facturen met een hoge waarde
+* Het magazijnteam op de hoogte stellen van zendingen
+* Wijzigingen in de documentstatus
+
+***
+
+## Hoe het werkt
+
+1. **Conditiecontrole**: Workflow controleert de voorwaarden "Wanneer" en "En"
+2. **E-mail voorbereiden**: het systeem bereidt de e-mail voor met behulp van een sjabloon
+3. **Groepsleden verkrijgen**: Systeem vindt alle leden van de opgegeven groep
+4. **Verzenden**: e-mail wordt naar elk groepslid verzonden
+5. **Log**: het verzenden van e-mails wordt geregistreerd
+
+***
+
+## Parameters uitgelegd
+
+### E-mailsjabloon
+
+Het e-mailbericht dat moet worden verzonden
+
+**Opties:**
+
+* Kies uit bestaande sjablonen
+* Elke sjabloon heeft een vooraf gedefinieerd onderwerp, hoofdtekst en opmaak
+* Sjablonen kunnen tijdelijke aanduidingen bevatten, zoals {document\_number}, {supplier\_name}
+
+**Voorbeeldsjabloon:**
+
 ```
 Subject: Document {document_number} requires review
 
@@ -67,44 +85,51 @@ Best regards,
 DocBits Automation
 ```
 
-### Group
-The group of users to send the email to
+### Groep
 
-**Example groups:**
-- Finance Team
-- Procurement Team
-- Warehouse Team
-- Approval Committee
-- Management Group
+De groep gebruikers waarnaar de e-mail moet worden verzonden
 
----
+**Voorbeeldgroepen:**
 
-## Configuration Steps
+* Het financiële team
+* Inkoopteam
+* Magazijnteam
+* Goedkeuringscommissie
+* Beheer Groep
 
-### Step 1: Choose Email Template
-1. Click "Select Email Template"
-2. Choose template from list
-3. Verify subject and content
+***
 
-### Step 2: Select Group
-1. Click "Select Group"
-2. Choose the group you want to notify
-3. Verify group members (usually shows count)
+## Configuratiestappen
 
-### Step 3: Set Conditions
-1. Add condition: "When [condition] is true"
-2. Example: "When invoice amount is greater than €5000"
+### Stap 1: Kies E-mailsjabloon
 
-### Step 4: Test
-1. Test with sample document
-2. Verify email sends to group
-3. Check template rendering
+1. Klik op ‘Selecteer e-mailsjabloon’
+2. Kies een sjabloon uit de lijst
+3. Controleer onderwerp en inhoud
 
----
+### Stap 2: Selecteer Groep
 
-## Email Template Examples
+1. Klik op ‘Groep selecteren’
+2. Kies de groep die u op de hoogte wilt stellen
+3. Groepsleden verifiëren (toont meestal het aantal)
 
-### Template 1: High-Value Invoice Alert
+### Stap 3: Stel voorwaarden in
+
+1. Voorwaarde toevoegen: "Als \[voorwaarde] waar is"
+2. Voorbeeld: "Als het factuurbedrag groter is dan € 5000"
+
+### Stap 4: Testen
+
+1. Test met voorbeelddocument
+2. Controleer of e-mail naar de groep is verzonden
+3. Controleer de sjabloonweergave
+
+***
+
+## Voorbeelden van e-mailsjablonen
+
+### Sjabloon 1: Waarschuwing voor hoge facturen
+
 ```
 Subject: High-Value Invoice Alert - {document_number}
 
@@ -125,7 +150,8 @@ This requires immediate review and approval.
 Sent automatically by DocBits
 ```
 
-### Template 2: Supplier Status Change
+### Sjabloon 2: Wijziging van de leveranciersstatus
+
 ```
 Subject: Supplier Status Update - {supplier_name}
 
@@ -145,7 +171,8 @@ Please update your systems accordingly.
 Sent automatically by DocBits
 ```
 
-### Template 3: Document Ready for Export
+### Sjabloon 3: Document gereed voor export
+
 ```
 Subject: Document Approved for Export - {document_number}
 
@@ -164,28 +191,32 @@ Please proceed with export to {destination_system}.
 Sent automatically by DocBits
 ```
 
----
+***
 
-## Common Use Cases
+## Veelvoorkomende gebruiksscenario's
 
-### Use Case 1: Quality Control Alerts
-**Trigger:** When discrepancy is found between invoice and PO
+### Gebruiksscenario 1: Kwaliteitscontrolewaarschuwingen
 
-**Email Group:** Quality Team
+**Trigger:** Wanneer er een discrepantie wordt gevonden tussen factuur en inkooporder
 
-**Content:**
+**E-mailgroep:** Kwaliteitsteam
+
+**Inhoud:**
+
 ```
 Invoice {number} has quality issues:
 - Unit Price variance: 12% (exceeds 5% tolerance)
 - Please review and take action
 ```
 
-### Use Case 2: Approval Notifications
-**Trigger:** When document reaches certain status
+### Gebruiksscenario 2: Goedkeuringsmeldingen
 
-**Email Group:** Approval Committee
+**Trigger:** Wanneer het document een bepaalde status bereikt
 
-**Content:**
+**E-mailgroep:** Goedkeuringscommissie
+
+**Inhoud:**
+
 ```
 Document {number} is awaiting approval:
 - Amount: {amount}
@@ -193,12 +224,14 @@ Document {number} is awaiting approval:
 - Please login to approve/reject
 ```
 
-### Use Case 3: Exception Notifications
-**Trigger:** When conditions not met
+### Gebruiksscenario 3: Uitzonderingsmeldingen
 
-**Email Group:** Managers
+**Trigger:** Wanneer niet aan de voorwaarden wordt voldaan
 
-**Content:**
+**E-mailgroep:** Managers
+
+**Inhoud:**
+
 ```
 Exception alert for document {number}:
 - Supplier code missing
@@ -206,70 +239,78 @@ Exception alert for document {number}:
 - Manual review required
 ```
 
-### Use Case 4: Status Updates
-**Trigger:** When document status changes
+### Gebruiksscenario 4: Statusupdates
 
-**Email Group:** Team responsible for next step
+**Trigger:** Wanneer de documentstatus verandert
 
-**Content:**
+**E-mailgroep:** Team verantwoordelijk voor de volgende stap
+
+**Inhoud:**
+
 ```
 Document {number} status changed to: {status}
 Assigned to: {assigned_user}
 Next steps: {next_steps}
 ```
 
----
+***
 
-## Troubleshooting
+## Problemen oplossen
 
-### "Email not received"
+### "E-mail niet ontvangen"
 
-**Possible Causes:**
-- [ ] Users in group don't have email addresses
-- [ ] Email blocked by spam filter
-- [ ] Email address is incorrect in group
-- [ ] Group has no members
+**Mogelijke oorzaken:**
 
-**Solutions:**
-1. Verify all group members have email addresses
-2. Check spam/junk folder
-3. Verify group membership is correct
-4. Add users to group if missing
-5. Check with IT that email service is working
+* [ ] Gebruikers in de groep hebben geen e-mailadressen
+* [ ] E-mail geblokkeerd door spamfilter
+* [ ] E-mailadres is onjuist in groep
+* [ ] Groep heeft geen leden
 
-### "Template not rendering correctly"
+**Oplossingen:**
 
-**Cause:** Placeholder variables not found
+1. Controleer of alle groepsleden een e-mailadres hebben
+2. Controleer de spam/ongewenste map
+3. Controleer of het groepslidmaatschap correct is
+4. Voeg gebruikers toe aan de groep als deze ontbreken
+5. Controleer bij IT of de e-mailservice werkt
 
-**Solution:**
-- [ ] Verify field names match exactly
-- [ ] Check if field has a value in the document
-- [ ] Use correct placeholder format: {field_name}
-- [ ] Test with sample document that has all fields
+### "Sjabloon wordt niet correct weergegeven"
 
-### "Some people getting email, others not"
+**Oorzaak:** Tijdelijke aanduidingsvariabelen niet gevonden
 
-**Cause:** Incomplete group membership or invalid emails
+**Oplossing:**
 
-**Solutions:**
-- [ ] Verify all members have valid email
-- [ ] Check if some users have opted out
-- [ ] Verify group membership is current
-- [ ] Contact IT to validate email addresses
+* [ ] Controleer of de veldnamen exact overeenkomen
+* [ ] Controleer of het veld een waarde heeft in het document
+* [ ] Gebruik het juiste placeholder-formaat: {field\_name}
+* [ ] Test met voorbeelddocument dat alle velden bevat
 
-### "Want to add/remove people from group"
+### "Sommige mensen ontvangen e-mail, anderen niet"
 
-**Solution:**
-- Contact your administrator
-- Groups are managed in system settings
-- Can't be changed from this card
-- Request group membership changes in IT
+**Oorzaak:** Onvolledig groepslidmaatschap of ongeldige e-mails
 
----
+**Oplossingen:**
 
-## Email Template Customization
+* [ ] Controleer of alle leden een geldig e-mailadres hebben
+* [ ] Controleer of sommige gebruikers zich hebben afgemeld
+* [ ] Controleer of het groepslidmaatschap actueel is
+* [ ] Neem contact op met IT om e-mailadressen te valideren
 
-### Available Placeholders
+### "Wil mensen toevoegen/verwijderen uit de groep"
+
+**Oplossing:**
+
+* Neem contact op met uw beheerder
+* Groepen worden beheerd in de systeeminstellingen
+* Kan niet worden gewijzigd vanaf deze kaart
+* Wijzigingen in groepslidmaatschap aanvragen in IT
+
+***
+
+## Aanpassing van e-mailsjablonen
+
+### Beschikbare tijdelijke aanduidingen
+
 ```
 {document_number} - Document ID
 {invoice_number} - Invoice ID
@@ -286,55 +327,59 @@ Next steps: {next_steps}
 {comment} - Comments or notes
 ```
 
-### Creating Custom Placeholders
-If you need additional data in emails:
-1. Contact your administrator
-2. Request new placeholder
-3. Add necessary field to document
-4. Update email template
+### Aangepaste tijdelijke aanduidingen maken
 
----
+Als u aanvullende gegevens in e-mails nodig heeft:
 
-## Best Practices
+1. Neem contact op met uw beheerder
+2. Vraag een nieuwe tijdelijke aanduiding aan
+3. Voeg het benodigde veld toe aan het document
+4. E-mailsjabloon bijwerken
 
-✅ **Do:**
-- Keep email content brief and clear
-- Include action items (what should recipients do?)
-- Include link or instructions to access document
-- Test template with sample data
-- Send to right group (don't over-notify)
-- Use templates for consistency
+***
 
-❌ **Don't:**
-- Send too many emails (notification fatigue)
-- Include sensitive data in emails
-- Send to groups that don't need info
-- Use unclear subject lines
-- Forget to include how to take action
-- Send emails to individuals (use group instead)
+## Beste praktijken
 
----
+✅ **Doe:**
 
-## Performance Notes
+* Houd de inhoud van e-mails kort en duidelijk
+* Neem actiepunten op (wat moeten ontvangers doen?)
+* Voeg een link of instructies toe om toegang te krijgen tot het document
+* Testsjabloon met voorbeeldgegevens
+* Verzenden naar de juiste groep (niet te veel melden)
+* Gebruik sjablonen voor consistentie
 
-- Each email takes ~1 second to send
-- Large groups may take time (100 people = ~100 seconds)
-- Don't create loops that send thousands of emails
-- Monitor email service capacity
-- Consider batching if many documents
+❌ **Niet doen:**
 
----
+* Te veel e-mails verzenden (meldingsmoeheid)
+* Neem gevoelige gegevens op in e-mails
+* Verzend naar groepen die geen informatie nodig hebben
+* Gebruik onduidelijke onderwerpregels
+* Vergeet te vermelden hoe u actie kunt ondernemen
+* Stuur e-mails naar individuen (gebruik in plaats daarvan een groep)
 
-## Related Cards
+***
 
-- **ACTION_SEND_EMAIL** - Send to individual person
-- **ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP** - Assign task instead of just notifying
-- **ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL** - Create task and notify
-- **STAUS_CHANGE** - Change status and notify
+## Prestatienotities
 
----
+* Het verzenden van elke e-mail duurt \~1 seconde
+* Grote groepen kunnen enige tijd in beslag nemen (100 personen = \~100 seconden)
+* Creëer geen loops die duizenden e-mails versturen
+* Bewaak de capaciteit van de e-mailservice
+* Overweeg batchverwerking als er veel documenten zijn
 
-## Typical Workflow Example
+***
+
+## Gerelateerde kaarten
+
+* **ACTION\_SEND\_EMAIL** - Verzenden naar individuele persoon
+* **ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP** - Wijs een taak toe in plaats van alleen maar een melding
+* **ACTION\_CREATE\_TASK\_FOR\_GROUP\_SEQUENTIAL** - Taak aanmaken en melden
+* **STAUS\_CHANGE** - Status wijzigen en op de hoogte stellen
+
+***
+
+## Typisch workflowvoorbeeld
 
 ```
 Document Arrives
@@ -350,22 +395,16 @@ Send Email to Procurement Team
 Workflow Continues
 ```
 
----
+***
 
-## FAQ
+## Veelgestelde vragen
 
-**Q: Can I send to multiple groups?**
-A: Create separate cards for each group
+**V: Kan ik naar meerdere groepen sturen?** A: Maak afzonderlijke kaarten voor elke groep
 
-**Q: What if someone's email bounces?**
-A: Email is logged as failed, IT can troubleshoot
+**V: Wat als iemands e-mail terugkomt?** A: E-mail wordt geregistreerd als mislukt, IT kan problemen oplossen
 
-**Q: Can I change the email template?**
-A: Contact your administrator to modify templates
+**V: Kan ik de e-mailsjabloon wijzigen?** A: Neem contact op met uw beheerder om sjablonen te wijzigen
 
-**Q: Can I send based on conditions?**
-A: Yes! Use "Where" and "And" conditions to control when emails send
+**V: Kan ik verzenden op basis van voorwaarden?** A: Ja! Gebruik de voorwaarden 'Waar' en 'En' om te bepalen wanneer e-mails worden verzonden
 
-**Q: How do I know if email was received?**
-A: Check email logs in DocBits for sending status
-
+**V: Hoe weet ik of e-mail is ontvangen?** A: Controleer e-maillogboeken in DocBits op verzendstatus

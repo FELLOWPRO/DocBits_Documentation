@@ -1,6 +1,6 @@
-# Assign to group
+# Toewijzen aan groep
 
-<figure><img src="../../../../.gitbook/assets/image (304).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4f514f6ba398-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
 ## Doel:
 
@@ -8,15 +8,13 @@ De workflow-kaart **"Assign to Group"** faciliteert de toewijzing van documenten
 
 ## Onderdelen van de kaart:
 
-1. **Groups**
+1. **Groepen**
    * **Beschrijving:** Geeft de **groep** op waaraan het document wordt toegewezen.
-   * **Detail:** Geselecteerd uit een dropdownlijst van beschikbare **groepen**.
-
-
+   * **Details:** Geselecteerd uit een dropdownlijst van beschikbare **groepen**.
 
 ## **Aanvullende onderdelen in Version 3**
 
-1. **Decision Tree (alleen Version 3)**
+1. **Beslissingsboom (alleen versie 3)**
    * **Beschrijving:** Maakt het gebruik van een beslisboom mogelijk om de **groep** waaraan het document moet worden toegewezen dynamisch te bepalen.
    * **Opties:**
      * **True:** Schakelt verwerking via de beslisboom in.
@@ -24,8 +22,8 @@ De workflow-kaart **"Assign to Group"** faciliteert de toewijzing van documenten
 
 ## Functionaliteit:
 
-* **Voorwaarde-evaluatie:** De kaart voert de actie alleen uit als zowel de **"Where"**- als de **"And"**-secties als true worden geëvalueerd.
-* **Documenttoewijzing:** Wijst het document toe aan de geselecteerde **groep**. In **Version 3** bepaalt de **beslisboom** de doelgroep dynamisch indien ingeschakeld.
+* **Voorwaarde-evaluatie:** De kaart voert de actie alleen uit als zowel de **"Wanneer"**- als de **"En"**-secties als true worden geëvalueerd.
+* **Documenttoewijzing:** Wijst het document toe aan de geselecteerde **groep**. In **Versie 3** bepaalt de **beslisboom** de doelgroep dynamisch indien ingeschakeld.
 
 ## Opzet en configuratie:
 
@@ -34,4 +32,16 @@ De workflow-kaart **"Assign to Group"** faciliteert de toewijzing van documenten
 
 ## Conclusie:
 
-De workflow-kaart **"Assign to Group"** automatiseert documenttoewijzing aan vooraf gedefinieerde **groepen**, wat de teamcoördinatie verbetert. **Version 3** introduceert de mogelijkheid om groepen dynamisch toe te wijzen op basis van beslisboomlogica.
+De workflow-kaart **"Assign to Group"** automatiseert documenttoewijzing aan vooraf gedefinieerde **groepen**, wat de teamcoördinatie verbetert. **Versie 3** introduceert de mogelijkheid om groepen dynamisch toe te wijzen op basis van beslisboomlogica.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Plaats een document in een gedeelde revisiewachtrij.
+
+**Configuratie:** Selecteer geconfigureerde groep `Demo Finance`.
+
+**Verwacht resultaat en tegenvoorbeeld:** Het document wordt toegewezen aan de geselecteerde groep. Dit is een documenttoewijzing en geen belofte dat er een extra taak of e-mail wordt aangemaakt.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

@@ -1,6 +1,6 @@
-# Compare Total Charges
+# Vergelijk totale kosten
 
-<figure><img src="../../../../.gitbook/assets/image (271).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-97d69520f403-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel:**
 
@@ -8,29 +8,29 @@ Deze workflow-kaart vergelijkt de totale kosten in een documentveld met de bijbe
 
 ## **Onderdelen van de kaart:**
 
-1. **Field Name:**
+1. **Veldnaam:**
    * **Beschrijving**: Geeft het documentveld op dat de totale kostenwaarden bevat die met de kosten in de inkooporder worden vergeleken.
-   * **Detail**: De waarde in dit veld vertegenwoordigt de totale kosten die in het document (bijv. factuur) zijn toegepast en wordt vergeleken met de inkooporderkosten.
-2. **Operator:**
+   * **Details**: De waarde in dit veld vertegenwoordigt de totale kosten die in het document (bijv. factuur) zijn toegepast en wordt vergeleken met de inkooporderkosten.
+2. **Exploitant:**
    * **Beschrijving**: Definieert de voorwaarde die wordt toegepast op de vergelijking tussen de totale kosten in het document en de kosten in de inkooporder.
    * **Opties**:
-     * **Equals (=)**: Verifieert of de totale kosten in het document overeenkomen met de kosten in de inkooporder.
-     * **Not Equals (≠)**: Zorgt ervoor dat de totale kosten in het document verschillen van de kosten in de inkooporder.
-     * **Greater Than (>)**: Verifieert of de totale kosten in het document groter zijn dan de kosten in de inkooporder.
-     * **Greater or Equals (≥)**: Verifieert of de totale kosten in het document groter dan of gelijk zijn aan de kosten in de inkooporder.
-     * **Lesser Than (<)**: Verifieert of de totale kosten in het document kleiner zijn dan de kosten in de inkooporder.
-     * **Lesser or Equals (≤)**: Verifieert of de totale kosten in het document kleiner dan of gelijk zijn aan de kosten in de inkooporder.
-3. **Tolerance Amount**
+     * **Is gelijk aan (=)**: Verifieert of de totale kosten in het document overeenkomen met de kosten in de inkooporder.
+     * **Niet gelijk aan (≠)**: Zorgt ervoor dat de totale kosten in het document verschillen van de kosten in de inkooporder.
+     * **Groter dan (>)**: Verifieert of de totale kosten in het document groter zijn dan de kosten in de inkooporder.
+     * **Groter of gelijk aan (≥)**: Verifieert of de totale kosten in het document groter dan of gelijk zijn aan de kosten in de inkooporder.
+     * **Kleiner dan (<)**: Verifieert of de totale kosten in het document kleiner zijn dan de kosten in de inkooporder.
+     * **Kleiner of gelijk aan (≤)**: Verifieert of de totale kosten in het document kleiner dan of gelijk zijn aan de kosten in de inkooporder.
+3. **Tolerantiebedrag**
    * **Beschrijving**: Geeft de tolerantiedrempel op voor het vergelijken van de totale kosten.
-   * **Detail**: Deze numerieke waarde vertegenwoordigt de toegestane afwijking in kosten tussen het document en de inkooporder.
-4. **Tolerance Type:**
+   * **Details**: Deze numerieke waarde vertegenwoordigt de toegestane afwijking in kosten tussen het document en de inkooporder.
+4. **Tolerantietype:**
    * **Beschrijving**: Geeft het type tolerantie op dat wordt toegepast.
    * **Opties**:
      * **Percentage**: De tolerantie wordt toegepast als een percentage van de inkooporderkosten.
-     * **Value**: De tolerantie wordt toegepast als een vast numeriek bedrag.
-5. **Separator:**
+     * **Waarde**: De tolerantie wordt toegepast als een vast numeriek bedrag.
+5. **Scheidingsteken:**
    * **Beschrijving**: Geeft het scheidingsteken op dat wordt gebruikt om de Charge ID aan het einde van de veldnaam te onderscheiden.
-   * **Detail**: Het scheidingsteken scheidt het kostenveld van de unieke Charge ID die wordt gebruikt om de documentkosten aan de bijbehorende kosten in de inkooporder te koppelen.
+   * **Details**: Het scheidingsteken scheidt het kostenveld van de unieke Charge ID die wordt gebruikt om de documentkosten aan de bijbehorende kosten in de inkooporder te koppelen.
 
 ## **Functionaliteit:**
 

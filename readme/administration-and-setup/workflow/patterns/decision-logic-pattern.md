@@ -1,48 +1,48 @@
-# Beslissingslogica-patroon
+# Beslissingslogicapatroon
 
-**Patroontype:** Voorwaardelijke routering en logica
-**Complexiteit:** Gemiddeld
-**Geschatte insteltijd:** 30-45 minuten
-**Veelvoorkomende toepassingen:** Routering via meerdere paden, voorwaardelijke verwerking, beslissingsbomen, implementatie van bedrijfsregels
+**Patroontype:** Voorwaardelijke routering en logica **Complexiteit:** Gemiddeld **Geschatte insteltijd:** 30-45 minuten **Veelvoorkomende toepassingen:** Routering via meerdere paden, voorwaardelijke verwerking, beslissingsbomen, implementatie van bedrijfsregels
 
----
+***
 
-U bouwt dit patroon in de **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Klik op **Add Card** en open de categorie **Logic**. Deze bevat de voorwaarde- en vertakkingskaarten die de beslissingsboom aansturen en die u combineert met de groep **And** om meerdere voorwaarden te evalueren:
+U bouwt dit patroon in de **Workflow-bouwer** (Workflow Dashboard → Workflow List → Add Workflow). Klik op **Kaart toevoegen** en open de categorie **Logica**. Deze bevat de voorwaarde- en vertakkingskaarten die de beslissingsboom aansturen en die u combineert met de groep **En** om meerdere voorwaarden te evalueren:
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card-bibliotheek in de Workflow Builder, gegroepeerd per categorie"><figcaption><p>De <strong>Add Card</strong>-bibliotheek: voorwaarde- en vertakkingskaarten vindt u onder de categorie <strong>Logic</strong>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
----
+***
 
 ## Patroonoverzicht
 
 Dit patroon laat zien hoe u complexe beslissingslogica implementeert in DocBits-workflows. Met voorwaardekaarten routeert u documenten via verschillende verwerkingspaden op basis van documentkenmerken, veldwaarden en bedrijfsregels.
 
 **Wat dit patroon doet:**
+
 1. Evalueert meerdere voorwaarden achtereenvolgens of parallel
 2. Routeert documenten naar verschillende paden op basis van voorwaarden
 3. Implementeert bedrijfsregels en beleid
 4. Verwerkt complexe beslissingsbomen
 5. Combineert meerdere criteria voor routeringsbeslissingen
 
----
+***
 
 ## Wanneer dit patroon te gebruiken
 
 Gebruik dit patroon wanneer u het volgende moet doen:
-- ✅ Documenten routeren op basis van bedragsdrempels
-- ✅ Verschillende regels toepassen voor verschillende documenttypes
-- ✅ Goedkeuringslogica op meerdere niveaus implementeren
-- ✅ Complex bedrijfsbeleid verwerken
-- ✅ Dynamische routering creëren op basis van meerdere criteria
-- ✅ Logica voor uitzonderingsafhandeling implementeren
-- ✅ Goedkeuringsmatrices opstellen
+
+* ✅ Documenten routeren op basis van bedragsdrempels
+* ✅ Verschillende regels toepassen voor verschillende documenttypes
+* ✅ Goedkeuringslogica op meerdere niveaus implementeren
+* ✅ Complex bedrijfsbeleid verwerken
+* ✅ Dynamische routering creëren op basis van meerdere criteria
+* ✅ Logica voor uitzonderingsafhandeling implementeren
+* ✅ Goedkeuringsmatrices opstellen
 
 **Gebruik dit patroon niet wanneer:**
-- ❌ Een eenvoudige lineaire workflow volstaat
-- ❌ Alle documenten hetzelfde pad volgen
-- ❌ Er geen voorwaardelijke verwerking nodig is
 
----
+* ❌ Een eenvoudige lineaire workflow volstaat
+* ❌ Alle documenten hetzelfde pad volgen
+* ❌ Er geen voorwaardelijke verwerking nodig is
+
+***
 
 ## Soorten beslissingslogica
 
@@ -56,6 +56,7 @@ ELSE:
 ```
 
 **Voorbeeld:**
+
 ```
 IF Amount > €10,000:
   → Assign to Director
@@ -73,6 +74,7 @@ ELSE:
 ```
 
 **Voorbeeld:**
+
 ```
 IF Amount > €10,000 AND Supplier = "New" AND Department = "IT":
   → Assign to IT Director + CFO (dual approval)
@@ -90,6 +92,7 @@ ELSE:
 ```
 
 **Voorbeeld:**
+
 ```
 IF Amount > €50,000 OR Supplier is "Blocked" OR Document has "Urgent" flag:
   → Escalate immediately
@@ -113,6 +116,7 @@ ELSE:
 ```
 
 **Voorbeeld:**
+
 ```
 IF Document_Type = "Invoice":
   IF Amount > €10,000:
@@ -126,13 +130,14 @@ ELSE IF Document_Type = "Credit Note":
     → Standard credit workflow
 ```
 
----
+***
 
 ## Volledig workflowvoorbeeld
 
 ### Scenario: factuurgoedkeuringsmatrix
 
 **Bedrijfsregels:**
+
 1. Bedrag < €1.000: automatisch goedkeuren
 2. Bedrag €1.000-€10.000: goedkeuring door de manager
 3. Bedrag > €10.000 EN nieuwe leverancier: goedkeuring door directeur + CFO
@@ -179,13 +184,14 @@ STEP 3: Amount-Based Routing (if not urgent)
         → Deadline: 2 days
 ```
 
----
+***
 
 ## Stapsgewijze implementatie
 
 ### Stap 1: Voorwaardekaarten definiëren
 
 **Voorwaarde 1: bedragsdrempel**
+
 ```
 Card: CONDITION_DOC_FIELD_AMOUNT
 Field: Total_Amount
@@ -195,6 +201,7 @@ Currency: EUR
 ```
 
 **Voorwaarde 2: controle van het documenttype**
+
 ```
 Card: CONDITION_DOC_TYPE_IS_ISNOT
 Document Type: IS
@@ -202,6 +209,7 @@ Type: Invoice
 ```
 
 **Voorwaarde 3: leveranciersstatus**
+
 ```
 Card: CONDITION_SUPPLIER_STATUS_IS_ISNOT
 Supplier Status: IS
@@ -209,6 +217,7 @@ Status: ACTIVE
 ```
 
 **Voorwaarde 4: controle op nieuwe leverancier**
+
 ```
 Card: CONDITION_DOC_FIELD_DATE
 Field: Supplier_First_Transaction_Date
@@ -218,11 +227,12 @@ Value: {{TODAY_MINUS_180_DAYS}}
 
 **Verwijzing naar de handleiding:** [Condition Cards Complete Guide](../and/condition-cards-complete-guide.md)
 
----
+***
 
 ### Stap 2: Beslissingsboom opbouwen
 
 **Niveau 1: documenttype**
+
 ```
 Workflow: "Invoice Processing"
 
@@ -240,6 +250,7 @@ ELSE:
 ```
 
 **Niveau 2: bedragsdrempels (voor facturen)**
+
 ```
 IF Amount < €1,000:
   → Branch to "Auto-Approve Path"
@@ -257,6 +268,7 @@ ELSE (Amount ≥ €50,000):
 ```
 
 **Niveau 3: leveranciersanalyse (voor facturen met hoge waarde)**
+
 ```
 IF Supplier_Status = "BLOCKED":
   → STOP processing
@@ -277,11 +289,12 @@ ELSE:
   → Standard high-value workflow
 ```
 
----
+***
 
 ### Stap 3: Routeringsacties aanmaken
 
 **Pad A: automatisch goedkeuren (bedrag < €1.000)**
+
 ```
 Actions:
 1. Set field "Approval_Type" = "AUTO"
@@ -292,6 +305,7 @@ Actions:
 ```
 
 **Pad B: goedkeuring door de manager (€1.000-€10.000)**
+
 ```
 Actions:
 1. Set field "Approval_Type" = "MANUAL"
@@ -308,6 +322,7 @@ Actions:
 ```
 
 **Pad C: goedkeuring door de directeur (€10.000-€50.000)**
+
 ```
 Actions:
 1. Set field "Approval_Type" = "MANUAL"
@@ -328,6 +343,7 @@ Actions:
 ```
 
 **Pad D: goedkeuring door het topmanagement (≥ €50.000)**
+
 ```
 Actions:
 1. Set field "Approval_Type" = "EXECUTIVE"
@@ -345,11 +361,11 @@ Actions:
 10. If any rejected: Executive review meeting
 ```
 
----
+***
 
 ## Geavanceerde patronen voor beslissingslogica
 
-### Patroon 1: routering op basis van scores
+### Patroon 1: routeren op basis van scores
 
 **Bereken een risicoscore en route dienovereenkomstig:**
 
@@ -373,6 +389,7 @@ Routing:
 ```
 
 **Implementatie:**
+
 ```
 1. ACTION_CALCULATE_FIELD: Calculate risk score
 2. ACTION_SET_FIELD_TO_NUMBER: Store score
@@ -380,7 +397,7 @@ Routing:
 4. Route based on score
 ```
 
----
+***
 
 ### Patroon 2: matrix per afdeling
 
@@ -407,6 +424,7 @@ Department Matrix:
 ```
 
 **Implementatie:**
+
 ```
 1. Check Department field
 2. Based on department, check amount threshold
@@ -414,7 +432,7 @@ Department Matrix:
 4. Different thresholds per department
 ```
 
----
+***
 
 ### Patroon 3: tijdgebaseerde logica
 
@@ -448,7 +466,7 @@ Fiscal Period:
     - Additional checks
 ```
 
----
+***
 
 ### Patroon 4: routering op basis van uitzonderingen
 
@@ -485,7 +503,7 @@ Exception Types:
   - Amount discrepancy
 ```
 
----
+***
 
 ## Volledig beslissingslogicadiagram
 
@@ -616,13 +634,14 @@ INVOICE ARRIVES
 └─ [All decision levels processed]
 ```
 
----
+***
 
 ## Best practices voor de configuratie
 
 ### 1. Houd de logica duidelijk en onderhoudbaar
 
 ✅ **Goed:**
+
 ```
 IF Amount > 10000:
   → High value path
@@ -631,12 +650,14 @@ ELSE:
 ```
 
 ❌ **Slecht (te complex):**
+
 ```
 IF (Amount > 10000 AND (Supplier = "A" OR Supplier = "B") AND NOT (Status = "X" OR Status = "Y") AND Department IN [1,2,3]):
   → Complex path
 ```
 
 **Beter: splits het op in stappen:**
+
 ```
 Step 1: IF Amount > 10000: Continue, ELSE: Standard path
 Step 2: IF Supplier in allowed list: Continue, ELSE: Review
@@ -644,17 +665,19 @@ Step 3: IF Status valid: Continue, ELSE: Reject
 Step 4: IF Department authorized: Approve, ELSE: Escalate
 ```
 
----
+***
 
 ### 2. Documenteer de beslissingslogica
 
 **Neem altijd op:**
-- Doel van elk beslissingspunt
-- De bedrijfsregel die wordt geïmplementeerd
-- Verwachte uitkomsten
-- Afhandeling van uitzonderingen
+
+* Doel van elk beslissingspunt
+* De bedrijfsregel die wordt geïmplementeerd
+* Verwachte uitkomsten
+* Afhandeling van uitzonderingen
 
 **Voorbeeld van documentatie:**
+
 ```
 Decision Point: Amount Threshold Check
 Business Rule: BR-INV-001 (Invoice Approval Matrix)
@@ -668,34 +691,36 @@ Updated: 2025-10-23
 Owner: Finance Department
 ```
 
----
+***
 
 ### 3. Test alle paden
 
 **Testmatrix:**
 
-| Testgeval | Bedrag | Type | Leverancier | Verwacht pad | Status |
-|-----------|--------|------|-------------|--------------|--------|
-| TC1 | €500 | Factuur | Bestaand | Automatisch goedkeuren | ✅ |
-| TC2 | €5.000 | Factuur | Bestaand | Manager | ✅ |
-| TC3 | €15.000 | Factuur | Nieuw | Directeur+CFO | ✅ |
-| TC4 | €60.000 | Factuur | Bestaand | Topmanagement | ✅ |
-| TC5 | €2.000 | Creditnota | Bestaand | Creditnota-workflow | ✅ |
-| TC6 | €100.000 | Factuur | Geblokkeerd | Stoppen en escaleren | ✅ |
+| Testgeval | Bedrag   | Typ       | Leverancier | Verwacht pad           | Status |
+| --------- | -------- | ---------- | ----------- | ---------------------- | ------ |
+| TC1       | €500     | Factuur    | Bestaand    | Automatisch goedkeuren | ✅      |
+| TC2       | €5.000   | Factuur    | Bestaand    | Beheerder                | ✅      |
+| TC3       | €15.000  | Factuur    | Nieuw       | Directeur+CFO          | ✅      |
+| TC4       | €60.000  | Factuur    | Bestaand    | Topmanagement          | ✅      |
+| TC5       | €2.000   | Creditnota | Bestaand    | Creditnota-workflow    | ✅      |
+| TC6       | €100.000 | Factuur    | Geblokkeerd | Stoppen en escaleren   | ✅      |
 
----
+***
 
 ### 4. Bewaak beslissingsstatistieken
 
 **Houd bij:**
-- Verdeling over de beslissingspaden
-- Percentage automatische goedkeuringen
-- Percentage handmatige beoordelingen
-- Gemiddelde verwerkingstijd per pad
-- Percentage uitzonderingen
-- Gebruik per pad
+
+* Verdeling over de beslissingspaden
+* Percentage automatische goedkeuringen
+* Percentage handmatige beoordelingen
+* Gemiddelde verwerkingstijd per pad
+* Percentage uitzonderingen
+* Gebruik per pad
 
 **Voorbeeldstatistieken:**
+
 ```
 Month: October 2025
 Total Invoices: 1,250
@@ -715,42 +740,41 @@ Processing Time:
 Exceptions: 15 (1.2%)
 ```
 
----
+***
 
 ## Gerelateerde patronen
 
 ### Patronen die goed samenwerken:
 
-- **[Task Management Pattern](task-management-pattern.md)** - Taken aanmaken op basis van beslissingen
-- **[API Integration Pattern](api-integration-pattern.md)** - Gegevens ophalen voor besluitvorming
-- **[PO Matching Pattern](po-matching-pattern.md)** - PO-resultaten gebruiken in beslissingen
-- **[Data Transformation Pattern](data-transformation-pattern.md)** - Gegevens transformeren vóór beslissingen
+* [**Patroon voor taakbeheer**](task-management-pattern.md) - Taken aanmaken op basis van beslissingen
+* [**API-integratiepatroon**](api-integration-pattern.md) - Gegevens ophalen voor besluitvorming
+* [**PO-overeenkomend patroon**](po-matching-pattern.md) - PO-resultaten gebruiken in beslissingen
+* [**Patroon voor gegevenstransformatie**](data-transformation-pattern.md) - Gegevens transformeren vóór beslissingen
 
----
+***
 
 ## Gerelateerde handleidingen
 
 ### Vereisten
-- [Condition Cards Complete Guide](../and/condition-cards-complete-guide.md) - Alle voorwaardekaarten
-- [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md) - Veldbewerkingen
-- [Assignment User Guide](../then/assignee/assignment-user-guide.md) - Routeringslogica
+
+* [Condition Cards Complete Guide](../and/condition-cards-complete-guide.md) - Alle voorwaardekaarten
+* [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md) - Veldbewerkingen
+* [Gebruikershandleiding toewijzing](../then/assignee/assignment-user-guide.md) - Routeringslogica
 
 ### Gerelateerde kaarten
-- **CONDITION_DOC_FIELD_AMOUNT** - [Condition Cards Guide](../and/condition-cards-complete-guide.md#field-conditions)
-- **CONDITION_DOC_TYPE_IS_ISNOT** - [Condition Cards Guide](../and/condition-cards-complete-guide.md#condition-doc-type-is-isnot)
-- **CONDITION_SUPPLIER_STATUS_IS_ISNOT** - [Condition Cards Guide](../and/condition-cards-complete-guide.md#condition-supplier-status-is-isnot)
-- **ACTION_ASSIGN_TO_USER** - [Assignment Guide](../then/assignee/assignment-user-guide.md)
-- **tasks_create** - [Task Assignment Guide](../then/task/task-assignment-guide.md)
+
+* **CONDITION\_DOC\_FIELD\_AMOUNT** - [Handleiding voor conditiekaarten](../and/condition-cards-complete-guide.md)
+* **CONDITION\_DOC\_TYPE\_IS\_ISNOT** - [Handleiding voor conditiekaarten](../and/condition-cards-complete-guide.md)
+* **CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT** - [Handleiding voor conditiekaarten](../and/condition-cards-complete-guide.md)
+* **ACTION\_ASSIGN\_TO\_USER** - [Toewijzingsgids](../then/assignee/assignment-user-guide.md)
+* **tasks\_create** - [Handleiding voor taaktoewijzing](../then/task/task-assignment-guide.md)
 
 ### Volgende stappen
-- Taken aanmaken: [Task Management Pattern](task-management-pattern.md)
-- Complexe matching toevoegen: [PO Matching Pattern](po-matching-pattern.md)
-- API's integreren: [API Integration Pattern](api-integration-pattern.md)
 
----
+* Gemaakt maken: [Taakbeheerpatroon](task-management-pattern.md)
+* Complexe matching toevoegen: [PO Matching Pattern](po-matching-pattern.md)
+* API's integreren: [API Integration Pattern](api-integration-pattern.md)
 
-**Patroonversie:** 1.0
-**Laatst bijgewerkt:** 23 oktober 2025
-**Moeilijkheidsgraad:** Gemiddeld
-**Geschatte tijd:** 30-45 minuten
-**Slagingspercentage:** Hoog
+***
+
+**Patroonversie:** 1.0 **Laatst bijgewerkt:** 23 oktober 2025 **Moeilijkheidsgraad:** Gemiddeld **Geschatte tijd:** 30-45 minuten **Slagingspercentage:** Hoog

@@ -1,4 +1,4 @@
-# Document Type Operation
+# Documenttypebewerking
 
 ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FPy27j6G21QsBB7O6rq7O%252Fuserlmn_5cc120c265b7a237929e829ce781b452.png%3Falt%3Dmedia%26token%3D1c0d9baf-4135-46d2-93c5-8feb4cdaf979\&width=768\&dpr=2\&quality=100\&sign=c54ef7b3\&sv=2)
 
@@ -9,7 +9,7 @@ Deze workflowkaart is speciaal ontworpen om vooraf gedefinieerde bewerkingen uit
 ## **Functionaliteit:**
 
 * **Documenttypevalidatie**: Deze kaart controleert of een document overeenkomt met een bepaald type, zodat gebruikers de categorisatie kunnen bevestigen.
-* **Operator**: Gebruikers kunnen voorwaarden instellen om het type document te bepalen. Beschikbare operators zijn onder andere:
+* **Exploitant**: Gebruikers kunnen voorwaarden instellen om het type document te bepalen. Beschikbare operators zijn onder andere:
   * **Is**: Bevestigt dat het document overeenkomt met het gespecificeerde documenttype.
   * **Is Niet**: Zorgt ervoor dat het document niet overeenkomt met het gespecificeerde documenttype.
 * **Documenttypen**: Ondersteunde documenttypen zijn onder andere:

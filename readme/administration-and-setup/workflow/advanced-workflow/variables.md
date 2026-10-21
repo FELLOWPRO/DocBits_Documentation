@@ -59,3 +59,7 @@ Klik op **New Variable**, geef deze een naam en een type, en stel de waarde in. 
 
 - Bekijk hoe nodes deze waarden gebruiken in [Nodes](nodes.md).
 - Valideer en voer de workflow uit in [Validation & Testing](validation-and-testing.md).
+
+## Numerieke variabelen
+
+**Number (Getal)** is een afzonderlijk variabeletype, naast Text, Yes/No en Document. Voer een getal zonder valutasymbool in. Organisatievariabelen worden door meerdere workflows gedeeld; aanmaken, wijzigen en verwijderen worden direct opgeslagen, onafhankelijk van het opslaan of verwerpen van het canvas. Controleer vóór een wijziging de betrokken workflows en test waarden onder, op en boven de drempel.

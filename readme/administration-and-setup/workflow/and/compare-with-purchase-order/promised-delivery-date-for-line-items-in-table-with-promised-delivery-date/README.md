@@ -1,6 +1,6 @@
 # Beloofde leverdatum voor regelitems in tabel met beloofde leverdatum
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-264ee6d588cc-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## Doel:
 
@@ -8,9 +8,8 @@ Deze workflowkaart is ontworpen om de **beloofde leverdatum van regelitems** te 
 
 ## Componenten van de Kaart:
 
-1. **Operator**
-   * **Beschrijving:**
-     Definieert hoe de beloofde leverdatum van het regelitem wordt vergeleken met de beloofde leverdatum van de inkooporder.
+1. **Exploitant**
+   * **Beschrijving:** Definieert hoe de beloofde leverdatum van het regelitem wordt vergeleken met de beloofde leverdatum van de inkooporder.
    * **Opties:**
      * **Is Gelijk Aan (=):** De datum van het regelitem moet binnen het tolerantievenster vallen.
      * **Is Niet Gelijk Aan (≠):** De datum van het regelitem moet buiten het tolerantievenster vallen.
@@ -19,20 +18,15 @@ Deze workflowkaart is ontworpen om de **beloofde leverdatum van regelitems** te 
      * **Kleiner Dan (<):** De datum van het regelitem moet voor het tolerantievenster liggen.
      * **Kleiner of Gelijk Aan (≤):** De datum van het regelitem moet op of voor het einde van het tolerantievenster liggen.<br>
 2. **Tolerantiedagen**
-   * **Beschrijving:**
-     Specificeert het aantal dagen dat wordt gebruikt om het acceptabele tolerantievenster rond de beloofde leverdatum van de inkooporder te berekenen.
-   * **Detail:**
-     Deze waarde is een geheel getal en definieert hoeveel dagen voor en na de inkooporderdatum worden overwogen tijdens de validatie.<br>
+   * **Beschrijving:** Specificeert het aantal dagen dat wordt gebruikt om het acceptabele tolerantievenster rond de beloofde leverdatum van de inkooporder te berekenen.
+   * **Details:** Deze waarde is een geheel getal en definieert hoeveel dagen voor en na de inkooporderdatum worden overwogen tijdens de validatie.<br>
 3. **Toegestane Tolerantiedagen**
-   * **Beschrijving:**
-     Definieert welke weekdagen worden meegeteld bij het berekenen van tolerantiedagen.
-   * **Detail:**
-     Gebruikers kunnen specifieke weekdagen selecteren (bijvoorbeeld maandag tot en met vrijdag). Alleen de geselecteerde dagen worden opgenomen bij het berekenen van het tolerantievenster.
+   * **Beschrijving:** Definieert welke weekdagen worden meegeteld bij het berekenen van tolerantiedagen.
+   * **Details:** Gebruikers kunnen specifieke weekdagen selecteren (bijvoorbeeld maandag tot en met vrijdag). Alleen de geselecteerde dagen worden opgenomen bij het berekenen van het tolerantievenster.
 
 ### Functionaliteit:
 
-* **Conditie-evaluatie:** Het systeem berekent een tolerantievenster rond de beloofde leverdatum van de inkooporder op basis van de geconfigureerde **Tolerantiedagen** en **Toegestane Tolerantiedagen**.
-  De beloofde leverdatum van elk regelitem wordt vervolgens vergeleken met dit venster met behulp van de geselecteerde operator.
+* **Conditie-evaluatie:** Het systeem berekent een tolerantievenster rond de beloofde leverdatum van de inkooporder op basis van de geconfigureerde **Tolerantiedagen** en **Toegestane Tolerantiedagen**. De beloofde leverdatum van elk regelitem wordt vervolgens vergeleken met dit venster met behulp van de geselecteerde operator.
 * Actie-uitvoering:
   * **Ware Conditie:** Als het verschil in leverdatum binnen het tolerantiebereik valt en overeenkomt met de conditie die door de operator is ingesteld, gaat de workflow door.
   * **Onware Conditie:** Als niet aan de conditie wordt voldaan, gaat de workflow niet door.

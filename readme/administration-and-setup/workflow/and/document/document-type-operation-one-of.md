@@ -1,6 +1,6 @@
-# Document Type Operation one of
+# Documenttype Bewerking één van
 
-<figure><img src="../../../../.gitbook/assets/userlmn_14ab8ac5e693d9bbe68d178795d12a9f.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f6993281dacc-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel:**
 
@@ -8,14 +8,14 @@ Deze kaart is ontworpen om acties op documenten te beheren afhankelijk van hun t
 
 ## **Onderdelen van de kaart:**
 
-1. **Operator**
+1. **Exploitant**
    * **Beschrijving**: Bepaalt de voorwaardelijke logica die op de documenttypen wordt toegepast.
    * **Opties**:
      * **is**: De bewerking wordt getriggerd als het type van het document overeenkomt met een van de opgegeven typen in de lijst.
-     * **is not**: De bewerking wordt getriggerd als het type van het document met geen van de vermelde typen overeenkomt.
-2. **Document Types List**
+     * **niet**: De bewerking wordt getriggerd als het type van het document met geen van de vermelde typen overeenkomt.
+2. **Lijst met documenttypen**
    * **Beschrijving**: Geeft een lijst op van documenttypen waarop de voorwaarde van toepassing is.
-   * **Detail**: Dit omvat een verscheidenheid aan documenttypen, zoals "Invoice", "Purchase Order", enz., op basis waarvan de voorwaarde (is/is not) wordt geëvalueerd.
+   * **Details**: Dit omvat een verscheidenheid aan documenttypen, zoals "Invoice", "Purchase Order", enz., op basis waarvan de voorwaarde (is/is not) wordt geëvalueerd.
 
 ## Functionaliteit:
 
@@ -33,3 +33,15 @@ Deze kaart is ontworpen om acties op documenten te beheren afhankelijk van hun t
 ## Conclusie:
 
 De workflow-kaart "Document Type Condition" speelt een cruciale rol bij het beheren van documentgebaseerde bewerkingen met precisie en flexibiliteit. Door eenvoudige voorwaardelijke logica te gebruiken, helpt hij ervoor te zorgen dat documenten op de juiste manier worden verwerkt, wat de efficiëntie en naleving verbetert. Het duidelijk documenteren van deze kaart helpt gebruikers te begrijpen hoe ze deze effectief kunnen implementeren en benutten, waardoor het een waardevol onderdeel van de documentatie van uw ERP-systeem wordt.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Gebruik dezelfde validatie voor verschillende documenttypen.
+
+**Configuratie:** Selecteer de is-one-of-operator en de typen `Invoice` en `Credit Note`.
+
+**Verwacht resultaat en tegenvoorbeeld:** Een `Invoice` is geslaagd; een `Order` niet.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

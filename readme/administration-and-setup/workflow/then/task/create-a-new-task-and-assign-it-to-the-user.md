@@ -1,29 +1,29 @@
-# Create a New Task and assign it to the User
+# Maak een nieuwe taak en wijs deze toe aan de gebruiker
 
-<figure><img src="../../../../.gitbook/assets/image (287).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4a46d3b10473-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel**
 
-De workflow-kaart **"Create Task or Notification"** stroomlijnt taakbeheer en meldingen binnen workflows. Afhankelijk van de versie kan de kaart taken aanmaken, meldingen verzenden en aanvullende functionaliteit benutten, zoals beslisbomen voor dynamische verwerking.
+De workflow-kaart **"Taak of melding maken"** stroomlijnt taakbeheer en meldingen binnen workflows. Afhankelijk van de versie kan de kaart taken aanmaken, meldingen verzenden en aanvullende functionaliteit benutten, zoals beslisbomen voor dynamische verwerking.
 
 ## **Onderdelen van de kaart**
 
-1. **Title**
+1. **Titel**
    * **Beschrijving**: Definieert de titel van de taak of melding die wordt aangemaakt.
-   * **Detail**: De titel biedt een duidelijke en beknopte identifier voor de taak of melding.
-2. **Description**
+   * **Details**: De titel biedt een duidelijke en beknopte identifier voor de taak of melding.
+2. **Beschrijving**
    * **Beschrijving**: Biedt details over de taak of melding.
-   * **Detail**: Helpt het doel of de context van de taak of melding voor de toegewezen gebruiker te verduidelijken.
-3. **Priority**
+   * **Details**: Helpt het doel of de context van de taak of melding voor de toegewezen gebruiker te verduidelijken.
+3. **Prioriteit**
    * **Beschrijving**: Stelt het urgentieniveau voor de taak in.
    * **Opties**:
      * **High**: Vereist onmiddellijke aandacht.
-     * **Medium**: Belangrijk maar niet urgent.
+     * **Middelmatig**: Belangrijk maar niet urgent.
      * **Low**: Kan later worden afgehandeld.
-4. **Assigned User**
+4. **Toegewezen gebruiker**
    1. **Beschrijving**: Geeft de gebruiker op aan wie de taak wordt toegewezen.
-   2. **Detail**: Gebruikers worden geselecteerd uit een dropdownlijst van beschikbaar personeel.
-5. **Email Notification**
+   2. **Details**: Gebruikers worden geselecteerd uit een dropdownlijst van beschikbaar personeel.
+5. **E-mailmelding**
    * **Beschrijving**: Bepaalt of de toegewezen gebruiker een e-mailmelding ontvangt.
    * **Opties**:
      * **True**: Verzendt een e-mailmelding naar de gebruiker.
@@ -31,21 +31,21 @@ De workflow-kaart **"Create Task or Notification"** stroomlijnt taakbeheer en me
 
 ## Aanvullende onderdelen **in Version 3 en Version 4**
 
-1. **Decision Tree (alleen Version 3)**
+1. **Beslissingsboom (alleen versie 3)**
    * **Beschrijving**: Maakt het gebruik van een beslisboom voor dynamische taakaanmaak mogelijk.
    * **Opties**:
      * **True**: Activeert verwerking via de beslisboom.
      * **False**: Schakelt verwerking via de beslisboom uit.
-2. **Task or Notification (alleen Version 4)**
+2. **Taak of melding (alleen versie 4)**
    * **Beschrijving**: Maakt de selectie mogelijk tussen het aanmaken van een taak of een melding.
    * **Opties**:
-     * **Task**: Maakt een taak aan.
+     * **Taak**: Maakt een taak aan.
      * **Notification**: Maakt een melding aan in plaats van een taak.
 
 ## **Functionaliteit:**
 
 * **Voorwaarde-evaluatie**:\
-  Deze kaart wordt alleen getriggerd als aan de voorwaarden in de **"Where"**- en **"And"**-secties wordt voldaan.
+  Deze kaart wordt alleen getriggerd als aan de voorwaarden in de **"Wanneer"**- en **"En"**-secties wordt voldaan.
 * **Aanmaak van taak of melding**:
   * Versions 2 en 3: Er wordt een taak aangemaakt met de opgegeven titel, beschrijving, prioriteit en toegewezen gebruiker.
   * Version 4: Maakt het aanmaken van ofwel een taak ofwel een melding mogelijk.
@@ -69,4 +69,16 @@ De workflow-kaart **"Create Task or Notification"** stroomlijnt taakbeheer en me
 
 ## **Conclusie:**
 
-De workflow-kaart **"Create Task or Notification"** is een veelzijdig hulpmiddel voor het beheren van taken en meldingen. Door dynamische gebruikerstoewijzing via beslisbomen te ondersteunen en opties voor het aanmaken van taken of meldingen te bieden, verbetert hij de aanpasbaarheid van de workflow en de efficiëntie van de samenwerking.
+De workflow-kaart **"Taak of melding maken"** is een veelzijdig hulpmiddel voor het beheren van taken en meldingen. Door dynamische gebruikerstoewijzing via beslisbomen te ondersteunen en opties voor het aanmaken van taken of meldingen te bieden, verbetert hij de aanpasbaarheid van de workflow en de efficiëntie van de samenwerking.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Geef één recensent een expliciet actie-item.
+
+**Configuratie:** Selecteer `Demo Reviewer A`, titel `Review invoice`, beschrijving en prioriteit.
+
+**Verwacht resultaat en tegenvoorbeeld:** De geselecteerde gebruiker ontvangt de nieuwe taak. Bevestig de taaktitel en de toegewezen persoon; de taak moet nog worden voltooid door de recensent.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

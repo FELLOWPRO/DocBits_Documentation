@@ -1,52 +1,77 @@
-# Run DocOperator Prompt (Automation Script)
+# Voer de DocOperator-prompt uit (automatiseringsscript)
 
-Deze kaarten horen in de **Then**-groep van de Workflow Builder — de acties die worden uitgevoerd zodra aan de When/And-voorwaarden is voldaan:
+***
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Kaarten worden via <strong>Add Card</strong> aan de <strong>Then</strong>-groep toegevoegd.</p></figcaption></figure>
+Voeg deze kaart toe aan de groep **Dan** van de Workflow Builder — de acties die worden uitgevoerd zodra de When/And-voorwaarden overeenkomen:
 
-## Purpose
-This card runs an automated browser action or script using DocOperator. Think of it as a robot that can interact with websites or systems exactly like a human would - clicking buttons, filling forms, extracting data, etc.
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-nl.png" alt="Niet-opgeslagen voorbeeld met Wanneer-, En- en Dan-kaarten. Vul alle velden in vóór uitvoering. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Niet-opgeslagen voorbeeld met Wanneer-, En- en Dan-kaarten. Vul alle velden in vóór uitvoering. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-**Real-world example:** Your company uses a web-based purchasing system. This card can automatically log in, search for a product, check availability, and get the current price - all without anyone doing it manually.
+***
 
----
+## 📌 Versie-informatie
 
-## When to Use This Card
+**Huidige versie:** v3 (nieuwste en aanbevolen) **Status:** ✅ Actief
 
-Use this card when you need to:
-- Automate tasks on websites that don't have APIs
-- Extract data from web pages
-- Fill forms automatically
-- Log into systems and retrieve information
-- Automate repetitive manual tasks
-- Interact with legacy systems that aren't integrated
+**Versiegeschiedenis:**
 
-**Common scenarios:**
-- Log into supplier websites and get real-time inventory
-- Automatically fill out forms on external systems
-- Extract data from web pages that don't offer APIs
-- Check delivery status on courier websites
-- Get pricing from systems without API access
+* v2 → Originele DocOperator-implementatie
+* **v3 → CURRENT** (toegevoegde parameter voor uitvoeringscontrole)
+* v4 → Verouderd (functies teruggezet)
 
----
+**Wat is er veranderd:** v3 heeft de optionele parameter "Voer de prompt uit" toegevoegd voor meer controle. v4 probeerde dit ongedaan te maken, maar werd verouderd.
 
-## How It Works
+📖 [Versiegeschiedenis en wijzigingen](../../release.md) | [Volledige kaartdatabase](../../cards-overview/export-cards-guide.md)
 
-1. **Card Triggered**: Workflow reaches this card and conditions are met
-2. **Script Starts**: DocOperator bot starts running your automation script
-3. **Bot Actions**: The bot performs actions like clicking, typing, scrolling, extracting
-4. **Data Extraction**: Bot collects information from web pages
-5. **Return Data**: Data comes back to DocFlow for use in next cards
-6. **Timeout Handling**: If script takes too long, it stops and returns what it has
+***
 
----
+## Doel
 
-## Parameters Explained
+Deze kaart voert een geautomatiseerde browseractie of script uit met behulp van DocOperator. Zie het als een robot die kan communiceren met websites of systemen, precies zoals een mens dat zou doen: klikken op knoppen, formulieren invullen, gegevens extraheren, enz.
 
-### DocOperator Prompt/Script
-The automation script that tells DocOperator exactly what to do
+**Voorbeeld uit de praktijk:** Uw bedrijf gebruikt een webgebaseerd aankoopsysteem. Deze kaart kan automatisch inloggen, een product zoeken, de beschikbaarheid controleren en de huidige prijs opvragen - allemaal zonder dat iemand dit handmatig hoeft te doen.
 
-**Example (Plain English):**
+***
+
+## Wanneer moet u deze kaart gebruiken?
+
+Gebruik deze kaart wanneer u:
+
+* Automatiseer taken op websites die geen API's hebben
+* Gegevens uit webpagina's extraheren
+* Formulieren automatisch invullen
+* Log in op systemen en haal informatie op
+* Automatiseer repetitieve handmatige taken
+* Werk samen met oudere systemen die niet zijn geïntegreerd
+
+**Gemeenschappelijke scenario's:**
+
+* Log in op leverancierswebsites en ontvang realtime inventaris
+* Vul automatisch formulieren in op externe systemen
+* Extraheer gegevens van webpagina's die geen API's bieden
+* Controleer de bezorgstatus op koerierswebsites
+* Ontvang prijzen van systemen zonder API-toegang
+
+***
+
+## Hoe het werkt
+
+1. **Kaart geactiveerd**: de workflow bereikt deze kaart en er wordt aan de voorwaarden voldaan
+2. **Scriptstarts**: DocOperator-bot begint uw automatiseringsscript uit te voeren
+3. **Botacties**: de bot voert acties uit zoals klikken, typen, scrollen, extraheren
+4. **Gegevensextractie**: Bot verzamelt informatie van webpagina's
+5. **Gegevens retourneren**: gegevens komen terug naar DocFlow voor gebruik in volgende kaarten
+6. **Time-outafhandeling**: als het script te lang duurt, stopt het en retourneert het wat het heeft
+
+***
+
+## Parameters uitgelegd
+
+### DocOperator-prompt/script
+
+Het automatiseringsscript dat DocOperator precies vertelt wat hij moet doen
+
+**Voorbeeld (gewoon Engels):**
+
 ```
 1. Go to https://supplier.com/login
 2. Enter username: myuser
@@ -57,46 +82,54 @@ The automation script that tells DocOperator exactly what to do
 7. Return the price
 ```
 
-### Variables
-Data you want to pass INTO the script
+### Variabelen
 
-**Example:**
+Gegevens die u IN het script wilt doorgeven
+
+**Voorbeeld:**
+
 ```
 product_id: "ABC123"
 supplier_code: "SUPP-001"
 ```
 
-These variables can be used in the script like:
+Deze variabelen kunnen in het script worden gebruikt, zoals:
+
 ```
 Search for product "{product_id}"
 Find supplier "{supplier_code}"
 ```
 
-### Maximum Steps
-How many actions the bot is allowed to perform
+### Maximale stappen
 
-**Typical values:**
-- Simple task (like getting one price): 10-20 steps
-- Medium complexity (fill form + extract): 20-50 steps
-- Complex workflow (login + search + validate): 50-100 steps
+Hoeveel acties de bot mag uitvoeren
 
-**Why it matters:** Prevents infinite loops and very long running scripts
+**Typische waarden:**
 
-### Maximum Retries
-If the bot fails an action, how many times should it try again?
+* Eenvoudige taak (zoals één prijs krijgen): 10-20 stappen
+* Gemiddelde complexiteit (formulier invullen + uitpakken): 20-50 stappen
+* Complexe workflow (inloggen + zoeken + valideren): 50-100 stappen
 
-**Examples:**
-- 1: Try once, if it fails move on
-- 3: Try 3 times before giving up
-- 5: Very persistent - try 5 times
+**Waarom het ertoe doet:** Voorkomt oneindige lussen en zeer langlopende scripts
 
----
+### Maximaal aantal nieuwe pogingen
 
-## Step-by-Step Example
+Als de bot een actie mislukt, hoe vaak moet hij het dan opnieuw proberen?
 
-### Scenario: Get Supplier Pricing from Website
+**Voorbeelden:**
 
-**Script Definition:**
+* 1: Probeer het een keer, als het niet lukt, ga dan verder
+* 3: Probeer het 3 keer voordat je het opgeeft
+* 5: Zeer volhardend - probeer 5 keer
+
+***
+
+## Stapsgewijs voorbeeld
+
+### Scenario: Haal leveranciersprijzen op van de website
+
+**Scriptdefinitie:**
+
 ```
 Step 1: Open website https://prices.supplier-xyz.com
 Step 2: Click on "Product Lookup"
@@ -108,65 +141,75 @@ Step 7: Extract available quantity
 Step 8: Return both values
 ```
 
-**Variables Passed In:**
+**Doorgegeven variabelen:**
+
 ```
 product_code = "ABC-123"
 supplier_name = "Supplier XYZ"
 ```
 
-**Script Using Variables:**
+**Script met variabelen:**
+
 ```
 Open website https://prices.{supplier_name}.com
 Enter product code: {product_code}
 Extract price and quantity
 ```
 
-**Expected Result:**
+**Verwacht resultaat:**
+
 ```
 price: 45.50
 quantity_available: 500
 ```
 
----
+***
 
-## Types of Actions DocOperator Can Perform
+## Soorten acties die DocOperator kan uitvoeren
 
-### Navigation
-- Go to URL
-- Click links
-- Press buttons
-- Scroll page
+### Navigatie
 
-### Form Filling
-- Type text into fields
-- Select dropdown options
-- Check/uncheck boxes
-- Click buttons
+* Ga naar URL
+* Klik op koppelingen
+* Druk op knoppen
+* Pagina scrollen
 
-### Data Extraction
-- Read text from page
-- Extract numbers
-- Get table data
-- Copy information
+### Formulier invullen
 
-### Waiting
-- Wait for page to load
-- Wait for elements to appear
-- Wait for dynamic content
+* Typ tekst in velden
+* Selecteer vervolgkeuzelijsten
+* Vink vakjes aan/uit
+* Klik op knoppen
 
-### Conditional Logic
-- If something exists, do this
-- If text matches, then...
-- Count results and act accordingly
+### Gegevensextractie
 
----
+* Tekst van pagina lezen
+* Nummers extraheren
+* Tabelgegevens ophalen
+* Kopieer informatie
 
-## Common Use Cases
+### Wachten
 
-### 1. Get Real-Time Pricing
-**Scenario:** Supplier doesn't have API but website shows prices
+* Wacht tot de pagina is geladen
+* Wacht tot er elementen verschijnen
+* Wacht op dynamische inhoud
+
+### Voorwaardelijke logica
+
+* Als er iets bestaat, doe dit dan
+* Als de tekst overeenkomt, dan...
+* Tel de resultaten en handel daarnaar
+
+***
+
+## Veelvoorkomende gebruiksscenario's
+
+### 1. Ontvang realtime prijzen
+
+**Scenario:** Leverancier heeft geen API, maar website toont prijzen
 
 **Script:**
+
 ```
 1. Go to supplier website
 2. Search for product
@@ -175,10 +218,12 @@ quantity_available: 500
 5. Use price to validate invoice
 ```
 
-### 2. Check Inventory Availability
-**Scenario:** Need to know if supplier has stock
+### 2. Controleer de voorraadbeschikbaarheid
+
+**Scenario:** Moet weten of de leverancier voorraad heeft
 
 **Script:**
+
 ```
 1. Log into supplier portal
 2. Search for product
@@ -187,10 +232,12 @@ quantity_available: 500
 5. Return both to DocFlow
 ```
 
-### 3. Automatic Form Submission
-**Scenario:** Need to fill out a form on an external site
+### 3. Automatische formulierinzending
+
+**Scenario:** Moet een formulier invullen op een externe site
 
 **Script:**
+
 ```
 1. Navigate to form page
 2. Fill Company Name field
@@ -201,10 +248,12 @@ quantity_available: 500
 7. Capture confirmation message
 ```
 
-### 4. Data Entry Verification
-**Scenario:** Verify data matches on two different systems
+### 4. Verificatie van gegevensinvoer
+
+**Scenario:** Controleer gegevensovereenkomsten op twee verschillende systemen
 
 **Script:**
+
 ```
 1. Go to System A
 2. Search for Order #123
@@ -216,173 +265,200 @@ quantity_available: 500
 8. Return true/false if they match
 ```
 
----
+***
 
-## Configuration Steps
+## Configuratiestappen
 
-### Step 1: Create the Script
-1. Define what you want to accomplish
-2. Break it into small steps
-3. Write each step clearly
-4. Test manually first (open the website, do it yourself)
-5. Document exactly what you click, where you type, what you extract
+### Stap 1: Maak het script
 
-### Step 2: Identify Variables
-1. What data will change between documents?
-2. What should be passed into the script?
-3. Define variable names
-4. Specify where variables are used in the script
+1. Bepaal wat u wilt bereiken
+2. Verdeel het in kleine stapjes
+3. Schrijf elke stap duidelijk op
+4. Eerst handmatig testen (open de website, doe het zelf)
+5. Documenteer precies waarop u klikt, waar u typt en wat u extraheert
 
-### Step 3: Set Parameters
-- **Maximum Steps**: Based on script complexity
-- **Maximum Retries**: How persistent should bot be?
-- **Timeout**: How long should it wait for pages?
+### Stap 2: Identificeer variabelen
 
-### Step 4: Test
-1. Test with sample data
-2. Verify bot can access the website
-3. Verify extraction is correct
-4. Check if variables work properly
+1. Welke gegevens veranderen tussen documenten?
+2. Wat moet er in het script worden doorgegeven?
+3. Definieer namen van variabelen
+4. Geef op waar variabelen in het script worden gebruikt
 
----
+### Stap 3: Stel parameters in
 
-## Script Writing Tips
+* **Maximale stappen**: Gebaseerd op scriptcomplexiteit
+* **Maximum aantal nieuwe pogingen**: hoe persistent moet een bot zijn?
+* **Time-out**: Hoe lang moet het wachten op pagina's?
 
-### Clear Language
-✅ **Do:**
+### Stap 4: Testen
+
+1. Test met voorbeeldgegevens
+2. Controleer of de bot toegang heeft tot de website
+3. Controleer of de extractie correct is
+4. Controleer of variabelen goed werken
+
+***
+
+## Tips voor het schrijven van scripts
+
+### Duidelijke taal
+
+✅ **Doe:**
+
 ```
 1. Click the "Login" button
 2. Type the username in the login field
 3. Wait 2 seconds for form to process
 ```
 
-❌ **Don't:**
+❌ **Niet doen:**
+
 ```
 1. Do the login thing
 2. Enter stuff
 3. Wait for it
 ```
 
-### Specific Selectors
-✅ **Do:**
+### Specifieke kiezers
+
+✅ **Doe:**
+
 ```
 Click the button labeled "Submit Order"
 Type in the field with placeholder "Enter Email"
 ```
 
-❌ **Don't:**
+❌ **Niet doen:**
+
 ```
 Click somewhere
 Type in a field
 ```
 
-### Error Handling
-✅ **Do:**
+### Foutafhandeling
+
+✅ **Doe:**
+
 ```
 1. Try to click "Next" button
 2. If button not found, extract data from current page
 3. Return what we have
 ```
 
-❌ **Don't:**
+❌ **Niet doen:**
+
 ```
 Click "Next" (assumes it's always there)
 ```
 
----
+***
 
-## Troubleshooting
+## Problemen oplossen
 
-### "Script Timed Out"
-**Cause:** Script took too long to complete
+### "Scripttime-out"
 
-**Solutions:**
-- [ ] Reduce the number of actions
-- [ ] Increase "Maximum Steps" value
-- [ ] Optimize the script for faster execution
-- [ ] Simplify what you're trying to extract
+**Oorzaak:** Het voltooien van het script duurde te lang
 
-### "Element Not Found"
-**Cause:** DocOperator couldn't find the button/field you specified
+**Oplossingen:**
 
-**Solutions:**
-- [ ] Verify button/field name is exactly correct
-- [ ] Check if website layout changed
-- [ ] Add wait time before clicking
-- [ ] Check if button only appears under certain conditions
+* [ ] Verminder het aantal acties
+* [ ] Verhoog de waarde voor "Maximumstappen".
+* [ ] Optimaliseer het script voor snellere uitvoering
+* [ ] Vereenvoudig wat u probeert te extraheren
 
-### "Login Failed"
-**Cause:** Authentication failed
+### "Element niet gevonden"
 
-**Solutions:**
-- [ ] Verify username/password are correct
-- [ ] Check if password has special characters
-- [ ] Verify account isn't locked
-- [ ] Check if login process changed
+**Oorzaak:** DocOperator kon de door u opgegeven knop/veld niet vinden
 
-### "Data Not Extracted Correctly"
-**Cause:** The script ran but extracted wrong information
+**Oplossingen:**
 
-**Solutions:**
-- [ ] Verify the correct field was selected
-- [ ] Check if data is in expected location
-- [ ] Test extraction logic manually
-- [ ] Add debugging steps to verify what's on page
+* [ ] Controleer of de knop-/veldnaam precies correct is
+* [ ] Controleer of de lay-out van de website is gewijzigd
+* [ ] Wachttijd toevoegen voordat u klikt
+* [ ] Controleer of de knop alleen onder bepaalde omstandigheden verschijnt
 
-### "Script Runs Slowly"
-**Cause:** Too many steps or slow website
+### "Inloggen mislukt"
 
-**Solutions:**
-- [ ] Remove unnecessary steps
-- [ ] Optimize wait times
-- [ ] Check internet connection
-- [ ] Consider if API alternative exists
+**Oorzaak:** Authenticatie mislukt
 
----
+**Oplossingen:**
 
-## Best Practices
+* [ ] Controleer of gebruikersnaam en wachtwoord correct zijn
+* [ ] Controleer of het wachtwoord speciale tekens bevat
+* [ ] Controleer of het account niet is vergrendeld
+* [ ] Controleer of het inlogproces is gewijzigd
 
-✅ **Do:**
-- Test scripts thoroughly before deploying
-- Keep scripts simple and focused
-- Add comments explaining each step
-- Use meaningful variable names
-- Monitor script performance
-- Have fallback for when scripts fail
+### "Gegevens niet correct geëxtraheerd"
 
-❌ **Don't:**
-- Create extremely long scripts (>100 steps)
-- Put sensitive passwords in logs
-- Rely on exact coordinates (websites change)
-- Create loops without exit conditions
-- Ignore error messages
+**Oorzaak:** Het script is uitgevoerd, maar heeft verkeerde informatie opgehaald
 
----
+**Oplossingen:**
 
-## Performance Tips
+* [ ] Controleer of het juiste veld is geselecteerd
+* [ ] Controleer of de gegevens zich op de verwachte locatie bevinden
+* [ ] Extractielogica handmatig testen
+* [ ] Voeg foutopsporingsstappen toe om te verifiëren wat er op de pagina staat
 
-- **Remove unused steps** - Every step takes time
-- **Combine similar actions** - Group related clicks
-- **Optimize waits** - Use only necessary delays
-- **Cache data** - Don't extract same data twice
-- **Parallel processing** - Run multiple scripts if possible
+### "Script loopt langzaam"
 
----
+**Oorzaak:** Te veel stappen of trage website
 
-## Security Considerations
+**Oplossingen:**
 
-⚠️ **Important:**
-- Don't store passwords in DocFlow
-- Use secure methods to pass credentials
-- Don't log sensitive data
-- Monitor what's being extracted
-- Ensure bot activity is logged and auditable
+* [ ] Verwijder onnodige stappen
+* [ ] Optimaliseer wachttijden
+* [ ] Controleer de internetverbinding
+* [ ] Overweeg of er een API-alternatief bestaat
 
----
+***
 
-## Variables Example
+## Beste praktijken
 
-### Available Variables You Can Use:
+✅ **Doe:**
+
+* Test scripts grondig voordat u ze implementeert
+* Houd scripts eenvoudig en doelgericht
+* Voeg opmerkingen toe waarin elke stap wordt uitgelegd
+* Gebruik betekenisvolle namen van variabelen
+* Bewaak de prestaties van scripts
+* Zorg voor een terugvalmogelijkheid voor als scripts mislukken
+
+❌ **Niet doen:**
+
+* Extreem lange scripts maken (>100 stappen)
+* Zet gevoelige wachtwoorden in logboeken
+* Vertrouw op exacte coördinaten (websites veranderen)
+* Creëer lussen zonder exitvoorwaarden
+* Negeer foutmeldingen
+
+***
+
+## Prestatietips
+
+* **Verwijder ongebruikte stappen** - Elke stap kost tijd
+* **Combineer soortgelijke acties** - Groepeer gerelateerde klikken
+* **Optimaliseer wachttijden** - Gebruik alleen noodzakelijke vertragingen
+* **Cachegegevens** - Haal dezelfde gegevens niet twee keer op
+* **Parallelle verwerking** - Voer indien mogelijk meerdere scripts uit
+
+***
+
+## Beveiligingsoverwegingen
+
+⚠️ **Belangrijk:**
+
+* Bewaar geen wachtwoorden in DocFlow
+* Gebruik veilige methoden om inloggegevens door te geven
+* Registreer geen gevoelige gegevens
+* Controleer wat er wordt geëxtraheerd
+* Zorg ervoor dat botactiviteit wordt geregistreerd en controleerbaar is
+
+***
+
+## Variabelen Voorbeeld
+
+### Beschikbare variabelen die u kunt gebruiken:
+
 ```
 {invoice_number} - From document field
 {supplier_code} - From document field
@@ -391,7 +467,8 @@ Click "Next" (assumes it's always there)
 {currency} - From document field
 ```
 
-### Script Using Variables:
+### Script met variabelen:
+
 ```
 1. Go to https://supplier.com/api/lookup
 2. Enter supplier code: {supplier_code}
@@ -401,25 +478,24 @@ Click "Next" (assumes it's always there)
 6. Return extracted price
 ```
 
----
+***
 
-## Comparison: When to Use DocOperator vs API
+## Vergelijking: wanneer DocOperator versus API gebruiken
 
-| Situation | Use DocOperator | Use API |
-|-----------|-----------------|---------|
-| Website has API | ❌ No | ✅ Yes |
-| Website is interactive | ✅ Yes | ❌ No |
-| Requires login | ✅ Yes | Depends |
-| Very fast needed | ❌ No | ✅ Yes |
-| Complex workflow | ✅ Yes | ❌ Maybe not |
-| Data changes daily | ✅ Yes | ✅ Yes |
+| Situatie              | Gebruik DocOperator | Gebruik API     |
+| ---------------------- | --------------- | ----------- |
+| Website heeft API        | ❌ Nee            | ✅ Ja       |
+| Website is interactief | ✅ Ja           | ❌ Nee        |
+| Vereist inloggen         | ✅ Ja           | Hangt ervan af     |
+| Heel snel nodig       | ❌ Nee            | ✅ Ja       |
+| Complexe werkstroom       | ✅ Ja           | ❌Misschien niet |
+| Gegevens veranderen dagelijks     | ✅ Ja           | ✅ Ja       |
 
----
+***
 
-## Related Cards
+## Gerelateerde kaarten
 
-- **CALL_API** - Use when API is available instead
-- **ACTION_HTTPS_REQUEST** - Simpler requests
-- **ACTION_SET_FIELD_TO_TEXT** - Use extracted data
-- **CONDITION_HTTPS_REQUEST_STATUS** - Check request status
-
+* **CALL\_API** - Gebruik in plaats daarvan wanneer API beschikbaar is
+* **ACTION\_HTTPS\_REQUEST** - Eenvoudigere verzoeken
+* **ACTION\_SET\_FIELD\_TO\_TEXT** - Gebruik geëxtraheerde gegevens
+* **CONDITION\_HTTPS\_REQUEST\_STATUS** - Controleer de status van het verzoek

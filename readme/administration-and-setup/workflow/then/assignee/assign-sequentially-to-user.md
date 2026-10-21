@@ -1,19 +1,19 @@
-# Assign Sequentially to User
+# Opeenvolgend toewijzen aan gebruiker
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5b15eaee7258-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
 ## **Doel**
 
-De workflow-kaart "**Assign Sequentially to User**" automatiseert de toewijzing van documenten aan een geselecteerde gebruiker op sequentiële wijze. De prioriteitswaarde bepaalt de toewijzingsvolgorde, waarbij lagere getallen een hogere prioriteit vertegenwoordigen.
+De workflow-kaart "**Opeenvolgend toewijzen aan gebruiker**" automatiseert de toewijzing van documenten aan een geselecteerde gebruiker op sequentiële wijze. De prioriteitswaarde bepaalt de toewijzingsvolgorde, waarbij lagere getallen een hogere prioriteit vertegenwoordigen.
 
 ## **Onderdelen van de kaart**
 
-1. **User**
+1. **Gebruiker**
    * **Beschrijving**: De geselecteerde gebruiker krijgt het document toegewezen op basis van de workflow-volgorde.
-   * **Detail**: Een dropdownmenu dat alle beschikbare gebruikers voor toewijzing vermeldt.
-2. **Priority (Value)**
+   * **Details**: Een dropdownmenu dat alle beschikbare gebruikers voor toewijzing vermeldt.
+2. **Prioriteit (waarde)**
    * **Beschrijving**: Een numeriek invoerveld waarin het prioriteitsniveau voor de gebruiker kan worden ingesteld.
-   * **Detail**: Lagere getallen duiden op een hogere prioriteit. Documenten worden in oplopende volgorde van prioriteit aan gebruikers toegewezen.
+   * **Details**: Lagere getallen duiden op een hogere prioriteit. Documenten worden in oplopende volgorde van prioriteit aan gebruikers toegewezen.
 
 ## **Functionaliteit**
 
@@ -23,13 +23,25 @@ De workflow-kaart "**Assign Sequentially to User**" automatiseert de toewijzing 
 
 ## **Opzet en configuratie**
 
-1. Voeg de kaart **Assign the Document Sequentially** toe aan uw workflow.
-2. Configureer het veld **User**:
+1. Voeg de kaart **Wijs het document opeenvolgend toe** toe aan uw workflow.
+2. Configureer het veld **Gebruiker**:
    * Selecteer een gebruiker uit het dropdownmenu.
-3. Configureer het veld **Priority (Value)**:
+3. Configureer het veld **Prioriteit (waarde)**:
    * Voer een numerieke waarde in om de toewijzingsprioriteit in te stellen.
 4. Sla op en activeer de workflow om de configuratie toe te passen.
 
 ## **Conclusie**
 
 De workflow-kaart "Assign the Document Sequentially to User" zorgt voor een georganiseerde documentdistributie door documenten in een geprioriteerde volgorde toe te wijzen. Dit verbetert het taakbeheer en vermindert vertragingen in de verwerking.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Voeg een gebruiker toe aan een documentgoedkeuringsreeks met prioriteit.
+
+**Configuratie:** Selecteer `Demo Reviewer A` en prioriteit `10`. Voeg een aparte opdracht toe met prioriteit `20` wanneer een latere reviewer nodig is.
+
+**Verwacht resultaat en tegenvoorbeeld:** De toewijzingen hebben de geconfigureerde prioriteiten; de lagere numerieke waarde heeft een hogere prioriteit. Controleer de volgorde van de opdrachten, niet alleen de volgorde van de kaarten op het canvas.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

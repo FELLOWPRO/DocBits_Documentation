@@ -1,23 +1,19 @@
-# PO Matching Patroon
+# PO-overeenkomend patroon
 
-**Patroontype:** Validatie & Vergelijking
-**Complexiteit:** Gemiddeld-Hoog
-**Geschatte Insteltijd:** 60-90 minuten
-**Veelvoorkomende Gebruiksscenario's:** Driewegmatching, factuurvalidatie, variantiecontrole, tolerantiebeheer
+**Patroontype:** Validatie & Vergelijking **Complexiteit:** Gemiddeld-Hoog **Geschatte Insteltijd:** 60-90 minuten **Veelvoorkomende Gebruiksscenario's:** Driewegmatching, factuurvalidatie, variantiecontrole, tolerantiebeheer
 
----
+***
 
-U bouwt dit patroon in de **Workflow Builder** (Workflow Dashboard → Workflowlijst → Workflow Toevoegen). Klik op **Add Card** en open de categorie **Compare with Purchase Order** — deze bevat elke matchingkaart die dit patroon gebruikt (kaarten voor het vergelijken van prijs, hoeveelheid, tolerantie en regelitems):
+U bouwt dit patroon in de **Workflow-bouwer** (Workflow Dashboard → Workflowlijst → Workflow Toevoegen). Klik op **Kaart toevoegen** en open de categorie **Vergelijk met inkooporder** — deze bevat elke matchingkaart die dit patroon gebruikt (kaarten voor het vergelijken van prijs, hoeveelheid, tolerantie en regelitems):
 
-<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card-bibliotheek met de Compare with Purchase Order-kaarten"><figcaption><p>De categorie <strong>Compare with Purchase Order</strong> — kaarten voor het matchen van prijs, hoeveelheid, tolerantie en regelitems die in dit patroon worden gebruikt.</p></figcaption></figure>
-
----
+***
 
 ## Patroonoverzicht
 
 Dit patroon demonstreert hoe u uitgebreide workflows voor het matchen van inkooporders (PO) in DocBits kunt implementeren. PO-matching is een kritisch controleproces dat factuurgegevens vergelijkt met inkoopordergegevens om discrepanties te detecteren vóór goedkeuring van de betaling.
 
 **Wat Dit Patroon Doet:**
+
 1. Haalt PO-gegevens op basis van PO-nummer van factuur
 2. Vergelijkt factuurregelitems met PO-regelitems
 3. Berekent varianties (prijs, hoeveelheid, totalen)
@@ -25,32 +21,35 @@ Dit patroon demonstreert hoe u uitgebreide workflows voor het matchen van inkoop
 5. Routeert voor goedkeuring of escalatie op basis van matchresultaten
 6. Houdt matchinggeschiedenis en uitzonderingen bij
 
----
+***
 
 ## Wanneer Dit Patroon Te Gebruiken
 
 Gebruik dit patroon wanneer u het volgende moet doen:
-- ✅ Facturen valideren tegen inkooporders
-- ✅ Prijsfouten detecteren vóór betaling
-- ✅ Hoeveelheidsverschillen identificeren
-- ✅ Inkoopcontroles afdwingen
-- ✅ Dubbele betalingen voorkomen
-- ✅ Driewegmatching automatiseren
-- ✅ Handmatige factuurbeoordelingswerklast verminderen
+
+* ✅ Facturen valideren tegen inkooporders
+* ✅ Prijsfouten detecteren vóór betaling
+* ✅ Hoeveelheidsverschillen identificeren
+* ✅ Inkoopcontroles afdwingen
+* ✅ Dubbele betalingen voorkomen
+* ✅ Driewegmatching automatiseren
+* ✅ Handmatige factuurbeoordelingswerklast verminderen
 
 **Gebruik dit patroon niet wanneer:**
-- ❌ Er geen PO bestaat voor de factuur (niet-PO-facturen)
-- ❌ PO-gegevens niet beschikbaar zijn in DocBits
-- ❌ Handmatige beoordeling de voorkeur heeft boven automatisering
-- ❌ PO-matching niet vereist is door bedrijfsbeleid
 
----
+* ❌ Er geen PO bestaat voor de factuur (niet-PO-facturen)
+* ❌ PO-gegevens niet beschikbaar zijn in DocBits
+* ❌ Handmatige beoordeling de voorkeur heeft boven automatisering
+* ❌ PO-matching niet vereist is door bedrijfsbeleid
+
+***
 
 ## PO Matching Begrijpen
 
 ### De Driewegmatch
 
 **Traditionele inkoopcontrole:**
+
 ```
 Inkooporder (PO)     →  Aangemaakt bij bestellen
         ↓
@@ -62,6 +61,7 @@ DRIEWEGMATCH = PO + GR + Factuur komen allemaal overeen
 ```
 
 **DocBits Implementatie (Tweewegmatch):**
+
 ```
 Inkooporder (PO)     →  Geïmporteerd naar DocBits
         ↓
@@ -70,18 +70,20 @@ Factuur              →  Gescand door DocBits
 VERGELIJKING         →  Factuur vs PO validatie
 ```
 
----
+***
 
 ## Variantieberekeningsformules
 
 ### Eenheidsprijsvariantie
 
 **Formule:**
+
 ```
 Variantie % = |(Factuur Eenheidsprijs - PO Eenheidsprijs)| / PO Eenheidsprijs × 100
 ```
 
 **Voorbeeld:**
+
 ```
 PO Eenheidsprijs:       €100,00
 Factuur Eenheidsprijs:  €103,00
@@ -94,17 +96,18 @@ Tolerantie: 5%
 Resultaat: 3% ≤ 5% → PASS ✅
 ```
 
----
-
+***
 
 ### Hoeveelheidsvariantie
 
 **Formule:**
+
 ```
 Variantie % = |(Factuur Hoeveelheid - PO Hoeveelheid)| / PO Hoeveelheid × 100
 ```
 
 **Voorbeeld:**
+
 ```
 PO Hoeveelheid:        100 stuks
 Factuur Hoeveelheid:   98 stuks
@@ -117,17 +120,18 @@ Tolerantie: 10%
 Resultaat: 2% ≤ 10% → PASS ✅
 ```
 
----
-
+***
 
 ### Totaalbedragvariantie
 
 **Formule:**
+
 ```
 Variantie % = |(Factuur Totaal - PO Totaal)| / PO Totaal × 100
 ```
 
 **Voorbeeld:**
+
 ```
 PO Totaal:       €10.000,00
 Factuur Totaal:  €10.450,00
@@ -140,48 +144,50 @@ Tolerantie: 5%
 Resultaat: 4,5% ≤ 5% → PASS ✅
 ```
 
----
-
+***
 
 ## Compleet Workflowvoorbeeld
 
 ### Scenario: Factuurvalidatie met Op Tolerantie Gebaseerde Routering
 
 **Bedrijfsvereiste:**
-- Alle facturen met PO-referentie moeten worden gevalideerd
-- Prijsvariantietolerantie: 5%
-- Hoeveelheidsvariantietolerantie: 10%
-- Totaalbedragvariantietolerantie: 3%
-- Binnen tolerantie: Automatisch goedkeuren
-- Buiten tolerantie: Maak beoordelingstaak
-- Ontbrekende PO: Escaleren naar inkoop
+
+* Alle facturen met PO-referentie moeten worden gevalideerd
+* Prijsvariantietolerantie: 5%
+* Hoeveelheidsvariantietolerantie: 10%
+* Totaalbedragvariantietolerantie: 3%
+* Binnen tolerantie: Automatisch goedkeuren
+* Buiten tolerantie: Maak beoordelingstaak
+* Ontbrekende PO: Escaleren naar inkoop
 
 **Gebruikte Workflowkaarten:**
-1. CONDITION_DOC_FIELD_EXISTS - Controleer of PO-nummer aanwezig is
-2. PURCHASE_ORDER_FULL_MATCH - Probeer volledige match
-3. CONDITION_DOC_TO_PO_UNIT_PRICE - Controleer prijsvariantie
-4. CONDITION_DOC_TO_PO_QUANTITY - Controleer hoeveelheidsvariantie
-5. CONDITION_DOC_TO_PO_TAX_LINES - Controleer belastingafstemming
-6. ACTION_SET_FIELD_TO_TEXT - Sla matchresultaten op
-7. tasks_create - Maak beoordelingstaken
-8. ACTION_SEND_EMAIL_TO_GROUPS - Stuur meldingen
 
----
+1. CONDITION\_DOC\_FIELD\_EXISTS - Controleer of PO-nummer aanwezig is
+2. PURCHASE\_ORDER\_FULL\_MATCH - Probeer volledige match
+3. CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE - Controleer prijsvariantie
+4. CONDITION\_DOC\_TO\_PO\_QUANTITY - Controleer hoeveelheidsvariantie
+5. CONDITION\_DOC\_TO\_PO\_TAX\_LINES - Controleer belastingafstemming
+6. ACTION\_SET\_FIELD\_TO\_TEXT - Sla matchresultaten op
+7. tasks\_create - Maak beoordelingstaken
+8. ACTION\_SEND\_EMAIL\_TO\_GROUPS - Stuur meldingen
 
+***
 
 ## Stap-voor-Stap Implementatie
 
 ### Stap 1: Controleer op PO-referentie
 
-**Kaart:** CONDITION_DOC_FIELD_EXISTS of CONDITION_DOC_FIELD_CONTAINS
+**Kaart:** CONDITION\_DOC\_FIELD\_EXISTS of CONDITION\_DOC\_FIELD\_CONTAINS
 
 **Configuratie:**
+
 ```
 Veld: PO_Number
 Operator: IS NIET LEEG
 ```
 
 **Logica:**
+
 ```
 ALS PO_Nummer bestaat:
   → Ga door naar PO-matching
@@ -193,17 +199,18 @@ ANDERS:
 
 **Gidsreferentie:** [Gids Conditiekaarten](../and/condition-cards-complete-guide.md)
 
----
-
+***
 
 ### Stap 2: Haal PO-gegevens Op
 
 **Automatisch in DocBits:**
-- Systeem zoekt PO op via PO_Number veld
-- Haalt PO-regelitems op
-- Maakt gegevens beschikbaar voor vergelijking
+
+* Systeem zoekt PO op via PO\_Number veld
+* Haalt PO-regelitems op
+* Maakt gegevens beschikbaar voor vergelijking
 
 **Handmatige Configuratie (indien nodig):**
+
 ```
 PO Bron: DocBits Master Data
 PO Opzoekveld: PO_Number
@@ -211,16 +218,16 @@ Matchtype: Exacte Match
 Inclusief Gesloten PO's: Nee (of Ja indien beleid toestaat)
 ```
 
----
-
+***
 
 ### Stap 3: Volledige PO Match Controle
 
-**Kaart:** PURCHASE_ORDER_FULL_MATCH
+**Kaart:** PURCHASE\_ORDER\_FULL\_MATCH
 
 **Doel:** Snelle controle of alles perfect overeenkomt
 
 **Configuratie:**
+
 ```
 Matchniveau: Volledige Match
 Inclusief: Alle regelitems, prijzen, hoeveelheden, totalen
@@ -228,6 +235,7 @@ Tolerantie: Geen (exacte match)
 ```
 
 **Logica:**
+
 ```
 ALS Volledige Match = WAAR:
   → Stel "PO_Match_Status" = "FULL MATCH"
@@ -241,17 +249,18 @@ ALS Volledige Match = ONWAAR:
 ```
 
 **Resultaat:**
-- **WAAR**: Perfecte match, automatisch goedkeuren
-- **ONWAAR**: Ga door naar gedetailleerde controles
 
----
+* **WAAR**: Perfecte match, automatisch goedkeuren
+* **ONWAAR**: Ga door naar gedetailleerde controles
 
+***
 
 ### Stap 4: Controleer Eenheidsprijsvariantie
 
-**Kaart:** CONDITION_DOC_TO_PO_UNIT_PRICE (v5 aanbevolen)
+**Kaart:** CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE (v5 aanbevolen)
 
 **Configuratie:**
+
 ```
 Vergelijkingsmodus: Percentage Variantie
 Tolerantie: 5%
@@ -260,6 +269,7 @@ Toepassen Op: Alle regelitems
 ```
 
 **Stap-voor-Stap:**
+
 ```
 Voor elk regelitem:
   1. Haal Factuur Eenheidsprijs op
@@ -270,6 +280,7 @@ Voor elk regelitem:
 ```
 
 **Voorbeeldberekening:**
+
 ```
 Regelitem 1:
   Product: ABC123
@@ -290,16 +301,16 @@ Regelitem 2:
 Algemeen Resultaat: FAIL (een of meer items mislukt)
 ```
 
-**Gidsreferentie:** [PO Matching Complete Gids - Eenheidsprijs](../and/compare-with-purchase-order/po-matching-complete-guide.md#unit-price-comparison)
+**Gidsreferentie:** [PO Matching Complete Gids - Eenheidsprijs](../and/compare-with-purchase-order/po-matching-complete-guide.md)
 
----
-
+***
 
 ### Stap 5: Controleer Hoeveelheidsvariantie
 
-**Kaart:** CONDITION_DOC_TO_PO_QUANTITY
+**Kaart:** CONDITION\_DOC\_TO\_PO\_QUANTITY
 
 **Configuratie:**
+
 ```
 Vergelijkingsmodus: Percentage Variantie
 Tolerantie: 10%
@@ -310,6 +321,7 @@ Overlevering Toestaan: Nee (strikt)
 ```
 
 **Logica:**
+
 ```
 Voor elk regelitem:
   1. Haal Factuur Hoeveelheid op
@@ -322,6 +334,7 @@ Voor elk regelitem:
 ```
 
 **Voorbeeld:**
+
 ```
 Regelitem 1:
   Product: ABC123
@@ -340,16 +353,16 @@ Regelitem 2:
   Resultaat: FAIL ❌ (Escaleren)
 ```
 
-**Gidsreferentie:** [PO Matching Complete Gids - Hoeveelheid](../and/compare-with-purchase-order/po-matching-complete-guide.md#quantity-comparison)
+**Gidsreferentie:** [PO Matching Complete Gids - Hoeveelheid](../and/compare-with-purchase-order/po-matching-complete-guide.md)
 
----
-
+***
 
 ### Stap 6: Controleer Belastingregels Afstemming
 
-**Kaart:** CONDITION_DOC_TO_PO_TAX_LINES
+**Kaart:** CONDITION\_DOC\_TO\_PO\_TAX\_LINES
 
 **Configuratie:**
+
 ```
 Match Belastingcodes: Ja
 Match Belastingtarieven: Ja
@@ -358,6 +371,7 @@ Belastingberekening: Verifieer herberekening
 ```
 
 **Validatie:**
+
 ```
 1. Controleer of belastingcodes overeenkomen (bijv. "BTW19" op beide)
 2. Controleer of belastingtarieven overeenkomen (19% op beide)
@@ -367,6 +381,7 @@ Belastingberekening: Verifieer herberekening
 ```
 
 **Voorbeeld:**
+
 ```
 Factuur:
   Netto Bedrag: €100,00
@@ -383,37 +398,40 @@ PO:
 Resultaat: Belastingafstemming PASS ✅
 ```
 
----
-
+***
 
 ### Stap 7: Sla Matchresultaten Op
 
-**Kaart:** ACTION_SET_FIELD_TO_TEXT (meerdere instanties)
+**Kaart:** ACTION\_SET\_FIELD\_TO\_TEXT (meerdere instanties)
 
 **Configuratie:**
 
-**Veld 1: PO_Match_Status**
+**Veld 1: PO\_Match\_Status**
+
 ```
 Veld: PO_Match_Status
 Waarde: {{CALCULATED}}
 Opties: "FULL MATCH" | "WITHIN TOLERANCE" | "OUT OF TOLERANCE" | "NO MATCH"
 ```
 
-**Veld 2: Price_Variance_Percent**
+**Veld 2: Price\_Variance\_Percent**
+
 ```
 Veld: Price_Variance_Percent
 Waarde: {{CALCULATED_PRICE_VARIANCE}}
 Formaat: "4,5%" (voorbeeld)
 ```
 
-**Veld 3: Quantity_Variance_Percent**
+**Veld 3: Quantity\_Variance\_Percent**
+
 ```
 Veld: Quantity_Variance_Percent
 Waarde: {{CALCULATED_QUANTITY_VARIANCE}}
 Formaat: "2,0%" (voorbeeld)
 ```
 
-**Veld 4: Match_Details**
+**Veld 4: Match\_Details**
+
 ```
 Veld: Match_Details
 Waarde: "Prijsvariantie: 4,5% (binnen 5% tolerantie)\nHoeveelheidsvariantie: 2,0% (binnen 10% tolerantie)\nTotaal: PASS"
@@ -421,12 +439,12 @@ Waarde: "Prijsvariantie: 4,5% (binnen 5% tolerantie)\nHoeveelheidsvariantie: 2,0
 
 **Gidsreferentie:** [Gids Veldmanipulatie](../then/document-field/field-manipulation-guide.md)
 
----
-
+***
 
 ### Stap 8: Routeer op Basis van Matchresultaten
 
 **Scenario A: Perfecte Match (Volledige Match)**
+
 ```
 ALS PO_Match_Status = "FULL MATCH":
   1. Stel Approval_Status = "AUTO APPROVED"
@@ -438,6 +456,7 @@ ALS PO_Match_Status = "FULL MATCH":
 ```
 
 **Scenario B: Binnen Tolerantie**
+
 ```
 ALS PO_Match_Status = "WITHIN TOLERANCE":
   1. Stel Approval_Status = "AUTO APPROVED"
@@ -449,6 +468,7 @@ ALS PO_Match_Status = "WITHIN TOLERANCE":
 ```
 
 **Scenario C: Buiten Tolerantie (Klein)**
+
 ```
 ALS Variantie < 15% (kleine uitzonderingen):
   1. Stel Match_Status = "REVIEW REQUIRED"
@@ -463,6 +483,7 @@ ALS Variantie < 15% (kleine uitzonderingen):
 ```
 
 **Scenario D: Buiten Tolerantie (Groot)**
+
 ```
 ALS Variantie ≥ 15% (grote uitzonderingen):
   1. Stel Match_Status = "ESCALATION REQUIRED"
@@ -479,6 +500,7 @@ ALS Variantie ≥ 15% (grote uitzonderingen):
 ```
 
 **Scenario E: Ontbrekende PO of Geen Match**
+
 ```
 ALS PO niet gevonden OF geen items matchen:
   1. Stel Match_Status = "NO MATCH"
@@ -490,10 +512,9 @@ ALS PO niet gevonden OF geen items matchen:
   5. Vraag PO-creatie of correctie aan
 ```
 
----
+***
 
-
-## Compleet Workflow Diagram
+## Compleet workflowdiagram
 
 ```
 FACTUUR KOMT AAN
@@ -635,8 +656,7 @@ FACTUUR KOMT AAN
 └─ [PO controle voltooid]
 ```
 
----
-
+***
 
 ## Configuratiesjablonen
 
@@ -676,8 +696,7 @@ FACTUUR KOMT AAN
 
 **Gebruik:** Strikte controleomgeving, lage tolerantie voor variantie
 
----
-
+***
 
 ### Sjabloon 2: Flexibele PO Matching (Mild)
 
@@ -715,8 +734,7 @@ FACTUUR KOMT AAN
 
 **Gebruik:** Flexibele omgeving, vertrouwde leveranciers, hogere tolerantie
 
----
-
+***
 
 ### Sjabloon 3: Alleen-Prijs Matching
 
@@ -743,8 +761,7 @@ FACTUUR KOMT AAN
 
 **Gebruik:** Wanneer alleen prijs belangrijk is, hoeveelheidsvariaties verwacht
 
----
-
+***
 
 ## Geavanceerde Scenario's
 
@@ -752,7 +769,8 @@ FACTUUR KOMT AAN
 
 **Uitdaging:** Factuur voor gedeeltelijke PO-levering
 
-**Oplossing:**
+**Oplossend:**
+
 ```
 1. Sta hoeveelheidsonderlevering toe binnen tolerantie
 2. Volg cumulatieve gefactureerde hoeveelheid vs PO-hoeveelheid
@@ -762,6 +780,7 @@ FACTUUR KOMT AAN
 ```
 
 **Implementatie:**
+
 ```
 ALS Cumulatieve_Gefactureerde_Hoeveelheid ≤ PO_Hoeveelheid:
   Bereken: Percentage = (Cumulatief/PO) × 100
@@ -771,14 +790,14 @@ ALS Cumulatieve_Gefactureerde_Hoeveelheid ≤ PO_Hoeveelheid:
     Sluit PO
 ```
 
----
-
+***
 
 ### Scenario 2: Multi-Valuta PO Matching
 
 **Uitdaging:** Factuurvaluta anders dan PO-valuta
 
-**Oplossing:**
+**Oplossend:**
+
 ```
 1. Detecteer valutamismatch
 2. Haal wisselkoers op (uit API of masterdata)
@@ -788,6 +807,7 @@ ALS Cumulatieve_Gefactureerde_Hoeveelheid ≤ PO_Hoeveelheid:
 ```
 
 **Implementatie:**
+
 ```
 ALS Factuurvaluta ≠ PO-valuta:
   1. Haal wisselkoers op voor Factuurvaluta → PO-valuta
@@ -797,14 +817,14 @@ ALS Factuurvaluta ≠ PO-valuta:
   5. Vlag: "Valutaconversie_Toegepast"
 ```
 
----
-
+***
 
 ### Scenario 3: Raamcontract / Mantelovereenkomst
 
 **Uitdaging:** Meerdere facturen tegen enkele PO
 
-**Oplossing:**
+**Oplossend:**
+
 ```
 1. Identificeer PO-type = "Mantel"
 2. Volg cumulatieve gefactureerde waarde
@@ -814,6 +834,7 @@ ALS Factuurvaluta ≠ PO-valuta:
 ```
 
 **Implementatie:**
+
 ```
 ALS PO_Type = "Mantel":
   Bereken: Totaal_Gefactureerd_Tot_Heden
@@ -825,8 +846,7 @@ ALS PO_Type = "Mantel":
     Escaleer: "Mantel PO limiet overschreden"
 ```
 
----
-
+***
 
 ## Foutafhandeling & Randgevallen
 
@@ -834,7 +854,8 @@ ALS PO_Type = "Mantel":
 
 **Probleem:** Factuur heeft item niet op PO
 
-**Oplossing:**
+**Oplossend:**
+
 ```
 1. Identificeer niet-gematchte regelitems
 2. Bereken: Niet-gematcht_Bedrag
@@ -846,14 +867,14 @@ ALS PO_Type = "Mantel":
 5. Vlag: "Extra_Items_Aanwezig"
 ```
 
----
-
+***
 
 ### Randgeval 2: PO Gesloten maar Factuur Ontvangen
 
 **Probleem:** PO al gesloten, late factuur ontvangen
 
-**Oplossing:**
+**Oplossend:**
+
 ```
 1. Controleer: PO_Status = "GESLOTEN"
 2. Controleer: Factuurdatum vs PO_Sluitingsdatum
@@ -867,14 +888,14 @@ ALS PO_Type = "Mantel":
      Handmatige beslissing vereist
 ```
 
----
-
+***
 
 ### Randgeval 3: Meerdere PO's op Enkele Factuur
 
 **Probleem:** Factuur verwijst naar meerdere PO's
 
-**Oplossing:**
+**Oplossend:**
+
 ```
 1. Parse factuur voor meerdere PO-nummers
 2. Voor elke PO:
@@ -885,116 +906,107 @@ ALS PO_Type = "Mantel":
 5. Rapporteer over elke PO afzonderlijk
 ```
 
----
-
+***
 
 ## Prestatietips
 
 ✅ **Beste Praktijken:**
-- Cache PO-gegevens om lookups te verminderen
-- Stel passende toleranties in (niet te streng, niet te mild)
-- Gebruik eerst volledige matchcontrole (sneller)
-- Log alle variantieberekeningen
-- Beoordeel tolerantie-instellingen elk kwartaal
-- Monitor auto-goedkeuringspercentages
-- Volg veelvoorkomende variantieredenen
+
+* Cache PO-gegevens om lookups te verminderen
+* Stel passende toleranties in (niet te streng, niet te mild)
+* Gebruik eerst volledige matchcontrole (sneller)
+* Log alle variantieberekeningen
+* Beoordeel tolerantie-instellingen elk kwartaal
+* Monitor auto-goedkeuringspercentages
+* Volg veelvoorkomende variantieredenen
 
 ❌ **Vermijden:**
-- Nultolerantie (te streng, te veel handmatige beoordelingen)
-- Extreem hoge tolerantie (doet doel teniet)
-- Systematische varianties negeren
-- Variantie-trends niet volgen
-- Verwerken zonder PO (indien vereist)
 
----
+* Nultolerantie (te streng, te veel handmatige beoordelingen)
+* Extreem hoge tolerantie (doet doel teniet)
+* Systematische varianties negeren
+* Variantie-trends niet volgen
+* Verwerken zonder PO (indien vereist)
 
+***
 
 ## Monitoring & Rapportage
 
 ### Belangrijkste Metrieken om te Volgen
 
 1. **Matchpercentage:**
-   - Volledige Match: X%
-   - Binnen Tolerantie: Y%
-   - Buiten Tolerantie: Z%
-
+   * Volledige Match: X%
+   * Binnen Tolerantie: Y%
+   * Buiten Tolerantie: Z%
 2. **Variantieanalyse:**
-   - Gemiddelde prijsvariantie
-   - Gemiddelde hoeveelheidsvariantie
-   - Veelvoorkomende variantieredenen
-
+   * Gemiddelde prijsvariantie
+   * Gemiddelde hoeveelheidsvariantie
+   * Veelvoorkomende variantieredenen
 3. **Verwerkingsefficiëntie:**
-   - Auto-goedkeuringspercentage
-   - Handmatig beoordelingspercentage
-   - Gemiddelde beoordelingstijd
-
+   * Auto-goedkeuringspercentage
+   * Handmatig beoordelingspercentage
+   * Gemiddelde beoordelingstijd
 4. **Leveranciersprestaties:**
-   - Variancies per leverancier
-   - Matchpercentage per leverancier
-   - Probleemleveranciers
+   * Variancies per leverancier
+   * Matchpercentage per leverancier
+   * Probleemleveranciers
 
----
-
+***
 
 ## Testchecklist
 
-- [ ] Perfect match scenario (volledige match)
-- [ ] Binnen tolerantie scenario (kleine variantie)
-- [ ] Buiten tolerantie scenario (grote variantie)
-- [ ] Ontbrekende PO scenario
-- [ ] Verkeerd PO-nummer scenario
-- [ ] Gedeeltelijke levering scenario
-- [ ] Overlevering scenario
-- [ ] Valutamismatch scenario
-- [ ] Meerdere PO's scenario
-- [ ] Gesloten PO scenario
-- [ ] Belastingvariantie scenario
-- [ ] Escalatie workflow
-- [ ] Taakcreatie
-- [ ] E-mailmeldingen
-- [ ] Veldupdates
-- [ ] Export na goedkeuring
+* [ ] Perfect match scenario (volledige match)
+* [ ] Binnen tolerantie scenario (kleine variantie)
+* [ ] Buiten tolerantie scenario (grote variantie)
+* [ ] Ontbrekende PO scenario
+* [ ] Verkeerd PO-nummer scenario
+* [ ] Gedeeltelijke levering scenario
+* [ ] Overlevering scenario
+* [ ] Valutamismatch scenario
+* [ ] Meerdere PO's scenario
+* [ ] Gesloten PO scenario
+* [ ] Belastingvariantie scenario
+* [ ] Escalatieworkflow
+* [ ] Taakcreatie
+* [ ] E-mailmeldingen
+* [ ] Veldupdates
+* [ ] Export na goedkeuring
 
----
-
+***
 
 ## Gerelateerde Patronen
 
 ### Patronen Die Goed Samenwerken:
 
-- **[Taakbeheer Patroon](task-management-pattern.md)** - Maak beoordelingstaken voor varianties
-- **[Beslissingslogica Patroon](decision-logic-pattern.md)** - Complexe routering op basis van variantieniveaus
-- **[API Integratie Patroon](api-integration-pattern.md)** - Haal huidige prijzen op voor vergelijking
-- **[Gegevenstransformatie Patroon](data-transformation-pattern.md)** - Valutaconversie, eenheidsconversie
+* [**Taakbeheer Patroon**](task-management-pattern.md) - Maak beoordelingstaken voor varianties
+* [**Beslissingslogica Patroon**](decision-logic-pattern.md) - Complexe routering op basis van variantieniveaus
+* [**API Integratie Patroon**](api-integration-pattern.md) - Haal huidige prijzen op voor vergelijking
+* [**Gegevenstransformatie Patroon**](data-transformation-pattern.md) - Valutaconversie, eenheidsconversie
 
----
-
+***
 
 ## Gerelateerde Gidsen
 
 ### Vereisten
-- [PO Matching Complete Gids](../and/compare-with-purchase-order/po-matching-complete-guide.md) - Alle PO-matchingkaarten
-- [Gids Conditiekaarten](../and/condition-cards-complete-guide.md) - Conditielogica
-- [Gids Veldmanipulatie](../then/document-field/field-manipulation-guide.md) - Veldoperaties
+
+* [PO Matching Complete Gids](../and/compare-with-purchase-order/po-matching-complete-guide.md) - Alle PO-matchingkaarten
+* [Gids Conditiekaarten](../and/condition-cards-complete-guide.md) - Conditielogica
+* [Gids Veldmanipulatie](../then/document-field/field-manipulation-guide.md) - Veldoperaties
 
 ### Gerelateerde Kaarten
-- **PURCHASE_ORDER_FULL_MATCH** - [PO Matching Gids](../and/compare-with-purchase-order/po-matching-complete-guide.md#full-match)
-- **CONDITION_DOC_TO_PO_UNIT_PRICE** - [PO Matching Gids](../and/compare-with-purchase-order/po-matching-complete-guide.md#unit-price)
-- **CONDITION_DOC_TO_PO_QUANTITY** - [PO Matching Gids](../and/compare-with-purchase-order/po-matching-complete-guide.md#quantity)
-- **CONDITION_DOC_TO_PO_TAX_LINES** - [PO Matching Gids](../and/compare-with-purchase-order/po-matching-complete-guide.md#tax-lines)
-- **tasks_create** - [Taaktoewijzingsgids](../then/task/task-assignment-guide.md)
+
+* **PURCHASE\_ORDER\_FULL\_MATCH** - [PO Matching Gids](../and/compare-with-purchase-order/po-matching-complete-guide.md)
+* **CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE** - [PO Matching Gids](../and/compare-with-purchase-order/po-matching-complete-guide.md)
+* **CONDITION\_DOC\_TO\_PO\_QUANTITY** - [PO Matching Gids](../and/compare-with-purchase-order/po-matching-complete-guide.md)
+* **CONDITION\_DOC\_TO\_PO\_TAX\_LINES** - [PO Matching Gids](../and/compare-with-purchase-order/po-matching-complete-guide.md)
+* **tasks\_create** - [Taaktoewijzingsgids](../then/task/task-assignment-guide.md)
 
 ### Volgende Stappen
-- Maak beoordelingstaken: [Taakbeheer Patroon](task-management-pattern.md)
-- Voeg e-mailmeldingen toe: [Gids E-mail Verzenden](../then/action/send-email-groups-guide.md)
-- Implementeer complexe routering: [Beslissingslogica Patroon](decision-logic-pattern.md)
 
----
+* Maak beoordelingstaken: [Taakbeheer Patroon](task-management-pattern.md)
+* Voeg e-mailmeldingen toe: [Gids E-mail Verzenden](../then/action/send-email-groups-guide.md)
+* Implementeer complexe routering: [Beslissingslogica Patroon](decision-logic-pattern.md)
 
+***
 
-**Patroonversie:** 1.0
-**Laatst Bijgewerkt:** 23 oktober 2025
-**Moeilijkheidsgraad:** Gemiddeld-Hoog
-**Geschatte Tijd:** 60-90 minuten
-**Succespercentage:** Hoog (wanneer correct geconfigureerd)
-
+**Patroonversie:** 1.0 **Laatst Bijgewerkt:** 23 oktober 2025 **Moeilijkheidsgraad:** Gemiddeld-Hoog **Geschatte Tijd:** 60-90 minuten **Succespercentage:** Hoog (wanneer correct geconfigureerd)

@@ -1,6 +1,6 @@
-# Tax in document field
+# Belasting in documentveld
 
-<figure><img src="../../../../.gitbook/assets/image (268).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-c8c9a92d10ce-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel:**
 
@@ -8,28 +8,28 @@ Deze workflow-kaart is ontworpen om te evalueren of de btw-waarde in een documen
 
 ## **Onderdelen van de kaart:**
 
-1. **Field Name**
+1. **Veldnaam**
    * **Beschrijving**: Geeft het documentveld op dat de btw-waarde bevat die met de btw-waarde in de inkooporder wordt vergeleken.
-   * **Detail**: Dit veld moet exact overeenkomen met de identifier voor de btw-waarde in het document.
-2. **Operator**
+   * **Details**: Dit veld moet exact overeenkomen met de identifier voor de btw-waarde in het document.
+2. **Exploitant**
    * **Beschrijving**: Definieert de voorwaarde die wordt toegepast op de vergelijking tussen de btw-waarde van het document en de btw-waarde van de inkooporder.
    * **Opties**:
-     * **Equals (=)**: Controleert of de btw in het documentveld overeenkomt met de btw in de inkooporder.
-     * **Not Equals (≠)**: Zorgt ervoor dat de btw in het documentveld niet overeenkomt met de btw in de inkooporder.
-     * **Greater Than (>)**: Verifieert of de btw in het documentveld groter is dan de btw in de inkooporder.
-     * **Greater or Equals (≥)**: Controleert of de btw in het documentveld groter dan of gelijk is aan de btw in de inkooporder.
-     * **Lesser Than (<)**: Verifieert of de btw in het documentveld kleiner is dan de btw in de inkooporder.
-     * **Lesser or Equals (≤)**: Controleert of de btw in het documentveld kleiner dan of gelijk is aan de btw in de inkooporder.
-3. **Master Data Table**
+     * **Is gelijk aan (=)**: Controleert of de btw in het documentveld overeenkomt met de btw in de inkooporder.
+     * **Niet gelijk aan (≠)**: Zorgt ervoor dat de btw in het documentveld niet overeenkomt met de btw in de inkooporder.
+     * **Groter dan (>)**: Verifieert of de btw in het documentveld groter is dan de btw in de inkooporder.
+     * **Groter of gelijk aan (≥)**: Controleert of de btw in het documentveld groter dan of gelijk is aan de btw in de inkooporder.
+     * **Kleiner dan (<)**: Verifieert of de btw in het documentveld kleiner is dan de btw in de inkooporder.
+     * **Kleiner of gelijk aan (≤)**: Controleert of de btw in het documentveld kleiner dan of gelijk is aan de btw in de inkooporder.
+3. **Stamgegevenstabel**
    * **Beschrijving**: De tabel die de inkooporderdetails bevat, waaronder de charge-ID en btw-waarden.
-   * **Detail**: Deze tabel moet een verwijzing bevatten naar de charge-ID die aan de btw-waarde van de inkooporder is gekoppeld.
-4. **Tolerance Amount**
+   * **Details**: Deze tabel moet een verwijzing bevatten naar de charge-ID die aan de btw-waarde van de inkooporder is gekoppeld.
+4. **Tolerantiebedrag**
    * **Beschrijving**: Het drempelbedrag waarbinnen de btw-waarden mogen variëren. Dit wordt gebruikt om rekening te houden met kleine afwijkingen in btw-berekeningen.
-   * **Detail**: Het tolerantiebedrag moet een numerieke waarde zijn die het maximaal toegestane verschil tussen de btw-waarden definieert.
-5. **Tolerance Type**
+   * **Details**: Het tolerantiebedrag moet een numerieke waarde zijn die het maximaal toegestane verschil tussen de btw-waarden definieert.
+5. **Tolerantietype**
    * **Beschrijving**: Geeft het type tolerantie op dat wordt toegepast, ofwel absoluut ofwel op percentage gebaseerd.
    * **Opties**:
-     * **Value**: De tolerantie is een vaste numerieke waarde.
+     * **Waarde**: De tolerantie is een vaste numerieke waarde.
      * **Percentage**: De tolerantie wordt berekend als een percentage van de btw-waarde.
 
 ## **Functionaliteit:**

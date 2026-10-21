@@ -40,16 +40,6 @@
     * [M3 API Export Diagnostic Guide](overview-and-basics/faq/infor-m3-m3-integration/m3-api-export-diagnostic-guide.md)
   * [Mandatory PDP/PPF Channels – PEPPOL as Transport Only for France’s 2026 E-Invoicing](overview-and-basics/faq/mandatory-pdp-ppf-channels-peppol-as-transport-only-for-frances-2026-e-invoicing.md)
 
-## Beveiliging <a href="#security" id="security"></a>
-
-* [Beveiliging & Compliance FAQ](security/security-and-compliance-faq.md)
-* [Veilige opslag van inloggegevens](security/secure-storage-of-credentials.md)
-* [Versleuteling van opgeslagen gegevens](security/encryption-at-rest.md)
-* [Cookies en browseropslag](security/cookies-and-browser-storage.md)
-* [Kwetsbaarhedenbeheer](security/vulnerability-management.md)
-* [Overige beveiligingsmaatregelen](security/other-security-controls.md)
-* [Twee-factor-authenticatie (2FA)](security/two-factor-authentication.md)
-
 ## Eindgebruiker en partners <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [Eindgebruikerssectie](end-user-and-partner-section/end-user-section/README.md)
@@ -902,3 +892,13 @@
 * [PowerBI](advanced-functions-and-tools/powerbi.md)
   * [Verbinden via ClickHouse](advanced-functions-and-tools/powerbi/powerbi.md)
   * [Verbinden via Alleen-Lezen Database](advanced-functions-and-tools/powerbi/connect-via-read-only-database.md)
+
+## Beveiliging <a href="#security" id="security"></a>
+
+* [Beveiliging & Compliance FAQ](security/security-and-compliance-faq.md)
+* [Veilige opslag van inloggegevens](security/secure-storage-of-credentials.md)
+* [Versleuteling van opgeslagen gegevens](security/encryption-at-rest.md)
+* [Cookies en browseropslag](security/cookies-and-browser-storage.md)
+* [Kwetsbaarhedenbeheer](security/vulnerability-management.md)
+* [Overige beveiligingsmaatregelen](security/other-security-controls.md)
+* [Twee-factor-authenticatie (2FA)](security/two-factor-authentication.md)

@@ -39,6 +39,6 @@ De workflow-kaart "**Wijs het document opeenvolgend toe aan de gebruiker/groep o
 
 **Configuratie:** Configureer een overeenkomende demo-beslissingstabelregel die de beoogde gebruiker of groep retourneert en selecteer vervolgens die tabel op de kaart.
 
-**Verwacht resultaat en tegenvoorbeeld:** De geretourneerde verantwoordelijke wordt gebruikt voor opeenvolgende documenttoewijzing. Als er geen passend rendement is, mag u niet uitgaan van een standaard cessionaris; inspecteer het resultaat en het geconfigureerde fallback-gedrag van deze versie.
+**Verwacht resultaat en tegenvoorbeeld:** De geretourneerde verantwoordelijke wordt gebruikt voor opeenvolgende documenttoewijzing. Als er geen passende retourwaarde is, mag u niet uitgaan van een standaard verantwoordelijke; inspecteer het resultaat en het geconfigureerde fallback-gedrag van deze versie.
 
 Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

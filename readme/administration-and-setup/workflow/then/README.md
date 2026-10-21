@@ -10,7 +10,7 @@ Zet een selectievakje aan of keer het om, plaats tekst in een veld of kopieer he
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-c9741b344fe2-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-## Documenteren
+## Document
 
 Kies **Het document goedkeuren** of **Het document afwijzen** wanneer de workflow die beslissing moet nemen. Gebruik eerst een voorwaarde **En** als goedkeuring afhankelijk moet zijn van een controle. Zie [Document](document).
 
@@ -58,7 +58,7 @@ Wijzig gegevens of bereken waarden in een documenttabel. Selecteer de tabel, kol
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e25e69c2b11c-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-## Ontvanger
+## Toewijzing
 
 Wijs het document toe aan een gebruiker, groep, ontvanger of suborganisatie. Sommige kaarten gebruiken een veld- of beslissingstabel en bieden een terugvalmogelijkheid. Kies de juiste bestemming en val terug op de geselecteerde kaart. Zie [Toegewezene](assignee).
 

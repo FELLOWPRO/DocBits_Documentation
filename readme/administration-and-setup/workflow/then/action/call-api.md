@@ -1,6 +1,6 @@
-# Call Api
+# Llamar API
 
-<figure><img src="../../../../.gitbook/assets/Then_Call_API.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6a1c780ee588-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## Propósito:
 
@@ -8,20 +8,20 @@ La tarjeta de flujo de trabajo **"Call API"** permite a los usuarios realizar so
 
 ## Componentes de la tarjeta:
 
-1. **API Endpoint**
+1. **Punto final API**
    * **Descripción:** El endpoint de destino de la **API de DocBits** con el que interactuará esta tarjeta.
    * **Detalle:** Un campo de texto donde los usuarios especifican el endpoint para la solicitud a la API.
-2. **HTTP Method**
+2. **Método HTTP**
    * **Descripción:** El tipo de solicitud HTTP que se realizará.
    * **Opciones:**
      1. **GET:** Obtiene datos del endpoint especificado.
      2. **POST:** Envía datos al endpoint.
      3. **PUT:** Actualiza los datos existentes en el endpoint.
      4. **DELETE:** Elimina datos del endpoint.
-3. **Parameters**
+3. **Parámetros**
    * **Descripción:** Parámetros de consulta que se incluirán en la solicitud a la API.
    * **Detalle:** Un campo de texto o una lista para introducir pares clave-valor para la URL de la solicitud.
-4. **Data**
+4. **Datos**
    1. **Descripción:** La carga que se enviará en el cuerpo de la solicitud a la API (aplicable a los métodos POST y PUT).
    2. **Detalle:** Un campo para introducir los datos en JSON.
 
@@ -39,7 +39,7 @@ La tarjeta de flujo de trabajo **"Call API"** permite a los usuarios realizar so
 
 ## Configuración:
 
-1. **Definir el API Endpoint:**\
+1. **Definir el punto final API:**\
    Introduzca la URL de la API que desea llamar.
 2. **Seleccionar el HTTP Method:**\
    Elija uno de los métodos admitidos (GET, POST, PUT, DELETE) según los requisitos de su API.

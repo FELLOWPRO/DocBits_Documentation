@@ -1,6 +1,6 @@
-# Assign to group
+# Asignar al grupo
 
-<figure><img src="../../../../.gitbook/assets/image (304).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4f514f6ba398-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## Propósito:
 
@@ -8,11 +8,9 @@ La tarjeta de flujo de trabajo **"Assign to Group"** facilita la asignación de 
 
 ## Componentes de la tarjeta:
 
-1. **Groups**
+1. **Grupos**
    * **Descripción:** Especifica el **grupo** al que se asignará el documento.
    * **Detalle:** Se selecciona de una lista desplegable de **grupos** disponibles.
-
-
 
 ## **Componentes adicionales en la versión 3**
 
@@ -24,7 +22,7 @@ La tarjeta de flujo de trabajo **"Assign to Group"** facilita la asignación de 
 
 ## Funcionalidad:
 
-* **Evaluación de la condición:** La tarjeta solo ejecuta su acción si las secciones **"Where"** y **"And"** se evalúan como verdaderas.
+* **Evaluación de la condición:** La tarjeta solo ejecuta su acción si las secciones **"Donde"** y **"Y"** se evalúan como verdaderas.
 * **Asignación del documento:** Asigna el documento al **grupo** seleccionado. En la **versión 3**, el **árbol de decisión** determina el grupo de destino dinámicamente si está habilitado.
 
 ## Configuración:

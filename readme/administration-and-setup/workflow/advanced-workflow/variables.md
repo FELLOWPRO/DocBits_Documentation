@@ -59,3 +59,7 @@ Haz clic en **New Variable**, asígnale un nombre y un tipo, y establece su valo
 
 - Mira cómo los nodos usan estos valores en [Nodos](nodes.md).
 - Valida y ejecuta el flujo de trabajo en [Validación y pruebas](validation-and-testing.md).
+
+## Variables numéricas
+
+**Number (Número)** es un tipo de variable independiente, junto con Text, Yes/No y Document. Introduzca un número sin símbolo de moneda. Las variables de organización se comparten entre flujos de trabajo; crearlas, modificarlas o eliminarlas se guarda inmediatamente, independientemente de guardar o descartar el lienzo. Antes de cambiarlas, revise los flujos afectados y pruebe valores inferiores, iguales y superiores al umbral.

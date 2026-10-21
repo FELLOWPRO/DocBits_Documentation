@@ -1,37 +1,37 @@
-# Assign to Procurement Group and Create a Task/Notification
+# Asignar al grupo de adquisiciones y crear una tarea/notificación
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-a3770fb3e57d-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito**
 
-La tarjeta de flujo de trabajo "**Assign Document to Procurement Group and Create Task/Notification**" asigna un documento a un grupo de compras especificado, crea una tarea o notificación con detalles definidos y, opcionalmente, notifica al grupo por correo electrónico. Prioriza la ejecución de tareas según un valor de prioridad numérico configurable.
+La tarjeta de flujo de trabajo "**Asignar documento al grupo de adquisiciones y crear tarea/notificación**" asigna un documento a un grupo de compras especificado, crea una tarea o notificación con detalles definidos y, opcionalmente, notifica al grupo por correo electrónico. Prioriza la ejecución de tareas según un valor de prioridad numérico configurable.
 
 ## **Componentes de la tarjeta**
 
-1. **Group Name**
+1. **Nombre del grupo**
    * **Descripción:** Especifica el grupo de compras responsable de gestionar el documento.
    * **Detalle:** Un campo donde el usuario puede introducir manualmente el nombre del grupo de compras.
-2. **Task/Notification**
+2. **Tarea/Notificación**
    * **Descripción:** Define si se crea una tarea o una notificación para el grupo.
    * **Detalle:** Un campo donde el usuario puede elegir entre crear una tarea o una notificación.
-3. **Title**
+3. **Título**
    * **Descripción:** El título de la tarea o notificación creada para el grupo.
    * **Detalle:** Un campo para proporcionar un título conciso e identificable para la tarea o notificación.
-4. **Description**
+4. **Descripción**
    * **Descripción:** Detalles adicionales sobre la tarea o notificación.
    * **Detalle:** Un campo para describir el propósito de la tarea y proporcionar contexto o instrucciones.
-5. **Priority**
+5. **Prioridad**
    * **Descripción:** Define el nivel de urgencia de la tarea o notificación.
    * **Opciones:**
      * **High:** La tarea requiere atención inmediata.
-     * **Medium:** La tarea es importante pero no urgente.
+     * **Medio:** La tarea es importante pero no urgente.
      * **Low:** La tarea puede gestionarse más adelante.
-6. **Send Mail**
+6. **Enviar correo**
    * **Descripción:** Configura si debe enviarse una notificación por correo electrónico al grupo.
    * **Opciones:**
      * **True:** Envía una notificación por correo electrónico al grupo de compras.
      * **False:** No se envía ninguna notificación por correo electrónico.
-7. **Value**
+7. **Valor**
    * **Descripción:** Establece la prioridad numérica para la ejecución de la tarea.
    * **Detalle:** Un campo para introducir un valor numérico, donde un número más bajo representa una mayor prioridad.
 
@@ -46,11 +46,11 @@ La tarjeta de flujo de trabajo "**Assign Document to Procurement Group and Creat
 
 ## **Configuración**
 
-1. **Definir el Group Name:**
+1. **Definir el nombre del grupo:**
    * Introduzca el nombre del grupo de compras en el campo Group Name.
 2. **Configurar los detalles de la tarea/notificación:**
    * Especifique el Title y la Description de la tarea o notificación.
-   * Seleccione la Priority en el menú desplegable (High, Medium o Low).
+   * Seleccione la Prioridad en el menú desplegable (Alta, Media o Baja).
 3. **Habilitar la notificación por correo electrónico:**
    * Establezca "Send Mail" en True o False según si el grupo debe recibir un correo electrónico.
 4. **Establecer la prioridad numérica:**

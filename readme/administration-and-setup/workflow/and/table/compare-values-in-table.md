@@ -1,6 +1,6 @@
-# Compare values in table
+# Comparar valores en la tabla
 
-<figure><img src="../../../../.gitbook/assets/image (48).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5f14db09d019-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -9,13 +9,13 @@ Esta tarjeta de DocBits realiza una comparación entre los valores de dos column
 ## **Funcionalidad:**
 
 * **Comparación de columnas:** Esta tarjeta permite a los usuarios establecer condiciones para comparar valores entre dos columnas de la misma tabla.
-* **Operators:** Los siguientes operadores están disponibles para definir la comparación:
-  * **Equals (=):** Comprueba si los valores de las dos columnas son exactamente iguales.
-  * **Not Equals (≠):** Garantiza que los valores de las dos columnas no sean iguales.
-  * **Greater Than (>):** Confirma que los valores de la primera columna son mayores que los de la segunda columna.
-  * **Greater or Equals (≥):** Garantiza que los valores de la primera columna sean mayores o iguales que los de la segunda columna.
-  * **Lesser Than (<):** Comprueba si los valores de la primera columna son menores que los de la segunda columna.
-  * **Less or Equals (≤):** Garantiza que los valores de la primera columna sean menores o iguales que los de la segunda columna.
+* **Operadores:** Los siguientes operadores están disponibles para definir la comparación:
+  * **Igual a (=):** Comprueba si los valores de las dos columnas son exactamente iguales.
+  * **No iguales (≠):** Garantiza que los valores de las dos columnas no sean iguales.
+  * **Mayor que (>):** Confirma que los valores de la primera columna son mayores que los de la segunda columna.
+  * **Mayor o igual (≥):** Garantiza que los valores de la primera columna sean mayores o iguales que los de la segunda columna.
+  * **Menor que (<):** Comprueba si los valores de la primera columna son menores que los de la segunda columna.
+  * **Menos o Igual (≤):** Garantiza que los valores de la primera columna sean menores o iguales que los de la segunda columna.
 * **Selección de tabla y columna:** Los usuarios especifican la tabla y las dos columnas que desean comparar.
 
 ## **Uso:**

@@ -1,6 +1,6 @@
-# Today
+# hoy
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-bd785752f7b5-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -9,12 +9,12 @@ Esta tarjeta de DocBits compara la fecha de hoy con una fecha especificada, perm
 ## **Funcionalidad:**
 
 * **Comparación de fechas:** Esta tarjeta evalúa la fecha de hoy frente a una fecha especificada usando las siguientes condiciones:
-  * **Equals (=):** Comprueba si la fecha de hoy coincide con la fecha especificada.
-  * **Not Equals (≠):** Garantiza que la fecha de hoy sea distinta de la fecha especificada.
-  * **Greater Than (>):** Confirma que la fecha de hoy es posterior a la fecha especificada.
-  * **Greater or Equals (≥):** Garantiza que la fecha de hoy sea igual o posterior a la fecha especificada.
-  * **Lesser Than (<):** Comprueba si la fecha de hoy es anterior a la fecha especificada.
-  * **Less or Equals (≤):** Garantiza que la fecha de hoy sea igual o anterior a la fecha especificada.
+  * **Igual a (=):** Comprueba si la fecha de hoy coincide con la fecha especificada.
+  * **No iguales (≠):** Garantiza que la fecha de hoy sea distinta de la fecha especificada.
+  * **Mayor que (>):** Confirma que la fecha de hoy es posterior a la fecha especificada.
+  * **Mayor o igual (≥):** Garantiza que la fecha de hoy sea igual o posterior a la fecha especificada.
+  * **Menor que (<):** Comprueba si la fecha de hoy es anterior a la fecha especificada.
+  * **Menos o Igual (≤):** Garantiza que la fecha de hoy sea igual o anterior a la fecha especificada.
 * **Entrada de fecha:** Los usuarios proporcionan la fecha con la que comparar la fecha de hoy.
 
 ## **Uso:**

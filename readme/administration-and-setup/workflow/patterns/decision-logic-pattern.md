@@ -1,48 +1,48 @@
 # Patrón de lógica de decisión
 
-**Tipo de patrón:** Enrutamiento condicional y lógica
-**Complejidad:** Media
-**Configuración estimada:** 30-45 minutos
-**Casos de uso habituales:** Enrutamiento multirruta, procesamiento condicional, árboles de decisión, implementación de reglas de negocio
+**Tipo de patrón:** Enrutamiento condicional y lógica **Complejidad:** Media **Configuración estimada:** 30-45 minutos **Casos de uso habituales:** Enrutamiento multirruta, procesamiento condicional, árboles de decisión, implementación de reglas de negocio
 
----
+***
 
-Este patrón se monta en el **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Haga clic en **Add Card** y abra la categoría **Logic**: contiene las tarjetas de condición y ramificación que impulsan el árbol de decisión, que combina con el grupo **And** para evaluar varias condiciones:
+Este patrón se monta en el **Generador de flujo de trabajo** (Workflow Dashboard → Workflow List → Add Workflow). Haga clic en **Agregar tarjeta** y abra la categoría **Lógica**: contiene las tarjetas de condición y ramificación que impulsan el árbol de decisión, que combina con el grupo **Y** para evaluar varias condiciones:
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Biblioteca Add Card del Workflow Builder, agrupada por categoría"><figcaption><p>La biblioteca <strong>Add Card</strong>: las tarjetas de condición y ramificación se encuentran en la categoría <strong>Logic</strong>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
----
+***
 
 ## Resumen del patrón
 
 Este patrón muestra cómo implementar lógica de decisión compleja en los flujos de trabajo de DocBits usando tarjetas de condición para enrutar documentos por distintas rutas de procesamiento según los atributos del documento, los valores de los campos y las reglas de negocio.
 
 **Qué hace este patrón:**
+
 1. Evalúa varias condiciones en secuencia o en paralelo
 2. Enruta los documentos por distintas rutas según las condiciones
 3. Implementa reglas y políticas de negocio
 4. Gestiona árboles de decisión complejos
 5. Combina varios criterios para las decisiones de enrutamiento
 
----
+***
 
 ## Cuándo usar este patrón
 
 Use este patrón cuando necesite:
-- ✅ Enrutar documentos por umbrales de importe
-- ✅ Aplicar distintas reglas para distintos tipos de documento
-- ✅ Implementar lógica de aprobación multinivel
-- ✅ Gestionar políticas de negocio complejas
-- ✅ Crear enrutamiento dinámico basado en varios criterios
-- ✅ Implementar lógica de gestión de excepciones
-- ✅ Crear matrices de aprobación
+
+* ✅ Enrutar documentos por umbrales de importe
+* ✅ Aplicar distintas reglas para distintos tipos de documento
+* ✅ Implementar lógica de aprobación multinivel
+* ✅ Gestionar políticas de negocio complejas
+* ✅ Crear enrutamiento dinámico basado en varios criterios
+* ✅ Implementar lógica de gestión de excepciones
+* ✅ Crear matrices de aprobación
 
 **No use este patrón cuando:**
-- ❌ Un flujo de trabajo lineal simple sea suficiente
-- ❌ Todos los documentos sigan la misma ruta
-- ❌ No se necesite procesamiento condicional
 
----
+* ❌ Un flujo de trabajo lineal simple sea suficiente
+* ❌ Todos los documentos sigan la misma ruta
+* ❌ No se necesite procesamiento condicional
+
+***
 
 ## Tipos de lógica de decisión
 
@@ -56,6 +56,7 @@ ELSE:
 ```
 
 **Ejemplo:**
+
 ```
 IF Amount > €10,000:
   → Assign to Director
@@ -73,6 +74,7 @@ ELSE:
 ```
 
 **Ejemplo:**
+
 ```
 IF Amount > €10,000 AND Supplier = "New" AND Department = "IT":
   → Assign to IT Director + CFO (dual approval)
@@ -90,6 +92,7 @@ ELSE:
 ```
 
 **Ejemplo:**
+
 ```
 IF Amount > €50,000 OR Supplier is "Blocked" OR Document has "Urgent" flag:
   → Escalate immediately
@@ -113,6 +116,7 @@ ELSE:
 ```
 
 **Ejemplo:**
+
 ```
 IF Document_Type = "Invoice":
   IF Amount > €10,000:
@@ -126,13 +130,14 @@ ELSE IF Document_Type = "Credit Note":
     → Standard credit workflow
 ```
 
----
+***
 
 ## Ejemplo de flujo de trabajo completo
 
 ### Escenario: Matriz de aprobación de facturas
 
 **Reglas de negocio:**
+
 1. Importe < 1.000 €: Aprobación automática
 2. Importe 1.000 €-10.000 €: Aprobación del Manager
 3. Importe > 10.000 € Y proveedor nuevo: Aprobación de Director + CFO
@@ -179,13 +184,14 @@ STEP 3: Amount-Based Routing (if not urgent)
         → Deadline: 2 days
 ```
 
----
+***
 
 ## Implementación paso a paso
 
 ### Paso 1: Definir las tarjetas de condición
 
 **Condición 1: Umbral de importe**
+
 ```
 Card: CONDITION_DOC_FIELD_AMOUNT
 Field: Total_Amount
@@ -195,6 +201,7 @@ Currency: EUR
 ```
 
 **Condición 2: Comprobación del tipo de documento**
+
 ```
 Card: CONDITION_DOC_TYPE_IS_ISNOT
 Document Type: IS
@@ -202,6 +209,7 @@ Type: Invoice
 ```
 
 **Condición 3: Estado del proveedor**
+
 ```
 Card: CONDITION_SUPPLIER_STATUS_IS_ISNOT
 Supplier Status: IS
@@ -209,6 +217,7 @@ Status: ACTIVE
 ```
 
 **Condición 4: Comprobación de proveedor nuevo**
+
 ```
 Card: CONDITION_DOC_FIELD_DATE
 Field: Supplier_First_Transaction_Date
@@ -218,11 +227,12 @@ Value: {{TODAY_MINUS_180_DAYS}}
 
 **Referencia de guía:** [Guía completa de tarjetas de condición](../and/condition-cards-complete-guide.md)
 
----
+***
 
 ### Paso 2: Construir el árbol de decisión
 
 **Nivel 1: Tipo de documento**
+
 ```
 Workflow: "Invoice Processing"
 
@@ -240,6 +250,7 @@ ELSE:
 ```
 
 **Nivel 2: Umbrales de importe (para facturas)**
+
 ```
 IF Amount < €1,000:
   → Branch to "Auto-Approve Path"
@@ -257,6 +268,7 @@ ELSE (Amount ≥ €50,000):
 ```
 
 **Nivel 3: Análisis del proveedor (para facturas de alto valor)**
+
 ```
 IF Supplier_Status = "BLOCKED":
   → STOP processing
@@ -277,11 +289,12 @@ ELSE:
   → Standard high-value workflow
 ```
 
----
+***
 
 ### Paso 3: Crear las acciones de enrutamiento
 
 **Ruta A: Aprobación automática (importe < 1.000 €)**
+
 ```
 Actions:
 1. Set field "Approval_Type" = "AUTO"
@@ -292,6 +305,7 @@ Actions:
 ```
 
 **Ruta B: Aprobación del Manager (1.000 €-10.000 €)**
+
 ```
 Actions:
 1. Set field "Approval_Type" = "MANUAL"
@@ -308,6 +322,7 @@ Actions:
 ```
 
 **Ruta C: Aprobación del Director (10.000 €-50.000 €)**
+
 ```
 Actions:
 1. Set field "Approval_Type" = "MANUAL"
@@ -328,6 +343,7 @@ Actions:
 ```
 
 **Ruta D: Aprobación ejecutiva (≥ 50.000 €)**
+
 ```
 Actions:
 1. Set field "Approval_Type" = "EXECUTIVE"
@@ -345,7 +361,7 @@ Actions:
 10. If any rejected: Executive review meeting
 ```
 
----
+***
 
 ## Patrones avanzados de lógica de decisión
 
@@ -373,6 +389,7 @@ Routing:
 ```
 
 **Implementación:**
+
 ```
 1. ACTION_CALCULATE_FIELD: Calculate risk score
 2. ACTION_SET_FIELD_TO_NUMBER: Store score
@@ -380,7 +397,7 @@ Routing:
 4. Route based on score
 ```
 
----
+***
 
 ### Patrón 2: Matriz basada en departamentos
 
@@ -407,6 +424,7 @@ Department Matrix:
 ```
 
 **Implementación:**
+
 ```
 1. Check Department field
 2. Based on department, check amount threshold
@@ -414,7 +432,7 @@ Department Matrix:
 4. Different thresholds per department
 ```
 
----
+***
 
 ### Patrón 3: Lógica basada en el tiempo
 
@@ -448,7 +466,7 @@ Fiscal Period:
     - Additional checks
 ```
 
----
+***
 
 ### Patrón 4: Enrutamiento basado en excepciones
 
@@ -485,7 +503,7 @@ Exception Types:
   - Amount discrepancy
 ```
 
----
+***
 
 ## Diagrama completo de lógica de decisión
 
@@ -616,13 +634,14 @@ INVOICE ARRIVES
 └─ [All decision levels processed]
 ```
 
----
+***
 
 ## Buenas prácticas de configuración
 
 ### 1. Mantenga la lógica clara y mantenible
 
 ✅ **Bien:**
+
 ```
 IF Amount > 10000:
   → High value path
@@ -631,12 +650,14 @@ ELSE:
 ```
 
 ❌ **Mal (demasiado complejo):**
+
 ```
 IF (Amount > 10000 AND (Supplier = "A" OR Supplier = "B") AND NOT (Status = "X" OR Status = "Y") AND Department IN [1,2,3]):
   → Complex path
 ```
 
 **Mejor: divídalo en pasos:**
+
 ```
 Step 1: IF Amount > 10000: Continue, ELSE: Standard path
 Step 2: IF Supplier in allowed list: Continue, ELSE: Review
@@ -644,17 +665,19 @@ Step 3: IF Status valid: Continue, ELSE: Reject
 Step 4: IF Department authorized: Approve, ELSE: Escalate
 ```
 
----
+***
 
 ### 2. Documente la lógica de decisión
 
 **Incluya siempre:**
-- El propósito de cada punto de decisión
-- La regla de negocio que se implementa
-- Los resultados esperados
-- La gestión de excepciones
+
+* El propósito de cada punto de decisión
+* La regla de negocio que se implementa
+* Los resultados esperados
+* La gestión de excepciones
 
 **Ejemplo de documentación:**
+
 ```
 Decision Point: Amount Threshold Check
 Business Rule: BR-INV-001 (Invoice Approval Matrix)
@@ -668,34 +691,36 @@ Updated: 2025-10-23
 Owner: Finance Department
 ```
 
----
+***
 
 ### 3. Pruebe todas las rutas
 
 **Matriz de pruebas:**
 
-| Caso de prueba | Importe | Tipo | Proveedor | Ruta esperada | Estado |
-|-----------|--------|------|----------|---------------|--------|
-| TC1 | 500 € | Invoice | Existing | Auto-approve | ✅ |
-| TC2 | 5.000 € | Invoice | Existing | Manager | ✅ |
-| TC3 | 15.000 € | Invoice | New | Director+CFO | ✅ |
-| TC4 | 60.000 € | Invoice | Existing | Executive | ✅ |
-| TC5 | 2.000 € | Credit Note | Existing | Credit workflow | ✅ |
-| TC6 | 100.000 € | Invoice | Blocked | Stop & Escalate | ✅ |
+| Caso de prueba | Importe   | Tipo        | Proveedor | Ruta esperada   | Estado |
+| -------------- | --------- | ----------- | --------- | --------------- | ------ |
+| TC1            | 500 €     | factura     | existente  | Auto-approve    | ✅      |
+| TC2            | 5.000 €   | factura     | existente  | Gerente         | ✅      |
+| TC3            | 15.000 €  | factura     | New       | Director+CFO    | ✅      |
+| TC4            | 60.000 €  | factura     | existente  | Executive       | ✅      |
+| TC5            | 2.000 €   | Nota de crédito | existente  | Flujo de trabajo de crédito | ✅      |
+| TC6            | 100.000 € | factura     | Bloqueado   | Detener y escalar | ✅      |
 
----
+***
 
 ### 4. Supervise las métricas de decisión
 
 **Haga seguimiento de:**
-- La distribución entre las rutas de decisión
-- La tasa de aprobación automática
-- La tasa de revisión manual
-- El tiempo medio de procesamiento por ruta
-- Las tasas de excepción
-- La utilización de cada ruta
+
+* La distribución entre las rutas de decisión
+* La tasa de aprobación automática
+* La tasa de revisión manual
+* El tiempo medio de procesamiento por ruta
+* Las tasas de excepción
+* La utilización de cada ruta
 
 **Ejemplo de métricas:**
+
 ```
 Month: October 2025
 Total Invoices: 1,250
@@ -715,42 +740,41 @@ Processing Time:
 Exceptions: 15 (1.2%)
 ```
 
----
+***
 
 ## Patrones relacionados
 
 ### Patrones que funcionan bien juntos:
 
-- **[Patrón de gestión de tareas](task-management-pattern.md)** - Crea tareas según las decisiones
-- **[Patrón de integración de API](api-integration-pattern.md)** - Obtiene datos para la toma de decisiones
-- **[Patrón de cotejo de PO](po-matching-pattern.md)** - Usa los resultados de PO en las decisiones
-- **[Patrón de transformación de datos](data-transformation-pattern.md)** - Transforma los datos antes de las decisiones
+* [**Patrón de gestión de tareas**](task-management-pattern.md) - Crea tareas según las decisiones
+* [**Patrón de integración de API**](api-integration-pattern.md) - Obtiene datos para la toma de decisiones
+* [**Patrón de cotejo de PO**](po-matching-pattern.md) - Usa los resultados de PO en las decisiones
+* [**Patrón de transformación de datos**](data-transformation-pattern.md) - Transforma los datos antes de las decisiones
 
----
+***
 
 ## Guías relacionadas
 
 ### Requisitos previos
-- [Guía completa de tarjetas de condición](../and/condition-cards-complete-guide.md) - Todas las tarjetas de condición
-- [Guía de manipulación de campos](../then/document-field/field-manipulation-guide.md) - Operaciones con campos
-- [Guía de asignación a usuario](../then/assignee/assignment-user-guide.md) - Lógica de enrutamiento
+
+* [Guía completa de tarjetas de condición](../and/condition-cards-complete-guide.md) - Todas las tarjetas de condición
+* [Guía de manipulación de campos](../then/document-field/field-manipulation-guide.md) - Operaciones con campos
+* [Guía de asignación a usuario](../then/assignee/assignment-user-guide.md) - Lógica de enrutamiento
 
 ### Tarjetas relacionadas
-- **CONDITION_DOC_FIELD_AMOUNT** - [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md#field-conditions)
-- **CONDITION_DOC_TYPE_IS_ISNOT** - [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md#condition-doc-type-is-isnot)
-- **CONDITION_SUPPLIER_STATUS_IS_ISNOT** - [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md#condition-supplier-status-is-isnot)
-- **ACTION_ASSIGN_TO_USER** - [Guía de asignación](../then/assignee/assignment-user-guide.md)
-- **tasks_create** - [Guía de asignación de tareas](../then/task/task-assignment-guide.md)
+
+* **CONDITION\_DOC\_FIELD\_AMOUNT** - [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md)
+* **CONDITION\_DOC\_TYPE\_IS\_ISNOT** - [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md)
+* **CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT** - [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md)
+* **ACTION\_ASSIGN\_TO\_USER** - [Guía de asignación](../then/assignee/assignment-user-guide.md)
+* **tasks\_create** - [Guía de asignación de tareas](../then/task/task-assignment-guide.md)
 
 ### Próximos pasos
-- Crear tareas: [Patrón de gestión de tareas](task-management-pattern.md)
-- Añadir cotejo complejo: [Patrón de cotejo de PO](po-matching-pattern.md)
-- Integrar API: [Patrón de integración de API](api-integration-pattern.md)
 
----
+* Crear tareas: [Patrón de gestión de tareas](task-management-pattern.md)
+* Añadir cotejo complejo: [Patrón de cotejo de PO](po-matching-pattern.md)
+* Integrar API: [Patrón de integración de API](api-integration-pattern.md)
 
-**Versión del patrón:** 1.0
-**Última actualización:** 23 de octubre de 2025
-**Dificultad:** Media
-**Tiempo estimado:** 30-45 minutos
-**Tasa de éxito:** Alta
+***
+
+**Versión del patrón:** 1.0 **Última actualización:** 23 de octubre de 2025 **Dificultad:** Media **Tiempo estimado:** 30-45 minutos **Tasa de éxito:** Alta

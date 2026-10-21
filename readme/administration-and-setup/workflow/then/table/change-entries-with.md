@@ -1,6 +1,6 @@
-# Change Entries with
+# Cambiar entradas con
 
-<figure><img src="../../../../.gitbook/assets/image (293).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2186644bde72-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,27 +8,27 @@ La tarjeta de flujo de trabajo **"Change Entries in Table"** se utiliza para act
 
 ## **Componentes de la tarjeta:**
 
-1. **Table Name**
+1. **Nombre de la tabla**
    * **Descripción:** Especifica la **tabla** en la que se actualizarán las entradas.
    * **Detalle:** Se proporciona una lista desplegable de **tablas** disponibles, lo que le permite seleccionar la tabla de destino para actualizar las entradas.
-2. **Column Name**
+2. **Nombre de columna**
    * **Descripción:** Especifica la **columna** dentro de la tabla seleccionada que se actualizará.
    * **Detalle:** Se proporcionará una lista de todas las **columnas** disponibles para su selección.
-3. **Operation**
+3. **Operación**
    * **Descripción:** Define la operación matemática que se realizará sobre los valores de la **columna**.
    * **Opciones:**
      * **Add (+):** Suma un **valor** especificado al valor actual de la columna seleccionada.
-     * **Subtract (-):** Resta un **valor** especificado del valor actual de la columna seleccionada.
+     * **Restar (-):** Resta un **valor** especificado del valor actual de la columna seleccionada.
      * **Multiply (\*):** Multiplica el valor actual de la columna seleccionada por un **valor** especificado.
-     * **Divide (/):** Divide el valor actual de la columna seleccionada por un **valor** especificado.
-4. **Value**
+     * **Dividir (/):** Divide el valor actual de la columna seleccionada por un **valor** especificado.
+4. **Valor**
    * **Descripción:** Especifica el **valor** que se utilizará en la operación seleccionada.
    * **Detalle:** Es el número que se sumará, restará, multiplicará o dividirá con las entradas de la columna seleccionada.
 
 ## **Funcionalidad:**
 
 * **Evaluación de la condición:**\
-  La tarjeta solo ejecuta su acción si las secciones **"Where"** y **"And"** se evalúan como verdaderas.
+  La tarjeta solo ejecuta su acción si las secciones **"Donde"** y **"Y"** se evalúan como verdaderas.
 * **Actualización de las entradas de la tabla:**\
   La tarjeta realiza la operación seleccionada (**+**, **-**, **\*** o **/**) sobre los valores de la **columna** elegida de la **tabla** seleccionada, usando el **valor** especificado.
 
@@ -36,7 +36,7 @@ La tarjeta de flujo de trabajo **"Change Entries in Table"** se utiliza para act
 
 * **Seleccionar la Table:**\
   Elija la **tabla** donde se aplicarán los cambios.
-* **Elegir la Column:**\
+* **Elegir la columna:**\
   Seleccione la **columna** de la tabla que desea actualizar.
 * **Seleccionar la Operation:**\
   Elija la operación matemática (**+**, **-**, **\***, **/**) que se aplicará a los valores de la columna seleccionada.

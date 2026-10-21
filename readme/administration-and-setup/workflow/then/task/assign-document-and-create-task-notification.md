@@ -1,40 +1,40 @@
-# Assign Document and Create Task/Notification
+# Asignar documento y crear tarea/notificación
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7eb49fb37c93-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
 ## **Propósito**
 
-La tarjeta de flujo de trabajo "**Assign Document and Create Task/Notification Based on Decision Table**" asigna un documento y crea una tarea o notificación con detalles configurables. El asignatario se determina por el resultado de una tabla de decisión, y la tarjeta permite establecer prioridades y enviar notificaciones por correo electrónico.
+La tarjeta de flujo de trabajo "**Asignar documento y crear tarea/notificación según la tabla de decisiones**" asigna un documento y crea una tarea o notificación con detalles configurables. El asignatario se determina por el resultado de una tabla de decisión, y la tarjeta permite establecer prioridades y enviar notificaciones por correo electrónico.
 
 ## **Componentes de la tarjeta**
 
-1. **Assignee Type**
+1. **Tipo de responsable**
    * **Descripción:** Especifica si el resultado de la tabla de decisión asigna el documento y la tarea/notificación a un usuario o a un grupo.
    * **Detalle:** Un campo para configurar el tipo de asignatario como "User" o "Group" según el resultado de la tabla de decisión.
-2. **Task/Notification**
+2. **Tarea/Notificación**
    * **Descripción:** Especifica el tipo de acción que se creará para el asignatario.
    * **Detalle:** Un desplegable para seleccionar "Task" o "Notification" según las necesidades del flujo de trabajo.
-3. **Title**
+3. **Título**
    * **Descripción:** El título de la tarea o notificación.
    * **Detalle:** Un campo para proporcionar un título conciso que identifique la tarea o notificación.
-4. **Description**
+4. **Descripción**
    * **Descripción:** Detalles adicionales sobre la tarea o notificación.
    * **Detalle:** Un campo para describir el propósito y el contexto de la tarea o notificación.
-5. **Priority**
+5. **Prioridad**
    * **Descripción:** Define el nivel de urgencia de la tarea o notificación.
    * **Opciones:**
      * **High:** Requiere atención inmediata.
-     * **Medium:** Importante pero no urgente.
+     * **Medio:** Importante pero no urgente.
      * **Low:** Puede abordarse más adelante.
-6. **Assignee Type**
+6. **Tipo de responsable**
    * **Descripción:** Este campo determina el tipo de asignatario (User o Group) al que se asignan el documento y la tarea/notificación.
    * **Detalle:** Un menú desplegable para seleccionar si la tarea/notificación se asigna a un usuario o a un grupo según el resultado de la tabla de decisión.
-7. **Send Mail**
+7. **Enviar correo**
    * **Descripción:** Configura si se envía una notificación por correo electrónico al asignatario.
    * **Opciones:**
      * **True:** Envía una notificación por correo electrónico.
      * **False:** No se envía ninguna notificación por correo electrónico.
-8. **Value**
+8. **Valor**
    * **Descripción:** Establece la prioridad numérica para la asignación del documento.
    * **Detalle:** Un campo para introducir un valor numérico, donde los números más bajos indican una mayor prioridad.
 
@@ -53,11 +53,11 @@ La tarjeta de flujo de trabajo "**Assign Document and Create Task/Notification B
 
 1. **Definir el Assignee Type:**
    * Configure el campo Assignee Type como "User" o "Group" según el resultado de la tabla de decisión.
-2. **Seleccionar Task/Notification:**
-   * Elija "Task" o "Notification" en el desplegable Task/Notification.
+2. **Seleccionar Tarea/Notificación:**
+   * Elija "Tarea" o "Notificación" en el menú desplegable Tarea/Notificación.
 3. **Establecer los detalles de la tarea/notificación:**
    * Introduzca el Title y la Description de la tarea o notificación.
-   * Seleccione la Priority (High, Medium o Low) en el desplegable.
+   * Seleccione la Prioridad (Alta, Media o Baja) en el desplegable.
 4. **Habilitar la notificación por correo electrónico:**
    * Establezca la opción Send Mail en True o False, según si debe enviarse una notificación por correo electrónico.
 5. **Establecer la prioridad numérica:**

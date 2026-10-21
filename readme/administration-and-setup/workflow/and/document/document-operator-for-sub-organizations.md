@@ -1,6 +1,6 @@
-# Document Operator for Sub-Organizations
+# Operador de documentos para suborganizaciones
 
-<figure><img src="../../../../.gitbook/assets/image (42).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f97575f86ed-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
 ## Propósito:
 
@@ -8,12 +8,12 @@ Esta tarjeta de flujo de trabajo evalúa si un documento forma parte de una subo
 
 ## Componentes de la tarjeta:
 
-1. **Operator**
+1. **Operador**
    * **Descripción:** Define si el documento debe formar parte de la suborganización especificada o no.
    * **Opciones:**
      * **Is:** El documento debe formar parte de la suborganización especificada para que la condición sea verdadera.
-     * **Is Not:** El documento no debe formar parte de la suborganización especificada para que la condición sea verdadera.
-2. **Sub-org**
+     * **No es:** El documento no debe formar parte de la suborganización especificada para que la condición sea verdadera.
+2. **Suborganización**
    * **Descripción:** Especifica la suborganización con la que se debe comparar el documento.
    * **Detalle:** Debe coincidir con el identificador de la suborganización. La comparación comprueba si el documento pertenece a la suborganización especificada.
 

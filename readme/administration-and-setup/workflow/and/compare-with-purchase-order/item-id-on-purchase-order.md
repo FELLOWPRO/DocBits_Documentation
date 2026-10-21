@@ -1,6 +1,6 @@
-# Item Id on Purchase Order
+# ID de artículo en la orden de compra
 
-<figure><img src="../../../../.gitbook/assets/image (275).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4a5b4a7c3888-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,16 +8,16 @@ Esta tarjeta de flujo de trabajo está diseñada para comparar los ID de artícu
 
 ## **Componentes de la tarjeta:**
 
-1. **Any / All:**
+1. **Cualquiera / Todos:**
    * **Descripción**: Define si la condición se aplica a alguna o a todas las instancias de comparación de ID de artículo.
    * **Opciones**:
      * **Any**: La condición se cumple si algún ID de artículo de la orden de compra coincide con el ID de artículo del documento.
      * **All**: La condición se cumple solo si todos los ID de artículo de la orden de compra coinciden con los ID de artículo del documento.
-2. **Operator:**
+2. **Operador:**
    * **Descripción**: Define la condición para comparar el ID de artículo de la orden de compra con el ID de artículo del documento.
    * **Opciones**:
-     * **Equals (=)**: Verifica si el ID de artículo de la orden de compra coincide exactamente con el ID de artículo del documento.
-     * **Not Equals (≠)**: Garantiza que el ID de artículo de la orden de compra no coincida con el ID de artículo del documento.
+     * **Igual a (=)**: Verifica si el ID de artículo de la orden de compra coincide exactamente con el ID de artículo del documento.
+     * **No iguales (≠)**: Garantiza que el ID de artículo de la orden de compra no coincida con el ID de artículo del documento.
 
 ## **Funcionalidad:**
 

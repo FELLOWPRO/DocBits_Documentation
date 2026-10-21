@@ -1,6 +1,6 @@
-# Document Type
+# Tipo de documento
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3a6901be7256-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## Propósito:
 
@@ -8,12 +8,12 @@ Esta tarjeta de flujo de trabajo está diseñada para evaluar si un documento co
 
 ## Componentes de la tarjeta:
 
-1. **Operator**
+1. **Operador**
    * **Descripción**: Define si el documento debe ser del tipo especificado o no.
    * **Opciones**:
      * **Is**: El documento debe coincidir con el tipo especificado para que la condición sea verdadera.
-     * **Is Not**: El documento no debe coincidir con el tipo especificado para que la condición sea verdadera.
-2. **Type**
+     * **no es**: El documento no debe coincidir con el tipo especificado para que la condición sea verdadera.
+2. **Tipo**
    * **Descripción**: Especifica el tipo de documento con el que comparar.
    * **Detalle**: Incluye una variedad de tipos de documento como "Invoice", "Purchase Order", etc., en función de los cuales se evaluará la condición (is/is not).
 

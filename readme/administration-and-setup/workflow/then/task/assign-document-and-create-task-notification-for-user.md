@@ -1,37 +1,37 @@
-# Assign Document and Create Task/Notification for User
+# Asignar documento y crear tarea/notificación para usuario
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-b4ef3c2e3a99-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito**
 
-La tarjeta de flujo de trabajo "**Assign Document and Create Task/Notification for User**" asigna un documento a un usuario especificado, crea una tarea o notificación con detalles configurables y, opcionalmente, envía una notificación por correo electrónico al usuario. Esta tarjeta también posibilita establecer un valor de prioridad numérico para determinar el orden de ejecución.
+La tarjeta de flujo de trabajo "**Asignar documento y crear tarea/notificación para usuario**" asigna un documento a un usuario especificado, crea una tarea o notificación con detalles configurables y, opcionalmente, envía una notificación por correo electrónico al usuario. Esta tarjeta también posibilita establecer un valor de prioridad numérico para determinar el orden de ejecución.
 
 ## **Componentes de la tarjeta**
 
-1. **User**
+1. **Usuario**
    * **Descripción:** Especifica el usuario que recibirá la tarea o notificación.
    * **Detalle:** Un menú desplegable para seleccionar el usuario al que se asignarán el documento y la tarea/notificación.
-2. **Task/Notification**
+2. **Tarea/Notificación**
    * **Descripción:** Especifica el tipo de acción que se creará para el usuario.
    * **Detalle:** Un desplegable para elegir "Task" o "Notification" según la acción prevista.
-3. **Title**
+3. **Título**
    * **Descripción:** El título de la tarea o notificación.
    * **Detalle:** Un campo para proporcionar un título conciso y descriptivo para la tarea o notificación.
-4. **Description**
+4. **Descripción**
    * **Descripción:** Detalles adicionales sobre la tarea o notificación.
    * **Detalle:** Un campo para describir el propósito de la tarea o proporcionar contexto para la notificación.
-5. **Priority**
+5. **Prioridad**
    * **Descripción:** Define el nivel de urgencia de la tarea o notificación.
    * **Opciones:**
      * **High:** Requiere atención inmediata.
-     * **Medium:** Importante pero no urgente.
+     * **Medio:** Importante pero no urgente.
      * **Low:** Puede abordarse más adelante.
-6. **Send Mail**
+6. **Enviar correo**
    * **Descripción:** Configura si se envía una notificación por correo electrónico al usuario.
    * **Opciones:**
      * **True:** Envía una notificación por correo electrónico al usuario.
      * **False:** No se envía ninguna notificación por correo electrónico.
-7. **Value**
+7. **Valor**
    * **Descripción:** Establece la prioridad numérica para la asignación del documento.
    * **Detalle:** Un campo para introducir un valor numérico, donde los números más bajos indican una mayor prioridad.
 
@@ -47,9 +47,9 @@ La tarjeta de flujo de trabajo "**Assign Document and Create Task/Notification f
 ## **Configuración**
 
 1. **Seleccionar el User:**
-   * Elija el usuario en el menú desplegable User.
+   * Elija el usuario en el menú desplegable Usuario.
 2. **Configurar los detalles de la tarea/notificación:**
-   * Seleccione "Task" o "Notification" en el desplegable Task/Notification.
+   * Seleccione "Tarea" o "Notificación" en el menú desplegable Tarea/Notificación.
    * Introduzca el Title y la Description de la tarea o notificación.
    * Establezca la Priority seleccionando High, Medium o Low en el desplegable.
 3. **Habilitar la notificación por correo electrónico:**

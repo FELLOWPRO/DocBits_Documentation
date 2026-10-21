@@ -1,6 +1,6 @@
-# Unit Price Combined with Fields
+# Precio unitario combinado con campos
 
-<figure><img src="../../../../.gitbook/assets/image (26) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-34234b404af7-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,19 +8,19 @@ Esta tarjeta de flujo de trabajo está diseñada para evaluar si el precio unita
 
 ## **Componentes de la tarjeta:**
 
-1. **Field Name**
+1. **Nombre de campo**
    * **Descripción:** Especifica el campo del documento que contiene el valor que se combinará con el precio unitario.
    * **Detalle:** Debe coincidir con el identificador exacto del primer campo dentro del documento.
-2. **Operator**
+2. **Operador**
    * **Descripción:** Define la condición que se aplicará a la comparación entre el valor combinado y el valor especificado.
    * **Opciones:**
-     * **Equals (=):** Comprueba si el valor combinado del precio unitario y el campo coincide con el valor especificado.
-     * **Not Equals (≠):** Garantiza que el valor combinado del precio unitario y el campo sea distinto del valor especificado.
-     * **Greater Than (>):** Verifica si el valor combinado es mayor que el valor especificado.
-     * **Greater or Equals (≥):** Comprueba si el valor combinado es mayor o igual que el valor especificado.
-     * **Lesser Than (<):** Verifica si el valor combinado es menor que el valor especificado.
-     * **Lesser or Equals (≤):** Comprueba si el valor combinado es menor o igual que el valor especificado.
-3. **Value**
+     * **Igual a (=):** Comprueba si el valor combinado del precio unitario y el campo coincide con el valor especificado.
+     * **No iguales (≠):** Garantiza que el valor combinado del precio unitario y el campo sea distinto del valor especificado.
+     * **Mayor que (>):** Verifica si el valor combinado es mayor que el valor especificado.
+     * **Mayor o igual (≥):** Comprueba si el valor combinado es mayor o igual que el valor especificado.
+     * **Menor que (<):** Verifica si el valor combinado es menor que el valor especificado.
+     * **Menor o Igual (≤):** Comprueba si el valor combinado es menor o igual que el valor especificado.
+3. **Valor**
    * **Descripción:** Especifica el valor con el que se comparará el valor combinado del precio unitario y el campo.
    * **Detalle:** El valor debe ser un valor numérico.
 

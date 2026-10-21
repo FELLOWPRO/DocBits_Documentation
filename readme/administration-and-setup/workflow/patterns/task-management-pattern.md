@@ -1,23 +1,21 @@
 # Patrón de gestión de tareas
 
-**Tipo de patrón:** Gestión de flujos de trabajo
-**Complejidad:** Baja-Media
-**Configuración estimada:** 30-45 minutos
-**Casos de uso habituales:** Flujos de aprobación, tareas de revisión, gestión de excepciones, escalado
+**Tipo de patrón:** Gestión de flujos de trabajo **Complejidad:** Baja-Media **Configuración estimada:** 30-45 minutos **Casos de uso habituales:** Flujos de aprobación, tareas de revisión, gestión de excepciones, escalado
 
----
+***
 
-Este patrón se monta en el **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Haga clic en **Add Card** para abrir la biblioteca de tarjetas y elija las tarjetas que usa este patrón: `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` y `CONDITION_TASK_STATUS` (la categoría **Assignee** contiene las tarjetas de tarea y asignación):
+Este patrón se monta en el **Generador de flujo de trabajo** (Workflow Dashboard → Workflow List → Add Workflow). Haga clic en **Agregar tarjeta** para abrir la biblioteca de tarjetas y elija las tarjetas que usa este patrón: `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` y `CONDITION_TASK_STATUS` (la categoría **Responsable** contiene las tarjetas de tarea y asignación):
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Biblioteca Add Card del Workflow Builder, agrupada por categoría"><figcaption><p>La biblioteca <strong>Add Card</strong>: las tarjetas de tarea, asignación y notificación se encuentran en las categorías <strong>Assignee</strong> y <strong>Status</strong>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
----
+***
 
 ## Resumen del patrón
 
 Este patrón muestra cómo crear, asignar, seguir y gestionar tareas dentro de los flujos de trabajo de DocBits. Las tareas son elementos de trabajo accionables asignados a usuarios o grupos que deben completarse antes de que el flujo de trabajo del documento pueda continuar.
 
 **Qué hace este patrón:**
+
 1. Crea tareas según las condiciones del flujo de trabajo
 2. Asigna tareas a los usuarios o grupos adecuados
 3. Establece las propiedades de la tarea (prioridad, fecha límite, descripción)
@@ -25,54 +23,59 @@ Este patrón muestra cómo crear, asignar, seguir y gestionar tareas dentro de l
 5. Hace seguimiento del estado y la finalización de las tareas
 6. Enruta los documentos según los resultados de las tareas
 
----
+***
 
 ## Cuándo usar este patrón
 
 Use este patrón cuando necesite:
-- ✅ Crear flujos de aprobación
-- ✅ Asignar tareas de revisión a usuarios
-- ✅ Gestionar excepciones que requieren intervención humana
-- ✅ Escalar incidencias a los responsables
-- ✅ Crear cadenas de aprobación multinivel
-- ✅ Hacer seguimiento de quién debe hacer qué
-- ✅ Establecer fechas límite para las acciones
+
+* ✅ Crear flujos de aprobación
+* ✅ Asignar tareas de revisión a usuarios
+* ✅ Gestionar excepciones que requieren intervención humana
+* ✅ Escalar incidencias a los responsables
+* ✅ Crear cadenas de aprobación multinivel
+* ✅ Hacer seguimiento de quién debe hacer qué
+* ✅ Establecer fechas límite para las acciones
 
 **No use este patrón cuando:**
-- ❌ No se requiera acción humana (use el procesamiento automático en su lugar)
-- ❌ Solo necesite notificar (use el correo electrónico en su lugar)
-- ❌ Se trate de un simple enrutamiento de documentos (use la asignación en su lugar)
 
----
+* ❌ No se requiera acción humana (use el procesamiento automático en su lugar)
+* ❌ Solo necesite notificar (use el correo electrónico en su lugar)
+* ❌ Se trate de un simple enrutamiento de documentos (use la asignación en su lugar)
+
+***
 
 ## Ejemplo de flujo de trabajo completo
 
 ### Escenario: Aprobación de facturas con enrutamiento basado en el importe
 
 **Requisito de negocio:**
-- Facturas < 1.000 €: Aprobación automática (no se necesita tarea)
-- Facturas de 1.000 €-10.000 €: Tarea de aprobación para el Manager
-- Facturas > 10.000 €: Doble aprobación (Manager + Director)
-- Todos los aprobadores reciben una notificación por correo electrónico
-- Las tareas tienen una fecha límite de 3 días
+
+* Facturas < 1.000 €: Aprobación automática (no se necesita tarea)
+* Facturas de 1.000 €-10.000 €: Tarea de aprobación para el Manager
+* Facturas > 10.000 €: Doble aprobación (Manager + Director)
+* Todos los aprobadores reciben una notificación por correo electrónico
+* Las tareas tienen una fecha límite de 3 días
 
 **Tarjetas de flujo de trabajo utilizadas:**
-1. CONDITION_DOC_FIELD_AMOUNT - Comprueba el importe de la factura
-2. tasks_create - Crea la tarea de aprobación
-3. ACTION_ASSIGN_TO_USER - Asigna la tarea al aprobador
-4. ACTION_SEND_EMAIL_TO_GROUPS - Envía la notificación
-5. CONDITION_TASK_STATUS - Comprueba si la tarea se ha completado
-6. ACTION_APPROVE_DOCUMENT - Aprueba tras la finalización de la tarea
 
----
+1. CONDITION\_DOC\_FIELD\_AMOUNT - Comprueba el importe de la factura
+2. tasks\_create - Crea la tarea de aprobación
+3. ACTION\_ASSIGN\_TO\_USER - Asigna la tarea al aprobador
+4. ACTION\_SEND\_EMAIL\_TO\_GROUPS - Envía la notificación
+5. CONDITION\_TASK\_STATUS - Comprueba si la tarea se ha completado
+6. ACTION\_APPROVE\_DOCUMENT - Aprueba tras la finalización de la tarea
+
+***
 
 ## Implementación paso a paso
 
 ### Paso 1: Comprobar el umbral del importe
 
-**Tarjeta:** CONDITION_DOC_FIELD_AMOUNT o una condición de campo similar
+**Tarjeta:** CONDITION\_DOC\_FIELD\_AMOUNT o una condición de campo similar
 
 **Configuración para la ruta 1 (< 1.000 €):**
+
 ```
 Field: Total_Amount
 Operator: IS LESS THAN
@@ -81,6 +84,7 @@ Currency: EUR
 ```
 
 **Configuración para la ruta 2 (1.000 €-10.000 €):**
+
 ```
 Field: Total_Amount
 Operator: IS BETWEEN
@@ -90,6 +94,7 @@ Currency: EUR
 ```
 
 **Configuración para la ruta 3 (> 10.000 €):**
+
 ```
 Field: Total_Amount
 Operator: IS GREATER THAN
@@ -99,27 +104,29 @@ Currency: EUR
 
 **Referencia de guía:** [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md)
 
----
+***
 
 ### Paso 2A: Aprobar automáticamente las facturas pequeñas (< 1.000 €)
 
 **No se necesita ninguna tarea para importes pequeños**
 
 **Tarjetas:**
-- ACTION_SET_FIELD_TO_TEXT
-  - Establecer "Approval_Type" = "AUTO"
-  - Establecer "Approval_Reason" = "Amount below threshold"
-- ACTION_APPROVE_DOCUMENT
+
+* ACTION\_SET\_FIELD\_TO\_TEXT
+  * Establecer "Approval\_Type" = "AUTO"
+  * Establecer "Approval\_Reason" = "Cantidad por debajo del umbral"
+* ACTION\_APPROVE\_DOCUMENT
 
 **Resultado:** Documento aprobado automáticamente, no se crea ninguna tarea
 
----
+***
 
 ### Paso 2B: Crear la tarea de aprobación del Manager (1.000 €-10.000 €)
 
-**Tarjeta:** tasks_create (se recomienda la v4)
+**Tarjeta:** tasks\_create (se recomienda la v4)
 
 **Configuración:**
+
 ```json
 {
   "task_type": "Approval",
@@ -134,22 +141,24 @@ Currency: EUR
 ```
 
 **Asignación de campos:**
-- `{{DOCUMENT_NUMBER}}` - ID de documento automático
-- `{{Total_Amount}}` - Campo: Total_Amount
-- `{{Supplier_Name}}` - Campo: Supplier_Name
-- `{{Invoice_Number}}` - Campo: Invoice_Number
-- `{{Invoice_Date}}` - Campo: Invoice_Date
-- `{{Approving_Manager}}` - Campo o usuario fijo
+
+* `{{DOCUMENT_NUMBER}}` - ID de documento automático
+* `{{Total_Amount}}` - Campo: Total\_Amount
+* `{{Supplier_Name}}` - Campo: Supplier\_Name
+* `{{Invoice_Number}}` - Campo: Invoice\_Number
+* `{{Invoice_Date}}` - Campo: Invoice\_Date
+* `{{Approving_Manager}}` - Campo o usuario fijo
 
 **Referencia de guía:** [Guía de asignación de tareas](../then/task/task-assignment-guide.md)
 
----
+***
 
 ### Paso 2C: Crear tareas de doble aprobación (> 10.000 €)
 
 **Dos tareas secuenciales para facturas de alto valor**
 
 **Tarea 1: Aprobación del Manager**
+
 ```json
 {
   "task_type": "First Approval",
@@ -164,6 +173,7 @@ Currency: EUR
 ```
 
 **Tarea 2: Aprobación del Director (creada tras finalizar la Tarea 1)**
+
 ```json
 {
   "task_type": "Second Approval",
@@ -177,13 +187,14 @@ Currency: EUR
 }
 ```
 
----
+***
 
 ### Paso 3: Asignar la tarea a un usuario/grupo
 
-**Tarjeta:** ACTION_ASSIGN_TO_USER o ACTION_ASSIGN_TO_GROUP
+**Tarjeta:** ACTION\_ASSIGN\_TO\_USER o ACTION\_ASSIGN\_TO\_GROUP
 
 **Opción 1: Asignar a un usuario específico**
+
 ```
 User: John.Smith@company.com
 OR
@@ -191,6 +202,7 @@ User Field: {{DOCUMENT_FIELD:Approving_Manager}}
 ```
 
 **Opción 2: Asignar a un grupo**
+
 ```
 Group: Finance Managers
 Assignment Mode: First Available
@@ -201,6 +213,7 @@ Assignment Mode: All (everyone in group gets task)
 ```
 
 **Opción 3: Asignación secuencial**
+
 ```
 Card: ACTION_ASSIGN_SEQUENTIALLY_TO_USER
 
@@ -211,13 +224,14 @@ User 3: CFO (only if User 2 approves)
 
 **Referencia de guía:** [Guía de asignación a usuario](../then/assignee/assignment-user-guide.md)
 
----
+***
 
 ### Paso 4: Enviar la notificación por correo electrónico
 
-**Tarjeta:** ACTION_SEND_EMAIL_TO_GROUPS
+**Tarjeta:** ACTION\_SEND\_EMAIL\_TO\_GROUPS
 
 **Configuración:**
+
 ```json
 {
   "recipients": [
@@ -230,38 +244,42 @@ User 3: CFO (only if User 2 approves)
 ```
 
 **Variables de correo electrónico:**
-- `{{TASK_ASSIGNEE_EMAIL}}` - Correo electrónico del responsable de la tarea
-- `{{TASK_ASSIGNEE_NAME}}` - Nombre del responsable de la tarea
-- `{{DOCUMENT_NUMBER}}` - ID de documento
-- `{{TASK_DEADLINE}}` - Fecha de vencimiento de la tarea
-- `{{TASK_PRIORITY}}` - Nivel de prioridad de la tarea
-- `{{DOCUMENT_LINK}}` - Enlace directo al documento
+
+* `{{TASK_ASSIGNEE_EMAIL}}` - Correo electrónico del responsable de la tarea
+* `{{TASK_ASSIGNEE_NAME}}` - Nombre del responsable de la tarea
+* `{{DOCUMENT_NUMBER}}` - ID de documento
+* `{{TASK_DEADLINE}}` - Fecha de vencimiento de la tarea
+* `{{TASK_PRIORITY}}` - Nivel de prioridad de la tarea
+* `{{DOCUMENT_LINK}}` - Enlace directo al documento
 
 **Referencia de guía:** [Guía de envío de correo a grupos](../then/action/send-email-groups-guide.md)
 
----
+***
 
 ### Paso 5: Hacer seguimiento del estado de la tarea
 
-**Tarjeta:** CONDITION_TASK_STATUS o un comprobador de estado de tarea similar
+**Tarjeta:** CONDITION\_TASK\_STATUS o un comprobador de estado de tarea similar
 
 **Configuración:**
+
 ```
 Task ID: {{CREATED_TASK_ID}}
 Status Check: IS COMPLETED
 ```
 
 **Opciones de estado:**
-- CREATED - Tarea recién creada
-- ASSIGNED - Tarea asignada a un usuario
-- IN_PROGRESS - El usuario ha empezado a trabajar en la tarea
-- COMPLETED - Tarea finalizada
-- APPROVED - Tarea aprobada
-- REJECTED - Tarea rechazada
-- CANCELLED - Tarea cancelada
-- OVERDUE - Tarea vencida
+
+* CREATED - Tarea recién creada
+* ASSIGNED - Tarea asignada a un usuario
+* IN\_PROGRESS - El usuario ha empezado a trabajar en la tarea
+* COMPLETED - Tarea finalizada
+* HOMOLOGADO - Tarea aprobada
+* REJECTED - Tarea rechazada
+* CANCELADO - Tarea cancelada
+* OVERDUE - Tarea vencida
 
 **Lógica:**
+
 ```
 IF TASK_STATUS = COMPLETED AND TASK_RESULT = APPROVED:
   → Continue to next step (or next approval level)
@@ -279,13 +297,14 @@ IF TASK_STATUS = OVERDUE:
   → Create escalation task
 ```
 
----
+***
 
 ### Paso 6: Completar el flujo de trabajo según el resultado de la tarea
 
 **Tras finalizar la tarea:**
 
 **Escenario A: Tarea aprobada**
+
 ```
 1. Set field "Approval_Status" = "APPROVED"
 2. Set field "Approved_By" = {{TASK_COMPLETED_BY}}
@@ -295,6 +314,7 @@ IF TASK_STATUS = OVERDUE:
 ```
 
 **Escenario B: Tarea rechazada**
+
 ```
 1. Set field "Approval_Status" = "REJECTED"
 2. Set field "Rejected_By" = {{TASK_COMPLETED_BY}}
@@ -305,6 +325,7 @@ IF TASK_STATUS = OVERDUE:
 ```
 
 **Escenario C: Tarea vencida**
+
 ```
 1. Set field "Task_Status" = "OVERDUE"
 2. Create escalation task for manager
@@ -313,7 +334,7 @@ IF TASK_STATUS = OVERDUE:
 5. Log overdue event
 ```
 
----
+***
 
 ## Diagrama del flujo de trabajo completo
 
@@ -418,7 +439,7 @@ INVOICE ARRIVES
 └─ [Amount check complete]
 ```
 
----
+***
 
 ## Plantillas de configuración
 
@@ -436,7 +457,7 @@ INVOICE ARRIVES
 }
 ```
 
----
+***
 
 ### Plantilla 2: Tarea de revisión con detalles
 
@@ -452,7 +473,7 @@ INVOICE ARRIVES
 }
 ```
 
----
+***
 
 ### Plantilla 3: Tarea de escalado
 
@@ -469,7 +490,7 @@ INVOICE ARRIVES
 }
 ```
 
----
+***
 
 ## Patrones avanzados
 
@@ -488,6 +509,7 @@ Level 1: Accounts Clerk (verify data)
 ```
 
 **Implementación:**
+
 ```
 1. Create Task 1 for Clerk
 2. Wait for Task 1 completion
@@ -501,7 +523,7 @@ Level 1: Accounts Clerk (verify data)
      Approve Document
 ```
 
----
+***
 
 ### Patrón 2: Aprobación paralela con varios aprobadores
 
@@ -517,6 +539,7 @@ Document approved only when ALL approve
 ```
 
 **Implementación:**
+
 ```
 1. Create 3 tasks simultaneously
 2. Track all 3 task statuses
@@ -527,7 +550,7 @@ Document approved only when ALL approve
      Reject Document
 ```
 
----
+***
 
 ### Patrón 3: Creación condicional de tareas
 
@@ -544,7 +567,7 @@ ELSE:
   → Create "Standard Approval" task
 ```
 
----
+***
 
 ### Patrón 4: Escalado basado en fechas límite
 
@@ -562,7 +585,7 @@ Day 5: IF still not completed:
          → High priority notification
 ```
 
----
+***
 
 ## Gestión de errores
 
@@ -571,6 +594,7 @@ Day 5: IF still not completed:
 **Problema:** El usuario no existe o está inactivo
 
 **Solución:**
+
 ```
 1. Check user status with CONDITION_USER_IS_ISNOT
 2. IF User = INACTIVE:
@@ -580,13 +604,14 @@ Day 5: IF still not completed:
 3. Send notification to admin
 ```
 
----
+***
 
 ### Escenario 2: Error al crear la tarea
 
 **Problema:** Error del sistema al crear la tarea
 
 **Solución:**
+
 ```
 1. Check task creation status
 2. IF Failed:
@@ -596,13 +621,14 @@ Day 5: IF still not completed:
      → Log error details
 ```
 
----
+***
 
 ### Escenario 3: Sin respuesta a la tarea
 
 **Problema:** El usuario no completa la tarea antes de la fecha límite
 
 **Solución:**
+
 ```
 1. Monitor task deadline
 2. Day before deadline:
@@ -615,25 +641,25 @@ Day 5: IF still not completed:
      → Log overdue event
 ```
 
----
+***
 
 ## Lista de comprobación para pruebas
 
-- [ ] Tarea creada correctamente
-- [ ] Tarea asignada al usuario/grupo correcto
-- [ ] Notificación por correo electrónico enviada
-- [ ] La tarea aparece en la lista de tareas del usuario
-- [ ] Propiedades de la tarea correctas (título, descripción, prioridad, fecha límite)
-- [ ] El usuario puede completar la tarea
-- [ ] El flujo de trabajo continúa tras la finalización de la tarea
-- [ ] El flujo de aprobación funciona correctamente
-- [ ] El flujo de rechazo funciona correctamente
-- [ ] El escalado se activa en el momento adecuado
-- [ ] La gestión de tareas vencidas funciona
-- [ ] Todas las notificaciones por correo electrónico se envían
-- [ ] Las actualizaciones de campos funcionan correctamente
+* [ ] Tarea creada correctamente
+* [ ] Tarea asignada al usuario/grupo correcto
+* [ ] Notificación por correo electrónico enviada
+* [ ] La tarea aparece en la lista de tareas del usuario
+* [ ] Propiedades de la tarea correctas (título, descripción, prioridad, fecha límite)
+* [ ] El usuario puede completar la tarea
+* [ ] El flujo de trabajo continúa tras la finalización de la tarea
+* [ ] El flujo de aprobación funciona correctamente
+* [ ] El flujo de rechazo funciona correctamente
+* [ ] El escalado se activa en el momento adecuado
+* [ ] La gestión de tareas vencidas funciona
+* [ ] Todas las notificaciones por correo electrónico se envían
+* [ ] Las actualizaciones de campos funcionan correctamente
 
----
+***
 
 ## Ejemplos del mundo real
 
@@ -653,7 +679,7 @@ Day 5: IF still not completed:
    IF Rejected: Return to supplier
 ```
 
----
+***
 
 ### Ejemplo 2: Aprobación de factura de proveedor
 
@@ -671,7 +697,7 @@ Day 5: IF still not completed:
      Continue normal workflow
 ```
 
----
+***
 
 ### Ejemplo 3: Procesamiento de fin de mes
 
@@ -689,64 +715,65 @@ Day 5: IF still not completed:
 4. Track completion
 ```
 
----
+***
 
 ## Consejos de rendimiento
 
 ✅ **Buenas prácticas:**
-- Establezca fechas límite realistas
-- Use títulos y descripciones de tarea claros
-- Incluya toda la información necesaria en la tarea
-- Envíe notificaciones oportunas
-- Supervise las tasas de finalización de tareas
-- Escale automáticamente las tareas vencidas
-- Registre todas las actividades de las tareas
-- Revise los patrones de tareas mensualmente
+
+* Establezca fechas límite realistas
+* Use títulos y descripciones de tarea claros
+* Incluya toda la información necesaria en la tarea
+* Envíe notificaciones oportunas
+* Supervise las tasas de finalización de tareas
+* Escale automáticamente las tareas vencidas
+* Registre todas las actividades de las tareas
+* Revise los patrones de tareas mensualmente
 
 ❌ **Evite:**
-- Crear tareas para todo
-- Descripciones de tarea imprecisas
-- Fechas límite poco realistas
-- Demasiados correos electrónicos de notificación
-- No tener una ruta de escalado
-- Ignorar las tareas vencidas
-- No hacer seguimiento de las métricas de tareas
 
----
+* Crear tareas para todo
+* Descripciones de tarea imprecisas
+* Fechas límite poco realistas
+* Demasiados correos electrónicos de notificación
+* No tener una ruta de escalado
+* Ignorar las tareas vencidas
+* No hacer seguimiento de las métricas de tareas
+
+***
 
 ## Patrones relacionados
 
 ### Patrones que funcionan bien juntos:
 
-- **[Patrón de integración de API](api-integration-pattern.md)** - Crea tareas para errores de API
-- **[Patrón de cotejo de PO](po-matching-pattern.md)** - Crea tareas para discrepancias de PO
-- **[Patrón de lógica de decisión](decision-logic-pattern.md)** - Enruta al tipo de tarea adecuado
-- **[Patrón de transformación de datos](data-transformation-pattern.md)** - Transforma los datos antes de crear la tarea
+* [**Patrón de integración de API**](api-integration-pattern.md) - Crea tareas para errores de API
+* [**Patrón de cotejo de PO**](po-matching-pattern.md) - Crea tareas para discrepancias de PO
+* [**Patrón de lógica de decisión**](decision-logic-pattern.md) - Enruta al tipo de tarea adecuado
+* [**Patrón de transformación de datos**](data-transformation-pattern.md) - Transforma los datos antes de crear la tarea
 
----
+***
 
 ## Guías relacionadas
 
 ### Requisitos previos
-- [Guía de asignación de tareas](../then/task/task-assignment-guide.md) - Documentación de la tarjeta de tarea
-- [Guía de asignación a usuario](../then/assignee/assignment-user-guide.md) - Asignación de usuarios
-- [Guía de envío de correo a grupos](../then/action/send-email-groups-guide.md) - Notificaciones por correo electrónico
+
+* [Guía de asignación de tareas](../then/task/task-assignment-guide.md) - Documentación de la tarjeta de tarea
+* [Guía de asignación a usuario](../then/assignee/assignment-user-guide.md) - Asignación de usuarios
+* [Guía de envío de correo a grupos](../then/action/send-email-groups-guide.md) - Notificaciones por correo electrónico
 
 ### Tarjetas relacionadas
-- **tasks_create** - [Guía de asignación de tareas](../then/task/task-assignment-guide.md)
-- **ACTION_ASSIGN_TO_USER** - [Guía de asignación](../then/assignee/assignment-user-guide.md)
-- **ACTION_SEND_EMAIL_TO_GROUPS** - [Guía de correo electrónico](../then/action/send-email-groups-guide.md)
-- **CONDITION_TASK_STATUS** - [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md)
+
+* **tasks\_create** - [Guía de asignación de tareas](../then/task/task-assignment-guide.md)
+* **ACTION\_ASSIGN\_TO\_USER** - [Guía de asignación](../then/assignee/assignment-user-guide.md)
+* **ACTION\_SEND\_EMAIL\_TO\_GROUPS** - [Guía de correo electrónico](../then/action/send-email-groups-guide.md)
+* **CONDITION\_TASK\_STATUS** - [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md)
 
 ### Próximos pasos
-- Añadir notificaciones por correo electrónico: [Guía de envío de correo](../then/action/send-email-groups-guide.md)
-- Implementar enrutamiento complejo: [Patrón de lógica de decisión](decision-logic-pattern.md)
-- Resolver errores de tareas: [Gestión de errores](#gestion-de-errores) anterior
 
----
+* Añadir notificaciones por correo electrónico: [Guía de envío de correo](../then/action/send-email-groups-guide.md)
+* Implementar enrutamiento complejo: [Patrón de lógica de decisión](decision-logic-pattern.md)
+* Resolver errores de tareas: [Gestión de errores](task-management-pattern.md) anterior
 
-**Versión del patrón:** 1.0
-**Última actualización:** 23 de octubre de 2025
-**Dificultad:** Baja-Media
-**Tiempo estimado:** 30-45 minutos
-**Tasa de éxito:** Muy alta
+***
+
+**Versión del patrón:** 1.0 **Última actualización:** 23 de octubre de 2025 **Dificultad:** Baja-Media **Tiempo estimado:** 30-45 minutos **Tasa de éxito:** Muy alta

@@ -1,12 +1,14 @@
-# Any / All Charges
+# Cualquier/Todos los cargos
 
-<figure><img src="../../../../.gitbook/assets/workflow_cards_and_po_compare_any_all_charges.png" alt="La tarjeta en la biblioteca de tarjetas, versión 2 y versión 3"><figcaption><p>La tarjeta en la biblioteca de tarjetas. Versión 2 arriba, versión 3 abajo.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-420a0e403552-v2-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-420a0e403552-v3-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
 ## **Propósito:**
 
 Esta tarjeta de flujo de trabajo compara los cargos adicionales de un documento con los cargos adicionales de la orden de compra correspondiente, dentro de una tolerancia definida. Responde a una sola pregunta: ¿coinciden el documento y la orden de compra en los cargos adicionales? Se compara cada cargo que la conciliación de la orden de compra haya emparejado, por lo que no hay que indicar ningún nombre de campo en la tarjeta.
 
-Esta tarjeta se distingue de **Compare Total Charges**, que compara un único campo del documento con un solo cargo identificado mediante un Charge ID. Utilice esta tarjeta cuando todos los cargos emparejados del documento deban comprobarse a la vez.
+Esta tarjeta se distingue de **Comparar cargos totales**, que compara un único campo del documento con un solo cargo identificado mediante un Charge ID. Utilice esta tarjeta cuando todos los cargos emparejados del documento deban comprobarse a la vez.
 
 La conciliación de la orden de compra debe ejecutarse antes de esta tarjeta. Si el documento no tiene una orden de compra correspondiente, la tarjeta detiene el flujo de trabajo e informa de datos faltantes.
 

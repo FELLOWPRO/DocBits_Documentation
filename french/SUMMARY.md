@@ -611,7 +611,7 @@
     * [Et](administration-and-setup/workflow/and/README.md)
       * [Comparer avec le bon de commande](administration-and-setup/workflow/and/compare-with-purchase-order/README.md)
         * [Prix combiné de la différence de quantité](administration-and-setup/workflow/and/compare-with-purchase-order/combined-price-of-quantity-difference.md)
-        * [Date de livraison promise pour les lignes du document dans le tableau avec la date de livraison promise](administration-and-setup/workflow/and/compare-with-purchase-order/promised-delivery-date-for-line-items-in-table-with-promised-delivery-date/README.md)
+        * [Date de livraison promise des lignes : comparaison avec le bon de commande](administration-and-setup/workflow/and/compare-with-purchase-order/promised-delivery-date-for-line-items-in-table-with-promised-delivery-date/README.md)
           * [Concept clé : la fenêtre de tolérance](administration-and-setup/workflow/and/compare-with-purchase-order/promised-delivery-date-for-line-items-in-table-with-promised-delivery-date/key-concept-tolerance-window.md)
         * [Prix unitaire combiné avec les champs](administration-and-setup/workflow/and/compare-with-purchase-order/unit-price-combined-with-fields.md)
         * [Date de livraison promise sur le bon de commande](administration-and-setup/workflow/and/compare-with-purchase-order/promised-delivery-date-on-purchase-order.md)

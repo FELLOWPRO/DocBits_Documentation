@@ -1,4 +1,4 @@
-# Test Manager
+# Gestão de testes
 
 O **Test Manager** permite-lhe guardar **cenários de teste** reutilizáveis para os seus fluxos de trabalho e executá-los em conjunto — para que possa confirmar que um fluxo de trabalho continua a funcionar corretamente depois de o alterar. Funciona tanto para fluxos de trabalho Standard como Advanced.
 
@@ -12,11 +12,11 @@ Um cenário de teste captura um fluxo de trabalho, uma entrada de exemplo e o **
 
 ## Trabalhar com cenários
 
-- **Add Test Scenario** — crie um novo cenário a partir de um fluxo de trabalho e de um documento de exemplo.
-- **Run All Tests** — execute todos os cenários de uma só vez e veja, de relance, que fluxos de trabalho continuam aprovados.
-- **View Details** — abra um cenário para inspecionar o seu resultado.
+- **Adicionar cenário de teste** — crie um novo cenário a partir de um fluxo de trabalho e de um documento de exemplo.
+- **Executar todos os testes** — execute todos os cenários de uma só vez e veja, de relance, que fluxos de trabalho continuam aprovados.
+- **Ver detalhes** — abra um cenário para inspecionar o seu resultado.
 
-<figure><img src="../../.gitbook/assets/workflow_test_manager_detail.png" alt="Detalhes do cenário de teste de fluxo de trabalho com estado, tempo de execução e dados"><figcaption><p>Detalhes do cenário — nome, estado, tempo de execução e os dados reais vs. extraídos que a execução produziu.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-u027-pt.png" alt="Detalhes de um cenário de teste; dados ocultos."><figcaption><p>Detalhes de um cenário de teste; dados ocultos.</p></figcaption></figure>
 
 A vista de detalhes mostra o nome do cenário e o **estado**, o **nome do fluxo de trabalho**, o **tempo de execução** e os dados **reais** e **extraídos** que a execução produziu — para que possa ver exatamente por que motivo um cenário foi aprovado ou reprovado.
 
@@ -24,5 +24,5 @@ A vista de detalhes mostra o nome do cenário e o **estado**, o **nome do fluxo 
 
 São duas coisas diferentes:
 
-- **Test Manager** (esta página) — cenários *guardados e repetíveis* com resultados esperados, executados em conjunto com **Run All Tests**. Use-o para testes de regressão após alterações.
-- **Testar no construtor** — os controlos inline **Validate** e **Test** dentro do construtor de Advanced Workflow, para verificações rápidas enquanto está a construir. Consulte [Validação e Testes](advanced-workflow/validation-and-testing.md).
+- **Test Manager** (esta página) — cenários *guardados e repetíveis* com resultados esperados, executados em conjunto com **Executar todos os testes**. Use-o para testes de regressão após alterações.
+- **Testar no construtor** — os controlos inline **Validar** e **Teste** dentro do construtor de Advanced Workflow, para verificações rápidas enquanto está a construir. Consulte [Validação e Testes](advanced-workflow/validation-and-testing.md).

@@ -14,7 +14,7 @@ Assim que a configuração está ativada, um novo **botão de código de barras*
 
 Aqui está o ícone em contexto na tela de validação, ao lado do documento em revisão:
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_validation_screen.png" alt="Tela de validação com o ícone de código de barras disponível"><figcaption><p>A tela de validação — o ícone de código de barras (destacado, barra de ferramentas à direita) só é exibido quando a Atribuição por código de barras está ativada.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_validation_screen-pt.png" alt="Validação de uma fatura fictícia com código de barras e código QR."><figcaption><p>Validação de uma fatura fictícia com código de barras e código QR.</p></figcaption></figure>
 
 ### Como os códigos de barras são lidos
 
@@ -32,15 +32,15 @@ Quais tipos de código de barras são detectados é controlado pela configuraç�
 2. Clique no **ícone de código de barras** na barra de ferramentas à direita.
 3. A caixa de diálogo **Atribuição por código de barras** lista cada código de barras que o DocBits detectou no documento, exibido como `Barcode <n> : <valor>`.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_dialog.png" alt="Caixa de diálogo de Atribuição por código de barras listando os códigos detectados"><figcaption><p>A caixa de diálogo de Atribuição por código de barras lista cada código detectado com uma lista suspensa para escolher o campo de destino.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_dialog-pt.png" alt="Associar códigos de barras lidos aos campos do documento."><figcaption><p>Associar códigos de barras lidos aos campos do documento.</p></figcaption></figure>
 
 4. Para cada código de barras, abra a lista suspensa e escolha o campo para o qual o valor deve ir.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_options.png" alt="Escolhendo o campo de destino para um código de barras"><figcaption><p>Cada código de barras pode ser atribuído a qualquer campo do documento — por exemplo, Número de pedido, Número de fatura, ID do fornecedor.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_field_options-pt.png" alt="Campos disponíveis na janela de associação dos códigos de barras."><figcaption><p>Campos disponíveis na janela de associação dos códigos de barras.</p></figcaption></figure>
 
 5. Assim que você seleciona um campo, ele é preenchido com o valor do código de barras.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_mapped.png" alt="Código de barras atribuído ao campo Número de pedido"><figcaption><p>Após selecionar um campo (aqui Número de pedido), o campo é preenchido com o valor do código de barras.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_field_mapped-pt.png" alt="Associação ao campo da ordem de compra sem guardar."><figcaption><p>Associação ao campo da ordem de compra sem guardar.</p></figcaption></figure>
 
 ### Como ativar
 

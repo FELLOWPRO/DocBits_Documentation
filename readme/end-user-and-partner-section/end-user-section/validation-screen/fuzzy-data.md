@@ -12,8 +12,8 @@ Os campos de Dados Fuzzy permitem que os usuários preencham campos relacionados
 
 * Eles preenchem campos relacionados com base no valor ou na entrada do campo.
 * Os três campos padrão que usam Dados Fuzzy são:
-  * **Purchase Order**
-  * **Supplier**
+  * **Ordem de compra**
+  * **Fornecedor**
   * **Vendor ID**
 
 #### **Usando os campos de Dados Fuzzy**
@@ -21,21 +21,20 @@ Os campos de Dados Fuzzy permitem que os usuários preencham campos relacionados
 1. **Selecionar um pedido de compra**
    *   Ao clicar no **ícone azul** ao lado do campo Purchase Order, abre-se uma **janela de seleção**.
 
-
-       <figure><img src="../../../.gitbook/assets/fuzzy_data_selection_window.png" alt="Janela de seleção de Dados Fuzzy"><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/s150-fuzzy_data_selection_window-pt.png" alt="Janela de pesquisa de dados mestre; registos ocultos."><figcaption><p>Janela de pesquisa de dados mestre; registos ocultos.</p></figcaption></figure>
    * Essa janela contém uma tabela com todos os pedidos de compra da **tabela de consulta de dados mestres**.
    * Ao ativar a opção **"Display all columns"**, são exibidos detalhes adicionais.
-   * Selecione um **Purchase Order** e clique em **Proceed**:
+   * Selecione um **Ordem de compra** e clique em **Prosseguir**:
      * Se o sistema encontrar um pedido de compra no documento, ele filtra por ele automaticamente.
      * Se nenhuma correspondência for encontrada, você pode **criar filtros personalizados** para localizar o pedido de compra correto.
      * É possível adicionar vários filtros; ao ativar **"Match all filters"**, todas as condições precisam ser atendidas.
      * Opções de filtro disponíveis:
-       * **Smart**
-       * **Contains**
-       * **Exact**
-       * **Starts with**
-       * **Ends with**
-   * Um botão ao lado de **Proceed** permite **criar uma nova tarefa/notificação**.
+       * **Inteligente**
+       * **Contém**
+       * **Exato**
+       * **Começa com**
+       * **Termina com**
+   * Um botão ao lado de **Prosseguir** permite **criar uma nova tarefa/notificação**.
 2. **Selecionar um fornecedor ou um Vendor ID**
    * O processo é o mesmo dos pedidos de compra.
    * A diferença é que os campos **Supplier e Vendor ID usam a tabela de dados mestres de fornecedores** em vez da tabela de dados mestres de cabeçalhos de pedidos de compra.
@@ -53,7 +52,5 @@ Os campos de Dados Fuzzy permitem que os usuários preencham campos relacionados
 {% content-ref url="../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md" %}
 [fuzzy-data-configuration-with-list-of-values.md](../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md)
 {% endcontent-ref %}
-
-
 
 {% embed url="https://www.youtube.com/watch?v=vT5HuGjAYV0" %}

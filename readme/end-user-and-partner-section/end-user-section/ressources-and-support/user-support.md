@@ -20,4 +20,4 @@ Dentro da Tela de Validação, você pode criar tickets diretamente para o docum
 
 <figure><img src="../../../.gitbook/assets/user-support3.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/user-support4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-user-support4-pt.png" alt="Formulário de suporte antes do envio."><figcaption><p>Formulário de suporte antes do envio.</p></figcaption></figure>

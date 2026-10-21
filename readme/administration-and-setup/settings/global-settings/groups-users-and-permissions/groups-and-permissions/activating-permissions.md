@@ -8,17 +8,17 @@ Habilitar ou desabilitar o sistema de permissões usando o interruptor tem vári
 
 ## **Habilitando o sistema de permissões:**
 
-<figure><img src="../../../../../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u007-pt.png" alt="Seleção de um grupo para consultar as permissões."><figcaption><p>Seleção de um grupo para consultar as permissões.</p></figcaption></figure>
 
 * Quando o sistema de permissões está habilitado, as permissões de acesso para usuários e grupos são aplicadas.
 * Os usuários só recebem acesso aos recursos que estão explicitamente autorizados a acessar com base nas permissões atribuídas.
 * Os administradores podem gerenciar as permissões para usuários e grupos individuais e garantir que apenas pessoas autorizadas possam visualizar ou editar os dados.
 
-<figure><img src="../../../../../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u004-pt.png" alt="Matriz de permissões por tipo de documento e ação. Alguns níveis de acesso permanecem em inglês."><figcaption><p>Matriz de permissões por tipo de documento e ação. Alguns níveis de acesso permanecem em inglês.</p></figcaption></figure>
 
 ## Only Assigned Documents
 
-<figure><img src="../../../../../.gitbook/assets/image (346).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u008-pt.png" alt="Níveis de acesso por ação na matriz de permissões. Alguns níveis de acesso permanecem em inglês."><figcaption><p>Níveis de acesso por ação na matriz de permissões. Alguns níveis de acesso permanecem em inglês.</p></figcaption></figure>
 
 O botão de alternância **Only Assigned Documents** controla a visibilidade dos documentos para os usuários com base em suas atribuições de grupo. Quando habilitado, os usuários só podem ver documentos atribuídos especificamente a eles ou a um grupo do qual façam parte. Quando desabilitado, os usuários com a permissão de visualização apropriada podem ver todos os documentos, independentemente da atribuição.
 
@@ -38,10 +38,12 @@ O botão de alternância **Only Assigned Documents** controla a visibilidade dos
 
 ## Desabilitando o sistema de permissões:
 
-<figure><img src="../../../../../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u009-pt.png" alt="Opção para ativar a gestão de permissões."><figcaption><p>Opção para ativar a gestão de permissões.</p></figcaption></figure>
 
 * Quando o sistema de permissões está desabilitado, todas as permissões de acesso são removidas e os usuários normalmente têm acesso irrestrito a todos os recursos.
 * Isso pode ser útil quando a colaboração aberta é temporariamente necessária sem as restrições do controle de acesso.
 * No entanto, pode haver um risco aumentado de vazamento de dados ou acesso não autorizado, pois os usuários podem ser capazes de acessar informações sensíveis às quais não estão autorizados a acessar.
 
 Habilitar ou desabilitar o sistema de permissões é uma decisão importante com base nos requisitos de segurança e na forma como a organização opera. Em ambientes onde a privacidade e o controle de acesso são críticos, é comum deixar o sistema de permissões habilitado para garantir a integridade e a confidencialidade dos dados. Em outros casos, desabilitar o sistema de permissões pode ser temporariamente necessário para facilitar a colaboração, mas deve ser usado com cautela para minimizar os potenciais riscos de segurança.
+
+A interface atual utiliza uma matriz de permissões por tipo de documento e ação. Alguns níveis de acesso podem permanecer em inglês. As instruções do antigo controlo Only Assigned Documents aplicam-se apenas às versões que o disponibilizam.

@@ -14,7 +14,7 @@ Essa configuração fica em **Configurações → Configurações Globais → In
 2. Abra a seção **Autenticação de dois fatores**.
 3. Ative **Exigir autenticação de dois fatores para todos os membros** e clique em **Salvar**.
 
-<figure><img src="../../../../.gitbook/assets/mfa-admin-requirement.png" alt="The organisation MFA requirement toggle and adoption report"><figcaption><p>Ative a exigência para todos os membros e acompanhe a adoção abaixo.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-t001-pt.png" alt="Requisito de autenticação de dois fatores na organização."><figcaption><p>Requisito de autenticação de dois fatores na organização.</p></figcaption></figure>
 
 Após salvar, a alteração entra em vigor em até um minuto. A partir de então:
 

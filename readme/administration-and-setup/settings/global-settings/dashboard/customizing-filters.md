@@ -30,7 +30,7 @@ Usar filtros permite que os usuários encontrem rapidamente informações releva
 
 * Abra o menu de filtro nas configurações sob Painel e clique em "Filtros".
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_3.png)
+<figure><img src="../../../../.gitbook/assets/prior-u015-pt.png" alt="Estilo do filtro de estado e filtro personalizado do painel."><figcaption><p>Estilo do filtro de estado e filtro personalizado do painel.</p></figcaption></figure>
 
 * Selecione o campo a ser filtrado (por exemplo, Status).
 

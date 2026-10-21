@@ -40,16 +40,6 @@
     * [Guida diagnostica all'esportazione dell'API M3](overview-and-basics/faq/infor-m3-m3-integration/m3-api-export-diagnostic-guide.md)
   * [Canali PDP/PPF obbligatori – PEPPOL solo come trasporto per la fatturazione elettronica 2026 in Francia](overview-and-basics/faq/mandatory-pdp-ppf-channels-peppol-as-transport-only-for-frances-2026-e-invoicing.md)
 
-## Sicurezza <a href="#security" id="security"></a>
-
-* [FAQ Sicurezza e Conformità](security/security-and-compliance-faq.md)
-* [Archiviazione sicura delle credenziali](security/secure-storage-of-credentials.md)
-* [Crittografia dei dati a riposo](security/encryption-at-rest.md)
-* [Cookie e archiviazione del browser](security/cookies-and-browser-storage.md)
-* [Gestione delle vulnerabilità](security/vulnerability-management.md)
-* [Altri controlli di sicurezza](security/other-security-controls.md)
-* [Autenticazione a due fattori (2FA)](security/two-factor-authentication.md)
-
 ## Sezione Utenti finali e partner <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [Sezione utente finale](end-user-and-partner-section/end-user-section/README.md)
@@ -902,3 +892,13 @@
 * [Collegare DocBits a Power BI](advanced-functions-and-tools/powerbi.md)
   * [Collegamento tramite ClickHouse](advanced-functions-and-tools/powerbi/powerbi.md)
   * [Collegamento tramite database in sola lettura](advanced-functions-and-tools/powerbi/connect-via-read-only-database.md)
+
+## Sicurezza <a href="#security" id="security"></a>
+
+* [FAQ Sicurezza e Conformità](security/security-and-compliance-faq.md)
+* [Archiviazione sicura delle credenziali](security/secure-storage-of-credentials.md)
+* [Crittografia dei dati a riposo](security/encryption-at-rest.md)
+* [Cookie e archiviazione del browser](security/cookies-and-browser-storage.md)
+* [Gestione delle vulnerabilità](security/vulnerability-management.md)
+* [Altri controlli di sicurezza](security/other-security-controls.md)
+* [Autenticazione a due fattori (2FA)](security/two-factor-authentication.md)

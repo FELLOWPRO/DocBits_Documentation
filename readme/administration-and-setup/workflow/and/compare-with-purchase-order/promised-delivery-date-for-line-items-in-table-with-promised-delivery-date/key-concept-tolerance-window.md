@@ -1,4 +1,4 @@
-# Key Concept: Tolerance Window
+# Conceito Chave: Janela de Tolerância
 
 Antes de analisar os operadores, é importante compreender como a janela de tolerância é calculada.
 
@@ -9,10 +9,10 @@ A janela de tolerância define um intervalo de datas aceitáveis em torno da dat
 **Exemplo:**
 
 * Data da Ordem de Compra: **9 de janeiro**
-* Tolerance Days: **3**
+* Dias de tolerância: **3**
 * Janela de Tolerância: **6 de janeiro → 12 de janeiro**
 
-> <mark style="color:red;">Apenas os</mark> <mark style="color:red;"></mark><mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;"></mark><mark style="color:red;">selecionados (dias da semana) são contabilizados ao calcular esta janela.</mark>
+> <mark style="color:red;">Apenas os</mark> <mark style="color:red;"></mark><mark style="color:red;">**Dias de tolerância permitidos**</mark> <mark style="color:red;"></mark><mark style="color:red;">selecionados (dias da semana) são contabilizados ao calcular esta janela.</mark>
 
 ### Exemplo de cronologia visual
 
@@ -25,7 +25,7 @@ A janela de tolerância define um intervalo de datas aceitáveis em torno da dat
 
 ### Comportamento dos operadores explicado com exemplos
 
-* **Equals (=)**
+* **Igual (=)**
   * **Significado:**\
     A data de entrega da linha de item tem de estar _dentro_ da janela de tolerância.
   * **Datas válidas:**
@@ -33,7 +33,7 @@ A janela de tolerância define um intervalo de datas aceitáveis em torno da dat
   * **Datas inválidas:**
     * Qualquer data **antes de 6 de janeiro**
     * Qualquer data **depois de 12 de janeiro**
-* **Not Equals (≠)**
+* **Diferente (≠)**
   * **Significado:**\
     A data de entrega da linha de item tem de estar _fora_ da janela de tolerância.
   * **Datas válidas:**
@@ -41,7 +41,7 @@ A janela de tolerância define um intervalo de datas aceitáveis em torno da dat
     * Qualquer data **depois de 12 de janeiro**
   * **Datas inválidas:**
     * Datas entre **6 de janeiro e 12 de janeiro**
-* **Greater or Equals (≥)**
+* **Maior ou Igual (≥)**
   * **Significado:**\
     A data de entrega da linha de item tem de ser igual ou posterior ao **início da janela de tolerância**.
   * **Datas válidas:**
@@ -50,21 +50,21 @@ A janela de tolerância define um intervalo de datas aceitáveis em torno da dat
     * Qualquer data **antes de 6 de janeiro**
   * <mark style="color:red;">**Importante:**</mark>\
     Este operador permite datas _dentro_ da janela de tolerância **e para além dela**.
-* **Lesser or Equals (≤)**
+* **Menor ou Igual (≤)**
   * **Significado:**\
     A data de entrega da linha de item tem de ser igual ou anterior ao **fim da janela de tolerância**.
   * **Datas válidas:**
     * Qualquer data passada até **12 de janeiro**
   * **Datas inválidas:**
     * Qualquer data **depois de 12 de janeiro**
-* **Greater Than (>)**
+* **Maior que (>)**
   * **Significado:**\
     A data de entrega da linha de item tem de ser _estritamente posterior_ à janela de tolerância.
   * **Datas válidas:**
     * **13 de janeiro → qualquer data futura**
   * **Datas inválidas:**
     * Qualquer data **igual ou anterior a 12 de janeiro**
-* **Lesser Than (<)**
+* **Menor que (<)**
   * **Significado:**\
     A data de entrega da linha de item tem de ser _estritamente anterior_ à janela de tolerância.
   * **Datas válidas:**
@@ -82,8 +82,8 @@ Os dias que não estão selecionados (como fins de semana ou dias da semana excl
 **Configuração:**
 
 * Data da Ordem de Compra: **quarta-feira, 9 de janeiro**
-* Tolerance Days: **3**
-* Allowed Tolerance Days: **segunda, terça, quarta, quinta, sexta**
+* Dias de tolerância: **3**
+* Dias de tolerância permitidos: **segunda, terça, quarta, quinta, sexta**
 * Fins de semana (sábado, domingo): **Não selecionados**
 
 #### Cálculo passo a passo

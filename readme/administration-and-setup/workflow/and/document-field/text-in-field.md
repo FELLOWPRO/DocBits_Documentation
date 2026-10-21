@@ -1,6 +1,6 @@
-# Text in Field
+# Texto no campo
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-61d692604341-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,15 +8,15 @@ Este cartão de fluxo de trabalho foi concebido para automatizar ações com bas
 
 ## **Componentes do cartão:**
 
-1. **Text**
+1. **Texto**
    * **Descrição:** Especifica a cadeia de texto a verificar dentro do campo.
    * **Detalhe:** Pode ser uma palavra, frase ou sequência de caracteres relevante para o fluxo de trabalho.
 2. **Operador**
    * **Descrição:** Define a condição para a presença de texto no campo.
    * **Opções:**
      * **Is:** Aciona o fluxo de trabalho se o texto especificado estiver presente no campo.
-     * **Is Not:** Aciona o fluxo de trabalho se o texto especificado não estiver presente no campo.
-3. **Field Name**
+     * **Não é:** Aciona o fluxo de trabalho se o texto especificado não estiver presente no campo.
+3. **Nome do campo**
    * **Descrição:** Especifica o nome do campo de documento a avaliar.
    * **Detalhe:** Tem de corresponder ao identificador exato do campo dentro do documento.
 
@@ -29,10 +29,22 @@ Este cartão de fluxo de trabalho foi concebido para automatizar ações com bas
    * **Condição Falsa:**\
      Se a presença do texto no campo não corresponder à condição, podem ser tomadas ações alternativas ou nenhuma ação, consoante a configuração do fluxo de trabalho.
 
-## **Configuração:**&#x20;
+## **Configuração:**
 
 * O utilizador introduz o texto a verificar. De seguida, seleciona o nome do campo do documento relevante.
 
 ## **Conclusão:**
 
 O cartão de fluxo de trabalho "Text Presence in Field" é uma ferramenta simples mas poderosa para a análise de conteúdo de documentos. Ao automatizar ações com base na deteção de texto, este cartão apoia fluxos de trabalho mais inteligentes, melhora a precisão do tratamento de documentos e reduz o esforço manual.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemplo prático
+
+**Quando usar:** Encontre documentos que contenham um marcador de revisão.
+
+**Configuração:** Selecione o campo de texto `review_note`, que contém o operador e o texto `manual review`.
+
+**Resultado esperado e contra-exemplo:** `Please start manual review` passa. `Ready for export` não contém o texto selecionado e falha.
+
+Esta é uma configuração ilustrativa e resultado esperado. Utilize campos, usuários e grupos configurados em sua organização de teste; não é uma afirmação de que este exemplo foi executado.

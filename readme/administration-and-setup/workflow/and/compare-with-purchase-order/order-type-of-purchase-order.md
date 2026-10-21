@@ -1,6 +1,6 @@
-# Order Type of Purchase Order
+# Tipo de pedido de compra
 
-<figure><img src="../../../../.gitbook/assets/image (277).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8a1cb3a5f80f-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,7 +8,7 @@ Este cartão de fluxo de trabalho foi concebido para comparar o tipo de encomend
 
 ## **Componentes do cartão:**
 
-1. **Any/All:**
+1. **Qualquer/Todos:**
    * **Descrição**: Define se a condição se aplica a alguma ou a todas as ordens de compra avaliadas no fluxo de trabalho.
    * **Opções**:
      * **Any**: A condição é cumprida se alguma das ordens de compra corresponder à condição especificada.
@@ -16,9 +16,9 @@ Este cartão de fluxo de trabalho foi concebido para comparar o tipo de encomend
 2. **Operador:**
    * **Descrição**: Define a condição que será aplicada para comparar o tipo de encomenda com um valor especificado.
    * **Opções**:
-     * **Equals (=)**: Verifica se o tipo de encomenda corresponde ao valor especificado.
-     * **Not Equals (≠)**: Garante que o tipo de encomenda é diferente do valor especificado.
-3. **Order Type:**
+     * **Igual a (=)**: Verifica se o tipo de encomenda corresponde ao valor especificado.
+     * **Não é igual (≠)**: Garante que o tipo de encomenda é diferente do valor especificado.
+3. **Tipo de pedido:**
    * **Descrição**: Especifica o valor com o qual o tipo de encomenda da ordem de compra será comparado.
    * **Detalhe**: O valor tem de corresponder ao tipo de encomenda ou classificação no sistema.
 

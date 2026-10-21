@@ -1,59 +1,61 @@
-# And: escolha um cartão de condição
+# E
 
-Use um cartão **And** para decidir se um workflow deve continuar após o gatilho **When**. Adicione as verificações necessárias antes da ação **Then**. Cada cartão mostra campos a preencher, como **Operator**, **Field Name** ou **Value**; as capturas de tela mostram os modelos de cartão disponíveis, não regras já preenchidas.
+Use um cartão **E** para decidir se um fluxo de trabalho deve continuar após seu acionador **Quando**. Adicione as verificações necessárias antes da ação **Então**. Cada cartão mostra campos para preencher, como **Operador**, **Nome do campo** ou **Valor**; as capturas de tela mostram os modelos de cartão disponíveis, não as regras concluídas.
 
-No **Workflow Builder**, selecione **Add Card** em **And...**. Escolha uma categoria à esquerda ou digite o nome de um cartão em **Search Card**. Selecione a pré-visualização de um cartão para adicioná-lo ao workflow. Você pode rolar a lista de pré-visualizações para ver mais cartões. Use **×** para fechar o seletor sem escolher outro cartão. Depois de configurar os cartões, salve o workflow. Consulte [Workflow](../README.md) para ver as etapas **When**, **And** e **Then** em conjunto.
+No **Construtor de fluxo de trabalho**, selecione **Adicionar cartão** em **E...**. Escolha uma categoria à esquerda ou digite o nome do cartão em **Cartão de pesquisa**. Selecione uma visualização do cartão para adicioná-lo ao fluxo de trabalho. Você pode rolar a lista de visualização para ver mais cartões. Use **×** para fechar o seletor sem escolher outro cartão. Após configurar os cartões, salve o fluxo de trabalho. Consulte [Fluxo de trabalho](..) para as etapas **Quando**, **E** e **Então** circundantes.
 
-## Compare with Purchase Order
+## Comparar com pedido de compra
 
-Use estes cartões para comparar dados de pedido ou de fatura com um pedido de compra, como preço unitário, data de entrega prometida, encargos ou quantidade. Escolha os campos, o operador e a tolerância que o cartão selecionado solicitar. Consulte [Compare with Purchase Order](compare-with-purchase-order/README.md) para ver os cartões individuais.
+Use esses cartões para comparar dados de pedidos ou faturas com um pedido de compra, como preço unitário, data de entrega prometida, encargos ou quantidade. Escolha os campos, a operadora e qualquer tolerância que o cartão selecionado solicite. Consulte [Comparar com pedido de compra](compare-with-purchase-order) para cartões individuais.
 
-<figure><img src="../../../.gitbook/assets/and-category-po-comparison-en.png" alt="Seletor de cartões And em inglês com Compare with Purchase Order selecionado; as pré-visualizações visíveis incluem comparações de preço unitário, data de entrega, encargos e quantidade."><figcaption>Categoria Compare with Purchase Order no Sandbox em inglês.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-72e8f3204ac8-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
-## Document Field
+## Campo do documento
 
-Escolha esta categoria para verificar uma caixa de seleção ou o status de um campo, comparar um campo com um valor ou comparar dois campos. Preencha os campos **Field Name** e **Operator** do cartão escolhido. Algumas comparações também pedem uma tolerância. Consulte [Document Field](document-field/README.md).
+Escolha esta categoria para marcar uma caixa de seleção ou status de campo, comparar um campo com um valor ou comparar dois campos. Preencha os espaços reservados **Nome do campo** e **Operador** no cartão escolhido. Algumas comparações também pedem tolerância. Consulte [Campo do Documento](document-field).
 
-<figure><img src="../../../.gitbook/assets/and-category-document-field-en.png" alt="Seletor de cartões And em inglês com Document Field selecionado; as pré-visualizações visíveis verificam uma caixa de seleção, o status de um campo, valores de campos e comparações entre dois campos."><figcaption>As verificações de Document Field usam valores do documento atual.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-833c7249ffc8-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
-## Date & Time
+## Data e hora
 
-Use **Date & Time** para comparar uma data ou hora com um intervalo, ou para comparar **Today** com uma data escolhida. Selecione o **Operator** e os valores de data no cartão. Consulte [Date & Time](date-and-time/README.md).
+Use **Data e Hora** para comparar uma data ou hora com um intervalo, ou compare **Hoje** com uma data escolhida. Selecione o **Operador** e os valores de data no cartão. Consulte [Data e Hora](date-and-time).
 
-<figure><img src="../../../.gitbook/assets/and-category-date-time-en.png" alt="Seletor de cartões And em inglês com Date & Time selecionado; duas pré-visualizações comparam uma data ou hora com um intervalo e comparam Today com uma Date."><figcaption>Date & Time oferece uma verificação de intervalo e uma verificação em relação à data de hoje.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-1ee68574d713-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
-## Document
+## Documento
 
-Use estes cartões quando um workflow deve depender do **tipo de documento** ou da **suborganização**. Escolha o tipo ou a organização indicados no cartão. Consulte [Document](document/README.md).
+Use esses cartões quando um fluxo de trabalho depender do **tipo de documento** ou **suborganização**. Escolha o tipo ou organização indicada no cartão. Veja [Documento](document).
 
-<figure><img src="../../../.gitbook/assets/and-category-document-en.png" alt="Seletor de cartões And em inglês com Document selecionado; as pré-visualizações verificam o tipo de documento e a participação em uma suborganização."><figcaption>As condições de Document verificam o tipo ou a suborganização.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-3c1a15fa2e11-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
-## Logic
+## Lógica
 
-Esta categoria inclui verificações com uma tabela de decisão, uma resposta HTTPS, a disponibilidade de um módulo, o preço cotado de um item, um valor de chance ou dois valores. Abra o cartão específico e preencha os campos indicados; por exemplo, o cartão HTTPS pede uma URL, um método e um código de status aceito. Consulte [Logic](logic/README.md).
+Esta categoria inclui verificações usando uma tabela de decisão, uma resposta HTTPS, disponibilidade de módulo, preço de item cotado, valor de chance ou dois valores. Abra o cartão específico e preencha os espaços reservados nomeados; por exemplo, o cartão HTTPS solicita um URL, um método e um código de status aceito. Veja [Lógica](logic).
 
-<figure><img src="../../../.gitbook/assets/and-category-logic-en.png" alt="Seletor de cartões And em inglês com Logic selecionado; as pré-visualizações incluem cartões de tabela de decisão, requisição HTTPS, módulo ativo, preço cotado, chance e comparação de valores."><figcaption>Logic oferece vários tipos de condição; escolha o que corresponde à sua regra.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-6b17199fc268-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
-## Status
+## Estado
 
-Use **Status** para verificar se um documento tem um determinado status ou se o status dele está em um conjunto selecionado. Escolha o **Operator** e o **Status** no cartão. Consulte [Status](status/README.md).
+Use **Estado** para verificar se um documento tem um status escolhido ou se seu status está em um conjunto selecionado. Escolha **Operador** e **Estado** no cartão. Consulte [Status](status).
 
-<figure><img src="../../../.gitbook/assets/and-category-status-en.png" alt="Seletor de cartões And em inglês com Status selecionado; duas pré-visualizações comparam o Document status com um Status ou com um conjunto de status."><figcaption>As condições de Status verificam o estado atual do documento.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-ff11a606e5a1-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
-## Table
+## Tabela
 
-Estes cartões examinam as linhas de tabelas do documento. As opções visíveis incluem verificações de data, padrões de texto, prazo de validade e comparações entre colunas. Selecione o **Table name** e o **Column Name** antes de escolher um operador ou padrão. Consulte [Table](table/README.md).
+Esses cartões examinam as linhas da tabela do documento. As opções visíveis incluem verificações de data, padrões de texto, prazo de validade e comparações entre colunas. Selecione **Nome da tabela** e **Nome da coluna** antes de escolher um operador ou padrão. Veja [Tabela](table).
 
-<figure><img src="../../../.gitbook/assets/and-category-table-en.png" alt="Seletor de cartões And em inglês com Table selecionado; as pré-visualizações visíveis incluem comparações de data, padrão regex, prazo de validade e colunas de tabela."><figcaption>As condições de Table usam linhas e colunas de uma tabela do documento.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-526dc164847b-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
-## Compare with Quote Price
+## Compare com o preço de cotação
 
-Use estes cartões para comparar um item com dados de preço cotado. As opções visíveis abrangem ID do item, tipo de fornecedor, ID do item do fornecedor, preço unitário e unidade de medida. O **Operator** e os campos de dados dependem do cartão selecionado.
+Use esses cartões para comparar um item com dados de preços cotados. As opções visíveis abrangem ID do item, tipo de fornecedor, ID do item do fornecedor, preço unitário e unidade de medida. O **Operador** e os espaços reservados para dados dependem do cartão selecionado.
 
-<figure><img src="../../../.gitbook/assets/and-category-quote-price-en.png" alt="Seletor de cartões And em inglês com Compare with Quote Price selecionado; cinco pré-visualizações abrangem ID do item, tipo de fornecedor, ID do item do fornecedor, preço unitário e unidade de medida."><figcaption>Compare with Quote Price é uma categoria separada no seletor de cartões atual.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-4a7af1d99c73-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
-## Assignee
+## Responsável
 
-Use **Assignee** quando a condição depende do usuário ou do grupo atribuído. Escolha se deseja comparar com um único usuário ou grupo ou com um conjunto selecionado. Consulte [Assignee](assignee/README.md).
+Use **Responsável** quando a condição depender do usuário ou grupo atribuído. Escolha se deseja comparar com um usuário ou grupo ou com um conjunto selecionado. Consulte [Cessionário](assignee).
 
-<figure><img src="../../../.gitbook/assets/and-category-assignee-en.png" alt="Seletor de cartões And em inglês com Assignee selecionado; as pré-visualizações comparam o usuário ou grupo atribuído com uma ou várias opções."><figcaption>As condições de Assignee verificam o usuário ou grupo atribuído ao documento.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-08cbb6fd429c-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
+
+[Cartões detalhados de comparação de cotações e comportamento Qualquer/Todo](../cards-overview/quote-comparison-guide.md).

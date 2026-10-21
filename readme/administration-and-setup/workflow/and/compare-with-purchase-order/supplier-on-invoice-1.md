@@ -2,9 +2,9 @@
 hidden: true
 ---
 
-# Supplier on Invoice
+# Fornecedor na fatura
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f5b5666e94fe-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
 ## **Propósito**
 
@@ -12,10 +12,10 @@ Este cartão DocBits permite uma comparação detalhada, comparando o fornecedor
 
 ## **Funcionalidade:**
 
-* **Supplier on Invoice Supplier on Purchase Order:** Este cartão verifica se o fornecedor na fatura é o mesmo que na confirmação de encomenda ou não.
+* **Fornecedor na fatura Fornecedor no pedido de compra:** Este cartão verifica se o fornecedor na fatura é o mesmo que na confirmação de encomenda ou não.
 * **Valor do operador:** Os utilizadores podem definir condições específicas, como: o fornecedor que emitiu a fatura é o mesmo que consta na PO ou não. Os operadores disponíveis incluem:
   * **Is (=):** Verifica se o fornecedor na fatura corresponde ao fornecedor na confirmação de encomenda.
-  * **Is not (≠):** Garante que o fornecedor que emitiu a fatura é o mesmo que na confirmação de encomenda.
+  * **Não é (≠):** Garante que o fornecedor que emitiu a fatura é o mesmo que na confirmação de encomenda.
 
 ## **Utilização:**
 

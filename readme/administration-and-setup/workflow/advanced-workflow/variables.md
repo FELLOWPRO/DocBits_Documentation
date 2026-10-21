@@ -59,3 +59,7 @@ Clique em **New Variable**, atribua-lhe um nome e um tipo, e defina o seu valor.
 
 - Veja como os nós usam estes valores em [Nós](nodes.md).
 - Valide e execute o fluxo de trabalho em [Validação e Testes](validation-and-testing.md).
+
+## Variáveis numéricas
+
+**Number (Número)** é um tipo de variável independente, além de Text, Yes/No e Document. Introduza um valor numérico sem símbolo monetário. As variáveis da organização são partilhadas entre fluxos de trabalho; a criação, alteração e eliminação são guardadas imediatamente, independentemente de guardar ou descartar a tela. Antes de alterar uma variável, verifique os fluxos afetados e teste valores abaixo, iguais e acima do limite.

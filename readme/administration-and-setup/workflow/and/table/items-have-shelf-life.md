@@ -1,6 +1,6 @@
-# Items Have Shelf Life
+# Os itens têm prazo de validade
 
-<figure><img src="../../../../.gitbook/assets/image (44).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4e7c22460ee3-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -11,16 +11,14 @@ Este cartão DocBits verifica se os itens de um conjunto de dados cumprem condi�
 * **Validação do prazo de validade:** Este cartão verifica o prazo de validade dos itens face a uma condição especificada. Os utilizadores podem optar por validar **qualquer** item ou **todos** os itens do conjunto de dados e aplicar vários operadores de comparação para definir a condição.
 * **Seleção de itens:** Os utilizadores podem escolher entre:
   * **Any Item:** O cartão é acionado se pelo menos um item cumprir a condição de prazo de validade especificada.
-  * **All Items:** O cartão é acionado apenas se todos os itens cumprirem a condição de prazo de validade especificada.
+  * **Todos os itens:** O cartão é acionado apenas se todos os itens cumprirem a condição de prazo de validade especificada.
 * **Operadores:** Os seguintes operadores estão disponíveis para definir a condição de prazo de validade:
-  * **Equals (=):** Verifica se o prazo de validade é exatamente igual ao valor especificado.
-  * **Not Equals (≠):** Garante que o prazo de validade não é igual ao valor especificado.
-  * **Greater Than (>):** Confirma que o prazo de validade é superior ao valor especificado.
-  * **Greater or Equals (≥):** Garante que o prazo de validade é superior ou igual ao valor especificado.
+  * **Igual a (=):** Verifica se o prazo de validade é exatamente igual ao valor especificado.
+  * **Não é igual (≠):** Garante que o prazo de validade não é igual ao valor especificado.
+  * **Maior que (>):** Confirma que o prazo de validade é superior ao valor especificado.
+  * **Maior ou Igual (≥):** Garante que o prazo de validade é superior ou igual ao valor especificado.
   * **Less Than (<):** Verifica se o prazo de validade é inferior ao valor especificado.
-  * **Less or Equals (≤):** Garante que o prazo de validade é inferior ou igual ao valor especificado.
-
-
+  * **Menor ou igual (≤):** Garante que o prazo de validade é inferior ou igual ao valor especificado.
 
 ## **Utilização:**
 

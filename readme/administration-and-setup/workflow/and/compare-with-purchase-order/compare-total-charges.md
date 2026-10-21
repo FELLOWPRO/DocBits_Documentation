@@ -1,6 +1,6 @@
-# Compare Total Charges
+# Comparar cobranças totais
 
-<figure><img src="../../../../.gitbook/assets/image (271).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-97d69520f403-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,27 +8,27 @@ Este cartão de fluxo de trabalho compara os encargos totais num campo de docume
 
 ## **Componentes do cartão:**
 
-1. **Field Name:**
+1. **Nome do campo:**
    * **Descrição**: Especifica o campo do documento que contém os valores dos encargos totais a comparar com os encargos na ordem de compra.
    * **Detalhe**: O valor neste campo representa os encargos totais aplicados no documento (por exemplo, fatura) e será comparado com o encargo da ordem de compra.
 2. **Operador:**
    * **Descrição**: Define a condição que será aplicada à comparação entre o encargo total no documento e o encargo na ordem de compra.
    * **Opções**:
-     * **Equals (=)**: Verifica se o encargo total no documento corresponde ao encargo na ordem de compra.
-     * **Not Equals (≠)**: Garante que o encargo total no documento é diferente do encargo na ordem de compra.
-     * **Greater Than (>)**: Verifica se o encargo total no documento é superior ao encargo na ordem de compra.
-     * **Greater or Equals (≥)**: Verifica se o encargo total no documento é superior ou igual ao encargo na ordem de compra.
-     * **Lesser Than (<)**: Verifica se o encargo total no documento é inferior ao encargo na ordem de compra.
-     * **Lesser or Equals (≤)**: Verifica se o encargo total no documento é inferior ou igual ao encargo na ordem de compra.
-3. **Tolerance Amount**
+     * **Igual a (=)**: Verifica se o encargo total no documento corresponde ao encargo na ordem de compra.
+     * **Não é igual (≠)**: Garante que o encargo total no documento é diferente do encargo na ordem de compra.
+     * **Maior que (>)**: Verifica se o encargo total no documento é superior ao encargo na ordem de compra.
+     * **Maior ou Igual (≥)**: Verifica se o encargo total no documento é superior ou igual ao encargo na ordem de compra.
+     * **Menor que (<)**: Verifica se o encargo total no documento é inferior ao encargo na ordem de compra.
+     * **Menor ou igual (≤)**: Verifica se o encargo total no documento é inferior ou igual ao encargo na ordem de compra.
+3. **Valor de tolerância**
    * **Descrição**: Especifica o limiar de tolerância para comparar os encargos totais.
    * **Detalhe**: Este valor numérico representa a variação permitida nos encargos entre o documento e a ordem de compra.
-4. **Tolerance Type:**
+4. **Tipo de tolerância:**
    * **Descrição**: Especifica o tipo de tolerância que será aplicado.
    * **Opções**:
      * **Percentage**: A tolerância é aplicada como uma percentagem do encargo da ordem de compra.
-     * **Value**: A tolerância é aplicada como um valor numérico fixo.
-5. **Separator:**
+     * **Valor**: A tolerância é aplicada como um valor numérico fixo.
+5. **Separador:**
    * **Descrição**: Especifica o separador utilizado para distinguir o Charge ID no fim do nome do campo.
    * **Detalhe**: O separador separa o campo de encargo do Charge ID único que será utilizado para associar o encargo do documento ao encargo correspondente na ordem de compra.
 

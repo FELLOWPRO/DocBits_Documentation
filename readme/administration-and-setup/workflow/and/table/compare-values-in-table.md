@@ -1,6 +1,6 @@
-# Compare values in table
+# Compare os valores na tabela
 
-<figure><img src="../../../../.gitbook/assets/image (48).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5f14db09d019-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -10,12 +10,12 @@ Este cartão DocBits realiza uma comparação entre os valores de duas colunas e
 
 * **Comparação de colunas:** Este cartão permite aos utilizadores definir condições para comparar valores entre duas colunas na mesma tabela.
 * **Operadores:** Os seguintes operadores estão disponíveis para definir a comparação:
-  * **Equals (=):** Verifica se os valores das duas colunas são exatamente iguais.
-  * **Not Equals (≠):** Garante que os valores das duas colunas não são iguais.
-  * **Greater Than (>):** Confirma que os valores da primeira coluna são superiores aos da segunda coluna.
-  * **Greater or Equals (≥):** Garante que os valores da primeira coluna são superiores ou iguais aos da segunda coluna.
-  * **Lesser Than (<):** Verifica se os valores da primeira coluna são inferiores aos da segunda coluna.
-  * **Less or Equals (≤):** Garante que os valores da primeira coluna são inferiores ou iguais aos da segunda coluna.
+  * **Igual a (=):** Verifica se os valores das duas colunas são exatamente iguais.
+  * **Não é igual (≠):** Garante que os valores das duas colunas não são iguais.
+  * **Maior que (>):** Confirma que os valores da primeira coluna são superiores aos da segunda coluna.
+  * **Maior ou Igual (≥):** Garante que os valores da primeira coluna são superiores ou iguais aos da segunda coluna.
+  * **Menor que (<):** Verifica se os valores da primeira coluna são inferiores aos da segunda coluna.
+  * **Menor ou igual (≤):** Garante que os valores da primeira coluna são inferiores ou iguais aos da segunda coluna.
 * **Seleção de tabela e colunas:** Os utilizadores especificam a tabela e as duas colunas que pretendem comparar.
 
 ## **Utilização:**

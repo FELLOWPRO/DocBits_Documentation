@@ -1,73 +1,73 @@
-# Then
+# Então
 
-## Visão geral dos cartões de ação "Then..."
+Um cartão **Então** informa a um fluxo de trabalho o que fazer após seu acionador **Quando** e quaisquer condições **E**. No **Construtor de fluxo de trabalho**, selecione **Adicionar cartão** em **Então...**. Escolha uma categoria à esquerda ou digite um nome em **Cartão de pesquisa**. Selecione uma visualização do cartão para adicioná-lo, preencha os campos mostrados no cartão e salve o fluxo de trabalho. Role no seletor para ver mais cartões. Selecione **×** para fechá-lo sem adicionar um cartão. Consulte [Workflow](..) para a sequência completa.
 
-Um cartão **Then** indica ao fluxo de trabalho o que fazer depois do gatilho **When** e das eventuais condições **And**. No **Workflow Builder**, selecione **Adicionar cartão** sob **Então...**. Escolha uma categoria à esquerda ou digite um nome em **Cartão de Pesquisa**. Selecione uma pré-visualização de cartão para adicioná-lo, preencha os campos mostrados no cartão e guarde o fluxo de trabalho. Desloque-se dentro do seletor para ver mais cartões. Selecione **×** para fechar sem adicionar um cartão. Veja [Fluxo de trabalho](../README.md) para a sequência completa.
+As visualizações abaixo mostram as ações disponíveis, mas as configurações não concluídas. Escolha a ação que corresponde ao resultado desejado.
 
-As pré-visualizações abaixo mostram as ações disponíveis, não configurações já concluídas. Escolha a ação que corresponde ao resultado que pretende obter.
+## Campo do documento
 
-## Campo de documento
+Defina ou inverta uma caixa de seleção, coloque texto em um campo ou copie um campo para outro. Escolha os nomes dos campos e o valor solicitado pelo cartão. Consulte [Campo do documento](document-field).
 
-Defina ou inverta uma caixa de seleção, coloque texto num campo ou copie um campo para outro. Escolha os nomes dos campos e o valor solicitados pelo cartão. Veja [Campo de documento](document-field/README.md).
-
-<figure><img src="../../../.gitbook/assets/then-category-document-field-pt.png" alt="Seletor de cartões Then em português com Campo de documento selecionado; as pré-visualizações mostram as ações de caixa de seleção, texto e cópia do campo."><figcaption>Altere um campo ou copie o seu conteúdo.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-c9741b344fe2-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
 ## Documento
 
-Escolha **Aprovar o Documento** ou **Rejeitar o documento** quando o fluxo de trabalho deve tomar essa decisão. Use primeiro uma condição **And** se a aprovação depender de uma verificação. Veja [Documento](document/README.md).
+Escolha **Aprovar o Documento** ou **Rejeitar o Documento** quando o fluxo de trabalho deve tomar essa decisão. Use uma condição **E** primeiro se a aprovação depender de uma verificação. Veja [Documento](document).
 
-<figure><img src="../../../.gitbook/assets/then-category-document-pt.png" alt="Seletor de cartões Then em português com Documento selecionado; as pré-visualizações Aprovar o Documento e Rejeitar o documento estão visíveis."><figcaption>Aprove ou rejeite o documento atual.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-ed7d5718f538-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
 ## Lógica
 
-Use estes cartões para converter valores entre formato numérico, texto e booleano, ou para ler um valor de JSON. Escolha os campos de input e output no cartão selecionado.
+Use esses cartões para converter valores entre formatos numéricos, de texto e booleanos ou ler um valor de JSON. Escolha os campos de entrada e saída no cartão selecionado.
 
-<figure><img src="../../../.gitbook/assets/then-category-logic-pt.png" alt="Seletor de cartões Then em português com Lógica selecionado; as pré-visualizações visíveis convertem tipos de dados e leem valores de JSON."><figcaption>Transforme valores para um passo posterior do fluxo de trabalho.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e019409102f9-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
-## Status
+## Estado
 
-Escolha **Alterar status para** para levar o documento a um status selecionado. O cartão também pode acionar outro fluxo de trabalho. Veja [Status](status/README.md).
+Escolha **Alterar status** para mover o documento para um status selecionado. O cartão também pode acionar outro fluxo de trabalho. Consulte [Status](status).
 
-<figure><img src="../../../.gitbook/assets/then-category-status-pt.png" alt="Seletor de cartões Then em português com Status selecionado; a pré-visualização Alterar status para inclui um campo de status e um acionador de fluxo de trabalho opcional."><figcaption>Leve o documento a outro status.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e5662026a68c-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
-## Prompts e scripts
+## Solicitações e scripts
 
-Escolha esta categoria para executar um script de prompt DocOperator. Selecione o script e as variáveis solicitados pelo cartão. O cartão também oferece definições de execução, como tentativas.
+Escolha esta categoria para executar um script de prompt do DocOperator. Selecione o script e as variáveis ​​solicitadas pelo cartão. O cartão também oferece configurações de execução, como novas tentativas.
 
-<figure><img src="../../../.gitbook/assets/then-category-prompts-scripts-pt.png" alt="Seletor de cartões Then em português com Prompts e scripts selecionado; uma pré-visualização de script de prompt DocOperator está visível."><figcaption>Execute um script de prompt DocOperator configurado.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-f9dd7edcbb47-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
 ## Exportar
 
-Inicie uma exportação, exporte com uma configuração escolhida ou coloque uma exportação final na fila. Escolha a configuração de exportação e a opção de tarefas pendentes mostrada no seu cartão. Veja [Exportar](export/README.md).
+Inicie uma exportação, exporte com uma configuração escolhida ou coloque uma exportação final na fila. Escolha a configuração de exportação e a opção de tarefa pendente mostrada no seu cartão. Consulte [Exportar](export).
 
-<figure><img src="../../../.gitbook/assets/then-category-export-pt.png" alt="Seletor de cartões Then em português com Exportar selecionado; as pré-visualizações mostram exportação inicial, configurada, em fila e alternativa."><figcaption>Escolha quando e como o documento é exportado.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-11f244132c25-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
 ## Tarefa
 
-Crie uma tarefa ou notificação e atribua-a a um utilizador ou grupo. Introduza o título, a descrição, a prioridade e as definições de notificação solicitados pelo cartão. Alguns cartões fazem atribuição sequencial. Veja [Tarefa](task/README.md).
+Crie uma tarefa ou notificação e atribua-a a um usuário ou grupo. Insira o título, a descrição, a prioridade e as configurações de notificação solicitadas pelo cartão. Alguns cartões são atribuídos sequencialmente. Consulte [Tarefa](task).
 
-<figure><img src="../../../.gitbook/assets/then-category-task-pt.png" alt="Seletor de cartões Then em português com Tarefa selecionado; as pré-visualizações visíveis criam ou atribuem tarefas e notificações."><figcaption>Crie trabalho de acompanhamento para uma pessoa ou grupo.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-45efe5c84c12-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
 ## E-mail
 
-Envie um e-mail usando um modelo selecionado, para destinatários ou para grupos. Escolha o modelo e o destino no cartão.
+Envie um email usando um modelo selecionado, para destinatários ou grupos. Escolha o modelo e o destino no cartão.
 
-<figure><img src="../../../.gitbook/assets/then-category-email-pt.png" alt="Seletor de cartões Then em português com E-mail selecionado; as pré-visualizações enviam um e-mail com modelo para destinatários ou grupos."><figcaption>Envie um e-mail com modelo.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-1fa958085397-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
-## Mesa
+## Tabela
 
-Altere entradas ou calcule valores numa tabela do documento. Selecione a tabela, as colunas, o operador e a coluna de resultado solicitados pelo cartão. Veja [Mesa](table/README.md).
+Altere entradas ou calcule valores em uma tabela de documento. Selecione a tabela, colunas, operador e coluna de resultados solicitados pelo cartão. Veja [Tabela](table).
 
-<figure><img src="../../../.gitbook/assets/then-category-table-pt.png" alt="Seletor de cartões Then em português com Mesa selecionado; as pré-visualizações alteram entradas e calculam colunas de resultado."><figcaption>Atualize ou calcule dados da tabela.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e25e69c2b11c-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
-## Cessionário
+## Responsável
 
-Atribua o documento a um utilizador, grupo, destinatário ou sub-organização. Alguns cartões usam um campo ou uma tabela de decisão e oferecem um valor de recurso. Escolha o destino correto e o recurso no cartão selecionado. Veja [Cessionário](assignee/README.md).
+Atribua o documento a um usuário, grupo, destinatário ou suborganização. Algumas cartas usam um campo ou tabela de decisão e oferecem um substituto. Escolha o destino certo e use o cartão selecionado. Consulte [Cessionário](assignee).
 
-<figure><img src="../../../.gitbook/assets/then-category-assignee-pt.png" alt="Seletor de cartões Then em português com Cessionário selecionado; as pré-visualizações visíveis atribuem a um utilizador, destinatário, grupo ou contacto do fornecedor."><figcaption>Encaminhe o documento para a próxima pessoa ou grupo responsável.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-aa4f244a25b3-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
 ## Ação
 
-Execute outro fluxo de trabalho, envie uma solicitação HTTPS, faça uma chamada de API ou use o cartão de cálculo de aumento de custos. Estas ações podem afetar outros sistemas; pergunte ao seu administrador qual endpoint e definições usar. Veja [Ação](action/README.md).
+Execute outro fluxo de trabalho, envie uma solicitação HTTPS, chame uma API ou use o cartão de cálculo de aumento de custos. Estas ações podem afetar outros sistemas; pergunte ao seu administrador qual endpoint e configurações usar. Consulte [Ação](action).
 
-<figure><img src="../../../.gitbook/assets/then-category-action-pt.png" alt="Seletor de cartões Then em português com Ação selecionado; as pré-visualizações mostram Executar fluxo de trabalho, solicitação HTTPS, chamada de API e cálculo de aumento de custos."><figcaption>Inicie outro fluxo de trabalho ou ação de integração.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-585799ec1e01-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
+
+[Campos detalhados do cartão lógico, caminhos JSON, gatilhos e testes](../cards-overview/logic-cards-guide.md).

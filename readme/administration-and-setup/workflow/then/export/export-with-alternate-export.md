@@ -1,32 +1,27 @@
-# Export with alternate Export
+# Exportar com exportação alternativa
 
-<figure><img src="../../../../.gitbook/assets/image (286).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-379e4b3a5355-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
-## **Propósito**
+## Quando usar este cartão
 
-O cartão de fluxo de trabalho **"Export Document with Alternate Export"** permite exportar um documento utilizando uma configuração de exportação alternativa. Oferece flexibilidade ao permitir aos utilizadores ignorar a configuração de exportação predefinida e utilizar uma alternativa, assegurando a compatibilidade com requisitos ou cenários específicos.
+Use esta ação Então para a exportação alternativa configurada no tipo de documento atual. Configure e valide essa rota antes de adicionar a ação.
 
-## **Componentes do cartão**
+## A configuração vem do tipo de documento
 
-**Alternate Export Configuration**
+O cartão não possui seletor de configuração de exportação. Ele lê se a exportação alternativa está habilitada, a configuração da exportação alternativa e o status após a exportação nas configurações de tipo de documento. Internamente são `DOC_ALTERNATE_EXPORT_SETTING`, `DOC_ALTERNATE_EXPORT_EXPORT_CONFIG` e `DOC_ALTERNATE_EXPORT_STATUS`.
 
-* **Descrição**: Especifica a configuração de exportação a utilizar para o documento.
-* **Detalhe**: Esta configuração substitui as definições predefinidas e aplica a configuração de exportação alternativa especificada no fluxo de trabalho.
+Uma exportação alternativa explicitamente desabilitada produz uma condição de falha. Dados de ativação, configuração ou status de resultado ausentes são relatados em vez de substituir silenciosamente a rota padrão. A solicitação de exportação verifica as tarefas pendentes.
 
-## **Funcionalidade**
+## Verifique o resultado
 
-* **Avaliação da condição**:\
-  O sistema avalia as condições definidas nas secções **"Where"** e **"And Sections"** do fluxo de trabalho. O cartão só é executado se todas as condições forem verdadeiras.
-* **Exportação do documento**:\
-  Uma vez executado, o cartão utiliza a configuração de exportação alternativa para processar e exportar o documento. Isto permite um tratamento de exportação adaptado a fluxos de trabalho específicos.
+Inspecione o registro do cartão, o histórico de exportação, o status do documento e o destino de teste autorizado. Uma solicitação, tempo limite ou alteração de status por si só não estabelece que os dados chegaram ao destino. Verifique o histórico de exportação antes de tentar novamente uma operação que possa criar duplicatas.
 
-## **Configuração**
+<!-- workflow-card-complete-example-20261021 action_alternate_export -->
 
-Para configurar este cartão:
+### Exemplo de exportação alternativa
 
-1. Assegure-se de que as secções **"Where"** e **"And Sections"** estão configuradas corretamente, uma vez que o cartão só é executado se estas condições forem avaliadas como verdadeiras.
-2. Verifique que a configuração de exportação alternativa é válida e está ativa no sistema.
+**Configuração:** Prepare o tipo de documento sintético `DEMO_INVOICE` com exportação alternativa habilitada, uma configuração de exportação de teste autorizada e o status do resultado desejado em suas configurações de tipo de documento. Adicione esta ação Then após as verificações necessárias. Este cartão lê essas configurações; ele não oferece um seletor de configuração de exportação.
 
-## **Conclusão**
+**Resultado esperado e contra-exemplo:** A ação solicita a exportação através dessa configuração alternativa e verifica as tarefas pendentes. Verifique o resultado da exportação e o destino do teste separadamente. Desabilitar a exportação alternativa causa uma condição de falha; uma definição ou configuração de ativação ausente não é uma exportação bem-sucedida. Não execute este exemplo em um destino de contabilidade.
 
-O cartão de fluxo de trabalho **"Export Document with Alternate Export"** melhora a flexibilidade e o controlo nos processos de exportação de documentos. Ao permitir a seleção de uma configuração de exportação alternativa, acomoda diversos requisitos de exportação mantendo ao mesmo tempo uma automação eficiente do fluxo de trabalho.
+Esta é uma configuração de teste ilustrativa e resultado esperado; não foi executado. Use dados e destinatários configurados na sua organização de teste.

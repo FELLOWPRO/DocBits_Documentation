@@ -1,29 +1,29 @@
-# Create a New Task and assign it to the User
+# Crie uma nova tarefa e atribua-a ao usuário
 
-<figure><img src="../../../../.gitbook/assets/image (287).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4a46d3b10473-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
 ## **Propósito**
 
-O cartão de fluxo de trabalho **"Create Task or Notification"** simplifica a gestão de tarefas e notificações dentro dos fluxos de trabalho. Consoante a versão, o cartão pode criar tarefas, enviar notificações e aproveitar funcionalidades adicionais, como árvores de decisão, para um processamento dinâmico.
+O cartão de fluxo de trabalho **"Criar tarefa ou notificação"** simplifica a gestão de tarefas e notificações dentro dos fluxos de trabalho. Consoante a versão, o cartão pode criar tarefas, enviar notificações e aproveitar funcionalidades adicionais, como árvores de decisão, para um processamento dinâmico.
 
 ## **Componentes do cartão**
 
-1. **Title**
+1. **Título**
    * **Descrição**: Define o título da tarefa ou notificação que está a ser criada.
    * **Detalhe**: O título fornece um identificador claro e conciso para a tarefa ou notificação.
-2. **Description**
+2. **Descrição**
    * **Descrição**: Fornece detalhes sobre a tarefa ou notificação.
    * **Detalhe**: Ajuda a clarificar o propósito ou o contexto da tarefa ou notificação para o utilizador atribuído.
-3. **Priority**
+3. **Prioridade**
    * **Descrição**: Define o nível de urgência da tarefa.
    * **Opções**:
      * **High**: Exige atenção imediata.
-     * **Medium**: Importante mas não urgente.
+     * **Médio**: Importante mas não urgente.
      * **Low**: Pode ser tratado posteriormente.
-4. **Assigned User**
+4. **Usuário atribuído**
    1. **Descrição**: Especifica o utilizador ao qual a tarefa é atribuída.
    2. **Detalhe**: Os utilizadores são selecionados a partir de uma lista pendente de pessoal disponível.
-5. **Email Notification**
+5. **Notificação por e-mail**
    * **Descrição**: Determina se o utilizador atribuído recebe uma notificação por e-mail.
    * **Opções**:
      * **True**: Envia uma notificação por e-mail ao utilizador.
@@ -31,21 +31,21 @@ O cartão de fluxo de trabalho **"Create Task or Notification"** simplifica a ge
 
 ## Componentes adicionais **na Versão 3 e na Versão 4**
 
-1. **Decision Tree (apenas na Versão 3)**
+1. **Árvore de Decisão (apenas na Versão 3)**
    * **Descrição**: Permite a utilização de uma árvore de decisão para a criação dinâmica de tarefas.
    * **Opções**:
      * **True**: Ativa o processamento da árvore de decisão.
      * **False**: Desativa o processamento da árvore de decisão.
-2. **Task or Notification (apenas na Versão 4)**
+2. **Tarefa ou Notificação (apenas na Versão 4)**
    * **Descrição**: Permite escolher entre criar uma tarefa ou uma notificação.
    * **Opções**:
-     * **Task**: Cria uma tarefa.
+     * **Tarefa**: Cria uma tarefa.
      * **Notification**: Cria uma notificação em vez de uma tarefa.
 
 ## **Funcionalidade:**
 
 * **Avaliação da condição**:\
-  Este cartão só é acionado se as condições nas secções **"Where"** e **"And Sections"** forem cumpridas.
+  Este cartão só é acionado se as condições nas secções **"Quando"** e **"E Seções"** forem cumpridas.
 * **Criação de tarefa ou notificação**:
   * Versões 2 e 3: É criada uma tarefa com o título, descrição, prioridade e utilizador atribuído especificados.
   * Versão 4: Permite criar uma tarefa ou uma notificação.
@@ -69,4 +69,16 @@ O cartão de fluxo de trabalho **"Create Task or Notification"** simplifica a ge
 
 ## **Conclusão:**
 
-O cartão de fluxo de trabalho **"Create Task or Notification"** é uma ferramenta versátil para gerir tarefas e notificações. Ao suportar a atribuição dinâmica de utilizadores através de árvores de decisão e ao oferecer opções para a criação de tarefas ou notificações, melhora a adaptabilidade do fluxo de trabalho e a eficiência da colaboração.
+O cartão de fluxo de trabalho **"Criar tarefa ou notificação"** é uma ferramenta versátil para gerir tarefas e notificações. Ao suportar a atribuição dinâmica de utilizadores através de árvores de decisão e ao oferecer opções para a criação de tarefas ou notificações, melhora a adaptabilidade do fluxo de trabalho e a eficiência da colaboração.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemplo prático
+
+**Quando usar:** Dê a um revisor um item de ação explícito.
+
+**Configuração:** Selecione `Demo Reviewer A`, título `Review invoice`, descrição e prioridade.
+
+**Resultado esperado e contraexemplo:** O usuário selecionado recebe a nova tarefa. Confirme o título da tarefa e o responsável; a tarefa ainda precisa ser concluída pelo revisor.
+
+Esta é uma configuração ilustrativa e resultado esperado. Utilize campos, usuários e grupos configurados em sua organização de teste; não é uma afirmação de que este exemplo foi executado.

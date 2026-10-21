@@ -1,6 +1,6 @@
-# Compare two Fields with Tolerance
+# Compare dois campos com tolerância
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-19d9a4d5e71d-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,28 +8,28 @@ Este cartão de fluxo de trabalho foi concebido para automatizar ações compara
 
 ## **Componentes do cartão:**
 
-1. **Field Name (1)**
+1. **Nome do campo (1)**
    * **Descrição:** Especifica o primeiro campo de documento a comparar.
    * **Detalhe:** Tem de corresponder ao identificador exato do primeiro campo dentro do documento.
 2. **Operador**
    * **Descrição:** Define o tipo de comparação a realizar entre os dois campos.
    * **Opções:**
-     * **Equals (=):** Verifica se os valores dos dois campos são iguais.
-     * **Not Equals (≠):** Garante que os valores dos dois campos são diferentes.
-     * **Greater Than (>):** Confirma que o valor do primeiro campo é superior ao do segundo campo.
-     * **Greater or Equals (≥):** Valida que o valor do primeiro campo é igual ou superior ao do segundo campo.
-     * **Lesser Than (<):** Verifica se o valor do primeiro campo é inferior ao do segundo campo.
-     * **Less or Equals (≤):** Garante que o valor do primeiro campo é inferior ou igual ao do segundo campo.
-3. **Field Name (2)**
+     * **Igual a (=):** Verifica se os valores dos dois campos são iguais.
+     * **Não é igual (≠):** Garante que os valores dos dois campos são diferentes.
+     * **Maior que (>):** Confirma que o valor do primeiro campo é superior ao do segundo campo.
+     * **Maior ou Igual (≥):** Valida que o valor do primeiro campo é igual ou superior ao do segundo campo.
+     * **Menor que (<):** Verifica se o valor do primeiro campo é inferior ao do segundo campo.
+     * **Menor ou igual (≤):** Garante que o valor do primeiro campo é inferior ou igual ao do segundo campo.
+3. **Nome do campo (2)**
    * **Descrição:** Especifica o segundo campo de documento a comparar com o primeiro campo.
-   * **Detalhe:** Deve corresponder ao identificador exato do segundo campo dentro do documento.&#x20;
-4. **Tolerance Amount**
+   * **Detalhe:** Deve corresponder ao identificador exato do segundo campo dentro do documento.
+4. **Valor de tolerância**
    * **Descrição:** Define a margem de erro aceitável para a comparação.
    * **Detalhe:** O valor de tolerância é um valor numérico que indica a diferença máxima permitida entre os dois valores de campo para que a comparação seja considerada verdadeira.
-5. **Tolerance Type**
+5. **Tipo de tolerância**
    * **Descrição:** Especifica a unidade de medida do valor de tolerância.
    * **Opções:**
-     * **Value:** A tolerância é um valor absoluto, ou seja, os dois campos podem diferir pelo valor de tolerância especificado.
+     * **Valor:** A tolerância é um valor absoluto, ou seja, os dois campos podem diferir pelo valor de tolerância especificado.
      * **Percent:** A tolerância é calculada como uma percentagem do valor do segundo campo, permitindo uma margem de erro relativa.
 
 ## **Funcionalidade:**
@@ -43,8 +43,20 @@ Este cartão de fluxo de trabalho foi concebido para automatizar ações compara
 
 ## **Configuração:**
 
-* Os utilizadores configuram o cartão selecionando os dois campos a comparar a partir de uma lista de campos disponíveis no sistema. O operador é selecionado a partir de uma lista pendente de opções de comparação disponíveis. Os utilizadores introduzem o valor de tolerância e escolhem o tipo de tolerância (value ou percent).&#x20;
+* Os utilizadores configuram o cartão selecionando os dois campos a comparar a partir de uma lista de campos disponíveis no sistema. O operador é selecionado a partir de uma lista pendente de opções de comparação disponíveis. Os utilizadores introduzem o valor de tolerância e escolhem o tipo de tolerância (value ou percent).
 
 ## **Conclusão:**
 
 O cartão de fluxo de trabalho "Compare Two Fields with Tolerance" é uma ferramenta poderosa para comparar campos de documento tendo em conta desvios admissíveis nos dados. Ao aplicar tolerância às comparações de campos, este cartão acrescenta flexibilidade ao fluxo de trabalho, permitindo-lhe lidar com variações de dados do mundo real. Melhora a tomada de decisões, apoia a validação de dados e reforça a automação global do fluxo de trabalho.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemplo prático
+
+**Quando usar:** Aceite uma pequena diferença entre um valor extraído e um valor calculado separadamente.
+
+**Configuração:** Selecione os campos numéricos `net_total` e `calculated_total`, comparação de igualdade e uma tolerância absoluta de `5`. Use os valores `103` e `100`.
+
+**Resultado esperado e contra-exemplo:** A diferença é `3`, portanto está dentro da tolerância. Com `110` e `100`, a diferença é `10` e a condição de igualdade com tolerância falha.
+
+Esta é uma configuração ilustrativa e resultado esperado. Utilize campos, usuários e grupos configurados em sua organização de teste; não é uma afirmação de que este exemplo foi executado.

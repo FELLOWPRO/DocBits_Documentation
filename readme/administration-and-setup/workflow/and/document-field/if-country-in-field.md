@@ -43,3 +43,15 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob ein angegebenes Land, 
 ## **Fazit:**
 
 Die Workflow-Karte "Country in Field Comparison" ist ein unverzichtbares Werkzeug, um Prozesse zu automatisieren, die von geografischen Regeln abhängen, etwa die Einhaltung von Handelsabkommen oder politische Zugehörigkeiten. Indem sie Länderdaten mit bestimmten Regionen wie der Europäischen Union, dem Schengen-Raum oder NAFTA vergleicht, stellt diese Karte sicher, dass das System die richtige Verarbeitungslogik anwendet, und verbessert so die Effizienz und gewährleistet eine präzise Workflow-Ausführung auf Basis geografischer Bedingungen.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Trennen Sie Dokumente nach einer Länderregion.
+
+**Konfiguration:** Wählen Sie ein Dokumentlandfeld mit `DE`, wählen Sie die Region mit Deutschland aus und setzen Sie die Fortsetzungsoption auf `true`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Der deutsche Ländercode entspricht der ausgewählten Region. Bei einem Code außerhalb dieser Region ist dies nicht der Fall. Testen Sie die Fortsetzungsoption separat, wenn Sie den umgekehrten Zweig benötigen.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

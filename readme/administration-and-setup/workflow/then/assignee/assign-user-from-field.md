@@ -18,7 +18,7 @@ Die Workflow-Karte **„Benutzer aus Feld mit Fallback zuweisen“** weist dynam
 ## **Funktionalität:**
 
 * **Bedingungsauswertung:**\
-  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wenn“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Feldbasierte Benutzerzuweisung:**\
   Die Karte versucht zunächst, die Aufgabe oder Aktion dem im **Feldnamen** identifizierten Benutzer zuzuweisen.
 * **Ersatzbenutzer-Zuweisung:**\
@@ -34,3 +34,15 @@ Die Workflow-Karte **„Benutzer aus Feld mit Fallback zuweisen“** weist dynam
 ## **Fazit:**
 
 Die Workflow-Karte **„Benutzer aus Feld mit Fallback zuweisen“** stellt sicher, dass eine Aufgabe oder Aktion immer einem gültigen Benutzer zugewiesen wird. Ist der Benutzer im Dokumentfeld nicht verfügbar, wird automatisch der Ersatzbenutzer zugewiesen, was Flexibilität bietet und den Abschluss der Aufgabe gewährleistet.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Weisen Sie den Prüfer anhand der Dokumentdaten zu.
+
+**Konfiguration:** Wählen Sie Feld `reviewer_name` und Fallback-Benutzer `Demo Reviewer A`. Geben Sie im ersten Test einen auflösbaren Demo-Benutzernamen an.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein gültiger Feldwert wählt diesen Benutzer aus. Ein leerer oder nicht auflösbarer Wert verwendet den konfigurierten Fallback; Überprüfen Sie beide Fälle.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

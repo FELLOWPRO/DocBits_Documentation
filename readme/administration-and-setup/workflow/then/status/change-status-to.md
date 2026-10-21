@@ -24,7 +24,7 @@ Die Workflow-Karte **"Change Status"** wird verwendet, um den Status eines Dokum
 
 ## **Funktionalität:**
 
-* **Bedingungsauswertung**: Das System wertet die in den Abschnitten **„Wo“** und **„Und“** festgelegten Bedingungen aus. Sind diese Bedingungen erfüllt, fährt die Karte fort und ändert den Status des Dokuments in den ausgewählten Wert.
+* **Bedingungsauswertung**: Das System wertet die in den Abschnitten **„Wenn“** und **„Und“** festgelegten Bedingungen aus. Sind diese Bedingungen erfüllt, fährt die Karte fort und ändert den Status des Dokuments in den ausgewählten Wert.
 * **Statusaktualisierung**: Sind die Bedingungen erfüllt, wird der Status des Dokuments je nach Auswahl des Benutzers auf eine der vordefinierten Optionen aktualisiert (Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval).
 * **Workflow-Auslöseaktion**: Ist **Workflows auslösen** auf **True** gesetzt, startet das System nach der Statusaktualisierung automatisch alle zugehörigen Workflows. Ist die Einstellung auf **False** gesetzt, werden keine zusätzlichen Workflows ausgelöst, und der Prozess endet mit der Statusänderung.
 
@@ -34,8 +34,20 @@ Um diese Karte zu konfigurieren, müssen Benutzer:
 
 1. Den gewünschten **Status** angeben, auf den das Dokument bei der Bedingungsauswertung gesetzt wird (Error, Rejected, Ready for Validation, Pending Approval oder Pending Second Approval).
 2. Wählen, ob nach der Statusänderung **Workflows ausgelöst** werden sollen, indem **True** oder **False** ausgewählt wird.
-3. Die Karte führt ihre Aktion nur aus, wenn beide Bedingungen in den Abschnitten **„Wo“** und **„Und“** als erfüllt ausgewertet werden.
+3. Die Karte führt ihre Aktion nur aus, wenn beide Bedingungen in den Abschnitten **„Wenn“** und **„Und“** als erfüllt ausgewertet werden.
 
 ## **Fazit:**
 
 Die Workflow-Karte **"Change Status"** bietet einen optimierten Ansatz zur Verwaltung von Dokumentstatus und zum Auslösen zugehöriger Workflows. Sie stellt sicher, dass Dokumente automatisch in den korrekten Status überführt und die erforderlichen Aktionen je nach Statusänderung ausgeführt werden. Durch das Festlegen klarer Bedingungen für die Ausführung reduziert sie den manuellen Aufwand und steigert die Workflow-Effizienz.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Verschieben Sie ein überprüftes Dokument in einen definierten Verarbeitungsstatus.
+
+**Konfiguration:** Wählen Sie Ihren konfigurierten `Demo Review`-Status aus und deaktivieren Sie das Auslösen zusätzlicher Workflows für dieses Beispiel.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Das Dokument erhält den ausgewählten Status. Diese Aktion allein führt den separat konfigurierten Export nicht aus.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

@@ -33,3 +33,15 @@ Diese Workflow-Karte wertet aus, ob ein Dokument Teil einer bestimmten Unterorga
 ## Fazit:
 
 Die Workflow-Karte "Document in Sub-organization" ist ein hilfreiches Werkzeug, um Aktionen darauf basieren zu lassen, ob ein Dokument zu einer bestimmten Unterorganisation gehört. Indem sie sicherstellt, dass Dokumente gemäß den unterorganisationsspezifischen Regeln verarbeitet werden, verbessert diese Karte die Workflow-Effizienz und stellt sicher, dass Aktionen im korrekten organisatorischen Kontext ausgeführt werden.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Leiten Sie Dokumente weiter, die zu einer Geschäftseinheit gehören.
+
+**Konfiguration:** Wählen Sie die Unterorganisation `Demo North` und den Gleichheitsoperator aus.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein Dokument in `Demo North` besteht. Ein Dokument in `Demo South` schlägt fehl.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

@@ -1,6 +1,6 @@
 # Werte in einer Tabelle berechnen
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-78729c8beae3-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-78729c8beae3-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -37,7 +37,7 @@ Die Workflow-Karte **„Berechnen mit Regex-Abhängigkeit“** ermöglicht es Be
 ## **Funktionalität:**
 
 * **Bedingungsauswertung:**
-  * Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
+  * Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wenn“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
   * Die Karte führt ihre Aktion nur aus, wenn der Wert in der Abhängigkeitsspalte mit dem angegebenen **Regex-Muster** übereinstimmt.
 * **Spaltenberechnung:**\
   Stimmt das Regex-Muster überein, führt die Karte die ausgewählte mathematische Operation zwischen den beiden gewählten Spalten durch.
@@ -62,3 +62,15 @@ Die Workflow-Karte **„Berechnen mit Regex-Abhängigkeit“** ermöglicht es Be
 ## **Fazit:**
 
 Die Workflow-Karte **„Berechnen mit Regex-Abhängigkeit“** bietet eine leistungsstarke Möglichkeit, Berechnungen mit bedingter Logik auf Basis eines Regex-Musters durchzuführen. Dadurch wird sichergestellt, dass nur Zeilen, in denen die Abhängigkeitsspalte mit dem angegebenen Muster übereinstimmt, der angegebenen Berechnung unterzogen werden und das Ergebnis in der gewählten Ergebnisspalte gespeichert wird.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Wann zu verwenden:** Berechnet nur ausgewählte Tabellenzeilen.
+
+**Konfiguration:** Verwenden Sie die Demotabelle `lines` mit den numerischen Spalten `quantity` und `unit_price`. Wählen Sie passende Zeilen über die Abhängigkeitsspalte und den regulären Ausdruck aus, multiplizieren Sie die numerischen Spalten und schreiben Sie in `line_total`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Eine ausgewählte Zeile mit `2` und `10` erhält `20`. Eine nicht übereinstimmende Zeile muss separat überprüft werden, um sicherzustellen, dass sie nicht für die Berechnung ausgewählt wurde.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

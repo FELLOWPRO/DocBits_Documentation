@@ -45,7 +45,7 @@ Die Workflow-Karte **„Gruppenaufgabe oder Benachrichtigung erstellen“** erm�
 ## **Funktionalität:**
 
 * **Bedingungsauswertung**:\
-  Führt die Kartenaktion nur aus, wenn die Abschnitte **„Wo“** und **„Und“** erfüllt sind.
+  Führt die Kartenaktion nur aus, wenn die Abschnitte **„Wenn“** und **„Und“** erfüllt sind.
 * **Erstellung von Aufgabe oder Benachrichtigung**:
   * Es wird eine Aufgabe für die ausgewählte Gruppe mit dem angegebenen Titel, der Beschreibung und der Priorität erstellt.
   * In Version 4 kann die Karte anstelle einer Aufgabe eine Benachrichtigung erstellen.
@@ -65,3 +65,15 @@ Die Workflow-Karte **„Gruppenaufgabe oder Benachrichtigung erstellen“** erm�
 ## **Fazit:**
 
 Die Workflow-Karte **„Gruppenaufgabe oder Benachrichtigung erstellen“** vereinfacht das Management von Aufgaben und Benachrichtigungen, indem sie Gruppen direkt anspricht. Ihre dynamische Zuweisungsfunktion, die durch den Entscheidungsbaum ermöglicht wird, erhöht die Flexibilität, während E-Mail-Benachrichtigungen eine zeitnahe Kommunikation gewährleisten. Die Versionen 3 und 4 fügen erweiterte Funktionalität hinzu und machen sie zu einem vielseitigen Werkzeug für eine effiziente Workflow-Ausführung.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Geben Sie einem gemeinsamen Team eine konkrete Überprüfungsaufgabe.
+
+**Konfiguration:** Wählen Sie Gruppe `Demo Finance`, Titel `Review invoice`, eine nützliche Beschreibung und Priorität. Deaktivieren Sie E-Mail für den ersten Test.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Die Gruppe erhält die Aufgabe. Bestätigen Sie den Titel und den Beauftragten in der Aufgabenliste; Die E-Mail-Zustellung ist eine separate Prüfung, wenn sie aktiviert ist.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

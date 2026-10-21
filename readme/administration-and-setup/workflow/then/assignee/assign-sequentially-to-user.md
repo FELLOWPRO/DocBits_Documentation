@@ -33,3 +33,15 @@ Die Workflow-Karte "**Dem Benutzer nacheinander zuweisen**" automatisiert die Zu
 ## **Fazit**
 
 Die Workflow-Karte "Assign the Document Sequentially to User" sorgt für eine organisierte Dokumentverteilung, indem sie Dokumente in einer priorisierten Reihenfolge zuweist. Dies verbessert das Aufgabenmanagement und reduziert Verzögerungen bei der Verarbeitung.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Fügen Sie einen Benutzer zu einer priorisierten Dokumentgenehmigungssequenz hinzu.
+
+**Konfiguration:** Wählen Sie `Demo Reviewer A` und Priorität `10`. Fügen Sie eine separate Aufgabe mit der Priorität `20` hinzu, wenn ein späterer Prüfer benötigt wird.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Die Zuweisungen tragen die konfigurierten Prioritäten; Der niedrigere numerische Wert hat die höhere Priorität. Überprüfen Sie die Reihenfolge der Aufgaben, nicht nur die Reihenfolge der Karten auf der Leinwand.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

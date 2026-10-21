@@ -28,7 +28,7 @@ Die Workflow-Karte **"Change Entries in Table"** wird verwendet, um Einträge in
 ## **Funktionalität:**
 
 * **Bedingungsauswertung:**\
-  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wenn“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Aktualisierung der Tabelleneinträge:**\
   Die Karte führt die ausgewählte Operation (**+**, **-**, **\*** oder **/**) mit den Werten in der gewählten **Spalte** der ausgewählten **Tabelle** unter Verwendung des angegebenen **Werts** durch.
 
@@ -46,3 +46,15 @@ Die Workflow-Karte **"Change Entries in Table"** wird verwendet, um Einträge in
 ## **Fazit:**
 
 Die Workflow-Karte **"Change Entries in Table"** ermöglicht automatisierte Aktualisierungen von Datenbankeinträgen durch die Auswahl einer **Tabelle**, einer **Spalte** und der gewünschten **mathematischen Operation**. Diese Karte ist unverzichtbar, um Massendatenänderungen oder Berechnungen innerhalb Ihrer Datenbank durchzuführen.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Wenden Sie eine numerische Anpassung auf eine vorhandene Tabellenspalte an.
+
+**Konfiguration:** Demotabelle auswählen `lines`, numerische Spalte `quantity`, Addition und Wert `1`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Eine vorhandene Menge von `2` wird zu `3`. Das Wiederholen dieser Aktion erzeugt `4`, also verwenden Sie es nur, wenn eine wiederholte Zugabe beabsichtigt ist.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

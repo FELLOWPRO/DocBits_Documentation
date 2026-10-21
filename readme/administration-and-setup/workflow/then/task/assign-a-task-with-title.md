@@ -1,6 +1,6 @@
 # Weisen Sie eine Aufgabe mit Titel zu
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-201d51354473-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-201d51354473-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -40,7 +40,7 @@ Die Workflow-Karte "Assign Task / Notification from Decision Table" ist darauf a
 ## **Funktionalität:**
 
 * **Bedingungsauswertung:**\
-  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wenn“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Zuweisung der Aufgabe / Benachrichtigung**\
   Die Karte weist die Aufgabe oder Benachrichtigung dem Benutzer oder der Gruppe zu, der bzw. die durch die Entscheidungstabelle identifiziert wird. Die Entscheidungstabelle wertet vordefinierte Bedingungen dynamisch aus und gibt den entsprechenden Empfänger zurück.
 * **E-Mail-Benachrichtigung**\
@@ -62,3 +62,15 @@ Die Workflow-Karte "Assign Task / Notification from Decision Table" ist darauf a
 ## **Fazit:**
 
 Die Workflow-Karte **„Aufgabe/Benachrichtigung aus Entscheidungstabelle zuweisen“** automatisiert die Zuweisung von Aufgaben oder Benachrichtigungen auf Basis dynamischer, in einer Entscheidungstabelle definierter Bedingungen. Version 3 erweitert ihre Funktionalität, indem sie es Benutzern ermöglicht, zwischen der Erstellung einer Aufgabe oder einer Benachrichtigung zu wählen, und stellt sicher, dass stets der richtige Empfänger zugewiesen wird. Die Funktion der E-Mail-Benachrichtigung hält Benutzer auf dem Laufenden und optimiert so Kommunikation und Aufgabenmanagement.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Erstellen Sie eine Aufgabe für den Beauftragten, die von einer Entscheidungstabelle zurückgegeben wird.
+
+**Konfiguration:** Verwenden Sie eine passende Demoregel, die `Demo Reviewer A`, Titel `Review invoice` und die gewünschte Priorität zurückgibt.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Die resultierende Aufgabe wird entsprechend dem zurückgegebenen Beauftragten zugewiesen. Testen Sie eine nicht übereinstimmende Regel separat und überprüfen Sie das Kartenprotokoll.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

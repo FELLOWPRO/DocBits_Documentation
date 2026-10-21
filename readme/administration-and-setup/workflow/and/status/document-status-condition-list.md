@@ -37,3 +37,13 @@ Diese Karte ist darauf ausgelegt, Workflow-Aktionen auf Basis des aktuellen Stat
 #### Fazit
 
 Die Workflow-Karte "Document Status Condition" ist unverzichtbar, um sicherzustellen, dass Dokumente entsprechend ihrem aktuellen Status korrekt verarbeitet werden, und stärkt so Kontrolle und Effizienz innerhalb des ERP-Systems. Eine klare Dokumentation dieser Karte im Systemhandbuch hilft den Benutzern, sie effektiv einzusetzen und zu verwalten und ihre Funktionalität zu nutzen, um reibungslose und konforme Dokument-Workflows aufrechtzuerhalten. Diese Karte ist besonders nützlich für die Verwaltung von Dokumentlebenszyklen und stellt sicher, dass nur Dokumente, die bestimmte Kriterien erfüllen, in nachfolgende Phasen von Geschäftsprozessen übergehen.
+
+<!-- workflow-card-complete-example-20261021 condition_doc_status_is_isnot_in_list -->
+
+### Beispiel für eine Statusliste
+
+**Konfiguration:** Wählen Sie den Operator, der erfordert, dass der aktuelle Status in der Liste enthalten ist. Wählen Sie in der Statusliste `Pending Approval` und `Pending Second Approval` aus.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Die Bedingung ist wahr für ein Dokument mit einem der ausgewählten Status. Für ein Dokument mit dem Status `Ready in Validation` ist dies falsch. Mit dem Operator, der erfordert, dass der Status außerhalb der Liste liegt, sind diese Bedingungsergebnisse umgekehrt. Überprüfen Sie die tatsächliche Liste, anstatt einen durch Kommas getrennten Freitextwert zu vergleichen.
+
+Dies ist eine beispielhafte Testkonfiguration und das erwartete Ergebnis. es wurde nicht ausgeführt. Verwenden Sie die in Ihrer Testorganisation konfigurierten Daten und Empfänger.

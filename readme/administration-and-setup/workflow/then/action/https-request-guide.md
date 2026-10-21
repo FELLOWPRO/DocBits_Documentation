@@ -45,7 +45,7 @@ Verwenden Sie diese Karte, wenn Sie Folgendes benötigen:
 
 ## Wie es funktioniert
 
-1. **Trigger-Prüfung**: Das System prüft, ob die Bedingungen „Wo“ und „Und“ erfüllt sind
+1. **Trigger-Prüfung**: Das System prüft, ob die Bedingungen „Wenn“ und „Und“ erfüllt sind
 2. **Build-Anfrage**: Das System bereitet die HTTPS-Anfrage mit Ihren Parametern vor
 3. **Sicher senden**: Daten werden über eine sichere HTTPS-Verbindung gesendet
 4. **Receive Response**: Externer Dienst antwortet
@@ -361,3 +361,13 @@ Headers: Authorization: Bearer token
 * **CONDITION\_HTTPS\_REQUEST\_STATUS** – Überprüfen Sie, ob die Anfrage erfolgreich war
 * **ACTION\_SEND\_EMAIL** – Stattdessen per E-Mail senden
 * **ACTION\_RUN\_DOCOPERATOR\_SCRIPT** – Automatisierte Skripte
+
+<!-- workflow-card-complete-example-20261021 action_https_request -->
+
+### Beispiel für eine HTTPS-Aktion
+
+**Konfiguration:** Wählen Sie die Methode `POST`, ersetzen Sie `DEMO_WEBHOOK_URL` durch Ihren autorisierten Testendpunkt, fügen Sie Header `Content-Type: application/json` und Text `{"document_number":"DEMO-001"}` hinzu. Konfigurieren Sie die Authentifizierung nur nach Bedarf für diesen Endpunkt. Kopieren Sie niemals ein echtes Geheimnis in die Dokumentation.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Die Aktion sendet die konfigurierte Anfrage, wenn ihre Workflow-Route ausgeführt wird. Überprüfen Sie die HTTP-Antwort und den Empfangstestdienst. Eine Zeitüberschreitung ist kein Beweis dafür, dass der Dienst nichts getan hat, und diese Aktion „Dann“ ist von der Karte „Und“ getrennt, die einen HTTP-Status überprüft. Diese illustrative Anfrage wurde nicht gesendet.
+
+Dies ist eine beispielhafte Testkonfiguration und das erwartete Ergebnis. es wurde nicht ausgeführt. Verwenden Sie die in Ihrer Testorganisation konfigurierten Daten und Empfänger.

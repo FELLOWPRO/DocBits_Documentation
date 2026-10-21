@@ -36,3 +36,15 @@ Diese Workflow-Karte ermöglicht Operationen auf Basis der Zuweisung einer Aufga
 #### Fazit
 
 Die Workflow-Karte "Single Assigned User Condition" ist unverzichtbar für ein präzises, benutzerspezifisches Dokument- und Aufgabenmanagement innerhalb eines ERP-Systems. Sie vereinfacht Workflows, indem sie sich auf einzelne Benutzerzuweisungen konzentriert, und stellt so sicher, dass Aktionen nur dann ausgeführt werden, wenn es angemessen ist – basierend auf der Rolle und den Verantwortlichkeiten des Benutzers. Eine klare Dokumentation dieser Karte unterstützt die Benutzer dabei, ihre Anwendung zu verstehen, und ermöglicht es ihnen, sie effektiv in ihren täglichen Abläufen einzusetzen und zu verwalten. Diese Dokumentation stellt sicher, dass alle potenziellen Benutzer den Zweck der Karte leicht erfassen und sie nahtlos in ihre Workflows integrieren können.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Behandeln Sie die Warteschlange eines bestimmten Prüfers.
+
+**Konfiguration:** Wählen Sie den Gleichheitsoperator und `Demo Reviewer A`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein diesem Benutzer zugewiesenes Dokument besteht; ein anderer zugewiesener Benutzer schlägt fehl.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

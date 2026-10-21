@@ -20,7 +20,7 @@ Die Workflow-Karte **„Dokument dem Disponenten/Käufer zuordnen“** weist ein
 ## **Funktionalität:**
 
 * **Bedingungsauswertung:**\
-  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wenn“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Dokumentzuweisung:**\
   Die Karte weist das Dokument je nach Auswahl entweder dem **Disponenten** oder dem **Einkäufer** zu. Ist die ausgewählte Person nicht verfügbar oder nicht gültig, wird das Dokument dem Ersatzbenutzer zugewiesen.
 
@@ -34,3 +34,15 @@ Die Workflow-Karte **„Dokument dem Disponenten/Käufer zuordnen“** weist ein
 ## **Fazit:**
 
 Die Workflow-Karte **„Dokument dem Disponenten/Käufer zuordnen“** stellt sicher, dass das Dokument immer zugewiesen wird – entweder dem ausgewählten Disponenten/Einkäufer oder bei Bedarf dem Ersatzbenutzer. Dies minimiert Workflow-Unterbrechungen und stellt sicher, dass die Dokumentverarbeitung reibungslos fortgesetzt wird.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Weisen Sie ein Dokument seinem aufgelösten Empfänger zu, mit einem sicheren Fallback.
+
+**Konfiguration:** Wählen Sie die Empfängerquelle und den Fallback-Benutzer `Demo Reviewer A`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein auflösbarer Empfänger erhält den Auftrag. Wenn der Empfänger nicht aufgelöst werden kann, wird der konfigurierte Fallback verwendet. Überprüfen Sie beide Pfade.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

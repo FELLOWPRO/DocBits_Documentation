@@ -4,7 +4,7 @@ Die Karten in dieser Kategorie, angezeigt in der Bibliothek **Karte hinzufügen*
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9e133ac3ffcb-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-2e62c5e0aa4e-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-2e62c5e0aa4e-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
 #### Das „Wann“ in Workflow-Konfigurationen verstehen
 
@@ -43,3 +43,13 @@ Diese Einrichtung stellt sicher, dass Arbeitsabläufe nicht nur effizient, sonde
 Zusammenfassend geht es beim „Wann“-Teil Ihrer Workflow-Konfiguration darum, die Voraussetzungen für automatisierte Aktionen auf der Grundlage spezifischer, vordefinierter Bedingungen zu schaffen. Es handelt sich um ein leistungsstarkes Tool, das sicherstellt, dass Ihr ERP-System dynamisch auf die Anforderungen des Unternehmens reagiert und so sowohl die Produktivität als auch die Genauigkeit der Dokumentenverwaltung steigert.
 
 [Variablenänderungs- und Webhook-Ereignis-Trigger-Referenz](../cards-overview/logic-cards-guide.md).
+
+<!-- workflow-card-example-celery_beat-20261021 -->
+
+### Geplante Verarbeitung
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-59699b0c27d3-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+
+`CELERY_BEAT` · Version 2
+
+Verwenden Sie einen geplanten Auslöser für Dokumente, die seit der vorherigen Ausführung geändert wurden. Wählen Sie für einen täglichen Demo-Zeitplan Minute `0`, Stunde `9` und die angebotenen Tages-/Monatswerte aus. Überprüfen Sie die konfigurierte Scheduler-Zeitzone und den nächsten geplanten Lauf. Dieser Auslöser ist kein Beweis dafür, dass unveränderte Dokumente erneut verarbeitet werden.

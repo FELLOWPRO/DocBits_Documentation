@@ -36,3 +36,15 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen auf Basis des Zustands (akti
 Die Workflow-Karte "Checkbox Field Condition" ist ein grundlegendes Werkzeug für die Verwaltung dynamischer Formulare und Dokumente innerhalb eines ERP-Systems, in dem Benutzereingaben nachfolgende Datenprozesse bestimmen können. Indem sie Aktionen auf Basis des Zustands eines Kontrollkästchens automatisiert, steigert diese Karte die Workflow-Effizienz und stellt sicher, dass das Systemverhalten mit den Benutzereingaben übereinstimmt. Eine klare Dokumentation dieser Karte hilft Benutzern, sie effektiv in ihren Abläufen einzusetzen, und ermöglicht eine bessere Kontrolle über das Verhalten von Formularen und Prozessautomatisierungen.
 
 **Hinweis: Nicht jeder Kunde verfügt über das Kontrollkästchen, es kann jedoch bei Bedarf hinzugefügt werden.**
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Wann zu verwenden ist:** Führen Sie eine Nachverfolgung nur durch, nachdem ein explizites Überprüfungsflag gesetzt wurde.
+
+**Konfiguration:** Aktivieren Sie das Kontrollkästchenfeld `review_complete` und den booleschen Wert `true`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein aktiviertes Kontrollkästchen besteht. Ein nicht aktiviertes Kontrollkästchen schlägt fehl; Verwenden Sie ein fehlendes Feld nicht als Nachweis für die abgeschlossene Überprüfung.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

@@ -10,7 +10,7 @@ Wählen Sie im **Workflow-Builder** unter **Und...** **Karte hinzufügen** aus. 
 
 Verwenden Sie diese Karten, um Bestell- oder Rechnungsdaten mit einer Bestellung zu vergleichen, z. B. Stückpreis, versprochenes Lieferdatum, Gebühren oder Menge. Wählen Sie die Felder, den Operator und alle Toleranzen aus, die für die ausgewählte Karte erforderlich sind. Die einzelnen Karten finden Sie unter [Mit Bestellung vergleichen](compare-with-purchase-order)].
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-72e8f3204ac8-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-72e8f3204ac8-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
 ## Dokumentfeld
 
@@ -34,7 +34,7 @@ Verwenden Sie diese Karten, wenn ein Workflow vom **Dokumenttyp** oder **Unteror
 
 Diese Kategorie umfasst Prüfungen anhand einer Entscheidungstabelle, einer HTTPS-Antwort, der Modulverfügbarkeit, eines angegebenen Artikelpreises, eines Zufallswerts oder zweier Werte. Öffnen Sie die jeweilige Karte und füllen Sie die benannten Platzhalter aus; Beispielsweise fragt die HTTPS-Karte nach einer URL, einer Methode und einem akzeptierten Statuscode. Siehe [Logik](logic).
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-6b17199fc268-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-6b17199fc268-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
 ## Status
 
@@ -46,13 +46,13 @@ Verwenden Sie **Status**, um zu prüfen, ob ein Dokument einen ausgewählten Sta
 
 Diese Karten untersuchen Dokumenttabellenzeilen. Zu den sichtbaren Optionen gehören Datumsprüfungen, Textmuster, Haltbarkeit und Vergleiche zwischen Spalten. Wählen Sie **Tabellenname** und **Spaltenname** aus, bevor Sie einen Operator oder ein Muster auswählen. Siehe [Tabelle](table).
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-526dc164847b-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-526dc164847b-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
 ## Vergleichen Sie mit dem Angebotspreis
 
 Verwenden Sie diese Karten, um einen Artikel mit den angegebenen Preisdaten zu vergleichen. Die sichtbaren Auswahlmöglichkeiten umfassen Artikel-ID, Lieferantentyp, Lieferantenartikel-ID, Stückpreis und Maßeinheit. Der **Operator** und die Datenplatzhalter hängen von der von Ihnen ausgewählten Karte ab.
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-4a7af1d99c73-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-4a7af1d99c73-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
 ## Bevollmächtigter
 

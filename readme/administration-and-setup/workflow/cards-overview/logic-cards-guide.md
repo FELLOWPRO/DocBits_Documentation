@@ -1,6 +1,6 @@
 # Logikkarten: Variablen, Konvertierungen, JSON und Trigger
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e019409102f9-de.png" alt="Konvertierungs- und JSON-Karten in der Kartenbibliothek. Karten für Organisationsvariablen benötigen den Advanced Builder; sichtbare Vorlagen hängen außerdem vom Release ab. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt."><figcaption><p>Konvertierungs- und JSON-Karten in der Kartenbibliothek. Karten für Organisationsvariablen benötigen den Advanced Builder; sichtbare Vorlagen hängen außerdem vom Release ab. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e019409102f9-de.png" alt="Konvertierungs- und JSON-Karten in der Kartenbibliothek. Karten für Organisationsvariablen benötigen den Advanced Builder; sichtbare Vorlagen hängen außerdem vom Release ab. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Konvertierungs- und JSON-Karten in der Kartenbibliothek. Karten für Organisationsvariablen benötigen den Advanced Builder; sichtbare Vorlagen hängen außerdem vom Release ab. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
 Verwenden Sie diese Karten im Advanced Workflow Builder, wo die ausgewählte Karte verfügbar ist. Die Sichtbarkeit der Karte hängt von Ihrer Version und den aktivierten Vorlagen ab. Die folgenden Referenzen beschreiben Version 2. Berücksichtigen Sie die in einem vorhandenen Workflow gespeicherte Version, wenn Sie deren Felder mit diesem Handbuch vergleichen.
 
@@ -104,3 +104,38 @@ Durch die Auswahl eines Webhook-Ereignisses wird weder ein öffentlicher Webhook
 ## Testen und diagnostizieren
 
 Validieren Sie das Diagramm, testen Sie jeden Zweig mit repräsentativen Eingaben und überprüfen Sie [Workflow-Protokolle](../workflow-logs.md). Berücksichtigen Sie fehlende Tags, ungültiges JSON, falsche Variablentypen, numerische Grenzen und falsche Bedingungen. Ein Test ohne Dokument kann keine dokumentabhängige Aktion nachweisen. Überprüfen Sie die gespeicherte Kartenversion und den Aktivierungsstatus noch einmal, bevor Sie sich auf die automatische Ausführung verlassen.
+
+<!-- workflow-card-logic-examples-20261021 -->
+
+## Ausgearbeitete Beispiele für jede Logikkarte
+
+Dies sind veranschaulichende Eingaben und erwartete Ergebnisse für Version 2. Verwenden Sie Organisationsvariablenkarten nur dort, wo der Advanced Builder ihre Vorlagen verfügbar macht.
+
+| Karte | Beispielkonfiguration | Erwartetes Ergebnis und Gegenbeispiel |
+| --- | --- | --- |
+| `ACTION_LOGIC_SET_TEXT_VAR` | Stellen Sie die Organisationstextvariable `routing_label` auf `review` ein. | Die gemeinsam genutzte Variable enthält `review`. Ein späterer Workflow kann dieselbe Organisationsvariable lesen. |
+| `ACTION_LOGIC_SET_NUMBER_VAR` | Setzen Sie die Zahlenvariable `approval_limit` auf `1000.50`. | Es speichert numerische `1000.5`. Text `EUR 1000,50` ist keine gültige numerische Eingabe. |
+| `ACTION_LOGIC_CALC_NUMBER` | Speichern Sie den Ausdruck `(100 + 20) / 2` in der Zahlenvariablen `calculated_limit`. | Das Ergebnis ist `60`. Ein Dokumentfeldname oder eine Division durch Null ist kein gültiger Ersatz. |
+| `ACTION_LOGIC_SET_BOOLEAN_VAR` | Setzen Sie die Ja/Nein-Variable `review_required` auf den angebotenen Booleschen Wert `true`. | Das Organisationsflag ist wahr. Verwenden Sie Boolean `false` in einem separaten Fall, um es zu löschen. |
+| `ACTION_LOGIC_INVERT_BOOLEAN` | Beginnen Sie mit der Organisationsvariablen `demo_flag` gleich `true`. | Eine Ausführung macht es `false`. Eine erneute Ausführung macht es zu `true`, daher ist eine wiederholte Ausführung nicht idempotent. |
+| `ACTION_LOGIC_CREATE_TEXT_TAG` | Erstellen Sie das Ausführungs-Tag `raw_amount` mit dem Text `125.50`. | Das Tag enthält diesen Text in dieser Ausführung; Es handelt sich nicht um eine neue Organisationsvariable oder ein neues Dokumentfeld. |
+| `ACTION_LOGIC_CONVERT_TO_NUMBER` | Konvertieren Sie das Eingabe-Tag `raw_amount`, das `125.50` enthält, in das Ausgabe-Tag `amount_number`. | Die Ausgabe erfolgt numerisch `125.5`. `EUR 125,50` erzeugt einen Konvertierungsfehler. |
+| `ACTION_LOGIC_CONVERT_TO_TEXT` | Konvertieren Sie das numerische Tag `amount_number`, das `125.5` enthält, in `amount_text`. | Die Ausgabe ist Text `125.5`; Es ist nicht als Währungsbetrag lokalisiert. |
+| `ACTION_LOGIC_CONVERT_TO_BOOLEAN` | Konvertieren Sie ein numerisches Eingabe-Tag, das `1` enthält, in ein Ausgabe-Tag `has_value`. | Die Ausgabe ist wahr. Numerisch `0` erzeugt falsch. |
+| `ACTION_LOGIC_JSON_TO_NUMBER` | Quelltag `payload` mit `{"invoice":{"amount":"125.50"}}` erstellen; Lesepfad `invoice.amount` bis `amount_number`. | Die Ausgabe erfolgt numerisch `125.5`. Ein fehlender Pfad ist ein Fehler, keine gültige Null. |
+| `ACTION_LOGIC_JSON_TO_TEXT` | Verwenden Sie das Quell-Tag `payload`, das `{"invoice":{"status":"review"}}` und den Pfad `invoice.status` enthält. | Das Ausgabe-Tag enthält den Text `review`. |
+| `ACTION_LOGIC_JSON_TO_BOOLEAN` | Verwenden Sie das Quell-Tag `payload`, das `{"invoice":{"approved":false}}` und den Pfad `invoice.approved` enthält. | Die Ausgabe ist boolesch falsch. Ein fehlender Pfad ist nicht dasselbe wie ein gespeicherter falscher Pfad. |
+| `ACTION_LOGIC_JSON_SET_NUMBER` | Verwenden Sie das vorhandene JSON-Tag `payload`, das `{"invoice":{}}` enthält; Stellen Sie `invoice.total` auf `125.5` ein. | Das Tag enthält eine numerische JSON-Gesamtsumme, keine in Anführungszeichen gesetzte numerische Zeichenfolge. |
+| `ACTION_LOGIC_JSON_SET_TEXT` | Verwenden Sie das vorhandene JSON-Tag `payload`, das `{"invoice":{}}` enthält; Stellen Sie `invoice.status` auf `review` ein. | Der gespeicherte JSON-Wert ist eine Zeichenfolge: `{"invoice":{"status":"review"}}`. |
+| `ACTION_LOGIC_JSON_SET_BOOLEAN` | Verwenden Sie das vorhandene JSON-Tag `payload`, das `{"invoice":{}}` enthält; setze `invoice.approved` mit Text `true`. | Der gespeicherte JSON-Wert ist boolesch wahr. Verwenden Sie `false`, um es zu löschen. |
+| `ACTION_LOGIC_JSON_SET_JSON` | Verwenden Sie das vorhandene JSON-Tag `payload`, das `{"invoice":{}}` enthält. Setzen Sie `invoice.metadata` auf gültiges JSON `{"source":"demo"}`. | Der eingefügte Wert ist ein Objekt. Ungültiges JSON muss gemeldet und nicht als erfolgreiche Objektaktualisierung gespeichert werden. |
+| `CONDITION_LOGIC_VALUE_EQUALS` | Erstellen Sie Tag `route` mit Text `review` und vergleichen Sie es mit `review`. | Es geht vorbei. Der Vergleich mit `Review` schlägt fehl, da beim Vergleich die Groß-/Kleinschreibung beachtet wird. |
+| `CONDITION_LOGIC_BOOLEAN_IS` | Verwenden Sie das Tag `review_required`, das den echten Booleschen Wert `true` enthält. | Es geht vorbei; false oder ein fehlendes Tag führt nicht zu einem wahren Ergebnis. |
+| `CONDITION_LOGIC_TEXT_CONTAINS` | Verwenden Sie das Tag `note` mit dem Text `manual review` und suchen Sie nach `review`. | Es geht vorbei. Die Suche nach dem Großbuchstaben `REVIEW` schlägt fehl. Eine leere Suchzeichenfolge stimmt überein und sollte vermieden werden, es sei denn, dies ist beabsichtigt. |
+| `CONDITION_LOGIC_NUMBER_LESS` | Verwenden Sie das numerische Tag `amount` gleich `50` und den Vergleichswert `100`. | Es geht vorbei. Ein Wert von `100` besteht den strengen Kleiner-als-Vergleich nicht. |
+| `CONDITION_LOGIC_NUMBER_GREATER` | Verwenden Sie das numerische Tag `amount` gleich `125` und den Vergleichswert `100`. | Es geht vorbei. `100` besteht den strengen Größer-als-Vergleich nicht. |
+| `CONDITION_LOGIC_EXPRESSION` | Wählen Sie Wert1 `120`, Operator `>` und Wert2 `100`. | Der numerische Vergleich ist erfolgreich. Verwenden Sie `80` als Wert1 für einen falschen Zweig; Dies ist kein Freiform-Python-Ausdruck. |
+| `CONDITION_LOGIC_VAR_CHANGED` | Wählen Sie eine Organisationsvariable aus, deren vorheriger Wert `new` ist und deren aktueller Wert `review` ist. | Das Ereignis mit geändertem Wert stimmt überein. Wiederholen von `review`, da sowohl der vorherige als auch der aktuelle Wert nicht übereinstimmen. |
+| `CONDITION_LOGIC_WEBHOOK_EVENT` | Wählen Sie den Ereignisnamen `invoice.ready` und geben Sie ein konfiguriertes Integrationsereignis mit der Nutzlast `{"event":"invoice.ready"}` an. | Es passt. `{"event":"invoice.updated"}` und kein Ereignis stimmen nicht überein. Die Karte erstellt keinen Webhook-Endpunkt. |
+
+Die optionale Dokumentreferenzaktion `ACTION_LOGIC_SET_DOCUMENT_VAR` hat keine vordefinierte Vorlage in der überprüften Quelle. Wenn Ihr Administrator eine unterstützte Vorlage bereitstellt, wählen Sie eine Dokumentvariable aus und führen Sie sie mit einem aktuellen Demodokument aus: Diese Dokument-ID wird gespeichert. Ohne Dokument meldet es `NO_DOCUMENT`. Behandeln Sie sie nicht als verfügbare Karte, nur weil die Implementierung vorhanden ist.

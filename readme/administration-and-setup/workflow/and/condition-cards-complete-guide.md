@@ -767,3 +767,23 @@ SOME FALSE → Stop
 * **CONDITION\_DOC\_FIELD\_CONTAINS** – Prüfung des Feldinhalts
 * **CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES** - Feldvergleich
 * **CONDITION\_CHECKBOX\_IS** – Kontrollkästchenprüfung
+
+<!-- workflow-card-complete-example-20261021 condition_purchase_order_import -->
+
+### Beispiel für einen Auslöser für den Import einer Bestellung
+
+**Konfiguration:** Wählen Sie unter „Wenn“ das Importereignis „Neue Bestellung“ (`wf_new_purchase_order`) aus und lassen Sie das Aktualisierungsereignis (`wf_updated_purchase_order`) deaktiviert. Konfigurieren Sie nachfolgende Aktionen für diesen dokumentunabhängigen Workflow-Kontext.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein durch eine neu importierte Bestellung ausgelöster Lauf erfüllt diese Bedingung. Bei einem Lauf, der nur durch ein Update ausgelöst wird, ist dies nicht der Fall. Durch die Auswahl beider Ereignisse ist jedes Ereignis möglich. Hierbei werden die Workflow-Trigger-Informationen überprüft, nicht, ob eine Rechnung derzeit eine Bestellnummer enthält.
+
+Dies ist eine beispielhafte Testkonfiguration und das erwartete Ergebnis. es wurde nicht ausgeführt. Verwenden Sie die in Ihrer Testorganisation konfigurierten Daten und Empfänger.
+
+<!-- workflow-card-complete-example-20261021 condition_supplier_status_is_isnot -->
+
+### Beispiel für einen Lieferantenstatus-Änderungsauslöser
+
+**Konfiguration:** Wählen Sie unter „Wenn“ den Operator `is` und einen Zielstatus aus, der tatsächlich in Ihrer Organisation angeboten wird. Nennen Sie in diesem Beispiel den ausgewählten Status A. Lassen Sie einen anderen verfügbaren Status B deaktiviert.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Die Bedingung gilt für ein Lieferantenstatusänderungsereignis, dessen neuer Status A ist; Es ist falsch für ein Ereignis, dessen neuer Status B ist. Mit dem Operator `is not` kehren sich diese Ergebnisse um. Hierbei handelt es sich um einen Ereignisauslöser, der auf Workflow-Laufinformationen basiert, und nicht um eine allgemeine Prüfung des Lieferantenstatus auf einer Rechnung. Bestätigen Sie das tatsächliche Ereignis und den ausgewählten Status im Protokoll.
+
+Dies ist eine beispielhafte Testkonfiguration und das erwartete Ergebnis. es wurde nicht ausgeführt. Verwenden Sie die in Ihrer Testorganisation konfigurierten Daten und Empfänger.

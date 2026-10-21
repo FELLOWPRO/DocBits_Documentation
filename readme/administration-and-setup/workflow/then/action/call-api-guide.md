@@ -52,7 +52,7 @@ Verwenden Sie diese Karte, wenn Sie Folgendes benötigen:
 
 ## Wie es funktioniert
 
-1. **Bedingungsprüfung**: Der Workflow prüft zunächst, ob die Bedingungen in den Abschnitten „Wo“ und „Und“ erfüllt sind
+1. **Bedingungsprüfung**: Der Workflow prüft zunächst, ob die Bedingungen in den Abschnitten „Wenn“ und „Und“ erfüllt sind
 2. **Daten vorbereiten**: Die Karte sammelt die von Ihnen konfigurierten Parameter
 3. **Anfrage senden**: Es sendet Ihre Daten an die externe API/den externen Dienst
 4. **Receive Response**: Der externe Dienst antwortet mit Daten

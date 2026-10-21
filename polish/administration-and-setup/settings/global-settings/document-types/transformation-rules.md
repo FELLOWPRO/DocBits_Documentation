@@ -36,23 +36,23 @@ Zasady transformacji włącza **administrator organizacji** **osobno dla każdeg
 
 1. Przejdź do **Settings → Global Settings → Document Types**.
 2. Kliknij ikonę **ustawień** (koło zębate) na karcie typu dokumentu.
-3. Otwórz **Transformation Rules** i włącz przełącznik. Kliknij **Manage transformation rules**, aby otworzyć listę.
+3. Otwórz **Zasady transformacji** i włącz przełącznik. Kliknij **Zarządzaj regułami transformacji**, aby otworzyć listę.
 
 <figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="Przełącznik Transformation Rules"><figcaption><p>Przełącznik Transformation Rules w ustawieniach dodatkowych typu dokumentu</p></figcaption></figure>
 
-Karta typu dokumentu pokazuje teraz link **Transformation Rules** oraz link **Logs** do logów wykonania.
+Karta typu dokumentu pokazuje teraz link **Zasady transformacji** oraz link **Dzienniki** do logów wykonania.
 
 ## Lista zasad
 
-Lista pokazuje wszystkie zasady typu dokumentu w kolejności ich uruchamiania, każdą z jednozdaniowym podsumowaniem („When invoice_id is abcd, take invoice_id, make it UPPERCASE, and save it back.”), jej zakresem (**Header**, **Table**, **Column**, **Routing**), liczbą kroków, źródłem oraz informacją, czy opcja **Wykonywanie dziennika** (Log execution) jest włączona. Możesz filtrować według zakresu oraz **Active / Inactive**, wyszukiwać, a menu **⋮** pozwala zduplikować lub usunąć zasadę.
+Lista pokazuje wszystkie zasady typu dokumentu w kolejności ich uruchamiania, każdą z jednozdaniowym podsumowaniem („When invoice_id is abcd, take invoice_id, make it UPPERCASE, and save it back.”), jej zakresem (**Nagłówek**, **Tabela**, **Kolumna**, **Routing**), liczbą kroków, źródłem oraz informacją, czy opcja **Wykonywanie dziennika** (Log execution) jest włączona. Możesz filtrować według zakresu oraz **Active / Inactive**, wyszukiwać, a menu **⋮** pozwala zduplikować lub usunąć zasadę.
 
-Zasady pochodzą z trzech źródeł, tak jak w przypadku reguł walidacji: zasady **System default** dostarczane z DocBits (kliknij **Customize**, aby otrzymać edytowalną kopię), zasady systemowe **Customized** (**Reset to Default** przywraca oryginał) oraz zasady **Custom** utworzone przez Ciebie.
+Zasady pochodzą z trzech źródeł, tak jak w przypadku reguł walidacji: zasady **Domyślne ustawienie systemu** dostarczane z DocBits (kliknij **Dostosuj**, aby otrzymać edytowalną kopię), zasady systemowe **Dostosowane** (**Przywróć ustawienia domyślne** przywraca oryginał) oraz zasady **Niestandardowy** utworzone przez Ciebie.
 
 ## Tworzenie zasady
 
-Kliknij **New rule**. Kreator ma trzy kroki po lewej stronie i **Podgląd na żywo** (Live preview) po prawej. U góry podsumowuje zasadę w jednym zdaniu w trakcie jej budowania.
+Kliknij **Nowa zasada**. Kreator ma trzy kroki po lewej stronie i **Podgląd na żywo** (Live preview) po prawej. U góry podsumowuje zasadę w jednym zdaniu w trakcie jej budowania.
 
-<figure><img src="../../../../.gitbook/assets/transformation-rule-scope.png" alt="Krok 1 kreatora zasad transformacji"><figcaption><p>Krok 1: co zasada zmienia. Zdanie u góry opisuje zasadę prostym językiem</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-rule-scope-pl.png" alt="Zakres transformacji: pole nagłówka, wiersze tabeli, kolumna i przekierowanie."><figcaption><p>Zakres transformacji: pole nagłówka, wiersze tabeli, kolumna i przekierowanie.</p></figcaption></figure>
 
 ### Krok 1 — Co i gdzie
 
@@ -81,11 +81,11 @@ Dwie opcje w sekcji **Opcje przetwarzania** określają, jak często zasada jest
 
 ### Krok 3 — The pipeline
 
-<figure><img src="../../../../.gitbook/assets/transformation-rule-pipeline.png" alt="Potok z trzema krokami i podglądem na żywo"><figcaption><p>Read → Przycinać → Zmień przypadek → Afiks → Write, z wartością po każdym kroku w podglądzie na żywo</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-rule-pipeline-pl.png" alt="Kroki reguły transformacji. Rurociąg oznacza tutaj sekwencję kroków przetwarzania."><figcaption><p>Kroki reguły transformacji. Rurociąg oznacza tutaj sekwencję kroków przetwarzania.</p></figcaption></figure>
 
-* **Read from** — **samo pole (lub kolumna)** albo **inne pole**. Odczyt z innego pola pozwala wypełnić pole na podstawie innego, na przykład skopiować numer zamówienia zakupu z pola tekstowego.
-* **Steps** — wartość przechodzi przez kroki **od góry do dołu**; wynik jednego kroku jest wejściem następnego. Kroki dodajesz przez **+ Add a step**, zmieniasz ich kolejność strzałkami, usuwasz przez **✕**. Każdy krok pokazuje po prawej stronie wartość pośrednią próbki.
-* **Write to** — cel z kroku 1. DocBits zapisuje przechowywaną wartość, a następnie automatycznie odświeża wartość wyświetlaną.
+* **Przeczytaj z** — **samo pole (lub kolumna)** albo **inne pole**. Odczyt z innego pola pozwala wypełnić pole na podstawie innego, na przykład skopiować numer zamówienia zakupu z pola tekstowego.
+* **Kroki** — wartość przechodzi przez kroki **od góry do dołu**; wynik jednego kroku jest wejściem następnego. Kroki dodajesz przez **+ Add a step**, zmieniasz ich kolejność strzałkami, usuwasz przez **✕**. Każdy krok pokazuje po prawej stronie wartość pośrednią próbki.
+* **Napisz do** — cel z kroku 1. DocBits zapisuje przechowywaną wartość, a następnie automatycznie odświeża wartość wyświetlaną.
 
 ### Kroki
 
@@ -95,36 +95,36 @@ Dwie opcje w sekcji **Opcje przetwarzania** określają, jak często zasada jest
 | --- | --- | --- |
 | **Zmień przypadek** (Change case) | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
 | **Przycinać** (Trim) | strona (obie, lewa, prawa); znaki (puste = białe znaki) | `  4711 ` → `4711`; ze znakiem `0` i stroną lewą: `004711` → `4711` |
-| **Pad** | długość, znak wypełnienia, strona | długość 10, `0`, lewa: `4711` → `0000004711` |
-| **Truncate** | maksymalna długość | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
+| **Podkładka** | długość, znak wypełnienia, strona | długość 10, `0`, lewa: `4711` → `0000004711` |
+| **Ścięty** | maksymalna długość | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
 | **Afiks** (Affix) | add prefix, add suffix, strip prefix, strip suffix; tekst | add prefix `INV-`: `4711` → `INV-4711`; strip prefix `Art.-Nr. `: `Art.-Nr. 4711` → `4711` |
 | **Dezynfekcja** (Sanitise) | zachowaj tylko (alfanumeryczne, litery, cyfry, alfanumeryczne + spacja) lub usuń podane znaki | keep alphanumeric: `DE 123.456.789` → `DE123456789` |
-| **Take a slice** | początek, długość lub koniec | początek 0, długość 4: `2026-09-29` → `2026` |
-| **Extract** | wzorzec, grupa przechwytująca | wzorzec `PO[- ]?(\d+)`, grupa 1: `Order PO-45001234` → `45001234` |
-| **Find & replace** | wzorzec, zamień na, liczba (0 = wszystkie) | wzorzec `\s+`, zamień na ` `: `ACME    GmbH` → `ACME GmbH` |
-| **Map values** | mapowania (z → na), wartość przy braku dopasowania (puste = zachowaj wejście), ignoruj wielkość liter | `STK → PCE`: `stk` → `PCE` |
-| **Reformat date** | wzorzec wyjściowy (`%d.%m.%Y`, `%m/%d/%Y`, `%Y-%m-%d`, `%d %b %Y`) | `%d.%m.%Y`: `2026-09-29` → `29.09.2026` |
-| **Format number** | ustawienia regionalne (de_DE, en_US, en_GB, fr_FR), min. i maks. liczba miejsc po przecinku | de_DE, 2 miejsca po przecinku: `1234.5` → `1.234,50` |
-| **Fix value** | wartość | zawsze zapisuje tę wartość, niezależnie od zawartości pola |
-| **Clear** | – | opróżnia pole |
+| **Wybór fragmentu** | początek, długość lub koniec | początek 0, długość 4: `2026-09-29` → `2026` |
+| **Ekstrakt** | wzorzec, grupa przechwytująca | wzorzec `PO[- ]?(\d+)`, grupa 1: `Order PO-45001234` → `45001234` |
+| **Znajdź i zamień** | wzorzec, zamień na, liczba (0 = wszystkie) | wzorzec `\s+`, zamień na ` `: `ACME    GmbH` → `ACME GmbH` |
+| **Mapowanie wartości** | mapowania (z → na), wartość przy braku dopasowania (puste = zachowaj wejście), ignoruj wielkość liter | `STK → PCE`: `stk` → `PCE` |
+| **Data formatowania** | wzorzec wyjściowy (`%d.%m.%Y`, `%m/%d/%Y`, `%Y-%m-%d`, `%d %b %Y`) | `%d.%m.%Y`: `2026-09-29` → `29.09.2026` |
+| **Formatowanie liczby** | ustawienia regionalne (de_DE, en_US, en_GB, fr_FR), min. i maks. liczba miejsc po przecinku | de_DE, 2 miejsca po przecinku: `1234.5` → `1.234,50` |
+| **Ustal wartość** | wartość | zawsze zapisuje tę wartość, niezależnie od zawartości pola |
+| **Wyczyść** | – | opróżnia pole |
 
-Zasady **Table rows** używają dwóch innych kroków, które działają na wierszach zamiast na wartościach:
+Zasady **Wiersze tabeli** używają dwóch innych kroków, które działają na wierszach zamiast na wartościach:
 
 | Krok | Efekt |
 | --- | --- |
-| **Clear all rows** | usuwa każdy wyodrębniony wiersz. Wiersze dodane przez późniejszy krok pozostają. |
-| **Add a row** | dodaje jeden wiersz **po ostatnim wierszu** lub **przed pierwszym wierszem**. Dla każdej kolumny wybierz **Value** (stała wartość) lub **Field** (wartość pola nagłówka). Pominięte kolumny pozostają puste. |
+| **Wyczyść wszystkie wiersze** | usuwa każdy wyodrębniony wiersz. Wiersze dodane przez późniejszy krok pozostają. |
+| **Add a row** | dodaje jeden wiersz **po ostatnim wierszu** lub **przed pierwszym wierszem**. Dla każdej kolumny wybierz **Wartość** (stała wartość) lub **Pole** (wartość pola nagłówka). Pominięte kolumny pozostają puste. |
 
 {% hint style="info" %}
-**Reformat date** oczekuje daty w postaci, w jakiej DocBits przechowuje ją wewnętrznie (`YYYY-MM-DD`). Stosuj ją do samego pola, a nie do tekstu, który już zawiera sformatowaną datę.
+**Data formatowania** oczekuje daty w postaci, w jakiej DocBits przechowuje ją wewnętrznie (`YYYY-MM-DD`). Stosuj ją do samego pola, a nie do tekstu, który już zawiera sformatowaną datę.
 {% endhint %}
 
 ### Podgląd na żywo
 
 Podgląd na żywo uruchamia zasadę na próbce w trakcie jej budowania:
 
-* **Przykładowe dane wejściowe** (Sample input) — wpisz wartość taką, jaka pochodziłaby z dokumentu. W zasadach tabeli podaj liczbę wyodrębnionych wierszy (**Sample table**) oraz wartości pól, które odczytują nowe wiersze (**Row source values**).
-* **Wartości stanu** (Condition values) — w zasadach z warunkiem wpisz wartości pól warunku. Podgląd pokazuje **Warunki są zgodne — reguła działa** lub **Conditions do not match — rule is skipped**.
+* **Przykładowe dane wejściowe** (Sample input) — wpisz wartość taką, jaka pochodziłaby z dokumentu. W zasadach tabeli podaj liczbę wyodrębnionych wierszy (**Przykładowa tabela**) oraz wartości pól, które odczytują nowe wiersze (**Wartości źródłowe wierszy**).
+* **Wartości stanu** (Condition values) — w zasadach z warunkiem wpisz wartości pól warunku. Podgląd pokazuje **Warunki są zgodne — reguła działa** lub **Warunki nie pasują — reguła jest pomijana**.
 * Poniżej widzisz wartość po **każdym kroku** oraz wynik końcowy, który zostałby zapisany („invoice_id → INV-230620-03A” lub „unchanged”).
 
 Podczas korzystania z podglądu nic nie jest zapisywane. Kliknij **Ratować** (Save), aby zapisać zasadę.
@@ -133,30 +133,30 @@ Podczas korzystania z podglądu nic nie jest zapisywane. Kliknij **Ratować** (S
 
 ### Oczyszczenie numeru faktury dostawcy
 
-Pole nagłówka **Invoice Number** · tylko gdy *Supplier ID is HP0000278* · Przycinać → Zmień przypadek UPPERCASE → Afiks add prefix `INV-`.
+Pole nagłówka **Numer faktury** · tylko gdy *Supplier ID is HP0000278* · Przycinać → Zmień przypadek UPPERCASE → Afiks add prefix `INV-`.
 Próbka `  230620-03a ` → `INV-230620-03A`. Zobacz zrzut ekranu potoku powyżej.
 
 ### Mapowanie kodów jednostek
 
-Kolumna tabeli **INVOICE_TABLE / UNIT** · zawsze · Przycinać → Map values `STK → PCE`, `KG → KGM`, `Std → HUR`, **Ignore case when matching** włączone, wartość przy braku dopasowania pusta (zachowaj wejście).
+Kolumna tabeli **INVOICE_TABLE / UNIT** · zawsze · Przycinać → Map values `STK → PCE`, `KG → KGM`, `Std → HUR`, **Ignoruj wielkość liter podczas dopasowywania** włączone, wartość przy braku dopasowania pusta (zachowaj wejście).
 
-<figure><img src="../../../../.gitbook/assets/transformation-column-value-map.png" alt="Zasada kolumny tabeli z krokiem Map values"><figcaption><p>Map values w kolumnie UNIT: <code>stk</code> staje się <code>PCE</code></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-column-value-map-pl.png" alt="Mapowanie wartości kolumny tabeli. Rurociąg oznacza tutaj sekwencję kroków przetwarzania. Wartości mapy oznaczają mapowanie wartości."><figcaption><p>Mapowanie wartości kolumny tabeli. Rurociąg oznacza tutaj sekwencję kroków przetwarzania. Wartości mapy oznaczają mapowanie wartości.</p></figcaption></figure>
 
 ### Jedna linia łączna dla dostawcy dopasowywanego na sumę
 
 Wiersze tabeli **INVOICE_TABLE** · tylko gdy *Supplier ID is HP0000278* · Clear all rows → Add a row z `POSITION` = wartość `001`, `QUANTITY` = wartość `1`, `NET_AMOUNT` = pole *Total Net Amount*.
 
-<figure><img src="../../../../.gitbook/assets/transformation-add-row-columns.png" alt="Zasada Table rows: wyczyść wszystkie wiersze, następnie dodaj wiersz"><figcaption><p>Trzy wyodrębnione wiersze zostają zastąpione jednym wierszem z kwotą netto</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-add-row-columns-pl.png" alt="Niezapisany krok transformacji dodający wiersz tabeli. Pytanie Dokąd zmierza ten spór dotyczy tutaj miejsca dodania wiersza."><figcaption><p>Niezapisany krok transformacji dodający wiersz tabeli. Pytanie Dokąd zmierza ten spór dotyczy tutaj miejsca dodania wiersza.</p></figcaption></figure>
 
-Kolejność ma znaczenie: **Clear all rows** musi być **przed** **Add a row**. Kreator ostrzega, jeśli tak nie jest („Clear all rows runs after Add a row …”), a także gdy krok **Add a row** nie jest poprzedzony krokiem **Clear all rows**, ponieważ zasada dodawałaby wtedy kolejną kopię wiersza przy każdym zapisie. Połącz tę zasadę z regułą dopasowania zamówień zakupu na sumę, aktywną dla dokumentów jednowierszowych.
+Kolejność ma znaczenie: **Wyczyść wszystkie wiersze** musi być **przed** **Add a row**. Kreator ostrzega, jeśli tak nie jest („Clear all rows runs after Add a row …”), a także gdy krok **Add a row** nie jest poprzedzony krokiem **Wyczyść wszystkie wiersze**, ponieważ zasada dodawałaby wtedy kolejną kopię wiersza przy każdym zapisie. Połącz tę zasadę z regułą dopasowania zamówień zakupu na sumę, aktywną dla dokumentów jednowierszowych.
 
 ### Wypełnij zamówienie zakupu na podstawie pola numeru faktury
 
-Pole nagłówka **Purchase Order** · tylko gdy *Purchase Order is empty* · **Read from** *Invoice Number* → Przycinać → Zmień przypadek UPPERCASE.
+Pole nagłówka **Zamówienie zakupu** · tylko gdy *Purchase Order is empty* · **Przeczytaj z** *Invoice Number* → Przycinać → Zmień przypadek UPPERCASE.
 
 <figure><img src="../../../../.gitbook/assets/transformation-po-from-invoice-number-pl.png" alt="Kreator zasady, która wypełnia Purchase Order na podstawie Invoice Number, z podglądem na żywo"><figcaption><p>Zasada i jej podgląd na żywo: <code>po-4711</code> staje się <code>PO-4711</code> w <code>purchase_order</code>. Przykładowa zasada na testowym typie dokumentu.</p></figcaption></figure>
 
-Niektórzy dostawcy drukują numer zamówienia tam, gdzie ekstrakcja oczekuje numeru faktury. Wtedy **Invoice Number** zawiera numer zamówienia, a **Purchase Order** jest puste, więc moduł dopasowania zamówień zakupu nie ma czego dopasować. Ta zasada kopiuje wartość, zanim rozpocznie się dopasowanie. W teście na systemie deweloperskim dokument z dokładnie takim problemem przeszedł ze stanu *niedopasowany* do *w pełni dopasowany* (2 z 2 pozycji) po zapisaniu z tą zasadą. Zasada uruchamia się tylko wtedy, gdy **Purchase Order** jest puste, więc nigdy nie nadpisuje numeru, który został wyodrębniony poprawnie.
+Niektórzy dostawcy drukują numer zamówienia tam, gdzie ekstrakcja oczekuje numeru faktury. Wtedy **Numer faktury** zawiera numer zamówienia, a **Zamówienie zakupu** jest puste, więc moduł dopasowania zamówień zakupu nie ma czego dopasować. Ta zasada kopiuje wartość, zanim rozpocznie się dopasowanie. W teście na systemie deweloperskim dokument z dokładnie takim problemem przeszedł ze stanu *niedopasowany* do *w pełni dopasowany* (2 z 2 pozycji) po zapisaniu z tą zasadą. Zasada uruchamia się tylko wtedy, gdy **Zamówienie zakupu** jest puste, więc nigdy nie nadpisuje numeru, który został wyodrębniony poprawnie.
 
 ### Uczyń numery artykułów porównywalnymi do dopasowania zamówień zakupu
 
@@ -189,7 +189,7 @@ Jeśli faktura zawiera `Art.-Nr. ab-12/3`, a zamówienie zakupu `AB123`, pozycje
 
 ## Zasady Rozgromienie (Routing, podorganizacja)
 
-Zasada **Rozgromienie** (Routing) nie zmienia pola. Ustawia atrybut dokumentu, gdy jej warunki są spełnione — obecnie **podorganizację**. Wybierz **Assign a fixed sub-organisation** i wskaż ją na liście albo **Map from a field**, aby zmapować wartości wyodrębnionego pola na podorganizacje. Dokument należy wtedy do tej podorganizacji, wraz z jej użytkownikami, uprawnieniami i ustawieniami. Wartość, która nie jest prawidłową podorganizacją, nigdy nie jest zapisywana.
+Zasada **Rozgromienie** (Routing) nie zmienia pola. Ustawia atrybut dokumentu, gdy jej warunki są spełnione — obecnie **podorganizację**. Wybierz **Przypisz stałą podorganizację** i wskaż ją na liście albo **Mapowanie z pola**, aby zmapować wartości wyodrębnionego pola na podorganizacje. Dokument należy wtedy do tej podorganizacji, wraz z jej użytkownikami, uprawnieniami i ustawieniami. Wartość, która nie jest prawidłową podorganizacją, nigdy nie jest zapisywana.
 
 ## Kiedy zasady się uruchamiają
 
@@ -201,7 +201,7 @@ Zasada **Rozgromienie** (Routing) nie zmienia pola. Ustawia atrybut dokumentu, g
 
 Większość kroków daje ten sam wynik, gdy działa na własnym wyniku — przycięcie przyciętej wartości, ponowne zmapowanie `PCE`, dodanie prefiksu, który już tam jest. Takie zasady mogą bezpiecznie uruchamiać się przy każdym zapisie.
 
-**Take a slice**, **Extract** i **Find & replace** są inne: uruchomione ponownie na własnym wyniku, wciąż go zmieniają (wycinek bierze pierwsze cztery znaki z pierwszych czterech znaków …). Dlatego DocBits nie pozwala zapisać zasady, która stosuje te kroki do własnego pola docelowego. Należy albo:
+**Wybór fragmentu**, **Ekstrakt** i **Znajdź i zamień** są inne: uruchomione ponownie na własnym wyniku, wciąż go zmieniają (wycinek bierze pierwsze cztery znaki z pierwszych czterech znaków …). Dlatego DocBits nie pozwala zapisać zasady, która stosuje te kroki do własnego pola docelowego. Należy albo:
 
 * włączyć **Uruchom tylko raz dla każdego dokumentu**, albo
 * użyć **Read from another field**, aby wejście pozostało niezmienione.
@@ -220,7 +220,7 @@ Zasady uruchamiają się **przed** dopasowaniem zamówień zakupu, więc mogą p
 Zasady tabeli i kolumn zmieniają to, co widzi moduł dopasowania zamówień (PO matcher):
 
 * Zasada tabeli, która **przebudowuje** pozycje (na przykład czyści wszystkie wiersze i dodaje jedną linię łączną), zachowuje istniejące dopasowanie zamówienia zakupu, dopóki ponownie tworzy **te same pozycje** — wartości są porównywane według znaczenia, więc `1.0` i `1.00` to ta sama pozycja. Pozycje zachowują tożsamość, a dopasowanie przetrwa każdy zapis.
-* Jeśli zasada **zastępuje lub usuwa dopasowane pozycje**, dopasowania nie można zachować. Dokument zapisuje wtedy, która zasada je usunęła, ekran Purchase Order Matching pokazuje to jako przyczynę („_The PO match could not be saved: the transformation rule "…" rebuilt the table_”), a administratorzy otrzymują link do zasady. **Matching history** dokumentu pokazuje krok _Transformation rules_ przed pierwszym etapem dopasowania, wraz z zasadami, które się uruchomiły.
+* Jeśli zasada **zastępuje lub usuwa dopasowane pozycje**, dopasowania nie można zachować. Dokument zapisuje wtedy, która zasada je usunęła, ekran Purchase Order Matching pokazuje to jako przyczynę („_The PO match could not be saved: the transformation rule "…" rebuilt the table_”), a administratorzy otrzymują link do zasady. **Historia dopasowania** dokumentu pokazuje krok _Transformation rules_ przed pierwszym etapem dopasowania, wraz z zasadami, które się uruchomiły.
 * Liczba pozycji po zastosowaniu zasad jest tym, co liczą [warunki aktywacji](more-settings/purchase-order/purchase-order-matching-rules.md#warunki-aktywacji) reguł dopasowania. Zasada, która zwija fakturę do **jednej** pozycji, ma sens tylko razem z regułą dopasowania na sumę, aktywną dla dokumentów jednowierszowych (`[[count(table_lines)]] >= 1`).
 
 ## Logi
@@ -242,7 +242,7 @@ Gdy **Wykonywanie dziennika** jest włączone, każde zastosowanie zasady jest z
 | --- | --- |
 | Zasada niczego nie zmieniła | Czy jest aktywna i czy funkcja jest włączona dla typu dokumentu? Czy warunek jest prawdziwy dla tego dokumentu (dokładna wartość, łącznie ze spacjami i wielkością liter)? Czy zasada z opcją **Uruchom tylko raz dla każdego dokumentu** została już zastosowana do dokumentu? Sprawdź ślad w logu. |
 | Wartość zmienia się ponownie przy każdym zapisie | Potok zawiera Take a slice, Extract lub Find & replace. Włącz **Uruchom tylko raz dla każdego dokumentu** albo odczytuj z innego pola. |
-| Tabela dostaje o jeden wiersz więcej przy każdym zapisie | Krok **Add a row** bez **Clear all rows** przed nim. Dodaj najpierw krok czyszczenia albo włącz opcję **Uruchom tylko raz dla każdego dokumentu**. |
+| Tabela dostaje o jeden wiersz więcej przy każdym zapisie | Krok **Add a row** bez **Wyczyść wszystkie wiersze** przed nim. Dodaj najpierw krok czyszczenia albo włącz opcję **Uruchom tylko raz dla każdego dokumentu**. |
 | Dopasowanie zamówienia zakupu znika po zapisie | Zasada tabeli zastąpiła dopasowane pozycje. Przyczyna na dokumencie wskazuje zasadę; zmień zasadę tak, aby odtwarzała te same pozycje, albo włącz dla niej opcję **Uruchom tylko raz dla każdego dokumentu**. |
 | Reguła dopasowania nigdy się nie uruchamia po transformacji | Zasada zmieniła liczbę pozycji; dostosuj warunek aktywacji reguły dopasowania. |
 | Zasada potrzebuje wartości z danych podstawowych dostawcy, ale jest ona nadal pusta | Włącz **Run after lookup population (before PO match)**. |

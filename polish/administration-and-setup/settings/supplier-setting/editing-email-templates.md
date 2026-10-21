@@ -1,6 +1,6 @@
 # Edytowanie szablonów e-maili
 
-<figure><img src="../../../.gitbook/assets/supplier_email_templates.png" alt="Szablony e-maili dostawców"><figcaption><p>Strona szablonów e-maili dostawców</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t013-pl.png" alt="Lista szablonów e-mail dla dostawców."><figcaption><p>Lista szablonów e-mail dla dostawców.</p></figcaption></figure>
 
 ### Przegląd
 
@@ -12,12 +12,12 @@ Funkcja Email Templates pozwala administratorom tworzyć i dostosowywać komunik
 
 ### Edytowanie szablonów e-maili
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.35.53.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-bildschirmfoto-2024-08-25-um-12-35-53-pl.png" alt="Edytor nowego szablonu wiadomości dla dostawców."><figcaption><p>Edytor nowego szablonu wiadomości dla dostawców.</p></figcaption></figure>
 
 #### Dostęp do edytora szablonów e-maili
 
 1. **Przejdź do Email Templates**:
-   * Przejdź z menu głównego do sekcji **Email Templates**.
+   * Przejdź z menu głównego do sekcji **Szablony e-maili**.
 2. **Wybierz szablon do edycji**:
    * Wybierz szablon e-maila, który chcesz edytować, klikając jego nazwę (np. „Supplier Invitation Email”).
 3. **Edytuj szablon**:
@@ -78,6 +78,5 @@ Aby zdefiniować `{{magic_link}}` jako klikalny link w e-mailu, musisz upewnić 
 Prawidłowe zdefiniowanie \{{magic\_link\}} w szablonach e-maili zapewnia, że odbiorcy otrzymują spersonalizowany e-mail z jasnym wezwaniem do działania, który prowadzi ich do odpowiedniego zadania w Twoim portalu dostawcy. Poprawia to doświadczenie użytkownika i zapewnia płynny onboarding oraz komunikację.
 
 \
-
 
 Ta dokumentacja zawiera administratorom instrukcje krok po kroku dotyczące definiowania i używania \{{magic\_link\}} w szablonach e-maili, dzięki czemu e-maile są zarówno funkcjonalne, jak i atrakcyjne wizualnie.

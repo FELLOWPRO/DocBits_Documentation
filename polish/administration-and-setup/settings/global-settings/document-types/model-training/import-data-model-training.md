@@ -1,5 +1,7 @@
 # Import danych: Trenowanie modelu
 
+<figure><img src="../../../../../.gitbook/assets/s150-image-85-1-pl.png" alt="Import danych treningowych z formatem kwot i dat. Błędna etykieta Wygrywać oznacza przesyłanie plików."><figcaption><p>Import danych treningowych z formatem kwot i dat. Błędna etykieta Wygrywać oznacza przesyłanie plików.</p></figcaption></figure>
+
 Szczegółowe instrukcje dotyczące importowania przykładowych dokumentów do trenowania, w tym formatu i typów dokumentów, których należy użyć.
 
 **Aby zaimportować przykładowe dokumenty do trenowania, wykonaj następujące kroki:**

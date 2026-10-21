@@ -37,7 +37,7 @@ Kliknij **Nowy pomysł** w nagłówku. Okno prosi o:
 
 Naciśnij **Wyślij**, aby opublikować. Pomysł pojawi się na liście ze statusem **Nowy**.
 
-<figure><img src="../../.gitbook/assets/idea-board-new-idea.png" alt="Okno Nowy pomysł"><figcaption><p>Okno Nowy pomysł z selektorami kategorii i kanału.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-idea-board-new-idea-pl.png" alt="Okno zgłaszania pomysłu bez danych osobowych."><figcaption><p>Okno zgłaszania pomysłu bez danych osobowych.</p></figcaption></figure>
 
 ## Głosowanie
 

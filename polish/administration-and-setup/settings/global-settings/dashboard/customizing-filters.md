@@ -30,7 +30,7 @@ Korzystanie z filtrów pozwala użytkownikom szybko znaleźć istotne informacje
 
 * Otwórz menu filtrów w ustawieniach pod Panelem i kliknij "Filtry".
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_3.png)
+<figure><img src="../../../../.gitbook/assets/prior-u015-pl.png" alt="Styl filtra statusu i niestandardowy filtr panelu."><figcaption><p>Styl filtra statusu i niestandardowy filtr panelu.</p></figcaption></figure>
 
 * Wybierz pole do filtrowania (np. Status).
 

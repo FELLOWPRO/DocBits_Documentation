@@ -3,24 +3,22 @@ hidden: true
 noIndex: true
 ---
 
-# FTP
+# Import przez FTP i SFTP
 
-Jeśli chcesz zintegrować swoje SFTP z DocBits, aby importować dokumenty.
+Automatyczny import wymaga zatwierdzonych danych połączenia i katalogu dostępnego dla konta serwera.
 
-Wymagania
+## Tworzenie połączenia
 
-* Prawidłowo skonfigurowany, kompatybilny z Linuxem serwer SFTP
-* Nazwa hosta SFTP, nazwa użytkownika i hasło
-* Dedykowany folder importu
+Otwórz ustawienia importu i utwórz nowe połączenie w sekcji FTP.
 
-**Konfiguracja importu**
+<figure><img src="../../../.gitbook/assets/s150-ftp1-pl.png" alt="Przegląd połączeń FTP z ukrytymi danymi połączeń."><figcaption><p>Przegląd połączeń FTP z ukrytymi danymi połączeń.</p></figcaption></figure>
 
-Z pulpitu otwórz Ustawienia i przejdź do Importu. W sekcji Import FTP wybierz opcję dodania nowej konfiguracji.
+Kreator zaczyna od konfiguracji serwera. Wybierz właściwy protokół, serwer, port i dane logowania. Użyj wartości potwierdzonych przez administratora serwera.
 
-<figure><img src="../../../.gitbook/assets/ftp1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-ftp_import_configuration_form-pl.png" alt="Pierwszy krok kreatora importu FTP: konfiguracja serwera."><figcaption><p>Pierwszy krok kreatora importu FTP: konfiguracja serwera.</p></figcaption></figure>
 
-Wprowadź dane uwierzytelniające SFTP w podanych miejscach i wybierz zapisz (Pole Klucz API zostanie automatycznie wypełnione kluczem API środowiska, w którym pracujesz).
+Przejdź do opcji i konfiguracji. Sprawdź całe połączenie przed zapisaniem.
 
-![](https://lh7-us.googleusercontent.com/m11trSpnDmv9aco98vPG6xuIhYxngp6TauG7lDYEWB2VguNmX0ypXMi3Fc4Ey6V4Iy_YwOy4Zooh3rj_WoAQ3PQgVIjw5vqToOuq_lIxN7IqPE2fv1puzsnEO96y5mn5FHjFtC1wYrEf9sxjHk1GL2I)
+## Archiwizowanie plików
 
-Po wprowadzeniu wszystkich niezbędnych danych SFTP, kliknij ZAPISZ.
+Jeżeli połączenie obsługuje archiwizację, ustaw ją w opcjach importu. Sprawdź, czy konto może zapisywać w katalogu archiwum, i przetestuj działanie na przykładowym pliku. Dawny oddzielny formularz archiwizacji został zastąpiony aktualnym kreatorem.

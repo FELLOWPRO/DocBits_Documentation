@@ -18,7 +18,7 @@ Po włączeniu pierwszego składnika DocBits przekazuje Ci również **dziesię�
 
 Otwórz **ustawienia profilu / konta** (menu konta w prawym górnym rogu → **Edytuj profil**) i wybierz **Uwierzytelnianie dwuskładnikowe**. Okno dialogowe 2FA pokazuje bieżący stan i metody, które możesz dodać.
 
-<figure><img src="../.gitbook/assets/mfa-2fa-dialog.png" alt="The Two-factor authentication dialog"><figcaption><p>Okno dialogowe uwierzytelniania dwuskładnikowego. Stąd możesz włączyć aplikację uwierzytelniającą, weryfikację e-mail, dodać klucz dostępu lub otworzyć <strong>Zarządzać</strong>.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/prior-u047-pl.png" alt="Dostępne metody uwierzytelniania dwuskładnikowego."><figcaption><p>Dostępne metody uwierzytelniania dwuskładnikowego.</p></figcaption></figure>
 
 ## Konfiguracja aplikacji uwierzytelniającej (TOTP)
 
@@ -26,8 +26,6 @@ Otwórz **ustawienia profilu / konta** (menu konta w prawym górnym rogu → **E
 2. Zeskanuj kod QR za pomocą aplikacji uwierzytelniającej (Google Authenticator, 1Password, Authy, …). Jeśli nie możesz zeskanować, użyj **klucza ręcznego** wyświetlonego pod kodem QR.
 3. Wprowadź 6-cyfrowy kod wyświetlany przez aplikację i potwierdź.
 4. DocBits włącza 2FA i wyświetla Twoje **kody zapasowe** (patrz poniżej).
-
-<figure><img src="../.gitbook/assets/mfa-totp-setup.png" alt="The authenticator-app setup screen with QR code"><figcaption><p>Zeskanuj kod QR za pomocą aplikacji uwierzytelniającej lub wprowadź klucz ręczny. Następnie potwierdź 6-cyfrowym kodem wyświetlanym przez aplikację.</p></figcaption></figure>
 
 ## Konfiguracja weryfikacji e-mail
 
@@ -48,8 +46,6 @@ Po włączeniu **pierwszego** składnika DocBits wyświetla **dziesięć kodów 
 * Zapisz je w bezpiecznym miejscu (menedżer haseł jest idealny).
 * W dowolnym momencie możesz wygenerować nowy zestaw za pomocą **Wygeneruj ponownie kody zapasowe** (unieważnia to stary zestaw).
 
-<figure><img src="../.gitbook/assets/mfa-backup-codes.png" alt="The backup codes screen"><figcaption><p>Twoje dziesięć kodów zapasowych, wyświetlanych jednorazowo. Każdy działa tylko raz — przechowuj je w bezpiecznym miejscu.</p></figcaption></figure>
-
 {% hint style="warning" %}
 Kody zapasowe są wyświetlane tylko w momencie ich wygenerowania. DocBits nie może wyświetlić ich ponownie — zapisz je natychmiast.
 {% endhint %}
@@ -65,14 +61,11 @@ Kody zapasowe są wyświetlane tylko w momencie ich wygenerowania. DocBits nie m
    * **Klucz dostępu** — kliknij **Użyj klucza dostępu** i potwierdź za pomocą Touch ID / Windows Hello / swojego klucza.
    * **Kod zapasowy** — jeśli nie możesz użyć swojej zwykłej metody.
 
-    <figure><img src="../.gitbook/assets/mfa-challenge.png" alt="The second-factor challenge screen"><figcaption><p>Po podaniu hasła DocBits prosi o drugi składnik. Zmień metodę za pomocą <strong>Użyj klucza dostępu</strong> lub <strong>Wyślij mi kod e-mailem</strong> i opcjonalnie zaufaj urządzeniu na 30 dni.</p></figcaption></figure>
 3. Po pomyślnym potwierdzeniu jesteś zalogowany.
 
 ### Jak wygląda kod e-mail
 
 Jeśli wybierzesz **E-mail**, DocBits wyśle wiadomość z 6-cyfrowym kodem, który wygasa po 10 minutach:
-
-<figure><img src="../.gitbook/assets/mfa-email-otp.png" alt="The DocBits verification-code email"><figcaption><p>Wiadomość e-mail z kodem weryfikacyjnym. Kod wygasa po 10 minutach i może zostać użyty raz.</p></figcaption></figure>
 
 ## Zaufaj temu urządzeniu
 
@@ -85,8 +78,6 @@ Otwórz okno dialogowe 2FA i kliknij **Zarządzać**, aby przejrzeć zarejestrow
 * **Klucze dostępu** — zmień nazwę klucza dostępu (kliknij jego nazwę) lub usuń go. Usunięcie ostatniego pozostałego składnika wyłącza 2FA.
 * **Zaufane urządzenia** — odwołaj pojedyncze urządzenie lub użyj **Odwołaj wszystkie urządzenia**, aby wymusić ponowne pytanie o 2FA wszędzie.
 
-<figure><img src="../.gitbook/assets/mfa-passkeys-list.png" alt="Managing enrolled passkeys and trusted devices"><figcaption><p>Widok **Zarządzać** wyświetla zarejestrowane klucze dostępu i zaufane urządzenia, w którym możesz zmieniać ich nazwy lub je usuwać.</p></figcaption></figure>
-
 ## Wyłączanie 2FA
 
 W oknie dialogowym 2FA kliknij **Wyłącz 2FA** i potwierdź bieżącym kodem z aplikacji uwierzytelniającej lub kodem zapasowym. Wyłączenie 2FA usuwa również Twoje kody zapasowe i odwołuje zaufane urządzenia.
@@ -98,3 +89,9 @@ Jeśli Twoja organizacja **wymaga** MFA, nie możesz zalogować się hasłem, do
 ## Logowanie bez hasła (opcjonalne)
 
 Gdy masz już klucz dostępu, możesz zalogować się **bez wpisywania hasła** za pomocą **Zaloguj się za pomocą klucza dostępu** na ekranie logowania. Twoje hasło nadal działa jako opcja awaryjna. Logowanie bez hasła wymaga, aby klucz dostępu Cię zweryfikował (Touch ID / Windows Hello / PIN), dzięki czemu jest szybsze i odporne na phishing.
+
+Przechowuj kody odzyskiwania bezpiecznie, oddzielnie od urządzenia uwierzytelniającego. Każdy kod jest jednorazowy.
+
+Skonfiguruj weryfikację e-mail w oknie uwierzytelniania dwuskładnikowego. Wprowadź kod otrzymany na własnym koncie i wykonaj przewidziane potwierdzenie.
+
+Skonfiguruj aplikację uwierzytelniającą w oknie uwierzytelniania dwuskładnikowego. Przechowuj sekret wyłącznie w zatwierdzonej aplikacji i potwierdź aktualnym kodem tymczasowym.

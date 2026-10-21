@@ -16,31 +16,31 @@ Jeśli faktura lub inny dokument przekracza określoną kwotę całkowitą, któ
 
 **Test 1: Logic Card**
 
-When: **Assignee is:** Amier Haider
+When: **Assignee is:** Osoba odpowiedzialna za odbiór
 
 And: **Document type is:** Invoice
 
-Then: **Assign document to:** Stefan Reppermund
+Then: **Assign document to:** Osoba sprawdzająca fakturę
 
 ![](<../../.gitbook/assets/3 (1).png>)
 
 **Test 2: Logic Card**
 
-When: **Assignee is:** Amier Haider
+When: **Assignee is:** Osoba odpowiedzialna za odbiór
 
 And: **Document type is:** Delivery Note
 
-Then: **Assign document to:** James Edwards
+Then: **Assign document to:** Osoba sprawdzająca dostawę
 
 ![](<../../.gitbook/assets/4 (1).png>)
 
 **Test 3: Logic Card**
 
-**When:** **Assignee is:** Amier Haider
+**When:** **Assignee is:** Osoba odpowiedzialna za odbiór
 
 **And:** **Document type is:** Order Confirmation
 
-**Then:** **Assign document to:** Anian Sollinger
+**Then:** **Assign document to:** Osoba sprawdzająca zamówienie
 
 ![](<../../.gitbook/assets/5 (1).png>)
 
@@ -54,11 +54,11 @@ Aby ułatwić przegląd tego, co powinno stać się z dokumentem, możesz ustawi
 
 **When:** **Document type is:** Delivery Note
 
-**And:** **Assignee is:** Amier Haider
+**And:** **Assignee is:** Osoba odpowiedzialna za odbiór
 
 **Then:** **Change Status to:** Pending Approval
 
-<figure><img src="../../.gitbook/assets/workflow_test4_delivery_note_status.png" alt="Workflow Test 4 Delivery Note Status"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test4_delivery_note_status-pl.png" alt="Niezapisany projekt przepływu zmieniającego status."><figcaption><p>Niezapisany projekt przepływu zmieniającego status.</p></figcaption></figure>
 
 ![](<../../.gitbook/assets/8 (1).png>)
 
@@ -66,7 +66,7 @@ Aby ułatwić przegląd tego, co powinno stać się z dokumentem, możesz ustawi
 
 When: **Document type is:** Invoice
 
-And: **Assignee is:** Stefan Reppermund
+And: **Assignee is:** Osoba sprawdzająca fakturę
 
 Then: **Change Status to:** Pending Second Approval
 
@@ -80,11 +80,11 @@ Jeśli faktura lub inny dokument przekracza określoną kwotę całkowitą, któ
 
 **Test 6: Logic Card**
 
-When: **Assignee is:** Amier Haider
+When: **Assignee is:** Osoba odpowiedzialna za odbiór
 
 And: Docfield **total\_amount** is **Greater than 500**
 
-Then: **Assign document to:** Asad Usman Khan
+Then: **Assign document to:** Osoba odpowiedzialna za zatwierdzenie
 
 <figure><img src="../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Workflow Test 6 Total Amount Assign"><figcaption></figcaption></figure>
 
@@ -94,15 +94,15 @@ Możliwe jest również wprowadzenie statusu do przepływu pracy, dzięki czemu 
 
 **Test 7: Logic Card**
 
-**When:** **Assignee is:** Amier Haider
+**When:** **Assignee is:** Osoba odpowiedzialna za odbiór
 
 **And:** Docfield **total\_amount** is **Greater then 500**
 
-**Then:** **Assign document to:** Asad Usman Khan
+**Then:** **Assign document to:** Osoba odpowiedzialna za zatwierdzenie
 
 **Change Status to:** Pending Approval
 
-<figure><img src="../../.gitbook/assets/workflow_test7_status_update.png" alt="Workflow Test 7 Status Update"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test7_status_update-pl.png" alt="Działanie zmiany statusu w projekcie przepływu."><figcaption><p>Działanie zmiany statusu w projekcie przepływu.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -116,9 +116,9 @@ Przepływ pracy z tymi kartami logiki jest zaprojektowany tak, aby automatycznie
 
 Możesz nadać tym dokumentom określony status lub przypisać je do konkretnego pracownika.
 
-<div align="center"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Workflow Test 9 Match Check Overview"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_overview-pl.png" alt="Projekt przepływu z warunkiem porównania z zamówieniem zakupu."><figcaption><p>Projekt przepływu z warunkiem porównania z zamówieniem zakupu.</p></figcaption></figure></div>
 
-<figure><img src="../../.gitbook/assets/workflow_test9_match_check_detail.png" alt="Workflow Test 9 Match Check Detail"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_detail-pl.png" alt="Wybór warunków porównania z zamówieniem zakupu."><figcaption><p>Wybór warunków porównania z zamówieniem zakupu.</p></figcaption></figure>
 
 **Logic Card: Quantity or Unit Price or Discount Match**
 
@@ -128,9 +128,9 @@ Ta karta logiki jest zaprojektowana tak, aby automatycznie weryfikować, czy ilo
 
 Logika jest aktywowana, gdy w potwierdzeniu zamówienia w odniesieniu do oryginalnego zamówienia zakupu spełniony jest którykolwiek z następujących warunków:
 
-* **Quantity**: Ilość zamówionych pozycji jest zgodna z ilością potwierdzoną przez dostawcę.
-* **Unit Price**: Uzgodniona cena za pozycję jest zgodna z potwierdzeniem dostawcy.
-* **Discount**: Wszelkie zastosowane rabaty są spójne między zamówieniem zakupu a potwierdzeniem zamówienia.
+* **Ilość**: Ilość zamówionych pozycji jest zgodna z ilością potwierdzoną przez dostawcę.
+* **Cena jednostkowa**: Uzgodniona cena za pozycję jest zgodna z potwierdzeniem dostawcy.
+* **Rabat**: Wszelkie zastosowane rabaty są spójne między zamówieniem zakupu a potwierdzeniem zamówienia.
 * **Define Comparison Parameters**: Skonfiguruj konkretne pola (ilość, cena jednostkowa, rabat), których zgodność będzie sprawdzać karta logiki.
 * **Automate Verification**: Skonfiguruj system tak, aby automatycznie porównywał te szczegóły po otrzymaniu potwierdzenia zamówienia.
 * **Customize Alerts**: Zdecyduj o przepływie pracy do obsługi rozbieżności, w tym o dostosowaniu alertów do przeglądu ręcznego.
@@ -166,3 +166,5 @@ Po obliczeniu dopłat możesz chcieć powiadomić konkretnego użytkownika, aby 
 <figure><img src="../../.gitbook/assets/workflow_notification_card_overview.png" alt="Workflow Notification Card"><figcaption></figcaption></figure>
 
 W zależności od ustawień użytkownikowi zostaje przypisane nowe zadanie w DocBits oraz opcjonalnie wiadomość e-mail powiadamiająca go o nowym zadaniu.
+
+Zaktualizowane obrazy pokazują niezapisane projekty warunków i działań. Dostosuj role oraz warunki do własnej organizacji.

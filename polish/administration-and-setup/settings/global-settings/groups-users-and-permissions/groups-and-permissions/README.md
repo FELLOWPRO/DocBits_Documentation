@@ -4,7 +4,7 @@
 DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
 {% endembed %}
 
-<figure><img src="../../../../../.gitbook/assets/groups_and_permissions.png" alt="Groups and Permissions"><figcaption><p>Strona Groups and Permissions</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-t009-pl.png" alt="Szczegóły wybranej grupy; dane osobowe są ukryte."><figcaption><p>Szczegóły wybranej grupy; dane osobowe są ukryte.</p></figcaption></figure>
 
 Groups and Permissions pozwalają kontrolować, którzy użytkownicy mają dostęp do określonych typów dokumentów i jakie czynności mogą wykonywać.
 
@@ -18,11 +18,11 @@ Tabela wyświetla wszystkie skonfigurowane grupy wraz z:
 
 | Kolumna | Opis |
 |--------|-------------|
-| **Group Name** | Nazwa grupy. |
-| **Group Description** | Krótki opis przeznaczenia grupy. |
-| **Actions** | Menu z opcjami edycji lub usunięcia grupy. |
+| **Nazwa grupy** | Nazwa grupy. |
+| **Opis grupy** | Krótki opis przeznaczenia grupy. |
+| **Akcje** | Menu z opcjami edycji lub usunięcia grupy. |
 
-Użyj paska **Search**, aby znaleźć grupy według nazwy. Kliknij **+ New**, aby utworzyć nową grupę.
+Użyj paska **Szukaj**, aby znaleźć grupy według nazwy. Kliknij **+ New**, aby utworzyć nową grupę.
 
 ## Konfigurowanie uprawnień grupy
 
@@ -30,18 +30,18 @@ Po wybraniu grupy (przez menu Actions → Edit) pojawia się tabela uprawnień, 
 
 | Uprawnienie | Opis |
 |------------|-------------|
-| **View** | Uprawnienie do przeglądania dokumentów tego typu. |
-| **Update** | Uprawnienie do modyfikowania dokumentów tego typu. |
-| **Delete** | Uprawnienie do usuwania dokumentów tego typu. |
-| **First Approval** | Uprawnienie do wykonania pierwszego zatwierdzenia. |
-| **Second Approval** | Uprawnienie do wykonania drugiego poziomu zatwierdzenia (jeśli dotyczy). |
+| **Pogląd** | Uprawnienie do przeglądania dokumentów tego typu. |
+| **Aktualizacja** | Uprawnienie do modyfikowania dokumentów tego typu. |
+| **Usuwać** | Uprawnienie do usuwania dokumentów tego typu. |
+| **Pierwsze zatwierdzenie** | Uprawnienie do wykonania pierwszego zatwierdzenia. |
+| **Drugie zatwierdzenie** | Uprawnienie do wykonania drugiego poziomu zatwierdzenia (jeśli dotyczy). |
 
 Każdy wiersz tabeli uprawnień odpowiada jednemu typowi dokumentu (np. Invoice, Credit Note, Delivery Note). Zaznacz lub odznacz pola wyboru, aby przyznać lub odebrać uprawnienia tej grupie.
 
 ## Tworzenie nowej grupy
 
 1. Kliknij **+ New** w prawym górnym rogu.
-2. Wpisz **Group Name** i opcjonalnie **Description**.
+2. Wpisz **Nazwa grupy** i opcjonalnie **Opis**.
 3. Skonfiguruj uprawnienia dla każdego typu dokumentu.
 4. Przypisz użytkowników do grupy.
-5. Kliknij **Save**, aby zastosować.
+5. Kliknij **Zapisz**, aby zastosować.

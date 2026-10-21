@@ -2,7 +2,9 @@
 
 Mit dem **Card SDK** können Partner und Entwickler eigene Workflow-Karten für DocFlow erstellen. Sie verpacken eine Karte als Partner-App und laden sie hoch oder importieren sie direkt aus GitHub.
 
-<figure><img src="../../.gitbook/assets/workflow_card_sdk.png" alt="Card SDK-Reiter mit Upload ZIP, GitHub Import und Submissions"><figcaption><p>Das Card SDK — eine Partner-App als ZIP hochladen, aus GitHub importieren oder die eigenen Einreichungen prüfen.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_card_sdk-de.png" alt="Card SDK im deutschen Workflow-Dashboard mit dem Hinweis auf das erforderliche Abonnement."><figcaption><p>Card SDK im deutschen Workflow-Dashboard mit dem Hinweis auf das erforderliche Abonnement.</p></figcaption></figure>
+
+Der Zugriff auf das Card SDK setzt die entsprechende Freischaltung voraus. Ohne diese zeigt die Registerkarte den Abonnementhinweis aus der Abbildung.
 
 ## Funktionsweise
 

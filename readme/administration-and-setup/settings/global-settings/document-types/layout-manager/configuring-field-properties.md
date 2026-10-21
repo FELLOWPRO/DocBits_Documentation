@@ -16,7 +16,7 @@
 
 * Mögliche Feldtypen sind Text, Zahl, Datum, Dropdown-Menü, Kontrollkästchen usw.
 
-<figure><img src="../../../../../.gitbook/assets/image (146).png" alt="" width="241"><figcaption><p>Elemente</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-image-146-de.png" alt="Feldeigenschaften im deutschen Layout-Builder."><figcaption><p>Feldeigenschaften im deutschen Layout-Builder.</p></figcaption></figure>
 
 #### Validierung und Formatierung festlegen:
 

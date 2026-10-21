@@ -8,7 +8,7 @@ In the **Import** settings, you can configure document-specific options for impo
 
 1.  Navigate to **Settings** -> **Document Processing** -> **Import**
 
-    <figure><img src="../../../../.gitbook/assets/ftp_0.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/s150-ftp_0-de.png" alt="Deutsche Importübersicht für E-Mail- und FTP-Verbindungen."><figcaption><p>Deutsche Importübersicht für E-Mail- und FTP-Verbindungen.</p></figcaption></figure>
 
 ## **Document Settings**
 
@@ -19,6 +19,10 @@ In the **Import** settings, you can configure document-specific options for impo
 <figure><img src="../../../../.gitbook/assets/document_settins_1.png" alt=""><figcaption></figcaption></figure>
 
 ## **FTP Import**
+
+Zum Anlegen einer Verbindung öffnen Sie im Bereich **FTP-Import** eine neue Konfiguration. Der Assistent beginnt mit **Serverkonfiguration** und führt anschließend durch **Optionen** und **Konfiguration**.
+
+<figure><img src="../../../../.gitbook/assets/s150-ftp_5-de.png" alt="Serverkonfiguration im deutschen FTP-Importassistenten."><figcaption><p>Serverkonfiguration im deutschen FTP-Importassistenten.</p></figcaption></figure>
 
 ### Requirements
 
@@ -56,7 +60,7 @@ To use FTP for importing data automatically, ensure the following requirements a
 
 You can click the three dots in the **Action** column to access the following options for your connection:
 
-<figure><img src="../../../../.gitbook/assets/ftp_5.png" alt="" width="158"><figcaption></figcaption></figure>
+
 
 * **Test Connection:** Tests the connection to your FTP server.
 * **Connection Logs:** Opens the logs for your FTP connection, including error messages if any issues occur.
@@ -151,8 +155,6 @@ You can click the three dots in the **Action** column to access the following op
     <figure><img src="../../../../.gitbook/assets/email_5.png" alt=""><figcaption></figcaption></figure>
 6. Once you’ve configured the desired behavior, you can either start importing emails by clicking **Import** or save your changes by clicking **Save**.
 7.  After saving your connection, you can activate it by clicking the three dots in the **Action** column of your connection, then selecting **Activate**.
-
-
 
 ### Actions for OAuth Office365
 

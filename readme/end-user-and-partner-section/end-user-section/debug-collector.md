@@ -1,12 +1,10 @@
-# Debug Collector
+# Diagnosebericht
 
 Der Debug Collector erstellt eine vollständige Momentaufnahme Ihrer DocBits-Sitzung — Netzwerkaktivität, Fehler, Browser-Umgebung und Leistungswerte — verpackt sie als JSON-Bericht und kann auf Wunsch direkt aus demselben Dialog ein Support-Ticket erstellen.
 
 ## Aufrufen
 
-Drücken Sie <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> unter Windows und Linux oder <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> unter macOS. Der Performance-Report-Dialog öffnet sich sofort.
-
-<figure><img src="../../.gitbook/assets/debug-collector-dialog.png" alt="Debug-Collector-Dialog"><figcaption><p>Der Performance-Report-Dialog zeigt die erfasste Momentaufnahme und ein eingebautes Formular zur Ticket-Erstellung.</p></figcaption></figure>
+Drücken Sie <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> unter Windows und Linux oder <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> unter macOS. Der Dialog für den Diagnosebericht öffnet sich. Er ist im Produkt derzeit teilweise englisch beschriftet; die Schritte werden hier auf Deutsch erläutert.
 
 ## Was erfasst wird
 

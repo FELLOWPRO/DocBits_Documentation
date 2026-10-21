@@ -6,7 +6,7 @@
 
 Diese Funktion hilft Ihnen, Artikelnummern zwischen Ihrem System und Ihren Lieferanten zu verwalten und abzugleichen. Oft stimmen die von Ihnen intern verwendeten Artikelnummern nicht mit den Artikelnummern Ihrer Lieferanten überein. Docbits erleichtert den Umgang mit diesen Diskrepanzen, indem es eine Zuordnung zwischen Ihren Artikelnummern und denen Ihrer Lieferanten erstellt.
 
-<figure><img src="../../../.gitbook/assets/supplier-item-number-map.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-supplier-item-number-map-de.png" alt="Zuordnung von Lieferantenartikelnummern mit deutschen Spaltenüberschriften."><figcaption><p>Zuordnung von Lieferantenartikelnummern mit deutschen Spaltenüberschriften.</p></figcaption></figure>
 
 ## **Funktionsweise**
 

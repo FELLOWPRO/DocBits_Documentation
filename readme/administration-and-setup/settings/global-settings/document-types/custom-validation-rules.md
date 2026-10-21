@@ -51,7 +51,7 @@ Ab sofort zeigt die Karte des Dokumenttyps zusätzlich einen Link **Validation R
 
 **Document Types → (Dokumenttyp) → Validation Rules** listet jede Regel des Dokumenttyps auf.
 
-<figure><img src="../../../../.gitbook/assets/validation-rules-list.png" alt="Die Liste der Validierungsregeln"><figcaption><p>Die Regelliste mit Ebene, Schwere, Zielfeld und Quelle jeder Regel</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-de.png" alt="Verwaltung benutzerdefinierter Validierungsregeln mit ausgeblendeten Konfigurationsnamen."><figcaption><p>Verwaltung benutzerdefinierter Validierungsregeln mit ausgeblendeten Konfigurationsnamen.</p></figcaption></figure>
 
 Jede Karte zeigt Namen und Beschreibung der Regel sowie die Badges für ihre **Ebene** (Header / Line / Table), **Schwere** (Error / Warning), das **Feld**, an dem der Fehler angezeigt wird, und ihre **Quelle**. Mit dem Schalter rechts aktivieren oder deaktivieren Sie eine Regel, über das Menü **⋮** duplizieren oder löschen Sie sie. Filtern Sie die Liste nach Ebene (**All / Header / Line / Table**) und Status (**All / Active / Inactive**) oder durchsuchen Sie sie.
 

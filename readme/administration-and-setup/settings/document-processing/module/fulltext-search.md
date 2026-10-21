@@ -4,7 +4,7 @@ Die neuen Aufnahmen verwenden die deutsche UI-Sprache. Einzelne Registerkarten, 
 
 Mit der Volltextsuche können Benutzer den tatsächlichen Inhalt von Dokumenten und jedes extrahierte Feld durchsuchen — nicht nur Dateinamen und IDs.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-required-dialog.png" alt="Dialog „Volltext-Modul erforderlich“, wenn das Modul deaktiviert ist"><figcaption><p>Der Dialog „Fulltext Module Required“ erscheint auf Seiten, die das Modul voraussetzen.</p></figcaption></figure>
+Ist das Volltextmodul nicht verfügbar, prüfen Sie mit Ihrer Administration die Freischaltung und Berechtigungen. Ein entsprechender Hinweis ersetzt dann die angeforderte Funktion.
 
 ## Ohne das Modul
 
@@ -115,7 +115,7 @@ KI-Suche und Vektorsuche sind nicht austauschbar: Die Vektorsuche findet ähnlic
 ## So aktivieren Sie das Modul
 
 1. Öffnen Sie **Einstellungen → Dokumentenverarbeitung → Module**.
-2. Aktivieren Sie unter der Gruppe **Dashboards** den Schalter **Full text search**.
+2. Aktivieren Sie unter der Gruppe **Dashboards** den Schalter **Volltextsuche**.
 3. Bestätigen Sie den Abonnement-Dialog, sofern er erscheint.
 4. Warten Sie auf den Abschluss der ersten Neuindizierung, bevor Sie Volltext-Abfragen nutzen.
 

@@ -35,7 +35,7 @@ Innerhalb dieser Einstellungen können Sie dann die gewünschten Konfigurationen
 * **Belegtyp**: Wählen Sie den Belegtyp aus, für den Sie eine Benachrichtigung erhalten möchten. Dies könnte das Hinzufügen eines neuen Dokuments, das Löschen eines Dokuments, das Aktualisieren eines Dokuments oder andere relevante Ereignisse sein.
 * Verknüpft die Benachrichtigung mit einem bestimmten Belegtyp, was gezielte Warnungen basierend auf dem Verarbeitungszyklus des Dokuments ermöglicht.
 
-<figure><img src="../../../../.gitbook/assets/image (41) (1).png" alt="" width="264"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-image-41-1-de.png" alt="Deutscher Dialog für eine E-Mail-Benachrichtigung."><figcaption><p>Deutscher Dialog für eine E-Mail-Benachrichtigung.</p></figcaption></figure>
 
 *   **E-Mail-Vorlage auswählen**: Wählen Sie eine vorkonfigurierte Vorlage aus dem Dropdown-Menü. Vorlagen können in den [E-Mail-Vorlagen-Einstellungen](../../../../advanced-functions-and-tools/sql-access/sql-access/email-template.md) erstellt oder geändert werden.
 

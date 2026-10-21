@@ -38,11 +38,16 @@ A net amount that is **larger** than the line total cannot be a net amount, so t
 The calculated price is written to the purchase order snapshot that is stored on the document, and it is **recalculated every time the document is matched** (Auto PO Match, manual match, matching on save). A document that was matched before the setting was changed therefore picks up the new price on its next match — no reload of the purchase order is needed.
 {% endhint %}
 
-## Example:
+## Worked example
 
-<figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_4.png" alt="" width="563"><figcaption></figcaption></figure>
+For a quantity of 9 and Unit Price Per = 1:
 
-In this case, the unit price (without the discount) is extracted from the document, while the purchase order in the ERP stores the unit price with the discount applied. This results in a mismatch in the unit price. With the setting activated, the unit price is taken from the line amount and quantity instead, so both sides agree.
+| Amount basis | Calculation | Unit price |
+| --- | --- | --- |
+| Net line amount | 879.84 ÷ 9 × 1 | 97.76 |
+| Total including 8.5% tax | 954.63 ÷ 9 × 1 | 106.07 |
+
+Comparison with a net-priced invoice needs the net unit price of 97.76 in this example.
 
 ## Related settings
 

@@ -10,7 +10,7 @@ Administrators can use **Scripts** to manage processing rules for a document typ
 
 Each card shows the script name, trigger, version, and status. The pencil opens the editor; the copy icon duplicates the script. **New** opens the editor for a new script.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc157-scripts-list-inactive-en.png" alt="Scripts list for the Invoice document type with an inactive documentation example and All, Active, Inactive filters"><figcaption><p>Check the status at the right of the script card before changing it.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_edit_script_icon.png" alt="English script management with edit controls and script names hidden."><figcaption><p>English script management with edit controls and script names hidden.</p></figcaption></figure>
 
 ## Activate or deactivate a script
 

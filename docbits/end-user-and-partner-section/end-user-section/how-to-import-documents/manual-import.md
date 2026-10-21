@@ -13,5 +13,4 @@ DocBits Import Tutorial: Upload Documents, Drag & Drop + Manual vs Automatic Cla
 * After the files have been uploaded, they will have the initial status of “Running”. During this time, the upload is being processed and editing the file is not possible. The processing time may vary depending on the size and complexity of the file.
 * Once the file has been processed, it will receive the status of “Ready For Validation”. You can now start the validation process.
 
-<figure><img src="../../../.gitbook/assets/manual-import1.png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../.gitbook/assets/s150-manual-import1.png" alt="English manual document-upload dialog."><figcaption><p>English manual document-upload dialog.</p></figcaption></figure>

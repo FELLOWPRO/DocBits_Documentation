@@ -14,7 +14,7 @@ Once the setting is on, a new **barcode button** (a QR-code icon) appears in the
 
 Here is the icon in context on the validation screen, next to the document being reviewed:
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_validation_screen.png" alt="Validation screen with the barcode icon available"><figcaption><p>The validation screen — the barcode icon (highlighted, right toolbar) is only shown when Barcode Assignment is enabled.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_validation_screen.png" alt="English validation view of a fictional invoice with a barcode and QR code."><figcaption><p>English validation view of a fictional invoice with a barcode and QR code.</p></figcaption></figure>
 
 ### How Barcodes Are Read
 
@@ -32,15 +32,15 @@ Which barcode types are detected is controlled by the **Bar-Code / QR Code Extra
 2. Click the **barcode icon** in the right-hand toolbar.
 3. The **Barcode Assignment** dialog lists every barcode DocBits detected in the document, shown as `Barcode <n> : <value>`.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_dialog.png" alt="Barcode Assignment dialog listing the detected barcodes"><figcaption><p>The Barcode Assignment dialog lists each detected barcode with a dropdown to choose the target field.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_dialog.png" alt="Map extracted barcodes to document fields."><figcaption><p>Map extracted barcodes to document fields.</p></figcaption></figure>
 
 4. For each barcode, open its dropdown and pick the field the value should go into.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_options.png" alt="Choosing the target field for a barcode"><figcaption><p>Each barcode can be mapped to any document field — e.g. Purchase Order, Invoice number, Supplier ID.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_field_options.png" alt="Available document fields in the barcode mapping dialog."><figcaption><p>Available document fields in the barcode mapping dialog.</p></figcaption></figure>
 
 5. As soon as you select a field, that field is filled with the barcode’s value.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_mapped.png" alt="Barcode mapped to the Purchase Order field"><figcaption><p>After selecting a field (here Purchase Order), the field is populated with the barcode value.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_field_mapped.png" alt="Unsaved barcode mapping to the Purchase Order field."><figcaption><p>Unsaved barcode mapping to the Purchase Order field.</p></figcaption></figure>
 
 ### How to Enable
 

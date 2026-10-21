@@ -16,6 +16,6 @@ Inside the Validation Screen you can directly create tickets for the particular 
 
 <figure><img src="../../../.gitbook/assets/validation_screen_create_ticket_button.png" alt="Create Ticket Button in Validation Screen"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/validation_screen_support_window.png" alt="Support Window in Validation Screen"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-user-support4.png" alt="English support form before submission."><figcaption><p>English support form before submission.</p></figcaption></figure>
 
 {% embed url="https://www.youtube.com/watch?v=zkpFu8Q1Z-A" %}

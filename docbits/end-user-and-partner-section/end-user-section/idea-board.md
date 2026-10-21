@@ -37,7 +37,7 @@ Click **New idea** in the header. The dialog asks for:
 
 Press **Submit** to publish. The idea appears in the list with the **New** status.
 
-<figure><img src="../../.gitbook/assets/idea-board-new-idea.png" alt="New idea dialog"><figcaption><p>The New Idea dialog, with category and channel selectors.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-idea-board-new-idea.png" alt="English New Idea dialog without personal details."><figcaption><p>English New Idea dialog without personal details.</p></figcaption></figure>
 
 ## Voting
 

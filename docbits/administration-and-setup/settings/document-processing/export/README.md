@@ -12,7 +12,7 @@ The Export page displays all configured export setups, including whether they ar
 
 You can find it under: **Settings** → **Document Processing** → **Export**
 
-<figure><img src="../../../../.gitbook/assets/export_list_view.png" alt="Export Settings Menu Access"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-export_settings_menu_access.png" alt="Open export configuration from the English settings."><figcaption><p>Open export configuration from the English settings.</p></figcaption></figure>
 
 ## **Using the Export Page**
 
@@ -29,7 +29,6 @@ Each row in the list shows:
 * **Export Method** – where the document will be sent (e.g., Infor, IDM, SFTP)
 * **Actions** – buttons to **edit, delete** or **activate/deactivate** the configuration
 
-<figure><img src="../../../../.gitbook/assets/export_list_view.png" alt="Export List View"><figcaption></figcaption></figure>
 
 #### **Important Rules for Export Configuration**
 
@@ -47,7 +46,7 @@ However, it is possible to have:
 
 To create a new export:
 
-1. Click on the **“New”** button. ![](../../../../.gitbook/assets/export_create_new_button.png)
+1. Click on the **“New”** button. <figure><img src="../../../../.gitbook/assets/s150-export_create_new_button.png" alt="Unsaved new export configuration showing its basic information."><figcaption><p>Unsaved new export configuration showing its basic information.</p></figcaption></figure>
 2. Select the **Export Type** you want to configure (e.g., Infor, IDM, SFTP).
 3. Fill in the required fields based on the export type.
 4. Save the configuration.

@@ -2,7 +2,6 @@
 
 Fulltext Search lets users search the actual content of documents and every extracted field, not just filenames and IDs.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-required-dialog.png" alt="Fulltext Module Required dialog shown when the module is disabled"><figcaption><p>The Fulltext Module Required dialog appears on pages that depend on the module.</p></figcaption></figure>
 
 ## Without the module
 
@@ -128,3 +127,6 @@ Pricing for the Fulltext Search module is handled through your DocBits sales con
 * [Fulltext Search Settings](../../log-settings/fulltext-search-settings.md) — index management and the Vector Index toggle.
 * [Fulltext Search Functions](../../global-settings/document-types/script/scripting-in-docbits/fulltext-search-functions.md) — scripting API for `fulltext_search()` and `vector_search()`.
 * [Modules overview](README.md) — full list of optional DocBits modules.
+
+
+The full-text module and the required permissions must be available to use full-text search. If a module-required notice appears, ask your administrator to check availability and access.

@@ -52,7 +52,7 @@ Rules come from three sources, as for validation rules: **System default** rules
 
 Click **New rule**. The builder has three steps on the left and a **Live preview** on the right. At the top it summarises the rule in one sentence while you build it.
 
-<figure><img src="../../../../.gitbook/assets/transformation-rule-scope.png" alt="Step 1 of the transformation rule builder"><figcaption><p>Step 1: what the rule changes. The sentence at the top describes the rule in plain language</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-rule-scope.png" alt="Transformation scopes: header field, table rows, table column and routing."><figcaption><p>Transformation scopes: header field, table rows, table column and routing.</p></figcaption></figure>
 
 ### Step 1 — What & where
 
@@ -81,7 +81,7 @@ Two options control how often the rule applies:
 
 ### Step 3 — The pipeline
 
-<figure><img src="../../../../.gitbook/assets/transformation-rule-pipeline.png" alt="The pipeline with three steps and the live preview"><figcaption><p>Read → Trim → Change case → Affix → Write, with the value after every step in the live preview</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-rule-pipeline.png" alt="Processing steps of a transformation rule in the English editor."><figcaption><p>Processing steps of a transformation rule in the English editor.</p></figcaption></figure>
 
 * **Read from** — **the field (or column) itself**, or **another field**. Reading from another field lets you fill a field from a different one, for example copy the purchase order number from a free-text field.
 * **Steps** — the value goes through the steps **from top to bottom**; the output of one step is the input of the next. Add steps with **+ Add a step**, reorder them with the arrows, remove them with **✕**. Every step shows the intermediate value of the sample on its right.
@@ -140,13 +140,13 @@ Sample `  230620-03a ` → `INV-230620-03A`. See the screenshot of the pipeline 
 
 Table column **INVOICE_TABLE / UNIT** · always · Trim → Map values `STK → PCE`, `KG → KGM`, `Std → HUR`, **Ignore case when matching** on, no-match value blank (keep input).
 
-<figure><img src="../../../../.gitbook/assets/transformation-column-value-map.png" alt="A table column rule with Map values"><figcaption><p>Map values on the UNIT column: <code>stk</code> becomes <code>PCE</code></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-column-value-map.png" alt="Value mapping for a table column in the transformation editor."><figcaption><p>Value mapping for a table column in the transformation editor.</p></figcaption></figure>
 
 ### One total line for a supplier matched on the total
 
 Table rows **INVOICE_TABLE** · only when *Supplier ID is HP0000278* · Clear all rows → Add a row with `POSITION` = value `001`, `QUANTITY` = value `1`, `NET_AMOUNT` = field *Total Net Amount*.
 
-<figure><img src="../../../../.gitbook/assets/transformation-add-row-columns.png" alt="A table rows rule: clear all rows, then add a row"><figcaption><p>Three extracted rows are replaced by one row carrying the net amount</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-add-row-columns.png" alt="Unsaved transformation step to add a table row."><figcaption><p>Unsaved transformation step to add a table row.</p></figcaption></figure>
 
 Order matters: **Clear all rows** must come **before** **Add a row**. The builder warns you if it does not ("Clear all rows runs after Add a row …"), and it also warns if an **Add a row** step is not preceded by **Clear all rows**, because the rule would then append another copy of the row on every save. Pair this rule with a match-on-total purchase order matching rule that is active for one-line documents.
 

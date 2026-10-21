@@ -1,6 +1,6 @@
 # Document Sub Types
 
-<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-21 um 10.16.14.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-docbits_document_sub_types_overview.png" alt="English document-subtype overview."><figcaption><p>English document-subtype overview.</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 08.54.08.png" alt=""><figcaption></figcaption></figure>
 
@@ -25,7 +25,7 @@ Document subtypes in Docbits allow for more flexible and tailored management of 
    * Includes the name of the sub-type and a set of actions that can be performed on it.
 2. **Actions**:
 
-<figure><img src="../../../../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-docbits_document_sub_types_list.png" alt="Document subtypes in English administration."><figcaption><p>Document subtypes in English administration.</p></figcaption></figure>
 
 * **Fields**: Configure which data fields are included in the sub-type and how they are managed.
 * **Edit Layout**: Modify the visual layout for how information is displayed and entered for this sub-type.

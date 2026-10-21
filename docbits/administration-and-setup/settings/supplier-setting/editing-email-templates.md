@@ -12,7 +12,7 @@ The `{{magic_link}}` is a placeholder that is dynamically replaced with a unique
 
 ### Editing Email Templates
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.35.53.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-bildschirmfoto-2024-08-25-um-12-35-53.png" alt="English editor for a new supplier email template."><figcaption><p>English editor for a new supplier email template.</p></figcaption></figure>
 
 #### Accessing the Email Template Editor
 

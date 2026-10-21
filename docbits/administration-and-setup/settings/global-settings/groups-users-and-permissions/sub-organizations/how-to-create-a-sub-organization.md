@@ -1,6 +1,6 @@
 # How to create a Sub-Organization
 
-## Create a new Sub-Organisaztion:
+## Create a new sub-organization
 
 <div data-full-width="false"><figure><img src="../../../../../.gitbook/assets/sub_organizations.png" alt="Sub-Organizations List Overview"><figcaption></figcaption></figure></div>
 
@@ -10,7 +10,7 @@ Click on the `+ NEW` button
 
 The following menu will be displayed:
 
-<figure><img src="../../../../../.gitbook/assets/create_sub_organization_form.png" alt="Create Sub-Organization Form" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-edit_user_in_sub_organization.png" alt="English dialog for creating a sub-organization."><figcaption><p>English dialog for creating a sub-organization.</p></figcaption></figure>
 
 Enter the details of the sub-organization you want to create, the name and description, then click on the `SAVE` button. You should then find your newly created sub-organization at the bottom of the list of existing sub-organizations.
 
@@ -32,7 +32,6 @@ You can add a new user to the organization and have the option of whether to rem
 
 **Edit User:**
 
-<figure><img src="../../../../../.gitbook/assets/edit_user_in_sub_organization.png" alt="Edit User in Sub-Organization" width="375"><figcaption></figcaption></figure>
 
 * **Editing suborganization settings:** Administrators can edit the settings and properties of a suborganization, including its name, description, or hierarchy level within the system.
 * **Edit user details:** Administrators can edit the details of individual users within a sub-organization, for example to adjust their access rights or update their contact information.

@@ -6,7 +6,6 @@ The Debug Collector captures a complete snapshot of your DocBits session — net
 
 Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> on Windows and Linux, or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> on macOS. The Performance Report dialog opens immediately.
 
-<figure><img src="../../../.gitbook/assets/debug-collector-dialog.png" alt="Debug Collector dialog"><figcaption><p>The Performance Report dialog shows the captured snapshot and a built-in support ticket form.</p></figcaption></figure>
 
 ## What gets captured
 
@@ -35,3 +34,6 @@ If you want a local copy of the snapshot, use **Copy Debug Data** to copy the JS
 * Nothing leaves your browser until you press **Send Report** — the shortcut only opens the dialog.
 
 Review the snapshot before sending if you were handling documents containing customer data. Document IDs visible in URLs will appear in the report.
+
+
+Open the diagnostic report from the support controls, describe the problem and review the collected technical information before sharing it. A report helps collect evidence; it does not identify the cause by itself.

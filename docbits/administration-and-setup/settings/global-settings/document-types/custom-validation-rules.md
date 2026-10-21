@@ -51,7 +51,7 @@ From now on the card of the document type also shows a **Validation Rules** link
 
 **Document Types → (document type) → Validation Rules** lists every rule of the document type.
 
-<figure><img src="../../../../.gitbook/assets/validation-rules-list.png" alt="The list of validation rules"><figcaption><p>The rule list with level, severity, target field and source of each rule</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-validation-rules-list.png" alt="Custom validation rule management with configuration names hidden."><figcaption><p>Custom validation rule management with configuration names hidden.</p></figcaption></figure>
 
 Each card shows the rule's name and description, and the badges for its **level** (Header / Line / Table), **severity** (Error / Warning), the **field** the error is attached to and its **source**. Use the switch on the right to activate or deactivate a rule, and the **⋮** menu to duplicate or delete it. Filter the list by level (**All / Header / Line / Table**) and by state (**All / Active / Inactive**), or search it.
 

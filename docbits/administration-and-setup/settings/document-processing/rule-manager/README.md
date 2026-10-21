@@ -1,6 +1,6 @@
 # Rule Management
 
-<figure><img src="../../../../.gitbook/assets/rule_management.png" alt="Rule Management"><figcaption><p>Rule Management Page</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_management.png" alt="Rule management with configured names hidden."><figcaption><p>Rule management with configured names hidden.</p></figcaption></figure>
 
 Rule Management allows you to create and manage TOML-based conflict resolution rules used during PO matching and document export. Each rule set defines how DocBits handles discrepancies between invoice data and purchase order data.
 
@@ -144,13 +144,11 @@ Defines specific actions to take when a discrepancy is detected:
 • Action: The system accepts the invoice values and calculates the total amount.
 
 
-
 #### [Case 4, 5: Quantity Within Tolerance, Unit Price Outside Tolerance (Approved)](./#case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved)
 
 • Purpose: Applies when the quantity is within tolerance but the unit price is outside tolerance and has been approved.
 
 • Action: The system adjusts the unit price to match the PO and applies any necessary line charges.
-
 
 
 #### [Case 6: Quantity Within Tolerance, Unit Price Outside Negative Tolerance (Rejected)](transactionconfig-pro-template/case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
@@ -180,7 +178,7 @@ Defines specific actions to take when a discrepancy is detected:
 
 ### Screenshot 1: Rule Management Interface
 
-<figure><img src="../../../../.gitbook/assets/rule_management_interface.png" alt="Rule Management Interface"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_management_interface.png" alt="Rule management overview and available actions."><figcaption><p>Rule management overview and available actions.</p></figcaption></figure>
 
 This screenshot shows the Rule Management interface where administrators can view and manage all conflict resolution rules. Key elements include:
 
@@ -192,7 +190,7 @@ This screenshot shows the Rule Management interface where administrators can vie
 
 ### Screenshot 2: Detailed Rule Editing
 
-<figure><img src="../../../../.gitbook/assets/rule_detailed_editing.png" alt="Detailed Rule Editing"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_detailed_editing.png" alt="English TOML rule editor with a technical configuration example."><figcaption><p>English TOML rule editor with a technical configuration example.</p></figcaption></figure>
 
 his screenshot illustrates the detailed view of a specific rule being edited. Key elements include:
 

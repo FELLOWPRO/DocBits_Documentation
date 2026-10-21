@@ -1,66 +1,11 @@
-# Configuring Field Properties
+# Configuring field properties
 
-## Configuring field properties is critical to ensure that the data captured in a document meets specific requirements and processing processes.
+In **Layout Builder**, select an existing layout and click a field in the preview. The **Properties** panel shows the controls available for that element.
 
-### Here are the steps to configure field properties to meet specific data processing needs:
+<figure><img src="../../../../../.gitbook/assets/s150-image-146.png" alt="Field properties in the English Layout Builder."><figcaption><p>Field properties in the English Layout Builder.</p></figcaption></figure>
 
-#### Select a field type:
+Review the field's **Label**, technical **Field Name**, **Element Width in Percentage** and **Tab Index**. Depending on the element, you can also set **Readonly**, **Hidden**, **Display Label On Left**, **Is Textarea**, or whether a workflow or script runs when the value changes.
 
-* Start by selecting the right field type for your data.
+Choose a suitable AI model type or list of values where the field supports those selectors. **Field Length** and **Banned Keywords** provide further input constraints. Technical field names and configured origin names are not translated automatically.
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-24 um 11.06.36.png" alt="" width="375"><figcaption></figcaption></figure>
-
-* This depends on what type of information the field will contain.
-
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-24 um 11.06.56.png" alt="" width="139"><figcaption><p>Properties</p></figcaption></figure>
-
-* Possible field types include text, number, date, drop-down menu, checkbox, etc.
-
-<figure><img src="../../../../../.gitbook/assets/image (247).png" alt="" width="241"><figcaption><p>Elements</p></figcaption></figure>
-
-#### Set validation and formatting:
-
-* Set validation rules to ensure that the data entered meets the expected criteria.
-* This may include checking for certain string patterns, numeric limits, date formats, or other conditions.
-
-<figure><img src="../../../../../.gitbook/assets/image (248).png" alt="" width="236"><figcaption></figcaption></figure>
-
-#### Define default values:
-
-* If certain fields typically have a default value, you can set that as the default value.
-* This makes data entry easier because users don't have to enter the same value every time.
-
-<figure><img src="../../../../../.gitbook/assets/image (249).png" alt="" width="224"><figcaption></figcaption></figure>
-
-#### Set user permissions:
-
-* Determine which user groups should have access to the field and what type of access rights they have.
-
-<figure><img src="../../../../../.gitbook/assets/image (251).png" alt=""><figcaption><p>Settings: Groups and Permissions</p></figcaption></figure>
-
-* This can include read, write, or edit rights.
-
-<figure><img src="../../../../../.gitbook/assets/image (252).png" alt=""><figcaption><p>View Permissions</p></figcaption></figure>
-
-#### Link to other data:
-
-* In some cases, data from one field needs to be linked to data from another field or data source.
-* Configure appropriate links or relationships to ensure consistent data integration.
-
-#### Apply visibility rules:
-
-* Determine under what conditions a field should be visible or hidden.
-* This can be useful for dynamically adapting the user interface based on certain data or user actions.
-
-<figure><img src="../../../../../.gitbook/assets/image (250).png" alt=""><figcaption><p>Setting Fields</p></figcaption></figure>
-
-#### Enable historization:
-
-* If necessary, enable historization of fields to track changes historically.
-* This allows you to track changes to the data and monitor the history of data changes.
-
-#### Add documentation notes:
-
-* Add notes or descriptions to explain to users how to use the field or what type of data is expected.
-
-By following these steps and configuring the appropriate field properties, you can ensure that your documents meet specific requirements for data handling, user access, and data accuracy.
+Check the preview after changing a property. Save the layout only when you intend to retain the changes, then test the resulting validation screen with representative documents. For document-type validation and recognition thresholds, see [Setting Validation and Match Score](../fields/setting-validation-and-match-score.md).

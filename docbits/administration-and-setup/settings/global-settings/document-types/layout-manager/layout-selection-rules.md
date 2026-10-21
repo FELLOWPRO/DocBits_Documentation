@@ -41,7 +41,7 @@ DocBits converts your existing origin-based layouts into rules — once, for thi
 * The layout of the origin **DEFAULT** becomes the **default layout** (the fallback).
 * Every layout of a specific origin becomes a rule **"Layout for XX"** with the condition *Document Origin is XX*, pointing to that layout. These rules get priorities in steps of 10 (for example 2000, 2010, 2020 …), so you can place your own rules before, between or after them.
 
-<figure><img src="../../../../../.gitbook/assets/layout-selection-default-row.png" alt="Origin rules created on activation and the default layout"><figcaption><p>The origin rules created on activation, followed by the default layout (FALLBACK)</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-default-row.png" alt="Fallback layout at the end of the layout selection rules."><figcaption><p>Fallback layout at the end of the layout selection rules.</p></figcaption></figure>
 
 Nothing is deleted or changed in the layouts themselves. Right after activation every document therefore gets exactly the layout it got before. Only when you add or change rules does the behaviour change.
 
@@ -49,7 +49,7 @@ Nothing is deleted or changed in the layouts themselves. Right after activation 
 
 ## The Layouts & Selection Rules screen
 
-<figure><img src="../../../../../.gitbook/assets/layouts-overview.png" alt="The Layouts tab"><figcaption><p>The Layouts tab: every layout of the document type as a card</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layouts-overview.png" alt="Layout overview with Layouts and Selection rules tabs."><figcaption><p>Layout overview with Layouts and Selection rules tabs.</p></figcaption></figure>
 
 * **Layouts / Selection rules** (top right) switch between the list of layouts and the list of rules. The numbers show how many there are.
 * **Field Validation / Approval / Reject / Review** switch the **screen**. Every screen has its own layouts, its own rules and its own default layout — an Approval rule never changes the validation screen.
@@ -97,7 +97,7 @@ The layout is always chosen from the **current** values of the document. If a us
 
 ## Manage selection rules
 
-<figure><img src="../../../../../.gitbook/assets/layout-selection-rules-list.png" alt="The Selection rules tab"><figcaption><p>The Selection rules tab of the Field Validation screen</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-rules-list.png" alt="English layout selection rules with configured names hidden."><figcaption><p>English layout selection rules with configured names hidden.</p></figcaption></figure>
 
 Each row shows the **priority** (the first row is marked **FIRST**), the **rule name and key** with its **conditions**, the **target layout**, the **source** badge and an **Active** switch.
 
@@ -124,7 +124,7 @@ To use another fallback layout, create a rule **without any condition** and give
 
 Click **New rule** on the Selection rules tab of the screen you want to change.
 
-<figure><img src="../../../../../.gitbook/assets/layout-rule-editor.png" alt="The layout selection rule editor"><figcaption><p>The rule editor: summary sentence at the top, three steps on the left, live preview on the right</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor.png" alt="Scope, conditions and target layout in the English rule editor."><figcaption><p>Scope, conditions and target layout in the English rule editor.</p></figcaption></figure>
 
 The sentence at the top summarises the rule as you build it — "When header.supplier_id = HP0000278, an INVOICE document gets the Field Validation Layout (Base) layout for Field validation. Checked at priority 5 — the first matching rule wins."
 
@@ -189,7 +189,7 @@ Screen **Approval** · priority **10** · *Total Amount greater than 10000* · t
 
 Screen **Approval** · priority **5** · *Document Status is Pending second approval* · target *Second Approval Layout*. Documents in the first approval step do not match and get the Approval default layout.
 
-<figure><img src="../../../../../.gitbook/assets/layout-rule-approval-status.png" alt="An approval rule on the document status"><figcaption><p>An Approval rule for the second approval stage; the preview resolves the Second Approval Layout</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-approval-status.png" alt="Unsaved draft in the layout selection rule editor."><figcaption><p>Unsaved draft in the layout selection rule editor.</p></figcaption></figure>
 
 ### A special reject screen for some suppliers
 

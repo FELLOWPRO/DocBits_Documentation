@@ -5,7 +5,7 @@
 1. Go to **Settings → Document Processing → Classification and Extraction**.
 2. Enable **Auto extract tax code**.
 
-<figure><img src="../../../../.gitbook/assets/auto_extract_tax_code_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-auto_extract_tax_code_1.png" alt="English automatic tax-code extraction settings."><figcaption><p>English automatic tax-code extraction settings.</p></figcaption></figure>
 
 ## **What Does It Do?**
 

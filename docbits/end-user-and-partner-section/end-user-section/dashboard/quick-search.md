@@ -17,7 +17,7 @@ This guide is organised the way the search is built up:
 > value from the list — Quick Search builds the query for you. The examples below
 > also show the typed form so you can copy them directly.
 
-<figure><img src="../../../.gitbook/assets/quick_search_01_entry.png" alt="The Quick Search bar at the top of the Dashboard"><figcaption><p>The Quick Search bar at the top of the Dashboard.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_01_entry.png" alt="Quick Search in the English dashboard."><figcaption><p>Quick Search in the English dashboard.</p></figcaption></figure>
 
 ---
 
@@ -101,7 +101,7 @@ filename:invoice
 Use `:` to match the word **anywhere** in the name — `2026_Invoice.pdf`,
 `vietnam_einvoice_sample.xml`, `scan_invoice_copy.pdf`.
 
-<figure><img src="../../../.gitbook/assets/quick_search_03_filename_contains.png" alt="filename:invoice matches the word anywhere in the name"><figcaption><p><code>filename:invoice</code> — matches the word anywhere in the document name.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_03_filename_contains.png" alt="Search for part of a filename: filename:invoice."><figcaption><p>Search for part of a filename: filename:invoice.</p></figcaption></figure>
 
 #### `="…"` → starts *or* ends with
 
@@ -125,7 +125,7 @@ status=ready_for_validation
 Status is a fixed list, so `=` is an **exact** match and the bar offers a value
 picker when you type `status=`.
 
-<figure><img src="../../../.gitbook/assets/quick_search_05_status.png" alt="Filtering by document status"><figcaption><p><code>status=ready_for_validation</code> — exact match on a fixed-list field.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_05_status.png" alt="Filter by the technical status ready_for_validation."><figcaption><p>Filter by the technical status ready_for_validation.</p></figcaption></figure>
 
 ### Find documents by date
 
@@ -136,7 +136,7 @@ created_on>2026-05-25
 Use `>`, `<`, `>=`, `<=` for date ranges. You can also use **relative** dates:
 `today()`, `today()-7` (last 7 days), `today()+30` (next 30 days).
 
-<figure><img src="../../../.gitbook/assets/quick_search_06_date.png" alt="Filtering by creation date"><figcaption><p><code>created_on&#62;2026-05-25</code> — documents created after a date.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_06_date.png" alt="Search for documents created after 25 May 2026."><figcaption><p>Search for documents created after 25 May 2026.</p></figcaption></figure>
 
 ### Find documents by invoice sub-type
 
@@ -165,10 +165,10 @@ matching rules are exactly the same as for standard text fields
 supplier_name=Test
 ```
 
-Starts-with on the extracted supplier name. Use `supplier_name:fuji` to match
-anywhere, or `supplier_name:"Ruiz Foods"` to quote a value with spaces.
+Starts-with on the extracted supplier name. Use `supplier_name:Example` to match
+anywhere, or `supplier_name:"Sample Supplier"` to quote a value with spaces.
 
-<figure><img src="../../../.gitbook/assets/quick_search_09_supplier.png" alt="Searching by supplier name"><figcaption><p><code>supplier_name=Test</code> — every result's supplier starts with "Test".</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_09_supplier.png" alt="Example supplier query: supplier_name=Test."><figcaption><p>Example supplier query: supplier_name=Test.</p></figcaption></figure>
 
 ### Find documents by purchase order
 
@@ -178,7 +178,7 @@ purchase_order=PO
 
 Starts-with on the extracted PO number — great for a PO prefix.
 
-<figure><img src="../../../.gitbook/assets/quick_search_10_purchase_order.png" alt="Searching by purchase order"><figcaption><p><code>purchase_order=PO</code> — documents whose PO number starts with "PO".</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_10_purchase_order.png" alt="Example purchase-order query: purchase_order=PO."><figcaption><p>Example purchase-order query: purchase_order=PO.</p></figcaption></figure>
 
 ### Find documents by amount
 
@@ -188,7 +188,7 @@ total_amount>5000
 
 Use `>`, `<`, `>=`, `<=`, or `between 100 and 500` for a span.
 
-<figure><img src="../../../.gitbook/assets/quick_search_07_amount.png" alt="Filtering by total amount"><figcaption><p><code>total_amount&#62;5000</code> — invoices above 5,000.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_07_amount.png" alt="Search for a total amount greater than 5000."><figcaption><p>Search for a total amount greater than 5000.</p></figcaption></figure>
 
 For a window, use `between`:
 
@@ -198,7 +198,7 @@ total_amount between 1000 and 5000
 
 This is shorthand for `total_amount>=1000 AND total_amount<=5000`.
 
-<figure><img src="../../../.gitbook/assets/quick_search_14_between.png" alt="Amount window with between"><figcaption><p><code>total_amount between 1000 and 5000</code> — every result falls inside the window.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_14_between.png" alt="Limit the total amount to the range from 1000 to 5000."><figcaption><p>Limit the total amount to the range from 1000 to 5000.</p></figcaption></figure>
 
 ### Find what's missing
 
@@ -209,7 +209,7 @@ supplier_name=""
 `=""` means "this field is **not set**"; `supplier_name!=""` means "has any
 supplier".
 
-<figure><img src="../../../.gitbook/assets/quick_search_12_empty.png" alt="Finding documents with no supplier"><figcaption><p><code>supplier_name=""</code> — documents that have no supplier yet.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_12_empty.png" alt="Search for documents with an empty supplier name."><figcaption><p>Search for documents with an empty supplier name.</p></figcaption></figure>
 
 The same presence check works on any field — for example documents still
 missing an AP assignment code:
@@ -218,7 +218,7 @@ missing an AP assignment code:
 ap_assignment_code=""
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_15_ap_empty.png" alt="Documents missing an AP assignment code"><figcaption><p><code>ap_assignment_code=""</code> — documents that have no AP assignment code. Use <code>ap_assignment_code!=""</code> for those that do.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_15_ap_empty.png" alt="Search for documents without an AP assignment."><figcaption><p>Search for documents without an AP assignment.</p></figcaption></figure>
 
 ---
 
@@ -258,7 +258,7 @@ group by supplier_name
 ```
 
 The list then shows collapsible **group headers**, each with the group's name and
-a **count** (e.g. *Ruiz Foods (12)*). Click a header to expand or collapse that
+a **count** (e.g. *Sample Supplier (12)*). Click a header to expand or collapse that
 group. For date fields you can group by **day, week or month**.
 
 <figure><img src="../../../.gitbook/assets/quick_search_16_grouping.png" alt="Results grouped by supplier with collapsible headers"><figcaption><p><code>group by supplier_name</code> — results collapse into one expandable header per supplier.</p></figcaption></figure>
@@ -317,7 +317,7 @@ status=ready_for_validation AND supplier_name=Test
 (status=error OR status=failed) AND created_on>today()-1
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_13_combined.png" alt="Combining conditions with AND"><figcaption><p><code>status=ready_for_validation AND supplier_name=Test</code> — two conditions combined.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_13_combined.png" alt="Combine status and supplier predicates with AND."><figcaption><p>Combine status and supplier predicates with AND.</p></figcaption></figure>
 
 ### Shortcuts
 
@@ -340,175 +340,143 @@ Shorter phrasings for the same queries — use whichever reads better:
 | `@User` | `assigned_to:User` | Twitter-style prefix for assignee |
 | `$5000+` | `total_amount>=5000` | `$` prefix for amount thresholds |
 
-### Shortcut query + result gallery
+### Query examples
 
-These examples show each shortcut pattern with the query you type and the result the Dashboard shows. The first group uses standard fields and works even when fulltext search is not enabled. The second group uses fulltext-only fields such as amount or invoice due date.
+The images show the entered queries in the English interface. Document data is hidden. A picture of a filter bar does not establish a particular result count.
 
-#### Works without fulltext
-
-##### Operator aliases
-
-- Query: `created_on gt 2026-05-25`
-- Same as: `created_on>2026-05-25`
-- Result: Filters by Created after 25 May 2026.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_01_operator_aliases.png" alt="Quick Search result for created_on gt 2026-05-25"><figcaption><p><code>created_on gt 2026-05-25</code> - Filters by Created after 25 May 2026.</p></figcaption></figure>
-
-##### Bare date words
-
-- Query: `created_on < today`
-- Same as: `created_on<today()`
-- Result: Expands the bare word today to today().
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_02_bare_date.png" alt="Quick Search result for created_on &lt; today"><figcaption><p><code>created_on &lt; today</code> - Expands the bare word today to today().</p></figcaption></figure>
-
-##### Relative period
-
-- Query: `created_on this_month`
-- Same as: `created_on>=first day of this month AND created_on<=last day of this month`
-- Result: Expands this_month into a date window.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_03_period.png" alt="Quick Search result for created_on this_month"><figcaption><p><code>created_on this_month</code> - Expands this_month into a date window.</p></figcaption></figure>
-
-##### Empty or set words
-
-- Query: `assigned_to is empty`
-- Same as: `assigned_to=""`
-- Result: Finds documents without an assignee.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_04_presence.png" alt="Quick Search result for assigned_to is empty"><figcaption><p><code>assigned_to is empty</code> - Finds documents without an assignee.</p></figcaption></figure>
-
-##### Friendly status
-
-- Query: `status:open`
-- Same as: `status=ready_for_validation`
-- Result: Maps open to the validation status.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_05_status_open.png" alt="Quick Search result for status:open"><figcaption><p><code>status:open</code> - Maps open to the validation status.</p></figcaption></figure>
-
-##### Not between
-
-- Query: `created_on not between 2026-06-01, 2026-06-15`
-- Same as: `(created_on<2026-06-01 OR created_on>2026-06-15)`
-- Result: Finds values outside a date window.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_06_not_between.png" alt="Quick Search result for created_on not between 2026-06-01, 2026-06-15"><figcaption><p><code>created_on not between 2026-06-01, 2026-06-15</code> - Finds values outside a date window.</p></figcaption></figure>
-
-##### In-list
-
-- Query: `status in (ready_for_validation, exported)`
-- Same as: `status=ready_for_validation OR status=exported`
-- Result: Matches any listed status.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_07_in_list.png" alt="Quick Search result for status in (ready_for_validation, exported)"><figcaption><p><code>status in (ready_for_validation, exported)</code> - Matches any listed status.</p></figcaption></figure>
-
-##### Negation prefix
-
-- Query: `not status=finished`
-- Same as: `status!=finished`
-- Result: Inverts the finished-status predicate.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_08_negation.png" alt="Quick Search result for not status=finished"><figcaption><p><code>not status=finished</code> - Inverts the finished-status predicate.</p></figcaption></figure>
-
-##### String contains
-
-- Query: `filename contains E2E`
-- Same as: `filename:E2E`
-- Result: Uses contains as a filename substring search.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_09_contains.png" alt="Quick Search result for filename contains E2E"><figcaption><p><code>filename contains E2E</code> - Uses contains as a filename substring search.</p></figcaption></figure>
-
-##### Invoice prefix
-
-- Query: `#INV-1234`
-- Same as: `invoice_id:INV-1234`
-- Result: Maps #... to an invoice-id search.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_12_invoice_prefix.png" alt="Quick Search result for #INV-1234"><figcaption><p><code>#INV-1234</code> - Maps #... to an invoice-id search.</p></figcaption></figure>
-
-##### Assignee prefix
-
-- Query: `@Daniel`
-- Same as: `assigned_to:"Daniel"`
-- Result: Maps @... to an assignee-name search.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_13_assignee_prefix.png" alt="Quick Search result for @Daniel"><figcaption><p><code>@Daniel</code> - Maps @... to an assignee-name search.</p></figcaption></figure>
-
-#### Requires fulltext search
-
-If you use the same shortcut with a fulltext-only field, the query still requires fulltext. For example, `ap_assignment_code is empty` uses the same empty/set shortcut as `assigned_to is empty`, but the AP assignment field is fulltext-only.
-
-##### Currency suffix
-
-- Query: `total_amount > 5k`
-- Same as: `total_amount>5000`
-- Result: Expands k to thousands on an amount field.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_10_currency_suffix.png" alt="Quick Search result for total_amount &gt; 5k"><figcaption><p><code>total_amount &gt; 5k</code> - Expands k to thousands on an amount field.</p></figcaption></figure>
-
-##### Overdue shortcut
-
-- Query: `overdue`
-- Same as: `invoice_due_date<today() AND status!=finished`
-- Result: Finds unfinished invoices past their due date.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_11_overdue.png" alt="Quick Search result for overdue"><figcaption><p><code>overdue</code> - Finds unfinished invoices past their due date.</p></figcaption></figure>
-
-##### Amount prefix
-
-- Query: `$5000+`
-- Same as: `total_amount>=5000`
-- Result: Maps $...+ to an amount threshold.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_14_amount_prefix.png" alt="Quick Search result for $5000+"><figcaption><p><code>$5000+</code> - Maps $...+ to an amount threshold.</p></figcaption></figure>
-
----
-
-## Part 4 — Advanced search modes
-
-Beyond field search, three prefix modes search the document content itself.
-
-### Vector (semantic) search — `vector:`
-
-Matches by **meaning**, not exact text — useful for "find documents about XYZ".
-Requires the Vector module; applies to document content.
+#### Word comparison operator
 
 ```
-vector: invoices about office supplies
-vector: shipping delays with Hamburg port
+created_on gt 2026-05-25
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_17_vector.png" alt="Semantic vector search results"><figcaption><p><code>vector: supplier invoice</code> — semantically related documents, even without those exact words.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_01_operator_aliases.png" alt="Use the gt comparison operator in a date query."><figcaption><p>Use the gt comparison operator in a date query.</p></figcaption></figure>
 
-### OCR text search — `ocr:`
-
-Searches **inside the page text** the OCR engine extracted — not just the
-structured columns. Useful when the value you remember is in the document body.
+#### Before today
 
 ```
-ocr: Versandkosten
-ocr: "purchase order PO-12345"
-ocr: Hamburg AND doc_type=INVOICE
-ocr: IBAN
+created_on < today()
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_18_ocr.png" alt="OCR text search results"><figcaption><p><code>ocr: demo invoice</code> — matches text found anywhere on the document pages.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_02_bare_date.png" alt="Compare created_on with today()."><figcaption><p>Compare created_on with today().</p></figcaption></figure>
 
-### Natural-language (AI) search — `ai:`
-
-Describe what you want in plain English; the AI reads your phrase and extracts
-filters (supplier, dates, amounts) into a structured query. Unlike Vector, it
-**builds a query** rather than finding similar documents.
+#### From a specified creation date
 
 ```
-ai: invoices from Ruiz over 1000 last quarter
-ai: overdue invoices waiting on approval
-ai: shipping documents from Hamburg last month
+created_on >= 2026-06-01
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_19_ai.png" alt="Natural-language AI search results"><figcaption><p><code>ai: invoices over 1000 from this year</code> — the AI turns the sentence into filters automatically.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_03_period.png" alt="Filter by a creation date on or after 1 June 2026."><figcaption><p>Filter by a creation date on or after 1 June 2026.</p></figcaption></figure>
 
----
+#### Without an assignee
+
+```
+assigned_to is empty
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_04_presence.png" alt="Search for documents without an assignee."><figcaption><p>Search for documents without an assignee.</p></figcaption></figure>
+
+#### Status filter
+
+```
+status=ready_for_validation
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_05_status_open.png" alt="Example status query in Quick Search."><figcaption><p>Example status query in Quick Search.</p></figcaption></figure>
+
+#### Outside a date range
+
+```
+created_on not between 2026-06-01 and 2026-06-15
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_06_not_between.png" alt="Search for a creation date outside the specified range."><figcaption><p>Search for a creation date outside the specified range.</p></figcaption></figure>
+
+#### Alternative statuses
+
+```
+status=ready_for_validation OR status=exported
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_07_in_list.png" alt="Combine two technical document statuses with OR."><figcaption><p>Combine two technical document statuses with OR.</p></figcaption></figure>
+
+#### Exclude a supplier predicate
+
+```
+NOT supplier_name=Test
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_08_negation.png" alt="Exclude a supplier predicate with NOT."><figcaption><p>Exclude a supplier predicate with NOT.</p></figcaption></figure>
+
+#### Part of a filename
+
+```
+filename:invoice
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_09_contains.png" alt="Find filenames containing a search term."><figcaption><p>Find filenames containing a search term.</p></figcaption></figure>
+
+#### Invoice-number query
+
+```
+invoice_number=INV
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_12_invoice_prefix.png" alt="Example query using invoice_number."><figcaption><p>Example query using invoice_number.</p></figcaption></figure>
+
+#### Empty assignee
+
+```
+assigned_to=""
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_13_assignee_prefix.png" alt="Filter by an empty assignee: assigned_to=&quot;&quot;."><figcaption><p>Filter by an empty assignee: assigned_to=&quot;&quot;.</p></figcaption></figure>
+
+#### Currency query
+
+```
+currency=EUR
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_10_currency_suffix.png" alt="Search for documents in euros: currency=EUR."><figcaption><p>Search for documents in euros: currency=EUR.</p></figcaption></figure>
+
+#### Due date before today
+
+```
+invoice_due_date<today()
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_11_overdue.png" alt="Search for a due date before today()."><figcaption><p>Search for a due date before today().</p></figcaption></figure>
+
+#### Amount threshold
+
+```
+total_amount>=1000
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_14_amount_prefix.png" alt="Filter by a total amount of at least 1000."><figcaption><p>Filter by a total amount of at least 1000.</p></figcaption></figure>
+
+## Include document content
+
+The **Search in document content** menu controls whether Quick Search also searches document content. This choice is separate from technical query prefixes such as `vector:`, `ocr:` or `ai:`.
+
+### Automatic
+
+Search the visible columns first. If nothing matches, search inside documents where the organization has the required search features.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_17_vector.png" alt="Automatically include document content in Quick Search."><figcaption><p>Automatically include document content in Quick Search.</p></figcaption></figure>
+
+### Always include document content
+
+Include document content explicitly. The necessary search features must be available to your organization.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_18_ocr.png" alt="Always include document content in Quick Search."><figcaption><p>Always include document content in Quick Search.</p></figcaption></figure>
+
+### Visible columns only
+
+Limit the search to columns visible in the dashboard.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_19_ai.png" alt="Limit Quick Search to visible columns."><figcaption><p>Limit Quick Search to visible columns.</p></figcaption></figure>
 
 ### Recipes
 
@@ -517,7 +485,7 @@ ai: shipping documents from Hamburg last month
 | Ready to validate, fully matched | `status=ready_for_validation AND po_match_status=full_matched` |
 | This supplier, this week | `supplier_name=Test AND created_on>today()-7` |
 | High-value overdue invoices | `total_amount>5000 AND invoice_due_date<today()` |
-| Two suppliers at once | `supplier_name=fuji OR supplier_name=acme` |
+| Two suppliers at once | `supplier_name=ExampleA OR supplier_name=ExampleB` |
 | Errored docs from today | `(status=error OR status=failed) AND created_on>today()-1` |
 | Electronic credit notes | `is_edoc=true AND sub_doc_type=CREDIT_NOTE` |
 | By purchase-order prefix | `purchase_order=PO-2026` |

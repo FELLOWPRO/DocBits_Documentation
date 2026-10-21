@@ -1,0 +1,2136 @@
+{
+  "locale": "en",
+  "ui_code": "en-us",
+  "case_count": 150,
+  "page_count": 56,
+  "captured_on": "2026-10-21",
+  "capture_environment": "dev.docbits.com",
+  "distinct_capture_hashes": 119,
+  "replacement_cases": 131,
+  "text_replacement_cases": 19,
+  "note": "Alignment of the 150-case documentation correction set. English source paths and equivalent existing images differ from German; new captures are from the English UI. Existing correct prose and unrelated images are preserved. Live verification follows merge.",
+  "cases": [
+    {
+      "id": "S001",
+      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": "eabdd149dd5efa58d18683ba51de3e305fbc4577",
+      "original_references": [
+        "analytics_dashboard_data_table.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_data_table.png",
+      "sha256": "d8e28bf25d6a043938f33f78f345a461604c5fba5a5b01ddf91d5e9cf02ec570",
+      "caption": "Analytics data table with English column headings; document values are hidden."
+    },
+    {
+      "id": "S002",
+      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": "02986181a9a73ec8d059f6df36a3365b393f1ac8",
+      "original_references": [
+        "analytics_dashboard_filter_dimensions.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_filter_dimensions.png",
+      "sha256": "92d44c142582c1fce2259910f90cd765b6a5c137efa7a66541c5114a3fd4cf9a",
+      "caption": "Analytics filters for flow steps, sub-organization, document type and supplier."
+    },
+    {
+      "id": "S003",
+      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": "53cbeddbd830b2e600df0070ca4a3b84f5b6ce29",
+      "original_references": [
+        "analytics_dashboard_filter_flow_steps.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_filter_flow_steps.png",
+      "sha256": "199ffc18be5665cb19a06383244e963c6bacce8a32471fc8f1fa5241cf6f51e7",
+      "caption": "Flow-step filter above the analytics dashboard."
+    },
+    {
+      "id": "S004",
+      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": "cdb306d4e240cddf1df8b494ac0ef2fdd662257c",
+      "original_references": [
+        "analytics_dashboard_filter_search.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_filter_search.png",
+      "sha256": "603deb43e9f61822042ea7a593bd260ceef1c8cbfa1883c52cb8ac52ba412729",
+      "caption": "Analytics filtered by the term Validation."
+    },
+    {
+      "id": "S005",
+      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": "e10cd0cbdb06984c851f901735c8af053ba5640a",
+      "original_references": [
+        "analytics_dashboard_filter_time_range.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_filter_time_range.png",
+      "sha256": "40a6da7db9423a5b32d183c18f62acf0eed78674809609b79528fb0d5612b25e",
+      "caption": "Custom time range in the English analytics filter bar."
+    },
+    {
+      "id": "S006",
+      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": "24d8f019f2a9574d2e6379346693b131da3abd29",
+      "original_references": [
+        "analytics_dashboard_flow_steps_card.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_flow_steps_card.png",
+      "sha256": "1e38a1cc730aebb2cb35361b2fb446cbe0cb8cfbd0c6913a427591eb18cc999c",
+      "caption": "Flow-step cards with aggregated processing times."
+    },
+    {
+      "id": "S007",
+      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": "ab925c32da026e21fd4bcf0b33274384092066c7",
+      "original_references": [
+        "analytics_dashboard_flow_types.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_flow_types.png",
+      "sha256": "8b0bd89587f0a1715a23417ea550a40f0e93cc907cc7ce2045b573e44d1d8262",
+      "caption": "Processing, user interaction and status views of analytics."
+    },
+    {
+      "id": "S008",
+      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": "d05e17b32ee3c32937c4ce255a5b59474aee6e19",
+      "original_references": [
+        "analytics_dashboard_global_average_comparison.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_global_average_comparison.png",
+      "sha256": "ac139e628ce7bb0821b69d47e6ba5d2532aa72e15b7785c25b3ad666ff6e1dde",
+      "caption": "Average processing time compared with the global average."
+    },
+    {
+      "id": "S009",
+      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": "d8061592247ecd7cc7a62a146e6cb381174b9b58",
+      "original_references": [
+        "analytics_dashboard_only_exported_toggle.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_only_exported_toggle.png",
+      "sha256": "ee5b6007eef81a1401671ca6b3f6579731f978b6bc77ccc093f493832a7edd93",
+      "caption": "Only exported documents toggle in analytics."
+    },
+    {
+      "id": "S010",
+      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": "9d288370e43004b581bce4d8961174b18932ed4c",
+      "original_references": [
+        "analytics_dashboard_processing_flow.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_processing_flow.png",
+      "sha256": "8b0bd89587f0a1715a23417ea550a40f0e93cc907cc7ce2045b573e44d1d8262",
+      "caption": "Processing view with aggregated flow steps."
+    },
+    {
+      "id": "S011",
+      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": "d9dffaf4242a66f59409db491e20fc03e0f86402",
+      "original_references": [
+        "analytics_dashboard_status_flow.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_status_flow.png",
+      "sha256": "1d6763536699dd8daf78eaf0181d6c47dffc6aef2afddb7de4898715b01aca64",
+      "caption": "Status view of analytics."
+    },
+    {
+      "id": "S012",
+      "doc": "docbits/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": "f4aecce8f26c9ecc253f5fb86e703fc0a8fbc8de",
+      "original_references": [
+        "analytics_dashboard_user_interaction_flow.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_user_interaction_flow.png",
+      "sha256": "bcfff10779926f68c2e4175a14f38b5051b1821209f3e3aad18c23fe3b4fb860",
+      "caption": "User interaction view with no data for the selected filters."
+    },
+    {
+      "id": "S013",
+      "doc": "docbits/administration-and-setup/settings/document-processing/export/README.md",
+      "action": "replace",
+      "old_blob": "fda3547a98faa31db230712de99594c6dbdbeb5c",
+      "original_references": [
+        "export_create_new_button.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-export_create_new_button.png",
+      "sha256": "4b61a1a4dc652b004a1daf59b16c457b68ea293cbbe715ff4dc32c07c6be51dc",
+      "caption": "Unsaved new export configuration showing its basic information."
+    },
+    {
+      "id": "S014",
+      "doc": "docbits/administration-and-setup/settings/document-processing/export/README.md",
+      "action": "replace",
+      "old_blob": "758b1f3602f88442afadd9703219fd9aafae803b",
+      "original_references": [
+        "export_list_view.png",
+        "export_list_view.png"
+      ],
+      "retired_aliases": 1,
+      "mapping": "equivalent_existing_asset",
+      "new": "s150-export_settings_menu_access.png",
+      "sha256": "34fd791608aee71a87d969d0ac523ad970ec7bf8879dab5d1268c2ef0b7b8e1f",
+      "caption": "Open export configuration from the English settings."
+    },
+    {
+      "id": "S015",
+      "doc": "docbits/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+      "action": "replace",
+      "old_blob": "dd0d7022b2260d09d175ad8e858b29de5e47dc95",
+      "original_references": [
+        "barcode_assignment_dialog.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-barcode_assignment_dialog.png",
+      "sha256": "06ef1ebefc78578345f73f715aaa1fc8fc84cd97db114ae835a93c87cc82952c",
+      "caption": "Map extracted barcodes to document fields."
+    },
+    {
+      "id": "S016",
+      "doc": "docbits/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+      "action": "replace",
+      "old_blob": "86d1d50ff5dcd0173c00b554ba2eed49cfe98591",
+      "original_references": [
+        "barcode_assignment_field_mapped.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-barcode_assignment_field_mapped.png",
+      "sha256": "0846b14b3b65448a9015cc36e1f7c07d5e967d24f0103352ccfbc5f807557c62",
+      "caption": "Unsaved barcode mapping to the Purchase Order field."
+    },
+    {
+      "id": "S017",
+      "doc": "docbits/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+      "action": "replace",
+      "old_blob": "9e145851326dcdab875629e2ffa01f21e2597124",
+      "original_references": [
+        "barcode_assignment_field_options.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-barcode_assignment_field_options.png",
+      "sha256": "628a82bfac59d13ad0db1433b7c681da575952f6af62fbc4795cd489901dd61b",
+      "caption": "Available document fields in the barcode mapping dialog."
+    },
+    {
+      "id": "S018",
+      "doc": "docbits/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+      "action": "replace",
+      "old_blob": "aa7bf673ec02b386c8164f346031e02447b41b7d",
+      "original_references": [
+        "barcode_assignment_validation_screen.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-barcode_assignment_validation_screen.png",
+      "sha256": "7120d4691b8a43b91e975b1151f2713947b4e44c4bf0c70d23efd44c3e7d5f84",
+      "caption": "English validation view of a fictional invoice with a barcode and QR code."
+    },
+    {
+      "id": "S019",
+      "doc": "docbits/administration-and-setup/settings/document-processing/module/fulltext-search.md",
+      "action": "remove",
+      "old_blob": "6360a3977345d81c519e7475cfab7b06f463efe8",
+      "original_references": [
+        "fulltext-search-required-dialog.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-fulltext-search-required-dialog.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S020",
+      "doc": "docbits/administration-and-setup/settings/document-processing/rule-manager/README.md",
+      "action": "replace",
+      "old_blob": "bb5a84f82f3f82fae8c6a1ba436c5f44e3b29cb4",
+      "original_references": [
+        "rule_detailed_editing.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-rule_detailed_editing.png",
+      "sha256": "b8c86e50b3fa54837bdeb3273646110a53a8ada4fef705cfac5992600ce63773",
+      "caption": "English TOML rule editor with a technical configuration example."
+    },
+    {
+      "id": "S021",
+      "doc": "docbits/administration-and-setup/settings/document-processing/rule-manager/README.md",
+      "action": "replace",
+      "old_blob": "bdca306615d93d33e45d5f5981196194eb14de89",
+      "original_references": [
+        "rule_management.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-rule_management.png",
+      "sha256": "44c80dc1d8016e7f2f8c745478e2ac971e3188861a4c23da72480cf397dc3d28",
+      "caption": "Rule management with configured names hidden."
+    },
+    {
+      "id": "S022",
+      "doc": "docbits/administration-and-setup/settings/document-processing/rule-manager/README.md",
+      "action": "replace",
+      "old_blob": "1d2dd9e4027df8807c577f9250e13c25fcb1ceff",
+      "original_references": [
+        "rule_management_interface.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-rule_management_interface.png",
+      "sha256": "3a12e3a18491eeefe11486e3eb28034edc3c6beb2ed4aca48a0877d01f1ed2d0",
+      "caption": "Rule management overview and available actions."
+    },
+    {
+      "id": "S023",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/duplicate-a-custom-validation-rule.md",
+      "action": "replace",
+      "old_blob": "e10552cb9beb16e3eddb0cfd501a492389606530",
+      "original_references": [
+        "custom_validation_rule_duplicate_en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-custom_validation_rule_duplicate_en.png",
+      "sha256": "96ecac783cb27c286e1d6c923ab65c7bb354d26d4d1d97622b813be67521ca30",
+      "caption": "Custom validation rules with the duplicate action; configured names are hidden."
+    },
+    {
+      "id": "S024",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md",
+      "action": "replace",
+      "old_blob": "9a345f19ca91e9d6959233bdbbd54872ec2e8f33",
+      "original_references": [
+        "dbdc155-field-properties-filtered-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-dbdc155-field-properties-filtered.png",
+      "sha256": "866f0962496a02c590fcca849d919ef6d6b2d49739ce20e74f63ec6c0c902fdd",
+      "caption": "Field settings filtered by invoice_id, with OCR and Match Score visible."
+    },
+    {
+      "id": "S025",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md",
+      "action": "replace",
+      "old_blob": "3eee090d25fd183ab7958ab5c1fdd8c5400a6d06",
+      "original_references": [
+        "dbdc155-field-properties-overview-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-dbdc155-field-properties-overview.png",
+      "sha256": "5afcc406be9ba5d88e5ad15d105423faa4e35f845533676c13ab9aafd96d4945",
+      "caption": "English field settings for required, read-only, hidden and force-validation properties."
+    },
+    {
+      "id": "S026",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "ccd76cdf95a3639351d2bd98628b802ab8df0ded",
+      "original_references": [
+        "layout-rule-approval-status.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-layout-rule-approval-status.png",
+      "sha256": "7b2a482bdf76e570912d519a59cee14d41b80557af299cb3e86457ddcf622b06",
+      "caption": "Unsaved draft in the layout selection rule editor."
+    },
+    {
+      "id": "S027",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "ea5c82f992a63888b28465c13b079fa154bc316b",
+      "original_references": [
+        "layout-rule-editor.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-layout-rule-editor.png",
+      "sha256": "3ec86a1069dd2f549754a3beed9e29a96e5b078aeb7bcc0d6936f0f01936ab06",
+      "caption": "Scope, conditions and target layout in the English rule editor."
+    },
+    {
+      "id": "S028",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "c7feb2371122d30dc88f9ea678bff4e5e3ae78b9",
+      "original_references": [
+        "layout-selection-default-row.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-layout-selection-default-row.png",
+      "sha256": "a88fb6ba3faa0d86bc53b2a236f23f2b9dfc2604925b5a8663173fa1e6fe90f3",
+      "caption": "Fallback layout at the end of the layout selection rules."
+    },
+    {
+      "id": "S029",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "db7c1b42719e0ca04e68edd75b15018ac2356963",
+      "original_references": [
+        "layout-selection-rules-list.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-layout-selection-rules-list.png",
+      "sha256": "b3ad4d07299f7da79631327fa29ba6733033c567af6b7a1c44250be0a7d21bc3",
+      "caption": "English layout selection rules with configured names hidden."
+    },
+    {
+      "id": "S030",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "b21fa250b06842decb0f1315ab880a28a9398e18",
+      "original_references": [
+        "layouts-overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-layouts-overview.png",
+      "sha256": "39b198a167cd5a4cbb0200e8479cee20f63125024750dddb45103205e91ec138",
+      "caption": "Layout overview with Layouts and Selection rules tabs."
+    },
+    {
+      "id": "S031",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling.md",
+      "action": "replace",
+      "old_blob": "b9e6fef879ba271cd9611f4478ad3cfa3155c585",
+      "original_references": [
+        "dbdc156-duplicate-settings-on-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "s150-duplicatedocument_3.png",
+      "sha256": "13ed3ce8293d67aaf2e3ef3f8e39e70658104ddf3b4eb020525659b76e91e72c",
+      "caption": "English duplicate-document detection settings."
+    },
+    {
+      "id": "S032",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling.md",
+      "action": "replace",
+      "old_blob": "2ee84cfe07f6f47d4e060dc5171a4418f07a2d9a",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-duplicatedocument_4.png",
+      "sha256": "1f3092b4515910908731efc4748cb39171be4e92073227e998187600c5c0197e",
+      "caption": "Fields available for duplicate-document detection."
+    },
+    {
+      "id": "S033",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling.md",
+      "action": "remove",
+      "old_blob": "f46238d16030439b84cba791bb89ffa10468aaa6",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "source_figure_already_absent",
+      "new": "s150-duplicatedocument_7.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S034",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md",
+      "action": "remove",
+      "old_blob": "1393267cdcb91a3f940e79195ef8ced95942b9ee",
+      "original_references": [
+        "Calculate_PO_unit_price_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-calculate_po_unit_price_4.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S035",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "remove",
+      "old_blob": "8e035c26b6df9e2fc957dd4dce320a02d8cfbe42",
+      "original_references": [
+        "consumed_po_line_status.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-consumed_po_line_status.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S036",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "remove",
+      "old_blob": "1ba43fcd136bad48c2ed5ff72e80e322dd621c74",
+      "original_references": [
+        "image (450).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-image-470.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S037",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "remove",
+      "old_blob": "faed71d8a697c751cdf7b7b0f9b80d4dcd2bdd20",
+      "original_references": [
+        "image (451).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-image-472.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S038",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "remove",
+      "old_blob": "4ef0056a8af4f751f21dbe0b8414d590354fdc17",
+      "original_references": [
+        "image (452).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-image-473.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S039",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/script/README.md",
+      "action": "replace",
+      "old_blob": "f77adfe209ae633c17f4cc740f8f47c5c9f541fe",
+      "original_references": [
+        "Bildschirmfoto 2024-05-08 um 09.43.25.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-bildschirmfoto-2024-05-08-um-09-43-25.png",
+      "sha256": "25f3f4cb6b345815108d9e337f2ef2b0585c63ac7279ca258f0779e8ee2f8c7c",
+      "caption": "English script list with names and dates hidden."
+    },
+    {
+      "id": "S040",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/script/README.md",
+      "action": "replace",
+      "old_blob": "aedd3c173f4526dbffd873058be8105e798f9ff8",
+      "original_references": [
+        "Bildschirmfoto 2024-05-08 um 09.43.37.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-bildschirmfoto-2024-05-08-um-09-43-37.png",
+      "sha256": "3e0cdb20ee6ad7734bd248ff5945b3ead8ccf7cb3323d7e1c3cdb283c7c28369",
+      "caption": "English script editor with a technical Python example."
+    },
+    {
+      "id": "S041",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+      "action": "replace",
+      "old_blob": "9d6324f98d2040977290a0b6c097dfe0db33aa78",
+      "original_references": [
+        "transformation-add-row-columns.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-transformation-add-row-columns.png",
+      "sha256": "5e7f1e0da48cc7cecd60a34b1a5d948eabab8c1baccbf90ea44417138cb2ffb7",
+      "caption": "Unsaved transformation step to add a table row."
+    },
+    {
+      "id": "S042",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+      "action": "replace",
+      "old_blob": "472b72c6804ca4a1a4f5a0fe540eed23c843195a",
+      "original_references": [
+        "transformation-column-value-map.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-transformation-column-value-map.png",
+      "sha256": "612f29f60dba8b0c07538d9bd679704a4ab1eee6c3fab202e6d245436019fb97",
+      "caption": "Value mapping for a table column in the transformation editor."
+    },
+    {
+      "id": "S043",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+      "action": "replace",
+      "old_blob": "bb71b4d92fb7e578b5b898d094302b5fd94fdaf9",
+      "original_references": [
+        "transformation-rule-pipeline.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-transformation-rule-pipeline.png",
+      "sha256": "19236cc9b9ea0b53591abbf648d07a10b01168484f8043f57697b5d5258c7962",
+      "caption": "Processing steps of a transformation rule in the English editor."
+    },
+    {
+      "id": "S044",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+      "action": "replace",
+      "old_blob": "525a2cb7224758b9df24a4434cfbadbd7dc7c217",
+      "original_references": [
+        "transformation-rule-scope.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-transformation-rule-scope.png",
+      "sha256": "e8830e0e42be0f72fc2caeaad0371705695ce094265b4db36fc3cefcbe0d470e",
+      "caption": "Transformation scopes: header field, table rows, table column and routing."
+    },
+    {
+      "id": "S045",
+      "doc": "docbits/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations/how-to-create-a-sub-organization.md",
+      "action": "replace",
+      "old_blob": "e90879645ac0010e0d74de076232cbe52e10fbc5",
+      "original_references": [
+        "edit_user_in_sub_organization.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-edit_user_in_sub_organization.png",
+      "sha256": "fddf733c84837080fcf1733d6629b2002c9b950fc23f0176527f87893cd38856",
+      "caption": "English dialog for creating a sub-organization."
+    },
+    {
+      "id": "S046",
+      "doc": "docbits/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+      "action": "remove",
+      "old_blob": "9c8c746b746d75d3c22f5a7d96d71151c5d61a1f",
+      "original_references": [
+        "api-key-created.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-api-key-created.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S047",
+      "doc": "docbits/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+      "action": "replace",
+      "old_blob": "6ec0d07fbb68518af275ea5f33af60f85a9c80ae",
+      "original_references": [
+        "api-key-list-row.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-api-key-list-row.png",
+      "sha256": "8003f4931d61775941251ade417e22904556e11fbc2095640fdd69eb76d132af",
+      "caption": "API key list with keys and account details hidden."
+    },
+    {
+      "id": "S048",
+      "doc": "docbits/administration-and-setup/settings/infrastructure.md",
+      "action": "replace",
+      "old_blob": "c147e91766c155c4d0b445768987b2409fc5276b",
+      "original_references": [
+        "infrastructure_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-infrastructure_overview.png",
+      "sha256": "c514e74558b8c620c7538929e7f23e01af9e5a3427605d9c0bdd2898f28fdcd1",
+      "caption": "English infrastructure overview."
+    },
+    {
+      "id": "S049",
+      "doc": "docbits/administration-and-setup/settings/supplier-setting/editing-email-templates.md",
+      "action": "replace",
+      "old_blob": "646ee5343fabc7e8a269167255751e21bc1a643a",
+      "original_references": [
+        "Bildschirmfoto 2024-08-25 um 12.35.53.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-bildschirmfoto-2024-08-25-um-12-35-53.png",
+      "sha256": "75d7218ef0eb4fd0c1435d5ef4887810e9cb38d13f05ee4d95395cd9498650d6",
+      "caption": "English editor for a new supplier email template."
+    },
+    {
+      "id": "S050",
+      "doc": "docbits/administration-and-setup/setup/document-training/training-header-fields.md",
+      "action": "replace",
+      "old_blob": "864b0dec41fd8bd82ac0353fe5872dd84e612a7c",
+      "original_references": [
+        "header_field_training_0.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-header_field_training_0.png",
+      "sha256": "ba82533875effee48537e91cf8c702c5bc517141edfcf701dfd60cdd726d100c",
+      "caption": "Field validation of a fictional English invoice before header training."
+    },
+    {
+      "id": "S051",
+      "doc": "docbits/administration-and-setup/setup/document-training/training-header-fields.md",
+      "action": "replace",
+      "old_blob": "766cb3a4b96bb8a0a7e32cafe99acb8cb977b0a8",
+      "original_references": [
+        "header_field_training_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-header_field_training_1.png",
+      "sha256": "8c39be2fe4b3751ac75a883710d2f0fd9c4101232d475e3307a8798710460362",
+      "caption": "Select the invoice number as the starting point for header-field training."
+    },
+    {
+      "id": "S052",
+      "doc": "docbits/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "7b9b3aa2b9ce093be324d9a9c21dfcb1ff316c5f",
+      "original_references": [
+        "define_tables_and_columns_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_1.png",
+      "sha256": "1601937d7ecc2c6d8a58e6d5e28f2faa206d563f98f771a9487d8f3a74183d26",
+      "caption": "English interface for defining tables and columns."
+    },
+    {
+      "id": "S053",
+      "doc": "docbits/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "bce1b9d5a01319091c246da720599bc1bcfb84fe",
+      "original_references": [
+        "define_tables_and_columns_10.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_10.png",
+      "sha256": "e009433b2ec990a4561e45ee680ee0f5864125ddc5fd553e3c8ba8a1026121b7",
+      "caption": "Automatically extracted line items of the fictional invoice in validation."
+    },
+    {
+      "id": "S054",
+      "doc": "docbits/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "95e6358348a1ef553692a41cf761cae10145a872",
+      "original_references": [
+        "define_tables_and_columns_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_2.png",
+      "sha256": "458c38a9844e5a6585d0bc9b58e897e6ba20441571076455e322d3d0d4eb0a2f",
+      "caption": "Table training with training mode enabled."
+    },
+    {
+      "id": "S055",
+      "doc": "docbits/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "41129ebb6eae74f2b32a19f02564acf860801a3d",
+      "original_references": [
+        "define_tables_and_columns_3.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_3.png",
+      "sha256": "458c38a9844e5a6585d0bc9b58e897e6ba20441571076455e322d3d0d4eb0a2f",
+      "caption": "Table-training tools including automatic detection."
+    },
+    {
+      "id": "S056",
+      "doc": "docbits/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "5aa31ae86aeeead17f9eae6c8f04bebeb235c647",
+      "original_references": [
+        "define_tables_and_columns_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_4.png",
+      "sha256": "45ec5b1e7639583e9de0e9a093c1ab20f41da3fcabbefb715f0c69d588f955ef",
+      "caption": "Unsaved table area around the fictional invoice's line items."
+    },
+    {
+      "id": "S057",
+      "doc": "docbits/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "4240ac3b80e3e5265c22d72a6230e758376038af",
+      "original_references": [
+        "define_tables_and_columns_5.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_5.png",
+      "sha256": "680db91d948b0b15d0ccc9af0e6a8be67be7d3608ad2e59656b358e1d1f5804e",
+      "caption": "Table area in edit mode with vertical column separators."
+    },
+    {
+      "id": "S058",
+      "doc": "docbits/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "d9b39626458c7eca8899435394bce46ee807ed29",
+      "original_references": [
+        "define_tables_and_columns_8.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_8.png",
+      "sha256": "abbacae00b60622d7ed1c37b21d86edd1f04093d3bd1e9ec6a612fa36111b15c",
+      "caption": "Table area and column separators in an unsaved training draft."
+    },
+    {
+      "id": "S059",
+      "doc": "docbits/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "caaf11d993b2aa1ac2375d0ead818454229f4e1b",
+      "original_references": [
+        "define_tables_and_columns_9.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_9.png",
+      "sha256": "abbacae00b60622d7ed1c37b21d86edd1f04093d3bd1e9ec6a612fa36111b15c",
+      "caption": "Table area with column separators positioned for the training draft."
+    },
+    {
+      "id": "S060",
+      "doc": "docbits/administration-and-setup/setup/document-types/README.md",
+      "action": "replace",
+      "old_blob": "17891ff3051160ae164fdb82cdcdeee24836ab03",
+      "original_references": [
+        "document-types-invoice-fields-en-20260928.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-document-types-invoice-fields.png",
+      "sha256": "602ddbb1ebe9122f2f46fd0233d2bf0ff6c629780d01c7e27fcd15dd304250de",
+      "caption": "Invoice document-type fields in English administration."
+    },
+    {
+      "id": "S061",
+      "doc": "docbits/administration-and-setup/setup/document-types/origin-layouts.md",
+      "action": "replace",
+      "old_blob": "43a1da9852f3ef2ab887501fb50176aa6f5e513f",
+      "original_references": [
+        "origin_layout_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-origin_layout_1.png",
+      "sha256": "a54f5e25be95e4b936186d79c6ac911c494c0b2fd3b9b42090b28f0f90687a24",
+      "caption": "Layout Builder with English controls."
+    },
+    {
+      "id": "S062",
+      "doc": "docbits/administration-and-setup/setup/document-types/origin-layouts.md",
+      "action": "replace",
+      "old_blob": "5fe6d5bf2d79d8b2dad302d77bb67db548398c64",
+      "original_references": [
+        "origin_layout_3.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-origin_layout_3.png",
+      "sha256": "2c102183de430f28d68e769b11db4f3cf88fe26cabe9a41ac7bd83cd2b63a6be",
+      "caption": "Origin selection in Layout Builder; configured origin names remain unchanged."
+    },
+    {
+      "id": "S063",
+      "doc": "docbits/administration-and-setup/setup/document-types/origin-layouts.md",
+      "action": "replace",
+      "old_blob": "01830f3300af552b84f1900e55de25fbcc426050",
+      "original_references": [
+        "origin_layout_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-origin_layout_4.png",
+      "sha256": "47ecf98fd43e99503205ad85642499f8b7ba4cc760c65682ca863676232f9f74",
+      "caption": "Dialog for applying the default layout to selected origins."
+    },
+    {
+      "id": "S064",
+      "doc": "docbits/administration-and-setup/workflow/card-sdk.md",
+      "action": "replace",
+      "old_blob": "85e251c7b975d5ec09d78d7ec75c470e1d7c8bfa",
+      "original_references": [
+        "workflow_card_sdk.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-workflow_card_sdk.png",
+      "sha256": "7a25b06f763b8a9621e41eab65bede3c357486657548e54470f73df4ddc7b412",
+      "caption": "Card SDK tab with the notice that an AI Workforce subscription is required."
+    },
+    {
+      "id": "S065",
+      "doc": "docbits/administration-and-setup/workflow/standard-workflow-builder/workflow-documentation.md",
+      "action": "replace",
+      "old_blob": "5b56c6edc6e7acc8343c009add46a0f2654d9035",
+      "original_references": [
+        "workflow_test4_delivery_note_status.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-workflow_test4_delivery_note_status.png",
+      "sha256": "4b44bcbd859be2f3fb7fc4d8cb4439ac2991987c12a2bac254f4e62fb35b26e9",
+      "caption": "Unsaved workflow draft for changing a document status."
+    },
+    {
+      "id": "S066",
+      "doc": "docbits/administration-and-setup/workflow/standard-workflow-builder/workflow-documentation.md",
+      "action": "replace",
+      "old_blob": "bc14a2fac0b062396ebc1248f7c1c1537c92e6e2",
+      "original_references": [
+        "image (6) (1).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-workflow_test7_status_update.png",
+      "sha256": "2c036d53d1bc8cb0a0120a9279aeafa75cd045171594da2805c15923abdbc222",
+      "caption": "Status-change action in an unsaved workflow draft."
+    },
+    {
+      "id": "S067",
+      "doc": "docbits/administration-and-setup/workflow/standard-workflow-builder/workflow-documentation.md",
+      "action": "replace",
+      "old_blob": "da6a133492c46304bda67e1f6162504bcd8262cf",
+      "original_references": [
+        "image (27) (1).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-workflow_test9_match_check_detail.png",
+      "sha256": "6446762af797ebc8c08b082dab4591ea4af8f4525728c02053244eb23e363997",
+      "caption": "Purchase-order comparison card in the English workflow picker."
+    },
+    {
+      "id": "S068",
+      "doc": "docbits/administration-and-setup/workflow/standard-workflow-builder/workflow-documentation.md",
+      "action": "replace",
+      "old_blob": "2c70bbc084befb579accd057538c54d2dd7673d7",
+      "original_references": [
+        "workflow_test9_match_check_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-workflow_test9_match_check_overview.png",
+      "sha256": "8cd075e11c0ef9492bffe18cefcbd5a07432df593adc18b54bf3ee9a6420f67e",
+      "caption": "Unsaved workflow draft with a purchase-order comparison condition."
+    },
+    {
+      "id": "S069",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+      "action": "replace",
+      "old_blob": "a5e795181fa7e8537e1f768499a686cd1dbd575d",
+      "original_references": [
+        "document-flow-dashboard-menu-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-document-flow-dashboard-menu.png",
+      "sha256": "8641b2573fecf8b443f3e56693bc5962b856c7693987db5a1f0fbcdcde899729",
+      "caption": "Find the synthetic example document in the English dashboard; document values are hidden."
+    },
+    {
+      "id": "S070",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+      "action": "replace",
+      "old_blob": "44e6c24e25c0bb4371cab63787ffd7f3c348da27",
+      "original_references": [
+        "document-flow-overview-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-document-flow-overview.png",
+      "sha256": "f562dcfdc48b2e4debc4b819086682167cceb4cc6eed28b4985f1e509a9299fe",
+      "caption": "Process cards for a fictional invoice; technical status codes remain unchanged."
+    },
+    {
+      "id": "S071",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+      "action": "remove",
+      "old_blob": "e2418c8bb4e3c9f90979eee87377da5e483621d8",
+      "original_references": [
+        "document-flow-step-details-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-document-flow-step-details.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S072",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+      "action": "replace",
+      "old_blob": "c39d76787089aee30b1e3f7d728f01ce388d66fd",
+      "original_references": [
+        "document-flow-validation-menu-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-document-flow-validation-menu.png",
+      "sha256": "edb30ebe0658dcb2489bb830cd479f6367c3cc9b4b390555b33e9d01a33e0171",
+      "caption": "More options menu in English field validation with Document Flow available."
+    },
+    {
+      "id": "S073",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/technical-support-in-docbits/debug-collector.md",
+      "action": "remove",
+      "old_blob": "a25517b079dde1a6e425518b5e8417c57b135697",
+      "original_references": [
+        "debug-collector-dialog.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-debug-collector-dialog.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S074",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/error-page.md",
+      "action": "replace",
+      "old_blob": "907a12d4f1b62b5e5faa61b6acf28ff0d2832f7e",
+      "original_references": [
+        "error_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-error_1.png",
+      "sha256": "0055cabbd97ce7d6ddcd4c10eacf0d230a3acde3305d8bedb7f57b6f9a6dde30",
+      "caption": "Error-view actions; the example has no stored error details."
+    },
+    {
+      "id": "S075",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/error-page.md",
+      "action": "replace",
+      "old_blob": "df2e5541239ea95ebf5184eb435fe7501dbc4fe4",
+      "original_references": [
+        "error_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-error_2.png",
+      "sha256": "a2fc606dc07ca71254bb14f859f450ac88d2aa5ef57e9fed340a9f9101ca3e8f",
+      "caption": "Message and Exception sections of the error view without a stored detail message."
+    },
+    {
+      "id": "S076",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/error-page.md",
+      "action": "remove",
+      "old_blob": "735687cf3182e1616dc43b537c4a72aa74c90071",
+      "original_references": [
+        "error_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-error_4.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S077",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/error-page.md",
+      "action": "remove",
+      "old_blob": "e2c27b6ea1c0dba0fd3ecd3b3d9b18c1c40be4a3",
+      "original_references": [
+        "error_5.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-error_5.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S078",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md",
+      "action": "replace",
+      "old_blob": "e0806ff62231c6dedd8e99f0074d50dd817c31cc",
+      "original_references": [
+        "ftp1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-ftp1.png",
+      "sha256": "cdaf2d77207add6828972c874afdaea14ea191f14d8a0574dc2dd1e1f3701fd8",
+      "caption": "English FTP connection overview with connection details hidden."
+    },
+    {
+      "id": "S079",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md",
+      "action": "remove",
+      "old_blob": "11ed925df721cc3a964ca414886ce988094a758e",
+      "original_references": [
+        "ftp_3.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "s150-ftp_file_archiving_settings.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S080",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md",
+      "action": "replace",
+      "old_blob": "972b718673b02f29cb8674f14efeee7b296cd29b",
+      "original_references": [
+        "ftp_import_configuration_form.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-ftp_import_configuration_form.png",
+      "sha256": "d5e03aaeff7bd89d06cdf8c7491e358815fc769c833be9c3d7da8cd92d1f0faf",
+      "caption": "First step of the FTP import wizard: Server Configuration."
+    },
+    {
+      "id": "S081",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/how-to-import-documents/manual-import.md",
+      "action": "replace",
+      "old_blob": "0611b1068bf8f4129f1c077414ce4d58d10faae4",
+      "original_references": [
+        "manual-import1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-manual-import1.png",
+      "sha256": "7dc6df0f797c962b38f68cf9719074f6655e2a5544cc3236ab4445c91677d81a",
+      "caption": "English manual document-upload dialog."
+    },
+    {
+      "id": "S082",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/idea-board.md",
+      "action": "replace",
+      "old_blob": "2c4848092bb54346ed300879742fab72e643db7a",
+      "original_references": [
+        "idea-board-new-idea.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-idea-board-new-idea.png",
+      "sha256": "9d14b5e282faa54bb5ee7c0b8d4303025721a346492859e267a1b83762f32712",
+      "caption": "English New Idea dialog without personal details."
+    },
+    {
+      "id": "S083",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/invoice-dashboard.md",
+      "action": "remove",
+      "old_blob": "cb29d7263370f66a465f221931d90a8d8fa937f6",
+      "original_references": [
+        "invoice_dashboard_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-invoice-dashboard.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S084",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/purchase-order-dashboard.md",
+      "action": "replace",
+      "old_blob": "660b75b002d3ac86841d47fb630a19d4a9a998fc",
+      "original_references": [
+        "purchase_order_dashboard_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-purchase-order.png",
+      "sha256": "7340d166731d44ffc48f6967dfae057f6f550eca534cdf2a46e94aef715a19d2",
+      "caption": "Purchase-order overview with English headings and order values hidden."
+    },
+    {
+      "id": "S085",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/purchase-order-matching/supplier-item-number-map.md",
+      "action": "replace",
+      "old_blob": "64ca9a777d534c3fd2aeef3235a6ce5abb359b50",
+      "original_references": [
+        "supplier_item_number_map_interface.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-supplier-item-number-map.png",
+      "sha256": "084969b66e98c4d12055a0c66765e4496588b001a5219f967bdf42edda550ac8",
+      "caption": "Supplier item number mapping with English column headings."
+    },
+    {
+      "id": "S086",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/ressources-and-support/user-support.md",
+      "action": "replace",
+      "old_blob": "920bc9aad80086ebb4536fa7140ee625c8517e55",
+      "original_references": [
+        "validation_screen_support_window.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-user-support4.png",
+      "sha256": "63978f632712313441c00754349377f44e0b16adbd14520ca14c67c22327f0c7",
+      "caption": "English support form before submission."
+    },
+    {
+      "id": "S087",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/tasks.md",
+      "action": "replace",
+      "old_blob": "dafbde24bee224321fad075490749ee8fb08b4c1",
+      "original_references": [
+        "tasks_dashboard_layout_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-tasks1.png",
+      "sha256": "9499666edcd6c3ee186738fd5acdcc31169221079f0deee71edd3e07487bcbdf",
+      "caption": "English task list with task contents and assignees hidden."
+    },
+    {
+      "id": "S088",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/tasks.md",
+      "action": "replace",
+      "old_blob": "72c1c34a7cc85f7b5e76ac82512a2604dc4d8f6d",
+      "original_references": [
+        "tasks_dashboard_layout_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-tasks2.png",
+      "sha256": "4261727bfaedb1be93e790c66d1356a87b2f1b0b78ef2da06c25753dde7cc05f",
+      "caption": "Task board with personal task contents hidden."
+    },
+    {
+      "id": "S089",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/technical-support-in-docbits/help-icons.md",
+      "action": "replace",
+      "old_blob": "2a17c40c3689fef6b3a0ff38e8c33eed8c74ec91",
+      "original_references": [
+        "help-icon.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-help-icon.png",
+      "sha256": "b621d20429b4f8004b9b0a0a26fcf57c67e0fe572499d41297d79aaa31bd56ee",
+      "caption": "Help icon at the top right of the English settings."
+    },
+    {
+      "id": "S090",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/validation-screen/fuzzy-data.md",
+      "action": "replace",
+      "old_blob": "03adade5d0c10860149dd13b2abaab03ddb53ac9",
+      "original_references": [
+        "fuzzy_data_selection_window.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-fuzzy_data_selection_window.png",
+      "sha256": "e33966e86dd22ff11c1c197980ea1c1ab748b96045b23cee9b9e8a132221debe",
+      "caption": "Master-data lookup dialog with records hidden."
+    },
+    {
+      "id": "S091",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": "d7b5210d472e53682e0a713263ebc8f128759da9",
+      "original_references": [
+        "settings_ocr.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-settings_ocr.png",
+      "sha256": "60465efa886e644d4b0f686375a12efa3c1e0335e1f7c10391cd0980514e2611",
+      "caption": "OCR settings in the English interface."
+    },
+    {
+      "id": "S092",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": "11968f849fcfd3add748999ee9c91357e5d3a33e",
+      "original_references": [
+        "troubleshooting_ocr_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-troubleshooting_ocr_1.png",
+      "sha256": "ff71d238e810bc142c8bd95c257c4dae5f04afdb069b7e2ad70bd74c2499e5bf",
+      "caption": "General OCR settings with the option to use E-Text."
+    },
+    {
+      "id": "S093",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": "2a7d9474cf03d32987e69b40f7a8e9bc4a948102",
+      "original_references": [
+        "troubleshooting_ocr_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-troubleshooting_ocr_2.png",
+      "sha256": "edb30ebe0658dcb2489bb830cd479f6367c3cc9b4b390555b33e9d01a33e0171",
+      "caption": "Open More options in field validation."
+    },
+    {
+      "id": "S094",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": "f89cccdd444f03093ff1995d787e03878ed6ccb7",
+      "original_references": [
+        "troubleshooting_ocr_3.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-troubleshooting_ocr_3.png",
+      "sha256": "edb30ebe0658dcb2489bb830cd479f6367c3cc9b4b390555b33e9d01a33e0171",
+      "caption": "Use E-Text if available in the document menu."
+    },
+    {
+      "id": "S095",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": "05d67bea927fa93604cfa8efd0faac3f4a127d17",
+      "original_references": [
+        "troubleshooting_ocr_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-troubleshooting_ocr_4.png",
+      "sha256": "5425d53ba3bf9a3482a806218dbe8b42717feea1f1e4fd8acb29ddea77a20b75",
+      "caption": "Confirmation dialog before changing E-Text usage."
+    },
+    {
+      "id": "S096",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": "38905b23cc965d0c464c08d32fb1178c50bdb668",
+      "original_references": [
+        "troubleshooting_ocr_5.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-troubleshooting_ocr_5.png",
+      "sha256": "8c39be2fe4b3751ac75a883710d2f0fd9c4101232d475e3307a8798710460362",
+      "caption": "Check extracted fields using a fictional English invoice."
+    },
+    {
+      "id": "S097",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": "0607533fd4dbffa32484f8ecc2877c3f8eda8646",
+      "original_references": [
+        "troubleshooting_ocr_6.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-troubleshooting_ocr_6.png",
+      "sha256": "30cb423bda4b0e061bf5de610b45846e4c8ce065a861e17b64a4ad5fcb7e21be",
+      "caption": "OCR view of recognized text from the fictional English invoice."
+    },
+    {
+      "id": "S098",
+      "doc": "docbits/security/two-factor-authentication.md",
+      "action": "remove",
+      "old_blob": "dd8b851701c0d1f78d1f34822d5ece134d7fe31a",
+      "original_references": [
+        "mfa-backup-codes.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-mfa-backup-codes.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S099",
+      "doc": "docbits/security/two-factor-authentication.md",
+      "action": "remove",
+      "old_blob": "bc74a9e955a382dd95b72dc7254ced621d07ea12",
+      "original_references": [
+        "mfa-email-otp.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-mfa-email-otp.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S100",
+      "doc": "docbits/security/two-factor-authentication.md",
+      "action": "remove",
+      "old_blob": "3099913ebc3a73a099e667e68defdd86b31836c5",
+      "original_references": [
+        "mfa-totp-setup.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-mfa-totp-setup.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S101",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/layout-manager/configuring-field-properties.md",
+      "action": "replace",
+      "old_blob": "c763134c3450a2be84e866c8df54a8aa380f3233",
+      "original_references": [
+        "Bildschirmfoto 2024-05-24 um 11.06.36.png",
+        "Bildschirmfoto 2024-05-24 um 11.06.56.png",
+        "image (247).png",
+        "image (248).png",
+        "image (249).png",
+        "image (251).png",
+        "image (252).png",
+        "image (250).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-image-146.png",
+      "sha256": "e087ef44d90603abb5aac8fd70ec8d6b000f64e53967309149bdcc6b291e8b60",
+      "caption": "Field properties in the English Layout Builder."
+    },
+    {
+      "id": "S102",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/layout-manager/using-the-template-preview.md",
+      "action": "replace",
+      "old_blob": "44fdec0dce79596d852b9dff871539ce1b6ad2d3",
+      "original_references": [
+        "image (253).png",
+        "image (254).png",
+        "Bildschirmfoto 2024-05-24 um 12.31.04.png",
+        "image (256).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_script_example_2.png",
+      "sha256": "a54f5e25be95e4b936186d79c6ac911c494c0b2fd3b9b42090b28f0f90687a24",
+      "caption": "Template preview in the English Layout Builder."
+    },
+    {
+      "id": "S103",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md",
+      "action": "replace",
+      "old_blob": "dc2a86d457409efc0d8cfdda26bac03c36260ce1",
+      "original_references": [
+        "validation-rules-list.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-validation-rules-list.png",
+      "sha256": "96ecac783cb27c286e1d6c923ab65c7bb354d26d4d1d97622b813be67521ca30",
+      "caption": "Custom validation rule management with configuration names hidden."
+    },
+    {
+      "id": "S104",
+      "doc": "docbits/administration-and-setup/settings/document-processing/list-of-values.md",
+      "action": "replace",
+      "old_blob": "41662668b7f25af5b0ca5ff01eaf02be668b6ff5",
+      "original_references": [
+        "list_of_values_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-list_of_values_1.png",
+      "sha256": "b4fa7d5551952af313863719a64285d73c0819f5e98b67327be557c4b75f5baf",
+      "caption": "English list-of-values overview with configured list names hidden."
+    },
+    {
+      "id": "S105",
+      "doc": "docbits/administration-and-setup/settings/document-processing/import/README.md",
+      "action": "replace",
+      "old_blob": "54785540ec3978d183a01675c013111b1d55063b",
+      "original_references": [
+        "ftp_0.png",
+        "ftp_0.png"
+      ],
+      "retired_aliases": 1,
+      "mapping": "blob_match",
+      "new": "s150-ftp_0.png",
+      "sha256": "cdaf2d77207add6828972c874afdaea14ea191f14d8a0574dc2dd1e1f3701fd8",
+      "caption": "English FTP import connection overview."
+    },
+    {
+      "id": "S106",
+      "doc": "docbits/administration-and-setup/settings/document-processing/import/README.md",
+      "action": "replace",
+      "old_blob": "d394712d55d18c826616037d48bb3c55312fb2da",
+      "original_references": [
+        "ftp_5.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-ftp_5.png",
+      "sha256": "d5e03aaeff7bd89d06cdf8c7491e358815fc769c833be9c3d7da8cd92d1f0faf",
+      "caption": "Server Configuration in the English FTP import wizard."
+    },
+    {
+      "id": "S107",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "c14d804853477b6c57719edac48b67dc19661fa5",
+      "original_references": [
+        "quick_search_01_entry.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_01_entry.png",
+      "sha256": "72bfedb9a9c7e72152926163373760e12b6db57d2289b4a34eb7939157c12f00",
+      "caption": "Quick Search in the English dashboard."
+    },
+    {
+      "id": "S108",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "0be7b25a53f732f49b263387ad356272ceb0cb46",
+      "original_references": [
+        "quick_search_03_filename_contains.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_03_filename_contains.png",
+      "sha256": "3208ff390db662a1321b17dfbaf1a7ea19f4033b0c5feef0af751b8b5d6bbd4e",
+      "caption": "Search for part of a filename: filename:invoice."
+    },
+    {
+      "id": "S109",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "c7467e73759b0a6514c8696eb9279e1be4e7f15d",
+      "original_references": [
+        "quick_search_05_status.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_05_status.png",
+      "sha256": "8f53c63937c6d97e5ad0bc4beacee78b28883d3016885afd81df9b59a00796b6",
+      "caption": "Filter by the technical status ready_for_validation."
+    },
+    {
+      "id": "S110",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "bd60b6dae8164c566cfd267ecb04c0de77e77532",
+      "original_references": [
+        "quick_search_06_date.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_06_date.png",
+      "sha256": "2ef1278930532948e8548e930fbd831971be4246c4bfaffac7d634f17e2db4e2",
+      "caption": "Search for documents created after 25 May 2026."
+    },
+    {
+      "id": "S111",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "8a2d09d2dd64ae7b586807a53c67da5c30e410bf",
+      "original_references": [
+        "quick_search_09_supplier.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_09_supplier.png",
+      "sha256": "685dca34215f94b200886fb2ecc0369537e388464ce8cd5eb68ba24a3220a11a",
+      "caption": "Example supplier query: supplier_name=Test."
+    },
+    {
+      "id": "S112",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "e013649a816f0ee2cc51999a1230e3cce91dcc67",
+      "original_references": [
+        "quick_search_10_purchase_order.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_10_purchase_order.png",
+      "sha256": "9c2657493ff80781cc85d5afeedd3e1a21eea502f67fe328d7f0e15fd14e83b8",
+      "caption": "Example purchase-order query: purchase_order=PO."
+    },
+    {
+      "id": "S113",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "824ce23c87e98c55111d32fad62b46e974b20195",
+      "original_references": [
+        "quick_search_07_amount.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_07_amount.png",
+      "sha256": "4bc4a2864b2cfa81ac037710beded1a201ec91640f83cf85fea7fb0bc8c16c2d",
+      "caption": "Search for a total amount greater than 5000."
+    },
+    {
+      "id": "S114",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "d8a6fafc4ea6dd38e33fc8e455b3b1a275df37bd",
+      "original_references": [
+        "quick_search_14_between.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_14_between.png",
+      "sha256": "dea9ffe0aeb9df7b2c0dae8396e79de568512bb5702e77368d082b69d5d4a740",
+      "caption": "Limit the total amount to the range from 1000 to 5000."
+    },
+    {
+      "id": "S115",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "d7fed1e54177f83ab8af6383ef7d8d429c4cc77e",
+      "original_references": [
+        "quick_search_12_empty.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_12_empty.png",
+      "sha256": "9882ba5815a40e10a7fcc0959afc3093159041503a250214c7d605d6aa486ca0",
+      "caption": "Search for documents with an empty supplier name."
+    },
+    {
+      "id": "S116",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "d29c1777d6925dfe7800138478fdf73a309cc755",
+      "original_references": [
+        "quick_search_15_ap_empty.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_15_ap_empty.png",
+      "sha256": "f31efb84cb9a82be8a946e35bd0c4882d843128cd3ae0d4ff889431873c7d033",
+      "caption": "Search for documents without an AP assignment."
+    },
+    {
+      "id": "S117",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "6bd87cc7ab5a3294e0f5d57821d594ef48ee6ba5",
+      "original_references": [
+        "quick_search_13_combined.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_13_combined.png",
+      "sha256": "126002fc052da280f3b1c42611ea5b215461a4b037217991f8271455046e331f",
+      "caption": "Combine status and supplier predicates with AND."
+    },
+    {
+      "id": "S118",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "9a1941e416ec7e4199ff9da073909f550d6f275d",
+      "original_references": [
+        "quick_search_shortcut_01_operator_aliases.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_01_operator_aliases.png",
+      "sha256": "99287d59f776da42b65a9b23db8a33d2887421002a0166719475c977b2b975ab",
+      "caption": "Use the gt comparison operator in a date query."
+    },
+    {
+      "id": "S119",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "c84fe737db4656e07dfbd0557fc3656ba6abae77",
+      "original_references": [
+        "quick_search_shortcut_02_bare_date.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_02_bare_date.png",
+      "sha256": "35cfdd49ce5f0ddaf6b423841405ecc95b1a55e033b551389e13d17026ab1dfb",
+      "caption": "Compare created_on with today()."
+    },
+    {
+      "id": "S120",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "ccdd9edea200748465ee5d069cf08bc03f15b703",
+      "original_references": [
+        "quick_search_shortcut_03_period.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_03_period.png",
+      "sha256": "0d1f3369d86fc9b5484485adb0113f499038e008a5a911b1c8e0fbbbef422573",
+      "caption": "Filter by a creation date on or after 1 June 2026."
+    },
+    {
+      "id": "S121",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "a3f7c5617f012f6f03ab1bf5041fb95ac2a12884",
+      "original_references": [
+        "quick_search_shortcut_04_presence.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_04_presence.png",
+      "sha256": "1cda1fddbabf4fab09e36b083c7095c2e37ca0aeb6a563bffc0627ad386fe22c",
+      "caption": "Search for documents without an assignee."
+    },
+    {
+      "id": "S122",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "d5b841afcfc8b2221d88c71a91dec986a5b6f2c7",
+      "original_references": [
+        "quick_search_shortcut_05_status_open.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_05_status_open.png",
+      "sha256": "847620cce35d1b4fc942312e54140cf629e2d28e7428a20b447421667cafe9a3",
+      "caption": "Example status query in Quick Search."
+    },
+    {
+      "id": "S123",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "740c29715582094357f9157ec5dec411d136e8eb",
+      "original_references": [
+        "quick_search_shortcut_06_not_between.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_06_not_between.png",
+      "sha256": "cd9ba40531373d72ef0b4d8793d78f9f65364123fa4922269962fd775fe9b82a",
+      "caption": "Search for a creation date outside the specified range."
+    },
+    {
+      "id": "S124",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "d725c87c3f8d9cb9ae1acd028d37cde6ae36008f",
+      "original_references": [
+        "quick_search_shortcut_07_in_list.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_07_in_list.png",
+      "sha256": "dec160e131efd3f339c996243c9ca0299ba27b87cc6ac3fb61ae59b01d9d1869",
+      "caption": "Combine two technical document statuses with OR."
+    },
+    {
+      "id": "S125",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "6f5f2a67328712db3e382e8305c88a1a6228d15c",
+      "original_references": [
+        "quick_search_shortcut_08_negation.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_08_negation.png",
+      "sha256": "26bb5538c65f72ea11b0b56d86c39c57afac13411d21508da6d5de306d176eaf",
+      "caption": "Exclude a supplier predicate with NOT."
+    },
+    {
+      "id": "S126",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "8f79234f3f18afe7945a0e7c2d219b206a2a060f",
+      "original_references": [
+        "quick_search_shortcut_09_contains.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_09_contains.png",
+      "sha256": "3208ff390db662a1321b17dfbaf1a7ea19f4033b0c5feef0af751b8b5d6bbd4e",
+      "caption": "Find filenames containing a search term."
+    },
+    {
+      "id": "S127",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "f5b0ef88ffab9a96ad35208b8ad103298f487194",
+      "original_references": [
+        "quick_search_shortcut_12_invoice_prefix.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_12_invoice_prefix.png",
+      "sha256": "d1639e700100e9b66d0f86aad16ed8c4284b2f1c483ee690f03ba8d2be5c9650",
+      "caption": "Example query using invoice_number."
+    },
+    {
+      "id": "S128",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "6d03e0929fef21d1575005bebbb87a6d99eb28cd",
+      "original_references": [
+        "quick_search_shortcut_13_assignee_prefix.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_13_assignee_prefix.png",
+      "sha256": "ad8ac4af8744c9f9d8de195dd102a6b8d0ebbf7b49facfd98d653052fff89a81",
+      "caption": "Filter by an empty assignee: assigned_to=\"\"."
+    },
+    {
+      "id": "S129",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "9de610a7ffa28eb7ae80b92ae7018666f97361ac",
+      "original_references": [
+        "quick_search_shortcut_10_currency_suffix.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_10_currency_suffix.png",
+      "sha256": "bacdbc9feab7164cf4a8944f77cd0e04d4eb92269cdb36535d824adc72d08904",
+      "caption": "Search for documents in euros: currency=EUR."
+    },
+    {
+      "id": "S130",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "2d7bf0cfff87a9c8c95af8cfb440be6e3c8b68e1",
+      "original_references": [
+        "quick_search_shortcut_11_overdue.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_11_overdue.png",
+      "sha256": "d45ef3e3f8e390f1afd1c8cdfe520453c6fb2a9a27f497cfe56dbc4dc6f716db",
+      "caption": "Search for a due date before today()."
+    },
+    {
+      "id": "S131",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "cf69177d53170f760559c0637ef3bf1b28f34ce5",
+      "original_references": [
+        "quick_search_shortcut_14_amount_prefix.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_14_amount_prefix.png",
+      "sha256": "f1919894f2df149300b22d47cf5c0c97e144373746bf4258e0e9c041313e65cb",
+      "caption": "Filter by a total amount of at least 1000."
+    },
+    {
+      "id": "S132",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "b770cf68b34f0c328a1d231c98f4220232438f4f",
+      "original_references": [
+        "quick_search_17_vector.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_17_vector.png",
+      "sha256": "eec30c2450b7463786c2b6b5c09b76e160d0a3409d7eb4001be7495320b792cc",
+      "caption": "Automatically include document content in Quick Search."
+    },
+    {
+      "id": "S133",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "25b1c2cf95957000a71091f9860ebc099e97ef08",
+      "original_references": [
+        "quick_search_18_ocr.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_18_ocr.png",
+      "sha256": "467ae080228b414c3fa1181cf5055f2177f0afc2194e8f057fe9e4b6e89a5727",
+      "caption": "Always include document content in Quick Search."
+    },
+    {
+      "id": "S134",
+      "doc": "docbits/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "5b8d8f12be7d662b4b73e0d88af642f39df17d6c",
+      "original_references": [
+        "quick_search_19_ai.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_19_ai.png",
+      "sha256": "94213427558349d3f46ee997ff870f704d81dbc28fe7669bc22e23142b602186",
+      "caption": "Limit Quick Search to visible columns."
+    },
+    {
+      "id": "S135",
+      "doc": "docbits/administration-and-setup/settings/global-settings/email-notification/configuring-notifications.md",
+      "action": "replace",
+      "old_blob": "7e99ebf8ac4715a6e9fa59fcf923a162c53fa1be",
+      "original_references": [
+        "Bildschirmfoto 2024-05-15 um 08.56.36.png",
+        "Bildschirmfoto 2024-05-08 um 10.15.45.png",
+        "Bildschirmfoto 2024-05-15 um 01.28.41.png",
+        "image (29).png",
+        "image (135).png",
+        "image (132).png",
+        "image (30).png",
+        "image (134).png",
+        "image (133).png",
+        "image (136).png",
+        "image (31).png",
+        "image (32).png",
+        "image (33).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-image-41-1.png",
+      "sha256": "6e6e0fe5edb5ce5f8ade9c21f9b96a6d723af986ef5c44fd641546c1817870b1",
+      "caption": "English dialog for an email notification."
+    },
+    {
+      "id": "S136",
+      "doc": "docbits/administration-and-setup/settings/document-processing/module/inbound-emails.md",
+      "action": "replace",
+      "old_blob": "655f454431c6517836367f019686226425b1adc1",
+      "original_references": [
+        "inbound_emails_protocol_select.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-inbound_emails_protocol_select.png",
+      "sha256": "ee122db64235a7bd1f8ebe5c4236364874c3dbe85e15e68b2a367235ce68c713",
+      "caption": "Protocol selection in the English inbound-email wizard."
+    },
+    {
+      "id": "S137",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/regex/editing-and-saving-regex-patterns.md",
+      "action": "remove",
+      "old_blob": "9ab291482253d550b1aad3d3ed1cd6003f8c6af4",
+      "original_references": [
+        "Bildschirmfoto 2024-05-22 um 12.46.56.png",
+        "Bildschirmfoto 2024-05-22 um 14.18.25.png",
+        "image (223).png",
+        "image (224).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_regex_edit_settings.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S138",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/document-sub-types.md",
+      "action": "replace",
+      "old_blob": "428653ab07ebcd69510b80b65681b3a925150eea",
+      "original_references": [
+        "image (193).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "s150-docbits_document_sub_types_list.png",
+      "sha256": "ccaf59c2937735df0bb6c9b89f0bfae2c5256f7970548d973f7c5e5673666287",
+      "caption": "Document subtypes in English administration."
+    },
+    {
+      "id": "S139",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/document-sub-types.md",
+      "action": "replace",
+      "old_blob": "5ccd52f91ebabf597e994f7909ebc684d70aeb15",
+      "original_references": [
+        "Bildschirmfoto 2024-05-21 um 10.16.14.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "s150-docbits_document_sub_types_overview.png",
+      "sha256": "fffa6f481751393c2325859c63e8c72eac2bf5836baf2d0a0ba1f55061828081",
+      "caption": "English document-subtype overview."
+    },
+    {
+      "id": "S140",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/regex/README.md",
+      "action": "remove",
+      "old_blob": "6271ec3e7c5c9d97409fb7fdfd45798032459042",
+      "original_references": [
+        "Bildschirmfoto 2024-05-08 um 09.38.59.png",
+        "Bildschirmfoto 2024-05-08 um 09.38.59.png"
+      ],
+      "retired_aliases": 1,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_regex_management.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S141",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/model-training/import-data-model-training.md",
+      "action": "replace",
+      "old_blob": "d5ee548ef6723d2dccbd8b63f600160027c6d0f3",
+      "original_references": [
+        "dbdc163-import-dialog-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "s150-image-85-1.png",
+      "sha256": "e65e52940e75f42354ef809a0111f41a47facf6b839fdfd1019724130aaa9092",
+      "caption": "Model-training import dialog with amount and date format."
+    },
+    {
+      "id": "S142",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/script/script-activation-and-management.md",
+      "action": "replace",
+      "old_blob": "ebfeac063d9db34469f8feb213a7decf29b3c1e9",
+      "original_references": [
+        "dbdc157-scripts-list-inactive-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "s150-docbits_edit_script_icon.png",
+      "sha256": "e6b2c87fdc21120e1fa889561283d99ab5e5d7505becadb341b2d20b53ecb939",
+      "caption": "English script management with edit controls and script names hidden."
+    },
+    {
+      "id": "S143",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md",
+      "action": "replace",
+      "old_blob": "130f6bf115003badc1027f11ad53a6b49de484b7",
+      "original_references": [
+        "dbdc-143-fields-overview-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "s150-docbits_choose_column_type.png",
+      "sha256": "602ddbb1ebe9122f2f46fd0233d2bf0ff6c629780d01c7e27fcd15dd304250de",
+      "caption": "Field settings with separate Force validation, OCR and Match Score columns."
+    },
+    {
+      "id": "S144",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md",
+      "action": "replace",
+      "old_blob": "959fb003909250c2f9d6c5e181ebc1693c06eb05",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-image-120.png",
+      "sha256": "ae891abe5fe7f00ef6680db4d6cab5c35cac24f35b9eba87d0bb6ee85882b9d4",
+      "caption": "Field-level validation and recognition settings."
+    },
+    {
+      "id": "S145",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md",
+      "action": "replace",
+      "old_blob": "8fa904df97476851e6d85aaab9a1058897aaf9a0",
+      "original_references": [
+        "dbdc-143-invoice-id-settings-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "s150-docbits_decide_column_necessity.png",
+      "sha256": "f87a3d3ceb47fb0a2d0a183acf6ec05ae810e29c7ad5611807bdea14d327768e",
+      "caption": "Filtered invoice number with force-validation and Match Score settings."
+    },
+    {
+      "id": "S146",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/fields/new-fields-with-charges.md",
+      "action": "replace",
+      "old_blob": "0bf1f11e610cc774adb8fe9362a65ce061dae759",
+      "original_references": [
+        "Bildschirmfoto 2024-06-07 um 17.00.52.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "s150-docbits_add_field_with_charges_1.png",
+      "sha256": "c05b49dc6b3efa9231d3caa753be307b3b75fcb8224832ca1238d4b9333d6145",
+      "caption": "Document field details dialog before creating a field."
+    },
+    {
+      "id": "S147",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/fields/new-fields-with-charges.md",
+      "action": "replace",
+      "old_blob": "29053d66bc317a1e9e46f4175bea0b086297df86",
+      "original_references": [
+        "Bildschirmfoto 2024-06-07 um 17.01.11.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "s150-docbits_add_field_with_charges_2.png",
+      "sha256": "f123c2a0b4f32df4500422efaddaa6d269ba38df8194c5790374d11af72c4096",
+      "caption": "Unsaved field draft with Enable charges element selected."
+    },
+    {
+      "id": "S148",
+      "doc": "docbits/administration-and-setup/settings/document-processing/classification-and-extraction/auto-extract-tax-code.md",
+      "action": "replace",
+      "old_blob": "d19f8f744b2c42973273f56183e6f3294bc73b23",
+      "original_references": [
+        "auto_extract_tax_code_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-auto_extract_tax_code_1.png",
+      "sha256": "f3a5aa3b851eb38f9b253b024dfcc6d375d3849860b0388d97f4d41762ea748d",
+      "caption": "English automatic tax-code extraction settings."
+    },
+    {
+      "id": "S149",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/fields/README.md",
+      "action": "replace",
+      "old_blob": "2f42a332693e493ab8595710ba9ad8158d4762e3",
+      "original_references": [
+        "Bildschirmfoto 2024-05-08 um 09.02.31.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "s150-docbits_fields_overview.png",
+      "sha256": "65b479cabfbafd6bde165bfb8e36cc72303c0407211df57218b30d63df9fcd83",
+      "caption": "English invoice document-type field overview."
+    },
+    {
+      "id": "S150",
+      "doc": "docbits/administration-and-setup/settings/global-settings/document-types/model-training/README.md",
+      "action": "replace",
+      "old_blob": "89d0375b02ba296308110fdbe9b3c19aa186db8f",
+      "original_references": [
+        "Bildschirmfoto 2024-05-08 um 09.07.01.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "s150-docbits_model_training_overview.png",
+      "sha256": "1fbc565af0d4ee4aadbed26b2970864547c5833332633ac022b2053f7025a682",
+      "caption": "English model-training overview."
+    }
+  ]
+}

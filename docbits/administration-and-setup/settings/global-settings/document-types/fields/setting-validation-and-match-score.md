@@ -1,5 +1,6 @@
 # Setting Validation and Match Score
 
+
 In **Fields**, you can set validation and recognition thresholds for a document type. This page uses **Invoice** in a documentation test organization. It explains the current **Force Validation** checkbox and **Match Score** controls.
 
 ## Open the field settings
@@ -8,7 +9,7 @@ In **Fields**, you can set validation and recognition thresholds for a document 
 2. Use **Search by Name** to find a field, for example `invoice_id` (shown as **Invoice number**).
 3. Check the field row before changing a setting. **Required**, **Read Only**, **Hidden** and **Force Validation** are separate checkboxes.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-143-fields-overview-en.png" alt="English Sandbox Fields page showing Recognition Settings, OCR and Match Score controls, field columns and Save Settings"><figcaption>Recognition controls appear above the field list.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_choose_column_type.png" alt="Field settings with separate Force validation, OCR and Match Score columns."><figcaption><p>Field settings with separate Force validation, OCR and Match Score columns.</p></figcaption></figure>
 
 ## Force Validation
 
@@ -20,6 +21,13 @@ The old instructions suggested entering numeric limits or regular expressions he
 
 **Match Score** is a numeric threshold, not a fixed reference value. The **MATCH SCORE** slider in **Recognition Settings** applies its value to the document type's field rows; use a field row's **MATCH SCORE** input for an individual value. In the test organization, the slider and `invoice_id` both show **50**. Review the affected fields, then click **Save Settings**.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-143-invoice-id-settings-en.png" alt="English Sandbox invoice_id field row showing Force Validation checked and Match Score 50"><figcaption>Search for a field to review its Force Validation checkbox and Match Score value.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_decide_column_necessity.png" alt="Filtered invoice number with force-validation and Match Score settings."><figcaption><p>Filtered invoice number with force-validation and Match Score settings.</p></figcaption></figure>
 
 **OCR** is a separate recognition threshold beside Match Score. **Restore Defaults** resets settings; use it only when you intend to discard your custom thresholds. For other field options, see the [Fields overview](README.md).
+
+
+## Field-level overview
+
+<figure><img src="../../../../../.gitbook/assets/s150-image-120.png" alt="Field-level validation and recognition settings."><figcaption><p>Field-level validation and recognition settings.</p></figcaption></figure>
+
+Force Validation, OCR and Match Score are separate settings. Match Score is a numeric threshold; it is not a fixed reference text or a Match Value selector.

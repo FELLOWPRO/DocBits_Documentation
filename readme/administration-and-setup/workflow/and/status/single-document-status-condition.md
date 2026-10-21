@@ -1,6 +1,6 @@
-# Single Document Status Condition
+# Condizione di stato del singolo documento
 
-<figure><img src="../../../../.gitbook/assets/userlmn_928e514bc0e2aa775894e4ec5f992bd9 (1).png" alt="" width="528"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-c0315ad39a89-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 **Scopo**
 
@@ -8,14 +8,14 @@ Questa scheda di workflow è concepita per gestire le operazioni sui documenti i
 
 **Componenti della scheda**
 
-1. **Operator**
+1. **Operatore**
    * **Descrizione**: Specifica il metodo per valutare lo stato del documento rispetto alla condizione selezionata.
    * **Opzioni**:
      * **is**: Attiva l'operazione se lo stato corrente del documento corrisponde allo stato selezionato.
-     * **is not**: Attiva l'operazione se lo stato corrente del documento non corrisponde allo stato selezionato.
-2. **Status**
+     * **non lo è**: Attiva l'operazione se lo stato corrente del documento non corrisponde allo stato selezionato.
+2. **Stato**
    * **Descrizione**: Consente la selezione di un singolo stato del documento per impostare la condizione.
-   * **Esempi di stati**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval".
+   * **Esempi di stati**: "Errore", "Errore di esportazione", "Pronto in validazione", "Pronto in revisione", "Approvazione in attesa", "Seconda approvazione in attesa".
    * **Dettaglio**: Gli utenti scelgono uno stato da un menu a discesa o da un set di pulsanti di opzione. Questo stato funge quindi da criterio per l'operazione della scheda.
 
 **Funzionalità**
@@ -37,3 +37,13 @@ Questa scheda di workflow è concepita per gestire le operazioni sui documenti i
 #### Conclusione
 
 La scheda di workflow "Single Document Status Condition" semplifica la gestione dei documenti concentrandosi su singole condizioni di stato. Questa specifica è utile nei casi in cui è necessario un controllo preciso sui flussi documentali, specialmente in ambienti con criteri di elaborazione rigorosi. Documentare chiaramente questa versione della scheda garantirà che gli utenti ne comprendano appieno l'applicazione e possano integrarla efficacemente nelle operazioni quotidiane, migliorando sia la conformità che l'efficienza nell'elaborazione dei documenti.
+
+<!-- workflow-card-complete-example-20261021 condition_doc_status_is_isnot -->
+
+### Esempio di stato singolo
+
+**Configurazione:** Scegli l'operatore `is` e lo stato `Pending Approval`. Aggiungi una successiva azione di revisione appropriata per quello stato.
+
+**Risultato atteso e controesempio:** La condizione è vera per un documento attualmente `Pending Approval`; è falso per un documento con stato `Ready in Validation`. Utilizza lo stato effettivo selezionato dalla tua versione. La modifica di uno stato non comporta di per sé l'esportazione del documento.
+
+Questa è una configurazione di test illustrativa e il risultato atteso; non è stato eseguito. Utilizza dati e destinatari configurati nella tua organizzazione di test.

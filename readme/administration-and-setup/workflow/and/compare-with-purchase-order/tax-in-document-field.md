@@ -1,6 +1,6 @@
-# Tax in document field
+# Imposta nel campo del documento
 
-<figure><img src="../../../../.gitbook/assets/image (268).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-c8c9a92d10ce-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## **Scopo:**
 
@@ -8,28 +8,28 @@ Questa scheda di workflow è progettata per valutare se il valore dell'imposta i
 
 ## **Componenti della scheda:**
 
-1. **Field Name**
+1. **Nome campo**
    * **Descrizione**: Specifica il campo del documento che contiene il valore dell'imposta da confrontare con il valore dell'imposta nell'ordine d'acquisto.
    * **Dettaglio**: Questo campo deve corrispondere all'identificatore esatto del valore dell'imposta nel documento.
-2. **Operator**
+2. **Operatore**
    * **Descrizione**: Definisce la condizione da applicare al confronto tra il valore dell'imposta del documento e il valore dell'imposta dell'ordine d'acquisto.
    * **Opzioni**:
-     * **Equals (=)**: Verifica se l'imposta nel campo del documento corrisponde all'imposta nell'ordine d'acquisto.
-     * **Not Equals (≠)**: Garantisce che l'imposta nel campo del documento non corrisponda all'imposta nell'ordine d'acquisto.
-     * **Greater Than (>)**: Verifica se l'imposta nel campo del documento è maggiore dell'imposta nell'ordine d'acquisto.
-     * **Greater or Equals (≥)**: Verifica se l'imposta nel campo del documento è maggiore o uguale all'imposta nell'ordine d'acquisto.
-     * **Lesser Than (<)**: Verifica se l'imposta nel campo del documento è minore dell'imposta nell'ordine d'acquisto.
-     * **Lesser or Equals (≤)**: Verifica se l'imposta nel campo del documento è minore o uguale all'imposta nell'ordine d'acquisto.
-3. **Master Data Table**
+     * **Uguale (=)**: Verifica se l'imposta nel campo del documento corrisponde all'imposta nell'ordine d'acquisto.
+     * **Diverso (≠)**: Garantisce che l'imposta nel campo del documento non corrisponda all'imposta nell'ordine d'acquisto.
+     * **Maggiore di (>)**: Verifica se l'imposta nel campo del documento è maggiore dell'imposta nell'ordine d'acquisto.
+     * **Maggiore o uguale (≥)**: Verifica se l'imposta nel campo del documento è maggiore o uguale all'imposta nell'ordine d'acquisto.
+     * **Minore di (<)**: Verifica se l'imposta nel campo del documento è minore dell'imposta nell'ordine d'acquisto.
+     * **Minore o uguale (≤)**: Verifica se l'imposta nel campo del documento è minore o uguale all'imposta nell'ordine d'acquisto.
+3. **Tabella dati anagrafici**
    * **Descrizione**: La tabella che contiene i dettagli dell'ordine d'acquisto, inclusi il charge ID e i valori delle imposte.
    * **Dettaglio**: Questa tabella deve avere un riferimento al charge ID associato al valore dell'imposta dell'ordine d'acquisto.
-4. **Tolerance Amount**
+4. **Importo di tolleranza**
    * **Descrizione**: L'importo soglia entro il quale i valori delle imposte possono variare. Viene utilizzato per tenere conto di piccole discrepanze nei calcoli delle imposte.
    * **Dettaglio**: La quantità di tolleranza deve essere un valore numerico, che definisce la differenza massima consentita tra i valori delle imposte.
-5. **Tolerance Type**
+5. **Tipo di tolleranza**
    * **Descrizione**: Specifica il tipo di tolleranza applicata, assoluta o basata su percentuale.
    * **Opzioni**:
-     * **Value**: La tolleranza è un valore numerico fisso.
+     * **Valore**: La tolleranza è un valore numerico fisso.
      * **Percentage**: La tolleranza è calcolata come percentuale del valore dell'imposta.
 
 ## **Funzionalità:**

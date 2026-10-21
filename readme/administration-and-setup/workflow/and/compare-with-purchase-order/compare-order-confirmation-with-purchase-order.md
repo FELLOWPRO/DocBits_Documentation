@@ -1,52 +1,54 @@
-# Compare Order Confirmation with Purchase order
+# Confronta la conferma dell'ordine con l'ordine d'acquisto
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4bbb1060027b-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (267).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-d49578e0648e-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## Scopo:
 
-Questa scheda DocBits è progettata per confrontare un campo specifico dei dati dell'ordine — come quantità, sconto o prezzo unitario — tra una conferma d'ordine e un ordine d'acquisto. Consentendo un confronto mirato di un campo alla volta, garantisce precisione nella validazione dei punti dati chiave, mantenendo l'accuratezza dell'ordine. La **Versione 4** espande questa funzionalità consentendo confronti tra entità diverse come l'ordine d'acquisto, le quantità ricevute e il documento stesso, aggiungendo maggiore flessibilità e controllo al workflow.
+Questa scheda DocBits è progettata per confrontare un campo dati specifico dell'ordine, come quantità, sconto o prezzo unitario, tra una conferma d'ordine e un ordine di acquisto. Consentendo un confronto mirato di un campo alla volta, garantisce precisione nella convalida dei punti dati chiave, mantenendo l'accuratezza dell'ordine. **Versione 4** espande questa funzionalità consentendo confronti tra diverse entità come l'ordine di acquisto, le quantità ricevute e il documento stesso, aggiungendo maggiore flessibilità e controllo al flusso di lavoro.
 
-## Componenti della scheda:
+## Componenti della Carta:
 
-1. **Any/All**&#x20;
-   * **Descrizione:** Determina se la condizione si applica ad alcune o a tutte le righe della conferma d'ordine.\
+1. **Qualsiasi/Tutti**
+   * **Descrizione:** Determina se la condizione si applica ad alcune o tutte le righe della conferma d'ordine.\
      **Opzioni:**
-     * **Any**: Il confronto si attiva se il valore del campo selezionato in una riga qualsiasi della conferma d'ordine corrisponde al valore corrispondente nell'ordine d'acquisto.
-     * **All**: Il confronto si attiva solo se il valore del campo selezionato in tutte le righe della conferma d'ordine corrisponde al valore corrispondente nell'ordine d'acquisto.
-2. **Order Data Field**
-   * **Descrizione**: Specifica il campo dati da confrontare tra la conferma d'ordine e l'ordine d'acquisto.
-   * **Dettaglio**: Gli utenti possono selezionare uno dei seguenti campi per il confronto:
-     * **Quantity**: Confronta la quantità ordinata con la quantità confermata.
-     * **Discount**: Verifica che lo sconto nella conferma corrisponda all'ordine d'acquisto.
-     * **Unit Price**: Garantisce che il prezzo unitario nella conferma sia allineato all'ordine d'acquisto.
-3. **Operator**
+     * **Any**: Il confronto verrà attivato se il valore del campo selezionato in qualsiasi riga della conferma d'ordine corrisponde al valore corrispondente nell'ordine d'acquisto.
+     * **All**: Il confronto verrà attivato solo se il valore del campo selezionato in tutte le righe della conferma d'ordine corrisponde al valore corrispondente nell'ordine d'acquisto.
+2. **Campo Dati Ordine**
+   * **Descrizione**: Specifica il campo dati da confrontare tra la conferma d'ordine e l'ordine di acquisto.
+   * **Dettaglio**: gli utenti possono selezionare uno dei seguenti campi per il confronto:
+     * **Quantità**: Confronta la quantità ordinata con la quantità confermata.
+     * **Sconto**: Verifica che lo sconto nella conferma corrisponda all'ordine di acquisto.
+     * **Prezzo unitario**: garantisce che il prezzo unitario nella conferma sia allineato con l'ordine di acquisto.
+3. **Operatore**
    * **Descrizione**: Definisce la condizione applicata al confronto del campo dati selezionato.
    * **Opzioni**:
-     * **Equals (=)**: Conferma che il valore corrisponda all'ordine d'acquisto.
-     * **Not Equals (≠)**: Garantisce che il valore sia diverso dall'ordine d'acquisto.
-     * **Greater Than (>)**: Verifica che il valore superi quello dell'ordine d'acquisto.
-     * **Greater or Equals (≥)**: Conferma che il valore sia uguale o superiore a quello dell'ordine d'acquisto.
-     * **Less Than (<)**: Verifica che il valore sia inferiore a quello dell'ordine d'acquisto.
-     * **Less or Equals (≤)**: Conferma che il valore sia inferiore o uguale a quello dell'ordine d'acquisto.
+     * **Uguale (=)**: conferma che il valore corrisponde all'ordine d'acquisto.
+     * **Non uguale (≠)**: garantisce che il valore sia diverso dall'ordine di acquisto.
+     * **Maggiore di (>)**: verifica che il valore superi il valore dell'ordine di acquisto.
+     * **Maggiore o Uguale (≥)**: conferma che il valore è uguale o superiore al valore dell'ordine di acquisto.
+     * **Inferiore a (<)**: verifica che il valore sia inferiore al valore dell'ordine di acquisto.
+     * **Inferiore o uguale a (≤)**: conferma che il valore è inferiore o uguale al valore dell'ordine di acquisto.
 
-## **Componenti aggiuntivi nella Versione 4**:
+## **Componenti aggiuntivi nella versione 4**:
 
-* **Comparison Type**: Seleziona le entità da confrontare. Le opzioni includono:
-  * **Purchase Order to Document**: Confronta i dati dell'ordine d'acquisto con il documento correlato.
-  * **Received to Document**: Confronta i dati ricevuti (es. quantità ricevute) con il documento.
-  * **Purchase Order to Received**: Confronta i dati dell'ordine d'acquisto con le quantità ricevute.
+* **Tipo confronto**: Seleziona le entità da confrontare. Le opzioni includono:
+  * **Ordine d'acquisto su documento**: confronta i dati dell'ordine d'acquisto con il documento correlato.
+  * **Ricevuto nel documento**: confronta i dati ricevuti (ad esempio, le quantità ricevute) con il documento.
+  * **Ordine d'acquisto da ricevere**: confronta i dati dell'ordine d'acquisto con le quantità ricevute.
 
 ## Funzionalità:
 
-* **Confronto dei campi**: Il sistema confronta il campo dati dell'ordine selezionato (Unit Price, Discount o Quantity) della conferma d'ordine con il valore corrispondente nell'ordine d'acquisto.
-* **Esecuzione dell'azione**: In base al risultato del confronto e alla condizione dell'operatore, la scheda può attivare azioni di follow-up, come notifiche o avvisi.
+* **Confronto campi**: il sistema confronta il campo dati dell'ordine selezionato (Prezzo unitario, Sconto o Quantità) dalla conferma dell'ordine con il valore corrispondente nell'ordine d'acquisto.
+* **Esecuzione dell'azione**: in base al risultato del confronto e alle condizioni dell'operatore, la carta può attivare azioni di follow-up, come notifiche o avvisi.
 
 ## Scenario di esempio:
 
-* Una conferma d'ordine specifica un **prezzo unitario** di $50, mentre l'ordine d'acquisto indica $45. Utilizzando l'operatore "Greater Than", la scheda segnala la discrepanza, consentendo al team di approvvigionamento di gestirla prima dell'elaborazione.
+* Una conferma d'ordine specifica un **prezzo unitario** di $ 50, mentre l'ordine di acquisto indica $ 45. Utilizzando l'operatore "Maggiore di", la carta segnala la discrepanza, consentendo al team di procurement di risolverla prima dell'elaborazione.
 
 ## Conclusione:
 
-Questa scheda semplifica la validazione dei singoli campi dati dell'ordine, garantendo la conformità ai termini dell'ordine d'acquisto. Isolando un campo alla volta per il confronto, supporta revisioni mirate e la prevenzione degli errori nell'elaborazione degli ordini.
+Questa scheda semplifica la convalida dei singoli campi dati dell'ordine, garantendo il rispetto dei termini dell'ordine di acquisto. Isolando un campo alla volta per il confronto, supporta revisioni mirate e prevenzione degli errori nell'elaborazione degli ordini.
+
+Vedi [direzione del confronto, base di tolleranza e versioni delle carte salvate](../../cards-overview/po-comparison-versions-guide.md) prima di modificare i lati del confronto.

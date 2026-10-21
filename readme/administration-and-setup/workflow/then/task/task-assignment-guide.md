@@ -1,41 +1,60 @@
-# Task Assignment & Creation Cards - Complete Guide
+# Schede di assegnazione e creazione di compiti
 
-Queste schede vanno nel gruppo **Then** del Generatore di workflow — le azioni eseguite una volta soddisfatte le condizioni When/And:
+## Schede di assegnazione e creazione di attività - Guida completa
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Le schede vengono aggiunte al gruppo <strong>Then</strong> tramite <strong>Add Card</strong>.</p></figcaption></figure>
+**Copertine:** 12 carte relative ai compiti
 
-**Copre:** 12 card relative alle attività
+***
 
----
+Le schede attività in questa pagina vanno nel gruppo **Allora** del Workflow Builder: le azioni che vengono eseguite una volta che le condizioni Quando/E corrispondono:
 
-## Panoramica
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-it.png" alt="Esempio non salvato con schede Quando, E e Allora. Configurare tutti i campi prima dell’esecuzione. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale."><figcaption><p>Esempio non salvato con schede Quando, E e Allora. Configurare tutti i campi prima dell’esecuzione. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
-Le task card creano assegnazioni di lavoro per i membri del team. Quando una fattura necessita di approvazione, puoi creare automaticamente un'attività e assegnarla alla persona giusta.
+***
 
----
+### 📌 Informazioni sulla versione
 
-# Creazione di Attività di Base
+**Carta più evoluta:** tasks\_create (4 versioni, v4 più recente) **Altre carte multiversione:** ACTION\_TASK\_FOR\_GROUP (v4), ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP (v3), ACTION\_ASSIGN\_TASK\_TO\_USER\_FROM\_FIELD\_WITH\_FALLBACK (v3), ACTION\_DECISION\_TREE\_CREATE\_TASKS (v3)
 
-## Card: tasks_create / Create Task and Assign to User
+**Modifiche chiave:**
 
-### Scopo
+* **v3 → v4 Evoluzione:** Rimosso l'approccio dell'albero decisionale, aggiunti tipi di elementi di lavoro generici (Attività, Ticket, Problema)
+* **v2 → Migrazione v3:** Aggiunto supporto per l'albero decisionale (ora per lo più deprecato)
+
+📖 [Cronologia completa delle versioni](../../release.md) | [Versioni e comportamento delle carte](../../cards-overview/card-versions-guide.md)
+
+***
+
+### Panoramica
+
+Le schede attività creano incarichi di lavoro per i membri del team. Quando una fattura necessita di approvazione, puoi creare automaticamente un'attività e assegnarla alla persona giusta.
+
+***
+
+## Creazione di attività di base
+
+### Scheda: tasks\_create / Crea attività e assegna all'utente
+
+#### Scopo
+
 Crea un'attività e la assegna a una persona specifica
 
-### Quando Usarla
-- La fattura necessita della revisione di una persona specifica
-- È richiesta l'approvazione da parte di una persona indicata
-- Passaggio di consegne a un membro specifico del team
+#### Quando usarlo
 
-### Parametri
+* La fattura necessita della revisione di una persona specifica
+* È richiesta l'approvazione della persona nominata
+* Trasferimento a un membro specifico del team
 
-**Title**
-Il nome/oggetto dell'attività
+#### Parametri
+
+**Titolo** Il nome/oggetto dell'attività
+
 ```
 Example: "Review Invoice #INV-2025-001 for approval"
 ```
 
-**Description**
-Dettagli sull'attività
+**Descrizione** Dettagli sull'attività
+
 ```
 Example: "Invoice from Supplier ABC needs review.
 Amount: €5000
@@ -43,25 +62,27 @@ Deadline: 2025-10-30
 Please verify pricing and quality."
 ```
 
-**Priority**
-- 🔴 **High**: urgente, da fare immediatamente
-- 🟡 **Medium**: priorità normale
-- 🟢 **Low**: può essere fatto in seguito
+**Priorità**
 
-**Assigned User**
-Chi riceve l'attività
+* 🔴 **High**: Urgente, fallo subito
+* 🟡 **Medio**: priorità normale
+* 🟢 **Low**: può essere fatto più tardi
+
+**Utente assegnato** Chi ottiene l'attività
+
 ```
 Example: John Smith (Finance Manager)
 ```
 
-**Email Notification**
-Inviare un avviso email alla persona assegnata?
+**Notifica e-mail** Inviare un avviso e-mail alla persona assegnata?
+
 ```
 ✅ Yes: Person gets email
 ❌ No: Task only in system
 ```
 
-### Esempio
+#### Esempio
+
 ```
 Condition: "Invoice amount > €10,000"
     ↓
@@ -75,19 +96,22 @@ Create Task:
 Sarah receives task and email notification
 ```
 
----
+***
 
-## Card: ACTION_TASK_FOR_GROUP / Create Task for Group
+### Scheda: ACTION\_TASK\_FOR\_GROUP / Crea attività per gruppo
 
-### Scopo
+#### Scopo
+
 Crea un'attività e la assegna a un gruppo (tutti i membri possono vederla)
 
-### Quando Usarla
-- Più persone possono svolgere l'attività
-- Attività per un team, non per un singolo
-- La prima persona disponibile deve occuparsene
+#### Quando usarlo
 
-### Differenza dall'Attività Individuale
+* Più persone possono svolgere l'attività
+* Compito di squadra, non individuale
+* La prima persona disponibile dovrebbe occuparsene
+
+#### Differenza dal compito individuale
+
 ```
 Individual Task:
 - Only John sees it
@@ -100,7 +124,8 @@ Group Task:
 - Distributed workload
 ```
 
-### Esempio di Workflow
+#### Esempio di flusso di lavoro
+
 ```
 Document arrives
     ↓
@@ -117,14 +142,16 @@ All 10 procurement team members see task
 First person available takes it
 ```
 
----
+***
 
-## Card: ACTION_DECISION_TREE_CREATE_TASKS
+### Carta: ACTION\_DECISION\_TREE\_CREATE\_TASKS
 
-### Scopo
-Crea attività in base alla logica della decision table
+#### Scopo
 
-### Come Funziona
+Crea attività in base alla logica della tabella decisionale
+
+#### Come funziona
+
 ```
 Decision Table Returns:
   If invoice from Supplier A → Assign to Procurement
@@ -135,12 +162,14 @@ Task is automatically created and assigned
 based on which condition is true
 ```
 
-### Quando Usarla
-- Fornitori diversi necessitano di approvazioni diverse
-- Instradamento complesso basato su più fattori
-- Team diverso in base al tipo di documento
+#### Quando usarlo
 
-### Esempio
+* Fornitori diversi necessitano di approvazioni diverse
+* Routing complesso basato su molteplici fattori
+* Team diversi in base al tipo di documento
+
+#### Esempio
+
 ```
 Document: Invoice from ABC Corp (Supplier A)
     ↓
@@ -151,20 +180,22 @@ Result: Supplier A → Procurement Team
 Create and assign task to Procurement Team
 ```
 
----
+***
 
-## Card: ACTION_DECISION_TREE_TASKS_SEQUENTIAL
+### Carta: ACTION\_DECISION\_TREE\_TASKS\_SEQUENTIAL
 
-### Scopo
-Crea attività in sequenza in base alla decision table
-Le attività vengono assegnate una alla volta con un ordine di priorità
+#### Scopo
 
-### Quando Usarla
-- Sono necessarie più approvazioni in sequenza
-- Catena di approvazione del workflow
-- Ogni persona esamina e poi passa alla successiva
+Crea attività in sequenza in base alla tabella decisionale. Le attività vengono assegnate una alla volta in ordine di priorità
 
-### Come Funziona
+#### Quando usarlo
+
+* Sono necessarie più approvazioni in sequenza
+* Catena di approvazione del flusso di lavoro
+* Ogni persona esamina e poi passa alla successiva
+
+#### Come funziona
+
 ```
 Step 1: Create Task for Procurement Manager
         (Priority 1)
@@ -179,7 +210,8 @@ Step 4: Finance Manager approves
 Step 5: Export
 ```
 
-### Sistema di Priorità
+#### Sistema di priorità
+
 ```
 Priority 1 → Assign to: Person A
 Priority 2 → Assign to: Person B
@@ -188,7 +220,8 @@ Priority 3 → Assign to: Person C
 They must complete in order (1→2→3)
 ```
 
-### Esempio di Configurazione
+#### Configurazione di esempio
+
 ```
 Decision Table Returns:
   Level 1: Sarah Johnson (Finance)
@@ -202,19 +235,22 @@ Task Flow:
 4. All complete → Export
 ```
 
----
+***
 
-## Card: ACTION_CREATE_TASK_FOR_USER_SEQUENTIAL
+### Carta: ACTION\_CREATE\_TASK\_FOR\_USER\_SEQUENTIAL
 
-### Scopo
-Assegna il documento a un utente E crea un'attività sequenziale
+#### Scopo
 
-### Quando Usarla
-- Assegnare il documento E creare un'attività contemporaneamente
-- Il documento deve essere esaminato da una persona specifica
-- Tracciare sia l'assegnazione che la creazione dell'attività
+Assegna il documento a un utente E crea attività sequenziali
 
-### Come Funziona
+#### Quando usarlo
+
+* Assegna il documento E crea un'attività allo stesso tempo
+* Il documento deve essere esaminato da una persona specifica
+* Tieni traccia sia dell'assegnazione che della creazione dell'attività
+
+#### Come funziona
+
 ```
 Two things happen:
 1. Document is assigned to: Person A
@@ -223,7 +259,8 @@ Two things happen:
 Both in one action
 ```
 
-### Esempio
+#### Esempio
+
 ```
 High-value invoice arrives
     ↓
@@ -235,19 +272,22 @@ ACTION_CREATE_TASK_FOR_USER_SEQUENTIAL:
 Document AND task both go to Finance Manager
 ```
 
----
+***
 
-## Card: ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL
+### Carta: ACTION\_CREATE\_TASK\_FOR\_GROUP\_SEQUENTIAL
 
-### Scopo
-Assegna il documento a un gruppo E crea un'attività
+#### Scopo
 
-### Quando Usarla
-- Il documento necessita dell'attenzione di un gruppo
-- Vuoi tracciare la creazione dell'attività
-- Creare un'attività iniziale e poi l'assegnazione del documento
+Assegna il documento al gruppo E crea l'attività
 
-### Esempio
+#### Quando usarlo
+
+* Il documento richiede l'attenzione del gruppo
+* Vuoi tenere traccia della creazione dell'attività
+* Creare l'attività iniziale e quindi documentare l'assegnazione
+
+#### Esempio
+
 ```
 New supplier evaluation
     ↓
@@ -260,21 +300,24 @@ ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL:
 Group members see document and task
 ```
 
----
+***
 
-# Creazione di Attività Avanzata
+## Creazione avanzata di attività
 
-## Card: ACTION_ASSIGN_TASK_TO_FACILITY_GROUP
+### Carta: ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP
 
-### Scopo
-Crea un'attività per uno specifico gruppo di sede
+#### Scopo
 
-### Quando Usarla
-- Attività per il team di magazzino/sede
-- Operazioni specifiche per sede
-- Quando la posizione fisica è rilevante
+Crea un'attività per un gruppo di strutture specifico
 
-### Esempio
+#### Quando usarlo
+
+* Compito per il team del magazzino/struttura
+* Operazioni specifiche dell'impianto
+* La posizione fisica conta
+
+#### Esempio
+
 ```
 Document: Shipment notification
     ↓
@@ -286,19 +329,22 @@ Create Task for Facility Group:
 Berlin warehouse team gets task
 ```
 
----
+***
 
-## Card: ACTION_ASSIGN_TASK_TO_FACILITY_GROUP_SEQUENTIAL
+### Carta: ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP\_SEQUENTIAL
 
-### Scopo
-Assegnazione sequenziale delle attività tra le sedi
+#### Scopo
 
-### Quando Usarla
-- Operazioni multi-sede
-- Attività che passano da sede a sede
-- Elaborazione sequenziale tra le sedi
+Assegnazione sequenziale delle attività tra le strutture
 
-### Come Funziona
+#### Quando usarlo
+
+* Operazioni multi-impianto
+* I compiti passano da una struttura all'altra
+* Elaborazione sequenziale della struttura
+
+#### Come funziona
+
 ```
 Factory A (Step 1): Production
     ↓
@@ -309,7 +355,8 @@ Warehouse (Step 3): Packaging
 Shipping (Step 4): Dispatch
 ```
 
-### Esempio
+#### Esempio
+
 ```
 Manufacturing Document
     ↓
@@ -322,19 +369,22 @@ Create Sequential Tasks:
 Each team completes → Passes to next
 ```
 
----
+***
 
-## Card: ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP
+### Carta: ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP
 
-### Scopo
-Crea un'attività per il reparto di approvvigionamento
+#### Scopo
 
-### Quando Usarla
-- Attività per il team di approvvigionamento
-- Attività di gestione dei fornitori
-- Lavoro relativo agli acquisti
+Crea un compito per il dipartimento appalti
 
-### Esempio
+#### Quando usarlo
+
+* Compito del team acquisti
+* Compiti di gestione dei fornitori
+* Lavoro correlato all'acquisto
+
+#### Esempio
+
 ```
 Supplier status change notification
     ↓
@@ -347,19 +397,22 @@ Create Task for Procurement Group:
 Procurement team is notified
 ```
 
----
+***
 
-## Card: ACTION_ASSIGN_TASK_PROCUREMENT_GROUP_SEQUENTIAL
+### Carta: ACTION\_ASSIGN\_TASK\_PROCUREMENT\_GROUP\_SEQUENTIAL
 
-### Scopo
+#### Scopo
+
 Instradamento sequenziale delle attività all'interno dell'approvvigionamento
 
-### Quando Usarla
-- Processi di approvvigionamento a più fasi
-- Catena di approvazione nell'approvvigionamento
-- Percorso di escalation
+#### Quando usarlo
 
-### Esempio
+* Processi di approvvigionamento in più fasi
+* Catena di approvazione negli appalti
+* Percorso di escalation
+
+#### Esempio
+
 ```
 Purchase Requisition received
     ↓
@@ -372,20 +425,22 @@ Step 3: Director signs off (Priority 3)
 All sign-offs complete → Release to supplier
 ```
 
----
+***
 
-## Card: ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK
+### Carta: ACTION\_ASSIGN\_TASK\_TO\_USER\_FROM\_FIELD\_WITH\_FALLBACK
 
-### Scopo
-Recupera l'utente da un campo del documento e assegna l'attività
-Se l'utente non viene trovato, usa l'utente di fallback
+#### Scopo
 
-### Quando Usarla
-- L'utente è memorizzato in un campo del documento
-- Il documento specifica chi deve effettuare la revisione
-- Disponi di una persona di riserva nel caso l'utente specificato non sia disponibile
+Ottieni utente dal campo documento, assegna attività Se l'utente non viene trovato, utilizza l'utente fallback
 
-### Come Funziona
+#### Quando usarlo
+
+* Utente memorizzato nel campo documento
+* Il documento specifica chi dovrebbe effettuare la revisione
+* Avere una persona di backup se l'utente specificato non è disponibile
+
+#### Come funziona
+
 ```
 Document has field: "Approver Name: John Smith"
 
@@ -394,7 +449,8 @@ Card checks: Is John in system?
     If NO → Assign to Fallback User (Sarah)
 ```
 
-### Esempio
+#### Esempio
+
 ```
 Invoice field: "Contact: Mike Johnson"
 
@@ -405,26 +461,29 @@ If Mike doesn't exist in system:
 Use Fallback: Team Lead (Robert Brown)
 ```
 
-### Parametri
+#### Parametri
+
 ```
 - Field to Read: "Approver Name"
 - Fallback User: Robert Brown
 - Task Details: Title, Description, Priority
 ```
 
----
+***
 
-# Parametri Comuni delle Attività
+## Parametri delle attività comuni
 
-Tutte le task card utilizzano questi parametri:
+Tutte le schede attività utilizzano questi parametri:
 
-### Title
+#### Titolo
+
 ```
 Good: "Review Invoice #INV-12345 - €5000 - Supplier ABC"
 Bad: "Approve something"
 ```
 
-### Description
+#### Descrizione
+
 ```
 Should include:
 ✅ What to do
@@ -434,7 +493,8 @@ Should include:
 ✅ Link to document
 ```
 
-### Livelli di Priorità
+#### Livelli di priorità
+
 ```
 🔴 HIGH
    - Action needed within hours
@@ -452,17 +512,19 @@ Should include:
    - Example: Archive old documents
 ```
 
-### Due Date (se disponibile)
+#### Data di scadenza (se disponibile)
+
 ```
 When should task be completed by?
 Example: 2025-10-30 (5 days from now)
 ```
 
----
+***
 
-# Scenari di Workflow delle Attività
+## Scenari del flusso di lavoro delle attività
 
-## Scenario 1: Approvazione Semplice
+### Scenario 1: approvazione semplice
+
 ```
 Invoice Arrives (€2000)
     ↓
@@ -473,7 +535,8 @@ YES: Create Task for Finance Manager
 Finance Manager reviews and approves
 ```
 
-## Scenario 2: Approvazione a Più Livelli
+### Scenario 2: approvazione multilivello
+
 ```
 Invoice Arrives (€50,000 - High Value)
     ↓
@@ -485,7 +548,8 @@ Create Sequential Tasks:
 Each level completes → Next begins
 ```
 
-## Scenario 3: Attività Parallele
+### Scenario 3: attività parallele
+
 ```
 Invoice Arrives (From New Supplier)
     ↓
@@ -497,7 +561,8 @@ All teams work simultaneously
 All must complete before proceeding
 ```
 
-## Scenario 4: Instradamento Condizionale
+### Scenario 4: routing condizionale
+
 ```
 Invoice Arrives
     ↓
@@ -509,88 +574,98 @@ Decision Table:
 Task created for correct person
 ```
 
----
+***
 
-# Best Practice per l'Assegnazione delle Attività
+## Migliori pratiche per l'assegnazione delle attività
 
 ✅ **Fai:**
-- Includi dettagli specifici nel titolo dell'attività
-- Imposta livelli di priorità appropriati
-- Imposta scadenze realistiche
-- Notifica gli assegnatari
-- Includi un link al documento
-- Usa descrizioni chiare e orientate all'azione
 
-❌ **Non Fare:**
-- Creare titoli di attività vaghi ("Review this")
-- Impostare tutto con priorità High
-- Dimenticare di notificare la persona assegnata
-- Creare più attività per lo stesso lavoro
-- Assegnare a persone non disponibili
+* Includi dettagli specifici nel titolo dell'attività
+* Impostare livelli di priorità appropriati
+* Stabilisci scadenze realistiche
+* Avvisare gli assegnatari
+* Includere il collegamento al documento
+* Utilizza descrizioni chiare e utilizzabili
 
----
+❌ **Non farlo:**
 
-# Risoluzione dei Problemi delle Attività
+* Creare titoli di attività vaghi ("Rivedi questo")
+* Imposta tutto come priorità alta
+* Dimentica di avvisare la persona assegnata
+* Crea più attività per lo stesso lavoro
+* Assegna a persone non disponibili
 
-## "Task not assigned to anyone"
-**Causa:** l'utente non esiste o il gruppo è vuoto
+***
 
-**Soluzione:**
-- Verifica l'ortografia del nome utente
-- Controlla che l'utente sia attivo nel sistema
-- Verifica che il gruppo abbia membri
-- Usa il fallback se necessario
+## Attività di risoluzione dei problemi
 
-## "Person says they didn't get notification"
-**Causa:** notifica email disabilitata o email errata
+### "Compito non assegnato a nessuno"
+
+**Causa:** L'utente non esiste o il gruppo è vuoto
 
 **Soluzione:**
-- Controlla che la casella "Send Email" sia abilitata
-- Verifica l'indirizzo email del destinatario
-- Controlla la cartella spam
-- Reinvia manualmente la notifica
 
-## "Wrong person got task"
-**Causa:** logica di instradamento errata
+* Verificare l'ortografia del nome utente
+* Verificare che l'utente sia attivo nel sistema
+* Verifica che il gruppo abbia membri
+* Se necessario, utilizzare il fallback
 
-**Soluzione:**
-- Controlla le condizioni della decision table
-- Verifica le impostazioni di fallback
-- Testa con un documento di esempio
-- Controlla eventuali errori di battitura nei nomi utente
+### "La persona dice di non aver ricevuto la notifica"
 
-## "Too many tasks created"
-**Causa:** la card si attiva più volte
+**Causa:** Notifica e-mail disabilitata o e-mail errata
 
 **Soluzione:**
-- Controlla che le condizioni siano abbastanza specifiche
-- Verifica che la card venga eseguita una sola volta per documento
-- Rivedi le condizioni "And"
-- Aggiungi ulteriori filtri
 
----
+* Seleziona la casella di controllo "Invia email" che sia abilitata
+* Verifica l'indirizzo email del destinatario
+* Controlla la cartella spam
+* Invia nuovamente la notifica manualmente
 
-# Tabella di Confronto delle Task Card
+### "La persona sbagliata ha ricevuto il compito"
 
-| Card | Crea Attività | Assegna a | Quando |
-|------|-------------|-----------|------|
-| tasks_create | Yes | Individual | Always |
-| ACTION_TASK_FOR_GROUP | Yes | Group | Always |
-| ACTION_DECISION_TREE_CREATE_TASKS | Yes | Decision Table Result | Conditional |
-| ACTION_DECISION_TREE_TASKS_SEQUENTIAL | Yes | Multiple (Sequential) | Conditional |
-| ACTION_CREATE_TASK_FOR_USER_SEQUENTIAL | Yes | User + Document | Conditional |
-| ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL | Yes | Group + Document | Conditional |
-| ACTION_ASSIGN_TASK_TO_FACILITY_GROUP | Yes | Facility Group | Conditional |
-| ACTION_ASSIGN_TASK_TO_FACILITY_GROUP_SEQUENTIAL | Yes | Multiple Facilities | Conditional |
-| ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP | Yes | Procurement Team | Conditional |
-| ACTION_ASSIGN_TASK_PROCUREMENT_GROUP_SEQUENTIAL | Yes | Multiple (Sequential) | Conditional |
-| ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK | Yes | Field/Fallback | Conditional |
+**Causa:** Logica di instradamento errata
 
----
+**Soluzione:**
 
-# Card Correlate
+* Controllare le condizioni della tabella decisionale
+* Verificare le impostazioni di fallback
+* Prova con il documento di esempio
+* Verificare la presenza di errori di battitura nei nomi utente
 
-- **ACTION_ASSIGN_DOCUMENT_TO_USER** - Assegna il documento senza creare un'attività
-- **ACTION_SEND_EMAIL** - Notifica direttamente le persone
-- **STAUS_CHANGE** - Cambia lo stato invece di creare un'attività
-- **RUN_WORKFLOW** - Attiva invece un workflow diverso
+### "Troppe attività create"
+
+**Causa:** La carta viene attivata più volte
+
+**Soluzione:**
+
+* Le condizioni di controllo sono sufficientemente specifiche
+* La verifica della carta viene eseguita solo una volta per documento
+* Esamina le condizioni "E".
+* Aggiungi ulteriori filtri
+
+***
+
+## Tabella di confronto delle schede attività
+
+| Carta                                                        | Crea attività | Assegna a            | When        |
+| ----------------------------------------------------------- | ------------ | --------------------- | ----------- |
+| tasks\_create                                               | Sì          | Individuale            | Sempre      |
+| ACTION\_TASK\_FOR\_GROUP                                    | Sì          | Gruppo                 | Sempre      |
+| ACTION\_DECISION\_TREE\_CREATE\_TASKS                       | Sì          | Risultato della tabella decisionale | Condizionale |
+| ACTION\_DECISION\_TREE\_TASKS\_SEQUENTIAL                   | Sì          | Multiplo (sequenziale) | Condizionale |
+| ACTION\_CREATE\_TASK\_FOR\_USER\_SEQUENTIAL                 | Sì          | Utente + Documento       | Condizionale |
+| ACTION\_CREATE\_TASK\_FOR\_GROUP\_SEQUENTIAL                | Sì          | Gruppo + Documento      | Condizionale |
+| ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP                   | Sì          | Gruppo di strutture        | Condizionale |
+| ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP\_SEQUENTIAL       | Sì          | Strutture multiple   | Condizionale |
+| ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP                | Sì          | Gruppo Acquisti      | Condizionale |
+| ACTION\_ASSIGN\_TASK\_PROCUREMENT\_GROUP\_SEQUENTIAL        | Sì          | Multiplo (sequenziale) | Condizionale |
+| ACTION\_ASSIGN\_TASK\_TO\_USER\_FROM\_FIELD\_WITH\_FALLBACK | Sì          | Campo/Ripiego        | Condizionale |
+
+***
+
+## Carte correlate
+
+* **ACTION\_ASSIGN\_DOCUMENT\_TO\_USER** - Assegna documento senza creare attività
+* **ACTION\_SEND\_EMAIL** - Avvisa direttamente le persone
+* **STAUS\_CHANGE** - Modifica lo stato invece di creare un'attività
+* **RUN\_WORKFLOW** - Attiva invece un flusso di lavoro diverso

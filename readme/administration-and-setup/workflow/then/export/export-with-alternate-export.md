@@ -1,32 +1,27 @@
-# Export with alternate Export
+# Esporta con esportazione alternativa
 
-<figure><img src="../../../../.gitbook/assets/image (286).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-379e4b3a5355-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
-## **Scopo**
+## Quando utilizzare questa carta
 
-La scheda di workflow **"Export Document with Alternate Export"** consente di esportare un documento utilizzando una configurazione di esportazione alternativa. Offre flessibilità permettendo agli utenti di ignorare la configurazione di esportazione predefinita e di utilizzarne una alternativa, garantendo la compatibilità con requisiti o scenari specifici.
+Utilizzare questa azione Quindi per l'esportazione alternativa configurata sul tipo di documento corrente. Configura e convalida il percorso prima di aggiungere l'azione.
 
-## **Componenti della scheda**
+## La configurazione deriva dal tipo di documento
 
-**Alternate Export Configuration**
+La scheda non dispone di un selettore di configurazione dell'esportazione. Legge se l'esportazione alternativa è abilitata, la configurazione dell'esportazione alternativa e lo stato dopo l'esportazione dalle impostazioni del tipo di documento. Internamente questi sono `DOC_ALTERNATE_EXPORT_SETTING`, `DOC_ALTERNATE_EXPORT_EXPORT_CONFIG` e `DOC_ALTERNATE_EXPORT_STATUS`.
 
-* **Descrizione**: Specifica la configurazione di esportazione da utilizzare per il documento.
-* **Dettaglio**: Questa configurazione sovrascrive le impostazioni predefinite e applica la configurazione di esportazione alternativa specificata nel workflow.
+Un'esportazione alternativa esplicitamente disabilitata produce una condizione non riuscita. Vengono segnalati i dati di attivazione mancanti, la configurazione o lo stato dei risultati anziché sostituire silenziosamente il percorso predefinito. La richiesta di esportazione controlla le attività in sospeso.
 
-## **Funzionalità**
+## Verificare il risultato
 
-* **Valutazione della condizione**:\
-  Il sistema valuta le condizioni impostate nelle sezioni **"Where"** e **"And"** del workflow. La scheda viene eseguita solo se tutte le condizioni sono vere.
-* **Esportazione del documento**:\
-  Una volta eseguita, la scheda utilizza la configurazione di esportazione alternativa per elaborare ed esportare il documento. Ciò consente una gestione dell'esportazione su misura per workflow specifici.
+Ispeziona il registro della carta, la cronologia delle esportazioni, lo stato del documento e la destinazione del test autorizzata. Una richiesta, un timeout o un cambiamento di stato da soli non stabiliscono che i dati abbiano raggiunto la destinazione. Controlla la cronologia delle esportazioni prima di ritentare un'operazione che potrebbe creare duplicati.
 
-## **Configurazione e impostazione**
+<!-- workflow-card-complete-example-20261021 action_alternate_export -->
 
-Per configurare questa scheda:
+### Esempio di esportazione alternativa
 
-1. Assicurati che le sezioni **"Where"** e **"And"** siano configurate correttamente, poiché la scheda viene eseguita solo se queste condizioni risultano vere.
-2. Verifica che la configurazione di esportazione alternativa sia valida e attiva nel sistema.
+**Configurazione:** Prepara il tipo di documento sintetico `DEMO_INVOICE` con l'esportazione alternativa abilitata, una configurazione di esportazione del test autorizzata e lo stato del risultato desiderato nelle impostazioni del tipo di documento. Aggiungi questa azione Quindi dopo i controlli richiesti. Questa scheda legge quelle impostazioni; non offre un selettore di configurazione di esportazione.
 
-## **Conclusione**
+**Risultato previsto e controesempio:** L'azione richiede l'esportazione attraverso quella configurazione alternativa e controlla le attività in sospeso. Verificare separatamente il risultato dell'esportazione e la destinazione del test. La disabilitazione dell'esportazione alternativa provoca una condizione non riuscita; un'impostazione o una configurazione di attivazione assente non indica un'esportazione riuscita. Non eseguire questo esempio su una destinazione contabile.
 
-La scheda di workflow **"Export Document with Alternate Export"** migliora la flessibilità e il controllo nei processi di esportazione dei documenti. Consentendo la selezione di una configurazione di esportazione alternativa, soddisfa esigenze di esportazione diverse mantenendo al contempo un'automazione del workflow efficiente.
+Questa è una configurazione di test illustrativa e il risultato atteso; non è stato eseguito. Utilizza dati e destinatari configurati nella tua organizzazione di test.

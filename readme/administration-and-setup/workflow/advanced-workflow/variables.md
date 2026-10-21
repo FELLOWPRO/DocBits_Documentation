@@ -59,3 +59,7 @@ Fai clic su **New Variable**, assegnale un nome e un tipo e imposta il suo valor
 
 - Scopri come i nodi usano questi valori in [Nodi](nodes.md).
 - Valida ed esegui il workflow in [Validazione e test](validation-and-testing.md).
+
+## Variabili numeriche
+
+**Number (Numero)** è un tipo di variabile distinto, insieme a Text, Yes/No e Document. Inserire un valore numerico senza simbolo di valuta. Le variabili dell’organizzazione sono condivise tra i workflow; creazione, modifica ed eliminazione vengono salvate immediatamente, indipendentemente dal salvataggio o dall’annullamento delle modifiche al canvas. Prima di modificarle, verificare i workflow interessati e provare valori inferiori, uguali e superiori alla soglia.

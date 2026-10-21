@@ -1,6 +1,6 @@
-# Continue with a chance
+# Continuare con una probabilità
 
-<figure><img src="../../../../.gitbook/assets/image (49).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f04ace44135-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## **Scopo:**
 
@@ -10,9 +10,9 @@ Questa scheda DocBits introduce una condizione probabilistica, consentendo ai wo
 
 * **Continuazione condizionale:** Questa scheda fa proseguire il workflow in base a una probabilità specificata, impostata dall'utente come valore percentuale. La scheda genera un esito casuale e lo confronta con la percentuale fornita, creando una possibilità controllata di continuazione del workflow.
 * **Percentuale di probabilità:** Gli utenti specificano un valore percentuale (0-100%) che rappresenta la probabilità che il workflow prosegua. Ad esempio:
-  * **0%:** Il workflow non proseguirà mai.
+  * **0%:** Il flusso di lavoro non proseguirà mai.
   * **50%:** Il workflow ha una probabilità del 50/50 di proseguire.
-  * **100%:** Il workflow proseguirà sempre.
+  * **100%:** Il flusso di lavoro proseguirà sempre.
 
 ## **Utilizzo:**
 

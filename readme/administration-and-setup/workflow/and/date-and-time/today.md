@@ -1,6 +1,6 @@
-# Today
+# Oggi
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-bd785752f7b5-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## **Scopo:**
 
@@ -9,12 +9,12 @@ Questa scheda DocBits confronta la data odierna con una data specificata, consen
 ## **Funzionalità:**
 
 * **Confronto di date:** Questa scheda valuta la data odierna rispetto a una data specificata utilizzando le seguenti condizioni:
-  * **Equals (=):** Verifica se la data odierna corrisponde alla data specificata.
-  * **Not Equals (≠):** Garantisce che la data odierna sia diversa dalla data specificata.
-  * **Greater Than (>):** Conferma che la data odierna sia successiva alla data specificata.
-  * **Greater or Equals (≥):** Garantisce che la data odierna sia uguale o successiva alla data specificata.
-  * **Lesser Than (<):** Verifica se la data odierna è precedente alla data specificata.
-  * **Less or Equals (≤):** Garantisce che la data odierna sia uguale o precedente alla data specificata.
+  * **Uguale (=):** Verifica se la data odierna corrisponde alla data specificata.
+  * **Diverso (≠):** Garantisce che la data odierna sia diversa dalla data specificata.
+  * **Maggiore di (>):** Conferma che la data odierna sia successiva alla data specificata.
+  * **Maggiore o uguale (≥):** Garantisce che la data odierna sia uguale o successiva alla data specificata.
+  * **Minore di (<):** Verifica se la data odierna è precedente alla data specificata.
+  * **Minore o uguale (≤):** Garantisce che la data odierna sia uguale o precedente alla data specificata.
 * **Inserimento della data:** Gli utenti forniscono la data da confrontare con la data odierna.
 
 ## **Utilizzo:**

@@ -1,6 +1,6 @@
-# If Country in Field
+# Se Paese nel campo
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-70b0b5860da5-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## **Scopo:**
 
@@ -8,21 +8,21 @@ Questa scheda di workflow è progettata per valutare se un paese specificato, si
 
 ## **Componenti della scheda:**
 
-1. **Field Name**
+1. **Nome campo**
    * **Descrizione:** Specifica il campo del documento in cui è memorizzato il nome o il codice del paese.
-   * **Dettaglio:** Deve corrispondere all'identificatore esatto del campo dei dati del paese all'interno del documento.&#x20;
-2. **Operator**
+   * **Dettaglio:** Deve corrispondere all'identificatore esatto del campo dei dati del paese all'interno del documento.
+2. **Operatore**
    * **Descrizione:** Specifica se il paese nel campo selezionato debba corrispondere o meno alla regione o all'accordo selezionato.
    * **Opzioni:**
      * **Is:** Il paese deve far parte dell'accordo selezionato (EU, Schengen o NAFTA) affinché la condizione sia vera.
-     * **Is Not:** Il paese non deve far parte dell'accordo selezionato affinché la condizione sia vera.
-3. **Country Comparison**
+     * **Non è:** Il paese non deve far parte dell'accordo selezionato affinché la condizione sia vera.
+3. **Confronto tra paesi**
    * **Descrizione:** Definisce se il paese nel campo viene confrontato con un accordo politico o commerciale specifico.
    * **Opzioni:**
      * **European Union:** La scheda verifica se il paese è membro dell'Unione Europea.
      * **Schengen Area:** La scheda verifica se il paese fa parte dell'Area Schengen.
      * **NAFTA:** La scheda verifica se il paese è membro dell'accordo NAFTA.
-4. **Boolean**
+4. **Booleano**
    * **Descrizione:** Definisce il risultato del confronto. Se il paese soddisfa la condizione, il workflow prosegue con il valore Boolean specificato.
    * **Opzioni:**
      * **True:** Il workflow prosegue se la condizione corrisponde.
@@ -36,10 +36,22 @@ Questa scheda di workflow è progettata per valutare se un paese specificato, si
   * **Condizione vera:** Se il paese nel campo corrisponde alla regione selezionata (secondo l'operatore), il workflow prosegue con la condizione vera specificata. Ciò può attivare ulteriori azioni, come l'instradamento dei documenti, l'applicazione di regole di elaborazione speciali o l'abilitazione di funzionalità specifiche per regione.
   * **Condizione falsa:** Se il paese non corrisponde alla regione selezionata (secondo l'operatore), il workflow prosegue con la condizione falsa specificata, consentendo l'esecuzione di azioni alternative o la terminazione del workflow in base alla configurazione del sistema.
 
-## **Configurazione e impostazione:**&#x20;
+## **Configurazione e impostazione:**
 
 * Gli utenti configurano la scheda selezionando il campo del documento contenente il paese e specificando la regione (Unione Europea, Area Schengen o NAFTA). L'operatore viene quindi scelto da un menu a discesa per definire se il paese debba o meno far parte della regione selezionata. Infine, gli utenti impostano la condizione di continuazione (vera o falsa), che determina il passaggio successivo nel workflow.
 
 ## **Conclusione:**
 
 La scheda di workflow "Country in Field Comparison" è uno strumento essenziale per automatizzare i processi che dipendono da regole geografiche, come la conformità agli accordi commerciali o le affiliazioni politiche. Confrontando i dati del paese con regioni specifiche come l'Unione Europea, l'Area Schengen o il NAFTA, questa scheda garantisce che il sistema applichi la logica di elaborazione corretta, migliorando l'efficienza e garantendo un'esecuzione accurata del workflow in base alle condizioni geografiche.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Esempio pratico
+
+**Quando utilizzarlo:** Documenti separati per regione del paese.
+
+**Configurazione:** Scegli un campo Paese del documento contenente `DE`, seleziona la regione contenente la Germania e imposta l'opzione di continuazione su `true`.
+
+**Risultato atteso e controesempio:** Il codice paese tedesco soddisfa la regione selezionata. Un codice al di fuori di quella regione no; testare l'opzione di continuazione separatamente quando è necessario il ramo inverso.
+
+Questa è una configurazione illustrativa e il risultato atteso. Utilizza campi, utenti e gruppi configurati nella tua organizzazione di test; non si afferma che questo esempio sia stato eseguito.

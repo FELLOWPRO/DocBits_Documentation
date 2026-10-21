@@ -1,29 +1,29 @@
-# Create a New Task and assign it to the User
+# Crea una nuova attività e assegnala all'utente
 
-<figure><img src="../../../../.gitbook/assets/image (287).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4a46d3b10473-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## **Scopo**
 
-La scheda di workflow **"Create Task or Notification"** semplifica la gestione delle attività e delle notifiche all'interno dei workflow. A seconda della versione, la scheda può creare attività, inviare notifiche e sfruttare funzionalità aggiuntive come le decision tree per l'elaborazione dinamica.
+La scheda di workflow **"Crea attività o notifica"** semplifica la gestione delle attività e delle notifiche all'interno dei workflow. A seconda della versione, la scheda può creare attività, inviare notifiche e sfruttare funzionalità aggiuntive come le decision tree per l'elaborazione dinamica.
 
 ## **Componenti della scheda**
 
-1. **Title**
+1. **Titolo**
    * **Descrizione**: Definisce il titolo dell'attività o della notifica creata.
    * **Dettaglio**: Il titolo fornisce un identificatore chiaro e conciso per l'attività o la notifica.
-2. **Description**
+2. **Descrizione**
    * **Descrizione**: Fornisce dettagli sull'attività o sulla notifica.
    * **Dettaglio**: Aiuta a chiarire lo scopo o il contesto dell'attività o della notifica per l'utente assegnato.
-3. **Priority**
+3. **Priorità**
    * **Descrizione**: Imposta il livello di urgenza dell'attività.
    * **Opzioni**:
      * **High**: Richiede attenzione immediata.
-     * **Medium**: Importante ma non urgente.
+     * **Medio**: Importante ma non urgente.
      * **Low**: Può essere gestita in seguito.
-4. **Assigned User**
+4. **Utente assegnato**
    1. **Descrizione**: Specifica l'utente a cui viene assegnata l'attività.
    2. **Dettaglio**: Gli utenti vengono selezionati da un menu a discesa del personale disponibile.
-5. **Email Notification**
+5. **Notifica e-mail**
    * **Descrizione**: Determina se l'utente assegnato riceve una notifica email.
    * **Opzioni**:
      * **True**: Invia una notifica email all'utente.
@@ -36,16 +36,16 @@ La scheda di workflow **"Create Task or Notification"** semplifica la gestione d
    * **Opzioni**:
      * **True**: Attiva l'elaborazione della decision tree.
      * **False**: Disabilita l'elaborazione della decision tree.
-2. **Task or Notification (solo Versione 4)**
+2. **Attività o notifica (solo Versione 4)**
    * **Descrizione**: Consente la scelta tra la creazione di un'attività o di una notifica.
    * **Opzioni**:
-     * **Task**: Crea un'attività.
+     * **Compito**: Crea un'attività.
      * **Notification**: Crea una notifica anziché un'attività.
 
 ## **Funzionalità:**
 
 * **Valutazione della condizione**:\
-  Questa scheda viene attivata solo se le condizioni nelle sezioni **"Where"** e **"And"** sono soddisfatte.
+  Questa scheda viene attivata solo se le condizioni nelle sezioni **"Quando"** e **"E"** sono soddisfatte.
 * **Creazione di attività o notifica**:
   * Versioni 2 e 3: Viene creata un'attività con il titolo, la descrizione, la priorità e l'utente assegnato specificati.
   * Versione 4: Consente di creare un'attività o una notifica.
@@ -69,4 +69,16 @@ La scheda di workflow **"Create Task or Notification"** semplifica la gestione d
 
 ## **Conclusione:**
 
-La scheda di workflow **"Create Task or Notification"** è uno strumento versatile per gestire attività e notifiche. Supportando l'assegnazione dinamica dell'utente tramite le decision tree e offrendo opzioni per la creazione di attività o notifiche, migliora l'adattabilità del workflow e l'efficienza della collaborazione.
+La scheda di workflow **"Crea attività o notifica"** è uno strumento versatile per gestire attività e notifiche. Supportando l'assegnazione dinamica dell'utente tramite le decision tree e offrendo opzioni per la creazione di attività o notifiche, migliora l'adattabilità del workflow e l'efficienza della collaborazione.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Esempio pratico
+
+**Quando utilizzarlo:** Assegna a un revisore un'azione esplicita.
+
+**Configurazione:** Selezionare `Demo Reviewer A`, titolo `Review invoice`, descrizione e priorità.
+
+**Risultato atteso e controesempio:** L'utente selezionato riceve la nuova attività. Confermare il titolo dell'attività e l'assegnatario; il compito deve ancora essere completato dal revisore.
+
+Questa è una configurazione illustrativa e il risultato atteso. Utilizza campi, utenti e gruppi configurati nella tua organizzazione di test; non si afferma che questo esempio sia stato eseguito.

@@ -1,66 +1,73 @@
-# Purchase Order (PO) Matching Cards - Complete Guide
+# Carte corrispondenti PO - Guida completa
 
-Le schede di abbinamento ordini di questa pagina vanno nel gruppo **And** del Generatore di workflow — confrontano i dati della fattura con l'ordine abbinato prima dell'esecuzione delle azioni Then:
+## Carte corrispondenti agli ordini di acquisto (PO) - Guida completa
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Le schede di abbinamento ordini vengono aggiunte al gruppo <strong>And</strong> tramite <strong>Add Card</strong>.</p></figcaption></figure>
+**Stato:** Copre 15 schede di confronto PO con calcoli dettagliati
 
-{% embed url="https://youtu.be/qR-lrSaj4Ug" %}
-DocBits PO Matching Tutorial: Auto/Manual Line Matching, Tolerances & Mismatch Indicators
-{% endembed %}
+***
 
-**Stato:** copre 15 card di confronto PO con calcoli dettagliati
+Le schede di confronto degli ordini d'acquisto in questa pagina vanno nel gruppo **E** del Workflow Builder: confrontano i dati della fattura con l'ordine di acquisto abbinato prima dell'esecuzione delle azioni Quindi:
 
----
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-it.png" alt="Esempio non salvato con schede Quando, E e Allora. Configurare tutti i campi prima dell’esecuzione. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale."><figcaption><p>Esempio non salvato con schede Quando, E e Allora. Configurare tutti i campi prima dell’esecuzione. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
-## 📌 Informazioni sulla Versione
+***
 
-**Card Più Evoluta:** CONDITION_DOC_TO_PO_UNIT_PRICE (5 versioni, v5 la più recente)
-**Altre Card Complesse:** CONDITION_OC_TO_PO_ITEMS (v4), CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY (v4)
+### 📌 Informazioni sulla versione
 
-**Schemi Principali:**
-- **v2 → v3+:** aggiunta dei parametri di tolleranza per un abbinamento flessibile
-- **v3 → v4:** aggiunta dei parametri di modalità di confronto
-- **v4 → v5:** tolleranza potenziata con più unità (%, EUR, $, ecc.)
+**Carta più evoluta:** CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE (5 versioni, v5 più recente) **Altre carte complesse:** CONDITION\_OC\_TO\_PO\_ITEMS (v4), CONDITION\_LESS\_THAN\_TOLERANCE\_AS\_VALUE\_OF\_ORDERED\_QUANTITY (v4)
 
-📖 [Cronologia Completa delle Versioni](../../../changelog/release.md#-po-comparison--validation-cards) | [Database delle Versioni delle Card](../../../../DocFlow/docs/card_version.md)
+**Schemi chiave:**
 
----
+* **v2 → v3+:** Aggiunta di parametri di tolleranza per un abbinamento flessibile
+* **v3 → v4:** Aggiunta dei parametri della modalità confronto
+* **v4 → v5:** Tolleranza migliorata con più unità (%, EUR, $, ecc.)
 
-## Comprendere il PO Matching
+📖 [Cronologia completa delle versioni](../../release.md) | [Versioni e comportamento delle carte](../../cards-overview/card-versions-guide.md)
 
-Quando ricevi una fattura, questa dovrebbe corrispondere all'ordine di acquisto (PO) emesso in precedenza. Le card di PO matching verificano automaticamente se i dati della fattura corrispondono ai dati del PO.
+***
 
-**Il Quadro Generale:**
+### Comprendere la corrispondenza PO
+
+Quando ricevi una fattura, questa deve corrispondere all'ordine di acquisto (PO) effettuato in precedenza. Le carte di corrispondenza PO controllano automaticamente se i dati della fattura corrispondono ai dati PO.
+
+**Il quadro generale:**
+
 ```
 PO Placed     Invoice Arrives     PO Matching     Decision
 (€100)    →   (€103)          →   (Check if       → Approve/Reject
 Qty: 100      Qty: 100            within tolerance)
 ```
 
----
+***
 
-# 1. Purchase Order Full Match
+## 1. Corrispondenza completa dell'ordine di acquisto
 
-## Scopo
-Verifica se l'intera fattura corrisponde perfettamente al PO o entro la tolleranza
+### Scopo
 
-## Quando Usarla
-- Prima di approvare una fattura
-- Come controllo qualità preliminare
-- Per individuare i problemi in anticipo
+Controlla se l'intera fattura corrisponde perfettamente all'ordine d'acquisto o entro la tolleranza
 
-## Come Funziona
+### Quando usarlo
+
+* Prima di approvare una fattura
+* Come controllo di qualità preliminare
+* Per identificare tempestivamente i problemi
+
+### Come funziona
+
 Il sistema confronta:
-- Quantità della fattura vs quantità del PO
-- Prezzi della fattura vs prezzi del PO
-- Articoli della fattura vs articoli del PO
-- Totale della fattura vs totale del PO
 
-## Risultato
-- **TRUE** (Full Match): tutto corrisponde, procedi
-- **FALSE** (Mismatch): qualcosa non corrisponde, richiede revisione
+* Quantità fattura e quantità ordine d'acquisto
+* Prezzi delle fatture e prezzi degli ordini d'acquisto
+* Elementi della fattura e elementi dell'ordine d'acquisto
+* Totale fattura rispetto al totale ordine d'acquisto
 
-## Esempio
+### Risultato
+
+* **TRUE** (Corrispondenza completa): tutto corrisponde, procedi
+* **FALSE** (Mancata corrispondenza): qualcosa non corrisponde, necessita di revisione
+
+### Esempio
+
 ```
 PO:
 - Item ABC: Qty 100, Unit Price €50 = €5000
@@ -75,28 +82,32 @@ Invoice:
 Result: ✅ FULL MATCH
 ```
 
----
+***
 
-# 2. Confronto del Prezzo Unitario (Document vs PO)
+## 2. Confronto dei prezzi unitari (documento vs ordine d'acquisto)
 
-## Scopo
-Confronta il prezzo unitario sulla fattura con il prezzo unitario sul PO
+### Scopo
 
-## Parametri
-- **Unit Price Tolerance**: consente una varianza fino a questo importo
-- **Tolerance Type**: percentuale (%) o assoluta (€/$)
-- **Operator**: Is Equal to, Is Greater than, Is Less than, ecc.
+Confronta il prezzo unitario sulla fattura con il prezzo unitario sull'ordine d'acquisto
 
-## Come Funziona (Tolleranza Percentuale)
+### Parametri
+
+* **Tolleranza prezzo unitario**: consente la varianza fino a questo importo
+* **Tipo di tolleranza**: Percentuale (%) o Assoluta (€/$)
+* **Operatore**: è uguale a, è maggiore di, è minore di, ecc.
+
+### Come funziona (tolleranza percentuale)
 
 **Formula:**
+
 ```
 Variance % = |(Invoice Price - PO Price)| / PO Price × 100
 
 Check: Is Variance % ≤ Tolerance %?
 ```
 
-**Esempio Passo dopo Passo:**
+**Esempio passo passo:**
+
 ```
 Step 1: Get prices
   PO Unit Price: €100.00
@@ -114,9 +125,10 @@ Step 4: Check tolerance (5% allowed)
 Result: PASS - Within tolerance
 ```
 
-## Esempi Reali
+### Esempi del mondo reale
 
-### Esempio 1: Piccolo Aumento (Accettato)
+#### Esempio 1: piccolo aumento (accettato)
+
 ```
 PO Price: €50.00
 Invoice Price: €51.50
@@ -129,7 +141,8 @@ Calculation:
 Is 3% ≤ 3%? YES ✅ ACCEPT
 ```
 
-### Esempio 2: Grande Aumento (Rifiutato)
+#### Esempio 2: aumento significativo (rifiutato)
+
 ```
 PO Price: €50.00
 Invoice Price: €55.00
@@ -142,7 +155,8 @@ Calculation:
 Is 10% ≤ 3%? NO ❌ REJECT - NEEDS REVIEW
 ```
 
-### Esempio 3: Sconto (Anch'esso Verificato)
+#### Esempio 3: sconto (anche controllato)
+
 ```
 PO Price: €100.00
 Invoice Price: €97.00
@@ -155,7 +169,8 @@ Calculation:
 Is 3% ≤ 5%? YES ✅ ACCEPT (Discount is within tolerance)
 ```
 
-### Esempio 4: Tolleranza con Valore Assoluto
+#### Esempio 4: Tolleranza del valore assoluto
+
 ```
 PO Price: €10.00
 Invoice Price: €10.50
@@ -167,34 +182,39 @@ Calculation:
 Is €0.50 ≤ €1.00? YES ✅ ACCEPT
 ```
 
-## Cosa Fare con i Risultati
+### Cosa fare con i risultati
 
-**Se PASS ✅:**
-- Prosegui al controllo successivo
-- Oppure approva la fattura
-- Oppure procedi con l'esportazione
+**Se PASSATO ✅:**
+
+* Procedi al controllo successivo
+* Oppure approva la fattura
+* Oppure procedi con l'esportazione
 
 **Se FAIL ❌:**
-- Contrassegna per la revisione manuale
-- Chiedi al fornitore una spiegazione
-- Contatta il team di approvvigionamento
-- Approva con una nota se accettabile
 
----
+* Contrassegna per la revisione manuale
+* Chiedere spiegazioni al fornitore
+* Contatta il team di approvvigionamento
+* Approvare con nota se accettabile
 
-# 3. Confronto della Quantità
+***
 
-## Scopo
-Verifica se la quantità ordinata corrisponde alla quantità fatturata
+## 3. Confronto delle quantità
 
-## Parametri
-- **Tolerance**: importo o % di differenza consentita
-- **Operator**: Equals, Greater than, Less than
-- **Quantity Type**: Ordered, Received, Open
+### Scopo
 
-## Esempio di Calcolo
+Controlla se la quantità ordinata corrisponde alla quantità fatturata
 
-**Tolleranza Percentuale:**
+### Parametri
+
+* **Tolleranza**: importo o percentuale consentita per differire
+* **Operatore**: Uguale a, Maggiore di, Minore di
+* **Tipo quantità**: ordinato, ricevuto, aperto
+
+### Esempio di calcolo
+
+**Tolleranza percentuale:**
+
 ```
 Formula:
   Quantity Variance % = |(Invoice Qty - PO Qty)| / PO Qty × 100
@@ -210,7 +230,8 @@ Example:
   Is 3% ≤ 5%? YES ✅ ACCEPT
 ```
 
-**Tolleranza Assoluta:**
+**Tolleranza assoluta:**
+
 ```
 Formula:
   Quantity Variance = |Invoice Qty - PO Qty|
@@ -225,9 +246,10 @@ Example:
   Is 2 units ≤ 5 units? YES ✅ ACCEPT
 ```
 
-## Scenari Reali
+### Scenari del mondo reale
 
-### Consegna in Eccesso (Più del Quantitativo Ordinato)
+#### Consegna eccessiva (più di quanto ordinato)
+
 ```
 Ordered: 100 units
 Invoiced: 110 units
@@ -241,7 +263,8 @@ Decision: Contact supplier - more delivered than ordered
 Possible reason: Error by supplier, partial shipment already received
 ```
 
-### Consegna in Difetto (Meno del Quantitativo Ordinato)
+#### Sottoconsegna (meno di quanto ordinato)
+
 ```
 Ordered: 100 units
 Invoiced: 95 units
@@ -255,14 +278,16 @@ Decision: Accept - within tolerance
 Possible reason: Partial shipment, rest to follow
 ```
 
----
+***
 
-# 4. Prezzo Combinato della Differenza di Quantità
+## 4. Prezzo combinato della differenza di quantità
 
-## Scopo
+### Scopo
+
 Quando la quantità differisce, calcola se la differenza di prezzo totale è accettabile
 
-## Perché è Importante
+### Perché questo è importante
+
 ```
 Scenario: You ordered 100 units but received 110
 - Quantity is 10% over (bad)
@@ -270,9 +295,10 @@ Scenario: You ordered 100 units but received 110
 - Combined effect might be acceptable
 ```
 
-## Calcolo
+### Calcolo
 
 **Formula:**
+
 ```
 Combined Variance = Quantity Variance × Price Variance
 
@@ -280,6 +306,7 @@ If both are within tolerance, combined is usually acceptable
 ```
 
 **Esempio:**
+
 ```
 PO:
 - Unit Price: €100
@@ -299,23 +326,26 @@ Analysis:
 Is combined variance acceptable? Usually YES ✅
 ```
 
----
+***
 
-# 5. Confronto Item ID / Numero Articolo del Fornitore
+## 5. Confronto ID articolo/numero articolo fornitore
 
-## Scopo
-Verifica se gli articoli nella fattura corrispondono agli articoli nel PO
+### Scopo
 
-## Come Funziona
+Controlla se gli articoli nella fattura corrispondono agli articoli nell'ordine d'acquisto
 
-**Corrispondenza Esatta (Più Semplice):**
+### Come funziona
+
+**Corrispondenza esatta (più semplice):**
+
 ```
 PO Item ID: ABC-123
 Invoice Item ID: ABC-123
 Result: ✅ MATCH
 ```
 
-**Numero Articolo del Fornitore (Più Comune):**
+**Numero articolo fornitore (più comune):**
+
 ```
 PO Item: ABC-123 (Our internal code)
 Supplier Item: SUPP-456 (Their code for same item)
@@ -323,7 +353,7 @@ System matches these as same item
 Result: ✅ MATCH
 ```
 
-## Scenario: Cosa Succede se Non Corrispondono?
+### Scenario: cosa succede se non corrisponde?
 
 ```
 PO Item: ABC-123 (Copper Wire, 2mm)
@@ -337,21 +367,24 @@ Actions:
 3. Is the description similar? Verify manually
 ```
 
----
+***
 
-# 6. Verifica del Tipo di Ordine
+## 6. Verifica del tipo di ordine
 
-## Scopo
+### Scopo
+
 Verifica che il tipo di ordine di acquisto sia corretto
 
-## Tipi di Ordine
-- **Standard Order**: acquisto regolare
-- **Rush Order**: urgente, può prevedere un sovrapprezzo
-- **Frame Agreement**: contratto a lungo termine
-- **Blanket Order**: contratto aperto
-- **Consignment**: paghi solo quando viene utilizzato
+### Tipi di ordine
 
-## Esempio di Verifica
+* **Norma dell'Ordine**: acquisto regolare
+* **Rush Order**: urgente, potrebbe avere un premio
+* **Accordo quadro**: Contratto a lungo termine
+* **Ordine Globale**: Contratto a tempo indeterminato
+* **Spedizione**: Non paghi fino all'utilizzo
+
+### Controlla l'esempio
+
 ```
 PO Order Type: Standard Order
 Invoice Order Type: Standard Order
@@ -360,16 +393,18 @@ Result: ✅ MATCH
 If mismatch: Could affect terms, payment, pricing
 ```
 
----
+***
 
-# 7. Verifica della Data di Consegna
+## 7. Verifica della data di consegna
 
-## Scopo
-Verifica se la data di consegna corrisponde alla data promessa sul PO
+### Scopo
 
-## Calcolo
+Controlla se la data di consegna corrisponde alla data promessa sull'ordine d'acquisto
 
-**Consegna in Ritardo:**
+### Calcolo
+
+**Consegna in ritardo:**
+
 ```
 Formula:
   Days Late = Invoice Delivery Date - PO Promised Date
@@ -383,7 +418,8 @@ If tolerance is ±3 days:
   Is 7 ≤ 3? NO ❌ LATE
 ```
 
-**Consegna Anticipata:**
+**Consegna anticipata:**
+
 ```
 Formula:
   Days Early = PO Promised Date - Invoice Delivery Date
@@ -397,21 +433,24 @@ Early delivery is usually OK ✅
 Unless you need it at specific time
 ```
 
-## Impostazioni della Tolleranza
+### Impostazioni di tolleranza
+
 ```
 ±3 days: Allow 3 days late or early
 ±5 days: Allow up to 5 days variance
 0 days: Must match exactly
 ```
 
----
+***
 
-# 8. Verifica degli Oneri (Imposte, Spedizione, Ecc.)
+## 8. Verifica degli addebiti (tasse, spedizione, ecc.)
 
-## Scopo
-Verifica se gli oneri aggiuntivi (imposte, spedizione, gestione) corrispondono al PO
+### Scopo
 
-## Oneri Comuni
+Controlla se i costi aggiuntivi (tasse, spedizione, gestione) corrispondono all'ordine di acquisto
+
+### Spese comuni
+
 ```
 - Shipping: €50
 - Handling: €10
@@ -420,9 +459,10 @@ Verifica se gli oneri aggiuntivi (imposte, spedizione, gestione) corrispondono a
 - Taxes: €300
 ```
 
-## Calcolo
+### Calcolo
 
-**Esempio: Verifica dell'Onere di Spedizione**
+**Esempio: controllo delle spese di spedizione**
+
 ```
 PO Shipping: €50.00
 Invoice Shipping: €51.00
@@ -433,7 +473,8 @@ Variance = |€51.00 - €50.00| / €50.00 × 100 = 2%
 Is 2% ≤ 3%? YES ✅ ACCEPT
 ```
 
-**Esempio: Oneri Multipli**
+**Esempio: addebiti multipli**
+
 ```
 PO Total Charges:
   - Shipping: €50
@@ -451,16 +492,18 @@ Difference: €12
 Check if within tolerance ✅ or ❌
 ```
 
----
+***
 
-# 9. Verifica delle Imposte
+## 9. Verifica fiscale
 
-## Scopo
+### Scopo
+
 Verifica che gli importi delle imposte siano calcolati correttamente
 
-## Calcolo
+### Calcolo
 
 **Formula:**
+
 ```
 Tax Amount = Subtotal × Tax Rate
 
@@ -473,7 +516,8 @@ Invoice Tax: €190
 Match? YES ✅
 ```
 
-**Problemi Comuni:**
+**Problemi comuni:**
+
 ```
 1. Tax rate changed (region-based)
 2. Tax applied to wrong amount (before/after discounts)
@@ -481,7 +525,8 @@ Match? YES ✅
 4. Tax exempt items (0% tax)
 ```
 
-**Esempio: Imposizione a Più Aliquote**
+**Esempio: tassazione multialiquota**
+
 ```
 Item A: €100 @ 19% tax = €119
 Item B: €100 @ 7% tax = €107
@@ -493,14 +538,16 @@ Invoice shows €325 (€1 error)
 Check: Within tolerance or needs attention?
 ```
 
----
+***
 
-# 10. Abbinamento Sede/Centro di Costo
+## 10. Abbinamento struttura/centro di costo
 
-## Scopo
-Garantisce che la fattura sia per la sede/centro di costo corretti
+### Scopo
 
-## Esempio
+Garantisce che la fattura sia per la struttura/centro di costo corretto
+
+### Esempio
+
 ```
 PO is for:
 - Facility: Berlin Plant
@@ -513,14 +560,16 @@ Invoice should have:
 If different facility: May need different approval
 ```
 
----
+***
 
-# 11. Convalida dello Stato del Fornitore
+## 11. Convalida dello status di fornitore
 
-## Scopo
-Verifica se il fornitore è ancora approvato/attivo
+### Scopo
 
-## Tipi di Stato
+Controlla se il fornitore è ancora approvato/attivo
+
+### Tipi di stato
+
 ```
 ✅ ACTIVE: Approved, can do business
 ⚠️ ON HOLD: Temporarily blocked
@@ -528,7 +577,8 @@ Verifica se il fornitore è ancora approvato/attivo
 ⚠️ CONDITIONAL: Only for specific items
 ```
 
-## Esempio di Verifica
+### Controlla l'esempio
+
 ```
 Supplier: ABC Corp
 Status in Database: ACTIVE
@@ -538,11 +588,12 @@ Status when invoice arrives: INACTIVE
 Alert: Supplier status changed! Investigate why.
 ```
 
----
+***
 
-# Quale Tolleranza Dovrei Usare?
+## Quale tolleranza dovrei usare?
 
-## Tolleranze Rigorose (Rischio Inferiore, Più Lavoro Manuale)
+### Tolleranze rigorose (rischio inferiore, più lavoro manuale)
+
 ```
 Use for:
 - High-value items
@@ -556,7 +607,8 @@ Settings:
 - Charges: ±1%
 ```
 
-## Tolleranze Moderate (Bilanciate)
+### Tolleranze moderate (bilanciate)
+
 ```
 Use for:
 - Most business transactions
@@ -570,7 +622,8 @@ Settings:
 - Charges: ±5%
 ```
 
-## Tolleranze Ampie (Rischio Superiore, Meno Lavoro Manuale)
+### Tolleranze allentate (rischio più elevato, meno lavoro manuale)
+
 ```
 Use for:
 - Low-value items
@@ -584,9 +637,9 @@ Settings:
 - Charges: ±10%
 ```
 
----
+***
 
-# Esempio di Workflow di PO Matching
+## Esempio di flusso di lavoro di corrispondenza PO
 
 ```
 Invoice Arrives
@@ -609,11 +662,12 @@ If Approved: Continue to Export
 If Rejected: Return to Supplier
 ```
 
----
+***
 
-# Risoluzione dei Problemi del PO Matching
+## Risoluzione dei problemi relativi alla corrispondenza PO
 
-## "PO Not Found"
+### "PO non trovato"
+
 ```
 Cause: Invoice PO number doesn't exist in system
 Fix:
@@ -623,7 +677,8 @@ Fix:
 4. Ask supplier for PO reference
 ```
 
-## "Items Don't Match"
+### "Gli articoli non corrispondono"
+
 ```
 Cause: Invoice items are different from PO items
 Possible Reasons:
@@ -633,7 +688,8 @@ Possible Reasons:
 Fix: Contact procurement or supplier
 ```
 
-## "Price Higher Than PO"
+### "Prezzo superiore al PO"
+
 ```
 Cause: Invoice price > PO price
 Possible Reasons:
@@ -644,7 +700,8 @@ Possible Reasons:
 Fix: Verify with procurement
 ```
 
-## "Delivery Date Wrong"
+### "Data di consegna errata"
+
 ```
 Cause: Invoice dated after promised delivery
 Possible Reasons:
@@ -654,29 +711,99 @@ Possible Reasons:
 Fix: Check shipping documents or contact supplier
 ```
 
----
+***
 
-# Tabella di Riepilogo
+## Tabella riassuntiva
 
-| Card | Cosa Verifica | Calcolo Principale | Tolleranza Comune |
-|------|----------------|------------------|-----------------|
-| Full Match | Everything | All checks | Varies |
-| Unit Price | Price per unit | % or € difference | ±3-5% |
-| Quantity | Amount ordered | % or unit difference | ±3-5% |
-| Combined Price | Total with qty change | Qty × Price | ±5-10% |
-| Item ID | Right items | String match | Exact |
-| Order Type | Type of purchase | String match | Exact |
-| Delivery Date | When arrived | Day difference | ±3 days |
-| Charges | Extra fees | % or € difference | ±5% |
-| Tax | Tax amount | Tax % calculation | ±1% |
-| Facility | Cost center | String match | Exact |
-| Supplier | Approved? | Status check | Active only |
+| Carta           | Cosa controlla        | Calcolo principale     | Tolleranza comune |
+| -------------- | --------------------- | -------------------- | ---------------- |
+| Partita completa     | Tutto            | Tutti i controlli           | Varia           |
+| Prezzo unitario     | Prezzo per unità        | % o € di differenza    | ±3-5%            |
+| Quantità       | Importo ordinato        | % o differenza unitaria | ±3-5%            |
+| Prezzo combinato | Totale con cambio quantità | Quantità × Prezzo          | ±5-10%           |
+| ID articolo        | Articoli giusti           | Corrispondenza di corde         | Esatto            |
+| Tipo di ordine     | Tipologia di acquisto      | Corrispondenza di corde         | Esatto            |
+| Data di consegna  | Quando è arrivato          | Differenza di giorno       | ±3 giorni          |
+| Spese        | Commissioni aggiuntive            | % o € di differenza    | ±5%              |
+| Tassa            | Importo fiscale            | Calcolo della % dell'imposta    | ±1%              |
+| Struttura       | Centro di costo           | Corrispondenza di corde         | Esatto            |
+| Fornitore       | Approvato?             | Controllo dello stato         | Solo attivo      |
 
----
+***
 
-# Documentazione Correlata
+## Documentazione correlata
 
-- Consulta la guida "Invoice Validation" per il workflow completo
-- Consulta "Tolerance Settings" per i valori consigliati per settore
-- Consulta "Exception Handling" per cosa fare in caso di errori
-- Contatta il tuo team di approvvigionamento per le politiche di tolleranza specifiche
+* Consulta la guida "Convalida della fattura" per il flusso di lavoro completo
+* Vedere "Impostazioni di tolleranza" per i valori consigliati per settore
+* Vedere "Gestione delle eccezioni" per cosa fare in caso di errori
+* Contatta il tuo team di approvvigionamento per politiche di tolleranza specifiche
+
+<!-- workflow-card-example-condition_promised_delivery_date_to_current-20261021 -->
+
+### Data di consegna promessa rispetto alla data di riferimento
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-ca4dcfa998e7-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+
+`CONDITION_PROMISED_DELIVERY_DATE_TO_CURRENT` · versione 2
+
+Assumere una data di riferimento di `2026-10-21` e una data di consegna della linea promessa di `2026-10-23`. Selezionare il confronto con ritardo e la tolleranza zero giorni. La data futura soddisfa questo confronto; `2026-10-20` no. Configura deliberatamente le opzioni Tutti/Tutti e i giorni di tolleranza accettati e verifica separatamente una data mancante.
+
+<!-- workflow-card-example-condition_po_extracted_table_column-20261021 -->
+
+### Colonna dell'ordine di acquisto rispetto a una colonna estratta
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-e2c12dd67cc0-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+
+`CONDITION_PO_EXTRACTED_TABLE_COLUMN` · versione 2
+
+Confronta la colonna dell'articolo dell'ordine di acquisto corrispondente con la colonna estratta `article_number`, utilizzando l'uguaglianza e Tutto. Valori corrispondenti `DEMO-A` superato; un valore estratto `DEMO-B` fallisce. Selezionare una tabella di ricerca solo quando è necessaria una sostituzione documentata da ID a valore; verificare la mappatura prima del confronto.
+
+<!-- workflow-card-example-condition_check_facility_in_po-20261021 -->
+
+### Strutture consentite per gli ordini di acquisto
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-813ff783b1f2-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+
+`CONDITION_CHECK_FACILITY_IN_PO` · versione 2
+
+Selezionare Tutto, il confronto e il codice struttura configurato `DEMO-NORTH`. Linee PO abbinate nel pass per quella struttura; una riga in `DEMO-SOUTH` fallisce. Utilizzare i codici struttura dai dati dell'ordine di acquisto anziché presupporre che il codice sia un'etichetta visualizzata.
+
+<!-- workflow-card-example-condition_purchase_order_full_match-20261021 -->
+
+### Completare la corrispondenza dell'ordine di acquisto
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-91a5b2a70e88-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+
+`CONDITION_PURCHASE_ORDER_FULL_MATCH` · versione 2
+
+Utilizza una fattura dimostrativa e un ordine d'acquisto completamente abbinati con quantità `2` e prezzo unitario `100` su entrambi i lati e tolleranze quantità/prezzo configurate. Seleziona la condizione di piena corrispondenza: passa. Quindi testa un prezzo al di fuori della tolleranza configurata. Dati di confronto mancanti o un PO assente non indicano una corrispondenza completa riuscita. Una nota di consegna prevede un confronto basato solo sulla quantità; non dare per scontato che ad esso si applichino le regole del prezzo della fattura.
+
+<!-- workflow-card-example-condition_po_update_empty_column_check-20261021 -->
+
+### Colonna del database degli ordini di acquisto vuota
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-f20345d72edd-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+
+`CONDITION_PO_UPDATE_EMPTY_COLUMN_CHECK` · versione 2
+
+Selezionare una tabella e una colonna PO valide offerte dalla carta e dall'operatore è vuoto. Per un record PO corrispondente esistente con un valore vuoto, la condizione passa; un valore popolato fallisce. Verificare innanzitutto il riferimento dell'ordine di acquisto e la mappatura della tabella/colonna. Boolean `false` è ancora un valore booleano attuale; un record PO mancante è un errore di dati separato.
+
+<!-- workflow-card-example-condition_compare_unit_price_percent_per-20261021 -->
+
+### Tolleranza percentuale per base di prezzo
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-14ec95131dfc-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+
+`CONDITION_COMPARE_UNIT_PRICE_PERCENT_PER` · versione 2
+
+Esempio: il prezzo unitario PO `200`, il prezzo base `100` e la tolleranza configurata `1` producono un tasso effettivo di `(200 / 100) * (1 / 100) = 0.02` o `2%`. La banda di confronto è `196–204`. L'uguaglianza entro la tolleranza accetta un prezzo del documento di `203` e rifiuta `210`. Non dare per scontato che questa carta equivalga a una tolleranza fissa dell'1%.
+
+<!-- workflow-card-example-condition_compare_po_line_value-20261021 -->
+
+### Valore della riga dell'ordine di acquisto rispetto a un riferimento
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-43a5d2686fb7-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+
+`CONDITION_COMPARE_PO_LINE_VALUE` · versione 2
+
+Seleziona la colonna PO corrispondente `item_number`, l'uguaglianza e il valore `DEMO-A`. Passa una linea con `DEMO-A`; `DEMO-B` fallisce. Utilizza solo gli operatori supportati per il tipo di dati selezionato e verifica separatamente i dati delle righe corrispondenti mancanti.

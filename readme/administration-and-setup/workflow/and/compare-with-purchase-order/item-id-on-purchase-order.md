@@ -1,6 +1,6 @@
-# Item Id on Purchase Order
+# ID articolo nell'ordine di acquisto
 
-<figure><img src="../../../../.gitbook/assets/image (275).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4a5b4a7c3888-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## **Scopo:**
 
@@ -8,16 +8,16 @@ Questa scheda di workflow è progettata per confrontare gli ID articolo tra un o
 
 ## **Componenti della scheda:**
 
-1. **Any / All:**
+1. **Qualsiasi / Tutti:**
    * **Descrizione**: Definisce se la condizione si applica ad alcune o a tutte le istanze dei confronti degli ID articolo.
    * **Opzioni**:
      * **Any**: La condizione è soddisfatta se un ID articolo qualsiasi nell'ordine d'acquisto corrisponde all'ID articolo nel documento.
      * **All**: La condizione è soddisfatta solo se tutti gli ID articolo nell'ordine d'acquisto corrispondono agli ID articolo nel documento.
-2. **Operator:**
+2. **Operatore:**
    * **Descrizione**: Definisce la condizione per confrontare l'ID articolo nell'ordine d'acquisto con l'ID articolo nel documento.
    * **Opzioni**:
-     * **Equals (=)**: Verifica se l'ID articolo nell'ordine d'acquisto corrisponde esattamente all'ID articolo nel documento.
-     * **Not Equals (≠)**: Garantisce che l'ID articolo nell'ordine d'acquisto non corrisponda all'ID articolo nel documento.
+     * **Uguale (=)**: Verifica se l'ID articolo nell'ordine d'acquisto corrisponde esattamente all'ID articolo nel documento.
+     * **Diverso (≠)**: Garantisce che l'ID articolo nell'ordine d'acquisto non corrisponda all'ID articolo nel documento.
 
 ## **Funzionalità:**
 

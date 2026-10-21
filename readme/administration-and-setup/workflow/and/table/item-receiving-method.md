@@ -1,6 +1,6 @@
-# Item Receiving Method
+# Metodo di ricezione dell'articolo
 
-<figure><img src="../../../../.gitbook/assets/image (47).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-ba8550d6feb0-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## **Scopo:**
 
@@ -8,13 +8,13 @@ Questa scheda DocBits verifica se gli articoli in un dataset hanno un metodo di 
 
 ## **Funzionalità:**
 
-* **Validazione del metodo di ricezione:** Questa scheda verifica il metodo di ricezione degli articoli rispetto a una condizione specificata. Gli utenti possono scegliere tra **un articolo qualsiasi** o **tutti gli articoli** del dataset e impostare la condizione come **equals** o **not equals**.
+* **Validazione del metodo di ricezione:** Questa scheda verifica il metodo di ricezione degli articoli rispetto a una condizione specificata. Gli utenti possono scegliere tra **un articolo qualsiasi** o **tutti gli articoli** del dataset e impostare la condizione come **equals** o **non uguali**.
 * **Selezione degli articoli:** Gli utenti possono specificare:
   * **Any Item:** La scheda si attiva se almeno un articolo soddisfa la condizione del metodo di ricezione specificata.
-  * **All Items:** La scheda si attiva solo se tutti gli articoli soddisfano la condizione del metodo di ricezione specificata.
+  * **Tutti gli articoli:** La scheda si attiva solo se tutti gli articoli soddisfano la condizione del metodo di ricezione specificata.
 * **Operatori:** Sono disponibili i seguenti operatori per definire la condizione:
-  * **Equals (=):** Verifica se il metodo di ricezione corrisponde al valore specificato.
-  * **Not Equals (≠):** Garantisce che il metodo di ricezione non corrisponda al valore specificato.
+  * **Uguale (=):** Verifica se il metodo di ricezione corrisponde al valore specificato.
+  * **Diverso (≠):** Garantisce che il metodo di ricezione non corrisponda al valore specificato.
 
 ## **Utilizzo:**
 
@@ -22,6 +22,6 @@ Questa scheda è ideale per i responsabili di magazzino, i coordinatori dell'inv
 
 ## **Scenario di esempio:**
 
-* Un utente configura la scheda per verificare se **tutti gli articoli** hanno il metodo di ricezione **uguale a "Direct Delivery"**. Se ogni articolo soddisfa questa condizione, il workflow procede, confermando che tutti gli articoli sono destinati alla consegna diretta.
+* Un utente configura la scheda per verificare se **tutti gli articoli** hanno il metodo di ricezione **uguale a "Consegna Diretta"**. Se ogni articolo soddisfa questa condizione, il workflow procede, confermando che tutti gli articoli sono destinati alla consegna diretta.
 
 Utilizzando la scheda "Receiving Method Validation", le organizzazioni possono garantire la conformità ai protocolli di ricezione, migliorare i workflow logistici e mantenere l'accuratezza nella gestione degli articoli in base a specifici metodi di ricezione.

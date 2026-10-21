@@ -1,6 +1,6 @@
-# Document Operator for Sub-Organizations
+# Operatore documentale per le sotto-organizzazioni
 
-<figure><img src="../../../../.gitbook/assets/image (42).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f97575f86ed-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## Scopo:
 
@@ -8,12 +8,12 @@ Questa scheda di workflow valuta se un documento fa parte di una specifica sotto
 
 ## Componenti della scheda:
 
-1. **Operator**
+1. **Operatore**
    * **Descrizione:** Definisce se il documento deve far parte o meno della sotto-organizzazione specificata.
    * **Opzioni:**
      * **Is:** Il documento deve far parte della sotto-organizzazione specificata affinché la condizione sia vera.
-     * **Is Not:** Il documento non deve far parte della sotto-organizzazione specificata affinché la condizione sia vera.
-2. **Sub-org**
+     * **Non è:** Il documento non deve far parte della sotto-organizzazione specificata affinché la condizione sia vera.
+2. **Sotto-organizzazione**
    * **Descrizione:** Specifica la sotto-organizzazione con cui il documento deve essere confrontato.
    * **Dettaglio:** Deve corrispondere all'identificatore della sotto-organizzazione. Il confronto verifica se il documento appartiene alla sotto-organizzazione specificata.
 
@@ -33,3 +33,15 @@ Questa scheda di workflow valuta se un documento fa parte di una specifica sotto
 ## Conclusione:
 
 La scheda di workflow "Document in Sub-organization" è uno strumento utile per automatizzare le azioni in base al fatto che un documento appartenga o meno a una particolare sotto-organizzazione. Garantendo che i documenti vengano elaborati secondo le regole specifiche della sotto-organizzazione, questa scheda migliora l'efficienza del workflow e assicura che le azioni vengano eseguite nel corretto contesto organizzativo.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Esempio pratico
+
+**Quando utilizzarlo:** Instradare i documenti appartenenti ad una business unit.
+
+**Configurazione:** Seleziona la sottoorganizzazione `Demo North` e l'operatore uguale.
+
+**Risultato atteso e controesempio:** Un documento in `Demo North` passa. Un documento in `Demo South` fallisce.
+
+Questa è una configurazione illustrativa e il risultato atteso. Utilizza campi, utenti e gruppi configurati nella tua organizzazione di test; non si afferma che questo esempio sia stato eseguito.

@@ -1,6 +1,6 @@
-# Document Status Condition List
+# Elenco delle condizioni dello stato del documento
 
-<figure><img src="../../../../.gitbook/assets/userlmn_e9d6da331deceed4f330358635d6b605 (1).png" alt="" width="521"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8dc08a110089-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 **Scopo**
 
@@ -8,12 +8,12 @@ Questa scheda è progettata per controllare le azioni del workflow in base allo 
 
 **Componenti della scheda**
 
-1. **Operator**
+1. **Operatore**
    * **Descrizione**: Determina come lo stato del documento verrà valutato rispetto a una condizione specificata.
    * **Opzioni**:
      * **is**: Attiva le azioni associate se lo stato corrente del documento corrisponde a uno degli stati specificati.
-     * **is not**: Attiva le azioni se lo stato del documento non corrisponde a nessuno degli stati specificati.
-2. **Status ( List )**
+     * **non lo è**: Attiva le azioni se lo stato del documento non corrisponde a nessuno degli stati specificati.
+2. **Stato (Lista)**
    * **Descrizione**: Elenca gli stati specifici con cui verrà confrontato lo stato corrente del documento.
    * **Esempi**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval". Questi rappresentano le diverse fasi o condizioni in cui un documento potrebbe trovarsi all'interno di un processo di workflow.
 
@@ -22,7 +22,7 @@ Questa scheda è progettata per controllare le azioni del workflow in base allo 
 * **Identificazione dello stato**: Identifica automaticamente lo stato corrente di un documento mentre attraversa il workflow del sistema ERP.
 * **Valutazione della condizione**: Applica l'operatore scelto (is o is not) allo stato del documento confrontandolo con gli stati elencati:
   * Con **is**, verifica se lo stato del documento corrisponde a uno stato qualsiasi nell'elenco.
-  * Con **is not**, verifica se lo stato del documento non compare nell'elenco.
+  * Con **non lo è**, verifica se lo stato del documento non compare nell'elenco.
 * **Esecuzione dell'azione**: A seconda dell'esito della valutazione della condizione:
   * **True**: Esegue azioni o workflow predefiniti se la condizione è soddisfatta.
   * **False**: Salta o attiva workflow alternativi se la condizione non è soddisfatta.
@@ -37,3 +37,13 @@ Questa scheda è progettata per controllare le azioni del workflow in base allo 
 #### Conclusione
 
 La scheda di workflow "Document Status Condition" è fondamentale per garantire che i documenti vengano elaborati correttamente in base al loro stato corrente, migliorando il controllo e l'efficienza all'interno del sistema ERP. Documentare chiaramente questa scheda nel manuale del sistema aiuterà gli utenti a implementarla e gestirla efficacemente, sfruttandone la funzionalità per mantenere workflow documentali fluidi e conformi. Questa scheda è particolarmente utile per gestire i cicli di vita dei documenti e garantire che solo i documenti che soddisfano criteri specifici avanzino alle fasi successive dei processi aziendali.
+
+<!-- workflow-card-complete-example-20261021 condition_doc_status_is_isnot_in_list -->
+
+### Esempio di elenco di stati
+
+**Configurazione:** Scegli l'operatore che richiede che lo stato corrente sia all'interno della lista. Selezionare `Pending Approval` e `Pending Second Approval` nell'elenco degli stati.
+
+**Risultato previsto e controesempio:** La condizione è vera per un documento con uno degli stati selezionati. È falso per un documento con stato `Ready in Validation`. Con l'operatore che richiede che lo stato sia esterno all'elenco, queste condizioni risultano invertite. Esaminare l'elenco effettivo anziché confrontare un valore di testo libero separato da virgole.
+
+Questa è una configurazione di test illustrativa e il risultato atteso; non è stato eseguito. Utilizza dati e destinatari configurati nella tua organizzazione di test.

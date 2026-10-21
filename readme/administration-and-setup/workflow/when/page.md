@@ -11,7 +11,7 @@ Questa scheda di flusso di lavoro è specificamente progettata per eseguire oper
 * **Validazione del Tipo di Documento**: Questa scheda verifica se un documento corrisponde a un particolare tipo, consentendo agli utenti di confermare la sua categorizzazione.
 * **Operatore**: Gli utenti possono impostare condizioni per determinare il tipo di documento. Gli operatori disponibili includono:
   * **Is**: Conferma che il documento corrisponde al tipo di documento specificato.
-  * **Is Not**: Garantisce che il documento non corrisponda al tipo di documento specificato.
+  * **Non lo è**: Garantisce che il documento non corrisponda al tipo di documento specificato.
 * **Tipi di Documenti**: I tipi di documenti supportati includono:
   * **Fattura**
   * **Nota di Debito**

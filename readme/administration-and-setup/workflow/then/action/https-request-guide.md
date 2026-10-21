@@ -25,11 +25,7 @@ Fügen Sie diese Karte zur Gruppe **Dann** des Workflow Builder hinzu – den Ak
 
 ## Zweck
 
-Diese Karte sendet eine sichere Nachricht an eine Website oder einen Dienst und kann eine Antwort zurückerhalten. Sie ist einfacher als die „Call API“-Karte und eignet sich für schnelle Integrationen.
-
-**Beispiel aus der Praxis:** Senden Sie Rechnungsdaten an Ihr Buchhaltungssystem oder fragen Sie ein externes System, ob ein Mitarbeiter zur Bearbeitung dieses Kaufs berechtigt ist.
-
-***
+Die HTTPS-Anfragekarte verwendet eine konfigurierte HTTPS-URL und eigene Header. `call_api` verwendet einen relativen DocBits-API-Pfad und den aktuellen DocBits-Benutzerkontext; das Ergebnis wird aus dem Antworttext abgeleitet. Entscheidend sind Endpunkt und Antwortvertrag, nicht die Unterscheidung zwischen einfacher und komplexer API.
 
 ## Wann sollte diese Karte verwendet werden?
 
@@ -313,13 +309,7 @@ Headers: Authorization: Bearer token
 
 ## Unterschied zur „Call API“-Karte
 
-| Funktion        | HTTPS-Anfrage      | API aufrufen          |
-| -------------- | ------------------ | ----------------- |
-| Einfachheit     | Einfach             | Komplexer      |
-| Parameter     | Einfach              | Fortgeschritten          |
-| Fehlerbehandlung | Einfach              | Ausführlich          |
-| Verwendung für        | Schnelle Integrationen | Komplexe APIs      |
-| Am besten für       | Webhooks           | Professionelle APIs |
+Die HTTPS-Anfragekarte verwendet eine konfigurierte HTTPS-URL und eigene Header. `call_api` verwendet einen relativen DocBits-API-Pfad und den aktuellen DocBits-Benutzerkontext; das Ergebnis wird aus dem Antworttext abgeleitet. Entscheidend sind Endpunkt und Antwortvertrag, nicht die Unterscheidung zwischen einfacher und komplexer API.
 
 ***
 

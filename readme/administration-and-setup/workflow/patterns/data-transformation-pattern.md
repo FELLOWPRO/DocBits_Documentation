@@ -344,7 +344,7 @@ Grand Total (EUR) = 7601.13 × 0.92 = €6,993.04
 Store in: Grand_Total_EUR
 ```
 
-**Leitfaden-Referenz:** [API-Integrations-Pattern – Währungsumrechnung](api-integration-pattern.md#beispiel-1-wechselkurs-lookup)
+**Leitfaden-Referenz:** [API-Integrations-Pattern – Währungsumrechnung](api-integration-pattern.md)
 
 ***
 
@@ -875,7 +875,7 @@ Solution:
 
 * [Leitfaden Feldmanipulation](../then/document-field/field-manipulation-guide.md) – Alle Feldoperationen
 * [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md) – Validierungsbedingungen
-* [Call API-Leitfaden](../then/action/call-api-guide.md) – Externe Datenabfrage
+* [Call API-Leitfaden](../then/action/call-api-guide.md)
 
 ### Verwandte Karten
 

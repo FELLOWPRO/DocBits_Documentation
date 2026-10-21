@@ -725,7 +725,7 @@
     * [任务分配和创建卡](administration-and-setup/workflow/cards-overview/task-assignment-guide.md)
     * [字段和表格操作卡](administration-and-setup/workflow/cards-overview/field-manipulation-guide.md)
     * [运行 DocOperator 提示（自动化脚本）](administration-and-setup/workflow/cards-overview/docoperator-script-guide.md)
-    * [调用外部API](administration-and-setup/workflow/cards-overview/call-api-guide.md)
+    * [调用 DocBits API](administration-and-setup/workflow/cards-overview/call-api-guide.md)
     * [向群组发送电子邮件](administration-and-setup/workflow/cards-overview/send-email-groups-guide.md)
     * [发送 HTTPS 请求](administration-and-setup/workflow/cards-overview/https-request-guide.md)
     * [工作流程模式指南](administration-and-setup/workflow/cards-overview/patterns/README.md)

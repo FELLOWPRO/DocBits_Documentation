@@ -39,6 +39,6 @@ La carte de workflow « **Attribuer le document de manière séquentielle à l'u
 
 **Configuration :** Configurez une règle de table de décision de démonstration correspondante renvoyant l'utilisateur ou le groupe prévu, puis sélectionnez cette table sur la carte.
 
-**Résultat attendu et contre-exemple :** Le destinataire renvoyé est utilisé pour l'affectation séquentielle des documents. En l’absence de retour correspondant, ne supposez pas un cessionnaire par défaut ; inspectez le résultat et le comportement de repli configuré de cette version.
+**Résultat attendu et contre-exemple :** Le destinataire renvoyé est utilisé pour l'affectation séquentielle des documents. En l’absence de retour correspondant, ne supposez pas un responsable par défaut ; inspectez le résultat et le comportement de repli configuré de cette version.
 
 Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.

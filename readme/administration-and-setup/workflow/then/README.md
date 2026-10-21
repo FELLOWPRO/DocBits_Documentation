@@ -60,7 +60,7 @@ Modifiez les entrées ou calculez les valeurs dans un tableau de document. Séle
 
 ## Responsable
 
-Attribuez le document à un utilisateur, un groupe, un destinataire ou une sous-organisation. Certaines cartes utilisent un champ ou une table de décision et proposent une solution de repli. Choisissez la bonne destination et repliez-vous sur la carte sélectionnée. Voir [Cessionnaire](assignee).
+Attribuez le document à un utilisateur, un groupe, un destinataire ou une sous-organisation. Certaines cartes utilisent un champ ou une table de décision et proposent une solution de repli. Configurez la destination et le comportement de repli dans la carte sélectionnée. Voir [Responsable](assignee).
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-aa4f244a25b3-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 

@@ -54,7 +54,7 @@ Utilisez ces cartes pour comparer un article avec les données de prix indiquée
 
 ## Responsable
 
-Utilisez **Responsable** lorsque la condition dépend de l'utilisateur ou du groupe affecté. Choisissez si vous souhaitez comparer avec un utilisateur ou un groupe ou avec un ensemble sélectionné. Voir [Cessionnaire](assignee).
+Utilisez **Responsable** lorsque la condition dépend de l'utilisateur ou du groupe affecté. Choisissez si vous souhaitez comparer avec un utilisateur ou un groupe ou avec un ensemble sélectionné. Voir [Responsable](assignee).
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-08cbb6fd429c-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 

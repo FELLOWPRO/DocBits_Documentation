@@ -31,3 +31,15 @@ La tarjeta de flujo de trabajo **"Iniciar exportación"** proporciona una forma 
 ## Versiones de tarjetas y estado de resultados
 
 La afirmación anterior sobre la ausencia de configuración específica de la tarjeta se aplica a la tarjeta Iniciar exportación anterior. Iniciar exportación con validación v4 incluye validación y **Estado después de la exportación**. Elija `finished` para cerrar un documento exportado correctamente o `exported` para mantenerlo abierto para su posterior procesamiento. Las versiones anteriores conservan `finished`. Consulte [Exportar tarjetas y estado de resultados](../../cards-overview/export-cards-guide.md) para conocer los valores predeterminados, errores y pruebas.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Exportar un documento después de que hayan pasado las comprobaciones requeridas.
+
+**Configuración:** Seleccione el estado posterior a la exportación admitido, por ejemplo `exported` cuando el documento debe permanecer disponible para su posterior procesamiento. Asegúrese de que el exportador configurado y los datos requeridos estén listos.
+
+**Resultado esperado y contraejemplo:** Después de una exportación exitosa, se aplica el estado del resultado seleccionado. Un error del exportador no es una exportación completa; inspeccione su registro y pruebe la rama de falla.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

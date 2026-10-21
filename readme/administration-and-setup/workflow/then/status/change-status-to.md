@@ -24,7 +24,7 @@ La tarjeta de flujo de trabajo **"Change Status"** se utiliza para cambiar el es
 
 ## **Funcionalidad:**
 
-* **Evaluación de la condición**: El sistema evalúa las condiciones establecidas en las secciones **"Donde"** y **"Y"**. Si estas condiciones son verdaderas, la tarjeta continúa para cambiar el estado del documento al valor seleccionado.
+* **Evaluación de la condición**: El sistema evalúa las condiciones establecidas en las secciones **"Cuando"** y **"Y"**. Si estas condiciones son verdaderas, la tarjeta continúa para cambiar el estado del documento al valor seleccionado.
 * **Actualización del estado**: Una vez que se cumplen las condiciones, el estado del documento se actualiza a una de las opciones predefinidas (Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval), según la selección del usuario.
 * **Acción de disparar el flujo de trabajo**: Si **Activar flujos de trabajo** se establece en **True**, el sistema inicia automáticamente cualquier flujo de trabajo asociado tras la actualización del estado. Si se establece en **False**, no se disparan flujos de trabajo adicionales y el proceso finaliza con el cambio de estado.
 
@@ -34,8 +34,20 @@ Para configurar esta tarjeta, los usuarios deben:
 
 1. Especificar el **Estado** deseado al que se establecerá el documento tras la evaluación de la condición (Error, Rejected, Ready for Validation, Pending Approval o Pending Second Approval).
 2. Elegir si **Activar flujos de trabajo** tras el cambio de estado seleccionando **True** o **False**.
-3. La tarjeta solo ejecuta su acción si ambas condiciones de las secciones **"Donde"** y **"Y"** se evalúan como verdaderas.
+3. La tarjeta solo ejecuta su acción si ambas condiciones de las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
 
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo **"Change Status"** ofrece un enfoque ágil para gestionar los estados de los documentos y disparar flujos de trabajo relacionados. Garantiza que los documentos se enruten automáticamente al estado correcto y que se tomen las acciones necesarias, según el cambio de estado. Al establecer condiciones claras para la ejecución, reduce el esfuerzo manual y mejora la eficiencia del flujo de trabajo.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Mover un documento revisado a un estado de procesamiento definido.
+
+**Configuración:** Seleccione su estado `Demo Review` configurado y deshabilite la activación de flujos de trabajo adicionales para este ejemplo.
+
+**Resultado esperado y contraejemplo:** El documento recibe el estado seleccionado. Esta acción por sí sola no ejecuta la exportación configurada por separado.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

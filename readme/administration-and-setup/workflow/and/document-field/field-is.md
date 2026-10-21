@@ -1,4 +1,4 @@
-# El campo es
+# Comprobar la presencia y el contenido de un campo
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-db30554e1eb1-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
@@ -34,3 +34,15 @@ Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones segú
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo "Field Presence and State Validation" es una herramienta fundamental para los flujos de trabajo de procesamiento de documentos, garantizando un manejo preciso de los campos ausentes o completados. Al automatizar acciones según los estados de los campos, esta tarjeta mejora la integridad de los datos, reduce los errores y garantiza que los flujos de trabajo funcionen de forma fluida y eficiente.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Detecta facturas cuyo número de factura aún necesita revisión.
+
+**Configuración:** Seleccione el campo `invoice_number` y Vacío/No en el documento.
+
+**Resultado esperado y contraejemplo:** Se pasa un campo vacío o faltante. Un valor completado como `DEMO-001` no cumple esta condición.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

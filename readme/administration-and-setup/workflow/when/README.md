@@ -41,3 +41,13 @@ Esta configuración garantiza que los flujos de trabajo no solo sean eficientes 
 En resumen, la parte "Cuándo" de la configuración de su flujo de trabajo trata de preparar el escenario para acciones automatizadas basadas en condiciones específicas y predefinidas. Es una herramienta poderosa para garantizar que su sistema ERP reaccione dinámicamente a las necesidades del negocio, mejorando tanto la productividad como la precisión en la gestión de documentos.
 
 [Referencia de activación de evento de webhook y cambio de variable](../cards-overview/logic-cards-guide.md).
+
+<!-- workflow-card-example-celery_beat-20261021 -->
+
+### Procesamiento programado
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-59699b0c27d3-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+
+`CELERY_BEAT` · versión 2
+
+Utilice un activador programado para los documentos modificados desde la ejecución anterior. Para obtener un programa de demostración diario, seleccione el minuto `0`, la hora `9` y los valores ofrecidos para cada día/mes. Verifique la zona horaria del programador configurado y la próxima ejecución planificada. Este desencadenante no es prueba de que se reprocesen documentos sin cambios.

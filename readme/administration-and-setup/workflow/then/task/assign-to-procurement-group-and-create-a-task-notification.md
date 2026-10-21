@@ -60,3 +60,15 @@ La tarjeta de flujo de trabajo "**Asignar documento al grupo de adquisiciones y 
 ## **Conclusión**
 
 La tarjeta de flujo de trabajo "Assign Document to Procurement Group and Create Task/Notification" garantiza que los documentos se dirijan al grupo adecuado con instrucciones de tarea y niveles de prioridad claros. Al posibilitar notificaciones opcionales por correo electrónico, esta tarjeta mejora la visibilidad de las tareas y garantiza una ejecución fluida del flujo de trabajo.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Combine la asignación de adquisiciones prioritarias con una tarea de revisión.
+
+**Configuración:** Seleccione `Demo Procurement`, título `Review order variance`, prioridad de tarea y prioridad de asignación.
+
+**Resultado esperado y contraejemplo:** El objetivo de adquisición configurado recibe la asignación y la tarea/notificación documentadas. Verifique ambos y sus prioridades en el resultado.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

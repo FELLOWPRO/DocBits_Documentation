@@ -37,3 +37,13 @@ Esta tarjeta está diseñada para controlar las acciones del flujo de trabajo se
 #### Conclusión
 
 La tarjeta de flujo de trabajo "Document Status Condition" es vital para garantizar que los documentos se procesen correctamente según su estado actual, mejorando el control y la eficiencia dentro del sistema ERP. Documentar claramente esta tarjeta en el manual del sistema ayudará a los usuarios a implementarla y gestionarla de forma eficaz, aprovechando su funcionalidad para mantener flujos de trabajo de documentos fluidos y conformes. Esta tarjeta es especialmente útil para gestionar los ciclos de vida de los documentos y garantizar que solo los documentos que cumplen criterios específicos avancen a las etapas posteriores de los procesos de negocio.
+
+<!-- workflow-card-complete-example-20261021 condition_doc_status_is_isnot_in_list -->
+
+### Ejemplo de lista de estado
+
+**Configuración:** Elija el operador que requiere que el estado actual esté dentro de la lista. Seleccione `Pending Approval` y `Pending Second Approval` en la lista de estado.
+
+**Resultado esperado y contraejemplo:** La condición es verdadera para un documento con cualquiera de los estados seleccionados. Es falso para un documento con estado `Ready in Validation`. Con el operador que requiere que el estado esté fuera de la lista, estas condiciones resultan a la inversa. Inspeccione la lista real en lugar de comparar un valor de texto libre separado por comas.
+
+Esta es una configuración de prueba ilustrativa y el resultado esperado; no fue ejecutado. Utilice datos y destinatarios configurados en su organización de prueba.

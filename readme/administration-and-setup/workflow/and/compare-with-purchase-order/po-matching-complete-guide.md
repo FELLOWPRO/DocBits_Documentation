@@ -737,3 +737,73 @@ Fix: Check shipping documents or contact supplier
 * Consulte "Configuración de tolerancia" para conocer los valores recomendados por industria.
 * Consulte "Manejo de excepciones" para saber qué hacer con las fallas.
 * Comuníquese con su equipo de adquisiciones para conocer las políticas de tolerancia específicas.
+
+<!-- workflow-card-example-condition_promised_delivery_date_to_current-20261021 -->
+
+### Fecha de entrega prometida frente a la fecha de referencia
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-ca4dcfa998e7-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+
+`CONDITION_PROMISED_DELIVERY_DATE_TO_CURRENT` · versión 2
+
+Suponga una fecha de referencia de `2026-10-21` y una fecha de entrega de línea prometida de `2026-10-23`. Seleccione la comparación posterior a la y la tolerancia de día cero. La fecha futura satisface esa comparación; `2026-10-20` no lo hace. Configure deliberadamente las opciones Cualquiera/Todos y los días de tolerancia aceptados y pruebe una fecha faltante por separado.
+
+<!-- workflow-card-example-condition_po_extracted_table_column-20261021 -->
+
+### Columna de orden de compra frente a una columna extraída
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-e2c12dd67cc0-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+
+`CONDITION_PO_EXTRACTED_TABLE_COLUMN` · versión 2
+
+Compare la columna del artículo de orden de compra coincidente con la columna extraída `article_number`, usando igualdad y Todo. Los valores coincidentes `DEMO-A` pasan; un valor extraído `DEMO-B` falla. Seleccione una tabla de búsqueda solo cuando sea necesario un reemplazo documentado de ID por valor; verifique ese mapeo antes de comparar.
+
+<!-- workflow-card-example-condition_check_facility_in_po-20261021 -->
+
+### Facilidades de orden de compra permitidas
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-813ff783b1f2-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+
+`CONDITION_CHECK_FACILITY_IN_PO` · versión 2
+
+Seleccione Todo, la comparación de entrada y el código de instalación configurado `DEMO-NORTH`. Líneas de orden de compra coincidentes en ese pase de instalación; una línea en `DEMO-SOUTH` falla. Utilice códigos de instalación de los datos de la orden de compra en lugar de asumir que una etiqueta de visualización es su código.
+
+<!-- workflow-card-example-condition_purchase_order_full_match-20261021 -->
+
+### Completar la conciliación de la orden de compra
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-91a5b2a70e88-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+
+`CONDITION_PURCHASE_ORDER_FULL_MATCH` · versión 2
+
+Utilice una factura de demostración y una orden de compra completamente coincidentes con la cantidad `2` y el precio unitario `100` en ambos lados, y tolerancias configuradas de cantidad/precio. Seleccione la condición de coincidencia total: pasa. Luego pruebe un precio fuera de la tolerancia configurada. La falta de datos de comparación o la ausencia de una orden de compra no constituyen una coincidencia completa exitosa. Un albarán de entrega tiene una comparación solo de cantidad; no asuma que se le aplican las reglas de precios de factura.
+
+<!-- workflow-card-example-condition_po_update_empty_column_check-20261021 -->
+
+### Columna vacía de la base de datos de órdenes de compra
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-f20345d72edd-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+
+`CONDITION_PO_UPDATE_EMPTY_COLUMN_CHECK` · versión 2
+
+Seleccione una tabla y columna de PO válidas ofrecidas por la tarjeta y el operador está vacía. Para un registro de orden de compra coincidente existente con un valor en blanco, la condición se cumple; un valor poblado falla. Primero verifique la referencia de orden de compra y la asignación de tabla/columna. El booleano `false` sigue siendo un valor booleano presente; un registro de orden de compra faltante es un error de datos separado.
+
+<!-- workflow-card-example-condition_compare_unit_price_percent_per-20261021 -->
+
+### Tolerancia porcentual por precio
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-14ec95131dfc-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+
+`CONDITION_COMPARE_UNIT_PRICE_PERCENT_PER` · versión 2
+
+Ejemplo: el precio unitario de PO `200`, el precio base `100` y la tolerancia configurada `1` producen una tasa efectiva de `(200 / 100) * (1 / 100) = 0.02` o `2%`. La banda de comparación es `196–204`. La igualdad dentro de la tolerancia acepta un precio de documento de `203` y rechaza `210`. No asuma que esta tarjeta es lo mismo que una tolerancia fija del 1%.
+
+<!-- workflow-card-example-condition_compare_po_line_value-20261021 -->
+
+### Valor de línea de orden de compra frente a una referencia
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-43a5d2686fb7-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+
+`CONDITION_COMPARE_PO_LINE_VALUE` · versión 2
+
+Seleccione la columna de orden de compra coincidente `item_number`, igualdad y valor `DEMO-A`. Pasa una línea con `DEMO-A`; `DEMO-B` falla. Utilice únicamente operadores admitidos para el tipo de datos seleccionado y pruebe por separado los datos de líneas coincidentes que faltan.

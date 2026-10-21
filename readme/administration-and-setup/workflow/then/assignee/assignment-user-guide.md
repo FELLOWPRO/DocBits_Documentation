@@ -779,3 +779,23 @@ Both teams process in sequence
 * **ACTION\_SEND\_EMAIL** - Notificar a la persona asignada
 * **CONDITION\_USER\_IS\_ISNOT** - Verifique si se asignó la persona correcta
 * **CONDITION\_GROUP\_IS\_ISNOT** - Verifique si se asignó el grupo correcto
+
+<!-- workflow-card-example-action_assign_doc_to_first_user_and_tasks-20261021 -->
+
+### Asigne el documento al primer usuario devuelto y cree tareas.
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-ae5af7c6bdc2-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+
+`ACTION_ASSIGN_DOC_TO_FIRST_USER_AND_TASKS` · versión 2
+
+Utilice una regla de tabla de decisiones de demostración que devuelva los usuarios configurados `Demo Reviewer A` y `Demo Reviewer B` en ese orden. Seleccione la opción de tarea/notificación, título `Review invoice`, descripción, prioridad y preferencia de correo electrónico. El primer usuario devuelto es el destino de la asignación de documentos y las tareas/notificaciones configuradas se dirigen a los usuarios devueltos. Verifique ambas salidas; una declaración vacía no debe tratarse como una cesión.
+
+<!-- workflow-card-example-action_assign_supplier_user_first_return_of_dt-20261021 -->
+
+### Asignar el primer usuario devuelto al proveedor.
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-0c3d87c8a5e7-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+
+`ACTION_ASSIGN_SUPPLIER_USER_FIRST_RETURN_OF_DT` · versión 2
+
+Utilice un proveedor de demostración registrado y una regla de tabla de decisiones cuyo primer resultado de usuario sea `Demo Supplier Owner`. Seleccione la tabla de decisiones y, si es necesario, plantillas de correo electrónico. La asociación proveedor-usuario utiliza el primer usuario devuelto; No es la misma operación que asignar el documento. Verifique el resultado del proveedor por separado y pruebe una devolución de regla vacía.

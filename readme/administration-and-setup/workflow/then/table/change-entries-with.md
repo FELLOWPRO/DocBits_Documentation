@@ -28,7 +28,7 @@ La tarjeta de flujo de trabajo **"Change Entries in Table"** se utiliza para act
 ## **Funcionalidad:**
 
 * **Evaluación de la condición:**\
-  La tarjeta solo ejecuta su acción si las secciones **"Donde"** y **"Y"** se evalúan como verdaderas.
+  La tarjeta solo ejecuta su acción si las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
 * **Actualización de las entradas de la tabla:**\
   La tarjeta realiza la operación seleccionada (**+**, **-**, **\*** o **/**) sobre los valores de la **columna** elegida de la **tabla** seleccionada, usando el **valor** especificado.
 
@@ -46,3 +46,15 @@ La tarjeta de flujo de trabajo **"Change Entries in Table"** se utiliza para act
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo **"Change Entries in Table"** posibilita actualizaciones automatizadas de las entradas de la base de datos seleccionando una **tabla**, una **columna** y la **operación matemática** deseada. Esta tarjeta es esencial para realizar modificaciones masivas de datos o cálculos dentro de su base de datos.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo usarlo:** Aplicar un ajuste numérico a una columna de tabla existente.
+
+**Configuración:** Seleccione la tabla de demostración `lines`, columna numérica `quantity`, suma y valor `1`.
+
+**Resultado esperado y contraejemplo:** Una cantidad existente de `2` se convierte en `3`. Repetir esta acción produce `4`, así que úselo solo cuando pretenda realizar sumas repetidas.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

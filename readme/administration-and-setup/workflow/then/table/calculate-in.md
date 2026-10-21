@@ -37,7 +37,7 @@ La tarjeta de flujo de trabajo **"Calcular con dependencia de expresiones regula
 ## **Funcionalidad:**
 
 * **Evaluación de la condición:**
-  * La tarjeta solo ejecuta su acción si las secciones **"Donde"** y **"Y"** se evalúan como verdaderas.
+  * La tarjeta solo ejecuta su acción si las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
   * La tarjeta solo ejecuta su acción si el valor de la columna de dependencia coincide con el **patrón regex** proporcionado.
 * **Cálculo de columnas:**\
   Si el patrón regex coincide, la tarjeta realiza la operación matemática seleccionada entre las dos columnas elegidas.
@@ -62,3 +62,15 @@ La tarjeta de flujo de trabajo **"Calcular con dependencia de expresiones regula
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo **"Calcular con dependencia de expresiones regulares"** proporciona una forma potente de realizar cálculos con lógica condicional basada en un patrón regex. Esto garantiza que solo las filas en las que la columna de dependencia coincide con el patrón especificado se sometan al cálculo indicado, y el resultado se almacena en la columna de resultado elegida.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo usarlo:** Calcula solo las filas de la tabla seleccionadas.
+
+**Configuración:** Utilice la tabla de demostración `lines` con columnas numéricas `quantity` y `unit_price`. Seleccione filas coincidentes a través de la columna de dependencia y la expresión regular, multiplique las columnas numéricas y escriba en `line_total`.
+
+**Resultado esperado y contraejemplo:** Una fila seleccionada con `2` y `10` recibe `20`. Una fila que no coincida se debe verificar por separado para confirmar que no fue seleccionada para el cálculo.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

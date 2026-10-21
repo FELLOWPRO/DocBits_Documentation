@@ -36,3 +36,15 @@ Esta tarjeta de flujo de trabajo gestiona la ejecución de operaciones en funci�
 #### Conclusión
 
 La tarjeta de flujo de trabajo "Assigned User Condition" es una herramienta fundamental para gestionar flujos de trabajo de documentos y tareas que dependen de las asignaciones de usuario. Al permitir condiciones basadas en si una tarea o documento está asignado a usuarios específicos, garantiza que los flujos de trabajo solo se disparen por las interacciones de usuario adecuadas, mejorando tanto la responsabilidad como la alineación de las tareas dentro de los equipos. Documentar claramente esta tarjeta ayudará a los usuarios a comprender su importancia e integrarla de forma eficaz en sus flujos de trabajo, garantizando operaciones fluidas y eficientes adaptadas a los roles y responsabilidades de los usuarios.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Continuar solo cuando un documento se asigna a un revisor aprobado.
+
+**Configuración:** Seleccione uno de los usuarios de demostración configurados `Demo Reviewer A` y `Demo Reviewer B`.
+
+**Resultado esperado y contraejemplo:** Se aprueba un documento asignado a `Demo Reviewer B`; uno asignado a un usuario diferente falla.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

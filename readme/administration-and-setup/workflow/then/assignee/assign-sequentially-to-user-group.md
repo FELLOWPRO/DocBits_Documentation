@@ -30,3 +30,15 @@ La tarjeta de flujo de trabajo "**Asignar el documento secuencialmente al usuari
 ## **Conclusión**
 
 La tarjeta de flujo de trabajo "**Asignar el documento secuencialmente al usuario/grupo según la tabla de decisiones**" garantiza un enrutamiento de documentos eficiente y dinámico. Al aprovechar la lógica de la tabla de decisión y los valores de prioridad, la tarjeta facilita una asignación precisa a un usuario o a un grupo, agilizando los flujos de trabajo de documentos.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Utilice una tabla de decisiones para seleccionar un responsable de documento priorizado.
+
+**Configuración:** Configure una regla de tabla de decisiones de demostración coincidente que devuelva al usuario o grupo deseado, luego seleccione esa tabla en la tarjeta.
+
+**Resultado esperado y contraejemplo:** El asignatario devuelto se utiliza para la asignación secuencial de documentos. Sin una devolución equivalente, no asuma un responsable predeterminado; Inspeccione el resultado y el comportamiento de reserva configurado de esta versión.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

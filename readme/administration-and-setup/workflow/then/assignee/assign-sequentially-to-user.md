@@ -33,3 +33,15 @@ La tarjeta de flujo de trabajo "**Asignar secuencialmente al usuario**" automati
 ## **Conclusión**
 
 La tarjeta de flujo de trabajo "Assign the Document Sequentially to User" garantiza una distribución organizada de los documentos al asignarlos en una secuencia priorizada. Esto mejora la gestión de tareas y reduce los retrasos en el procesamiento.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo usarlo:** Agregue un usuario a una secuencia priorizada de aprobación de documentos.
+
+**Configuración:** Seleccione `Demo Reviewer A` y prioridad `10`. Agregue una tarea separada con prioridad `20` cuando se necesite un revisor posterior.
+
+**Resultado esperado y contraejemplo:** Las asignaciones llevan las prioridades configuradas; el valor numérico más bajo tiene mayor prioridad. Verifique la secuencia de las tareas, no solo el orden de las tarjetas en el lienzo.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

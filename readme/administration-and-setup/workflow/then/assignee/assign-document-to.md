@@ -17,7 +17,7 @@ La tarjeta de flujo de trabajo **"Asignar documento a \[Usuario/grupo] según la
 
 ## Funcionalidad:
 
-* **Evaluación de la condición:** La tarjeta solo ejecuta su acción si las secciones **"Donde"** y **"Y"** se evalúan como verdaderas.
+* **Evaluación de la condición:** La tarjeta solo ejecuta su acción si las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
 * **Asignación dinámica del documento:** El documento se asigna al **usuario** o **grupo** determinado por la **tabla de decisión**.
 
 ## Configuración:
@@ -28,3 +28,15 @@ La tarjeta de flujo de trabajo **"Asignar documento a \[Usuario/grupo] según la
 ## Conclusión:
 
 La tarjeta de flujo de trabajo **"Asignar documento a \[Usuario/grupo] según la tabla de decisiones"** proporciona capacidades de asignación dinámica de documentos basadas en lógica de decisión. Esto garantiza un procesamiento preciso y eficiente al dirigir automáticamente los documentos al **usuario** o **grupo** adecuado, mejorando la automatización del flujo de trabajo.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Elija un documento asignado de una tabla de decisiones.
+
+**Configuración:** Seleccione una tabla de decisión de demostración cuya regla de coincidencia devuelva el revisor configurado y elija el tipo de asignado que ofrece esta versión de tarjeta.
+
+**Resultado esperado y contraejemplo:** El usuario o grupo devuelto se convierte en el responsable del documento. Un resultado de tabla de decisiones vacía debe diagnosticarse por separado.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

@@ -22,7 +22,7 @@ La tarjeta de flujo de trabajo **"Assign to Group"** facilita la asignación de 
 
 ## Funcionalidad:
 
-* **Evaluación de la condición:** La tarjeta solo ejecuta su acción si las secciones **"Donde"** y **"Y"** se evalúan como verdaderas.
+* **Evaluación de la condición:** La tarjeta solo ejecuta su acción si las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
 * **Asignación del documento:** Asigna el documento al **grupo** seleccionado. En la **versión 3**, el **árbol de decisión** determina el grupo de destino dinámicamente si está habilitado.
 
 ## Configuración:
@@ -33,3 +33,15 @@ La tarjeta de flujo de trabajo **"Assign to Group"** facilita la asignación de 
 ## Conclusión:
 
 La tarjeta de flujo de trabajo **"Assign to Group"** automatiza la asignación de documentos a **grupos** predefinidos, mejorando la coordinación de los equipos. La **versión 3** introduce la capacidad de asignar grupos dinámicamente según la lógica del árbol de decisión.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo usarlo:** Coloque un documento en una cola de revisión compartida.
+
+**Configuración:** Seleccione el grupo configurado `Demo Finance`.
+
+**Resultado esperado y contraejemplo:** El documento se asigna al grupo seleccionado. Se trata de una asignación de documentos, no de una promesa de que se creará una tarea o un correo electrónico adicional.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

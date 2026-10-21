@@ -62,3 +62,15 @@ La tarjeta de flujo de trabajo "**Asignar documento y crear tarea/notificación 
 ## **Conclusión**
 
 La tarjeta de flujo de trabajo "Assign Document and Create Task/Notification for Group" garantiza que los documentos se asignen al grupo adecuado a la vez que crea tareas o notificaciones con opciones personalizables de prioridad y notificación por correo electrónico. Esto agiliza la gestión de documentos y mejora la eficiencia del flujo de trabajo.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo usarlo:** Cree una tarea de equipo junto con la asignación de documentos priorizados.
+
+**Configuración:** Seleccione `Demo Finance`, el título `Review invoice` y las prioridades de tarea y asignación.
+
+**Resultado esperado y contraejemplo:** Verifique la asignación del documento del grupo y la tarea/notificación por separado. Una tarea por sí sola no es evidencia de la aprobación de un documento completo.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

@@ -36,3 +36,15 @@ Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones segú
 La tarjeta de flujo de trabajo "Checkbox Field Condition" es una herramienta fundamental para gestionar formularios y documentos dinámicos dentro de un sistema ERP, donde las entradas del usuario pueden determinar los procesos de datos posteriores. Al automatizar acciones según el estado de una casilla de verificación, esta tarjeta mejora la eficiencia del flujo de trabajo y garantiza que los comportamientos del sistema se ajusten a las entradas del usuario. Una documentación clara de esta tarjeta ayudará a los usuarios a implementarla de forma eficaz en sus operaciones, permitiendo un mejor control sobre los comportamientos de los formularios y las automatizaciones de procesos.
 
 **Nota: No todos los clientes tienen la casilla de verificación, pero se puede añadir si se desea.**
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo usarlo:** Ejecute un seguimiento solo después de que se haya establecido un indicador de revisión explícito.
+
+**Configuración:** Seleccione el campo de casilla de verificación `review_complete` y booleano `true`.
+
+**Resultado esperado y contraejemplo:** Se pasa una casilla marcada. Una casilla de verificación no marcada falla; no utilice un campo faltante como prueba de la revisión completa.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

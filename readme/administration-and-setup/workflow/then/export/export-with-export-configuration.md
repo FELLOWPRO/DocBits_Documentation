@@ -40,3 +40,15 @@ La tarjeta de flujo de trabajo **"Exportar documento con configuración de expor
 En v3, elija también **Estado después de la exportación**: `finished` cierra el documento después de una exportación exitosa; `exported` lo deja abierto para su posterior procesamiento. Las versiones anteriores conservan `finished`. Una selección que falta tiene por defecto `finished`; se rechaza una selección no válida.
 
 Si las tareas abiertas impiden la exportación, la tarjeta informa el rechazo. Resolver las tareas y organizar el desencadenante o reintento previsto; Esta tarjeta no garantiza la espera y reanudación automáticas. La tarjeta de exportación en cola independiente recopila una configuración para la exportación final al final de la ejecución. Consulte [Exportar tarjetas y estado de resultados](../../cards-overview/export-cards-guide.md).
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Elija una configuración de exportación específica para un documento validado.
+
+**Configuración:** Seleccione el exportador de demostración configurado y establezca Ignorar tareas pendientes en `false`. Utilice un documento con una tarea abierta y luego una prueba independiente sin tareas abiertas.
+
+**Resultado esperado y contraejemplo:** No se debe suponer que el caso de tarea abierta se reanudará automáticamente. Después de resolver la tarea, active nuevamente la exportación deseada y verifique el resultado del exportador y el estado de soporte.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

@@ -129,7 +129,7 @@ Use este patrón cuando necesite:
 * Extraer las líneas de la factura
 * Calcular los totales de línea (cant. × precio)
 * Calcular el subtotal (suma de los totales de línea)
-* Calcular el importe de impuestos (subtotal × tipo impositivo)
+* Calcular el importe de impuestos (subtotal × `Tax_Rate`)
 * Calcular el total general (subtotal + impuestos)
 * Convertir a EUR si la factura está en otra divisa
 * Dar formato a los importes con 2 decimales

@@ -48,3 +48,15 @@ Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones compa
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo "Compare Two Fields with Tolerance" es una herramienta potente para comparar campos de documento teniendo en cuenta las desviaciones admisibles en los datos. Al aplicar tolerancia a las comparaciones de campos, esta tarjeta añade flexibilidad al flujo de trabajo, permitiéndole manejar las variaciones de los datos del mundo real. Mejora la toma de decisiones, facilita la validación de datos y mejora la automatización general del flujo de trabajo.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo usar:** Acepte una pequeña diferencia entre una cantidad extraída y una cantidad calculada por separado.
+
+**Configuración:** Seleccione los campos numéricos `net_total` y `calculated_total`, comparación de igualdad y una tolerancia absoluta de `5`. Utilice los valores `103` y `100`.
+
+**Resultado esperado y contraejemplo:** La diferencia es `3`, por lo que está dentro de la tolerancia. Con `110` y `100`, la diferencia es `10` y la condición de igualdad con tolerancia falla.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

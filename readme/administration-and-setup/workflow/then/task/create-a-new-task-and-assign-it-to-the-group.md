@@ -1,19 +1,19 @@
-# Create a New Task and assign it to the group
+# Erstellen Sie eine neue Aufgabe und weisen Sie sie der Gruppe zu
 
 <figure><img src="../../../../.gitbook/assets/image (289).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 
-Die Workflow-Karte **"Create Group Task or Notification"** ermöglicht die Erstellung von Aufgaben oder Benachrichtigungen für bestimmte Gruppen und gewährleistet so eine effiziente Kommunikation und ein effizientes Aufgabenmanagement. In späteren Versionen um eine Entscheidungsbaum-Funktionalität erweitert, bestimmt sie die zugewiesene Gruppe oder Methode dynamisch und optimiert so die Abläufe.
+Die Workflow-Karte **„Gruppenaufgabe oder Benachrichtigung erstellen“** ermöglicht die Erstellung von Aufgaben oder Benachrichtigungen für bestimmte Gruppen und gewährleistet so eine effiziente Kommunikation und ein effizientes Aufgabenmanagement. In späteren Versionen um eine Entscheidungsbaum-Funktionalität erweitert, bestimmt sie die zugewiesene Gruppe oder Methode dynamisch und optimiert so die Abläufe.
 
 ## **Bestandteile der Karte:**
 
 1. **Titel**
    * **Beschreibung**: Gibt den Titel der Aufgabe oder Benachrichtigung an.
-   * **Detail**: Dient als Bezeichner für die erstellte Aufgabe oder Benachrichtigung.
+   * **Detailliert**: Dient als Bezeichner für die erstellte Aufgabe oder Benachrichtigung.
 2. **Beschreibung**
    * **Beschreibung**: Beschreibt den Kontext oder die Details der Aufgabe oder Benachrichtigung.
-   * **Detail**: Schafft Klarheit über ihren Zweck.
+   * **Detailliert**: Schafft Klarheit über ihren Zweck.
 3. **Priorität**
    * **Beschreibung**: Legt die Wichtigkeitsstufe der Aufgabe fest.
    * **Optionen**:
@@ -22,7 +22,7 @@ Die Workflow-Karte **"Create Group Task or Notification"** ermöglicht die Erste
      * **Niedrig**: Kann später bearbeitet werden.
 4. **Zugewiesene Gruppe**
    * **Beschreibung**: Gibt die Gruppe an, die für die Aufgabe oder Benachrichtigung verantwortlich ist.
-   * **Detail**: Wird aus einer Dropdown-Liste der verfügbaren Gruppen ausgewählt.
+   * **Detailliert**: Wird aus einer Dropdown-Liste der verfügbaren Gruppen ausgewählt.
 5. **E-Mail-Benachrichtigung**
    * **Beschreibung**: Ermöglicht das Senden einer E-Mail, um die zugewiesene Gruppe zu benachrichtigen.
    * **Optionen**:
@@ -36,16 +36,16 @@ Die Workflow-Karte **"Create Group Task or Notification"** ermöglicht die Erste
    * **Optionen**:
      * **True**: Aktiviert die Verarbeitung über den Entscheidungsbaum.
      * **False**: Deaktiviert die Verarbeitung über den Entscheidungsbaum.
-2. **Task/Notification-Option** **(nur Version 4)**
+2. **Aufgaben-/Benachrichtigungsoption** **(nur Version 4)**
    * **Beschreibung**: Ermöglicht die Erstellung entweder einer Aufgabe oder einer Benachrichtigung.
    * **Optionen**:
-     * **Task**: Erstellt eine Aufgabe für die ausgewählte Gruppe.
+     * **Aufgabe**: Erstellt eine Aufgabe für die ausgewählte Gruppe.
      * **Notification**: Sendet eine Benachrichtigung, anstatt eine Aufgabe zu erstellen.
 
 ## **Funktionalität:**
 
 * **Bedingungsauswertung**:\
-  Führt die Kartenaktion nur aus, wenn die Abschnitte **"Where"** und **"And"** erfüllt sind.
+  Führt die Kartenaktion nur aus, wenn die Abschnitte **„Wo“** und **„Und“** erfüllt sind.
 * **Erstellung von Aufgabe oder Benachrichtigung**:
   * Es wird eine Aufgabe für die ausgewählte Gruppe mit dem angegebenen Titel, der Beschreibung und der Priorität erstellt.
   * In Version 4 kann die Karte anstelle einer Aufgabe eine Benachrichtigung erstellen.
@@ -64,4 +64,4 @@ Die Workflow-Karte **"Create Group Task or Notification"** ermöglicht die Erste
 
 ## **Fazit:**
 
-Die Workflow-Karte **"Create Group Task or Notification"** vereinfacht das Management von Aufgaben und Benachrichtigungen, indem sie Gruppen direkt anspricht. Ihre dynamische Zuweisungsfunktion, die durch den Entscheidungsbaum ermöglicht wird, erhöht die Flexibilität, während E-Mail-Benachrichtigungen eine zeitnahe Kommunikation gewährleisten. Die Versionen 3 und 4 fügen erweiterte Funktionalität hinzu und machen sie zu einem vielseitigen Werkzeug für eine effiziente Workflow-Ausführung.
+Die Workflow-Karte **„Gruppenaufgabe oder Benachrichtigung erstellen“** vereinfacht das Management von Aufgaben und Benachrichtigungen, indem sie Gruppen direkt anspricht. Ihre dynamische Zuweisungsfunktion, die durch den Entscheidungsbaum ermöglicht wird, erhöht die Flexibilität, während E-Mail-Benachrichtigungen eine zeitnahe Kommunikation gewährleisten. Die Versionen 3 und 4 fügen erweiterte Funktionalität hinzu und machen sie zu einem vielseitigen Werkzeug für eine effiziente Workflow-Ausführung.

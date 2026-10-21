@@ -1,4 +1,4 @@
-# Order Data in Order Confirmation
+# Bestelldaten in der Bestellbestätigung
 
 <figure><img src="../../../../.gitbook/assets/image (265).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -14,7 +14,7 @@ Diese Workflow-Karte ist darauf ausgelegt, bestimmte Felder – **Stückpreis**,
      * **Stückpreis**: Vergleicht den Stückpreis in beiden Dokumenten.
      * **Rabatt**: Vergleicht den Rabattprozentsatz oder -wert.
      * **Menge**: Vergleicht die bestellte Menge.
-2. **Operator**
+2. **Betreiber**
    * **Beschreibung:** Legt die während des Vergleichs angewendete Bedingung fest.
    * **Optionen:**
      * **Gleich (=):** Prüft, ob der Wert im ausgewählten Feld zwischen der Auftragsbestätigung und der Bestellung übereinstimmt.

@@ -1,4 +1,4 @@
-# Call Api
+# Rufen Sie die API an
 
 <figure><img src="../../../../.gitbook/assets/Then_Call_API.png" alt="" width="563"><figcaption></figcaption></figure>
 

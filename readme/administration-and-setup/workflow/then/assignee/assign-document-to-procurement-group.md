@@ -1,4 +1,4 @@
-# Assign document to procurement group
+# Dokument der Beschaffungsgruppe zuordnen
 
 <figure><img src="../../../../.gitbook/assets/image (305).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -15,7 +15,7 @@ Die Workflow-Karte **"Assign to Procurement Group"** wird verwendet, um ein Doku
 ## **Funktionalität:**
 
 * **Bedingungsauswertung:**\
-  Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Ausführung der Aktion:**\
   Sind beide Bedingungen erfüllt, wird das Dokument der angegebenen Beschaffungsgruppe zugewiesen. Ist eine der Bedingungen nicht erfüllt, wird keine Aktion ausgeführt, und das Dokument bleibt unzugewiesen.
 

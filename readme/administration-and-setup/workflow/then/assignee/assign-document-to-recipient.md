@@ -1,10 +1,10 @@
-# Assign document to recipient
+# Dokument dem Empfänger zuordnen
 
 <figure><img src="../../../../.gitbook/assets/image (301).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 
-Die Workflow-Karte **"Assign Document to Disponent / Purchaser"** weist ein Dokument entweder einem **Disponenten** oder einem **Einkäufer** zu. Wird kein gültiger Benutzer gefunden, wird ein Ersatzbenutzer ausgewählt, um sicherzustellen, dass das Dokument immer jemandem zugewiesen ist.
+Die Workflow-Karte **„Dokument dem Disponenten/Käufer zuordnen“** weist ein Dokument entweder einem **Disponenten** oder einem **Einkäufer** zu. Wird kein gültiger Benutzer gefunden, wird ein Ersatzbenutzer ausgewählt, um sicherzustellen, dass das Dokument immer jemandem zugewiesen ist.
 
 ## **Bestandteile der Karte:**
 
@@ -20,7 +20,7 @@ Die Workflow-Karte **"Assign Document to Disponent / Purchaser"** weist ein Doku
 ## **Funktionalität:**
 
 * **Bedingungsauswertung:**\
-  Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Dokumentzuweisung:**\
   Die Karte weist das Dokument je nach Auswahl entweder dem **Disponenten** oder dem **Einkäufer** zu. Ist die ausgewählte Person nicht verfügbar oder nicht gültig, wird das Dokument dem Ersatzbenutzer zugewiesen.
 
@@ -33,4 +33,4 @@ Die Workflow-Karte **"Assign Document to Disponent / Purchaser"** weist ein Doku
 
 ## **Fazit:**
 
-Die Workflow-Karte **"Assign Document to Disponent / Purchaser"** stellt sicher, dass das Dokument immer zugewiesen wird – entweder dem ausgewählten Disponenten/Einkäufer oder bei Bedarf dem Ersatzbenutzer. Dies minimiert Workflow-Unterbrechungen und stellt sicher, dass die Dokumentverarbeitung reibungslos fortgesetzt wird.
+Die Workflow-Karte **„Dokument dem Disponenten/Käufer zuordnen“** stellt sicher, dass das Dokument immer zugewiesen wird – entweder dem ausgewählten Disponenten/Einkäufer oder bei Bedarf dem Ersatzbenutzer. Dies minimiert Workflow-Unterbrechungen und stellt sicher, dass die Dokumentverarbeitung reibungslos fortgesetzt wird.

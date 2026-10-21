@@ -1,4 +1,4 @@
-# If Country in Field is One of
+# Wenn das Land im Feld eines von ist
 
 <figure><img src="../../../../.gitbook/assets/image (14) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -10,12 +10,12 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob ein angegebenes Land, 
 
 1. **Feldname**
    * **Beschreibung:** Gibt das Dokumentfeld an, in dem der Ländername oder -code gespeichert ist.
-   * **Detail:** Dieser sollte exakt mit dem Feldbezeichner der Länderdaten innerhalb des Dokuments übereinstimmen.&#x20;
-2. **Operator**
+   * **Detail:** Dieser sollte exakt mit dem Feldbezeichner der Länderdaten innerhalb des Dokuments übereinstimmen.
+2. **Betreiber**
    * **Beschreibung:** Legt fest, ob das Land im Feld Teil einer vordefinierten Länderliste sein muss.
    * **Optionen:**
      * **Is:** Das Land muss in der Liste der angegebenen Länder enthalten sein, damit die Bedingung erfüllt ist.
-     * **Is Not:** Das Land darf nicht in der Liste der angegebenen Länder enthalten sein, damit die Bedingung erfüllt ist.
+     * **Ist nicht:** Das Land darf nicht in der Liste der angegebenen Länder enthalten sein, damit die Bedingung erfüllt ist.
 3. **Länder**
    * **Beschreibung:** Gibt die Liste der Länder an, mit denen das ausgewählte Land verglichen wird.
    * **Detail:** Dies ist eine durch Kommas getrennte Länderliste. Der Vergleich prüft, ob das Land im Feld in dieser Liste enthalten ist.

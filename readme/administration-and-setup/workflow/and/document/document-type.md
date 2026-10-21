@@ -1,4 +1,4 @@
-# Document Type
+# Dokumenttyp
 
 <figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -8,14 +8,14 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob ein Dokument einem bes
 
 ## Bestandteile der Karte:
 
-1. **Operator**
+1. **Betreiber**
    * **Beschreibung**: Legt fest, ob das Dokument vom angegebenen Typ sein soll oder nicht.
    * **Optionen**:
      * **Is**: Das Dokument muss dem angegebenen Typ entsprechen, damit die Bedingung erfüllt ist.
-     * **Is Not**: Das Dokument darf nicht dem angegebenen Typ entsprechen, damit die Bedingung erfüllt ist.
+     * **Ist nicht**: Das Dokument darf nicht dem angegebenen Typ entsprechen, damit die Bedingung erfüllt ist.
 2. **Typ**
    * **Beschreibung**: Gibt den Dokumenttyp an, mit dem verglichen wird.
-   * **Detail**: Diese umfasst verschiedene Dokumenttypen wie "Invoice", "Purchase Order" usw., auf deren Grundlage die Bedingung (is/is not) ausgewertet wird.
+   * **Detailliert**: Diese umfasst verschiedene Dokumenttypen wie "Invoice", "Purchase Order" usw., auf deren Grundlage die Bedingung (is/is not) ausgewertet wird.
 
 ## Funktionalität:
 

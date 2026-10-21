@@ -1,227 +1,233 @@
-# Workflow-Pattern-Leitfäden
+# Leitfäden für Workflow-Muster
 
-**Version:** 1.0
-**Zuletzt aktualisiert:** 23. Oktober 2025
+**Version:** 1.0 **Letzte Aktualisierung:** 23. Oktober 2025
 
----
+***
 
-## Überblick
+## Übersicht
 
-Dieser Bereich enthält umfassende Workflow-Pattern-Leitfäden, die zeigen, wie man mehrere Workflow-Karten kombiniert, um typische geschäftliche Szenarien zu lösen. Jedes Pattern bietet eine Schritt-für-Schritt-Anleitung, vollständige Beispiele und Best Practices.
+Dieses Verzeichnis enthält umfassende Workflow-Musterhandbücher, die veranschaulichen, wie mehrere Workflow-Karten kombiniert werden, um gängige Geschäftsszenarien zu lösen. Jedes Muster bietet schrittweise Implementierungsanweisungen, vollständige Beispiele und Best Practices.
 
-**Was sind Workflow-Patterns?**
+**Was sind Workflow-Muster?**
 
-Workflow-Patterns sind bewährte, wiederverwendbare Lösungen für häufige Herausforderungen in der Dokumentenverarbeitung. Statt bei null anzufangen, können Sie diese Patterns als Vorlagen verwenden und an Ihre Anforderungen anpassen.
+Workflow-Muster sind bewährte, wiederverwendbare Lösungen für häufige Herausforderungen bei der Dokumentationsverarbeitung. Anstatt bei Null anzufangen, können Sie diese Muster als Vorlagen verwenden und sie an Ihre spezifischen Bedürfnisse anpassen.
 
----
+***
 
-## Der Workflow-Builder auf einen Blick
+## Der Workflow Builder im Überblick
 
-Jedes Pattern auf dieser Seite wird im **Workflow-Builder** zusammengestellt. Sie erreichen ihn über **Workflow Dashboard → Workflow List → Add Workflow** (oder indem Sie einen bestehenden Workflow öffnen). Das Dashboard zeigt Ihnen den Ausführungsverlauf sowie die Erfolgs-/Fehlerquoten aller Ihrer Workflows:
+Jedes Muster auf dieser Seite wird im **Workflow-Builder** zusammengestellt. Sie erreichen es über **Workflow-Dashboard → Workflow-Liste → Workflow hinzufügen** (oder durch Öffnen eines vorhandenen Workflows). Das Dashboard zeigt Ihnen den Ausführungsverlauf und die Erfolgs-/Fehlerquoten für alle Ihre Workflows:
 
 <figure><img src="../../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard mit Lauf-Summen, Erfolgs- und Fehlerquoten, dem Lauf-Diagramm und der letzten Aktivität"><figcaption><p>Das Workflow Dashboard – Lauf-Summen, Erfolgs-/Fehlerquoten und letzte Aktivität für jeden Workflow.</p></figcaption></figure>
 
-Der Reiter **Workflow List** listet jeden Workflow mit Typ, Ausführungsreihenfolge und Auslöser auf. Über **Add Workflow** legen Sie einen neuen an, oder Sie klicken einen Workflow an, um ihn im Builder zu öffnen:
+Die Registerkarte **Workflow-Liste** listet jeden Workflow mit seinem Typ, seiner Ausführungsreihenfolge und seinem Auslöser auf. Verwenden Sie **Workflow hinzufügen**, um einen neuen zu erstellen, oder klicken Sie auf einen Workflow, um ihn im Builder zu öffnen:
 
 <figure><img src="../../../.gitbook/assets/workflow_list.png" alt="Reiter Workflow List mit Workflows nach Typ, Ausführungsreihenfolge und Auslöser"><figcaption><p>Die Workflow List – jede Zeile ist ein Workflow, den Sie öffnen, ein-/ausschalten oder bearbeiten können.</p></figcaption></figure>
 
-Ein Workflow besteht aus drei Kartengruppen – **When** (der Auslöser), **And** (zusätzliche Bedingungen) und **Then** (die auszuführenden Aktionen). Das Beispiel unten wird bei Rechnungen einer Unterorganisation ausgelöst und weist diese einem Benutzer zu:
+Ein Workflow besteht aus drei Kartengruppen: **When** (der Auslöser), **And** (zusätzliche Bedingungen) und **Then** (die auszuführenden Aktionen). Das folgende Beispiel löst Rechnungen einer Unterorganisation aus und weist sie einem Benutzer zu:
 
 <figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow-Builder-Canvas mit When-, And- und Then-Karten"><figcaption><p>Die Workflow-Builder-Canvas. Jedes Pattern unten ist nur eine andere Kombination aus When- / And- / Then-Karten.</p></figcaption></figure>
 
-Klicken Sie in einer beliebigen Gruppe auf **Add Card**, um die Kartenbibliothek zu öffnen. Die Karten sind nach Kategorie geordnet (Compare with Purchase Order, Partner Cards, Document Field, Date &#x26; Time, Document, Logic, Status, Table, Assignee, …), sodass Sie den Baustein finden, den das jeweilige Pattern benötigt:
+Klicken Sie in einer beliebigen Gruppe auf **Karte hinzufügen**, um die Kartenbibliothek zu öffnen. Die Karten sind nach Kategorien organisiert (Vergleich mit Bestellung, Partnerkarten, Dokumentfeld, Datum und Uhrzeit, Dokument, Logik, Status, Tabelle, Beauftragter usw.), sodass Sie den Baustein finden können, den jedes Muster erfordert:
 
 <figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Dialog Add Card mit den Kartenkategorien und verfügbaren Karten"><figcaption><p>Die <strong>Add Card</strong>-Bibliothek – jede in den Patterns unten genannte Karte wird hier ausgewählt.</p></figcaption></figure>
 
----
+***
 
-## Verfügbare Patterns
+## Verfügbare Muster
 
-### 1. [API-Integrations-Pattern](api-integration-pattern.md)
+### 1. [API-Integrationsmuster](api-integration-pattern.md)
 
-**Komplexität:** Mittel | **Einrichtungszeit:** 45–60 Minuten
+**Komplexität:** Mittel | **Einrichtungszeit:** 45-60 Minuten
 
-Lernen Sie, wie Sie DocBits in externe APIs integrieren, um Daten aus externen Systemen abzurufen, zu validieren und zu speichern.
-
-**Anwendungsfälle:**
-- Echtzeit-Preise aus externen Systemen abrufen
-- Lieferanteninformationen gegen Stammdatenbanken validieren
-- Produktdetails aus Katalogsystemen nachschlagen
-- Wechselkurse aus Währungsdiensten beziehen
-- Adressen per Geocoding-Dienst überprüfen
-
-**Verwendete Karten:** CALL_API, CONDITION_HTTPS_REQUEST_STATUS, ACTION_SET_FIELD_TO_TEXT, CONDITION_COMPARE_TWO_DOCFIELD_VALUES
-
-**[Vollständiges Pattern ansehen →](api-integration-pattern.md)**
-
----
-
-### 2. [Aufgabenverwaltungs-Pattern](task-management-pattern.md)
-
-**Komplexität:** Niedrig-Mittel | **Einrichtungszeit:** 30–45 Minuten
-
-Meistern Sie das Erstellen, Zuweisen, Verfolgen und Verwalten von Aufgaben in DocBits-Workflows für Freigabe- und Prüfprozesse.
+Erfahren Sie, wie Sie DocBits mit externen APIs integrieren, um Daten aus externen Systemen abzurufen, zu validieren und zu speichern.
 
 **Anwendungsfälle:**
-- Freigabe-Workflows erstellen
-- Prüfaufgaben Benutzern zuweisen
-- Ausnahmen behandeln, die manuelles Eingreifen erfordern
-- Probleme an Vorgesetzte eskalieren
-- Mehrstufige Freigabeketten erstellen
-- Aufgabenabschluss und Fristen verfolgen
 
-**Verwendete Karten:** tasks_create, ACTION_ASSIGN_TO_USER, ACTION_SEND_EMAIL_TO_GROUPS, CONDITION_TASK_STATUS
+* Rufen Sie Echtzeitpreise aus externen Systemen ab
+* Validieren Sie Lieferanteninformationen anhand von Masterdatenbanken
+* Suchen Sie in Katalogsystemen nach Produktdetails
+* Erhalten Sie Wechselkurse von Währungsdiensten
+* Überprüfen Sie Adressen mit Geokodierungsdiensten
 
-**[Vollständiges Pattern ansehen →](task-management-pattern.md)**
+**Verwendete Karten:** CALL\_API, CONDITION\_HTTPS\_REQUEST\_STATUS, ACTION\_SET\_FIELD\_TO\_TEXT, CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES
 
----
+[**Vollständiges Muster anzeigen →**](api-integration-pattern.md)
 
-### 3. [PO-Matching-Pattern](po-matching-pattern.md)
+***
 
-**Komplexität:** Mittel-Hoch | **Einrichtungszeit:** 60–90 Minuten
+### 2. [Aufgabenverwaltungsmuster](task-management-pattern.md)
 
-Implementieren Sie umfassende Bestellabgleich-Workflows, um Rechnungen toleranzbasiert gegen Bestellungen zu validieren.
+**Komplexität:** Niedrig-Mittel | **Einrichtungszeit:** 30-45 Minuten
 
-**Anwendungsfälle:**
-- Rechnungen gegen Bestellungen validieren
-- Preisfehler vor der Zahlung erkennen
-- Mengenabweichungen identifizieren
-- Beschaffungskontrollen durchsetzen
-- Doppelzahlungen verhindern
-- Drei-Wege-Abgleich automatisieren
-
-**Verwendete Karten:** PURCHASE_ORDER_FULL_MATCH, CONDITION_DOC_TO_PO_UNIT_PRICE, CONDITION_DOC_TO_PO_QUANTITY, CONDITION_DOC_TO_PO_TAX_LINES
-
-**[Vollständiges Pattern ansehen →](po-matching-pattern.md)**
-
----
-
-### 4. [Entscheidungslogik-Pattern](decision-logic-pattern.md)
-
-**Komplexität:** Mittel | **Einrichtungszeit:** 30–45 Minuten
-
-Implementieren Sie komplexe Entscheidungsbäume und bedingte Routing-Logik, um Dokumente anhand von Geschäftsregeln über verschiedene Pfade zu leiten.
+Beherrschen Sie die Kunst des Erstellens, Zuweisens, Verfolgens und Verwaltens von Aufgaben innerhalb der DocBits-Workflows für Genehmigungs- und Überprüfungsprozesse.
 
 **Anwendungsfälle:**
-- Dokumente nach Betragsschwellen leiten
-- Unterschiedliche Regeln für unterschiedliche Dokumenttypen anwenden
-- Mehrstufige Freigabelogik implementieren
-- Komplexe Geschäftsrichtlinien abbilden
-- Dynamisches Routing anhand mehrerer Kriterien erstellen
-- Freigabematrizen implementieren
 
-**Verwendete Karten:** CONDITION_DOC_FIELD_AMOUNT, CONDITION_DOC_TYPE_IS_ISNOT, CONDITION_SUPPLIER_STATUS_IS_ISNOT, ACTION_ASSIGN_TO_USER
+* Erstellen Sie Genehmigungsworkflows
+* Weisen Sie Benutzern Überprüfungsaufgaben zu
+* Behandeln Sie Ausnahmen, die ein menschliches Eingreifen erfordern
+* Eskalieren Sie Probleme an Manager
+* Erstellen Sie mehrstufige Genehmigungsketten
+* Verfolgen Sie die Aufgabenerledigung und Fristen
 
-**[Vollständiges Pattern ansehen →](decision-logic-pattern.md)**
+**Verwendete Karten:** Aufgaben\_create, ACTION\_ASSIGN\_TO\_USER, ACTION\_SEND\_EMAIL\_TO\_GROUPS, CONDITION\_TASK\_STATUS
 
----
+[**Vollständiges Muster anzeigen →**](task-management-pattern.md)
 
-### 5. [Datentransformations-Pattern](data-transformation-pattern.md)
+***
 
-**Komplexität:** Mittel | **Einrichtungszeit:** 30–45 Minuten
+### 3. [PO-Übereinstimmungsmuster](po-matching-pattern.md)
 
-Transformieren, berechnen, formatieren und anreichern Sie Dokumentdaten, um sie für den Export vorzubereiten, Berechnungen durchzuführen und Formate zu standardisieren.
+**Komplexität:** Mittel-Hoch | **Einrichtungszeit:** 60-90 Minuten
+
+Implementieren Sie umfassende Workflows für den Bestellabgleich, um Rechnungen anhand von Bestellungen mit toleranzbasierter Weiterleitung zu validieren.
 
 **Anwendungsfälle:**
-- Summen, Zwischensummen, Steuern berechnen
-- Währungen oder Einheiten umrechnen
-- Datums-, Zahlen- und Textformate anpassen
-- Werte aus bestehenden Feldern ableiten
-- Daten aus externen Quellen anreichern
-- Datenformate standardisieren
-- Berechnungen validieren
 
-**Verwendete Karten:** ACTION_CALCULATE_FIELD, ACTION_SET_FIELD_TO_TEXT, ACTION_COPY_FIELD_VALUE, CALL_API, CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+* Validieren Sie Rechnungen anhand von Bestellungen
+* Erkennen Sie Preisfehler vor der Zahlung
+* Identifizieren Sie Mengenabweichungen
+* Durchsetzung von Beschaffungskontrollen
+* Vermeiden Sie Doppelzahlungen
+* Automatisieren Sie den Drei-Wege-Abgleich
 
-**[Vollständiges Pattern ansehen →](data-transformation-pattern.md)**
+**Verwendete Karten:** PURCHASE\_ORDER\_FULL\_MATCH, CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE, CONDITION\_DOC\_TO\_PO\_QUANTITY, CONDITION\_DOC\_TO\_PO\_TAX\_LINES
 
----
+[**Vollständiges Muster anzeigen →**](po-matching-pattern.md)
 
-## Pattern-Auswahlhilfe
+***
 
-### Nach Komplexität
+### 4. [Entscheidungslogikmuster](decision-logic-pattern.md)
 
-| Komplexität | Patterns | Am besten für |
-|------------|----------|----------|
-| **Niedrig-Mittel** | [Aufgabenverwaltung](task-management-pattern.md) | Einsteiger, einfache Workflows |
-| **Mittel** | [API-Integration](api-integration-pattern.md)<br>[Entscheidungslogik](decision-logic-pattern.md)<br>[Datentransformation](data-transformation-pattern.md) | Fortgeschrittene, Standard-Workflows |
-| **Mittel-Hoch** | [PO-Matching](po-matching-pattern.md) | Profis, komplexe Validierung |
+**Komplexität:** Mittel | **Einrichtungszeit:** 30-45 Minuten
 
----
+Implementieren Sie komplexe Entscheidungsbäume und bedingte Routing-Logik, um Dokumente auf der Grundlage von Geschäftsregeln über verschiedene Pfade zu verarbeiten.
+
+**Anwendungsfälle:**
+
+* Leiten Sie Dokumente nach Betragsschwellenwerten weiter
+* Wenden Sie unterschiedliche Regeln für unterschiedliche Dokumenttypen an
+* Implementieren Sie eine mehrstufige Genehmigungslogik
+* Behandeln Sie komplexe Geschäftsrichtlinien
+* Erstellen Sie dynamisches Routing basierend auf mehreren Kriterien
+* Implementieren Sie Genehmigungsmatrizen
+
+**Verwendete Karten:** CONDITION\_DOC\_FIELD\_AMOUNT, CONDITION\_DOC\_TYPE\_IS\_ISNOT, CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT, ACTION\_ASSIGN\_TO\_USER
+
+[**Vollständiges Muster anzeigen →**](decision-logic-pattern.md)
+
+***
+
+### 5. [Datentransformationsmuster](data-transformation-pattern.md)
+
+**Komplexität:** Mittel | **Einrichtungszeit:** 30-45 Minuten
+
+Transformieren, berechnen, formatieren und reichern Sie Dokumentdaten an, um sie für den Export vorzubereiten, Berechnungen durchzuführen und Formate zu standardisieren.
+
+**Anwendungsfälle:**
+
+* Berechnen Sie Summen, Zwischensummen und Steuern
+* Konvertieren Sie Währungen oder Einheiten
+* Formatieren Sie Daten, Zahlen und Text
+* Leiten Sie Werte aus vorhandenen Feldern ab
+* Bereichern Sie Daten aus externen Quellen
+* Datenformate standardisieren
+* Berechnungen validieren
+
+**Verwendete Karten:** ACTION\_CALCULATE\_FIELD, ACTION\_SET\_FIELD\_TO\_TEXT, ACTION\_COPY\_FIELD\_VALUE, CALL\_API, CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES
+
+[**Vollständiges Muster anzeigen →**](data-transformation-pattern.md)
+
+***
+
+## Anleitung zur Musterauswahl
+
+### Durch Komplexität
+
+| Komplexität      | Muster                                                                                                                                                                                      | Am besten für                               |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| **Niedrig-Mittel**  | [Aufgabenverwaltung](task-management-pattern.md)                                                                                                                                                 | Anfänger, einfache Arbeitsabläufe            |
+| **Mittel**      | <p><a href="api-integration-pattern.md">API-Integration</a><br><a href="decision-logic-pattern.md">Entscheidungslogik</a><br><a href="data-transformation-pattern.md">Datentransformation</a></p> | Fortgeschrittene Benutzer, Standard-Workflows |
+| **Mittel-Hoch** | [PO-Matching](po-matching-pattern.md)                                                                                                                                                         | Fortgeschrittene Benutzer, komplexe Validierung     |
+
+***
 
 ### Nach Anwendungsfall
 
-| Ich möchte … | Dieses Pattern verwenden |
-|--------------|------------------|
-| In externe Systeme integrieren | [API-Integrations-Pattern](api-integration-pattern.md) |
-| Freigabe-Workflows erstellen | [Aufgabenverwaltungs-Pattern](task-management-pattern.md) |
-| Gegen Bestellungen validieren | [PO-Matching-Pattern](po-matching-pattern.md) |
-| Anhand von Bedingungen routen | [Entscheidungslogik-Pattern](decision-logic-pattern.md) |
-| Daten berechnen und transformieren | [Datentransformations-Pattern](data-transformation-pattern.md) |
+| Ich muss...                     | Verwenden Sie dieses Muster                                              |
+| -------------------------------- | ------------------------------------------------------------- |
+| Integration mit externen Systemen  | [API-Integrationsmuster](api-integration-pattern.md)         |
+| Erstellen Sie Genehmigungsworkflows        | [Aufgabenverwaltungsmuster](task-management-pattern.md)         |
+| Gegen Bestellungen validieren | [PO-Übereinstimmungsmuster](po-matching-pattern.md)                 |
+| Route basierend auf den Bedingungen        | [Entscheidungslogikmuster](decision-logic-pattern.md)           |
+| Daten berechnen und transformieren     | [Datentransformationsmuster](data-transformation-pattern.md) |
 
----
+***
 
 ### Nach Branche/Abteilung
 
-| Branche/Abteilung | Empfohlene Patterns |
-|---------------------|---------------------|
-| **Finanzen/Buchhaltung** | [PO-Matching](po-matching-pattern.md), [Aufgabenverwaltung](task-management-pattern.md), [Datentransformation](data-transformation-pattern.md) |
-| **Einkauf** | [PO-Matching](po-matching-pattern.md), [Entscheidungslogik](decision-logic-pattern.md), [API-Integration](api-integration-pattern.md) |
-| **Betrieb** | [Aufgabenverwaltung](task-management-pattern.md), [Entscheidungslogik](decision-logic-pattern.md) |
-| **IT/Integration** | [API-Integration](api-integration-pattern.md), [Datentransformation](data-transformation-pattern.md) |
-| **Alle Abteilungen** | [Entscheidungslogik](decision-logic-pattern.md), [Aufgabenverwaltung](task-management-pattern.md) |
+| Branche/Abteilung    | Empfohlene Muster                                                                                                                        |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Finanzen/Buchhaltung** | [PO Matching](po-matching-pattern.md), [Aufgabenverwaltung](task-management-pattern.md), [Datentransformation](data-transformation-pattern.md) |
+| **Beschaffung**        | [PO Matching](po-matching-pattern.md), [Entscheidungslogik](decision-logic-pattern.md), [API-Integration](api-integration-pattern.md)           |
+| **Operationen**         | [Aufgabenverwaltung](task-management-pattern.md), [Entscheidungslogik](decision-logic-pattern.md)                                                  |
+| **IT/Integration**     | [API-Integration](api-integration-pattern.md), [Datentransformation](data-transformation-pattern.md)                                        |
+| **Alle Abteilungen**    | [Entscheidungslogik](decision-logic-pattern.md), [Aufgabenmanagement](task-management-pattern.md)                                                  |
 
----
+***
 
-## So verwenden Sie diese Patterns
+## So verwenden Sie diese Muster
 
-### Schritt 1: Pattern auswählen
+### Schritt 1: Wählen Sie ein Muster
 
-1. Sehen Sie sich die Pattern-Beschreibungen oben an
-2. Bestimmen Sie, welches Pattern zu Ihrem Anwendungsfall passt
-3. Prüfen Sie Komplexität und geschätzte Einrichtungszeit
-4. Lesen Sie den Abschnitt „Wann verwenden“ im Pattern-Leitfaden
+1. Sehen Sie sich die Musterbeschreibungen oben an
+2. Identifizieren Sie, welches Muster zu Ihrem Anwendungsfall passt
+3. Überprüfen Sie die Komplexität und die geschätzte Einrichtungszeit
+4. Lesen Sie den Abschnitt „Verwendungszweck“ in der Musteranleitung
 
-### Schritt 2: Voraussetzungen prüfen
+### Schritt 2: Überprüfen Sie die Voraussetzungen
 
-Jeder Pattern-Leitfaden listet auf:
-- Erforderliches Wissen
-- Zuerst zu lesende verwandte Leitfäden
-- Verwendete Karten
-- Konfigurationsanforderungen
+In jedem Musterführer ist Folgendes aufgeführt:
 
-### Schritt 3: Schritt-für-Schritt-Anleitung befolgen
+* Erforderliche Kenntnisse
+* Verwandte Leitfäden, die Sie zuerst lesen sollten
+* Karten, die verwendet werden
+* Konfigurationsanforderungen
 
-Jedes Pattern bietet:
-- Vollständiges Workflow-Beispiel
-- Schritt-für-Schritt-Umsetzungsanleitung
-- Konfigurationsvorlagen
-- Praxisbeispiele
-- Tipps zur Fehlerbehebung
+### Schritt 3: Befolgen Sie die Schritt-für-Schritt-Anweisungen
 
-### Schritt 4: An Ihre Anforderungen anpassen
+Jedes Muster bietet:
 
-- Passen Sie das Beispiel an Ihre Geschäftsregeln an
-- Justieren Sie Schwellen und Toleranzen
-- Ändern Sie die Routing-Logik
-- Fügen Sie Schritte hinzu oder entfernen Sie sie
-- Testen Sie gründlich vor dem Produktiveinsatz
+* Vollständiges Workflow-Beispiel
+* Schritt-für-Schritt-Anleitung zur Implementierung
+* Konfigurationsvorlagen
+* Beispiele aus der Praxis
+* Tipps zur Fehlerbehebung
+
+### Schritt 4: Passen Sie es an Ihre Bedürfnisse an
+
+* Passen Sie das Beispiel an Ihre Geschäftsregeln an
+* Passen Sie Schwellenwerte und Toleranzen an
+* Ändern Sie die Routing-Logik
+* Fügen Sie nach Bedarf Schritte hinzu bzw. entfernen Sie sie
+* Vor dem Produktionseinsatz gründlich testen
 
 ### Schritt 5: Überwachen und optimieren
 
-- Verfolgen Sie die Workflow-Leistung
-- Überwachen Sie die Erfolgsquoten
-- Sammeln Sie Benutzer-Feedback
-- Verfeinern Sie die Konfiguration
-- Dokumentieren Sie Anpassungen
+* Verfolgen Sie die Workflow-Leistung
+* Überwachen Sie die Erfolgsraten
+* Sammeln Sie Benutzerfeedback
+* Konfiguration verfeinern
+* Dokumentanpassungen
 
----
+***
 
-## Pattern-Kombinationen
+## Musterkombinationen
 
-Viele reale Szenarien erfordern die Kombination mehrerer Patterns:
+Viele reale Szenarien erfordern die Kombination mehrerer Muster:
 
-### Beispiel 1: Vollständige Rechnungsverarbeitung
+### Beispiel 1: Rechnungsverarbeitung abschließen
 
 ```
 1. API Integration Pattern → Fetch current pricing
@@ -231,7 +237,7 @@ Viele reale Szenarien erfordern die Kombination mehrerer Patterns:
 5. Task Management Pattern → Create approval tasks
 ```
 
-### Beispiel 2: Freigabe hochwertiger Rechnungen
+### Beispiel 2: Genehmigung hochwertiger Rechnungen
 
 ```
 1. Data Transformation Pattern → Calculate amounts
@@ -249,130 +255,134 @@ Viele reale Szenarien erfordern die Kombination mehrerer Patterns:
 4. Data Transformation Pattern → Calculate impact
 ```
 
----
+***
 
-## Pattern-Vorlagen
+## Mustervorlagen
 
-Jedes Pattern enthält diese standardisierten Abschnitte:
+Jedes Muster enthält diese standardisierten Abschnitte:
 
-1. **Overview** – Was das Pattern macht
-2. **When to Use** – Geeignete Anwendungsfälle
-3. **Complete Example** – Reales Szenario
-4. **Step-by-Step** – Umsetzungsanleitung
-5. **Configuration** – Vorlagen zur Kartenkonfiguration
-6. **Workflow Diagram** – Visuelle Darstellung
-7. **Advanced Variations** – Alternative Umsetzungen
-8. **Error Handling** – Häufige Probleme und Lösungen
-9. **Testing Checklist** – Validierungsschritte
-10. **Related Patterns** – Ergänzende Patterns
-11. **Related Guides** – Referenzdokumentation
+1. **Übersicht** – Was das Muster bewirkt
+2. **Wann zu verwenden** – Geeignete Anwendungsfälle
+3. **Vollständiges Beispiel** – Szenario aus der realen Welt
+4. **Schritt-für-Schritt** – Anleitung zur Umsetzung
+5. **Konfiguration** – Karten-Setup-Vorlagen
+6. **Workflow-Diagramm** – Visuelle Darstellung
+7. **Erweiterte Variationen** – Alternative Implementierungen
+8. **Fehlerbehandlung** – Häufige Probleme und Lösungen
+9. **Test-Checkliste** – Validierungsschritte
+10. **Verwandte Muster** – Komplementäre Muster
+11. **Verwandte Handbücher** – Referenzdokumentation
 
----
+***
 
-## Hilfe erhalten
+## Hilfe bekommen
 
-### Support-Ressourcen für Patterns
+### Ressourcen zur Musterunterstützung
 
 **Dokumentation:**
-- [Vollständiger Workflow-Leitfaden-Index](../README.md)
-- [Einzelne Kartenleitfäden](../then/action/)
-- [Referenz der Bedingungskarten](../and/condition-cards-complete-guide.md)
-- [Workflow Linking Map](../../../../WORKFLOW_LINKING_MAP.md)
 
-**Weitere Ressourcen:**
-- [Kurzreferenz](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
-- [Release Notes Oktober 2025](../changelog/2025-10-october.md)
-- [Referenz zur Kartenversionierung](../../../docs/card_version.md)
+* [Vollständiger Workflow-Leitfaden-Index](..)
+* [Individuelle Kartenführer](../then/action)
+* [Bedingungskarten-Referenz](../and/condition-cards-complete-guide.md)
+* [Workflow-Verknüpfungskarte](https://github.com/Fellow-Consulting-AG/docbits/tree/main/WORKFLOW_LINKING_MAP.md)
+
+**Zusätzliche Ressourcen:**
+
+* [Kurzanleitung](https://github.com/Fellow-Consulting-AG/docbits/tree/main/WORKFLOW_LINKING_QUICK_REFERENCE.md)
+* [Versionshinweise Oktober 2025](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/workflow/changelog/2025-10-october.md)
+* [Referenz zur Kartenversionierung](../cards-overview/po-comparison-versions-guide.md)
 
 **Kontakt:**
-- Pattern-Feedback: docs@docbits.com
-- Technischer Support: support@docbits.com
-- Implementierungshilfe: consulting@docbits.com
 
----
+* Muster-Feedback: docs@docbits.com
+* Technischer Support: support@docbits.com
+* Implementierungshilfe: Consulting@docbits.com
 
-## Pattern-Statistik
+***
 
-| Kennzahl | Wert |
-|--------|-------|
-| **Patterns gesamt** | 5 |
-| **Abgedeckte Karten gesamt** | 30+ |
-| **Dokumentation gesamt** | ca. 1.200 Zeilen |
-| **Beispielszenarien** | 25+ |
-| **Konfigurationsvorlagen** | 15+ |
-| **Workflow-Diagramme** | 5 vollständige Diagramme |
-| **Querverweise** | 87+ interne Links |
+## Musterstatistiken
 
----
+| Metrisch                      | Wert               |
+| --------------------------- | ------------------- |
+| **Gesamtmuster**          | 5                   |
+| **Gesamtzahl der abgedeckten Karten**     | 30+                 |
+| **Kombinierte Dokumentation**  | \~1.200 Zeilen       |
+| **Beispielszenarien**       | 25+                 |
+| **Konfigurationsvorlagen** | 15+                 |
+| **Workflow-Diagramm**       | 5 vollständige Diagramme |
+| **Querverweise**        | Über 87 interne Links  |
 
-## Zu Patterns beitragen
+***
 
-Haben Sie ein Workflow-Pattern, von dem andere profitieren würden?
+## Beitrag zu Mustern
 
-**Richtlinien für Pattern-Beiträge:**
+Haben Sie ein Arbeitsablaufmuster, von dem andere profitieren würden?
+
+**Richtlinien für Musterbeiträge:**
 
 1. **Dokumentieren Sie Ihren Workflow**
-   - Klares Geschäftsszenario
-   - Schritt-für-Schritt-Umsetzung
-   - Funktionierende Konfigurationsbeispiele
-   - Reale Testergebnisse
-
-2. **Folgen Sie der Pattern-Vorlage**
-   - Verwenden Sie die Standard-Abschnittsstruktur
-   - Nehmen Sie alle erforderlichen Elemente auf
-   - Fügen Sie Diagramme/Beispiele bei
-   - Ergänzen Sie einen Leitfaden zur Fehlerbehebung
-
-3. **Zur Prüfung einreichen**
-   - E-Mail an: docs@docbits.com
-   - Enthalten sein sollten: Pattern-Beschreibung, Anwendungsfälle, Umsetzungsanleitung
-   - Wir prüfen den Beitrag und nehmen ihn gegebenenfalls in die offizielle Dokumentation auf
+   * Klares Geschäftsszenario
+   * Schrittweise Umsetzung
+   * Beispiele für funktionierende Konfigurationen
+   * Testergebnisse aus der Praxis
+2. **Mustervorlage folgen**
+   * Verwenden Sie die Standardabschnittsstruktur
+   * Fügen Sie alle erforderlichen Elemente ein
+   * Stellen Sie Diagramme/Beispiele bereit
+   * Anleitung zur Fehlerbehebung hinzufügen
+3. **Zur Überprüfung einreichen**
+   * E-Mail an: docs@docbits.com
+   * Enthalten: Musterbeschreibung, Anwendungsfälle, Implementierungsleitfaden
+   * Wir werden die offizielle Dokumentation überprüfen und möglicherweise ergänzen
 
 **Vorteile:**
-- Helfen Sie anderen DocBits-Anwendern
-- Werden Sie in der Dokumentation genannt
-- Verbessern Sie die Wissensbasis zum Produkt insgesamt
-- Erhalten Sie Feedback zu Ihrer Umsetzung
 
----
+* Helfen Sie anderen DocBits-Benutzern
+* Lassen Sie sich in der Dokumentation anerkennen
+* Verbessern Sie die gesamte Produktwissensbasis
+* Erhalten Sie Feedback zu Ihrer Umsetzung
+
+***
 
 ## Änderungsprotokoll
 
 ### Version 1.0 (23. Oktober 2025)
-- Erstveröffentlichung von 5 umfassenden Workflow-Patterns
-- API-Integrations-Pattern hinzugefügt
-- Aufgabenverwaltungs-Pattern hinzugefügt
-- PO-Matching-Pattern hinzugefügt
-- Entscheidungslogik-Pattern hinzugefügt
-- Datentransformations-Pattern hinzugefügt
-- Querverweise implementiert (87 Links)
-- Pattern-Auswahlhilfe erstellt
 
----
+* Erstveröffentlichung von 5 umfassenden Workflow-Mustern
+* API-Integrationsmuster hinzugefügt
+* Aufgabenverwaltungsmuster hinzugefügt
+* PO-Matching-Muster hinzugefügt
+* Entscheidungslogikmuster hinzugefügt
+* Datentransformationsmuster hinzugefügt
+* Querverweisverlinkung implementiert (87 Links)
+* Anleitung zur Musterauswahl erstellt
+
+***
 
 ## Nächste Schritte
 
-**Neu bei Workflow-Patterns?**
-1. Beginnen Sie mit dem [Aufgabenverwaltungs-Pattern](task-management-pattern.md) – am einfachsten zu verstehen
-2. Sehen Sie sich das [Entscheidungslogik-Pattern](decision-logic-pattern.md) an – grundlegend für alle Workflows
-3. Erkunden Sie das [API-Integrations-Pattern](api-integration-pattern.md) – häufiger Integrationsbedarf
+**Neu bei Workflow-Mustern?**
 
-**Bereit zur Umsetzung?**
-1. Wählen Sie Ihr Pattern aus der Liste oben
-2. Lesen Sie den vollständigen Pattern-Leitfaden
-3. Prüfen Sie Voraussetzungen und verwandte Leitfäden
+1. Beginnen Sie mit [Aufgabenverwaltungsmuster](task-management-pattern.md) – am einfachsten zu verstehen
+2. Überprüfen Sie [Entscheidungslogikmuster](decision-logic-pattern.md) – grundlegend für alle Arbeitsabläufe
+3. Entdecken Sie [API-Integrationsmuster](api-integration-pattern.md) – allgemeiner Integrationsbedarf
+
+**Bereit zur Implementierung?**
+
+1. Wählen Sie Ihr Muster aus der Liste oben
+2. Lesen Sie die vollständige Musteranleitung
+3. Sehen Sie sich die Voraussetzungen und zugehörigen Leitfäden an
 4. Befolgen Sie die Schritt-für-Schritt-Anleitung
 5. Testen Sie mit Beispieldokumenten
-6. Gehen Sie in Produktion
+6. Bereitstellung für die Produktion
 7. Überwachen und optimieren
 
 **Benötigen Sie weitere Hilfe?**
-- Lesen Sie die [Übersicht der Workflow-Dokumentation](../README.md)
-- Schauen Sie in die [Kurzreferenz](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
-- Wenden Sie sich an das Support-Team
 
----
+* Überprüfen Sie [Übersicht über die Workflow-Dokumentation](..)
+* Überprüfen Sie [Kurzanleitung](https://github.com/Fellow-Consulting-AG/docbits/tree/main/WORKFLOW_LINKING_QUICK_REFERENCE.md)
+* Kontaktieren Sie das Support-Team
 
-**Zuletzt aktualisiert:** 23. Oktober 2025
-**Betreut von:** Dokumentationsteam
-**Version:** 1.0
+***
+
+**Letzte Aktualisierung:** 23. Oktober 2025 **Verwaltet von:** Dokumentationsteam **Version:** 1.0

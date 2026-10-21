@@ -1,4 +1,4 @@
-# Any Value of
+# Jeder Wert von
 
 <figure><img src="../../../../.gitbook/assets/image (46).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -9,7 +9,7 @@ Diese DocBits-Karte wird verwendet, um zu validieren, ob irgendein Wert in einer
 ## **Funktionalität:**
 
 * **Validierung mit Regex-Muster:** Diese Karte prüft, ob irgendein Wert in einer bestimmten Tabellenspalte mit dem angegebenen regulären Ausdruck übereinstimmt. Die Karte wird ausgelöst und lässt den Workflow fortfahren, wenn mindestens ein Eintrag in der Spalte die Bedingung erfüllt.
-* **Operator:** Benutzer definieren die Spalte und geben das Regex-Muster an. Die verfügbare Bedingung umfasst:
+* **Betreiber:** Benutzer definieren die Spalte und geben das Regex-Muster an. Die verfügbare Bedingung umfasst:
   * **Matches Regex Pattern:** Überprüft, ob mindestens ein Wert in der angegebenen Spalte mit dem Regex-Muster übereinstimmt.
 * **Tabellen- und Spaltenauswahl:** Benutzer geben die Tabelle und die Spalte an, die sie auf Regex-Muster-Übereinstimmungen prüfen möchten.
 

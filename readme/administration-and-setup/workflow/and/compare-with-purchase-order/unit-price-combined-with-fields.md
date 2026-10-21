@@ -1,4 +1,4 @@
-# Unit Price Combined with Fields
+# Stückpreis kombiniert mit Feldern
 
 <figure><img src="../../../../.gitbook/assets/image (26) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -11,7 +11,7 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob der Stückpreis in Kom
 1. **Feldname**
    * **Beschreibung:** Gibt das Dokumentfeld an, das den mit dem Stückpreis zu kombinierenden Wert enthält.
    * **Detail:** Dieser muss exakt mit dem Bezeichner des ersten Feldes innerhalb des Dokuments übereinstimmen.
-2. **Operator**
+2. **Betreiber**
    * **Beschreibung:** Legt die Bedingung fest, die auf den Vergleich zwischen dem kombinierten Wert und dem angegebenen Wert angewendet wird.
    * **Optionen:**
      * **Gleich (=):** Prüft, ob der kombinierte Wert aus Stückpreis und Feld mit dem angegebenen Wert übereinstimmt.

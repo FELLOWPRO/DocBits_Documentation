@@ -1,4 +1,4 @@
-# Any / All Charges
+# Alle Gebühren
 
 <figure><img src="../../../../.gitbook/assets/workflow_cards_and_po_compare_any_all_charges.png" alt="Die Karte in der Kartenbibliothek, Version 2 und Version 3"><figcaption><p>Die Karte in der Kartenbibliothek. Version 2 oben, Version 3 unten.</p></figcaption></figure>
 
@@ -6,7 +6,7 @@
 
 Diese Workflow-Karte vergleicht die Zusatzkosten eines Dokuments mit den Zusatzkosten der zugeordneten Bestellung, innerhalb einer festgelegten Toleranz. Sie beantwortet eine einzige Frage: Stimmen Dokument und Bestellung in den Zusatzkosten überein? Verglichen wird jede Gebühr, die der Bestellabgleich einander zugeordnet hat, weshalb auf der Karte kein Feldname angegeben werden muss.
 
-Diese Karte unterscheidet sich von **Compare Total Charges**, die ein einzelnes benanntes Dokumentfeld mit einer über eine Charge ID bestimmten Gebühr vergleicht. Verwenden Sie diese Karte, wenn alle zugeordneten Gebühren eines Dokuments gemeinsam geprüft werden sollen.
+Diese Karte unterscheidet sich von **Vergleichen Sie die Gesamtgebühren**, die ein einzelnes benanntes Dokumentfeld mit einer über eine Charge ID bestimmten Gebühr vergleicht. Verwenden Sie diese Karte, wenn alle zugeordneten Gebühren eines Dokuments gemeinsam geprüft werden sollen.
 
 Der Bestellabgleich muss vor dieser Karte laufen. Hat das Dokument keine zugeordnete Bestellung, stoppt die Karte den Workflow und meldet fehlende Daten.
 
@@ -17,7 +17,7 @@ Der Bestellabgleich muss vor dieser Karte laufen. Hat das Dokument keine zugeord
    * **Optionen**:
      * **Irgendeine**: mindestens eine Gebühr muss den Vergleich erfüllen.
      * **Alle**: jede Gebühr muss den Vergleich erfüllen.
-2. **Operator:**
+2. **Betreiber:**
    * **Beschreibung**: Wie der Gebührenbetrag des Dokuments mit dem Bestellbetrag derselben Gebühr verglichen wird.
    * **Optionen**:
      * **innerhalb**: die beiden Beträge müssen übereinstimmen, wobei die Toleranz zugelassen wird.

@@ -1,4 +1,4 @@
-# Document Type Operation one of
+# Dokumenttyp Operation einer von
 
 <figure><img src="../../../../.gitbook/assets/userlmn_14ab8ac5e693d9bbe68d178795d12a9f (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -8,14 +8,14 @@ Diese Karte ist darauf ausgelegt, Aktionen an Dokumenten abhängig von ihrem Typ
 
 ## **Bestandteile der Karte:**
 
-1. **Operator**
+1. **Betreiber**
    * **Beschreibung**: Bestimmt die auf die Dokumenttypen angewendete bedingte Logik.
    * **Optionen**:
      * **is**: Die Operation wird ausgelöst, wenn der Typ des Dokuments mit einem der angegebenen Typen in der Liste übereinstimmt.
-     * **is not**: Die Operation wird ausgelöst, wenn der Typ des Dokuments mit keinem der aufgeführten Typen übereinstimmt.
+     * **ist nicht**: Die Operation wird ausgelöst, wenn der Typ des Dokuments mit keinem der aufgeführten Typen übereinstimmt.
 2. **Dokumenttypenliste**
    * **Beschreibung**: Gibt eine Liste von Dokumenttypen an, für die die Bedingung gilt.
-   * **Detail**: Diese umfasst verschiedene Dokumenttypen wie "Invoice", "Purchase Order" usw., auf deren Grundlage die Bedingung (is/is not) ausgewertet wird.
+   * **Detailliert**: Diese umfasst verschiedene Dokumenttypen wie "Invoice", "Purchase Order" usw., auf deren Grundlage die Bedingung (is/is not) ausgewertet wird.
 
 ## Funktionalität:
 

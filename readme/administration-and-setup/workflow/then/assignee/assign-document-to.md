@@ -1,10 +1,10 @@
-# Assign document to
+# Dokument zuordnen
 
 <figure><img src="../../../../.gitbook/assets/image (306).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## Zweck:
 
-Die Workflow-Karte **"Assign document to \[User/group] based on decision table"** weist Dokumente dynamisch Benutzern oder Gruppen auf Basis des Ergebnisses einer **Entscheidungstabelle** zu. Diese Funktion stellt sicher, dass die Dokumentzuweisung effizient und konsistent auf Grundlage vordefinierter Bedingungen erfolgt.
+Die Workflow-Karte **„Dokument basierend auf Entscheidungstabelle \[Benutzer/Gruppe] zuweisen“** weist Dokumente dynamisch Benutzern oder Gruppen auf Basis des Ergebnisses einer **Entscheidungstabelle** zu. Diese Funktion stellt sicher, dass die Dokumentzuweisung effizient und konsistent auf Grundlage vordefinierter Bedingungen erfolgt.
 
 ## Bestandteile der Karte:
 
@@ -13,11 +13,11 @@ Die Workflow-Karte **"Assign document to \[User/group] based on decision table"*
    * **Detail:** Wird auf Basis des Ergebnisses der **Entscheidungstabelle** ausgewählt.
 2. **Entscheidungstabelle**
    * **Beschreibung:** Eine **Entscheidungstabelle** wird verwendet, um den passenden **Benutzer** oder die passende **Gruppe** für die Dokumentzuweisung zu bestimmen.
-   * **Detail:** Verwendet die im **"and"**-Abschnitt definierte Entscheidungstabelle.
+   * **Detail:** Verwendet die im **„und“**-Abschnitt definierte Entscheidungstabelle.
 
 ## Funktionalität:
 
-* **Bedingungsauswertung:** Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+* **Bedingungsauswertung:** Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Dynamische Dokumentzuweisung:** Das Dokument wird dem **Benutzer** oder der **Gruppe** zugewiesen, der bzw. die durch die **Entscheidungstabelle** bestimmt wird.
 
 ## Einrichtung und Konfiguration:
@@ -27,4 +27,4 @@ Die Workflow-Karte **"Assign document to \[User/group] based on decision table"*
 
 ## Fazit:
 
-Die Workflow-Karte **"Assign document to \[User/group] based on decision table"** bietet dynamische Möglichkeiten zur Dokumentzuweisung auf Basis von Entscheidungslogik. Dies sorgt für eine präzise und effiziente Verarbeitung, indem Dokumente automatisch an den passenden **Benutzer** oder die passende **Gruppe** geleitet werden, und steigert so die Workflow-Automatisierung.
+Die Workflow-Karte **„Dokument basierend auf Entscheidungstabelle \[Benutzer/Gruppe] zuweisen“** bietet dynamische Möglichkeiten zur Dokumentzuweisung auf Basis von Entscheidungslogik. Dies sorgt für eine präzise und effiziente Verarbeitung, indem Dokumente automatisch an den passenden **Benutzer** oder die passende **Gruppe** geleitet werden, und steigert so die Workflow-Automatisierung.

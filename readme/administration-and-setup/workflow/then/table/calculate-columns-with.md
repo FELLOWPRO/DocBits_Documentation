@@ -1,10 +1,10 @@
-# Calculate Columns with
+# Berechnen Sie Spalten mit
 
 <figure><img src="../../../../.gitbook/assets/image (294).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 
-Die Workflow-Karte **"Calculate Columns in Table"** wird verwendet, um Berechnungen zwischen Spalten in einer ausgewählten Tabelle durchzuführen. Sie ermöglicht es Benutzern, Spalten auszuwählen, eine mathematische Operation anzuwenden und das Ergebnis in einer angegebenen Ergebnisspalte zu speichern.
+Die Workflow-Karte **„Spalten in der Tabelle berechnen“** wird verwendet, um Berechnungen zwischen Spalten in einer ausgewählten Tabelle durchzuführen. Sie ermöglicht es Benutzern, Spalten auszuwählen, eine mathematische Operation anzuwenden und das Ergebnis in einer angegebenen Ergebnisspalte zu speichern.
 
 ## **Bestandteile der Karte:**
 
@@ -14,7 +14,7 @@ Die Workflow-Karte **"Calculate Columns in Table"** wird verwendet, um Berechnun
 2. **Spaltenname (1. Spalte)**
    * **Beschreibung:** Gibt die **erste Spalte** an, die an der Berechnung beteiligt ist.
    * **Detail:** Zur Auswahl wird eine Liste aller verfügbaren **Spalten** bereitgestellt.
-3. **Operation**
+3. **Betrieb**
    * **Beschreibung:** Legt die mathematische Operation fest, die zwischen den ausgewählten Spalten angewendet wird.
    * **Optionen:**
      * **Addieren (+):** Addiert den Wert der zweiten Spalte zum Wert der ersten Spalte.
@@ -31,7 +31,7 @@ Die Workflow-Karte **"Calculate Columns in Table"** wird verwendet, um Berechnun
 ## **Funktionalität:**
 
 * **Bedingungsauswertung:**\
-  Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Spaltenberechnung:**\
   Die Karte führt die ausgewählte mathematische Operation zwischen den beiden gewählten Spalten durch.
 * **Ergebnisspeicherung:**\
@@ -50,4 +50,4 @@ Die Workflow-Karte **"Calculate Columns in Table"** wird verwendet, um Berechnun
 
 ## **Fazit:**
 
-Die Workflow-Karte **"Calculate Columns in Table"** ermöglicht es Benutzern, dynamische Berechnungen zwischen Spalten in einer Tabelle durchzuführen und die Ergebnisse in einer festgelegten Spalte zu speichern. Die Karte bietet Flexibilität, um verschiedene mathematische Operationen anzuwenden, und stellt sicher, dass das Ergebnis in der angegebenen Spalte gespeichert wird.
+Die Workflow-Karte **„Spalten in der Tabelle berechnen“** ermöglicht es Benutzern, dynamische Berechnungen zwischen Spalten in einer Tabelle durchzuführen und die Ergebnisse in einer festgelegten Spalte zu speichern. Die Karte bietet Flexibilität, um verschiedene mathematische Operationen anzuwenden, und stellt sicher, dass das Ergebnis in der angegebenen Spalte gespeichert wird.

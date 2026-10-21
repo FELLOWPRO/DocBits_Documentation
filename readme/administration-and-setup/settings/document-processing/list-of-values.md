@@ -1,117 +1,41 @@
-# List Of Values
+# Elenchi di valori
 
-## Overview
+Gli elenchi di valori contengono opzioni predefinite per i campi del documento. Un campo può usare un elenco per presentare le opzioni nella convalida. Le etichette possono essere tradotte; il valore tecnico resta uguale in tutte le lingue.
 
-The **Elenco dei valori** feature allows you to create and manage predefined sets of values. This is particularly useful for configuring dropdown menus in the [**Campi**](../global-settings/document-types/fields/) section, which can later be used in **Convalida del campo**.
+## Aprire gli elenchi
 
-These lists can be customized for different sub-organizations and support multiple languages, providing flexibility across **DocBits**.
+Nelle impostazioni, aprire la ricerca dei dati anagrafici e gli elenchi di valori. Selezionare un elenco per consultarne le voci. Nell’immagine i nomi configurati sono nascosti.
 
-## How to Access?
+<figure><img src="../../../.gitbook/assets/s150-list_of_values_1-it.png" alt="Vista degli elenchi di valori con i nomi configurati nascosti."><figcaption><p>Vista degli elenchi di valori con i nomi configurati nascosti.</p></figcaption></figure>
 
-You can access the **Elenco dei valori** by navigating to **Settings → Document Processing → List of Values**.
+## Creare un elenco
 
-## How to Add or Delete a List
+1. Scegliere la creazione di un nuovo elenco.
+2. Inserire un nome e, se necessario, limitarlo a una sotto-organizzazione.
+3. Controllare i dati prima di salvare.
 
-### Create a New List of Values
+Gli elenchi contrassegnati come standard sono forniti dal sistema e non possono essere eliminati. Prima di eliminare un elenco personalizzato, verificare quali campi lo utilizzano: l’azione può avere effetto immediato.
 
-1.  Click **New** in the upper-right corner of the screen.
+## Aggiungere e modificare le voci
 
-    <figure><img src="../../../.gitbook/assets/s150-list_of_values_1-it.png" alt="Vista degli elenchi di valori con i nomi configurati nascosti."><figcaption><p>Vista degli elenchi di valori con i nomi configurati nascosti.</p></figcaption></figure>
-2. Enter a **Nome** for your list.
-3. _(Optional)_ Select a **Sotto-organizzazione** for which the list should be active.
-4.  Click **Salva** to create the list.
+Aprire l’elenco previsto e usare il comando di aggiunta di una riga. Per ogni voce, controllare:
 
-### How to Delete a List
+| Proprietà | Significato |
+| --- | --- |
+| Valore | Valore tecnico memorizzato da DocBits, uguale per tutte le lingue. |
+| Etichetta | Testo visualizzato nella lingua selezionata. Senza un’etichetta per la lingua attiva, viene mostrato il valore tecnico. |
+| Lingua | Lingua dell’etichetta. |
+| Sotto-organizzazioni | Ambito in cui la voce è disponibile; senza limitazioni, vale per tutte le sotto-organizzazioni. |
+| Sinonimi | Varianti riconosciute come equivalenti al valore, ad esempio EURO e € per EUR. Confermare ogni sinonimo nel relativo campo. |
 
-To delete a list, click the trash can icon next to the corresponding list.
+Verificare tutte le proprietà prima di salvare. I comandi di modifica ed eliminazione dipendono dai permessi e dalla voce selezionata. Le righe predefinite del sistema non possono essere eliminate.
 
-<mark style="color:red;">**Nota**</mark>: The list will be deleted immediately. Lists marked with the [**Standard**](list-of-values.md#system-defined-lists-and-rows) tag cannot be deleted.
+## Importare da CSV
 
-## How to Add, Edit, or Remove Values from an Existing List&#x20;
+Nell’elenco previsto, aprire le azioni e l’importazione CSV. Selezionare il file e il delimitatore corretto, per esempio `;` oppure `,`. Controllare struttura e contenuto del file prima di avviare l’importazione.
 
-You can manage values in an existing **Elenco dei valori** using one of the following methods:
+## Aggiungere traduzioni
 
-* [**Manually add values**](list-of-values.md#manually-add-values) – Enter values individually through the interface.
-* [**Import values from a CSV file**](list-of-values.md#import-values-from-a-csv-file) – Upload a CSV file to add multiple values at once.
+Per una voce, aggiungere una lingua e inserire l’etichetta prevista. Ripetere per le altre lingue necessarie, quindi verificare e salvare. Le righe predefinite possono ricevere etichette tradotte anche quando non possono essere eliminate.
 
-### Manually Add Values
-
-1.  Click on the list you want to modify.
-
-2.  Click on **Actions.**
-
-3.  Click on **Add Row.**
-
-Now you can specify multiple properties for each entry:
-
-**Valore**: This is how the item will be stored internally within **DocBits**. It remains the same across all languages and also serves as the default display text during field validation if no label is specified for the selected language.
-
-**Etichetta**: This is the text displayed on the validation screen, based on the selected language. If no label is available for the active language in DocBits, the system will default to displaying the **Valore**.
-
-**Lingua**: Specifies the language in which the label will be displayed.\
-A more detailed explanation can be found [here](list-of-values.md#add-translations-to-your-values).
-
-**Sotto-organizzazioni**: Specifies which **sub-organization** the row should be active for. If left blank, the row will be available for all organizations.
-
-**Sinonimi**: Here you can specify additional values that help train your document.\
-For example, if **EUR** is your primary **value**, you can add EURO and € as **synonyms**. When the document is trained using any of these **synonyms**, **DocBits** will automatically recognize and select EUR as the corresponding value from your list.\
-<mark style="color:red;">**Nota**</mark>: Each synonym must be confirmed by pressing **Enter** to add it to the list.
-
-4.  After entering all desired properties, click the **Salva** button to add the row.
-
-### Import Values from a CSV File
-
-To add multiple values at once via CSV import:
-
-1.  Click on the list you want to update.
-
-2.  Click **Azioni**.
-
-3.  Click on **Caricare CSV**.
-
-4. Click **File** to browse and select the CSV file you want to upload.
-5. Choose the appropriate **Delimitatore** used in the CSV file (`;` or `,`).
-6.  Click **Caricare** to import the values.
-
-### Edit Existing Values
-
-1. Locate the row you want to edit.
-2. Click the three dots in the **Azioni** column.
-3.  Select **Modifica** from the dropdown menu.
-
-4. Make the required changes.
-5.  Click **Salva** to apply your changes.
-
-### Delete Values
-
-1. Locate the row you want to delete.
-2. Click the three dots in the **Azioni** column.
-3.  Select **Cancellare** from the dropdown menu.
-
-<mark style="color:red;">**Nota**</mark>: The row will be deleted immediately. Rows marked with the [**Predefinito**](list-of-values.md#system-defined-lists-and-rows) tag cannot be deleted.
-
-## Add Translations to Your Values
-
-You can add as many translations as there are supported languages in **DocBits**.
-
-To add a translation:
-
-1.  Click the plus (+) icon.
-
-2.  Select a language from the dropdown menu.
-
-3.  Enter the desired translation in the **Etichetta** field.
-
-4.  To add another translation, click the plus (+) icon again.
-
-5.  To remove a translation, click the trash can icon.
-
-6.  When finished, click the **Salva** button to save your translations.
-
-<mark style="color:red;">**Nota**</mark>: If no **Etichetta** is available for the active language, DocBits will default to displaying the **Valore**.
-
-## System-Defined Lists and Rows
-
-Some lists are pre-created by the system and are marked with the **Standard** tag. These lists cannot be deleted, but you can add new rows to them and remove those newly added rows if necessary.
-
-Within these standard lists, certain rows are marked with the **Predefinito** tag—these are system-defined entries. You can add new **labels** in different languages, but these default rows cannot be deleted.
+La traduzione dell’etichetta non modifica il valore tecnico. Dopo le modifiche previste, verificare il campo in convalida nella lingua desiderata. L’immagine mostra la consultazione degli elenchi, non modifiche salvate o un’importazione eseguita.

@@ -1,6 +1,6 @@
-# Compare values in table
+# Porównaj wartości w tabeli
 
-<figure><img src="../../../../.gitbook/assets/image (48).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5f14db09d019-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -9,14 +9,14 @@ Ta karta DocBits wykonuje porównanie wartości w dwóch określonych kolumnach 
 ## **Funkcjonalność:**
 
 * **Porównanie kolumn:** Ta karta umożliwia użytkownikom ustawienie warunków porównania wartości między dwiema kolumnami w tej samej tabeli.
-* **Operators:** Dostępne są następujące operatory do zdefiniowania porównania:
-  * **Equals (=):** Sprawdza, czy wartości w dwóch kolumnach są dokładnie równe.
-  * **Not Equals (≠):** Zapewnia, że wartości w dwóch kolumnach nie są równe.
-  * **Greater Than (>):** Potwierdza, że wartości w pierwszej kolumnie są większe niż w drugiej kolumnie.
-  * **Greater or Equals (≥):** Zapewnia, że wartości w pierwszej kolumnie są większe lub równe wartościom w drugiej kolumnie.
-  * **Lesser Than (<):** Sprawdza, czy wartości w pierwszej kolumnie są mniejsze niż w drugiej kolumnie.
-  * **Less or Equals (≤):** Zapewnia, że wartości w pierwszej kolumnie są mniejsze lub równe wartościom w drugiej kolumnie.
-* **Table and Column Selection:** Użytkownicy określają tabelę i dwie kolumny, które chcą porównać.
+* **Operatorzy:** Dostępne są następujące operatory do zdefiniowania porównania:
+  * **Równa się (=):** Sprawdza, czy wartości w dwóch kolumnach są dokładnie równe.
+  * **Nie równa się (≠):** Zapewnia, że wartości w dwóch kolumnach nie są równe.
+  * **Większy niż (>):** Potwierdza, że wartości w pierwszej kolumnie są większe niż w drugiej kolumnie.
+  * **Większe lub równe (≥):** Zapewnia, że wartości w pierwszej kolumnie są większe lub równe wartościom w drugiej kolumnie.
+  * **Mniejszy niż (<):** Sprawdza, czy wartości w pierwszej kolumnie są mniejsze niż w drugiej kolumnie.
+  * **Mniejszy lub równy (≤):** Zapewnia, że wartości w pierwszej kolumnie są mniejsze lub równe wartościom w drugiej kolumnie.
+* **Wybór tabeli i kolumny:** Użytkownicy określają tabelę i dwie kolumny, które chcą porównać.
 
 ## **Zastosowanie:**
 

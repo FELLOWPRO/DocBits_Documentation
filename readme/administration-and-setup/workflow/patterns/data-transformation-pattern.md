@@ -1,23 +1,21 @@
-# Wzorzec transformacji danych
+# Wzór transformacji danych
 
-**Typ wzorca:** Przetwarzanie i manipulacja danymi
-**Złożoność:** Średnia
-**Szacowana konfiguracja:** 30–45 minut
-**Typowe przypadki użycia:** Obliczenia na polach, formatowanie danych, przeliczanie walut, przeliczanie jednostek, wzbogacanie danych
+**Typ wzorca:** Przetwarzanie i manipulacja danymi **Złożoność:** Średnia **Szacowana konfiguracja:** 30–45 minut **Typowe przypadki użycia:** Obliczenia na polach, formatowanie danych, przeliczanie walut, przeliczanie jednostek, wzbogacanie danych
 
----
+***
 
-Ten wzorzec budujesz w **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Kliknij **Add Card** i otwórz kategorię **Document Field** — zawiera ona karty odczytu, zapisu, obliczania i formatowania, które ten wzorzec łączy w łańcuch:
+Ten wzorzec budujesz w **Kreator przepływu pracy** (Workflow Dashboard → Workflow List → Add Workflow). Kliknij **Dodaj kartę** i otwórz kategorię **Pole dokumentu** — zawiera ona karty odczytu, zapisu, obliczania i formatowania, które ten wzorzec łączy w łańcuch:
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Biblioteka Add Card w Workflow Builder, pogrupowana według kategorii"><figcaption><p>Biblioteka <strong>Add Card</strong> — karty do odczytu/zapisu pól, obliczania i formatowania znajdziesz w kategorii <strong>Document Field</strong>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
----
+***
 
 ## Przegląd wzorca
 
 Ten wzorzec pokazuje, jak transformować, obliczać, formatować i wzbogacać dane dokumentu w workflow DocBits. Transformacja danych jest kluczowa do przygotowania danych do eksportu, wykonywania obliczeń, standaryzacji formatów i wzbogacania dokumentów o dodatkowe informacje.
 
 **Co robi ten wzorzec:**
+
 1. Wyodrębnia dane z pól dokumentu
 2. Wykonuje obliczenia i transformacje
 3. Formatuje dane zgodnie z wymaganymi standardami
@@ -25,32 +23,35 @@ Ten wzorzec pokazuje, jak transformować, obliczać, formatować i wzbogacać da
 5. Wzbogaca dokumenty o dane wyprowadzone lub wyszukane
 6. Waliduje i czyści dane
 
----
+***
 
 ## Kiedy stosować ten wzorzec
 
 Stosuj ten wzorzec, gdy potrzebujesz:
-- ✅ Obliczać sumy, sumy częściowe, podatki
-- ✅ Przeliczać waluty lub jednostki
-- ✅ Formatować daty, liczby i tekst
-- ✅ Wyprowadzać wartości z istniejących pól
-- ✅ Wzbogacać dane ze źródeł zewnętrznych
-- ✅ Standaryzować formaty danych
-- ✅ Czyścić i walidować dane
-- ✅ Przygotowywać dane do eksportu
+
+* ✅ Obliczać sumy, sumy częściowe, podatki
+* ✅ Przeliczać waluty lub jednostki
+* ✅ Formatować daty, liczby i tekst
+* ✅ Wyprowadzać wartości z istniejących pól
+* ✅ Wzbogacać dane ze źródeł zewnętrznych
+* ✅ Standaryzować formaty danych
+* ✅ Czyścić i walidować dane
+* ✅ Przygotowywać dane do eksportu
 
 **Nie stosuj tego wzorca, gdy:**
-- ❌ żadna transformacja nie jest wymagana
-- ❌ dane są już w prawidłowym formacie
-- ❌ wystarcza proste kopiowanie pól
 
----
+* ❌ żadna transformacja nie jest wymagana
+* ❌ dane są już w prawidłowym formacie
+* ❌ wystarcza proste kopiowanie pól
+
+***
 
 ## Typy transformacji danych
 
 ### 1. Obliczenia
 
 **Operacje matematyczne:**
+
 ```
 - Addition: Quantity + Bonus_Quantity = Total_Quantity
 - Subtraction: Invoice_Total - Tax_Amount = Net_Amount
@@ -62,6 +63,7 @@ Stosuj ten wzorzec, gdy potrzebujesz:
 ### 2. Operacje na ciągach znaków
 
 **Manipulacja tekstem:**
+
 ```
 - Concatenation: First_Name + " " + Last_Name = Full_Name
 - Uppercase: "invoice" → "INVOICE"
@@ -74,6 +76,7 @@ Stosuj ten wzorzec, gdy potrzebujesz:
 ### 3. Konwersja typów danych
 
 **Rzutowanie typów:**
+
 ```
 - String to Number: "123.45" → 123.45
 - Number to String: 123.45 → "123.45"
@@ -85,6 +88,7 @@ Stosuj ten wzorzec, gdy potrzebujesz:
 ### 4. Przeliczanie jednostek
 
 **Przeliczanie jednostek miary:**
+
 ```
 - Weight: kg → lbs, tons → kg
 - Length: cm → inches, m → ft
@@ -96,6 +100,7 @@ Stosuj ten wzorzec, gdy potrzebujesz:
 ### 5. Przeliczanie walut
 
 **Stosowanie kursów wymiany:**
+
 ```
 - USD → EUR: Amount_USD × Rate = Amount_EUR
 - Multi-currency: Convert all to base currency
@@ -105,6 +110,7 @@ Stosuj ten wzorzec, gdy potrzebujesz:
 ### 6. Transformacje dat
 
 **Operacje na datach:**
+
 ```
 - Format change: 10/23/2025 → 2025-10-23
 - Add days: Invoice_Date + 30 = Due_Date
@@ -112,33 +118,35 @@ Stosuj ten wzorzec, gdy potrzebujesz:
 - Extract parts: "2025-10-23" → Year: 2025, Month: 10, Day: 23
 ```
 
----
+***
 
 ## Kompletny przykład workflow
 
 ### Scenariusz: Obliczenie sumy faktury i wzbogacenie danych
 
 **Wymaganie biznesowe:**
-- Wyodrębnij pozycje z faktury
-- Oblicz sumy pozycji (ilość × cena)
-- Oblicz sumę częściową (suma sum pozycji)
-- Oblicz kwotę podatku (suma częściowa × stawka podatku)
-- Oblicz sumę całkowitą (suma częściowa + podatek)
-- Przelicz na EUR, jeśli faktura jest w innej walucie
-- Sformatuj kwoty do 2 miejsc dziesiętnych
-- Uzupełnij konto księgowe na podstawie kategorii produktu
-- Zwaliduj obliczenia względem sumy faktury
-- Oznacz, gdy odchylenie > 1%
+
+* Wyodrębnij pozycje z faktury
+* Oblicz sumy pozycji (ilość × cena)
+* Oblicz sumę częściową (suma sum pozycji)
+* Oblicz kwotę podatku (suma częściowa × `Tax_Rate`)
+* Oblicz sumę całkowitą (suma częściowa + podatek)
+* Przelicz na EUR, jeśli faktura jest w innej walucie
+* Sformatuj kwoty do 2 miejsc dziesiętnych
+* Uzupełnij konto księgowe na podstawie kategorii produktu
+* Zwaliduj obliczenia względem sumy faktury
+* Oznacz, gdy odchylenie > 1%
 
 **Użyte karty workflow:**
-1. ACTION_CALCULATE_FIELD – Wykonaj obliczenia
-2. ACTION_SET_FIELD_TO_TEXT – Zapisz wyniki
-3. ACTION_COPY_FIELD_VALUE – Kopiuj wartości
-4. CALL_API – Pobierz kursy wymiany (jeśli potrzebne)
-5. CONDITION_COMPARE_TWO_DOCFIELD_VALUES – Zwaliduj obliczenia
-6. ACTION_SET_FIELD_FROM_MASTER_DATA – Wzbogać o konta księgowe
 
----
+1. ACTION\_CALCULATE\_FIELD – Wykonaj obliczenia
+2. ACTION\_SET\_FIELD\_TO\_TEXT – Zapisz wyniki
+3. ACTION\_COPY\_FIELD\_VALUE – Kopiuj wartości
+4. CALL\_API – Pobierz kursy wymiany (jeśli potrzebne)
+5. CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES – Zwaliduj obliczenia
+6. ACTION\_SET\_FIELD\_FROM\_MASTER\_DATA – Wzbogać o konta księgowe
+
+***
 
 ## Wdrożenie krok po kroku
 
@@ -146,9 +154,10 @@ Stosuj ten wzorzec, gdy potrzebujesz:
 
 **Oblicz sumy pozycji:**
 
-**Karta:** ACTION_CALCULATE_FIELD
+**Karta:** ACTION\_CALCULATE\_FIELD
 
 **Dla każdej pozycji:**
+
 ```
 Field: Line_Total
 Formula: {{TABLE_FIELD:Quantity}} * {{TABLE_FIELD:Unit_Price}}
@@ -157,6 +166,7 @@ Decimal Places: 2
 ```
 
 **Przykład:**
+
 ```
 Line 1:
   Quantity: 100
@@ -177,17 +187,18 @@ Line 3:
   Store in: Line_Total
 ```
 
-**Referencja przewodnika:** [Przewodnik po manipulacji polami – obliczenia](../then/document-field/field-manipulation-guide.md#calculate-field)
+**Referencja przewodnika:** [Przewodnik po manipulacji polami – obliczenia](../then/document-field/field-manipulation-guide.md)
 
----
+***
 
 ### Krok 2: Oblicz sumę częściową dokumentu
 
 **Zsumuj wszystkie sumy pozycji:**
 
-**Karta:** ACTION_CALCULATE_FIELD
+**Karta:** ACTION\_CALCULATE\_FIELD
 
 **Konfiguracja:**
+
 ```
 Field: Calculated_Subtotal
 Formula: SUM({{TABLE_COLUMN:Line_Total}})
@@ -196,6 +207,7 @@ Decimal Places: 2
 ```
 
 **Przykład:**
+
 ```
 Line 1 Total: €5,000.00
 Line 2 Total: €1,000.00
@@ -205,15 +217,16 @@ Subtotal = 5000 + 1000 + 387.50 = €6,387.50
 Store in: Calculated_Subtotal
 ```
 
----
+***
 
 ### Krok 3: Oblicz kwotę podatku
 
 **Zastosuj stawkę podatku do sumy częściowej:**
 
-**Karta:** ACTION_CALCULATE_FIELD
+**Karta:** ACTION\_CALCULATE\_FIELD
 
 **Konfiguracja:**
+
 ```
 Field: Calculated_Tax_Amount
 Formula: {{Calculated_Subtotal}} * ({{Tax_Rate}} / 100)
@@ -222,6 +235,7 @@ Decimal Places: 2
 ```
 
 **Przykład:**
+
 ```
 Calculated_Subtotal: €6,387.50
 Tax_Rate: 19% (VAT)
@@ -233,15 +247,16 @@ Tax Amount = 6387.50 × (19 / 100)
 Store in: Calculated_Tax_Amount
 ```
 
----
+***
 
 ### Krok 4: Oblicz sumę całkowitą
 
 **Dodaj sumę częściową i podatek:**
 
-**Karta:** ACTION_CALCULATE_FIELD
+**Karta:** ACTION\_CALCULATE\_FIELD
 
 **Konfiguracja:**
+
 ```
 Field: Calculated_Grand_Total
 Formula: {{Calculated_Subtotal}} + {{Calculated_Tax_Amount}}
@@ -250,6 +265,7 @@ Decimal Places: 2
 ```
 
 **Przykład:**
+
 ```
 Calculated_Subtotal: €6,387.50
 Calculated_Tax_Amount: €1,213.63
@@ -259,15 +275,16 @@ Grand Total = 6387.50 + 1213.63 = €7,601.13
 Store in: Calculated_Grand_Total
 ```
 
----
+***
 
 ### Krok 5: Przeliczanie walut (jeśli potrzebne)
 
 **Sprawdź, czy przeliczenie jest potrzebne:**
 
-**Karta:** CONDITION_DOC_FIELD_IS
+**Karta:** CONDITION\_DOC\_FIELD\_IS
 
 **Konfiguracja:**
+
 ```
 Field: Invoice_Currency
 Operator: IS NOT EQUAL TO
@@ -278,9 +295,10 @@ Value: EUR
 
 **Krok 5a: Pobierz kurs wymiany**
 
-**Karta:** CALL_API
+**Karta:** CALL\_API
 
 **Konfiguracja:**
+
 ```
 Endpoint: https://api.exchangerate-api.com/v4/latest/{{Invoice_Currency}}
 Method: GET
@@ -289,6 +307,7 @@ Store in: Exchange_Rate_To_EUR
 ```
 
 **Przykład:**
+
 ```
 Invoice Currency: USD
 API Response: {
@@ -303,9 +322,10 @@ Exchange_Rate_To_EUR = 0.92
 
 **Krok 5b: Przelicz kwoty**
 
-**Karta:** ACTION_CALCULATE_FIELD
+**Karta:** ACTION\_CALCULATE\_FIELD
 
 **Konfiguracja:**
+
 ```
 Field: Grand_Total_EUR
 Formula: {{Calculated_Grand_Total}} * {{Exchange_Rate_To_EUR}}
@@ -314,6 +334,7 @@ Decimal Places: 2
 ```
 
 **Przykład:**
+
 ```
 Grand Total (USD): $7,601.13
 Exchange Rate: 0.92
@@ -325,15 +346,16 @@ Store in: Grand_Total_EUR
 
 **Referencja przewodnika:** [Wzorzec integracji API – przeliczanie walut](api-integration-pattern.md#przykład-1-wyszukiwanie-kursu-wymiany)
 
----
+***
 
 ### Krok 6: Wzbogacanie danych – uzupełnij konta księgowe
 
 **Wyszukaj konto księgowe na podstawie kategorii produktu:**
 
-**Karta:** ACTION_SET_FIELD_FROM_MASTER_DATA
+**Karta:** ACTION\_SET\_FIELD\_FROM\_MASTER\_DATA
 
 **Konfiguracja:**
+
 ```
 Lookup Table: GL_Account_Mapping
 Lookup Key: {{TABLE_FIELD:Product_Category}}
@@ -342,6 +364,7 @@ Store in: GL_Account
 ```
 
 **Przykład:**
+
 ```
 Line 1:
   Product Category: "Office Supplies"
@@ -359,17 +382,18 @@ Line 3:
   Result: GL Account "5000-300" (Services Expense)
 ```
 
-**Referencja przewodnika:** [Przewodnik po manipulacji polami – dane podstawowe](../then/document-field/field-manipulation-guide.md#master-data-lookup)
+**Referencja przewodnika:** [Przewodnik po manipulacji polami – dane podstawowe](../then/document-field/field-manipulation-guide.md)
 
----
+***
 
 ### Krok 7: Zwaliduj obliczenia
 
 **Porównaj obliczoną sumę z sumą faktury:**
 
-**Karta:** CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+**Karta:** CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES
 
 **Konfiguracja:**
+
 ```
 Field 1: Calculated_Grand_Total
 Field 2: Invoice_Total (from OCR)
@@ -378,6 +402,7 @@ Tolerance: 1%
 ```
 
 **Obliczenie:**
+
 ```
 Variance % = |Calculated - Invoice| / Invoice × 100
 
@@ -394,6 +419,7 @@ Example:
 ```
 
 **Logika:**
+
 ```
 IF Variance ≤ 1%:
   Set Validation_Status = "PASS"
@@ -404,17 +430,18 @@ ELSE:
   Flag for manual verification
 ```
 
-**Referencja przewodnika:** [Przewodnik po kartach warunków – porównanie pól](../and/condition-cards-complete-guide.md#field-comparison)
+**Referencja przewodnika:** [Przewodnik po kartach warunków – porównanie pól](../and/condition-cards-complete-guide.md)
 
----
+***
 
 ### Krok 8: Sformatuj dane do eksportu
 
 **Standaryzuj formaty:**
 
-**Karta:** ACTION_SET_FIELD_TO_TEXT
+**Karta:** ACTION\_SET\_FIELD\_TO\_TEXT
 
 **Formatowanie dat:**
+
 ```
 Field: Invoice_Date_Formatted
 Value: FORMATDATE({{Invoice_Date}}, "YYYY-MM-DD")
@@ -422,6 +449,7 @@ Example: 10/23/2025 → 2025-10-23
 ```
 
 **Formatowanie liczb:**
+
 ```
 Field: Amount_Formatted
 Value: FORMATNUMBER({{Grand_Total_EUR}}, 2, ",", ".")
@@ -429,13 +457,14 @@ Example: 7601.13 → 7.601,13 (German format)
 ```
 
 **Formatowanie tekstu:**
+
 ```
 Field: Supplier_Name_Upper
 Value: UPPERCASE({{Supplier_Name}})
 Example: "ABC Corporation" → "ABC CORPORATION"
 ```
 
----
+***
 
 ## Zaawansowane transformacje
 
@@ -457,6 +486,7 @@ Calculation:
 ```
 
 **Wdrożenie:**
+
 ```
 For each line:
   1. Get product tax category
@@ -465,7 +495,7 @@ For each line:
   4. Sum all Line_Tax values = Total_Tax
 ```
 
----
+***
 
 ### Transformacja 2: Obliczenia rabatów
 
@@ -489,6 +519,7 @@ Final Total = €8,820.00 + €1,675.80 = €10,495.80
 ```
 
 **Wdrożenie:**
+
 ```
 1. Check order value for volume discount eligibility
 2. Calculate volume discount
@@ -500,7 +531,7 @@ Final Total = €8,820.00 + €1,675.80 = €10,495.80
 8. Calculate grand total
 ```
 
----
+***
 
 ### Transformacja 3: Przeliczanie jednostki miary ilości
 
@@ -526,6 +557,7 @@ Conversion:
 ```
 
 **Wdrożenie:**
+
 ```
 1. Identify invoice UOM
 2. Get conversion factor to standard UOM
@@ -535,7 +567,7 @@ Conversion:
 6. Store both original and converted values
 ```
 
----
+***
 
 ### Transformacja 4: Obliczenia dat
 
@@ -559,6 +591,7 @@ Calculations:
 ```
 
 **Wdrożenie:**
+
 ```
 1. Extract Invoice_Date
 2. Extract Payment_Terms (e.g., "NET30", "NET60", "2/10 NET30")
@@ -569,7 +602,7 @@ Calculations:
 7. Set Status: "Current", "Due Soon", "Overdue"
 ```
 
----
+***
 
 ### Transformacja 5: Analiza i ekstrakcja tekstu
 
@@ -595,7 +628,7 @@ Method:
     Revision = Extract digits from Array[4] = "2"
 ```
 
----
+***
 
 ## Kompletny diagram workflow transformacji
 
@@ -674,7 +707,7 @@ INVOICE DATA EXTRACTED
    Document ready for next workflow step
 ```
 
----
+***
 
 ## Szablony konfiguracji
 
@@ -715,7 +748,7 @@ INVOICE DATA EXTRACTED
 }
 ```
 
----
+***
 
 ### Szablon 2: Workflow przeliczania walut
 
@@ -750,13 +783,14 @@ INVOICE DATA EXTRACTED
 }
 ```
 
----
+***
 
 ## Obsługa błędów
 
 ### Typowe błędy transformacji
 
 **Błąd 1: Dzielenie przez zero**
+
 ```
 Problem: Unit_Price = Total / Quantity, but Quantity = 0
 
@@ -769,6 +803,7 @@ Solution:
 ```
 
 **Błąd 2: Nieprawidłowy format liczby**
+
 ```
 Problem: Field contains "€1,234.56" but need number 1234.56
 
@@ -781,6 +816,7 @@ Solution:
 ```
 
 **Błąd 3: Parsowanie daty nie powiodło się**
+
 ```
 Problem: Date in unexpected format
 
@@ -792,6 +828,7 @@ Solution:
 ```
 
 **Błąd 4: Brakujący współczynnik przeliczenia**
+
 ```
 Problem: Unknown UOM conversion
 
@@ -802,59 +839,58 @@ Solution:
   4. Use original values
 ```
 
----
+***
 
 ## Lista kontrolna testów
 
-- [ ] Wszystkie obliczenia dają poprawne wyniki
-- [ ] Dokładność dziesiętna jest zachowana
-- [ ] Przeliczenia walut poprawne
-- [ ] Obliczenia dat poprawne
-- [ ] Transformacje tekstu działają
-- [ ] Wartości null/puste obsłużone
-- [ ] Dzielenie przez zero zablokowane
-- [ ] Formaty liczb zwalidowane
-- [ ] Reguły zaokrąglania zastosowane poprawnie
-- [ ] Wszystkie transformowane pola wypełnione
-- [ ] Walidacja wykrywa błędy
-- [ ] Format eksportu poprawny
+* [ ] Wszystkie obliczenia dają poprawne wyniki
+* [ ] Dokładność dziesiętna jest zachowana
+* [ ] Przeliczenia walut poprawne
+* [ ] Obliczenia dat poprawne
+* [ ] Transformacje tekstu działają
+* [ ] Wartości null/puste obsłużone
+* [ ] Dzielenie przez zero zablokowane
+* [ ] Formaty liczb zwalidowane
+* [ ] Reguły zaokrąglania zastosowane poprawnie
+* [ ] Wszystkie transformowane pola wypełnione
+* [ ] Walidacja wykrywa błędy
+* [ ] Format eksportu poprawny
 
----
+***
 
 ## Powiązane wzorce
 
 ### Wzorce, które dobrze ze sobą współgrają:
 
-- **[Wzorzec integracji API](api-integration-pattern.md)** – Pobieranie kursów wymiany i danych wzbogacających
-- **[Wzorzec PO Matching](po-matching-pattern.md)** – Obliczenia odchyleń
-- **[Wzorzec logiki decyzyjnej](decision-logic-pattern.md)** – Routing na podstawie obliczonych wartości
-- **[Wzorzec zarządzania zadaniami](task-management-pattern.md)** – Tworzenie zadań przy błędach walidacji
+* [**Wzorzec integracji API**](api-integration-pattern.md) – Pobieranie kursów wymiany i danych wzbogacających
+* [**Wzorzec PO Matching**](po-matching-pattern.md) – Obliczenia odchyleń
+* [**Wzorzec logiki decyzyjnej**](decision-logic-pattern.md) – Routing na podstawie obliczonych wartości
+* [**Wzorzec zarządzania zadaniami**](task-management-pattern.md) – Tworzenie zadań przy błędach walidacji
 
----
+***
 
 ## Powiązane przewodniki
 
 ### Wymagania wstępne
-- [Przewodnik po manipulacji polami](../then/document-field/field-manipulation-guide.md) – Wszystkie operacje na polach
-- [Przewodnik po kartach warunków](../and/condition-cards-complete-guide.md) – Warunki walidacji
-- [Przewodnik Call API](../then/action/call-api-guide.md) – Pobieranie danych zewnętrznych
+
+* [Przewodnik po manipulacji polami](../then/document-field/field-manipulation-guide.md) – Wszystkie operacje na polach
+* [Przewodnik po kartach warunków](../and/condition-cards-complete-guide.md) – Warunki walidacji
+* [Przewodnik Call API](../then/action/call-api-guide.md) – Pobieranie danych zewnętrznych
 
 ### Powiązane karty
-- **ACTION_CALCULATE_FIELD** – [Przewodnik po manipulacji polami](../then/document-field/field-manipulation-guide.md#calculate-field)
-- **ACTION_SET_FIELD_TO_TEXT** – [Przewodnik po manipulacji polami](../then/document-field/field-manipulation-guide.md#set-field)
-- **ACTION_COPY_FIELD_VALUE** – [Przewodnik po manipulacji polami](../then/document-field/field-manipulation-guide.md#copy-field)
-- **CALL_API** – [Przewodnik Call API](../then/action/call-api-guide.md)
-- **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** – [Przewodnik po kartach warunków](../and/condition-cards-complete-guide.md)
+
+* **ACTION\_CALCULATE\_FIELD** – [Przewodnik po manipulacji polami](../then/document-field/field-manipulation-guide.md)
+* **ACTION\_SET\_FIELD\_TO\_TEXT** – [Przewodnik po manipulacji polami](../then/document-field/field-manipulation-guide.md)
+* **ACTION\_COPY\_FIELD\_VALUE** – [Przewodnik po manipulacji polami](../then/document-field/field-manipulation-guide.md)
+* **CALL\_API** – [Przewodnik Call API](../then/action/call-api-guide.md)
+* **CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES** – [Przewodnik po kartach warunków](../and/condition-cards-complete-guide.md)
 
 ### Następne kroki
-- Zwaliduj wyniki: [Wzorzec logiki decyzyjnej](decision-logic-pattern.md)
-- Twórz zadania dla błędów: [Wzorzec zarządzania zadaniami](task-management-pattern.md)
-- Wykorzystaj w PO Matching: [Wzorzec PO Matching](po-matching-pattern.md)
 
----
+* Zwaliduj wyniki: [Wzorzec logiki decyzyjnej](decision-logic-pattern.md)
+* Twórz zadania dla błędów: [Wzorzec zarządzania zadaniami](task-management-pattern.md)
+* Wykorzystaj w PO Matching: [Wzorzec PO Matching](po-matching-pattern.md)
 
-**Wersja wzorca:** 1.0
-**Ostatnia aktualizacja:** 23 października 2025
-**Trudność:** Średnia
-**Szacowany czas:** 30–45 minut
-**Wskaźnik sukcesu:** Wysoki
+***
+
+**Wersja wzorca:** 1.0 **Ostatnia aktualizacja:** 23 października 2025 **Trudność:** Średnia **Szacowany czas:** 30–45 minut **Wskaźnik sukcesu:** Wysoki

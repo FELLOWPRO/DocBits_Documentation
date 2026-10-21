@@ -1,6 +1,6 @@
-# Out of Tolerance Unit Price
+# Cena jednostkowa poza tolerancją
 
-<figure><img src="../../../../.gitbook/assets/image (272).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-443397191f7c-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -8,25 +8,25 @@ Ta karta przepływu pracy służy do oceny, czy łączna wartość cen jednostko
 
 ## **Komponenty karty:**
 
-1. **Field Name:**
+1. **Nazwa pola:**
    * **Opis**: Określa pole dokumentu zawierające wartość do połączenia z ceną jednostkową.
    * **Szczegóły**: Wartość w tym polu zostanie połączona z ceną jednostkową, tworząc łączną wartość do porównania.
 2. **Operator:**
    * **Opis**: Definiuje warunek porównania łącznej wartości ceny jednostkowej i wartości pola z określoną wartością.
    * **Opcje**:
-     * **Equals (=)**: Weryfikuje, czy łączna wartość ceny jednostkowej i pola odpowiada określonej wartości.
-     * **Not Equals (≠)**: Zapewnia, że łączna wartość ceny jednostkowej i pola różni się od określonej wartości.
-     * **Greater Than (>)**: Weryfikuje, czy łączna wartość ceny jednostkowej i pola przekracza określoną wartość.
-     * **Greater or Equals (≥)**: Weryfikuje, czy łączna wartość ceny jednostkowej i pola jest większa lub równa określonej wartości.
-     * **Lesser Than (<)**: Weryfikuje, czy łączna wartość ceny jednostkowej i pola jest mniejsza niż określona wartość.
-     * **Lesser or Equals (≤)**: Weryfikuje, czy łączna wartość ceny jednostkowej i pola jest mniejsza lub równa określonej wartości.
-3. **Value:**
+     * **Równa się (=)**: Weryfikuje, czy łączna wartość ceny jednostkowej i pola odpowiada określonej wartości.
+     * **Nie równa się (≠)**: Zapewnia, że łączna wartość ceny jednostkowej i pola różni się od określonej wartości.
+     * **Większe niż (>)**: Weryfikuje, czy łączna wartość ceny jednostkowej i pola przekracza określoną wartość.
+     * **Większy lub równy (≥)**: Weryfikuje, czy łączna wartość ceny jednostkowej i pola jest większa lub równa określonej wartości.
+     * **Mniejszy niż (<)**: Weryfikuje, czy łączna wartość ceny jednostkowej i pola jest mniejsza niż określona wartość.
+     * **Mniejszy lub równy (≤)**: Weryfikuje, czy łączna wartość ceny jednostkowej i pola jest mniejsza lub równa określonej wartości.
+3. **Wartość:**
    * **Opis**: Określa wartość, z którą porównywana będzie łączna wartość ceny jednostkowej i pola.
    * **Szczegóły**: Ta wartość liczbowa reprezentuje próg porównania. Jeśli łączna wartość ceny jednostkowej i pola przekracza tę wartość lub jest od niej niższa (na podstawie wybranego operatora), warunek wyzwoli określone akcje.
 
 ## **Funkcjonalność:**
 
-* &#x20;**Ocena warunku:** System oblicza łączną wartość, mnożąc lub dodając cenę jednostkową do wartości pola, w zależności od konfiguracji. Wynik jest następnie porównywany z określoną wartością za pomocą wybranego operatora. Jeśli warunek jest spełniony (tj. łączna wartość jest poza tolerancją), przepływ pracy przechodzi do kolejnego kroku, czy to zatwierdzenia, odrzucenia, czy dalszego przeglądu.
+* **Ocena warunku:** System oblicza łączną wartość, mnożąc lub dodając cenę jednostkową do wartości pola, w zależności od konfiguracji. Wynik jest następnie porównywany z określoną wartością za pomocą wybranego operatora. Jeśli warunek jest spełniony (tj. łączna wartość jest poza tolerancją), przepływ pracy przechodzi do kolejnego kroku, czy to zatwierdzenia, odrzucenia, czy dalszego przeglądu.
 * **Wykonanie akcji:**
   * **Warunek prawdziwy**: Jeśli porównanie daje wynik prawdziwy (tj. łączna wartość spełnia warunek), przepływ pracy wyzwala akcję powiązaną z warunkiem prawdziwym (np. zatwierdzenie lub powiadomienie).
   * **Warunek fałszywy**: Jeśli porównanie daje wynik fałszywy (tj. łączna wartość nie spełnia warunku), przepływ pracy nie będzie kontynuowany.

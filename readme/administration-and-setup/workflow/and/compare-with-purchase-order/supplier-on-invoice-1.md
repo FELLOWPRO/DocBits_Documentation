@@ -2,9 +2,9 @@
 hidden: true
 ---
 
-# Supplier on Invoice
+# Dostawca na fakturze
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f5b5666e94fe-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel**
 
@@ -12,10 +12,10 @@ Ta karta DocBits umożliwia szczegółowe porównanie dostawcy z faktury z dosta
 
 ## **Funkcjonalność:**
 
-* **Supplier on Invoice Supplier on Purchase Order:** Ta karta sprawdza, czy dostawca na fakturze jest taki sam jak w potwierdzeniu zamówienia, czy nie.
+* **Dostawca na fakturze Dostawca na zamówieniu:** Ta karta sprawdza, czy dostawca na fakturze jest taki sam jak w potwierdzeniu zamówienia, czy nie.
 * **Operator Value:** Użytkownicy mogą ustawić konkretne warunki, takie jak: czy dostawca, który wystawił fakturę, jest taki sam jak w PO, czy nie. Dostępne operatory obejmują:
   * **Is (=):** Sprawdza, czy dostawca na fakturze odpowiada dostawcy w potwierdzeniu zamówienia.
-  * **Is not (≠):** Zapewnia, że dostawca, który wystawił fakturę, jest taki sam jak w potwierdzeniu zamówienia.
+  * **Czy nie jest (≠):** Zapewnia, że dostawca, który wystawił fakturę, jest taki sam jak w potwierdzeniu zamówienia.
 
 ## **Zastosowanie:**
 

@@ -59,3 +59,7 @@ Kliknij **New Variable**, nadaj jej nazwę i typ oraz ustaw jej wartość. Zmien
 
 - Zobacz, jak węzły korzystają z tych wartości, w sekcji [Węzły](nodes.md).
 - Zwaliduj i uruchom workflow w [Walidacji i Testowaniu](validation-and-testing.md).
+
+## Zmienne liczbowe
+
+**Number (Liczba)** to osobny typ zmiennej, obok Text, Yes/No i Document. Wprowadź liczbę bez symbolu waluty. Zmienne organizacji są współdzielone przez przepływy pracy; tworzenie, zmiana i usunięcie zapisują się natychmiast, niezależnie od zapisania lub odrzucenia zmian na obszarze roboczym. Przed zmianą sprawdź powiązane przepływy i przetestuj wartości poniżej progu, równe progowi i powyżej progu.

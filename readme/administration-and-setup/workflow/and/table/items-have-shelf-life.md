@@ -1,6 +1,6 @@
-# Items Have Shelf Life
+# Przedmioty mają okres przydatności do spożycia
 
-<figure><img src="../../../../.gitbook/assets/image (44).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4e7c22460ee3-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -9,18 +9,16 @@ Ta karta DocBits weryfikuje, czy pozycje w zbiorze danych spełniają określone
 ## **Funkcjonalność:**
 
 * **Walidacja okresu przydatności:** Ta karta sprawdza okres przydatności pozycji względem określonego warunku. Użytkownicy mogą wybrać walidację **dowolnej** pozycji lub **wszystkich** pozycji w zbiorze danych i zastosować różne operatory porównania do zdefiniowania warunku.
-* **Item Selection:** Użytkownicy mogą wybrać między:
+* **Wybór przedmiotu:** Użytkownicy mogą wybrać między:
   * **Any Item:** Karta jest wyzwalana, jeśli co najmniej jedna pozycja spełnia określony warunek okresu przydatności.
-  * **All Items:** Karta jest wyzwalana tylko wtedy, gdy wszystkie pozycje spełniają określony warunek okresu przydatności.
-* **Operators:** Dostępne są następujące operatory do ustawienia warunku okresu przydatności:
-  * **Equals (=):** Sprawdza, czy okres przydatności jest dokładnie równy określonej wartości.
-  * **Not Equals (≠):** Zapewnia, że okres przydatności nie jest równy określonej wartości.
-  * **Greater Than (>):** Potwierdza, że okres przydatności jest większy niż określona wartość.
-  * **Greater or Equals (≥):** Zapewnia, że okres przydatności jest większy lub równy określonej wartości.
+  * **Wszystkie przedmioty:** Karta jest wyzwalana tylko wtedy, gdy wszystkie pozycje spełniają określony warunek okresu przydatności.
+* **Operatorzy:** Dostępne są następujące operatory do ustawienia warunku okresu przydatności:
+  * **Równa się (=):** Sprawdza, czy okres przydatności jest dokładnie równy określonej wartości.
+  * **Nie równa się (≠):** Zapewnia, że okres przydatności nie jest równy określonej wartości.
+  * **Większy niż (>):** Potwierdza, że okres przydatności jest większy niż określona wartość.
+  * **Większe lub równe (≥):** Zapewnia, że okres przydatności jest większy lub równy określonej wartości.
   * **Less Than (<):** Sprawdza, czy okres przydatności jest mniejszy niż określona wartość.
-  * **Less or Equals (≤):** Zapewnia, że okres przydatności jest mniejszy lub równy określonej wartości.
-
-
+  * **Mniejszy lub równy (≤):** Zapewnia, że okres przydatności jest mniejszy lub równy określonej wartości.
 
 ## **Zastosowanie:**
 

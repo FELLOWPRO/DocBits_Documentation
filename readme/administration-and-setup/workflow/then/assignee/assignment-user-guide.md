@@ -1,45 +1,52 @@
-# Document Assignment & User Cards - Complete Guide
+# Przypisywanie dokumentów i karty użytkownika
 
-Te karty trafiają do grupy **Then** w Kreatorze przepływów — akcje uruchamiane po spełnieniu warunków When/And:
+## Przypisywanie dokumentów i karty użytkownika — kompletny przewodnik
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Karty dodaje się do grupy <strong>Then</strong> za pomocą <strong>Add Card</strong>.</p></figcaption></figure>
+**Okładki:** 13 kart zadań i użytkowników
 
-**Obejmuje:** 13 kart związanych z przypisaniem i użytkownikami
+***
 
----
+Karty na tej stronie należą do grupy **Wtedy** Kreatora przepływu pracy — akcje wykonywane po spełnieniu warunków Kiedy/I:
 
-## 📌 Informacje o wersji
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-pl.png" alt="Niezapisany przykład z kartami Kiedy, I oraz Wtedy. Uzupełnij wszystkie pola przed uruchomieniem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Niezapisany przykład z kartami Kiedy, I oraz Wtedy. Uzupełnij wszystkie pola przed uruchomieniem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-**Karty wielowersyjne:** DOC_USER_ASSIGN (v2 najnowsza, v3 wycofana), DOC_GROUP_ASSIGN (v2 najnowsza, v3 wycofana), OC_ASSIGN_DOC (v2)
+***
 
-**Ważne:** Wersje v3 dodały obsługę drzewa decyzyjnego, ale są teraz wycofane
-**Zalecenie:** Użyj v2 zarówno dla DOC_USER_ASSIGN, jak i DOC_GROUP_ASSIGN
+### 📌 Informacje o wersji
 
-📖 [Pełna historia wersji](../../../changelog/release.md#-assignment--routing-cards) | [Baza danych wersji kart](../../../../DocFlow/docs/card_version.md)
+**Karty z wieloma wersjami:** DOC\_USER\_ASSIGN (v2 najnowsza, v3 wycofana), DOC\_GROUP\_ASSIGN (najnowsza wersja 2, v3 wycofana), OC\_ASSIGN\_DOC (v2)
 
----
+**Ważne:** Wersje v3 dodały obsługę drzewa decyzyjnego, ale są teraz przestarzałe **Zalecenie:** Użyj wersji 2 zarówno dla DOC\_USER\_ASSIGN, jak i DOC\_GROUP\_ASSIGN
 
-# Podstawowe przypisanie dokumentu
+📖 [Pełna historia wersji](../../release.md) | [Wersje kart i zachowanie](../../cards-overview/card-versions-guide.md)
 
-## Karta: DOC_USER_ASSIGN / Assign Document to User
+***
 
-### Cel
-Przypisuje dokument do konkretnej osoby w celu podjęcia przez nią działania
+## Podstawowe przypisanie dokumentów
 
-### Kiedy używać
-- Dokument wymaga przeglądu przez konkretną osobę
-- Przekazanie indywidualnemu członkowi zespołu
-- Śledzenie odpowiedzialności
-- Przypisanie pracy do imiennie wskazanej osoby
+### Karta: DOC\_USER\_ASSIGN / Przypisz dokument do użytkownika
 
-### Jak to działa
+#### Cel
+
+Przypisuje dokument do konkretnej osoby w celu wykonania jej działania
+
+#### Kiedy stosować
+
+* Dokument wymaga sprawdzenia przez konkretną osobę
+* Przekazanie indywidualnemu członkowi zespołu
+* Śledzenie odpowiedzialności
+* Przypisz pracę wskazanej osobie
+
+#### Jak to działa
+
 ```
 Document is "assigned to" = John Smith
 Only John can see it as assigned to him
 John is responsible for this document
 ```
 
-### Przykład
+#### Przykład
+
 ```
 Invoice arrives
     ↓
@@ -49,39 +56,46 @@ Only John sees "Assigned to Me"
 John must take action on it
 ```
 
-### Parametry
+#### Parametry
+
 ```
 User: [Select which person]
 ```
 
-### Uwaga
-Przypisanie oznacza:
-- Dokument pokazuje się jako "assigned to me" dla tej osoby
-- Ta osoba jest odpowiedzialna
-- Inni nadal mogą widzieć dokument (ale nie jako przypisany do nich)
-- Jedno przypisanie na raz na dokument
+#### Uwaga
 
----
+Przypisywanie oznacza:
 
-## Karta: DOC_GROUP_ASSIGN / Assign Document to Group
+* Dokument jest oznaczony jako „przypisany do mnie” dla tej osoby
+* Ta osoba jest odpowiedzialna
+* Inni nadal mogą widzieć dokument (ale nie w formie przypisanej do nich)
+* Jedno zadanie na raz na dokument
 
-### Cel
+***
+
+### Karta: DOC\_GROUP\_ASSIGN / Przypisz dokument do grupy
+
+#### Cel
+
 Przypisuje dokument do grupy (wszyscy członkowie widzą go jako przypisany do nich)
 
-### Kiedy używać
-- Dokument dla zespołu, nie dla osoby indywidualnej
-- Wiele osób może go obsłużyć
-- Współdzielona odpowiedzialność
-- Dystrybucja obciążenia zespołu
+#### Kiedy stosować
 
-### Jak to działa
+* Dokument dla zespołu, a nie jednostki
+* Wiele osób może sobie z tym poradzić
+* Wspólna odpowiedzialność
+* Dystrybucja obciążenia zespołu
+
+#### Jak to działa
+
 ```
 Document is "assigned to" = Finance Team (10 people)
 All 10 team members see "Assigned to My Group"
 Any team member can take action
 ```
 
-### Przykład
+#### Przykład
+
 ```
 New vendor invoice
     ↓
@@ -91,12 +105,14 @@ All procurement team members see it
 First available person handles it
 ```
 
-### Parametry
+#### Parametry
+
 ```
 Group: [Select which group]
 ```
 
-### Różnica
+#### Różnica
+
 ```
 Individual Assignment:
 - One person responsible
@@ -109,20 +125,23 @@ Group Assignment:
 - Anyone can claim/process
 ```
 
----
+***
 
-## Karta: ACTION_ASSIGN_DOC_BASED_ON_DECISION_TABLE
+### Karta: ACTION\_ASSIGN\_DOC\_BASED\_ON\_DECISION\_TABLE
 
-### Cel
-Przypisuje dokument na podstawie logiki tabeli decyzyjnej
+#### Cel
 
-### Kiedy używać
-- Różni dostawcy wymagają różnych osób obsługujących
-- Przypisanie na podstawie kwoty
-- Złożona logika routingu
-- Wiele warunków przypisania
+Przypisuje dokument w oparciu o logikę tabeli decyzyjnej
 
-### Jak to działa
+#### Kiedy stosować
+
+* Różni dostawcy potrzebują różnych osób zajmujących się obsługą
+* Przydział na podstawie kwoty
+* Złożona logika routingu
+* Wiele warunków przypisania
+
+#### Jak to działa
+
 ```
 Decision Table Logic:
   If Supplier = "ABC Corp" → Assign to: Procurement Team
@@ -136,7 +155,8 @@ Check: Which condition matches?
 Assign accordingly
 ```
 
-### Przykład: Przypisanie na podstawie kwoty
+#### Przykład: Przypisanie na podstawie kwoty
+
 ```
 Invoice: €2000 from ABC Corp
 
@@ -148,7 +168,8 @@ Decision Table checks:
 Result: Assign to: Finance Manager
 ```
 
-### Przykład: Przypisanie na podstawie dostawcy
+#### Przykład: Przypisanie na podstawie dostawcy
+
 ```
 Invoice from: Preferred Supplier
 
@@ -160,26 +181,30 @@ Decision Table:
 Result: Assign to: Finance Team
 ```
 
-### Parametry
+#### Parametry
+
 ```
 Decision Table: [Select decision table]
 (Decision table contains assignment logic)
 ```
 
----
+***
 
-## Karta: ACTION_ASSIGN_DOC_DECISION_TABLE_SEQUENTIAL
+### Karta: ACTION\_ASSIGN\_DOC\_DECISION\_TABLE\_SEQUENTIAL
 
-### Cel
+#### Cel
+
 Przypisuje dokument sekwencyjnie na podstawie tabeli decyzyjnej z priorytetami
 
-### Kiedy używać
-- Wiele kolejnych zatwierdzeń
-- Różne osoby na różnych poziomach
-- Łańcuch zatwierdzania na podstawie kwoty
-- Ścieżka eskalacji
+#### Kiedy stosować
 
-### Jak to działa
+* Wiele kolejnych zatwierdzeń
+* Różni ludzie na różnych poziomach
+* Łańcuch zatwierdzania na podstawie kwoty
+* Ścieżka eskalacji
+
+#### Jak to działa
+
 ```
 First Decision: Who approves first?
     ↓
@@ -196,7 +221,8 @@ Person 2 approves (final)
 Document Complete
 ```
 
-### System priorytetów
+#### System priorytetowy
+
 ```
 Priority 1: First assignment
 Priority 2: Second assignment
@@ -206,7 +232,8 @@ Priority 3: Third assignment
 Each must complete before next begins
 ```
 
-### Przykład: Zatwierdzenie wielopoziomowe
+#### Przykład: Zatwierdzenie wielopoziomowe
+
 ```
 Invoice: €50,000
 
@@ -223,25 +250,29 @@ Invoice Flow:
 Each step depends on previous completion
 ```
 
-### Parametry
+#### Parametry
+
 ```
 Decision Table: [Select]
 Priority Order: [Determined by decision table]
 ```
 
----
+***
 
-## Karta: ACTION_ASSIGN_DOC_TO_USER_SEQUENTIAL
+### Karta: ACTION\_ASSIGN\_DOC\_TO\_USER\_SEQUENTIAL
 
-### Cel
+#### Cel
+
 Przypisuje dokument do użytkownika z priorytetem sekwencyjnym
 
-### Kiedy używać
-- Dokument wymaga konkretnej osoby
-- Wyraźne przetwarzanie sekwencyjne
-- Pojedyncze przypisanie z kolejnością
+#### Kiedy stosować
 
-### Jak to działa
+* Dokument wymaga konkretnej osoby
+* Wyczyść przetwarzanie sekwencyjne
+* Pojedyncze zlecenie z zamówieniem
+
+#### Jak to działa
+
 ```
 Assign Document to: User A (Priority 1)
     ↓
@@ -252,7 +283,8 @@ Then: Assign to User B (Priority 2)
 User B processes
 ```
 
-### Przykład
+#### Przykład
+
 ```
 Invoice processing:
 1. Assign to: Accounts Payable Clerk
@@ -262,19 +294,22 @@ Invoice processing:
 Each person has their turn
 ```
 
----
+***
 
-## Karta: ACTION_ASSIGN_DOC_TO_GROUP_SEQUENTIAL
+### Karta: ACTION\_ASSIGN\_DOC\_TO\_GROUP\_SEQUENTIAL
 
-### Cel
+#### Cel
+
 Przypisuje dokument sekwencyjnie do grup
 
-### Kiedy używać
-- Wiele zatwierdzeń grupowych
-- Różne działy na każdym etapie
-- Przetwarzanie sekwencyjne oparte na zespołach
+#### Kiedy stosować
 
-### Jak to działa
+* Wiele zatwierdzeń grupowych
+* Na każdym etapie różne działy
+* Przetwarzanie sekwencyjne w oparciu o zespół
+
+#### Jak to działa
+
 ```
 Step 1: Assign to Group A (Quality Team)
         Quality verifies
@@ -286,7 +321,8 @@ Step 3: Assign to Group C (Procurement)
         Procurement approves
 ```
 
-### Przykład
+#### Przykład
+
 ```
 New Supplier Onboarding:
 
@@ -305,19 +341,22 @@ Step 3: Procurement Team
 Document passes through all three
 ```
 
----
+***
 
-## Karta: ACTION_ASSIGN_DOC_TO_FACILITY_GROUP
+### Karta: ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP
 
-### Cel
-Przypisuje dokument do określonej grupy obiektu
+#### Cel
 
-### Kiedy używać
-- Dokument dla konkretnego magazynu/obiektu
-- Operacje oparte na obiekcie
-- Przetwarzanie specyficzne dla lokalizacji
+Przypisuje dokument do określonej grupy obiektów
 
-### Przykład
+#### Kiedy stosować
+
+* Dokument dla konkretnego magazynu/obiektu
+* Operacje oparte na obiekcie
+* Przetwarzanie specyficzne dla lokalizacji
+
+#### Przykład
+
 ```
 Shipment notification
 
@@ -332,19 +371,22 @@ Assign to: Munich Warehouse Team
 Munich warehouse processes shipment
 ```
 
----
+***
 
-## Karta: ACTION_ASSIGN_DOC_TO_FACILITY_GROUP_SEQUENTIAL
+### Karta: ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP\_SEQUENTIAL
 
-### Cel
-Przypisuje sekwencyjnie między obiektami
+#### Cel
 
-### Kiedy używać
-- Przetwarzanie wielolokalizacyjne
-- Wysyłka przechodzi przez obiekty
-- Przepływ pracy oparty na lokalizacji
+Przypisuje sekwencyjnie pomiędzy obiektami
 
-### Przykład
+#### Kiedy stosować
+
+* Przetwarzanie w wielu lokalizacjach
+* Przesyłka przechodzi przez obiekty
+* Przepływ pracy oparty na lokalizacji
+
+#### Przykład
+
 ```
 Manufacturing Order:
 
@@ -356,19 +398,22 @@ Step 4: Warehouse (Storage) - Store
 Document/shipment passes through each
 ```
 
----
+***
 
-## Karta: ACTION_ASSIGN_DOC_TO_PROCUREMENT_GROUP
+### Karta: ACTION\_ASSIGN\_DOC\_TO\_PROCUREMENT\_GROUP
 
-### Cel
+#### Cel
+
 Przypisuje dokument do działu zakupów
 
-### Kiedy używać
-- Obsługa przez zespół zakupowy
-- Praca związana z dostawcami
-- Związane z zamówieniem zakupu
+#### Kiedy stosować
 
-### Przykład
+* Obsługa zespołu zakupowego
+* Praca związana z dostawcami
+* Związane z zamówieniem
+
+#### Przykład
+
 ```
 Vendor evaluation document
     ↓
@@ -377,18 +422,21 @@ Assign to: Procurement Group
 Procurement team evaluates vendor
 ```
 
----
+***
 
-## Karta: ACTION_ASSIGN_DOC_TO_PROCUREMENT_GROUP_SEQUENTIAL
+### Karta: ACTION\_ASSIGN\_DOC\_TO\_PROCUREMENT\_GROUP\_SEQUENTIAL
 
-### Cel
-Przypisanie sekwencyjne w ramach zakupów
+#### Cel
 
-### Kiedy używać
-- Wieloetapowy proces zakupowy
-- Łańcuch zatwierdzania w zakupach
+Przydział sekwencyjny w ramach zakupów
 
-### Przykład
+#### Kiedy stosować
+
+* Wieloetapowy proces zakupowy
+* Łańcuch akceptacji w zakupach
+
+#### Przykład
+
 ```
 Purchase Requisition:
 
@@ -399,19 +447,22 @@ Step 3: Director (Final sign-off)
 Each step in sequence
 ```
 
----
+***
 
-## Karta: ACTION_CHANGE_DOC_SUBORG / Change Document Sub-Organization
+### Karta: ACTION\_CHANGE\_DOC\_SUBORG / Podorganizacja dokumentu zmiany
 
-### Cel
-Przypisuje dokument do innej sub-organizacji
+#### Cel
 
-### Kiedy używać
-- Wybrano niewłaściwą organizację
-- Trzeba przenieść do właściwego działu
-- Restrukturyzacja organizacyjna
+Przypisuje dokument do innej podorganizacji
 
-### Jak to działa
+#### Kiedy stosować
+
+* Wybrano niewłaściwą organizację
+* Trzeba przenieść do odpowiedniego działu
+* Restrukturyzacja organizacyjna
+
+#### Jak to działa
+
 ```
 Current Sub-Org: Finance Department
     ↓
@@ -420,7 +471,8 @@ Change to: Accounting Department
 Document now belongs to Accounting
 ```
 
-### Przykład
+#### Przykład
+
 ```
 Document for: Berlin Office
     ↓
@@ -429,19 +481,22 @@ Realize should be: Munich Office
 Change Sub-Organization to: Munich Office
 ```
 
----
+***
 
-## Karta: ACTION_CHANGE_DOC_SUBORG_BY_FIELD_TEXT
+### Karta: ACTION\_CHANGE\_DOC\_SUBORG\_BY\_FIELD\_TEXT
 
-### Cel
-Zmienia sub-organizację na podstawie wartości pola dokumentu
+#### Cel
 
-### Kiedy używać
-- Sub-organizacja przechowywana w polu
-- Dopasowanie lokalizacji dokumentu do pola
-- Automatyczne przypisanie organizacji
+Zmienia podorganizację na podstawie wartości pola dokumentu
 
-### Jak to działa
+#### Kiedy stosować
+
+* Podorganizacja przechowywana w polu
+* Dopasuj lokalizację dokumentu do pola
+* Automatyczne przypisanie organizacji
+
+#### Jak to działa
+
 ```
 Document Field: "Delivery_Location" = "Berlin"
     ↓
@@ -453,7 +508,8 @@ Decision Table:
 Document assigned to: Berlin Sub-Org
 ```
 
-### Przykład
+#### Przykład
+
 ```
 Invoice field: "Cost Center: CC-Berlin-001"
     ↓
@@ -462,19 +518,22 @@ System recognizes: Berlin location
 Change document to: Berlin Sub-Organization
 ```
 
----
+***
 
-## Karta: ACTION_ASSIGN_USER_FROM_FIELD_WITH_FALLBACK
+### Karta: ACTION\_ASSIGN\_USER\_FROM\_FIELD\_WITH\_FALLBACK
 
-### Cel
-Przypisuje dokument do użytkownika z pola, z rozwiązaniem zapasowym, jeśli użytkownik nie zostanie znaleziony
+#### Cel
 
-### Kiedy używać
-- Nazwa użytkownika przechowywana w polu dokumentu
-- Może nie istnieć w systemie
-- Potrzebne rozwiązanie zapasowe, jeśli użytkownik jest niedostępny
+Przypisuje dokument do użytkownika z pola, z możliwością powrotu w przypadku nie znalezienia użytkownika
 
-### Jak to działa
+#### Kiedy stosować
+
+* Nazwa użytkownika przechowywana w polu dokumentu
+* Może nie istnieć w systemie
+* Potrzebujesz kopii zapasowej, jeśli użytkownik jest niedostępny
+
+#### Jak to działa
+
 ```
 Document Field: "Approver: John Smith"
     ↓
@@ -487,13 +546,15 @@ Use Fallback: Sarah Johnson (Manager)
 Document assigned to: Sarah Johnson
 ```
 
-### Parametry
+#### Parametry
+
 ```
 Source Field: [Field containing user name]
 Fallback User: [If source user not found]
 ```
 
-### Przykład
+#### Przykład
+
 ```
 Invoice has field: "Contact Person: Mike Johnson"
 
@@ -504,19 +565,22 @@ If Mike not in system:
 Fallback to: Finance Manager (Robert)
 ```
 
----
+***
 
-## Karta: ACTION_ASSIGN_USER_TO_SUPPLIER
+### Karta: ACTION\_ASSIGN\_USER\_TO\_SUPPLIER
 
-### Cel
-Przypisuje dokument do użytkownika, który zarządza tym dostawcą
+#### Cel
 
-### Kiedy używać
-- Użytkownik powiązany z dostawcą
-- Opiekun konta dostawcy
-- Właściciel relacji z dostawcą
+Przypisuje dokument użytkownikowi zarządzającemu tym dostawcą
 
-### Jak to działa
+#### Kiedy stosować
+
+* Użytkownik powiązany z dostawcą
+* Menedżer konta dostawcy
+* Właściciel relacji z dostawcą
+
+#### Jak to działa
+
 ```
 Document Supplier: ABC Corp
     ↓
@@ -525,11 +589,12 @@ System checks: Who manages ABC Corp?
 Assign to: John Smith (ABC Corp Account Manager)
 ```
 
----
+***
 
-# Drzewa decyzyjne przypisania
+## Drzewa decyzyjne przydziałów
 
-## Przykład tabeli decyzyjnej 1: Na podstawie kwoty
+### Tabela decyzyjna Przykład 1: Na podstawie kwoty
+
 ```
 Amount ≤ €1000
   → Assign to: Finance Team
@@ -544,7 +609,8 @@ Amount > €20000
   → Assign to: CFO
 ```
 
-## Przykład tabeli decyzyjnej 2: Na podstawie dostawcy
+### Tabela decyzyjna Przykład 2: Oparta na dostawcy
+
 ```
 Supplier Type = "Preferred"
   → Assign to: Account Manager
@@ -556,7 +622,8 @@ Supplier Type = "Problem"
   → Assign to: Procurement Director
 ```
 
-## Przykład tabeli decyzyjnej 3: Na podstawie typu dokumentu
+### Tabela decyzyjna Przykład 3: Na podstawie typu dokumentu
+
 ```
 Document Type = "Invoice"
   → Assign to: Accounts Payable Team
@@ -568,11 +635,12 @@ Document Type = "PO"
   → Assign to: Procurement Team
 ```
 
----
+***
 
-# Przykłady przepływów pracy przypisania
+## Przykłady przepływu pracy przy przypisaniu
 
-## Przykład 1: Prosty routing
+### Przykład 1: Proste wyznaczanie tras
+
 ```
 Document Arrives
     ↓
@@ -584,7 +652,8 @@ Assign to: John Smith
 John reviews and approves
 ```
 
-## Przykład 2: Zatwierdzenie sekwencyjne
+### Przykład 2: Zatwierdzenie sekwencyjne
+
 ```
 Document Arrives
     ↓
@@ -601,7 +670,8 @@ Passes to: CFO (Step 3)
 CFO approves final
 ```
 
-## Przykład 3: Routing na podstawie kwoty
+### Przykład 3: Routing na podstawie kwoty
+
 ```
 Invoice: €50,000
     ↓
@@ -612,7 +682,8 @@ YES → Assign to: CFO
 CFO approves directly
 ```
 
-## Przykład 4: Na podstawie obiektu
+### Przykład 4: Oparta na obiekcie
+
 ```
 Shipment for: Berlin Office
     ↓
@@ -623,80 +694,108 @@ Then assign to: Berlin Distribution Team
 Both teams process in sequence
 ```
 
----
+***
 
-# Najlepsze praktyki przypisania
+## Najlepsze praktyki przydziału
 
-✅ **Rób:**
-- Utrzymuj tabele decyzyjne proste
-- Testuj logikę routingu z próbkami
-- Zapewnij, że wszystkie ścieżki prowadzą gdzieś
-- Miej rozwiązanie zapasowe dla brakujących użytkowników
-- Dokumentuj decyzje dotyczące routingu
+✅ **Wykonaj:**
 
-❌ **Nie rób:**
-- Nie twórz przypisań cyklicznych (A→B→A)
-- Nie przypisuj do nieistniejących użytkowników (bez rozwiązania zapasowego)
-- Nie czyń routingu zbyt złożonym
-- Nie zapominaj o przetestowaniu routingu
-- Nie przypisuj do niedostępnych osób
+* Zachowaj prostotę tabel decyzyjnych
+* Przetestuj logikę routingu na przykładach
+* Upewnij się, że wszystkie ścieżki gdzieś prowadzą
+* Mają rezerwę dla brakujących użytkowników
+* Decyzje dotyczące trasowania dokumentów
 
----
+❌ **Nie:**
 
-# Rozwiązywanie problemów z przypisaniem
+* Utwórz przypisania cykliczne (A → B → A)
+* Przypisz do nieistniejących użytkowników (bez możliwości powrotu)
+* Spraw, aby routing był zbyt skomplikowany
+* Zapomnij o przetestowaniu routingu
+* Przypisz do niedostępnych osób
 
-## "Document not assigned"
-**Przyczyna:** Warunek niespełniony lub użytkownik nie istnieje
+***
+
+## Rozwiązywanie problemów z zadaniem
+
+### „Dokument nie przypisany”
+
+**Przyczyna:** Warunek nie jest spełniony lub użytkownik nie istnieje
 
 **Rozwiązanie:**
-- Sprawdź, czy warunek jest prawdziwy
-- Zweryfikuj, czy użytkownik istnieje w systemie
-- Sprawdź ustawienia rozwiązania zapasowego
-- Przejrzyj logikę tabeli decyzyjnej
 
-## "Wrong person assigned"
+* Sprawdź, czy warunek jest prawdziwy
+* Sprawdź, czy użytkownik istnieje w systemie
+* Sprawdź ustawienia awaryjne
+* Przejrzyj logikę tabeli decyzyjnej
+
+### „Przypisano niewłaściwą osobę”
+
 **Przyczyna:** Nieprawidłowa tabela decyzyjna lub logika routingu
 
 **Rozwiązanie:**
-- Przetestuj tabelę decyzyjną
-- Sprawdź warunki
-- Zweryfikuj mapowanie użytkowników
-- Przejrzyj wartości pól
 
-## "Assignment seems to skip someone"
-**Przyczyna:** Nieprawidłowa kolejność sekwencyjna
+* Tabela decyzyjna testu
+* Sprawdź warunki
+* Sprawdź mapowanie użytkowników
+* Przejrzyj wartości pól
+
+### „Wydaje się, że zadanie kogoś pominęło”
+
+**Przyczyna:** Nieprawidłowa kolejność
 
 **Rozwiązanie:**
-- Sprawdź numery priorytetów
-- Zweryfikuj, czy sekwencja jest poprawna
-- Przetestuj z próbką
-- Przejrzyj uporządkowanie tabeli decyzyjnej
 
----
+* Sprawdź numery priorytetowe
+* Sprawdź, czy sekwencja jest prawidłowa
+* Przetestuj z próbką
+* Przejrzyj kolejność w tabeli decyzyjnej
 
-# Porównanie kart przypisania
+***
 
-| Karta | Przypisuje do | Typ routingu | Przypadek użycia |
-|------|-----------|-----------|----------|
-| DOC_USER_ASSIGN | Osoba indywidualna | Bezpośredni | Proste przypisanie |
-| DOC_GROUP_ASSIGN | Grupa | Bezpośredni | Przypisanie do zespołu |
-| ACTION_ASSIGN_DOC_BASED_ON_DECISION_TABLE | Wynik decyzji | Warunkowy | Złożony routing |
-| ACTION_ASSIGN_DOC_DECISION_TABLE_SEQUENTIAL | Wiele (sekwencyjnie) | Warunkowy | Łańcuch zatwierdzania |
-| ACTION_ASSIGN_DOC_TO_USER_SEQUENTIAL | Użytkownik (sekwencyjnie) | Uporządkowany | Sekwencyjne kroki użytkownika |
-| ACTION_ASSIGN_DOC_TO_GROUP_SEQUENTIAL | Grupy (sekwencyjnie) | Uporządkowany | Sekwencyjne kroki grupy |
-| ACTION_ASSIGN_DOC_TO_FACILITY_GROUP | Grupa obiektu | Bezpośredni | Specyficzne dla obiektu |
-| ACTION_ASSIGN_DOC_TO_FACILITY_GROUP_SEQUENTIAL | Obiekty (sekwencyjnie) | Uporządkowany | Wieloobiektowy |
-| ACTION_ASSIGN_DOC_TO_PROCUREMENT_GROUP | Zakupy | Bezpośredni | Przepływ pracy zakupów |
-| ACTION_ASSIGN_DOC_TO_PROCUREMENT_GROUP_SEQUENTIAL | Zakupy (sekwencyjnie) | Uporządkowany | Łańcuch zatwierdzania zakupów |
-| ACTION_CHANGE_DOC_SUBORG | Sub-organizacja | Bezpośredni | Zmiana działu |
-| ACTION_CHANGE_DOC_SUBORG_BY_FIELD_TEXT | Sub-org według pola | Warunkowy | Przypisanie na podstawie pola |
-| ACTION_ASSIGN_USER_FROM_FIELD_WITH_FALLBACK | Pole/Rozwiązanie zapasowe | Warunkowy | Dynamiczne przypisanie użytkownika |
+## Porównanie kart przydziałów
 
----
+| Karta                                                    | Przypisuje do               | Typ trasy  | Przypadek użycia                   |
+| ------------------------------------------------------- | ------------------------ | ----------- | -------------------------- |
+| DOC\_USER\_ASSIGN                                       | Indywidualny               | Bezpośrednie      | Proste zadanie          |
+| DOC\_GROUP\_ASSIGN                                      | Grupa                    | Bezpośrednie      | Przydział zespołu            |
+| ACTION\_ASSIGN\_DOC\_BASED\_ON\_DECISION\_TABLE         | Wynik decyzji          | Warunkowe | Złożone trasowanie            |
+| ACTION\_ASSIGN\_DOC\_DECISION\_TABLE\_SEQUENTIAL        | Wiele (sekwencyjne)    | Warunkowe | Łańcuch zatwierdzeń             |
+| ACTION\_ASSIGN\_DOC\_TO\_USER\_SEQUENTIAL               | Użytkownik (sekwencyjny)        | Zamówione     | Sekwencyjne kroki użytkownika      |
+| ACTION\_ASSIGN\_DOC\_TO\_GROUP\_SEQUENTIAL              | Grupy (sekwencyjne)      | Zamówione     | Sekwencyjne kroki grupowe     |
+| ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP                | Grupa Obiektów           | Bezpośrednie      | Specyficzne dla obiektu          |
+| ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP\_SEQUENTIAL    | Udogodnienia (sekwencyjne)  | Zamówione     | Wieloobiektowy             |
+| ACTION\_ASSIGN\_DOC\_TO\_PROCUREMENT\_GROUP             | Zakupy              | Bezpośrednie      | Przebieg zaopatrzenia       |
+| ACTION\_ASSIGN\_DOC\_TO\_PROCUREMENT\_GROUP\_SEQUENTIAL | Zaopatrzenie (sekwencyjne) | Zamówione     | Łańcuch zatwierdzania zamówień publicznych |
+| ACTION\_CHANGE\_DOC\_SUBORG                             | Podorganizacja         | Bezpośrednie      | Zmiana działu          |
+| ACTION\_CHANGE\_DOC\_SUBORG\_BY\_FIELD\_TEXT            | Podorganizacja według pola         | Warunkowe | Przypisanie w terenie     |
+| ACTION\_ASSIGN\_USER\_FROM\_FIELD\_WITH\_FALLBACK       | Pole/awaria           | Warunkowe | Dynamiczne przypisywanie użytkowników    |
 
-# Powiązane karty
+***
 
-- **ACTION_CREATE_TASK_FOR_USER** - Przypisz zadanie tej samej osobie
-- **ACTION_SEND_EMAIL** - Powiadom przypisaną osobę
-- **CONDITION_USER_IS_ISNOT** - Sprawdź, czy przypisano właściwą osobę
-- **CONDITION_GROUP_IS_ISNOT** - Sprawdź, czy przypisano właściwą grupę
+## Powiązane karty
+
+* **ACTION\_CREATE\_TASK\_FOR\_USER** – Przypisz zadanie tej samej osobie
+* **ACTION\_SEND\_EMAIL** - Powiadom przydzieloną osobę
+* **CONDITION\_USER\_IS\_ISNOT** - Sprawdź, czy przypisano właściwą osobę
+* **CONDITION\_GROUP\_IS\_ISNOT** - Sprawdź, czy przypisano prawidłową grupę
+
+<!-- workflow-card-example-action_assign_doc_to_first_user_and_tasks-20261021 -->
+
+### Przypisz dokument do pierwszego zwróconego użytkownika i utwórz zadania
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-ae5af7c6bdc2-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
+
+`ACTION_ASSIGN_DOC_TO_FIRST_USER_AND_TASKS` · wersja 2
+
+Użyj reguły tabeli decyzyjnej wersji demonstracyjnej, która zwraca skonfigurowanych użytkowników `Demo Reviewer A` i `Demo Reviewer B` w tej kolejności. Wybierz opcję zadania/powiadomienia, tytuł `Review invoice`, opis, priorytet i preferencje e-mail. Pierwszy zwrócony użytkownik jest celem przypisania dokumentu, a skonfigurowane zadania/powiadomienia są skierowane do zwróconych użytkowników. Sprawdź oba wyjścia; pustego zwrotu nie można traktować jako cesji.
+
+<!-- workflow-card-example-action_assign_supplier_user_first_return_of_dt-20261021 -->
+
+### Przypisz pierwszego zwróconego użytkownika do dostawcy
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-0c3d87c8a5e7-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
+
+`ACTION_ASSIGN_SUPPLIER_USER_FIRST_RETURN_OF_DT` · wersja 2
+
+Użyj zarejestrowanego dostawcy wersji demonstracyjnych i reguły tabeli decyzyjnej, której pierwszym wynikiem użytkownika jest `Demo Supplier Owner`. Wybierz tabelę decyzyjną i, jeśli to konieczne, szablony wiadomości e-mail. Stowarzyszenie dostawca-użytkownik korzysta z pierwszego zwróconego użytkownika; nie jest to ta sama operacja, co przypisanie dokumentu. Sprawdź oddzielnie wynik dostawcy i przetestuj pusty zwrot reguły.

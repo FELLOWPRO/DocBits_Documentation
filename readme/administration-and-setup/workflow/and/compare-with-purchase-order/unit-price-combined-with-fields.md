@@ -1,6 +1,6 @@
-# Unit Price Combined with Fields
+# Cena jednostkowa w połączeniu z polami
 
-<figure><img src="../../../../.gitbook/assets/image (26) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-34234b404af7-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -8,19 +8,19 @@ Ta karta przepływu pracy służy do oceny, czy cena jednostkowa w połączeniu 
 
 ## **Komponenty karty:**
 
-1. **Field Name**
+1. **Nazwa pola**
    * **Opis:** Określa pole dokumentu zawierające wartość do połączenia z ceną jednostkową.
    * **Szczegóły:** Musi to odpowiadać dokładnemu identyfikatorowi pierwszego pola w dokumencie.
-2. **Operator**
+2. **Operatora**
    * **Opis:** Definiuje warunek, który zostanie zastosowany do porównania między łączną wartością a określoną wartością.
    * **Opcje:**
-     * **Equals (=):** Sprawdza, czy łączna wartość ceny jednostkowej i pola odpowiada określonej wartości.
-     * **Not Equals (≠):** Zapewnia, że łączna wartość ceny jednostkowej i pola różni się od określonej wartości.
-     * **Greater Than (>):** Weryfikuje, czy łączna wartość jest większa niż określona wartość.
-     * **Greater or Equals (≥):** Sprawdza, czy łączna wartość jest większa lub równa określonej wartości.
-     * **Lesser Than (<):** Weryfikuje, czy łączna wartość jest mniejsza niż określona wartość.
-     * **Lesser or Equals (≤):** Sprawdza, czy łączna wartość jest mniejsza lub równa określonej wartości.
-3. **Value**
+     * **Równa się (=):** Sprawdza, czy łączna wartość ceny jednostkowej i pola odpowiada określonej wartości.
+     * **Nie równa się (≠):** Zapewnia, że łączna wartość ceny jednostkowej i pola różni się od określonej wartości.
+     * **Większy niż (>):** Weryfikuje, czy łączna wartość jest większa niż określona wartość.
+     * **Większe lub równe (≥):** Sprawdza, czy łączna wartość jest większa lub równa określonej wartości.
+     * **Mniejszy niż (<):** Weryfikuje, czy łączna wartość jest mniejsza niż określona wartość.
+     * **Mniejszy lub równy (≤):** Sprawdza, czy łączna wartość jest mniejsza lub równa określonej wartości.
+3. **Wartość**
    * **Opis:** Określa wartość, z którą porównywana będzie łączna wartość ceny jednostkowej i pola.
    * **Szczegóły:** Wartość musi być wartością liczbową.
 

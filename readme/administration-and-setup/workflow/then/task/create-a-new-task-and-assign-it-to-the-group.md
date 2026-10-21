@@ -1,29 +1,29 @@
-# Create a New Task and assign it to the group
+# Utwórz nowe zadanie i przypisz je do grupy
 
-<figure><img src="../../../../.gitbook/assets/image (289).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-502380adb65e-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel:**
 
-Karta przepływu pracy **"Create Group Task or Notification"** ułatwia tworzenie zadań lub powiadomień dla określonych grup, zapewniając efektywną komunikację i zarządzanie zadaniami. Rozszerzona o funkcjonalność drzewa decyzyjnego w późniejszych wersjach, dynamicznie określa przypisaną grupę lub metodę, usprawniając operacje.
+Karta przepływu pracy **„Utwórz zadanie grupowe lub powiadomienie”** ułatwia tworzenie zadań lub powiadomień dla określonych grup, zapewniając efektywną komunikację i zarządzanie zadaniami. Rozszerzona o funkcjonalność drzewa decyzyjnego w późniejszych wersjach, dynamicznie określa przypisaną grupę lub metodę, usprawniając operacje.
 
 ## **Komponenty karty:**
 
-1. **Title**
+1. **Tytuł**
    * **Opis**: Określa tytuł zadania lub powiadomienia.
    * **Szczegóły**: Działa jako identyfikator utworzonego zadania lub powiadomienia.
-2. **Description**
+2. **Opis**
    * **Opis**: Opisuje kontekst lub szczegóły zadania lub powiadomienia.
    * **Szczegóły**: Zapewnia jasność co do jego celu.
-3. **Priority**
+3. **Priorytet**
    * **Opis**: Ustawia poziom ważności zadania.
    * **Opcje**:
      * **High**: Wymaga natychmiastowego działania.
-     * **Medium**: Ważne, ale mniej pilne.
+     * **Średni**: Ważne, ale mniej pilne.
      * **Low**: Można obsłużyć później.
-4. **Assigned Group**
+4. **Przypisana grupa**
    * **Opis**: Określa grupę odpowiedzialną za zadanie lub powiadomienie.
    * **Szczegóły**: Wybierana z listy rozwijanej dostępnych grup.
-5. **Email Notification**
+5. **Powiadomienie e-mail**
    * **Opis**: Umożliwia wysłanie e-maila w celu powiadomienia przypisanej grupy.
    * **Opcje**:
      * **True**: Wysyła powiadomienie e-mail.
@@ -39,13 +39,13 @@ Karta przepływu pracy **"Create Group Task or Notification"** ułatwia tworzeni
 2. **Task/Notification Option** **(tylko Version 4)**
    * **Opis**: Umożliwia utworzenie zadania lub powiadomienia.
    * **Opcje**:
-     * **Task**: Tworzy zadanie dla wybranej grupy.
+     * **Zadanie**: Tworzy zadanie dla wybranej grupy.
      * **Notification**: Wysyła powiadomienie zamiast tworzenia zadania.
 
 ## **Funkcjonalność:**
 
 * **Ocena warunku**:\
-  Wykonuje akcję karty tylko wtedy, gdy sekcje **"Where"** i **"And Sections"** są prawdziwe.
+  Wykonuje akcję karty tylko wtedy, gdy sekcje **„Kiedy”** i **„I sekcje”** są prawdziwe.
 * **Tworzenie zadania lub powiadomienia**:
   * Tworzone jest zadanie dla wybranej grupy z określonym tytułem, opisem i priorytetem.
   * W Version 4 karta może utworzyć powiadomienie zamiast zadania.
@@ -56,12 +56,24 @@ Karta przepływu pracy **"Create Group Task or Notification"** ułatwia tworzeni
 
 ## **Konfiguracja:**
 
-1. **Define Task or Notification Details**: Wprowadź tytuł, opis i priorytet.
+1. **Zdefiniuj szczegóły zadania lub powiadomienia**: Wprowadź tytuł, opis i priorytet.
 2. **Assign to a Group**: Wybierz grupę z listy rozwijanej do przypisania zadania lub powiadomienia.
-3. **Enable Email Notification**: Wskaż, czy grupa powinna zostać powiadomiona za pośrednictwem e-maila.
-4. **Use Decision Tree (tylko Version 3)**: Włącz drzewo decyzyjne, aby dynamicznie przypisać grupę.
+3. **Włącz powiadomienie e-mailem**: Wskaż, czy grupa powinna zostać powiadomiona za pośrednictwem e-maila.
+4. **Użyj drzewa decyzyjnego (tylko wersja 3)**: Włącz drzewo decyzyjne, aby dynamicznie przypisać grupę.
 5. **Select Output Type (tylko Version 4)**: Wybierz, czy karta tworzy zadanie, czy powiadomienie.
 
 ## **Podsumowanie:**
 
-Karta przepływu pracy **"Create Group Task or Notification"** upraszcza zarządzanie zadaniami i powiadomieniami, kierując je bezpośrednio do grup. Jej funkcja dynamicznego przypisywania, włączana przez drzewo decyzyjne, zwiększa elastyczność, podczas gdy powiadomienia e-mail zapewniają terminową komunikację. Wersje 3 i 4 dodają zaawansowaną funkcjonalność, czyniąc ją wszechstronnym narzędziem do efektywnego wykonywania przepływu pracy.
+Karta przepływu pracy **„Utwórz zadanie grupowe lub powiadomienie”** upraszcza zarządzanie zadaniami i powiadomieniami, kierując je bezpośrednio do grup. Jej funkcja dynamicznego przypisywania, włączana przez drzewo decyzyjne, zwiększa elastyczność, podczas gdy powiadomienia e-mail zapewniają terminową komunikację. Wersje 3 i 4 dodają zaawansowaną funkcjonalność, czyniąc ją wszechstronnym narzędziem do efektywnego wykonywania przepływu pracy.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktyczny przykład
+
+**Kiedy używać:** Daj współdzielonemu zespołowi konkretne zadanie przeglądu.
+
+**Konfiguracja:** Wybierz grupę `Demo Finance`, tytuł `Review invoice`, przydatny opis i priorytet. Wyłącz pocztę e-mail na potrzeby pierwszego testu.
+
+**Oczekiwany wynik i kontrprzykład:** Grupa otrzymuje zadanie. Potwierdź tytuł i osobę przypisaną na liście zadań; Dostarczanie wiadomości e-mail podlega oddzielnej kontroli, jeśli jest włączone.
+
+To jest ilustracyjna konfiguracja i oczekiwany wynik. Korzystaj z pól, użytkowników i grup skonfigurowanych w Twojej organizacji testowej; nie jest to twierdzenie, że ten przykład został wykonany.

@@ -23,6 +23,14 @@ Questo breve video inizia alla scrivania di una cliente immaginaria a Milano. La
 La cliente e l’ufficio sono generati con IA. Le azioni e i risultati di ricerca provengono da registrazioni reali nell’account di prova DocBits.
 
 
+## Visita completa della dashboard
+
+La cliente immaginaria di Milano mostra la ricerca combinata con AND, i filtri di stato, la guida alla ricerca, le impostazioni delle colonne, le statistiche e l’aggiornamento. L’interfaccia italiana è stata registrata in DocBits con dati di prova sintetici. Il personaggio e la voce sono generati dall’IA.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/it.mp4" %}
+
+[Apri il lettore con sottotitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/it.html) · [Sottotitoli italiani (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/it.vtt) · [Trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/it.txt)
+
 ## Iniziare il lavoro quotidiano
 
 1. Controlla l’organizzazione attiva e, se disponibile, la sotto-organizzazione.

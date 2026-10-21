@@ -344,7 +344,7 @@ Grand Total (EUR) = 7601.13 × 0.92 = €6,993.04
 Store in: Grand_Total_EUR
 ```
 
-**Referencja przewodnika:** [Wzorzec integracji API – przeliczanie walut](api-integration-pattern.md#przykład-1-wyszukiwanie-kursu-wymiany)
+**Referencja przewodnika:** [Wzorzec integracji API – przeliczanie walut](api-integration-pattern.md)
 
 ***
 
@@ -875,7 +875,7 @@ Solution:
 
 * [Przewodnik po manipulacji polami](../then/document-field/field-manipulation-guide.md) – Wszystkie operacje na polach
 * [Przewodnik po kartach warunków](../and/condition-cards-complete-guide.md) – Warunki walidacji
-* [Przewodnik Call API](../then/action/call-api-guide.md) – Pobieranie danych zewnętrznych
+* [Przewodnik Call API](../then/action/call-api-guide.md)
 
 ### Powiązane karty
 

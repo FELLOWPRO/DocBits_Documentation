@@ -25,11 +25,7 @@ Dodaj tę kartę do grupy **Wtedy** Kreatora przepływu pracy — akcje, które 
 
 ## Cel
 
-Ta karta wysyła bezpieczną wiadomość do witryny internetowej lub usługi i może otrzymać odpowiedź zwrotną. Jest prostsza niż karta „Call API” i przydatna przy szybkich integracjach.
-
-**Przykład z życia codziennego:** Wyślij dane z faktury do swojego systemu księgowego lub zapytaj system zewnętrzny, czy pracownik jest zatwierdzony do przetwarzania tego zakupu.
-
-***
+Karta żądania HTTPS korzysta ze skonfigurowanego adresu HTTPS i własnych nagłówków. `call_api` korzysta ze względnej ścieżki API DocBits i kontekstu bieżącego użytkownika; wynik pochodzi z tekstu odpowiedzi. Wybieraj według punktu końcowego i kontraktu odpowiedzi, a nie podziału na proste i złożone API.
 
 ## Kiedy używać tej karty
 
@@ -313,13 +309,7 @@ Headers: Authorization: Bearer token
 
 ## Różnica w stosunku do karty „Call API”.
 
-| Funkcja        | Żądanie HTTPS      | Zadzwoń do API          |
-| -------------- | ------------------ | ----------------- |
-| Prostota     | Proste             | Bardziej złożone      |
-| Parametry     | Podstawowe              | Zaawansowane          |
-| Obsługa błędów | Podstawowe              | Szczegółowe          |
-| Użyj dla        | Szybkie integracje | Złożone interfejsy API      |
-| Najlepsze dla       | Haki internetowe           | Profesjonalne API |
+Karta żądania HTTPS korzysta ze skonfigurowanego adresu HTTPS i własnych nagłówków. `call_api` korzysta ze względnej ścieżki API DocBits i kontekstu bieżącego użytkownika; wynik pochodzi z tekstu odpowiedzi. Wybieraj według punktu końcowego i kontraktu odpowiedzi, a nie podziału na proste i złożone API.
 
 ***
 

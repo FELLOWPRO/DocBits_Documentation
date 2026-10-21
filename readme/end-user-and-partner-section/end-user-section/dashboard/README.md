@@ -27,9 +27,9 @@ Klientka i biuro zostały wygenerowane przez AI. Czynności i wyniki wyszukiwani
 
 Fikcyjna klientka z Warszawy pokazuje wyszukiwanie z operatorem AND, filtry statusu, pomoc wyszukiwania, ustawienia kolumn, statystyki i odświeżanie. Polski interfejs nagrano w DocBits z syntetycznymi danymi testowymi. Postać i głos wygenerowano za pomocą AI.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/pl.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/pl.mp4" %}
 
-[Otwórz odtwarzacz z napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/pl.html) · [Polskie napisy (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/pl.vtt) · [Transkrypcja](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/pl.txt)
+[Otwórz odtwarzacz z napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/pl.html) · [Polskie napisy (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/pl.vtt) · [Transkrypcja](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/pl.txt)
 
 ## Rozpoczęcie codziennej pracy
 

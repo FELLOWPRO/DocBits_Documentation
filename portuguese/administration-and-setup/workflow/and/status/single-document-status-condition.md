@@ -1,6 +1,6 @@
-# Single Document Status Condition
+# Condição de status de documento único
 
-<figure><img src="../../../../.gitbook/assets/userlmn_928e514bc0e2aa775894e4ec5f992bd9 (1).png" alt="" width="528"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-c0315ad39a89-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
 **Propósito**
 
@@ -12,10 +12,10 @@ Este cartão de fluxo de trabalho foi adaptado para gerir operações sobre docu
    * **Descrição**: Especifica o método para avaliar o estado do documento face à condição selecionada.
    * **Opções**:
      * **is**: Aciona a operação se o estado atual do documento corresponder ao estado selecionado.
-     * **is not**: Aciona a operação se o estado atual do documento não corresponder ao estado selecionado.
-2. **Status**
+     * **não é**: Aciona a operação se o estado atual do documento não corresponder ao estado selecionado.
+2. **Estado**
    * **Descrição**: Permite a seleção de um único estado de documento para definir a condição.
-   * **Exemplos de estados**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval".
+   * **Exemplos de estados**: "Erro", "Erro de exportação", "Pronto em validação", "Pronto em revisão", "Aprovação pendente", "Segunda aprovação pendente".
    * **Detalhe**: Os utilizadores escolhem um estado a partir de uma lista pendente ou de um conjunto de botões de opção. Esse estado serve então como critério para a operação do cartão.
 
 **Funcionalidade**
@@ -37,3 +37,13 @@ Este cartão de fluxo de trabalho foi adaptado para gerir operações sobre docu
 #### Conclusão
 
 O cartão de fluxo de trabalho "Single Document Status Condition" simplifica a gestão de documentos ao focar-se em condições de estado individuais. Esta especificação é útil em casos em que é necessário um controlo preciso sobre os fluxos de documentos, especialmente em ambientes com critérios de processamento rigorosos. Documentar esta versão do cartão com clareza assegurará que os utilizadores compreendem plenamente a sua aplicação e a conseguem integrar eficazmente nas suas operações diárias, reforçando tanto a conformidade como a eficiência no processamento de documentos.
+
+<!-- workflow-card-complete-example-20261021 condition_doc_status_is_isnot -->
+
+### Exemplo de status único
+
+**Configuração:** Escolha o operador `is` e o status `Pending Approval`. Adicione uma ação de revisão a seguir apropriada para esse status.
+
+**Resultado esperado e contra-exemplo:** A condição é verdadeira para um documento atualmente `Pending Approval`; é falso para um documento com status `Ready in Validation`. Use o status real selecionado em sua versão. A alteração de um status não exporta o documento por si só.
+
+Esta é uma configuração de teste ilustrativa e resultado esperado; não foi executado. Use dados e destinatários configurados na sua organização de teste.

@@ -1,6 +1,6 @@
-# Document Type
+# Tipo de documento
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3a6901be7256-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
 ## Propósito:
 
@@ -12,8 +12,8 @@ Este cartão de fluxo de trabalho foi concebido para avaliar se um documento cor
    * **Descrição**: Define se o documento deve ser do tipo especificado ou não.
    * **Opções**:
      * **Is**: O documento tem de corresponder ao tipo especificado para que a condição seja verdadeira.
-     * **Is Not**: O documento não pode corresponder ao tipo especificado para que a condição seja verdadeira.
-2. **Type**
+     * **Não é**: O documento não pode corresponder ao tipo especificado para que a condição seja verdadeira.
+2. **Tipo**
    * **Descrição**: Especifica o tipo de documento a comparar.
    * **Detalhe**: Inclui uma variedade de tipos de documento, como "Invoice", "Purchase Order", etc., com base nos quais a condição (is/is not) será avaliada.
 
@@ -31,3 +31,15 @@ Este cartão de fluxo de trabalho foi concebido para avaliar se um documento cor
 ## Conclusão:
 
 O cartão de fluxo de trabalho "Document Type Comparison" é essencial para garantir que os fluxos de trabalho prosseguem com base no tipo de documento que está a ser processado. Ao comparar o tipo de documento, ajuda as organizações a automatizar tarefas de encaminhamento e processamento de documentos, assegurando que os documentos são tratados de forma adequada com base no seu tipo.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemplo prático
+
+**Quando usar:** Execute uma verificação específica da fatura.
+
+**Configuração:** Selecione o tipo de documento `Invoice` e o operador igual.
+
+**Resultado esperado e contra-exemplo:** Uma fatura é aprovada. Uma nota de crédito não passa nesta condição.
+
+Esta é uma configuração ilustrativa e resultado esperado. Utilize campos, usuários e grupos configurados em sua organização de teste; não é uma afirmação de que este exemplo foi executado.

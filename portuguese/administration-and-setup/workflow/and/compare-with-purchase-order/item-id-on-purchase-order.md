@@ -1,6 +1,6 @@
-# Item Id on Purchase Order
+# ID do item no pedido de compra
 
-<figure><img src="../../../../.gitbook/assets/image (275).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4a5b4a7c3888-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,7 +8,7 @@ Este cartão de fluxo de trabalho foi concebido para comparar IDs de itens entre
 
 ## **Componentes do cartão:**
 
-1. **Any / All:**
+1. **Qualquer / Todos:**
    * **Descrição**: Define se a condição se aplica a alguma ou a todas as instâncias de comparação de IDs de itens.
    * **Opções**:
      * **Any**: A condição é cumprida se algum ID de item na ordem de compra corresponder ao ID de item no documento.
@@ -16,8 +16,8 @@ Este cartão de fluxo de trabalho foi concebido para comparar IDs de itens entre
 2. **Operador:**
    * **Descrição**: Define a condição para comparar o ID de item na ordem de compra com o ID de item no documento.
    * **Opções**:
-     * **Equals (=)**: Verifica se o ID de item na ordem de compra corresponde exatamente ao ID de item no documento.
-     * **Not Equals (≠)**: Garante que o ID de item na ordem de compra não corresponde ao ID de item no documento.
+     * **Igual a (=)**: Verifica se o ID de item na ordem de compra corresponde exatamente ao ID de item no documento.
+     * **Não é igual (≠)**: Garante que o ID de item na ordem de compra não corresponde ao ID de item no documento.
 
 ## **Funcionalidade:**
 

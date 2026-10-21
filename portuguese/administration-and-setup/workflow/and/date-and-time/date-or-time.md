@@ -1,6 +1,6 @@
-# Date or Time
+# Data ou hora
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-aab11d0fe7ed-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -10,7 +10,7 @@ Este cartão DocBits verifica se um valor de data/hora especificado está dentro
 
 * **Validação de data/hora:** Este cartão avalia se uma determinada data/hora está dentro de um intervalo especificado utilizando as seguintes condições:
   * **Is:** Verifica se a data/hora está dentro do intervalo de início e fim definido (inclusive).
-  * **Is Not:** Garante que a data/hora está fora do intervalo definido.
+  * **Não é:** Garante que a data/hora está fora do intervalo definido.
 
 **Intervalo de data/hora:** Os utilizadores especificam os valores de data/hora de início e de fim para definir o intervalo de comparação.
 

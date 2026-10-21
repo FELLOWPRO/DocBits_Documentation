@@ -1,6 +1,6 @@
-# Checkbox is checked
+# A caixa de seleção está marcada
 
-<figure><img src="../../../../.gitbook/assets/image (20) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6ae1b0fb29dd-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,10 +8,10 @@ Este cartão de fluxo de trabalho foi concebido para automatizar ações com bas
 
 ## **Componentes do cartão:**
 
-* **Field Name**
+* **Nome do campo**
   * **Descrição:** Especifica o nome do campo de caixa de verificação que será avaliado.
   * **Detalhe:** Deve corresponder ao identificador exato do campo utilizado no sistema. Determina qual o estado da caixa de verificação que está a ser monitorizado.
-* **Boolean**
+* **Booleano**
   * **Descrição:** Define a condição que aciona o fluxo de trabalho.
   * **Opções:**
     * **True:** O fluxo de trabalho é acionado se a caixa de verificação estiver assinalada.
@@ -29,12 +29,22 @@ Este cartão de fluxo de trabalho foi concebido para automatizar ações com bas
 
 ## **Configuração:**
 
-* Os utilizadores configuram o cartão selecionando o campo de caixa de verificação a partir de uma lista de campos disponíveis e definindo a condição Boolean.&#x20;
+* Os utilizadores configuram o cartão selecionando o campo de caixa de verificação a partir de uma lista de campos disponíveis e definindo a condição Boolean.
 
 ## Conclusão:
 
 O cartão de fluxo de trabalho "Checkbox Field Condition" é uma ferramenta fundamental para gerir formulários e documentos dinâmicos dentro de um sistema ERP, onde as entradas do utilizador podem ditar os processos de dados subsequentes. Ao automatizar ações com base no estado de uma caixa de verificação, este cartão melhora a eficiência do fluxo de trabalho e assegura que os comportamentos do sistema estão alinhados com as entradas do utilizador. Uma documentação clara deste cartão ajudará os utilizadores a implementá-lo eficazmente nas suas operações, permitindo um melhor controlo sobre os comportamentos dos formulários e as automações de processos.
 
-
-
 **Nota: Nem todos os clientes têm a caixa de verificação, mas esta pode ser adicionada se assim o desejarem.**
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemplo prático
+
+**Quando usar:** Execute um acompanhamento somente após um sinalizador de revisão explícito ter sido definido.
+
+**Configuração:** Selecione o campo da caixa de seleção `review_complete` e o booleano `true`.
+
+**Resultado esperado e contra-exemplo:** Uma caixa de seleção marcada é aprovada. Uma caixa de seleção desmarcada falha; não use um campo ausente como prova de revisão concluída.
+
+Esta é uma configuração ilustrativa e resultado esperado. Utilize campos, usuários e grupos configurados em sua organização de teste; não é uma afirmação de que este exemplo foi executado.

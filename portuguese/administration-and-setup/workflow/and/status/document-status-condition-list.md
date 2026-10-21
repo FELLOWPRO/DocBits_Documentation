@@ -1,6 +1,6 @@
-# Document Status Condition List
+# Lista de condições de status do documento
 
-<figure><img src="../../../../.gitbook/assets/userlmn_e9d6da331deceed4f330358635d6b605 (1).png" alt="" width="521"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8dc08a110089-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
 **Propósito**
 
@@ -12,8 +12,8 @@ Este cartão foi concebido para controlar as ações do fluxo de trabalho com ba
    * **Descrição**: Determina como o estado do documento será avaliado face a uma condição especificada.
    * **Opções**:
      * **is**: Aciona as ações associadas se o estado atual do documento corresponder a um dos estados especificados.
-     * **is not**: Aciona as ações se o estado do documento não corresponder a nenhum dos estados especificados.
-2. **Status ( List )**
+     * **não é**: Aciona as ações se o estado do documento não corresponder a nenhum dos estados especificados.
+2. **Status (Lista)**
    * **Descrição**: Lista os estados específicos com os quais o estado atual do documento será comparado.
    * **Exemplos**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval". Estes representam diferentes fases ou condições em que um documento se pode encontrar dentro de um processo de fluxo de trabalho.
 
@@ -22,7 +22,7 @@ Este cartão foi concebido para controlar as ações do fluxo de trabalho com ba
 * **Identificação do estado**: Identifica automaticamente o estado atual de um documento à medida que ele avança pelo fluxo de trabalho do sistema ERP.
 * **Avaliação da condição**: Aplica o operador escolhido (is ou is not) ao estado do documento em comparação com os estados listados:
   * Se for **is**, verifica se o estado do documento corresponde a algum estado da lista.
-  * Se for **is not**, verifica se o estado do documento não aparece na lista.
+  * Se for **não é**, verifica se o estado do documento não aparece na lista.
 * **Execução da ação**: Consoante o resultado da avaliação da condição:
   * **True**: Executa ações ou fluxos de trabalho predefinidos se a condição for cumprida.
   * **False**: Ignora ou aciona fluxos de trabalho alternativos se a condição não for cumprida.
@@ -37,3 +37,13 @@ Este cartão foi concebido para controlar as ações do fluxo de trabalho com ba
 #### Conclusão
 
 O cartão de fluxo de trabalho "Document Status Condition" é vital para garantir que os documentos são processados corretamente de acordo com o seu estado atual, reforçando o controlo e a eficiência dentro do sistema ERP. Documentar este cartão com clareza no manual do sistema ajudará os utilizadores a implementá-lo e geri-lo eficazmente, aproveitando a sua funcionalidade para manter fluxos de documentos fluidos e conformes. Este cartão é particularmente útil na gestão dos ciclos de vida dos documentos e em assegurar que apenas os documentos que cumprem critérios específicos avançam para as fases subsequentes dos processos de negócio.
+
+<!-- workflow-card-complete-example-20261021 condition_doc_status_is_isnot_in_list -->
+
+### Exemplo de lista de status
+
+**Configuração:** Escolha o operador que requer que o status atual esteja dentro da lista. Selecione `Pending Approval` e `Pending Second Approval` na lista de status.
+
+**Resultado esperado e contra-exemplo:** A condição é verdadeira para um documento com qualquer um dos status selecionados. É falso para um documento com status `Ready in Validation`. Com o operador que exige que o status esteja fora da lista, esses resultados de condição são invertidos. Inspecione a lista real em vez de comparar um valor de texto livre separado por vírgula.
+
+Esta é uma configuração de teste ilustrativa e resultado esperado; não foi executado. Use dados e destinatários configurados na sua organização de teste.

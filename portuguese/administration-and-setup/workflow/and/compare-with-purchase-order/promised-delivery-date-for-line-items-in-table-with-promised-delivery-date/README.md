@@ -1,6 +1,6 @@
-# Promised delivery date for line items in table with promised delivery date
+# Data de entrega prometida para itens de linha na tabela com data de entrega prometida
 
-<figure><img src="../../../../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-264ee6d588cc-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
 ## Propósito:
 
@@ -12,18 +12,18 @@ Este cartão de fluxo de trabalho foi concebido para validar a **data de entrega
    * **Descrição:**\
      Define como a data de entrega prometida da linha de item é comparada com a data de entrega prometida da ordem de compra.
    * **Opções:**
-     * **Equals (=):** A data da linha de item tem de estar dentro da janela de tolerância.
-     * **Not Equals (≠):** A data da linha de item tem de estar fora da janela de tolerância.
-     * **Greater Than (>):** A data da linha de item tem de ser posterior à janela de tolerância.
-     * **Greater or Equals (≥):** A data da linha de item tem de ser igual ou posterior ao início da janela de tolerância.
-     * **Lesser Than (<):** A data da linha de item tem de ser anterior à janela de tolerância.
-     * **Lesser or Equals (≤):** A data da linha de item tem de ser igual ou anterior ao fim da janela de tolerância.<br>
-2. **Tolerance Days**
+     * **Igual a (=):** A data da linha de item tem de estar dentro da janela de tolerância.
+     * **Não é igual (≠):** A data da linha de item tem de estar fora da janela de tolerância.
+     * **Maior que (>):** A data da linha de item tem de ser posterior à janela de tolerância.
+     * **Maior ou Igual (≥):** A data da linha de item tem de ser igual ou posterior ao início da janela de tolerância.
+     * **Menor que (<):** A data da linha de item tem de ser anterior à janela de tolerância.
+     * **Menor ou igual (≤):** A data da linha de item tem de ser igual ou anterior ao fim da janela de tolerância.<br>
+2. **Dias de tolerância**
    * **Descrição:**\
      Especifica o número de dias usado para calcular a janela de tolerância aceitável em torno da data de entrega prometida da ordem de compra.
    * **Detalhe:**\
      Este valor é um número inteiro e define quantos dias antes e depois da data da ordem de compra são considerados durante a validação.<br>
-3. **Allowed Tolerance Days**
+3. **Dias de tolerância permitidos**
    * **Descrição:**\
      Define quais os dias da semana que são contabilizados ao calcular os dias de tolerância.
    * **Detalhe:**\
@@ -31,7 +31,7 @@ Este cartão de fluxo de trabalho foi concebido para validar a **data de entrega
 
 ### Funcionalidade:
 
-* **Avaliação da condição:** O sistema calcula uma janela de tolerância em torno da data de entrega prometida da ordem de compra com base nos **Tolerance Days** e **Allowed Tolerance Days** configurados.\
+* **Avaliação da condição:** O sistema calcula uma janela de tolerância em torno da data de entrega prometida da ordem de compra com base nos **Dias de tolerância** e **Dias de tolerância permitidos** configurados.\
   A data de entrega prometida de cada linha de item é então comparada com esta janela utilizando o operador selecionado.
 * Execução da ação:
   * **Condição Verdadeira:** Se a diferença da data de entrega estiver dentro do intervalo de tolerância e corresponder à condição definida pelo operador, o fluxo de trabalho prossegue.
@@ -45,4 +45,4 @@ Este cartão de fluxo de trabalho foi concebido para validar a **data de entrega
 
 ### Conclusão:
 
-O cartão de fluxo de trabalho **Compare with Purchase Order – Promised Delivery Date for Line Items** oferece uma forma flexível de aplicar regras de datas de entrega. Ao combinar operadores com um tratamento de tolerância sensível aos dias da semana, permite a validação precisa dos compromissos de entrega, reduzindo ao mesmo tempo as verificações manuais e as exceções.
+O cartão de fluxo de trabalho **Comparar com pedido de compra – data de entrega prometida para itens de linha** oferece uma forma flexível de aplicar regras de datas de entrega. Ao combinar operadores com um tratamento de tolerância sensível aos dias da semana, permite a validação precisa dos compromissos de entrega, reduzindo ao mesmo tempo as verificações manuais e as exceções.

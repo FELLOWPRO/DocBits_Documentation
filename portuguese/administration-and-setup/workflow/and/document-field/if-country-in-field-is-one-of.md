@@ -1,6 +1,6 @@
-# If Country in Field is One of
+# Se o país no campo for um dos
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-364a45ddb67d-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
 ## **Propósito**
 
@@ -8,18 +8,18 @@ Este cartão de fluxo de trabalho foi concebido para avaliar se um país especif
 
 ## **Componentes do cartão:**
 
-1. **Field Name**
+1. **Nome do campo**
    * **Descrição:** Especifica o campo do documento onde o nome ou código do país está armazenado.
-   * **Detalhe:** Deve corresponder ao identificador exato do campo dos dados do país dentro do documento.&#x20;
+   * **Detalhe:** Deve corresponder ao identificador exato do campo dos dados do país dentro do documento.
 2. **Operador**
    * **Descrição:** Define se o país no campo tem de fazer parte de uma lista predefinida de países.
    * **Opções:**
      * **Is:** O país tem de estar incluído na lista de países especificados para que a condição seja verdadeira.
-     * **Is Not:** O país não pode estar incluído na lista de países especificados para que a condição seja verdadeira.
-3. **Countries**
+     * **Não é:** O país não pode estar incluído na lista de países especificados para que a condição seja verdadeira.
+3. **Países**
    * **Descrição:** Especifica a lista de países com a qual o país selecionado será comparado.
    * **Detalhe:** Trata-se de uma lista de países separada por vírgulas. A comparação verifica se o país no campo está incluído nesta lista.
-4. **Continue Condition**
+4. **Condição Continuar**
    * **Descrição:** Define o resultado da comparação. Se o país cumprir a condição, o fluxo de trabalho continua com o valor Boolean especificado.
    * **Opções:**
      * **True:** O fluxo de trabalho continua se a condição corresponder.
@@ -41,3 +41,15 @@ Este cartão de fluxo de trabalho foi concebido para avaliar se um país especif
 ## **Conclusão:**
 
 O cartão de fluxo de trabalho "Country in Field Comparison with List" é uma ferramenta valiosa para automatizar ações com base no facto de um país fazer parte de um grupo predefinido. Ao comparar os dados do país com uma lista de países permitidos ou restritos, este cartão melhora a eficiência do fluxo de trabalho e assegura que os processos do sistema seguem as regras geográficas corretas.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemplo prático
+
+**Quando usar:** Encaminhe faturas de dois países especificados.
+
+**Configuração:** Selecione o campo do país, é um de, códigos de país `DE` e `FR` e continuação `true`.
+
+**Resultado esperado e contra-exemplo:** `DE` passa; `US` não satisfaz a lista de países selecionados.
+
+Esta é uma configuração ilustrativa e resultado esperado. Utilize campos, usuários e grupos configurados em sua organização de teste; não é uma afirmação de que este exemplo foi executado.

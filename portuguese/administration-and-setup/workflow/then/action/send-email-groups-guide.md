@@ -1,54 +1,72 @@
-# Send Email to Groups
+# Enviar e-mail para grupos
 
-Estes cartões ficam no grupo **Then** do Construtor de fluxos de trabalho — as ações executadas assim que as condições When/And são atendidas:
+***
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Os cartões são adicionados ao grupo <strong>Then</strong> através de <strong>Add Card</strong>.</p></figcaption></figure>
+Adicione este cartão ao grupo **Então** do Workflow Builder — as ações que são executadas quando as condições Quando/E correspondem:
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-pt.png" alt="Exemplo não guardado com cartões Quando, E e Então. Configure todos os campos antes da execução. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Exemplo não guardado com cartões Quando, E e Então. Configure todos os campos antes da execução. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
+
+***
+
+## 📌 Informações da versão
+
+**Estado:** ✅ Versão única (sem alterações significativas) **Versão mais recente:** v1 (ativo) **Nota:** Este cartão usa modelo de versão única com suporte a vários idiomas por meio de chaves de tradução.
+
+📖 [Banco de dados completo do cartão](../../cards-overview/export-cards-guide.md)
+
+***
 
 ## Objetivo
-Este cartão envia automaticamente notificações por e-mail a grupos de utilizadores. Em vez de atribuir trabalho a pessoas individuais, envia a mensagem a um grupo, e todos os membros desse grupo a recebem.
 
-**Exemplo do mundo real:** Quando chega uma fatura de valor elevado, enviar automaticamente uma notificação por e-mail a todos os membros do grupo "Finance Team" para que tenham conhecimento de que necessita de revisão.
+Este cartão envia automaticamente notificações por e-mail para grupos de usuários. Em vez de atribuir trabalho a pessoas individuais, você envia a mensagem a um grupo e todos os membros desse grupo a recebem.
 
----
+**Exemplo do mundo real:** Quando uma fatura de alto valor chegar, envie automaticamente uma notificação por e-mail para todos no grupo "Equipe Financeira" para que eles saibam que ela precisa ser revisada.
 
-## Quando utilizar este cartão
+***
 
-Utilize este cartão quando precisar de:
-- Notificar várias pessoas ao mesmo tempo
-- Enviar alertas a grupos de equipas
-- Difundir atualizações a departamentos
-- Notificar grupos sobre alterações de estado de documentos
-- Enviar lembretes aos membros de um grupo
+## Quando usar este cartão
+
+Use este cartão quando precisar:
+
+* Notifique várias pessoas ao mesmo tempo
+* Envie alertas para grupos de equipe
+* Transmitir atualizações para departamentos
+* Notificar grupos sobre alterações no status do documento
+* Envie lembretes aos membros do grupo
 
 **Cenários comuns:**
-- Notificar a equipa de aquisições sobre novos fornecedores
-- Alertar a equipa financeira sobre faturas de valor elevado
-- Notificar a equipa do armazém sobre expedições
-- Difundir alterações de estado de documentos
 
----
+* Notificar a equipe de compras sobre novos fornecedores
+* Alerte a equipe financeira sobre faturas de alto valor
+* Notificar a equipe do armazém sobre remessas
+* Transmitir alterações no status do documento
+
+***
 
 ## Como funciona
 
-1. **Condition Check**: O fluxo de trabalho verifica as condições "Where" e "And"
-2. **Prepare Email**: O sistema prepara o e-mail utilizando o modelo
-3. **Get Group Members**: O sistema encontra todos os membros do grupo especificado
-4. **Send**: O e-mail é enviado a cada membro do grupo
-5. **Log**: O envio do e-mail é registado
+1. **Verificação de condição**: O fluxo de trabalho verifica as condições "Quando" e "E"
+2. **Preparar Email**: Sistema prepara o email usando modelo
+3. **Obter membros do grupo**: O sistema encontra todos os membros do grupo especificado
+4. **Send**: O e-mail é enviado para cada membro do grupo
+5. **Log**: O envio de e-mail é registrado
 
----
+***
 
 ## Parâmetros explicados
 
-### Email Template
-A mensagem de e-mail a enviar
+### Modelo de e-mail
+
+A mensagem de e-mail a ser enviada
 
 **Opções:**
-- Escolher entre os modelos existentes
-- Cada modelo tem assunto, corpo e formatação predefinidos
-- Os modelos podem incluir marcadores de posição como {document_number}, {supplier_name}
 
-**Modelo de exemplo:**
+* Escolha entre modelos existentes
+* Cada modelo tem assunto, corpo e formatação predefinidos
+* Os modelos podem incluir espaços reservados como {document\_number}, {supplier\_name}
+
+**Exemplo de modelo:**
+
 ```
 Subject: Document {document_number} requires review
 
@@ -67,44 +85,51 @@ Best regards,
 DocBits Automation
 ```
 
-### Group
-O grupo de utilizadores a quem enviar o e-mail
+### Grupo
 
-**Grupos de exemplo:**
-- Finance Team
-- Procurement Team
-- Warehouse Team
-- Approval Committee
-- Management Group
+O grupo de usuários para o qual enviar o e-mail
 
----
+**Exemplos de grupos:**
 
-## Passos de configuração
+* Equipe Financeira
+* Equipe de compras
+* Equipe do Armazém
+* Comitê de Aprovação
+* Grupo de Gestão
 
-### Passo 1: Escolher o modelo de e-mail
-1. Clique em "Select Email Template"
-2. Escolha o modelo na lista
-3. Verifique o assunto e o conteúdo
+***
 
-### Passo 2: Selecionar o grupo
-1. Clique em "Select Group"
-2. Escolha o grupo que pretende notificar
-3. Verifique os membros do grupo (normalmente mostra a contagem)
+## Etapas de configuração
 
-### Passo 3: Definir as condições
-1. Adicione a condição: "When [condition] is true"
-2. Exemplo: "When invoice amount is greater than €5000"
+### Etapa 1: escolha o modelo de e-mail
 
-### Passo 4: Testar
-1. Teste com um documento de amostra
-2. Verifique se o e-mail é enviado ao grupo
-3. Verifique a apresentação do modelo
+1. Clique em "Selecionar modelo de e-mail"
+2. Escolha o modelo da lista
+3. Verifique assunto e conteúdo
 
----
+### Etapa 2: selecione o grupo
+
+1. Clique em "Selecionar Grupo"
+2. Escolha o grupo que você deseja notificar
+3. Verifique os membros do grupo (geralmente mostra a contagem)
+
+### Etapa 3: definir condições
+
+1. Adicionar condição: "Quando \[condição] for verdadeira"
+2. Exemplo: "Quando o valor da fatura for superior a 5.000€"
+
+### Etapa 4: teste
+
+1. Teste com documento de amostra
+2. Verifique o envio de e-mail para o grupo
+3. Verifique a renderização do modelo
+
+***
 
 ## Exemplos de modelos de e-mail
 
-### Modelo 1: Alerta de fatura de valor elevado
+### Modelo 1: Alerta de fatura de alto valor
+
 ```
 Subject: High-Value Invoice Alert - {document_number}
 
@@ -125,7 +150,8 @@ This requires immediate review and approval.
 Sent automatically by DocBits
 ```
 
-### Modelo 2: Alteração do estado do fornecedor
+### Modelo 2: Alteração de status do fornecedor
+
 ```
 Subject: Supplier Status Update - {supplier_name}
 
@@ -145,7 +171,8 @@ Please update your systems accordingly.
 Sent automatically by DocBits
 ```
 
-### Modelo 3: Documento pronto para exportação
+### Modelo 3: Documento Pronto para Exportação
+
 ```
 Subject: Document Approved for Export - {document_number}
 
@@ -164,28 +191,32 @@ Please proceed with export to {destination_system}.
 Sent automatically by DocBits
 ```
 
----
+***
 
-## Casos de utilização comuns
+## Casos de uso comuns
 
-### Caso de utilização 1: Alertas de controlo de qualidade
-**Acionador:** Quando é encontrada uma discrepância entre a fatura e a PO
+### Caso de uso 1: alertas de controle de qualidade
 
-**Grupo de e-mail:** Quality Team
+**Acionador:** Quando é encontrada discrepância entre a fatura e o pedido de compra
+
+**Grupo de e-mail:** Equipe de qualidade
 
 **Conteúdo:**
+
 ```
 Invoice {number} has quality issues:
 - Unit Price variance: 12% (exceeds 5% tolerance)
 - Please review and take action
 ```
 
-### Caso de utilização 2: Notificações de aprovação
-**Acionador:** Quando o documento atinge um determinado estado
+### Caso de uso 2: Notificações de aprovação
 
-**Grupo de e-mail:** Approval Committee
+**Gatilho:** Quando o documento atinge determinado status
+
+**Grupo de e-mail:** Comitê de Aprovação
 
 **Conteúdo:**
+
 ```
 Document {number} is awaiting approval:
 - Amount: {amount}
@@ -193,12 +224,14 @@ Document {number} is awaiting approval:
 - Please login to approve/reject
 ```
 
-### Caso de utilização 3: Notificações de exceção
-**Acionador:** Quando as condições não são cumpridas
+### Caso de uso 3: notificações de exceção
 
-**Grupo de e-mail:** Managers
+**Gatilho:** Quando as condições não são atendidas
+
+**Grupo de e-mail:** Gerentes
 
 **Conteúdo:**
+
 ```
 Exception alert for document {number}:
 - Supplier code missing
@@ -206,70 +239,78 @@ Exception alert for document {number}:
 - Manual review required
 ```
 
-### Caso de utilização 4: Atualizações de estado
-**Acionador:** Quando o estado do documento muda
+### Caso de uso 4: atualizações de status
 
-**Grupo de e-mail:** Equipa responsável pelo passo seguinte
+**Acionador:** Quando o status do documento muda
+
+**Grupo de e-mail:** Equipe responsável pela próxima etapa
 
 **Conteúdo:**
+
 ```
 Document {number} status changed to: {status}
 Assigned to: {assigned_user}
 Next steps: {next_steps}
 ```
 
----
+***
 
-## Resolução de problemas
+## Solução de problemas
 
 ### "E-mail não recebido"
 
-**Causas possíveis:**
-- [ ] Os utilizadores do grupo não têm endereços de e-mail
-- [ ] O e-mail foi bloqueado pelo filtro de spam
-- [ ] O endereço de e-mail no grupo está incorreto
-- [ ] O grupo não tem membros
+**Possíveis causas:**
+
+* [] Os usuários do grupo não possuem endereços de e-mail
+* [ ] E-mail bloqueado por filtro de spam
+* [] O endereço de e-mail está incorreto no grupo
+* [] O grupo não tem membros
 
 **Soluções:**
+
 1. Verifique se todos os membros do grupo têm endereços de e-mail
-2. Verifique a pasta de spam/lixo
-3. Verifique se a composição do grupo está correta
-4. Adicione utilizadores ao grupo, caso estejam em falta
-5. Confirme com a TI se o serviço de e-mail está a funcionar
+2. Verifique a pasta de spam/lixo eletrônico
+3. Verifique se a associação ao grupo está correta
+4. Adicione usuários ao grupo, se estiver faltando
+5. Verifique com a TI se o serviço de e-mail está funcionando
 
-### "O modelo não é apresentado corretamente"
+### "O modelo não é renderizado corretamente"
 
-**Causa:** Variáveis de marcador de posição não encontradas
+**Causa:** Variáveis de espaço reservado não encontradas
 
 **Solução:**
-- [ ] Verifique se os nomes dos campos correspondem exatamente
-- [ ] Verifique se o campo tem um valor no documento
-- [ ] Utilize o formato de marcador de posição correto: {field_name}
-- [ ] Teste com um documento de amostra que tenha todos os campos
 
-### "Algumas pessoas recebem o e-mail, outras não"
+* [] Verifique se os nomes dos campos correspondem exatamente
+* [] Verifique se o campo possui valor no documento
+* [] Use o formato de espaço reservado correto: {field\_name}
+* [] Teste com documento de amostra que contém todos os campos
 
-**Causa:** Composição de grupo incompleta ou e-mails inválidos
+### “Algumas pessoas recebem e-mail, outras não”
+
+**Causa:** Associação incompleta ao grupo ou e-mails inválidos
 
 **Soluções:**
-- [ ] Verifique se todos os membros têm um e-mail válido
-- [ ] Verifique se alguns utilizadores optaram por não receber
-- [ ] Verifique se a composição do grupo está atualizada
-- [ ] Contacte a TI para validar os endereços de e-mail
 
-### "Pretende adicionar/remover pessoas do grupo"
+* [] Verifique se todos os membros têm e-mail válido
+* [] Verifique se alguns usuários cancelaram
+* [] Verifique se a associação ao grupo é atual
+* [] Entre em contato com a TI para validar endereços de e-mail
+
+### "Deseja adicionar/remover pessoas do grupo"
 
 **Solução:**
-- Contacte o seu administrador
-- Os grupos são geridos nas definições do sistema
-- Não podem ser alterados a partir deste cartão
-- Solicite alterações à composição do grupo junto da TI
 
----
+* Entre em contato com seu administrador
+* Os grupos são gerenciados nas configurações do sistema
+* Não pode ser alterado neste cartão
+* Solicitar alterações nos membros do grupo em TI
 
-## Personalização do modelo de e-mail
+***
 
-### Marcadores de posição disponíveis
+## Personalização de modelo de e-mail
+
+### Espaços reservados disponíveis
+
 ```
 {document_number} - Document ID
 {invoice_number} - Invoice ID
@@ -286,55 +327,59 @@ Next steps: {next_steps}
 {comment} - Comments or notes
 ```
 
-### Criar marcadores de posição personalizados
-Se precisar de dados adicionais nos e-mails:
-1. Contacte o seu administrador
-2. Solicite um novo marcador de posição
+### Criando espaços reservados personalizados
+
+Se você precisar de dados adicionais em e-mails:
+
+1. Entre em contato com seu administrador
+2. Solicitar novo espaço reservado
 3. Adicione o campo necessário ao documento
-4. Atualize o modelo de e-mail
+4. Atualizar modelo de e-mail
 
----
+***
 
-## Boas práticas
+## Melhores Práticas
 
-✅ **Faça:**
-- Mantenha o conteúdo do e-mail breve e claro
-- Inclua itens de ação (o que os destinatários devem fazer?)
-- Inclua uma ligação ou instruções para aceder ao documento
-- Teste o modelo com dados de amostra
-- Envie para o grupo certo (não notifique em excesso)
-- Utilize modelos para garantir consistência
+✅ **Fazer:**
 
-❌ **Não faça:**
-- Enviar demasiados e-mails (fadiga de notificações)
-- Incluir dados sensíveis nos e-mails
-- Enviar a grupos que não precisam da informação
-- Utilizar linhas de assunto pouco claras
-- Esquecer-se de incluir como tomar uma ação
-- Enviar e-mails a pessoas individuais (utilize antes um grupo)
+* Mantenha o conteúdo do e-mail breve e claro
+* Incluir itens de ação (o que os destinatários devem fazer?)
+* Incluir link ou instruções para acessar o documento
+* Modelo de teste com dados de amostra
+* Envie para o grupo certo (não notifique demais)
+* Use modelos para consistência
 
----
+❌ **Não:**
+
+* Envie muitos e-mails (cansaço de notificação)
+* Incluir dados confidenciais em e-mails
+* Envie para grupos que não precisam de informações
+* Use linhas de assunto pouco claras
+* Esqueça de incluir como agir
+* Envie e-mails para indivíduos (use o grupo)
+
+***
 
 ## Notas de desempenho
 
-- Cada e-mail demora cerca de 1 segundo a ser enviado
-- Os grupos grandes podem demorar (100 pessoas = ~100 segundos)
-- Não crie ciclos que enviem milhares de e-mails
-- Monitorize a capacidade do serviço de e-mail
-- Considere o envio em lotes se houver muitos documentos
+* Cada e-mail leva \~1 segundo para ser enviado
+* Grupos grandes podem levar algum tempo (100 pessoas = \~100 segundos)
+* Não crie loops que enviam milhares de e-mails
+* Monitore a capacidade do serviço de e-mail
+* Considere agrupar em lote se houver muitos documentos
 
----
+***
 
-## Cartões relacionados
+## Cartões Relacionados
 
-- **ACTION_SEND_EMAIL** - Enviar a uma pessoa individual
-- **ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP** - Atribuir uma tarefa em vez de apenas notificar
-- **ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL** - Criar uma tarefa e notificar
-- **STAUS_CHANGE** - Alterar o estado e notificar
+* **ACTION\_SEND\_EMAIL** - Enviar para pessoa física
+* **ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP** - Atribua tarefa em vez de apenas notificar
+* **ACTION\_CREATE\_TASK\_FOR\_GROUP\_SEQUENTIAL** - Criar tarefa e notificar
+* **STAUS\_CHANGE** - Alterar status e notificar
 
----
+***
 
-## Exemplo de fluxo de trabalho típico
+## Exemplo típico de fluxo de trabalho
 
 ```
 Document Arrives
@@ -350,21 +395,16 @@ Send Email to Procurement Team
 Workflow Continues
 ```
 
----
+***
 
 ## Perguntas frequentes
 
-**P: Posso enviar para vários grupos?**
-R: Crie cartões separados para cada grupo
+**Q: Posso enviar para vários grupos?** R: Crie cartões separados para cada grupo
 
-**P: E se o e-mail de alguém for devolvido?**
-R: O e-mail é registado como falhado; a TI pode investigar
+**Q: E se o e-mail de alguém for devolvido?** R: O e-mail é registrado como falha, a TI pode solucionar o problema
 
-**P: Posso alterar o modelo de e-mail?**
-R: Contacte o seu administrador para modificar os modelos
+**Q: Posso alterar o modelo de e-mail?** R: Entre em contato com seu administrador para modificar os modelos
 
-**P: Posso enviar com base em condições?**
-R: Sim! Utilize as condições "Where" e "And" para controlar quando os e-mails são enviados
+**Q: Posso enviar com base nas condições?** R: Sim! Use as condições "Quando" e "E" para controlar quando os e-mails são enviados
 
-**P: Como sei se o e-mail foi recebido?**
-R: Verifique os registos de e-mail no DocBits para conhecer o estado do envio
+**Q: Como posso saber se o e-mail foi recebido?** R: Verifique os registros de e-mail no DocBits para ver o status de envio

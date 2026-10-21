@@ -1,6 +1,6 @@
-# Docfield is
+# Comparar um campo do documento com um valor de referência
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f38fe175443d-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,18 +8,18 @@ Este cartão de fluxo de trabalho foi concebido para automatizar ações compara
 
 ## **Componentes do cartão:**
 
-1. **Field Name**
+1. **Nome do campo**
    * **Descrição:** Especifica o nome do campo de documento a avaliar.
    * **Detalhe:** Tem de corresponder ao identificador exato do campo dentro do documento.
 2. **Operadores**
    * **Descrição:** Define o tipo de comparação a realizar entre o valor do campo e o valor de referência.
    * **Opções:**
-     * **Equals (=):** Verifica se o valor do campo corresponde ao valor de referência.
-     * **Not Equals (≠):** Garante que o valor do campo é diferente do valor de referência.
-     * **Greater Than (>):** Confirma que o valor do campo é superior ao valor de referência.
-     * **Greater or Equals (≥):** Valida que o valor do campo é igual ou superior ao valor de referência.
-     * **Lesser Than (<):** Verifica se o valor do campo é inferior ao valor de referência.
-     * **Less or Equals (≤):** Garante que o valor do campo é inferior ou igual ao valor de referência.
+     * **Igual a (=):** Verifica se o valor do campo corresponde ao valor de referência.
+     * **Não é igual (≠):** Garante que o valor do campo é diferente do valor de referência.
+     * **Maior que (>):** Confirma que o valor do campo é superior ao valor de referência.
+     * **Maior ou Igual (≥):** Valida que o valor do campo é igual ou superior ao valor de referência.
+     * **Menor que (<):** Verifica se o valor do campo é inferior ao valor de referência.
+     * **Menor ou igual (≤):** Garante que o valor do campo é inferior ou igual ao valor de referência.
 
 ## **Funcionalidade:**
 
@@ -37,3 +37,15 @@ Este cartão de fluxo de trabalho foi concebido para automatizar ações compara
 ## **Conclusão:**
 
 O cartão de fluxo de trabalho "DocField Comparison Validation" é uma ferramenta robusta para o processamento dinâmico de documentos. Ao automatizar ações com base em comparações de campos, este cartão simplifica os fluxos de trabalho, aumenta a precisão e apoia a tomada de decisões orientada por dados.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemplo prático
+
+**Quando usar:** Revise faturas acima de um valor definido.
+
+**Configuração:** Selecione o campo numérico `net_total`, operador `>` e valor de referência `1000`.
+
+**Resultado esperado e contra-exemplo:** Um valor de `1200` é aprovado. `1000` e `900` falham porque a comparação é estritamente maior que.
+
+Esta é uma configuração ilustrativa e resultado esperado. Utilize campos, usuários e grupos configurados em sua organização de teste; não é uma afirmação de que este exemplo foi executado.

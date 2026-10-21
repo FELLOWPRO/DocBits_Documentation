@@ -1,23 +1,21 @@
-# Padrão de Correspondência de Encomendas (PO Matching)
+# Padrão de correspondência PO
 
-**Tipo de padrão:** Validação e comparação
-**Complexidade:** Média-Alta
-**Configuração estimada:** 60–90 minutos
-**Casos de uso comuns:** Correspondência de três vias, validação de faturas, verificação de desvios, gestão de tolerâncias
+**Tipo de padrão:** Validação e comparação **Complexidade:** Média-Alta **Configuração estimada:** 60–90 minutos **Casos de uso comuns:** Correspondência de três vias, validação de faturas, verificação de desvios, gestão de tolerâncias
 
----
+***
 
-Este padrão é construído no **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Clique em **Add Card** e abra a categoria **Compare with Purchase Order** — contém todas as cartas de correspondência utilizadas por este padrão (cartas de comparação de preço, quantidade, tolerância e posições):
+Este padrão é construído no **Construtor de fluxo de trabalho** (Workflow Dashboard → Workflow List → Add Workflow). Clique em **Adicionar cartão** e abra a categoria **Comparar com pedido de compra** — contém todas as cartas de correspondência utilizadas por este padrão (cartas de comparação de preço, quantidade, tolerância e posições):
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Biblioteca Add Card com as cartas Compare with Purchase Order"><figcaption><p>A categoria <strong>Compare with Purchase Order</strong> — cartas de correspondência de preço, quantidade, tolerância e posições utilizadas ao longo de todo este padrão.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
----
+***
 
 ## Visão geral do padrão
 
 Este padrão demonstra como implementar workflows abrangentes de correspondência de encomendas (PO Matching) no DocBits. A correspondência de encomendas é um processo de controlo crítico que compara os dados da fatura com os dados da encomenda para detetar discrepâncias antes da aprovação do pagamento.
 
 **O que este padrão faz:**
+
 1. Obtém os dados da encomenda com base no número de PO da fatura
 2. Compara as posições da fatura com as posições da encomenda
 3. Calcula os desvios (preço, quantidade, totais)
@@ -25,32 +23,35 @@ Este padrão demonstra como implementar workflows abrangentes de correspondênci
 5. Encaminha para aprovação ou escalonamento com base nos resultados da correspondência
 6. Acompanha o histórico de correspondências e as exceções
 
----
+***
 
 ## Quando utilizar este padrão
 
 Utilize este padrão quando precisar de:
-- ✅ Validar faturas contra encomendas
-- ✅ Detetar erros de preços antes do pagamento
-- ✅ Identificar discrepâncias de quantidade
-- ✅ Aplicar controlos de aprovisionamento
-- ✅ Evitar pagamentos em duplicado
-- ✅ Automatizar a correspondência de três vias
-- ✅ Reduzir o esforço de revisão manual de faturas
+
+* ✅ Validar faturas contra encomendas
+* ✅ Detetar erros de preços antes do pagamento
+* ✅ Identificar discrepâncias de quantidade
+* ✅ Aplicar controlos de aprovisionamento
+* ✅ Evitar pagamentos em duplicado
+* ✅ Automatizar a correspondência de três vias
+* ✅ Reduzir o esforço de revisão manual de faturas
 
 **Não utilize este padrão quando:**
-- ❌ não existir encomenda para a fatura (faturas sem PO)
-- ❌ os dados da encomenda não estiverem disponíveis no DocBits
-- ❌ se preferir a revisão manual à automatização
-- ❌ a correspondência de encomendas não for exigida pela política de negócio
 
----
+* ❌ não existir encomenda para a fatura (faturas sem PO)
+* ❌ os dados da encomenda não estiverem disponíveis no DocBits
+* ❌ se preferir a revisão manual à automatização
+* ❌ a correspondência de encomendas não for exigida pela política de negócio
+
+***
 
 ## Compreender a correspondência de encomendas
 
 ### A correspondência de três vias
 
 **Controlo de aprovisionamento clássico:**
+
 ```
 Purchase Order (PO)  →  Created when ordering
         ↓
@@ -62,6 +63,7 @@ THREE-WAY MATCH = PO + GR + Invoice all match
 ```
 
 **Implementação no DocBits (correspondência de duas vias):**
+
 ```
 Purchase Order (PO)  →  Imported to DocBits
         ↓
@@ -70,18 +72,20 @@ Invoice              →  Scanned by DocBits
 COMPARISON           →  Invoice vs PO validation
 ```
 
----
+***
 
 ## Fórmulas de cálculo de desvios
 
 ### Desvio do preço unitário
 
 **Fórmula:**
+
 ```
 Variance % = |(Invoice Unit Price - PO Unit Price)| / PO Unit Price × 100
 ```
 
 **Exemplo:**
+
 ```
 PO Unit Price:       €100.00
 Invoice Unit Price:  €103.00
@@ -94,16 +98,18 @@ Tolerance: 5%
 Result: 3% ≤ 5% → PASS ✅
 ```
 
----
+***
 
 ### Desvio da quantidade
 
 **Fórmula:**
+
 ```
 Variance % = |(Invoice Quantity - PO Quantity)| / PO Quantity × 100
 ```
 
 **Exemplo:**
+
 ```
 PO Quantity:        100 units
 Invoice Quantity:   98 units
@@ -116,16 +122,18 @@ Tolerance: 10%
 Result: 2% ≤ 10% → PASS ✅
 ```
 
----
+***
 
 ### Desvio do montante total
 
 **Fórmula:**
+
 ```
 Variance % = |(Invoice Total - PO Total)| / PO Total × 100
 ```
 
 **Exemplo:**
+
 ```
 PO Total:       €10,000.00
 Invoice Total:  €10,450.00
@@ -138,46 +146,50 @@ Tolerance: 5%
 Result: 4.5% ≤ 5% → PASS ✅
 ```
 
----
+***
 
-## Exemplo completo de workflow
+## Exemplo completo de fluxo de trabalho
 
 ### Cenário: Validação de faturas com encaminhamento baseado em tolerâncias
 
 **Requisito de negócio:**
-- Todas as faturas com referência de PO têm de ser validadas
-- Tolerância do desvio de preço: 5 %
-- Tolerância do desvio de quantidade: 10 %
-- Tolerância do desvio do montante total: 3 %
-- Dentro da tolerância: Aprovação automática
-- Fora da tolerância: Criar tarefa de revisão
-- Encomenda em falta: Escalar para as Compras
+
+* Todas as faturas com referência de PO têm de ser validadas
+* Tolerância do desvio de preço: 5 %
+* Tolerância do desvio de quantidade: 10 %
+* Tolerância do desvio do montante total: 3 %
+* Dentro da tolerância: Aprovação automática
+* Fora da tolerância: Criar tarefa de revisão
+* Encomenda em falta: Escalar para as Compras
 
 **Cartas de workflow utilizadas:**
-1. CONDITION_DOC_FIELD_EXISTS – Verificar se o número de PO está presente
-2. PURCHASE_ORDER_FULL_MATCH – Tentar correspondência total
-3. CONDITION_DOC_TO_PO_UNIT_PRICE – Verificar o desvio de preço
-4. CONDITION_DOC_TO_PO_QUANTITY – Verificar o desvio de quantidade
-5. CONDITION_DOC_TO_PO_TAX_LINES – Verificar o alinhamento fiscal
-6. ACTION_SET_FIELD_TO_TEXT – Armazenar os resultados da correspondência
-7. tasks_create – Criar tarefas de revisão
-8. ACTION_SEND_EMAIL_TO_GROUPS – Enviar notificações
 
----
+1. CONDITION\_DOC\_FIELD\_EXISTS – Verificar se o número de PO está presente
+2. PURCHASE\_ORDER\_FULL\_MATCH – Tentar correspondência total
+3. CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE – Verificar o desvio de preço
+4. CONDITION\_DOC\_TO\_PO\_QUANTITY – Verificar o desvio de quantidade
+5. CONDITION\_DOC\_TO\_PO\_TAX\_LINES – Verificar o alinhamento fiscal
+6. ACTION\_SET\_FIELD\_TO\_TEXT – Armazenar os resultados da correspondência
+7. tasks\_create – Criar tarefas de revisão
+8. ACTION\_SEND\_EMAIL\_TO\_GROUPS – Enviar notificações
+
+***
 
 ## Implementação passo a passo
 
 ### Passo 1: Verificar a referência de PO
 
-**Carta:** CONDITION_DOC_FIELD_EXISTS ou CONDITION_DOC_FIELD_CONTAINS
+**Carta:** CONDITION\_DOC\_FIELD\_EXISTS ou CONDITION\_DOC\_FIELD\_CONTAINS
 
 **Configuração:**
+
 ```
 Field: PO_Number
 Operator: IS NOT EMPTY
 ```
 
 **Lógica:**
+
 ```
 IF PO_Number exists:
   → Continue to PO matching
@@ -189,16 +201,18 @@ ELSE:
 
 **Referência de guia:** [Guia de cartas de condição](../and/condition-cards-complete-guide.md)
 
----
+***
 
 ### Passo 2: Obter os dados da encomenda
 
 **Automático no DocBits:**
-- O sistema consulta a encomenda através do campo PO_Number
-- Obtém as posições da encomenda
-- Disponibiliza os dados para comparação
+
+* O sistema consulta a encomenda através do campo PO\_Number
+* Obtém as posições da encomenda
+* Disponibiliza os dados para comparação
 
 **Configuração manual (se necessário):**
+
 ```
 PO Source: DocBits Master Data
 PO Lookup Field: PO_Number
@@ -206,15 +220,16 @@ Match Type: Exact Match
 Include Closed POs: No (or Yes if policy allows)
 ```
 
----
+***
 
 ### Passo 3: Verificar a correspondência total
 
-**Carta:** PURCHASE_ORDER_FULL_MATCH
+**Carta:** PURCHASE\_ORDER\_FULL\_MATCH
 
 **Objetivo:** Verificação rápida de que tudo corresponde na perfeição
 
 **Configuração:**
+
 ```
 Match Level: Full Match
 Include: All line items, prices, quantities, totals
@@ -222,6 +237,7 @@ Tolerance: None (exact match)
 ```
 
 **Lógica:**
+
 ```
 IF Full Match = TRUE:
   → Set "PO_Match_Status" = "FULL MATCH"
@@ -235,16 +251,18 @@ IF Full Match = FALSE:
 ```
 
 **Resultado:**
-- **TRUE**: Correspondência perfeita, aprovação automática
-- **FALSE**: Avançar para as verificações detalhadas
 
----
+* **TRUE**: Correspondência perfeita, aprovação automática
+* **FALSE**: Avançar para as verificações detalhadas
+
+***
 
 ### Passo 4: Verificar o desvio do preço unitário
 
-**Carta:** CONDITION_DOC_TO_PO_UNIT_PRICE (recomenda-se a v5)
+**Carta:** CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE (recomenda-se a v5)
 
 **Configuração:**
+
 ```
 Comparison Mode: Percentage Variance
 Tolerance: 5%
@@ -253,6 +271,7 @@ Apply To: All line items
 ```
 
 **Passo a passo:**
+
 ```
 For each line item:
   1. Get Invoice Unit Price
@@ -263,6 +282,7 @@ For each line item:
 ```
 
 **Exemplo de cálculo:**
+
 ```
 Line Item 1:
   Product: ABC123
@@ -283,15 +303,16 @@ Line Item 2:
 Overall Result: FAIL (one or more items failed)
 ```
 
-**Referência de guia:** [Guia completo de PO Matching – Preço unitário](../and/compare-with-purchase-order/po-matching-complete-guide.md#unit-price-comparison)
+**Referência de guia:** [Guia completo de PO Matching – Preço unitário](../and/compare-with-purchase-order/po-matching-complete-guide.md)
 
----
+***
 
 ### Passo 5: Verificar o desvio da quantidade
 
-**Carta:** CONDITION_DOC_TO_PO_QUANTITY
+**Carta:** CONDITION\_DOC\_TO\_PO\_QUANTITY
 
 **Configuração:**
+
 ```
 Comparison Mode: Percentage Variance
 Tolerance: 10%
@@ -302,6 +323,7 @@ Allow Over-Delivery: No (strict)
 ```
 
 **Lógica:**
+
 ```
 For each line item:
   1. Get Invoice Quantity
@@ -314,6 +336,7 @@ For each line item:
 ```
 
 **Exemplo:**
+
 ```
 Line Item 1:
   Product: ABC123
@@ -332,15 +355,16 @@ Line Item 2:
   Result: FAIL ❌ (Escalate)
 ```
 
-**Referência de guia:** [Guia completo de PO Matching – Quantidade](../and/compare-with-purchase-order/po-matching-complete-guide.md#quantity-comparison)
+**Referência de guia:** [Guia completo de PO Matching – Quantidade](../and/compare-with-purchase-order/po-matching-complete-guide.md)
 
----
+***
 
 ### Passo 6: Verificar o alinhamento das linhas de imposto
 
-**Carta:** CONDITION_DOC_TO_PO_TAX_LINES
+**Carta:** CONDITION\_DOC\_TO\_PO\_TAX\_LINES
 
 **Configuração:**
+
 ```
 Match Tax Codes: Yes
 Match Tax Rates: Yes
@@ -349,6 +373,7 @@ Tax Calculation: Verify recalculation
 ```
 
 **Validação:**
+
 ```
 1. Check tax codes match (e.g., "VAT19" on both)
 2. Check tax rates match (19% on both)
@@ -358,6 +383,7 @@ Tax Calculation: Verify recalculation
 ```
 
 **Exemplo:**
+
 ```
 Invoice:
   Net Amount: €100.00
@@ -374,36 +400,40 @@ PO:
 Result: Tax alignment PASS ✅
 ```
 
----
+***
 
 ### Passo 7: Armazenar os resultados da correspondência
 
-**Carta:** ACTION_SET_FIELD_TO_TEXT (várias instâncias)
+**Carta:** ACTION\_SET\_FIELD\_TO\_TEXT (várias instâncias)
 
 **Configuração:**
 
-**Campo 1: PO_Match_Status**
+**Campo 1: PO\_Match\_Status**
+
 ```
 Field: PO_Match_Status
 Value: {{CALCULATED}}
 Options: "FULL MATCH" | "WITHIN TOLERANCE" | "OUT OF TOLERANCE" | "NO MATCH"
 ```
 
-**Campo 2: Price_Variance_Percent**
+**Campo 2: Price\_Variance\_Percent**
+
 ```
 Field: Price_Variance_Percent
 Value: {{CALCULATED_PRICE_VARIANCE}}
 Format: "4.5%" (example)
 ```
 
-**Campo 3: Quantity_Variance_Percent**
+**Campo 3: Quantity\_Variance\_Percent**
+
 ```
 Field: Quantity_Variance_Percent
 Value: {{CALCULATED_QUANTITY_VARIANCE}}
 Format: "2.0%" (example)
 ```
 
-**Campo 4: Match_Details**
+**Campo 4: Match\_Details**
+
 ```
 Field: Match_Details
 Value: "Price Variance: 4.5% (within 5% tolerance)\nQuantity Variance: 2.0% (within 10% tolerance)\nTotal: PASS"
@@ -411,11 +441,12 @@ Value: "Price Variance: 4.5% (within 5% tolerance)\nQuantity Variance: 2.0% (wit
 
 **Referência de guia:** [Guia de manipulação de campos](../then/document-field/field-manipulation-guide.md)
 
----
+***
 
 ### Passo 8: Encaminhar com base nos resultados da correspondência
 
 **Cenário A: Correspondência perfeita (correspondência total)**
+
 ```
 IF PO_Match_Status = "FULL MATCH":
   1. Set Approval_Status = "AUTO APPROVED"
@@ -427,6 +458,7 @@ IF PO_Match_Status = "FULL MATCH":
 ```
 
 **Cenário B: Dentro da tolerância**
+
 ```
 IF PO_Match_Status = "WITHIN TOLERANCE":
   1. Set Approval_Status = "AUTO APPROVED"
@@ -438,6 +470,7 @@ IF PO_Match_Status = "WITHIN TOLERANCE":
 ```
 
 **Cenário C: Fora da tolerância (ligeira)**
+
 ```
 IF Variance < 15% (minor exceptions):
   1. Set Match_Status = "REVIEW REQUIRED"
@@ -452,6 +485,7 @@ IF Variance < 15% (minor exceptions):
 ```
 
 **Cenário D: Fora da tolerância (significativa)**
+
 ```
 IF Variance ≥ 15% (major exceptions):
   1. Set Match_Status = "ESCALATION REQUIRED"
@@ -468,6 +502,7 @@ IF Variance ≥ 15% (major exceptions):
 ```
 
 **Cenário E: Encomenda em falta ou sem correspondência**
+
 ```
 IF PO not found OR no items match:
   1. Set Match_Status = "NO MATCH"
@@ -479,9 +514,9 @@ IF PO not found OR no items match:
   5. Request PO creation or correction
 ```
 
----
+***
 
-## Diagrama completo de workflow
+## Diagrama completo de fluxo de trabalho
 
 ```
 INVOICE ARRIVES
@@ -623,7 +658,7 @@ INVOICE ARRIVES
 └─ [PO check complete]
 ```
 
----
+***
 
 ## Modelos de configuração
 
@@ -663,7 +698,7 @@ INVOICE ARRIVES
 
 **Utilização:** Ambiente de controlo rigoroso, baixa tolerância a desvios
 
----
+***
 
 ### Modelo 2: Correspondência de encomendas flexível (tolerante)
 
@@ -701,7 +736,7 @@ INVOICE ARRIVES
 
 **Utilização:** Ambiente flexível, fornecedores de confiança, tolerância mais elevada
 
----
+***
 
 ### Modelo 3: Correspondência apenas de preço
 
@@ -728,7 +763,7 @@ INVOICE ARRIVES
 
 **Utilização:** Quando só o preço importa e se esperam desvios de quantidade
 
----
+***
 
 ## Cenários avançados
 
@@ -737,6 +772,7 @@ INVOICE ARRIVES
 **Desafio:** Fatura de uma entrega parcial de uma encomenda
 
 **Solução:**
+
 ```
 1. Allow quantity under-delivery within tolerance
 2. Track cumulative invoiced quantity vs PO quantity
@@ -746,6 +782,7 @@ INVOICE ARRIVES
 ```
 
 **Implementação:**
+
 ```
 IF Cumulative_Invoiced_Quantity ≤ PO_Quantity:
   Calculate: Percentage = (Cumulative/PO) × 100
@@ -755,13 +792,14 @@ IF Cumulative_Invoiced_Quantity ≤ PO_Quantity:
     Close PO
 ```
 
----
+***
 
 ### Cenário 2: Correspondência de encomendas com várias moedas
 
 **Desafio:** A moeda da fatura difere da moeda da encomenda
 
 **Solução:**
+
 ```
 1. Detect currency mismatch
 2. Get exchange rate (from API or master data)
@@ -771,6 +809,7 @@ IF Cumulative_Invoiced_Quantity ≤ PO_Quantity:
 ```
 
 **Implementação:**
+
 ```
 IF Invoice_Currency ≠ PO_Currency:
   1. Get exchange rate for Invoice_Currency → PO_Currency
@@ -780,13 +819,14 @@ IF Invoice_Currency ≠ PO_Currency:
   5. Flag: "Currency_Conversion_Applied"
 ```
 
----
+***
 
 ### Cenário 3: Encomenda-quadro / Acordo-quadro
 
 **Desafio:** Várias faturas contra uma única encomenda
 
 **Solução:**
+
 ```
 1. Identify PO type = "Blanket"
 2. Track cumulative invoiced value
@@ -796,6 +836,7 @@ IF Invoice_Currency ≠ PO_Currency:
 ```
 
 **Implementação:**
+
 ```
 IF PO_Type = "Blanket":
   Calculate: Total_Invoiced_To_Date
@@ -807,7 +848,7 @@ IF PO_Type = "Blanket":
     Escalate: "Blanket PO limit exceeded"
 ```
 
----
+***
 
 ## Tratamento de erros e casos especiais
 
@@ -816,6 +857,7 @@ IF PO_Type = "Blanket":
 **Problema:** A fatura contém uma posição que não está na encomenda
 
 **Solução:**
+
 ```
 1. Identify unmatched line items
 2. Calculate: Unmatched_Amount
@@ -827,13 +869,14 @@ IF PO_Type = "Blanket":
 5. Flag: "Additional_Items_Present"
 ```
 
----
+***
 
 ### Caso especial 2: Encomenda fechada, mas chega uma fatura
 
 **Problema:** Encomenda já fechada, fatura recebida em atraso
 
 **Solução:**
+
 ```
 1. Check: PO_Status = "CLOSED"
 2. Check: Invoice_Date vs PO_Close_Date
@@ -847,13 +890,14 @@ IF PO_Type = "Blanket":
      Manual decision required
 ```
 
----
+***
 
 ### Caso especial 3: Várias encomendas numa fatura
 
 **Problema:** A fatura faz referência a várias encomendas
 
 **Solução:**
+
 ```
 1. Parse invoice for multiple PO numbers
 2. For each PO:
@@ -864,109 +908,107 @@ IF PO_Type = "Blanket":
 5. Report on each PO separately
 ```
 
----
+***
 
 ## Sugestões de desempenho
 
 ✅ **Boas práticas:**
-- Fazer caching dos dados das encomendas para reduzir consultas
-- Definir tolerâncias adequadas (nem demasiado rigorosas, nem demasiado tolerantes)
-- Verificar primeiro a correspondência total (mais rápido)
-- Registar todos os cálculos de desvios
-- Rever as definições de tolerância trimestralmente
-- Monitorizar as taxas de aprovação automática
-- Acompanhar os motivos de desvio mais frequentes
+
+* Fazer caching dos dados das encomendas para reduzir consultas
+* Definir tolerâncias adequadas (nem demasiado rigorosas, nem demasiado tolerantes)
+* Verificar primeiro a correspondência total (mais rápido)
+* Registar todos os cálculos de desvios
+* Rever as definições de tolerância trimestralmente
+* Monitorizar as taxas de aprovação automática
+* Acompanhar os motivos de desvio mais frequentes
 
 ❌ **Evitar:**
-- Tolerância zero (demasiado rigorosa, demasiadas revisões manuais)
-- Tolerância extremamente elevada (subverte o objetivo)
-- Ignorar desvios sistemáticas
-- Não acompanhar as tendências de desvios
-- Processar sem encomenda (quando exigido)
 
----
+* Tolerância zero (demasiado rigorosa, demasiadas revisões manuais)
+* Tolerância extremamente elevada (subverte o objetivo)
+* Ignorar desvios sistemáticas
+* Não acompanhar as tendências de desvios
+* Processar sem encomenda (quando exigido)
+
+***
 
 ## Monitorização e relatórios
 
 ### Indicadores-chave a acompanhar
 
 1. **Taxa de correspondência:**
-   - Correspondência total: X %
-   - Dentro da tolerância: Y %
-   - Fora da tolerância: Z %
-
+   * Correspondência total: X %
+   * Dentro da tolerância: Y %
+   * Fora da tolerância: Z %
 2. **Análise de desvios:**
-   - Desvio média de preço
-   - Desvio média de quantidade
-   - Motivos de desvio mais frequentes
-
+   * Desvio média de preço
+   * Desvio média de quantidade
+   * Motivos de desvio mais frequentes
 3. **Eficiência do processamento:**
-   - Taxa de aprovação automática
-   - Taxa de revisão manual
-   - Tempo médio de revisão
-
+   * Taxa de aprovação automática
+   * Taxa de revisão manual
+   * Tempo médio de revisão
 4. **Desempenho dos fornecedores:**
-   - Desvioen por fornecedor
-   - Taxa de correspondência por fornecedor
-   - Fornecedores problemáticos
+   * Desvioen por fornecedor
+   * Taxa de correspondência por fornecedor
+   * Fornecedores problemáticos
 
----
+***
 
 ## Lista de verificação de testes
 
-- [ ] Cenário de correspondência perfeita (correspondência total)
-- [ ] Cenário dentro da tolerância (desvio ligeiro)
-- [ ] Cenário fora da tolerância (desvio significativo)
-- [ ] Cenário de encomenda em falta
-- [ ] Cenário de número de PO incorreto
-- [ ] Cenário de entrega parcial
-- [ ] Cenário de entrega em excesso
-- [ ] Cenário de desvio de moeda
-- [ ] Cenário de várias encomendas
-- [ ] Cenário de encomenda fechada
-- [ ] Cenário de desvio de imposto
-- [ ] Workflow de escalonamento
-- [ ] Criação de tarefas
-- [ ] Notificações por e-mail
-- [ ] Atualizações de campos
-- [ ] Exportação após aprovação
+* [ ] Cenário de correspondência perfeita (correspondência total)
+* [ ] Cenário dentro da tolerância (desvio ligeiro)
+* [ ] Cenário fora da tolerância (desvio significativo)
+* [ ] Cenário de encomenda em falta
+* [ ] Cenário de número de PO incorreto
+* [ ] Cenário de entrega parcial
+* [ ] Cenário de entrega em excesso
+* [ ] Cenário de desvio de moeda
+* [ ] Cenário de várias encomendas
+* [ ] Cenário de encomenda fechada
+* [ ] Cenário de desvio de imposto
+* [ ] Fluxo de trabalho de escalonamento
+* [ ] Criação de tarefas
+* [ ] Notificações por e-mail
+* [ ] Atualizações de campos
+* [ ] Exportação após aprovação
 
----
+***
 
 ## Padrões relacionados
 
 ### Padrões que combinam bem:
 
-- **[Padrão de Gestão de Tarefas](task-management-pattern.md)** – Criar tarefas de revisão para desvios
-- **[Padrão de Lógica de Decisão](decision-logic-pattern.md)** – Encaminhamento complexo com base na magnitude do desvio
-- **[Padrão de Integração de API](api-integration-pattern.md)** – Obter preços atuais para comparação
-- **[Padrão de Transformação de Dados](data-transformation-pattern.md)** – Conversão de moeda e de unidades
+* [**Padrão de Gestão de Tarefas**](task-management-pattern.md) – Criar tarefas de revisão para desvios
+* [**Padrão de Lógica de Decisão**](decision-logic-pattern.md) – Encaminhamento complexo com base na magnitude do desvio
+* [**Padrão de Integração de API**](api-integration-pattern.md) – Obter preços atuais para comparação
+* [**Padrão de Transformação de Dados**](data-transformation-pattern.md) – Conversão de moeda e de unidades
 
----
+***
 
 ## Guias relacionados
 
 ### Pré-requisitos
-- [Guia completo de PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md) – Todas as cartas de correspondência de PO
-- [Guia de cartas de condição](../and/condition-cards-complete-guide.md) – Lógica de condições
-- [Guia de manipulação de campos](../then/document-field/field-manipulation-guide.md) – Operações de campos
+
+* [Guia completo de PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md) – Todas as cartas de correspondência de PO
+* [Guia de cartas de condição](../and/condition-cards-complete-guide.md) – Lógica de condições
+* [Guia de manipulação de campos](../then/document-field/field-manipulation-guide.md) – Operações de campos
 
 ### Cartas relacionadas
-- **PURCHASE_ORDER_FULL_MATCH** – [Guia de PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md#full-match)
-- **CONDITION_DOC_TO_PO_UNIT_PRICE** – [Guia de PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md#unit-price)
-- **CONDITION_DOC_TO_PO_QUANTITY** – [Guia de PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md#quantity)
-- **CONDITION_DOC_TO_PO_TAX_LINES** – [Guia de PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md#tax-lines)
-- **tasks_create** – [Guia de atribuição de tarefas](../then/task/task-assignment-guide.md)
+
+* **PURCHASE\_ORDER\_FULL\_MATCH** – [Guia de PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md)
+* **CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE** – [Guia de PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md)
+* **CONDITION\_DOC\_TO\_PO\_QUANTITY** – [Guia de PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md)
+* **CONDITION\_DOC\_TO\_PO\_TAX\_LINES** – [Guia de PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md)
+* **tasks\_create** – [Guia de atribuição de tarefas](../then/task/task-assignment-guide.md)
 
 ### Próximos passos
-- Criar tarefas de revisão: [Padrão de Gestão de Tarefas](task-management-pattern.md)
-- Adicionar notificações por e-mail: [Guia de e-mail](../then/action/send-email-groups-guide.md)
-- Implementar encaminhamento complexo: [Padrão de Lógica de Decisão](decision-logic-pattern.md)
 
----
+* Criar tarefas de revisão: [Padrão de Gestão de Tarefas](task-management-pattern.md)
+* Adicionar notificações por e-mail: [Guia de e-mail](../then/action/send-email-groups-guide.md)
+* Implementar encaminhamento complexo: [Padrão de Lógica de Decisão](decision-logic-pattern.md)
 
-**Versão do padrão:** 1.0
-**Última atualização:** 23 de outubro de 2025
-**Dificuldade:** Média-Alta
-**Tempo estimado:** 60–90 minutos
-**Taxa de êxito:** Alta (com configuração correta)
+***
+
+**Versão do padrão:** 1.0 **Última atualização:** 23 de outubro de 2025 **Dificuldade:** Média-Alta **Tempo estimado:** 60–90 minutos **Taxa de êxito:** Alta (com configuração correta)

@@ -1,17 +1,17 @@
-# Assign Sequentially to Groups
+# Nacheinander Gruppen zuweisen
 
 ## **Zweck**
 
-Die Workflow-Karte "**Assign the Document Sequentially to the Groups**" ermöglicht die sequenzielle Zuweisung von Dokumenten an eine oder mehrere ausgewählte Gruppen. Der Prioritätswert bestimmt die Reihenfolge der Zuweisung, wobei niedrigere Zahlen eine höhere Priorität darstellen.
+Die Workflow-Karte "**Ordnen Sie das Dokument der Reihe nach den Gruppen zu**" ermöglicht die sequenzielle Zuweisung von Dokumenten an eine oder mehrere ausgewählte Gruppen. Der Prioritätswert bestimmt die Reihenfolge der Zuweisung, wobei niedrigere Zahlen eine höhere Priorität darstellen.
 
 ## **Bestandteile der Karte**
 
 1. **Gruppe**
    * **Beschreibung**: Gibt die Gruppen an, die die Dokumentzuweisung erhalten.
-   * **Detail**: Ein Dropdown-Menü, in dem eine oder mehrere Gruppen für die Dokumentzuweisung ausgewählt werden können.
+   * **Detailliert**: Ein Dropdown-Menü, in dem eine oder mehrere Gruppen für die Dokumentzuweisung ausgewählt werden können.
 2. **Priorität (Wert)**
    * **Beschreibung**: Ein numerisches Eingabefeld, in dem die Prioritätsstufe für die Gruppen festgelegt werden kann.
-   * **Detail**: Niedrigere Zahlen bedeuten eine höhere Priorität und stellen sicher, dass Dokumente den Gruppen in aufsteigender Reihenfolge der Priorität zugewiesen werden.
+   * **Detailliert**: Niedrigere Zahlen bedeuten eine höhere Priorität und stellen sicher, dass Dokumente den Gruppen in aufsteigender Reihenfolge der Priorität zugewiesen werden.
 
 ## **Funktionalität**
 
@@ -21,7 +21,7 @@ Die Workflow-Karte "**Assign the Document Sequentially to the Groups**" ermögli
 
 ## **Einrichtung und Konfiguration**
 
-1. Fügen Sie die Karte **Assign the Document Sequentially** zu Ihrem Workflow hinzu.
+1. Fügen Sie die Karte **Ordnen Sie das Dokument der Reihe nach zu** zu Ihrem Workflow hinzu.
 2. Konfigurieren Sie das Feld **Gruppe**:
    * Wählen Sie eine oder mehrere Gruppen aus dem Dropdown-Menü.
 3. Konfigurieren Sie das Feld **Priorität (Wert)**:

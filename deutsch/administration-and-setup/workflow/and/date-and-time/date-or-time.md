@@ -1,4 +1,4 @@
-# Date or Time
+# Datum oder Uhrzeit
 
 <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -10,7 +10,7 @@ Diese DocBits-Karte prüft, ob ein angegebener Datums-/Zeitwert innerhalb eines 
 
 * **Datums-/Zeitvalidierung:** Diese Karte wertet aus, ob ein bestimmtes Datum/eine bestimmte Zeit innerhalb eines angegebenen Bereichs liegt, und verwendet dabei die folgenden Bedingungen:
   * **Is:** Prüft, ob das Datum/die Zeit innerhalb des definierten Start- und Endbereichs liegt (einschließlich).
-  * **Is Not:** Stellt sicher, dass das Datum/die Zeit außerhalb des definierten Bereichs liegt.
+  * **Ist nicht:** Stellt sicher, dass das Datum/die Zeit außerhalb des definierten Bereichs liegt.
 
 **Datums-/Zeitbereich:** Benutzer geben die Start- und Endwerte für Datum/Zeit an, um den Bereich für den Vergleich zu definieren.
 

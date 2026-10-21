@@ -1,10 +1,10 @@
-# Assign document to the sub organization
+# Dokument der Unterorganisation zuordnen
 
 <figure><img src="../../../../.gitbook/assets/image (302).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 
-Die Workflow-Karte **"Assign Document to Sub-Organization"** weist ein Dokument einer bestimmten Unterorganisation innerhalb des Systems zu und stellt so sicher, dass es zur Verarbeitung an die passende Organisationseinheit weitergeleitet wird.
+Die Workflow-Karte **„Dokument einer Unterorganisation zuordnen“** weist ein Dokument einer bestimmten Unterorganisation innerhalb des Systems zu und stellt so sicher, dass es zur Verarbeitung an die passende Organisationseinheit weitergeleitet wird.
 
 ## **Bestandteile der Karte:**
 
@@ -15,7 +15,7 @@ Die Workflow-Karte **"Assign Document to Sub-Organization"** weist ein Dokument 
 ## **Funktionalität:**
 
 * **Bedingungsauswertung:**\
-  Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Dokumentzuweisung:**\
   Die Karte weist das Dokument der aus der Dropdown-Liste ausgewählten Unterorganisation zu.
 
@@ -26,4 +26,4 @@ Die Workflow-Karte **"Assign Document to Sub-Organization"** weist ein Dokument 
 
 ## **Fazit:**
 
-Die Workflow-Karte **"Assign Document to Sub-Organization"** stellt sicher, dass Dokumente an die richtige Unterorganisation weitergeleitet werden, und optimiert so den Dokumentenmanagementprozess, indem die Verantwortung auf Basis der Organisationsstruktur zugewiesen wird.
+Die Workflow-Karte **„Dokument einer Unterorganisation zuordnen“** stellt sicher, dass Dokumente an die richtige Unterorganisation weitergeleitet werden, und optimiert so den Dokumentenmanagementprozess, indem die Verantwortung auf Basis der Organisationsstruktur zugewiesen wird.

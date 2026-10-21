@@ -1,4 +1,4 @@
-# Promised Delivery Date on Purchase Order
+# Zugesagter Liefertermin in der Bestellung
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -8,7 +8,7 @@ Diese DocBits-Karte ist darauf ausgelegt, den präzisen Vergleich der zugesagten
 
 ## **Bestandteile der Karte**
 
-1. **Operator**
+1. **Betreiber**
    * **Beschreibung:** Legt die Bedingung fest, die zum Vergleich der Lieferdaten angewendet wird.
    * **Optionen:**
      * **Gleich (=):** Prüft, ob das zugesagte Lieferdatum der Position mit dem Lieferdatum der Bestellung übereinstimmt.

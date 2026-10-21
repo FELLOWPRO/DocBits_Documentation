@@ -9,7 +9,7 @@ Diese Workflow-Karte ist speziell darauf ausgelegt, vordefinierte Operationen an
 ## **Funktionalität:**
 
 * **Dokumenttyp-Validierung**: Diese Karte überprüft, ob ein Dokument einem bestimmten Typ entspricht, sodass Benutzer dessen Kategorisierung bestätigen können.
-* **Operator**: Benutzer können Bedingungen festlegen, um den Dokumenttyp zu bestimmen. Verfügbare Operatoren sind:
+* **Betreiber**: Benutzer können Bedingungen festlegen, um den Dokumenttyp zu bestimmen. Verfügbare Operatoren sind:
   * **Ist**: Bestätigt, dass das Dokument dem angegebenen Dokumenttyp entspricht.
   * **Ist nicht**: Stellt sicher, dass das Dokument nicht dem angegebenen Dokumenttyp entspricht.
 * **Dokumenttypen**: Unterstützte Dokumenttypen sind:

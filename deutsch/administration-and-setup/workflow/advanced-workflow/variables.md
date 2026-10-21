@@ -47,3 +47,7 @@ Klicken Sie auf **New Variable**, geben Sie ihr einen Namen und einen Typ und le
 
 - Sehen Sie, wie Knoten diese Werte verwenden, unter [Knoten](nodes.md).
 - Validieren und starten Sie den Workflow unter [Validierung & Test](validation-and-testing.md).
+
+## Zahlenvariablen
+
+**Number (Zahl)** ist neben Text, Yes/No und Document ein eigener Variablentyp. Geben Sie einen Zahlenwert ohne Währungssymbol ein. Organisationsvariablen werden von mehreren Workflows gemeinsam genutzt; Anlegen, Ändern und Löschen speichern sofort, unabhängig vom Speichern oder Verwerfen des Canvas. Prüfen Sie vor einer Änderung die betroffenen Workflows und testen Sie Werte unterhalb, genau auf und oberhalb eines Schwellenwerts.

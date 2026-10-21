@@ -1,4 +1,4 @@
-# Out of Tolerance Unit Price
+# Stückpreis außerhalb der Toleranz
 
 <figure><img src="../../../../.gitbook/assets/image (272).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -10,8 +10,8 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob der kombinierte Wert a
 
 1. **Feldname:**
    * **Beschreibung**: Gibt das Dokumentfeld an, das den mit dem Stückpreis zu kombinierenden Wert enthält.
-   * **Detail**: Der Wert in diesem Feld wird mit dem Stückpreis kombiniert, um den kombinierten Gesamtwert für den Vergleich zu bilden.
-2. **Operator:**
+   * **Detailliert**: Der Wert in diesem Feld wird mit dem Stückpreis kombiniert, um den kombinierten Gesamtwert für den Vergleich zu bilden.
+2. **Betreiber:**
    * **Beschreibung**: Legt die Bedingung für den Vergleich des kombinierten Werts aus Stückpreis und Feldwert mit dem angegebenen Wert fest.
    * **Optionen**:
      * **Gleich (=)**: Überprüft, ob der kombinierte Wert aus Stückpreis und Feld mit dem angegebenen Wert übereinstimmt.
@@ -22,7 +22,7 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob der kombinierte Wert a
      * **Kleiner oder gleich (≤)**: Überprüft, ob der kombinierte Wert aus Stückpreis und Feld kleiner oder gleich dem angegebenen Wert ist.
 3. **Wert:**
    * **Beschreibung**: Gibt den Wert an, mit dem der kombinierte Wert aus Stückpreis und Feld verglichen wird.
-   * **Detail**: Dieser numerische Wert stellt den Schwellenwert für den Vergleich dar. Über- oder unterschreitet der kombinierte Wert aus Stückpreis und Feld diesen Wert (je nach ausgewähltem Operator), löst die Bedingung die festgelegten Aktionen aus.
+   * **Detailliert**: Dieser numerische Wert stellt den Schwellenwert für den Vergleich dar. Über- oder unterschreitet der kombinierte Wert aus Stückpreis und Feld diesen Wert (je nach ausgewähltem Operator), löst die Bedingung die festgelegten Aktionen aus.
 
 ## **Funktionalität:**
 

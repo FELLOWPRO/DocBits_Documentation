@@ -1,17 +1,17 @@
-# Assign to Procurement Group and Create a Task/Notification
+# Der Beschaffungsgruppe zuweisen und eine Aufgabe/Benachrichtigung erstellen
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck**
 
-Die Workflow-Karte "**Assign Document to Procurement Group and Create Task/Notification**" weist ein Dokument einer angegebenen Beschaffungsgruppe zu, erstellt eine Aufgabe oder Benachrichtigung mit definierten Details und benachrichtigt die Gruppe optional per E-Mail. Sie priorisiert die Ausführung der Aufgabe auf Basis eines konfigurierbaren numerischen Prioritätswerts.
+Die Workflow-Karte "**Ordnen Sie das Dokument der Beschaffungsgruppe zu und erstellen Sie eine Aufgabe/Benachrichtigung**" weist ein Dokument einer angegebenen Beschaffungsgruppe zu, erstellt eine Aufgabe oder Benachrichtigung mit definierten Details und benachrichtigt die Gruppe optional per E-Mail. Sie priorisiert die Ausführung der Aufgabe auf Basis eines konfigurierbaren numerischen Prioritätswerts.
 
 ## **Bestandteile der Karte**
 
 1. **Gruppenname**
    * **Beschreibung:** Gibt die Beschaffungsgruppe an, die für die Bearbeitung des Dokuments verantwortlich ist.
    * **Detail:** Ein Feld, in dem der Benutzer den Namen der Beschaffungsgruppe manuell eingeben kann.
-2. **Task/Notification**
+2. **Aufgabe/Benachrichtigung**
    * **Beschreibung:** Legt fest, ob für die Gruppe eine Aufgabe oder eine Benachrichtigung erstellt wird.
    * **Detail:** Ein Feld, in dem der Benutzer zwischen der Erstellung einer Aufgabe oder einer Benachrichtigung wählen kann.
 3. **Titel**

@@ -1,4 +1,4 @@
-# Compare Order Confirmation with Purchase order
+# Vergleichen Sie die Auftragsbestätigung mit der Bestellung
 
 <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -6,47 +6,49 @@
 
 ## Zweck:
 
-Diese DocBits-Karte ist darauf ausgelegt, ein bestimmtes Auftragsdatenfeld – etwa Menge, Rabatt oder Stückpreis – zwischen einer Auftragsbestätigung und einer Bestellung zu vergleichen. Indem sie jeweils einen gezielten Vergleich eines einzelnen Feldes ermöglicht, sorgt sie für Präzision bei der Validierung wichtiger Datenpunkte und erhält die Auftragsgenauigkeit. **Version 4** erweitert diese Funktionalität, indem sie Vergleiche zwischen verschiedenen Entitäten wie der Bestellung, den erhaltenen Mengen und dem Dokument selbst ermöglicht und so mehr Flexibilität und Kontrolle in den Workflow bringt.
+Diese DocBits-Karte dient dazu, ein bestimmtes Bestelldatenfeld – wie Menge, Rabatt oder Stückpreis – zwischen einer Bestellbestätigung und einer Bestellung zu vergleichen. Indem es einen gezielten Vergleich jeweils eines Feldes ermöglicht, gewährleistet es eine präzise Validierung wichtiger Datenpunkte und sorgt für die Beibehaltung der Auftragsgenauigkeit. **Version 4** erweitert diese Funktionalität, indem es Vergleiche zwischen verschiedenen Einheiten wie der Bestellung, eingegangenen Mengen und dem Dokument selbst ermöglicht, was dem Arbeitsablauf mehr Flexibilität und Kontrolle verleiht.
 
 ## Bestandteile der Karte:
 
-1. **Any/All**&#x20;
-   * **Beschreibung:** Bestimmt, ob die Bedingung für irgendeine oder alle Zeilen der Auftragsbestätigung gilt.\
+1. **Alle/Alle**
+   * **Beschreibung:** Legt fest, ob die Bedingung für eine oder alle Zeilen in der Auftragsbestätigung gilt.\
      **Optionen:**
-     * **Any**: Der Vergleich wird ausgelöst, wenn der ausgewählte Feldwert in irgendeiner Zeile der Auftragsbestätigung mit dem entsprechenden Wert in der Bestellung übereinstimmt.
-     * **All**: Der Vergleich wird nur ausgelöst, wenn der ausgewählte Feldwert in allen Zeilen der Auftragsbestätigung mit dem entsprechenden Wert in der Bestellung übereinstimmt.
-2. **Auftragsdatenfeld**
-   * **Beschreibung**: Gibt das Datenfeld an, das zwischen der Auftragsbestätigung und der Bestellung verglichen wird.
-   * **Detail**: Benutzer können eines der folgenden Felder für den Vergleich auswählen:
+     * **Any**: Der Vergleich wird ausgelöst, wenn der ausgewählte Feldwert in einer Zeile der Bestellbestätigung mit dem entsprechenden Wert in der Bestellung übereinstimmt.
+     * **Alle**: Der Vergleich wird nur ausgelöst, wenn der ausgewählte Feldwert in allen Zeilen der Bestellbestätigung mit dem entsprechenden Wert in der Bestellung übereinstimmt.
+2. **Bestelldatenfeld**
+   * **Beschreibung**: Gibt das Datenfeld an, das zwischen der Auftragsbestätigung und der Bestellung verglichen werden soll.
+   * **Detailliert**: Benutzer können eines der folgenden Felder zum Vergleich auswählen:
      * **Menge**: Vergleicht die bestellte Menge mit der bestätigten Menge.
      * **Rabatt**: Überprüft, ob der Rabatt in der Bestätigung mit der Bestellung übereinstimmt.
      * **Stückpreis**: Stellt sicher, dass der Stückpreis in der Bestätigung mit der Bestellung übereinstimmt.
-3. **Operator**
-   * **Beschreibung**: Legt die Bedingung fest, die auf den Vergleich des ausgewählten Datenfeldes angewendet wird.
+3. **Betreiber**
+   * **Beschreibung**: Definiert die Bedingung, die auf den Vergleich des ausgewählten Datenfelds angewendet wird.
    * **Optionen**:
      * **Gleich (=)**: Bestätigt, dass der Wert mit der Bestellung übereinstimmt.
      * **Ungleich (≠)**: Stellt sicher, dass sich der Wert von der Bestellung unterscheidet.
      * **Größer als (>)**: Überprüft, ob der Wert den Wert der Bestellung übersteigt.
-     * **Größer oder gleich (≥)**: Bestätigt, dass der Wert dem Wert der Bestellung entspricht oder ihn übersteigt.
-     * **Kleiner als (<)**: Prüft, ob der Wert unter dem Wert der Bestellung liegt.
-     * **Kleiner oder gleich (≤)**: Bestätigt, dass der Wert unter dem Wert der Bestellung liegt oder ihm entspricht.
+     * **Größer oder gleich (≥)**: Bestätigt, dass der Wert dem Wert der Bestellung entspricht oder diesen überschreitet.
+     * **Kleiner als (<)**: Prüft, ob der Wert unter dem Bestellwert liegt.
+     * **Kleiner oder gleich (≤)**: Bestätigt, dass der Wert unter dem Wert der Bestellung liegt oder diesem entspricht.
 
 ## **Zusätzliche Komponenten in Version 4**:
 
-* **Vergleichstyp**: Wählt die zu vergleichenden Entitäten aus. Die Optionen umfassen:
-  * **Purchase Order to Document**: Vergleicht die Bestelldaten mit dem zugehörigen Dokument.
-  * **Received to Document**: Vergleicht die erhaltenen Daten (z. B. erhaltene Mengen) mit dem Dokument.
-  * **Purchase Order to Received**: Vergleicht die Bestelldaten mit den erhaltenen Mengen.
+* **Vergleichstyp**: Wählt die zu vergleichenden Entitäten aus. Zu den Optionen gehören:
+  * **Bestellung zum Dokument**: Vergleicht die Bestelldaten mit dem zugehörigen Dokument.
+  * **Als Dokument erhalten**: Vergleicht die empfangenen Daten (z. B. eingegangene Mengen) mit dem Dokument.
+  * **Bestellung auf Empfangen umstellen**: Vergleicht die Bestelldaten mit den eingegangenen Mengen.
 
 ## Funktionalität:
 
-* **Feldvergleich**: Das System vergleicht das ausgewählte Auftragsdatenfeld (Stückpreis, Rabatt oder Menge) aus der Auftragsbestätigung mit dem entsprechenden Wert in der Bestellung.
-* **Ausführung der Aktion**: Basierend auf dem Vergleichsergebnis und der Operatorbedingung kann die Karte Folgeaktionen auslösen, etwa Benachrichtigungen oder Warnungen.
+* **Feldvergleich**: Das System vergleicht das ausgewählte Bestelldatenfeld (Stückpreis, Rabatt oder Menge) aus der Bestellbestätigung mit dem entsprechenden Wert in der Bestellung.
+* **Aktionsausführung**: Basierend auf dem Vergleichsergebnis und der Bedienerbedingung kann die Karte Folgeaktionen wie Benachrichtigungen oder Alarme auslösen.
 
-## Beispiel-Szenario:
+## Beispielszenario:
 
-* Eine Auftragsbestätigung gibt einen **Stückpreis** von 50 $ an, während die Bestellung 45 $ ausweist. Mit dem Operator "Größer als" markiert die Karte die Abweichung und ermöglicht es dem Beschaffungsteam, sie vor der Verarbeitung zu klären.
+* In einer Auftragsbestätigung ist ein **Stückpreis** von 50 $ angegeben, während in der Bestellung 45 $ angegeben sind. Mithilfe des „Größer als“-Operators markiert die Karte die Diskrepanz, sodass das Beschaffungsteam sie vor der Verarbeitung beheben kann.
 
 ## Fazit:
 
-Diese Karte vereinfacht die Validierung einzelner Auftragsdatenfelder und stellt die Einhaltung der Bestellkonditionen sicher. Indem sie für den Vergleich jeweils ein einzelnes Feld isoliert, unterstützt sie gezielte Prüfungen und die Fehlervermeidung bei der Auftragsverarbeitung.
+Diese Karte vereinfacht die Validierung einzelner Bestelldatenfelder und stellt so die Einhaltung der Bestellbedingungen sicher. Durch die Isolierung einzelner Felder zum Vergleich werden gezielte Überprüfungen und Fehlervermeidung bei der Auftragsabwicklung unterstützt.
+
+Siehe [Vergleichsrichtung, Toleranzbasis und gespeicherte Kartenversionen](../../cards-overview/po-comparison-versions-guide.md), bevor Sie die Vergleichsseiten ändern.

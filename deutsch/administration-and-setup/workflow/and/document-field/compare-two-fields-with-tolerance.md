@@ -1,4 +1,4 @@
-# Compare two Fields with Tolerance
+# Vergleichen Sie zwei Felder mit Toleranz
 
 <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -11,7 +11,7 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen zu automatisieren, indem sie
 1. **Feldname (1)**
    * **Beschreibung:** Gibt das erste zu vergleichende Dokumentfeld an.
    * **Detail:** Dieser muss exakt mit dem Bezeichner des ersten Feldes innerhalb des Dokuments übereinstimmen.
-2. **Operator**
+2. **Betreiber**
    * **Beschreibung:** Legt die Art des Vergleichs fest, der zwischen den beiden Feldern durchgeführt wird.
    * **Optionen:**
      * **Gleich (=):** Prüft, ob die Werte der beiden Felder gleich sind.
@@ -22,7 +22,7 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen zu automatisieren, indem sie
      * **Kleiner oder gleich (≤):** Stellt sicher, dass der Wert des ersten Feldes kleiner oder gleich dem des zweiten Feldes ist.
 3. **Feldname (2)**
    * **Beschreibung:** Gibt das zweite Dokumentfeld an, das mit dem ersten Feld verglichen wird.
-   * **Detail:** Dieser sollte exakt mit dem Bezeichner des zweiten Feldes innerhalb des Dokuments übereinstimmen.&#x20;
+   * **Detail:** Dieser sollte exakt mit dem Bezeichner des zweiten Feldes innerhalb des Dokuments übereinstimmen.
 4. **Toleranzbetrag**
    * **Beschreibung:** Legt die zulässige Fehlertoleranz für den Vergleich fest.
    * **Detail:** Der Toleranzbetrag ist ein numerischer Wert, der die maximal zulässige Differenz zwischen den beiden Feldwerten angibt, damit der Vergleich als erfüllt gilt.
@@ -43,7 +43,7 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen zu automatisieren, indem sie
 
 ## **Einrichtung und Konfiguration:**
 
-* Benutzer konfigurieren die Karte, indem sie die beiden zu vergleichenden Felder aus einer Liste der im System verfügbaren Felder auswählen. Der Operator wird aus einer Dropdown-Liste der verfügbaren Vergleichsoptionen ausgewählt. Benutzer geben den Toleranzbetrag ein und wählen den Toleranztyp (Wert oder Prozent).&#x20;
+* Benutzer konfigurieren die Karte, indem sie die beiden zu vergleichenden Felder aus einer Liste der im System verfügbaren Felder auswählen. Der Operator wird aus einer Dropdown-Liste der verfügbaren Vergleichsoptionen ausgewählt. Benutzer geben den Toleranzbetrag ein und wählen den Toleranztyp (Wert oder Prozent).
 
 ## **Fazit:**
 

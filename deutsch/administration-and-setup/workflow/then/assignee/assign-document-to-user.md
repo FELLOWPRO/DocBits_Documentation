@@ -1,4 +1,4 @@
-# Assign document to User
+# Dokument dem Benutzer zuweisen
 
 <figure><img src="../../../../.gitbook/assets/image (300).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -23,7 +23,7 @@ Die Workflow-Karte **"Assign Document to User"** ermöglicht es Benutzern, ein D
 ## **Funktionalität:**
 
 * **Bedingungsauswertung:**\
-  Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Dokumentzuweisung:**\
   Die Karte weist das Dokument dem ausgewählten Benutzer zu und stellt so sicher, dass die Aufgabe an die passende Person zur Bearbeitung weitergeleitet wird. Dies unterstützt die Nachvollziehbarkeit und ein effektives Dokumentenmanagement.
 * **Entscheidungsbaum (Version 3):**\

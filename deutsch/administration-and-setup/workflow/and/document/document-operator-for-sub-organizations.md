@@ -1,4 +1,4 @@
-# Document Operator for Sub-Organizations
+# Dokumentenbetreiber für Unterorganisationen
 
 <figure><img src="../../../../.gitbook/assets/image (42).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -8,12 +8,12 @@ Diese Workflow-Karte wertet aus, ob ein Dokument Teil einer bestimmten Unterorga
 
 ## Bestandteile der Karte:
 
-1. **Operator**
+1. **Betreiber**
    * **Beschreibung:** Legt fest, ob das Dokument Teil der angegebenen Unterorganisation sein muss oder nicht.
    * **Optionen:**
      * **Is:** Das Dokument muss Teil der angegebenen Unterorganisation sein, damit die Bedingung erfüllt ist.
-     * **Is Not:** Das Dokument darf nicht Teil der angegebenen Unterorganisation sein, damit die Bedingung erfüllt ist.
-2. **Sub-org**
+     * **Ist nicht:** Das Dokument darf nicht Teil der angegebenen Unterorganisation sein, damit die Bedingung erfüllt ist.
+2. **Unterorg**
    * **Beschreibung:** Gibt die Unterorganisation an, mit der das Dokument verglichen werden soll.
    * **Detail:** Dieser sollte mit dem Bezeichner der Unterorganisation übereinstimmen. Der Vergleich prüft, ob das Dokument zur angegebenen Unterorganisation gehört.
 

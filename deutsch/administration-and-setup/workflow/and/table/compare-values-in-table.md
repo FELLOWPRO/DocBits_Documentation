@@ -1,4 +1,4 @@
-# Compare values in table
+# Vergleichen Sie die Werte in der Tabelle
 
 <figure><img src="../../../../.gitbook/assets/image (48).png" alt="" width="563"><figcaption></figcaption></figure>
 

@@ -1,4 +1,4 @@
-# Assigned User Condition
+# Zugewiesene Benutzerbedingung
 
 <figure><img src="../../../../.gitbook/assets/userlmn_5e16e9b23626ec1211c753fec5333513 (1).png" alt="" width="552"><figcaption></figcaption></figure>
 
@@ -8,21 +8,21 @@ Diese Workflow-Karte steuert die Ausführung von Operationen abhängig davon, ob
 
 **Bestandteile der Karte**
 
-1. **Operator**
+1. **Betreiber**
    * **Beschreibung**: Legt die logische Bedingung fest, die auf die Benutzerzuweisung angewendet wird.
    * **Optionen**:
      * **IS**: Löst die Operation aus, wenn der zugewiesene Benutzer des Dokuments oder der Aufgabe mit einem der Benutzer in der angegebenen Liste übereinstimmt.
-     * **IS NOT**: Löst die Operation aus, wenn der zugewiesene Benutzer des Dokuments oder der Aufgabe mit keinem der Benutzer in der angegebenen Liste übereinstimmt.
+     * **IST NICHT**: Löst die Operation aus, wenn der zugewiesene Benutzer des Dokuments oder der Aufgabe mit keinem der Benutzer in der angegebenen Liste übereinstimmt.
 2. **Benutzerliste**
    * **Beschreibung**: Eine Liste oder Auswahl von Benutzern, die mit dem zugewiesenen Benutzer verglichen werden.
-   * **Detail**: Diese Liste kann einen oder mehrere Benutzer enthalten, sodass die Karte sowohl einzelne als auch mehrere Benutzerbedingungen effektiv verarbeiten kann. Die Auswahl kann über Kontrollkästchen, ein Mehrfachauswahl-Dropdown oder ähnliche UI-Elemente erfolgen.
+   * **Detailliert**: Diese Liste kann einen oder mehrere Benutzer enthalten, sodass die Karte sowohl einzelne als auch mehrere Benutzerbedingungen effektiv verarbeiten kann. Die Auswahl kann über Kontrollkästchen, ein Mehrfachauswahl-Dropdown oder ähnliche UI-Elemente erfolgen.
 
 **Funktionalität**
 
 * **Erkennung der Benutzerzuweisung**: Identifiziert automatisch den oder die Benutzer, die einer bestimmten Aufgabe oder einem bestimmten Dokument im ERP-System zugewiesen sind.
 * **Bedingungsauswertung**:
   * Mit dem Operator **IS** prüft die Karte, ob der zugewiesene Benutzer zu den in der Benutzerliste aufgeführten Benutzern gehört.
-  * Mit dem Operator **IS NOT** stellt die Karte sicher, dass der zugewiesene Benutzer nicht zu den aufgeführten Benutzern gehört.
+  * Mit dem Operator **IST NICHT** stellt die Karte sicher, dass der zugewiesene Benutzer nicht zu den aufgeführten Benutzern gehört.
 * **Ausführung der Aktion**:
   * **Bedingung erfüllt (True)**: Erfüllt die Benutzerzuweisung die Bedingung (entweder IS oder IS NOT), werden relevante Aktionen ausgelöst, etwa Benachrichtigungen, das Anlegen von Aufgaben, Freigaben oder andere Workflow-Schritte.
   * **Bedingung nicht erfüllt (False)**: Ist die Bedingung nicht erfüllt, wird der Workflow nicht fortgesetzt.

@@ -1,4 +1,4 @@
-# Change Entries with
+# Einträge ändern mit
 
 <figure><img src="../../../../.gitbook/assets/image (293).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -14,7 +14,7 @@ Die Workflow-Karte **"Change Entries in Table"** wird verwendet, um Einträge in
 2. **Spaltenname**
    * **Beschreibung:** Gibt die **Spalte** innerhalb der ausgewählten Tabelle an, die aktualisiert wird.
    * **Detail:** Zur Auswahl wird eine Liste aller verfügbaren **Spalten** bereitgestellt.
-3. **Operation**
+3. **Betrieb**
    * **Beschreibung:** Legt die mathematische Operation fest, die mit den **Spaltenwerten** durchgeführt wird.
    * **Optionen:**
      * **Addieren (+):** Addiert einen angegebenen **Wert** zum aktuellen Wert in der ausgewählten Spalte.
@@ -28,7 +28,7 @@ Die Workflow-Karte **"Change Entries in Table"** wird verwendet, um Einträge in
 ## **Funktionalität:**
 
 * **Bedingungsauswertung:**\
-  Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Aktualisierung der Tabelleneinträge:**\
   Die Karte führt die ausgewählte Operation (**+**, **-**, **\*** oder **/**) mit den Werten in der gewählten **Spalte** der ausgewählten **Tabelle** unter Verwendung des angegebenen **Werts** durch.
 

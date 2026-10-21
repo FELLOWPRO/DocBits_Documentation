@@ -2,7 +2,7 @@
 hidden: true
 ---
 
-# Supplier on Invoice
+# Lieferant auf Rechnung
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -12,10 +12,10 @@ Diese DocBits-Karte ermöglicht einen detaillierten Vergleich, indem sie den Lie
 
 ## **Funktionalität:**
 
-* **Supplier on Invoice Supplier on Purchase Order:** Diese Karte prüft, ob der Lieferant in der Rechnung derselbe ist wie in der Auftragsbestätigung oder nicht.
+* **Lieferant auf Rechnung Lieferant auf Bestellung:** Diese Karte prüft, ob der Lieferant in der Rechnung derselbe ist wie in der Auftragsbestätigung oder nicht.
 * **Operatorwert:** Benutzer können bestimmte Bedingungen festlegen, etwa: Ist der Lieferant, der die Rechnung ausgestellt hat, derselbe wie in der Bestellung oder nicht. Verfügbare Operatoren sind:
   * **Is (=):** Prüft, ob der Lieferant in der Rechnung mit dem Lieferanten in der Auftragsbestätigung übereinstimmt.
-  * **Is not (≠):** Stellt sicher, dass der Lieferant, der die Rechnung ausgestellt hat, derselbe ist wie in der Auftragsbestätigung.
+  * **Ist nicht (≠):** Stellt sicher, dass der Lieferant, der die Rechnung ausgestellt hat, derselbe ist wie in der Auftragsbestätigung.
 
 ## **Verwendung:**
 

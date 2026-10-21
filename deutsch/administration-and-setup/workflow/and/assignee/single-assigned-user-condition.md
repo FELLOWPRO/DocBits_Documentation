@@ -1,4 +1,4 @@
-# Single Assigned User Condition
+# Bedingung für einen einzelnen zugewiesenen Benutzer
 
 <figure><img src="../../../../.gitbook/assets/userlmn_77e991cee96598023f9a3ac7ad230e50 (1).png" alt="" width="552"><figcaption></figcaption></figure>
 
@@ -8,21 +8,21 @@ Diese Workflow-Karte ermöglicht Operationen auf Basis der Zuweisung einer Aufga
 
 **Bestandteile der Karte**
 
-1. **Operator**
+1. **Betreiber**
    * **Beschreibung**: Gibt die Logik an, die auf die Benutzerzuweisung angewendet wird.
    * **Optionen**:
      * **IS**: Löst die Operation aus, wenn der zugewiesene Benutzer des Dokuments oder der Aufgabe mit dem angegebenen Benutzer übereinstimmt.
-     * **IS NOT**: Löst die Operation aus, wenn der zugewiesene Benutzer nicht mit dem angegebenen Benutzer übereinstimmt.
+     * **IST NICHT**: Löst die Operation aus, wenn der zugewiesene Benutzer nicht mit dem angegebenen Benutzer übereinstimmt.
 2. **Benutzer**
    * **Beschreibung**: Ermöglicht die Auswahl eines einzelnen Benutzers, mit dem der zugewiesene Benutzer verglichen wird.
-   * **Detail**: Dies erfolgt über ein einfaches Dropdown- oder Autovervollständigungsfeld, in dem jeweils ein Benutzer ausgewählt werden kann.
+   * **Detailliert**: Dies erfolgt über ein einfaches Dropdown- oder Autovervollständigungsfeld, in dem jeweils ein Benutzer ausgewählt werden kann.
 
 **Funktionalität**
 
 * **Erkennung der Benutzerzuweisung**: Identifiziert den Benutzer, der einer bestimmten Aufgabe oder einem bestimmten Dokument aktuell zugewiesen ist.
 * **Bedingungsauswertung**:
   * Beim Operator **IS** prüft die Karte, ob der zugewiesene Benutzer mit dem ausgewählten Benutzer identisch ist.
-  * Beim Operator **IS NOT** überprüft sie, ob sich der zugewiesene Benutzer vom ausgewählten Benutzer unterscheidet.
+  * Beim Operator **IST NICHT** überprüft sie, ob sich der zugewiesene Benutzer vom ausgewählten Benutzer unterscheidet.
 * **Ausführung der Aktion**:
   * **Bedingung erfüllt (True)**: Erfüllt die Zuweisung die festgelegte Bedingung (IS oder IS NOT), löst sie vordefinierte Aktionen aus, etwa das Fortfahren mit Freigaben, das Anstoßen weiterer Aufgaben, das Senden von Benachrichtigungen oder andere zugehörige Workflows.
   * **Bedingung nicht erfüllt (False)**: Ist die Bedingung nicht erfüllt, wird der Workflow nicht fortgesetzt.

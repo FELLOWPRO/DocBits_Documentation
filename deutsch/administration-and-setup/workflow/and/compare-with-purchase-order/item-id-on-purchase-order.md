@@ -1,4 +1,4 @@
-# Item Id on Purchase Order
+# Artikel-ID in der Bestellung
 
 <figure><img src="../../../../.gitbook/assets/image (275).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -8,12 +8,12 @@ Diese Workflow-Karte ist darauf ausgelegt, Artikel-IDs zwischen einer Bestellung
 
 ## **Bestandteile der Karte:**
 
-1. **Any / All:**
+1. **Alle / Alle:**
    * **Beschreibung**: Legt fest, ob die Bedingung für irgendeinen oder alle Fälle des Artikel-ID-Vergleichs gilt.
    * **Optionen**:
      * **Any**: Die Bedingung ist erfüllt, wenn irgendeine Artikel-ID in der Bestellung mit der Artikel-ID im Dokument übereinstimmt.
      * **All**: Die Bedingung ist nur erfüllt, wenn alle Artikel-IDs in der Bestellung mit den Artikel-IDs im Dokument übereinstimmen.
-2. **Operator:**
+2. **Betreiber:**
    * **Beschreibung**: Legt die Bedingung für den Vergleich der Artikel-ID auf der Bestellung mit der Artikel-ID auf dem Dokument fest.
    * **Optionen**:
      * **Gleich (=)**: Überprüft, ob die Artikel-ID in der Bestellung exakt mit der Artikel-ID im Dokument übereinstimmt.

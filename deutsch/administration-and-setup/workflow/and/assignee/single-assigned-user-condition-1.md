@@ -1,4 +1,4 @@
-# Single Assigned User Condition
+# Bedingung für einen einzelnen zugewiesenen Benutzer
 
 <figure><img src="../../../../.gitbook/assets/image (16) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -7,11 +7,11 @@ Diese Workflow-Karte führt Operationen abhängig davon aus, ob eine Aufgabe ode
 
 **Bestandteile der Karte:**
 
-1. **Operator**
+1. **Betreiber**
    * **Beschreibung:** Legt die logische Bedingung fest, die auf die Gruppenzuweisung angewendet wird.
    * **Optionen:**
      * **IS:** Löst die Operation aus, wenn die zugewiesene Gruppe des Dokuments oder der Aufgabe mit der angegebenen Gruppe übereinstimmt.
-     * **IS NOT:** Löst die Operation aus, wenn die zugewiesene Gruppe des Dokuments oder der Aufgabe nicht mit der angegebenen Gruppe übereinstimmt.
+     * **IST NICHT:** Löst die Operation aus, wenn die zugewiesene Gruppe des Dokuments oder der Aufgabe nicht mit der angegebenen Gruppe übereinstimmt.
 2. **Gruppe**
    * **Beschreibung:** Gibt die Gruppe an, die mit der zugewiesenen Gruppe verglichen wird.
    * **Detail:** In diesem Feld können Sie eine einzelne Gruppe auswählen, mit der die Zuweisung verglichen wird.
@@ -21,9 +21,9 @@ Diese Workflow-Karte führt Operationen abhängig davon aus, ob eine Aufgabe ode
 * **Erkennung der Gruppenzuweisung:** Identifiziert automatisch die Gruppe, die einer bestimmten Aufgabe oder einem bestimmten Dokument zugewiesen ist.
 * **Bedingungsauswertung:**
   * Mit dem Operator **IS** prüft die Karte, ob die zugewiesene Gruppe mit der angegebenen Gruppe übereinstimmt.
-  * Mit dem Operator **IS NOT** stellt die Karte sicher, dass die zugewiesene Gruppe nicht mit der angegebenen Gruppe übereinstimmt.
+  * Mit dem Operator **IST NICHT** stellt die Karte sicher, dass die zugewiesene Gruppe nicht mit der angegebenen Gruppe übereinstimmt.
 * **Ausführung der Aktion:**
-  * **Bedingung erfüllt (True):** Erfüllt die Gruppenzuweisung die Bedingung (entweder **IS** oder **IS NOT**), werden relevante Aktionen ausgelöst, etwa Benachrichtigungen, das Anlegen von Aufgaben, Freigaben oder andere Workflow-Schritte.
+  * **Bedingung erfüllt (True):** Erfüllt die Gruppenzuweisung die Bedingung (entweder **IS** oder **IST NICHT**), werden relevante Aktionen ausgelöst, etwa Benachrichtigungen, das Anlegen von Aufgaben, Freigaben oder andere Workflow-Schritte.
   * **Bedingung nicht erfüllt (False):** Ist die Bedingung nicht erfüllt, kann das Dokument oder die Aufgabe über eine andere Weiterleitung laufen, oder es können alternative Aktionen festgelegt werden.
 
 **Benutzerinteraktionen:**

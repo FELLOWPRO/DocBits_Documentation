@@ -1,16 +1,16 @@
-# Assign Sequentially to User/Group
+# Nacheinander Benutzer/Gruppe zuweisen
 
 <figure><img src="../../../../.gitbook/assets/image (11) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck**
 
-Die Workflow-Karte "**Assign the Document Sequentially to User/Group Based on Decision Table**" weist Dokumente dynamisch entweder einem Benutzer oder einer Gruppe zu, abhängig von der Auswertung der Entscheidungstabelle. Dadurch wird sichergestellt, dass Dokumente auf Basis vordefinierter Regeln angemessen weitergeleitet werden.
+Die Workflow-Karte "**Ordnen Sie das Dokument basierend auf der Entscheidungstabelle der Reihe nach einem Benutzer/einer Gruppe zu**" weist Dokumente dynamisch entweder einem Benutzer oder einer Gruppe zu, abhängig von der Auswertung der Entscheidungstabelle. Dadurch wird sichergestellt, dass Dokumente auf Basis vordefinierter Regeln angemessen weitergeleitet werden.
 
 ## **Bestandteile der Karte**
 
 1. **Priorität (Wert)**
    * **Beschreibung**: Gibt die Prioritätsstufe für Zuweisungen an, wobei niedrigere Zahlen eine höhere Priorität darstellen.
-   * **Detail**: Ein numerisches Eingabefeld, in dem der Prioritätswert festgelegt werden kann, um die Reihenfolge der Zuweisung zu steuern.
+   * **Detailliert**: Ein numerisches Eingabefeld, in dem der Prioritätswert festgelegt werden kann, um die Reihenfolge der Zuweisung zu steuern.
 
 ## **Funktionalität**
 
@@ -22,11 +22,11 @@ Die Workflow-Karte "**Assign the Document Sequentially to User/Group Based on De
 
 ## **Einrichtung und Konfiguration**
 
-1. Fügen Sie die Karte **Assign the Document Sequentially** zu Ihrem Workflow hinzu.
+1. Fügen Sie die Karte **Ordnen Sie das Dokument der Reihe nach zu** zu Ihrem Workflow hinzu.
 2. Konfigurieren Sie das Feld **Priorität (Wert)**:
    * Geben Sie einen numerischen Wert ein, um die Zuweisungspriorität festzulegen.
 3. Speichern und aktivieren Sie den Workflow, um die Konfiguration anzuwenden.
 
 ## **Fazit**
 
-Die Workflow-Karte "**Assign the Document Sequentially to User/Group Based on Decision Table**" sorgt für eine effiziente und dynamische Weiterleitung von Dokumenten. Durch die Nutzung der Logik der Entscheidungstabelle und der Prioritätswerte ermöglicht die Karte eine präzise Zuweisung an entweder einen Benutzer oder eine Gruppe und optimiert so Dokument-Workflows.
+Die Workflow-Karte "**Ordnen Sie das Dokument basierend auf der Entscheidungstabelle der Reihe nach einem Benutzer/einer Gruppe zu**" sorgt für eine effiziente und dynamische Weiterleitung von Dokumenten. Durch die Nutzung der Logik der Entscheidungstabelle und der Prioritätswerte ermöglicht die Karte eine präzise Zuweisung an entweder einen Benutzer oder eine Gruppe und optimiert so Dokument-Workflows.

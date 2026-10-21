@@ -1,4 +1,4 @@
-# Assign to group
+# Einer Gruppe zuweisen
 
 <figure><img src="../../../../.gitbook/assets/image (304).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -12,8 +12,6 @@ Die Workflow-Karte **"Assign to Group"** ermöglicht die Zuweisung von Dokumente
    * **Beschreibung:** Gibt die **Gruppe** an, der das Dokument zugewiesen wird.
    * **Detail:** Wird aus einer Dropdown-Liste der verfügbaren **Gruppen** ausgewählt.
 
-
-
 ## **Zusätzliche Komponenten in Version 3**
 
 1. **Entscheidungsbaum (nur Version 3)**
@@ -24,7 +22,7 @@ Die Workflow-Karte **"Assign to Group"** ermöglicht die Zuweisung von Dokumente
 
 ## Funktionalität:
 
-* **Bedingungsauswertung:** Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+* **Bedingungsauswertung:** Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Dokumentzuweisung:** Weist das Dokument der ausgewählten **Gruppe** zu. In **Version 3** bestimmt der **Entscheidungsbaum** die Zielgruppe dynamisch, sofern aktiviert.
 
 ## Einrichtung und Konfiguration:

@@ -4,15 +4,21 @@
 
 ***
 
-Ten wzorzec budujesz w **Kreator przepływu pracy** (Workflow Dashboard → Workflow List → Add Workflow). Kliknij **Dodaj kartę**, aby otworzyć bibliotekę kart, i wybierz karty używane przez ten wzorzec — `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` oraz `CONDITION_TASK_STATUS` (kategoria **Osoba przypisana** zawiera karty zadań i przypisań):
+<!-- workflow-card-task-pattern-scope-20261022 -->
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
+**Zweryfikowany zakres:** Jest to koncepcyjny wzorzec koordynacji, a nie konfiguracja przepływu pracy gotowa do importu. W zweryfikowanej bibliotece `tasks_create` należy do kategorii **Zadanie**, `doc_user_assign` do **Osoba przypisana**, a `action_send_email_to_groups` do **E-mail**.
+
+Wcześniejsze nazwy `ACTION_ASSIGN_TO_USER` i `CONDITION_TASK_STATUS` są oznaczeniami poglądowymi, a nie zarejestrowanymi kartami dostępnymi do wyboru w tej bibliotece. Poniższy JSON jest schematem. Samo utworzenie zadania nie wstrzymuje przepływu pracy ani nie konfiguruje jego automatycznego wznowienia. Kierowanie po zakończeniu zadania, oczekiwanie i eskalacja wymagają oddzielnej konfiguracji i weryfikacji.
+
+[Aktualne karty zadań](../then/task/README.md) · [Zabezpieczenia eksportu i oczekujące zadania](../cards-overview/export-cards-guide.md).
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-pl.png" alt="Widok biblioteki kart. Tworzenie zadań, przypisywanie dokumentów i wiadomości do grup należą do różnych kategorii; wybierz wersję dostępną w swojej organizacji. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Widok biblioteki kart. Tworzenie zadań, przypisywanie dokumentów i wiadomości do grup należą do różnych kategorii; wybierz wersję dostępną w swojej organizacji. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
 ***
 
 ## Przegląd wzorca
 
-Ten wzorzec pokazuje, jak tworzyć, przypisywać, śledzić i zarządzać zadaniami w workflow DocBits. Zadania to wykonalne kroki pracy przypisywane użytkownikom lub grupom, które muszą zostać ukończone, zanim workflow dokumentu będzie mógł być kontynuowany.
+Ten wzorzec ilustruje tworzenie i przypisywanie zadań oraz powiadamianie odbiorców. Kroki po zakończeniu zadania opisują projekt docelowy; utworzenie zadania samo w sobie nie jest operacją oczekiwania.
 
 **Co robi ten wzorzec:**
 
@@ -127,6 +133,8 @@ Currency: EUR
 
 **Konfiguracja:**
 
+**Schematyczny JSON:** Wyłącznie ilustracja struktury; nie importuj go jako wykonywalnego przepływu pracy.
+
 ```json
 {
   "task_type": "Approval",
@@ -159,6 +167,8 @@ Currency: EUR
 
 **Zadanie 1: Zatwierdzenie przez kierownika**
 
+**Schematyczny JSON:** Wyłącznie ilustracja struktury; nie importuj go jako wykonywalnego przepływu pracy.
+
 ```json
 {
   "task_type": "First Approval",
@@ -173,6 +183,8 @@ Currency: EUR
 ```
 
 **Zadanie 2: Zatwierdzenie przez dyrektora (tworzone po ukończeniu zadania 1)**
+
+**Schematyczny JSON:** Wyłącznie ilustracja struktury; nie importuj go jako wykonywalnego przepływu pracy.
 
 ```json
 {
@@ -231,6 +243,8 @@ User 3: CFO (only if User 2 approves)
 **Karta:** ACTION\_SEND\_EMAIL\_TO\_GROUPS
 
 **Konfiguracja:**
+
+**Schematyczny JSON:** Wyłącznie ilustracja struktury; nie importuj go jako wykonywalnego przepływu pracy.
 
 ```json
 {
@@ -445,6 +459,8 @@ INVOICE ARRIVES
 
 ### Szablon 1: Proste zadanie zatwierdzenia
 
+**Schematyczny JSON:** Wyłącznie ilustracja struktury; nie importuj go jako wykonywalnego przepływu pracy.
+
 ```json
 {
   "card": "tasks_create",
@@ -461,6 +477,8 @@ INVOICE ARRIVES
 
 ### Szablon 2: Zadanie przeglądu ze szczegółami
 
+**Schematyczny JSON:** Wyłącznie ilustracja struktury; nie importuj go jako wykonywalnego przepływu pracy.
+
 ```json
 {
   "card": "tasks_create",
@@ -476,6 +494,8 @@ INVOICE ARRIVES
 ***
 
 ### Szablon 3: Zadanie eskalacji
+
+**Schematyczny JSON:** Wyłącznie ilustracja struktury; nie importuj go jako wykonywalnego przepływu pracy.
 
 ```json
 {

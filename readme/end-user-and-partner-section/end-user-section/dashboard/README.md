@@ -12,6 +12,14 @@ As funções disponíveis dependem das suas permissões, do estado do documento 
 
 <figure><img src="../../../.gitbook/assets/dashboard-overview-pt.png" alt="O painel atual com pesquisa, ferramentas, vistas guardadas, tipos de documento e tabela. Os valores dos documentos estão ocultos para proteger os dados."><figcaption><p>O painel atual com pesquisa, ferramentas, vistas guardadas, tipos de documento e tabela. Os valores dos documentos estão ocultos para proteger os dados.</p></figcaption></figure>
 
+## Visita completa ao painel
+
+A cliente fictícia de Lisboa mostra a pesquisa combinada com AND, os filtros de estado, a ajuda de pesquisa, as definições das colunas, as estatísticas e a atualização. A interface portuguesa foi gravada no DocBits com dados de teste sintéticos. A personagem e a voz foram geradas por IA.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/pt.mp4" %}
+
+[Abrir o leitor com legendas](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/pt.html) · [Legendas em português (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/pt.vtt) · [Transcrição](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/pt.txt)
+
 ## Começar o trabalho diário
 
 1. Confirme a organização ativa e, se disponível, a suborganização.

@@ -1,71 +1,73 @@
-# Then
+# 则
 
-**Then** 卡片会告诉工作流在 **When** 触发条件和所有 **And** 条件满足后要执行什么操作。在 **Workflow Builder** 中，选择 **Then...** 下方的 **Add Card**。在左侧选择一个类别，或在 **Search Card** 中输入名称。选择卡片预览以添加卡片，填写卡片上显示的字段，然后保存工作流。在选择器中滚动可查看更多卡片。选择 **×** 可关闭选择器而不添加卡片。有关完整顺序，请参阅 [Workflow](../../)。
+**则** 卡告诉工作流程在其 **当** 触发器和任何 **且** 条件之后要做什么。在**工作流程生成器**中，选择**然后...**下的**添加卡**。在左侧选择类别或在**搜索卡**中输入名称。选择卡片预览进行添加，填写卡片上显示的字段，然后保存工作流程。在选择器内滚动以查看更多卡片。选择**×**将其关闭而不添加卡片。完整序列请参见[工作流程](../..)]。
 
-下方的预览展示了可用操作，而不是已完成的设置。请选择与预期结果相符的操作。
+下面的预览显示了可用的操作，而不是已完成的设置。选择与您想要的结果相匹配的操作。
 
 ## 文档字段
 
-设置或反转复选框、在字段中填入文本，或将一个字段的内容复制到另一个字段。选择卡片要求的字段名称和值。请参阅 [Document Field](document-field/)。
+设置或反转复选框、将文本放入字段或将一个字段复制到另一个字段。选择卡请求的字段名称和值。请参阅[文档字段](document-field)。
 
-<figure><img src="../../../../.gitbook/assets/then-category-document-field-en.png" alt="英文 Then 卡片选择器，已选中 Document Field；预览展示复选框、文本和复制字段操作。"><figcaption><p>更改字段或复制字段内容。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-c9741b344fe2-zh.png" alt="所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
-## 文档
+## 文件
 
-当工作流需要作出相应决定时，选择 **Approve the Document** 或 **Reject the Document**。如果审批应取决于某项检查，请先使用 **And** 条件。请参阅 [Document](document/)。
+当工作流程应做出决定时，选择**批准文档**或**拒绝文档**。如果批准应取决于检查，请首先使用 **且** 条件。请参阅[文档](document)。
 
-<figure><img src="../../../../.gitbook/assets/then-category-document-en.png" alt="英文 Then 卡片选择器，已选中 Document；可见 Approve the Document 和 Reject the Document 预览。"><figcaption><p>审批或拒绝当前文档。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-ed7d5718f538-zh.png" alt="所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ## 逻辑
 
-使用这些卡片在数字、文本和布尔格式之间转换值，或从 JSON 读取值。在所选卡片上选择输入字段和输出字段。
+使用这些卡在数字、文本和布尔格式之间转换值，或从 JSON 读取值。选择所选卡上的输入和输出字段。
 
-<figure><img src="../../../../.gitbook/assets/then-category-logic-en.png" alt="英文 Then 卡片选择器，已选中 Logic；可见预览展示数据类型转换和从 JSON 读取值的操作。"><figcaption><p>转换值，以便在后续工作流步骤中使用。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-e019409102f9-zh.png" alt="所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ## 状态
 
-选择 **Change Status** 将文档更改为指定状态。此卡片也可以触发另一个工作流。请参阅 [Status](status/)。
+选择**更改状态**将文档移动到选定状态。该卡还可以触发另一个工作流程。请参阅[状态](status)。
 
-<figure><img src="../../../../.gitbook/assets/then-category-status-en.png" alt="英文 Then 卡片选择器，已选中 Status；Change Status 预览中包含状态字段和可选的工作流触发设置。"><figcaption><p>将文档转为另一种状态。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-e5662026a68c-zh.png" alt="所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
-## 提示词和脚本
+## 提示和脚本
 
-选择此类别以运行 DocOperator 提示词脚本。选择脚本以及卡片要求的变量。卡片还提供重试等执行设置。
+选择此类别可运行 DocOperator 提示脚本。选择卡请求的脚本和变量。该卡还提供重试等执行设置。
 
-<figure><img src="../../../../.gitbook/assets/then-category-prompts-scripts-en.png" alt="英文 Then 卡片选择器，已选中 Prompts and Scripts；可见一个 DocOperator 提示词脚本预览。"><figcaption><p>运行已配置的 DocOperator 提示词脚本。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-f9dd7edcbb47-zh.png" alt="所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ## 导出
 
-启动导出、使用所选配置导出，或将最终导出加入队列。选择卡片上显示的导出配置和待处理任务选项。请参阅 [Export](export/)。
+开始导出、使用所选配置导出或对最终导出进行排队。选择卡上显示的导出配置和待处理任务选项。请参阅[导出](export)。
 
-<figure><img src="../../../../.gitbook/assets/then-category-export-en.png" alt="英文 Then 卡片选择器，已选中 Export；预览展示启动导出、按配置导出、排队导出和其他导出操作。"><figcaption><p>选择文档导出的时机和方式。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-11f244132c25-zh.png" alt="所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ## 任务
 
-创建任务或通知，并将其分配给用户或群组。填写卡片要求的标题、描述、优先级和通知设置。有些卡片会按顺序分配。请参阅 [Task](task/)。
+创建任务或通知并将其分配给用户或组。输入卡片请求的标题、描述、优先级和通知设置。有些卡按顺序分配。请参阅[任务](task)。
 
-<figure><img src="../../../../.gitbook/assets/then-category-task-en.png" alt="英文 Then 卡片选择器，已选中 Task；可见预览用于创建任务或通知，以及分配任务。"><figcaption><p>为个人或群组创建后续工作。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-45efe5c84c12-zh.png" alt="所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ## 电子邮件
 
-使用所选模板向收件人或群组发送电子邮件。在卡片上选择模板和发送对象。
+使用选定的模板向收件人或群组发送电子邮件。选择卡上的模板和目的地。
 
-<figure><img src="../../../../.gitbook/assets/then-category-email-en.png" alt="英文 Then 卡片选择器，已选中 Email；预览展示向收件人或群组发送模板邮件。"><figcaption><p>发送模板邮件。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-1fa958085397-zh.png" alt="所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
-## 表格
+## 表
 
-更改文档表格中的条目或计算数值。选择卡片要求的表格、列、运算符和结果列。请参阅 [Table](table/)。
+更改文档表中的条目或计算值。选择卡请求的表、列、运算符和结果列。参见[表](table)。
 
-<figure><img src="../../../../.gitbook/assets/then-category-table-en.png" alt="英文 Then 卡片选择器，已选中 Table；预览展示更改条目和计算结果列的操作。"><figcaption><p>更新或计算表格数据。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-e25e69c2b11c-zh.png" alt="所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
-## 受分配人
+## 分配对象
 
-将文档分配给用户、群组、收件人或子组织。有些卡片会使用字段或决策表，并提供回退选项。在所选卡片上选择合适的目标对象和回退选项。请参阅 [Assignee](assignee/)。
+将文档分配给用户、组、收件人或子组织。有些卡使用字段或决策表并提供后备。选择正确的目的地并在所选卡上进行后备。请参阅[分配对象](assignee)。
 
-<figure><img src="../../../../.gitbook/assets/then-category-assignee-en.png" alt="英文 Then 卡片选择器，已选中 Assignee；可见预览用于将文档分配给用户、收件人、群组或供应商联系人。"><figcaption><p>将文档路由给下一位负责人员或群组。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-aa4f244a25b3-zh.png" alt="所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
-## 操作
+## 行动
 
-运行另一个工作流、发送 HTTPS 请求、调用 API，或使用成本增加计算卡片。这些操作可能会影响其他系统；请咨询管理员，了解应使用的端点和设置。请参阅 [Action](action/)。
+运行另一个工作流、发送 HTTPS 请求、调用 API 或使用成本增加计算卡。这些操作可能会影响其他系统；询问您的管理员要使用哪个端点和设置。请参阅[操作](action)。
 
-<figure><img src="../../../../.gitbook/assets/then-category-action-en.png" alt="英文 Then 卡片选择器，已选中 Action；预览展示 Run workflow、HTTPS request、API call 和 cost increase calculation。"><figcaption><p>启动另一个工作流或集成操作。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-585799ec1e01-zh.png" alt="所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
+
+[详细的逻辑卡字段、JSON 路径、触发器和测试](../logic-cards-guide.md)。

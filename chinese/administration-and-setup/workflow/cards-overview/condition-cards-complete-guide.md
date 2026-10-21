@@ -6,9 +6,9 @@
 
 ***
 
-本页中的条件卡片位于工作流构建器的 **When** 和 **And** 组中，用于决定是否运行 Then 操作：
+本页中的条件卡片位于工作流构建器的 **当** 和 **且** 组中，用于决定是否运行 Then 操作：
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="工作流构建器画布，包含 When、And 和 Then 卡片组"><figcaption><p>通过 <strong>Add Card</strong> 将条件卡片添加到 <strong>When</strong> 和 <strong>And</strong> 组。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-zh.png" alt="包含“当”“且”和“则”卡片的未保存示例。执行前请配置所有占位字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>包含“当”“且”和“则”卡片的未保存示例。执行前请配置所有占位字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ***
 
@@ -18,7 +18,7 @@
 
 **注意：**某些采购订单比较条件卡片有多个版本。请参考本指南了解当前行为，并参考下方发行说明了解已发布的变更。
 
-📖 [产品发行说明](../../../overview-and-basics/release-notes/) | [采购订单匹配指南](po-matching-complete-guide.md)
+📖 [产品发行说明](../../../overview-and-basics/release-notes) | [采购订单匹配指南](po-matching-complete-guide.md)
 
 ***
 
@@ -710,22 +710,22 @@
 
 | 卡片                                        | 检查内容       | 运算符        | 用途           |
 | ------------------------------------------- | -------------- | ------------- | -------------- |
-| CONDITION\_DOC\_STATUS\_IS\_ISNOT           | 文档状态       | IS / IS NOT   | 阶段检查       |
-| CONDITION\_DOC\_STATUS\_IS\_ISNOT\_IN\_LIST | 列表中的状态   | IN / NOT IN   | 多个状态       |
-| CONDITION\_DOC\_TYPE\_IS\_ISNOT             | 文档类型       | IS / IS NOT   | 类型筛选       |
-| CONDITION\_DOC\_TYPE\_IS\_ISNOT\_LIST       | 列表中的类型   | IN / NOT IN   | 多种类型       |
-| CONDITION\_SUB\_ORG\_IS\_ISNOT              | 组织           | IS / IS NOT   | 部门检查       |
-| CONDITION\_USER\_IS\_ISNOT                  | 受派用户       | IS / IS NOT   | 用户检查       |
-| CONDITION\_USER\_IS\_ISNOT\_IN\_LIST        | 列表中的用户   | IN / NOT IN   | 多个用户       |
-| CONDITION\_GROUP\_IS\_ISNOT                 | 受派用户组     | IS / IS NOT   | 用户组检查     |
-| CONDITION\_GROUP\_IS\_ISNOT\_IN\_LIST       | 列表中的用户组 | IN / NOT IN   | 多个用户组     |
-| CONDITION\_TIME\_IS\_ISNOT\_BETWEEN         | 日期范围       | BETWEEN       | 日期区间       |
-| CONDITION\_TODAY\_IS\_ISNOT                 | 今天的日期     | IS / IS NOT   | 今日检查       |
-| CONDITION\_DECISION\_TREE\_DATA             | 决策表返回值   | HAS / HAS NOT | 决策表结果检查 |
+| CONDITION\_DOC\_STATUS\_IS\_ISNOT           | 文档状态       | 是/不是   | 阶段检查       |
+| CONDITION\_DOC\_STATUS\_IS\_ISNOT\_IN\_LIST | 列表中的状态   | 进入/不进入   | 多个状态       |
+| CONDITION\_DOC\_TYPE\_IS\_ISNOT             | 文档类型       | 是/不是   | 类型筛选       |
+| CONDITION\_DOC\_TYPE\_IS\_ISNOT\_LIST       | 列表中的类型   | 进入/不进入   | 多种类型       |
+| CONDITION\_SUB\_ORG\_IS\_ISNOT              | 组织           | 是/不是   | 部门检查       |
+| CONDITION\_USER\_IS\_ISNOT                  | 受派用户       | 是/不是   | 用户检查       |
+| CONDITION\_USER\_IS\_ISNOT\_IN\_LIST        | 列表中的用户   | 进入/不进入   | 多个用户       |
+| CONDITION\_GROUP\_IS\_ISNOT                 | 受派用户组     | 是/不是   | 用户组检查     |
+| CONDITION\_GROUP\_IS\_ISNOT\_IN\_LIST       | 列表中的用户组 | 进入/不进入   | 多个用户组     |
+| CONDITION\_TIME\_IS\_ISNOT\_BETWEEN         | 日期范围       | 之间       | 日期区间       |
+| CONDITION\_TODAY\_IS\_ISNOT                 | 今天的日期     | 是/不是   | 今日检查       |
+| CONDITION\_DECISION\_TREE\_DATA             | 决策表返回值   | 有/没有 | 决策表结果检查 |
 | CONDITION\_CONTINUE\_CHANCE                 | 概率           | CHANCE        | 随机门控       |
-| CONDITION\_MODULE\_IS\_ISNOT\_ACTIVE        | 功能是否启用   | IS / IS NOT   | 功能检查       |
+| CONDITION\_MODULE\_IS\_ISNOT\_ACTIVE        | 功能是否启用   | 是/不是   | 功能检查       |
 | CONDITION\_HTTPS\_REQUEST\_STATUS           | 请求结果       | STATUS        | 响应检查       |
-| CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT      | 供应商状态     | IS / IS NOT   | 供应商检查     |
+| CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT      | 供应商状态     | 是/不是   | 供应商检查     |
 
 ***
 
@@ -769,3 +769,23 @@
 * **CONDITION\_DOC\_FIELD\_CONTAINS** - 字段内容检查
 * **CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES** - 字段比较
 * **CONDITION\_CHECKBOX\_IS** - 复选框检查
+
+<!-- workflow-card-complete-example-20261021 condition_purchase_order_import -->
+
+### 采购订单导入触发示例
+
+**配置：** 在“何时”下选择新采购订单导入事件 (`wf_new_purchase_order`) 并保留更新事件 (`wf_updated_purchase_order`) 未选中。为此独立于文档的工作流上下文配置后续操作。
+
+**预期结果及反例：**新导入的采购订单触发的运行满足该条件。仅由更新触发的运行则不会。选择这两个事件允许任一事件。这会检查工作流触发器信息，而不检查发票当前是否包含采购订单编号。
+
+这是一个说明性的测试配置和预期结果；它没有被执行。使用测试组织中配置的数据和收件人。
+
+<!-- workflow-card-complete-example-20261021 condition_supplier_status_is_isnot -->
+
+### 供应商状态变更触发示例
+
+**配置：** 在“当”分组中选择运算符 `is`，再选择贵组织实际提供的一个目标状态。本例将其记作状态 A，另一个可用状态 B 不加入列表。
+
+**预期结果及反例：**对于新状态为A的供应商状态变更事件，条件成立；对于新状态为 B 的事件，它为 false。使用运算符 `is not`，这些结果会反转。这是基于工作流程运行信息的事件触发器，而不是对发票上的供应商状态的一般检查。确认日志中的实际事件和所选状态。
+
+这是一个说明性的测试配置和预期结果；它没有被执行。使用测试组织中配置的数据和收件人。

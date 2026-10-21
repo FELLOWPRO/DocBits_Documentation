@@ -4,9 +4,9 @@
 
 ***
 
-在 **Workflow Builder**（Workflow Dashboard → Workflow List → Add Workflow）中构建此模式。点击 **Add Card**，打开 **Document Field** 类别——此类别包含该模式串联使用的读取、写入、计算和格式化卡片：
+在 **工作流程生成器**（Workflow Dashboard → Workflow List → Add Workflow）中构建此模式。点击 **添加卡**，打开 **文档字段** 类别——此类别包含该模式串联使用的读取、写入、计算和格式化卡片：
 
-<figure><img src="../../../../.gitbook/assets/workflow_add_card_picker.png" alt="Workflow Builder 中按类别分组的 Add Card 卡片库"><figcaption><p><strong>Add Card</strong> 卡片库——字段读取/写入、计算和格式化卡片位于 <strong>Document Field</strong> 类别下。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-zh.png" alt="所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ***
 
@@ -129,7 +129,7 @@
 * 从发票中提取行项目
 * 计算行项目总额（数量 × 价格）
 * 计算小计（行项目总额之和）
-* 计算税额（小计 × 税率）
+* 计算税额（小计 × `Tax_Rate`）
 * 计算总计（小计 + 税额）
 * 如果发票使用其他货币，则换算为 EUR
 * 将金额格式化为 2 位小数
@@ -344,7 +344,7 @@ Exchange_Rate_To_EUR = 0.92
 存储到：Grand_Total_EUR
 ```
 
-**指南参考：** [API 集成模式 - 货币换算](api-integration-pattern.md#currency-conversion-example)
+**指南参考：** [API 集成模式 - 货币换算](api-integration-pattern.md)
 
 ***
 
@@ -880,8 +880,8 @@ ELSE:
 ### 相关卡片
 
 * **ACTION\_CALCULATE\_FIELD** - [字段操作指南](../field-manipulation-guide.md)
-* **ACTION\_SET\_FIELD\_TO\_TEXT** - [字段操作指南](../field-manipulation-guide.md#set-field)
-* **ACTION\_COPY\_FIELD\_VALUE** - [字段操作指南](../field-manipulation-guide.md#copy-field)
+* **ACTION\_SET\_FIELD\_TO\_TEXT** - [字段操作指南](../field-manipulation-guide.md)
+* **ACTION\_COPY\_FIELD\_VALUE** - [字段操作指南](../field-manipulation-guide.md)
 * **CALL\_API** - [Call API 指南](../call-api-guide.md)
 * **CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES** - [条件卡片指南](../condition-cards-complete-guide.md)
 

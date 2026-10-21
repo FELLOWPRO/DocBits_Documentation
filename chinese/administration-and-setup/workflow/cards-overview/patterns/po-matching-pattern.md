@@ -4,9 +4,9 @@
 
 ***
 
-您可以在 **Workflow Builder**（工作流仪表板 → 工作流列表 → 添加工作流）中构建此模式。点击 **Add Card**，然后打开 **Compare with Purchase Order** 类别——此类别包含此模式使用的所有匹配卡片（价格、数量、容差和行项目比较卡片）：
+您可以在 **工作流程生成器**（工作流仪表板 → 工作流列表 → 添加工作流）中构建此模式。点击 **添加卡**，然后打开 **与采购订单比较** 类别——此类别包含此模式使用的所有匹配卡片（价格、数量、容差和行项目比较卡片）：
 
-<figure><img src="../../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card 卡片库，显示 Compare with Purchase Order 卡片"><figcaption><p><strong>Compare with Purchase Order</strong> 类别——此模式中使用的价格、数量、容差和行项目匹配卡片。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-zh.png" alt="所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ***
 
@@ -303,7 +303,7 @@ IF 完全匹配 = FALSE：
 总体结果：未通过（一个或多个行项目未通过）
 ```
 
-**指南参考：** [PO 匹配完整指南 - 单价](../po-matching-complete-guide.md#unit-price-comparison)
+**指南参考：** [PO 匹配完整指南 - 单价](../po-matching-complete-guide.md)
 
 ***
 
@@ -355,7 +355,7 @@ IF 完全匹配 = FALSE：
   结果：未通过 ❌（升级处理）
 ```
 
-**指南参考：** [PO 匹配完整指南 - 数量](../po-matching-complete-guide.md#quantity-comparison)
+**指南参考：** [PO 匹配完整指南 - 数量](../po-matching-complete-guide.md)
 
 ***
 
@@ -408,7 +408,7 @@ IF 完全匹配 = FALSE：
 
 **配置：**
 
-**字段 1：PO\_Match\_Status**
+**字段1：PO\_Match\_Status**
 
 ```
 字段：PO_Match_Status
@@ -432,7 +432,7 @@ IF 完全匹配 = FALSE：
 格式："2.0%"（示例）
 ```
 
-**字段 4：Match\_Details**
+**字段4：Match\_Details**
 
 ```
 字段：Match_Details
@@ -997,10 +997,10 @@ IF PO_Type = "Blanket":
 
 ### 相关卡片
 
-* **PURCHASE\_ORDER\_FULL\_MATCH** - [PO 匹配指南](../po-matching-complete-guide.md#full-match)
-* **CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE** - [PO 匹配指南](../po-matching-complete-guide.md#unit-price)
-* **CONDITION\_DOC\_TO\_PO\_QUANTITY** - [PO 匹配指南](../po-matching-complete-guide.md#quantity)
-* **CONDITION\_DOC\_TO\_PO\_TAX\_LINES** - [PO 匹配指南](../po-matching-complete-guide.md#tax-lines)
+* **PURCHASE\_ORDER\_FULL\_MATCH** - [PO 匹配指南](../po-matching-complete-guide.md)
+* **CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE** - [PO 匹配指南](../po-matching-complete-guide.md)
+* **CONDITION\_DOC\_TO\_PO\_QUANTITY** - [PO 匹配指南](../po-matching-complete-guide.md)
+* **CONDITION\_DOC\_TO\_PO\_TAX\_LINES** - [PO 匹配指南](../po-matching-complete-guide.md)
 * **tasks\_create** - [任务分配指南](../task-assignment-guide.md)
 
 ### 后续步骤

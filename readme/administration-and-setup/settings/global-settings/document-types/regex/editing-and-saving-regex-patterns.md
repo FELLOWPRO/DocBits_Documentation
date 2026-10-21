@@ -1,10 +1,10 @@
 # Bearbeiten und Speichern von Regex-Mustern
 
-## Anleitung zum Ändern bestehender Muster und die Bedeutung des Testens dieser Änderungen, um sicherzustellen, dass sie wie erwartet funktionieren, ohne bestehende Funktionen zu beeinträchtigen.
+## Bestehende Muster sicher ändern
+
+Der frühere Regex-Link auf der Dokumenttypkarte ist in der aktuellen Oberfläche nicht mehr vorhanden. Prüfen Sie zunächst mit Ihrer Administration den für Ihre Version verfügbaren Konfigurationsweg.
 
 **Um bestehende Regex-Muster zu bearbeiten und sicherzustellen, dass die Änderungen wie erwartet funktionieren, ohne bestehende Funktionen zu beeinträchtigen, können Sie sich an der folgenden Anleitung orientieren:**
-
-<figure><img src="../../../../../.gitbook/assets/docbits_regex_edit_settings.png" alt="Docbits Regex Edit Settings"><figcaption><p>Einstellungen: Belegtyp</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/docbits_regex_pattern_analysis.png" alt="Docbits Regex Pattern Analysis"><figcaption></figcaption></figure>
 

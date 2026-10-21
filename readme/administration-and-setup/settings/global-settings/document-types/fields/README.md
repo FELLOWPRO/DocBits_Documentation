@@ -1,6 +1,6 @@
 # Fields
 
-<figure><img src="../../../../../.gitbook/assets/docbits_fields_overview.png" alt="Docbits Fields Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_fields_overview-de.png" alt="Deutsche Feldübersicht für den Dokumenttyp Rechnung."><figcaption><p>Deutsche Feldübersicht für den Dokumenttyp Rechnung.</p></figcaption></figure>
 
 ## Overview
 

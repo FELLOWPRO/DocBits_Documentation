@@ -38,11 +38,16 @@ Ein Nettobetrag, der **größer** als der Positionsgesamtbetrag ist, kann kein N
 Der berechnete Preis wird in den Bestell-Snapshot geschrieben, der im Dokument gespeichert ist, und er wird **jedes Mal neu berechnet, wenn das Dokument abgeglichen wird** (Auto PO Match, manueller Abgleich, Abgleich beim Speichern). Ein Dokument, das vor der Änderung der Einstellung abgeglichen wurde, übernimmt daher den neuen Preis beim nächsten Abgleich — ein Neuladen der Bestellung ist nicht erforderlich.
 {% endhint %}
 
-## Beispiel:
+## Rechenbeispiel
 
-<figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_4.png" alt="" width="563"><figcaption></figcaption></figure>
+Bei einer Menge von 9 und einem Nettopositionsbetrag von 879,84 ergibt sich für „Stückpreis pro = 1“:
 
-In diesem Fall wird der Stückpreis (ohne Rabatt) aus dem Dokument entnommen, während die Bestellung im ERP den Stückpreis mit angewendetem Rabatt speichert. Dies führt zu einer Abweichung im Stückpreis. Mit aktivierter Einstellung wird der Stückpreis stattdessen aus dem Positionsbetrag und der Menge entnommen, sodass beide Seiten übereinstimmen.
+| Grundlage | Rechnung | Stückpreis |
+| --- | --- | --- |
+| Nettobetrag | 879,84 ÷ 9 × 1 | 97,76 |
+| Gesamtbetrag einschließlich 8,5 % Steuer | 954,63 ÷ 9 × 1 | 106,07 |
+
+Ein Vergleich mit einer netto bepreisten Rechnung benötigt in diesem Beispiel den Nettostückpreis 97,76.
 
 ## Verwandte Einstellungen
 

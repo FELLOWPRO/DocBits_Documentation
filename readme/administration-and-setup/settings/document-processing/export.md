@@ -12,7 +12,7 @@ Die Exportseite zeigt alle konfigurierten Exporteinstellungen an, einschließlic
 
 Sie finden es unter: **Einstellungen** → **Dokumentenverarbeitung** → **Export**
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_settings_menu_access.png)
+<figure><img src="../../../.gitbook/assets/s150-export_settings_menu_access-de.png" alt="Exportkonfiguration über die deutschen Einstellungen öffnen."><figcaption><p>Exportkonfiguration über die deutschen Einstellungen öffnen.</p></figcaption></figure>
 
 ## **Verwendung der Exportseite**
 
@@ -47,7 +47,10 @@ Es ist jedoch möglich:
 
 Um einen neuen Export zu erstellen:
 
-1. Klicken Sie auf die Schaltfläche **„Neu"**. ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_create_new_button.png)
+1. Klicken Sie auf die Schaltfläche **„Neu"**.
+
+<figure><img src="../../../.gitbook/assets/s150-export_create_new_button-de.png" alt="Entwurf einer neuen Exportkonfiguration mit dem Beispielnamen Beispiel-Rechnungsexport."><figcaption><p>Entwurf einer neuen Exportkonfiguration mit dem Beispielnamen Beispiel-Rechnungsexport.</p></figcaption></figure>
+
 2. Wählen Sie den **Exporttyp** aus, den Sie konfigurieren möchten (z. B. Infor, IDM, SFTP).
 3. Füllen Sie die erforderlichen Felder basierend auf dem Exporttyp aus.
 4. Speichern Sie die Konfiguration.
@@ -101,8 +104,6 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 
     * **Wann zu verwenden:** Nur wenn das empfangende System eine andere Struktur oder spezifische Formatierung erfordert, die vom DocBits-Standard abweicht.
     * **Leer lassen**, wenn das Standardexportformat den Anforderungen entspricht.
-
-
 
 **Erweiterte Einstellungen:**
 

@@ -22,7 +22,7 @@ Der Abschnitt **API-Schlüssel** oben auf der Seite listet jeden Key auf, den Ih
 
 ## Die Liste verstehen
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-list-row.png)
+<figure><img src="../../../../.gitbook/assets/s150-api-key-list-row-de.png" alt="API-Schlüsselliste mit ausgeblendeten Schlüsseln und Kontodaten."><figcaption><p>API-Schlüsselliste mit ausgeblendeten Schlüsseln und Kontodaten.</p></figcaption></figure>
 
 | Spalte | Was sie Ihnen sagt |
 | --- | --- |
@@ -52,12 +52,10 @@ Wenn Sie mehr Keys haben, als auf eine Seite passen, verwenden Sie die Blättere
 | **Beschreibung** | Optional. Platz für eine Notiz, wofür der Key da ist oder wer ihn eingerichtet hat. |
 | **Ablauf** | Wählen Sie ein Ablaufdatum oder belassen Sie es auf **Läuft nie ab**. Ein Ablaufdatum ist die sicherere Wahl: Der Key verabschiedet sich von selbst, falls die Integration einmal vergessen wird. |
 
-3. Klicken Sie auf **erstellen.**. DocBits zeigt Ihnen den neuen Key:
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-created.png)
+3. Klicken Sie auf **Erstellen**. Der vollständige neue Schlüssel wird einmalig angezeigt.
 
 4. Kopieren Sie den Key über das Kopiersymbol und fügen Sie ihn direkt in das System ein, das ihn verwenden wird, oder in Ihren Passwortmanager.
-5. Haken Sie **I have copied and saved this key** an und klicken Sie auf **Done**.
+5. Bestätigen Sie, dass Sie den Schlüssel kopiert und sicher gespeichert haben, und schließen Sie den Dialog.
 
 {% hint style="danger" %}
 **Der vollständige Key wird nur ein einziges Mal angezeigt.** DocBits speichert einen Einweg-Hash des Schlüssels und ein kurzes Präfix zur Identifizierung. Weder Ihre Administratoren noch der DocBits-Support können den ursprünglichen vollständigen Schlüssel aus diesem Hash abrufen. Wenn Sie ihn verlieren, widerrufen Sie ihn und erstellen Sie einen neuen.

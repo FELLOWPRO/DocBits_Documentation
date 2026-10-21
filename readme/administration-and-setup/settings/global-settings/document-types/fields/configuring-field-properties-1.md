@@ -2,7 +2,7 @@
 
 Verwenden Sie **Settings → Document Types → Fields**, um zu steuern, wie sich Felder für einen Dokumenttyp verhalten. Wählen Sie zuerst den Dokumenttyp aus; das folgende Beispiel zeigt **Invoice** in der englischen Oberfläche.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc155-field-properties-overview-en.png" alt="Englische Invoice-Feldeinstellungen mit Erkennungsschwellenwerten, Suche, Spalten für Feldeigenschaften und Save Settings"><figcaption>Invoice-Feldeinstellungen in einer DocBits-Sandbox-Organisation.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-dbdc155-field-properties-overview-de.png" alt="Deutsche Feldeinstellungen mit Pflichtfeld, Schreibschutz, Sichtbarkeit und Überprüfung."><figcaption><p>Deutsche Feldeinstellungen mit Pflichtfeld, Schreibschutz, Sichtbarkeit und Überprüfung.</p></figcaption></figure>
 
 ## Ein Feld finden und seine Eigenschaften ändern
 
@@ -10,7 +10,7 @@ Verwenden Sie **Settings → Document Types → Fields**, um zu steuern, wie sic
 2. Suchen Sie die Zeile des Feldes. **Invoice number** hat zum Beispiel den technischen Namen `invoice_id`.
 3. Passen Sie die Steuerelemente in dieser Zeile an und wählen Sie dann **Save Settings**. Dieselbe Speichern-Schaltfläche steht oberhalb und unterhalb der Tabelle zur Verfügung.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc155-field-properties-filtered-en.png" alt="Englisches Invoice-number-Feld mit den Steuerelementen Required, Read Only, Hidden, Force Validation, Use AI, OCR und Match Score"><figcaption>Die Zeile Invoice number nach der Suche nach `invoice_id`.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-dbdc155-field-properties-filtered-de.png" alt="Feldeinstellungen nach invoice_id gefiltert; OCR und Match Score bleiben sichtbar."><figcaption><p>Feldeinstellungen nach invoice_id gefiltert; OCR und Match Score bleiben sichtbar.</p></figcaption></figure>
 
 | Steuerelement | Wofür es verwendet wird |
 | --- | --- |

@@ -1,5 +1,7 @@
 # Zuweisung & Status — Praxisbeispiele
 
+Die neuen Abbildungen zeigen ungespeicherte Entwürfe der jeweiligen Aktion. Rollen und Bedingungen in den Beispielen sind an die eigene Organisation anzupassen.
+
 Um den Überblick zu behalten, können Sie den Workflows verschiedene Überschriften geben, damit Sie sofort erkennen, worum es bei diesem Workflow geht.
 
 Erstellen Sie einen neuen Workflow: Klicken Sie auf + ADD WORKFLOW
@@ -16,31 +18,31 @@ Wenn eine Rechnung oder ein anderes Dokument einen bestimmten Gesamtbetrag über
 
 **Test 1: Logic Card**
 
-When: **Assignee is:** Amier Haider
+Wenn: **Zugewiesen an:** Eingangsprüfung
 
-And: **Document type is:** Invoice
+Und: **Dokumenttyp ist:** Invoice
 
-Then: **Assign document to:** Stefan Reppermund
+Dann: **Dokument zuweisen an:** Rechnungsprüfung
 
 ![](<../../.gitbook/assets/3 (1).png>)
 
 **Test 2: Logic Card**
 
-When: **Assignee is:** Amier Haider
+Wenn: **Zugewiesen an:** Eingangsprüfung
 
-And: **Document type is:** Delivery Note
+Und: **Dokumenttyp ist:** Delivery Note
 
-Then: **Assign document to:** James Edwards
+Dann: **Dokument zuweisen an:** Lieferscheinprüfung
 
 ![](<../../.gitbook/assets/4 (1).png>)
 
 **Test 3: Logic Card**
 
-**When:** **Assignee is:** Amier Haider
+**Wenn:** **Zugewiesen an:** Eingangsprüfung
 
-**And:** **Document type is:** Order Confirmation
+**Und:** **Dokumenttyp ist:** Order Confirmation
 
-**Then:** **Assign document to:** Anian Sollinger
+**Dann:** **Dokument zuweisen an:** Auftragsprüfung
 
 ![](<../../.gitbook/assets/5 (1).png>)
 
@@ -52,23 +54,23 @@ Für eine einfachere Übersicht darüber, was mit einem Dokument geschehen soll,
 
 **Test 4: Logic Card**
 
-**When:** **Document type is:** Delivery Note
+**Wenn:** **Dokumenttyp ist:** Delivery Note
 
-**And:** **Assignee is:** Amier Haider
+**Und:** **Zugewiesen an:** Eingangsprüfung
 
-**Then:** **Change Status to:** Pending Approval
+**Dann:** **Status ändern in:** Genehmigung ausstehend
 
-<figure><img src="../../.gitbook/assets/workflow_test4_delivery_note_status.png" alt="Workflow Test 4 Delivery Note Status"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test4_delivery_note_status-de.png" alt="Ungespeicherter Workflow-Entwurf zum Ändern eines Dokumentstatus."><figcaption><p>Ungespeicherter Workflow-Entwurf zum Ändern eines Dokumentstatus.</p></figcaption></figure>
 
 ![](<../../.gitbook/assets/8 (1).png>)
 
 **Test 5: Logic Card**
 
-When: **Document type is:** Invoice
+Wenn: **Dokumenttyp ist:** Invoice
 
-And: **Assignee is:** Stefan Reppermund
+Und: **Zugewiesen an:** Rechnungsprüfung
 
-Then: **Change Status to:** Pending Second Approval
+Dann: **Status ändern in:** Zweite Genehmigung ausstehend
 
 <figure><img src="../../.gitbook/assets/workflow_test5_invoice_approval_status.png" alt="Workflow Test 5 Invoice Approval Status"><figcaption></figcaption></figure>
 
@@ -80,11 +82,11 @@ Wenn eine Rechnung oder ein anderes Dokument einen bestimmten Gesamtbetrag über
 
 **Test 6: Logic Card**
 
-When: **Assignee is:** Amier Haider
+Wenn: **Zugewiesen an:** Eingangsprüfung
 
-And: Docfield **total\_amount** is **Greater than 500**
+Und: Docfield **total\_amount** is **Greater than 500**
 
-Then: **Assign document to:** Asad Usman Khan
+Dann: **Dokument zuweisen an:** Freigabeverantwortliche
 
 <figure><img src="../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Workflow Test 6 Total Amount Assign"><figcaption></figcaption></figure>
 
@@ -94,15 +96,15 @@ Es ist auch möglich, den Status in den Workflow einzutragen, sodass die zugewie
 
 **Test 7: Logic Card**
 
-**When:** **Assignee is:** Amier Haider
+**Wenn:** **Zugewiesen an:** Eingangsprüfung
 
-**And:** Docfield **total\_amount** is **Greater then 500**
+**Und:** Docfield **total\_amount** is **Greater then 500**
 
-**Then:** **Assign document to:** Asad Usman Khan
+**Dann:** **Dokument zuweisen an:** Freigabeverantwortliche
 
-**Change Status to:** Pending Approval
+**Status ändern in:** Genehmigung ausstehend
 
-<figure><img src="../../.gitbook/assets/workflow_test7_status_update.png" alt="Workflow Test 7 Status Update"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test7_status_update-de.png" alt="Statusänderung als Aktion in einem ungespeicherten Workflow-Entwurf."><figcaption><p>Statusänderung als Aktion in einem ungespeicherten Workflow-Entwurf.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -116,9 +118,9 @@ Der Workflow mit diesen Logic Cards ist darauf ausgelegt, automatisch zu überpr
 
 Sie können diesen Dokumenten einen bestimmten Status geben oder sie einem bestimmten Mitarbeiter zuweisen.
 
-<div align="center"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Workflow Test 9 Match Check Overview"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_overview-de.png" alt="Ungespeicherter Workflow-Entwurf mit einer Bestellabgleich-Aktion."><figcaption><p>Ungespeicherter Workflow-Entwurf mit einer Bestellabgleich-Aktion.</p></figcaption></figure></div>
 
-<figure><img src="../../.gitbook/assets/workflow_test9_match_check_detail.png" alt="Workflow Test 9 Match Check Detail"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_detail-de.png" alt="Workflow-Baustein für den Bestellabgleich im deutschen Auswahldialog."><figcaption><p>Workflow-Baustein für den Bestellabgleich im deutschen Auswahldialog.</p></figcaption></figure>
 
 **Logic Card: Quantity or Unit Price or Discount Match**
 

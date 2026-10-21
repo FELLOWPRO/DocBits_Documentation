@@ -13,4 +13,4 @@ DocBits Import-Tutorial: Dokumente hochladen, Drag & Drop + manuelle vs. automat
 * Nachdem die Dateien hochgeladen wurden, erhalten sie zunächst den Status „Running“. Während dieser Zeit wird der Upload verarbeitet, und eine Bearbeitung der Datei ist nicht möglich. Die Verarbeitungszeit kann je nach Größe und Komplexität der Datei variieren.
 * Sobald die Datei verarbeitet wurde, erhält sie den Status „Ready For Validation“. Sie können nun den Validierungsprozess starten.
 
-<figure><img src="../../../.gitbook/assets/manual-import1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-manual-import1-de.png" alt="Deutscher Dialog zum manuellen Dokumentimport."><figcaption><p>Deutscher Dialog zum manuellen Dokumentimport.</p></figcaption></figure>

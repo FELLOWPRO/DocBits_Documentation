@@ -29,7 +29,7 @@ Klicken Sie auf einer Karte auf **Felder**, um die Feldgruppen anzuzeigen. Oben 
 
 Jede Feldzeile enthält Steuerelemente wie **Required**, **Read Only**, **Hidden**, **Force Validation**, **Use AI**, OCR, Match Score und Formula. Lesen Sie die [Anleitung zu Feldern](../../settings/global-settings/document-types/fields/README.md), bevor Sie einzelne Werte ändern. Klicken Sie auf der Seite „Fields“ auf **Save Settings**, um Ihre Änderungen zu speichern.
 
-<figure><img src="../../../.gitbook/assets/document-types-invoice-fields-en-20260928.png" alt="Seite „Fields“ für Rechnungen mit Erkennungseinstellungen, Feldgruppen, Steuerelementen pro Feld und Save Settings"><figcaption><p>Die Seite „Fields“ hat eine eigene Schaltfläche „Save Settings“.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-document-types-invoice-fields-de.png" alt="Felder des Dokumenttyps Rechnung in der deutschen Verwaltung."><figcaption><p>Felder des Dokumenttyps Rechnung in der deutschen Verwaltung.</p></figcaption></figure>
 
 ## Benutzerdefinierten Dokumenttyp erstellen
 

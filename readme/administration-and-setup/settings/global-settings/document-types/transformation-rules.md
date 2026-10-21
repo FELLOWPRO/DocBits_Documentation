@@ -52,7 +52,7 @@ Regeln stammen wie bei den Validierungsregeln aus drei Quellen: **System default
 
 Klicken Sie auf **New rule**. Der Builder hat links drei Schritte und rechts eine **Live-Vorschau**. Oben fasst er die Regel in einem Satz zusammen, während Sie sie aufbauen.
 
-<figure><img src="../../../../.gitbook/assets/transformation-rule-scope.png" alt="Schritt 1 des Transformationsregel-Builders"><figcaption><p>Schritt 1: Was die Regel ändert. Der Satz oben beschreibt die Regel in einfacher Sprache</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-rule-scope-de.png" alt="Geltungsbereiche einer Transformationsregel: Kopf, Tabelle, Spalte und Dokument."><figcaption><p>Geltungsbereiche einer Transformationsregel: Kopf, Tabelle, Spalte und Dokument.</p></figcaption></figure>
 
 ### Schritt 1 — Was und wo
 
@@ -81,7 +81,7 @@ Zwei Optionen unter **Verarbeitungsoptionen** steuern, wie oft die Regel angewen
 
 ### Schritt 3 — Die Pipeline
 
-<figure><img src="../../../../.gitbook/assets/transformation-rule-pipeline.png" alt="Die Pipeline mit drei Schritten und die Live-Vorschau"><figcaption><p>Read → Trim → Change case → Affix → Write, mit dem Wert nach jedem Schritt in der Live-Vorschau</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-rule-pipeline-de.png" alt="Verarbeitungsschritte einer Transformationsregel im deutschen Editor."><figcaption><p>Verarbeitungsschritte einer Transformationsregel im deutschen Editor.</p></figcaption></figure>
 
 * **Read from** — **das Feld (oder die Spalte) selbst** oder **ein anderes Feld**. Wenn Sie aus einem anderen Feld lesen, können Sie ein Feld aus einem anderen befüllen, zum Beispiel die Bestellnummer aus einem Freitextfeld kopieren.
 * **Steps** — der Wert durchläuft die Schritte **von oben nach unten**; die Ausgabe eines Schritts ist die Eingabe des nächsten. Fügen Sie Schritte mit **+ Add a step** hinzu, ordnen Sie sie mit den Pfeilen neu an und entfernen Sie sie mit **✕**. Jeder Schritt zeigt rechts den Zwischenwert des Beispiels an.
@@ -140,13 +140,13 @@ Beispiel `  230620-03a ` → `INV-230620-03A`. Siehe den Screenshot der Pipeline
 
 Tabellenspalte **INVOICE_TABLE / UNIT** · stets · Trimmen → Map values `STK → PCE`, `KG → KGM`, `Std → HUR`, **Ignore case when matching** eingeschaltet, Wert ohne Treffer leer (Eingabe behalten).
 
-<figure><img src="../../../../.gitbook/assets/transformation-column-value-map.png" alt="Eine Tabellenspaltenregel mit Map values"><figcaption><p>Map values auf der Spalte UNIT: <code>stk</code> wird zu <code>PCE</code></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-column-value-map-de.png" alt="Wertzuordnung für eine Tabellenspalte im Transformationseditor."><figcaption><p>Wertzuordnung für eine Tabellenspalte im Transformationseditor.</p></figcaption></figure>
 
 ### Eine Gesamtzeile für einen Lieferanten, der auf den Gesamtbetrag abgeglichen wird
 
 Tabellenzeilen **INVOICE_TABLE** · nur wenn *Supplier ID is HP0000278* · Clear all rows → Add a row mit `POSITION` = Wert `001`, `QUANTITY` = Wert `1`, `NET_AMOUNT` = Feld *Total Net Amount*.
 
-<figure><img src="../../../../.gitbook/assets/transformation-add-row-columns.png" alt="Eine Regel für Tabellenzeilen: alle Zeilen löschen, dann eine Zeile hinzufügen"><figcaption><p>Drei extrahierte Zeilen werden durch eine Zeile mit dem Nettobetrag ersetzt</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-add-row-columns-de.png" alt="Ungespeicherter Transformationsschritt zum Hinzufügen einer Tabellenzeile."><figcaption><p>Ungespeicherter Transformationsschritt zum Hinzufügen einer Tabellenzeile.</p></figcaption></figure>
 
 Die Reihenfolge ist wichtig: **Clear all rows** muss **vor** **Add a row** stehen. Der Builder warnt Sie, wenn das nicht der Fall ist („Clear all rows runs after Add a row …“), und er warnt auch, wenn einem Schritt **Add a row** kein **Clear all rows** vorausgeht, weil die Regel dann bei jedem Speichern eine weitere Kopie der Zeile anhängen würde. Kombinieren Sie diese Regel mit einer Bestellabgleich-Regel „Match on total“, die für Ein-Zeilen-Dokumente aktiv ist.
 

@@ -18,7 +18,7 @@ Um die Erkennung von doppelten Dokumenten in **DocBits** zu aktivieren, befolgen
     <figure><img src="../../../../../.gitbook/assets/Calculate_PO_unit_price_2_de.png" alt=""><figcaption></figcaption></figure>
 3.  Gehen Sie zum Abschnitt **Erkennung von Duplikaten**.
 
-    <figure><img src="../../../../../.gitbook/assets/DuplicateDocument_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_3-de.png" alt="Deutsche Einstellungen zur Erkennung doppelter Dokumente."><figcaption><p>Deutsche Einstellungen zur Erkennung doppelter Dokumente.</p></figcaption></figure>
 
 DocBits bietet zwei Optionen zur Identifizierung doppelter Dokumente:
 
@@ -36,7 +36,7 @@ Sobald die **Erkennung von Duplikaten** aktiviert ist, stehen zwei Dropdown-Men�
 *   **Felder zur Erkennung von Duplikaten**\
     Wählen Sie die Felder aus, die zur Identifizierung von Duplikaten verwendet werden sollen (z. B. Lieferanten-ID, Datum, Rechnungsnummer usw.). Dokumente, die diesen Feldern entsprechen, werden als Duplikate gekennzeichnet.
 
-    <figure><img src="../../../../../.gitbook/assets/DuplicateDocument_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_4-de.png" alt="Feldauswahl für die Erkennung doppelter Dokumente."><figcaption><p>Feldauswahl für die Erkennung doppelter Dokumente.</p></figcaption></figure>
 *   **Intervall zur Duplikaterkennung**
 
     Verwenden Sie diese Einstellung, um den Zeitraum zu definieren, innerhalb dessen Duplikate erkannt werden. Dokumente, die innerhalb des ausgewählten Intervalls hochgeladen werden, werden anhand der ausgewählten Felder miteinander verglichen.
@@ -54,12 +54,13 @@ Sobald die **Erkennung von Duplikaten** aktiviert ist, stehen zwei Dropdown-Men�
 
 ## Anzeigen doppelter Dokumente im Dashboard
 
+Vergleichen Sie Rechnungsnummer, Lieferant, Datum und Betrag der betroffenen Dokumente. Die deutsche Warnleiste unten zeigt den Hinweis auf ein erkanntes Duplikat.
+
 Sobald die **Erkennung von Duplikaten** aktiviert ist, wird bei allen als Duplikate identifizierten Dokumenten ein Duplikatindikator-Symbol im Dashboard angezeigt.
 
 *   Klicken Sie auf dieses Symbol, um die übereinstimmenden Datensätze in einer nebeneinander angeordneten Split-Screen-Ansicht für einen einfachen Vergleich zu öffnen. \
     <mark style="color:red;">**Hinweis**</mark>: Das Symbol erscheint nur, wenn mindestens ein Duplikat für das Dokument erkannt wurde.
 
-    <figure><img src="../../../../../.gitbook/assets/DuplicateDocument_7.png" alt=""><figcaption></figcaption></figure>
 *   Beim Anzeigen eines gekennzeichneten Dokuments erscheint oben eine Warnleiste, die darauf hinweist, dass das Dokument ein Duplikat ist.
 
     <figure><img src="../../../../../.gitbook/assets/DuplicateDocument_5_de.png" alt=""><figcaption></figcaption></figure>

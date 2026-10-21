@@ -1,0 +1,1502 @@
+[
+  {
+    "id": "S001",
+    "doc": "readme/administration-and-setup/analytics-dashboard.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/analytics-dashboard",
+    "old": "analytics_dashboard_data_table.png",
+    "action": "replace",
+    "new": "s150-analytics_dashboard_data_table-de.png",
+    "sha256": "569b271a8b62c6a5a59dc28f6cac57cdc5b0d2f8e3b26a96644abbf71b96e0b9",
+    "new_sha256": "c078ec32149c3d80eb826b9d6c4d5d75e1f95a6881c50c528a1c122ee2e8aa4a"
+  },
+  {
+    "id": "S002",
+    "doc": "readme/administration-and-setup/analytics-dashboard.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/analytics-dashboard",
+    "old": "analytics_dashboard_filter_dimensions.png",
+    "action": "replace",
+    "new": "s150-analytics_dashboard_filter_dimensions-de.png",
+    "sha256": "838cb0e6f698f6628dfc3390d0c687dbd6a760bab0e107c8702ec6ebec9c09b9",
+    "new_sha256": "9f4c915736830a75c428527b4c5ae76605548b1c0834a488c901ae88305caf4c"
+  },
+  {
+    "id": "S003",
+    "doc": "readme/administration-and-setup/analytics-dashboard.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/analytics-dashboard",
+    "old": "analytics_dashboard_filter_flow_steps.png",
+    "action": "replace",
+    "new": "s150-analytics_dashboard_filter_flow_steps-de.png",
+    "sha256": "0e89e8088e9312ea728cd232a77b8cc89496fc37ab6a69c3599e1f4343ea9a6a",
+    "new_sha256": "73480a65eb3897bd09fdaba6ecd4e7ce9f7587c095e5d36a15b6ba7a178fdd9a"
+  },
+  {
+    "id": "S004",
+    "doc": "readme/administration-and-setup/analytics-dashboard.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/analytics-dashboard",
+    "old": "analytics_dashboard_filter_search.png",
+    "action": "replace",
+    "new": "s150-analytics_dashboard_filter_search-de.png",
+    "sha256": "026404915b3b1ad92ed62e8108f0a957b9d20c1e9cfa859ec82dba884060c2a4",
+    "new_sha256": "c50768a1a3a8364d540bb0ff2cec0a8a7e05277f7eaff951914bd7328eeb7d53"
+  },
+  {
+    "id": "S005",
+    "doc": "readme/administration-and-setup/analytics-dashboard.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/analytics-dashboard",
+    "old": "analytics_dashboard_filter_time_range.png",
+    "action": "replace",
+    "new": "s150-analytics_dashboard_filter_time_range-de.png",
+    "sha256": "68782c8b7918d943600c547fc95fb48b02ee134d4e06f19ac384d7ce5876f72c",
+    "new_sha256": "cc196ce5d05f035e9043c8852ece15524359b611db04e75fa97dfc0f860a8e10"
+  },
+  {
+    "id": "S006",
+    "doc": "readme/administration-and-setup/analytics-dashboard.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/analytics-dashboard",
+    "old": "analytics_dashboard_flow_steps_card.png",
+    "action": "replace",
+    "new": "s150-analytics_dashboard_flow_steps_card-de.png",
+    "sha256": "6e70d07e4d5dcc12409e0ea3b74b53de83076d37050f50257a36c5d0a51b0f84",
+    "new_sha256": "34c9f8e3e7f3176e0cf4ca18bbab986e3f6d29f1772acd2b6143888659546bbe"
+  },
+  {
+    "id": "S007",
+    "doc": "readme/administration-and-setup/analytics-dashboard.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/analytics-dashboard",
+    "old": "analytics_dashboard_flow_types.png",
+    "action": "replace",
+    "new": "s150-analytics_dashboard_flow_types-de.png",
+    "sha256": "2609d389002b027c1b8663c651e7b2b88839273e0cfde50fec14645d38913667",
+    "new_sha256": "b503136f7fe5648647344d84ef710f335e8791885bd00265a52af2fce2f71265"
+  },
+  {
+    "id": "S008",
+    "doc": "readme/administration-and-setup/analytics-dashboard.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/analytics-dashboard",
+    "old": "analytics_dashboard_global_average_comparison.png",
+    "action": "replace",
+    "new": "s150-analytics_dashboard_global_average_comparison-de.png",
+    "sha256": "f5563c26058218023f0759bfd99f409febafac393413c7e5fe0f2548431b61e5",
+    "new_sha256": "4b798f04a19046abd6c26aac671ceb4fdf243daa0a584df260afa4e806d45843"
+  },
+  {
+    "id": "S009",
+    "doc": "readme/administration-and-setup/analytics-dashboard.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/analytics-dashboard",
+    "old": "analytics_dashboard_only_exported_toggle.png",
+    "action": "replace",
+    "new": "s150-analytics_dashboard_only_exported_toggle-de.png",
+    "sha256": "9f31ee3c0173c95ea3da29ac868eb85549b7d67d14bcff4d7868f3c5fe3d7e26",
+    "new_sha256": "dc80de97b1c457c69f1bffa58baf637cd1d7310624650cc87cc76e0a414f0b6d"
+  },
+  {
+    "id": "S010",
+    "doc": "readme/administration-and-setup/analytics-dashboard.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/analytics-dashboard",
+    "old": "analytics_dashboard_processing_flow.png",
+    "action": "replace",
+    "new": "s150-analytics_dashboard_processing_flow-de.png",
+    "sha256": "4a3de57e020777d5f95895c4fa8734472ebbe813c24044da8d52a67589e41d93",
+    "new_sha256": "b503136f7fe5648647344d84ef710f335e8791885bd00265a52af2fce2f71265"
+  },
+  {
+    "id": "S011",
+    "doc": "readme/administration-and-setup/analytics-dashboard.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/analytics-dashboard",
+    "old": "analytics_dashboard_status_flow.png",
+    "action": "replace",
+    "new": "s150-analytics_dashboard_status_flow-de.png",
+    "sha256": "e12e016c0b48f19f03f83b796c9b6444134937fcb7f07f54cae8974979afc195",
+    "new_sha256": "c9360e9c326f5cc870fa44552b34ce1ab51674de9f663aa507a9e4f080b9498c"
+  },
+  {
+    "id": "S012",
+    "doc": "readme/administration-and-setup/analytics-dashboard.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/analytics-dashboard",
+    "old": "analytics_dashboard_user_interaction_flow.png",
+    "action": "replace",
+    "new": "s150-analytics_dashboard_user_interaction_flow-de.png",
+    "sha256": "89410ad7f0c5053230e7cb9117184dc8d0bfbacd8b270fa1c7c5c4cae81a7233",
+    "new_sha256": "00dda15504f2a2f3bb92167fb09cbc75e9e170fe388166740acac28ca39e02e2"
+  },
+  {
+    "id": "S013",
+    "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/document-processing/export",
+    "old": "export_create_new_button.png",
+    "action": "replace",
+    "new": "s150-export_create_new_button-de.png",
+    "sha256": "e4abf5ea9b4509de5d1f50ed03c3bcc4d5b1188d61c5802d05c8bc9f63ea7d1d",
+    "new_sha256": "65960497507b728cfe7710c4a85c78489d0e941993f300caa1b372d1ef866c5c"
+  },
+  {
+    "id": "S014",
+    "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/document-processing/export",
+    "old": "export_settings_menu_access.png",
+    "action": "replace",
+    "new": "s150-export_settings_menu_access-de.png",
+    "sha256": "b41153a0a194cf55551222c966a35603b1eaf6fc885ab8db1c84f42704100b17",
+    "new_sha256": "75ebf6b9722690d13998f0dd0fe1f8124f7fedc614bafa41bcd37c9e16077e60"
+  },
+  {
+    "id": "S015",
+    "doc": "readme/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/document-processing/module/barcode-assignment",
+    "old": "barcode_assignment_dialog.png",
+    "action": "replace",
+    "new": "s150-barcode_assignment_dialog-de.png",
+    "sha256": "eb93811163c91027390b95718b420f6981578fe61b7f63e3992cd880c745c5eb",
+    "new_sha256": "e59943d977d0a9e981651470dced75ceba208a8fc13aa2b6f69ec11b3f8a1f42"
+  },
+  {
+    "id": "S016",
+    "doc": "readme/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/document-processing/module/barcode-assignment",
+    "old": "barcode_assignment_field_mapped.png",
+    "action": "replace",
+    "new": "s150-barcode_assignment_field_mapped-de.png",
+    "sha256": "3965e318bfb4b081fb9ce9a4cb348518e7c17f54ec9a12342aa76fd7237c4b1c",
+    "new_sha256": "f1c9186196c5d7ea7e76e0549a448cb2b29577bfddb66e1792d4b8591e654851"
+  },
+  {
+    "id": "S017",
+    "doc": "readme/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/document-processing/module/barcode-assignment",
+    "old": "barcode_assignment_field_options.png",
+    "action": "replace",
+    "new": "s150-barcode_assignment_field_options-de.png",
+    "sha256": "8f5addddead4b48760069e0da74c44e6ca9a30951c6e13535e53249cfc35caea",
+    "new_sha256": "64249c8e75485c97d227bcc5e0fa4ca261ce2d9898beaf6d40adee20c13a6395"
+  },
+  {
+    "id": "S018",
+    "doc": "readme/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/document-processing/module/barcode-assignment",
+    "old": "barcode_assignment_validation_screen.png",
+    "action": "replace",
+    "new": "s150-barcode_assignment_validation_screen-de.png",
+    "sha256": "781a5dc0e3de4d339fcb05f85e107803bd8352bd72eda59ed02552d5a14df80c",
+    "new_sha256": "18d5af1aef0c638805c7e3d6980bbed72ec0ea43b808871abf586953e9495e62"
+  },
+  {
+    "id": "S019",
+    "doc": "readme/administration-and-setup/settings/document-processing/module/fulltext-search.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/document-processing/module/fulltext-search",
+    "old": "fulltext-search-required-dialog.png",
+    "action": "remove",
+    "new": "s150-fulltext-search-required-dialog-de.png",
+    "sha256": "4bc127b1d96a61baef8c7c030d6eba17f5da7185a480436c2dc5da9fe4db660c",
+    "new_sha256": null
+  },
+  {
+    "id": "S020",
+    "doc": "readme/administration-and-setup/settings/document-processing/rule-manager/README.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/document-processing/rule-manager",
+    "old": "rule_detailed_editing.png",
+    "action": "replace",
+    "new": "s150-rule_detailed_editing-de.png",
+    "sha256": "44ccde9fea669577b760fca83969f73a3ae832b5cc3b0c03662293dc2d59db50",
+    "new_sha256": "11ae88b0432350fd5dde14d6d44e73ea0bedd2e64c13b8d8c37bc116f27d154a"
+  },
+  {
+    "id": "S021",
+    "doc": "readme/administration-and-setup/settings/document-processing/rule-manager/README.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/document-processing/rule-manager",
+    "old": "rule_management.png",
+    "action": "replace",
+    "new": "s150-rule_management-de.png",
+    "sha256": "e126032390973a286c27cade1222a0ffe123d6975cab1bc9c675b475bc72c988",
+    "new_sha256": "6606104eba3840dbf3a37e658d0dc7547c52dd4c7b380c6edd5161f9efb6dbee"
+  },
+  {
+    "id": "S022",
+    "doc": "readme/administration-and-setup/settings/document-processing/rule-manager/README.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/document-processing/rule-manager",
+    "old": "rule_management_interface.png",
+    "action": "replace",
+    "new": "s150-rule_management_interface-de.png",
+    "sha256": "1ea2d42c9e00adf74bb0af3f42b3cf2245e5624e910433a46605aaa406d2842e",
+    "new_sha256": "c4b071e41d8b2e2712b745499ab2d3a405c4b42c8d523b4e401e07591eaeaccb"
+  },
+  {
+    "id": "S023",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/duplicate-a-custom-validation-rule.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/duplicate-a-custom-validation-rule",
+    "old": "custom_validation_rule_duplicate_en.png",
+    "action": "replace",
+    "new": "s150-custom_validation_rule_duplicate_en-de.png",
+    "sha256": "9adf7d7f987531abfe0c01217e2b9dcf20d0f9562b5efef9244b68e8c18ae4a5",
+    "new_sha256": "c2171c967e09b79f39994bedbba56ede9fd3433b31f808255c2cca3f018e2b6c"
+  },
+  {
+    "id": "S024",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1",
+    "old": "dbdc155-field-properties-filtered-en.png",
+    "action": "replace",
+    "new": "s150-dbdc155-field-properties-filtered-de.png",
+    "sha256": "26b62d507350f358bc527ae9fe05c00e1afee91b9b8c918bd034dd7aaaa15102",
+    "new_sha256": "dcd1f0efde9ea1c0dbdd7757732825395aaf42dbb86ba0c38bd0f3f78afab367"
+  },
+  {
+    "id": "S025",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1",
+    "old": "dbdc155-field-properties-overview-en.png",
+    "action": "replace",
+    "new": "s150-dbdc155-field-properties-overview-de.png",
+    "sha256": "11fea4a0d01f5a0f396df44cf372dc90a986b61aaa0fa646148c8ec1e366d989",
+    "new_sha256": "7b9d635fa17d6f032199df4b04b6cfc37400db6c23c1812340252a01657fae84"
+  },
+  {
+    "id": "S026",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules",
+    "old": "layout-rule-approval-status.png",
+    "action": "replace",
+    "new": "s150-layout-rule-approval-status-de.png",
+    "sha256": "198e7132fc5871b3d9f14cf480af356869a709bbe41bea7bcb5fe30a52675979",
+    "new_sha256": "9b6561dc885cb55d83db21735fb4cef91f675e9022570fb4f84f8fe720b5d4ae"
+  },
+  {
+    "id": "S027",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules",
+    "old": "layout-rule-editor.png",
+    "action": "replace",
+    "new": "s150-layout-rule-editor-de.png",
+    "sha256": "c3246c7323af9a88952eee52463f433a41b4426b9a5a3c873df9d8d3eee58a47",
+    "new_sha256": "fbfa4aa504e1d0eb1832a8367819186a991e1160312247cf5e47662361b5bf58"
+  },
+  {
+    "id": "S028",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules",
+    "old": "layout-selection-default-row.png",
+    "action": "replace",
+    "new": "s150-layout-selection-default-row-de.png",
+    "sha256": "dca992d008739a344a991acb6a2f48f22064f5e88c4981d1efda31b4603bd297",
+    "new_sha256": "a7d499d8200bc54e79b450e28fc03a112e9c2905ff0c41bf1e538c042699b310"
+  },
+  {
+    "id": "S029",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules",
+    "old": "layout-selection-rules-list.png",
+    "action": "replace",
+    "new": "s150-layout-selection-rules-list-de.png",
+    "sha256": "2911d0b19c361c02cc8f1f3475e386202e9278b521eaa7a76309949860da8df0",
+    "new_sha256": "91370f3b1330f51e4292661a2c61fd84dbc328fcadeb44194ab62bf9277748de"
+  },
+  {
+    "id": "S030",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules",
+    "old": "layouts-overview.png",
+    "action": "replace",
+    "new": "s150-layouts-overview-de.png",
+    "sha256": "06aec7f3e1f91ea047b3e8be548ccf8a4f79398278cfa16260312c820c80b641",
+    "new_sha256": "ac46a1791cf827c758ea97f71b3073e52b46b5d0acd0450a063cba1c4f956eb0"
+  },
+  {
+    "id": "S031",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling",
+    "old": "DuplicateDocument_3.png",
+    "action": "replace",
+    "new": "s150-duplicatedocument_3-de.png",
+    "sha256": "675784633acca40266eeead974819fea5dbd1c617adeb96ec7ce1ea53ac1f5da",
+    "new_sha256": "dbe74baa34ddd3c66c5d7d0cf1f31dbfd0acaee112c9bc1982c45a06111b9012"
+  },
+  {
+    "id": "S032",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling",
+    "old": "DuplicateDocument_4.png",
+    "action": "replace",
+    "new": "s150-duplicatedocument_4-de.png",
+    "sha256": "f9e51368f3114015899349a4df3946c61ac5afec34e3f2fb373c127dd91f6373",
+    "new_sha256": "c6f1accb61aad3dc27e23776fc9f68526880fba487097662816a49a90c542edd"
+  },
+  {
+    "id": "S033",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling",
+    "old": "DuplicateDocument_7.png",
+    "action": "remove",
+    "new": "s150-duplicatedocument_7-de.png",
+    "sha256": "13fc1427976fdcea06828fd9f9ab89183da20ebc4c22bb0fbceba5bb69dffb3e",
+    "new_sha256": null
+  },
+  {
+    "id": "S034",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price",
+    "old": "Calculate_PO_unit_price_4.png",
+    "action": "remove",
+    "new": "s150-calculate_po_unit_price_4-de.png",
+    "sha256": "b8f159ffbee3418b1a45340efee59666598b390b7903d4c2c1c396e6928dbcc7",
+    "new_sha256": null
+  },
+  {
+    "id": "S035",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status",
+    "old": "consumed_po_line_status.png",
+    "action": "remove",
+    "new": "s150-consumed_po_line_status-de.png",
+    "sha256": "b6128ddbfade7a0ddb2587a26c47848b69256e3eb2bc4cfb131c5757c4b28de9",
+    "new_sha256": null
+  },
+  {
+    "id": "S036",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status",
+    "old": "image (470).png",
+    "action": "remove",
+    "new": "s150-image-470-de.png",
+    "sha256": "2573ae602b79f2027cb34cbc0614108e8fe3afea91d988fc34c89c656909212f",
+    "new_sha256": null
+  },
+  {
+    "id": "S037",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status",
+    "old": "image (472).png",
+    "action": "remove",
+    "new": "s150-image-472-de.png",
+    "sha256": "9ef1833425581a777e48cc77386340d3634dd417d684e2fa3ad7b14e2c94fef8",
+    "new_sha256": null
+  },
+  {
+    "id": "S038",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status",
+    "old": "image (473).png",
+    "action": "remove",
+    "new": "s150-image-473-de.png",
+    "sha256": "dae0f1e3779c46eafb92a0f49fa7a7f08511b17985e948a05c4b60dbe79a27f6",
+    "new_sha256": null
+  },
+  {
+    "id": "S039",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/script/README.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/script",
+    "old": "Bildschirmfoto 2024-05-08 um 09.43.25.png",
+    "action": "replace",
+    "new": "s150-bildschirmfoto-2024-05-08-um-09-43-25-de.png",
+    "sha256": "dc04f6352dd4a872ee6ffaf488faf33c7eafe1329f064ca200bd8c0737c9b47a",
+    "new_sha256": "b46a8e0a808812dc41984e51245f3e67e078a7abe15df23e2a9db78c1616e3e2"
+  },
+  {
+    "id": "S040",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/script/README.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/script",
+    "old": "Bildschirmfoto 2024-05-08 um 09.43.37.png",
+    "action": "replace",
+    "new": "s150-bildschirmfoto-2024-05-08-um-09-43-37-de.png",
+    "sha256": "e60c9d3a543c216c795c4e931d0cd59d768a4340f46736154694d2d6c48e0d4c",
+    "new_sha256": "0138d61d7c77c817ead80abfc391469ef99418dd0274cfd465f535315480b0f0"
+  },
+  {
+    "id": "S041",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/transformation-rules",
+    "old": "transformation-add-row-columns.png",
+    "action": "replace",
+    "new": "s150-transformation-add-row-columns-de.png",
+    "sha256": "3ff1f1c09e5a26261e4f61f161d8ed82060d3bcae6057ded35eda821c8f9cce3",
+    "new_sha256": "0518cd811da4a7929698c23c61da07190591d43985fb749828de21f5cac3b276"
+  },
+  {
+    "id": "S042",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/transformation-rules",
+    "old": "transformation-column-value-map.png",
+    "action": "replace",
+    "new": "s150-transformation-column-value-map-de.png",
+    "sha256": "24959baa80001c7b25983e92ad9728a7681b0d0305ab054738fbac47fc1c183c",
+    "new_sha256": "4d354ed9482ae6640db706967256a4b830aacdd452546ac36b29f5d2de51be5d"
+  },
+  {
+    "id": "S043",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/transformation-rules",
+    "old": "transformation-rule-pipeline.png",
+    "action": "replace",
+    "new": "s150-transformation-rule-pipeline-de.png",
+    "sha256": "b7e5839fbf697fc3a6e39d0a16206f2ad47ca21f3181c2ed515c8a7b8c10136b",
+    "new_sha256": "8eb23085b5d91ead83309a06a45f34f4c72a0218bda5c8ea21e3da74a449e33c"
+  },
+  {
+    "id": "S044",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/transformation-rules",
+    "old": "transformation-rule-scope.png",
+    "action": "replace",
+    "new": "s150-transformation-rule-scope-de.png",
+    "sha256": "bacf6c5bc95bfafdfdac491cfd8d5c23086bb5ddc24d5f741dfa59e559e20d0e",
+    "new_sha256": "704c57446eef1dd559bae6fb00f30c9d76a8757dd16f3e0e26a5de0adff1acab"
+  },
+  {
+    "id": "S045",
+    "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations/how-to-create-a-sub-organization.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations/how-to-create-a-sub-organization",
+    "old": "edit_user_in_sub_organization.png",
+    "action": "replace",
+    "new": "s150-edit_user_in_sub_organization-de.png",
+    "sha256": "6a6a5606010b4432999c55feaf547164a047ed8440f537730084b2936fc5af9d",
+    "new_sha256": "f2caa5367804a304fc8f5b217a1e913d5fc715a0593eb6c343186a640ec08cfe"
+  },
+  {
+    "id": "S046",
+    "doc": "readme/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/integration/api-key-management",
+    "old": "api-key-created.png",
+    "action": "remove",
+    "new": "s150-api-key-created-de.png",
+    "sha256": "dcb9f1df8497e538abd01ed3d58f165d118987721beb6d3e41d14e02583e085c",
+    "new_sha256": null
+  },
+  {
+    "id": "S047",
+    "doc": "readme/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/integration/api-key-management",
+    "old": "api-key-list-row.png",
+    "action": "replace",
+    "new": "s150-api-key-list-row-de.png",
+    "sha256": "a75c0acdc8643dc76aafb25a7d6204d6e496b01dea327c469db9e9538d4a2ff3",
+    "new_sha256": "a5b9a0a8528eb5b42dcfe639cee3488bef4b1b1e540ca3900b569a74358cf980"
+  },
+  {
+    "id": "S048",
+    "doc": "readme/administration-and-setup/settings/infrastructure.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/infrastructure",
+    "old": "infrastructure_overview.png",
+    "action": "replace",
+    "new": "s150-infrastructure_overview-de.png",
+    "sha256": "d085430e355d16aa7d2bbdca7ac06c9efa98399371329ec8c03d84fcb04d1a60",
+    "new_sha256": "a49ad09cfb56ebee59b8d1595db3901a36c77fb8857c716f575eeaab55ade6e3"
+  },
+  {
+    "id": "S049",
+    "doc": "readme/administration-and-setup/settings/supplier-setting/editing-email-templates.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/supplier-setting/editing-email-templates",
+    "old": "Bildschirmfoto 2024-08-25 um 12.35.53.png",
+    "action": "replace",
+    "new": "s150-bildschirmfoto-2024-08-25-um-12-35-53-de.png",
+    "sha256": "4828623de93aca6b4e5b2ab278be451bd8140f95590b6cadefcda2a5ad63da64",
+    "new_sha256": "ed538e1ab5d632ebfec64f1a88a750eead077b12db3afae602ec079ac3d063d3"
+  },
+  {
+    "id": "S050",
+    "doc": "readme/administration-and-setup/setup/document-training/training-header-fields.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/setup/document-training/training-header-fields",
+    "old": "header_field_training_0.png",
+    "action": "replace",
+    "new": "s150-header_field_training_0-de.png",
+    "sha256": "4e047a1d65da073fa2514b0229f06d3f4f1e0990e6804696d7e4acafb96fb18b",
+    "new_sha256": "e1a10328f575082994dc29c8d6656da7207995962d9f97cd60541031dccd6dc4"
+  },
+  {
+    "id": "S051",
+    "doc": "readme/administration-and-setup/setup/document-training/training-header-fields.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/setup/document-training/training-header-fields",
+    "old": "header_field_training_1.png",
+    "action": "replace",
+    "new": "s150-header_field_training_1-de.png",
+    "sha256": "d4c753119b414a464e16a4e77069e7d5444d9e9ac69ae86978dddef1bd3d00e9",
+    "new_sha256": "6220135d06952c49d7d8c78e11f320d7fc4e99299cfaf714ec836cba567c64aa"
+  },
+  {
+    "id": "S052",
+    "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns",
+    "old": "define_tables_and_columns_1.png",
+    "action": "replace",
+    "new": "s150-define_tables_and_columns_1-de.png",
+    "sha256": "dc2215b7d75620bf4955b96e86a5a1d3eb36c50e922720e7c9468552996a230d",
+    "new_sha256": "16f95ad977176e1b5ce520044f1804789daa745db96c89a0732ddb5ec23dc75f"
+  },
+  {
+    "id": "S053",
+    "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns",
+    "old": "define_tables_and_columns_10.png",
+    "action": "replace",
+    "new": "s150-define_tables_and_columns_10-de.png",
+    "sha256": "a24e96c8d32615616eebd1ed5b35736374df24ecaa20f3624a45f9dfb4691ca9",
+    "new_sha256": "2ecfe7799cf4d5bafddc0af769decae14631ebd960b19a36d411ecb5c006ef7e"
+  },
+  {
+    "id": "S054",
+    "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns",
+    "old": "define_tables_and_columns_2.png",
+    "action": "replace",
+    "new": "s150-define_tables_and_columns_2-de.png",
+    "sha256": "b67cfdad441b9a1ea09c72387abc6486c51f98a78d93f5f4b360e6ea86fa1d3a",
+    "new_sha256": "3126dbf4424a540694d896917dccc9958a0b80057781bcfc4f18299369f4b3b1"
+  },
+  {
+    "id": "S055",
+    "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns",
+    "old": "define_tables_and_columns_3.png",
+    "action": "replace",
+    "new": "s150-define_tables_and_columns_3-de.png",
+    "sha256": "659b03aefab4502fd728baea15120212f9504453f73a97331f36cb01d4290468",
+    "new_sha256": "3126dbf4424a540694d896917dccc9958a0b80057781bcfc4f18299369f4b3b1"
+  },
+  {
+    "id": "S056",
+    "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns",
+    "old": "define_tables_and_columns_4.png",
+    "action": "replace",
+    "new": "s150-define_tables_and_columns_4-de.png",
+    "sha256": "793c293b18927885cdad01b34e9f3ec9ab7ec421e49295c4b181ec0920bad31f",
+    "new_sha256": "9c31c2e9bae4a5f947be3ea280176e7a6a92fa2d4b98bdeb97e37f4bb9f98c04"
+  },
+  {
+    "id": "S057",
+    "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns",
+    "old": "define_tables_and_columns_5.png",
+    "action": "replace",
+    "new": "s150-define_tables_and_columns_5-de.png",
+    "sha256": "bf1cd522c688182345b325f11a5d2d4e3914176b66c2e41158695310c2da5ab7",
+    "new_sha256": "a87b68fc23a9b301158605e035f6f8ba2b5f670da9e76b43f5455d2587021237"
+  },
+  {
+    "id": "S058",
+    "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns",
+    "old": "define_tables_and_columns_8.png",
+    "action": "replace",
+    "new": "s150-define_tables_and_columns_8-de.png",
+    "sha256": "3967825e45a180f6dbbfbdbac394f558b1178ffbbab3fe8bef35bfe90c408fa8",
+    "new_sha256": "88bb06a6de0b9e402a21bea47829f5eb1cc20e5fe24a9cdf752fecd28b9a4216"
+  },
+  {
+    "id": "S059",
+    "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns",
+    "old": "define_tables_and_columns_9.png",
+    "action": "replace",
+    "new": "s150-define_tables_and_columns_9-de.png",
+    "sha256": "6f2d5fb78256187482e7377d4be739b2235a021e524e0ce07d8a63f1d260bc7c",
+    "new_sha256": "88bb06a6de0b9e402a21bea47829f5eb1cc20e5fe24a9cdf752fecd28b9a4216"
+  },
+  {
+    "id": "S060",
+    "doc": "readme/administration-and-setup/setup/document-types/README.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/setup/document-types",
+    "old": "document-types-invoice-fields-en-20260928.png",
+    "action": "replace",
+    "new": "s150-document-types-invoice-fields-de.png",
+    "sha256": "ae5ac3e3eb2d2dc52a231c54d1fabaf158116b87ec7619359a2a17a5095f73b2",
+    "new_sha256": "0dd3bd9e43edfe0798ef23bae9f5dbdeb3fd4ffedf178bcbd207c6132c62f3e6"
+  },
+  {
+    "id": "S061",
+    "doc": "readme/administration-and-setup/setup/document-types/origin-layouts.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/setup/document-types/origin-layouts",
+    "old": "origin_layout_1.png",
+    "action": "replace",
+    "new": "s150-origin_layout_1-de.png",
+    "sha256": "618aa21f2b57eb64d66d3599a12a89b42b62a4bd11bf13f7a4fbaff2a18f80f6",
+    "new_sha256": "0a4851f5e42db7dd2e4ca95f495130daa0d18f22cad9d319f8244021147c8787"
+  },
+  {
+    "id": "S062",
+    "doc": "readme/administration-and-setup/setup/document-types/origin-layouts.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/setup/document-types/origin-layouts",
+    "old": "origin_layout_3.png",
+    "action": "replace",
+    "new": "s150-origin_layout_3-de.png",
+    "sha256": "ccfc61016ac7bd244c536a04f01a48b514eb39fb4a5d67ae556a2fa7c5e4d4a1",
+    "new_sha256": "b1d5e4fbaf2d25ab9824b2a5c6abb77801dbe3997db569de91234f60386edcf2"
+  },
+  {
+    "id": "S063",
+    "doc": "readme/administration-and-setup/setup/document-types/origin-layouts.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/setup/document-types/origin-layouts",
+    "old": "origin_layout_4.png",
+    "action": "replace",
+    "new": "s150-origin_layout_4-de.png",
+    "sha256": "1f6ed5d9b356be092112520ca1a7462301cff35e128902158ba210c2c88f86bc",
+    "new_sha256": "c3c2471b753b1d0c92abee26ae385026a4cc47338f4a20ce694301fb5a63e3a1"
+  },
+  {
+    "id": "S064",
+    "doc": "readme/administration-and-setup/workflow/card-sdk.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/workflow/card-sdk",
+    "old": "workflow_card_sdk.png",
+    "action": "replace",
+    "new": "s150-workflow_card_sdk-de.png",
+    "sha256": "d11580c0ac374ef75066ffbc766a43c84ac3c0ba019c774cd6c22553bfbc2612",
+    "new_sha256": "571239fca74259358af60b3b65d72f002b388636fef638bad04d668f432d6c68"
+  },
+  {
+    "id": "S065",
+    "doc": "readme/administration-and-setup/workflow/workflow-documentation.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/workflow/standard-workflow-builder/workflow-documentation",
+    "old": "workflow_test4_delivery_note_status.png",
+    "action": "replace",
+    "new": "s150-workflow_test4_delivery_note_status-de.png",
+    "sha256": "11d7198059ecd0f3dff606cf1089b6b82ceaf1af7642727a79ba4ac3b2c1e7fa",
+    "new_sha256": "4c36d0d7baa81c0d6be4ece1fb4d7573e0bbf986f016dde2a45fac25a9d480ae"
+  },
+  {
+    "id": "S066",
+    "doc": "readme/administration-and-setup/workflow/workflow-documentation.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/workflow/standard-workflow-builder/workflow-documentation",
+    "old": "workflow_test7_status_update.png",
+    "action": "replace",
+    "new": "s150-workflow_test7_status_update-de.png",
+    "sha256": "3332146c96d8a574a7651b5b362d6a60b33cc3939ddcc880f73b3ec83a75acc4",
+    "new_sha256": "ac4b05df75535ae5824d12ed4358bb68b146bc0533e0ad4fca89f5e17eb28f48"
+  },
+  {
+    "id": "S067",
+    "doc": "readme/administration-and-setup/workflow/workflow-documentation.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/workflow/standard-workflow-builder/workflow-documentation",
+    "old": "workflow_test9_match_check_detail.png",
+    "action": "replace",
+    "new": "s150-workflow_test9_match_check_detail-de.png",
+    "sha256": "3718ea595ae4fb605107cd13cfea684b84178855ec00d76573ae35499249f006",
+    "new_sha256": "b54d17c584e64df43b1b48e47229f8aa592e50af4930d2b7c65609031e1dff8f"
+  },
+  {
+    "id": "S068",
+    "doc": "readme/administration-and-setup/workflow/workflow-documentation.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/workflow/standard-workflow-builder/workflow-documentation",
+    "old": "workflow_test9_match_check_overview.png",
+    "action": "replace",
+    "new": "s150-workflow_test9_match_check_overview-de.png",
+    "sha256": "bf6713fbb1e308ce5c6b04a2f1de351e5019f157d73884794e33ee826446bb98",
+    "new_sha256": "2a1eef4d3891102f8b7b3bc223143e8044e2df03ddefb02b38be3f5d2111ef93"
+  },
+  {
+    "id": "S069",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/document-flow",
+    "old": "document-flow-dashboard-menu-en.png",
+    "action": "replace",
+    "new": "s150-document-flow-dashboard-menu-de.png",
+    "sha256": "adb6fd3e591b6e917578a1a507920b0101232d3b2d7e695ab140c914d1d6de68",
+    "new_sha256": "291a547ffdd85be260352816e46d2975fe30392a04f92724a42f4812304773ac"
+  },
+  {
+    "id": "S070",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/document-flow",
+    "old": "document-flow-overview-en.png",
+    "action": "replace",
+    "new": "s150-document-flow-overview-de.png",
+    "sha256": "e1566efe3f6516356914cca481b79844fdde94cac6f5d2d6dd463c321c6e2856",
+    "new_sha256": "b20f39d00193af15edb743a7ea16147e9937d64bc114ba073064ec5b998d1ad1"
+  },
+  {
+    "id": "S071",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/document-flow",
+    "old": "document-flow-step-details-en.png",
+    "action": "remove",
+    "new": "s150-document-flow-step-details-de.png",
+    "sha256": "449e36efce6b5e8535c4361240afee85fd0be4142f424c5f89853b2949c494c8",
+    "new_sha256": null
+  },
+  {
+    "id": "S072",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/document-flow",
+    "old": "document-flow-validation-menu-en.png",
+    "action": "replace",
+    "new": "s150-document-flow-validation-menu-de.png",
+    "sha256": "43a1cae037ca8466c0c64c8b41beeaed482faa917eab39a144994cf97c482a3e",
+    "new_sha256": "aeed51c287b85c4b6ba4654244e5ed2d0eec59fb49fb6eafe4db9371dbafdc65"
+  },
+  {
+    "id": "S073",
+    "doc": "readme/end-user-and-partner-section/end-user-section/debug-collector.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/technical-support-in-docbits/debug-collector",
+    "old": "debug-collector-dialog.png",
+    "action": "remove",
+    "new": "s150-debug-collector-dialog-de.png",
+    "sha256": "cd80bf7975c6fffec6c0250cb7af6eb350c5fe8cba565acbda0b3670c0c626c3",
+    "new_sha256": null
+  },
+  {
+    "id": "S074",
+    "doc": "readme/end-user-and-partner-section/end-user-section/error-page.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/error-page",
+    "old": "error_1.png",
+    "action": "replace",
+    "new": "s150-error_1-de.png",
+    "sha256": "22f997cb0235d800640b63211c38dcb5882302777f8da009a1b5cf4d3d160736",
+    "new_sha256": "5d6a4bee3848f0cb2fc9f19f4678799096b0c6d79d1c52885aa644ea5d3ab541"
+  },
+  {
+    "id": "S075",
+    "doc": "readme/end-user-and-partner-section/end-user-section/error-page.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/error-page",
+    "old": "error_2.png",
+    "action": "replace",
+    "new": "s150-error_2-de.png",
+    "sha256": "eec0fde5c53c6da85a56002aefb9fc9a6130f8a44a82c3ba3e9883dc6250e032",
+    "new_sha256": "29cfadef4577a7795eda220cf7305bda1b9ced923e38226e61ff1ae8a8bb184e"
+  },
+  {
+    "id": "S076",
+    "doc": "readme/end-user-and-partner-section/end-user-section/error-page.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/error-page",
+    "old": "error_4.png",
+    "action": "remove",
+    "new": "s150-error_4-de.png",
+    "sha256": "4c696311876bd719c5777bfacd8f721a5191d0d310df8d4ce0a6f0dc3ca6cb51",
+    "new_sha256": null
+  },
+  {
+    "id": "S077",
+    "doc": "readme/end-user-and-partner-section/end-user-section/error-page.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/error-page",
+    "old": "error_5.png",
+    "action": "remove",
+    "new": "s150-error_5-de.png",
+    "sha256": "1146e3e984bf213a45444564340a815495d8ced239ff9e8a47c443b96b6376cb",
+    "new_sha256": null
+  },
+  {
+    "id": "S078",
+    "doc": "readme/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp",
+    "old": "ftp1.png",
+    "action": "replace",
+    "new": "s150-ftp1-de.png",
+    "sha256": "8411609e6684658767b6df5840a7910bca785a681eacab25d06c9eb542ccb872",
+    "new_sha256": "567ba484dcafcb5fa02599854db9615fd78af0053825b1fd5be0080c8f7b98db"
+  },
+  {
+    "id": "S079",
+    "doc": "readme/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp",
+    "old": "ftp_file_archiving_settings.png",
+    "action": "remove",
+    "new": "s150-ftp_file_archiving_settings-de.png",
+    "sha256": "86a163ea03fef756b5d0ee62e8aa189fb84cdf1277f2eb67b76c357deb37f860",
+    "new_sha256": null
+  },
+  {
+    "id": "S080",
+    "doc": "readme/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp",
+    "old": "ftp_import_configuration_form.png",
+    "action": "replace",
+    "new": "s150-ftp_import_configuration_form-de.png",
+    "sha256": "ada08eb1a15c843ec593d830dbf745e23d2c1f16aef2f433eb9f45e925769c92",
+    "new_sha256": "a7a0a5a749ca99971b7eadfb556c497660362c6145450d9f4a50b77c0a05249e"
+  },
+  {
+    "id": "S081",
+    "doc": "readme/end-user-and-partner-section/end-user-section/how-to-import-documents/manual-import.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/how-to-import-documents/manual-import",
+    "old": "manual-import1.png",
+    "action": "replace",
+    "new": "s150-manual-import1-de.png",
+    "sha256": "8efe4ce9afa693ecef527e09c745622d4950c5a1c16d19a869a37e883333b59d",
+    "new_sha256": "bd7bb39e7ae787a7c3a6dfe316130f0be4bc09d2690379f9ed21fdf9cca22a33"
+  },
+  {
+    "id": "S082",
+    "doc": "readme/end-user-and-partner-section/end-user-section/idea-board.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/idea-board",
+    "old": "idea-board-new-idea.png",
+    "action": "replace",
+    "new": "s150-idea-board-new-idea-de.png",
+    "sha256": "4b0f6d0cd3adeceafd00058cdd95d616a9089111ec43a5907915a1d28cc4b14b",
+    "new_sha256": "32ee6e4d4b6020524af113a46aa400081f8367ff5f05670e2c6d9c011c7221fc"
+  },
+  {
+    "id": "S083",
+    "doc": "readme/end-user-and-partner-section/end-user-section/invoice-dashboard.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/invoice-dashboard",
+    "old": "invoice-dashboard.png",
+    "action": "remove",
+    "new": "s150-invoice-dashboard-de.png",
+    "sha256": "8fdabd006d0e6c8ebe205a9cde6c5c89b64a61fb981b54aae7423a3aab1cb5cb",
+    "new_sha256": null
+  },
+  {
+    "id": "S084",
+    "doc": "readme/end-user-and-partner-section/end-user-section/purchase-order-dashboard.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/purchase-order-dashboard",
+    "old": "purchase-order.png",
+    "action": "replace",
+    "new": "s150-purchase-order-de.png",
+    "sha256": "8fb43517f578d4057fe85b8a734feee4c57fbdc33818f10a0dd9fb1a8ef577e4",
+    "new_sha256": "d766eb05de8ae7d82919d6ab6039ff28d294b4c79249fcf8a39abd7628e0ba0e"
+  },
+  {
+    "id": "S085",
+    "doc": "readme/end-user-and-partner-section/end-user-section/purchase-order-matching/supplier-item-number-map.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/purchase-order-matching/supplier-item-number-map",
+    "old": "supplier-item-number-map.png",
+    "action": "replace",
+    "new": "s150-supplier-item-number-map-de.png",
+    "sha256": "f67c8b52389084399debdd40de2d199e55341a8e83dc1d70e1695d2aaa4ca121",
+    "new_sha256": "ec51184f61ec6be775f52e8fb273c74ab6fbc9ef8df88b414d4b8b3c523b44a8"
+  },
+  {
+    "id": "S086",
+    "doc": "readme/end-user-and-partner-section/end-user-section/ressources-and-support/user-support.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/ressources-and-support/user-support",
+    "old": "user-support4.png",
+    "action": "replace",
+    "new": "s150-user-support4-de.png",
+    "sha256": "8ba0012f2db7bae336fb658f9b66c5b65f7b1812b7e9e99c82131d23a386a4da",
+    "new_sha256": "97f83c5090c6aca5001f2910dce9bc106425e1fac291e19fb676fcdefd813cc8"
+  },
+  {
+    "id": "S087",
+    "doc": "readme/end-user-and-partner-section/end-user-section/tasks.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/tasks",
+    "old": "tasks1.png",
+    "action": "replace",
+    "new": "s150-tasks1-de.png",
+    "sha256": "c4750890fe3171bfb5df66ddea23f9b358c6903af21293ca8ed62e64484ec391",
+    "new_sha256": "02ffdd3b74d2a7d90bab82ef9da8e21ef31b10a634c1114a17fd02631456b0bc"
+  },
+  {
+    "id": "S088",
+    "doc": "readme/end-user-and-partner-section/end-user-section/tasks.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/tasks",
+    "old": "tasks2.png",
+    "action": "replace",
+    "new": "s150-tasks2-de.png",
+    "sha256": "b0e429d3bfc44bdd9a7c231285e7eaa28b7b58b9173c028b15b236d918af20b9",
+    "new_sha256": "b751da296112c3f1bc50d87d066a8997a6e3b395600ca1378ea9aa6ed249531e"
+  },
+  {
+    "id": "S089",
+    "doc": "readme/end-user-and-partner-section/end-user-section/technical-support-in-docbits/help-icons.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/technical-support-in-docbits/help-icons",
+    "old": "help-icon.png",
+    "action": "replace",
+    "new": "s150-help-icon-de.png",
+    "sha256": "5a0bac6e3e712151d5241f49bd33514806a1254ae1e8c0cc9e4b5484c60ecf55",
+    "new_sha256": "114653f4e4f76c81444a24011e52af0c21b3ff7bb8ce458c685accd14e58c924"
+  },
+  {
+    "id": "S090",
+    "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/fuzzy-data.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/validation-screen/fuzzy-data",
+    "old": "fuzzy_data_selection_window.png",
+    "action": "replace",
+    "new": "s150-fuzzy_data_selection_window-de.png",
+    "sha256": "ad92e8f49877cdd29213ede1fee785349801759f8838aad69db558c9182d4969",
+    "new_sha256": "75942e62b4983d7a6ecf6cea16f9ad3b3c121d88b5a7e3377a45d660f6bb2fc2"
+  },
+  {
+    "id": "S091",
+    "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction",
+    "old": "settings_ocr.png",
+    "action": "replace",
+    "new": "s150-settings_ocr-de.png",
+    "sha256": "e15dc0f35f03b4b1a8419ec87f18a88d310e754ad7f18ba72e5e6b896b3df96c",
+    "new_sha256": "34b6186870a9919a1e6da192a5e852a968864aab1249ec96714fcfa8b8738e5d"
+  },
+  {
+    "id": "S092",
+    "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction",
+    "old": "troubleshooting_ocr_1.png",
+    "action": "replace",
+    "new": "s150-troubleshooting_ocr_1-de.png",
+    "sha256": "5389d78bbc4b7599a838a586004aaf82c94e05fbb44d37cf6bc0d8003f02d7ba",
+    "new_sha256": "32c3a140e18b49c7ca98e94dac507eb3d2cbc5f26bb3318300abab5696ead06e"
+  },
+  {
+    "id": "S093",
+    "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction",
+    "old": "troubleshooting_ocr_2.png",
+    "action": "replace",
+    "new": "s150-troubleshooting_ocr_2-de.png",
+    "sha256": "1c8145eaaa431a39f2d8a9392bd259d4f0e32eeb4975894bd03e29ba4dea51f6",
+    "new_sha256": "aeed51c287b85c4b6ba4654244e5ed2d0eec59fb49fb6eafe4db9371dbafdc65"
+  },
+  {
+    "id": "S094",
+    "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction",
+    "old": "troubleshooting_ocr_3.png",
+    "action": "replace",
+    "new": "s150-troubleshooting_ocr_3-de.png",
+    "sha256": "6178ed3f26caca4bb41f39180b2a21e86b2a5453c506a082611e726c511e49c3",
+    "new_sha256": "aeed51c287b85c4b6ba4654244e5ed2d0eec59fb49fb6eafe4db9371dbafdc65"
+  },
+  {
+    "id": "S095",
+    "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction",
+    "old": "troubleshooting_ocr_4.png",
+    "action": "replace",
+    "new": "s150-troubleshooting_ocr_4-de.png",
+    "sha256": "09fd74f051f41ec228b2b771c21edaa5be3da83dbca17e2d0a358633fa1e008f",
+    "new_sha256": "2073e699778dfe21981631d42adae2905b81e4f93bf1f2c05a5c413fbd950012"
+  },
+  {
+    "id": "S096",
+    "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction",
+    "old": "troubleshooting_ocr_5.png",
+    "action": "replace",
+    "new": "s150-troubleshooting_ocr_5-de.png",
+    "sha256": "9d7bd8b82989a70290f7645649426f449181c8a0d85da96e3e073d2b4fa25ec0",
+    "new_sha256": "6220135d06952c49d7d8c78e11f320d7fc4e99299cfaf714ec836cba567c64aa"
+  },
+  {
+    "id": "S097",
+    "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction",
+    "old": "troubleshooting_ocr_6.png",
+    "action": "replace",
+    "new": "s150-troubleshooting_ocr_6-de.png",
+    "sha256": "b40b71c269ab21989f48c71e970000f998f5bb443693ef51634802cf4d6622c8",
+    "new_sha256": "ad844888c418c251f57df328d41da8840125151737717777b9f1a074939fafbf"
+  },
+  {
+    "id": "S098",
+    "doc": "readme/security/two-factor-authentication.md",
+    "url": "https://docs.docbits.com/deutsch/security/two-factor-authentication",
+    "old": "mfa-backup-codes.png",
+    "action": "remove",
+    "new": "s150-mfa-backup-codes-de.png",
+    "sha256": "28b1f9e121d4600933dd2580b605bec5383fb8692bbeedc86f718a1080bcf185",
+    "new_sha256": null
+  },
+  {
+    "id": "S099",
+    "doc": "readme/security/two-factor-authentication.md",
+    "url": "https://docs.docbits.com/deutsch/security/two-factor-authentication",
+    "old": "mfa-email-otp.png",
+    "action": "remove",
+    "new": "s150-mfa-email-otp-de.png",
+    "sha256": "c9d6ecc5f37070991819a1bae0359b4c9fb42e8d766067e34688ceacbc9e6a17",
+    "new_sha256": null
+  },
+  {
+    "id": "S100",
+    "doc": "readme/security/two-factor-authentication.md",
+    "url": "https://docs.docbits.com/deutsch/security/two-factor-authentication",
+    "old": "mfa-totp-setup.png",
+    "action": "remove",
+    "new": "s150-mfa-totp-setup-de.png",
+    "sha256": "917c4c18808d6b7dbeada8aa0f4f8cc960f0ea2d166ed300e6dd6521f5902270",
+    "new_sha256": null
+  },
+  {
+    "id": "S101",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/configuring-field-properties.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/layout-manager/configuring-field-properties",
+    "old": "image (146).png",
+    "action": "replace",
+    "new": "s150-image-146-de.png",
+    "sha256": "8a9a315deaf2516aadbbec24114486245b85aaa0be97aedc8818705fdde08c9e",
+    "new_sha256": "61c7212240ea6f2e2a957e2f12256064ceff2c3247a7a1735d793be794603c46"
+  },
+  {
+    "id": "S102",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/using-the-template-preview.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/layout-manager/using-the-template-preview",
+    "old": "docbits_script_example_2.png",
+    "action": "replace",
+    "new": "s150-docbits_script_example_2-de.png",
+    "sha256": "3563c31591468adf0ca10aa2675b3b4e6ab134eb221fdd37cd1355e6a7bce96b",
+    "new_sha256": "0a4851f5e42db7dd2e4ca95f495130daa0d18f22cad9d319f8244021147c8787"
+  },
+  {
+    "id": "S103",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/custom-validation-rules",
+    "old": "validation-rules-list.png",
+    "action": "replace",
+    "new": "s150-validation-rules-list-de.png",
+    "sha256": "1fa400fcc4250495b0e5d88a711d66632e6a9b360e357baf360a47f51ed8209c",
+    "new_sha256": "c2171c967e09b79f39994bedbba56ede9fd3433b31f808255c2cca3f018e2b6c"
+  },
+  {
+    "id": "S104",
+    "doc": "readme/administration-and-setup/settings/document-processing/list-of-values.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/document-processing/list-of-values",
+    "old": "list_of_values_1.png",
+    "action": "replace",
+    "new": "s150-list_of_values_1-de.png",
+    "sha256": "fd20acf4c23e3233f68b91288ee9dd79d196f0608cd7ac7fbf25d461ada223f5",
+    "new_sha256": "217efa32be9f9cb2bf8775b99275759d64a5807f32c2770080b4c3e9f38b5f1d"
+  },
+  {
+    "id": "S105",
+    "doc": "readme/administration-and-setup/settings/document-processing/import/README.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/document-processing/import",
+    "old": "ftp_0.png",
+    "action": "replace",
+    "new": "s150-ftp_0-de.png",
+    "sha256": "3dc1149226609d4847e71092901445d133b8b46c18ea19880cf668675154ef8e",
+    "new_sha256": "567ba484dcafcb5fa02599854db9615fd78af0053825b1fd5be0080c8f7b98db"
+  },
+  {
+    "id": "S106",
+    "doc": "readme/administration-and-setup/settings/document-processing/import/README.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/document-processing/import",
+    "old": "ftp_5.png",
+    "action": "replace",
+    "new": "s150-ftp_5-de.png",
+    "sha256": "d90c749afd13c936507b2a731b4758b3cff854eda7694c2fc4225faf57041dc5",
+    "new_sha256": "a7a0a5a749ca99971b7eadfb556c497660362c6145450d9f4a50b77c0a05249e"
+  },
+  {
+    "id": "S107",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_01_entry.png",
+    "action": "replace",
+    "new": "s150-quick_search_01_entry-de.png",
+    "sha256": "5b8721302b2abe85c8bcae93ada6f84336bb555a613784e78926998a4a4381d6",
+    "new_sha256": "419995e615d84f69403122d28bf57bae397e976260c128f5ac7abacfe2eef757"
+  },
+  {
+    "id": "S108",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_03_filename_contains.png",
+    "action": "replace",
+    "new": "s150-quick_search_03_filename_contains-de.png",
+    "sha256": "654c6bc5c5bc984d31ec24e0cd35a0b12e5ef04cb395a3abf7217197de2dd0b3",
+    "new_sha256": "336851ebd07851745dcc7ada69c72a25aa0963ed5a8d1a9876c46d654bb9d212"
+  },
+  {
+    "id": "S109",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_05_status.png",
+    "action": "replace",
+    "new": "s150-quick_search_05_status-de.png",
+    "sha256": "018d6314854dce6a45f7e30d2aa154864080b0ce8aeab75622cf626fadab30c9",
+    "new_sha256": "c455e228fb6551f229fd90b2c75b32fc3d227e76e5e93a4721a3adebba94dc85"
+  },
+  {
+    "id": "S110",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_06_date.png",
+    "action": "replace",
+    "new": "s150-quick_search_06_date-de.png",
+    "sha256": "b265d5af45754a20b96c40f14ca249e69ff773c17ccbb53948bfd161db9dd11e",
+    "new_sha256": "b191e629ec6aaab423dc1a45e941b985fa1f8b0a1685a7f23b0389e9644bcc7a"
+  },
+  {
+    "id": "S111",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_09_supplier.png",
+    "action": "replace",
+    "new": "s150-quick_search_09_supplier-de.png",
+    "sha256": "de7c065f2ada6a77424f222566f7fd4e83e53042b3b030da713f89def3d71062",
+    "new_sha256": "4b9a5d92d9fdff6666ac4f2682f0980561571d60697a61c331a2981a981516b8"
+  },
+  {
+    "id": "S112",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_10_purchase_order.png",
+    "action": "replace",
+    "new": "s150-quick_search_10_purchase_order-de.png",
+    "sha256": "a785c28f5d96a3383d74f585e4f7323954af3c4f50ca9d9a28355806321da592",
+    "new_sha256": "e15184c562b14b4cae24665ace3c5f88495cf91170044678ca6b265ab416252e"
+  },
+  {
+    "id": "S113",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_07_amount.png",
+    "action": "replace",
+    "new": "s150-quick_search_07_amount-de.png",
+    "sha256": "bf35e6503343543140eb2dc8cf2c7864658998d5da8b9d697970d24d16427190",
+    "new_sha256": "5897994fa89a2cf9d39c39d0c6c874b649fdd48c8a2e3f690760d9163dd65541"
+  },
+  {
+    "id": "S114",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_14_between.png",
+    "action": "replace",
+    "new": "s150-quick_search_14_between-de.png",
+    "sha256": "38bc27233b311cd3a7fb1b72419dccbe55be7ff904264626fa3311d3a8ed999f",
+    "new_sha256": "f0183df9249d8891e80ef98716bd5b430bc52a8e9acecb386cd8393baef46906"
+  },
+  {
+    "id": "S115",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_12_empty.png",
+    "action": "replace",
+    "new": "s150-quick_search_12_empty-de.png",
+    "sha256": "1b9fca2afd4d58a97e44dc803159e02f19a245507bc2b0736a8c37694a3637a0",
+    "new_sha256": "9e9430daeaa4579457ccb6f51c308a9135c07e573c9063cc85df978f044578fa"
+  },
+  {
+    "id": "S116",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_15_ap_empty.png",
+    "action": "replace",
+    "new": "s150-quick_search_15_ap_empty-de.png",
+    "sha256": "ffc2b12fa6b4a78cdda42c1fe57b00c4a694dd41b3a1288090a4d0f49367e680",
+    "new_sha256": "17fd14b6328f049e109bf25f4a91ec249d5c4e494b14ef70fa6f73fd832b2c38"
+  },
+  {
+    "id": "S117",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_13_combined.png",
+    "action": "replace",
+    "new": "s150-quick_search_13_combined-de.png",
+    "sha256": "fd4dd680e1a43406354be1ba32f4b27c3e628324f758621af52c300c0cde252f",
+    "new_sha256": "fa5d6c22e84878f381e46b88dad866fa0d19e7b21b4eeec1eeee9edee097e201"
+  },
+  {
+    "id": "S118",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_shortcut_01_operator_aliases.png",
+    "action": "replace",
+    "new": "s150-quick_search_shortcut_01_operator_aliases-de.png",
+    "sha256": "12e3218171bdee1341cd028309786060a9e803c0ac383d88f3d860683f0333ee",
+    "new_sha256": "7bfe1cbdf578fd5010823c4c022424c87268f4aed6f76867fc5dfedb8d02d145"
+  },
+  {
+    "id": "S119",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_shortcut_02_bare_date.png",
+    "action": "replace",
+    "new": "s150-quick_search_shortcut_02_bare_date-de.png",
+    "sha256": "324e9c430966cc49847432b44851b2be12f950cccb9ea47317904482d3496c5b",
+    "new_sha256": "92bd076bcddcf4f8d1db9e9fe4aa2d61a139d09b67fdb35a47ef70ddc95cb834"
+  },
+  {
+    "id": "S120",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_shortcut_03_period.png",
+    "action": "replace",
+    "new": "s150-quick_search_shortcut_03_period-de.png",
+    "sha256": "a75048c14537558912327e328a99882c6fecbc0879e4af30bca39f65111a4f46",
+    "new_sha256": "cc486e9e50de85400e08b4c1c0a9a30d78c5935c800125e80e2cc9934d34ed3d"
+  },
+  {
+    "id": "S121",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_shortcut_04_presence.png",
+    "action": "replace",
+    "new": "s150-quick_search_shortcut_04_presence-de.png",
+    "sha256": "77340358adbe6a9e5d91bb338146266b41d9d9e4ae0b06e828b970949661fe43",
+    "new_sha256": "cc50d444fab051ee2bbe26bd5d43d6021fef33040722059877ab9edc18bc3e33"
+  },
+  {
+    "id": "S122",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_shortcut_05_status_open.png",
+    "action": "replace",
+    "new": "s150-quick_search_shortcut_05_status_open-de.png",
+    "sha256": "42a068de21667297a431094ab0c5d276ff3baf877fe43f82b8c6d8aad89b21d6",
+    "new_sha256": "b2df4b6b762731d97af2a2afdfdaa4e19ba9694faecd05b1b1b4dc41eb7f477c"
+  },
+  {
+    "id": "S123",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_shortcut_06_not_between.png",
+    "action": "replace",
+    "new": "s150-quick_search_shortcut_06_not_between-de.png",
+    "sha256": "5d4eb223bf484d262c0f413ca5db534fa448f95f5222b475fae022dc245361a1",
+    "new_sha256": "dc5681af526d18e65cb30be0de332c38691383ca48796460295edfade78b6839"
+  },
+  {
+    "id": "S124",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_shortcut_07_in_list.png",
+    "action": "replace",
+    "new": "s150-quick_search_shortcut_07_in_list-de.png",
+    "sha256": "8f106ba6c5325e9f5720d806da434ef609467ea2e9ed2d4184127eeb3a39252a",
+    "new_sha256": "633b01b78a5e970e849aa440caf11eef93f0057253bd331ef8580eb018293b29"
+  },
+  {
+    "id": "S125",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_shortcut_08_negation.png",
+    "action": "replace",
+    "new": "s150-quick_search_shortcut_08_negation-de.png",
+    "sha256": "538c41e7a3291d2ffddc68f3b2ec6dc1022519e3acdfe80e001f9293c961ff4b",
+    "new_sha256": "dc174450a775572ae8b4c6348e4b8261e5e2a9ef4cc9f06a8babf257cba81994"
+  },
+  {
+    "id": "S126",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_shortcut_09_contains.png",
+    "action": "replace",
+    "new": "s150-quick_search_shortcut_09_contains-de.png",
+    "sha256": "09ee065811105676e2a27cd5bcdb642ac9f1550c6957e93bac48b30fb6ca7cde",
+    "new_sha256": "711ac3280930c1789f39f099612fa1ae34ad949ef5c9d402b797c4da09035a09"
+  },
+  {
+    "id": "S127",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_shortcut_12_invoice_prefix.png",
+    "action": "replace",
+    "new": "s150-quick_search_shortcut_12_invoice_prefix-de.png",
+    "sha256": "5399b2f045a5772125c33b8b36ff28a33b4d1a4b924679152074bc0950d17916",
+    "new_sha256": "9efc4cee3bbe2b2368b3232b8e17fdae634869c6849a71973874dcb35807b7ce"
+  },
+  {
+    "id": "S128",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_shortcut_13_assignee_prefix.png",
+    "action": "replace",
+    "new": "s150-quick_search_shortcut_13_assignee_prefix-de.png",
+    "sha256": "ccd0ac15fa4d250a9c4d64174d41dde8643993ea2f54d2541a806e91103ea201",
+    "new_sha256": "b0b3c8f73a3bdd609b7f79b32984ee9cb171d33627f48f1619bab445889961a4"
+  },
+  {
+    "id": "S129",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_shortcut_10_currency_suffix.png",
+    "action": "replace",
+    "new": "s150-quick_search_shortcut_10_currency_suffix-de.png",
+    "sha256": "db7fd164c92d069334d3534543cb06017bff001c8d62ea9e224a0e3b45f87a70",
+    "new_sha256": "0d7112ecb8a610476b3e27eef9f5fb07546ca1ae9240453f165deb0275092710"
+  },
+  {
+    "id": "S130",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_shortcut_11_overdue.png",
+    "action": "replace",
+    "new": "s150-quick_search_shortcut_11_overdue-de.png",
+    "sha256": "dd36f7b67bed73ed2fa3acc68e3544e392b847141ea77370c192c549e2386e16",
+    "new_sha256": "d7a745d406e583562234240482c0b45781d958ec2c84668738d721d16f62038e"
+  },
+  {
+    "id": "S131",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_shortcut_14_amount_prefix.png",
+    "action": "replace",
+    "new": "s150-quick_search_shortcut_14_amount_prefix-de.png",
+    "sha256": "1aff84cd47086b9de12abb103140fd108b789d556eb2c598143e0797c49dc427",
+    "new_sha256": "f2ab355d232689cff750c4bd22a3cb46546aaff8db5a6e0718cf8bded4aed7c1"
+  },
+  {
+    "id": "S132",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_17_vector.png",
+    "action": "replace",
+    "new": "s150-quick_search_17_vector-de.png",
+    "sha256": "f867afaa9d475ba90b9bdbd1532899363633fbcf17860134fa6a483abd198c7d",
+    "new_sha256": "a7c1bce5e5be97fe693de37760983076d15a9c5e3e79de8a1cfe2edb0b110741"
+  },
+  {
+    "id": "S133",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_18_ocr.png",
+    "action": "replace",
+    "new": "s150-quick_search_18_ocr-de.png",
+    "sha256": "f5191480b36a836c3796ee36c335a74a7b83dc8c54da3cece43c6e4fb1a9a0e9",
+    "new_sha256": "3f5a85193789f59b14a48d0896d0d814d1524df5c764f362118bf4021a2956b7"
+  },
+  {
+    "id": "S134",
+    "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+    "url": "https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/dashboard/quick-search",
+    "old": "quick_search_19_ai.png",
+    "action": "replace",
+    "new": "s150-quick_search_19_ai-de.png",
+    "sha256": "f1735eb8b067504bc013bc45250487d918574cb1677540c9c3666b9f16e512a9",
+    "new_sha256": "4797395d1d1e19914c82969e3e5e5d0c40100a5f8f6a1dc2116d2453b6529b2b"
+  },
+  {
+    "id": "S135",
+    "doc": "readme/administration-and-setup/settings/global-settings/email-notification/configuring-notifications.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/email-notification/configuring-notifications",
+    "old": "image (41) (1).png",
+    "action": "replace",
+    "new": "s150-image-41-1-de.png",
+    "sha256": "9b78738c45e7fff22aa22fd2a76695774b64c1b23839c7f216723904514882d2",
+    "new_sha256": "e93450822a2cc08d999af351da97e84dd1eb998377f6a40e9f03c3c5385ed9a8"
+  },
+  {
+    "id": "S136",
+    "doc": "readme/administration-and-setup/settings/document-processing/module/inbound-emails.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/document-processing/module/inbound-emails",
+    "old": "inbound_emails_protocol_select.png",
+    "action": "replace",
+    "new": "s150-inbound_emails_protocol_select-de.png",
+    "sha256": "708544a988a8b07059f40dcbd10f55d0d5eb8f8e89916c36fa8f93932a859b40",
+    "new_sha256": "e7cdcbf14ac8096ccbee77528d1deed166fd2c8b5d594a9a2d3a89559990a79a"
+  },
+  {
+    "id": "S137",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/regex/editing-and-saving-regex-patterns.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/regex/editing-and-saving-regex-patterns",
+    "old": "docbits_regex_edit_settings.png",
+    "action": "remove",
+    "new": "s150-docbits_regex_edit_settings-de.png",
+    "sha256": "e0886d0bfa87fc85121cb61cdeb8251e207aa6466dcae647475b0a598763f814",
+    "new_sha256": null
+  },
+  {
+    "id": "S138",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/document-sub-types.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/document-sub-types",
+    "old": "docbits_document_sub_types_list.png",
+    "action": "replace",
+    "new": "s150-docbits_document_sub_types_list-de.png",
+    "sha256": "4453de27ce3044f431015aecc38cfd2179afc0d835f1654d52c77b5f8cfa67ec",
+    "new_sha256": "63348d9417ef688dab56a9a1a5bdab40f5acf1d8e6ff38484f5d6697f47cd2e5"
+  },
+  {
+    "id": "S139",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/document-sub-types.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/document-sub-types",
+    "old": "docbits_document_sub_types_overview.png",
+    "action": "replace",
+    "new": "s150-docbits_document_sub_types_overview-de.png",
+    "sha256": "e091898c234d8079b5491b176171a9f555a157039202aeb8e8b0ed19308ba679",
+    "new_sha256": "63348d9417ef688dab56a9a1a5bdab40f5acf1d8e6ff38484f5d6697f47cd2e5"
+  },
+  {
+    "id": "S140",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/regex/README.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/regex",
+    "old": "docbits_regex_management.png",
+    "action": "remove",
+    "new": "s150-docbits_regex_management-de.png",
+    "sha256": "4b43617324157fc4e95030ebe7ee7832560b59c07981aaca3ed4a11dc70b2f58",
+    "new_sha256": null
+  },
+  {
+    "id": "S141",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/model-training/import-data-model-training.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/model-training/import-data-model-training",
+    "old": "image (85) (1).png",
+    "action": "replace",
+    "new": "s150-image-85-1-de.png",
+    "sha256": "6bcb513eabaf24bb90584f48d62f169698a3c6402ed7597e064d6b3516081f17",
+    "new_sha256": "333f100fac12628434bd8af4a8780dc7ead552d19ed12584ac4827741e997e87"
+  },
+  {
+    "id": "S142",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/script/script-activation-and-management.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/script/script-activation-and-management",
+    "old": "docbits_edit_script_icon.png",
+    "action": "replace",
+    "new": "s150-docbits_edit_script_icon-de.png",
+    "sha256": "d6895024ec66090a9584dac5fff79e8cac5be82bcd06f7de2c1df227453cc8ae",
+    "new_sha256": "9cf647bdb5b0ca6aed75f304a11775efc72c0777fea6cd89e4911c6b2ff271a0"
+  },
+  {
+    "id": "S143",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score",
+    "old": "docbits_choose_column_type.png",
+    "action": "replace",
+    "new": "s150-docbits_choose_column_type-de.png",
+    "sha256": "b40bc923fbe348132c32253628f529fec34a04956694e815b3f1133727f90b3c",
+    "new_sha256": "0dd3bd9e43edfe0798ef23bae9f5dbdeb3fd4ffedf178bcbd207c6132c62f3e6"
+  },
+  {
+    "id": "S144",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score",
+    "old": "image (120).png",
+    "action": "replace",
+    "new": "s150-image-120-de.png",
+    "sha256": "69175db7a01299bdc086b20b275df34ae5adfd1850d7bd15964bd42dc44b72d9",
+    "new_sha256": "599f4dc8aa95e5a5bc76b77d523510a8eb5f04989152e9fe69730700f357ccdf"
+  },
+  {
+    "id": "S145",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score",
+    "old": "docbits_decide_column_necessity.png",
+    "action": "replace",
+    "new": "s150-docbits_decide_column_necessity-de.png",
+    "sha256": "751b2cbc9baef2bde8b611f37ae7dc70ed2fe45b5170e67e62884168c3f0f3ca",
+    "new_sha256": "931f32eff5fa7023b3d3ade3997577d05bf3531137631be370ecf62c85845aa1"
+  },
+  {
+    "id": "S146",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/new-fields-with-charges.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/fields/new-fields-with-charges",
+    "old": "docbits_add_field_with_charges_1.png",
+    "action": "replace",
+    "new": "s150-docbits_add_field_with_charges_1-de.png",
+    "sha256": "abe88ba6cf7af8b2d4af40cf91364b7d7ae5230439c5d499b422bde39797f52a",
+    "new_sha256": "826ed7ce334ffd3f515e54ae61b941533484a88708df42911d998943d179e14d"
+  },
+  {
+    "id": "S147",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/new-fields-with-charges.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/fields/new-fields-with-charges",
+    "old": "docbits_add_field_with_charges_2.png",
+    "action": "replace",
+    "new": "s150-docbits_add_field_with_charges_2-de.png",
+    "sha256": "67c31519ebb1e94e08e80009ece1b791ea616e437d97927fb88dc8a576d0b12f",
+    "new_sha256": "24cf3a4977607e4c155227c9a090ad5f539cdf6ce12060e7d7399a41e52c74c3"
+  },
+  {
+    "id": "S148",
+    "doc": "readme/administration-and-setup/settings/document-processing/classification-and-extraction/auto-extract-tax-code.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/document-processing/classification-and-extraction/auto-extract-tax-code",
+    "old": "auto_extract_tax_code_1.png",
+    "action": "replace",
+    "new": "s150-auto_extract_tax_code_1-de.png",
+    "sha256": "671e802c6136e1a156fc15f3fc99e967e9ea6995f579c1f1605952e582492194",
+    "new_sha256": "843ebecf60dc9e023f11362b173d6f5d56eb6502506748cafd45683522aa3c81"
+  },
+  {
+    "id": "S149",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/README.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/fields",
+    "old": "docbits_fields_overview.png",
+    "action": "replace",
+    "new": "s150-docbits_fields_overview-de.png",
+    "sha256": "af5a9c828788533a364828365f63529aa9514378e4d2a201a0be65158eb29aa5",
+    "new_sha256": "d9e07ba4e1cf970dc79ee8c28793e03e2548d6dd83d247262c4e70d444d0ba4e"
+  },
+  {
+    "id": "S150",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/model-training/README.md",
+    "url": "https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/model-training",
+    "old": "docbits_model_training_overview.png",
+    "action": "replace",
+    "new": "s150-docbits_model_training_overview-de.png",
+    "sha256": "39beb4dadbeea268b2cdd71e56783dd999bd63d7c83e74b24a1ee09d52283e4c",
+    "new_sha256": "153f7e78d91a8332a9511e68440de26712388895e5637f5744d3f08857121dd1"
+  }
+]

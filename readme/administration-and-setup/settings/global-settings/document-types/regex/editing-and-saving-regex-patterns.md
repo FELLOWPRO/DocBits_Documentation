@@ -6,8 +6,6 @@ Der frühere Regex-Link auf der Dokumenttypkarte ist in der aktuellen Oberfläch
 
 **Um bestehende Regex-Muster zu bearbeiten und sicherzustellen, dass die Änderungen wie erwartet funktionieren, ohne bestehende Funktionen zu beeinträchtigen, können Sie sich an der folgenden Anleitung orientieren:**
 
-<figure><img src="../../../../../.gitbook/assets/docbits_regex_pattern_analysis.png" alt="Docbits Regex Pattern Analysis"><figcaption></figcaption></figure>
-
 **Bestehendes Muster analysieren:**
 
 * Untersuchen Sie das bestehende Regex-Muster, um zu verstehen, welche Daten es erfasst und wie es funktioniert.
@@ -28,8 +26,6 @@ Der frühere Regex-Link auf der Dokumenttypkarte ist in der aktuellen Oberfläch
     (?<=InvoiceDate )[\s]*P\d{5}
 
     Customer number Invoice number Invoice date P32180 613976 05/13/2019
-
-<figure><img src="../../../../../.gitbook/assets/docbits_import_start_process.png" alt="Docbits Import Start Process"><figcaption></figcaption></figure>
 
 **Änderungen dokumentieren:**
 

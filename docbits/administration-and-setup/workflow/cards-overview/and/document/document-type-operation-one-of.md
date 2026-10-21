@@ -33,3 +33,15 @@ This card is designed to manage actions on documents contingent upon their type,
 ## Conclusion:
 
 The "Document Type Condition" workflow card plays a crucial role in managing document-based operations with precision and flexibility. By using simple conditional logic, it helps ensure that documents are processed appropriately, enhancing efficiency and compliance. Documenting this card clearly will help users understand how to implement and utilize it effectively, making it a valuable part of your ERP system's documentation.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Use the same validation for several document types.
+
+**Configuration:** Select the is-one-of operator and the types `Invoice` and `Credit Note`.
+
+**Expected result and counterexample:** An `Invoice` passes; an `Order` does not.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

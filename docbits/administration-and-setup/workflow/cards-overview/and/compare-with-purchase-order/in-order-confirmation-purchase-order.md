@@ -19,3 +19,15 @@ Choose **Order Data** from the order confirmation and an **Operator** for the co
 Choose **Any/All** to decide whether one or all selected conditions must match. Then select the **Order Data**, **Operator**, and **Comparison Data** for the purchase order comparison.
 
 For the surrounding steps, see [Workflow](../../../) and [Compare with Purchase Order](./).
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Check an order confirmation against its linked purchase order.
+
+**Configuration:** Use a demo order and confirmation with the same supplier, article reference and compared values. Select the intended comparison direction and the fields this version offers.
+
+**Expected result and counterexample:** The matching comparison passes. Change one compared item value in a separate test case and verify that it is detected; a missing linked order is a separate data problem.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

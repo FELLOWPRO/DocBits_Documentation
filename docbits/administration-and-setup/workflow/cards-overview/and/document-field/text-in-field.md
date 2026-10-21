@@ -36,3 +36,15 @@ This workflow card is designed to automate actions based on the presence or abse
 ## **Conclusion:**
 
 The "Text Presence in Field" workflow card is a simple yet powerful tool for document content analysis. By automating actions based on text detection, this card supports more intelligent workflows, improves document handling accuracy, and reduces manual effort.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Find documents carrying a review marker.
+
+**Configuration:** Select text field `review_note`, the contains operator and text `manual review`.
+
+**Expected result and counterexample:** `Please start manual review` passes. `Ready for export` does not contain the selected text and fails.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

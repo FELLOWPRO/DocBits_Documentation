@@ -46,3 +46,13 @@ This workflow card is designed to compare a field's value with a specified refer
 ## **Conclusion:**
 
 The "Field Comparison with Tolerances" card is a versatile tool for workflows requiring flexible evaluations. By enabling comparisons with tolerances, it ensures workflows remain efficient and adaptable, accommodating real-world variations without compromising on accuracy.
+
+<!-- workflow-card-complete-example-20261021 condition_docfield_operator_value_tolerances -->
+
+### Reference-value tolerance example
+
+**Configuration:** Choose numeric document field `total_amount`, equality, reference value `100`, absolute tolerance `5` and tolerance type Value.
+
+**Expected result and counterexample:** With value `103`, the condition is true because the difference is within the permitted tolerance. With value `110`, the condition is false because the difference exceeds that tolerance. This card compares one field with a configured reference value. Use the separate two-field card when both sides must come from document fields. Missing or nonnumeric data requires investigation, not an assumed match.
+
+This is an illustrative test configuration and expected outcome; it was not executed. Use data and recipients configured in your test organization.

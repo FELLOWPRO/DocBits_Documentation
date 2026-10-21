@@ -33,3 +33,15 @@ The "**Assign Sequentially to User**" workflow card automates the assignment of 
 ## **Conclusion**
 
 The "Assign the Document Sequentially to User" workflow card ensures organized document distribution by assigning documents in a prioritized sequence. This enhances task management and reduces delays in processing.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Add a user to a prioritized document-approval sequence.
+
+**Configuration:** Select `Demo Reviewer A` and priority `10`. Add a separate assignment at priority `20` when a later reviewer is needed.
+
+**Expected result and counterexample:** The assignments carry the configured priorities; the lower numeric value has higher priority. Check the assignment sequence, not just the order of cards on the canvas.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

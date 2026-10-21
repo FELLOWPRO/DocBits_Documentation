@@ -31,3 +31,15 @@ The "**Assign the Document Sequentially to the Groups**" workflow card enables t
 ## **Conclusion**
 
 The "Assign the Document Sequentially to Groups" workflow card ensures efficient document allocation to one or more groups based on priority. This feature supports flexible and organized document processing across multiple teams or departments.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Prioritize document assignment to review teams.
+
+**Configuration:** Select the configured demo groups and set the required priority, for example `10`.
+
+**Expected result and counterexample:** The document receives the selected group assignments at that priority. Test a second priority separately when the groups must occupy different stages.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

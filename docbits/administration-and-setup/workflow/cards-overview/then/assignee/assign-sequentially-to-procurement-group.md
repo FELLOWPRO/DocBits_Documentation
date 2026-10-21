@@ -33,3 +33,15 @@ The "**Assign the Document Sequentially to the Procurement Group**" workflow car
 ## **Conclusion**
 
 The "Assign the Document Sequentially to the Procurement Group " workflow card ensures effective document allocation to procurement groups based on priority. This enhances organizational efficiency and task management.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Prioritize a procurement group within document review.
+
+**Configuration:** Select `Demo Procurement` and priority `10`.
+
+**Expected result and counterexample:** The document receives the procurement-group assignment at priority `10`. Check that later assignments use the intended higher numeric priorities.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

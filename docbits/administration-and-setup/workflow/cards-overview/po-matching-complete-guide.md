@@ -737,3 +737,73 @@ Fix: Check shipping documents or contact supplier
 * See "Tolerance Settings" for recommended values by industry
 * See "Exception Handling" for what to do with failures
 * Contact your procurement team for specific tolerance policies
+
+<!-- workflow-card-example-condition_promised_delivery_date_to_current-20261021 -->
+
+### Promised delivery date against the reference date
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-ca4dcfa998e7-en.png" alt="Card fields in the displayed version. The placeholders are not configured." width="563"><figcaption><p>Card fields in the displayed version. The placeholders are not configured.</p></figcaption></figure>
+
+`CONDITION_PROMISED_DELIVERY_DATE_TO_CURRENT` · version 2
+
+Assume a reference date of `2026-10-21` and a promised line delivery date of `2026-10-23`. Select the later-than comparison and zero day tolerance. The future date satisfies that comparison; `2026-10-20` does not. Configure Any/All and accepted-tolerance-day options deliberately and test a missing date separately.
+
+<!-- workflow-card-example-condition_po_extracted_table_column-20261021 -->
+
+### Purchase-order column against an extracted column
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-e2c12dd67cc0-en.png" alt="Card fields in the displayed version. The placeholders are not configured." width="563"><figcaption><p>Card fields in the displayed version. The placeholders are not configured.</p></figcaption></figure>
+
+`CONDITION_PO_EXTRACTED_TABLE_COLUMN` · version 2
+
+Compare the matched PO article column with extracted column `article_number`, using equality and All. Matching values `DEMO-A` pass; an extracted value `DEMO-B` fails. Select a lookup table only when a documented ID-to-value replacement is needed; verify that mapping before comparing.
+
+<!-- workflow-card-example-condition_check_facility_in_po-20261021 -->
+
+### Allowed purchase-order facilities
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-813ff783b1f2-en.png" alt="Card fields in the displayed version. The placeholders are not configured." width="563"><figcaption><p>Card fields in the displayed version. The placeholders are not configured.</p></figcaption></figure>
+
+`CONDITION_CHECK_FACILITY_IN_PO` · version 2
+
+Select All, the is-in comparison and the configured facility code `DEMO-NORTH`. Matched PO lines in that facility pass; a line in `DEMO-SOUTH` fails. Use facility codes from the PO data rather than assuming a display label is its code.
+
+<!-- workflow-card-example-condition_purchase_order_full_match-20261021 -->
+
+### Complete purchase-order match
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-91a5b2a70e88-en.png" alt="Card fields in the displayed version. The placeholders are not configured." width="563"><figcaption><p>Card fields in the displayed version. The placeholders are not configured.</p></figcaption></figure>
+
+`CONDITION_PURCHASE_ORDER_FULL_MATCH` · version 2
+
+Use a completely matched demo invoice and PO with quantity `2` and unit price `100` on both sides, and configured quantity/price tolerances. Select the full-match condition: it passes. Then test a price outside the configured tolerance. Missing comparison data or an absent PO is not a successful full match. A delivery note has a quantity-only comparison; do not assume the invoice price rules apply to it.
+
+<!-- workflow-card-example-condition_po_update_empty_column_check-20261021 -->
+
+### Empty purchase-order database column
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-f20345d72edd-en.png" alt="Card fields in the displayed version. The placeholders are not configured." width="563"><figcaption><p>Card fields in the displayed version. The placeholders are not configured.</p></figcaption></figure>
+
+`CONDITION_PO_UPDATE_EMPTY_COLUMN_CHECK` · version 2
+
+Select a valid PO table and column offered by the card and the is-empty operator. For an existing matching PO record with a blank value, the condition passes; a populated value fails. Verify the PO reference and table/column mapping first. Boolean `false` is still a present Boolean value; a missing PO record is a separate data error.
+
+<!-- workflow-card-example-condition_compare_unit_price_percent_per-20261021 -->
+
+### Percentage tolerance per price basis
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-14ec95131dfc-en.png" alt="Card fields in the displayed version. The placeholders are not configured." width="563"><figcaption><p>Card fields in the displayed version. The placeholders are not configured.</p></figcaption></figure>
+
+`CONDITION_COMPARE_UNIT_PRICE_PERCENT_PER` · version 2
+
+Example: PO unit price `200`, base price `100` and configured tolerance `1` produce an effective rate of `(200 / 100) * (1 / 100) = 0.02`, or `2%`. The comparison band is `196–204`. Equality within tolerance accepts a document price of `203` and rejects `210`. Do not assume this card is the same as a fixed 1% tolerance.
+
+<!-- workflow-card-example-condition_compare_po_line_value-20261021 -->
+
+### Purchase-order line value against a reference
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-43a5d2686fb7-en.png" alt="Card fields in the displayed version. The placeholders are not configured." width="563"><figcaption><p>Card fields in the displayed version. The placeholders are not configured.</p></figcaption></figure>
+
+`CONDITION_COMPARE_PO_LINE_VALUE` · version 2
+
+Select the matched PO column `item_number`, equality and value `DEMO-A`. A line with `DEMO-A` passes; `DEMO-B` fails. Use only operators supported for the selected data type, and test missing matched-line data separately.

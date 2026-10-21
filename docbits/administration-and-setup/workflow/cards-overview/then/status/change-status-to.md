@@ -24,7 +24,7 @@ The **"Change Status"** workflow card is used to change the status of a document
 
 ## **Functionality:**
 
-* **Condition Evaluation**: The system evaluates the conditions set in the **"Where"** and **"And Sections."** If these conditions are true, the card proceeds to change the document's status to the selected value.
+* **Condition Evaluation**: The system evaluates the conditions set in the **"When"** and **"And."** If these conditions are true, the card proceeds to change the document's status to the selected value.
 * **Status Update**: Once the conditions are satisfied, the document's status is updated to one of the predefined options (Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval), depending on the user’s selection.
 * **Trigger Workflow Action**: If **Trigger Workflows** is set to **True**, the system automatically initiates any associated workflows following the status update. If set to **False**, no additional workflows are triggered, and the process ends with the status change.
 
@@ -34,8 +34,20 @@ To configure this card, users need to:
 
 1. Specify the desired **Status** that the document will be set to upon condition evaluation (Error, Rejected, Ready for Validation, Pending Approval, or Pending Second Approval).
 2. Choose whether to **Trigger Workflows** after the status change by selecting **True** or **False**.
-3. The card only executes its action if both conditions in the **"Where"** and **"And Sections"** are evaluated as true.
+3. The card only executes its action if both conditions in the **"When"** and **"And"** are evaluated as true.
 
 ## **Conclusion:**
 
 The **"Change Status"** workflow card offers a streamlined approach to managing document statuses and triggering related workflows. It ensures documents are automatically routed to the correct status and that the necessary actions are taken, depending on the status change. By setting clear conditions for execution, it reduces manual effort and enhances workflow efficiency.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Move a reviewed document to a defined processing state.
+
+**Configuration:** Select your configured `Demo Review` status and disable triggering additional workflows for this example.
+
+**Expected result and counterexample:** The document receives the selected status. This action alone does not execute the separately configured export.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

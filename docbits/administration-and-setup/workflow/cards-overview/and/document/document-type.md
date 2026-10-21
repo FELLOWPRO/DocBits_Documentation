@@ -31,3 +31,15 @@ This workflow card is designed to evaluate whether a document matches a specific
 ## Conclusion:
 
 The "Document Type Comparison" workflow card is essential for ensuring that workflows proceed based on the type of document being processed. By comparing the document type, it helps organizations automate document routing and processing tasks, ensuring that documents are handled appropriately based on their type.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Run an invoice-specific check.
+
+**Configuration:** Select document type `Invoice` and the equals operator.
+
+**Expected result and counterexample:** An invoice passes. A credit note does not pass this condition.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

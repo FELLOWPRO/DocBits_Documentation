@@ -34,3 +34,15 @@ This workflow card is designed to automate actions based on the presence or stat
 ## **Conclusion:**
 
 The "Field Presence and State Validation" workflow card is a critical tool for document processing workflows, ensuring accurate handling of missing or populated fields. By automating actions based on field states, this card enhances data integrity, reduces errors, and ensures workflows operate smoothly and efficiently.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Detect invoices whose invoice number still needs review.
+
+**Configuration:** Select field `invoice_number` and Empty/Not in Document.
+
+**Expected result and counterexample:** An empty or missing field passes. A populated value such as `DEMO-001` fails this condition.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

@@ -30,3 +30,15 @@ The "**Assign the Document Sequentially to User/Group Based on Decision Table**"
 ## **Conclusion**
 
 The "**Assign the Document Sequentially to User/Group Based on Decision Table**" workflow card ensures efficient and dynamic document routing. By leveraging decision table logic and priority values, the card facilitates accurate assignment to either a user or a group, streamlining document workflows.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Use a decision table to select a prioritized document assignee.
+
+**Configuration:** Configure a matching demo decision-table rule returning the intended user or group, then select that table on the card.
+
+**Expected result and counterexample:** The returned assignee is used for sequential document assignment. With no matching return, do not assume a default assignee; inspect the result and configured fallback behavior of this version.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

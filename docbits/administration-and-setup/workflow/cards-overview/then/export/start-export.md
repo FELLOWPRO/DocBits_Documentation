@@ -14,14 +14,14 @@ The **"Start Export"** workflow card is designed to initiate the export process 
 
 ## **Functionality:**
 
-* **Condition Evaluation**: The system evaluates the conditions set in the **"Where"** and **"And Sections"** of the workflow. If all conditions are true, the export process begins.
+* **Condition Evaluation**: The system evaluates the conditions set in the **"When"** and **"And"** of the workflow. If all conditions are true, the export process begins.
 * **Document Export**: The document is processed and exported using the default or previously defined export configuration.
 
 ## **Setup and Configuration:**
 
 Earlier versions use the export settings already defined in the system. On version 4, configure validation and select Status after export. Also check that:
 
-1. The **"Where"** and **"And Sections"** conditions are correctly configured, as the card only executes if these conditions evaluate to true.
+1. The **"When"** and **"And"** conditions are correctly configured, as the card only executes if these conditions evaluate to true.
 2. A valid export configuration is associated with the document in the system.
 
 ## **Conclusion:**
@@ -31,3 +31,15 @@ The **"Start Export"** workflow card provides a streamlined and automated way to
 ## Card versions and result status
 
 The statement above about no card-specific configuration applies to the earlier Start Export card. Start Export with Validation v4 includes validation and **Status after export**. Choose `finished` to close a successfully exported document, or `exported` to keep it open for further processing. Earlier versions retain `finished`. See [Export cards and result status](../../export-cards-guide.md) for defaults, errors and tests.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Export a document after the required checks have passed.
+
+**Configuration:** Select the supported post-export status, for example `exported` when the document must remain available for further processing. Ensure the configured exporter and required data are ready.
+
+**Expected result and counterexample:** After successful export the selected result status is applied. An exporter error is not a completed export; inspect its log and test the failure branch.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

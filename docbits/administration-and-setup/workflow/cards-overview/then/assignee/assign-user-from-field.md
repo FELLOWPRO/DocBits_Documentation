@@ -18,7 +18,7 @@ The **"Assign User from Field with Fallback"** workflow card dynamically assigns
 ## **Functionality:**
 
 * **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
+  The card only executes its action if both the **"When"** and **"And"** evaluate as true.
 * **Field-Based User Assignment:**\
   The card first attempts to assign the task or action to the user identified in the **Field Name**.
 * **Fallback User Assignment:**\
@@ -34,3 +34,15 @@ The **"Assign User from Field with Fallback"** workflow card dynamically assigns
 ## **Conclusion:**
 
 The **"Assign User from Field with Fallback"** workflow card ensures that a task or action is always assigned to a valid user. If the user in the document field is not available, the fallback user is automatically assigned, providing flexibility and ensuring task completion.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Assign the reviewer named by document data.
+
+**Configuration:** Select field `reviewer_name` and fallback user `Demo Reviewer A`. Supply a resolvable demo user name in the first test.
+
+**Expected result and counterexample:** A valid field value selects that user. An empty or unresolvable value uses the configured fallback; verify both cases.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

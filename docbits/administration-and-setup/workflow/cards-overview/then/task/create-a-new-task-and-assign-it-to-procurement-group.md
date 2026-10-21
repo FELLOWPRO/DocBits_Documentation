@@ -32,7 +32,7 @@ The **"Create Task for Procurement Group"** workflow card creates a new task dyn
 ## **Functionality:**
 
 * **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
+  The card only executes its action if both the **"When"** and **"And"** evaluate as true.
 * **Task Creation:**\
   The card creates a new task, assigning it to the procurement group defined in the "Group Name" field. This task will include the specified title, description, and priority level.
 * **Email Notification:**\
@@ -50,3 +50,15 @@ The **"Create Task for Procurement Group"** workflow card creates a new task dyn
 ## **Conclusion:**
 
 The "Create Task for Procurement Group" workflow card ensures that tasks are automatically assigned to the appropriate procurement group with defined priorities. This card can also notify the group via email to ensure tasks are attended to promptly, improving workflow efficiency and task management.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Ask the purchasing team to review an invoice exception.
+
+**Configuration:** Select `Demo Procurement`, title `Review order variance`, description and priority.
+
+**Expected result and counterexample:** A task is created for the selected procurement group. Check the task assignee and description; creation alone does not confirm the variance has been resolved.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

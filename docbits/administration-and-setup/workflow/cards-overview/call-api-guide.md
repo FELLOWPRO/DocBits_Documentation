@@ -52,7 +52,7 @@ Use this card when you need to:
 
 ## How It Works
 
-1. **Condition Check**: The workflow first checks if the conditions in "Where" and "And" sections are met
+1. **Condition Check**: The workflow first checks if the conditions in "When" and "And" sections are met
 2. **Prepare Data**: The card collects the parameters you've configured
 3. **Send Request**: It sends your data to the external API/service
 4. **Receive Response**: The external service responds with data

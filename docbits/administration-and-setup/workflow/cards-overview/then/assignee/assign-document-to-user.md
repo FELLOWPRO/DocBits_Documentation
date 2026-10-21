@@ -23,7 +23,7 @@ The **"Assign Document to User"** workflow card allows users to assign a documen
 ## **Functionality:**
 
 * **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
+  The card only executes its action if both the **"When"** and **"And"** evaluate as true.
 * **Document Assignment:**\
   The card assigns the document to the selected user, ensuring that the task is routed to the appropriate person for action. This helps with accountability and effective document management.
 * **Decision Tree (Version 3):**\
@@ -39,3 +39,15 @@ The **"Assign Document to User"** workflow card allows users to assign a documen
 ## **Conclusion:**
 
 The **"Assign Document to User"** workflow card facilitates efficient document routing by assigning it to the selected user, with the added flexibility in Version 3 to dynamically determine the user using a decision tree. This ensures a more adaptive and efficient workflow process.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Send invoices needing manual review to one responsible person.
+
+**Configuration:** Select configured user `Demo Reviewer A`.
+
+**Expected result and counterexample:** The document is assigned to that user. Confirm the resulting document assignment; this card does not by itself create a separate review task.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

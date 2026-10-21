@@ -59,10 +59,22 @@ def front_matter(text: str) -> str | None:
 
 
 def technical_identifiers(text: str) -> Counter:
-    """Escaped API card identifiers must also survive translation in prose."""
-    values = re.findall(r"[\w]+(?:\\_[\w]+)+", text)
-    return Counter(value for value in values
-                   if value.replace("\\_", "_").isupper() or value == "tasks\\_create")
+    """Preserve escaped IDs, inline technical values and template placeholders."""
+    text = re.sub(r'<figure\b[\s\S]*?</figure>', '', text)
+    text = re.sub(r'!?\[([^\]]*)\]\([^)]*\)', r'\1', text)
+    identifiers = []
+    # Fenced diagrams may translate descriptive labels. Inline code and
+    # explicitly escaped identifiers denote technical values to preserve.
+    inline = re.findall(r'(?<!`)`([^`\n]+)`(?!`)', text)
+    prose = re.sub(r'(?<!`)`([^`\n]+)`(?!`)', '', text)
+    for segment in inline:
+        identifiers.extend(re.findall(r"[A-Za-z][A-Za-z0-9]*(?:_[A-Za-z0-9]+)+", segment.replace("\\_", "_")))
+    escaped = re.findall(r"[\w]+(?:\\_[\w]+)+", prose)
+    identifiers.extend(value.replace("\\_", "_") for value in escaped)
+    prose = re.sub(r"[\w]+(?:\\_[\w]+)+", '', prose)
+    identifiers.extend(value for value in re.findall(r"[A-Za-z][A-Za-z0-9]*(?:_[A-Za-z0-9]+)+", prose) if value.isupper())
+    placeholders = re.findall(r"\{\{[^{}\n]+\}\}|(?<!\{)\{[A-Za-z][A-Za-z0-9_]*\}(?!\})", text.replace("\\_", "_"))
+    return Counter(identifiers + placeholders)
 
 
 def navigated_card_path(folder: str, reference: str, navigation: set[str]) -> str | None:
@@ -122,6 +134,9 @@ def check(repo: Path, locales: list[str]) -> list[str]:
                 errors.append(f'{rel}: technical frontmatter differs from the English source')
             if not re.search(r'^# .+', text, re.M):
                 errors.append(f'{rel}: missing page title')
+            title_match = re.search(r'^# (.+)$', text, re.M)
+            if title_match and len(title_match[1]) > 100:
+                errors.append(f'{rel}: page title exceeds GitBook 100-character limit')
             if re.search(r'ZXQSEG\d+QXZ|⟦P\d+⟧', text):
                 errors.append(f'{rel}: unresolved translation marker')
             # Ignore literal examples when checking GitBook block delimiters.

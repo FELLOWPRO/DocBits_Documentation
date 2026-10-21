@@ -48,3 +48,15 @@ This workflow card is designed to automate actions by comparing the values of tw
 ## **Conclusion:**
 
 The "Compare Two Fields with Tolerance" workflow card is a powerful tool for comparing document fields while accounting for permissible deviations in the data. By applying tolerance to field comparisons, this card adds flexibility to the workflow, enabling it to handle real-world data variations. It improves decision-making, supports data validation, and enhances overall workflow automation.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Accept a small difference between an extracted amount and a separately calculated amount.
+
+**Configuration:** Select numeric fields `net_total` and `calculated_total`, equality comparison and an absolute tolerance of `5`. Use values `103` and `100`.
+
+**Expected result and counterexample:** The difference is `3`, so it is within the tolerance. With `110` and `100`, the difference is `10` and the equality-with-tolerance condition fails.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

@@ -67,3 +67,15 @@ The "**Assign Document and Create Task/Notification Based on Decision Table**" w
 ## **Conclusion**
 
 The "Assign Document and Create Task/Notification Based on Decision Table" workflow card ensures tasks or notifications are dynamically assigned to the appropriate user or group based on decision table results. This card facilitates efficient task delegation, customizable priorities, and optional email notifications to enhance workflow responsiveness.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Use a decision-table result to assign a document and create a review task in sequence.
+
+**Configuration:** Select the demo decision table, task title `Review invoice`, description and priority. Configure the assignee-return format and email option required by the selected version.
+
+**Expected result and counterexample:** The matching returned assignee receives the documented document assignment and task/notification. Verify both results; an empty table return is not a successful assignment.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

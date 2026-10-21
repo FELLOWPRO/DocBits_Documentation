@@ -45,7 +45,7 @@ The **"Create Task or Notification"** workflow card streamlines task management 
 ## **Functionality:**
 
 * **Condition Evaluation**:\
-  This card is triggered only if conditions in the **"Where"** and **"And Sections"** are met.
+  This card is triggered only if conditions in the **"When"** and **"And"** are met.
 * **Task or Notification Creation**:
   * Versions 2 and 3: A task is created with the specified title, description, priority, and assigned user.
   * Version 4: Allows creating either a task or a notification.
@@ -70,3 +70,15 @@ The **"Create Task or Notification"** workflow card streamlines task management 
 ## **Conclusion:**
 
 The **"Create Task or Notification"** workflow card is a versatile tool for managing tasks and notifications. By supporting dynamic user assignment through decision trees and providing options for task or notification creation, it enhances workflow adaptability and collaboration efficiency.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Give one reviewer an explicit action item.
+
+**Configuration:** Select `Demo Reviewer A`, title `Review invoice`, description and priority.
+
+**Expected result and counterexample:** The selected user receives the new task. Confirm the task title and assignee; the task remains to be completed by the reviewer.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

@@ -61,3 +61,15 @@ The "**Assign Document and Create Task/Notification for User**" workflow card as
 ## **Conclusion**
 
 The "Assign Document and Create Task/Notification for User" workflow card ensures documents are assigned to the appropriate user while creating tasks or notifications with defined priorities and optional email notifications. This card helps streamline task delegation and enhances workflow efficiency.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Create a user review task alongside prioritized document assignment.
+
+**Configuration:** Select `Demo Reviewer A`, task title `Review invoice`, task priority and assignment priority.
+
+**Expected result and counterexample:** Check that both the document assignment and the task/notification exist for the selected user, with the intended priorities.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

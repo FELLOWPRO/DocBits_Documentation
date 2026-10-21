@@ -15,7 +15,7 @@ La tarjeta de flujo de trabajo **"Asignar documento a la suborganización"** asi
 ## **Funcionalidad:**
 
 * **Evaluación de la condición:**\
-  La tarjeta solo ejecuta su acción si las secciones **"Donde"** y **"Y"** se evalúan como verdaderas.
+  La tarjeta solo ejecuta su acción si las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
 * **Asignación del documento:**\
   La tarjeta asigna el documento a la suborganización seleccionada de la lista desplegable.
 
@@ -27,3 +27,15 @@ La tarjeta de flujo de trabajo **"Asignar documento a la suborganización"** asi
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo **"Asignar documento a la suborganización"** garantiza que los documentos se enruten a la suborganización correcta, agilizando el proceso de gestión de documentos al asignar la responsabilidad según la estructura organizativa.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Enrutar un documento a una unidad de negocio conocida.
+
+**Configuración:** Seleccione la suborganización configurada `Demo North`.
+
+**Resultado esperado y contraejemplo:** El documento pertenece a la suborganización seleccionada después de la acción. Confirme el destino antes de habilitar el flujo de trabajo porque las reglas de acceso de la suborganización pueden diferir.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

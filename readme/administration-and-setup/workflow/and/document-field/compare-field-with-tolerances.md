@@ -46,3 +46,13 @@ Esta tarjeta de flujo de trabajo está diseñada para comparar el valor de un ca
 ## **Conclusión:**
 
 La tarjeta "Field Comparison with Tolerances" es una herramienta versátil para los flujos de trabajo que requieren evaluaciones flexibles. Al permitir comparaciones con tolerancias, garantiza que los flujos de trabajo sigan siendo eficientes y adaptables, acomodando las variaciones del mundo real sin comprometer la precisión.
+
+<!-- workflow-card-complete-example-20261021 condition_docfield_operator_value_tolerances -->
+
+### Ejemplo de tolerancia de valor de referencia
+
+**Configuración:** Elija el campo de documento numérico `total_amount`, igualdad, valor de referencia `100`, tolerancia absoluta `5` y tipo de tolerancia Valor.
+
+**Resultado esperado y contraejemplo:** Con el valor `103`, la condición es verdadera porque la diferencia está dentro de la tolerancia permitida. Con el valor `110`, la condición es falsa porque la diferencia excede esa tolerancia. Esta tarjeta compara un campo con un valor de referencia configurado. Utilice la tarjeta de dos campos separada cuando ambos lados deban provenir de campos del documento. Los datos faltantes o no numéricos requieren investigación, no una coincidencia supuesta.
+
+Esta es una configuración de prueba ilustrativa y el resultado esperado; no fue ejecutado. Utilice datos y destinatarios configurados en su organización de prueba.

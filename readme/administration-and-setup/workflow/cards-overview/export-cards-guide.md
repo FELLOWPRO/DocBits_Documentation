@@ -40,3 +40,13 @@ Por ejemplo, seleccione `exported` cuando una exportación exitosa deba dejar el
 ## Comprobaciones requeridas
 
 Pruebe una configuración válida, una configuración faltante, tareas pendientes con ambas configuraciones y ambos estados de resultados. Pruebe la versión ya utilizada en un flujo de trabajo existente antes de cambiarla. Para una exportación en cola, verifique la ejecución final; para una exportación inmediata verificar su propio resultado. Revise los [Registros de flujo de trabajo](../workflow-logs.md) y no confunda una tarjeta omitida con éxito.
+
+<!-- workflow-card-complete-example-20261021 action_export_with_config_deferred -->
+
+### Ejemplo de exportación diferida
+
+**Configuración:** En v3, elija la configuración de prueba `DEMO_EXPORT`, deje desactivado Ignorar tareas pendientes y seleccione `exported` como estado después de la exportación. Coloque la tarjeta en la ruta validada prevista.
+
+**Resultado esperado y contraejemplo:** La tarjeta recoge una solicitud de exportación para el final de la ejecución del flujo de trabajo. Sólo una ejecución final exitosa establece que el destino recibió los datos y que el documento permanece abierto como `exported`. El éxito de una tarjeta en cola por sí sola no prueba la exportación; una tarea de bloqueo no resuelta no debe tratarse como entrega.
+
+Esta es una configuración de prueba ilustrativa y el resultado esperado; no fue ejecutado. Utilice datos y destinatarios configurados en su organización de prueba.

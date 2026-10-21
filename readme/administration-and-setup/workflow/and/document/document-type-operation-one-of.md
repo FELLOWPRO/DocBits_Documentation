@@ -33,3 +33,15 @@ Esta tarjeta está diseñada para gestionar acciones sobre los documentos en fun
 ## Conclusión:
 
 La tarjeta de flujo de trabajo "Document Type Condition" desempeña un papel crucial en la gestión de operaciones basadas en documentos con precisión y flexibilidad. Al usar lógica condicional simple, ayuda a garantizar que los documentos se procesen de forma adecuada, mejorando la eficiencia y el cumplimiento. Documentar claramente esta tarjeta ayudará a los usuarios a comprender cómo implementarla y utilizarla de forma eficaz, convirtiéndola en una parte valiosa de la documentación de su sistema ERP.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Utilice la misma validación para varios tipos de documentos.
+
+**Configuración:** Seleccione el operador es uno de y los tipos `Invoice` y `Credit Note`.
+
+**Resultado esperado y contraejemplo:** Un `Invoice` pasa; un `Order` no lo hace.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

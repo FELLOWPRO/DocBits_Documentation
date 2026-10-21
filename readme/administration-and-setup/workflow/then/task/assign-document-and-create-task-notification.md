@@ -67,3 +67,15 @@ La tarjeta de flujo de trabajo "**Asignar documento y crear tarea/notificación 
 ## **Conclusión**
 
 La tarjeta de flujo de trabajo "Assign Document and Create Task/Notification Based on Decision Table" garantiza que las tareas o notificaciones se asignen dinámicamente al usuario o grupo adecuado según los resultados de la tabla de decisión. Esta tarjeta facilita una delegación de tareas eficiente, prioridades personalizables y notificaciones opcionales por correo electrónico para mejorar la capacidad de respuesta del flujo de trabajo.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo usarlo:** Utilice el resultado de una tabla de decisiones para asignar un documento y crear una tarea de revisión en secuencia.
+
+**Configuración:** Seleccione la tabla de decisiones de demostración, el título de la tarea `Review invoice`, la descripción y la prioridad. Configure el formato de devolución del responsable y la opción de correo electrónico requeridos por la versión seleccionada.
+
+**Resultado esperado y contraejemplo:** El responsable devuelto coincidente recibe la asignación del documento documentado y la tarea/notificación. Verifique ambos resultados; una devolución de tabla vacía no es una tarea exitosa.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

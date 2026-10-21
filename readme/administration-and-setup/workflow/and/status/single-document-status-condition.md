@@ -37,3 +37,13 @@ Esta tarjeta de flujo de trabajo está adaptada para gestionar operaciones sobre
 #### Conclusión
 
 La tarjeta de flujo de trabajo "Single Document Status Condition" simplifica la gestión de documentos centrándose en condiciones de estado individuales. Esta especificación ayuda en los casos en los que es necesario un control preciso de los flujos de documentos, especialmente en entornos con criterios de procesamiento estrictos. Documentar claramente esta versión de la tarjeta garantizará que los usuarios comprendan plenamente su aplicación y puedan integrarla de forma eficaz en sus operaciones diarias, mejorando tanto el cumplimiento como la eficiencia en el procesamiento de documentos.
+
+<!-- workflow-card-complete-example-20261021 condition_doc_status_is_isnot -->
+
+### Ejemplo de estado único
+
+**Configuración:** Elija operador `is` y estado `Pending Approval`. Agregue una siguiente acción de revisión apropiada para ese estado.
+
+**Resultado esperado y contraejemplo:** La condición es verdadera para un documento actualmente `Pending Approval`; es falso para un documento con estado `Ready in Validation`. Utilice el estado seleccionado real de su lanzamiento. Cambiar un estado no exporta el documento.
+
+Esta es una configuración de prueba ilustrativa y el resultado esperado; no fue ejecutado. Utilice datos y destinatarios configurados en su organización de prueba.

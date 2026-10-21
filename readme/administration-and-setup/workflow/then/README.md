@@ -60,7 +60,7 @@ Cambie entradas o calcule valores en una tabla de documentos. Seleccione la tabl
 
 ## Responsable
 
-Asigne el documento a un usuario, grupo, destinatario o suborganización. Algunas tarjetas utilizan un campo o una tabla de decisiones y ofrecen un recurso alternativo. Elija el destino correcto y recurra a la tarjeta seleccionada. Consulte [Cesionario](assignee).
+Asigne el documento a un usuario, grupo, destinatario o suborganización. Algunas tarjetas utilizan un campo o una tabla de decisiones y ofrecen un recurso alternativo. Configure el destino correcto y el comportamiento alternativo en la tarjeta seleccionada. Consulte [Responsable](assignee).
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-aa4f244a25b3-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 

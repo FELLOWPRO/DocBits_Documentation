@@ -18,7 +18,7 @@ La tarjeta de flujo de trabajo **"Asignar documento a una suborganización coinc
 ## **Funcionalidad:**
 
 * **Evaluación de la condición:**\
-  La tarjeta solo ejecuta su acción si las secciones **"Donde"** y **"Y"** se evalúan como verdaderas.
+  La tarjeta solo ejecuta su acción si las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
 * **Asignación dinámica:**\
   La tarjeta comprueba el valor del campo especificado y asigna el documento a la suborganización que coincide con este valor.
 * **Mecanismo alternativo:**\
@@ -34,3 +34,15 @@ La tarjeta de flujo de trabajo **"Asignar documento a una suborganización coinc
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo **"Asignar documento a una suborganización coincidente según el campo"** ofrece flexibilidad al enrutar dinámicamente los documentos a la suborganización adecuada, con una opción alternativa añadida para garantizar que ningún documento quede sin asignar.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Elija una unidad de negocio de un campo de enrutamiento extraído.
+
+**Configuración:** Establezca el campo de enrutamiento `business_unit` en el nombre de la suborganización configurada `Demo North` y elija `Demo Default` como respaldo.
+
+**Resultado esperado y contraejemplo:** Un valor de campo coincidente selecciona `Demo North`. Un nombre desconocido usa `Demo Default`; Pruebe el respaldo antes de habilitar el flujo de trabajo.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

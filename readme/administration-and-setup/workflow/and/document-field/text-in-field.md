@@ -36,3 +36,15 @@ Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones segú
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo "Text Presence in Field" es una herramienta sencilla pero potente para el análisis del contenido de los documentos. Al automatizar acciones según la detección de texto, esta tarjeta facilita flujos de trabajo más inteligentes, mejora la precisión en el manejo de documentos y reduce el esfuerzo manual.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Busque documentos que lleven un marcador de revisión.
+
+**Configuración:** Seleccione el campo de texto `review_note`, que contiene el operador y el texto `manual review`.
+
+**Resultado esperado y contraejemplo:** `Please start manual review` pasa. `Ready for export` no contiene el texto seleccionado y falla.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

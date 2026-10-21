@@ -55,3 +55,15 @@ La tarjeta de flujo de trabajo **"Call API"** permite a los usuarios realizar so
 La tarjeta de flujo de trabajo **"Call API"** mejora la automatización del flujo de trabajo al posibilitar la interacción directa con sistemas externos. Al proporcionar configuraciones flexibles para endpoints, métodos y datos, garantiza que los flujos de trabajo puedan integrarse sin problemas con API de terceros o backends personalizados. La capacidad de ejecutar llamadas a la API de forma condicional garantiza precisión y eficiencia en la automatización de las comunicaciones externas.
 
 ***
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Solicite una validación adicional a un servicio externo configurado.
+
+**Configuración:** Seleccione el punto final de API de demostración configurado y el método HTTP. Proporcione los parámetros y el cuerpo JSON requeridos por ese punto final.
+
+**Resultado esperado y contraejemplo:** Para una respuesta simulada `200`, verifique el manejo de respuesta esperado por las siguientes tarjetas. Pruebe también `500`; iniciar la llamada no establece que la verificación comercial haya sido exitosa.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

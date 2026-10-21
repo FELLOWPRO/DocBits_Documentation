@@ -31,7 +31,7 @@ La tarjeta de flujo de trabajo **"Calcular columnas en la tabla"** se utiliza pa
 ## **Funcionalidad:**
 
 * **Evaluación de la condición:**\
-  La tarjeta solo ejecuta su acción si las secciones **"Donde"** y **"Y"** se evalúan como verdaderas.
+  La tarjeta solo ejecuta su acción si las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
 * **Cálculo de columnas:**\
   La tarjeta realiza la operación matemática seleccionada entre las dos columnas elegidas.
 * **Almacenamiento del resultado:**\
@@ -51,3 +51,15 @@ La tarjeta de flujo de trabajo **"Calcular columnas en la tabla"** se utiliza pa
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo **"Calcular columnas en la tabla"** permite a los usuarios realizar cálculos dinámicos entre columnas de una tabla y almacenar los resultados en una columna designada. La tarjeta ofrece flexibilidad para aplicar diferentes operaciones matemáticas y garantiza que el resultado se almacene en la columna especificada.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo usar:** Calcule los totales de línea a partir de la cantidad y el precio unitario.
+
+**Configuración:** Seleccionar tabla `lines`, columnas `quantity` y `unit_price`, columna de multiplicación y resultado `line_total`.
+
+**Resultado esperado y contraejemplo:** Una fila que contiene `2` y `10` produce `20`. Pruebe otra fila de forma independiente y diagnostique entradas faltantes o no numéricas en lugar de tratarla como un total válido.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

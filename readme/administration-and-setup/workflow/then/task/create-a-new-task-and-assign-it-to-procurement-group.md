@@ -32,7 +32,7 @@ La tarjeta de flujo de trabajo **"Crear tarea para grupo de adquisiciones"** cre
 ## **Funcionalidad:**
 
 * **Evaluación de la condición:**\
-  La tarjeta solo ejecuta su acción si las secciones **"Donde"** y **"Y"** se evalúan como verdaderas.
+  La tarjeta solo ejecuta su acción si las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
 * **Creación de la tarea:**\
   La tarjeta crea una nueva tarea, asignándola al grupo de compras definido en el campo "Group Name". Esta tarea incluirá el título, la descripción y el nivel de prioridad especificados.
 * **Notificación por correo electrónico:**\
@@ -50,3 +50,15 @@ La tarjeta de flujo de trabajo **"Crear tarea para grupo de adquisiciones"** cre
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo "Create Task for Procurement Group" garantiza que las tareas se asignen automáticamente al grupo de compras adecuado con prioridades definidas. Esta tarjeta también puede notificar al grupo por correo electrónico para garantizar que las tareas se atiendan con prontitud, mejorando la eficiencia del flujo de trabajo y la gestión de tareas.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Solicite al equipo de compras que revise una excepción de factura.
+
+**Configuración:** Seleccione `Demo Procurement`, título `Review order variance`, descripción y prioridad.
+
+**Resultado esperado y contraejemplo:** Se crea una tarea para el grupo de adquisiciones seleccionado. Verifique el responsable de la tarea y su descripción; La creación por sí sola no confirma que la variación se haya resuelto.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

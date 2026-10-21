@@ -361,3 +361,13 @@ Headers: Authorization: Bearer token
 * **CONDITION\_HTTPS\_REQUEST\_STATUS** - Verifique si la solicitud se realizó correctamente
 * **ACTION\_SEND\_EMAIL** - Enviar por correo electrónico en su lugar
 * **ACTION\_RUN\_DOCOPERATOR\_SCRIPT** - Scripts automatizados
+
+<!-- workflow-card-complete-example-20261021 action_https_request -->
+
+### Ejemplo de acción HTTPS
+
+**Configuración:** Seleccione el método `POST`, reemplace `DEMO_WEBHOOK_URL` con su punto final de prueba autorizado, agregue el encabezado `Content-Type: application/json` y el cuerpo `{"document_number":"DEMO-001"}`. Configure la autenticación solo según lo requiera ese punto final; Nunca copie un secreto real en la documentación.
+
+**Resultado esperado y contraejemplo:** La acción envía la solicitud configurada cuando se ejecuta su ruta de flujo de trabajo. Inspeccione la respuesta HTTP y el servicio de prueba de recepción. Un tiempo de espera no es prueba de que el servicio no hizo nada y esta acción Entonces es independiente de la tarjeta Y que verifica el estado HTTP. Esta solicitud ilustrativa no ha sido enviada.
+
+Esta es una configuración de prueba ilustrativa y el resultado esperado; no fue ejecutado. Utilice datos y destinatarios configurados en su organización de prueba.

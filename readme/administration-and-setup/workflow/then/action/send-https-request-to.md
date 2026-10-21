@@ -1,4 +1,4 @@
-# Send HTTPS request to
+# Senden Sie eine HTTPS-Anfrage an
 
 <figure><img src="../../../../.gitbook/assets/Then_Send_HTTPS_1.png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -11,7 +11,7 @@ Die Workflow-Karte **"Send HTTPS Request"** ermöglicht es Benutzern, HTTPS-Anfr
 1. **URL**
    * **Beschreibung:** Gibt den Endpunkt an, an den die HTTPS-Anfrage gesendet wird.
    * **Detail:** Geben Sie die vollständige URL der API oder des Webdienstes ein, mit dem eine Verbindung hergestellt werden soll.
-2. **Header**
+2. **Kopfzeile**
    * **Beschreibung:** Legt die Header fest, die in die HTTPS-Anfrage aufgenommen werden.
    * **Detail:** Geben Sie **Schlüssel-Wert-Paare** in einem **gültigen JSON-Format** an, um Header wie Authentifizierungstoken oder Inhaltstypen festzulegen. Beispiel: {"Authorization": "Bearer example\_value"}
 3. **Methode**
@@ -30,7 +30,7 @@ Die Workflow-Karte **"Send HTTPS Request"** ermöglicht es Benutzern, HTTPS-Anfr
 
 ## Funktionalität:
 
-* **Bedingungsauswertung:** Die Karte sendet die HTTPS-Anfrage nur, wenn der **"Where"**- und der **"And"**-Abschnitt als erfüllt ausgewertet werden.&#x20;
+* **Bedingungsauswertung:** Die Karte sendet die HTTPS-Anfrage nur, wenn der **„Wo“**- und der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
   * Ist eine der Bedingungen nicht erfüllt, wird die Anfrage nicht gesendet.
 * **Ausführung der Anfrage:**
   * Sind die Bedingungen erfüllt, sendet das System die HTTPS-Anfrage mit den angegebenen Konfigurationen.
@@ -42,7 +42,7 @@ Die Workflow-Karte **"Send HTTPS Request"** ermöglicht es Benutzern, HTTPS-Anfr
 3. **HTTP-Methode auswählen:** Wählen Sie die passende Methode (**GET**, **POST**, **PUT** oder **DELETE**) entsprechend der durchzuführenden Aktion.
 4. **Parameter hinzufügen:** Geben Sie alle vom Endpunkt benötigten Abfrageparameter an.
 5. **Datennutzlast angeben:** Geben Sie bei Bedarf den Anfrage-Body im erforderlichen Format (z. B. JSON) ein.
-6. **Bedingungen konfigurieren:** Definieren Sie die Abschnitte **"Where"** und **"And"**, um sicherzustellen, dass die Anfrage nur gesendet wird, wenn bestimmte Bedingungen erfüllt sind.
+6. **Bedingungen konfigurieren:** Definieren Sie die Abschnitte **„Wo“** und **„Und“**, um sicherzustellen, dass die Anfrage nur gesendet wird, wenn bestimmte Bedingungen erfüllt sind.
 
 ## Beispielkarte:
 

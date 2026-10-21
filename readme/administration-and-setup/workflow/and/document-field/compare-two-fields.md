@@ -1,4 +1,4 @@
-# Compare two Fields
+# Vergleichen Sie zwei Felder
 
 <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -11,7 +11,7 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen zu automatisieren, indem sie
 1. **Feldname (1)**
    * **Beschreibung:** Gibt das erste zu vergleichende Dokumentfeld an.
    * **Detail:** Dieser muss exakt mit dem Bezeichner des ersten Feldes innerhalb des Dokuments übereinstimmen.
-2. **Operator**
+2. **Betreiber**
    * **Beschreibung:** Legt die Art des Vergleichs fest, der zwischen den beiden Feldern durchgeführt wird.
    * **Optionen:**
      * **Gleich (=):** Prüft, ob die Werte der beiden Felder gleich sind.
@@ -35,7 +35,7 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen zu automatisieren, indem sie
 * **Bedingung nicht erfüllt (False):**\
   Stimmen die Werte der beiden Felder nicht mit der angegebenen Bedingung überein, werden je nach Konfiguration der Workflows alternative oder keine Aktionen ausgeführt.
 
-## **Einrichtung und Konfiguration:**&#x20;
+## **Einrichtung und Konfiguration:**
 
 * Benutzer konfigurieren die Karte, indem sie die beiden zu vergleichenden Felder aus einer Liste der im System verfügbaren Felder auswählen. Der Operator wird aus einer Dropdown-Liste der verfügbaren Vergleichsoptionen ausgewählt.
 

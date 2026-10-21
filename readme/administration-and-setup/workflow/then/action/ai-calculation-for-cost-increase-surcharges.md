@@ -1,10 +1,10 @@
-# AI Calculation for Cost Increase Surcharges
+# KI-Berechnung für Kostensteigerungszuschläge
 
 <figure><img src="../../../../.gitbook/assets/image (309).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## Zweck:
 
-Die Workflow-Karte **"AI Calculation for Cost Increase Surcharges"** nutzt KI, um Zuschlagsbeträge auf Basis von Kostensteigerungen automatisch zu berechnen. Sie sorgt für konsistente und präzise Zuschlagsberechnungen, optimiert Workflows und reduziert den manuellen Aufwand.
+Die Workflow-Karte **„KI-Berechnung für Kostensteigerungszuschläge“** nutzt KI, um Zuschlagsbeträge auf Basis von Kostensteigerungen automatisch zu berechnen. Sie sorgt für konsistente und präzise Zuschlagsberechnungen, optimiert Workflows und reduziert den manuellen Aufwand.
 
 ## Bestandteile der Karte:
 
@@ -22,7 +22,7 @@ Die Workflow-Karte **"AI Calculation for Cost Increase Surcharges"** nutzt KI, u
 
 **Bedingungsauswertung:**
 
-* Die Karte wird nur aktiviert, wenn sowohl die Bedingungen im **"Where"**- als auch im **"And"**-Abschnitt als erfüllt ausgewertet werden.
+* Die Karte wird nur aktiviert, wenn sowohl die Bedingungen im **„Wo“**- als auch im **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * Wird eine der beiden Bedingungen als nicht erfüllt ausgewertet, wird keine Zuschlagsberechnung durchgeführt.
 
 **KI-gestützte Berechnung:**
@@ -32,4 +32,4 @@ Die Workflow-Karte **"AI Calculation for Cost Increase Surcharges"** nutzt KI, u
 
 ## Fazit:
 
-Die Workflow-Karte **"AI Calculation for Cost Increase Surcharges"** automatisiert die Anwendung von Zuschlägen auf Basis von Kostensteigerungen. Indem sie KI für Präzision und Konsistenz nutzt, eliminiert diese Karte manuelle Berechnungen, steigert die Effizienz und unterstützt ein präzises Kostenmanagement in automatisierten Workflows.
+Die Workflow-Karte **„KI-Berechnung für Kostensteigerungszuschläge“** automatisiert die Anwendung von Zuschlägen auf Basis von Kostensteigerungen. Indem sie KI für Präzision und Konsistenz nutzt, eliminiert diese Karte manuelle Berechnungen, steigert die Effizienz und unterstützt ein präzises Kostenmanagement in automatisierten Workflows.

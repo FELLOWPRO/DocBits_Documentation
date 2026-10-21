@@ -1,4 +1,4 @@
-# Single Document Status Condition
+# Statusbedingung für ein einzelnes Dokument
 
 <figure><img src="../../../../.gitbook/assets/userlmn_928e514bc0e2aa775894e4ec5f992bd9 (1).png" alt="" width="528"><figcaption></figcaption></figure>
 
@@ -8,15 +8,15 @@ Diese Workflow-Karte ist darauf zugeschnitten, Operationen an Dokumenten auf Bas
 
 **Bestandteile der Karte**
 
-1. **Operator**
+1. **Betreiber**
    * **Beschreibung**: Gibt die Methode zur Auswertung des Dokumentstatus anhand der ausgewählten Bedingung an.
    * **Optionen**:
      * **is**: Löst die Operation aus, wenn der aktuelle Status des Dokuments mit dem ausgewählten Status übereinstimmt.
-     * **is not**: Löst die Operation aus, wenn der aktuelle Status des Dokuments nicht mit dem ausgewählten Status übereinstimmt.
+     * **ist nicht**: Löst die Operation aus, wenn der aktuelle Status des Dokuments nicht mit dem ausgewählten Status übereinstimmt.
 2. **Status**
    * **Beschreibung**: Ermöglicht die Auswahl eines einzelnen Dokumentstatus zur Festlegung der Bedingung.
-   * **Statusbeispiele**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval".
-   * **Detail**: Benutzer wählen einen Status aus einem Dropdown oder einer Reihe von Optionsfeldern. Dieser Status dient dann als Kriterium für die Operation der Karte.
+   * **Statusbeispiele**: „Fehler“, „Exportfehler“, „Bereit zur Validierung“, „Bereit zur Überprüfung“, „Ausstehende Genehmigung“, „Ausstehende zweite Genehmigung“.
+   * **Detailliert**: Benutzer wählen einen Status aus einem Dropdown oder einer Reihe von Optionsfeldern. Dieser Status dient dann als Kriterium für die Operation der Karte.
 
 **Funktionalität**
 

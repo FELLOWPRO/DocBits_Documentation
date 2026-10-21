@@ -1,4 +1,4 @@
-# Decision Table has Returns
+# Die Entscheidungstabelle hat Renditen
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -10,7 +10,7 @@ Diese DocBits-Karte prüft, ob eine angegebene Entscheidungstabelle für ein bes
 
 * **Validierung der Entscheidungstabelle:** Diese Karte überprüft, ob die ausgewählte Entscheidungstabelle Rückgabewerte für das verarbeitete Dokument liefert.
 * **Auswahl der Entscheidungstabelle:** Benutzer geben den Namen der zu prüfenden Entscheidungstabelle an.
-* **Rückgabedaten verwenden:** Benutzer können mit einer **Boolean**-Einstellung festlegen, ob die Rückgabedaten in späteren Karten verwendet werden sollen:
+* **Rückgabedaten verwenden:** Benutzer können mit einer **Boolescher Wert**-Einstellung festlegen, ob die Rückgabedaten in späteren Karten verwendet werden sollen:
   * **True:** Die Rückgabedaten sind verfügbar und werden in nachfolgenden Workflow-Schritten verwendet.
   * **False:** Die Rückgabedaten werden nicht verwendet, und der Workflow wird ohne sie fortgesetzt.
 
@@ -20,6 +20,6 @@ Diese Karte eignet sich ideal für Workflows mit bedingter Logik oder Entscheidu
 
 ## **Beispiel-Szenario:**
 
-* Ein Benutzer konfiguriert die Karte so, dass sie die Entscheidungstabelle **"Invoice Processing Rules"** auf Rückgabewerte prüft. Der **Boolean** ist auf **True** gesetzt, was angibt, dass die Rückgabedaten (z. B. Freigabeanforderungen) in späteren Karten genutzt werden, um Workflow-Entscheidungen zu steuern.
+* Ein Benutzer konfiguriert die Karte so, dass sie die Entscheidungstabelle **„Regeln zur Rechnungsbearbeitung“** auf Rückgabewerte prüft. Der **Boolescher Wert** ist auf **True** gesetzt, was angibt, dass die Rückgabedaten (z. B. Freigabeanforderungen) in späteren Karten genutzt werden, um Workflow-Entscheidungen zu steuern.
 
 Durch die Verwendung der Karte "Decision Table Check" können Organisationen die Flexibilität von Workflows erhöhen, die regelbasierte Verarbeitung optimieren und Konsistenz bei der Entscheidungsfindung über automatisierte Workflows hinweg sicherstellen.

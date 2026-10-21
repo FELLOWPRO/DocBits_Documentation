@@ -29,7 +29,7 @@ Das Toleranzfenster definiert einen Bereich akzeptabler Daten rund um das zugesa
   * **Bedeutung:**\
     Das Lieferdatum der Position muss _innerhalb_ des Toleranzfensters liegen.
   * **Gültige Daten:**
-    * Jedes Datum zwischen dem **6. Jan und 12. Jan** (einschließlich)
+    * Jedes Datum zwischen dem **6. Jan. und 12. Jan** (einschließlich)
   * **Ungültige Daten:**
     * Jedes Datum **vor dem 6. Jan**
     * Jedes Datum **nach dem 12. Jan**
@@ -40,7 +40,7 @@ Das Toleranzfenster definiert einen Bereich akzeptabler Daten rund um das zugesa
     * Jedes Datum **vor dem 6. Jan**
     * Jedes Datum **nach dem 12. Jan**
   * **Ungültige Daten:**
-    * Daten zwischen dem **6. Jan und 12. Jan**
+    * Daten zwischen dem **6. Jan. und 12. Jan**
 * **Größer oder gleich (≥)**
   * **Bedeutung:**\
     Das Lieferdatum der Position muss am oder nach dem **Beginn des Toleranzfensters** liegen.

@@ -1,96 +1,127 @@
-# Call External API
+# Rufen Sie die externe API auf
 
-Diese Karten gehören in die **Then**-Gruppe des Workflow-Builders – die Aktionen, die ausgeführt werden, sobald die When-/And-Bedingungen zutreffen:
+***
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Karten werden über <strong>Add Card</strong> zur <strong>Then</strong>-Gruppe hinzugefügt.</p></figcaption></figure>
+Fügen Sie diese Karte zur Gruppe **Then** des Workflow Builder hinzu – den Aktionen, die ausgeführt werden, sobald die Wenn/Und-Bedingungen übereinstimmen:
 
-## Purpose
-This card allows you to send data to an external website or service and receive information back. Think of it like sending a question to an external service and getting an answer that you can use in your workflow.
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow-Builder"><figcaption><p>Karten werden über <strong>Add Card</strong> zur <strong>Then</strong>-Gruppe hinzugefügt.</p></figcaption></figure>
 
-**Real-world example:** Your company uses a pricing system on another website. This card can automatically ask that pricing system for the current price of an item and bring that price into your document.
+***
 
----
+## 📌 Versionsinformationen
 
-## When to Use This Card
+**Aktuelle Version:** v2 (Neueste und empfohlene) **Status:** ✅ Aktiv
 
-Use this card when you need to:
-- Get information from an external service (like pricing, validation, or lookup data)
-- Send document information to another system for processing
-- Integrate with third-party services
-- Automatically fetch data without manual lookups
-- Connect multiple business systems together
+**Versionsverlauf:**
 
-**Common scenarios:**
-- Look up supplier information from a database
-- Get real-time pricing from a pricing service
-- Validate data against an external system
-- Fetch shipping information from a logistics provider
+* v1 → Einfacher API-Aufruf (nicht mehr empfohlen)
+* **v2 → AKTUELL** (mehrsprachige Unterstützung hinzugefügt)
 
----
+**Was sich geändert hat:** v2 hat Internationalisierungsunterstützung (i18n) mit Übersetzungsschlüsseln hinzugefügt. Die Funktionalität bleibt identisch.
 
-## How It Works
+📖 [Versionsverlauf und Änderungen](../../release.md) | [Vollständige Kartendatenbank](../../cards-overview/export-cards-guide.md)
 
-1. **Condition Check**: The workflow first checks if the conditions in "Where" and "And" sections are met
-2. **Prepare Data**: The card collects the parameters you've configured
-3. **Send Request**: It sends your data to the external API/service
-4. **Receive Response**: The external service responds with data
-5. **Continue**: The workflow uses this data in subsequent cards
+***
 
----
+## Zweck
 
-## Parameters Explained
+Mit dieser Karte können Sie Daten an eine externe Website oder einen externen Dienst senden und Informationen zurückerhalten. Stellen Sie sich das so vor, als würden Sie eine Frage an einen externen Dienst senden und eine Antwort erhalten, die Sie in Ihrem Workflow verwenden können.
 
-### API Endpoint URL
-**What it is:** The address of the external service you want to communicate with
+**Beispiel aus der Praxis:** Ihr Unternehmen verwendet ein Preissystem auf einer anderen Website. Diese Karte kann das Preissystem automatisch nach dem aktuellen Preis eines Artikels fragen und diesen Preis in Ihr Dokument übernehmen.
 
-**Example:** `https://api.supplier-system.com/product/pricing`
+***
 
-**How to find it:** Ask your IT team or the service provider for their API endpoint
+## Wann sollte diese Karte verwendet werden?
 
----
+Verwenden Sie diese Karte, wenn Sie Folgendes benötigen:
 
-### HTTP Method
-**What it is:** The type of request to send
+* Erhalten Sie Informationen von einem externen Dienst (z. B. Preis-, Validierungs- oder Suchdaten).
+* Dokumentinformationen zur Verarbeitung an ein anderes System senden
+* Integrieren Sie Dienste von Drittanbietern
+* Daten automatisch abrufen, ohne manuelle Suche
+* Verbinden Sie mehrere Geschäftssysteme miteinander
 
-**Options:**
-- **GET**: Request information (like asking a question)
-- **POST**: Send new data
-- **PUT**: Update existing data
-- **DELETE**: Remove data
+**Häufige Szenarien:**
 
-**Most common:** GET (for fetching information)
+* Suchen Sie in einer Datenbank nach Lieferanteninformationen
+* Erhalten Sie Echtzeitpreise von einem Preisservice
+* Validieren Sie Daten anhand eines externen Systems
+* Holen Sie sich Versandinformationen von einem Logistikdienstleister
 
----
+***
 
-### Headers
-**What it is:** Additional instructions for the service you're calling
+## Wie es funktioniert
 
-**Example:**
+1. **Bedingungsprüfung**: Der Workflow prüft zunächst, ob die Bedingungen in den Abschnitten „Wo“ und „Und“ erfüllt sind
+2. **Daten vorbereiten**: Die Karte sammelt die von Ihnen konfigurierten Parameter
+3. **Anfrage senden**: Es sendet Ihre Daten an die externe API/den externen Dienst
+4. **Receive Response**: Der externe Dienst antwortet mit Daten
+5. **Weiter**: Der Workflow verwendet diese Daten in nachfolgenden Karten
+
+***
+
+## Parameter erklärt
+
+### API-Endpunkt-URL
+
+**Was es ist:** Die Adresse des externen Dienstes, mit dem Sie kommunizieren möchten
+
+**Beispiel:** `https://api.supplier-system.com/product/pricing`
+
+**So finden Sie es:** Fragen Sie Ihr IT-Team oder den Dienstanbieter nach seinem API-Endpunkt
+
+***
+
+### HTTP-Methode
+
+**Was es ist:** Der Typ der zu sendenden Anfrage
+
+**Optionen:**
+
+* **GET**: Informationen anfordern (z. B. eine Frage stellen)
+* **POST**: Neue Daten senden
+* **PUT**: Vorhandene Daten aktualisieren
+* **DELETE**: Daten entfernen
+
+**Am häufigsten:** GET (zum Abrufen von Informationen)
+
+***
+
+### Überschriften
+
+**Was es ist:** Zusätzliche Anweisungen für den Dienst, den Sie anrufen
+
+**Beispiel:**
+
 ```
 Authorization: Bearer your-api-key
 Content-Type: application/json
 ```
 
-**Why it's needed:** Services often require authentication or specific format instructions
+**Warum es benötigt wird:** Dienste erfordern häufig eine Authentifizierung oder bestimmte Formatanweisungen
 
----
+***
 
-### Parameters (Query Parameters)
-**What it is:** Extra information passed in the URL
+### Parameter (Abfrageparameter)
 
-**Example:**
+**Was es ist:** Zusätzliche Informationen, die in der URL übergeben werden
+
+**Beispiel:**
+
 ```
 ?supplier_id=12345&currency=USD
 ```
 
-**Real example:** If you're asking for prices, parameters might include the supplier ID and currency
+**Echtes Beispiel:** Wenn Sie nach Preisen fragen, können die Parameter die Lieferanten-ID und die Währung umfassen
 
----
+***
 
-### Request Data (Body)
-**What it is:** The information you're sending to the service
+### Anforderungsdaten (Körper)
 
-**Example:**
+**Was es ist:** Die Informationen, die Sie an den Dienst senden
+
+**Beispiel:**
+
 ```json
 {
   "product_id": "ABC123",
@@ -99,64 +130,72 @@ Content-Type: application/json
 }
 ```
 
-**When used:** When using POST or PUT methods
+**Bei Verwendung:** Bei Verwendung der POST- oder PUT-Methoden
 
----
+***
 
-## Step-by-Step Example
+## Schritt-für-Schritt-Beispiel
 
-### Scenario: Get Real-Time Supplier Pricing
+### Szenario: Erhalten Sie Lieferantenpreise in Echtzeit
 
-**Setup:**
-1. **Card Type:** Call API
-2. **API Endpoint:** `https://api.suppliers.com/v1/prices`
-3. **Method:** POST
-4. **Headers:** `Authorization: Bearer YOUR-API-KEY`
-5. **Request Data:**
-   ```json
-   {
-     "product_id": "ABC123",
-     "quantity": 100
-   }
-   ```
+**Einrichtung:**
 
-**What happens:**
-1. Document arrives with Product ID: ABC123, Quantity: 100
-2. Card sends request to supplier's API
-3. Supplier's API responds with: `{"unit_price": 25.50, "total_price": 2550}`
-4. Workflow continues with this pricing information
-5. Next card can use this data to validate the invoice price
+1. **Kartentyp:** API aufrufen
+2. **API-Endpunkt:** `https://api.suppliers.com/v1/prices`
+3. **Methode:** POST
+4. **Überschriften:** `Authorization: Bearer YOUR-API-KEY`
+5.  **Daten anfordern:**
 
----
+    ```json
+    {
+      "product_id": "ABC123",
+      "quantity": 100
+    }
+    ```
 
-## Configuration Steps
+**Was passiert:**
 
-### 1. Get API Information
-Contact the external service provider and request:
-- [ ] API endpoint URL
-- [ ] Authentication method (API key, username/password, OAuth)
-- [ ] Required parameters
-- [ ] Expected response format
-- [ ] Rate limits or quotas
+1. Das Dokument kommt mit der Produkt-ID: ABC123, Menge: 100 an
+2. Die Karte sendet eine Anfrage an die API des Lieferanten
+3. Die API des Lieferanten antwortet mit: `{"unit_price": 25.50, "total_price": 2550}`
+4. Der Workflow wird mit diesen Preisinformationen fortgesetzt
+5. Next Card kann diese Daten verwenden, um den Rechnungspreis zu validieren
 
-### 2. Configure the Card
-1. Enter the API endpoint URL
-2. Select the HTTP method (usually GET or POST)
-3. Add authentication headers if required
-4. Add any required parameters
-5. Format request data as JSON if needed
+***
 
-### 3. Test the Card
-1. Use a test document
-2. Run the workflow
-3. Check if the response is received correctly
-4. Verify the data format matches expectations
+## Konfigurationsschritte
 
----
+### 1. Holen Sie sich API-Informationen
 
-## Common Response Scenarios
+Kontaktieren Sie den externen Dienstleister und fordern Sie an:
 
-### Successful Response (Status Code 200)
+* [ ] API-Endpunkt-URL
+* [ ] Authentifizierungsmethode (API-Schlüssel, Benutzername/Passwort, OAuth)
+* [ ] Erforderliche Parameter
+* [ ] Erwartetes Antwortformat
+* [ ] Ratenlimits oder Kontingente
+
+### 2. Konfigurieren Sie die Karte
+
+1. Geben Sie die API-Endpunkt-URL ein
+2. Wählen Sie die HTTP-Methode (normalerweise GET oder POST)
+3. Fügen Sie bei Bedarf Authentifizierungsheader hinzu
+4. Fügen Sie alle erforderlichen Parameter hinzu
+5. Formatieren Sie Anforderungsdaten bei Bedarf als JSON
+
+### 3. Testen Sie die Karte
+
+1. Verwenden Sie ein Testdokument
+2. Führen Sie den Workflow aus
+3. Überprüfen Sie, ob die Antwort korrekt empfangen wurde
+4. Überprüfen Sie, ob das Datenformat den Erwartungen entspricht
+
+***
+
+## Gängige Reaktionsszenarien
+
+### Erfolgreiche Antwort (Statuscode 200)
+
 ```json
 {
   "success": true,
@@ -167,98 +206,115 @@ Contact the external service provider and request:
   }
 }
 ```
-✅ Data is available for next cards to use
 
-### Error Response (Status Code 404)
+✅ Die Daten stehen für die nächste Kartenverwendung zur Verfügung
+
+### Fehlerreaktion (Statuscode 404)
+
 ```json
 {
   "error": "Product not found"
 }
 ```
-⚠️ The API couldn't find what you're looking for
 
-### Timeout
-The external service didn't respond within the time limit
-⚠️ Check if the service is available or if the endpoint URL is correct
+⚠️ Die API konnte nicht finden, wonach Sie suchen
 
----
+### Auszeit
 
-## Example Workflows
+Der externe Dienst hat nicht innerhalb des Zeitlimits geantwortet. ⚠️ Überprüfen Sie, ob der Dienst verfügbar ist oder ob die Endpunkt-URL korrekt ist
 
-### Example 1: Automatic Price Validation
-**Scenario:** Validate invoice prices against supplier's current pricing
+***
 
-**Flow:**
-1. Document arrives with invoice line item (Product: A123, Price: €50)
-2. **Call API Card** → Asks supplier API: "What's the current price for A123?"
-3. Supplier responds: "€48"
-4. **Condition Card** → Checks if invoice price (€50) is within 5% of current price (€48)
-5. **Approval Card** → Approves if within tolerance
+## Beispiel-Workflows
 
-### Example 2: Automatic Supplier Lookup
-**Scenario:** Get supplier master data from central database
+### Beispiel 1: Automatische Preisvalidierung
 
-**Flow:**
-1. Invoice arrives with Supplier Code: SUPP-789
-2. **Call API Card** → Asks system: "Give me details for supplier SUPP-789"
-3. System responds with: Name, Contact, Terms, etc.
-4. **Set Field Cards** → Populate document fields with this data
-5. **Export Card** → Export with complete information
+**Szenario:** Rechnungspreise anhand der aktuellen Preise des Lieferanten validieren
 
-### Example 3: Real-Time Shipping Costs
-**Scenario:** Get automatic shipping cost based on destination
+**Durchfluss:**
 
-**Flow:**
-1. Document has delivery address
-2. **Call API Card** → Ask shipping provider: "What's the cost to [address]?"
-3. Provider responds with shipping cost
-4. **Calculate Card** → Add shipping to total invoice amount
-5. **Export Card** → Send with updated total
+1. Beleg kommt mit Rechnungsposten an (Produkt: A123, Preis: 50 €)
+2. **API-Karte aufrufen** → Fragt Lieferanten-API: „Wie hoch ist der aktuelle Preis für A123?“
+3. Lieferant antwortet: „48 €“
+4. **Konditionskarte** → Prüft, ob der Rechnungspreis (50 €) innerhalb von 5 % des aktuellen Preises (48 €) liegt.
+5. **Genehmigungskarte** → Genehmigt, wenn innerhalb der Toleranz
 
----
+### Beispiel 2: Automatische Lieferantensuche
 
-## Troubleshooting
+**Szenario:** Erhalten Sie Lieferantenstammdaten aus der zentralen Datenbank
 
-### "Connection Timeout" Error
-**Cause:** The API service is not responding
+**Durchfluss:**
 
-**Solutions:**
-- [ ] Check if the service is available (visit the website)
-- [ ] Verify the endpoint URL is correct (no typos)
-- [ ] Check internet connection
-- [ ] Contact the service provider
-- [ ] Check if the service has rate limits (you're sending too many requests)
+1. Die Rechnung kommt mit dem Lieferantencode SUPP-789 an
+2. **API-Karte aufrufen** → Fragt das System: „Gib mir Details zum Lieferanten SUPP-789“
+3. Das System antwortet mit: Name, Kontakt, Bedingungen usw.
+4. **Feldkarten festlegen** → Dokumentfelder mit diesen Daten füllen
+5. **Karte exportieren** → Export mit vollständigen Informationen
 
-### "Unauthorized" or "403 Forbidden" Error
-**Cause:** Authentication failed
+### Beispiel 3: Versandkosten in Echtzeit
 
-**Solutions:**
-- [ ] Verify your API key is correct
-- [ ] Check if your API key has expired
-- [ ] Ensure authentication header is formatted correctly
-- [ ] Verify you have permissions for this endpoint
+**Szenario:** Erhalten Sie automatische Versandkosten basierend auf dem Zielort
 
-### "Bad Request" or "400 Error"
-**Cause:** The request data format is incorrect
+**Durchfluss:**
 
-**Solutions:**
-- [ ] Check JSON syntax (missing commas, quotes, etc.)
-- [ ] Verify all required fields are included
-- [ ] Check parameter names match what the service expects
-- [ ] Consult the API documentation
+1. Das Dokument hat eine Lieferadresse
+2. **API-Karte aufrufen** → Versandanbieter fragen: „Wie hoch sind die Kosten nach \[Adresse]?“
+3. Der Anbieter antwortet mit den Versandkosten
+4. **Karte berechnen** → Versandkosten zum Gesamtrechnungsbetrag hinzufügen
+5. **Karte exportieren** → Mit aktualisiertem Gesamtbetrag senden
 
-### "Response not working as expected"
-**Solutions:**
-- [ ] Test the API using a tool like Postman
-- [ ] Compare actual response format with expected format
-- [ ] Check if the API's documentation changed
-- [ ] Verify the data you're sending is correct
+***
 
----
+## Fehlerbehebung
 
-## Response Data Usage
+### Fehler „Verbindungszeitüberschreitung“.
 
-Once you get data back from the API, the next cards can use it:
+**Ursache:** Der API-Dienst antwortet nicht
+
+**Lösungen:**
+
+* [ ] Überprüfen Sie, ob der Dienst verfügbar ist (besuchen Sie die Website)
+* [ ] Überprüfen Sie, ob die Endpunkt-URL korrekt ist (keine Tippfehler).
+* [ ] Internetverbindung prüfen
+* [ ] Wenden Sie sich an den Dienstanbieter
+* [ ] Überprüfen Sie, ob der Dienst Ratenbeschränkungen hat (Sie senden zu viele Anfragen)
+
+### Fehler „Unautorisiert“ oder „403 Verboten“.
+
+**Ursache:** Authentifizierung fehlgeschlagen
+
+**Lösungen:**
+
+* [ ] Überprüfen Sie, ob Ihr API-Schlüssel korrekt ist
+* [ ] Überprüfen Sie, ob Ihr API-Schlüssel abgelaufen ist
+* [ ] Stellen Sie sicher, dass der Authentifizierungsheader korrekt formatiert ist
+* [ ] Stellen Sie sicher, dass Sie über Berechtigungen für diesen Endpunkt verfügen
+
+### „Ungültige Anfrage“ oder „400-Fehler“
+
+**Ursache:** Das Anforderungsdatenformat ist falsch
+
+**Lösungen:**
+
+* [ ] Überprüfen Sie die JSON-Syntax (fehlende Kommas, Anführungszeichen usw.)
+* [ ] Überprüfen Sie, ob alle erforderlichen Felder enthalten sind
+* [ ] Überprüfen Sie, ob die Parameternamen mit den Erwartungen des Dienstes übereinstimmen
+* [ ] Konsultieren Sie die API-Dokumentation
+
+### „Antwort funktioniert nicht wie erwartet“
+
+**Lösungen:**
+
+* [ ] Testen Sie die API mit einem Tool wie Postman
+* [ ] Vergleichen Sie das tatsächliche Antwortformat mit dem erwarteten Format
+* [ ] Überprüfen Sie, ob sich die Dokumentation der API geändert hat
+* [ ] Überprüfen Sie, ob die von Ihnen gesendeten Daten korrekt sind
+
+***
+
+## Verwendung von Antwortdaten
+
+Sobald Sie Daten von der API zurückerhalten, können die nächsten Karten diese verwenden:
 
 ```
 API Response:
@@ -274,50 +330,51 @@ Next Card (Set Field):
 - Set "In_Stock" checkbox to true
 ```
 
----
+***
 
-## Security Notes
+## Sicherheitshinweise
 
-⚠️ **Important:** Never put sensitive information in the card configuration that might be visible to other users
+⚠️ **Wichtig:** Geben Sie niemals vertrauliche Informationen in die Kartenkonfiguration ein, die für andere Benutzer sichtbar sein könnten
 
-- Don't hardcode passwords
-- Use API keys securely
-- Don't include personal data in logs
-- Use HTTPS endpoints (not HTTP)
+* Codieren Sie Passwörter nicht fest
+* Verwenden Sie API-Schlüssel sicher
+* Fügen Sie keine personenbezogenen Daten in Protokolle ein
+* Verwenden Sie HTTPS-Endpunkte (nicht HTTP)
 
----
+***
 
-## Tips & Best Practices
+## Tipps und Best Practices
 
 ✅ **Do:**
-- Test with a small sample of documents first
-- Keep API calls simple and focused
-- Add error handling with Condition cards
-- Monitor API usage/costs
-- Document the API requirements for your team
 
-❌ **Don't:**
-- Call APIs for every single request if you can cache data
-- Ignore response error codes
-- Use test APIs in production
-- Forget to add authentication headers
-- Assume the API will always be available
+* Testen Sie zunächst mit einer kleinen Auswahl von Dokumenten
+* Halten Sie API-Aufrufe einfach und fokussiert
+* Fügen Sie Fehlerbehandlung mit Bedingungskarten hinzu
+* Überwachen Sie die API-Nutzung/-Kosten
+* Dokumentieren Sie die API-Anforderungen für Ihr Team
 
----
+❌ **Nicht:**
 
-## Related Cards
+* Rufen Sie APIs für jede einzelne Anfrage auf, wenn Sie Daten zwischenspeichern können
+* Antwortfehlercodes ignorieren
+* Verwenden Sie Test-APIs in der Produktion
+* Vergessen Sie, Authentifizierungsheader hinzuzufügen
+* Gehen Sie davon aus, dass die API immer verfügbar ist
 
-- **ACTION_HTTPS_REQUEST** - Similar but simpler HTTPS requests
-- **CONDITION_HTTPS_REQUEST_STATUS** - Check if API call was successful
-- **ACTION_SEND_EMAIL** - Send data via email instead of API
-- **CALL_API** (different version) - Alternative API call method
+***
 
----
+## Verwandte Karten
 
-## Need Help?
+* **ACTION\_HTTPS\_REQUEST** – Ähnliche, aber einfachere HTTPS-Anfragen
+* **CONDITION\_HTTPS\_REQUEST\_STATUS** – Überprüfen Sie, ob der API-Aufruf erfolgreich war
+* **ACTION\_SEND\_EMAIL** – Daten per E-Mail statt über API senden
+* **CALL\_API** (andere Version) – Alternative API-Aufrufmethode
 
-- Ask your IT/Integration team for API documentation
-- Use Postman tool to test API endpoints first
-- Check the service provider's support portal
-- Review API documentation for required formats
+***
 
+## Brauchen Sie Hilfe?
+
+* Bitten Sie Ihr IT-/Integrationsteam um eine API-Dokumentation
+* Verwenden Sie das Postman-Tool, um zunächst API-Endpunkte zu testen
+* Überprüfen Sie das Support-Portal des Dienstanbieters
+* Sehen Sie sich die API-Dokumentation für erforderliche Formate an

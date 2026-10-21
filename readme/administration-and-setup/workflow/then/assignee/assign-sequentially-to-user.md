@@ -1,19 +1,19 @@
-# Assign Sequentially to User
+# Dem Benutzer nacheinander zuweisen
 
 <figure><img src="../../../../.gitbook/assets/image (9) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck**
 
-Die Workflow-Karte "**Assign Sequentially to User**" automatisiert die Zuweisung von Dokumenten an einen ausgewählten Benutzer in sequenzieller Weise. Der Prioritätswert bestimmt die Reihenfolge der Zuweisung, wobei niedrigere Zahlen eine höhere Priorität darstellen.
+Die Workflow-Karte "**Dem Benutzer nacheinander zuweisen**" automatisiert die Zuweisung von Dokumenten an einen ausgewählten Benutzer in sequenzieller Weise. Der Prioritätswert bestimmt die Reihenfolge der Zuweisung, wobei niedrigere Zahlen eine höhere Priorität darstellen.
 
 ## **Bestandteile der Karte**
 
 1. **Benutzer**
    * **Beschreibung**: Dem ausgewählten Benutzer wird das Dokument gemäß der Workflow-Reihenfolge zugewiesen.
-   * **Detail**: Ein Dropdown-Menü, das alle verfügbaren Benutzer für die Zuweisung auflistet.
+   * **Detailliert**: Ein Dropdown-Menü, das alle verfügbaren Benutzer für die Zuweisung auflistet.
 2. **Priorität (Wert)**
    * **Beschreibung**: Ein numerisches Eingabefeld, in dem die Prioritätsstufe für den Benutzer festgelegt werden kann.
-   * **Detail**: Niedrigere Zahlen bedeuten eine höhere Priorität. Dokumente werden den Benutzern in aufsteigender Reihenfolge der Priorität zugewiesen.
+   * **Detailliert**: Niedrigere Zahlen bedeuten eine höhere Priorität. Dokumente werden den Benutzern in aufsteigender Reihenfolge der Priorität zugewiesen.
 
 ## **Funktionalität**
 
@@ -23,7 +23,7 @@ Die Workflow-Karte "**Assign Sequentially to User**" automatisiert die Zuweisung
 
 ## **Einrichtung und Konfiguration**
 
-1. Fügen Sie die Karte **Assign the Document Sequentially** zu Ihrem Workflow hinzu.
+1. Fügen Sie die Karte **Ordnen Sie das Dokument der Reihe nach zu** zu Ihrem Workflow hinzu.
 2. Konfigurieren Sie das Feld **Benutzer**:
    * Wählen Sie einen Benutzer aus dem Dropdown-Menü.
 3. Konfigurieren Sie das Feld **Priorität (Wert)**:

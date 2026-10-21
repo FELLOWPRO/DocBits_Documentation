@@ -1,76 +1,79 @@
-# API-Integrations-Pattern
+# API-Integrationsmuster
 
-**Pattern-Typ:** Integration
-**Komplexität:** Mittel
-**Geschätzte Einrichtung:** 45–60 Minuten
-**Typische Anwendungsfälle:** Externe Datenabfrage, Preisvalidierung, Stammdaten-Lookup
+**Pattern-Typ:** Integration **Komplexität:** Mittel **Geschätzte Einrichtung:** 45–60 Minuten **Typische Anwendungsfälle:** Externe Datenabfrage, Preisvalidierung, Stammdaten-Lookup
 
----
+***
 
-Dieses Pattern bauen Sie im **Workflow-Builder** (Workflow Dashboard → Workflow List → Add Workflow). Klicken Sie auf **Add Card**, um die Kartenbibliothek zu öffnen, und wählen Sie die von diesem Pattern verwendeten Karten — `CALL_API`, `CONDITION_HTTPS_REQUEST_STATUS`, `ACTION_SET_FIELD_TO_TEXT` und `CONDITION_COMPARE_TWO_DOCFIELD_VALUES`:
+Dieses Pattern bauen Sie im **Workflow-Builder** (Workflow Dashboard → Workflow List → Add Workflow). Klicken Sie auf **Karte hinzufügen**, um die Kartenbibliothek zu öffnen, und wählen Sie die von diesem Pattern verwendeten Karten — `CALL_API`, `CONDITION_HTTPS_REQUEST_STATUS`, `ACTION_SET_FIELD_TO_TEXT` und `CONDITION_COMPARE_TWO_DOCFIELD_VALUES`:
 
 <figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card-Bibliothek im Workflow-Builder, nach Kategorie gruppiert"><figcaption><p>Die <strong>Add Card</strong>-Bibliothek — wählen Sie die von diesem Pattern verwendeten API-, Bedingungs- und Feldkarten aus diesen Kategorien.</p></figcaption></figure>
 
----
+***
 
 ## Pattern-Überblick
 
 Dieses Pattern zeigt, wie Sie DocBits in externe APIs integrieren, um Daten aus externen Systemen abzurufen, zu validieren und zu speichern. Es ist eines der häufigsten Workflow-Patterns, um DocBits mit Preissystemen, Validierungsdiensten, ERP-Systemen und anderen externen Datenquellen zu verbinden.
 
 **Was dieses Pattern macht:**
+
 1. Ruft eine externe API auf, um Daten abzurufen
 2. Validiert die API-Antwort
 3. Speichert Antwortdaten in Dokumentfeldern
 4. Trifft Entscheidungen anhand der abgerufenen Daten
 5. Leitet Dokumente entsprechend weiter
 
----
+***
 
 ## Wann dieses Pattern verwenden
 
 Verwenden Sie dieses Pattern, wenn Sie Folgendes benötigen:
-- ✅ Echtzeit-Preise aus externen Systemen abrufen
-- ✅ Lieferanteninformationen gegen die Stammdatenbank validieren
-- ✅ Produktdetails aus Katalogsystemen nachschlagen
-- ✅ Wechselkurse aus Währungsdiensten beziehen
-- ✅ Adressen per Geocoding-Dienst überprüfen
-- ✅ Bestände aus Lagersystemen prüfen
-- ✅ Steuersätze aus Steuerdiensten validieren
+
+* ✅ Echtzeit-Preise aus externen Systemen abrufen
+* ✅ Lieferanteninformationen gegen die Stammdatenbank validieren
+* ✅ Produktdetails aus Katalogsystemen nachschlagen
+* ✅ Wechselkurse aus Währungsdiensten beziehen
+* ✅ Adressen per Geocoding-Dienst überprüfen
+* ✅ Bestände aus Lagersystemen prüfen
+* ✅ Steuersätze aus Steuerdiensten validieren
 
 **Verwenden Sie dieses Pattern nicht, wenn:**
-- ❌ die Daten bereits in den DocBits-Stammdaten vorliegen (verwenden Sie stattdessen den Stammdaten-Lookup)
-- ❌ das externe System keine API hat (verwenden Sie stattdessen das DocOperator-Script-Pattern)
-- ❌ sich die Daten selten ändern (erwägen Sie einen manuellen Import)
 
----
+* ❌ die Daten bereits in den DocBits-Stammdaten vorliegen (verwenden Sie stattdessen den Stammdaten-Lookup)
+* ❌ das externe System keine API hat (verwenden Sie stattdessen das DocOperator-Script-Pattern)
+* ❌ sich die Daten selten ändern (erwägen Sie einen manuellen Import)
+
+***
 
 ## Vollständiges Workflow-Beispiel
 
 ### Szenario: Rechnungspreis gegen aktuelle Preis-API validieren
 
 **Geschäftliche Anforderung:**
-- Lieferant sendet Rechnung
-- Rechnung weist einen Stückpreis von 52,00 € aus
-- Wir müssen prüfen, ob das mit der aktuellen Lieferantenpreisliste übereinstimmt
-- Weicht der Preis um mehr als 5 % ab, zur Prüfung eskalieren
+
+* Lieferant sendet Rechnung
+* Rechnung weist einen Stückpreis von 52,00 € aus
+* Wir müssen prüfen, ob das mit der aktuellen Lieferantenpreisliste übereinstimmt
+* Weicht der Preis um mehr als 5 % ab, zur Prüfung eskalieren
 
 **Verwendete Workflow-Karten:**
-1. CALL_API – Aktuellen Preis aus der Lieferanten-API abrufen
-2. CONDITION_HTTPS_REQUEST_STATUS – Prüfen, ob der API-Aufruf erfolgreich war
-3. ACTION_SET_FIELD_TO_TEXT – API-Preis in einem Dokumentfeld speichern
-4. CONDITION_COMPARE_TWO_DOCFIELD_VALUES – Rechnungspreis mit API-Preis vergleichen
-5. ACTION_ASSIGN_TO_USER – Anhand des Vergleichsergebnisses weiterleiten
-6. tasks_create – Bei Bedarf eine Prüfaufgabe erstellen
 
----
+1. CALL\_API – Aktuellen Preis aus der Lieferanten-API abrufen
+2. CONDITION\_HTTPS\_REQUEST\_STATUS – Prüfen, ob der API-Aufruf erfolgreich war
+3. ACTION\_SET\_FIELD\_TO\_TEXT – API-Preis in einem Dokumentfeld speichern
+4. CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES – Rechnungspreis mit API-Preis vergleichen
+5. ACTION\_ASSIGN\_TO\_USER – Anhand des Vergleichsergebnisses weiterleiten
+6. tasks\_create – Bei Bedarf eine Prüfaufgabe erstellen
+
+***
 
 ## Schritt-für-Schritt-Umsetzung
 
 ### Schritt 1: Externe API aufrufen
 
-**Karte:** CALL_API oder ACTION_CALL_EXTERNAL_API
+**Karte:** CALL\_API oder ACTION\_CALL\_EXTERNAL\_API
 
 **Konfiguration:**
+
 ```json
 {
   "api_endpoint": "https://api.supplier-system.com/v1/pricing",
@@ -89,6 +92,7 @@ Verwenden Sie dieses Pattern, wenn Sie Folgendes benötigen:
 ```
 
 **Erwartete Antwort:**
+
 ```json
 {
   "success": true,
@@ -104,19 +108,21 @@ Verwenden Sie dieses Pattern, wenn Sie Folgendes benötigen:
 
 **Leitfaden-Referenz:** [Call API-Leitfaden](../then/action/call-api-guide.md)
 
----
+***
 
 ### Schritt 2: API-Antwort validieren
 
-**Karte:** CONDITION_HTTPS_REQUEST_STATUS
+**Karte:** CONDITION\_HTTPS\_REQUEST\_STATUS
 
 **Konfiguration:**
+
 ```
 Operator: IS EQUAL TO
 Status Code: 200
 ```
 
 **Logik:**
+
 ```
 IF API returns 200 (success):
   → Continue to store data
@@ -126,31 +132,34 @@ ELSE:
   → Create manual review task
 ```
 
-**Leitfaden-Referenz:** [Leitfaden Bedingungskarten – HTTP-Status](../and/condition-cards-complete-guide.md#condition-https-request-status)
+**Leitfaden-Referenz:** [Leitfaden Bedingungskarten – HTTP-Status](../and/condition-cards-complete-guide.md)
 
----
+***
 
 ### Schritt 3: API-Antwort in Dokumentfeldern speichern
 
-**Karte:** ACTION_SET_FIELD_TO_TEXT (oder ein gleichwertiger Feld-Setter)
+**Karte:** ACTION\_SET\_FIELD\_TO\_TEXT (oder ein gleichwertiger Feld-Setter)
 
 **Konfiguration:**
 
-**Feld 1: Current_API_Price**
+**Feld 1: Aktueller\_API\_Preis**
+
 ```
 Field Name: Current_API_Price
 Field Value: {{API_RESPONSE:data.unit_price}}
 Field Type: Number
 ```
 
-**Feld 2: API_Price_Valid_Until**
+**Feld 2: API\_Price\_Valid\_Until**
+
 ```
 Field Name: API_Price_Valid_Until
 Field Value: {{API_RESPONSE:data.valid_until}}
 Field Type: Date
 ```
 
-**Feld 3: API_Discount_Available**
+**Feld 3: API\_Discount\_Available**
+
 ```
 Field Name: API_Discount_Available
 Field Value: {{API_RESPONSE:data.discount_applicable}}
@@ -159,15 +168,16 @@ Field Type: Boolean
 
 **Ergebnis:** Die Daten aus der API sind nun in Dokumentfeldern zur späteren Verwendung gespeichert
 
-**Leitfaden-Referenz:** [Leitfaden Feldmanipulation – API-Datenspeicherung](../then/document-field/field-manipulation-guide.md#storing-api-data)
+**Leitfaden-Referenz:** [Leitfaden Feldmanipulation – API-Datenspeicherung](../then/document-field/field-manipulation-guide.md)
 
----
+***
 
 ### Schritt 4: Rechnungspreis mit API-Preis vergleichen
 
-**Karte:** CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+**Karte:** CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES
 
 **Konfiguration:**
+
 ```
 Field 1: Invoice_Unit_Price (from OCR extraction)
 Field 2: Current_API_Price (from API response)
@@ -176,6 +186,7 @@ Tolerance: 5%
 ```
 
 **Berechnung:**
+
 ```
 Variance % = |(Invoice_Price - API_Price)| / API_Price × 100
 
@@ -188,42 +199,45 @@ Example:
   Result: PASS
 ```
 
-**Leitfaden-Referenz:** [Leitfaden Bedingungskarten – Feldvergleich](../and/condition-cards-complete-guide.md#field-comparison)
+**Leitfaden-Referenz:** [Leitfaden Bedingungskarten – Feldvergleich](../and/condition-cards-complete-guide.md)
 
----
+***
 
 ### Schritt 5: Anhand des Validierungsergebnisses weiterleiten
 
 **Szenario A: Preis innerhalb der Toleranz (Pass)**
 
 **Karten:**
-- ACTION_SET_FIELD_TO_TEXT
-  - Feld „Price_Validation_Status" = „PASS" setzen
-  - Feld „Price_Variance_Percent" = „4%" setzen
-- ACTION_APPROVE_DOCUMENT
-  - Dokument automatisch freigeben
+
+* ACTION\_SET\_FIELD\_TO\_TEXT
+  * Feld „Price\_Validation\_Status" = „PASS" setzen
+  * Feld „Price\_Variance\_Percent“ = „4%“ setzen
+* ACTION\_APPROVE\_DOCUMENT
+  * Dokument automatisch freigeben
 
 **Szenario B: Preis außerhalb der Toleranz (Fail)**
 
 **Karten:**
-- ACTION_SET_FIELD_TO_TEXT
-  - Feld „Price_Validation_Status" = „FAIL" setzen
-  - Feld „Price_Variance_Percent" = „12%" setzen (Beispiel)
-- tasks_create
-  - Aufgabentitel: „Review Price Variance - {{DOCUMENT_NUMBER}}"
-  - Aufgabenbeschreibung: „Invoice price (€{{Invoice_Unit_Price}}) exceeds API price (€{{Current_API_Price}}) by {{Price_Variance_Percent}}"
-  - Priorität: Hoch
-- ACTION_ASSIGN_TO_USER
-  - Zuweisen an: Einkaufsleitung
-- ACTION_SEND_EMAIL_TO_GROUPS
-  - Benachrichtigung an das Einkaufsteam senden
+
+* ACTION\_SET\_FIELD\_TO\_TEXT
+  * Feld „Price\_Validation\_Status“ = „FAIL“ setzen
+  * Feld „Price\_Variance\_Percent" = „12%" setzen (Beispiel)
+* Aufgaben\_create
+  * Aufgabentitel: „Review Price Variance - \{{DOCUMENT\_NUMBER\}}"
+  * Aufgabenbeschreibung: „Invoice price (€\{{Invoice\_Unit\_Price\}}) exceeds API price (€\{{Current\_API\_Price\}}) by \{{Price\_Variance\_Percent\}}"
+  * Priorität: Hoch
+* ACTION\_ASSIGN\_TO\_USER
+  * Zuweisen an: Einkaufsleitung
+* ACTION\_SEND\_EMAIL\_TO\_GROUPS
+  * Benachrichtigung an das Einkaufsteam senden
 
 **Leitfaden-Referenzen:**
-- [Zuweisungs-Leitfaden](../then/assignee/assignment-user-guide.md)
-- [Leitfaden Aufgabenzuweisung](../then/task/task-assignment-guide.md)
-- [Leitfaden E-Mail senden](../then/action/send-email-groups-guide.md)
 
----
+* [Zuweisungs-Leitfaden](../then/assignee/assignment-user-guide.md)
+* [Leitfaden Aufgabenzuweisung](../then/task/task-assignment-guide.md)
+* [Leitfaden E-Mail senden](../then/action/send-email-groups-guide.md)
+
+***
 
 ## Vollständiges Workflow-Diagramm
 
@@ -278,7 +292,7 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 │        → END (API Error - Manual Review)
 ```
 
----
+***
 
 ## Konfigurationsvorlagen
 
@@ -300,7 +314,7 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 
 **Verwendung:** Einfacher Daten-Lookup per ID
 
----
+***
 
 ### Vorlage 2: POST-Request mit Body (Validierung)
 
@@ -324,7 +338,7 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 
 **Verwendung:** Dokumentdaten zur Validierung senden
 
----
+***
 
 ### Vorlage 3: Komplexer Request mit verschachtelten Daten
 
@@ -360,7 +374,7 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 
 **Verwendung:** Komplexe Dokumentverarbeitung mit Tabellendaten
 
----
+***
 
 ## Fehlerbehandlung
 
@@ -369,10 +383,12 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 #### Fehler 1: Verbindungs-Timeout
 
 **Symptome:**
-- API antwortet nicht
-- Workflow bleibt wartend stehen
+
+* API antwortet nicht
+* Workflow bleibt wartend stehen
 
 **Lösung:**
+
 ```
 1. Check API endpoint URL (typo?)
 2. Verify network connectivity
@@ -389,10 +405,12 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 #### Fehler 2: 401 Unauthorized
 
 **Symptome:**
-- API gibt Status 401 zurück
-- Authentifizierung fehlgeschlagen
+
+* API gibt Status 401 zurück
+* Authentifizierung fehlgeschlagen
 
 **Lösung:**
+
 ```
 1. Verify API key is correct
 2. Check if API key expired
@@ -409,10 +427,12 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 #### Fehler 3: Ungültiges Antwortformat
 
 **Symptome:**
-- Antwort empfangen, aber nicht parsebar
-- Erwartete Felder fehlen
+
+* Antwort empfangen, aber nicht parsebar
+* Erwartete Felder fehlen
 
 **Lösung:**
+
 ```
 1. Verify API documentation
 2. Check response structure matches expectations
@@ -424,9 +444,9 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
      → Log response for debugging
 ```
 
-**Leitfaden-Referenz:** [Call API – Fehlerbehebung](../then/action/call-api-guide.md#troubleshooting)
+**Leitfaden-Referenz:** [Call API – Fehlerbehebung](../then/action/call-api-guide.md)
 
----
+***
 
 ## Erweiterte Varianten
 
@@ -441,7 +461,7 @@ Step 3: Call Pricing API → Get Price (using Product ID from Step 2)
 Step 4: Validate & Store all data
 ```
 
----
+***
 
 ### Variante 2: Bedingte API-Aufrufe
 
@@ -455,7 +475,7 @@ ELSE:
   → Skip API call (not needed for small amounts)
 ```
 
----
+***
 
 ### Variante 3: Caching von API-Antworten
 
@@ -471,45 +491,47 @@ ELSE:
      → Set "API_Last_Called" to today
 ```
 
----
+***
 
 ## Leistungsaspekte
 
 ### Best Practices
 
 ✅ **Empfohlen:**
-- API-Antworten nach Möglichkeit cachen
-- Timeout-Einstellungen verwenden (30–60 Sekunden)
-- Retry-Logik für vorübergehende Fehler implementieren
-- API-Aufrufe zur Fehlersuche protokollieren
-- API-Nutzung/-Kosten überwachen
-- Zuerst mit Beispiel-Dokumenten testen
+
+* API-Antworten nach Möglichkeit cachen
+* Timeout-Einstellungen verwenden (30–60 Sekunden)
+* Retry-Logik für vorübergehende Fehler implementieren
+* API-Aufrufe zur Fehlersuche protokollieren
+* API-Nutzung/-Kosten überwachen
+* Zuerst mit Beispiel-Dokumenten testen
 
 ❌ **Nicht empfohlen:**
-- APIs synchron für jedes Dokument aufrufen (Batch-Verarbeitung erwägen)
-- Antwortfehler ignorieren
-- Zugangsdaten fest im Workflow hinterlegen
-- Unnötige API-Aufrufe tätigen
-- Timeouts unbehandelt lassen
 
----
+* APIs synchron für jedes Dokument aufrufen (Batch-Verarbeitung erwägen)
+* Antwortfehler ignorieren
+* Zugangsdaten fest im Workflow hinterlegen
+* Unnötige API-Aufrufe tätigen
+* Timeouts unbehandelt lassen
+
+***
 
 ## Test-Checkliste
 
 Vor dem Produktiveinsatz dieses Patterns:
 
-- [ ] API-Aufruf mit gültigen Daten testen
-- [ ] API-Aufruf mit ungültigen Daten testen
-- [ ] Timeout-Szenario testen (was passiert, wenn die API langsam ist?)
-- [ ] Authentifizierungsfehler testen
-- [ ] Ungültiges Antwortformat testen
-- [ ] Feldspeicherung testen (Daten korrekt gespeichert?)
-- [ ] Vergleichslogik testen (korrekte Berechnung?)
-- [ ] Routing testen (gehen Dokumente an die richtige Stelle?)
-- [ ] Fehlerbehandlung testen (Fehler sauber behandelt?)
-- [ ] Mit hohem Volumen testen (Leistung akzeptabel?)
+* [ ] API-Aufruf mit gültigen Daten testen
+* [ ] API-Aufruf mit ungültigen Daten testen
+* [ ] Timeout-Szenario testen (was passiert, wenn die API langsam ist?)
+* [ ] Authentifizierungsfehler testen
+* [ ] Ungültiges Antwortformat testen
+* [ ] Feldspeicherung testen (Daten korrekt gespeichert?)
+* [ ] Vergleichslogik testen (korrekte Berechnung?)
+* [ ] Routing testen (gehen Dokumente an die richtige Stelle?)
+* [ ] Fehlerbehandlung testen (Fehler sauber behandelt?)
+* [ ] Mit hohem Volumen testen (Leistung akzeptabel?)
 
----
+***
 
 ## Praxisbeispiele
 
@@ -517,95 +539,99 @@ Vor dem Produktiveinsatz dieses Patterns:
 
 **API:** https://api.exchangerate-api.com/v4/latest/USD
 
-**Workflow:**
+**Arbeitsablauf:**
+
 1. Rechnungswährung extrahieren: „GBP"
 2. Wechselkurs-API aufrufen
 3. Kurs GBP→EUR abrufen
 4. EUR-Gegenwert berechnen
-5. In Feld „Amount_EUR" speichern
+5. In Feld „Amount\_EUR" speichern
 6. Verarbeitung mit EUR-Betrag fortsetzen
 
----
+***
 
 ### Beispiel 2: Bonitätsprüfung des Lieferanten
 
 **API:** Interner Bonitätsprüfdienst
 
-**Workflow:**
+**Arbeitsablauf:**
+
 1. Lieferantencode extrahieren
 2. Bonitätsprüf-API aufrufen
 3. Bonitätsstatus abrufen: „APPROVED" oder „BLOCKED"
-4. IF BLOCKED:
-   - Verarbeitung stoppen
-   - Dringende Aufgabe erstellen
-   - Finanzteam benachrichtigen
-5. IF APPROVED:
-   - Normalen Workflow fortsetzen
+4. WENN GESPERRT:
+   * Verarbeitung stoppen
+   * Dringende Aufgabe erstellen
+   * Finanzteam benachrichtigen
+5. FALLS GENEHMIGT:
+   * Normalen Workflow fortsetzen
 
----
+***
 
 ### Beispiel 3: Anreicherung der Produktstammdaten
 
 **API:** Produktkatalog-Dienst
 
-**Workflow:**
+**Arbeitsablauf:**
+
 1. Produktcode aus der Rechnung extrahieren
 2. Produkt-API aufrufen
 3. Abrufen: Produktname, Kategorie, Sachkonto
 4. In Dokumentfeldern speichern
 5. Für die automatische Kontierung verwenden
 
----
+***
 
 ## Verwandte Patterns
 
 ### Dieses Pattern passt gut zu:
 
-- **[Datentransformations-Pattern](data-transformation-pattern.md)** – API-Antwortdaten transformieren
-- **[Entscheidungslogik-Pattern](decision-logic-pattern.md)** – Anhand der API-Daten routen
-- **[Aufgabenverwaltungs-Pattern](task-management-pattern.md)** – Aufgaben für API-Fehler erstellen
-- **[PO-Matching-Pattern](po-matching-pattern.md)** – API-Preise mit PO-Validierung kombinieren
+* [**Datentransformations-Pattern**](data-transformation-pattern.md) – API-Antwortdaten transformieren
+* [**Entscheidungslogik-Pattern**](decision-logic-pattern.md) – Anhand der API-Daten routen
+* [**Aufgabenverwaltungs-Pattern**](task-management-pattern.md) – Aufgaben für API-Fehler erstellen
+* [**PO-Matching-Muster**](po-matching-pattern.md) – API-Preise mit PO-Validierung kombinieren
 
----
+***
 
 ## Verwandte Leitfäden
 
 ### Voraussetzungen
-- [Call API-Leitfaden](../then/action/call-api-guide.md) – Dokumentation der API-Karte
-- [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md) – Bedingungslogik
-- [Leitfaden Feldmanipulation](../then/document-field/field-manipulation-guide.md) – Feldoperationen
+
+* [Call API-Leitfaden](../then/action/call-api-guide.md) – Dokumentation der API-Karte
+* [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md) – Bedingungslogik
+* [Leitfaden Feldmanipulation](../then/document-field/field-manipulation-guide.md) – Feldoperationen
 
 ### Verwandte Karten
-- **CALL_API** – [Call API-Leitfaden](../then/action/call-api-guide.md)
-- **ACTION_HTTPS_REQUEST** – [HTTPS-Request-Leitfaden](../then/action/https-request-guide.md)
-- **CONDITION_HTTPS_REQUEST_STATUS** – [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md#condition-https-request-status)
-- **ACTION_SET_FIELD_TO_TEXT** – [Leitfaden Feldmanipulation](../then/document-field/field-manipulation-guide.md#set-field)
-- **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** – [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md#field-comparison)
+
+* **CALL\_API** – [Call API-Leitfaden](../then/action/call-api-guide.md)
+* **ACTION\_HTTPS\_REQUEST** – [HTTPS-Request-Leitfaden](../then/action/https-request-guide.md)
+* **CONDITION\_HTTPS\_REQUEST\_STATUS** – [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md)
+* **ACTION\_SET\_FIELD\_TO\_TEXT** – [Leitfaden Feldmanipulation](../then/document-field/field-manipulation-guide.md)
+* **CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES** – [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md)
 
 ### Nächste Schritte
-- API-Fehler beheben: [Fehlerbehandlung](#fehlerbehandlung) oben
-- Aufgabenerstellung hinzufügen: [Aufgabenverwaltungs-Pattern](task-management-pattern.md)
-- Daten transformieren: [Datentransformations-Pattern](data-transformation-pattern.md)
 
----
+* API-Fehler beheben: [Fehlerbehandlung](api-integration-pattern.md#fehlerbehandlung) oben
+* Aufgabenerstellung hinzufügen: [Aufgabenverwaltungs-Pattern](task-management-pattern.md)
+* Daten transformieren: [Datentransformations-Pattern](data-transformation-pattern.md)
+
+***
 
 ## Support & Ressourcen
 
 **Hilfe benötigt?**
-- [Call API – Fehlerbehebung](../then/action/call-api-guide.md#troubleshooting) lesen
-- [API-Antwortcodes](../then/action/call-api-guide.md#response-scenarios) prüfen
-- API zuerst mit Postman testen
-- Support des API-Anbieters kontaktieren
+
+* [Call API – Fehlerbehebung](../then/action/call-api-guide.md) lesen
+* [API-Antwortcodes](../then/action/call-api-guide.md) prüfen
+* API zuerst mit Postman testen
+* Support des API-Anbieters kontaktieren
 
 **Feedback:**
-- Pattern-Probleme melden an: docs@docbits.com
-- Verbesserungen vorschlagen
-- Ihre Anwendungsfälle teilen
 
----
+* Pattern-Probleme melden an: docs@docbits.com
+* Verbesserungen vorschlagen
+* Ihre Anwendungsfälle teilen
 
-**Pattern-Version:** 1.0
-**Zuletzt aktualisiert:** 23. Oktober 2025
-**Schwierigkeit:** Mittel
-**Geschätzte Zeit:** 45–60 Minuten
-**Erfolgsquote:** Hoch (bei stabiler API)
+***
+
+**Pattern-Version:** 1.0 **Zuletzt aktualisiert:** 23. Oktober 2025 **Schwierigkeit:** Mittel **Geschätzte Zeit:** 45–60 Minuten **Erfolgsquote:** Hoch (bei stabiler API)

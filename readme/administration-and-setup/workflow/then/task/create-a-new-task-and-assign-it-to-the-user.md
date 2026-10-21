@@ -1,19 +1,19 @@
-# Create a New Task and assign it to the User
+# Erstellen Sie eine neue Aufgabe und weisen Sie sie dem Benutzer zu
 
 <figure><img src="../../../../.gitbook/assets/image (287).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck**
 
-Die Workflow-Karte **"Create Task or Notification"** optimiert das Management von Aufgaben und Benachrichtigungen innerhalb von Workflows. Je nach Version kann die Karte Aufgaben erstellen, Benachrichtigungen senden und zusätzliche Funktionen wie Entscheidungsbäume für die dynamische Verarbeitung nutzen.
+Die Workflow-Karte **„Aufgabe oder Benachrichtigung erstellen“** optimiert das Management von Aufgaben und Benachrichtigungen innerhalb von Workflows. Je nach Version kann die Karte Aufgaben erstellen, Benachrichtigungen senden und zusätzliche Funktionen wie Entscheidungsbäume für die dynamische Verarbeitung nutzen.
 
 ## **Bestandteile der Karte**
 
 1. **Titel**
    * **Beschreibung**: Legt den Titel der erstellten Aufgabe oder Benachrichtigung fest.
-   * **Detail**: Der Titel liefert einen klaren und prägnanten Bezeichner für die Aufgabe oder Benachrichtigung.
+   * **Detailliert**: Der Titel liefert einen klaren und prägnanten Bezeichner für die Aufgabe oder Benachrichtigung.
 2. **Beschreibung**
    * **Beschreibung**: Liefert Details zur Aufgabe oder Benachrichtigung.
-   * **Detail**: Hilft, den Zweck oder Kontext der Aufgabe oder Benachrichtigung für den zugewiesenen Benutzer zu verdeutlichen.
+   * **Detailliert**: Hilft, den Zweck oder Kontext der Aufgabe oder Benachrichtigung für den zugewiesenen Benutzer zu verdeutlichen.
 3. **Priorität**
    * **Beschreibung**: Legt die Dringlichkeitsstufe der Aufgabe fest.
    * **Optionen**:
@@ -22,7 +22,7 @@ Die Workflow-Karte **"Create Task or Notification"** optimiert das Management vo
      * **Niedrig**: Kann später bearbeitet werden.
 4. **Zugewiesener Benutzer**
    1. **Beschreibung**: Gibt den Benutzer an, dem die Aufgabe zugewiesen wird.
-   2. **Detail**: Benutzer werden aus einer Dropdown-Liste des verfügbaren Personals ausgewählt.
+   2. **Detailliert**: Benutzer werden aus einer Dropdown-Liste des verfügbaren Personals ausgewählt.
 5. **E-Mail-Benachrichtigung**
    * **Beschreibung**: Legt fest, ob der zugewiesene Benutzer eine E-Mail-Benachrichtigung erhält.
    * **Optionen**:
@@ -36,16 +36,16 @@ Die Workflow-Karte **"Create Task or Notification"** optimiert das Management vo
    * **Optionen**:
      * **True**: Aktiviert die Verarbeitung über den Entscheidungsbaum.
      * **False**: Deaktiviert die Verarbeitung über den Entscheidungsbaum.
-2. **Task oder Notification (nur Version 4)**
+2. **Aufgabe oder Benachrichtigung (nur Version 4)**
    * **Beschreibung**: Ermöglicht die Auswahl zwischen der Erstellung einer Aufgabe oder einer Benachrichtigung.
    * **Optionen**:
-     * **Task**: Erstellt eine Aufgabe.
+     * **Aufgabe**: Erstellt eine Aufgabe.
      * **Notification**: Erstellt eine Benachrichtigung anstelle einer Aufgabe.
 
 ## **Funktionalität:**
 
 * **Bedingungsauswertung**:\
-  Diese Karte wird nur ausgelöst, wenn die Bedingungen in den Abschnitten **"Where"** und **"And"** erfüllt sind.
+  Diese Karte wird nur ausgelöst, wenn die Bedingungen in den Abschnitten **„Wo“** und **„Und“** erfüllt sind.
 * **Erstellung von Aufgabe oder Benachrichtigung**:
   * Versionen 2 und 3: Es wird eine Aufgabe mit dem angegebenen Titel, der Beschreibung, der Priorität und dem zugewiesenen Benutzer erstellt.
   * Version 4: Ermöglicht die Erstellung entweder einer Aufgabe oder einer Benachrichtigung.
@@ -69,4 +69,4 @@ Die Workflow-Karte **"Create Task or Notification"** optimiert das Management vo
 
 ## **Fazit:**
 
-Die Workflow-Karte **"Create Task or Notification"** ist ein vielseitiges Werkzeug zur Verwaltung von Aufgaben und Benachrichtigungen. Indem sie die dynamische Benutzerzuweisung über Entscheidungsbäume unterstützt und Optionen für die Erstellung von Aufgaben oder Benachrichtigungen bietet, verbessert sie die Anpassungsfähigkeit des Workflows und die Effizienz der Zusammenarbeit.
+Die Workflow-Karte **„Aufgabe oder Benachrichtigung erstellen“** ist ein vielseitiges Werkzeug zur Verwaltung von Aufgaben und Benachrichtigungen. Indem sie die dynamische Benutzerzuweisung über Entscheidungsbäume unterstützt und Optionen für die Erstellung von Aufgaben oder Benachrichtigungen bietet, verbessert sie die Anpassungsfähigkeit des Workflows und die Effizienz der Zusammenarbeit.

@@ -1,4 +1,4 @@
-# Text in Field
+# Text im Feld
 
 <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -11,11 +11,11 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen auf Basis des Vorhandenseins
 1. **Text**
    * **Beschreibung:** Gibt die Textzeichenfolge an, die innerhalb des Feldes geprüft wird.
    * **Detail:** Dies kann ein Wort, eine Phrase oder eine Zeichenfolge sein, die für den Workflow relevant ist.
-2. **Operator**
+2. **Betreiber**
    * **Beschreibung:** Legt die Bedingung für das Vorhandensein des Textes im Feld fest.
    * **Optionen:**
      * **Is:** Löst den Workflow aus, wenn der angegebene Text im Feld vorhanden ist.
-     * **Is Not:** Löst den Workflow aus, wenn der angegebene Text im Feld nicht vorhanden ist.
+     * **Ist nicht:** Löst den Workflow aus, wenn der angegebene Text im Feld nicht vorhanden ist.
 3. **Feldname**
    * **Beschreibung:** Gibt den Namen des auszuwertenden Dokumentfelds an.
    * **Detail:** Dieser muss exakt mit dem Bezeichner des Feldes innerhalb des Dokuments übereinstimmen.
@@ -29,7 +29,7 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen auf Basis des Vorhandenseins
    * **Bedingung nicht erfüllt (False):**\
      Stimmt das Vorhandensein des Textes im Feld nicht mit der Bedingung überein, werden je nach Workflow-Konfiguration alternative oder keine Aktionen ausgeführt.
 
-## **Einrichtung und Konfiguration:**&#x20;
+## **Einrichtung und Konfiguration:**
 
 * Der Benutzer gibt den zu prüfenden Text ein. Anschließend wählt er den Feldnamen des relevanten Dokuments aus.
 

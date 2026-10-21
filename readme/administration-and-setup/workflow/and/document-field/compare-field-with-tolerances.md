@@ -1,4 +1,4 @@
-# Compare Field with tolerances
+# Feld mit Toleranzen vergleichen
 
 <figure><img src="../../../../.gitbook/assets/image (15) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -41,7 +41,7 @@ Diese Workflow-Karte ist darauf ausgelegt, den Wert eines Feldes mit einem angeg
 
 ## **Einrichtung und Konfiguration:**
 
-* Benutzer konfigurieren die Karte, indem sie das auszuwertende Feld aus einer Liste verfügbarer Felder auswählen und den Vergleichsoperator (z. B. gleich, größer als) aus einer Dropdown-Liste wählen. Anschließend geben sie den Referenzwert an, mit dem verglichen wird, und legen den Toleranzbetrag fest; danach wählen sie den Toleranztyp (z. B. Prozent oder Wert).&#x20;
+* Benutzer konfigurieren die Karte, indem sie das auszuwertende Feld aus einer Liste verfügbarer Felder auswählen und den Vergleichsoperator (z. B. gleich, größer als) aus einer Dropdown-Liste wählen. Anschließend geben sie den Referenzwert an, mit dem verglichen wird, und legen den Toleranzbetrag fest; danach wählen sie den Toleranztyp (z. B. Prozent oder Wert).
 
 ## **Fazit:**
 

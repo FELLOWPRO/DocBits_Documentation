@@ -1,4 +1,4 @@
-# Continue with a chance
+# Fahren Sie mit einer Chance fort
 
 <figure><img src="../../../../.gitbook/assets/image (49).png" alt="" width="563"><figcaption></figcaption></figure>
 

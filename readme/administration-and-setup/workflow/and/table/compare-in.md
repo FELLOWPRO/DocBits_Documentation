@@ -1,4 +1,4 @@
-# Compare In
+# Vergleichen Sie in
 
 <figure><img src="../../../../.gitbook/assets/image (43).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -26,6 +26,6 @@ Diese Karte ist besonders nützlich in Szenarien, in denen eine komplexe bedingt
 
 ## **Beispiel-Szenario:**
 
-* Ein Benutzer konfiguriert die Karte so, dass sie die Spalten "Quantity" und "Threshold" in einer Tabelle "Stock" mit der Bedingung **Quantity ≥ Threshold** vergleicht. Dieser Vergleich findet nur statt, wenn die Spalte "Item Code" mit dem Regex-Muster für bestimmte Codeformate übereinstimmt, etwa **^A\d{3}$** (was einen Artikelcode angibt, der mit "A" beginnt und von drei Ziffern gefolgt wird).
+* Ein Benutzer konfiguriert die Karte so, dass sie die Spalten "Quantity" und "Threshold" in einer Tabelle "Stock" mit der Bedingung **Menge ≥ Schwellenwert** vergleicht. Dieser Vergleich findet nur statt, wenn die Spalte "Item Code" mit dem Regex-Muster für bestimmte Codeformate übereinstimmt, etwa **^A\d{3}$** (was einen Artikelcode angibt, der mit "A" beginnt und von drei Ziffern gefolgt wird).
 
 Durch die Verwendung der Karte "Conditional Column Comparison" können Organisationen fortgeschrittene, musterabhängige Vergleiche innerhalb von Datensätzen erstellen und so eine feinabgestimmte Datenverarbeitung und höhere Genauigkeit in bedingten Workflows ermöglichen.

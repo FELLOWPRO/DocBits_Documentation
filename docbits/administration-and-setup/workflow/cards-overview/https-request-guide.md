@@ -25,11 +25,7 @@ Add this card to the **Then** group of the Workflow Builder — the actions that
 
 ## Purpose
 
-This card sends a secure message to a website or service and can receive a response back. It's simpler than the "Call API" card and is useful for quick integrations.
-
-**Real-world example:** Send invoice data to your accounting system, or ask an external system if an employee is approved to process this purchase.
-
-***
+The HTTPS request card uses a configured HTTPS URL and its own headers. `call_api` uses a relative DocBits API path and the current DocBits user context; its result is derived from response text. Choose by endpoint and response contract, not by a simple-versus-complex API distinction.
 
 ## When to Use This Card
 
@@ -313,13 +309,7 @@ Headers: Authorization: Bearer token
 
 ## Difference from "Call API" Card
 
-| Feature        | HTTPS Request      | Call API          |
-| -------------- | ------------------ | ----------------- |
-| Simplicity     | Simple             | More complex      |
-| Parameters     | Basic              | Advanced          |
-| Error Handling | Basic              | Detailed          |
-| Use for        | Quick integrations | Complex APIs      |
-| Best for       | Webhooks           | Professional APIs |
+The HTTPS request card uses a configured HTTPS URL and its own headers. `call_api` uses a relative DocBits API path and the current DocBits user context; its result is derived from response text. Choose by endpoint and response contract, not by a simple-versus-complex API distinction.
 
 ***
 

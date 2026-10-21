@@ -875,7 +875,7 @@ Solution:
 
 * [Field Manipulation Guide](../field-manipulation-guide.md) - All field operations
 * [Condition Cards Guide](../condition-cards-complete-guide.md) - Validation conditions
-* [Call API Guide](../call-api-guide.md) - External data fetch
+* [Call API Guide](../call-api-guide.md)
 
 ### Related Cards
 

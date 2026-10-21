@@ -37,6 +37,6 @@ O cartão de fluxo de trabalho **"Atribuir documento a \[Usuário/grupo] com bas
 
 **Configuração:** Selecione uma tabela de decisão de demonstração cuja regra correspondente retorne o revisor configurado e escolha o tipo de destinatário oferecido por esta versão do cartão.
 
-**Resultado esperado e contra-exemplo:** O usuário ou grupo retornado torna-se o cessionário do documento. Um resultado vazio da tabela de decisão deve ser diagnosticado separadamente.
+**Resultado esperado e contra-exemplo:** O usuário ou grupo retornado torna-se o responsável do documento. Um resultado vazio da tabela de decisão deve ser diagnosticado separadamente.
 
 Esta é uma configuração ilustrativa e resultado esperado. Utilize campos, usuários e grupos configurados em sua organização de teste; não é uma afirmação de que este exemplo foi executado.

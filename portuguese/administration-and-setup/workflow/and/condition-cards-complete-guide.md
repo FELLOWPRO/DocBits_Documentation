@@ -427,7 +427,7 @@ YES: Delivery date acceptable ✅
 
 ## Condições de lógica
 
-### Cartão: CONDITION\_DECISION\_TREE\_DATA / Devoluções da Tabela de Decisão
+### Cartão: CONDITION\_DECISION\_TREE\_DATA / Resultados da tabela de decisão
 
 #### Objetivo
 

@@ -40,16 +40,6 @@
     * [Guide de diagnostic d'exportation de l'API M3](overview-and-basics/faq/infor-m3-m3-integration/m3-api-export-diagnostic-guide.md)
   * [Canaux PDP/PPF obligatoires – PEPPOL uniquement comme transport pour la facturation électronique 2026 en France](overview-and-basics/faq/mandatory-pdp-ppf-channels-peppol-as-transport-only-for-frances-2026-e-invoicing.md)
 
-## Sécurité <a href="#security" id="security"></a>
-
-* [FAQ Sécurité & Conformité](security/security-and-compliance-faq.md)
-* [Stockage sécurisé des identifiants](security/secure-storage-of-credentials.md)
-* [Chiffrement au repos](security/encryption-at-rest.md)
-* [Cookies et stockage du navigateur](security/cookies-and-browser-storage.md)
-* [Gestion des vulnérabilités](security/vulnerability-management.md)
-* [Autres contrôles de sécurité](security/other-security-controls.md)
-* [Authentification à deux facteurs (2FA)](security/two-factor-authentication.md)
-
 ## Section utilisateurs et partenaires <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [Section utilisateur final](end-user-and-partner-section/end-user-section/README.md)
@@ -601,6 +591,7 @@
     * [Material Ordering and Processing Workflow](administration-and-setup/workflow/material-ordering-and-processing-workflow.md)
     * [Workflow Example: Conditional Export Trigger](administration-and-setup/workflow/workflow-description-conditional-export-trigger.md)
     * [Attribution et statut — Exemples pratiques](administration-and-setup/workflow/workflow-documentation.md)
+  * [Vérifier les modifications des workflows avec des tests de régression](administration-and-setup/workflow/workflow-regression-tests.md)
   * [Advanced Workflow](administration-and-setup/workflow/advanced-workflow-builder.md)
     * [Vidéos Advanced Workflow](administration-and-setup/workflow/advanced-workflow-videos.md)
     * [Nodes](administration-and-setup/workflow/advanced-workflow/nodes.md)
@@ -902,3 +893,13 @@
 * [Connecter DocBits à Power BI](advanced-functions-and-tools/powerbi.md)
   * [Se connecter via ClickHouse](advanced-functions-and-tools/powerbi/powerbi.md)
   * [Se connecter via la base de données en lecture seule](advanced-functions-and-tools/powerbi/connect-via-read-only-database.md)
+
+## Sécurité <a href="#security" id="security"></a>
+
+* [FAQ Sécurité & Conformité](security/security-and-compliance-faq.md)
+* [Stockage sécurisé des identifiants](security/secure-storage-of-credentials.md)
+* [Chiffrement au repos](security/encryption-at-rest.md)
+* [Cookies et stockage du navigateur](security/cookies-and-browser-storage.md)
+* [Gestion des vulnérabilités](security/vulnerability-management.md)
+* [Autres contrôles de sécurité](security/other-security-controls.md)
+* [Authentification à deux facteurs (2FA)](security/two-factor-authentication.md)

@@ -54,7 +54,7 @@ Verwenden Sie diese Karten, um einen Artikel mit den angegebenen Preisdaten zu v
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-4a7af1d99c73-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
-## Bevollmächtigter
+## Zuweisung
 
 Verwenden Sie **Zuständiger**, wenn die Bedingung vom zugewiesenen Benutzer oder der zugewiesenen Gruppe abhängt. Wählen Sie, ob Sie mit einem Benutzer oder einer Gruppe oder einem ausgewählten Satz vergleichen möchten. Siehe [Beauftragter](assignee).
 

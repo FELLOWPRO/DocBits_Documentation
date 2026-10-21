@@ -25,11 +25,7 @@ Adicione este cartão ao grupo **Então** do Workflow Builder — as ações que
 
 ## Objetivo
 
-Este cartão envia uma mensagem segura para um site ou serviço e pode receber uma resposta. É mais simples que o cartão "Call API" e é útil para integrações rápidas.
-
-**Exemplo do mundo real:** Envie os dados da fatura para o seu sistema contábil ou pergunte a um sistema externo se um funcionário está aprovado para processar esta compra.
-
-***
+O cartão de pedido HTTPS utiliza um URL HTTPS configurado e cabeçalhos próprios. `call_api` utiliza um caminho relativo da API DocBits e o contexto do utilizador atual; o resultado deriva do texto da resposta. Escolha pelo endpoint e pelo contrato de resposta, não por uma distinção entre API simples e complexa.
 
 ## Quando usar este cartão
 
@@ -313,13 +309,7 @@ Headers: Authorization: Bearer token
 
 ## Diferença do cartão "Call API"
 
-| Recurso        | Solicitação HTTPS      | Chamar API          |
-| -------------- | ------------------ | ----------------- |
-| Simplicidade     | Simples             | Mais complexo      |
-| Parâmetros     | Básico              | Avançado          |
-| Tratamento de erros | Básico              | Detalhado          |
-| Usar para        | Integrações rápidas | APIs complexas      |
-| Melhor para       | Webhooks           | APIs profissionais |
+O cartão de pedido HTTPS utiliza um URL HTTPS configurado e cabeçalhos próprios. `call_api` utiliza um caminho relativo da API DocBits e o contexto do utilizador atual; o resultado deriva do texto da resposta. Escolha pelo endpoint e pelo contrato de resposta, não por uma distinção entre API simples e complexa.
 
 ***
 

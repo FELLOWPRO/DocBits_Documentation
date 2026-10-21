@@ -2,15 +2,15 @@
 
 ### Leveranciersgroep
 
-<figure><img src="../../../.gitbook/assets/supplier_group.png" alt="Leveranciersgroep"><figcaption><p>Pagina Supplier Group</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t015-nl.png" alt="Leveranciersgroepen met afgeschermde namen."><figcaption><p>Leveranciersgroepen met afgeschermde namen.</p></figcaption></figure>
 
-Beheer leveranciersgroepen om leveranciers te categoriseren op type, regio of rol. Elke groep heeft een **Group API Name** (gebruikt voor integraties) en een **Group Name** (weergavenaam).
+Beheer leveranciersgroepen om leveranciers te categoriseren op type, regio of rol. Elke groep heeft een **Groeps-API-naam** (gebruikt voor integraties) en een **Groepsnaam** (weergavenaam).
 
 Klik op **+ New** om een groep te maken. Gebruik het menu met drie puntjes op elke rij om te bewerken of te verwijderen.
 
 ### Koppeling tussen gebruikers en leveranciersgroepen
 
-<figure><img src="../../../.gitbook/assets/user_supplier_group_mapping.png" alt="Koppeling tussen gebruikers en leveranciersgroepen"><figcaption><p>Pagina User and Supplier Group Mapping</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t016-nl.png" alt="Gebruikers aan leveranciersgroepen koppelen."><figcaption><p>Gebruikers aan leveranciersgroepen koppelen.</p></figcaption></figure>
 
 Wijs gebruikers toe aan leveranciersgroepen om te bepalen welke medewerkers toegang hebben tot specifieke sets leveranciers en deze mogen beheren. Elke groep wordt weergegeven als een uitklapbaar gedeelte met de toegewezen gebruikers en het aantal leden.
 

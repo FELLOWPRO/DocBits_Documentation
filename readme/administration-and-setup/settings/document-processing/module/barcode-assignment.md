@@ -14,7 +14,7 @@ Zodra de instelling is ingeschakeld, verschijnt er een nieuwe **barcodeknop** (e
 
 Hier ziet u het pictogram in context op het validatiescherm, naast het document dat wordt gecontroleerd:
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_validation_screen.png" alt="Validatiescherm met het barcodepictogram beschikbaar"><figcaption><p>Het validatiescherm — het barcodepictogram (gemarkeerd, rechter werkbalk) wordt alleen getoond wanneer Barcodetoewijzing is ingeschakeld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_validation_screen-nl.png" alt="Validatie van een fictieve factuur met barcode en QR-code."><figcaption><p>Validatie van een fictieve factuur met barcode en QR-code.</p></figcaption></figure>
 
 ### Hoe barcodes worden gelezen
 
@@ -32,15 +32,15 @@ Welke barcodetypes worden gedetecteerd, wordt bepaald door de instelling **Bar-C
 2. Klik op het **barcodepictogram** in de rechter werkbalk.
 3. Het dialoogvenster **Barcodetoewijzing** toont elke barcode die DocBits in het document heeft gedetecteerd, weergegeven als `Barcode <n> : <waarde>`.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_dialog.png" alt="Dialoogvenster Barcodetoewijzing met de gedetecteerde barcodes"><figcaption><p>Het dialoogvenster Barcodetoewijzing toont elke gedetecteerde barcode met een vervolgkeuzelijst om het doelveld te kiezen.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_dialog-nl.png" alt="Uitgelezen barcodes aan documentvelden koppelen."><figcaption><p>Uitgelezen barcodes aan documentvelden koppelen.</p></figcaption></figure>
 
 4. Open voor elke barcode de vervolgkeuzelijst en kies het veld waarin de waarde moet komen.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_options.png" alt="Het doelveld kiezen voor een barcode"><figcaption><p>Elke barcode kan aan elk willekeurig documentveld worden toegewezen — bijv. Ordernummer, Factuurnummer, Leveranciers-ID.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_field_options-nl.png" alt="Beschikbare velden in het venster voor barcodekoppeling."><figcaption><p>Beschikbare velden in het venster voor barcodekoppeling.</p></figcaption></figure>
 
 5. Zodra u een veld selecteert, wordt dat veld gevuld met de waarde van de barcode.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_mapped.png" alt="Barcode toegewezen aan het veld Ordernummer"><figcaption><p>Na het selecteren van een veld (hier Ordernummer) wordt het veld gevuld met de barcodewaarde.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_field_mapped-nl.png" alt="Niet-opgeslagen koppeling met het inkooporderveld."><figcaption><p>Niet-opgeslagen koppeling met het inkooporderveld.</p></figcaption></figure>
 
 ### Hoe in te schakelen
 

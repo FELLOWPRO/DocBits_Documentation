@@ -4,7 +4,7 @@ Met **Aanmeldingsanalyses** krijgen beheerders een alleen-lezen overzicht voor d
 
 > **Toegang:** Open **Instellingen → Organisatie & Toegang → Gebruikers** en klik op de knop **Aanmeldingsanalyses** rechtsboven (`/settings/login-analytics`).
 
-<figure><img src="../../../../../.gitbook/assets/login_analytics_overview.png" alt="Pagina Aanmeldingsanalyses met de activiteitsgrafiek en samenvattingskaarten"><figcaption><p>Aanmeldingsactiviteit van de organisatie over de geselecteerde periode</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u003-nl.png" alt="Overzicht van aanmeldanalyses."><figcaption><p>Overzicht van aanmeldanalyses.</p></figcaption></figure>
 
 ## Tijdsbereik
 

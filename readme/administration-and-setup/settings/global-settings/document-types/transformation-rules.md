@@ -9,7 +9,7 @@ Transformatieregels maken geëxtraheerde gegevens **automatisch** schoon of hers
 * een **headerveld** (factuurnummer, valuta, btw-nummer van de leverancier …),
 * een **kolom** in elke rij van een tabel (eenheid, artikelnummer, prijsbasis …),
 * de **rijen** van een tabel (wissen, een rij toevoegen),
-* een **attribuut van het document** — momenteel de suborganisatie waartoe het behoort (**Routing**).
+* een **attribuut van het document** — momenteel de suborganisatie waartoe het behoort (**Routering**).
 
 Elke regel **leest** een waarde, stuurt die door een korte **pijplijn** van stappen en **schrijft** het resultaat terug. Regels draaien **vóór** validatie, scripts en inkooporder-matching, zodat alles verderop in de keten al de gecorrigeerde waarden ziet.
 
@@ -36,23 +36,23 @@ Transformatieregels worden **per documenttype** ingeschakeld door een **organisa
 
 1. Ga naar **Settings → Global Settings → Document Types**.
 2. Klik op het **instellingen**-pictogram (tandwiel) op de kaart van het documenttype.
-3. Open **Transformation Rules** en zet de schakelaar aan. Klik op **Manage transformation rules** om de lijst te openen.
+3. Open **Transformatieregels** en zet de schakelaar aan. Klik op **Transformatieregels beheren** om de lijst te openen.
 
 <figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="De schakelaar Transformation Rules"><figcaption><p>De schakelaar Transformation Rules in de aanvullende instellingen van een documenttype</p></figcaption></figure>
 
-De kaart van het documenttype toont nu een link **Transformation Rules** en een link **Logs** voor de uitvoeringslogboeken.
+De kaart van het documenttype toont nu een link **Transformatieregels** en een link **Logboeken** voor de uitvoeringslogboeken.
 
 ## De regellijst
 
-De lijst toont alle regels van het documenttype in de volgorde waarin ze draaien, elk met een samenvatting in één zin ("When invoice_id is abcd, take invoice_id, make it UPPERCASE, and save it back."), het bereik (**Header**, **Table**, **Column**, **Routing**), het aantal stappen, de bron en of **Logboekuitvoering** (Log execution) aan staat. Filter op bereik en op **Active / Inactive**, zoek, en gebruik het menu **⋮** om een regel te dupliceren of te verwijderen.
+De lijst toont alle regels van het documenttype in de volgorde waarin ze draaien, elk met een samenvatting in één zin ("When invoice_id is abcd, take invoice_id, make it UPPERCASE, and save it back."), het bereik (**Koptekst**, **Tabel**, **Kolom**, **Routering**), het aantal stappen, de bron en of **Logboekuitvoering** (Log execution) aan staat. Filter op bereik en op **Active / Inactive**, zoek, en gebruik het menu **⋮** om een regel te dupliceren of te verwijderen.
 
-Regels komen uit drie bronnen, net als bij validatieregels: **System default**-regels die met DocBits worden meegeleverd (klik op **Customize** voor een bewerkbare kopie), **Customized** systeemregels (**Reset to Default** herstelt het origineel) en **Custom**-regels die u zelf hebt gemaakt.
+Regels komen uit drie bronnen, net als bij validatieregels: **Systeemstandaard**-regels die met DocBits worden meegeleverd (klik op **Aanpassen** voor een bewerkbare kopie), **Op maat gemaakt** systeemregels (**Terugzetten naar standaardinstellingen** herstelt het origineel) en **Aangepast**-regels die u zelf hebt gemaakt.
 
 ## Een regel maken
 
-Klik op **New rule**. De bouwer heeft links drie stappen en rechts een **Live preview**. Bovenaan vat hij de regel tijdens het bouwen samen in één zin.
+Klik op **Nieuwe regel**. De bouwer heeft links drie stappen en rechts een **Live preview**. Bovenaan vat hij de regel tijdens het bouwen samen in één zin.
 
-<figure><img src="../../../../.gitbook/assets/transformation-rule-scope.png" alt="Stap 1 van de bouwer voor transformatieregels"><figcaption><p>Stap 1: wat de regel wijzigt. De zin bovenaan beschrijft de regel in gewone taal</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-rule-scope-nl.png" alt="Transformatiebereik: kopveld, tabelrijen, kolom en routering."><figcaption><p>Transformatiebereik: kopveld, tabelrijen, kolom en routering.</p></figcaption></figure>
 
 ### Stap 1 — Wat en waar
 
@@ -81,11 +81,11 @@ Twee opties onder **Verwerkingsopties** bepalen hoe vaak de regel wordt toegepas
 
 ### Stap 3 — De pijplijn
 
-<figure><img src="../../../../.gitbook/assets/transformation-rule-pipeline.png" alt="De pijplijn met drie stappen en de live preview"><figcaption><p>Read → Trim → Change case → Affix → Write, met de waarde na elke stap in de live preview</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-rule-pipeline-nl.png" alt="Stappen van een transformatieregel. De pijpleiding verwijst naar de transformatiepipeline."><figcaption><p>Stappen van een transformatieregel. De pijpleiding verwijst naar de transformatiepipeline.</p></figcaption></figure>
 
-* **Read from** — **het veld (of de kolom) zelf**, of **een ander veld**. Door uit een ander veld te lezen, kunt u een veld vullen vanuit een ander veld, bijvoorbeeld het inkoopordernummer kopiëren uit een vrij tekstveld.
-* **Steps** — de waarde doorloopt de stappen **van boven naar beneden**; de uitvoer van de ene stap is de invoer van de volgende. Voeg stappen toe met **+ Add a step**, wijzig de volgorde met de pijlen en verwijder ze met **✕**. Elke stap toont rechts de tussenwaarde van het voorbeeld.
-* **Write to** — het doel uit stap 1. DocBits schrijft de opgeslagen waarde en ververst daarna automatisch de weergavewaarde.
+* **Lees uit** — **het veld (of de kolom) zelf**, of **een ander veld**. Door uit een ander veld te lezen, kunt u een veld vullen vanuit een ander veld, bijvoorbeeld het inkoopordernummer kopiëren uit een vrij tekstveld.
+* **Stappen** — de waarde doorloopt de stappen **van boven naar beneden**; de uitvoer van de ene stap is de invoer van de volgende. Voeg stappen toe met **+ Add a step**, wijzig de volgorde met de pijlen en verwijder ze met **✕**. Elke stap toont rechts de tussenwaarde van het voorbeeld.
+* **Schrijf naar** — het doel uit stap 1. DocBits schrijft de opgeslagen waarde en ververst daarna automatisch de weergavewaarde.
 
 ### De stappen
 
@@ -93,37 +93,37 @@ Twee opties onder **Verwerkingsopties** bepalen hoe vaak de regel wordt toegepas
 
 | Stap | Instellingen | Voorbeeld invoer → uitvoer |
 | --- | --- | --- |
-| **Wijzigingsgeval** (Change case) | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
+| **Hoofdlettergebruik wijzigen** (Change case) | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
 | **Trim** | zijde (beide, links, rechts); tekens (leeg = witruimte) | `  4711 ` → `4711`; met tekens `0` en zijde links: `004711` → `4711` |
 | **Pad** | lengte, vulteken, zijde | lengte 10, `0`, links: `4711` → `0000004711` |
-| **Truncate** | maximale lengte | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
-| **Bevestigen** (Affix) | voorvoegsel toevoegen, achtervoegsel toevoegen, voorvoegsel verwijderen, achtervoegsel verwijderen; tekst | voorvoegsel `INV-` toevoegen: `4711` → `INV-4711`; voorvoegsel `Art.-Nr. ` verwijderen: `Art.-Nr. 4711` → `4711` |
+| **Inkorten** | maximale lengte | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
+| **Toevoegen** (Affix) | voorvoegsel toevoegen, achtervoegsel toevoegen, voorvoegsel verwijderen, achtervoegsel verwijderen; tekst | voorvoegsel `INV-` toevoegen: `4711` → `INV-4711`; voorvoegsel `Art.-Nr. ` verwijderen: `Art.-Nr. 4711` → `4711` |
 | **Desinfecteren** (Sanitise) | alleen behouden (alfanumeriek, letters, cijfers, alfanumeriek + spatie) of opgegeven tekens verwijderen | alfanumeriek behouden: `DE 123.456.789` → `DE123456789` |
-| **Take a slice** | begin, lengte of einde | begin 0, lengte 4: `2026-09-29` → `2026` |
+| **Een deel selecteren** | begin, lengte of einde | begin 0, lengte 4: `2026-09-29` → `2026` |
 | **Extract** | patroon, capture group | patroon `PO[- ]?(\d+)`, groep 1: `Order PO-45001234` → `45001234` |
-| **Find & replace** | patroon, vervangen door, aantal (0 = alles) | patroon `\s+`, vervangen door ` `: `ACME    GmbH` → `ACME GmbH` |
-| **Map values** | mappings (van → naar), waarde bij geen overeenkomst (leeg = invoer behouden), hoofdletters negeren | `STK → PCE`: `stk` → `PCE` |
-| **Reformat date** | uitvoerpatroon (`%d.%m.%Y`, `%m/%d/%Y`, `%Y-%m-%d`, `%d %b %Y`) | `%d.%m.%Y`: `2026-09-29` → `29.09.2026` |
-| **Format number** | landinstelling (de_DE, en_US, en_GB, fr_FR), min. en max. decimalen | de_DE, 2 decimalen: `1234.5` → `1.234,50` |
-| **Fix value** | de waarde | schrijft altijd de waarde, ongeacht wat het veld bevatte |
-| **Clear** | – | maakt het veld leeg |
+| **Zoeken en vervangen** | patroon, vervangen door, aantal (0 = alles) | patroon `\s+`, vervangen door ` `: `ACME    GmbH` → `ACME GmbH` |
+| **Waarden toewijzen** | mappings (van → naar), waarde bij geen overeenkomst (leeg = invoer behouden), hoofdletters negeren | `STK → PCE`: `stk` → `PCE` |
+| **Datum opnieuw formatteren** | uitvoerpatroon (`%d.%m.%Y`, `%m/%d/%Y`, `%Y-%m-%d`, `%d %b %Y`) | `%d.%m.%Y`: `2026-09-29` → `29.09.2026` |
+| **Getal opmaken** | landinstelling (de_DE, en_US, en_GB, fr_FR), min. en max. decimalen | de_DE, 2 decimalen: `1234.5` → `1.234,50` |
+| **Vaste waarde** | de waarde | schrijft altijd de waarde, ongeacht wat het veld bevatte |
+| **Wissen** | – | maakt het veld leeg |
 
 Regels van het type **Tabelrijen** gebruiken twee andere stappen, die op rijen werken in plaats van op waarden:
 
 | Stap | Effect |
 | --- | --- |
-| **Clear all rows** | verwijdert elke geëxtraheerde rij. Rijen die door een latere stap worden toegevoegd blijven behouden. |
-| **Add a row** | voegt één rij toe **na de laatste rij** of **vóór de eerste rij**. Kies voor elke kolom **Value** (een vaste waarde) of **Field** (de waarde van een headerveld). Kolommen die u weglaat blijven leeg. |
+| **Wis alle rijen** | verwijdert elke geëxtraheerde rij. Rijen die door een latere stap worden toegevoegd blijven behouden. |
+| **Add a row** | voegt één rij toe **na de laatste rij** of **vóór de eerste rij**. Kies voor elke kolom **Waarde** (een vaste waarde) of **Veld** (de waarde van een headerveld). Kolommen die u weglaat blijven leeg. |
 
 {% hint style="info" %}
-**Reformat date** verwacht de datum zoals DocBits die intern opslaat (`YYYY-MM-DD`). Pas de stap toe op het veld zelf, niet op een tekst die al een opgemaakte datum bevat.
+**Datum opnieuw formatteren** verwacht de datum zoals DocBits die intern opslaat (`YYYY-MM-DD`). Pas de stap toe op het veld zelf, niet op een tekst die al een opgemaakte datum bevat.
 {% endhint %}
 
 ### Live preview
 
 De **Live preview** voert de regel tijdens het bouwen uit op een voorbeeldwaarde:
 
-* **Voorbeeldinvoer** (Sample input) — typ een waarde zoals die uit het document zou komen. Voer voor tabelregels het aantal geëxtraheerde rijen in (**Sample table**) en waarden voor de velden die nieuwe rijen lezen (**Row source values**).
+* **Voorbeeldinvoer** (Sample input) — typ een waarde zoals die uit het document zou komen. Voer voor tabelregels het aantal geëxtraheerde rijen in (**Voorbeeldtabel**) en waarden voor de velden die nieuwe rijen lezen (**Rijbronwaarden**).
 * **Conditiewaarden** (Condition values) — typ bij regels met een voorwaarde de waarden van de voorwaardevelden. De preview toont **Voorwaarden komen overeen — regel wordt uitgevoerd** of de melding dat de voorwaarden niet overeenkomen en de regel wordt overgeslagen.
 * Daaronder ziet u de waarde na **elke stap** en het eindresultaat dat zou worden geschreven ("invoice_id → INV-230620-03A", of "unchanged").
 
@@ -133,30 +133,30 @@ Tijdens het gebruik van de preview wordt niets opgeslagen. Klik op **Opslaan** o
 
 ### Het factuurnummer van een leverancier opschonen
 
-Headerveld **Invoice Number** · alleen wanneer *Supplier ID is HP0000278* · Trim → Wijzigingsgeval UPPERCASE → Bevestigen: voorvoegsel `INV-` toevoegen.
+Headerveld **Factuurnummer** · alleen wanneer *Supplier ID is HP0000278* · Trim → Wijzigingsgeval UPPERCASE → Bevestigen: voorvoegsel `INV-` toevoegen.
 Voorbeeldwaarde `  230620-03a ` → `INV-230620-03A`. Zie de schermafbeelding van de pijplijn hierboven.
 
 ### Eenheidscodes mappen
 
-Tabelkolom **INVOICE_TABLE / UNIT** · altijd · Trim → Map values `STK → PCE`, `KG → KGM`, `Std → HUR`, **Ignore case when matching** aan, waarde bij geen overeenkomst leeg (invoer behouden).
+Tabelkolom **INVOICE_TABLE / UNIT** · altijd · Trim → Map values `STK → PCE`, `KG → KGM`, `Std → HUR`, **Negeer hoofdlettergevoeligheid bij het matchen** aan, waarde bij geen overeenkomst leeg (invoer behouden).
 
-<figure><img src="../../../../.gitbook/assets/transformation-column-value-map.png" alt="Een tabelkolomregel met Map values"><figcaption><p>Map values op de kolom UNIT: <code>stk</code> wordt <code>PCE</code></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-column-value-map-nl.png" alt="Waardetoewijzing voor een tabelkolom. Kaartwaarden en Afbeeldingen betekenen hier waardetoewijzing, niet geografische kaarten of afbeeldingen. De pijpleiding verwijst naar de transformatiepipeline."><figcaption><p>Waardetoewijzing voor een tabelkolom. Kaartwaarden en Afbeeldingen betekenen hier waardetoewijzing, niet geografische kaarten of afbeeldingen. De pijpleiding verwijst naar de transformatiepipeline.</p></figcaption></figure>
 
 ### Eén totaalregel voor een leverancier die op het totaal wordt gematcht
 
 Tabelrijen **INVOICE_TABLE** · alleen wanneer *Supplier ID is HP0000278* · Clear all rows → Add a row met `POSITION` = waarde `001`, `QUANTITY` = waarde `1`, `NET_AMOUNT` = veld *Total Net Amount*.
 
-<figure><img src="../../../../.gitbook/assets/transformation-add-row-columns.png" alt="Een regel voor tabelrijen: alle rijen wissen en daarna een rij toevoegen"><figcaption><p>Drie geëxtraheerde rijen worden vervangen door één rij met het nettobedrag</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-add-row-columns-nl.png" alt="Niet-opgeslagen transformatiestap om een tabelrij toe te voegen. Op de tafel aangebracht verwijst hier naar een gegevenstabel."><figcaption><p>Niet-opgeslagen transformatiestap om een tabelrij toe te voegen. Op de tafel aangebracht verwijst hier naar een gegevenstabel.</p></figcaption></figure>
 
-De volgorde is belangrijk: **Clear all rows** moet **vóór** **Add a row** komen. De bouwer waarschuwt u als dat niet zo is ("Clear all rows runs after Add a row …"), en ook als een stap **Add a row** niet wordt voorafgegaan door **Clear all rows**, omdat de regel dan bij elke keer opslaan nog een kopie van de rij zou toevoegen. Combineer deze regel met een matchingregel voor inkooporders op basis van het totaal die actief is voor documenten met één regel.
+De volgorde is belangrijk: **Wis alle rijen** moet **vóór** **Add a row** komen. De bouwer waarschuwt u als dat niet zo is ("Clear all rows runs after Add a row …"), en ook als een stap **Add a row** niet wordt voorafgegaan door **Wis alle rijen**, omdat de regel dan bij elke keer opslaan nog een kopie van de rij zou toevoegen. Combineer deze regel met een matchingregel voor inkooporders op basis van het totaal die actief is voor documenten met één regel.
 
 ### De inkooporder vullen vanuit het veld factuurnummer
 
-Headerveld **Purchase Order** · alleen wanneer *Purchase Order is empty* · **Read from** *Invoice Number* → Trim → Wijzigingsgeval UPPERCASE.
+Headerveld **Inkooporder** · alleen wanneer *Purchase Order is empty* · **Lees uit** *Invoice Number* → Trim → Wijzigingsgeval UPPERCASE.
 
 <figure><img src="../../../../.gitbook/assets/transformation-po-from-invoice-number-nl.png" alt="De regelbouwer voor de regel die Purchase Order vult vanuit Invoice Number, met de live preview"><figcaption><p>De regel en zijn live preview: <code>po-4711</code> wordt <code>PO-4711</code> in <code>purchase_order</code>. Voorbeeldregel op een testdocumenttype.</p></figcaption></figure>
 
-Sommige leveranciers drukken het ordernummer af op de plek waar de extractie het factuurnummer verwacht. Dan bevat **Invoice Number** het PO-nummer en is **Purchase Order** leeg, zodat de inkoopordermatcher niets heeft om te matchen. Deze regel kopieert de waarde over voordat de matching begint. In een test op een ontwikkelsysteem ging een document met precies dit probleem van *niet gematcht* naar *volledig gematcht* (2 van 2 regels) toen het met de regel werd opgeslagen. De regel draait alleen zolang **Purchase Order** leeg is, dus hij overschrijft nooit een nummer dat correct is geëxtraheerd.
+Sommige leveranciers drukken het ordernummer af op de plek waar de extractie het factuurnummer verwacht. Dan bevat **Factuurnummer** het PO-nummer en is **Inkooporder** leeg, zodat de inkoopordermatcher niets heeft om te matchen. Deze regel kopieert de waarde over voordat de matching begint. In een test op een ontwikkelsysteem ging een document met precies dit probleem van *niet gematcht* naar *volledig gematcht* (2 van 2 regels) toen het met de regel werd opgeslagen. De regel draait alleen zolang **Inkooporder** leeg is, dus hij overschrijft nooit een nummer dat correct is geëxtraheerd.
 
 ### Artikelnummers vergelijkbaar maken voor inkooporder-matching
 
@@ -189,7 +189,7 @@ Als de factuur `Art.-Nr. ab-12/3` vermeldt en de inkooporder `AB123` heeft, kome
 
 ## Routingregels (suborganisatie)
 
-Een **Routing**-regel wijzigt geen veld. Hij zet een attribuut op het document wanneer de voorwaarden overeenkomen — momenteel de **suborganisatie**. Kies **Assign a fixed sub-organisation** en selecteer die in de lijst, of **Map from a field** om waarden van een geëxtraheerd veld aan suborganisaties te koppelen. Het document hoort dan bij die suborganisatie, met haar gebruikers, machtigingen en instellingen. Een waarde die geen geldige suborganisatie is, wordt nooit geschreven.
+Een **Routering**-regel wijzigt geen veld. Hij zet een attribuut op het document wanneer de voorwaarden overeenkomen — momenteel de **suborganisatie**. Kies **Wijs een vaste suborganisatie toe.** en selecteer die in de lijst, of **Waarden uit een veld toewijzen** om waarden van een geëxtraheerd veld aan suborganisaties te koppelen. Het document hoort dan bij die suborganisatie, met haar gebruikers, machtigingen en instellingen. Een waarde die geen geldige suborganisatie is, wordt nooit geschreven.
 
 ## Wanneer regels draaien
 
@@ -201,7 +201,7 @@ Een **Routing**-regel wijzigt geen veld. Hij zet een attribuut op het document w
 
 De meeste stappen geven hetzelfde resultaat wanneer ze op hun eigen uitvoer draaien — een getrimde waarde trimmen, `PCE` opnieuw mappen, een voorvoegsel toevoegen dat er al staat. Dergelijke regels kunnen veilig bij elke keer opslaan draaien.
 
-**Take a slice**, **Extract** en **Find & replace** zijn anders: wanneer ze opnieuw op hun eigen resultaat draaien, blijven ze het wijzigen (een slice neemt de eerste vier tekens van de eerste vier tekens …). DocBits laat u daarom geen regel opslaan die deze stappen op haar eigen doelveld toepast. Kies in dat geval een van beide:
+**Een deel selecteren**, **Extract** en **Zoeken en vervangen** zijn anders: wanneer ze opnieuw op hun eigen resultaat draaien, blijven ze het wijzigen (een slice neemt de eerste vier tekens van de eerste vier tekens …). DocBits laat u daarom geen regel opslaan die deze stappen op haar eigen doelveld toepast. Kies in dat geval een van beide:
 
 * zet **Voer dit document slechts één keer uit** aan, of
 * **Read from another field**, zodat de invoer ongewijzigd blijft.
@@ -242,7 +242,7 @@ Met **Logboekuitvoering** aan wordt elke toepassing van de regel weggeschreven n
 | --- | --- |
 | De regel heeft niets gewijzigd | Is hij actief en is de functie ingeschakeld voor het documenttype? Is de voorwaarde waar voor dit document (exacte waarde, inclusief spaties en hoofdletters)? Is een regel met **run once** al op het document toegepast? Controleer het logspoor. |
 | De waarde verandert bij elke keer opslaan opnieuw | De pijplijn bevat Take a slice, Extract of Find & replace. Zet **Voer dit document slechts één keer uit** aan of lees uit een ander veld. |
-| Een tabel krijgt bij elke keer opslaan een extra rij | Een stap **Add a row** zonder **Clear all rows** ervoor. Voeg eerst de wisstap toe of zet eenmalige uitvoering aan. |
+| Een tabel krijgt bij elke keer opslaan een extra rij | Een stap **Add a row** zonder **Wis alle rijen** ervoor. Voeg eerst de wisstap toe of zet eenmalige uitvoering aan. |
 | De inkoopordermatch gaat verloren na het opslaan | Een tabelregel heeft de gematchte regels vervangen. De reden op het document noemt de regel; zorg dat de regel dezelfde regels reproduceert, of stel in dat hij eenmalig draait. |
 | Een matchingregel draait nooit na de transformatie | De regel heeft het aantal regels gewijzigd; pas de activeringsvoorwaarde van de matchingregel aan. |
 | De regel heeft een waarde uit de stamgegevens van de leverancier nodig, maar die is nog leeg | Zet **Run after lookup population (before PO match)** aan. |

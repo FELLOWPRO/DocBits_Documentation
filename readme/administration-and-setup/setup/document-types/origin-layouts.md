@@ -6,7 +6,7 @@ DocBits Origin-instelling uitgelegd: Landstandaarden voor datum- en nummerformat
 
 DocBits blinkt uit in het aanpassen van documentlay-outs op basis van hun geografische oorsprong, terwijl elementen zoals valutaformaten worden gestandaardiseerd op basis van de browserinstellingen van de gebruiker. Laten we verkennen hoe u de Layout Builder kunt gebruiken om lay-outs aan te passen voor verschillende oorsprongen, zoals de VS en Duitsland.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_1.png)
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_1-nl.png" alt="Lay-outbouwer met Nederlandstalige bediening."><figcaption><p>Lay-outbouwer met Nederlandstalige bediening.</p></figcaption></figure>
 
 ## **Begrijpen van op oorsprong gebaseerde aanpassing**
 
@@ -36,10 +36,10 @@ DocBits blinkt uit in het aanpassen van documentlay-outs op basis van hun geogra
 
 Wanneer u de standaardlay-out op meerdere oorsprongen wilt toepassen, drukt u op **Standaardindeling toepassen op oorsprongen**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_3.png)
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_3-nl.png" alt="Bronselectie; geconfigureerde bronnamen blijven ongewijzigd."><figcaption><p>Bronselectie; geconfigureerde bronnamen blijven ongewijzigd.</p></figcaption></figure>
 
 Er verschijnt een pop-up waarin u de oorsprongen kunt selecteren waarop u de standaardlay-out wilt toepassen. U kunt **Alles selecteren** of **Alles deselecteren** gebruiken om uw selectie snel te beheren. De pop-up toont het aantal momenteel geselecteerde oorsprongen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_4.png)
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_4-nl.png" alt="Venster om de standaardlay-out op bronnen toe te passen. De knop Solliciteer bij betekent hier de lay-out toepassen."><figcaption><p>Venster om de standaardlay-out op bronnen toe te passen. De knop Solliciteer bij betekent hier de lay-out toepassen.</p></figcaption></figure>
 
 Nadat u uw selectie hebt gemaakt, klikt u op **Toepassen op oorsprongen**. Een succesbericht bevestigt dat de oorsprongen zijn bijgewerkt.

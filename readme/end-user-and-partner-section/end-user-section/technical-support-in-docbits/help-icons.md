@@ -4,4 +4,4 @@ Help-pictogrammen zijn overal in DocBits geplaatst om je te helpen bij het leren
 
 Deze help-pictogrammen zien er als volgt uit
 
-<figure><img src="../../../.gitbook/assets/help-icon.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-help-icon-nl.png" alt="Helppictogram rechtsboven in de instellingen."><figcaption><p>Helppictogram rechtsboven in de instellingen.</p></figcaption></figure>

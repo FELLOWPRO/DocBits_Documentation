@@ -1,0 +1,3237 @@
+{
+  "locale": "nl",
+  "all_passed": true,
+  "case_count": 225,
+  "page_count": 82,
+  "replacement_cases": 206,
+  "distinct_capture_hashes": 191,
+  "text_replacement_cases": 19,
+  "cleanup": {
+    "restored": true,
+    "owned_fixtures_deleted": true,
+    "baseline_layouts_preserved": true
+  },
+  "owned_fixture_deletion_count": 2,
+  "capture_environment": "dev.docbits.com",
+  "ui_code": "nl",
+  "note": "Alignment of the latest150 cases plus75 changes from the first5,20 and50 screenshot rounds. Equivalent localized source names and current navigation paths were checked. Source captures use the actual native UI, including separately reported untranslated or inaccurate product labels. No configuration changes were saved; own synthetic documents were removed and account language restored.",
+  "cases": [
+    {
+      "id": "S001",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "analytics_dashboard_data_table.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_data_table-nl.png",
+      "sha256": "8c4716eec8bb730a563fc495514fafa062e055b637a3bb89e1e2138137149f67",
+      "caption": "Analysetabel met Nederlandstalige labels; documentwaarden zijn afgeschermd. Het productlabel Tafel verwijst hier naar een gegevenstabel."
+    },
+    {
+      "id": "S002",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "analytics_dashboard_filter_dimensions.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_filter_dimensions-nl.png",
+      "sha256": "864065a831e949f336ae52f46b8669ee6fa8ce3af33725119116fbdef8d4e713",
+      "caption": "Analysefilters voor fase, suborganisatie, documenttype en leverancier."
+    },
+    {
+      "id": "S003",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "analytics_dashboard_filter_flow_steps.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_filter_flow_steps-nl.png",
+      "sha256": "72f7cf7ebc98cc8158abdfe46cf56eff8608b0c39fd4ae74fb5f7f763c9e0403",
+      "caption": "Faseselectie in het filter van de analysetabel."
+    },
+    {
+      "id": "S004",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "analytics_dashboard_filter_search.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_filter_search-nl.png",
+      "sha256": "35591146ebcb7004382db82c836b20347c8f78fe498aaf086848b2348df82e66",
+      "caption": "Analyse gefilterd op de validatiefase."
+    },
+    {
+      "id": "S005",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "analytics_dashboard_filter_time_range.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_filter_time_range-nl.png",
+      "sha256": "4269f39d831a61cf2bff2568d71a5d203e7eeab669b255b0d091a3520277a2aa",
+      "caption": "Optie voor een aangepaste periode in de analysefilters."
+    },
+    {
+      "id": "S006",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "analytics_dashboard_flow_steps_card.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_flow_steps_card-nl.png",
+      "sha256": "5617a09387afc8af5c39f4ddccf74909d9b857f4fff7a5dcb489322ffc452fa6",
+      "caption": "Fasekaarten met geaggregeerde verwerkingstijden."
+    },
+    {
+      "id": "S007",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "analytics_dashboard_flow_types.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_flow_types-nl.png",
+      "sha256": "397dfc5530ee42baafbc5fbd1890b74f3ae46ba17c273f5bfc58e9d112551ab7",
+      "caption": "Weergaven voor verwerking, gebruikersinteracties en statussen."
+    },
+    {
+      "id": "S008",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "analytics_dashboard_global_average_comparison.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_global_average_comparison-nl.png",
+      "sha256": "648f23b8451ecb81ed9944d4a62ec2599931b2d6640cac33ee2b9919f2dd99fb",
+      "caption": "Gemiddelde duur vergeleken met het algemene gemiddelde."
+    },
+    {
+      "id": "S009",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "analytics_dashboard_only_exported_toggle.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_only_exported_toggle-nl.png",
+      "sha256": "24b373cf6c213fca9fa07fa94b479037a3ea5bacc8c5c3007a236204bee5ca72",
+      "caption": "Optie om alleen geëxporteerde documenten te analyseren."
+    },
+    {
+      "id": "S010",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "analytics_dashboard_processing_flow.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_processing_flow-nl.png",
+      "sha256": "397dfc5530ee42baafbc5fbd1890b74f3ae46ba17c273f5bfc58e9d112551ab7",
+      "caption": "Procesweergave met de geaggregeerde fasen."
+    },
+    {
+      "id": "S011",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "analytics_dashboard_status_flow.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_status_flow-nl.png",
+      "sha256": "106aa0dbb1f6644dc7a684aab98f3a99efb01991b51677d6c422b2c70f417e1b",
+      "caption": "Statusweergave in de analyse."
+    },
+    {
+      "id": "S012",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "analytics_dashboard_user_interaction_flow.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_user_interaction_flow-nl.png",
+      "sha256": "75f46f8b909811465dce6ffd13f0120887ff6e761fa6799be64d80f2e6a92f35",
+      "caption": "Weergave van geaggregeerde gebruikersinteracties."
+    },
+    {
+      "id": "S013",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": "a3a515d9ba7ba65323b1cd1b01f4fde3ee3d76f9",
+      "original_references": [
+        "export_create_new_button.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-export_create_new_button-nl.png",
+      "sha256": "462dc27b908cd2b3fc17f766fe272fca50bf2bc640e9630993b5e5f58fc4feeb",
+      "caption": "Niet-opgeslagen concept van een exportconfiguratie."
+    },
+    {
+      "id": "S014",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": "58ab8d37d96702d07989bcbe98d714c0571ef0ae",
+      "original_references": [
+        "export_settings_menu_access.png",
+        "export_list_view.png"
+      ],
+      "retired_aliases": 1,
+      "mapping": "blob_match",
+      "new": "s150-export_settings_menu_access-nl.png",
+      "sha256": "4295036c920f6552da5edab49dea6ba4721559afc213a2ace61039964066d710",
+      "caption": "Toegang tot exportconfiguraties vanuit de instellingen."
+    },
+    {
+      "id": "T006",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "export_webhook_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t006-nl.png",
+      "sha256": "62e4c7700ee1653ad50419db68f869d4267d88122049ca8743f382c70580ce71",
+      "caption": "Concept van een exportconfiguratie via Webhook. De toelichting onder Export URL blijft Engelstalig."
+    },
+    {
+      "id": "T007",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "export_sftp_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t007-nl.png",
+      "sha256": "db2b1a2fd32769a2d553d67873ca60bc10276736cf6e80174e54356a41bd57ae",
+      "caption": "Concept van een exportconfiguratie via SFTP."
+    },
+    {
+      "id": "U016",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "export_sftp_3.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u016-nl.png",
+      "sha256": "eb4ee2c94ae67c30c9baa3e478742cbd066727a9579b0cf5ffb2764930296ab6",
+      "caption": "Niet-opgeslagen geavanceerde SFTP-exportopties."
+    },
+    {
+      "id": "U017",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "export_infor_sftp_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u017-nl.png",
+      "sha256": "ecdd59cbb9c5a9499a4db0e2bd039a0622fbef6f9dfb2489715b0c065b59b07f",
+      "caption": "Exportconcept via Infor SFTP."
+    },
+    {
+      "id": "U018",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "export_smb_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u018-nl.png",
+      "sha256": "04c3ac9f735152c84e47e1fdf053735998fb0045a247592b83098eb5fec6bede",
+      "caption": "Exportconcept via SMB; het bedoelde protocol behouden. MKB is hier een onjuiste productvertaling van het protocol SMB."
+    },
+    {
+      "id": "U019",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "export_infor_idm_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u019-nl.png",
+      "sha256": "652f019df82ffeecac2902ba9868979c066b6c0a5f3d59e2e4e216189ce25c38",
+      "caption": "Exportconcept naar Infor IDM."
+    },
+    {
+      "id": "U020",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "export_infor_ion_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u020-nl.png",
+      "sha256": "b28a528d34d64b0d52fe0a367878b8a4b5e4100017131b500581a7c8cde64482",
+      "caption": "Exportconcept naar Infor ION. Informatie ION BOD verwijst naar Infor ION BOD."
+    },
+    {
+      "id": "U021",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "export_infor_idm_ion_bod_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u021-nl.png",
+      "sha256": "c255fcdf557e7350c634a05cd8344774fad4175c79c5993445e94afc2bc36781",
+      "caption": "Exportconcept naar Infor IDM ION BOD."
+    },
+    {
+      "id": "U022",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "export_infor_idm_ln_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u022-nl.png",
+      "sha256": "962159a2c8072717accad1bed3638677b83041359438d66ea86f571f37cd02cf",
+      "caption": "Exportconcept naar Infor IDM LN."
+    },
+    {
+      "id": "U023",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "export_infor_idm_m3_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u023-nl.png",
+      "sha256": "d55536e0b73be92be1a2e3479e1cfd039a152e2d9c84fcea7e88933c8c0c4a42",
+      "caption": "Exportconcept naar Infor IDM M3."
+    },
+    {
+      "id": "U024",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "export_infor_idm_m3_toml_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u024-nl.png",
+      "sha256": "f617338bfb9a5a5a2fed59994678188c104d37e487460ef82b9a6082b75ab36b",
+      "caption": "Exportconcept naar Infor IDM M3 met TOML."
+    },
+    {
+      "id": "S015",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+      "action": "replace",
+      "old_blob": "dd0d7022b2260d09d175ad8e858b29de5e47dc95",
+      "original_references": [
+        "barcode_assignment_dialog.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-barcode_assignment_dialog-nl.png",
+      "sha256": "e44c77b118364cce6dc4bd3c9e02ef487dd5d9081b6724be9d2806e31ca2d5b4",
+      "caption": "Uitgelezen barcodes aan documentvelden koppelen."
+    },
+    {
+      "id": "S016",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+      "action": "replace",
+      "old_blob": "86d1d50ff5dcd0173c00b554ba2eed49cfe98591",
+      "original_references": [
+        "barcode_assignment_field_mapped.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-barcode_assignment_field_mapped-nl.png",
+      "sha256": "6d564ece80dc4175493059f23e72b777a19d8a362bbd3433ad66d0f07b853004",
+      "caption": "Niet-opgeslagen koppeling met het inkooporderveld."
+    },
+    {
+      "id": "S017",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+      "action": "replace",
+      "old_blob": "9e145851326dcdab875629e2ffa01f21e2597124",
+      "original_references": [
+        "barcode_assignment_field_options.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-barcode_assignment_field_options-nl.png",
+      "sha256": "c658e588248af475a220f2b0e80d680303f3f95bd9ee489748cd48d96e478adf",
+      "caption": "Beschikbare velden in het venster voor barcodekoppeling."
+    },
+    {
+      "id": "S018",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+      "action": "replace",
+      "old_blob": "aa7bf673ec02b386c8164f346031e02447b41b7d",
+      "original_references": [
+        "barcode_assignment_validation_screen.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-barcode_assignment_validation_screen-nl.png",
+      "sha256": "1873dcddaaf45a079e4b49bb6fef6d53438f5e0a0e7556ff5672bbb7fd69d036",
+      "caption": "Validatie van een fictieve factuur met barcode en QR-code."
+    },
+    {
+      "id": "S019",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/fulltext-search.md",
+      "action": "remove",
+      "old_blob": "6360a3977345d81c519e7475cfab7b06f463efe8",
+      "original_references": [
+        "fulltext-search-required-dialog.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-fulltext-search-required-dialog-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "U048",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/fulltext-search.md",
+      "action": "replace",
+      "old_blob": "33cee82ed2d7ea5a4a8c662831bb7e697e49b4d9",
+      "original_references": [
+        "fulltext-search-settings-page.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u048-nl.png",
+      "sha256": "d7ee72ff5f18c35da8cf6ac4eeb15fa906671200e36613818cea6ccc3971ba37",
+      "caption": "Instellingen en informatie over volledige-tekstindexering. De meldingen en acties voor ontbrekende indexdocumenten, Backfill en Full Rebuild blijven in deze productversie Engelstalig."
+    },
+    {
+      "id": "U049",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/fulltext-search.md",
+      "action": "replace",
+      "old_blob": "8dd964ab7d9de0e342ca03e2e95f69612f074841",
+      "original_references": [
+        "fulltext-search-dashboard-query.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u049-nl.png",
+      "sha256": "f205d89c78f2c2daa8a55a1ff76ec3eb65fdd31e1e0aedabda8d903a27c58117",
+      "caption": "Een bedragquery in het dashboard invoeren."
+    },
+    {
+      "id": "U050",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/fulltext-search.md",
+      "action": "replace",
+      "old_blob": "2b318378b05da8897b253a17d9ac80fad7bfc801",
+      "original_references": [
+        "fulltext-search-module-toggle.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u050-nl.png",
+      "sha256": "9dce6593388a847a89bed40a2492116f40e5d7c6c6f5a3f06f3267ad00685eec",
+      "caption": "Beschikbaarheid van de module voor volledige-tekstzoeken."
+    },
+    {
+      "id": "S020",
+      "doc": "readme/administration-and-setup/settings/document-processing/rule-manager/README.md",
+      "action": "replace",
+      "old_blob": "bb5a84f82f3f82fae8c6a1ba436c5f44e3b29cb4",
+      "original_references": [
+        "rule_detailed_editing.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-rule_detailed_editing-nl.png",
+      "sha256": "1468a3673005bff14dc3f5d8de5b0fc0048e79cdc95f6120d89bf0fbdba2c3cd",
+      "caption": "TOML-regeleditor met een technisch configuratievoorbeeld."
+    },
+    {
+      "id": "S021",
+      "doc": "readme/administration-and-setup/settings/document-processing/rule-manager/README.md",
+      "action": "replace",
+      "old_blob": "bdca306615d93d33e45d5f5981196194eb14de89",
+      "original_references": [
+        "rule_management.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-rule_management-nl.png",
+      "sha256": "ed530417c2c3f472ceeebd8eabe2de7454c761861614a3345279754582154235",
+      "caption": "Regelbeheer met afgeschermde geconfigureerde namen."
+    },
+    {
+      "id": "S022",
+      "doc": "readme/administration-and-setup/settings/document-processing/rule-manager/README.md",
+      "action": "replace",
+      "old_blob": "1d2dd9e4027df8807c577f9250e13c25fcb1ceff",
+      "original_references": [
+        "rule_management_interface.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-rule_management_interface-nl.png",
+      "sha256": "54ca96cd8a2df118c21d1fe763a0a8211bd14b14575d01c0953798d02bd25de3",
+      "caption": "Overzicht van regelbeheer en beschikbare acties."
+    },
+    {
+      "id": "S023",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/duplicate-a-custom-validation-rule.md",
+      "action": "replace",
+      "old_blob": "e10552cb9beb16e3eddb0cfd501a492389606530",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-custom_validation_rule_duplicate_en-nl.png",
+      "sha256": "1adb9f3314858274fc684bc0e1fd32d0623c83a1feff10709f03a855f1a05342",
+      "caption": "Aangepaste validatieregels; geconfigureerde namen zijn afgeschermd. Relatieve datumaanduidingen blijven in deze productweergave Duitstalig."
+    },
+    {
+      "id": "S024",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md",
+      "action": "replace",
+      "old_blob": "9a345f19ca91e9d6959233bdbbd54872ec2e8f33",
+      "original_references": [
+        "dbdc155-field-properties-filtered-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-dbdc155-field-properties-filtered-nl.png",
+      "sha256": "ddfed842653306b0e1206598548da4e864a84ccfb9d9c75b2e0fe3ad8179e9ee",
+      "caption": "Velden gefilterd op invoice_id met OCR- en Match Score-drempels. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie."
+    },
+    {
+      "id": "S025",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md",
+      "action": "replace",
+      "old_blob": "3eee090d25fd183ab7958ab5c1fdd8c5400a6d06",
+      "original_references": [
+        "dbdc155-field-properties-overview-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-dbdc155-field-properties-overview-nl.png",
+      "sha256": "f6244cafc029633f5032a6de9d51bb3d4e86a99801e722ff54227913340cd0c7",
+      "caption": "Veldeigenschappen: verplicht, alleen-lezen, verborgen en geforceerde validatie. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie."
+    },
+    {
+      "id": "S026",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "ccd76cdf95a3639351d2bd98628b802ab8df0ded",
+      "original_references": [
+        "layout-rule-approval-status.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-layout-rule-approval-status-nl.png",
+      "sha256": "1f31c76635bcea52ee7b85b512eac8a2e6e667ead72c7e2b65fe48f26647ce5b",
+      "caption": "Niet-opgeslagen concept van een regel voor lay-outselectie. De schermnaam Field validation blijft Engelstalig in het product."
+    },
+    {
+      "id": "S027",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "ea5c82f992a63888b28465c13b079fa154bc316b",
+      "original_references": [
+        "layout-rule-editor.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-layout-rule-editor-nl.png",
+      "sha256": "136bdf6bb27baf16bfedc68dc8925950610990d0ebcf0f576290c56874c13e44",
+      "caption": "Bereik, voorwaarden en doellay-out van een selectieregel. De schermnaam Field validation blijft Engelstalig in het product."
+    },
+    {
+      "id": "S028",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "c7feb2371122d30dc88f9ea678bff4e5e3ae78b9",
+      "original_references": [
+        "layout-selection-default-row.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-layout-selection-default-row-nl.png",
+      "sha256": "a98a76d8b9b26a48ad1f3460dc7796e4e179c1d05af36932dc739fff03a9fcc6",
+      "caption": "Terugvallay-out onderaan de lijst met selectieregels. De schermnaam Field validation blijft Engelstalig in het product."
+    },
+    {
+      "id": "S029",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "db7c1b42719e0ca04e68edd75b15018ac2356963",
+      "original_references": [
+        "layout-selection-rules-list.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-layout-selection-rules-list-nl.png",
+      "sha256": "b300a71ca70442a9111f79439aee975d5b44671bf1f64ff87893b67039d85489",
+      "caption": "Selectieregels met afgeschermde geconfigureerde namen. De schermnaam Field validation blijft Engelstalig in het product."
+    },
+    {
+      "id": "S030",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "b21fa250b06842decb0f1315ab880a28a9398e18",
+      "original_references": [
+        "layouts-overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-layouts-overview-nl.png",
+      "sha256": "1f19847fbc7548ede913aeb63a892b41f7f743a055bbeb7e0c3226bd5a4edac8",
+      "caption": "Overzicht van lay-outs en selectieregels. De schermnaam Field validation blijft Engelstalig in het product."
+    },
+    {
+      "id": "S031",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "DuplicateDocument_3.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-duplicatedocument_3-nl.png",
+      "sha256": "a33e66c674b3db4a98150868501ba5c5e6967f37ba572e078aea49e44eefd852",
+      "caption": "Instellingen voor de detectie van dubbele documenten."
+    },
+    {
+      "id": "S032",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "DuplicateDocument_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-duplicatedocument_4-nl.png",
+      "sha256": "330c8c77b6798e793b44b3a6b9193bbf9271ee00f1b3ec8ba477961f81839a82",
+      "caption": "Beschikbare velden voor duplicaatdetectie."
+    },
+    {
+      "id": "S033",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling.md",
+      "action": "remove",
+      "old_blob": "f46238d16030439b84cba791bb89ffa10468aaa6",
+      "original_references": [
+        "DuplicateDocument_7.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-duplicatedocument_7-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S034",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md",
+      "action": "remove",
+      "old_blob": "1393267cdcb91a3f940e79195ef8ced95942b9ee",
+      "original_references": [
+        "Calculate_PO_unit_price_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-calculate_po_unit_price_4-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S035",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "remove",
+      "old_blob": "8e035c26b6df9e2fc957dd4dce320a02d8cfbe42",
+      "original_references": [
+        "consumed_po_line_status.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-consumed_po_line_status-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S036",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "remove",
+      "old_blob": "1ba43fcd136bad48c2ed5ff72e80e322dd621c74",
+      "original_references": [
+        "image (470).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-image-470-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S037",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "remove",
+      "old_blob": "faed71d8a697c751cdf7b7b0f9b80d4dcd2bdd20",
+      "original_references": [
+        "image (472).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-image-472-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S038",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "remove",
+      "old_blob": "4ef0056a8af4f751f21dbe0b8414d590354fdc17",
+      "original_references": [
+        "image (473).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-image-473-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "U044",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "replace",
+      "old_blob": "ff08a56aa625366824b7fd015bf91a67abfb0bbf",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "prior-u044-nl.png",
+      "sha256": "8869b48078b8a1bf5775b29ebe91a49eb4aa75c1f7e1042f6ec349bac2f5ae8f",
+      "caption": "Toegang tot extra instellingen van het documenttype Factuur."
+    },
+    {
+      "id": "U045",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "replace",
+      "old_blob": "edbe3c3f367809c4a41422e27bb5859bb2b18deb",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "prior-u045-nl.png",
+      "sha256": "f62be24d8a59411e7687fde18f6586a8699b835b43f003373b03f207d49fe618",
+      "caption": "Statusinstellingen voor al gebruikte inkooporderregels."
+    },
+    {
+      "id": "S039",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/script/README.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-bildschirmfoto-2024-05-08-um-09-43-25-nl.png",
+      "sha256": "95bc1318ed4839f470392782e33ac89ddfb80bd23ab5b3fea78429751a3ca5d0",
+      "caption": "Scriptlijst met afgeschermde namen en datums."
+    },
+    {
+      "id": "S040",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/script/README.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-bildschirmfoto-2024-05-08-um-09-43-37-nl.png",
+      "sha256": "d08cfac343756835232c03ce869f111b950fb0d7aa5454b32eea0116b6a15ba7",
+      "caption": "Scripteditor met een technisch Python-voorbeeld."
+    },
+    {
+      "id": "S041",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+      "action": "replace",
+      "old_blob": "9d6324f98d2040977290a0b6c097dfe0db33aa78",
+      "original_references": [
+        "transformation-add-row-columns.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-transformation-add-row-columns-nl.png",
+      "sha256": "19f3fbbececcc26bec581a09b65976a621f8bc4c806a8eb24177b7d9f9d23902",
+      "caption": "Niet-opgeslagen transformatiestap om een tabelrij toe te voegen. Op de tafel aangebracht verwijst hier naar een gegevenstabel."
+    },
+    {
+      "id": "S042",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+      "action": "replace",
+      "old_blob": "472b72c6804ca4a1a4f5a0fe540eed23c843195a",
+      "original_references": [
+        "transformation-column-value-map.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-transformation-column-value-map-nl.png",
+      "sha256": "4ae331e227a010a14a50f42b52f60b72233ec4eb1794855f0e94561b7e7560ee",
+      "caption": "Waardetoewijzing voor een tabelkolom. Kaartwaarden en Afbeeldingen betekenen hier waardetoewijzing, niet geografische kaarten of afbeeldingen. De pijpleiding verwijst naar de transformatiepipeline."
+    },
+    {
+      "id": "S043",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+      "action": "replace",
+      "old_blob": "bb71b4d92fb7e578b5b898d094302b5fd94fdaf9",
+      "original_references": [
+        "transformation-rule-pipeline.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-transformation-rule-pipeline-nl.png",
+      "sha256": "cb603fede69240f2f34efe7f21f0165576c4bcdc4c82e1d877bc9757bc4c0a94",
+      "caption": "Stappen van een transformatieregel. De pijpleiding verwijst naar de transformatiepipeline."
+    },
+    {
+      "id": "S044",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+      "action": "replace",
+      "old_blob": "525a2cb7224758b9df24a4434cfbadbd7dc7c217",
+      "original_references": [
+        "transformation-rule-scope.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-transformation-rule-scope-nl.png",
+      "sha256": "d9227e84d73b8d258a722aca53f61fd2a7b90582f9d8f6e302b3f407f251fc58",
+      "caption": "Transformatiebereik: kopveld, tabelrijen, kolom en routering."
+    },
+    {
+      "id": "S045",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations/how-to-create-a-sub-organization.md",
+      "action": "replace",
+      "old_blob": "e90879645ac0010e0d74de076232cbe52e10fbc5",
+      "original_references": [
+        "edit_user_in_sub_organization.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-edit_user_in_sub_organization-nl.png",
+      "sha256": "915a93014b7f5a3e7395492d56b889c42e08746dea6561fb1839717c3b8f278d",
+      "caption": "Venster om een suborganisatie te maken, zonder op te slaan."
+    },
+    {
+      "id": "S046",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+      "action": "remove",
+      "old_blob": null,
+      "original_references": [
+        "api-key-created.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-api-key-created-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S047",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "api-key-list-row.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-api-key-list-row-nl.png",
+      "sha256": "12792af7ca53b57efe6fe3b8e9e5f6cb046bff6a22d209abc26676a94a2018e4",
+      "caption": "API-sleutellijst; sleutels en accountgegevens zijn afgeschermd."
+    },
+    {
+      "id": "T017",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "api-key-list.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t017-nl.png",
+      "sha256": "6c445e58b67e7aef54e1eda18f5320de2056fbe51b903960aac1d4259793c506",
+      "caption": "API-sleutellijst zonder sleutels of bijbehorende namen."
+    },
+    {
+      "id": "T018",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "api-key-create-dialog.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t018-nl.png",
+      "sha256": "415e1cad2bfb7c57888cd3b9a704fa17a001180fc5a644919312f346a37e8404",
+      "caption": "Venster om een API-sleutel te maken, zonder op te slaan."
+    },
+    {
+      "id": "T020",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "api-key-settings-overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t020-nl.png",
+      "sha256": "07a64c7a88a65acdfff916da4a4a2ffb64816969f0da94b515f741cc54c1151a",
+      "caption": "Toegang tot API-sleutelbeheer."
+    },
+    {
+      "id": "S048",
+      "doc": "readme/administration-and-setup/settings/infrastructure.md",
+      "action": "replace",
+      "old_blob": "c147e91766c155c4d0b445768987b2409fc5276b",
+      "original_references": [
+        "infrastructure_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-infrastructure_overview-nl.png",
+      "sha256": "ca1dd00f2c4deae9d2053370b8e6f539d905055236448f63923fc9d5a3ca6992",
+      "caption": "Overzicht van de infrastructuur."
+    },
+    {
+      "id": "T004",
+      "doc": "readme/administration-and-setup/settings/infrastructure.md",
+      "action": "replace",
+      "old_blob": "b04449025ed99ca237f89ec0b6921a95c8097223",
+      "original_references": [
+        "infrastructure_processing.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t004-nl.png",
+      "sha256": "77b16c1624e31665d9ff64b4137a60e750019970a1b708fc4370d610fdc1a0db",
+      "caption": "Infrastructuurprocessen en laatste uitvoering. Relatieve tijdsaanduidingen blijven Duitstalig in het product."
+    },
+    {
+      "id": "T005",
+      "doc": "readme/administration-and-setup/settings/infrastructure.md",
+      "action": "replace",
+      "old_blob": "e3bc37387b0fa2dd217da2a1c62c1a3d9d1de1e8",
+      "original_references": [
+        "infrastructure_scheduled.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t005-nl.png",
+      "sha256": "0bf76ae95b7692c7c34008f6714fc799ca3303700ee333f1157fd0d92ca4d924",
+      "caption": "Geplande infrastructuurtaken. Relatieve tijdsaanduidingen blijven Duitstalig in het product."
+    },
+    {
+      "id": "S049",
+      "doc": "readme/administration-and-setup/settings/supplier-setting/editing-email-templates.md",
+      "action": "replace",
+      "old_blob": "646ee5343fabc7e8a269167255751e21bc1a643a",
+      "original_references": [
+        "Bildschirmfoto 2024-08-25 um 12.35.53.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-bildschirmfoto-2024-08-25-um-12-35-53-nl.png",
+      "sha256": "32fb62b312d541d6d3dbac70d752802721fcdef5240f8568d010681481b59997",
+      "caption": "Editor voor een nieuwe e-mailsjabloon voor leveranciers."
+    },
+    {
+      "id": "T013",
+      "doc": "readme/administration-and-setup/settings/supplier-setting/editing-email-templates.md",
+      "action": "replace",
+      "old_blob": "66db8452b61a72b3657b223053cd2503ee33032a",
+      "original_references": [
+        "supplier_email_templates.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t013-nl.png",
+      "sha256": "5a9b4348dcf58c0a8626af57e7ec2932caf8d188907dcff270c6cf6dad58aa39",
+      "caption": "Lijst met e-mailsjablonen voor leveranciers."
+    },
+    {
+      "id": "S050",
+      "doc": "readme/administration-and-setup/setup/document-training/training-header-fields.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "header_field_training_0.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-header_field_training_0-nl.png",
+      "sha256": "aa20697b6ed5781563de6939f066d25b43e916cc1d93860a19c625032517ae79",
+      "caption": "Validatie van een fictieve factuur vóór het trainen van kopvelden."
+    },
+    {
+      "id": "S051",
+      "doc": "readme/administration-and-setup/setup/document-training/training-header-fields.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "header_field_training_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-header_field_training_1-nl.png",
+      "sha256": "45192b74b4edb432978f119db6da3bb9784df26746ce24d6b815c2d4299adcaa",
+      "caption": "Het factuurnummer selecteren als startpunt voor training."
+    },
+    {
+      "id": "S052",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "7b9b3aa2b9ce093be324d9a9c21dfcb1ff316c5f",
+      "original_references": [
+        "define_tables_and_columns_1.png",
+        "define_tables_and_columns_2.png",
+        "define_tables_and_columns_3.png",
+        "define_tables_and_columns_4.png",
+        "define_tables_and_columns_5.png",
+        "define_tables_and_columns_6.png",
+        "define_tables_and_columns_7.png",
+        "define_tables_and_columns_9.png",
+        "define_tables_and_columns_8.png",
+        "define_tables_and_columns_10.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-define_tables_and_columns_1-nl.png",
+      "sha256": "a402492dd9cbe9f8de1aef639f94d8ba5686f2a72dadec2d9614fcceb168f869",
+      "caption": "Interface om tabellen en kolommen te definiëren."
+    },
+    {
+      "id": "S053",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "bce1b9d5a01319091c246da720599bc1bcfb84fe",
+      "original_references": [
+        "define_tables_and_columns_10.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_10-nl.png",
+      "sha256": "557699c11bd9fc6d6851b3d7f54481ba8bd3f3ea7074bb00ee02035239cf0390",
+      "caption": "Automatisch uitgelezen factuurregels van de fictieve factuur in de validatie."
+    },
+    {
+      "id": "S054",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "95e6358348a1ef553692a41cf761cae10145a872",
+      "original_references": [
+        "define_tables_and_columns_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_2-nl.png",
+      "sha256": "35605d8d1a66791af54c8264423c5dff921f4fd480dfddc7c7fb04632dfbf7f2",
+      "caption": "Tabeltraining met ingeschakelde trainingsmodus."
+    },
+    {
+      "id": "S055",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "41129ebb6eae74f2b32a19f02564acf860801a3d",
+      "original_references": [
+        "define_tables_and_columns_3.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_3-nl.png",
+      "sha256": "35605d8d1a66791af54c8264423c5dff921f4fd480dfddc7c7fb04632dfbf7f2",
+      "caption": "Hulpmiddelen voor tabeltraining, waaronder automatische detectie."
+    },
+    {
+      "id": "S056",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "5aa31ae86aeeead17f9eae6c8f04bebeb235c647",
+      "original_references": [
+        "define_tables_and_columns_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_4-nl.png",
+      "sha256": "6473d253339c5e33218e2d22efe459694721d6907a43e48054c70e2f1b4e8083",
+      "caption": "Niet-opgeslagen tabelgebied rond de regels van de fictieve factuur."
+    },
+    {
+      "id": "S057",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "4240ac3b80e3e5265c22d72a6230e758376038af",
+      "original_references": [
+        "define_tables_and_columns_5.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_5-nl.png",
+      "sha256": "f45d25f017513acab269b9f083e73c4670eafe450c0581a22bdc974d9aa2c917",
+      "caption": "Tabelgebied met verticale kolomscheidingen."
+    },
+    {
+      "id": "S058",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "d9b39626458c7eca8899435394bce46ee807ed29",
+      "original_references": [
+        "define_tables_and_columns_8.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_8-nl.png",
+      "sha256": "f45d25f017513acab269b9f083e73c4670eafe450c0581a22bdc974d9aa2c917",
+      "caption": "Gebied en scheidingen in een niet-opgeslagen trainingsconcept."
+    },
+    {
+      "id": "S059",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "caaf11d993b2aa1ac2375d0ead818454229f4e1b",
+      "original_references": [
+        "define_tables_and_columns_9.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_9-nl.png",
+      "sha256": "f45d25f017513acab269b9f083e73c4670eafe450c0581a22bdc974d9aa2c917",
+      "caption": "Scheidingen tussen de kolommen van de fictieve factuur."
+    },
+    {
+      "id": "S060",
+      "doc": "readme/administration-and-setup/setup/document-types/README.md",
+      "action": "replace",
+      "old_blob": "17891ff3051160ae164fdb82cdcdeee24836ab03",
+      "original_references": [
+        "document-types-invoice-fields-en-20260928.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-document-types-invoice-fields-nl.png",
+      "sha256": "0b6299833c5f2aa40b519d72b2c41f5572526ffb517f7abe6c38338ad02cf854",
+      "caption": "Veldconfiguratie van het documenttype Factuur. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie."
+    },
+    {
+      "id": "U025",
+      "doc": "readme/administration-and-setup/setup/document-types/README.md",
+      "action": "replace",
+      "old_blob": "3e9f5855f6411d7aea92c05eab7913fd89529fe8",
+      "original_references": [
+        "document-types-overview-en-20260928.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u025-nl.png",
+      "sha256": "49c3ec120b67b414700591d0626c931c2708632c2ae68c08eb3f2c4c01b696ac",
+      "caption": "Standaarddocumenttypen en toegang tot hun instellingen."
+    },
+    {
+      "id": "U026",
+      "doc": "readme/administration-and-setup/setup/document-types/README.md",
+      "action": "replace",
+      "old_blob": "b92b2de1e2e71cce7175e757f9b737af04d67153",
+      "original_references": [
+        "document-types-custom-new-en-20260928.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u026-nl.png",
+      "sha256": "a3c27ab45d31962adac8f8b4b5a5ab94c49460f982637a369d01b07f1b4356af",
+      "caption": "Formulier voor een niet-opgeslagen nieuw documenttype. Tafel beschikbaar betekent hier dat een gegevenstabel beschikbaar is."
+    },
+    {
+      "id": "S061",
+      "doc": "readme/administration-and-setup/setup/document-types/origin-layouts.md",
+      "action": "replace",
+      "old_blob": "43a1da9852f3ef2ab887501fb50176aa6f5e513f",
+      "original_references": [
+        "origin_layout_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-origin_layout_1-nl.png",
+      "sha256": "2161e73d08caa17d74f71a7330b96a8da8cc428cb8f7eb34eb2e3e1623159b35",
+      "caption": "Lay-outbouwer met Nederlandstalige bediening."
+    },
+    {
+      "id": "S062",
+      "doc": "readme/administration-and-setup/setup/document-types/origin-layouts.md",
+      "action": "replace",
+      "old_blob": "5fe6d5bf2d79d8b2dad302d77bb67db548398c64",
+      "original_references": [
+        "origin_layout_3.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-origin_layout_3-nl.png",
+      "sha256": "301ee9c7a010fda75aae3bfbc5a24e03eccf56af466740367af791b51439cdad",
+      "caption": "Bronselectie; geconfigureerde bronnamen blijven ongewijzigd."
+    },
+    {
+      "id": "S063",
+      "doc": "readme/administration-and-setup/setup/document-types/origin-layouts.md",
+      "action": "replace",
+      "old_blob": "01830f3300af552b84f1900e55de25fbcc426050",
+      "original_references": [
+        "origin_layout_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-origin_layout_4-nl.png",
+      "sha256": "28e29c7c8e3ce17f3715be1e65509fedf102d9f860e1ed803a06855e366ba22f",
+      "caption": "Venster om de standaardlay-out op bronnen toe te passen. De knop Solliciteer bij betekent hier de lay-out toepassen."
+    },
+    {
+      "id": "S064",
+      "doc": "readme/administration-and-setup/workflow/card-sdk.md",
+      "action": "replace",
+      "old_blob": "85e251c7b975d5ec09d78d7ec75c470e1d7c8bfa",
+      "original_references": [
+        "workflow_card_sdk.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-workflow_card_sdk-nl.png",
+      "sha256": "030e482ab88357a75d5f81a0a26e0f18ab2f15ecb704e2be3544209904ca9b1d",
+      "caption": "Card SDK met melding dat een AI Workforce-abonnement vereist is."
+    },
+    {
+      "id": "S065",
+      "doc": "readme/administration-and-setup/workflow/workflow-documentation.md",
+      "action": "replace",
+      "old_blob": "5b56c6edc6e7acc8343c009add46a0f2654d9035",
+      "original_references": [
+        "workflow_test4_delivery_note_status.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-workflow_test4_delivery_note_status-nl.png",
+      "sha256": "f71def347aec07d305f84cee4d71733cdfcbef846c6fc1e8cedfd6f84cb1d0f2",
+      "caption": "Niet-opgeslagen workflowconcept voor een statuswijziging."
+    },
+    {
+      "id": "S066",
+      "doc": "readme/administration-and-setup/workflow/workflow-documentation.md",
+      "action": "replace",
+      "old_blob": "bc14a2fac0b062396ebc1248f7c1c1537c92e6e2",
+      "original_references": [
+        "workflow_test7_status_update.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-workflow_test7_status_update-nl.png",
+      "sha256": "818f527f3add84ca1fc6b099c35215b01c65717e87dda0166d36196b166b08c8",
+      "caption": "Actie voor statuswijziging in een workflowconcept."
+    },
+    {
+      "id": "S067",
+      "doc": "readme/administration-and-setup/workflow/workflow-documentation.md",
+      "action": "replace",
+      "old_blob": "da6a133492c46304bda67e1f6162504bcd8262cf",
+      "original_references": [
+        "workflow_test9_match_check_detail.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-workflow_test9_match_check_detail-nl.png",
+      "sha256": "a21f40cd0068512ff6a253920cc2fa4544757e6a82ae62785b1120d4134d80e3",
+      "caption": "Voorwaarden voor vergelijking met een inkooporder selecteren."
+    },
+    {
+      "id": "S068",
+      "doc": "readme/administration-and-setup/workflow/workflow-documentation.md",
+      "action": "replace",
+      "old_blob": "2c70bbc084befb579accd057538c54d2dd7673d7",
+      "original_references": [
+        "workflow_test9_match_check_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-workflow_test9_match_check_overview-nl.png",
+      "sha256": "2ea7b625672155b17114e39caccbf0b8f5e0d707088a84d1221e823a2ddb4ca3",
+      "caption": "Workflowconcept met een voorwaarde voor inkoopordervergelijking."
+    },
+    {
+      "id": "S069",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+      "action": "replace",
+      "old_blob": "a5e795181fa7e8537e1f768499a686cd1dbd575d",
+      "original_references": [
+        "document-flow-dashboard-menu-en.png",
+        "document-flow-validation-menu-en.png",
+        "document-flow-overview-en.png",
+        "document-flow-later-steps-en.png",
+        "document-flow-step-details-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-document-flow-dashboard-menu-nl.png",
+      "sha256": "243cdbdfbccc30155ffbad86da36dfe7d59f8dd85cce21478ccff0ec5cd2106c",
+      "caption": "Het fictieve document zoeken in het dashboard; waarden zijn afgeschermd."
+    },
+    {
+      "id": "S070",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+      "action": "replace",
+      "old_blob": "44e6c24e25c0bb4371cab63787ffd7f3c348da27",
+      "original_references": [
+        "document-flow-overview-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-document-flow-overview-nl.png",
+      "sha256": "cd6270ba0818fca2945d6668f50fd88e812218eb464d0dd22eb6e34fe59fa475",
+      "caption": "Verwerkingsfasen van een fictieve factuur; technische codes blijven ongewijzigd."
+    },
+    {
+      "id": "S071",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+      "action": "remove",
+      "old_blob": "e2418c8bb4e3c9f90979eee87377da5e483621d8",
+      "original_references": [
+        "document-flow-step-details-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-document-flow-step-details-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S072",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+      "action": "replace",
+      "old_blob": "c39d76787089aee30b1e3f7d728f01ce388d66fd",
+      "original_references": [
+        "document-flow-validation-menu-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-document-flow-validation-menu-nl.png",
+      "sha256": "43a5c4505f09c6afbac4adce4161e41a197f97c0fda54c01523db16262493c05",
+      "caption": "Validatiemenu om de documentstroom te openen."
+    },
+    {
+      "id": "S073",
+      "doc": "readme/end-user-and-partner-section/end-user-section/debug-collector.md",
+      "action": "remove",
+      "old_blob": "a25517b079dde1a6e425518b5e8417c57b135697",
+      "original_references": [
+        "debug-collector-dialog.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-debug-collector-dialog-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S074",
+      "doc": "readme/end-user-and-partner-section/end-user-section/error-page.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "error_2.png",
+        "error_3.png",
+        "error_4.png",
+        "error_5.png",
+        "error_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-error_1-nl.png",
+      "sha256": "431801ddfc6374742695490dacc8e05aff22138e6441c574fbfa7673b43f3440",
+      "caption": "Acties in de foutweergave; het voorbeeld bevat geen geregistreerde foutdetails. De diagnostische teksten Document Processing, no message found en no exception found blijven Engelstalig."
+    },
+    {
+      "id": "S075",
+      "doc": "readme/end-user-and-partner-section/end-user-section/error-page.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "error_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-error_2-nl.png",
+      "sha256": "ebdf47f54601e61ae984e4ef6d7ed7b2ce8803e85101a46167783a13b2f42603",
+      "caption": "Melding en uitzondering in de foutweergave zonder geregistreerde melding. De diagnostische teksten Document Processing, no message found en no exception found blijven Engelstalig."
+    },
+    {
+      "id": "S076",
+      "doc": "readme/end-user-and-partner-section/end-user-section/error-page.md",
+      "action": "remove",
+      "old_blob": null,
+      "original_references": [
+        "error_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-error_4-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S077",
+      "doc": "readme/end-user-and-partner-section/end-user-section/error-page.md",
+      "action": "remove",
+      "old_blob": null,
+      "original_references": [
+        "error_5.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-error_5-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S078",
+      "doc": "readme/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md",
+      "action": "replace",
+      "old_blob": "e0806ff62231c6dedd8e99f0074d50dd817c31cc",
+      "original_references": [
+        "ftp1.png",
+        "m11trSpnDmv9aco98vPG6xuIhYxngp6TauG7lDYEWB2VguNmX0ypXMi3Fc4Ey6V4Iy_YwOy4Zooh3rj_WoAQ3PQgVIjw5vqToOuq_lIxN7IqPE2fv1puzsnEO96y5mn5FHjFtC1wYrEf9sxjHk1GL2I"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-ftp1-nl.png",
+      "sha256": "37e03439987d0f18c59d05822b35e1222a8f69c23a216b4da1ecc306b915f687",
+      "caption": "Overzicht van FTP-verbindingen met afgeschermde verbindingsgegevens."
+    },
+    {
+      "id": "S079",
+      "doc": "readme/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md",
+      "action": "remove",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "source_figure_already_absent",
+      "new": "s150-ftp_file_archiving_settings-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S080",
+      "doc": "readme/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-ftp_import_configuration_form-nl.png",
+      "sha256": "b9aa2b6823d7ad0c95fea1e674871ddecd65fa82ac3367c57519a9ffdc730f28",
+      "caption": "Eerste stap van de FTP-importwizard: serverconfiguratie."
+    },
+    {
+      "id": "S081",
+      "doc": "readme/end-user-and-partner-section/end-user-section/how-to-import-documents/manual-import.md",
+      "action": "replace",
+      "old_blob": "0611b1068bf8f4129f1c077414ce4d58d10faae4",
+      "original_references": [
+        "manual-import1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-manual-import1-nl.png",
+      "sha256": "17242203e950ded448c97ef91c5d69ed7307794ea6c8fb83346959cd2bfd3f8c",
+      "caption": "Venster voor handmatige documentimport."
+    },
+    {
+      "id": "S082",
+      "doc": "readme/end-user-and-partner-section/end-user-section/idea-board.md",
+      "action": "replace",
+      "old_blob": "2c4848092bb54346ed300879742fab72e643db7a",
+      "original_references": [
+        "idea-board-new-idea.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-idea-board-new-idea-nl.png",
+      "sha256": "21c31f912e66dd391bb9f9b7a4c6d65ecd3a3e4476048d2bc1f5877ee34e9e6d",
+      "caption": "Venster om een idee voor te stellen zonder persoonsgegevens. New Idea, Title, Description, Category en Submit blijven Engelstalig in het product."
+    },
+    {
+      "id": "S083",
+      "doc": "readme/end-user-and-partner-section/end-user-section/invoice-dashboard.md",
+      "action": "remove",
+      "old_blob": "cb29d7263370f66a465f221931d90a8d8fa937f6",
+      "original_references": [
+        "invoice-dashboard.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-invoice-dashboard-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S084",
+      "doc": "readme/end-user-and-partner-section/end-user-section/purchase-order-dashboard.md",
+      "action": "replace",
+      "old_blob": "660b75b002d3ac86841d47fb630a19d4a9a998fc",
+      "original_references": [
+        "purchase-order.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-purchase-order-nl.png",
+      "sha256": "ff0db59c172d38a54601d4a5cbdc06aa4ef230a1e9dc73d6990d8a13b7e0547f",
+      "caption": "Inkooporderweergave met afgeschermde ordergegevens."
+    },
+    {
+      "id": "S085",
+      "doc": "readme/end-user-and-partner-section/end-user-section/purchase-order-matching/supplier-item-number-map.md",
+      "action": "replace",
+      "old_blob": "64ca9a777d534c3fd2aeef3235a6ce5abb359b50",
+      "original_references": [
+        "docbits_supplier_item_map_user_view.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-supplier-item-number-map-nl.png",
+      "sha256": "cebe816295e103b8e7bb7df9fbf7bb0bc22a69aed0bc1b3af532743069cf06db",
+      "caption": "Leveranciersartikelnummers koppelen."
+    },
+    {
+      "id": "S086",
+      "doc": "readme/end-user-and-partner-section/end-user-section/ressources-and-support/user-support.md",
+      "action": "replace",
+      "old_blob": "920bc9aad80086ebb4536fa7140ee625c8517e55",
+      "original_references": [
+        "user-support4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-user-support4-nl.png",
+      "sha256": "14a1c61e31f8f634e4c3069bb4e3c26ab0e33939dad1c877f6061e2a8b8b88cc",
+      "caption": "Ondersteuningsformulier vóór verzending."
+    },
+    {
+      "id": "S087",
+      "doc": "readme/end-user-and-partner-section/end-user-section/tasks.md",
+      "action": "replace",
+      "old_blob": "dafbde24bee224321fad075490749ee8fb08b4c1",
+      "original_references": [
+        "tasks1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-tasks1-nl.png",
+      "sha256": "7ddc292fc402338a7725c0b59390065002101e91ffd5dc002c6e3d2b0cf56c8c",
+      "caption": "Takenbord per status; de inhoud van de taken is afgeschermd."
+    },
+    {
+      "id": "S088",
+      "doc": "readme/end-user-and-partner-section/end-user-section/tasks.md",
+      "action": "replace",
+      "old_blob": "72c1c34a7cc85f7b5e76ac82512a2604dc4d8f6d",
+      "original_references": [
+        "tasks2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-tasks2-nl.png",
+      "sha256": "b5b762979713d711441c87b76d209db1f9a111eb6781f23b1457b90e99cc8bca",
+      "caption": "Takenlijst met afgeschermde documentgegevens."
+    },
+    {
+      "id": "S089",
+      "doc": "readme/end-user-and-partner-section/end-user-section/technical-support-in-docbits/help-icons.md",
+      "action": "replace",
+      "old_blob": "2a17c40c3689fef6b3a0ff38e8c33eed8c74ec91",
+      "original_references": [
+        "help-icon.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-help-icon-nl.png",
+      "sha256": "b0afb9fa5e81f6398b7070c5e053449da8025a7c9b6a1825145b53445683ee1a",
+      "caption": "Helppictogram rechtsboven in de instellingen."
+    },
+    {
+      "id": "S090",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/fuzzy-data.md",
+      "action": "replace",
+      "old_blob": "03adade5d0c10860149dd13b2abaab03ddb53ac9",
+      "original_references": [
+        "fuzzy_data_selection_window.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-fuzzy_data_selection_window-nl.png",
+      "sha256": "70bb246a4937448df8cbd7c9c61c112a47d2fdc50af88801879c3857bfc6255d",
+      "caption": "Zoekvenster voor stamgegevens; records zijn afgeschermd."
+    },
+    {
+      "id": "S091",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": "5e4e9155074b8280c88c986c815e8c90d36e0d83",
+      "original_references": [
+        "settings_ocr.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-settings_ocr-nl.png",
+      "sha256": "a0b25008bcbcdc7b03174fe719755d0c82b7f67647d994c465edeffb00b98b68",
+      "caption": "OCR-instellingen in de Nederlandstalige interface."
+    },
+    {
+      "id": "S092",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "troubleshooting_ocr_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-troubleshooting_ocr_1-nl.png",
+      "sha256": "e26a6569e667d255beb56e98baddb8a9d356152f4783800f2b6e388b25f998a0",
+      "caption": "Algemene OCR-instellingen met de optie voor elektronische tekst."
+    },
+    {
+      "id": "S093",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "troubleshooting_ocr_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-troubleshooting_ocr_2-nl.png",
+      "sha256": "43a5c4505f09c6afbac4adce4161e41a197f97c0fda54c01523db16262493c05",
+      "caption": "Menu met extra opties bij veldvalidatie."
+    },
+    {
+      "id": "S094",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "troubleshooting_ocr_3.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-troubleshooting_ocr_3-nl.png",
+      "sha256": "43a5c4505f09c6afbac4adce4161e41a197f97c0fda54c01523db16262493c05",
+      "caption": "Optie voor elektronische tekst in het documentmenu."
+    },
+    {
+      "id": "S095",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "troubleshooting_ocr_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-troubleshooting_ocr_4-nl.png",
+      "sha256": "314e2ac7d9c7c1b3ce8914d9c61ee1dcf33270318a357be72b72468c72f52bf6",
+      "caption": "Bevestiging vóór wijziging van het gebruik van elektronische tekst."
+    },
+    {
+      "id": "S096",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "troubleshooting_ocr_5.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-troubleshooting_ocr_5-nl.png",
+      "sha256": "45192b74b4edb432978f119db6da3bb9784df26746ce24d6b815c2d4299adcaa",
+      "caption": "Velden van een fictieve factuur controleren."
+    },
+    {
+      "id": "S097",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "troubleshooting_ocr_6.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-troubleshooting_ocr_6-nl.png",
+      "sha256": "0e57724592db1860a4dbe1b451357a2875dd9533faf8e9a950221e65f2da86e3",
+      "caption": "OCR-weergave van herkende tekst op de fictieve factuur."
+    },
+    {
+      "id": "S098",
+      "doc": "readme/security/two-factor-authentication.md",
+      "action": "remove",
+      "old_blob": "dd8b851701c0d1f78d1f34822d5ece134d7fe31a",
+      "original_references": [
+        "mfa-backup-codes.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-mfa-backup-codes-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S099",
+      "doc": "readme/security/two-factor-authentication.md",
+      "action": "remove",
+      "old_blob": "bc74a9e955a382dd95b72dc7254ced621d07ea12",
+      "original_references": [
+        "mfa-email-otp.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-mfa-email-otp-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S100",
+      "doc": "readme/security/two-factor-authentication.md",
+      "action": "remove",
+      "old_blob": "3099913ebc3a73a099e667e68defdd86b31836c5",
+      "original_references": [
+        "mfa-totp-setup.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-mfa-totp-setup-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "U047",
+      "doc": "readme/security/two-factor-authentication.md",
+      "action": "replace",
+      "old_blob": "cb309224b86e2bf441e0cb5a36e65e153e953a68",
+      "original_references": [
+        "mfa-2fa-dialog.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u047-nl.png",
+      "sha256": "e2b04ab7b976aa033173b3d90efefff7c79a0ea9429852a15e28c78a5679639f",
+      "caption": "Beschikbare methoden voor tweefactorauthenticatie. Het venster noemt dit Voeg een wachtwoord toe, maar hier registreert u een passkey voor aanmelden zonder wachtwoord."
+    },
+    {
+      "id": "S101",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/configuring-field-properties.md",
+      "action": "replace",
+      "old_blob": "846aecd2378a8743efa72aa63b1fe6a5fadf955a",
+      "original_references": [
+        "docbits_field_properties_type.png",
+        "docbits_field_properties_panel.png",
+        "docbits_field_elements_list.png",
+        "docbits_field_validation_formatting.png",
+        "docbits_field_default_values.png",
+        "docbits_field_user_permissions.png",
+        "docbits_field_view_permissions.png",
+        "docbits_field_enable_historization.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-image-146-nl.png",
+      "sha256": "9bcf9a7bda9b2b0363753a71126fba1cc11b283d1b614c5e1ee4a9a3235c3dc8",
+      "caption": "Veldeigenschappen in de lay-outbouwer."
+    },
+    {
+      "id": "S102",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/using-the-template-preview.md",
+      "action": "replace",
+      "old_blob": "744db55a77a66739528ed4fac0a5993d87f771f5",
+      "original_references": [
+        "docbits_template_preview_usage.png",
+        "docbits_template_preview_option.png",
+        "docbits_template_preview_adjust.png",
+        "docbits_template_preview_realtime.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_script_example_2-nl.png",
+      "sha256": "2161e73d08caa17d74f71a7330b96a8da8cc428cb8f7eb34eb2e3e1623159b35",
+      "caption": "Voorbeeldweergave van een sjabloon in de lay-outbouwer."
+    },
+    {
+      "id": "S103",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md",
+      "action": "replace",
+      "old_blob": "dc2a86d457409efc0d8cfdda26bac03c36260ce1",
+      "original_references": [
+        "validation-cvr-list.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "s150-validation-rules-list-nl.png",
+      "sha256": "1adb9f3314858274fc684bc0e1fd32d0623c83a1feff10709f03a855f1a05342",
+      "caption": "Beheer van validatieregels met afgeschermde geconfigureerde namen. Relatieve datumaanduidingen blijven in deze productweergave Duitstalig."
+    },
+    {
+      "id": "S104",
+      "doc": "readme/administration-and-setup/settings/document-processing/list-of-values.md",
+      "action": "replace",
+      "old_blob": "438fa0389306874485d19466d60346c299ed4fd3",
+      "original_references": [
+        "settings_list_of_values.png",
+        "list_of_values_1.png",
+        "list_of_values_2.png",
+        "list_of_values_13.png",
+        "list_of_values_3.png",
+        "list_of_values_4.png",
+        "list_of_values_5.png",
+        "list_of_values_6.png",
+        "list_of_values_11.png",
+        "list_of_values_3.png",
+        "list_of_values_4.png",
+        "list_of_values_7.png",
+        "list_of_values_8.png",
+        "list_of_values_10.png",
+        "list_of_values_11.png",
+        "list_of_values_12.png",
+        "list_of_values_14.png",
+        "list_of_values_15.png",
+        "list_of_values_16.png",
+        "list_of_values_17.png",
+        "list_of_values_18.png",
+        "list_of_values_19.png",
+        "list_of_values_9.png",
+        "list_of_values_20.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-list_of_values_1-nl.png",
+      "sha256": "fba3d7dd5942e5d2cbb2f43d0806ed6f06ee9e02637732cb5ce01a626ad8dba3",
+      "caption": "Waardenlijsten met afgeschermde geconfigureerde namen."
+    },
+    {
+      "id": "S105",
+      "doc": "readme/administration-and-setup/settings/document-processing/import/README.md",
+      "action": "replace",
+      "old_blob": "336a9fde08f3a0b55fc577b07c6f74e430f88e0b",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-ftp_0-nl.png",
+      "sha256": "37e03439987d0f18c59d05822b35e1222a8f69c23a216b4da1ecc306b915f687",
+      "caption": "Overzicht van FTP-importverbindingen."
+    },
+    {
+      "id": "S106",
+      "doc": "readme/administration-and-setup/settings/document-processing/import/README.md",
+      "action": "replace",
+      "old_blob": "804848930bff3c7c8f3dcc2316cfde48ebe8cf74",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-ftp_5-nl.png",
+      "sha256": "b9aa2b6823d7ad0c95fea1e674871ddecd65fa82ac3367c57519a9ffdc730f28",
+      "caption": "Serverconfiguratie in de FTP-importwizard."
+    },
+    {
+      "id": "S107",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "124d16599bac637c136c53586ed52361b872f792",
+      "original_references": [
+        "quick_search_01_entry.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_01_entry-nl.png",
+      "sha256": "46eaf74581f42b05c8b338c3dbb139f3660e74a9dc4cf44dd05c6e446ec0f791",
+      "caption": "Snelzoeken in het Nederlandstalige dashboard."
+    },
+    {
+      "id": "S108",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "7a14ff556893c49150998e99be71d9d97440b219",
+      "original_references": [
+        "quick_search_03_filename_contains.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_03_filename_contains-nl.png",
+      "sha256": "f0059fa8f9e55e9d0160a3b726e1523a978aaffa4bc13cd18ecafa88e61ea750",
+      "caption": "Een deel van de bestandsnaam zoeken: filename:invoice."
+    },
+    {
+      "id": "S109",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "121d379ed92341352914635c46966f80756f2d87",
+      "original_references": [
+        "quick_search_05_status.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_05_status-nl.png",
+      "sha256": "c47468208fbbb52b96c10a90c5800afe7e6af0c0a65fc5deb85649559932172d",
+      "caption": "Een filter op de technische status ready_for_validation invoeren."
+    },
+    {
+      "id": "S110",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "262ae9126cbe9d4fc29269024f5f8066dea29050",
+      "original_references": [
+        "quick_search_06_date.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_06_date-nl.png",
+      "sha256": "e005d2ff441365a65f8712756937e86cff4c5f03354929157ad3a06776fb4924",
+      "caption": "Een zoekopdracht voor documenten na 25 mei 2026 invoeren."
+    },
+    {
+      "id": "S111",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "0d2f3e15a1c5547fa44f532fb05f54d8f37f0752",
+      "original_references": [
+        "quick_search_09_supplier.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_09_supplier-nl.png",
+      "sha256": "d54825860b7f638a4a01943c094441c1c69bb9f9dc3f8da72588d47e44399511",
+      "caption": "Voorbeeld van een leveranciersquery: supplier_name=Test."
+    },
+    {
+      "id": "S112",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "1dccf673a5ce44501cd6d3646a1cd4df257ae371",
+      "original_references": [
+        "quick_search_10_purchase_order.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_10_purchase_order-nl.png",
+      "sha256": "532e794cbf8037d79088e100af038a21f4a9c0300620d7f2fd4b1cf75aec4fd5",
+      "caption": "Voorbeeld van een inkooporderquery: purchase_order=PO."
+    },
+    {
+      "id": "S113",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "767fc83366c4f50070cd777ae9e022aeb0bfa98d",
+      "original_references": [
+        "quick_search_07_amount.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_07_amount-nl.png",
+      "sha256": "789b038480df90b2a7fee72c6fb031fff909a218d029bea6c7e7cd1002f756dd",
+      "caption": "Een filter op totaalbedragen boven 5000 invoeren."
+    },
+    {
+      "id": "S114",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "cdfd957f5984c4303b606f659f9035c6b688dfd4",
+      "original_references": [
+        "quick_search_14_between.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_14_between-nl.png",
+      "sha256": "eaab0f4fdf7653899e024f8085668699077c02bd59f4525517dbf22515cc0104",
+      "caption": "Een query op bedragen tussen 1000 en 5000 invoeren."
+    },
+    {
+      "id": "S115",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "a73bbf19f438c2128bb37cc2ffad88e6b7d6b022",
+      "original_references": [
+        "quick_search_12_empty.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_12_empty-nl.png",
+      "sha256": "8831fb889341f025f427e329cb61533ff94d06a891d2412b344c539d724fb0ef",
+      "caption": "Een filter op een lege leveranciersnaam invoeren."
+    },
+    {
+      "id": "S116",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "2c51233f74c665a7323ec17cfc56348b2554365b",
+      "original_references": [
+        "quick_search_15_ap_empty.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_15_ap_empty-nl.png",
+      "sha256": "a629a0f9767d192cbd8b6b1f11b6ecf64edbcaaea2379ffa39b4df93f9392470",
+      "caption": "Zoeken naar documenten zonder AP-toewijzing."
+    },
+    {
+      "id": "S117",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "7730d47b755bafa8ce42e7a24e60961a3d1f4cbc",
+      "original_references": [
+        "quick_search_13_combined.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_13_combined-nl.png",
+      "sha256": "fc10d861be994a9a34b2dbb2bb76bd593d39c91706304fff2b8c76faf5988547",
+      "caption": "Status- en leveranciersvoorwaarden met AND verbinden."
+    },
+    {
+      "id": "S118",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "759abc075407878ccb4c3071ac04d49de3c55733",
+      "original_references": [
+        "quick_search_shortcut_01_operator_aliases.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_01_operator_aliases-nl.png",
+      "sha256": "6f52ca2b415724f9b719626f4d4a734977bf439b6e9d2c1cd519c57737829284",
+      "caption": "De vergelijkingsoperator gt in een datumquery."
+    },
+    {
+      "id": "S119",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "2e5c28ab19d967a9b1abaa77baa0088ea90473cc",
+      "original_references": [
+        "quick_search_shortcut_02_bare_date.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_02_bare_date-nl.png",
+      "sha256": "8173efd7579f47ef711fe5d4f4c37c421c17b116789a176cacb8de8f55713a32",
+      "caption": "created_on met today() vergelijken."
+    },
+    {
+      "id": "S120",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "82afba69789139af1cd33ebae560f3323f075b6f",
+      "original_references": [
+        "quick_search_shortcut_03_period.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_03_period-nl.png",
+      "sha256": "a92e474f1c50f0aae24bc735043931a1ee327596d2005354d3a08e92d6613670",
+      "caption": "Een aanmaakdatum vanaf 1 juni 2026 invoeren."
+    },
+    {
+      "id": "S121",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "a697d6dfa758526f7964c1000aa1cb41c22e8a53",
+      "original_references": [
+        "quick_search_shortcut_04_presence.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_04_presence-nl.png",
+      "sha256": "ab7a67489cfd8f3474893bae6cba73f77cc248f3d22857ba74d476dc0de80a09",
+      "caption": "Zoeken naar documenten zonder toegewezen verantwoordelijke."
+    },
+    {
+      "id": "S122",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "bc5ee2b3816bc89687144627fdfbb2334391eb96",
+      "original_references": [
+        "quick_search_shortcut_05_status_open.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_05_status_open-nl.png",
+      "sha256": "9bf8faa927e7b6768ce0ffaa6cfe92966f1055515ee3d5cd021367ca5711da88",
+      "caption": "Voorbeeld van een statusfilter bij snelzoeken."
+    },
+    {
+      "id": "S123",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "e480f9bea1892ceff40bc8084810a98b109a2129",
+      "original_references": [
+        "quick_search_shortcut_06_not_between.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_06_not_between-nl.png",
+      "sha256": "9d3d8aaac4dde228846698fbc2c955511540bf068a1671f36002d05d61446957",
+      "caption": "Een zoekopdracht buiten een datumbereik invoeren."
+    },
+    {
+      "id": "S124",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "e7efa1ea3383d5685b87ea5fa9eea80719cede44",
+      "original_references": [
+        "quick_search_shortcut_07_in_list.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_07_in_list-nl.png",
+      "sha256": "b0ba9a08541f7e6e18ed0b48b6ce8f425ba35b036f5f827adf6ce7c3b8ede150",
+      "caption": "Twee technische statussen met OR verbinden."
+    },
+    {
+      "id": "S125",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "a6d979c5c147b921b3ca93f423185925f2235b2c",
+      "original_references": [
+        "quick_search_shortcut_08_negation.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_08_negation-nl.png",
+      "sha256": "3bd997518deb834bb4cad0d9ba1e2b2468a79cb9854b058f0ea43989e497ab80",
+      "caption": "Een leveranciersvoorwaarde met NOT uitsluiten."
+    },
+    {
+      "id": "S126",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "6b2675ebf2a10460ad017211de7108983ac120c4",
+      "original_references": [
+        "quick_search_shortcut_09_contains.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_09_contains-nl.png",
+      "sha256": "2ca5ef0e47d12090b3f568b84526cfe648fcd4ad3d1384288124e6505ef740e6",
+      "caption": "Een term in bestandsnamen zoeken."
+    },
+    {
+      "id": "S127",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "a2fb51e334a7a055c5e03bf81b4f0459731d6d4d",
+      "original_references": [
+        "quick_search_shortcut_12_invoice_prefix.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_12_invoice_prefix-nl.png",
+      "sha256": "9dd198607507aad8bef173191d7b393e68f1791d8797124a5b3a74500bc082d9",
+      "caption": "Voorbeeld van een query met invoice_number."
+    },
+    {
+      "id": "S128",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "8989283a660163ca4aeeba7529c114493bfcec8f",
+      "original_references": [
+        "quick_search_shortcut_13_assignee_prefix.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_13_assignee_prefix-nl.png",
+      "sha256": "225314205a9a5f0f22bf92e6d5251684ef591dbc4f874d940328ef5f92c450f0",
+      "caption": "Een lege toewijzing invoeren: assigned_to=\"\"."
+    },
+    {
+      "id": "S129",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "923dcfcdbe5bf297c5604c4e8f547cf2045340dd",
+      "original_references": [
+        "quick_search_shortcut_10_currency_suffix.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_10_currency_suffix-nl.png",
+      "sha256": "9f62e2dd9530fd9bda6348d44454f367f991451a99ae9c07796b8b357ac58337",
+      "caption": "Een valutafilter invoeren: currency=EUR."
+    },
+    {
+      "id": "S130",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "87ec3f3ebb440bb5a58fd3b8c881ae1d013fa3a6",
+      "original_references": [
+        "quick_search_shortcut_11_overdue.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_11_overdue-nl.png",
+      "sha256": "35f442356efb4aa434460c90319846507139cc7e02b22966c56f729908b01af6",
+      "caption": "Een vervaldatum vóór today() invoeren."
+    },
+    {
+      "id": "S131",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "1d33a8f1824d6891fffd934fcc77b2fac3fabfde",
+      "original_references": [
+        "quick_search_shortcut_14_amount_prefix.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_14_amount_prefix-nl.png",
+      "sha256": "e875c75d3dfaefe77d2eef1de5e09bee9c4c3c4919286e60bd595d9eeaaa2903",
+      "caption": "Een totaalbedrag van minstens 1000 invoeren."
+    },
+    {
+      "id": "S132",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "8978c5be7970af242641d69a4c617bb7d62c27fc",
+      "original_references": [
+        "quick_search_17_vector.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_17_vector-nl.png",
+      "sha256": "3cb3970695b0349e1f87a59da671848d3e5c05c82dcda336e837219b623f2bbd",
+      "caption": "Documentinhoud automatisch meenemen bij snelzoeken."
+    },
+    {
+      "id": "S133",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "f8c4995d26edf812642c486bf4ec9d391c2e73fa",
+      "original_references": [
+        "quick_search_18_ocr.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_18_ocr-nl.png",
+      "sha256": "37b1b3878438708357b3a27214508434528b3d1ab91065ad53868ad9d3a28a38",
+      "caption": "Documentinhoud altijd meenemen bij snelzoeken."
+    },
+    {
+      "id": "S134",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "ca0537f2d86cdfb35aa14687ce6248fc0822c502",
+      "original_references": [
+        "quick_search_19_ai.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_19_ai-nl.png",
+      "sha256": "d5c8a63dcf9a4d544dfee569be75b85444fe3ce68439efdd8cd0a4c40649e4ac",
+      "caption": "Zoeken beperken tot zichtbare kolommen."
+    },
+    {
+      "id": "U028",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "e987cff9868b1813c11901e117af13eb17f7f5c4",
+      "original_references": [
+        "quick_search_02_filename_starts.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u028-nl.png",
+      "sha256": "cbb91ada8a63a4a89cdb7478b58a26d2a2dcb10c529db3e37729d4b498c85868",
+      "caption": "Een query op bestandsnaam invoeren."
+    },
+    {
+      "id": "U029",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "52c6b296c24436c0c90e46949531c20396a25bd2",
+      "original_references": [
+        "quick_search_16_grouping.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u029-nl.png",
+      "sha256": "2d2734f75e935fe9297c74251e8f1461f7e2b6fc477bd1a834a2b6c293b25291",
+      "caption": "Een query met groepering op leverancier invoeren."
+    },
+    {
+      "id": "U030",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "938e1bd855d10de8184eb50cb5cf90ea6c1f862b",
+      "original_references": [
+        "quick_search_11_smart_filters.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u030-nl.png",
+      "sha256": "a461e55872e84a581060faa7570b2a96eda6a034f2b4eaf66879499f5809a0a8",
+      "caption": "Hulp bij query's en filters voor snelzoeken."
+    },
+    {
+      "id": "S135",
+      "doc": "readme/administration-and-setup/settings/global-settings/email-notification/configuring-notifications.md",
+      "action": "replace",
+      "old_blob": "59ad7e9c06f62a3a4835a449c52bf799486d14bc",
+      "original_references": [
+        "docbits_email_notification_settings_access.png",
+        "docbits_notification_config_nl.png",
+        "docbits_notification_add_new.png",
+        "image (7) (1) (1) (1) (2).png",
+        "image (44) (1).png",
+        "image (41) (1).png",
+        "image (9) (1) (1) (1).png",
+        "image (43) (1).png",
+        "image (42) (1).png",
+        "image (45) (1).png",
+        "image (10) (1) (1) (1).png",
+        "image (11) (1) (1) (1).png",
+        "image (12) (1) (1) (1).png"
+      ],
+      "retired_aliases": 9,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-image-41-1-nl.png",
+      "sha256": "91650f567601152d7b696950c94a44735b1b4ff17932e0802722a3010112d3ee",
+      "caption": "Configuratievenster voor een e-mailmelding."
+    },
+    {
+      "id": "S136",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/inbound-emails.md",
+      "action": "replace",
+      "old_blob": "1e14269021374965d34d7b7fe9fe7843b30d6f7c",
+      "original_references": [
+        "inbound_emails_protocol_select.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-inbound_emails_protocol_select-nl.png",
+      "sha256": "9ccf9b3eeaea67e131f5e579b940f8d132774f6abd1678c52f5170e944e51691",
+      "caption": "Protocolselectie in de wizard voor inkomende e-mail."
+    },
+    {
+      "id": "S137",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/regex/editing-and-saving-regex-patterns.md",
+      "action": "remove",
+      "old_blob": "9ab291482253d550b1aad3d3ed1cd6003f8c6af4",
+      "original_references": [
+        "docbits_regex_edit_settings.png",
+        "docbits_regex_pattern_analysis.png",
+        "docbits_regex_customer_invoice_example.png",
+        "docbits_regex_save_changes.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_regex_edit_settings-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S138",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/document-sub-types.md",
+      "action": "replace",
+      "old_blob": "5ccd52f91ebabf597e994f7909ebc684d70aeb15",
+      "original_references": [
+        "docbits_document_sub_types_list.png",
+        "docbits_document_sub_types_overview.png",
+        "docbits_subtype_actions_fields.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_document_sub_types_list-nl.png",
+      "sha256": "16e0f7498bae0733c7a99853d5bd6351b46fed918a601cc5abc944839915cfa3",
+      "caption": "Lijst met documentsubtypen in het beheer. De kolomkop Name blijft Engelstalig in het product."
+    },
+    {
+      "id": "S139",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/document-sub-types.md",
+      "action": "replace",
+      "old_blob": "7c44d3dd82ac71319997d7bfcd56144b890c9e1a",
+      "original_references": [
+        "docbits_document_sub_types_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-docbits_document_sub_types_overview-nl.png",
+      "sha256": "e64d1c16208dfbbda6dcbcfcfbf94e9a4e79f62b8f22891b32e028bd6aa60609",
+      "caption": "Overzicht van documentsubtypen. De kolomkop Name blijft Engelstalig in het product."
+    },
+    {
+      "id": "S140",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/regex/README.md",
+      "action": "remove",
+      "old_blob": "603c7128edea00be200f2d8d21882fecfadbae44",
+      "original_references": [
+        "docbits_regex_management.png",
+        "docbits_regex_management_list.png"
+      ],
+      "retired_aliases": 1,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_regex_management-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S141",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/model-training/import-data-model-training.md",
+      "action": "replace",
+      "old_blob": "96a827ba47b76bfc6d3ecf17e66b5b4ab45992fe",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-image-85-1-nl.png",
+      "sha256": "4fb73bfe7d6ef1cc6693d5babcdec703d9659452f286df6b6a0dc543b6d62a02",
+      "caption": "Trainingsgegevens importeren met bedrag- en datumformaat."
+    },
+    {
+      "id": "S142",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/script/script-activation-and-management.md",
+      "action": "replace",
+      "old_blob": "96dadf491fd1b5b0acc39f5a84241c1b46982b3f",
+      "original_references": [
+        "docbits_script_management_nav.png",
+        "docbits_view_existing_scripts.png",
+        "docbits_script_list_enable_disable.png",
+        "docbits_save_script_changes.png",
+        "docbits_edit_script_icon.png",
+        "docbits_script_save_changes_2.png",
+        "docbits_script_test_environment.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_edit_script_icon-nl.png",
+      "sha256": "cacaeb27dff49e5ef342fc3e6a695a29d13b9c826837aea7c71522381525cb0f",
+      "caption": "Scriptbeheer en bewerkingsacties; namen zijn afgeschermd."
+    },
+    {
+      "id": "S143",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md",
+      "action": "replace",
+      "old_blob": "db83cd209c3ba01ba28c3e016701ac3767dc14a8",
+      "original_references": [
+        "docbits_force_validation_setting.png",
+        "docbits_validation_rules_regex.png",
+        "docbits_validation_rules_example.png",
+        "docbits_match_score_setting.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_choose_column_type-nl.png",
+      "sha256": "0b6299833c5f2aa40b519d72b2c41f5572526ffb517f7abe6c38338ad02cf854",
+      "caption": "Afzonderlijke kolommen voor geforceerde validatie, OCR en Match Score. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie."
+    },
+    {
+      "id": "S144",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md",
+      "action": "replace",
+      "old_blob": "eadd604c1c75b582b7884ad68eac5ad543e14c40",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-image-120-nl.png",
+      "sha256": "a9883fe6c7c20e4ecbfd0e7b938ec63e37f75c0291f25ec7f02c3597abb86fa9",
+      "caption": "Validatie en herkenning afzonderlijk per veld instellen. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie."
+    },
+    {
+      "id": "S145",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md",
+      "action": "replace",
+      "old_blob": "0f0f008d3c9475f3c4881d92ba3d9ee5542b2042",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-docbits_decide_column_necessity-nl.png",
+      "sha256": "e05f05d130eb7f1ee30ca2174814ace3a181a25c7bc6ef4dabbcee54bf3675bc",
+      "caption": "Gefilterd factuurnummer met geforceerde validatie en Match Score. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie."
+    },
+    {
+      "id": "S146",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/new-fields-with-charges.md",
+      "action": "replace",
+      "old_blob": "5fa66c373fd7d91dd15d1e1f8db917cdd329a8cd",
+      "original_references": [
+        "docbits_add_field_with_charges_1.png",
+        "docbits_add_field_with_charges_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_add_field_with_charges_1-nl.png",
+      "sha256": "28e75e278700c1412e5ab7b5ca47ebf217db39391e72edc7bed97d63773dc7a6",
+      "caption": "Veldgegevens vóór het aanmaken van een nieuw veld. De knop Rug betekent hier Terug."
+    },
+    {
+      "id": "S147",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/new-fields-with-charges.md",
+      "action": "replace",
+      "old_blob": "29053d66bc317a1e9e46f4175bea0b086297df86",
+      "original_references": [
+        "docbits_add_field_with_charges_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-docbits_add_field_with_charges_2-nl.png",
+      "sha256": "102a39b3cc5735284bca5c0a8811c8bd3624198adada84643d4ed17d67d51531",
+      "caption": "Veldconcept met ingeschakelde optie voor extra kosten. De knop Rug betekent hier Terug."
+    },
+    {
+      "id": "S148",
+      "doc": "readme/administration-and-setup/settings/document-processing/classification-and-extraction/auto-extract-tax-code.md",
+      "action": "replace",
+      "old_blob": "a5dceb213a6ec95dfdcbfb9d64bf6a315af81755",
+      "original_references": [
+        "image.png?alt=media\\&token=14b2e7bf-6a38-4f1e-8fc4-a282b8aef6b7",
+        "iScreen Shoter - Google Chrome - 250214111226.jpg?alt=media\\&token=f8e2571f-1160-4125-b29a-5e2ee3d9bbb3"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-auto_extract_tax_code_1-nl.png",
+      "sha256": "669df983440c1a011cfd803d16f41e0afa77828ad3897b514a9e31d1cee78b5f",
+      "caption": "Instellingen voor automatische extractie van de belastingcode."
+    },
+    {
+      "id": "S149",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/README.md",
+      "action": "replace",
+      "old_blob": "5005bd9974a933ee976e1eb845fe64df41d0ddfe",
+      "original_references": [
+        "docbits_fields_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-docbits_fields_overview-nl.png",
+      "sha256": "42d16df9116434bfef2536f730d733d0d1fc480761954dcb35021e05aa443ab0",
+      "caption": "Velden van het documenttype Factuur. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie."
+    },
+    {
+      "id": "S150",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/model-training/README.md",
+      "action": "replace",
+      "old_blob": "938427210493926b8c8fced3bc43a21a47a92713",
+      "original_references": [
+        "docbits_model_training_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_model_training_overview-nl.png",
+      "sha256": "1bb55e12860344034bdfef811fc3eee20c23ea9c20e05183748ea1017068b246",
+      "caption": "Overzicht van modeltraining in het Nederlands. Treinmodel is een onjuiste vertaling van Model trainen; Name en Actions blijven Engelstalig."
+    },
+    {
+      "id": "T001",
+      "doc": "readme/administration-and-setup/settings/global-settings/company-information/two-factor-authentication.md",
+      "action": "replace",
+      "old_blob": "db5668e3345c19c2de9e500b2e76daa2355671b6",
+      "original_references": [
+        "mfa-admin-requirement.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t001-nl.png",
+      "sha256": "9d31ccd9790ee92c8b79b830ecbff633ee42b81cc0efae44254bbbd57fb9ea8d",
+      "caption": "Vereiste voor tweefactorauthenticatie binnen de organisatie. Het product gebruikt Wachtwoord bij de passkey-teller; deze teller gaat over geregistreerde passkeys."
+    },
+    {
+      "id": "T002",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/adding-editing-groups.md",
+      "action": "replace",
+      "old_blob": "45603395938ceba8bdb0a9cff732bd27ea123505",
+      "original_references": [
+        "docbits_group_settings_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t002-nl.png",
+      "sha256": "c9e4bb21c59d36a62a9434a8fba39d1d3f89257767495900a245575f4836b401",
+      "caption": "Toegang tot instellingen voor groepen en rechten."
+    },
+    {
+      "id": "T003",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/adding-editing-groups.md",
+      "action": "replace",
+      "old_blob": "dbdc2b35f363a3fbbaca91a62a7d1a23881bb505",
+      "original_references": [
+        "docbits_new_group_window.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t003-nl.png",
+      "sha256": "dd338c744173a2021245ac6d23c4780f3a7fcde09188b52021790101a7119dc3",
+      "caption": "Groepslijst met afgeschermde namen."
+    },
+    {
+      "id": "U005",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/adding-editing-groups.md",
+      "action": "replace",
+      "old_blob": "e385081cdbeb86035c28cf6028b40efa36ae3480",
+      "original_references": [
+        "docbits_new_group_form.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u005-nl.png",
+      "sha256": "0adb998df3760522e767da7dc75bb2b8dddd513b8802b4bed2253c136c87220c",
+      "caption": "Venster voor een niet-opgeslagen nieuwe groep."
+    },
+    {
+      "id": "U006",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/adding-editing-groups.md",
+      "action": "replace",
+      "old_blob": "f40847e59865482d89c87744260b72ba57f7be1a",
+      "original_references": [
+        "docbits_save_group_details.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u006-nl.png",
+      "sha256": "fc8378eb9c555fcc0ee0aacca27f8b35a764c39c5524f8091445499cda163d00",
+      "caption": "Beheer van groepen en rechten."
+    },
+    {
+      "id": "T008",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/README.md",
+      "action": "replace",
+      "old_blob": "b00f0eb9450c24fe4f83ed6edd26c1fec9c5c168",
+      "original_references": [
+        "dbdc232-groups-permissions-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t008-nl.png",
+      "sha256": "f8e7f73997ddb48998086c7b400a5e6bc8c999cd6c60747b5ea5cdad07278108",
+      "caption": "Paneel voor groepsselectie."
+    },
+    {
+      "id": "T009",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/README.md",
+      "action": "replace",
+      "old_blob": "82a8276a37a242d1c4c6a72fc6b4038a67edaefa",
+      "original_references": [
+        "groups_and_permissions.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t009-nl.png",
+      "sha256": "69b441489e02392178843274e2aabca0e880a273923b6ae04402918f86a32624",
+      "caption": "Details van de geselecteerde groep; persoonsgegevens zijn afgeschermd."
+    },
+    {
+      "id": "T010",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/README.md",
+      "action": "replace",
+      "old_blob": "f1dfbbce72a065d248b72b69506dc3c2a285b69b",
+      "original_references": [
+        "integration_sso.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t010-nl.png",
+      "sha256": "dc4d3c33398d01636c586e312743d9246d5141e3535bdc51ed0786f5cca2d6fe",
+      "caption": "Configuratie van integratie en SSO-providers. De sectie identiteitsbewijs bevat organisatie-ID’s; het gaat niet om een identiteitsdocument."
+    },
+    {
+      "id": "T011",
+      "doc": "readme/administration-and-setup/settings/log-settings/README.md",
+      "action": "replace",
+      "old_blob": "98fb206c2f8d0c58df6db354d9f2f9ae815c9adf",
+      "original_references": [
+        "activity_logging.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t011-nl.png",
+      "sha256": "9a69307a5bda9f586044a1108467bdd75e79970126f63cfb50c3a57bf2db1fdb",
+      "caption": "Filters van het activiteitenlogboek; vermeldingen zijn afgeschermd."
+    },
+    {
+      "id": "T012",
+      "doc": "readme/administration-and-setup/settings/supplier-setting/supplier-general-settings.md",
+      "action": "replace",
+      "old_blob": "40957d816bec6947c2664bbed8b3807a1f1abf7d",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "prior-t012-nl.png",
+      "sha256": "29d8b09d2b736faa2618ba86e965edd685012ca34aa839f46bdde42ac01a3f45",
+      "caption": "Algemene instellingen van het leveranciersportaal."
+    },
+    {
+      "id": "T014",
+      "doc": "readme/administration-and-setup/settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md",
+      "action": "replace",
+      "old_blob": "281f20b531de808ca7ad2b0fce4f95389481bee7",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "prior-t014-nl.png",
+      "sha256": "a8e6905e9129d281378afbd336133696840c11d8541e5db31e90ed58a4cc7aed",
+      "caption": "Exportconfiguratie van het leveranciersportaal."
+    },
+    {
+      "id": "T015",
+      "doc": "readme/administration-and-setup/settings/supplier-setting/supplier-permissions.md",
+      "action": "replace",
+      "old_blob": "8ec3b3a270de246771e620514964e1d378466b6a",
+      "original_references": [
+        "supplier_group.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t015-nl.png",
+      "sha256": "0181d385998d70d61f528b5cd520e8457474b586a274e60d6c7f4a8880c090bd",
+      "caption": "Leveranciersgroepen met afgeschermde namen."
+    },
+    {
+      "id": "T016",
+      "doc": "readme/administration-and-setup/settings/supplier-setting/supplier-permissions.md",
+      "action": "replace",
+      "old_blob": "8062257be3429210a78a3d2f946b02c221816083",
+      "original_references": [
+        "user_supplier_group_mapping.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t016-nl.png",
+      "sha256": "cf6db4a393cdd4f672c8dd064569f51b03cbc39f52541a65bb3ded8138eff58a",
+      "caption": "Gebruikers aan leveranciersgroepen koppelen."
+    },
+    {
+      "id": "T019",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/activation.md",
+      "action": "replace",
+      "old_blob": "4261b17251bf67f7284a186141461fa0b9ffec78",
+      "original_references": [
+        "document-type-activation-en-2026.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t019-nl.png",
+      "sha256": "8f775fb4bb18ebe8d044e4797a378f3bc3446c1e032c5767a1bf8cb5039d5045",
+      "caption": "Documenttypen en activeringsopties."
+    },
+    {
+      "id": "U001",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/users/modifying-user-details.md",
+      "action": "replace",
+      "old_blob": "a0d93065a0019dfb027ee15a83239be840ca4bf8",
+      "original_references": [
+        "docbits_user_settings_menu.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u001-nl.png",
+      "sha256": "361f2ebaf6d5a0ce96f38305a73085bf70fc0fab8bf7db121a7b0180aef9f4dd",
+      "caption": "Gebruikersbeheer met afgeschermde persoonsgegevens."
+    },
+    {
+      "id": "U002",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/users/modifying-user-details.md",
+      "action": "replace",
+      "old_blob": "0e06df6a17da2e914339e14a6a7868d02d72f223",
+      "original_references": [
+        "docbits_user_role_edit.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u002-nl.png",
+      "sha256": "cd091801247c561ae5cbea1b54ce3ff79b736c55612530cddc766c1c10e43a33",
+      "caption": "Bewerkformulier voor een gebruiker; waarden zijn afgeschermd."
+    },
+    {
+      "id": "U003",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/users/login-analytics.md",
+      "action": "replace",
+      "old_blob": "511ff9d02c3684e2ab374a8260a9bf5a7867e207",
+      "original_references": [
+        "login_analytics_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u003-nl.png",
+      "sha256": "30a0acf3383e4a6c00d528c07e05bca41479d0ee42441bafa1cd1715299ab239",
+      "caption": "Overzicht van aanmeldanalyses."
+    },
+    {
+      "id": "U004",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/activating-permissions.md",
+      "action": "replace",
+      "old_blob": "262ef60adf964bc5ed82ba7ea8d804a6489e65ed",
+      "original_references": [
+        "image (176).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u004-nl.png",
+      "sha256": "f48edbde048baf13347b4653062606d6c3469d8301ca2aad2705b670d2138a92",
+      "caption": "Rechtenmatrix per documenttype en actie. De toegangsniveaus Owner, Everyone en No Access blijven Engelstalig."
+    },
+    {
+      "id": "U007",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/activating-permissions.md",
+      "action": "replace",
+      "old_blob": "89d583db47bad01e00870095cac250b2c96a36be",
+      "original_references": [
+        "image (174).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u007-nl.png",
+      "sha256": "f8e7f73997ddb48998086c7b400a5e6bc8c999cd6c60747b5ea5cdad07278108",
+      "caption": "Een groep selecteren om de rechten te bekijken."
+    },
+    {
+      "id": "U008",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/activating-permissions.md",
+      "action": "replace",
+      "old_blob": "3fe4148c63af21d6733f49d3539e998fb89a8786",
+      "original_references": [
+        "image (346).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u008-nl.png",
+      "sha256": "f0ff9f80543b8f750b4166e84bd6b01cef8172b6cc36c5b861c64ab98ac90948",
+      "caption": "Toegangsniveaus per actie in de rechtenmatrix. De toegangsniveaus Owner, Everyone en No Access blijven Engelstalig."
+    },
+    {
+      "id": "U009",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/activating-permissions.md",
+      "action": "replace",
+      "old_blob": "6b64baf7172948a09f1da5b3338efe7e0ffb2f9e",
+      "original_references": [
+        "image (173).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u009-nl.png",
+      "sha256": "fc8378eb9c555fcc0ee0aacca27f8b35a764c39c5524f8091445499cda163d00",
+      "caption": "Optie om rechtenbeheer te activeren."
+    },
+    {
+      "id": "U010",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/v2.md",
+      "action": "replace",
+      "old_blob": "372b0db6b5030b8e8df3011b1b3940cab8e9594f",
+      "original_references": [
+        "dbdc-182-infor-v2-sso-settings-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u010-nl.png",
+      "sha256": "3b0fc71f84a14e0abae95cd0457b21c70ac83994efd012e6e385acac0dded68b",
+      "caption": "SSO-configuratie met afgeschermde organisatiegegevens. De sectie identiteitsbewijs bevat organisatie-ID’s; het gaat niet om een identiteitsdocument."
+    },
+    {
+      "id": "U011",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md",
+      "action": "replace",
+      "old_blob": "af5549d806a46d7d3cee72d5ba99ad860ccce580",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "prior-u011-nl.png",
+      "sha256": "2a6c3d112bf8c01d1f18416fa2f014de961a692323d35fe97871f0ff2e4b19e9",
+      "caption": "Toegang tot documenttypen vanuit de instellingen."
+    },
+    {
+      "id": "U012",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md",
+      "action": "replace",
+      "old_blob": "8a7883d30a3aed3573e8ce2c45c3955aec529926",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "prior-u012-nl.png",
+      "sha256": "dfe2e35b85ed75acf96e6ddfdc0730288e9965f40147d6e130bfedb78ed9e896",
+      "caption": "Elementen en groepen van een bestaande lay-out."
+    },
+    {
+      "id": "U013",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md",
+      "action": "replace",
+      "old_blob": "63a236607758685a97b8d969bba1f9426992226d",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "prior-u013-nl.png",
+      "sha256": "fd4f36920ba064d61b1299491a27c334221cb22b607955bd42e9a5f5d47369ad",
+      "caption": "Beschikbare velden in de lay-outbouwer."
+    },
+    {
+      "id": "U014",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md",
+      "action": "replace",
+      "old_blob": "b833bc2e313d5c2e6c5a10373c907c12e4eb3439",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "prior-u014-nl.png",
+      "sha256": "f8be7c3db13e0afce9a0c40c637e6cca6bc48b6f8fb39df61d4ebfcc6ce34928",
+      "caption": "Formulierelementen in de lay-outbouwer. De namen van formulierelementen blijven Engelstalig."
+    },
+    {
+      "id": "U015",
+      "doc": "readme/administration-and-setup/settings/global-settings/dashboard/customizing-filters.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "customizing_filters_3.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u015-nl.png",
+      "sha256": "35a0c689256e3a9b26eed91cd43afce7f5aec6c05b4a8ad281cf1329222756ac",
+      "caption": "Statusfilterstijl en aangepast dashboardfilter."
+    },
+    {
+      "id": "U027",
+      "doc": "readme/administration-and-setup/workflow/test-manager.md",
+      "action": "replace",
+      "old_blob": "55f25be0c7ac41edebbd69bbc63f3dbca313e8ba",
+      "original_references": [
+        "workflow_test_manager_detail.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u027-nl.png",
+      "sha256": "ded1c9e865ebb44c34f7d9135c894411babbaf1a8fdd51b1b87b6411fe2eb470",
+      "caption": "Details van een testscenario; gegevens zijn afgeschermd."
+    },
+    {
+      "id": "U031",
+      "doc": "readme/end-user-and-partner-section/end-user-section/user-configuration-options.md",
+      "action": "replace",
+      "old_blob": "83e0469136b2c09056298e383ba0d2ec6315a26d",
+      "original_references": [
+        "user_config_options_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u031-nl.png",
+      "sha256": "728d90604009410044aa054abc2588f36273530a62e3991de5a9975edc76efc4",
+      "caption": "Gebruikersmenu en taalkeuze."
+    },
+    {
+      "id": "U032",
+      "doc": "readme/administration-and-setup/workflow/workflow-dashboard.md",
+      "action": "replace",
+      "old_blob": "71ecf4fcc3f27f3e658a6469943d66becf582cb3",
+      "original_references": [
+        "workflow_test_manager.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u032-nl.png",
+      "sha256": "3330961456b8fe762cd8e77cb8b2281c0cf67c3388b5fe207a2db5cdc977b39e",
+      "caption": "Lijst met workflowtestscenario's."
+    },
+    {
+      "id": "U033",
+      "doc": "readme/administration-and-setup/workflow/standard-workflow-builder.md",
+      "action": "replace",
+      "old_blob": "e03d935c4ca6f76217e406a6b320b46306166ee5",
+      "original_references": [
+        "workflow_list.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u033-nl.png",
+      "sha256": "ade5a2e872d108616308253c17d423aa2e0133c39990159ff27691793e8f183e",
+      "caption": "Workflowlijst en importacties."
+    },
+    {
+      "id": "U034",
+      "doc": "readme/administration-and-setup/workflow/advanced-workflow-builder.md",
+      "action": "replace",
+      "old_blob": "def1766fe506cd28e275fefb9e97accfaa554b27",
+      "original_references": [
+        "workflow_advanced_add_menu.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u034-nl.png",
+      "sha256": "501b73d786241678abdfab8454be5af1b79fca06271c4d70868e05142362357b",
+      "caption": "Knooppuntmenu van de geavanceerde workflowbouwer. De twee verschillende wachtkaarten voor alle of een van de voorafgaande takken heten in deze productversie beide Wacht even. Controleer het kaarttype en de verbindingen; de gedeelde titel onderscheidt de voorwaarden niet."
+    },
+    {
+      "id": "U035",
+      "doc": "readme/administration-and-setup/workflow/and/README.md",
+      "action": "replace",
+      "old_blob": "5674879ca781360e2f3ae5c17dd6b26808f0c027",
+      "original_references": [
+        "workflow-card-qa-20261021-category-72e8f3204ac8-nl.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-u035-nl.png",
+      "sha256": "a21f40cd0068512ff6a253920cc2fa4544757e6a82ae62785b1120d4134d80e3",
+      "caption": "Voorwaarden voor inkoopordervergelijking. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon."
+    },
+    {
+      "id": "U036",
+      "doc": "readme/administration-and-setup/workflow/and/README.md",
+      "action": "replace",
+      "old_blob": "2c4de967e24975ce63c579a45aa1a39c265358db",
+      "original_references": [
+        "workflow-card-qa-20261021-category-833c7249ffc8-nl.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-u036-nl.png",
+      "sha256": "788a5a3db47adff4626b1acb07cab92eceb8cc376aa58d56ea1573ee90d7cbab",
+      "caption": "Voorwaarden voor documentvelden. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon."
+    },
+    {
+      "id": "U037",
+      "doc": "readme/administration-and-setup/workflow/and/README.md",
+      "action": "replace",
+      "old_blob": "29d42329ba34ce316ec990d9d8a1e895f3d86b2e",
+      "original_references": [
+        "workflow-card-qa-20261021-category-1ee68574d713-nl.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-u037-nl.png",
+      "sha256": "961881358084bb4465c9dd95288e2f78dfe2a29bb95077fef4946d72d75a9a6a",
+      "caption": "Voorwaarden voor datum en tijd. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon."
+    },
+    {
+      "id": "U038",
+      "doc": "readme/administration-and-setup/workflow/and/README.md",
+      "action": "replace",
+      "old_blob": "8a00856629a2950551c057566c67f5c3df60bb08",
+      "original_references": [
+        "workflow-card-qa-20261021-category-3c1a15fa2e11-nl.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-u038-nl.png",
+      "sha256": "771424540502288e2ea176c358a1730a67f31afed70b2dc26575926e253d9e5b",
+      "caption": "Voorwaarden voor documenten. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon."
+    },
+    {
+      "id": "U039",
+      "doc": "readme/administration-and-setup/workflow/and/README.md",
+      "action": "replace",
+      "old_blob": "be91b58b75afb6dccbe385817ab07ca9eb62fa29",
+      "original_references": [
+        "workflow-card-qa-20261021-category-6b17199fc268-nl.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-u039-nl.png",
+      "sha256": "a9e90373d76c70ecef98f1674d13c97b41c84569f18567d21f8165490bb7418a",
+      "caption": "Logische voorwaarden. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon."
+    },
+    {
+      "id": "U040",
+      "doc": "readme/administration-and-setup/workflow/and/README.md",
+      "action": "replace",
+      "old_blob": "40b7c30e451752ad64b564629211f2ce7b0a4e9c",
+      "original_references": [
+        "workflow-card-qa-20261021-category-ff11a606e5a1-nl.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-u040-nl.png",
+      "sha256": "d40cfe9c5effe902dce634b6253cc598bcdcc571fcd584f6b7ef4dceb53a95ee",
+      "caption": "Statusvoorwaarden. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon."
+    },
+    {
+      "id": "U041",
+      "doc": "readme/administration-and-setup/workflow/and/README.md",
+      "action": "replace",
+      "old_blob": "95de9cc2dc1b7ec761c97125ce7579bc335fe57b",
+      "original_references": [
+        "workflow-card-qa-20261021-category-526dc164847b-nl.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-u041-nl.png",
+      "sha256": "024f28ae752f819367d9b2f964c25fa715459643cd78586dcc8f0610583aef95",
+      "caption": "Voorwaarden voor gegevenstabellen. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon."
+    },
+    {
+      "id": "U042",
+      "doc": "readme/administration-and-setup/workflow/and/README.md",
+      "action": "replace",
+      "old_blob": "5372750e89e6a8b012ed7f64643dadf42e849815",
+      "original_references": [
+        "workflow-card-qa-20261021-category-4a7af1d99c73-nl.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-u042-nl.png",
+      "sha256": "794fb6963a553c7cb80a214df9642d2eb9167923fca6153dbd5de6df96c1ab1e",
+      "caption": "Voorwaarden voor offerteprijzen. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon."
+    },
+    {
+      "id": "U043",
+      "doc": "readme/administration-and-setup/workflow/and/README.md",
+      "action": "replace",
+      "old_blob": "8fb39d3833dfdf3d49ddd7096962d6a847029941",
+      "original_references": [
+        "workflow-card-qa-20261021-category-08cbb6fd429c-nl.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-u043-nl.png",
+      "sha256": "dc6c1c68d6f8562eea03519361fef545cc1d61d04383058a2a6430d3c379b59f",
+      "caption": "Voorwaarden voor toewijzingen. De categorie Cessionaris betreft toewijzing aan gebruikers en groepen. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon."
+    },
+    {
+      "id": "U046",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md",
+      "action": "replace",
+      "old_blob": "8a4b7158bdea01e7c160618296b9c92c64808560",
+      "original_references": [
+        "users_settings.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u046-nl.png",
+      "sha256": "a3c3901eaf0d6442461151679ba573cf650a1c7ac2957d18885877acd3c24f37",
+      "caption": "Gebruikersweergave met afgeschermde namen en accounts."
+    },
+    {
+      "id": "I001",
+      "doc": "readme/administration-and-setup/settings/global-settings/company-information/README.md",
+      "action": "replace",
+      "old_blob": "f0dd18856a640b509b1c4989b19d42f26e3ad0d6",
+      "original_references": [
+        "company_information.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-i001-nl.png",
+      "sha256": "2d2926421bdce39ed8437796fdabd662e47a62c67219ca6fc40cc5e19c8f0ee0",
+      "caption": "Bedrijfsgegevens met afgeschermde organisatiewaarden."
+    },
+    {
+      "id": "I002",
+      "doc": "readme/administration-and-setup/settings/global-settings/company-information/README.md",
+      "action": "replace",
+      "old_blob": "712c713dd6aee73ffa53eb1def9bd4f7a9ce80ac",
+      "original_references": [
+        "company_email_domains_en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-i002-nl.png",
+      "sha256": "71a095fe7c9c2403479df5dc12b146950155a6d4168061af01752148ab891085",
+      "caption": "E-maildomeinen van het bedrijf configureren."
+    },
+    {
+      "id": "I003",
+      "doc": "readme/administration-and-setup/settings/global-settings/company-information/company-preferences.md",
+      "action": "replace",
+      "old_blob": "42a71f601be196005ad7961073107e8d1fa59903",
+      "original_references": [
+        "settings_company_information.png",
+        "company_preferences_1.png",
+        "company_preferences_2.png",
+        "company_preferences_5.png",
+        "company_preferences_3.png",
+        "company_preferences_5.png",
+        "company_preferences_4.png",
+        "company_preferences_5.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "prior-i003-nl.png",
+      "sha256": "de18e4a124559f0777114fff2a93b8e21e09c6472cc1631c377c8ec0d76917b4",
+      "caption": "Bedrijfsvoorkeuren en bedrag- en datumformaten."
+    },
+    {
+      "id": "I004",
+      "doc": "readme/administration-and-setup/settings/global-settings/company-information/company-preferences.md",
+      "action": "replace",
+      "old_blob": "cd556aa716fabb6f4e83e020176e7b81c7cbb516",
+      "original_references": [
+        "settings_company_information.png",
+        "company_preferences_1.png",
+        "company_preferences_2.png",
+        "company_preferences_5.png",
+        "company_preferences_3.png",
+        "company_preferences_5.png",
+        "company_preferences_4.png",
+        "company_preferences_5.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "prior-i004-nl.png",
+      "sha256": "70d67e7c511b4af146a0398a9be6a6514f55aa195798ed4e59ed3395cd93a67a",
+      "caption": "Datumformaat selecteren in de bedrijfsvoorkeuren."
+    },
+    {
+      "id": "I005",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/filtering-documents.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "FilteringDocs_1.png",
+        "FilteringDocs_2.png",
+        "FilteringDocs_9.png",
+        "FilteringDocs_3.png",
+        "FilteringDocs_4.png",
+        "FilteringDocs_5.png",
+        "FilteringDocs_6.png",
+        "FilteringDocs_7.png",
+        "FilteringDocs_8.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "prior-i005-nl.png",
+      "sha256": "6bb88162f88ceee46be8e2e1412137d18ff6b699f88a8f687629849c57023673",
+      "caption": "Dashboardfilters voor toewijzing en vereiste herstart."
+    }
+  ]
+}

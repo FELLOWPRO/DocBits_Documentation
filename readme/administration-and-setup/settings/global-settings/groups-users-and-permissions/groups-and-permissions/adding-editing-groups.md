@@ -8,20 +8,20 @@ DocBits Admin Guide: Managing Users, Groups & Permissions (Full Walkthrough)
 
 * **Navigate to Group Settings:** Log in to your admin account and go to Group Settings in the admin panel.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_group_settings_overview.png" alt="Docbits Group Settings Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-t002-nl.png" alt="Toegang tot instellingen voor groepen en rechten."><figcaption><p>Toegang tot instellingen voor groepen en rechten.</p></figcaption></figure>
 
 This window will open:
 
-<figure><img src="../../../../../.gitbook/assets/docbits_new_group_window.png" alt="Docbits New Group Window"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-t003-nl.png" alt="Groepslijst met afgeschermde namen."><figcaption><p>Groepslijst met afgeschermde namen.</p></figcaption></figure>
 
 * **Click the + New button:** If you want to add a new group, click the + New button to start the process of adding a new group.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_new_group_form.png" alt="Docbits New Group Form"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u005-nl.png" alt="Venster voor een niet-opgeslagen nieuwe groep."><figcaption><p>Venster voor een niet-opgeslagen nieuwe groep.</p></figcaption></figure>
 
 * **Fill out the table:** Provide the group name and a description of the group.
 * **Save the details:** Once you have filled in the group and description, click the "Save" button.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_save_group_details.png" alt="Docbits Save Group Details"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u006-nl.png" alt="Beheer van groepen en rechten."><figcaption><p>Beheer van groepen en rechten.</p></figcaption></figure>
 
 ## Editing Groups:
 

@@ -14,7 +14,7 @@ Klik op de knop `+ NIEUW`.
 
 Het volgende menu wordt weergegeven:
 
-<figure><img src="../../../../../.gitbook/assets/create_sub_organization_form.png" alt="Formulier voor het aanmaken van een suborganisatie" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-edit_user_in_sub_organization-nl.png" alt="Venster om een suborganisatie te maken, zonder op te slaan."><figcaption><p>Venster om een suborganisatie te maken, zonder op te slaan.</p></figcaption></figure>
 
 Voer de gegevens in van de suborganisatie die u wilt aanmaken — de naam en de beschrijving — en klik vervolgens op de knop `OPSLAAN`. U vindt de zojuist aangemaakte suborganisatie daarna onderaan de lijst met bestaande suborganisaties.
 
@@ -35,8 +35,6 @@ Voer de gegevens in van de suborganisatie die u wilt aanmaken — de naam en de 
 U kunt een nieuwe gebruiker aan de organisatie toevoegen en kiezen of deze uit andere groepen moet worden verwijderd.
 
 **Gebruiker bewerken:**
-
-<figure><img src="../../../../../.gitbook/assets/edit_user_in_sub_organization.png" alt="Een gebruiker in een suborganisatie bewerken" width="375"><figcaption></figcaption></figure>
 
 * **Instellingen van de suborganisatie bewerken:** beheerders kunnen de instellingen en eigenschappen van een suborganisatie bewerken, waaronder de naam, beschrijving of het hiërarchische niveau binnen het systeem.
 * **Gebruikersgegevens bewerken:** beheerders kunnen de gegevens van afzonderlijke gebruikers binnen een suborganisatie bewerken, bijvoorbeeld om hun toegangsrechten aan te passen of hun contactgegevens bij te werken.

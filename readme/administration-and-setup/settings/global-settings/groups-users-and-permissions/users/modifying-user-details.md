@@ -1,6 +1,6 @@
 # Modifying User Details
 
-<figure><img src="../../../../../.gitbook/assets/docbits_user_settings_menu.png" alt="Docbits User Settings Menu"><figcaption><p>User Settings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u001-nl.png" alt="Gebruikersbeheer met afgeschermde persoonsgegevens."><figcaption><p>Gebruikersbeheer met afgeschermde persoonsgegevens.</p></figcaption></figure>
 
 * **Logging in as an administrator:** Log in with your administrator privileges.
 * **Accessing user management:** Navigate to user settings where you can edit existing users.
@@ -14,7 +14,7 @@
     * Email address
     * User role or permission level
 
-    <figure><img src="../../../../../.gitbook/assets/docbits_user_role_edit.png" alt="Docbits User Role Edit" width="300"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/prior-u002-nl.png" alt="Bewerkformulier voor een gebruiker; waarden zijn afgeschermd."><figcaption><p>Bewerkformulier voor een gebruiker; waarden zijn afgeschermd.</p></figcaption></figure>
 * **Saving Changes:** Review any changes you made and click Save to save the new user details.
 
 <figure><img src="../../../../../.gitbook/assets/docbits_save_user_changes.png" alt="Docbits Save User Changes"><figcaption></figcaption></figure>

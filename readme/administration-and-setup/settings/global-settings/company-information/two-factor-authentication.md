@@ -14,7 +14,7 @@ Deze instelling bevindt zich in **Instellingen → Global Settings → Bedrijfsi
 2. Open de sectie **Twee-factor-authenticatie**.
 3. Schakel **Twee-factor-authenticatie vereisen voor alle leden** in en klik op **Opslaan**.
 
-<figure><img src="../../../../.gitbook/assets/mfa-admin-requirement.png" alt="The organisation MFA requirement toggle and adoption report"><figcaption><p>Schakel de verplichting voor alle leden in en volg de acceptatie hieronder.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-t001-nl.png" alt="Vereiste voor tweefactorauthenticatie binnen de organisatie. Het product gebruikt Wachtwoord bij de passkey-teller; deze teller gaat over geregistreerde passkeys."><figcaption><p>Vereiste voor tweefactorauthenticatie binnen de organisatie. Het product gebruikt Wachtwoord bij de passkey-teller; deze teller gaat over geregistreerde passkeys.</p></figcaption></figure>
 
 Na het opslaan wordt de wijziging binnen een minuut van kracht. Vanaf dan:
 

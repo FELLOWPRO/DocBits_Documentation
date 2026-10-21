@@ -16,7 +16,7 @@ Deze handleiding is opgebouwd zoals het zoeken zelf:
 > waarde uit de lijst — Snel zoeken stelt de query voor u samen. De onderstaande voorbeelden
 > tonen ook de getypte vorm, zodat u ze direct kunt kopiëren.
 
-<figure><img src="../../../.gitbook/assets/quick_search_01_entry.png" alt="De zoekbalk Snel zoeken bovenaan het dashboard"><figcaption><p>De zoekbalk Snel zoeken bovenaan het dashboard.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_01_entry-nl.png" alt="Snelzoeken in het Nederlandstalige dashboard."><figcaption><p>Snelzoeken in het Nederlandstalige dashboard.</p></figcaption></figure>
 
 ---
 
@@ -45,10 +45,10 @@ Meerdere chips samen worden standaard gelezen als **AND**.
 
 Aan het rechteruiteinde van de balk:
 
-- **ⓘ Help** — opent de ingebouwde referentie **Dashboard Search — Fields & Syntax**
+- **ⓘ Help** — opent de ingebouwde referentie **Zoeken in het dashboard — Velden en syntaxis**
   met alle velden, operatoren en sneltoetsen die in uw werkruimte beschikbaar zijn.
 - **Filters (tune)** — een snel paneel voor de gangbare filters Status / User / Restart,
-  met **Clear filters** en **Apply**.
+  met **Filters wissen** en **Toepassen**.
 - **Indexring** — een kleine voortgangsring die toont hoeveel van uw fulltext-index
   is opgebouwd (alleen zichtbaar wanneer fulltext-zoeken is ingeschakeld).
 
@@ -89,7 +89,7 @@ Invoice.xml   iNVoice.xml   iNvoiCE.edi   …
 Het komt **niet** overeen met `XYZ_Invoice.pdf` (daar staat "invoice" in het midden — gebruik
 daarvoor `:`).
 
-<figure><img src="../../../.gitbook/assets/quick_search_02_filename_starts.png" alt="filename=invoice komt alleen overeen met namen die met invoice beginnen, in elke schrijfwijze"><figcaption><p><code>filename=invoice</code> — alleen namen die <strong>beginnen met</strong> "invoice", in elke schrijfwijze met hoofdletters (<code>Invoice.pdf</code>, <code>iNVoice.pdf</code>, <code>INVOICE_2026.pdf</code> … komen allemaal overeen). Vergelijk met <code>:</code> hieronder.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u028-nl.png" alt="Een query op bestandsnaam invoeren."><figcaption><p>Een query op bestandsnaam invoeren.</p></figcaption></figure>
 
 #### `:` → bevat (overal)
 
@@ -100,7 +100,7 @@ filename:invoice
 Gebruik `:` om het woord **overal** in de naam te matchen — `2026_Invoice.pdf`,
 `vietnam_einvoice_sample.xml`, `scan_invoice_copy.pdf`.
 
-<figure><img src="../../../.gitbook/assets/quick_search_03_filename_contains.png" alt="filename:invoice komt overeen met het woord overal in de naam"><figcaption><p><code>filename:invoice</code> — komt overeen met het woord op elke plaats in de documentnaam.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_03_filename_contains-nl.png" alt="Een deel van de bestandsnaam zoeken: filename:invoice."><figcaption><p>Een deel van de bestandsnaam zoeken: filename:invoice.</p></figcaption></figure>
 
 #### `="…"` → begint *of* eindigt met
 
@@ -124,7 +124,7 @@ status=ready_for_validation
 Status is een vaste lijst, dus `=` is een **exacte** match en de balk biedt een
 waardekiezer zodra u `status=` typt.
 
-<figure><img src="../../../.gitbook/assets/quick_search_05_status.png" alt="Filteren op documentstatus"><figcaption><p><code>status=ready_for_validation</code> — exacte match op een veld met een vaste lijst.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_05_status-nl.png" alt="Een filter op de technische status ready_for_validation invoeren."><figcaption><p>Een filter op de technische status ready_for_validation invoeren.</p></figcaption></figure>
 
 ### Documenten op datum vinden
 
@@ -135,7 +135,7 @@ created_on>2026-05-25
 Gebruik `>`, `<`, `>=`, `<=` voor datumbereiken. U kunt ook **relatieve** datums gebruiken:
 `today()`, `today()-7` (laatste 7 dagen), `today()+30` (komende 30 dagen).
 
-<figure><img src="../../../.gitbook/assets/quick_search_06_date.png" alt="Filteren op aanmaakdatum"><figcaption><p><code>created_on&#62;2026-05-25</code> — documenten die na een datum zijn aangemaakt.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_06_date-nl.png" alt="Een zoekopdracht voor documenten na 25 mei 2026 invoeren."><figcaption><p>Een zoekopdracht voor documenten na 25 mei 2026 invoeren.</p></figcaption></figure>
 
 ### Documenten op factuursubtype vinden
 
@@ -143,7 +143,7 @@ Gebruik `>`, `<`, `>=`, `<=` voor datumbereiken. U kunt ook **relatieve** datums
 invoice_sub_type="Cost Invoice"
 ```
 
-Het factuursubtype is een vaste lijst (bijvoorbeeld **Cost Invoice** of **Purchase
+Het factuursubtype is een vaste lijst (bijvoorbeeld **Kostenfactuur** of **Purchase
 Invoice**), dus `=` is een **exacte** match en de balk biedt een waardekiezer zodra
 u `invoice_sub_type=` typt. Gebruik `invoice_sub_type!="Cost Invoice"` voor
 alles behalve dat subtype.
@@ -164,10 +164,10 @@ matchregels zijn precies dezelfde als voor standaardtekstvelden
 supplier_name=Test
 ```
 
-Begint met, op de geëxtraheerde leveranciersnaam. Gebruik `supplier_name:fuji` om overal te matchen,
-of `supplier_name:"Ruiz Foods"` om een waarde met spaties tussen aanhalingstekens te zetten.
+Begint met, op de geëxtraheerde leveranciersnaam. Gebruik `supplier_name:Example` om overal te matchen,
+of `supplier_name:"Example"` om een waarde met spaties tussen aanhalingstekens te zetten.
 
-<figure><img src="../../../.gitbook/assets/quick_search_09_supplier.png" alt="Zoeken op leveranciersnaam"><figcaption><p><code>supplier_name=Test</code> — de leverancier van elk resultaat begint met "Test".</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_09_supplier-nl.png" alt="Voorbeeld van een leveranciersquery: supplier_name=Test."><figcaption><p>Voorbeeld van een leveranciersquery: supplier_name=Test.</p></figcaption></figure>
 
 ### Documenten op inkooporder vinden
 
@@ -177,7 +177,7 @@ purchase_order=PO
 
 Begint met, op het geëxtraheerde inkoopordernummer — ideaal voor een PO-prefix.
 
-<figure><img src="../../../.gitbook/assets/quick_search_10_purchase_order.png" alt="Zoeken op inkooporder"><figcaption><p><code>purchase_order=PO</code> — documenten waarvan het PO-nummer begint met "PO".</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_10_purchase_order-nl.png" alt="Voorbeeld van een inkooporderquery: purchase_order=PO."><figcaption><p>Voorbeeld van een inkooporderquery: purchase_order=PO.</p></figcaption></figure>
 
 ### Documenten op bedrag vinden
 
@@ -187,7 +187,7 @@ total_amount>5000
 
 Gebruik `>`, `<`, `>=`, `<=` of `between 100 and 500` voor een bereik.
 
-<figure><img src="../../../.gitbook/assets/quick_search_07_amount.png" alt="Filteren op totaalbedrag"><figcaption><p><code>total_amount&#62;5000</code> — facturen boven 5.000.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_07_amount-nl.png" alt="Een filter op totaalbedragen boven 5000 invoeren."><figcaption><p>Een filter op totaalbedragen boven 5000 invoeren.</p></figcaption></figure>
 
 Voor een venster gebruikt u `between`:
 
@@ -197,7 +197,7 @@ total_amount between 1000 and 5000
 
 Dit is een verkorte schrijfwijze van `total_amount>=1000 AND total_amount<=5000`.
 
-<figure><img src="../../../.gitbook/assets/quick_search_14_between.png" alt="Bedragvenster met between"><figcaption><p><code>total_amount between 1000 and 5000</code> — elk resultaat valt binnen het venster.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_14_between-nl.png" alt="Een query op bedragen tussen 1000 en 5000 invoeren."><figcaption><p>Een query op bedragen tussen 1000 en 5000 invoeren.</p></figcaption></figure>
 
 ### Vinden wat ontbreekt
 
@@ -208,7 +208,7 @@ supplier_name=""
 `=""` betekent "dit veld is **niet ingevuld**"; `supplier_name!=""` betekent "heeft
 een leverancier".
 
-<figure><img src="../../../.gitbook/assets/quick_search_12_empty.png" alt="Documenten zonder leverancier vinden"><figcaption><p><code>supplier_name=""</code> — documenten die nog geen leverancier hebben.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_12_empty-nl.png" alt="Een filter op een lege leveranciersnaam invoeren."><figcaption><p>Een filter op een lege leveranciersnaam invoeren.</p></figcaption></figure>
 
 Dezelfde controle werkt op elk veld — bijvoorbeeld documenten waarbij nog
 een AP-toewijzingscode ontbreekt:
@@ -217,7 +217,7 @@ een AP-toewijzingscode ontbreekt:
 ap_assignment_code=""
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_15_ap_empty.png" alt="Documenten zonder AP-toewijzingscode"><figcaption><p><code>ap_assignment_code=""</code> — documenten die geen AP-toewijzingscode hebben. Gebruik <code>ap_assignment_code!=""</code> voor documenten die er wel een hebben.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_15_ap_empty-nl.png" alt="Zoeken naar documenten zonder AP-toewijzing."><figcaption><p>Zoeken naar documenten zonder AP-toewijzing.</p></figcaption></figure>
 
 ---
 
@@ -229,20 +229,20 @@ is een sneltoets voor een query die u ook zelf kunt typen:
 
 | Slim filter | Vindt | Gelijk aan typen van |
 |-------------|-------|----------------------|
-| ⚠️ **Overdue** | Vervaldatum verstreken | `invoice_due_date<today()` |
-| 🕐 **Due soon** | Binnen de komende 7 dagen | `invoice_due_date<=today()+7` |
-| 👤 **Assigned to me** | Items die op uw actie wachten | `assigned_to=<u>` |
-| 📅 **Today's inbox** | Vandaag geïmporteerd | `imported_on>=today()` |
-| 📋 **Pending validation** | Klaar om te valideren | `status=ready_for_validation` |
-| 🧾 **Electronic documents** | E-facturen (XML, ZUGFeRD, EDI) | `is_edoc=true` |
-| ✅ **Full PO match** | Volledig afgestemd op een inkooporder | `po_match_status=full_matched` |
-| ➗ **Partial PO match** | Gedeeltelijk afgestemd op een inkooporder | `po_match_status=partial_matched` |
-| 📉 **Under PO match** | Hoeveelheid of eenheidsprijs onder de inkooporder | `po_match_status=under_matched` |
+| ⚠️ **Verlopen** | Vervaldatum verstreken | `invoice_due_date<today()` |
+| 🕐 **Binnenkort beschikbaar** | Binnen de komende 7 dagen | `invoice_due_date<=today()+7` |
+| 👤 **Aan mij toegewezen** | Items die op uw actie wachten | `assigned_to=<u>` |
+| 📅 **De inbox van vandaag** | Vandaag geïmporteerd | `imported_on>=today()` |
+| 📋 **In afwachting van validatie** | Klaar om te valideren | `status=ready_for_validation` |
+| 🧾 **Elektronische documenten** | E-facturen (XML, ZUGFeRD, EDI) | `is_edoc=true` |
+| ✅ **Volledige PO-match** | Volledig afgestemd op een inkooporder | `po_match_status=full_matched` |
+| ➗ **Gedeeltelijke PO-match** | Gedeeltelijk afgestemd op een inkooporder | `po_match_status=partial_matched` |
+| 📉 **Onder PO-match** | Hoeveelheid of eenheidsprijs onder de inkooporder | `po_match_status=under_matched` |
 
 De drie **PO match**-filters en de fulltext-velden vereisen dat fulltext-zoeken
 is ingeschakeld voor uw organisatie.
 
-<figure><img src="../../../.gitbook/assets/quick_search_11_smart_filters.png" alt="Het dropdownpaneel met Slimme filters"><figcaption><p>De Slimme filters bovenaan het dropdownmenu van Snel zoeken — met één klik past u het filter toe (Overdue, Due soon, Assigned to me, Today's inbox, Pending validation, Electronic documents, Full / Partial / Under PO match).</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u030-nl.png" alt="Hulp bij query&#x27;s en filters voor snelzoeken."><figcaption><p>Hulp bij query&#x27;s en filters voor snelzoeken.</p></figcaption></figure>
 
 ---
 
@@ -257,10 +257,10 @@ group by supplier_name
 ```
 
 De lijst toont dan inklapbare **groepskoppen**, elk met de naam van de groep en
-een **aantal** (bijv. *Ruiz Foods (12)*). Klik op een kop om die groep uit of in te klappen.
+een **aantal** (bijv. *Example (12)*). Klik op een kop om die groep uit of in te klappen.
 Voor datumvelden kunt u groeperen op **dag, week of maand**.
 
-<figure><img src="../../../.gitbook/assets/quick_search_16_grouping.png" alt="Resultaten gegroepeerd op leverancier met inklapbare koppen"><figcaption><p><code>group by supplier_name</code> — resultaten klappen samen tot één uitklapbare kop per leverancier.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u029-nl.png" alt="Een query met groepering op leverancier invoeren."><figcaption><p>Een query met groepering op leverancier invoeren.</p></figcaption></figure>
 
 Groeperen combineert met elk filter — `status=ready_for_validation group by
 supplier_name` groepeert alleen de overeenkomende documenten. Als u in een groep klikt, **zoomt** u in:
@@ -316,198 +316,145 @@ status=ready_for_validation AND supplier_name=Test
 (status=error OR status=failed) AND created_on>today()-1
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_13_combined.png" alt="Voorwaarden combineren met AND"><figcaption><p><code>status=ready_for_validation AND supplier_name=Test</code> — twee voorwaarden gecombineerd.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_13_combined-nl.png" alt="Status- en leveranciersvoorwaarden met AND verbinden."><figcaption><p>Status- en leveranciersvoorwaarden met AND verbinden.</p></figcaption></figure>
 
-### Sneltoetsen
+### Queryvoorbeelden
 
-Kortere schrijfwijzen voor dezelfde queries — gebruik wat u het prettigst leest:
+De afbeeldingen tonen ingevoerde query's in de Nederlandstalige interface. Documentgegevens zijn afgeschermd. Een afbeelding van de filterbalk bewijst geen exact aantal resultaten.
 
-| Sneltoets | Gelijk aan | Beschrijving |
-|-----------|------------|--------------|
-| `total_amount gt 5000` | `total_amount>5000` | Woordaliassen voor vergelijkingsoperatoren (`gt`/`gte`/`lt`/`lte`/`eq`/`ne`) |
-| `due_date > today` | `due_date>today()` | Kale `today` / `yesterday` / `tomorrow` |
-| `imported_on this_week` | `imported_on>=today()-7 AND imported_on<=today()` | Relatieve perioden (`this_week`, `last_week`, `this_month`, …) |
-| `ap_assignment_code is empty` | `ap_assignment_code=""` | Of een veld een waarde heeft |
-| `status:open` | `status=ready_for_validation` | Leesbaar statuslabel (`open`/`closed`/`failed`/`done`) |
-| `total_amount not between 100, 200` | `total_amount<100 OR total_amount>200` | Waarde buiten een venster |
-| `status in (finished, error)` | `status=finished OR status=error` | Elke waarde uit een lijst matchen |
-| `not status=finished` | `status!=finished` | Elk predicaat negeren |
-| `filename contains rechnung` | `filename:rechnung` | Tekstmatch (`contains`/`starts_with`/`ends_with`) |
-| `total_amount > 5k` | `total_amount>5000` | Bedragsuffix `k` (×1 000), `M` (×1 000 000) |
-| `overdue` | `invoice_due_date<today() AND status!=finished` | Onbetaalde facturen na de vervaldatum |
-| `#INV-1234` | `invoice_id:INV-1234` | Twitter-achtig prefix voor factuur-ID |
-| `@User` | `assigned_to:User` | Twitter-achtig prefix voor de toegewezen gebruiker |
-| `$5000+` | `total_amount>=5000` | `$`-prefix voor bedragdrempels |
-
-### Galerij met sneltoetsquery's en resultaten
-
-Deze voorbeelden tonen elk sneltoetspatroon met de query die u typt en het resultaat dat het dashboard toont. De eerste groep gebruikt standaardvelden en werkt ook wanneer fulltext-zoeken niet is ingeschakeld. De tweede groep gebruikt velden die alleen met fulltext beschikbaar zijn, zoals bedrag of vervaldatum van de factuur.
-
-#### Werkt zonder fulltext
-
-##### Operatoraliassen
-
-- Query: `created_on gt 2026-05-25`
-- Gelijk aan: `created_on>2026-05-25`
-- Resultaat: Filtert op Created na 25 mei 2026.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_01_operator_aliases.png" alt="Quick Search-resultaat voor created_on gt 2026-05-25"><figcaption><p><code>created_on gt 2026-05-25</code> - Filtert op Created na 25 mei 2026.</p></figcaption></figure>
-
-##### Kale datumwoorden
-
-- Query: `created_on < today`
-- Gelijk aan: `created_on<today()`
-- Resultaat: Breidt het kale woord today uit tot today().
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_02_bare_date.png" alt="Quick Search-resultaat voor created_on &lt; today"><figcaption><p><code>created_on &lt; today</code> - Breidt het kale woord today uit tot today().</p></figcaption></figure>
-
-##### Relatieve periode
-
-- Query: `created_on this_month`
-- Gelijk aan: `created_on>=first day of this month AND created_on<=last day of this month`
-- Resultaat: Breidt this_month uit tot een datumvenster.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_03_period.png" alt="Quick Search-resultaat voor created_on this_month"><figcaption><p><code>created_on this_month</code> - Breidt this_month uit tot een datumvenster.</p></figcaption></figure>
-
-##### Woorden voor leeg of ingevuld
-
-- Query: `assigned_to is empty`
-- Gelijk aan: `assigned_to=""`
-- Resultaat: Vindt documenten zonder toegewezen gebruiker.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_04_presence.png" alt="Quick Search-resultaat voor assigned_to is empty"><figcaption><p><code>assigned_to is empty</code> - Vindt documenten zonder toegewezen gebruiker.</p></figcaption></figure>
-
-##### Leesbare status
-
-- Query: `status:open`
-- Gelijk aan: `status=ready_for_validation`
-- Resultaat: Koppelt open aan de validatiestatus.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_05_status_open.png" alt="Quick Search-resultaat voor status:open"><figcaption><p><code>status:open</code> - Koppelt open aan de validatiestatus.</p></figcaption></figure>
-
-##### Not between
-
-- Query: `created_on not between 2026-06-01, 2026-06-15`
-- Gelijk aan: `(created_on<2026-06-01 OR created_on>2026-06-15)`
-- Resultaat: Vindt waarden buiten een datumvenster.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_06_not_between.png" alt="Quick Search-resultaat voor created_on not between 2026-06-01, 2026-06-15"><figcaption><p><code>created_on not between 2026-06-01, 2026-06-15</code> - Vindt waarden buiten een datumvenster.</p></figcaption></figure>
-
-##### In-lijst
-
-- Query: `status in (ready_for_validation, exported)`
-- Gelijk aan: `status=ready_for_validation OR status=exported`
-- Resultaat: Matcht elke vermelde status.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_07_in_list.png" alt="Quick Search-resultaat voor status in (ready_for_validation, exported)"><figcaption><p><code>status in (ready_for_validation, exported)</code> - Matcht elke vermelde status.</p></figcaption></figure>
-
-##### Negatieprefix
-
-- Query: `not status=finished`
-- Gelijk aan: `status!=finished`
-- Resultaat: Keert het predicaat voor de status finished om.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_08_negation.png" alt="Quick Search-resultaat voor not status=finished"><figcaption><p><code>not status=finished</code> - Keert het predicaat voor de status finished om.</p></figcaption></figure>
-
-##### Tekst bevat
-
-- Query: `filename contains E2E`
-- Gelijk aan: `filename:E2E`
-- Resultaat: Gebruikt contains als zoekopdracht op een deel van de bestandsnaam.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_09_contains.png" alt="Quick Search-resultaat voor filename contains E2E"><figcaption><p><code>filename contains E2E</code> - Gebruikt contains als zoekopdracht op een deel van de bestandsnaam.</p></figcaption></figure>
-
-##### Factuurprefix
-
-- Query: `#INV-1234`
-- Gelijk aan: `invoice_id:INV-1234`
-- Resultaat: Koppelt #... aan een zoekopdracht op factuur-ID.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_12_invoice_prefix.png" alt="Quick Search-resultaat voor #INV-1234"><figcaption><p><code>#INV-1234</code> - Koppelt #... aan een zoekopdracht op factuur-ID.</p></figcaption></figure>
-
-##### Prefix voor toegewezen gebruiker
-
-- Query: `@Daniel`
-- Gelijk aan: `assigned_to:"Daniel"`
-- Resultaat: Koppelt @... aan een zoekopdracht op de naam van de toegewezen gebruiker.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_13_assignee_prefix.png" alt="Quick Search-resultaat voor @Daniel"><figcaption><p><code>@Daniel</code> - Koppelt @... aan een zoekopdracht op de naam van de toegewezen gebruiker.</p></figcaption></figure>
-
-#### Vereist fulltext-zoeken
-
-Als u dezelfde sneltoets met een veld gebruikt dat alleen via fulltext beschikbaar is, vereist de query nog steeds fulltext. `ap_assignment_code is empty` gebruikt bijvoorbeeld dezelfde sneltoets voor leeg/ingevuld als `assigned_to is empty`, maar het veld voor de AP-toewijzing is alleen via fulltext beschikbaar.
-
-##### Bedragsuffix
-
-- Query: `total_amount > 5k`
-- Gelijk aan: `total_amount>5000`
-- Resultaat: Breidt k uit tot duizendtallen op een bedragveld.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_10_currency_suffix.png" alt="Quick Search-resultaat voor total_amount &gt; 5k"><figcaption><p><code>total_amount &gt; 5k</code> - Breidt k uit tot duizendtallen op een bedragveld.</p></figcaption></figure>
-
-##### Sneltoets overdue
-
-- Query: `overdue`
-- Gelijk aan: `invoice_due_date<today() AND status!=finished`
-- Resultaat: Vindt niet-afgeronde facturen waarvan de vervaldatum is verstreken.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_11_overdue.png" alt="Quick Search-resultaat voor overdue"><figcaption><p><code>overdue</code> - Vindt niet-afgeronde facturen waarvan de vervaldatum is verstreken.</p></figcaption></figure>
-
-##### Bedragprefix
-
-- Query: `$5000+`
-- Gelijk aan: `total_amount>=5000`
-- Resultaat: Koppelt $...+ aan een bedragdrempel.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_14_amount_prefix.png" alt="Quick Search-resultaat voor $5000+"><figcaption><p><code>$5000+</code> - Koppelt $...+ aan een bedragdrempel.</p></figcaption></figure>
-
----
-
-## Deel 4 — Geavanceerde zoekmodi
-
-Naast zoeken op velden doorzoeken drie prefixmodi de inhoud van het document zelf.
-
-### Vector- (semantisch) zoeken — `vector:`
-
-Matcht op **betekenis**, niet op exacte tekst — handig voor "vind documenten over XYZ".
-Vereist de Vector-module; werkt op de documentinhoud.
+#### Vergelijkingsoperator in tekstvorm
 
 ```
-vector: invoices about office supplies
-vector: shipping delays with Hamburg port
+created_on gt 2026-05-25
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_17_vector.png" alt="Resultaten van semantisch vectorzoeken"><figcaption><p><code>vector: supplier invoice</code> — semantisch verwante documenten, ook zonder precies deze woorden.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_01_operator_aliases-nl.png" alt="De vergelijkingsoperator gt in een datumquery."><figcaption><p>De vergelijkingsoperator gt in een datumquery.</p></figcaption></figure>
 
-### Zoeken in OCR-tekst — `ocr:`
-
-Doorzoekt de **paginatekst** die de OCR-engine heeft geëxtraheerd — niet alleen de
-gestructureerde kolommen. Handig wanneer de waarde die u zich herinnert in de hoofdtekst van het document staat.
+#### Vóór vandaag
 
 ```
-ocr: Versandkosten
-ocr: "purchase order PO-12345"
-ocr: Hamburg AND doc_type=INVOICE
-ocr: IBAN
+created_on < today()
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_18_ocr.png" alt="Resultaten van zoeken in OCR-tekst"><figcaption><p><code>ocr: demo invoice</code> — komt overeen met tekst die ergens op de documentpagina's staat.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_02_bare_date-nl.png" alt="created_on met today() vergelijken."><figcaption><p>created_on met today() vergelijken.</p></figcaption></figure>
 
-### Zoeken in natuurlijke taal (AI) — `ai:`
-
-Beschrijf in gewone taal wat u zoekt; de AI leest uw zin en haalt er filters uit
-(leverancier, datums, bedragen) die in een gestructureerde query worden gezet. In tegenstelling tot Vector
-**bouwt** dit een query **op** in plaats van vergelijkbare documenten te zoeken.
+#### Vanaf een aanmaakdatum
 
 ```
-ai: invoices from Ruiz over 1000 last quarter
-ai: overdue invoices waiting on approval
-ai: shipping documents from Hamburg last month
+created_on >= 2026-06-01
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_19_ai.png" alt="Resultaten van zoeken in natuurlijke taal met AI"><figcaption><p><code>ai: invoices over 1000 from this year</code> — de AI zet de zin automatisch om in filters.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_03_period-nl.png" alt="Een aanmaakdatum vanaf 1 juni 2026 invoeren."><figcaption><p>Een aanmaakdatum vanaf 1 juni 2026 invoeren.</p></figcaption></figure>
 
----
+#### Zonder toegewezen verantwoordelijke
+
+```
+assigned_to is empty
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_04_presence-nl.png" alt="Zoeken naar documenten zonder toegewezen verantwoordelijke."><figcaption><p>Zoeken naar documenten zonder toegewezen verantwoordelijke.</p></figcaption></figure>
+
+#### Statusfilter
+
+```
+status=ready_for_validation
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_05_status_open-nl.png" alt="Voorbeeld van een statusfilter bij snelzoeken."><figcaption><p>Voorbeeld van een statusfilter bij snelzoeken.</p></figcaption></figure>
+
+#### Buiten een periode
+
+```
+created_on not between 2026-06-01 and 2026-06-15
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_06_not_between-nl.png" alt="Een zoekopdracht buiten een datumbereik invoeren."><figcaption><p>Een zoekopdracht buiten een datumbereik invoeren.</p></figcaption></figure>
+
+#### Alternatieve statussen
+
+```
+status=ready_for_validation OR status=exported
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_07_in_list-nl.png" alt="Twee technische statussen met OR verbinden."><figcaption><p>Twee technische statussen met OR verbinden.</p></figcaption></figure>
+
+#### Een leveranciersvoorwaarde uitsluiten
+
+```
+NOT supplier_name=Test
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_08_negation-nl.png" alt="Een leveranciersvoorwaarde met NOT uitsluiten."><figcaption><p>Een leveranciersvoorwaarde met NOT uitsluiten.</p></figcaption></figure>
+
+#### Deel van de bestandsnaam
+
+```
+filename:invoice
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_09_contains-nl.png" alt="Een term in bestandsnamen zoeken."><figcaption><p>Een term in bestandsnamen zoeken.</p></figcaption></figure>
+
+#### Query op factuurnummer
+
+```
+invoice_number=INV
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_12_invoice_prefix-nl.png" alt="Voorbeeld van een query met invoice_number."><figcaption><p>Voorbeeld van een query met invoice_number.</p></figcaption></figure>
+
+#### Lege toewijzing
+
+```
+assigned_to=""
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_13_assignee_prefix-nl.png" alt="Een lege toewijzing invoeren: assigned_to=&quot;&quot;."><figcaption><p>Een lege toewijzing invoeren: assigned_to=&quot;&quot;.</p></figcaption></figure>
+
+#### Valutaquery
+
+```
+currency=EUR
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_10_currency_suffix-nl.png" alt="Een valutafilter invoeren: currency=EUR."><figcaption><p>Een valutafilter invoeren: currency=EUR.</p></figcaption></figure>
+
+#### Vervaldatum vóór vandaag
+
+```
+invoice_due_date<today()
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_11_overdue-nl.png" alt="Een vervaldatum vóór today() invoeren."><figcaption><p>Een vervaldatum vóór today() invoeren.</p></figcaption></figure>
+
+#### Bedragdrempel
+
+```
+total_amount>=1000
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_14_amount_prefix-nl.png" alt="Een totaalbedrag van minstens 1000 invoeren."><figcaption><p>Een totaalbedrag van minstens 1000 invoeren.</p></figcaption></figure>
+
+## Documentinhoud meenemen
+
+Het menu voor zoeken in inhoud bepaalt of de zoekopdracht ook documenttekst omvat. Dit staat los van technische voorvoegsels zoals vector:, ocr: en ai:.
+
+### Automatisch
+
+Zoekt eerst in de zichtbare kolommen. Zonder overeenkomsten wordt ook inhoud gebruikt als de organisatie over de vereiste functies beschikt.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_17_vector-nl.png" alt="Documentinhoud automatisch meenemen bij snelzoeken."><figcaption><p>Documentinhoud automatisch meenemen bij snelzoeken.</p></figcaption></figure>
+
+### Inhoud altijd meenemen
+
+Neemt documentinhoud expliciet mee. De bijbehorende zoekfuncties moeten beschikbaar zijn.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_18_ocr-nl.png" alt="Documentinhoud altijd meenemen bij snelzoeken."><figcaption><p>Documentinhoud altijd meenemen bij snelzoeken.</p></figcaption></figure>
+
+### Alleen zichtbare kolommen
+
+Beperkt de zoekopdracht tot de zichtbare dashboardkolommen.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_19_ai-nl.png" alt="Zoeken beperken tot zichtbare kolommen."><figcaption><p>Zoeken beperken tot zichtbare kolommen.</p></figcaption></figure>
 
 ### Recepten
 
@@ -516,7 +463,7 @@ ai: shipping documents from Hamburg last month
 | Klaar om te valideren, volledig afgestemd | `status=ready_for_validation AND po_match_status=full_matched` |
 | Deze leverancier, deze week | `supplier_name=Test AND created_on>today()-7` |
 | Achterstallige facturen met hoge waarde | `total_amount>5000 AND invoice_due_date<today()` |
-| Twee leveranciers tegelijk | `supplier_name=fuji OR supplier_name=acme` |
+| Twee leveranciers tegelijk | `supplier_name=ExampleA OR supplier_name=ExampleB` |
 | Documenten met fouten van vandaag | `(status=error OR status=failed) AND created_on>today()-1` |
 | Elektronische creditnota's | `is_edoc=true AND sub_doc_type=CREDIT_NOTE` |
 | Op prefix van het inkoopordernummer | `purchase_order=PO-2026` |

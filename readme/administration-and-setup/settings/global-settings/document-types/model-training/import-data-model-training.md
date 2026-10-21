@@ -1,5 +1,7 @@
 # Import Data: Model Training
 
+<figure><img src="../../../../../.gitbook/assets/s150-image-85-1-nl.png" alt="Trainingsgegevens importeren met bedrag- en datumformaat."><figcaption><p>Trainingsgegevens importeren met bedrag- en datumformaat.</p></figcaption></figure>
+
 Provide detailed instructions on how to import sample documents for training, including the format and document types to use.
 
 **To import sample documents for training, follow these steps:**

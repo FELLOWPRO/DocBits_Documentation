@@ -1,6 +1,6 @@
 # Regelbeheer
 
-<figure><img src="../../../../.gitbook/assets/rule_management.png" alt="Regelbeheer"><figcaption><p>Pagina Regelbeheer</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_management-nl.png" alt="Regelbeheer met afgeschermde geconfigureerde namen."><figcaption><p>Regelbeheer met afgeschermde geconfigureerde namen.</p></figcaption></figure>
 
 Met Regelbeheer maakt en beheert u op TOML gebaseerde regels voor conflictoplossing die worden gebruikt tijdens PO-matching en documentexport. Elke regelset definieert hoe DocBits omgaat met discrepanties tussen factuurgegevens en inkoopordergegevens.
 
@@ -10,11 +10,11 @@ De hoofdtabel toont alle regelconfiguraties:
 
 | Kolom | Beschrijving |
 |--------|-------------|
-| **Name** | De naam van de regelset. Items met het label **default** zijn door het systeem geleverde sjablonen. |
-| **Description** | Een samenvatting van wat de regelset afhandelt. |
-| **Last Modified By** | De gebruiker die deze regelset het laatst heeft bewerkt. |
-| **Last Modified At** | Tijdstempel van de laatste wijziging. |
-| **Actions** | Menu met drie puntjes om te bewerken, te kopiëren of te verwijderen. |
+| **Naam** | De naam van de regelset. Items met het label **standaard** zijn door het systeem geleverde sjablonen. |
+| **Beschrijving** | Een samenvatting van wat de regelset afhandelt. |
+| **Laatst gewijzigd door** | De gebruiker die deze regelset het laatst heeft bewerkt. |
+| **Laatst gewijzigd op** | Tijdstempel van de laatste wijziging. |
+| **Acties** | Menu met drie puntjes om te bewerken, te kopiëren of te verwijderen. |
 
 Klik op **+ New** om een nieuwe regelset aan te maken, of klik op een bestaande naam om de regeleditor te openen.
 
@@ -90,7 +90,6 @@ Deze operatoren bepalen hoe de werkelijke factuurwaarden worden vergeleken met d
 
 • outside tolerance (buiten tolerantie)
 
-
 ### Goedkeuringsstatus
 
 Geeft aan of een discrepantie al dan niet is goedgekeurd:
@@ -100,7 +99,6 @@ Geeft aan of een discrepantie al dan niet is goedgekeurd:
 • rejected (afgewezen)
 
 • any (elke)
-
 
 ### Actietypen
 
@@ -134,7 +132,6 @@ Definieert specifieke acties die worden uitgevoerd wanneer een discrepantie word
 
 • credit note tax line
 
-
 ### Regelvoorbeelden
 
 #### [Geval 1, 2, 3: Hoeveelheid en eenheidsprijs binnen tolerantie](transactionconfig-pro-template/case-1-2-3-quantity-and-unit-price-within-tolerance.md)
@@ -143,22 +140,17 @@ Definieert specifieke acties die worden uitgevoerd wanneer een discrepantie word
 
 • Actie: Het systeem accepteert de factuurwaarden en berekent het totaalbedrag.
 
-
-
 #### [Geval 4, 5: Hoeveelheid binnen tolerantie, eenheidsprijs buiten tolerantie (goedgekeurd)](./#case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved)
 
 • Doel: Is van toepassing wanneer de hoeveelheid binnen de tolerantie ligt, maar de eenheidsprijs buiten de tolerantie valt en is goedgekeurd.
 
 • Actie: Het systeem past de eenheidsprijs aan zodat deze overeenkomt met de PO en past eventueel noodzakelijke regelkosten toe.
 
-
-
 #### [Geval 6: Hoeveelheid binnen tolerantie, eenheidsprijs buiten negatieve tolerantie (afgewezen)](transactionconfig-pro-template/case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
 
 • Doel: Behandelt gevallen waarin de eenheidsprijs lager is dan verwacht en buiten het tolerantiebereik valt, wat tot afwijzing leidt.
 
 • Actie: Het systeem past de eenheidsprijs aan zodat deze overeenkomt met de PO, genereert een creditnota voor het verschil en past indien nodig headerkosten toe.
-
 
 ### Omgaan met kosten en belastingen
 
@@ -180,7 +172,7 @@ Definieert specifieke acties die worden uitgevoerd wanneer een discrepantie word
 
 ### Schermafbeelding 1: Interface van Regelbeheer
 
-<figure><img src="../../../../.gitbook/assets/rule_management_interface.png" alt="Interface van Regelbeheer"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_management_interface-nl.png" alt="Overzicht van regelbeheer en beschikbare acties."><figcaption><p>Overzicht van regelbeheer en beschikbare acties.</p></figcaption></figure>
 
 Deze schermafbeelding toont de interface van Regelbeheer waar beheerders alle regels voor conflictoplossing kunnen bekijken en beheren. Belangrijke elementen zijn:
 
@@ -192,7 +184,7 @@ Deze schermafbeelding toont de interface van Regelbeheer waar beheerders alle re
 
 ### Schermafbeelding 2: Gedetailleerd bewerken van een regel
 
-<figure><img src="../../../../.gitbook/assets/rule_detailed_editing.png" alt="Gedetailleerd bewerken van een regel"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_detailed_editing-nl.png" alt="TOML-regeleditor met een technisch configuratievoorbeeld."><figcaption><p>TOML-regeleditor met een technisch configuratievoorbeeld.</p></figcaption></figure>
 
 Deze schermafbeelding toont de detailweergave van een specifieke regel die wordt bewerkt. Belangrijke elementen zijn:
 

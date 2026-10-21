@@ -6,7 +6,7 @@ Sommige velden kunnen al zijn ingevuld - dit is te danken aan de zwermintelligen
 U kunt DocBits helpen om deze velden te herkennen door handmatig de juiste gegevens te identificeren.\
 **Let op:** als een veld leeg blijft, kan dit eenvoudigweg betekenen dat de informatie niet aanwezig is in het geüploade document.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_0.png)
+<figure><img src="../../../.gitbook/assets/s150-header_field_training_0-nl.png" alt="Validatie van een fictieve factuur vóór het trainen van kopvelden."><figcaption><p>Validatie van een fictieve factuur vóór het trainen van kopvelden.</p></figcaption></figure>
 
 ### Om een veld te trainen:
 
@@ -15,7 +15,7 @@ U kunt DocBits helpen om deze velden te herkennen door handmatig de juiste gegev
    * **Dubbelklik** op de relevante gegevens in het document, of
    * **Trek een selectievak** rond de gegevens met uw cursor.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_1.png)
+<figure><img src="../../../.gitbook/assets/s150-header_field_training_1-nl.png" alt="Het factuurnummer selecteren als startpunt voor training."><figcaption><p>Het factuurnummer selecteren als startpunt voor training.</p></figcaption></figure>
 
 Herhaal dit proces voor alle vereiste velden.\
 Zodra alle noodzakelijke velden zijn ingevuld, **klik op "Regels opslaan"** om de training op te slaan. Hiermee leert DocBits waar elk stuk informatie te vinden is voor vergelijkbare documenten in de toekomst.
@@ -23,3 +23,5 @@ Zodra alle noodzakelijke velden zijn ingevuld, **klik op "Regels opslaan"** om d
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_2.png)
 
 Na het opslaan is uw document klaar om te worden geëxporteerd - en de volgende keer zal DocBits automatisch de getrainde velden extraheren.
+
+Test na het bedoelde opslaan van de training andere documenten van dezelfde leverancier. Export hangt ook af van validatie en de geconfigureerde workflow.

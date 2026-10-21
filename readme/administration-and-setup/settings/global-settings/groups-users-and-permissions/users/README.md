@@ -2,7 +2,7 @@
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/nl.mp4" %}
 
-<figure><img src="../../../../../.gitbook/assets/users_settings.png" alt="Gebruikersbeheer"><figcaption><p>Pagina Gebruikersbeheer</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u046-nl.png" alt="Gebruikersweergave met afgeschermde namen en accounts."><figcaption><p>Gebruikersweergave met afgeschermde namen en accounts.</p></figcaption></figure>
 
 Op de pagina Gebruikers kunnen beheerders alle gebruikersaccounts in uw DocBits-organisatie beheren. Hier kunt u nieuwe gebruikers toevoegen, rollen toewijzen en toegang regelen.
 
@@ -15,8 +15,8 @@ De gebruikerstabel toont de volgende kolommen:
 | **Naam** | De volledige naam van de gebruiker. |
 | **E-mail** | Het e-mailadres van de gebruiker, dat wordt gebruikt om in te loggen. |
 | **Laatste aanmelding** | Datum en tijd van de meest recente aanmelding van de gebruiker. |
-| **Admin** | Selectievakje dat aangeeft of de gebruiker beheerdersrechten heeft. Admins hebben toegang tot alle instellingen en kunnen andere gebruikers beheren. |
-| **System Admin** | Selectievakje dat de enige System Admin van de organisatie aangeeft — het account dat DocBits gebruikt voor automatische acties op de achtergrond (zoals automatische imports en exports). Een System Admin heeft altijd ook Admin-rechten. Zie [Beheerdersrechten](admin-privileges.md#admin-vs-system-admin) voor het verschil tussen Admin en System Admin. |
+| **Beheerder** | Selectievakje dat aangeeft of de gebruiker beheerdersrechten heeft. Admins hebben toegang tot alle instellingen en kunnen andere gebruikers beheren. |
+| **Systeembeheerder** | Selectievakje dat de enige System Admin van de organisatie aangeeft — het account dat DocBits gebruikt voor automatische acties op de achtergrond (zoals automatische imports en exports). Een System Admin heeft altijd ook Admin-rechten. Zie [Beheerdersrechten](admin-privileges.md#admin-vs-system-admin) voor het verschil tussen Admin en System Admin. |
 | **Actief** | Selectievakje dat aangeeft of het gebruikersaccount momenteel actief is. Inactieve gebruikers kunnen niet inloggen. |
 | **Acties** | Menu met opties zoals het bewerken van gebruikersgegevens, het opnieuw instellen van wachtwoorden of het deactiveren van het account. |
 
@@ -39,4 +39,4 @@ Zie [Aanmeldingsanalyses](login-analytics.md) voor de volledige uitsplitsing.
    * **Gebruikersrol**: Wijs de juiste rol toe (Standard User, Admin of System Admin).
 3. Klik op **Opslaan** om het gebruikersaccount aan te maken. De nieuwe gebruiker ontvangt een e-mail met de inloggegevens en een koppeling om het eerste wachtwoord in te stellen op de pagina Stel een wachtwoord in. Zie [Toegang verkrijgen en inloggen](../../../../../end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md#eerste-wachtwoord-voor-door-de-beheerder-aangemaakte-accounts).
 
-> **Let op:** De rol **System Admin** kan alleen worden gekozen bij het aanmaken van een gebruiker — die kan later niet meer worden toegevoegd of verwijderd. Elke organisatie kan slechts één System Admin hebben, en bij het kiezen ervan worden automatisch ook Admin-rechten toegekend. Zie [Beheerdersrechten](admin-privileges.md#admin-vs-system-admin) om te leren wanneer u deze rol gebruikt.
+> **Let op:** De rol **Systeembeheerder** kan alleen worden gekozen bij het aanmaken van een gebruiker — die kan later niet meer worden toegevoegd of verwijderd. Elke organisatie kan slechts één System Admin hebben, en bij het kiezen ervan worden automatisch ook Admin-rechten toegekend. Zie [Beheerdersrechten](admin-privileges.md#admin-vs-system-admin) om te leren wanneer u deze rol gebruikt.

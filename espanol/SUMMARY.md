@@ -40,16 +40,6 @@
     * [Guía de diagnóstico de exportación de la API M3](overview-and-basics/faq/infor-m3-m3-integration/m3-api-export-diagnostic-guide.md)
   * [Canales PDP/PPF obligatorios – PEPPOL solo como transporte en la facturación electrónica de Francia de 2026](overview-and-basics/faq/mandatory-pdp-ppf-channels-peppol-as-transport-only-for-frances-2026-e-invoicing.md)
 
-## Seguridad <a href="#security" id="security"></a>
-
-* [Preguntas Frecuentes de Seguridad y Cumplimiento](security/security-and-compliance-faq.md)
-* [Almacenamiento seguro de credenciales](security/secure-storage-of-credentials.md)
-* [Cifrado en reposo](security/encryption-at-rest.md)
-* [Cookies y almacenamiento del navegador](security/cookies-and-browser-storage.md)
-* [Gestión de vulnerabilidades](security/vulnerability-management.md)
-* [Otros controles de seguridad](security/other-security-controls.md)
-* [Autenticación de Dos Factores (2FA)](security/two-factor-authentication.md)
-
 ## Sección de usuarios finales y socios <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [Sección de usuario final](end-user-and-partner-section/end-user-section/README.md)
@@ -902,3 +892,13 @@
 * [Conectar DocBits con Power BI](advanced-functions-and-tools/powerbi.md)
   * [Conectar a través de ClickHouse](advanced-functions-and-tools/powerbi/powerbi.md)
   * [Conectar a través de la base de datos de solo lectura](advanced-functions-and-tools/powerbi/connect-via-read-only-database.md)
+
+## Seguridad <a href="#security" id="security"></a>
+
+* [Preguntas Frecuentes de Seguridad y Cumplimiento](security/security-and-compliance-faq.md)
+* [Almacenamiento seguro de credenciales](security/secure-storage-of-credentials.md)
+* [Cifrado en reposo](security/encryption-at-rest.md)
+* [Cookies y almacenamiento del navegador](security/cookies-and-browser-storage.md)
+* [Gestión de vulnerabilidades](security/vulnerability-management.md)
+* [Otros controles de seguridad](security/other-security-controls.md)
+* [Autenticación de Dos Factores (2FA)](security/two-factor-authentication.md)

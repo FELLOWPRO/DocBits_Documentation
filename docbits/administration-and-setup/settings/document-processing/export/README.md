@@ -46,7 +46,9 @@ However, it is possible to have:
 
 To create a new export:
 
-1. Click on the **“New”** button. <figure><img src="../../../../.gitbook/assets/s150-export_create_new_button.png" alt="Unsaved new export configuration showing its basic information."><figcaption><p>Unsaved new export configuration showing its basic information.</p></figcaption></figure>
+1. Click on the **“New”** button.
+
+<figure><img src="../../../../.gitbook/assets/s150-export_create_new_button.png" alt="Unsaved new export configuration showing its basic information."><figcaption><p>Unsaved new export configuration showing its basic information.</p></figcaption></figure>
 2. Select the **Export Type** you want to configure (e.g., Infor, IDM, SFTP).
 3. Fill in the required fields based on the export type.
 4. Save the configuration.

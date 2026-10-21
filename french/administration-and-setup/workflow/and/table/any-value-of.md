@@ -1,6 +1,6 @@
-# Any Value of
+# Toute valeur de
 
-<figure><img src="../../../../.gitbook/assets/image (46).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6bbd1a63a025-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -9,7 +9,7 @@ Cette carte DocBits sert à valider si une quelconque valeur d'une colonne spéc
 ## **Fonctionnalité :**
 
 * **Validation par motif regex :** cette carte vérifie si une quelconque valeur d'une colonne donnée d'un tableau correspond au motif d'expression régulière fourni. La carte se déclenche et permet la poursuite du workflow si au moins une entrée de la colonne satisfait la condition.
-* **Operator :** les utilisateurs définissent la colonne et spécifient le motif regex. La condition disponible inclut :
+* **Opérateur :** les utilisateurs définissent la colonne et spécifient le motif regex. La condition disponible inclut :
   * **Matches Regex Pattern :** vérifie qu'au moins une valeur de la colonne spécifiée correspond au motif regex.
 * **Sélection de la table et de la colonne :** les utilisateurs spécifient la table et la colonne qu'ils souhaitent vérifier pour des correspondances au motif regex.
 

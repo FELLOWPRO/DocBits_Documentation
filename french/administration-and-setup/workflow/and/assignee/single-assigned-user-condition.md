@@ -1,6 +1,6 @@
-# Single Assigned User Condition
+# Condition d'utilisateur attribué unique
 
-<figure><img src="../../../../.gitbook/assets/userlmn_77e991cee96598023f9a3ac7ad230e50 (1).png" alt="" width="552"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-901c3b37bac4-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 **Objectif**
 
@@ -8,13 +8,13 @@ Cette carte de workflow facilite les opérations fondées sur l'attribution d'un
 
 **Composants de la carte**
 
-1. **Operator**
-   * **Description** : spécifie la logique à appliquer à l'attribution d'utilisateur.
-   * **Options** :
+1. **Opérateur**
+   * **Descriptif** : spécifie la logique à appliquer à l'attribution d'utilisateur.
+   * **Possibilités** :
      * **IS** : déclenche l'opération si l'utilisateur assigné au document ou à la tâche correspond à l'utilisateur spécifié.
-     * **IS NOT** : déclenche l'opération si l'utilisateur assigné ne correspond pas à l'utilisateur spécifié.
-2. **User**
-   * **Description** : permet de sélectionner un seul utilisateur auquel l'utilisateur assigné sera comparé.
+     * **N'EST PAS** : déclenche l'opération si l'utilisateur assigné ne correspond pas à l'utilisateur spécifié.
+2. **Utilisateur**
+   * **Descriptif** : permet de sélectionner un seul utilisateur auquel l'utilisateur assigné sera comparé.
    * **Détail** : cela implique un simple menu déroulant ou un champ d'autocomplétion où un seul utilisateur peut être sélectionné à la fois.
 
 **Fonctionnalité**
@@ -22,7 +22,7 @@ Cette carte de workflow facilite les opérations fondées sur l'attribution d'un
 * **Identification de l'attribution d'utilisateur** : identifie l'utilisateur actuellement assigné à une tâche ou à un document spécifique.
 * **Évaluation de la condition** :
   * Pour l'opérateur **IS**, la carte vérifie si l'utilisateur assigné est le même que l'utilisateur sélectionné.
-  * Pour l'opérateur **IS NOT**, elle vérifie que l'utilisateur assigné est différent de l'utilisateur sélectionné.
+  * Pour l'opérateur **N'EST PAS**, elle vérifie que l'utilisateur assigné est différent de l'utilisateur sélectionné.
 * **Exécution de l'action** :
   * **Condition vraie** : si l'attribution satisfait la condition définie (IS ou IS NOT), elle déclenche des actions prédéfinies, qui peuvent inclure la poursuite des approbations, le lancement de tâches supplémentaires, l'envoi de notifications ou d'autres workflows associés.
   * **Condition fausse** : si la condition n'est pas remplie, le workflow ne se poursuit pas.
@@ -36,3 +36,15 @@ Cette carte de workflow facilite les opérations fondées sur l'attribution d'un
 #### Conclusion
 
 La carte de workflow « Single Assigned User Condition » est essentielle pour une gestion précise et propre à l'utilisateur des documents et des tâches au sein d'un système ERP. Elle simplifie les workflows en se concentrant sur les attributions d'utilisateurs individuels, garantissant ainsi que les actions ne sont exécutées que lorsque cela est approprié, en fonction du rôle et des responsabilités de l'utilisateur. Documenter clairement cette carte aidera les utilisateurs à comprendre son application, leur permettant de la mettre en œuvre et de la gérer efficacement dans leurs opérations quotidiennes. Cette documentation garantit que tous les utilisateurs potentiels peuvent facilement saisir l'objectif de la carte et l'intégrer en toute fluidité dans leurs workflows.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemple pratique
+
+**Quand utiliser :** Gérez la file d'attente d'un réviseur particulier.
+
+**Configuration :** Sélectionnez l'opérateur égal et `Demo Reviewer A`.
+
+**Résultat attendu et contre-exemple :** Un document attribué à cet utilisateur réussit ; un autre utilisateur affecté échoue.
+
+Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.

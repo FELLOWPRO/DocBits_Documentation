@@ -1,19 +1,21 @@
-# Cards
+# Cartes
 
-Les cartes sont les blocs de construction de chaque workflow. Vous les combinez dans les groupes **When / And / Then** pour décrire quand un workflow s'exécute et ce qu'il fait. Cette section présente les cartes disponibles et le rôle de chacune.
+Les cartes sont les éléments constitutifs de chaque flux de travail. Vous les combinez dans les groupes **Quand / Et / Alors** pour décrire quand un workflow s'exécute et ce qu'il fait. Cette section explique les cartes disponibles et ce que chacune fait.
 
-<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Bibliothèque Add Card regroupée par catégorie"><figcaption><p>La bibliothèque <strong>Add Card</strong> — les cartes sont regroupées par catégorie.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## Groupes de cartes
 
-- **When** — les cartes de déclenchement qui démarrent un workflow (par ex. document type, document type one of).
-- **And** — les cartes de condition qui doivent également être vraies avant l'exécution des actions. Elles incluent les conditions *Compare with Purchase Order* (rapprochement de bons de commande), les comparaisons *Document Field*, *Date & Time*, *Logic*, *Status*, *Table* et *Assignee*.
-- **Then** — les cartes d'action qui effectuent le travail : définir des champs, approuver/rejeter, changer de statut, exporter, créer des tâches, assigner des documents, manipuler des tableaux et exécuter des actions (Call API, Send HTTPS request, Run Workflow, calculs par IA).
+* **Quand** — les cartes de déclenchement qui démarrent un flux de travail (par exemple, type de document, type de document l'un des).
+* **Et** — cartes de condition qui doivent également être vraies avant l'exécution des actions. Ceux-ci incluent _Comparer avec le bon de commande_ (correspondance de bon de commande), les comparaisons de _Document Field_, _Date & Time_, _Logic_, _Status_, _Table_ et _Assignee_ conditions.
+* **Alors** — cartes d'action qui font le travail : définir les champs, approuver/rejeter, modifier le statut, exporter, créer des tâches, attribuer des documents, manipuler des tables et exécuter des actions (Appeler l'API, Envoyer une requête HTTPS, Exécuter un workflow, Calculs IA).
 
 ## Guides de référence des cartes
 
-Pour une référence complète de chaque carte et de ses options, consultez les pages *complete guide* de cette section (Condition Cards, PO Matching Cards, Assignment & User Cards, Task Cards, Field & Table Cards, ainsi que les cartes Action).
+Pour une référence complète de chaque carte et de ses options, consultez les pages du _guide complet_ dans cette section (cartes de condition, cartes de correspondance de bon de commande, cartes d'affectation et d'utilisateur, cartes de tâches, cartes de terrain et de table et cartes d'action).
 
-## Combiner les cartes
+## Combiner des cartes
 
-Pour découvrir des combinaisons de cartes éprouvées qui résolvent des scénarios métier courants, consultez les **Workflow Pattern Guides**.
+Pour voir des combinaisons éprouvées de cartes qui résolvent des scénarios commerciaux courants, consultez les **Guides des modèles de flux de travail**.
+
+[Cartes logiques : référence complète](cards-overview/logic-cards-guide.md).

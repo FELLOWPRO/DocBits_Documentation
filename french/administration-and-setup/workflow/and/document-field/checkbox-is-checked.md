@@ -1,6 +1,6 @@
-# Checkbox is checked
+# La case est cochée
 
-<figure><img src="../../../../.gitbook/assets/image (20) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6ae1b0fb29dd-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -8,12 +8,12 @@ Cette carte de workflow est conçue pour automatiser des actions en fonction de 
 
 ## **Composants de la carte :**
 
-* **Field Name**
-  * **Description :** spécifie le nom du champ de type case à cocher qui sera évalué.
+* **Nom du champ**
+  * **Descriptif :** spécifie le nom du champ de type case à cocher qui sera évalué.
   * **Détail :** il doit correspondre à l'identifiant exact du champ utilisé dans le système. Il détermine l'état de quelle case à cocher est surveillé.
-* **Boolean**
-  * **Description :** définit la condition qui déclenche le workflow.
-  * **Options :**
+* **Booléen**
+  * **Descriptif :** définit la condition qui déclenche le workflow.
+  * **Possibilités :**
     * **True :** le workflow se déclenche si la case est cochée.
     * **False :** le workflow se déclenche si la case est décochée.
 
@@ -29,12 +29,22 @@ Cette carte de workflow est conçue pour automatiser des actions en fonction de 
 
 ## **Mise en place et configuration :**
 
-* Les utilisateurs configurent la carte en sélectionnant le champ de case à cocher dans une liste de champs disponibles et en définissant la condition booléenne.&#x20;
+* Les utilisateurs configurent la carte en sélectionnant le champ de case à cocher dans une liste de champs disponibles et en définissant la condition booléenne.
 
 ## Conclusion :
 
 La carte de workflow « Checkbox Field Condition » est un outil fondamental pour gérer les formulaires et documents dynamiques au sein d'un système ERP, où les saisies de l'utilisateur peuvent dicter les processus de données ultérieurs. En automatisant des actions en fonction de l'état d'une case à cocher, cette carte améliore l'efficacité du workflow et garantit que les comportements du système sont alignés sur les saisies de l'utilisateur. Une documentation claire de cette carte aidera les utilisateurs à la mettre en œuvre efficacement dans leurs opérations, permettant un meilleur contrôle des comportements des formulaires et des automatisations de processus.
 
-
-
 **Note : tous les clients ne disposent pas de la case à cocher, mais elle peut être ajoutée si souhaité.**
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemple pratique
+
+**Quand utiliser :** Exécutez un suivi uniquement après qu'un indicateur de révision explicite a été défini.
+
+**Configuration :** Sélectionnez le champ de case à cocher `review_complete` et le booléen `true`.
+
+**Résultat attendu et contre-exemple :** Une case cochée est réussie. Une case non cochée échoue ; n'utilisez pas un champ manquant comme preuve d'une révision terminée.
+
+Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.

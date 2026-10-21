@@ -1,6 +1,6 @@
-# Compare values in table
+# Comparer les valeurs dans le tableau
 
-<figure><img src="../../../../.gitbook/assets/image (48).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5f14db09d019-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -9,13 +9,13 @@ Cette carte DocBits effectue une comparaison entre les valeurs de deux colonnes 
 ## **Fonctionnalité :**
 
 * **Comparaison de colonnes :** cette carte permet aux utilisateurs de définir des conditions pour comparer les valeurs entre deux colonnes du même tableau.
-* **Operators :** les opérateurs suivants sont disponibles pour définir la comparaison :
-  * **Equals (=) :** vérifie si les valeurs des deux colonnes sont exactement égales.
-  * **Not Equals (≠) :** s'assure que les valeurs des deux colonnes ne sont pas égales.
-  * **Greater Than (>) :** confirme que les valeurs de la première colonne sont supérieures à celles de la seconde colonne.
-  * **Greater or Equals (≥) :** s'assure que les valeurs de la première colonne sont supérieures ou égales à celles de la seconde colonne.
-  * **Lesser Than (<) :** vérifie si les valeurs de la première colonne sont inférieures à celles de la seconde colonne.
-  * **Less or Equals (≤) :** s'assure que les valeurs de la première colonne sont inférieures ou égales à celles de la seconde colonne.
+* **Opérateurs :** les opérateurs suivants sont disponibles pour définir la comparaison :
+  * **Est égal à (=) :** vérifie si les valeurs des deux colonnes sont exactement égales.
+  * **Différent (≠) :** s'assure que les valeurs des deux colonnes ne sont pas égales.
+  * **Supérieur à (>) :** confirme que les valeurs de la première colonne sont supérieures à celles de la seconde colonne.
+  * **Supérieur ou égal à (≥) :** s'assure que les valeurs de la première colonne sont supérieures ou égales à celles de la seconde colonne.
+  * **Inférieur à (<) :** vérifie si les valeurs de la première colonne sont inférieures à celles de la seconde colonne.
+  * **Inférieur ou égal à (≤) :** s'assure que les valeurs de la première colonne sont inférieures ou égales à celles de la seconde colonne.
 * **Sélection de la table et des colonnes :** les utilisateurs spécifient la table et les deux colonnes qu'ils souhaitent comparer.
 
 ## **Utilisation :**

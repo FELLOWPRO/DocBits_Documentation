@@ -1,6 +1,6 @@
-# Compare Field with tolerances
+# Comparer le champ avec les tolérances
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4ee291b0848d-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -8,28 +8,28 @@ Cette carte de workflow est conçue pour comparer la valeur d'un champ à une va
 
 ## **Composants de la carte :**
 
-1. **Field Name**
-   * **Description :** le champ à évaluer dans la comparaison.
+1. **Nom du champ**
+   * **Descriptif :** le champ à évaluer dans la comparaison.
    * **Détail :** il doit correspondre à l'identifiant exact du premier champ dans le document.
-2. **Comparison Operator**
-   * **Description :** spécifie comment la valeur du champ sélectionné sera comparée à la valeur de référence.
-   * **Options :**
-     * **Equals (=) :** vérifie si la valeur du champ correspond exactement à la valeur de référence.
-     * **Not Equals (≠) :** vérifie si la valeur du champ ne correspond pas à la valeur de référence.
-     * **Greater Than (>) :** vérifie si la valeur du champ est supérieure à la valeur de référence.
-     * **Greater or Equals (≥) :** vérifie si la valeur du champ est supérieure ou égale à la valeur de référence.
-     * **Lesser Than (<) :** vérifie si la valeur du champ est inférieure à la valeur de référence.
-     * **Lesser or Equals (≤) :** vérifie si la valeur du champ est inférieure ou égale à la valeur de référence.
-3. **Reference Value**
-   * **Description :** la valeur à laquelle le champ est comparé.
+2. **Opérateur de comparaison**
+   * **Descriptif :** spécifie comment la valeur du champ sélectionné sera comparée à la valeur de référence.
+   * **Possibilités :**
+     * **Est égal à (=) :** vérifie si la valeur du champ correspond exactement à la valeur de référence.
+     * **Différent (≠) :** vérifie si la valeur du champ ne correspond pas à la valeur de référence.
+     * **Supérieur à (>) :** vérifie si la valeur du champ est supérieure à la valeur de référence.
+     * **Supérieur ou égal à (≥) :** vérifie si la valeur du champ est supérieure ou égale à la valeur de référence.
+     * **Inférieur à (<) :** vérifie si la valeur du champ est inférieure à la valeur de référence.
+     * **Inférieur ou égal à (≤) :** vérifie si la valeur du champ est inférieure ou égale à la valeur de référence.
+3. **Valeur de référence**
+   * **Descriptif :** la valeur à laquelle le champ est comparé.
    * **Détail :** cette valeur peut être numérique, textuelle ou de type date, selon le contexte de la comparaison.
-4. **Tolerance Amount**
-   * **Description :** définit la marge d'erreur acceptable pour la comparaison.
+4. **Montant de tolérance**
+   * **Descriptif :** définit la marge d'erreur acceptable pour la comparaison.
    * **Détail :** le montant de tolérance est une valeur numérique qui indique l'écart maximal autorisé entre les deux valeurs de champ pour que la comparaison soit considérée comme vraie.
-5. **Tolerance Type**
-   * **Description :** spécifie l'unité de mesure du montant de tolérance.
-   * **Options :**
-     * **Value :** la tolérance est une valeur absolue, ce qui signifie que les deux champs peuvent différer du montant de tolérance spécifié.
+5. **Type de tolérance**
+   * **Descriptif :** spécifie l'unité de mesure du montant de tolérance.
+   * **Possibilités :**
+     * **Valeur :** la tolérance est une valeur absolue, ce qui signifie que les deux champs peuvent différer du montant de tolérance spécifié.
      * **Percent :** la tolérance est calculée en pourcentage de la valeur du second champ, autorisant une marge d'erreur relative.
 
 ## **Fonctionnalité :**
@@ -41,7 +41,7 @@ Cette carte de workflow est conçue pour comparer la valeur d'un champ à une va
 
 ## **Mise en place et configuration :**
 
-* Les utilisateurs configurent la carte en sélectionnant le champ à évaluer dans une liste de champs disponibles et en choisissant l'opérateur de comparaison (par ex. equals, greater than) dans une liste déroulante. Ils spécifient ensuite la valeur de référence à laquelle comparer et définissent le montant de tolérance, puis sélectionnent le type de tolérance (par ex. percent ou value).&#x20;
+* Les utilisateurs configurent la carte en sélectionnant le champ à évaluer dans une liste de champs disponibles et en choisissant l'opérateur de comparaison (par ex. equals, greater than) dans une liste déroulante. Ils spécifient ensuite la valeur de référence à laquelle comparer et définissent le montant de tolérance, puis sélectionnent le type de tolérance (par ex. percent ou value).
 
 ## **Conclusion :**
 

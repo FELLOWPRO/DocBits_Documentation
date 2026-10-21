@@ -1,35 +1,29 @@
-# AI Calculation for Cost Increase Surcharges
+# Calcul IA pour les suppléments d’augmentation des coûts
 
-<figure><img src="../../../../.gitbook/assets/image (309).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2dff6d842a5a-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
-## Objectif :
+## Quand utiliser cette carte
 
-La carte de workflow **« AI Calculation for Cost Increase Surcharges »** utilise l'IA pour calculer automatiquement les montants de surcharge en fonction des augmentations de coûts. Elle garantit des calculs de surcharge cohérents et précis, rationalisant les workflows et réduisant l'effort manuel.
+Utilisez cette action pour demander le calcul configuré du supplément matière et énergie MTZ/ETZ pour le document actuel. Préparez d’abord les données documentaires et la configuration du service de calcul requises par votre organisation.
 
-## Composants de la carte :
+## Configuration réelle
 
-* **Cost Increase Factor**
-  * **Description :** le multiplicateur ou le pourcentage appliqué au coût de base pour calculer la surcharge.
-  * **Détail :** détermine le montant de la surcharge en fonction de l'augmentation de coût (par ex. un facteur de 1,10 pour une augmentation de 10 %).
-* **Base Cost Field**
-  * **Description :** le champ contenant la valeur de coût d'origine utilisée comme base du calcul de la surcharge.
-  * **Détail :** sélectionné automatiquement ou défini au sein du workflow pour référence lors du calcul.
-* **Surcharge Field**
-  * **Description :** le champ où la valeur de surcharge calculée par l'IA est stockée.
-  * **Détail :** ce champ reflète la surcharge calculée, la rendant disponible pour un traitement ou un reporting complémentaire.
+La carte affichée ne comporte aucune entrée de facteur d'augmentation des coûts, de champ de coût de base ou de champ de supplément. Il délègue le calcul au service configuré. Ne recherchez pas ces contrôles de carte inexistants et ne supposez pas une formule de pourcentage fixe à partir du nom de la carte.
 
-## Fonctionnalité :
+## Résultat et vérification
 
-**Évaluation de la condition :**
+Une réponse de service réussie marque la réussite de la carte. Un délai d'attente ou une réponse infructueuse produit une erreur de carte. Inspecter le journal de la carte et les données de supplément résultantes du document ; le succès de l’appel à lui seul ne justifie pas un montant particulier.
 
-* La carte ne s'active que si les conditions des sections **« Where »** et **« And »** sont toutes deux évaluées comme vraies.
-* Si l'une des conditions est évaluée comme fausse, aucun calcul de surcharge n'est effectué.
+En mode test de carte, l'appel est ignoré et le succès est simulé. Ceci est utile pour tester la structure du flux de travail, mais cela ne prouve pas que le service a été exécuté ou qu'un supplément a été calculé.
 
-**Calcul piloté par l'IA :**
+<!-- workflow-card-practical-example-20261021 -->
 
-* Le système applique le **Cost Increase Factor** au **Base Cost Field** pour calculer la surcharge.
-* Le résultat est stocké dans le **Surcharge Field**, garantissant son accessibilité pour les étapes ultérieures du workflow.
+## Exemple pratique
 
-## Conclusion :
+**Quand utiliser :** Demandez le calcul configuré du supplément matériel/énergie pour une facture préparée.
 
-La carte de workflow **« AI Calculation for Cost Increase Surcharges »** automatise l'application des surcharges en fonction des augmentations de coûts. En s'appuyant sur l'IA pour la précision et la cohérence, cette carte élimine les calculs manuels, améliore l'efficacité et facilite une gestion précise des coûts dans les workflows automatisés.
+**Configuration :** Utilisez la facture synthétique `DEMO-001` avec les données requises par votre service MTZ/ETZ configuré. Ajoutez cette action après les conditions de validation du document.
+
+**Résultat attendu et contre-exemple :** Une réponse de service réussie marque la carte comme réussie ; un délai d'attente ou une réponse infructueuse produit une erreur de carte. Inspectez les champs du document et le résultat du calcul séparément. Le mode de test de carte simule le succès et n'appelle pas le service, il ne peut donc pas prouver un réel résultat de supplément.
+
+Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.

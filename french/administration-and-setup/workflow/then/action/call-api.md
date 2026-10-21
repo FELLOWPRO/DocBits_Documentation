@@ -1,6 +1,6 @@
-# Call Api
+# Appeler l'API
 
-<figure><img src="../../../../.gitbook/assets/Then_Call_API.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6a1c780ee588-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## Objectif :
 
@@ -8,21 +8,21 @@ La carte de workflow **« Call API »** permet aux utilisateurs d'effectuer des 
 
 ## Composants de la carte :
 
-1. **API Endpoint**
-   * **Description :** le point de terminaison cible de l'**API DocBits** avec lequel cette carte interagira.
+1. **Point de terminaison API**
+   * **Descriptif :** le point de terminaison cible de l'**API DocBits** avec lequel cette carte interagira.
    * **Détail :** un champ de texte où les utilisateurs spécifient le point de terminaison de la requête d'API.
-2. **HTTP Method**
-   * **Description :** le type de requête HTTP à effectuer.
-   * **Options :**
+2. **Méthode HTTP**
+   * **Descriptif :** le type de requête HTTP à effectuer.
+   * **Possibilités :**
      1. **GET :** récupère des données depuis le point de terminaison spécifié.
      2. **POST :** envoie des données au point de terminaison.
      3. **PUT :** met à jour des données existantes au point de terminaison.
      4. **DELETE :** supprime des données au point de terminaison.
-3. **Parameters**
-   * **Description :** les paramètres de requête à inclure dans la requête d'API.
+3. **Paramètres**
+   * **Descriptif :** les paramètres de requête à inclure dans la requête d'API.
    * **Détail :** un champ de texte ou une liste pour saisir des paires clé-valeur pour l'URL de la requête.
-4. **Data**
-   1. **Description :** la charge utile à envoyer dans le corps de la requête d'API (applicable aux méthodes POST et PUT).
+4. **Données**
+   1. **Descriptif :** la charge utile à envoyer dans le corps de la requête d'API (applicable aux méthodes POST et PUT).
    2. **Détail :** un champ pour saisir les données au format JSON.
 
 ## Fonctionnalité :
@@ -55,3 +55,15 @@ La carte de workflow **« Call API »** permet aux utilisateurs d'effectuer des 
 La carte de workflow **« Call API »** améliore l'automatisation du workflow en permettant une interaction directe avec des systèmes externes. En offrant des configurations flexibles pour les points de terminaison, les méthodes et les données, elle garantit que les workflows peuvent s'intégrer en toute fluidité à des API tierces ou à des backends personnalisés. La possibilité d'exécuter conditionnellement les appels d'API assure précision et efficacité dans l'automatisation des communications externes.
 
 ***
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemple pratique
+
+**Quand utiliser :** Demander une validation supplémentaire à un service externe configuré.
+
+**Configuration :** Sélectionnez le point de terminaison de l'API de démonstration configuré et la méthode HTTP. Fournissez les paramètres et le corps JSON requis par ce point de terminaison.
+
+**Résultat attendu et contre-exemple :** Pour une réponse simulée `200`, vérifiez la gestion de la réponse attendue par les cartes suivantes. Testez également `500` ; le fait de lancer l'appel ne permet pas d'établir que le contrôle commercial a réussi.
+
+Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.

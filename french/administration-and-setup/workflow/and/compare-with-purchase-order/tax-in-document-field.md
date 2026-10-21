@@ -1,6 +1,6 @@
-# Tax in document field
+# Taxe dans le champ du document
 
-<figure><img src="../../../../.gitbook/assets/image (268).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-c8c9a92d10ce-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -8,28 +8,28 @@ Cette carte de workflow est conçue pour évaluer si la valeur de taxe d'un cham
 
 ## **Composants de la carte :**
 
-1. **Field Name**
-   * **Description** : spécifie le champ de document qui contient la valeur de taxe à comparer à la valeur de taxe du bon de commande.
+1. **Nom du champ**
+   * **Descriptif** : spécifie le champ de document qui contient la valeur de taxe à comparer à la valeur de taxe du bon de commande.
    * **Détail** : ce champ doit correspondre à l'identifiant exact de la valeur de taxe dans le document.
-2. **Operator**
-   * **Description** : définit la condition à appliquer à la comparaison entre la valeur de taxe du document et la valeur de taxe du bon de commande.
-   * **Options** :
-     * **Equals (=)** : vérifie si la taxe du champ de document correspond à la taxe du bon de commande.
-     * **Not Equals (≠)** : s'assure que la taxe du champ de document ne correspond pas à la taxe du bon de commande.
-     * **Greater Than (>)** : vérifie si la taxe du champ de document est supérieure à la taxe du bon de commande.
-     * **Greater or Equals (≥)** : vérifie si la taxe du champ de document est supérieure ou égale à la taxe du bon de commande.
-     * **Lesser Than (<)** : vérifie si la taxe du champ de document est inférieure à la taxe du bon de commande.
-     * **Lesser or Equals (≤)** : vérifie si la taxe du champ de document est inférieure ou égale à la taxe du bon de commande.
-3. **Master Data Table**
-   * **Description** : la table qui contient les détails du bon de commande, y compris le charge ID et les valeurs de taxe.
+2. **Opérateur**
+   * **Descriptif** : définit la condition à appliquer à la comparaison entre la valeur de taxe du document et la valeur de taxe du bon de commande.
+   * **Possibilités** :
+     * **Égal à (=)** : vérifie si la taxe du champ de document correspond à la taxe du bon de commande.
+     * **Pas égal à (≠)** : s'assure que la taxe du champ de document ne correspond pas à la taxe du bon de commande.
+     * **Supérieur à (>)** : vérifie si la taxe du champ de document est supérieure à la taxe du bon de commande.
+     * **Supérieur ou égal à (≥)** : vérifie si la taxe du champ de document est supérieure ou égale à la taxe du bon de commande.
+     * **Inférieur à (<)** : vérifie si la taxe du champ de document est inférieure à la taxe du bon de commande.
+     * **Inférieur ou égal à (≤)** : vérifie si la taxe du champ de document est inférieure ou égale à la taxe du bon de commande.
+3. **Tableau des données de base**
+   * **Descriptif** : la table qui contient les détails du bon de commande, y compris le charge ID et les valeurs de taxe.
    * **Détail** : cette table doit comporter une référence au charge ID associé à la valeur de taxe du bon de commande.
-4. **Tolerance Amount**
-   * **Description** : le montant seuil dans lequel les valeurs de taxe peuvent varier. Il sert à tenir compte des écarts mineurs dans les calculs de taxe.
+4. **Montant de tolérance**
+   * **Descriptif** : le montant seuil dans lequel les valeurs de taxe peuvent varier. Il sert à tenir compte des écarts mineurs dans les calculs de taxe.
    * **Détail** : le montant de tolérance doit être une valeur numérique, définissant l'écart maximal autorisé entre les valeurs de taxe.
-5. **Tolerance Type**
-   * **Description** : spécifie le type de tolérance appliqué, absolu ou en pourcentage.
-   * **Options** :
-     * **Value** : la tolérance est une valeur numérique fixe.
+5. **Type de tolérance**
+   * **Descriptif** : spécifie le type de tolérance appliqué, absolu ou en pourcentage.
+   * **Possibilités** :
+     * **Valeur** : la tolérance est une valeur numérique fixe.
      * **Percentage** : la tolérance est calculée en pourcentage de la valeur de taxe.
 
 ## **Fonctionnalité :**

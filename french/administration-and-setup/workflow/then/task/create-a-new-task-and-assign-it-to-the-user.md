@@ -1,51 +1,51 @@
-# Create a New Task and assign it to the User
+# Créez une nouvelle tâche et attribuez-la à l'utilisateur
 
-<figure><img src="../../../../.gitbook/assets/image (287).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4a46d3b10473-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif**
 
-La carte de workflow **« Create Task or Notification »** rationalise la gestion des tâches et des notifications au sein des workflows. Selon la version, la carte peut créer des tâches, envoyer des notifications et tirer parti de fonctionnalités supplémentaires telles que les arbres de décision pour un traitement dynamique.
+La carte de workflow **« Créer une tâche ou une notification »** rationalise la gestion des tâches et des notifications au sein des workflows. Selon la version, la carte peut créer des tâches, envoyer des notifications et tirer parti de fonctionnalités supplémentaires telles que les arbres de décision pour un traitement dynamique.
 
 ## **Composants de la carte**
 
-1. **Title**
-   * **Description** : définit le titre de la tâche ou de la notification créée.
+1. **Titre**
+   * **Descriptif** : définit le titre de la tâche ou de la notification créée.
    * **Détail** : le titre fournit un identifiant clair et concis à la tâche ou à la notification.
-2. **Description**
-   * **Description** : fournit des détails sur la tâche ou la notification.
+2. **Descriptif**
+   * **Descriptif** : fournit des détails sur la tâche ou la notification.
    * **Détail** : aide à clarifier l'objet ou le contexte de la tâche ou de la notification pour l'utilisateur assigné.
-3. **Priority**
-   * **Description** : définit le niveau d'urgence de la tâche.
-   * **Options** :
+3. **Priorité**
+   * **Descriptif** : définit le niveau d'urgence de la tâche.
+   * **Possibilités** :
      * **High** : nécessite une attention immédiate.
-     * **Medium** : important mais non urgent.
+     * **Moyen** : important mais non urgent.
      * **Low** : peut être traité plus tard.
-4. **Assigned User**
-   1. **Description** : spécifie l'utilisateur auquel la tâche est assignée.
+4. **Utilisateur attribué**
+   1. **Descriptif** : spécifie l'utilisateur auquel la tâche est assignée.
    2. **Détail** : les utilisateurs sont sélectionnés dans une liste déroulante du personnel disponible.
-5. **Email Notification**
-   * **Description** : détermine si l'utilisateur assigné reçoit une notification par e-mail.
-   * **Options** :
+5. **Notification par e-mail**
+   * **Descriptif** : détermine si l'utilisateur assigné reçoit une notification par e-mail.
+   * **Possibilités** :
      * **True** : envoie une notification par e-mail à l'utilisateur.
      * **False** : aucune notification par e-mail n'est envoyée.
 
 ## Composants supplémentaires **dans la Version 3 et la Version 4**
 
-1. **Decision Tree (Version 3 uniquement)**
-   * **Description** : permet d'utiliser un arbre de décision pour la création dynamique de tâches.
-   * **Options** :
+1. **Arbre de décision (Version 3 uniquement)**
+   * **Descriptif** : permet d'utiliser un arbre de décision pour la création dynamique de tâches.
+   * **Possibilités** :
      * **True** : active le traitement par arbre de décision.
      * **False** : désactive le traitement par arbre de décision.
 2. **Task or Notification (Version 4 uniquement)**
-   * **Description** : permet de choisir entre créer une tâche ou une notification.
-   * **Options** :
-     * **Task** : crée une tâche.
+   * **Descriptif** : permet de choisir entre créer une tâche ou une notification.
+   * **Possibilités** :
+     * **Tâche** : crée une tâche.
      * **Notification** : crée une notification au lieu d'une tâche.
 
 ## **Fonctionnalité :**
 
 * **Évaluation de la condition** :\
-  Cette carte n'est déclenchée que si les conditions des sections **« Where »** et **« And »** sont satisfaites.
+  Cette carte n'est déclenchée que si les conditions des sections **« Quand »** et **« Et »** sont satisfaites.
 * **Création de tâche ou de notification** :
   * Versions 2 et 3 : une tâche est créée avec le titre, la description, la priorité et l'utilisateur assigné spécifiés.
   * Version 4 : permet de créer soit une tâche, soit une notification.
@@ -69,4 +69,16 @@ La carte de workflow **« Create Task or Notification »** rationalise la gestio
 
 ## **Conclusion :**
 
-La carte de workflow **« Create Task or Notification »** est un outil polyvalent pour gérer les tâches et les notifications. En prenant en charge l'attribution dynamique des utilisateurs via des arbres de décision et en offrant des options de création de tâche ou de notification, elle renforce l'adaptabilité du workflow et l'efficacité de la collaboration.
+La carte de workflow **« Créer une tâche ou une notification »** est un outil polyvalent pour gérer les tâches et les notifications. En prenant en charge l'attribution dynamique des utilisateurs via des arbres de décision et en offrant des options de création de tâche ou de notification, elle renforce l'adaptabilité du workflow et l'efficacité de la collaboration.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemple pratique
+
+**Quand utiliser :** Donnez à un évaluateur une action explicite.
+
+**Configuration :** Sélectionnez `Demo Reviewer A`, titre `Review invoice`, description et priorité.
+
+**Résultat attendu et contre-exemple :** L'utilisateur sélectionné reçoit la nouvelle tâche. Confirmez le titre de la tâche et le responsable ; la tâche reste à accomplir par l’examinateur.
+
+Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.

@@ -1,60 +1,64 @@
-# Any / All Unit Price is
+# Tout/tout le prix unitaire est
 
-<figure><img src="../../../../.gitbook/assets/image (274).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6c572102504a-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (273).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2a7bdfe3ffe9-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
-## **Objectif :**
+## **Objectif :**
 
-Cette carte de workflow sert à comparer le prix unitaire d'un document au prix unitaire d'un bon de commande, en garantissant que les prix correspondent dans les niveaux de tolérance définis. La comparaison peut déclencher des actions si le prix unitaire ne répond pas aux attentes. La **Version 4** ajoute davantage de flexibilité en permettant aux utilisateurs de choisir différentes entités à comparer, offrant un niveau de contrôle plus poussé sur les processus de tarification et d'approvisionnement.
+Cette carte de workflow est utilisée pour comparer le prix unitaire d'un document avec le prix unitaire d'un bon de commande, garantissant ainsi que les prix s'alignent dans les niveaux de tolérance définis. La comparaison peut déclencher des actions si le prix unitaire ne répond pas aux attentes. **Version 4** ajoute plus de flexibilité en permettant aux utilisateurs de choisir différentes entités à comparer, offrant ainsi un niveau de contrôle plus approfondi sur les processus de tarification et d'approvisionnement.
 
 ## **Composants de la carte :**
 
-1. **Any / All :**
-   * **Description** : définit si la condition s'applique à une ou à toutes les occurrences où le prix unitaire est comparé.
-   * **Options** :
-     * **Any** : la condition est satisfaite si un quelconque prix unitaire satisfait la condition de comparaison spécifiée.
-     * **All** : la condition n'est satisfaite que si tous les prix unitaires satisfont la condition de comparaison spécifiée.
-2. **Operator :**
-   * **Description** : définit la condition de comparaison du prix unitaire à la valeur spécifiée.
-   * **Options** :
-     * **Equals (=)** : vérifie si le prix unitaire correspond à la valeur spécifiée.
-     * **Not Equals (≠)** : s'assure que le prix unitaire diffère de la valeur spécifiée.
-     * **Greater Than (>)** : vérifie si le prix unitaire est supérieur à la valeur spécifiée.
-     * **Greater or Equals (≥)** : vérifie si le prix unitaire est supérieur ou égal à la valeur spécifiée.
-     * **Lesser Than (<)** : vérifie si le prix unitaire est inférieur à la valeur spécifiée.
-     * **Lesser or Equals (≤)** : vérifie si le prix unitaire est inférieur ou égal à la valeur spécifiée.
+1. **Tous/Tous :**
+   * **Descriptif** : Définit si la condition s'applique à tout ou partie des instances où le prix unitaire est comparé.
+   * **Possibilités** :
+     * **Any** : La condition est remplie si un prix unitaire répond à la condition de comparaison spécifiée.
+     * **Tous** : La condition n'est remplie que si tous les prix unitaires répondent à la condition de comparaison spécifiée.
+2. **Opérateur :**
+   * **Descriptif** : Définit la condition de comparaison du prix unitaire avec la valeur spécifiée.
+   * **Possibilités** :
+     * **Égal à (=)** : Vérifie si le prix unitaire correspond à la valeur spécifiée.
+     * **Pas égal à (≠)** : garantit que le prix unitaire est différent de la valeur spécifiée.
+     * **Supérieur à (>)** : Vérifie si le prix unitaire est supérieur à la valeur spécifiée.
+     * **Supérieur ou égal à (≥)** : Vérifie si le prix unitaire est supérieur ou égal à la valeur spécifiée.
+     * **Inférieur à (<)** : Vérifie si le prix unitaire est inférieur à la valeur spécifiée.
+     * **Inférieur ou égal à (≤)** : Vérifie si le prix unitaire est inférieur ou égal à la valeur spécifiée.
 
-## **Composants supplémentaires dans la Version 4 :**
+## **Composants supplémentaires dans la version 4 :**
 
-**Comparison Type :**
+**Type de comparaison :**
 
-* **Description** : permet aux utilisateurs de choisir quelles entités seront comparées en plus du prix unitaire.
-* **Options** :
-  * **Purchase Order to Document** : compare le prix unitaire du bon de commande au prix unitaire du document.
-  * **Received to Document** : compare la quantité reçue au prix unitaire du document.
-  * **Purchase Order to Received** : compare le prix unitaire du bon de commande à la quantité reçue.
+* **Descriptif** : Permet aux utilisateurs de choisir quelles entités seront comparées en plus du prix unitaire.
+* **Possibilités** :
+  * **Bon de commande au document** : Compare le prix unitaire du bon de commande avec le prix unitaire du document.
+  * **Reçu dans le document** : Compare le montant côté réception dérivé du bon de commande rapproché avec le montant côté document.
+  * **Bon de commande à reçu** : Compare le côté bon de commande avec le montant dérivé côté reçu.
 
-## **Fonctionnalité :**
+## **Fonctionnalité :**
 
-* **Évaluation de la condition :** le système compare le prix unitaire du document au prix unitaire du bon de commande (ou à une autre entité sélectionnée, dans la Version 4) en fonction de l'opérateur sélectionné. Si la comparaison est vraie, le workflow se poursuit selon les étapes suivantes, en déclenchant l'approbation ou en arrêtant le processus.
-* **Exécution de l'action :**
-  * **Condition vraie** : si la condition est évaluée comme vraie (par ex. le prix unitaire du document est supérieur à la valeur spécifiée), le workflow se poursuit avec l'action vraie (par ex. approbation, traitement du document).
-  * **Condition fausse** : si la condition est évaluée comme fausse (par ex. le prix unitaire du document ne satisfait pas la comparaison), le workflow ne se poursuit pas.
+* **Évaluation de la condition :** Le système compare le prix unitaire dans le document au prix unitaire dans le bon de commande (ou une autre entité sélectionnée, dans la version 4) en fonction de l'opérateur sélectionné. Si la comparaison est vraie, le flux de travail se déroule selon les étapes suivantes, soit en déclenchant l'approbation, soit en arrêtant le processus.
+* **Exécution d'action :**
+  * **État réel** : Si la condition est évaluée comme vraie (par exemple, le prix unitaire dans le document est supérieur à la valeur spécifiée), le flux de travail poursuivra l'action réelle (par exemple, approbation, traitement du document).
+  * **Fausse condition** : Si la condition est évaluée comme fausse (par exemple, le prix unitaire dans le document ne correspond pas à la comparaison), le flux de travail ne se poursuivra pas.
 
-## **Mise en place et configuration :**
+## **Installation et configuration :**
 
-* **Configuration de la Version 3 :** les utilisateurs configurent la carte en sélectionnant le prix unitaire du document, en choisissant l'opérateur approprié pour définir comment le prix unitaire sera comparé à la valeur spécifiée, et en définissant la valeur de comparaison. De plus, les utilisateurs indiquent si la condition s'applique à une ou à toutes les occurrences de la comparaison de prix unitaire.
-* **Configuration de la Version 4 :** dans la Version 4, les utilisateurs disposent de l'option supplémentaire de sélectionner le Comparison Type. Cela leur permet de définir les entités à comparer, telles que Purchase Order to Document, Received to Document ou Purchase Order to Received. Cela accroît la flexibilité de la carte pour comparer les prix unitaires dans des scénarios plus complexes.
+* **Configuration de la version 3 :** Les utilisateurs configurent la carte en sélectionnant le prix unitaire dans le document, en choisissant l'opérateur approprié pour définir comment le prix unitaire sera comparé à la valeur spécifiée et en définissant la valeur à comparer. De plus, les utilisateurs choisissent si la condition s'applique à une ou à toutes les instances de comparaison de prix unitaires.
+* **Configuration de la version 4 :** Dans la version 4, les utilisateurs ont la possibilité supplémentaire de sélectionner le type de comparaison. Cela leur permet de définir les entités à comparer, telles que Bon de commande à documenter, Reçu à documenter ou Bon de commande à reçu. Cela améliore la flexibilité de la carte pour comparer les prix unitaires dans des scénarios plus complexes.
 
-## **Scénario d'exemple :**
+## **Exemple de scénario :**
 
-*   **Exemple Version 3 :**&#x20;
+*   **Version 3 Exemple :**
 
-    Une facture indique un prix unitaire de 50 $. Le bon de commande associé a un prix unitaire de 45 $. La carte compare les deux prix unitaires à l'aide de l'opérateur « Greater Than ». Puisque le prix unitaire du document (50 $) est supérieur au prix unitaire du bon de commande (45 $), le workflow déclenche la condition vraie (par ex. envoyer le document pour examen).
-* **Exemple Version 4 :**\
-  Une facture indique un prix unitaire de 50 $, et le bon de commande associé autorisait un prix unitaire de 45 $. De plus, la quantité reçue est de 60 unités. La carte compare la quantité reçue au prix unitaire du document à l'aide de l'opérateur « Greater Than ». Puisque la quantité reçue (60) est supérieure au prix unitaire (50 $), le workflow déclenche la condition vraie et le document est signalé pour un examen complémentaire.
+    Une facture indique un prix unitaire de 50 $. Le bon de commande connexe a un prix unitaire de 45 $. La carte compare les deux prix unitaires à l'aide de l'opérateur « Supérieur à ». Étant donné que le prix unitaire dans le document (50 $) est supérieur au prix unitaire dans le bon de commande (45 $), le flux de travail déclenchera la véritable condition (par exemple, envoyer le document pour révision).
+* **Version 4 Exemple :**\
+  Une facture indique un prix unitaire de 50 $ et le bon de commande connexe autorise un prix unitaire de 45 $. De plus, la quantité reçue est de 60 unités. La fiche compare la quantité reçue au prix unitaire du document à l'aide de l'opérateur « Supérieur à ». Étant donné que la quantité reçue (60) est supérieure au prix unitaire (50 $), le flux de travail déclenche la condition réelle et le document est marqué pour un examen plus approfondi.
 
-## **Conclusion :**
+## **Conclusion :**
 
-La Version 3 de la carte de workflow « Unit Price Comparison » est conçue pour garantir que les prix unitaires des documents correspondent à ceux des bons de commande, en déclenchant des actions selon des conditions définies. La Version 4 étend cette fonctionnalité en introduisant des options de comparaison plus complexes, comme la comparaison de bons de commande à des documents, de quantités reçues à des documents, et de bons de commande à des quantités reçues. Cette flexibilité supplémentaire permet aux organisations de gérer des scénarios de tarification et d'approvisionnement plus sophistiqués, améliorant le contrôle et la précision de leurs workflows.
+La version 3 de la fiche de workflow « Comparaison des prix unitaires » est conçue pour garantir que les prix unitaires dans les documents s'alignent sur ceux des bons de commande, déclenchant des actions basées sur des conditions définies. La version 4 étend cette fonctionnalité en introduisant des options de comparaison plus complexes, telles que la comparaison des bons de commande aux documents, des quantités reçues aux documents et des bons de commande aux quantités reçues. Cette flexibilité supplémentaire permet aux organisations de gérer des scénarios de tarification et d’approvisionnement plus sophistiqués, améliorant ainsi le contrôle et la précision de leurs flux de travail.
+
+## Version 5 et sens de comparaison
+
+La version 5 inclut Any/All, l'opérateur, le montant de tolérance, le type de tolérance et la sélection côté comparaison. Les versions plus récentes offrent des comparaisons dans les deux sens du document, du bon de commande et des données reçues. Le côté de référence détermine la base d'un pourcentage de tolérance. Voir [Versions de comparaison PO](../../cards-overview/po-comparison-versions-guide.md) pour les six options, la migration des cartes enregistrées et des exemples de tests.

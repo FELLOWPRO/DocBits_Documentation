@@ -36,23 +36,23 @@ Las reglas de transformación las activa **por tipo de documento** un **administ
 
 1. Vaya a **Settings → Global Settings → Document Types**.
 2. Haga clic en el icono de **ajustes** (engranaje) de la tarjeta del tipo de documento.
-3. Abra **Transformation Rules** y active el interruptor. Haga clic en **Manage transformation rules** para abrir la lista.
+3. Abra **Reglas de transformación** y active el interruptor. Haga clic en **Gestionar las reglas de transformación** para abrir la lista.
 
 <figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="El interruptor Transformation Rules"><figcaption><p>El interruptor Transformation Rules en los ajustes adicionales de un tipo de documento</p></figcaption></figure>
 
-La tarjeta del tipo de documento muestra ahora un enlace **Transformation Rules** y un enlace **Logs** para los registros de ejecución.
+La tarjeta del tipo de documento muestra ahora un enlace **Reglas de transformación** y un enlace **Registros** para los registros de ejecución.
 
 ## La lista de reglas
 
-La lista muestra todas las reglas del tipo de documento en el orden en que se ejecutan, cada una con un resumen de una frase ("When invoice_id is abcd, take invoice_id, make it UPPERCASE, and save it back."), su alcance (**Header**, **Table**, **Column**, **Routing**), el número de pasos, su origen y si **Log execution** está activado. Filtre por alcance y por **Active / Inactive**, busque, y use el menú **⋮** para duplicar o eliminar una regla.
+La lista muestra todas las reglas del tipo de documento en el orden en que se ejecutan, cada una con un resumen de una frase ("When invoice_id is abcd, take invoice_id, make it UPPERCASE, and save it back."), su alcance (**Encabezamiento**, **Tabla**, **Columna**, **Enrutamiento**), el número de pasos, su origen y si **Ejecución de registro** está activado. Filtre por alcance y por **Active / Inactive**, busque, y use el menú **⋮** para duplicar o eliminar una regla.
 
-Las reglas proceden de tres orígenes, igual que las reglas de validación: reglas **System default** que se suministran con DocBits (haga clic en **Customize** para obtener una copia editable), reglas de sistema **Customized** (**Reset to Default** restaura el original) y reglas **Custom** que usted ha creado.
+Las reglas proceden de tres orígenes, igual que las reglas de validación: reglas **Configuración predeterminada del sistema** que se suministran con DocBits (haga clic en **Personalizar** para obtener una copia editable), reglas de sistema **Personalizado** (**Restablecer a valores predeterminados** restaura el original) y reglas **A medida** que usted ha creado.
 
 ## Crear una regla
 
-Haga clic en **New rule**. El constructor tiene tres pasos a la izquierda y una **Vista previa en directo** a la derecha. En la parte superior resume la regla en una frase mientras la construye.
+Haga clic en **Nueva regla**. El constructor tiene tres pasos a la izquierda y una **Vista previa en directo** a la derecha. En la parte superior resume la regla en una frase mientras la construye.
 
-<figure><img src="../../../../.gitbook/assets/transformation-rule-scope.png" alt="Paso 1 del constructor de reglas de transformación"><figcaption><p>Paso 1: qué cambia la regla. La frase de la parte superior describe la regla en lenguaje sencillo</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-rule-scope-es.png" alt="Ámbitos de transformación: cabecera, filas, columna y enrutamiento."><figcaption><p>Ámbitos de transformación: cabecera, filas, columna y enrutamiento.</p></figcaption></figure>
 
 ### Paso 1 — Qué y dónde
 
@@ -81,11 +81,11 @@ Dos opciones controlan con qué frecuencia se aplica la regla:
 
 ### Paso 3 — The pipeline
 
-<figure><img src="../../../../.gitbook/assets/transformation-rule-pipeline.png" alt="La pipeline con tres pasos y la vista previa en directo"><figcaption><p>Read → Trim → Change case → Affix → Write, con el valor después de cada paso en la vista previa en directo</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-rule-pipeline-es.png" alt="Pasos de procesamiento de una regla de transformación."><figcaption><p>Pasos de procesamiento de una regla de transformación.</p></figcaption></figure>
 
-* **Read from** — **el propio campo (o columna)**, u **otro campo**. Leer de otro campo permite rellenar un campo a partir de otro, por ejemplo copiar el número de orden de compra de un campo de texto libre.
-* **Steps** — el valor pasa por los pasos **de arriba abajo**; la salida de un paso es la entrada del siguiente. Añada pasos con **+ Add a step**, reordénelos con las flechas y elimínelos con **✕**. Cada paso muestra a su derecha el valor intermedio del ejemplo.
-* **Write to** — el destino del paso 1. DocBits escribe el valor almacenado y después actualiza automáticamente el valor mostrado.
+* **Leer desde** — **el propio campo (o columna)**, u **otro campo**. Leer de otro campo permite rellenar un campo a partir de otro, por ejemplo copiar el número de orden de compra de un campo de texto libre.
+* **Pasos** — el valor pasa por los pasos **de arriba abajo**; la salida de un paso es la entrada del siguiente. Añada pasos con **+ Add a step**, reordénelos con las flechas y elimínelos con **✕**. Cada paso muestra a su derecha el valor intermedio del ejemplo.
+* **Escríbele a** — el destino del paso 1. DocBits escribe el valor almacenado y después actualiza automáticamente el valor mostrado.
 
 ### Los pasos
 
@@ -95,36 +95,36 @@ Dos opciones controlan con qué frecuencia se aplica la regla:
 | --- | --- | --- |
 | **Cambio de caso** | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
 | **Recortar** | lado (ambos, izquierda, derecha); caracteres (vacío = espacios en blanco) | `  4711 ` → `4711`; con el carácter `0` y lado izquierdo: `004711` → `4711` |
-| **Pad** | longitud, carácter de relleno, lado | longitud 10, `0`, izquierda: `4711` → `0000004711` |
-| **Truncate** | longitud máxima | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
+| **Almohadilla** | longitud, carácter de relleno, lado | longitud 10, `0`, izquierda: `4711` → `0000004711` |
+| **Truncar** | longitud máxima | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
 | **Afijo** | añadir prefijo, añadir sufijo, quitar prefijo, quitar sufijo; texto | añadir prefijo `INV-`: `4711` → `INV-4711`; quitar prefijo `Art.-Nr. `: `Art.-Nr. 4711` → `4711` |
 | **Desinfectar** | conservar solo (alfanuméricos, letras, dígitos, alfanuméricos + espacio) o eliminar los caracteres indicados | conservar alfanuméricos: `DE 123.456.789` → `DE123456789` |
-| **Take a slice** | inicio, longitud o fin | inicio 0, longitud 4: `2026-09-29` → `2026` |
-| **Extract** | patrón, grupo de captura | patrón `PO[- ]?(\d+)`, grupo 1: `Order PO-45001234` → `45001234` |
-| **Find & replace** | patrón, reemplazar por, cantidad (0 = todos) | patrón `\s+`, reemplazar por ` `: `ACME    GmbH` → `ACME GmbH` |
-| **Map values** | asignaciones (de → a), valor cuando no hay coincidencia (vacío = conservar la entrada), ignorar mayúsculas y minúsculas | `STK → PCE`: `stk` → `PCE` |
-| **Reformat date** | patrón de salida (`%d.%m.%Y`, `%m/%d/%Y`, `%Y-%m-%d`, `%d %b %Y`) | `%d.%m.%Y`: `2026-09-29` → `29.09.2026` |
-| **Format number** | configuración regional (de_DE, en_US, en_GB, fr_FR), decimales mín. y máx. | de_DE, 2 decimales: `1234.5` → `1.234,50` |
-| **Fix value** | el valor | escribe siempre el valor, sea cual sea el contenido del campo |
-| **Clear** | – | vacía el campo |
+| **Toma una rebanada** | inicio, longitud o fin | inicio 0, longitud 4: `2026-09-29` → `2026` |
+| **Extracto** | patrón, grupo de captura | patrón `PO[- ]?(\d+)`, grupo 1: `Order PO-45001234` → `45001234` |
+| **Buscar y reemplazar** | patrón, reemplazar por, cantidad (0 = todos) | patrón `\s+`, reemplazar por ` `: `ACME    GmbH` → `ACME GmbH` |
+| **Valores del mapa** | asignaciones (de → a), valor cuando no hay coincidencia (vacío = conservar la entrada), ignorar mayúsculas y minúsculas | `STK → PCE`: `stk` → `PCE` |
+| **Fecha de reformateo** | patrón de salida (`%d.%m.%Y`, `%m/%d/%Y`, `%Y-%m-%d`, `%d %b %Y`) | `%d.%m.%Y`: `2026-09-29` → `29.09.2026` |
+| **Número de formato** | configuración regional (de_DE, en_US, en_GB, fr_FR), decimales mín. y máx. | de_DE, 2 decimales: `1234.5` → `1.234,50` |
+| **Valor fijo** | el valor | escribe siempre el valor, sea cual sea el contenido del campo |
+| **Borrar** | – | vacía el campo |
 
 Las reglas de **Filas de la tabla** usan dos pasos distintos, que trabajan sobre filas en lugar de sobre valores:
 
 | Paso | Efecto |
 | --- | --- |
-| **Clear all rows** | elimina todas las filas extraídas. Las filas añadidas por un paso posterior se conservan. |
-| **Add a row** | añade una fila **después de la última fila** o **antes de la primera fila**. Para cada columna, elija **Value** (un valor fijo) o **Field** (el valor de un campo de encabezado). Las columnas que omita permanecen vacías. |
+| **Borrar todas las filas** | elimina todas las filas extraídas. Las filas añadidas por un paso posterior se conservan. |
+| **Add a row** | añade una fila **después de la última fila** o **antes de la primera fila**. Para cada columna, elija **Valor** (un valor fijo) o **Campo** (el valor de un campo de encabezado). Las columnas que omita permanecen vacías. |
 
 {% hint style="info" %}
-**Reformat date** espera la fecha tal como DocBits la almacena internamente (`YYYY-MM-DD`). Aplíquelo al propio campo, no a un texto que ya contenga una fecha con formato.
+**Fecha de reformateo** espera la fecha tal como DocBits la almacena internamente (`YYYY-MM-DD`). Aplíquelo al propio campo, no a un texto que ya contenga una fecha con formato.
 {% endhint %}
 
 ### Vista previa en directo
 
 La vista previa en directo ejecuta la regla sobre un ejemplo mientras la construye:
 
-* **Entrada de ejemplo** — escriba un valor tal como vendría del documento. Para las reglas de tabla, introduzca el número de filas extraídas (**Sample table**) y los valores de los campos que leen las nuevas filas (**Row source values**).
-* **Valores de condición** — para las reglas con condición, escriba los valores de los campos de la condición. La vista previa muestra **Las condiciones coinciden: se aplican las reglas.** o **Conditions do not match — rule is skipped**.
+* **Entrada de ejemplo** — escriba un valor tal como vendría del documento. Para las reglas de tabla, introduzca el número de filas extraídas (**Tabla de ejemplo**) y los valores de los campos que leen las nuevas filas (**Valores de origen de fila**).
+* **Valores de condición** — para las reglas con condición, escriba los valores de los campos de la condición. La vista previa muestra **Las condiciones coinciden: se aplican las reglas.** o **Las condiciones no coinciden: se omite la regla.**.
 * Más abajo se ve el valor después de **cada paso** y el resultado final que se escribiría ("invoice_id → INV-230620-03A", o "unchanged").
 
 No se guarda nada mientras usa la vista previa. Haga clic en **Guardar** para guardar la regla.
@@ -133,30 +133,30 @@ No se guarda nada mientras usa la vista previa. Haga clic en **Guardar** para gu
 
 ### Limpiar el número de factura de un proveedor
 
-Campo de encabezado **Invoice Number** · solo cuando *Supplier ID is HP0000278* · Recortar → Cambio de caso UPPERCASE → Afijo añadir prefijo `INV-`.
+Campo de encabezado **Número de factura** · solo cuando *Supplier ID is HP0000278* · Recortar → Cambio de caso UPPERCASE → Afijo añadir prefijo `INV-`.
 Ejemplo `  230620-03a ` → `INV-230620-03A`. Consulte la captura de pantalla de la pipeline más arriba.
 
 ### Mapear códigos de unidad
 
-Columna de tabla **INVOICE_TABLE / UNIT** · siempre · Recortar → Map values `STK → PCE`, `KG → KGM`, `Std → HUR`, **Ignore case when matching** activado, valor sin coincidencia vacío (conservar la entrada).
+Columna de tabla **INVOICE_TABLE / UNIT** · siempre · Recortar → Map values `STK → PCE`, `KG → KGM`, `Std → HUR`, **Ignorar mayúsculas y minúsculas al hacer coincidir** activado, valor sin coincidencia vacío (conservar la entrada).
 
-<figure><img src="../../../../.gitbook/assets/transformation-column-value-map.png" alt="Una regla de columna de tabla con Map values"><figcaption><p>Map values en la columna UNIT: <code>stk</code> se convierte en <code>PCE</code></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-column-value-map-es.png" alt="Asignación de valores de una columna en el editor de transformaciones."><figcaption><p>Asignación de valores de una columna en el editor de transformaciones.</p></figcaption></figure>
 
 ### Una línea total para un proveedor conciliado por el total
 
 Filas de la tabla **INVOICE_TABLE** · solo cuando *Supplier ID is HP0000278* · Clear all rows → Add a row con `POSITION` = valor `001`, `QUANTITY` = valor `1`, `NET_AMOUNT` = campo *Total Net Amount*.
 
-<figure><img src="../../../../.gitbook/assets/transformation-add-row-columns.png" alt="Una regla de filas de tabla: borrar todas las filas y luego añadir una fila"><figcaption><p>Tres filas extraídas se sustituyen por una fila que contiene el importe neto</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-add-row-columns-es.png" alt="Paso de transformación sin guardar para añadir una fila."><figcaption><p>Paso de transformación sin guardar para añadir una fila.</p></figcaption></figure>
 
-El orden importa: **Clear all rows** debe ir **antes** de **Add a row**. El constructor le avisa si no es así ("Clear all rows runs after Add a row …") y también le avisa si un paso **Add a row** no va precedido de **Clear all rows**, porque entonces la regla añadiría otra copia de la fila en cada guardado. Combine esta regla con una regla de PO matching por total que esté activa para documentos de una sola línea.
+El orden importa: **Borrar todas las filas** debe ir **antes** de **Add a row**. El constructor le avisa si no es así ("Clear all rows runs after Add a row …") y también le avisa si un paso **Add a row** no va precedido de **Borrar todas las filas**, porque entonces la regla añadiría otra copia de la fila en cada guardado. Combine esta regla con una regla de PO matching por total que esté activa para documentos de una sola línea.
 
 ### Rellenar la orden de compra a partir del campo del número de factura
 
-Campo de encabezado **Purchase Order** · solo cuando *Purchase Order is empty* · **Read from** *Invoice Number* → Recortar → Cambio de caso UPPERCASE.
+Campo de encabezado **Número de pedido** · solo cuando *Purchase Order is empty* · **Leer desde** *Invoice Number* → Recortar → Cambio de caso UPPERCASE.
 
 <figure><img src="../../../../.gitbook/assets/transformation-po-from-invoice-number-es.png" alt="El constructor de reglas para la regla que rellena Purchase Order a partir de Invoice Number, con la vista previa en directo"><figcaption><p>La regla y su vista previa en directo: <code>po-4711</code> se convierte en <code>PO-4711</code> en <code>purchase_order</code>. Regla de ejemplo en un tipo de documento de prueba.</p></figcaption></figure>
 
-Algunos proveedores imprimen el número de pedido donde la extracción espera el número de factura. Entonces **Invoice Number** contiene el número de orden de compra y **Purchase Order** está vacío, y el conciliador de órdenes de compra no encuentra nada que conciliar. Esta regla copia el valor antes de que empiece la conciliación. En una prueba en un sistema de desarrollo, un documento con exactamente este problema pasó de *sin conciliar* a *totalmente conciliado* (2 de 2 líneas) al guardarlo con la regla. La regla solo se ejecuta mientras **Purchase Order** está vacío, por lo que nunca sobrescribe un número que se extrajo correctamente.
+Algunos proveedores imprimen el número de pedido donde la extracción espera el número de factura. Entonces **Número de factura** contiene el número de orden de compra y **Número de pedido** está vacío, y el conciliador de órdenes de compra no encuentra nada que conciliar. Esta regla copia el valor antes de que empiece la conciliación. En una prueba en un sistema de desarrollo, un documento con exactamente este problema pasó de *sin conciliar* a *totalmente conciliado* (2 de 2 líneas) al guardarlo con la regla. La regla solo se ejecuta mientras **Número de pedido** está vacío, por lo que nunca sobrescribe un número que se extrajo correctamente.
 
 ### Hacer comparables los números de artículo para la conciliación de órdenes de compra
 
@@ -189,7 +189,7 @@ Si la factura indica `Art.-Nr. ab-12/3` y la orden de compra tiene `AB123`, las 
 
 ## Reglas de enrutamiento (suborganización)
 
-Una regla de **Enrutamiento** no cambia un campo. Marca un atributo en el documento cuando se cumplen sus condiciones: hoy, la **suborganización**. Elija **Assign a fixed sub-organisation** y selecciónela de la lista, o **Map from a field** para asignar valores de un campo extraído a suborganizaciones. El documento pasa entonces a pertenecer a esa suborganización, con sus usuarios, permisos y ajustes. Un valor que no sea una suborganización válida nunca se escribe.
+Una regla de **Enrutamiento** no cambia un campo. Marca un atributo en el documento cuando se cumplen sus condiciones: hoy, la **suborganización**. Elija **Asignar una suborganización fija** y selecciónela de la lista, o **Mapa desde un campo** para asignar valores de un campo extraído a suborganizaciones. El documento pasa entonces a pertenecer a esa suborganización, con sus usuarios, permisos y ajustes. Un valor que no sea una suborganización válida nunca se escribe.
 
 ## Cuándo se ejecutan las reglas
 
@@ -201,7 +201,7 @@ Una regla de **Enrutamiento** no cambia un campo. Marca un atributo en el docume
 
 La mayoría de los pasos dan el mismo resultado cuando se ejecutan sobre su propia salida: recortar un valor ya recortado, mapear `PCE` de nuevo, añadir un prefijo que ya está. Estas reglas pueden ejecutarse sin problema en cada guardado.
 
-**Take a slice**, **Extract** y **Find & replace** son distintos: si se ejecutan de nuevo sobre su propio resultado, siguen cambiándolo (un fragmento toma los cuatro primeros caracteres de los cuatro primeros caracteres …). Por eso DocBits no le permite guardar una regla que aplique estos pasos a su propio campo de destino. Haga una de estas dos cosas:
+**Toma una rebanada**, **Extracto** y **Buscar y reemplazar** son distintos: si se ejecutan de nuevo sobre su propio resultado, siguen cambiándolo (un fragmento toma los cuatro primeros caracteres de los cuatro primeros caracteres …). Por eso DocBits no le permite guardar una regla que aplique estos pasos a su propio campo de destino. Haga una de estas dos cosas:
 
 * active **Ejecutar solo una vez por documento**, o
 * **Read from another field**, de modo que la entrada permanezca sin cambios.
@@ -242,7 +242,7 @@ Con **Ejecución de registro** activado, cada aplicación de la regla se escribe
 | --- | --- |
 | La regla no cambió nada | ¿Está activa y está habilitada la función para el tipo de documento? ¿Se cumple la condición para este documento (valor exacto, incluidos espacios y mayúsculas/minúsculas)? ¿Se ha aplicado ya al documento una regla de **ejecución única**? Revise el rastro del registro. |
 | El valor cambia de nuevo en cada guardado | La pipeline contiene Take a slice, Extract o Find & replace. Active **Ejecutar solo una vez por documento**, o lea de otro campo. |
-| Una tabla obtiene una fila más en cada guardado | Un paso **Add a row** sin **Clear all rows** antes. Añada primero el paso de borrado, o active la ejecución única. |
+| Una tabla obtiene una fila más en cada guardado | Un paso **Add a row** sin **Borrar todas las filas** antes. Añada primero el paso de borrado, o active la ejecución única. |
 | La conciliación de la orden de compra se pierde tras guardar | Una regla de tabla sustituyó las líneas conciliadas. El motivo en el documento nombra la regla; haga que la regla reproduzca las mismas líneas o configúrela para ejecutarse una sola vez. |
 | Una regla de conciliación nunca se ejecuta tras la transformación | La regla cambió el número de líneas; ajuste la condición de activación de la regla de conciliación. |
 | La regla necesita un valor de los datos maestros del proveedor, pero sigue vacío | Active **Run after lookup population (before PO match)**. |

@@ -1,6 +1,6 @@
 # Configuración de exportación del portal de proveedores
 
-<figure><img src="../../../.gitbook/assets/supplier_export_configuration.png" alt="Configuración de exportación de proveedores"><figcaption><p>Página de configuración de exportación de proveedores</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t014-es.png" alt="Configuración de exportación del portal de proveedores."><figcaption><p>Configuración de exportación del portal de proveedores.</p></figcaption></figure>
 
 ## Descripción general
 

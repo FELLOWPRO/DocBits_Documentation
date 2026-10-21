@@ -4,7 +4,7 @@ La página **Infraestructura** ofrece a los administradores una vista en vivo de
 
 > **Acceso:** Infraestructura es una página exclusiva para administradores. Abra **Configuración → Organización y Acceso → Infraestructura**.
 
-<figure><img src="../../.gitbook/assets/infrastructure_overview.png" alt="Página de Infraestructura con la pestaña Topología abierta"><figcaption><p>La página de Infraestructura, pestaña Topología</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-infrastructure_overview-es.png" alt="Resumen de la infraestructura en español."><figcaption><p>Resumen de la infraestructura en español.</p></figcaption></figure>
 
 La página se divide en tres pestañas:
 
@@ -49,7 +49,7 @@ Los componentes que pertenecen a un módulo opcional (Búsqueda de texto complet
 
 La pestaña Procesamiento muestra la canalización de procesamiento de documentos de **su organización** — cuándo se ejecutó cada paso por última vez y si el trabajo fluye o se acumula.
 
-<figure><img src="../../.gitbook/assets/infrastructure_processing.png" alt="Tabla de procesamiento con distintivos de estado"><figcaption><p>Estado de procesamiento por paso para su organización</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-t004-es.png" alt="Procesos de infraestructura y última ejecución."><figcaption><p>Procesos de infraestructura y última ejecución.</p></figcaption></figure>
 
 | Columna | Descripción |
 |---------|-------------|
@@ -61,7 +61,7 @@ Distintivos de estado:
 
 | Distintivo | Significado |
 |------------|-------------|
-| **OK** (verde) | Sin errores recientes y nada en espera — el paso está sano. |
+| **DE ACUERDO** (verde) | Sin errores recientes y nada en espera — el paso está sano. |
 | **En curso (N)** (ámbar) | `N` documentos se están procesando actualmente en este paso. |
 | **Error (N)** (rojo) | `N` documentos fallaron recientemente en este paso. |
 
@@ -71,7 +71,7 @@ Los errores y *en curso* son señales independientes, por lo que un paso puede m
 
 La pestaña Tareas programadas enumera los trabajos recurrentes en segundo plano que mantienen DocBits en funcionamiento (actualizaciones de caché, alertas de estado, tiempos de espera de documentos, sincronizaciones salientes y más) y confirma que cada uno se ejecuta puntualmente.
 
-<figure><img src="../../.gitbook/assets/infrastructure_scheduled.png" alt="Tabla de tareas programadas"><figcaption><p>Trabajos recurrentes en segundo plano y su estado de planificación</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-t005-es.png" alt="Tareas programadas de infraestructura."><figcaption><p>Tareas programadas de infraestructura.</p></figcaption></figure>
 
 | Columna | Descripción |
 |---------|-------------|

@@ -8,20 +8,20 @@ DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Yo
 
 * **Navegar a la Configuración de Grupos:** Inicie sesión en su cuenta de administrador y vaya a Group Settings en el panel de administración.
 
-<figure><img src="../../../../../.gitbook/assets/groups_settings_overview.png" alt="Vista general de la configuración de grupos"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-t002-es.png" alt="Acceso a la configuración de grupos y permisos."><figcaption><p>Acceso a la configuración de grupos y permisos.</p></figcaption></figure>
 
 Se abrirá esta ventana:
 
-<figure><img src="../../../../../.gitbook/assets/groups_list_overview.png" alt="Vista general de la lista de grupos"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-t003-es.png" alt="Lista de grupos con los nombres ocultos."><figcaption><p>Lista de grupos con los nombres ocultos.</p></figcaption></figure>
 
 * **Hacer clic en el botón + New:** Si desea agregar un nuevo grupo, haga clic en el botón + New para iniciar el proceso de creación de un nuevo grupo.
 
-<figure><img src="../../../../../.gitbook/assets/add_new_group_button.png" alt="Botón para agregar un nuevo grupo"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u005-es.png" alt="Diálogo de creación de grupo sin guardar."><figcaption><p>Diálogo de creación de grupo sin guardar.</p></figcaption></figure>
 
 * **Completar la tabla:** Proporcione el nombre del grupo y una descripción del grupo.
 * **Guardar los detalles:** Una vez que haya completado el grupo y la descripción, haga clic en el botón "Save".
 
-<figure><img src="../../../../../.gitbook/assets/new_group_form_save.png" alt="Guardar el formulario de nuevo grupo"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u006-es.png" alt="Administración de grupos y permisos."><figcaption><p>Administración de grupos y permisos.</p></figcaption></figure>
 
 ## Editar Grupos:
 

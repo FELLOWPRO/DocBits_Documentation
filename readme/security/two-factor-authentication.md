@@ -18,7 +18,7 @@ Cuando activas tu primer factor, DocBits también te proporciona **diez códigos
 
 Abre la **configuración de tu perfil / cuenta** (menú de cuenta en la parte superior derecha → **Editar perfil**) y selecciona **Autenticación de dos factores**. El cuadro de diálogo de 2FA muestra tu estado actual y los métodos que puedes añadir.
 
-<figure><img src="../.gitbook/assets/mfa-2fa-dialog.png" alt="El cuadro de diálogo de Autenticación de dos factores"><figcaption><p>El cuadro de diálogo de Autenticación de dos factores. Desde aquí puedes activar una aplicación de autenticación, la verificación por correo electrónico, añadir una clave de acceso o abrir <strong>Gestionar</strong>.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/prior-u047-es.png" alt="Métodos de autenticación de dos factores disponibles."><figcaption><p>Métodos de autenticación de dos factores disponibles.</p></figcaption></figure>
 
 ## Configura una aplicación de autenticación (TOTP)
 
@@ -27,7 +27,6 @@ Abre la **configuración de tu perfil / cuenta** (menú de cuenta en la parte su
 3. Introduce el código de 6 dígitos que muestra tu aplicación y confirma.
 4. DocBits activa la 2FA y muestra tus **códigos de respaldo** (ver más abajo).
 
-<figure><img src="../.gitbook/assets/mfa-totp-setup.png" alt="La pantalla de configuración de la aplicación de autenticación con código QR"><figcaption><p>Escanea el código QR con tu aplicación de autenticación, o introduce la clave manual. Luego confirma con el código de 6 dígitos que muestra la aplicación.</p></figcaption></figure>
 
 ## Configura la verificación por correo electrónico
 
@@ -48,7 +47,6 @@ Cuando activas tu **primer** factor, DocBits muestra **diez códigos de respaldo
 * Guárdalos en un lugar seguro (un gestor de contraseñas es lo ideal).
 * Puedes generar un conjunto nuevo en cualquier momento con **Regenerar códigos de respaldo** (esto invalida el conjunto anterior).
 
-<figure><img src="../.gitbook/assets/mfa-backup-codes.png" alt="La pantalla de códigos de respaldo"><figcaption><p>Tus diez códigos de respaldo, mostrados una sola vez. Cada uno funciona una única vez: guárdalos en un lugar seguro.</p></figcaption></figure>
 
 {% hint style="warning" %}
 Los códigos de respaldo solo se muestran en el momento en que se generan. DocBits no puede volver a mostrarlos: guárdalos de inmediato.
@@ -65,14 +63,13 @@ Los códigos de respaldo solo se muestran en el momento en que se generan. DocBi
    * **Clave de acceso** — haz clic en **Usar una clave de acceso** y confirma con Touch ID / Windows Hello / tu clave.
    * **Código de respaldo** — si no puedes usar tu método habitual.
 
-    <figure><img src="../.gitbook/assets/mfa-challenge.png" alt="La pantalla de verificación del segundo factor"><figcaption><p>Después de tu contraseña, DocBits solicita tu segundo factor. Cambia de método con <strong>Usar una clave de acceso</strong> o <strong>Enviarme un código por correo electrónico</strong>, y opcionalmente confía en el dispositivo durante 30 días.</p></figcaption></figure>
+
 3. Si tiene éxito, habrás iniciado sesión.
 
 ### Cómo se ve el código por correo electrónico
 
 Si eliges **Correo electrónico**, DocBits envía un mensaje con un código de 6 dígitos que caduca en 10 minutos:
 
-<figure><img src="../.gitbook/assets/mfa-email-otp.png" alt="El correo electrónico de código de verificación de DocBits"><figcaption><p>El correo electrónico con el código de verificación. El código caduca a los 10 minutos y se puede usar una sola vez.</p></figcaption></figure>
 
 ## Confía en este dispositivo
 
@@ -85,7 +82,6 @@ Abre el cuadro de diálogo de 2FA y haz clic en **Gestionar** para revisar lo qu
 * **Claves de acceso** — renombra una clave de acceso (haz clic en su nombre) o elimínala. Eliminar tu último factor restante desactiva la 2FA.
 * **Dispositivos de confianza** — revoca un solo dispositivo, o **Revocar todos los dispositivos** para forzar una nueva solicitud de 2FA en todas partes.
 
-<figure><img src="../.gitbook/assets/mfa-passkeys-list.png" alt="Gestión de claves de acceso registradas y dispositivos de confianza"><figcaption><p>La vista Gestionar enumera tus claves de acceso registradas y tus dispositivos de confianza, donde puedes renombrarlos o eliminarlos.</p></figcaption></figure>
 
 ## Desactiva la 2FA
 
@@ -98,3 +94,12 @@ Si tu organización **requiere** MFA, no podrás iniciar sesión con contraseña
 ## Inicio de sesión sin contraseña (opcional)
 
 Una vez que tengas una clave de acceso, puedes iniciar sesión **sin escribir tu contraseña** usando **Iniciar sesión con una clave de acceso** en la pantalla de inicio de sesión. Tu contraseña seguirá funcionando como alternativa. El inicio de sesión sin contraseña requiere que la clave de acceso te verifique (Touch ID / Windows Hello / PIN), por lo que es más rápido y resistente al phishing.
+
+
+Guarde los códigos de respaldo en un lugar seguro y separado del dispositivo de autenticación. Cada código es de un solo uso.
+
+
+Configure la verificación por correo desde el diálogo de autenticación de dos factores. Introduzca el código recibido en su propia cuenta y complete la confirmación prevista.
+
+
+Configure una aplicación de autenticación desde el diálogo de dos factores. Registre el secreto solo en su aplicación aprobada y confirme con el código temporal actual.

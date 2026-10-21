@@ -4,13 +4,13 @@
 
 > **Acceso:** Abra **Ajustes → Organización y acceso → Usuarios** y haga clic en el botón **Análisis de inicios de sesión** en la esquina superior derecha (`/settings/login-analytics`).
 
-<figure><img src="../../../../../.gitbook/assets/login_analytics_overview.png" alt="Página de Análisis de inicios de sesión con el gráfico de actividad y las tarjetas de resumen"><figcaption><p>Actividad de inicios de sesión de la organización durante el periodo seleccionado</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u003-es.png" alt="Resumen del análisis de inicios de sesión."><figcaption><p>Resumen del análisis de inicios de sesión.</p></figcaption></figure>
 
 ## Rango de tiempo
 
-Elija el periodo que desea analizar con el selector de la esquina superior derecha: **7D**, **30D**, **90D**, **180D**, **Year** o **Custom** para un rango de fechas libre. Todo lo que hay en la página —el gráfico y las tarjetas de resumen— se recalcula para el periodo que elija.
+Elija el periodo que desea analizar con el selector de la esquina superior derecha: **7D**, **30D**, **90D**, **180D**, **Año** o **A medida** para un rango de fechas libre. Todo lo que hay en la página —el gráfico y las tarjetas de resumen— se recalcula para el periodo que elija.
 
-El aviso de **Data Information** vuelve a indicar la ventana exacta que se está viendo (por ejemplo, *Showing data from 19.05.2026 to 18.06.2026*), de modo que siempre queda claro qué fechas abarcan las cifras.
+El aviso de **Información de datos** vuelve a indicar la ventana exacta que se está viendo (por ejemplo, *Showing data from 19.05.2026 to 18.06.2026*), de modo que siempre queda claro qué fechas abarcan las cifras.
 
 ## Gráfico de actividad de inicios de sesión
 
@@ -18,10 +18,10 @@ El gráfico representa dos series a lo largo del periodo seleccionado:
 
 | Serie | Significado |
 |--------|-------------|
-| **Total Logins** | El número de inicios de sesión por día, incluidos los inicios de sesión repetidos de la misma persona. |
-| **Unique Users** | Cuántos usuarios *distintos* iniciaron sesión ese día. |
+| **Total de inicios de sesión** | El número de inicios de sesión por día, incluidos los inicios de sesión repetidos de la misma persona. |
+| **Usuarios únicos** | Cuántos usuarios *distintos* iniciaron sesión ese día. |
 
-Pase el cursor sobre cualquier punto para leer el valor exacto de ese día. Los picos muestran sus días de mayor actividad; una línea plana de **Unique Users** bajo una línea irregular de **Total Logins** significa que unas pocas personas iniciaron sesión muchas veces.
+Pase el cursor sobre cualquier punto para leer el valor exacto de ese día. Los picos muestran sus días de mayor actividad; una línea plana de **Usuarios únicos** bajo una línea irregular de **Total de inicios de sesión** significa que unas pocas personas iniciaron sesión muchas veces.
 
 ## Tarjetas de resumen
 
@@ -29,9 +29,9 @@ Debajo del gráfico, tres tarjetas resumen todo el periodo seleccionado:
 
 | Tarjeta | Significado |
 |------|-------------|
-| **Total Logins** | Todos los inicios de sesión a lo largo del periodo. |
-| **Unique Users** | Usuarios distintos que iniciaron sesión al menos una vez. |
-| **Avg/Day** | Número medio de inicios de sesión por día durante el periodo. |
+| **Total de inicios de sesión** | Todos los inicios de sesión a lo largo del periodo. |
+| **Usuarios únicos** | Usuarios distintos que iniciaron sesión al menos una vez. |
+| **Promedio/día** | Número medio de inicios de sesión por día durante el periodo. |
 
 ## Privacidad
 

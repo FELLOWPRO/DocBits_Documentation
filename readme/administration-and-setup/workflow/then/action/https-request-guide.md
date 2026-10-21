@@ -25,11 +25,7 @@ Agregue esta tarjeta al grupo **Entonces** del Generador de flujo de trabajo: la
 
 ## Propósito
 
-Esta tarjeta envía un mensaje seguro a un sitio web o servicio y puede recibir una respuesta. Es más simple que la tarjeta "Call API" y es útil para integraciones rápidas.
-
-**Ejemplo del mundo real:** Envíe los datos de la factura a su sistema de contabilidad o pregunte a un sistema externo si un empleado está aprobado para procesar esta compra.
-
-***
+La tarjeta de petición HTTPS utiliza una URL HTTPS configurada y sus propias cabeceras. `call_api` utiliza una ruta relativa de la API DocBits y el contexto del usuario actual; su resultado procede del texto de respuesta. Elija según el endpoint y el contrato de respuesta, no por una distinción entre API sencilla y compleja.
 
 ## Cuándo utilizar esta tarjeta
 
@@ -313,13 +309,7 @@ Headers: Authorization: Bearer token
 
 ## Diferencia con la tarjeta "Call API"
 
-| Característica        | Solicitud HTTPS      | Llamar API          |
-| -------------- | ------------------ | ----------------- |
-| Simplicidad     | Sencillo             | Más complejo      |
-| Parámetros     | Básico              | Avanzado          |
-| Manejo de errores | Básico              | Detallado          |
-| Usar para        | Integraciones rápidas | API complejas      |
-| Lo mejor para       | Ganchos web           | API profesionales |
+La tarjeta de petición HTTPS utiliza una URL HTTPS configurada y sus propias cabeceras. `call_api` utiliza una ruta relativa de la API DocBits y el contexto del usuario actual; su resultado procede del texto de respuesta. Elija según el endpoint y el contrato de respuesta, no por una distinción entre API sencilla y compleja.
 
 ***
 

@@ -1,6 +1,6 @@
-# Document Type Operation one of
+# Typ dokumentu Operacja jedna z
 
-<figure><img src="../../../../.gitbook/assets/userlmn_14ab8ac5e693d9bbe68d178795d12a9f (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f6993281dacc-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -8,12 +8,12 @@ Ta karta służy do zarządzania akcjami na dokumentach w zależności od ich ty
 
 ## **Komponenty karty:**
 
-1. **Operator**
+1. **Operatora**
    * **Opis**: Określa logikę warunkową stosowaną do typów dokumentów.
    * **Opcje**:
      * **is**: Operacja zostanie wyzwolona, jeśli typ dokumentu odpowiada jednemu z określonych typów na liście.
-     * **is not**: Operacja zostanie wyzwolona, jeśli typ dokumentu nie odpowiada żadnemu z wymienionych typów.
-2. **Document Types List**
+     * **nie jest**: Operacja zostanie wyzwolona, jeśli typ dokumentu nie odpowiada żadnemu z wymienionych typów.
+2. **Lista typów dokumentów**
    * **Opis**: Określa listę typów dokumentów, do których będzie miał zastosowanie warunek.
    * **Szczegóły**: Obejmuje to różne typy dokumentów, takie jak "Invoice", "Purchase Order" itp., na podstawie których oceniany będzie warunek (is/is not).
 
@@ -33,3 +33,15 @@ Ta karta służy do zarządzania akcjami na dokumentach w zależności od ich ty
 ## Podsumowanie:
 
 Karta przepływu pracy "Document Type Condition" odgrywa kluczową rolę w zarządzaniu operacjami opartymi na dokumentach z precyzją i elastycznością. Korzystając z prostej logiki warunkowej, pomaga zapewnić, że dokumenty są odpowiednio przetwarzane, zwiększając efektywność i zgodność. Jasne udokumentowanie tej karty pomoże użytkownikom zrozumieć, jak skutecznie ją wdrożyć i wykorzystać, czyniąc ją cenną częścią dokumentacji systemu ERP.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktyczny przykład
+
+**Kiedy używać:** Użyj tej samej walidacji dla kilku typów dokumentów.
+
+**Konfiguracja:** Wybierz operator jest-jednym z oraz typy `Invoice` i `Credit Note`.
+
+**Oczekiwany wynik i kontrprzykład:** `Invoice` udany; `Order` nie.
+
+To jest ilustracyjna konfiguracja i oczekiwany wynik. Korzystaj z pól, użytkowników i grup skonfigurowanych w Twojej organizacji testowej; nie jest to twierdzenie, że ten przykład został wykonany.

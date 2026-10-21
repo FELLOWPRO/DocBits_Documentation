@@ -1,6 +1,6 @@
-# Item Id on Purchase Order
+# Identyfikator przedmiotu w zamówieniu
 
-<figure><img src="../../../../.gitbook/assets/image (275).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4a5b4a7c3888-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -8,7 +8,7 @@ Ta karta przepływu pracy służy do porównania identyfikatorów pozycji (item 
 
 ## **Komponenty karty:**
 
-1. **Any / All:**
+1. **Dowolny / Wszystkie:**
    * **Opis**: Definiuje, czy warunek dotyczy dowolnych, czy wszystkich przypadków porównań identyfikatorów pozycji.
    * **Opcje**:
      * **Any**: Warunek jest spełniony, jeśli dowolny identyfikator pozycji w zamówieniu zakupu odpowiada identyfikatorowi pozycji w dokumencie.
@@ -16,8 +16,8 @@ Ta karta przepływu pracy służy do porównania identyfikatorów pozycji (item 
 2. **Operator:**
    * **Opis**: Definiuje warunek porównania identyfikatora pozycji w zamówieniu zakupu z identyfikatorem pozycji w dokumencie.
    * **Opcje**:
-     * **Equals (=)**: Weryfikuje, czy identyfikator pozycji w zamówieniu zakupu dokładnie odpowiada identyfikatorowi pozycji w dokumencie.
-     * **Not Equals (≠)**: Zapewnia, że identyfikator pozycji w zamówieniu zakupu nie odpowiada identyfikatorowi pozycji w dokumencie.
+     * **Równa się (=)**: Weryfikuje, czy identyfikator pozycji w zamówieniu zakupu dokładnie odpowiada identyfikatorowi pozycji w dokumencie.
+     * **Nie równa się (≠)**: Zapewnia, że identyfikator pozycji w zamówieniu zakupu nie odpowiada identyfikatorowi pozycji w dokumencie.
 
 ## **Funkcjonalność:**
 

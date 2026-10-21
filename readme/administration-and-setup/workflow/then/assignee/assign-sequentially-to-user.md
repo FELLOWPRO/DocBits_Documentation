@@ -1,17 +1,17 @@
-# Assign Sequentially to User
+# Przypisz sekwencyjnie do użytkownika
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5b15eaee7258-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
 ## **Cel**
 
-Karta przepływu pracy "**Assign Sequentially to User**" automatyzuje przypisywanie dokumentów do wybranego użytkownika w sposób sekwencyjny. Wartość priorytetu określa kolejność przypisywania, przy czym niższe liczby reprezentują wyższy priorytet.
+Karta przepływu pracy "**Przypisz sekwencyjnie do użytkownika**" automatyzuje przypisywanie dokumentów do wybranego użytkownika w sposób sekwencyjny. Wartość priorytetu określa kolejność przypisywania, przy czym niższe liczby reprezentują wyższy priorytet.
 
 ## **Komponenty karty**
 
-1. **User**
+1. **Użytkownik**
    * **Opis**: Wybrany użytkownik otrzyma dokument na podstawie sekwencji przepływu pracy.
    * **Szczegóły**: Menu rozwijane, które wymienia wszystkich dostępnych użytkowników do przypisania.
-2. **Priority (Value)**
+2. **Priorytet (wartość)**
    * **Opis**: Numeryczne pole wprowadzania, w którym można ustawić poziom priorytetu dla użytkownika.
    * **Szczegóły**: Niższe liczby oznaczają wyższy priorytet. Dokumenty są przypisywane do użytkowników w rosnącej kolejności priorytetu.
 
@@ -23,13 +23,25 @@ Karta przepływu pracy "**Assign Sequentially to User**" automatyzuje przypisywa
 
 ## **Konfiguracja**
 
-1. Dodaj kartę **Assign the Document Sequentially** do swojego przepływu pracy.
-2. Skonfiguruj pole **User**:
+1. Dodaj kartę **Przypisz dokument sekwencyjnie** do swojego przepływu pracy.
+2. Skonfiguruj pole **Użytkownik**:
    * Wybierz użytkownika z menu rozwijanego.
-3. Skonfiguruj pole **Priority (Value)**:
+3. Skonfiguruj pole **Priorytet (wartość)**:
    * Wprowadź wartość liczbową, aby ustawić priorytet przypisania.
 4. Zapisz i aktywuj przepływ pracy, aby zastosować konfigurację.
 
 ## **Podsumowanie**
 
 Karta przepływu pracy "Assign the Document Sequentially to User" zapewnia zorganizowaną dystrybucję dokumentów poprzez przypisywanie ich w sekwencji opartej na priorytetach. Zwiększa to zarządzanie zadaniami i redukuje opóźnienia w przetwarzaniu.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktyczny przykład
+
+**Kiedy używać:** Dodaj użytkownika do priorytetowej sekwencji zatwierdzania dokumentów.
+
+**Konfiguracja:** Wybierz `Demo Reviewer A` i priorytet `10`. Dodaj osobne zadanie z priorytetem `20`, jeśli potrzebny będzie późniejszy recenzent.
+
+**Oczekiwany wynik i kontrprzykład:** Przypisania mają skonfigurowane priorytety; niższa wartość liczbowa ma wyższy priorytet. Sprawdź kolejność przypisań, a nie tylko kolejność kart na płótnie.
+
+To jest ilustracyjna konfiguracja i oczekiwany wynik. Korzystaj z pól, użytkowników i grup skonfigurowanych w Twojej organizacji testowej; nie jest to twierdzenie, że ten przykład został wykonany.

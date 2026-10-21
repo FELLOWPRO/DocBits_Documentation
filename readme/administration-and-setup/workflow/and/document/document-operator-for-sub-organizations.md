@@ -1,6 +1,6 @@
-# Document Operator for Sub-Organizations
+# Operator dokumentów dla podorganizacji
 
-<figure><img src="../../../../.gitbook/assets/image (42).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f97575f86ed-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## Cel:
 
@@ -8,12 +8,12 @@ Ta karta przepływu pracy ocenia, czy dokument należy do określonej sub-organi
 
 ## Komponenty karty:
 
-1. **Operator**
+1. **Operatora**
    * **Opis:** Definiuje, czy dokument musi należeć do określonej sub-organizacji, czy nie.
    * **Opcje:**
      * **Is:** Dokument musi należeć do określonej sub-organizacji, aby warunek był prawdziwy.
-     * **Is Not:** Dokument nie może należeć do określonej sub-organizacji, aby warunek był prawdziwy.
-2. **Sub-org**
+     * **Nie jest:** Dokument nie może należeć do określonej sub-organizacji, aby warunek był prawdziwy.
+2. **Podorganizacja**
    * **Opis:** Określa sub-organizację, z którą porównywany ma być dokument.
    * **Szczegóły:** Powinno to odpowiadać identyfikatorowi sub-organizacji. Porównanie sprawdza, czy dokument należy do określonej sub-organizacji.
 
@@ -33,3 +33,15 @@ Ta karta przepływu pracy ocenia, czy dokument należy do określonej sub-organi
 ## Podsumowanie:
 
 Karta przepływu pracy "Document in Sub-organization" jest pomocnym narzędziem do automatyzacji akcji na podstawie tego, czy dokument należy do określonej sub-organizacji. Zapewniając, że dokumenty są przetwarzane zgodnie z regułami specyficznymi dla sub-organizacji, karta ta poprawia efektywność przepływu pracy i zapewnia, że akcje są wykonywane we właściwym kontekście organizacyjnym.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktyczny przykład
+
+**Kiedy używać:** Trasuj dokumenty należące do jednej jednostki biznesowej.
+
+**Konfiguracja:** Wybierz podorganizację `Demo North` i operator równości.
+
+**Oczekiwany wynik i kontrprzykład:** Dokument w `Demo North` przechodzi pomyślnie. Dokument w `Demo South` kończy się niepowodzeniem.
+
+To jest ilustracyjna konfiguracja i oczekiwany wynik. Korzystaj z pól, użytkowników i grup skonfigurowanych w Twojej organizacji testowej; nie jest to twierdzenie, że ten przykład został wykonany.

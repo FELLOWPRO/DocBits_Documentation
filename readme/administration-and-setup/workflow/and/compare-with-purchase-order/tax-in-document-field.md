@@ -1,6 +1,6 @@
-# Tax in document field
+# Podatek w polu dokumentu
 
-<figure><img src="../../../../.gitbook/assets/image (268).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-c8c9a92d10ce-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -8,28 +8,28 @@ Ta karta przepływu pracy służy do oceny, czy wartość podatku w polu dokumen
 
 ## **Komponenty karty:**
 
-1. **Field Name**
+1. **Nazwa pola**
    * **Opis**: Określa pole dokumentu zawierające wartość podatku do porównania z wartością podatku w zamówieniu zakupu.
    * **Szczegóły**: To pole musi odpowiadać dokładnemu identyfikatorowi wartości podatku w dokumencie.
-2. **Operator**
+2. **Operatora**
    * **Opis**: Definiuje warunek, który ma być zastosowany do porównania między wartością podatku w dokumencie a wartością podatku w zamówieniu zakupu.
    * **Opcje**:
-     * **Equals (=)**: Sprawdza, czy podatek w polu dokumentu odpowiada podatkowi w zamówieniu zakupu.
-     * **Not Equals (≠)**: Zapewnia, że podatek w polu dokumentu nie odpowiada podatkowi w zamówieniu zakupu.
-     * **Greater Than (>)**: Weryfikuje, czy podatek w polu dokumentu jest większy niż podatek w zamówieniu zakupu.
-     * **Greater or Equals (≥)**: Sprawdza, czy podatek w polu dokumentu jest większy lub równy podatkowi w zamówieniu zakupu.
-     * **Lesser Than (<)**: Weryfikuje, czy podatek w polu dokumentu jest mniejszy niż podatek w zamówieniu zakupu.
-     * **Lesser or Equals (≤)**: Sprawdza, czy podatek w polu dokumentu jest mniejszy lub równy podatkowi w zamówieniu zakupu.
-3. **Master Data Table**
+     * **Równa się (=)**: Sprawdza, czy podatek w polu dokumentu odpowiada podatkowi w zamówieniu zakupu.
+     * **Nie równa się (≠)**: Zapewnia, że podatek w polu dokumentu nie odpowiada podatkowi w zamówieniu zakupu.
+     * **Większe niż (>)**: Weryfikuje, czy podatek w polu dokumentu jest większy niż podatek w zamówieniu zakupu.
+     * **Większy lub równy (≥)**: Sprawdza, czy podatek w polu dokumentu jest większy lub równy podatkowi w zamówieniu zakupu.
+     * **Mniejszy niż (<)**: Weryfikuje, czy podatek w polu dokumentu jest mniejszy niż podatek w zamówieniu zakupu.
+     * **Mniejszy lub równy (≤)**: Sprawdza, czy podatek w polu dokumentu jest mniejszy lub równy podatkowi w zamówieniu zakupu.
+3. **Tabela danych podstawowych**
    * **Opis**: Tabela zawierająca szczegóły zamówienia zakupu, w tym charge ID i wartości podatku.
    * **Szczegóły**: Ta tabela musi mieć odniesienie do charge ID powiązanego z wartością podatku zamówienia zakupu.
-4. **Tolerance Amount**
+4. **Kwota tolerancji**
    * **Opis**: Próg kwoty, w ramach którego wartości podatku mogą się różnić. Służy to uwzględnieniu drobnych rozbieżności w obliczeniach podatku.
    * **Szczegóły**: Kwota tolerancji powinna być wartością liczbową, definiującą maksymalną dozwoloną różnicę między wartościami podatku.
-5. **Tolerance Type**
+5. **Typ tolerancji**
    * **Opis**: Określa typ stosowanej tolerancji, bezwzględnej lub procentowej.
    * **Opcje**:
-     * **Value**: Tolerancja jest stałą wartością liczbową.
+     * **Wartość**: Tolerancja jest stałą wartością liczbową.
      * **Percentage**: Tolerancja jest obliczana jako procent wartości podatku.
 
 ## **Funkcjonalność:**

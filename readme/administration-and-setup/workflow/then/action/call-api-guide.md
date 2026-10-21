@@ -1,96 +1,127 @@
-# Call External API
+# Wywołaj zewnętrzny interfejs API
 
-Te karty trafiają do grupy **Then** w Kreatorze przepływów — akcje uruchamiane po spełnieniu warunków When/And:
+***
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Karty dodaje się do grupy <strong>Then</strong> za pomocą <strong>Add Card</strong>.</p></figcaption></figure>
+Dodaj tę kartę do grupy **Wtedy** Kreatora przepływu pracy — akcje, które zostaną uruchomione po spełnieniu warunków Kiedy/I:
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-pl.png" alt="Niezapisany przykład z kartami Kiedy, I oraz Wtedy. Uzupełnij wszystkie pola przed uruchomieniem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Niezapisany przykład z kartami Kiedy, I oraz Wtedy. Uzupełnij wszystkie pola przed uruchomieniem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
+
+***
+
+## 📌 Informacje o wersji
+
+**Aktualna wersja:** v2 (najnowsza i zalecana) **Stan:** ✅Aktywny
+
+**Historia wersji:**
+
+* v1 → Podstawowe wywołanie API (nie jest już zalecane)
+* **v2 → AKTUALNY** (dodano obsługę wielu języków)
+
+**Co się zmieniło:** wersja 2 dodała obsługę internacjonalizacji (i18n) z kluczami tłumaczeniowymi. Funkcjonalność pozostaje identyczna.
+
+📖 [Historia wersji i zmiany](../../release.md) | [Kompletna baza danych kart](../../cards-overview/export-cards-guide.md)
+
+***
 
 ## Cel
-Ta karta umożliwia wysyłanie danych do zewnętrznej witryny lub usługi i odbieranie informacji zwrotnych. Pomyśl o tym jak o wysłaniu pytania do usługi zewnętrznej i otrzymaniu odpowiedzi, którą możesz wykorzystać w swoim przepływie pracy.
 
-**Rzeczywisty przykład:** Twoja firma korzysta z systemu cenowego na innej witrynie. Ta karta może automatycznie zapytać ten system cenowy o aktualną cenę pozycji i wprowadzić tę cenę do Twojego dokumentu.
+Karta ta umożliwia przesyłanie danych do zewnętrznej strony internetowej lub usługi i otrzymywanie informacji zwrotnych. Pomyśl o tym jak o wysłaniu pytania do usługi zewnętrznej i uzyskaniu odpowiedzi, którą możesz wykorzystać w swoim przepływie pracy.
 
----
+**Przykład z życia codziennego:** Twoja firma korzysta z systemu cenowego na innej stronie internetowej. Ta karta może automatycznie zapytać system cenowy o aktualną cenę przedmiotu i wprowadzić tę cenę do Twojego dokumentu.
+
+***
 
 ## Kiedy używać tej karty
 
 Użyj tej karty, gdy musisz:
-- Uzyskać informacje z usługi zewnętrznej (jak ceny, walidacja lub dane wyszukiwania)
-- Wysłać informacje o dokumencie do innego systemu w celu przetworzenia
-- Zintegrować się z usługami stron trzecich
-- Automatycznie pobierać dane bez ręcznych wyszukiwań
-- Połączyć ze sobą wiele systemów biznesowych
+
+* Uzyskaj informacje z usługi zewnętrznej (takie jak dane dotyczące cen, weryfikacji lub wyszukiwania)
+* Wyślij informacje o dokumencie do innego systemu w celu przetworzenia
+* Integruj z usługami stron trzecich
+* Automatycznie pobieraj dane bez ręcznego wyszukiwania
+* Połącz ze sobą wiele systemów biznesowych
 
 **Typowe scenariusze:**
-- Wyszukiwanie informacji o dostawcy w bazie danych
-- Uzyskiwanie cen w czasie rzeczywistym z usługi cenowej
-- Walidacja danych względem systemu zewnętrznego
-- Pobieranie informacji o wysyłce od dostawcy logistycznego
 
----
+* Wyszukaj informacje o dostawcach w bazie danych
+* Otrzymuj ceny w czasie rzeczywistym za pomocą usługi wyceny
+* Zweryfikuj dane w systemie zewnętrznym
+* Pobierz informacje o wysyłce od dostawcy usług logistycznych
+
+***
 
 ## Jak to działa
 
-1. **Sprawdzenie warunku**: Przepływ pracy najpierw sprawdza, czy warunki w sekcjach "Where" i "And" są spełnione
-2. **Przygotowanie danych**: Karta zbiera skonfigurowane parametry
-3. **Wysłanie żądania**: Wysyła Twoje dane do zewnętrznego API/usługi
-4. **Odbiór odpowiedzi**: Usługa zewnętrzna odpowiada danymi
-5. **Kontynuacja**: Przepływ pracy wykorzystuje te dane w kolejnych kartach
+1. **Sprawdzanie warunku**: Przepływ pracy sprawdza najpierw, czy spełnione są warunki w sekcjach „Kiedy” i „I”
+2. **Przygotuj dane**: Karta zbiera skonfigurowane parametry
+3. **Wyślij żądanie**: Wysyła Twoje dane do zewnętrznego API/usługi
+4. **Odbierz odpowiedź**: Usługa zewnętrzna odpowiada danymi
+5. **Kontynuuj**: Przepływ pracy wykorzystuje te dane w kolejnych kartach
 
----
+***
 
-## Wyjaśnienie parametrów
+## Parametry wyjaśnione
 
-### API Endpoint URL
+### Adres URL punktu końcowego interfejsu API
+
 **Co to jest:** Adres usługi zewnętrznej, z którą chcesz się komunikować
 
 **Przykład:** `https://api.supplier-system.com/product/pricing`
 
-**Jak go znaleźć:** Zapytaj swój zespół IT lub dostawcę usługi o ich punkt końcowy API
+**Jak to znaleźć:** Zapytaj swój zespół IT lub dostawcę usług o punkt końcowy API
 
----
+***
 
-### HTTP Method
+### Metoda HTTP
+
 **Co to jest:** Typ żądania do wysłania
 
 **Opcje:**
-- **GET**: Żądanie informacji (jak zadawanie pytania)
-- **POST**: Wysłanie nowych danych
-- **PUT**: Aktualizacja istniejących danych
-- **DELETE**: Usunięcie danych
+
+* **GET**: Poproś o informacje (np. zadając pytanie)
+* **POST**: Wyślij nowe dane
+* **PUT**: Aktualizuj istniejące dane
+* **DELETE**: Usuń dane
 
 **Najczęstsze:** GET (do pobierania informacji)
 
----
+***
 
-### Headers
-**Co to jest:** Dodatkowe instrukcje dla wywoływanej usługi
+### Nagłówki
+
+**Co to jest:** Dodatkowe instrukcje dotyczące usługi, do której dzwonisz
 
 **Przykład:**
+
 ```
 Authorization: Bearer your-api-key
 Content-Type: application/json
 ```
 
-**Dlaczego jest potrzebne:** Usługi często wymagają uwierzytelniania lub konkretnych instrukcji dotyczących formatu
+**Dlaczego jest to potrzebne:** Usługi często wymagają uwierzytelnienia lub instrukcji dotyczących określonego formatu
 
----
+***
 
-### Parameters (Query Parameters)
+### Parametry (parametry zapytania)
+
 **Co to jest:** Dodatkowe informacje przekazywane w adresie URL
 
 **Przykład:**
+
 ```
 ?supplier_id=12345&currency=USD
 ```
 
-**Rzeczywisty przykład:** Jeśli pytasz o ceny, parametry mogą obejmować identyfikator dostawcy i walutę
+**Prawdziwy przykład:** Jeśli pytasz o ceny, parametry mogą obejmować identyfikator dostawcy i walutę
 
----
+***
 
-### Request Data (Body)
+### Dane żądania (treść)
+
 **Co to jest:** Informacje, które wysyłasz do usługi
 
 **Przykład:**
+
 ```json
 {
   "product_id": "ABC123",
@@ -99,64 +130,72 @@ Content-Type: application/json
 }
 ```
 
-**Kiedy używane:** Podczas korzystania z metod POST lub PUT
+**W przypadku użycia:** W przypadku stosowania metod POST lub PUT
 
----
+***
 
 ## Przykład krok po kroku
 
-### Scenariusz: Uzyskanie cen dostawcy w czasie rzeczywistym
+### Scenariusz: Uzyskaj ceny dostawców w czasie rzeczywistym
 
 **Konfiguracja:**
-1. **Card Type:** Call API
-2. **API Endpoint:** `https://api.suppliers.com/v1/prices`
-3. **Method:** POST
-4. **Headers:** `Authorization: Bearer YOUR-API-KEY`
-5. **Request Data:**
-   ```json
-   {
-     "product_id": "ABC123",
-     "quantity": 100
-   }
-   ```
+
+1. **Typ karty:** Wywołaj API
+2. **Punkt końcowy interfejsu API:** `https://api.suppliers.com/v1/prices`
+3. **Metoda:** POST
+4. **Nagłówki:** `Authorization: Bearer YOUR-API-KEY`
+5.  **Zażądaj danych:**
+
+    ```json
+    {
+      "product_id": "ABC123",
+      "quantity": 100
+    }
+    ```
 
 **Co się dzieje:**
-1. Dokument przybywa z Product ID: ABC123, Quantity: 100
+
+1. Przychodzi dokument z identyfikatorem produktu: ABC123, ilość: 100
 2. Karta wysyła żądanie do API dostawcy
 3. API dostawcy odpowiada: `{"unit_price": 25.50, "total_price": 2550}`
-4. Przepływ pracy kontynuuje z tymi informacjami cenowymi
-5. Następna karta może użyć tych danych do walidacji ceny faktury
+4. Przepływ pracy jest kontynuowany z tymi informacjami o cenach
+5. Następna karta może wykorzystać te dane do sprawdzenia ceny na fakturze
 
----
+***
 
 ## Kroki konfiguracji
 
-### 1. Uzyskaj informacje o API
-Skontaktuj się z dostawcą usługi zewnętrznej i poproś o:
-- [ ] URL punktu końcowego API
-- [ ] Metodę uwierzytelniania (klucz API, nazwa użytkownika/hasło, OAuth)
-- [ ] Wymagane parametry
-- [ ] Oczekiwany format odpowiedzi
-- [ ] Limity szybkości lub kwoty
+### 1. Uzyskaj informacje API
+
+Skontaktuj się z zewnętrznym usługodawcą i poproś:
+
+* [ ] Adres URL punktu końcowego interfejsu API
+* [ ] Metoda uwierzytelnienia (klucz API, nazwa użytkownika/hasło, OAuth)
+* [ ] Wymagane parametry
+* [ ] Oczekiwany format odpowiedzi
+* [ ] Limity stawek lub kwoty
 
 ### 2. Skonfiguruj kartę
-1. Wprowadź URL punktu końcowego API
+
+1. Wprowadź adres URL punktu końcowego interfejsu API
 2. Wybierz metodę HTTP (zwykle GET lub POST)
-3. Dodaj nagłówki uwierzytelniania, jeśli wymagane
+3. W razie potrzeby dodaj nagłówki uwierzytelniające
 4. Dodaj wszelkie wymagane parametry
-5. Sformatuj dane żądania jako JSON, jeśli to konieczne
+5. W razie potrzeby sformatuj dane żądania jako JSON
 
 ### 3. Przetestuj kartę
+
 1. Użyj dokumentu testowego
 2. Uruchom przepływ pracy
-3. Sprawdź, czy odpowiedź jest poprawnie odbierana
-4. Zweryfikuj, czy format danych odpowiada oczekiwaniom
+3. Sprawdź, czy odpowiedź została otrzymana prawidłowo
+4. Sprawdź, czy format danych odpowiada oczekiwaniom
 
----
+***
 
-## Typowe scenariusze odpowiedzi
+## Typowe scenariusze reakcji
 
-### Pomyślna odpowiedź (kod statusu 200)
+### Pomyślna odpowiedź (kod stanu 200)
+
 ```json
 {
   "success": true,
@@ -167,98 +206,115 @@ Skontaktuj się z dostawcą usługi zewnętrznej i poproś o:
   }
 }
 ```
-✅ Dane są dostępne do użycia przez kolejne karty
 
-### Odpowiedź błędu (kod statusu 404)
+✅ Dane są dostępne do wykorzystania przez kolejne karty
+
+### Odpowiedź na błąd (kod stanu 404)
+
 ```json
 {
   "error": "Product not found"
 }
 ```
-⚠️ API nie mogło znaleźć tego, czego szukasz
 
-### Timeout
-Usługa zewnętrzna nie odpowiedziała w limicie czasu
-⚠️ Sprawdź, czy usługa jest dostępna lub czy URL punktu końcowego jest poprawny
+⚠️ Interfejs API nie mógł znaleźć tego, czego szukasz
 
----
+### Limit czasu
+
+Usługa zewnętrzna nie odpowiedziała w terminie ⚠️ Sprawdź, czy usługa jest dostępna lub czy adres URL punktu końcowego jest poprawny
+
+***
 
 ## Przykładowe przepływy pracy
 
-### Przykład 1: Automatyczna walidacja cen
-**Scenariusz:** Walidacja cen faktury względem aktualnych cen dostawcy
+### Przykład 1: Automatyczna weryfikacja ceny
+
+**Scenariusz:** Zweryfikuj ceny na fakturze w porównaniu z bieżącymi cenami dostawcy
 
 **Przepływ:**
-1. Dokument przybywa z pozycją faktury (Product: A123, Price: €50)
-2. **Call API Card** → Pyta API dostawcy: "What's the current price for A123?"
-3. Dostawca odpowiada: "€48"
-4. **Condition Card** → Sprawdza, czy cena faktury (€50) mieści się w 5% aktualnej ceny (€48)
-5. **Approval Card** → Zatwierdza, jeśli mieści się w tolerancji
 
-### Przykład 2: Automatyczne wyszukiwanie dostawcy
-**Scenariusz:** Uzyskanie danych podstawowych dostawcy z centralnej bazy danych
+1. Dokument dociera z pozycją faktury (Produkt: A123, Cena: 50 €)
+2. **Zadzwoń do karty API** → Zapytaj dostawcę API: „Jaka jest aktualna cena za A123?”
+3. Dostawca odpowiada: „48 €”
+4. **Karta stanu** → Sprawdza, czy cena na fakturze (50€) mieści się w granicach 5% aktualnej ceny (48€)
+5. **Karta zatwierdzenia** → Zatwierdza, jeśli mieści się w tolerancji
+
+### Przykład 2: Automatyczne wyszukiwanie dostawców
+
+**Scenariusz:** Uzyskaj podstawowe dane dostawcy z centralnej bazy danych
 
 **Przepływ:**
-1. Faktura przybywa z Supplier Code: SUPP-789
-2. **Call API Card** → Pyta system: "Give me details for supplier SUPP-789"
-3. System odpowiada: Name, Contact, Terms itp.
-4. **Set Field Cards** → Wypełnij pola dokumentu tymi danymi
-5. **Export Card** → Eksport z kompletnymi informacjami
+
+1. Dochodzi faktura z kodem dostawcy: SUPP-789
+2. **Zadzwoń do karty API** → System pyta: „Podaj mi dane dostawcy SUPP-789”
+3. System odpowiada: Imię, Kontakt, Warunki itp.
+4. **Ustaw karty pól** → Wypełnij pola dokumentu tymi danymi
+5. **Karta eksportowa** → Eksportuj z pełnymi informacjami
 
 ### Przykład 3: Koszty wysyłki w czasie rzeczywistym
-**Scenariusz:** Uzyskanie automatycznego kosztu wysyłki na podstawie miejsca docelowego
+
+**Scenariusz:** Uzyskaj automatyczny koszt wysyłki na podstawie miejsca docelowego
 
 **Przepływ:**
-1. Dokument ma adres dostawy
-2. **Call API Card** → Zapytaj dostawcę wysyłki: "What's the cost to [address]?"
-3. Dostawca odpowiada kosztem wysyłki
-4. **Calculate Card** → Dodaj wysyłkę do łącznej kwoty faktury
-5. **Export Card** → Wyślij ze zaktualizowaną sumą
 
----
+1. Dokument zawiera adres dostawy
+2. **Karta API** → Zapytaj dostawcę usług spedycyjnych: „Jaki jest koszt dotarcia do \[adres]?”
+3. Dostawca odpowiada kosztem wysyłki
+4. **Oblicz kartę** → Dodaj wysyłkę do całkowitej kwoty faktury
+5. **Karta eksportu** → Wyślij ze zaktualizowaną sumą
+
+***
 
 ## Rozwiązywanie problemów
 
-### Błąd "Connection Timeout"
+### Błąd „Przekroczono limit czasu połączenia”.
+
 **Przyczyna:** Usługa API nie odpowiada
 
 **Rozwiązania:**
-- [ ] Sprawdź, czy usługa jest dostępna (odwiedź witrynę)
-- [ ] Zweryfikuj, czy URL punktu końcowego jest poprawny (brak literówek)
-- [ ] Sprawdź połączenie internetowe
-- [ ] Skontaktuj się z dostawcą usługi
-- [ ] Sprawdź, czy usługa ma limity szybkości (wysyłasz zbyt wiele żądań)
 
-### Błąd "Unauthorized" lub "403 Forbidden"
-**Przyczyna:** Uwierzytelnianie nie powiodło się
+* [ ] Sprawdź dostępność usługi (odwiedź stronę)
+* [ ] Sprawdź, czy adres URL punktu końcowego jest poprawny (bez literówek)
+* [ ] Sprawdź połączenie internetowe
+* [ ] Skontaktuj się z usługodawcą
+* [ ] Sprawdź, czy usługa ma limity stawek (wysyłasz za dużo żądań)
+
+### Błąd „Nieautoryzowany” lub „403 zabroniony”.
+
+**Przyczyna:** Uwierzytelnienie nie powiodło się
 
 **Rozwiązania:**
-- [ ] Zweryfikuj, czy Twój klucz API jest poprawny
-- [ ] Sprawdź, czy Twój klucz API nie wygasł
-- [ ] Upewnij się, że nagłówek uwierzytelniania jest poprawnie sformatowany
-- [ ] Zweryfikuj, czy masz uprawnienia do tego punktu końcowego
 
-### "Bad Request" lub błąd "400"
+* [ ] Sprawdź, czy Twój klucz API jest poprawny
+* [ ] Sprawdź, czy Twój klucz API nie wygasł
+* [ ] Upewnij się, że nagłówek uwierzytelniania jest poprawnie sformatowany
+* [ ] Sprawdź, czy masz uprawnienia do tego punktu końcowego
+
+### „Złe żądanie” lub „Błąd 400”
+
 **Przyczyna:** Format danych żądania jest nieprawidłowy
 
 **Rozwiązania:**
-- [ ] Sprawdź składnię JSON (brakujące przecinki, cudzysłowy itp.)
-- [ ] Zweryfikuj, czy wszystkie wymagane pola są uwzględnione
-- [ ] Sprawdź, czy nazwy parametrów odpowiadają oczekiwaniom usługi
-- [ ] Skonsultuj się z dokumentacją API
 
-### "Odpowiedź nie działa zgodnie z oczekiwaniami"
+* [ ] Sprawdź składnię JSON (brakujące przecinki, cudzysłowy itp.)
+* [ ] Sprawdź, czy wszystkie wymagane pola zostały uwzględnione
+* [ ] Sprawdź, czy nazwy parametrów odpowiadają oczekiwaniom usługi
+* [ ] Zapoznaj się z dokumentacją API
+
+### „Odpowiedź nie działa zgodnie z oczekiwaniami”
+
 **Rozwiązania:**
-- [ ] Przetestuj API za pomocą narzędzia takiego jak Postman
-- [ ] Porównaj rzeczywisty format odpowiedzi z oczekiwanym formatem
-- [ ] Sprawdź, czy dokumentacja API uległa zmianie
-- [ ] Zweryfikuj, czy wysyłane dane są poprawne
 
----
+* [ ] Przetestuj interfejs API za pomocą narzędzia takiego jak Postman
+* [ ] Porównaj aktualny format odpowiedzi z oczekiwanym formatem
+* [ ] Sprawdź, czy dokumentacja API uległa zmianie
+* [ ] Sprawdź, czy wysyłane dane są prawidłowe
+
+***
 
 ## Wykorzystanie danych odpowiedzi
 
-Gdy otrzymasz dane z API, kolejne karty mogą je wykorzystać:
+Gdy już odzyskasz dane z API, będą mogły z nich korzystać kolejne karty:
 
 ```
 API Response:
@@ -274,49 +330,51 @@ Next Card (Set Field):
 - Set "In_Stock" checkbox to true
 ```
 
----
+***
 
 ## Uwagi dotyczące bezpieczeństwa
 
-⚠️ **Ważne:** Nigdy nie umieszczaj w konfiguracji karty informacji wrażliwych, które mogą być widoczne dla innych użytkowników
+⚠️ **Ważne:** Nigdy nie umieszczaj w konfiguracji karty poufnych informacji, które mogą być widoczne dla innych użytkowników
 
-- Nie umieszczaj haseł na stałe w kodzie
-- Używaj kluczy API w bezpieczny sposób
-- Nie dołączaj danych osobowych w dziennikach
-- Używaj punktów końcowych HTTPS (nie HTTP)
+* Nie szyfruj haseł na stałe
+* Bezpiecznie korzystaj z kluczy API
+* Nie wpisuj danych osobowych w logach
+* Użyj punktów końcowych HTTPS (nie HTTP)
 
----
+***
 
 ## Wskazówki i najlepsze praktyki
 
-✅ **Rób:**
-- Najpierw testuj na małej próbce dokumentów
-- Utrzymuj wywołania API proste i ukierunkowane
-- Dodaj obsługę błędów za pomocą kart Condition
-- Monitoruj użycie/koszty API
-- Udokumentuj wymagania API dla swojego zespołu
+✅ **Wykonaj:**
 
-❌ **Nie rób:**
-- Nie wywołuj API dla każdego pojedynczego żądania, jeśli możesz buforować dane
-- Nie ignoruj kodów błędów odpowiedzi
-- Nie używaj testowych API w produkcji
-- Nie zapominaj o dodaniu nagłówków uwierzytelniania
-- Nie zakładaj, że API zawsze będzie dostępne
+* Najpierw przetestuj na małej próbce dokumentów
+* Staraj się, aby wywołania API były proste i skoncentrowane
+* Dodaj obsługę błędów za pomocą kart warunków
+* Monitoruj wykorzystanie/koszty API
+* Udokumentuj wymagania API dla swojego zespołu
 
----
+❌ **Nie:**
+
+* Wywołuj interfejsy API dla każdego pojedynczego żądania, jeśli możesz buforować dane
+* Ignoruj kody błędów odpowiedzi
+* Używaj testowych interfejsów API w środowisku produkcyjnym
+* Zapomnij o dodaniu nagłówków uwierzytelniających
+* Załóżmy, że interfejs API będzie zawsze dostępny
+
+***
 
 ## Powiązane karty
 
-- **ACTION_HTTPS_REQUEST** - Podobne, ale prostsze żądania HTTPS
-- **CONDITION_HTTPS_REQUEST_STATUS** - Sprawdź, czy wywołanie API się powiodło
-- **ACTION_SEND_EMAIL** - Wyślij dane za pośrednictwem wiadomości e-mail zamiast API
-- **CALL_API** (inna wersja) - Alternatywna metoda wywołania API
+* **ACTION\_HTTPS\_REQUEST** — podobne, ale prostsze żądania HTTPS
+* **CONDITION\_HTTPS\_REQUEST\_STATUS** - Sprawdź, czy wywołanie API powiodło się
+* **ACTION\_SEND\_EMAIL** – Wysyłaj dane e-mailem zamiast API
+* **CALL\_API** (inna wersja) - Alternatywna metoda wywołania API
 
----
+***
 
 ## Potrzebujesz pomocy?
 
-- Poproś swój zespół IT/integracji o dokumentację API
-- Najpierw użyj narzędzia Postman do testowania punktów końcowych API
-- Sprawdź portal wsparcia dostawcy usługi
-- Przejrzyj dokumentację API pod kątem wymaganych formatów
+* Poproś swój zespół IT/integratorów o dokumentację API
+* Użyj narzędzia Postman, aby najpierw przetestować punkty końcowe API
+* Sprawdź portal wsparcia usługodawcy
+* Przejrzyj dokumentację interfejsu API pod kątem wymaganych formatów

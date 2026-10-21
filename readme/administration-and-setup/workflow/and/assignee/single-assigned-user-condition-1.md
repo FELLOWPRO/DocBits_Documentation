@@ -1,18 +1,18 @@
-# Single Assigned User Condition
+# Warunek pojedynczej przypisanej grupy
 
-<figure><img src="../../../../.gitbook/assets/image (16) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-d12f96578747-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
 **Cel:**\
 Ta karta przepływu pracy wykonuje operacje w zależności od tego, czy zadanie lub dokument jest przypisane do określonej grupy. Wykorzystuje prosty warunek, aby wyzwalać lub blokować akcje na podstawie przypisania grupy.
 
 **Komponenty karty:**
 
-1. **Operator**
+1. **Operatora**
    * **Opis:** Definiuje warunek logiczny stosowany do przypisania grupy.
    * **Opcje:**
      * **IS:** Wyzwala operację, jeśli przypisana grupa dokumentu lub zadania odpowiada określonej grupie.
-     * **IS NOT:** Wyzwala operację, jeśli przypisana grupa dokumentu lub zadania nie odpowiada określonej grupie.
-2. **Group**
+     * **NIE JEST:** Wyzwala operację, jeśli przypisana grupa dokumentu lub zadania nie odpowiada określonej grupie.
+2. **Grupa**
    * **Opis:** Określa grupę do porównania z przypisaną grupą.
    * **Szczegóły:** To pole umożliwia wybór pojedynczej grupy do porównania przypisania.
 
@@ -21,9 +21,9 @@ Ta karta przepływu pracy wykonuje operacje w zależności od tego, czy zadanie 
 * **Identyfikacja przypisania grupy:** Automatycznie identyfikuje grupę przypisaną do określonego zadania lub dokumentu.
 * **Ocena warunku:**
   * Przy operatorze **IS** karta sprawdza, czy przypisana grupa odpowiada określonej grupie.
-  * Przy operatorze **IS NOT** karta zapewnia, że przypisana grupa nie odpowiada określonej grupie.
+  * Przy operatorze **NIE JEST** karta zapewnia, że przypisana grupa nie odpowiada określonej grupie.
 * **Wykonanie akcji:**
-  * **Warunek prawdziwy:** Jeśli przypisanie grupy spełnia warunek (**IS** lub **IS NOT**), wyzwalane są odpowiednie akcje, takie jak powiadomienia, inicjowanie zadań, zatwierdzenia lub inne kroki przepływu pracy.
+  * **Warunek prawdziwy:** Jeśli przypisanie grupy spełnia warunek (**IS** lub **NIE JEST**), wyzwalane są odpowiednie akcje, takie jak powiadomienia, inicjowanie zadań, zatwierdzenia lub inne kroki przepływu pracy.
   * **Warunek fałszywy:** Jeśli warunek nie jest spełniony, dokument lub zadanie może przejść przez inną ścieżkę routingu lub można określić alternatywne akcje.
 
 **Interakcje użytkownika:**
@@ -37,3 +37,15 @@ Ta karta przepływu pracy wykonuje operacje w zależności od tego, czy zadanie 
 
 **Podsumowanie:**\
 Karta przepływu pracy "Assigned Group Condition" jest niezbędna do zarządzania przepływami pracy dokumentów i zadań opartymi na przypisaniach grup. Pozwalając na warunki oparte na tym, czy zadanie lub dokument jest przypisane do określonej grupy, zapewnia, że przepływy pracy są wyzwalane tylko przez odpowiednie interakcje grup, poprawiając zarządzanie zadaniami i efektywność przepływu pracy.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktyczny przykład
+
+**Kiedy używać:** Zastosuj regułę do kolejki przeglądu finansowego.
+
+**Konfiguracja:** Wybierz operator równości i grupę `Demo Finance`.
+
+**Oczekiwany wynik i kontrprzykład:** Dokument przypisany do `Demo Finance` przechodzi pomyślnie. Samo przypisanie do indywidualnego użytkownika nie powoduje przynależności do wybranej grupy przypisań dokumentów.
+
+To jest ilustracyjna konfiguracja i oczekiwany wynik. Korzystaj z pól, użytkowników i grup skonfigurowanych w Twojej organizacji testowej; nie jest to twierdzenie, że ten przykład został wykonany.

@@ -1,6 +1,6 @@
-# Supplier on Invoice
+# Dostawca na fakturze
 
-<figure><img src="../../../../.gitbook/assets/image (276).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f5b5666e94fe-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -12,7 +12,7 @@ Ta karta przepływu pracy służy do porównania informacji o dostawcy na faktur
    * **Opis**: Definiuje warunek porównania dostawcy na fakturze z dostawcą na zamówieniu zakupu.
    * **Opcje**:
      * **Is**: Sprawdza, czy dostawca na fakturze odpowiada dostawcy na zamówieniu zakupu.
-     * **Is Not**: Zapewnia, że dostawca na fakturze nie odpowiada dostawcy na zamówieniu zakupu.
+     * **Nie jest**: Zapewnia, że dostawca na fakturze nie odpowiada dostawcy na zamówieniu zakupu.
 
 ## **Funkcjonalność:**
 

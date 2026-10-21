@@ -1,35 +1,53 @@
-# Field & Table Manipulation Cards - Complete Guide
+# Karty operacji na polach i tabelach
 
-Te karty trafiają do grupy **Then** w Kreatorze przepływów — akcje uruchamiane po spełnieniu warunków When/And:
+## Karty manipulacji na polu i tabeli - kompletny przewodnik
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Karty dodaje się do grupy <strong>Then</strong> za pomocą <strong>Add Card</strong>.</p></figcaption></figure>
+**Okładki:** 9 kart do modyfikowania pól i tabel dokumentów
 
-**Obejmuje:** 9 kart do modyfikowania pól i tabel dokumentu
+***
 
----
+Karty pól i tabel na tej stronie znajdują się w grupie **Wtedy** Kreatora przepływu pracy — akcje wykonywane po spełnieniu warunków Kiedy/I:
 
-# Manipulacja polami dokumentu
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-pl.png" alt="Niezapisany przykład z kartami Kiedy, I oraz Wtedy. Uzupełnij wszystkie pola przed uruchomieniem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Niezapisany przykład z kartami Kiedy, I oraz Wtedy. Uzupełnij wszystkie pola przed uruchomieniem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-## Karta: ACTION_SET_FIELD_TO_TEXT / Set Field to Text Value
+***
 
-### Cel
+### 📌 Informacje o wersji
+
+**Karty wielowersyjne:** CALC\_COLUMNS (v2), CALC\_COLUMNS\_REGEX (v2), EDIT\_COLUMN (v2), AI\_CALC\_MTZ\_ETZ (v2)
+
+**Wzorzec wersji:** Wszystkie karty manipulacji polami są zgodne ze wzorcem v1 → v2 ** Zmiana klucza:** v2 dodaje obsługę internacjonalizacji (i18n) z kluczami translacyjnymi
+
+📖 [Pełna historia wersji](../../release.md) | [Wersje kart i zachowanie](../../cards-overview/card-versions-guide.md)
+
+***
+
+## Manipulacja polem dokumentu
+
+### Karta: ACTION\_SET\_FIELD\_TO\_TEXT / Ustaw pole na wartość tekstową
+
+#### Cel
+
 Automatycznie wypełnia pole dokumentu określonym tekstem
 
-### Kiedy używać
-- Wypełnianie pola na podstawie decyzji
-- Ustawianie wartości domyślnych
-- Wypełnianie standaryzowanych informacji
-- Aktualizacja pola na podstawie warunków
+#### Kiedy stosować
 
-### Jak to działa
+* Wypełnij pole decyzją
+* Ustaw wartości domyślne
+* Wypełnij standardowe informacje
+* Zaktualizuj pole w oparciu o warunki
+
+#### Jak to działa
+
 ```
 IF Condition is true
     THEN Set Field "Category" to Value "Premium"
 ```
 
-### Przykładowe scenariusze
+#### Przykładowe scenariusze
 
-**Scenariusz 1: Ustawienie kategorii zatwierdzenia**
+**Scenariusz 1: Ustaw kategorię zatwierdzenia**
+
 ```
 Condition: Invoice amount > €10,000
     ↓
@@ -38,7 +56,8 @@ Action: Set "Approval_Category" field to "High Value"
 Result: Document now shows "Approval_Category: High Value"
 ```
 
-**Scenariusz 2: Ustawienie kategorii dostawcy**
+**Scenariusz 2: Ustaw kategorię dostawcy**
+
 ```
 Condition: Supplier name contains "ABC"
     ↓
@@ -47,7 +66,8 @@ Action: Set "Supplier_Type" field to "Preferred Supplier"
 Result: Document marked as "Preferred Supplier"
 ```
 
-**Scenariusz 3: Ustawienie uwag dotyczących przetwarzania**
+**Scenariusz 3: Ustaw notatki dotyczące przetwarzania**
+
 ```
 Condition: Document has been rejected
     ↓
@@ -56,50 +76,55 @@ Action: Set "Processing_Notes" to "Requires supplier revision"
 Result: Note appears for next processor
 ```
 
-### Parametry
+#### Parametry
 
-**Field Name**
-Które pole zaktualizować
+**Nazwa pola** Które pole zaktualizować
+
 ```
 Examples: Category, Type, Status, Comment, Notes
 ```
 
-**Text Value**
-Co umieścić w polu
+**Wartość tekstowa** Co wpisać w polu
+
 ```
 Examples: "Approved", "Pending Review", "High Priority"
 ```
 
-### Kroki konfiguracji
+#### Kroki konfiguracji
+
 1. Wybierz pole do wypełnienia
 2. Wprowadź wartość tekstową
 3. Ustaw warunki (kiedy wypełnić)
 4. Zapisz
 
----
+***
 
-## Karta: ACTION_SET_BOOLEAN_FIELD / Set Checkbox Field
+### Karta: ACTION\_SET\_BOOLEAN\_FIELD / Ustaw pole wyboru
 
-### Cel
+#### Cel
+
 Automatycznie zaznacza lub odznacza pole wyboru
 
-### Kiedy używać
-- Oznaczanie jako przetworzone
-- Ustawianie flag zatwierdzenia
-- Włączanie/wyłączanie opcji
-- Oznaczanie do eksportu
+#### Kiedy stosować
 
-### Jak to działa
+* Oznacz jako przetworzone
+* Ustaw flagi zatwierdzenia
+* Włącz/wyłącz opcje
+* Oznacz do eksportu
+
+#### Jak to działa
+
 ```
 IF Condition is true
     THEN Check/Uncheck the "Approved" box
 ```
 
-### True = zaznaczone, False = niezaznaczone
+#### Prawda = zaznaczona, Fałsz = niezaznaczona
 
 **Przykłady:**
 
-**Przykład 1: Oznaczenie jako zweryfikowane**
+**Przykład 1: Oznacz jako zweryfikowane**
+
 ```
 Condition: PO matches perfectly
     ↓
@@ -108,7 +133,8 @@ Action: Check "Verified" checkbox
 Result: ✅ Verified (checked)
 ```
 
-**Przykład 2: Oznaczenie do przeglądu ręcznego**
+**Przykład 2: Flaga do ręcznego przeglądu**
+
 ```
 Condition: Price variance > 10%
     ↓
@@ -117,7 +143,8 @@ Action: Check "Requires_Manual_Review" checkbox
 Result: ✅ Requires_Manual_Review (marked)
 ```
 
-**Przykład 3: Odznaczenie wstępnie wypełnionego pola**
+**Przykład 3: Odznacz wstępnie wypełnione pole**
+
 ```
 Condition: Supplier is blacklisted
     ↓
@@ -126,27 +153,31 @@ Action: Uncheck "Approved_for_Payment" checkbox
 Result: ☐ Approved_for_Payment (unchecked - blocked)
 ```
 
-### Parametry
+#### Parametry
+
 ```
 Checkbox Field: [Choose field]
 Set To: ☑ Checked (✅ True)
    or: ☐ Unchecked (❌ False)
 ```
 
----
+***
 
-## Karta: ACTION_INVERT_BOOLEAN_FIELD / Toggle Checkbox
+### Karta: ACTION\_INVERT\_BOOLEAN\_FIELD / Przełącz pole wyboru
 
-### Cel
-Przełącza stan pola wyboru (zaznaczone → niezaznaczone i odwrotnie)
+#### Cel
 
-### Kiedy używać
-- Przełączanie statusu zatwierdzenia
-- Przełączanie trybu przetwarzania
-- Odwracanie poprzedniego stanu
-- Aktualizacja flag boolowskich
+Odwraca stan pola wyboru (zaznaczone → niezaznaczone i odwrotnie)
 
-### Jak to działa
+#### Kiedy stosować
+
+* Przełącz stan zatwierdzenia
+* Przełącz tryb przetwarzania
+* Odwróć poprzedni stan
+* Zaktualizuj flagi logiczne
+
+#### Jak to działa
+
 ```
 Current state: ✅ (Checked)
     ↓
@@ -163,7 +194,8 @@ ACTION_INVERT: Toggle the box
 New state: ✅ (Checked)
 ```
 
-### Przykład
+#### Przykład
+
 ```
 Invoice received with "Priority" checked
     ↓
@@ -172,20 +204,23 @@ After processing, invert "Priority" checkbox
 Checkbox now unchecked (no longer priority)
 ```
 
----
+***
 
-## Karta: ACTION_COPY_DOCFIELD_TO_DOCFIELD / Copy Field Value
+### Karta: ACTION\_COPY\_DOCFIELD\_TO\_DOCFIELD / Skopiuj wartość pola
 
-### Cel
+#### Cel
+
 Kopiuje wartość z jednego pola do innego pola
 
-### Kiedy używać
-- Kopiowanie informacji o dostawcy do informacji rozliczeniowych
-- Duplikowanie danych między polami
-- Standaryzacja formatu danych
-- Tworzenie kopii zapasowej wartości
+#### Kiedy stosować
 
-### Jak to działa
+* Skopiuj informacje o dostawcy do informacji rozliczeniowych
+* Duplikuj dane w różnych polach
+* Standaryzuj format danych
+* Utwórz kopię zapasową wartości
+
+#### Jak to działa
+
 ```
 Source Field: "Invoice_Supplier"  Value: "ABC Corp"
     ↓
@@ -196,9 +231,10 @@ Target Field: "Billing_Partner"  Value: "ABC Corp"
 Both fields now have same value
 ```
 
-### Rzeczywiste przykłady
+#### Prawdziwe przykłady
 
-**Przykład 1: Kopiowanie adresu dostawy**
+**Przykład 1: Skopiuj adres dostawy**
+
 ```
 Source: "Delivery_Address" = "123 Main St, Berlin"
     ↓
@@ -207,7 +243,8 @@ Copy to: "Billing_Address"
 Result: Both fields show "123 Main St, Berlin"
 ```
 
-**Przykład 2: Kopiowanie kodu dostawcy**
+**Przykład 2: Skopiuj kod dostawcy**
+
 ```
 Source: "Supplier_Code_External" = "SUPP-789"
     ↓
@@ -216,7 +253,8 @@ Copy to: "Supplier_Code_Internal"
 Result: Both codes match, system recognizes supplier
 ```
 
-**Przykład 3: Kopiowanie kwoty do walidacji**
+**Przykład 3: Kwota kopii do zatwierdzenia**
+
 ```
 Source: "Invoice_Total" = "€5000"
     ↓
@@ -225,33 +263,38 @@ Copy to: "Amount_to_Validate"
 Result: Validation field has correct amount
 ```
 
-### Parametry
+#### Parametry
+
 ```
 Source Field: [Choose field to copy FROM]
 Target Field: [Choose field to copy TO]
 ```
 
-### Uwagi
-- Oryginalne pole pozostaje bez zmian
-- Pole docelowe nadpisane wartością źródłową
-- Dobre do standaryzacji danych
+#### Notatki
 
----
+* Oryginalne pole bez zmian
+* Pole docelowe nadpisane wartością źródłową
+* Dobry do standaryzacji danych
 
-# Manipulacja tabelami
+***
 
-## Karta: EDIT_COLUMN / Edit Table Column
+## Manipulacja tabelą
 
-### Cel
+### Karta: EDIT\_COLUMN / Edytuj kolumnę tabeli
+
+#### Cel
+
 Zmienia wartości w kolumnie tabeli na podstawie warunków
 
-### Kiedy używać
-- Naprawianie błędów cenowych w pozycjach
-- Aktualizacja ilości
-- Korygowanie opisów pozycji
-- Standaryzacja wartości
+#### Kiedy stosować
 
-### Jak to działa
+* Napraw błędy cenowe w elementach zamówienia
+* Aktualizuj ilości
+* Prawidłowe opisy przedmiotów
+* Standaryzuj wartości
+
+#### Jak to działa
+
 ```
 Table Column: "Unit_Price"
 Original Values: [100, 105, 103]
@@ -262,9 +305,10 @@ REPLACE: With new value
 Updated Column: [100, 110, 110] (example)
 ```
 
-### Przykład: Naprawianie cen
+#### Przykład: napraw ceny
 
 **Scenariusz: Ceny w niewłaściwej walucie**
+
 ```
 Table "Line_Items" with column "Price"
 
@@ -277,7 +321,8 @@ Action: Replace with 95 (corrected price)
 Result: [95, 95, 95] (prices corrected)
 ```
 
-### Parametry
+#### Parametry
+
 ```
 Table: [Choose table]
 Column: [Choose column to edit]
@@ -286,26 +331,30 @@ Replace with: [New value]
 Condition: [When to apply]
 ```
 
-### Typowe zastosowania
-- Naprawianie cen jednostkowych
-- Standaryzacja opisów
-- Korygowanie ilości
-- Aktualizacja numerów SKU
+#### Typowe zastosowania
 
----
+* Ustal ceny jednostkowe
+* Standaryzuj opisy
+* Prawidłowe ilości
+* Zaktualizuj numery SKU
 
-## Karta: CALC_COLUMNS / Calculate Column Values
+***
 
-### Cel
-Wykonuje obliczenia na kolumnach tabeli i zapisuje wynik
+### Karta: CALC\_COLUMNS / Oblicz wartości kolumn
 
-### Kiedy używać
-- Obliczanie sum pozycji (Qty × Unit Price)
-- Sumowanie kolumn
-- Obliczanie rabatów
-- Obliczanie wartości procentowych
+#### Cel
 
-### Jak to działa
+Wykonuje obliczenia na kolumnach tabeli i przechowuje wynik
+
+#### Kiedy stosować
+
+* Oblicz sumę wierszy (ilość × cena jednostkowa)
+* Suma kolumn
+* Oblicz rabaty
+* Oblicz procenty
+
+#### Jak to działa
+
 ```
 Column A (Quantity): 100
 Column B (Unit Price): €50
@@ -315,9 +364,10 @@ CALCULATE: A × B
 Column C (Line Total): €5000
 ```
 
-### Typy obliczeń
+#### Typy obliczeń
 
 **Typ 1: Proste mnożenie**
+
 ```
 Formula: Qty × Unit Price = Line Total
 
@@ -332,6 +382,7 @@ Config:
 ```
 
 **Typ 2: Dodawanie**
+
 ```
 Formula: Base Price + Shipping + Tax = Total
 
@@ -347,7 +398,8 @@ Config:
   Result Column: Total
 ```
 
-**Typ 3: Obliczanie procentów**
+**Typ 3: Obliczanie procentowe**
+
 ```
 Formula: Amount × (1 + Tax%) = Total with Tax
 
@@ -361,6 +413,7 @@ Config:
 ```
 
 **Typ 4: Odejmowanie**
+
 ```
 Formula: Original Price - Discount = Final Price
 
@@ -374,9 +427,10 @@ Config:
   Result Column: Final Price
 ```
 
-### Rzeczywisty przykład
+#### Przykład ze świata rzeczywistego
 
-**Obliczenie pozycji faktury:**
+**Obliczanie pozycji pojedynczych faktury:**
+
 ```
 Table: Invoice_Lines
 
@@ -401,7 +455,8 @@ Shipping: €100.00
 TOTAL: €7835.00
 ```
 
-### Parametry
+#### Parametry
+
 ```
 Table: [Select table]
 Column 1: [First column]
@@ -410,22 +465,25 @@ Column 2: [Second column] (if needed)
 Result Column: [Where to put answer]
 ```
 
----
+***
 
-## Karta: CALC_COLUMNS_REGEX / Calculate with Regex Pattern
+### Karta: CALC\_COLUMNS\_REGEX / Oblicz za pomocą wzoru regularnego
 
-### Cel
+#### Cel
+
 Oblicza wartości kolumn na podstawie dopasowania wzorca
 
-### Kiedy używać
-- Ekstrakcja wartości z tekstu przy użyciu wzorców
-- Formatowanie danych na podstawie reguł
-- Konwersja wartości na podstawie wzorców
-- Parsowanie tekstu strukturalnego
+#### Kiedy stosować
 
-### Jak to działa
+* Wyodrębnij wartości z tekstu za pomocą wzorców
+* Formatuj dane w oparciu o reguły
+* Konwertuj wartości w oparciu o wzorce
+* Analizuj tekst strukturalny
 
-**Dopasowywanie wzorca regex:**
+#### Jak to działa
+
+**Dopasowanie wzorca regex:**
+
 ```
 Original Value: "ABC-12345-XYZ"
 Pattern: Extract numbers only
@@ -433,9 +491,10 @@ Calculation: Convert to "12345"
 Result: "12345"
 ```
 
-### Przykład: Ekstrakcja kodu dostawcy
+#### Przykład: wyodrębnij kod dostawcy
 
 **Scenariusz: Numery artykułów zawierają informacje o dostawcy**
+
 ```
 Table Column: "Article_Code"
 Values: ["SUPP001-2025-A", "SUPP002-2025-B"]
@@ -451,25 +510,28 @@ Article_Code: SUPP001-2025-A  →  Supplier_Code: SUPP001
 Article_Code: SUPP002-2025-B  →  Supplier_Code: SUPP002
 ```
 
-### Przykład: Formatowanie numerów telefonów
+#### Przykład: sformatuj numery telefonów
 
-**Scenariusz: Niesformatowane numery telefonów**
+**Scenariusz: niesformatowane numery telefonów**
+
 ```
 Original: "491234567890"
 Pattern: Format as: +49 123 4567 890
 Result: "+49 123 4567 890"
 ```
 
-### Przykład: Ekstrakcja cen z tekstu
+#### Przykład: wyodrębnij ceny z tekstu
 
 **Scenariusz: Ceny w formacie tekstowym**
+
 ```
 Original: "Price is 99.99 EUR"
 Pattern: Extract number only
 Result: "99.99"
 ```
 
-### Parametry
+#### Parametry
+
 ```
 Table: [Select table]
 Column: [Column to analyze]
@@ -478,7 +540,8 @@ Replacement: [What to replace with]
 Result Column: [Where to store result]
 ```
 
-### Typowe wzorce regex
+#### Typowe wzorce wyrażeń regularnych
+
 ```
 Numbers only: [0-9]+
 Letters only: [a-zA-Z]+
@@ -487,11 +550,12 @@ Extract €: €(\d+\.\d{2})
 Date format: \d{4}-\d{2}-\d{2}
 ```
 
----
+***
 
-# Przykłady obliczeń
+## Przykłady obliczeń
 
-## Przykład 1: Obliczanie sumy faktury
+### Przykład 1: Obliczenie sumy faktury
+
 ```
 Step 1: Calculate line totals
   Each row: Qty × Unit Price
@@ -506,7 +570,8 @@ Step 4: Add shipping
   Final: €6500 + €1235 + €100 = €7835
 ```
 
-## Przykład 2: Obliczanie odchylenia
+### Przykład 2: Obliczanie wariancji
+
 ```
 PO Price: €100
 Invoice Price: €103
@@ -517,7 +582,8 @@ Variance = |3| / 100 × 100 = 3%
 Store in "Price_Variance%" column
 ```
 
-## Przykład 3: Zastosowanie rabatu
+### Przykład 3: Wniosek o rabat
+
 ```
 Original Price: €100
 Discount %: 10%
@@ -525,9 +591,9 @@ Discount Amount: €100 × 0.10 = €10
 Final Price: €100 - €10 = €90
 ```
 
----
+***
 
-# Przykład przepływu pracy manipulacji polami
+## Przykład przepływu pracy manipulacji polami
 
 ```
 Document arrives
@@ -549,61 +615,69 @@ In table: Calculate total with tax
 Document now has all calculated and populated fields
 ```
 
----
+***
 
-# Najlepsze praktyki
+## Najlepsze praktyki
 
-✅ **Rób:**
-- Utrzymuj formuły proste
-- Testuj obliczenia z przykładowymi danymi
-- Weryfikuj, czy wyniki mają sens
-- Dokumentuj, dlaczego zmieniasz pola
-- Używaj kopiowania pola, gdy dane są takie same
+✅ **Wykonaj:**
 
-❌ **Nie rób:**
-- Nie twórz odniesień cyklicznych (A=B, B=A)
-- Nie nadpisuj ważnych danych bez powodu
-- Nie twórz nadmiernie złożonych wzorców regex
-- Nie zapominaj o weryfikacji wyników obliczeń
-- Nie obliczaj na niewłaściwej tabeli/kolumnach
+* Zachowaj prostotę formuł
+* Obliczenia testowe z przykładowymi danymi
+* Sprawdź, czy wyniki mają sens
+* Udokumentuj, dlaczego zmieniasz pola
+* Użyj pola kopiowania, gdy dane są takie same
 
----
+❌ **Nie:**
 
-# Rozwiązywanie problemów
+* Utwórz odniesienia cykliczne (A=B, B=A)
+* Nadpisz ważne dane bez powodu
+* Twórz zbyt złożone wzorce wyrażeń regularnych
+* Zapomnij o sprawdzeniu wyników obliczeń
+* Oblicz na niewłaściwej tabeli/kolumnach
 
-## "Field not updating"
-**Przyczyna:** Warunek niespełniony lub karta niewyzwolona
+***
 
-**Rozwiązanie:**
-- Sprawdź, czy warunek jest prawdziwy
-- Zweryfikuj, czy karta jest w przepływie pracy
-- Przetestuj z przykładowymi danymi
-- Sprawdź literówki w nazwie pola
+## Rozwiązywanie problemów
 
-## "Calculation result wrong"
-**Przyczyna:** Wybrano niewłaściwe kolumny lub formuła jest nieprawidłowa
+### „Pole nie jest aktualizowane”
+
+**Przyczyna:** Warunek nie został spełniony lub karta nie została aktywowana
 
 **Rozwiązanie:**
-- Zweryfikuj kolumny źródłowe
-- Sprawdź, czy formuła jest poprawna
-- Przetestuj ręcznie
-- Przejrzyj miejsca dziesiętne/zaokrąglanie
 
-## "Table shows error"
-**Przyczyna:** Przywoływana kolumna nie istnieje
+* Sprawdź, czy warunek jest prawdziwy
+* Sprawdź, czy karta znajduje się w przepływie pracy
+* Przetestuj na przykładowych danych
+* Sprawdź literówki w nazwie pola
+
+### „Błędny wynik obliczeń”
+
+**Przyczyna:** Wybrano nieprawidłowe kolumny lub niepoprawną formułę
 
 **Rozwiązanie:**
-- Zweryfikuj pisownię nazwy kolumny
-- Sprawdź, czy kolumna ma dane
-- Upewnij się, że typ danych kolumny jest zgodny z obliczeniem
-- Dodaj brakujące kolumny w razie potrzeby
 
----
+* Sprawdź kolumny źródłowe
+* Sprawdź, czy formuła jest poprawna
+* Przetestuj ręcznie
+* Przejrzyj miejsca dziesiętne/zaokrąglenia
 
-# Powiązane karty
+### „Tabela pokazuje błąd”
 
-- **ACTION_COPY_DOCFIELD_TO_DOCFIELD** - Kopiowanie wartości
-- **EDIT_COLUMN** - Zmiana wartości tabeli
-- **CALC_COLUMNS** - Obliczanie formuł
-- **ACTION_SET_FIELD_TO_TEXT** - Ustawianie wartości tekstowych
-- **ACTION_SET_BOOLEAN_FIELD** - Zaznaczanie pól wyboru
+**Przyczyna:** Kolumna, do której odnosi się odwołanie, nie istnieje
+
+**Rozwiązanie:**
+
+* Sprawdź pisownię nazwy kolumny
+* Sprawdź, czy kolumna zawiera dane
+* Upewnij się, że typ danych kolumny odpowiada obliczeniom
+* W razie potrzeby dodaj brakujące kolumny
+
+***
+
+## Powiązane karty
+
+* **ACTION\_COPY\_DOCFIELD\_TO\_DOCFIELD** – Kopiuj wartości
+* **EDIT\_COLUMN** – Zmień wartości tabeli
+* **CALC\_COLUMNS** - Oblicz formuły
+* **ACTION\_SET\_FIELD\_TO\_TEXT** – Ustaw wartości tekstowe
+* **ACTION\_SET\_BOOLEAN\_FIELD** — Pola wyboru

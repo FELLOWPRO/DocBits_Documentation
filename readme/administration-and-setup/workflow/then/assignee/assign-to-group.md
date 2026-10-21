@@ -1,6 +1,6 @@
-# Assign to group
+# Przypisz do grupy
 
-<figure><img src="../../../../.gitbook/assets/image (304).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4f514f6ba398-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
 ## Cel:
 
@@ -8,11 +8,9 @@ Karta przepływu pracy **"Assign to Group"** ułatwia przypisywanie dokumentów 
 
 ## Komponenty karty:
 
-1. **Groups**
+1. **Grupy**
    * **Opis:** Określa **grupę**, do której zostanie przypisany dokument.
    * **Szczegóły:** Wybierana z listy rozwijanej dostępnych **grup**.
-
-
 
 ## **Dodatkowe komponenty w Version 3**
 
@@ -24,14 +22,26 @@ Karta przepływu pracy **"Assign to Group"** ułatwia przypisywanie dokumentów 
 
 ## Funkcjonalność:
 
-* **Ocena warunku:** Karta wykonuje swoją akcję tylko wtedy, gdy zarówno **"Where"**, jak i **"And Sections"** są prawdziwe.
-* **Przypisanie dokumentu:** Przypisuje dokument do wybranej **grupy**. W **Version 3** **drzewo decyzyjne** dynamicznie określa grupę docelową, jeśli jest włączone.
+* **Ocena warunku:** Karta wykonuje swoją akcję tylko wtedy, gdy zarówno **„Kiedy”**, jak i **„I sekcje”** są prawdziwe.
+* **Przypisanie dokumentu:** Przypisuje dokument do wybranej **grupy**. W **Wersja 3** **drzewo decyzyjne** dynamicznie określa grupę docelową, jeśli jest włączone.
 
 ## Konfiguracja:
 
-* **Select Group:** Wybierz **grupę** z listy rozwijanej, aby przypisać dokument.
-* **Use Decision Tree (tylko Version 3):** Włącz tę opcję, jeśli **drzewo decyzyjne** ma być używane do dynamicznego przypisywania.
+* **Wybierz grupę:** Wybierz **grupę** z listy rozwijanej, aby przypisać dokument.
+* **Użyj drzewa decyzyjnego (tylko wersja 3):** Włącz tę opcję, jeśli **drzewo decyzyjne** ma być używane do dynamicznego przypisywania.
 
 ## Podsumowanie:
 
-Karta przepływu pracy **"Assign to Group"** automatyzuje przypisywanie dokumentów do predefiniowanych **grup**, zwiększając koordynację zespołu. **Version 3** wprowadza możliwość dynamicznego przypisywania grup na podstawie logiki drzewa decyzyjnego.
+Karta przepływu pracy **"Assign to Group"** automatyzuje przypisywanie dokumentów do predefiniowanych **grup**, zwiększając koordynację zespołu. **Wersja 3** wprowadza możliwość dynamicznego przypisywania grup na podstawie logiki drzewa decyzyjnego.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktyczny przykład
+
+**Kiedy używać:** Umieść dokument w udostępnionej kolejce recenzji.
+
+**Konfiguracja:** Wybierz skonfigurowaną grupę `Demo Finance`.
+
+**Oczekiwany wynik i kontrprzykład:** Dokument jest przypisany do wybranej grupy. To jest przypisanie dokumentu, a nie obietnica utworzenia dodatkowego zadania lub e-maila.
+
+To jest ilustracyjna konfiguracja i oczekiwany wynik. Korzystaj z pól, użytkowników i grup skonfigurowanych w Twojej organizacji testowej; nie jest to twierdzenie, że ten przykład został wykonany.

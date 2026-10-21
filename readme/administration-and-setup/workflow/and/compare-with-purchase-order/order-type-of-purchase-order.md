@@ -1,6 +1,6 @@
-# Order Type of Purchase Order
+# Typ zamówienia zakupu
 
-<figure><img src="../../../../.gitbook/assets/image (277).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8a1cb3a5f80f-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -8,7 +8,7 @@ Ta karta przepływu pracy służy do porównania typu zamówienia w zamówieniu 
 
 ## **Komponenty karty:**
 
-1. **Any/All:**
+1. **Dowolny/Wszystkie:**
    * **Opis**: Definiuje, czy warunek dotyczy dowolnych, czy wszystkich zamówień zakupu ocenianych w przepływie pracy.
    * **Opcje**:
      * **Any**: Warunek jest spełniony, jeśli którekolwiek z zamówień zakupu odpowiada określonemu warunkowi.
@@ -16,9 +16,9 @@ Ta karta przepływu pracy służy do porównania typu zamówienia w zamówieniu 
 2. **Operator:**
    * **Opis**: Definiuje warunek, który zostanie zastosowany do porównania typu zamówienia z określoną wartością.
    * **Opcje**:
-     * **Equals (=)**: Sprawdza, czy typ zamówienia odpowiada określonej wartości.
-     * **Not Equals (≠)**: Zapewnia, że typ zamówienia różni się od określonej wartości.
-3. **Order Type:**
+     * **Równa się (=)**: Sprawdza, czy typ zamówienia odpowiada określonej wartości.
+     * **Nie równa się (≠)**: Zapewnia, że typ zamówienia różni się od określonej wartości.
+3. **Typ zamówienia:**
    * **Opis**: Określa wartość, z którą porównywany będzie typ zamówienia w zamówieniu zakupu.
    * **Szczegóły**: Wartość musi odpowiadać typowi zamówienia lub klasyfikacji w systemie.
 

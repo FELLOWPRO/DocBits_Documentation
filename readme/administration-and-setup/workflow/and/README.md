@@ -1,59 +1,61 @@
-# And: wybierz kartę warunku
+# I
 
-Użyj karty **And**, aby zdecydować, czy przepływ pracy ma być kontynuowany po wyzwalaczu **When**. Dodaj kontrole, których potrzebujesz, przed akcją **Then**. Każda karta pokazuje pola do wypełnienia, takie jak **Operator**, **Field Name** lub **Value**; zrzuty ekranu przedstawiają dostępne szablony kart, a nie gotowe reguły.
+Użyj karty **I**, aby zdecydować, czy przepływ pracy powinien być kontynuowany po wyzwoleniu **Kiedy**. Dodaj potrzebne kontrole przed akcją **Wtedy**. Na każdej karcie znajdują się pola do wypełnienia, takie jak **Operatora**, **Nazwa pola** lub **Wartość**; zrzuty ekranu pokazują dostępne szablony kart, a nie gotowe zasady.
 
-W **Workflow Builder** wybierz **Add Card** pod **And...**. Wybierz kategorię po lewej stronie lub wpisz nazwę karty w polu **Search Card**. Wybierz podgląd karty, aby dodać ją do przepływu pracy. Możesz przewijać listę podglądów, aby zobaczyć więcej kart. Użyj **×**, aby zamknąć selektor bez wybierania kolejnej karty. Po skonfigurowaniu kart zapisz przepływ pracy. Zobacz [Workflow](../README.md), aby poznać otaczające kroki **When**, **And** i **Then**.
+W **Kreatorze przepływu pracy** wybierz **Dodaj kartę** w obszarze **I...**. Wybierz kategorię po lewej stronie lub wpisz nazwę karty w polu **Wyszukaj kartę**. Wybierz podgląd karty, aby dodać ją do przepływu pracy. Możesz przewijać listę podglądu, aby zobaczyć więcej kart. Użyj **×**, aby zamknąć selektor bez wybierania kolejnej karty. Po skonfigurowaniu kart zapisz przepływ pracy. Zobacz [Workflow](..), aby zapoznać się z otaczającymi krokami **Kiedy**, **I** i **Wtedy**.
 
-## Compare with Purchase Order
+## Porównaj z zamówieniem zakupu
 
-Użyj tych kart, aby porównać dane zamówienia lub faktury z zamówieniem zakupu, na przykład cenę jednostkową, obiecaną datę dostawy, opłaty lub ilość. Wybierz pola, operator i ewentualną tolerancję, o którą prosi wybrana karta. Poszczególne karty opisano w [Compare with Purchase Order](compare-with-purchase-order/README.md).
+Użyj tych kart, aby porównać dane zamówienia lub faktury z zamówieniem zakupu, takie jak cena jednostkowa, obiecany termin dostawy, opłaty lub ilość. Wybierz pola, operator i tolerancję, o jaką prosi wybrana karta. Aby poznać poszczególne karty, zobacz [Porównaj z zamówieniem](compare-with-purchase-order).
 
-<figure><img src="../../../.gitbook/assets/and-category-po-comparison-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Compare with Purchase Order; widoczne podglądy obejmują porównanie ceny jednostkowej, daty dostawy, opłat i ilości."><figcaption>Kategoria Compare with Purchase Order w angielskim środowisku Sandbox.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-72e8f3204ac8-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-## Document Field
+## Pole dokumentu
 
-Wybierz tę kategorię, aby sprawdzić pole wyboru lub status pola, porównać pole z wartością albo porównać dwa pola. Wypełnij pola zastępcze **Field Name** i **Operator** na wybranej karcie. Niektóre porównania wymagają także podania tolerancji. Zobacz [Document Field](document-field/README.md).
+Wybierz tę kategorię, aby sprawdzić pole wyboru lub stan pola, porównać pole z wartością lub porównać dwa pola. Wypełnij symbole zastępcze **Nazwa pola** i **Operatora** na wybranej karcie. Niektóre porównania wymagają również tolerancji. Zobacz [Pole dokumentu](document-field).
 
-<figure><img src="../../../.gitbook/assets/and-category-document-field-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Document Field; widoczne podglądy sprawdzają pole wyboru, status pola, wartości pól i porównania dwóch pól."><figcaption>Kontrole Document Field korzystają z wartości z bieżącego dokumentu.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-833c7249ffc8-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-## Date & Time
+## Data i godzina
 
-Użyj **Date & Time**, aby porównać datę lub godzinę z zakresem albo porównać **Today** z wybraną datą. Wybierz **Operator** i wartości dat na karcie. Zobacz [Date & Time](date-and-time/README.md).
+Użyj **Data i godzina**, aby porównać datę lub godzinę z zakresem, lub porównaj **Dzisiaj** z wybraną datą. Wybierz **Operatora** i wartości daty na karcie. Zobacz [Data i godzina](date-and-time).
 
-<figure><img src="../../../.gitbook/assets/and-category-date-time-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Date & Time; dwa podglądy porównują datę lub godzinę z zakresem oraz porównują Today z datą."><figcaption>Date & Time oferuje kontrolę zakresu i kontrolę względem dzisiejszej daty.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-1ee68574d713-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-## Document
+## Dokument
 
-Użyj tych kart, gdy przepływ pracy ma zależeć od **typu dokumentu** lub **podorganizacji**. Wybierz typ lub organizację wskazaną na karcie. Zobacz [Document](document/README.md).
+Użyj tych kart, gdy przepływ pracy powinien zależeć od **typu dokumentu** lub **podorganizacji**. Wybierz typ lub organizację wymienioną na karcie. Zobacz [Dokument](document).
 
-<figure><img src="../../../.gitbook/assets/and-category-document-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Document; podglądy sprawdzają typ dokumentu i przynależność do podorganizacji."><figcaption>Warunki Document sprawdzają typ lub podorganizację.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-3c1a15fa2e11-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-## Logic
+## Logika
 
-Ta kategoria obejmuje kontrole z użyciem tabeli decyzyjnej, odpowiedzi HTTPS, dostępności modułu, ceny z oferty, wartości szansy lub dwóch wartości. Otwórz konkretną kartę i wypełnij jej nazwane pola zastępcze; na przykład karta HTTPS prosi o adres URL, metodę i akceptowany kod statusu. Zobacz [Logic](logic/README.md).
+Ta kategoria obejmuje kontrole z wykorzystaniem tabeli decyzyjnej, odpowiedzi HTTPS, dostępności modułu, podanej ceny przedmiotu, wartości przypadkowej lub dwóch wartości. Otwórz konkretną kartę i wypełnij jej nazwane symbole zastępcze; na przykład karta HTTPS prosi o adres URL, metodę i zaakceptowany kod stanu. Zobacz [Logika](logic).
 
-<figure><img src="../../../.gitbook/assets/and-category-logic-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Logic; podglądy obejmują karty tabeli decyzyjnej, żądania HTTPS, aktywnego modułu, ceny z oferty, szansy i porównania wartości."><figcaption>Logic oferuje kilka różnych typów warunków; wybierz ten, który odpowiada Twojej regule.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-6b17199fc268-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-## Status
+## Stan
 
-Użyj **Status**, aby sprawdzić, czy dokument ma wybrany status lub czy jego status należy do wybranego zbioru. Wybierz **Operator** i **Status** na karcie. Zobacz [Status](status/README.md).
+Użyj **Stan**, aby sprawdzić, czy dokument ma wybrany status lub czy jego status znajduje się w wybranym zestawie. Wybierz **Operatora** i **Stan** na karcie. Zobacz [Status](status).
 
-<figure><img src="../../../.gitbook/assets/and-category-status-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Status; dwa podglądy porównują Document status ze Status lub zbiorem statusów."><figcaption>Warunki Status sprawdzają bieżący stan dokumentu.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-ff11a606e5a1-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-## Table
+## Tabela
 
-Te karty badają wiersze tabeli dokumentu. Widoczne opcje obejmują kontrole dat, wzorce tekstowe, okres trwałości i porównania między kolumnami. Przed wybraniem operatora lub wzorca wybierz **Table name** i **Column Name**. Zobacz [Table](table/README.md).
+Karty te sprawdzają wiersze tabeli dokumentów. Widoczne opcje obejmują sprawdzanie dat, wzorce tekstu, okres przydatności do spożycia i porównania między kolumnami. Wybierz **Nazwa tabeli** i **Nazwa kolumny** przed wybraniem operatora lub wzorca. Zobacz [Tabela](table).
 
-<figure><img src="../../../.gitbook/assets/and-category-table-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Table; widoczne podglądy obejmują datę, wzorzec regex, okres trwałości i porównania kolumn tabeli."><figcaption>Warunki Table korzystają z wierszy i kolumn tabeli dokumentu.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-526dc164847b-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-## Compare with Quote Price
+## Porównaj z ceną ofertową
 
-Użyj tych kart, aby porównać pozycję z danymi o cenie z oferty. Widoczne opcje obejmują identyfikator pozycji, typ dostawcy, identyfikator pozycji dostawcy, cenę jednostkową i jednostkę miary. **Operator** i pola zastępcze danych zależą od wybranej karty.
+Użyj tych kart, aby porównać przedmiot z podanymi danymi cenowymi. Widoczne opcje obejmują identyfikator artykułu, typ dostawcy, identyfikator artykułu dostawcy, cenę jednostkową i jednostkę miary. **Operatora** i obiekty zastępcze danych zależą od wybranej karty.
 
-<figure><img src="../../../.gitbook/assets/and-category-quote-price-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Compare with Quote Price; pięć podglądów obejmuje identyfikator pozycji, typ dostawcy, identyfikator pozycji dostawcy, cenę jednostkową i jednostkę miary."><figcaption>Compare with Quote Price jest osobną kategorią w bieżącym selektorze kart.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-4a7af1d99c73-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-## Assignee
+## Osoba przypisana
 
-Użyj **Assignee**, gdy warunek zależy od przypisanego użytkownika lub grupy. Wybierz, czy porównywać z jednym użytkownikiem lub jedną grupą, czy z wybranym zbiorem. Zobacz [Assignee](assignee/README.md).
+Użyj **Osoba przypisana**, gdy warunek zależy od przypisanego użytkownika lub grupy. Wybierz, czy chcesz porównać z jednym użytkownikiem, grupą, czy wybranym zestawem. Zobacz [Cesjonat](assignee).
 
-<figure><img src="../../../.gitbook/assets/and-category-assignee-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Assignee; podglądy porównują przypisanego użytkownika lub grupę z jednym lub kilkoma wyborami."><figcaption>Warunki Assignee sprawdzają użytkownika lub grupę przypisaną do dokumentu.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-08cbb6fd429c-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
+
+[Szczegółowe karty porównawcze ofert i zachowanie Dowolne/Wszystkie](../cards-overview/quote-comparison-guide.md).

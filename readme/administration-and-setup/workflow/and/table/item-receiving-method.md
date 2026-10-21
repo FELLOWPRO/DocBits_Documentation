@@ -1,6 +1,6 @@
-# Item Receiving Method
+# Sposób odbioru przedmiotu
 
-<figure><img src="../../../../.gitbook/assets/image (47).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-ba8550d6feb0-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -8,13 +8,13 @@ Ta karta DocBits sprawdza, czy pozycje w zbiorze danych mają określoną metod�
 
 ## **Funkcjonalność:**
 
-* **Walidacja metody przyjęcia:** Ta karta weryfikuje metodę przyjęcia pozycji względem określonego warunku. Użytkownicy mogą wybrać między **dowolną** pozycją a **wszystkimi** pozycjami w zbiorze danych i ustawić warunek jako **equals** lub **not equals**.
-* **Item Selection:** Użytkownicy mogą określić:
+* **Walidacja metody przyjęcia:** Ta karta weryfikuje metodę przyjęcia pozycji względem określonego warunku. Użytkownicy mogą wybrać między **dowolną** pozycją a **wszystkimi** pozycjami w zbiorze danych i ustawić warunek jako **equals** lub **nie jest równy**.
+* **Wybór przedmiotu:** Użytkownicy mogą określić:
   * **Any Item:** Karta jest wyzwalana, jeśli co najmniej jedna pozycja spełnia określony warunek metody przyjęcia.
-  * **All Items:** Karta jest wyzwalana tylko wtedy, gdy wszystkie pozycje spełniają określony warunek metody przyjęcia.
-* **Operators:** Dostępne są następujące operatory do zdefiniowania warunku:
-  * **Equals (=):** Sprawdza, czy metoda przyjęcia odpowiada określonej wartości.
-  * **Not Equals (≠):** Zapewnia, że metoda przyjęcia nie odpowiada określonej wartości.
+  * **Wszystkie przedmioty:** Karta jest wyzwalana tylko wtedy, gdy wszystkie pozycje spełniają określony warunek metody przyjęcia.
+* **Operatorzy:** Dostępne są następujące operatory do zdefiniowania warunku:
+  * **Równa się (=):** Sprawdza, czy metoda przyjęcia odpowiada określonej wartości.
+  * **Nie równa się (≠):** Zapewnia, że metoda przyjęcia nie odpowiada określonej wartości.
 
 ## **Zastosowanie:**
 
@@ -22,6 +22,6 @@ Ta karta jest idealna dla menedżerów magazynów, koordynatorów zapasów lub p
 
 ## **Przykładowy scenariusz:**
 
-* Użytkownik konfiguruje kartę, aby sprawdzić, czy **wszystkie pozycje** mają metodę przyjęcia **equals "Direct Delivery"**. Jeśli każda pozycja spełnia ten warunek, przepływ pracy jest kontynuowany, potwierdzając, że wszystkie pozycje są przeznaczone do dostawy bezpośredniej.
+* Użytkownik konfiguruje kartę, aby sprawdzić, czy **wszystkie pozycje** mają metodę przyjęcia **równa się „Dostawa bezpośrednia”**. Jeśli każda pozycja spełnia ten warunek, przepływ pracy jest kontynuowany, potwierdzając, że wszystkie pozycje są przeznaczone do dostawy bezpośredniej.
 
 Korzystając z karty "Receiving Method Validation", organizacje mogą zapewnić zgodność z protokołami przyjęcia, poprawić przepływy pracy logistyki i utrzymać dokładność obsługi pozycji na podstawie określonych metod przyjęcia.

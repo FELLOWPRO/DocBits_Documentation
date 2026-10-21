@@ -1,49 +1,49 @@
-# Create a New Task and assign it to the User in Document Field
+# Utwórz nowe zadanie i przypisz je do użytkownika w polu dokumentu
 
-<figure><img src="../../../../.gitbook/assets/image (290).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f325db80cf3-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel:**
 
-Karta przepływu pracy **"Create Field-Based Task or Notification"** służy do tworzenia zadań lub powiadomień dynamicznie przypisanych do użytkowników zidentyfikowanych w określonych polach dokumentu. Karta ta zapewnia opcjonalny mechanizm zapasowy, aby zapewnić płynne wykonywanie przepływu pracy nawet wtedy, gdy pole dokumentu nie określa prawidłowego użytkownika.
+Karta przepływu pracy **„Utwórz zadanie lub powiadomienie oparte na polu”** służy do tworzenia zadań lub powiadomień dynamicznie przypisanych do użytkowników zidentyfikowanych w określonych polach dokumentu. Karta ta zapewnia opcjonalny mechanizm zapasowy, aby zapewnić płynne wykonywanie przepływu pracy nawet wtedy, gdy pole dokumentu nie określa prawidłowego użytkownika.
 
-## **Komponenty karty:**&#x20;
+## **Komponenty karty:**
 
-1. **Title**
+1. **Tytuł**
    * **Opis**: Określa tytuł zadania lub powiadomienia.
    * **Szczegóły**: Służy do nazwania i identyfikacji tworzonego zadania lub powiadomienia.
-2. **Description**
+2. **Opis**
    * **Opis**: Dostarcza dodatkowych szczegółów o zadaniu lub powiadomieniu.
    * **Szczegóły**: Zapewnia, że odbiorca rozumie cel i kontekst zadania lub powiadomienia.
-3. **Priority**
+3. **Priorytet**
    * **Opis**: Definiuje pilność zadania lub powiadomienia.
    * **Opcje**:
      * **High**: Wymaga natychmiastowej uwagi.
-     * **Medium**: Ważne, ale mniej pilne.
+     * **Średni**: Ważne, ale mniej pilne.
      * **Low**: Można obsłużyć później.
-4. **Field Name**
+4. **Nazwa pola**
    * **Opis**: Określa pole dokumentu, które zostanie użyte do przypisania zadania lub powiadomienia.
    * **Szczegóły**: Wybrane pole dynamicznie określi użytkownika, do którego zostanie przypisane zadanie lub powiadomienie. Jeśli pole jest puste lub nieprawidłowe, zadanie lub powiadomienie zostanie przypisane do użytkownika zapasowego wybranego z listy rozwijanej.
-5. **Email Notification**
+5. **Powiadomienie e-mail**
    * **Opis**: Konfiguruje, czy przypisany użytkownik jest powiadamiany za pośrednictwem e-maila.
    * **Opcje**:
      * **True**: Wysyła powiadomienie e-mail do przypisanego użytkownika.
      * **False**: Nie jest wysyłane powiadomienie e-mail.
-6. **Fallback User**
+6. **Użytkownik rezerwowy**
    * **Opis**: Umożliwia wybór użytkownika z listy rozwijanej w celu przypisania zadania lub powiadomienia, gdy w polu dokumentu nie zostanie znaleziony prawidłowy użytkownik.
    * **Szczegóły**: Zapewnia przypisanie zadania lub powiadomienia, nawet jeśli pole dokumentu jest puste lub nieprawidłowe.
 
 ## **Dodatkowe komponenty w Version 3:**
 
-1. **Notification Type**&#x20;
+1. **Typ powiadomienia**
    * **Opis**: Określa, czy karta tworzy zadanie, czy powiadomienie.
    * **Opcje**:
-     * **Task**: Tworzy zadanie przypisane do określonego użytkownika.
+     * **Zadanie**: Tworzy zadanie przypisane do określonego użytkownika.
      * **Notification**: Wysyła powiadomienie zamiast tworzenia zadania.
 
 ## **Funkcjonalność:**
 
 * **Ocena warunku**:\
-  Karta wykonuje swoją akcję tylko wtedy, gdy zarówno **"Where"**, jak i **"And Sections"** są prawdziwe.
+  Karta wykonuje swoją akcję tylko wtedy, gdy zarówno **„Kiedy”**, jak i **„I sekcje”** są prawdziwe.
 * **Tworzenie zadania lub powiadomienia**:
   * Przypisuje zadanie lub powiadomienie do użytkownika zidentyfikowanego w polu dokumentu.
   * W Version 3 umożliwia utworzenie zadania lub powiadomienia.
@@ -54,12 +54,24 @@ Karta przepływu pracy **"Create Field-Based Task or Notification"** służy do 
 
 ## **Konfiguracja:**
 
-1. **Define Task or Notification Details**: Wprowadź tytuł, opis i priorytet.
-2. **Select the Document Field**: Wybierz pole, które określa użytkownika do przypisania zadania lub powiadomienia.
-3. **Enable Email Notification**: Określ, czy powiadomienie e-mail powinno zostać wysłane do przypisanego użytkownika.
-4. **Select Fallback User**: Wybierz użytkownika zapasowego z listy rozwijanej do przypisania, jeśli pole dokumentu nie identyfikuje prawidłowego użytkownika.
-5. **Specify Notification Type (Version 3)**: Wskaż, czy karta tworzy zadanie, czy powiadomienie.
+1. **Zdefiniuj szczegóły zadania lub powiadomienia**: Wprowadź tytuł, opis i priorytet.
+2. **Wybierz pole dokumentu**: Wybierz pole, które określa użytkownika do przypisania zadania lub powiadomienia.
+3. **Włącz powiadomienie e-mailem**: Określ, czy powiadomienie e-mail powinno zostać wysłane do przypisanego użytkownika.
+4. **Wybierz opcję Użytkownik zastępczy**: Wybierz użytkownika zapasowego z listy rozwijanej do przypisania, jeśli pole dokumentu nie identyfikuje prawidłowego użytkownika.
+5. **Określ typ powiadomienia (wersja 3)**: Wskaż, czy karta tworzy zadanie, czy powiadomienie.
 
 ## **Podsumowanie:**
 
-Karta przepływu pracy **"Create Field-Based Task or Notification"** usprawnia zarządzanie zadaniami i powiadomieniami poprzez dynamiczne przypisywanie obowiązków na podstawie pól dokumentu. Jej mechanizm użytkownika zapasowego i rozszerzone opcje w Version 3 zapewniają elastyczność, gwarantując, że zadania lub powiadomienia są zawsze przypisywane, nawet gdy dane dokumentu są niekompletne.
+Karta przepływu pracy **„Utwórz zadanie lub powiadomienie oparte na polu”** usprawnia zarządzanie zadaniami i powiadomieniami poprzez dynamiczne przypisywanie obowiązków na podstawie pól dokumentu. Jej mechanizm użytkownika zapasowego i rozszerzone opcje w Version 3 zapewniają elastyczność, gwarantując, że zadania lub powiadomienia są zawsze przypisywane, nawet gdy dane dokumentu są niekompletne.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktyczny przykład
+
+**Kiedy używać:** Utwórz zadanie przeglądu dla użytkownika wymienionego w danych dokumentu.
+
+**Konfiguracja:** Wybierz `reviewer_name`, użytkownika rezerwowego `Demo Reviewer A`, tytuł `Review invoice` i priorytet.
+
+**Oczekiwany wynik i kontrprzykład:** Rozpoznawalny użytkownik w terenie otrzymuje zadanie. Puste lub nierozwiązane pole wykorzystuje skonfigurowaną opcję rezerwową; przetestuj obie ścieżki.
+
+To jest ilustracyjna konfiguracja i oczekiwany wynik. Korzystaj z pól, użytkowników i grup skonfigurowanych w Twojej organizacji testowej; nie jest to twierdzenie, że ten przykład został wykonany.

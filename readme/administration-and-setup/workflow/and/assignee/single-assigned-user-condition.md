@@ -1,6 +1,6 @@
-# Single Assigned User Condition
+# Warunek pojedynczego przypisanego użytkownika
 
-<figure><img src="../../../../.gitbook/assets/userlmn_77e991cee96598023f9a3ac7ad230e50 (1).png" alt="" width="552"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-901c3b37bac4-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
 **Cel**
 
@@ -8,12 +8,12 @@ Ta karta przepływu pracy umożliwia wykonywanie operacji na podstawie przypisan
 
 **Komponenty karty**
 
-1. **Operator**
+1. **Operatora**
    * **Opis**: Określa logikę stosowaną do przypisania użytkownika.
    * **Opcje**:
      * **IS**: Wyzwala operację, jeśli przypisany użytkownik dokumentu lub zadania odpowiada określonemu użytkownikowi.
-     * **IS NOT**: Wyzwala operację, jeśli przypisany użytkownik nie odpowiada określonemu użytkownikowi.
-2. **User**
+     * **NIE JEST**: Wyzwala operację, jeśli przypisany użytkownik nie odpowiada określonemu użytkownikowi.
+2. **Użytkownik**
    * **Opis**: Umożliwia wybór pojedynczego użytkownika, z którym porównywany będzie przypisany użytkownik.
    * **Szczegóły**: Obejmuje to proste pole rozwijane lub z autouzupełnianiem, w którym można wybrać jednego użytkownika naraz.
 
@@ -22,7 +22,7 @@ Ta karta przepływu pracy umożliwia wykonywanie operacji na podstawie przypisan
 * **Identyfikacja przypisania użytkownika**: Identyfikuje użytkownika aktualnie przypisanego do określonego zadania lub dokumentu.
 * **Ocena warunku**:
   * Dla operatora **IS** karta sprawdza, czy przypisany użytkownik jest taki sam jak wybrany użytkownik.
-  * Dla operatora **IS NOT** weryfikuje, czy przypisany użytkownik jest inny niż wybrany użytkownik.
+  * Dla operatora **NIE JEST** weryfikuje, czy przypisany użytkownik jest inny niż wybrany użytkownik.
 * **Wykonanie akcji**:
   * **Warunek prawdziwy**: Jeśli przypisanie spełnia ustawiony warunek (IS lub IS NOT), wyzwala predefiniowane akcje, które mogą obejmować dalsze zatwierdzenia, inicjowanie kolejnych zadań, wysyłanie powiadomień lub inne powiązane przepływy pracy.
   * **Warunek fałszywy**: Jeśli warunek nie jest spełniony, przepływ pracy nie będzie kontynuowany.
@@ -36,3 +36,15 @@ Ta karta przepływu pracy umożliwia wykonywanie operacji na podstawie przypisan
 #### Podsumowanie
 
 Karta przepływu pracy "Single Assigned User Condition" jest niezbędna do precyzyjnego, specyficznego dla użytkownika zarządzania dokumentami i zadaniami w systemie ERP. Upraszcza przepływy pracy, koncentrując się na przypisaniach indywidualnych użytkowników, zapewniając tym samym, że akcje są wykonywane tylko wtedy, gdy jest to właściwe, na podstawie roli i obowiązków użytkownika. Jasne udokumentowanie tej karty pomoże użytkownikom zrozumieć jej zastosowanie, umożliwiając im skuteczne wdrożenie i zarządzanie nią w codziennych operacjach. Dokumentacja ta zapewnia, że wszyscy potencjalni użytkownicy mogą łatwo zrozumieć cel karty i bezproblemowo zintegrować ją z przepływami pracy.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktyczny przykład
+
+**Kiedy używać:** Obsługuj kolejkę jednego konkretnego recenzenta.
+
+**Konfiguracja:** Wybierz operator równości i `Demo Reviewer A`.
+
+**Oczekiwany wynik i kontrprzykład:** Dokument przypisany do tego użytkownika przechodzi pomyślnie; inny przypisany użytkownik kończy się niepowodzeniem.
+
+To jest ilustracyjna konfiguracja i oczekiwany wynik. Korzystaj z pól, użytkowników i grup skonfigurowanych w Twojej organizacji testowej; nie jest to twierdzenie, że ten przykład został wykonany.

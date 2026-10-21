@@ -1,6 +1,6 @@
-# Date or Time
+# Data lub godzina
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-aab11d0fe7ed-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -10,7 +10,7 @@ Ta karta DocBits sprawdza, czy określona wartość daty/godziny mieści się w 
 
 * **Walidacja daty/godziny:** Ta karta ocenia, czy dana data/godzina mieści się w określonym zakresie, używając następujących warunków:
   * **Is:** Sprawdza, czy data/godzina mieści się w zdefiniowanym zakresie początku i końca (włącznie).
-  * **Is Not:** Zapewnia, że data/godzina znajduje się poza zdefiniowanym zakresem.
+  * **Nie jest:** Zapewnia, że data/godzina znajduje się poza zdefiniowanym zakresem.
 
 **Date/Time Range:** Użytkownicy określają wartości daty/godziny początku i końca, aby zdefiniować zakres do porównania.
 

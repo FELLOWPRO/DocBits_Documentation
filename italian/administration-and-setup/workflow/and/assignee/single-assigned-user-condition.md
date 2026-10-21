@@ -1,6 +1,6 @@
-# Single Assigned User Condition
+# Condizione utente singolo assegnato
 
-<figure><img src="../../../../.gitbook/assets/userlmn_77e991cee96598023f9a3ac7ad230e50 (1).png" alt="" width="552"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-901c3b37bac4-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
 **Scopo**
 
@@ -8,12 +8,12 @@ Questa scheda di workflow facilita le operazioni basate sull'assegnazione di un'
 
 **Componenti della scheda**
 
-1. **Operator**
+1. **Operatore**
    * **Descrizione**: Specifica la logica da applicare all'assegnazione dell'utente.
    * **Opzioni**:
      * **IS**: Attiva l'operazione se l'utente assegnato del documento o dell'attività corrisponde all'utente specificato.
-     * **IS NOT**: Attiva l'operazione se l'utente assegnato non corrisponde all'utente specificato.
-2. **User**
+     * **NON LO È**: Attiva l'operazione se l'utente assegnato non corrisponde all'utente specificato.
+2. **Utente**
    * **Descrizione**: Consente la selezione di un singolo utente con cui confrontare l'utente assegnato.
    * **Dettaglio**: Si tratta di un semplice menu a discesa o campo con completamento automatico in cui è possibile selezionare un utente alla volta.
 
@@ -22,7 +22,7 @@ Questa scheda di workflow facilita le operazioni basate sull'assegnazione di un'
 * **Identificazione dell'assegnazione dell'utente**: Identifica l'utente attualmente assegnato a una determinata attività o documento.
 * **Valutazione della condizione**:
   * Per l'operatore **IS**, la scheda verifica se l'utente assegnato è lo stesso utente selezionato.
-  * Per l'operatore **IS NOT**, verifica che l'utente assegnato sia diverso dall'utente selezionato.
+  * Per l'operatore **NON LO È**, verifica che l'utente assegnato sia diverso dall'utente selezionato.
 * **Esecuzione dell'azione**:
   * **Condizione vera**: Se l'assegnazione soddisfa la condizione impostata (IS o IS NOT), attiva azioni predefinite, che potrebbero includere il proseguimento con approvazioni, l'avvio di ulteriori attività, l'invio di notifiche o altri workflow correlati.
   * **Condizione falsa**: Se la condizione non è soddisfatta, il workflow non proseguirà.
@@ -36,3 +36,15 @@ Questa scheda di workflow facilita le operazioni basate sull'assegnazione di un'
 #### Conclusione
 
 La scheda di workflow "Single Assigned User Condition" è essenziale per una gestione precisa di documenti e attività specifica per utente all'interno di un sistema ERP. Semplifica i workflow concentrandosi sulle assegnazioni dei singoli utenti, garantendo così che le azioni vengano eseguite solo quando appropriato, in base al ruolo e alle responsabilità dell'utente. Documentare chiaramente questa scheda aiuterà gli utenti a comprenderne l'applicazione, consentendo loro di implementarla e gestirla efficacemente nelle operazioni quotidiane. Questa documentazione garantisce che tutti i potenziali utenti possano cogliere facilmente lo scopo della scheda e integrarla senza problemi nei loro workflow.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Esempio pratico
+
+**Quando utilizzarlo:** Gestisci la coda di un particolare revisore.
+
+**Configurazione:** Seleziona l'operatore uguale e `Demo Reviewer A`.
+
+**Risultato atteso e controesempio:** Passa un documento assegnato a quell'utente; un altro utente assegnato fallisce.
+
+Questa è una configurazione illustrativa e il risultato atteso. Utilizza campi, utenti e gruppi configurati nella tua organizzazione di test; non si afferma che questo esempio sia stato eseguito.

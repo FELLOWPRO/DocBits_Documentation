@@ -1,6 +1,6 @@
-# Document Type Operation one of
+# Tipo di documento Operazione uno di
 
-<figure><img src="../../../../.gitbook/assets/userlmn_14ab8ac5e693d9bbe68d178795d12a9f (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f6993281dacc-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## **Scopo:**
 
@@ -8,12 +8,12 @@ Questa scheda è progettata per gestire le azioni sui documenti in funzione del 
 
 ## **Componenti della scheda:**
 
-1. **Operator**
+1. **Operatore**
    * **Descrizione**: Determina la logica condizionale applicata ai tipi di documento.
    * **Opzioni**:
      * **is**: L'operazione si attiva se il tipo del documento corrisponde a uno dei tipi specificati nell'elenco.
-     * **is not**: L'operazione si attiva se il tipo del documento non corrisponde a nessuno dei tipi elencati.
-2. **Document Types List**
+     * **non lo è**: L'operazione si attiva se il tipo del documento non corrisponde a nessuno dei tipi elencati.
+2. **Elenco tipi di documenti**
    * **Descrizione**: Specifica un elenco di tipi di documento a cui si applicherà la condizione.
    * **Dettaglio**: Comprende una varietà di tipi di documento come "Invoice", "Purchase Order", ecc., in base ai quali verrà valutata la condizione (is/is not).
 
@@ -33,3 +33,15 @@ Questa scheda è progettata per gestire le azioni sui documenti in funzione del 
 ## Conclusione:
 
 La scheda di workflow "Document Type Condition" svolge un ruolo cruciale nella gestione delle operazioni basate sui documenti con precisione e flessibilità. Utilizzando una semplice logica condizionale, aiuta a garantire che i documenti vengano elaborati in modo appropriato, migliorando efficienza e conformità. Documentare chiaramente questa scheda aiuterà gli utenti a comprendere come implementarla e utilizzarla efficacemente, rendendola una parte preziosa della documentazione del tuo sistema ERP.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Esempio pratico
+
+**Quando utilizzarlo:** Utilizzare la stessa convalida per diversi tipi di documenti.
+
+**Configurazione:** Selezionare l'operatore is-one-of e i tipi `Invoice` e `Credit Note`.
+
+**Risultato atteso e controesempio:** Un `Invoice` passa; un `Order` no.
+
+Questa è una configurazione illustrativa e il risultato atteso. Utilizza campi, utenti e gruppi configurati nella tua organizzazione di test; non si afferma che questo esempio sia stato eseguito.

@@ -1,6 +1,6 @@
-# Text in Field
+# Testo nel campo
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-61d692604341-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## **Scopo:**
 
@@ -8,15 +8,15 @@ Questa scheda di workflow è progettata per automatizzare le azioni in base alla
 
 ## **Componenti della scheda:**
 
-1. **Text**
+1. **Testo**
    * **Descrizione:** Specifica la stringa di testo da verificare all'interno del campo.
    * **Dettaglio:** Può essere una parola, una frase o una sequenza di caratteri pertinente al workflow.
-2. **Operator**
+2. **Operatore**
    * **Descrizione:** Definisce la condizione per la presenza del testo nel campo.
    * **Opzioni:**
      * **Is:** Attiva il workflow se il testo specificato è presente nel campo.
-     * **Is Not:** Attiva il workflow se il testo specificato non è presente nel campo.
-3. **Field Name**
+     * **Non è:** Attiva il workflow se il testo specificato non è presente nel campo.
+3. **Nome campo**
    * **Descrizione:** Specifica il nome del campo del documento da valutare.
    * **Dettaglio:** Deve corrispondere all'identificatore esatto del campo all'interno del documento.
 
@@ -29,10 +29,22 @@ Questa scheda di workflow è progettata per automatizzare le azioni in base alla
    * **Condizione falsa:**\
      Se la presenza del testo nel campo non corrisponde alla condizione, possono essere intraprese azioni alternative o nessuna azione, a seconda della configurazione del workflow.
 
-## **Configurazione e impostazione:**&#x20;
+## **Configurazione e impostazione:**
 
 * L'utente inserisce il testo da verificare. Seleziona quindi il nome del campo del documento pertinente.
 
 ## **Conclusione:**
 
 La scheda di workflow "Text Presence in Field" è uno strumento semplice ma potente per l'analisi del contenuto dei documenti. Automatizzando le azioni in base al rilevamento del testo, questa scheda supporta workflow più intelligenti, migliora l'accuratezza nella gestione dei documenti e riduce lo sforzo manuale.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Esempio pratico
+
+**Quando usarlo:** Trova i documenti che portano un contrassegno di revisione.
+
+**Configurazione:** Seleziona il campo testo `review_note`, contiene l'operatore e il testo `manual review`.
+
+**Risultato atteso e controesempio:** `Please start manual review` passa. `Ready for export` non contiene il testo selezionato e fallisce.
+
+Questa è una configurazione illustrativa e il risultato atteso. Utilizza campi, utenti e gruppi configurati nella tua organizzazione di test; non si afferma che questo esempio sia stato eseguito.

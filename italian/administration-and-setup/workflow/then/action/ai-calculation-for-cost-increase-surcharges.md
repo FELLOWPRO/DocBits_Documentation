@@ -1,35 +1,29 @@
-# AI Calculation for Cost Increase Surcharges
+# Calcolo AI per i supplementi di aumento dei costi
 
-<figure><img src="../../../../.gitbook/assets/image (309).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2dff6d842a5a-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
-## Scopo:
+## Quando utilizzare questa carta
 
-La scheda di workflow **"AI Calculation for Cost Increase Surcharges"** utilizza l'AI per calcolare automaticamente gli importi dei sovrapprezzi in base agli aumenti dei costi. Garantisce calcoli dei sovrapprezzi coerenti e accurati, semplificando i workflow e riducendo lo sforzo manuale.
+Utilizzare questa azione per richiedere il calcolo del supplemento materiale ed energetico MTZ/ETZ configurato per il documento corrente. Preparare innanzitutto i dati del documento e la configurazione del servizio di calcolo richiesti dalla propria organizzazione.
 
-## Componenti della scheda:
+## Configurazione effettiva
 
-* **Cost Increase Factor**
-  * **Descrizione:** Il moltiplicatore o la percentuale applicati al costo base per calcolare il sovrapprezzo.
-  * **Dettaglio:** Determina l'importo del sovrapprezzo in base all'aumento del costo (es. un fattore di 1,10 per un aumento del 10%).
-* **Base Cost Field**
-  * **Descrizione:** Il campo contenente il valore del costo originale utilizzato come base per il calcolo del sovrapprezzo.
-  * **Dettaglio:** Selezionato automaticamente o definito all'interno del workflow come riferimento durante il calcolo.
-* **Surcharge Field**
-  * **Descrizione:** Il campo in cui viene memorizzato il valore del sovrapprezzo calcolato dall'AI.
-  * **Dettaglio:** Questo campo riflette il sovrapprezzo calcolato, rendendolo disponibile per ulteriori elaborazioni o reportistica.
+La carta visualizzata non ha input per Fattore di Incremento Costo, Campo Costo Base o Campo Supplemento. Delega il calcolo al servizio configurato. Non cercare questi controlli della carta inesistenti né assumere una formula percentuale fissa dal nome della carta.
 
-## Funzionalità:
+## Risultato e verifica
 
-**Valutazione della condizione:**
+Una risposta di servizio riuscita contrassegna la carta come riuscita. Un timeout o una risposta non riuscita producono un errore della scheda. Ispezionare il registro della carta e i dati di sovrapprezzo risultanti del documento; il solo successo della chiamata non documenta un importo particolare.
 
-* La scheda si attiva solo se entrambe le condizioni delle sezioni **"Where"** e **"And"** risultano vere.
-* Se una delle condizioni risulta falsa, non viene eseguito alcun calcolo del sovrapprezzo.
+Nella modalità di test della carta, la chiamata viene saltata e viene simulato il successo. Ciò è utile per testare la struttura del flusso di lavoro, ma non dimostra che il servizio sia stato eseguito o che sia stato calcolato un eventuale sovrapprezzo.
 
-**Calcolo guidato dall'AI:**
+<!-- workflow-card-practical-example-20261021 -->
 
-* Il sistema applica il **Cost Increase Factor** al **Base Cost Field** per calcolare il sovrapprezzo.
-* Il risultato viene memorizzato nel **Surcharge Field**, garantendone l'accessibilità per i passaggi successivi del workflow.
+## Esempio pratico
 
-## Conclusione:
+**Quando utilizzarlo:** Richiedere il calcolo del supplemento materiale/energia configurato per una fattura preparata.
 
-La scheda di workflow **"AI Calculation for Cost Increase Surcharges"** automatizza l'applicazione dei sovrapprezzi in base agli aumenti dei costi. Sfruttando l'AI per precisione e coerenza, questa scheda elimina i calcoli manuali, migliora l'efficienza e supporta una gestione accurata dei costi nei workflow automatizzati.
+**Configurazione:** Utilizza fattura sintetica `DEMO-001` con i dati richiesti dal servizio MTZ/ETZ configurato. Aggiungi questa azione dopo le condizioni di convalida del documento.
+
+**Risultato atteso e controesempio:** Una risposta di servizio riuscita contrassegna la carta con successo; un timeout o una risposta non riuscita producono un errore della scheda. Esaminare separatamente i campi del documento e il risultato del calcolo. La modalità di test della carta simula il successo e non chiama il servizio, quindi non può dimostrare un reale risultato di sovrapprezzo.
+
+Questa è una configurazione illustrativa e il risultato atteso. Utilizza campi, utenti e gruppi configurati nella tua organizzazione di test; non si afferma che questo esempio sia stato eseguito.

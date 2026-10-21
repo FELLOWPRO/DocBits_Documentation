@@ -1,6 +1,6 @@
-# Compare Total Charges
+# Confronta i costi totali
 
-<figure><img src="../../../../.gitbook/assets/image (271).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-97d69520f403-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## **Scopo:**
 
@@ -8,27 +8,27 @@ Questa scheda di workflow confronta i costi totali in un campo del documento con
 
 ## **Componenti della scheda:**
 
-1. **Field Name:**
+1. **Nome campo:**
    * **Descrizione**: Specifica il campo del documento che contiene i valori dei costi totali da confrontare con i costi nell'ordine d'acquisto.
    * **Dettaglio**: Il valore in questo campo rappresenta i costi totali applicati nel documento (es. fattura) e verrà confrontato con il costo dell'ordine d'acquisto.
-2. **Operator:**
+2. **Operatore:**
    * **Descrizione**: Definisce la condizione che verrà applicata al confronto tra il costo totale nel documento e il costo nell'ordine d'acquisto.
    * **Opzioni**:
-     * **Equals (=)**: Verifica se il costo totale nel documento corrisponde al costo nell'ordine d'acquisto.
-     * **Not Equals (≠)**: Garantisce che il costo totale nel documento sia diverso dal costo nell'ordine d'acquisto.
-     * **Greater Than (>)**: Verifica se il costo totale nel documento è maggiore del costo nell'ordine d'acquisto.
-     * **Greater or Equals (≥)**: Verifica se il costo totale nel documento è maggiore o uguale al costo nell'ordine d'acquisto.
-     * **Lesser Than (<)**: Verifica se il costo totale nel documento è minore del costo nell'ordine d'acquisto.
-     * **Lesser or Equals (≤)**: Verifica se il costo totale nel documento è minore o uguale al costo nell'ordine d'acquisto.
-3. **Tolerance Amount**
+     * **Uguale (=)**: Verifica se il costo totale nel documento corrisponde al costo nell'ordine d'acquisto.
+     * **Diverso (≠)**: Garantisce che il costo totale nel documento sia diverso dal costo nell'ordine d'acquisto.
+     * **Maggiore di (>)**: Verifica se il costo totale nel documento è maggiore del costo nell'ordine d'acquisto.
+     * **Maggiore o uguale (≥)**: Verifica se il costo totale nel documento è maggiore o uguale al costo nell'ordine d'acquisto.
+     * **Minore di (<)**: Verifica se il costo totale nel documento è minore del costo nell'ordine d'acquisto.
+     * **Minore o uguale (≤)**: Verifica se il costo totale nel documento è minore o uguale al costo nell'ordine d'acquisto.
+3. **Importo di tolleranza**
    * **Descrizione**: Specifica la soglia di tolleranza per il confronto dei costi totali.
    * **Dettaglio**: Questo valore numerico rappresenta la varianza consentita nei costi tra il documento e l'ordine d'acquisto.
-4. **Tolerance Type:**
+4. **Tipo di tolleranza:**
    * **Descrizione**: Specifica il tipo di tolleranza che verrà applicato.
    * **Opzioni**:
      * **Percentage**: La tolleranza è applicata come percentuale del costo dell'ordine d'acquisto.
-     * **Value**: La tolleranza è applicata come importo numerico fisso.
-5. **Separator:**
+     * **Valore**: La tolleranza è applicata come importo numerico fisso.
+5. **Separatore:**
    * **Descrizione**: Specifica il separatore utilizzato per distinguere il Charge ID alla fine del nome del campo.
    * **Dettaglio**: Il separatore separa il campo del costo dall'identificatore univoco Charge ID che verrà utilizzato per collegare il costo del documento al costo corrispondente nell'ordine d'acquisto.
 

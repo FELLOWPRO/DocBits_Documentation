@@ -1,6 +1,6 @@
-# Items Have Shelf Life
+# Gli articoli hanno una durata di conservazione
 
-<figure><img src="../../../../.gitbook/assets/image (44).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4e7c22460ee3-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## **Scopo:**
 
@@ -11,16 +11,14 @@ Questa scheda DocBits verifica se gli articoli in un dataset soddisfano condizio
 * **Validazione della durata di conservazione:** Questa scheda verifica la durata di conservazione degli articoli rispetto a una condizione specificata. Gli utenti possono scegliere di validare **un articolo qualsiasi** o **tutti gli articoli** del dataset e applicare vari operatori di confronto per definire la condizione.
 * **Selezione degli articoli:** Gli utenti possono scegliere tra:
   * **Any Item:** La scheda si attiva se almeno un articolo soddisfa la condizione di durata di conservazione specificata.
-  * **All Items:** La scheda si attiva solo se tutti gli articoli soddisfano la condizione di durata di conservazione specificata.
+  * **Tutti gli articoli:** La scheda si attiva solo se tutti gli articoli soddisfano la condizione di durata di conservazione specificata.
 * **Operatori:** Sono disponibili i seguenti operatori per impostare la condizione di durata di conservazione:
-  * **Equals (=):** Verifica se la durata di conservazione è esattamente uguale al valore specificato.
-  * **Not Equals (≠):** Garantisce che la durata di conservazione non sia uguale al valore specificato.
-  * **Greater Than (>):** Conferma che la durata di conservazione sia maggiore del valore specificato.
-  * **Greater or Equals (≥):** Garantisce che la durata di conservazione sia maggiore o uguale al valore specificato.
+  * **Uguale (=):** Verifica se la durata di conservazione è esattamente uguale al valore specificato.
+  * **Diverso (≠):** Garantisce che la durata di conservazione non sia uguale al valore specificato.
+  * **Maggiore di (>):** Conferma che la durata di conservazione sia maggiore del valore specificato.
+  * **Maggiore o uguale (≥):** Garantisce che la durata di conservazione sia maggiore o uguale al valore specificato.
   * **Less Than (<):** Verifica se la durata di conservazione è minore del valore specificato.
-  * **Less or Equals (≤):** Garantisce che la durata di conservazione sia minore o uguale al valore specificato.
-
-
+  * **Minore o uguale (≤):** Garantisce che la durata di conservazione sia minore o uguale al valore specificato.
 
 ## **Utilizzo:**
 

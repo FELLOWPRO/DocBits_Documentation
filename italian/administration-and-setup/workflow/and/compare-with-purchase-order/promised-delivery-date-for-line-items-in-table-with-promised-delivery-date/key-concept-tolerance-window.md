@@ -1,4 +1,4 @@
-# Key Concept: Tolerance Window
+# Concetto chiave: Finestra di Tolleranza
 
 Prima di esaminare gli operatori, è importante capire come viene calcolata la finestra di tolleranza.
 
@@ -12,7 +12,7 @@ La finestra di tolleranza definisce un intervallo di date accettabili attorno al
 * Giorni di tolleranza: **3**
 * Finestra di tolleranza: **6 gennaio → 12 gennaio**
 
-> <mark style="color:red;">Solo gli</mark> <mark style="color:red;"></mark><mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;"></mark><mark style="color:red;">selezionati (giorni della settimana) vengono conteggiati nel calcolo di questa finestra.</mark>
+> <mark style="color:red;">Solo gli</mark> <mark style="color:red;"></mark><mark style="color:red;">**Giorni di tolleranza consentiti**</mark> <mark style="color:red;"></mark><mark style="color:red;">selezionati (giorni della settimana) vengono conteggiati nel calcolo di questa finestra.</mark>
 
 ### Esempio di timeline visiva
 
@@ -25,49 +25,49 @@ La finestra di tolleranza definisce un intervallo di date accettabili attorno al
 
 ### Comportamento degli operatori spiegato con esempi
 
-* **Equals (=)**
+* **Uguale (=)**
   * **Significato:**\
     La data di consegna della riga articolo deve ricadere _all'interno_ della finestra di tolleranza.
-  * **Date valide:**
+  * **Data valida:**
     * Qualsiasi data tra il **6 gen e il 12 gen** (inclusi)
   * **Date non valide:**
     * Qualsiasi data **precedente al 6 gen**
     * Qualsiasi data **successiva al 12 gen**
-* **Not Equals (≠)**
+* **Non uguale a (≠)**
   * **Significato:**\
     La data di consegna della riga articolo deve ricadere _al di fuori_ della finestra di tolleranza.
-  * **Date valide:**
+  * **Data valida:**
     * Qualsiasi data **precedente al 6 gen**
     * Qualsiasi data **successiva al 12 gen**
   * **Date non valide:**
     * Date tra il **6 gen e il 12 gen**
-* **Greater or Equals (≥)**
+* **Maggiore o Uguale (≥)**
   * **Significato:**\
     La data di consegna della riga articolo deve essere all'**inizio della finestra di tolleranza** o successiva.
-  * **Date valide:**
+  * **Data valida:**
     * **6 gen → qualsiasi data futura**
   * **Date non valide:**
     * Qualsiasi data **precedente al 6 gen**
   * <mark style="color:red;">**Importante:**</mark>\
     Questo operatore consente date _all'interno_ della finestra di tolleranza **e oltre di essa**.
-* **Lesser or Equals (≤)**
+* **Inferiore o uguale (≤)**
   * **Significato:**\
     La data di consegna della riga articolo deve essere alla **fine della finestra di tolleranza** o precedente.
-  * **Date valide:**
+  * **Data valida:**
     * Qualsiasi data passata fino al **12 gen**
   * **Date non valide:**
     * Qualsiasi data **successiva al 12 gen**
-* **Greater Than (>)**
+* **Maggiore di (>)**
   * **Significato:**\
     La data di consegna della riga articolo deve essere _strettamente successiva_ alla finestra di tolleranza.
-  * **Date valide:**
+  * **Data valida:**
     * **13 gen → qualsiasi data futura**
   * **Date non valide:**
     * Qualsiasi data **pari o precedente al 12 gen**
-* **Lesser Than (<)**
+* **Inferiore a (<)**
   * **Significato:**\
     La data di consegna della riga articolo deve essere _strettamente precedente_ alla finestra di tolleranza.
-  * **Date valide:**
+  * **Data valida:**
     * Qualsiasi data **precedente al 6 gen**
   * **Date non valide:**
     * Qualsiasi data **pari o successiva al 6 gen**

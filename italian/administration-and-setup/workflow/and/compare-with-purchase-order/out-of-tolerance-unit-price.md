@@ -1,6 +1,6 @@
-# Out of Tolerance Unit Price
+# Prezzo unitario fuori tolleranza
 
-<figure><img src="../../../../.gitbook/assets/image (272).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-443397191f7c-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## **Scopo:**
 
@@ -8,25 +8,25 @@ Questa scheda di workflow è progettata per valutare se il valore combinato dei 
 
 ## **Componenti della scheda:**
 
-1. **Field Name:**
+1. **Nome campo:**
    * **Descrizione**: Specifica il campo del documento che contiene il valore da combinare con il prezzo unitario.
    * **Dettaglio**: Il valore in questo campo verrà combinato con il prezzo unitario per creare il valore combinato totale da confrontare.
-2. **Operator:**
+2. **Operatore:**
    * **Descrizione**: Definisce la condizione per confrontare il valore combinato del prezzo unitario e del valore del campo con il valore specificato.
    * **Opzioni**:
-     * **Equals (=)**: Verifica se il valore combinato del prezzo unitario e del campo corrisponde al valore specificato.
-     * **Not Equals (≠)**: Garantisce che il valore combinato del prezzo unitario e del campo sia diverso dal valore specificato.
-     * **Greater Than (>)**: Verifica se il valore combinato del prezzo unitario e del campo supera il valore specificato.
-     * **Greater or Equals (≥)**: Verifica se il valore combinato del prezzo unitario e del campo è maggiore o uguale al valore specificato.
-     * **Lesser Than (<)**: Verifica se il valore combinato del prezzo unitario e del campo è minore del valore specificato.
-     * **Lesser or Equals (≤)**: Verifica se il valore combinato del prezzo unitario e del campo è minore o uguale al valore specificato.
-3. **Value:**
+     * **Uguale (=)**: Verifica se il valore combinato del prezzo unitario e del campo corrisponde al valore specificato.
+     * **Diverso (≠)**: Garantisce che il valore combinato del prezzo unitario e del campo sia diverso dal valore specificato.
+     * **Maggiore di (>)**: Verifica se il valore combinato del prezzo unitario e del campo supera il valore specificato.
+     * **Maggiore o uguale (≥)**: Verifica se il valore combinato del prezzo unitario e del campo è maggiore o uguale al valore specificato.
+     * **Minore di (<)**: Verifica se il valore combinato del prezzo unitario e del campo è minore del valore specificato.
+     * **Minore o uguale (≤)**: Verifica se il valore combinato del prezzo unitario e del campo è minore o uguale al valore specificato.
+3. **Valore:**
    * **Descrizione**: Specifica il valore con cui verrà confrontato il valore combinato del prezzo unitario e del campo.
    * **Dettaglio**: Questo valore numerico rappresenta la soglia per il confronto. Se il valore combinato del prezzo unitario e del campo supera o non raggiunge questo valore (in base all'operatore selezionato), la condizione attiverà le azioni specificate.
 
 ## **Funzionalità:**
 
-* &#x20;**Valutazione della condizione:** Il sistema calcola il valore combinato moltiplicando o sommando il prezzo unitario con il valore del campo, a seconda della configurazione. Il risultato viene quindi confrontato con il valore specificato utilizzando l'operatore selezionato. Se la condizione è soddisfatta (ovvero il valore combinato è fuori tolleranza), il workflow procede al passaggio successivo, che si tratti di approvazione, rifiuto o ulteriore revisione.
+* **Valutazione della condizione:** Il sistema calcola il valore combinato moltiplicando o sommando il prezzo unitario con il valore del campo, a seconda della configurazione. Il risultato viene quindi confrontato con il valore specificato utilizzando l'operatore selezionato. Se la condizione è soddisfatta (ovvero il valore combinato è fuori tolleranza), il workflow procede al passaggio successivo, che si tratti di approvazione, rifiuto o ulteriore revisione.
 * **Esecuzione dell'azione:**
   * **Condizione vera**: Se il confronto risulta vero (ovvero il valore combinato soddisfa la condizione), il workflow attiva l'azione associata alla condizione vera (es. approvazione o notifica).
   * **Condizione falsa**: Se il confronto risulta falso (ovvero il valore combinato non soddisfa la condizione), il workflow non proseguirà.

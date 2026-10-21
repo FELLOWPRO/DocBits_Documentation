@@ -41,7 +41,7 @@ DocBits convertit vos mises en page existantes basées sur l'origine en règles 
 * La mise en page de l'origine **DEFAULT** devient la **mise en page par défaut** (le repli).
 * Chaque mise en page d'une origine spécifique devient une règle **« Layout for XX »** avec la condition *L'origine du document est XX*, qui renvoie à cette mise en page. Ces règles reçoivent des priorités par pas de 10 (par exemple 2000, 2010, 2020 …), afin que vous puissiez placer vos propres règles avant, entre ou après elles.
 
-<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-default-row-fr.png" alt="Mise en page de repli en fin de liste des règles de sélection."><figcaption><p>Mise en page de repli en fin de liste des règles de sélection.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-default-row-fr.png" alt="Mise en page de repli en fin de liste des règles de sélection. Le nom d’écran « Field validation » reste en anglais dans le produit."><figcaption><p>Mise en page de repli en fin de liste des règles de sélection. Le nom d’écran « Field validation » reste en anglais dans le produit.</p></figcaption></figure>
 
 Rien n'est supprimé ni modifié dans les mises en page elles-mêmes. Juste après l'activation, chaque document obtient donc exactement la mise en page qu'il obtenait auparavant. Le comportement ne change que lorsque vous ajoutez ou modifiez des règles.
 
@@ -49,7 +49,7 @@ Rien n'est supprimé ni modifié dans les mises en page elles-mêmes. Juste apr�
 
 ## L'écran Mises en page et règles de sélection
 
-<figure><img src="../../../../../.gitbook/assets/s150-layouts-overview-fr.png" alt="Vue d’ensemble des mises en page et règles de sélection."><figcaption><p>Vue d’ensemble des mises en page et règles de sélection.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layouts-overview-fr.png" alt="Vue d’ensemble des mises en page et règles de sélection. Le nom d’écran « Field validation » reste en anglais dans le produit."><figcaption><p>Vue d’ensemble des mises en page et règles de sélection. Le nom d’écran « Field validation » reste en anglais dans le produit.</p></figcaption></figure>
 
 * **Mises en page / Règles de sélection** (en haut à droite) permettent de basculer entre la liste des mises en page et la liste des règles. Les nombres indiquent combien il y en a.
 * **Validation des champs / Approbation / Rejet / Révision** changent d'**écran**. Chaque écran a ses propres mises en page, ses propres règles et sa propre mise en page par défaut — une règle d'approbation ne modifie jamais l'écran de validation.
@@ -97,7 +97,7 @@ La mise en page est toujours choisie à partir des valeurs **actuelles** du docu
 
 ## Gérer les règles de sélection
 
-<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-rules-list-fr.png" alt="Règles de sélection avec les noms configurés masqués."><figcaption><p>Règles de sélection avec les noms configurés masqués.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-rules-list-fr.png" alt="Règles de sélection avec les noms configurés masqués. Le nom d’écran « Field validation » reste en anglais dans le produit."><figcaption><p>Règles de sélection avec les noms configurés masqués. Le nom d’écran « Field validation » reste en anglais dans le produit.</p></figcaption></figure>
 
 Chaque ligne affiche la **priorité** (la première ligne est marquée **FIRST**), le **nom et la clé de la règle** avec ses **conditions**, la **mise en page cible**, le badge de **source** et un interrupteur **Actif**.
 
@@ -124,7 +124,7 @@ Pour utiliser une autre mise en page de repli, créez une règle **sans aucune c
 
 Cliquez sur **Nouvelle règle** dans l'onglet Règles de sélection de l'écran que vous souhaitez modifier.
 
-<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor-fr.png" alt="Portée, conditions et mise en page cible de la règle."><figcaption><p>Portée, conditions et mise en page cible de la règle.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor-fr.png" alt="Portée, conditions et mise en page cible de la règle. Le nom d’écran « Field validation » reste en anglais dans le produit."><figcaption><p>Portée, conditions et mise en page cible de la règle. Le nom d’écran « Field validation » reste en anglais dans le produit.</p></figcaption></figure>
 
 La phrase en haut résume la règle au fur et à mesure de sa construction — « When header.supplier_id = HP0000278, an INVOICE document gets the Field Validation Layout (Base) layout for Field validation. Checked at priority 5 — the first matching rule wins. »
 
@@ -189,7 +189,7 @@ Cliquez sur **Créer la règle** (ou **Enregistrer la règle** lors d'une modifi
 
 Écran **Approbation** · priorité **5** · *Le statut du document est Pending second approval* · cible *Second Approval Layout*. Les documents en première étape d'approbation ne correspondent pas et obtiennent la mise en page par défaut d'Approbation.
 
-<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-approval-status-fr.png" alt="Brouillon non enregistré d’une règle de sélection de mise en page."><figcaption><p>Brouillon non enregistré d’une règle de sélection de mise en page.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-approval-status-fr.png" alt="Brouillon non enregistré d’une règle de sélection de mise en page. Le nom d’écran « Field validation » reste en anglais dans le produit."><figcaption><p>Brouillon non enregistré d’une règle de sélection de mise en page. Le nom d’écran « Field validation » reste en anglais dans le produit.</p></figcaption></figure>
 
 ### Un écran de rejet spécial pour certains fournisseurs
 

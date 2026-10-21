@@ -11,6 +11,7 @@
     "owned_fixtures_deleted": true,
     "baseline_layouts_preserved": true
   },
+  "owned_fixture_deletion_count": 4,
   "capture_environment": "dev.docbits.com",
   "ui_code": "fr",
   "note": "Alignment of the latest150 cases plus75 changes from the first5,20 and50 screenshot rounds. Equivalent localized source names and current navigation paths were checked. Source captures use the actual native UI, including separately reported untranslated or inaccurate product labels. No configuration changes were saved; own synthetic documents were removed and account language restored.",
@@ -574,7 +575,7 @@
       "mapping": "blob_match",
       "new": "s150-layout-rule-approval-status-fr.png",
       "sha256": "199aeb6b53cb20e776d6edb3ea2859dc3152a6b3866bcf328a6c5d683d7c7062",
-      "caption": "Brouillon non enregistré d’une règle de sélection de mise en page."
+      "caption": "Brouillon non enregistré d’une règle de sélection de mise en page. Le nom d’écran « Field validation » reste en anglais dans le produit."
     },
     {
       "id": "S027",
@@ -588,7 +589,7 @@
       "mapping": "blob_match",
       "new": "s150-layout-rule-editor-fr.png",
       "sha256": "7a324571a1605ef8c08ff41d092b8bf70855a6ddeb0178b9779c5a40e88f4b42",
-      "caption": "Portée, conditions et mise en page cible de la règle."
+      "caption": "Portée, conditions et mise en page cible de la règle. Le nom d’écran « Field validation » reste en anglais dans le produit."
     },
     {
       "id": "S028",
@@ -602,7 +603,7 @@
       "mapping": "blob_match",
       "new": "s150-layout-selection-default-row-fr.png",
       "sha256": "a4d8c2eac1b96c8ee5832b37173df0961eadb16ec7fd1bcfecaec8feb2e39bd2",
-      "caption": "Mise en page de repli en fin de liste des règles de sélection."
+      "caption": "Mise en page de repli en fin de liste des règles de sélection. Le nom d’écran « Field validation » reste en anglais dans le produit."
     },
     {
       "id": "S029",
@@ -616,7 +617,7 @@
       "mapping": "blob_match",
       "new": "s150-layout-selection-rules-list-fr.png",
       "sha256": "49977d3981e9f9b7c938333485de92792a9d38dad781799cff0021b8d54c0276",
-      "caption": "Règles de sélection avec les noms configurés masqués."
+      "caption": "Règles de sélection avec les noms configurés masqués. Le nom d’écran « Field validation » reste en anglais dans le produit."
     },
     {
       "id": "S030",
@@ -630,7 +631,7 @@
       "mapping": "blob_match",
       "new": "s150-layouts-overview-fr.png",
       "sha256": "fea42ec4b815425edc4ce55377208e1127182f0a1d83ab42146831a630146dbc",
-      "caption": "Vue d’ensemble des mises en page et règles de sélection."
+      "caption": "Vue d’ensemble des mises en page et règles de sélection. Le nom d’écran « Field validation » reste en anglais dans le produit."
     },
     {
       "id": "S031",

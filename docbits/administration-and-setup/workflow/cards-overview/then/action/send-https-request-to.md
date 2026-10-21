@@ -23,14 +23,14 @@ The **"Send HTTPS Request"** workflow card enables users to send HTTPS requests 
      * **DELETE:** Removes resources from the endpoint.
 4. **Parameters**
    * **Description:** Key-value pairs to be included in the URL as query parameters.
-   * **Detail:** Use this to send filters or additional data required by the endpoint a valid JSON formant. See example for Headers.
+   * **Detail:** Use this to send filters or additional data required by the endpoint in a valid JSON format. See example for Headers.
 5. **Data**
    * **Description:** The body of the HTTPS request.
-   * **Detail:** Provide the payload in a valid JSON formant. See example for Headers.
+   * **Detail:** Provide the payload in in a valid JSON format. See example for Headers.
 
 ## Functionality:
 
-* **Condition Evaluation:** The card only sends the HTTPS request if the **"Where"** and **"And Sections"** evaluate as true.
+* **Condition Evaluation:** The card only sends the HTTPS request if the **"When"** and **"And"** evaluate as true.
   * If either condition is false, the request is not sent.
 * **Request Execution:**
   * When the conditions are met, the system sends the HTTPS request with the specified configurations.
@@ -42,7 +42,7 @@ The **"Send HTTPS Request"** workflow card enables users to send HTTPS requests 
 3. **Select HTTP Method:** Choose the appropriate method (**GET**, **POST**, **PUT**, or **DELETE**) based on the action to perform.
 4. **Add Parameters:** Specify any query parameters required by the endpoint.
 5. **Provide Data Payload:** Enter the request body in the required format (e.g., JSON) if needed.
-6. **Configure Conditions:** Define the **"Where"** and **"And Sections"** to ensure the request is sent only when specific conditions are met.
+6. **Configure Conditions:** Define the **"When"** and **"And"** to ensure the request is sent only when specific conditions are met.
 
 ## Example Card:
 

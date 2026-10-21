@@ -6,6 +6,7 @@ are checked against the Git tree as well as the working tree.
 """
 from __future__ import annotations
 import argparse
+from collections import Counter
 import json
 from pathlib import Path
 import re
@@ -57,6 +58,13 @@ def front_matter(text: str) -> str | None:
     return json.dumps(technical, sort_keys=True, ensure_ascii=False)
 
 
+def technical_identifiers(text: str) -> Counter:
+    """Escaped API card identifiers must also survive translation in prose."""
+    values = re.findall(r"[\w]+(?:\\_[\w]+)+", text)
+    return Counter(value for value in values
+                   if value.replace("\\_", "_").isupper() or value == "tasks\\_create")
+
+
 def navigated_card_path(folder: str, reference: str, navigation: set[str]) -> str | None:
     """Resolve both canonical and flat language-branch paths from SUMMARY."""
     workflow = 'administration-and-setup/workflow/'
@@ -102,6 +110,11 @@ def check(repo: Path, locales: list[str]) -> list[str]:
             text = page.read_text()
             source = sources[page]
             expected_metadata = front_matter(source.read_text()) if source.exists() else None
+            required_ids = technical_identifiers(source.read_text()) if source.exists() else Counter()
+            actual_ids = technical_identifiers(text)
+            for identifier, count in (required_ids - actual_ids).items():
+                errors.append(f'{rel}: technical identifier missing or translated: {identifier} ({count} occurrences)')
+
             actual_metadata = front_matter(text)
             if actual_metadata in {"UNCLOSED", "INVALID"}:
                 errors.append(f'{rel}: invalid or unclosed frontmatter')

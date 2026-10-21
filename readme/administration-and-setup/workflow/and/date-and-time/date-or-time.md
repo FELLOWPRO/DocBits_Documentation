@@ -1,6 +1,6 @@
-# Date or Time
+# Fecha u hora
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-aab11d0fe7ed-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -10,7 +10,7 @@ Esta tarjeta de DocBits comprueba si un valor de fecha/hora especificado está d
 
 * **Validación de fecha/hora:** Esta tarjeta evalúa si una fecha/hora determinada está dentro de un rango especificado usando las siguientes condiciones:
   * **Is:** Comprueba si la fecha/hora está dentro del rango de inicio y fin definido (ambos incluidos).
-  * **Is Not:** Garantiza que la fecha/hora quede fuera del rango definido.
+  * **No es:** Garantiza que la fecha/hora quede fuera del rango definido.
 
 **Rango de fecha/hora:** Los usuarios especifican los valores de fecha/hora de inicio y fin para definir el rango de comparación.
 

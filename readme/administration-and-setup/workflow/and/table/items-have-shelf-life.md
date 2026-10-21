@@ -1,6 +1,6 @@
-# Items Have Shelf Life
+# Los artículos tienen vida útil
 
-<figure><img src="../../../../.gitbook/assets/image (44).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4e7c22460ee3-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -11,16 +11,14 @@ Esta tarjeta de DocBits verifica si los artículos de un conjunto de datos cumpl
 * **Validación de la vida útil:** Esta tarjeta comprueba la vida útil de los artículos frente a una condición especificada. Los usuarios pueden optar por validar **algún** artículo o **todos** los artículos del conjunto de datos y aplicar varios operadores de comparación para definir la condición.
 * **Selección de artículos:** Los usuarios pueden elegir entre:
   * **Any Item:** La tarjeta se dispara si al menos un artículo cumple la condición de vida útil especificada.
-  * **All Items:** La tarjeta se dispara solo si todos los artículos cumplen la condición de vida útil especificada.
-* **Operators:** Los siguientes operadores están disponibles para establecer la condición de vida útil:
-  * **Equals (=):** Comprueba si la vida útil es exactamente igual al valor especificado.
-  * **Not Equals (≠):** Garantiza que la vida útil no sea igual al valor especificado.
-  * **Greater Than (>):** Confirma que la vida útil es mayor que el valor especificado.
-  * **Greater or Equals (≥):** Garantiza que la vida útil sea mayor o igual que el valor especificado.
+  * **Todos los artículos:** La tarjeta se dispara solo si todos los artículos cumplen la condición de vida útil especificada.
+* **Operadores:** Los siguientes operadores están disponibles para establecer la condición de vida útil:
+  * **Igual a (=):** Comprueba si la vida útil es exactamente igual al valor especificado.
+  * **No iguales (≠):** Garantiza que la vida útil no sea igual al valor especificado.
+  * **Mayor que (>):** Confirma que la vida útil es mayor que el valor especificado.
+  * **Mayor o igual (≥):** Garantiza que la vida útil sea mayor o igual que el valor especificado.
   * **Less Than (<):** Comprueba si la vida útil es menor que el valor especificado.
-  * **Less or Equals (≤):** Garantiza que la vida útil sea menor o igual que el valor especificado.
-
-
+  * **Menos o Igual (≤):** Garantiza que la vida útil sea menor o igual que el valor especificado.
 
 ## **Uso:**
 

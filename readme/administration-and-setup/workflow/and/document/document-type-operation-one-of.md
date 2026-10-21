@@ -1,6 +1,6 @@
-# Document Type Operation one of
+# Tipo de documento Operación uno de
 
-<figure><img src="../../../../.gitbook/assets/userlmn_14ab8ac5e693d9bbe68d178795d12a9f (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f6993281dacc-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,12 +8,12 @@ Esta tarjeta está diseñada para gestionar acciones sobre los documentos en fun
 
 ## **Componentes de la tarjeta:**
 
-1. **Operator**
+1. **Operador**
    * **Descripción**: Determina la lógica condicional que se aplica a los tipos de documento.
    * **Opciones**:
      * **is**: La operación se disparará si el tipo del documento coincide con uno de los tipos especificados en la lista.
-     * **is not**: La operación se disparará si el tipo del documento no coincide con ninguno de los tipos enumerados.
-2. **Document Types List**
+     * **no es**: La operación se disparará si el tipo del documento no coincide con ninguno de los tipos enumerados.
+2. **Lista de tipos de documentos**
    * **Descripción**: Especifica una lista de tipos de documento a los que se aplicará la condición.
    * **Detalle**: Incluye una variedad de tipos de documento como "Invoice", "Purchase Order", etc., en función de los cuales se evaluará la condición (is/is not).
 

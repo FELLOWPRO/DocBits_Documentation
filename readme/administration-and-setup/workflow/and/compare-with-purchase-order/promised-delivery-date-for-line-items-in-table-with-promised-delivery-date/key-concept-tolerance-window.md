@@ -1,4 +1,4 @@
-# Key Concept: Tolerance Window
+# Concepto clave: ventana de tolerancia
 
 Antes de examinar los operadores, es importante comprender cómo se calcula la ventana de tolerancia.
 
@@ -9,10 +9,10 @@ La ventana de tolerancia define un rango de fechas aceptables en torno a la fech
 **Ejemplo:**
 
 * Fecha de la orden de compra: **9 de enero**
-* Tolerance Days: **3**
+* Días de tolerancia: **3**
 * Ventana de tolerancia: **6 de enero → 12 de enero**
 
-> <mark style="color:red;">Solo los</mark> <mark style="color:red;"></mark><mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;"></mark><mark style="color:red;">seleccionados (días de la semana) se cuentan al calcular esta ventana.</mark>
+> <mark style="color:red;">Solo los</mark> <mark style="color:red;"></mark><mark style="color:red;">**Días de tolerancia permitidos**</mark> <mark style="color:red;"></mark><mark style="color:red;">seleccionados (días de la semana) se cuentan al calcular esta ventana.</mark>
 
 ### Ejemplo de línea de tiempo visual
 
@@ -25,7 +25,7 @@ La ventana de tolerancia define un rango de fechas aceptables en torno a la fech
 
 ### Comportamiento de los operadores explicado con ejemplos
 
-* **Equals (=)**
+* **Es igual a (=)**
   * **Significado:**\
     La fecha de entrega de la línea debe quedar _dentro_ de la ventana de tolerancia.
   * **Fechas válidas:**
@@ -33,7 +33,7 @@ La ventana de tolerancia define un rango de fechas aceptables en torno a la fech
   * **Fechas no válidas:**
     * Cualquier fecha **anterior al 6 de enero**
     * Cualquier fecha **posterior al 12 de enero**
-* **Not Equals (≠)**
+* **No es igual a (≠)**
   * **Significado:**\
     La fecha de entrega de la línea debe quedar _fuera_ de la ventana de tolerancia.
   * **Fechas válidas:**
@@ -41,7 +41,7 @@ La ventana de tolerancia define un rango de fechas aceptables en torno a la fech
     * Cualquier fecha **posterior al 12 de enero**
   * **Fechas no válidas:**
     * Fechas entre el **6 de enero y el 12 de enero**
-* **Greater or Equals (≥)**
+* **Mayor o Igual (≥)**
   * **Significado:**\
     La fecha de entrega de la línea debe ser igual o posterior al **inicio de la ventana de tolerancia**.
   * **Fechas válidas:**
@@ -50,21 +50,21 @@ La ventana de tolerancia define un rango de fechas aceptables en torno a la fech
     * Cualquier fecha **anterior al 6 de enero**
   * <mark style="color:red;">**Importante:**</mark>\
     Este operador permite fechas _dentro_ de la ventana de tolerancia **y más allá de ella**.
-* **Lesser or Equals (≤)**
+* **Menor o Igual (≤)**
   * **Significado:**\
     La fecha de entrega de la línea debe ser igual o anterior al **final de la ventana de tolerancia**.
   * **Fechas válidas:**
     * Cualquier fecha pasada hasta el **12 de enero**
   * **Fechas no válidas:**
     * Cualquier fecha **posterior al 12 de enero**
-* **Greater Than (>)**
+* **Mayor que (>)**
   * **Significado:**\
     La fecha de entrega de la línea debe ser _estrictamente posterior_ a la ventana de tolerancia.
   * **Fechas válidas:**
     * **13 de enero → cualquier fecha futura**
   * **Fechas no válidas:**
     * Cualquier fecha **igual o anterior al 12 de enero**
-* **Lesser Than (<)**
+* **Menor que (<)**
   * **Significado:**\
     La fecha de entrega de la línea debe ser _estrictamente anterior_ a la ventana de tolerancia.
   * **Fechas válidas:**
@@ -82,8 +82,8 @@ Los días que no están seleccionados (como los fines de semana o los días de l
 **Configuración:**
 
 * Fecha de la orden de compra: **miércoles, 9 de enero**
-* Tolerance Days: **3**
-* Allowed Tolerance Days: **lunes, martes, miércoles, jueves, viernes**
+* Días de tolerancia: **3**
+* Días de tolerancia permitidos: **lunes, martes, miércoles, jueves, viernes**
 * Fines de semana (sábado, domingo): **No seleccionados**
 
 #### Cálculo paso a paso
@@ -118,7 +118,7 @@ Partiendo de la fecha de la orden de compra (**9 de enero**):
 
 #### Por qué es importante
 
-Si los Allowed Tolerance Days se configuran incorrectamente:
+Si los Días de tolerancia permitidos se configuran incorrectamente:
 
 * Las fechas de entrega pueden parecer **válidas o no válidas de forma inesperada**
 * Es posible que las entregas tempranas o tardías no se detecten correctamente

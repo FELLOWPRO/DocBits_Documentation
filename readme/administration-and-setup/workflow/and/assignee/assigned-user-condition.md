@@ -1,6 +1,6 @@
-# Assigned User Condition
+# Condición de usuario asignado
 
-<figure><img src="../../../../.gitbook/assets/userlmn_5e16e9b23626ec1211c753fec5333513 (1).png" alt="" width="552"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3e450ede5dea-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 **Propósito**
 
@@ -8,12 +8,12 @@ Esta tarjeta de flujo de trabajo gestiona la ejecución de operaciones en funci�
 
 **Componentes de la tarjeta**
 
-1. **Operator**
+1. **Operador**
    * **Descripción**: Define la condición lógica que se aplica a la asignación de usuario.
    * **Opciones**:
      * **IS**: Dispara la operación si el usuario asignado del documento o tarea coincide con algún usuario de la lista especificada.
-     * **IS NOT**: Dispara la operación si el usuario asignado del documento o tarea no coincide con ningún usuario de la lista especificada.
-2. **User List**
+     * **NO ES**: Dispara la operación si el usuario asignado del documento o tarea no coincide con ningún usuario de la lista especificada.
+2. **Lista de usuarios**
    * **Descripción**: Una lista o selección de usuarios con los que comparar el usuario asignado.
    * **Detalle**: Esta lista puede incluir uno o varios usuarios, lo que permite a la tarjeta manejar de forma eficaz tanto condiciones de un solo usuario como de varios. La selección puede realizarse mediante casillas de verificación, un desplegable de selección múltiple o elementos de interfaz similares.
 
@@ -22,7 +22,7 @@ Esta tarjeta de flujo de trabajo gestiona la ejecución de operaciones en funci�
 * **Identificación de la asignación de usuario**: Identifica automáticamente el usuario o usuarios asignados a una tarea o documento concreto dentro del sistema ERP.
 * **Evaluación de la condición**:
   * Con el operador **IS**, la tarjeta comprueba si el usuario asignado está entre los enumerados en la User List.
-  * Con el operador **IS NOT**, la tarjeta garantiza que el usuario asignado no esté entre los enumerados.
+  * Con el operador **NO ES**, la tarjeta garantiza que el usuario asignado no esté entre los enumerados.
 * **Ejecución de la acción**:
   * **Condición verdadera**: Si la asignación de usuario cumple la condición (ya sea IS o IS NOT), se disparan las acciones pertinentes, como notificaciones, inicios de tareas, aprobaciones u otros pasos del flujo de trabajo.
   * **Condición falsa**: Si la condición no se cumple, el flujo de trabajo no continuará.

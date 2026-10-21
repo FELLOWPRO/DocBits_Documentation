@@ -1,6 +1,6 @@
-# Compare Total Charges
+# Comparar cargos totales
 
-<figure><img src="../../../../.gitbook/assets/image (271).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-97d69520f403-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,27 +8,27 @@ Esta tarjeta de flujo de trabajo compara los cargos totales de un campo de docum
 
 ## **Componentes de la tarjeta:**
 
-1. **Field Name:**
+1. **Nombre de campo:**
    * **Descripción**: Especifica el campo del documento que contiene los valores de cargo total que se compararán con los cargos de la orden de compra.
    * **Detalle**: El valor de este campo representa los cargos totales aplicados en el documento (p. ej., factura) y se comparará con el cargo de la orden de compra.
-2. **Operator:**
+2. **Operador:**
    * **Descripción**: Define la condición que se aplicará a la comparación entre el cargo total del documento y el cargo de la orden de compra.
    * **Opciones**:
-     * **Equals (=)**: Verifica si el cargo total del documento coincide con el cargo de la orden de compra.
-     * **Not Equals (≠)**: Garantiza que el cargo total del documento sea distinto del cargo de la orden de compra.
-     * **Greater Than (>)**: Verifica si el cargo total del documento es mayor que el cargo de la orden de compra.
-     * **Greater or Equals (≥)**: Verifica si el cargo total del documento es mayor o igual que el cargo de la orden de compra.
-     * **Lesser Than (<)**: Verifica si el cargo total del documento es menor que el cargo de la orden de compra.
-     * **Lesser or Equals (≤)**: Verifica si el cargo total del documento es menor o igual que el cargo de la orden de compra.
-3. **Tolerance Amount**
+     * **Igual a (=)**: Verifica si el cargo total del documento coincide con el cargo de la orden de compra.
+     * **No iguales (≠)**: Garantiza que la carga total del documento sea distinta de la carga de la orden de compra.
+     * **Mayor que (>)**: Verifica si el cargo total del documento es mayor que el cargo de la orden de compra.
+     * **Mayor o igual (≥)**: Verifica si el cargo total del documento es mayor o igual que el cargo de la orden de compra.
+     * **Menor que (<)**: Verifica si el cargo total del documento es menor que el cargo de la orden de compra.
+     * **Menor o igual (≤)**: Verifica si el cargo total del documento es menor o igual que el cargo de la orden de compra.
+3. **Cantidad de tolerancia**
    * **Descripción**: Especifica el umbral de tolerancia para comparar los cargos totales.
    * **Detalle**: Este valor numérico representa la variación permitida en los cargos entre el documento y la orden de compra.
-4. **Tolerance Type:**
+4. **Tipo de tolerancia:**
    * **Descripción**: Especifica el tipo de tolerancia que se aplicará.
    * **Opciones**:
      * **Percentage**: La tolerancia se aplica como un porcentaje del cargo de la orden de compra.
-     * **Value**: La tolerancia se aplica como un importe numérico fijo.
-5. **Separator:**
+     * **Valor**: La tolerancia se aplica como un importe numérico fijo.
+5. **Separador:**
    * **Descripción**: Especifica el separador utilizado para distinguir el Charge ID al final del nombre del campo.
    * **Detalle**: El separador separa el campo de cargo del Charge ID único que se utilizará para vincular el cargo del documento con el cargo correspondiente de la orden de compra.
 

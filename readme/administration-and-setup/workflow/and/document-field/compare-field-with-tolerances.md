@@ -1,6 +1,6 @@
-# Compare Field with tolerances
+# Comparar campo con tolerancias
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4ee291b0848d-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,28 +8,28 @@ Esta tarjeta de flujo de trabajo está diseñada para comparar el valor de un ca
 
 ## **Componentes de la tarjeta:**
 
-1. **Field Name**
+1. **Nombre de campo**
    * **Descripción:** El campo que se evaluará en la comparación.
    * **Detalle:** Debe coincidir con el identificador exacto del primer campo dentro del documento.
-2. **Comparison Operator**
+2. **Operador de comparación**
    * **Descripción:** Especifica cómo se comparará el valor del campo seleccionado con el valor de referencia.
    * **Opciones:**
-     * **Equals (=):** Verifica si el valor del campo coincide exactamente con el valor de referencia.
-     * **Not Equals (≠):** Verifica si el valor del campo no coincide con el valor de referencia.
-     * **Greater Than (>):** Comprueba si el valor del campo es mayor que el valor de referencia.
-     * **Greater or Equals (≥):** Comprueba si el valor del campo es mayor o igual que el valor de referencia.
-     * **Lesser Than (<):** Comprueba si el valor del campo es menor que el valor de referencia.
-     * **Lesser or Equals (≤):** Comprueba si el valor del campo es menor o igual que el valor de referencia.
-3. **Reference Value**
+     * **Igual a (=):** Verifica si el valor del campo coincide exactamente con el valor de referencia.
+     * **No iguales (≠):** Verifica si el valor del campo no coincide con el valor de referencia.
+     * **Mayor que (>):** Comprueba si el valor del campo es mayor que el valor de referencia.
+     * **Mayor o igual (≥):** Comprueba si el valor del campo es mayor o igual que el valor de referencia.
+     * **Menor que (<):** Comprueba si el valor del campo es menor que el valor de referencia.
+     * **Menor o Igual (≤):** Comprueba si el valor del campo es menor o igual que el valor de referencia.
+3. **Valor de referencia**
    * **Descripción:** El valor con el que se compara el campo.
    * **Detalle:** Este valor puede ser numérico, de texto o de fecha, según el contexto de la comparación.
-4. **Tolerance Amount**
+4. **Cantidad de tolerancia**
    * **Descripción:** Define el margen de error aceptable para la comparación.
    * **Detalle:** El importe de tolerancia es un valor numérico que indica la diferencia máxima admisible entre los dos valores de campo para que la comparación se considere verdadera.
-5. **Tolerance Type**
+5. **Tipo de tolerancia**
    * **Descripción:** Especifica la unidad de medida del importe de tolerancia.
    * **Opciones:**
-     * **Value:** La tolerancia es un valor absoluto, lo que significa que los dos campos pueden diferir en el importe de tolerancia especificado.
+     * **Valor:** La tolerancia es un valor absoluto, lo que significa que los dos campos pueden diferir en el importe de tolerancia especificado.
      * **Percent:** La tolerancia se calcula como un porcentaje del valor del segundo campo, permitiendo un margen de error relativo.
 
 ## **Funcionalidad:**
@@ -41,7 +41,7 @@ Esta tarjeta de flujo de trabajo está diseñada para comparar el valor de un ca
 
 ## **Configuración:**
 
-* Los usuarios configuran la tarjeta seleccionando el campo que se evaluará de una lista de campos disponibles y eligiendo el operador de comparación (p. ej., igual, mayor que) de una lista desplegable. A continuación, especifican el valor de referencia con el que comparar y definen el importe de tolerancia, y luego seleccionan el tipo de tolerancia (p. ej., porcentaje o valor).&#x20;
+* Los usuarios configuran la tarjeta seleccionando el campo que se evaluará de una lista de campos disponibles y eligiendo el operador de comparación (p. ej., igual, mayor que) de una lista desplegable. A continuación, especifican el valor de referencia con el que comparar y definen el importe de tolerancia, y luego seleccionan el tipo de tolerancia (p. ej., porcentaje o valor).
 
 ## **Conclusión:**
 

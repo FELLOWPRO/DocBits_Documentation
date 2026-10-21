@@ -1,23 +1,21 @@
 # Patrón de transformación de datos
 
-**Tipo de patrón:** Procesamiento y manipulación de datos
-**Complejidad:** Media
-**Configuración estimada:** 30-45 minutos
-**Casos de uso habituales:** Cálculos de campos, formato de datos, conversión de divisas, conversión de unidades, enriquecimiento de datos
+**Tipo de patrón:** Procesamiento y manipulación de datos **Complejidad:** Media **Configuración estimada:** 30-45 minutos **Casos de uso habituales:** Cálculos de campos, formato de datos, conversión de divisas, conversión de unidades, enriquecimiento de datos
 
----
+***
 
-Este patrón se monta en el **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Haga clic en **Add Card** y abra la categoría **Document Field**: contiene las tarjetas de lectura, escritura, cálculo y formato que este patrón encadena:
+Este patrón se monta en el **Generador de flujo de trabajo** (Workflow Dashboard → Workflow List → Add Workflow). Haga clic en **Agregar tarjeta** y abra la categoría **Campo de documento**: contiene las tarjetas de lectura, escritura, cálculo y formato que este patrón encadena:
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Biblioteca Add Card del Workflow Builder, agrupada por categoría"><figcaption><p>La biblioteca <strong>Add Card</strong>: las tarjetas de lectura/escritura de campos, cálculo y formato se encuentran en la categoría <strong>Document Field</strong>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
----
+***
 
 ## Resumen del patrón
 
 Este patrón muestra cómo transformar, calcular, dar formato y enriquecer los datos de los documentos en los flujos de trabajo de DocBits. La transformación de datos es esencial para preparar los datos para la exportación, realizar cálculos, estandarizar formatos y enriquecer los documentos con información adicional.
 
 **Qué hace este patrón:**
+
 1. Extrae datos de los campos del documento
 2. Realiza cálculos y transformaciones
 3. Da formato a los datos según los estándares requeridos
@@ -25,32 +23,35 @@ Este patrón muestra cómo transformar, calcular, dar formato y enriquecer los d
 5. Enriquece los documentos con datos derivados o de búsqueda
 6. Valida y depura los datos
 
----
+***
 
 ## Cuándo usar este patrón
 
 Use este patrón cuando necesite:
-- ✅ Calcular totales, subtotales e impuestos
-- ✅ Convertir divisas o unidades
-- ✅ Dar formato a fechas, números y texto
-- ✅ Derivar valores a partir de campos existentes
-- ✅ Enriquecer datos desde fuentes externas
-- ✅ Estandarizar formatos de datos
-- ✅ Limpiar y validar datos
-- ✅ Preparar datos para la exportación
+
+* ✅ Calcular totales, subtotales e impuestos
+* ✅ Convertir divisas o unidades
+* ✅ Dar formato a fechas, números y texto
+* ✅ Derivar valores a partir de campos existentes
+* ✅ Enriquecer datos desde fuentes externas
+* ✅ Estandarizar formatos de datos
+* ✅ Limpiar y validar datos
+* ✅ Preparar datos para la exportación
 
 **No use este patrón cuando:**
-- ❌ No se necesite ninguna transformación
-- ❌ Los datos ya estén en el formato correcto
-- ❌ Una simple copia de campo sea suficiente
 
----
+* ❌ No se necesite ninguna transformación
+* ❌ Los datos ya estén en el formato correcto
+* ❌ Una simple copia de campo sea suficiente
+
+***
 
 ## Tipos de transformación de datos
 
 ### 1. Cálculos
 
 **Operaciones matemáticas:**
+
 ```
 - Addition: Quantity + Bonus_Quantity = Total_Quantity
 - Subtraction: Invoice_Total - Tax_Amount = Net_Amount
@@ -62,6 +63,7 @@ Use este patrón cuando necesite:
 ### 2. Operaciones con cadenas
 
 **Manipulación de texto:**
+
 ```
 - Concatenation: First_Name + " " + Last_Name = Full_Name
 - Uppercase: "invoice" → "INVOICE"
@@ -74,6 +76,7 @@ Use este patrón cuando necesite:
 ### 3. Conversión de tipos de datos
 
 **Transformaciones de tipo:**
+
 ```
 - String to Number: "123.45" → 123.45
 - Number to String: 123.45 → "123.45"
@@ -85,6 +88,7 @@ Use este patrón cuando necesite:
 ### 4. Conversiones de unidades
 
 **Conversiones de medidas:**
+
 ```
 - Weight: kg → lbs, tons → kg
 - Length: cm → inches, m → ft
@@ -96,6 +100,7 @@ Use este patrón cuando necesite:
 ### 5. Conversiones de divisas
 
 **Aplicación de tipos de cambio:**
+
 ```
 - USD → EUR: Amount_USD × Rate = Amount_EUR
 - Multi-currency: Convert all to base currency
@@ -105,6 +110,7 @@ Use este patrón cuando necesite:
 ### 6. Transformaciones de fechas
 
 **Operaciones con fechas:**
+
 ```
 - Format change: 10/23/2025 → 2025-10-23
 - Add days: Invoice_Date + 30 = Due_Date
@@ -112,33 +118,35 @@ Use este patrón cuando necesite:
 - Extract parts: "2025-10-23" → Year: 2025, Month: 10, Day: 23
 ```
 
----
+***
 
 ## Ejemplo de flujo de trabajo completo
 
 ### Escenario: Cálculo del total de la factura y enriquecimiento de datos
 
 **Requisito de negocio:**
-- Extraer las líneas de la factura
-- Calcular los totales de línea (cant. × precio)
-- Calcular el subtotal (suma de los totales de línea)
-- Calcular el importe de impuestos (subtotal × tipo impositivo)
-- Calcular el total general (subtotal + impuestos)
-- Convertir a EUR si la factura está en otra divisa
-- Dar formato a los importes con 2 decimales
-- Añadir la cuenta contable de la empresa según la categoría del producto
-- Validar los cálculos contra el total de la factura
-- Marcar si la desviación es > 1 %
+
+* Extraer las líneas de la factura
+* Calcular los totales de línea (cant. × precio)
+* Calcular el subtotal (suma de los totales de línea)
+* Calcular el importe de impuestos (subtotal × tipo impositivo)
+* Calcular el total general (subtotal + impuestos)
+* Convertir a EUR si la factura está en otra divisa
+* Dar formato a los importes con 2 decimales
+* Añadir la cuenta contable de la empresa según la categoría del producto
+* Validar los cálculos contra el total de la factura
+* Marcar si la desviación es > 1 %
 
 **Tarjetas de flujo de trabajo utilizadas:**
-1. ACTION_CALCULATE_FIELD - Realiza los cálculos
-2. ACTION_SET_FIELD_TO_TEXT - Almacena los resultados
-3. ACTION_COPY_FIELD_VALUE - Copia valores
-4. CALL_API - Obtiene los tipos de cambio (si es necesario)
-5. CONDITION_COMPARE_TWO_DOCFIELD_VALUES - Valida los cálculos
-6. ACTION_SET_FIELD_FROM_MASTER_DATA - Enriquece con las cuentas contables
 
----
+1. ACTION\_CALCULATE\_FIELD - Realiza los cálculos
+2. ACTION\_SET\_FIELD\_TO\_TEXT - Almacena los resultados
+3. ACTION\_COPY\_FIELD\_VALUE - Copia valores
+4. CALL\_API - Obtiene los tipos de cambio (si es necesario)
+5. CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES - Valida los cálculos
+6. ACTION\_SET\_FIELD\_FROM\_MASTER\_DATA - Enriquece con las cuentas contables
+
+***
 
 ## Implementación paso a paso
 
@@ -146,9 +154,10 @@ Use este patrón cuando necesite:
 
 **Calcular los totales de línea:**
 
-**Tarjeta:** ACTION_CALCULATE_FIELD
+**Tarjeta:** ACTION\_CALCULATE\_FIELD
 
 **Para cada línea:**
+
 ```
 Field: Line_Total
 Formula: {{TABLE_FIELD:Quantity}} * {{TABLE_FIELD:Unit_Price}}
@@ -157,6 +166,7 @@ Decimal Places: 2
 ```
 
 **Ejemplo:**
+
 ```
 Line 1:
   Quantity: 100
@@ -177,17 +187,18 @@ Line 3:
   Store in: Line_Total
 ```
 
-**Referencia de guía:** [Guía de manipulación de campos - Cálculos](../then/document-field/field-manipulation-guide.md#calculate-field)
+**Referencia de guía:** [Guía de manipulación de campos - Cálculos](../then/document-field/field-manipulation-guide.md)
 
----
+***
 
 ### Paso 2: Calcular el subtotal del documento
 
 **Sumar todos los totales de línea:**
 
-**Tarjeta:** ACTION_CALCULATE_FIELD
+**Tarjeta:** ACTION\_CALCULATE\_FIELD
 
 **Configuración:**
+
 ```
 Field: Calculated_Subtotal
 Formula: SUM({{TABLE_COLUMN:Line_Total}})
@@ -196,6 +207,7 @@ Decimal Places: 2
 ```
 
 **Ejemplo:**
+
 ```
 Line 1 Total: €5,000.00
 Line 2 Total: €1,000.00
@@ -205,15 +217,16 @@ Subtotal = 5000 + 1000 + 387.50 = €6,387.50
 Store in: Calculated_Subtotal
 ```
 
----
+***
 
 ### Paso 3: Calcular el importe de los impuestos
 
 **Aplicar el tipo impositivo al subtotal:**
 
-**Tarjeta:** ACTION_CALCULATE_FIELD
+**Tarjeta:** ACTION\_CALCULATE\_FIELD
 
 **Configuración:**
+
 ```
 Field: Calculated_Tax_Amount
 Formula: {{Calculated_Subtotal}} * ({{Tax_Rate}} / 100)
@@ -222,6 +235,7 @@ Decimal Places: 2
 ```
 
 **Ejemplo:**
+
 ```
 Calculated_Subtotal: €6,387.50
 Tax_Rate: 19% (VAT)
@@ -233,15 +247,16 @@ Tax Amount = 6387.50 × (19 / 100)
 Store in: Calculated_Tax_Amount
 ```
 
----
+***
 
 ### Paso 4: Calcular el total general
 
 **Sumar el subtotal y los impuestos:**
 
-**Tarjeta:** ACTION_CALCULATE_FIELD
+**Tarjeta:** ACTION\_CALCULATE\_FIELD
 
 **Configuración:**
+
 ```
 Field: Calculated_Grand_Total
 Formula: {{Calculated_Subtotal}} + {{Calculated_Tax_Amount}}
@@ -250,6 +265,7 @@ Decimal Places: 2
 ```
 
 **Ejemplo:**
+
 ```
 Calculated_Subtotal: €6,387.50
 Calculated_Tax_Amount: €1,213.63
@@ -259,15 +275,16 @@ Grand Total = 6387.50 + 1213.63 = €7,601.13
 Store in: Calculated_Grand_Total
 ```
 
----
+***
 
 ### Paso 5: Conversión de divisas (si es necesario)
 
 **Comprobar si se necesita la conversión:**
 
-**Tarjeta:** CONDITION_DOC_FIELD_IS
+**Tarjeta:** CONDITION\_DOC\_FIELD\_IS
 
 **Configuración:**
+
 ```
 Field: Invoice_Currency
 Operator: IS NOT EQUAL TO
@@ -278,9 +295,10 @@ Value: EUR
 
 **Paso 5a: Obtener el tipo de cambio**
 
-**Tarjeta:** CALL_API
+**Tarjeta:** CALL\_API
 
 **Configuración:**
+
 ```
 Endpoint: https://api.exchangerate-api.com/v4/latest/{{Invoice_Currency}}
 Method: GET
@@ -289,6 +307,7 @@ Store in: Exchange_Rate_To_EUR
 ```
 
 **Ejemplo:**
+
 ```
 Invoice Currency: USD
 API Response: {
@@ -303,9 +322,10 @@ Exchange_Rate_To_EUR = 0.92
 
 **Paso 5b: Convertir los importes**
 
-**Tarjeta:** ACTION_CALCULATE_FIELD
+**Tarjeta:** ACTION\_CALCULATE\_FIELD
 
 **Configuración:**
+
 ```
 Field: Grand_Total_EUR
 Formula: {{Calculated_Grand_Total}} * {{Exchange_Rate_To_EUR}}
@@ -314,6 +334,7 @@ Decimal Places: 2
 ```
 
 **Ejemplo:**
+
 ```
 Grand Total (USD): $7,601.13
 Exchange Rate: 0.92
@@ -323,17 +344,18 @@ Grand Total (EUR) = 7601.13 × 0.92 = €6,993.04
 Store in: Grand_Total_EUR
 ```
 
-**Referencia de guía:** [Patrón de integración de API - Conversión de divisas](api-integration-pattern.md#currency-conversion-example)
+**Referencia de guía:** [Patrón de integración de API - Conversión de divisas](api-integration-pattern.md)
 
----
+***
 
 ### Paso 6: Enriquecimiento de datos - Añadir cuentas contables
 
 **Buscar la cuenta contable por categoría de producto:**
 
-**Tarjeta:** ACTION_SET_FIELD_FROM_MASTER_DATA
+**Tarjeta:** ACTION\_SET\_FIELD\_FROM\_MASTER\_DATA
 
 **Configuración:**
+
 ```
 Lookup Table: GL_Account_Mapping
 Lookup Key: {{TABLE_FIELD:Product_Category}}
@@ -342,6 +364,7 @@ Store in: GL_Account
 ```
 
 **Ejemplo:**
+
 ```
 Line 1:
   Product Category: "Office Supplies"
@@ -359,17 +382,18 @@ Line 3:
   Result: GL Account "5000-300" (Services Expense)
 ```
 
-**Referencia de guía:** [Guía de manipulación de campos - Datos maestros](../then/document-field/field-manipulation-guide.md#master-data-lookup)
+**Referencia de guía:** [Guía de manipulación de campos - Datos maestros](../then/document-field/field-manipulation-guide.md)
 
----
+***
 
 ### Paso 7: Validar los cálculos
 
 **Comparar el total calculado con el total de la factura:**
 
-**Tarjeta:** CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+**Tarjeta:** CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES
 
 **Configuración:**
+
 ```
 Field 1: Calculated_Grand_Total
 Field 2: Invoice_Total (from OCR)
@@ -378,6 +402,7 @@ Tolerance: 1%
 ```
 
 **Cálculo:**
+
 ```
 Variance % = |Calculated - Invoice| / Invoice × 100
 
@@ -394,6 +419,7 @@ Example:
 ```
 
 **Lógica:**
+
 ```
 IF Variance ≤ 1%:
   Set Validation_Status = "PASS"
@@ -404,17 +430,18 @@ ELSE:
   Flag for manual verification
 ```
 
-**Referencia de guía:** [Guía de tarjetas de condición - Comparación de campos](../and/condition-cards-complete-guide.md#field-comparison)
+**Referencia de guía:** [Guía de tarjetas de condición - Comparación de campos](../and/condition-cards-complete-guide.md)
 
----
+***
 
 ### Paso 8: Dar formato a los datos para la exportación
 
 **Estandarizar formatos:**
 
-**Tarjeta:** ACTION_SET_FIELD_TO_TEXT
+**Tarjeta:** ACTION\_SET\_FIELD\_TO\_TEXT
 
 **Formato de fecha:**
+
 ```
 Field: Invoice_Date_Formatted
 Value: FORMATDATE({{Invoice_Date}}, "YYYY-MM-DD")
@@ -422,6 +449,7 @@ Example: 10/23/2025 → 2025-10-23
 ```
 
 **Formato de número:**
+
 ```
 Field: Amount_Formatted
 Value: FORMATNUMBER({{Grand_Total_EUR}}, 2, ",", ".")
@@ -429,13 +457,14 @@ Example: 7601.13 → 7.601,13 (German format)
 ```
 
 **Formato de texto:**
+
 ```
 Field: Supplier_Name_Upper
 Value: UPPERCASE({{Supplier_Name}})
 Example: "ABC Corporation" → "ABC CORPORATION"
 ```
 
----
+***
 
 ## Transformaciones avanzadas
 
@@ -457,6 +486,7 @@ Calculation:
 ```
 
 **Implementación:**
+
 ```
 For each line:
   1. Get product tax category
@@ -465,7 +495,7 @@ For each line:
   4. Sum all Line_Tax values = Total_Tax
 ```
 
----
+***
 
 ### Transformación 2: Cálculo de descuentos
 
@@ -489,6 +519,7 @@ Final Total = €8,820.00 + €1,675.80 = €10,495.80
 ```
 
 **Implementación:**
+
 ```
 1. Check order value for volume discount eligibility
 2. Calculate volume discount
@@ -500,7 +531,7 @@ Final Total = €8,820.00 + €1,675.80 = €10,495.80
 8. Calculate grand total
 ```
 
----
+***
 
 ### Transformación 3: Conversión de unidad de medida
 
@@ -526,6 +557,7 @@ Conversion:
 ```
 
 **Implementación:**
+
 ```
 1. Identify invoice UOM
 2. Get conversion factor to standard UOM
@@ -535,7 +567,7 @@ Conversion:
 6. Store both original and converted values
 ```
 
----
+***
 
 ### Transformación 4: Cálculos de fechas
 
@@ -559,6 +591,7 @@ Calculations:
 ```
 
 **Implementación:**
+
 ```
 1. Extract Invoice_Date
 2. Extract Payment_Terms (e.g., "NET30", "NET60", "2/10 NET30")
@@ -569,7 +602,7 @@ Calculations:
 7. Set Status: "Current", "Due Soon", "Overdue"
 ```
 
----
+***
 
 ### Transformación 5: Análisis y extracción de texto
 
@@ -595,7 +628,7 @@ Method:
     Revision = Extract digits from Array[4] = "2"
 ```
 
----
+***
 
 ## Diagrama completo del flujo de trabajo de transformación
 
@@ -674,7 +707,7 @@ INVOICE DATA EXTRACTED
    Document ready for next workflow step
 ```
 
----
+***
 
 ## Plantillas de configuración
 
@@ -715,7 +748,7 @@ INVOICE DATA EXTRACTED
 }
 ```
 
----
+***
 
 ### Plantilla 2: Flujo de trabajo de conversión de divisas
 
@@ -750,13 +783,14 @@ INVOICE DATA EXTRACTED
 }
 ```
 
----
+***
 
 ## Gestión de errores
 
 ### Errores comunes de transformación
 
 **Error 1: División por cero**
+
 ```
 Problem: Unit_Price = Total / Quantity, but Quantity = 0
 
@@ -769,6 +803,7 @@ Solution:
 ```
 
 **Error 2: Formato de número no válido**
+
 ```
 Problem: Field contains "€1,234.56" but need number 1234.56
 
@@ -781,6 +816,7 @@ Solution:
 ```
 
 **Error 3: Fallo al analizar la fecha**
+
 ```
 Problem: Date in unexpected format
 
@@ -792,6 +828,7 @@ Solution:
 ```
 
 **Error 4: Falta el factor de conversión**
+
 ```
 Problem: Unknown UOM conversion
 
@@ -802,59 +839,58 @@ Solution:
   4. Use original values
 ```
 
----
+***
 
 ## Lista de comprobación para pruebas
 
-- [ ] Todos los cálculos producen resultados correctos
-- [ ] Se mantiene la precisión decimal
-- [ ] Las conversiones de divisas son precisas
-- [ ] Los cálculos de fechas son correctos
-- [ ] Las transformaciones de texto funcionan
-- [ ] Los valores nulos/vacíos se gestionan
-- [ ] Se evita la división por cero
-- [ ] Los formatos de número se validan
-- [ ] Las reglas de redondeo se aplican correctamente
-- [ ] Todos los campos transformados se rellenan
-- [ ] La validación detecta los errores
-- [ ] El formato de exportación es correcto
+* [ ] Todos los cálculos producen resultados correctos
+* [ ] Se mantiene la precisión decimal
+* [ ] Las conversiones de divisas son precisas
+* [ ] Los cálculos de fechas son correctos
+* [ ] Las transformaciones de texto funcionan
+* [ ] Los valores nulos/vacíos se gestionan
+* [ ] Se evita la división por cero
+* [ ] Los formatos de número se validan
+* [ ] Las reglas de redondeo se aplican correctamente
+* [ ] Todos los campos transformados se rellenan
+* [ ] La validación detecta los errores
+* [ ] El formato de exportación es correcto
 
----
+***
 
 ## Patrones relacionados
 
 ### Patrones que funcionan bien juntos:
 
-- **[Patrón de integración de API](api-integration-pattern.md)** - Obtiene tipos de cambio y datos de enriquecimiento
-- **[Patrón de cotejo de PO](po-matching-pattern.md)** - Cálculos de desviación
-- **[Patrón de lógica de decisión](decision-logic-pattern.md)** - Enruta según los valores calculados
-- **[Patrón de gestión de tareas](task-management-pattern.md)** - Crea tareas para los fallos de validación
+* [**Patrón de integración de API**](api-integration-pattern.md) - Obtiene tipos de cambio y datos de enriquecimiento
+* [**Patrón de cotejo de PO**](po-matching-pattern.md) - Cálculos de desviación
+* [**Patrón de lógica de decisión**](decision-logic-pattern.md) - Enruta según los valores calculados
+* [**Patrón de gestión de tareas**](task-management-pattern.md) - Crea tareas para los fallos de validación
 
----
+***
 
 ## Guías relacionadas
 
 ### Requisitos previos
-- [Guía de manipulación de campos](../then/document-field/field-manipulation-guide.md) - Todas las operaciones con campos
-- [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md) - Condiciones de validación
-- [Guía de Call API](../then/action/call-api-guide.md) - Obtención de datos externos
+
+* [Guía de manipulación de campos](../then/document-field/field-manipulation-guide.md) - Todas las operaciones con campos
+* [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md) - Condiciones de validación
+* [Guía de Call API](../then/action/call-api-guide.md) - Obtención de datos externos
 
 ### Tarjetas relacionadas
-- **ACTION_CALCULATE_FIELD** - [Guía de manipulación de campos](../then/document-field/field-manipulation-guide.md#calculate-field)
-- **ACTION_SET_FIELD_TO_TEXT** - [Guía de manipulación de campos](../then/document-field/field-manipulation-guide.md#set-field)
-- **ACTION_COPY_FIELD_VALUE** - [Guía de manipulación de campos](../then/document-field/field-manipulation-guide.md#copy-field)
-- **CALL_API** - [Guía de Call API](../then/action/call-api-guide.md)
-- **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** - [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md)
+
+* **ACTION\_CALCULATE\_FIELD** - [Guía de manipulación de campos](../then/document-field/field-manipulation-guide.md)
+* **ACTION\_SET\_FIELD\_TO\_TEXT** - [Guía de manipulación de campos](../then/document-field/field-manipulation-guide.md)
+* **ACTION\_COPY\_FIELD\_VALUE** - [Guía de manipulación de campos](../then/document-field/field-manipulation-guide.md)
+* **CALL\_API** - [Guía de Llamada API](../then/action/call-api-guide.md)
+* **CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES** - [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md)
 
 ### Próximos pasos
-- Validar los resultados: [Patrón de lógica de decisión](decision-logic-pattern.md)
-- Crear tareas para errores: [Patrón de gestión de tareas](task-management-pattern.md)
-- Usar en el cotejo de PO: [Patrón de cotejo de PO](po-matching-pattern.md)
 
----
+* Validar los resultados: [Patrón de lógica de decisión](decision-logic-pattern.md)
+* Crear tareas para errores: [Patrón de gestión de tareas](task-management-pattern.md)
+* Usar en el cotejo de PO: [Patrón de cotejo de PO](po-matching-pattern.md)
 
-**Versión del patrón:** 1.0
-**Última actualización:** 23 de octubre de 2025
-**Dificultad:** Media
-**Tiempo estimado:** 30-45 minutos
-**Tasa de éxito:** Alta
+***
+
+**Versión del patrón:** 1.0 **Última actualización:** 23 de octubre de 2025 **Dificultad:** Media **Tiempo estimado:** 30-45 minutos **Tasa de éxito:** Alta

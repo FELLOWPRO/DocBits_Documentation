@@ -1,6 +1,6 @@
-# Order Type of Purchase Order
+# Tipo de pedido de compra
 
-<figure><img src="../../../../.gitbook/assets/image (277).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8a1cb3a5f80f-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,17 +8,17 @@ Esta tarjeta de flujo de trabajo está diseñada para comparar el tipo de pedido
 
 ## **Componentes de la tarjeta:**
 
-1. **Any/All:**
+1. **Cualquiera/Todos:**
    * **Descripción**: Define si la condición se aplica a alguna o a todas las órdenes de compra que se evalúan en el flujo de trabajo.
    * **Opciones**:
      * **Any**: La condición se cumple si alguna de las órdenes de compra coincide con la condición especificada.
      * **All**: La condición se cumple solo si todas las órdenes de compra cumplen la condición especificada.
-2. **Operator:**
+2. **Operador:**
    * **Descripción**: Define la condición que se aplicará para comparar el tipo de pedido con un valor especificado.
    * **Opciones**:
-     * **Equals (=)**: Comprueba si el tipo de pedido coincide con el valor especificado.
-     * **Not Equals (≠)**: Garantiza que el tipo de pedido sea distinto del valor especificado.
-3. **Order Type:**
+     * **Igual a (=)**: Comprueba si el tipo de pedido coincide con el valor especificado.
+     * **No iguales (≠)**: Garantiza que el tipo de pedido sea distinto del valor especificado.
+3. **Tipo de orden:**
    * **Descripción**: Especifica el valor con el que se comparará el tipo de pedido de la orden de compra.
    * **Detalle**: El valor debe coincidir con el tipo de pedido o la clasificación del sistema.
 

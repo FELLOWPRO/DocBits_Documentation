@@ -1,37 +1,37 @@
-# Assign Document and Create Task/Notification for Group
+# Asignar documento y crear tarea/notificación para grupo
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-01f8137c5c7f-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito**
 
-La tarjeta de flujo de trabajo "**Assign Document and Create Task/Notification for Group**" asigna un documento a un grupo especificado, crea una tarea o notificación con detalles personalizables y, opcionalmente, envía una notificación por correo electrónico al grupo. Esta tarjeta también admite la asignación de un valor de prioridad numérico para determinar el orden de ejecución.
+La tarjeta de flujo de trabajo "**Asignar documento y crear tarea/notificación para grupo**" asigna un documento a un grupo especificado, crea una tarea o notificación con detalles personalizables y, opcionalmente, envía una notificación por correo electrónico al grupo. Esta tarjeta también admite la asignación de un valor de prioridad numérico para determinar el orden de ejecución.
 
 ## **Componentes de la tarjeta**
 
-1. **Group Name**
+1. **Nombre del grupo**
    * **Descripción:** Especifica el grupo que recibirá la tarea o notificación.
    * **Detalle:** Un desplegable para elegir el nombre del grupo al que se asignarán el documento y la tarea/notificación.
-2. **Task/Notification**
+2. **Tarea/Notificación**
    * **Descripción:** Especifica el tipo de acción que se creará para el grupo.
    * **Detalle:** Un desplegable para seleccionar "Task" o "Notification" según la acción deseada.
-3. **Title**
+3. **Título**
    * **Descripción:** Proporciona el título de la tarea o notificación.
    * **Detalle:** Un campo para añadir un título conciso y descriptivo para la tarea o notificación.
-4. **Description**
+4. **Descripción**
    * **Descripción:** Describe con más detalle la tarea o notificación.
    * **Detalle:** Un campo para proporcionar detalles adicionales sobre el propósito de la tarea o el contenido de la notificación.
-5. **Priority**
+5. **Prioridad**
    * **Descripción:** Define el nivel de urgencia de la tarea o notificación.
    * **Opciones:**
      * **High:** Requiere atención inmediata.
-     * **Medium:** Importante pero no urgente.
+     * **Medio:** Importante pero no urgente.
      * **Low:** Puede abordarse más adelante.
-6. **Send Mail**
+6. **Enviar correo**
    * **Descripción:** Configura si se envía una notificación por correo electrónico al grupo.
    * **Opciones:**
      * **True:** Envía una notificación por correo electrónico.
      * **False:** No envía ningún correo electrónico.
-7. **Value**
+7. **Valor**
    * **Descripción:** Establece la prioridad numérica para la asignación del documento.
    * **Detalle:** Un campo para introducir un valor numérico, donde un número más bajo indica una mayor prioridad.
 
@@ -46,13 +46,13 @@ La tarjeta de flujo de trabajo "**Assign Document and Create Task/Notification f
 
 ## **Configuración**
 
-1. **Definir el Group Name:**
+1. **Definir el nombre del grupo:**
    * Introduzca el nombre del grupo en el campo Group Name.
-2. **Seleccionar Task/Notification:**
-   * Elija "Task" o "Notification" en el desplegable Task/Notification.
+2. **Seleccionar Tarea/Notificación:**
+   * Elija "Tarea" o "Notificación" en el menú desplegable Tarea/Notificación.
 3. **Establecer los detalles de la tarea/notificación:**
    * Introduzca el Title y la Description de la tarea o notificación.
-   * Seleccione la Priority en el desplegable (High, Medium o Low).
+   * Seleccione la Prioridad en el desplegable (Alta, Media o Baja).
 4. **Habilitar la notificación por correo electrónico:**
    * Configure la opción Send Mail en True o False, según si debe enviarse una notificación por correo electrónico.
 5. **Asignar la prioridad numérica:**

@@ -1,6 +1,6 @@
-# Any Value of
+# Cualquier valor de
 
-<figure><img src="../../../../.gitbook/assets/image (46).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6bbd1a63a025-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -9,7 +9,7 @@ Esta tarjeta de DocBits se utiliza para validar si algún valor de una columna e
 ## **Funcionalidad:**
 
 * **Validación de patrón regex:** Esta tarjeta comprueba si algún valor de una columna dada de una tabla coincide con el patrón de expresión regular proporcionado. La tarjeta se disparará y permitirá que el flujo de trabajo continúe si al menos una entrada de la columna cumple la condición.
-* **Operator:** Los usuarios definen la columna y especifican el patrón regex. La condición disponible incluye:
+* **Operador:** Los usuarios definen la columna y especifican el patrón regex. La condición disponible incluye:
   * **Matches Regex Pattern:** Verifica que al menos un valor de la columna especificada coincida con el patrón regex.
 * **Selección de tabla y columna:** Los usuarios especifican la tabla y la columna que desean comprobar para detectar coincidencias del patrón regex.
 

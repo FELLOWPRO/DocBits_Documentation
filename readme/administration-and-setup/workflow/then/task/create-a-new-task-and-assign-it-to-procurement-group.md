@@ -1,29 +1,29 @@
-# Create a New Task and assign it to Procurement Group
+# Cree una nueva tarea y asígnela al grupo de adquisiciones
 
-<figure><img src="../../../../.gitbook/assets/image (292).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-892212db33b0-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
-La tarjeta de flujo de trabajo **"Create Task for Procurement Group"** crea una nueva tarea asignada dinámicamente al grupo de compras especificado en la configuración. Esta tarea puede asignarse con diferentes niveles de prioridad, y se puede enviar una notificación opcional por correo electrónico para informar al grupo sobre la tarea. Esta tarjeta garantiza que se avise al equipo adecuado según las condiciones del flujo de trabajo.
+La tarjeta de flujo de trabajo **"Crear tarea para grupo de adquisiciones"** crea una nueva tarea asignada dinámicamente al grupo de compras especificado en la configuración. Esta tarea puede asignarse con diferentes niveles de prioridad, y se puede enviar una notificación opcional por correo electrónico para informar al grupo sobre la tarea. Esta tarjeta garantiza que se avise al equipo adecuado según las condiciones del flujo de trabajo.
 
 ## **Componentes de la tarjeta:**
 
-1. **Title**
+1. **Título**
    * **Descripción:** Especifica el título de la tarea.
    * **Detalle:** Este campo identifica la tarea que se está creando, proporcionando un título conciso para una fácil identificación.
-2. **Description**
+2. **Descripción**
    * **Descripción:** Proporciona más detalles sobre la tarea.
    * **Detalle:** Este campo se utiliza para describir el objetivo de la tarea y cualquier contexto o instrucción necesarios.
-3. **Priority**
+3. **Prioridad**
    * **Descripción:** Define la urgencia de la tarea.
    * **Opciones:**
      * **High:** La tarea requiere atención inmediata.
-     * **Medium:** La tarea es importante pero no urgente.
+     * **Medio:** La tarea es importante pero no urgente.
      * **Low:** La tarea puede gestionarse más adelante.
-4. **Group Name**
+4. **Nombre del grupo**
    * **Descripción:** Especifica el grupo de compras al que se asignará la tarea.
    * **Detalle:** Este campo designa el grupo de compras responsable de la tarea. Garantiza que la tarea se dirija al equipo adecuado.
-5. **Email Notification**
+5. **Notificación por correo electrónico**
    * **Descripción:** Configura si debe enviarse una notificación por correo electrónico al grupo de compras asignado.
    * **Opciones:**
      * **True:** Envía una notificación por correo electrónico al grupo de compras.
@@ -32,7 +32,7 @@ La tarjeta de flujo de trabajo **"Create Task for Procurement Group"** crea una 
 ## **Funcionalidad:**
 
 * **Evaluación de la condición:**\
-  La tarjeta solo ejecuta su acción si las secciones **"Where"** y **"And"** se evalúan como verdaderas.
+  La tarjeta solo ejecuta su acción si las secciones **"Donde"** y **"Y"** se evalúan como verdaderas.
 * **Creación de la tarea:**\
   La tarjeta crea una nueva tarea, asignándola al grupo de compras definido en el campo "Group Name". Esta tarea incluirá el título, la descripción y el nivel de prioridad especificados.
 * **Notificación por correo electrónico:**\

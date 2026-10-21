@@ -1,6 +1,6 @@
-# Assign document to User
+# Asignar documento al usuario
 
-<figure><img src="../../../../.gitbook/assets/image (300).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-e7f92cca6e9d-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,13 +8,13 @@ La tarjeta de flujo de trabajo **"Assign Document to User"** permite a los usuar
 
 ## **Componentes de la tarjeta:**
 
-1. **User**
+1. **Usuario**
    * **Descripción:** Especifica el usuario al que se asignará el documento.
    * **Detalle:** Se proporciona una lista desplegable de todos los usuarios disponibles para su selección. Al usuario seleccionado se le asignará el documento para una acción adicional.
 
 ## **Componentes adicionales en la versión 3:**
 
-1. **Use Decision Tree**
+1. **Usar árbol de decisión**
    * **Descripción:** Si está habilitado, la tarjeta usa un árbol de decisión para determinar dinámicamente la asignación de usuario.
    * **Opciones:**
      * **True:** Usa el árbol de decisión para la asignación dinámica de usuario.
@@ -23,7 +23,7 @@ La tarjeta de flujo de trabajo **"Assign Document to User"** permite a los usuar
 ## **Funcionalidad:**
 
 * **Evaluación de la condición:**\
-  La tarjeta solo ejecuta su acción si las secciones **"Where"** y **"And"** se evalúan como verdaderas.
+  La tarjeta solo ejecuta su acción si las secciones **"Donde"** y **"Y"** se evalúan como verdaderas.
 * **Asignación del documento:**\
   La tarjeta asigna el documento al usuario seleccionado, garantizando que la tarea se enrute a la persona adecuada para su acción. Esto ayuda con la responsabilidad y la gestión eficaz de documentos.
 * **Árbol de decisión (versión 3):**\

@@ -1,6 +1,6 @@
-# Text in Field
+# Texto en el campo
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-61d692604341-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,15 +8,15 @@ Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones segú
 
 ## **Componentes de la tarjeta:**
 
-1. **Text**
+1. **Texto**
    * **Descripción:** Especifica la cadena de texto que se comprobará dentro del campo.
    * **Detalle:** Puede ser una palabra, frase o secuencia de caracteres relevante para el flujo de trabajo.
-2. **Operator**
+2. **Operador**
    * **Descripción:** Define la condición para la presencia de texto en el campo.
    * **Opciones:**
      * **Is:** Dispara el flujo de trabajo si el texto especificado está presente en el campo.
-     * **Is Not:** Dispara el flujo de trabajo si el texto especificado no está presente en el campo.
-3. **Field Name**
+     * **No es:** Dispara el flujo de trabajo si el texto especificado no está presente en el campo.
+3. **Nombre de campo**
    * **Descripción:** Especifica el nombre del campo del documento que se evaluará.
    * **Detalle:** Debe coincidir con el identificador exacto del campo dentro del documento.
 
@@ -29,7 +29,7 @@ Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones segú
    * **Condición falsa:**\
      Si la presencia del texto en el campo no coincide con la condición, pueden tomarse acciones alternativas o ninguna acción, según la configuración del flujo de trabajo.
 
-## **Configuración:**&#x20;
+## **Configuración:**
 
 * El usuario introduce el texto que se comprobará. A continuación, selecciona el nombre del campo del documento pertinente.
 

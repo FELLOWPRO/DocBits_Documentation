@@ -1,29 +1,33 @@
-# Start Export
+# Iniciar exportación
 
-<figure><img src="../../../../.gitbook/assets/image (285).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f55f53ace7e0-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
-La tarjeta de flujo de trabajo **"Start Export"** está diseñada para iniciar el proceso de exportación de un documento. Esta tarjeta funciona como un disparador dentro del flujo de trabajo para iniciar de forma fluida la operación de exportación una vez que se cumplen las condiciones de las secciones anteriores.
+La tarjeta de flujo de trabajo **"Iniciar exportación"** está diseñada para iniciar el proceso de exportación de un documento. Esta tarjeta funciona como un activador dentro del flujo de trabajo para iniciar sin problemas la operación de exportación una vez que se cumplan las condiciones de las secciones anteriores.
 
-## **Componentes de la tarjeta:**
+## **Componentes de la Tarjeta:**
 
-1. **Action**
+1. **Acción**
    1. **Descripción**: Inicia el proceso de exportación del documento.
-   2. **Detalle**: La tarjeta usa los ajustes de exportación configurados en el sistema para procesar y exportar el documento.
+   2. **Detalle**: La tarjeta utiliza los ajustes de exportación configurados en el sistema para procesar y exportar el documento.
 
 ## **Funcionalidad:**
 
-* **Evaluación de la condición**: El sistema evalúa las condiciones establecidas en las secciones **"Where"** y **"And"** del flujo de trabajo. Si todas las condiciones son verdaderas, comienza el proceso de exportación.
-* **Exportación del documento**: El documento se procesa y se exporta usando la configuración de exportación predeterminada o previamente definida.
+* **Evaluación de condición**: el sistema evalúa las condiciones establecidas en **"Dónde"** y **"Y secciones"** del flujo de trabajo. Si todas las condiciones son verdaderas, comienza el proceso de exportación.
+* **Exportación de documento**: El documento se procesa y exporta utilizando la configuración de exportación predeterminada o previamente definida.
 
-## **Configuración:**
+## **Instalación y configuración:**
 
-Esta tarjeta no requiere una configuración específica, ya que usa los ajustes de exportación ya definidos en el sistema. Los usuarios deben asegurarse de que:
+Las versiones anteriores utilizan la configuración de exportación ya definida en el sistema. En la versión 4, configure la validación y seleccione Estado después de la exportación. Comprueba también que:
 
-1. Las condiciones de las secciones **"Where"** y **"And"** estén configuradas correctamente, ya que la tarjeta solo se ejecuta si estas condiciones se evalúan como verdaderas.
-2. Haya una configuración de exportación válida asociada al documento en el sistema.
+1. Las condiciones **"Dónde"** y **"Y secciones"** están configuradas correctamente, ya que la tarjeta solo se ejecuta si estas condiciones se evalúan como verdaderas.
+2. Una configuración de exportación válida está asociada al documento en el sistema.
 
 ## **Conclusión:**
 
-La tarjeta de flujo de trabajo **"Start Export"** proporciona una forma ágil y automatizada de disparar el proceso de exportación. Al basarse en ajustes preconfigurados y evaluaciones condicionales, garantiza un procesamiento de documentos eficiente y preciso.
+La tarjeta de flujo de trabajo **"Iniciar exportación"** proporciona una forma simplificada y automatizada de activar el proceso de exportación. Al confiar en configuraciones preconfiguradas y evaluaciones condicionales, garantiza un procesamiento de documentos eficiente y preciso.
+
+## Versiones de tarjetas y estado de resultados
+
+La afirmación anterior sobre la ausencia de configuración específica de la tarjeta se aplica a la tarjeta Iniciar exportación anterior. Iniciar exportación con validación v4 incluye validación y **Estado después de la exportación**. Elija `finished` para cerrar un documento exportado correctamente o `exported` para mantenerlo abierto para su posterior procesamiento. Las versiones anteriores conservan `finished`. Consulte [Exportar tarjetas y estado de resultados](../../cards-overview/export-cards-guide.md) para conocer los valores predeterminados, errores y pruebas.

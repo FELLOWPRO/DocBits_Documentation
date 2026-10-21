@@ -1,6 +1,6 @@
-# Checkbox is checked
+# La casilla de verificación está marcada
 
-<figure><img src="../../../../.gitbook/assets/image (20) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6ae1b0fb29dd-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,10 +8,10 @@ Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones segú
 
 ## **Componentes de la tarjeta:**
 
-* **Field Name**
+* **Nombre de campo**
   * **Descripción:** Especifica el nombre del campo de casilla de verificación que se evaluará.
   * **Detalle:** Debe coincidir con el identificador exacto del campo utilizado en el sistema. Determina qué casilla de verificación se está supervisando.
-* **Boolean**
+* **booleano**
   * **Descripción:** Define la condición que dispara el flujo de trabajo.
   * **Opciones:**
     * **True:** El flujo de trabajo se dispara si la casilla de verificación está marcada.
@@ -29,12 +29,10 @@ Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones segú
 
 ## **Configuración:**
 
-* Los usuarios configuran la tarjeta seleccionando el campo de casilla de verificación de una lista de campos disponibles y estableciendo la condición Boolean.&#x20;
+* Los usuarios configuran la tarjeta seleccionando el campo de casilla de verificación de una lista de campos disponibles y estableciendo la condición Boolean.
 
 ## Conclusión:
 
 La tarjeta de flujo de trabajo "Checkbox Field Condition" es una herramienta fundamental para gestionar formularios y documentos dinámicos dentro de un sistema ERP, donde las entradas del usuario pueden determinar los procesos de datos posteriores. Al automatizar acciones según el estado de una casilla de verificación, esta tarjeta mejora la eficiencia del flujo de trabajo y garantiza que los comportamientos del sistema se ajusten a las entradas del usuario. Una documentación clara de esta tarjeta ayudará a los usuarios a implementarla de forma eficaz en sus operaciones, permitiendo un mejor control sobre los comportamientos de los formularios y las automatizaciones de procesos.
-
-
 
 **Nota: No todos los clientes tienen la casilla de verificación, pero se puede añadir si se desea.**

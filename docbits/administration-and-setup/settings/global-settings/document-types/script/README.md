@@ -1,6 +1,6 @@
 # Script
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.43.25.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-25.png" alt="English script list with names and dates hidden."><figcaption><p>English script list with names and dates hidden.</p></figcaption></figure>
 
 {% embed url="https://youtu.be/n8NpWWIjmlA" %}
 DocBits Document Scripts Explained: Automate Custom Logic in Your Document Workflow
@@ -21,4 +21,4 @@ Scripts in Docbits are typically written in a scripting language supported by th
    * Provides an interface where scripts can be written and edited. The editor typically supports syntax highlighting, error highlighting, and other features to assist in script development.
    * **Example Script**: Scripts can include operations such as looping through invoice lines to validate totals or to remove entries that do not meet certain criteria.
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.43.37.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-37.png" alt="English script editor with a technical Python example."><figcaption><p>English script editor with a technical Python example.</p></figcaption></figure>

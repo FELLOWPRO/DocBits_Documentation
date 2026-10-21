@@ -11,8 +11,8 @@
 
     <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-settings-en.png" alt="Purchase Order section of More Settings, with the Consumed PO line status switch visible"><figcaption><p>Choose the Consumed PO line status switch.</p></figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-toggle-en.png" alt="Close view of the Consumed PO line status label and switch"><figcaption><p>The switch is off in this example; turn it on to show the matching colors.</p></figcaption></figure>
-3. Open an invoice with purchase order matching and inspect its PO lines. The examples below show how the line colors relate to matching state. For the matching steps, see [Purchase Order Matching](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/).
+
+3. Open an invoice with purchase order matching and inspect its PO lines. The table below explains how line colors relate to matching state. For the matching steps, see [Purchase Order Matching](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/).
 
 ## Read the PO line colors
 
@@ -23,12 +23,5 @@
 | Pale orange    | Some quantity has been matched, but the matched quantity is below the selected PO quantity. | Check how much quantity remains.                                    |
 | Pale violet    | The matched quantity is at least the selected PO quantity.                                  | Do not assume more quantity is available.                           |
 
-<figure><img src="../../../../../../.gitbook/assets/image (450).png" alt="PO line with zero matched quantity and no status color"><figcaption><p>No quantity has been matched yet.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/image (451).png" alt="PO line with a blue selection tint in the matching view"><figcaption><p>The line is selected for the current match.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/consumed_po_line_status.png" alt="PO line with a pale orange background and a matched quantity below the PO quantity"><figcaption><p>The line is partly used.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/image (452).png" alt="PO line with a pale violet background and a matched quantity equal to the PO quantity"><figcaption><p>The line is fully used.</p></figcaption></figure>
 
 A crossed-out line has a different meaning: its PO status may be excluded by [PO disable statuses](purchase-order-disable-statuses.md). Check that setting if a line cannot be selected.

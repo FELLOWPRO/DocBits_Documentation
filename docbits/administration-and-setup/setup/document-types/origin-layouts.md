@@ -6,7 +6,7 @@ DocBits Origin Setting Explained: Country Standards for Dates & Number Formats
 
 DocBits excels in adapting document layouts according to their geographical origins while standardizing elements like currency formats based on user browser settings. Let’s explore how you can leverage the Layout Builder to customize layouts for different origins, such as the U.S. and Germany.
 
-<figure><img src="../../../.gitbook/assets/origin_layout_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_1.png" alt="Layout Builder with English controls."><figcaption><p>Layout Builder with English controls.</p></figcaption></figure>
 
 ## **Understanding Origin-Based Customization**
 
@@ -36,10 +36,10 @@ DocBits excels in adapting document layouts according to their geographical orig
 
 When you want to apply the default layout to multiple origins, press **Apply Default To Origins**.
 
-<figure><img src="../../../.gitbook/assets/origin_layout_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_3.png" alt="Origin selection in Layout Builder; configured origin names remain unchanged."><figcaption><p>Origin selection in Layout Builder; configured origin names remain unchanged.</p></figcaption></figure>
 
 A popup will appear where you can select the origins you want to apply the default layout to. You can use **Select All** or **Unselect All** to quickly manage your selection. The popup displays the number of currently selected origins.
 
-<figure><img src="../../../.gitbook/assets/origin_layout_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_4.png" alt="Dialog for applying the default layout to selected origins."><figcaption><p>Dialog for applying the default layout to selected origins.</p></figcaption></figure>
 
 After making your selection, click **Apply to Origins**. A success message will confirm that the origins were updated.

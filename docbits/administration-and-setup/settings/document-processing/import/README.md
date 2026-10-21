@@ -1,6 +1,6 @@
 # Import
 
-<figure><img src="../../../../.gitbook/assets/ftp_0.png" alt="Import Settings"><figcaption><p>Import Settings Page</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-ftp_0.png" alt="English FTP import connection overview."><figcaption><p>English FTP import connection overview.</p></figcaption></figure>
 
 ## Overview
 
@@ -10,7 +10,7 @@ In the **Import** settings, you can configure document-specific options for impo
 
 1.  Navigate to **Settings** -> **Document Processing** -> **Import**
 
-    <figure><img src="../../../../.gitbook/assets/ftp_0.png" alt=""><figcaption></figcaption></figure>
+
 
 ## **Document Settings**
 
@@ -58,7 +58,7 @@ To use FTP for importing data automatically, ensure the following requirements a
 
 You can click the three dots in the **Action** column to access the following options for your connection:
 
-<figure><img src="../../../../.gitbook/assets/ftp_5.png" alt="" width="158"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-ftp_5.png" alt="Server Configuration in the English FTP import wizard."><figcaption><p>Server Configuration in the English FTP import wizard.</p></figcaption></figure>
 
 * **Test Connection:** Tests the connection to your FTP server.
 * **Connection Logs:** Opens the logs for your FTP connection, including error messages if any issues occur.

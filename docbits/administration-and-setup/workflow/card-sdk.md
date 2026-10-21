@@ -2,7 +2,7 @@
 
 The **Card SDK** lets partners and developers build custom workflow cards for DocFlow. You package a card as a partner app and upload it, or import it directly from GitHub.
 
-<figure><img src="../../.gitbook/assets/workflow_card_sdk.png" alt="Card SDK tab with Upload ZIP, GitHub Import and Submissions"><figcaption><p>The Card SDK — upload a partner app ZIP, import from GitHub, or review your submissions.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_card_sdk.png" alt="Card SDK tab with the notice that an AI Workforce subscription is required."><figcaption><p>Card SDK tab with the notice that an AI Workforce subscription is required.</p></figcaption></figure>
 
 ## How it works
 
@@ -12,3 +12,5 @@ The **Card SDK** lets partners and developers build custom workflow cards for Do
 - **Submissions** — track the status of cards you have submitted.
 
 Once validated and accepted, your custom cards appear in the **Add Card** library alongside the built-in cards.
+
+The Card SDK requires an AI Workforce subscription. If it is not available, the tab shows the subscription notice rather than the SDK editor.

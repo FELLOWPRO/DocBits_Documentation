@@ -2,7 +2,7 @@
 
 Use **Settings → Document Types → Fields** to control how fields behave for a document type. Select the document type first; the example below shows **Invoice** in the English interface.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc155-field-properties-overview-en.png" alt="English Invoice field settings with recognition thresholds, search, field property columns, and Save Settings"><figcaption>Invoice field settings in a DocBits sandbox organization.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-dbdc155-field-properties-overview.png" alt="English field settings for required, read-only, hidden and force-validation properties."><figcaption><p>English field settings for required, read-only, hidden and force-validation properties.</p></figcaption></figure>
 
 ## Find a field and change its properties
 
@@ -10,7 +10,7 @@ Use **Settings → Document Types → Fields** to control how fields behave for 
 2. Find the field row. For example, **Invoice number** has the technical name `invoice_id`.
 3. Adjust the controls in that row, then select **Save Settings**. The same save button is available above and below the table.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc155-field-properties-filtered-en.png" alt="English Invoice number field showing Required, Read Only, Hidden, Force Validation, Use AI, OCR and Match Score controls"><figcaption>The Invoice number row after searching for `invoice_id`.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-dbdc155-field-properties-filtered.png" alt="Field settings filtered by invoice_id, with OCR and Match Score visible."><figcaption><p>Field settings filtered by invoice_id, with OCR and Match Score visible.</p></figcaption></figure>
 
 | Control | What to use it for |
 | --- | --- |

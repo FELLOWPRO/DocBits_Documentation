@@ -4,7 +4,7 @@ The **Infrastructure** page gives administrators a live, at-a-glance view of whe
 
 > **Access:** Infrastructure is an admin-only page. Open **Settings → Organization & Access → Infrastructure**.
 
-<figure><img src="../../.gitbook/assets/infrastructure_overview.png" alt="Infrastructure page with the Topology tab open"><figcaption><p>The Infrastructure page, Topology tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-infrastructure_overview.png" alt="English infrastructure overview."><figcaption><p>English infrastructure overview.</p></figcaption></figure>
 
 The page is split into three tabs:
 

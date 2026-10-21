@@ -22,7 +22,7 @@ Fuzzy Data fields allow users to populate related fields based on approximate ma
    *   Clicking the **blue icon** next to the Purchase Order field opens a **selection window**.
 
 
-       <figure><img src="../../../.gitbook/assets/fuzzy_data_selection_window.png" alt="Fuzzy Data Selection Window"><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/s150-fuzzy_data_selection_window.png" alt="Master-data lookup dialog with records hidden."><figcaption><p>Master-data lookup dialog with records hidden.</p></figcaption></figure>
    * This window contains a table with all purchase orders from the **master data lookup table**.
    * Enabling the **"Display all columns"** option shows additional details.
    * Select a **Purchase Order** and click **Proceed**:
@@ -53,7 +53,6 @@ Fuzzy Data fields allow users to populate related fields based on approximate ma
 {% content-ref url="../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md" %}
 [fuzzy-data-configuration-with-list-of-values.md](../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md)
 {% endcontent-ref %}
-
 
 
 {% embed url="https://www.youtube.com/watch?v=vT5HuGjAYV0" %}

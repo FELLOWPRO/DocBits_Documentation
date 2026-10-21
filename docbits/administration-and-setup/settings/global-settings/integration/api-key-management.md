@@ -21,7 +21,7 @@ The **API Key** section at the top of the page lists every key your organization
 
 ## Understanding the list
 
-<figure><img src="../../../../.gitbook/assets/api-key-list-row.png" alt="A single row of the API key list"><figcaption><p>Each row shows one key</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-api-key-list-row.png" alt="API key list with keys and account details hidden."><figcaption><p>API key list with keys and account details hidden.</p></figcaption></figure>
 
 | Column | What it tells you |
 | --- | --- |
@@ -53,7 +53,6 @@ If you have more keys than fit on one page, use the paging controls at the botto
 
 3. Click **Create**. DocBits shows you the new key:
 
-<figure><img src="../../../../.gitbook/assets/api-key-created.png" alt="The API Key Created dialog showing the full key once"><figcaption><p>This is the only time the full key is shown</p></figcaption></figure>
 
 4. Copy the key with the copy icon and paste it straight into the system that will use it, or into your password manager.
 5. Tick **I have copied and saved this key** and click **Done**.
@@ -65,3 +64,6 @@ If you have more keys than fit on one page, use the paging controls at the botto
 Treat the key like a password. Anyone who has it can act on your organization's documents and data.
 
 For password hashing, TLS, vendor visibility, and the distinction between DocBits keys and credentials for connected systems, see [Secure Storage of Credentials](../../../../security/secure-storage-of-credentials.md).
+
+
+The complete API key is shown only once after creation. Copy it into approved secure storage, confirm that it has been saved, and close the dialog. The key list shows its identifying information rather than revealing the complete secret again.

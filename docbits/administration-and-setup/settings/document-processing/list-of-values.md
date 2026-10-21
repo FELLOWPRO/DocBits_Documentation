@@ -18,7 +18,7 @@ You can access the **List of Values** by navigating to **Settings → Document P
 
 1.  Click **New** in the upper-right corner of the screen.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/s150-list_of_values_1.png" alt="English list-of-values overview with configured list names hidden."><figcaption><p>English list-of-values overview with configured list names hidden.</p></figcaption></figure>
 2. Enter a **Name** for your list.
 3. _(Optional)_ Select a **Sub-Organization** for which the list should be active.
 4.  Click **Save** to create the list.

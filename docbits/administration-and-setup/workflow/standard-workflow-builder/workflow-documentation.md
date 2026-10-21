@@ -16,31 +16,31 @@ If an invoice or other document exceeds a certain total amount that requires pri
 
 **Test 1: Logic Card**
 
-When: **Assignee is:** Amier Haider
+When: **Assignee is:** Intake reviewer
 
 And: **Document type is:** Invoice
 
-Then: **Assign document to:** Stefan Reppermund
+Then: **Assign document to:** Invoice reviewer
 
 ![](<../../../.gitbook/assets/3 (2).png>)
 
 **Test 2: Logic Card**
 
-When: **Assignee is:** Amier Haider
+When: **Assignee is:** Intake reviewer
 
 And: **Document type is:** Delivery Note
 
-Then: **Assign document to:** James Edwards
+Then: **Assign document to:** Delivery-note reviewer
 
 ![](<../../../.gitbook/assets/4 (2).png>)
 
 **Test 3: Logic Card**
 
-**When:** **Assignee is:** Amier Haider
+**When:** **Assignee is:** Intake reviewer
 
 **And:** **Document type is:** Order Confirmation
 
-**Then:** **Assign document to:** Anian Sollinger
+**Then:** **Assign document to:** Order reviewer
 
 ![](<../../../.gitbook/assets/5 (2).png>)
 
@@ -54,11 +54,11 @@ For an easier overview of what should happen to a document, you can set the stat
 
 **When:** **Document type is:** Delivery Note
 
-**And:** **Assignee is:** Amier Haider
+**And:** **Assignee is:** Intake reviewer
 
 **Then:** **Change Status to:** Pending Approval
 
-<figure><img src="../../../.gitbook/assets/workflow_test4_delivery_note_status.png" alt="Workflow Test 4 Delivery Note Status"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-workflow_test4_delivery_note_status.png" alt="Unsaved workflow draft for changing a document status."><figcaption><p>Unsaved workflow draft for changing a document status.</p></figcaption></figure>
 
 ![](<../../../.gitbook/assets/8 (2).png>)
 
@@ -66,7 +66,7 @@ For an easier overview of what should happen to a document, you can set the stat
 
 When: **Document type is:** Invoice
 
-And: **Assignee is:** Stefan Reppermund
+And: **Assignee is:** Invoice reviewer
 
 Then: **Change Status to:** Pending Second Approval
 
@@ -80,11 +80,11 @@ If an invoice or other document exceeds a certain total amount that requires pri
 
 **Test 6: Logic Card**
 
-When: **Assignee is:** Amier Haider
+When: **Assignee is:** Intake reviewer
 
 And: Docfield **total\_amount** is **Greater than 500**
 
-Then: **Assign document to:** Asad Usman Khan
+Then: **Assign document to:** Approval owner
 
 <figure><img src="../../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Workflow Test 6 Total Amount Assign"><figcaption></figcaption></figure>
 
@@ -94,15 +94,15 @@ It is also possible to enter the status into the workflow, so the assigned perso
 
 **Test 7: Logic Card**
 
-**When:** **Assignee is:** Amier Haider
+**When:** **Assignee is:** Intake reviewer
 
 **And:** Docfield **total\_amount** is **Greater then 500**
 
-**Then:** **Assign document to:** Asad Usman Khan
+**Then:** **Assign document to:** Approval owner
 
 **Change Status to:** Pending Approval
 
-<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt="Workflow Test 7 Status Update"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-workflow_test7_status_update.png" alt="Status-change action in an unsaved workflow draft."><figcaption><p>Status-change action in an unsaved workflow draft.</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -116,9 +116,9 @@ The Workflow with these logic cards is designed to automatically verify that the
 
 You can give these documents a specific status or assign them to a specific employee.
 
-<div align="center"><figure><img src="../../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Workflow Test 9 Match Check Overview"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../../.gitbook/assets/s150-workflow_test9_match_check_overview.png" alt="Unsaved workflow draft with a purchase-order comparison condition."><figcaption><p>Unsaved workflow draft with a purchase-order comparison condition.</p></figcaption></figure></div>
 
-<figure><img src="../../../.gitbook/assets/image (27) (1).png" alt="Workflow Test 9 Match Check Detail"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-workflow_test9_match_check_detail.png" alt="Purchase-order comparison card in the English workflow picker."><figcaption><p>Purchase-order comparison card in the English workflow picker.</p></figcaption></figure>
 
 **Logic Card: Quantity or Unit Price or Discount Match**
 

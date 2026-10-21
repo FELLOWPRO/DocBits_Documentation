@@ -1,5 +1,7 @@
 # Duplicate Detection
 
+
+
 Use **Duplicate Detection** to flag documents that match another document on selected fields within a chosen time period. The options belong to each document type.
 
 ## Open the settings
@@ -18,7 +20,9 @@ Use **Duplicate Detection** to flag documents that match another document on sel
 
 Each change is saved when you make it; there is no separate Save button in this section. If you switch detection off, the field and interval selectors are hidden.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc156-duplicate-settings-on-en.png" alt="Duplicate Document Detection enabled, showing fields and interval selectors"><figcaption><p>Enable detection before selecting the comparison fields and time interval.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_3.png" alt="English duplicate-document detection settings."><figcaption><p>English duplicate-document detection settings.</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_4.png" alt="Fields available for duplicate-document detection."><figcaption><p>Fields available for duplicate-document detection.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc156-duplicate-interval-options-en.png" alt="Duplicate Detection Interval menu with one month, three months, six months, and one year"><figcaption><p>Three months is marked as the recommended interval in the menu.</p></figcaption></figure>
 
@@ -29,3 +33,6 @@ For **Invoice**, this section also offers **Duplicate Invoice Detection**, **Blo
 When DocBits finds a match, the document's row on the **Dashboard** shows a duplicate icon. Select the icon to compare the matching records in the side panel. The icon appears only when a match exists.
 
 When you open a flagged document, the duplicate warning offers **View Duplicate**, **Proceed Anyway**, and, if the document has not already been archived, **Archive**. Review the matching records before choosing an action. See [the Dashboard guide](../../dashboard/README.md) for the document list.
+
+
+When reviewing suspected duplicates, compare invoice number, supplier, date and amount. Use the duplicate warning and matching document details to decide what requires correction.

@@ -1,18 +1,16 @@
-# Regex
+# Regular expressions (Regex)
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.38.59.png" alt=""><figcaption><p>Magaging Rgexes</p></figcaption></figure>
+Regular expressions describe text patterns for values such as invoice numbers, dates and amounts. Patterns and document origins must match the relevant document layout.
 
-In Docbits, Regex settings allow administrators to define custom patterns that the system uses to find and extract data from documents. This feature is especially useful in situations where data needs to be extracted from unstructured text or when the data follows a predictable format that can be captured using regex patterns.
+## Management availability
 
-#### Key Features and Options
+The former direct Regex link on the document-type card is not available in the current interface. Check with your administrator which configuration path is supported in your version before changing patterns.
 
-1. **Managing Regexes**:
+## Edit and test a pattern
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.38.59.png" alt=""><figcaption><p>Magaging Regexes</p></figcaption></figure>
+1. Record the existing pattern and the expected matches.
+2. Prepare representative input text and examples that should not match.
+3. Change the pattern and compare its actual matches with the expected values.
+4. Apply the change to the intended configuration only after testing it successfully.
 
-**Managing Regexes**:
-
-* **Add**: Allows you to create a new regex pattern for a specific document type.
-* **Save Changes**: Saves modifications to existing regex configurations.
-* **Pattern**: Here, you can define the regex pattern that matches the specific data format required.
-* **Origin**: Is the Document Origin - For example you can define a different Regex in Germany
+See [Editing and saving Regex patterns](editing-and-saving-regex-patterns.md).

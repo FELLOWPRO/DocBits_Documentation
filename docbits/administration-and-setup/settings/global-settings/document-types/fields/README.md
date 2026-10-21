@@ -1,6 +1,6 @@
 # Fields
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.02.31.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_fields_overview.png" alt="English invoice document-type field overview."><figcaption><p>English invoice document-type field overview.</p></figcaption></figure>
 
 ## Overview
 

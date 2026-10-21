@@ -4,7 +4,7 @@
 
 This feature helps you manage and reconcile item numbers between your system and your suppliers. Often, the item numbers you use internally may not match the item numbers your suppliers use. Docbits makes it easier to handle these discrepancies by creating a mapping between your item numbers and those of your suppliers.
 
-<figure><img src="../../../.gitbook/assets/supplier_item_number_map_interface.png" alt="Supplier Item Number Map Interface"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-supplier-item-number-map.png" alt="Supplier item number mapping with English column headings."><figcaption><p>Supplier item number mapping with English column headings.</p></figcaption></figure>
 
 ## **How It Works**
 

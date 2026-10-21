@@ -27,7 +27,6 @@ Open your **profile / account settings** (top-right account menu → **Edit prof
 3. Enter the 6-digit code your app shows and confirm.
 4. DocBits enables 2FA and shows your **backup codes** (see below).
 
-<figure><img src="../.gitbook/assets/mfa-totp-setup.png" alt="The authenticator-app setup screen with QR code"><figcaption><p>Scan the QR code with your authenticator app, or enter the manual key. Then confirm with the 6-digit code the app shows.</p></figcaption></figure>
 
 ## Set up email verification
 
@@ -48,7 +47,6 @@ When you enable your **first** factor, DocBits shows **ten backup codes** — **
 * Save them somewhere safe (a password manager is ideal).
 * You can generate a fresh set any time with **Regenerate backup codes** (this invalidates the old set).
 
-<figure><img src="../.gitbook/assets/mfa-backup-codes.png" alt="The backup codes screen"><figcaption><p>Your ten backup codes, shown once. Each works a single time — store them somewhere safe.</p></figcaption></figure>
 
 {% hint style="warning" %}
 Backup codes are shown only at the moment they are generated. DocBits cannot show them again — store them immediately.
@@ -65,14 +63,13 @@ Backup codes are shown only at the moment they are generated. DocBits cannot sho
    * **Passkey** — click **Use a passkey** and confirm with Touch ID / Windows Hello / your key.
    * **Backup code** — if you cannot use your usual method.
 
-    <figure><img src="../.gitbook/assets/mfa-challenge.png" alt="The second-factor challenge screen"><figcaption><p>After your password, DocBits asks for your second factor. Switch method with <strong>Use a passkey</strong> or <strong>Email me a code</strong>, and optionally trust the device for 30 days.</p></figcaption></figure>
+
 3. On success you are signed in.
 
 ### What the email code looks like
 
 If you choose **Email**, DocBits sends a message with a 6-digit code that expires in 10 minutes:
 
-<figure><img src="../.gitbook/assets/mfa-email-otp.png" alt="The DocBits verification-code email"><figcaption><p>The verification-code email. The code expires after 10 minutes and can be used once.</p></figcaption></figure>
 
 ## Trust this device
 
@@ -85,7 +82,6 @@ Open the 2FA dialog and click **Manage** to review what is enrolled.
 * **Passkeys** — rename a passkey (click its name) or delete it. Deleting your last remaining factor turns 2FA off.
 * **Trusted devices** — revoke a single device, or **Revoke all devices** to force a fresh 2FA prompt everywhere.
 
-<figure><img src="../.gitbook/assets/mfa-passkeys-list.png" alt="Managing enrolled passkeys and trusted devices"><figcaption><p>The Manage view lists your enrolled passkeys and trusted devices, where you can rename or remove them.</p></figcaption></figure>
 
 ## Turn 2FA off
 

@@ -1,70 +1,7 @@
-# Editing and Saving Regex Patterns
+# Editing and saving Regex patterns
 
-## Guide to modifying existing patterns and the importance of testing those changes to ensure they work as expected without breaking existing functionality.
+Before changing a pattern, confirm the configuration path supported by your DocBits version. The older direct Regex link on the document-type card is no longer available in the current interface.
 
-**To edit existing regex patterns and ensure the changes work as expected without breaking existing functionality, you can follow the guide below:**
+Record the existing pattern and prepare examples of valid input, incomplete input and text that must not match. Check the actual matches after every change. A pattern that matches one invoice number can still accept unwanted text or miss other valid formats.
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 12.46.56.png" alt=""><figcaption><p>Settings: Document Type</p></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 14.18.25.png" alt=""><figcaption></figcaption></figure>
-
-**Analyze the existing pattern:**
-
-* Examine the existing regex pattern to understand what data it captures and how it works.
-* Identify the parts of the pattern that need to be changed and the impact of those changes on the data captured.
-
-**For example: The invoice amount is to be read out:**
-
-*   (?<=Rechnungsbetrag:)\[\s]\*((((\d+)\[,.]{1,10})+\d{0,2})|(\d+(?!,)))
-
-    Rechnungsbetrag: 100.00
-*   Read the amount with 1000s dot but NOT pass the dot
-
-    \[\d.]_\[,\d]_
-
-    Allowed characters: 0123456789,
-*   The value "P32180" is to be read out. Anchor word here is "Invoice Date".
-
-    (?<=InvoiceDate )\[\s]\*P\d{5}
-
-    Customer number Invoice number Invoice date P32180 613976 05/13/2019
-
-<figure><img src="../../../../../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
-
-**Document the changes:**
-
-* Take notes about the changes you plan to make to the regex pattern.
-* Note what new patterns you plan to add and what parts of the existing pattern may need to be changed or removed.
-
-**Prepare test data:**
-
-* Collect test data that is representative of the different types of data the regex pattern typically captures.
-* Make sure your test data covers both typical and edge cases to verify the robustness of your changes.
-
-**Make changes to the regex pattern:**
-
-* Make the planned changes to the regex pattern.
-* This may include adding new patterns, removing or adjusting existing parts, or optimizing the pattern for better performance.
-
-**Test the changes:**
-
-* Apply the updated regex pattern to your test data and carefully review the results.
-* Verify that the pattern still correctly captures the desired data and that there are no unexpected impacts on other parts of the data or system.
-
-**Debugging and adapting:**
-
-* If test results are not as expected or unexpected issues occur, carefully review your changes and make further adjustments as needed.
-* This may include reverting certain changes or adding additional adjustments to fix the problem.
-
-**Document the changes:**
-
-* Update the documentation of your regex pattern to reflect the changes made.
-* Describe the updated patterns and the reasons for the changes made to help other developers understand and use the pattern.
-
-**Saving the changes:**
-
-* Once you are sure that the changes are successful and work as expected, save the updated regex pattern to your code base or configuration files to ensure they are available for future use.
-
-<figure><img src="../../../../../.gitbook/assets/image (224).png" alt=""><figcaption><p>Save Changes</p></figcaption></figure>
-
-By following these steps and carefully testing changes to regex patterns, you can ensure that your regex pattern continues to work correctly while meeting new requirements.
+After reviewing the results, save the intended pattern in the configuration provided for your version. Reprocess representative test documents and check the extracted values before relying on the change for other documents. Ask your administrator if the pattern editor is not available to your role.

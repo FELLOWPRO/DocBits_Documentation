@@ -22,7 +22,7 @@ The **Train Model** page shows the sample count and a list of uploaded training 
 3. Drag PDF files into the dialog or use **Upload** to select them. The current sample-document importer accepts **PDF files**; it rejects other file types. Selecting the files starts the upload.
 4. Close the dialog and check that the documents appear in the training list. If DocBits reports an upload error or a document already exists, correct the file or choose a different sample before continuing.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc163-import-dialog-en.png" alt="Import dialog with Amount and Date Format selector, drag-and-drop area, and Upload field"><figcaption><p>Choose a format before selecting sample PDFs.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-image-85-1.png" alt="Model-training import dialog with amount and date format."><figcaption><p>Model-training import dialog with amount and date format.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc163-format-menu-en.png" alt="Amount and Date Format menu with country and region choices, including United States and Great Britain"><figcaption><p>Pick the format used in the document, not your preferred interface language.</p></figcaption></figure>
 

@@ -29,7 +29,7 @@ Click **Fields** on a card to view its field groups. At the top of that page, **
 
 Each field row has controls such as **Required**, **Read Only**, **Hidden**, **Force Validation**, **Use AI**, OCR, Match Score and Formula. Review the [Fields guide](../../settings/global-settings/document-types/fields/README.md) before changing individual values. Click **Save Settings** on the Fields page to keep your changes.
 
-<figure><img src="../../../.gitbook/assets/document-types-invoice-fields-en-20260928.png" alt="Invoice Fields page with recognition settings, field groups, per-field controls, and Save Settings"><figcaption><p>The Fields page has its own Save Settings button.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-document-types-invoice-fields.png" alt="Invoice document-type fields in English administration."><figcaption><p>Invoice document-type fields in English administration.</p></figcaption></figure>
 
 ## Create a custom document type
 

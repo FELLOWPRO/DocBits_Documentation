@@ -33,3 +33,15 @@ This workflow card evaluates whether a document is part of a specific sub-organi
 ## Conclusion:
 
 The "Document in Sub-organization" workflow card is a helpful tool for automating actions based on whether a document belongs to a particular sub-organization. By ensuring documents are processed according to sub-organization-specific rules, this card improves workflow efficiency and ensures that actions are executed within the correct organizational context.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Route documents belonging to one business unit.
+
+**Configuration:** Select suborganization `Demo North` and the equals operator.
+
+**Expected result and counterexample:** A document in `Demo North` passes. A document in `Demo South` fails.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

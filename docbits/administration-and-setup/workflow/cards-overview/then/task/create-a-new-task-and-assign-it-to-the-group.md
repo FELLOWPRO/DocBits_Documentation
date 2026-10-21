@@ -45,7 +45,7 @@ The **"Create Group Task or Notification"** workflow card facilitates task or no
 ## **Functionality:**
 
 * **Condition Evaluation**:\
-  Executes the card action only when the **"Where"** and **"And Sections"** are true.
+  Executes the card action only when the **"When"** and **"And"** are true.
 * **Task or Notification Creation**:
   * A task is created for the selected group with the specified title, description, and priority.
   * In Version 4, the card can create a notification instead of a task.
@@ -65,3 +65,15 @@ The **"Create Group Task or Notification"** workflow card facilitates task or no
 ## **Conclusion:**
 
 The **"Create Group Task or Notification"** workflow card simplifies task and notification management by targeting groups directly. Its dynamic assignment feature, enabled by the decision tree, enhances flexibility, while email notifications ensure timely communication. Versions 3 and 4 add advanced functionality, making it a versatile tool for efficient workflow execution.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Give a shared team a concrete review task.
+
+**Configuration:** Select group `Demo Finance`, title `Review invoice`, a useful description and priority. Disable email for the first test.
+
+**Expected result and counterexample:** The group receives the task. Confirm the title and assignee in the task list; email delivery is a separate check when enabled.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

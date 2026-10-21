@@ -27,7 +27,7 @@ The **"Call API"** workflow card allows users to make HTTP requests to specified
 
 ## Functionality:
 
-**Condition Evaluation:** The system evaluates the conditions defined in the "Where" and "And Sections":
+**Condition Evaluation:** The system evaluates the conditions defined in the "When" and "And":
 
 * If both conditions are **true**, the API request is executed as configured.
 * If either condition is **false**, the card does not execute, and no API call is made.
@@ -48,10 +48,22 @@ The **"Call API"** workflow card allows users to make HTTP requests to specified
 4. **Include Data (if applicable):**\
    For POST or PUT methods, specify the data to be sent in the request body.
 5. **Condition Configuration:**\
-   Configure the "Where" and "And Sections" to define when the API call should occur.
+   Configure the "When" and "And" to define when the API call should occur.
 
 ## Conclusion:
 
 The **"Call API"** workflow card enhances workflow automation by enabling direct interaction with external systems. By providing flexible configurations for endpoints, methods, and data, it ensures workflows can integrate seamlessly with third-party APIs or custom backends. The ability to conditionally execute API calls ensures precision and efficiency in automating external communications.
 
 ***
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Ask a configured external service for supplementary validation.
+
+**Configuration:** Select the configured demo API endpoint and HTTP method. Supply the parameters and JSON body required by that endpoint.
+
+**Expected result and counterexample:** For a mock response `200`, verify the response handling expected by the following cards. Also test `500`; starting the call does not establish that the business check succeeded.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

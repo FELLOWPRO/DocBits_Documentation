@@ -779,3 +779,23 @@ Both teams process in sequence
 * **ACTION\_SEND\_EMAIL** - Notify assigned person
 * **CONDITION\_USER\_IS\_ISNOT** - Check if correct person assigned
 * **CONDITION\_GROUP\_IS\_ISNOT** - Check if correct group assigned
+
+<!-- workflow-card-example-action_assign_doc_to_first_user_and_tasks-20261021 -->
+
+### Assign the document to the first returned user and create tasks
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-ae5af7c6bdc2-en.png" alt="Card fields in the displayed version. The placeholders are not configured." width="563"><figcaption><p>Card fields in the displayed version. The placeholders are not configured.</p></figcaption></figure>
+
+`ACTION_ASSIGN_DOC_TO_FIRST_USER_AND_TASKS` · version 2
+
+Use a demo decision-table rule returning configured users `Demo Reviewer A` and `Demo Reviewer B` in that order. Select the task/notification option, title `Review invoice`, description, priority and email preference. The first returned user is the document-assignment target and the configured tasks/notifications target the returned users. Check both outputs; an empty return must not be treated as an assignment.
+
+<!-- workflow-card-example-action_assign_supplier_user_first_return_of_dt-20261021 -->
+
+### Assign the first returned user to the supplier
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-0c3d87c8a5e7-en.png" alt="Card fields in the displayed version. The placeholders are not configured." width="563"><figcaption><p>Card fields in the displayed version. The placeholders are not configured.</p></figcaption></figure>
+
+`ACTION_ASSIGN_SUPPLIER_USER_FIRST_RETURN_OF_DT` · version 2
+
+Use a registered demo supplier and a decision-table rule whose first user result is `Demo Supplier Owner`. Select the decision table and, if needed, email templates. The supplier-user association uses the first returned user; it is not the same operation as assigning the document. Verify the supplier result separately and test an empty rule return.

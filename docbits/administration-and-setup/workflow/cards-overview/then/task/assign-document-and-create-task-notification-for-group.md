@@ -62,3 +62,15 @@ The "**Assign Document and Create Task/Notification for Group**" workflow card a
 ## **Conclusion**
 
 The "Assign Document and Create Task/Notification for Group" workflow card ensures documents are assigned to the appropriate group while creating tasks or notifications with customizable priority and email notification options. This streamlines document management and enhances workflow efficiency.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Create a team task alongside prioritized document assignment.
+
+**Configuration:** Select `Demo Finance`, title `Review invoice` and the task and assignment priorities.
+
+**Expected result and counterexample:** Check the group document assignment and the task/notification separately. A task alone is not evidence of a completed document approval.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

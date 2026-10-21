@@ -28,7 +28,7 @@ The **"Change Entries in Table"** workflow card is used to update entries in a s
 ## **Functionality:**
 
 * **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
+  The card only executes its action if both the **"When"** and **"And"** evaluate as true.
 * **Table Entry Update:**\
   The card performs the selected operation (**+**, **-**, **\***, or **/**) on the values in the chosen **column** of the selected **table, u**sing the specified **value**.
 
@@ -46,3 +46,15 @@ The **"Change Entries in Table"** workflow card is used to update entries in a s
 ## **Conclusion:**
 
 The **"Change Entries in Table"** workflow card enables automated updates to database entries by selecting a **table**, **column**, and desired **mathematical operation**. This card is essential for performing bulk data modifications or calculations within your database.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Apply a numeric adjustment to an existing table column.
+
+**Configuration:** Select demo table `lines`, numeric column `quantity`, addition and value `1`.
+
+**Expected result and counterexample:** An existing quantity of `2` becomes `3`. Repeating this action produces `4`, so use it only when repeated addition is intended.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

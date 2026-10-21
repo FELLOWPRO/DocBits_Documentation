@@ -45,7 +45,7 @@ Use this card when you need to:
 
 ## How It Works
 
-1. **Condition Check**: Workflow checks "Where" and "And" conditions
+1. **Condition Check**: Workflow checks "When" and "And" conditions
 2. **Prepare Email**: System prepares the email using template
 3. **Get Group Members**: System finds all members of specified group
 4. **Send**: Email is sent to each group member
@@ -405,6 +405,6 @@ Workflow Continues
 
 **Q: Can I change the email template?** A: Contact your administrator to modify templates
 
-**Q: Can I send based on conditions?** A: Yes! Use "Where" and "And" conditions to control when emails send
+**Q: Can I send based on conditions?** A: Yes! Use "When" and "And" conditions to control when emails send
 
 **Q: How do I know if email was received?** A: Check email logs in DocBits for sending status

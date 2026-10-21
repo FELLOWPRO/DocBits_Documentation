@@ -40,3 +40,13 @@ For example, select `exported` when a successful export must leave the document 
 ## Required checks
 
 Test a valid configuration, a missing configuration, pending tasks with both settings, and both result statuses. Test the version already used in an existing workflow before changing it. For a queued export verify the final execution; for an immediate export verify its own result. Review [Workflow Logs](../workflow-logs.md) and do not confuse a skipped card with success.
+
+<!-- workflow-card-complete-example-20261021 action_export_with_config_deferred -->
+
+### Deferred export example
+
+**Configuration:** On v3 choose test configuration `DEMO_EXPORT`, leave Ignore pending tasks off and select `exported` as the status after export. Place the card in the intended validated route.
+
+**Expected result and counterexample:** The card collects an export request for the end of the workflow execution. Only successful final execution establishes that the destination received the data and that the document remains open as `exported`. A queued-card success alone does not prove export; an unresolved blocking task must not be treated as delivery.
+
+This is an illustrative test configuration and expected outcome; it was not executed. Use data and recipients configured in your test organization.

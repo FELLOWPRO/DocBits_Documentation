@@ -43,3 +43,15 @@ This workflow card is designed to evaluate whether a specified country, located 
 ## **Conclusion:**
 
 The "Country in Field Comparison" workflow card is an essential tool for automating processes that depend on geographical rules, such as compliance with trade agreements or political affiliations. By comparing country data with specific regions like the European Union, Schengen Area, or NAFTA, this card ensures that the system applies the right processing logic, improving efficiency and ensuring accurate workflow execution based on geographical conditions.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Separate documents by a country region.
+
+**Configuration:** Choose a document country field containing `DE`, select the region containing Germany and set the continuation option to `true`.
+
+**Expected result and counterexample:** The German country code satisfies the selected region. A code outside that region does not; test the continuation option separately when you need the inverse branch.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

@@ -37,3 +37,15 @@ This workflow card is designed to automate actions by comparing a specified docu
 ## **Conclusion:**
 
 The "DocField Comparison Validation" workflow card is a robust tool for dynamic document processing. By automating actions based on field comparisons, this card streamlines workflows, enhances accuracy, and supports data-driven decision-making.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Review invoices above a defined amount.
+
+**Configuration:** Select numeric field `net_total`, operator `>` and reference value `1000`.
+
+**Expected result and counterexample:** A value of `1200` passes. `1000` and `900` fail because the comparison is strictly greater than.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

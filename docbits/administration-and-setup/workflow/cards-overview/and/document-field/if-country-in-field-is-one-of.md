@@ -41,3 +41,15 @@ This workflow card is designed to evaluate whether a specified country, located 
 ## **Conclusion:**
 
 The "Country in Field Comparison with List" workflow card is a valuable tool for automating actions based on whether a country is part of a predefined group. By comparing the country data with a list of allowed or restricted countries, this card enhances workflow efficiency and ensures that system processes follow the correct geographic rules.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Route invoices from two specified countries.
+
+**Configuration:** Select the country field, is-one-of, country codes `DE` and `FR`, and continuation `true`.
+
+**Expected result and counterexample:** `DE` passes; `US` does not satisfy the selected country list.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

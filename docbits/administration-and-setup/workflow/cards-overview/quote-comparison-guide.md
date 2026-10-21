@@ -33,3 +33,63 @@ For example, two comparable lines produce results true and false for equality. A
 Use exact item and supplier IDs, the intended price source and matching units. Test all lines matching, a mixed result, no comparable prices, missing quote data and a wrong supplier ID. Verify both the comparison result and which lines were skipped. Keep approval or export behind the business checks that are actually required; a successful identifier check is not a complete procurement validation.
 
 See [PO Matching](po-matching-complete-guide.md) for purchase-order comparisons and [Workflow Logs](../workflow-logs.md) for troubleshooting.
+
+
+
+
+
+
+
+
+
+
+
+<!-- workflow-card-complete-example-20261021 condition_quotes_item_number_comparison -->
+
+### Item-number comparison example
+
+**Configuration:** Prepare two comparable quote lines: supplier item `DEMO-S1` maps to item `DEMO-I1` on both sides; supplier item `DEMO-S2` has document item `DEMO-I2` and matrix item `DEMO-I9`. Choose equality and `match_all`.
+
+**Expected result and counterexample:** The condition result is false with `match_all`, because one comparable item number differs. The result is true with `match_any`, because the first item number matches. The lookup uses the supplier item number. A matrix entry without an item number is skipped and logged; if no line is comparable, the condition result is false. A date-range log alone is not a separate validity condition.
+
+This is an illustrative test configuration and expected outcome; it was not executed. Use data and recipients configured in your test organization.
+
+<!-- workflow-card-complete-example-20261021 condition_quote_supplier_item_number_exists -->
+
+### Supplier item existence example
+
+**Configuration:** The document has supplier item numbers `DEMO-S1` and `DEMO-S2`; the loaded supplier item-price data contains only `DEMO-S1`. Choose the presence operator and `match_all`.
+
+**Expected result and counterexample:** The condition result is false with `match_all` and true with `match_any`. With the absence operator, the second line is a positive absence result. Existence does not prove that item price, unit or supplier classification is correct. Load valid quote data first and inspect missing-data errors.
+
+This is an illustrative test configuration and expected outcome; it was not executed. Use data and recipients configured in your test organization.
+
+<!-- workflow-card-complete-example-20261021 condition_quote_price_match -->
+
+### Supplier price example
+
+**Configuration:** For two matched lines choose `ManagedPrice`, equality and `match_all`. Document prices are `10` and `12`; the corresponding managed prices are `10` and `13`, in matching currencies and units.
+
+**Expected result and counterexample:** The condition result is false with `match_all` and true with `match_any`. Switching to `LastPrice` uses a different source and must be tested independently. A line without a comparable numeric price is skipped and logged; if no line is comparable, the card reports missing document data, not equality.
+
+This is an illustrative test configuration and expected outcome; it was not executed. Use data and recipients configured in your test organization.
+
+<!-- workflow-card-complete-example-20261021 condition_specify_supplier_type -->
+
+### Supplier classification example
+
+**Configuration:** Choose supplier type `Contract`. Prepare two loaded quote-supplier entries with `managed_class` equal to `contract`.
+
+**Expected result and counterexample:** The condition is true when every loaded entry has that classification. The condition is false if one entry has classification `managed`. The selectable `Nonmanaged` value is normalized to `unmanaged` by the backend. This classification is unrelated to a supplier legal form. Missing quote data is not a match.
+
+This is an illustrative test configuration and expected outcome; it was not executed. Use data and recipients configured in your test organization.
+
+<!-- workflow-card-complete-example-20261021 condiiton_unit_of_measure_equal -->
+
+### Unit-of-measure example
+
+**Configuration:** Prepare matched quote rows with document unit `EA` and supplier comparison unit `EA`. Choose equality and `match_all`; retain the card version being tested.
+
+**Expected result and counterexample:** The condition is true for matching comparable units; a second comparable row using `KG` instead of `EA` makes the condition false with `match_all`. Missing comparison units are skipped and logged; if none is comparable, the card reports missing data. Version 3 may apply the configured unit mapping, so verify that mapping separately. Matching prices alone does not establish matching units.
+
+This is an illustrative test configuration and expected outcome; it was not executed. Use data and recipients configured in your test organization.

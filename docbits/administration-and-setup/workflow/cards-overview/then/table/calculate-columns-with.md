@@ -31,7 +31,7 @@ The **"Calculate Columns in Table"** workflow card is used to perform calculatio
 ## **Functionality:**
 
 * **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
+  The card only executes its action if both the **"When"** and **"And"** evaluate as true.
 * **Column Calculation:**\
   The card performs the selected mathematical operation between the two chosen columns.
 * **Result Storage:**\
@@ -51,3 +51,15 @@ The **"Calculate Columns in Table"** workflow card is used to perform calculatio
 ## **Conclusion:**
 
 The **"Calculate Columns in Table"** workflow card enables users to perform dynamic calculations between columns in a table, and store the results in a designated column. The card offers flexibility to apply different mathematical operations and ensures the result is stored in the specified column.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Calculate line totals from quantity and unit price.
+
+**Configuration:** Select table `lines`, columns `quantity` and `unit_price`, multiplication and result column `line_total`.
+
+**Expected result and counterexample:** A row containing `2` and `10` produces `20`. Test another row independently and diagnose missing or nonnumeric input rather than treating it as a valid total.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

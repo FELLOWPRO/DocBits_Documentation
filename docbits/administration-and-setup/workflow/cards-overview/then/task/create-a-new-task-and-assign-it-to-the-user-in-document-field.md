@@ -43,7 +43,7 @@ The **"Create Field-Based Task or Notification"** workflow card is used to creat
 ## **Functionality:**
 
 * **Condition Evaluation**:\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
+  The card only executes its action if both the **"When"** and **"And"** evaluate as true.
 * **Task or Notification Creation**:
   * Assigns the task or notification to the user identified in the document field.
   * In Version 3, allows creating either a task or a notification.
@@ -63,3 +63,15 @@ The **"Create Field-Based Task or Notification"** workflow card is used to creat
 ## **Conclusion:**
 
 The **"Create Field-Based Task or Notification"** workflow card streamlines task and notification management by dynamically assigning responsibilities based on document fields. Its fallback user mechanism and enhanced options in Version 3 provide flexibility, ensuring tasks or notifications are always assigned, even when document data is incomplete.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Create a review task for the user named in document data.
+
+**Configuration:** Select `reviewer_name`, fallback user `Demo Reviewer A`, title `Review invoice` and priority.
+
+**Expected result and counterexample:** A resolvable user in the field receives the task. An empty or unresolvable field uses the configured fallback; test both paths.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

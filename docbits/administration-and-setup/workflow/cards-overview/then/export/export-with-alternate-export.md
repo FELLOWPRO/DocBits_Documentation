@@ -2,31 +2,26 @@
 
 <figure><img src="../../../../../.gitbook/assets/image (362).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## When to use this card
 
-The **"Export Document with Alternate Export"** workflow card enables exporting a document using an alternate export configuration. It offers flexibility by allowing users to bypass the default export configuration and use an alternate one, ensuring compatibility with specific requirements or scenarios.
+Use this Then action for the alternate export configured on the current document type. Configure and validate that route before adding the action.
 
-## **Components of the Card**
+## Configuration comes from the document type
 
-**Alternate Export Configuration**
+The card has no export-configuration selector. It reads whether alternate export is enabled, the alternate export configuration and the status after export from the document-type settings. Internally these are `DOC_ALTERNATE_EXPORT_SETTING`, `DOC_ALTERNATE_EXPORT_EXPORT_CONFIG` and `DOC_ALTERNATE_EXPORT_STATUS`.
 
-* **Description**: Specifies the export configuration to be used for the document.
-* **Detail**: This configuration overrides the default settings and applies the alternate export configuration specified in the workflow.
+An explicitly disabled alternate export produces a failed condition. Missing activation data, configuration or result status is reported rather than silently substituting the default route. The export request checks pending tasks.
 
-## **Functionality**
+## Verify the result
 
-* **Condition Evaluation**:\
-  The system evaluates the conditions set in the **"Where"** and **"And Sections"** of the workflow. The card executes only if all conditions are true.
-* **Document Export**:\
-  Once executed, the card uses the alternate export configuration to process and export the document. This enables tailored export handling for specific workflows.
+Inspect the card log, export history, document status and authorized test destination. A request, timeout or status change alone does not establish that data reached the destination. Check export history before retrying an operation that could create duplicates.
 
-## **Setup and Configuration**
+<!-- workflow-card-complete-example-20261021 action_alternate_export -->
 
-To configure this card:
+### Alternate export example
 
-1. Ensure the **"Where"** and **"And Sections"** are configured correctly, as the card only executes if these conditions evaluate to true.
-2. Verify that the alternate export configuration is valid and active in the system.
+**Configuration:** Prepare synthetic document type `DEMO_INVOICE` with alternate export enabled, an authorized test export configuration and the desired result status in its document-type settings. Add this Then action after the required checks. This card reads those settings; it does not offer an export-configuration selector.
 
-## **Conclusion**
+**Expected result and counterexample:** The action requests export through that alternate configuration and checks pending tasks. Verify the export result and test destination separately. Disabling alternate export causes a failed condition; an absent activation setting or configuration is not a successful export. Do not run this example against an accounting destination.
 
-The **"Export Document with Alternate Export"** workflow card enhances flexibility and control in document export processes. By allowing the selection of an alternate export configuration, it accommodates diverse export requirements while maintaining efficient workflow automation.
+This is an illustrative test configuration and expected outcome; it was not executed. Use data and recipients configured in your test organization.

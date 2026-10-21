@@ -60,3 +60,15 @@ The "**Assign Document to Procurement Group and Create Task/Notification**" work
 ## **Conclusion**
 
 The "Assign Document to Procurement Group and Create Task/Notification" workflow card ensures documents are directed to the appropriate group with clear task instructions and priority levels. By enabling optional email notifications, this card improves task visibility and ensures smooth workflow execution.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Combine prioritized procurement assignment with a review task.
+
+**Configuration:** Select `Demo Procurement`, title `Review order variance`, task priority and assignment priority.
+
+**Expected result and counterexample:** The configured procurement target receives the documented assignment and task/notification. Verify both and their priorities in the result.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

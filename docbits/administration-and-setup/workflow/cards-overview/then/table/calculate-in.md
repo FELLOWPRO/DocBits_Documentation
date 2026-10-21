@@ -37,7 +37,7 @@ The **"Calculate with Regex Dependency"** workflow card allows users to perform 
 ## **Functionality:**
 
 * **Condition Evaluation:**
-  * The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
+  * The card only executes its action if both the **"When"** and **"And"** evaluate as true.
   * The card only executes its action if the value in the dependency column matches the provided **regex pattern**.
 * **Column Calculation:**\
   If the regex pattern matches, the card performs the selected mathematical operation between the two chosen columns.
@@ -62,3 +62,15 @@ The **"Calculate with Regex Dependency"** workflow card allows users to perform 
 ## **Conclusion:**
 
 The **"Calculate with Regex Dependency"** workflow card provides a powerful way to perform calculations with conditional logic based on a regex pattern. This ensures that only rows where the dependency column matches the specified pattern will undergo the specified calculation, and the result is stored in the chosen result column.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Calculate only selected table rows.
+
+**Configuration:** Use demo table `lines` with numeric columns `quantity` and `unit_price`. Select matching rows through the dependency column and regex, multiply the numeric columns and write to `line_total`.
+
+**Expected result and counterexample:** A selected row with `2` and `10` receives `20`. A nonmatching row must be checked separately to confirm it was not selected for calculation.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

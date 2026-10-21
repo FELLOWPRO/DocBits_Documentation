@@ -43,3 +43,13 @@ This setup ensures that workflows are not only efficient but also tailored to th
 In summary, the "When" part of your workflow configuration is about setting the stage for automated actions based on specific, predefined conditions. It’s a powerful tool for ensuring that your ERP system reacts dynamically to the needs of the business, enhancing both productivity and accuracy in document management.
 
 [Variable-change and webhook-event trigger reference](../logic-cards-guide.md).
+
+<!-- workflow-card-example-celery_beat-20261021 -->
+
+### Scheduled processing
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-59699b0c27d3-en.png" alt="Card fields in the displayed version. The placeholders are not configured." width="563"><figcaption><p>Card fields in the displayed version. The placeholders are not configured.</p></figcaption></figure>
+
+`CELERY_BEAT` · version 2
+
+Use a scheduled trigger for documents changed since the previous run. For a daily demo schedule, select minute `0`, hour `9` and the offered every-day/month values. Verify the configured scheduler timezone and the next planned run. This trigger is not proof that unchanged documents are reprocessed.

@@ -19,7 +19,7 @@ The **"Export Document with Export Configuration"** workflow card is designed to
 
 ## **Functionality:**
 
-* **Condition Evaluation**: The system evaluates the conditions set in the **"Where"** and **"And Sections"** of the workflow. If both conditions are true, the export process is initiated.
+* **Condition Evaluation**: The system evaluates the conditions set in the **"When"** and **"And"** of the workflow. If both conditions are true, the export process is initiated.
 * **Document Export**: Using the specified **Export Configuration**, the document is processed and exported in the defined format and destination.
 * **Pending Tasks Handling**: If **Ignore Pending Tasks** is set to **True**, the export process bypasses any outstanding tasks linked to the document. If set to **False**, pending tasks can prevent the export. Resolve them and arrange the intended workflow trigger or retry.
 
@@ -29,7 +29,7 @@ To configure this card, users need to:
 
 1. Select the desired **Export Configuration** to define how the document will be exported.
 2. Choose whether to **Ignore Pending Tasks** by setting the value to **True** or **False.**
-3. Ensure the conditions in the **"Where"** and **"And Sections"** are correctly set, as the card only executes its action when these conditions are true.
+3. Ensure the conditions in the **"When"** and **"And"** are correctly set, as the card only executes its action when these conditions are true.
 
 ## **Conclusion:**
 
@@ -40,3 +40,15 @@ The **"Export Document with Export Configuration"** workflow card ensures docume
 On v3, also choose **Status after export**: `finished` closes the document after a successful export; `exported` leaves it open for further processing. Earlier versions retain `finished`. A missing selection defaults to `finished`; an invalid selection is rejected.
 
 If open tasks prevent export, the card reports the refusal. Resolve the tasks and arrange the intended trigger or retry; automatic waiting and resumption are not guaranteed by this card. The separate queued-export card collects a configuration for final export at the end of the run. See [Export cards and result status](../../export-cards-guide.md).
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Choose a specific export configuration for a validated document.
+
+**Configuration:** Select the configured demo exporter and set Ignore pending tasks to `false`. Use a document with an open task, then a separate test without open tasks.
+
+**Expected result and counterexample:** The open-task case must not be assumed to resume automatically. After resolving the task, trigger the intended export again and verify the exporter result and supported status.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

@@ -42,3 +42,15 @@ This workflow card is designed to automate actions by comparing the values of tw
 ## **Conclusion:**
 
 The "Compare Two Fields" workflow card is an essential tool for comparing data between fields within documents. By automating actions based on field comparisons, this card helps optimize decision-making, supports data validation, and enhances workflow automation.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Check that a copied reference equals the original reference.
+
+**Configuration:** Select text fields `purchase_order_number` and `confirmed_order_number` and the equals operator.
+
+**Expected result and counterexample:** Values `PO-DEMO-001` and `PO-DEMO-001` pass. A second value of `PO-DEMO-002` fails.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

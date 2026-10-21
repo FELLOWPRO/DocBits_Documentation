@@ -22,7 +22,7 @@ The **"Assign to Group"** workflow card facilitates the assignment of documents 
 
 ## Functionality:
 
-* **Condition Evaluation:** The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
+* **Condition Evaluation:** The card only executes its action if both the **"When"** and **"And"** evaluate as true.
 * **Document Assignment:** Assigns the document to the selected **group**. In **Version 3**, the **decision tree** determines the target group dynamically if enabled.
 
 ## Setup and Configuration:
@@ -33,3 +33,15 @@ The **"Assign to Group"** workflow card facilitates the assignment of documents 
 ## Conclusion:
 
 The **"Assign to Group"** workflow card automates document assignment to predefined **groups**, enhancing team coordination. **Version 3** introduces the ability to dynamically assign groups based on decision tree logic.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Put a document into a shared review queue.
+
+**Configuration:** Select configured group `Demo Finance`.
+
+**Expected result and counterexample:** The document is assigned to the selected group. This is document assignment, not a promise that an additional task or email is created.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

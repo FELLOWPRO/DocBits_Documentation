@@ -769,3 +769,23 @@ SOME FALSE → Stop
 * **CONDITION\_DOC\_FIELD\_CONTAINS** - Field content check
 * **CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES** - Field comparison
 * **CONDITION\_CHECKBOX\_IS** - Checkbox check
+
+<!-- workflow-card-complete-example-20261021 condition_purchase_order_import -->
+
+### Purchase-order import trigger example
+
+**Configuration:** Under When select the new-purchase-order import event (`wf_new_purchase_order`) and leave the update event (`wf_updated_purchase_order`) unselected. Configure subsequent actions for this document-independent workflow context.
+
+**Expected result and counterexample:** A run triggered by a newly imported purchase order satisfies this condition. A run triggered only by an update does not. Selecting both events allows either event. This checks the workflow trigger information, not whether an invoice currently contains a purchase-order number.
+
+This is an illustrative test configuration and expected outcome; it was not executed. Use data and recipients configured in your test organization.
+
+<!-- workflow-card-complete-example-20261021 condition_supplier_status_is_isnot -->
+
+### Supplier status-change trigger example
+
+**Configuration:** Under When choose operator `is` and one target status actually offered in your organization. Call that selected status A in this example. Leave another available status B unselected.
+
+**Expected result and counterexample:** The condition is true for a supplier status-change event whose new status is A; it is false for an event whose new status is B. With operator `is not`, those results reverse. This is an event trigger based on workflow run information, not a general check of the supplier status on an invoice. Confirm the actual event and selected status in the log.
+
+This is an illustrative test configuration and expected outcome; it was not executed. Use data and recipients configured in your test organization.

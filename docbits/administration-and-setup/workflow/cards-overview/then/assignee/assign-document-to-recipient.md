@@ -20,7 +20,7 @@ The **"Assign Document to Disponent / Purchaser"** workflow card assigns a docum
 ## **Functionality:**
 
 * **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
+  The card only executes its action if both the **"When"** and **"And"** evaluate as true.
 * **Document Assignment:**\
   The card assigns the document to either the **Disponent** or **Purchaser** as selected. If the selected person is unavailable or not valid, the document is assigned to the fallback user.
 
@@ -34,3 +34,15 @@ The **"Assign Document to Disponent / Purchaser"** workflow card assigns a docum
 ## **Conclusion:**
 
 The **"Assign Document to Disponent / Purchaser"** workflow card ensures the document is always assigned, either to the selected Disponent/Purchaser or, if needed, to the fallback user. This minimizes workflow disruptions and ensures document processing continues smoothly.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Assign a document to its resolved recipient, with a safe fallback.
+
+**Configuration:** Select the recipient source and fallback user `Demo Reviewer A`.
+
+**Expected result and counterexample:** A resolvable recipient receives the assignment. If the recipient cannot be resolved, the configured fallback is used. Verify both paths.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

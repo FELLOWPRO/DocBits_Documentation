@@ -37,7 +37,7 @@ The **"Create Task with Fallback"** workflow card ensures efficient task delegat
 ## **Functionality:**
 
 * **Condition Evaluation**:\
-  The card executes only if the conditions in the **"Where"** and **"And Sections"** are met.
+  The card executes only if the conditions in the **"When"** and **"And"** are met.
 * **Task Assignment**:
   * The task is assigned to the selected role (dispatcher or purchaser).
   * If the specified role is not found, the task is assigned to a user from the fallback dropdown list.
@@ -54,3 +54,13 @@ The **"Create Task with Fallback"** workflow card ensures efficient task delegat
 ## **Conclusion:**
 
 The **"Create Task with Fallback"** workflow card ensures seamless task delegation by integrating a fallback mechanism. By assigning tasks based on roles and providing an alternate user option, it enhances reliability and flexibility in task management processes.
+
+<!-- workflow-card-complete-example-20261021 oc_task -->
+
+### Recipient task example
+
+**Configuration:** Enter title `Review delivery date`, a description identifying the synthetic document, a priority, role Purchaser and configured fallback user `DEMO_REVIEWER`. Disable email notification for this illustrative setup.
+
+**Expected result and counterexample:** When a purchaser can be resolved, the new task is assigned to that user. If the role cannot be resolved, the configured fallback is used. Verify actual task ownership; a missing primary recipient is not proof that the fallback user exists or that a task was created.
+
+This is an illustrative test configuration and expected outcome; it was not executed. Use data and recipients configured in your test organization.

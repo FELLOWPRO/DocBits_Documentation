@@ -15,7 +15,7 @@ The **"Assign Document to Sub-Organization"** workflow card assigns a document t
 ## **Functionality:**
 
 * **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
+  The card only executes its action if both the **"When"** and **"And"** evaluate as true.
 * **Document Assignment:**\
   The card assigns the document to the sub-organization selected from the dropdown list.
 
@@ -27,3 +27,15 @@ The **"Assign Document to Sub-Organization"** workflow card assigns a document t
 ## **Conclusion:**
 
 The **"Assign Document to Sub-Organization"** workflow card ensures that documents are routed to the correct sub-organization, streamlining the document management process by assigning responsibility based on organizational structure.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Route a document to a known business unit.
+
+**Configuration:** Select configured suborganization `Demo North`.
+
+**Expected result and counterexample:** The document belongs to the selected suborganization after the action. Confirm the target before enabling the workflow because suborganization access rules may differ.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

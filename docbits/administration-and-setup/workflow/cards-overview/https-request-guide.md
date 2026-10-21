@@ -45,7 +45,7 @@ Use this card when you need to:
 
 ## How It Works
 
-1. **Trigger Check**: System checks if the "Where" and "And" conditions are met
+1. **Trigger Check**: System checks if the "When" and "And" conditions are met
 2. **Build Request**: System prepares the HTTPS request with your parameters
 3. **Send Securely**: Data is sent using secure HTTPS connection
 4. **Receive Response**: External service responds
@@ -361,3 +361,13 @@ Headers: Authorization: Bearer token
 * **CONDITION\_HTTPS\_REQUEST\_STATUS** - Check if request succeeded
 * **ACTION\_SEND\_EMAIL** - Send via email instead
 * **ACTION\_RUN\_DOCOPERATOR\_SCRIPT** - Automated scripts
+
+<!-- workflow-card-complete-example-20261021 action_https_request -->
+
+### HTTPS action example
+
+**Configuration:** Select method `POST`, replace `DEMO_WEBHOOK_URL` with your authorized test endpoint, add header `Content-Type: application/json` and body `{"document_number":"DEMO-001"}`. Configure authentication only as required by that endpoint; never copy a real secret into documentation.
+
+**Expected result and counterexample:** The action sends the configured request when its workflow route executes. Inspect the HTTP response and receiving test service. A timeout is not proof that the service did nothing, and this Then action is separate from the And card that checks an HTTP status. This illustrative request has not been sent.
+
+This is an illustrative test configuration and expected outcome; it was not executed. Use data and recipients configured in your test organization.

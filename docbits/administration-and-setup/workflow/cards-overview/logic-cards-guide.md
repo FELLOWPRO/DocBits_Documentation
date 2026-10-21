@@ -104,3 +104,38 @@ Selecting Webhook event does not create a public webhook endpoint or its authent
 ## Test and diagnose
 
 Validate the graph, test each branch with representative input, and inspect [Workflow Logs](../workflow-logs.md). Include missing tags, invalid JSON, wrong variable types, numeric boundaries and false conditions. A test without a document cannot prove a document-dependent action. Recheck the saved card version and enabled state before relying on automatic execution.
+
+<!-- workflow-card-logic-examples-20261021 -->
+
+## Worked examples for each logic card
+
+These are illustrative inputs and expected results for version 2. Use organization-variable cards only where the Advanced Builder exposes their templates.
+
+| Card | Example configuration | Expected result and counterexample |
+| --- | --- | --- |
+| `ACTION_LOGIC_SET_TEXT_VAR` | Set organization text variable `routing_label` to `review`. | The shared variable contains `review`. A later workflow can read the same organization variable. |
+| `ACTION_LOGIC_SET_NUMBER_VAR` | Set Number variable `approval_limit` to `1000.50`. | It stores numeric `1000.5`. Text `EUR 1000,50` is not valid numeric input. |
+| `ACTION_LOGIC_CALC_NUMBER` | Store expression `(100 + 20) / 2` in Number variable `calculated_limit`. | The result is `60`. A document-field name or division by zero is not a valid substitute. |
+| `ACTION_LOGIC_SET_BOOLEAN_VAR` | Set the Yes/No variable `review_required` to the offered Boolean `true`. | The organization flag is true. Use Boolean `false` in a separate case to clear it. |
+| `ACTION_LOGIC_INVERT_BOOLEAN` | Start with organization variable `demo_flag` equal to `true`. | One execution makes it `false`. Executing again makes it `true`, so repeated execution is not idempotent. |
+| `ACTION_LOGIC_CREATE_TEXT_TAG` | Create execution tag `raw_amount` with text `125.50`. | The tag contains that text in this execution; it is not a new organization variable or document field. |
+| `ACTION_LOGIC_CONVERT_TO_NUMBER` | Convert input tag `raw_amount`, containing `125.50`, to output tag `amount_number`. | The output is numeric `125.5`. `EUR 125,50` produces a conversion error. |
+| `ACTION_LOGIC_CONVERT_TO_TEXT` | Convert numeric tag `amount_number` containing `125.5` to `amount_text`. | The output is text `125.5`; it is not localized as a currency amount. |
+| `ACTION_LOGIC_CONVERT_TO_BOOLEAN` | Convert a numeric input tag containing `1` to output tag `has_value`. | The output is true. Numeric `0` produces false. |
+| `ACTION_LOGIC_JSON_TO_NUMBER` | Create source tag `payload` with `{"invoice":{"amount":"125.50"}}`; read path `invoice.amount` to `amount_number`. | The output is numeric `125.5`. An absent path is an error, not a valid zero. |
+| `ACTION_LOGIC_JSON_TO_TEXT` | Use source tag `payload` containing `{"invoice":{"status":"review"}}` and path `invoice.status`. | The output tag contains text `review`. |
+| `ACTION_LOGIC_JSON_TO_BOOLEAN` | Use source tag `payload` containing `{"invoice":{"approved":false}}` and path `invoice.approved`. | The output is Boolean false. A missing path is not the same as a stored false. |
+| `ACTION_LOGIC_JSON_SET_NUMBER` | Use existing JSON tag `payload` containing `{"invoice":{}}`; set `invoice.total` to `125.5`. | The tag contains a JSON numeric total, not a quoted numeric string. |
+| `ACTION_LOGIC_JSON_SET_TEXT` | Use existing JSON tag `payload` containing `{"invoice":{}}`; set `invoice.status` to `review`. | The stored JSON value is a string: `{"invoice":{"status":"review"}}`. |
+| `ACTION_LOGIC_JSON_SET_BOOLEAN` | Use existing JSON tag `payload` containing `{"invoice":{}}`; set `invoice.approved` with text `true`. | The stored JSON value is Boolean true. Use `false` to clear it. |
+| `ACTION_LOGIC_JSON_SET_JSON` | Use existing JSON tag `payload` containing `{"invoice":{}}`; set `invoice.metadata` to valid JSON `{"source":"demo"}`. | The inserted value is an object. Invalid JSON must be reported, not stored as a successful object update. |
+| `CONDITION_LOGIC_VALUE_EQUALS` | Create tag `route` with text `review` and compare it with `review`. | It passes. Comparing with `Review` fails because the comparison is case-sensitive. |
+| `CONDITION_LOGIC_BOOLEAN_IS` | Use tag `review_required` containing real Boolean `true`. | It passes; false or a missing tag does not establish a true result. |
+| `CONDITION_LOGIC_TEXT_CONTAINS` | Use tag `note` with text `manual review` and search for `review`. | It passes. Searching for uppercase `REVIEW` fails. An empty search string matches and should be avoided unless intended. |
+| `CONDITION_LOGIC_NUMBER_LESS` | Use numeric tag `amount` equal to `50` and comparison value `100`. | It passes. A value of `100` fails the strict less-than comparison. |
+| `CONDITION_LOGIC_NUMBER_GREATER` | Use numeric tag `amount` equal to `125` and comparison value `100`. | It passes. `100` fails the strict greater-than comparison. |
+| `CONDITION_LOGIC_EXPRESSION` | Select value1 `120`, operator `>` and value2 `100`. | The numeric comparison passes. Use `80` as value1 for a false branch; this is not a free-form Python expression. |
+| `CONDITION_LOGIC_VAR_CHANGED` | Select an organization variable whose previous value is `new` and supplied current value is `review`. | The changed-value event matches. Repeating `review` as both previous and current value does not match. |
+| `CONDITION_LOGIC_WEBHOOK_EVENT` | Select event name `invoice.ready` and supply a configured integration event with payload `{"event":"invoice.ready"}`. | It matches. `{"event":"invoice.updated"}` and no event do not match. The card does not create a webhook endpoint. |
+
+The optional document-reference action `ACTION_LOGIC_SET_DOCUMENT_VAR` has no seeded template in the checked source. If your administrator provides a supported template, select a Document variable and execute with a current demo document: it stores that document ID. Without a document it reports `NO_DOCUMENT`. Do not treat it as an available card merely because the implementation exists.

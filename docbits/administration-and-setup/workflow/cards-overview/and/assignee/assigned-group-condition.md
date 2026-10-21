@@ -37,3 +37,15 @@ This workflow card executes operations based on whether a task or document is as
 
 **Conclusion:**\
 The "Assigned Group Condition" workflow card is essential for managing document and task workflows that depend on group assignments. By allowing conditions based on whether a task or document is assigned to specific groups, it ensures that workflows are only triggered by appropriate group interactions, improving accountability and task management across teams.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Apply the same rule to two review teams.
+
+**Configuration:** Select is-one-of and the configured groups `Demo Finance` and `Demo Procurement`.
+
+**Expected result and counterexample:** A document assigned to either selected group passes. A document assigned only to `Demo Support` fails.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

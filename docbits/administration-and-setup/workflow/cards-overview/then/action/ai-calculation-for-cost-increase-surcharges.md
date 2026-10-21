@@ -2,34 +2,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/image (381).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## When to use this card
 
-The **"AI Calculation for Cost Increase Surcharges"** workflow card uses AI to automatically compute surcharge amounts based on cost increases. It ensures consistent and accurate surcharge calculations, streamlining workflows and reducing manual effort.
+Use this action to request the configured MTZ/ETZ material- and energy-surcharge calculation for the current document. Prepare the document data and calculation-service configuration required by your organization first.
 
-## Components of the Card:
+## Actual configuration
 
-* **Cost Increase Factor**
-  * **Description:** The multiplier or percentage applied to the base cost to calculate the surcharge.
-  * **Detail:** Determines the surcharge amount based on the cost increase (e.g., a factor of 1.10 for a 10% increase).
-* **Base Cost Field**
-  * **Description:** The field containing the original cost value used as the basis for the surcharge calculation.
-  * **Detail:** Selected automatically or defined within the workflow for reference during the calculation.
-* **Surcharge Field**
-  * **Description:** The field where the AI-calculated surcharge value is stored.
-  * **Detail:** This field reflects the calculated surcharge, making it available for further processing or reporting.
+The displayed card has no Cost Increase Factor, Base Cost Field or Surcharge Field inputs. It delegates calculation to the configured service. Do not look for these nonexistent card controls or assume a fixed percentage formula from the card name.
 
-## Functionality:
+## Result and verification
 
-**Condition Evaluation:**
+A successful service response marks the card successful. A timeout or unsuccessful response produces a card error. Inspect the card log and the document's resulting surcharge data; success of the call alone does not document a particular amount.
 
-* The card activates only if both the **"Where"** and **"And Sections"** conditions evaluate as true.
-* If either condition evaluates as false, no surcharge calculation is performed.
+In card-testing mode, the call is skipped and success is simulated. This is useful for testing the workflow structure, but it does not prove that the service ran or any surcharge was calculated.
 
-**AI-Driven Calculation:**
+<!-- workflow-card-practical-example-20261021 -->
 
-* The system applies the **Cost Increase Factor** to the **Base Cost Field** to calculate the surcharge.
-* The result is stored in the **Surcharge Field**, ensuring accessibility for subsequent workflow steps.
+## Practical example
 
-## Conclusion:
+**When to use:** Request the configured material/energy-surcharge calculation for a prepared invoice.
 
-The **"AI Calculation for Cost Increase Surcharges"** workflow card automates the application of surcharges based on cost increases. By leveraging AI for precision and consistency, this card eliminates manual calculations, enhances efficiency, and supports accurate cost management in automated workflows.
+**Configuration:** Use synthetic invoice `DEMO-001` with the data required by your configured MTZ/ETZ service. Add this action after the document-validation conditions.
+
+**Expected result and counterexample:** A successful service response marks the card successful; a timeout or unsuccessful response produces a card error. Inspect the document fields and calculation result separately. Card-testing mode simulates success and does not call the service, so it cannot prove a real surcharge result.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

@@ -18,7 +18,7 @@ The **"Assign Document to Matching Sub-Organization Based on Field"** workflow c
 ## **Functionality:**
 
 * **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
+  The card only executes its action if both the **"When"** and **"And"** evaluate as true.
 * **Dynamic Assignment:**\
   The card checks the value of the specified field and assigns the document to the sub-organization that matches this value.
 * **Fallback Mechanism:**\
@@ -34,3 +34,15 @@ The **"Assign Document to Matching Sub-Organization Based on Field"** workflow c
 ## **Conclusion:**
 
 The **"Assign Document to Matching Sub-Organization Based on Field"** workflow card offers flexibility by dynamically routing documents to the appropriate sub-organization, with an added fallback option to ensure no document is left unassigned.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Choose a business unit from an extracted routing field.
+
+**Configuration:** Set the routing field `business_unit` to the configured suborganization name `Demo North` and choose `Demo Default` as fallback.
+
+**Expected result and counterexample:** A matching field value selects `Demo North`. An unknown name uses `Demo Default`; test the fallback before enabling the workflow.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

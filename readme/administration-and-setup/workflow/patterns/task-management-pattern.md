@@ -4,15 +4,21 @@
 
 ***
 
-Dieses Pattern bauen Sie im **Workflow-Builder** (Workflow Dashboard → Workflow List → Add Workflow). Klicken Sie auf **Karte hinzufügen**, um die Kartenbibliothek zu öffnen, und wählen Sie die von diesem Pattern verwendeten Karten — `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` und `CONDITION_TASK_STATUS` (die Kategorie **Bevollmächtigter** enthält die Aufgaben- und Zuweisungskarten):
+<!-- workflow-card-task-pattern-scope-20261022 -->
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
+**Geprüfter Umfang:** Dieses Pattern ist ein konzeptioneller Entwurf, keine importierbare Workflow-Konfiguration. In der geprüften Bibliothek liegt `tasks_create` unter **Aufgabe**, `doc_user_assign` unter **Zuweisung** und `action_send_email_to_groups` unter **E-Mail**.
+
+Die früheren Namen `ACTION_ASSIGN_TO_USER` und `CONDITION_TASK_STATUS` sind beispielhafte Bezeichnungen, keine auswählbaren registrierten Karten dieser Bibliothek. Die folgenden JSON-Beispiele sind schematisch. Das Erstellen einer Aufgabe pausiert einen Workflow nicht automatisch und richtet keine automatische Wiederaufnahme ein. Weiterleitung nach Aufgabenabschluss, Wartezeiten und Eskalation benötigen eine eigene Konfiguration und Prüfung.
+
+[Aktuelle Aufgabenkarten](../then/task/README.md) · [Exportschutz und offene Aufgaben](../cards-overview/export-cards-guide.md).
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-de.png" alt="Abbildung der Kartenbibliothek. Aufgabenerstellung, Dokumentzuweisung und Gruppen-E-Mail liegen in getrennten Kategorien; wählen Sie die in Ihrer Organisation verfügbare Version. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Abbildung der Kartenbibliothek. Aufgabenerstellung, Dokumentzuweisung und Gruppen-E-Mail liegen in getrennten Kategorien; wählen Sie die in Ihrer Organisation verfügbare Version. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
 ***
 
 ## Pattern-Überblick
 
-Dieses Pattern zeigt, wie Sie Aufgaben in DocBits-Workflows erstellen, zuweisen, verfolgen und verwalten. Aufgaben sind umsetzbare Arbeitsschritte, die Benutzern oder Gruppen zugewiesen werden und abgeschlossen sein müssen, bevor der Dokument-Workflow fortgesetzt werden kann.
+Dieses Pattern veranschaulicht das Erstellen und Zuweisen von Aufgaben sowie Benachrichtigungen. Die Schritte zur Weiterleitung nach Aufgabenabschluss beschreiben eine Zielarchitektur; die Aufgabenerstellung selbst ist keine Warteoperation.
 
 **Was dieses Pattern macht:**
 
@@ -127,6 +133,8 @@ Currency: EUR
 
 **Konfiguration:**
 
+**Schematisches JSON:** Nur zur Veranschaulichung; nicht als ausführbaren Workflow importieren.
+
 ```json
 {
   "task_type": "Approval",
@@ -159,6 +167,8 @@ Currency: EUR
 
 **Aufgabe 1: Freigabe durch die Führungskraft**
 
+**Schematisches JSON:** Nur zur Veranschaulichung; nicht als ausführbaren Workflow importieren.
+
 ```json
 {
   "task_type": "First Approval",
@@ -173,6 +183,8 @@ Currency: EUR
 ```
 
 **Aufgabe 2: Freigabe durch den Direktor (wird nach Abschluss von Aufgabe 1 erstellt)**
+
+**Schematisches JSON:** Nur zur Veranschaulichung; nicht als ausführbaren Workflow importieren.
 
 ```json
 {
@@ -231,6 +243,8 @@ User 3: CFO (only if User 2 approves)
 **Karte:** ACTION\_SEND\_EMAIL\_TO\_GROUPS
 
 **Konfiguration:**
+
+**Schematisches JSON:** Nur zur Veranschaulichung; nicht als ausführbaren Workflow importieren.
 
 ```json
 {
@@ -445,6 +459,8 @@ INVOICE ARRIVES
 
 ### Vorlage 1: Einfache Freigabeaufgabe
 
+**Schematisches JSON:** Nur zur Veranschaulichung; nicht als ausführbaren Workflow importieren.
+
 ```json
 {
   "card": "tasks_create",
@@ -461,6 +477,8 @@ INVOICE ARRIVES
 
 ### Vorlage 2: Prüfaufgabe mit Details
 
+**Schematisches JSON:** Nur zur Veranschaulichung; nicht als ausführbaren Workflow importieren.
+
 ```json
 {
   "card": "tasks_create",
@@ -476,6 +494,8 @@ INVOICE ARRIVES
 ***
 
 ### Vorlage 3: Eskalationsaufgabe
+
+**Schematisches JSON:** Nur zur Veranschaulichung; nicht als ausführbaren Workflow importieren.
 
 ```json
 {

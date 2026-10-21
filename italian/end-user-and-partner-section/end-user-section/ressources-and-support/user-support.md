@@ -20,4 +20,4 @@ All'interno della Schermata di Validazione puoi creare direttamente ticket per i
 
 <figure><img src="../../../.gitbook/assets/user-support3.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/user-support4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-user-support4-it.png" alt="Modulo di assistenza prima dell’invio. L’etichetta Biglietto di supporto indica un ticket di assistenza."><figcaption><p>Modulo di assistenza prima dell’invio. L’etichetta Biglietto di supporto indica un ticket di assistenza.</p></figcaption></figure>

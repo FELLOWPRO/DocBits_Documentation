@@ -1,10 +1,14 @@
 # Stato della riga PO consumata
 
+<figure><img src="../../../../../../.gitbook/assets/prior-u044-it.png" alt="Accesso alle impostazioni aggiuntive del tipo di documento Fattura. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati."><figcaption><p>Accesso alle impostazioni aggiuntive del tipo di documento Fattura. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/prior-u045-it.png" alt="Impostazioni dello stato delle righe di ordine già utilizzate."><figcaption><p>Impostazioni dello stato delle righe di ordine già utilizzate.</p></figcaption></figure>
+
 **Stato della riga PO consumata** colora le righe dell'ordine di acquisto (PO) nella schermata di abbinamento in base alla quantità di ciascuna riga già abbinata. Attivalo per il tipo di documento che usi per le fatture se il tuo team deve riconoscere rapidamente le righe PO non usate, parzialmente usate e completamente usate. Il colore è solo un aiuto visivo; controlla la **Quantità corrispondente** e la colonna della quantità PO selezionata prima di decidere se una riga può essere abbinata di nuovo.
 
 ## Attivare l'impostazione
 
-1. Apri **Impostazioni → Tipi di Documento**. Trova il tipo di documento che usi per le fatture e seleziona l'icona dell'ingranaggio sulla sua scheda per aprire **Altre impostazioni**. Lo screenshot mostra la scheda **Fattura**. Lascia invariati gli interruttori **Attivare** ed **Extraction**.
+1. Apri **Impostazioni → Tipi di Documento**. Trova il tipo di documento che usi per le fatture e seleziona l'icona dell'ingranaggio sulla sua scheda per aprire **Altre impostazioni**. Lo screenshot mostra la scheda **Fattura**. Lascia invariati gli interruttori **Attivare** ed **Estrazione**.
 
    <figure><img src="../../../../../../.gitbook/assets/1-consumed-po-line-document-types-it.png" alt="Pagina Tipi di Documento con la scheda Fattura e l'ingranaggio di Altre impostazioni"><figcaption><p>Apri Altre impostazioni dalla scheda Fattura.</p></figcaption></figure>
 
@@ -25,12 +29,6 @@
 | Arancione pallido | Una parte della quantità è stata abbinata, ma la quantità corrispondente è inferiore alla quantità PO selezionata. | Controlla quanta quantità rimane. |
 | Viola pallido | La quantità corrispondente raggiunge almeno la quantità PO selezionata. | Non dare per scontato che ci sia altra quantità disponibile. |
 
-<figure><img src="../../../../../../.gitbook/assets/image (470).png" alt="Riga PO con quantità corrispondente zero e nessun colore di stato"><figcaption><p>Nessuna quantità è ancora stata abbinata.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/image (472).png" alt="Riga PO con tinta blu di selezione nella schermata di abbinamento"><figcaption><p>La riga è selezionata per l'abbinamento attuale.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/consumed_po_line_status.png" alt="Riga PO con sfondo arancione pallido e quantità corrispondente inferiore alla quantità della PO"><figcaption><p>La riga è parzialmente usata.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/image (473).png" alt="Riga PO con sfondo viola pallido e quantità corrispondente pari alla quantità della PO"><figcaption><p>La riga è completamente usata.</p></figcaption></figure>
-
 Una riga barrata ha un altro significato: il suo stato PO potrebbe essere escluso da [Stati di disabilitazione dell'OP](purchase-order-disable-statuses.md). Controlla quell'impostazione se una riga non può essere selezionata.
+
+La legenda seguente spiega gli stati di confronto senza dipendere dalle immagini di vecchie versioni. Verificare sempre la quantità già assegnata prima di riutilizzare una riga.

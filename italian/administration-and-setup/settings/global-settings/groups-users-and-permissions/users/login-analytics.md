@@ -4,7 +4,7 @@
 
 > **Accesso:** Apri **Impostazioni → Organizzazione e Accessi → Utenti** e fai clic sul pulsante **Analisi degli accessi** nell'angolo in alto a destra (`/settings/login-analytics`).
 
-<figure><img src="../../../../../.gitbook/assets/login_analytics_overview.png" alt="Pagina Analisi degli accessi con il grafico dell'attività e le schede di riepilogo"><figcaption><p>Attività di accesso dell'organizzazione nel periodo selezionato</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u003-it.png" alt="Panoramica dell’analisi degli accessi."><figcaption><p>Panoramica dell’analisi degli accessi.</p></figcaption></figure>
 
 ## Intervallo temporale
 

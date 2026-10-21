@@ -1,5 +1,7 @@
 # Importazione dei dati: addestramento del modello
 
+<figure><img src="../../../../../.gitbook/assets/s150-image-85-1-it.png" alt="Importazione dei dati di addestramento con il formato di importi e date."><figcaption><p>Importazione dei dati di addestramento con il formato di importi e date.</p></figcaption></figure>
+
 Istruzioni dettagliate su come importare i documenti di esempio per l'addestramento, compresi il formato e i tipi di documento da utilizzare.
 
 **Per importare documenti di esempio per l'addestramento, segui questi passaggi:**

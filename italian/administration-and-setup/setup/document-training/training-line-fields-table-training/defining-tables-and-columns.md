@@ -1,74 +1,43 @@
-# Definizione di Tabelle e Colonne
+# Definire tabelle e colonne
 
-Usa questa guida per definire manualmente tabelle e colonne per l'estrazione delle voci di linea in DocBits. È particolarmente utile quando il rilevamento automatico non cattura completamente la struttura della tabella, oppure quando devi aggiungere campi personalizzati.
+Se una tabella non viene riconosciuta completamente, usare l’addestramento per definirne l’area e le colonne. Gli esempi utilizzano una fattura fittizia e una bozza non salvata.
 
-### 1. Accedi alla Vista di Estrazione delle Tabelle
+## Aprire l’addestramento
 
-Apri il documento in DocBits e clicca sul pulsante **“Table Training”** per entrare nella vista di estrazione delle tabelle.
+Aprire il documento nella convalida dei campi, quindi l’estrazione delle tabelle.
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_1-it.png" alt="Interfaccia per definire tabelle e colonne. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati."><figcaption><p>Interfaccia per definire tabelle e colonne. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati.</p></figcaption></figure>
 
-### 2. Attiva la Modalità di Allenamento
+Attivare la modalità di addestramento per visualizzare gli strumenti di selezione e delle colonne.
 
-Per definire o modificare manualmente tabelle e colonne, clicca su **“TRAINING MODE.”**
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_2-it.png" alt="Addestramento delle tabelle con la modalità di addestramento attiva. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati."><figcaption><p>Addestramento delle tabelle con la modalità di addestramento attiva. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati.</p></figcaption></figure>
 
-<div align="center"><figure><img src="../../../../.gitbook/assets/define_tables_and_columns_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
+La barra offre anche il rilevamento automatico. Confrontare il risultato con il documento: questa immagine mostra gli strumenti disponibili, non un rilevamento completato.
 
-### 3. Definisci l'Area della Tabella
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_3-it.png" alt="Strumenti di addestramento delle tabelle, incluso il rilevamento automatico. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati."><figcaption><p>Strumenti di addestramento delle tabelle, incluso il rilevamento automatico. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati.</p></figcaption></figure>
 
-Dopo essere entrato in Modalità di Allenamento, puoi definire dove si trova la tabella nel documento. Hai due opzioni:
+## Definire l’area e le colonne
 
-#### Opzione 1: Usa il Rilevamento Automatico
+Con la matita, tracciare un rettangolo intorno alle intestazioni e alle righe degli articoli. Escludere i totali sottostanti.
 
-Clicca sul pulsante **“Auto-Detect Tables”** per lasciare che DocBits provi a individuare da solo l'area della tabella.
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_4-it.png" alt="Area della tabella non salvata intorno alle righe della fattura fittizia. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati."><figcaption><p>Area della tabella non salvata intorno alle righe della fattura fittizia. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_3.png" alt="" width="375"><figcaption></figcaption></figure>
+Scegliere lo strumento delle colonne e posizionare i separatori verticali tra le colonne effettive.
 
-Se il rilevamento ha successo, il contorno della tabella verrà visualizzato automaticamente. Puoi quindi procedere a definire le colonne.
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_5-it.png" alt="Area della tabella con separatori verticali delle colonne. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati."><figcaption><p>Area della tabella con separatori verticali delle colonne. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati.</p></figcaption></figure>
 
-#### Opzione 2: Definisci la Tabella Manualmente
+Verificare posizione, descrizione, quantità, prezzo unitario e importo.
 
-Se il rilevamento automatico fallisce o non è accurato, puoi definire la tabella manualmente:
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_9-it.png" alt="Separatori posizionati tra le colonne della fattura fittizia. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati."><figcaption><p>Separatori posizionati tra le colonne della fattura fittizia. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati.</p></figcaption></figure>
 
-1. Clicca sul pulsante **“Edit”** per attivare la modalità di selezione della tabella.
-2. Disegna un rettangolo attorno all'area della tabella nella vista del documento a sinistra.
+Controllare l’intera area e i separatori prima di salvare il documento o le regole.
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_4.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_8-it.png" alt="Area e separatori in una bozza di addestramento non salvata. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati."><figcaption><p>Area e separatori in una bozza di addestramento non salvata. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati.</p></figcaption></figure>
 
-### 4. Aggiungi e Definisci le Colonne
+## Controllare l’estrazione
 
-Una volta definite le tabelle, puoi definire manualmente le colonne tramite il seguente pulsante:\
+Confrontare le righe estratte con la fattura. L’immagine seguente mostra le righe già estratte automaticamente nella convalida; non sono il risultato della bozza di addestramento illustrata sopra.
 
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_10-it.png" alt="Righe estratte automaticamente dalla fattura fittizia nella convalida."><figcaption><p>Righe estratte automaticamente dalla fattura fittizia nella convalida.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_5.png" alt="" width="563"><figcaption></figcaption></figure>
-
-Definisci e ordina le colonne tramite trascinamento sul documento. Ripeti l'operazione anche per le tabelle presenti nelle altre pagine. In alternativa, se le tabelle sono uguali su ogni pagina, puoi usare il seguente pulsante per applicare le stesse colonne a tutte le tabelle definite nel documento. Questa funzionalità copia le colonne che hai definito anche su tutte le altre pagine:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_6.png" alt="" width="563"><figcaption></figcaption></figure>
-
-Usa la funzione di **zoom** per definire meglio le colonne in documenti confusi o complessi, ad esempio quando molte informazioni sono vicine tra loro e questo rende difficile definire le colonne:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_7.png" alt="" width="277"><figcaption></figcaption></figure>
-
-Se hai definito una colonna per errore, puoi selezionarla cliccandoci sopra ed eliminarla tramite il seguente pulsante:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_9.png" alt="" width="563"><figcaption></figcaption></figure>
-
-<mark style="color:red;">**Nota**</mark>: Il pulsante è visibile solo se la colonna è selezionata.
-
-Quando hai finito di definire tutte le tabelle e tutte le colonne del documento, usa il pulsante “Save” per attivare le modifiche ed estrarre i dati dal documento:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_8.png" alt="" width="563"><figcaption></figcaption></figure>
-
-I dati di tutte le aree definite verranno estratti e mostrati sul lato destro:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_10.png" alt="" width="375"><figcaption></figcaption></figure>
-
-### 6. Salva ed Estrai
-
-Clicca su **“Save Rules”** quando tutte le tabelle e le colonne sono state definite.
-
-* Questo indica a DocBits dove trovare i dati della tabella per questo specifico fornitore.
-* La prossima volta che viene caricato un documento dello stesso fornitore, DocBits estrarrà automaticamente la tabella usando le regole salvate.
-
-<mark style="color:red;">**Nota**</mark>: Questo allenamento è specifico per il fornitore. Non verrà applicato ai documenti di altri fornitori.
+Dopo il salvataggio previsto, provare altri documenti dello stesso fornitore. Una sola fattura non dimostra un’estrazione affidabile per tutti i layout.

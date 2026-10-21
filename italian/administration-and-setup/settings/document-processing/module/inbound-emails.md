@@ -19,7 +19,7 @@ Vai su **Impostazioni → Elaborazione documenti → Importazione** e apri la se
 
 Si apre la procedura guidata di configurazione. Il primo campo, **Protocollo**, determina come DocBits si connette — scegli **IMAP**, **OAuth Office365** o **OAuth Office365 – Tenant**.
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_protocol_select.png" alt="Menu a discesa Protocollo con IMAP, OAuth Office365 e OAuth Office365 - Tenant"><figcaption><p>Il menu <strong>Protocollo</strong> offre i tre tipi di connessione.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-inbound_emails_protocol_select-it.png" alt="Selezione del protocollo nella procedura della posta in entrata."><figcaption><p>Selezione del protocollo nella procedura della posta in entrata.</p></figcaption></figure>
 
 #### IMAP
 

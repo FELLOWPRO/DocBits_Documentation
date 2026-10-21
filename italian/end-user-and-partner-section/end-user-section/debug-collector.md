@@ -6,8 +6,6 @@ Il Debug Collector cattura un'istantanea completa della tua sessione DocBits —
 
 Premi <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> su Windows e Linux, oppure <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> su macOS. La finestra Performance Report si apre subito.
 
-<figure><img src="../../.gitbook/assets/debug-collector-dialog.png" alt="Finestra Debug Collector"><figcaption><p>La finestra Performance Report mostra l'istantanea catturata e un modulo integrato per creare il ticket.</p></figcaption></figure>
-
 ## Cosa viene catturato
 
 * **Chiamate API** — le ultime 60 chiamate REST e WebSocket, con tempi, codici di stato e URL contattati. Le chiamate oltre i due secondi sono segnalate a parte.
@@ -16,7 +14,7 @@ Premi <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> su Windows e Linux, oppu
 * **Ambiente** — versione del browser, sistema operativo, dimensione dello schermo e feature flag attivi.
 * **Contesto utente** — il tuo ruolo, organizzazione e la pagina in cui ti trovavi quando l'istantanea è stata acquisita.
 * **Metriche di prestazione** — tempi di caricamento della pagina (LCP, FCP), uso della memoria e dimensione del DOM.
-* **Trace ID** — identificativi di correlazione che collegano l'istantanea ai log del backend.
+* **ID tracciamento** — identificativi di correlazione che collegano l'istantanea ai log del backend.
 
 ## Creare un ticket di supporto dalla finestra
 
@@ -35,3 +33,5 @@ Se vuoi una copia locale dell'istantanea, usa **Copy Debug Data** per copiare il
 * Nulla esce dal browser finché non clicchi su **Send Report** — la scorciatoia si limita ad aprire la finestra.
 
 <mark>Rivedi l'istantanea prima di inviarla se stavi lavorando con documenti che contengono dati cliente. Gli identificativi di documento visibili negli URL compariranno nel report.</mark>
+
+Aprire il rapporto diagnostico dai comandi di assistenza, descrivere il problema e controllare le informazioni raccolte prima di condividerle. Il rapporto raccoglie evidenze; da solo non identifica la causa.

@@ -1,6 +1,6 @@
-# Date or Time
+# Date ou heure
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-aab11d0fe7ed-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -10,7 +10,7 @@ Cette carte DocBits vérifie si une valeur de date/heure spécifiée se situe da
 
 * **Validation de date/heure :** cette carte évalue si une date/heure donnée se situe dans une plage spécifiée à l'aide des conditions suivantes :
   * **Is :** vérifie si la date/heure se situe dans la plage de début et de fin définie (incluse).
-  * **Is Not :** s'assure que la date/heure se situe en dehors de la plage définie.
+  * **N'est-ce pas :** s'assure que la date/heure se situe en dehors de la plage définie.
 
 **Plage de date/heure :** les utilisateurs spécifient les valeurs de date/heure de début et de fin pour définir la plage de comparaison.
 

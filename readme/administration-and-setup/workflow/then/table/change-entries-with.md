@@ -1,6 +1,6 @@
-# Change Entries with
+# Modifier les entrées avec
 
-<figure><img src="../../../../.gitbook/assets/image (293).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2186644bde72-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -8,27 +8,27 @@ La carte de workflow **« Change Entries in Table »** sert à mettre à jour le
 
 ## **Composants de la carte :**
 
-1. **Table Name**
-   * **Description :** spécifie la **table** dans laquelle les entrées seront mises à jour.
+1. **Nom de la table**
+   * **Descriptif :** spécifie la **table** dans laquelle les entrées seront mises à jour.
    * **Détail :** une liste déroulante des **tables** disponibles est proposée, vous permettant de sélectionner la table cible pour la mise à jour des entrées.
-2. **Column Name**
-   * **Description :** spécifie la **colonne** de la table sélectionnée à mettre à jour.
+2. **Nom de la colonne**
+   * **Descriptif :** spécifie la **colonne** de la table sélectionnée à mettre à jour.
    * **Détail :** une liste de toutes les **colonnes** disponibles sera proposée pour la sélection.
-3. **Operation**
-   * **Description :** définit l'opération mathématique à effectuer sur les valeurs de la **colonne**.
-   * **Options :**
+3. **Opération**
+   * **Descriptif :** définit l'opération mathématique à effectuer sur les valeurs de la **colonne**.
+   * **Possibilités :**
      * **Add (+) :** ajoute une **valeur** spécifiée à la valeur actuelle de la colonne sélectionnée.
-     * **Subtract (-) :** soustrait une **valeur** spécifiée de la valeur actuelle de la colonne sélectionnée.
+     * **Soustraire (-) :** soustrait une **valeur** spécifiée de la valeur actuelle de la colonne sélectionnée.
      * **Multiply (\*) :** multiplie la valeur actuelle de la colonne sélectionnée par une **valeur** spécifiée.
-     * **Divide (/) :** divise la valeur actuelle de la colonne sélectionnée par une **valeur** spécifiée.
-4. **Value**
-   * **Description :** spécifie la **valeur** à utiliser dans l'opération sélectionnée.
+     * **Diviser (/) :** divise la valeur actuelle de la colonne sélectionnée par une **valeur** spécifiée.
+4. **Valeur**
+   * **Descriptif :** spécifie la **valeur** à utiliser dans l'opération sélectionnée.
    * **Détail :** il s'agit du nombre qui sera ajouté, soustrait, multiplié ou divisé avec les entrées de la colonne sélectionnée.
 
 ## **Fonctionnalité :**
 
 * **Évaluation de la condition :**\
-  La carte n'exécute son action que si les sections **« Where »** et **« And »** sont toutes deux évaluées comme vraies.
+  La carte n'exécute son action que si les sections **« Quand »** et **« Et »** sont toutes deux évaluées comme vraies.
 * **Mise à jour des entrées de la table :**\
   La carte effectue l'opération sélectionnée (**+**, **-**, **\*** ou **/**) sur les valeurs de la **colonne** choisie de la **table** sélectionnée, à l'aide de la **valeur** spécifiée.
 
@@ -46,3 +46,15 @@ La carte de workflow **« Change Entries in Table »** sert à mettre à jour le
 ## **Conclusion :**
 
 La carte de workflow **« Change Entries in Table »** permet des mises à jour automatisées des entrées de base de données en sélectionnant une **table**, une **colonne** et une **opération mathématique** souhaitée. Cette carte est essentielle pour effectuer des modifications de données en masse ou des calculs au sein de votre base de données.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemple pratique
+
+**Quand utiliser :** Appliquer un ajustement numérique à une colonne de tableau existante.
+
+**Configuration :** Sélectionnez la table de démonstration `lines`, la colonne numérique `quantity`, l'addition et la valeur `1`.
+
+**Résultat attendu et contre-exemple :** Une quantité existante de `2` devient `3`. La répétition de cette action produit `4`, utilisez-la donc uniquement lorsque des ajouts répétés sont prévus.
+
+Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.

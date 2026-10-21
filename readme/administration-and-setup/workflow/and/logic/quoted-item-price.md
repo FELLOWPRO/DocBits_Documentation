@@ -1,24 +1,28 @@
-# Quoted Item Price
+# Prix de l'article proposé
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-be613a9841e5-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
-## **Objectif :**
+## **Objectif :**
 
-Cette carte DocBits compare le prix proposé d'un article à son prix contractuel, permettant aux workflows de déclencher des actions selon que les deux valeurs correspondent ou diffèrent. Elle aide à garantir la cohérence des prix et le respect des conditions contractuelles.
+Cette carte DocBits compare le prix indiqué d'un article à son prix contractuel, permettant aux flux de travail de déclencher des actions selon que les deux valeurs correspondent ou diffèrent. Il permet de garantir la cohérence des prix et le respect des termes du contrat.
 
-## **Fonctionnalité :**
+## **Fonctionnalité :**
 
-* **Comparaison de prix :** cette carte évalue si le prix proposé de l'article satisfait la condition spécifiée par rapport au prix contractuel.
-* **Operators :** les conditions suivantes peuvent être appliquées :
-  * **Equals (=) :** vérifie si le prix proposé correspond au prix contractuel.
-  * **Not Equals (≠) :** s'assure que le prix proposé diffère du prix contractuel.
+* **Comparaison des prix :** Cette carte évalue si le prix de l'article proposé répond à la condition spécifiée par rapport au prix contractuel.
+* **Opérateurs :** Les conditions suivantes peuvent être appliquées :
+  * **Est égal à (=) :** Vérifie si le prix proposé correspond au prix contracté.
+  * **Pas égal à (≠) :** Garantit que le prix proposé est différent du prix contracté.
 
-## **Utilisation :**
+## **Utilisation :**
 
-Cette carte est particulièrement utile dans les workflows d'approvisionnement, de vente ou de gestion des contrats, où il est essentiel de valider que les prix proposés sont alignés sur les conditions contractuelles convenues avant de procéder aux approbations ou au traitement des commandes.
+Cette carte est particulièrement utile dans les flux de travail d'approvisionnement, de vente ou de gestion des contrats, où il est crucial de valider que les prix proposés correspondent aux conditions contractuelles convenues avant de procéder aux approbations ou au traitement des commandes.
 
-## **Scénario d'exemple :**
+## **Exemple de scénario :**
 
-* Un utilisateur configure la carte pour vérifier si le **prix proposé est égal à (=)** au **prix contractuel**. Si les prix correspondent, le workflow se poursuit vers l'approbation ; sinon, il déclenche une notification pour un examen manuel afin de résoudre l'écart.
+* Un utilisateur configure la carte pour vérifier si le **prix indiqué est égal à (=)** le **prix contracté**. Si les prix correspondent, le flux de travail passe à l'approbation ; sinon, il déclenche une notification pour examen manuel afin de résoudre l'écart.
 
-En utilisant la carte « Quoted Item Price vs. Contracted Price », les organisations peuvent appliquer leurs politiques de prix, maintenir la conformité contractuelle et réduire les erreurs dans les transactions financières.
+En utilisant la carte « Prix de l'article proposé par rapport au prix contractuel », les organisations peuvent appliquer des politiques de tarification, maintenir la conformité des contrats et réduire les erreurs dans les transactions financières.
+
+## Version 3 : Tout ou partie
+
+La version 3 ajoute `match_any` et `match_all`. Tout nécessite au moins une ligne comparable réussie ; Tout nécessite que chaque ligne comparée satisfasse l'opérateur sélectionné. La version 2 conserve Tout. Une sélection non définie sur la version 3 est définie par défaut sur Tout et est enregistrée. Aucune ligne comparable ne manque de données, pas de correspondance réussie. Voir [Citer les cartes de comparaison](../../cards-overview/quote-comparison-guide.md) pour des résultats mitigés, des lignes sautées et des tests.

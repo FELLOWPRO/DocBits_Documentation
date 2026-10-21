@@ -1,23 +1,21 @@
-# Modèle de rapprochement de commandes (PO Matching)
+# Modèle de correspondance de bon de commande
 
-**Type de modèle :** Validation & comparaison
-**Complexité :** Moyenne-Élevée
-**Mise en place estimée :** 60-90 minutes
-**Cas d'usage courants :** Rapprochement à trois voies, validation de factures, contrôle des écarts, gestion des tolérances
+**Type de modèle :** Validation & comparaison **Complexité :** Moyenne-Élevée **Mise en place estimée :** 60-90 minutes **Cas d'usage courants :** Rapprochement à trois voies, validation de factures, contrôle des écarts, gestion des tolérances
 
----
+***
 
-Vous construisez ce modèle dans le **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Cliquez sur **Add Card** et ouvrez la catégorie **Compare with Purchase Order** — elle contient toutes les cartes de rapprochement utilisées par ce modèle (cartes de comparaison de prix, de quantité, de tolérance et de position) :
+Vous construisez ce modèle dans le **Générateur de flux de travail** (Workflow Dashboard → Workflow List → Add Workflow). Cliquez sur **Ajouter une carte** et ouvrez la catégorie **Comparer avec le bon de commande** — elle contient toutes les cartes de rapprochement utilisées par ce modèle (cartes de comparaison de prix, de quantité, de tolérance et de position) :
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Bibliothèque Add Card affichant les cartes Compare with Purchase Order"><figcaption><p>La catégorie <strong>Compare with Purchase Order</strong> — cartes de rapprochement de prix, de quantité, de tolérance et de position utilisées tout au long de ce modèle.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
----
+***
 
 ## Vue d'ensemble du modèle
 
 Ce modèle montre comment mettre en place des workflows complets de rapprochement de commandes (PO Matching) dans DocBits. Le rapprochement de commandes est un processus de contrôle critique qui compare les données de facture aux données de commande afin de détecter les écarts avant l'approbation du paiement.
 
 **Ce que fait ce modèle :**
+
 1. Récupère les données de commande à partir du numéro de commande figurant sur la facture
 2. Compare les positions de la facture aux positions de la commande
 3. Calcule les écarts (prix, quantité, totaux)
@@ -25,32 +23,35 @@ Ce modèle montre comment mettre en place des workflows complets de rapprochemen
 5. Route vers l'approbation ou l'escalade en fonction des résultats du rapprochement
 6. Suit l'historique des rapprochements et les exceptions
 
----
+***
 
 ## Quand utiliser ce modèle
 
 Utilisez ce modèle lorsque vous devez :
-- ✅ Valider les factures par rapport aux commandes
-- ✅ Détecter les erreurs de prix avant le paiement
-- ✅ Identifier les écarts de quantité
-- ✅ Faire respecter les contrôles d'approvisionnement
-- ✅ Empêcher les paiements en double
-- ✅ Automatiser le rapprochement à trois voies
-- ✅ Réduire la charge de révision manuelle des factures
+
+* ✅ Valider les factures par rapport aux commandes
+* ✅ Détecter les erreurs de prix avant le paiement
+* ✅ Identifier les écarts de quantité
+* ✅ Faire respecter les contrôles d'approvisionnement
+* ✅ Empêcher les paiements en double
+* ✅ Automatiser le rapprochement à trois voies
+* ✅ Réduire la charge de révision manuelle des factures
 
 **N'utilisez pas ce modèle lorsque :**
-- ❌ aucune commande n'existe pour la facture (factures sans commande)
-- ❌ les données de commande ne sont pas disponibles dans DocBits
-- ❌ une révision manuelle est préférée à l'automatisation
-- ❌ le rapprochement de commandes n'est pas requis par la politique de l'entreprise
 
----
+* ❌ aucune commande n'existe pour la facture (factures sans commande)
+* ❌ les données de commande ne sont pas disponibles dans DocBits
+* ❌ une révision manuelle est préférée à l'automatisation
+* ❌ le rapprochement de commandes n'est pas requis par la politique de l'entreprise
+
+***
 
 ## Comprendre le rapprochement de commandes
 
 ### Le rapprochement à trois voies
 
 **Contrôle d'approvisionnement classique :**
+
 ```
 Purchase Order (PO)  →  Created when ordering
         ↓
@@ -62,6 +63,7 @@ THREE-WAY MATCH = PO + GR + Invoice all match
 ```
 
 **Mise en œuvre dans DocBits (rapprochement à deux voies) :**
+
 ```
 Purchase Order (PO)  →  Imported to DocBits
         ↓
@@ -70,18 +72,20 @@ Invoice              →  Scanned by DocBits
 COMPARISON           →  Invoice vs PO validation
 ```
 
----
+***
 
 ## Formules de calcul des écarts
 
 ### Écart de prix unitaire
 
 **Formule :**
+
 ```
 Variance % = |(Invoice Unit Price - PO Unit Price)| / PO Unit Price × 100
 ```
 
 **Exemple :**
+
 ```
 PO Unit Price:       €100.00
 Invoice Unit Price:  €103.00
@@ -94,16 +98,18 @@ Tolerance: 5%
 Result: 3% ≤ 5% → PASS ✅
 ```
 
----
+***
 
 ### Écart de quantité
 
 **Formule :**
+
 ```
 Variance % = |(Invoice Quantity - PO Quantity)| / PO Quantity × 100
 ```
 
 **Exemple :**
+
 ```
 PO Quantity:        100 units
 Invoice Quantity:   98 units
@@ -116,16 +122,18 @@ Tolerance: 10%
 Result: 2% ≤ 10% → PASS ✅
 ```
 
----
+***
 
 ### Écart de montant total
 
 **Formule :**
+
 ```
 Variance % = |(Invoice Total - PO Total)| / PO Total × 100
 ```
 
 **Exemple :**
+
 ```
 PO Total:       €10,000.00
 Invoice Total:  €10,450.00
@@ -138,46 +146,50 @@ Tolerance: 5%
 Result: 4.5% ≤ 5% → PASS ✅
 ```
 
----
+***
 
 ## Exemple complet de workflow
 
 ### Scénario : Validation de facture avec routage basé sur la tolérance
 
 **Exigence métier :**
-- Toutes les factures avec référence de commande doivent être validées
-- Tolérance pour l'écart de prix : 5 %
-- Tolérance pour l'écart de quantité : 10 %
-- Tolérance pour l'écart de montant total : 3 %
-- Dans la tolérance : Approbation automatique
-- Hors tolérance : Créer une tâche de révision
-- Commande manquante : Escalader vers les achats
+
+* Toutes les factures avec référence de commande doivent être validées
+* Tolérance pour l'écart de prix : 5 %
+* Tolérance pour l'écart de quantité : 10 %
+* Tolérance pour l'écart de montant total : 3 %
+* Dans la tolérance : Approbation automatique
+* Hors tolérance : Créer une tâche de révision
+* Commande manquante : Escalader vers les achats
 
 **Cartes de workflow utilisées :**
-1. CONDITION_DOC_FIELD_EXISTS – Vérifier si le numéro de commande est présent
-2. PURCHASE_ORDER_FULL_MATCH – Tenter un rapprochement complet
-3. CONDITION_DOC_TO_PO_UNIT_PRICE – Vérifier l'écart de prix
-4. CONDITION_DOC_TO_PO_QUANTITY – Vérifier l'écart de quantité
-5. CONDITION_DOC_TO_PO_TAX_LINES – Vérifier le rapprochement des taxes
-6. ACTION_SET_FIELD_TO_TEXT – Stocker les résultats du rapprochement
-7. tasks_create – Créer des tâches de révision
-8. ACTION_SEND_EMAIL_TO_GROUPS – Envoyer des notifications
 
----
+1. CONDITION\_DOC\_FIELD\_EXISTS – Vérifier si le numéro de commande est présent
+2. PURCHASE\_ORDER\_FULL\_MATCH – Tenter un rapprochement complet
+3. CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE – Vérifier l'écart de prix
+4. CONDITION\_DOC\_TO\_PO\_QUANTITY – Vérifier l'écart de quantité
+5. CONDITION\_DOC\_TO\_PO\_TAX\_LINES – Vérifier le rapprochement des taxes
+6. ACTION\_SET\_FIELD\_TO\_TEXT – Stocker les résultats du rapprochement
+7. tasks\_create – Créer des tâches de révision
+8. ACTION\_SEND\_EMAIL\_TO\_GROUPS – Envoyer des notifications
+
+***
 
 ## Mise en œuvre étape par étape
 
 ### Étape 1 : Vérifier la référence de commande
 
-**Carte :** CONDITION_DOC_FIELD_EXISTS ou CONDITION_DOC_FIELD_CONTAINS
+**Carte :** CONDITION\_DOC\_FIELD\_EXISTS ou CONDITION\_DOC\_FIELD\_CONTAINS
 
 **Configuration :**
+
 ```
 Field: PO_Number
 Operator: IS NOT EMPTY
 ```
 
 **Logique :**
+
 ```
 IF PO_Number exists:
   → Continue to PO matching
@@ -189,16 +201,18 @@ ELSE:
 
 **Référence du guide :** [Guide des cartes de condition](../and/condition-cards-complete-guide.md)
 
----
+***
 
 ### Étape 2 : Récupérer les données de commande
 
 **Automatique dans DocBits :**
-- Le système recherche la commande à partir du champ PO_Number
-- Récupère les positions de la commande
-- Met les données à disposition pour la comparaison
+
+* Le système recherche la commande à partir du champ PO\_Number
+* Récupère les positions de la commande
+* Met les données à disposition pour la comparaison
 
 **Configuration manuelle (si nécessaire) :**
+
 ```
 PO Source: DocBits Master Data
 PO Lookup Field: PO_Number
@@ -206,15 +220,16 @@ Match Type: Exact Match
 Include Closed POs: No (or Yes if policy allows)
 ```
 
----
+***
 
 ### Étape 3 : Vérifier le rapprochement complet
 
-**Carte :** PURCHASE_ORDER_FULL_MATCH
+**Carte :** PURCHASE\_ORDER\_FULL\_MATCH
 
 **Objectif :** Vérification rapide que tout correspond parfaitement
 
 **Configuration :**
+
 ```
 Match Level: Full Match
 Include: All line items, prices, quantities, totals
@@ -222,6 +237,7 @@ Tolerance: None (exact match)
 ```
 
 **Logique :**
+
 ```
 IF Full Match = TRUE:
   → Set "PO_Match_Status" = "FULL MATCH"
@@ -235,16 +251,18 @@ IF Full Match = FALSE:
 ```
 
 **Résultat :**
-- **TRUE** : Correspondance parfaite, approbation automatique
-- **FALSE** : Poursuivre avec les vérifications détaillées
 
----
+* **TRUE** : Correspondance parfaite, approbation automatique
+* **FALSE** : Poursuivre avec les vérifications détaillées
+
+***
 
 ### Étape 4 : Vérifier l'écart de prix unitaire
 
-**Carte :** CONDITION_DOC_TO_PO_UNIT_PRICE (v5 recommandée)
+**Carte :** CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE (v5 recommandée)
 
 **Configuration :**
+
 ```
 Comparison Mode: Percentage Variance
 Tolerance: 5%
@@ -253,6 +271,7 @@ Apply To: All line items
 ```
 
 **Étape par étape :**
+
 ```
 For each line item:
   1. Get Invoice Unit Price
@@ -263,6 +282,7 @@ For each line item:
 ```
 
 **Exemple de calcul :**
+
 ```
 Line Item 1:
   Product: ABC123
@@ -283,15 +303,16 @@ Line Item 2:
 Overall Result: FAIL (one or more items failed)
 ```
 
-**Référence du guide :** [Guide complet du PO Matching – Prix unitaire](../and/compare-with-purchase-order/po-matching-complete-guide.md#unit-price-comparison)
+**Référence du guide :** [Guide complet du PO Matching – Prix unitaire](../and/compare-with-purchase-order/po-matching-complete-guide.md)
 
----
+***
 
 ### Étape 5 : Vérifier l'écart de quantité
 
-**Carte :** CONDITION_DOC_TO_PO_QUANTITY
+**Carte :** CONDITION\_DOC\_TO\_PO\_QUANTITY
 
 **Configuration :**
+
 ```
 Comparison Mode: Percentage Variance
 Tolerance: 10%
@@ -302,6 +323,7 @@ Allow Over-Delivery: No (strict)
 ```
 
 **Logique :**
+
 ```
 For each line item:
   1. Get Invoice Quantity
@@ -314,6 +336,7 @@ For each line item:
 ```
 
 **Exemple :**
+
 ```
 Line Item 1:
   Product: ABC123
@@ -332,15 +355,16 @@ Line Item 2:
   Result: FAIL ❌ (Escalate)
 ```
 
-**Référence du guide :** [Guide complet du PO Matching – Quantité](../and/compare-with-purchase-order/po-matching-complete-guide.md#quantity-comparison)
+**Référence du guide :** [Guide complet du PO Matching – Quantité](../and/compare-with-purchase-order/po-matching-complete-guide.md)
 
----
+***
 
 ### Étape 6 : Vérifier le rapprochement des lignes de taxe
 
-**Carte :** CONDITION_DOC_TO_PO_TAX_LINES
+**Carte :** CONDITION\_DOC\_TO\_PO\_TAX\_LINES
 
 **Configuration :**
+
 ```
 Match Tax Codes: Yes
 Match Tax Rates: Yes
@@ -349,6 +373,7 @@ Tax Calculation: Verify recalculation
 ```
 
 **Validation :**
+
 ```
 1. Check tax codes match (e.g., "VAT19" on both)
 2. Check tax rates match (19% on both)
@@ -358,6 +383,7 @@ Tax Calculation: Verify recalculation
 ```
 
 **Exemple :**
+
 ```
 Invoice:
   Net Amount: €100.00
@@ -374,36 +400,40 @@ PO:
 Result: Tax alignment PASS ✅
 ```
 
----
+***
 
 ### Étape 7 : Stocker les résultats du rapprochement
 
-**Carte :** ACTION_SET_FIELD_TO_TEXT (plusieurs instances)
+**Carte :** ACTION\_SET\_FIELD\_TO\_TEXT (plusieurs instances)
 
 **Configuration :**
 
-**Champ 1 : PO_Match_Status**
+**Champ 1 : PO\_Match\_Status**
+
 ```
 Field: PO_Match_Status
 Value: {{CALCULATED}}
 Options: "FULL MATCH" | "WITHIN TOLERANCE" | "OUT OF TOLERANCE" | "NO MATCH"
 ```
 
-**Champ 2 : Price_Variance_Percent**
+**Champ 2 : Price\_Variance\_Percent**
+
 ```
 Field: Price_Variance_Percent
 Value: {{CALCULATED_PRICE_VARIANCE}}
 Format: "4.5%" (example)
 ```
 
-**Champ 3 : Quantity_Variance_Percent**
+**Champ 3 : Quantity\_Variance\_Percent**
+
 ```
 Field: Quantity_Variance_Percent
 Value: {{CALCULATED_QUANTITY_VARIANCE}}
 Format: "2.0%" (example)
 ```
 
-**Champ 4 : Match_Details**
+**Champ 4 : Match\_Details**
+
 ```
 Field: Match_Details
 Value: "Price Variance: 4.5% (within 5% tolerance)\nQuantity Variance: 2.0% (within 10% tolerance)\nTotal: PASS"
@@ -411,11 +441,12 @@ Value: "Price Variance: 4.5% (within 5% tolerance)\nQuantity Variance: 2.0% (wit
 
 **Référence du guide :** [Guide de manipulation des champs](../then/document-field/field-manipulation-guide.md)
 
----
+***
 
 ### Étape 8 : Router en fonction des résultats du rapprochement
 
 **Scénario A : Correspondance parfaite (rapprochement complet)**
+
 ```
 IF PO_Match_Status = "FULL MATCH":
   1. Set Approval_Status = "AUTO APPROVED"
@@ -427,6 +458,7 @@ IF PO_Match_Status = "FULL MATCH":
 ```
 
 **Scénario B : Dans la tolérance**
+
 ```
 IF PO_Match_Status = "WITHIN TOLERANCE":
   1. Set Approval_Status = "AUTO APPROVED"
@@ -438,6 +470,7 @@ IF PO_Match_Status = "WITHIN TOLERANCE":
 ```
 
 **Scénario C : Hors tolérance (mineur)**
+
 ```
 IF Variance < 15% (minor exceptions):
   1. Set Match_Status = "REVIEW REQUIRED"
@@ -452,6 +485,7 @@ IF Variance < 15% (minor exceptions):
 ```
 
 **Scénario D : Hors tolérance (majeur)**
+
 ```
 IF Variance ≥ 15% (major exceptions):
   1. Set Match_Status = "ESCALATION REQUIRED"
@@ -468,6 +502,7 @@ IF Variance ≥ 15% (major exceptions):
 ```
 
 **Scénario E : Commande manquante ou aucune correspondance**
+
 ```
 IF PO not found OR no items match:
   1. Set Match_Status = "NO MATCH"
@@ -479,9 +514,9 @@ IF PO not found OR no items match:
   5. Request PO creation or correction
 ```
 
----
+***
 
-## Diagramme de workflow complet
+## Schéma de workflow complet
 
 ```
 INVOICE ARRIVES
@@ -623,7 +658,7 @@ INVOICE ARRIVES
 └─ [PO check complete]
 ```
 
----
+***
 
 ## Gabarits de configuration
 
@@ -663,7 +698,7 @@ INVOICE ARRIVES
 
 **Utilisation :** Environnement strictement contrôlé, faible tolérance aux écarts
 
----
+***
 
 ### Gabarit 2 : Rapprochement de commandes flexible (souple)
 
@@ -701,7 +736,7 @@ INVOICE ARRIVES
 
 **Utilisation :** Environnement flexible, fournisseurs de confiance, tolérance plus élevée
 
----
+***
 
 ### Gabarit 3 : Rapprochement de prix uniquement
 
@@ -728,7 +763,7 @@ INVOICE ARRIVES
 
 **Utilisation :** Lorsque seul le prix compte et que des écarts de quantité sont attendus
 
----
+***
 
 ## Scénarios avancés
 
@@ -737,6 +772,7 @@ INVOICE ARRIVES
 **Défi :** Facture pour une livraison partielle d'une commande
 
 **Solution :**
+
 ```
 1. Allow quantity under-delivery within tolerance
 2. Track cumulative invoiced quantity vs PO quantity
@@ -746,6 +782,7 @@ INVOICE ARRIVES
 ```
 
 **Mise en œuvre :**
+
 ```
 IF Cumulative_Invoiced_Quantity ≤ PO_Quantity:
   Calculate: Percentage = (Cumulative/PO) × 100
@@ -755,13 +792,14 @@ IF Cumulative_Invoiced_Quantity ≤ PO_Quantity:
     Close PO
 ```
 
----
+***
 
 ### Scénario 2 : Rapprochement de commandes multidevises
 
 **Défi :** La devise de la facture diffère de la devise de la commande
 
 **Solution :**
+
 ```
 1. Detect currency mismatch
 2. Get exchange rate (from API or master data)
@@ -771,6 +809,7 @@ IF Cumulative_Invoiced_Quantity ≤ PO_Quantity:
 ```
 
 **Mise en œuvre :**
+
 ```
 IF Invoice_Currency ≠ PO_Currency:
   1. Get exchange rate for Invoice_Currency → PO_Currency
@@ -780,13 +819,14 @@ IF Invoice_Currency ≠ PO_Currency:
   5. Flag: "Currency_Conversion_Applied"
 ```
 
----
+***
 
 ### Scénario 3 : Commande cadre / accord-cadre
 
 **Défi :** Plusieurs factures pour une seule commande
 
 **Solution :**
+
 ```
 1. Identify PO type = "Blanket"
 2. Track cumulative invoiced value
@@ -796,6 +836,7 @@ IF Invoice_Currency ≠ PO_Currency:
 ```
 
 **Mise en œuvre :**
+
 ```
 IF PO_Type = "Blanket":
   Calculate: Total_Invoiced_To_Date
@@ -807,7 +848,7 @@ IF PO_Type = "Blanket":
     Escalate: "Blanket PO limit exceeded"
 ```
 
----
+***
 
 ## Gestion des erreurs & cas particuliers
 
@@ -816,6 +857,7 @@ IF PO_Type = "Blanket":
 **Problème :** La facture contient une position qui ne figure pas sur la commande
 
 **Solution :**
+
 ```
 1. Identify unmatched line items
 2. Calculate: Unmatched_Amount
@@ -827,13 +869,14 @@ IF PO_Type = "Blanket":
 5. Flag: "Additional_Items_Present"
 ```
 
----
+***
 
 ### Cas particulier 2 : Commande clôturée, mais une facture arrive
 
 **Problème :** Commande déjà clôturée, facture tardive reçue
 
 **Solution :**
+
 ```
 1. Check: PO_Status = "CLOSED"
 2. Check: Invoice_Date vs PO_Close_Date
@@ -847,13 +890,14 @@ IF PO_Type = "Blanket":
      Manual decision required
 ```
 
----
+***
 
 ### Cas particulier 3 : Plusieurs commandes sur une seule facture
 
 **Problème :** La facture fait référence à plusieurs commandes
 
 **Solution :**
+
 ```
 1. Parse invoice for multiple PO numbers
 2. For each PO:
@@ -864,109 +908,107 @@ IF PO_Type = "Blanket":
 5. Report on each PO separately
 ```
 
----
+***
 
 ## Conseils de performance
 
 ✅ **Bonnes pratiques :**
-- Mettre en cache les données de commande pour réduire les recherches
-- Définir des tolérances appropriées (ni trop strictes, ni trop souples)
-- Vérifier d'abord le rapprochement complet (plus rapide)
-- Journaliser tous les calculs d'écart
-- Réviser les réglages de tolérance trimestriellement
-- Surveiller les taux d'approbation automatique
-- Suivre les motifs d'écart fréquents
+
+* Mettre en cache les données de commande pour réduire les recherches
+* Définir des tolérances appropriées (ni trop strictes, ni trop souples)
+* Vérifier d'abord le rapprochement complet (plus rapide)
+* Journaliser tous les calculs d'écart
+* Réviser les réglages de tolérance trimestriellement
+* Surveiller les taux d'approbation automatique
+* Suivre les motifs d'écart fréquents
 
 ❌ **À éviter :**
-- Tolérance zéro (trop stricte, trop de révisions manuelles)
-- Tolérance extrêmement élevée (détourne l'objectif)
-- Ignorer les écarts systématiques
-- Ne pas suivre les tendances d'écart
-- Traiter sans commande (lorsqu'elle est requise)
 
----
+* Tolérance zéro (trop stricte, trop de révisions manuelles)
+* Tolérance extrêmement élevée (détourne l'objectif)
+* Ignorer les écarts systématiques
+* Ne pas suivre les tendances d'écart
+* Traiter sans commande (lorsqu'elle est requise)
+
+***
 
 ## Surveillance & reporting
 
 ### Indicateurs clés à suivre
 
 1. **Taux de rapprochement :**
-   - Rapprochement complet : X %
-   - Dans la tolérance : Y %
-   - Hors tolérance : Z %
-
+   * Rapprochement complet : X %
+   * Dans la tolérance : Y %
+   * Hors tolérance : Z %
 2. **Analyse des écarts :**
-   - Écart de prix moyen
-   - Écart de quantité moyen
-   - Motifs d'écart fréquents
-
+   * Écart de prix moyen
+   * Écart de quantité moyen
+   * Motifs d'écart fréquents
 3. **Efficacité de traitement :**
-   - Taux d'approbation automatique
-   - Taux de révision manuelle
-   - Temps de révision moyen
-
+   * Taux d'approbation automatique
+   * Taux de révision manuelle
+   * Temps de révision moyen
 4. **Performance des fournisseurs :**
-   - Écarts par fournisseur
-   - Taux de rapprochement par fournisseur
-   - Fournisseurs problématiques
+   * Écarts par fournisseur
+   * Taux de rapprochement par fournisseur
+   * Fournisseurs problématiques
 
----
+***
 
 ## Liste de vérification de test
 
-- [ ] Scénario de correspondance parfaite (rapprochement complet)
-- [ ] Scénario dans la tolérance (écart faible)
-- [ ] Scénario hors tolérance (écart important)
-- [ ] Scénario de commande manquante
-- [ ] Scénario de numéro de commande erroné
-- [ ] Scénario de livraison partielle
-- [ ] Scénario de surlivraison
-- [ ] Scénario d'écart de devise
-- [ ] Scénario de plusieurs commandes
-- [ ] Scénario de commande clôturée
-- [ ] Scénario d'écart de taxe
-- [ ] Workflow d'escalade
-- [ ] Création de tâche
-- [ ] Notifications par e-mail
-- [ ] Mises à jour de champs
-- [ ] Export après approbation
+* [ ] Scénario de correspondance parfaite (rapprochement complet)
+* [ ] Scénario dans la tolérance (écart faible)
+* [ ] Scénario hors tolérance (écart important)
+* [ ] Scénario de commande manquante
+* [ ] Scénario de numéro de commande erroné
+* [ ] Scénario de livraison partielle
+* [ ] Scénario de surlivraison
+* [ ] Scénario d'écart de devise
+* [ ] Scénario de plusieurs commandes
+* [ ] Scénario de commande clôturée
+* [ ] Scénario d'écart de taxe
+* [ ] Workflow d'escalade
+* [ ] Création de tâche
+* [ ] Notifications par e-mail
+* [ ] Mises à jour de champs
+* [ ] Export après approbation
 
----
+***
 
 ## Modèles connexes
 
 ### Modèles qui fonctionnent bien ensemble :
 
-- **[Modèle de gestion des tâches](task-management-pattern.md)** – Créer des tâches de révision pour les écarts
-- **[Modèle de logique de décision](decision-logic-pattern.md)** – Routage complexe selon le niveau d'écart
-- **[Modèle d'intégration d'API](api-integration-pattern.md)** – Récupérer les tarifs actuels pour comparaison
-- **[Modèle de transformation des données](data-transformation-pattern.md)** – Conversion de devises et d'unités
+* [**Modèle de gestion des tâches**](task-management-pattern.md) – Créer des tâches de révision pour les écarts
+* [**Modèle de logique de décision**](decision-logic-pattern.md) – Routage complexe selon le niveau d'écart
+* [**Modèle d'intégration d'API**](api-integration-pattern.md) – Récupérer les tarifs actuels pour comparaison
+* [**Modèle de transformation des données**](data-transformation-pattern.md) – Conversion de devises et d'unités
 
----
+***
 
 ## Guides connexes
 
 ### Prérequis
-- [Guide complet du PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md) – Toutes les cartes de rapprochement de commandes
-- [Guide des cartes de condition](../and/condition-cards-complete-guide.md) – Logique de condition
-- [Guide de manipulation des champs](../then/document-field/field-manipulation-guide.md) – Opérations sur les champs
+
+* [Guide complet du PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md) – Toutes les cartes de rapprochement de commandes
+* [Guide des cartes de condition](../and/condition-cards-complete-guide.md) – Logique de condition
+* [Guide de manipulation des champs](../then/document-field/field-manipulation-guide.md) – Opérations sur les champs
 
 ### Cartes connexes
-- **PURCHASE_ORDER_FULL_MATCH** – [Guide du PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md#full-match)
-- **CONDITION_DOC_TO_PO_UNIT_PRICE** – [Guide du PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md#unit-price)
-- **CONDITION_DOC_TO_PO_QUANTITY** – [Guide du PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md#quantity)
-- **CONDITION_DOC_TO_PO_TAX_LINES** – [Guide du PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md#tax-lines)
-- **tasks_create** – [Guide d'affectation des tâches](../then/task/task-assignment-guide.md)
+
+* **PURCHASE\_ORDER\_FULL\_MATCH** – [Guide du PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md)
+* **CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE** – [Guide du PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md)
+* **CONDITION\_DOC\_TO\_PO\_QUANTITY** – [Guide du PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md)
+* **CONDITION\_DOC\_TO\_PO\_TAX\_LINES** – [Guide du PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md)
+* **tasks\_create** – [Guide d'affectation des tâches](../then/task/task-assignment-guide.md)
 
 ### Prochaines étapes
-- Créer des tâches de révision : [Modèle de gestion des tâches](task-management-pattern.md)
-- Ajouter des notifications par e-mail : [Guide e-mail](../then/action/send-email-groups-guide.md)
-- Mettre en place un routage complexe : [Modèle de logique de décision](decision-logic-pattern.md)
 
----
+* Créer des tâches de révision : [Modèle de gestion des tâches](task-management-pattern.md)
+* Ajouter des notifications par e-mail : [Guide e-mail](../then/action/send-email-groups-guide.md)
+* Mettre en place un routage complexe : [Modèle de logique de décision](decision-logic-pattern.md)
 
-**Version du modèle :** 1.0
-**Dernière mise à jour :** 23 octobre 2025
-**Difficulté :** Moyenne-Élevée
-**Temps estimé :** 60-90 minutes
-**Taux de réussite :** Élevé (lorsqu'il est correctement configuré)
+***
+
+**Version du modèle :** 1.0 **Dernière mise à jour :** 23 octobre 2025 **Difficulté :** Moyenne-Élevée **Temps estimé :** 60-90 minutes **Taux de réussite :** Élevé (lorsqu'il est correctement configuré)

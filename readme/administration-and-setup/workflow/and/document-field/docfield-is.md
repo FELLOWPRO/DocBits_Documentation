@@ -1,6 +1,6 @@
-# Docfield is
+# Comparer un champ de document à une valeur de référence
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f38fe175443d-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -8,18 +8,18 @@ Cette carte de workflow est conçue pour automatiser des actions en comparant la
 
 ## **Composants de la carte :**
 
-1. **Field Name**
-   * **Description :** spécifie le nom du champ de document à évaluer.
+1. **Nom du champ**
+   * **Descriptif :** spécifie le nom du champ de document à évaluer.
    * **Détail :** il doit correspondre à l'identifiant exact du champ dans le document.
-2. **Operators**
-   * **Description :** définit le type de comparaison à effectuer entre la valeur du champ et la valeur de référence.
-   * **Options :**
-     * **Equals (=) :** vérifie si la valeur du champ correspond à la valeur de référence.
-     * **Not Equals (≠) :** s'assure que la valeur du champ diffère de la valeur de référence.
-     * **Greater Than (>) :** confirme que la valeur du champ est supérieure à la valeur de référence.
-     * **Greater or Equals (≥) :** vérifie que la valeur du champ est égale ou supérieure à la valeur de référence.
-     * **Lesser Than (<) :** vérifie si la valeur du champ est inférieure à la valeur de référence.
-     * **Less or Equals (≤) :** s'assure que la valeur du champ est inférieure ou égale à la valeur de référence.
+2. **Opérateurs**
+   * **Descriptif :** définit le type de comparaison à effectuer entre la valeur du champ et la valeur de référence.
+   * **Possibilités :**
+     * **Est égal à (=) :** vérifie si la valeur du champ correspond à la valeur de référence.
+     * **Différent (≠) :** s'assure que la valeur du champ diffère de la valeur de référence.
+     * **Supérieur à (>) :** confirme que la valeur du champ est supérieure à la valeur de référence.
+     * **Supérieur ou égal à (≥) :** vérifie que la valeur du champ est égale ou supérieure à la valeur de référence.
+     * **Inférieur à (<) :** vérifie si la valeur du champ est inférieure à la valeur de référence.
+     * **Inférieur ou égal à (≤) :** s'assure que la valeur du champ est inférieure ou égale à la valeur de référence.
 
 ## **Fonctionnalité :**
 
@@ -37,3 +37,15 @@ Cette carte de workflow est conçue pour automatiser des actions en comparant la
 ## **Conclusion :**
 
 La carte de workflow « DocField Comparison Validation » est un outil robuste pour le traitement dynamique des documents. En automatisant des actions en fonction des comparaisons de champs, cette carte rationalise les workflows, améliore la précision et facilite la prise de décision fondée sur les données.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemple pratique
+
+**Quand utiliser :** Examinez les factures supérieures à un montant défini.
+
+**Configuration :** Sélectionnez le champ numérique `net_total`, l'opérateur `>` et la valeur de référence `1000`.
+
+**Résultat attendu et contre-exemple :** Une valeur de `1200` est réussie. `1000` et `900` échouent car la comparaison est strictement supérieure à.
+
+Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.

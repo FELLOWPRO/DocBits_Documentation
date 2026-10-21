@@ -1,6 +1,6 @@
-# Document Type Operation one of
+# Type de document Opération une des
 
-<figure><img src="../../../../.gitbook/assets/userlmn_14ab8ac5e693d9bbe68d178795d12a9f (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f6993281dacc-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -8,13 +8,13 @@ Cette carte est conçue pour gérer des actions sur les documents en fonction de
 
 ## **Composants de la carte :**
 
-1. **Operator**
-   * **Description** : détermine la logique conditionnelle appliquée aux types de documents.
-   * **Options** :
+1. **Opérateur**
+   * **Descriptif** : détermine la logique conditionnelle appliquée aux types de documents.
+   * **Possibilités** :
      * **is** : l'opération se déclenche si le type du document correspond à l'un des types spécifiés dans la liste.
-     * **is not** : l'opération se déclenche si le type du document ne correspond à aucun des types listés.
-2. **Document Types List**
-   * **Description** : spécifie une liste de types de documents auxquels la condition s'appliquera.
+     * **n'est pas** : l'opération se déclenche si le type du document ne correspond à aucun des types listés.
+2. **Liste des types de documents**
+   * **Descriptif** : spécifie une liste de types de documents auxquels la condition s'appliquera.
    * **Détail** : elle inclut divers types de documents tels que « Invoice », « Purchase Order », etc., en fonction desquels la condition (is/is not) sera évaluée.
 
 ## Fonctionnalité :
@@ -33,3 +33,15 @@ Cette carte est conçue pour gérer des actions sur les documents en fonction de
 ## Conclusion :
 
 La carte de workflow « Document Type Condition » joue un rôle crucial dans la gestion des opérations basées sur les documents, avec précision et flexibilité. En utilisant une logique conditionnelle simple, elle aide à garantir que les documents sont traités de manière appropriée, améliorant l'efficacité et la conformité. Documenter clairement cette carte aidera les utilisateurs à comprendre comment la mettre en œuvre et l'exploiter efficacement, en faisant un élément précieux de la documentation de votre système ERP.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemple pratique
+
+**Quand utiliser :** Utilisez la même validation pour plusieurs types de documents.
+
+**Configuration :** Sélectionnez l'opérateur is-one-of et les types `Invoice` et `Credit Note`.
+
+**Résultat attendu et contre-exemple :** Un `Invoice` réussit ; un `Order` ne le fait pas.
+
+Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.

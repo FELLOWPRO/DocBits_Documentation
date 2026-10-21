@@ -1,37 +1,39 @@
-# Any / All Charges
+# Tous les frais
 
-<figure><img src="../../../../.gitbook/assets/workflow_cards_and_po_compare_any_all_charges.png" alt="La carte dans la bibliothèque de cartes, version 2 et version 3"><figcaption><p>La carte dans la bibliothèque de cartes. Version 2 en haut, version 3 en bas.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-420a0e403552-v2-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-420a0e403552-v3-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## **Objectif :**
 
 Cette carte de workflow compare les frais annexes d'un document aux frais annexes du bon de commande correspondant, dans une tolérance définie. Elle répond à une seule question : le document et le bon de commande sont-ils d'accord sur les frais annexes ? Chaque frais que le rapprochement de bon de commande a apparié est comparé, si bien qu'aucun nom de champ n'a à être indiqué sur la carte.
 
-Cette carte se distingue de **Compare Total Charges**, qui compare un seul champ de document nommé à un frais unique désigné par un Charge ID. Utilisez cette carte lorsque tous les frais appariés du document doivent être vérifiés en une fois.
+Cette carte se distingue de **Comparer les frais totaux**, qui compare un seul champ de document nommé à un frais unique désigné par un Charge ID. Utilisez cette carte lorsque tous les frais appariés du document doivent être vérifiés en une fois.
 
 Le rapprochement de bon de commande doit s'exécuter avant cette carte. Si le document n'a pas de bon de commande correspondant, la carte arrête le workflow et signale des données manquantes.
 
 ## **Composants de la carte :**
 
 1. **N'importe quel/Tous :**
-   * **Description** : Comment les comparaisons de frais individuelles sont regroupées en l'unique résultat de la carte.
-   * **Options** :
+   * **Descriptif** : Comment les comparaisons de frais individuelles sont regroupées en l'unique résultat de la carte.
+   * **Possibilités** :
      * **N'importe quel** : au moins un frais doit satisfaire la comparaison.
      * **Tous** : chaque frais doit satisfaire la comparaison.
 2. **Opérateur :**
-   * **Description** : Comment le montant du frais du document est comparé au montant du bon de commande pour le même frais.
-   * **Options** :
+   * **Descriptif** : Comment le montant du frais du document est comparé au montant du bon de commande pour le même frais.
+   * **Possibilités** :
      * **dans** : les deux montants doivent concorder, la tolérance étant admise.
      * **A l'extérieur** : les deux montants doivent différer de plus que la tolérance.
 3. **Tolérance Montant :**
-   * **Description** : L'écart admis entre le frais du document et le frais du bon de commande.
+   * **Descriptif** : L'écart admis entre le frais du document et le frais du bon de commande.
 4. **Type de tolérance :**
-   * **Description** : Comment le montant de tolérance est interprété.
-   * **Options** :
+   * **Descriptif** : Comment le montant de tolérance est interprété.
+   * **Possibilités** :
      * **Pour cent** : un pourcentage du frais du bon de commande.
      * **Valeur** : un montant fixe.
 5. **Comportement lié aux données manquantes (version 3 uniquement) :**
-   * **Description** : Ce qu'il faut faire lorsqu'un frais n'existe que d'un seul côté, sur le document ou sur le bon de commande, de sorte qu'il n'y a aucun homologue auquel le comparer. L'option se trouve à la fin de la phrase de la version 3.
-   * **Options** :
+   * **Descriptif** : Ce qu'il faut faire lorsqu'un frais n'existe que d'un seul côté, sur le document ou sur le bon de commande, de sorte qu'il n'y a aucun homologue auquel le comparer. L'option se trouve à la fin de la phrase de la version 3.
+   * **Possibilités** :
      * **le considérer comme une non-correspondance** : le workflow s'arrête. C'est la valeur par défaut.
      * **l'ignorer et le considérer comme correspondant** : le workflow continue comme si le frais avait concordé.
 

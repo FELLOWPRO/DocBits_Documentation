@@ -1,23 +1,21 @@
 # Modèle de gestion des tâches
 
-**Type de modèle :** Gestion de workflow
-**Complexité :** Faible-Moyenne
-**Mise en place estimée :** 30-45 minutes
-**Cas d'usage courants :** Workflows d'approbation, tâches de révision, gestion des exceptions, escalade
+**Type de modèle :** Gestion de workflow **Complexité :** Faible-Moyenne **Mise en place estimée :** 30-45 minutes **Cas d'usage courants :** Workflows d'approbation, tâches de révision, gestion des exceptions, escalade
 
----
+***
 
-Vous construisez ce modèle dans le **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Cliquez sur **Add Card** pour ouvrir la bibliothèque de cartes et sélectionnez les cartes utilisées par ce modèle — `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` et `CONDITION_TASK_STATUS` (la catégorie **Assignee** contient les cartes de tâche et d'affectation) :
+Vous construisez ce modèle dans le **Générateur de flux de travail** (Workflow Dashboard → Workflow List → Add Workflow). Cliquez sur **Ajouter une carte** pour ouvrir la bibliothèque de cartes et sélectionnez les cartes utilisées par ce modèle — `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` et `CONDITION_TASK_STATUS` (la catégorie **Responsable** contient les cartes de tâche et d'affectation) :
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Bibliothèque Add Card dans le Workflow Builder, regroupée par catégorie"><figcaption><p>La bibliothèque <strong>Add Card</strong> — les cartes de tâche, d'affectation et de notification se trouvent sous les catégories <strong>Assignee</strong> et <strong>Status</strong>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
----
+***
 
 ## Vue d'ensemble du modèle
 
 Ce modèle montre comment créer, affecter, suivre et gérer des tâches dans les workflows DocBits. Les tâches sont des éléments de travail concrets affectés à des utilisateurs ou des groupes qui doivent être terminés avant que le workflow du document puisse se poursuivre.
 
 **Ce que fait ce modèle :**
+
 1. Crée des tâches en fonction des conditions du workflow
 2. Affecte les tâches aux utilisateurs ou groupes appropriés
 3. Définit les propriétés des tâches (priorité, échéance, description)
@@ -25,54 +23,59 @@ Ce modèle montre comment créer, affecter, suivre et gérer des tâches dans le
 5. Suit le statut et l'achèvement des tâches
 6. Route les documents en fonction des résultats des tâches
 
----
+***
 
 ## Quand utiliser ce modèle
 
 Utilisez ce modèle lorsque vous devez :
-- ✅ Créer des workflows d'approbation
-- ✅ Affecter des tâches de révision aux utilisateurs
-- ✅ Traiter les exceptions nécessitant une intervention humaine
-- ✅ Escalader les problèmes vers les responsables
-- ✅ Créer des chaînes d'approbation à plusieurs niveaux
-- ✅ Suivre qui doit faire quoi
-- ✅ Fixer des échéances pour les actions
+
+* ✅ Créer des workflows d'approbation
+* ✅ Affecter des tâches de révision aux utilisateurs
+* ✅ Traiter les exceptions nécessitant une intervention humaine
+* ✅ Escalader les problèmes vers les responsables
+* ✅ Créer des chaînes d'approbation à plusieurs niveaux
+* ✅ Suivre qui doit faire quoi
+* ✅ Fixer des échéances pour les actions
 
 **N'utilisez pas ce modèle lorsque :**
-- ❌ aucune action humaine n'est requise (utilisez plutôt le traitement automatique)
-- ❌ il s'agit seulement de notifier (utilisez plutôt l'e-mail)
-- ❌ un simple routage de document suffit (utilisez plutôt l'affectation)
 
----
+* ❌ aucune action humaine n'est requise (utilisez plutôt le traitement automatique)
+* ❌ il s'agit seulement de notifier (utilisez plutôt l'e-mail)
+* ❌ un simple routage de document suffit (utilisez plutôt l'affectation)
+
+***
 
 ## Exemple complet de workflow
 
 ### Scénario : Approbation de factures avec routage basé sur le montant
 
 **Exigence métier :**
-- Factures < 1 000 € : Approbation automatique (aucune tâche nécessaire)
-- Factures 1 000-10 000 € : Tâche d'approbation au responsable
-- Factures > 10 000 € : Double approbation (responsable + directeur)
-- Tous les approbateurs reçoivent une notification par e-mail
-- Les tâches ont une échéance de 3 jours
+
+* Factures < 1 000 € : Approbation automatique (aucune tâche nécessaire)
+* Factures 1 000-10 000 € : Tâche d'approbation au responsable
+* Factures > 10 000 € : Double approbation (responsable + directeur)
+* Tous les approbateurs reçoivent une notification par e-mail
+* Les tâches ont une échéance de 3 jours
 
 **Cartes de workflow utilisées :**
-1. CONDITION_DOC_FIELD_AMOUNT – Vérifier le montant de la facture
-2. tasks_create – Créer une tâche d'approbation
-3. ACTION_ASSIGN_TO_USER – Affecter la tâche à l'approbateur
-4. ACTION_SEND_EMAIL_TO_GROUPS – Envoyer une notification
-5. CONDITION_TASK_STATUS – Vérifier si la tâche est terminée
-6. ACTION_APPROVE_DOCUMENT – Approuver après l'achèvement de la tâche
 
----
+1. CONDITION\_DOC\_FIELD\_AMOUNT – Vérifier le montant de la facture
+2. tasks\_create – Créer une tâche d'approbation
+3. ACTION\_ASSIGN\_TO\_USER – Affecter la tâche à l'approbateur
+4. ACTION\_SEND\_EMAIL\_TO\_GROUPS – Envoyer une notification
+5. CONDITION\_TASK\_STATUS – Vérifier si la tâche est terminée
+6. ACTION\_APPROVE\_DOCUMENT – Approuver après l'achèvement de la tâche
+
+***
 
 ## Mise en œuvre étape par étape
 
 ### Étape 1 : Vérifier le seuil de montant
 
-**Carte :** CONDITION_DOC_FIELD_AMOUNT ou une condition de champ similaire
+**Carte :** CONDITION\_DOC\_FIELD\_AMOUNT ou une condition de champ similaire
 
 **Configuration pour le chemin 1 (< 1 000 €) :**
+
 ```
 Field: Total_Amount
 Operator: IS LESS THAN
@@ -81,6 +84,7 @@ Currency: EUR
 ```
 
 **Configuration pour le chemin 2 (1 000-10 000 €) :**
+
 ```
 Field: Total_Amount
 Operator: IS BETWEEN
@@ -90,6 +94,7 @@ Currency: EUR
 ```
 
 **Configuration pour le chemin 3 (> 10 000 €) :**
+
 ```
 Field: Total_Amount
 Operator: IS GREATER THAN
@@ -99,27 +104,29 @@ Currency: EUR
 
 **Référence du guide :** [Guide des cartes de condition](../and/condition-cards-complete-guide.md)
 
----
+***
 
 ### Étape 2A : Approuver automatiquement les petites factures (< 1 000 €)
 
 **Aucune tâche nécessaire pour les petits montants**
 
 **Cartes :**
-- ACTION_SET_FIELD_TO_TEXT
-  - Définir « Approval_Type » = « AUTO »
-  - Définir « Approval_Reason » = « Amount below threshold »
-- ACTION_APPROVE_DOCUMENT
+
+* ACTION\_SET\_FIELD\_TO\_TEXT
+  * Définir « Approval\_Type » = « AUTO »
+  * Définir « Approval\_Reason » = « Amount below threshold »
+* ACTION\_APPROVE\_DOCUMENT
 
 **Résultat :** Document approuvé automatiquement, aucune tâche créée
 
----
+***
 
 ### Étape 2B : Créer une tâche d'approbation pour le responsable (1 000-10 000 €)
 
-**Carte :** tasks_create (v4 recommandée)
+**Carte :** tasks\_create (v4 recommandée)
 
 **Configuration :**
+
 ```json
 {
   "task_type": "Approval",
@@ -134,22 +141,24 @@ Currency: EUR
 ```
 
 **Mappage des champs :**
-- `{{DOCUMENT_NUMBER}}` – ID de document automatique
-- `{{Total_Amount}}` – Champ : Total_Amount
-- `{{Supplier_Name}}` – Champ : Supplier_Name
-- `{{Invoice_Number}}` – Champ : Invoice_Number
-- `{{Invoice_Date}}` – Champ : Invoice_Date
-- `{{Approving_Manager}}` – Champ ou utilisateur fixe
+
+* `{{DOCUMENT_NUMBER}}` – ID de document automatique
+* `{{Total_Amount}}` – Champion : Total\_Amount
+* `{{Supplier_Name}}` – Champ : Supplier\_Name
+* `{{Invoice_Number}}` – Champ : Invoice\_Number
+* `{{Invoice_Date}}` – Champ : Invoice\_Date
+* `{{Approving_Manager}}` – Champ ou utilisateur fixe
 
 **Référence du guide :** [Guide d'affectation des tâches](../then/task/task-assignment-guide.md)
 
----
+***
 
 ### Étape 2C : Créer des tâches de double approbation (> 10 000 €)
 
 **Deux tâches successives pour les factures de montant élevé**
 
 **Tâche 1 : Approbation par le responsable**
+
 ```json
 {
   "task_type": "First Approval",
@@ -164,6 +173,7 @@ Currency: EUR
 ```
 
 **Tâche 2 : Approbation par le directeur (créée après l'achèvement de la tâche 1)**
+
 ```json
 {
   "task_type": "Second Approval",
@@ -177,13 +187,14 @@ Currency: EUR
 }
 ```
 
----
+***
 
 ### Étape 3 : Affecter la tâche à un utilisateur/un groupe
 
-**Carte :** ACTION_ASSIGN_TO_USER ou ACTION_ASSIGN_TO_GROUP
+**Carte :** ACTION\_ASSIGN\_TO\_USER ou ACTION\_ASSIGN\_TO\_GROUP
 
 **Option 1 : Affecter à un utilisateur spécifique**
+
 ```
 User: John.Smith@company.com
 OR
@@ -191,6 +202,7 @@ User Field: {{DOCUMENT_FIELD:Approving_Manager}}
 ```
 
 **Option 2 : Affecter à un groupe**
+
 ```
 Group: Finance Managers
 Assignment Mode: First Available
@@ -201,6 +213,7 @@ Assignment Mode: All (everyone in group gets task)
 ```
 
 **Option 3 : Affectation séquentielle**
+
 ```
 Card: ACTION_ASSIGN_SEQUENTIALLY_TO_USER
 
@@ -211,13 +224,14 @@ User 3: CFO (only if User 2 approves)
 
 **Référence du guide :** [Guide d'affectation](../then/assignee/assignment-user-guide.md)
 
----
+***
 
 ### Étape 4 : Envoyer une notification par e-mail
 
-**Carte :** ACTION_SEND_EMAIL_TO_GROUPS
+**Carte :** ACTION\_SEND\_EMAIL\_TO\_GROUPS
 
 **Configuration :**
+
 ```json
 {
   "recipients": [
@@ -230,38 +244,42 @@ User 3: CFO (only if User 2 approves)
 ```
 
 **Variables d'e-mail :**
-- `{{TASK_ASSIGNEE_EMAIL}}` – E-mail du destinataire de la tâche
-- `{{TASK_ASSIGNEE_NAME}}` – Nom du destinataire de la tâche
-- `{{DOCUMENT_NUMBER}}` – ID du document
-- `{{TASK_DEADLINE}}` – Date d'échéance de la tâche
-- `{{TASK_PRIORITY}}` – Niveau de priorité de la tâche
-- `{{DOCUMENT_LINK}}` – Lien direct vers le document
+
+* `{{TASK_ASSIGNEE_EMAIL}}` – E-mail du destinataire de la tâche
+* `{{TASK_ASSIGNEE_NAME}}` – Nom du destinataire de la tâche
+* `{{DOCUMENT_NUMBER}}` – ID du document
+* `{{TASK_DEADLINE}}` – Date d'échéance de la tâche
+* `{{TASK_PRIORITY}}` – Niveau de priorité de la tâche
+* `{{DOCUMENT_LINK}}` – Lien direct vers le document
 
 **Référence du guide :** [Guide d'envoi d'e-mails à des groupes](../then/action/send-email-groups-guide.md)
 
----
+***
 
 ### Étape 5 : Suivre le statut de la tâche
 
-**Carte :** CONDITION_TASK_STATUS ou un vérificateur de statut de tâche similaire
+**Carte :** CONDITION\_TASK\_STATUS ou un vérificateur de statut de tâche similaire
 
 **Configuration :**
+
 ```
 Task ID: {{CREATED_TASK_ID}}
 Status Check: IS COMPLETED
 ```
 
 **Options de statut :**
-- CREATED – Tâche tout juste créée
-- ASSIGNED – Tâche affectée à un utilisateur
-- IN_PROGRESS – L'utilisateur a commencé à travailler sur la tâche
-- COMPLETED – Tâche terminée
-- APPROVED – Tâche approuvée
-- REJECTED – Tâche rejetée
-- CANCELLED – Tâche annulée
-- OVERDUE – Tâche en retard
+
+* CREATED – Tâche tout juste créée
+* ASSIGNED – Tâche affectée à un utilisateur
+* IN\_PROGRESS – L'utilisateur a commencé à travailler sur la tâche
+* COMPLETED – Tâche terminée
+* APPROVED – Tâche approuvée
+* REJECTED – Tâche rejetée
+* CANCELLED – Tâche annulée
+* OVERDUE – Tâche en retard
 
 **Logique :**
+
 ```
 IF TASK_STATUS = COMPLETED AND TASK_RESULT = APPROVED:
   → Continue to next step (or next approval level)
@@ -279,13 +297,14 @@ IF TASK_STATUS = OVERDUE:
   → Create escalation task
 ```
 
----
+***
 
 ### Étape 6 : Terminer le workflow en fonction du résultat de la tâche
 
 **Après l'achèvement de la tâche :**
 
 **Scénario A : Tâche approuvée**
+
 ```
 1. Set field "Approval_Status" = "APPROVED"
 2. Set field "Approved_By" = {{TASK_COMPLETED_BY}}
@@ -295,6 +314,7 @@ IF TASK_STATUS = OVERDUE:
 ```
 
 **Scénario B : Tâche rejetée**
+
 ```
 1. Set field "Approval_Status" = "REJECTED"
 2. Set field "Rejected_By" = {{TASK_COMPLETED_BY}}
@@ -305,6 +325,7 @@ IF TASK_STATUS = OVERDUE:
 ```
 
 **Scénario C : Tâche en retard**
+
 ```
 1. Set field "Task_Status" = "OVERDUE"
 2. Create escalation task for manager
@@ -313,9 +334,9 @@ IF TASK_STATUS = OVERDUE:
 5. Log overdue event
 ```
 
----
+***
 
-## Diagramme de workflow complet
+## Schéma de workflow complet
 
 ```
 INVOICE ARRIVES
@@ -418,7 +439,7 @@ INVOICE ARRIVES
 └─ [Amount check complete]
 ```
 
----
+***
 
 ## Gabarits de configuration
 
@@ -436,7 +457,7 @@ INVOICE ARRIVES
 }
 ```
 
----
+***
 
 ### Gabarit 2 : Tâche de révision avec détails
 
@@ -452,7 +473,7 @@ INVOICE ARRIVES
 }
 ```
 
----
+***
 
 ### Gabarit 3 : Tâche d'escalade
 
@@ -469,7 +490,7 @@ INVOICE ARRIVES
 }
 ```
 
----
+***
 
 ## Modèles avancés
 
@@ -488,6 +509,7 @@ Level 1: Accounts Clerk (verify data)
 ```
 
 **Mise en œuvre :**
+
 ```
 1. Create Task 1 for Clerk
 2. Wait for Task 1 completion
@@ -501,7 +523,7 @@ Level 1: Accounts Clerk (verify data)
      Approve Document
 ```
 
----
+***
 
 ### Modèle 2 : Approbation parallèle par plusieurs personnes
 
@@ -517,6 +539,7 @@ Document approved only when ALL approve
 ```
 
 **Mise en œuvre :**
+
 ```
 1. Create 3 tasks simultaneously
 2. Track all 3 task statuses
@@ -527,7 +550,7 @@ Document approved only when ALL approve
      Reject Document
 ```
 
----
+***
 
 ### Modèle 3 : Création conditionnelle de tâches
 
@@ -544,7 +567,7 @@ ELSE:
   → Create "Standard Approval" task
 ```
 
----
+***
 
 ### Modèle 4 : Escalade basée sur l'échéance
 
@@ -562,7 +585,7 @@ Day 5: IF still not completed:
          → High priority notification
 ```
 
----
+***
 
 ## Gestion des erreurs
 
@@ -571,6 +594,7 @@ Day 5: IF still not completed:
 **Problème :** L'utilisateur n'existe pas ou est inactif
 
 **Solution :**
+
 ```
 1. Check user status with CONDITION_USER_IS_ISNOT
 2. IF User = INACTIVE:
@@ -580,13 +604,14 @@ Day 5: IF still not completed:
 3. Send notification to admin
 ```
 
----
+***
 
 ### Scénario 2 : Échec de la création de tâche
 
 **Problème :** Erreur système lors de la création de la tâche
 
 **Solution :**
+
 ```
 1. Check task creation status
 2. IF Failed:
@@ -596,13 +621,14 @@ Day 5: IF still not completed:
      → Log error details
 ```
 
----
+***
 
 ### Scénario 3 : Aucune réaction à la tâche
 
 **Problème :** L'utilisateur ne termine pas la tâche dans les délais
 
 **Solution :**
+
 ```
 1. Monitor task deadline
 2. Day before deadline:
@@ -615,25 +641,25 @@ Day 5: IF still not completed:
      → Log overdue event
 ```
 
----
+***
 
 ## Liste de vérification de test
 
-- [ ] Tâche créée avec succès
-- [ ] Tâche affectée au bon utilisateur/au bon groupe
-- [ ] Notification par e-mail envoyée
-- [ ] La tâche apparaît dans la liste des tâches de l'utilisateur
-- [ ] Propriétés de la tâche correctes (titre, description, priorité, échéance)
-- [ ] L'utilisateur peut terminer la tâche
-- [ ] Le workflow se poursuit après l'achèvement de la tâche
-- [ ] Le workflow d'approbation fonctionne correctement
-- [ ] Le workflow de rejet fonctionne correctement
-- [ ] L'escalade se déclenche au bon moment
-- [ ] La gestion des retards fonctionne
-- [ ] Toutes les notifications par e-mail envoyées
-- [ ] Les mises à jour de champs fonctionnent correctement
+* [ ] Tâche créée avec succès
+* [ ] Tâche affectée au bon utilisateur/au bon groupe
+* [ ] Notification par e-mail envoyée
+* [ ] La tâche apparaît dans la liste des tâches de l'utilisateur
+* [ ] Propriétés de la tâche correctes (titre, description, priorité, échéance)
+* [ ] L'utilisateur peut terminer la tâche
+* [ ] Le workflow se poursuit après l'achèvement de la tâche
+* [ ] Le workflow d'approbation fonctionne correctement
+* [ ] Le workflow de rejet fonctionne correctement
+* [ ] L'escalade se déclenche au bon moment
+* [ ] La gestion des retards fonctionne
+* [ ] Toutes les notifications par e-mail envoyées
+* [ ] Les mises à jour de champs fonctionnent correctement
 
----
+***
 
 ## Exemples concrets
 
@@ -653,7 +679,7 @@ Day 5: IF still not completed:
    IF Rejected: Return to supplier
 ```
 
----
+***
 
 ### Exemple 2 : Approbation d'une facture fournisseur
 
@@ -671,7 +697,7 @@ Day 5: IF still not completed:
      Continue normal workflow
 ```
 
----
+***
 
 ### Exemple 3 : Traitement de fin de mois
 
@@ -689,64 +715,65 @@ Day 5: IF still not completed:
 4. Track completion
 ```
 
----
+***
 
 ## Conseils de performance
 
 ✅ **Bonnes pratiques :**
-- Fixer des échéances réalistes
-- Utiliser des titres et descriptions de tâches clairs
-- Inclure toutes les informations nécessaires dans la tâche
-- Notifier en temps utile
-- Surveiller les taux d'achèvement des tâches
-- Escalader automatiquement les tâches en retard
-- Journaliser toutes les activités liées aux tâches
-- Réviser les schémas de tâches mensuellement
+
+* Fixer des échéances réalistes
+* Utiliser des titres et descriptions de tâches clairs
+* Inclure toutes les informations nécessaires dans la tâche
+* Notifier en temps utile
+* Surveiller les taux d'achèvement des tâches
+* Escalader automatiquement les tâches en retard
+* Journaliser toutes les activités liées aux tâches
+* Réviser les schémas de tâches mensuellement
 
 ❌ **À éviter :**
-- Créer des tâches pour tout
-- Descriptions de tâches vagues
-- Échéances irréalistes
-- Trop d'e-mails de notification
-- Aucun chemin d'escalade
-- Ignorer les tâches en retard
-- Ne pas suivre les indicateurs de tâches
 
----
+* Créer des tâches pour tout
+* Descriptions de tâches vagues
+* Échéances irréalistes
+* Trop d'e-mails de notification
+* Aucun chemin d'escalade
+* Ignorer les tâches en retard
+* Ne pas suivre les indicateurs de tâches
+
+***
 
 ## Modèles connexes
 
 ### Modèles qui fonctionnent bien ensemble :
 
-- **[Modèle d'intégration d'API](api-integration-pattern.md)** – Créer des tâches pour les erreurs d'API
-- **[Modèle de rapprochement de commandes (PO Matching)](po-matching-pattern.md)** – Créer des tâches en cas d'écarts de commande
-- **[Modèle de logique de décision](decision-logic-pattern.md)** – Router vers le type de tâche approprié
-- **[Modèle de transformation des données](data-transformation-pattern.md)** – Transformer les données avant la création de la tâche
+* [**Modèle d'intégration d'API**](api-integration-pattern.md) – Créer des tâches pour les erreurs d'API
+* [**Modèle de rapprochement de commandes (PO Matching)**](po-matching-pattern.md) – Créer des tâches en cas d'écarts de commande
+* [**Modèle de logique de décision**](decision-logic-pattern.md) – Router vers le type de tâche approprié
+* [**Modèle de transformation des données**](data-transformation-pattern.md) – Transformer les données avant la création de la tâche
 
----
+***
 
 ## Guides connexes
 
 ### Prérequis
-- [Guide d'affectation des tâches](../then/task/task-assignment-guide.md) – Documentation de la carte de tâche
-- [Guide d'affectation](../then/assignee/assignment-user-guide.md) – Affectation aux utilisateurs
-- [Guide d'envoi d'e-mails à des groupes](../then/action/send-email-groups-guide.md) – Notifications par e-mail
+
+* [Guide d'affectation des tâches](../then/task/task-assignment-guide.md) – Documentation de la carte de tâche
+* [Guide d'affectation](../then/assignee/assignment-user-guide.md) – Affectation aux utilisateurs
+* [Guide d'envoi d'e-mails à des groupes](../then/action/send-email-groups-guide.md) – Notifications par e-mail
 
 ### Cartes connexes
-- **tasks_create** – [Guide d'affectation des tâches](../then/task/task-assignment-guide.md)
-- **ACTION_ASSIGN_TO_USER** – [Guide d'affectation](../then/assignee/assignment-user-guide.md)
-- **ACTION_SEND_EMAIL_TO_GROUPS** – [Guide e-mail](../then/action/send-email-groups-guide.md)
-- **CONDITION_TASK_STATUS** – [Guide des cartes de condition](../and/condition-cards-complete-guide.md)
+
+* **tasks\_create** – [Guide d'affectation des tâches](../then/task/task-assignment-guide.md)
+* **ACTION\_ASSIGN\_TO\_USER** – [Guide d'affectation](../then/assignee/assignment-user-guide.md)
+* **ACTION\_SEND\_EMAIL\_TO\_GROUPS** – [Guide e-mail](../then/action/send-email-groups-guide.md)
+* **CONDITION\_TASK\_STATUS** – [Guide des cartes de condition](../and/condition-cards-complete-guide.md)
 
 ### Prochaines étapes
-- Ajouter des notifications par e-mail : [Guide e-mail](../then/action/send-email-groups-guide.md)
-- Mettre en place un routage complexe : [Modèle de logique de décision](decision-logic-pattern.md)
-- Résoudre les erreurs de tâches : [Gestion des erreurs](#gestion-des-erreurs) ci-dessus
 
----
+* Ajouter des notifications par e-mail : [Guide e-mail](../then/action/send-email-groups-guide.md)
+* Mettre en place un routage complexe : [Modèle de logique de décision](decision-logic-pattern.md)
+* Résoudre les erreurs de tâches : [Gestion des erreurs](task-management-pattern.md#gestion-des-erreurs) ci-dessus
 
-**Version du modèle :** 1.0
-**Dernière mise à jour :** 23 octobre 2025
-**Difficulté :** Faible-Moyenne
-**Temps estimé :** 30-45 minutes
-**Taux de réussite :** Très élevé
+***
+
+**Version du modèle :** 1.0 **Dernière mise à jour :** 23 octobre 2025 **Difficulté :** Faible-Moyenne **Temps estimé :** 30-45 minutes **Taux de réussite :** Très élevé

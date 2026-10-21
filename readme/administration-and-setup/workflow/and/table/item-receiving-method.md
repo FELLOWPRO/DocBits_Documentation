@@ -1,6 +1,6 @@
-# Item Receiving Method
+# Méthode de réception des articles
 
-<figure><img src="../../../../.gitbook/assets/image (47).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-ba8550d6feb0-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -8,13 +8,13 @@ Cette carte DocBits vérifie si les articles d'un ensemble de données disposent
 
 ## **Fonctionnalité :**
 
-* **Validation de la méthode de réception :** cette carte vérifie la méthode de réception des articles par rapport à une condition spécifiée. Les utilisateurs peuvent choisir entre **un quelconque** article ou **tous** les articles de l'ensemble de données et définir la condition comme **equals** ou **not equals**.
+* **Validation de la méthode de réception :** cette carte vérifie la méthode de réception des articles par rapport à une condition spécifiée. Les utilisateurs peuvent choisir entre **un quelconque** article ou **tous** les articles de l'ensemble de données et définir la condition comme **equals** ou **pas égal**.
 * **Sélection des articles :** les utilisateurs peuvent spécifier :
   * **Any Item :** la carte se déclenche si au moins un article satisfait la condition de méthode de réception spécifiée.
-  * **All Items :** la carte ne se déclenche que si tous les articles satisfont la condition de méthode de réception spécifiée.
-* **Operators :** les opérateurs suivants sont disponibles pour définir la condition :
-  * **Equals (=) :** vérifie si la méthode de réception correspond à la valeur spécifiée.
-  * **Not Equals (≠) :** s'assure que la méthode de réception ne correspond pas à la valeur spécifiée.
+  * **Tous les articles :** la carte ne se déclenche que si tous les articles satisfont la condition de méthode de réception spécifiée.
+* **Opérateurs :** les opérateurs suivants sont disponibles pour définir la condition :
+  * **Est égal à (=) :** vérifie si la méthode de réception correspond à la valeur spécifiée.
+  * **Différent (≠) :** s'assure que la méthode de réception ne correspond pas à la valeur spécifiée.
 
 ## **Utilisation :**
 

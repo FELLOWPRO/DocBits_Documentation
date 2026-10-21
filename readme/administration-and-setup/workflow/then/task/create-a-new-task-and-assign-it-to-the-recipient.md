@@ -1,43 +1,43 @@
-# Create a New Task and assign it to the Recipient
+# Créez une nouvelle tâche et attribuez-la au destinataire
 
-<figure><img src="../../../../.gitbook/assets/image (288).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2e92980da837-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif :**
 
-La carte de workflow **« Create Task with Fallback »** assure une délégation efficace des tâches en les assignant à des rôles spécifiques — Disponent ou Purchaser — tout en intégrant un mécanisme de repli pour éviter les échecs d'attribution de tâches. Cette carte améliore la fiabilité et l'adaptabilité du workflow dans des scénarios dynamiques.
+La carte de workflow **« Créer une tâche avec repli »** assure une délégation efficace des tâches en les assignant à des rôles spécifiques — Disponent ou Purchaser — tout en intégrant un mécanisme de repli pour éviter les échecs d'attribution de tâches. Cette carte améliore la fiabilité et l'adaptabilité du workflow dans des scénarios dynamiques.
 
 ## **Composants de la carte :**
 
-1. **Title**
-   * **Description** : spécifie le titre de la tâche créée.
+1. **Titre**
+   * **Descriptif** : spécifie le titre de la tâche créée.
    * **Détail** : fournit un identifiant concis à la tâche.
-2. **Description**
-   * **Description** : décrit l'objet ou le contexte de la tâche.
+2. **Descriptif**
+   * **Descriptif** : décrit l'objet ou le contexte de la tâche.
    * **Détail** : clarifie les détails de la tâche.
-3. **Priority**
-   * **Description** : définit le niveau d'urgence de la tâche.
-   * **Options** :
+3. **Priorité**
+   * **Descriptif** : définit le niveau d'urgence de la tâche.
+   * **Possibilités** :
      * **High** : nécessite une attention immédiate.
-     * **Medium** : important mais non urgent.
+     * **Moyen** : important mais non urgent.
      * **Low** : peut être traité plus tard.
-4. **Assigned Role**
-   * **Description** : spécifie le rôle principal auquel la tâche est assignée.
-   * **Options** :
+4. **Rôle attribué**
+   * **Descriptif** : spécifie le rôle principal auquel la tâche est assignée.
+   * **Possibilités** :
      * **Disponent** : assigne la tâche au Disponent.
-     * **Purchaser** : assigne la tâche au Purchaser.
-5. **Email Notification**
-   * **Description** : permet de notifier l'utilisateur assigné par e-mail.
-   * **Options** :
+     * **Acheteur** : assigne la tâche au Purchaser.
+5. **Notification par e-mail**
+   * **Descriptif** : permet de notifier l'utilisateur assigné par e-mail.
+   * **Possibilités** :
      * **True** : envoie une notification par e-mail à l'utilisateur.
      * **False** : aucune notification par e-mail n'est envoyée.
-6. **Fallback User**
-   * **Description** : fournit une option de repli pour l'attribution de la tâche si le rôle destinataire n'est pas trouvé.
+6. **Utilisateur de secours**
+   * **Descriptif** : fournit une option de repli pour l'attribution de la tâche si le rôle destinataire n'est pas trouvé.
    * **Détail** : permet de sélectionner un utilisateur dans une liste déroulante pour garantir la délégation de la tâche.
 
 ## **Fonctionnalité :**
 
 * **Évaluation de la condition** :\
-  La carte ne s'exécute que si les conditions des sections **« Where »** et **« And »** sont satisfaites.
+  La carte ne s'exécute que si les conditions des sections **« Quand »** et **« Et »** sont satisfaites.
 * **Attribution de la tâche** :
   * La tâche est assignée au rôle sélectionné (Disponent ou Purchaser).
   * Si le rôle spécifié n'est pas trouvé, la tâche est assignée à un utilisateur de la liste déroulante de repli.
@@ -53,4 +53,4 @@ La carte de workflow **« Create Task with Fallback »** assure une délégation
 
 ## **Conclusion :**
 
-La carte de workflow **« Create Task with Fallback »** assure une délégation des tâches fluide en intégrant un mécanisme de repli. En assignant les tâches en fonction des rôles et en proposant une option d'utilisateur alternatif, elle renforce la fiabilité et la flexibilité des processus de gestion des tâches.
+La carte de workflow **« Créer une tâche avec repli »** assure une délégation des tâches fluide en intégrant un mécanisme de repli. En assignant les tâches en fonction des rôles et en proposant une option d'utilisateur alternatif, elle renforce la fiabilité et la flexibilité des processus de gestion des tâches.

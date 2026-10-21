@@ -1,23 +1,23 @@
-# Assign document to
+# Attribuer un document à
 
-<figure><img src="../../../../.gitbook/assets/image (306).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-0e17d9fb5a83-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## Objectif :
 
-La carte de workflow **« Assign document to \[User/group] based on decision table »** assigne dynamiquement des documents à des utilisateurs ou à des groupes en fonction du résultat d'une **table de décision**. Cette fonctionnalité garantit que l'attribution des documents est gérée de manière efficace et cohérente sur la base de conditions prédéfinies.
+La carte de workflow **« Attribuer un document à \[Utilisateur/groupe] en fonction de la table de décision »** assigne dynamiquement des documents à des utilisateurs ou à des groupes en fonction du résultat d'une **table de décision**. Cette fonctionnalité garantit que l'attribution des documents est gérée de manière efficace et cohérente sur la base de conditions prédéfinies.
 
 ## Composants de la carte :
 
-1. **User/Group**
-   * **Description :** spécifie l'**utilisateur** ou le **groupe** auquel le document sera assigné.
+1. **Utilisateur/Groupe**
+   * **Descriptif :** spécifie l'**utilisateur** ou le **groupe** auquel le document sera assigné.
    * **Détail :** sélectionné en fonction du résultat de la **table de décision**.
-2. **Decision Table**
-   * **Description :** une **table de décision** est utilisée pour déterminer l'**utilisateur** ou le **groupe** approprié pour l'attribution du document.
-   * **Détail :** utilise la table de décision définie dans la section **« and »**.
+2. **Table de décision**
+   * **Descriptif :** une **table de décision** est utilisée pour déterminer l'**utilisateur** ou le **groupe** approprié pour l'attribution du document.
+   * **Détail :** utilise la table de décision définie dans la section **« et »**.
 
 ## Fonctionnalité :
 
-* **Évaluation de la condition :** la carte n'exécute son action que si les sections **« Where »** et **« And »** sont toutes deux évaluées comme vraies.
+* **Évaluation de la condition :** la carte n'exécute son action que si les sections **« Quand »** et **« Et »** sont toutes deux évaluées comme vraies.
 * **Attribution dynamique du document :** le document est assigné à l'**utilisateur** ou au **groupe** déterminé par la **table de décision**.
 
 ## Mise en place et configuration :
@@ -27,4 +27,16 @@ La carte de workflow **« Assign document to \[User/group] based on decision tab
 
 ## Conclusion :
 
-La carte de workflow **« Assign document to \[User/group] based on decision table »** offre des capacités d'attribution dynamique des documents fondées sur une logique de décision. Cela garantit un traitement précis et efficace en dirigeant automatiquement les documents vers l'**utilisateur** ou le **groupe** approprié, renforçant l'automatisation du workflow.
+La carte de workflow **« Attribuer un document à \[Utilisateur/groupe] en fonction de la table de décision »** offre des capacités d'attribution dynamique des documents fondées sur une logique de décision. Cela garantit un traitement précis et efficace en dirigeant automatiquement les documents vers l'**utilisateur** ou le **groupe** approprié, renforçant l'automatisation du workflow.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemple pratique
+
+**Quand utiliser :** Choisissez un responsable de document dans une table de décision.
+
+**Configuration :** Sélectionnez une table de décision de démonstration dont la règle de correspondance renvoie le réviseur configuré, et choisissez le type de responsable proposé par cette version de carte.
+
+**Résultat attendu et contre-exemple :** L'utilisateur ou le groupe renvoyé devient le destinataire du document. Un résultat de table de décision vide doit être diagnostiqué séparément.
+
+Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.

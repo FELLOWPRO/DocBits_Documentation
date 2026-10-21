@@ -1,7 +1,5 @@
 # Action
 
+Les cartes de cette catégorie dans le sélecteur **Ajouter une carte** du Workflow Builder :
 
-Les cartes de cette catégorie dans le sélecteur **Add Card** du Workflow Builder :
-
-<figure><img src="../../../../.gitbook/assets/workflow_cards_then_action.png" alt="Workflow Builder card category"><figcaption><p>Les cartes de cette catégorie.</p></figcaption></figure>
-
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-585799ec1e01-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>

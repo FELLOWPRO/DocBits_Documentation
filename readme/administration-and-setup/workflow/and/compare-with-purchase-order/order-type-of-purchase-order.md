@@ -1,6 +1,6 @@
-# Order Type of Purchase Order
+# Type de bon de commande
 
-<figure><img src="../../../../.gitbook/assets/image (277).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8a1cb3a5f80f-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -8,18 +8,18 @@ Cette carte de workflow est conçue pour comparer le type de commande d'un bon d
 
 ## **Composants de la carte :**
 
-1. **Any/All :**
-   * **Description** : définit si la condition s'applique à un ou à tous les bons de commande évalués dans le workflow.
-   * **Options** :
+1. **Tous/Tous :**
+   * **Descriptif** : définit si la condition s'applique à un ou à tous les bons de commande évalués dans le workflow.
+   * **Possibilités** :
      * **Any** : la condition est satisfaite si l'un des bons de commande correspond à la condition spécifiée.
      * **All** : la condition n'est satisfaite que si tous les bons de commande satisfont la condition spécifiée.
-2. **Operator :**
-   * **Description** : définit la condition qui sera appliquée pour comparer le type de commande à une valeur spécifiée.
-   * **Options** :
-     * **Equals (=)** : vérifie si le type de commande correspond à la valeur spécifiée.
-     * **Not Equals (≠)** : s'assure que le type de commande diffère de la valeur spécifiée.
-3. **Order Type :**
-   * **Description** : spécifie la valeur à laquelle le type de commande du bon de commande sera comparé.
+2. **Opérateur :**
+   * **Descriptif** : définit la condition qui sera appliquée pour comparer le type de commande à une valeur spécifiée.
+   * **Possibilités** :
+     * **Égal à (=)** : vérifie si le type de commande correspond à la valeur spécifiée.
+     * **Pas égal à (≠)** : s'assure que le type de commande diffère de la valeur spécifiée.
+3. **Type de commande :**
+   * **Descriptif** : spécifie la valeur à laquelle le type de commande du bon de commande sera comparé.
    * **Détail** : la valeur doit correspondre au type de commande ou à la classification dans le système.
 
 ## **Fonctionnalité :**

@@ -1,6 +1,6 @@
-# Document Status Condition List
+# Liste des conditions d'état du document
 
-<figure><img src="../../../../.gitbook/assets/userlmn_e9d6da331deceed4f330358635d6b605 (1).png" alt="" width="521"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8dc08a110089-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 **Objectif**
 
@@ -8,13 +8,13 @@ Cette carte est conçue pour contrôler les actions du workflow en fonction du s
 
 **Composants de la carte**
 
-1. **Operator**
-   * **Description** : détermine comment le statut du document sera évalué par rapport à une condition spécifiée.
-   * **Options** :
+1. **Opérateur**
+   * **Descriptif** : détermine comment le statut du document sera évalué par rapport à une condition spécifiée.
+   * **Possibilités** :
      * **is** : déclenche les actions associées si le statut actuel du document correspond à l'un des statuts spécifiés.
-     * **is not** : déclenche les actions si le statut du document ne correspond à aucun des statuts spécifiés.
-2. **Status ( List )**
-   * **Description** : liste les statuts spécifiques auxquels le statut actuel du document sera comparé.
+     * **n'est pas** : déclenche les actions si le statut du document ne correspond à aucun des statuts spécifiés.
+2. **Statut (Liste)**
+   * **Descriptif** : liste les statuts spécifiques auxquels le statut actuel du document sera comparé.
    * **Exemples** : « Error », « Export Error », « Ready in Validation », « Ready in Review », « Pending Approval », « Pending Second Approval ». Ils représentent les différentes étapes ou conditions dans lesquelles un document peut se trouver au sein d'un processus de workflow.
 
 **Fonctionnalité**
@@ -22,7 +22,7 @@ Cette carte est conçue pour contrôler les actions du workflow en fonction du s
 * **Identification du statut** : identifie automatiquement le statut actuel d'un document à mesure qu'il progresse dans le workflow du système ERP.
 * **Évaluation de la condition** : applique l'opérateur choisi (is ou is not) au statut du document par rapport aux statuts listés :
   * Si **is**, elle vérifie si le statut du document correspond à un statut de la liste.
-  * Si **is not**, elle vérifie si le statut du document n'apparaît pas dans la liste.
+  * Si **n'est pas**, elle vérifie si le statut du document n'apparaît pas dans la liste.
 * **Exécution de l'action** : selon le résultat de l'évaluation de la condition :
   * **True** : exécute des actions ou des workflows prédéfinis si la condition est satisfaite.
   * **False** : ignore ou déclenche des workflows alternatifs si la condition n'est pas satisfaite.

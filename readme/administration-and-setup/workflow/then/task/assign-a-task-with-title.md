@@ -1,6 +1,6 @@
-# Assign a Task with Title
+# Attribuer une tâche avec un titre
 
-<figure><img src="../../../../.gitbook/assets/image (291).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-201d51354473-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -8,39 +8,39 @@ La carte de workflow « Assign Task / Notification from Decision Table » est co
 
 ## **Composants de la carte :**
 
-1. **Title**
-   * **Description** : spécifie le titre de la tâche ou de la notification créée.
+1. **Titre**
+   * **Descriptif** : spécifie le titre de la tâche ou de la notification créée.
    * **Détail** : le titre doit fournir un contexte et décrire l'objet de la tâche ou de la notification.
-2. **Description**
-   * **Description** : définit le contenu ou l'objet de la tâche ou de la notification.
+2. **Descriptif**
+   * **Descriptif** : définit le contenu ou l'objet de la tâche ou de la notification.
    * **Détail** : fournit des informations supplémentaires sur la tâche ou la notification, expliquant le contexte ou l'action requise.
-3. **Priority**
-   * **Description** : définit le niveau d'urgence de la tâche ou de la notification.
-   * **Options** :
+3. **Priorité**
+   * **Descriptif** : définit le niveau d'urgence de la tâche ou de la notification.
+   * **Possibilités** :
      * **High** : tâches ou notifications nécessitant une attention immédiate.
-     * **Medium** : tâches importantes à traiter rapidement.
+     * **Moyen** : tâches importantes à traiter rapidement.
      * **Low** : tâches pouvant être traitées plus tard.
-4. **Assignee Type**
-   * **Description** : spécifie l'utilisateur ou le groupe assigné à la tâche ou à la notification en fonction de la sortie de la table de décision.
+4. **Type de destinataire**
+   * **Descriptif** : spécifie l'utilisateur ou le groupe assigné à la tâche ou à la notification en fonction de la sortie de la table de décision.
    * **Détail** : la table de décision évalue dynamiquement les conditions et renvoie l'utilisateur ou le groupe approprié pour l'attribution.
-5. **Email Notification**
-   * **Description** : configure si une notification par e-mail sera envoyée à l'utilisateur ou au groupe assigné.
-   * **Options** :
+5. **Notification par e-mail**
+   * **Descriptif** : configure si une notification par e-mail sera envoyée à l'utilisateur ou au groupe assigné.
+   * **Possibilités** :
      * **True** : envoie une notification par e-mail au destinataire.
      * **False** : aucune notification par e-mail n'est envoyée.
 
 #### **Composants supplémentaires dans la Version 3**
 
-1. **Notification Type**
-   * **Description** : spécifie si la carte crée une tâche ou une notification.
-   * **Options** :
-     * **Task** : crée une tâche assignée à l'utilisateur ou au groupe issu de la table de décision.
+1. **Type de notification**
+   * **Descriptif** : spécifie si la carte crée une tâche ou une notification.
+   * **Possibilités** :
+     * **Tâche** : crée une tâche assignée à l'utilisateur ou au groupe issu de la table de décision.
      * **Notification** : envoie une notification à l'utilisateur ou au groupe issu de la table de décision.
 
 ## **Fonctionnalité :**
 
 * **Évaluation de la condition :**\
-  La carte n'exécute son action que si les sections **« Where »** et **« And »** sont toutes deux évaluées comme vraies.
+  La carte n'exécute son action que si les sections **« Quand »** et **« Et »** sont toutes deux évaluées comme vraies.
 * **Attribution de la tâche / notification**\
   La carte assigne la tâche ou la notification à l'utilisateur ou au groupe identifié par la table de décision. La table de décision évalue dynamiquement des conditions prédéfinies et renvoie le destinataire correspondant.
 * **Notification par e-mail**\
@@ -61,4 +61,16 @@ La carte de workflow « Assign Task / Notification from Decision Table » est co
 
 ## **Conclusion :**
 
-La carte de workflow **« Assign Task / Notification from Decision Table »** automatise l'attribution de tâches ou de notifications en fonction de conditions dynamiques définies dans une table de décision. La Version 3 enrichit sa fonctionnalité en permettant aux utilisateurs de choisir entre créer une tâche ou une notification, et garantit que le bon destinataire est toujours assigné. La fonctionnalité de notification par e-mail tient les utilisateurs informés, rationalisant la communication et la gestion des tâches.
+La carte de workflow **« Attribuer une tâche/notification à partir de la table de décision »** automatise l'attribution de tâches ou de notifications en fonction de conditions dynamiques définies dans une table de décision. La Version 3 enrichit sa fonctionnalité en permettant aux utilisateurs de choisir entre créer une tâche ou une notification, et garantit que le bon destinataire est toujours assigné. La fonctionnalité de notification par e-mail tient les utilisateurs informés, rationalisant la communication et la gestion des tâches.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemple pratique
+
+**Quand utiliser :** Créez une tâche pour le responsable renvoyé par une table de décision.
+
+**Configuration :** Utilisez une règle de démonstration correspondante renvoyant `Demo Reviewer A`, le titre `Review invoice` et la priorité souhaitée.
+
+**Résultat attendu et contre-exemple :** La tâche résultante est affectée en fonction du destinataire renvoyé. Testez séparément une règle inégalée et inspectez le journal de la carte.
+
+Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.

@@ -1,6 +1,6 @@
-# Single Document Status Condition
+# Condition de statut de document unique
 
-<figure><img src="../../../../.gitbook/assets/userlmn_928e514bc0e2aa775894e4ec5f992bd9 (1).png" alt="" width="528"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-c0315ad39a89-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 **Objectif**
 
@@ -8,14 +8,14 @@ Cette carte de workflow est conçue pour gérer les opérations sur les document
 
 **Composants de la carte**
 
-1. **Operator**
-   * **Description** : spécifie la méthode d'évaluation du statut du document par rapport à la condition sélectionnée.
-   * **Options** :
+1. **Opérateur**
+   * **Descriptif** : spécifie la méthode d'évaluation du statut du document par rapport à la condition sélectionnée.
+   * **Possibilités** :
      * **is** : déclenche l'opération si le statut actuel du document correspond au statut sélectionné.
-     * **is not** : déclenche l'opération si le statut actuel du document ne correspond pas au statut sélectionné.
-2. **Status**
-   * **Description** : permet de sélectionner un seul statut de document pour définir la condition.
-   * **Exemples de statuts** : « Error », « Export Error », « Ready in Validation », « Ready in Review », « Pending Approval », « Pending Second Approval ».
+     * **n'est pas** : déclenche l'opération si le statut actuel du document ne correspond pas au statut sélectionné.
+2. **Statut**
+   * **Descriptif** : permet de sélectionner un seul statut de document pour définir la condition.
+   * **Exemples de statuts** : « Erreur », « Erreur d'exportation », « Prêt en validation », « Prêt en révision », « En attente d'approbation », « En attente de deuxième approbation ».
    * **Détail** : les utilisateurs choisissent un statut dans une liste déroulante ou un ensemble de boutons radio. Ce statut sert ensuite de critère pour le fonctionnement de la carte.
 
 **Fonctionnalité**

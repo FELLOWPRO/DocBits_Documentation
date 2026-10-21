@@ -1,6 +1,6 @@
-# Compare Total Charges
+# Comparer les frais totaux
 
-<figure><img src="../../../../.gitbook/assets/image (271).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-97d69520f403-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -8,28 +8,28 @@ Cette carte de workflow compare le total des frais d'un champ de document aux fr
 
 ## **Composants de la carte :**
 
-1. **Field Name :**
-   * **Description** : spécifie le champ de document qui contient les valeurs du total des frais à comparer aux frais du bon de commande.
+1. **Nom du champ :**
+   * **Descriptif** : spécifie le champ de document qui contient les valeurs du total des frais à comparer aux frais du bon de commande.
    * **Détail** : la valeur de ce champ représente le total des frais appliqués dans le document (par ex. une facture) et sera comparée aux frais du bon de commande.
-2. **Operator :**
-   * **Description** : définit la condition qui sera appliquée à la comparaison entre le total des frais du document et les frais du bon de commande.
-   * **Options** :
-     * **Equals (=)** : vérifie si le total des frais du document correspond aux frais du bon de commande.
-     * **Not Equals (≠)** : s'assure que le total des frais du document diffère des frais du bon de commande.
-     * **Greater Than (>)** : vérifie si le total des frais du document est supérieur aux frais du bon de commande.
-     * **Greater or Equals (≥)** : vérifie si le total des frais du document est supérieur ou égal aux frais du bon de commande.
-     * **Lesser Than (<)** : vérifie si le total des frais du document est inférieur aux frais du bon de commande.
-     * **Lesser or Equals (≤)** : vérifie si le total des frais du document est inférieur ou égal aux frais du bon de commande.
-3. **Tolerance Amount**
-   * **Description** : spécifie le seuil de tolérance pour comparer le total des frais.
+2. **Opérateur :**
+   * **Descriptif** : définit la condition qui sera appliquée à la comparaison entre le total des frais du document et les frais du bon de commande.
+   * **Possibilités** :
+     * **Égal à (=)** : vérifie si le total des frais du document correspond aux frais du bon de commande.
+     * **Pas égal à (≠)** : s'assure que le total des frais du document diffère des frais du bon de commande.
+     * **Supérieur à (>)** : vérifie si le total des frais du document est supérieur aux frais du bon de commande.
+     * **Supérieur ou égal à (≥)** : vérifie si le total des frais du document est supérieur ou égal aux frais du bon de commande.
+     * **Inférieur à (<)** : vérifie si le total des frais du document est inférieur aux frais du bon de commande.
+     * **Inférieur ou égal à (≤)** : vérifie si le total des frais du document est inférieur ou égal aux frais du bon de commande.
+3. **Montant de tolérance**
+   * **Descriptif** : spécifie le seuil de tolérance pour comparer le total des frais.
    * **Détail** : cette valeur numérique représente l'écart autorisé sur les frais entre le document et le bon de commande.
-4. **Tolerance Type :**
-   * **Description** : spécifie le type de tolérance qui sera appliqué.
-   * **Options** :
+4. **Type de tolérance :**
+   * **Descriptif** : spécifie le type de tolérance qui sera appliqué.
+   * **Possibilités** :
      * **Percentage** : la tolérance est appliquée en pourcentage des frais du bon de commande.
-     * **Value** : la tolérance est appliquée sous forme de montant numérique fixe.
-5. **Separator :**
-   * **Description** : spécifie le séparateur utilisé pour distinguer le Charge ID à la fin du nom du champ.
+     * **Valeur** : la tolérance est appliquée sous forme de montant numérique fixe.
+5. **Séparateur :**
+   * **Descriptif** : spécifie le séparateur utilisé pour distinguer le Charge ID à la fin du nom du champ.
    * **Détail** : le séparateur sépare le champ de frais de l'identifiant unique Charge ID qui servira à relier les frais du document aux frais correspondants du bon de commande.
 
 ## **Fonctionnalité :**

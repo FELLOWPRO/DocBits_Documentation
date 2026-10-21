@@ -1,6 +1,6 @@
-# Compare Field with tolerances
+# Confronta il campo con le tolleranze
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4ee291b0848d-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## **Scopo:**
 
@@ -8,28 +8,28 @@ Questa scheda di workflow è progettata per confrontare il valore di un campo co
 
 ## **Componenti della scheda:**
 
-1. **Field Name**
+1. **Nome campo**
    * **Descrizione:** Il campo da valutare nel confronto.
    * **Dettaglio:** Deve corrispondere all'identificatore esatto del primo campo all'interno del documento.
-2. **Comparison Operator**
+2. **Operatore di confronto**
    * **Descrizione:** Specifica come il valore del campo selezionato verrà confrontato con il valore di riferimento.
    * **Opzioni:**
-     * **Equals (=):** Verifica se il valore del campo corrisponde esattamente al valore di riferimento.
-     * **Not Equals (≠):** Verifica se il valore del campo non corrisponde al valore di riferimento.
-     * **Greater Than (>):** Verifica se il valore del campo è maggiore del valore di riferimento.
-     * **Greater or Equals (≥):** Verifica se il valore del campo è maggiore o uguale al valore di riferimento.
-     * **Lesser Than (<):** Verifica se il valore del campo è minore del valore di riferimento.
-     * **Lesser or Equals (≤):** Verifica se il valore del campo è minore o uguale al valore di riferimento.
-3. **Reference Value**
+     * **Uguale (=):** Verifica se il valore del campo corrisponde esattamente al valore di riferimento.
+     * **Diverso (≠):** Verifica se il valore del campo non corrisponde al valore di riferimento.
+     * **Maggiore di (>):** Verifica se il valore del campo è maggiore del valore di riferimento.
+     * **Maggiore o uguale (≥):** Verifica se il valore del campo è maggiore o uguale al valore di riferimento.
+     * **Minore di (<):** Verifica se il valore del campo è minore del valore di riferimento.
+     * **Minore o uguale (≤):** Verifica se il valore del campo è minore o uguale al valore di riferimento.
+3. **Valore di riferimento**
    * **Descrizione:** Il valore con cui viene confrontato il campo.
    * **Dettaglio:** Questo valore può essere numerico, testuale o basato su date, a seconda del contesto del confronto.
-4. **Tolerance Amount**
+4. **Importo di tolleranza**
    * **Descrizione:** Definisce il margine di errore accettabile per il confronto.
    * **Dettaglio:** La quantità di tolleranza è un valore numerico che indica la differenza massima ammissibile tra i due valori dei campi affinché il confronto sia considerato vero.
-5. **Tolerance Type**
+5. **Tipo di tolleranza**
    * **Descrizione:** Specifica l'unità di misura per la quantità di tolleranza.
    * **Opzioni:**
-     * **Value:** La tolleranza è un valore assoluto, ovvero i due campi possono differire della quantità di tolleranza specificata.
+     * **Valore:** La tolleranza è un valore assoluto, ovvero i due campi possono differire della quantità di tolleranza specificata.
      * **Percent:** La tolleranza è calcolata come percentuale del valore del secondo campo, consentendo un margine di errore relativo.
 
 ## **Funzionalità:**
@@ -41,8 +41,18 @@ Questa scheda di workflow è progettata per confrontare il valore di un campo co
 
 ## **Configurazione e impostazione:**
 
-* Gli utenti configurano la scheda selezionando il campo da valutare da un elenco di campi disponibili e scegliendo l'operatore di confronto (es. equals, greater than) da un menu a discesa. Quindi specificano il valore di riferimento con cui effettuare il confronto e definiscono la quantità di tolleranza, dopodiché selezionano il tipo di tolleranza (es. percent o value).&#x20;
+* Gli utenti configurano la scheda selezionando il campo da valutare da un elenco di campi disponibili e scegliendo l'operatore di confronto (es. equals, greater than) da un menu a discesa. Quindi specificano il valore di riferimento con cui effettuare il confronto e definiscono la quantità di tolleranza, dopodiché selezionano il tipo di tolleranza (es. percent o value).
 
 ## **Conclusione:**
 
 La scheda "Field Comparison with Tolerances" è uno strumento versatile per i workflow che richiedono valutazioni flessibili. Consentendo confronti con tolleranze, garantisce che i workflow rimangano efficienti e adattabili, accogliendo le variazioni del mondo reale senza compromettere l'accuratezza.
+
+<!-- workflow-card-complete-example-20261021 condition_docfield_operator_value_tolerances -->
+
+### Esempio di tolleranza del valore di riferimento
+
+**Configurazione:** Scegli il campo numerico del documento `total_amount`, uguaglianza, valore di riferimento `100`, tolleranza assoluta `5` e tipo di tolleranza Valore.
+
+**Risultato atteso e controesempio:** Con il valore `103`, la condizione è vera perché la differenza rientra nella tolleranza consentita. Con il valore `110`, la condizione è falsa perché la differenza supera tale tolleranza. Questa scheda confronta un campo con un valore di riferimento configurato. Utilizzare la carta separata a due campi quando entrambi i lati devono provenire dai campi del documento. I dati mancanti o non numerici richiedono un'indagine, non una corrispondenza presunta.
+
+Questa è una configurazione di test illustrativa e il risultato atteso; non è stato eseguito. Utilizza dati e destinatari configurati nella tua organizzazione di test.

@@ -1,6 +1,6 @@
-# Supplier on Invoice
+# Fornitore su fattura
 
-<figure><img src="../../../../.gitbook/assets/image (276).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f5b5666e94fe-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## **Scopo:**
 
@@ -8,11 +8,11 @@ Questa scheda di workflow è progettata per confrontare le informazioni sul forn
 
 ## **Componenti della scheda:**
 
-1. **Operator:**
+1. **Operatore:**
    * **Descrizione**: Definisce la condizione per confrontare il fornitore sulla fattura con il fornitore sull'ordine d'acquisto.
    * **Opzioni**:
      * **Is**: Verifica se il fornitore sulla fattura corrisponde al fornitore sull'ordine d'acquisto.
-     * **Is Not**: Garantisce che il fornitore sulla fattura non corrisponda al fornitore sull'ordine d'acquisto.
+     * **Non lo è**: Garantisce che il fornitore sulla fattura non corrisponda al fornitore sull'ordine d'acquisto.
 
 ## **Funzionalità:**
 

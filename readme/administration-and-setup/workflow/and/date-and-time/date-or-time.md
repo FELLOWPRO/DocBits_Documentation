@@ -1,6 +1,6 @@
-# Date or Time
+# Data o ora
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-aab11d0fe7ed-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## **Scopo:**
 
@@ -10,7 +10,7 @@ Questa scheda DocBits verifica se un valore data/ora specificato rientra in un i
 
 * **Validazione data/ora:** Questa scheda valuta se una determinata data/ora rientra in un intervallo specificato utilizzando le seguenti condizioni:
   * **Is:** Verifica se la data/ora rientra nell'intervallo definito di inizio e fine (inclusi).
-  * **Is Not:** Garantisce che la data/ora ricada al di fuori dell'intervallo definito.
+  * **Non è:** Garantisce che la data/ora ricada al di fuori dell'intervallo definito.
 
 **Intervallo data/ora:** Gli utenti specificano i valori di data/ora di inizio e fine per definire l'intervallo di confronto.
 

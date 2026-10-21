@@ -1,6 +1,6 @@
-# Document Type
+# Tipo di documento
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3a6901be7256-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## Scopo:
 
@@ -8,12 +8,12 @@ Questa scheda di workflow è progettata per valutare se un documento corrisponde
 
 ## Componenti della scheda:
 
-1. **Operator**
+1. **Operatore**
    * **Descrizione**: Definisce se il documento debba o meno essere del tipo specificato.
    * **Opzioni**:
      * **Is**: Il documento deve corrispondere al tipo specificato affinché la condizione sia vera.
-     * **Is Not**: Il documento non deve corrispondere al tipo specificato affinché la condizione sia vera.
-2. **Type**
+     * **Non lo è**: Il documento non deve corrispondere al tipo specificato affinché la condizione sia vera.
+2. **Tipo**
    * **Descrizione**: Specifica il tipo di documento con cui effettuare il confronto.
    * **Dettaglio**: Comprende una varietà di tipi di documento come "Invoice", "Purchase Order", ecc., in base ai quali verrà valutata la condizione (is/is not).
 
@@ -31,3 +31,15 @@ Questa scheda di workflow è progettata per valutare se un documento corrisponde
 ## Conclusione:
 
 La scheda di workflow "Document Type Comparison" è essenziale per garantire che i workflow procedano in base al tipo di documento in elaborazione. Confrontando il tipo di documento, aiuta le organizzazioni ad automatizzare le attività di instradamento ed elaborazione dei documenti, garantendo che i documenti vengano gestiti in modo appropriato in base al loro tipo.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Esempio pratico
+
+**Quando utilizzarlo:** Esegui un controllo specifico della fattura.
+
+**Configurazione:** Seleziona il tipo di documento `Invoice` e l'operatore uguale.
+
+**Risultato atteso e controesempio:** Una fattura passa. Una nota di credito non soddisfa questa condizione.
+
+Questa è una configurazione illustrativa e il risultato atteso. Utilizza campi, utenti e gruppi configurati nella tua organizzazione di test; non si afferma che questo esempio sia stato eseguito.

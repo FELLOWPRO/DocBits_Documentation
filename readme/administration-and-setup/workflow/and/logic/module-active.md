@@ -1,6 +1,6 @@
-# Module active
+# Modulo attivo
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-405c9bb87c62-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## **Scopo:**
 
@@ -12,7 +12,7 @@ Questa scheda DocBits verifica se un modulo specifico del sistema è attivo o in
 * **Selezione del modulo:** Gli utenti specificano il nome del modulo da verificare, garantendo una validazione precisa.
 * **Operatori:** Possono essere applicate le seguenti condizioni:
   * **Is:** Il workflow prosegue se il modulo selezionato è attivo.
-  * **Is Not:** Il workflow prosegue se il modulo selezionato è inattivo.
+  * **Non è:** Il workflow prosegue se il modulo selezionato è inattivo.
 
 ## **Utilizzo:**
 
@@ -20,6 +20,6 @@ Questa scheda è particolarmente utile per gli amministratori o i gestori di sis
 
 ## **Scenario di esempio**
 
-* Un utente configura la scheda per verificare se il modulo **"Document Processing"** **è attivo**. Se il modulo è attivo, il workflow prosegue, attivando attività automatizzate di elaborazione dei documenti. Se il modulo è inattivo, il workflow si arresta, prevenendo azioni non necessarie.
+* Un utente configura la scheda per verificare se il modulo **"Elaborazione documenti"** **è attivo**. Se il modulo è attivo, il workflow prosegue, attivando attività automatizzate di elaborazione dei documenti. Se il modulo è inattivo, il workflow si arresta, prevenendo azioni non necessarie.
 
 Utilizzando la scheda "Module Active Check", le organizzazioni possono migliorare l'affidabilità dei workflow, evitare errori dovuti a moduli inattivi e garantire che i processi siano allineati con la configurazione del sistema.

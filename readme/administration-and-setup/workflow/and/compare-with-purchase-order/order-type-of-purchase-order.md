@@ -1,6 +1,6 @@
-# Order Type of Purchase Order
+# Tipo di ordine di acquisto
 
-<figure><img src="../../../../.gitbook/assets/image (277).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8a1cb3a5f80f-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## **Scopo:**
 
@@ -8,17 +8,17 @@ Questa scheda di workflow è progettata per confrontare il tipo di ordine di un 
 
 ## **Componenti della scheda:**
 
-1. **Any/All:**
+1. **Qualsiasi/Tutti:**
    * **Descrizione**: Definisce se la condizione si applica ad alcuni o a tutti gli ordini d'acquisto valutati nel workflow.
    * **Opzioni**:
      * **Any**: La condizione è soddisfatta se uno qualsiasi degli ordini d'acquisto corrisponde alla condizione specificata.
      * **All**: La condizione è soddisfatta solo se tutti gli ordini d'acquisto soddisfano la condizione specificata.
-2. **Operator:**
+2. **Operatore:**
    * **Descrizione**: Definisce la condizione che verrà applicata per confrontare il tipo di ordine con un valore specificato.
    * **Opzioni**:
-     * **Equals (=)**: Verifica se il tipo di ordine corrisponde al valore specificato.
-     * **Not Equals (≠)**: Garantisce che il tipo di ordine sia diverso dal valore specificato.
-3. **Order Type:**
+     * **Uguale (=)**: Verifica se il tipo di ordine corrisponde al valore specificato.
+     * **Diverso (≠)**: Garantisce che il tipo di ordine sia diverso dal valore specificato.
+3. **Tipo ordine:**
    * **Descrizione**: Specifica il valore con cui verrà confrontato il tipo di ordine dell'ordine d'acquisto.
    * **Dettaglio**: Il valore deve corrispondere al tipo di ordine o alla classificazione nel sistema.
 

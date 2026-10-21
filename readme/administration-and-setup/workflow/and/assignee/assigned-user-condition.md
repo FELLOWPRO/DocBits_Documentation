@@ -1,6 +1,6 @@
-# Assigned User Condition
+# Condizione utente assegnata
 
-<figure><img src="../../../../.gitbook/assets/userlmn_5e16e9b23626ec1211c753fec5333513 (1).png" alt="" width="552"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3e450ede5dea-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
 **Scopo**
 
@@ -8,12 +8,12 @@ Questa scheda di workflow gestisce l'esecuzione di operazioni in base al fatto c
 
 **Componenti della scheda**
 
-1. **Operator**
+1. **Operatore**
    * **Descrizione**: Definisce la condizione logica da applicare all'assegnazione dell'utente.
    * **Opzioni**:
      * **IS**: Attiva l'operazione se l'utente assegnato del documento o dell'attività corrisponde a un utente qualsiasi nell'elenco specificato.
-     * **IS NOT**: Attiva l'operazione se l'utente assegnato del documento o dell'attività non corrisponde a nessun utente nell'elenco specificato.
-2. **User List**
+     * **NON LO È**: Attiva l'operazione se l'utente assegnato del documento o dell'attività non corrisponde a nessun utente nell'elenco specificato.
+2. **Elenco utenti**
    * **Descrizione**: Un elenco o una selezione di utenti da confrontare con l'utente assegnato.
    * **Dettaglio**: Questo elenco può includere uno o più utenti, consentendo alla scheda di gestire efficacemente sia condizioni di utente singolo che multiplo. La selezione può avvenire tramite caselle di controllo, un menu a discesa a selezione multipla o elementi UI simili.
 
@@ -22,7 +22,7 @@ Questa scheda di workflow gestisce l'esecuzione di operazioni in base al fatto c
 * **Identificazione dell'assegnazione dell'utente**: Identifica automaticamente l'utente o gli utenti assegnati a una determinata attività o documento all'interno del sistema ERP.
 * **Valutazione della condizione**:
   * Con l'operatore **IS**, la scheda verifica se l'utente assegnato è tra quelli elencati nella User List.
-  * Con l'operatore **IS NOT**, la scheda garantisce che l'utente assegnato non sia tra quelli elencati.
+  * Con l'operatore **NON LO È**, la scheda garantisce che l'utente assegnato non sia tra quelli elencati.
 * **Esecuzione dell'azione**:
   * **Condizione vera**: Se l'assegnazione dell'utente soddisfa la condizione (IS o IS NOT), vengono attivate le azioni pertinenti, come notifiche, avvio di attività, approvazioni o altri passaggi del workflow.
   * **Condizione falsa**: Se la condizione non è soddisfatta, il workflow non proseguirà.
@@ -36,3 +36,15 @@ Questa scheda di workflow gestisce l'esecuzione di operazioni in base al fatto c
 #### Conclusione
 
 La scheda di workflow "Assigned User Condition" è uno strumento fondamentale per gestire i workflow di documenti e attività che dipendono dalle assegnazioni agli utenti. Consentendo condizioni basate sul fatto che un'attività o un documento sia assegnato a utenti specifici, garantisce che i workflow vengano attivati solo da interazioni utente appropriate, migliorando sia la responsabilità che l'allineamento delle attività all'interno dei team. Documentare chiaramente questa scheda aiuterà gli utenti a comprenderne l'importanza e a integrarla efficacemente nei loro workflow, garantendo operazioni fluide ed efficienti adattate ai ruoli e alle responsabilità degli utenti.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Esempio pratico
+
+**Quando utilizzarlo:** Continuare solo quando un documento viene assegnato a un revisore approvato.
+
+**Configurazione:** Selezionare is-one-of e gli utenti demo configurati `Demo Reviewer A` e `Demo Reviewer B`.
+
+**Risultato atteso e controesempio:** Un documento assegnato a `Demo Reviewer B` passa; quello assegnato a un utente diverso fallisce.
+
+Questa è una configurazione illustrativa e il risultato atteso. Utilizza campi, utenti e gruppi configurati nella tua organizzazione di test; non si afferma che questo esempio sia stato eseguito.

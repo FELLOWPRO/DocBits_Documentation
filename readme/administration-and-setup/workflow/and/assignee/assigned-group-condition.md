@@ -1,6 +1,6 @@
-# Assigned Group Condition
+# Condizione del gruppo assegnato
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-bdcdca2a5488-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
 **Scopo:**
 
@@ -8,12 +8,12 @@ Questa scheda di workflow esegue operazioni in base al fatto che un'attività o 
 
 **Componenti della scheda:**
 
-1. **Operator**
+1. **Operatore**
    * **Descrizione:** Definisce la condizione logica da applicare all'assegnazione del gruppo.
    * **Opzioni:**
      * **IS:** Attiva l'operazione se il gruppo assegnato del documento o dell'attività corrisponde a uno dei gruppi nell'elenco specificato.
-     * **IS NOT:** Attiva l'operazione se il gruppo assegnato del documento o dell'attività non corrisponde a nessuno dei gruppi nell'elenco specificato.
-2. **Groups List**
+     * **NON È:** Attiva l'operazione se il gruppo assegnato del documento o dell'attività non corrisponde a nessuno dei gruppi nell'elenco specificato.
+2. **Elenco gruppi**
    * **Descrizione:** Un elenco o una selezione di gruppi da confrontare con il gruppo assegnato.
    * **Dettaglio:** Questo elenco può includere uno o più gruppi, consentendo alla scheda di gestire efficacemente sia condizioni di gruppo singolo che multiplo.
 
@@ -22,9 +22,9 @@ Questa scheda di workflow esegue operazioni in base al fatto che un'attività o 
 * **Identificazione dell'assegnazione del gruppo:** Identifica automaticamente il gruppo o i gruppi assegnati a una determinata attività o documento all'interno del sistema.
 * **Valutazione della condizione:**
   * Con l'operatore **IS**, la scheda verifica se il gruppo assegnato è uno dei gruppi elencati nella Groups List.
-  * Con l'operatore **IS NOT**, la scheda garantisce che il gruppo assegnato non faccia parte dei gruppi elencati.
+  * Con l'operatore **NON LO È**, la scheda garantisce che il gruppo assegnato non faccia parte dei gruppi elencati.
 * **Esecuzione dell'azione:**
-  * **Condizione vera:** Se l'assegnazione del gruppo soddisfa la condizione (sia **IS** che **IS NOT**), vengono attivate le azioni pertinenti, come notifiche, avvio di attività, approvazioni o altri passaggi del workflow.
+  * **Condizione vera:** Se l'assegnazione del gruppo soddisfa la condizione (sia **IS** che **NON LO È**), vengono attivate le azioni pertinenti, come notifiche, avvio di attività, approvazioni o altri passaggi del workflow.
   * **Condizione falsa:** Se la condizione non è soddisfatta, il workflow non proseguirà.
 
 **Interazioni dell'utente:**
@@ -37,3 +37,15 @@ Questa scheda di workflow esegue operazioni in base al fatto che un'attività o 
 
 **Conclusione:**\
 La scheda di workflow "Assigned Group Condition" è essenziale per gestire i workflow di documenti e attività che dipendono dalle assegnazioni di gruppo. Consentendo condizioni basate sul fatto che un'attività o un documento sia assegnato a gruppi specifici, garantisce che i workflow vengano attivati solo da interazioni di gruppo appropriate, migliorando la responsabilità e la gestione delle attività tra i team.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Esempio pratico
+
+**Quando usarlo:** Applicare la stessa regola a due team di revisione.
+
+**Configurazione:** Selezionare is-one-of e i gruppi configurati `Demo Finance` e `Demo Procurement`.
+
+**Risultato atteso e controesempio:** Un documento assegnato a uno dei gruppi selezionati passa. Un documento assegnato solo a `Demo Support` fallisce.
+
+Questa è una configurazione illustrativa e il risultato atteso. Utilizza campi, utenti e gruppi configurati nella tua organizzazione di test; non si afferma che questo esempio sia stato eseguito.

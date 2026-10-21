@@ -28,11 +28,11 @@ Układy oparte na regułach włącza się **dla każdego typu dokumentu** osobno
 
 1. Przejdź do **Settings → Global Settings → Document Types**.
 2. Kliknij ikonę **ustawień** (koło zębate) na karcie typu dokumentu.
-3. Otwórz **Manage Layouts** i włącz przełącznik.
+3. Otwórz **Zarządzaj układami** i włącz przełącznik.
 
 <figure><img src="../../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="Przełącznik Manage Layouts"><figcaption><p>Przełącznik Manage Layouts w dodatkowych ustawieniach typu dokumentu</p></figcaption></figure>
 
-Link **Layouts** na karcie typu dokumentu otwiera teraz **Layouts & Selection Rules**.
+Link **Układy** na karcie typu dokumentu otwiera teraz **Układy i zasady wyboru**.
 
 ### Co się dzieje po włączeniu
 
@@ -41,7 +41,7 @@ DocBits przekształca istniejące układy oparte na pochodzeniu w reguły — je
 * Układ o pochodzeniu **DEFAULT** staje się **układem domyślnym** (rozwiązaniem awaryjnym).
 * Każdy układ konkretnego pochodzenia staje się regułą **„Layout for XX”** z warunkiem *Document Origin is XX*, wskazującą na ten układ. Reguły te otrzymują priorytety co 10 (na przykład 2000, 2010, 2020 …), dzięki czemu własne reguły możesz umieścić przed nimi, między nimi lub po nich.
 
-<figure><img src="../../../../../.gitbook/assets/layout-selection-default-row.png" alt="Reguły pochodzenia utworzone przy aktywacji oraz układ domyślny"><figcaption><p>Reguły pochodzenia utworzone przy aktywacji, a po nich układ domyślny (FALLBACK)</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-default-row-pl.png" alt="Układ zastępczy na końcu listy reguł wyboru. Niektóre nazwy typów lub układów, takie jak Field validation, pozostają angielskie. Skonfigurowane nazwy i identyfikatory pozostają bez zmian. Etykieta AWARIA oznacza układ zastępczy używany przy braku pasującej reguły, nie zarejestrowaną awarię."><figcaption><p>Układ zastępczy na końcu listy reguł wyboru. Niektóre nazwy typów lub układów, takie jak Field validation, pozostają angielskie. Skonfigurowane nazwy i identyfikatory pozostają bez zmian. Etykieta AWARIA oznacza układ zastępczy używany przy braku pasującej reguły, nie zarejestrowaną awarię.</p></figcaption></figure>
 
 Nic nie jest usuwane ani zmieniane w samych układach. Zaraz po aktywacji każdy dokument otrzymuje więc dokładnie ten układ, który otrzymywał wcześniej. Zachowanie zmienia się dopiero wtedy, gdy dodasz lub zmienisz reguły.
 
@@ -49,14 +49,14 @@ Nic nie jest usuwane ani zmieniane w samych układach. Zaraz po aktywacji każdy
 
 ## Ekran Layouts & Selection Rules
 
-<figure><img src="../../../../../.gitbook/assets/layouts-overview.png" alt="Zakładka Layouts"><figcaption><p>Zakładka Layouts: każdy układ typu dokumentu jako karta</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layouts-overview-pl.png" alt="Przegląd układów i reguł wyboru. Niektóre nazwy typów lub układów, takie jak Field validation, pozostają angielskie. Skonfigurowane nazwy i identyfikatory pozostają bez zmian."><figcaption><p>Przegląd układów i reguł wyboru. Niektóre nazwy typów lub układów, takie jak Field validation, pozostają angielskie. Skonfigurowane nazwy i identyfikatory pozostają bez zmian.</p></figcaption></figure>
 
 * **Layouts / Selection rules** (prawy górny róg) przełączają między listą układów a listą reguł. Liczby pokazują, ile ich jest.
 * **Field Validation / Approval / Reject / Review** przełączają **ekran**. Każdy ekran ma własne układy, własne reguły i własny układ domyślny — reguła Approval nigdy nie zmienia ekranu walidacji.
-* Na zakładce **Layouts** możesz tworzyć, edytować, klonować i usuwać układy. Każda karta pokazuje, czy układ jest używany przez jakąś regułę („Not targeted by rules”, gdy żadna go nie używa). Filtruj za pomocą **All / My layouts / System**; układy systemowe są dostarczane z DocBits i można je przeglądać oraz klonować, ale nie zmieniać.
+* Na zakładce **Układy** możesz tworzyć, edytować, klonować i usuwać układy. Każda karta pokazuje, czy układ jest używany przez jakąś regułę („Not targeted by rules”, gdy żadna go nie używa). Filtruj za pomocą **All / My layouts / System**; układy systemowe są dostarczane z DocBits i można je przeglądać oraz klonować, ale nie zmieniać.
 
 {% hint style="info" %}
-Pierwsza i druga akceptacja współdzielą układy i reguły **Approval**. Aby nadać drugiemu etapowi akceptacji własny ekran, dodaj regułę Approval z warunkiem *Document Status is Pending second approval* — zobacz [przykład](#rozne-ekrany-dla-pierwszej-i-drugiej-akceptacji).
+Pierwsza i druga akceptacja współdzielą układy i reguły **Aprobata**. Aby nadać drugiemu etapowi akceptacji własny ekran, dodaj regułę Approval z warunkiem *Document Status is Pending second approval* — zobacz [przykład](#rozne-ekrany-dla-pierwszej-i-drugiej-akceptacji).
 {% endhint %}
 
 ## Jak wybierany jest układ
@@ -71,11 +71,11 @@ Reguły, których układ został usunięty lub jest pusty, są pomijane.
 
 ### Przykład krok po kroku
 
-Reguły ekranu **Field Validation**:
+Reguły ekranu **Walidacja pola**:
 
 | Priorytet | Reguła | Warunek | Układ |
 | --- | --- | --- | --- |
-| 5 | Faktury Behaelterbau | *Supplier ID is HP0000278* | Faktura z polami projektu |
+| 5 | Faktury Example Supplier | *Supplier ID is HP0000278* | Faktura z polami projektu |
 | 10 | E-faktury | *Extraction Method is ELECTRONIC_DOCUMENT* | E-faktura |
 | 2020 | Layout for DE | *Document Origin is DE* | Field Validation Layout (DE) |
 | — | Układ domyślny | — | Field Validation Layout (Base) |
@@ -97,20 +97,20 @@ Układ jest zawsze wybierany na podstawie **bieżących** wartości dokumentu. J
 
 ## Zarządzanie regułami wyboru
 
-<figure><img src="../../../../../.gitbook/assets/layout-selection-rules-list.png" alt="Zakładka Selection rules"><figcaption><p>Zakładka Selection rules ekranu Field Validation</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-rules-list-pl.png" alt="Reguły wyboru z ukrytymi skonfigurowanymi nazwami. Niektóre nazwy typów lub układów, takie jak Field validation, pozostają angielskie. Skonfigurowane nazwy i identyfikatory pozostają bez zmian."><figcaption><p>Reguły wyboru z ukrytymi skonfigurowanymi nazwami. Niektóre nazwy typów lub układów, takie jak Field validation, pozostają angielskie. Skonfigurowane nazwy i identyfikatory pozostają bez zmian.</p></figcaption></figure>
 
-Każdy wiersz pokazuje **priorytet** (pierwszy wiersz jest oznaczony **FIRST**), **nazwę i klucz reguły** wraz z jej **warunkami**, **układ docelowy**, plakietkę **źródła** oraz przełącznik **Active**.
+Każdy wiersz pokazuje **priorytet** (pierwszy wiersz jest oznaczony **FIRST**), **nazwę i klucz reguły** wraz z jej **warunkami**, **układ docelowy**, plakietkę **źródła** oraz przełącznik **Aktywny**.
 
 | Zadanie | Jak |
 | --- | --- |
-| Utworzenie reguły | **New rule** |
+| Utworzenie reguły | **Nowa zasada** |
 | Edycja reguły | Kliknij wiersz |
 | Zmiana kolejności | Przeciągnij uchwyt po lewej stronie wiersza w górę lub w dół. Nowa kolejność jest zapisywana natychmiast. |
-| Wyłączenie reguły | Przełącznik **Active**. Nieaktywne reguły są ignorowane. |
+| Wyłączenie reguły | Przełącznik **Aktywny**. Nieaktywne reguły są ignorowane. |
 | Duplikowanie lub usuwanie | Menu **⋮** wiersza |
 | Wyszukiwanie reguły | **Search rules…** |
 
-Plakietka **źródła** informuje, skąd pochodzi reguła: reguły **System** są dostarczane z DocBits. Edycja takiej reguły tworzy kopię dla Twojej organizacji, oznaczoną jako **Customized**; oryginał pozostaje nienaruszony i można go przywrócić. Reguły, które tworzysz, mają źródło **Custom**.
+Plakietka **źródła** informuje, skąd pochodzi reguła: reguły **System** są dostarczane z DocBits. Edycja takiej reguły tworzy kopię dla Twojej organizacji, oznaczoną jako **Dostosowane**; oryginał pozostaje nienaruszony i można go przywrócić. Reguły, które tworzysz, mają źródło **Niestandardowy**.
 
 ### Układ domyślny
 
@@ -122,9 +122,9 @@ Aby użyć innego układu awaryjnego, utwórz regułę **bez żadnego warunku** 
 
 ## Tworzenie reguły
 
-Kliknij **New rule** na zakładce Selection rules ekranu, który chcesz zmienić.
+Kliknij **Nowa zasada** na zakładce Selection rules ekranu, który chcesz zmienić.
 
-<figure><img src="../../../../../.gitbook/assets/layout-rule-editor.png" alt="Edytor reguły wyboru układu"><figcaption><p>Edytor reguły: zdanie podsumowujące u góry, trzy kroki po lewej, podgląd na żywo po prawej</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor-pl.png" alt="Zakres, warunki i układ docelowy reguły wyboru. Niektóre nazwy typów lub układów, takie jak Field validation, pozostają angielskie. Skonfigurowane nazwy i identyfikatory pozostają bez zmian."><figcaption><p>Zakres, warunki i układ docelowy reguły wyboru. Niektóre nazwy typów lub układów, takie jak Field validation, pozostają angielskie. Skonfigurowane nazwy i identyfikatory pozostają bez zmian.</p></figcaption></figure>
 
 Zdanie u góry podsumowuje regułę w trakcie jej budowania — „When header.supplier_id = HP0000278, an INVOICE document gets the Field Validation Layout (Base) layout for Field validation. Checked at priority 5 — the first matching rule wins.”
 
@@ -132,10 +132,10 @@ Zdanie u góry podsumowuje regułę w trakcie jej budowania — „When header.s
 
 | Ustawienie | Co robi |
 | --- | --- |
-| **Rule Name** | Wyświetlana na liście reguł. Opisz przypadek biznesowy: „Faktury Behaelterbau”, „E-faktury”, „Akceptacja wysokich kwot”. |
-| **Rule key** | Generowany z nazwy; pozostaje taki sam po zmianie nazwy reguły. |
-| **Document Type** / **Layout type** | Typ dokumentu i ekran, dla którego jest reguła. Przejmowane z miejsca, w którym kliknięto **New rule**. |
-| **Priority** | Niższe numery są sprawdzane jako pierwsze. Zostawiaj odstępy (5, 10, 20 …), aby móc później wstawiać reguły. |
+| **Nazwa reguły** | Wyświetlana na liście reguł. Opisz przypadek biznesowy: „Faktury Example Supplier”, „E-faktury”, „Akceptacja wysokich kwot”. |
+| **Klucz reguły** | Generowany z nazwy; pozostaje taki sam po zmianie nazwy reguły. |
+| **Typ dokumentu** / **Typ układu** | Typ dokumentu i ekran, dla którego jest reguła. Przejmowane z miejsca, w którym kliknięto **Nowa zasada**. |
+| **Priorytet** | Niższe numery są sprawdzane jako pierwsze. Zostawiaj odstępy (5, 10, 20 …), aby móc później wstawiać reguły. |
 
 ### Krok 2 — Dotyczy, gdy
 
@@ -159,41 +159,41 @@ Panel po prawej stronie pokazuje, co reguła robi dla przykładowego dokumentu o
 
 | Wiersz | Znaczenie |
 | --- | --- |
-| **Sample document** | Wartości użyte w podglądzie, pobrane z Twoich warunków |
+| **Przykładowy dokument** | Wartości użyte w podglądzie, pobrane z Twoich warunków |
 | **matched_by** | `rule`, jeśli dopasowała się reguła, w przeciwnym razie układ domyślny |
-| **Resolved layout** | Układ, który otrzymałby przykładowy dokument |
-| **Priority hit** | Priorytet reguły, która się dopasowała |
+| **Rozwiązany układ** | Układ, który otrzymałby przykładowy dokument |
+| **Priorytet dopasowanej reguły** | Priorytet reguły, która się dopasowała |
 | **watched_fields** | Pola, od których zależy wybór układu. Gdy użytkownik zmieni któreś z nich, układ jest wybierany ponownie. |
 
-Kliknij **Create Rule** (lub **Save rule** podczas edycji), aby zapisać. **Cancel** wraca do listy reguł.
+Kliknij **Utwórz regułę** (lub **Zapisz regułę** podczas edycji), aby zapisać. **Anulować** wraca do listy reguł.
 
 ## Przykłady
 
 ### Dodatkowe pola dla jednego dostawcy
 
-Ekran **Field Validation** · priorytet **5** · *Supplier ID is HP0000278* · cel *Faktura z polami projektu* (klon standardowego układu z dodatkowymi polami projektu i miejsca powstawania kosztów).
+Ekran **Walidacja pola** · priorytet **5** · *Supplier ID is HP0000278* · cel *Faktura z polami projektu* (klon standardowego układu z dodatkowymi polami projektu i miejsca powstawania kosztów).
 
 ### Jeden układ dla kilku krajów
 
-Ekran **Field Validation** · priorytet **100** · **ANY of**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · cel *Faktura DACH*. Dezaktywuj zmigrowane reguły „Layout for AT” i „Layout for CH”, jeśli wskazują na starsze kopie.
+Ekran **Walidacja pola** · priorytet **100** · **ANY of**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · cel *Faktura DACH*. Dezaktywuj zmigrowane reguły „Layout for AT” i „Layout for CH”, jeśli wskazują na starsze kopie.
 
 ### Prostszy ekran dla e-faktur
 
-Ekran **Field Validation** · priorytet **10** · *Extraction Method is ELECTRONIC_DOCUMENT* · cel *E-faktura* (bez pól związanych z OCR).
+Ekran **Walidacja pola** · priorytet **10** · *Extraction Method is ELECTRONIC_DOCUMENT* · cel *E-faktura* (bez pól związanych z OCR).
 
 ### Bardziej rygorystyczny ekran akceptacji dla wysokich kwot
 
-Ekran **Approval** · priorytet **10** · *Total Amount greater than 10000* · cel *Akceptacja wysokich kwot* (pokazujący miejsce powstawania kosztów, właściciela budżetu i numer umowy).
+Ekran **Aprobata** · priorytet **10** · *Total Amount greater than 10000* · cel *Akceptacja wysokich kwot* (pokazujący miejsce powstawania kosztów, właściciela budżetu i numer umowy).
 
 ### Różne ekrany dla pierwszej i drugiej akceptacji
 
-Ekran **Approval** · priorytet **5** · *Document Status is Pending second approval* · cel *Second Approval Layout*. Dokumenty na etapie pierwszej akceptacji nie pasują i otrzymują domyślny układ Approval.
+Ekran **Aprobata** · priorytet **5** · *Document Status is Pending second approval* · cel *Second Approval Layout*. Dokumenty na etapie pierwszej akceptacji nie pasują i otrzymują domyślny układ Approval.
 
-<figure><img src="../../../../../.gitbook/assets/layout-rule-approval-status.png" alt="Reguła akceptacji oparta na statusie dokumentu"><figcaption><p>Reguła Approval dla drugiego etapu akceptacji; podgląd wskazuje Second Approval Layout</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-approval-status-pl.png" alt="Niezapisany projekt reguły wyboru układu. Niektóre nazwy typów lub układów, takie jak Field validation, pozostają angielskie. Skonfigurowane nazwy i identyfikatory pozostają bez zmian."><figcaption><p>Niezapisany projekt reguły wyboru układu. Niektóre nazwy typów lub układów, takie jak Field validation, pozostają angielskie. Skonfigurowane nazwy i identyfikatory pozostają bez zmian.</p></figcaption></figure>
 
 ### Specjalny ekran odrzucenia dla wybranych dostawców
 
-Ekran **Reject** · priorytet **10** · *Supplier ID is one of* `10040, 10041` · cel *Odrzucenie z kodami przyczyn*.
+Ekran **Odrzuć** · priorytet **10** · *Supplier ID is one of* `10040, 10041` · cel *Odrzucenie z kodami przyczyn*.
 
 ## Dobre praktyki
 
@@ -208,8 +208,8 @@ Ekran **Reject** · priorytet **10** · *Supplier ID is one of* `10040, 10041` �
 
 | Objaw | Co sprawdzić |
 | --- | --- |
-| Dokument otrzymuje zły układ | Wcześniejsza reguła pasuje jako pierwsza. Sprawdź reguły powyżej lub **Priority hit** w podglądzie. |
-| Używany jest układ domyślny, choć reguła powinna pasować | Czy reguła jest **Active**? Czy warunek pasuje do dokładnej wartości (wielkość liter, spacje)? Czy reguła jest na właściwej zakładce **ekranu**? |
+| Dokument otrzymuje zły układ | Wcześniejsza reguła pasuje jako pierwsza. Sprawdź reguły powyżej lub **Priorytet dopasowanej reguły** w podglądzie. |
+| Używany jest układ domyślny, choć reguła powinna pasować | Czy reguła jest **Aktywny**? Czy warunek pasuje do dokładnej wartości (wielkość liter, spacje)? Czy reguła jest na właściwej zakładce **ekranu**? |
 | Układ zmienia się w trakcie pracy użytkownika | Zmieniono pole z **watched_fields**. Oprzyj regułę na bardziej stabilnym polu. |
 | Nie można usunąć układu | Nadal wskazuje na niego jakaś reguła. Najpierw zmień cel tej reguły lub ją usuń. |
 | Nie jest wyświetlany żaden układ | Żadna reguła nie pasowała, nie ma układu domyślnego i dla tego ekranu nie istnieje układ oparty na pochodzeniu. Dodaj regułę bez warunku jako rozwiązanie zbiorcze. |

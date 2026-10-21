@@ -4,11 +4,11 @@
 
 W niektórych przypadkach tekst może wydawać się brakujący w **Widoku OCR**, co uniemożliwia jego ekstrakcję za pomocą funkcji ekstrakcji.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/troubleshooting_ocr_5.png)
+<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_5-pl.png" alt="Kontrola pól fikcyjnej faktury."><figcaption><p>Kontrola pól fikcyjnej faktury.</p></figcaption></figure>
 
 Aby to zweryfikować, kliknij przycisk **Widok OCR** na pasku narzędzi po prawej stronie. Jeśli tekst się tam nie pojawia, oznacza to, że nie jest dostępny do ekstrakcji.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/troubleshooting_ocr_6.png)
+<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_6-pl.png" alt="Widok OCR tekstu rozpoznanego na fikcyjnej fakturze."><figcaption><p>Widok OCR tekstu rozpoznanego na fikcyjnej fakturze.</p></figcaption></figure>
 
 ## **Przyczyna**
 
@@ -24,19 +24,24 @@ Aby rozwiązać ten problem, wyłącz funkcję E-Text—dla [konkretnego dostawc
 1. Otwórz dokument od konkretnego dostawcy w **Walidacji pól**.
 2.  Kliknij menu z trzema kropkami na pasku narzędzi po prawej stronie.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/troubleshooting_ocr_2.png)
+<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_2-pl.png" alt="Menu dodatkowych opcji walidacji pól."><figcaption><p>Menu dodatkowych opcji walidacji pól.</p></figcaption></figure>
+
 3.  Odznacz **Użyj E-Textu, jeśli jest dostępny**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/troubleshooting_ocr_3.png)
+<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_3-pl.png" alt="Opcja tekstu elektronicznego w menu dokumentu."><figcaption><p>Opcja tekstu elektronicznego w menu dokumentu.</p></figcaption></figure>
+
 4.  Kliknij **Potwierdzać**, aby ponownie uruchomić przetwarzanie dokumentu.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/troubleshooting_ocr_4.png)
+<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_4-pl.png" alt="Potwierdzenie przed zmianą użycia tekstu elektronicznego."><figcaption><p>Potwierdzenie przed zmianą użycia tekstu elektronicznego.</p></figcaption></figure>
 
 ### Wyłącz E-Text dla całej organizacji
 
 1.  Przejdź do **Ustawienia → Przetwarzanie dokumentów → Ustawienia OCR**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_ocr.png)
+<figure><img src="../../../../.gitbook/assets/s150-settings_ocr-pl.png" alt="Ustawienia OCR w polskim interfejsie."><figcaption><p>Ustawienia OCR w polskim interfejsie.</p></figcaption></figure>
+
 2.  W sekcji **Ogólne ustawienia OCR** odznacz opcję **Użyj E-Textu, jeśli jest dostępny**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/troubleshooting_ocr_1.png)
+<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_1-pl.png" alt="Ogólne ustawienia OCR z opcją tekstu elektronicznego."><figcaption><p>Ogólne ustawienia OCR z opcją tekstu elektronicznego.</p></figcaption></figure>
+
+Obrazy wykorzystują fikcyjną fakturę z dostępnym tekstem OCR. Pokazują elementy interfejsu, a nie odtworzony incydent brakującego tekstu.

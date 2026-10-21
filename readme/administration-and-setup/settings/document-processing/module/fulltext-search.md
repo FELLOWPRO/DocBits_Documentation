@@ -2,8 +2,6 @@
 
 Wyszukiwanie pełnotekstowe pozwala użytkownikom przeszukiwać rzeczywistą treść dokumentów i każde wyekstrahowane pole, a nie tylko nazwy plików i identyfikatory.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-required-dialog.png" alt="Okno dialogowe „Fulltext Module Required“ gdy moduł jest wyłączony"><figcaption><p>Okno «Fulltext Module Required» pojawia się na stronach zależnych od tego modułu.</p></figcaption></figure>
-
 ## Bez modułu
 
 Gdy wyszukiwanie pełnotekstowe nie jest włączone, pasek wyszukiwania w panelu może przeszukiwać tylko niewielki zestaw pól strukturalnych. Tekst wolny porównywany jest jedynie z:
@@ -19,7 +17,7 @@ Wszystko poza tymi polami jest ignorowane. Nie ma wyszukiwania po treści ani ob
 
 Włączenie wyszukiwania pełnotekstowego odblokowuje wyszukiwanie po każdym wyekstrahowanym polu dokumentu i zastępuje pasek wyszukiwania w panelu rozbudowanym językiem zapytań. Zapytania mogą łączyć filtry pól, porównania zakresów, operatory logiczne, daty względne i filtry inteligentne.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-dashboard-query.png" alt="Pasek wyszukiwania w panelu z zapytaniem zakresowym i przefiltrowaną listą dokumentów"><figcaption><p>Pasek wyszukiwania w panelu obsługuje rozszerzony język zapytań. Wpisz zapytanie i naciśnij <kbd>Enter</kbd>, aby przefiltrować listę dokumentów.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u049-pl.png" alt="Wprowadzanie zapytania o kwotę w panelu. Błędna etykieta Wygrać oznacza przesyłanie dokumentów."><figcaption><p>Wprowadzanie zapytania o kwotę w panelu. Błędna etykieta Wygrać oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
 ### Zapytania ukierunkowane na pole
 
@@ -102,7 +100,7 @@ ai: invoices from Ruiz over 1000 last quarter
 
 Wyszukiwanie AI i wyszukiwanie wektorowe nie są wymienne: wektorowe znajduje podobną treść, AI tłumaczy język na filtry. Wyszukiwanie AI nie ma własnego przełącznika — korzysta z istniejących indeksów pełnotekstowego i wektorowego.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-settings-page.png" alt="Strona „Ustawienia wyszukiwania pełnotekstowego“ z indeksami Documents, Vector Index i Fulltext (Text)"><figcaption><p>Ustawienia wyszukiwania pełnotekstowego. Indeks wektorowy ma własny przełącznik; indeks tekstowy działa zawsze, gdy moduł jest włączony.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u048-pl.png" alt="Ustawienia i informacje o indeksowaniu pełnotekstowym. Część komunikatów i działań indeksu, w tym Index out of sync, Backfill i Full Rebuild, pozostaje angielska."><figcaption><p>Ustawienia i informacje o indeksowaniu pełnotekstowym. Część komunikatów i działań indeksu, w tym Index out of sync, Backfill i Full Rebuild, pozostaje angielska.</p></figcaption></figure>
 
 ## Wymagania wstępne
 
@@ -113,11 +111,11 @@ Wyszukiwanie AI i wyszukiwanie wektorowe nie są wymienne: wektorowe znajduje po
 ## Jak włączyć moduł
 
 1. Przejdź do **Ustawienia → Przetwarzanie dokumentów → Moduł**.
-2. W grupie **Dashboards** włącz **Full text search**.
+2. W grupie **Tablice rozdzielcze** włącz **Wyszukiwanie pełnotekstowe**.
 3. Potwierdź okno subskrypcji, jeśli się pojawi.
 4. Poczekaj na zakończenie pierwszego indeksowania, zanim zaczniesz polegać na zapytaniach pełnotekstowych.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-module-toggle.png" alt="Strona „Moduły“ z przełącznikiem „Full text search“ pod grupą Dashboards"><figcaption><p>Przełącznik <strong>Full text search</strong> znajduje się w sekcji <strong>Moduł → Dashboards &#x26; Analytics</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u050-pl.png" alt="Dostępność modułu wyszukiwania pełnotekstowego."><figcaption><p>Dostępność modułu wyszukiwania pełnotekstowego.</p></figcaption></figure>
 
 {% hint style="info" %}
 Ceny modułu wyszukiwania pełnotekstowego ustala Twój opiekun handlowy DocBits. Potwierdzenie subskrypcji pojawi się przy pierwszej aktywacji modułu.
@@ -128,3 +126,5 @@ Ceny modułu wyszukiwania pełnotekstowego ustala Twój opiekun handlowy DocBits
 * [Ustawienia wyszukiwania pełnotekstowego](../../log-settings/fulltext-search-settings.md) — zarządzanie indeksem i przełącznik indeksu wektorowego.
 * [Funkcje Fulltext i Vector Search](../../global-settings/document-types/script/scripting-in-docbits/fulltext-search-functions.md) — API skryptów dla `fulltext_search()` i `vector_search()`.
 * [Przegląd modułów](README.md) — pełna lista opcjonalnych modułów DocBits.
+
+Wyszukiwanie pełnotekstowe wymaga odpowiedniego modułu i uprawnień. Jeśli pojawi się komunikat o wymaganym module, poproś administratora o sprawdzenie dostępności i dostępu.

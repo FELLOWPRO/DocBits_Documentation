@@ -4,4 +4,4 @@ Ikony pomocy zostały umieszczone w całym DocBits, aby pomóc Ci w nauce i zroz
 
 Te ikony pomocy wyglądają następująco
 
-<figure><img src="../../../.gitbook/assets/help-icon.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-help-icon-pl.png" alt="Ikona pomocy w prawym górnym rogu ustawień."><figcaption><p>Ikona pomocy w prawym górnym rogu ustawień.</p></figcaption></figure>

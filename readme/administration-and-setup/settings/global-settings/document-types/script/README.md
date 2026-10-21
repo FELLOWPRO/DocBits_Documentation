@@ -1,6 +1,6 @@
 # Script
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto%202024-05-08%20um%2009.43.25.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-25-pl.png" alt="Lista skryptów z ukrytymi nazwami i datami."><figcaption><p>Lista skryptów z ukrytymi nazwami i datami.</p></figcaption></figure>
 
 {% embed url="https://youtu.be/n8NpWWIjmlA" %}
 DocBits Document Scripts Explained: Automate Custom Logic in Your Document Workflow
@@ -24,6 +24,6 @@ Skrypty w Docbits są zazwyczaj pisane w języku skryptowym obsługiwanym przez 
 * Zapewnia interfejs, w którym skrypty mogą być pisane i edytowane. Edytor zazwyczaj obsługuje podświetlanie składni, podświetlanie błędów i inne funkcje wspomagające rozwój skryptu.
 * **Przykładowy skrypt**: Skrypty mogą zawierać operacje takie jak iterowanie przez linie faktur w celu zweryfikowania sum lub usunięcia wpisów, które nie spełniają określonych kryteriów.
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto%202024-05-08%20um%2009.43.37.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-37-pl.png" alt="Edytor skryptów z technicznym przykładem w Pythonie."><figcaption><p>Edytor skryptów z technicznym przykładem w Pythonie.</p></figcaption></figure>
 
-{% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2498" %}
+{% @jira/embed url=" %}

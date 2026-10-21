@@ -12,8 +12,8 @@ Pola Rozmytych Danych (Fuzzy Data) pozwalają użytkownikom uzupełniać powiąz
 
 * Uzupełniają powiązane pola na podstawie swojej wartości lub wprowadzonych danych.
 * Trzy standardowe pola korzystające z Rozmytych Danych to:
-  * **Purchase Order**
-  * **Supplier**
+  * **Zamówienie zakupu**
+  * **Dostawca**
   * **Vendor ID**
 
 #### **Korzystanie z pól Rozmytych Danych**
@@ -21,21 +21,20 @@ Pola Rozmytych Danych (Fuzzy Data) pozwalają użytkownikom uzupełniać powiąz
 1. **Wybór zamówienia zakupu (Purchase Order)**
    *   Kliknięcie **niebieskiej ikony** obok pola Purchase Order otwiera **okno wyboru**.
 
-
-       <figure><img src="../../../.gitbook/assets/fuzzy_data_selection_window.png" alt="Okno wyboru Rozmytych Danych"><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/s150-fuzzy_data_selection_window-pl.png" alt="Okno wyszukiwania danych podstawowych; rekordy są ukryte."><figcaption><p>Okno wyszukiwania danych podstawowych; rekordy są ukryte.</p></figcaption></figure>
    * To okno zawiera tabelę ze wszystkimi zamówieniami zakupu z **tabeli wyszukiwania danych głównych**.
    * Włączenie opcji **"Display all columns"** pokazuje dodatkowe szczegóły.
-   * Wybierz **Purchase Order** i kliknij **Proceed**:
+   * Wybierz **Zamówienie zakupu** i kliknij **Przystępować**:
      * Jeśli system znajdzie w dokumencie zamówienie zakupu, automatycznie je filtruje.
      * Jeśli nie znaleziono dopasowania, możesz **utworzyć własne filtry**, aby znaleźć właściwe zamówienie zakupu.
      * Można dodać wiele filtrów; włączenie opcji **"Match all filters"** zapewnia, że wszystkie warunki muszą być spełnione.
      * Dostępne opcje filtrów:
-       * **Smart**
-       * **Contains**
-       * **Exact**
-       * **Starts with**
-       * **Ends with**
-   * Przycisk obok **Proceed** pozwala użytkownikom **utworzyć nowe zadanie/powiadomienie**.
+       * **Mądry**
+       * **Zawiera**
+       * **Dokładny**
+       * **Zaczyna się od**
+       * **Kończy się na**
+   * Przycisk obok **Przystępować** pozwala użytkownikom **utworzyć nowe zadanie/powiadomienie**.
 2. **Wybór dostawcy (Supplier) lub Vendor ID**
    * Proces jest taki sam jak w przypadku zamówień zakupu.
    * Różnica polega na tym, że pola **Supplier i Vendor ID korzystają z tabeli danych głównych dostawców (Supplier Master Data Table)** zamiast z tabeli danych głównych nagłówków zamówień zakupu (Purchase Order Header Master Data Table).
@@ -53,7 +52,5 @@ Pola Rozmytych Danych (Fuzzy Data) pozwalają użytkownikom uzupełniać powiąz
 {% content-ref url="../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md" %}
 [fuzzy-data-configuration-with-list-of-values.md](../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md)
 {% endcontent-ref %}
-
-
 
 {% embed url="https://www.youtube.com/watch?v=vT5HuGjAYV0" %}

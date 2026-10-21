@@ -41,3 +41,7 @@ Notieren Sie abschließend Ursache, Korrektur, nachgewiesenes Ergebnis und verbl
 Starten Sie mit invalid-number. Sichern Sie die erste Fehlermeldung von amount und den Gesamtausgang error. Wiederholen Sie mit above und vergleichen Sie die neuen Ergebnisse. Das alte Fehlerprotokoll bleibt erhalten; eine erfolgreiche Fehlerbehandlung allein genügt nicht.
 
 [Lernweg](workflow-learning-path.md)
+
+## Einzelkartentests gezielt wiederholen
+
+Im geprüften Dev-Designer wechselte „Erneuter Test“ nach „Test von diesem Knoten“ zum gesamten Graphen. Öffnen Sie den Kontextmenütest der gewünschten Karte erneut und prüfen Sie die tatsächlich besuchten Knoten. Ein Ergebnis mit sechs Knoten belegt nicht den Test einer einzelnen Leerprüfkarte. Ein Zähler für gescheiterte Aktionen kann auch eine nicht erfüllte Bedingung enthalten: Lesen Sie zusätzlich Kartenausgang, Logmeldung und Gesamtergebnis.

@@ -412,82 +412,17 @@ Result Column: [Where to put answer]
 
 ---
 
-## Card: CALC_COLUMNS_REGEX / Calculate with Regex Pattern
+## CALC_COLUMNS_REGEX v2
 
-### Purpose
-Calculates column values based on pattern matching
+**Calculate Columns** rechnet mit zwei Spalten derselben Zeile und schreibt die Ergebnisspalte. **Calculate in / CALC_COLUMNS_REGEX** ergänzt eine Regex-Bedingung auf einer dritten Spalte. Die Regex entscheidet, ob gerechnet wird; sie extrahiert oder ersetzt hier keinen Teil des Texts. Die frühere Ersetzungserklärung gehört nicht zu dieser Karte.
 
-### When to Use
-- Extract values from text using patterns
-- Format data based on rules
-- Convert values based on patterns
-- Parse structured text
+Beispiel: `QTY=2`, `PRICE=10`, Operation `*`, Ergebnis `TOTAL=20.0`. Bei der Regex-Variante verwenden Sie `TYPE`, Muster `^A$`. Eine A-Zeile wird berechnet. Für eine nicht passende B-Zeile schreibt der geprüfte Code einen leeren Ergebniswert; ein vorhandener TOTAL-Wert bleibt dabei nicht automatisch erhalten.
 
-### How It Works
+Die Rechenhilfe rundet numerische Ergebnisse auf vier Dezimalstellen. Leere Einzelwerte können als 0 behandelt werden; zwei leere Texte ergeben leer. Mit `+` können nicht numerische Texte als Text verbunden werden. `10/0` löst in der geprüften Rechenhilfe einen Fehler aus. Prüfen Sie Zahlen und erforderliche Zellen deshalb vor der Berechnung; definieren Sie einen Fehlerweg.
 
-**Regex Pattern Matching:**
-```
-Original Value: "ABC-12345-XYZ"
-Pattern: Extract numbers only
-Calculation: Convert to "12345"
-Result: "12345"
-```
+Halten Sie eine vollständige Vorher-nachher-Tabelle fest: zwei passende Zeilen, eine unpassende Regex-Zeile, leere Eingabe, ungültiger Text und Division durch null. Bei A→B-abhängigen Berechnungen verbinden Sie die Karten ausdrücklich und prüfen Sie, welchen aktualisierten Wert die zweite Karte liest. Vergleichen Sie jede Zeile und vorhandene Fremdspalten, nicht nur den Dokumentstatus.
 
-### Example: Extract Supplier Code
-
-**Scenario: Article numbers contain supplier info**
-```
-Table Column: "Article_Code"
-Values: ["SUPP001-2025-A", "SUPP002-2025-B"]
-
-Pattern: Extract supplier code (first 7 characters)
-    ↓
-Calculate: SUPP001, SUPP002
-    ↓
-Store in: "Supplier_Code" column
-
-Result:
-Article_Code: SUPP001-2025-A  →  Supplier_Code: SUPP001
-Article_Code: SUPP002-2025-B  →  Supplier_Code: SUPP002
-```
-
-### Example: Format Phone Numbers
-
-**Scenario: Unformatted phone numbers**
-```
-Original: "491234567890"
-Pattern: Format as: +49 123 4567 890
-Result: "+49 123 4567 890"
-```
-
-### Example: Extract Prices from Text
-
-**Scenario: Prices in text format**
-```
-Original: "Price is 99.99 EUR"
-Pattern: Extract number only
-Result: "99.99"
-```
-
-### Parameters
-```
-Table: [Select table]
-Column: [Column to analyze]
-Regex Pattern: [Pattern to find]
-Replacement: [What to replace with]
-Result Column: [Where to store result]
-```
-
-### Common Regex Patterns
-```
-Numbers only: [0-9]+
-Letters only: [a-zA-Z]+
-First word: ^\w+
-Extract €: €(\d+\.\d{2})
-Date format: \d{4}-\d{2}-\d{2}
-```
-
----
+[P1: Tabellen berechnen und Regex-Abhängigkeit prüfen](../../masterclass/table-calculations.md)
 
 # Calculation Examples
 

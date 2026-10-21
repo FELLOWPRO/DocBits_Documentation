@@ -681,3 +681,7 @@ Fix: Check shipping documents or contact supplier
 - See "Exception Handling" for what to do with failures
 - Contact your procurement team for specific tolerance policies
 
+
+## Aktueller Konfigurations- und Ergebnisvertrag
+
+[P1: Toleranzen und PO-Vergleich mit eindeutiger Referenz](../../masterclass/tolerances-and-po.md)

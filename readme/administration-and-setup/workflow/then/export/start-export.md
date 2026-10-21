@@ -1,29 +1,13 @@
 # Start Export
 
+**Start Export** verwendet den eingerichteten Exportweg. **Export with Export Configuration** führt eine ausgewählte Konfiguration aus. Die verzögerte Variante merkt diese Konfiguration für den finalen Export am Ende des aktuellen Laufs vor. Vormerken heißt nicht „nach allen späteren Benutzerfreigaben automatisch senden“.
+
+Die geprüften neuen Versionen bieten `status=finished` oder `status=exported`: finished schließt das Dokument, exported lässt die weitere Bearbeitung zu. Start Export trägt die Auswahl ab v4, konfigurierter und verzögerter Export ab v3. Ältere Versionen verwenden finished. Fehlt die Auswahl in den neuen Versionen, sieht der Code ebenfalls finished vor; ein ungültiger Wert ist ein Konfigurationsfehler.
+
+Mit `ignore_pending_tasks=false` werden offene Aufgaben berücksichtigt. Beim unmittelbaren konfigurierten Export kann der Dienst den Export deshalb verweigern. Die Karte belegt keine automatische Wiederaufnahme nach späterer Erledigung. Klären Sie den erneuten Ausführungsanlass und prüfen Sie vor einem neuen Versand, ob bereits ein Zielbeleg existiert. Aktivieren Sie das Ignorieren nicht als Ersatz für die Freigabe.
+
+Schließen Sie den Export erst an eine ausdrücklich geprüfte Freigabebedingung an. Die Abnahme umfasst offene Aufgabe, erledigte Aufgabe, fehlende Freigabe, erfolgreichen Testziel-Empfang und erneuten Lauf. Unterscheiden Sie Export angefordert, vom Empfänger erhalten und im ERP verarbeitet. Das Übungspaket enthält keine echten Exportziele; seine Testergebnisse belegen keine Zustellung.
+
+[P1: Exportvarianten, offene Aufgaben und Abschlussstatus](../../masterclass/export-lifecycle.md)
+
 <figure><img src="../../../../.gitbook/assets/image (285).png" alt="" width="563"><figcaption></figcaption></figure>
-
-## **Zweck:**
-
-Die Workflow-Karte **"Start Export"** ist darauf ausgelegt, den Exportprozess für ein Dokument einzuleiten. Diese Karte fungiert als Auslöser innerhalb des Workflows, um den Exportvorgang nahtlos zu starten, sobald die Bedingungen in den vorangehenden Abschnitten erfüllt sind.
-
-## **Bestandteile der Karte:**
-
-1. **Aktion**
-   1. **Beschreibung**: Leitet den Exportprozess für das Dokument ein.
-   2. **Detail**: Die Karte verwendet die im System konfigurierten Exporteinstellungen, um das Dokument zu verarbeiten und zu exportieren.
-
-## **Funktionalität:**
-
-* **Bedingungsauswertung**: Das System wertet die in den Abschnitten **"Where"** und **"And"** des Workflows festgelegten Bedingungen aus. Sind alle Bedingungen erfüllt, beginnt der Exportprozess.
-* **Dokumentexport**: Das Dokument wird mithilfe der Standard- oder zuvor definierten Exportkonfiguration verarbeitet und exportiert.
-
-## **Einrichtung und Konfiguration:**
-
-Diese Karte erfordert keine spezielle Konfiguration, da sie die bereits im System definierten Exporteinstellungen verwendet. Benutzer müssen sicherstellen, dass:
-
-1. Die Bedingungen in den Abschnitten **"Where"** und **"And"** korrekt konfiguriert sind, da die Karte nur ausgeführt wird, wenn diese Bedingungen als erfüllt ausgewertet werden.
-2. Dem Dokument im System eine gültige Exportkonfiguration zugeordnet ist.
-
-## **Fazit:**
-
-Die Workflow-Karte **"Start Export"** bietet eine optimierte und automatisierte Möglichkeit, den Exportprozess auszulösen. Indem sie sich auf vorkonfigurierte Einstellungen und bedingte Auswertungen stützt, gewährleistet sie eine effiziente und präzise Dokumentverarbeitung.

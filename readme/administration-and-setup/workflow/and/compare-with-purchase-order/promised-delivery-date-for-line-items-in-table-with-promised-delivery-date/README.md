@@ -1,4 +1,4 @@
-# Date de livraison promise pour les lignes du document dans le tableau avec la date de livraison promise
+# Date de livraison promise des lignes : comparaison avec le bon de commande
 
 <figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-264ee6d588cc-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 

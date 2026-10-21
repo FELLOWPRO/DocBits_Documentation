@@ -1,6 +1,6 @@
 # Exportkonfiguration für das Lieferantenportal
 
-<figure><img src="../../../.gitbook/assets/supplier_export_configuration.png" alt="Exportkonfiguration für Lieferanten"><figcaption><p>Seite „Exportkonfiguration für Lieferanten“</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_export_configuration-de.png" alt="Exportkonfiguration für Lieferanten"><figcaption><p>Deutsche Exportkonfiguration mit ION- und IDM-Mapping. Der Editor ist in diesem Beispiel leer; es wurde keine Konfiguration gespeichert.</p></figcaption></figure>
 
 ## Übersicht
 

@@ -8,30 +8,30 @@ DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Yo
 
 * **Zu den Gruppeneinstellungen navigieren:** Melden Sie sich bei Ihrem Administratorkonto an und öffnen Sie im Admin-Bereich die Gruppeneinstellungen.
 
-<figure><img src="../../../../../.gitbook/assets/groups_settings_overview.png" alt="Übersicht der Gruppeneinstellungen"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/groups_settings_overview-de.png" alt="Übersicht der Gruppeneinstellungen"><figcaption><p>Deutsche Gruppeneinstellungen. Gruppennamen sind ausgeblendet.</p></figcaption></figure>
 
 Dieses Fenster wird geöffnet:
 
-<figure><img src="../../../../../.gitbook/assets/groups_list_overview.png" alt="Übersicht der Gruppenliste"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/groups_list_overview-de.png" alt="Übersicht der Gruppenliste"><figcaption><p>Gruppensuche und Schaltfläche „Neu“ in der deutschen Oberfläche.</p></figcaption></figure>
 
-* **Auf die Schaltfläche + New klicken:** Wenn Sie eine neue Gruppe hinzufügen möchten, klicken Sie auf die Schaltfläche + New, um den Vorgang zum Hinzufügen einer neuen Gruppe zu starten.
+* **Auf die Schaltfläche + Neu klicken:** Wenn Sie eine neue Gruppe hinzufügen möchten, klicken Sie auf die Schaltfläche + Neu, um den Vorgang zum Hinzufügen einer neuen Gruppe zu starten.
 
 <figure><img src="../../../../../.gitbook/assets/add_new_group_button.png" alt="Schaltfläche Neue Gruppe hinzufügen"><figcaption></figcaption></figure>
 
 * **Das Formular ausfüllen:** Geben Sie den Gruppennamen und eine Beschreibung der Gruppe an.
-* **Die Angaben speichern:** Sobald Sie Gruppe und Beschreibung ausgefüllt haben, klicken Sie auf die Schaltfläche „Save“.
+* **Die Angaben speichern:** Sobald Sie Gruppe und Beschreibung ausgefüllt haben, klicken Sie auf die Schaltfläche „Speichern“.
 
 <figure><img src="../../../../../.gitbook/assets/new_group_form_save.png" alt="Formular Neue Gruppe speichern"><figcaption></figcaption></figure>
 
 ## Gruppen bearbeiten:
 
-* **Gruppen bearbeiten:** Um Gruppen zu bearbeiten, klicken Sie auf „edit“. Hier können Sie den Gruppennamen ändern.
+* **Gruppen bearbeiten:** Um Gruppen zu bearbeiten, wählen Sie die Gruppe aus und klicken Sie auf das Stiftsymbol. Hier können Sie den Gruppennamen ändern.
 
 <figure><img src="../../../../../.gitbook/assets/edit_group_button.png" alt="Schaltfläche Gruppe bearbeiten"><figcaption></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/edit_group_form.png" alt="Formular Gruppe bearbeiten"><figcaption></figcaption></figure>
 
-* **Groups & permissions aktivieren:** Damit die Gruppe sichtbar ist, muss „Groups & permissions“ aktiviert sein.
+* **Gruppen und Berechtigungen aktivieren:** Verwenden Sie den Schalter „Aktivieren/Deaktivieren von Gruppen und Berechtigungen“ oben auf der Seite.
 
 <figure><img src="../../../../../.gitbook/assets/enable_groups_and_permissions_toggle.png" alt="Schalter Groups and Permissions aktivieren"><figcaption></figcaption></figure>
 

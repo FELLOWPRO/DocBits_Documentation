@@ -60,15 +60,15 @@ Um einen neuen Export zu erstellen:
 
 <summary>Webhook</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_webhook_configuration.png)
+![Deutsches Formular für einen neuen Webhook-Export](../../../.gitbook/assets/export_webhook_configuration-de.png)
 
 **Feldbeschreibungen**
 
-* **Title** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
-* **Sub-Organization** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
+* **Konfigurationstitel** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
+* **Unterorganisation** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
   * Wenn leer gelassen: gilt für die Hauptorganisation.
   * Wenn ausgewählt: gilt der Export nur für die ausgewählte Unterorganisation.
-* **Document Type** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
+* **Dokumenttyp** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
 * **Export URL** Die Ziel-URL, wohin das Dokument exportiert werden soll.
 
 </details>
@@ -79,21 +79,21 @@ Um einen neuen Export zu erstellen:
 
 <summary>SFTP</summary>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_sftp_configuration.png)
+![Deutsches Formular für einen neuen SFTP-Export](../../../.gitbook/assets/export_sftp_configuration-de.png)
 
 **Feldbeschreibungen**
 
-* **Title** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
-* **Sub-Organization** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
+* **Konfigurationstitel** Der Name der Exportkonfiguration. Dieser wird in der Exportliste angezeigt.
+* **Unterorganisation** _(optional)_ Ein Dropdown mit allen verfügbaren Unterorganisationen.
   * Wenn leer gelassen: gilt für die Hauptorganisation.
   * Wenn ausgewählt: gilt der Export nur für die ausgewählte Unterorganisation.
-* **Document Type** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
-* **Username** Der Benutzername zur Authentifizierung am SFTP-Server.
-* **Password** Das entsprechende Passwort für das SFTP-Konto. Stellen Sie sicher, dass das Konto Schreibzugriff auf den angegebenen Ordner hat.
-* **Server URL** Der Hostname oder die IP-Adresse des Ziel-SFTP-Servers.
+* **Dokumenttyp** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
+* **Benutzername** Der Benutzername zur Authentifizierung am SFTP-Server.
+* **Passwort** Das entsprechende Passwort für das SFTP-Konto. Stellen Sie sicher, dass das Konto Schreibzugriff auf den angegebenen Ordner hat.
+* **Server-URL** Der Hostname oder die IP-Adresse des Ziel-SFTP-Servers.
 * **Port** Der Port zur Verbindung mit dem SFTP-Server.
-* **Folder** Der Pfad auf dem SFTP-Server, wohin Dokumente hochgeladen werden sollen (z. B. `/incoming/invoices/`). Muss existieren und beschreibbar sein.
-*   **XSLT File (Optional)**
+* **Exportordnerpfad** Der Pfad auf dem SFTP-Server, wohin Dokumente hochgeladen werden sollen (z. B. `/incoming/invoices/`). Muss existieren und beschreibbar sein.
+*   **XSLT-Transformationsdatei (optional)**
 
     Die **XSLT-Datei** ermöglicht die Transformation des Standard-DocBits-Exportformats.
 

@@ -1,6 +1,6 @@
 # E-Mail-Vorlagen bearbeiten
 
-<figure><img src="../../../.gitbook/assets/supplier_email_templates.png" alt="E-Mail-Vorlagen für Lieferanten"><figcaption><p>Seite E-Mail-Vorlagen für Lieferanten</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_email_templates-de.png" alt="E-Mail-Vorlagen für Lieferanten"><figcaption><p>Deutsche Vorlagenübersicht. Vorlagennamen, Betreffzeilen und Benutzerangaben sind ausgeblendet.</p></figcaption></figure>
 
 ### Überblick
 
@@ -17,7 +17,7 @@ Der `{{magic_link}}` ist ein Platzhalter, der beim Versand der E-Mail dynamisch 
 #### Auf den E-Mail-Vorlagen-Editor zugreifen
 
 1. **Zu den E-Mail-Vorlagen navigieren**:
-   * Gehen Sie im Hauptmenü zum Abschnitt **Email Templates**.
+   * Gehen Sie im Hauptmenü zum Abschnitt **E-Mail-Vorlagen**.
 2. **Eine Vorlage zur Bearbeitung auswählen**:
    * Wählen Sie die E-Mail-Vorlage, die Sie bearbeiten möchten, indem Sie auf den Vorlagennamen klicken (z. B. „Supplier Invitation Email“).
 3. **Die Vorlage bearbeiten**:

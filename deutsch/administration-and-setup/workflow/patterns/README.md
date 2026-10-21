@@ -71,7 +71,7 @@ Beherrschen Sie die Kunst des Erstellens, Zuweisens, Verfolgens und Verwaltens v
 * Erstellen Sie mehrstufige Genehmigungsketten
 * Verfolgen Sie die Aufgabenerledigung und Fristen
 
-**Verwendete Karten:** Aufgaben\_create, ACTION\_ASSIGN\_TO\_USER, ACTION\_SEND\_EMAIL\_TO\_GROUPS, CONDITION\_TASK\_STATUS
+**Verwendete Karten:** tasks\_create, ACTION\_ASSIGN\_TO\_USER, ACTION\_SEND\_EMAIL\_TO\_GROUPS, CONDITION\_TASK\_STATUS
 
 [**Vollständiges Muster anzeigen →**](task-management-pattern.md)
 

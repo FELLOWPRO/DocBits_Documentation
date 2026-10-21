@@ -145,8 +145,8 @@ Currency: EUR
 * `{{DOCUMENT_NUMBER}}` – Automatische Dokument-ID
 * `{{Total_Amount}}` – Feld: Total\_Amount
 * `{{Supplier_Name}}` – Feld: Supplier\_Name
-* `{{Invoice_Number}}` – Feld: Rechnung\_Nummer
-* `{{Invoice_Date}}` – Feld: Rechnung\_Datum
+* `{{Invoice_Number}}` – Feld: Invoice\_Number
+* `{{Invoice_Date}}` – Feld: Invoice\_Date
 * `{{Approving_Manager}}` – Feld oder fester Benutzer
 
 **Leitfaden-Referenz:** [Leitfaden Aufgabenzuweisung](../then/task/task-assignment-guide.md)
@@ -763,7 +763,7 @@ Day 5: IF still not completed:
 
 ### Verwandte Karten
 
-* **Aufgaben\_create** – [Leitfaden Aufgabenzuweisung](../then/task/task-assignment-guide.md)
+* **tasks\_create** – [Leitfaden Aufgabenzuweisung](../then/task/task-assignment-guide.md)
 * **ACTION\_ASSIGN\_TO\_USER** – [Zuweisungs-Leitfaden](../then/assignee/assignment-user-guide.md)
 * **ACTION\_SEND\_EMAIL\_TO\_GROUPS** – [E-Mail-Leitfaden](../then/action/send-email-groups-guide.md)
 * **CONDITION\_TASK\_STATUS** – [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md)

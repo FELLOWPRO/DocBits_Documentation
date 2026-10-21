@@ -4,16 +4,15 @@ Om uw instellingen te configureren, klikt u op het gebruikerspictogram in de lin
 
 {% embed url="https://youtu.be/TLmAHw3EXs4" %}
 
-
 <figure><img src="../../.gitbook/assets/user-config.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/user_config_options_2.png" alt="" width="308"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-u031-nl.png" alt="Gebruikersmenu en taalkeuze."><figcaption><p>Gebruikersmenu en taalkeuze.</p></figcaption></figure>
 
 **Taal**
 
 * **Selecteer Voorkeurs Taal:** Kies uw gewenste taal uit de beschikbare opties.
 
-**Dark Mode**
+**Donkere modus**
 
 * **Schakel Dark Mode in:** Schakel de Dark Mode in of uit voor een comfortabelere kijkervaring.
 

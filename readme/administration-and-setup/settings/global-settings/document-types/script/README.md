@@ -1,5 +1,9 @@
 # Script
 
+<figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-25-nl.png" alt="Scriptlijst met afgeschermde namen en datums."><figcaption><p>Scriptlijst met afgeschermde namen en datums.</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-37-nl.png" alt="Scripteditor met een technisch Python-voorbeeld."><figcaption><p>Scripteditor met een technisch Python-voorbeeld.</p></figcaption></figure>
+
 {% embed url="https://youtu.be/n8NpWWIjmlA" %}
 DocBits Scripting Guide: Automate Workflows with Python Code
 {% endembed %}

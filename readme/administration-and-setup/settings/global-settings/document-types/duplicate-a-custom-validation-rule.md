@@ -4,6 +4,8 @@ description: Maak een aparte kopie van een bestaande aangepaste validatieregel v
 
 # Een aangepaste validatieregel dupliceren
 
+<figure><img src="../../../../.gitbook/assets/s150-custom_validation_rule_duplicate_en-nl.png" alt="Aangepaste validatieregels; geconfigureerde namen zijn afgeschermd. Relatieve datumaanduidingen blijven in deze productweergave Duitstalig."><figcaption><p>Aangepaste validatieregels; geconfigureerde namen zijn afgeschermd. Relatieve datumaanduidingen blijven in deze productweergave Duitstalig.</p></figcaption></figure>
+
 Gebruik **Duplicaat** wanneer een regel een nuttig uitgangspunt is en u een aparte kopie wilt. DocBits kopieert de definitie van de regel; u kiest de naam en de sleutel van de nieuwe regel. De originele regel blijft in de lijst.
 
 1. Ga naar **Instellingen → Documenttypen**, open het documenttype dat u wilt configureren en selecteer **Aangepaste validatieregels**. De pagina toont het geselecteerde documenttype boven de regelkaarten. Zie [Documenttypen](README.md) voor de andere instellingen die daar beschikbaar zijn.

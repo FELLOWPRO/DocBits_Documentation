@@ -16,31 +16,31 @@ Als een factuur of ander document een bepaald totaalbedrag overschrijdt dat voor
 
 **Test 1: Logic Card**
 
-When: **Assignee is:** Amier Haider
+When: **Assignee is:** Verantwoordelijke voor ontvangst
 
 And: **Document type is:** Invoice
 
-Then: **Assign document to:** Stefan Reppermund
+Then: **Assign document to:** Factuurcontroleur
 
 ![](<../../.gitbook/assets/3 (1).png>)
 
 **Test 2: Logic Card**
 
-When: **Assignee is:** Amier Haider
+When: **Assignee is:** Verantwoordelijke voor ontvangst
 
 And: **Document type is:** Delivery Note
 
-Then: **Assign document to:** James Edwards
+Then: **Assign document to:** Leveringscontroleur
 
 ![](<../../.gitbook/assets/4 (1).png>)
 
 **Test 3: Logic Card**
 
-**When:** **Assignee is:** Amier Haider
+**When:** **Assignee is:** Verantwoordelijke voor ontvangst
 
 **And:** **Document type is:** Order Confirmation
 
-**Then:** **Assign document to:** Anian Sollinger
+**Then:** **Assign document to:** Ordercontroleur
 
 ![](<../../.gitbook/assets/5 (1).png>)
 
@@ -54,11 +54,11 @@ Voor een eenvoudiger overzicht van wat er met een document moet gebeuren, kunt u
 
 **When:** **Document type is:** Delivery Note
 
-**And:** **Assignee is:** Amier Haider
+**And:** **Assignee is:** Verantwoordelijke voor ontvangst
 
 **Then:** **Change Status to:** Pending Approval
 
-<figure><img src="../../.gitbook/assets/workflow_test4_delivery_note_status.png" alt="Workflow Test 4 Delivery Note Status"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test4_delivery_note_status-nl.png" alt="Niet-opgeslagen workflowconcept voor een statuswijziging."><figcaption><p>Niet-opgeslagen workflowconcept voor een statuswijziging.</p></figcaption></figure>
 
 ![](<../../.gitbook/assets/8 (1).png>)
 
@@ -66,7 +66,7 @@ Voor een eenvoudiger overzicht van wat er met een document moet gebeuren, kunt u
 
 When: **Document type is:** Invoice
 
-And: **Assignee is:** Stefan Reppermund
+And: **Assignee is:** Factuurcontroleur
 
 Then: **Change Status to:** Pending Second Approval
 
@@ -80,11 +80,11 @@ Als een factuur of ander document een bepaald totaalbedrag overschrijdt dat voor
 
 **Test 6: Logic Card**
 
-When: **Assignee is:** Amier Haider
+When: **Assignee is:** Verantwoordelijke voor ontvangst
 
 And: Docfield **total\_amount** is **Greater than 500**
 
-Then: **Assign document to:** Asad Usman Khan
+Then: **Assign document to:** Goedkeuringsverantwoordelijke
 
 <figure><img src="../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Workflow Test 6 Total Amount Assign"><figcaption></figcaption></figure>
 
@@ -94,15 +94,15 @@ Het is ook mogelijk om de status in de workflow in te voeren, zodat de toegeweze
 
 **Test 7: Logic Card**
 
-**When:** **Assignee is:** Amier Haider
+**When:** **Assignee is:** Verantwoordelijke voor ontvangst
 
 **And:** Docfield **total\_amount** is **Greater then 500**
 
-**Then:** **Assign document to:** Asad Usman Khan
+**Then:** **Assign document to:** Goedkeuringsverantwoordelijke
 
 **Change Status to:** Pending Approval
 
-<figure><img src="../../.gitbook/assets/workflow_test7_status_update.png" alt="Workflow Test 7 Status Update"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test7_status_update-nl.png" alt="Actie voor statuswijziging in een workflowconcept."><figcaption><p>Actie voor statuswijziging in een workflowconcept.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -116,9 +116,9 @@ De Workflow met deze logic cards is ontworpen om automatisch te verifiëren dat 
 
 U kunt deze documenten een specifieke status geven of ze aan een specifieke medewerker toewijzen.
 
-<div align="center"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Workflow Test 9 Match Check Overview"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_overview-nl.png" alt="Workflowconcept met een voorwaarde voor inkoopordervergelijking."><figcaption><p>Workflowconcept met een voorwaarde voor inkoopordervergelijking.</p></figcaption></figure></div>
 
-<figure><img src="../../.gitbook/assets/workflow_test9_match_check_detail.png" alt="Workflow Test 9 Match Check Detail"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_detail-nl.png" alt="Voorwaarden voor vergelijking met een inkooporder selecteren."><figcaption><p>Voorwaarden voor vergelijking met een inkooporder selecteren.</p></figcaption></figure>
 
 **Logic Card: Quantity or Unit Price or Discount Match**
 
@@ -128,9 +128,9 @@ Deze logic card is ontworpen om automatisch te verifiëren dat de hoeveelheid, e
 
 De logica wordt geactiveerd wanneer aan een van de volgende voorwaarden wordt voldaan in een orderbevestiging ten opzichte van de oorspronkelijke inkooporder:
 
-* **Quantity**: De bestelde hoeveelheid items komt overeen met de door de leverancier bevestigde hoeveelheid.
-* **Unit Price**: De overeengekomen prijs per item komt overeen met de bevestiging van de leverancier.
-* **Discount**: Eventuele toegepaste kortingen zijn consistent tussen de inkooporder en de orderbevestiging.
+* **Hoeveelheid**: De bestelde hoeveelheid items komt overeen met de door de leverancier bevestigde hoeveelheid.
+* **Eenheidsprijs**: De overeengekomen prijs per item komt overeen met de bevestiging van de leverancier.
+* **Korting**: Eventuele toegepaste kortingen zijn consistent tussen de inkooporder en de orderbevestiging.
 * **Define Comparison Parameters**: Stel de specifieke velden (hoeveelheid, eenheidsprijs, korting) in die de logic card op een overeenkomst zal controleren.
 * **Automate Verification**: Configureer het systeem om deze gegevens automatisch te vergelijken bij ontvangst van een orderbevestiging.
 * **Customize Alerts**: Bepaal de workflow voor het afhandelen van discrepanties, inclusief het aanpassen van waarschuwingen voor handmatige beoordeling.
@@ -166,3 +166,5 @@ Nadat u de toeslagen heeft berekend, wilt u mogelijk een specifieke gebruiker in
 <figure><img src="../../.gitbook/assets/workflow_notification_card_overview.png" alt="Workflow Notification Card"><figcaption></figcaption></figure>
 
 Afhankelijk van de instellingen krijgt de gebruiker een nieuwe taak in DocBits toegewezen en optioneel een e-mail om hen op de hoogte te stellen van hun nieuwe taak.
+
+De bijgewerkte afbeeldingen tonen niet-opgeslagen concepten van voorwaarden en acties. Pas rollen en voorwaarden aan uw eigen organisatie aan.

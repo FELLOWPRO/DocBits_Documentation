@@ -1,90 +1,14 @@
-# New Fields with Charges
+# Velden met extra kosten maken
 
-\
+Open in de instellingen het documenttype en de bijbehorende velden. Kies in de bedoelde groep de optie om een veld te maken.
 
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_add_field_with_charges_1-nl.png" alt="Veldgegevens vóór het aanmaken van een nieuw veld. De knop Rug betekent hier Terug."><figcaption><p>Veldgegevens vóór het aanmaken van een nieuw veld. De knop Rug betekent hier Terug.</p></figcaption></figure>
 
-## Step 1: Access the Field Settings
+1. Voer een technische naam en een leesbare titel in.
+2. Selecteer het gegevenstype.
+3. Schakel de optie voor extra kosten in om de kostentoewijzing te tonen.
+4. Kies de bedoelde toewijzing. De beschikbare opties hangen af van de organisatieconfiguratie.
 
-1\. Navigate to Fields:
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_add_field_with_charges_2-nl.png" alt="Veldconcept met ingeschakelde optie voor extra kosten. De knop Rug betekent hier Terug."><figcaption><p>Veldconcept met ingeschakelde optie voor extra kosten. De knop Rug betekent hier Terug.</p></figcaption></figure>
 
-• From the main dashboard, click on the “Fields” option located in the sidebar.
-
-• This will open the Field Settings page where you can manage document types and recognition settings.
-
-2\. Select Document Type:
-
-• Under the “DOCUMENT TYPES” section, select the specific document type you wish to add or modify a field for.
-
-
-
-<div><figure><img src="../../../../../.gitbook/assets/docbits_add_field_with_charges_1.png" alt="Docbits Add Field With Charges 1"><figcaption></figcaption></figure> <figure><img src="../../../../../.gitbook/assets/docbits_add_field_with_charges_2.png" alt="Docbits Add Field With Charges 2"><figcaption></figcaption></figure></div>
-
-## Step 2: Add a New Field
-
-1\. Open the Add Field Dialog:
-
-• Click on the “Create Field” button located in the respective section (e.g., Invoice Details, Payment Details, Purchase Order).
-
-2\. Enter Field Details:
-
-• A dialog box titled “Document field details” will appear.
-
-• Fill in the required details:
-
-• Name: Enter the name of the new field.
-
-• Title: Enter a descriptive title for the field.
-
-• Select field type: Choose the appropriate field type from the dropdown menu.
-
-3\. Enable Charges Element:
-
-• If this field is associated with a charge, check the “Enable charges element” box.
-
-4\. Select Costing Mapping:
-
-• Upon enabling charges, a dropdown menu will appear.
-
-• Select the appropriate charge type from the list (e.g., ADD ON - ORIGIN, FUEL SURCHARGE, TOTAL FREIGHT).
-
-\
-
-
-## Step 3: Save the New Field
-
-1\. Save Settings:
-
-• Click the “SAVE” button to add the new field with the specified charge mapping.
-
-• If you need to make changes, click the “BACK” button to return to the previous screen.
-
-2\. Finalize Field Creation:
-
-• After saving, the new field will appear in the list under the specified document type.
-
-• Ensure that the OCR and Match Score settings are configured as needed for accurate recognition.
-
-3\. Complete the Setup:
-
-• Once all desired fields are added and configured, click the “Save Settings” button at the bottom of the Field Settings page to apply your changes.
-
-\
-
-
-## Additional Notes
-
-• Required Fields:
-
-• If a field is mandatory, check the “REQUIRED” box next to the field name.
-
-• Editing Existing Fields:
-
-• To edit an existing field, click on the field name, update the details, and save the changes.
-
-• Reassign Field Group:
-
-• Use the “Reassign Field Group” option to change the grouping of fields if necessary.
-
-• Master Data Settings:
-
-• For advanced configuration, access the “Master Data Settings” to manage overall field and document type settings.
+Het voorbeeld is een niet-opgeslagen concept. Opslaan maakt het veld aan; ga terug als u het niet wilt aanmaken. Controleer daarna verplicht, geforceerde validatie, OCR en Match Score afzonderlijk in de veldlijst.

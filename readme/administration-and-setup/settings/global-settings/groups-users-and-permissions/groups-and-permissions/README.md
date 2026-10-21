@@ -4,7 +4,7 @@
 DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
 {% endembed %}
 
-<figure><img src="../../../../../.gitbook/assets/groups_and_permissions.png" alt="Groepen en machtigingen"><figcaption><p>Pagina Groepen en machtigingen</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-t009-nl.png" alt="Details van de geselecteerde groep; persoonsgegevens zijn afgeschermd."><figcaption><p>Details van de geselecteerde groep; persoonsgegevens zijn afgeschermd.</p></figcaption></figure>
 
 Met groepen en machtigingen bepaalt u welke gebruikers toegang hebben tot bepaalde documenttypen en welke acties zij mogen uitvoeren.
 
@@ -18,11 +18,11 @@ De tabel toont alle geconfigureerde groepen met:
 
 | Kolom | Beschrijving |
 |--------|-------------|
-| **Group Name** | De naam van de groep. |
-| **Group Description** | Een korte beschrijving van het doel van de groep. |
-| **Actions** | Menu met opties om de groep te bewerken of te verwijderen. |
+| **Groepsnaam** | De naam van de groep. |
+| **Groepsbeschrijving** | Een korte beschrijving van het doel van de groep. |
+| **Acties** | Menu met opties om de groep te bewerken of te verwijderen. |
 
-Gebruik de zoekbalk **Search** om groepen op naam te vinden. Klik op **+ New** om een nieuwe groep te maken.
+Gebruik de zoekbalk **Zoekopdracht** om groepen op naam te vinden. Klik op **+ New** om een nieuwe groep te maken.
 
 ## Groepsmachtigingen configureren
 
@@ -30,18 +30,18 @@ Wanneer u een groep selecteert (via het menu Actions → Edit), verschijnt een m
 
 | Machtiging | Beschrijving |
 |------------|-------------|
-| **View** | Machtiging om documenten van dit type te bekijken. |
+| **Weergave** | Machtiging om documenten van dit type te bekijken. |
 | **Update** | Machtiging om documenten van dit type te wijzigen. |
-| **Delete** | Machtiging om documenten van dit type te verwijderen. |
-| **First Approval** | Machtiging om de eerste goedkeuring uit te voeren. |
-| **Second Approval** | Machtiging om een tweede goedkeuringsniveau uit te voeren (indien van toepassing). |
+| **Verwijderen** | Machtiging om documenten van dit type te verwijderen. |
+| **Eerste goedkeuring** | Machtiging om de eerste goedkeuring uit te voeren. |
+| **Tweede goedkeuring** | Machtiging om een tweede goedkeuringsniveau uit te voeren (indien van toepassing). |
 
 Elke rij in de machtigingentabel vertegenwoordigt een documenttype (bijv. Invoice, Credit Note, Delivery Note). Schakel de selectievakjes in of uit om machtigingen aan die groep te verlenen of in te trekken.
 
 ## Een nieuwe groep maken
 
 1. Klik rechtsboven op **+ New**.
-2. Voer een **Group Name** en een optionele **Description** in.
+2. Voer een **Groepsnaam** en een optionele **Beschrijving** in.
 3. Configureer de machtigingen voor elk documenttype.
 4. Wijs gebruikers aan de groep toe.
-5. Klik op **Save** om toe te passen.
+5. Klik op **Opslaan** om toe te passen.

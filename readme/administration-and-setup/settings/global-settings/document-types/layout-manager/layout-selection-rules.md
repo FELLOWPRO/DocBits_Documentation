@@ -2,7 +2,7 @@
 
 ## Overzicht
 
-Een **lay-out** bepaalt welke velden en groepen een gebruiker ziet — en in welke volgorde — op de schermen **validation**, **approval**, **reject** en **review** van een document. U ontwerpt lay-outs in de [Lay-outbouwer](README.md).
+Een **lay-out** bepaalt welke velden en groepen een gebruiker ziet — en in welke volgorde — op de schermen **validation**, **goedkeuring**, **reject** en **review** van een document. U ontwerpt lay-outs in de [Lay-outbouwer](README.md).
 
 Klassiek koos DocBits de lay-out op basis van de **herkomst** van het document: het land of de regio uit de taalinstellingen van het document, zoals `DE` of `US`. Elke herkomst had een eigen kopie van de lay-out, en niets anders kon de keuze beïnvloeden.
 
@@ -28,11 +28,11 @@ Op regels gebaseerde lay-outs worden **per documenttype** ingeschakeld door een 
 
 1. Ga naar **Instellingen → Globale instellingen → Documenttypen**.
 2. Klik op het **instellingen**-pictogram (tandwiel) op de kaart van het documenttype.
-3. Open **Manage Layouts** en zet de schakelaar aan.
+3. Open **Lay-outs beheren** en zet de schakelaar aan.
 
 <figure><img src="../../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="De schakelaar Manage Layouts"><figcaption><p>De schakelaar Manage Layouts in de aanvullende instellingen van een documenttype</p></figcaption></figure>
 
-De link **Layouts** op de kaart van het documenttype opent nu **Layouts & Selection Rules**.
+De link **Indelingen** op de kaart van het documenttype opent nu **Indelingen en selectieregels**.
 
 ### Wat er gebeurt als u het inschakelt
 
@@ -41,7 +41,7 @@ DocBits zet uw bestaande lay-outs op basis van herkomst eenmalig om in regels �
 * De lay-out van de herkomst **DEFAULT** wordt de **standaardlay-out** (de terugvaloptie).
 * Elke lay-out van een specifieke herkomst wordt een regel **"Layout for XX"** met de voorwaarde *Document Origin is XX*, die naar die lay-out verwijst. Deze regels krijgen prioriteiten in stappen van 10 (bijvoorbeeld 2000, 2010, 2020 …), zodat u uw eigen regels ervoor, ertussen of erna kunt plaatsen.
 
-<figure><img src="../../../../../.gitbook/assets/layout-selection-default-row.png" alt="Bij activering aangemaakte herkomstregels en de standaardlay-out"><figcaption><p>De bij activering aangemaakte herkomstregels, gevolgd door de standaardlay-out (FALLBACK)</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-default-row-nl.png" alt="Terugvallay-out onderaan de lijst met selectieregels. De schermnaam Field validation blijft Engelstalig in het product."><figcaption><p>Terugvallay-out onderaan de lijst met selectieregels. De schermnaam Field validation blijft Engelstalig in het product.</p></figcaption></figure>
 
 Er wordt niets verwijderd of gewijzigd aan de lay-outs zelf. Direct na activering krijgt elk document daarom precies de lay-out die het ervoor ook kreeg. Pas wanneer u regels toevoegt of wijzigt, verandert het gedrag.
 
@@ -49,14 +49,14 @@ Er wordt niets verwijderd of gewijzigd aan de lay-outs zelf. Direct na activerin
 
 ## Het scherm Layouts & Selection Rules
 
-<figure><img src="../../../../../.gitbook/assets/layouts-overview.png" alt="Het tabblad Layouts"><figcaption><p>Het tabblad Layouts: elke lay-out van het documenttype als kaart</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layouts-overview-nl.png" alt="Overzicht van lay-outs en selectieregels. De schermnaam Field validation blijft Engelstalig in het product."><figcaption><p>Overzicht van lay-outs en selectieregels. De schermnaam Field validation blijft Engelstalig in het product.</p></figcaption></figure>
 
 * **Layouts / Selection rules** (rechtsboven) schakelen tussen de lijst met lay-outs en de lijst met regels. De cijfers tonen hoeveel er zijn.
 * **Field Validation / Approval / Reject / Review** schakelen het **scherm** om. Elk scherm heeft zijn eigen lay-outs, eigen regels en eigen standaardlay-out — een Approval-regel wijzigt het validatiescherm nooit.
-* Op het tabblad **Layouts** kunt u lay-outs aanmaken, bewerken, klonen en verwijderen. Elke kaart toont of een regel de lay-out gebruikt ("Not targeted by rules" als geen enkele regel dat doet). Filter met **All / My layouts / System**; systeemlay-outs worden met DocBits meegeleverd en kunnen worden bekeken en gekloond, maar niet gewijzigd.
+* Op het tabblad **Indelingen** kunt u lay-outs aanmaken, bewerken, klonen en verwijderen. Elke kaart toont of een regel de lay-out gebruikt ("Not targeted by rules" als geen enkele regel dat doet). Filter met **All / My layouts / System**; systeemlay-outs worden met DocBits meegeleverd en kunnen worden bekeken en gekloond, maar niet gewijzigd.
 
 {% hint style="info" %}
-Eerste en tweede goedkeuring delen de **Approval**-lay-outs en -regels. Om de tweede goedkeuringsfase een eigen scherm te geven, voegt u een Approval-regel toe met de voorwaarde *Document Status is Pending second approval* — zie het [voorbeeld](#verschillende-schermen-voor-eerste-en-tweede-goedkeuring).
+Eerste en tweede goedkeuring delen de **Goedkeuring**-lay-outs en -regels. Om de tweede goedkeuringsfase een eigen scherm te geven, voegt u een Approval-regel toe met de voorwaarde *Document Status is Pending second approval* — zie het [voorbeeld](#verschillende-schermen-voor-eerste-en-tweede-goedkeuring).
 {% endhint %}
 
 ## Hoe een lay-out wordt gekozen
@@ -71,11 +71,11 @@ Regels waarvan de lay-out is verwijderd of leeg is, worden overgeslagen.
 
 ### Een uitgewerkt voorbeeld
 
-Regels van het scherm **Field Validation**:
+Regels van het scherm **Veldvalidatie**:
 
 | Prioriteit | Regel | Voorwaarde | Lay-out |
 | --- | --- | --- | --- |
-| 5 | Behaelterbau-facturen | *Supplier ID is HP0000278* | Factuur met projectvelden |
+| 5 | Facturen van voorbeeldleverancier | *Supplier ID is HP0000278* | Factuur met projectvelden |
 | 10 | E-facturen | *Extraction Method is ELECTRONIC_DOCUMENT* | E-factuur |
 | 2020 | Layout for DE | *Document Origin is DE* | Field Validation Layout (DE) |
 | — | Standaardlay-out | — | Field Validation Layout (Base) |
@@ -97,20 +97,20 @@ De lay-out wordt altijd gekozen op basis van de **huidige** waarden van het docu
 
 ## Selectieregels beheren
 
-<figure><img src="../../../../../.gitbook/assets/layout-selection-rules-list.png" alt="Het tabblad Selection rules"><figcaption><p>Het tabblad Selection rules van het scherm Field Validation</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-rules-list-nl.png" alt="Selectieregels met afgeschermde geconfigureerde namen. De schermnaam Field validation blijft Engelstalig in het product."><figcaption><p>Selectieregels met afgeschermde geconfigureerde namen. De schermnaam Field validation blijft Engelstalig in het product.</p></figcaption></figure>
 
-Elke rij toont de **prioriteit** (de eerste rij is gemarkeerd met **FIRST**), de **regelnaam en -sleutel** met de bijbehorende **voorwaarden**, de **doellay-out**, de **bron**-badge en een **Active**-schakelaar.
+Elke rij toont de **prioriteit** (de eerste rij is gemarkeerd met **FIRST**), de **regelnaam en -sleutel** met de bijbehorende **voorwaarden**, de **doellay-out**, de **bron**-badge en een **Actief**-schakelaar.
 
 | Taak | Hoe |
 | --- | --- |
-| Een regel aanmaken | **New rule** |
+| Een regel aanmaken | **Nieuwe regel** |
 | Een regel bewerken | Klik op de rij |
 | De volgorde wijzigen | Sleep de greep links van een rij omhoog of omlaag. De nieuwe volgorde wordt direct opgeslagen. |
-| Een regel uitschakelen | Schakelaar **Active**. Inactieve regels worden genegeerd. |
+| Een regel uitschakelen | Schakelaar **Actief**. Inactieve regels worden genegeerd. |
 | Dupliceren of verwijderen | Menu **⋮** van de rij |
 | Een regel zoeken | **Search rules…** |
 
-De **bron**-badge geeft aan waar een regel vandaan komt: **System**-regels worden met DocBits meegeleverd. Een systeemregel bewerken maakt een kopie voor uw organisatie, getoond als **Customized**; het origineel blijft intact en kan worden hersteld. Regels die u zelf aanmaakt zijn **Custom**.
+De **bron**-badge geeft aan waar een regel vandaan komt: **Systeem**-regels worden met DocBits meegeleverd. Een systeemregel bewerken maakt een kopie voor uw organisatie, getoond als **Op maat gemaakt**; het origineel blijft intact en kan worden hersteld. Regels die u zelf aanmaakt zijn **Aangepast**.
 
 ### De standaardlay-out
 
@@ -122,9 +122,9 @@ Om een andere terugvallay-out te gebruiken, maakt u een regel **zonder enige voo
 
 ## Een regel aanmaken
 
-Klik op **New rule** op het tabblad Selection rules van het scherm dat u wilt wijzigen.
+Klik op **Nieuwe regel** op het tabblad Selection rules van het scherm dat u wilt wijzigen.
 
-<figure><img src="../../../../../.gitbook/assets/layout-rule-editor.png" alt="De editor voor lay-outselectieregels"><figcaption><p>De regeleditor: samenvattende zin bovenaan, drie stappen links, live voorvertoning rechts</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor-nl.png" alt="Bereik, voorwaarden en doellay-out van een selectieregel. De schermnaam Field validation blijft Engelstalig in het product."><figcaption><p>Bereik, voorwaarden en doellay-out van een selectieregel. De schermnaam Field validation blijft Engelstalig in het product.</p></figcaption></figure>
 
 De zin bovenaan vat de regel samen terwijl u hem opbouwt — "When header.supplier_id = HP0000278, an INVOICE document gets the Field Validation Layout (Base) layout for Field validation. Checked at priority 5 — the first matching rule wins."
 
@@ -132,10 +132,10 @@ De zin bovenaan vat de regel samen terwijl u hem opbouwt — "When header.suppli
 
 | Instelling | Wat het doet |
 | --- | --- |
-| **Rule Name** | Wordt getoond in de regellijst. Beschrijf de zakelijke aanleiding: "Behaelterbau-facturen", "E-facturen", "Goedkeuring hoge waarde". |
-| **Rule key** | Gegenereerd uit de naam; blijft gelijk wanneer u de regel hernoemt. |
-| **Document Type** / **Layout type** | Het documenttype en het scherm waarvoor de regel geldt. Overgenomen van waar u op **New rule** klikte. |
-| **Priority** | Lagere nummers worden eerst gecontroleerd. Laat tussenruimte (5, 10, 20 …) zodat u later regels kunt invoegen. |
+| **Regelnaam** | Wordt getoond in de regellijst. Beschrijf de zakelijke aanleiding: "Facturen van voorbeeldleverancier", "E-facturen", "Goedkeuring hoge waarde". |
+| **Regelsleutel** | Gegenereerd uit de naam; blijft gelijk wanneer u de regel hernoemt. |
+| **Documenttype** / **Indelingstype** | Het documenttype en het scherm waarvoor de regel geldt. Overgenomen van waar u op **Nieuwe regel** klikte. |
+| **Prioriteit** | Lagere nummers worden eerst gecontroleerd. Laat tussenruimte (5, 10, 20 …) zodat u later regels kunt invoegen. |
 
 ### Stap 2 — Applies when
 
@@ -159,41 +159,41 @@ Het paneel rechts toont wat de regel doet voor een voorbeelddocument met de waar
 
 | Regel | Betekenis |
 | --- | --- |
-| **Sample document** | De waarden die voor de voorvertoning worden gebruikt, afgeleid van uw voorwaarden |
+| **Voorbeelddocument** | De waarden die voor de voorvertoning worden gebruikt, afgeleid van uw voorwaarden |
 | **matched_by** | `rule` als een regel overeenkwam, anders de standaard |
-| **Resolved layout** | De lay-out die het voorbeelddocument zou krijgen |
-| **Priority hit** | De prioriteit van de regel die overeenkwam |
+| **Opgeloste lay-out** | De lay-out die het voorbeelddocument zou krijgen |
+| **Prioriteit van de overeenkomende regel** | De prioriteit van de regel die overeenkwam |
 | **watched_fields** | De velden waarvan de lay-outkeuze afhangt. Wanneer een gebruiker er één wijzigt, wordt de lay-out opnieuw gekozen. |
 
-Klik op **Create Rule** (of **Save rule** bij het bewerken) om op te slaan. **Cancel** brengt u terug naar de regellijst.
+Klik op **Regel maken** (of **Regel opslaan** bij het bewerken) om op te slaan. **Annuleren** brengt u terug naar de regellijst.
 
 ## Voorbeelden
 
 ### Extra velden voor één leverancier
 
-Scherm **Field Validation** · prioriteit **5** · *Supplier ID is HP0000278* · doel *Factuur met projectvelden* (een kloon van uw standaardlay-out met de extra velden voor project en kostenplaats).
+Scherm **Veldvalidatie** · prioriteit **5** · *Supplier ID is HP0000278* · doel *Factuur met projectvelden* (een kloon van uw standaardlay-out met de extra velden voor project en kostenplaats).
 
 ### Eén lay-out voor meerdere landen
 
-Scherm **Field Validation** · prioriteit **100** · **ANY of**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · doel *DACH-factuur*. Deactiveer de gemigreerde regels "Layout for AT" en "Layout for CH" als ze naar oudere kopieën verwijzen.
+Scherm **Veldvalidatie** · prioriteit **100** · **ANY of**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · doel *DACH-factuur*. Deactiveer de gemigreerde regels "Layout for AT" en "Layout for CH" als ze naar oudere kopieën verwijzen.
 
 ### Een eenvoudiger scherm voor e-facturen
 
-Scherm **Field Validation** · prioriteit **10** · *Extraction Method is ELECTRONIC_DOCUMENT* · doel *E-factuur* (zonder OCR-gerelateerde velden).
+Scherm **Veldvalidatie** · prioriteit **10** · *Extraction Method is ELECTRONIC_DOCUMENT* · doel *E-factuur* (zonder OCR-gerelateerde velden).
 
 ### Een strenger goedkeuringsscherm voor hoge bedragen
 
-Scherm **Approval** · prioriteit **10** · *Total Amount greater than 10000* · doel *Goedkeuring hoge waarde* (met kostenplaats, budgethouder en contractnummer).
+Scherm **Goedkeuring** · prioriteit **10** · *Total Amount greater than 10000* · doel *Goedkeuring hoge waarde* (met kostenplaats, budgethouder en contractnummer).
 
 ### Verschillende schermen voor eerste en tweede goedkeuring
 
-Scherm **Approval** · prioriteit **5** · *Document Status is Pending second approval* · doel *Second Approval Layout*. Documenten in de eerste goedkeuringsstap komen niet overeen en krijgen de standaardlay-out van Approval.
+Scherm **Goedkeuring** · prioriteit **5** · *Document Status is Pending second approval* · doel *Second Approval Layout*. Documenten in de eerste goedkeuringsstap komen niet overeen en krijgen de standaardlay-out van Approval.
 
-<figure><img src="../../../../../.gitbook/assets/layout-rule-approval-status.png" alt="Een goedkeuringsregel op de documentstatus"><figcaption><p>Een Approval-regel voor de tweede goedkeuringsfase; de voorvertoning bepaalt de Second Approval Layout</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-approval-status-nl.png" alt="Niet-opgeslagen concept van een regel voor lay-outselectie. De schermnaam Field validation blijft Engelstalig in het product."><figcaption><p>Niet-opgeslagen concept van een regel voor lay-outselectie. De schermnaam Field validation blijft Engelstalig in het product.</p></figcaption></figure>
 
 ### Een speciaal afwijzingsscherm voor sommige leveranciers
 
-Scherm **Reject** · prioriteit **10** · *Supplier ID is one of* `10040, 10041` · doel *Reject with reason codes*.
+Scherm **Afwijzen** · prioriteit **10** · *Supplier ID is one of* `10040, 10041` · doel *Reject with reason codes*.
 
 ## Best practices
 
@@ -208,8 +208,8 @@ Scherm **Reject** · prioriteit **10** · *Supplier ID is one of* `10040, 10041`
 
 | Symptoom | Wat te controleren |
 | --- | --- |
-| Een document krijgt de verkeerde lay-out | Een eerdere regel komt als eerste overeen. Bekijk de regels erboven, of de **Priority hit** in de voorvertoning. |
-| De standaard wordt gebruikt hoewel een regel zou moeten overeenkomen | Is de regel **Active**? Komt de voorwaarde overeen met de exacte waarde (hoofdletters, spaties)? Staat de regel op het juiste **scherm**-tabblad? |
+| Een document krijgt de verkeerde lay-out | Een eerdere regel komt als eerste overeen. Bekijk de regels erboven, of de **Prioriteit van de overeenkomende regel** in de voorvertoning. |
+| De standaard wordt gebruikt hoewel een regel zou moeten overeenkomen | Is de regel **Actief**? Komt de voorwaarde overeen met de exacte waarde (hoofdletters, spaties)? Staat de regel op het juiste **scherm**-tabblad? |
 | De lay-out verandert terwijl een gebruiker werkt | Een veld in **watched_fields** is gewijzigd. Baseer de regel op een stabieler veld. |
 | Een lay-out kan niet worden verwijderd | Een regel verwijst er nog naar. Wijs die regel eerst opnieuw toe of verwijder hem. |
 | Er wordt helemaal geen lay-out getoond | Geen enkele regel kwam overeen, er is geen standaard en er bestaat geen lay-out op basis van herkomst voor dit scherm. Voeg een regel zonder voorwaarde toe als vangnet. |

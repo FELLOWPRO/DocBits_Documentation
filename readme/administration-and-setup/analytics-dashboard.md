@@ -2,11 +2,11 @@
 
 ## Overzicht
 
-Het **Analyse-dashboard** biedt volledig inzicht in de prestaties van uw documentverwerking. Het volgt hoe lang documenten in elke fase van hun traject doorbrengen — van import tot export — en helpt u knelpunten te identificeren, prestaties te vergelijken tussen organisaties, documenttypen en leveranciers, en uw resultaten te benchmarken tegen het **DocBits Global Average** (wereldwijd gemiddelde).
+Het **Analyse-dashboard** biedt volledig inzicht in de prestaties van uw documentverwerking. Het volgt hoe lang documenten in elke fase van hun traject doorbrengen — van import tot export — en helpt u knelpunten te identificeren, prestaties te vergelijken tussen organisaties, documenttypen en leveranciers, en uw resultaten te benchmarken tegen het **DocBits wereldwijd gemiddelde** (wereldwijd gemiddelde).
 
 Elk document doorloopt verschillende fasen:
 
-**Nieuw** (geïmporteerd) → **Actief** (verwerking) → **Klaar voor validatie** (in afwachting van gebruikersbeoordeling) → **In afwachting van goedkeuring** → **Export** (voltooid en geëxporteerd)
+**Nieuw** (geïmporteerd) → **Actief** (verwerking) → **Klaar voor validatie** (in afwachting van gebruikersbeoordeling) → **In afwachting van goedkeuring** → **Exporteren** (voltooid en geëxporteerd)
 
 In elke fase verstrijkt tijd — het Analyse-dashboard vertelt u precies **hoeveel** en **waar** u uw verbeteringen moet richten.
 
@@ -40,25 +40,25 @@ Kies de juiste invalshoek voor uw analyse. Elk flow-type geeft u een ander persp
 
 Gebruik de **Flow-type**-schakelaar boven aan het dashboard om tussen perspectieven te wisselen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_types.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_types-nl.png" alt="Weergaven voor verwerking, gebruikersinteracties en statussen."><figcaption><p>Weergaven voor verwerking, gebruikersinteracties en statussen.</p></figcaption></figure>
 
 ### Status-flow
 
 Volgt het documenttraject van **Nieuw** tot **Geëxporteerd** — nuttig voor end-to-end levenscyclusanalyse.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_status_flow.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_status_flow-nl.png" alt="Statusweergave in de analyse."><figcaption><p>Statusweergave in de analyse.</p></figcaption></figure>
 
 ### Verwerkings-flow
 
 Analyseert prestaties over alle **technische verwerkingsmodules** (OCR, classificatie, extractie, validatie) — nuttig voor het identificeren van knelpunten aan de systeemkant.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_processing_flow.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_processing_flow-nl.png" alt="Procesweergave met de geaggregeerde fasen."><figcaption><p>Procesweergave met de geaggregeerde fasen.</p></figcaption></figure>
 
 ### Gebruikersinteractie-flow
 
 Richt zich op **menselijke contactpunten** — wachttijd in de wachtrij, handmatige validatie, beoordeling en goedkeuring — nuttig voor het identificeren van knelpunten in workflow en personeelsinzet.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_user_interaction_flow.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_user_interaction_flow-nl.png" alt="Weergave van geaggregeerde gebruikersinteracties."><figcaption><p>Weergave van geaggregeerde gebruikersinteracties.</p></figcaption></figure>
 
 ## Filteropties
 
@@ -68,13 +68,13 @@ Het dashboard ondersteunt krachtige multidimensionale filtering. Alle grafieken,
 
 Vind direct elk document op **naam** of **unieke ID**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_search.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_search-nl.png" alt="Analyse gefilterd op de validatiefase."><figcaption><p>Analyse gefilterd op de validatiefase.</p></figcaption></figure>
 
 ### Flow-stappen
 
 Selecteer specifieke stappen om uw analyse te richten. Het in-/uitschakelen van stappen herberekent ook de timingstatistieken voor de andere componenten van het dashboard.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_flow_steps.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_flow_steps-nl.png" alt="Faseselectie in het filter van de analysetabel."><figcaption><p>Faseselectie in het filter van de analysetabel.</p></figcaption></figure>
 
 ### Suborganisatie, documenttype, leverancier, groep
 
@@ -85,7 +85,7 @@ Vergelijk prestaties tussen:
 * **Leveranciers** — om te identificeren welke leveranciers de langste verwerkingstijden veroorzaken
 * **Groepen** — om prestaties te vergelijken tussen toegewezen gebruikersgroepen (beschikbaar voor de flow-typen **Status** en **Gebruikersinteractie**)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_dimensions.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_dimensions-nl.png" alt="Analysefilters voor fase, suborganisatie, documenttype en leverancier."><figcaption><p>Analysefilters voor fase, suborganisatie, documenttype en leverancier.</p></figcaption></figure>
 
 <mark style="color:red;">**Opmerking**</mark>: Het filter **Groep** is alleen van toepassing op documenten die **rechtstreeks aan een groep zijn toegewezen**. Documenten die zijn toegewezen aan een individuele gebruiker — zelfs als die gebruiker lid is van een groep — worden **niet** opgenomen in de resultaten van het groepsfilter.
 
@@ -95,13 +95,13 @@ Standaard ingeschakeld — alleen documenten die de export hebben voltooid, word
 
 <mark style="color:red;">**Opmerking**</mark>: Het uitschakelen hiervan kan leiden tot onnauwkeurige gemiddelde waarden, omdat documenten die nog niet zijn voltooid ook in de berekeningen worden meegenomen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_only_exported_toggle.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_only_exported_toggle-nl.png" alt="Optie om alleen geëxporteerde documenten te analyseren."><figcaption><p>Optie om alleen geëxporteerde documenten te analyseren.</p></figcaption></figure>
 
 ### Tijdsbereik
 
 Analyseer elke periode van **7 dagen** tot een **volledig jaar**, of stel een **aangepast bereik** in met behulp van de datumkiezer.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_time_range.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_time_range-nl.png" alt="Optie voor een aangepaste periode in de analysefilters."><figcaption><p>Optie voor een aangepaste periode in de analysefilters.</p></figcaption></figure>
 
 ## Flow-stappen-kaarten
 
@@ -110,12 +110,12 @@ Elke kaart vertegenwoordigt een flow-stap op basis van het geselecteerde **Flow-
 Elke kaart toont:
 
 * **Min, Gem., Max** tijden voor de stap
-* Een vergelijking tussen uw **Gem. tijd** en het **DocBits Global Average** (wanneer de vergelijkingsschakelaar aanstaat)
+* Een vergelijking tussen uw **Gem. tijd** en het **DocBits wereldwijd gemiddelde** (wanneer de vergelijkingsschakelaar aanstaat)
 * Een selectiecirkel om de stap **op te nemen of uit te sluiten** van de geaggregeerde timingberekeningen die worden gebruikt door de Grafiek Gemiddelde Tijd, de Tijdtrendgrafiek en de Datatabel
 
 Met een schakelaar **Alles selecteren** in de header kunt u alle stappen tegelijk in- of uitschakelen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_steps_card.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_steps_card-nl.png" alt="Fasekaarten met geaggregeerde verwerkingstijden."><figcaption><p>Fasekaarten met geaggregeerde verwerkingstijden.</p></figcaption></figure>
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
 
@@ -127,7 +127,7 @@ De schakelaar **Vergelijk met het wereldwijde gemiddelde** bepaalt of het DocBit
 * **Oranje** — uw Gem. tijd is tot **+25%** boven het Global Average
 * **Rood** — uw Gem. tijd is **+25%** of meer boven het Global Average
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_global_average_comparison.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_global_average_comparison-nl.png" alt="Gemiddelde duur vergeleken met het algemene gemiddelde."><figcaption><p>Gemiddelde duur vergeleken met het algemene gemiddelde.</p></figcaption></figure>
 
 ## Grafiek Gemiddelde Tijd
 
@@ -179,7 +179,7 @@ De Datatabel biedt volledige toegang tot alle onderliggende rijgegevens voor de 
 * **Sorteer** door op kolomkoppen te klikken en **herschik** kolommen via drag-and-drop.
 * **CSV downloaden** via de knop in de kaartheader — alleen de momenteel zichtbare kolommen worden geëxporteerd.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_data_table-nl.png" alt="Analysetabel met Nederlandstalige labels; documentwaarden zijn afgeschermd. Het productlabel Tafel verwijst hier naar een gegevenstabel."><figcaption><p>Analysetabel met Nederlandstalige labels; documentwaarden zijn afgeschermd. Het productlabel Tafel verwijst hier naar een gegevenstabel.</p></figcaption></figure>
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 

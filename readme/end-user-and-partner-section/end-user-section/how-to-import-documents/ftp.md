@@ -3,24 +3,22 @@ hidden: true
 noIndex: true
 ---
 
-# FTP
+# Import via FTP en SFTP
 
-Als u uw SFTP wilt integreren met DocBits om documenten te importeren.
+Automatische import vereist goedgekeurde verbindingsgegevens en een map die toegankelijk is voor het serveraccount.
 
-Vereisten
+## Een verbinding maken
 
-* Correct geconfigureerde, Linux-compatibele SFTP-server
-* SFTP-hostnaam, gebruikersnaam en wachtwoord
-* Toegewijde importmap
+Open de importinstellingen en maak een nieuwe verbinding in het FTP-gedeelte.
 
-**Importconfiguratie**
+<figure><img src="../../../.gitbook/assets/s150-ftp1-nl.png" alt="Overzicht van FTP-verbindingen met afgeschermde verbindingsgegevens."><figcaption><p>Overzicht van FTP-verbindingen met afgeschermde verbindingsgegevens.</p></figcaption></figure>
 
-Open Instellingen vanaf het Dashboard en navigeer naar Importeren. Selecteer onder FTP-import om een nieuwe configuratie toe te voegen.
+De wizard begint met de serverconfiguratie. Kies het bedoelde protocol, de server, de poort en de aanmeldgegevens. Gebruik de waarden van de serverbeheerder.
 
-<figure><img src="../../../.gitbook/assets/ftp1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-ftp_import_configuration_form-nl.png" alt="Eerste stap van de FTP-importwizard: serverconfiguratie."><figcaption><p>Eerste stap van de FTP-importwizard: serverconfiguratie.</p></figcaption></figure>
 
-Voer SFTP-referenties in de gegeven velden in en selecteer opslaan (Het API-sleutelveeld wordt automatisch gevuld met de API-sleutel van de omgeving waarin u werkt).
+Ga verder met de opties en configuratie. Controleer de hele verbinding voordat u opslaat.
 
-![](https://lh7-us.googleusercontent.com/m11trSpnDmv9aco98vPG6xuIhYxngp6TauG7lDYEWB2VguNmX0ypXMi3Fc4Ey6V4Iy_YwOy4Zooh3rj_WoAQ3PQgVIjw5vqToOuq_lIxN7IqPE2fv1puzsnEO96y5mn5FHjFtC1wYrEf9sxjHk1GL2I)
+## Bestanden archiveren
 
-Zodra u alle benodigde gegevens van uw SFTP hebt ingevoerd, klikt u op OPSLAAN.
+Als de verbinding archivering ondersteunt, stelt u dit in bij de importopties. Controleer of het account naar de archiefmap kan schrijven en test het gedrag met een voorbeeldbestand. Het oude afzonderlijke archiveringsformulier is vervangen door de huidige wizard.

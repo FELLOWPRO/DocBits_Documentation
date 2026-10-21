@@ -1,74 +1,43 @@
 # Tabellen en kolommen definiëren
 
-Gebruik deze handleiding om tabellen en kolommen voor de extractie van regelitems in DocBits handmatig te definiëren. Dit is vooral nuttig wanneer de automatische detectie de tabelstructuur niet volledig herkent of wanneer u eigen velden wilt toevoegen.
+Als een tabel niet volledig wordt herkend, kunt u met tabeltraining het gebied en de kolommen aangeven. De voorbeelden gebruiken een fictieve factuur en een niet-opgeslagen concept.
 
-### 1. Open de weergave voor tabelextractie
+## Training openen
 
-Open uw document in DocBits en klik op de knop **“Table Training”** om de weergave voor tabelextractie te openen.
+Open het document in veldvalidatie en ga naar tabelextractie.
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_1-nl.png" alt="Interface om tabellen en kolommen te definiëren."><figcaption><p>Interface om tabellen en kolommen te definiëren.</p></figcaption></figure>
 
-### 2. Trainingsmodus activeren
+Schakel de trainingsmodus in om de selectie- en kolomhulpmiddelen te tonen.
 
-Om tabellen en kolommen handmatig te definiëren of te wijzigen, klikt u op **“TRAINING MODE.”**
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_2-nl.png" alt="Tabeltraining met ingeschakelde trainingsmodus."><figcaption><p>Tabeltraining met ingeschakelde trainingsmodus.</p></figcaption></figure>
 
-<div align="center"><figure><img src="../../../../.gitbook/assets/define_tables_and_columns_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
+De werkbalk biedt ook automatische detectie. Vergelijk het resultaat met het document: de afbeelding toont de beschikbare hulpmiddelen en bewijst geen voltooide detectie.
 
-### 3. Het tabelgebied definiëren
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_3-nl.png" alt="Hulpmiddelen voor tabeltraining, waaronder automatische detectie."><figcaption><p>Hulpmiddelen voor tabeltraining, waaronder automatische detectie.</p></figcaption></figure>
 
-Na het openen van de Training Mode kunt u definiëren waar de tabel zich in het document bevindt. U hebt twee opties:
+## Het gebied en de kolommen aangeven
 
-#### Optie 1: Auto-Detect gebruiken
+Teken met het potlood een rechthoek rond de kolomkoppen en factuurregels. Laat de totalen eronder buiten het gebied.
 
-Klik op de knop **“Auto-Detect Tables”** zodat DocBits zelf probeert het tabelgebied te herkennen.
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_4-nl.png" alt="Niet-opgeslagen tabelgebied rond de regels van de fictieve factuur."><figcaption><p>Niet-opgeslagen tabelgebied rond de regels van de fictieve factuur.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_3.png" alt="" width="375"><figcaption></figcaption></figure>
+Kies het kolomhulpmiddel en plaats verticale scheidingen tussen de daadwerkelijke kolommen.
 
-Als de detectie slaagt, wordt de omtrek van de tabel automatisch weergegeven. Daarna kunt u verdergaan met het definiëren van de kolommen.
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_5-nl.png" alt="Tabelgebied met verticale kolomscheidingen."><figcaption><p>Tabelgebied met verticale kolomscheidingen.</p></figcaption></figure>
 
-#### Optie 2: Tabel handmatig definiëren
+Controleer positie, omschrijving, aantal, eenheidsprijs en bedrag.
 
-Als de automatische detectie mislukt of onnauwkeurig is, kunt u de tabel handmatig definiëren:
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_9-nl.png" alt="Scheidingen tussen de kolommen van de fictieve factuur."><figcaption><p>Scheidingen tussen de kolommen van de fictieve factuur.</p></figcaption></figure>
 
-1. Klik op de knop **“Edit”** om de modus voor tabelselectie te activeren.
-2. Teken een rechthoek rond het tabelgebied in de documentweergave aan de linkerkant.
+Controleer het volledige gebied en alle scheidingen voordat u het document of de regels opslaat.
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_4.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_8-nl.png" alt="Gebied en scheidingen in een niet-opgeslagen trainingsconcept."><figcaption><p>Gebied en scheidingen in een niet-opgeslagen trainingsconcept.</p></figcaption></figure>
 
-### 4. Kolommen toevoegen en definiëren
+## De extractie controleren
 
-Zodra de tabellen zijn gedefinieerd, kunt u de kolommen handmatig definiëren met de volgende knop:\
+Vergelijk de uitgelezen regels met de factuur. De volgende afbeelding toont regels die al automatisch waren uitgelezen in de validatie. Ze zijn niet het resultaat van het hierboven getoonde trainingsconcept.
 
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_10-nl.png" alt="Automatisch uitgelezen factuurregels van de fictieve factuur in de validatie."><figcaption><p>Automatisch uitgelezen factuurregels van de fictieve factuur in de validatie.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_5.png" alt="" width="563"><figcaption></figcaption></figure>
-
-Definieer en sorteer de kolommen door ze op het document te slepen en neer te zetten. Herhaal dit ook voor de tabellen op de andere pagina's. Als de tabellen op elke pagina gelijk zijn, kunt u als alternatief de volgende knop gebruiken om dezelfde kolommen toe te passen op alle tabellen die in het document zijn gedefinieerd. Deze functie kopieert de kolommen die u hebt gedefinieerd ook naar alle andere pagina's:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_6.png" alt="" width="563"><figcaption></figcaption></figure>
-
-Gebruik de **zoom**-functie om kolommen beter te definiëren in drukke of complexe documenten, bijvoorbeeld wanneer veel informatie dicht bij elkaar staat en het daardoor moeilijk is om de kolommen te definiëren:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_7.png" alt="" width="277"><figcaption></figcaption></figure>
-
-Als u per ongeluk een kolom hebt gedefinieerd, kunt u die selecteren door erop te klikken en verwijderen met de volgende knop:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_9.png" alt="" width="563"><figcaption></figcaption></figure>
-
-<mark style="color:red;">**Opmerking**</mark>: De knop is alleen zichtbaar als de kolom is geselecteerd.
-
-Als u klaar bent met het definiëren van alle tabellen en kolommen in uw document, gebruikt u de knop “Save” om uw wijzigingen te activeren en de gegevens uit het document te extraheren:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_8.png" alt="" width="563"><figcaption></figcaption></figure>
-
-De gegevens van alle gedefinieerde gebieden worden geëxtraheerd en aan de rechterkant weergegeven:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_10.png" alt="" width="375"><figcaption></figcaption></figure>
-
-### 6. Opslaan en extraheren
-
-Klik op **“Save Rules”** zodra alle tabellen en kolommen zijn gedefinieerd.
-
-* Hiermee geeft u DocBits aan waar de tabelgegevens van deze specifieke leverancier te vinden zijn.
-* De volgende keer dat een document van dezelfde leverancier wordt geüpload, extraheert DocBits de tabel automatisch met de opgeslagen regels.
-
-<mark style="color:red;">**Opmerking**</mark>: Deze training is leverancierspecifiek. Ze geldt niet voor documenten van andere leveranciers.
+Test na het bedoelde opslaan andere documenten van dezelfde leverancier. Eén factuur bewijst geen betrouwbare extractie voor alle lay-outs.

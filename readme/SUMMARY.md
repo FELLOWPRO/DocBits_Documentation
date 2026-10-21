@@ -722,7 +722,7 @@
     * [Aufgabenzuweisungs- und Erstellungskarten](administration-and-setup/workflow/then/task/task-assignment-guide.md)
     * [Feld- und Tabellenbearbeitungskarten](administration-and-setup/workflow/then/document-field/field-manipulation-guide.md)
     * [DocOperator-Prompt ausführen (Automatisierungsskript)](administration-and-setup/workflow/then/action/docoperator-script-guide.md)
-    * [Externe API aufrufen](administration-and-setup/workflow/then/action/call-api-guide.md)
+    * [DocBits-API aufrufen](administration-and-setup/workflow/then/action/call-api-guide.md)
     * [Senden Sie E-Mails an Gruppen](administration-and-setup/workflow/then/action/send-email-groups-guide.md)
     * [HTTPS-Anfrage senden](administration-and-setup/workflow/then/action/https-request-guide.md)
     * [Leitfäden für Workflow-Muster](administration-and-setup/workflow/patterns/README.md)

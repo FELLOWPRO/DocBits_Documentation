@@ -129,7 +129,7 @@ Usa questo pattern quando devi:
 * Estrarre le voci di riga dalla fattura
 * Calcolare i totali di riga (Qtà × Prezzo)
 * Calcolare il subtotale (somma dei totali di riga)
-* Calcolare l'importo dell'imposta (Subtotale × Aliquota fiscale)
+* Calcolare l'importo dell'imposta (Subtotale × `Tax_Rate`)
 * Calcolare il totale generale (Subtotale + Imposta)
 * Convertire in EUR se la fattura è in un'altra valuta
 * Formattare gli importi a 2 cifre decimali

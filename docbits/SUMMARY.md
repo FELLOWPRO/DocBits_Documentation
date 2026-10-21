@@ -725,7 +725,7 @@
     * [Task Assignment & Creation Cards](administration-and-setup/workflow/cards-overview/task-assignment-guide.md)
     * [Field & Table Manipulation Cards](administration-and-setup/workflow/cards-overview/field-manipulation-guide.md)
     * [Run DocOperator Prompt (Automation Script)](administration-and-setup/workflow/cards-overview/docoperator-script-guide.md)
-    * [Call External API](administration-and-setup/workflow/cards-overview/call-api-guide.md)
+    * [Call the DocBits API](administration-and-setup/workflow/cards-overview/call-api-guide.md)
     * [Send Email to Groups](administration-and-setup/workflow/cards-overview/send-email-groups-guide.md)
     * [Send HTTPS Request](administration-and-setup/workflow/cards-overview/https-request-guide.md)
     * [Workflow Pattern Guides](administration-and-setup/workflow/cards-overview/patterns/README.md)

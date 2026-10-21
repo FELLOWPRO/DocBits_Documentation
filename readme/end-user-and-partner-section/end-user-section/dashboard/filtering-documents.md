@@ -2,57 +2,30 @@
 
 ## Standard-Filteroptionen
 
-Sie können nach bestimmten Dokumenten suchen, indem Sie den Dokumentnamen oder die ID in die Suchleiste oben im Dashboard eingeben.
+Über die Suchleiste im Dashboard suchen Sie nach Dokumenten. Weitere Möglichkeiten und Suchausdrücke erklärt die [Schnellsuche](quick-search.md).
 
-<figure><img src="../../../.gitbook/assets/FilteringDocs_1.png" alt=""><figcaption></figcaption></figure>
+Öffnen Sie das Filtersymbol rechts in der Suchleiste. Im aktuellen Filterdialog stehen **Status**, **Zugewiesen An** und **Neustart Erforderlich** zur Verfügung.
 
-Für eine verfeinerte Filterung klicken Sie auf das Filtersymbol auf der rechten Seite der Suchleiste, um bestimmte Kriterien für die Suche nach Dokumenten auszuwählen.
+<figure><img src="../../../.gitbook/assets/dashboard_filters-de.png" alt="Deutscher Filterdialog mit Status, Zugewiesen An, Neustart Erforderlich, Filter löschen und Anwenden"><figcaption><p>Der Filterdialog der deutschen DocBits-Oberfläche. Die Auswahllisten sind geschlossen; Personen- und Dokumentdaten werden nicht gezeigt.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/FilteringDocs_2.png" alt=""><figcaption></figcaption></figure>
+* **Status**: Beschränken Sie die Liste auf einen Verarbeitungsstatus, zum Beispiel „Bereit zur Validierung“.
+* **Zugewiesen An**: Filtern Sie nach der zuständigen Person. Abhängig von der Organisationskonfiguration kann die Auswahl auch Gruppen enthalten.
+* **Neustart Erforderlich**: Zeigen Sie Dokumente an, die einen Neustart erfordern.
 
-Die folgenden Filteroptionen sind verfügbar:
-
-* **Status**: Filtern nach Verarbeitungsstatus (z. B. Bereit zur Validierung, Abgelehnt).
-*   **Zugewiesen an**: Filtern nach den dem Dokument zugewiesenen Benutzern.
-
-    <figure><img src="../../../.gitbook/assets/FilteringDocs_9.png" alt=""><figcaption></figcaption></figure>
-* **Gruppe zugewiesen**: Filtern nach den dem Dokument zugewiesenen Gruppen.
-* **Neustart erforderlich**: Filtern nach Dokumenten, die einen Neustart erfordern.
-
-Klicken Sie auf **Anwenden**, um die ausgewählten Filter anzuwenden, oder auf **Filter zurücksetzen**, um sie zurückzusetzen.
-
-<figure><img src="../../../.gitbook/assets/FilteringDocs_3.png" alt=""><figcaption></figcaption></figure>
+Wählen Sie **Anwenden**, um die Filter zu übernehmen. Mit **Filter löschen** setzen Sie die Filter zurück.
 
 ## Zeitbasierte Filterung
 
-Um Dokumente nach Importdatum zu filtern, verwenden Sie den Zeitfilter rechts neben der Suchleiste. Sie können aus den folgenden voreingestellten Zeiträumen wählen:
+Je nach Suchkonfiguration zeigt das Dashboard zusätzlich Schaltflächen für voreingestellte Zeiträume und einen benutzerdefinierten Zeitraum. Bei aktivierter Volltextsuche können diese Schaltflächen ausgeblendet sein.
 
-* **30 Tage**
-* **90 Tage**
-* **180 Tage**
-* **365 Tage**
-* **Alle**
+Wenn die Zeitauswahl sichtbar ist, können Sie den Importzeitraum auf 30, 90, 180 oder 365 Tage begrenzen oder alle Dokumente anzeigen. Für einen eigenen Zeitraum öffnen Sie **Benutzerdefiniert**, geben Start- und Enddatum an und wählen **Anwenden**.
 
-<figure><img src="../../../.gitbook/assets/FilteringDocs_4.png" alt=""><figcaption></figcaption></figure>
-
-Sie können auch einen benutzerdefinierten Zeitraum auswählen, indem Sie auf **Benutzerdefiniert** klicken und dann ein **Startdatum** und ein **Enddatum** angeben. Klicken Sie anschließend auf **Anwenden**, um den Filter zu aktivieren.
-
-<figure><img src="../../../.gitbook/assets/FilteringDocs_5.png" alt=""><figcaption></figcaption></figure>
-
-<mark style="color:red;">**Hinweis**</mark>: Die Auswahl eines längeren Zeitraums kann zu längeren Ladezeiten führen.
+> **Hinweis:** Größere Zeiträume können die Ladezeit erhöhen.
 
 ## Nach Dokumenttyp filtern
 
-So filtern Sie nach bestimmten Dokumenttypen:
+1. Öffnen Sie das Plus-Symbol neben den Dokumenttyp-Registerkarten im Dashboard.
+2. Wählen Sie den gewünschten Dokumenttyp aus der Liste.
+3. Wechseln Sie über die Registerkarten zwischen den Dokumenttypen.
 
-1.  Klicken Sie auf das Plus-Symbol (+) oben im Dashboard.
-
-    <figure><img src="../../../.gitbook/assets/FilteringDocs_6.png" alt=""><figcaption></figcaption></figure>
-2. Wählen Sie einen Dokumenttyp aus der Liste aus.
-3.  Nachdem Sie einen Dokumenttyp ausgewählt haben, können Sie über die Registerkarten oben im Dashboard zwischen den Filtern wechseln.
-
-    <figure><img src="../../../.gitbook/assets/FilteringDocs_7.png" alt=""><figcaption></figcaption></figure>
-
-Um einen bestimmten Filter zu entfernen, fahren Sie mit dem Mauszeiger über die Filtermarkierung und klicken Sie auf das rote X. Dadurch wird der Filter aus der Registerkartenliste entfernt.
-
-<figure><img src="../../../.gitbook/assets/FilteringDocs_8.png" alt=""><figcaption></figcaption></figure>
+Um eine Dokumenttyp-Registerkarte zu entfernen, bewegen Sie den Mauszeiger darüber und wählen das eingeblendete rote X.

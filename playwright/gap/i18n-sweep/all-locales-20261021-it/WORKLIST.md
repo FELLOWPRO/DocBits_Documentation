@@ -111,7 +111,7 @@ The manifest records source equivalents and retired alias references. Live deliv
 | S101 | [Configurare le proprietà di un campo](https://github.com/FELLOWPRO/DocBits_Documentation/blob/it/readme/administration-and-setup/settings/global-settings/document-types/layout-manager/configuring-field-properties.md) | Native UI image |
 | S102 | [Usare l’anteprima del modello](https://github.com/FELLOWPRO/DocBits_Documentation/blob/it/readme/administration-and-setup/settings/global-settings/document-types/layout-manager/using-the-template-preview.md) | Native UI image |
 | S103 | [Regole di convalida personalizzate](https://github.com/FELLOWPRO/DocBits_Documentation/blob/it/readme/administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) | Native UI image |
-| S104 | [List Of Values](https://github.com/FELLOWPRO/DocBits_Documentation/blob/it/readme/administration-and-setup/settings/document-processing/list-of-values.md) | Native UI image |
+| S104 | [Elenchi di valori](https://github.com/FELLOWPRO/DocBits_Documentation/blob/it/readme/administration-and-setup/settings/document-processing/list-of-values.md) | Native UI image |
 | S105 | [Import](https://github.com/FELLOWPRO/DocBits_Documentation/blob/it/readme/administration-and-setup/settings/document-processing/import/README.md) | Native UI image |
 | S106 | [Import](https://github.com/FELLOWPRO/DocBits_Documentation/blob/it/readme/administration-and-setup/settings/document-processing/import/README.md) | Native UI image |
 | S107 | [Ricerca rapida](https://github.com/FELLOWPRO/DocBits_Documentation/blob/it/readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md) | Native UI image |

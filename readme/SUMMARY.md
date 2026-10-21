@@ -522,7 +522,7 @@
       * [Estrarre automaticamente il codice d’imposta](administration-and-setup/settings/document-processing/classification-and-extraction/auto-extract-tax-code.md)
       * [Modello AI](administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md)
     * [Ricerca dei dati master](administration-and-setup/settings/document-processing/master-data-lookup.md)
-    * [Elenco dei valori](administration-and-setup/settings/document-processing/list-of-values.md)
+    * [Elenchi di valori](administration-and-setup/settings/document-processing/list-of-values.md)
     * [Esportazione](administration-and-setup/settings/document-processing/export.md)
       * [Voci di riga nell'esportazione](administration-and-setup/settings/document-processing/line-items-in-export.md)
     * [Moduli](administration-and-setup/settings/document-processing/module/README.md)

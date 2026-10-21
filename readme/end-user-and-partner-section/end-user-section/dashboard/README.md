@@ -12,6 +12,14 @@ De beschikbare functies hangen af van uw rechten, de documentstatus en de ingesc
 
 <figure><img src="../../../.gitbook/assets/dashboard-overview-nl.png" alt="Het huidige dashboard met zoeken, hulpmiddelen, opgeslagen weergaven, documenttypen en de tabel. Documentwaarden zijn verborgen om gegevens te beschermen."><figcaption><p>Het huidige dashboard met zoeken, hulpmiddelen, opgeslagen weergaven, documenttypen en de tabel. Documentwaarden zijn verborgen om gegevens te beschermen.</p></figcaption></figure>
 
+## Volledige rondleiding door het dashboard
+
+De fictieve klant in Amsterdam laat gecombineerd zoeken met AND, statusfilters, zoekhulp, kolominstellingen, statistieken en vernieuwen zien. De Nederlandse interface is opgenomen in DocBits met synthetische testgegevens. Het personage en de stem zijn met AI gemaakt.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/nl.mp4" %}
+
+[Open de speler met ondertiteling](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/nl.html) · [Nederlandse ondertiteling (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/nl.vtt) · [Transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/nl.txt)
+
 ## Uw dagelijkse werk beginnen
 
 1. Controleer de actieve organisatie en, indien beschikbaar, de suborganisatie.

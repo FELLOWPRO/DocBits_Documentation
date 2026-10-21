@@ -49,11 +49,11 @@ Komponenten, die zu einem optionalen Modul gehören (Volltextsuche, DocFlow, Aut
 
 Die Registerkarte „Verarbeitung" zeigt die Pipeline der Dokumentenverarbeitung für **Ihre Organisation** – wann jeder Schritt zuletzt ausgeführt wurde und ob die Arbeit fließt oder sich staut.
 
-<figure><img src="../../.gitbook/assets/infrastructure_processing.png" alt="Processing tasks table with status badges"><figcaption><p>Verarbeitungsstatus je Schritt für Ihre Organisation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/infrastructure_processing-de.png" alt="Deutsche Registerkarte Verarbeitung mit Letzte Ausführung und Status"><figcaption><p>Verarbeitungsstatus je Schritt für Ihre Organisation</p></figcaption></figure>
 
 | Spalte | Beschreibung |
 |--------|-------------|
-| **Prozess** | Der Verarbeitungsschritt – Dokumentenverarbeitung, OCR, TR-OCR, Barcode-Split, Barcode-Extraktion, Extraktion, PO-Matching. |
+| **Verarbeitung** | Der Verarbeitungsschritt – Dokumentenverarbeitung, OCR, TR-OCR, Barcode-Split, Barcode-Extraktion, Extraktion, PO-Matching. |
 | **Letzte Ausführung** | Wie lange es her ist, dass der Schritt zuletzt ausgeführt wurde. Bewegen Sie den Mauszeiger darüber, um den genauen Zeitstempel zu sehen. *„Nie ausgeführt"* bedeutet, dass noch kein Dokument diesen Schritt erreicht hat. |
 | **Status** | Eine Ampelmarkierung (siehe unten). |
 
@@ -71,11 +71,11 @@ Fehler und *In Bearbeitung* sind unabhängige Signale, sodass ein Schritt beide 
 
 Die Registerkarte „Geplante Aufgaben" listet die wiederkehrenden Hintergrundaufgaben auf, die DocBits am Laufen halten (Cache-Aktualisierungen, Statuswarnungen, Dokument-Timeouts, ausgehende Synchronisierungen und mehr), und bestätigt, dass jede davon pünktlich ausgelöst wird.
 
-<figure><img src="../../.gitbook/assets/infrastructure_scheduled.png" alt="Scheduled tasks table"><figcaption><p>Wiederkehrende Hintergrundaufgaben und ihr Zeitplanstatus</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/infrastructure_scheduled-de.png" alt="Deutsche Registerkarte Geplante Aufgaben mit Ausführungszeiten und Planmäßig-Status"><figcaption><p>Wiederkehrende Hintergrundaufgaben und ihr Zeitplanstatus. Technische Aufgabennamen werden vom Produkt auf Englisch angezeigt.. Technische Aufgabennamen werden vom Produkt auf Englisch angezeigt.</p></figcaption></figure>
 
 | Spalte | Beschreibung |
 |--------|-------------|
-| **Aufgabe** | Der Name der geplanten Aufgabe. |
+| **Task** | Der Name der geplanten Aufgabe. |
 | **Letzte Ausführung** | Wie lange es her ist, dass sie zuletzt ausgeführt wurde. Bewegen Sie den Mauszeiger darüber, um den genauen Zeitstempel zu sehen; *„Nie ausgeführt"* bedeutet, dass sie noch nicht ausgelöst wurde. |
 | **Status** | Zeitplanzustand (siehe unten). |
 

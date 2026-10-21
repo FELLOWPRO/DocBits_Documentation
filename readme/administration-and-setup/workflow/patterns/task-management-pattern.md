@@ -4,15 +4,21 @@
 
 ***
 
-Vous construisez ce modèle dans le **Générateur de flux de travail** (Workflow Dashboard → Workflow List → Add Workflow). Cliquez sur **Ajouter une carte** pour ouvrir la bibliothèque de cartes et sélectionnez les cartes utilisées par ce modèle — `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` et `CONDITION_TASK_STATUS` (la catégorie **Responsable** contient les cartes de tâche et d'affectation) :
+<!-- workflow-card-task-pattern-scope-20261022 -->
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
+**Périmètre vérifié :** Ce modèle est une conception d’orchestration, pas une configuration de workflow importable. Dans la bibliothèque vérifiée, `tasks_create` appartient à **Tâche**, `doc_user_assign` à **Responsable** et `action_send_email_to_groups` à **Courriel**.
+
+Les anciens noms `ACTION_ASSIGN_TO_USER` et `CONDITION_TASK_STATUS` sont des désignations illustratives, pas des cartes enregistrées sélectionnables dans cette bibliothèque. Le JSON ci-dessous est schématique. La création d’une tâche ne suspend pas à elle seule un workflow et ne configure pas sa reprise automatique. Le routage après achèvement, l’attente et l’escalade nécessitent une configuration et une vérification distinctes.
+
+[Cartes de tâches actuelles](../then/task/README.md) · [Protections d’export et tâches en attente](../cards-overview/export-cards-guide.md).
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-fr.png" alt="Illustration de la bibliothèque de cartes. La création de tâches, l’affectation de documents et les courriels aux groupes utilisent des catégories distinctes ; choisissez la version disponible dans votre organisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Illustration de la bibliothèque de cartes. La création de tâches, l’affectation de documents et les courriels aux groupes utilisent des catégories distinctes ; choisissez la version disponible dans votre organisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ***
 
 ## Vue d'ensemble du modèle
 
-Ce modèle montre comment créer, affecter, suivre et gérer des tâches dans les workflows DocBits. Les tâches sont des éléments de travail concrets affectés à des utilisateurs ou des groupes qui doivent être terminés avant que le workflow du document puisse se poursuivre.
+Ce modèle illustre la création et l’affectation de tâches ainsi que les notifications aux destinataires. Le routage après achèvement décrit une architecture cible ; créer une tâche ne constitue pas une opération d’attente.
 
 **Ce que fait ce modèle :**
 
@@ -127,6 +133,8 @@ Currency: EUR
 
 **Configuration :**
 
+**JSON schématique :** Structure illustrative uniquement ; ne pas l’importer comme workflow exécutable.
+
 ```json
 {
   "task_type": "Approval",
@@ -159,6 +167,8 @@ Currency: EUR
 
 **Tâche 1 : Approbation par le responsable**
 
+**JSON schématique :** Structure illustrative uniquement ; ne pas l’importer comme workflow exécutable.
+
 ```json
 {
   "task_type": "First Approval",
@@ -173,6 +183,8 @@ Currency: EUR
 ```
 
 **Tâche 2 : Approbation par le directeur (créée après l'achèvement de la tâche 1)**
+
+**JSON schématique :** Structure illustrative uniquement ; ne pas l’importer comme workflow exécutable.
 
 ```json
 {
@@ -231,6 +243,8 @@ User 3: CFO (only if User 2 approves)
 **Carte :** ACTION\_SEND\_EMAIL\_TO\_GROUPS
 
 **Configuration :**
+
+**JSON schématique :** Structure illustrative uniquement ; ne pas l’importer comme workflow exécutable.
 
 ```json
 {
@@ -445,6 +459,8 @@ INVOICE ARRIVES
 
 ### Gabarit 1 : Tâche d'approbation simple
 
+**JSON schématique :** Structure illustrative uniquement ; ne pas l’importer comme workflow exécutable.
+
 ```json
 {
   "card": "tasks_create",
@@ -461,6 +477,8 @@ INVOICE ARRIVES
 
 ### Gabarit 2 : Tâche de révision avec détails
 
+**JSON schématique :** Structure illustrative uniquement ; ne pas l’importer comme workflow exécutable.
+
 ```json
 {
   "card": "tasks_create",
@@ -476,6 +494,8 @@ INVOICE ARRIVES
 ***
 
 ### Gabarit 3 : Tâche d'escalade
+
+**JSON schématique :** Structure illustrative uniquement ; ne pas l’importer comme workflow exécutable.
 
 ```json
 {

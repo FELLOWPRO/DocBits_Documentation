@@ -23,6 +23,14 @@ description: "在当前 DocBits 仪表板中查找、检查和整理文档。"
 客户和办公室场景由 AI 生成。实际操作与搜索结果录制于 DocBits 测试账户。
 
 
+## 完整仪表板操作演示
+
+上海的虚构客户演示如何使用 AND 组合搜索条件、按状态筛选、打开搜索帮助、查看列设置、统计信息和刷新列表。真实中文 DocBits 界面使用合成测试数据录制。人物和声音由 AI 生成。
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/zh.mp4" %}
+
+[打开带字幕的播放器](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/zh.html) · [中文字幕（VTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/zh.vtt) · [文字稿](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-preview-customer/v3/zh.txt)
+
 ## 开始日常工作
 
 1. 检查当前组织，以及可用的子组织。

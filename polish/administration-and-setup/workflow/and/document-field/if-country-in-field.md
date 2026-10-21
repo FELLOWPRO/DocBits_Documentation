@@ -1,6 +1,6 @@
-# If Country in Field
+# Jeśli kraj w polu
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-70b0b5860da5-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -8,21 +8,21 @@ Ta karta przepływu pracy służy do oceny, czy określony kraj, znajdujący si�
 
 ## **Komponenty karty:**
 
-1. **Field Name**
+1. **Nazwa pola**
    * **Opis:** Określa pole dokumentu, w którym przechowywana jest nazwa lub kod kraju.
-   * **Szczegóły:** Powinno to odpowiadać dokładnemu identyfikatorowi pola danych kraju w dokumencie.&#x20;
-2. **Operator**
+   * **Szczegóły:** Powinno to odpowiadać dokładnemu identyfikatorowi pola danych kraju w dokumencie.
+2. **Operatora**
    * **Opis:** Określa, czy kraj w wybranym polu powinien odpowiadać, czy nie odpowiadać wybranemu regionowi lub porozumieniu.
    * **Opcje:**
      * **Is:** Kraj musi należeć do wybranego porozumienia (EU, Schengen lub NAFTA), aby warunek był prawdziwy.
-     * **Is Not:** Kraj nie może należeć do wybranego porozumienia, aby warunek był prawdziwy.
-3. **Country Comparison**
+     * **Nie jest:** Kraj nie może należeć do wybranego porozumienia, aby warunek był prawdziwy.
+3. **Porównanie krajów**
    * **Opis:** Definiuje, czy kraj w polu jest sprawdzany względem określonego porozumienia politycznego lub handlowego.
    * **Opcje:**
      * **European Union:** Karta sprawdza, czy kraj jest członkiem Unii Europejskiej.
      * **Schengen Area:** Karta sprawdza, czy kraj należy do strefy Schengen.
      * **NAFTA:** Karta sprawdza, czy kraj jest członkiem porozumienia NAFTA.
-4. **Boolean**
+4. **Wartość logiczna**
    * **Opis:** Definiuje wynik porównania. Jeśli kraj spełnia warunek, przepływ pracy jest kontynuowany z określoną wartością Boolean.
    * **Opcje:**
      * **True:** Przepływ pracy jest kontynuowany, jeśli warunek jest spełniony.
@@ -36,10 +36,22 @@ Ta karta przepływu pracy służy do oceny, czy określony kraj, znajdujący si�
   * **Warunek prawdziwy:** Jeśli kraj w polu odpowiada wybranemu regionowi (zgodnie z operatorem), przepływ pracy jest kontynuowany z określonym warunkiem prawdziwym. Może to wyzwolić dalsze akcje, takie jak routing dokumentów, zastosowanie specjalnych reguł przetwarzania lub włączenie funkcji specyficznych dla regionu.
   * **Warunek fałszywy:** Jeśli kraj nie odpowiada wybranemu regionowi (zgodnie z operatorem), przepływ pracy jest kontynuowany z określonym warunkiem fałszywym, umożliwiając wykonanie alternatywnych akcji lub zakończenie przepływu pracy na podstawie konfiguracji systemu.
 
-## **Konfiguracja:**&#x20;
+## **Konfiguracja:**
 
 * Użytkownicy konfigurują kartę, wybierając pole dokumentu zawierające kraj i określając region (Unia Europejska, strefa Schengen lub NAFTA). Następnie operator jest wybierany z listy rozwijanej, aby zdefiniować, czy kraj musi należeć do wybranego regionu, czy nie. Na koniec użytkownicy ustawiają warunek kontynuacji (true lub false), który dyktuje kolejny krok w przepływie pracy.
 
 ## **Podsumowanie:**
 
 Karta przepływu pracy "Country in Field Comparison" jest niezbędnym narzędziem do automatyzacji procesów zależnych od reguł geograficznych, takich jak zgodność z porozumieniami handlowymi lub powiązaniami politycznymi. Porównując dane kraju z określonymi regionami, takimi jak Unia Europejska, strefa Schengen lub NAFTA, karta ta zapewnia, że system stosuje właściwą logikę przetwarzania, poprawiając efektywność i zapewniając dokładne wykonanie przepływu pracy na podstawie warunków geograficznych.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktyczny przykład
+
+**Kiedy używać:** Oddziel dokumenty według regionu kraju.
+
+**Konfiguracja:** Wybierz pole kraju dokumentu zawierające `DE`, wybierz region zawierający Niemcy i ustaw opcję kontynuacji na `true`.
+
+**Oczekiwany wynik i kontrprzykład:** Niemiecki kod kraju jest zgodny z wybranym regionem. Kod spoza tego regionu nie; przetestuj opcję kontynuacji osobno, jeśli potrzebujesz gałęzi odwrotnej.
+
+To jest ilustracyjna konfiguracja i oczekiwany wynik. Korzystaj z pól, użytkowników i grup skonfigurowanych w Twojej organizacji testowej; nie jest to twierdzenie, że ten przykład został wykonany.

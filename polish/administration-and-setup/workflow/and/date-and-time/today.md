@@ -1,6 +1,6 @@
-# Today
+# Dzisiaj
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-bd785752f7b5-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -9,13 +9,13 @@ Ta karta DocBits porównuje dzisiejszą datę z określoną datą, umożliwiają
 ## **Funkcjonalność:**
 
 * **Porównanie dat:** Ta karta ocenia dzisiejszą datę względem określonej daty, używając następujących warunków:
-  * **Equals (=):** Sprawdza, czy dzisiejsza data odpowiada określonej dacie.
-  * **Not Equals (≠):** Zapewnia, że dzisiejsza data różni się od określonej daty.
-  * **Greater Than (>):** Potwierdza, że dzisiejsza data jest po określonej dacie.
-  * **Greater or Equals (≥):** Zapewnia, że dzisiejsza data jest w dniu lub po określonej dacie.
-  * **Lesser Than (<):** Sprawdza, czy dzisiejsza data jest przed określoną datą.
-  * **Less or Equals (≤):** Zapewnia, że dzisiejsza data jest w dniu lub przed określoną datą.
-* **Date Input:** Użytkownicy podają datę do porównania z dzisiejszą datą.
+  * **Równa się (=):** Sprawdza, czy dzisiejsza data odpowiada określonej dacie.
+  * **Nie równa się (≠):** Zapewnia, że dzisiejsza data różni się od określonej daty.
+  * **Większy niż (>):** Potwierdza, że dzisiejsza data jest po określonej dacie.
+  * **Większe lub równe (≥):** Zapewnia, że dzisiejsza data jest w dniu lub po określonej dacie.
+  * **Mniejszy niż (<):** Sprawdza, czy dzisiejsza data jest przed określoną datą.
+  * **Mniejszy lub równy (≤):** Zapewnia, że dzisiejsza data jest w dniu lub przed określoną datą.
+* **Wprowadzanie daty:** Użytkownicy podają datę do porównania z dzisiejszą datą.
 
 ## **Zastosowanie:**
 

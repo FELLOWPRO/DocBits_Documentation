@@ -1,32 +1,27 @@
-# Export with alternate Export
+# Eksportuj z alternatywnym eksportem
 
-<figure><img src="../../../../.gitbook/assets/image (286).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-379e4b3a5355-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
-## **Cel**
+## Kiedy używać tej karty
 
-Karta przepływu pracy **"Export Document with Alternate Export"** umożliwia eksport dokumentu przy użyciu alternatywnej konfiguracji eksportu. Oferuje elastyczność, umożliwiając użytkownikom pominięcie domyślnej konfiguracji eksportu i użycie alternatywnej, zapewniając zgodność z określonymi wymaganiami lub scenariuszami.
+Użyj tej akcji Następnie dla alternatywnego eksportu skonfigurowanego dla bieżącego typu dokumentu. Skonfiguruj i zatwierdź tę trasę przed dodaniem akcji.
 
-## **Komponenty karty**
+## Konfiguracja wynika z typu dokumentu
 
-**Alternate Export Configuration**
+Karta nie posiada selektora konfiguracji eksportu. Odczytuje, czy włączony jest alternatywny eksport, alternatywną konfigurację eksportu i stan po eksporcie z ustawień typu dokumentu. Wewnętrznie są to `DOC_ALTERNATE_EXPORT_SETTING`, `DOC_ALTERNATE_EXPORT_EXPORT_CONFIG` i `DOC_ALTERNATE_EXPORT_STATUS`.
 
-* **Opis**: Określa konfigurację eksportu, która ma być użyta dla dokumentu.
-* **Szczegóły**: Konfiguracja ta zastępuje domyślne ustawienia i stosuje alternatywną konfigurację eksportu określoną w przepływie pracy.
+Jawnie wyłączony alternatywny eksport powoduje niepowodzenie. Brakujące dane aktywacyjne, konfiguracja lub status wyników są zgłaszane, zamiast dyskretnie zastępować trasę domyślną. Żądanie eksportu sprawdza oczekujące zadania.
 
-## **Funkcjonalność**
+## Sprawdź wynik
 
-* **Ocena warunku**:\
-  System ocenia warunki ustawione w sekcjach **"Where"** i **"And Sections"** przepływu pracy. Karta jest wykonywana tylko wtedy, gdy wszystkie warunki są prawdziwe.
-* **Eksport dokumentu**:\
-  Po wykonaniu karta używa alternatywnej konfiguracji eksportu do przetworzenia i wyeksportowania dokumentu. Umożliwia to dostosowaną obsługę eksportu dla określonych przepływów pracy.
+Sprawdź dziennik karty, historię eksportu, status dokumentu i autoryzowane miejsce docelowe testu. Samo żądanie, przekroczenie limitu czasu lub zmiana statusu nie gwarantują, że dane dotarły do ​​miejsca docelowego. Sprawdź historię eksportu przed ponowną próbą wykonania operacji, która może spowodować utworzenie duplikatów.
 
-## **Konfiguracja**
+<!-- workflow-card-complete-example-20261021 action_alternate_export -->
 
-Aby skonfigurować tę kartę:
+### Alternatywny przykład eksportu
 
-1. Upewnij się, że sekcje **"Where"** i **"And Sections"** są prawidłowo skonfigurowane, ponieważ karta wykonuje się tylko wtedy, gdy te warunki są prawdziwe.
-2. Sprawdź, czy alternatywna konfiguracja eksportu jest prawidłowa i aktywna w systemie.
+**Konfiguracja:** Przygotuj syntetyczny typ dokumentu `DEMO_INVOICE` z włączonym alternatywnym eksportem, autoryzowaną konfiguracją eksportu testowego i żądanym statusem wyniku w ustawieniach typu dokumentu. Dodaj tę akcję Następnie po wymaganych kontrolach. Ta karta odczytuje te ustawienia; nie oferuje selektora konfiguracji eksportu.
 
-## **Podsumowanie**
+**Oczekiwany wynik i kontrprzykład:** Akcja żąda eksportu przez tę alternatywną konfigurację i sprawdza oczekujące zadania. Sprawdź oddzielnie wynik eksportu i miejsce docelowe testu. Wyłączenie alternatywnego eksportu powoduje niepowodzenie; brak ustawienia aktywacji lub konfiguracji nie oznacza pomyślnego eksportu. Nie uruchamiaj tego przykładu w odniesieniu do miejsca docelowego rozliczania.
 
-Karta przepływu pracy **"Export Document with Alternate Export"** zwiększa elastyczność i kontrolę w procesach eksportu dokumentów. Umożliwiając wybór alternatywnej konfiguracji eksportu, uwzględnia różnorodne wymagania eksportu, jednocześnie utrzymując efektywną automatyzację przepływu pracy.
+To jest ilustracyjna konfiguracja testu i oczekiwany wynik; nie zostało ono wykonane. Skorzystaj z danych i odbiorców skonfigurowanych w Twojej organizacji testowej.

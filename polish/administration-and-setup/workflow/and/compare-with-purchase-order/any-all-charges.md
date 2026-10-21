@@ -1,12 +1,14 @@
-# Any / All Charges
+# Wszelkie/Wszystkie opłaty
 
-<figure><img src="../../../../.gitbook/assets/workflow_cards_and_po_compare_any_all_charges.png" alt="Karta w bibliotece kart, wersja 2 i wersja 3"><figcaption><p>Karta w bibliotece kart. Wersja 2 powyżej, wersja 3 poniżej.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-420a0e403552-v2-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-420a0e403552-v3-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
 ## **Cel:**
 
 Ta karta przepływu pracy porównuje opłaty dodatkowe dokumentu z opłatami dodatkowymi dopasowanego zamówienia zakupu, w ramach określonej tolerancji. Odpowiada na jedno pytanie: czy dokument i zamówienie zakupu są zgodne co do opłat dodatkowych? Porównywana jest każda opłata, którą dopasowanie zamówienia zakupu sparowało, dlatego na karcie nie trzeba podawać żadnej nazwy pola.
 
-Ta karta różni się od **Compare Total Charges**, która porównuje jedno wskazane pole dokumentu z pojedynczą opłatą określoną przez Charge ID. Użyj tej karty, gdy wszystkie sparowane opłaty dokumentu mają zostać sprawdzone naraz.
+Ta karta różni się od **Porównaj całkowite opłaty**, która porównuje jedno wskazane pole dokumentu z pojedynczą opłatą określoną przez Charge ID. Użyj tej karty, gdy wszystkie sparowane opłaty dokumentu mają zostać sprawdzone naraz.
 
 Dopasowanie zamówienia zakupu musi zostać wykonane przed tą kartą. Jeśli dokument nie ma dopasowanego zamówienia zakupu, karta zatrzymuje przepływ pracy i zgłasza brakujące dane.
 

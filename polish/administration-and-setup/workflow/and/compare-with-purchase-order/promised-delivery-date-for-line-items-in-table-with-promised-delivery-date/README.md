@@ -1,6 +1,6 @@
-# Promised delivery date for line items in table with promised delivery date
+# Obiecana data dostawy dla pozycji w tabeli z obiecaną datą dostawy
 
-<figure><img src="../../../../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-264ee6d588cc-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## Cel:
 
@@ -8,22 +8,22 @@ Ta karta przepływu pracy służy do walidacji **przyrzeczonej daty dostawy pozy
 
 ## Komponenty karty:
 
-1. **Operator**
+1. **Operatora**
    * **Opis:**\
      Określa, w jaki sposób przyrzeczona data dostawy pozycji jest porównywana z przyrzeczoną datą dostawy w zamówieniu zakupu.
    * **Opcje:**
-     * **Equals (=):** Data pozycji musi mieścić się w oknie tolerancji.
-     * **Not Equals (≠):** Data pozycji musi znajdować się poza oknem tolerancji.
-     * **Greater Than (>):** Data pozycji musi przypadać po oknie tolerancji.
-     * **Greater or Equals (≥):** Data pozycji musi przypadać w dniu lub po rozpoczęciu okna tolerancji.
-     * **Lesser Than (<):** Data pozycji musi przypadać przed oknem tolerancji.
-     * **Lesser or Equals (≤):** Data pozycji musi przypadać w dniu lub przed końcem okna tolerancji.<br>
-2. **Tolerance Days**
+     * **Równa się (=):** Data pozycji musi mieścić się w oknie tolerancji.
+     * **Nie równa się (≠):** Data pozycji musi znajdować się poza oknem tolerancji.
+     * **Większy niż (>):** Data pozycji musi przypadać po oknie tolerancji.
+     * **Większe lub równe (≥):** Data pozycji musi przypadać w dniu lub po rozpoczęciu okna tolerancji.
+     * **Mniejszy niż (<):** Data pozycji musi przypadać przed oknem tolerancji.
+     * **Mniejszy lub równy (≤):** Data pozycji musi przypadać w dniu lub przed końcem okna tolerancji.<br>
+2. **Dni Tolerancji**
    * **Opis:**\
      Określa liczbę dni używaną do obliczenia akceptowalnego okna tolerancji wokół przyrzeczonej daty dostawy w zamówieniu zakupu.
    * **Szczegóły:**\
      Wartość ta jest liczbą całkowitą i definiuje, ile dni przed i po dacie zamówienia zakupu jest uwzględnianych podczas walidacji.<br>
-3. **Allowed Tolerance Days**
+3. **Dozwolone dni tolerancji**
    * **Opis:**\
      Określa, które dni tygodnia są liczone przy obliczaniu dni tolerancji.
    * **Szczegóły:**\
@@ -31,7 +31,7 @@ Ta karta przepływu pracy służy do walidacji **przyrzeczonej daty dostawy pozy
 
 ### Funkcjonalność:
 
-* **Ocena warunku:** System oblicza okno tolerancji wokół przyrzeczonej daty dostawy w zamówieniu zakupu na podstawie skonfigurowanych wartości **Tolerance Days** i **Allowed Tolerance Days**.\
+* **Ocena warunku:** System oblicza okno tolerancji wokół przyrzeczonej daty dostawy w zamówieniu zakupu na podstawie skonfigurowanych wartości **Dni Tolerancji** i **Dozwolone Dni Tolerancji**.\
   Przyrzeczona data dostawy każdej pozycji jest następnie porównywana z tym oknem przy użyciu wybranego operatora.
 * Wykonanie akcji:
   * **Warunek prawdziwy:** Jeśli różnica daty dostawy mieści się w zakresie tolerancji i spełnia warunek ustawiony przez operatora, przepływ pracy jest kontynuowany.
@@ -45,4 +45,4 @@ Ta karta przepływu pracy służy do walidacji **przyrzeczonej daty dostawy pozy
 
 ### Podsumowanie:
 
-Karta przepływu pracy **Compare with Purchase Order – Promised Delivery Date for Line Items** zapewnia elastyczny sposób egzekwowania reguł dotyczących dat dostawy. Łącząc operatory z obsługą tolerancji uwzględniającą dni tygodnia, umożliwia precyzyjną walidację zobowiązań dostawy, jednocześnie redukując ręczne kontrole i wyjątki.
+Karta przepływu pracy **Porównaj z Zamówieniem zakupu – Obiecana data dostawy dla pozycji zamówienia** zapewnia elastyczny sposób egzekwowania reguł dotyczących dat dostawy. Łącząc operatory z obsługą tolerancji uwzględniającą dni tygodnia, umożliwia precyzyjną walidację zobowiązań dostawy, jednocześnie redukując ręczne kontrole i wyjątki.

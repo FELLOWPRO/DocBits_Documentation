@@ -1,6 +1,6 @@
-# Document Type One of
+# Typ dokumentu Jeden z
 
-<figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-da4216631693-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -11,14 +11,14 @@ Ta karta DocBits zapewnia prawidłową klasyfikację dokumentu, weryfikując, cz
 * **Walidacja wielu typów dokumentów:** Ta karta umożliwia użytkownikom sprawdzenie, czy dokument odpowiada któremukolwiek z zestawu określonych typów dokumentów, zapewniając elastyczną kategoryzację dla bardziej złożonych przepływów pracy dokumentów.
 * **Operator:** Użytkownicy mogą definiować warunki walidacji dokumentu względem wielu typów. Dostępne operatory obejmują:
   * **Is:** Potwierdza, że dokument odpowiada jednemu z określonych typów dokumentów.
-  * **Is Not:** Zapewnia, że dokument nie odpowiada żadnemu z wybranych typów dokumentów.
-* **Document Types:** Użytkownicy mogą wybierać spośród wielu obsługiwanych typów dokumentów, w tym:
-  * **Invoice:** Dokumenty finansowe przedłożone do zapłaty.
-  * **Debit Note:** Dokumenty wskazujące korektę zwiększającą należną kwotę.
-  * **Credit Note:** Dokumenty wskazujące zmniejszenie należnej kwoty.
-  * **Purchase Order:** Dokumenty szczegółowo opisujące zamówienie kupującego.
-  * **Order Confirmation:** Dokumenty potwierdzające przyjęcie zamówienia.
-  * **Advance Shipment Notice:** Dokumenty powiadamiające o nadchodzącej dostawie.
+  * **Nie jest:** Zapewnia, że dokument nie odpowiada żadnemu z wybranych typów dokumentów.
+* **Typy dokumentów:** Użytkownicy mogą wybierać spośród wielu obsługiwanych typów dokumentów, w tym:
+  * **Faktura:** Dokumenty finansowe przedłożone do zapłaty.
+  * **Uwaga debetowa:** Dokumenty wskazujące korektę zwiększającą należną kwotę.
+  * **Nota kredytowa:** Dokumenty wskazujące zmniejszenie należnej kwoty.
+  * **Zamówienie zakupu:** Dokumenty szczegółowo opisujące zamówienie kupującego.
+  * **Potwierdzenie zamówienia:** Dokumenty potwierdzające przyjęcie zamówienia.
+  * **Powiadomienie o wysyłce z wyprzedzeniem:** Dokumenty powiadamiające o nadchodzącej dostawie.
 
 ## **Zastosowanie:**
 

@@ -1,6 +1,6 @@
-# Compare Total Charges
+# Porównaj całkowite opłaty
 
-<figure><img src="../../../../.gitbook/assets/image (271).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-97d69520f403-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -8,26 +8,26 @@ Ta karta przepływu pracy porównuje całkowite opłaty w polu dokumentu z odpow
 
 ## **Komponenty karty:**
 
-1. **Field Name:**
+1. **Nazwa pola:**
    * **Opis**: Określa pole dokumentu zawierające wartości całkowitych opłat do porównania z opłatami w zamówieniu zakupu.
    * **Szczegóły**: Wartość w tym polu reprezentuje całkowite opłaty zastosowane w dokumencie (np. fakturze) i zostanie porównana z opłatą zamówienia zakupu.
 2. **Operator:**
    * **Opis**: Definiuje warunek, który zostanie zastosowany do porównania między całkowitą opłatą w dokumencie a opłatą w zamówieniu zakupu.
    * **Opcje**:
-     * **Equals (=)**: Weryfikuje, czy całkowita opłata w dokumencie odpowiada opłacie w zamówieniu zakupu.
-     * **Not Equals (≠)**: Zapewnia, że całkowita opłata w dokumencie różni się od opłaty w zamówieniu zakupu.
-     * **Greater Than (>)**: Weryfikuje, czy całkowita opłata w dokumencie jest większa niż opłata w zamówieniu zakupu.
-     * **Greater or Equals (≥)**: Weryfikuje, czy całkowita opłata w dokumencie jest większa lub równa opłacie w zamówieniu zakupu.
-     * **Lesser Than (<)**: Weryfikuje, czy całkowita opłata w dokumencie jest mniejsza niż opłata w zamówieniu zakupu.
-     * **Lesser or Equals (≤)**: Weryfikuje, czy całkowita opłata w dokumencie jest mniejsza lub równa opłacie w zamówieniu zakupu.
-3. **Tolerance Amount**
+     * **Równa się (=)**: Weryfikuje, czy całkowita opłata w dokumencie odpowiada opłacie w zamówieniu zakupu.
+     * **Nie równa się (≠)**: Zapewnia, że całkowita opłata w dokumencie różni się od opłaty w zamówieniu zakupu.
+     * **Większe niż (>)**: Weryfikuje, czy całkowita opłata w dokumencie jest większa niż opłata w zamówieniu zakupu.
+     * **Większy lub równy (≥)**: Weryfikuje, czy całkowita opłata w dokumencie jest większa lub równa opłacie w zamówieniu zakupu.
+     * **Mniejszy niż (<)**: Weryfikuje, czy całkowita opłata w dokumencie jest mniejsza niż opłata w zamówieniu zakupu.
+     * **Mniejszy lub równy (≤)**: Weryfikuje, czy całkowita opłata w dokumencie jest mniejsza lub równa opłacie w zamówieniu zakupu.
+3. **Kwota tolerancji**
    * **Opis**: Określa próg tolerancji do porównania całkowitych opłat.
    * **Szczegóły**: Ta wartość liczbowa reprezentuje dozwoloną zmienność opłat między dokumentem a zamówieniem zakupu.
-4. **Tolerance Type:**
+4. **Typ tolerancji:**
    * **Opis**: Określa typ tolerancji, który zostanie zastosowany.
    * **Opcje**:
      * **Percentage**: Tolerancja jest stosowana jako procent opłaty zamówienia zakupu.
-     * **Value**: Tolerancja jest stosowana jako stała kwota liczbowa.
+     * **Wartość**: Tolerancja jest stosowana jako stała kwota liczbowa.
 5. **Separator:**
    * **Opis**: Określa separator używany do odróżnienia Charge ID na końcu nazwy pola.
    * **Szczegóły**: Separator oddziela pole opłaty od unikalnego Charge ID, który zostanie użyty do powiązania opłaty dokumentu z odpowiadającą jej opłatą w zamówieniu zakupu.

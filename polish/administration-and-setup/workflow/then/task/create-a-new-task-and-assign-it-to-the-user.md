@@ -1,29 +1,29 @@
-# Create a New Task and assign it to the User
+# Utwórz Nowe Zadanie i przypisz je Użytkownikowi
 
-<figure><img src="../../../../.gitbook/assets/image (287).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4a46d3b10473-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel**
 
-Karta przepływu pracy **"Create Task or Notification"** usprawnia zarządzanie zadaniami i powiadomieniami w ramach przepływów pracy. W zależności od wersji karta może tworzyć zadania, wysyłać powiadomienia i wykorzystywać dodatkową funkcjonalność, taką jak drzewa decyzyjne, do dynamicznego przetwarzania.
+Karta przepływu pracy **„Utwórz zadanie lub powiadomienie”** usprawnia zarządzanie zadaniami i powiadomieniami w ramach przepływów pracy. W zależności od wersji karta może tworzyć zadania, wysyłać powiadomienia i wykorzystywać dodatkową funkcjonalność, taką jak drzewa decyzyjne, do dynamicznego przetwarzania.
 
 ## **Komponenty karty**
 
-1. **Title**
+1. **Tytuł**
    * **Opis**: Definiuje tytuł tworzonego zadania lub powiadomienia.
    * **Szczegóły**: Tytuł zapewnia jasny i zwięzły identyfikator zadania lub powiadomienia.
-2. **Description**
+2. **Opis**
    * **Opis**: Dostarcza szczegółów o zadaniu lub powiadomieniu.
    * **Szczegóły**: Pomaga wyjaśnić cel lub kontekst zadania lub powiadomienia dla przypisanego użytkownika.
-3. **Priority**
+3. **Priorytet**
    * **Opis**: Ustawia poziom pilności zadania.
    * **Opcje**:
      * **High**: Wymaga natychmiastowej uwagi.
-     * **Medium**: Ważne, ale nie pilne.
+     * **Średni**: Ważne, ale nie pilne.
      * **Low**: Można obsłużyć później.
-4. **Assigned User**
+4. **Przypisany użytkownik**
    1. **Opis**: Określa użytkownika, do którego przypisane jest zadanie.
    2. **Szczegóły**: Użytkownicy są wybierani z listy rozwijanej dostępnego personelu.
-5. **Email Notification**
+5. **Powiadomienie e-mail**
    * **Opis**: Określa, czy przypisany użytkownik otrzymuje powiadomienie e-mail.
    * **Opcje**:
      * **True**: Wysyła powiadomienie e-mail do użytkownika.
@@ -39,13 +39,13 @@ Karta przepływu pracy **"Create Task or Notification"** usprawnia zarządzanie 
 2. **Task or Notification (tylko Version 4)**
    * **Opis**: Umożliwia wybór między utworzeniem zadania a powiadomienia.
    * **Opcje**:
-     * **Task**: Tworzy zadanie.
+     * **Zadanie**: Tworzy zadanie.
      * **Notification**: Tworzy powiadomienie zamiast zadania.
 
 ## **Funkcjonalność:**
 
 * **Ocena warunku**:\
-  Karta jest wyzwalana tylko wtedy, gdy warunki w sekcjach **"Where"** i **"And Sections"** są spełnione.
+  Karta jest wyzwalana tylko wtedy, gdy warunki w sekcjach **„Kiedy”** i **„I sekcje”** są spełnione.
 * **Tworzenie zadania lub powiadomienia**:
   * Wersje 2 i 3: Tworzone jest zadanie z określonym tytułem, opisem, priorytetem i przypisanym użytkownikiem.
   * Version 4: Umożliwia utworzenie zadania lub powiadomienia.
@@ -56,17 +56,29 @@ Karta przepływu pracy **"Create Task or Notification"** usprawnia zarządzanie 
 
 ## **Konfiguracja:**
 
-1. **Select Version**: Wybierz wersję karty na podstawie wymaganej funkcjonalności:
+1. **Wybierz opcję Wersja**: Wybierz wersję karty na podstawie wymaganej funkcjonalności:
    * Version 2: Podstawowe tworzenie zadań z ręcznym przypisaniem użytkownika i powiadomieniami e-mail.
    * Version 3: Zawiera funkcjonalność drzewa decyzyjnego do dynamicznego przypisywania użytkownika.
    * Version 4: Dodaje możliwość utworzenia powiadomienia zamiast zadania.
-2. **Enter Task Details**: Określ tytuł, opis i priorytet zadania lub powiadomienia.
-3. **Assign User**:
+2. **Wprowadź szczegóły zadania**: Określ tytuł, opis i priorytet zadania lub powiadomienia.
+3. **Przypisz użytkownika**:
    * Dla wersji 2 i 4 ręcznie wybierz użytkownika z listy rozwijanej.
    * Dla Version 3 włącz drzewo decyzyjne, aby dynamicznie określić przypisanego użytkownika.
-4. **Enable Email Notification**: Określ, czy przypisany użytkownik powinien otrzymać powiadomienie e-mail.
-5. (Dla Version 4) **Choose Task or Notification**: Wskaż, czy utworzyć zadanie, czy powiadomienie.
+4. **Włącz powiadomienie e-mailem**: Określ, czy przypisany użytkownik powinien otrzymać powiadomienie e-mail.
+5. (Dla Version 4) **Wybierz Zadanie lub Powiadomienie**: Wskaż, czy utworzyć zadanie, czy powiadomienie.
 
 ## **Podsumowanie:**
 
-Karta przepływu pracy **"Create Task or Notification"** jest wszechstronnym narzędziem do zarządzania zadaniami i powiadomieniami. Wspierając dynamiczne przypisywanie użytkowników za pomocą drzew decyzyjnych i zapewniając opcje tworzenia zadań lub powiadomień, zwiększa elastyczność przepływu pracy i efektywność współpracy.
+Karta przepływu pracy **„Utwórz zadanie lub powiadomienie”** jest wszechstronnym narzędziem do zarządzania zadaniami i powiadomieniami. Wspierając dynamiczne przypisywanie użytkowników za pomocą drzew decyzyjnych i zapewniając opcje tworzenia zadań lub powiadomień, zwiększa elastyczność przepływu pracy i efektywność współpracy.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktyczny przykład
+
+**Kiedy używać:** Daj jednemu recenzentowi wyraźny element działania.
+
+**Konfiguracja:** Wybierz `Demo Reviewer A`, tytuł `Review invoice`, opis i priorytet.
+
+**Oczekiwany wynik i kontrprzykład:** Wybrany użytkownik otrzymuje nowe zadanie. Potwierdź tytuł zadania i osobę przypisaną; zadanie pozostaje do wykonania przez recenzenta.
+
+To jest ilustracyjna konfiguracja i oczekiwany wynik. Korzystaj z pól, użytkowników i grup skonfigurowanych w Twojej organizacji testowej; nie jest to twierdzenie, że ten przykład został wykonany.

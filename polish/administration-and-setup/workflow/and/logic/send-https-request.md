@@ -1,6 +1,6 @@
-# Send HTTPS Request
+# Wyślij żądanie HTTPS
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-04cb18d1c13f-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -9,8 +9,8 @@ Ta karta DocBits służy do ułatwienia interakcji z systemami zewnętrznymi pop
 ## **Funkcjonalność:**
 
 * **Wykonanie żądania HTTPS:** Karta wysyła żądanie do określonego adresu URL przy użyciu skonfigurowanej metody HTTP (np. GET, POST, PUT, DELETE).
-* **Headers and Parameters:** Użytkownicy mogą dołączyć niestandardowe nagłówki i parametry zapytania, aby zapewnić, że żądanie spełnia wymagania zewnętrznego API.
-* **Request Data:** Umożliwia użytkownikom zdefiniowanie ładunku danych (jeśli dotyczy) do wysłania z żądaniem, takiego jak dane JSON lub zakodowane w formularzu.
+* **Nagłówki i parametry:** Użytkownicy mogą dołączyć niestandardowe nagłówki i parametry zapytania, aby zapewnić, że żądanie spełnia wymagania zewnętrznego API.
+* **Dane żądania:** Umożliwia użytkownikom zdefiniowanie ładunku danych (jeśli dotyczy) do wysłania z żądaniem, takiego jak dane JSON lub zakodowane w formularzu.
 * **Response Evaluation:** Przepływ pracy sprawdza, czy otrzymany kod statusu odpowiada oczekiwanej wartości, zapewniając pomyślną komunikację przed kontynuowaniem.
 * **Obsługiwane metody HTTP:**
   * GET: Pobiera dane z określonego adresu URL.

@@ -1,6 +1,6 @@
-# Promised Delivery Date on Purchase Order
+# Obiecana data dostawy w zamówieniu
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-604866ed54fe-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
 ## **Cel**
 
@@ -8,16 +8,16 @@ Ta karta DocBits służy do ułatwienia precyzyjnego porównania przyrzeczonych 
 
 ## **Komponenty karty**
 
-1. **Operator**
+1. **Operatora**
    * **Opis:** Definiuje warunek stosowany do porównania dat dostawy.
    * **Opcje:**
-     * **Equals (=):** Sprawdza, czy przyrzeczona data dostawy pozycji odpowiada dacie dostawy w zamówieniu zakupu.
-     * **Not Equal (≠):** Zapewnia, że przyrzeczona data dostawy pozycji nie odpowiada dacie w zamówieniu zakupu.
-     * **Greater Than (>):** Weryfikuje, czy przyrzeczona data dostawy pozycji jest późniejsza niż data dostawy w zamówieniu zakupu.
-     * **Greater or Equals (≥):** Sprawdza, czy przyrzeczona data dostawy pozycji jest równa lub późniejsza niż data dostawy w zamówieniu zakupu.
+     * **Równa się (=):** Sprawdza, czy przyrzeczona data dostawy pozycji odpowiada dacie dostawy w zamówieniu zakupu.
+     * **Nierówne (≠):** Zapewnia, że przyrzeczona data dostawy pozycji nie odpowiada dacie w zamówieniu zakupu.
+     * **Większy niż (>):** Weryfikuje, czy przyrzeczona data dostawy pozycji jest późniejsza niż data dostawy w zamówieniu zakupu.
+     * **Większe lub równe (≥):** Sprawdza, czy przyrzeczona data dostawy pozycji jest równa lub późniejsza niż data dostawy w zamówieniu zakupu.
      * **Less Than (<):** Potwierdza, czy przyrzeczona data dostawy pozycji jest wcześniejsza niż data dostawy w zamówieniu zakupu.
-     * **Less or Equals (≤):** Weryfikuje, czy przyrzeczona data dostawy pozycji jest równa lub wcześniejsza niż data dostawy w zamówieniu zakupu.
-2. **Value**
+     * **Mniejszy lub równy (≤):** Weryfikuje, czy przyrzeczona data dostawy pozycji jest równa lub wcześniejsza niż data dostawy w zamówieniu zakupu.
+2. **Wartość**
    * **Opis:** Określa dopuszczalny margines błędu w porównaniu dat dostawy.
    * **Szczegóły:** Użytkownicy definiują liczbę dni, o którą data dostawy pozycji może różnić się od przyrzeczonej daty dostawy.
 

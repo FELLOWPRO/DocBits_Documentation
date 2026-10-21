@@ -1,4 +1,4 @@
-# Key Concept: Tolerance Window
+# Kluczowa koncepcja: Okno tolerancji
 
 Przed przyjrzeniem się operatorom ważne jest zrozumienie, w jaki sposób obliczane jest okno tolerancji.
 
@@ -9,10 +9,10 @@ Okno tolerancji definiuje zakres akceptowalnych dat wokół przyrzeczonej daty d
 **Przykład:**
 
 * Data zamówienia zakupu: **9 stycznia**
-* Tolerance Days: **3**
+* Dni Tolerancji: **3**
 * Okno tolerancji: **6 stycznia → 12 stycznia**
 
-> <mark style="color:red;">Tylko wybrane</mark> <mark style="color:red;"></mark><mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;"></mark><mark style="color:red;">(dni tygodnia) są liczone przy obliczaniu tego okna.</mark>
+> <mark style="color:red;">Tylko wybrane</mark> <mark style="color:red;"></mark><mark style="color:red;">**Dozwolone Dni Tolerancji**</mark> <mark style="color:red;"></mark><mark style="color:red;">(dni tygodnia) są liczone przy obliczaniu tego okna.</mark>
 
 ### Przykład wizualnej osi czasu
 
@@ -25,7 +25,7 @@ Okno tolerancji definiuje zakres akceptowalnych dat wokół przyrzeczonej daty d
 
 ### Zachowanie operatorów wyjaśnione na przykładach
 
-* **Equals (=)**
+* **Równa się (=)**
   * **Znaczenie:**\
     Data dostawy pozycji musi przypadać _wewnątrz_ okna tolerancji.
   * **Daty prawidłowe:**
@@ -33,7 +33,7 @@ Okno tolerancji definiuje zakres akceptowalnych dat wokół przyrzeczonej daty d
   * **Daty nieprawidłowe:**
     * Dowolna data **przed 6 stycznia**
     * Dowolna data **po 12 stycznia**
-* **Not Equals (≠)**
+* **Nie równa się (≠)**
   * **Znaczenie:**\
     Data dostawy pozycji musi przypadać _poza_ oknem tolerancji.
   * **Daty prawidłowe:**
@@ -41,7 +41,7 @@ Okno tolerancji definiuje zakres akceptowalnych dat wokół przyrzeczonej daty d
     * Dowolna data **po 12 stycznia**
   * **Daty nieprawidłowe:**
     * Daty między **6 stycznia a 12 stycznia**
-* **Greater or Equals (≥)**
+* **Większy lub równy (≥)**
   * **Znaczenie:**\
     Data dostawy pozycji musi przypadać w dniu lub po **rozpoczęciu okna tolerancji**.
   * **Daty prawidłowe:**
@@ -50,21 +50,21 @@ Okno tolerancji definiuje zakres akceptowalnych dat wokół przyrzeczonej daty d
     * Dowolna data **przed 6 stycznia**
   * <mark style="color:red;">**Ważne:**</mark>\
     Ten operator dopuszcza daty _wewnątrz_ okna tolerancji **oraz poza nim**.
-* **Lesser or Equals (≤)**
+* **Mniejszy lub równy (≤)**
   * **Znaczenie:**\
     Data dostawy pozycji musi przypadać w dniu lub przed **końcem okna tolerancji**.
   * **Daty prawidłowe:**
     * Dowolna przeszła data aż do **12 stycznia**
   * **Daty nieprawidłowe:**
     * Dowolna data **po 12 stycznia**
-* **Greater Than (>)**
+* **Większy niż (>)**
   * **Znaczenie:**\
     Data dostawy pozycji musi przypadać _ściśle po_ oknie tolerancji.
   * **Daty prawidłowe:**
     * **13 stycznia → dowolna przyszła data**
   * **Daty nieprawidłowe:**
     * Dowolna data **w dniu 12 stycznia lub wcześniej**
-* **Lesser Than (<)**
+* **Mniejsze niż (<)**
   * **Znaczenie:**\
     Data dostawy pozycji musi przypadać _ściśle przed_ oknem tolerancji.
   * **Daty prawidłowe:**
@@ -82,7 +82,7 @@ Dni, które nie są wybrane (takie jak weekendy lub wykluczone dni tygodnia), s�
 **Konfiguracja:**
 
 * Data zamówienia zakupu: **środa, 9 stycznia**
-* Tolerance Days: **3**
+* Dni Tolerancji: **3**
 * Allowed Tolerance Days: **poniedziałek, wtorek, środa, czwartek, piątek**
 * Weekendy (sobota, niedziela): **Niewybrane**
 

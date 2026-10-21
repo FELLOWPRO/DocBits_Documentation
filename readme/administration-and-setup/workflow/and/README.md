@@ -22,7 +22,7 @@ Gebruik **Datum en tijd** om een datum of tijd met een bereik te vergelijken, of
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-1ee68574d713-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-## Documenteren
+## Document
 
 Gebruik deze kaarten wanneer een workflow afhankelijk moet zijn van het **documenttype** of **suborganisatie**. Kies het type of de organisatie genoemd op de kaart. Zie [Document](document).
 
@@ -52,7 +52,7 @@ Gebruik deze kaarten om een artikel te vergelijken met prijsgegevens. De zichtba
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-4a7af1d99c73-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-## Ontvanger
+## Toewijzing
 
 Gebruik **Toegewezene** wanneer de voorwaarde afhangt van de toegewezen gebruiker of groep. Kies of u wilt vergelijken met één gebruiker of groep of met een geselecteerde set. Zie [Toegewezene](assignee).
 

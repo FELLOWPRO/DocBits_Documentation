@@ -583,7 +583,7 @@ Task created for correct person
 * Neem specifieke details op in de taaktitel
 * Stel de juiste prioriteitsniveaus in
 * Stel realistische deadlines
-* Informeer de cessionarissen
+* Informeer de verantwoordelijkesen
 * Voeg een link naar het document toe
 * Gebruik duidelijke, bruikbare beschrijvingen
 

@@ -721,7 +721,7 @@
     * [Cartes d'affectation et de création de tâches](administration-and-setup/workflow/then/task/task-assignment-guide.md)
     * [Cartes de manipulation de champs et de tables](administration-and-setup/workflow/then/document-field/field-manipulation-guide.md)
     * [Exécuter l'invite DocOperator (script d'automatisation)](administration-and-setup/workflow/then/action/docoperator-script-guide.md)
-    * [Appeler une API externe](administration-and-setup/workflow/then/action/call-api-guide.md)
+    * [Appeler l’API DocBits](administration-and-setup/workflow/then/action/call-api-guide.md)
     * [Envoyer un e-mail à des groupes](administration-and-setup/workflow/then/action/send-email-groups-guide.md)
     * [Envoyer une demande HTTPS](administration-and-setup/workflow/then/action/https-request-guide.md)
     * [Guides des modèles de flux de travail](administration-and-setup/workflow/patterns/README.md)

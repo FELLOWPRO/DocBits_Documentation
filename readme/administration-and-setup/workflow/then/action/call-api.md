@@ -2,68 +2,24 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6a1c780ee588-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
-## Objectif :
+<!-- workflow-card-call-api-contract-20261022 -->
 
-La carte de workflow **« Call API »** permet aux utilisateurs d'effectuer des requêtes HTTP vers des points de terminaison d'API spécifiés directement depuis le workflow. Cette carte prend en charge diverses méthodes HTTP et permet une interaction dynamique avec des systèmes externes en envoyant des paramètres et des données. Elle rationalise l'intégration avec des services tiers et des API personnalisées, garantissant une communication fluide.
+## Objectif
 
-## Composants de la carte :
+Utilisez `call_api` pour appeler un point de terminaison de l’API DocBits configurée. Le chemin relatif est ajouté à son adresse de base. Une URL externe arbitraire ne configure pas une intégration avec une autre API.
 
-1. **Point de terminaison API**
-   * **Descriptif :** le point de terminaison cible de l'**API DocBits** avec lequel cette carte interagira.
-   * **Détail :** un champ de texte où les utilisateurs spécifient le point de terminaison de la requête d'API.
-2. **Méthode HTTP**
-   * **Descriptif :** le type de requête HTTP à effectuer.
-   * **Possibilités :**
-     1. **GET :** récupère des données depuis le point de terminaison spécifié.
-     2. **POST :** envoie des données au point de terminaison.
-     3. **PUT :** met à jour des données existantes au point de terminaison.
-     4. **DELETE :** supprime des données au point de terminaison.
-3. **Paramètres**
-   * **Descriptif :** les paramètres de requête à inclure dans la requête d'API.
-   * **Détail :** un champ de texte ou une liste pour saisir des paires clé-valeur pour l'URL de la requête.
-4. **Données**
-   1. **Descriptif :** la charge utile à envoyer dans le corps de la requête d'API (applicable aux méthodes POST et PUT).
-   2. **Détail :** un champ pour saisir les données au format JSON.
+## Configuration
 
-## Fonctionnalité :
+Renseignez le chemin, la méthode HTTP, les paramètres de requête et les données acceptées par le point de terminaison. La requête utilise le contexte de l’utilisateur DocBits courant. Les valeurs absentes de `org_id` et `triggered_by_docflow` sont ajoutées automatiquement. Les objets de paramètres et de données, ou leur représentation textuelle prise en charge, doivent respecter le format de cette version. Elle ne propose pas de correspondance générale des champs d’une réponse JSON.
 
-**Évaluation de la condition :** le système évalue les conditions définies dans les sections « Where » et « And » :
+## Résultat et limites
 
-* Si les deux conditions sont **vraies**, la requête d'API est exécutée telle que configurée.
-* Si l'une des conditions est **fausse**, la carte ne s'exécute pas et aucun appel d'API n'est effectué.
-
-**Exécution de la requête d'API :**
-
-* La carte envoie la requête HTTP au point de terminaison spécifié à l'aide de la méthode sélectionnée.
-* Tous les paramètres fournis sont ajoutés à l'URL, et les données sont incluses dans le corps de la requête (le cas échéant).
-
-## Mise en place et configuration :
-
-1. **Définir le point de terminaison de l'API :**\
-   Saisissez l'URL de l'API que vous souhaitez appeler.
-2. **Sélectionner la méthode HTTP :**\
-   Choisissez l'une des méthodes prises en charge (GET, POST, PUT, DELETE) selon les exigences de votre API.
-3. **Fournir les paramètres :**\
-   Ajoutez tous les paramètres de requête requis sous forme de paires clé-valeur.
-4. **Inclure les données (le cas échéant) :**\
-   Pour les méthodes POST ou PUT, spécifiez les données à envoyer dans le corps de la requête.
-5. **Configuration des conditions :**\
-   Configurez les sections « Where » et « And » pour définir quand l'appel d'API doit avoir lieu.
-
-## Conclusion :
-
-La carte de workflow **« Call API »** améliore l'automatisation du workflow en permettant une interaction directe avec des systèmes externes. En offrant des configurations flexibles pour les points de terminaison, les méthodes et les données, elle garantit que les workflows peuvent s'intégrer en toute fluidité à des API tierces ou à des backends personnalisés. La possibilité d'exécuter conditionnellement les appels d'API assure précision et efficacité dans l'automatisation des communications externes.
-
-***
+Le texte de réponse est converti en booléen : `true`, `1`, `yes` ou `on` seuls donnent vrai ; une réponse non reconnue, y compris un objet JSON arbitraire, donne faux par défaut. Le statut HTTP ne détermine pas à lui seul ce booléen. Un délai dépassé ou une erreur de requête donne faux. Le test de carte simule l’appel et renvoie vrai sans envoyer la requête ; il ne démontre ni authentification, ni connectivité, ni comportement du point de terminaison.
 
 <!-- workflow-card-practical-example-20261021 -->
 
 ## Exemple pratique
 
-**Quand utiliser :** Demander une validation supplémentaire à un service externe configuré.
+Utilisez cette carte après les conditions nécessaires pour obtenir un booléen d’un point de terminaison configuré de l’API DocBits. Pour un test isolé, choisissez un point existant, documenté et en lecture seule, avec le contrat de réponse booléen voulu et la méthode adaptée, par exemple `GET`. Utilisez uniquement ses paramètres de démonstration pris en charge.
 
-**Configuration :** Sélectionnez le point de terminaison de l'API de démonstration configuré et la méthode HTTP. Fournissez les paramètres et le corps JSON requis par ce point de terminaison.
-
-**Résultat attendu et contre-exemple :** Pour une réponse simulée `200`, vérifiez la gestion de la réponse attendue par les cartes suivantes. Testez également `500` ; le fait de lancer l'appel ne permet pas d'établir que le contrôle commercial a réussi.
-
-Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.
+Résultat attendu et contre-exemple : une réponse HTTP `200` hypothétique dont le texte intégral est `true` donne vrai ; `false` donne faux. Un objet tel que `{"approved": true}` n’est pas automatiquement converti en vrai. Vérifiez séparément la réponse réelle et les journaux. Exemple vérifié dans le code d’exécution ; aucun appel ni workflow n’a été exécuté.

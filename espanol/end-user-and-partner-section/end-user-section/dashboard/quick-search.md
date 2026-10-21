@@ -18,7 +18,7 @@ Esta guía está organizada igual que se construye la búsqueda:
 > un valor de la lista; la Búsqueda rápida construye la consulta por usted. Los ejemplos siguientes
 > muestran también la forma escrita, para que pueda copiarlos directamente.
 
-<figure><img src="../../../.gitbook/assets/quick_search_01_entry.png" alt="La barra de Búsqueda rápida en la parte superior del Dashboard"><figcaption><p>La barra de Búsqueda rápida en la parte superior del Dashboard.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_01_entry-es.png" alt="Búsqueda rápida en el panel en español."><figcaption><p>Búsqueda rápida en el panel en español.</p></figcaption></figure>
 
 ---
 
@@ -47,10 +47,10 @@ Varios chips combinados se leen como **AND** de forma predeterminada.
 
 En el extremo derecho de la barra:
 
-- **ⓘ Help** — abre la referencia integrada **Dashboard Search — Fields & Syntax**
+- **ⓘ Help** — abre la referencia integrada **Búsqueda en el panel de control: campos y sintaxis**
   con todos los campos, operadores y atajos disponibles en su espacio de trabajo.
 - **Filters (tune)** — un panel rápido con los filtros habituales de Status / User / Restart,
-  con **Clear filters** y **Apply**.
+  con **Borrar filtros** y **Aplicar**.
 - **Index ring** — un pequeño anillo de progreso que muestra qué parte de su índice de texto completo
   está construida (solo se muestra cuando la búsqueda de texto completo está activada).
 
@@ -91,7 +91,7 @@ Invoice.xml   iNVoice.xml   iNvoiCE.edi   …
 **No** coincide con `XYZ_Invoice.pdf` (ahí "invoice" está en medio; use
 `:` para eso).
 
-<figure><img src="../../../.gitbook/assets/quick_search_02_filename_starts.png" alt="filename=invoice solo coincide con los nombres que empiezan por invoice, en cualquier combinación de mayúsculas y minúsculas"><figcaption><p><code>filename=invoice</code> — solo los nombres que <strong>empiezan por</strong> "invoice", con cualquier combinación de mayúsculas y minúsculas (<code>Invoice.pdf</code>, <code>iNVoice.pdf</code>, <code>INVOICE_2026.pdf</code> … todos coinciden). Compárelo con <code>:</code> más abajo.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u028-es.png" alt="Entrada de una consulta por nombre de archivo."><figcaption><p>Entrada de una consulta por nombre de archivo.</p></figcaption></figure>
 
 #### `:` → contiene (en cualquier posición)
 
@@ -102,7 +102,7 @@ filename:invoice
 Utilice `:` para encontrar la palabra en **cualquier parte** del nombre: `2026_Invoice.pdf`,
 `vietnam_einvoice_sample.xml`, `scan_invoice_copy.pdf`.
 
-<figure><img src="../../../.gitbook/assets/quick_search_03_filename_contains.png" alt="filename:invoice coincide con la palabra en cualquier parte del nombre"><figcaption><p><code>filename:invoice</code> — coincide con la palabra en cualquier parte del nombre del documento.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_03_filename_contains-es.png" alt="Búsqueda por parte del nombre de archivo: filename:invoice."><figcaption><p>Búsqueda por parte del nombre de archivo: filename:invoice.</p></figcaption></figure>
 
 #### `="…"` → empieza *o* termina por
 
@@ -126,7 +126,7 @@ status=ready_for_validation
 El estado es una lista fija, por lo que `=` es una coincidencia **exacta** y la barra ofrece un selector de valores
 cuando escribe `status=`.
 
-<figure><img src="../../../.gitbook/assets/quick_search_05_status.png" alt="Filtrado por estado del documento"><figcaption><p><code>status=ready_for_validation</code> — coincidencia exacta en un campo de lista fija.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_05_status-es.png" alt="Filtro por el estado técnico ready_for_validation."><figcaption><p>Filtro por el estado técnico ready_for_validation.</p></figcaption></figure>
 
 ### Buscar documentos por fecha
 
@@ -137,7 +137,7 @@ created_on>2026-05-25
 Utilice `>`, `<`, `>=`, `<=` para rangos de fechas. También puede usar fechas **relativas**:
 `today()`, `today()-7` (últimos 7 días), `today()+30` (próximos 30 días).
 
-<figure><img src="../../../.gitbook/assets/quick_search_06_date.png" alt="Filtrado por fecha de creación"><figcaption><p><code>created_on&#62;2026-05-25</code> — documentos creados después de una fecha.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_06_date-es.png" alt="Búsqueda de documentos posteriores al 25 de mayo de 2026."><figcaption><p>Búsqueda de documentos posteriores al 25 de mayo de 2026.</p></figcaption></figure>
 
 ### Buscar documentos por subtipo de factura
 
@@ -145,7 +145,7 @@ Utilice `>`, `<`, `>=`, `<=` para rangos de fechas. También puede usar fechas *
 invoice_sub_type="Cost Invoice"
 ```
 
-El subtipo de factura es una lista fija (por ejemplo **Cost Invoice** o **Purchase
+El subtipo de factura es una lista fija (por ejemplo **Factura de costos** o **Purchase
 Invoice**), por lo que `=` es una coincidencia **exacta** y la barra ofrece un selector de valores cuando
 escribe `invoice_sub_type=`. Utilice `invoice_sub_type!="Cost Invoice"` para
 todo excepto ese subtipo.
@@ -166,10 +166,10 @@ reglas de coincidencia son exactamente las mismas que para los campos de texto e
 supplier_name=Test
 ```
 
-Empieza por, sobre el nombre de proveedor extraído. Utilice `supplier_name:fuji` para buscar
-en cualquier posición, o `supplier_name:"Ruiz Foods"` para escribir entre comillas un valor con espacios.
+Empieza por, sobre el nombre de proveedor extraído. Utilice `supplier_name:Ejemplo` para buscar
+en cualquier posición, o `supplier_name:"Proveedor Ejemplo"` para escribir entre comillas un valor con espacios.
 
-<figure><img src="../../../.gitbook/assets/quick_search_09_supplier.png" alt="Búsqueda por nombre de proveedor"><figcaption><p><code>supplier_name=Test</code> — el proveedor de cada resultado empieza por "Test".</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_09_supplier-es.png" alt="Ejemplo de consulta de proveedor: supplier_name=Test."><figcaption><p>Ejemplo de consulta de proveedor: supplier_name=Test.</p></figcaption></figure>
 
 ### Buscar documentos por pedido de compra
 
@@ -179,7 +179,7 @@ purchase_order=PO
 
 Empieza por, sobre el número de pedido extraído; ideal para un prefijo de pedido.
 
-<figure><img src="../../../.gitbook/assets/quick_search_10_purchase_order.png" alt="Búsqueda por pedido de compra"><figcaption><p><code>purchase_order=PO</code> — documentos cuyo número de pedido empieza por "PO".</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_10_purchase_order-es.png" alt="Ejemplo de consulta de pedido: purchase_order=PO."><figcaption><p>Ejemplo de consulta de pedido: purchase_order=PO.</p></figcaption></figure>
 
 ### Buscar documentos por importe
 
@@ -189,7 +189,7 @@ total_amount>5000
 
 Utilice `>`, `<`, `>=`, `<=` o `between 100 and 500` para un intervalo.
 
-<figure><img src="../../../.gitbook/assets/quick_search_07_amount.png" alt="Filtrado por importe total"><figcaption><p><code>total_amount&#62;5000</code> — facturas por encima de 5.000.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_07_amount-es.png" alt="Búsqueda de importes totales superiores a 5000."><figcaption><p>Búsqueda de importes totales superiores a 5000.</p></figcaption></figure>
 
 Para una ventana de valores, utilice `between`:
 
@@ -199,7 +199,7 @@ total_amount between 1000 and 5000
 
 Es una forma abreviada de `total_amount>=1000 AND total_amount<=5000`.
 
-<figure><img src="../../../.gitbook/assets/quick_search_14_between.png" alt="Ventana de importes con between"><figcaption><p><code>total_amount between 1000 and 5000</code> — todos los resultados quedan dentro de la ventana.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_14_between-es.png" alt="Intervalo de importe total entre 1000 y 5000."><figcaption><p>Intervalo de importe total entre 1000 y 5000.</p></figcaption></figure>
 
 ### Encontrar lo que falta
 
@@ -210,7 +210,7 @@ supplier_name=""
 `=""` significa "este campo **no está establecido**"; `supplier_name!=""` significa "tiene
 algún proveedor".
 
-<figure><img src="../../../.gitbook/assets/quick_search_12_empty.png" alt="Búsqueda de documentos sin proveedor"><figcaption><p><code>supplier_name=""</code> — documentos que todavía no tienen proveedor.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_12_empty-es.png" alt="Búsqueda de documentos sin nombre de proveedor."><figcaption><p>Búsqueda de documentos sin nombre de proveedor.</p></figcaption></figure>
 
 La misma comprobación de presencia funciona con cualquier campo; por ejemplo, documentos que todavía
 no tienen un código de asignación AP:
@@ -219,7 +219,7 @@ no tienen un código de asignación AP:
 ap_assignment_code=""
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_15_ap_empty.png" alt="Documentos sin código de asignación AP"><figcaption><p><code>ap_assignment_code=""</code> — documentos que no tienen código de asignación AP. Utilice <code>ap_assignment_code!=""</code> para los que sí lo tienen.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_15_ap_empty-es.png" alt="Búsqueda de documentos sin asignación AP."><figcaption><p>Búsqueda de documentos sin asignación AP.</p></figcaption></figure>
 
 ---
 
@@ -231,20 +231,20 @@ es simplemente un atajo de una consulta que también podría escribir usted mism
 
 | Smart Filter | Encuentra | Equivale a escribir |
 |--------------|-----------|---------------------|
-| ⚠️ **Overdue** | Vencidos | `invoice_due_date<today()` |
-| 🕐 **Due soon** | Dentro de los próximos 7 días | `invoice_due_date<=today()+7` |
-| 👤 **Assigned to me** | Elementos que esperan su acción | `assigned_to=<you>` |
-| 📅 **Today's inbox** | Importados hoy | `imported_on>=today()` |
-| 📋 **Pending validation** | Listos para validar | `status=ready_for_validation` |
-| 🧾 **Electronic documents** | Facturas electrónicas (XML, ZUGFeRD, EDI) | `is_edoc=true` |
-| ✅ **Full PO match** | Totalmente conciliados con un pedido de compra | `po_match_status=full_matched` |
-| ➗ **Partial PO match** | Parcialmente conciliados con un pedido de compra | `po_match_status=partial_matched` |
-| 📉 **Under PO match** | Cantidad o precio unitario por debajo del pedido de compra | `po_match_status=under_matched` |
+| ⚠️ **Vencido** | Vencidos | `invoice_due_date<today()` |
+| 🕐 **Próximo a vencer** | Dentro de los próximos 7 días | `invoice_due_date<=today()+7` |
+| 👤 **Asignado a mí** | Elementos que esperan su acción | `assigned_to=<you>` |
+| 📅 **Bandeja de hoy** | Importados hoy | `imported_on>=today()` |
+| 📋 **Pendiente de validación** | Listos para validar | `status=ready_for_validation` |
+| 🧾 **Documentos electrónicos** | Facturas electrónicas (XML, ZUGFeRD, EDI) | `is_edoc=true` |
+| ✅ **Coincidencia completa de la orden de compra** | Totalmente conciliados con un pedido de compra | `po_match_status=full_matched` |
+| ➗ **Coincidencia parcial de la orden de compra** | Parcialmente conciliados con un pedido de compra | `po_match_status=partial_matched` |
+| 📉 **Bajo coincidencia de PO** | Cantidad o precio unitario por debajo del pedido de compra | `po_match_status=under_matched` |
 
 Los tres filtros de **PO match** y los campos de texto completo requieren que la búsqueda de texto completo
 esté activada para su organización.
 
-<figure><img src="../../../.gitbook/assets/quick_search_11_smart_filters.png" alt="El panel desplegable de Smart Filters"><figcaption><p>Los Smart Filters en la parte superior del menú desplegable de la Búsqueda rápida: un clic aplica el filtro (Overdue, Due soon, Assigned to me, Today's inbox, Pending validation, Electronic documents, Full / Partial / Under PO match).</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u030-es.png" alt="Ayuda de consultas y filtros de la búsqueda rápida."><figcaption><p>Ayuda de consultas y filtros de la búsqueda rápida.</p></figcaption></figure>
 
 ---
 
@@ -259,10 +259,10 @@ group by supplier_name
 ```
 
 La lista muestra entonces **encabezados de grupo** plegables, cada uno con el nombre del grupo y
-un **recuento** (p. ej. *Ruiz Foods (12)*). Haga clic en un encabezado para expandir o contraer ese
+un **recuento** (p. ej. *Proveedor Ejemplo (12)*). Haga clic en un encabezado para expandir o contraer ese
 grupo. En los campos de fecha puede agrupar por **día, semana o mes**.
 
-<figure><img src="../../../.gitbook/assets/quick_search_16_grouping.png" alt="Resultados agrupados por proveedor con encabezados plegables"><figcaption><p><code>group by supplier_name</code> — los resultados se agrupan en un encabezado expandible por proveedor.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u029-es.png" alt="Entrada de una consulta con agrupación por proveedor."><figcaption><p>Entrada de una consulta con agrupación por proveedor.</p></figcaption></figure>
 
 La agrupación se combina con cualquier filtro: `status=ready_for_validation group by
 supplier_name` agrupa solo los documentos que coinciden. Al hacer clic en un grupo se **profundiza**:
@@ -310,7 +310,7 @@ Toda la comparación de texto ignora las mayúsculas y minúsculas.
 
 ### Conectores
 
-Combine condiciones con **AND** (ambas verdaderas), **OR** (cualquiera de las dos), **NOT** y
+Combine condiciones con **AND** (ambas verdaderas), **O** (cualquiera de las dos), **NO** y
 paréntesis `( … )` para agrupar:
 
 ```
@@ -318,7 +318,7 @@ status=ready_for_validation AND supplier_name=Test
 (status=error OR status=failed) AND created_on>today()-1
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_13_combined.png" alt="Combinación de condiciones con AND"><figcaption><p><code>status=ready_for_validation AND supplier_name=Test</code> — dos condiciones combinadas.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_13_combined-es.png" alt="Combinación de condiciones de estado y proveedor con AND."><figcaption><p>Combinación de condiciones de estado y proveedor con AND.</p></figcaption></figure>
 
 ### Atajos
 
@@ -341,175 +341,143 @@ Formulaciones más cortas de las mismas consultas; utilice la que le resulte má
 | `@User` | `assigned_to:User` | Prefijo al estilo Twitter para el responsable asignado |
 | `$5000+` | `total_amount>=5000` | Prefijo `$` para umbrales de importe |
 
-### Consulta de atajo + galería de resultados
+### Ejemplos de consultas
 
-Estos ejemplos muestran cada patrón de atajo con la consulta que se escribe y el resultado que muestra el Dashboard. El primer grupo utiliza campos estándar y funciona incluso cuando la búsqueda de texto completo no está activada. El segundo grupo utiliza campos exclusivos de texto completo, como el importe o la fecha de vencimiento de la factura.
+Las imágenes muestran las consultas introducidas en la interfaz española. Los datos de los documentos están ocultos. Una imagen de la barra de filtros no demuestra un número concreto de resultados.
 
-#### Funciona sin texto completo
-
-##### Alias de operadores
-
-- Consulta: `created_on gt 2026-05-25`
-- Equivale a: `created_on>2026-05-25`
-- Resultado: filtra por Created posterior al 25 de mayo de 2026.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_01_operator_aliases.png" alt="Resultado de la Búsqueda rápida para created_on gt 2026-05-25"><figcaption><p><code>created_on gt 2026-05-25</code> - Filtra por Created posterior al 25 de mayo de 2026.</p></figcaption></figure>
-
-##### Palabras de fecha sin paréntesis
-
-- Consulta: `created_on < today`
-- Equivale a: `created_on<today()`
-- Resultado: expande la palabra today a today().
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_02_bare_date.png" alt="Resultado de la Búsqueda rápida para created_on &lt; today"><figcaption><p><code>created_on &lt; today</code> - Expande la palabra today a today().</p></figcaption></figure>
-
-##### Periodo relativo
-
-- Consulta: `created_on this_month`
-- Equivale a: `created_on>=first day of this month AND created_on<=last day of this month`
-- Resultado: expande this_month a una ventana de fechas.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_03_period.png" alt="Resultado de la Búsqueda rápida para created_on this_month"><figcaption><p><code>created_on this_month</code> - Expande this_month a una ventana de fechas.</p></figcaption></figure>
-
-##### Palabras para vacío o establecido
-
-- Consulta: `assigned_to is empty`
-- Equivale a: `assigned_to=""`
-- Resultado: encuentra los documentos sin responsable asignado.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_04_presence.png" alt="Resultado de la Búsqueda rápida para assigned_to is empty"><figcaption><p><code>assigned_to is empty</code> - Encuentra los documentos sin responsable asignado.</p></figcaption></figure>
-
-##### Estado sencillo
-
-- Consulta: `status:open`
-- Equivale a: `status=ready_for_validation`
-- Resultado: asigna open al estado de validación.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_05_status_open.png" alt="Resultado de la Búsqueda rápida para status:open"><figcaption><p><code>status:open</code> - Asigna open al estado de validación.</p></figcaption></figure>
-
-##### Not between
-
-- Consulta: `created_on not between 2026-06-01, 2026-06-15`
-- Equivale a: `(created_on<2026-06-01 OR created_on>2026-06-15)`
-- Resultado: encuentra los valores fuera de una ventana de fechas.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_06_not_between.png" alt="Resultado de la Búsqueda rápida para created_on not between 2026-06-01, 2026-06-15"><figcaption><p><code>created_on not between 2026-06-01, 2026-06-15</code> - Encuentra los valores fuera de una ventana de fechas.</p></figcaption></figure>
-
-##### In-list
-
-- Consulta: `status in (ready_for_validation, exported)`
-- Equivale a: `status=ready_for_validation OR status=exported`
-- Resultado: coincide con cualquiera de los estados indicados.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_07_in_list.png" alt="Resultado de la Búsqueda rápida para status in (ready_for_validation, exported)"><figcaption><p><code>status in (ready_for_validation, exported)</code> - Coincide con cualquiera de los estados indicados.</p></figcaption></figure>
-
-##### Prefijo de negación
-
-- Consulta: `not status=finished`
-- Equivale a: `status!=finished`
-- Resultado: invierte el predicado del estado finished.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_08_negation.png" alt="Resultado de la Búsqueda rápida para not status=finished"><figcaption><p><code>not status=finished</code> - Invierte el predicado del estado finished.</p></figcaption></figure>
-
-##### Cadena contiene
-
-- Consulta: `filename contains E2E`
-- Equivale a: `filename:E2E`
-- Resultado: utiliza contains como búsqueda de subcadena en el nombre de archivo.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_09_contains.png" alt="Resultado de la Búsqueda rápida para filename contains E2E"><figcaption><p><code>filename contains E2E</code> - Utiliza contains como búsqueda de subcadena en el nombre de archivo.</p></figcaption></figure>
-
-##### Prefijo de factura
-
-- Consulta: `#INV-1234`
-- Equivale a: `invoice_id:INV-1234`
-- Resultado: asigna #... a una búsqueda por id de factura.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_12_invoice_prefix.png" alt="Resultado de la Búsqueda rápida para #INV-1234"><figcaption><p><code>#INV-1234</code> - Asigna #... a una búsqueda por id de factura.</p></figcaption></figure>
-
-##### Prefijo de responsable
-
-- Consulta: `@Daniel`
-- Equivale a: `assigned_to:"Daniel"`
-- Resultado: asigna @... a una búsqueda por nombre del responsable asignado.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_13_assignee_prefix.png" alt="Resultado de la Búsqueda rápida para @Daniel"><figcaption><p><code>@Daniel</code> - Asigna @... a una búsqueda por nombre del responsable asignado.</p></figcaption></figure>
-
-#### Requiere búsqueda de texto completo
-
-Si utiliza el mismo atajo con un campo exclusivo de texto completo, la consulta sigue requiriendo texto completo. Por ejemplo, `ap_assignment_code is empty` utiliza el mismo atajo de vacío/establecido que `assigned_to is empty`, pero el campo de asignación AP es exclusivo de texto completo.
-
-##### Sufijo de importe
-
-- Consulta: `total_amount > 5k`
-- Equivale a: `total_amount>5000`
-- Resultado: expande k a miles en un campo de importe.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_10_currency_suffix.png" alt="Resultado de la Búsqueda rápida para total_amount &gt; 5k"><figcaption><p><code>total_amount &gt; 5k</code> - Expande k a miles en un campo de importe.</p></figcaption></figure>
-
-##### Atajo overdue
-
-- Consulta: `overdue`
-- Equivale a: `invoice_due_date<today() AND status!=finished`
-- Resultado: encuentra las facturas no finalizadas cuya fecha de vencimiento ya pasó.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_11_overdue.png" alt="Resultado de la Búsqueda rápida para overdue"><figcaption><p><code>overdue</code> - Encuentra las facturas no finalizadas cuya fecha de vencimiento ya pasó.</p></figcaption></figure>
-
-##### Prefijo de importe
-
-- Consulta: `$5000+`
-- Equivale a: `total_amount>=5000`
-- Resultado: asigna $...+ a un umbral de importe.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_14_amount_prefix.png" alt="Resultado de la Búsqueda rápida para $5000+"><figcaption><p><code>$5000+</code> - Asigna $...+ a un umbral de importe.</p></figcaption></figure>
-
----
-
-## Parte 4 — Modos de búsqueda avanzados
-
-Además de la búsqueda por campos, tres modos con prefijo buscan en el propio contenido del documento.
-
-### Búsqueda vectorial (semántica) — `vector:`
-
-Busca por **significado**, no por texto exacto; es útil para "encontrar documentos sobre XYZ".
-Requiere el módulo Vector; se aplica al contenido del documento.
+#### Operador de comparación escrito
 
 ```
-vector: invoices about office supplies
-vector: shipping delays with Hamburg port
+created_on gt 2026-05-25
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_17_vector.png" alt="Resultados de la búsqueda vectorial semántica"><figcaption><p><code>vector: supplier invoice</code> — documentos relacionados semánticamente, incluso sin esas palabras exactas.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_01_operator_aliases-es.png" alt="Operador gt en una consulta de fecha."><figcaption><p>Operador gt en una consulta de fecha.</p></figcaption></figure>
 
-### Búsqueda de texto OCR — `ocr:`
-
-Busca **dentro del texto de las páginas** que extrajo el motor OCR, no solo en las columnas
-estructuradas. Es útil cuando el valor que recuerda está en el cuerpo del documento.
+#### Antes de hoy
 
 ```
-ocr: Versandkosten
-ocr: "purchase order PO-12345"
-ocr: Hamburg AND doc_type=INVOICE
-ocr: IBAN
+created_on < today()
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_18_ocr.png" alt="Resultados de la búsqueda de texto OCR"><figcaption><p><code>ocr: demo invoice</code> — coincide con el texto que aparece en cualquier parte de las páginas del documento.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_02_bare_date-es.png" alt="Comparación de created_on con today()."><figcaption><p>Comparación de created_on con today().</p></figcaption></figure>
 
-### Búsqueda en lenguaje natural (IA) — `ai:`
-
-Describa lo que quiere en lenguaje sencillo; la IA lee su frase y extrae
-filtros (proveedor, fechas, importes) para convertirlos en una consulta estructurada. A diferencia de Vector,
-**construye una consulta** en lugar de buscar documentos similares.
+#### Desde una fecha de creación
 
 ```
-ai: invoices from Ruiz over 1000 last quarter
-ai: overdue invoices waiting on approval
-ai: shipping documents from Hamburg last month
+created_on >= 2026-06-01
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_19_ai.png" alt="Resultados de la búsqueda en lenguaje natural con IA"><figcaption><p><code>ai: invoices over 1000 from this year</code> — la IA convierte la frase en filtros automáticamente.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_03_period-es.png" alt="Filtro de fecha desde el 1 de junio de 2026."><figcaption><p>Filtro de fecha desde el 1 de junio de 2026.</p></figcaption></figure>
 
----
+#### Sin responsable asignado
+
+```
+assigned_to is empty
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_04_presence-es.png" alt="Búsqueda de documentos sin responsable asignado."><figcaption><p>Búsqueda de documentos sin responsable asignado.</p></figcaption></figure>
+
+#### Filtro por estado
+
+```
+status=ready_for_validation
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_05_status_open-es.png" alt="Ejemplo de filtro de estado en la búsqueda rápida."><figcaption><p>Ejemplo de filtro de estado en la búsqueda rápida.</p></figcaption></figure>
+
+#### Fuera de un intervalo de fechas
+
+```
+created_on not between 2026-06-01 and 2026-06-15
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_06_not_between-es.png" alt="Búsqueda de fechas fuera del intervalo indicado."><figcaption><p>Búsqueda de fechas fuera del intervalo indicado.</p></figcaption></figure>
+
+#### Estados alternativos
+
+```
+status=ready_for_validation OR status=exported
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_07_in_list-es.png" alt="Combinación de dos estados técnicos con OR."><figcaption><p>Combinación de dos estados técnicos con OR.</p></figcaption></figure>
+
+#### Excluir una condición de proveedor
+
+```
+NOT supplier_name=Test
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_08_negation-es.png" alt="Exclusión de un proveedor con NOT."><figcaption><p>Exclusión de un proveedor con NOT.</p></figcaption></figure>
+
+#### Parte del nombre de archivo
+
+```
+filename:invoice
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_09_contains-es.png" alt="Búsqueda de un término dentro del nombre de archivo."><figcaption><p>Búsqueda de un término dentro del nombre de archivo.</p></figcaption></figure>
+
+#### Consulta por número de factura
+
+```
+invoice_number=INV
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_12_invoice_prefix-es.png" alt="Ejemplo de consulta por invoice_number."><figcaption><p>Ejemplo de consulta por invoice_number.</p></figcaption></figure>
+
+#### Asignación vacía
+
+```
+assigned_to=""
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_13_assignee_prefix-es.png" alt="Filtro por responsable vacío: assigned_to=&quot;&quot;."><figcaption><p>Filtro por responsable vacío: assigned_to=&quot;&quot;.</p></figcaption></figure>
+
+#### Consulta por moneda
+
+```
+currency=EUR
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_10_currency_suffix-es.png" alt="Búsqueda de documentos en euros: currency=EUR."><figcaption><p>Búsqueda de documentos en euros: currency=EUR.</p></figcaption></figure>
+
+#### Vencimiento anterior a hoy
+
+```
+invoice_due_date<today()
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_11_overdue-es.png" alt="Filtro por fecha de vencimiento anterior a today()."><figcaption><p>Filtro por fecha de vencimiento anterior a today().</p></figcaption></figure>
+
+#### Umbral de importe
+
+```
+total_amount>=1000
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_14_amount_prefix-es.png" alt="Filtro por un importe total mínimo de 1000."><figcaption><p>Filtro por un importe total mínimo de 1000.</p></figcaption></figure>
+
+## Incluir el contenido del documento
+
+El menú **Buscar en el contenido del documento** determina si la búsqueda incluye el contenido del documento. Esta elección es independiente de prefijos técnicos como `vector:`, `ocr:` o `ai:`.
+
+### Automático
+
+Busca primero en las columnas visibles. Si no encuentra coincidencias, incluye el contenido cuando la organización dispone de las funciones necesarias.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_17_vector-es.png" alt="Inclusión automática del contenido de los documentos en la búsqueda."><figcaption><p>Inclusión automática del contenido de los documentos en la búsqueda.</p></figcaption></figure>
+
+### Incluir siempre el contenido
+
+Incluye explícitamente el contenido de los documentos. La organización debe disponer de las funciones de búsqueda correspondientes.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_18_ocr-es.png" alt="Inclusión permanente del contenido de los documentos en la búsqueda."><figcaption><p>Inclusión permanente del contenido de los documentos en la búsqueda.</p></figcaption></figure>
+
+### Solo columnas visibles
+
+Limita la búsqueda a las columnas visibles del panel.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_19_ai-es.png" alt="Búsqueda limitada a las columnas visibles."><figcaption><p>Búsqueda limitada a las columnas visibles.</p></figcaption></figure>
 
 ### Recetas
 
@@ -518,7 +486,7 @@ ai: shipping documents from Hamburg last month
 | Listos para validar, totalmente conciliados | `status=ready_for_validation AND po_match_status=full_matched` |
 | Este proveedor, esta semana | `supplier_name=Test AND created_on>today()-7` |
 | Facturas vencidas de alto importe | `total_amount>5000 AND invoice_due_date<today()` |
-| Dos proveedores a la vez | `supplier_name=fuji OR supplier_name=acme` |
+| Dos proveedores a la vez | `supplier_name=EjemploA OR supplier_name=EjemploB` |
 | Documentos con error de hoy | `(status=error OR status=failed) AND created_on>today()-1` |
 | Notas de crédito electrónicas | `is_edoc=true AND sub_doc_type=CREDIT_NOTE` |
 | Por prefijo de pedido de compra | `purchase_order=PO-2026` |

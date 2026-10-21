@@ -37,7 +37,7 @@ Haga clic en **Nueva idea** en la cabecera. El diálogo pide:
 
 Pulse **Enviar** para publicar. La idea aparece en la lista con el estado **Nueva**.
 
-<figure><img src="../../.gitbook/assets/idea-board-new-idea.png" alt="Diálogo de idea nueva"><figcaption><p>El diálogo de Nueva idea, con los selectores de categoría y canal.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-idea-board-new-idea-es.png" alt="Diálogo para una nueva idea sin datos personales."><figcaption><p>Diálogo para una nueva idea sin datos personales.</p></figcaption></figure>
 
 ## Votar
 

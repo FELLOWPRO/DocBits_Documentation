@@ -20,4 +20,4 @@ Dentro de la Pantalla de Validación, puedes crear tickets directamente para el 
 
 <figure><img src="../../../.gitbook/assets/user-support3.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/user-support4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-user-support4-es.png" alt="Formulario de soporte antes de enviarlo."><figcaption><p>Formulario de soporte antes de enviarlo.</p></figcaption></figure>

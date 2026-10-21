@@ -12,8 +12,8 @@ Los campos de Datos Difusos (Fuzzy Data) permiten a los usuarios rellenar campos
 
 * Rellenan campos relacionados en función de su valor o de la entrada del usuario.
 * Los tres campos estándar que utilizan Datos Difusos son:
-  * **Purchase Order**
-  * **Supplier**
+  * **Número de pedido**
+  * **Proveedor**
   * **Vendor ID**
 
 #### **Uso de los campos de Datos Difusos**
@@ -22,20 +22,20 @@ Los campos de Datos Difusos (Fuzzy Data) permiten a los usuarios rellenar campos
    *   Al hacer clic en el **icono azul** junto al campo Purchase Order se abre una **ventana de selección**.
 
 
-       <figure><img src="../../../.gitbook/assets/fuzzy_data_selection_window.png" alt="Ventana de selección de Datos Difusos"><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/s150-fuzzy_data_selection_window-es.png" alt="Diálogo de consulta de datos maestros con los registros ocultos."><figcaption><p>Diálogo de consulta de datos maestros con los registros ocultos.</p></figcaption></figure>
    * Esta ventana contiene una tabla con todos los pedidos de compra de la **tabla de consulta de datos maestros**.
    * Al activar la opción **"Display all columns"** se muestran detalles adicionales.
-   * Seleccione un **Purchase Order** y haga clic en **Proceed**:
+   * Seleccione un **Número de pedido** y haga clic en **Proceder**:
      * Si el sistema encuentra un Purchase Order en el documento, filtra por él automáticamente.
      * Si no se encuentra ninguna coincidencia, puede **crear filtros personalizados** para encontrar el Purchase Order correcto.
      * Se pueden añadir varios filtros; al activar **"Match all filters"** se garantiza que se cumplan todas las condiciones.
      * Opciones de filtro disponibles:
        * **Smart**
-       * **Contains**
-       * **Exact**
-       * **Starts with**
-       * **Ends with**
-   * Un botón situado junto a **Proceed** permite a los usuarios **crear una nueva tarea/notificación**.
+       * **Contiene**
+       * **exacto**
+       * **Comienza con**
+       * **Termina con**
+   * Un botón situado junto a **Proceder** permite a los usuarios **crear una nueva tarea/notificación**.
 2. **Selección de un Supplier o Vendor ID**
    * El proceso es el mismo que para los Purchase Orders.
    * La diferencia es que los campos **Supplier y Vendor ID utilizan la tabla de datos maestros de proveedores** en lugar de la tabla de datos maestros de cabeceras de pedidos de compra.
@@ -53,7 +53,6 @@ Los campos de Datos Difusos (Fuzzy Data) permiten a los usuarios rellenar campos
 {% content-ref url="../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md" %}
 [fuzzy-data-configuration-with-list-of-values.md](../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md)
 {% endcontent-ref %}
-
 
 
 {% embed url="https://www.youtube.com/watch?v=vT5HuGjAYV0" %}

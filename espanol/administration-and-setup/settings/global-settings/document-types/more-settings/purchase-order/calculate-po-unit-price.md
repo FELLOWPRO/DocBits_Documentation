@@ -40,7 +40,6 @@ El precio calculado se escribe en la instantánea de la orden de compra que se a
 
 ## Ejemplo:
 
-<figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_4.png" alt="" width="563"><figcaption></figcaption></figure>
 
 En este caso, el precio unitario (sin el descuento) se extrae del documento, mientras que la orden de compra en el ERP almacena el precio unitario con el descuento aplicado. Esto resulta en una discrepancia en el precio unitario. Con la configuración activada, el precio unitario se toma del importe de la línea y la cantidad, por lo que ambas partes coinciden.
 
@@ -48,3 +47,6 @@ En este caso, el precio unitario (sin el descuento) se extrae del documento, mie
 
 * [Reglas de conciliación de órdenes de compra](purchase-order-matching-rules.md) — las reglas comparan el precio unitario **efectivo**, que es este precio calculado cuando la configuración está activada.
 * [Configuración de tolerancia de órdenes de compra](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) — cuánto puede desviarse el precio de la factura del precio calculado.
+
+
+Ejemplo con cantidad 9 y base de precio 1: 879,84 ÷ 9 × 1 = 97,76 de precio unitario neto. Un total de 954,63 con el 8,5 % de impuesto produce 106,07. Compare una factura con precios netos usando el importe neto.

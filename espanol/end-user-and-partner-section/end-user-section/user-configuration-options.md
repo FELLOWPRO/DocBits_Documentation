@@ -7,7 +7,7 @@ Para configurar tus ajustes, haz clic en el Icono de Usuario ubicado en la esqui
 
 <figure><img src="../../.gitbook/assets/user-config.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/user_config_options_2.png" alt="" width="308"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-u031-es.png" alt="Menú de usuario y selección del idioma."><figcaption><p>Menú de usuario y selección del idioma.</p></figcaption></figure>
 
 **Idioma**
 
@@ -17,7 +17,7 @@ How to Change Language in DocBits (User Settings Tutorial)
 
 * **Seleccionar Idioma Preferido:** Elige tu idioma deseado de las opciones disponibles.
 
-**Dark Mode**
+**Modo oscuro**
 
 * **Activar Dark Mode:** Habilita o deshabilita el Dark Mode para una experiencia de visualización más cómoda.
 

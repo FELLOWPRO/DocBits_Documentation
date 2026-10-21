@@ -4,7 +4,7 @@
 
 Esta función te ayuda a gestionar y conciliar los números de artículo entre tu sistema y tus proveedores. A menudo, los números de artículo que usas internamente pueden no coincidir con los números de artículo que usan tus proveedores. Docbits facilita el manejo de estas discrepancias creando un mapeo entre tus números de artículo y los de tus proveedores.
 
-<figure><img src="../../../.gitbook/assets/supplier-item-number-map.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-supplier-item-number-map-es.png" alt="Asignación de números de artículo de proveedor."><figcaption><p>Asignación de números de artículo de proveedor.</p></figcaption></figure>
 
 ## **Cómo Funciona**
 

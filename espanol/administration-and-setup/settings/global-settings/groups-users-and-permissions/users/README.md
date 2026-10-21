@@ -2,7 +2,7 @@
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/es.mp4" %}
 
-<figure><img src="../../../../../.gitbook/assets/users_settings.png" alt="Gestión de usuarios"><figcaption><p>Página de gestión de usuarios</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u046-es.png" alt="Resumen de usuarios con nombres y cuentas ocultos."><figcaption><p>Resumen de usuarios con nombres y cuentas ocultos.</p></figcaption></figure>
 
 La página de Usuarios permite a los administradores gestionar todas las cuentas de usuario de su organización en DocBits. Aquí puede agregar nuevos usuarios, asignar roles y controlar el acceso.
 
@@ -15,8 +15,8 @@ La tabla de usuarios muestra las siguientes columnas:
 | **Nombre** | El nombre completo del usuario. |
 | **Correo electrónico** | La dirección de correo electrónico del usuario, que se utiliza como identificador de inicio de sesión. |
 | **Último inicio de sesión** | Fecha y hora del inicio de sesión más reciente del usuario. |
-| **Admin** | Casilla que indica si el usuario tiene privilegios de administrador. Los Admin pueden acceder a todos los ajustes y gestionar a otros usuarios. |
-| **System Admin** | Casilla que indica el único System Admin de la organización: la cuenta que DocBits utiliza para acciones automáticas que ocurren en segundo plano (como las importaciones y exportaciones automatizadas). Un System Admin siempre tiene también privilegios de Admin. Consulte [Privilegios de administrador](admin-privileges.md#admin-vs-system-admin) para conocer la diferencia entre Admin y System Admin. |
+| **ADMINISTRACIÓN** | Casilla que indica si el usuario tiene privilegios de administrador. Los Admin pueden acceder a todos los ajustes y gestionar a otros usuarios. |
+| **Administrador del sistema** | Casilla que indica el único System Admin de la organización: la cuenta que DocBits utiliza para acciones automáticas que ocurren en segundo plano (como las importaciones y exportaciones automatizadas). Un System Admin siempre tiene también privilegios de Admin. Consulte [Privilegios de administrador](admin-privileges.md#admin-vs-system-admin) para conocer la diferencia entre Admin y System Admin. |
 | **Activo** | Casilla que muestra si la cuenta de usuario está actualmente activa. Los usuarios inactivos no pueden iniciar sesión. |
 | **Acciones** | Menú con opciones como editar los datos del usuario, restablecer contraseñas o desactivar la cuenta. |
 
@@ -37,4 +37,4 @@ Haga clic en **Análisis de inicios de sesión** para ver los datos de actividad
    * **Rol de usuario**: Asigne el rol adecuado (Standard User, Admin o System Admin).
 3. Haga clic en **Guardar** para crear la cuenta de usuario. El nuevo usuario recibirá una notificación por correo electrónico con sus datos de inicio de sesión y un enlace para establecer su primera contraseña en la página Establecer contraseña. Consulte [Obtener acceso e iniciar sesión](../../../../../end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md#primera-contraseña-para-cuentas-creadas-por-el-administrador).
 
-> **Nota:** El rol de **System Admin** solo se puede elegir al crear un usuario; no se puede agregar ni quitar más adelante. Cada organización puede tener un único System Admin, y al elegirlo se otorgan automáticamente también los derechos de Admin. Consulte [Privilegios de administrador](admin-privileges.md#admin-vs-system-admin) para saber cuándo conviene usarlo.
+> **Nota:** El rol de **Administrador del sistema** solo se puede elegir al crear un usuario; no se puede agregar ni quitar más adelante. Cada organización puede tener un único System Admin, y al elegirlo se otorgan automáticamente también los derechos de Admin. Consulte [Privilegios de administrador](admin-privileges.md#admin-vs-system-admin) para saber cuándo conviene usarlo.

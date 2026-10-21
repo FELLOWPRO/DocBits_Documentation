@@ -18,7 +18,10 @@ Para habilitar la detección de documentos duplicados en **DocBits**, sigue esto
     ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_2.png)
 3.  Ve a la sección de **Detección de duplicados**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_3.png)
+
+
+<figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_3-es.png" alt="Configuración de detección de documentos duplicados."><figcaption><p>Configuración de detección de documentos duplicados.</p></figcaption></figure>
+
 
 DocBits proporciona dos opciones para identificar documentos duplicados:
 
@@ -36,7 +39,11 @@ Una vez que la **Detección de duplicados** está habilitada, estarán disponibl
 *   **Campos de detección de duplicados**\
     Selecciona los campos que deben utilizarse para identificar duplicados (por ejemplo, Identificación del proveedor, Fecha, Número de factura, etc.). Los documentos que coincidan con estos campos se marcarán como duplicados.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_4.png)
+
+
+<figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_4-es.png" alt="Campos disponibles para detectar documentos duplicados."><figcaption><p>Campos disponibles para detectar documentos duplicados.</p></figcaption></figure>
+
+
 *   **Intervalo de detección de duplicados**
 
     Utiliza esta configuración para definir el rango de tiempo dentro del cual se detectan duplicados. Los documentos subidos dentro del intervalo seleccionado se compararán entre sí según los campos seleccionados.
@@ -59,7 +66,12 @@ Una vez que la **Detección de duplicados** está habilitada, cualquier document
 *   Haz clic en este ícono para abrir los registros coincidentes en una vista de pantalla dividida para una fácil comparación.\
     <mark style="color:red;">**Nota**</mark>: El ícono solo aparecerá si se ha detectado al menos un duplicado para el documento.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_7.png)
+
+
+
 *   Al ver un documento marcado, aparecerá una barra de advertencia en la parte superior, indicando que el documento es un duplicado.
 
     ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_5.png)
+
+
+Para revisar posibles duplicados, compare número de factura, proveedor, fecha e importe. Use el aviso de duplicado y los datos del documento para decidir qué necesita corregirse.

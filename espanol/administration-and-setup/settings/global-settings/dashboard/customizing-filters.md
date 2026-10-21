@@ -30,7 +30,9 @@ Usar filtros permite a los usuarios encontrar rápidamente información relevant
 
 * Abre el menú de filtros en la configuración bajo PANEL y haz clic en "Filtros".
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_3.png)
+
+<figure><img src="../../../../.gitbook/assets/prior-u015-es.png" alt="Estilo de filtro de estado y filtro personalizado del panel."><figcaption><p>Estilo de filtro de estado y filtro personalizado del panel.</p></figcaption></figure>
+
 
 * Selecciona el campo a filtrar (por ejemplo, Estado).
 

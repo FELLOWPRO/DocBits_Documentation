@@ -4,7 +4,9 @@ Después de cargar su documento, será llevado a la pantalla de validación. Alg
 
 Puede ayudar a entrenar a DocBits para reconocer estos campos identificando manualmente los datos correctos. **Por favor, tenga en cuenta:** si un campo permanece vacío, podría ser simplemente porque la información no está presente en el documento cargado.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_0.png)
+
+<figure><img src="../../../.gitbook/assets/s150-header_field_training_0-es.png" alt="Validación de una factura ficticia antes del entrenamiento de campos."><figcaption><p>Validación de una factura ficticia antes del entrenamiento de campos.</p></figcaption></figure>
+
 
 ### Para entrenar un campo:
 
@@ -13,10 +15,15 @@ Puede ayudar a entrenar a DocBits para reconocer estos campos identificando manu
    * **Haga doble clic** en los datos relevantes dentro del documento, o
    * **Dibuje un cuadro de selección** alrededor de los datos usando su cursor.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_1.png)
+
+<figure><img src="../../../.gitbook/assets/s150-header_field_training_1-es.png" alt="Selección del número de factura como punto de partida del entrenamiento."><figcaption><p>Selección del número de factura como punto de partida del entrenamiento.</p></figcaption></figure>
+
 
 Repita este proceso para todos los campos requeridos. Una vez que todos los campos necesarios hayan sido completados, **haga clic en "Guardar Reglas"** para almacenar el entrenamiento. Esto asegura que DocBits aprenda dónde encontrar cada pieza de información para documentos similares en el futuro.
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_2.png)
 
 Después de guardar, su documento estará listo para ser exportado, y la próxima vez, DocBits extraerá automáticamente los campos entrenados.
+
+
+Después de guardar un entrenamiento previsto, pruébelo con otros documentos del mismo proveedor. La posibilidad de exportar depende también de la validación y del flujo configurado.

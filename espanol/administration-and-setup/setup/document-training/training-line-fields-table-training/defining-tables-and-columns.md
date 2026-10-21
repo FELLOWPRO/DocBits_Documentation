@@ -1,74 +1,45 @@
 # Definir tablas y columnas
 
-Utilice esta guía para definir manualmente tablas y columnas para la extracción de líneas de artículo en DocBits. Resulta especialmente útil cuando la detección automática no captura por completo la estructura de la tabla o cuando necesita añadir campos personalizados.
+Si una tabla no se reconoce completamente, abra su entrenamiento desde la validación del documento. Los ejemplos muestran una factura ficticia y un borrador sin guardar.
 
-### 1. Acceda a la vista de extracción de tablas
+## Abrir y activar el entrenamiento
 
-Abra su documento en DocBits y haga clic en el botón **“Table Training”** para entrar en la vista de extracción de tablas.
+Abra la factura en **Validación de campos** y seleccione **Extracción de tabla**.
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_1-es.png" alt="Interfaz para definir tablas y columnas."><figcaption><p>Interfaz para definir tablas y columnas.</p></figcaption></figure>
 
-### 2. Active el modo de entrenamiento
+Active **Modo Formación** para mostrar las herramientas de selección y columnas.
 
-Para definir o modificar tablas y columnas manualmente, haga clic en **“TRAINING MODE”.**
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_2-es.png" alt="Entrenamiento de tablas con el modo de entrenamiento activado."><figcaption><p>Entrenamiento de tablas con el modo de entrenamiento activado.</p></figcaption></figure>
 
-<div align="center"><figure><img src="../../../../.gitbook/assets/define_tables_and_columns_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
+La barra incluye detección automática de tablas. Compruebe el resultado contra el documento; esta imagen muestra las herramientas disponibles y no demuestra una detección completada.
 
-### 3. Defina el área de la tabla
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_3-es.png" alt="Herramientas de entrenamiento de tablas, incluida la detección automática."><figcaption><p>Herramientas de entrenamiento de tablas, incluida la detección automática.</p></figcaption></figure>
 
-Después de entrar en el modo de entrenamiento, puede definir dónde se encuentra la tabla en el documento. Tiene dos opciones:
+## Seleccionar el área
 
-#### Opción 1: usar la detección automática
+Con el lápiz, dibuje un rectángulo alrededor de las cabeceras y las posiciones. Excluya los totales situados debajo.
 
-Haga clic en el botón **“Auto-Detect Tables”** para que DocBits intente identificar por sí mismo el área de la tabla.
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_4-es.png" alt="Área de tabla sin guardar alrededor de las posiciones de la factura."><figcaption><p>Área de tabla sin guardar alrededor de las posiciones de la factura.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_3.png" alt="" width="375"><figcaption></figcaption></figure>
+## Separar las columnas
 
-Si la detección es correcta, el contorno de la tabla se mostrará automáticamente. A continuación, puede pasar a definir las columnas.
+Seleccione la herramienta de columnas y coloque los separadores verticales entre las columnas reales.
 
-#### Opción 2: definir la tabla manualmente
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_5-es.png" alt="Área de tabla en edición con separadores verticales."><figcaption><p>Área de tabla en edición con separadores verticales.</p></figcaption></figure>
 
-Si la detección automática falla o no es precisa, puede definir la tabla manualmente:
+Compruebe posición, descripción, cantidad, precio unitario e importe.
 
-1. Haga clic en el botón **“Edit”** para activar el modo de selección de tablas.
-2. Dibuje un rectángulo alrededor del área de la tabla en la vista del documento de la izquierda.
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_9-es.png" alt="Separadores colocados entre las columnas de la factura."><figcaption><p>Separadores colocados entre las columnas de la factura.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_4.png" alt="" width="563"><figcaption></figcaption></figure>
+Revise el área y los separadores antes de usar **Guardar** o **Guardar reglas**.
 
-### 4. Añada y defina columnas
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_8-es.png" alt="Área y separadores de columnas de un borrador sin guardar."><figcaption><p>Área y separadores de columnas de un borrador sin guardar.</p></figcaption></figure>
 
-Una vez definidas las tablas, puede definir las columnas manualmente mediante el siguiente botón:\
+## Comprobar la extracción
 
+Compare cada posición con la factura. La imagen siguiente muestra las filas ya extraídas automáticamente en la validación; no son el resultado del borrador de entrenamiento anterior.
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_5.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_10-es.png" alt="Posiciones extraídas automáticamente de la factura ficticia."><figcaption><p>Posiciones extraídas automáticamente de la factura ficticia.</p></figcaption></figure>
 
-Defina y ordene las columnas arrastrando y soltando sobre el documento. Repita este paso también para las tablas de las demás páginas. Como alternativa, si las tablas son iguales en cada página, puede utilizar el siguiente botón para usar las mismas columnas en todas las tablas definidas en el documento. Esta función copia las columnas que ha definido también a todas las demás páginas:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_6.png" alt="" width="563"><figcaption></figcaption></figure>
-
-Utilice la función de **zoom** para definir mejor las columnas en documentos saturados o complejos, por ejemplo, cuando hay mucha información muy junta y resulta difícil definir las columnas:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_7.png" alt="" width="277"><figcaption></figcaption></figure>
-
-Si ha definido una columna por error, puede seleccionarla haciendo clic en ella y eliminarla mediante el siguiente botón:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_9.png" alt="" width="563"><figcaption></figcaption></figure>
-
-<mark style="color:red;">**Nota**</mark>: el botón solo es visible si la columna está seleccionada.
-
-Cuando haya terminado de definir todas las tablas y todas las columnas de su documento, utilice el botón “Save” para activar los cambios y extraer los datos del documento:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_8.png" alt="" width="563"><figcaption></figcaption></figure>
-
-Los datos de todas las áreas definidas se extraerán y se mostrarán en el lado derecho:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_10.png" alt="" width="375"><figcaption></figcaption></figure>
-
-### 6. Guarde y extraiga
-
-Haga clic en **“Save Rules”** una vez definidas todas las tablas y columnas.
-
-* Esto indica a DocBits dónde encontrar los datos de la tabla para este proveedor concreto.
-* La próxima vez que se cargue un documento del mismo proveedor, DocBits extraerá automáticamente la tabla con las reglas guardadas.
-
-<mark style="color:red;">**Nota**</mark>: este entrenamiento es específico de cada proveedor. No se aplicará a documentos de otros proveedores.
+Cuando guarde un entrenamiento previsto, pruébelo con otros documentos del mismo proveedor. Una factura no demuestra una extracción fiable para todos los diseños.

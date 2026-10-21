@@ -1,44 +1,19 @@
-# Establecer Validación y Match Score
+# Validación y puntuación de coincidencia
 
-## Instrucciones para usar la configuración de Validación Forzada y Valor de Coincidencia para mejorar la integridad de los datos y la precisión del reconocimiento.
+La obligatoriedad, la validación forzada, OCR y Match Score son propiedades diferentes de un campo. Abra **Ajustes → Tipos de Documento → Campos** para revisarlas.
 
-Aquí hay instrucciones para usar la configuración de Validación Forzada y Valor de Coincidencia para mejorar la integridad de los datos y la precisión del reconocimiento en un sistema de procesamiento de documentos:
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_choose_column_type-es.png" alt="Columnas separadas de validación, OCR y Match Score."><figcaption><p>Columnas separadas de validación, OCR y Match Score.</p></figcaption></figure>
 
-### Validación forzada (Force Validation):
+## Validación forzada
 
-<figure><img src="../../../../../.gitbook/assets/docbits_choose_column_type.png" alt="Docbits Choose Column Type" width="151"><figcaption></figcaption></figure>
+**Forzar la validación** solicita una revisión explícita del campo. No crea por sí sola una expresión regular ni una regla de comparación. Las reglas de validación personalizadas se configuran por separado.
 
-Esta configuración le permite establecer reglas que comprueban si los datos introducidos cumplen ciertos criterios.
+<figure><img src="../../../../../.gitbook/assets/s150-image-120-es.png" alt="Configuración de validación y reconocimiento de cada campo."><figcaption><p>Configuración de validación y reconocimiento de cada campo.</p></figcaption></figure>
 
-**Para configurar esto:**
+## OCR y Match Score
 
-* Vaya a la configuración del campo en cuestión.
-* Habilite la opción Validación forzada.
-* Defina las reglas de validación a comprobar. Estas pueden ser, por ejemplo, límites numéricos, expresiones regulares para campos de texto o relaciones con otros campos.
+OCR define el umbral de reconocimiento del campo. Match Score define un umbral numérico de coincidencia; no es un texto de referencia ni un selector llamado «Valor de coincidencia». La interfaz española muestra actualmente la traducción incorrecta **Puntaje de partido** para este control.
 
-<figure><img src="../../../../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_decide_column_necessity-es.png" alt="Número de factura filtrado con validación y Match Score."><figcaption><p>Número de factura filtrado con validación y Match Score.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_decide_column_necessity.png" alt="Docbits Decide Column Necessity" width="375"><figcaption></figcaption></figure>
-
-**Impacto:**
-
-* Hacer cumplir las reglas de validación ayuda a detectar errores tempranamente y mejora la calidad de los datos. Se pide a los usuarios que introduzcan datos correctos, lo que aumenta la integridad de la base de datos.
-
-### Puntuación de coincidencia (Match Score):
-
-<figure><img src="../../../../../.gitbook/assets/image (121).png" alt="" width="116"><figcaption></figcaption></figure>
-
-Esta configuración le permite comparar el valor introducido con un valor de referencia predefinido.
-
-**Para configurar esto:**
-
-* Navegue a la configuración del campo.
-* Habilite la opción Valor de coincidencia.
-* Ingrese el valor de referencia con el que desea comparar el valor introducido.
-
-**Impacto:**
-
-* Establecer un valor de coincidencia le permite asegurar que los datos introducidos coincidan con un estándar conocido o una norma predefinida. Esto es especialmente útil cuando desea asegurar que los datos son consistentes y cumplen ciertos criterios.
-* El uso de estos ajustes puede mejorar la integridad de los datos y la precisión del reconocimiento en su sistema de procesamiento de documentos.
-
-Usted asegura que solo se capturen datos correctos y válidos, aumentando la calidad de su base de datos y mejorando la fiabilidad de sus análisis e informes.
+Revise el comportamiento con documentos representativos antes de guardar los ajustes. La casilla **REQUERIDO** indica obligatoriedad y no sustituye a la validación forzada.

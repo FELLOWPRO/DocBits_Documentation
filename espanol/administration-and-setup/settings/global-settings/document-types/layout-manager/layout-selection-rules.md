@@ -28,11 +28,11 @@ Los diseños basados en reglas los activa **por tipo de documento** un **adminis
 
 1. Vaya a **Settings → Global Settings → Document Types**.
 2. Haga clic en el icono de **ajustes** (engranaje) de la tarjeta del tipo de documento.
-3. Abra **Manage Layouts** y active el interruptor.
+3. Abra **Gestionar diseños** y active el interruptor.
 
 <figure><img src="../../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="El interruptor Manage Layouts"><figcaption><p>El interruptor Manage Layouts en los ajustes adicionales de un tipo de documento</p></figcaption></figure>
 
-El enlace **Layouts** de la tarjeta del tipo de documento ahora abre **Layouts & Selection Rules**.
+El enlace **Diseños** de la tarjeta del tipo de documento ahora abre **Diseños y reglas de selección**.
 
 ### Qué ocurre al activarlo
 
@@ -41,7 +41,7 @@ DocBits convierte sus diseños existentes basados en el origen en reglas, una so
 * El diseño del origen **DEFAULT** pasa a ser el **diseño predeterminado** (el de reserva).
 * Cada diseño de un origen concreto pasa a ser una regla **“Layout for XX”** con la condición *Document Origin is XX*, que apunta a ese diseño. Estas reglas reciben prioridades en pasos de 10 (por ejemplo 2000, 2010, 2020 …), de modo que puede colocar sus propias reglas antes, entre o después de ellas.
 
-<figure><img src="../../../../../.gitbook/assets/layout-selection-default-row.png" alt="Reglas de origen creadas al activar y el diseño predeterminado"><figcaption><p>Las reglas de origen creadas al activar, seguidas del diseño predeterminado (FALLBACK)</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-default-row-es.png" alt="Diseño predeterminado al final de las reglas de selección."><figcaption><p>Diseño predeterminado al final de las reglas de selección.</p></figcaption></figure>
 
 No se elimina ni se modifica nada en los propios diseños. Por tanto, justo después de la activación cada documento recibe exactamente el diseño que recibía antes. El comportamiento solo cambia cuando usted añade o modifica reglas.
 
@@ -49,14 +49,14 @@ No se elimina ni se modifica nada en los propios diseños. Por tanto, justo desp
 
 ## La pantalla Layouts & Selection Rules
 
-<figure><img src="../../../../../.gitbook/assets/layouts-overview.png" alt="La pestaña Layouts"><figcaption><p>La pestaña Layouts: cada diseño del tipo de documento como una tarjeta</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layouts-overview-es.png" alt="Resumen con las pestañas de diseños y reglas de selección."><figcaption><p>Resumen con las pestañas de diseños y reglas de selección.</p></figcaption></figure>
 
 * **Layouts / Selection rules** (arriba a la derecha) alternan entre la lista de diseños y la lista de reglas. Los números indican cuántos hay.
 * **Field Validation / Approval / Reject / Review** cambian la **pantalla**. Cada pantalla tiene sus propios diseños, sus propias reglas y su propio diseño predeterminado: una regla de Approval nunca cambia la pantalla de validación.
-* En la pestaña **Layouts** puede crear, editar, clonar y eliminar diseños. Cada tarjeta indica si una regla utiliza el diseño (“Not targeted by rules” cuando ninguna lo hace). Filtre con **All / My layouts / System**; los diseños del sistema se incluyen con DocBits y se pueden ver y clonar, pero no modificar.
+* En la pestaña **Diseños** puede crear, editar, clonar y eliminar diseños. Cada tarjeta indica si una regla utiliza el diseño (“Not targeted by rules” cuando ninguna lo hace). Filtre con **All / My layouts / System**; los diseños del sistema se incluyen con DocBits y se pueden ver y clonar, pero no modificar.
 
 {% hint style="info" %}
-La primera y la segunda aprobación comparten los diseños y las reglas de **Approval**. Para dar a la segunda fase de aprobación su propia pantalla, añada una regla de Approval con la condición *Document Status is Pending second approval*; consulte el [ejemplo](#pantallas-distintas-para-la-primera-y-la-segunda-aprobacion).
+La primera y la segunda aprobación comparten los diseños y las reglas de **Aprobación**. Para dar a la segunda fase de aprobación su propia pantalla, añada una regla de Approval con la condición *Document Status is Pending second approval*; consulte el [ejemplo](#pantallas-distintas-para-la-primera-y-la-segunda-aprobacion).
 {% endhint %}
 
 ## Cómo se elige un diseño
@@ -71,7 +71,7 @@ Las reglas cuyo diseño se ha eliminado o está vacío se omiten.
 
 ### Un ejemplo práctico
 
-Reglas de la pantalla **Field Validation**:
+Reglas de la pantalla **Validación de campos**:
 
 | Prioridad | Regla | Condición | Diseño |
 | --- | --- | --- | --- |
@@ -97,24 +97,24 @@ El diseño se elige siempre a partir de los valores **actuales** del documento. 
 
 ## Gestionar las reglas de selección
 
-<figure><img src="../../../../../.gitbook/assets/layout-selection-rules-list.png" alt="La pestaña Selection rules"><figcaption><p>La pestaña Selection rules de la pantalla Field Validation</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-rules-list-es.png" alt="Reglas de selección de diseño con los nombres configurados ocultos."><figcaption><p>Reglas de selección de diseño con los nombres configurados ocultos.</p></figcaption></figure>
 
-Cada fila muestra la **prioridad** (la primera fila está marcada como **FIRST**), el **nombre y la clave de la regla** con sus **condiciones**, el **diseño de destino**, la insignia de **origen** y un interruptor **Active**.
+Cada fila muestra la **prioridad** (la primera fila está marcada como **FIRST**), el **nombre y la clave de la regla** con sus **condiciones**, el **diseño de destino**, la insignia de **origen** y un interruptor **Activo**.
 
 | Tarea | Cómo |
 | --- | --- |
-| Crear una regla | **New rule** |
+| Crear una regla | **Nueva regla** |
 | Editar una regla | Haga clic en la fila |
 | Cambiar el orden | Arrastre el tirador de la izquierda de una fila hacia arriba o hacia abajo. El nuevo orden se guarda de inmediato. |
-| Desactivar una regla | Interruptor **Active**. Las reglas inactivas se ignoran. |
+| Desactivar una regla | Interruptor **Activo**. Las reglas inactivas se ignoran. |
 | Duplicar o eliminar | Menú **⋮** de la fila |
 | Buscar una regla | **Search rules…** |
 
-La insignia de **origen** indica de dónde procede una regla: las reglas **System** se incluyen con DocBits. Al editar una se crea una copia para su organización, que se muestra como **Customized**; el original permanece intacto y se puede restaurar. Las reglas que usted crea son **Custom**.
+La insignia de **origen** indica de dónde procede una regla: las reglas **Sistema** se incluyen con DocBits. Al editar una se crea una copia para su organización, que se muestra como **Personalizado**; el original permanece intacto y se puede restaurar. Las reglas que usted crea son **A medida**.
 
 ### El diseño predeterminado
 
-La última fila, marcada como **FALLBACK** e **is_default**, es el diseño predeterminado: se utiliza siempre que ninguna regla anterior coincide y no tiene condición. Se crea al activar la función (a partir del diseño del origen DEFAULT).
+La última fila, marcada como **RETROCEDER** e **es_predeterminado**, es el diseño predeterminado: se utiliza siempre que ninguna regla anterior coincide y no tiene condición. Se crea al activar la función (a partir del diseño del origen DEFAULT).
 
 {% hint style="info" %}
 Para usar otro diseño de reserva, cree una regla **sin ninguna condición** y asígnele el número de prioridad más alto, de modo que se compruebe en último lugar. Coincide con todos los documentos con los que no coincidió ninguna regla anterior, antes de llegar al diseño predeterminado.
@@ -122,9 +122,9 @@ Para usar otro diseño de reserva, cree una regla **sin ninguna condición** y a
 
 ## Crear una regla
 
-Haga clic en **New rule** en la pestaña Selection rules de la pantalla que desea cambiar.
+Haga clic en **Nueva regla** en la pestaña Selection rules de la pantalla que desea cambiar.
 
-<figure><img src="../../../../../.gitbook/assets/layout-rule-editor.png" alt="El editor de reglas de selección de diseño"><figcaption><p>El editor de reglas: frase de resumen arriba, tres pasos a la izquierda y vista previa en vivo a la derecha</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor-es.png" alt="Ámbito, condiciones y diseño de destino en el editor de reglas."><figcaption><p>Ámbito, condiciones y diseño de destino en el editor de reglas.</p></figcaption></figure>
 
 La frase de la parte superior resume la regla a medida que la construye: “When header.supplier_id = HP0000278, an INVOICE document gets the Field Validation Layout (Base) layout for Field validation. Checked at priority 5 — the first matching rule wins.”
 
@@ -132,10 +132,10 @@ La frase de la parte superior resume la regla a medida que la construye: “When
 
 | Ajuste | Qué hace |
 | --- | --- |
-| **Rule Name** | Se muestra en la lista de reglas. Describa el caso de negocio: “Behaelterbau invoices”, “E-invoices”, “High value approval”. |
-| **Rule key** | Se genera a partir del nombre; se mantiene igual cuando cambia el nombre de la regla. |
-| **Document Type** / **Layout type** | El tipo de documento y la pantalla a los que se dirige la regla. Se toman del lugar donde hizo clic en **New rule**. |
-| **Priority** | Los números más bajos se comprueban primero. Deje huecos (5, 10, 20 …) para poder insertar reglas más adelante. |
+| **Nombre de la regla** | Se muestra en la lista de reglas. Describa el caso de negocio: “Behaelterbau invoices”, “E-invoices”, “High value approval”. |
+| **Clave de la regla** | Se genera a partir del nombre; se mantiene igual cuando cambia el nombre de la regla. |
+| **Tipo de Documento** / **Tipo de diseño** | El tipo de documento y la pantalla a los que se dirige la regla. Se toman del lugar donde hizo clic en **Nueva regla**. |
+| **Prioridad** | Los números más bajos se comprueban primero. Deje huecos (5, 10, 20 …) para poder insertar reglas más adelante. |
 
 ### Paso 2 — Applies when
 
@@ -159,41 +159,41 @@ El panel de la derecha muestra lo que hace la regla para un documento de muestra
 
 | Línea | Significado |
 | --- | --- |
-| **Sample document** | Los valores utilizados para la vista previa, tomados de sus condiciones |
-| **matched_by** | `rule` si coincidió una regla; en caso contrario, el predeterminado |
-| **Resolved layout** | El diseño que recibiría el documento de muestra |
-| **Priority hit** | La prioridad de la regla que coincidió |
-| **watched_fields** | Los campos de los que depende la elección del diseño. Cuando un usuario cambia uno de ellos, el diseño se vuelve a elegir. |
+| **Documento de muestra** | Los valores utilizados para la vista previa, tomados de sus condiciones |
+| **emparejado_por** | `rule` si coincidió una regla; en caso contrario, el predeterminado |
+| **Diseño resuelto** | El diseño que recibiría el documento de muestra |
+| **Golpe de prioridad** | La prioridad de la regla que coincidió |
+| **campos observados** | Los campos de los que depende la elección del diseño. Cuando un usuario cambia uno de ellos, el diseño se vuelve a elegir. |
 
-Haga clic en **Create Rule** (o **Save rule** al editar) para guardar. **Cancel** vuelve a la lista de reglas.
+Haga clic en **Crear regla** (o **Regla de guardado** al editar) para guardar. **Cancelar** vuelve a la lista de reglas.
 
 ## Ejemplos
 
 ### Campos adicionales para un proveedor
 
-Pantalla **Field Validation** · prioridad **5** · *Supplier ID is HP0000278* · destino *Invoice with project fields* (un clon de su diseño estándar con los campos adicionales de proyecto y centro de coste).
+Pantalla **Validación de campos** · prioridad **5** · *Supplier ID is HP0000278* · destino *Invoice with project fields* (un clon de su diseño estándar con los campos adicionales de proyecto y centro de coste).
 
 ### Un diseño para varios países
 
-Pantalla **Field Validation** · prioridad **100** · **ANY of**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · destino *DACH invoice*. Desactive las reglas migradas “Layout for AT” y “Layout for CH” si apuntan a copias más antiguas.
+Pantalla **Validación de campos** · prioridad **100** · **ANY of**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · destino *DACH invoice*. Desactive las reglas migradas “Layout for AT” y “Layout for CH” si apuntan a copias más antiguas.
 
 ### Una pantalla más sencilla para facturas electrónicas
 
-Pantalla **Field Validation** · prioridad **10** · *Extraction Method is ELECTRONIC_DOCUMENT* · destino *E-invoice* (sin campos relacionados con el OCR).
+Pantalla **Validación de campos** · prioridad **10** · *Extraction Method is ELECTRONIC_DOCUMENT* · destino *E-invoice* (sin campos relacionados con el OCR).
 
 ### Una pantalla de aprobación más estricta para importes altos
 
-Pantalla **Approval** · prioridad **10** · *Total Amount greater than 10000* · destino *High value approval* (que muestra centro de coste, responsable del presupuesto y número de contrato).
+Pantalla **Aprobación** · prioridad **10** · *Total Amount greater than 10000* · destino *High value approval* (que muestra centro de coste, responsable del presupuesto y número de contrato).
 
 ### Pantallas distintas para la primera y la segunda aprobación
 
-Pantalla **Approval** · prioridad **5** · *Document Status is Pending second approval* · destino *Second Approval Layout*. Los documentos en la primera fase de aprobación no coinciden y reciben el diseño predeterminado de Approval.
+Pantalla **Aprobación** · prioridad **5** · *Document Status is Pending second approval* · destino *Second Approval Layout*. Los documentos en la primera fase de aprobación no coinciden y reciben el diseño predeterminado de Approval.
 
-<figure><img src="../../../../../.gitbook/assets/layout-rule-approval-status.png" alt="Una regla de aprobación sobre el estado del documento"><figcaption><p>Una regla de Approval para la segunda fase de aprobación; la vista previa resuelve el Second Approval Layout</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-approval-status-es.png" alt="Borrador sin guardar de una regla de selección de diseño."><figcaption><p>Borrador sin guardar de una regla de selección de diseño.</p></figcaption></figure>
 
 ### Una pantalla de rechazo especial para algunos proveedores
 
-Pantalla **Reject** · prioridad **10** · *Supplier ID is one of* `10040, 10041` · destino *Reject with reason codes*.
+Pantalla **Rechazar** · prioridad **10** · *Supplier ID is one of* `10040, 10041` · destino *Reject with reason codes*.
 
 ## Buenas prácticas
 
@@ -208,9 +208,9 @@ Pantalla **Reject** · prioridad **10** · *Supplier ID is one of* `10040, 10041
 
 | Síntoma | Qué comprobar |
 | --- | --- |
-| Un documento recibe el diseño equivocado | Coincide antes una regla anterior. Revise las reglas situadas por encima o el **Priority hit** de la vista previa. |
-| Se usa el predeterminado aunque una regla debería coincidir | ¿Está la regla **Active**? ¿La condición coincide con el valor exacto (mayúsculas, espacios)? ¿Está la regla en la pestaña de **pantalla** correcta? |
-| El diseño cambia mientras un usuario trabaja | Se ha cambiado un campo de **watched_fields**. Base la regla en un campo más estable. |
+| Un documento recibe el diseño equivocado | Coincide antes una regla anterior. Revise las reglas situadas por encima o el **Golpe de prioridad** de la vista previa. |
+| Se usa el predeterminado aunque una regla debería coincidir | ¿Está la regla **Activo**? ¿La condición coincide con el valor exacto (mayúsculas, espacios)? ¿Está la regla en la pestaña de **pantalla** correcta? |
+| El diseño cambia mientras un usuario trabaja | Se ha cambiado un campo de **campos observados**. Base la regla en un campo más estable. |
 | Un diseño no se puede eliminar | Una regla todavía apunta a él. Cambie el destino de esa regla o elimínela primero. |
 | No se muestra ningún diseño | Ninguna regla coincidió, no hay predeterminado y no existe un diseño basado en el origen para esta pantalla. Añada una regla sin condición como regla comodín. |
 | No cambió nada tras la activación | Es lo esperado: la activación reproduce la elección anterior basada en el origen. Añada sus propias reglas. |

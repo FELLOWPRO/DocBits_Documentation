@@ -1,6 +1,6 @@
 # Edición de plantillas de correo electrónico
 
-<figure><img src="../../../.gitbook/assets/supplier_email_templates.png" alt="Plantillas de correo electrónico de proveedores"><figcaption><p>Página de plantillas de correo electrónico de proveedores</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t013-es.png" alt="Lista de plantillas de correo del proveedor."><figcaption><p>Lista de plantillas de correo del proveedor.</p></figcaption></figure>
 
 ### Descripción general
 
@@ -12,12 +12,12 @@ El `{{magic_link}}` es un marcador de posición que se sustituye dinámicamente 
 
 ### Edición de plantillas de correo electrónico
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.35.53.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-bildschirmfoto-2024-08-25-um-12-35-53-es.png" alt="Editor de una nueva plantilla de correo para proveedores."><figcaption><p>Editor de una nueva plantilla de correo para proveedores.</p></figcaption></figure>
 
 #### Acceso al editor de plantillas de correo electrónico
 
 1. **Vaya a Email Templates**:
-   * Acceda a la sección **Email Templates** desde el menú principal.
+   * Acceda a la sección **Plantillas de correo electrónico** desde el menú principal.
 2. **Seleccione una plantilla para editar**:
    * Elija la plantilla de correo electrónico que desea editar haciendo clic en su nombre (por ejemplo, "Supplier Invitation Email").
 3. **Edite la plantilla**:

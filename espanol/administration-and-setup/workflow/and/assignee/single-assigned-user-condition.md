@@ -1,6 +1,6 @@
-# Single Assigned User Condition
+# Condición de usuario único asignado
 
-<figure><img src="../../../../.gitbook/assets/userlmn_77e991cee96598023f9a3ac7ad230e50 (1).png" alt="" width="552"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-901c3b37bac4-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 **Propósito**
 
@@ -8,12 +8,12 @@ Esta tarjeta de flujo de trabajo facilita operaciones basadas en la asignación 
 
 **Componentes de la tarjeta**
 
-1. **Operator**
+1. **Operador**
    * **Descripción**: Especifica la lógica que se aplica a la asignación de usuario.
    * **Opciones**:
      * **IS**: Dispara la operación si el usuario asignado del documento o tarea coincide con el usuario especificado.
-     * **IS NOT**: Dispara la operación si el usuario asignado no coincide con el usuario especificado.
-2. **User**
+     * **NO ES**: Dispara la operación si el usuario asignado no coincide con el usuario especificado.
+2. **Usuario**
    * **Descripción**: Permite seleccionar un único usuario con el que se comparará el usuario asignado.
    * **Detalle**: Esto implica un sencillo campo desplegable o de autocompletado donde se puede seleccionar un usuario a la vez.
 
@@ -22,7 +22,7 @@ Esta tarjeta de flujo de trabajo facilita operaciones basadas en la asignación 
 * **Identificación de la asignación de usuario**: Identifica el usuario actualmente asignado a una tarea o documento específico.
 * **Evaluación de la condición**:
   * Con el operador **IS**, la tarjeta comprueba si el usuario asignado es el mismo que el usuario seleccionado.
-  * Con el operador **IS NOT**, verifica que el usuario asignado sea distinto del usuario seleccionado.
+  * Con el operador **NO ES**, verifica que el usuario asignado sea distinto del usuario seleccionado.
 * **Ejecución de la acción**:
   * **Condición verdadera**: Si la asignación cumple la condición establecida (IS o IS NOT), dispara acciones predefinidas, que podrían incluir avanzar con aprobaciones, iniciar tareas adicionales, enviar notificaciones u otros flujos de trabajo relacionados.
   * **Condición falsa**: Si la condición no se cumple, el flujo de trabajo no continuará.

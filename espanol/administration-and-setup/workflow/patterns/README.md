@@ -1,227 +1,233 @@
 # Guías de patrones de flujo de trabajo
 
-**Versión:** 1.0
-**Última actualización:** 23 de octubre de 2025
+**Versión:** 1.0 **Última actualización:** 23 de octubre de 2025
 
----
+***
 
-## Resumen
+## Descripción general
 
-Esta sección contiene guías completas de patrones de flujo de trabajo que muestran cómo combinar varias tarjetas de flujo de trabajo para resolver escenarios de negocio habituales. Cada patrón ofrece instrucciones de implementación paso a paso, ejemplos completos y buenas prácticas.
+Este directorio contiene guías completas de patrones de flujo de trabajo que demuestran cómo combinar varias tarjetas de flujo de trabajo para resolver escenarios comerciales comunes. Cada patrón proporciona instrucciones de implementación paso a paso, ejemplos completos y mejores prácticas.
 
 **¿Qué son los patrones de flujo de trabajo?**
 
-Los patrones de flujo de trabajo son soluciones probadas y reutilizables para los retos habituales del procesamiento de documentos. En lugar de empezar desde cero, puede usar estos patrones como plantillas y adaptarlos a sus necesidades.
+Los patrones de flujo de trabajo son soluciones comprobadas y reutilizables para los desafíos comunes del procesamiento de documentación. En lugar de empezar desde cero, puedes utilizar estos patrones como plantillas y adaptarlos a tus necesidades específicas.
 
----
+***
 
-## El Workflow Builder de un vistazo
+## El generador de flujos de trabajo de un vistazo
 
-Todos los patrones de esta página se montan en el **Workflow Builder**. Se accede desde **Workflow Dashboard → Workflow List → Add Workflow** (o abriendo un flujo de trabajo existente). El panel muestra el historial de ejecuciones y las tasas de éxito/fallo de todos sus flujos de trabajo:
+Cada patrón en esta página está ensamblado en **Generador de flujo de trabajo**. Puede acceder a él desde **Panel de flujo de trabajo → Lista de flujos de trabajo → Agregar flujo de trabajo** (o abriendo un flujo de trabajo existente). El panel le brinda el historial de ejecución y las tasas de éxito/fracaso de todos sus flujos de trabajo:
 
-<figure><img src="../../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard con totales de ejecuciones, tasas de éxito y fallo, el gráfico de ejecuciones y la actividad reciente"><figcaption><p>El Workflow Dashboard: totales de ejecuciones, tasas de éxito/fallo y actividad reciente de cada flujo de trabajo.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-dashboard-c9339f546ced-es.png" alt="El Workflow Dashboard: totales de ejecuciones, tasas de éxito/fallo y actividad reciente de cada flujo de trabajo. Los nombres y las referencias de documentos confidenciales están ocultos."><figcaption><p>El Workflow Dashboard: totales de ejecuciones, tasas de éxito/fallo y actividad reciente de cada flujo de trabajo. Los nombres y las referencias de documentos confidenciales están ocultos.</p></figcaption></figure>
 
-La pestaña **Workflow List** enumera cada flujo de trabajo con su tipo, orden de ejecución y disparador. Use **Add Workflow** para crear uno nuevo, o haga clic en un flujo de trabajo para abrirlo en el editor:
+La pestaña **Lista de flujos de trabajo** enumera cada flujo de trabajo con su tipo, orden de ejecución y desencadenante. Utilice **Agregar flujo de trabajo** para crear uno nuevo o haga clic en un flujo de trabajo para abrirlo en el generador:
 
-<figure><img src="../../../.gitbook/assets/workflow_list.png" alt="Pestaña Workflow List con los flujos de trabajo por tipo, orden de ejecución y disparador"><figcaption><p>La Workflow List: cada fila es un flujo de trabajo que puede abrir, activar/desactivar o editar.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-dashboard-900cb4050b5b-es.png" alt="La Workflow List: cada fila es un flujo de trabajo que puede abrir, activar/desactivar o editar. Los nombres y las referencias de documentos confidenciales están ocultos."><figcaption><p>La Workflow List: cada fila es un flujo de trabajo que puede abrir, activar/desactivar o editar. Los nombres y las referencias de documentos confidenciales están ocultos.</p></figcaption></figure>
 
-Un flujo de trabajo se compone de tres grupos de tarjetas: **When** (el disparador), **And** (condiciones adicionales) y **Then** (las acciones a ejecutar). El ejemplo siguiente se activa con facturas que pertenecen a una suborganización y las asigna a un usuario:
+Un flujo de trabajo consta de tres grupos de tarjetas: **Cuando** (activador), **Y** (condiciones adicionales) y **Entonces** (acciones). El siguiente ejemplo sin guardar muestra esta estructura. Aún deben seleccionarse el tipo de documento, la suborganización y el usuario:
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Lienzo del Workflow Builder con tarjetas When, And y Then"><figcaption><p>El lienzo del Workflow Builder. Cada patrón de abajo es solo una combinación distinta de tarjetas When / And / Then.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-es.png" alt="Ejemplo sin guardar con tarjetas Cuando, Y y Entonces. Configure todos los campos antes de ejecutarlo. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Ejemplo sin guardar con tarjetas Cuando, Y y Entonces. Configure todos los campos antes de ejecutarlo. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
-Haga clic en **Add Card** en cualquier grupo para abrir la biblioteca de tarjetas. Las tarjetas están organizadas por categoría (Compare with Purchase Order, Partner Cards, Document Field, Date &#x26; Time, Document, Logic, Status, Table, Assignee, …) para que encuentre el bloque que necesita cada patrón:
+Haga clic en **Agregar tarjeta** en cualquier grupo para abrir la biblioteca de tarjetas. Las tarjetas están organizadas por categoría (Comparar con orden de compra, tarjetas de socio, campo de documento, fecha y hora, documento, lógica, estado, tabla, responsable, etc.) para que pueda encontrar el componente básico que requiere cada patrón:
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Diálogo Add Card con las categorías de tarjetas y las tarjetas disponibles"><figcaption><p>La biblioteca <strong>Add Card</strong>: cada tarjeta mencionada en los patrones de abajo se elige aquí.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
----
+***
 
 ## Patrones disponibles
 
-### 1. [Patrón de integración de API](api-integration-pattern.md)
+### 1. [Patrón de integración API](api-integration-pattern.md)
 
-**Complejidad:** Media | **Tiempo de configuración:** 45-60 minutos
+**Complejidad:** Mediana | **Tiempo de configuración:** 45-60 minutos
 
-Aprenda a integrar DocBits con API externas para obtener, validar y almacenar datos de sistemas externos.
+Aprenda a integrar DocBits con API externas para recuperar, validar y almacenar datos de sistemas externos.
 
 **Casos de uso:**
-- Obtener precios en tiempo real de sistemas externos
-- Validar información de proveedores con bases de datos maestras
-- Buscar detalles de productos en sistemas de catálogo
-- Obtener tipos de cambio de servicios de divisas
-- Verificar direcciones con servicios de geocodificación
 
-**Tarjetas utilizadas:** CALL_API, CONDITION_HTTPS_REQUEST_STATUS, ACTION_SET_FIELD_TO_TEXT, CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+* Obtenga precios en tiempo real de sistemas externos
+* Validar la información del proveedor contra bases de datos maestras.
+* Busque detalles de productos en sistemas de catálogos
+* Obtenga tipos de cambio de servicios de divisas
+* Verificar direcciones con servicios de geocodificación
 
-**[Ver patrón completo →](api-integration-pattern.md)**
+**Tarjetas utilizadas:** CALL\_API, CONDITION\_HTTPS\_REQUEST\_STATUS, ACTION\_SET\_FIELD\_TO\_TEXT, CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES
 
----
+[**Ver patrón completo →**](api-integration-pattern.md)
+
+***
 
 ### 2. [Patrón de gestión de tareas](task-management-pattern.md)
 
 **Complejidad:** Baja-Media | **Tiempo de configuración:** 30-45 minutos
 
-Domine la creación, asignación, seguimiento y gestión de tareas en los flujos de trabajo de DocBits para procesos de aprobación y revisión.
+Domine el arte de crear, asignar, rastrear y administrar tareas dentro de los flujos de trabajo de DocBits para los procesos de aprobación y revisión.
 
 **Casos de uso:**
-- Crear flujos de aprobación
-- Asignar tareas de revisión a usuarios
-- Gestionar excepciones que requieren intervención humana
-- Escalar incidencias a responsables
-- Crear cadenas de aprobación de varios niveles
-- Hacer seguimiento de la finalización y los plazos de las tareas
 
-**Tarjetas utilizadas:** tasks_create, ACTION_ASSIGN_TO_USER, ACTION_SEND_EMAIL_TO_GROUPS, CONDITION_TASK_STATUS
+* Crear flujos de trabajo de aprobación
+* Asignar tareas de revisión a los usuarios
+* Manejar excepciones que requieren intervención humana.
+* Escalar problemas a los gerentes
+* Cree cadenas de aprobación de varios niveles
+* Realice un seguimiento de la finalización de tareas y los plazos
 
-**[Ver patrón completo →](task-management-pattern.md)**
+**Tarjetas utilizadas:** tasks\_create, ACTION\_ASSIGN\_TO\_USER, ACTION\_SEND\_EMAIL\_TO\_GROUPS, CONDITION\_TASK\_STATUS
 
----
+[**Ver patrón completo →**](task-management-pattern.md)
 
-### 3. [Patrón de conciliación de pedidos (PO Matching)](po-matching-pattern.md)
+***
+
+### 3. [Patrón de coincidencia de PO](po-matching-pattern.md)
 
 **Complejidad:** Media-Alta | **Tiempo de configuración:** 60-90 minutos
 
-Implemente flujos completos de conciliación de pedidos para validar facturas frente a pedidos con enrutamiento basado en tolerancias.
+Implemente flujos de trabajo completos de comparación de órdenes de compra para validar facturas con órdenes de compra con enrutamiento basado en tolerancias.
 
 **Casos de uso:**
-- Validar facturas frente a pedidos
-- Detectar errores de precio antes del pago
-- Identificar discrepancias de cantidad
-- Aplicar controles de compras
-- Evitar pagos duplicados
-- Automatizar la conciliación a tres bandas
 
-**Tarjetas utilizadas:** PURCHASE_ORDER_FULL_MATCH, CONDITION_DOC_TO_PO_UNIT_PRICE, CONDITION_DOC_TO_PO_QUANTITY, CONDITION_DOC_TO_PO_TAX_LINES
+* Validar facturas contra órdenes de compra.
+* Detectar errores de precios antes del pago
+* Identificar discrepancias de cantidad.
+* Hacer cumplir los controles de adquisiciones
+* Evite pagos duplicados
+* Automatizar la coincidencia de tres vías
 
-**[Ver patrón completo →](po-matching-pattern.md)**
+**Tarjetas utilizadas:** PURCHASE\_ORDER\_FULL\_MATCH, CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE, CONDITION\_DOC\_TO\_PO\_QUANTITY, CONDITION\_DOC\_TO\_PO\_TAX\_LINES
 
----
+[**Ver patrón completo →**](po-matching-pattern.md)
 
-### 4. [Patrón de lógica de decisión](decision-logic-pattern.md)
+***
 
-**Complejidad:** Media | **Tiempo de configuración:** 30-45 minutos
+### 4. [Patrón lógico de decisión](decision-logic-pattern.md)
 
-Implemente árboles de decisión complejos y lógica de enrutamiento condicional para procesar documentos por distintas rutas según reglas de negocio.
+**Complejidad:** Mediana | **Tiempo de configuración:** 30-45 minutos
+
+Implemente árboles de decisión complejos y lógica de enrutamiento condicional para procesar documentos a través de diferentes rutas basadas en reglas comerciales.
 
 **Casos de uso:**
-- Enrutar documentos por umbrales de importe
-- Aplicar reglas distintas para distintos tipos de documento
-- Implementar lógica de aprobación de varios niveles
-- Gestionar políticas de negocio complejas
-- Crear enrutamiento dinámico basado en varios criterios
-- Implementar matrices de aprobación
 
-**Tarjetas utilizadas:** CONDITION_DOC_FIELD_AMOUNT, CONDITION_DOC_TYPE_IS_ISNOT, CONDITION_SUPPLIER_STATUS_IS_ISNOT, ACTION_ASSIGN_TO_USER
+* Enrutar documentos por umbrales de importe
+* Aplicar diferentes reglas para diferentes tipos de documentos
+* Implementar lógica de aprobación multinivel
+* Manejar políticas comerciales complejas
+* Cree rutas dinámicas basadas en múltiples criterios
+* Implementar matrices de aprobación
 
-**[Ver patrón completo →](decision-logic-pattern.md)**
+**Tarjetas utilizadas:** CONDITION\_DOC\_FIELD\_AMOUNT, CONDITION\_DOC\_TYPE\_IS\_ISNOT, CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT, ACTION\_ASSIGN\_TO\_USER
 
----
+[**Ver patrón completo →**](decision-logic-pattern.md)
+
+***
 
 ### 5. [Patrón de transformación de datos](data-transformation-pattern.md)
 
-**Complejidad:** Media | **Tiempo de configuración:** 30-45 minutos
+**Complejidad:** Mediana | **Tiempo de configuración:** 30-45 minutos
 
 Transforme, calcule, formatee y enriquezca los datos de los documentos para prepararlos para la exportación, realizar cálculos y estandarizar formatos.
 
 **Casos de uso:**
-- Calcular totales, subtotales e impuestos
-- Convertir divisas o unidades
-- Formatear fechas, números y texto
-- Derivar valores de campos existentes
-- Enriquecer datos desde fuentes externas
-- Estandarizar formatos de datos
-- Validar cálculos
 
-**Tarjetas utilizadas:** ACTION_CALCULATE_FIELD, ACTION_SET_FIELD_TO_TEXT, ACTION_COPY_FIELD_VALUE, CALL_API, CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+* Calcular totales, subtotales, impuestos.
+* Convertir monedas o unidades
+* Dar formato a fechas, números y texto.
+* Derivar valores de campos existentes
+* Enriquecer datos de fuentes externas
+* Estandarizar formatos de datos
+* Validar cálculos
 
-**[Ver patrón completo →](data-transformation-pattern.md)**
+**Tarjetas utilizadas:** ACTION\_CALCULATE\_FIELD, ACTION\_SET\_FIELD\_TO\_TEXT, ACTION\_COPY\_FIELD\_VALUE, CALL\_API, CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES
 
----
+[**Ver patrón completo →**](data-transformation-pattern.md)
+
+***
 
 ## Guía de selección de patrones
 
 ### Por complejidad
 
-| Complejidad | Patrones | Ideal para |
-|------------|----------|----------|
-| **Baja-Media** | [Gestión de tareas](task-management-pattern.md) | Principiantes, flujos sencillos |
-| **Media** | [Integración de API](api-integration-pattern.md)<br>[Lógica de decisión](decision-logic-pattern.md)<br>[Transformación de datos](data-transformation-pattern.md) | Usuarios intermedios, flujos estándar |
-| **Media-Alta** | [PO Matching](po-matching-pattern.md) | Usuarios avanzados, validación compleja |
+| Complejidad      | Patrones                                                                                                                                                                                      | Mejor para                               |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| **Bajo-Medio**  | [Gestión de tareas](task-management-pattern.md)                                                                                                                                                 | Principiantes, flujos de trabajo simples            |
+| **Medio**      | <p><a href="api-integration-pattern.md">Integración API</a><br><a href="decision-logic-pattern.md">Lógica de decisión</a><br><a href="data-transformation-pattern.md">Transformación de datos</a></p> | Usuarios intermedios, flujos de trabajo estándar |
+| **Medio-Alto** | [Coincidencia de PO](po-matching-pattern.md)                                                                                                                                                         | Usuarios avanzados, validación compleja     |
 
----
+***
 
 ### Por caso de uso
 
-| Necesito… | Usar este patrón |
-|--------------|------------------|
-| Integrar con sistemas externos | [Patrón de integración de API](api-integration-pattern.md) |
-| Crear flujos de aprobación | [Patrón de gestión de tareas](task-management-pattern.md) |
-| Validar frente a pedidos | [Patrón de PO Matching](po-matching-pattern.md) |
-| Enrutar según condiciones | [Patrón de lógica de decisión](decision-logic-pattern.md) |
-| Calcular y transformar datos | [Patrón de transformación de datos](data-transformation-pattern.md) |
+| Necesito...                     | Utilice este patrón                                              |
+| -------------------------------- | ------------------------------------------------------------- |
+| Integrar con sistemas externos  | [Patrón de integración API](api-integration-pattern.md)         |
+| Crear flujos de trabajo de aprobación        | [Patrón de gestión de tareas](task-management-pattern.md)         |
+| Validar contra órdenes de compra | [Patrón de coincidencia de PO](po-matching-pattern.md)                 |
+| Ruta según condiciones.        | [Patrón lógico de decisión](decision-logic-pattern.md)           |
+| Calcular y transformar datos     | [Patrón de transformación de datos](data-transformation-pattern.md) |
 
----
+***
 
-### Por sector/departamento
+### Por industria/departamento
 
-| Sector/Departamento | Patrones recomendados |
-|---------------------|---------------------|
-| **Finanzas/Contabilidad** | [PO Matching](po-matching-pattern.md), [Gestión de tareas](task-management-pattern.md), [Transformación de datos](data-transformation-pattern.md) |
-| **Compras** | [PO Matching](po-matching-pattern.md), [Lógica de decisión](decision-logic-pattern.md), [Integración de API](api-integration-pattern.md) |
-| **Operaciones** | [Gestión de tareas](task-management-pattern.md), [Lógica de decisión](decision-logic-pattern.md) |
-| **TI/Integración** | [Integración de API](api-integration-pattern.md), [Transformación de datos](data-transformation-pattern.md) |
-| **Todos los departamentos** | [Lógica de decisión](decision-logic-pattern.md), [Gestión de tareas](task-management-pattern.md) |
+| Industria/Departamento    | Patrones recomendados                                                                                                                        |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Finanzas/Contabilidad** | [Coincidencia de pedidos](po-matching-pattern.md), [Gestión de tareas](task-management-pattern.md), [Transformación de datos](data-transformation-pattern.md) |
+| **Adquisiciones**        | [Coincidencia de PO](po-matching-pattern.md), [Lógica de decisión](decision-logic-pattern.md), [Integración de API](api-integration-pattern.md)           |
+| **Operaciones**         | [Gestión de tareas](task-management-pattern.md), [Lógica de decisión](decision-logic-pattern.md)                                                  |
+| **TI/Integración**     | [Integración API](api-integration-pattern.md), [Transformación de datos](data-transformation-pattern.md)                                        |
+| **Todos los departamentos**    | [Lógica de decisión](decision-logic-pattern.md), [Gestión de tareas](task-management-pattern.md)                                                  |
 
----
+***
 
-## Cómo usar estos patrones
+## Cómo utilizar estos patrones
 
-### Paso 1: Elegir un patrón
+### Paso 1: elige un patrón
 
-1. Revise las descripciones de los patrones de arriba
-2. Identifique qué patrón se ajusta a su caso de uso
-3. Compruebe la complejidad y el tiempo estimado de configuración
-4. Lea la sección «Cuándo usarlo» de la guía del patrón
+1. Revise las descripciones de patrones anteriores
+2. Identifique qué patrón coincide con su caso de uso
+3. Verifique la complejidad y el tiempo estimado de configuración.
+4. Revise la sección "Cuándo usar" en la guía de patrones.
 
-### Paso 2: Revisar los requisitos previos
+### Paso 2: revisar los requisitos previos
 
-Cada guía de patrón enumera:
-- Conocimientos necesarios
-- Guías relacionadas que conviene leer antes
-- Tarjetas que se utilizarán
-- Requisitos de configuración
+Cada guía de patrones enumera:
 
-### Paso 3: Seguir las instrucciones paso a paso
+* Conocimientos requeridos
+* Guías relacionadas para leer primero
+* Tarjetas que se utilizarán
+* Requisitos de configuración
 
-Cada patrón ofrece:
-- Un ejemplo completo de flujo de trabajo
-- Una guía de implementación paso a paso
-- Plantillas de configuración
-- Ejemplos reales
-- Consejos para la resolución de problemas
+### Paso 3: siga las instrucciones paso a paso
 
-### Paso 4: Adaptar a sus necesidades
+Cada patrón proporciona:
 
-- Adapte el ejemplo a sus reglas de negocio
-- Ajuste umbrales y tolerancias
-- Modifique la lógica de enrutamiento
-- Añada o elimine pasos según sea necesario
-- Pruebe a fondo antes del uso en producción
+* Ejemplo completo de flujo de trabajo
+* Guía de implementación paso a paso
+* Plantillas de configuración
+* Ejemplos del mundo real
+* Consejos para solucionar problemas
 
-### Paso 5: Supervisar y optimizar
+### Paso 4: Personalice según sus necesidades
 
-- Haga seguimiento del rendimiento del flujo de trabajo
-- Supervise las tasas de éxito
-- Recopile comentarios de los usuarios
-- Afine la configuración
-- Documente las personalizaciones
+* Adapte el ejemplo a sus reglas de negocio
+* Ajustar umbrales y tolerancias.
+* Modificar la lógica de enrutamiento
+* Agregar o quitar pasos según sea necesario
+* Pruebe minuciosamente antes del uso en producción.
 
----
+### Paso 5: monitorear y optimizar
+
+* Seguimiento del rendimiento del flujo de trabajo
+* Monitorear las tasas de éxito
+* Recopilar comentarios de los usuarios
+* Refinar la configuración
+* Personalizaciones de documentos
+
+***
 
 ## Combinaciones de patrones
 
-Muchos escenarios reales requieren combinar varios patrones:
+Muchos escenarios del mundo real requieren combinar múltiples patrones:
 
-### Ejemplo 1: Procesamiento completo de facturas
+### Ejemplo 1: procesamiento completo de facturas
 
 ```
 1. API Integration Pattern → Fetch current pricing
@@ -231,7 +237,7 @@ Muchos escenarios reales requieren combinar varios patrones:
 5. Task Management Pattern → Create approval tasks
 ```
 
-### Ejemplo 2: Aprobación de facturas de alto importe
+### Ejemplo 2: Aprobación de factura de alto valor
 
 ```
 1. Data Transformation Pattern → Calculate amounts
@@ -240,7 +246,7 @@ Muchos escenarios reales requieren combinar varios patrones:
 4. API Integration Pattern → Notify external systems
 ```
 
-### Ejemplo 3: Gestión de excepciones
+### Ejemplo 3: manejo de excepciones
 
 ```
 1. PO Matching Pattern → Detect variances
@@ -249,130 +255,134 @@ Muchos escenarios reales requieren combinar varios patrones:
 4. Data Transformation Pattern → Calculate impact
 ```
 
----
+***
 
-## Plantillas de patrón
+## Plantillas de patrones
 
 Cada patrón incluye estas secciones estandarizadas:
 
-1. **Resumen**: qué hace el patrón
-2. **Cuándo usarlo**: casos de uso adecuados
-3. **Ejemplo completo**: escenario real
-4. **Paso a paso**: instrucciones de implementación
-5. **Configuración**: plantillas de configuración de tarjetas
-6. **Diagrama de flujo**: representación visual
-7. **Variantes avanzadas**: implementaciones alternativas
-8. **Gestión de errores**: problemas habituales y soluciones
-9. **Lista de pruebas**: pasos de validación
-10. **Patrones relacionados**: patrones complementarios
-11. **Guías relacionadas**: documentación de referencia
+1. **Descripción general** - Qué hace el patrón
+2. **Cuándo utilizar**: casos de uso apropiados
+3. **Ejemplo completo** - Escenario del mundo real
+4. **Paso a Paso** - Instrucciones de implementación
+5. **Configuración** - Plantillas de configuración de tarjetas
+6. **Diagrama de flujo de trabajo** - Representación visual
+7. **Variaciones avanzadas** - Implementaciones alternativas
+8. **Manejo de errores**: problemas comunes y soluciones
+9. **Lista de verificación de pruebas** - Pasos de validación
+10. **Patrones relacionados** - Patrones complementarios
+11. **Guías relacionadas** - Documentación de referencia
 
----
+***
 
 ## Obtener ayuda
 
-### Recursos de soporte para patrones
+### Recursos de soporte de patrones
 
 **Documentación:**
-- [Índice completo de la guía de flujos de trabajo](../README.md)
-- [Guías de tarjetas individuales](../then/action/)
-- [Referencia de tarjetas de condición](../and/condition-cards-complete-guide.md)
-- [Mapa de enlaces de flujos de trabajo](../../../../WORKFLOW_LINKING_MAP.md)
+
+* [Índice completo de la guía de flujo de trabajo](..)
+* [Guías de tarjetas individuales](../then/action)
+* [Referencia de tarjetas de condición](../and/condition-cards-complete-guide.md)
+* [Mapa de vinculación de flujo de trabajo](https://github.com/Fellow-Consulting-AG/docbits/tree/main/WORKFLOW_LINKING_MAP.md)
 
 **Recursos adicionales:**
-- [Guía de referencia rápida](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
-- [Notas de la versión de octubre de 2025](../changelog/2025-10-october.md)
-- [Referencia de versiones de tarjetas](../../../docs/card_version.md)
+
+* [Guía de referencia rápida](https://github.com/Fellow-Consulting-AG/docbits/tree/main/WORKFLOW_LINKING_QUICK_REFERENCE.md)
+* [Notas de la versión de octubre de 2025](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/workflow/changelog/2025-10-october.md)
+* [Referencia de versiones de tarjetas](../cards-overview/po-comparison-versions-guide.md)
 
 **Contacto:**
-- Comentarios sobre patrones: docs@docbits.com
-- Soporte técnico: support@docbits.com
-- Ayuda con la implementación: consulting@docbits.com
 
----
+* Comentarios sobre patrones: docs@docbits.com
+* Soporte técnico: support@docbits.com
+* Ayuda de implementación: consultoría@docbits.com
+
+***
 
 ## Estadísticas de patrones
 
-| Métrica | Valor |
-|--------|-------|
-| **Total de patrones** | 5 |
-| **Total de tarjetas cubiertas** | 30+ |
-| **Documentación combinada** | ~1.200 líneas |
-| **Escenarios de ejemplo** | 25+ |
-| **Plantillas de configuración** | 15+ |
-| **Diagramas de flujo de trabajo** | 5 diagramas completos |
-| **Referencias cruzadas** | 87+ enlaces internos |
+| Métrica                      | Valor               |
+| --------------------------- | ------------------- |
+| **Patrones totales**          | 5                   |
+| **Total de tarjetas cubiertas**     | 30+                 |
+| **Documentación combinada**  | \~1200 líneas       |
+| **Escenarios de ejemplo**       | 25+                 |
+| **Plantillas de configuración** | 15+                 |
+| **Diagramas de flujo de trabajo**       | 5 diagramas completos |
+| **Referencias cruzadas**        | Más de 87 enlaces internos  |
 
----
+***
 
-## Contribuir a los patrones
+## Contribuyendo a los patrones
 
-¿Tiene un patrón de flujo de trabajo que pueda beneficiar a otros?
+¿Tiene un patrón de flujo de trabajo que beneficiaría a otros?
 
-**Directrices para contribuir con patrones:**
+**Pautas de contribución de patrones:**
 
 1. **Documente su flujo de trabajo**
-   - Escenario de negocio claro
-   - Implementación paso a paso
-   - Ejemplos de configuración que funcionen
-   - Resultados de pruebas reales
+   * Escenario empresarial claro
+   * Implementación paso a paso
+   * Ejemplos de configuración de trabajo
+   * Resultados de pruebas del mundo real
+2. **Seguir plantilla de patrón**
+   * Usar estructura de sección estándar
+   * Incluir todos los elementos requeridos
+   * Proporcionar diagramas/ejemplos
+   * Agregar guía de solución de problemas
+3. **Enviar para revisión**
+   * Envíe un correo electrónico a: docs@docbits.com
+   * Incluye: descripción del patrón, casos de uso, guía de implementación.
+   * Revisaremos y potencialmente agregaremos documentación oficial.
 
-2. **Siga la plantilla de patrón**
-   - Utilice la estructura de secciones estándar
-   - Incluya todos los elementos obligatorios
-   - Proporcione diagramas y ejemplos
-   - Añada una guía de resolución de problemas
+**Beneficios:**
 
-3. **Envíelo para su revisión**
-   - Por correo electrónico a: docs@docbits.com
-   - Incluya: descripción del patrón, casos de uso, guía de implementación
-   - Lo revisaremos y, si procede, lo añadiremos a la documentación oficial
+* Ayuda a otros usuarios de DocBits
+* Obtener reconocimiento en la documentación
+* Mejorar la base de conocimiento general del producto
+* Reciba comentarios sobre su implementación
 
-**Ventajas:**
-- Ayude a otros usuarios de DocBits
-- Obtenga reconocimiento en la documentación
-- Mejore la base de conocimiento general del producto
-- Reciba comentarios sobre su implementación
-
----
+***
 
 ## Registro de cambios
 
 ### Versión 1.0 (23 de octubre de 2025)
-- Lanzamiento inicial de 5 patrones de flujo de trabajo completos
-- Añadido el patrón de integración de API
-- Añadido el patrón de gestión de tareas
-- Añadido el patrón de PO Matching
-- Añadido el patrón de lógica de decisión
-- Añadido el patrón de transformación de datos
-- Implementados enlaces de referencias cruzadas (87 enlaces)
-- Creada la guía de selección de patrones
 
----
+* Lanzamiento inicial de 5 patrones de flujo de trabajo completos
+* Patrón de integración API agregado
+* Patrón de gestión de tareas agregado
+* Patrón de coincidencia de PO agregado
+* Patrón de lógica de decisión agregado
+* Patrón de transformación de datos agregado
+* Enlaces de referencias cruzadas implementados (87 enlaces)
+* Guía de selección de patrones creada
+
+***
 
 ## Próximos pasos
 
-**¿Es nuevo en los patrones de flujo de trabajo?**
-1. Empiece por el [Patrón de gestión de tareas](task-management-pattern.md): el más fácil de entender
-2. Revise el [Patrón de lógica de decisión](decision-logic-pattern.md): fundamental para todos los flujos
-3. Explore el [Patrón de integración de API](api-integration-pattern.md): una necesidad de integración habitual
+**¿Nuevo en patrones de flujo de trabajo?**
+
+1. Comience con [Patrón de gestión de tareas](task-management-pattern.md): el más fácil de entender
+2. Revisión [Patrón lógico de decisión](decision-logic-pattern.md): fundamental para todos los flujos de trabajo
+3. Explore [Patrón de integración API](api-integration-pattern.md): necesidad de integración común
 
 **¿Listo para implementar?**
-1. Elija su patrón de la lista de arriba
-2. Lea la guía completa del patrón
-3. Revise los requisitos previos y las guías relacionadas
+
+1. Elige tu patrón de la lista de arriba
+2. Lee la guía de patrones completa
+3. Revisar los requisitos previos y las guías relacionadas
 4. Siga las instrucciones paso a paso
-5. Pruebe con documentos de muestra
-6. Despliegue en producción
-7. Supervise y optimice
+5. Prueba con documentos de muestra
+6. Implementar en producción
+7. Monitorear y optimizar
 
 **¿Necesita más ayuda?**
-- Consulte la [Descripción general de la documentación de flujos de trabajo](../README.md)
-- Revise la [Guía de referencia rápida](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
-- Póngase en contacto con el equipo de soporte
 
----
+* Revisar [Descripción general de la documentación del flujo de trabajo](..)
+* Consulte la [Guía de referencia rápida](https://github.com/Fellow-Consulting-AG/docbits/tree/main/WORKFLOW_LINKING_QUICK_REFERENCE.md)
+* Contactar al equipo de soporte
 
-**Última actualización:** 23 de octubre de 2025
-**Mantenido por:** Equipo de documentación
-**Versión:** 1.0
+***
+
+**Última actualización:** 23 de octubre de 2025 **Mantenido por:** Equipo de documentación **Versión:** 1.0

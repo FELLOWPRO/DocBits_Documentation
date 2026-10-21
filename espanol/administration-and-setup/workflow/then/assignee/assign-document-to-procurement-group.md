@@ -1,6 +1,6 @@
-# Assign document to procurement group
+# Asignar documento al grupo de compras
 
-<figure><img src="../../../../.gitbook/assets/image (305).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-9b2624ff9d34-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,20 +8,20 @@ La tarjeta de flujo de trabajo **"Assign to Procurement Group"** se utiliza para
 
 ## **Componentes de la tarjeta:**
 
-1. **Procurement Group**
+1. **Grupo de adquisiciones**
    * **Descripción:** Especifica el grupo de compras al que se asignará el documento.
    * **Detalle:** El grupo de compras seleccionado será responsable de procesar y gestionar el documento.
 
 ## **Funcionalidad:**
 
 * **Evaluación de la condición:**\
-  La tarjeta solo ejecuta su acción si las secciones **"Where"** y **"And"** se evalúan como verdaderas.
+  La tarjeta solo ejecuta su acción si las secciones **"Donde"** y **"Y"** se evalúan como verdaderas.
 * **Ejecución de la acción:**\
   Si ambas condiciones son verdaderas, el documento se asigna al grupo de compras especificado. Si cualquiera de las condiciones es falsa, no se realiza ninguna acción y el documento permanece sin asignar.
 
 ## **Configuración:**
 
-* **Seleccionar el Procurement Group:** Elija el grupo de compras al que asignar el documento de la lista desplegable.
+* **Seleccionar el grupo de adquisiciones:** Elija el grupo de compras al que asignar el documento de la lista desplegable.
 
 ## **Conclusión:**
 

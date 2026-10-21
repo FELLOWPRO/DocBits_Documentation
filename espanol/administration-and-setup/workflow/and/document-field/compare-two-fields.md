@@ -1,6 +1,6 @@
-# Compare two Fields
+# Comparar dos campos
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-e8895ad20ae3-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,19 +8,19 @@ Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones compa
 
 ## **Componentes de la tarjeta:**
 
-1. **Field Name (1)**
+1. **Nombre de campo (1)**
    * **Descripción:** Especifica el primer campo de documento que se comparará.
    * **Detalle:** Debe coincidir con el identificador exacto del primer campo dentro del documento.
-2. **Operator**
+2. **Operador**
    * **Descripción:** Define el tipo de comparación que se realizará entre los dos campos.
    * **Opciones:**
-     * **Equals (=):** Comprueba si los valores de los dos campos son iguales.
-     * **Not Equals (≠):** Garantiza que los valores de los dos campos sean distintos.
-     * **Greater Than (>):** Confirma que el valor del primer campo es mayor que el del segundo campo.
-     * **Greater or Equals (≥):** Valida que el valor del primer campo sea igual o mayor que el del segundo campo.
-     * **Lesser Than (<):** Comprueba si el valor del primer campo es menor que el del segundo campo.
-     * **Less or Equals (≤):** Garantiza que el valor del primer campo sea menor o igual que el del segundo campo.
-3. **Field Name (2)**
+     * **Igual a (=):** Comprueba si los valores de los dos campos son iguales.
+     * **No iguales (≠):** Garantiza que los valores de los dos campos sean distintos.
+     * **Mayor que (>):** Confirma que el valor del primer campo es mayor que el del segundo campo.
+     * **Mayor o igual (≥):** Valida que el valor del primer campo sea igual o mayor que el del segundo campo.
+     * **Menor que (<):** Comprueba si el valor del primer campo es menor que el del segundo campo.
+     * **Menos o Igual (≤):** Garantiza que el valor del primer campo sea menor o igual que el del segundo campo.
+3. **Nombre de campo (2)**
    * **Descripción:** Especifica el segundo campo de documento que se comparará con el primero.
    * **Detalle:** Debe coincidir con el identificador exacto del segundo campo dentro del documento.
 
@@ -35,7 +35,7 @@ Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones compa
 * **Condición falsa:**\
   Si los valores de los dos campos no cumplen la condición especificada, pueden ejecutarse acciones alternativas o ninguna acción, según la configuración de los flujos de trabajo.
 
-## **Configuración:**&#x20;
+## **Configuración:**
 
 * Los usuarios configuran la tarjeta seleccionando los dos campos que se compararán de una lista de campos disponibles en el sistema. El operador se selecciona de una lista desplegable de opciones de comparación disponibles.
 

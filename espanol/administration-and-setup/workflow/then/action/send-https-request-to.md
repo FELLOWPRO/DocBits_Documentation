@@ -1,6 +1,6 @@
-# Send HTTPS request to
+# Enviar solicitud HTTPS a
 
-<figure><img src="../../../../.gitbook/assets/Then_Send_HTTPS_1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5349352840a3-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## Propósito:
 
@@ -11,26 +11,26 @@ La tarjeta de flujo de trabajo **"Send HTTPS Request"** permite a los usuarios e
 1. **URL**
    * **Descripción:** Especifica el endpoint donde se enviará la solicitud HTTPS.
    * **Detalle:** Introduzca la URL completa de la API o el servicio web con el que conectarse.
-2. **Headers**
+2. **Encabezados**
    * **Descripción:** Define las cabeceras que se incluirán en la solicitud HTTPS.
    * **Detalle:** Proporcione **pares clave-valor** en un **formato JSON válido** para especificar cabeceras como tokens de autenticación o tipos de contenido. Ejemplo: {"Authorization": "Bearer example\_value"}
-3. **Method**
+3. **Método**
    * **Descripción:** Especifica el método HTTP que se utilizará para la solicitud.
    * **Opciones:**
      * **GET:** Obtiene datos del endpoint.
      * **POST:** Envía datos al endpoint para crear o actualizar recursos.
      * **PUT:** Actualiza los recursos existentes en el endpoint.
      * **DELETE:** Elimina recursos del endpoint.
-4. **Parameters**
+4. **Parámetros**
    * **Descripción:** Pares clave-valor que se incluirán en la URL como parámetros de consulta.
    * **Detalle:** Utilícelo para enviar filtros o datos adicionales requeridos por el endpoint en un formato JSON válido. Consulte el ejemplo de Headers.
-5. **Data**
+5. **Datos**
    * **Descripción:** El cuerpo de la solicitud HTTPS.
    * **Detalle:** Proporcione la carga en un formato JSON válido. Consulte el ejemplo de Headers.
 
 ## Funcionalidad:
 
-* **Evaluación de la condición:** La tarjeta solo envía la solicitud HTTPS si las secciones **"Where"** y **"And"** se evalúan como verdaderas.&#x20;
+* **Evaluación de la condición:** La tarjeta solo envía la solicitud HTTPS si las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
   * Si cualquiera de las condiciones es falsa, la solicitud no se envía.
 * **Ejecución de la solicitud:**
   * Cuando se cumplen las condiciones, el sistema envía la solicitud HTTPS con las configuraciones especificadas.
@@ -38,15 +38,15 @@ La tarjeta de flujo de trabajo **"Send HTTPS Request"** permite a los usuarios e
 ## Configuración:
 
 1. **Definir la URL:** Introduzca el endpoint donde debe enviarse la solicitud HTTPS.
-2. **Establecer las Headers:** Proporcione las cabeceras necesarias como pares clave-valor.
+2. **Establecer las cabeceras:** Proporcione las cabeceras necesarias como pares clave-valor.
 3. **Seleccionar el HTTP Method:** Elija el método adecuado (**GET**, **POST**, **PUT** o **DELETE**) según la acción que se vaya a realizar.
 4. **Añadir parámetros:** Especifique los parámetros de consulta requeridos por el endpoint.
 5. **Proporcionar la carga de datos:** Introduzca el cuerpo de la solicitud en el formato requerido (p. ej., JSON) si es necesario.
-6. **Configurar las condiciones:** Defina las secciones **"Where"** y **"And"** para garantizar que la solicitud se envíe solo cuando se cumplan condiciones específicas.
+6. **Configurar las condiciones:** Defina las secciones **"Cuando"** y **"Y"** para garantizar que la solicitud se envíe solo cuando se cumplan condiciones específicas.
 
 ## Tarjeta de ejemplo:
 
-<figure><img src="../../../../.gitbook/assets/Then_Send_HTTPS_2.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5349352840a3-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## Conclusión:
 

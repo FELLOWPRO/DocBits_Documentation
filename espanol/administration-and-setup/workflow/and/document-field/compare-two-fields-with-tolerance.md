@@ -1,6 +1,6 @@
-# Compare two Fields with Tolerance
+# Comparar dos campos con tolerancia
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-19d9a4d5e71d-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,28 +8,28 @@ Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones compa
 
 ## **Componentes de la tarjeta:**
 
-1. **Field Name (1)**
+1. **Nombre de campo (1)**
    * **Descripción:** Especifica el primer campo de documento que se comparará.
    * **Detalle:** Debe coincidir con el identificador exacto del primer campo dentro del documento.
-2. **Operator**
+2. **Operador**
    * **Descripción:** Define el tipo de comparación que se realizará entre los dos campos.
    * **Opciones:**
-     * **Equals (=):** Comprueba si los valores de los dos campos son iguales.
-     * **Not Equals (≠):** Garantiza que los valores de los dos campos sean distintos.
-     * **Greater Than (>):** Confirma que el valor del primer campo es mayor que el del segundo campo.
-     * **Greater or Equals (≥):** Valida que el valor del primer campo sea igual o mayor que el del segundo campo.
-     * **Lesser Than (<):** Comprueba si el valor del primer campo es menor que el del segundo campo.
-     * **Less or Equals (≤):** Garantiza que el valor del primer campo sea menor o igual que el del segundo campo.
-3. **Field Name (2)**
+     * **Igual a (=):** Comprueba si los valores de los dos campos son iguales.
+     * **No iguales (≠):** Garantiza que los valores de los dos campos sean distintos.
+     * **Mayor que (>):** Confirma que el valor del primer campo es mayor que el del segundo campo.
+     * **Mayor o igual (≥):** Valida que el valor del primer campo sea igual o mayor que el del segundo campo.
+     * **Menor que (<):** Comprueba si el valor del primer campo es menor que el del segundo campo.
+     * **Menos o Igual (≤):** Garantiza que el valor del primer campo sea menor o igual que el del segundo campo.
+3. **Nombre de campo (2)**
    * **Descripción:** Especifica el segundo campo de documento que se comparará con el primero.
-   * **Detalle:** Debe coincidir con el identificador exacto del segundo campo dentro del documento.&#x20;
-4. **Tolerance Amount**
+   * **Detalle:** Debe coincidir con el identificador exacto del segundo campo dentro del documento.
+4. **Cantidad de tolerancia**
    * **Descripción:** Define el margen de error aceptable para la comparación.
    * **Detalle:** El importe de tolerancia es un valor numérico que indica la diferencia máxima admisible entre los dos valores de campo para que la comparación se considere verdadera.
-5. **Tolerance Type**
+5. **Tipo de tolerancia**
    * **Descripción:** Especifica la unidad de medida del importe de tolerancia.
    * **Opciones:**
-     * **Value:** La tolerancia es un valor absoluto, lo que significa que los dos campos pueden diferir en el importe de tolerancia especificado.
+     * **Valor:** La tolerancia es un valor absoluto, lo que significa que los dos campos pueden diferir en el importe de tolerancia especificado.
      * **Percent:** La tolerancia se calcula como un porcentaje del valor del segundo campo, permitiendo un margen de error relativo.
 
 ## **Funcionalidad:**
@@ -43,7 +43,7 @@ Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones compa
 
 ## **Configuración:**
 
-* Los usuarios configuran la tarjeta seleccionando los dos campos que se compararán de una lista de campos disponibles en el sistema. El operador se selecciona de una lista desplegable de opciones de comparación disponibles. Los usuarios introducen el importe de tolerancia y eligen el tipo de tolerancia (valor o porcentaje).&#x20;
+* Los usuarios configuran la tarjeta seleccionando los dos campos que se compararán de una lista de campos disponibles en el sistema. El operador se selecciona de una lista desplegable de opciones de comparación disponibles. Los usuarios introducen el importe de tolerancia y eligen el tipo de tolerancia (valor o porcentaje).
 
 ## **Conclusión:**
 

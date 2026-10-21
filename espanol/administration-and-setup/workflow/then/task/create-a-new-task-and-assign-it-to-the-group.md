@@ -1,29 +1,29 @@
-# Create a New Task and assign it to the group
+# Crea una nueva tarea y asígnala al grupo
 
-<figure><img src="../../../../.gitbook/assets/image (289).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-502380adb65e-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
-La tarjeta de flujo de trabajo **"Create Group Task or Notification"** facilita la creación de tareas o notificaciones para grupos especificados, garantizando una comunicación y una gestión de tareas eficientes. Mejorada con la funcionalidad de árbol de decisión en versiones posteriores, determina dinámicamente el grupo asignado o el método, agilizando las operaciones.
+La tarjeta de flujo de trabajo **"Crear tarea de grupo o notificación"** facilita la creación de tareas o notificaciones para grupos especificados, garantizando una comunicación y una gestión de tareas eficientes. Mejorada con la funcionalidad de árbol de decisión en versiones posteriores, determina dinámicamente el grupo asignado o el método, agilizando las operaciones.
 
 ## **Componentes de la tarjeta:**
 
-1. **Title**
+1. **Título**
    * **Descripción**: Especifica el título de la tarea o notificación.
    * **Detalle**: Actúa como identificador de la tarea o notificación creada.
-2. **Description**
+2. **Descripción**
    * **Descripción**: Describe el contexto o los detalles de la tarea o notificación.
    * **Detalle**: Proporciona claridad sobre su propósito.
-3. **Priority**
+3. **Prioridad**
    * **Descripción**: Establece el nivel de importancia de la tarea.
    * **Opciones**:
      * **High**: Requiere acción inmediata.
-     * **Medium**: Importante pero menos urgente.
+     * **Medio**: Importante pero menos urgente.
      * **Low**: Puede abordarse más adelante.
-4. **Assigned Group**
+4. **Grupo asignado**
    * **Descripción**: Especifica el grupo responsable de la tarea o notificación.
    * **Detalle**: Se selecciona de una lista desplegable de grupos disponibles.
-5. **Email Notification**
+5. **Notificación por correo electrónico**
    * **Descripción**: Posibilita el envío de un correo electrónico para notificar al grupo asignado.
    * **Opciones**:
      * **True**: Envía una notificación por correo electrónico.
@@ -39,13 +39,13 @@ La tarjeta de flujo de trabajo **"Create Group Task or Notification"** facilita 
 2. **Task/Notification Option (solo en la versión 4)**
    * **Descripción**: Permite crear una tarea o una notificación.
    * **Opciones**:
-     * **Task**: Crea una tarea para el grupo seleccionado.
+     * **Tarea**: Crea una tarea para el grupo seleccionado.
      * **Notification**: Envía una notificación en lugar de crear una tarea.
 
 ## **Funcionalidad:**
 
 * **Evaluación de la condición**:\
-  Ejecuta la acción de la tarjeta solo cuando las secciones **"Where"** y **"And"** son verdaderas.
+  Ejecuta la acción de la tarjeta solo cuando las secciones **"Donde"** y **"Y"** son verdaderas.
 * **Creación de tarea o notificación**:
   * Se crea una tarea para el grupo seleccionado con el título, la descripción y la prioridad especificados.
   * En la versión 4, la tarjeta puede crear una notificación en lugar de una tarea.
@@ -64,4 +64,4 @@ La tarjeta de flujo de trabajo **"Create Group Task or Notification"** facilita 
 
 ## **Conclusión:**
 
-La tarjeta de flujo de trabajo **"Create Group Task or Notification"** simplifica la gestión de tareas y notificaciones dirigiéndose directamente a los grupos. Su función de asignación dinámica, posibilitada por el árbol de decisión, mejora la flexibilidad, mientras que las notificaciones por correo electrónico garantizan una comunicación oportuna. Las versiones 3 y 4 añaden funcionalidad avanzada, lo que la convierte en una herramienta versátil para una ejecución eficiente del flujo de trabajo.
+La tarjeta de flujo de trabajo **"Crear tarea de grupo o notificación"** simplifica la gestión de tareas y notificaciones dirigiéndose directamente a los grupos. Su función de asignación dinámica, posibilitada por el árbol de decisión, mejora la flexibilidad, mientras que las notificaciones por correo electrónico garantizan una comunicación oportuna. Las versiones 3 y 4 añaden funcionalidad avanzada, lo que la convierte en una herramienta versátil para una ejecución eficiente del flujo de trabajo.

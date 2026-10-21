@@ -1,66 +1,72 @@
-# Send Email to Groups
+# Enviar correo electrónico a grupos
 
-Estas tarjetas van en el grupo **Then** del Generador de flujos de trabajo: las acciones que se ejecutan cuando se cumplen las condiciones When/And:
+***
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Las tarjetas se añaden al grupo <strong>Then</strong> mediante <strong>Add Card</strong>.</p></figcaption></figure>
+Agregue esta tarjeta al grupo **Entonces** del Generador de flujo de trabajo: las acciones que se ejecutan una vez que coinciden las condiciones Cuándo/Y:
 
----
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-es.png" alt="Ejemplo sin guardar con tarjetas Cuando, Y y Entonces. Configure todos los campos antes de ejecutarlo. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Ejemplo sin guardar con tarjetas Cuando, Y y Entonces. Configure todos los campos antes de ejecutarlo. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
+
+***
 
 ## 📌 Información de versión
 
-**Estado:** ✅ Versión única (sin cambios incompatibles)
-**Última versión:** v1 (Activa)
-**Nota:** Esta tarjeta utiliza un modelo de versión única con soporte multilingüe mediante claves de traducción.
+**Estado:** ✅ Versión única (sin cambios importantes) **Última versión:** v1 (Activo) **Nota:** Esta tarjeta utiliza un modelo de versión única con soporte en varios idiomas a través de claves de traducción.
 
-📖 [Complete Card Database](../../../../DocFlow/docs/card_version.md)
+📖 [Base de datos de tarjetas completa](../../cards-overview/export-cards-guide.md)
 
----
+***
 
 ## Propósito
-Esta tarjeta envía automáticamente notificaciones por correo electrónico a grupos de usuarios. En lugar de asignar el trabajo a personas individuales, envía el mensaje a un grupo y todos los miembros de ese grupo lo reciben.
 
-**Ejemplo real:** Cuando llega una factura de alto valor, envíe automáticamente una notificación por correo electrónico a todos los miembros del grupo "Finance Team" para que sepan que necesita revisión.
+Esta tarjeta envía automáticamente notificaciones por correo electrónico a grupos de usuarios. En lugar de asignar trabajo a personas individuales, envía el mensaje a un grupo y todos los miembros de ese grupo lo reciben.
 
----
+**Ejemplo del mundo real:** Cuando llega una factura de alto valor, envía automáticamente una notificación por correo electrónico a todos los miembros del grupo "Equipo de finanzas" para que sepan que es necesario revisarla.
 
-## Cuándo usar esta tarjeta
+***
 
-Use esta tarjeta cuando necesite:
-- Notificar a varias personas a la vez
-- Enviar alertas a grupos de equipo
-- Difundir actualizaciones a departamentos
-- Notificar a grupos sobre cambios en el estado de los documentos
-- Enviar recordatorios a los miembros de un grupo
+## Cuándo utilizar esta tarjeta
+
+Utilice esta tarjeta cuando necesite:
+
+* Notificar a varias personas a la vez
+* Enviar alertas a grupos de equipo
+* Transmitir actualizaciones a los departamentos
+* Notificar a los grupos sobre cambios en el estado de los documentos
+* Enviar recordatorios a los miembros del grupo
 
 **Escenarios comunes:**
-- Notificar al equipo de compras sobre nuevos proveedores
-- Alertar al equipo financiero sobre facturas de alto valor
-- Notificar al equipo de almacén sobre los envíos
-- Difundir cambios en el estado de los documentos
 
----
+* Notificar al equipo de adquisiciones sobre nuevos proveedores.
+* Alertar al equipo financiero sobre facturas de alto valor
+* Notificar al equipo del almacén sobre los envíos.
+* Cambios de estado de documentos de difusión
+
+***
 
 ## Cómo funciona
 
-1. **Comprobación de condiciones**: El flujo de trabajo comprueba las condiciones "Where" y "And"
-2. **Preparar el correo electrónico**: El sistema prepara el correo electrónico usando una plantilla
-3. **Obtener los miembros del grupo**: El sistema encuentra a todos los miembros del grupo especificado
-4. **Enviar**: El correo electrónico se envía a cada miembro del grupo
-5. **Registrar**: Se registra el envío del correo electrónico
+1. **Verificación de condición**: El flujo de trabajo verifica las condiciones "Dónde" y "Y"
+2. **Preparar correo electrónico**: el sistema prepara el correo electrónico usando una plantilla
+3. **Obtener miembros del grupo**: el sistema encuentra todos los miembros del grupo especificado
+4. **Enviar**: el correo electrónico se envía a cada miembro del grupo
+5. **Log**: Se registra el envío de correo electrónico
 
----
+***
 
-## Explicación de los parámetros
+## Parámetros explicados
 
-### Email Template
-El mensaje de correo electrónico que se va a enviar
+### Plantilla de correo electrónico
+
+El mensaje de correo electrónico a enviar
 
 **Opciones:**
-- Elija entre las plantillas existentes
-- Cada plantilla tiene un asunto, un cuerpo y un formato predefinidos
-- Las plantillas pueden incluir marcadores de posición como {document_number}, {supplier_name}
+
+* Elija entre plantillas existentes
+* Cada plantilla tiene tema, cuerpo y formato predefinidos.
+* Las plantillas pueden incluir marcadores de posición como {document\_number}, {supplier\_name}
 
 **Plantilla de ejemplo:**
+
 ```
 Subject: Document {document_number} requires review
 
@@ -79,44 +85,51 @@ Best regards,
 DocBits Automation
 ```
 
-### Group
+### grupo
+
 El grupo de usuarios al que enviar el correo electrónico
 
 **Grupos de ejemplo:**
-- Finance Team
-- Procurement Team
-- Warehouse Team
-- Approval Committee
-- Management Group
 
----
+* Equipo de finanzas
+* Equipo de adquisiciones
+* Equipo de almacén
+* Comité de aprobación
+* Grupo de gestión
+
+***
 
 ## Pasos de configuración
 
-### Paso 1: Elegir la plantilla de correo electrónico
-1. Haga clic en "Select Email Template"
-2. Elija la plantilla de la lista
-3. Verifique el asunto y el contenido
+### Paso 1: elija la plantilla de correo electrónico
 
-### Paso 2: Seleccionar el grupo
-1. Haga clic en "Select Group"
-2. Elija el grupo que desea notificar
-3. Verifique los miembros del grupo (normalmente muestra el recuento)
+1. Haga clic en "Seleccionar plantilla de correo electrónico"
+2. Elija una plantilla de la lista
+3. Verificar tema y contenido
 
-### Paso 3: Establecer las condiciones
-1. Añada una condición: "When [condition] is true"
-2. Ejemplo: "When invoice amount is greater than €5000"
+### Paso 2: seleccione grupo
 
-### Paso 4: Probar
-1. Pruebe con un documento de muestra
-2. Verifique que el correo electrónico se envía al grupo
-3. Compruebe la representación de la plantilla
+1. Haga clic en "Seleccionar grupo"
+2. Elige el grupo al que quieres notificar
+3. Verificar los miembros del grupo (normalmente muestra el recuento)
 
----
+### Paso 3: establecer condiciones
+
+1. Agregar condición: "Cuando \[condición] es verdadera"
+2. Ejemplo: "Cuando el importe de la factura es superior a 5000€"
+
+### Paso 4: prueba
+
+1. Prueba con documento de muestra
+2. Verificar envíos de correo electrónico al grupo
+3. Comprobar la representación de la plantilla
+
+***
 
 ## Ejemplos de plantillas de correo electrónico
 
 ### Plantilla 1: Alerta de factura de alto valor
+
 ```
 Subject: High-Value Invoice Alert - {document_number}
 
@@ -138,6 +151,7 @@ Sent automatically by DocBits
 ```
 
 ### Plantilla 2: Cambio de estado del proveedor
+
 ```
 Subject: Supplier Status Update - {supplier_name}
 
@@ -158,6 +172,7 @@ Sent automatically by DocBits
 ```
 
 ### Plantilla 3: Documento listo para exportar
+
 ```
 Subject: Document Approved for Export - {document_number}
 
@@ -176,28 +191,32 @@ Please proceed with export to {destination_system}.
 Sent automatically by DocBits
 ```
 
----
+***
 
 ## Casos de uso comunes
 
-### Caso de uso 1: Alertas de control de calidad
-**Disparador:** Cuando se encuentra una discrepancia entre la factura y el PO
+### Caso de uso 1: alertas de control de calidad
 
-**Grupo de correo electrónico:** Quality Team
+**Activador:** Cuando se encuentra discrepancia entre la factura y la orden de compra
+
+**Grupo de correo electrónico:** Equipo de calidad
 
 **Contenido:**
+
 ```
 Invoice {number} has quality issues:
 - Unit Price variance: 12% (exceeds 5% tolerance)
 - Please review and take action
 ```
 
-### Caso de uso 2: Notificaciones de aprobación
-**Disparador:** Cuando el documento alcanza un determinado estado
+### Caso de uso 2: notificaciones de aprobación
 
-**Grupo de correo electrónico:** Approval Committee
+**Activador:** Cuando el documento alcanza cierto estado
+
+**Grupo de correo electrónico:** Comité de aprobación
 
 **Contenido:**
+
 ```
 Document {number} is awaiting approval:
 - Amount: {amount}
@@ -205,12 +224,14 @@ Document {number} is awaiting approval:
 - Please login to approve/reject
 ```
 
-### Caso de uso 3: Notificaciones de excepción
-**Disparador:** Cuando no se cumplen las condiciones
+### Caso de uso 3: notificaciones de excepciones
 
-**Grupo de correo electrónico:** Managers
+**Activador:** Cuando no se cumplen las condiciones
+
+**Grupo de correo electrónico:** Gerentes
 
 **Contenido:**
+
 ```
 Exception alert for document {number}:
 - Supplier code missing
@@ -219,69 +240,77 @@ Exception alert for document {number}:
 ```
 
 ### Caso de uso 4: Actualizaciones de estado
-**Disparador:** Cuando cambia el estado del documento
+
+**Activador:** Cuando cambia el estado del documento
 
 **Grupo de correo electrónico:** Equipo responsable del siguiente paso
 
 **Contenido:**
+
 ```
 Document {number} status changed to: {status}
 Assigned to: {assigned_user}
 Next steps: {next_steps}
 ```
 
----
+***
 
-## Resolución de problemas
+## Solución de problemas
 
-### "Email not received"
+### "Correo electrónico no recibido"
 
 **Posibles causas:**
-- [ ] Los usuarios del grupo no tienen direcciones de correo electrónico
-- [ ] El correo electrónico fue bloqueado por el filtro de spam
-- [ ] La dirección de correo electrónico es incorrecta en el grupo
-- [ ] El grupo no tiene miembros
+
+* [] Los usuarios del grupo no tienen direcciones de correo electrónico
+* [ ] Correo electrónico bloqueado por filtro de spam
+* [] La dirección de correo electrónico del grupo es incorrecta
+* [] El grupo no tiene miembros
 
 **Soluciones:**
-1. Verifique que todos los miembros del grupo tienen direcciones de correo electrónico
-2. Compruebe la carpeta de spam/correo no deseado
-3. Verifique que la pertenencia al grupo es correcta
-4. Añada usuarios al grupo si faltan
-5. Compruebe con TI que el servicio de correo electrónico funciona
 
-### "Template not rendering correctly"
+1. Verificar que todos los miembros del grupo tengan direcciones de correo electrónico
+2. Revisar la carpeta de spam/basura
+3. Verificar que la membresía del grupo sea correcta
+4. Agregar usuarios al grupo si faltan
+5. Verifique con TI que el servicio de correo electrónico esté funcionando
 
-**Causa:** No se encuentran las variables de marcador de posición
+### "La plantilla no se representa correctamente"
+
+**Causa:** No se encontraron variables de marcador de posición
 
 **Solución:**
-- [ ] Verifique que los nombres de los campos coinciden exactamente
-- [ ] Compruebe si el campo tiene un valor en el documento
-- [ ] Use el formato de marcador de posición correcto: {field_name}
-- [ ] Pruebe con un documento de muestra que tenga todos los campos
 
-### "Algunas personas reciben el correo electrónico y otras no"
+* [] Verificar que los nombres de los campos coincidan exactamente
+* [] Compruebe si el campo tiene un valor en el documento
+* [] Utilice el formato de marcador de posición correcto: {field\_name}
+* [] Pruebe con un documento de muestra que tenga todos los campos
 
-**Causa:** Pertenencia incompleta al grupo o correos electrónicos no válidos
+### "Algunas personas reciben correo electrónico, otras no"
+
+**Causa:** Membresía de grupo incompleta o correos electrónicos no válidos
 
 **Soluciones:**
-- [ ] Verifique que todos los miembros tienen un correo electrónico válido
-- [ ] Compruebe si algunos usuarios se han dado de baja
-- [ ] Verifique que la pertenencia al grupo está actualizada
-- [ ] Contacte con TI para validar las direcciones de correo electrónico
 
-### "Desea añadir/eliminar personas del grupo"
+* [] Verificar que todos los miembros tengan un correo electrónico válido
+* [] Compruebe si algunos usuarios han optado por no participar
+* [] Verificar que la membresía del grupo esté actualizada
+* [] Póngase en contacto con TI para validar direcciones de correo electrónico
+
+### "Quiero agregar/eliminar personas del grupo"
 
 **Solución:**
-- Contacte con su administrador
-- Los grupos se gestionan en la configuración del sistema
-- No se pueden cambiar desde esta tarjeta
-- Solicite cambios en la pertenencia al grupo a TI
 
----
+* Contacta con tu administrador
+* Los grupos se administran en la configuración del sistema.
+* No se puede cambiar desde esta tarjeta
+* Solicitar cambios de membresía de grupo en TI
 
-## Personalización de la plantilla de correo electrónico
+***
+
+## Personalización de plantillas de correo electrónico
 
 ### Marcadores de posición disponibles
+
 ```
 {document_number} - Document ID
 {invoice_number} - Invoice ID
@@ -298,55 +327,59 @@ Next steps: {next_steps}
 {comment} - Comments or notes
 ```
 
-### Creación de marcadores de posición personalizados
-Si necesita datos adicionales en los correos electrónicos:
-1. Contacte con su administrador
-2. Solicite un nuevo marcador de posición
-3. Añada el campo necesario al documento
-4. Actualice la plantilla de correo electrónico
+### Crear marcadores de posición personalizados
 
----
+Si necesita datos adicionales en correos electrónicos:
 
-## Buenas prácticas
+1. Contacta con tu administrador
+2. Solicitar nuevo marcador de posición
+3. Agregar el campo necesario al documento
+4. Actualizar plantilla de correo electrónico
 
-✅ **Haga:**
-- Mantenga el contenido del correo electrónico breve y claro
-- Incluya elementos de acción (¿qué deben hacer los destinatarios?)
-- Incluya un enlace o instrucciones para acceder al documento
-- Pruebe la plantilla con datos de muestra
-- Envíe al grupo correcto (no notifique en exceso)
-- Use plantillas para mantener la coherencia
+***
 
-❌ **No haga:**
-- Enviar demasiados correos electrónicos (fatiga de notificaciones)
-- Incluir datos confidenciales en los correos electrónicos
-- Enviar a grupos que no necesitan la información
-- Usar líneas de asunto poco claras
-- Olvidar incluir cómo realizar la acción
-- Enviar correos electrónicos a personas individuales (use un grupo en su lugar)
+## Mejores prácticas
 
----
+✅ **Hacer:**
+
+* Mantenga el contenido del correo electrónico breve y claro
+* Incluya elementos de acción (¿qué deberían hacer los destinatarios?)
+* Incluir enlace o instrucciones para acceder al documento.
+* Plantilla de prueba con datos de muestra
+* Enviar al grupo correcto (no notificar demasiado)
+* Utilice plantillas para mantener la coherencia
+
+❌ **No:**
+
+* Enviar demasiados correos electrónicos (fatiga de notificaciones)
+* Incluir datos confidenciales en los correos electrónicos
+* Enviar a grupos que no necesitan información
+* Utilice líneas de asunto poco claras
+* Olvídate de incluir cómo actuar
+* Enviar correos electrónicos a individuos (use grupo en su lugar)
+
+***
 
 ## Notas de rendimiento
 
-- Cada correo electrónico tarda ~1 segundo en enviarse
-- Los grupos grandes pueden tardar tiempo (100 personas = ~100 segundos)
-- No cree bucles que envíen miles de correos electrónicos
-- Supervise la capacidad del servicio de correo electrónico
-- Considere el envío por lotes si hay muchos documentos
+* Cada correo electrónico tarda \~1 segundo en enviarse
+* Los grupos grandes pueden llevar tiempo (100 personas = \~100 segundos)
+* No cree bucles que envíen miles de correos electrónicos
+* Monitorear la capacidad del servicio de correo electrónico
+* Considere el procesamiento por lotes si hay muchos documentos
 
----
+***
 
 ## Tarjetas relacionadas
 
-- **ACTION_SEND_EMAIL** - Enviar a una persona individual
-- **ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP** - Asignar una tarea en lugar de solo notificar
-- **ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL** - Crear una tarea y notificar
-- **STAUS_CHANGE** - Cambiar el estado y notificar
+* **ACTION\_SEND\_EMAIL** - Enviar a persona individual
+* **ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP**: asigna tarea en lugar de simplemente notificar
+* **ACTION\_CREATE\_TASK\_FOR\_GROUP\_SEQUENTIAL** - Crear tarea y notificar
+* **STAUS\_CHANGE** - Cambiar estado y notificar
 
----
+***
 
-## Ejemplo de flujo de trabajo típico
+## Ejemplo típico de flujo de trabajo
 
 ```
 Document Arrives
@@ -362,21 +395,16 @@ Send Email to Procurement Team
 Workflow Continues
 ```
 
----
+***
 
 ## Preguntas frecuentes
 
-**P: ¿Puedo enviar a varios grupos?**
-R: Cree tarjetas separadas para cada grupo
+**P: ¿Puedo enviar a varios grupos?** R: Crear tarjetas separadas para cada grupo
 
-**P: ¿Qué ocurre si el correo electrónico de alguien rebota?**
-R: El correo electrónico se registra como fallido; TI puede solucionar el problema
+**P: ¿Qué pasa si el correo electrónico de alguien rebota?** R: El correo electrónico se registra como fallido, TI puede solucionar el problema
 
-**P: ¿Puedo cambiar la plantilla de correo electrónico?**
-R: Contacte con su administrador para modificar las plantillas
+**P: ¿Puedo cambiar la plantilla de correo electrónico?** R: Comuníquese con su administrador para modificar las plantillas
 
-**P: ¿Puedo enviar según condiciones?**
-R: ¡Sí! Use las condiciones "Where" y "And" para controlar cuándo se envían los correos electrónicos
+**P: ¿Puedo enviar según las condiciones?** R: ¡Sí! Utilice las condiciones "Dónde" y "Y" para controlar cuándo se envían los correos electrónicos
 
-**P: ¿Cómo sé si se recibió el correo electrónico?**
-R: Compruebe los registros de correo electrónico en DocBits para ver el estado de envío
+**P: ¿Cómo sé si se recibió un correo electrónico?** R: Verifique los registros de correo electrónico en DocBits para conocer el estado del envío

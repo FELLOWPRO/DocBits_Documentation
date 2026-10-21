@@ -1,6 +1,6 @@
-# Docfield is
+# Estado del campo de documento
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f38fe175443d-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,18 +8,18 @@ Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones compa
 
 ## **Componentes de la tarjeta:**
 
-1. **Field Name**
+1. **Nombre de campo**
    * **Descripción:** Especifica el nombre del campo del documento que se evaluará.
    * **Detalle:** Debe coincidir con el identificador exacto del campo dentro del documento.
-2. **Operators**
+2. **Operadores**
    * **Descripción:** Define el tipo de comparación que se realizará entre el valor del campo y el valor de referencia.
    * **Opciones:**
-     * **Equals (=):** Comprueba si el valor del campo coincide con el valor de referencia.
-     * **Not Equals (≠):** Garantiza que el valor del campo difiera del valor de referencia.
-     * **Greater Than (>):** Confirma que el valor del campo es mayor que el valor de referencia.
-     * **Greater or Equals (≥):** Valida que el valor del campo sea igual o mayor que el valor de referencia.
-     * **Lesser Than (<):** Comprueba si el valor del campo es menor que el valor de referencia.
-     * **Less or Equals (≤):** Garantiza que el valor del campo sea menor o igual que el valor de referencia.
+     * **Igual a (=):** Comprueba si el valor del campo coincide con el valor de referencia.
+     * **No iguales (≠):** Garantiza que el valor del campo difiera del valor de referencia.
+     * **Mayor que (>):** Confirma que el valor del campo es mayor que el valor de referencia.
+     * **Mayor o igual (≥):** Valida que el valor del campo sea igual o mayor que el valor de referencia.
+     * **Menor que (<):** Comprueba si el valor del campo es menor que el valor de referencia.
+     * **Menos o Igual (≤):** Garantiza que el valor del campo sea menor o igual que el valor de referencia.
 
 ## **Funcionalidad:**
 

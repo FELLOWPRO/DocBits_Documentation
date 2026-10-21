@@ -1,6 +1,6 @@
-# If Country in Field is One of
+# Si el país en el campo es uno de
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-364a45ddb67d-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 ## **Propósito**
 
@@ -8,18 +8,18 @@ Esta tarjeta de flujo de trabajo está diseñada para evaluar si un país especi
 
 ## **Componentes de la tarjeta:**
 
-1. **Field Name**
+1. **Nombre de campo**
    * **Descripción:** Especifica el campo del documento donde se almacena el nombre o el código del país.
-   * **Detalle:** Debe coincidir con el identificador exacto del campo de los datos del país dentro del documento.&#x20;
-2. **Operator**
+   * **Detalle:** Debe coincidir con el identificador exacto del campo de los datos del país dentro del documento.
+2. **Operador**
    * **Descripción:** Define si el país del campo debe formar parte de una lista predefinida de países.
    * **Opciones:**
      * **Is:** El país debe estar incluido en la lista de países especificados para que la condición sea verdadera.
-     * **Is Not:** El país no debe estar incluido en la lista de países especificados para que la condición sea verdadera.
-3. **Countries**
+     * **No es:** El país no debe estar incluido en la lista de países especificados para que la condición sea verdadera.
+3. **Países**
    * **Descripción:** Especifica la lista de países con los que se comparará el país seleccionado.
    * **Detalle:** Es una lista de países separados por comas. La comparación comprueba si el país del campo está incluido en esta lista.
-4. **Continue Condition**
+4. **Continuar condición**
    * **Descripción:** Define el resultado de la comparación. Si el país cumple la condición, el flujo de trabajo continúa con el valor booleano especificado.
    * **Opciones:**
      * **True:** El flujo de trabajo continúa si la condición coincide.

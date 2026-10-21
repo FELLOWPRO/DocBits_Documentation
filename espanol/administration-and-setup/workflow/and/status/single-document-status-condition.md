@@ -1,6 +1,6 @@
-# Single Document Status Condition
+# Condición de estado de documento único
 
-<figure><img src="../../../../.gitbook/assets/userlmn_928e514bc0e2aa775894e4ec5f992bd9 (1).png" alt="" width="528"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-c0315ad39a89-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 **Propósito**
 
@@ -8,14 +8,14 @@ Esta tarjeta de flujo de trabajo está adaptada para gestionar operaciones sobre
 
 **Componentes de la tarjeta**
 
-1. **Operator**
+1. **Operador**
    * **Descripción**: Especifica el método para evaluar el estado del documento frente a la condición seleccionada.
    * **Opciones**:
      * **is**: Dispara la operación si el estado actual del documento coincide con el estado seleccionado.
-     * **is not**: Dispara la operación si el estado actual del documento no coincide con el estado seleccionado.
-2. **Status**
+     * **no es**: Dispara la operación si el estado actual del documento no coincide con el estado seleccionado.
+2. **Estado**
    * **Descripción**: Permite seleccionar un único estado de documento para establecer la condición.
-   * **Ejemplos de estados**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval".
+   * **Ejemplos de estados**: "Error", "Error de exportación", "Listo en validación", "Listo en revisión", "Pendiente de aprobación", "Pendiente de segunda aprobación".
    * **Detalle**: Los usuarios eligen un estado de un desplegable o de un conjunto de botones de opción. Este estado sirve entonces como criterio para la operación de la tarjeta.
 
 **Funcionalidad**

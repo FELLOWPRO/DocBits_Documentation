@@ -4,7 +4,7 @@ Die Seite **Infrastruktur** bietet Administratoren eine aktuelle Übersicht auf 
 
 > **Zugriff:** Die Infrastruktur ist eine reine Administratorenseite. Öffnen Sie **Einstellungen → Organisation & Zugriff → Infrastruktur**.
 
-<figure><img src="../../.gitbook/assets/infrastructure_overview.png" alt="Infrastructure page with the Topology tab open"><figcaption><p>Die Seite „Infrastruktur", Registerkarte „Topologie"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-infrastructure_overview-de.png" alt="Infrastrukturübersicht in deutscher Sprache."><figcaption><p>Infrastrukturübersicht in deutscher Sprache.</p></figcaption></figure>
 
 Die Seite ist in drei Registerkarten unterteilt:
 

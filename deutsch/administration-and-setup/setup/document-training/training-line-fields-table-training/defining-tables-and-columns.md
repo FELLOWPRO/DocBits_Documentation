@@ -1,74 +1,47 @@
 # Tabellen und Spalten definieren
 
-Mit dieser Anleitung definieren Sie Tabellen und Spalten für die Extraktion von Positionszeilen in DocBits manuell. Das ist besonders nützlich, wenn die automatische Erkennung die Tabellenstruktur nicht vollständig erfasst oder wenn Sie eigene Felder hinzufügen möchten.
+Wenn eine Tabelle nicht vollständig erkannt wird, können Sie ihren Bereich und ihre Spalten im Tabellentraining festlegen. Die Abbildungen verwenden eine fiktive Rechnung. Die gezeigten Trainingsbereiche sind ungespeicherte Entwürfe.
 
-### 1. Ansicht zur Tabellenextraktion öffnen
+## Tabellentraining öffnen
 
-Öffnen Sie Ihr Dokument in DocBits und klicken Sie auf die Schaltfläche **„Table Training“**, um die Ansicht zur Tabellenextraktion aufzurufen.
+Öffnen Sie das Dokument in der **Feldvalidierung** und rufen Sie das **Tabellentraining** auf. Der Arbeitsbereich zeigt das Dokument links und die Tabellenwerkzeuge rechts.
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_1-de.png" alt="Deutsche Oberfläche zum Definieren von Tabellen und Spalten."><figcaption><p>Deutsche Oberfläche zum Definieren von Tabellen und Spalten.</p></figcaption></figure>
 
-### 2. Trainingsmodus aktivieren
+## Trainingsmodus aktivieren
 
-Um Tabellen und Spalten manuell zu definieren oder zu ändern, klicken Sie auf **„TRAINING MODE“**.
+Aktivieren Sie den Schalter **Trainingsmodus**.
 
-<div align="center"><figure><img src="../../../../.gitbook/assets/define_tables_and_columns_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_2-de.png" alt="Tabellentraining mit aktiviertem Trainingsmodus."><figcaption><p>Tabellentraining mit aktiviertem Trainingsmodus.</p></figcaption></figure>
 
-### 3. Tabellenbereich definieren
+## Tabellenbereich festlegen
 
-Nach dem Wechsel in den Trainingsmodus können Sie festlegen, wo sich die Tabelle im Dokument befindet. Dafür stehen zwei Möglichkeiten zur Verfügung:
+Die Werkzeugleiste bietet eine automatische Tabellenerkennung. Prüfen Sie deren Ergebnis am Dokument, bevor Sie Spalten festlegen. Die folgende Aufnahme zeigt die verfügbaren Werkzeuge.
 
-#### Option 1: Automatische Erkennung verwenden
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_3-de.png" alt="Werkzeuge des Tabellentrainings einschließlich der automatischen Erkennung."><figcaption><p>Werkzeuge des Tabellentrainings einschließlich der automatischen Erkennung.</p></figcaption></figure>
 
-Klicken Sie auf die Schaltfläche **„Auto-Detect Tables“**, damit DocBits versucht, den Tabellenbereich selbstständig zu erkennen.
+Für eine manuelle Auswahl aktivieren Sie das Stiftsymbol und ziehen ein Rechteck um Tabellenüberschrift und Positionszeilen. Summen unterhalb der Tabelle gehören nicht in diesen Bereich.
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_3.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_4-de.png" alt="Ungespeicherter Tabellenbereich um die Positionen der fiktiven Rechnung."><figcaption><p>Ungespeicherter Tabellenbereich um die Positionen der fiktiven Rechnung.</p></figcaption></figure>
 
-Wenn die Erkennung erfolgreich ist, wird der Tabellenumriss automatisch angezeigt. Anschließend können Sie mit der Definition der Spalten fortfahren.
+## Spalten trennen und prüfen
 
-#### Option 2: Tabelle manuell definieren
+Wechseln Sie zum Werkzeug für Spalten und setzen beziehungsweise verschieben Sie die senkrechten Trenner an den Grenzen der tatsächlichen Spalten.
 
-Wenn die automatische Erkennung fehlschlägt oder ungenau ist, können Sie die Tabelle manuell definieren:
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_5-de.png" alt="Tabellenbereich im Bearbeitungsmodus mit senkrechten Spaltentrennern."><figcaption><p>Tabellenbereich im Bearbeitungsmodus mit senkrechten Spaltentrennern.</p></figcaption></figure>
 
-1. Klicken Sie auf die Schaltfläche **„Edit“**, um den Tabellenauswahlmodus zu aktivieren.
-2. Zeichnen Sie in der Dokumentansicht auf der linken Seite ein Rechteck um den Tabellenbereich.
+Prüfen Sie die Trennung für Position, Beschreibung, Menge, Einzelpreis und Betrag. Im Beispiel umfassen die Trenner die fünf Spalten der Rechnung.
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_4.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_9-de.png" alt="Tabellenbereich mit gesetzten Spaltentrennern im Trainingsentwurf."><figcaption><p>Tabellenbereich mit gesetzten Spaltentrennern im Trainingsentwurf.</p></figcaption></figure>
 
-### 4. Spalten hinzufügen und definieren
+Kontrollieren Sie den vollständigen Tabellenbereich und die Zuordnung, bevor Sie **Speichern** oder **Regeln speichern** verwenden.
 
-Sobald die Tabellen definiert sind, können Sie die Spalten über die folgende Schaltfläche manuell definieren:\
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_8-de.png" alt="Tabellenbereich mit Spaltentrennern in einem ungespeicherten Trainingsentwurf."><figcaption><p>Tabellenbereich mit Spaltentrennern in einem ungespeicherten Trainingsentwurf.</p></figcaption></figure>
 
+## Extrahierte Werte kontrollieren
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_5.png" alt="" width="563"><figcaption></figcaption></figure>
+Vergleichen Sie die extrahierten Positionen mit dem Original. Die folgende Abbildung zeigt die bereits automatisch extrahierten Zeilen der Beispielrechnung in der Validierung. Sie ist kein Ergebnis des oben gezeigten ungespeicherten Trainingsentwurfs.
 
-Definieren und sortieren Sie die Spalten per Drag-and-drop im Dokument. Wiederholen Sie dies auch für die Tabellen auf den anderen Seiten. Alternativ können Sie, wenn die Tabellen auf jeder Seite gleich aufgebaut sind, die folgende Schaltfläche verwenden, um dieselben Spalten für alle im Dokument definierten Tabellen zu übernehmen. Diese Funktion kopiert die von Ihnen definierten Spalten auch auf alle anderen Seiten:
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_10-de.png" alt="Extrahierte Positionen der fiktiven Rechnung in der deutschen Validierungsansicht."><figcaption><p>Extrahierte Positionen der fiktiven Rechnung in der deutschen Validierungsansicht.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_6.png" alt="" width="563"><figcaption></figcaption></figure>
-
-Verwenden Sie die **Zoom**-Funktion, um Spalten in unübersichtlichen oder komplexen Dokumenten besser zu definieren, zum Beispiel wenn viele Informationen dicht beieinander liegen und die Definition der Spalten dadurch erschwert wird:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_7.png" alt="" width="277"><figcaption></figcaption></figure>
-
-Wenn Sie versehentlich eine Spalte definiert haben, können Sie sie durch Anklicken auswählen und über die folgende Schaltfläche löschen:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_9.png" alt="" width="563"><figcaption></figcaption></figure>
-
-<mark style="color:red;">**Hinweis**</mark>: Die Schaltfläche ist nur sichtbar, wenn die Spalte ausgewählt ist.
-
-Wenn Sie alle Tabellen und alle Spalten in Ihrem Dokument definiert haben, klicken Sie auf die Schaltfläche „Save“, um Ihre Änderungen zu aktivieren und die Daten aus dem Dokument zu extrahieren:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_8.png" alt="" width="563"><figcaption></figcaption></figure>
-
-Die Daten aller definierten Bereiche werden extrahiert und auf der rechten Seite angezeigt:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_10.png" alt="" width="375"><figcaption></figcaption></figure>
-
-### 6. Speichern und extrahieren
-
-Klicken Sie auf **„Save Rules“**, sobald alle Tabellen und Spalten definiert sind.
-
-* Dadurch weiß DocBits, wo sich die Tabellendaten für diesen bestimmten Lieferanten befinden.
-* Wenn das nächste Mal ein Dokument desselben Lieferanten hochgeladen wird, extrahiert DocBits die Tabelle automatisch anhand der gespeicherten Regeln.
-
-<mark style="color:red;">**Hinweis**</mark>: Dieses Training gilt nur für den jeweiligen Lieferanten. Es wird nicht auf Dokumente anderer Lieferanten angewendet.
+Mit **Regeln speichern** hinterlegen Sie das beabsichtigte Training. Testen Sie gespeicherte Regeln anschließend an weiteren Dokumenten desselben Lieferanten. Ein einzelnes Beispiel belegt noch keine zuverlässige Erkennung anderer Layouts.

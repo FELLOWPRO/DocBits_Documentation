@@ -1,91 +1,18 @@
-# Neue Felder mit Gebühren
+# Neue Felder mit Zusatzkosten
 
+## Feldeinstellungen öffnen
 
-## Schritt 1: Zugriff auf die Feldeinstellungen
+Öffnen Sie **Einstellungen → Dokumenttypen**, wählen Sie den gewünschten Dokumenttyp und öffnen Sie **Felder**. Klicken Sie in der passenden Feldgruppe auf **Feld erstellen**.
 
-1. Navigieren Sie zu Felder:
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_add_field_with_charges_1-de.png" alt="Deutscher Dialog Details zum Dokumentenfeld vor dem Anlegen eines Feldes."><figcaption><p>Deutscher Dialog Details zum Dokumentenfeld vor dem Anlegen eines Feldes.</p></figcaption></figure>
 
-• Klicken Sie im Haupt-Dashboard auf die Option „Felder“ in der Seitenleiste.
+## Zusatzkosten zuordnen
 
-• Dadurch wird die Seite Feldeinstellungen geöffnet, auf der Sie Belegtypen und Erkennungseinstellungen verwalten können.
+1. Geben Sie im Dialog **Details zum Dokumentenfeld** einen technischen **Namen** und einen verständlichen **Titel** ein.
+2. Wählen Sie unter **Feldtyp auswählen** den passenden Datentyp.
+3. Aktivieren Sie **Zusatzkosten aktivieren**. Daraufhin erscheint die Auswahl **Bitte wählen Sie eine Kalkulationszuordnung**.
+4. Wählen Sie die zu Ihren Zusatzkosten passende Zuordnung. Die verfügbaren Einträge hängen von Ihrer Konfiguration ab.
 
-2. Belegtyp auswählen:
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_add_field_with_charges_2-de.png" alt="Ungespeicherter Feldentwurf mit aktivierter Option Zusatzkosten aktivieren."><figcaption><p>Ungespeicherter Feldentwurf mit aktivierter Option Zusatzkosten aktivieren.</p></figcaption></figure>
 
-• Wählen Sie im Abschnitt „BELEGTYPEN“ den spezifischen Belegtyp aus, für den Sie ein Feld hinzufügen oder ändern möchten.
-
-
-<div>
-
-<figure><img src="../../../../../.gitbook/assets/docbits_add_field_with_charges_1.png" alt="Docbits Add Field With Charges 1"><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../../../../.gitbook/assets/docbits_add_field_with_charges_2.png" alt="Docbits Add Field With Charges 2"><figcaption></figcaption></figure>
-
-</div>
-
-## Schritt 2: Ein neues Feld hinzufügen
-
-1. Den Dialog „Feld hinzufügen“ öffnen:
-
-• Klicken Sie auf die Schaltfläche „Feld erstellen“ im jeweiligen Abschnitt (z. B. Rechnungsdetails, Zahlungsdetails, Bestellung).
-
-2. Felddetails eingeben:
-
-• Ein Dialogfeld mit dem Titel „Belegfelddetails“ wird angezeigt.
-
-• Füllen Sie die erforderlichen Details aus:
-
-• Name: Geben Sie den Namen des neuen Feldes ein.
-
-• Titel: Geben Sie einen aussagekräftigen Titel für das Feld ein.
-
-• Feldtyp auswählen: Wählen Sie den entsprechenden Feldtyp aus dem Dropdown-Menü aus.
-
-3. Gebührenelement aktivieren:
-
-• Wenn dieses Feld mit einer Gebühr verknüpft ist, aktivieren Sie das Kontrollkästchen „Gebührenelement aktivieren“.
-
-4. Kostenzuordnung auswählen:
-
-• Nach dem Aktivieren der Gebühren wird ein Dropdown-Menü angezeigt.
-
-• Wählen Sie den entsprechenden Gebührentyp aus der Liste aus (z. B. ADD ON - ORIGIN, FUEL SURCHARGE, TOTAL FREIGHT).
-
-
-## Schritt 3: Das neue Feld speichern
-
-1. Einstellungen speichern:
-
-• Klicken Sie auf die Schaltfläche „SPEICHERN“, um das neue Feld mit der angegebenen Gebührenzuordnung hinzuzufügen.
-
-• Wenn Sie Änderungen vornehmen müssen, klicken Sie auf die Schaltfläche „ZURÜCK“, um zum vorherigen Bildschirm zurückzukehren.
-
-2. Felderstellung abschließen:
-
-• Nach dem Speichern wird das neue Feld in der Liste unter dem angegebenen Belegtyp angezeigt.
-
-• Stellen Sie sicher, dass die Einstellungen für OCR und Match Score für eine genaue Erkennung wie erforderlich konfiguriert sind.
-
-3. Die Einrichtung abschließen:
-
-• Sobald alle gewünschten Felder hinzugefügt und konfiguriert sind, klicken Sie auf die Schaltfläche „Einstellungen speichern“ am Ende der Seite „Feldeinstellungen“, um Ihre Änderungen zu übernehmen.
-
-
-## Zusätzliche Hinweise
-
-• Pflichtfelder:
-
-• Wenn ein Feld obligatorisch ist, aktivieren Sie das Kontrollkästchen „ERFORDERLICH“ neben dem Feldnamen.
-
-• Vorhandene Felder bearbeiten:
-
-• Um ein vorhandenes Feld zu bearbeiten, klicken Sie auf den Feldnamen, aktualisieren Sie die Details und speichern Sie die Änderungen.
-
-• Feldgruppe neu zuweisen:
-
-• Verwenden Sie die Option „Feldgruppe neu zuweisen“, um die Gruppierung von Feldern bei Bedarf zu ändern.
-
-• Stammdateneinstellungen:
-
-• Für eine erweiterte Konfiguration rufen Sie die „Stammdateneinstellungen“ auf, um die allgemeinen Feld- und Belegtypeinstellungen zu verwalten.
+Das Beispiel zeigt einen noch nicht gespeicherten Entwurf. Mit **Speichern** legen Sie das Feld an; **Zurück** führt aus dem Dialog zurück. Prüfen Sie anschließend in der Feldübersicht die Eigenschaften des neuen Feldes, beispielsweise **Erforderlich**, **OCR** und **Match Score**, und übernehmen Sie beabsichtigte Änderungen mit **Einstellungen speichern**.

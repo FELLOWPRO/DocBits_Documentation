@@ -12,7 +12,7 @@ Der `{{magic_link}}` ist ein Platzhalter, der beim Versand der E-Mail dynamisch 
 
 ### E-Mail-Vorlagen bearbeiten
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.35.53.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-bildschirmfoto-2024-08-25-um-12-35-53-de.png" alt="Deutscher Editor für eine neue Lieferanten-E-Mail-Vorlage."><figcaption><p>Deutscher Editor für eine neue Lieferanten-E-Mail-Vorlage.</p></figcaption></figure>
 
 #### Auf den E-Mail-Vorlagen-Editor zugreifen
 
@@ -78,6 +78,5 @@ Damit `{{magic_link}}` in der E-Mail als anklickbarer Link erscheint, muss er im
 Wenn Sie den \{{magic\_link\}} in Ihren E-Mail-Vorlagen korrekt definieren, stellen Sie sicher, dass Empfänger eine personalisierte und handlungsorientierte E-Mail erhalten, die sie zur passenden Aufgabe in Ihrem Lieferantenportal führt. Das verbessert die Benutzererfahrung und sorgt für ein reibungsloses Onboarding und reibungslose Kommunikationsprozesse.
 
 \
-
 
 Diese Dokumentation bietet Administratoren eine Schritt-für-Schritt-Anleitung, wie sie den \{{magic\_link\}} in E-Mail-Vorlagen definieren und verwenden, damit die E-Mails sowohl funktionsfähig als auch optisch ansprechend sind.

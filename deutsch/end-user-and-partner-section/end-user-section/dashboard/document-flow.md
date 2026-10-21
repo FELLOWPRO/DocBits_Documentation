@@ -1,27 +1,34 @@
-# Document Flow
+# Dokumentenfluss
 
-Der **Document Flow** zeigt die Verarbeitungsschritte eines Dokuments. Damit sehen Sie, welche Schritte abgeschlossen sind, welcher Schritt wartet und wie lange die Verarbeitung gedauert hat. Das folgende Beispiel verwendet eine synthetische Rechnung in der englischen Sandbox.
+Der **Dokumentenfluss** zeigt die Verarbeitungsschritte eines Dokuments. Die nummerierten Karten machen Reihenfolge, Zustand und Laufzeit sichtbar. Das Beispiel verwendet eine fiktive Rechnung.
 
-## Über das Dashboard öffnen
+## Dokument finden und Dokumentenfluss öffnen
 
-Suchen Sie auf dem **Dashboard** das Dokument. Wählen Sie in der Spalte **Actions** die drei Punkte und dann **Document flow**. Die Option öffnet den Flow für dieses Dokument; das Dokument selbst wird nicht verändert.
+Suchen Sie das Dokument zunächst im Dashboard. Die folgende Aufnahme zeigt die Suche nach dem Beispieldokument; Dokumentwerte in der Tabelle sind ausgeblendet.
 
-<figure><img src="../../../.gitbook/assets/document-flow-dashboard-menu-en.png" alt="Englisches Dashboard mit geöffnetem Actions-Menü für eine synthetische Rechnung; Document flow steht unterhalb von Assign to."><figcaption>Wählen Sie Document flow im Actions-Menü des Dokuments.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-document-flow-dashboard-menu-de.png" alt="Synthetisches Beispieldokument im deutschen Dashboard finden; Dokumentwerte sind ausgeblendet."><figcaption><p>Synthetisches Beispieldokument im deutschen Dashboard finden; Dokumentwerte sind ausgeblendet.</p></figcaption></figure>
 
-## Über die Field Validation öffnen
+Öffnen Sie das Dokument und wählen Sie in der **Feldvalidierung** das Drei-Punkte-Menü der rechten Aktionsleiste. Klicken Sie auf **Dokumentenfluss**.
 
-Öffnen Sie das Dokument. Wählen Sie in der **Field Validation** in der rechten Aktionsleiste die drei Punkte und dann unter **More options** den Eintrag **Document Flow**.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-validation-menu-de.png" alt="Menü Weitere Optionen in der deutschen Feldvalidierung mit dem Eintrag Dokumentenfluss."><figcaption><p>Menü Weitere Optionen in der deutschen Feldvalidierung mit dem Eintrag Dokumentenfluss.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/document-flow-validation-menu-en.png" alt="Englische Field-Validation-Ansicht mit dem Menü More options und dem Eintrag Document Flow neben einer synthetischen Rechnung."><figcaption>Derselbe Flow ist auch in der Dokumentansicht verfügbar.</figcaption></figure>
+## Prozesskarten lesen
 
-## Den Flow lesen
+Jede Karte steht für einen Verarbeitungsschritt, etwa **Importiert**, **OCR**, **Klassifizierung** oder **Feldextraktion**. Folgen Sie den Nummern und scrollen Sie zu den späteren Schritten.
 
-Die **Process Statistics** links fassen die Anzahl der Schritte, abgeschlossene und wartende Schritte, Neustarts, die Gesamtzeit, den aktuellen Status und den Gesamtfortschritt zusammen. Jede nummerierte Karte zeigt einen Verarbeitungsschritt und seinen aktuellen Zustand. Scrollen Sie nach unten, um spätere Schritte zu sehen.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-overview-de.png" alt="Prozesskarten im Dokumentenfluss einer fiktiven Rechnung; technische Statuscodes bleiben unverändert."><figcaption><p>Prozesskarten im Dokumentenfluss einer fiktiven Rechnung; technische Statuscodes bleiben unverändert.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/document-flow-overview-en.png" alt="Englischer Document Flow mit Process Statistics links und den ersten nummerierten Schrittkarten: Imported, Document Imported und OCR."><figcaption>Die ersten Schritte des Flows einer synthetischen Rechnung.</figcaption></figure>
+Technische Bezeichnungen und Statuscodes wie `DOCUMENT_IMPORTED` oder `COMPLETE` werden unverändert angezeigt. `COMPLETE` kennzeichnet einen abgeschlossenen Schritt.
 
-<figure><img src="../../../.gitbook/assets/document-flow-later-steps-en.png" alt="Englischer Document Flow nach dem Herunterscrollen; spätere Karten sind Classification, Field Extraction, Table Extraction, Transformer, Metadata Populator, Lookup Data und Validator."><figcaption>Scrollen Sie, um der Abfolge durch die späteren Schritte zu folgen.</figcaption></figure>
+## Details eines Schritts
 
-Wählen Sie eine Schrittkarte aus, um links die **Step Details** zu öffnen. Sie zeigen das Modul und seinen Status. Rechts kann sich zusätzlich ein Bereich **Task Logs** öffnen; die Protokolldetails hängen davon ab, was für diese Aufgabe verfügbar ist. Wählen Sie **×** in den Step Details, um den Bereich zu schließen.
+Wählen Sie eine Prozesskarte, um die zugehörigen Details und gegebenenfalls Protokolle anzuzeigen. Einzelne Detailbereiche sind im Produkt derzeit noch englisch beschriftet. Die folgende Übersicht erklärt ihre Inhalte:
 
-<figure><img src="../../../.gitbook/assets/document-flow-step-details-en.png" alt="Englischer Document Flow mit ausgewählter OCR-Karte; die Step Details unter Process Statistics zeigen Module OCR und Status Completed."><figcaption>Die Step Details erklären den Status des ausgewählten Moduls.</figcaption></figure>
+| Angabe | Bedeutung |
+| --- | --- |
+| Modul | Verarbeitungskomponente des ausgewählten Schritts |
+| Status | Aktueller Zustand dieses Schritts |
+| Dauer | Für den Schritt erfasste Laufzeit |
+| Protokolle | Verfügbare technische Meldungen zur Aufgabe |
+
+Prüfen Sie bei einem wartenden oder fehlgeschlagenen Schritt die zugehörigen Meldungen, bevor Sie eine Verarbeitung erneut starten.

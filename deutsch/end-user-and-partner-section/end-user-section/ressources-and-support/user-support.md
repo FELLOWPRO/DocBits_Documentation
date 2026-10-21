@@ -20,9 +20,8 @@ Im Validierungsbildschirm können Sie direkt Tickets für das jeweilige Dokument
 
 <figure><img src="../../../.gitbook/assets/user-support3.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/user-support4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-user-support4-de.png" alt="Deutsches Supportformular vor dem Absenden."><figcaption><p>Deutsches Supportformular vor dem Absenden.</p></figcaption></figure>
 
 {% embed url="https://www.youtube.com/watch?v=zkpFu8Q1Z-A" %}
 
 <figure><img src="../../../.gitbook/assets/image%20(28).png" alt=""><figcaption></figcaption></figure>
-

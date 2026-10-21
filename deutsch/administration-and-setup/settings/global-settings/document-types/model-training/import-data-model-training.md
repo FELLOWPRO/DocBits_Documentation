@@ -39,7 +39,7 @@ Es ist wichtig, das spezifische Format zu beachten, um Missverständnisse zu ver
 
 * **Auswählen der Beispielbelege:** Wählen Sie die Beispielbelege aus, die Sie importieren möchten. Dies kann durch Hochladen der Dateien von Ihrem lokalen Computer oder durch Auswahl von Belegen von einem bereits verbundenen Speicherort erfolgen.
 
-<figure><img src="../../../../../.gitbook/assets/image (85) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-image-85-1-de.png" alt="Deutscher Importdialog für das Modelltraining mit Betrags- und Datumsformat."><figcaption><p>Deutscher Importdialog für das Modelltraining mit Betrags- und Datumsformat.</p></figcaption></figure>
 
 * **Konfigurieren der Belegtypen und Untertypen (falls erforderlich):** Wenn Ihr System verschiedene Belegtypen oder Untertypen unterstützt, weisen Sie jedem importierten Beleg den entsprechenden Typ zu. Dies hilft dem System, die Belege korrekt zu kategorisieren und zu verarbeiten.
 * **Starten des Importvorgangs:** Bestätigen Sie die Auswahl der Belege und starten Sie den Importvorgang. Je nach Größe und Anzahl der Belege kann dieser Vorgang einige Zeit in Anspruch nehmen.

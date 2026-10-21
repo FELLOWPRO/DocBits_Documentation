@@ -19,7 +19,7 @@ Gehen Sie zu **Einstellungen → Dokumentverarbeitung → Import** und öffnen S
 
 Der Einrichtungsassistent öffnet sich. Das erste Feld, **Protokoll**, bestimmt, wie DocBits sich verbindet — wählen Sie **IMAP**, **OAuth Office365** oder **OAuth Office365 – Tenant**.
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_protocol_select.png" alt="Protokoll-Auswahl mit IMAP, OAuth Office365 und OAuth Office365 - Tenant"><figcaption><p>Die Auswahl <strong>Protokoll</strong> bietet die drei Verbindungsarten.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-inbound_emails_protocol_select-de.png" alt="Protokollauswahl im deutschen Assistenten für eingehende E-Mails."><figcaption><p>Protokollauswahl im deutschen Assistenten für eingehende E-Mails.</p></figcaption></figure>
 
 #### IMAP
 

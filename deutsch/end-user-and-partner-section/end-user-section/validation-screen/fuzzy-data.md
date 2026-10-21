@@ -21,8 +21,7 @@ Mit Fuzzy-Data-Feldern (unscharfe Daten) können Benutzer verwandte Felder anhan
 1. **Eine Bestellung auswählen**
    *   Ein Klick auf das **blaue Symbol** neben dem Feld Purchase Order öffnet ein **Auswahlfenster**.
 
-
-       <figure><img src="../../../.gitbook/assets/fuzzy_data_selection_window.png" alt="Auswahlfenster für Fuzzy Data"><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/s150-fuzzy_data_selection_window-de.png" alt="Auswahldialog für einen Stammdatenabgleich; Datensätze sind ausgeblendet."><figcaption><p>Auswahldialog für einen Stammdatenabgleich; Datensätze sind ausgeblendet.</p></figcaption></figure>
    * Dieses Fenster enthält eine Tabelle mit allen Bestellungen aus der **Stammdaten-Nachschlagetabelle**.
    * Wenn Sie die Option **„Display all columns“** aktivieren, werden zusätzliche Details angezeigt.
    * Wählen Sie eine **Bestellung** aus und klicken Sie auf **Proceed**:
@@ -53,7 +52,5 @@ Mit Fuzzy-Data-Feldern (unscharfe Daten) können Benutzer verwandte Felder anhan
 {% content-ref url="../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md" %}
 [fuzzy-data-configuration-with-list-of-values.md](../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md)
 {% endcontent-ref %}
-
-
 
 {% embed url="https://www.youtube.com/watch?v=vT5HuGjAYV0" %}

@@ -33,7 +33,7 @@
 
 * Wenn Sie ein bestehendes Skript bearbeiten müssen, suchen Sie in der Skriptverwaltungsoberfläche nach der Schaltfläche zum Bearbeiten des Skripts.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_edit_script_icon.png" alt="Docbits Edit Script Icon" width="123"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_edit_script_icon-de.png" alt="Deutsche Skriptverwaltung mit der Aktion zum Bearbeiten; Skriptnamen sind ausgeblendet."><figcaption><p>Deutsche Skriptverwaltung mit der Aktion zum Bearbeiten; Skriptnamen sind ausgeblendet.</p></figcaption></figure>
 
 * Klicken Sie darauf, um den Editor zu öffnen, in dem Sie den Code des Skripts ändern können.
 * Nachdem Sie Ihre Änderungen vorgenommen haben, speichern Sie das Skript erneut.

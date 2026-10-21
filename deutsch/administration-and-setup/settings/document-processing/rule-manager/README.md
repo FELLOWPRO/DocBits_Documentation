@@ -1,6 +1,6 @@
 # Regelverwaltung
 
-<figure><img src="../../../../.gitbook/assets/rule_management.png" alt="Regelverwaltung"><figcaption><p>Seite „Regelverwaltung“</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_management-de.png" alt="Deutsche Regelverwaltung für den Bestellabgleich und Export."><figcaption><p>Deutsche Regelverwaltung für den Bestellabgleich und Export.</p></figcaption></figure>
 
 Mit der Regelverwaltung (Rule Management) erstellen und verwalten Sie TOML-basierte Regeln zur Konfliktlösung, die beim PO Matching und beim Dokumentenexport verwendet werden. Jedes Regelwerk legt fest, wie DocBits mit Abweichungen zwischen Rechnungsdaten und Bestelldaten umgeht.
 
@@ -90,7 +90,6 @@ Diese Operatoren legen fest, wie die tatsächlichen Rechnungswerte mit den erwar
 
 • outside tolerance
 
-
 ### Genehmigungsstatus
 
 Gibt an, ob eine Abweichung genehmigt ist oder nicht:
@@ -100,7 +99,6 @@ Gibt an, ob eine Abweichung genehmigt ist oder nicht:
 • rejected
 
 • any
-
 
 ### Aktionstypen
 
@@ -134,7 +132,6 @@ Legt fest, welche Aktionen bei einer erkannten Abweichung ausgeführt werden:
 
 • credit note tax line
 
-
 ### Regelbeispiele
 
 #### [Fall 1, 2, 3: Menge und Einzelpreis innerhalb der Toleranz](transactionconfig-pro-template/case-1-2-3-quantity-and-unit-price-within-tolerance.md)
@@ -143,22 +140,17 @@ Legt fest, welche Aktionen bei einer erkannten Abweichung ausgeführt werden:
 
 • Aktion: Das System übernimmt die Rechnungswerte und berechnet den Gesamtbetrag.
 
-
-
 #### [Fall 4, 5: Menge innerhalb der Toleranz, Einzelpreis außerhalb der Toleranz (genehmigt)](./#fall-4-5-menge-innerhalb-der-toleranz-einzelpreis-ausserhalb-der-toleranz-genehmigt)
 
 • Zweck: Gilt, wenn die Menge innerhalb der Toleranz liegt, der Einzelpreis aber außerhalb der Toleranz liegt und genehmigt wurde.
 
 • Aktion: Das System passt den Einzelpreis an die Bestellung an und wendet alle erforderlichen Positionskosten an.
 
-
-
 #### [Fall 6: Menge innerhalb der Toleranz, Einzelpreis außerhalb der negativen Toleranz (abgelehnt)](transactionconfig-pro-template/case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
 
 • Zweck: Behandelt Fälle, in denen der Einzelpreis niedriger als erwartet ist und außerhalb des Toleranzbereichs liegt, was zur Ablehnung führt.
 
 • Aktion: Das System passt den Einzelpreis an die Bestellung an, erstellt eine Gutschrift über die Differenz und wendet bei Bedarf Kopfkosten an.
-
 
 ### Umgang mit Kosten und Steuern
 
@@ -180,7 +172,7 @@ Legt fest, welche Aktionen bei einer erkannten Abweichung ausgeführt werden:
 
 ### Screenshot 1: Oberfläche der Regelverwaltung
 
-<figure><img src="../../../../.gitbook/assets/rule_management_interface.png" alt="Oberfläche der Regelverwaltung"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_management_interface-de.png" alt="Übersicht der Regelwerke und ihrer Aktionen."><figcaption><p>Übersicht der Regelwerke und ihrer Aktionen.</p></figcaption></figure>
 
 Dieser Screenshot zeigt die Oberfläche der Regelverwaltung, in der Administratoren alle Regeln zur Konfliktlösung einsehen und verwalten können. Zu den wichtigsten Elementen gehören:
 
@@ -192,7 +184,7 @@ Dieser Screenshot zeigt die Oberfläche der Regelverwaltung, in der Administrato
 
 ### Screenshot 2: Detaillierte Regelbearbeitung
 
-<figure><img src="../../../../.gitbook/assets/rule_detailed_editing.png" alt="Detaillierte Regelbearbeitung"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_detailed_editing-de.png" alt="Deutscher Editor eines TOML-basierten Regelwerks."><figcaption><p>Deutscher Editor eines TOML-basierten Regelwerks.</p></figcaption></figure>
 
 Dieser Screenshot zeigt die Detailansicht einer Regel, die gerade bearbeitet wird. Zu den wichtigsten Elementen gehören:
 

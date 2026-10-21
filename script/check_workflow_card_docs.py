@@ -57,6 +57,24 @@ def front_matter(text: str) -> str | None:
     return json.dumps(technical, sort_keys=True, ensure_ascii=False)
 
 
+def navigated_card_path(folder: str, reference: str, navigation: set[str]) -> str | None:
+    """Resolve both canonical and flat language-branch paths from SUMMARY."""
+    workflow = 'administration-and-setup/workflow/'
+    candidates = [workflow + 'cards-overview/' + reference]
+    candidates.append(workflow + ('cards-overview.md' if reference == 'README.md' else reference))
+    direct = next((folder + '/' + path for path in candidates if path in navigation), None)
+    if direct is not None:
+        return direct
+    # Older language branches keep the cross-category guides in a related
+    # category folder. Their SUMMARY nesting still gives them a cards URL.
+    if '/' not in reference and reference.endswith('-guide.md'):
+        matches = [path for path in navigation if path.startswith(workflow)
+                   and path.endswith('/' + reference)]
+        if len(matches) == 1:
+            return folder + '/' + matches[0]
+    return None
+
+
 def check(repo: Path, locales: list[str]) -> list[str]:
     tracked = set(subprocess.check_output(['git', 'ls-tree', '-r', '--name-only', 'HEAD'], cwd=repo, text=True).splitlines())
     present = {p.relative_to(repo).as_posix() for folder in ROOTS.values()
@@ -66,19 +84,23 @@ def check(repo: Path, locales: list[str]) -> list[str]:
     english = repo / 'docbits/administration-and-setup/workflow/cards-overview'
     expected = {p.relative_to(english).as_posix() for p in english.rglob('*.md')}
     for lang in locales:
-        base = repo / ROOTS[lang] / 'administration-and-setup/workflow/cards-overview'
-        actual = {p.relative_to(base).as_posix() for p in base.rglob('*.md')}
-        for missing in sorted(expected - actual):
-            errors.append(f'{lang}: missing card reference {missing}')
         summary = (repo / ROOTS[lang] / 'SUMMARY.md').read_text()
+        navigation = {unquote(p) for p in re.findall(r'\]\(([^)]+\.md)\)', summary)}
+        resolved = {reference: navigated_card_path(ROOTS[lang], reference, navigation)
+                    for reference in expected}
+        actual = {reference: repo / path for reference, path in resolved.items()
+                  if path is not None and (repo / path).is_file()}
+        for missing in sorted(expected - actual.keys()):
+            errors.append(f'{lang}: missing navigated card reference {missing}')
         for guide in NEW_GUIDES:
             if f'workflow/cards-overview/{guide})' not in summary:
                 errors.append(f'{lang}: new guide is absent from SUMMARY: {guide}')
-        pages = sorted(base.rglob('*.md'))
+        pages = sorted(actual.values())
+        sources = {page: english / reference for reference, page in actual.items()}
         for page in pages:
             rel = page.relative_to(repo).as_posix()
             text = page.read_text()
-            source = english / page.relative_to(base)
+            source = sources[page]
             expected_metadata = front_matter(source.read_text()) if source.exists() else None
             actual_metadata = front_matter(text)
             if actual_metadata in {"UNCLOSED", "INVALID"}:
@@ -103,7 +125,7 @@ def check(repo: Path, locales: list[str]) -> list[str]:
                 dest = lexical(page.parent.relative_to(repo) / target)
                 if dest not in existing and dest + '/README.md' not in existing and dest + '.md' not in existing:
                     errors.append(f'{rel}: missing link target {target}')
-        print(f'{lang}: {len(pages)} card-reference pages; {len(expected - actual)} missing')
+        print(f'{lang}: {len(pages)} card-reference pages; {len(expected - actual.keys())} missing')
     return errors
 
 

@@ -1,5 +1,7 @@
 # Card versions and availability
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-4636f0bfbcc3-en.png" alt="Card fields in the displayed version. The placeholders are not configured." width="563"><figcaption><p>Card fields in the displayed version. The placeholders are not configured.</p></figcaption></figure>
+
 A card in a saved workflow retains its card ID and version. A newer template can add fields or change behavior without changing every previously saved workflow. Check the version on the actual card before applying instructions for a newer version.
 
 ## Before changing a saved card

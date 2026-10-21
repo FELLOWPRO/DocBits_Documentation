@@ -1,5 +1,7 @@
 # PO comparisons: direction, tolerance and card versions
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-72e8f3204ac8-en.png" alt="Available cards in the selected category. Configure the placeholders before use."><figcaption><p>Available cards in the selected category. Configure the placeholders before use.</p></figcaption></figure>
+
 PO comparison cards compare a chosen side against a reference side. The reference determines the base for a percentage tolerance. First complete purchase-order matching, then select the comparison, operator, Any/All and tolerance requested by the specific card.
 
 ## Comparison directions

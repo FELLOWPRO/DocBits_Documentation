@@ -666,7 +666,7 @@
         * [Assigned User Condition](administration-and-setup/workflow/cards-overview/and/assignee/assigned-user-condition.md)
         * [Single Assigned User Condition](administration-and-setup/workflow/cards-overview/and/assignee/single-assigned-user-condition.md)
         * [Assigned Group Condition](administration-and-setup/workflow/cards-overview/and/assignee/assigned-group-condition.md)
-        * [Single Assigned User Condition](administration-and-setup/workflow/cards-overview/and/assignee/single-assigned-user-condition-1.md)
+        * [Single Assigned Group Condition](administration-and-setup/workflow/cards-overview/and/assignee/single-assigned-user-condition-1.md)
     * [Then](administration-and-setup/workflow/cards-overview/then/README.md)
       * [Document Field](administration-and-setup/workflow/cards-overview/then/document-field/README.md)
         * [Set to](administration-and-setup/workflow/cards-overview/then/document-field/set-to.md)

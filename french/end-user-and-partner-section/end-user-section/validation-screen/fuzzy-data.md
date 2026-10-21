@@ -12,8 +12,8 @@ Les champs de données floues (Fuzzy Data) permettent aux utilisateurs de rensei
 
 * Ils renseignent des champs associés en fonction de leur valeur ou de la saisie.
 * Les trois champs standard utilisant les données floues sont :
-  * **Purchase Order**
-  * **Supplier**
+  * **Bon de commande**
+  * **Fournisseur**
   * **Vendor ID**
 
 #### **Utiliser les champs de données floues**
@@ -21,21 +21,20 @@ Les champs de données floues (Fuzzy Data) permettent aux utilisateurs de rensei
 1. **Sélectionner une commande d'achat**
    *   Cliquer sur l'**icône bleue** à côté du champ Purchase Order ouvre une **fenêtre de sélection**.
 
-
-       <figure><img src="../../../.gitbook/assets/fuzzy_data_selection_window.png" alt="Fenêtre de sélection des données floues"><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/s150-fuzzy_data_selection_window-fr.png" alt="Dialogue de recherche de données de base ; les enregistrements sont masqués."><figcaption><p>Dialogue de recherche de données de base ; les enregistrements sont masqués.</p></figcaption></figure>
    * Cette fenêtre contient un tableau avec toutes les commandes d'achat de la **table de consultation des données maîtres**.
    * L'activation de l'option **"Display all columns"** affiche des détails supplémentaires.
-   * Sélectionnez une **commande d'achat** et cliquez sur **Proceed** :
+   * Sélectionnez une **commande d'achat** et cliquez sur **Continuer** :
      * Si le système trouve une commande d'achat dans le document, il filtre automatiquement dessus.
      * Si aucune correspondance n'est trouvée, vous pouvez **créer des filtres personnalisés** pour trouver la bonne commande d'achat.
      * Plusieurs filtres peuvent être ajoutés ; l'activation de **"Match all filters"** garantit que toutes les conditions doivent être remplies.
      * Options de filtre disponibles :
        * **Smart**
-       * **Contains**
-       * **Exact**
-       * **Starts with**
-       * **Ends with**
-   * Un bouton à côté de **Proceed** permet de **créer une nouvelle tâche/notification**.
+       * **Contient**
+       * **exact**
+       * **Commence par**
+       * **Se termine par**
+   * Un bouton à côté de **Continuer** permet de **créer une nouvelle tâche/notification**.
 2. **Sélectionner un fournisseur ou un Vendor ID**
    * Le processus est le même que pour les commandes d'achat.
    * La différence est que les champs **Supplier et Vendor ID utilisent la table des données maîtres fournisseurs** au lieu de la table des données maîtres d'en-tête de commande d'achat.
@@ -53,7 +52,5 @@ Les champs de données floues (Fuzzy Data) permettent aux utilisateurs de rensei
 {% content-ref url="../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md" %}
 [fuzzy-data-configuration-with-list-of-values.md](../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md)
 {% endcontent-ref %}
-
-
 
 {% embed url="https://www.youtube.com/watch?v=vT5HuGjAYV0" %}

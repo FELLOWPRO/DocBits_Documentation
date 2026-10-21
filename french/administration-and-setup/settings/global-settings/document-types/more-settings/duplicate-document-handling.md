@@ -18,7 +18,7 @@ Pour activer la détection des documents en double dans **DocBits**, suivez ces 
     ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_2.png)
 3.  Allez à la section **Détection des doublons**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_3.png)
+<figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_3-fr.png" alt="Paramètres de détection des documents en double."><figcaption><p>Paramètres de détection des documents en double.</p></figcaption></figure>
 
 DocBits fournit deux options pour identifier les documents en double :
 
@@ -36,7 +36,8 @@ Une fois la **Détection des doublons** activée, deux menus déroulants seront 
 *   **Champs de détection des doublons**\
     Sélectionnez les champs qui doivent être utilisés pour identifier les doublons (par exemple, Identification du fournisseur, Date, Numéro de facture, etc.). Les documents correspondant à ces champs seront signalés comme des doublons.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_4.png)
+<figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_4-fr.png" alt="Champs disponibles pour la détection des doublons."><figcaption><p>Champs disponibles pour la détection des doublons.</p></figcaption></figure>
+
 *   **Intervalle de détection des doublons**
 
     Utilisez ce paramètre pour définir la plage de temps dans laquelle les doublons sont détectés. Les documents téléchargés dans l'intervalle sélectionné seront comparés les uns aux autres en fonction des champs sélectionnés.
@@ -59,7 +60,8 @@ Une fois la **Détection des doublons** activée, tous les documents identifiés
 *   Cliquez sur cette icône pour ouvrir les enregistrements correspondants dans une vue en écran partagé pour une comparaison facile.\
     <mark style="color:red;">**Remarque**</mark> : L'icône n'apparaîtra que si au moins un doublon a été détecté pour le document.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_7.png)
 *   Lors de la visualisation d'un document signalé, une barre d'avertissement apparaîtra en haut, indiquant que le document est un doublon.
 
     ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_5.png)
+
+Pour examiner des doublons possibles, comparez numéro de facture, fournisseur, date et montant. Utilisez l’avertissement et les détails des documents pour décider des corrections nécessaires.

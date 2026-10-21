@@ -14,7 +14,7 @@ Une fois le paramètre activé, un nouveau **bouton code-barres** (une icône QR
 
 Voici l'icône en contexte sur l'écran de validation, à côté du document en cours d'examen :
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_validation_screen.png" alt="Écran de validation avec l'icône code-barres disponible"><figcaption><p>L'écran de validation — l'icône code-barres (en surbrillance, barre d'outils de droite) n'est affichée que lorsque l'Affectation par code-barres est activée.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_validation_screen-fr.png" alt="Validation d’une facture fictive avec code-barres et code QR."><figcaption><p>Validation d’une facture fictive avec code-barres et code QR.</p></figcaption></figure>
 
 ### Comment les codes-barres sont lus
 
@@ -32,15 +32,15 @@ Les types de codes-barres détectés sont déterminés par le paramètre **Bar-C
 2. Cliquez sur l'**icône code-barres** dans la barre d'outils de droite.
 3. La boîte de dialogue **Affectation par code-barres** liste chaque code-barres détecté par DocBits dans le document, sous la forme `Barcode <n> : <valeur>`.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_dialog.png" alt="Boîte de dialogue d'Affectation par code-barres listant les codes détectés"><figcaption><p>La boîte de dialogue d'Affectation par code-barres liste chaque code détecté avec une liste déroulante pour choisir le champ cible.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_dialog-fr.png" alt="Association des codes-barres extraits aux champs du document."><figcaption><p>Association des codes-barres extraits aux champs du document.</p></figcaption></figure>
 
 4. Pour chaque code-barres, ouvrez sa liste déroulante et choisissez le champ dans lequel la valeur doit aller.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_options.png" alt="Choix du champ cible pour un code-barres"><figcaption><p>Chaque code-barres peut être affecté à n'importe quel champ du document — p. ex. Numéro de commande, Numéro de facture, ID fournisseur.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_field_options-fr.png" alt="Champs disponibles dans le dialogue d’association des codes-barres."><figcaption><p>Champs disponibles dans le dialogue d’association des codes-barres.</p></figcaption></figure>
 
 5. Dès que vous sélectionnez un champ, celui-ci est renseigné avec la valeur du code-barres.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_mapped.png" alt="Code-barres affecté au champ Numéro de commande"><figcaption><p>Après la sélection d'un champ (ici Numéro de commande), le champ est renseigné avec la valeur du code-barres.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_field_mapped-fr.png" alt="Association non enregistrée au champ de commande."><figcaption><p>Association non enregistrée au champ de commande.</p></figcaption></figure>
 
 ### Comment l'activer
 

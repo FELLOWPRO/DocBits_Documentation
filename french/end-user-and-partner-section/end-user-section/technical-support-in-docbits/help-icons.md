@@ -4,4 +4,4 @@ Des icônes d'aide ont été placées tout autour de DocBits afin de vous aider 
 
 Ces icônes d'aide ressemblent à ceci
 
-<figure><img src="../../../.gitbook/assets/help-icon.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-help-icon-fr.png" alt="Icône d’aide en haut à droite des paramètres."><figcaption><p>Icône d’aide en haut à droite des paramètres.</p></figcaption></figure>

@@ -3,24 +3,22 @@ hidden: true
 noIndex: true
 ---
 
-# FTP
+# Import FTP et SFTP
 
-Si vous souhaitez intégrer votre SFTP avec DocBits afin d'importer des documents.
+L’import automatique nécessite les paramètres de connexion approuvés et un dossier accessible au compte du serveur.
 
-Exigences
+## Créer une connexion
 
-* Serveur SFTP correctement configuré et compatible avec Linux
-* Nom d'hôte SFTP, nom d'utilisateur et mot de passe
-* Dossier d'importation dédié
+Ouvrez les paramètres d’import et créez une nouvelle connexion dans la section FTP.
 
-**Configuration de l'importation**
+<figure><img src="../../../.gitbook/assets/s150-ftp1-fr.png" alt="Vue d’ensemble des connexions FTP avec les données de connexion masquées."><figcaption><p>Vue d’ensemble des connexions FTP avec les données de connexion masquées.</p></figcaption></figure>
 
-Depuis le tableau de bord, ouvrez les Paramètres et accédez à Importation. Sous Importation FTP, sélectionnez pour ajouter une nouvelle configuration.
+L’assistant commence par la configuration du serveur. Choisissez le protocole, le serveur, le port et les identifiants prévus. Utilisez les valeurs fournies par l’administrateur du serveur.
 
-<figure><img src="../../../.gitbook/assets/ftp1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-ftp_import_configuration_form-fr.png" alt="Première étape de l’assistant d’import FTP : configuration du serveur."><figcaption><p>Première étape de l’assistant d’import FTP : configuration du serveur.</p></figcaption></figure>
 
-Saisissez les informations d'identification SFTP dans les espaces prévus et sélectionnez Enregistrer (le champ Clé API sera automatiquement rempli avec la clé API de l'environnement sur lequel vous travaillez).
+Passez aux options et à la configuration. Vérifiez toute la connexion avant de l’enregistrer.
 
-![](https://lh7-us.googleusercontent.com/m11trSpnDmv9aco98vPG6xuIhYxngp6TauG7lDYEWB2VguNmX0ypXMi3Fc4Ey6V4Iy_YwOy4Zooh3rj_WoAQ3PQgVIjw5vqToOuq_lIxN7IqPE2fv1puzsnEO96y5mn5FHjFtC1wYrEf9sxjHk1GL2I)
+## Archivage des fichiers
 
-Une fois que vous avez saisi tous les détails nécessaires de votre SFTP, cliquez sur ENREGISTRER.
+Si la connexion propose l’archivage, configurez-le dans les options d’import. Vérifiez que le compte peut écrire dans le dossier d’archive et testez le comportement avec un fichier d’exemple. L’ancien formulaire d’archivage séparé est remplacé par l’assistant actuel.

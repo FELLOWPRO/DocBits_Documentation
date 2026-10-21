@@ -1,6 +1,6 @@
 # Modification des modèles d'e-mails
 
-<figure><img src="../../../.gitbook/assets/supplier_email_templates.png" alt="Modèles d'e-mails des fournisseurs"><figcaption><p>Page des modèles d'e-mails des fournisseurs</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t013-fr.png" alt="Liste des modèles de courriel fournisseur."><figcaption><p>Liste des modèles de courriel fournisseur.</p></figcaption></figure>
 
 ### Aperçu
 
@@ -12,12 +12,12 @@ Le `{{magic_link}}` est un espace réservé qui est remplacé dynamiquement par 
 
 ### Modification des modèles d'e-mails
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.35.53.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-bildschirmfoto-2024-08-25-um-12-35-53-fr.png" alt="Éditeur d’un nouveau modèle de courriel fournisseur."><figcaption><p>Éditeur d’un nouveau modèle de courriel fournisseur.</p></figcaption></figure>
 
 #### Accès à l'éditeur de modèles d'e-mails
 
 1. **Accédez à Email Templates** :
-   * Allez dans la section **Email Templates** depuis le menu principal.
+   * Allez dans la section **Modèles d'e-mails** depuis le menu principal.
 2. **Sélectionnez un modèle à modifier** :
    * Choisissez le modèle d'e-mail que vous souhaitez modifier en cliquant sur son nom (par exemple « Supplier Invitation Email »).
 3. **Modifiez le modèle** :
@@ -78,6 +78,5 @@ Pour définir `{{magic_link}}` comme lien cliquable dans l'e-mail, vous devez vo
 En définissant correctement le \{{magic\_link\}} dans vos modèles d'e-mails, vous vous assurez que les destinataires reçoivent un e-mail personnalisé et exploitable qui les guide vers la tâche appropriée dans votre portail fournisseur. Cela améliore l'expérience utilisateur et garantit des processus d'intégration et de communication fluides.
 
 \
-
 
 Cette documentation fournit aux administrateurs des instructions pas à pas pour définir et utiliser le \{{magic\_link\}} dans les modèles d'e-mails, afin que les e-mails soient à la fois fonctionnels et visuellement attrayants.

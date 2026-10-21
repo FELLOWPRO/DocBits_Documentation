@@ -1,27 +1,36 @@
-# Flux De Documents
+# Flux du document
 
-Le **Flux De Documents** affiche les étapes de traitement d'un document. Utilisez-le pour voir quelles étapes sont terminées, laquelle est en attente et combien de temps le traitement a duré. L'exemple ci-dessous utilise une facture synthétique dans la Sandbox en anglais.
+Le flux du document montre l’ordre, le statut et la durée des étapes de traitement. L’exemple utilise une facture fictive.
 
-## Ouvrir depuis le tableau de bord
+## Ouvrir le flux
 
-Sur le **Tableau de bord**, repérez le document. Dans sa colonne **Actions**, sélectionnez les trois points, puis **Flux De Documents**. Cette option ouvre le flux du document ; elle ne modifie pas le document.
+Recherchez le document dans le tableau de bord. Les valeurs des documents sont masquées.
 
-<figure><img src="../../../.gitbook/assets/document-flow-dashboard-menu-en.png" alt="Tableau de bord en anglais avec le menu Actions ouvert pour une facture synthétique ; Document flow figure sous Assign to."><figcaption>Choisissez Flux De Documents dans le menu Actions du document.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-document-flow-dashboard-menu-fr.png" alt="Recherche du document fictif dans le tableau de bord ; les valeurs sont masquées."><figcaption><p>Recherche du document fictif dans le tableau de bord ; les valeurs sont masquées.</p></figcaption></figure>
 
-## Ouvrir depuis la Validation Des Champs
+Ouvrez la validation des champs, puis le menu d’options de la barre droite pour consulter le flux du document.
 
-Ouvrez le document. Dans la **Validation Des Champs**, sélectionnez les trois points dans la barre d'actions de droite, puis **Flux De Documents** sous **Plus d'options**.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-validation-menu-fr.png" alt="Menu d’options de validation permettant d’ouvrir le flux du document."><figcaption><p>Menu d’options de validation permettant d’ouvrir le flux du document.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/document-flow-validation-menu-en.png" alt="Écran de validation des champs en anglais montrant le menu More options et son élément Document Flow à côté d'une facture synthétique."><figcaption>Le même flux est disponible depuis la vue du document.</figcaption></figure>
+## Lire les étapes
 
-## Lire le flux
+Chaque carte représente une étape, comme l’import, l’OCR, la classification ou l’extraction des champs. Suivez leur numérotation.
 
-Les **Statistiques du processus** à gauche résument le nombre d'étapes, les étapes terminées et en attente, les redémarrages, la durée totale, le statut actuel et la progression globale. Chaque carte numérotée présente une étape de traitement et son état actuel. Faites défiler vers le bas pour voir les étapes suivantes.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-overview-fr.png" alt="Étapes de traitement d’une facture fictive ; les codes techniques restent inchangés."><figcaption><p>Étapes de traitement d’une facture fictive ; les codes techniques restent inchangés.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/document-flow-overview-en.png" alt="Flux de documents en anglais montrant les Process Statistics à gauche et les premières cartes d'étapes numérotées : Imported, Document Imported et OCR."><figcaption>Les premières étapes du flux d'une facture synthétique.</figcaption></figure>
+Les identifiants techniques comme `DOCUMENT_IMPORTED` et `COMPLETE` restent inchangés. `COMPLETE` indique une étape terminée.
 
-<figure><img src="../../../.gitbook/assets/document-flow-later-steps-en.png" alt="Flux de documents en anglais après défilement vers le bas ; les cartes suivantes comprennent Classification, Field Extraction, Table Extraction, Transformer, Metadata Populator, Lookup Data et Validator."><figcaption>Faites défiler pour suivre la séquence à travers les étapes suivantes.</figcaption></figure>
+## Consulter les détails
 
-Sélectionnez une carte d'étape pour ouvrir les **Détails de l'étape** à gauche. Ils affichent le module et son statut. Un panneau **Journaux de tâche** peut également s'ouvrir à droite ; les détails du journal dépendent de ce qui est disponible pour cette tâche. Sélectionnez **×** dans les Détails de l'étape pour fermer le panneau.
+Sélectionnez une carte pour consulter ses détails et journaux disponibles.
 
-<figure><img src="../../../.gitbook/assets/document-flow-step-details-en.png" alt="Flux de documents en anglais avec la carte OCR sélectionnée ; les Step Details sous Process Statistics affichent Module OCR et Status Completed."><figcaption>Les Détails de l'étape expliquent le statut du module sélectionné.</figcaption></figure>
+| Détail | Signification |
+| --- | --- |
+| Module | Composant de traitement de l’étape |
+| Statut | État actuel de cette étape |
+| Durée | Temps de traitement enregistré |
+| Journaux | Messages techniques disponibles |
+
+Examinez les messages d’une étape en attente ou en échec avant de relancer le traitement. Certains titres de diagnostic peuvent rester en anglais dans le produit.
+
+Les détails de chaque étape présentent le composant de traitement, le statut, la durée et les journaux techniques disponibles.

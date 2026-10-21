@@ -41,7 +41,7 @@ DocBits convertit vos mises en page existantes basées sur l'origine en règles 
 * La mise en page de l'origine **DEFAULT** devient la **mise en page par défaut** (le repli).
 * Chaque mise en page d'une origine spécifique devient une règle **« Layout for XX »** avec la condition *L'origine du document est XX*, qui renvoie à cette mise en page. Ces règles reçoivent des priorités par pas de 10 (par exemple 2000, 2010, 2020 …), afin que vous puissiez placer vos propres règles avant, entre ou après elles.
 
-<figure><img src="../../../../../.gitbook/assets/layout-selection-default-row.png" alt="Les règles d'origine créées à l'activation et la mise en page par défaut"><figcaption><p>Les règles d'origine créées à l'activation, suivies de la mise en page par défaut (FALLBACK)</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-default-row-fr.png" alt="Mise en page de repli en fin de liste des règles de sélection."><figcaption><p>Mise en page de repli en fin de liste des règles de sélection.</p></figcaption></figure>
 
 Rien n'est supprimé ni modifié dans les mises en page elles-mêmes. Juste après l'activation, chaque document obtient donc exactement la mise en page qu'il obtenait auparavant. Le comportement ne change que lorsque vous ajoutez ou modifiez des règles.
 
@@ -49,7 +49,7 @@ Rien n'est supprimé ni modifié dans les mises en page elles-mêmes. Juste apr�
 
 ## L'écran Mises en page et règles de sélection
 
-<figure><img src="../../../../../.gitbook/assets/layouts-overview.png" alt="L'onglet Mises en page"><figcaption><p>L'onglet Mises en page : chaque mise en page du type de document sous forme de carte</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layouts-overview-fr.png" alt="Vue d’ensemble des mises en page et règles de sélection."><figcaption><p>Vue d’ensemble des mises en page et règles de sélection.</p></figcaption></figure>
 
 * **Mises en page / Règles de sélection** (en haut à droite) permettent de basculer entre la liste des mises en page et la liste des règles. Les nombres indiquent combien il y en a.
 * **Validation des champs / Approbation / Rejet / Révision** changent d'**écran**. Chaque écran a ses propres mises en page, ses propres règles et sa propre mise en page par défaut — une règle d'approbation ne modifie jamais l'écran de validation.
@@ -97,7 +97,7 @@ La mise en page est toujours choisie à partir des valeurs **actuelles** du docu
 
 ## Gérer les règles de sélection
 
-<figure><img src="../../../../../.gitbook/assets/layout-selection-rules-list.png" alt="L'onglet Règles de sélection"><figcaption><p>L'onglet Règles de sélection de l'écran Validation des champs</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-rules-list-fr.png" alt="Règles de sélection avec les noms configurés masqués."><figcaption><p>Règles de sélection avec les noms configurés masqués.</p></figcaption></figure>
 
 Chaque ligne affiche la **priorité** (la première ligne est marquée **FIRST**), le **nom et la clé de la règle** avec ses **conditions**, la **mise en page cible**, le badge de **source** et un interrupteur **Actif**.
 
@@ -114,7 +114,7 @@ Le badge de **source** indique l'origine d'une règle : les règles **Système**
 
 ### La mise en page par défaut
 
-La dernière ligne, marquée **FALLBACK** et **is_default**, est la mise en page par défaut : elle est utilisée chaque fois qu'aucune règle ci-dessus ne correspond et n'a pas de condition. Elle est créée lorsque vous activez la fonction (à partir de la mise en page de l'origine DEFAULT).
+La dernière ligne, marquée **RETOMBER** et **est_par_défaut**, est la mise en page par défaut : elle est utilisée chaque fois qu'aucune règle ci-dessus ne correspond et n'a pas de condition. Elle est créée lorsque vous activez la fonction (à partir de la mise en page de l'origine DEFAULT).
 
 {% hint style="info" %}
 Pour utiliser une autre mise en page de repli, créez une règle **sans aucune condition** et donnez-lui le numéro de priorité le plus élevé, afin qu'elle soit vérifiée en dernier. Elle correspond à tous les documents qu'aucune règle précédente n'a retenus, avant que la mise en page par défaut ne soit atteinte.
@@ -124,7 +124,7 @@ Pour utiliser une autre mise en page de repli, créez une règle **sans aucune c
 
 Cliquez sur **Nouvelle règle** dans l'onglet Règles de sélection de l'écran que vous souhaitez modifier.
 
-<figure><img src="../../../../../.gitbook/assets/layout-rule-editor.png" alt="L'éditeur de règle de sélection de mise en page"><figcaption><p>L'éditeur de règle : phrase récapitulative en haut, trois étapes à gauche, aperçu en direct à droite</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor-fr.png" alt="Portée, conditions et mise en page cible de la règle."><figcaption><p>Portée, conditions et mise en page cible de la règle.</p></figcaption></figure>
 
 La phrase en haut résume la règle au fur et à mesure de sa construction — « When header.supplier_id = HP0000278, an INVOICE document gets the Field Validation Layout (Base) layout for Field validation. Checked at priority 5 — the first matching rule wins. »
 
@@ -159,11 +159,11 @@ Le panneau de droite montre ce que fait la règle pour un exemple de document do
 
 | Ligne | Signification |
 | --- | --- |
-| **Sample document** | Les valeurs utilisées pour l'aperçu, tirées de vos conditions |
-| **matched_by** | `rule` si une règle a correspondu, sinon la mise en page par défaut |
-| **Resolved layout** | La mise en page que l'exemple de document obtiendrait |
-| **Priority hit** | La priorité de la règle qui a correspondu |
-| **watched_fields** | Les champs dont dépend le choix de la mise en page. Lorsqu'un utilisateur en modifie un, la mise en page est choisie de nouveau. |
+| **Exemple de document** | Les valeurs utilisées pour l'aperçu, tirées de vos conditions |
+| **correspondant_par** | `rule` si une règle a correspondu, sinon la mise en page par défaut |
+| **Mise en page résolue** | La mise en page que l'exemple de document obtiendrait |
+| **Coup prioritaire** | La priorité de la règle qui a correspondu |
+| **champs surveillés** | Les champs dont dépend le choix de la mise en page. Lorsqu'un utilisateur en modifie un, la mise en page est choisie de nouveau. |
 
 Cliquez sur **Créer la règle** (ou **Enregistrer la règle** lors d'une modification) pour enregistrer. **Annuler** ramène à la liste des règles.
 
@@ -175,7 +175,7 @@ Cliquez sur **Créer la règle** (ou **Enregistrer la règle** lors d'une modifi
 
 ### Une mise en page pour plusieurs pays
 
-Écran **Validation des champs** · priorité **100** · **ANY** : *L'origine du document est Deutsch*, *L'origine du document est Austria*, *L'origine du document est Switzerland* · cible *Facture DACH*. Désactivez les règles migrées « Layout for AT » et « Layout for CH » si elles renvoient à des copies plus anciennes.
+Écran **Validation des champs** · priorité **100** · **N'IMPORTE LEQUEL** : *L'origine du document est Deutsch*, *L'origine du document est Austria*, *L'origine du document est Switzerland* · cible *Facture DACH*. Désactivez les règles migrées « Layout for AT » et « Layout for CH » si elles renvoient à des copies plus anciennes.
 
 ### Un écran plus simple pour les factures électroniques
 
@@ -189,7 +189,7 @@ Cliquez sur **Créer la règle** (ou **Enregistrer la règle** lors d'une modifi
 
 Écran **Approbation** · priorité **5** · *Le statut du document est Pending second approval* · cible *Second Approval Layout*. Les documents en première étape d'approbation ne correspondent pas et obtiennent la mise en page par défaut d'Approbation.
 
-<figure><img src="../../../../../.gitbook/assets/layout-rule-approval-status.png" alt="Une règle d'approbation sur le statut du document"><figcaption><p>Une règle d'approbation pour la seconde étape d'approbation ; l'aperçu résout la mise en page Second Approval Layout</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-approval-status-fr.png" alt="Brouillon non enregistré d’une règle de sélection de mise en page."><figcaption><p>Brouillon non enregistré d’une règle de sélection de mise en page.</p></figcaption></figure>
 
 ### Un écran de rejet spécial pour certains fournisseurs
 
@@ -208,9 +208,9 @@ Cliquez sur **Créer la règle** (ou **Enregistrer la règle** lors d'une modifi
 
 | Symptôme | Ce qu'il faut vérifier |
 | --- | --- |
-| Un document obtient la mauvaise mise en page | Une règle précédente correspond en premier. Examinez les règles au-dessus, ou le **Priority hit** dans l'aperçu. |
-| La mise en page par défaut est utilisée alors qu'une règle devrait correspondre | La règle est-elle **Active** ? La condition correspond-elle exactement à la valeur (casse, espaces) ? La règle est-elle sur le bon onglet d'**écran** ? |
-| La mise en page change pendant le travail d'un utilisateur | Un champ de **watched_fields** a été modifié. Basez la règle sur un champ plus stable. |
+| Un document obtient la mauvaise mise en page | Une règle précédente correspond en premier. Examinez les règles au-dessus, ou le **Coup prioritaire** dans l'aperçu. |
+| La mise en page par défaut est utilisée alors qu'une règle devrait correspondre | La règle est-elle **Actif** ? La condition correspond-elle exactement à la valeur (casse, espaces) ? La règle est-elle sur le bon onglet d'**écran** ? |
+| La mise en page change pendant le travail d'un utilisateur | Un champ de **champs surveillés** a été modifié. Basez la règle sur un champ plus stable. |
 | Une mise en page ne peut pas être supprimée | Une règle y renvoie encore. Redirigez ou supprimez d'abord cette règle. |
 | Aucune mise en page n'est affichée | Aucune règle n'a correspondu, il n'y a pas de mise en page par défaut et aucune mise en page basée sur l'origine n'existe pour cet écran. Ajoutez une règle sans condition comme règle fourre-tout. |
 | Rien n'a changé après l'activation | C'est normal : l'activation reproduit le choix précédent basé sur l'origine. Ajoutez vos propres règles. |

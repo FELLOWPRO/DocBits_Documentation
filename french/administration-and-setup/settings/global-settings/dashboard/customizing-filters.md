@@ -30,7 +30,7 @@ L'utilisation des filtres permet aux utilisateurs de trouver rapidement des info
 
 * Ouvrez le menu des filtres dans les paramètres sous Tableau de bord et cliquez sur "Filtres".
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_3.png)
+<figure><img src="../../../../.gitbook/assets/prior-u015-fr.png" alt="Style du filtre de statut et filtre personnalisé du tableau de bord."><figcaption><p>Style du filtre de statut et filtre personnalisé du tableau de bord.</p></figcaption></figure>
 
 * Sélectionnez le champ à filtrer (par exemple, Statut).
 

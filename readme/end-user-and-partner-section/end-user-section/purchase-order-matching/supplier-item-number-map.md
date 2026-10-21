@@ -4,12 +4,11 @@
 
 Questa funzionalità ti aiuta a gestire e riconciliare i numeri degli articoli tra il tuo sistema e i tuoi fornitori. Spesso, i numeri degli articoli che usi internamente potrebbero non corrispondere ai numeri degli articoli utilizzati dai tuoi fornitori. Docbits semplifica la gestione di queste discrepanze creando una mappatura tra i tuoi numeri di articolo e quelli dei tuoi fornitori.
 
-<figure><img src="../../../.gitbook/assets/supplier-item-number-map.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-supplier-item-number-map-it.png" alt="Associazione dei codici articolo del fornitore."><figcaption><p>Associazione dei codici articolo del fornitore.</p></figcaption></figure>
 
 ## **Come Funziona**
 
 {% embed url="https://youtu.be/agxk8WQhtJA" %}
-
 
 1. **Corrispondenza Manuale:**
    * La prima volta che incontri una discrepanza tra il tuo numero di articolo e il numero di articolo del tuo fornitore, devi abbinarli manualmente.

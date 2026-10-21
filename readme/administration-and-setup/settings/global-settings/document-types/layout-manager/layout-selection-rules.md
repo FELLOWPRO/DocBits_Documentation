@@ -28,11 +28,11 @@ I layout basati su regole vengono attivati **per tipo di documento** da un **amm
 
 1. Andare su **Impostazioni → Impostazioni globali → Tipi di documento**.
 2. Fare clic sull'icona **impostazioni** (ingranaggio) sulla scheda del tipo di documento.
-3. Aprire **Manage Layouts** e attivare l'interruttore.
+3. Aprire **Gestisci i layout** e attivare l'interruttore.
 
 <figure><img src="../../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="L'interruttore Manage Layouts"><figcaption><p>L'interruttore Manage Layouts nelle impostazioni aggiuntive di un tipo di documento</p></figcaption></figure>
 
-Il collegamento **Layouts** sulla scheda del tipo di documento ora apre **Layouts & Selection Rules**.
+Il collegamento **Layout** sulla scheda del tipo di documento ora apre **Layout e regole di selezione**.
 
 ### Cosa succede quando si attiva
 
@@ -41,7 +41,7 @@ DocBits converte i layout esistenti basati sull'origine in regole — una sola v
 * Il layout dell'origine **DEFAULT** diventa il **layout predefinito** (il fallback).
 * Ogni layout di un'origine specifica diventa una regola **"Layout for XX"** con la condizione *Document Origin is XX*, che punta a quel layout. Queste regole ricevono priorità a passi di 10 (ad esempio 2000, 2010, 2020 …), così è possibile collocare le proprie regole prima, in mezzo o dopo di esse.
 
-<figure><img src="../../../../../.gitbook/assets/layout-selection-default-row.png" alt="Regole di origine create all'attivazione e layout predefinito"><figcaption><p>Le regole di origine create all'attivazione, seguite dal layout predefinito (FALLBACK)</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-default-row-it.png" alt="Layout di riserva alla fine dell’elenco delle regole di selezione. Il nome della schermata Field validation resta in inglese nel prodotto. L’etichetta RICADERCI indica il layout di riserva (fallback)."><figcaption><p>Layout di riserva alla fine dell’elenco delle regole di selezione. Il nome della schermata Field validation resta in inglese nel prodotto. L’etichetta RICADERCI indica il layout di riserva (fallback).</p></figcaption></figure>
 
 Nei layout stessi non viene eliminato né modificato nulla. Subito dopo l'attivazione ogni documento riceve quindi esattamente il layout che riceveva prima. Il comportamento cambia solo quando si aggiungono o si modificano delle regole.
 
@@ -49,14 +49,14 @@ Nei layout stessi non viene eliminato né modificato nulla. Subito dopo l'attiva
 
 ## La schermata Layouts & Selection Rules
 
-<figure><img src="../../../../../.gitbook/assets/layouts-overview.png" alt="La scheda Layouts"><figcaption><p>La scheda Layouts: ogni layout del tipo di documento come scheda</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layouts-overview-it.png" alt="Panoramica dei layout e delle regole di selezione. Il nome della schermata Field validation resta in inglese nel prodotto."><figcaption><p>Panoramica dei layout e delle regole di selezione. Il nome della schermata Field validation resta in inglese nel prodotto.</p></figcaption></figure>
 
 * **Layouts / Selection rules** (in alto a destra) consentono di passare dall'elenco dei layout all'elenco delle regole. I numeri indicano quanti ce ne sono.
 * **Field Validation / Approval / Reject / Review** cambiano la **schermata**. Ogni schermata ha i propri layout, le proprie regole e il proprio layout predefinito — una regola di approvazione non modifica mai la schermata di convalida.
-* Nella scheda **Layouts** è possibile creare, modificare, clonare ed eliminare layout. Ogni scheda indica se una regola utilizza il layout ("Not targeted by rules" se nessuna lo fa). Filtrare con **All / My layouts / System**; i layout di sistema sono forniti con DocBits e possono essere visualizzati e clonati, ma non modificati.
+* Nella scheda **Layout** è possibile creare, modificare, clonare ed eliminare layout. Ogni scheda indica se una regola utilizza il layout ("Not targeted by rules" se nessuna lo fa). Filtrare con **All / My layouts / System**; i layout di sistema sono forniti con DocBits e possono essere visualizzati e clonati, ma non modificati.
 
 {% hint style="info" %}
-La prima e la seconda approvazione condividono i layout e le regole **Approval**. Per assegnare alla seconda fase di approvazione una schermata propria, aggiungere una regola di approvazione con la condizione *Document Status is Pending second approval* — vedere l'[esempio](#schermate-diverse-per-la-prima-e-la-seconda-approvazione).
+La prima e la seconda approvazione condividono i layout e le regole **Approvazione**. Per assegnare alla seconda fase di approvazione una schermata propria, aggiungere una regola di approvazione con la condizione *Document Status is Pending second approval* — vedere l'[esempio](#schermate-diverse-per-la-prima-e-la-seconda-approvazione).
 {% endhint %}
 
 ## Come viene scelto un layout
@@ -71,11 +71,11 @@ Le regole il cui layout è stato eliminato o è vuoto vengono saltate.
 
 ### Un esempio pratico
 
-Regole della schermata **Field Validation**:
+Regole della schermata **Convalida del campo**:
 
 | Priorità | Regola | Condizione | Layout |
 | --- | --- | --- | --- |
-| 5 | Fatture Behaelterbau | *Supplier ID is HP0000278* | Fattura con campi progetto |
+| 5 | Fatture del fornitore di esempio | *Supplier ID is HP0000278* | Fattura con campi progetto |
 | 10 | Fatture elettroniche | *Extraction Method is ELECTRONIC_DOCUMENT* | Fattura elettronica |
 | 2020 | Layout for DE | *Document Origin is DE* | Field Validation Layout (DE) |
 | — | Layout predefinito | — | Field Validation Layout (Base) |
@@ -97,24 +97,24 @@ Il layout viene sempre scelto in base ai valori **correnti** del documento. Se u
 
 ## Gestire le regole di selezione
 
-<figure><img src="../../../../../.gitbook/assets/layout-selection-rules-list.png" alt="La scheda Selection rules"><figcaption><p>La scheda Selection rules della schermata Field Validation</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-rules-list-it.png" alt="Regole di selezione con i nomi configurati nascosti. Il nome della schermata Field validation resta in inglese nel prodotto."><figcaption><p>Regole di selezione con i nomi configurati nascosti. Il nome della schermata Field validation resta in inglese nel prodotto.</p></figcaption></figure>
 
-Ogni riga mostra la **priorità** (la prima riga è contrassegnata da **FIRST**), il **nome e la chiave della regola** con le sue **condizioni**, il **layout di destinazione**, il badge dell'**origine** e un interruttore **Active**.
+Ogni riga mostra la **priorità** (la prima riga è contrassegnata da **FIRST**), il **nome e la chiave della regola** con le sue **condizioni**, il **layout di destinazione**, il badge dell'**origine** e un interruttore **Attivo**.
 
 | Attività | Come |
 | --- | --- |
-| Creare una regola | **New rule** |
+| Creare una regola | **Nuova regola** |
 | Modificare una regola | Fare clic sulla riga |
 | Cambiare l'ordine | Trascinare la maniglia a sinistra della riga verso l'alto o verso il basso. Il nuovo ordine viene salvato subito. |
-| Disattivare una regola | Interruttore **Active**. Le regole inattive vengono ignorate. |
+| Disattivare una regola | Interruttore **Attivo**. Le regole inattive vengono ignorate. |
 | Duplicare o eliminare | Menu **⋮** della riga |
 | Cercare una regola | **Search rules…** |
 
-Il badge dell'**origine** indica da dove proviene una regola: le regole **System** sono fornite con DocBits. Modificarne una crea una copia per la propria organizzazione, mostrata come **Customized**; l'originale resta intatta e può essere ripristinata. Le regole create dall'utente sono **Custom**.
+Il badge dell'**origine** indica da dove proviene una regola: le regole **Sistema** sono fornite con DocBits. Modificarne una crea una copia per la propria organizzazione, mostrata come **Personalizzato**; l'originale resta intatta e può essere ripristinata. Le regole create dall'utente sono **Personalizzato**.
 
 ### Il layout predefinito
 
-L'ultima riga, contrassegnata da **FALLBACK** e **is_default**, è il layout predefinito: viene utilizzata ogni volta che nessuna regola sopra corrisponde e non ha condizioni. Viene creata quando si attiva la funzione (a partire dal layout dell'origine DEFAULT).
+L'ultima riga, contrassegnata da **RICADERCI** e **is_default**, è il layout predefinito: viene utilizzata ogni volta che nessuna regola sopra corrisponde e non ha condizioni. Viene creata quando si attiva la funzione (a partire dal layout dell'origine DEFAULT).
 
 {% hint style="info" %}
 Per usare un altro layout di fallback, creare una regola **senza alcuna condizione** e assegnarle il numero di priorità più alto, in modo che venga verificata per ultima. Corrisponde a ogni documento a cui non corrisponde nessuna regola precedente, prima di arrivare al layout predefinito.
@@ -122,9 +122,9 @@ Per usare un altro layout di fallback, creare una regola **senza alcuna condizio
 
 ## Creare una regola
 
-Fare clic su **New rule** nella scheda Selection rules della schermata che si desidera modificare.
+Fare clic su **Nuova regola** nella scheda Selection rules della schermata che si desidera modificare.
 
-<figure><img src="../../../../../.gitbook/assets/layout-rule-editor.png" alt="L'editor delle regole di selezione del layout"><figcaption><p>L'editor delle regole: frase riassuntiva in alto, tre passaggi a sinistra, anteprima in tempo reale a destra</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor-it.png" alt="Ambito, condizioni e layout di destinazione della regola. Il nome della schermata Field validation resta in inglese nel prodotto."><figcaption><p>Ambito, condizioni e layout di destinazione della regola. Il nome della schermata Field validation resta in inglese nel prodotto.</p></figcaption></figure>
 
 La frase in alto riassume la regola man mano che viene costruita — "When header.supplier_id = HP0000278, an INVOICE document gets the Field Validation Layout (Base) layout for Field validation. Checked at priority 5 — the first matching rule wins."
 
@@ -132,10 +132,10 @@ La frase in alto riassume la regola man mano che viene costruita — "When heade
 
 | Impostazione | Cosa fa |
 | --- | --- |
-| **Rule Name** | Mostrato nell'elenco delle regole. Descrivere il caso aziendale: "Fatture Behaelterbau", "Fatture elettroniche", "Approvazione importi elevati". |
-| **Rule key** | Generata dal nome; resta invariata se si rinomina la regola. |
-| **Document Type** / **Layout type** | Il tipo di documento e la schermata a cui si riferisce la regola. Ricavati dal punto in cui si è fatto clic su **New rule**. |
-| **Priority** | I numeri più bassi vengono verificati per primi. Lasciare degli intervalli (5, 10, 20 …) per poter inserire regole in seguito. |
+| **Nome della regola** | Mostrato nell'elenco delle regole. Descrivere il caso aziendale: "Fatture del fornitore di esempio", "Fatture elettroniche", "Approvazione importi elevati". |
+| **Chiave della regola** | Generata dal nome; resta invariata se si rinomina la regola. |
+| **Tipo di documento** / **Tipo di layout** | Il tipo di documento e la schermata a cui si riferisce la regola. Ricavati dal punto in cui si è fatto clic su **Nuova regola**. |
+| **Priorità** | I numeri più bassi vengono verificati per primi. Lasciare degli intervalli (5, 10, 20 …) per poter inserire regole in seguito. |
 
 ### Passaggio 2 — Applies when
 
@@ -159,41 +159,41 @@ Il pannello a destra mostra cosa fa la regola per un documento di esempio che ha
 
 | Riga | Significato |
 | --- | --- |
-| **Sample document** | I valori utilizzati per l'anteprima, ricavati dalle condizioni |
+| **Documento di esempio** | I valori utilizzati per l'anteprima, ricavati dalle condizioni |
 | **matched_by** | `rule` se ha corrisposto una regola, altrimenti il layout predefinito |
-| **Resolved layout** | Il layout che riceverebbe il documento di esempio |
-| **Priority hit** | La priorità della regola che ha corrisposto |
+| **Layout risolto** | Il layout che riceverebbe il documento di esempio |
+| **Priorità della regola corrispondente** | La priorità della regola che ha corrisposto |
 | **watched_fields** | I campi da cui dipende la scelta del layout. Quando un utente ne modifica uno, il layout viene scelto di nuovo. |
 
-Fare clic su **Create Rule** (o **Save rule** in modifica) per salvare. **Cancel** riporta all'elenco delle regole.
+Fare clic su **Crea regola** (o **Salva la regola** in modifica) per salvare. **Annullamento** riporta all'elenco delle regole.
 
 ## Esempi
 
 ### Campi aggiuntivi per un fornitore
 
-Schermata **Field Validation** · priorità **5** · *Supplier ID is HP0000278* · destinazione *Fattura con campi progetto* (un clone del layout standard con i campi aggiuntivi progetto e centro di costo).
+Schermata **Convalida del campo** · priorità **5** · *Supplier ID is HP0000278* · destinazione *Fattura con campi progetto* (un clone del layout standard con i campi aggiuntivi progetto e centro di costo).
 
 ### Un layout per più paesi
 
-Schermata **Field Validation** · priorità **100** · **ANY of**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · destinazione *Fattura DACH*. Disattivare le regole migrate "Layout for AT" e "Layout for CH" se puntano a copie più vecchie.
+Schermata **Convalida del campo** · priorità **100** · **ANY of**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · destinazione *Fattura DACH*. Disattivare le regole migrate "Layout for AT" e "Layout for CH" se puntano a copie più vecchie.
 
 ### Una schermata più semplice per le fatture elettroniche
 
-Schermata **Field Validation** · priorità **10** · *Extraction Method is ELECTRONIC_DOCUMENT* · destinazione *Fattura elettronica* (senza i campi legati all'OCR).
+Schermata **Convalida del campo** · priorità **10** · *Extraction Method is ELECTRONIC_DOCUMENT* · destinazione *Fattura elettronica* (senza i campi legati all'OCR).
 
 ### Una schermata di approvazione più rigorosa per importi elevati
 
-Schermata **Approval** · priorità **10** · *Total Amount greater than 10000* · destinazione *Approvazione importi elevati* (con centro di costo, responsabile del budget e numero di contratto).
+Schermata **Approvazione** · priorità **10** · *Total Amount greater than 10000* · destinazione *Approvazione importi elevati* (con centro di costo, responsabile del budget e numero di contratto).
 
 ### Schermate diverse per la prima e la seconda approvazione
 
-Schermata **Approval** · priorità **5** · *Document Status is Pending second approval* · destinazione *Second Approval Layout*. I documenti nella prima fase di approvazione non corrispondono e ricevono il layout predefinito di Approval.
+Schermata **Approvazione** · priorità **5** · *Document Status is Pending second approval* · destinazione *Second Approval Layout*. I documenti nella prima fase di approvazione non corrispondono e ricevono il layout predefinito di Approval.
 
-<figure><img src="../../../../../.gitbook/assets/layout-rule-approval-status.png" alt="Una regola di approvazione basata sullo stato del documento"><figcaption><p>Una regola di approvazione per la seconda fase di approvazione; l'anteprima risolve il Second Approval Layout</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-approval-status-it.png" alt="Bozza non salvata di una regola di selezione del layout. Il nome della schermata Field validation resta in inglese nel prodotto."><figcaption><p>Bozza non salvata di una regola di selezione del layout. Il nome della schermata Field validation resta in inglese nel prodotto.</p></figcaption></figure>
 
 ### Una schermata di rifiuto speciale per alcuni fornitori
 
-Schermata **Reject** · priorità **10** · *Supplier ID is one of* `10040, 10041` · destinazione *Rifiuto con codici motivo*.
+Schermata **Rifiuta** · priorità **10** · *Supplier ID is one of* `10040, 10041` · destinazione *Rifiuto con codici motivo*.
 
 ## Best practice
 
@@ -208,8 +208,8 @@ Schermata **Reject** · priorità **10** · *Supplier ID is one of* `10040, 1004
 
 | Sintomo | Cosa controllare |
 | --- | --- |
-| Un documento riceve il layout sbagliato | Corrisponde prima una regola precedente. Esaminare le regole sopra di essa, oppure il **Priority hit** nell'anteprima. |
-| Viene usato il layout predefinito anche se una regola dovrebbe corrispondere | La regola è **Active**? La condizione corrisponde al valore esatto (maiuscole/minuscole, spazi)? La regola si trova nella scheda della **schermata** giusta? |
+| Un documento riceve il layout sbagliato | Corrisponde prima una regola precedente. Esaminare le regole sopra di essa, oppure il **Priorità della regola corrispondente** nell'anteprima. |
+| Viene usato il layout predefinito anche se una regola dovrebbe corrispondere | La regola è **Attivo**? La condizione corrisponde al valore esatto (maiuscole/minuscole, spazi)? La regola si trova nella scheda della **schermata** giusta? |
 | Il layout cambia mentre un utente lavora | È stato modificato un campo in **watched_fields**. Basare la regola su un campo più stabile. |
 | Un layout non può essere eliminato | Una regola punta ancora ad esso. Cambiare prima la destinazione di quella regola o eliminarla. |
 | Non viene mostrato alcun layout | Nessuna regola ha corrisposto, non esiste un layout predefinito e per questa schermata non esiste un layout basato sull'origine. Aggiungere una regola senza condizione come catch-all. |

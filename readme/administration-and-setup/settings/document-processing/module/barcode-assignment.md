@@ -14,7 +14,7 @@ Una volta attivata l'impostazione, un nuovo **pulsante codice a barre** (un'icon
 
 Ecco l'icona nel suo contesto, sulla schermata di validazione, accanto al documento in esame:
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_validation_screen.png" alt="Schermata di validazione con l'icona codice a barre disponibile"><figcaption><p>La schermata di validazione — l'icona codice a barre (evidenziata, barra degli strumenti di destra) è mostrata solo quando l'Assegnazione tramite codice a barre è attivata.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_validation_screen-it.png" alt="Convalida di una fattura fittizia con codice a barre e codice QR."><figcaption><p>Convalida di una fattura fittizia con codice a barre e codice QR.</p></figcaption></figure>
 
 ### Come vengono letti i codici a barre
 
@@ -32,15 +32,15 @@ Quali tipi di codici a barre vengono rilevati è determinato dall'impostazione *
 2. Fai clic sull'**icona codice a barre** nella barra degli strumenti di destra.
 3. La finestra di dialogo **Assegnazione tramite codice a barre** elenca ogni codice a barre rilevato da DocBits nel documento, mostrato come `Barcode <n> : <valore>`.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_dialog.png" alt="Finestra di dialogo di Assegnazione tramite codice a barre con i codici rilevati"><figcaption><p>La finestra di dialogo di Assegnazione tramite codice a barre elenca ogni codice rilevato con un menu a discesa per scegliere il campo di destinazione.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_dialog-it.png" alt="Associazione dei codici a barre estratti ai campi del documento."><figcaption><p>Associazione dei codici a barre estratti ai campi del documento.</p></figcaption></figure>
 
 4. Per ogni codice a barre, apri il suo menu a discesa e scegli il campo in cui deve andare il valore.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_options.png" alt="Scelta del campo di destinazione per un codice a barre"><figcaption><p>Ogni codice a barre può essere assegnato a un qualsiasi campo del documento — es. Numero d'ordine, Numero di fattura, ID fornitore.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_field_options-it.png" alt="Campi disponibili nella finestra di associazione dei codici a barre."><figcaption><p>Campi disponibili nella finestra di associazione dei codici a barre.</p></figcaption></figure>
 
 5. Non appena selezioni un campo, questo viene compilato con il valore del codice a barre.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_mapped.png" alt="Codice a barre assegnato al campo Numero d'ordine"><figcaption><p>Dopo aver selezionato un campo (qui Numero d'ordine), il campo viene compilato con il valore del codice a barre.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_field_mapped-it.png" alt="Associazione non salvata al campo dell’ordine di acquisto."><figcaption><p>Associazione non salvata al campo dell’ordine di acquisto.</p></figcaption></figure>
 
 ### Come attivarla
 

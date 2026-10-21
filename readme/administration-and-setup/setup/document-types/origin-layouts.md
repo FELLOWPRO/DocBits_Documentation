@@ -6,7 +6,7 @@ Impostazione Origin di DocBits spiegata: Standard nazionali per formati di data 
 
 DocBits eccelle nell'adattare i layout dei documenti in base alle loro origini geografiche, standardizzando al contempo elementi come i formati di valuta in base alle impostazioni del browser dell'utente. Esploriamo come puoi sfruttare il Layout Builder per personalizzare i layout per diverse origini, come gli Stati Uniti e la Germania.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_1.png)
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_1-it.png" alt="Generatore di layout con i comandi in italiano."><figcaption><p>Generatore di layout con i comandi in italiano.</p></figcaption></figure>
 
 ## **Comprendere la personalizzazione basata sull'origine**
 
@@ -36,10 +36,10 @@ DocBits eccelle nell'adattare i layout dei documenti in base alle loro origini g
 
 Quando desideri applicare il layout predefinito a più origini, premi **Applica il layout predefinito alle origini**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_3.png)
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_3-it.png" alt="Selezione dell’origine; i nomi delle origini configurate restano invariati."><figcaption><p>Selezione dell’origine; i nomi delle origini configurate restano invariati.</p></figcaption></figure>
 
 Apparirà un popup dove puoi selezionare le origini a cui desideri applicare il layout predefinito. Puoi usare **Seleziona tutto** o **Deseleziona tutto** per gestire rapidamente la tua selezione. Il popup mostra il numero di origini attualmente selezionate.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_4.png)
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_4-it.png" alt="Finestra per applicare il layout predefinito alle origini."><figcaption><p>Finestra per applicare il layout predefinito alle origini.</p></figcaption></figure>
 
 Dopo aver effettuato la selezione, fai clic su **Applica alle origini**. Un messaggio di successo confermerà che le origini sono state aggiornate.

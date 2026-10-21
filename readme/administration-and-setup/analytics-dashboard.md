@@ -40,25 +40,25 @@ Scegli la prospettiva giusta per la tua analisi. Ogni tipo di flusso ti offre un
 
 Usa l'interruttore **Tipo di flusso** in cima alla dashboard per passare da una prospettiva all'altra.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_types.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_types-it.png" alt="Viste di elaborazione, interazioni degli utenti e stati."><figcaption><p>Viste di elaborazione, interazioni degli utenti e stati.</p></figcaption></figure>
 
 ### Flusso di stato
 
 Tiene traccia del percorso del documento da **Nuovo** a **Esportato** — utile per l'analisi del ciclo di vita end-to-end.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_status_flow.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_status_flow-it.png" alt="Vista degli stati nell’analisi."><figcaption><p>Vista degli stati nell’analisi.</p></figcaption></figure>
 
 ### Flusso di elaborazione
 
 Analizza le prestazioni di tutti i **moduli tecnici di elaborazione** (OCR, classificazione, estrazione, convalida) — utile per identificare i colli di bottiglia lato sistema.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_processing_flow.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_processing_flow-it.png" alt="Vista del processo e delle sue fasi aggregate."><figcaption><p>Vista del processo e delle sue fasi aggregate.</p></figcaption></figure>
 
 ### Flusso di interazione dell'utente
 
 Si concentra sui **punti di contatto umani** — tempo di attesa in coda, convalida manuale, revisione e approvazione — utile per identificare i colli di bottiglia di flusso di lavoro e di personale.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_user_interaction_flow.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_user_interaction_flow-it.png" alt="Vista delle interazioni degli utenti con le fasi aggregate."><figcaption><p>Vista delle interazioni degli utenti con le fasi aggregate.</p></figcaption></figure>
 
 ## Opzioni di filtro
 
@@ -68,13 +68,13 @@ La dashboard supporta un potente filtraggio multidimensionale. Tutti i grafici, 
 
 Individua immediatamente qualsiasi documento tramite **nome** o **ID univoco**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_search.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_search-it.png" alt="Analisi filtrata con il termine Convalida."><figcaption><p>Analisi filtrata con il termine Convalida.</p></figcaption></figure>
 
 ### Fasi del flusso
 
 Seleziona fasi specifiche per concentrare la tua analisi. L'attivazione/disattivazione delle fasi ricalcola anche le metriche temporali sugli altri componenti della dashboard.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_flow_steps.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_flow_steps-it.png" alt="Selezione delle fasi nel filtro della tabella di analisi."><figcaption><p>Selezione delle fasi nel filtro della tabella di analisi.</p></figcaption></figure>
 
 ### Sotto-organizzazione, Tipo di documento, Fornitore, Gruppo
 
@@ -85,7 +85,7 @@ Confronta le prestazioni tra:
 * **Fornitori** — per identificare quali fornitori causano i tempi di elaborazione più lunghi
 * **Gruppi** — per confrontare le prestazioni tra gruppi di utenti assegnati (disponibile per i tipi di flusso **Stato** e **Interazione dell'utente**)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_dimensions.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_dimensions-it.png" alt="Filtri di analisi per fase, sotto-organizzazione, tipo di documento e fornitore."><figcaption><p>Filtri di analisi per fase, sotto-organizzazione, tipo di documento e fornitore.</p></figcaption></figure>
 
 <mark style="color:red;">**Nota**</mark>: Il filtro **Gruppo** si applica solo ai documenti che sono **assegnati direttamente a un gruppo**. I documenti assegnati a un singolo utente — anche se tale utente è membro di un gruppo — **non** sono inclusi nei risultati del filtro per gruppo.
 
@@ -95,13 +95,13 @@ Attivo per impostazione predefinita — solo i documenti che hanno completato l'
 
 <mark style="color:red;">**Nota**</mark>: La disattivazione di questa opzione può comportare valori medi imprecisi, poiché nei calcoli vengono inclusi anche i documenti non ancora completati.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_only_exported_toggle.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_only_exported_toggle-it.png" alt="Opzione per limitare l’analisi ai documenti esportati."><figcaption><p>Opzione per limitare l’analisi ai documenti esportati.</p></figcaption></figure>
 
 ### Intervallo di tempo
 
 Analizza qualsiasi periodo, da **7 giorni** fino a un **anno intero**, oppure imposta un **intervallo personalizzato** utilizzando il selettore di date.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_time_range.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_time_range-it.png" alt="Opzione di periodo personalizzato nella barra dei filtri di analisi."><figcaption><p>Opzione di periodo personalizzato nella barra dei filtri di analisi.</p></figcaption></figure>
 
 ## Schede delle fasi del flusso
 
@@ -115,7 +115,7 @@ Ogni scheda mostra:
 
 Un interruttore **Seleziona tutto** nell'intestazione consente di includere o escludere tutte le fasi contemporaneamente.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_steps_card.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_steps_card-it.png" alt="Schede delle fasi con tempi di elaborazione aggregati."><figcaption><p>Schede delle fasi con tempi di elaborazione aggregati.</p></figcaption></figure>
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
 
@@ -127,7 +127,7 @@ L'interruttore **Confronta con la Media globale** controlla se la Media globale 
 * **Arancione** — il tuo Tempo medio è fino al **+25%** sopra la Media globale
 * **Rosso** — il tuo Tempo medio è del **+25%** o più sopra la Media globale
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_global_average_comparison.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_global_average_comparison-it.png" alt="Durata media confrontata con la media globale. L’etichetta Fluire indica la fase del flusso del documento."><figcaption><p>Durata media confrontata con la media globale. L’etichetta Fluire indica la fase del flusso del documento.</p></figcaption></figure>
 
 ## Grafico del tempo medio
 
@@ -179,7 +179,7 @@ La Tabella dati fornisce accesso completo a tutti i dati di riga sottostanti per
 * **Ordina** facendo clic sulle intestazioni delle colonne e **riordina** le colonne tramite trascinamento della selezione.
 * **Scarica CSV** tramite il pulsante nell'intestazione della scheda — vengono esportate solo le colonne attualmente visibili.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_data_table-it.png" alt="Tabella di analisi con intestazioni italiane; i valori dei documenti sono nascosti. L’etichetta Fluire indica la fase del flusso del documento."><figcaption><p>Tabella di analisi con intestazioni italiane; i valori dei documenti sono nascosti. L’etichetta Fluire indica la fase del flusso del documento.</p></figcaption></figure>
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 

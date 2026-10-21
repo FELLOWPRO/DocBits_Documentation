@@ -18,7 +18,7 @@ Quando attivi il tuo primo fattore, DocBits ti fornisce anche **dieci codici di 
 
 Apri le **impostazioni del profilo / account** (menu account in alto a destra → **Modifica profilo**) e seleziona **Autenticazione a due fattori**. La finestra di dialogo 2FA mostra lo stato attuale e i metodi che puoi aggiungere.
 
-<figure><img src="../.gitbook/assets/mfa-2fa-dialog.png" alt="The Two-factor authentication dialog"><figcaption><p>La finestra di dialogo dell'autenticazione a due fattori. Da qui puoi abilitare un'app di autenticazione, la verifica via email, aggiungere una passkey o aprire <strong>Gestisci</strong>.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/prior-u047-it.png" alt="Metodi di autenticazione a due fattori disponibili. Il comando Aggiungi una password indica in realtà l’aggiunta di una passkey."><figcaption><p>Metodi di autenticazione a due fattori disponibili. Il comando Aggiungi una password indica in realtà l’aggiunta di una passkey.</p></figcaption></figure>
 
 ## Configurare un'app di autenticazione (TOTP)
 
@@ -26,8 +26,6 @@ Apri le **impostazioni del profilo / account** (menu account in alto a destra �
 2. Scansiona il codice QR con la tua app di autenticazione (Google Authenticator, 1Password, Authy, …). Se non riesci a scansionarlo, usa la **chiave manuale** mostrata sotto il codice QR.
 3. Inserisci il codice a 6 cifre mostrato dall'app e conferma.
 4. DocBits abilita la 2FA e mostra i tuoi **codici di backup** (vedi sotto).
-
-<figure><img src="../.gitbook/assets/mfa-totp-setup.png" alt="The authenticator-app setup screen with QR code"><figcaption><p>Scansiona il codice QR con la tua app di autenticazione oppure inserisci la chiave manuale. Poi conferma con il codice a 6 cifre mostrato dall'app.</p></figcaption></figure>
 
 ## Configurare la verifica via email
 
@@ -48,8 +46,6 @@ Quando abiliti il tuo **primo** fattore, DocBits mostra **dieci codici di backup
 * Salvali in un luogo sicuro (un gestore di password è l'ideale).
 * Puoi generare un nuovo set in qualsiasi momento con **Rigenera codici di backup** (questo invalida il set precedente).
 
-<figure><img src="../.gitbook/assets/mfa-backup-codes.png" alt="The backup codes screen"><figcaption><p>I tuoi dieci codici di backup, mostrati una sola volta. Ognuno funziona una sola volta — conservali in un luogo sicuro.</p></figcaption></figure>
-
 {% hint style="warning" %}
 I codici di backup vengono mostrati solo nel momento in cui vengono generati. DocBits non può mostrarli di nuovo — conservali immediatamente.
 {% endhint %}
@@ -65,14 +61,11 @@ I codici di backup vengono mostrati solo nel momento in cui vengono generati. Do
    * **Passkey** — fai clic su **Usa una passkey** e conferma con Touch ID / Windows Hello / la tua chiave.
    * **Codice di backup** — se non puoi usare il tuo metodo abituale.
 
-    <figure><img src="../.gitbook/assets/mfa-challenge.png" alt="The second-factor challenge screen"><figcaption><p>Dopo la password, DocBits richiede il tuo secondo fattore. Cambia metodo con <strong>Usa una passkey</strong> o <strong>Inviami un codice via email</strong> e, se lo desideri, considera attendibile il dispositivo per 30 giorni.</p></figcaption></figure>
 3. In caso di successo hai effettuato l'accesso.
 
 ### Come appare il codice via email
 
 Se scegli **Email**, DocBits invia un messaggio con un codice a 6 cifre che scade dopo 10 minuti:
-
-<figure><img src="../.gitbook/assets/mfa-email-otp.png" alt="The DocBits verification-code email"><figcaption><p>L'email con il codice di verifica. Il codice scade dopo 10 minuti e può essere usato una sola volta.</p></figcaption></figure>
 
 ## Considera attendibile questo dispositivo
 
@@ -85,8 +78,6 @@ Apri la finestra di dialogo 2FA e fai clic su **Gestisci** per rivedere ciò che
 * **Passkey** — rinomina una passkey (fai clic sul suo nome) o eliminala. Eliminando l'ultimo fattore rimasto la 2FA viene disattivata.
 * **Dispositivi attendibili** — revoca un singolo dispositivo oppure usa **Revoca tutti i dispositivi** per forzare una nuova richiesta 2FA ovunque.
 
-<figure><img src="../.gitbook/assets/mfa-passkeys-list.png" alt="Managing enrolled passkeys and trusted devices"><figcaption><p>La vista Gestisci elenca le passkey registrate e i dispositivi attendibili, dove puoi rinominarli o rimuoverli.</p></figcaption></figure>
-
 ## Disattivare la 2FA
 
 Nella finestra di dialogo 2FA fai clic su **Disabilita 2FA** e conferma con un codice attuale dell'autenticatore o un codice di backup. Disattivando la 2FA vengono anche cancellati i tuoi codici di backup e revocati i tuoi dispositivi attendibili.
@@ -98,3 +89,9 @@ Se la tua organizzazione **richiede** la MFA, non puoi accedere con una password
 ## Accesso senza password (facoltativo)
 
 Una volta che disponi di una passkey, puoi accedere **senza digitare la password** usando **Accedi con una passkey** nella schermata di accesso. La tua password continua a funzionare come alternativa. L'accesso senza password richiede che la passkey ti verifichi (Touch ID / Windows Hello / PIN), quindi è sia più rapido sia resistente al phishing.
+
+Conservare i codici di recupero in un luogo sicuro, separato dal dispositivo di autenticazione. Ogni codice può essere usato una sola volta.
+
+Configurare la verifica via e-mail nella finestra di autenticazione a due fattori. Inserire il codice ricevuto nel proprio account ed effettuare la conferma prevista.
+
+Configurare un’app di autenticazione nella finestra dei due fattori. Memorizzare il segreto solo nell’app approvata e confermare con il codice temporaneo attuale.

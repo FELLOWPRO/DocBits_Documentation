@@ -12,7 +12,7 @@ Una regola risponde a tre domande:
 2. **Quando** si applica la regola? Sempre, oppure solo per i documenti (o le righe) che soddisfano una condizione: vedi [Condizioni delle regole (Applies when)](rule-conditions-applies-when.md).
 3. **Cosa** deve essere vero? Un campo deve essere compilato, rispettare un formato, rientrare in un intervallo, corrispondere a un elenco, confrontarsi correttamente con un altro campo oppure tornare nei totali.
 
-Quando il controllo fallisce, DocBits contrassegna il campo o la cella nella **schermata di convalida** e mostra il tuo messaggio, esattamente come per un controllo integrato. Con la gravità **Error** il documento non può essere convalidato finché il problema non viene risolto; con **Warning** l'utente vede solo un avviso.
+Quando il controllo fallisce, DocBits contrassegna il campo o la cella nella **schermata di convalida** e mostra il tuo messaggio, esattamente come per un controllo integrato. Con la gravità **Errore** il documento non può essere convalidato finché il problema non viene risolto; con **Avvertimento** l'utente vede solo un avviso.
 
 Le regole sono definite per **tipo di documento** e vengono eseguite su ogni documento di quel tipo: durante l'elaborazione e a ogni salvataggio del documento.
 
@@ -20,14 +20,13 @@ Le regole sono definite per **tipo di documento** e vengono eseguite su ogni doc
 
 | Requisito aziendale | Senza regole personalizzate | Con una regola personalizzata |
 | --- | --- | --- |
-| Le fatture tedesche superiori a 250 EUR devono riportare la partita IVA del fornitore | uno script, oppure gli utenti devono ricordarselo | **Required** su Supplier Tax ID, *applies when* l'origine è DE e l'importo totale è maggiore di 250 |
-| I numeri di fattura di un fornitore hanno sempre un aspetto come `INV-123456` | i refusi arrivano all'ERP | **Pattern** `^INV-\d{6}$` su Invoice Number per quel fornitore |
-| Ogni riga articolo deve avere una quantità maggiore di zero | le righe con quantità 0 vengono esportate | **Range** (minimo 0,01) sulla colonna Quantity |
-| La data di scadenza non deve precedere la data della fattura | pagamenti errati | **Compare fields**: Due Date uguale o successiva a Invoice Date |
+| Le fatture tedesche superiori a 250 EUR devono riportare la partita IVA del fornitore | uno script, oppure gli utenti devono ricordarselo | **Obbligatorio** su Supplier Tax ID, *applies when* l'origine è DE e l'importo totale è maggiore di 250 |
+| I numeri di fattura di un fornitore hanno sempre un aspetto come `INV-123456` | i refusi arrivano all'ERP | **Modello** `^INV-\d{6}$` su Invoice Number per quel fornitore |
+| Ogni riga articolo deve avere una quantità maggiore di zero | le righe con quantità 0 vengono esportate | **Intervallo** (minimo 0,01) sulla colonna Quantity |
+| La data di scadenza non deve precedere la data della fattura | pagamenti errati | **Confronta i campi**: Due Date uguale o successiva a Invoice Date |
 | Le righe devono tornare con l'importo netto | solo il controllo integrato fisso | **Formula** `sum(row.NET_AMOUNT) == header.total_net_amount` con una tolleranza a tua scelta |
-| Sono ammesse solo le valute note al tuo ERP | errori di esportazione nell'ERP | **List of Values** su Currency |
-| Segnalare agli utenti valori insoliti senza bloccarli | non possibile | qualsiasi regola con la gravità **Warning** |
-
+| Sono ammesse solo le valute note al tuo ERP | errori di esportazione nell'ERP | **Elenco dei valori** su Currency |
+| Segnalare agli utenti valori insoliti senza bloccarli | non possibile | qualsiasi regola con la gravità **Avvertimento** |
 
 ## Attivare le regole di convalida personalizzate
 
@@ -35,12 +34,12 @@ Le regole di convalida personalizzate si attivano **per tipo di documento**. Non
 
 1. Vai su **Settings → Global Settings → Document Types**.
 2. Sulla scheda del tipo di documento, clicca sull'icona delle **impostazioni** (ingranaggio).
-3. Apri la sezione **Custom Validation Rules** e attiva l'interruttore.
+3. Apri la sezione **Regole di convalida personalizzate** e attiva l'interruttore.
 4. Clicca su **Manage validation rules** per aprire l'elenco delle regole.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-toggles.png" alt="Gli interruttori delle regole nelle impostazioni aggiuntive di un tipo di documento"><figcaption><p>Gli interruttori per Manage Layouts, Custom Validation Rules e Transformation Rules</p></figcaption></figure>
 
-Da questo momento la scheda del tipo di documento mostra anche un link **Validation Rules**.
+Da questo momento la scheda del tipo di documento mostra anche un link **Regole di convalida**.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-card-links.png" alt="La scheda del tipo di documento con il link Validation Rules"><figcaption><p>I link sulla scheda del tipo di documento</p></figcaption></figure>
 
@@ -52,7 +51,7 @@ Da questo momento la scheda del tipo di documento mostra anche un link **Validat
 
 **Document Types → (tipo di documento) → Validation Rules** elenca tutte le regole del tipo di documento.
 
-<figure><img src="../../../../.gitbook/assets/validation-cvr-list.png" alt="L'elenco delle regole di convalida"><figcaption><p>L'elenco delle regole con livello, gravità, campo di destinazione e origine di ciascuna regola</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-it.png" alt="Gestione delle regole di convalida con i nomi configurati nascosti. Le date relative restano in tedesco nel prodotto."><figcaption><p>Gestione delle regole di convalida con i nomi configurati nascosti. Le date relative restano in tedesco nel prodotto.</p></figcaption></figure>
 
 Ogni scheda mostra il nome e la descrizione della regola e i badge del suo **livello** (Header / Line / Table), della **gravità** (Error / Warning), del **campo** a cui è associato l'errore e della sua **origine**. Usa l'interruttore a destra per attivare o disattivare una regola e il menu **⋮** per duplicarla o eliminarla. Filtra l'elenco per livello (**All / Header / Line / Table**) e per stato (**All / Active / Inactive**), oppure cercalo.
 
@@ -60,15 +59,15 @@ Ogni scheda mostra il nome e la descrizione della regola e i badge del suo **liv
 
 | Origine | Di cosa si tratta | Cosa puoi fare |
 | --- | --- | --- |
-| **System default** | Una regola fornita con DocBits per tutte le organizzazioni. | Non può essere modificata direttamente: il builder mostra "This is a system default rule and cannot be edited." Clicca su **Customize** per creare una tua copia modificabile, oppure disattivala per fermarla nella tua organizzazione. |
-| **Customized** | Una regola predefinita di sistema che la tua organizzazione ha modificato o disattivato. | Modificala come una regola tua. **Reset to Default** elimina la tua copia e ripristina l'originale. |
-| **Custom** | Una regola creata dalla tua organizzazione. | Modifica, **Duplicate**, **Delete**. |
+| **Impostazioni predefinite del sistema** | Una regola fornita con DocBits per tutte le organizzazioni. | Non può essere modificata direttamente: il builder mostra "This is a system default rule and cannot be edited." Clicca su **Personalizzazione** per creare una tua copia modificabile, oppure disattivala per fermarla nella tua organizzazione. |
+| **Personalizzato** | Una regola predefinita di sistema che la tua organizzazione ha modificato o disattivato. | Modificala come una regola tua. **Ripristina impostazioni predefinite** elimina la tua copia e ripristina l'originale. |
+| **Personalizzato** | Una regola creata dalla tua organizzazione. | Modifica, **Duplica**, **Cancellare**. |
 
 Le modifiche alle regole predefinite di sistema non influiscono mai sulle altre organizzazioni.
 
 ## Creare una regola
 
-Clicca su **New rule**. Il builder ha tre passaggi. **Test rule** e **Save** si trovano in alto a destra.
+Clicca su **Nuova regola**. Il builder ha tre passaggi. **Regola di prova** e **Salva** si trovano in alto a destra.
 
 ### Passaggio 1 — Name & scope
 
@@ -76,27 +75,27 @@ Clicca su **New rule**. Il builder ha tre passaggi. **Test rule** e **Save** si 
 
 | Impostazione | Cosa fa |
 | --- | --- |
-| **Rule level** | Cosa guarda la regola e dove viene mostrato l'errore: vedi [Livelli delle regole](#livelli-delle-regole). |
-| **Severity** | **Error** contrassegna il campo come non valido e blocca la convalida. **Warning** mostra il messaggio ma non blocca mai. |
-| **Rule Name** | Mostrato nell'elenco e agli amministratori. Scegli un nome che descriva la regola ("Partita IVA del fornitore obbligatoria per le fatture tedesche"). |
-| **Rule key** | Una chiave tecnica generata dal nome. Resta invariata se in seguito rinomini la regola. Clicca sulla matita per scegliere una chiave tua prima del primo salvataggio; dopo non è più modificabile. |
-| **Description** | Spiegazione facoltativa per gli altri amministratori. |
-| **Table name** | *Solo per Table line.* La tabella di cui vengono controllate le righe, ad esempio `INVOICE_TABLE`. |
+| **Livello di regola** | Cosa guarda la regola e dove viene mostrato l'errore: vedi [Livelli delle regole](#livelli-delle-regole). |
+| **Gravità** | **Errore** contrassegna il campo come non valido e blocca la convalida. **Avvertimento** mostra il messaggio ma non blocca mai. |
+| **Nome della regola** | Mostrato nell'elenco e agli amministratori. Scegli un nome che descriva la regola ("Partita IVA del fornitore obbligatoria per le fatture tedesche"). |
+| **Chiave della regola** | Una chiave tecnica generata dal nome. Resta invariata se in seguito rinomini la regola. Clicca sulla matita per scegliere una chiave tua prima del primo salvataggio; dopo non è più modificabile. |
+| **Descrizione** | Spiegazione facoltativa per gli altri amministratori. |
+| **Nome della tabella** | *Solo per Table line.* La tabella di cui vengono controllate le righe, ad esempio `INVOICE_TABLE`. |
 | **Attach error to field / column** | Il campo (o, per le righe di tabella, la colonna) che mostra l'errore nella schermata di convalida. |
 
 #### Livelli delle regole
 
 | Livello | Viene eseguita | L'errore viene mostrato su | Può leggere | Regola tipica |
 | --- | --- | --- | --- | --- |
-| **Header field** | una volta per documento | un campo di testata | `header.*`, `doc.*` | "La partita IVA del fornitore è obbligatoria per le fatture tedesche" |
-| **Table line** | una volta per ogni riga della tabella selezionata | la cella della riga che non supera il controllo | `row.*` (la riga corrente), `header.*`, `doc.*` | "La quantità deve essere maggiore di zero" |
-| **Whole table** | una volta per documento, considerando tutte le righe insieme | un campo di testata | totali sulle righe (`sum()`, `count()`, `min()`, `max()`), `header.*`, `doc.*` | "Gli importi netti di riga devono tornare con l'importo netto" |
+| **Campo di intestazione** | una volta per documento | un campo di testata | `header.*`, `doc.*` | "La partita IVA del fornitore è obbligatoria per le fatture tedesche" |
+| **Riga della tabella** | una volta per ogni riga della tabella selezionata | la cella della riga che non supera il controllo | `row.*` (la riga corrente), `header.*`, `doc.*` | "La quantità deve essere maggiore di zero" |
+| **Intera tabella** | una volta per documento, considerando tutte le righe insieme | un campo di testata | totali sulle righe (`sum()`, `count()`, `min()`, `max()`), `header.*`, `doc.*` | "Gli importi netti di riga devono tornare con l'importo netto" |
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-line-step1.png" alt="Passaggio 1 per una regola su riga di tabella"><figcaption><p>Una regola su riga di tabella: la tabella e la colonna che mostra l'errore</p></figcaption></figure>
 
 ### Passaggio 2 — Applies when
 
-Decidi se la regola viene eseguita per ogni documento o solo per alcuni. Lascia il campo vuoto per controllare ogni documento. Altrimenti aggiungi righe di condizione, ad esempio "Document Origin is Deutsch" e "Total Amount greater than 250", e combinale con **All** / **ANY** e gruppi annidati.
+Decidi se la regola viene eseguita per ogni documento o solo per alcuni. Lascia il campo vuoto per controllare ogni documento. Altrimenti aggiungi righe di condizione, ad esempio "Document Origin is Deutsch" e "Total Amount greater than 250", e combinale con **Tutti** / **ANY** e gruppi annidati.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-applies-when.png" alt="Una condizione Applies when"><figcaption><p>Il controllo viene eseguito solo per i documenti tedeschi superiori a 250 con EUR o senza valuta</p></figcaption></figure>
 
@@ -118,7 +117,7 @@ Scegli un controllo. Le impostazioni sotto le schede cambiano in base al control
 
 Fallisce quando il campo è vuoto (mancante o con soli spazi). Nessuna ulteriore impostazione.
 
-Usalo insieme a **Applies when** per rendere un campo obbligatorio **in modo condizionale**. Un campo che deve essere sempre compilato è meglio configurarlo come campo obbligatorio nelle impostazioni del campo.
+Usalo insieme a **Si applica quando** per rendere un campo obbligatorio **in modo condizionale**. Un campo che deve essere sempre compilato è meglio configurarlo come campo obbligatorio nelle impostazioni del campo.
 
 > *Supplier Tax ID è obbligatorio* — si applica quando *Document Origin is Deutsch* e *Total Amount greater than 250*.
 
@@ -129,9 +128,9 @@ Un confronto aritmetico. L'espressione contiene esattamente **un** confronto (`=
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-formula.png" alt="Un controllo Formula"><figcaption><p>Una formula su tabella intera con tolleranza e segnaposto nel messaggio</p></figcaption></figure>
 
 * Clicca sui chip sotto l'espressione per inserire funzioni e prefissi dei campi: `sum()`, `count()`, `min()`, `max()`, `default()`, `coalesce()`, `header.`, `doc.`. Mentre digiti il nome di un campo si apre un elenco dei campi corrispondenti.
-* `sum(row.NET_AMOUNT)`, `count(row.ITEM_NUMBER)`, `min(...)`, `max(...)` operano su tutte le righe e sono disponibili solo al livello **Whole table**. `count()` conta le righe in cui la colonna è compilata.
+* `sum(row.NET_AMOUNT)`, `count(row.ITEM_NUMBER)`, `min(...)`, `max(...)` operano su tutte le righe e sono disponibili solo al livello **Intera tabella**. `count()` conta le righe in cui la colonna è compilata.
 * `default(header.discount, 0)` usa `0` quando il campo è vuoto; `coalesce(header.a, header.b, 0)` usa il primo valore compilato.
-* **Tolerance**: per `==` e `!=`, le differenze fino a questo importo sono considerate uguali. Usa `0.01` o `0.05` per assorbire gli arrotondamenti. Non ha effetto su `<`, `>`, `<=` e `>=`.
+* **Tolleranza**: per `==` e `!=`, le differenze fino a questo importo sono considerate uguali. Usa `0.01` o `0.05` per assorbire gli arrotondamenti. Non ha effetto su `<`, `>`, `<=` e `>=`.
 * Gli importi vuoti o illeggibili contano come `0`. Una divisione per zero salta la regola invece di generare un errore.
 * Nel messaggio di errore, `{actual}` viene sostituito dal risultato del lato sinistro e `{expected}` dal risultato del lato destro.
 
@@ -149,7 +148,7 @@ Esempi:
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-pattern.png" alt="una verifica Pattern"><figcaption><p>Una verifica Pattern con un espressione regolare</p></figcaption></figure>
 
-Il valore deve corrispondere a un'**espressione regolare**. L'espressione cerca all'interno del valore, quindi ancorala con `^` (inizio) e `$` (fine) quando deve corrispondere l'intero valore. Spunta **Case-insensitive match** se maiuscole e minuscole non contano.
+Il valore deve corrispondere a un'**espressione regolare**. L'espressione cerca all'interno del valore, quindi ancorala con `^` (inizio) e `$` (fine) quando deve corrispondere l'intero valore. Spunta **corrispondenza senza distinzione tra maiuscole e minuscole** se maiuscole e minuscole non contano.
 
 | Formato | Espressione regolare |
 | --- | --- |
@@ -161,7 +160,7 @@ Il valore deve corrispondere a un'**espressione regolare**. L'espressione cerca 
 
 #### Range — tra un minimo e un massimo
 
-Il valore deve essere un numero compreso tra **Minimum** e **Maximum** (entrambi inclusi). Compila uno o entrambi. Un valore che non è un numero non supera il controllo. Gli importi formattati come `1.234,56` vengono compresi.
+Il valore deve essere un numero compreso tra **Minimo** e **Massimo** (entrambi inclusi). Compila uno o entrambi. Un valore che non è un numero non supera il controllo. Gli importi formattati come `1.234,56` vengono compresi.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-range.png" alt="Un controllo Range"><figcaption><p>Range con solo un minimo: le quantità devono essere almeno 0,01</p></figcaption></figure>
 
@@ -173,7 +172,7 @@ Confronta il valore di un campo con un altro campo, con **oggi** o con un valore
 
 * Due Date **on or after (≥)** Invoice Date
 * Invoice Date **on or before (≤)** oggi: nessuna fattura con data futura
-* Discount **less than** 100
+* Discount **meno di** 100
 
 #### Allowed values — da un elenco fisso
 
@@ -185,28 +184,28 @@ Il valore deve essere uno di quelli che digiti, **un valore per riga**. Facoltat
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-lov.png" alt="una verifica List of Values"><figcaption><p>List of Values: i valori provengono da un elenco con nome delle impostazioni</p></figcaption></figure>
 
-Come *Allowed values*, ma i valori provengono da una **List of Values** condivisa, gestita in **Settings › List of Values**. Scegli l'elenco invece di digitarlo di nuovo; quando l'elenco cambia, la regola usa i nuovi valori (dopo un breve ritardo dovuto alla cache). Contano solo i valori delle voci dell'elenco, non le loro etichette.
+Come *Allowed values*, ma i valori provengono da una **Elenco dei valori** condivisa, gestita in **Settings › List of Values**. Scegli l'elenco invece di digitarlo di nuovo; quando l'elenco cambia, la regola usa i nuovi valori (dopo un breve ritardo dovuto alla cache). Contano solo i valori delle voci dell'elenco, non le loro etichette.
 
 {% hint style="info" %}
-Ad eccezione di **Required**, ogni controllo **viene superato quando il valore è vuoto**. Una regola Pattern su Purchase Order non segnala le fatture senza ordine di acquisto. Se anche un valore vuoto è un problema, aggiungi una regola Required oppure limita la regola con *Applies when … is not empty*.
+Ad eccezione di **Obbligatorio**, ogni controllo **viene superato quando il valore è vuoto**. Una regola Pattern su Purchase Order non segnala le fatture senza ordine di acquisto. Se anche un valore vuoto è un problema, aggiungi una regola Required oppure limita la regola con *Applies when … is not empty*.
 {% endhint %}
 
 #### Messaggio di errore e codice di errore
 
-* **Error message shown to the processing user** — il testo mostrato nella schermata di convalida. Indica cosa non va **e** cosa fare: "La partita IVA del fornitore manca. Le fatture tedesche superiori a 250 EUR devono riportarla."
-* **Error code** — un breve codice tecnico, ad esempio `REQUIRED_CONDITIONAL`, `FORMAT_MISMATCH`, `OUT_OF_RANGE`, `DATE_ORDER`, `LINES_HEADER_MISMATCH`, `VALUE_NOT_ALLOWED`. Compare nelle esportazioni e permette di raggruppare gli errori.
+* **Messaggio di errore visualizzato all'utente che effettua l'elaborazione.** — il testo mostrato nella schermata di convalida. Indica cosa non va **e** cosa fare: "La partita IVA del fornitore manca. Le fatture tedesche superiori a 250 EUR devono riportarla."
+* **Codice di errore** — un breve codice tecnico, ad esempio `REQUIRED_CONDITIONAL`, `FORMAT_MISMATCH`, `OUT_OF_RANGE`, `DATE_ORDER`, `LINES_HEADER_MISMATCH`, `VALUE_NOT_ALLOWED`. Compare nelle esportazioni e permette di raggruppare gli errori.
 
 ## Test rule
 
-Clicca su **Test rule** per eseguire la versione corrente della regola, salvata o meno, su un documento. Inserisci un **Document ID** oppure passa a **By Document JSON** e incolla i dati estratti. **Non viene salvato nulla** e il documento non viene modificato.
+Clicca su **Regola di prova** per eseguire la versione corrente della regola, salvata o meno, su un documento. Inserisci un **ID documento** oppure passa a **Tramite documento JSON** e incolla i dati estratti. **Non viene salvato nulla** e il documento non viene modificato.
 
 Il risultato è uno di tre esiti:
 
 | Esito | Significato |
 | --- | --- |
-| **Rule failed — error raised** | La condizione era soddisfatta e il controllo è fallito. Il messaggio viene mostrato esattamente come lo vedrebbe l'utente. |
-| **Rule passed** | La condizione era soddisfatta e il controllo è stato superato. Le regole su riga di tabella mostrano il risultato per riga ("4 of 4 checked rows passed"). |
-| **Rule skipped — scope not matched** | La condizione *Applies when* era falsa per questo documento, quindi non è stato controllato nulla e non è stato generato alcun errore. |
+| **La regola non è riuscita: è stato generato un errore.** | La condizione era soddisfatta e il controllo è fallito. Il messaggio viene mostrato esattamente come lo vedrebbe l'utente. |
+| **Regola approvata** | La condizione era soddisfatta e il controllo è stato superato. Le regole su riga di tabella mostrano il risultato per riga ("4 of 4 checked rows passed"). |
+| **Regola ignorata: ambito non corrispondente** | La condizione *Applies when* era falsa per questo documento, quindi non è stato controllato nulla e non è stato generato alcun errore. |
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-test-dialog.png" alt="Test rule: regola non superata"><figcaption><p>La fattura tedesca non ha la partita IVA del fornitore: la regola fallisce con il messaggio configurato</p></figcaption></figure>
 
@@ -225,13 +224,12 @@ Testa ogni nuova regola su almeno un documento che dovrebbe fallire, uno che dov
 * Gli avvisi vengono raccolti separatamente e non nascondono mai un errore.
 * Se una regola non può essere valutata, ad esempio per una divisione per zero in una formula, viene saltata. Una regola difettosa non contrassegna mai un documento come non valido per errore.
 
-
 ## Esempi pratici
 
-Copia queste regole come punto di partenza. Le chiavi di campi e colonne sono quelle del tipo di documento **Invoice** standard; adattale ai tuoi tipi di documento.
+Copia queste regole come punto di partenza. Le chiavi di campi e colonne sono quelle del tipo di documento **Fattura** standard; adattale ai tuoi tipi di documento.
 
 **1. Partita IVA del fornitore per le fatture tedesche superiori a 250 EUR**
-Header field · Error · associa a *Supplier Tax ID* · Applies when **All**: *Document Origin* is *Deutsch*, *Total Amount* greater than *250* · Check **Required** · Messaggio "La partita IVA del fornitore manca. Le fatture tedesche superiori a 250 EUR devono riportarla." · Codice `REQUIRED_CONDITIONAL`.
+Header field · Error · associa a *Supplier Tax ID* · Applies when **Tutti**: *Document Origin* is *Deutsch*, *Total Amount* greater than *250* · Check **Obbligatorio** · Messaggio "La partita IVA del fornitore manca. Le fatture tedesche superiori a 250 EUR devono riportarla." · Codice `REQUIRED_CONDITIONAL`.
 
 **2. I totali di testata tornano** (sostituisce il controllo integrato)
 Header field · Error · associa a *Total Amount* · sempre · **Formula** `header.total_amount == header.total_net_amount + header.total_tax_amount`, tolleranza `0.01` · Messaggio "Il totale {actual} non corrisponde a netto più imposta ({expected})."
@@ -240,29 +238,29 @@ Header field · Error · associa a *Total Amount* · sempre · **Formula** `head
 Whole table · Error · associa a *Total Net Amount* · sempre · **Formula** `sum(row.NET_AMOUNT) == header.total_net_amount`, tolleranza `0.05` · Messaggio "Gli importi netti di riga danno {actual}, ma l'importo netto della fattura è {expected}." · Codice `LINES_HEADER_MISMATCH`.
 
 **4. La quantità deve essere positiva sulle righe articolo**
-Table line · Error · tabella `INVOICE_TABLE`, colonna `QUANTITY` · Applies when *row.ITEM_NUMBER* is not empty · **Range** minimo `0.01` · Codice `OUT_OF_RANGE`.
+Table line · Error · tabella `INVOICE_TABLE`, colonna `QUANTITY` · Applies when *row.ITEM_NUMBER* is not empty · **Intervallo** minimo `0.01` · Codice `OUT_OF_RANGE`.
 
 **5. Importo di riga = quantità × prezzo unitario**
 Table line · Warning · colonna `NET_AMOUNT` · sempre · **Formula** `row.NET_AMOUNT == row.QUANTITY * row.UNIT_PRICE`, tolleranza `0.01`.
 
 **6. Formato del numero di fattura di un fornitore**
-Header field · Error · *Invoice Number* · Applies when *Supplier ID* is *20723* · **Pattern** `^INV-\d{6}$`.
+Header field · Error · *Invoice Number* · Applies when *Supplier ID* is *20723* · **Modello** `^INV-\d{6}$`.
 
 **7. Data di scadenza non precedente alla data della fattura**
-Header field · Error · *Due Date* · sempre · **Compare fields** Due Date *on or after (≥)* Invoice Date · Codice `DATE_ORDER`.
+Header field · Error · *Due Date* · sempre · **Confronta i campi** Due Date *on or after (≥)* Invoice Date · Codice `DATE_ORDER`.
 
 **8. Nessuna fattura con data futura**
-Header field · Error · *Invoice Date* · sempre · **Compare fields** Invoice Date *on or before (≤)* oggi.
+Header field · Error · *Invoice Date* · sempre · **Confronta i campi** Invoice Date *on or before (≤)* oggi.
 
 **9. Solo valute approvate (solo avviso)**
-Header field · **Warning** · *Currency* · sempre · **List of Values** *approved_currencies* · Codice `VALUE_NOT_ALLOWED`.
+Header field · **Avvertimento** · *Currency* · sempre · **Elenco dei valori** *approved_currencies* · Codice `VALUE_NOT_ALLOWED`.
 
 **10. Ordine di acquisto obbligatorio oltre 5.000**
-Header field · Error · *Purchase Order* · Applies when *Total Amount* greater than *5000* · **Required**.
+Header field · Error · *Purchase Order* · Applies when *Total Amount* greater than *5000* · **Obbligatorio**.
 
 ## Buone pratiche
 
-* **Inizia con un avviso.** Salva una nuova regola con la gravità **Warning**, osservala per qualche giorno (Test rule) e poi portala a **Error**.
+* **Inizia con un avviso.** Salva una nuova regola con la gravità **Avvertimento**, osservala per qualche giorno (Test rule) e poi portala a **Errore**.
 * **Una regola, un messaggio.** Diverse regole piccole con messaggi chiari sono più facili da capire di un'unica formula grande.
 * **Usa Applies when invece delle copie.** Una regola con una condizione è meglio di cinque copie per cinque fornitori.
 * **Sii tollerante con gli importi.** Assegna sempre una tolleranza alle formule sugli importi.
@@ -272,14 +270,14 @@ Header field · Error · *Purchase Order* · Applies when *Total Amount* greater
 
 | Sintomo | Cosa controllare |
 | --- | --- |
-| La regola non genera mai un errore | La funzione è attivata per il tipo di documento e la regola è **Active**? Esegui **Test rule** sul documento: "skipped" significa che *Applies when* era falsa. |
-| Un campo vuoto non viene segnalato | Solo **Required** segnala i valori vuoti. Aggiungi una regola Required. |
+| La regola non genera mai un errore | La funzione è attivata per il tipo di documento e la regola è **Attivo**? Esegui **Regola di prova** sul documento: "skipped" significa che *Applies when* era falsa. |
+| Un campo vuoto non viene segnalato | Solo **Obbligatorio** segnala i valori vuoti. Aggiungi una regola Required. |
 | I controlli integrati sui totali sono scomparsi | È previsto finché le regole personalizzate sono attive. Ricreali come regole Formula (esempi 2 e 3). |
 | Una regola modificata non ha effetto su un documento | I documenti vengono ricontrollati al successivo salvataggio. Salva o rielabora il documento. |
 | Un Pattern corrisponde a valori che non dovrebbe | I pattern cercano all'interno del valore. Ancorali con `^` e `$`. |
 | Su un campo viene mostrato solo uno dei due errori | Un campo mostra solo la prima regola che fallisce. Modifica le priorità o associa una delle regole a un altro campo. |
-| Le colonne della tabella mancano in *Applies when* | Sono disponibili solo al livello **Table line**. |
-| La regola predefinita di sistema non può essere modificata | Clicca su **Customize** per creare una tua copia. |
+| Le colonne della tabella mancano in *Applies when* | Sono disponibili solo al livello **Riga della tabella**. |
+| La regola predefinita di sistema non può essere modificata | Clicca su **Personalizzazione** per creare una tua copia. |
 
 ## Vedi anche
 

@@ -1,27 +1,36 @@
-# Flusso Documento
+# Flusso del documento
 
-Il **Flusso Documento** mostra i passaggi di elaborazione di un documento. Usalo per vedere quali passaggi sono stati completati, quale è in attesa e quanto tempo è durata l'elaborazione. L'esempio qui sotto usa una fattura sintetica nella Sandbox inglese.
+Il flusso del documento mostra ordine, stato e durata delle fasi di elaborazione. L’esempio utilizza una fattura fittizia.
 
-## Aprire dal Dashboard
+## Aprire il flusso
 
-Nel **Dashboard**, trova il documento. Nella colonna **Azioni**, seleziona i tre puntini, quindi **Flusso Documento**. L'opzione apre il flusso di quel documento; non lo modifica.
+Cercare il documento nella dashboard. I valori dei documenti sono nascosti.
 
-<figure><img src="../../../.gitbook/assets/document-flow-dashboard-menu-en.png" alt="Dashboard in inglese con il menu Azioni aperto per una fattura sintetica; Document flow è elencato sotto Assign to."><figcaption>Scegli Flusso Documento dal menu Azioni del documento.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-document-flow-dashboard-menu-it.png" alt="Ricerca del documento fittizio nella dashboard; i valori sono nascosti."><figcaption><p>Ricerca del documento fittizio nella dashboard; i valori sono nascosti.</p></figcaption></figure>
 
-## Aprire dalla Validazione Campo
+Aprire la convalida dei campi e il menu delle opzioni nella barra destra per consultare il flusso del documento.
 
-Apri il documento. Nella **Validazione Campo**, seleziona i tre puntini nella barra delle azioni a destra, quindi **Flusso Documento** sotto **More options**.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-validation-menu-it.png" alt="Menu delle opzioni di convalida per aprire il flusso del documento."><figcaption><p>Menu delle opzioni di convalida per aprire il flusso del documento.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/document-flow-validation-menu-en.png" alt="Schermata Validazione Campo in inglese con il menu More options e la voce Document Flow accanto a una fattura sintetica."><figcaption>Lo stesso flusso è disponibile dalla vista del documento.</figcaption></figure>
+## Leggere le fasi
 
-## Leggere il flusso
+Ogni scheda rappresenta una fase, come importazione, OCR, classificazione o estrazione dei campi. Seguire la numerazione.
 
-**Process Statistics** sulla sinistra riepiloga il numero di passaggi, i passaggi completati e in attesa, i riavvii, il tempo totale, lo stato corrente e l'avanzamento complessivo. Ogni card numerata mostra un passaggio di elaborazione e il suo stato attuale. Scorri verso il basso per vedere i passaggi successivi.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-overview-it.png" alt="Fasi di elaborazione di una fattura fittizia; i codici tecnici restano invariati."><figcaption><p>Fasi di elaborazione di una fattura fittizia; i codici tecnici restano invariati.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/document-flow-overview-en.png" alt="Flusso Documento in inglese con Process Statistics a sinistra e le prime card numerate dei passaggi: Imported, Document Imported e OCR."><figcaption>I primi passaggi del flusso di una fattura sintetica.</figcaption></figure>
+Gli identificatori tecnici come DOCUMENT_IMPORTED e COMPLETE restano invariati. COMPLETE indica una fase completata.
 
-<figure><img src="../../../.gitbook/assets/document-flow-later-steps-en.png" alt="Flusso Documento in inglese dopo lo scorrimento verso il basso; le card successive includono Classification, Field Extraction, Table Extraction, Transformer, Metadata Populator, Lookup Data e Validator."><figcaption>Scorri per seguire la sequenza attraverso i passaggi successivi.</figcaption></figure>
+## Consultare i dettagli
 
-Seleziona la card di un passaggio per aprire **Step Details** sulla sinistra. Mostra il modulo e il suo stato. Sulla destra può aprirsi anche un pannello **Task Logs**; i dettagli del log dipendono da ciò che è disponibile per quel task. Seleziona **×** in Step Details per chiudere il pannello.
+Selezionare una scheda per consultarne i dettagli e i registri disponibili.
 
-<figure><img src="../../../.gitbook/assets/document-flow-step-details-en.png" alt="Flusso Documento in inglese con la card OCR selezionata; Step Details sotto Process Statistics mostra Module OCR e Status Completed."><figcaption>Step Details spiega lo stato del modulo selezionato.</figcaption></figure>
+| Dettaglio | Significato |
+| --- | --- |
+| Modulo | Componente di elaborazione della fase |
+| Stato | Stato attuale della fase |
+| Durata | Tempo di elaborazione registrato |
+| Registri | Messaggi tecnici disponibili |
+
+Esaminare i messaggi di una fase in attesa o non riuscita prima di riavviare l’elaborazione. Alcuni titoli diagnostici possono restare in inglese nel prodotto.
+
+I dettagli di ogni fase presentano componente di elaborazione, stato, durata e registri tecnici disponibili.

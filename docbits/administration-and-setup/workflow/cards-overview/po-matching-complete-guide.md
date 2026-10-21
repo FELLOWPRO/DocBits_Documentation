@@ -22,7 +22,7 @@ The PO comparison cards on this page go in the **And** group of the Workflow Bui
 * **v3 → v4:** Addition of comparison mode parameters
 * **v4 → v5:** Enhanced tolerance with multiple units (%, EUR, $, etc.)
 
-📖 [Complete Version History](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/changelog/release.md#-po-comparison--validation-cards) | [Card Version Database](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/DocFlow/docs/card_version.md)
+📖 [Complete Version History](../release.md) | [Card versions and behavior](card-versions-guide.md)
 
 ***
 

@@ -19,7 +19,7 @@ Add this card to the **Then** group of the Workflow Builder — the actions that
 
 **What Changed:** v2 added internationalization (i18n) support. Core webhook/request functionality remains unchanged.
 
-📖 [Version History & Changes](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/changelog/release.md#2-https-request-https_request) | [Complete Card Database](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/DocFlow/docs/card_version.md)
+📖 [Version History & Changes](../release.md) | [Complete Card Database](export-cards-guide.md)
 
 ***
 

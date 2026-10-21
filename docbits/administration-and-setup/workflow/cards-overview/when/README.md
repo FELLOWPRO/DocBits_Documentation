@@ -41,3 +41,5 @@ In practice, these trigger cards are crucial for automating processes like appro
 This setup ensures that workflows are not only efficient but also tailored to the specific operational needs of the organization, reducing manual oversight and speeding up document handling processes.
 
 In summary, the "When" part of your workflow configuration is about setting the stage for automated actions based on specific, predefined conditions. It’s a powerful tool for ensuring that your ERP system reacts dynamically to the needs of the business, enhancing both productivity and accuracy in document management.
+
+[Variable-change and webhook-event trigger reference](../logic-cards-guide.md).

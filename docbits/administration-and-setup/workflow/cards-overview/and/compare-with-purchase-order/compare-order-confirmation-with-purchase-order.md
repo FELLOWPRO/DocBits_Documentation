@@ -50,3 +50,5 @@ This DocBits card is designed to compare a specific order data field—such as q
 ## Conclusion:
 
 This card simplifies the validation of individual order data fields, ensuring compliance with purchase order terms. By isolating one field at a time for comparison, it supports targeted reviews and error prevention in order processing.
+
+See [comparison direction, tolerance basis and saved-card versions](../../po-comparison-versions-guide.md) before changing the comparison sides.

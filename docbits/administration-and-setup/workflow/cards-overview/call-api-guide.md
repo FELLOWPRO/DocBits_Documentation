@@ -19,7 +19,7 @@ Add this card to the **Then** group of the Workflow Builder — the actions that
 
 **What Changed:** v2 added internationalization (i18n) support with translation keys. Functionality remains identical.
 
-📖 [Version History & Changes](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/changelog/release.md#1-call_api) | [Complete Card Database](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/DocFlow/docs/card_version.md#call_api)
+📖 [Version History & Changes](../release.md) | [Complete Card Database](export-cards-guide.md)
 
 ***
 

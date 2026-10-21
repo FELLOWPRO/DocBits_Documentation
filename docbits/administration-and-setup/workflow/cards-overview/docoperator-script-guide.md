@@ -20,7 +20,7 @@ Add this card to the **Then** group of the Workflow Builder — the actions that
 
 **What Changed:** v3 added optional "Execute the prompt" parameter for more control. v4 attempted to revert this but was deprecated.
 
-📖 [Version History & Changes](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/changelog/release.md#3-action_run_docoperator_script--) | [Complete Card Database](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/DocFlow/docs/card_version.md#action_run_docoperator_script)
+📖 [Version History & Changes](../release.md) | [Complete Card Database](export-cards-guide.md)
 
 ***
 

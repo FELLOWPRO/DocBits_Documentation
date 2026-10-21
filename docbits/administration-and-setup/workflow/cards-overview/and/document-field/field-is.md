@@ -24,15 +24,9 @@ This workflow card is designed to automate actions based on the presence or stat
   * The system evaluates whether the specified field is in the state (Empty/Not in Document or In Document/Not Empty) defined by the selected operator.
 *
 
-```
 **Action Execution:**
-```
-
-```
 * **Empty/Not in Document Condition:** If the field's state matches this condition (i.e., the field is either absent from the document or present but empty), the system initiates the associated actions. These may include generating alerts, flagging the document for review, or halting the workflow.
 * **In Document/Not Empty Condition:** If the field's state matches this condition (i.e., the field exists in the document and contains a value), the system triggers the associated actions. These could involve enabling subsequent workflow steps, updating records, or triggering notifications.
-```
-
 ## **Setup and Configuration:**
 
 * Users select the field from a list of available document fields. The operator is chosen via a dropdown menu, offering clear options for "Empty/Not in Document" or "In Document/Not Empty."

@@ -303,7 +303,7 @@ Line Item 2:
 Overall Result: FAIL (one or more items failed)
 ```
 
-**Guide Reference:** [PO Matching Complete Guide - Unit Price](../po-matching-complete-guide.md#unit-price-comparison)
+**Guide Reference:** [PO Matching Complete Guide - Unit Price](../po-matching-complete-guide.md)
 
 ***
 
@@ -355,7 +355,7 @@ Line Item 2:
   Result: FAIL ❌ (Escalate)
 ```
 
-**Guide Reference:** [PO Matching Complete Guide - Quantity](../po-matching-complete-guide.md#quantity-comparison)
+**Guide Reference:** [PO Matching Complete Guide - Quantity](../po-matching-complete-guide.md)
 
 ***
 
@@ -997,10 +997,10 @@ IF PO_Type = "Blanket":
 
 ### Related Cards
 
-* **PURCHASE\_ORDER\_FULL\_MATCH** - [PO Matching Guide](../po-matching-complete-guide.md#full-match)
-* **CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE** - [PO Matching Guide](../po-matching-complete-guide.md#unit-price)
-* **CONDITION\_DOC\_TO\_PO\_QUANTITY** - [PO Matching Guide](../po-matching-complete-guide.md#quantity)
-* **CONDITION\_DOC\_TO\_PO\_TAX\_LINES** - [PO Matching Guide](../po-matching-complete-guide.md#tax-lines)
+* **PURCHASE\_ORDER\_FULL\_MATCH** - [PO Matching Guide](../po-matching-complete-guide.md)
+* **CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE** - [PO Matching Guide](../po-matching-complete-guide.md)
+* **CONDITION\_DOC\_TO\_PO\_QUANTITY** - [PO Matching Guide](../po-matching-complete-guide.md)
+* **CONDITION\_DOC\_TO\_PO\_TAX\_LINES** - [PO Matching Guide](../po-matching-complete-guide.md)
 * **tasks\_create** - [Task Assignment Guide](../task-assignment-guide.md)
 
 ### Next Steps

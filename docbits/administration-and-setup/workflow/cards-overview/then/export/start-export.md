@@ -19,7 +19,7 @@ The **"Start Export"** workflow card is designed to initiate the export process 
 
 ## **Setup and Configuration:**
 
-This card does not require specific configuration as it uses the export settings already defined in the system. Users need to ensure that:
+Earlier versions use the export settings already defined in the system. On version 4, configure validation and select Status after export. Also check that:
 
 1. The **"Where"** and **"And Sections"** conditions are correctly configured, as the card only executes if these conditions evaluate to true.
 2. A valid export configuration is associated with the document in the system.
@@ -27,3 +27,7 @@ This card does not require specific configuration as it uses the export settings
 ## **Conclusion:**
 
 The **"Start Export"** workflow card provides a streamlined and automated way to trigger the export process. By relying on pre-configured settings and conditional evaluations, it ensures efficient and accurate document processing.
+
+## Card versions and result status
+
+The statement above about no card-specific configuration applies to the earlier Start Export card. Start Export with Validation v4 includes validation and **Status after export**. Choose `finished` to close a successfully exported document, or `exported` to keep it open for further processing. Earlier versions retain `finished`. See [Export cards and result status](../../export-cards-guide.md) for defaults, errors and tests.

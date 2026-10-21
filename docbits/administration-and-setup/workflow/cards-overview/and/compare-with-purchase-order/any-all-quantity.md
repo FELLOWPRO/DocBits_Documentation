@@ -71,3 +71,5 @@ An invoice shows that 100 units were delivered, but the purchase order only auth
 
 * **Version 3**: This workflow card compares the document quantity with the purchase order tolerance, helping to ensure that discrepancies in quantity are flagged and handled appropriately.
 * **Version 4**: Extends this functionality by allowing users to compare different entities, such as purchase order to received or purchase order to document, providing greater flexibility in handling more complex scenarios. Version 4 ensures tighter control over procurement and receiving workflows, offering more dynamic comparisons and actions based on the chosen comparison type.
+
+See [comparison direction, tolerance basis and saved-card versions](../../po-comparison-versions-guide.md) before changing the comparison sides.

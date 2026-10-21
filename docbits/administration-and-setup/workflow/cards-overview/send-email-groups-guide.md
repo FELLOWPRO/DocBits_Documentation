@@ -12,7 +12,7 @@ Add this card to the **Then** group of the Workflow Builder — the actions that
 
 **Status:** ✅ Single Version (No Breaking Changes) **Latest Version:** v1 (Active) **Note:** This card uses single version model with multi-language support via translation keys.
 
-📖 [Complete Card Database](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/DocFlow/docs/card_version.md)
+📖 [Complete Card Database](export-cards-guide.md)
 
 ***
 

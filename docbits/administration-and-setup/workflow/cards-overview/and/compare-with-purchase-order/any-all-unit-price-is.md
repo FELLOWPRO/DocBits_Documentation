@@ -32,8 +32,8 @@ This workflow card is used to compare the unit price in a document against the u
 * **Description**: Allows users to choose what entities will be compared in addition to the unit price.
 * **Options**:
   * **Purchase Order to Document**: Compares the unit price in the purchase order with the unit price in the document.
-  * **Received to Document**: Compares the received quantity to the unit price in the document.
-  * **Purchase Order to Received**: Compares the unit price in the purchase order with the received quantity.
+  * **Received to Document**: Compares the received-side amount derived from the matched purchase order with the document-side amount.
+  * **Purchase Order to Received**: Compares the purchase-order side with the derived received-side amount.
 
 ## **Functionality:**
 
@@ -58,3 +58,7 @@ This workflow card is used to compare the unit price in a document against the u
 ## **Conclusion:**
 
 Version 3 of the "Unit Price Comparison" workflow card is designed to ensure that unit prices in documents align with those in purchase orders, triggering actions based on defined conditions. Version 4 extends this functionality by introducing more complex comparison options, such as comparing purchase orders to documents, received quantities to documents, and purchase orders to received quantities. This added flexibility allows organizations to handle more sophisticated pricing and procurement scenarios, improving control and accuracy in their workflows.
+
+## Version 5 and comparison direction
+
+Version 5 includes Any/All, operator, tolerance amount, tolerance type and comparison-side selection. Newer releases offer both directions of the document, purchase-order and received-data comparisons. The reference side determines the base of a percentage tolerance. See [PO comparison versions](../../po-comparison-versions-guide.md) for all six options, migration of saved cards and test examples.

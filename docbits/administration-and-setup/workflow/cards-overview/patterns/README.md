@@ -290,7 +290,7 @@ Each pattern includes these standardized sections:
 
 * [Quick Reference Guide](https://github.com/Fellow-Consulting-AG/docbits/tree/main/WORKFLOW_LINKING_QUICK_REFERENCE.md)
 * [October 2025 Release Notes](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/workflow/changelog/2025-10-october.md)
-* [Card Versioning Reference](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/docs/card_version.md)
+* [Card Versioning Reference](../po-comparison-versions-guide.md)
 
 **Contact:**
 

@@ -21,7 +21,7 @@ The task cards on this page go in the **Then** group of the Workflow Builder —
 * **v3 → v4 Evolution:** Removed decision tree approach, added generic work item types (Task, Ticket, Issue)
 * **v2 → v3 Migration:** Added decision tree support (now mostly deprecated)
 
-📖 [Complete Version History](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/changelog/release.md#-task-management-cards) | [Card Version Database](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/DocFlow/docs/card_version.md)
+📖 [Complete Version History](../release.md) | [Card versions and behavior](card-versions-guide.md)
 
 ***
 

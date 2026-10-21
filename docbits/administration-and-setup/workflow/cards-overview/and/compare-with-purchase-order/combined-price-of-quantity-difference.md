@@ -49,3 +49,5 @@ This workflow card evaluates the combined price of a quantity difference, compar
 
 **Version 3** of the "Combined Price of Quantity Difference" workflow card offers a straightforward approach for comparing quantity discrepancies and triggering actions based on price thresholds.\
 **Version 4** extends this functionality by allowing comparisons between different entities (purchase order, received, document), providing more flexibility and control over the workflow. Organizations can now automate more complex scenarios and enforce tighter control over their procurement and receiving processes.
+
+See [comparison direction, tolerance basis and saved-card versions](../../po-comparison-versions-guide.md) before changing the comparison sides.

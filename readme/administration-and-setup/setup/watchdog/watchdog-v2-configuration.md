@@ -92,7 +92,7 @@ Legen Sie fest, wie und wohin verarbeitete Dokumente exportiert werden.
 
 Überwachen Sie den Zustand und die Aktivität des WatchDog-Dienstes.
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_status.png" alt="WatchDog Dienststatus"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog_v2_status-de.png" alt="WatchDog Dienststatus"><figcaption></figcaption></figure>
 
 ### Statusinformationen
 

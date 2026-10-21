@@ -720,7 +720,7 @@
     * [Schede di assegnazione e creazione di compiti](administration-and-setup/workflow/then/task/task-assignment-guide.md)
     * [Schede per la modifica di campi e tabelle](administration-and-setup/workflow/then/document-field/field-manipulation-guide.md)
     * [Esegui prompt DocOperator (script di automazione)](administration-and-setup/workflow/then/action/docoperator-script-guide.md)
-    * [Chiama l'API esterna](administration-and-setup/workflow/then/action/call-api-guide.md)
+    * [Chiamare la API DocBits](administration-and-setup/workflow/then/action/call-api-guide.md)
     * [Invia e-mail ai gruppi](administration-and-setup/workflow/then/action/send-email-groups-guide.md)
     * [Invia richiesta HTTPS](administration-and-setup/workflow/then/action/https-request-guide.md)
     * [Guide ai modelli di flusso di lavoro](administration-and-setup/workflow/patterns/README.md)

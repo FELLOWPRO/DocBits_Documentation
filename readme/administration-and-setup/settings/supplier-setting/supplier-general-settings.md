@@ -1,10 +1,10 @@
 # Allgemeine Lieferanteneinstellungen
 
-<figure><img src="../../../.gitbook/assets/supplier_general_settings.png" alt="Allgemeine Lieferanteneinstellungen"><figcaption><p>Seite „Allgemeine Lieferanteneinstellungen“</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_general_settings-de.png" alt="Allgemeine Lieferanteneinstellungen"><figcaption><p>Deutscher Abschnitt „Allgemein“ mit zusätzlichen Einladungsfeldern für das Lieferantenportal. Konfigurierte Feldwerte sind ausgeblendet.</p></figcaption></figure>
 
 ### Übersicht
 
-Die Oberfläche **Supplier General Settings** bietet Administratoren die wichtigsten Werkzeuge, um das Lieferantenportal anzupassen. Zu den Kernfunktionen gehören das Hochladen eines Firmenlogos sowie die Definition der Richtlinien- und Datenschutzerklärung. Diese Einstellungen sind entscheidend, um ein einheitliches Markenbild zu wahren und rechtliche Anforderungen einzuhalten.
+Die Oberfläche **Allgemeine Lieferanteneinstellungen** bietet Administratoren die wichtigsten Werkzeuge, um das Lieferantenportal anzupassen. Zu den Kernfunktionen gehören das Hochladen eines Firmenlogos sowie die Definition der Richtlinien- und Datenschutzerklärung. Diese Einstellungen sind entscheidend, um ein einheitliches Markenbild zu wahren und rechtliche Anforderungen einzuhalten.
 
 ### Logo hochladen
 
@@ -15,7 +15,7 @@ Mit der Funktion **Upload Logo** können Administratoren das Lieferantenportal a
 #### Schritte zum Hochladen eines Logos
 
 1. **Allgemeine Lieferanteneinstellungen öffnen**:
-   * Navigieren Sie im Hauptmenü zum Bereich **Supplier General Settings**.
+   * Navigieren Sie im Hauptmenü zum Bereich **Allgemeine Lieferanteneinstellungen**.
 2. **Bereich „Upload Logo“ suchen**:
    * Scrollen Sie auf der Einstellungsseite nach unten zum Bereich **Upload Logo**.
 3. **Neues Logo hochladen**:
@@ -41,7 +41,7 @@ Im Bereich **Policy and Privacy Statement** können Administratoren die rechtlic
 #### Schritte zum Hochladen der Richtlinien- und Datenschutzerklärung
 
 1. **Allgemeine Lieferanteneinstellungen öffnen**:
-   * Navigieren Sie im Hauptmenü zum Bereich **Supplier General Settings**.
+   * Navigieren Sie im Hauptmenü zum Bereich **Allgemeine Lieferanteneinstellungen**.
 2. **Bereich „Policy and Privacy Statement“ suchen**:
    * Scrollen Sie nach unten zum Bereich **Policy and Privacy Statement**.
 3. **Dokumente hochladen oder aktualisieren**:

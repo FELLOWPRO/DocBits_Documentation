@@ -4,7 +4,7 @@
 DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
 {% endembed %}
 
-<figure><img src="../../../../../.gitbook/assets/groups_and_permissions.png" alt="Gruppen und Berechtigungen"><figcaption><p>Seite Gruppen und Berechtigungen</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/groups_and_permissions-de.png" alt="Gruppen und Berechtigungen"><figcaption><p>Details einer ausgewählten Gruppe in der deutschen Oberfläche. Namen und Beschreibungen sind ausgeblendet.</p></figcaption></figure>
 
 Mit Gruppen und Berechtigungen steuern Sie, welche Benutzer auf bestimmte Dokumenttypen zugreifen und welche Aktionen sie ausführen dürfen.
 
@@ -14,19 +14,11 @@ Verwenden Sie den Schalter oben auf der Seite, um das System für Gruppen und Be
 
 ## Gruppenliste
 
-Die Tabelle zeigt alle konfigurierten Gruppen mit:
-
-| Spalte | Beschreibung |
-|--------|-------------|
-| **Group Name** | Der Name der Gruppe. |
-| **Group Description** | Eine kurze Beschreibung des Zwecks der Gruppe. |
-| **Actions** | Menü mit Optionen zum Bearbeiten oder Löschen der Gruppe. |
-
-Verwenden Sie die Leiste **Search**, um Gruppen nach Namen zu finden. Klicken Sie auf **+ New**, um eine neue Gruppe zu erstellen.
+Links sehen Sie die konfigurierten Gruppen. Verwenden Sie **Gruppe suchen**, um eine Gruppe nach ihrem Namen zu finden. Mit **+ Neu** öffnen Sie das Formular für eine neue Gruppe. Wenn Sie eine Gruppe auswählen, erscheinen rechts ihre Details, die Gruppenmitglieder und die verfügbaren Aktionen.
 
 ## Gruppenberechtigungen konfigurieren
 
-Wenn Sie eine Gruppe auswählen (über das Menü Actions → Edit), erscheint eine Berechtigungstabelle, in der Sie den Zugriff pro Dokumenttyp konfigurieren können:
+Wählen Sie eine Gruppe links aus und öffnen Sie in ihren Details die Zugriffskontrolle über das Schildsymbol. Dort können Sie den Zugriff pro Dokumenttyp konfigurieren:
 
 | Berechtigung | Beschreibung |
 |------------|-------------|
@@ -40,8 +32,8 @@ Jede Zeile der Berechtigungstabelle steht für einen Dokumenttyp (z. B. Rechnung
 
 ## Eine neue Gruppe erstellen
 
-1. Klicken Sie oben rechts auf **+ New**.
-2. Geben Sie einen **Group Name** und optional eine **Description** ein.
+1. Klicken Sie in der Gruppenliste auf **+ Neu**.
+2. Geben Sie einen **Gruppennamen** und optional eine **Beschreibung** ein.
 3. Konfigurieren Sie die Berechtigungen für jeden Dokumenttyp.
 4. Weisen Sie der Gruppe Benutzer zu.
-5. Klicken Sie auf **Save**, um die Änderungen zu übernehmen.
+5. Klicken Sie auf **Speichern**, um die Änderungen zu übernehmen.

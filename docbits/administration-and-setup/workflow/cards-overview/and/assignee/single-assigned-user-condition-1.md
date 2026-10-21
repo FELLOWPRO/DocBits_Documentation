@@ -1,4 +1,4 @@
-# Single Assigned User Condition
+# Single Assigned Group Condition
 
 <figure><img src="../../../../../.gitbook/assets/image (149).png" alt="" width="563"><figcaption></figcaption></figure>
 

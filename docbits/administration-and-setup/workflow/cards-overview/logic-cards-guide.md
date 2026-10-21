@@ -1,5 +1,7 @@
 # Logic cards: variables, conversions, JSON and triggers
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e019409102f9-en.png" alt="Conversion and JSON cards in the card library. Organization-variable cards require the Advanced Builder; visible templates also depend on the release."><figcaption><p>Conversion and JSON cards in the card library. Organization-variable cards require the Advanced Builder; visible templates also depend on the release.</p></figcaption></figure>
+
 Use these cards in the Advanced Workflow Builder where the selected card is available. Card visibility depends on your release and enabled templates. The references below describe version 2. Keep the version stored in an existing workflow in mind when comparing its fields with this guide.
 
 ## Choose the right value store

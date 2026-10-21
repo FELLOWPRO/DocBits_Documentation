@@ -1,5 +1,7 @@
 # Quote comparison cards
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-4a7af1d99c73-en.png" alt="Available cards in the selected category. Configure the placeholders before use."><figcaption><p>Available cards in the selected category. Configure the placeholders before use.</p></figcaption></figure>
+
 These And conditions use the quote or supplier-item data available on the document. Configure and test them after the required quote data has been loaded. A matching item identifier does not by itself prove that its price or unit of measure is correct.
 
 ## Select the check

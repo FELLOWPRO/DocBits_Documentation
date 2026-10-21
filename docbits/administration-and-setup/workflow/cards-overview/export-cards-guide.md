@@ -1,5 +1,7 @@
 # Workflow export cards and document status
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-11f244132c25-en.png" alt="Available cards in the selected category. Configure the placeholders before use."><figcaption><p>Available cards in the selected category. Configure the placeholders before use.</p></figcaption></figure>
+
 Choose whether to export immediately or queue a configuration for the final export at the end of the run. These choices are separate from the status the document should have after a successful export.
 
 | Card | When the export runs | Important settings |

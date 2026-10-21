@@ -14,7 +14,7 @@ Die Aufgabenkarten auf dieser Seite gehören zur Gruppe **Dann** des Workflow Bu
 
 ### 📌 Versionsinformationen
 
-**Am weitesten entwickelte Karte:** Aufgaben\_create (4 Versionen, neueste Version 4) **Andere Karten mit mehreren Versionen:** ACTION\_TASK\_FOR\_GROUP (v4), ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP (v3), ACTION\_ASSIGN\_TASK\_TO\_USER\_FROM\_FIELD\_WITH\_FALLBACK (v3), ACTION\_DECISION\_TREE\_CREATE\_TASKS (v3)
+**Am weitesten entwickelte Karte:** tasks\_create (4 Versionen, neueste Version 4) **Andere Karten mit mehreren Versionen:** ACTION\_TASK\_FOR\_GROUP (v4), ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP (v3), ACTION\_ASSIGN\_TASK\_TO\_USER\_FROM\_FIELD\_WITH\_FALLBACK (v3), ACTION\_DECISION\_TREE\_CREATE\_TASKS (v3)
 
 **Wichtige Änderungen:**
 
@@ -33,7 +33,7 @@ Aufgabenkarten erstellen Arbeitsaufträge für Teammitglieder. Wenn eine Rechnun
 
 ## Grundlegende Aufgabenerstellung
 
-### Karte: Aufgaben\_create / Aufgabe erstellen und dem Benutzer zuweisen
+### Karte: tasks\_create / Aufgabe erstellen und dem Benutzer zuweisen
 
 #### Zweck
 
@@ -649,7 +649,7 @@ Task created for correct person
 
 | Karte                                                        | Erstellt eine Aufgabe | Weist zu            | When        |
 | ----------------------------------------------------------- | ------------ | --------------------- | ----------- |
-| Aufgaben\_create                                               | Yes          | Individuell            | Immer      |
+| tasks\_create                                               | Yes          | Individuell            | Immer      |
 | ACTION\_TASK\_FOR\_GROUP                                    | Yes          | Gruppe                 | Immer      |
 | ACTION\_DECISION\_TREE\_CREATE\_TASKS                       | Yes          | Ergebnis der Entscheidungstabelle | Bedingt |
 | ACTION\_DECISION\_TREE\_TASKS\_SEQUENTIAL                   | Yes          | Mehrere (sequentiell) | Bedingt |

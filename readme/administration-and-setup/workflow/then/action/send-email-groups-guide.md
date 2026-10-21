@@ -63,7 +63,7 @@ Die zu sendende E-Mail-Nachricht
 
 * Wählen Sie aus vorhandenen Vorlagen
 * Jede Vorlage verfügt über vordefinierte Betreff-, Text- und Formatierungsvorgaben
-* Vorlagen können Platzhalter wie {Dokument\_Nummer}, {Lieferant\_Name} enthalten.
+* Vorlagen können Platzhalter wie {document\_number}, {supplier\_name} enthalten.
 
 **Beispielvorlage:**
 

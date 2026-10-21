@@ -1,4 +1,4 @@
-# Wenn das Land im Feld eines von ist
+# Land im Feld mit einer Länderliste vergleichen
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-364a45ddb67d-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 

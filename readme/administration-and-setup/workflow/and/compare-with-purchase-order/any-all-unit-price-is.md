@@ -1,4 +1,4 @@
-# Jeder/Alle Stückpreis ist
+# Beliebige oder alle Stückpreise vergleichen
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6c572102504a-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 

@@ -1,4 +1,4 @@
-# Wenn Land im Feld
+# Land im Feld prüfen
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-70b0b5860da5-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 

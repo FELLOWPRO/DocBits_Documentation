@@ -1,4 +1,4 @@
-# Dokumenttyp Operation einer von
+# Dokumenttyp aus einer Liste prüfen
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f6993281dacc-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 

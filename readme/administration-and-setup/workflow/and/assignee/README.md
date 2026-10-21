@@ -1,4 +1,4 @@
-# Bevollmächtigter
+# Zugewiesener Benutzer
 
 Die **Zugewiesener Benutzer**-Karten im **Karte hinzufügen**-Picker des Workflow-Builders (öffnen über die **Und**-Gruppe → **Karte hinzufügen**):
 

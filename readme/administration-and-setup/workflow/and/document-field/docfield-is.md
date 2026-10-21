@@ -1,4 +1,4 @@
-# Docfield ist
+# Status des Dokumentfelds
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f38fe175443d-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 

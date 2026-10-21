@@ -1,4 +1,4 @@
-# Rufen Sie die externe API auf
+# Externe API aufrufen
 
 ***
 

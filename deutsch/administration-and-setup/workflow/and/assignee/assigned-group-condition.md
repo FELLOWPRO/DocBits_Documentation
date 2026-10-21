@@ -1,6 +1,6 @@
 # Zugewiesene Gruppenbedingung
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-bdcdca2a5488-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 **Zweck:**
 
@@ -8,7 +8,7 @@ Diese Workflow-Karte führt Operationen abhängig davon aus, ob eine Aufgabe ode
 
 **Bestandteile der Karte:**
 
-1. **Betreiber**
+1. **Operator**
    * **Beschreibung:** Legt die logische Bedingung fest, die auf die Gruppenzuweisung angewendet wird.
    * **Optionen:**
      * **IS:** Löst die Operation aus, wenn die zugewiesene Gruppe des Dokuments oder der Aufgabe mit einer der Gruppen in der angegebenen Liste übereinstimmt.

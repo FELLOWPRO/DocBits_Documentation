@@ -1,12 +1,12 @@
-# Zustandskarten – Vollständiger Leitfaden
+# Bedingungskarten – Vollständiger Leitfaden
 
-## Zustandskarten – Vollständiger Leitfaden
+## Bedingungskarten – Vollständiger Leitfaden
 
-Die Bedingungskarten auf dieser Seite gehören in die **When**- und **And**-Gruppe des Workflow-Builders – sie entscheiden, ob die Then-Aktionen ausgeführt werden:
+Die Bedingungskarten auf dieser Seite gehören in die **Wenn**- und **Und**-Gruppe des Workflow-Builders – sie entscheiden, ob die Then-Aktionen ausgeführt werden:
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow-Builder-Canvas mit When-, And- und Then-Karten"><figcaption><p>Bedingungskarten werden über <strong>Add Card</strong> zur <strong>When</strong>- und <strong>And</strong>-Gruppe hinzugefügt.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-de.png" alt="Nicht gespeichertes Beispiel mit Wenn-, Und- und Dann-Karten. Füllen Sie alle Platzhalter vor der Ausführung aus."><figcaption><p>Nicht gespeichertes Beispiel mit Wenn-, Und- und Dann-Karten. Füllen Sie alle Platzhalter vor der Ausführung aus.</p></figcaption></figure>
 
-**Umfasst:** 31 verbleibende Zustandskarten
+**Umfasst:** 31 verbleibende Bedingungskarten
 
 ***
 
@@ -706,7 +706,7 @@ NO: Assign to Finance Manager
 
 ## Vergleich der Bedingungskarten
 
-| Karte                                        | Checks          | Betreiber      | Use               |
+| Karte                                        | Prüfungen          | Operator      | Verwendung               |
 | ------------------------------------------- | --------------- | ------------- | ----------------- |
 | CONDITION\_DOC\_STATUS\_IS\_ISNOT           | Document status | IST / IST NICHT   | Stage check       |
 | CONDITION\_DOC\_STATUS\_IS\_ISNOT\_IN\_LIST | Status in list  | IN / NICHT IN   | Mehrere Status |

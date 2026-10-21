@@ -1,5 +1,7 @@
 # Workflow-Exportkarten und Dokumentstatus
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-11f244132c25-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
+
 Wählen Sie, ob der Export sofort erfolgen soll oder ob eine Konfiguration am Ende des Laufs für den endgültigen Export in die Warteschlange gestellt werden soll. Diese Auswahlmöglichkeiten sind unabhängig vom Status, den das Dokument nach einem erfolgreichen Export haben sollte.
 
 | Karte | Wenn der Export ausgeführt wird | Wichtige Einstellungen |

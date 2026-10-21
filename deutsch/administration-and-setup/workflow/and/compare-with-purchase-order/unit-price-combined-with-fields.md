@@ -1,6 +1,6 @@
 # Stückpreis kombiniert mit Feldern
 
-<figure><img src="../../../../.gitbook/assets/image (26) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-34234b404af7-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -11,7 +11,7 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob der Stückpreis in Kom
 1. **Feldname**
    * **Beschreibung:** Gibt das Dokumentfeld an, das den mit dem Stückpreis zu kombinierenden Wert enthält.
    * **Detail:** Dieser muss exakt mit dem Bezeichner des ersten Feldes innerhalb des Dokuments übereinstimmen.
-2. **Betreiber**
+2. **Operator**
    * **Beschreibung:** Legt die Bedingung fest, die auf den Vergleich zwischen dem kombinierten Wert und dem angegebenen Wert angewendet wird.
    * **Optionen:**
      * **Gleich (=):** Prüft, ob der kombinierte Wert aus Stückpreis und Feld mit dem angegebenen Wert übereinstimmt.

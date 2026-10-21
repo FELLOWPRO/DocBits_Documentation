@@ -1,6 +1,6 @@
 # Erstellen Sie eine neue Aufgabe und weisen Sie sie der Beschaffungsgruppe zu
 
-<figure><img src="../../../../.gitbook/assets/image (292).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-892212db33b0-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 

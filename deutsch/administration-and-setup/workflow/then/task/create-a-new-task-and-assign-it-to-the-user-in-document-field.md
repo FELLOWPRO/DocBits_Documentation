@@ -1,6 +1,6 @@
 # Erstellen Sie eine neue Aufgabe und weisen Sie sie dem Benutzer im Dokumentfeld zu
 
-<figure><img src="../../../../.gitbook/assets/image (290).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f325db80cf3-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 

@@ -1,6 +1,6 @@
 # Vergleichen Sie die Gesamtgebühren
 
-<figure><img src="../../../../.gitbook/assets/image (271).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-97d69520f403-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -11,7 +11,7 @@ Diese Workflow-Karte vergleicht die Gesamtkosten in einem Dokumentfeld mit den e
 1. **Feldname:**
    * **Beschreibung**: Gibt das Dokumentfeld an, das die Gesamtkostenwerte enthält, die mit den Kosten in der Bestellung verglichen werden.
    * **Detailliert**: Der Wert in diesem Feld stellt die im Dokument (z. B. Rechnung) angewendeten Gesamtkosten dar und wird mit den Kosten der Bestellung verglichen.
-2. **Betreiber:**
+2. **Operator:**
    * **Beschreibung**: Legt die Bedingung fest, die auf den Vergleich zwischen den Gesamtkosten im Dokument und den Kosten in der Bestellung angewendet wird.
    * **Optionen**:
      * **Gleich (=)**: Überprüft, ob die Gesamtkosten im Dokument mit den Kosten in der Bestellung übereinstimmen.

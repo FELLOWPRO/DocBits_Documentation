@@ -1,8 +1,8 @@
 # Vergleichen Sie die Auftragsbestätigung mit der Bestellung
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4bbb1060027b-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (267).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-d49578e0648e-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## Zweck:
 
@@ -21,7 +21,7 @@ Diese DocBits-Karte dient dazu, ein bestimmtes Bestelldatenfeld – wie Menge, R
      * **Menge**: Vergleicht die bestellte Menge mit der bestätigten Menge.
      * **Rabatt**: Überprüft, ob der Rabatt in der Bestätigung mit der Bestellung übereinstimmt.
      * **Stückpreis**: Stellt sicher, dass der Stückpreis in der Bestätigung mit der Bestellung übereinstimmt.
-3. **Betreiber**
+3. **Operator**
    * **Beschreibung**: Definiert die Bedingung, die auf den Vergleich des ausgewählten Datenfelds angewendet wird.
    * **Optionen**:
      * **Gleich (=)**: Bestätigt, dass der Wert mit der Bestellung übereinstimmt.

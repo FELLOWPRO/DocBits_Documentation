@@ -1,5 +1,7 @@
 # Logikkarten: Variablen, Konvertierungen, JSON und Trigger
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e019409102f9-de.png" alt="Konvertierungs- und JSON-Karten in der Kartenbibliothek. Karten für Organisationsvariablen benötigen den Advanced Builder; sichtbare Vorlagen hängen außerdem vom Release ab. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt."><figcaption><p>Konvertierungs- und JSON-Karten in der Kartenbibliothek. Karten für Organisationsvariablen benötigen den Advanced Builder; sichtbare Vorlagen hängen außerdem vom Release ab. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt.</p></figcaption></figure>
+
 Verwenden Sie diese Karten im Advanced Workflow Builder, wo die ausgewählte Karte verfügbar ist. Die Sichtbarkeit der Karte hängt von Ihrer Version und den aktivierten Vorlagen ab. Die folgenden Referenzen beschreiben Version 2. Berücksichtigen Sie die in einem vorhandenen Workflow gespeicherte Version, wenn Sie deren Felder mit diesem Handbuch vergleichen.
 
 ## Wählen Sie den richtigen Wertspeicher

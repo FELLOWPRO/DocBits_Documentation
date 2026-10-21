@@ -1,6 +1,8 @@
 # Alle Gebühren
 
-<figure><img src="../../../../.gitbook/assets/workflow_cards_and_po_compare_any_all_charges.png" alt="Die Karte in der Kartenbibliothek, Version 2 und Version 3"><figcaption><p>Die Karte in der Kartenbibliothek. Version 2 oben, Version 3 unten.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-420a0e403552-v2-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-420a0e403552-v3-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -17,7 +19,7 @@ Der Bestellabgleich muss vor dieser Karte laufen. Hat das Dokument keine zugeord
    * **Optionen**:
      * **Irgendeine**: mindestens eine Gebühr muss den Vergleich erfüllen.
      * **Alle**: jede Gebühr muss den Vergleich erfüllen.
-2. **Betreiber:**
+2. **Operator:**
    * **Beschreibung**: Wie der Gebührenbetrag des Dokuments mit dem Bestellbetrag derselben Gebühr verglichen wird.
    * **Optionen**:
      * **innerhalb**: die beiden Beträge müssen übereinstimmen, wobei die Toleranz zugelassen wird.

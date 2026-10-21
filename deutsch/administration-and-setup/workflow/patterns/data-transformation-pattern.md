@@ -6,7 +6,7 @@
 
 Dieses Pattern bauen Sie im **Workflow-Builder** (Workflow Dashboard → Workflow List → Add Workflow). Klicken Sie auf **Karte hinzufügen** und öffnen Sie die Kategorie **Dokumentfeld** — sie enthält die Lese-, Schreib-, Berechnungs- und Formatierungskarten, die dieses Pattern aneinanderreiht:
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card-Bibliothek im Workflow-Builder, nach Kategorie gruppiert"><figcaption><p>Die <strong>Add Card</strong>-Bibliothek — Karten zum Lesen/Schreiben von Feldern, zum Berechnen und Formatieren finden Sie unter der Kategorie <strong>Document Field</strong>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt.</p></figcaption></figure>
 
 ***
 

@@ -1,6 +1,6 @@
 # Setzen Sie das Kontrollkästchen auf
 
-<figure><img src="../../../../.gitbook/assets/image (279).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-bab00fc455aa-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -12,7 +12,7 @@ Diese Workflow-Karte ist darauf ausgelegt, ein Kontrollkästchenfeld auf einen a
    * **Beschreibung**: Gibt das Feld an, in dem das Kontrollkästchen gesetzt wird.
    * **Detailliert**: Das zu aktualisierende Kontrollkästchenfeld wird durch den Feldnamen identifiziert.
 2. **Boolescher Wert**
-   * **Beschreibung**: Legt den Wert fest, auf den das Kontrollkästchenfeld gesetzt wird, wenn die Bedingungen in den Abschnitten **Wo** und **And** beide erfüllt sind.
+   * **Beschreibung**: Legt den Wert fest, auf den das Kontrollkästchenfeld gesetzt wird, wenn die Bedingungen in den Abschnitten **Wo** und **Und** beide erfüllt sind.
    * **Optionen**:
      * **True**: Das Kontrollkästchen wird auf **true** gesetzt, wenn die Bedingungen erfüllt sind.
      * **False**: Das Kontrollkästchen wird auf **false** gesetzt, wenn die Bedingungen erfüllt sind.

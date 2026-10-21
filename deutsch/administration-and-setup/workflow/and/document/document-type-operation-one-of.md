@@ -1,6 +1,6 @@
 # Dokumenttyp Operation einer von
 
-<figure><img src="../../../../.gitbook/assets/userlmn_14ab8ac5e693d9bbe68d178795d12a9f (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f6993281dacc-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -8,7 +8,7 @@ Diese Karte ist darauf ausgelegt, Aktionen an Dokumenten abhängig von ihrem Typ
 
 ## **Bestandteile der Karte:**
 
-1. **Betreiber**
+1. **Operator**
    * **Beschreibung**: Bestimmt die auf die Dokumenttypen angewendete bedingte Logik.
    * **Optionen**:
      * **is**: Die Operation wird ausgelöst, wenn der Typ des Dokuments mit einem der angegebenen Typen in der Liste übereinstimmt.

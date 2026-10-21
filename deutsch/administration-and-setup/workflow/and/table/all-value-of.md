@@ -1,6 +1,6 @@
 # Alle Werte von
 
-<figure><img src="../../../../.gitbook/assets/image (45).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-b067847bddd4-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -9,7 +9,7 @@ Diese DocBits-Karte wird verwendet, um zu validieren, ob **alle Werte** in einer
 ## **Funktionalität:**
 
 * **Validierung mit Regex-Muster:** Diese Karte prüft, ob **alle Werte** in einer angegebenen Tabellenspalte mit dem angegebenen regulären Ausdruck übereinstimmen. Der Workflow wird nur fortgesetzt, wenn jeder Eintrag in der Spalte die Bedingung erfüllt.
-* **Betreiber:** Benutzer definieren die Spalte und geben das Regex-Muster an. Die verfügbare Bedingung umfasst:
+* **Operator:** Benutzer definieren die Spalte und geben das Regex-Muster an. Die verfügbare Bedingung umfasst:
   * **Matches Regex Pattern:** Überprüft, ob jeder Wert in der angegebenen Spalte mit dem Regex-Muster übereinstimmt.
 * **Tabellen- und Spaltenauswahl:** Benutzer geben die Tabelle und die Spalte an, die sie auf vollständige Regex-Muster-Übereinstimmungen prüfen möchten.
 

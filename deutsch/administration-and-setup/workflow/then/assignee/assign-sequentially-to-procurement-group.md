@@ -1,6 +1,6 @@
 # Der Beschaffungsgruppe sequenziell zuweisen
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3b31b4f42710-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck**
 

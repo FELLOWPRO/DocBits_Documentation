@@ -8,14 +8,14 @@ Verwenden Sie **Mit Bestellung vergleichen** im Workflow-Builder, wenn eine Auft
 
 ## Das Ergebnis in ein Feld schreiben
 
-<figure><img src="../../../../.gitbook/assets/dbdc-407-workflow-card-write-text-de.png" alt="Karte „Mit Bestellung vergleichen“ im Workflow-Builder mit den Platzhaltern Bestellungsdaten, Operator, Text, Feld Name und Ergebnis der Bedingung." width="563"><figcaption>Version 2: Text in ein Feld schreiben, abhängig vom Bedingungsergebnis.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-77711a53d4d0-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
-Wählen Sie **Bestellungsdaten** aus der Auftragsbestätigung und einen **Betreiber** für den Vergleich mit der Bestellung. Geben Sie den **Text** ein, der geschrieben werden soll, wählen Sie das **Feld Name** und das **Ergebnis der Bedingung**, das das Schreiben auslösen soll.
+Wählen Sie **Bestellungsdaten** aus der Auftragsbestätigung und einen **Operator** für den Vergleich mit der Bestellung. Geben Sie den **Text** ein, der geschrieben werden soll, wählen Sie das **Feld Name** und das **Ergebnis der Bedingung**, das das Schreiben auslösen soll.
 
 ## Die Daten vergleichen
 
-<figure><img src="../../../../.gitbook/assets/dbdc-407-workflow-card-compare-as-de.png" alt="Karte „Mit Bestellung vergleichen“ im Workflow-Builder mit den Platzhaltern Beliebig/Alle, Bestellungsdaten, Operator und Vergleichsdaten." width="563"><figcaption>Version 4: ausgewählte Daten der Auftragsbestätigung mit Bestelldaten vergleichen.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-d49578e0648e-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
-Wählen Sie **Beliebig/Alle**, um festzulegen, ob eine oder alle ausgewählten Bedingungen übereinstimmen müssen. Wählen Sie anschließend die **Bestellungsdaten**, den **Betreiber** und die **Vergleichsdaten** für den Bestellvergleich.
+Wählen Sie **Beliebig/Alle**, um festzulegen, ob eine oder alle ausgewählten Bedingungen übereinstimmen müssen. Wählen Sie anschließend die **Bestellungsdaten**, den **Operator** und die **Vergleichsdaten** für den Bestellvergleich.
 
 Die umgebenden Schritte finden Sie unter [Workflow](../..) und [Mit Bestellung vergleichen](.).

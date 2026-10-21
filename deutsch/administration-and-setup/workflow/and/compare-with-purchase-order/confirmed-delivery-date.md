@@ -1,6 +1,6 @@
 # Bestätigter Liefertermin
 
-<figure><img src="../../../../.gitbook/assets/image (266).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-63b0722ae913-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck**
 
@@ -8,7 +8,7 @@ Diese Workflow-Karte ist darauf ausgelegt zu überprüfen, ob die bestätigten L
 
 ## **Bestandteile der Karte**
 
-1. **Betreiber**
+1. **Operator**
    * **Beschreibung:** Legt die Bedingung für den Vergleich des bestätigten Lieferdatums mit dem akzeptierten Lieferdatum fest.
    * **Optionen:**
      * **Is:** Bestätigt, dass das Lieferdatum mit dem akzeptierten Lieferdatum in den Stammdaten übereinstimmt.

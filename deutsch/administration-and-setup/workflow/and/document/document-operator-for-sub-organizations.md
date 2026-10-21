@@ -1,6 +1,6 @@
 # Dokumentenbetreiber für Unterorganisationen
 
-<figure><img src="../../../../.gitbook/assets/image (42).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f97575f86ed-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## Zweck:
 
@@ -8,7 +8,7 @@ Diese Workflow-Karte wertet aus, ob ein Dokument Teil einer bestimmten Unterorga
 
 ## Bestandteile der Karte:
 
-1. **Betreiber**
+1. **Operator**
    * **Beschreibung:** Legt fest, ob das Dokument Teil der angegebenen Unterorganisation sein muss oder nicht.
    * **Optionen:**
      * **Is:** Das Dokument muss Teil der angegebenen Unterorganisation sein, damit die Bedingung erfüllt ist.

@@ -4,7 +4,7 @@
 DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
 {% endembed %}
 
-<figure><img src="../../../../../.gitbook/assets/groups_and_permissions.png" alt="Grupos e Permissões"><figcaption><p>Página Grupos e Permissões</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-t009-pt.png" alt="Detalhes do grupo selecionado; dados pessoais ocultos."><figcaption><p>Detalhes do grupo selecionado; dados pessoais ocultos.</p></figcaption></figure>
 
 Grupos e Permissões permitem controlar quais usuários podem acessar tipos de documento específicos e quais ações podem executar.
 
@@ -18,11 +18,11 @@ A tabela exibe todos os grupos configurados com:
 
 | Coluna | Descrição |
 |--------|-------------|
-| **Group Name** | O nome do grupo. |
-| **Group Description** | Uma breve descrição da finalidade do grupo. |
-| **Actions** | Menu com opções para editar ou excluir o grupo. |
+| **Nome do grupo** | O nome do grupo. |
+| **Descrição do Grupo** | Uma breve descrição da finalidade do grupo. |
+| **Ações** | Menu com opções para editar ou excluir o grupo. |
 
-Use a barra **Search** para encontrar grupos pelo nome. Clique em **+ New** para criar um novo grupo.
+Use a barra **Procurar** para encontrar grupos pelo nome. Clique em **+ New** para criar um novo grupo.
 
 ## Configurando as Permissões do Grupo
 
@@ -30,18 +30,18 @@ Ao selecionar um grupo (pelo menu Actions → Edit), aparece uma tabela de permi
 
 | Permissão | Descrição |
 |------------|-------------|
-| **View** | Permissão para ver documentos deste tipo. |
-| **Update** | Permissão para modificar documentos deste tipo. |
-| **Delete** | Permissão para remover documentos deste tipo. |
-| **First Approval** | Permissão para realizar a aprovação inicial. |
-| **Second Approval** | Permissão para realizar um nível secundário de aprovação (se aplicável). |
+| **Visualizar** | Permissão para ver documentos deste tipo. |
+| **Atualizar** | Permissão para modificar documentos deste tipo. |
+| **Excluir** | Permissão para remover documentos deste tipo. |
+| **Primeira Aprovação** | Permissão para realizar a aprovação inicial. |
+| **Segunda Aprovação** | Permissão para realizar um nível secundário de aprovação (se aplicável). |
 
 Cada linha da tabela de permissões representa um tipo de documento (por exemplo, Fatura, Nota de Crédito, Nota de Entrega). Marque ou desmarque as caixas de seleção para conceder ou revogar permissões para esse grupo.
 
 ## Criando um Novo Grupo
 
 1. Clique em **+ New** no canto superior direito.
-2. Informe um **Group Name** e, opcionalmente, uma **Description**.
+2. Informe um **Nome do grupo** e, opcionalmente, uma **Descrição**.
 3. Configure as permissões para cada tipo de documento.
 4. Atribua usuários ao grupo.
-5. Clique em **Save** para aplicar.
+5. Clique em **Salvar** para aplicar.

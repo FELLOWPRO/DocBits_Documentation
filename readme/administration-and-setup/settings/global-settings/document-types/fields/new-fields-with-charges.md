@@ -1,94 +1,14 @@
-# Novos Campos com Encargos
+# Criar campos com encargos adicionais
 
+Abra o tipo de documento e os respetivos campos nas definições. No grupo pretendido, escolha a opção para criar um campo.
 
-## Passo 1: Acessar as Configurações de Campo
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_add_field_with_charges_1-pt.png" alt="Dados do campo antes de criar um novo campo."><figcaption><p>Dados do campo antes de criar um novo campo.</p></figcaption></figure>
 
-1. Navegar para Campos:
+1. Introduza um nome técnico e um título legível.
+2. Selecione o tipo de dados.
+3. Ative a opção de encargos adicionais para mostrar a associação dos encargos.
+4. Escolha a associação pretendida. As opções disponíveis dependem da configuração da organização.
 
-• No painel principal, clique na opção “Campos” localizada na barra lateral.
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_add_field_with_charges_2-pt.png" alt="Rascunho de campo com a opção de encargos adicionais ativa."><figcaption><p>Rascunho de campo com a opção de encargos adicionais ativa.</p></figcaption></figure>
 
-• Isso abrirá a página de Configurações de Campo, onde você pode gerenciar os tipos de documentos e as configurações de reconhecimento.
-
-2. Selecionar Tipo de Documento:
-
-• Na seção “TIPOS DE DOCUMENTO”, selecione o tipo de documento específico para o qual deseja adicionar ou modificar um campo.
-
-
-
-<div>
-
-<figure><img src="../../../../../.gitbook/assets/docbits_add_field_with_charges_1.png" alt="Docbits Add Field With Charges 1"><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../../../../.gitbook/assets/docbits_add_field_with_charges_2.png" alt="Docbits Add Field With Charges 2"><figcaption></figcaption></figure>
-
-</div>
-
-## Passo 2: Adicionar um Novo Campo
-
-1. Abrir o Diálogo Adicionar Campo:
-
-• Clique no botão “Criar Campo” localizado na respectiva seção (por exemplo, Detalhes da Fatura, Detalhes do Pagamento, Pedido de Compra).
-
-2. Inserir Detalhes do Campo:
-
-• Uma caixa de diálogo intitulada “Detalhes do campo do documento” aparecerá.
-
-• Preencha os detalhes necessários:
-
-• Nome: Digite o nome do novo campo.
-
-• Título: Digite um título descritivo para o campo.
-
-• Selecionar tipo de campo: Escolha o tipo de campo apropriado no menu suspenso.
-
-3. Ativar Elemento de Encargos:
-
-• Se este campo estiver associado a um encargo, marque a caixa “Ativar elemento de encargos”.
-
-4. Selecionar Mapeamento de Custos:
-
-• Ao ativar os encargos, um menu suspenso aparecerá.
-
-• Selecione o tipo de encargo apropriado na lista (por exemplo, ADD ON - ORIGIN, FUEL SURCHARGE, TOTAL FREIGHT).
-
-
-
-## Passo 3: Salvar o Novo Campo
-
-1. Salvar Configurações:
-
-• Clique no botão “SALVAR” para adicionar o novo campo com o mapeamento de encargos especificado.
-
-• Se precisar fazer alterações, clique no botão “VOLTAR” para retornar à tela anterior.
-
-2. Finalizar a Criação do Campo:
-
-• Após salvar, o novo campo aparecerá na lista sob o tipo de documento especificado.
-
-• Certifique-se de que as configurações de OCR e Match Score estejam configuradas conforme necessário para um reconhecimento preciso.
-
-3. Concluir a Configuração:
-
-• Assim que todos os campos desejados forem adicionados e configurados, clique no botão “Salvar Configurações” na parte inferior da página de Configurações de Campo para aplicar as alterações.
-
-
-
-## Notas Adicionais
-
-• Campos Obrigatórios:
-
-• Se um campo for obrigatório, marque a caixa “OBRIGATÓRIO” ao lado do nome do campo.
-
-• Editar Campos Existentes:
-
-• Para editar um campo existente, clique no nome do campo, atualize os detalhes e salve as alterações.
-
-• Reatribuir Grupo de Campos:
-
-• Use a opção “Reatribuir Grupo de Campos” para alterar o agrupamento de campos, se necessário.
-
-• Configurações de Dados Mestres:
-
-• Para configuração avançada, acesse as “Configurações de Dados Mestres” para gerenciar as configurações gerais de campos e tipos de documentos.
+O exemplo é um rascunho sem guardar. Guardar cria o campo; volte atrás se não pretender criá-lo. Depois verifique separadamente obrigatório, validação forçada, OCR e Match Score na lista de campos.

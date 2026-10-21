@@ -1,6 +1,6 @@
-# Rule Management
+# Gestão de regras
 
-<figure><img src="../../../../.gitbook/assets/rule_management.png" alt="Rule Management"><figcaption><p>Página Rule Management</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_management-pt.png" alt="Gestão de regras com nomes configurados ocultos. Alguns cabeçalhos da aplicação permanecem em inglês."><figcaption><p>Gestão de regras com nomes configurados ocultos. Alguns cabeçalhos da aplicação permanecem em inglês.</p></figcaption></figure>
 
 O Rule Management permite criar e gerenciar regras de resolução de conflitos baseadas em TOML, usadas durante o PO Matching e a exportação de documentos. Cada conjunto de regras define como o DocBits trata as divergências entre os dados da fatura e os dados do pedido de compra.
 
@@ -10,11 +10,11 @@ A tabela principal mostra todas as configurações de regras:
 
 | Coluna | Descrição |
 |--------|-------------|
-| **Name** | O nome do conjunto de regras. Itens marcados como **default** são modelos fornecidos pelo sistema. |
-| **Description** | Um resumo do que o conjunto de regras trata. |
-| **Last Modified By** | O usuário que editou este conjunto de regras pela última vez. |
-| **Last Modified At** | Data e hora da última alteração. |
-| **Actions** | Menu de três pontos para editar, copiar ou excluir. |
+| **Nome** | O nome do conjunto de regras. Itens marcados como **padrão** são modelos fornecidos pelo sistema. |
+| **Descrição** | Um resumo do que o conjunto de regras trata. |
+| **Última modificação por** | O usuário que editou este conjunto de regras pela última vez. |
+| **Última modificação em** | Data e hora da última alteração. |
+| **Ações** | Menu de três pontos para editar, copiar ou excluir. |
 
 Clique em **+ New** para criar um novo conjunto de regras ou clique no nome de um existente para abrir o editor de regras.
 
@@ -90,7 +90,6 @@ Esses operadores definem como os valores reais da fatura são comparados com os 
 
 • fora da tolerância
 
-
 ### Status de aprovação
 
 Indica se uma divergência foi aprovada ou não:
@@ -100,7 +99,6 @@ Indica se uma divergência foi aprovada ou não:
 • rejeitada
 
 • qualquer
-
 
 ### Tipos de ação
 
@@ -134,7 +132,6 @@ Define as ações específicas a executar quando uma divergência é detectada:
 
 • linha de imposto de nota de crédito
 
-
 ### Exemplos de regras
 
 #### [Casos 1, 2, 3: quantidade e preço unitário dentro da tolerância](transactionconfig-pro-template/case-1-2-3-quantity-and-unit-price-within-tolerance.md)
@@ -143,22 +140,17 @@ Define as ações específicas a executar quando uma divergência é detectada:
 
 • Ação: o sistema aceita os valores da fatura e calcula o valor total.
 
-
-
 #### [Casos 4, 5: quantidade dentro da tolerância, preço unitário fora da tolerância (aprovado)](./#caso-4-5-quantidade-dentro-da-tolerancia-preco-unitario-fora-da-tolerancia-aprovado)
 
 • Finalidade: aplica-se quando a quantidade está dentro da tolerância, mas o preço unitário está fora da tolerância e foi aprovado.
 
 • Ação: o sistema ajusta o preço unitário para corresponder ao pedido de compra e aplica os encargos de linha necessários.
 
-
-
 #### [Caso 6: quantidade dentro da tolerância, preço unitário fora da tolerância negativa (rejeitado)](transactionconfig-pro-template/case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
 
 • Finalidade: trata casos em que o preço unitário é menor que o esperado e está fora da faixa de tolerância, resultando em rejeição.
 
 • Ação: o sistema ajusta o preço unitário para corresponder ao pedido de compra, gera uma nota de crédito pela diferença e aplica encargos de cabeçalho conforme necessário.
-
 
 ### Tratamento de encargos e impostos
 
@@ -180,7 +172,7 @@ Define as ações específicas a executar quando uma divergência é detectada:
 
 ### Captura de tela 1: interface do Rule Management
 
-<figure><img src="../../../../.gitbook/assets/rule_management_interface.png" alt="Interface do Rule Management"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_management_interface-pt.png" alt="Resumo da gestão de regras e ações disponíveis. Alguns cabeçalhos da aplicação permanecem em inglês."><figcaption><p>Resumo da gestão de regras e ações disponíveis. Alguns cabeçalhos da aplicação permanecem em inglês.</p></figcaption></figure>
 
 Esta captura de tela mostra a interface do Rule Management, na qual os administradores podem visualizar e gerenciar todas as regras de resolução de conflitos. Os principais elementos incluem:
 
@@ -192,7 +184,7 @@ Esta captura de tela mostra a interface do Rule Management, na qual os administr
 
 ### Captura de tela 2: edição detalhada de regras
 
-<figure><img src="../../../../.gitbook/assets/rule_detailed_editing.png" alt="Edição detalhada de regras"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_detailed_editing-pt.png" alt="Editor de regras TOML com um exemplo técnico de configuração."><figcaption><p>Editor de regras TOML com um exemplo técnico de configuração.</p></figcaption></figure>
 
 Esta captura de tela ilustra a visualização detalhada de uma regra específica em edição. Os principais elementos incluem:
 

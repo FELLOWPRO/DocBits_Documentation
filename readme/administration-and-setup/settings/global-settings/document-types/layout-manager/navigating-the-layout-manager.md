@@ -1,5 +1,13 @@
 # Navegando no Construtor de Layout
 
+<figure><img src="../../../../../.gitbook/assets/prior-u011-pt.png" alt="Acesso aos tipos de documentos a partir das definições."><figcaption><p>Acesso aos tipos de documentos a partir das definições.</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/prior-u012-pt.png" alt="Elementos e grupos de um layout existente."><figcaption><p>Elementos e grupos de um layout existente.</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/prior-u013-pt.png" alt="Campos disponíveis no construtor de layouts."><figcaption><p>Campos disponíveis no construtor de layouts.</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/prior-u014-pt.png" alt="Elementos de formulário no construtor de layouts. Os nomes dos elementos de formulário permanecem em inglês."><figcaption><p>Elementos de formulário no construtor de layouts. Os nomes dos elementos de formulário permanecem em inglês.</p></figcaption></figure>
+
 Use o **Construtor de Layout** para organizar os grupos e campos que as pessoas veem em um documento. Este guia usa o layout de **Fatura** em português em uma organização de teste da Sandbox.
 
 ## Abrir o layout de Fatura

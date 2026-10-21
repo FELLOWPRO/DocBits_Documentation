@@ -9,7 +9,7 @@ As regras de transformação limpam ou reescrevem os dados extraídos **automati
 * um **campo de cabeçalho** (número da fatura, moeda, ID fiscal do fornecedor …),
 * uma **coluna** em cada linha de uma tabela (unidade, número do item, base de preço …),
 * as **linhas** de uma tabela (limpá-las, adicionar uma linha),
-* um **atributo do documento** — atualmente a suborganização à qual ele pertence (**Routing**).
+* um **atributo do documento** — atualmente a suborganização à qual ele pertence (**Roteamento**).
 
 Cada regra **lê** um valor, passa-o por um curto **pipeline** de etapas e **grava** o resultado de volta. As regras são executadas **antes** da validação, dos scripts e da correspondência de pedidos de compra, de modo que tudo o que vem depois já enxerga os valores corrigidos.
 
@@ -36,23 +36,23 @@ As regras de transformação são ativadas **por tipo de documento** por um **ad
 
 1. Acesse **Settings → Global Settings → Document Types**.
 2. Clique no ícone de **configurações** (engrenagem) no cartão do tipo de documento.
-3. Abra **Transformation Rules** e ative o botão. Clique em **Manage transformation rules** para abrir a lista.
+3. Abra **Regras de Transformação** e ative o botão. Clique em **Gerenciar regras de transformação** para abrir a lista.
 
 <figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="O botão Transformation Rules"><figcaption><p>O botão Transformation Rules nas configurações adicionais de um tipo de documento</p></figcaption></figure>
 
-O cartão do tipo de documento agora exibe um link **Transformation Rules** e um link **Logs** para os logs de execução.
+O cartão do tipo de documento agora exibe um link **Regras de Transformação** e um link **Registros** para os logs de execução.
 
 ## A lista de regras
 
-A lista mostra todas as regras do tipo de documento na ordem em que são executadas, cada uma com um resumo de uma frase ("When invoice_id is abcd, take invoice_id, make it UPPERCASE, and save it back."), seu escopo (**Header**, **Table**, **Column**, **Routing**), o número de etapas, sua origem e se **Execução de logs** está ativado. Filtre por escopo e por **Active / Inactive**, pesquise e use o menu **⋮** para duplicar ou excluir uma regra.
+A lista mostra todas as regras do tipo de documento na ordem em que são executadas, cada uma com um resumo de uma frase ("When invoice_id is abcd, take invoice_id, make it UPPERCASE, and save it back."), seu escopo (**Cabeçalho**, **Tabela**, **Coluna**, **Roteamento**), o número de etapas, sua origem e se **Execução de logs** está ativado. Filtre por escopo e por **Active / Inactive**, pesquise e use o menu **⋮** para duplicar ou excluir uma regra.
 
-As regras vêm de três origens, como as regras de validação: regras **System default** fornecidas com o DocBits (clique em **Customize** para obter uma cópia editável), regras do sistema **Customized** (**Reset to Default** restaura o original) e regras **Custom** que você criou.
+As regras vêm de três origens, como as regras de validação: regras **Padrão do sistema** fornecidas com o DocBits (clique em **Personalizar** para obter uma cópia editável), regras do sistema **Personalizado** (**Restaurar padrões de fábrica** restaura o original) e regras **Personalizado** que você criou.
 
 ## Criar uma regra
 
-Clique em **New rule**. O construtor tem três etapas à esquerda e uma **Pré-visualização ao vivo** à direita. No topo, ele resume a regra em uma frase enquanto você a constrói.
+Clique em **Nova regra**. O construtor tem três etapas à esquerda e uma **Pré-visualização ao vivo** à direita. No topo, ele resume a regra em uma frase enquanto você a constrói.
 
-<figure><img src="../../../../.gitbook/assets/transformation-rule-scope.png" alt="Etapa 1 do construtor de regras de transformação"><figcaption><p>Etapa 1: o que a regra altera. A frase no topo descreve a regra em linguagem simples</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-rule-scope-pt.png" alt="Âmbito da transformação: cabeçalho, linhas da tabela, coluna e encaminhamento."><figcaption><p>Âmbito da transformação: cabeçalho, linhas da tabela, coluna e encaminhamento.</p></figcaption></figure>
 
 ### Etapa 1 — O quê e onde
 
@@ -81,11 +81,11 @@ Duas opções controlam com que frequência a regra se aplica:
 
 ### Etapa 3 — O pipeline
 
-<figure><img src="../../../../.gitbook/assets/transformation-rule-pipeline.png" alt="O pipeline com três etapas e a pré-visualização ao vivo"><figcaption><p>Read → Trim → Change case → Affix → Write, com o valor após cada etapa na pré-visualização ao vivo</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-rule-pipeline-pt.png" alt="Etapas de uma regra de transformação. O oleoduto representa a sequência de transformação, não uma conduta de petróleo."><figcaption><p>Etapas de uma regra de transformação. O oleoduto representa a sequência de transformação, não uma conduta de petróleo.</p></figcaption></figure>
 
-* **Read from** — **o próprio campo (ou coluna)** ou **outro campo**. Ler de outro campo permite preencher um campo a partir de um diferente, por exemplo copiar o número do pedido de compra de um campo de texto livre.
-* **Steps** — o valor passa pelas etapas **de cima para baixo**; a saída de uma etapa é a entrada da próxima. Adicione etapas com **+ Add a step**, reordene-as com as setas e remova-as com **✕**. Cada etapa mostra à direita o valor intermediário da amostra.
-* **Write to** — o destino da etapa 1. O DocBits grava o valor armazenado e depois atualiza automaticamente o valor exibido.
+* **Leia a partir de** — **o próprio campo (ou coluna)** ou **outro campo**. Ler de outro campo permite preencher um campo a partir de um diferente, por exemplo copiar o número do pedido de compra de um campo de texto livre.
+* **Passos** — o valor passa pelas etapas **de cima para baixo**; a saída de uma etapa é a entrada da próxima. Adicione etapas com **+ Add a step**, reordene-as com as setas e remova-as com **✕**. Cada etapa mostra à direita o valor intermediário da amostra.
+* **Escreva para** — o destino da etapa 1. O DocBits grava o valor armazenado e depois atualiza automaticamente o valor exibido.
 
 ### As etapas
 
@@ -95,36 +95,36 @@ Duas opções controlam com que frequência a regra se aplica:
 | --- | --- | --- |
 | **Alterar maiúsculas/minúsculas** (Change case) | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
 | **Aparar** (Trim) | lado (ambos, esquerdo, direito); caracteres (vazio = espaço em branco) | `  4711 ` → `4711`; com o caractere `0` e lado esquerdo: `004711` → `4711` |
-| **Pad** | comprimento, caractere de preenchimento, lado | comprimento 10, `0`, esquerda: `4711` → `0000004711` |
-| **Truncate** | comprimento máximo | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
+| **Almofada** | comprimento, caractere de preenchimento, lado | comprimento 10, `0`, esquerda: `4711` → `0000004711` |
+| **Truncar** | comprimento máximo | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
 | **Afixo** (Affix) | adicionar prefixo, adicionar sufixo, remover prefixo, remover sufixo; texto | adicionar prefixo `INV-`: `4711` → `INV-4711`; remover prefixo `Art.-Nr. `: `Art.-Nr. 4711` → `4711` |
 | **Desinfetar** (Sanitise) | manter somente (alfanumérico, letras, dígitos, alfanumérico + espaço) ou remover os caracteres informados | manter alfanumérico: `DE 123.456.789` → `DE123456789` |
-| **Take a slice** | início, comprimento ou fim | início 0, comprimento 4: `2026-09-29` → `2026` |
-| **Extract** | padrão, grupo de captura | padrão `PO[- ]?(\d+)`, grupo 1: `Order PO-45001234` → `45001234` |
-| **Find & replace** | padrão, substituir por, quantidade (0 = todas) | padrão `\s+`, substituir por ` `: `ACME    GmbH` → `ACME GmbH` |
-| **Map values** | mapeamentos (de → para), valor quando não há correspondência (vazio = manter a entrada), ignorar maiúsculas/minúsculas | `STK → PCE`: `stk` → `PCE` |
-| **Reformat date** | padrão de saída (`%d.%m.%Y`, `%m/%d/%Y`, `%Y-%m-%d`, `%d %b %Y`) | `%d.%m.%Y`: `2026-09-29` → `29.09.2026` |
-| **Format number** | localidade (de_DE, en_US, en_GB, fr_FR), mín. e máx. de casas decimais | de_DE, 2 casas decimais: `1234.5` → `1.234,50` |
-| **Fix value** | o valor | sempre grava o valor, seja qual for o conteúdo do campo |
-| **Clear** | – | esvazia o campo |
+| **Selecionar um segmento** | início, comprimento ou fim | início 0, comprimento 4: `2026-09-29` → `2026` |
+| **Extrair** | padrão, grupo de captura | padrão `PO[- ]?(\d+)`, grupo 1: `Order PO-45001234` → `45001234` |
+| **Localizar e substituir** | padrão, substituir por, quantidade (0 = todas) | padrão `\s+`, substituir por ` `: `ACME    GmbH` → `ACME GmbH` |
+| **Mapear valores** | mapeamentos (de → para), valor quando não há correspondência (vazio = manter a entrada), ignorar maiúsculas/minúsculas | `STK → PCE`: `stk` → `PCE` |
+| **Data de reformatação** | padrão de saída (`%d.%m.%Y`, `%m/%d/%Y`, `%Y-%m-%d`, `%d %b %Y`) | `%d.%m.%Y`: `2026-09-29` → `29.09.2026` |
+| **Formatar número** | localidade (de_DE, en_US, en_GB, fr_FR), mín. e máx. de casas decimais | de_DE, 2 casas decimais: `1234.5` → `1.234,50` |
+| **Valor fixo** | o valor | sempre grava o valor, seja qual for o conteúdo do campo |
+| **Limpar** | – | esvazia o campo |
 
 As regras de **Linhas da tabela** usam duas etapas diferentes, que trabalham com linhas em vez de valores:
 
 | Etapa | Efeito |
 | --- | --- |
-| **Clear all rows** | exclui todas as linhas extraídas. As linhas adicionadas por uma etapa posterior são mantidas. |
-| **Add a row** | adiciona uma linha **após a última linha** ou **antes da primeira linha**. Para cada coluna, escolha **Value** (um valor fixo) ou **Field** (o valor de um campo de cabeçalho). As colunas que você deixar de fora permanecem vazias. |
+| **Limpar todas as linhas** | exclui todas as linhas extraídas. As linhas adicionadas por uma etapa posterior são mantidas. |
+| **Add a row** | adiciona uma linha **após a última linha** ou **antes da primeira linha**. Para cada coluna, escolha **Valor** (um valor fixo) ou **Campo** (o valor de um campo de cabeçalho). As colunas que você deixar de fora permanecem vazias. |
 
 {% hint style="info" %}
-**Reformat date** espera a data como o DocBits a armazena internamente (`YYYY-MM-DD`). Aplique-a ao próprio campo, não a um texto que já contém uma data formatada.
+**Data de reformatação** espera a data como o DocBits a armazena internamente (`YYYY-MM-DD`). Aplique-a ao próprio campo, não a um texto que já contém uma data formatada.
 {% endhint %}
 
 ### Pré-visualização ao vivo
 
 A pré-visualização ao vivo executa a regra em uma amostra enquanto você a constrói:
 
-* **Entrada de exemplo** — digite um valor como ele viria do documento. Para regras de tabela, informe o número de linhas extraídas (**Sample table**) e os valores dos campos que as novas linhas leem (**Row source values**).
-* **Valores de condição** — para regras com condição, digite os valores dos campos da condição. A pré-visualização mostra **As condições coincidem — a regra é executada.** ou **Conditions do not match — rule is skipped**.
+* **Entrada de exemplo** — digite um valor como ele viria do documento. Para regras de tabela, informe o número de linhas extraídas (**Tabela de exemplo**) e os valores dos campos que as novas linhas leem (**Valores de origem da linha**).
+* **Valores de condição** — para regras com condição, digite os valores dos campos da condição. A pré-visualização mostra **As condições coincidem — a regra é executada.** ou **As condições não correspondem — a regra foi ignorada.**.
 * Abaixo, você vê o valor após **cada etapa** e o resultado final que seria gravado ("invoice_id → INV-230620-03A" ou "unchanged").
 
 Nada é salvo enquanto você usa a pré-visualização. Clique em **Salvar** para armazenar a regra.
@@ -133,30 +133,30 @@ Nada é salvo enquanto você usa a pré-visualização. Clique em **Salvar** par
 
 ### Limpar o número da fatura de um fornecedor
 
-Campo de cabeçalho **Invoice Number** · somente quando *Supplier ID is HP0000278* · Aparar → Alterar maiúsculas/minúsculas UPPERCASE → Afixo adicionar prefixo `INV-`.
+Campo de cabeçalho **Número da fatura** · somente quando *Supplier ID is HP0000278* · Aparar → Alterar maiúsculas/minúsculas UPPERCASE → Afixo adicionar prefixo `INV-`.
 Amostra `  230620-03a ` → `INV-230620-03A`. Veja a captura de tela do pipeline acima.
 
 ### Mapear códigos de unidade
 
-Coluna de tabela **INVOICE_TABLE / UNIT** · sempre · Aparar → Map values `STK → PCE`, `KG → KGM`, `Std → HUR`, **Ignore case when matching** ativado, valor sem correspondência vazio (manter a entrada).
+Coluna de tabela **INVOICE_TABLE / UNIT** · sempre · Aparar → Map values `STK → PCE`, `KG → KGM`, `Std → HUR`, **Ignorar maiúsculas e minúsculas ao fazer correspondência** ativado, valor sem correspondência vazio (manter a entrada).
 
-<figure><img src="../../../../.gitbook/assets/transformation-column-value-map.png" alt="Uma regra de coluna de tabela com Map values"><figcaption><p>Map values na coluna UNIT: <code>stk</code> vira <code>PCE</code></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-column-value-map-pt.png" alt="Mapeamento de valores de uma coluna da tabela. O oleoduto representa a sequência de transformação, não uma conduta de petróleo. Valores do mapa significa mapear valores."><figcaption><p>Mapeamento de valores de uma coluna da tabela. O oleoduto representa a sequência de transformação, não uma conduta de petróleo. Valores do mapa significa mapear valores.</p></figcaption></figure>
 
 ### Uma linha de total para um fornecedor correspondido pelo total
 
 Linhas da tabela **INVOICE_TABLE** · somente quando *Supplier ID is HP0000278* · Clear all rows → Add a row com `POSITION` = valor `001`, `QUANTITY` = valor `1`, `NET_AMOUNT` = campo *Total Net Amount*.
 
-<figure><img src="../../../../.gitbook/assets/transformation-add-row-columns.png" alt="Uma regra de linhas de tabela: limpar todas as linhas e depois adicionar uma linha"><figcaption><p>Três linhas extraídas são substituídas por uma linha com o valor líquido</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-add-row-columns-pt.png" alt="Etapa de transformação para adicionar uma linha à tabela, sem guardar. A pergunta sobre a fila indica a posição da nova linha da tabela."><figcaption><p>Etapa de transformação para adicionar uma linha à tabela, sem guardar. A pergunta sobre a fila indica a posição da nova linha da tabela.</p></figcaption></figure>
 
-A ordem importa: **Clear all rows** deve vir **antes** de **Add a row**. O construtor avisa você caso contrário ("Clear all rows runs after Add a row …") e também avisa se uma etapa **Add a row** não for precedida por **Clear all rows**, pois a regra acrescentaria outra cópia da linha a cada salvamento. Combine esta regra com uma regra de correspondência de pedidos de compra por total que esteja ativa para documentos de uma linha.
+A ordem importa: **Limpar todas as linhas** deve vir **antes** de **Add a row**. O construtor avisa você caso contrário ("Clear all rows runs after Add a row …") e também avisa se uma etapa **Add a row** não for precedida por **Limpar todas as linhas**, pois a regra acrescentaria outra cópia da linha a cada salvamento. Combine esta regra com uma regra de correspondência de pedidos de compra por total que esteja ativa para documentos de uma linha.
 
 ### Preencher o pedido de compra a partir do campo do número da fatura
 
-Campo de cabeçalho **Purchase Order** · somente quando *Purchase Order is empty* · **Read from** *Invoice Number* → Aparar → Alterar maiúsculas/minúsculas UPPERCASE.
+Campo de cabeçalho **Ordem de compra** · somente quando *Purchase Order is empty* · **Leia a partir de** *Invoice Number* → Aparar → Alterar maiúsculas/minúsculas UPPERCASE.
 
 <figure><img src="../../../../.gitbook/assets/transformation-po-from-invoice-number-pt.png" alt="O construtor de regras da regra que preenche Purchase Order a partir de Invoice Number, com a pré-visualização ao vivo"><figcaption><p>A regra e sua pré-visualização ao vivo: <code>po-4711</code> vira <code>PO-4711</code> em <code>purchase_order</code>. Regra de exemplo em um tipo de documento de teste.</p></figcaption></figure>
 
-Alguns fornecedores imprimem o número do pedido onde a extração espera o número da fatura. Nesse caso, **Invoice Number** contém o número do pedido de compra e **Purchase Order** fica vazio, e o sistema de correspondência de pedidos de compra não encontra nada para corresponder. Esta regra copia o valor antes de a correspondência começar. Em um teste em um sistema de desenvolvimento, um documento com exatamente esse problema passou de *não correspondido* para *totalmente correspondido* (2 de 2 linhas) ao ser salvo com a regra. A regra só é executada enquanto **Purchase Order** estiver vazio, portanto nunca sobrescreve um número que foi extraído corretamente.
+Alguns fornecedores imprimem o número do pedido onde a extração espera o número da fatura. Nesse caso, **Número da fatura** contém o número do pedido de compra e **Ordem de compra** fica vazio, e o sistema de correspondência de pedidos de compra não encontra nada para corresponder. Esta regra copia o valor antes de a correspondência começar. Em um teste em um sistema de desenvolvimento, um documento com exatamente esse problema passou de *não correspondido* para *totalmente correspondido* (2 de 2 linhas) ao ser salvo com a regra. A regra só é executada enquanto **Ordem de compra** estiver vazio, portanto nunca sobrescreve um número que foi extraído corretamente.
 
 ### Tornar os números de item comparáveis para a correspondência de pedidos de compra
 
@@ -189,7 +189,7 @@ Se a fatura traz `Art.-Nr. ab-12/3` e o pedido de compra tem `AB123`, as linhas 
 
 ## Regras de roteamento (suborganização)
 
-Uma regra de **Roteamento** não altera um campo. Ela grava um atributo no documento quando suas condições correspondem — atualmente a **suborganização**. Escolha **Assign a fixed sub-organisation** e selecione-a na lista, ou **Map from a field** para mapear valores de um campo extraído para suborganizações. O documento passa então a pertencer a essa suborganização, com seus usuários, permissões e configurações. Um valor que não seja uma suborganização válida nunca é gravado.
+Uma regra de **Roteamento** não altera um campo. Ela grava um atributo no documento quando suas condições correspondem — atualmente a **suborganização**. Escolha **Atribua uma suborganização fixa.** e selecione-a na lista, ou **Mapear a partir de um campo** para mapear valores de um campo extraído para suborganizações. O documento passa então a pertencer a essa suborganização, com seus usuários, permissões e configurações. Um valor que não seja uma suborganização válida nunca é gravado.
 
 ## Quando as regras são executadas
 
@@ -201,10 +201,10 @@ Uma regra de **Roteamento** não altera um campo. Ela grava um atributo no docum
 
 A maioria das etapas dá o mesmo resultado quando executada sobre a própria saída — aparar um valor já aparado, mapear `PCE` novamente, adicionar um prefixo que já existe. Essas regras podem ser executadas com segurança a cada salvamento.
 
-**Take a slice**, **Extract** e **Find & replace** são diferentes: executadas novamente sobre o próprio resultado, elas continuam alterando-o (um corte pega os primeiros quatro caracteres dos primeiros quatro caracteres …). Por isso, o DocBits não permite salvar uma regra que aplique essas etapas ao seu próprio campo de destino. Você pode:
+**Selecionar um segmento**, **Extrair** e **Localizar e substituir** são diferentes: executadas novamente sobre o próprio resultado, elas continuam alterando-o (um corte pega os primeiros quatro caracteres dos primeiros quatro caracteres …). Por isso, o DocBits não permite salvar uma regra que aplique essas etapas ao seu próprio campo de destino. Você pode:
 
 * ativar **Executar apenas uma vez por documento**, ou
-* usar **Read from** com outro campo, para que a entrada permaneça inalterada.
+* usar **Leia a partir de** com outro campo, para que a entrada permaneça inalterada.
 
 ## Regras de transformação e correspondência de pedidos de compra
 
@@ -242,7 +242,7 @@ Com **Execução de logs** ativado, cada aplicação da regra é gravada em **Do
 | --- | --- |
 | A regra não alterou nada | Ela está ativa e o recurso está ativado para o tipo de documento? A condição é verdadeira para este documento (valor exato, incluindo espaços e maiúsculas/minúsculas)? Uma regra de **execução única** já foi aplicada ao documento? Verifique o rastreamento no log. |
 | O valor muda novamente a cada salvamento | O pipeline contém Take a slice, Extract ou Find & replace. Ative **Executar apenas uma vez por documento** ou use Read from com outro campo. |
-| Uma tabela ganha mais uma linha a cada salvamento | Uma etapa **Add a row** sem **Clear all rows** antes dela. Adicione primeiro a etapa de limpeza ou ative a execução única. |
+| Uma tabela ganha mais uma linha a cada salvamento | Uma etapa **Add a row** sem **Limpar todas as linhas** antes dela. Adicione primeiro a etapa de limpeza ou ative a execução única. |
 | A correspondência do pedido de compra é perdida após salvar | Uma regra de tabela substituiu as linhas correspondidas. O motivo no documento nomeia a regra; faça a regra reproduzir as mesmas linhas ou defina-a para execução única. |
 | Uma regra de correspondência nunca é executada após a transformação | A regra alterou o número de linhas; ajuste a condição de ativação da regra de correspondência. |
 | A regra precisa de um valor dos dados mestres do fornecedor, mas ele ainda está vazio | Ative **Run after lookup population (before PO match)**. |

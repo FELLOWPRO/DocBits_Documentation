@@ -1,30 +1,30 @@
-# Activity Logging
+# Registo de atividade
 
-<figure><img src="../../../.gitbook/assets/activity_logging.png" alt="Activity Logging"><figcaption><p>Página Activity Logging</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t011-pt.png" alt="Filtros do registo de atividade; entradas ocultas."><figcaption><p>Filtros do registo de atividade; entradas ocultas.</p></figcaption></figure>
 
 O Activity Logging oferece uma visão em tempo real dos eventos do sistema em todos os serviços do DocBits. Use-o para monitorar a atividade de processamento, solucionar erros e auditar o comportamento do sistema.
 
 ## Banner de Analytics
 
-Na parte superior da página, um banner leva ao **Analytics Dashboard**, com gráficos, métricas e monitoramento em tempo real.
+Na parte superior da página, um banner leva ao **Painel de Análise**, com gráficos, métricas e monitoramento em tempo real.
 
 ## Filtros
 
 | Filtro | Descrição |
 |--------|-------------|
-| **Time Range** | Selecione uma janela de tempo (por exemplo, Today, Last 7 Days, Last 30 Days). |
-| **Severity** | Ative ou desative os níveis de severidade a incluir ou excluir: **Debug**, **Info**, **Warning**, **Error**. Cada chip mostra a contagem atual. |
-| **Service** | Filtre os logs por serviço (por exemplo, api, auth, api-service). |
+| **Intervalo de tempo** | Selecione uma janela de tempo (por exemplo, Today, Last 7 Days, Last 30 Days). |
+| **Gravidade** | Ative ou desative os níveis de severidade a incluir ou excluir: **Depurar**, **Informações**, **Aviso**, **Erro**. Cada chip mostra a contagem atual. |
+| **Serviço** | Filtre os logs por serviço (por exemplo, api, auth, api-service). |
 | **Search logs** | Pesquisa de texto livre nas mensagens de log. |
 
 ## Tabela de Logs
 
 | Coluna | Descrição |
 |--------|-------------|
-| **Timestamp** | Data e hora em que o evento ocorreu. Ordenável. |
-| **Severity** | Selo colorido: Info (azul), Warning (amarelo), Error (vermelho), Debug (cinza). |
-| **Component** | O serviço ou módulo que gerou o log (por exemplo, api, auth, api-service). |
-| **Message** | A mensagem de log completa com os detalhes do evento. |
+| **Carimbo de data e hora** | Data e hora em que o evento ocorreu. Ordenável. |
+| **Gravidade** | Selo colorido: Info (azul), Warning (amarelo), Error (vermelho), Debug (cinza). |
+| **Componente** | O serviço ou módulo que gerou o log (por exemplo, api, auth, api-service). |
+| **Mensagem** | A mensagem de log completa com os detalhes do evento. |
 
 Os resultados são paginados — use os controles na parte inferior para navegar entre as páginas.
 

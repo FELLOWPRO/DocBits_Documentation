@@ -4,7 +4,7 @@ A página **Infraestrutura** oferece aos administradores uma visão ao vivo de o
 
 > **Acesso:** Infraestrutura é uma página exclusiva para administradores. Abra **Configurações → Organização e Acesso → Infraestrutura**.
 
-<figure><img src="../../.gitbook/assets/infrastructure_overview.png" alt="Página de Infraestrutura com a aba Topologia aberta"><figcaption><p>A página de Infraestrutura, aba Topologia</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-infrastructure_overview-pt.png" alt="Resumo da infraestrutura."><figcaption><p>Resumo da infraestrutura.</p></figcaption></figure>
 
 A página é dividida em três abas:
 
@@ -49,7 +49,7 @@ Componentes que pertencem a um módulo opcional (Pesquisa de texto completo, Doc
 
 A aba Processamento mostra o pipeline de processamento de documentos da **sua organização** — quando cada etapa foi executada pela última vez e se o trabalho flui ou se acumula.
 
-<figure><img src="../../.gitbook/assets/infrastructure_processing.png" alt="Tabela de processamento com selos de status"><figcaption><p>Status de processamento por etapa para a sua organização</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-t004-pt.png" alt="Processos de infraestrutura e última execução. Última Corrida significa a última execução; algumas datas relativas permanecem em alemão."><figcaption><p>Processos de infraestrutura e última execução. Última Corrida significa a última execução; algumas datas relativas permanecem em alemão.</p></figcaption></figure>
 
 | Coluna | Descrição |
 |--------|-----------|
@@ -71,7 +71,7 @@ Erros e *em andamento* são sinais independentes, portanto uma etapa pode exibir
 
 A aba Tarefas agendadas lista os trabalhos recorrentes em segundo plano que mantêm o DocBits em funcionamento (atualizações de cache, alertas de status, tempos limite de documentos, sincronizações de saída e mais) e confirma que cada um é disparado no horário.
 
-<figure><img src="../../.gitbook/assets/infrastructure_scheduled.png" alt="Tabela de tarefas agendadas"><figcaption><p>Trabalhos recorrentes em segundo plano e seu status de agendamento</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-t005-pt.png" alt="Tarefas de infraestrutura agendadas. Última Corrida significa a última execução; algumas datas relativas permanecem em alemão."><figcaption><p>Tarefas de infraestrutura agendadas. Última Corrida significa a última execução; algumas datas relativas permanecem em alemão.</p></figcaption></figure>
 
 | Coluna | Descrição |
 |--------|-----------|

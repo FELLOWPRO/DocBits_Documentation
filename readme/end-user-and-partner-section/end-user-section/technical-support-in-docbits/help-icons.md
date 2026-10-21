@@ -4,4 +4,4 @@
 
 Esses ícones de ajuda se parecem com o seguinte
 
-<figure><img src="../../../.gitbook/assets/help-icon.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-help-icon-pt.png" alt="Ícone de ajuda no canto superior direito das definições."><figcaption><p>Ícone de ajuda no canto superior direito das definições.</p></figcaption></figure>

@@ -1,6 +1,6 @@
 # Modificando Detalhes do Usuário
 
-<figure><img src="../../../../../.gitbook/assets/user_settings_menu_overview.png" alt="Visão geral do menu de configurações do usuário"><figcaption><p>Configurações do Usuário</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u001-pt.png" alt="Gestão de utilizadores com dados pessoais ocultos."><figcaption><p>Gestão de utilizadores com dados pessoais ocultos.</p></figcaption></figure>
 
 * **Fazendo login como administrador:** Faça login com seus privilégios de administrador.
 * **Acessando a gestão de usuários:** Navegue até as configurações do usuário onde você pode editar usuários existentes.
@@ -14,9 +14,7 @@
     * Endereço de e-mail
     * Função do usuário ou nível de permissão
 
-
-
-    <figure><img src="../../../../../.gitbook/assets/user_edit_details_form.png" alt="Formulário de edição dos detalhes do usuário" width="300"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/prior-u002-pt.png" alt="Formulário de edição de utilizador com valores ocultos."><figcaption><p>Formulário de edição de utilizador com valores ocultos.</p></figcaption></figure>
 * **Salvando Alterações:** Revise quaisquer alterações que você fez e clique em Salvar para salvar os novos detalhes do usuário.
 
 <figure><img src="../../../../../.gitbook/assets/user_save_changes_button.png" alt="Botão para salvar as alterações do usuário"><figcaption></figcaption></figure>
@@ -25,8 +23,6 @@
 * **Enviar notificação (opcional):** Você pode enviar uma notificação ao usuário para informá-lo sobre as alterações feitas.
 
 Após concluir essas etapas, os detalhes do usuário são atualizados com sucesso e o usuário possui as novas informações e permissões de acordo com as alterações feitas.
-
-
 
 ## Removendo Usuários:
 

@@ -60,7 +60,7 @@ Altere entradas ou calcule valores em uma tabela de documento. Selecione a tabel
 
 ## Responsável
 
-Atribua o documento a um usuário, grupo, destinatário ou suborganização. Algumas cartas usam um campo ou tabela de decisão e oferecem um substituto. Escolha o destino certo e use o cartão selecionado. Consulte [Cessionário](assignee).
+Atribua o documento a um usuário, grupo, destinatário ou suborganização. Alguns cartões usam um campo ou uma tabela de decisão e oferecem um comportamento alternativo. Configure o destino e esse comportamento no cartão selecionado. Consulte [Responsável](assignee).
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-aa4f244a25b3-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 

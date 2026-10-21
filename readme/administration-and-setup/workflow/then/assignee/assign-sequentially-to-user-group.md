@@ -39,6 +39,6 @@ O cartão de fluxo de trabalho "**Atribuir o documento sequencialmente ao usuár
 
 **Configuração:** Configure uma regra de tabela de decisão de demonstração correspondente que retorne o usuário ou grupo pretendido e selecione essa tabela no cartão.
 
-**Resultado esperado e contra-exemplo:** O cessionário retornado é usado para atribuição sequencial de documentos. Sem retorno correspondente, não assuma um cessionário padrão; inspecione o resultado e configure o comportamento de fallback desta versão.
+**Resultado esperado e contra-exemplo:** O responsável retornado é usado para atribuição sequencial de documentos. Sem retorno correspondente, não assuma um responsável padrão; inspecione o resultado e configure o comportamento de fallback desta versão.
 
 Esta é uma configuração ilustrativa e resultado esperado. Utilize campos, usuários e grupos configurados em sua organização de teste; não é uma afirmação de que este exemplo foi executado.

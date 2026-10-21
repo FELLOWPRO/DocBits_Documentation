@@ -22,7 +22,7 @@ Utilisez **Date et heure** pour comparer une date ou une heure avec une plage, o
 
 <figure><img src="../../../.gitbook/assets/prior-u037-fr.png" alt="Conditions de date et d’heure."><figcaption><p>Conditions de date et d’heure.</p></figcaption></figure>
 
-## Documenter
+## Document
 
 Utilisez ces cartes lorsqu'un flux de travail doit dépendre du **type de document** ou de la **sous-organisation**. Choisissez le type ou l'organisation nommée dans la carte. Voir [Document](document).
 

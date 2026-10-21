@@ -1,5 +1,7 @@
 # PO-Vergleiche: Richtung, Toleranz und Kartenversionen
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-72e8f3204ac8-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
+
 PO-Vergleichskarten vergleichen eine ausgewählte Seite mit einer Referenzseite. Die Referenz bestimmt die Basis für eine prozentuale Toleranz. Führen Sie zunächst den Bestellabgleich durch und wählen Sie dann den Vergleich, den Operator, Alle/Alle und die für die jeweilige Karte erforderliche Toleranz aus.
 
 ## Vergleichsrichtungen
@@ -31,7 +33,7 @@ Versionen, die die Vergleichsmigration enthalten, verschieben betroffene gespeic
 | v4 | Fügt die vergleichsseitige Auswahl hinzu. |
 | v5 | Beinhaltet Alle/Alle, Operator, Toleranzbetrag, Toleranztyp und Auswahl auf der Vergleichsseite. |
 
-Wählen Sie eine absolute Toleranz für einen festen Betrag und eine prozentuale Toleranz für eine Abweichung relativ zur ausgewählten Referenz. Nutzen Sie den von der Karte angebotenen Betreiber; Genaue Gleichheit und das Einhalten einer Toleranz sind unterschiedliche Entscheidungen. Es gibt keine universelle Geschäftstoleranz, die für jeden Lieferanten oder Dokumenttyp geeignet ist.
+Wählen Sie eine absolute Toleranz für einen festen Betrag und eine prozentuale Toleranz für eine Abweichung relativ zur ausgewählten Referenz. Nutzen Sie den von der Karte angebotenen Operator; Genaue Gleichheit und das Einhalten einer Toleranz sind unterschiedliche Entscheidungen. Es gibt keine universelle Geschäftstoleranz, die für jeden Lieferanten oder Dokumenttyp geeignet ist.
 
 ## Verifizierungsbeispiel
 

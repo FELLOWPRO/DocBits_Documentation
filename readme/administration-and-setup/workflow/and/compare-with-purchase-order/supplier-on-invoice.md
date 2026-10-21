@@ -1,6 +1,6 @@
 # Lieferant auf Rechnung
 
-<figure><img src="../../../../.gitbook/assets/image (276).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f5b5666e94fe-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -8,7 +8,7 @@ Diese Workflow-Karte ist darauf ausgelegt, die Lieferanteninformationen auf eine
 
 ## **Bestandteile der Karte:**
 
-1. **Betreiber:**
+1. **Operator:**
    * **Beschreibung**: Legt die Bedingung für den Vergleich des Lieferanten auf der Rechnung mit dem Lieferanten auf der Bestellung fest.
    * **Optionen**:
      * **Is**: Prüft, ob der Lieferant auf der Rechnung mit dem Lieferanten auf der Bestellung übereinstimmt.

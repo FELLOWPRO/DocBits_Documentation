@@ -1,6 +1,6 @@
 # Dokumenttyp
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3a6901be7256-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## Zweck:
 
@@ -8,7 +8,7 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob ein Dokument einem bes
 
 ## Bestandteile der Karte:
 
-1. **Betreiber**
+1. **Operator**
    * **Beschreibung**: Legt fest, ob das Dokument vom angegebenen Typ sein soll oder nicht.
    * **Optionen**:
      * **Is**: Das Dokument muss dem angegebenen Typ entsprechen, damit die Bedingung erfüllt ist.

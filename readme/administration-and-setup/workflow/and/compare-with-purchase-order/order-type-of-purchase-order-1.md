@@ -4,7 +4,7 @@ hidden: true
 
 # Auftragsart der Bestellung
 
-<figure><img src="../../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8a1cb3a5f80f-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck**:
 
@@ -14,7 +14,7 @@ Diese DocBits-Karte ermöglicht die Überprüfung des Auftragstyps auf einer Bes
 
 * **Auftragstyp-Vergleich**: Diese Karte vergleicht den Auftragstyp der Bestellung mit einem angegebenen Wert und ermöglicht es Benutzern zu überprüfen, ob der Auftragstyp bestimmte Bedingungen erfüllt.
 * **Any/All-Auswahl**: Benutzer können wählen, ob der Vergleich auf **any** (mindestens ein ausgewählter Auftragstyp stimmt überein) oder **all** (alle ausgewählten Auftragstypen stimmen überein) der angegebenen Auftragstypen angewendet wird.
-* **Betreiber**: Benutzer können Bedingungen für den Vergleich des Auftragstyps in der Bestellung festlegen. Verfügbare Operatoren sind:
+* **Operator**: Benutzer können Bedingungen für den Vergleich des Auftragstyps in der Bestellung festlegen. Verfügbare Operatoren sind:
   * **Gleich (=)**: Bestätigt, dass der Auftragstyp in der Bestellung mit dem angegebenen Typ übereinstimmt.
   * **Ungleich (≠)**: Stellt sicher, dass der Auftragstyp in der Bestellung nicht mit dem angegebenen Typ übereinstimmt.
 

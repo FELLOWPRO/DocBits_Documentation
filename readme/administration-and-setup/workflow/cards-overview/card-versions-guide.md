@@ -1,5 +1,7 @@
 # Kartenversionen und Verfügbarkeit
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-4636f0bfbcc3-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+
 Eine Karte in einem gespeicherten Workflow behält ihre Karten-ID und -Version. Eine neuere Vorlage kann Felder hinzufügen oder das Verhalten ändern, ohne jeden zuvor gespeicherten Workflow zu ändern. Überprüfen Sie die Version auf der tatsächlichen Karte, bevor Sie Anweisungen für eine neuere Version anwenden.
 
 ## Bevor Sie eine gespeicherte Karte ändern

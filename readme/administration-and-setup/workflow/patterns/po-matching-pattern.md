@@ -6,7 +6,7 @@
 
 Dieses Pattern bauen Sie im **Workflow-Builder** (Workflow Dashboard → Workflow List → Add Workflow). Klicken Sie auf **Karte hinzufügen** und öffnen Sie die Kategorie **Vergleichen Sie mit der Bestellung** — sie enthält alle von diesem Pattern verwendeten Abgleichskarten (Preis-, Mengen-, Toleranz- und Positionsvergleichskarten):
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card-Bibliothek mit den Compare with Purchase Order-Karten"><figcaption><p>Die Kategorie <strong>Compare with Purchase Order</strong> — Preis-, Mengen-, Toleranz- und Positionsabgleichskarten, die in diesem Pattern durchgängig verwendet werden.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt.</p></figcaption></figure>
 
 ***
 

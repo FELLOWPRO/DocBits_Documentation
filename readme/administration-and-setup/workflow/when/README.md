@@ -2,9 +2,9 @@
 
 Die Karten in dieser Kategorie, angezeigt in der Bibliothek **Karte hinzufügen** des Workflow Builders:
 
-<figure><img src="../../../.gitbook/assets/workflow_cards_when.png" alt="Kartenkategorie „Workflow Builder“."><figcaption><p>Die Karten dieser Kategorie.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9e133ac3ffcb-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-2e62c5e0aa4e-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
 
 #### Das „Wann“ in Workflow-Konfigurationen verstehen
 

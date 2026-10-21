@@ -1,8 +1,8 @@
 # Beliebige / Alle Menge
 
-<figure><img src="../../../../.gitbook/assets/image (269).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-b9da38d5468f-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (270).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8fb535fd03a4-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -15,7 +15,7 @@ Diese Workflow-Karte dient dazu, die Menge in einem Dokument mit der in der Best
    * **Optionen**:
      * **Any**: Mindestens eine der Bedingungen muss wahr sein, damit die Aktion ausgelöst wird.
      * **Alle**: Alle Bedingungen müssen wahr sein, damit die Aktion fortgesetzt werden kann.
-2. **Betreiber:**
+2. **Operator:**
    * **Beschreibung**: Definiert die Bedingung, die angewendet wird, um die Dokumentmenge mit der angegebenen Toleranz zu vergleichen.
    * **Optionen**:
      * **Gleich (=)**: Prüft, ob die Menge mit dem angegebenen Toleranzwert übereinstimmt.

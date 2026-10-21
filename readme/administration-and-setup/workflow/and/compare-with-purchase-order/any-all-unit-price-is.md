@@ -1,8 +1,8 @@
 # Jeder/Alle Stückpreis ist
 
-<figure><img src="../../../../.gitbook/assets/image (274).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6c572102504a-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (273).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2a7bdfe3ffe9-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -15,7 +15,7 @@ Diese Workflow-Karte wird verwendet, um den Stückpreis in einem Dokument mit de
    * **Optionen**:
      * **Any**: Die Bedingung ist erfüllt, wenn ein Stückpreis die angegebene Vergleichsbedingung erfüllt.
      * **Alle**: Die Bedingung ist nur erfüllt, wenn alle Einzelpreise die angegebene Vergleichsbedingung erfüllen.
-2. **Betreiber:**
+2. **Operator:**
    * **Beschreibung**: Definiert die Bedingung für den Vergleich des Stückpreises mit dem angegebenen Wert.
    * **Optionen**:
      * **Gleich (=)**: Überprüft, ob der Stückpreis mit dem angegebenen Wert übereinstimmt.

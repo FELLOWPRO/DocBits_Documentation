@@ -1,6 +1,6 @@
 # Auftragsart der Bestellung
 
-<figure><img src="../../../../.gitbook/assets/image (277).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8a1cb3a5f80f-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -13,7 +13,7 @@ Diese Workflow-Karte ist darauf ausgelegt, den Auftragstyp einer Bestellung mit 
    * **Optionen**:
      * **Any**: Die Bedingung ist erfüllt, wenn irgendeine der Bestellungen die angegebene Bedingung erfüllt.
      * **All**: Die Bedingung ist nur erfüllt, wenn alle Bestellungen die angegebene Bedingung erfüllen.
-2. **Betreiber:**
+2. **Operator:**
    * **Beschreibung**: Legt die Bedingung fest, die angewendet wird, um den Auftragstyp mit einem angegebenen Wert zu vergleichen.
    * **Optionen**:
      * **Gleich (=)**: Prüft, ob der Auftragstyp mit dem angegebenen Wert übereinstimmt.

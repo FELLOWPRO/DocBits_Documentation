@@ -8,7 +8,7 @@
 
 Die PO-Vergleichskarten auf dieser Seite gehen in die **Und** Gruppe des Workflow Builders – sie vergleichen Rechnungsdaten mit der abgeglichenen Bestellung, bevor die Then-Aktionen ausgeführt werden:
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow-Builder"><figcaption><p>PO-Abgleichskarten werden über <strong>Add Card</strong> zur <strong>And</strong>-Gruppe hinzugefügt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-de.png" alt="Nicht gespeichertes Beispiel mit Wenn-, Und- und Dann-Karten. Füllen Sie alle Platzhalter vor der Ausführung aus."><figcaption><p>Nicht gespeichertes Beispiel mit Wenn-, Und- und Dann-Karten. Füllen Sie alle Platzhalter vor der Ausführung aus.</p></figcaption></figure>
 
 ***
 
@@ -94,7 +94,7 @@ Vergleicht den Stückpreis auf der Rechnung mit dem Stückpreis auf der Bestellu
 
 * **Stückpreistoleranz**: Abweichungen bis zu diesem Betrag zulassen
 * **Toleranztyp**: Prozentsatz (%) oder Absolut (€/$)
-* **Betreiber**: Ist gleich, ist größer als, ist kleiner als usw.
+* **Operator**: Ist gleich, ist größer als, ist kleiner als usw.
 
 ### So funktioniert es (prozentuale Toleranz)
 
@@ -208,7 +208,7 @@ Prüft, ob die bestellte Menge mit der in Rechnung gestellten Menge übereinstim
 ### Parameter
 
 * **Toleranz**: Betrag oder % dürfen abweichen
-* **Betreiber**: Gleich, Größer als, Kleiner als
+* **Operator**: Gleich, Größer als, Kleiner als
 * **Mengentyp**: Bestellt, Erhalten, Offen
 
 ### Berechnungsbeispiel

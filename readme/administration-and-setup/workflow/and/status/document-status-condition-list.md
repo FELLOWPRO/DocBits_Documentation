@@ -1,6 +1,6 @@
 # Bedingungsliste für den Dokumentstatus
 
-<figure><img src="../../../../.gitbook/assets/userlmn_e9d6da331deceed4f330358635d6b605 (1).png" alt="" width="521"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8dc08a110089-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 **Zweck**
 
@@ -8,7 +8,7 @@ Diese Karte ist darauf ausgelegt, Workflow-Aktionen auf Basis des aktuellen Stat
 
 **Bestandteile der Karte**
 
-1. **Betreiber**
+1. **Operator**
    * **Beschreibung**: Bestimmt, wie der Dokumentstatus anhand einer angegebenen Bedingung ausgewertet wird.
    * **Optionen**:
      * **is**: Löst die zugehörigen Aktionen aus, wenn der aktuelle Status des Dokuments mit einem der angegebenen Status übereinstimmt.

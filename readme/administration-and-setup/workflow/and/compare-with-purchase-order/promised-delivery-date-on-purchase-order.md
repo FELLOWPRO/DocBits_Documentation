@@ -1,6 +1,6 @@
 # Zugesagter Liefertermin in der Bestellung
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-604866ed54fe-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck**
 
@@ -8,7 +8,7 @@ Diese DocBits-Karte ist darauf ausgelegt, den präzisen Vergleich der zugesagten
 
 ## **Bestandteile der Karte**
 
-1. **Betreiber**
+1. **Operator**
    * **Beschreibung:** Legt die Bedingung fest, die zum Vergleich der Lieferdaten angewendet wird.
    * **Optionen:**
      * **Gleich (=):** Prüft, ob das zugesagte Lieferdatum der Position mit dem Lieferdatum der Bestellung übereinstimmt.

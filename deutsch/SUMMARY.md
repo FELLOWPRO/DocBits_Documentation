@@ -53,7 +53,7 @@
     * [Dokumentspalten ändern](end-user-and-partner-section/end-user-section/dashboard/change-document-columns.md)
     * [Dokumente zusammenführen](end-user-and-partner-section/end-user-section/dashboard/document-merging.md)
     * [Dokumentstatus](end-user-and-partner-section/end-user-section/dashboard/document-status.md)
-    * [Filtering Documents](end-user-and-partner-section/end-user-section/dashboard/filtering-documents.md)
+    * [Dokumente filtern](end-user-and-partner-section/end-user-section/dashboard/filtering-documents.md)
     * [Quick Search](end-user-and-partner-section/end-user-section/dashboard/quick-search.md)
     * [Persönliche Dashboards](end-user-and-partner-section/end-user-section/dashboard/personal-dashboards.md)
     * [Übersicht hochgeladener Dokumente](end-user-and-partner-section/end-user-section/dashboard/overview-of-uploaded-documents.md)

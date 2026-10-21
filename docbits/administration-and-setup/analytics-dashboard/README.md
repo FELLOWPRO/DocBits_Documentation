@@ -40,25 +40,25 @@ Choose the right lens for your analysis. Each flow type gives you a different pe
 
 Use the **Flow Type** switch at the top of the dashboard to toggle between perspectives.
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_flow_types.png" alt="Flow Type Switch"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_flow_types.png" alt="Processing, user interaction and status views of analytics."><figcaption><p>Processing, user interaction and status views of analytics.</p></figcaption></figure>
 
 ### Status Flow
 
 Tracks the document journey from **New** to **Exported** — useful for end-to-end lifecycle analysis.
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_status_flow.png" alt="Status Flow"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_status_flow.png" alt="Status view of analytics."><figcaption><p>Status view of analytics.</p></figcaption></figure>
 
 ### Processing Flow
 
 Analyzes performance across all **technical processing modules** (OCR, classification, extraction, validation) — useful for identifying system-side bottlenecks.
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_processing_flow.png" alt="Processing Flow"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_processing_flow.png" alt="Processing view with aggregated flow steps."><figcaption><p>Processing view with aggregated flow steps.</p></figcaption></figure>
 
 ### User Interaction Flow
 
 Focuses on **human touchpoints** — queue wait time, manual validation, review and approval — useful for identifying workflow and staffing bottlenecks.
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_user_interaction_flow.png" alt="User Interaction Flow"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_user_interaction_flow.png" alt="User interaction view with no data for the selected filters."><figcaption><p>User interaction view with no data for the selected filters.</p></figcaption></figure>
 
 ## Filter Options
 
@@ -68,13 +68,13 @@ The dashboard supports powerful multi-dimensional filtering. All charts, cards, 
 
 Instantly locate any document by **name** or **unique ID**.
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_filter_search.png" alt="Search Filter"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_filter_search.png" alt="Analytics filtered by the term Validation."><figcaption><p>Analytics filtered by the term Validation.</p></figcaption></figure>
 
 ### Flow Steps
 
 Select specific steps to focus your analysis. Toggling steps on/off also recalculates timing metrics on the other components of the dashboard.
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_filter_flow_steps.png" alt="Flow Steps Filter"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_filter_flow_steps.png" alt="Flow-step filter above the analytics dashboard."><figcaption><p>Flow-step filter above the analytics dashboard.</p></figcaption></figure>
 
 ### Sub-Organization, Document Type, Supplier, Group
 
@@ -85,7 +85,7 @@ Compare performance across:
 * **Suppliers** — to identify which suppliers cause the longest processing times
 * **Groups** — to compare performance across assigned user groups (available for the **Status** and **User Interaction** flow types)
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_filter_dimensions.png" alt="Sub-Organization, Document Type, Supplier, Group Filters"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_filter_dimensions.png" alt="Analytics filters for flow steps, sub-organization, document type and supplier."><figcaption><p>Analytics filters for flow steps, sub-organization, document type and supplier.</p></figcaption></figure>
 
 <mark style="color:red;">**Note**</mark>: The **Group** filter only applies to documents that are **assigned directly to a group**. Documents assigned to an individual user — even if that user is a member of a group — are **not** included in the group filter results.
 
@@ -95,13 +95,13 @@ On by default — only documents that have completed export are considered in th
 
 <mark style="color:red;">**Note**</mark>: Disabling this can result in inaccurate average values, since documents that have not yet completed are also included in the calculations.
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_only_exported_toggle.png" alt="Only Exported Documents Toggle"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_only_exported_toggle.png" alt="Only exported documents toggle in analytics."><figcaption><p>Only exported documents toggle in analytics.</p></figcaption></figure>
 
 ### Time Range
 
 Analyze any period from **7 days** up to a **full year**, or set a **custom range** using the date picker.
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_filter_time_range.png" alt="Time Range Filter"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_filter_time_range.png" alt="Custom time range in the English analytics filter bar."><figcaption><p>Custom time range in the English analytics filter bar.</p></figcaption></figure>
 
 ## Flow Steps Cards
 
@@ -115,7 +115,7 @@ Each card displays:
 
 A **Select All** toggle in the header lets you include or exclude every step at once.
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_flow_steps_card.png" alt="Flow Steps Card showing Min, Avg, Max"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_flow_steps_card.png" alt="Flow-step cards with aggregated processing times."><figcaption><p>Flow-step cards with aggregated processing times.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/analytics_dashboard_step_toggle.png" alt="Toggle Steps On/Off"><figcaption></figcaption></figure>
 
@@ -127,7 +127,7 @@ The **Compare with Global Average** toggle controls whether the DocBits Global A
 * **Orange** — your Avg Time is up to **+25%** above the Global Average
 * **Red** — your Avg Time is **+25%** or more above the Global Average
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_global_average_comparison.png" alt="Compare with DocBits Global Average"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_global_average_comparison.png" alt="Average processing time compared with the global average."><figcaption><p>Average processing time compared with the global average.</p></figcaption></figure>
 
 ## Average Time Chart
 
@@ -179,7 +179,7 @@ The Data Table provides full access to all underlying row data for the active fi
 * **Sort** by clicking column headers and **reorder** columns by drag-and-drop.
 * **Download CSV** via the button in the card header — only the currently visible columns are exported.
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_data_table.png" alt="Data Table"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_data_table.png" alt="Analytics data table with English column headings; document values are hidden."><figcaption><p>Analytics data table with English column headings; document values are hidden.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/analytics_dashboard_data_table_hide_columns.png" alt="Hide Columns to Recalculate Aggregations"><figcaption></figcaption></figure>
 

@@ -8,18 +8,18 @@ Local image, caption, reference, cleanup and prose checks are complete. Public d
 
 | Case | Page | Change |
 | --- | --- | --- |
-| S001 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard.md) | English UI image |
-| S002 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard.md) | English UI image |
-| S003 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard.md) | English UI image |
-| S004 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard.md) | English UI image |
-| S005 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard.md) | English UI image |
-| S006 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard.md) | English UI image |
-| S007 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard.md) | English UI image |
-| S008 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard.md) | English UI image |
-| S009 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard.md) | English UI image |
-| S010 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard.md) | English UI image |
-| S011 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard.md) | English UI image |
-| S012 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard.md) | English UI image |
+| S001 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard/README.md) | English UI image |
+| S002 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard/README.md) | English UI image |
+| S003 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard/README.md) | English UI image |
+| S004 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard/README.md) | English UI image |
+| S005 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard/README.md) | English UI image |
+| S006 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard/README.md) | English UI image |
+| S007 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard/README.md) | English UI image |
+| S008 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard/README.md) | English UI image |
+| S009 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard/README.md) | English UI image |
+| S010 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard/README.md) | English UI image |
+| S011 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard/README.md) | English UI image |
+| S012 | [Analytics Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/analytics-dashboard/README.md) | English UI image |
 | S013 | [Export](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/settings/document-processing/export/README.md) | English UI image |
 | S014 | [Export](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/settings/document-processing/export/README.md) | English UI image |
 | S015 | [Barcode-Zuordnung](https://github.com/FELLOWPRO/DocBits_Documentation/blob/main/docbits/administration-and-setup/settings/document-processing/module/barcode-assignment.md) | English UI image |

@@ -16,12 +16,12 @@ Dieses Fenster wird geöffnet:
 
 * **Auf die Schaltfläche + Neu klicken:** Wenn Sie eine neue Gruppe hinzufügen möchten, klicken Sie auf die Schaltfläche + Neu, um den Vorgang zum Hinzufügen einer neuen Gruppe zu starten.
 
-<figure><img src="../../../../../.gitbook/assets/add_new_group_button.png" alt="Schaltfläche Neue Gruppe hinzufügen"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s50-add_new_group_button-de.png" alt="Deutsches Formular Neue Gruppe erstellen mit Gruppenname und Beschreibung."><figcaption><p>Deutsches Formular Neue Gruppe erstellen mit Gruppenname und Beschreibung.</p></figcaption></figure>
 
 * **Das Formular ausfüllen:** Geben Sie den Gruppennamen und eine Beschreibung der Gruppe an.
 * **Die Angaben speichern:** Sobald Sie Gruppe und Beschreibung ausgefüllt haben, klicken Sie auf die Schaltfläche „Speichern“.
 
-<figure><img src="../../../../../.gitbook/assets/new_group_form_save.png" alt="Formular Neue Gruppe speichern"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s50-new_group_form_save-de.png" alt="Gruppenübersicht nach dem Schließen des Formulars. Gruppennamen sind ausgeblendet; die Aufnahme belegt keine neu gespeicherte Gruppe."><figcaption><p>Gruppenübersicht nach dem Schließen des Formulars. Gruppennamen sind ausgeblendet; die Aufnahme belegt keine neu gespeicherte Gruppe.</p></figcaption></figure>
 
 ## Gruppen bearbeiten:
 

@@ -76,11 +76,11 @@ Mit Validieren prüft man Verbindungen und Karteneinstellungen. Hier blockiert d
 
 ## Knoten hinzufügen
 
-Klicken Sie auf **+ Add**, um das Knoten-Menü zu öffnen. Zusätzlich zu den bekannten **When**-, **And**- und **Then**-Karten bietet der Advanced-Builder Knoten zur Ablaufsteuerung:
+Klicken Sie auf **+ Hinzufügen**, um das Knoten-Menü zu öffnen. Zusätzlich zu den bekannten **Wenn**-, **Und**- und **Dann**-Karten bietet der Advanced-Builder Knoten zur Ablaufsteuerung:
 
-<figure><img src="../../.gitbook/assets/workflow_advanced_add_menu.png" alt="Advanced-Workflow Add-Menü mit Knotentypen"><figcaption><p>Das <strong>+ Add</strong>-Knoten-Menü: When / And / Then sowie Wait ALL, Wait ANY, OR und Note.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s50-workflow_advanced_add_menu-de.png" alt="Deutsches Hinzufügen-Menü des Advanced Workflow Builders mit Wenn, Und, Dann, Warten und Notiz."><figcaption><p>Deutsches Hinzufügen-Menü des Advanced Workflow Builders mit Wenn, Und, Dann, Warten und Notiz.</p></figcaption></figure>
 
-- **When / And / Then** — dieselben Bedingungs- und Aktionskarten wie im Standard-Builder.
+- **Wenn / Und / Dann** — dieselben Bedingungs- und Aktionskarten wie im Standard-Builder.
 - **Wait ALL** — wartet, bis *alle* eingehenden Zweige abgeschlossen sind, bevor es weitergeht.
 - **Wait ANY** — fährt fort, sobald *irgendein* eingehender Zweig abgeschlossen ist.
 - **OR** — verzweigt den Ablauf auf alternative Pfade.

@@ -18,7 +18,7 @@ Wenn Sie Ihren ersten Faktor aktivieren, stellt DocBits Ihnen außerdem **zehn B
 
 Öffnen Sie Ihre **Profil-/Kontoeinstellungen** (Kontomenü oben rechts → **Profil bearbeiten**) und wählen Sie **Zwei-Faktor-Authentifizierung**. Der 2FA-Dialog zeigt Ihren aktuellen Status und die Methoden an, die Sie hinzufügen können.
 
-<figure><img src="../.gitbook/assets/mfa-2fa-dialog.png" alt="The Two-factor authentication dialog"><figcaption><p>Der Dialog Zwei-Faktor-Authentifizierung. Von hier aus können Sie eine Authenticator-App oder die E-Mail-Verifizierung aktivieren, einen Passkey hinzufügen oder <strong>Verwalten</strong> öffnen.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/s50-mfa-2fa-dialog-de.png" alt="Deutscher 2FA-Dialog vor der Einrichtung. Es wurde keine Authentifizierungsmethode aktiviert."><figcaption><p>Deutscher 2FA-Dialog vor der Einrichtung. Es wurde keine Authentifizierungsmethode aktiviert.</p></figcaption></figure>
 
 ## Authenticator-App einrichten (TOTP)
 

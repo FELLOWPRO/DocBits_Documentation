@@ -8,21 +8,21 @@ Das Aktivieren oder Deaktivieren des Berechtigungssystems über den Schalter hat
 
 ## **Aktivieren des Berechtigungssystems:**
 
-<figure><img src="../../../../../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s50-image-174-de.png" alt="Deutsche Gruppenauswahl. Gruppennamen sind ausgeblendet; wählen Sie eine Gruppe, um ihre Zugriffskontrolle zu öffnen."><figcaption><p>Deutsche Gruppenauswahl. Gruppennamen sind ausgeblendet; wählen Sie eine Gruppe, um ihre Zugriffskontrolle zu öffnen.</p></figcaption></figure>
 
 * Wenn das Berechtigungssystem aktiviert ist, werden die Zugriffsberechtigungen für Benutzer und Gruppen angewendet.
 * Benutzern wird nur Zugriff auf die Ressourcen gewährt, auf die sie basierend auf den zugewiesenen Berechtigungen ausdrücklich zugreifen dürfen.
 * Administratoren können die Berechtigungen für einzelne Benutzer und Gruppen verwalten und sicherstellen, dass nur autorisierte Personen die Daten anzeigen oder bearbeiten können.
 
-<figure><img src="../../../../../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s50-image-176-de.png" alt="Zugriffskontrolle einer Gruppe mit deutschen Spaltenüberschriften. Die Produktwerte Owner, Everyone und No Access bleiben englisch."><figcaption><p>Zugriffskontrolle einer Gruppe mit deutschen Spaltenüberschriften. Die Produktwerte Owner, Everyone und No Access bleiben englisch.</p></figcaption></figure>
 
-## Nur zugewiesene Dokumente
+## Zugriff auf zugewiesene Dokumente
 
-<figure><img src="../../../../../.gitbook/assets/image (346).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s50-image-346-de.png" alt="Aktuelle Zugriffskontrolle pro Dokumenttyp. Die Auswahl für Anzeigen und Bearbeiten bestimmt den Zugriffsumfang; die Produktwerte sind teilweise englisch."><figcaption><p>Aktuelle Zugriffskontrolle pro Dokumenttyp. Die Auswahl für Anzeigen und Bearbeiten bestimmt den Zugriffsumfang; die Produktwerte sind teilweise englisch.</p></figcaption></figure>
 
-Der Schalter **Only Assigned Documents** steuert die Sichtbarkeit von Dokumenten für Benutzer anhand ihrer Gruppenzuordnung. Ist er eingeschaltet, können Benutzer nur Dokumente sehen, die ihnen oder einer Gruppe, der sie angehören, ausdrücklich zugewiesen sind. Ist er ausgeschaltet, können Benutzer mit der entsprechenden Ansichtsberechtigung alle Dokumente sehen, unabhängig von der Zuweisung.
+Die aktuelle Zugriffsmatrix bietet Berechtigungen pro Dokumenttyp und Aktion. Die Auswahlwerte **Owner**, **Everyone** und **No Access** werden vom Produkt derzeit auf Englisch angezeigt. In älteren Oberflächen steuert der Schalter **Only Assigned Documents** die Sichtbarkeit anhand der Gruppenzuordnung; die folgende Beschreibung dieses Schalters gilt für diese älteren Oberflächen. Ist er eingeschaltet, können Benutzer nur Dokumente sehen, die ihnen oder einer Gruppe, der sie angehören, ausdrücklich zugewiesen sind. Ist er ausgeschaltet, können Benutzer mit der entsprechenden Ansichtsberechtigung alle Dokumente sehen, unabhängig von der Zuweisung.
 
-#### Funktionsweise
+#### Funktionsweise des bisherigen Schalters
 
 * **Ausgeschaltet (Standard)**:
   * Wenn der Schalter ausgeschaltet ist, können Benutzer, die Mitglied einer Gruppe sind, alle Dokumente sehen, sofern sie die entsprechende Ansichtsberechtigung haben. Die Zuweisung von Dokumenten wirkt sich nicht auf die Sichtbarkeit aus.
@@ -38,7 +38,7 @@ Der Schalter **Only Assigned Documents** steuert die Sichtbarkeit von Dokumenten
 
 ## Deaktivieren des Berechtigungssystems:
 
-<figure><img src="../../../../../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s50-image-173-de.png" alt="Deutscher Schalter zum Aktivieren oder Deaktivieren von Gruppen und Berechtigungen. Im Beispiel ist er eingeschaltet."><figcaption><p>Deutscher Schalter zum Aktivieren oder Deaktivieren von Gruppen und Berechtigungen. Im Beispiel ist er eingeschaltet.</p></figcaption></figure>
 
 * Wenn das Berechtigungssystem deaktiviert ist, werden alle Zugriffsberechtigungen entfernt und Benutzer haben in der Regel uneingeschränkten Zugriff auf alle Ressourcen.
 * Dies kann nützlich sein, wenn eine offene Zusammenarbeit vorübergehend ohne die Einschränkungen der Zugriffskontrolle erforderlich ist.

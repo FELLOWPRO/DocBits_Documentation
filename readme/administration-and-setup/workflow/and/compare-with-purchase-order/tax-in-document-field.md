@@ -1,6 +1,6 @@
-# Tax in document field
+# Imposto no campo do documento
 
-<figure><img src="../../../../.gitbook/assets/image (268).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-c8c9a92d10ce-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,28 +8,28 @@ Este cartão de fluxo de trabalho foi concebido para avaliar se o valor de impos
 
 ## **Componentes do cartão:**
 
-1. **Field Name**
+1. **Nome do campo**
    * **Descrição**: Especifica o campo do documento que contém o valor de imposto a comparar com o valor de imposto na ordem de compra.
    * **Detalhe**: Este campo tem de corresponder ao identificador exato do valor de imposto no documento.
 2. **Operador**
    * **Descrição**: Define a condição a aplicar à comparação entre o valor de imposto do documento e o valor de imposto da ordem de compra.
    * **Opções**:
-     * **Equals (=)**: Verifica se o imposto no campo do documento corresponde ao imposto na ordem de compra.
-     * **Not Equals (≠)**: Garante que o imposto no campo do documento não corresponde ao imposto na ordem de compra.
-     * **Greater Than (>)**: Verifica se o imposto no campo do documento é superior ao imposto na ordem de compra.
-     * **Greater or Equals (≥)**: Verifica se o imposto no campo do documento é superior ou igual ao imposto na ordem de compra.
-     * **Lesser Than (<)**: Verifica se o imposto no campo do documento é inferior ao imposto na ordem de compra.
-     * **Lesser or Equals (≤)**: Verifica se o imposto no campo do documento é inferior ou igual ao imposto na ordem de compra.
-3. **Master Data Table**
+     * **Igual a (=)**: Verifica se o imposto no campo do documento corresponde ao imposto na ordem de compra.
+     * **Não é igual (≠)**: Garante que o imposto no campo do documento não corresponde ao imposto na ordem de compra.
+     * **Maior que (>)**: Verifica se o imposto no campo do documento é superior ao imposto na ordem de compra.
+     * **Maior ou Igual (≥)**: Verifica se o imposto no campo do documento é superior ou igual ao imposto na ordem de compra.
+     * **Menor que (<)**: Verifica se o imposto no campo do documento é inferior ao imposto na ordem de compra.
+     * **Menor ou igual (≤)**: Verifica se o imposto no campo do documento é inferior ou igual ao imposto na ordem de compra.
+3. **Tabela de Dados Mestres**
    * **Descrição**: A tabela que contém os detalhes da ordem de compra, incluindo o charge ID e os valores de imposto.
    * **Detalhe**: Esta tabela tem de ter uma referência ao charge ID associado ao valor de imposto da ordem de compra.
-4. **Tolerance Amount**
+4. **Valor de tolerância**
    * **Descrição**: O valor-limiar dentro do qual os valores de imposto podem variar. É utilizado para acomodar pequenas discrepâncias nos cálculos de imposto.
    * **Detalhe**: O valor de tolerância deve ser um valor numérico, definindo a diferença máxima permitida entre os valores de imposto.
-5. **Tolerance Type**
+5. **Tipo de tolerância**
    * **Descrição**: Especifica o tipo de tolerância aplicado, absoluto ou baseado em percentagem.
    * **Opções**:
-     * **Value**: A tolerância é um valor numérico fixo.
+     * **Valor**: A tolerância é um valor numérico fixo.
      * **Percentage**: A tolerância é calculada como uma percentagem do valor de imposto.
 
 ## **Funcionalidade:**

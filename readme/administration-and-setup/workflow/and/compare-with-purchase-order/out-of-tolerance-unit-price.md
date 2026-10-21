@@ -1,6 +1,6 @@
-# Out of Tolerance Unit Price
+# Preço unitário fora da tolerância
 
-<figure><img src="../../../../.gitbook/assets/image (272).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-443397191f7c-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,25 +8,25 @@ Este cartão de fluxo de trabalho foi concebido para avaliar se o valor combinad
 
 ## **Componentes do cartão:**
 
-1. **Field Name:**
+1. **Nome do campo:**
    * **Descrição**: Especifica o campo do documento que contém o valor a combinar com o preço unitário.
    * **Detalhe**: O valor neste campo será combinado com o preço unitário para criar o valor combinado total para comparação.
 2. **Operador:**
    * **Descrição**: Define a condição para comparar o valor combinado do preço unitário e do valor do campo com o valor especificado.
    * **Opções**:
-     * **Equals (=)**: Verifica se o valor combinado do preço unitário e do campo corresponde ao valor especificado.
-     * **Not Equals (≠)**: Garante que o valor combinado do preço unitário e do campo é diferente do valor especificado.
-     * **Greater Than (>)**: Verifica se o valor combinado do preço unitário e do campo excede o valor especificado.
-     * **Greater or Equals (≥)**: Verifica se o valor combinado do preço unitário e do campo é superior ou igual ao valor especificado.
-     * **Lesser Than (<)**: Verifica se o valor combinado do preço unitário e do campo é inferior ao valor especificado.
-     * **Lesser or Equals (≤)**: Verifica se o valor combinado do preço unitário e do campo é inferior ou igual ao valor especificado.
-3. **Value:**
+     * **Igual a (=)**: Verifica se o valor combinado do preço unitário e do campo corresponde ao valor especificado.
+     * **Não é igual (≠)**: Garante que o valor combinado do preço unitário e do campo é diferente do valor especificado.
+     * **Maior que (>)**: Verifica se o valor combinado do preço unitário e do campo excede o valor especificado.
+     * **Maior ou Igual (≥)**: Verifica se o valor combinado do preço unitário e do campo é superior ou igual ao valor especificado.
+     * **Menor que (<)**: Verifica se o valor combinado do preço unitário e do campo é inferior ao valor especificado.
+     * **Menor ou igual (≤)**: Verifica se o valor combinado do preço unitário e do campo é inferior ou igual ao valor especificado.
+3. **Valor:**
    * **Descrição**: Especifica o valor com o qual o valor combinado do preço unitário e do campo será comparado.
    * **Detalhe**: Este valor numérico representa o limiar de comparação. Se o valor combinado do preço unitário e do campo exceder ou ficar aquém deste valor (com base no operador selecionado), a condição acionará as ações especificadas.
 
 ## **Funcionalidade:**
 
-* &#x20;**Avaliação da condição:** O sistema calcula o valor combinado multiplicando ou somando o preço unitário com o valor do campo, consoante a configuração. O resultado é depois comparado com o valor especificado utilizando o operador selecionado. Se a condição for cumprida (ou seja, o valor combinado está fora de tolerância), o fluxo de trabalho prossegue com o passo seguinte, seja ele aprovação, rejeição ou revisão adicional.
+* **Avaliação da condição:** O sistema calcula o valor combinado multiplicando ou somando o preço unitário com o valor do campo, consoante a configuração. O resultado é depois comparado com o valor especificado utilizando o operador selecionado. Se a condição for cumprida (ou seja, o valor combinado está fora de tolerância), o fluxo de trabalho prossegue com o passo seguinte, seja ele aprovação, rejeição ou revisão adicional.
 * **Execução da ação:**
   * **Condição Verdadeira**: Se a comparação resultar em verdadeiro (ou seja, o valor combinado cumpre a condição), o fluxo de trabalho aciona a ação associada à condição verdadeira (por exemplo, aprovação ou notificação).
   * **Condição Falsa**: Se a comparação resultar em falso (ou seja, o valor combinado não cumpre a condição), o fluxo de trabalho não prosseguirá.

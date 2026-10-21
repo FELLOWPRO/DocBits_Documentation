@@ -1,6 +1,6 @@
-# Today
+# Hoje
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-bd785752f7b5-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -9,12 +9,12 @@ Este cartão DocBits compara a data de hoje com uma data especificada, permitind
 ## **Funcionalidade:**
 
 * **Comparação de datas:** Este cartão avalia a data de hoje face a uma data especificada utilizando as seguintes condições:
-  * **Equals (=):** Verifica se a data de hoje corresponde à data especificada.
-  * **Not Equals (≠):** Garante que a data de hoje é diferente da data especificada.
-  * **Greater Than (>):** Confirma que a data de hoje é posterior à data especificada.
-  * **Greater or Equals (≥):** Garante que a data de hoje é igual ou posterior à data especificada.
-  * **Lesser Than (<):** Verifica se a data de hoje é anterior à data especificada.
-  * **Less or Equals (≤):** Garante que a data de hoje é igual ou anterior à data especificada.
+  * **Igual a (=):** Verifica se a data de hoje corresponde à data especificada.
+  * **Não é igual (≠):** Garante que a data de hoje é diferente da data especificada.
+  * **Maior que (>):** Confirma que a data de hoje é posterior à data especificada.
+  * **Maior ou Igual (≥):** Garante que a data de hoje é igual ou posterior à data especificada.
+  * **Menor que (<):** Verifica se a data de hoje é anterior à data especificada.
+  * **Menor ou igual (≤):** Garante que a data de hoje é igual ou anterior à data especificada.
 * **Introdução da data:** Os utilizadores fornecem a data a comparar com a data de hoje.
 
 ## **Utilização:**

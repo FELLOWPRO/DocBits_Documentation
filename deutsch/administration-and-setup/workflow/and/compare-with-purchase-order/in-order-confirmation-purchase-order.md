@@ -2,7 +2,7 @@
 hidden: true
 ---
 
-# In der Auftragsbestätigung Bestellung
+# Auftragsbestätigung und Bestellung vergleichen
 
 Verwenden Sie **Mit Bestellung vergleichen** im Workflow-Builder, wenn eine Auftragsbestätigung gegen ihre Bestellung geprüft werden soll. Fügen Sie die Karte unter **Und...** hinzu und wählen Sie die Bestelldaten, einen Operator und das Verhalten bei einem Treffer. Die folgenden Abbildungen zeigen zwei verfügbare Kartenversionen in der deutschen Oberfläche. Ihre Felder sind noch Platzhalter; legen Sie sie für Ihren eigenen Workflow fest, bevor Sie speichern.
 

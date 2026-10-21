@@ -1,4 +1,4 @@
-# Führen Sie die DocOperator-Eingabeaufforderung (Automatisierungsskript) aus.
+# DocOperator-Prompt ausführen (Automatisierungsskript)
 
 ***
 

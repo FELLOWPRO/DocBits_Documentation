@@ -1,4 +1,4 @@
-# Angegebener Artikelpreis
+# Angebotener Artikelpreis
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-be613a9841e5-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 

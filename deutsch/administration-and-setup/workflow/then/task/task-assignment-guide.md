@@ -649,17 +649,17 @@ Task created for correct person
 
 | Karte                                                        | Erstellt eine Aufgabe | Weist zu            | When        |
 | ----------------------------------------------------------- | ------------ | --------------------- | ----------- |
-| tasks\_create                                               | Yes          | Individuell            | Immer      |
-| ACTION\_TASK\_FOR\_GROUP                                    | Yes          | Gruppe                 | Immer      |
-| ACTION\_DECISION\_TREE\_CREATE\_TASKS                       | Yes          | Ergebnis der Entscheidungstabelle | Bedingt |
-| ACTION\_DECISION\_TREE\_TASKS\_SEQUENTIAL                   | Yes          | Mehrere (sequentiell) | Bedingt |
-| ACTION\_CREATE\_TASK\_FOR\_USER\_SEQUENTIAL                 | Yes          | Benutzer + Dokument       | Bedingt |
-| ACTION\_CREATE\_TASK\_FOR\_GROUP\_SEQUENTIAL                | Yes          | Gruppe + Dokument      | Bedingt |
-| ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP                   | Yes          | Einrichtungsgruppe        | Bedingt |
-| ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP\_SEQUENTIAL       | Yes          | Mehrere Einrichtungen   | Bedingt |
-| ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP                | Yes          | Beschaffungsteam      | Bedingt |
-| ACTION\_ASSIGN\_TASK\_PROCUREMENT\_GROUP\_SEQUENTIAL        | Yes          | Mehrere (sequentiell) | Bedingt |
-| ACTION\_ASSIGN\_TASK\_TO\_USER\_FROM\_FIELD\_WITH\_FALLBACK | Yes          | Feld/Fallback        | Bedingt |
+| tasks\_create                                               | Ja          | Individuell            | Immer      |
+| ACTION\_TASK\_FOR\_GROUP                                    | Ja          | Gruppe                 | Immer      |
+| ACTION\_DECISION\_TREE\_CREATE\_TASKS                       | Ja          | Ergebnis der Entscheidungstabelle | Bedingt |
+| ACTION\_DECISION\_TREE\_TASKS\_SEQUENTIAL                   | Ja          | Mehrere (sequentiell) | Bedingt |
+| ACTION\_CREATE\_TASK\_FOR\_USER\_SEQUENTIAL                 | Ja          | Benutzer + Dokument       | Bedingt |
+| ACTION\_CREATE\_TASK\_FOR\_GROUP\_SEQUENTIAL                | Ja          | Gruppe + Dokument      | Bedingt |
+| ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP                   | Ja          | Einrichtungsgruppe        | Bedingt |
+| ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP\_SEQUENTIAL       | Ja          | Mehrere Einrichtungen   | Bedingt |
+| ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP                | Ja          | Beschaffungsteam      | Bedingt |
+| ACTION\_ASSIGN\_TASK\_PROCUREMENT\_GROUP\_SEQUENTIAL        | Ja          | Mehrere (sequentiell) | Bedingt |
+| ACTION\_ASSIGN\_TASK\_TO\_USER\_FROM\_FIELD\_WITH\_FALLBACK | Ja          | Feld/Fallback        | Bedingt |
 
 ***
 

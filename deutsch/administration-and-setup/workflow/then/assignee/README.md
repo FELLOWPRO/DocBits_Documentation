@@ -1,4 +1,4 @@
-# Bevollmächtigter
+# Zugewiesener Benutzer
 
 Die Karten dieser Kategorie im **Karte hinzufügen**-Picker des Workflow-Builders:
 

@@ -1,38 +1,38 @@
 # Typy dokumentów
 
-Typy dokumentów informują DocBits, z jakimi rodzajami dokumentów pracuje Twoja organizacja. Administrator znajdzie je w sekcji **Settings → Document Types** w części **Document Processing** menu ustawień.
+Typy dokumentów informują DocBits, z jakimi rodzajami dokumentów pracuje Twoja organizacja. Administrator znajdzie je w sekcji **Settings → Document Types** w części **Przetwarzanie dokumentów** menu ustawień.
 
-Strona pokazuje **Default Document Types**, które udostępnia DocBits i których nie można usunąć, a następnie **Custom Document Types** utworzone dla Twojej organizacji. Każdy typ ma własną kartę.
+Strona pokazuje **Domyślne typy dokumentów**, które udostępnia DocBits i których nie można usunąć, a następnie **Niestandardowe typy dokumentów** utworzone dla Twojej organizacji. Każdy typ ma własną kartę.
 
-<figure><img src="../../../.gitbook/assets/document-types-overview-en-20260928.png" alt="Strona Document Types z kartą typu Invoice i innymi kartami domyślnych typów dokumentów, przełącznikami aktywacji i ekstrakcji, ikoną ustawień oraz linkami do konfiguracji"><figcaption><p>Wybierz kartę typu dokumentu, aby go skonfigurować.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u025-pl.png" alt="Standardowe typy dokumentów i dostęp do ich ustawień."><figcaption><p>Standardowe typy dokumentów i dostęp do ich ustawień.</p></figcaption></figure>
 
 ## Co można zrobić na karcie
 
 | Element | Co robi |
 | --- | --- |
-| **Activate** | Udostępnia lub ukrywa ten typ dokumentu w Twojej organizacji. Niebieski przełącznik oznacza włączony, szary – wyłączony. |
-| **Extraction** | Wybiera tryb ekstrakcji: **Flex** po włączeniu lub **Fix** po wyłączeniu. Nie służy po prostu do włączania i wyłączania ekstrakcji. Najedź kursorem na przełącznik, aby zobaczyć bieżący tryb. |
-| **Settings** (ikona koła zębatego) | Otwiera **More Settings** dla tego typu. Rozwiń tam kategorię, aby zobaczyć jej opcje. Kategorie zależą od typu dokumentu. |
-| **Layouts** | Otwiera konfigurację układów. Kolejne kroki znajdziesz w [Layout Builder](layout-builder.md). |
-| **Fields** | Otwiera ustawienia pól i rozpoznawania dla tego typu. Sposób konfiguracji opisano w [Fields](../../settings/global-settings/document-types/fields/README.md). |
-| **Tables** | Otwiera konfigurację kolumn tabeli dla tego typu. |
-| **Scripts** | Otwiera skrypty przetwarzania, jeśli ta funkcja jest dostępna. |
-| **Model Training** | Otwiera trenowanie modelu dla tego typu. |
-| **E-Doc** | Otwiera ustawienia dokumentów elektronicznych, jeśli typ je obsługuje. |
-| **Document Sub Types** | Otwiera podtypy tego typu dokumentu. |
+| **Aktywować** | Udostępnia lub ukrywa ten typ dokumentu w Twojej organizacji. Niebieski przełącznik oznacza włączony, szary – wyłączony. |
+| **Ekstrakcja** | Wybiera tryb ekstrakcji: **Flex** po włączeniu lub **Fix** po wyłączeniu. Nie służy po prostu do włączania i wyłączania ekstrakcji. Najedź kursorem na przełącznik, aby zobaczyć bieżący tryb. |
+| **Ustawienia** (ikona koła zębatego) | Otwiera **More Settings** dla tego typu. Rozwiń tam kategorię, aby zobaczyć jej opcje. Kategorie zależą od typu dokumentu. |
+| **Układy** | Otwiera konfigurację układów. Kolejne kroki znajdziesz w [Layout Builder](layout-builder.md). |
+| **Pola** | Otwiera ustawienia pól i rozpoznawania dla tego typu. Sposób konfiguracji opisano w [Fields](../../settings/global-settings/document-types/fields/README.md). |
+| **Tabele** | Otwiera konfigurację kolumn tabeli dla tego typu. |
+| **Skrypty** | Otwiera skrypty przetwarzania, jeśli ta funkcja jest dostępna. |
+| **Szkolenie modelowe** | Otwiera trenowanie modelu dla tego typu. |
+| **E-dokument** | Otwiera ustawienia dokumentów elektronicznych, jeśli typ je obsługuje. |
+| **Podtypy dokumentów** | Otwiera podtypy tego typu dokumentu. |
 
 W zależności od funkcji dostępnych w Twojej organizacji możesz zobaczyć więcej linków, na przykład do reguł walidacji lub transformacji. Wybierz link na karcie typu, który chcesz zmienić.
 
 ## Edycja pól i ustawień rozpoznawania
 
-Kliknij **Fields** na karcie, aby zobaczyć grupy pól. U góry tej strony **OCR** i **Match Score** ustawiają progi rozpoznawania, **Restore Defaults** przywraca te progi do wartości domyślnych, a **Search by Name** wyszukuje pole. Użyj **Create new group**, aby uporządkować pola, oraz **Create field** w grupie, aby dodać nowe pole. **Master Data Settings** otwiera powiązaną konfigurację danych podstawowych.
+Kliknij **Pola** na karcie, aby zobaczyć grupy pól. U góry tej strony **OCR** i **Próg dopasowania** ustawiają progi rozpoznawania, **Restore Defaults** przywraca te progi do wartości domyślnych, a **Szukaj według nazwy** wyszukuje pole. Użyj **Utwórz nową grupę**, aby uporządkować pola, oraz **Utwórz pole** w grupie, aby dodać nowe pole. **Ustawienia danych głównych** otwiera powiązaną konfigurację danych podstawowych.
 
-Każdy wiersz pola ma elementy sterujące, takie jak **Required**, **Read Only**, **Hidden**, **Force Validation**, **Use AI**, OCR, Match Score i Formula. Przed zmianą poszczególnych wartości zapoznaj się z [przewodnikiem Fields](../../settings/global-settings/document-types/fields/README.md). Kliknij **Save Settings** na stronie Fields, aby zachować zmiany.
+Każdy wiersz pola ma elementy sterujące, takie jak **Obowiązkowe**, **Tylko do odczytu**, **Ukryty**, **Force Validation**, **Użyj sztucznej inteligencji**, OCR, Match Score i Formula. Przed zmianą poszczególnych wartości zapoznaj się z [przewodnikiem Fields](../../settings/global-settings/document-types/fields/README.md). Kliknij **Zapisz ustawienia** na stronie Fields, aby zachować zmiany.
 
-<figure><img src="../../../.gitbook/assets/document-types-invoice-fields-en-20260928.png" alt="Strona Invoice Fields z ustawieniami rozpoznawania, grupami pól, elementami sterującymi dla każdego pola i przyciskiem Save Settings"><figcaption><p>Strona Fields ma własny przycisk Save Settings.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-document-types-invoice-fields-pl.png" alt="Konfiguracja pól typu dokumentu Faktura. Etykieta WYNIK MECZU oznacza tu próg dopasowania (Match Score), nie wynik sportowy."><figcaption><p>Konfiguracja pól typu dokumentu Faktura. Etykieta WYNIK MECZU oznacza tu próg dopasowania (Match Score), nie wynik sportowy.</p></figcaption></figure>
 
 ## Tworzenie własnego typu dokumentu
 
-Przewiń do **Custom Document Types** i kliknij **+ New**. Aby skonfigurować nowy typ, postępuj zgodnie z [Adding/Editing Document Types](../../settings/global-settings/document-types/adding-editing-document-types.md).
+Przewiń do **Niestandardowe typy dokumentów** i kliknij **+ New**. Aby skonfigurować nowy typ, postępuj zgodnie z [Adding/Editing Document Types](../../settings/global-settings/document-types/adding-editing-document-types.md).
 
-<figure><img src="../../../.gitbook/assets/document-types-custom-new-en-20260928.png" alt="Dół strony Document Types z sekcją Custom Document Types i przyciskiem New"><figcaption><p>Użyj przycisku New w sekcji Custom Document Types, aby rozpocząć tworzenie typu.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u026-pl.png" alt="Formularz nowego typu dokumentu przed zapisaniem. Etykieta Dostępny stół oznacza tabelę danych; Wygrywać oznacza przesyłanie plików."><figcaption><p>Formularz nowego typu dokumentu przed zapisaniem. Etykieta Dostępny stół oznacza tabelę danych; Wygrywać oznacza przesyłanie plików.</p></figcaption></figure>

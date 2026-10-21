@@ -10,7 +10,7 @@ Ten przewodnik jest ułożony tak, jak zbudowane jest wyszukiwanie:
 
 > Nie musisz niczego zapamiętywać: kliknij pasek wyszukiwania i wybierz pole oraz wartość z listy — Quick Search zbuduje zapytanie za Ciebie. Poniższe przykłady pokazują też formę wpisywaną, którą możesz skopiować bezpośrednio.
 
-<figure><img src="../../../.gitbook/assets/quick_search_01_entry.png" alt="Pasek Quick Search u góry pulpitu"><figcaption><p>Pasek Quick Search u góry pulpitu.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_01_entry-pl.png" alt="Szybkie wyszukiwanie w polskim panelu. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Szybkie wyszukiwanie w polskim panelu. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
 ---
 
@@ -35,8 +35,8 @@ Kliknij chip, aby go edytować (rozwija się z powrotem do tekstu); kliknij **×
 
 Na prawym końcu paska:
 
-- **ⓘ Help** — otwiera wbudowaną dokumentację **Dashboard Search — Fields & Syntax** wymieniającą każde pole, operator i skrót dostępny w Twoim obszarze roboczym.
-- **Filters (tune)** — szybki panel najczęstszych filtrów Status / User / Restart, z przyciskami **Clear filters** i **Apply**.
+- **ⓘ Help** — otwiera wbudowaną dokumentację **Wyszukiwanie w panelu — pola i składnia** wymieniającą każde pole, operator i skrót dostępny w Twoim obszarze roboczym.
+- **Filters (tune)** — szybki panel najczęstszych filtrów Status / User / Restart, z przyciskami **Wyczyść filtry** i **Zastosuj**.
 - **Pierścień indeksu** — mały pierścień postępu pokazujący, jaka część indeksu pełnotekstowego została zbudowana (widoczny tylko gdy wyszukiwanie pełnotekstowe jest włączone).
 
 ### Widok standardowy a surowy
@@ -68,7 +68,7 @@ Invoice.xml   iNVoice.xml   iNvoiCE.edi   …
 
 **Nie** pasuje do `XYZ_Invoice.pdf` (tam „invoice" jest w środku — użyj do tego `:`).
 
-<figure><img src="../../../.gitbook/assets/quick_search_02_filename_starts.png" alt="filename=invoice pasuje tylko do nazw zaczynających się od invoice, w dowolnej wielkości liter"><figcaption><p><code>filename=invoice</code> — tylko nazwy, które <strong>zaczynają się od</strong> „invoice", w dowolnej wielkości liter (<code>Invoice.pdf</code>, <code>iNVoice.pdf</code>, <code>INVOICE_2026.pdf</code> … wszystkie pasują). Porównaj z <code>:</code> poniżej.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u028-pl.png" alt="Wprowadzanie zapytania o nazwę pliku. Błędna etykieta Wygrać oznacza przesyłanie dokumentów."><figcaption><p>Wprowadzanie zapytania o nazwę pliku. Błędna etykieta Wygrać oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
 #### `:` → zawiera (gdziekolwiek)
 
@@ -78,7 +78,7 @@ filename:invoice
 
 Użyj `:`, aby dopasować słowo **w dowolnym miejscu** nazwy — `2026_Invoice.pdf`, `vietnam_einvoice_sample.xml`, `scan_invoice_copy.pdf`.
 
-<figure><img src="../../../.gitbook/assets/quick_search_03_filename_contains.png" alt="filename:invoice pasuje do słowa w dowolnym miejscu nazwy"><figcaption><p><code>filename:invoice</code> — pasuje do słowa w dowolnym miejscu nazwy dokumentu.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_03_filename_contains-pl.png" alt="Wyszukiwanie części nazwy pliku: filename:invoice. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Wyszukiwanie części nazwy pliku: filename:invoice. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
 #### `="…"` → zaczyna się *lub* kończy na
 
@@ -98,7 +98,7 @@ status=ready_for_validation
 
 Status to lista stała, więc `=` oznacza dopasowanie **dokładne**, a pasek oferuje wybór wartości, gdy wpiszesz `status=`.
 
-<figure><img src="../../../.gitbook/assets/quick_search_05_status.png" alt="Filtrowanie według statusu dokumentu"><figcaption><p><code>status=ready_for_validation</code> — dokładne dopasowanie na polu z listą stałą.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_05_status-pl.png" alt="Wprowadzanie filtra technicznego statusu ready_for_validation. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Wprowadzanie filtra technicznego statusu ready_for_validation. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
 ### Znajdowanie dokumentów po dacie
 
@@ -108,7 +108,7 @@ created_on>2026-05-25
 
 Użyj `>`, `<`, `>=`, `<=` dla zakresów dat. Możesz też użyć dat **względnych**: `today()`, `today()-7` (ostatnie 7 dni), `today()+30` (następne 30 dni).
 
-<figure><img src="../../../.gitbook/assets/quick_search_06_date.png" alt="Filtrowanie według daty utworzenia"><figcaption><p><code>created_on&#62;2026-05-25</code> — dokumenty utworzone po wskazanej dacie.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_06_date-pl.png" alt="Zapytanie o dokumenty utworzone po 25 maja 2026 r. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Zapytanie o dokumenty utworzone po 25 maja 2026 r. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
 ### Znajdowanie dokumentów po podtypie faktury
 
@@ -116,7 +116,7 @@ Użyj `>`, `<`, `>=`, `<=` dla zakresów dat. Możesz też użyć dat **względn
 invoice_sub_type="Cost Invoice"
 ```
 
-Podtyp faktury to lista stała (na przykład **Cost Invoice** lub **Purchase Invoice**), więc `=` oznacza dopasowanie **dokładne**, a pasek oferuje wybór wartości, gdy wpiszesz `invoice_sub_type=`. Użyj `invoice_sub_type!="Cost Invoice"` dla wszystkiego poza tym podtypem.
+Podtyp faktury to lista stała (na przykład **Faktura kosztowa** lub **Faktura zakupu**), więc `=` oznacza dopasowanie **dokładne**, a pasek oferuje wybór wartości, gdy wpiszesz `invoice_sub_type=`. Użyj `invoice_sub_type!="Cost Invoice"` dla wszystkiego poza tym podtypem.
 
 ---
 
@@ -130,9 +130,9 @@ Pola pełnotekstowe przeszukują **wyodrębnioną treść** dokumentów — dost
 supplier_name=Test
 ```
 
-Dopasowanie „zaczyna się od" na wyodrębnionej nazwie dostawcy. Użyj `supplier_name:fuji`, aby dopasować w dowolnym miejscu, lub `supplier_name:"Ruiz Foods"`, aby ująć w cudzysłów wartość ze spacjami.
+Dopasowanie „zaczyna się od" na wyodrębnionej nazwie dostawcy. Użyj `supplier_name:Example`, aby dopasować w dowolnym miejscu, lub `supplier_name:"Example"`, aby ująć w cudzysłów wartość ze spacjami.
 
-<figure><img src="../../../.gitbook/assets/quick_search_09_supplier.png" alt="Wyszukiwanie według nazwy dostawcy"><figcaption><p><code>supplier_name=Test</code> — dostawca w każdym wyniku zaczyna się od „Test".</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_09_supplier-pl.png" alt="Przykład zapytania o dostawcę: supplier_name=Test. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Przykład zapytania o dostawcę: supplier_name=Test. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
 ### Znajdowanie dokumentów po zamówieniu zakupu
 
@@ -142,7 +142,7 @@ purchase_order=PO
 
 Dopasowanie „zaczyna się od" na wyodrębnionym numerze zamówienia — świetne dla prefiksu PO.
 
-<figure><img src="../../../.gitbook/assets/quick_search_10_purchase_order.png" alt="Wyszukiwanie według zamówienia zakupu"><figcaption><p><code>purchase_order=PO</code> — dokumenty, których numer zamówienia zaczyna się od „PO".</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_10_purchase_order-pl.png" alt="Przykład zapytania o zamówienie: purchase_order=PO. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Przykład zapytania o zamówienie: purchase_order=PO. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
 ### Znajdowanie dokumentów po kwocie
 
@@ -152,7 +152,7 @@ total_amount>5000
 
 Użyj `>`, `<`, `>=`, `<=` lub `between 100 and 500` dla przedziału.
 
-<figure><img src="../../../.gitbook/assets/quick_search_07_amount.png" alt="Filtrowanie według kwoty łącznej"><figcaption><p><code>total_amount&#62;5000</code> — faktury powyżej 5 000.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_07_amount-pl.png" alt="Wprowadzanie filtra kwot całkowitych powyżej 5000. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Wprowadzanie filtra kwot całkowitych powyżej 5000. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
 Dla przedziału użyj `between`:
 
@@ -162,7 +162,7 @@ total_amount between 1000 and 5000
 
 To skrót dla `total_amount>=1000 AND total_amount<=5000`.
 
-<figure><img src="../../../.gitbook/assets/quick_search_14_between.png" alt="Przedział kwot z użyciem between"><figcaption><p><code>total_amount between 1000 and 5000</code> — każdy wynik mieści się w przedziale.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_14_between-pl.png" alt="Wprowadzanie zapytania o kwoty od 1000 do 5000. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Wprowadzanie zapytania o kwoty od 1000 do 5000. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
 ### Znajdowanie tego, czego brakuje
 
@@ -172,7 +172,7 @@ supplier_name=""
 
 `=""` oznacza „to pole jest **niewypełnione**"; `supplier_name!=""` oznacza „ma dowolnego dostawcę".
 
-<figure><img src="../../../.gitbook/assets/quick_search_12_empty.png" alt="Znajdowanie dokumentów bez dostawcy"><figcaption><p><code>supplier_name=""</code> — dokumenty, które nie mają jeszcze dostawcy.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_12_empty-pl.png" alt="Wprowadzanie filtra pustej nazwy dostawcy. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Wprowadzanie filtra pustej nazwy dostawcy. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
 To samo sprawdzenie obecności działa na każdym polu — na przykład dla dokumentów, którym wciąż brakuje kodu przypisania AP:
 
@@ -180,7 +180,7 @@ To samo sprawdzenie obecności działa na każdym polu — na przykład dla doku
 ap_assignment_code=""
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_15_ap_empty.png" alt="Dokumenty bez kodu przypisania AP"><figcaption><p><code>ap_assignment_code=""</code> — dokumenty, które nie mają kodu przypisania AP. Użyj <code>ap_assignment_code!=""</code> dla tych, które go mają.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_15_ap_empty-pl.png" alt="Wyszukiwanie dokumentów bez przypisania AP. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Wyszukiwanie dokumentów bez przypisania AP. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
 ---
 
@@ -190,19 +190,19 @@ U góry listy rozwijanej Quick Search (kliknij w pasek wyszukiwania) znajdziesz 
 
 | Filtr inteligentny | Znajduje | To samo co wpisanie |
 |--------------|-------|----------------|
-| ⚠️ **Overdue** | Po terminie płatności | `invoice_due_date<today()` |
-| 🕐 **Due soon** | W ciągu następnych 7 dni | `invoice_due_date<=today()+7` |
-| 👤 **Assigned to me** | Pozycje czekające na Twoje działanie | `assigned_to=<you>` |
-| 📅 **Today's inbox** | Zaimportowane dziś | `imported_on>=today()` |
-| 📋 **Pending validation** | Gotowe do walidacji | `status=ready_for_validation` |
-| 🧾 **Electronic documents** | E-faktury (XML, ZUGFeRD, EDI) | `is_edoc=true` |
-| ✅ **Full PO match** | W pełni dopasowane do zamówienia zakupu | `po_match_status=full_matched` |
-| ➗ **Partial PO match** | Częściowo dopasowane do zamówienia zakupu | `po_match_status=partial_matched` |
-| 📉 **Under PO match** | Ilość lub cena jednostkowa poniżej zamówienia zakupu | `po_match_status=under_matched` |
+| ⚠️ **Zaległy** | Po terminie płatności | `invoice_due_date<today()` |
+| 🕐 **Wkrótce** | W ciągu następnych 7 dni | `invoice_due_date<=today()+7` |
+| 👤 **Przypisane do mnie** | Pozycje czekające na Twoje działanie | `assigned_to=<you>` |
+| 📅 **Dzisiejsza skrzynka odbiorcza** | Zaimportowane dziś | `imported_on>=today()` |
+| 📋 **Oczekiwanie na walidację** | Gotowe do walidacji | `status=ready_for_validation` |
+| 🧾 **Dokumenty elektroniczne** | E-faktury (XML, ZUGFeRD, EDI) | `is_edoc=true` |
+| ✅ **Pełne dopasowanie PO** | W pełni dopasowane do zamówienia zakupu | `po_match_status=full_matched` |
+| ➗ **Częściowe dopasowanie PO** | Częściowo dopasowane do zamówienia zakupu | `po_match_status=partial_matched` |
+| 📉 **W meczu PO** | Ilość lub cena jednostkowa poniżej zamówienia zakupu | `po_match_status=under_matched` |
 
 Trzy filtry **PO match** oraz pola pełnotekstowe wymagają, aby dla Twojej organizacji było włączone wyszukiwanie pełnotekstowe.
 
-<figure><img src="../../../.gitbook/assets/quick_search_11_smart_filters.png" alt="Panel rozwijany Smart Filters"><figcaption><p>Smart Filters u góry listy rozwijanej Quick Search — jedno kliknięcie stosuje filtr (Overdue, Due soon, Assigned to me, Today's inbox, Pending validation, Electronic documents, Full / Partial / Under PO match).</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u030-pl.png" alt="Pomoc dotycząca zapytań i filtrów szybkiego wyszukiwania. Błędna etykieta Wygrać oznacza przesyłanie dokumentów."><figcaption><p>Pomoc dotycząca zapytań i filtrów szybkiego wyszukiwania. Błędna etykieta Wygrać oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
 ---
 
@@ -214,9 +214,9 @@ Zamiast płaskiej listy możesz **pogrupować** wyniki według dowolnego pola �
 group by supplier_name
 ```
 
-Lista pokazuje wtedy zwijalne **nagłówki grup**, każdy z nazwą grupy i **licznikiem** (np. *Ruiz Foods (12)*). Kliknij nagłówek, aby rozwinąć lub zwinąć daną grupę. Dla pól dat możesz grupować według **dnia, tygodnia lub miesiąca**.
+Lista pokazuje wtedy zwijalne **nagłówki grup**, każdy z nazwą grupy i **licznikiem** (np. *Example (12)*). Kliknij nagłówek, aby rozwinąć lub zwinąć daną grupę. Dla pól dat możesz grupować według **dnia, tygodnia lub miesiąca**.
 
-<figure><img src="../../../.gitbook/assets/quick_search_16_grouping.png" alt="Wyniki pogrupowane według dostawcy ze zwijalnymi nagłówkami"><figcaption><p><code>group by supplier_name</code> — wyniki zwijają się w jeden rozwijalny nagłówek na dostawcę.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u029-pl.png" alt="Wprowadzanie zapytania z grupowaniem według dostawcy. Błędna etykieta Wygrać oznacza przesyłanie dokumentów."><figcaption><p>Wprowadzanie zapytania z grupowaniem według dostawcy. Błędna etykieta Wygrać oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
 Grupowanie łączy się z dowolnym filtrem — `status=ready_for_validation group by supplier_name` grupuje tylko pasujące dokumenty. Kliknięcie w grupę **schodzi głębiej**: stosuje wartość tej grupy jako filtr i wraca do płaskiej listy dla tego wyboru.
 
@@ -266,194 +266,145 @@ status=ready_for_validation AND supplier_name=Test
 (status=error OR status=failed) AND created_on>today()-1
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_13_combined.png" alt="Łączenie warunków za pomocą AND"><figcaption><p><code>status=ready_for_validation AND supplier_name=Test</code> — dwa połączone warunki.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_13_combined-pl.png" alt="Łączenie warunków statusu i dostawcy operatorem AND. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Łączenie warunków statusu i dostawcy operatorem AND. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
-### Skróty
+### Przykłady zapytań
 
-Krótsze sformułowania tych samych zapytań — używaj tego, co czyta się lepiej:
+Obrazy pokazują wprowadzone zapytania w polskim interfejsie. Dane dokumentów są ukryte. Obraz paska filtrów nie potwierdza dokładnej liczby wyników.
 
-| Skrót | To samo co | Opis |
-|----------|---------|-------------|
-| `total_amount gt 5000` | `total_amount>5000` | Słowne aliasy operatorów porównania (`gt`/`gte`/`lt`/`lte`/`eq`/`ne`) |
-| `due_date > today` | `due_date>today()` | Samo słowo `today` / `yesterday` / `tomorrow` |
-| `imported_on this_week` | `imported_on>=today()-7 AND imported_on<=today()` | Okresy względne (`this_week`, `last_week`, `this_month`, …) |
-| `ap_assignment_code is empty` | `ap_assignment_code=""` | Czy pole ma jakąkolwiek wartość |
-| `status:open` | `status=ready_for_validation` | Przyjazna etykieta statusu (`open`/`closed`/`failed`/`done`) |
-| `total_amount not between 100, 200` | `total_amount<100 OR total_amount>200` | Wartość poza przedziałem |
-| `status in (finished, error)` | `status=finished OR status=error` | Dopasowanie dowolnej wartości z listy |
-| `not status=finished` | `status!=finished` | Negacja dowolnego warunku |
-| `filename contains rechnung` | `filename:rechnung` | Dopasowanie ciągu (`contains`/`starts_with`/`ends_with`) |
-| `total_amount > 5k` | `total_amount>5000` | Przyrostek walutowy `k` (×1 000), `M` (×1 000 000) |
-| `overdue` | `invoice_due_date<today() AND status!=finished` | Nieopłacone faktury po terminie |
-| `#INV-1234` | `invoice_id:INV-1234` | Prefiks w stylu Twittera dla id faktury |
-| `@User` | `assigned_to:User` | Prefiks w stylu Twittera dla osoby przypisanej |
-| `$5000+` | `total_amount>=5000` | Prefiks `$` dla progów kwot |
-
-### Zapytanie skrótowe + galeria wyników
-
-Te przykłady pokazują każdy wzorzec skrótu wraz z wpisywanym zapytaniem i wynikiem, który pokazuje pulpit. Pierwsza grupa używa pól standardowych i działa nawet wtedy, gdy wyszukiwanie pełnotekstowe nie jest włączone. Druga grupa używa pól dostępnych tylko w trybie pełnotekstowym, takich jak kwota lub termin płatności faktury.
-
-#### Działa bez wyszukiwania pełnotekstowego
-
-##### Aliasy operatorów
-
-- Zapytanie: `created_on gt 2026-05-25`
-- To samo co: `created_on>2026-05-25`
-- Wynik: Filtruje według Created po 25 maja 2026.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_01_operator_aliases.png" alt="Wynik Quick Search dla created_on gt 2026-05-25"><figcaption><p><code>created_on gt 2026-05-25</code> - Filtruje według Created po 25 maja 2026.</p></figcaption></figure>
-
-##### Samo słowo daty
-
-- Zapytanie: `created_on < today`
-- To samo co: `created_on<today()`
-- Wynik: Rozwija samo słowo today do today().
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_02_bare_date.png" alt="Wynik Quick Search dla created_on &lt; today"><figcaption><p><code>created_on &lt; today</code> - Rozwija samo słowo today do today().</p></figcaption></figure>
-
-##### Okres względny
-
-- Zapytanie: `created_on this_month`
-- To samo co: `created_on>=first day of this month AND created_on<=last day of this month`
-- Wynik: Rozwija this_month do przedziału dat.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_03_period.png" alt="Wynik Quick Search dla created_on this_month"><figcaption><p><code>created_on this_month</code> - Rozwija this_month do przedziału dat.</p></figcaption></figure>
-
-##### Słowa „puste" lub „ustawione"
-
-- Zapytanie: `assigned_to is empty`
-- To samo co: `assigned_to=""`
-- Wynik: Znajduje dokumenty bez osoby przypisanej.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_04_presence.png" alt="Wynik Quick Search dla assigned_to is empty"><figcaption><p><code>assigned_to is empty</code> - Znajduje dokumenty bez osoby przypisanej.</p></figcaption></figure>
-
-##### Przyjazny status
-
-- Zapytanie: `status:open`
-- To samo co: `status=ready_for_validation`
-- Wynik: Mapuje open na status walidacji.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_05_status_open.png" alt="Wynik Quick Search dla status:open"><figcaption><p><code>status:open</code> - Mapuje open na status walidacji.</p></figcaption></figure>
-
-##### Not between
-
-- Zapytanie: `created_on not between 2026-06-01, 2026-06-15`
-- To samo co: `(created_on<2026-06-01 OR created_on>2026-06-15)`
-- Wynik: Znajduje wartości spoza przedziału dat.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_06_not_between.png" alt="Wynik Quick Search dla created_on not between 2026-06-01, 2026-06-15"><figcaption><p><code>created_on not between 2026-06-01, 2026-06-15</code> - Znajduje wartości spoza przedziału dat.</p></figcaption></figure>
-
-##### Dopasowanie do listy
-
-- Zapytanie: `status in (ready_for_validation, exported)`
-- To samo co: `status=ready_for_validation OR status=exported`
-- Wynik: Dopasowuje dowolny z wymienionych statusów.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_07_in_list.png" alt="Wynik Quick Search dla status in (ready_for_validation, exported)"><figcaption><p><code>status in (ready_for_validation, exported)</code> - Dopasowuje dowolny z wymienionych statusów.</p></figcaption></figure>
-
-##### Prefiks negacji
-
-- Zapytanie: `not status=finished`
-- To samo co: `status!=finished`
-- Wynik: Odwraca warunek statusu finished.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_08_negation.png" alt="Wynik Quick Search dla not status=finished"><figcaption><p><code>not status=finished</code> - Odwraca warunek statusu finished.</p></figcaption></figure>
-
-##### Ciąg zawiera
-
-- Zapytanie: `filename contains E2E`
-- To samo co: `filename:E2E`
-- Wynik: Używa contains jako wyszukiwania podciągu w nazwie pliku.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_09_contains.png" alt="Wynik Quick Search dla filename contains E2E"><figcaption><p><code>filename contains E2E</code> - Używa contains jako wyszukiwania podciągu w nazwie pliku.</p></figcaption></figure>
-
-##### Prefiks faktury
-
-- Zapytanie: `#INV-1234`
-- To samo co: `invoice_id:INV-1234`
-- Wynik: Mapuje #... na wyszukiwanie po id faktury.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_12_invoice_prefix.png" alt="Wynik Quick Search dla #INV-1234"><figcaption><p><code>#INV-1234</code> - Mapuje #... na wyszukiwanie po id faktury.</p></figcaption></figure>
-
-##### Prefiks osoby przypisanej
-
-- Zapytanie: `@Daniel`
-- To samo co: `assigned_to:"Daniel"`
-- Wynik: Mapuje @... na wyszukiwanie po nazwie osoby przypisanej.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_13_assignee_prefix.png" alt="Wynik Quick Search dla @Daniel"><figcaption><p><code>@Daniel</code> - Mapuje @... na wyszukiwanie po nazwie osoby przypisanej.</p></figcaption></figure>
-
-#### Wymaga wyszukiwania pełnotekstowego
-
-Jeśli użyjesz tego samego skrótu z polem dostępnym tylko w trybie pełnotekstowym, zapytanie nadal wymaga wyszukiwania pełnotekstowego. Na przykład `ap_assignment_code is empty` używa tego samego skrótu „puste/ustawione" co `assigned_to is empty`, ale pole przypisania AP jest dostępne tylko w trybie pełnotekstowym.
-
-##### Przyrostek walutowy
-
-- Zapytanie: `total_amount > 5k`
-- To samo co: `total_amount>5000`
-- Wynik: Rozwija k do tysięcy na polu kwoty.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_10_currency_suffix.png" alt="Wynik Quick Search dla total_amount &gt; 5k"><figcaption><p><code>total_amount &gt; 5k</code> - Rozwija k do tysięcy na polu kwoty.</p></figcaption></figure>
-
-##### Skrót overdue
-
-- Zapytanie: `overdue`
-- To samo co: `invoice_due_date<today() AND status!=finished`
-- Wynik: Znajduje niezakończone faktury po terminie płatności.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_11_overdue.png" alt="Wynik Quick Search dla overdue"><figcaption><p><code>overdue</code> - Znajduje niezakończone faktury po terminie płatności.</p></figcaption></figure>
-
-##### Prefiks kwoty
-
-- Zapytanie: `$5000+`
-- To samo co: `total_amount>=5000`
-- Wynik: Mapuje $...+ na próg kwoty.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_14_amount_prefix.png" alt="Wynik Quick Search dla $5000+"><figcaption><p><code>$5000+</code> - Mapuje $...+ na próg kwoty.</p></figcaption></figure>
-
----
-
-## Część 4 — Zaawansowane tryby wyszukiwania
-
-Poza wyszukiwaniem po polach trzy tryby z prefiksem przeszukują samą treść dokumentu.
-
-### Wyszukiwanie wektorowe (semantyczne) — `vector:`
-
-Dopasowuje według **znaczenia**, a nie dokładnego tekstu — przydatne do „znajdź dokumenty o XYZ". Wymaga modułu Vector; dotyczy treści dokumentu.
+#### Tekstowy operator porównania
 
 ```
-vector: invoices about office supplies
-vector: shipping delays with Hamburg port
+created_on gt 2026-05-25
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_17_vector.png" alt="Wyniki semantycznego wyszukiwania wektorowego"><figcaption><p><code>vector: supplier invoice</code> — dokumenty powiązane znaczeniowo, nawet bez tych dokładnych słów.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_01_operator_aliases-pl.png" alt="Operator porównania gt w zapytaniu o datę. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Operator porównania gt w zapytaniu o datę. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
-### Wyszukiwanie tekstu OCR — `ocr:`
-
-Przeszukuje **tekst stron** wyodrębniony przez silnik OCR — nie tylko ustrukturyzowane kolumny. Przydatne, gdy wartość, którą pamiętasz, znajduje się w treści dokumentu.
+#### Przed dzisiejszą datą
 
 ```
-ocr: Versandkosten
-ocr: "purchase order PO-12345"
-ocr: Hamburg AND doc_type=INVOICE
-ocr: IBAN
+created_on < today()
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_18_ocr.png" alt="Wyniki wyszukiwania tekstu OCR"><figcaption><p><code>ocr: demo invoice</code> — pasuje do tekstu znalezionego w dowolnym miejscu na stronach dokumentu.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_02_bare_date-pl.png" alt="Porównanie created_on z today(). Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Porównanie created_on z today(). Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
-### Wyszukiwanie w języku naturalnym (AI) — `ai:`
-
-Opisz, czego chcesz, zwykłym językiem; AI odczytuje Twoje sformułowanie i zamienia filtry (dostawca, daty, kwoty) na ustrukturyzowane zapytanie. W odróżnieniu od Vector **buduje zapytanie**, zamiast szukać podobnych dokumentów.
+#### Od daty utworzenia
 
 ```
-ai: invoices from Ruiz over 1000 last quarter
-ai: overdue invoices waiting on approval
-ai: shipping documents from Hamburg last month
+created_on >= 2026-06-01
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_19_ai.png" alt="Wyniki wyszukiwania AI w języku naturalnym"><figcaption><p><code>ai: invoices over 1000 from this year</code> — AI automatycznie zamienia zdanie na filtry.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_03_period-pl.png" alt="Wprowadzanie daty utworzenia od 1 czerwca 2026 r. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Wprowadzanie daty utworzenia od 1 czerwca 2026 r. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
----
+#### Bez przypisanej osoby
+
+```
+assigned_to is empty
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_04_presence-pl.png" alt="Wyszukiwanie dokumentów bez przypisanej osoby. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Wyszukiwanie dokumentów bez przypisanej osoby. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
+
+#### Filtr statusu
+
+```
+status=ready_for_validation
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_05_status_open-pl.png" alt="Przykład filtra statusu w szybkim wyszukiwaniu. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Przykład filtra statusu w szybkim wyszukiwaniu. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
+
+#### Poza okresem
+
+```
+created_on not between 2026-06-01 and 2026-06-15
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_06_not_between-pl.png" alt="Wprowadzanie zapytania poza zakresem dat. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Wprowadzanie zapytania poza zakresem dat. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
+
+#### Alternatywne statusy
+
+```
+status=ready_for_validation OR status=exported
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_07_in_list-pl.png" alt="Łączenie dwóch statusów technicznych operatorem OR. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Łączenie dwóch statusów technicznych operatorem OR. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
+
+#### Wykluczenie warunku dostawcy
+
+```
+NOT supplier_name=Test
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_08_negation-pl.png" alt="Wykluczanie warunku dostawcy operatorem NOT. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Wykluczanie warunku dostawcy operatorem NOT. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
+
+#### Część nazwy pliku
+
+```
+filename:invoice
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_09_contains-pl.png" alt="Wyszukiwanie terminu w nazwach plików. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Wyszukiwanie terminu w nazwach plików. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
+
+#### Zapytanie o numer faktury
+
+```
+invoice_number=INV
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_12_invoice_prefix-pl.png" alt="Przykład zapytania z invoice_number. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Przykład zapytania z invoice_number. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
+
+#### Puste przypisanie
+
+```
+assigned_to=""
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_13_assignee_prefix-pl.png" alt="Wprowadzanie pustego przypisania: assigned_to=&quot;&quot;. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Wprowadzanie pustego przypisania: assigned_to=&quot;&quot;. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
+
+#### Zapytanie o walutę
+
+```
+currency=EUR
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_10_currency_suffix-pl.png" alt="Wprowadzanie filtra waluty: currency=EUR. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Wprowadzanie filtra waluty: currency=EUR. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
+
+#### Data płatności przed dzisiaj
+
+```
+invoice_due_date<today()
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_11_overdue-pl.png" alt="Wprowadzanie daty płatności przed today(). Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Wprowadzanie daty płatności przed today(). Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
+
+#### Próg kwoty
+
+```
+total_amount>=1000
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_14_amount_prefix-pl.png" alt="Wprowadzanie kwoty całkowitej co najmniej 1000. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Wprowadzanie kwoty całkowitej co najmniej 1000. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
+
+## Uwzględnianie treści dokumentu
+
+Menu wyszukiwania treści określa, czy zapytanie obejmuje tekst dokumentu. Jest to niezależne od technicznych prefiksów vector:, ocr: i ai:.
+
+### Automatycznie
+
+Najpierw przeszukuje widoczne kolumny. Przy braku dopasowań uwzględnia treść, jeśli organizacja ma wymagane funkcje.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_17_vector-pl.png" alt="Automatyczne uwzględnianie treści dokumentów w szybkim wyszukiwaniu. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Automatyczne uwzględnianie treści dokumentów w szybkim wyszukiwaniu. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
+
+### Zawsze uwzględniaj treść
+
+Jawnie uwzględnia treść dokumentów. Odpowiednie funkcje wyszukiwania muszą być dostępne.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_18_ocr-pl.png" alt="Stałe uwzględnianie treści dokumentów w szybkim wyszukiwaniu. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Stałe uwzględnianie treści dokumentów w szybkim wyszukiwaniu. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
+
+### Tylko widoczne kolumny
+
+Ogranicza wyszukiwanie do widocznych kolumn panelu.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_19_ai-pl.png" alt="Ograniczenie wyszukiwania do widocznych kolumn. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów."><figcaption><p>Ograniczenie wyszukiwania do widocznych kolumn. Błędna etykieta Wygrać na przycisku oznacza przesyłanie dokumentów.</p></figcaption></figure>
 
 ### Przepisy
 
@@ -462,7 +413,7 @@ ai: shipping documents from Hamburg last month
 | Gotowe do walidacji, w pełni dopasowane | `status=ready_for_validation AND po_match_status=full_matched` |
 | Ten dostawca, ten tydzień | `supplier_name=Test AND created_on>today()-7` |
 | Faktury o wysokiej wartości po terminie | `total_amount>5000 AND invoice_due_date<today()` |
-| Dwóch dostawców naraz | `supplier_name=fuji OR supplier_name=acme` |
+| Dwóch dostawców naraz | `supplier_name=ExampleA OR supplier_name=ExampleB` |
 | Dokumenty z błędem z dzisiaj | `(status=error OR status=failed) AND created_on>today()-1` |
 | Elektroniczne noty kredytowe | `is_edoc=true AND sub_doc_type=CREDIT_NOTE` |
 | Według prefiksu zamówienia zakupu | `purchase_order=PO-2026` |

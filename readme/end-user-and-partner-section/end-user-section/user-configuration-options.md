@@ -4,10 +4,9 @@ Aby skonfigurować swoje ustawienia, kliknij ikonę Użytkownika znajdującą si
 
 {% embed url="https://youtu.be/TLmAHw3EXs4" %}
 
-
 <figure><img src="../../.gitbook/assets/user-config.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/user_config_options_2.png" alt="" width="308"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-u031-pl.png" alt="Menu użytkownika i wybór języka."><figcaption><p>Menu użytkownika i wybór języka.</p></figcaption></figure>
 
 **Język**
 
@@ -17,7 +16,7 @@ How to Change Language in DocBits (User Settings Tutorial)
 
 * **Wybierz Preferowany Język:** Wybierz swój preferowany język z dostępnych opcji.
 
-**Dark Mode**
+**Tryb ciemny**
 
 * **Przełącz na Dark Mode:** Włącz lub wyłącz Dark Mode dla bardziej komfortowego doświadczenia podczas przeglądania.
 

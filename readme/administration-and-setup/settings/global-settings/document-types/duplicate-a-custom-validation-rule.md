@@ -4,6 +4,8 @@ description: Utwórz osobną kopię istniejącej niestandardowej reguły walidac
 
 # Duplikowanie niestandardowej reguły walidacji
 
+<figure><img src="../../../../.gitbook/assets/s150-custom_validation_rule_duplicate_en-pl.png" alt="Niestandardowe reguły walidacji; skonfigurowane nazwy są ukryte. Błędna etykieta Chodnikowiec oznacza pole nagłówka, a Zwyczaj regułę niestandardową. Względne daty pozostają w języku niemieckim."><figcaption><p>Niestandardowe reguły walidacji; skonfigurowane nazwy są ukryte. Błędna etykieta Chodnikowiec oznacza pole nagłówka, a Zwyczaj regułę niestandardową. Względne daty pozostają w języku niemieckim.</p></figcaption></figure>
+
 Użyj opcji **Duplikat**, gdy istniejąca reguła jest dobrym punktem wyjścia i chcesz uzyskać jej oddzielną kopię. DocBits kopiuje definicję reguły; Ty wybierasz nazwę i klucz nowej reguły. Reguła źródłowa pozostaje na liście.
 
 1. Przejdź do **Ustawienia → Typy dokumentów**, otwórz typ dokumentu, który chcesz skonfigurować, i wybierz **Niestandardowe reguły walidacji**. Strona pokazuje wybrany typ dokumentu nad kartami reguł. Pozostałe ustawienia tego ekranu opisano na stronie [Typy dokumentów](README.md).

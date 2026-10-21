@@ -4,12 +4,11 @@
 
 Ta funkcja pomaga zarządzać i uzgadniać numery przedmiotów pomiędzy Twoim systemem a dostawcami. Często numery przedmiotów używane wewnętrznie mogą nie odpowiadać numerom przedmiotów używanym przez dostawców. Docbits ułatwia radzenie sobie z tymi rozbieżnościami, tworząc mapowanie pomiędzy Twoimi numerami przedmiotów a numerami dostawców.
 
-<figure><img src="../../../.gitbook/assets/supplier-item-number-map.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-supplier-item-number-map-pl.png" alt="Mapowanie numerów artykułów dostawcy."><figcaption><p>Mapowanie numerów artykułów dostawcy.</p></figcaption></figure>
 
 ## **Jak to działa**
 
 {% embed url="https://youtu.be/agxk8WQhtJA" %}
-
 
 1. **Ręczne dopasowanie:**
    * Za pierwszym razem, gdy napotkasz rozbieżność pomiędzy swoim numerem przedmiotu a numerem przedmiotu dostawcy, musisz dopasować je ręcznie.

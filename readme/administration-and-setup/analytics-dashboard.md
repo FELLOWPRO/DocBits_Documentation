@@ -40,25 +40,25 @@ Wybierz właściwą perspektywę dla swojej analizy. Każdy typ przepływu daje 
 
 Użyj przełącznika **Typ przepływu** u góry panelu, aby przełączać się między perspektywami.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_types.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_types-pl.png" alt="Widoki przetwarzania, interakcji użytkowników i statusów. Etykieta Ekstrakcja terenowa oznacza tu ekstrakcję pól dokumentu."><figcaption><p>Widoki przetwarzania, interakcji użytkowników i statusów. Etykieta Ekstrakcja terenowa oznacza tu ekstrakcję pól dokumentu.</p></figcaption></figure>
 
 ### Przepływ Status
 
 Śledzi ścieżkę dokumentu od **Nowy** do **Wyeksportowany** — przydatne do analizy pełnego cyklu życia.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_status_flow.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_status_flow-pl.png" alt="Widok statusów w analizie."><figcaption><p>Widok statusów w analizie.</p></figcaption></figure>
 
 ### Przepływ Przetwarzanie
 
 Analizuje wydajność wszystkich **technicznych modułów przetwarzania** (OCR, klasyfikacja, ekstrakcja, walidacja) — przydatne do identyfikacji wąskich gardeł po stronie systemu.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_processing_flow.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_processing_flow-pl.png" alt="Widok procesu ze zbiorczymi etapami. Etykieta Ekstrakcja terenowa oznacza tu ekstrakcję pól dokumentu."><figcaption><p>Widok procesu ze zbiorczymi etapami. Etykieta Ekstrakcja terenowa oznacza tu ekstrakcję pól dokumentu.</p></figcaption></figure>
 
 ### Przepływ Interakcja użytkownika
 
 Skupia się na **punktach kontaktu z człowiekiem** — czasie oczekiwania w kolejce, ręcznej walidacji, przeglądzie i zatwierdzeniu — przydatne do identyfikacji wąskich gardeł przepływu pracy i obsady kadrowej.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_user_interaction_flow.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_user_interaction_flow-pl.png" alt="Zbiorczy widok interakcji użytkowników."><figcaption><p>Zbiorczy widok interakcji użytkowników.</p></figcaption></figure>
 
 ## Opcje filtrów
 
@@ -68,13 +68,13 @@ Panel obsługuje zaawansowane filtrowanie wielowymiarowe. Wszystkie wykresy, kar
 
 Natychmiast zlokalizuj dowolny dokument według **nazwy** lub **unikalnego identyfikatora**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_search.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_search-pl.png" alt="Analiza z filtrem etapu walidacji."><figcaption><p>Analiza z filtrem etapu walidacji.</p></figcaption></figure>
 
 ### Kroki przepływu
 
 Wybierz konkretne kroki, aby skupić swoją analizę. Włączanie/wyłączanie kroków przelicza również metryki czasowe na innych komponentach panelu.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_flow_steps.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_flow_steps-pl.png" alt="Wybór etapów w filtrze analizy. Etykieta Ekstrakcja terenowa oznacza tu ekstrakcję pól dokumentu."><figcaption><p>Wybór etapów w filtrze analizy. Etykieta Ekstrakcja terenowa oznacza tu ekstrakcję pól dokumentu.</p></figcaption></figure>
 
 ### Podorganizacja, Typ dokumentu, Dostawca, Grupa
 
@@ -85,7 +85,7 @@ Porównaj wydajność między:
 * **Dostawcami** — aby zidentyfikować, którzy dostawcy powodują najdłuższe czasy przetwarzania
 * **Grupami** — aby porównać wydajność między przypisanymi grupami użytkowników (dostępne dla typów przepływów **Status** i **Interakcja użytkownika**)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_dimensions.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_dimensions-pl.png" alt="Filtry analizy według etapu, podorganizacji, typu dokumentu i dostawcy."><figcaption><p>Filtry analizy według etapu, podorganizacji, typu dokumentu i dostawcy.</p></figcaption></figure>
 
 <mark style="color:red;">**Notatka**</mark>: Filtr **Grupa** dotyczy tylko dokumentów, które są **przypisane bezpośrednio do grupy**. Dokumenty przypisane do indywidualnego użytkownika — nawet jeśli ten użytkownik jest członkiem grupy — **nie są** uwzględniane w wynikach filtra grupy.
 
@@ -95,13 +95,13 @@ Włączone domyślnie — w metrykach panelu uwzględniane są tylko dokumenty, 
 
 <mark style="color:red;">**Notatka**</mark>: Wyłączenie tej opcji może skutkować niedokładnymi wartościami średnimi, ponieważ w obliczeniach uwzględniane są również dokumenty, które nie zostały jeszcze zakończone.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_only_exported_toggle.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_only_exported_toggle-pl.png" alt="Opcja analizy wyłącznie wyeksportowanych dokumentów. Etykieta Ekstrakcja terenowa oznacza tu ekstrakcję pól dokumentu."><figcaption><p>Opcja analizy wyłącznie wyeksportowanych dokumentów. Etykieta Ekstrakcja terenowa oznacza tu ekstrakcję pól dokumentu.</p></figcaption></figure>
 
 ### Zakres czasu
 
 Analizuj dowolny okres od **7 dni** do **pełnego roku** lub ustaw **niestandardowy zakres** za pomocą selektora dat.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_time_range.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_time_range-pl.png" alt="Wybór niestandardowego okresu w filtrach analizy. Etykieta Zwyczaj oznacza tutaj okres niestandardowy."><figcaption><p>Wybór niestandardowego okresu w filtrach analizy. Etykieta Zwyczaj oznacza tutaj okres niestandardowy.</p></figcaption></figure>
 
 ## Karty kroków przepływu
 
@@ -115,7 +115,7 @@ Każda karta wyświetla:
 
 Przełącznik **Wybierz wszystko** w nagłówku pozwala uwzględnić lub wykluczyć każdy krok jednocześnie.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_steps_card.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_steps_card-pl.png" alt="Karty etapów ze zbiorczymi czasami przetwarzania. Etykieta Ekstrakcja terenowa oznacza tu ekstrakcję pól dokumentu."><figcaption><p>Karty etapów ze zbiorczymi czasami przetwarzania. Etykieta Ekstrakcja terenowa oznacza tu ekstrakcję pól dokumentu.</p></figcaption></figure>
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
 
@@ -127,7 +127,7 @@ Przełącznik **Porównaj ze Średnią Globalną** kontroluje, czy Średnia Glob
 * **Pomarańczowy** — Twój Śr Czas jest do **+25%** powyżej Średniej Globalnej
 * **Czerwony** — Twój Śr Czas jest **+25%** lub więcej powyżej Średniej Globalnej
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_global_average_comparison.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_global_average_comparison-pl.png" alt="Średni czas w porównaniu ze średnią globalną."><figcaption><p>Średni czas w porównaniu ze średnią globalną.</p></figcaption></figure>
 
 ## Wykres Średniego Czasu
 
@@ -179,7 +179,7 @@ Tabela danych zapewnia pełny dostęp do wszystkich podstawowych danych wierszy 
 * **Sortuj**, klikając nagłówki kolumn, i **zmień kolejność** kolumn przez przeciąganie i upuszczanie.
 * **Pobierz CSV** za pomocą przycisku w nagłówku karty — eksportowane są tylko aktualnie widoczne kolumny.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_data_table-pl.png" alt="Tabela analityczna z polskimi etykietami; wartości dokumentów są ukryte."><figcaption><p>Tabela analityczna z polskimi etykietami; wartości dokumentów są ukryte.</p></figcaption></figure>
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 

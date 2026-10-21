@@ -4,7 +4,7 @@
 
 > **Dostęp:** Otwórz **Ustawienia → Organizacja i dostęp → Użytkownicy** i kliknij przycisk **Analiza logowań** w prawym górnym rogu (`/settings/login-analytics`).
 
-<figure><img src="../../../../../.gitbook/assets/login_analytics_overview.png" alt="Strona Analiza logowań z wykresem aktywności i kartami podsumowania"><figcaption><p>Aktywność logowań w organizacji w wybranym okresie</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u003-pl.png" alt="Przegląd analizy logowania."><figcaption><p>Przegląd analizy logowania.</p></figcaption></figure>
 
 ## Zakres czasu
 

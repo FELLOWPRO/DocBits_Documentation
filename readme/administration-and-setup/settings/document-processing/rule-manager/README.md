@@ -1,6 +1,6 @@
 # Zarządzanie regułami
 
-<figure><img src="../../../../.gitbook/assets/rule_management.png" alt="Zarządzanie regułami"><figcaption><p>Strona zarządzania regułami</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_management-pl.png" alt="Zarządzanie regułami z ukrytymi skonfigurowanymi nazwami."><figcaption><p>Zarządzanie regułami z ukrytymi skonfigurowanymi nazwami.</p></figcaption></figure>
 
 Rule Management umożliwia tworzenie reguł rozwiązywania konfliktów opartych na TOML i zarządzanie nimi. Reguły te są używane podczas PO matchingu i eksportu dokumentów. Każdy zestaw reguł określa, jak DocBits postępuje z rozbieżnościami między danymi faktury a danymi zamówienia zakupu.
 
@@ -10,11 +10,11 @@ Główna tabela pokazuje wszystkie konfiguracje reguł:
 
 | Kolumna | Opis |
 |--------|-------------|
-| **Name** | Nazwa zestawu reguł. Pozycje oznaczone tagiem **default** to szablony dostarczane przez system. |
-| **Description** | Podsumowanie tego, czym zajmuje się zestaw reguł. |
-| **Last Modified By** | Użytkownik, który ostatnio edytował ten zestaw reguł. |
-| **Last Modified At** | Znacznik czasu ostatniej zmiany. |
-| **Actions** | Menu z trzema kropkami do edycji, kopiowania lub usuwania. |
+| **Nazwa** | Nazwa zestawu reguł. Pozycje oznaczone tagiem **domyślny** to szablony dostarczane przez system. |
+| **Opis** | Podsumowanie tego, czym zajmuje się zestaw reguł. |
+| **Ostatnia modyfikacja przez** | Użytkownik, który ostatnio edytował ten zestaw reguł. |
+| **Ostatnia modyfikacja:** | Znacznik czasu ostatniej zmiany. |
+| **Akcje** | Menu z trzema kropkami do edycji, kopiowania lub usuwania. |
 
 Kliknij **+ New**, aby utworzyć nowy zestaw reguł, lub kliknij istniejącą nazwę, aby otworzyć edytor reguł.
 
@@ -90,7 +90,6 @@ Operatory te określają, w jaki sposób rzeczywiste wartości z faktury są por
 
 • outside tolerance
 
-
 ### Status zatwierdzenia
 
 Wskazuje, czy rozbieżność jest zatwierdzona, czy nie:
@@ -100,7 +99,6 @@ Wskazuje, czy rozbieżność jest zatwierdzona, czy nie:
 • rejected
 
 • any
-
 
 ### Typy akcji
 
@@ -134,7 +132,6 @@ Określa konkretne działania podejmowane po wykryciu rozbieżności:
 
 • credit note tax line
 
-
 ### Przykłady reguł
 
 #### [Przypadek 1, 2, 3: ilość i cena jednostkowa w granicach tolerancji](transactionconfig-pro-template/case-1-2-3-quantity-and-unit-price-within-tolerance.md)
@@ -143,22 +140,17 @@ Określa konkretne działania podejmowane po wykryciu rozbieżności:
 
 • Akcja: System akceptuje wartości z faktury i oblicza kwotę łączną.
 
-
-
 #### [Przypadek 4, 5: ilość w granicach tolerancji, cena jednostkowa poza tolerancją (zatwierdzona)](./#case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved)
 
 • Cel: Stosowany, gdy ilość mieści się w tolerancji, a cena jednostkowa jest poza tolerancją i została zatwierdzona.
 
 • Akcja: System koryguje cenę jednostkową do wartości z PO i nalicza wszelkie niezbędne opłaty na poziomie pozycji.
 
-
-
 #### [Przypadek 6: ilość w granicach tolerancji, cena jednostkowa poniżej ujemnej tolerancji (odrzucona)](transactionconfig-pro-template/case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
 
 • Cel: Dotyczy przypadków, w których cena jednostkowa jest niższa od oczekiwanej i wykracza poza zakres tolerancji, co prowadzi do odrzucenia.
 
 • Akcja: System koryguje cenę jednostkową do wartości z PO, generuje notę kredytową na kwotę różnicy i w razie potrzeby nalicza opłaty na poziomie nagłówka.
-
 
 ### Obsługa opłat i podatków
 
@@ -180,7 +172,7 @@ Określa konkretne działania podejmowane po wykryciu rozbieżności:
 
 ### Zrzut ekranu 1: Interfejs zarządzania regułami
 
-<figure><img src="../../../../.gitbook/assets/rule_management_interface.png" alt="Interfejs zarządzania regułami"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_management_interface-pl.png" alt="Przegląd zarządzania regułami i dostępnych działań."><figcaption><p>Przegląd zarządzania regułami i dostępnych działań.</p></figcaption></figure>
 
 Ten zrzut ekranu przedstawia interfejs Rule Management, w którym administratorzy mogą przeglądać wszystkie reguły rozwiązywania konfliktów i nimi zarządzać. Kluczowe elementy to:
 
@@ -192,7 +184,7 @@ Ten zrzut ekranu przedstawia interfejs Rule Management, w którym administratorz
 
 ### Zrzut ekranu 2: Szczegółowa edycja reguły
 
-<figure><img src="../../../../.gitbook/assets/rule_detailed_editing.png" alt="Szczegółowa edycja reguły"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_detailed_editing-pl.png" alt="Edytor reguł TOML z technicznym przykładem konfiguracji."><figcaption><p>Edytor reguł TOML z technicznym przykładem konfiguracji.</p></figcaption></figure>
 
 Ten zrzut ekranu przedstawia szczegółowy widok edytowanej reguły. Kluczowe elementy to:
 

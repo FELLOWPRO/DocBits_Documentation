@@ -6,7 +6,7 @@ Ustawienie Origin w DocBits wyjaśnione: Standardy krajowe dla formatów dat i l
 
 DocBits doskonale radzi sobie z dostosowywaniem układów dokumentów zgodnie z ich pochodzeniem geograficznym, jednocześnie standaryzując elementy takie jak formaty walut na podstawie ustawień przeglądarki użytkownika. Przyjrzyjmy się, jak można wykorzystać Layout Builder do dostosowania układów dla różnych pochodzeń, takich jak USA i Niemcy.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_1.png)
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_1-pl.png" alt="Kreator układów z polskimi elementami sterowania."><figcaption><p>Kreator układów z polskimi elementami sterowania.</p></figcaption></figure>
 
 ## **Zrozumienie dostosowania opartego na pochodzeniu**
 
@@ -36,10 +36,10 @@ DocBits doskonale radzi sobie z dostosowywaniem układów dokumentów zgodnie z 
 
 Gdy chcesz zastosować domyślny układ do wielu pochodzeń, naciśnij **Zastosuj domyślny układ do Origins**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_3.png)
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_3-pl.png" alt="Wybór pochodzenia; skonfigurowane nazwy pozostają bez zmian."><figcaption><p>Wybór pochodzenia; skonfigurowane nazwy pozostają bez zmian.</p></figcaption></figure>
 
 Pojawi się okno popup, w którym możesz wybrać pochodzenia, do których chcesz zastosować domyślny układ. Możesz użyć **Zaznacz wszystko** lub **Odznacz wszystko**, aby szybko zarządzać swoim wyborem. Okno popup wyświetla liczbę aktualnie wybranych pochodzeń.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_4.png)
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_4-pl.png" alt="Okno zastosowania układu domyślnego do pochodzeń. Etykieta początki oznacza tutaj pochodzenia dokumentów."><figcaption><p>Okno zastosowania układu domyślnego do pochodzeń. Etykieta początki oznacza tutaj pochodzenia dokumentów.</p></figcaption></figure>
 
 Po dokonaniu wyboru kliknij **Zastosuj do pochodzeń**. Komunikat o sukcesie potwierdzi, że pochodzenia zostały zaktualizowane.

@@ -1,6 +1,6 @@
 # Advanced Workflow
 
-Kreator **Advanced Workflow** to edytor grafu węzłów dla przepływów pracy, które wymagają rozgałęzień, równoległych ścieżek i kontroli przepływu — wykraczających poza liniowy model When/And/Then z kreatora Standard. Układasz węzły na obszarze roboczym i łączysz je, aby zdefiniować przebieg wykonywania.
+Kreator **Zaawansowany przepływ pracy** to edytor grafu węzłów dla przepływów pracy, które wymagają rozgałęzień, równoległych ścieżek i kontroli przepływu — wykraczających poza liniowy model When/And/Then z kreatora Standard. Układasz węzły na obszarze roboczym i łączysz je, aby zdefiniować przebieg wykonywania.
 
 ## Wideo: ścieżki przetwarzania faktur w DocBits
 
@@ -76,21 +76,21 @@ Otwórz projektant Advanced Workflow z obszaru przepływów pracy (obszar robocz
 
 ## Dodawanie węzłów
 
-Kliknij **+ Add**, aby otworzyć menu węzłów. Oprócz znanych kart **When**, **And** i **Then** kreator zaawansowany dodaje węzły kontroli przepływu:
+Kliknij **+ Add**, aby otworzyć menu węzłów. Oprócz znanych kart **Gdy**, **I** i **Następnie** kreator zaawansowany dodaje węzły kontroli przepływu:
 
-<figure><img src="../../.gitbook/assets/workflow_advanced_add_menu.png" alt="Advanced Workflow Add menu with node types"><figcaption><p>Menu węzłów <strong>+ Add</strong>: When / And / Then oraz Wait ALL, Wait ANY, OR i Note.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-u034-pl.png" alt="Menu węzłów zaawansowanego kreatora przepływów."><figcaption><p>Menu węzłów zaawansowanego kreatora przepływów.</p></figcaption></figure>
 
 - **When / And / Then** — te same karty warunków i akcji co w kreatorze Standard.
-- **Wait ALL** — czekaj, aż *wszystkie* przychodzące gałęzie zostaną ukończone, zanim przejdziesz dalej.
-- **Wait ANY** — kontynuuj, gdy tylko *którakolwiek* przychodząca gałąź zostanie ukończona.
+- **Poczekaj WSZYSCY** — czekaj, aż *wszystkie* przychodzące gałęzie zostaną ukończone, zanim przejdziesz dalej.
+- **Poczekaj DOWOLNY** — kontynuuj, gdy tylko *którakolwiek* przychodząca gałąź zostanie ukończona.
 - **OR** — rozgałęź przepływ na alternatywne ścieżki.
-- **Note** — swobodna adnotacja tekstowa na obszarze roboczym (nie wpływa na wykonywanie).
+- **Notatka** — swobodna adnotacja tekstowa na obszarze roboczym (nie wpływa na wykonywanie).
 
 Uruchom przepływ za pomocą elementu sterującego odtwarzaniem, zweryfikuj go i zapisz przyciskiem zapisu na pasku narzędzi.
 
 ## Następne kroki
 
-- Zobacz, co robi każda karta, w sekcji **Cards**.
+- Zobacz, co robi każda karta, w sekcji **Karty**.
 - W przypadku prostych liniowych automatyzacji szybszy w konfiguracji jest kreator **Standard Workflow**.
 
 [Zobacz wszystkie pięć rozdziałów](advanced-workflow-videos.md)

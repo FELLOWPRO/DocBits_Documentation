@@ -18,7 +18,7 @@ Aby włączyć wykrywanie duplikatów dokumentów w **DocBits**, wykonaj następ
     ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_2.png)
 3.  Przejdź do sekcji **Wykrywanie duplikatów**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_3.png)
+<figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_3-pl.png" alt="Ustawienia wykrywania zduplikowanych dokumentów."><figcaption><p>Ustawienia wykrywania zduplikowanych dokumentów.</p></figcaption></figure>
 
 DocBits oferuje dwie opcje identyfikacji duplikatów dokumentów:
 
@@ -36,7 +36,8 @@ Gdy **Wykrywanie duplikatów** jest włączone, dostępne będą dwa menu rozwij
 *   **Pola wykrywania duplikatów**\
     Wybierz pola, które powinny być używane do identyfikacji duplikatów (np. Identyfikator dostawcy, Data, Numer faktury itp.). Dokumenty pasujące do tych pól będą oznaczane jako duplikaty.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_4.png)
+<figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_4-pl.png" alt="Dostępne pola wykrywania duplikatów."><figcaption><p>Dostępne pola wykrywania duplikatów.</p></figcaption></figure>
+
 *   **Interwał wykrywania duplikatów**
 
     Użyj tego ustawienia, aby zdefiniować zakres czasowy, w którym wykrywane są duplikaty. Dokumenty przesłane w wybranym interwale będą porównywane ze sobą na podstawie wybranych pól.
@@ -59,7 +60,8 @@ Gdy **Wykrywanie duplikatów** jest włączone, wszelkie dokumenty zidentyfikowa
 *   Kliknij tę ikonę, aby otworzyć pasujące rekordy w widoku podzielonego ekranu obok siebie dla łatwego porównania.\
     <mark style="color:red;">**Uwaga**</mark>: Ikona pojawi się tylko wtedy, gdy dla dokumentu wykryto przynajmniej jeden duplikat.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_7.png)
 *   Podczas przeglądania oznaczonego dokumentu, na górze pojawi się pasek ostrzegawczy, wskazujący, że dokument jest duplikatem.
 
     ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_5.png)
+
+Przy podejrzeniu duplikatu porównaj numer faktury, dostawcę, datę i kwotę. Użyj ostrzeżenia i szczegółów dokumentu, aby ustalić potrzebną korektę.

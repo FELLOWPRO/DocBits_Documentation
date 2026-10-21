@@ -737,3 +737,73 @@ Fix: Check shipping documents or contact supplier
 * Empfohlene Werte nach Branche finden Sie unter „Toleranzeinstellungen“.
 * Informationen zum Umgang mit Fehlern finden Sie unter „Ausnahmebehandlung“.
 * Kontaktieren Sie Ihr Beschaffungsteam für spezifische Toleranzrichtlinien
+
+<!-- workflow-card-example-condition_promised_delivery_date_to_current-20261021 -->
+
+### Zugesagter Liefertermin im Vergleich zum Referenzdatum
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-ca4dcfa998e7-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+
+`CONDITION_PROMISED_DELIVERY_DATE_TO_CURRENT` · Version 2
+
+Gehen Sie von einem Referenzdatum von `2026-10-21` und einem versprochenen Linienlieferdatum von `2026-10-23` aus. Wählen Sie den Später-als-Vergleich und die Null-Tage-Toleranz aus. Das zukünftige Datum erfüllt diesen Vergleich; `2026-10-20` nicht. Konfigurieren Sie die Optionen „Alle/Alle“ und „Akzeptierter Toleranztag“ gezielt und testen Sie ein fehlendes Datum separat.
+
+<!-- workflow-card-example-condition_po_extracted_table_column-20261021 -->
+
+### Bestellspalte im Vergleich zu einer extrahierten Spalte
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-e2c12dd67cc0-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+
+`CONDITION_PO_EXTRACTED_TABLE_COLUMN` · Version 2
+
+Vergleichen Sie die übereinstimmende Bestellartikelspalte mit der extrahierten Spalte `article_number` unter Verwendung von Gleichheit und Alle. Passende Werte `DEMO-A` bestanden; ein extrahierter Wert `DEMO-B` schlägt fehl. Wählen Sie eine Nachschlagetabelle nur aus, wenn eine dokumentierte ID-Wert-Ersetzung erforderlich ist. Überprüfen Sie diese Zuordnung vor dem Vergleich.
+
+<!-- workflow-card-example-condition_check_facility_in_po-20261021 -->
+
+### Zulässige Bestellmöglichkeiten
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-813ff783b1f2-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+
+`CONDITION_CHECK_FACILITY_IN_PO` · Version 2
+
+Wählen Sie „Alle“, den Ist-Vergleich und den konfigurierten Anlagencode `DEMO-NORTH`. Übereinstimmende Bestellposten in diesem Einrichtungspass; eine Zeile in `DEMO-SOUTH` schlägt fehl. Verwenden Sie Einrichtungscodes aus den Bestelldaten, anstatt davon auszugehen, dass es sich bei einem Anzeigeetikett um den Code handelt.
+
+<!-- workflow-card-example-condition_purchase_order_full_match-20261021 -->
+
+### Vollständiger Bestellabgleich
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-91a5b2a70e88-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+
+`CONDITION_PURCHASE_ORDER_FULL_MATCH` · Version 2
+
+Verwenden Sie eine vollständig abgestimmte Demo-Rechnung und Bestellung mit der Menge `2` und dem Stückpreis `100` auf beiden Seiten sowie konfigurierten Mengen-/Preistoleranzen. Wählen Sie die Bedingung „Vollständige Übereinstimmung“ aus: Sie ist erfüllt. Testen Sie dann einen Preis außerhalb der konfigurierten Toleranz. Fehlende Vergleichsdaten oder eine fehlende Bestellung stellen keinen erfolgreichen vollständigen Abgleich dar. Ein Lieferschein hat einen reinen Mengenvergleich; Gehen Sie nicht davon aus, dass die Regeln für den Rechnungspreis gelten.
+
+<!-- workflow-card-example-condition_po_update_empty_column_check-20261021 -->
+
+### Leere Spalte in der Bestelldatenbank
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-f20345d72edd-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
+
+`CONDITION_PO_UPDATE_EMPTY_COLUMN_CHECK` · Version 2
+
+Wählen Sie eine gültige PO-Tabelle und -Spalte aus, die von der Karte und dem Ist-Leer-Operator angeboten wird. Für einen vorhandenen übereinstimmenden Bestelldatensatz mit einem leeren Wert ist die Bedingung erfüllt; ein ausgefüllter Wert schlägt fehl. Überprüfen Sie zunächst die PO-Referenz und die Tabellen-/Spaltenzuordnung. Boolescher Wert `false` ist immer noch ein aktueller boolescher Wert; Ein fehlender Bestelldatensatz ist ein separater Datenfehler.
+
+<!-- workflow-card-example-condition_compare_unit_price_percent_per-20261021 -->
+
+### Prozentuale Toleranz pro Preisbasis
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-14ec95131dfc-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+
+`CONDITION_COMPARE_UNIT_PRICE_PERCENT_PER` · Version 2
+
+Beispiel: Bestelleinheitspreis `200`, Grundpreis `100` und konfigurierte Toleranz `1` ergeben einen effektiven Satz von `(200 / 100) * (1 / 100) = 0.02` oder `2%`. Das Vergleichsband ist `196–204`. Gleichheit innerhalb der Toleranz akzeptiert einen Dokumentenpreis von `203` und lehnt `210` ab. Gehen Sie nicht davon aus, dass es sich bei dieser Karte um eine feste Toleranz von 1 % handelt.
+
+<!-- workflow-card-example-condition_compare_po_line_value-20261021 -->
+
+### Wert der Bestellposition im Vergleich zu einer Referenz
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-43a5d2686fb7-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+
+`CONDITION_COMPARE_PO_LINE_VALUE` · Version 2
+
+Wählen Sie die übereinstimmende PO-Spalte `item_number`, Gleichheit und Wert `DEMO-A` aus. Eine Linie mit `DEMO-A` geht durch; `DEMO-B` schlägt fehl. Verwenden Sie nur Operatoren, die für den ausgewählten Datentyp unterstützt werden, und testen Sie fehlende Matched-Line-Daten separat.

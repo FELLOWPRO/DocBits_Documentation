@@ -1,4 +1,4 @@
-# Feld ist
+# Vorhandensein und Inhalt eines Dokumentfelds prüfen
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-db30554e1eb1-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
@@ -34,3 +34,15 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen auf Basis des Vorhandenseins
 ## **Fazit:**
 
 Die Workflow-Karte "Field Presence and State Validation" ist ein wichtiges Werkzeug für Dokumentverarbeitungs-Workflows und stellt eine genaue Behandlung fehlender oder befüllter Felder sicher. Indem sie Aktionen auf Basis von Feldzuständen automatisiert, stärkt diese Karte die Datenintegrität, reduziert Fehler und sorgt dafür, dass Workflows reibungslos und effizient ablaufen.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Rechnungen erkennen, deren Rechnungsnummer noch überprüft werden muss.
+
+**Konfiguration:** Wählen Sie Feld `invoice_number` und Leer/Nicht im Dokument.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein leeres oder fehlendes Feld besteht. Ein ausgefüllter Wert wie `DEMO-001` erfüllt diese Bedingung nicht.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

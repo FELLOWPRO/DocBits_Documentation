@@ -36,3 +36,15 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen auf Basis des Vorhandenseins
 ## **Fazit:**
 
 Die Workflow-Karte "Text Presence in Field" ist ein einfaches, aber leistungsstarkes Werkzeug für die Analyse von Dokumentinhalten. Indem sie Aktionen auf Basis der Texterkennung automatisiert, unterstützt diese Karte intelligentere Workflows, verbessert die Genauigkeit der Dokumentbearbeitung und reduziert den manuellen Aufwand.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Suchen Sie nach Dokumenten, die eine Überprüfungsmarkierung tragen.
+
+**Konfiguration:** Wählen Sie das Textfeld `review_note` aus, das Operator und Text `manual review` enthält.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** `Please start manual review` besteht. `Ready for export` enthält den ausgewählten Text nicht und schlägt fehl.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

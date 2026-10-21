@@ -31,3 +31,15 @@ Die Workflow-Karte "**Ordnen Sie das Dokument der Reihe nach den Gruppen zu**" e
 ## **Fazit**
 
 Die Workflow-Karte "Assign the Document Sequentially to Groups" sorgt für eine effiziente Dokumentzuweisung an eine oder mehrere Gruppen auf Basis der Priorität. Diese Funktion unterstützt eine flexible und organisierte Dokumentverarbeitung über mehrere Teams oder Abteilungen hinweg.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Priorisieren Sie die Dokumentzuweisung an Prüfteams.
+
+**Konfiguration:** Wählen Sie die konfigurierten Demogruppen aus und stellen Sie die gewünschte Priorität ein, zum Beispiel `10`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Das Dokument erhält die ausgewählten Gruppenzuweisungen mit dieser Priorität. Testen Sie eine zweite Priorität separat, wenn die Gruppen unterschiedliche Stufen belegen müssen.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

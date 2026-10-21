@@ -37,3 +37,13 @@ Diese Workflow-Karte ist darauf zugeschnitten, Operationen an Dokumenten auf Bas
 #### Fazit
 
 Die Workflow-Karte "Single Document Status Condition" vereinfacht das Dokumentenmanagement, indem sie sich auf einzelne Statusbedingungen konzentriert. Diese Spezifikation hilft in Fällen, in denen eine präzise Kontrolle über Dokumentflüsse erforderlich ist, insbesondere in Umgebungen mit strengen Verarbeitungskriterien. Eine klare Dokumentation dieser Version der Karte stellt sicher, dass Benutzer ihre Anwendung vollständig verstehen und sie effektiv in ihre täglichen Abläufe integrieren können, und steigert so sowohl die Compliance als auch die Effizienz bei der Dokumentverarbeitung.
+
+<!-- workflow-card-complete-example-20261021 condition_doc_status_is_isnot -->
+
+### Beispiel für einen Einzelstatus
+
+**Konfiguration:** Wählen Sie Operator `is` und Status `Pending Approval`. Fügen Sie eine folgende Überprüfungsaktion hinzu, die für diesen Status geeignet ist.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Die Bedingung ist wahr für ein Dokument, das derzeit `Pending Approval` ist; Für ein Dokument mit dem Status `Ready in Validation` ist es falsch. Verwenden Sie den aktuell ausgewählten Status aus Ihrer Freigabe. Durch das Ändern eines Status wird das Dokument nicht automatisch exportiert.
+
+Dies ist eine beispielhafte Testkonfiguration und das erwartete Ergebnis. es wurde nicht ausgeführt. Verwenden Sie die in Ihrer Testorganisation konfigurierten Daten und Empfänger.

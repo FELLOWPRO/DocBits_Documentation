@@ -46,3 +46,13 @@ Diese Workflow-Karte ist darauf ausgelegt, den Wert eines Feldes mit einem angeg
 ## **Fazit:**
 
 Die Karte "Field Comparison with Tolerances" ist ein vielseitiges Werkzeug für Workflows, die flexible Auswertungen erfordern. Indem sie Vergleiche mit Toleranzen ermöglicht, sorgt sie dafür, dass Workflows effizient und anpassungsfähig bleiben und reale Abweichungen berücksichtigen, ohne Kompromisse bei der Genauigkeit einzugehen.
+
+<!-- workflow-card-complete-example-20261021 condition_docfield_operator_value_tolerances -->
+
+### Beispiel für Referenzwerttoleranz
+
+**Konfiguration:** Wählen Sie numerisches Dokumentfeld `total_amount`, Gleichheit, Referenzwert `100`, absolute Toleranz `5` und Toleranztypwert.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Bei Wert `103` ist die Bedingung wahr, da die Differenz innerhalb der erlaubten Toleranz liegt. Bei Wert `110` ist die Bedingung falsch, da die Differenz diese Toleranz überschreitet. Diese Karte vergleicht ein Feld mit einem konfigurierten Referenzwert. Verwenden Sie die separate Zwei-Felder-Karte, wenn beide Seiten aus Dokumentenfeldern stammen müssen. Fehlende oder nicht numerische Daten bedürfen einer Untersuchung, nicht einer vermuteten Übereinstimmung.
+
+Dies ist eine beispielhafte Testkonfiguration und das erwartete Ergebnis. es wurde nicht ausgeführt. Verwenden Sie die in Ihrer Testorganisation konfigurierten Daten und Empfänger.

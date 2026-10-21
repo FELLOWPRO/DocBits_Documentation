@@ -61,3 +61,15 @@ Die Workflow-Karte "**Dokument zuweisen und Aufgabe/Benachrichtigung für Benutz
 ## **Fazit**
 
 Die Workflow-Karte "Assign Document and Create Task/Notification for User" stellt sicher, dass Dokumente dem passenden Benutzer zugewiesen werden, und erstellt gleichzeitig Aufgaben oder Benachrichtigungen mit definierten Prioritäten und optionalen E-Mail-Benachrichtigungen. Diese Karte hilft, die Aufgabendelegation zu optimieren, und steigert die Workflow-Effizienz.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Erstellen Sie neben der priorisierten Dokumentzuweisung eine Benutzerüberprüfungsaufgabe.
+
+**Konfiguration:** Wählen Sie `Demo Reviewer A`, Aufgabentitel `Review invoice`, Aufgabenpriorität und Zuweisungspriorität.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Überprüfen Sie, ob sowohl die Dokumentzuweisung als auch die Aufgabe/Benachrichtigung für den ausgewählten Benutzer mit den vorgesehenen Prioritäten vorhanden sind.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

@@ -30,3 +30,15 @@ Die Workflow-Karte "**Ordnen Sie das Dokument basierend auf der Entscheidungstab
 ## **Fazit**
 
 Die Workflow-Karte "**Ordnen Sie das Dokument basierend auf der Entscheidungstabelle der Reihe nach einem Benutzer/einer Gruppe zu**" sorgt für eine effiziente und dynamische Weiterleitung von Dokumenten. Durch die Nutzung der Logik der Entscheidungstabelle und der Prioritätswerte ermöglicht die Karte eine präzise Zuweisung an entweder einen Benutzer oder eine Gruppe und optimiert so Dokument-Workflows.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Verwenden Sie eine Entscheidungstabelle, um einen priorisierten Dokumentzuständigen auszuwählen.
+
+**Konfiguration:** Konfigurieren Sie eine passende Demo-Entscheidungstabellenregel, die den gewünschten Benutzer oder die gewünschte Gruppe zurückgibt, und wählen Sie dann diese Tabelle auf der Karte aus.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Der zurückgegebene Beauftragte wird für die sequentielle Dokumentenzuweisung verwendet. Wenn keine passende Rückgabe vorliegt, gehen Sie nicht von einem Standardempfänger aus; Überprüfen Sie das Ergebnis und das konfigurierte Fallback-Verhalten dieser Version.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

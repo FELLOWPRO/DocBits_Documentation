@@ -31,7 +31,7 @@ Die Workflow-Karte **„Spalten in der Tabelle berechnen“** wird verwendet, um
 ## **Funktionalität:**
 
 * **Bedingungsauswertung:**\
-  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wenn“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Spaltenberechnung:**\
   Die Karte führt die ausgewählte mathematische Operation zwischen den beiden gewählten Spalten durch.
 * **Ergebnisspeicherung:**\
@@ -51,3 +51,15 @@ Die Workflow-Karte **„Spalten in der Tabelle berechnen“** wird verwendet, um
 ## **Fazit:**
 
 Die Workflow-Karte **„Spalten in der Tabelle berechnen“** ermöglicht es Benutzern, dynamische Berechnungen zwischen Spalten in einer Tabelle durchzuführen und die Ergebnisse in einer festgelegten Spalte zu speichern. Die Karte bietet Flexibilität, um verschiedene mathematische Operationen anzuwenden, und stellt sicher, dass das Ergebnis in der angegebenen Spalte gespeichert wird.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Zeilensummen aus Menge und Stückpreis berechnen.
+
+**Konfiguration:** Tabelle auswählen `lines`, Spalten `quantity` und `unit_price`, Multiplikations- und Ergebnisspalte `line_total`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Eine Zeile, die `2` und `10` enthält, erzeugt `20`. Testen Sie eine andere Zeile unabhängig und diagnostizieren Sie fehlende oder nicht numerische Eingaben, anstatt sie als gültige Summe zu behandeln.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

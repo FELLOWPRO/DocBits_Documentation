@@ -48,3 +48,15 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen zu automatisieren, indem sie
 ## **Fazit:**
 
 Die Workflow-Karte "Compare Two Fields with Tolerance" ist ein leistungsstarkes Werkzeug, um Dokumentfelder zu vergleichen und dabei zulässige Datenabweichungen zu berücksichtigen. Indem sie Toleranz auf Feldvergleiche anwendet, verleiht diese Karte dem Workflow Flexibilität und ermöglicht es ihm, reale Datenabweichungen zu handhaben. Sie verbessert die Entscheidungsfindung, unterstützt die Datenvalidierung und steigert die Workflow-Automatisierung insgesamt.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Wann zu verwenden ist:** Akzeptieren Sie eine kleine Differenz zwischen einer extrahierten Menge und einer separat berechneten Menge.
+
+**Konfiguration:** Wählen Sie numerische Felder `net_total` und `calculated_total`, Gleichheitsvergleich und eine absolute Toleranz von `5`. Verwenden Sie die Werte `103` und `100`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Die Differenz beträgt `3`, liegt also innerhalb der Toleranz. Bei `110` und `100` beträgt der Unterschied `10` und die Gleichheit-mit-Toleranz-Bedingung schlägt fehl.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

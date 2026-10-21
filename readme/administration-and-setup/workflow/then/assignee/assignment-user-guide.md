@@ -779,3 +779,23 @@ Both teams process in sequence
 * **ACTION\_SEND\_EMAIL** – Zugeordnete Person benachrichtigen
 * **CONDITION\_USER\_IS\_ISNOT** – Überprüfen Sie, ob die richtige Person zugewiesen ist
 * **CONDITION\_GROUP\_IS\_ISNOT** – Überprüfen Sie, ob die richtige Gruppe zugewiesen ist
+
+<!-- workflow-card-example-action_assign_doc_to_first_user_and_tasks-20261021 -->
+
+### Weisen Sie das Dokument dem ersten zurückgegebenen Benutzer zu und erstellen Sie Aufgaben
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-ae5af7c6bdc2-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+
+`ACTION_ASSIGN_DOC_TO_FIRST_USER_AND_TASKS` · Version 2
+
+Verwenden Sie eine Demo-Entscheidungstabellenregel, die die konfigurierten Benutzer `Demo Reviewer A` und `Demo Reviewer B` in dieser Reihenfolge zurückgibt. Wählen Sie die Aufgaben-/Benachrichtigungsoption, den Titel `Review invoice`, die Beschreibung, die Priorität und die E-Mail-Präferenz aus. Der erste zurückgegebene Benutzer ist das Dokumentzuweisungsziel und die konfigurierten Aufgaben/Benachrichtigungen richten sich an die zurückgegebenen Benutzer. Überprüfen Sie beide Ausgänge; Eine leere Rückgabe darf nicht als Zuweisung behandelt werden.
+
+<!-- workflow-card-example-action_assign_supplier_user_first_return_of_dt-20261021 -->
+
+### Ordnen Sie den ersten zurückgegebenen Benutzer dem Lieferanten zu
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-0c3d87c8a5e7-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+
+`ACTION_ASSIGN_SUPPLIER_USER_FIRST_RETURN_OF_DT` · Version 2
+
+Verwenden Sie einen registrierten Demo-Anbieter und eine Entscheidungstabellenregel, deren erstes Benutzerergebnis `Demo Supplier Owner` ist. Wählen Sie die Entscheidungstabelle und bei Bedarf E-Mail-Vorlagen aus. Die Lieferanten-Benutzer-Zuordnung verwendet den ersten zurückgegebenen Benutzer. Es ist nicht derselbe Vorgang wie das Zuweisen des Dokuments. Überprüfen Sie das Lieferantenergebnis separat und testen Sie eine leere Regelrückgabe.

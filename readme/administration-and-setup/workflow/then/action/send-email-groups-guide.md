@@ -45,7 +45,7 @@ Verwenden Sie diese Karte, wenn Sie Folgendes benötigen:
 
 ## Wie es funktioniert
 
-1. **Bedingungsprüfung**: Der Workflow prüft „Wo“- und „Und“-Bedingungen
+1. **Bedingungsprüfung**: Der Workflow prüft „Wenn“- und „Und“-Bedingungen
 2. **E-Mail vorbereiten**: Das System bereitet die E-Mail mithilfe einer Vorlage vor
 3. **Gruppenmitglieder abrufen**: Das System findet alle Mitglieder der angegebenen Gruppe
 4. **Senden**: E-Mail wird an jedes Gruppenmitglied gesendet
@@ -405,6 +405,6 @@ Workflow Continues
 
 **F: Kann ich die E-Mail-Vorlage ändern?** A: Wenden Sie sich an Ihren Administrator, um Vorlagen zu ändern
 
-**F: Kann ich unter bestimmten Bedingungen senden?** A: Ja! Verwenden Sie „Wo“- und „Und“-Bedingungen, um zu steuern, wann E-Mails gesendet werden
+**F: Kann ich unter bestimmten Bedingungen senden?** A: Ja! Verwenden Sie „Wenn“- und „Und“-Bedingungen, um zu steuern, wann E-Mails gesendet werden
 
 **F: Woher weiß ich, ob eine E-Mail empfangen wurde?** A: Überprüfen Sie die E-Mail-Protokolle in DocBits auf den Sendestatus

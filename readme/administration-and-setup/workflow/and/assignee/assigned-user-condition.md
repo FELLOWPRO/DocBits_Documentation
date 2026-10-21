@@ -36,3 +36,15 @@ Diese Workflow-Karte steuert die Ausführung von Operationen abhängig davon, ob
 #### Fazit
 
 Die Workflow-Karte "Assigned User Condition" ist ein wichtiges Werkzeug für die Verwaltung von Dokument- und Aufgaben-Workflows, die von Benutzerzuweisungen abhängen. Indem sie Bedingungen darauf basieren lässt, ob eine Aufgabe oder ein Dokument bestimmten Benutzern zugewiesen ist, stellt sie sicher, dass Workflows nur durch passende Benutzerinteraktionen ausgelöst werden, und verbessert so sowohl die Nachvollziehbarkeit als auch die Aufgabenzuordnung innerhalb von Teams. Eine klare Dokumentation dieser Karte hilft den Benutzern, ihre Bedeutung zu verstehen und sie effektiv in ihre Workflows zu integrieren, um reibungslose und effiziente Abläufe zu gewährleisten, die auf Benutzerrollen und -verantwortlichkeiten zugeschnitten sind.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Fahren Sie nur fort, wenn ein Dokument einem zugelassenen Prüfer zugewiesen wird.
+
+**Konfiguration:** Wählen Sie einen der konfigurierten Demo-Benutzer `Demo Reviewer A` und `Demo Reviewer B` aus.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein Dokument, das `Demo Reviewer B` zugewiesen ist, besteht; ein einem anderen Benutzer zugewiesener Fehler schlägt fehl.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

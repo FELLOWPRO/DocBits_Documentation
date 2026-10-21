@@ -15,7 +15,7 @@ Die Workflow-Karte **„Dokument einer Unterorganisation zuordnen“** weist ein
 ## **Funktionalität:**
 
 * **Bedingungsauswertung:**\
-  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wo“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wenn“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Dokumentzuweisung:**\
   Die Karte weist das Dokument der aus der Dropdown-Liste ausgewählten Unterorganisation zu.
 
@@ -27,3 +27,15 @@ Die Workflow-Karte **„Dokument einer Unterorganisation zuordnen“** weist ein
 ## **Fazit:**
 
 Die Workflow-Karte **„Dokument einer Unterorganisation zuordnen“** stellt sicher, dass Dokumente an die richtige Unterorganisation weitergeleitet werden, und optimiert so den Dokumentenmanagementprozess, indem die Verantwortung auf Basis der Organisationsstruktur zugewiesen wird.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Leiten Sie ein Dokument an eine bekannte Geschäftseinheit weiter.
+
+**Konfiguration:** Wählen Sie die konfigurierte Unterorganisation `Demo North`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Das Dokument gehört nach der Aktion zur ausgewählten Unterorganisation. Bestätigen Sie das Ziel, bevor Sie den Workflow aktivieren, da die Zugriffsregeln für Unterorganisationen unterschiedlich sein können.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

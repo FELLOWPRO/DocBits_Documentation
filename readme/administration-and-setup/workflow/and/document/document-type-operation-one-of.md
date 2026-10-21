@@ -33,3 +33,15 @@ Diese Karte ist darauf ausgelegt, Aktionen an Dokumenten abhängig von ihrem Typ
 ## Fazit:
 
 Die Workflow-Karte "Document Type Condition" spielt eine entscheidende Rolle bei der präzisen und flexiblen Steuerung dokumentbasierter Vorgänge. Durch die Verwendung einer einfachen bedingten Logik hilft sie sicherzustellen, dass Dokumente angemessen verarbeitet werden, und steigert so die Effizienz und Compliance. Eine klare Dokumentation dieser Karte hilft Benutzern zu verstehen, wie sie sie effektiv einsetzen und nutzen können, und macht sie zu einem wertvollen Bestandteil der Dokumentation Ihres ERP-Systems.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Verwenden Sie dieselbe Validierung für mehrere Dokumenttypen.
+
+**Konfiguration:** Wählen Sie den Is-One-of-Operator und die Typen `Invoice` und `Credit Note`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein `Invoice` besteht; ein `Order` nicht.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

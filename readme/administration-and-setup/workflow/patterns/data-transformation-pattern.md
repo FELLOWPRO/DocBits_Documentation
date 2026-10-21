@@ -6,7 +6,7 @@
 
 Dieses Pattern bauen Sie im **Workflow-Builder** (Workflow Dashboard → Workflow List → Add Workflow). Klicken Sie auf **Karte hinzufügen** und öffnen Sie die Kategorie **Dokumentfeld** — sie enthält die Lese-, Schreib-, Berechnungs- und Formatierungskarten, die dieses Pattern aneinanderreiht:
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Feldbeschriftungen dieser Kartenversion sind in der Oberfläche derzeit noch englisch. Die Erläuterungen auf dieser Seite sind übersetzt.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
 ***
 
@@ -129,7 +129,7 @@ Verwenden Sie dieses Pattern, wenn Sie Folgendes benötigen:
 * Positionen aus der Rechnung extrahieren
 * Positionssummen berechnen (Menge × Preis)
 * Zwischensumme berechnen (Summe der Positionssummen)
-* Steuerbetrag berechnen (Zwischensumme × Steuersatz)
+* Steuerbetrag berechnen (Zwischensumme × `Tax_Rate`)
 * Gesamtsumme berechnen (Zwischensumme + Steuer)
 * In EUR umrechnen, falls die Rechnung in einer anderen Währung vorliegt
 * Beträge auf 2 Dezimalstellen formatieren

@@ -767,3 +767,23 @@ SOME FALSE → Stop
 * **CONDITION\_DOC\_FIELD\_CONTAINS** - Vérification du contenu du champ
 * **CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES** - Comparaison de champs
 * **CONDITION\_CHECKBOX\_IS** - Case à cocher
+
+<!-- workflow-card-complete-example-20261021 condition_purchase_order_import -->
+
+### Exemple de déclencheur d'importation de bon de commande
+
+**Configuration :** Sous Quand, sélectionnez l'événement d'importation de nouveau bon de commande (`wf_new_purchase_order`) et laissez l'événement de mise à jour (`wf_updated_purchase_order`) non sélectionné. Configurez les actions suivantes pour ce contexte de flux de travail indépendant du document.
+
+**Résultat attendu et contre-exemple :** Une exécution déclenchée par un bon de commande nouvellement importé satisfait à cette condition. Une exécution déclenchée uniquement par une mise à jour ne le fait pas. La sélection des deux événements autorise l'un ou l'autre événement. Cela vérifie les informations de déclenchement du flux de travail, et non si une facture contient actuellement un numéro de bon de commande.
+
+Il s'agit d'une configuration de test illustrative et du résultat attendu ; il n'a pas été exécuté. Utilisez les données et les destinataires configurés dans votre organisation de test.
+
+<!-- workflow-card-complete-example-20261021 condition_supplier_status_is_isnot -->
+
+### Exemple de déclencheur de changement de statut du fournisseur
+
+**Configuration :** Sous Quand, choisissez l'opérateur `is` et un statut cible réellement proposé dans votre organisation. Appelez ce statut sélectionné A dans cet exemple. Laissez un autre statut B disponible non sélectionné.
+
+**Résultat attendu et contre-exemple :** La condition est vraie pour un événement de changement de statut fournisseur dont le nouveau statut est A ; c'est faux pour un événement dont le nouveau statut est B. Avec l'opérateur `is not`, ces résultats s'inversent. Il s'agit d'un déclencheur d'événement basé sur les informations d'exécution du workflow, et non d'une vérification générale du statut du fournisseur sur une facture. Confirmez l'événement réel et l'état sélectionné dans le journal.
+
+Il s'agit d'une configuration de test illustrative et du résultat attendu ; il n'a pas été exécuté. Utilisez les données et les destinataires configurés dans votre organisation de test.

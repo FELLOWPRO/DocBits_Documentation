@@ -1,6 +1,6 @@
-# Compare two Fields with Tolerance
+# Vergelijk twee velden met tolerantie
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-19d9a4d5e71d-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel:**
 
@@ -8,28 +8,28 @@ Deze workflow-kaart is ontworpen om acties te automatiseren door de waarden van 
 
 ## **Onderdelen van de kaart:**
 
-1. **Field Name (1)**
+1. **Veldnaam (1)**
    * **Beschrijving:** Geeft het eerste te vergelijken documentveld op.
-   * **Detail:** Dit moet exact overeenkomen met de identifier van het eerste veld binnen het document.
-2. **Operator**
+   * **Details:** Dit moet exact overeenkomen met de identifier van het eerste veld binnen het document.
+2. **Exploitant**
    * **Beschrijving:** Definieert het type vergelijking dat tussen de twee velden wordt uitgevoerd.
    * **Opties:**
-     * **Equals (=):** Controleert of de waarden van de twee velden gelijk zijn.
-     * **Not Equals (≠):** Zorgt ervoor dat de waarden van de twee velden verschillend zijn.
-     * **Greater Than (>):** Bevestigt dat de waarde van het eerste veld groter is dan het tweede veld.
-     * **Greater or Equals (≥):** Valideert dat de waarde van het eerste veld gelijk is aan of groter is dan het tweede veld.
-     * **Lesser Than (<):** Controleert of de waarde van het eerste veld kleiner is dan het tweede veld.
-     * **Less or Equals (≤):** Zorgt ervoor dat de waarde van het eerste veld kleiner dan of gelijk is aan het tweede veld.
-3. **Field Name (2)**
+     * **Is gelijk aan (=):** Controleert of de waarden van de twee velden gelijk zijn.
+     * **Niet gelijk aan (≠):** Zorgt ervoor dat de waarden van de twee velden verschillend zijn.
+     * **Groter dan (>):** Bevestigt dat de waarde van het eerste veld groter is dan het tweede veld.
+     * **Groter of gelijk aan (≥):** Valideert dat de waarde van het eerste veld gelijk is aan of groter is dan het tweede veld.
+     * **Kleiner dan (<):** Controleert of de waarde van het eerste veld kleiner is dan het tweede veld.
+     * **Minder of gelijk aan (≤):** Zorgt ervoor dat de waarde van het eerste veld kleiner dan of gelijk is aan het tweede veld.
+3. **Veldnaam (2)**
    * **Beschrijving:** Geeft het tweede documentveld op dat met het eerste veld wordt vergeleken.
-   * **Detail:** Dit moet exact overeenkomen met de identifier van het tweede veld binnen het document.&#x20;
-4. **Tolerance Amount**
+   * **Details:** Dit moet exact overeenkomen met de identifier van het tweede veld binnen het document.
+4. **Tolerantiebedrag**
    * **Beschrijving:** Definieert de aanvaardbare foutmarge voor de vergelijking.
-   * **Detail:** Het tolerantiebedrag is een numerieke waarde die het maximaal toegestane verschil tussen de twee veldwaarden aangeeft om de vergelijking als true te beschouwen.
-5. **Tolerance Type**
+   * **Details:** Het tolerantiebedrag is een numerieke waarde die het maximaal toegestane verschil tussen de twee veldwaarden aangeeft om de vergelijking als true te beschouwen.
+5. **Tolerantietype**
    * **Beschrijving:** Geeft de meeteenheid voor het tolerantiebedrag op.
    * **Opties:**
-     * **Value:** De tolerantie is een absolute waarde, wat betekent dat de twee velden met het opgegeven tolerantiebedrag kunnen verschillen.
+     * **Waarde:** De tolerantie is een absolute waarde, wat betekent dat de twee velden met het opgegeven tolerantiebedrag kunnen verschillen.
      * **Percent:** De tolerantie wordt berekend als een percentage van de waarde van het tweede veld, wat een relatieve foutmarge mogelijk maakt.
 
 ## **Functionaliteit:**
@@ -43,8 +43,20 @@ Deze workflow-kaart is ontworpen om acties te automatiseren door de waarden van 
 
 ## **Opzet en configuratie:**
 
-* Gebruikers configureren de kaart door de twee te vergelijken velden uit een lijst van beschikbare velden in het systeem te selecteren. De operator wordt geselecteerd uit een dropdownlijst van beschikbare vergelijkingsopties. Gebruikers voeren het tolerantiebedrag in en kiezen het tolerantietype (value of percent).&#x20;
+* Gebruikers configureren de kaart door de twee te vergelijken velden uit een lijst van beschikbare velden in het systeem te selecteren. De operator wordt geselecteerd uit een dropdownlijst van beschikbare vergelijkingsopties. Gebruikers voeren het tolerantiebedrag in en kiezen het tolerantietype (value of percent).
 
 ## **Conclusie:**
 
 De workflow-kaart "Compare Two Fields with Tolerance" is een krachtig hulpmiddel voor het vergelijken van documentvelden, waarbij rekening wordt gehouden met toegestane afwijkingen in de gegevens. Door tolerantie toe te passen op veldvergelijkingen voegt deze kaart flexibiliteit toe aan de workflow, waardoor deze variaties in gegevens uit de praktijk kan verwerken. Hij verbetert de besluitvorming, ondersteunt gegevensvalidatie en verbetert de algehele workflow-automatisering.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Accepteer een klein verschil tussen een geëxtraheerd bedrag en een afzonderlijk berekend bedrag.
+
+**Configuratie:** Selecteer numerieke velden `net_total` en `calculated_total`, gelijkheidsvergelijking en een absolute tolerantie van `5`. Gebruik waarden `103` en `100`.
+
+**Verwacht resultaat en tegenvoorbeeld:** Het verschil is `3`, dus het valt binnen de tolerantie. Met `110` en `100` is het verschil `10` en mislukt de voorwaarde van gelijkheid met tolerantie.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

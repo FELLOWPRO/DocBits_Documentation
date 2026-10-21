@@ -1,30 +1,42 @@
-# Assign document to
+# Document toewijzen aan
 
-<figure><img src="../../../../.gitbook/assets/image (306).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-0e17d9fb5a83-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
 ## Doel:
 
-De workflow-kaart **"Assign document to \[User/group] based on decision table"** wijst documenten dynamisch toe aan gebruikers of groepen op basis van de uitkomst van een **decision table**. Deze functie zorgt ervoor dat documenttoewijzing efficiënt en consistent wordt afgehandeld op basis van vooraf gedefinieerde voorwaarden.
+De workflow-kaart **"Document toewijzen aan \[Gebruiker/groep] op basis van beslissingstabel"** wijst documenten dynamisch toe aan gebruikers of groepen op basis van de uitkomst van een **beslissingstabel**. Deze functie zorgt ervoor dat documenttoewijzing efficiënt en consistent wordt afgehandeld op basis van vooraf gedefinieerde voorwaarden.
 
 ## Onderdelen van de kaart:
 
-1. **User/Group**
+1. **Gebruiker/Groep**
    * **Beschrijving:** Geeft de **gebruiker** of **groep** op aan wie het document wordt toegewezen.
-   * **Detail:** Wordt geselecteerd op basis van de uitkomst van de **decision table**.
-2. **Decision Table**
-   * **Beschrijving:** Een **decision table** wordt gebruikt om de juiste **gebruiker** of **groep** voor documenttoewijzing te bepalen.
-   * **Detail:** Gebruikt de decision table die in de **"and"**-sectie is gedefinieerd.
+   * **Details:** Wordt geselecteerd op basis van de uitkomst van de **beslissingstabel**.
+2. **Beslissingstabel**
+   * **Beschrijving:** Een **beslissingstabel** wordt gebruikt om de juiste **gebruiker** of **groep** voor documenttoewijzing te bepalen.
+   * **Details:** Gebruikt de decision table die in de **"en"**-sectie is gedefinieerd.
 
 ## Functionaliteit:
 
-* **Voorwaarde-evaluatie:** De kaart voert de actie alleen uit als zowel de **"Where"**- als de **"And"**-secties als true worden geëvalueerd.
-* **Dynamische documenttoewijzing:** Het document wordt toegewezen aan de **gebruiker** of **groep** die door de **decision table** wordt bepaald.
+* **Voorwaarde-evaluatie:** De kaart voert de actie alleen uit als zowel de **"Wanneer"**- als de **"En"**-secties als true worden geëvalueerd.
+* **Dynamische documenttoewijzing:** Het document wordt toegewezen aan de **gebruiker** of **groep** die door de **beslissingstabel** wordt bepaald.
 
 ## Opzet en configuratie:
 
-* **Decision Table definiëren:** Stel de **decision table** in zodat deze de voorwaarden bevat voor het bepalen van de doel-**gebruiker** of -**groep**.
+* **Decision Table definiëren:** Stel de **beslissingstabel** in zodat deze de voorwaarden bevat voor het bepalen van de doel-**gebruiker** of -**groep**.
 * **Document toewijzen aan gebruiker/groep:** Het document wordt dynamisch toegewezen op basis van de uitkomst van de decision table.
 
 ## Conclusie:
 
-De workflow-kaart **"Assign document to \[User/group] based on decision table"** biedt dynamische documenttoewijzingsmogelijkheden op basis van beslislogica. Dit zorgt voor nauwkeurige en efficiënte verwerking door documenten automatisch naar de juiste **gebruiker** of **groep** te leiden, wat de workflow-automatisering verbetert.
+De workflow-kaart **"Document toewijzen aan \[Gebruiker/groep] op basis van beslissingstabel"** biedt dynamische documenttoewijzingsmogelijkheden op basis van beslislogica. Dit zorgt voor nauwkeurige en efficiënte verwerking door documenten automatisch naar de juiste **gebruiker** of **groep** te leiden, wat de workflow-automatisering verbetert.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Kies een documentontvanger uit een beslissingstabel.
+
+**Configuratie:** Selecteer een demobeslissingstabel waarvan de overeenkomende regel de geconfigureerde revisor retourneert, en kies het type toegewezen persoon dat door deze kaartversie wordt aangeboden.
+
+**Verwacht resultaat en tegenvoorbeeld:** De geretourneerde gebruiker of groep wordt de documentontvanger. Een leeg beslissingstabelresultaat moet afzonderlijk worden gediagnosticeerd.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

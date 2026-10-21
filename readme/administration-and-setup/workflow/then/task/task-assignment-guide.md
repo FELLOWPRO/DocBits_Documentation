@@ -1,41 +1,60 @@
-# Task Assignment & Creation Cards - Complete Guide
+# Taaktoewijzing en creatiekaarten
 
-Deze kaarten horen in de **Then**-groep van de Workflow Builder — de acties die worden uitgevoerd zodra aan de When/And-voorwaarden is voldaan:
+## Taaktoewijzing en creatiekaarten - Complete gids
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Kaarten worden via <strong>Add Card</strong> aan de <strong>Then</strong>-groep toegevoegd.</p></figcaption></figure>
+**Omslagen:** 12 taakgerelateerde kaarten
 
-**Covers:** 12 task-related cards
+***
 
----
+De taakkaarten op deze pagina bevinden zich in de groep **Dan** van de Workflow Builder – de acties die worden uitgevoerd zodra de When/And-voorwaarden overeenkomen:
 
-## Overview
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-nl.png" alt="Niet-opgeslagen voorbeeld met Wanneer-, En- en Dan-kaarten. Vul alle velden in vóór uitvoering. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Niet-opgeslagen voorbeeld met Wanneer-, En- en Dan-kaarten. Vul alle velden in vóór uitvoering. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-Task cards create work assignments for team members. When an invoice needs approval, you can automatically create a task and assign it to the right person.
+***
 
----
+### 📌 Versie-informatie
 
-# Basic Task Creation
+**Meest ontwikkelde kaart:** tasks\_create (4 versies, laatste v4) **Andere kaarten met meerdere versies:** ACTION\_TASK\_FOR\_GROUP (v4), ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP (v3), ACTION\_ASSIGN\_TASK\_TO\_USER\_FROM\_FIELD\_WITH\_FALLBACK (v3), ACTION\_DECISION\_TREE\_CREATE\_TASKS (v3)
 
-## Card: tasks_create / Create Task and Assign to User
+**Belangrijkste wijzigingen:**
 
-### Purpose
-Creates a task and assigns it to a specific person
+* **v3 → v4 Evolutie:** Beslisboombenadering verwijderd, generieke werkitemtypen toegevoegd (taak, ticket, probleem)
+* **v2 → v3 Migratie:** Ondersteuning voor beslissingsbomen toegevoegd (nu grotendeels verouderd)
 
-### When to Use
-- Invoice needs specific person's review
-- Approval required from named individual
-- Handoff to specific team member
+📖 [Volledige versiegeschiedenis](../../release.md) | [Kaartversies en gedrag](../../cards-overview/card-versions-guide.md)
 
-### Parameters
+***
 
-**Title**
-The task name/subject
+### Overzicht
+
+Taakkaarten creëren werkopdrachten voor teamleden. Wanneer een factuur goedkeuring nodig heeft, kunt u automatisch een taak aanmaken en deze aan de juiste persoon toewijzen.
+
+***
+
+## Basistaakcreatie
+
+### Kaart: tasks\_create / Taak maken en toewijzen aan gebruiker
+
+#### Doel
+
+Creëert een taak en wijst deze toe aan een specifieke persoon
+
+#### Wanneer te gebruiken
+
+* Factuur heeft beoordeling van een specifieke persoon nodig
+* Goedkeuring vereist van genoemde persoon
+* Overdracht aan een specifiek teamlid
+
+#### Parameters
+
+**Titel** De taaknaam/het onderwerp
+
 ```
 Example: "Review Invoice #INV-2025-001 for approval"
 ```
 
-**Description**
-Details about the task
+**Beschrijving** Details over de taak
+
 ```
 Example: "Invoice from Supplier ABC needs review.
 Amount: €5000
@@ -43,25 +62,27 @@ Deadline: 2025-10-30
 Please verify pricing and quality."
 ```
 
-**Priority**
-- 🔴 **High**: Urgent, do immediately
-- 🟡 **Medium**: Normal priority
-- 🟢 **Low**: Can be done later
+**Prioriteit**
 
-**Assigned User**
-Who gets the task
+* 🔴 **High**: Dringend, onmiddellijk doen
+* 🟡 **Middelmatig**: Normale prioriteit
+* 🟢 **Laag**: kan later worden gedaan
+
+**Toegewezen gebruiker** Wie de taak krijgt
+
 ```
 Example: John Smith (Finance Manager)
 ```
 
-**Email Notification**
-Send email alert to assigned person?
+**E-mailmelding** E-mailwaarschuwing verzenden naar toegewezen persoon?
+
 ```
 ✅ Yes: Person gets email
 ❌ No: Task only in system
 ```
 
-### Example
+#### Voorbeeld
+
 ```
 Condition: "Invoice amount > €10,000"
     ↓
@@ -75,19 +96,22 @@ Create Task:
 Sarah receives task and email notification
 ```
 
----
+***
 
-## Card: ACTION_TASK_FOR_GROUP / Create Task for Group
+### Kaart: ACTION\_TASK\_FOR\_GROUP / Taak voor groep maken
 
-### Purpose
-Creates a task and assigns it to a group (all members can see it)
+#### Doel
 
-### When to Use
-- Multiple people can do the task
-- Task for team, not individual
-- First person available should handle
+Creëert een taak en wijst deze toe aan een groep (alle leden kunnen deze zien)
 
-### Difference from Individual Task
+#### Wanneer te gebruiken
+
+* Meerdere mensen kunnen de taak uitvoeren
+* Taak voor team, niet individueel
+* De eerste persoon die beschikbaar is, moet dit afhandelen
+
+#### Verschil met individuele taak
+
 ```
 Individual Task:
 - Only John sees it
@@ -100,7 +124,8 @@ Group Task:
 - Distributed workload
 ```
 
-### Example Workflow
+#### Voorbeeld workflow
+
 ```
 Document arrives
     ↓
@@ -117,14 +142,16 @@ All 10 procurement team members see task
 First person available takes it
 ```
 
----
+***
 
-## Card: ACTION_DECISION_TREE_CREATE_TASKS
+### Kaart: ACTION\_DECISION\_TREE\_CREATE\_TASKS
 
-### Purpose
-Creates tasks based on decision table logic
+#### Doel
 
-### How It Works
+Creëert taken op basis van de logica van de beslissingstabel
+
+#### Hoe het werkt
+
 ```
 Decision Table Returns:
   If invoice from Supplier A → Assign to Procurement
@@ -135,12 +162,14 @@ Task is automatically created and assigned
 based on which condition is true
 ```
 
-### When to Use
-- Different suppliers need different approval
-- Complex routing based on multiple factors
-- Different team based on document type
+#### Wanneer te gebruiken
 
-### Example
+* Verschillende leveranciers hebben verschillende goedkeuringen nodig
+* Complexe routing gebaseerd op meerdere factoren
+* Ander team op basis van documenttype
+
+#### Voorbeeld
+
 ```
 Document: Invoice from ABC Corp (Supplier A)
     ↓
@@ -151,20 +180,22 @@ Result: Supplier A → Procurement Team
 Create and assign task to Procurement Team
 ```
 
----
+***
 
-## Card: ACTION_DECISION_TREE_TASKS_SEQUENTIAL
+### Kaart: ACTION\_DECISION\_TREE\_TASKS\_SEQUENTIAL
 
-### Purpose
-Creates tasks sequentially based on decision table
-Tasks are assigned one at a time with priority order
+#### Doel
 
-### When to Use
-- Multiple approvals needed in sequence
-- Workflow approval chain
-- Each person reviews then passes to next
+Creëert taken opeenvolgend op basis van de beslissingstabel. Taken worden één voor één toegewezen in volgorde van prioriteit
 
-### How It Works
+#### Wanneer te gebruiken
+
+* Meerdere goedkeuringen achter elkaar nodig
+* Goedkeuringsketen voor workflows
+* Elke persoon beoordeelt en gaat vervolgens door naar de volgende
+
+#### Hoe het werkt
+
 ```
 Step 1: Create Task for Procurement Manager
         (Priority 1)
@@ -179,7 +210,8 @@ Step 4: Finance Manager approves
 Step 5: Export
 ```
 
-### Priority System
+#### Prioriteitssysteem
+
 ```
 Priority 1 → Assign to: Person A
 Priority 2 → Assign to: Person B
@@ -188,7 +220,8 @@ Priority 3 → Assign to: Person C
 They must complete in order (1→2→3)
 ```
 
-### Example Configuration
+#### Voorbeeldconfiguratie
+
 ```
 Decision Table Returns:
   Level 1: Sarah Johnson (Finance)
@@ -202,19 +235,22 @@ Task Flow:
 4. All complete → Export
 ```
 
----
+***
 
-## Card: ACTION_CREATE_TASK_FOR_USER_SEQUENTIAL
+### Kaart: ACTION\_CREATE\_TASK\_FOR\_USER\_SEQUENTIAL
 
-### Purpose
-Assigns document to one user AND creates sequential task
+#### Doel
 
-### When to Use
-- Assign document AND create task at same time
-- Document needs to be reviewed by specific person
-- Track both assignment and task creation
+Wijst een document toe aan één gebruiker EN maakt een opeenvolgende taak
 
-### How It Works
+#### Wanneer te gebruiken
+
+* Wijs tegelijkertijd een document toe EN maak een taak
+* Het document moet door een specifieke persoon worden beoordeeld
+* Houd zowel de toewijzing als de taakcreatie bij
+
+#### Hoe het werkt
+
 ```
 Two things happen:
 1. Document is assigned to: Person A
@@ -223,7 +259,8 @@ Two things happen:
 Both in one action
 ```
 
-### Example
+#### Voorbeeld
+
 ```
 High-value invoice arrives
     ↓
@@ -235,19 +272,22 @@ ACTION_CREATE_TASK_FOR_USER_SEQUENTIAL:
 Document AND task both go to Finance Manager
 ```
 
----
+***
 
-## Card: ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL
+### Kaart: ACTION\_CREATE\_TASK\_FOR\_GROUP\_SEQUENTIAL
 
-### Purpose
-Assigns document to group AND creates task
+#### Doel
 
-### When to Use
-- Document needs group attention
-- Want to track task creation
-- Create initial task then document assignment
+Wijst document toe aan groep EN creëert taak
 
-### Example
+#### Wanneer te gebruiken
+
+* Document heeft groepsaandacht nodig
+* Wilt u het maken van taken bijhouden
+* Maak een initiële taak en documenteer vervolgens de toewijzing
+
+#### Voorbeeld
+
 ```
 New supplier evaluation
     ↓
@@ -260,21 +300,24 @@ ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL:
 Group members see document and task
 ```
 
----
+***
 
-# Advanced Task Creation
+## Geavanceerde taakcreatie
 
-## Card: ACTION_ASSIGN_TASK_TO_FACILITY_GROUP
+### Kaart: ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP
 
-### Purpose
-Creates task for specific facility group
+#### Doel
 
-### When to Use
-- Task for warehouse/facility team
-- Facility-specific operations
-- Physical location matters
+Creëert een taak voor een specifieke faciliteitsgroep
 
-### Example
+#### Wanneer te gebruiken
+
+* Taak voor magazijn/facilitair team
+* Faciliteitspecifieke activiteiten
+* Fysieke locatie is belangrijk
+
+#### Voorbeeld
+
 ```
 Document: Shipment notification
     ↓
@@ -286,19 +329,22 @@ Create Task for Facility Group:
 Berlin warehouse team gets task
 ```
 
----
+***
 
-## Card: ACTION_ASSIGN_TASK_TO_FACILITY_GROUP_SEQUENTIAL
+### Kaart: ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP\_SEQUENTIAL
 
-### Purpose
-Sequential task assignment across facilities
+#### Doel
 
-### When to Use
-- Multi-facility operations
-- Tasks pass from facility to facility
-- Sequential facility processing
+Opeenvolgende taaktoewijzing over de faciliteiten heen
 
-### How It Works
+#### Wanneer te gebruiken
+
+* Operaties met meerdere faciliteiten
+* Taken gaan van faciliteit naar faciliteit
+* Sequentiële faciliteitsverwerking
+
+#### Hoe het werkt
+
 ```
 Factory A (Step 1): Production
     ↓
@@ -309,7 +355,8 @@ Warehouse (Step 3): Packaging
 Shipping (Step 4): Dispatch
 ```
 
-### Example
+#### Voorbeeld
+
 ```
 Manufacturing Document
     ↓
@@ -322,19 +369,22 @@ Create Sequential Tasks:
 Each team completes → Passes to next
 ```
 
----
+***
 
-## Card: ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP
+### Kaart: ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP
 
-### Purpose
-Creates task for procurement department
+#### Doel
 
-### When to Use
-- Task for procurement team
-- Supplier management tasks
-- Purchase-related work
+Creëert een taak voor de inkoopafdeling
 
-### Example
+#### Wanneer te gebruiken
+
+* Taak voor het inkoopteam
+* Taken voor leveranciersbeheer
+* Aankoopgerelateerde werkzaamheden
+
+#### Voorbeeld
+
 ```
 Supplier status change notification
     ↓
@@ -347,19 +397,22 @@ Create Task for Procurement Group:
 Procurement team is notified
 ```
 
----
+***
 
-## Card: ACTION_ASSIGN_TASK_PROCUREMENT_GROUP_SEQUENTIAL
+### Kaart: ACTION\_ASSIGN\_TASK\_PROCUREMENT\_GROUP\_SEQUENTIAL
 
-### Purpose
-Sequential task routing within procurement
+#### Doel
 
-### When to Use
-- Multi-step procurement processes
-- Approval chain in procurement
-- Escalation path
+Sequentiële taakroutering binnen inkoop
 
-### Example
+#### Wanneer te gebruiken
+
+* Inkoopprocessen in meerdere stappen
+* Goedkeuringsketen bij inkoop
+* Escalatie pad
+
+#### Voorbeeld
+
 ```
 Purchase Requisition received
     ↓
@@ -372,20 +425,22 @@ Step 3: Director signs off (Priority 3)
 All sign-offs complete → Release to supplier
 ```
 
----
+***
 
-## Card: ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK
+### Kaart: ACTION\_ASSIGN\_TASK\_TO\_USER\_FROM\_FIELD\_WITH\_FALLBACK
 
-### Purpose
-Get user from document field, assign task
-If user not found, use fallback user
+#### Doel
 
-### When to Use
-- User stored in document field
-- Document specifies who should review
-- Have backup person if specified user unavailable
+Gebruiker uit documentveld halen, taak toewijzen Als gebruiker niet gevonden wordt, gebruik dan reservegebruiker
 
-### How It Works
+#### Wanneer te gebruiken
+
+* Gebruiker opgeslagen in documentveld
+* Document specificeert wie moet beoordelen
+* Zorg dat er een back-uppersoon is als de opgegeven gebruiker niet beschikbaar is
+
+#### Hoe het werkt
+
 ```
 Document has field: "Approver Name: John Smith"
 
@@ -394,7 +449,8 @@ Card checks: Is John in system?
     If NO → Assign to Fallback User (Sarah)
 ```
 
-### Example
+#### Voorbeeld
+
 ```
 Invoice field: "Contact: Mike Johnson"
 
@@ -405,26 +461,29 @@ If Mike doesn't exist in system:
 Use Fallback: Team Lead (Robert Brown)
 ```
 
-### Parameters
+#### Parameters
+
 ```
 - Field to Read: "Approver Name"
 - Fallback User: Robert Brown
 - Task Details: Title, Description, Priority
 ```
 
----
+***
 
-# Common Task Parameters
+## Algemene taakparameters
 
-All task cards use these parameters:
+Alle taakkaarten gebruiken deze parameters:
 
-### Title
+#### Titel
+
 ```
 Good: "Review Invoice #INV-12345 - €5000 - Supplier ABC"
 Bad: "Approve something"
 ```
 
-### Description
+#### Beschrijving
+
 ```
 Should include:
 ✅ What to do
@@ -434,7 +493,8 @@ Should include:
 ✅ Link to document
 ```
 
-### Priority Levels
+#### Prioriteitsniveaus
+
 ```
 🔴 HIGH
    - Action needed within hours
@@ -452,17 +512,19 @@ Should include:
    - Example: Archive old documents
 ```
 
-### Due Date (if available)
+#### Vervaldatum (indien beschikbaar)
+
 ```
 When should task be completed by?
 Example: 2025-10-30 (5 days from now)
 ```
 
----
+***
 
-# Task Workflow Scenarios
+## Taakworkflowscenario's
 
-## Scenario 1: Simple Approval
+### Scenario 1: Eenvoudige goedkeuring
+
 ```
 Invoice Arrives (€2000)
     ↓
@@ -473,7 +535,8 @@ YES: Create Task for Finance Manager
 Finance Manager reviews and approves
 ```
 
-## Scenario 2: Multi-Level Approval
+### Scenario 2: Goedkeuring op meerdere niveaus
+
 ```
 Invoice Arrives (€50,000 - High Value)
     ↓
@@ -485,7 +548,8 @@ Create Sequential Tasks:
 Each level completes → Next begins
 ```
 
-## Scenario 3: Parallel Tasks
+### Scenario 3: Parallelle taken
+
 ```
 Invoice Arrives (From New Supplier)
     ↓
@@ -497,7 +561,8 @@ All teams work simultaneously
 All must complete before proceeding
 ```
 
-## Scenario 4: Conditional Routing
+### Scenario 4: Voorwaardelijke routering
+
 ```
 Invoice Arrives
     ↓
@@ -509,89 +574,98 @@ Decision Table:
 Task created for correct person
 ```
 
----
+***
 
-# Task Assignment Best Practices
+## Beste praktijken voor taaktoewijzing
 
-✅ **Do:**
-- Include specific details in task title
-- Set appropriate priority levels
-- Set realistic deadlines
-- Notify assignees
-- Include link to document
-- Use clear, actionable descriptions
+✅ **Doe:**
 
-❌ **Don't:**
-- Create vague task titles ("Review this")
-- Set everything as High priority
-- Forget to notify assigned person
-- Create multiple tasks for same work
-- Assign to unavailable people
+* Neem specifieke details op in de taaktitel
+* Stel de juiste prioriteitsniveaus in
+* Stel realistische deadlines
+* Informeer de cessionarissen
+* Voeg een link naar het document toe
+* Gebruik duidelijke, bruikbare beschrijvingen
 
----
+❌ **Niet doen:**
 
-# Troubleshooting Tasks
+* Maak vage taaktitels ("Bekijk dit")
+* Zet alles op Hoge prioriteit
+* Vergeten de toegewezen persoon op de hoogte te stellen
+* Maak meerdere taken voor hetzelfde werk
+* Toewijzen aan niet-beschikbare personen
 
-## "Task not assigned to anyone"
-**Cause:** User doesn't exist or group is empty
+***
 
-**Solution:**
-- Verify user name spelling
-- Check user is active in system
-- Verify group has members
-- Use fallback if needed
+## Problemen oplossen
 
-## "Person says they didn't get notification"
-**Cause:** Email notification disabled or email wrong
+### "Taak aan niemand toegewezen"
 
-**Solution:**
-- Check "Send Email" checkbox is enabled
-- Verify recipient email address
-- Check spam folder
-- Resend notification manually
+**Oorzaak:** Gebruiker bestaat niet of groep is leeg
 
-## "Wrong person got task"
-**Cause:** Routing logic incorrect
+**Oplossing:**
 
-**Solution:**
-- Check decision table conditions
-- Verify fallback settings
-- Test with sample document
-- Check for typos in user names
+* Controleer de spelling van de gebruikersnaam
+* Controleer of de gebruiker actief is in het systeem
+* Controleer of de groep leden heeft
+* Maak indien nodig gebruik van fallback
 
-## "Too many tasks created"
-**Cause:** Card firing multiple times
+### 'Persoon zegt dat hij geen melding heeft gekregen'
 
-**Solution:**
-- Check conditions are specific enough
-- Verify card only runs once per document
-- Review "And" conditions
-- Add additional filtering
+**Oorzaak:** E-mailmelding uitgeschakeld of e-mail verkeerd
 
----
+**Oplossing:**
 
-# Task Card Comparison Table
+* Controleer of het selectievakje 'E-mail verzenden' is ingeschakeld
+* Controleer het e-mailadres van de ontvanger
+* Controleer de spammap
+* Melding handmatig opnieuw verzenden
 
-| Card | Creates Task | Assigns To | When |
-|------|-------------|-----------|------|
-| tasks_create | Yes | Individual | Always |
-| ACTION_TASK_FOR_GROUP | Yes | Group | Always |
-| ACTION_DECISION_TREE_CREATE_TASKS | Yes | Decision Table Result | Conditional |
-| ACTION_DECISION_TREE_TASKS_SEQUENTIAL | Yes | Multiple (Sequential) | Conditional |
-| ACTION_CREATE_TASK_FOR_USER_SEQUENTIAL | Yes | User + Document | Conditional |
-| ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL | Yes | Group + Document | Conditional |
-| ACTION_ASSIGN_TASK_TO_FACILITY_GROUP | Yes | Facility Group | Conditional |
-| ACTION_ASSIGN_TASK_TO_FACILITY_GROUP_SEQUENTIAL | Yes | Multiple Facilities | Conditional |
-| ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP | Yes | Procurement Team | Conditional |
-| ACTION_ASSIGN_TASK_PROCUREMENT_GROUP_SEQUENTIAL | Yes | Multiple (Sequential) | Conditional |
-| ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK | Yes | Field/Fallback | Conditional |
+### "Verkeerde persoon kreeg taak"
 
----
+**Oorzaak:** Routeringslogica onjuist
 
-# Related Cards
+**Oplossing:**
 
-- **ACTION_ASSIGN_DOCUMENT_TO_USER** - Assign document without creating task
-- **ACTION_SEND_EMAIL** - Notify people directly
-- **STAUS_CHANGE** - Change status instead of creating task
-- **RUN_WORKFLOW** - Trigger different workflow instead
+* Controleer de beslissingstabelvoorwaarden
+* Controleer de fallback-instellingen
+* Test met voorbeelddocument
+* Controleer op typefouten in gebruikersnamen
 
+### "Te veel taken aangemaakt"
+
+**Oorzaak:** Kaart meerdere keren geactiveerd
+
+**Oplossing:**
+
+* Controleer of de voorwaarden specifiek genoeg zijn
+* Verifieerkaart wordt slechts één keer per document uitgevoerd
+* Bekijk de 'En'-voorwaarden
+* Voeg extra filtering toe
+
+***
+
+## Vergelijkingstabel taakkaarten
+
+| Kaart                                                        | Creëert een taak | Wijst toe aan            | When        |
+| ----------------------------------------------------------- | ------------ | --------------------- | ----------- |
+| tasks\_create                                               | Ja          | Individueel            | Altijd      |
+| ACTION\_TASK\_FOR\_GROUP                                    | Ja          | Groep                 | Altijd      |
+| ACTION\_DECISION\_TREE\_CREATE\_TASKS                       | Ja          | Resultaat van de beslissingstabel | Voorwaardelijk |
+| ACTION\_DECISION\_TREE\_TASKS\_SEQUENTIAL                   | Ja          | Meerdere (sequentieel) | Voorwaardelijk |
+| ACTION\_CREATE\_TASK\_FOR\_USER\_SEQUENTIAL                 | Ja          | Gebruiker + document       | Voorwaardelijk |
+| ACTION\_CREATE\_TASK\_FOR\_GROUP\_SEQUENTIAL                | Ja          | Groep + document      | Voorwaardelijk |
+| ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP                   | Ja          | Facilitaire Groep        | Voorwaardelijk |
+| ACTION\_ASSIGN\_TASK\_TO\_FACILITY\_GROUP\_SEQUENTIAL       | Ja          | Meerdere faciliteiten   | Voorwaardelijk |
+| ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP                | Ja          | Inkoopteam      | Voorwaardelijk |
+| ACTION\_ASSIGN\_TASK\_PROCUREMENT\_GROUP\_SEQUENTIAL        | Ja          | Meerdere (sequentieel) | Voorwaardelijk |
+| ACTION\_ASSIGN\_TASK\_TO\_USER\_FROM\_FIELD\_WITH\_FALLBACK | Ja          | Veld/terugval        | Voorwaardelijk |
+
+***
+
+## Gerelateerde kaarten
+
+* **ACTION\_ASSIGN\_DOCUMENT\_TO\_USER** - Document toewijzen zonder taak te maken
+* **ACTION\_SEND\_EMAIL** - Breng mensen rechtstreeks op de hoogte
+* **STAUS\_CHANGE** - Wijzig de status in plaats van een taak aan te maken
+* **RUN\_WORKFLOW** - Activeer in plaats daarvan een andere workflow

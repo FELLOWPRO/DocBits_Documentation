@@ -1,6 +1,6 @@
-# Assigned Group Condition
+# Toegewezen groepsvoorwaarde
 
-<figure><img src="../../../../.gitbook/assets/docbits_purchase_order_export_7.png" alt="DocBits Aankoop Bestelling Exporteren 7" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-bdcdca2a5488-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
 **Doel:**
 
@@ -8,23 +8,23 @@ Deze workflow-kaart voert bewerkingen uit op basis van de vraag of een taak of d
 
 **Onderdelen van de kaart:**
 
-1. **Operator**
+1. **Exploitant**
    * **Beschrijving:** Definieert de logische voorwaarde die op de groepstoewijzing wordt toegepast.
    * **Opties:**
      * **IS:** Triggert de bewerking als de toegewezen groep van het document of de taak overeenkomt met een van de groepen in de opgegeven lijst.
-     * **IS NOT:** Triggert de bewerking als de toegewezen groep van het document of de taak met geen van de groepen in de opgegeven lijst overeenkomt.
-2. **Groups List**
+     * **IS NIET:** Triggert de bewerking als de toegewezen groep van het document of de taak met geen van de groepen in de opgegeven lijst overeenkomt.
+2. **Groepenlijst**
    * **Beschrijving:** Een lijst of selectie van groepen om mee te vergelijken met de toegewezen groep.
-   * **Detail:** Deze lijst kan een of meerdere groepen bevatten, waardoor de kaart zowel enkelvoudige als meervoudige groepsvoorwaarden effectief kan verwerken.
+   * **Details:** Deze lijst kan een of meerdere groepen bevatten, waardoor de kaart zowel enkelvoudige als meervoudige groepsvoorwaarden effectief kan verwerken.
 
 **Functionaliteit:**
 
 * **Identificatie van groepstoewijzing:** Identificeert automatisch de groep of groepen die aan een bepaalde taak of document binnen het systeem zijn toegewezen.
 * **Voorwaarde-evaluatie:**
   * Met de **IS**-operator controleert de kaart of de toegewezen groep een van de groepen in de Groups List is.
-  * Met de **IS NOT**-operator zorgt de kaart ervoor dat de toegewezen groep geen deel uitmaakt van de vermelde groepen.
+  * Met de **IS NIET**-operator zorgt de kaart ervoor dat de toegewezen groep geen deel uitmaakt van de vermelde groepen.
 * **Actie-uitvoering:**
-  * **True-voorwaarde:** Als de groepstoewijzing aan de voorwaarde voldoet (**IS** of **IS NOT**), worden relevante acties getriggerd, zoals meldingen, het starten van taken, goedkeuringen of andere workflow-stappen.
+  * **True-voorwaarde:** Als de groepstoewijzing aan de voorwaarde voldoet (**IS** of **IS NIET**), worden relevante acties getriggerd, zoals meldingen, het starten van taken, goedkeuringen of andere workflow-stappen.
   * **False-voorwaarde:** Als niet aan de voorwaarde wordt voldaan, gaat de workflow niet verder.
 
 **Gebruikersinteracties:**
@@ -37,3 +37,15 @@ Deze workflow-kaart voert bewerkingen uit op basis van de vraag of een taak of d
 
 **Conclusie:**\
 De workflow-kaart "Assigned Group Condition" is essentieel voor het beheren van document- en taakworkflows die afhankelijk zijn van groepstoewijzingen. Door voorwaarden toe te staan op basis van de vraag of een taak of document aan specifieke groepen is toegewezen, zorgt hij ervoor dat workflows alleen worden getriggerd door de juiste groepsinteracties, wat de verantwoording en het taakbeheer tussen teams verbetert.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Pas dezelfde regel toe op twee beoordelingsteams.
+
+**Configuratie:** Selecteer is-een-van en de geconfigureerde groepen `Demo Finance` en `Demo Procurement`.
+
+**Verwacht resultaat en tegenvoorbeeld:** Een document dat aan een van de geselecteerde groepen is toegewezen, wordt goedgekeurd. Een document dat alleen aan `Demo Support` is toegewezen, mislukt.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

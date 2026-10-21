@@ -1,6 +1,6 @@
-# Compare Field with tolerances
+# Vergelijk Veld met toleranties
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4ee291b0848d-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel:**
 
@@ -8,28 +8,28 @@ Deze workflow-kaart is ontworpen om de waarde van een veld te vergelijken met ee
 
 ## **Onderdelen van de kaart:**
 
-1. **Field Name**
+1. **Veldnaam**
    * **Beschrijving:** Het veld dat in de vergelijking wordt geëvalueerd.
-   * **Detail:** Dit moet exact overeenkomen met de identifier van het eerste veld binnen het document.
-2. **Comparison Operator**
+   * **Details:** Dit moet exact overeenkomen met de identifier van het eerste veld binnen het document.
+2. **Vergelijkingsoperator**
    * **Beschrijving:** Geeft op hoe de geselecteerde veldwaarde met de referentiewaarde wordt vergeleken.
    * **Opties:**
-     * **Equals (=):** Verifieert of de veldwaarde exact overeenkomt met de referentiewaarde.
-     * **Not Equals (≠):** Verifieert of de veldwaarde niet overeenkomt met de referentiewaarde.
-     * **Greater Than (>):** Controleert of de veldwaarde groter is dan de referentiewaarde.
-     * **Greater or Equals (≥):** Controleert of de veldwaarde groter dan of gelijk is aan de referentiewaarde.
-     * **Lesser Than (<):** Controleert of de veldwaarde kleiner is dan de referentiewaarde.
-     * **Lesser or Equals (≤):** Controleert of de veldwaarde kleiner dan of gelijk is aan de referentiewaarde.
-3. **Reference Value**
+     * **Is gelijk aan (=):** Verifieert of de veldwaarde exact overeenkomt met de referentiewaarde.
+     * **Niet gelijk aan (≠):** Verifieert of de veldwaarde niet overeenkomt met de referentiewaarde.
+     * **Groter dan (>):** Controleert of de veldwaarde groter is dan de referentiewaarde.
+     * **Groter of gelijk aan (≥):** Controleert of de veldwaarde groter dan of gelijk is aan de referentiewaarde.
+     * **Kleiner dan (<):** Controleert of de veldwaarde kleiner is dan de referentiewaarde.
+     * **Kleiner of gelijk aan (≤):** Controleert of de veldwaarde kleiner dan of gelijk is aan de referentiewaarde.
+3. **Referentiewaarde**
    * **Beschrijving:** De waarde waarmee het veld wordt vergeleken.
-   * **Detail:** Deze waarde kan numeriek, tekst- of datumgebaseerd zijn, afhankelijk van de context van de vergelijking.
-4. **Tolerance Amount**
+   * **Details:** Deze waarde kan numeriek, tekst- of datumgebaseerd zijn, afhankelijk van de context van de vergelijking.
+4. **Tolerantiebedrag**
    * **Beschrijving:** Definieert de aanvaardbare foutmarge voor de vergelijking.
-   * **Detail:** Het tolerantiebedrag is een numerieke waarde die het maximaal toegestane verschil tussen de twee veldwaarden aangeeft om de vergelijking als true te beschouwen.
-5. **Tolerance Type**
+   * **Details:** Het tolerantiebedrag is een numerieke waarde die het maximaal toegestane verschil tussen de twee veldwaarden aangeeft om de vergelijking als true te beschouwen.
+5. **Tolerantietype**
    * **Beschrijving:** Geeft de meeteenheid voor het tolerantiebedrag op.
    * **Opties:**
-     * **Value:** De tolerantie is een absolute waarde, wat betekent dat de twee velden met het opgegeven tolerantiebedrag kunnen verschillen.
+     * **Waarde:** De tolerantie is een absolute waarde, wat betekent dat de twee velden met het opgegeven tolerantiebedrag kunnen verschillen.
      * **Percent:** De tolerantie wordt berekend als een percentage van de waarde van het tweede veld, wat een relatieve foutmarge mogelijk maakt.
 
 ## **Functionaliteit:**
@@ -41,8 +41,18 @@ Deze workflow-kaart is ontworpen om de waarde van een veld te vergelijken met ee
 
 ## **Opzet en configuratie:**
 
-* Gebruikers configureren de kaart door het te evalueren veld uit een lijst van beschikbare velden te selecteren en de vergelijkingsoperator (bijv. equals, greater than) uit een dropdownlijst te kiezen. Vervolgens geven ze de referentiewaarde op waarmee wordt vergeleken en definiëren ze het tolerantiebedrag, waarna ze het tolerantietype (bijv. percent of value) selecteren.&#x20;
+* Gebruikers configureren de kaart door het te evalueren veld uit een lijst van beschikbare velden te selecteren en de vergelijkingsoperator (bijv. equals, greater than) uit een dropdownlijst te kiezen. Vervolgens geven ze de referentiewaarde op waarmee wordt vergeleken en definiëren ze het tolerantiebedrag, waarna ze het tolerantietype (bijv. percent of value) selecteren.
 
 ## **Conclusie:**
 
 De kaart "Field Comparison with Tolerances" is een veelzijdig hulpmiddel voor workflows die flexibele evaluaties vereisen. Door vergelijkingen met toleranties mogelijk te maken, zorgt hij ervoor dat workflows efficiënt en aanpasbaar blijven, en houdt hij rekening met variaties uit de praktijk zonder concessies te doen aan de nauwkeurigheid.
+
+<!-- workflow-card-complete-example-20261021 condition_docfield_operator_value_tolerances -->
+
+### Voorbeeld tolerantie referentiewaarde
+
+**Configuratie:** Kies numeriek documentveld `total_amount`, gelijkheid, referentiewaarde `100`, absolute tolerantie `5` en tolerantietype Waarde.
+
+**Verwacht resultaat en tegenvoorbeeld:** Met de waarde `103` is de voorwaarde waar omdat het verschil binnen de toegestane tolerantie ligt. Met de waarde `110` is de voorwaarde onwaar omdat het verschil die tolerantie overschrijdt. Deze kaart vergelijkt één veld met een geconfigureerde referentiewaarde. Gebruik de aparte kaart met twee velden als beide zijden uit documentvelden moeten komen. Ontbrekende of niet-numerieke gegevens vereisen onderzoek, geen veronderstelde overeenkomst.
+
+Dit is een illustratieve testconfiguratie en verwachte uitkomst; het werd niet uitgevoerd. Gebruik gegevens en ontvangers die in uw testorganisatie zijn geconfigureerd.

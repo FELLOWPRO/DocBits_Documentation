@@ -1,6 +1,6 @@
-# Send HTTPS request to
+# Stuur een HTTPS-verzoek naar
 
-<figure><img src="../../../../.gitbook/assets/image (308).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5349352840a3-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## Doel:
 
@@ -10,11 +10,11 @@ Met de workflow-kaart **"Send HTTPS Request"** kunnen gebruikers HTTPS-verzoeken
 
 1. **URL**
    * **Beschrijving:** Geeft het eindpunt op waar het HTTPS-verzoek naartoe wordt verzonden.
-   * **Detail:** Voer de volledige URL in van de API of webdienst waarmee u verbinding wilt maken.
-2. **Headers**
+   * **Details:** Voer de volledige URL in van de API of webdienst waarmee u verbinding wilt maken.
+2. **Koppen**
    * **Beschrijving:** Definieert de headers die in het HTTPS-verzoek worden opgenomen.
-   * **Detail:** Geef sleutel-waardeparen op voor eventueel vereiste headers, zoals authenticatietokens of contenttypen.
-3. **Method**
+   * **Details:** Geef sleutel-waardeparen op in een geldig JSON-formaat, bijvoorbeeld voor authenticatietokens of contenttypen. Voorbeeld: {"Authorization": "Bearer example\_value"}
+3. **Methode**
    * **Beschrijving:** Geeft de HTTP-methode op die voor het verzoek wordt gebruikt.
    * **Opties:**
      * **GET:** Haalt gegevens op van het eindpunt.
@@ -23,14 +23,14 @@ Met de workflow-kaart **"Send HTTPS Request"** kunnen gebruikers HTTPS-verzoeken
      * **DELETE:** Verwijdert resources van het eindpunt.
 4. **Parameters**
    * **Beschrijving:** Sleutel-waardeparen die als queryparameters in de URL worden opgenomen.
-   * **Detail:** Gebruik dit om filters of aanvullende gegevens te verzenden die het eindpunt vereist.
-5. **Data**
+   * **Details:** Gebruik een geldig JSON-formaat om filters of aanvullende gegevens voor het eindpunt op te geven. Zie het voorbeeld bij Headers.
+5. **Gegevens**
    * **Beschrijving:** De body van het HTTPS-verzoek.
-   * **Detail:** Geef de payload op in JSON of een ander acceptabel formaat voor de geselecteerde methode (bijv. POST of PUT).
+   * **Details:** Geef de payload op in een geldig JSON-formaat. Zie het voorbeeld bij Headers.
 
 ## Functionaliteit:
 
-* **Voorwaarde-evaluatie:** De kaart verzendt het HTTPS-verzoek alleen als de **"Where"**- en **"And"**-secties als true worden geëvalueerd.&#x20;
+* **Voorwaarde-evaluatie:** De kaart verzendt het HTTPS-verzoek alleen als de **"Wanneer"**- en **"En"**-secties als true worden geëvalueerd.
   * Als een van beide voorwaarden false is, wordt het verzoek niet verzonden.
 * **Verzoekuitvoering:**
   * Wanneer aan de voorwaarden wordt voldaan, verzendt het systeem het HTTPS-verzoek met de opgegeven configuraties.
@@ -42,7 +42,7 @@ Met de workflow-kaart **"Send HTTPS Request"** kunnen gebruikers HTTPS-verzoeken
 3. **HTTP-methode selecteren:** Kies de juiste methode (**GET**, **POST**, **PUT** of **DELETE**) op basis van de uit te voeren actie.
 4. **Parameters toevoegen:** Geef eventuele queryparameters op die het eindpunt vereist.
 5. **Gegevens-payload opgeven:** Voer indien nodig de verzoekbody in het vereiste formaat in (bijv. JSON).
-6. **Voorwaarden configureren:** Definieer de **"Where"**- en **"And"**-secties om ervoor te zorgen dat het verzoek alleen wordt verzonden wanneer aan specifieke voorwaarden wordt voldaan.
+6. **Voorwaarden configureren:** Definieer de **"Wanneer"**- en **"En"**-secties om ervoor te zorgen dat het verzoek alleen wordt verzonden wanneer aan specifieke voorwaarden wordt voldaan.
 
 ## Conclusie:
 

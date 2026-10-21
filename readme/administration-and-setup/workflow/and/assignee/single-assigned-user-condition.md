@@ -1,6 +1,6 @@
-# Single Assigned User Condition
+# Eén toegewezen gebruikersvoorwaarde
 
-<figure><img src="../../../../.gitbook/assets/userlmn_77e991cee96598023f9a3ac7ad230e50.png" alt="" width="552"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-901c3b37bac4-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
 **Doel**
 
@@ -8,21 +8,21 @@ Deze workflow-kaart faciliteert bewerkingen op basis van de toewijzing van een t
 
 **Onderdelen van de kaart**
 
-1. **Operator**
+1. **Exploitant**
    * **Beschrijving**: Geeft de logica op die op de gebruikerstoewijzing wordt toegepast.
    * **Opties**:
      * **IS**: Triggert de bewerking als de toegewezen gebruiker van het document of de taak overeenkomt met de opgegeven gebruiker.
-     * **IS NOT**: Triggert de bewerking als de toegewezen gebruiker niet overeenkomt met de opgegeven gebruiker.
-2. **User**
+     * **IS NIET**: Triggert de bewerking als de toegewezen gebruiker niet overeenkomt met de opgegeven gebruiker.
+2. **Gebruiker**
    * **Beschrijving**: Maakt de selectie mogelijk van één enkele gebruiker waarmee de toegewezen gebruiker wordt vergeleken.
-   * **Detail**: Dit betreft een eenvoudig dropdown- of autoaanvulveld waarin telkens één gebruiker kan worden geselecteerd.
+   * **Details**: Dit betreft een eenvoudig dropdown- of autoaanvulveld waarin telkens één gebruiker kan worden geselecteerd.
 
 **Functionaliteit**
 
 * **Identificatie van gebruikerstoewijzing**: Identificeert de gebruiker die momenteel aan een specifieke taak of document is toegewezen.
 * **Voorwaarde-evaluatie**:
   * Voor de **IS**-operator controleert de kaart of de toegewezen gebruiker dezelfde is als de geselecteerde gebruiker.
-  * Voor de **IS NOT**-operator verifieert hij dat de toegewezen gebruiker anders is dan de geselecteerde gebruiker.
+  * Voor de **IS NIET**-operator verifieert hij dat de toegewezen gebruiker anders is dan de geselecteerde gebruiker.
 * **Actie-uitvoering**:
   * **True-voorwaarde**: Als de toewijzing aan de ingestelde voorwaarde voldoet (IS of IS NOT), triggert hij vooraf gedefinieerde acties, zoals het doorgaan met goedkeuringen, het starten van verdere taken, het verzenden van meldingen of andere gerelateerde workflows.
   * **False-voorwaarde**: Als niet aan de voorwaarde wordt voldaan, gaat de workflow niet verder.
@@ -36,3 +36,15 @@ Deze workflow-kaart faciliteert bewerkingen op basis van de toewijzing van een t
 #### Conclusie
 
 De workflow-kaart "Single Assigned User Condition" is essentieel voor nauwkeurig, gebruikersspecifiek document- en taakbeheer binnen een ERP-systeem. Hij vereenvoudigt workflows door zich te richten op individuele gebruikerstoewijzingen, en zorgt er zo voor dat acties alleen worden uitgevoerd wanneer dat passend is, op basis van de rol en verantwoordelijkheden van de gebruiker. Het duidelijk documenteren van deze kaart helpt gebruikers de toepassing ervan te begrijpen, zodat ze hem effectief in hun dagelijkse werkzaamheden kunnen implementeren en beheren. Deze documentatie zorgt ervoor dat alle potentiële gebruikers het doel van de kaart gemakkelijk kunnen begrijpen en hem naadloos in hun workflows kunnen integreren.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Behandel de wachtrij van een bepaalde revisor.
+
+**Configuratie:** Selecteer de gelijk-operator en `Demo Reviewer A`.
+
+**Verwacht resultaat en tegenvoorbeeld:** Een document dat aan die gebruiker is toegewezen, is geslaagd; een andere toegewezen gebruiker mislukt.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

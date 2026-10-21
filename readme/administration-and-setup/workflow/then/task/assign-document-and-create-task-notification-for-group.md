@@ -1,39 +1,39 @@
-# Assign Document and Create Task/Notification for Group
+# Document toewijzen en taak/melding voor groep maken
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-01f8137c5c7f-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel**
 
-De workflow-kaart "**Assign Document and Create Task/Notification for Group**" wijst een document toe aan een opgegeven groep, maakt een taak of melding aan met aanpasbare details en verzendt optioneel een e-mailmelding naar de groep. Deze kaart ondersteunt ook het toewijzen van een numerieke prioriteitswaarde om de uitvoeringsvolgorde te bepalen.
+De workflow-kaart "**Document toewijzen en taak/melding voor groep maken**" wijst een document toe aan een opgegeven groep, maakt een taak of melding aan met aanpasbare details en verzendt optioneel een e-mailmelding naar de groep. Deze kaart ondersteunt ook het toewijzen van een numerieke prioriteitswaarde om de uitvoeringsvolgorde te bepalen.
 
 ## **Onderdelen van de kaart**
 
-1. **Group Name**
+1. **Groepsnaam**
    * **Beschrijving:** Geeft de groep op die de taak of melding ontvangt.
-   * **Detail:** Een dropdown om de naam te kiezen van de groep waaraan het document en de taak/melding worden toegewezen.
-2. **Task/Notification**
+   * **Details:** Een dropdown om de naam te kiezen van de groep waaraan het document en de taak/melding worden toegewezen.
+2. **Taak/Melding**
    * **Beschrijving:** Geeft het type actie op dat voor de groep wordt aangemaakt.
-   * **Detail:** Een dropdown om ofwel "Task" ofwel "Notification" te selecteren op basis van de gewenste actie.
-3. **Title**
+   * **Details:** Een dropdown om ofwel "Task" ofwel "Notification" te selecteren op basis van de gewenste actie.
+3. **Titel**
    * **Beschrijving:** Biedt de titel van de taak of melding.
-   * **Detail:** Een veld om een beknopte, beschrijvende titel voor de taak of melding toe te voegen.
-4. **Description**
+   * **Details:** Een veld om een beknopte, beschrijvende titel voor de taak of melding toe te voegen.
+4. **Beschrijving**
    * **Beschrijving:** Beschrijft de taak of melding verder.
-   * **Detail:** Een veld om aanvullende details over het doel van de taak of de inhoud van de melding te bieden.
-5. **Priority**
+   * **Details:** Een veld om aanvullende details over het doel van de taak of de inhoud van de melding te bieden.
+5. **Prioriteit**
    * **Beschrijving:** Definieert het urgentieniveau van de taak of melding.
    * **Opties:**
      * **High:** Vereist onmiddellijke aandacht.
-     * **Medium:** Belangrijk maar niet urgent.
+     * **Middel:** Belangrijk maar niet urgent.
      * **Low:** Kan later worden afgehandeld.
-6. **Send Mail**
+6. **E-mail verzenden**
    * **Beschrijving:** Configureert of er een e-mailmelding naar de groep wordt verzonden.
    * **Opties:**
      * **True:** Verzendt een e-mailmelding.
      * **False:** Verzendt geen e-mail.
-7. **Value**
+7. **Waarde**
    * **Beschrijving:** Stelt de numerieke prioriteit voor de documenttoewijzing in.
-   * **Detail:** Een veld om een numerieke waarde in te voeren, waarbij een lager getal een hogere prioriteit aangeeft.
+   * **Details:** Een veld om een numerieke waarde in te voeren, waarbij een lager getal een hogere prioriteit aangeeft.
 
 ## **Functionaliteit**
 
@@ -48,11 +48,11 @@ De workflow-kaart "**Assign Document and Create Task/Notification for Group**" w
 
 1. **Group Name definiëren:**
    * Voer de naam van de groep in het veld Group Name in.
-2. **Task/Notification selecteren:**
-   * Kies "Task" of "Notification" in de Task/Notification-dropdown.
+2. **Taak/Melding selecteren:**
+   * Kies "Taak" of "Melding" in de Taak/Melding-dropdown.
 3. **Taak-/meldingsdetails instellen:**
    * Voer de Title en Description voor de taak of melding in.
-   * Selecteer de Priority in de dropdown (High, Medium of Low).
+   * Selecteer de prioriteit in de vervolgkeuzelijst (Hoog, Gemiddeld of Laag).
 4. **E-mailmelding inschakelen:**
    * Configureer de optie Send Mail op True of False, afhankelijk van of er een e-mailmelding moet worden verzonden.
 5. **Numerieke prioriteit toewijzen:**
@@ -62,3 +62,15 @@ De workflow-kaart "**Assign Document and Create Task/Notification for Group**" w
 ## **Conclusie**
 
 De workflow-kaart "Assign Document and Create Task/Notification for Group" zorgt ervoor dat documenten aan de juiste groep worden toegewezen, terwijl taken of meldingen worden aangemaakt met aanpasbare prioriteits- en e-mailmeldingsopties. Dit stroomlijnt het documentbeheer en verbetert de workflow-efficiëntie.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Maak een teamtaak naast de geprioriteerde documenttoewijzing.
+
+**Configuratie:** Selecteer `Demo Finance`, titel `Review invoice` en de taak- en toewijzingsprioriteiten.
+
+**Verwacht resultaat en tegenvoorbeeld:** Controleer de groepsdocumenttoewijzing en de taak/melding afzonderlijk. Een taak alleen is geen bewijs van een voltooide documentgoedkeuring.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

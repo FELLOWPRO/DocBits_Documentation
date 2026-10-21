@@ -1,6 +1,6 @@
-# Document Type
+# Documenttype
 
-<figure><img src="../../../../.gitbook/assets/docbits_document_type_card.png" alt="DocBits Document Type Kaart" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3a6901be7256-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## Doel:
 
@@ -8,14 +8,14 @@ Deze workflow-kaart is ontworpen om te evalueren of een document overeenkomt met
 
 ## Onderdelen van de kaart:
 
-1. **Operator**
+1. **Exploitant**
    * **Beschrijving**: Definieert of het document wel of niet van het opgegeven type moet zijn.
    * **Opties**:
      * **Is**: Het document moet overeenkomen met het opgegeven type om de voorwaarde true te maken.
-     * **Is Not**: Het document mag niet overeenkomen met het opgegeven type om de voorwaarde true te maken.
-2. **Type**
+     * **Is niet**: Het document mag niet overeenkomen met het opgegeven type om de voorwaarde true te maken.
+2. **Typ**
    * **Beschrijving**: Geeft het documenttype op waarmee wordt vergeleken.
-   * **Detail**: Dit omvat een verscheidenheid aan documenttypen, zoals "Invoice", "Purchase Order", enz., op basis waarvan de voorwaarde (is/is not) wordt geëvalueerd.
+   * **Details**: Dit omvat een verscheidenheid aan documenttypen, zoals "Invoice", "Purchase Order", enz., op basis waarvan de voorwaarde (is/is not) wordt geëvalueerd.
 
 ## Functionaliteit:
 
@@ -31,3 +31,15 @@ Deze workflow-kaart is ontworpen om te evalueren of een document overeenkomt met
 ## Conclusie:
 
 De workflow-kaart "Document Type Comparison" is essentieel om ervoor te zorgen dat workflows doorgaan op basis van het type document dat wordt verwerkt. Door het documenttype te vergelijken, helpt hij organisaties documentroutering en -verwerkingstaken te automatiseren, zodat documenten op de juiste manier worden afgehandeld op basis van hun type.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Voer een factuurspecifieke controle uit.
+
+**Configuratie:** Selecteer documenttype `Invoice` en de gelijk-operator.
+
+**Verwacht resultaat en tegenvoorbeeld:** Er wordt een factuur doorgegeven. Een creditnota voldoet niet aan deze voorwaarde.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

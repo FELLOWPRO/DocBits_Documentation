@@ -1,6 +1,6 @@
-# Module active
+# Module actief
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-405c9bb87c62-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel:**
 
@@ -12,7 +12,7 @@ Deze DocBits-kaart controleert of een specifieke module in het systeem actief of
 * **Moduleselectie:** Gebruikers geven de naam op van de te controleren module, wat zorgt voor een nauwkeurige validatie.
 * **Operatoren:** De volgende voorwaarden kunnen worden toegepast:
   * **Is:** De workflow gaat verder als de geselecteerde module actief is.
-  * **Is Not:** De workflow gaat verder als de geselecteerde module inactief is.
+  * **Is niet:** De workflow gaat verder als de geselecteerde module inactief is.
 
 ## **Gebruik:**
 
@@ -20,6 +20,6 @@ Deze kaart is met name nuttig voor beheerders of systeembeheerders die workflows
 
 ## **Voorbeeldscenario**
 
-* Een gebruiker configureert de kaart om te controleren of de module **"Document Processing"** **actief is.** Als de module actief is, gaat de workflow verder en worden geautomatiseerde documentverwerkingstaken getriggerd. Als de module inactief is, stopt de workflow, wat onnodige acties voorkomt.
+* Een gebruiker configureert de kaart om te controleren of de module **"Documentverwerking"** **actief is.** Als de module actief is, gaat de workflow verder en worden geautomatiseerde documentverwerkingstaken getriggerd. Als de module inactief is, stopt de workflow, wat onnodige acties voorkomt.
 
 Door de kaart "Module Active Check" te gebruiken, kunnen organisaties de betrouwbaarheid van workflows verbeteren, fouten door inactieve modules voorkomen en ervoor zorgen dat processen aansluiten op de systeemconfiguratie.

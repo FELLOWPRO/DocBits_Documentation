@@ -1,29 +1,29 @@
-# Create a New Task and assign it to the group
+# Maak een nieuwe taak en wijs deze toe aan de groep
 
-<figure><img src="../../../../.gitbook/assets/image (289).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-502380adb65e-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel:**
 
-De workflow-kaart **"Create Group Task or Notification"** faciliteert het aanmaken van taken of meldingen voor opgegeven groepen, wat zorgt voor efficiënte communicatie en taakbeheer. In latere versies uitgebreid met beslisboomfunctionaliteit, bepaalt hij dynamisch de toegewezen groep of methode, wat de bewerkingen stroomlijnt.
+De workflow-kaart **"Groepstaak of melding maken"** faciliteert het aanmaken van taken of meldingen voor opgegeven groepen, wat zorgt voor efficiënte communicatie en taakbeheer. In latere versies uitgebreid met beslisboomfunctionaliteit, bepaalt hij dynamisch de toegewezen groep of methode, wat de bewerkingen stroomlijnt.
 
 ## **Onderdelen van de kaart:**
 
-1. **Title**
+1. **Titel**
    * **Beschrijving**: Geeft de titel van de taak of melding op.
-   * **Detail**: Fungeert als de identifier voor de aangemaakte taak of melding.
-2. **Description**
+   * **Details**: Fungeert als de identifier voor de aangemaakte taak of melding.
+2. **Beschrijving**
    * **Beschrijving**: Beschrijft de context of details van de taak of melding.
-   * **Detail**: Biedt duidelijkheid over het doel ervan.
-3. **Priority**
+   * **Details**: Biedt duidelijkheid over het doel ervan.
+3. **Prioriteit**
    * **Beschrijving**: Stelt het belangrijkheidsniveau van de taak in.
    * **Opties**:
      * **High**: Vereist onmiddellijke actie.
-     * **Medium**: Belangrijk maar minder urgent.
+     * **Middelmatig**: Belangrijk maar minder urgent.
      * **Low**: Kan later worden afgehandeld.
-4. **Assigned Group**
+4. **Toegewezen groep**
    * **Beschrijving**: Geeft de groep op die verantwoordelijk is voor de taak of melding.
-   * **Detail**: Geselecteerd uit een dropdownlijst van beschikbare groepen.
-5. **Email Notification**
+   * **Details**: Geselecteerd uit een dropdownlijst van beschikbare groepen.
+5. **E-mailmelding**
    * **Beschrijving**: Maakt het mogelijk een e-mail te verzenden om de toegewezen groep op de hoogte te stellen.
    * **Opties**:
      * **True**: Verzendt een e-mailmelding.
@@ -31,21 +31,21 @@ De workflow-kaart **"Create Group Task or Notification"** faciliteert het aanmak
 
 ## **Aanvullende onderdelen in Version 3 en Version 4**
 
-1. **Decision Tree (alleen Version 3)**
+1. **Beslissingsboom (alleen versie 3)**
    * **Beschrijving**: Maakt het gebruik van een beslisboom voor dynamische taakaanmaak mogelijk.
    * **Opties**:
      * **True**: Activeert verwerking via de beslisboom.
      * **False**: Schakelt verwerking via de beslisboom uit.
-2. **Task/Notification Option** **(alleen Version 4)**
+2. **Taak-/meldingsoptie** **(alleen versie 4)**
    * **Beschrijving**: Maakt het aanmaken van ofwel een taak ofwel een melding mogelijk.
    * **Opties**:
-     * **Task**: Maakt een taak voor de geselecteerde groep aan.
+     * **Taak**: Maakt een taak voor de geselecteerde groep aan.
      * **Notification**: Verzendt een melding in plaats van een taak aan te maken.
 
 ## **Functionaliteit:**
 
 * **Voorwaarde-evaluatie**:\
-  Voert de kaartactie alleen uit wanneer de **"Where"**- en **"And"**-secties true zijn.
+  Voert de kaartactie alleen uit wanneer de **"Wanneer"**- en **"En"**-secties true zijn.
 * **Aanmaak van taak of melding**:
   * Er wordt een taak voor de geselecteerde groep aangemaakt met de opgegeven titel, beschrijving en prioriteit.
   * In Version 4 kan de kaart een melding aanmaken in plaats van een taak.
@@ -64,4 +64,16 @@ De workflow-kaart **"Create Group Task or Notification"** faciliteert het aanmak
 
 ## **Conclusie:**
 
-De workflow-kaart **"Create Group Task or Notification"** vereenvoudigt het taak- en meldingsbeheer door groepen rechtstreeks aan te spreken. De functie voor dynamische toewijzing, mogelijk gemaakt door de beslisboom, verbetert de flexibiliteit, terwijl e-mailmeldingen zorgen voor tijdige communicatie. Versions 3 en 4 voegen geavanceerde functionaliteit toe, waardoor het een veelzijdig hulpmiddel is voor efficiënte workflow-uitvoering.
+De workflow-kaart **"Groepstaak of melding maken"** vereenvoudigt het taak- en meldingsbeheer door groepen rechtstreeks aan te spreken. De functie voor dynamische toewijzing, mogelijk gemaakt door de beslisboom, verbetert de flexibiliteit, terwijl e-mailmeldingen zorgen voor tijdige communicatie. Versions 3 en 4 voegen geavanceerde functionaliteit toe, waardoor het een veelzijdig hulpmiddel is voor efficiënte workflow-uitvoering.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Geef een gedeeld team een concrete beoordelingstaak.
+
+**Configuratie:** Selecteer groep `Demo Finance`, titel `Review invoice`, een nuttige beschrijving en prioriteit. Schakel e-mail uit voor de eerste test.
+
+**Verwacht resultaat en tegenvoorbeeld:** De groep ontvangt de taak. Bevestig de titel en verantwoordelijke in de takenlijst; e-mailbezorging is een aparte controle als deze is ingeschakeld.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

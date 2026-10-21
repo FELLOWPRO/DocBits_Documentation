@@ -1,6 +1,6 @@
-# Checkbox is checked
+# Het selectievakje is aangevinkt
 
-<figure><img src="../../../../.gitbook/assets/docbits_workflow_document_field.png" alt="Docbits Workflow Document Field" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6ae1b0fb29dd-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel:**
 
@@ -8,10 +8,10 @@ Deze workflow-kaart is ontworpen om acties te automatiseren op basis van de stat
 
 ## **Onderdelen van de kaart:**
 
-* **Field Name**
+* **Veldnaam**
   * **Beschrijving:** Geeft de naam op van het selectievakjeveld dat wordt geëvalueerd.
-  * **Detail:** Dit moet exact overeenkomen met de identifier van het veld die in het systeem wordt gebruikt. Het bepaalt van welk selectievakje de status wordt gemonitord.
-* **Boolean**
+  * **Details:** Dit moet exact overeenkomen met de identifier van het veld die in het systeem wordt gebruikt. Het bepaalt van welk selectievakje de status wordt gemonitord.
+* **Booleaans**
   * **Beschrijving:** Definieert de voorwaarde die de workflow triggert.
   * **Opties:**
     * **True:** De workflow wordt getriggerd als het selectievakje is aangevinkt.
@@ -29,12 +29,22 @@ Deze workflow-kaart is ontworpen om acties te automatiseren op basis van de stat
 
 ## **Opzet en configuratie:**
 
-* Gebruikers configureren de kaart door het selectievakjeveld uit een lijst van beschikbare velden te selecteren en de Boolean-voorwaarde in te stellen.&#x20;
+* Gebruikers configureren de kaart door het selectievakjeveld uit een lijst van beschikbare velden te selecteren en de Boolean-voorwaarde in te stellen.
 
 ## Conclusie:
 
 De workflow-kaart "Checkbox Field Condition" is een fundamenteel hulpmiddel voor het beheren van dynamische formulieren en documenten binnen een ERP-systeem, waarbij gebruikersinvoer de daaropvolgende gegevensprocessen kan bepalen. Door acties te automatiseren op basis van de status van een selectievakje verbetert deze kaart de workflow-efficiëntie en zorgt hij ervoor dat het systeemgedrag aansluit op de gebruikersinvoer. Een duidelijke documentatie van deze kaart helpt gebruikers hem effectief in hun werkzaamheden te implementeren, wat zorgt voor betere controle over formuliergedrag en procesautomatiseringen.
 
-
-
 **Note: Niet elke klant heeft het selectievakje, maar het kan desgewenst worden toegevoegd.**
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Voer alleen een follow-up uit nadat een expliciete beoordelingsvlag is ingesteld.
+
+**Configuratie:** Selecteer het selectievakjeveld `review_complete` en Boolean `true`.
+
+**Verwacht resultaat en tegenvoorbeeld:** Een aangevinkt selectievakje passeert. Een niet-aangevinkt selectievakje mislukt; gebruik een ontbrekend veld niet als bewijs van voltooide beoordeling.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

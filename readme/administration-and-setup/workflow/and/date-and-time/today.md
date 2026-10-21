@@ -1,6 +1,6 @@
-# Today
+# Vandaag
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-bd785752f7b5-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel:**
 
@@ -9,12 +9,12 @@ Deze DocBits-kaart vergelijkt de datum van vandaag met een opgegeven datum, waar
 ## **Functionaliteit:**
 
 * **Datumvergelijking:** Deze kaart evalueert de datum van vandaag ten opzichte van een opgegeven datum met behulp van de volgende voorwaarden:
-  * **Equals (=):** Controleert of de datum van vandaag overeenkomt met de opgegeven datum.
-  * **Not Equals (≠):** Zorgt ervoor dat de datum van vandaag verschilt van de opgegeven datum.
-  * **Greater Than (>):** Bevestigt dat de datum van vandaag na de opgegeven datum ligt.
-  * **Greater or Equals (≥):** Zorgt ervoor dat de datum van vandaag op of na de opgegeven datum ligt.
-  * **Lesser Than (<):** Controleert of de datum van vandaag vóór de opgegeven datum ligt.
-  * **Less or Equals (≤):** Zorgt ervoor dat de datum van vandaag op of vóór de opgegeven datum ligt.
+  * **Is gelijk aan (=):** Controleert of de datum van vandaag overeenkomt met de opgegeven datum.
+  * **Niet gelijk aan (≠):** Zorgt ervoor dat de datum van vandaag verschilt van de opgegeven datum.
+  * **Groter dan (>):** Bevestigt dat de datum van vandaag na de opgegeven datum ligt.
+  * **Groter of gelijk aan (≥):** Zorgt ervoor dat de datum van vandaag op of na de opgegeven datum ligt.
+  * **Kleiner dan (<):** Controleert of de datum van vandaag vóór de opgegeven datum ligt.
+  * **Minder of gelijk aan (≤):** Zorgt ervoor dat de datum van vandaag op of vóór de opgegeven datum ligt.
 * **Datuminvoer:** Gebruikers geven de datum op om met de datum van vandaag te vergelijken.
 
 ## **Gebruik:**

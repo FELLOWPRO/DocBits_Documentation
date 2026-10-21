@@ -1,378 +1,388 @@
-# Workflow Patroon Gidsen
+# Gidsen voor workflowpatronen
 
-**Versie:** 1.0
-**Laatst Bijgewerkt:** 23 oktober 2025
+**Versie:** 1.0 **Laatst bijgewerkt:** 23 oktober 2025
 
----
+***
 
 ## Overzicht
 
-Deze map bevat uitgebreide gidsen voor workflowpatronen die demonstreren hoe meerdere workflowkaarten kunnen worden gecombineerd om veelvoorkomende bedrijfsscenario's op te lossen. Elk patroon biedt stapsgewijze implementatie-instructies, complete voorbeelden en beste praktijken.
+Deze map bevat uitgebreide handleidingen voor werkstroompatronen die laten zien hoe u meerdere werkstroomkaarten kunt combineren om algemene bedrijfsscenario's op te lossen. Elk patroon biedt stapsgewijze implementatie-instructies, volledige voorbeelden en best practices.
 
-**Wat zijn Workflowpatronen?**
+**Wat zijn workflowpatronen?**
 
-Workflowpatronen zijn bewezen, herbruikbare oplossingen voor veelvoorkomende uitdagingen bij documentverwerking. In plaats van helemaal opnieuw te beginnen, kunt u deze patronen als sjablonen gebruiken en aanpassen aan uw specifieke behoeften.
+Workflowpatronen zijn beproefde, herbruikbare oplossingen voor algemene uitdagingen op het gebied van documentatieverwerking. In plaats van helemaal opnieuw te beginnen, kunt u deze patronen als sjablonen gebruiken en ze aanpassen aan uw specifieke behoeften.
 
----
+***
 
-## De Workflow Builder in een oogopslag
+## De Workflow Builder in één oogopslag
 
-Elk patroon op deze pagina wordt samengesteld in de **Workflow Builder**. U bereikt deze via **Workflow Dashboard → Workflowlijst → Workflow Toevoegen** (of door een bestaande workflow te openen). Het dashboard toont u de uitvoeringsgeschiedenis en slaag-/faalpercentages voor al uw workflows:
+Elk patroon op deze pagina is samengesteld in de **Workflow-bouwer**. U bereikt dit via **Workflowdashboard → Workflowlijst → Workflow toevoegen** (of door een bestaande workflow te openen). Het dashboard geeft u de rungeschiedenis en succes-/mislukkingspercentages voor al uw workflows:
 
-<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard met uitvoeringstotalen, slaag- en faalpercentages, de grafiek met workflowuitvoeringen en recente activiteit"><figcaption><p>Het Workflow Dashboard — uitvoeringstotalen, slaag-/faalpercentages en recente activiteit voor elke workflow.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-dashboard-c9339f546ced-nl.png" alt="Het Workflow Dashboard — uitvoeringstotalen, slaag-/faalpercentages en recente activiteit voor elke workflow. Vertrouwelijke namen en documentverwijzingen zijn verborgen."><figcaption><p>Het Workflow Dashboard — uitvoeringstotalen, slaag-/faalpercentages en recente activiteit voor elke workflow. Vertrouwelijke namen en documentverwijzingen zijn verborgen.</p></figcaption></figure>
 
-Het tabblad **Workflowlijst** toont elke workflow met het bijbehorende type, de uitvoeringsvolgorde en de trigger. Gebruik **Workflow Toevoegen** om een nieuwe aan te maken, of klik op een workflow om deze in de builder te openen:
+Op het tabblad **Workflowlijst** wordt elke workflow vermeld met het type, de uitvoeringsvolgorde en de trigger. Gebruik **Workflow toevoegen** om een nieuwe te maken, of klik op een workflow om deze in de builder te openen:
 
-<figure><img src="../../.gitbook/assets/workflow_list.png" alt="Tabblad Workflowlijst met workflows, type, uitvoeringsvolgorde en trigger"><figcaption><p>De Workflowlijst — elke rij is een workflow die u kunt openen, in-/uitschakelen of bewerken.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-dashboard-900cb4050b5b-nl.png" alt="De Workflowlijst — elke rij is een workflow die u kunt openen, in-/uitschakelen of bewerken. Vertrouwelijke namen en documentverwijzingen zijn verborgen."><figcaption><p>De Workflowlijst — elke rij is een workflow die u kunt openen, in-/uitschakelen of bewerken. Vertrouwelijke namen en documentverwijzingen zijn verborgen.</p></figcaption></figure>
 
-Een workflow wordt opgebouwd uit drie groepen kaarten — **When** (de trigger), **And** (aanvullende voorwaarden) en **Then** (de acties die worden uitgevoerd). Het onderstaande voorbeeld wordt geactiveerd op facturen die bij een suborganisatie horen en wijst deze toe aan een gebruiker:
+Een workflow bestaat uit drie kaartgroepen: **Wanneer** (trigger), **En** (aanvullende voorwaarden) en **Dan** (acties). Het volgende niet-opgeslagen voorbeeld toont deze structuur. Het documenttype, de suborganisatie en de gebruiker moeten nog worden geselecteerd:
 
-<figure><img src="../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder-canvas met When-, And- en Then-kaarten"><figcaption><p>Het Workflow Builder-canvas. Elk patroon hieronder is slechts een andere combinatie van When- / And- / Then-kaarten.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-nl.png" alt="Niet-opgeslagen voorbeeld met Wanneer-, En- en Dan-kaarten. Vul alle velden in vóór uitvoering. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Niet-opgeslagen voorbeeld met Wanneer-, En- en Dan-kaarten. Vul alle velden in vóór uitvoering. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-Klik in een willekeurige groep op **Add Card** om de kaartbibliotheek te openen. Kaarten zijn geordend per categorie (Compare with Purchase Order, Partner Cards, Document Field, Date &#x26; Time, Document, Logic, Status, Table, Assignee, …) zodat u het bouwblok kunt vinden dat elk patroon nodig heeft:
+Klik op **Kaart toevoegen** in een willekeurige groep om de kaartbibliotheek te openen. Kaarten zijn geordend per categorie (vergelijk met inkooporder, partnerkaarten, documentveld, datum en tijd, document, logica, status, tabel, toegewezen persoon, ...), zodat u de bouwsteen kunt vinden waar elk patroon om vraagt:
 
-<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card-dialoogvenster met de kaartcategorieën en beschikbare kaarten"><figcaption><p>De <strong>Add Card</strong>-bibliotheek — elke kaart waarnaar in de onderstaande patronen wordt verwezen, wordt hier gekozen.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
----
+***
 
-## Beschikbare Patronen
+## Beschikbare patronen
 
-### 1. [API Integratie Patroon](api-integration-pattern.md)
+### 1. [API-integratiepatroon](api-integration-pattern.md)
 
-**Complexiteit:** Gemiddeld | **Insteltijd:** 45-60 minuten
+**Complexiteit:** Gemiddeld | **Installatietijd:** 45-60 minuten
 
-Leer hoe u DocBits integreert met externe API's om gegevens uit externe systemen op te halen, te valideren en op te slaan.
-
-**Gebruiksscenario's:**
-- Real-time prijzen ophalen uit externe systemen
-- Leveranciersinformatie valideren tegen masterdatabases
-- Productdetails opzoeken uit catalogussystemen
-- Wisselkoersen ophalen van valutadiensten
-- Adressen verifiëren met geocodingdiensten
-
-**Gebruikte Kaarten:** CALL_API, CONDITION_HTTPS_REQUEST_STATUS, ACTION_SET_FIELD_TO_TEXT, CONDITION_COMPARE_TWO_DOCFIELD_VALUES
-
-**[Bekijk Volledig Patroon →](api-integration-pattern.md)**
-
----
-
-### 2. [Taakbeheer Patroon](task-management-pattern.md)
-
-**Complexiteit:** Laag-Gemiddeld | **Insteltijd:** 30-45 minuten
-
-Beheers de kunst van het creëren, toewijzen, volgen en beheren van taken binnen DocBits workflows voor goedkeurings- en beoordelingsprocessen.
+Leer hoe u DocBits kunt integreren met externe API's om gegevens van externe systemen op te halen, te valideren en op te slaan.
 
 **Gebruiksscenario's:**
-- Goedkeuringsworkflows creëren
-- Beoordelingstaken toewijzen aan gebruikers
-- Uitzonderingen afhandelen die menselijke tussenkomst vereisen
-- Problemen escaleren naar managers
-- Goedkeuringsketens op meerdere niveaus creëren
-- Taakvoltooiing en deadlines volgen
 
-**Gebruikte Kaarten:** tasks_create, ACTION_ASSIGN_TO_USER, ACTION_SEND_EMAIL_TO_GROUPS, CONDITION_TASK_STATUS
+* Haal realtime prijzen op van externe systemen
+* Valideer leveranciersinformatie aan de hand van hoofddatabases
+* Zoek productdetails op uit catalogussystemen
+* Ontvang wisselkoersen van valutadiensten
+* Verifieer adressen met geocoderingsservices
 
-**[Bekijk Volledig Patroon →](task-management-pattern.md)**
+**Gebruikte kaarten:** CALL\_API, CONDITION\_HTTPS\_REQUEST\_STATUS, ACTION\_SET\_FIELD\_TO\_TEXT, CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES
 
----
+[**Volledig patroon bekijken →**](api-integration-pattern.md)
 
-### 3. [PO Matching Patroon](po-matching-pattern.md)
+***
 
-**Complexiteit:** Gemiddeld-Hoog | **Insteltijd:** 60-90 minuten
+### 2. [Taakbeheerpatroon](task-management-pattern.md)
 
-Implementeer uitgebreide workflows voor het matchen van inkooporders om facturen te valideren tegen inkooporders met op tolerantie gebaseerde routering.
+**Complexiteit:** Laag-gemiddeld | **Installatietijd:** 30-45 minuten
+
+Beheers de kunst van het creëren, toewijzen, volgen en beheren van taken binnen DocBits-workflows voor goedkeurings- en beoordelingsprocessen.
 
 **Gebruiksscenario's:**
-- Facturen valideren tegen inkooporders
-- Prijsfouten detecteren vóór betaling
-- Hoeveelheidsverschillen identificeren
-- Inkoopcontroles afdwingen
-- Dubbele betalingen voorkomen
-- Driewegmatching automatiseren
 
-**Gebruikte Kaarten:** PURCHASE_ORDER_FULL_MATCH, CONDITION_DOC_TO_PO_UNIT_PRICE, CONDITION_DOC_TO_PO_QUANTITY, CONDITION_DOC_TO_PO_TAX_LINES
+* Goedkeuringsworkflows maken
+* Wijs beoordelingstaken toe aan gebruikers
+* Afhandelen van uitzonderingen die menselijke tussenkomst vereisen
+* Escaleer problemen naar managers
+* Creëer goedkeuringsketens op meerdere niveaus
+* Volg de voltooiing van taken en deadlines
 
-**[Bekijk Volledig Patroon →](po-matching-pattern.md)**
+**Gebruikte kaarten:** tasks\_create, ACTION\_ASSIGN\_TO\_USER, ACTION\_SEND\_EMAIL\_TO\_GROUPS, CONDITION\_TASK\_STATUS
 
----
+[**Volledig patroon bekijken →**](task-management-pattern.md)
 
-### 4. [Beslissingslogica Patroon](decision-logic-pattern.md)
+***
 
-**Complexiteit:** Gemiddeld | **Insteltijd:** 30-45 minuten
+### 3. [PO-overeenkomend patroon](po-matching-pattern.md)
+
+**Complexiteit:** Middelhoog | **Installatietijd:** 60-90 minuten
+
+Implementeer uitgebreide workflows voor het matchen van inkooporders om facturen te valideren aan de hand van inkooporders met op tolerantie gebaseerde routering.
+
+**Gebruiksscenario's:**
+
+* Valideer facturen ten opzichte van inkooporders
+* Detecteer prijsfouten vóór betaling
+* Identificeer hoeveelheidsverschillen
+* Voer inkoopcontroles uit
+* Voorkom dubbele betalingen
+* Automatiseer driewegmatching
+
+**Gebruikte kaarten:** PURCHASE\_ORDER\_FULL\_MATCH, CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE, CONDITION\_DOC\_TO\_PO\_QUANTITY, CONDITION\_DOC\_TO\_PO\_TAX\_LINES
+
+[**Volledig patroon bekijken →**](po-matching-pattern.md)
+
+***
+
+### 4. [Beslissingslogicapatroon](decision-logic-pattern.md)
+
+**Complexiteit:** Gemiddeld | **Installatietijd:** 30-45 minuten
 
 Implementeer complexe beslissingsbomen en voorwaardelijke routeringslogica om documenten via verschillende paden te verwerken op basis van bedrijfsregels.
 
 **Gebruiksscenario's:**
-- Documenten routeren op basis van bedragdrempels
-- Verschillende regels toepassen voor verschillende documenttypen
-- Goedkeuringslogica op meerdere niveaus implementeren
-- Complexe bedrijfsbeleidsregels afhandelen
-- Dynamische routering creëren op basis van meerdere criteria
-- Goedkeuringsmatrices implementeren
 
-**Gebruikte Kaarten:** CONDITION_DOC_FIELD_AMOUNT, CONDITION_DOC_TYPE_IS_ISNOT, CONDITION_SUPPLIER_STATUS_IS_ISNOT, ACTION_ASSIGN_TO_USER
+* Documenten routeren op bedragdrempels
+* Pas verschillende regels toe voor verschillende documenttypen
+* Implementeer goedkeuringslogica op meerdere niveaus
+* Behandel complex bedrijfsbeleid
+* Creëer dynamische routing op basis van meerdere criteria
+* Implementeer goedkeuringsmatrixen
 
-**[Bekijk Volledig Patroon →](decision-logic-pattern.md)**
+**Gebruikte kaarten:** CONDITION\_DOC\_FIELD\_AMOUNT, CONDITION\_DOC\_TYPE\_IS\_ISNOT, CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT, ACTION\_ASSIGN\_TO\_USER
 
----
+[**Volledig patroon bekijken →**](decision-logic-pattern.md)
 
-### 5. [Gegevenstransformatie Patroon](data-transformation-pattern.md)
+***
 
-**Complexiteit:** Gemiddeld | **Insteltijd:** 30-45 minuten
+### 5. [Gegevenstransformatiepatroon](data-transformation-pattern.md)
 
-Transformeer, bereken, formatteer en verrijk documentgegevens om voor te bereiden op export, berekeningen uit te voeren en formaten te standaardiseren.
+**Complexiteit:** Gemiddeld | **Installatietijd:** 30-45 minuten
+
+Transformeer, bereken, formatteer en verrijk documentgegevens om de export voor te bereiden, voer berekeningen uit en standaardiseer formaten.
 
 **Gebruiksscenario's:**
-- Totalen, subtotalen, belastingen berekenen
-- Valuta's of eenheden converteren
-- Datums, getallen, tekst formatteren
-- Waarden afleiden uit bestaande velden
-- Gegevens verrijken uit externe bronnen
-- Gegevensformaten standaardiseren
-- Berekeningen valideren
 
-**Gebruikte Kaarten:** ACTION_CALCULATE_FIELD, ACTION_SET_FIELD_TO_TEXT, ACTION_COPY_FIELD_VALUE, CALL_API, CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+* Bereken totalen, subtotalen, belastingen
+* Converteer valuta's of eenheden
+* Datums, cijfers, tekst opmaken
+* Waarden afleiden uit bestaande velden
+* Verrijk gegevens uit externe bronnen
+* Standaardiseer gegevensformaten
+* Valideer berekeningen
 
-**[Bekijk Volledig Patroon →](data-transformation-pattern.md)**
+**Gebruikte kaarten:** ACTION\_CALCULATE\_FIELD, ACTION\_SET\_FIELD\_TO\_TEXT, ACTION\_COPY\_FIELD\_VALUE, CALL\_API, CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES
 
----
+[**Volledig patroon bekijken →**](data-transformation-pattern.md)
 
-## Gids voor Patroonselectie
+***
 
-### Op Complexiteit
+## Patroonkeuzegids
 
-| Complexiteit | Patronen | Beste Voor |
-|------------|----------|----------|
-| **Laag-Gemiddeld** | [Taakbeheer](task-management-pattern.md) | Beginners, eenvoudige workflows |
-| **Gemiddeld** | [API Integratie](api-integration-pattern.md)<br>[Beslissingslogica](decision-logic-pattern.md)<br>[Gegevenstransformatie](data-transformation-pattern.md) | Gemiddelde gebruikers, standaard workflows |
-| **Gemiddeld-Hoog** | [PO Matching](po-matching-pattern.md) | Geavanceerde gebruikers, complexe validatie |
+### Door complexiteit
 
----
+| Complexiteit      | Patronen                                                                                                                                                                                      | Beste voor                               |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| **Laag-gemiddeld**  | [Taakbeheer](task-management-pattern.md)                                                                                                                                                 | Beginners, eenvoudige workflows            |
+| **Gemiddeld**      | <p><a href="api-integration-pattern.md">API-integratie</a><br><a href="decision-logic-pattern.md">Besluitlogica</a><br><a href="data-transformation-pattern.md">Gegevenstransformatie</a></p> | Gemiddelde gebruikers, standaardworkflows |
+| **Middelhoog** | [PO-matching](po-matching-pattern.md)                                                                                                                                                         | Geavanceerde gebruikers, complexe validatie     |
 
-### Op Gebruiksscenario
+***
 
-| Ik Moet... | Gebruik Dit Patroon |
-|--------------|------------------|
-| Integreren met externe systemen | [API Integratie Patroon](api-integration-pattern.md) |
-| Goedkeuringsworkflows creëren | [Taakbeheer Patroon](task-management-pattern.md) |
-| Valideren tegen inkooporders | [PO Matching Patroon](po-matching-pattern.md) |
-| Routeren op basis van voorwaarden | [Beslissingslogica Patroon](decision-logic-pattern.md) |
-| Gegevens berekenen en transformeren | [Gegevenstransformatie Patroon](data-transformation-pattern.md) |
+### Per gebruikscasus
 
----
+| Ik moet...                     | Gebruik dit patroon                                              |
+| -------------------------------- | ------------------------------------------------------------- |
+| Integreer met externe systemen  | [API-integratiepatroon](api-integration-pattern.md)         |
+| Goedkeuringsworkflows maken        | [Taakbeheerpatroon](task-management-pattern.md)         |
+| Valideer tegen inkooporders | [PO-overeenkomend patroon](po-matching-pattern.md)                 |
+| Route op basis van omstandigheden        | [Beslissingslogicapatroon](decision-logic-pattern.md)           |
+| Bereken en transformeer gegevens     | [Gegevenstransformatiepatroon](data-transformation-pattern.md) |
 
-### Op Industrie/Afdeling
+***
 
-| Industrie/Afdeling | Aanbevolen Patronen |
-|---------------------|---------------------|
-| **Financiën/Boekhouding** | [PO Matching](po-matching-pattern.md), [Taakbeheer](task-management-pattern.md), [Gegevenstransformatie](data-transformation-pattern.md) |
-| **Inkoop** | [PO Matching](po-matching-pattern.md), [Beslissingslogica](decision-logic-pattern.md), [API Integratie](api-integration-pattern.md) |
-| **Operaties** | [Taakbeheer](task-management-pattern.md), [Beslissingslogica](decision-logic-pattern.md) |
-| **IT/Integratie** | [API Integratie](api-integration-pattern.md), [Gegevenstransformatie](data-transformation-pattern.md) |
-| **Alle Afdelingen** | [Beslissingslogica](decision-logic-pattern.md), [Taakbeheer](task-management-pattern.md) |
+### Per branche/afdeling
 
----
+| Industrie/Afdeling    | Aanbevolen patronen                                                                                                                        |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Financiën/boekhouding** | [PO Matching](po-matching-pattern.md), [Taakbeheer](task-management-pattern.md), [Gegevenstransformatie](data-transformation-pattern.md) |
+| **Inkoop**        | [PO Matching](po-matching-pattern.md), [Besluitlogica](decision-logic-pattern.md), [API-integratie](api-integration-pattern.md)           |
+| **Bewerkingen**         | [Taakbeheer](task-management-pattern.md), [Besluitlogica](decision-logic-pattern.md)                                                  |
+| **IT/Integratie**     | [API-integratie](api-integration-pattern.md), [Gegevenstransformatie](data-transformation-pattern.md)                                        |
+| **Alle afdelingen**    | [Besluitlogica](decision-logic-pattern.md), [Taakbeheer](task-management-pattern.md)                                                  |
 
-## Hoe Deze Patronen Te Gebruiken
+***
 
-### Stap 1: Kies een Patroon
+## Hoe u deze patronen kunt gebruiken
+
+### Stap 1: Kies een patroon
 
 1. Bekijk de patroonbeschrijvingen hierboven
 2. Identificeer welk patroon overeenkomt met uw gebruiksscenario
-3. Controleer de complexiteit en geschatte insteltijd
-4. Bekijk de sectie "Wanneer te Gebruiken" in de patroongids
+3. Controleer de complexiteit en de geschatte insteltijd
+4. Bekijk het gedeelte 'Wanneer gebruiken' in de patroongids
 
-### Stap 2: Bekijk Vereisten
+### Stap 2: Controleer de vereisten
 
 Elke patroongids vermeldt:
-- Vereiste kennis
-- Gerelateerde gidsen om eerst te lezen
-- Kaarten die zullen worden gebruikt
-- Configuratievereisten
 
-### Stap 3: Volg Stap-voor-Stap Instructies
+* Vereiste kennis
+* Gerelateerde handleidingen die u eerst moet lezen
+* Kaarten die gebruikt zullen worden
+* Configuratievereisten
+
+### Stap 3: Volg stapsgewijze instructies
 
 Elk patroon biedt:
-- Compleet workflowvoorbeeld
-- Stapsgewijze implementatiegids
-- Configuratiesjablonen
-- Praktijkvoorbeelden
-- Tips voor probleemoplossing
 
-### Stap 4: Pas Aan Naar Uw Behoeften
+* Compleet workflowvoorbeeld
+* Stapsgewijze implementatiehandleiding
+* Configuratiesjablonen
+* Voorbeelden uit de echte wereld
+* Tips voor het oplossen van problemen
 
-- Pas het voorbeeld aan uw bedrijfsregels aan
-- Pas drempels en toleranties aan
-- Wijzig routeringslogica
-- Voeg stappen toe/verwijder ze indien nodig
-- Test grondig vóór gebruik in productie
+### Stap 4: Aanpassen aan uw behoeften
 
-### Stap 5: Monitor en Optimaliseer
+* Pas het voorbeeld aan uw bedrijfsregels aan
+* Pas drempels en toleranties aan
+* Wijzig de routeringslogica
+* Voeg indien nodig stappen toe/verwijder deze
+* Grondig testen vóór gebruik in productie
 
-- Volg workflowprestaties
-- Monitor succespercentages
-- Verzamel gebruikersfeedback
-- Verfijn configuratie
-- Documenteer aanpassingen
+### Stap 5: Monitor en optimaliseer
 
----
+* Volg de workflowprestaties
+* Bewaak de succespercentages
+* Verzamel gebruikersfeedback
+* Verfijn de configuratie
+* Documentaanpassingen
+
+***
 
 ## Patrooncombinaties
 
-Veel praktijkscenario's vereisen het combineren van meerdere patronen:
+Veel scenario's in de echte wereld vereisen het combineren van meerdere patronen:
 
-### Voorbeeld 1: Volledige Factuurverwerking
-
-```
-1. API Integratie Patroon → Haal huidige prijzen op
-2. Gegevenstransformatie Patroon → Bereken totalen
-3. PO Matching Patroon → Valideer tegen PO
-4. Beslissingslogica Patroon → Routeer op basis van variantie
-5. Taakbeheer Patroon → Maak goedkeuringstaken
-```
-
-### Voorbeeld 2: Factuurgoedkeuring Hoge Waarde
+### Voorbeeld 1: Volledige factuurverwerking
 
 ```
-1. Gegevenstransformatie Patroon → Bereken bedragen
-2. Beslissingslogica Patroon → Controleer drempels
-3. Taakbeheer Patroon → Goedkeuring op meerdere niveaus
-4. API Integratie Patroon → Meld externe systemen
+1. API Integration Pattern → Fetch current pricing
+2. Data Transformation Pattern → Calculate totals
+3. PO Matching Pattern → Validate against PO
+4. Decision Logic Pattern → Route based on variance
+5. Task Management Pattern → Create approval tasks
 ```
 
-### Voorbeeld 3: Afhandeling van Uitzonderingen
+### Voorbeeld 2: Goedkeuring van hoge facturen
 
 ```
-1. PO Matching Patroon → Detecteer varianties
-2. Beslissingslogica Patroon → Classificeer ernst van uitzondering
-3. Taakbeheer Patroon → Maak beoordelingstaken
-4. Gegevenstransformatie Patroon → Bereken impact
+1. Data Transformation Pattern → Calculate amounts
+2. Decision Logic Pattern → Check thresholds
+3. Task Management Pattern → Multi-level approval
+4. API Integration Pattern → Notify external systems
 ```
 
----
+### Voorbeeld 3: Afhandeling van uitzonderingen
+
+```
+1. PO Matching Pattern → Detect variances
+2. Decision Logic Pattern → Classify exception severity
+3. Task Management Pattern → Create review tasks
+4. Data Transformation Pattern → Calculate impact
+```
+
+***
 
 ## Patroonsjablonen
 
 Elk patroon bevat deze gestandaardiseerde secties:
 
 1. **Overzicht** - Wat het patroon doet
-2. **Wanneer te Gebruiken** - Geschikte gebruiksscenario's
-3. **Compleet Voorbeeld** - Praktijkscenario
+2. **Wanneer gebruiken** - Geschikte gebruiksscenario's
+3. **Volledig voorbeeld** - Real-world scenario
 4. **Stap-voor-Stap** - Implementatie-instructies
-5. **Configuratie** - Kaartconfiguratiesjablonen
-6. **Workflow Diagram** - Visuele weergave
-7. **Geavanceerde Variaties** - Alternatieve implementaties
+5. **Configuratie** - Sjablonen voor kaartinstellingen
+6. **Werkstroomdiagram** - Visuele weergave
+7. **Geavanceerde variaties** - Alternatieve implementaties
 8. **Foutafhandeling** - Veelvoorkomende problemen en oplossingen
-9. **Testchecklist** - Validatiestappen
-10. **Gerelateerde Patronen** - Aanvullende patronen
-11. **Gerelateerde Gidsen** - Referentiedocumentatie
+9. **Checklist testen** - Validatiestappen
+10. **Verwante patronen** - Complementaire patronen
+11. **Gerelateerde handleidingen** - Referentiedocumentatie
 
----
+***
 
-## Hulp Krijgen
+## Hulp krijgen
 
-### Ondersteuningsbronnen voor Patronen
+### Patroonondersteuningsbronnen
 
 **Documentatie:**
-- [Complete Index Workflowgidsen](../README.md)
-- [Individuele Kaartgidsen](../then/action/)
-- [Referentie Conditiekaarten](../and/condition-cards-complete-guide.md)
-- [Workflow Koppelingskaart](../../../../WORKFLOW_LINKING_MAP.md)
 
-**Aanvullende Bronnen:**
-- [Snelle Referentiegids](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
-- [Release Notes Oktober 2025](../changelog/2025-10-october.md)
-- [Kaartversie Referentie](../../../docs/card_version.md)
+* [Volledige workflowgidsindex](..)
+* [Individuele kaartgidsen](../then/action)
+* [Conditiekaartenreferentie](../and/condition-cards-complete-guide.md)
+* [Werkstroomkoppelingskaart](https://github.com/Fellow-Consulting-AG/docbits/tree/main/WORKFLOW_LINKING_MAP.md)
 
-**Contact:**
-- Patroonfeedback: docs@docbits.com
-- Technische Ondersteuning: support@docbits.com
-- Implementatiehulp: consulting@docbits.com
+**Extra bronnen:**
 
----
+* [Snelle referentiehandleiding](https://github.com/Fellow-Consulting-AG/docbits/tree/main/WORKFLOW_LINKING_QUICK_REFERENCE.md)
+* [Releaseopmerkingen oktober 2025](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/workflow/changelog/2025-10-october.md)
+* [Kaartversiereferentie](../cards-overview/po-comparison-versions-guide.md)
+
+**Contactpersoon:**
+
+* Patroonfeedback: docs@docbits.com
+* Technische ondersteuning: support@docbits.com
+* Hulp bij implementatie: consulting@docbits.com
+
+***
 
 ## Patroonstatistieken
 
-| Metriek | Waarde |
-|--------|-------|
-| **Totaal Aantal Patronen** | 5 |
-| **Totaal Aantal Gedekte Kaarten** | 30+ |
-| **Gecombineerde Documentatie** | ~1.200 regels |
-| **Voorbeeldscenario's** | 25+ |
-| **Configuratiesjablonen** | 15+ |
-| **Workflow Diagrammen** | 5 complete diagrammen |
-| **Kruisverwijzingen** | 87+ interne links |
+| Metrisch                      | Waarde               |
+| --------------------------- | ------------------- |
+| **Totaal aantal patronen**          | 5                   |
+| **Totaal gedekte kaarten**     | 30+                 |
+| **Gecombineerde documentatie**  | \~1.200 regels       |
+| **Voorbeeldscenario's**       | 25+                 |
+| **Configuratiesjablonen** | 15+                 |
+| **Werkstroomdiagrammen**       | 5 volledige diagrammen |
+| **Kruisverwijzingen**        | 87+ interne links  |
 
----
+***
 
-## Bijdragen aan Patronen
+## Bijdragen aan patronen
 
-Hebt u een workflowpatroon waar anderen baat bij zouden hebben?
+Heeft u een workflowpatroon waar anderen voordeel uit kunnen halen?
 
-**Richtlijnen voor Bijdragen aan Patronen:**
+**Richtlijnen voor patroonbijdragen:**
 
-1. **Documenteer Uw Workflow**
-   - Duidelijk bedrijfsscenario
-   - Stapsgewijze implementatie
-   - Werkende configuratievoorbeelden
-   - Praktijktestresultaten
-
-2. **Volg Patroonsjabloon**
-   - Gebruik standaard sectiestructuur
-   - Voeg alle vereiste elementen toe
-   - Geef diagrammen/voorbeelden
-   - Voeg gids voor probleemoplossing toe
-
-3. **Indienen voor Beoordeling**
-   - E-mail naar: docs@docbits.com
-   - Inclusief: Patroonbeschrijving, gebruiksscenario's, implementatiegids
-   - We zullen het beoordelen en mogelijk toevoegen aan de officiële documentatie
+1. **Documenteer uw workflow**
+   * Duidelijk bedrijfsscenario
+   * Stapsgewijze implementatie
+   * Voorbeelden van werkende configuraties
+   * Testresultaten uit de echte wereld
+2. **Volg patroonsjabloon**
+   * Gebruik de standaard sectiestructuur
+   * Voeg alle vereiste elementen toe
+   * Geef diagrammen/voorbeelden
+   * Gids voor probleemoplossing toevoegen
+3. **Verzenden ter beoordeling**
+   * E-mail naar: docs@docbits.com
+   * Inclusief: patroonbeschrijving, gebruiksscenario's, implementatiegids
+   * We zullen de officiële documentatie beoordelen en mogelijk aanvullen
 
 **Voordelen:**
-- Help andere DocBits-gebruikers
-- Krijg erkenning in documentatie
-- Verbeter algemene productkennisbank
-- Ontvang feedback op uw implementatie
 
----
+* Help andere DocBits-gebruikers
+* Zorg dat u wordt herkend in documentatie
+* Verbeter de algemene productkennisbasis
+* Ontvang feedback over uw implementatie
 
-## Changelog
+***
+
+## Wijzigingslog
 
 ### Versie 1.0 (23 oktober 2025)
-- Initiële release van 5 uitgebreide workflowpatronen
-- API Integratie Patroon toegevoegd
-- Taakbeheer Patroon toegevoegd
-- PO Matching Patroon toegevoegd
-- Beslissingslogica Patroon toegevoegd
-- Gegevenstransformatie Patroon toegevoegd
-- Kruisverwijzingskoppeling geïmplementeerd (87 links)
-- Gids voor patroonselectie gemaakt
 
----
+* Eerste release van 5 uitgebreide workflowpatronen
+* API-integratiepatroon toegevoegd
+* Taakbeheerpatroon toegevoegd
+* PO-overeenkomend patroon toegevoegd
+* Beslissingslogicapatroon toegevoegd
+* Gegevenstransformatiepatroon toegevoegd
+* Kruisverwijzingen geïmplementeerd (87 links)
+* Patroonkeuzegids gemaakt
 
-## Volgende Stappen
+***
 
-**Nieuw met Workflowpatronen?**
-1. Begin met [Taakbeheer Patroon](task-management-pattern.md) - het makkelijkst te begrijpen
-2. Bekijk [Beslissingslogica Patroon](decision-logic-pattern.md) - fundamenteel voor alle workflows
-3. Verken [API Integratie Patroon](api-integration-pattern.md) - veelvoorkomende integratiebehoefte
+## Volgende stappen
 
-**Klaar om te Implementeren?**
+**Nieuw bij workflowpatronen?**
+
+1. Begin met [Taakbeheerpatroon](task-management-pattern.md) - het gemakkelijkst te begrijpen
+2. Bekijk [Besluitlogicapatroon](decision-logic-pattern.md) - fundamenteel voor alle workflows
+3. Ontdek [API-integratiepatroon](api-integration-pattern.md) - gemeenschappelijke integratiebehoefte
+
+**Klaar voor implementatie?**
+
 1. Kies uw patroon uit de bovenstaande lijst
 2. Lees de volledige patroongids
-3. Bekijk vereisten en gerelateerde gidsen
-4. Volg stap-voor-stap instructies
+3. Bekijk de vereisten en gerelateerde handleidingen
+4. Volg stapsgewijze instructies
 5. Test met voorbeelddocumenten
-6. Implementeer in productie
-7. Monitor en optimaliseer
+6. Implementeren naar productie
+7. Monitoren en optimaliseren
 
-**Meer Hulp Nodig?**
-- Bekijk [Overzicht Workflowdocumentatie](../README.md)
-- Bekijk [Snelle Referentiegids](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
-- Neem contact op met ondersteuningsteam
+**Meer hulp nodig?**
 
----
+* Bekijk [Overzicht workflowdocumentatie](..)
+* Controleer [Beknopte referentiehandleiding](https://github.com/Fellow-Consulting-AG/docbits/tree/main/WORKFLOW_LINKING_QUICK_REFERENCE.md)
+* Neem contact op met het ondersteuningsteam
 
-**Laatst Bijgewerkt:** 23 oktober 2025
-**Onderhouden Door:** Documentatieteam
-**Versie:** 1.0
+***
+
+**Laatst bijgewerkt:** 23 oktober 2025 **Onderhoud door:** Documentatieteam **Versie:** 1.0

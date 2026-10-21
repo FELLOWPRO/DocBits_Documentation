@@ -1,6 +1,6 @@
-# Document Status Condition List
+# Documentstatus Conditielijst
 
-<figure><img src="../../../../.gitbook/assets/userlmn_e9d6da331deceed4f330358635d6b605.png" alt="" width="521"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8dc08a110089-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 **Doel**
 
@@ -8,12 +8,12 @@ Deze kaart is ontworpen om workflow-acties te controleren op basis van de huidig
 
 **Onderdelen van de kaart**
 
-1. **Operator**
+1. **Exploitant**
    * **Beschrijving**: Bepaalt hoe de documentstatus ten opzichte van een opgegeven voorwaarde wordt geëvalueerd.
    * **Opties**:
      * **is**: Triggert de bijbehorende acties als de huidige status van het document overeenkomt met een van de opgegeven statussen.
-     * **is not**: Triggert de acties als de status van het document met geen van de opgegeven statussen overeenkomt.
-2. **Status ( List )**
+     * **niet**: Triggert de acties als de status van het document met geen van de opgegeven statussen overeenkomt.
+2. **Status ( Lijst )**
    * **Beschrijving**: Somt de specifieke statussen op waarmee de huidige status van het document wordt vergeleken.
    * **Voorbeelden**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval". Deze vertegenwoordigen verschillende fasen of toestanden waarin een document zich binnen een workflowproces kan bevinden.
 
@@ -22,7 +22,7 @@ Deze kaart is ontworpen om workflow-acties te controleren op basis van de huidig
 * **Statusidentificatie**: Identificeert automatisch de huidige status van een document terwijl het door de workflow van het ERP-systeem beweegt.
 * **Voorwaarde-evaluatie**: Past de gekozen operator (is of is not) toe op de status van het document in vergelijking met de vermelde statussen:
   * Bij **is** controleert hij of de status van het document overeenkomt met een status in de lijst.
-  * Bij **is not** controleert hij of de status van het document niet in de lijst voorkomt.
+  * Bij **niet** controleert hij of de status van het document niet in de lijst voorkomt.
 * **Actie-uitvoering**: Afhankelijk van de uitkomst van de voorwaarde-evaluatie:
   * **True**: Voert vooraf gedefinieerde acties of workflows uit als aan de voorwaarde wordt voldaan.
   * **False**: Slaat alternatieve workflows over of triggert ze als niet aan de voorwaarde wordt voldaan.
@@ -37,3 +37,13 @@ Deze kaart is ontworpen om workflow-acties te controleren op basis van de huidig
 #### Conclusie
 
 De workflow-kaart "Document Status Condition" is essentieel om ervoor te zorgen dat documenten correct worden verwerkt volgens hun huidige status, wat de controle en efficiëntie binnen het ERP-systeem verbetert. Het duidelijk documenteren van deze kaart in de handleiding van het systeem helpt gebruikers hem effectief te implementeren en beheren, en de functionaliteit ervan te benutten om soepele en conforme documentworkflows te behouden. Deze kaart is met name nuttig bij het beheren van documentlevenscycli en om ervoor te zorgen dat alleen documenten die aan specifieke criteria voldoen, doorstromen naar volgende fasen van bedrijfsprocessen.
+
+<!-- workflow-card-complete-example-20261021 condition_doc_status_is_isnot_in_list -->
+
+### Voorbeeld van een statuslijst
+
+**Configuratie:** Kies de operator die vereist dat de huidige status in de lijst staat. Selecteer `Pending Approval` en `Pending Second Approval` in de statuslijst.
+
+**Verwacht resultaat en tegenvoorbeeld:** De voorwaarde is waar voor een document met een van beide geselecteerde statussen. Dit is false voor een document met de status `Ready in Validation`. Als de operator vereist dat de status buiten de lijst valt, zijn de resultaten van deze voorwaarde omgekeerd. Inspecteer de daadwerkelijke lijst in plaats van een door komma's gescheiden vrije tekstwaarde te vergelijken.
+
+Dit is een illustratieve testconfiguratie en verwachte uitkomst; het werd niet uitgevoerd. Gebruik gegevens en ontvangers die in uw testorganisatie zijn geconfigureerd.

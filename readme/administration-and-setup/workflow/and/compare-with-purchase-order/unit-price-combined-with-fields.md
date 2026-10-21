@@ -1,6 +1,6 @@
-# Unit Price Combined with Fields
+# Eenheidsprijs gecombineerd met velden
 
-<figure><img src="../../../../.gitbook/assets/docbits_workflow_change_status_pending.png" alt="Docbits Workflow Change Status Pending" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-34234b404af7-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel:**
 
@@ -8,21 +8,21 @@ Deze workflow-kaart is ontworpen om te evalueren of de eenheidsprijs, gecombinee
 
 ## **Onderdelen van de kaart:**
 
-1. **Field Name**
+1. **Veldnaam**
    * **Beschrijving:** Geeft het documentveld op dat de waarde bevat die met de eenheidsprijs wordt gecombineerd.
-   * **Detail:** Dit moet exact overeenkomen met de identifier van het eerste veld binnen het document.
-2. **Operator**
+   * **Details:** Dit moet exact overeenkomen met de identifier van het eerste veld binnen het document.
+2. **Exploitant**
    * **Beschrijving:** Definieert de voorwaarde die wordt toegepast op de vergelijking tussen de gecombineerde waarde en de opgegeven waarde.
    * **Opties:**
-     * **Equals (=):** Controleert of de gecombineerde waarde van de eenheidsprijs en het veld overeenkomt met de opgegeven waarde.
-     * **Not Equals (≠):** Zorgt ervoor dat de gecombineerde waarde van de eenheidsprijs en het veld verschilt van de opgegeven waarde.
-     * **Greater Than (>):** Verifieert of de gecombineerde waarde groter is dan de opgegeven waarde.
-     * **Greater or Equals (≥):** Controleert of de gecombineerde waarde groter dan of gelijk is aan de opgegeven waarde.
-     * **Lesser Than (<):** Verifieert of de gecombineerde waarde kleiner is dan de opgegeven waarde.
-     * **Lesser or Equals (≤):** Controleert of de gecombineerde waarde kleiner dan of gelijk is aan de opgegeven waarde.
-3. **Value**
+     * **Is gelijk aan (=):** Controleert of de gecombineerde waarde van de eenheidsprijs en het veld overeenkomt met de opgegeven waarde.
+     * **Niet gelijk aan (≠):** Zorgt ervoor dat de gecombineerde waarde van de eenheidsprijs en het veld verschilt van de opgegeven waarde.
+     * **Groter dan (>):** Verifieert of de gecombineerde waarde groter is dan de opgegeven waarde.
+     * **Groter of gelijk aan (≥):** Controleert of de gecombineerde waarde groter dan of gelijk is aan de opgegeven waarde.
+     * **Kleiner dan (<):** Verifieert of de gecombineerde waarde kleiner is dan de opgegeven waarde.
+     * **Kleiner of gelijk aan (≤):** Controleert of de gecombineerde waarde kleiner dan of gelijk is aan de opgegeven waarde.
+3. **Waarde**
    * **Beschrijving:** Geeft de waarde op waarmee de gecombineerde eenheidsprijs en veldwaarde worden vergeleken.
-   * **Detail:** De waarde moet een numerieke waarde zijn.
+   * **Details:** De waarde moet een numerieke waarde zijn.
 
 ## **Functionaliteit:**
 

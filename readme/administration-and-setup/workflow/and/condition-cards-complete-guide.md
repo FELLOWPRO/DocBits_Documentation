@@ -1,38 +1,41 @@
-# Condition Cards - Complete Guide
+# Conditiekaarten - Volledige gids
 
-De voorwaardekaarten op deze pagina horen in de **When**- en **And**-groep van de Workflow Builder — ze bepalen of de Then-acties worden uitgevoerd. Voor het gebruik van het canvas — **Kaart toevoegen**, **Workflow opslaan**, **Sjabloon opslaan** — zie de [gids Standaard workflow](../standard-workflow-builder.md):
+## Conditiekaarten - Volledige gids
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder-canvas met de kaartgroepen When, And en Then"><figcaption><p>Voorwaardekaarten worden via <strong>Add Card</strong> aan de <strong>When</strong>- en <strong>And</strong>-groep toegevoegd.</p></figcaption></figure>
+De voorwaardekaarten op deze pagina horen in de **Wanneer**- en **En**-groep van de Workflow Builder — ze bepalen of de Then-acties worden uitgevoerd. Voor het gebruik van het canvas — **Kaart toevoegen**, **Workflow opslaan**, **Sjabloon opslaan** — zie de [gids Standaard workflow](../standard-workflow-builder):
 
-**Covers:** 31 remaining condition cards
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-nl.png" alt="Niet-opgeslagen voorbeeld met Wanneer-, En- en Dan-kaarten. Vul alle velden in vóór uitvoering. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Niet-opgeslagen voorbeeld met Wanneer-, En- en Dan-kaarten. Vul alle velden in vóór uitvoering. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
----
+**Omslagen:** 31 resterende conditiekaarten
 
-## 📌 Version Information
+***
 
-**Status:** Most condition cards are stable with single or dual-version structures
-**Version Pattern:** Most follow v1 → v2 pattern (adding i18n support)
-**Multi-Version Example:** CONDITION_DECISION_TREE_DATA (v2-v3)
+### 📌 Versie-informatie
+
+**Status:** De meeste voorwaardekaarten zijn stabiel met structuren in één of dubbele versie **Versiepatroon:** De meeste volgen v1 → v2-patroon (met toevoeging van i18n-ondersteuning) **Voorbeeld van meerdere versies:** CONDITION\_DECISION\_TREE\_DATA (v2-v3)
 
 **Opmerking:** Sommige voorwaardekaarten voor PO-vergelijking hebben meerdere versies. Gebruik deze gids voor het huidige gedrag en de release-opmerkingen hieronder voor gepubliceerde wijzigingen.
 
-📖 [Release-opmerkingen van het product](../../../overview-and-basics/release-notes/README.md) | [PO Matching Gids](compare-with-purchase-order/po-matching-complete-guide.md)
+📖 [Release-opmerkingen van het product](../../../overview-and-basics/release-notes) | [PO Matching Gids](compare-with-purchase-order/po-matching-complete-guide.md)
 
----
+***
 
-# Document State & Status Conditions
+## Documentstatus- en statusvoorwaarden
 
-## Card: CONDITION_DOC_STATUS_IS_ISNOT / Document Status Check
+### Kaart: CONDITION\_DOC\_STATUS\_IS\_ISNOT / Documentstatuscontrole
 
-### Purpose
-Checks if document has specific status
+#### Doel
 
-### When to Use
-- Before approving
-- At specific workflow stage
-- Status-based routing
+Controleert of het document een specifieke status heeft
 
-### Document Status Types
+#### Wanneer te gebruiken
+
+* Voordat u het goedkeurt
+* In een specifieke workflowfase
+* Statusgebaseerde routering
+
+#### Documentstatustypen
+
 ```
 - Upload: Being uploaded
 - OCR: Being scanned
@@ -46,7 +49,8 @@ Checks if document has specific status
 - Error: Problem occurred
 ```
 
-### How It Works
+#### Hoe het werkt
+
 ```
 Current Status: "Pending Approval"
     ↓
@@ -56,7 +60,8 @@ YES → Continue with action
 NO → Stop or do alternative action
 ```
 
-### Example
+#### Voorbeeld
+
 ```
 Condition: "Document status IS Pending Approval?"
     ↓
@@ -64,24 +69,28 @@ If YES: Create approval task
 If NO: Do something else
 ```
 
-### Parameters
+#### Parameters
+
 ```
 Operator: IS / IS NOT
 Status: [Select status]
 ```
 
----
+***
 
-## Card: CONDITION_DOC_STATUS_IS_ISNOT_IN_LIST
+### Kaart: CONDITION\_DOC\_STATUS\_IS\_ISNOT\_IN\_LIST
 
-### Purpose
-Checks if status matches any in a list
+#### Doel
 
-### When to Use
-- Multiple valid statuses
-- OR logic for status
+Controleert of de status overeenkomt met een status in een lijst
 
-### Example
+#### Wanneer te gebruiken
+
+* Meerdere geldige statussen
+* OF-logica voor status
+
+#### Voorbeeld
+
 ```
 Condition: "Status is one of: [Pending Approval, Pending Second Approval, Workflow]?"
     ↓
@@ -89,14 +98,16 @@ If status matches any: Continue
 If doesn't match: Stop
 ```
 
----
+***
 
-## Card: CONDITION_DOC_TYPE_IS_ISNOT / Document Type Check
+### Kaart: CONDITION\_DOC\_TYPE\_IS\_ISNOT / Documenttypecontrole
 
-### Purpose
-Checks if document is specific type
+#### Doel
 
-### Document Types
+Controleert of het document van een specifiek type is
+
+#### Documenttypen
+
 ```
 - Invoice
 - Credit Note
@@ -108,7 +119,8 @@ Checks if document is specific type
 - Custom Types
 ```
 
-### How It Works
+#### Hoe het werkt
+
 ```
 Document type: "Invoice"
     ↓
@@ -118,7 +130,8 @@ YES → Process as invoice
 NO → Process differently
 ```
 
-### Example
+#### Voorbeeld
+
 ```
 Condition: "Document type IS Invoice?"
     ↓
@@ -126,14 +139,16 @@ If YES: Check PO match
 If NO: Skip PO validation
 ```
 
----
+***
 
-## Card: CONDITION_DOC_TYPE_IS_ISNOT_LIST
+### Kaart: CONDITION\_DOC\_TYPE\_IS\_ISNOT\_LIST
 
-### Purpose
-Checks if type matches any in list
+#### Doel
 
-### Example
+Controleert of het type overeenkomt met een van de typen in de lijst
+
+#### Voorbeeld
+
 ```
 Condition: "Type is one of: [Invoice, Credit Note]?"
     ↓
@@ -141,14 +156,16 @@ YES: Process financial document
 NO: Skip financial checks
 ```
 
----
+***
 
-## Card: CONDITION_SUB_ORG_IS_ISNOT / Sub-Organization Check
+### Kaart: CONDITION\_SUB\_ORG\_IS\_ISNOT / Suborganisatiecontrole
 
-### Purpose
-Checks which organization/department owns document
+#### Doel
 
-### Organizations
+Controleert welke organisatie/afdeling eigenaar is van het document
+
+#### Organisaties
+
 ```
 - Finance Department
 - Procurement
@@ -159,7 +176,8 @@ Checks which organization/department owns document
 - Regional Offices
 ```
 
-### Example
+#### Voorbeeld
+
 ```
 Document belongs to: "Berlin Office"
     ↓
@@ -169,14 +187,16 @@ YES: Assign to Berlin team
 NO: Check other offices
 ```
 
----
+***
 
-## Card: CONDITION_PURCHASE_ORDER_IMPORT / PO Import Check
+### Kaart: CONDITION\_PURCHASE\_ORDER\_IMPORT / PO-importcontrole
 
-### Purpose
-Checks if PO is newly imported or existing
+#### Doel
 
-### How It Works
+Controleert of de inkooporder nieuw geïmporteerd of bestaand is
+
+#### Hoe het werkt
+
 ```
 PO Status: "Newly Imported" (First time seeing this PO)
     ↓
@@ -186,21 +206,24 @@ YES: Do initial validation
 NO: Use cached PO data
 ```
 
-### When to Use
-- Different handling for new POs
-- Skip validation for known POs
-- Track first time seeing supplier
+#### Wanneer te gebruiken
 
----
+* Verschillende afhandeling voor nieuwe inkooporders
+* Sla validatie voor bekende inkooporders over
+* Volg de eerste keer dat u de leverancier ziet
 
-# Assignee Conditions
+***
 
-## Card: CONDITION_USER_IS_ISNOT / User Check
+## Voorwaarden van de cessionaris
 
-### Purpose
-Checks if document assigned to specific user
+### Kaart: CONDITION\_USER\_IS\_ISNOT / Gebruikerscontrole
 
-### How It Works
+#### Doel
+
+Controleert of het document aan een specifieke gebruiker is toegewezen
+
+#### Hoe het werkt
+
 ```
 Assigned to: "John Smith"
     ↓
@@ -210,7 +233,8 @@ YES: Continue
 NO: Stop
 ```
 
-### Example
+#### Voorbeeld
+
 ```
 Condition: "Assigned to IS 'Finance Manager'"?
     ↓
@@ -218,14 +242,16 @@ If YES: Create approval task
 If NO: Skip approval
 ```
 
----
+***
 
-## Card: CONDITION_USER_IS_ISNOT_IN_LIST
+### Kaart: CONDITION\_USER\_IS\_ISNOT\_IN\_LIST
 
-### Purpose
-Checks if assigned to any user in list
+#### Doel
 
-### Example
+Controleert of deze is toegewezen aan een gebruiker in de lijst
+
+#### Voorbeeld
+
 ```
 Condition: "Assigned to one of: [John, Sarah, Mike]?"
     ↓
@@ -233,14 +259,16 @@ YES: Continue
 NO: Stop
 ```
 
----
+***
 
-## Card: CONDITION_GROUP_IS_ISNOT / Group Check
+### Kaart: CONDITION\_GROUP\_IS\_ISNOT / Groepscontrole
 
-### Purpose
-Checks if assigned to specific group
+#### Doel
 
-### Example
+Controleert of toegewezen is aan een specifieke groep
+
+#### Voorbeeld
+
 ```
 Assigned to: "Finance Team" (10 members)
     ↓
@@ -250,14 +278,16 @@ YES: Process for group
 NO: Check other groups
 ```
 
----
+***
 
-## Card: CONDITION_GROUP_IS_ISNOT_IN_LIST
+### Kaart: CONDITION\_GROUP\_IS\_ISNOT\_IN\_LIST
 
-### Purpose
-Checks if assigned to any group in list
+#### Doel
 
-### Example
+Controleert of toegewezen is aan een groep in de lijst
+
+#### Voorbeeld
+
 ```
 Condition: "Assigned to one of: [Finance, Procurement, Quality]?"
     ↓
@@ -265,16 +295,18 @@ YES: Continue
 NO: Stop
 ```
 
----
+***
 
-# Date & Time Conditions
+## Datum- en tijdvoorwaarden
 
-## Card: CONDITION_TIME_IS_ISNOT_BETWEEN / Date Range Check
+### Kaart: CONDITION\_TIME\_IS\_ISNOT\_BETWEEN / Datumbereikcontrole
 
-### Purpose
-Checks if date falls between two dates
+#### Doel
 
-### How It Works
+Controleert of de datum tussen twee datums valt
+
+#### Hoe het werkt
+
 ```
 Document Date: 2025-10-23
     ↓
@@ -284,7 +316,8 @@ YES (October) → Continue
 NO (Other month) → Stop
 ```
 
-### Calculation
+#### Berekening
+
 ```
 Formula:
   Start Date ≤ Document Date ≤ End Date?
@@ -294,12 +327,14 @@ Example:
   YES ✅ Within range
 ```
 
-### When to Use
-- Check if in fiscal period
-- Check if within deadline
-- Check if in promotional period
+#### Wanneer te gebruiken
 
-### Example
+* Controleer of het in de fiscale periode is
+* Controleer of het binnen de deadline is
+* Controleer of het in de promotieperiode is
+
+#### Voorbeeld
+
 ```
 Condition: "Document date between Oct 1 and Oct 31?"
     ↓
@@ -307,21 +342,24 @@ If YES: Oct invoices (monthly processing)
 If NO: Other month invoices
 ```
 
-### Parameters
+#### Parameters
+
 ```
 Start Date: [Select or enter]
 End Date: [Select or enter]
 Date Field: [Which field to check]
 ```
 
----
+***
 
-## Card: CONDITION_TODAY_IS_ISNOT / Today Check
+### Kaart: CONDITION\_TODAY\_IS\_ISNOT / Vandaagcontrole
 
-### Purpose
-Checks if today's date matches criteria
+#### Doel
 
-### How It Works
+Controleert of de datum van vandaag overeenkomt met de criteria
+
+#### Hoe het werkt
+
 ```
 Today: 2025-10-23
     ↓
@@ -331,14 +369,16 @@ NO → Deadline not passed
 YES → Deadline passed (overdue)
 ```
 
-### Use Cases
+#### Gebruiksscenario's
+
 ```
 Is today past deadline? → Invoice is overdue
 Is today past promotion date? → Promotion ended
 Is today in quarter? → For quarterly reporting
 ```
 
-### Example
+#### Voorbeeld
+
 ```
 Condition: "Is today AFTER invoice due date?"
     ↓
@@ -346,14 +386,16 @@ If YES: Invoice is overdue, escalate
 If NO: Invoice still within deadline
 ```
 
----
+***
 
-## Card: CONDITION_CONFIRMED_DELIVERY_ACCEPTED_DATE_IN_CALENDAR_MASTER_DATA
+### Kaart: CONDITION\_CONFIRMED\_DELIVERY\_ACCEPTED\_DATE\_IN\_CALENDAR\_MASTER\_DATA
 
-### Purpose
-Checks if delivery date matches approved delivery dates in calendar
+#### Doel
 
-### How It Works
+Controleert of de leverdatum overeenkomt met de goedgekeurde leverdata in de kalender
+
+#### Hoe het werkt
+
 ```
 Delivery Date from Invoice: 2025-10-25
     ↓
@@ -365,12 +407,14 @@ YES: Date is acceptable
 NO: Date not in approved list
 ```
 
-### When to Use
-- Verify delivery matches agreed dates
-- Check against holiday calendar
-- Validate against contracted dates
+#### Wanneer te gebruiken
 
-### Example
+* Controleer of de levering overeenkomt met de afgesproken data
+* Controleer met de vakantiekalender
+* Valideer op gecontracteerde datums
+
+#### Voorbeeld
+
 ```
 Supplier promised: 2025-10-25
 Invoice shows delivery: 2025-10-25
@@ -379,16 +423,18 @@ Check Master Calendar: Is 2025-10-25 valid delivery date?
 YES: Delivery date acceptable ✅
 ```
 
----
+***
 
-# Logic Conditions
+## Logische omstandigheden
 
-## Card: CONDITION_DECISION_TREE_DATA / Decision Table Returns
+### Kaart: CONDITION\_DECISION\_TREE\_DATA / Beslissingstabelresultaten
 
-### Purpose
-Checks if decision table has return values
+#### Doel
 
-### How It Works
+Controleert of de beslissingstabel retourwaarden bevat
+
+#### Hoe het werkt
+
 ```
 Run Decision Table
     ↓
@@ -398,12 +444,14 @@ YES: Data is available for next cards
 NO: No matching results
 ```
 
-### When to Use
-- Before using decision table results
-- As gate condition
-- To check if routing available
+#### Wanneer te gebruiken
 
-### Example
+* Voordat u de resultaten van de beslissingstabel gebruikt
+* Als poortvoorwaarde
+* Om te controleren of routing beschikbaar is
+
+#### Voorbeeld
+
 ```
 Decision Table: "Route by supplier"
     ↓
@@ -413,14 +461,16 @@ If YES: Use returned values for routing
 If NO: Use default routing
 ```
 
----
+***
 
-## Card: CONDITION_CONTINUE_CHANCE / Random Probability
+### Kaart: CONDITION\_CONTINUE\_CHANCE / Willekeurige waarschijnlijkheid
 
-### Purpose
-Continues with specified probability
+#### Doel
 
-### How It Works
+Gaat verder met gespecificeerde waarschijnlijkheid
+
+#### Hoe het werkt
+
 ```
 Probability: 50%
     ↓
@@ -429,12 +479,14 @@ Roll dice
 Random chance: 50% YES, 50% NO
 ```
 
-### When to Use
-- A/B testing workflows
-- Sampling documents
-- Random quality checks
+#### Wanneer te gebruiken
 
-### Example
+* A/B-testworkflows
+* Bemonsteringsdocumenten
+* Willekeurige kwaliteitscontroles
+
+#### Voorbeeld
+
 ```
 Condition: "Continue with 10% chance?"
     ↓
@@ -442,7 +494,8 @@ Condition: "Continue with 10% chance?"
 10% of documents: Continue for detailed review
 ```
 
-### Calculation
+#### Berekening
+
 ```
 If probability = 50%:
   - 50% of documents continue
@@ -453,14 +506,16 @@ If probability = 10%:
   - 90% stop
 ```
 
----
+***
 
-## Card: CONDITION_MODULE_IS_ISNOT_ACTIVE / Feature Check
+### Kaart: CONDITION\_MODULE\_IS\_ISNOT\_ACTIVE / Functiecontrole
 
-### Purpose
-Checks if specific module/feature is enabled
+#### Doel
 
-### Modules
+Controleert of een specifieke module/functie is ingeschakeld
+
+#### Modules
+
 ```
 - PO Matching
 - Auto Accounting
@@ -470,7 +525,8 @@ Checks if specific module/feature is enabled
 - Custom Modules
 ```
 
-### How It Works
+#### Hoe het werkt
+
 ```
 Module: "PO Matching"
     ↓
@@ -480,19 +536,22 @@ YES: Do PO match validation
 NO: Skip PO checks
 ```
 
-### When to Use
-- Feature-dependent workflows
-- Optional processing
-- Check if licensed feature active
+#### Wanneer te gebruiken
 
----
+* Functie-afhankelijke workflows
+* Optionele verwerking
+* Controleer of de gelicentieerde functie actief is
 
-## Card: CONDITION_HTTPS_REQUEST_STATUS / Request Result Check
+***
 
-### Purpose
-Checks if HTTPS request was successful
+### Kaart: CONDITION\_HTTPS\_REQUEST\_STATUS / Resultaatcontrole aanvragen
 
-### Status Codes
+#### Doel
+
+Controleert of het HTTPS-verzoek succesvol was
+
+#### Statuscodes
+
 ```
 200-299: ✅ Success
 300-399: ↪️ Redirect
@@ -500,7 +559,8 @@ Checks if HTTPS request was successful
 500-599: ❌ Server Error
 ```
 
-### How It Works
+#### Hoe het werkt
+
 ```
 Send HTTPS request
     ↓
@@ -512,7 +572,8 @@ YES: Continue with response data
 NO: Error handling
 ```
 
-### Example
+#### Voorbeeld
+
 ```
 Send pricing request to API
     ↓
@@ -522,14 +583,16 @@ If YES: Use returned price
 If NO: Use fallback price
 ```
 
----
+***
 
-## Card: CONDITION_SUPPLIER_STATUS_IS_ISNOT / Supplier Status Check
+### Kaart: CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT / Controle leveranciersstatus
 
-### Purpose
-Checks supplier's status in system
+#### Doel
 
-### Supplier Statuses
+Controleert de status van de leverancier in het systeem
+
+#### Leveranciersstatussen
+
 ```
 ✅ ACTIVE: Can do business
 ⚠️ ON HOLD: Temporarily blocked
@@ -537,7 +600,8 @@ Checks supplier's status in system
 ⚠️ CONDITIONAL: Only for specific items
 ```
 
-### How It Works
+#### Hoe het werkt
+
 ```
 Supplier: ABC Corp
 Status in Database: ACTIVE
@@ -548,7 +612,8 @@ YES: Process normally
 NO: Flag for review
 ```
 
-### Example
+#### Voorbeeld
+
 ```
 Invoice from ABC Corp
     ↓
@@ -558,14 +623,16 @@ If YES: Process normally
 If NO: Block or escalate
 ```
 
----
+***
 
-## Card: CONDITION_SPECIFY_SUPPLIER_TYPE
+### Kaart: CONDITION\_SPECIFY\_SUPPLIER\_TYPE
 
-### Purpose
-Specifies/checks supplier type
+#### Doel
 
-### Supplier Types
+Specificeert/controleert het leverancierstype
+
+#### Soorten leveranciers
+
 ```
 - Preferred Supplier
 - Standard Supplier
@@ -574,7 +641,8 @@ Specifies/checks supplier type
 - Strategic Partner
 ```
 
-### How It Works
+#### Hoe het werkt
+
 ```
 Supplier Type: "Preferred"
     ↓
@@ -584,11 +652,12 @@ YES: Apply preferred supplier discounts
 NO: Standard pricing
 ```
 
----
+***
 
-# Example Decision Flows
+## Voorbeeld van beslissingsstromen
 
-## Flow 1: Status-Based Processing
+### Stroom 1: Op status gebaseerde verwerking
+
 ```
 Document Arrives
     ↓
@@ -605,7 +674,8 @@ Check: Status = "Error"?
 YES: Escalate to manager
 ```
 
-## Flow 2: Supplier-Based Processing
+### Stroom 2: Op leveranciers gebaseerde verwerking
+
 ```
 Invoice Arrives
     ↓
@@ -619,7 +689,8 @@ YES: Fast track approval
 NO: Standard approval
 ```
 
-## Flow 3: Amount-Based with Date Check
+### Stroom 3: Op bedrag gebaseerd met datumcontrole
+
 ```
 Invoice Arrives
     ↓
@@ -631,50 +702,52 @@ YES: Assign to Finance Director
 NO: Assign to Finance Manager
 ```
 
----
+***
 
-# Condition Card Comparison
+## Conditiekaartvergelijking
 
-| Card | Checks | Operator | Use |
-|------|--------|----------|-----|
-| CONDITION_DOC_STATUS_IS_ISNOT | Document status | IS / IS NOT | Stage check |
-| CONDITION_DOC_STATUS_IS_ISNOT_IN_LIST | Status in list | IN / NOT IN | Multiple statuses |
-| CONDITION_DOC_TYPE_IS_ISNOT | Document type | IS / IS NOT | Type filtering |
-| CONDITION_DOC_TYPE_IS_ISNOT_LIST | Type in list | IN / NOT IN | Multiple types |
-| CONDITION_SUB_ORG_IS_ISNOT | Organization | IS / IS NOT | Department check |
-| CONDITION_USER_IS_ISNOT | Assigned user | IS / IS NOT | User check |
-| CONDITION_USER_IS_ISNOT_IN_LIST | User in list | IN / NOT IN | Multiple users |
-| CONDITION_GROUP_IS_ISNOT | Assigned group | IS / IS NOT | Group check |
-| CONDITION_GROUP_IS_ISNOT_IN_LIST | Group in list | IN / NOT IN | Multiple groups |
-| CONDITION_TIME_IS_ISNOT_BETWEEN | Date range | BETWEEN | Date window |
-| CONDITION_TODAY_IS_ISNOT | Today's date | IS / IS NOT | Today check |
-| CONDITION_DECISION_TREE_DATA | DT returns | HAS / HAS NOT | DT result check |
-| CONDITION_CONTINUE_CHANCE | Probability | CHANCE | Random gate |
-| CONDITION_MODULE_IS_ISNOT_ACTIVE | Feature enabled | IS / IS NOT | Feature check |
-| CONDITION_HTTPS_REQUEST_STATUS | Request result | STATUS | Response check |
-| CONDITION_SUPPLIER_STATUS_IS_ISNOT | Supplier status | IS / IS NOT | Supplier check |
+| Kaart                                        | Checks          | Exploitant      | Use               |
+| ------------------------------------------- | --------------- | ------------- | ----------------- |
+| CONDITION\_DOC\_STATUS\_IS\_ISNOT           | Document status | IS / IS NIET   | Stage check       |
+| CONDITION\_DOC\_STATUS\_IS\_ISNOT\_IN\_LIST | Status in list  | IN / NIET IN   | Meerdere statussen |
+| CONDITION\_DOC\_TYPE\_IS\_ISNOT             | Document type   | IS / IS NIET   | Type filtering    |
+| CONDITION\_DOC\_TYPE\_IS\_ISNOT\_LIST       | Type in list    | IN / NIET IN   | Multiple types    |
+| CONDITION\_SUB\_ORG\_IS\_ISNOT              | Organisatie    | IS / IS NIET   | Afdelingscontrole  |
+| CONDITION\_USER\_IS\_ISNOT                  | Toegewezen gebruiker   | IS / IS NIET   | User check        |
+| CONDITION\_USER\_IS\_ISNOT\_IN\_LIST        | User in list    | IN / NIET IN   | Meerdere gebruikers    |
+| CONDITION\_GROUP\_IS\_ISNOT                 | Toegewezen groep  | IS / IS NIET   | Group check       |
+| CONDITION\_GROUP\_IS\_ISNOT\_IN\_LIST       | Group in list   | IN / NIET IN   | Meerdere groepen   |
+| CONDITION\_TIME\_IS\_ISNOT\_BETWEEN         | Date range      | TUSSEN       | Datumvenster       |
+| CONDITION\_TODAY\_IS\_ISNOT                 | De datum van vandaag    | IS / IS NIET   | Vandaag controle       |
+| CONDITION\_DECISION\_TREE\_DATA             | DT keert terug      | HEEFT / HEEFT NIET | DT result check   |
+| CONDITION\_CONTINUE\_CHANCE                 | Waarschijnlijkheid     | CHANCE        | Random gate       |
+| CONDITION\_MODULE\_IS\_ISNOT\_ACTIVE        | Functie ingeschakeld | IS / IS NIET   | Functiecontrole     |
+| CONDITION\_HTTPS\_REQUEST\_STATUS           | Request result  | STATUS        | Response check    |
+| CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT      | Supplier status | IS / IS NIET   | Supplier check    |
 
----
+***
 
-# Best Practices for Conditions
+## Beste praktijken voor omstandigheden
 
-✅ **Do:**
-- Use specific conditions
-- Test logic with samples
-- Order conditions logically
-- Have fallback for all paths
-- Document complex logic
+✅ **Doe:**
 
-❌ **Don't:**
-- Create circular conditions (A if B, B if A)
-- Make conditions too complex
-- Forget about edge cases
-- Assume field always has value
-- Create impossible conditions
+* Gebruik specifieke voorwaarden
+* Testlogica met voorbeelden
+* Bestel voorwaarden logisch
+* Zorg voor terugval voor alle paden
+* Documenteer complexe logica
 
----
+❌ **Niet doen:**
 
-# Combining Multiple Conditions
+* Creëer circulaire voorwaarden (A als B, B als A)
+* Maak de omstandigheden te complex
+* Vergeet randgevallen
+* Stel dat veld altijd waarde heeft
+* Creëer onmogelijke omstandigheden
+
+***
+
+## Meerdere voorwaarden combineren
 
 ```
 Condition 1: Type = Invoice?
@@ -687,11 +760,30 @@ ALL TRUE → Process
 SOME FALSE → Stop
 ```
 
----
+***
 
-# Related Cards
+## Gerelateerde kaarten
 
-- **CONDITION_DOC_FIELD_CONTAINS** - Field content check
-- **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** - Field comparison
-- **CONDITION_CHECKBOX_IS** - Checkbox check
+* **CONDITION\_DOC\_FIELD\_CONTAINS** - Controle van veldinhoud
+* **CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES** - Veldvergelijking
+* **CONDITION\_CHECKBOX\_IS** - Selectievakje controleren
 
+<!-- workflow-card-complete-example-20261021 condition_purchase_order_import -->
+
+### Voorbeeld van importtrigger voor inkooporders
+
+**Configuratie:** Selecteer onder Wanneer de importgebeurtenis voor nieuwe inkooporders (`wf_new_purchase_order`) en laat de updategebeurtenis (`wf_updated_purchase_order`) ongeselecteerd. Configureer vervolgacties voor deze documentonafhankelijke workflowcontext.
+
+**Verwacht resultaat en tegenvoorbeeld:** Een run die wordt geactiveerd door een nieuw geïmporteerde inkooporder, voldoet aan deze voorwaarde. Een run die alleen door een update wordt geactiveerd, doet dat niet. Als u beide gebeurtenissen selecteert, zijn beide gebeurtenissen mogelijk. Hiermee wordt de triggerinformatie van de workflow gecontroleerd, niet of een factuur momenteel een inkoopordernummer bevat.
+
+Dit is een illustratieve testconfiguratie en verwachte uitkomst; het werd niet uitgevoerd. Gebruik gegevens en ontvangers die in uw testorganisatie zijn geconfigureerd.
+
+<!-- workflow-card-complete-example-20261021 condition_supplier_status_is_isnot -->
+
+### Voorbeeld van een trigger voor een statuswijziging van een leverancier
+
+**Configuratie:** Kies onder Wanneer operator `is` en één doelstatus die daadwerkelijk in uw organisatie wordt aangeboden. Noem die geselecteerde status in dit voorbeeld A. Laat een andere beschikbare status B ongeselecteerd.
+
+**Verwacht resultaat en tegenvoorbeeld:** De voorwaarde is waar voor een statusveranderingsgebeurtenis van een leverancier waarvan de nieuwe status A is; het is onwaar voor een gebeurtenis waarvan de nieuwe status B is. Met operator `is not` zijn deze resultaten omgekeerd. Dit is een gebeurtenistrigger op basis van informatie over de workflowrun, en niet een algemene controle van de leveranciersstatus op een factuur. Bevestig de feitelijke gebeurtenis en de geselecteerde status in het logboek.
+
+Dit is een illustratieve testconfiguratie en verwachte uitkomst; het werd niet uitgevoerd. Gebruik gegevens en ontvangers die in uw testorganisatie zijn geconfigureerd.

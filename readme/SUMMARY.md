@@ -40,16 +40,6 @@
     * [M3 API Export Diagnoseleitfaden](overview-and-basics/faq/infor-m3-m3-integration/m3-api-export-diagnostic-guide.md)
   * [Verpflichtende PDP-/PPF-Kanäle – PEPPOL nur als Transportweg bei Frankreichs E-Rechnung 2026](overview-and-basics/faq/mandatory-pdp-ppf-channels-peppol-as-transport-only-for-frances-2026-e-invoicing.md)
 
-## Sicherheit <a href="#security" id="security"></a>
-
-* [Sicherheit & Compliance FAQ](security/security-and-compliance-faq.md)
-* [Sichere Speicherung von Zugangsdaten](security/secure-storage-of-credentials.md)
-* [Verschlüsselung gespeicherter Daten](security/encryption-at-rest.md)
-* [Cookies und Browserspeicher](security/cookies-and-browser-storage.md)
-* [Schwachstellenmanagement](security/vulnerability-management.md)
-* [Weitere Sicherheitsmaßnahmen](security/other-security-controls.md)
-* [Zwei-Faktor-Authentifizierung (2FA)](security/two-factor-authentication.md)
-
 ## Endnutzer und Partner Bereich <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [End User Section](end-user-and-partner-section/end-user-section/README.md)
@@ -904,3 +894,13 @@
 * [DocBits mit Power BI verbinden](advanced-functions-and-tools/powerbi.md)
   * [Verbindung über ClickHouse](advanced-functions-and-tools/powerbi/powerbi.md)
   * [Verbindung über schreibgeschützte Datenbank](advanced-functions-and-tools/powerbi/connect-via-read-only-database.md)
+
+## Sicherheit <a href="#security" id="security"></a>
+
+* [Sicherheit & Compliance FAQ](security/security-and-compliance-faq.md)
+* [Sichere Speicherung von Zugangsdaten](security/secure-storage-of-credentials.md)
+* [Verschlüsselung gespeicherter Daten](security/encryption-at-rest.md)
+* [Cookies und Browserspeicher](security/cookies-and-browser-storage.md)
+* [Schwachstellenmanagement](security/vulnerability-management.md)
+* [Weitere Sicherheitsmaßnahmen](security/other-security-controls.md)
+* [Zwei-Faktor-Authentifizierung (2FA)](security/two-factor-authentication.md)

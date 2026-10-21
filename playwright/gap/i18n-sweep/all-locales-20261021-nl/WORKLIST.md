@@ -233,3 +233,5 @@ The manifest records source equivalents and retired alias references. Live deliv
 | I003 | [Bedrijfsvoorkeuren](https://github.com/FELLOWPRO/DocBits_Documentation/blob/nl/readme/administration-and-setup/settings/global-settings/company-information/company-preferences.md) | Native UI image |
 | I004 | [Bedrijfsvoorkeuren](https://github.com/FELLOWPRO/DocBits_Documentation/blob/nl/readme/administration-and-setup/settings/global-settings/company-information/company-preferences.md) | Native UI image |
 | I005 | [Documenten filteren](https://github.com/FELLOWPRO/DocBits_Documentation/blob/nl/readme/end-user-and-partner-section/end-user-section/dashboard/filtering-documents.md) | Native UI image |
+
+The PO unit-price instructions also reuse two reviewed native captures in place of three legacy image references, including one unavailable asset. Additional served-image verification is recorded separately.

@@ -4,15 +4,21 @@
 
 ***
 
-Este patrón se monta en el **Generador de flujo de trabajo** (Workflow Dashboard → Workflow List → Add Workflow). Haga clic en **Agregar tarjeta** para abrir la biblioteca de tarjetas y elija las tarjetas que usa este patrón: `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` y `CONDITION_TASK_STATUS` (la categoría **Responsable** contiene las tarjetas de tarea y asignación):
+<!-- workflow-card-task-pattern-scope-20261022 -->
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
+**Alcance verificado:** Este es un patrón conceptual de coordinación, no una configuración de flujo de trabajo importable. En la biblioteca verificada, `tasks_create` pertenece a **Tarea**, `doc_user_assign` a **Responsable** y `action_send_email_to_groups` a **Correo electrónico**.
+
+Los nombres anteriores `ACTION_ASSIGN_TO_USER` y `CONDITION_TASK_STATUS` son denominaciones ilustrativas, no tarjetas registradas que puedan seleccionarse en esta biblioteca. El JSON siguiente es esquemático. Crear una tarea por sí solo no pausa un flujo de trabajo ni configura su reanudación automática. El enrutamiento según la finalización de tareas, las esperas y el escalado requieren una configuración y una verificación independientes.
+
+[Tarjetas de tareas actuales](../then/task/README.md) · [Protecciones de exportación y tareas pendientes](../cards-overview/export-cards-guide.md).
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-es.png" alt="Ilustración de la biblioteca de tarjetas. La creación de tareas, la asignación de documentos y el correo a grupos utilizan categorías distintas; elija la versión disponible en su organización. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Ilustración de la biblioteca de tarjetas. La creación de tareas, la asignación de documentos y el correo a grupos utilizan categorías distintas; elija la versión disponible en su organización. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
 ***
 
 ## Resumen del patrón
 
-Este patrón muestra cómo crear, asignar, seguir y gestionar tareas dentro de los flujos de trabajo de DocBits. Las tareas son elementos de trabajo accionables asignados a usuarios o grupos que deben completarse antes de que el flujo de trabajo del documento pueda continuar.
+Este patrón ilustra la creación y asignación de tareas y las notificaciones a los destinatarios. Los pasos de enrutamiento tras completar tareas describen una arquitectura propuesta; crear la tarea no constituye una operación de espera.
 
 **Qué hace este patrón:**
 
@@ -127,6 +133,8 @@ Currency: EUR
 
 **Configuración:**
 
+**JSON esquemático:** Solo ilustra la estructura; no lo importe como un flujo de trabajo ejecutable.
+
 ```json
 {
   "task_type": "Approval",
@@ -159,6 +167,8 @@ Currency: EUR
 
 **Tarea 1: Aprobación del Manager**
 
+**JSON esquemático:** Solo ilustra la estructura; no lo importe como un flujo de trabajo ejecutable.
+
 ```json
 {
   "task_type": "First Approval",
@@ -173,6 +183,8 @@ Currency: EUR
 ```
 
 **Tarea 2: Aprobación del Director (creada tras finalizar la Tarea 1)**
+
+**JSON esquemático:** Solo ilustra la estructura; no lo importe como un flujo de trabajo ejecutable.
 
 ```json
 {
@@ -231,6 +243,8 @@ User 3: CFO (only if User 2 approves)
 **Tarjeta:** ACTION\_SEND\_EMAIL\_TO\_GROUPS
 
 **Configuración:**
+
+**JSON esquemático:** Solo ilustra la estructura; no lo importe como un flujo de trabajo ejecutable.
 
 ```json
 {
@@ -445,6 +459,8 @@ INVOICE ARRIVES
 
 ### Plantilla 1: Tarea de aprobación simple
 
+**JSON esquemático:** Solo ilustra la estructura; no lo importe como un flujo de trabajo ejecutable.
+
 ```json
 {
   "card": "tasks_create",
@@ -461,6 +477,8 @@ INVOICE ARRIVES
 
 ### Plantilla 2: Tarea de revisión con detalles
 
+**JSON esquemático:** Solo ilustra la estructura; no lo importe como un flujo de trabajo ejecutable.
+
 ```json
 {
   "card": "tasks_create",
@@ -476,6 +494,8 @@ INVOICE ARRIVES
 ***
 
 ### Plantilla 3: Tarea de escalado
+
+**JSON esquemático:** Solo ilustra la estructura; no lo importe como un flujo de trabajo ejecutable.
 
 ```json
 {

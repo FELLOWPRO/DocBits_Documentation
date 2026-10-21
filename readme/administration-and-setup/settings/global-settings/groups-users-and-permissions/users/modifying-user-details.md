@@ -1,6 +1,6 @@
 # Modification des détails de l'utilisateur
 
-<figure><img src="../../../../../.gitbook/assets/user_settings_menu_overview.png" alt="Vue d'ensemble du menu des paramètres utilisateur"><figcaption><p>Paramètres utilisateur</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u001-fr.png" alt="Administration des utilisateurs avec les données personnelles masquées."><figcaption><p>Administration des utilisateurs avec les données personnelles masquées.</p></figcaption></figure>
 
 * **Connexion en tant qu'administrateur :** Connectez-vous avec vos privilèges d'administrateur.
 * **Accès à la gestion des utilisateurs :** Accédez aux paramètres des utilisateurs, où vous pouvez modifier les utilisateurs existants.
@@ -14,9 +14,7 @@
     * Adresse e-mail
     * Rôle de l'utilisateur ou niveau d'autorisation
 
-
-
-    <figure><img src="../../../../../.gitbook/assets/user_edit_details_form.png" alt="Formulaire de modification des détails de l'utilisateur" width="300"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/prior-u002-fr.png" alt="Formulaire de modification d’un utilisateur ; les valeurs sont masquées."><figcaption><p>Formulaire de modification d’un utilisateur ; les valeurs sont masquées.</p></figcaption></figure>
 * **Enregistrement des modifications :** Vérifiez les modifications effectuées et cliquez sur Save pour enregistrer les nouveaux détails de l'utilisateur.
 
 <figure><img src="../../../../../.gitbook/assets/user_save_changes_button.png" alt="Bouton d'enregistrement des modifications de l'utilisateur"><figcaption></figcaption></figure>
@@ -25,8 +23,6 @@
 * **Envoi d'une notification (facultatif) :** Vous pouvez envoyer une notification à l'utilisateur pour l'informer des modifications effectuées.
 
 Une fois ces étapes terminées, les détails de l'utilisateur sont mis à jour avec succès et l'utilisateur dispose des nouvelles informations et autorisations correspondant aux modifications effectuées.
-
-
 
 ## Suppression d'utilisateurs :
 

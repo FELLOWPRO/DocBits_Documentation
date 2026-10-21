@@ -4,7 +4,7 @@ Les types de documents indiquent à DocBits les types de documents utilisés par
 
 La page affiche d'abord les **Types de documents par défaut**, fournis par DocBits et impossibles à supprimer, puis les **Types de documents personnalisés** créés pour votre organisation. Chaque type possède sa propre carte.
 
-<figure><img src="../../../.gitbook/assets/document-types-overview-fr-20261005.png" alt="Page Types de Documents avec les cartes des types par défaut comme Facture, les interrupteurs Activer et Extraction, la roue d'engrenage des paramètres et les liens de configuration"><figcaption><p>Choisissez la carte d'un type de document pour configurer ce type.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u025-fr.png" alt="Types de document prédéfinis et accès à leurs paramètres."><figcaption><p>Types de document prédéfinis et accès à leurs paramètres.</p></figcaption></figure>
 
 ## Ce que vous pouvez faire sur une carte
 
@@ -29,10 +29,10 @@ Cliquez sur **Champs** sur une carte pour afficher ses groupes de champs. En hau
 
 Chaque ligne de champ dispose de commandes telles que **Requis**, **Lecture seule**, **Masqué**, **Validation forcée**, **Utiliser l'IA**, OCR, Score du Match et Formule. Consultez le [guide des Champs](../../settings/global-settings/document-types/fields/README.md) avant de modifier des valeurs individuelles. Cliquez sur **Enregistrer les paramètres** sur la page Champs pour conserver vos modifications.
 
-<figure><img src="../../../.gitbook/assets/document-types-invoice-fields-fr-20261005.png" alt="Page Champs de la Facture avec les paramètres de reconnaissance, les groupes de champs, les commandes par champ et le bouton Enregistrer les paramètres"><figcaption><p>La page Champs possède son propre bouton Enregistrer les paramètres.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-document-types-invoice-fields-fr.png" alt="Configuration des champs du type de document Facture."><figcaption><p>Configuration des champs du type de document Facture.</p></figcaption></figure>
 
 ## Créer un type de document personnalisé
 
 Faites défiler jusqu'à **Types de documents personnalisés** et cliquez sur **+ Nouveau**. Suivez [Ajouter/Modifier des Types de Documents](../../settings/global-settings/document-types/adding-editing-document-types.md) pour configurer le nouveau type.
 
-<figure><img src="../../../.gitbook/assets/document-types-custom-new-fr-20261005.png" alt="Bas de la page Types de Documents montrant la section Types de documents personnalisés et le bouton Nouveau"><figcaption><p>Utilisez Nouveau sous Types de documents personnalisés pour commencer à créer un type.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u026-fr.png" alt="Formulaire de création d’un type de document non enregistré."><figcaption><p>Formulaire de création d’un type de document non enregistré.</p></figcaption></figure>

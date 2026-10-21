@@ -4,7 +4,7 @@ Les **Statistiques de connexion** offrent aux administrateurs une vue en lecture
 
 > **Accès :** ouvrez **Paramètres → Organisation et accès → Utilisateurs** et cliquez sur le bouton **Statistiques de connexion** dans le coin supérieur droit (`/settings/login-analytics`).
 
-<figure><img src="../../../../../.gitbook/assets/login_analytics_overview.png" alt="Login Analytics page with the activity chart and summary cards"><figcaption><p>Activité de connexion de l'organisation sur la période sélectionnée</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u003-fr.png" alt="Vue d’ensemble de l’analyse des connexions."><figcaption><p>Vue d’ensemble de l’analyse des connexions.</p></figcaption></figure>
 
 ## Plage de temps
 

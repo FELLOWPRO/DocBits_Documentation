@@ -1,6 +1,6 @@
 # Integration & SSO
 
-<figure><img src="../../../../.gitbook/assets/integration_sso.png" alt="Integration & SSO"><figcaption><p>Page Integration & SSO</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-t010-fr.png" alt="Configuration de l’intégration et des fournisseurs SSO."><figcaption><p>Configuration de l’intégration et des fournisseurs SSO.</p></figcaption></figure>
 
 La page Integration & SSO permet de gérer les clés d'API pour l'accès programmatique, les identifiants d'organisation et la configuration de l'authentification unique (SSO).
 
@@ -10,12 +10,12 @@ Gérez les clés d'API utilisées pour l'accès programmatique à DocBits.
 
 | Colonne | Description |
 |--------|-------------|
-| **Key** | La valeur masquée de la clé d'API. Cliquez sur l'icône de copie pour copier la clé complète. |
-| **Name** | Un nom descriptif pour la clé. |
-| **Expires** | Date d'expiration (ou « Never »). |
-| **Last Used** | Date de dernière utilisation de la clé. |
-| **Status** | Active ou Inactive. |
-| **Actions** | Menu à trois points pour révoquer ou supprimer. |
+| **Clé** | La valeur masquée de la clé d'API. Cliquez sur l'icône de copie pour copier la clé complète. |
+| **Nom** | Un nom descriptif pour la clé. |
+| **Expire** | Date d'expiration (ou « Never »). |
+| **Dernière utilisation** | Date de dernière utilisation de la clé. |
+| **Statut** | Active ou Inactive. |
+| **Actes** | Menu à trois points pour révoquer ou supprimer. |
 
 Cliquez sur **+ Create API Key** pour générer une nouvelle clé.
 
@@ -25,8 +25,8 @@ Affiche les identifiants de votre organisation :
 
 | Champ | Description |
 |-------|-------------|
-| **Org ID** | L'identifiant unique de votre organisation. |
-| **Sub Org ID** | L'identifiant de la sous-organisation actuellement sélectionnée. |
+| **ID de l'organe** | L'identifiant unique de votre organisation. |
+| **ID de l'organe secondaire** | L'identifiant de la sous-organisation actuellement sélectionnée. |
 
 ## SSO Service Provider Settings
 
@@ -34,11 +34,11 @@ Valeurs de configuration SSO de DocBits nécessaires pour configurer votre fourn
 
 | Champ | Description |
 |-------|-------------|
-| **Entity ID** | L'URL des métadonnées SAML de DocBits. |
+| **ID d'entité** | L'URL des métadonnées SAML de DocBits. |
 | **SLO URL** | URL de déconnexion unique (Single Logout). |
 | **SSO URL** | URL de l'Assertion Consumer Service. |
 
-Vous pouvez également utiliser **Download Certificate** et **Download Metadata** pour la configuration de votre IdP.
+Vous pouvez également utiliser **Télécharger le certificat** et **Télécharger les métadonnées** pour la configuration de votre IdP.
 
 ## Identity Service Provider Settings
 
@@ -46,8 +46,8 @@ Configurez votre fournisseur d'identité (IdP) externe :
 
 | Champ | Description |
 |-------|-------------|
-| **Tenant ID** | L'identifiant de tenant de votre IdP. |
-| **Upload file** | Téléversez le fichier XML de métadonnées de votre IdP. |
+| **Identifiant du locataire** | L'identifiant de tenant de votre IdP. |
+| **Téléverser un fichier** | Téléversez le fichier XML de métadonnées de votre IdP. |
 
 Cliquez sur **Configure** pour enregistrer vos paramètres IdP.
 

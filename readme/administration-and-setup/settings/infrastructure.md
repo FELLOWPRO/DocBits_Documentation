@@ -4,7 +4,7 @@ La page **Infrastructure** offre aux administrateurs une vue en temps réel de l
 
 > **Accès :** Infrastructure est une page réservée aux administrateurs. Ouvrez **Paramètres → Organisation et Accès → Infrastructure**.
 
-<figure><img src="../../.gitbook/assets/infrastructure_overview.png" alt="Page Infrastructure avec l'onglet Topologie ouvert"><figcaption><p>La page Infrastructure, onglet Topologie</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-infrastructure_overview-fr.png" alt="Vue d’ensemble de l’infrastructure."><figcaption><p>Vue d’ensemble de l’infrastructure.</p></figcaption></figure>
 
 La page est divisée en trois onglets :
 
@@ -16,7 +16,7 @@ La page est divisée en trois onglets :
 
 ## Topologie
 
-L'onglet Topologie représente l'ensemble de la plateforme DocBits sous forme de diagramme, organisé en couches — **Edge / Web**, **Core API**, **Import**, **Services en arrière-plan**, **Magasins de données** et **Authentification**. Chaque case est un composant (l'application Web/CDN, la passerelle d'API, le worker OCR, la base de données, etc.).
+L'onglet Topologie représente l'ensemble de la plateforme DocBits sous forme de diagramme, organisé en couches — **Edge / Web**, **Core API**, **Importer**, **Services en arrière-plan**, **Magasins de données** et **Authentification**. Chaque case est un composant (l'application Web/CDN, la passerelle d'API, le worker OCR, la base de données, etc.).
 
 <figure><img src="../../.gitbook/assets/infrastructure_topology.png" alt="Diagramme de topologie avec badges de région"><figcaption><p>Chaque composant est étiqueté avec la région dans laquelle il s'exécute</p></figcaption></figure>
 
@@ -49,7 +49,7 @@ Les composants appartenant à un module optionnel (Recherche plein texte, DocFlo
 
 L'onglet Traitement affiche le pipeline de traitement des documents de **votre organisation** — quand chaque étape s'est exécutée pour la dernière fois et si le travail circule ou s'accumule.
 
-<figure><img src="../../.gitbook/assets/infrastructure_processing.png" alt="Tableau de traitement avec badges d'état"><figcaption><p>État de traitement par étape pour votre organisation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-t004-fr.png" alt="Processus d’infrastructure et dernière exécution."><figcaption><p>Processus d’infrastructure et dernière exécution.</p></figcaption></figure>
 
 | Colonne | Description |
 |---------|-------------|
@@ -61,7 +61,7 @@ Badges d'état :
 
 | Badge | Signification |
 |-------|---------------|
-| **OK** (vert) | Aucune erreur récente et rien en attente — l'étape est saine. |
+| **D'ACCORD** (vert) | Aucune erreur récente et rien en attente — l'étape est saine. |
 | **En cours (N)** (orange) | `N` documents sont actuellement traités par cette étape. |
 | **Erreur (N)** (rouge) | `N` documents ont récemment échoué à cette étape. |
 
@@ -71,7 +71,7 @@ Les erreurs et *en cours* sont des signaux indépendants ; une étape peut donc 
 
 L'onglet Tâches planifiées répertorie les tâches récurrentes en arrière-plan qui font tourner DocBits (rafraîchissements de cache, alertes d'état, expirations de documents, synchronisations sortantes, etc.) et confirme que chacune se déclenche à l'heure.
 
-<figure><img src="../../.gitbook/assets/infrastructure_scheduled.png" alt="Tableau des tâches planifiées"><figcaption><p>Tâches récurrentes en arrière-plan et leur état de planification</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-t005-fr.png" alt="Tâches planifiées de l’infrastructure."><figcaption><p>Tâches planifiées de l’infrastructure.</p></figcaption></figure>
 
 | Colonne | Description |
 |---------|-------------|

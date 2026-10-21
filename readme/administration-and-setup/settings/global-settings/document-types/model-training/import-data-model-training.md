@@ -1,5 +1,7 @@
 # Importer des données : entraînement du modèle
 
+<figure><img src="../../../../../.gitbook/assets/s150-image-85-1-fr.png" alt="Import de données d’entraînement avec le format des montants et dates."><figcaption><p>Import de données d’entraînement avec le format des montants et dates.</p></figcaption></figure>
+
 Fournit des instructions détaillées sur la manière d'importer des documents d'exemple pour l'entraînement, y compris le format et les types de documents à utiliser.
 
 **Pour importer des documents d'exemple pour l'entraînement, suivez ces étapes :**

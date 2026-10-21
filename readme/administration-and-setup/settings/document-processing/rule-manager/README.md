@@ -1,6 +1,6 @@
 # Rule Management
 
-<figure><img src="../../../../.gitbook/assets/rule_management.png" alt="Rule Management"><figcaption><p>Page Rule Management</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_management-fr.png" alt="Gestion des règles avec les noms configurés masqués."><figcaption><p>Gestion des règles avec les noms configurés masqués.</p></figcaption></figure>
 
 Rule Management vous permet de créer et de gérer des règles de résolution de conflits basées sur TOML, utilisées lors du PO matching et de l'export des documents. Chaque jeu de règles définit la manière dont DocBits traite les écarts entre les données de la facture et celles du bon de commande.
 
@@ -10,11 +10,11 @@ Le tableau principal affiche toutes les configurations de règles :
 
 | Colonne | Description |
 |--------|-------------|
-| **Name** | Le nom du jeu de règles. Les éléments marqués **default** sont des modèles fournis par le système. |
+| **Nom** | Le nom du jeu de règles. Les éléments marqués **défaut** sont des modèles fournis par le système. |
 | **Description** | Un résumé de ce que couvre le jeu de règles. |
-| **Last Modified By** | L'utilisateur qui a modifié ce jeu de règles en dernier. |
-| **Last Modified At** | Horodatage de la dernière modification. |
-| **Actions** | Menu à trois points pour modifier, copier ou supprimer. |
+| **Dernière modification par** | L'utilisateur qui a modifié ce jeu de règles en dernier. |
+| **Dernière modification en date du** | Horodatage de la dernière modification. |
+| **Actes** | Menu à trois points pour modifier, copier ou supprimer. |
 
 Cliquez sur **+ New** pour créer un nouveau jeu de règles, ou cliquez sur un nom existant pour ouvrir l'éditeur de règles.
 
@@ -90,7 +90,6 @@ Ces opérateurs définissent la manière dont les valeurs réelles de la facture
 
 • outside tolerance
 
-
 ### Statut d'approbation
 
 Indique si un écart est approuvé ou non :
@@ -100,7 +99,6 @@ Indique si un écart est approuvé ou non :
 • rejected
 
 • any
-
 
 ### Types d'action
 
@@ -134,7 +132,6 @@ Définit les actions spécifiques à exécuter lorsqu'un écart est détecté :
 
 • credit note tax line
 
-
 ### Exemples de règles
 
 #### [Cas 1, 2, 3 : quantité et prix unitaire dans la tolérance](transactionconfig-pro-template/case-1-2-3-quantity-and-unit-price-within-tolerance.md)
@@ -143,22 +140,17 @@ Définit les actions spécifiques à exécuter lorsqu'un écart est détecté :
 
 • Action : le système accepte les valeurs de la facture et calcule le montant total.
 
-
-
 #### [Cas 4, 5 : quantité dans la tolérance, prix unitaire hors tolérance (approuvé)](./#case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved)
 
 • Objectif : s'applique lorsque la quantité est dans la tolérance mais que le prix unitaire est hors tolérance et a été approuvé.
 
 • Action : le système ajuste le prix unitaire pour qu'il corresponde au bon de commande et applique les frais de ligne nécessaires.
 
-
-
 #### [Cas 6 : quantité dans la tolérance, prix unitaire hors tolérance négative (rejeté)](transactionconfig-pro-template/case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
 
 • Objectif : traite les cas où le prix unitaire est inférieur à celui attendu et hors de la plage de tolérance, ce qui entraîne un rejet.
 
 • Action : le système ajuste le prix unitaire pour qu'il corresponde au bon de commande, génère un avoir pour la différence et applique des frais d'en-tête si nécessaire.
-
 
 ### Gestion des frais et des taxes
 
@@ -180,7 +172,7 @@ Définit les actions spécifiques à exécuter lorsqu'un écart est détecté :
 
 ### Capture d'écran 1 : interface Rule Management
 
-<figure><img src="../../../../.gitbook/assets/rule_management_interface.png" alt="Interface Rule Management"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_management_interface-fr.png" alt="Vue d’ensemble de la gestion des règles et de ses actions."><figcaption><p>Vue d’ensemble de la gestion des règles et de ses actions.</p></figcaption></figure>
 
 Cette capture d'écran montre l'interface Rule Management, où les administrateurs peuvent consulter et gérer toutes les règles de résolution de conflits. Les éléments clés sont les suivants :
 
@@ -192,7 +184,7 @@ Cette capture d'écran montre l'interface Rule Management, où les administrateu
 
 ### Capture d'écran 2 : modification détaillée d'une règle
 
-<figure><img src="../../../../.gitbook/assets/rule_detailed_editing.png" alt="Modification détaillée d'une règle"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_detailed_editing-fr.png" alt="Éditeur de règles TOML avec un exemple de configuration technique."><figcaption><p>Éditeur de règles TOML avec un exemple de configuration technique.</p></figcaption></figure>
 
 Cette capture d'écran illustre la vue détaillée d'une règle en cours de modification. Les éléments clés sont les suivants :
 

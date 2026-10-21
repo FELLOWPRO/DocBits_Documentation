@@ -40,11 +40,11 @@ Le prix calculé est écrit dans la capture d’écran du bon de commande stock�
 
 ## Exemple :
 
-<figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_4.png" alt="" width="563"><figcaption></figcaption></figure>
-
 Dans ce cas, le prix unitaire (sans la remise) est extrait du document, tandis que le bon de commande dans l’ERP stocke le prix unitaire avec la remise appliquée. Cela entraîne une discordance dans le prix unitaire. Avec le paramètre activé, le prix unitaire est pris à partir du montant de la ligne et de la quantité, de sorte que les deux parties concordent.
 
 ## Paramètres associés
 
 * [Règles d’appariement des bons de commande](purchase-order-matching-rules.md) — les règles comparent le prix unitaire **effectif**, qui est ce prix calculé lorsque le paramètre est activé.
 * [Paramètres de tolérance des bons de commande](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) — la marge de déviation possible entre le prix de la facture et le prix calculé.
+
+Exemple avec quantité 9 et base de prix 1 : 879,84 ÷ 9 × 1 = 97,76 de prix unitaire net. Le total 954,63 comprenant 8,5 % de taxe donne 106,07. Pour une facture à prix nets, comparez le prix unitaire net.

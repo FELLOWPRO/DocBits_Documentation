@@ -20,4 +20,4 @@ Dans l'écran de validation, vous pouvez directement créer des tickets pour le 
 
 <figure><img src="../../../.gitbook/assets/user-support3.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/user-support4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-user-support4-fr.png" alt="Formulaire d’assistance avant envoi."><figcaption><p>Formulaire d’assistance avant envoi.</p></figcaption></figure>

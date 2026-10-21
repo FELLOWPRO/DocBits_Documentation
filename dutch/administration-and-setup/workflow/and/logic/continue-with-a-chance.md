@@ -1,6 +1,6 @@
-# Continue with a chance
+# Ga verder met een kans
 
-<figure><img src="../../../../.gitbook/assets/docbits_fellowpro_contact.png" alt="Docbits Fellowpro Contact" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f04ace44135-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel:**
 

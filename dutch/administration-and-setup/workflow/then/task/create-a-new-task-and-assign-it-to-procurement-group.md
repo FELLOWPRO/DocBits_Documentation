@@ -1,29 +1,29 @@
-# Create a New Task and assign it to Procurement Group
+# Maak een nieuwe taak en wijs deze toe aan de inkoopgroep
 
-<figure><img src="../../../../.gitbook/assets/image (292).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-892212db33b0-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel:**
 
-De workflow-kaart **"Create Task for Procurement Group"** maakt een nieuwe taak aan die dynamisch wordt toegewezen aan de inkoopgroep die in de configuratie is opgegeven. Deze taak kan met verschillende prioriteitsniveaus worden toegewezen, en er kan een optionele e-mailmelding worden verzonden om de groep over de taak te informeren. Deze kaart zorgt ervoor dat het juiste team wordt gewaarschuwd op basis van workflow-voorwaarden.
+De workflow-kaart **"Taak voor inkoopgroep maken"** maakt een nieuwe taak aan die dynamisch wordt toegewezen aan de inkoopgroep die in de configuratie is opgegeven. Deze taak kan met verschillende prioriteitsniveaus worden toegewezen, en er kan een optionele e-mailmelding worden verzonden om de groep over de taak te informeren. Deze kaart zorgt ervoor dat het juiste team wordt gewaarschuwd op basis van workflow-voorwaarden.
 
 ## **Onderdelen van de kaart:**
 
-1. **Title**
+1. **Titel**
    * **Beschrijving:** Geeft de titel van de taak op.
-   * **Detail:** Dit veld identificeert de taak die wordt aangemaakt en biedt een beknopte titel voor eenvoudige identificatie.
-2. **Description**
+   * **Details:** Dit veld identificeert de taak die wordt aangemaakt en biedt een beknopte titel voor eenvoudige identificatie.
+2. **Beschrijving**
    * **Beschrijving:** Biedt verdere details over de taak.
-   * **Detail:** Dit veld wordt gebruikt om het doel van de taak en eventuele noodzakelijke context of instructies te beschrijven.
-3. **Priority**
+   * **Details:** Dit veld wordt gebruikt om het doel van de taak en eventuele noodzakelijke context of instructies te beschrijven.
+3. **Prioriteit**
    * **Beschrijving:** Definieert de urgentie van de taak.
    * **Opties:**
      * **High:** Taak vereist onmiddellijke aandacht.
-     * **Medium:** Taak is belangrijk maar niet urgent.
+     * **Middel:** Taak is belangrijk maar niet urgent.
      * **Low:** Taak kan op een later tijdstip worden afgehandeld.
-4. **Group Name**
+4. **Groepsnaam**
    * **Beschrijving:** Geeft de inkoopgroep op aan wie de taak wordt toegewezen.
-   * **Detail:** Dit veld wijst de inkoopgroep aan die verantwoordelijk is voor de taak. Het zorgt ervoor dat de taak naar het juiste team wordt geleid.
-5. **Email Notification**
+   * **Details:** Dit veld wijst de inkoopgroep aan die verantwoordelijk is voor de taak. Het zorgt ervoor dat de taak naar het juiste team wordt geleid.
+5. **E-mailmelding**
    * **Beschrijving:** Configureert of er een e-mailmelding naar de toegewezen inkoopgroep moet worden verzonden.
    * **Opties:**
      * **True:** Verzendt een e-mailmelding naar de inkoopgroep.
@@ -32,7 +32,7 @@ De workflow-kaart **"Create Task for Procurement Group"** maakt een nieuwe taak 
 ## **Functionaliteit:**
 
 * **Voorwaarde-evaluatie:**\
-  De kaart voert de actie alleen uit als zowel de **"Where"**- als de **"And"**-secties als true worden geëvalueerd.
+  De kaart voert de actie alleen uit als zowel de **"Wanneer"**- als de **"En"**-secties als true worden geëvalueerd.
 * **Taakaanmaak:**\
   De kaart maakt een nieuwe taak aan en wijst deze toe aan de inkoopgroep die in het veld "Group Name" is gedefinieerd. Deze taak bevat de opgegeven titel, beschrijving en prioriteitsniveau.
 * **E-mailmelding:**\
@@ -50,3 +50,15 @@ De workflow-kaart **"Create Task for Procurement Group"** maakt een nieuwe taak 
 ## **Conclusie:**
 
 De workflow-kaart "Create Task for Procurement Group" zorgt ervoor dat taken automatisch aan de juiste inkoopgroep worden toegewezen met gedefinieerde prioriteiten. Deze kaart kan de groep ook via e-mail op de hoogte stellen om ervoor te zorgen dat taken snel worden afgehandeld, wat de workflow-efficiëntie en het taakbeheer verbetert.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Vraag het inkoopteam om een factuuruitzondering te beoordelen.
+
+**Configuratie:** Selecteer `Demo Procurement`, titel `Review order variance`, beschrijving en prioriteit.
+
+**Verwacht resultaat en tegenvoorbeeld:** Er wordt een taak aangemaakt voor de geselecteerde inkoopgroep. Controleer de taakopdrachtgever en -beschrijving; creatie alleen bevestigt niet dat de variantie is opgelost.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

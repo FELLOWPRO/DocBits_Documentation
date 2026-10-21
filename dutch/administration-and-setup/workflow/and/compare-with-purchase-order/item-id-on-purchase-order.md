@@ -1,6 +1,6 @@
-# Item Id on Purchase Order
+# Artikel-ID op inkooporder
 
-<figure><img src="../../../../.gitbook/assets/image (275).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4a5b4a7c3888-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel:**
 
@@ -8,16 +8,16 @@ Deze workflow-kaart is ontworpen om item-ID's tussen een inkooporder en een gere
 
 ## **Onderdelen van de kaart:**
 
-1. **Any / All:**
+1. **Elk / Alles:**
    * **Beschrijving**: Definieert of de voorwaarde van toepassing is op elke of alle gevallen van item-ID-vergelijkingen.
    * **Opties**:
      * **Any**: Aan de voorwaarde is voldaan als een item-ID in de inkooporder overeenkomt met het item-ID in het document.
      * **All**: Aan de voorwaarde is alleen voldaan als alle item-ID's in de inkooporder overeenkomen met de item-ID's in het document.
-2. **Operator:**
+2. **Exploitant:**
    * **Beschrijving**: Definieert de voorwaarde voor het vergelijken van het item-ID op de inkooporder met het item-ID op het document.
    * **Opties**:
-     * **Equals (=)**: Verifieert of het item-ID in de inkooporder exact overeenkomt met het item-ID in het document.
-     * **Not Equals (≠)**: Zorgt ervoor dat het item-ID in de inkooporder niet overeenkomt met het item-ID in het document.
+     * **Is gelijk aan (=)**: Verifieert of het item-ID in de inkooporder exact overeenkomt met het item-ID in het document.
+     * **Niet gelijk aan (≠)**: Zorgt ervoor dat het item-ID in de inkooporder niet overeenkomt met het item-ID in het document.
 
 ## **Functionaliteit:**
 

@@ -1,6 +1,6 @@
-# Assign document to procurement group
+# Document toewijzen aan inkoopgroep
 
-<figure><img src="../../../../.gitbook/assets/image (305).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-9b2624ff9d34-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
 ## **Doel:**
 
@@ -8,14 +8,14 @@ De workflow-kaart **"Assign to Procurement Group"** wordt gebruikt om een docume
 
 ## **Onderdelen van de kaart:**
 
-1. **Procurement Group**
+1. **Inkoopgroep**
    * **Beschrijving:** Geeft de inkoopgroep op waaraan het document wordt toegewezen.
-   * **Detail:** De geselecteerde inkoopgroep is verantwoordelijk voor het verwerken en beheren van het document.
+   * **Details:** De geselecteerde inkoopgroep is verantwoordelijk voor het verwerken en beheren van het document.
 
 ## **Functionaliteit:**
 
 * **Voorwaarde-evaluatie:**\
-  De kaart voert de actie alleen uit als zowel de **"Where"**- als de **"And"**-secties als true worden geëvalueerd.
+  De kaart voert de actie alleen uit als zowel de **"Wanneer"**- als de **"En"**-secties als true worden geëvalueerd.
 * **Actie-uitvoering:**\
   Als beide voorwaarden true zijn, wordt het document toegewezen aan de opgegeven inkoopgroep. Als een van beide voorwaarden false is, worden er geen acties ondernomen en blijft het document niet-toegewezen.
 
@@ -26,3 +26,15 @@ De workflow-kaart **"Assign to Procurement Group"** wordt gebruikt om een docume
 ## **Conclusie:**
 
 De workflow-kaart **"Assign to Procurement Group"** biedt een eenvoudige maar effectieve manier om ervoor te zorgen dat documenten automatisch aan het juiste inkoopteam worden toegewezen voor verdere verwerking.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Stuur een inkoopuitzondering naar de inkoopgroep.
+
+**Configuratie:** Selecteer de geconfigureerde groep `Demo Procurement`.
+
+**Verwacht resultaat en tegenvoorbeeld:** Het document is toegewezen aan die inkoopgroep. Er mag niet worden aangenomen dat een gelijknamige gewone groep hetzelfde geconfigureerde doel is.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

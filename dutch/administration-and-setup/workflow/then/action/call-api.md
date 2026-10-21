@@ -1,6 +1,6 @@
-# Call Api
+# Bel Api
 
-<figure><img src="../../../../.gitbook/assets/image (310).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6a1c780ee588-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## Doel:
 
@@ -8,10 +8,10 @@ Met de workflow-kaart **"Call API"** kunnen gebruikers rechtstreeks vanuit de wo
 
 ## Onderdelen van de kaart:
 
-1. **API Endpoint**
+1. **API-eindpunt**
    * **Beschrijving:** De URL van de aan te roepen API.
-   * **Detail:** Een tekstveld waarin gebruikers het eindpunt voor het API-verzoek opgeven.
-2. **HTTP Method**
+   * **Details:** Een tekstveld waarin gebruikers het eindpunt voor het API-verzoek opgeven.
+2. **HTTP-methode**
    * **Beschrijving:** Het type HTTP-verzoek dat wordt gedaan.
    * **Opties:**
      1. **GET:** Haalt gegevens op van het opgegeven eindpunt.
@@ -20,10 +20,10 @@ Met de workflow-kaart **"Call API"** kunnen gebruikers rechtstreeks vanuit de wo
      4. **DELETE:** Verwijdert gegevens op het eindpunt.
 3. **Parameters**
    * **Beschrijving:** Queryparameters die in het API-verzoek worden opgenomen.
-   * **Detail:** Een tekstveld of lijst voor het invoeren van sleutel-waardeparen voor de verzoek-URL.
-4. **Data**
+   * **Details:** Een tekstveld of lijst voor het invoeren van sleutel-waardeparen voor de verzoek-URL.
+4. **Gegevens**
    1. **Beschrijving:** De payload die in de body van het API-verzoek wordt verzonden (van toepassing voor POST- en PUT-methoden).
-   2. **Detail:** Een veld voor het invoeren van de gegevens in JSON of andere gestructureerde formaten.
+   2. **Details:** Een veld voor het invoeren van de gegevens in JSON of andere gestructureerde formaten.
 
 ## Functionaliteit:
 
@@ -55,3 +55,15 @@ Met de workflow-kaart **"Call API"** kunnen gebruikers rechtstreeks vanuit de wo
 De workflow-kaart **"Call API"** verbetert de workflow-automatisering door directe interactie met externe systemen mogelijk te maken. Door flexibele configuraties voor eindpunten, methoden en gegevens te bieden, zorgt hij ervoor dat workflows naadloos kunnen integreren met API's van derden of aangepaste backends. De mogelijkheid om API-aanroepen voorwaardelijk uit te voeren, zorgt voor precisie en efficiëntie bij het automatiseren van externe communicatie.
 
 ***
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Vraag een geconfigureerde externe dienst om aanvullende validatie.
+
+**Configuratie:** Selecteer het geconfigureerde demo-API-eindpunt en de HTTP-methode. Geef de parameters en JSON-hoofdtekst op die voor dat eindpunt vereist zijn.
+
+**Verwacht resultaat en tegenvoorbeeld:** Voor een nepantwoord `200`, controleer de reactieverwerking die wordt verwacht door de volgende kaarten. Test ook `500`; het starten van het gesprek betekent niet dat de bedrijfscontrole is geslaagd.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

@@ -1,32 +1,27 @@
-# Export with alternate Export
+# Exporteren met alternatieve export
 
-<figure><img src="../../../../.gitbook/assets/image (286).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-379e4b3a5355-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
-## **Doel**
+## Wanneer moet u deze kaart gebruiken?
 
-Met de workflow-kaart **"Export Document with Alternate Export"** kan een document worden geëxporteerd met een alternatieve exportconfiguratie. Hij biedt flexibiliteit doordat gebruikers de standaard exportconfiguratie kunnen overslaan en een alternatieve kunnen gebruiken, wat zorgt voor compatibiliteit met specifieke vereisten of scenario's.
+Gebruik deze actie Dan voor de alternatieve export die is geconfigureerd voor het huidige documenttype. Configureer en valideer die route voordat u de actie toevoegt.
 
-## **Onderdelen van de kaart**
+## Configuratie komt van het documenttype
 
-**Alternate Export Configuration**
+De kaart heeft geen exportconfiguratiekiezer. Het leest of alternatieve export is ingeschakeld, de alternatieve exportconfiguratie en de status na export van de documenttype-instellingen. Intern zijn dit `DOC_ALTERNATE_EXPORT_SETTING`, `DOC_ALTERNATE_EXPORT_EXPORT_CONFIG` en `DOC_ALTERNATE_EXPORT_STATUS`.
 
-* **Beschrijving**: Geeft de exportconfiguratie op die voor het document wordt gebruikt.
-* **Detail**: Deze configuratie overschrijft de standaardinstellingen en past de alternatieve exportconfiguratie toe die in de workflow is opgegeven.
+Een expliciet uitgeschakelde alternatieve export levert een mislukte voorwaarde op. Ontbrekende activeringsgegevens, configuratie of resultaatstatus worden gerapporteerd in plaats van stilzwijgend de standaardroute te vervangen. Het exportverzoek controleert openstaande taken.
 
-## **Functionaliteit**
+## Controleer het resultaat
 
-* **Voorwaarde-evaluatie**:\
-  Het systeem evalueert de voorwaarden die zijn ingesteld in de **"Where"**- en **"And"**-secties van de workflow. De kaart wordt alleen uitgevoerd als alle voorwaarden true zijn.
-* **Documentexport**:\
-  Eenmaal uitgevoerd, gebruikt de kaart de alternatieve exportconfiguratie om het document te verwerken en te exporteren. Dit maakt op maat gemaakte exportafhandeling voor specifieke workflows mogelijk.
+Inspecteer het kaartlogboek, de exportgeschiedenis, de documentstatus en de geautoriseerde testbestemming. Een verzoek, time-out of statuswijziging alleen betekent niet dat de gegevens de bestemming hebben bereikt. Controleer de exportgeschiedenis voordat u een bewerking opnieuw probeert uit te voeren waarbij duplicaten kunnen ontstaan.
 
-## **Opzet en configuratie**
+<!-- workflow-card-complete-example-20261021 action_alternate_export -->
 
-Om deze kaart te configureren:
+### Alternatief exportvoorbeeld
 
-1. Zorg ervoor dat de **"Where"**- en **"And"**-secties correct zijn geconfigureerd, aangezien de kaart alleen wordt uitgevoerd als deze voorwaarden als true worden geëvalueerd.
-2. Verifieer dat de alternatieve exportconfiguratie geldig en actief is in het systeem.
+**Configuratie:** Bereid synthetisch documenttype voor `DEMO_INVOICE` met alternatieve export ingeschakeld, een geautoriseerde testexportconfiguratie en de gewenste resultaatstatus in de documenttype-instellingen. Voeg deze toe Dan actie na de vereiste controles. Deze kaart leest die instellingen; het biedt geen selector voor exportconfiguratie.
 
-## **Conclusie**
+**Verwacht resultaat en tegenvoorbeeld:** De actieverzoeken worden via die alternatieve configuratie geëxporteerd en controleren openstaande taken. Controleer het exportresultaat en de testbestemming afzonderlijk. Het uitschakelen van alternatieve export veroorzaakt een mislukte toestand; een ontbrekende activeringsinstelling of -configuratie is geen succesvolle export. Voer dit voorbeeld niet uit op een boekhoudbestemming.
 
-De workflow-kaart **"Export Document with Alternate Export"** verbetert de flexibiliteit en controle in documentexportprocessen. Door de selectie van een alternatieve exportconfiguratie toe te staan, komt hij tegemoet aan uiteenlopende exportvereisten, met behoud van efficiënte workflow-automatisering.
+Dit is een illustratieve testconfiguratie en verwachte uitkomst; het werd niet uitgevoerd. Gebruik gegevens en ontvangers die in uw testorganisatie zijn geconfigureerd.

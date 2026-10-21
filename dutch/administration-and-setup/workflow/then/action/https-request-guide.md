@@ -1,67 +1,95 @@
-# Send HTTPS Request
+# HTTPS-verzoek verzenden
 
-Deze kaarten horen in de **Then**-groep van de Workflow Builder — de acties die worden uitgevoerd zodra aan de When/And-voorwaarden is voldaan:
+***
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Kaarten worden via <strong>Add Card</strong> aan de <strong>Then</strong>-groep toegevoegd.</p></figcaption></figure>
+Voeg deze kaart toe aan de groep **Dan** van de Workflow Builder — de acties die worden uitgevoerd zodra de When/And-voorwaarden overeenkomen:
 
-## Purpose
-This card sends a secure message to a website or service and can receive a response back. It's simpler than the "Call API" card and is useful for quick integrations.
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-nl.png" alt="Niet-opgeslagen voorbeeld met Wanneer-, En- en Dan-kaarten. Vul alle velden in vóór uitvoering. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Niet-opgeslagen voorbeeld met Wanneer-, En- en Dan-kaarten. Vul alle velden in vóór uitvoering. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-**Real-world example:** Send invoice data to your accounting system, or ask an external system if an employee is approved to process this purchase.
+***
 
----
+## 📌 Versie-informatie
 
-## When to Use This Card
+**Huidige versie:** v2 (nieuwste en aanbevolen) **Status:** ✅ Actief
 
-Use this card when you need to:
-- Send webhook notifications to external services
-- Trigger actions in other systems
-- Query a simple web service
-- Send status updates to other applications
-- Perform simple integrations without complex API requirements
+**Versiegeschiedenis:**
 
----
+* v1 → Eenvoudig HTTP-verzoek (niet langer aanbevolen)
+* **v2 → CURRENT** (meertalige ondersteuning toegevoegd)
 
-## How It Works
+**Wat is er veranderd:** v2 heeft ondersteuning voor internationalisering (i18n) toegevoegd. De kernfunctionaliteit voor webhook/verzoek blijft ongewijzigd.
 
-1. **Trigger Check**: System checks if the "Where" and "And" conditions are met
-2. **Build Request**: System prepares the HTTPS request with your parameters
-3. **Send Securely**: Data is sent using secure HTTPS connection
-4. **Receive Response**: External service responds
-5. **Continue**: Workflow proceeds with the response data
+📖 [Versiegeschiedenis en wijzigingen](../../release.md) | [Volledige kaartdatabase](../../cards-overview/export-cards-guide.md)
 
----
+***
+
+## Doel
+
+Deze kaart stuurt een beveiligd bericht naar een website of dienst en kan een reactie terugkrijgen. Het is eenvoudiger dan de "Call API"-kaart en is handig voor snelle integraties.
+
+**Voorbeeld uit de praktijk:** Stuur factuurgegevens naar uw boekhoudsysteem, of vraag een extern systeem of een medewerker toestemming heeft om deze aankoop te verwerken.
+
+***
+
+## Wanneer moet u deze kaart gebruiken?
+
+Gebruik deze kaart wanneer u:
+
+* Stuur webhookmeldingen naar externe services
+* Activeer acties in andere systemen
+* Vraag een eenvoudige webservice op
+* Verzend statusupdates naar andere applicaties
+* Voer eenvoudige integraties uit zonder complexe API-vereisten
+
+***
+
+## Hoe het werkt
+
+1. **Trigger Check**: het systeem controleert of aan de voorwaarden 'Waar' en 'En' is voldaan
+2. **Bouwverzoek**: het systeem bereidt het HTTPS-verzoek voor met uw parameters
+3. **Veilig verzenden**: gegevens worden verzonden via een beveiligde HTTPS-verbinding
+4. **Respons ontvangen**: Externe service reageert
+5. **Continue**: Workflow gaat verder met de antwoordgegevens
+
+***
 
 ## Parameters
 
 ### URL
-The website address to send the request to
 
-**Example:** `https://webhook.company.com/process`
+Het websiteadres waarnaar het verzoek moet worden verzonden
 
-### Headers
-Special instructions for the recipient
+**Voorbeeld:** `https://webhook.company.com/process`
 
-**Example:**
+### Kopteksten
+
+Speciale instructies voor de ontvanger
+
+**Voorbeeld:**
+
 ```
 Content-Type: application/json
 Authorization: Bearer token123
 ```
 
-### Method
-- **GET**: Request information
-- **POST**: Send data
-- **PUT**: Update data
+### Methode
 
-### Parameters (Query String)
-Data added to the URL
+* **GET**: Informatie opvragen
+* **POST**: gegevens verzenden
+* **PUT**: gegevens bijwerken
 
-**Example:** `?action=approve&user_id=123`
+### Parameters (querytekenreeks)
 
-### Request Data
-The actual information being sent (in JSON format)
+Gegevens toegevoegd aan de URL
 
-**Example:**
+**Voorbeeld:** `?action=approve&user_id=123`
+
+### Gegevens opvragen
+
+De daadwerkelijke informatie die wordt verzonden (in JSON-indeling)
+
+**Voorbeeld:**
+
 ```json
 {
   "invoice_number": "INV-2025-001",
@@ -70,17 +98,19 @@ The actual information being sent (in JSON format)
 }
 ```
 
----
+***
 
-## Step-by-Step Example
+## Stapsgewijs voorbeeld
 
-### Scenario: Send Invoice to Accounting System
+### Scenario: factuur naar boekhoudsysteem verzenden
 
-**Card Configuration:**
-- **URL:** `https://accounting.company.com/invoices/create`
-- **Method:** POST
-- **Headers:** `Authorization: Bearer YOUR-TOKEN`
-- **Request Data:**
+**Kaartconfiguratie:**
+
+* **URL:** `https://accounting.company.com/invoices/create`
+* **Methode:** POST
+* **Kopteksten:** `Authorization: Bearer YOUR-TOKEN`
+* **Gegevens opvragen:**
+
 ```json
 {
   "supplier_id": "SUPP001",
@@ -91,7 +121,8 @@ The actual information being sent (in JSON format)
 }
 ```
 
-**Expected Response:**
+**Verwachte reactie:**
+
 ```json
 {
   "status": "success",
@@ -100,60 +131,71 @@ The actual information being sent (in JSON format)
 }
 ```
 
----
+***
 
-## Common Use Cases
+## Veelvoorkomende gebruiksscenario's
 
-### 1. Webhook Notifications
-Send real-time notifications to other systems whenever something happens in DocFlow
+### 1. Webhook-meldingen
 
-**Example:**
-- Document approved → Send notification to fulfillment system
-- Supplier changed → Notify purchasing team via Slack/Teams webhook
+Stuur realtime notificaties naar andere systemen wanneer er iets gebeurt in DocFlow
 
-### 2. External System Integration
-Connect DocFlow with other business systems for automatic data exchange
+**Voorbeeld:**
 
-**Example:**
-- After document is processed → Sync to ERP system
-- New supplier added → Create supplier record in master data system
+* Document goedgekeurd → Melding verzenden naar uitvoeringssysteem
+* Leverancier gewijzigd → Inkoopteam op de hoogte stellen via Slack/Teams-webhook
 
-### 3. Approval Workflows
-Send document to external approval system and receive decision
+### 2. Externe systeemintegratie
 
-**Example:**
-- High-value invoice → Send to Finance for approval
-- Return document to external system with decision
+Verbind DocFlow met andere bedrijfssystemen voor automatische gegevensuitwisseling
 
----
+**Voorbeeld:**
 
-## Configuration Guide
+* Nadat het document is verwerkt → Synchroniseren met ERP-systeem
+* Nieuwe leverancier toegevoegd → Leveranciersrecord aanmaken in masterdatasysteem
 
-### Step 1: Get Endpoint Information
-Ask the receiving system for:
-- [ ] HTTPS URL
-- [ ] Required headers
-- [ ] Authentication method
-- [ ] Expected request format
-- [ ] Expected response format
+### 3. Goedkeuringsworkflows
 
-### Step 2: Configure the Card
-1. Enter the HTTPS URL
-2. Set HTTP method (usually POST)
-3. Add authentication if required
-4. Format request data as JSON
-5. Add any custom headers
+Stuur het document naar een extern goedkeuringssysteem en ontvang een beslissing
 
-### Step 3: Test
-Send a test request and verify response
+**Voorbeeld:**
 
----
+* Factuur met hoge waarde → Ter goedkeuring naar Financiën sturen
+* Document met beslissing terugsturen naar extern systeem
 
-## Response Handling
+***
 
-Your HTTPS request will get a response. Common responses:
+## Configuratiegids
 
-### Success (200, 201)
+### Stap 1: eindpuntinformatie ophalen
+
+Vraag het ontvangstsysteem naar:
+
+* [ ] HTTPS-URL
+* [ ] Vereiste headers
+* [ ] Authenticatiemethode
+* [ ] Verwacht verzoekformaat
+* [ ] Verwacht antwoordformaat
+
+### Stap 2: Configureer de kaart
+
+1. Voer de HTTPS-URL in
+2. HTTP-methode instellen (meestal POST)
+3. Voeg indien nodig authenticatie toe
+4. Formatteer aanvraaggegevens als JSON
+5. Voeg eventuele aangepaste headers toe
+
+### Stap 3: Testen
+
+Verzend een testverzoek en verifieer het antwoord
+
+***
+
+## Reactieafhandeling
+
+Uw HTTPS-verzoek krijgt een reactie. Veel voorkomende reacties:
+
+### Succes (200, 201)
+
 ```json
 {
   "success": true,
@@ -162,67 +204,79 @@ Your HTTPS request will get a response. Common responses:
 }
 ```
 
-### Bad Request (400)
+### Slecht verzoek (400)
+
 ```json
 {
   "error": "Missing required field: invoice_number"
 }
 ```
 
-### Unauthorized (401)
+### Ongeautoriseerd (401)
+
 ```json
 {
   "error": "Invalid authentication token"
 }
 ```
 
-### Server Error (500)
-The receiving system has an internal problem
+### Serverfout (500)
 
----
+Het ontvangende systeem heeft een intern probleem
 
-## Troubleshooting
+***
 
-### "Certificate Error"
-**Cause:** HTTPS security certificate issue
+## Problemen oplossen
 
-**Solution:**
-- Verify the URL is correct
-- Check if the website's certificate is valid
-- Ensure you're using HTTPS (not HTTP)
+### "Certificaatfout"
 
-### "Connection Refused"
-**Cause:** Cannot connect to the server
+**Oorzaak:** Probleem met HTTPS-beveiligingscertificaat
 
-**Solution:**
-- Verify the URL/IP address is correct
-- Check if the service is running
-- Check firewall rules
-- Verify internet connectivity
+**Oplossing:**
 
-### "No Response / Timeout"
-**Cause:** Server not responding within time limit
+* Controleer of de URL correct is
+* Controleer of het certificaat van de website geldig is
+* Zorg ervoor dat u HTTPS gebruikt (niet HTTP)
 
-**Solution:**
-- Check if the service is available
-- Verify the endpoint URL
-- Check if there are rate limits
-- Contact system administrator
+### "Verbinding geweigerd"
 
-### "Invalid JSON"
-**Cause:** The request data is malformed
+**Oorzaak:** Kan geen verbinding maken met de server
 
-**Solution:**
-- Check for missing commas in JSON
-- Verify all quotes are correct
-- Validate JSON format (use online JSON validator)
-- Check for special characters
+**Oplossing:**
 
----
+* Controleer of het URL/IP-adres correct is
+* Controleer of de service actief is
+* Controleer firewallregels
+* Controleer de internetverbinding
 
-## Examples
+### "Geen reactie / time-out"
 
-### Example 1: Send to Webhook Service
+**Oorzaak:** Server reageert niet binnen de tijdslimiet
+
+**Oplossing:**
+
+* Controleer of de dienst beschikbaar is
+* Controleer de eindpunt-URL
+* Controleer of er tarieflimieten zijn
+* Neem contact op met de systeembeheerder
+
+### "Ongeldige JSON"
+
+**Oorzaak:** De aanvraaggegevens hebben een onjuiste indeling
+
+**Oplossing:**
+
+* Controleer op ontbrekende komma's in JSON
+* Controleer of alle offertes correct zijn
+* Valideer het JSON-formaat (gebruik online JSON-validator)
+* Controleer op speciale tekens
+
+***
+
+## Voorbeelden
+
+### Voorbeeld 1: Verzenden naar Webhook Service
+
 ```
 URL: https://webhook.site/your-unique-id
 Method: POST
@@ -234,7 +288,8 @@ Data:
 }
 ```
 
-### Example 2: Update External System
+### Voorbeeld 2: Extern systeem bijwerken
+
 ```
 URL: https://api.company.com/update
 Method: PUT
@@ -246,60 +301,73 @@ Data:
 }
 ```
 
-### Example 3: Query External Service
+### Voorbeeld 3: Externe service opvragen
+
 ```
 URL: https://lookup.company.com/validate?id=SUP-789
 Method: GET
 Headers: Authorization: Bearer token
 ```
 
----
+***
 
-## Difference from "Call API" Card
+## Verschil met de "Call API"-kaart
 
-| Feature | HTTPS Request | Call API |
-|---------|---------------|----------|
-| Simplicity | Simple | More complex |
-| Parameters | Basic | Advanced |
-| Error Handling | Basic | Detailed |
-| Use for | Quick integrations | Complex APIs |
-| Best for | Webhooks | Professional APIs |
+| Functie        | HTTPS-verzoek      | API aanroepen          |
+| -------------- | ------------------ | ----------------- |
+| Eenvoud     | Eenvoudig             | Complexer      |
+| Parameters     | Basis              | Geavanceerd          |
+| Foutafhandeling | Basis              | Gedetailleerd          |
+| Gebruik voor        | Snelle integraties | Complexe API's      |
+| Beste voor       | Webhaken           | Professionele API's |
 
----
+***
 
-## Security Considerations
+## Beveiligingsoverwegingen
 
-✅ **Always use HTTPS** (secure connection)
+✅ **Gebruik altijd HTTPS** (beveiligde verbinding)
 
-⚠️ **Never:**
-- Put passwords in the URL
-- Expose API keys in logs
-- Include personal data in parameters
-- Use HTTP for sensitive data
+⚠️ **Nooit:**
 
----
+* Zet wachtwoorden in de URL
+* Maak API-sleutels zichtbaar in logboeken
+* Neem persoonlijke gegevens op in parameters
+* Gebruik HTTP voor gevoelige gegevens
 
-## Best Practices
+***
 
-✅ **Do:**
-- Test with small amounts of data first
-- Include error handling
-- Log important requests
-- Document the integration
-- Monitor for failures
+## Beste praktijken
 
-❌ **Don't:**
-- Call the same endpoint repeatedly if not needed
-- Ignore response errors
-- Include sensitive data in plain text
-- Exceed service rate limits
+✅ **Doe:**
 
----
+* Test eerst met kleine hoeveelheden gegevens
+* Inclusief foutafhandeling
+* Registreer belangrijke verzoeken
+* Documenteer de integratie
+* Controleer op fouten
 
-## Related Cards
+❌ **Niet doen:**
 
-- **CALL_API** - More advanced API integration
-- **CONDITION_HTTPS_REQUEST_STATUS** - Check if request succeeded
-- **ACTION_SEND_EMAIL** - Send via email instead
-- **ACTION_RUN_DOCOPERATOR_SCRIPT** - Automated scripts
+* Roep herhaaldelijk hetzelfde eindpunt aan als dit niet nodig is
+* Negeer reactiefouten
+* Neem gevoelige gegevens op in platte tekst
+* Overschrijd de limieten voor servicetarieven
 
+***
+
+## Gerelateerde kaarten
+
+* **CALL\_API** - Meer geavanceerde API-integratie
+* **CONDITION\_HTTPS\_REQUEST\_STATUS** - Controleer of het verzoek is geslaagd
+* **ACTION\_SEND\_EMAIL** - Verzend in plaats daarvan via e-mail
+* **ACTION\_RUN\_DOCOPERATOR\_SCRIPT** - Geautomatiseerde scripts
+
+<!-- workflow-card-complete-example-20261021 action_https_request -->
+
+### Voorbeeld van HTTPS-actie
+
+**Configuratie:** Selecteer methode `POST`, vervang `DEMO_WEBHOOK_URL` door uw geautoriseerde testeindpunt, voeg header `Content-Type: application/json` en body `{"document_number":"DEMO-001"}` toe. Configureer authenticatie alleen zoals vereist door dat eindpunt; Kopieer nooit een echt geheim in documentatie.
+
+**Verwacht resultaat en tegenvoorbeeld:** De actie verzendt het geconfigureerde verzoek wanneer de werkstroomroute wordt uitgevoerd. Inspecteer het HTTP-antwoord en de ontvangende testservice. Een time-out is geen bewijs dat de service niets heeft gedaan, en deze Then-actie staat los van de And-kaart die een HTTP-status controleert. Dit illustratieve verzoek is niet verzonden.
+
+Dit is een illustratieve testconfiguratie en verwachte uitkomst; het werd niet uitgevoerd. Gebruik gegevens en ontvangers die in uw testorganisatie zijn geconfigureerd.

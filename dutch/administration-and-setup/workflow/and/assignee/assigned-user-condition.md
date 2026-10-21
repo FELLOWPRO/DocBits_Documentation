@@ -1,6 +1,6 @@
-# Assigned User Condition
+# Toegewezen gebruikersvoorwaarde
 
-<figure><img src="../../../../.gitbook/assets/userlmn_5e16e9b23626ec1211c753fec5333513.png" alt="" width="552"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3e450ede5dea-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
 **Doel**
 
@@ -8,21 +8,21 @@ Deze workflow-kaart beheert de uitvoering van bewerkingen op basis van de vraag 
 
 **Onderdelen van de kaart**
 
-1. **Operator**
+1. **Exploitant**
    * **Beschrijving**: Definieert de logische voorwaarde die op de gebruikerstoewijzing wordt toegepast.
    * **Opties**:
      * **IS**: Triggert de bewerking als de toegewezen gebruiker van het document of de taak overeenkomt met een gebruiker in de opgegeven lijst.
-     * **IS NOT**: Triggert de bewerking als de toegewezen gebruiker van het document of de taak niet overeenkomt met een gebruiker in de opgegeven lijst.
-2. **User List**
+     * **IS NIET**: Triggert de bewerking als de toegewezen gebruiker van het document of de taak niet overeenkomt met een gebruiker in de opgegeven lijst.
+2. **Gebruikerslijst**
    * **Beschrijving**: Een lijst of selectie van gebruikers om mee te vergelijken met de toegewezen gebruiker.
-   * **Detail**: Deze lijst kan een of meerdere gebruikers bevatten, waardoor de kaart zowel enkelvoudige als meervoudige gebruikersvoorwaarden effectief kan verwerken. De selectie kan worden gemaakt via selectievakjes, een meerkeuze-dropdown of vergelijkbare UI-elementen.
+   * **Details**: Deze lijst kan een of meerdere gebruikers bevatten, waardoor de kaart zowel enkelvoudige als meervoudige gebruikersvoorwaarden effectief kan verwerken. De selectie kan worden gemaakt via selectievakjes, een meerkeuze-dropdown of vergelijkbare UI-elementen.
 
 **Functionaliteit**
 
 * **Identificatie van gebruikerstoewijzing**: Identificeert automatisch de gebruiker of gebruikers die aan een bepaalde taak of document binnen het ERP-systeem zijn toegewezen.
 * **Voorwaarde-evaluatie**:
   * Met de **IS**-operator controleert de kaart of de toegewezen gebruiker zich onder de gebruikers in de User List bevindt.
-  * Met de **IS NOT**-operator zorgt de kaart ervoor dat de toegewezen gebruiker zich niet onder de vermelde gebruikers bevindt.
+  * Met de **IS NIET**-operator zorgt de kaart ervoor dat de toegewezen gebruiker zich niet onder de vermelde gebruikers bevindt.
 * **Actie-uitvoering**:
   * **True-voorwaarde**: Als de gebruikerstoewijzing aan de voorwaarde voldoet (IS of IS NOT), worden relevante acties getriggerd, zoals meldingen, het starten van taken, goedkeuringen of andere workflow-stappen.
   * **False-voorwaarde**: Als niet aan de voorwaarde wordt voldaan, gaat de workflow niet verder.
@@ -36,3 +36,15 @@ Deze workflow-kaart beheert de uitvoering van bewerkingen op basis van de vraag 
 #### Conclusie
 
 De workflow-kaart "Assigned User Condition" is een essentieel hulpmiddel voor het beheren van document- en taakworkflows die afhankelijk zijn van gebruikerstoewijzingen. Door voorwaarden toe te staan op basis van de vraag of een taak of document aan specifieke gebruikers is toegewezen, zorgt hij ervoor dat workflows alleen worden getriggerd door de juiste gebruikersinteracties, wat zowel de verantwoording als de taakafstemming binnen teams verbetert. Het duidelijk documenteren van deze kaart helpt gebruikers het belang ervan te begrijpen en hem effectief in hun workflows te integreren, wat zorgt voor soepele en efficiënte bewerkingen die zijn afgestemd op gebruikersrollen en -verantwoordelijkheden.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Ga alleen verder als een document is toegewezen aan een goedgekeurde revisor.
+
+**Configuratie:** Selecteer is-een-van en de geconfigureerde demogebruikers `Demo Reviewer A` en `Demo Reviewer B`.
+
+**Verwacht resultaat en tegenvoorbeeld:** Een document toegewezen aan `Demo Reviewer B` is geslaagd; één toegewezen aan een andere gebruiker mislukt.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

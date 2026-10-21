@@ -9,7 +9,7 @@ Deze DocBits-kaart zorgt voor de juiste classificatie van een document door te c
 ## **Functionaliteit:**
 
 * **Validatie van meerdere documenttypen:** Met deze kaart kunnen gebruikers controleren of een document overeenkomt met een reeks gespecificeerde documenttypen, waardoor flexibele categorisering mogelijk is voor complexere documentworkflows.
-* **Operator:** Gebruikers kunnen voorwaarden definiëren om het document te valideren tegen meerdere typen. Beschikbare operators zijn onder andere:
+* **Exploitant:** Gebruikers kunnen voorwaarden definiëren om het document te valideren tegen meerdere typen. Beschikbare operators zijn onder andere:
   * **Is:** Bevestigt dat het document overeenkomt met een van de gespecificeerde documenttypen.
   * **Is Niet:** Zorgt ervoor dat het document niet overeenkomt met een van de geselecteerde documenttypen.
 * **Documenttypen:** Gebruikers kunnen kiezen uit meerdere ondersteunde documenttypen, waaronder:

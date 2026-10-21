@@ -1,6 +1,6 @@
-# Single Document Status Condition
+# Status van één document Conditie
 
-<figure><img src="../../../../.gitbook/assets/userlmn_928e514bc0e2aa775894e4ec5f992bd9.png" alt="" width="528"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-c0315ad39a89-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 **Doel**
 
@@ -8,15 +8,15 @@ Deze workflow-kaart is afgestemd op het beheren van bewerkingen op documenten op
 
 **Onderdelen van de kaart**
 
-1. **Operator**
+1. **Exploitant**
    * **Beschrijving**: Geeft de methode op voor het evalueren van de status van het document ten opzichte van de geselecteerde voorwaarde.
    * **Opties**:
      * **is**: Triggert de bewerking als de huidige status van het document overeenkomt met de geselecteerde status.
-     * **is not**: Triggert de bewerking als de huidige status van het document niet overeenkomt met de geselecteerde status.
+     * **niet**: Triggert de bewerking als de huidige status van het document niet overeenkomt met de geselecteerde status.
 2. **Status**
    * **Beschrijving**: Maakt de selectie van één enkele documentstatus mogelijk om de voorwaarde in te stellen.
    * **Voorbeelden van statussen**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval".
-   * **Detail**: Gebruikers kiezen één status uit een dropdown of een set keuzerondjes. Deze status dient vervolgens als criterium voor de bewerking van de kaart.
+   * **Details**: Gebruikers kiezen één status uit een dropdown of een set keuzerondjes. Deze status dient vervolgens als criterium voor de bewerking van de kaart.
 
 **Functionaliteit**
 
@@ -37,3 +37,13 @@ Deze workflow-kaart is afgestemd op het beheren van bewerkingen op documenten op
 #### Conclusie
 
 De workflow-kaart "Single Document Status Condition" vereenvoudigt het documentbeheer door zich te richten op individuele statusvoorwaarden. Deze specificatie helpt in gevallen waarin nauwkeurige controle over documentstromen nodig is, met name in omgevingen met strenge verwerkingscriteria. Het duidelijk documenteren van deze versie van de kaart zorgt ervoor dat gebruikers de toepassing ervan volledig begrijpen en hem effectief in hun dagelijkse werkzaamheden kunnen integreren, wat zowel de naleving als de efficiëntie in de documentverwerking verbetert.
+
+<!-- workflow-card-complete-example-20261021 condition_doc_status_is_isnot -->
+
+### Voorbeeld met één status
+
+**Configuratie:** Kies operator `is` en status `Pending Approval`. Voeg een volgende beoordelingsactie toe die geschikt is voor die status.
+
+**Verwacht resultaat en tegenvoorbeeld:** De voorwaarde is waar voor een document dat momenteel `Pending Approval` is; het is false voor een document met status `Ready in Validation`. Gebruik de daadwerkelijk geselecteerde status uit uw release. Als u een status wijzigt, wordt het document niet zelf geëxporteerd.
+
+Dit is een illustratieve testconfiguratie en verwachte uitkomst; het werd niet uitgevoerd. Gebruik gegevens en ontvangers die in uw testorganisatie zijn geconfigureerd.

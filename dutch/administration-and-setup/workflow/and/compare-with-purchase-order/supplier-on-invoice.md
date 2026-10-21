@@ -1,6 +1,6 @@
-# Supplier on Invoice
+# Leverancier op factuur
 
-<figure><img src="../../../../.gitbook/assets/image (276).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f5b5666e94fe-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel:**
 
@@ -8,11 +8,11 @@ Deze workflow-kaart is ontworpen om de leveranciersinformatie op een factuur te 
 
 ## **Onderdelen van de kaart:**
 
-1. **Operator:**
+1. **Exploitant:**
    * **Beschrijving**: Definieert de voorwaarde voor het vergelijken van de leverancier op de factuur met de leverancier op de inkooporder.
    * **Opties**:
      * **Is**: Controleert of de leverancier op de factuur overeenkomt met de leverancier op de inkooporder.
-     * **Is Not**: Zorgt ervoor dat de leverancier op de factuur niet overeenkomt met de leverancier op de inkooporder.
+     * **Is niet**: Zorgt ervoor dat de leverancier op de factuur niet overeenkomt met de leverancier op de inkooporder.
 
 ## **Functionaliteit:**
 

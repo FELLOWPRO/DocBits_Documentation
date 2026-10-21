@@ -1,12 +1,14 @@
-# Any / All Charges
+# Alle/alle kosten
 
-<figure><img src="../../../../.gitbook/assets/workflow_cards_and_po_compare_any_all_charges.png" alt="De kaart in de kaartbibliotheek, versie 2 en versie 3"><figcaption><p>De kaart in de kaartbibliotheek. Versie 2 boven, versie 3 onder.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-420a0e403552-v2-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-420a0e403552-v3-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
 ## **Doel:**
 
 Deze workflowkaart vergelijkt de bijkomende kosten op een document met de bijkomende kosten op de gekoppelde inkooporder, binnen een vastgestelde tolerantie. Ze beantwoordt één vraag: zijn document en inkooporder eens over de bijkomende kosten? Elke kost die de inkoopordermatching aan elkaar heeft gekoppeld wordt vergeleken, waardoor er geen veldnaam op de kaart hoeft te worden opgegeven.
 
-Deze kaart verschilt van **Compare Total Charges**, die één benoemd documentveld vergelijkt met één kost die via een Charge ID wordt aangewezen. Gebruik deze kaart wanneer alle gekoppelde kosten op het document in één keer gecontroleerd moeten worden.
+Deze kaart verschilt van **Vergelijk totale kosten**, die één benoemd documentveld vergelijkt met één kost die via een Charge ID wordt aangewezen. Gebruik deze kaart wanneer alle gekoppelde kosten op het document in één keer gecontroleerd moeten worden.
 
 De inkoopordermatching moet vóór deze kaart lopen. Heeft het document geen gekoppelde inkooporder, dan stopt de kaart de workflow en meldt ze ontbrekende gegevens.
 
@@ -17,7 +19,7 @@ De inkoopordermatching moet vóór deze kaart lopen. Heeft het document geen gek
    * **Opties**:
      * **Elk**: minstens één kost moet aan de vergelijking voldoen.
      * **Alle**: elke kost moet aan de vergelijking voldoen.
-2. **Operator:**
+2. **Exploitant:**
    * **Beschrijving**: Hoe het kostenbedrag van het document wordt vergeleken met het bedrag van de inkooporder voor dezelfde kost.
    * **Opties**:
      * **binnenin**: de twee bedragen moeten overeenkomen, waarbij de tolerantie is toegestaan.

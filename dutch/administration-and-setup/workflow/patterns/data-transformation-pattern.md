@@ -1,23 +1,19 @@
-# Gegevenstransformatie Patroon
+# Patroon voor gegevenstransformatie
 
-**Patroontype:** Gegevensverwerking & Manipulatie
-**Complexiteit:** Gemiddeld
-**Geschatte Insteltijd:** 30-45 minuten
-**Veelvoorkomende Gebruiksscenario's:** Veldberekeningen, gegevensopmaak, valutaconversie, eenheidsconversie, gegevensverrijking
+**Patroontype:** Gegevensverwerking & Manipulatie **Complexiteit:** Gemiddeld **Geschatte Insteltijd:** 30-45 minuten **Veelvoorkomende Gebruiksscenario's:** Veldberekeningen, gegevensopmaak, valutaconversie, eenheidsconversie, gegevensverrijking
 
----
+***
 
-U bouwt dit patroon in de **Workflow Builder** (Workflow Dashboard → Workflowlijst → Workflow Toevoegen). Klik op **Add Card** en open de categorie **Document Field** — deze bevat de lees-, schrijf-, bereken- en opmaakkaarten die dit patroon aan elkaar koppelt:
+U bouwt dit patroon in de **Workflow-bouwer** (Workflow Dashboard → Workflowlijst → Workflow Toevoegen). Klik op **Kaart toevoegen** en open de categorie **Documentveld** — deze bevat de lees-, schrijf-, bereken- en opmaakkaarten die dit patroon aan elkaar koppelt:
 
-<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card-bibliotheek in de Workflow Builder, gegroepeerd per categorie"><figcaption><p>De <strong>Add Card</strong>-bibliotheek — kaarten voor het lezen/schrijven van velden, berekeningen en opmaak bevinden zich onder de categorie <strong>Document Field</strong>.</p></figcaption></figure>
-
----
+***
 
 ## Patroonoverzicht
 
 Dit patroon demonstreert hoe u documentgegevens kunt transformeren, berekenen, formatteren en verrijken in DocBits workflows. Gegevenstransformatie is essentieel voor het voorbereiden van gegevens voor export, het uitvoeren van berekeningen, het standaardiseren van formaten en het verrijken van documenten met aanvullende informatie.
 
 **Wat Dit Patroon Doet:**
+
 1. Extraheert gegevens uit documentvelden
 2. Voert berekeningen en transformaties uit
 3. Formatteert gegevens naar vereiste standaarden
@@ -25,32 +21,35 @@ Dit patroon demonstreert hoe u documentgegevens kunt transformeren, berekenen, f
 5. Verrijkt documenten met afgeleide of opzoekgegevens
 6. Valideert en schoont gegevens op
 
----
+***
 
 ## Wanneer Dit Patroon Te Gebruiken
 
 Gebruik dit patroon wanneer u het volgende moet doen:
-- ✅ Totalen, subtotalen, belastingen berekenen
-- ✅ Valuta's of eenheden converteren
-- ✅ Datums, getallen, tekst formatteren
-- ✅ Waarden afleiden uit bestaande velden
-- ✅ Gegevens verrijken uit externe bronnen
-- ✅ Gegevensformaten standaardiseren
-- ✅ Gegevens opschonen en valideren
-- ✅ Gegevens voorbereiden voor export
+
+* ✅ Totalen, subtotalen, belastingen berekenen
+* ✅ Valuta's of eenheden converteren
+* ✅ Datums, getallen, tekst formatteren
+* ✅ Waarden afleiden uit bestaande velden
+* ✅ Gegevens verrijken uit externe bronnen
+* ✅ Gegevensformaten standaardiseren
+* ✅ Gegevens opschonen en valideren
+* ✅ Gegevens voorbereiden voor export
 
 **Gebruik dit patroon niet wanneer:**
-- ❌ Geen transformatie nodig is
-- ❌ Gegevens al in het juiste formaat zijn
-- ❌ Eenvoudige veldkopie voldoende is
 
----
+* ❌ Geen transformatie nodig is
+* ❌ Gegevens al in het juiste formaat zijn
+* ❌ Eenvoudige veldkopie voldoende is
+
+***
 
 ## Typen Gegevenstransformatie
 
 ### 1. Berekeningen
 
 **Wiskundige Operaties:**
+
 ```
 - Optellen: Quantity + Bonus_Quantity = Total_Quantity
 - Aftrekken: Invoice_Total - Tax_Amount = Net_Amount
@@ -59,9 +58,10 @@ Gebruik dit patroon wanneer u het volgende moet doen:
 - Percentage: (Discount / Subtotal) × 100 = Discount_Percent
 ```
 
-### 2. String Operaties
+### 2. Snaaroperaties
 
 **Tekstmanipulatie:**
+
 ```
 - Samenvoegen: First_Name + " " + Last_Name = Full_Name
 - Hoofdletters: "invoice" → "INVOICE"
@@ -74,6 +74,7 @@ Gebruik dit patroon wanneer u het volgende moet doen:
 ### 3. Gegevenstypeconversie
 
 **Type Transformaties:**
+
 ```
 - String naar Nummer: "123.45" → 123.45
 - Nummer naar String: 123.45 → "123.45"
@@ -85,6 +86,7 @@ Gebruik dit patroon wanneer u het volgende moet doen:
 ### 4. Eenheidsconversies
 
 **Metingconversies:**
+
 ```
 - Gewicht: kg → lbs, ton → kg
 - Lengte: cm → inches, m → ft
@@ -96,6 +98,7 @@ Gebruik dit patroon wanneer u het volgende moet doen:
 ### 5. Valutaconversies
 
 **Toepassingen van Wisselkoersen:**
+
 ```
 - USD → EUR: Amount_USD × Rate = Amount_EUR
 - Multi-valuta: Converteer alles naar basisvaluta
@@ -105,6 +108,7 @@ Gebruik dit patroon wanneer u het volgende moet doen:
 ### 6. Datumtransformaties
 
 **Datumoperaties:**
+
 ```
 - Formaatwijziging: 10/23/2025 → 2025-10-23
 - Dagen toevoegen: Invoice_Date + 30 = Due_Date
@@ -112,33 +116,35 @@ Gebruik dit patroon wanneer u het volgende moet doen:
 - Delen extraheren: "2025-10-23" → Jaar: 2025, Maand: 10, Dag: 23
 ```
 
----
+***
 
 ## Compleet Workflowvoorbeeld
 
 ### Scenario: Factuurtotaalberekening & Gegevensverrijking
 
 **Bedrijfsvereiste:**
-- Extraheer regelitems van factuur
-- Bereken regeltotalen (Aantal × Prijs)
-- Bereken subtotaal (som van regeltotalen)
-- Bereken belastingbedrag (Subtotaal × Belastingtarief)
-- Bereken eindtotaal (Subtotaal + Belasting)
-- Converteer naar EUR als factuur in andere valuta is
-- Formatteer bedragen naar 2 decimalen
-- Voeg bedrijfs-GL-rekening toe op basis van productcategorie
-- Valideer berekeningen tegen factuurtotaal
-- Markeer als variantie > 1%
+
+* Extraheer regelitems van factuur
+* Bereken regeltotalen (Aantal × Prijs)
+* Bereken subtotaal (som van regeltotalen)
+* Bereken belastingbedrag (Subtotaal × `Tax_Rate`)
+* Bereken eindtotaal (Subtotaal + Belasting)
+* Converteer naar EUR als factuur in andere valuta is
+* Formatteer bedragen naar 2 decimalen
+* Voeg bedrijfs-GL-rekening toe op basis van productcategorie
+* Valideer berekeningen tegen factuurtotaal
+* Markeer als variant > 1%
 
 **Gebruikte Workflowkaarten:**
-1. ACTION_CALCULATE_FIELD - Voer berekeningen uit
-2. ACTION_SET_FIELD_TO_TEXT - Sla resultaten op
-3. ACTION_COPY_FIELD_VALUE - Kopieer waarden
-4. CALL_API - Haal wisselkoersen op (indien nodig)
-5. CONDITION_COMPARE_TWO_DOCFIELD_VALUES - Valideer berekeningen
-6. ACTION_SET_FIELD_FROM_MASTER_DATA - Verrijk met GL-rekeningen
 
----
+1. ACTION\_CALCULATE\_FIELD - Voer berekeningen uit
+2. ACTION\_SET\_FIELD\_TO\_TEXT - Sla resultaten op
+3. ACTION\_COPY\_FIELD\_VALUE - Kopieer waarden
+4. CALL\_API - Haal wisselkoersen op (indien nodig)
+5. CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES - Valideer berekeningen
+6. ACTION\_SET\_FIELD\_FROM\_MASTER\_DATA - Verrijk met GL-rekeningen
+
+***
 
 ## Stap-voor-Stap Implementatie
 
@@ -146,9 +152,10 @@ Gebruik dit patroon wanneer u het volgende moet doen:
 
 **Bereken Regeltotalen:**
 
-**Kaart:** ACTION_CALCULATE_FIELD
+**Kaart:** ACTION\_CALCULATE\_FIELD
 
 **Voor elk regelitem:**
+
 ```
 Veld: Line_Total
 Formule: {{TABLE_FIELD:Quantity}} * {{TABLE_FIELD:Unit_Price}}
@@ -157,6 +164,7 @@ Decimalen: 2
 ```
 
 **Voorbeeld:**
+
 ```
 Regel 1:
   Aantal: 100
@@ -177,17 +185,18 @@ Regel 3:
   Opslaan in: Line_Total
 ```
 
-**Gidsreferentie:** [Gids Veldmanipulatie - Berekeningen](../then/document-field/field-manipulation-guide.md#calculate-field)
+**Gidsreferentie:** [Gids Veldmanipulatie - Berekeningen](../then/document-field/field-manipulation-guide.md)
 
----
+***
 
 ### Stap 2: Bereken Documentsubtotaal
 
 **Som Alle Regeltotalen:**
 
-**Kaart:** ACTION_CALCULATE_FIELD
+**Kaart:** ACTION\_CALCULATE\_FIELD
 
 **Configuratie:**
+
 ```
 Veld: Calculated_Subtotal
 Formule: SUM({{TABLE_COLUMN:Line_Total}})
@@ -196,6 +205,7 @@ Decimalen: 2
 ```
 
 **Voorbeeld:**
+
 ```
 Regel 1 Totaal: €5.000,00
 Regel 2 Totaal: €1.000,00
@@ -205,15 +215,16 @@ Subtotaal = 5000 + 1000 + 387,50 = €6.387,50
 Opslaan in: Calculated_Subtotal
 ```
 
----
+***
 
 ### Stap 3: Bereken Belastingbedrag
 
 **Pas Belastingtarief Toe op Subtotaal:**
 
-**Kaart:** ACTION_CALCULATE_FIELD
+**Kaart:** ACTION\_CALCULATE\_FIELD
 
 **Configuratie:**
+
 ```
 Veld: Calculated_Tax_Amount
 Formule: {{Calculated_Subtotal}} * ({{Tax_Rate}} / 100)
@@ -222,6 +233,7 @@ Decimalen: 2
 ```
 
 **Voorbeeld:**
+
 ```
 Calculated_Subtotal: €6.387,50
 Tax_Rate: 19% (BTW)
@@ -233,15 +245,16 @@ Belastingbedrag = 6387,50 × (19 / 100)
 Opslaan in: Calculated_Tax_Amount
 ```
 
----
+***
 
 ### Stap 4: Bereken Eindtotaal
 
 **Tel Subtotaal en Belasting Op:**
 
-**Kaart:** ACTION_CALCULATE_FIELD
+**Kaart:** ACTION\_CALCULATE\_FIELD
 
 **Configuratie:**
+
 ```
 Veld: Calculated_Grand_Total
 Formule: {{Calculated_Subtotal}} + {{Calculated_Tax_Amount}}
@@ -250,6 +263,7 @@ Decimalen: 2
 ```
 
 **Voorbeeld:**
+
 ```
 Calculated_Subtotal: €6.387,50
 Calculated_Tax_Amount: €1.213,63
@@ -259,15 +273,16 @@ Eindtotaal = 6387,50 + 1213,63 = €7.601,13
 Opslaan in: Calculated_Grand_Total
 ```
 
----
+***
 
 ### Stap 5: Valutaconversie (indien nodig)
 
 **Controleer of conversie nodig is:**
 
-**Kaart:** CONDITION_DOC_FIELD_IS
+**Kaart:** CONDITION\_DOC\_FIELD\_IS
 
 **Configuratie:**
+
 ```
 Veld: Invoice_Currency
 Operator: IS NOT EQUAL TO
@@ -278,9 +293,10 @@ Waarde: EUR
 
 **Stap 5a: Haal Wisselkoers Op**
 
-**Kaart:** CALL_API
+**Kaart:** CALL\_API
 
 **Configuratie:**
+
 ```
 Eindpunt: https://api.exchangerate-api.com/v4/latest/{{Invoice_Currency}}
 Methode: GET
@@ -289,6 +305,7 @@ Opslaan in: Exchange_Rate_To_EUR
 ```
 
 **Voorbeeld:**
+
 ```
 Factuurvaluta: USD
 API-respons: {
@@ -303,9 +320,10 @@ Exchange_Rate_To_EUR = 0,92
 
 **Stap 5b: Converteer Bedragen**
 
-**Kaart:** ACTION_CALCULATE_FIELD
+**Kaart:** ACTION\_CALCULATE\_FIELD
 
 **Configuratie:**
+
 ```
 Veld: Grand_Total_EUR
 Formule: {{Calculated_Grand_Total}} * {{Exchange_Rate_To_EUR}}
@@ -314,6 +332,7 @@ Decimalen: 2
 ```
 
 **Voorbeeld:**
+
 ```
 Eindtotaal (USD): $7.601,13
 Wisselkoers: 0,92
@@ -323,17 +342,18 @@ Eindtotaal (EUR) = 7601,13 × 0,92 = €6.993,04
 Opslaan in: Grand_Total_EUR
 ```
 
-**Gidsreferentie:** [API Integratie Patroon - Valutaconversie](api-integration-pattern.md#currency-conversion-example)
+**Gidsreferentie:** [API Integratie Patroon - Valutaconversie](api-integration-pattern.md)
 
----
+***
 
 ### Stap 6: Gegevensverrijking - Voeg GL-rekeningen Toe
 
 **Zoek GL-rekening op Productcategorie:**
 
-**Kaart:** ACTION_SET_FIELD_FROM_MASTER_DATA
+**Kaart:** ACTION\_SET\_FIELD\_FROM\_MASTER\_DATA
 
 **Configuratie:**
+
 ```
 Opzoektabel: GL_Account_Mapping
 Opzoeksleutel: {{TABLE_FIELD:Product_Category}}
@@ -342,6 +362,7 @@ Opslaan in: GL_Account
 ```
 
 **Voorbeeld:**
+
 ```
 Regel 1:
   Productcategorie: "Kantoorbenodigdheden"
@@ -359,17 +380,18 @@ Regel 3:
   Resultaat: GL-rekening "5000-300" (Dienstenkosten)
 ```
 
-**Gidsreferentie:** [Gids Veldmanipulatie - Master Data](../then/document-field/field-manipulation-guide.md#master-data-lookup)
+**Gidsreferentie:** [Gids Veldmanipulatie - Master Data](../then/document-field/field-manipulation-guide.md)
 
----
+***
 
 ### Stap 7: Valideer Berekeningen
 
 **Vergelijk Berekend Totaal met Factuurtotaal:**
 
-**Kaart:** CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+**Kaart:** CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES
 
 **Configuratie:**
+
 ```
 Veld 1: Calculated_Grand_Total
 Veld 2: Invoice_Total (uit OCR)
@@ -378,6 +400,7 @@ Tolerantie: 1%
 ```
 
 **Berekening:**
+
 ```
 Variantie % = |Berekend - Factuur| / Factuur × 100
 
@@ -394,6 +417,7 @@ Voorbeeld:
 ```
 
 **Logica:**
+
 ```
 ALS Variantie ≤ 1%:
   Stel Validation_Status = "PASS"
@@ -404,17 +428,18 @@ ANDERS:
   Markeer voor handmatige verificatie
 ```
 
-**Gidsreferentie:** [Gids Conditiekaarten - Veldvergelijking](../and/condition-cards-complete-guide.md#field-comparison)
+**Gidsreferentie:** [Gids Conditiekaarten - Veldvergelijking](../and/condition-cards-complete-guide.md)
 
----
+***
 
 ### Stap 8: Formatteer Gegevens voor Export
 
 **Standaardiseer Formaten:**
 
-**Kaart:** ACTION_SET_FIELD_TO_TEXT
+**Kaart:** ACTION\_SET\_FIELD\_TO\_TEXT
 
 **Datumopmaak:**
+
 ```
 Veld: Invoice_Date_Formatted
 Waarde: FORMATDATE({{Invoice_Date}}, "YYYY-MM-DD")
@@ -422,6 +447,7 @@ Voorbeeld: 10/23/2025 → 2025-10-23
 ```
 
 **Nummeropmaak:**
+
 ```
 Veld: Amount_Formatted
 Waarde: FORMATNUMBER({{Grand_Total_EUR}}, 2, ",", ".")
@@ -429,13 +455,14 @@ Voorbeeld: 7601.13 → 7.601,13 (Duits formaat)
 ```
 
 **Tekstopmaak:**
+
 ```
 Veld: Supplier_Name_Upper
 Waarde: UPPERCASE({{Supplier_Name}})
 Voorbeeld: "ABC Corporation" → "ABC CORPORATION"
 ```
 
----
+***
 
 ## Geavanceerde Transformaties
 
@@ -457,6 +484,7 @@ Berekening:
 ```
 
 **Implementatie:**
+
 ```
 Voor elke regel:
   1. Haal belastingcategorie van product op
@@ -465,7 +493,7 @@ Voor elke regel:
   4. Som alle Line_Tax waarden = Total_Tax
 ```
 
----
+***
 
 ### Transformatie 2: Kortingsberekeningen
 
@@ -489,6 +517,7 @@ Eindtotaal = €8.820,00 + €1.675,80 = €10.495,80
 ```
 
 **Implementatie:**
+
 ```
 1. Controleer bestelwaarde voor geschiktheid volumekorting
 2. Bereken volumekorting
@@ -500,7 +529,7 @@ Eindtotaal = €8.820,00 + €1.675,80 = €10.495,80
 8. Bereken eindtotaal
 ```
 
----
+***
 
 ### Transformatie 3: Meeteenheidconversie
 
@@ -526,6 +555,7 @@ Conversie:
 ```
 
 **Implementatie:**
+
 ```
 1. Identificeer factuur-UOM
 2. Haal conversiefactor naar standaard-UOM op
@@ -535,7 +565,7 @@ Conversie:
 6. Sla zowel originele als geconverteerde waarden op
 ```
 
----
+***
 
 ### Transformatie 4: Datumberekeningen
 
@@ -559,6 +589,7 @@ Berekeningen:
 ```
 
 **Implementatie:**
+
 ```
 1. Extraheer Invoice_Date
 2. Extraheer Payment_Terms (bijv. "NET30", "NET60", "2/10 NET30")
@@ -569,7 +600,7 @@ Berekeningen:
 7. Stel Status in: "Current", "Due Soon", "Overdue"
 ```
 
----
+***
 
 ### Transformatie 5: Tekst Parsing & Extractie
 
@@ -595,7 +626,7 @@ Methode:
     Revisie = Extraheer cijfers uit Array[4] = "2"
 ```
 
----
+***
 
 ## Compleet Transformatie Workflow Diagram
 
@@ -674,7 +705,7 @@ FACTUURGEGEVENS GEËXTRAHEERD
    Document gereed voor volgende workflowstap
 ```
 
----
+***
 
 ## Configuratiesjablonen
 
@@ -715,9 +746,9 @@ FACTUURGEGEVENS GEËXTRAHEERD
 }
 ```
 
----
+***
 
-### Sjabloon 2: Valutaconversie Workflow
+### Sjabloon 2: Workflow Valutaconversie
 
 ```json
 {
@@ -750,13 +781,14 @@ FACTUURGEGEVENS GEËXTRAHEERD
 }
 ```
 
----
+***
 
 ## Foutafhandeling
 
 ### Veelvoorkomende Transformatiefouten
 
 **Fout 1: Delen door Nul**
+
 ```
 Probleem: Unit_Price = Total / Quantity, maar Quantity = 0
 
@@ -769,6 +801,7 @@ Oplossing:
 ```
 
 **Fout 2: Ongeldig Nummerformaat**
+
 ```
 Probleem: Veld bevat "€1.234,56" maar heb nummer 1234.56 nodig
 
@@ -781,6 +814,7 @@ Oplossing:
 ```
 
 **Fout 3: Datum Parse Mislukt**
+
 ```
 Probleem: Datum in onverwacht formaat
 
@@ -792,6 +826,7 @@ Oplossing:
 ```
 
 **Fout 4: Ontbrekende Conversiefactor**
+
 ```
 Probleem: Onbekende UOM-conversie
 
@@ -802,59 +837,58 @@ Oplossing:
   4. Gebruik originele waarden
 ```
 
----
+***
 
 ## Testchecklist
 
-- [ ] Alle berekeningen leveren correcte resultaten op
-- [ ] Decimale precisie behouden
-- [ ] Valutaconversies nauwkeurig
-- [ ] Datumberekeningen correct
-- [ ] Teksttransformaties werken
-- [ ] Null/lege waarden afgehandeld
-- [ ] Delen door nul voorkomen
-- [ ] Nummerformaten gevalideerd
-- [ ] Afrondingsregels correct toegepast
-- [ ] Alle getransformeerde velden gevuld
-- [ ] Validatie vangt fouten op
-- [ ] Exportformaat correct
+* [ ] Alle berekeningen leveren correcte resultaten op
+* [ ] Decimale precisie behouden
+* [ ] Valutaconversies nauwkeurig
+* [ ] Datumberekeningen correct
+* [ ] Teksttransformaties werken
+* [ ] Null/lege waarden afgehandeld
+* [ ] Delen door nul voorkomen
+* [ ] Nummerformaten gevalideerd
+* [ ] Afrondingsregels correct toegepast
+* [ ] Alle getransformeerde velden gevuld
+* [ ] Validatie vangt fouten op
+* [ ] Exportformaat correct
 
----
+***
 
 ## Gerelateerde Patronen
 
 ### Patronen Die Goed Samenwerken:
 
-- **[API Integratie Patroon](api-integration-pattern.md)** - Haal wisselkoersen, verrijkingsgegevens op
-- **[PO Matching Patroon](po-matching-pattern.md)** - Variantieberekeningen
-- **[Beslissingslogica Patroon](decision-logic-pattern.md)** - Routeer op basis van berekende waarden
-- **[Taakbeheer Patroon](task-management-pattern.md)** - Maak taken voor validatiefouten
+* [**API Integratie Patroon**](api-integration-pattern.md) - Haal wisselkoersen, verrijkingsgegevens op
+* [**PO Bijpassende Patroon**](po-matching-pattern.md) - Variantieberekeningen
+* [**Beslissingslogica Patroon**](decision-logic-pattern.md) - Routeer op basis van berekende waarden
+* [**Taakbeheer Patroon**](task-management-pattern.md) - Maak taken voor validatiefouten
 
----
+***
 
 ## Gerelateerde Gidsen
 
 ### Vereisten
-- [Gids Veldmanipulatie](../then/document-field/field-manipulation-guide.md) - Alle veldoperaties
-- [Gids Conditiekaarten](../and/condition-cards-complete-guide.md) - Validatiecondities
-- [Call API Gids](../then/action/call-api-guide.md) - Externe gegevens ophalen
+
+* [Gids Veldmanipulatie](../then/document-field/field-manipulation-guide.md) - Alle veldoperaties
+* [Gids Conditiekaarten](../and/condition-cards-complete-guide.md) - Validatiecondities
+* [Call API Gids](../then/action/call-api-guide.md) - Externe gegevens ophalen
 
 ### Gerelateerde Kaarten
-- **ACTION_CALCULATE_FIELD** - [Gids Veldmanipulatie](../then/document-field/field-manipulation-guide.md#calculate-field)
-- **ACTION_SET_FIELD_TO_TEXT** - [Gids Veldmanipulatie](../then/document-field/field-manipulation-guide.md#set-field)
-- **ACTION_COPY_FIELD_VALUE** - [Gids Veldmanipulatie](../then/document-field/field-manipulation-guide.md#copy-field)
-- **CALL_API** - [Call API Gids](../then/action/call-api-guide.md)
-- **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** - [Gids Conditiekaarten](../and/condition-cards-complete-guide.md)
+
+* **ACTION\_CALCULATE\_FIELD** - [Gids Veldmanipulatie](../then/document-field/field-manipulation-guide.md)
+* **ACTION\_SET\_FIELD\_TO\_TEXT** - [Gids Veldmanipulatie](../then/document-field/field-manipulation-guide.md)
+* **ACTION\_COPY\_FIELD\_VALUE** - [Gids Veldmanipulatie](../then/document-field/field-manipulation-guide.md)
+* **CALL\_API** - [Call API Gids](../then/action/call-api-guide.md)
+* **CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES** - [Gids Conditiekaarten](../and/condition-cards-complete-guide.md)
 
 ### Volgende Stappen
-- Valideer resultaten: [Beslissingslogica Patroon](decision-logic-pattern.md)
-- Maak taken voor fouten: [Taakbeheer Patroon](task-management-pattern.md)
-- Gebruik in PO-matching: [PO Matching Patroon](po-matching-pattern.md)
 
----
+* Valideer resultaten: [Beslissingslogica Patroon](decision-logic-pattern.md)
+* Maak taken voor fouten: [Taakbeheer Patroon](task-management-pattern.md)
+* Gebruik in PO-matching: [PO Matching Patroon](po-matching-pattern.md)
 
-**Patroonversie:** 1.0
-**Laatst Bijgewerkt:** 23 oktober 2025
-**Moeilijkheidsgraad:** Gemiddeld
-**Geschatte Tijd:** 30-45 minuten
-**Succespercentage:** Hoog
+***
+
+**Patroonversie:** 1.0 **Laatst Bijgewerkt:** 23 oktober 2025 **Moeilijkheidsgraad:** Gemiddeld **Geschatte Tijd:** 30-45 minuten **Succespercentage:** Hoog

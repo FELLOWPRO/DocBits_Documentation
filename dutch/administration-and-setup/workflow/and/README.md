@@ -1,59 +1,61 @@
-# And: kies een voorwaardekaart
+# En
 
-Gebruik een **And**-kaart om te bepalen of een workflow na de **When**-trigger moet doorgaan. Voeg de controles toe die u nodig hebt vóór de **Then**-actie. Elke kaart toont velden die u moet invullen, zoals **Operator**, **Field Name** of **Value**; de schermafbeeldingen tonen de beschikbare kaartsjablonen, geen ingevulde regels.
+Gebruik een **En**-kaart om te beslissen of een workflow moet worden voortgezet na de **Wanneer**-trigger. Voeg de controles toe die u nodig heeft vóór de actie **Dan**. Elke kaart toont velden die moeten worden ingevuld, zoals **Exploitant**, **Veldnaam** of **Waarde**; de schermafbeeldingen tonen de beschikbare kaartsjablonen, niet de voltooide regels.
 
-Selecteer in de **Workflow Builder** onder **And...** de optie **Add Card**. Kies links een categorie, of typ een kaartnaam in **Search Card**. Selecteer een kaartvoorbeeld om het aan de workflow toe te voegen. U kunt door de voorbeeldlijst scrollen om meer kaarten te zien. Gebruik **×** om de keuzelijst te sluiten zonder een andere kaart te kiezen. Sla de workflow op nadat u de kaarten hebt geconfigureerd. Zie [Workflow](../README.md) voor de omliggende stappen **When**, **And** en **Then**.
+In de **Workflow-bouwer** selecteert u **Kaart toevoegen** onder **En...**. Kies een categorie aan de linkerkant of typ een kaartnaam in **Zoek kaart**. Selecteer een kaartvoorbeeld om deze aan de workflow toe te voegen. U kunt door de voorbeeldlijst scrollen om meer kaarten te zien. Gebruik **×** om de kiezer te sluiten zonder een andere kaart te kiezen. Nadat u de kaarten heeft geconfigureerd, slaat u de workflow op. Zie [Workflow](..) voor de omliggende stappen **Wanneer**, **En** en **Dan**.
 
-## Compare with Purchase Order
+## Vergelijk met inkooporder
 
-Gebruik deze kaarten om order- of factuurgegevens te vergelijken met een inkooporder, zoals eenheidsprijs, toegezegde leverdatum, kosten of hoeveelheid. Kies de velden, de operator en eventuele tolerantie die de geselecteerde kaart vraagt. Zie [Compare with Purchase Order](compare-with-purchase-order/README.md) voor de afzonderlijke kaarten.
+Gebruik deze kaarten om bestel- of factuurgegevens te vergelijken met een inkooporder, zoals eenheidsprijs, beloofde leverdatum, kosten of hoeveelheid. Kies de velden, operator en eventuele tolerantie waar de geselecteerde kaart om vraagt. Zie [Vergelijken met inkooporder](compare-with-purchase-order) voor de afzonderlijke kaarten.
 
-<figure><img src="../../../.gitbook/assets/and-category-po-comparison-en.png" alt="English And card picker with Compare with Purchase Order selected; visible previews include unit price, delivery date, charges, and quantity comparisons."><figcaption>Categorie Compare with Purchase Order in de Engelstalige Sandbox.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-72e8f3204ac8-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-## Document Field
+## Documentveld
 
-Kies deze categorie om een selectievakje of veldstatus te controleren, een veld met een waarde te vergelijken of twee velden met elkaar te vergelijken. Vul de plaatshouders **Field Name** en **Operator** in op de gekozen kaart. Sommige vergelijkingen vragen ook om een tolerantie. Zie [Document Field](document-field/README.md).
+Kies deze categorie om de status van een selectievakje of veld te controleren, een veld met een waarde te vergelijken of twee velden te vergelijken. Vul de tijdelijke aanduidingen **Veldnaam** en **Exploitant** in op de gekozen kaart. Sommige vergelijkingen vragen ook om tolerantie. Zie [Documentveld](document-field).
 
-<figure><img src="../../../.gitbook/assets/and-category-document-field-en.png" alt="English And card picker with Document Field selected; visible previews check a checkbox, field status, field values, and two-field comparisons."><figcaption>Document Field-controles gebruiken waarden uit het huidige document.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-833c7249ffc8-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-## Date & Time
+## Datum en tijd
 
-Gebruik **Date & Time** om een datum of tijd met een bereik te vergelijken, of om **Today** met een gekozen datum te vergelijken. Selecteer de **Operator** en de datumwaarden in de kaart. Zie [Date & Time](date-and-time/README.md).
+Gebruik **Datum en tijd** om een datum of tijd met een bereik te vergelijken, of vergelijk **Vandaag** met een gekozen datum. Selecteer de **Exploitant** en datumwaarden op de kaart. Zie [Datum en tijd](date-and-time).
 
-<figure><img src="../../../.gitbook/assets/and-category-date-time-en.png" alt="English And card picker with Date & Time selected; two previews compare a date or time with a range and compare Today with a Date."><figcaption>Date & Time biedt een bereikcontrole en een controle ten opzichte van vandaag.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-1ee68574d713-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-## Document
+## Documenteren
 
-Gebruik deze kaarten wanneer een workflow afhankelijk moet zijn van het **documenttype** of de **suborganisatie**. Kies het type of de organisatie die in de kaart wordt genoemd. Zie [Document](document/README.md).
+Gebruik deze kaarten wanneer een workflow afhankelijk moet zijn van het **documenttype** of **suborganisatie**. Kies het type of de organisatie genoemd op de kaart. Zie [Document](document).
 
-<figure><img src="../../../.gitbook/assets/and-category-document-en.png" alt="English And card picker with Document selected; previews check the document type and membership in a sub-organization."><figcaption>Documentvoorwaarden controleren het type of de suborganisatie.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-3c1a15fa2e11-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-## Logic
+## Logica
 
-Deze categorie bevat controles met een beslissingstabel, een HTTPS-respons, modulebeschikbaarheid, een geoffreerde artikelprijs, een kanswaarde of twee waarden. Open de specifieke kaart en vul de genoemde plaatshouders in; de HTTPS-kaart vraagt bijvoorbeeld om een URL, een methode en een geaccepteerde statuscode. Zie [Logic](logic/README.md).
+Deze categorie omvat controles met behulp van een beslissingstabel, een HTTPS-antwoord, de beschikbaarheid van modules, een opgegeven artikelprijs, een kanswaarde of twee waarden. Open de specifieke kaart en vul de benoemde tijdelijke aanduidingen in; De HTTPS-kaart vraagt ​​bijvoorbeeld om een ​​URL, methode en geaccepteerde statuscode. Zie [Logica](logic).
 
-<figure><img src="../../../.gitbook/assets/and-category-logic-en.png" alt="English And card picker with Logic selected; previews include decision table, HTTPS request, module active, quoted price, chance, and value comparison cards."><figcaption>Logic biedt verschillende soorten voorwaarden; kies het type dat bij uw regel past.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-6b17199fc268-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
 ## Status
 
-Gebruik **Status** om te controleren of een document een gekozen status heeft of dat de status in een geselecteerde set valt. Kies de **Operator** en de **Status** in de kaart. Zie [Status](status/README.md).
+Gebruik **Status** om te controleren of een document een gekozen status heeft of dat de status zich in een geselecteerde set bevindt. Kies de **Exploitant** en **Status** op de kaart. Zie [Status](status).
 
-<figure><img src="../../../.gitbook/assets/and-category-status-en.png" alt="English And card picker with Status selected; two previews compare Document status with a Status or a set of statuses."><figcaption>Statusvoorwaarden controleren de huidige status van het document.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-ff11a606e5a1-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-## Table
+## Tabel
 
-Deze kaarten onderzoeken rijen van documenttabellen. De zichtbare opties omvatten datumcontroles, tekstpatronen, houdbaarheid en vergelijkingen tussen kolommen. Selecteer de **Table name** en **Column Name** voordat u een operator of patroon kiest. Zie [Table](table/README.md).
+Deze kaarten onderzoeken documenttabelrijen. De zichtbare opties omvatten datumcontroles, tekstpatronen, houdbaarheid en vergelijkingen tussen kolommen. Selecteer de **Tabelnaam** en **Kolomnaam** voordat u een operator of patroon kiest. Zie [Tabel](table).
 
-<figure><img src="../../../.gitbook/assets/and-category-table-en.png" alt="English And card picker with Table selected; visible previews include date, regex pattern, shelf life, and table-column comparisons."><figcaption>Tabelvoorwaarden gebruiken rijen en kolommen uit een documenttabel.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-526dc164847b-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-## Compare with Quote Price
+## Vergelijk met offerteprijs
 
-Gebruik deze kaarten om een artikel te vergelijken met geoffreerde prijsgegevens. De zichtbare keuzes betreffen artikel-ID, leverancierstype, artikel-ID van de leverancier, eenheidsprijs en maateenheid. De **Operator** en de gegevensplaatshouders hangen af van de kaart die u selecteert.
+Gebruik deze kaarten om een artikel te vergelijken met prijsgegevens. De zichtbare keuzes omvatten artikel-ID, leveranciertype, artikel-ID leverancier, eenheidsprijs en maateenheid. De **Exploitant** en tijdelijke aanduidingen voor gegevens zijn afhankelijk van de kaart die u selecteert.
 
-<figure><img src="../../../.gitbook/assets/and-category-quote-price-en.png" alt="English And card picker with Compare with Quote Price selected; five previews cover item ID, supplier type, supplier item ID, unit price, and unit of measure."><figcaption>Compare with Quote Price is een aparte categorie in de huidige kaartkeuzelijst.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-4a7af1d99c73-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-## Assignee
+## Ontvanger
 
-Gebruik **Assignee** wanneer de voorwaarde afhangt van de toegewezen gebruiker of groep. Kies of u wilt vergelijken met één gebruiker of groep of met een geselecteerde set. Zie [Assignee](assignee/README.md).
+Gebruik **Toegewezene** wanneer de voorwaarde afhangt van de toegewezen gebruiker of groep. Kies of u wilt vergelijken met één gebruiker of groep of met een geselecteerde set. Zie [Toegewezene](assignee).
 
-<figure><img src="../../../.gitbook/assets/and-category-assignee-en.png" alt="English And card picker with Assignee selected; previews compare the assigned user or group with one or several choices."><figcaption>Assignee-voorwaarden controleren de gebruiker of groep die aan het document is toegewezen.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-08cbb6fd429c-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
+
+[Gedetailleerde offertevergelijkingskaarten en elk/alles-gedrag](../cards-overview/quote-comparison-guide.md).

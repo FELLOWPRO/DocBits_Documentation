@@ -1,6 +1,6 @@
-# Order Type of Purchase Order
+# Ordertype inkooporder
 
-<figure><img src="../../../../.gitbook/assets/image (277).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8a1cb3a5f80f-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel:**
 
@@ -8,19 +8,19 @@ Deze workflow-kaart is ontworpen om het ordertype van een inkooporder te vergeli
 
 ## **Onderdelen van de kaart:**
 
-1. **Any/All:**
+1. **Alle/Alles:**
    * **Beschrijving**: Definieert of de voorwaarde van toepassing is op elke of alle inkooporders die in de workflow worden geëvalueerd.
    * **Opties**:
      * **Any**: Aan de voorwaarde is voldaan als een van de inkooporders overeenkomt met de opgegeven voorwaarde.
      * **All**: Aan de voorwaarde is alleen voldaan als alle inkooporders aan de opgegeven voorwaarde voldoen.
-2. **Operator:**
+2. **Exploitant:**
    * **Beschrijving**: Definieert de voorwaarde die wordt toegepast om het ordertype met een opgegeven waarde te vergelijken.
    * **Opties**:
-     * **Equals (=)**: Controleert of het ordertype overeenkomt met de opgegeven waarde.
-     * **Not Equals (≠)**: Zorgt ervoor dat het ordertype verschilt van de opgegeven waarde.
-3. **Order Type:**
+     * **Is gelijk aan (=)**: Controleert of het ordertype overeenkomt met de opgegeven waarde.
+     * **Niet gelijk aan (≠)**: Zorgt ervoor dat het ordertype verschilt van de opgegeven waarde.
+3. **Bestellingstype:**
    * **Beschrijving**: Geeft de waarde op waarmee het ordertype van de inkooporder wordt vergeleken.
-   * **Detail**: De waarde moet overeenkomen met het ordertype of de classificatie in het systeem.
+   * **Details**: De waarde moet overeenkomen met het ordertype of de classificatie in het systeem.
 
 ## **Functionaliteit:**
 

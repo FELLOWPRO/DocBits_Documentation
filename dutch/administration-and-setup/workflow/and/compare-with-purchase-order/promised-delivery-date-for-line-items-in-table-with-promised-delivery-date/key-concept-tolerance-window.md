@@ -70,7 +70,7 @@ Het tolerantievenster definieert een bereik van acceptabele datums rond de beloo
   * **Geldige Datums:**
     * Elke datum **voor 6 jan**
   * **Ongeldige Datums:**
-    * Elke datum **op of na 6 jan**
+    * Elke datum **op van na 6 jan**
 
 ## Hoe "Toegestane Tolerantiedagen" het Tolerantievenster Beïnvloeden
 

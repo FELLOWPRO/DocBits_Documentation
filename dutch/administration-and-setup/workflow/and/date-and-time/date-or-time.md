@@ -1,6 +1,6 @@
-# Date or Time
+# Datum of tijd
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-aab11d0fe7ed-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel:**
 
@@ -10,7 +10,7 @@ Deze DocBits-kaart controleert of een opgegeven datum-/tijdwaarde binnen een ged
 
 * **Datum-/tijdvalidatie:** Deze kaart evalueert of een bepaalde datum/tijd binnen een opgegeven bereik valt met behulp van de volgende voorwaarden:
   * **Is:** Controleert of de datum/tijd binnen het gedefinieerde start- en eindbereik valt (inclusief).
-  * **Is Not:** Zorgt ervoor dat de datum/tijd buiten het gedefinieerde bereik valt.
+  * **Is niet:** Zorgt ervoor dat de datum/tijd buiten het gedefinieerde bereik valt.
 
 **Datum-/tijdbereik:** Gebruikers geven de start- en einddatum-/tijdwaarden op om het bereik voor vergelijking te definiëren.
 

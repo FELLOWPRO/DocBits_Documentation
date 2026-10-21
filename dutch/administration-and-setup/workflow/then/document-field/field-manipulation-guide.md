@@ -1,35 +1,53 @@
-# Field & Table Manipulation Cards - Complete Guide
+# Kaarten voor veld- en tabelbewerkingen
 
-Deze kaarten horen in de **Then**-groep van de Workflow Builder — de acties die worden uitgevoerd zodra aan de When/And-voorwaarden is voldaan:
+## Veld- en tabelbewerkingkaarten - Complete gids
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Kaarten worden via <strong>Add Card</strong> aan de <strong>Then</strong>-groep toegevoegd.</p></figcaption></figure>
+**Hoezen:** 9 kaarten voor het wijzigen van documentvelden en tabellen
 
-**Covers:** 9 cards for modifying document fields and tables
+***
 
----
+De veld- en tabelkaarten op deze pagina bevinden zich in de groep **Dan** van de Workflow Builder – de acties die worden uitgevoerd zodra de When/And-voorwaarden overeenkomen:
 
-# Document Field Manipulation
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-nl.png" alt="Niet-opgeslagen voorbeeld met Wanneer-, En- en Dan-kaarten. Vul alle velden in vóór uitvoering. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Niet-opgeslagen voorbeeld met Wanneer-, En- en Dan-kaarten. Vul alle velden in vóór uitvoering. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-## Card: ACTION_SET_FIELD_TO_TEXT / Set Field to Text Value
+***
 
-### Purpose
-Automatically fills a document field with specific text
+### 📌 Versie-informatie
 
-### When to Use
-- Populate field from decision
-- Set default values
-- Fill in standardized information
-- Update field based on conditions
+**Multiversiekaarten:** CALC\_COLUMNS (v2), CALC\_COLUMNS\_REGEX (v2), EDIT\_COLUMN (v2), AI\_CALC\_MTZ\_ETZ (v2)
 
-### How It Works
+**Versiepatroon:** Alle veldmanipulatiekaarten volgen v1 → v2-patroon **Sleutelwijziging:** v2 voegt ondersteuning voor internationalisering (i18n) toe met vertaalsleutels
+
+📖 [Volledige versiegeschiedenis](../../release.md) | [Kaartversies en gedrag](../../cards-overview/card-versions-guide.md)
+
+***
+
+## Manipulatie van documentvelden
+
+### Kaart: ACTION\_SET\_FIELD\_TO\_TEXT / Veld instellen op tekstwaarde
+
+#### Doel
+
+Vult automatisch een documentveld met specifieke tekst
+
+#### Wanneer te gebruiken
+
+* Vul het veld in vanaf het besluit
+* Stel standaardwaarden in
+* Vul gestandaardiseerde informatie in
+* Veld bijwerken op basis van voorwaarden
+
+#### Hoe het werkt
+
 ```
 IF Condition is true
     THEN Set Field "Category" to Value "Premium"
 ```
 
-### Example Scenarios
+#### Voorbeeldscenario's
 
-**Scenario 1: Set Approval Category**
+**Scenario 1: Goedkeuringscategorie instellen**
+
 ```
 Condition: Invoice amount > €10,000
     ↓
@@ -38,7 +56,8 @@ Action: Set "Approval_Category" field to "High Value"
 Result: Document now shows "Approval_Category: High Value"
 ```
 
-**Scenario 2: Set Supplier Category**
+**Scenario 2: Leverancierscategorie instellen**
+
 ```
 Condition: Supplier name contains "ABC"
     ↓
@@ -47,7 +66,8 @@ Action: Set "Supplier_Type" field to "Preferred Supplier"
 Result: Document marked as "Preferred Supplier"
 ```
 
-**Scenario 3: Set Processing Notes**
+**Scenario 3: Verwerkingsnotities instellen**
+
 ```
 Condition: Document has been rejected
     ↓
@@ -56,50 +76,55 @@ Action: Set "Processing_Notes" to "Requires supplier revision"
 Result: Note appears for next processor
 ```
 
-### Parameters
+#### Parameters
 
-**Field Name**
-Which field to update
+**Veldnaam** Welk veld moet worden bijgewerkt
+
 ```
 Examples: Category, Type, Status, Comment, Notes
 ```
 
-**Text Value**
-What to put in the field
+**Tekstwaarde** Wat u in het veld moet zetten
+
 ```
 Examples: "Approved", "Pending Review", "High Priority"
 ```
 
-### Configuration Steps
-1. Choose the field to fill
-2. Enter the text value
-3. Set conditions (when to fill)
-4. Save
+#### Configuratiestappen
 
----
+1. Kies het veld dat u wilt invullen
+2. Voer de tekstwaarde in
+3. Voorwaarden instellen (wanneer invullen)
+4. Opslaan
 
-## Card: ACTION_SET_BOOLEAN_FIELD / Set Checkbox Field
+***
 
-### Purpose
-Automatically checks or unchecks a checkbox field
+### Kaart: ACTION\_SET\_BOOLEAN\_FIELD / Selectievakjeveld instellen
 
-### When to Use
-- Mark as processed
-- Set approval flags
-- Enable/disable options
-- Mark for export
+#### Doel
 
-### How It Works
+Schakelt automatisch een selectievakje in of uit
+
+#### Wanneer te gebruiken
+
+* Markeer als verwerkt
+* Goedkeuringsvlaggen instellen
+* Opties in-/uitschakelen
+* Markeren voor export
+
+#### Hoe het werkt
+
 ```
 IF Condition is true
     THEN Check/Uncheck the "Approved" box
 ```
 
-### True = Checked, False = Unchecked
+#### Waar = aangevinkt, onwaar = niet aangevinkt
 
-**Examples:**
+**Voorbeelden:**
 
-**Example 1: Mark as Verified**
+**Voorbeeld 1: Markeren als geverifieerd**
+
 ```
 Condition: PO matches perfectly
     ↓
@@ -108,7 +133,8 @@ Action: Check "Verified" checkbox
 Result: ✅ Verified (checked)
 ```
 
-**Example 2: Flag for Manual Review**
+**Voorbeeld 2: Vlag voor handmatige beoordeling**
+
 ```
 Condition: Price variance > 10%
     ↓
@@ -117,7 +143,8 @@ Action: Check "Requires_Manual_Review" checkbox
 Result: ✅ Requires_Manual_Review (marked)
 ```
 
-**Example 3: Uncheck Pre-filled Box**
+**Voorbeeld 3: verwijder het vinkje voor vooraf ingevuld vakje**
+
 ```
 Condition: Supplier is blacklisted
     ↓
@@ -126,27 +153,31 @@ Action: Uncheck "Approved_for_Payment" checkbox
 Result: ☐ Approved_for_Payment (unchecked - blocked)
 ```
 
-### Parameters
+#### Parameters
+
 ```
 Checkbox Field: [Choose field]
 Set To: ☑ Checked (✅ True)
    or: ☐ Unchecked (❌ False)
 ```
 
----
+***
 
-## Card: ACTION_INVERT_BOOLEAN_FIELD / Toggle Checkbox
+### Kaart: ACTION\_INVERT\_BOOLEAN\_FIELD / Schakel selectievakje in
 
-### Purpose
-Flips checkbox state (checked → unchecked, vice versa)
+#### Doel
 
-### When to Use
-- Toggle approval status
-- Switch processing mode
-- Reverse previous state
-- Update boolean flags
+Draait de status van het selectievakje om (aangevinkt → niet aangevinkt, vice versa)
 
-### How It Works
+#### Wanneer te gebruiken
+
+* Goedkeuringsstatus schakelen
+* Verwerkingsmodus wijzigen
+* Vorige toestand omkeren
+* Booleaanse vlaggen bijwerken
+
+#### Hoe het werkt
+
 ```
 Current state: ✅ (Checked)
     ↓
@@ -163,7 +194,8 @@ ACTION_INVERT: Toggle the box
 New state: ✅ (Checked)
 ```
 
-### Example
+#### Voorbeeld
+
 ```
 Invoice received with "Priority" checked
     ↓
@@ -172,20 +204,23 @@ After processing, invert "Priority" checkbox
 Checkbox now unchecked (no longer priority)
 ```
 
----
+***
 
-## Card: ACTION_COPY_DOCFIELD_TO_DOCFIELD / Copy Field Value
+### Kaart: ACTION\_COPY\_DOCFIELD\_TO\_DOCFIELD / Veldwaarde kopiëren
 
-### Purpose
-Copies value from one field to another field
+#### Doel
 
-### When to Use
-- Copy supplier info to billing info
-- Duplicate data across fields
-- Standardize data format
-- Create backup of value
+Kopieert waarde van het ene veld naar het andere veld
 
-### How It Works
+#### Wanneer te gebruiken
+
+* Kopieer leveranciersgegevens naar factuurgegevens
+* Dupliceer gegevens over velden heen
+* Standaardiseer het gegevensformaat
+* Creëer een back-up van waarde
+
+#### Hoe het werkt
+
 ```
 Source Field: "Invoice_Supplier"  Value: "ABC Corp"
     ↓
@@ -196,9 +231,10 @@ Target Field: "Billing_Partner"  Value: "ABC Corp"
 Both fields now have same value
 ```
 
-### Real Examples
+#### Echte voorbeelden
 
-**Example 1: Copy Delivery Address**
+**Voorbeeld 1: Kopieer afleveradres**
+
 ```
 Source: "Delivery_Address" = "123 Main St, Berlin"
     ↓
@@ -207,7 +243,8 @@ Copy to: "Billing_Address"
 Result: Both fields show "123 Main St, Berlin"
 ```
 
-**Example 2: Copy Supplier Code**
+**Voorbeeld 2: Kopieer leverancierscode**
+
 ```
 Source: "Supplier_Code_External" = "SUPP-789"
     ↓
@@ -216,7 +253,8 @@ Copy to: "Supplier_Code_Internal"
 Result: Both codes match, system recognizes supplier
 ```
 
-**Example 3: Copy Amount for Validation**
+**Voorbeeld 3: Kopieerbedrag voor validatie**
+
 ```
 Source: "Invoice_Total" = "€5000"
     ↓
@@ -225,33 +263,38 @@ Copy to: "Amount_to_Validate"
 Result: Validation field has correct amount
 ```
 
-### Parameters
+#### Parameters
+
 ```
 Source Field: [Choose field to copy FROM]
 Target Field: [Choose field to copy TO]
 ```
 
-### Notes
-- Original field unchanged
-- Target field overwritten with source value
-- Good for standardizing data
+#### Opmerkingen
 
----
+* Oorspronkelijk veld ongewijzigd
+* Doelveld overschreven met bronwaarde
+* Goed voor het standaardiseren van gegevens
 
-# Table Manipulation
+***
 
-## Card: EDIT_COLUMN / Edit Table Column
+## Tabelmanipulatie
 
-### Purpose
-Changes values in a table column based on conditions
+### Kaart: EDIT\_COLUMN / Tabelkolom bewerken
 
-### When to Use
-- Fix pricing errors in line items
-- Update quantities
-- Correct item descriptions
-- Standardize values
+#### Doel
 
-### How It Works
+Wijzigt waarden in een tabelkolom op basis van voorwaarden
+
+#### Wanneer te gebruiken
+
+* Los prijsfouten in regelitems op
+* Hoeveelheden bijwerken
+* Correcte artikelbeschrijvingen
+* Standaardiseer waarden
+
+#### Hoe het werkt
+
 ```
 Table Column: "Unit_Price"
 Original Values: [100, 105, 103]
@@ -262,9 +305,10 @@ REPLACE: With new value
 Updated Column: [100, 110, 110] (example)
 ```
 
-### Example: Fix Pricing
+#### Voorbeeld: vaste prijzen
 
-**Scenario: Prices in wrong currency**
+**Scenario: Prijzen in verkeerde valuta**
+
 ```
 Table "Line_Items" with column "Price"
 
@@ -277,7 +321,8 @@ Action: Replace with 95 (corrected price)
 Result: [95, 95, 95] (prices corrected)
 ```
 
-### Parameters
+#### Parameters
+
 ```
 Table: [Choose table]
 Column: [Choose column to edit]
@@ -286,26 +331,30 @@ Replace with: [New value]
 Condition: [When to apply]
 ```
 
-### Common Uses
-- Fix unit prices
-- Standardize descriptions
-- Correct quantities
-- Update SKU numbers
+#### Gemeenschappelijk gebruik
 
----
+* Vaste eenheidsprijzen
+* Standaardiseer beschrijvingen
+* Juiste hoeveelheden
+* Update SKU-nummers
 
-## Card: CALC_COLUMNS / Calculate Column Values
+***
 
-### Purpose
-Performs calculation on table columns and stores result
+### Kaart: CALC\_COLUMNS / Kolomwaarden berekenen
 
-### When to Use
-- Calculate line totals (Qty × Unit Price)
-- Sum columns
-- Calculate discounts
-- Compute percentages
+#### Doel
 
-### How It Works
+Voert berekeningen uit op tabelkolommen en slaat het resultaat op
+
+#### Wanneer te gebruiken
+
+* Regeltotalen berekenen (aantal x eenheidsprijs)
+* Som kolommen
+* Bereken kortingen
+* Bereken percentages
+
+#### Hoe het werkt
+
 ```
 Column A (Quantity): 100
 Column B (Unit Price): €50
@@ -315,9 +364,10 @@ CALCULATE: A × B
 Column C (Line Total): €5000
 ```
 
-### Calculation Types
+#### Berekeningstypen
 
-**Type 1: Simple Multiplication**
+**Type 1: eenvoudige vermenigvuldiging**
+
 ```
 Formula: Qty × Unit Price = Line Total
 
@@ -331,7 +381,8 @@ Config:
   Result Column: Line Total
 ```
 
-**Type 2: Addition**
+**Type 2: Toevoeging**
+
 ```
 Formula: Base Price + Shipping + Tax = Total
 
@@ -347,7 +398,8 @@ Config:
   Result Column: Total
 ```
 
-**Type 3: Percentage Calculation**
+**Type 3: Percentageberekening**
+
 ```
 Formula: Amount × (1 + Tax%) = Total with Tax
 
@@ -360,7 +412,8 @@ Config:
   Result Column: Amount_with_Tax
 ```
 
-**Type 4: Subtraction**
+**Type 4: Aftrekken**
+
 ```
 Formula: Original Price - Discount = Final Price
 
@@ -374,9 +427,10 @@ Config:
   Result Column: Final Price
 ```
 
-### Real-World Example
+#### Voorbeeld uit de echte wereld
 
-**Invoice Line Items Calculation:**
+**Berekening factuurregelitems:**
+
 ```
 Table: Invoice_Lines
 
@@ -401,7 +455,8 @@ Shipping: €100.00
 TOTAL: €7835.00
 ```
 
-### Parameters
+#### Parameters
+
 ```
 Table: [Select table]
 Column 1: [First column]
@@ -410,22 +465,25 @@ Column 2: [Second column] (if needed)
 Result Column: [Where to put answer]
 ```
 
----
+***
 
-## Card: CALC_COLUMNS_REGEX / Calculate with Regex Pattern
+### Kaart: CALC\_COLUMNS\_REGEX / Bereken met Regex-patroon
 
-### Purpose
-Calculates column values based on pattern matching
+#### Doel
 
-### When to Use
-- Extract values from text using patterns
-- Format data based on rules
-- Convert values based on patterns
-- Parse structured text
+Berekent kolomwaarden op basis van patroonovereenkomst
 
-### How It Works
+#### Wanneer te gebruiken
 
-**Regex Pattern Matching:**
+* Haal waarden uit tekst met behulp van patronen
+* Formatteer gegevens op basis van regels
+* Converteer waarden op basis van patronen
+* Gestructureerde tekst analyseren
+
+#### Hoe het werkt
+
+**Regex-patroonaanpassing:**
+
 ```
 Original Value: "ABC-12345-XYZ"
 Pattern: Extract numbers only
@@ -433,9 +491,10 @@ Calculation: Convert to "12345"
 Result: "12345"
 ```
 
-### Example: Extract Supplier Code
+#### Voorbeeld: Leverancierscode extraheren
 
-**Scenario: Article numbers contain supplier info**
+**Scenario: Artikelnummers bevatten leveranciersinformatie**
+
 ```
 Table Column: "Article_Code"
 Values: ["SUPP001-2025-A", "SUPP002-2025-B"]
@@ -451,25 +510,28 @@ Article_Code: SUPP001-2025-A  →  Supplier_Code: SUPP001
 Article_Code: SUPP002-2025-B  →  Supplier_Code: SUPP002
 ```
 
-### Example: Format Phone Numbers
+#### Voorbeeld: Telefoonnummers opmaken
 
-**Scenario: Unformatted phone numbers**
+**Scenario: niet-geformatteerde telefoonnummers**
+
 ```
 Original: "491234567890"
 Pattern: Format as: +49 123 4567 890
 Result: "+49 123 4567 890"
 ```
 
-### Example: Extract Prices from Text
+#### Voorbeeld: Haal prijzen uit tekst
 
-**Scenario: Prices in text format**
+**Scenario: Prijzen in tekstformaat**
+
 ```
 Original: "Price is 99.99 EUR"
 Pattern: Extract number only
 Result: "99.99"
 ```
 
-### Parameters
+#### Parameters
+
 ```
 Table: [Select table]
 Column: [Column to analyze]
@@ -478,7 +540,8 @@ Replacement: [What to replace with]
 Result Column: [Where to store result]
 ```
 
-### Common Regex Patterns
+#### Algemene Regex-patronen
+
 ```
 Numbers only: [0-9]+
 Letters only: [a-zA-Z]+
@@ -487,11 +550,12 @@ Extract €: €(\d+\.\d{2})
 Date format: \d{4}-\d{2}-\d{2}
 ```
 
----
+***
 
-# Calculation Examples
+## Rekenvoorbeelden
 
-## Example 1: Invoice Total Calculation
+### Voorbeeld 1: Berekening van het factuurtotaal
+
 ```
 Step 1: Calculate line totals
   Each row: Qty × Unit Price
@@ -506,7 +570,8 @@ Step 4: Add shipping
   Final: €6500 + €1235 + €100 = €7835
 ```
 
-## Example 2: Variance Calculation
+### Voorbeeld 2: Variantieberekening
+
 ```
 PO Price: €100
 Invoice Price: €103
@@ -517,7 +582,8 @@ Variance = |3| / 100 × 100 = 3%
 Store in "Price_Variance%" column
 ```
 
-## Example 3: Discount Application
+### Voorbeeld 3: Kortingstoepassing
+
 ```
 Original Price: €100
 Discount %: 10%
@@ -525,9 +591,9 @@ Discount Amount: €100 × 0.10 = €10
 Final Price: €100 - €10 = €90
 ```
 
----
+***
 
-# Field Manipulation Workflow Example
+## Voorbeeld van een workflow voor veldmanipulatie
 
 ```
 Document arrives
@@ -549,62 +615,69 @@ In table: Calculate total with tax
 Document now has all calculated and populated fields
 ```
 
----
+***
 
-# Best Practices
+## Beste praktijken
 
-✅ **Do:**
-- Keep formulas simple
-- Test calculations with sample data
-- Verify results make sense
-- Document why you're changing fields
-- Use copy field when data is same
+✅ **Doe:**
 
-❌ **Don't:**
-- Create circular references (A=B, B=A)
-- Overwrite important data without reason
-- Create overly complex regex patterns
-- Forget to verify calculation results
-- Calculate on wrong table/columns
+* Houd formules eenvoudig
+* Testberekeningen met voorbeeldgegevens
+* Controleer of de resultaten zinvol zijn
+* Documenteer waarom u velden wijzigt
+* Gebruik het kopieerveld als de gegevens hetzelfde zijn
 
----
+❌ **Niet doen:**
 
-# Troubleshooting
+* Cirkelreferenties aanmaken (A=B, B=A)
+* Overschrijf belangrijke gegevens zonder reden
+* Maak te complexe regex-patronen
+* Vergeet de berekeningsresultaten te verifiëren
+* Bereken op verkeerde tabel/kolommen
 
-## "Field not updating"
-**Cause:** Condition not met or card not triggered
+***
 
-**Solution:**
-- Check condition is true
-- Verify card is in workflow
-- Test with sample data
-- Check for typos in field name
+## Problemen oplossen
 
-## "Calculation result wrong"
-**Cause:** Wrong columns selected or formula incorrect
+### "Veld wordt niet bijgewerkt"
 
-**Solution:**
-- Verify source columns
-- Check formula is correct
-- Test manually
-- Review decimal places/rounding
+**Oorzaak:** Aan voorwaarde is niet voldaan of kaart is niet geactiveerd
 
-## "Table shows error"
-**Cause:** Referenced column doesn't exist
+**Oplossing:**
 
-**Solution:**
-- Verify column name spelling
-- Check column has data
-- Ensure column data type matches calculation
-- Add missing columns if needed
+* Controleer of de voorwaarde waar is
+* Controleer of de kaart zich in de workflow bevindt
+* Test met voorbeeldgegevens
+* Controleer op typefouten in de veldnaam
 
----
+### "Berekeningsresultaat verkeerd"
 
-# Related Cards
+**Oorzaak:** Verkeerde kolommen geselecteerd of formule onjuist
 
-- **ACTION_COPY_DOCFIELD_TO_DOCFIELD** - Copy values
-- **EDIT_COLUMN** - Change table values
-- **CALC_COLUMNS** - Calculate formulas
-- **ACTION_SET_FIELD_TO_TEXT** - Set text values
-- **ACTION_SET_BOOLEAN_FIELD** - Check boxes
+**Oplossing:**
 
+* Bronkolommen verifiëren
+* Controleer de formule is correct
+* Handmatig testen
+* Controleer decimalen/afrondingen
+
+### "Tabel toont fout"
+
+**Oorzaak:** De kolom waarnaar wordt verwezen bestaat niet
+
+**Oplossing:**
+
+* Controleer de spelling van de kolomnaam
+* Controleer kolom bevat gegevens
+* Zorg ervoor dat het kolomgegevenstype overeenkomt met de berekening
+* Voeg indien nodig ontbrekende kolommen toe
+
+***
+
+## Gerelateerde kaarten
+
+* **ACTION\_COPY\_DOCFIELD\_TO\_DOCFIELD** - Waarden kopiëren
+* **EDIT\_COLUMN** - Tabelwaarden wijzigen
+* **CALC\_COLUMNS** - Formules berekenen
+* **ACTION\_SET\_FIELD\_TO\_TEXT** - Tekstwaarden instellen
+* **ACTION\_SET\_BOOLEAN\_FIELD** - Selectievakjes

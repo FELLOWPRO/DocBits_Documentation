@@ -1,76 +1,77 @@
-# API Integratie Patroon
+# API-integratiepatroon
 
-**Patroontype:** Integratie
-**Complexiteit:** Gemiddeld
-**Geschatte Insteltijd:** 45-60 minuten
-**Veelvoorkomende Gebruiksscenario's:** Externe gegevens ophalen, prijsvalidatie, masterdata opzoeken
+**Patroontype:** Integratie **Complexiteit:** Gemiddeld **Geschatte Insteltijd:** 45-60 minuten **Veelvoorkomende Gebruiksscenario's:** Externe gegevens ophalen, prijsvalidatie, masterdata opzoeken
 
----
+***
 
-U bouwt dit patroon in de **Workflow Builder** (Workflow Dashboard → Workflowlijst → Workflow Toevoegen). Klik op **Add Card** om de kaartbibliotheek te openen en kies de kaarten die dit patroon gebruikt — `CALL_API`, `CONDITION_HTTPS_REQUEST_STATUS`, `ACTION_SET_FIELD_TO_TEXT` en `CONDITION_COMPARE_TWO_DOCFIELD_VALUES`:
+U bouwt dit patroon in de **Workflow-bouwer** (Workflow Dashboard → Workflowlijst → Workflow Toevoegen). Klik op **Kaart toevoegen** om de kaartbibliotheek te openen en kies de kaarten die dit patroon gebruikt — `CALL_API`, `CONDITION_HTTPS_REQUEST_STATUS`, `ACTION_SET_FIELD_TO_TEXT` en `CONDITION_COMPARE_TWO_DOCFIELD_VALUES`:
 
-<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card-bibliotheek in de Workflow Builder, gegroepeerd per categorie"><figcaption><p>De <strong>Add Card</strong>-bibliotheek — kies de API-, voorwaarde- en veldkaarten die door dit patroon worden gebruikt uit deze categorieën.</p></figcaption></figure>
-
----
+***
 
 ## Patroonoverzicht
 
 Dit patroon demonstreert hoe u DocBits kunt integreren met externe API's om gegevens uit externe systemen op te halen, te valideren en op te slaan. Het is een van de meest voorkomende workflowpatronen voor het verbinden van DocBits met prijssystemen, validatiediensten, ERP-systemen en andere externe gegevensbronnen.
 
 **Wat Dit Patroon Doet:**
+
 1. Roept een externe API aan om gegevens op te halen
 2. Valideert de API-respons
 3. Slaat responsgegevens op in documentvelden
 4. Neemt beslissingen op basis van opgehaalde gegevens
 5. Routeert documenten dienovereenkomstig
 
----
+***
 
 ## Wanneer Dit Patroon Te Gebruiken
 
 Gebruik dit patroon wanneer u het volgende moet doen:
-- ✅ Real-time prijzen ophalen uit externe systemen
-- ✅ Leveranciersinformatie valideren tegen masterdatabase
-- ✅ Productdetails opzoeken uit catalogussystemen
-- ✅ Wisselkoersen ophalen van valutadiensten
-- ✅ Adressen verifiëren met geocodingdiensten
-- ✅ Voorraadniveaus controleren uit magazijnsystemen
-- ✅ Belastingtarieven valideren van belastingdiensten
+
+* ✅ Real-time prijzen ophalen uit externe systemen
+* ✅ Leveranciersinformatie valideren tegen masterdatabase
+* ✅ Productdetails opzoeken uit catalogussystemen
+* ✅ Wisselkoersen ophalen van valutadiensten
+* ✅ Adressen verifiëren met geocodingdiensten
+* ✅ Voorraadniveaus controleren uit magazijnsystemen
+* ✅ Belastingtarieven valideren van belastingdiensten
 
 **Gebruik dit patroon niet wanneer:**
-- ❌ Gegevens al in DocBits masterdata staan (gebruik in plaats daarvan masterdata lookup)
-- ❌ Extern systeem geen API heeft (gebruik in plaats daarvan DocOperator Script patroon)
-- ❌ Gegevens niet vaak veranderen (overweeg handmatige import)
 
----
+* ❌ Gegevens al in DocBits masterdata staan (gebruik in plaats daarvan masterdata lookup)
+* ❌ Extern systeem geen API heeft (gebruik in plaats daarvan DocOperator Script patroon)
+* ❌ Gegevens niet vaak veranderen (overweeg handmatige import)
+
+***
 
 ## Compleet Workflowvoorbeeld
 
 ### Scenario: Valideer Factuurprijs Tegen Huidige Prijs-API
 
 **Bedrijfsvereiste:**
-- Leverancier stuurt factuur
-- Factuur toont eenheidsprijs van €52,00
-- We moeten verifiëren of dit overeenkomt met de huidige leveranciersprijzen
-- Als de prijs meer dan 5% afwijkt, escaleren voor beoordeling
+
+* Leverancier stuurt factuur
+* Factuur toont eenheidsprijs van €52,00
+* We moeten verifiëren of dit overeenkomt met de huidige leveranciersprijzen
+* Als de prijs meer dan 5% afwijkt, escaleren voor beoordeling
 
 **Gebruikte Workflowkaarten:**
-1. CALL_API - Haal huidige prijs op van leveranciers-API
-2. CONDITION_HTTPS_REQUEST_STATUS - Controleer of API-aanroep is gelukt
-3. ACTION_SET_FIELD_TO_TEXT - Sla API-prijs op in documentveld
-4. CONDITION_COMPARE_TWO_DOCFIELD_VALUES - Vergelijk factuurprijs vs API-prijs
-5. ACTION_ASSIGN_TO_USER - Routeer op basis van vergelijkingsresultaat
-6. tasks_create - Maak beoordelingstaak indien nodig
 
----
+1. CALL\_API - Haal huidige prijs op van leveranciers-API
+2. CONDITION\_HTTPS\_REQUEST\_STATUS - Controleer of API-aanroep is gelukt
+3. ACTION\_SET\_FIELD\_TO\_TEXT - Sla API-prijs op in documentveld
+4. CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES - Vergelijk factuurprijs vs API-prijs
+5. ACTION\_ASSIGN\_TO\_USER - Routeer op basis van vergelijkingsresultaat
+6. tasks\_create - Maak beoordelingstaak indien nodig
+
+***
 
 ## Stap-voor-Stap Implementatie
 
 ### Stap 1: Roep Externe API Aan
 
-**Kaart:** CALL_API of ACTION_CALL_EXTERNAL_API
+**Kaart:** CALL\_API of ACTION\_CALL\_EXTERNAL\_API
 
 **Configuratie:**
+
 ```json
 {
   "api_endpoint": "https://api.supplier-system.com/v1/pricing",
@@ -89,6 +90,7 @@ Gebruik dit patroon wanneer u het volgende moet doen:
 ```
 
 **Verwachte Respons:**
+
 ```json
 {
   "success": true,
@@ -104,19 +106,21 @@ Gebruik dit patroon wanneer u het volgende moet doen:
 
 **Gidsreferentie:** [Call API Gids](../then/action/call-api-guide.md)
 
----
+***
 
 ### Stap 2: Valideer API-respons
 
-**Kaart:** CONDITION_HTTPS_REQUEST_STATUS
+**Kaart:** CONDITION\_HTTPS\_REQUEST\_STATUS
 
 **Configuratie:**
+
 ```
 Operator: IS EQUAL TO
 Status Code: 200
 ```
 
 **Logica:**
+
 ```
 ALS API 200 retourneert (succes):
   → Ga door met gegevens opslaan
@@ -126,31 +130,34 @@ ANDERS:
   → Maak handmatige beoordelingstaak
 ```
 
-**Gidsreferentie:** [Gids Conditiekaarten - HTTP Status](../and/condition-cards-complete-guide.md#condition-https-request-status)
+**Gidsreferentie:** [Gids Conditiekaarten - HTTP Status](../and/condition-cards-complete-guide.md)
 
----
+***
 
 ### Stap 3: Sla API-respons op in Documentvelden
 
-**Kaart:** ACTION_SET_FIELD_TO_TEXT (of gelijkwaardige veldinsteller)
+**Kaart:** ACTION\_SET\_FIELD\_TO\_TEXT (of gelijkwaardige veldinsteller)
 
 **Configuratie:**
 
-**Veld 1: Current_API_Price**
+**Veld 1: Current\_API\_Price**
+
 ```
 Veldnaam: Current_API_Price
 Veldwaarde: {{API_RESPONSE:data.unit_price}}
 Veldtype: Nummer
 ```
 
-**Veld 2: API_Price_Valid_Until**
+**Veld 2: API\_Price\_Valid\_Until**
+
 ```
 Veldnaam: API_Price_Valid_Until
 Veldwaarde: {{API_RESPONSE:data.valid_until}}
 Veldtype: Datum
 ```
 
-**Veld 3: API_Discount_Available**
+**Veld 3: API\_Discount\_Available**
+
 ```
 Veldnaam: API_Discount_Available
 Veldwaarde: {{API_RESPONSE:data.discount_applicable}}
@@ -159,15 +166,16 @@ Veldtype: Booleaans
 
 **Resultaat:** Gegevens van API zijn nu opgeslagen in documentvelden voor later gebruik
 
-**Gidsreferentie:** [Gids Veldmanipulatie - API-gegevens Opslaan](../then/document-field/field-manipulation-guide.md#storing-api-data)
+**Gidsreferentie:** [Gids Veldmanipulatie - API-gegevens Opslaan](../then/document-field/field-manipulation-guide.md)
 
----
+***
 
 ### Stap 4: Vergelijk Factuurprijs met API-prijs
 
-**Kaart:** CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+**Kaart:** CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES
 
 **Configuratie:**
+
 ```
 Veld 1: Invoice_Unit_Price (uit OCR-extractie)
 Veld 2: Current_API_Price (uit API-respons)
@@ -176,6 +184,7 @@ Tolerantie: 5%
 ```
 
 **Berekening:**
+
 ```
 Variantie % = |(Factuurprijs - API-prijs)| / API-prijs × 100
 
@@ -188,44 +197,47 @@ Voorbeeld:
   Resultaat: PASS
 ```
 
-**Gidsreferentie:** [Gids Conditiekaarten - Veldvergelijking](../and/condition-cards-complete-guide.md#field-comparison)
+**Gidsreferentie:** [Gids Conditiekaarten - Veldvergelijking](../and/condition-cards-complete-guide.md)
 
----
+***
 
 ### Stap 5: Routeer op Basis van Validatieresultaat
 
 **Scenario A: Prijs Binnen Tolerantie (Pass)**
 
 **Kaarten:**
-- ACTION_SET_FIELD_TO_TEXT
-  - Stel veld "Price_Validation_Status" in op "PASS"
-  - Stel veld "Price_Variance_Percent" in op "4%"
-- ACTION_APPROVE_DOCUMENT
-  - Document automatisch goedkeuren
+
+* ACTION\_SET\_FIELD\_TO\_TEXT
+  * Stel veld "Price\_Validation\_Status" in op "PASS"
+  * Stel veld "Price\_Variance\_Percent" in op "4%"
+* ACTION\_APPROVE\_DOCUMENT
+  * Document automatisch goedkeuren
 
 **Scenario B: Prijs Buiten Tolerantie (Fail)**
 
 **Kaarten:**
-- ACTION_SET_FIELD_TO_TEXT
-  - Stel veld "Price_Validation_Status" in op "FAIL"
-  - Stel veld "Price_Variance_Percent" in op "12%" (voorbeeld)
-- tasks_create
-  - Taaktitel: "Review Price Variance - {{DOCUMENT_NUMBER}}"
-  - Taakbeschrijving: "Invoice price (€{{Invoice_Unit_Price}}) exceeds API price (€{{Current_API_Price}}) by {{Price_Variance_Percent}}"
-  - Prioriteit: Hoog
-- ACTION_ASSIGN_TO_USER
-  - Toewijzen aan: Inkoopmanager
-- ACTION_SEND_EMAIL_TO_GROUPS
-  - Stuur melding naar Inkoopteam
+
+* ACTION\_SET\_FIELD\_TO\_TEXT
+  * Stel veld "Price\_Validation\_Status" in op "FAIL"
+  * Stel veld "Price\_Variance\_Percent" in op "12%" (voorbeeld)
+* tasks\_create
+  * Taaktitel: "Review Price Variance - \{{DOCUMENT\_NUMBER\}}"
+  * Taakbeschrijving: "Invoice price (€\{{Invoice\_Unit\_Price\}}) exceeds API price (€\{{Current\_API\_Price\}}) by \{{Price\_Variance\_Percent\}}"
+  * Prioriteit: Hoog
+* ACTION\_ASSIGN\_TO\_USER
+  * Toewijzen aan: Inkoopmanager
+* ACTION\_SEND\_EMAIL\_TO\_GROUPS
+  * Stuur melding naar Inkoopteam
 
 **Gidsreferenties:**
-- [Toewijzingsgids](../then/assignee/assignment-user-guide.md)
-- [Taaktoewijzingsgids](../then/task/task-assignment-guide.md)
-- [Gids E-mail Verzenden](../then/action/send-email-groups-guide.md)
 
----
+* [Toewijzingsgids](../then/assignee/assignment-user-guide.md)
+* [Taaktoewijzingsgids](../then/task/task-assignment-guide.md)
+* [Gids E-mail Verzenden](../then/action/send-email-groups-guide.md)
 
-## Compleet Workflow Diagram
+***
+
+## Compleet workflowdiagram
 
 ```
 DOCUMENT KOMT AAN (Factuur met Product ABC123, Prijs €52)
@@ -278,7 +290,7 @@ DOCUMENT KOMT AAN (Factuur met Product ABC123, Prijs €52)
 │        → EINDE (API Fout - Handmatige Beoordeling)
 ```
 
----
+***
 
 ## Configuratiesjablonen
 
@@ -300,7 +312,7 @@ DOCUMENT KOMT AAN (Factuur met Product ABC123, Prijs €52)
 
 **Gebruik:** Eenvoudig gegevens opzoeken op ID
 
----
+***
 
 ### Sjabloon 2: POST-verzoek met Body (Validatie)
 
@@ -324,7 +336,7 @@ DOCUMENT KOMT AAN (Factuur met Product ABC123, Prijs €52)
 
 **Gebruik:** Documentgegevens verzenden voor validatie
 
----
+***
 
 ### Sjabloon 3: Complex Verzoek met Geneste Gegevens
 
@@ -360,7 +372,7 @@ DOCUMENT KOMT AAN (Factuur met Product ABC123, Prijs €52)
 
 **Gebruik:** Complexe documentverwerking met tabelgegevens
 
----
+***
 
 ## Foutafhandeling
 
@@ -369,10 +381,12 @@ DOCUMENT KOMT AAN (Factuur met Product ABC123, Prijs €52)
 #### Fout 1: Verbindingstime-out
 
 **Symptomen:**
-- API reageert niet
-- Workflow blijft wachten
 
-**Oplossing:**
+* API reageert niet
+* Workflow blijft wachten
+
+**Oplossend:**
+
 ```
 1. Controleer URL API-eindpunt (typfout?)
 2. Verifieer netwerkconnectiviteit
@@ -389,10 +403,12 @@ DOCUMENT KOMT AAN (Factuur met Product ABC123, Prijs €52)
 #### Fout 2: 401 Ongeautoriseerd
 
 **Symptomen:**
-- API retourneert 401 status
-- Authenticatie mislukt
 
-**Oplossing:**
+* API retourneert 401 status
+* Authenticatie mislukt
+
+**Oplossend:**
+
 ```
 1. Verifieer of API-sleutel correct is
 2. Controleer of API-sleutel is verlopen
@@ -409,10 +425,12 @@ DOCUMENT KOMT AAN (Factuur met Product ABC123, Prijs €52)
 #### Fout 3: Ongeldig Responsformaat
 
 **Symptomen:**
-- Respons ontvangen maar kan niet parsen
-- Ontbrekende verwachte velden
 
-**Oplossing:**
+* Respons ontvangen maar kan niet parsen
+* Ontbrekende verwachte velden
+
+**Oplossend:**
+
 ```
 1. Verifieer API-documentatie
 2. Controleer of responsstructuur overeenkomt met verwachtingen
@@ -424,9 +442,9 @@ DOCUMENT KOMT AAN (Factuur met Product ABC123, Prijs €52)
      → Log respons voor debugging
 ```
 
-**Gidsreferentie:** [Call API Probleemoplossing](../then/action/call-api-guide.md#troubleshooting)
+**Gidsreferentie:** [Call API Probleemoplossing](../then/action/call-api-guide.md)
 
----
+***
 
 ## Geavanceerde Variaties
 
@@ -441,7 +459,7 @@ Stap 3: Roep Prijs-API Aan → Haal Prijs Op (met Product-ID uit Stap 2)
 Stap 4: Valideer & Sla alle gegevens op
 ```
 
----
+***
 
 ### Variatie 2: Voorwaardelijke API-aanroepen
 
@@ -455,7 +473,7 @@ ANDERS:
   → Sla API-aanroep over (niet nodig voor kleine bedragen)
 ```
 
----
+***
 
 ### Variatie 3: API-responscaching
 
@@ -471,45 +489,47 @@ ANDERS:
      → Stel "API_Last_Called" in op vandaag
 ```
 
----
+***
 
 ## Prestatieoverwegingen
 
 ### Beste Praktijken
 
 ✅ **Doen:**
-- Cache API-responsen waar mogelijk
-- Gebruik time-outinstellingen (30-60 seconden)
-- Implementeer retry-logica voor tijdelijke storingen
-- Log API-aanroepen voor debugging
-- Monitor API-gebruik/kosten
-- Test eerst met voorbeelddocumenten
+
+* Cache API-responsen waar mogelijk
+* Gebruik time-outinstellingen (30-60 seconden)
+* Implementeer retry-logica voor tijdelijke storingen
+* Log API-aanroepen voor debugging
+* Monitor API-gebruik/kosten
+* Test eerst met voorbeelddocumenten
 
 ❌ **Niet Doen:**
-- API's synchroon aanroepen voor elk document (overweeg batchverwerking)
-- Responsfouten negeren
-- Inloggegevens hardcoderen in workflow
-- Onnodige API-aanroepen maken
-- Vergeten time-outs af te handelen
 
----
+* API's synchroon aanroepen voor elk document (overweeg batchverwerking)
+* Responsfouten negeren
+* Inloggegevens hardcoderen in workflow
+* Onnodige API-aanroepen maken
+* Vergeten time-outs af te handelen
+
+***
 
 ## Testchecklist
 
 Voordat u dit patroon implementeert:
 
-- [ ] Test API-aanroep met geldige gegevens
-- [ ] Test API-aanroep met ongeldige gegevens
-- [ ] Test time-outscenario (wat gebeurt er als API traag is?)
-- [ ] Test authenticatiefout
-- [ ] Test ongeldig responsformaat
-- [ ] Test veldopslag (gegevens correct opgeslagen?)
-- [ ] Test vergelijkingslogica (correcte berekening?)
-- [ ] Test routering (documenten gaan naar juiste plaats?)
-- [ ] Test foutafhandeling (fouten netjes afgehandeld?)
-- [ ] Test met hoog volume (prestaties acceptabel?)
+* [ ] Test API-aanroep met geldige gegevens
+* [ ] Test API-aanroep met ongeldige gegevens
+* [ ] Test time-outscenario (wat gebeurt er als API traag is?)
+* [ ] Test authenticatiefout
+* [ ] Test ongeldig responsformaat
+* [ ] Test veldopslag (gegevens correct opgeslagen?)
+* [ ] Test vergelijkingslogica (correcte berekening?)
+* [ ] Test routering (documenten gaan naar juiste plaats?)
+* [ ] Test foutafhandeling (fouten netjes afgehandeld?)
+* [ ] Test met hoog volume (prestaties acceptabel?)
 
----
+***
 
 ## Praktijkvoorbeelden
 
@@ -517,95 +537,99 @@ Voordat u dit patroon implementeert:
 
 **API:** https://api.exchangerate-api.com/v4/latest/USD
 
-**Workflow:**
+**Werkstroom:**
+
 1. Extraheer factuurvaluta: "GBP"
 2. Roep wisselkoers-API aan
 3. Haal GBP→EUR wisselkoers op
 4. Bereken EUR-equivalent
-5. Sla op in "Amount_EUR" veld
+5. Sla op in het veld "Amount\_EUR".
 6. Ga door met verwerking met EUR-bedrag
 
----
+***
 
 ### Voorbeeld 2: Leverancierskredietcontrole
 
 **API:** Interne kredietcontroledienst
 
-**Workflow:**
+**Werkstroom:**
+
 1. Extraheer leverancierscode
 2. Roep kredietcontrole-API aan
 3. Haal kredietstatus op: "APPROVED" of "BLOCKED"
-4. ALS BLOCKED:
-   - Stop verwerking
-   - Maak urgente taak
-   - Meld financiële team
-5. ALS APPROVED:
-   - Ga door met normale workflow
+4. ALS GEBLOKKEERD:
+   * Stop verwerking
+   * Maak urgente taak
+   * Meld financiële team
+5. ALS GOEDGEKEURD:
+   * Ga door met normale workflow
 
----
+***
 
 ### Voorbeeld 3: Product Master Data Verrijking
 
 **API:** Productcatalogusdienst
 
-**Workflow:**
+**Werkstroom:**
+
 1. Extraheer productcode uit factuur
 2. Roep product-API aan
 3. Haal op: Productnaam, categorie, GL-rekening
 4. Sla op in documentvelden
 5. Gebruik voor automatische boekhouding
 
----
+***
 
 ## Gerelateerde Patronen
 
 ### Dit Patroon Werkt Goed Samen Met:
 
-- **[Gegevenstransformatie Patroon](data-transformation-pattern.md)** - Transformeer API-responsgegevens
-- **[Beslissingslogica Patroon](decision-logic-pattern.md)** - Routeer op basis van API-gegevens
-- **[Taakbeheer Patroon](task-management-pattern.md)** - Maak taken voor API-fouten
-- **[PO Matching Patroon](po-matching-pattern.md)** - Combineer API-prijzen met PO-validatie
+* [**Gegevenstransformatie Patroon**](data-transformation-pattern.md) - Transformeer API-responsgegevens
+* [**Beslissingslogica Patroon**](decision-logic-pattern.md) - Routeer op basis van API-gegevens
+* [**Taakbeheer Patroon**](task-management-pattern.md) - Maak taken voor API-fouten
+* [**PO Bijpassende Patroon**](po-matching-pattern.md) - Combineer API-prijzen met PO-validatie
 
----
+***
 
 ## Gerelateerde Gidsen
 
 ### Vereisten
-- [Call API Gids](../then/action/call-api-guide.md) - API-kaartdocumentatie
-- [Gids Conditiekaarten](../and/condition-cards-complete-guide.md) - Conditielogica
-- [Gids Veldmanipulatie](../then/document-field/field-manipulation-guide.md) - Veldoperaties
+
+* [Call API Gids](../then/action/call-api-guide.md) - API-kaartdocumentatie
+* [Gids Conditiekaarten](../and/condition-cards-complete-guide.md) - Conditielogica
+* [Gids Veldmanipulatie](../then/document-field/field-manipulation-guide.md) - Veldoperaties
 
 ### Gerelateerde Kaarten
-- **CALL_API** - [Call API Gids](../then/action/call-api-guide.md)
-- **ACTION_HTTPS_REQUEST** - [HTTPS Request Gids](../then/action/https-request-guide.md)
-- **CONDITION_HTTPS_REQUEST_STATUS** - [Gids Conditiekaarten](../and/condition-cards-complete-guide.md#condition-https-request-status)
-- **ACTION_SET_FIELD_TO_TEXT** - [Gids Veldmanipulatie](../then/document-field/field-manipulation-guide.md#set-field)
-- **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** - [Gids Conditiekaarten](../and/condition-cards-complete-guide.md#field-comparison)
+
+* **CALL\_API** - [Call API Gids](../then/action/call-api-guide.md)
+* **ACTION\_HTTPS\_REQUEST** - [HTTPS Request Gids](../then/action/https-request-guide.md)
+* **CONDITION\_HTTPS\_REQUEST\_STATUS** - [Gids Conditiekaarten](../and/condition-cards-complete-guide.md)
+* **ACTION\_SET\_FIELD\_TO\_TEXT** - [Gids Veldmanipulatie](../then/document-field/field-manipulation-guide.md)
+* **CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES** - [Gids Conditiekaarten](../and/condition-cards-complete-guide.md)
 
 ### Volgende Stappen
-- API-fouten oplossen: [Foutafhandeling](#foutafhandeling) hierboven
-- Voeg taakcreatie toe: [Taakbeheer Patroon](task-management-pattern.md)
-- Transformeer gegevens: [Gegevenstransformatie Patroon](data-transformation-pattern.md)
 
----
+* API-fouten oplossen: [Foutafhandeling](api-integration-pattern.md#foutafhandeling) hierboven
+* Voeg taakcreatie toe: [Taakbeheer Patroon](task-management-pattern.md)
+* Transformeer gegevens: [Gegevenstransformatie Patroon](data-transformation-pattern.md)
+
+***
 
 ## Ondersteuning & Bronnen
 
 **Hulp Nodig?**
-- Bekijk [Call API Probleemoplossing](../then/action/call-api-guide.md#troubleshooting)
-- Controleer [API Responscodes](../then/action/call-api-guide.md#response-scenarios)
-- Test API eerst met Postman
-- Neem contact op met ondersteuning van API-provider
+
+* Bekijk [Call API Probleemoplossing](../then/action/call-api-guide.md)
+* Controleer [API Responscodes](../then/action/call-api-guide.md)
+* Test API eerst met Postman
+* Neem contact op met ondersteuning van API-provider
 
 **Feedback:**
-- Meld patroonproblemen aan: docs@docbits.com
-- Suggesteer verbeteringen
-- Deel uw gebruiksscenario's
 
----
+* Meld patroonproblemen aan: docs@docbits.com
+* Suggesteer verbeteringen
+* Deel uw gebruiksscenario's
 
-**Patroonversie:** 1.0
-**Laatst Bijgewerkt:** 23 oktober 2025
-**Moeilijkheidsgraad:** Gemiddeld
-**Geschatte Tijd:** 45-60 minuten
-**Succespercentage:** Hoog (wanneer API stabiel is)
+***
+
+**Patroonversie:** 1.0 **Laatst Bijgewerkt:** 23 oktober 2025 **Moeilijkheidsgraad:** Gemiddeld **Geschatte Tijd:** 45-60 minuten **Succespercentage:** Hoog (wanneer API stabiel is)

@@ -1,6 +1,6 @@
 # Comparaison avec la commande : sens, tolérance et versions des cartes
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-72e8f3204ac8-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-72e8f3204ac8-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 Les cartes de comparaison PO comparent une valeur choisie à une valeur de référence. La référence détermine la base d'un pourcentage de tolérance. Effectuez d’abord le rapprochement des bons de commande, puis sélectionnez la comparaison, l’opérateur, Any/All et la tolérance demandée par la carte spécifique.
 

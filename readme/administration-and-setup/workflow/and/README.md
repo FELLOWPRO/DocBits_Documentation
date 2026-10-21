@@ -8,7 +8,7 @@ Dans **Générateur de flux de travail**, sélectionnez **Ajouter une carte** so
 
 Utilisez ces cartes pour comparer les données de commande ou de facture avec un bon de commande, telles que le prix unitaire, la date de livraison promise, les frais ou la quantité. Choisissez les champs, l'opérateur et toute tolérance demandée par la carte sélectionnée. Voir [Comparer avec le bon de commande](compare-with-purchase-order) pour les cartes individuelles.
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-72e8f3204ac8-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-72e8f3204ac8-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## Champ de document
 
@@ -20,13 +20,13 @@ Choisissez cette catégorie pour cocher une case ou l'état d'un champ, comparer
 
 Utilisez **Date et heure** pour comparer une date ou une heure avec une plage, ou comparez **Aujourd'hui** avec une date choisie. Sélectionnez les valeurs **Opérateur** et date dans la carte. Voir [Date et heure](date-and-time).
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-1ee68574d713-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-1ee68574d713-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## Documenter
 
 Utilisez ces cartes lorsqu'un flux de travail doit dépendre du **type de document** ou de la **sous-organisation**. Choisissez le type ou l'organisation nommée dans la carte. Voir [Document](document).
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-3c1a15fa2e11-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-3c1a15fa2e11-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## Logique
 
@@ -38,7 +38,7 @@ Cette catégorie comprend les vérifications utilisant une table de décision, u
 
 Utilisez **Statut** pour vérifier si un document a un statut choisi ou si son statut est dans un ensemble sélectionné. Choisissez le **Opérateur** et le **Statut** dans la carte. Voir [Statut](status).
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-ff11a606e5a1-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-ff11a606e5a1-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## Tableau
 
@@ -56,6 +56,6 @@ Utilisez ces cartes pour comparer un article avec les données de prix indiquée
 
 Utilisez **Responsable** lorsque la condition dépend de l'utilisateur ou du groupe affecté. Choisissez si vous souhaitez comparer avec un utilisateur ou un groupe ou avec un ensemble sélectionné. Voir [Cessionnaire](assignee).
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-08cbb6fd429c-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-08cbb6fd429c-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 [Cartes de comparaison de devis détaillées et comportement Any/All](../cards-overview/quote-comparison-guide.md).

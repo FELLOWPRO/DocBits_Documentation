@@ -46,3 +46,13 @@ Cette carte de workflow est conçue pour comparer la valeur d'un champ à une va
 ## **Conclusion :**
 
 La carte « Field Comparison with Tolerances » est un outil polyvalent pour les workflows nécessitant des évaluations flexibles. En permettant des comparaisons avec tolérances, elle garantit que les workflows restent efficaces et adaptables, tenant compte des variations du monde réel sans compromettre la précision.
+
+<!-- workflow-card-complete-example-20261021 condition_docfield_operator_value_tolerances -->
+
+### Exemple de tolérance de valeur de référence
+
+**Configuration :** Choisissez le champ de document numérique `total_amount`, l'égalité, la valeur de référence `100`, la tolérance absolue `5` et le type de tolérance Valeur.
+
+**Résultat attendu et contre-exemple :** Avec la valeur `103`, la condition est vraie car la différence est dans la tolérance autorisée. Avec la valeur `110`, la condition est fausse car la différence dépasse cette tolérance. Cette carte compare un champ avec une valeur de référence configurée. Utilisez la carte séparée à deux champs lorsque les deux côtés doivent provenir de champs de document. Les données manquantes ou non numériques nécessitent une enquête et non une correspondance supposée.
+
+Il s'agit d'une configuration de test illustrative et du résultat attendu ; il n'a pas été exécuté. Utilisez les données et les destinataires configurés dans votre organisation de test.

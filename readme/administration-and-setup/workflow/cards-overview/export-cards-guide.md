@@ -1,6 +1,6 @@
 # Cartes d'exportation de flux de travail et statut du document
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-11f244132c25-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-11f244132c25-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 Choisissez si vous souhaitez exporter immédiatement ou mettre une configuration en file d'attente pour l'exportation finale à la fin de l'exécution. Ces choix sont distincts du statut que le document devrait avoir après une exportation réussie.
 
@@ -40,3 +40,13 @@ Par exemple, sélectionnez `exported` lorsqu'une exportation réussie doit laiss
 ## Chèques obligatoires
 
 Testez une configuration valide, une configuration manquante, des tâches en attente avec les deux paramètres et les deux statuts de résultat. Testez la version déjà utilisée dans un workflow existant avant de la modifier. Pour une exportation en file d'attente, vérifiez l'exécution finale ; pour une exportation immédiate, vérifiez son propre résultat. Consultez les [Workflow Logs](../workflow-logs.md) et ne confondez pas une carte ignorée avec un succès.
+
+<!-- workflow-card-complete-example-20261021 action_export_with_config_deferred -->
+
+### Exemple d'exportation différée
+
+**Configuration :** Sur la v3, choisissez la configuration de test `DEMO_EXPORT`, laissez Ignorer les tâches en attente désactivée et sélectionnez `exported` comme statut après l'exportation. Placez la carte dans l'itinéraire validé prévu.
+
+**Résultat attendu et contre-exemple :** La carte collecte une demande d'export pour la fin de l'exécution du workflow. Seule une exécution finale réussie établit que la destination a reçu les données et que le document reste ouvert en tant que `exported`. Le succès d’une carte en file d’attente ne prouve pas à lui seul l’exportation ; une tâche bloquante non résolue ne doit pas être traitée comme une livraison.
+
+Il s'agit d'une configuration de test illustrative et du résultat attendu ; il n'a pas été exécuté. Utilisez les données et les destinataires configurés dans votre organisation de test.

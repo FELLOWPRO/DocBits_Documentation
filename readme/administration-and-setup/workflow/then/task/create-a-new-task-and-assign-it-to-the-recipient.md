@@ -54,3 +54,13 @@ La carte de workflow **« Créer une tâche avec repli »** assure une délégat
 ## **Conclusion :**
 
 La carte de workflow **« Créer une tâche avec repli »** assure une délégation des tâches fluide en intégrant un mécanisme de repli. En assignant les tâches en fonction des rôles et en proposant une option d'utilisateur alternatif, elle renforce la fiabilité et la flexibilité des processus de gestion des tâches.
+
+<!-- workflow-card-complete-example-20261021 oc_task -->
+
+### Exemple de tâche de destinataire
+
+**Configuration :** Saisissez un titre `Review delivery date`, une description identifiant le document synthétique, une priorité, un rôle Acheteur et un utilisateur de secours configuré `DEMO_REVIEWER`. Désactivez la notification par e-mail pour cette configuration illustrative.
+
+**Résultat attendu et contre-exemple :** Lorsqu'un acheteur peut être résolu, la nouvelle tâche est attribuée à cet utilisateur. Si le rôle ne peut pas être résolu, la solution de secours configurée est utilisée. Vérifier la propriété réelle des tâches ; un destinataire principal manquant ne prouve pas que l'utilisateur de secours existe ou qu'une tâche a été créée.
+
+Il s'agit d'une configuration de test illustrative et du résultat attendu ; il n'a pas été exécuté. Utilisez les données et les destinataires configurés dans votre organisation de test.

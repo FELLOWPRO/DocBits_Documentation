@@ -361,3 +361,13 @@ Headers: Authorization: Bearer token
 * **CONDITION\_HTTPS\_REQUEST\_STATUS** - Vérifiez si la demande a réussi
 * **ACTION\_SEND\_EMAIL** - Envoyez plutôt par e-mail
 * **ACTION\_RUN\_DOCOPERATOR\_SCRIPT** - Scripts automatisés
+
+<!-- workflow-card-complete-example-20261021 action_https_request -->
+
+### Exemple d'action HTTPS
+
+**Configuration :** Sélectionnez la méthode `POST`, remplacez `DEMO_WEBHOOK_URL` par votre point de terminaison de test autorisé, ajoutez l'en-tête `Content-Type: application/json` et le corps `{"document_number":"DEMO-001"}`. Configurez l'authentification uniquement si cela est requis par ce point de terminaison ; ne copiez jamais un vrai secret dans la documentation.
+
+**Résultat attendu et contre-exemple :** L'action envoie la requête configurée lorsque sa route de workflow s'exécute. Inspectez la réponse HTTP et le service de test de réception. Un délai d'attente n'est pas une preuve que le service n'a rien fait, et cette action Then est distincte de la carte And qui vérifie un statut HTTP. Cette demande d'illustration n'a pas été envoyée.
+
+Il s'agit d'une configuration de test illustrative et du résultat attendu ; il n'a pas été exécuté. Utilisez les données et les destinataires configurés dans votre organisation de test.

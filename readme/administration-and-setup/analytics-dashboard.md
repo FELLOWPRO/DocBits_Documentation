@@ -40,25 +40,33 @@ Elija la perspectiva adecuada para su análisis. Cada tipo de flujo le ofrece un
 
 Utilice el conmutador **Tipo de flujo** en la parte superior del panel para alternar entre perspectivas.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_types.png)
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_types-es.png" alt="Vistas de procesamiento, interacción del usuario y estado."><figcaption><p>Vistas de procesamiento, interacción del usuario y estado.</p></figcaption></figure>
+
 
 ### Flujo de Estado
 
 Realiza el seguimiento del recorrido del documento desde **Nuevo** hasta **Exportado** — útil para el análisis del ciclo de vida de extremo a extremo.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_status_flow.png)
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_status_flow-es.png" alt="Vista de estados del análisis."><figcaption><p>Vista de estados del análisis.</p></figcaption></figure>
+
 
 ### Flujo de Procesamiento
 
 Analiza el rendimiento en todos los **módulos técnicos de procesamiento** (OCR, clasificación, extracción, validación) — útil para identificar cuellos de botella del lado del sistema.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_processing_flow.png)
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_processing_flow-es.png" alt="Vista de procesamiento con los pasos del flujo."><figcaption><p>Vista de procesamiento con los pasos del flujo.</p></figcaption></figure>
+
 
 ### Flujo de Interacción del Usuario
 
 Se centra en los **puntos de contacto humanos** — tiempo de espera en cola, validación manual, revisión y aprobación — útil para identificar cuellos de botella del flujo de trabajo y de personal.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_user_interaction_flow.png)
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_user_interaction_flow-es.png" alt="Vista de usuarios sin datos para los filtros seleccionados."><figcaption><p>Vista de usuarios sin datos para los filtros seleccionados.</p></figcaption></figure>
+
 
 ## Opciones de filtro
 
@@ -68,13 +76,17 @@ El panel admite un potente filtrado multidimensional. Todos los gráficos, tarje
 
 Localice cualquier documento al instante por **nombre** o **ID único**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_search.png)
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_search-es.png" alt="Análisis filtrado por el término de validación."><figcaption><p>Análisis filtrado por el término de validación.</p></figcaption></figure>
+
 
 ### Pasos de flujo
 
 Seleccione pasos específicos para centrar su análisis. Activar/desactivar pasos también recalcula las métricas de tiempo en los demás componentes del panel.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_flow_steps.png)
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_flow_steps-es.png" alt="Filtro de pasos del flujo en el panel de análisis."><figcaption><p>Filtro de pasos del flujo en el panel de análisis.</p></figcaption></figure>
+
 
 ### Suborganización, Tipo de Documento, Proveedor, Grupo
 
@@ -85,7 +97,9 @@ Compare el rendimiento entre:
 * **Proveedores** — para identificar qué proveedores provocan los tiempos de procesamiento más largos
 * **Grupos** — para comparar el rendimiento entre los grupos de usuarios asignados (disponible para los tipos de flujo **Estado** e **Interacción del usuario**)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_dimensions.png)
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_dimensions-es.png" alt="Filtros de análisis por pasos, suborganización, tipo de documento y proveedor."><figcaption><p>Filtros de análisis por pasos, suborganización, tipo de documento y proveedor.</p></figcaption></figure>
+
 
 <mark style="color:red;">**Nota**</mark>: El filtro **Grupo** solo se aplica a los documentos que están **asignados directamente a un grupo**. Los documentos asignados a un usuario individual — incluso si ese usuario es miembro de un grupo — **no** se incluyen en los resultados del filtro de grupo.
 
@@ -95,13 +109,17 @@ Activado de forma predeterminada — solo los documentos que han completado la e
 
 <mark style="color:red;">**Nota**</mark>: Desactivar esta opción puede dar lugar a valores promedio inexactos, ya que también se incluyen en los cálculos los documentos que aún no se han completado.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_only_exported_toggle.png)
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_only_exported_toggle-es.png" alt="Opción para incluir solo documentos exportados."><figcaption><p>Opción para incluir solo documentos exportados.</p></figcaption></figure>
+
 
 ### Intervalo de tiempo
 
 Analice cualquier período desde **7 días** hasta un **año completo**, o establezca un **intervalo personalizado** mediante el selector de fechas.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_time_range.png)
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_time_range-es.png" alt="Intervalo de tiempo personalizado en la barra de filtros."><figcaption><p>Intervalo de tiempo personalizado en la barra de filtros.</p></figcaption></figure>
+
 
 ## Tarjetas de Pasos de flujo
 
@@ -115,7 +133,9 @@ Cada tarjeta muestra:
 
 Un conmutador **Seleccionar todo** en el encabezado le permite incluir o excluir cada paso a la vez.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_steps_card.png)
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_steps_card-es.png" alt="Tarjetas de pasos con tiempos de procesamiento agregados."><figcaption><p>Tarjetas de pasos con tiempos de procesamiento agregados.</p></figcaption></figure>
+
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
 
@@ -127,7 +147,9 @@ El conmutador **Comparar con el Promedio Mundial** controla si el Promedio Mundi
 * **Naranja** — su Tiempo Promedio está hasta un **+25%** por encima del Promedio Mundial
 * **Rojo** — su Tiempo Promedio está un **+25%** o más por encima del Promedio Mundial
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_global_average_comparison.png)
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_global_average_comparison-es.png" alt="Comparación del tiempo medio con el promedio global."><figcaption><p>Comparación del tiempo medio con el promedio global.</p></figcaption></figure>
+
 
 ## Gráfico de Tiempo Promedio
 
@@ -179,7 +201,9 @@ La Tabla de Datos proporciona acceso completo a todos los datos de fila subyacen
 * **Clasifique** haciendo clic en los encabezados de columna y **reordene** las columnas arrastrándolas y soltándolas.
 * **Descargar CSV** mediante el botón del encabezado de la tarjeta — solo se exportan las columnas visibles actualmente.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table.png)
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_data_table-es.png" alt="Tabla de análisis con encabezados en español; los valores de los documentos están ocultos."><figcaption><p>Tabla de análisis con encabezados en español; los valores de los documentos están ocultos.</p></figcaption></figure>
+
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 
@@ -187,4 +211,4 @@ La Tabla de Datos proporciona acceso completo a todos los datos de fila subyacen
 
 ## Touchless Intelligence
 
-La pestaña **Touchless Intelligence** muestra cuántos documentos pasan por DocBits sin que nadie los toque y por qué se detienen los demás. Véase [Touchless Intelligence](touchless-intelligence.md).
+La pestaña **Inteligencia sin contacto** muestra cuántos documentos pasan por DocBits sin que nadie los toque y por qué se detienen los demás. Véase [Touchless Intelligence](touchless-intelligence.md).

@@ -6,7 +6,6 @@ El Debug Collector captura una instantánea completa de su sesión de DocBits �
 
 Pulse <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> en Windows y Linux, o <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> en macOS. El diálogo Performance Report se abre de inmediato.
 
-<figure><img src="../../.gitbook/assets/debug-collector-dialog.png" alt="Diálogo Debug Collector"><figcaption><p>El diálogo Performance Report muestra la instantánea capturada y un formulario integrado para crear el ticket de soporte.</p></figcaption></figure>
 
 ## Qué se captura
 
@@ -35,3 +34,6 @@ Si desea una copia local de la instantánea, use **Copy Debug Data** para copiar
 * Nada sale de su navegador hasta que pulse **Send Report** — el atajo solo abre el diálogo.
 
 <mark>Revise la instantánea antes de enviarla si estaba trabajando con documentos que contienen datos de clientes. Los identificadores de documento visibles en las URLs aparecerán en el informe.</mark>
+
+
+Abra el informe de diagnóstico desde los controles de soporte, describa el problema y revise los datos recopilados antes de compartirlos. El informe reúne evidencias; por sí solo no identifica la causa.

@@ -1,5 +1,7 @@
 # Asignación y estado — Ejemplos prácticos
 
+Las imágenes actualizadas muestran borradores de condiciones y acciones sin guardar. Adapte los roles y condiciones a su organización.
+
 Para mantener una visión general, puede asignar a los flujos de trabajo diferentes títulos para saber de inmediato de qué tarea trata cada flujo de trabajo.
 
 Cree un nuevo flujo de trabajo: Haga clic en + ADD WORKFLOW
@@ -16,31 +18,31 @@ Si una factura u otro documento supera un determinado importe total que requiere
 
 **Test 1: Logic Card**
 
-When: **Assignee is:** Amier Haider
+When: **Assignee is:** Responsable de entrada
 
 And: **Document type is:** Invoice
 
-Then: **Assign document to:** Stefan Reppermund
+Then: **Assign document to:** Revisor de facturas
 
 ![](<../../.gitbook/assets/3 (1).png>)
 
 **Test 2: Logic Card**
 
-When: **Assignee is:** Amier Haider
+When: **Assignee is:** Responsable de entrada
 
 And: **Document type is:** Delivery Note
 
-Then: **Assign document to:** James Edwards
+Then: **Assign document to:** Revisor de albaranes
 
 ![](<../../.gitbook/assets/4 (1).png>)
 
 **Test 3: Logic Card**
 
-**When:** **Assignee is:** Amier Haider
+**When:** **Assignee is:** Responsable de entrada
 
 **And:** **Document type is:** Order Confirmation
 
-**Then:** **Assign document to:** Anian Sollinger
+**Then:** **Assign document to:** Revisor de pedidos
 
 ![](<../../.gitbook/assets/5 (1).png>)
 
@@ -54,11 +56,11 @@ Para tener una visión más sencilla de lo que debe ocurrir con un documento, pu
 
 **When:** **Document type is:** Delivery Note
 
-**And:** **Assignee is:** Amier Haider
+**And:** **Assignee is:** Responsable de entrada
 
 **Then:** **Change Status to:** Pending Approval
 
-<figure><img src="../../.gitbook/assets/workflow_test4_delivery_note_status.png" alt="Estado de albarán de entrega del Test 4 del flujo de trabajo"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test4_delivery_note_status-es.png" alt="Borrador de flujo para cambiar el estado de un documento."><figcaption><p>Borrador de flujo para cambiar el estado de un documento.</p></figcaption></figure>
 
 ![](<../../.gitbook/assets/8 (1).png>)
 
@@ -66,7 +68,7 @@ Para tener una visión más sencilla de lo que debe ocurrir con un documento, pu
 
 When: **Document type is:** Invoice
 
-And: **Assignee is:** Stefan Reppermund
+And: **Assignee is:** Revisor de facturas
 
 Then: **Change Status to:** Pending Second Approval
 
@@ -80,11 +82,11 @@ Si una factura u otro documento supera un determinado importe total que requiere
 
 **Test 6: Logic Card**
 
-When: **Assignee is:** Amier Haider
+When: **Assignee is:** Responsable de entrada
 
 And: Docfield **total\_amount** is **Greater than 500**
 
-Then: **Assign document to:** Asad Usman Khan
+Then: **Assign document to:** Responsable de aprobación
 
 <figure><img src="../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Asignación por importe total del Test 6 del flujo de trabajo"><figcaption></figcaption></figure>
 
@@ -94,15 +96,15 @@ También es posible introducir el estado en el flujo de trabajo, de modo que la 
 
 **Test 7: Logic Card**
 
-**When:** **Assignee is:** Amier Haider
+**When:** **Assignee is:** Responsable de entrada
 
 **And:** Docfield **total\_amount** is **Greater then 500**
 
-**Then:** **Assign document to:** Asad Usman Khan
+**Then:** **Assign document to:** Responsable de aprobación
 
 **Change Status to:** Pending Approval
 
-<figure><img src="../../.gitbook/assets/workflow_test7_status_update.png" alt="Actualización de estado del Test 7 del flujo de trabajo"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test7_status_update-es.png" alt="Acción de cambio de estado en un flujo sin guardar."><figcaption><p>Acción de cambio de estado en un flujo sin guardar.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -116,9 +118,9 @@ El flujo de trabajo con estas tarjetas de lógica está diseñado para verificar
 
 Puede asignar a estos documentos un estado concreto o asignarlos a un empleado específico.
 
-<div align="center"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Resumen de comprobación de coincidencia del Test 9 del flujo de trabajo"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_overview-es.png" alt="Borrador de flujo con una condición de comparación con pedidos."><figcaption><p>Borrador de flujo con una condición de comparación con pedidos.</p></figcaption></figure></div>
 
-<figure><img src="../../.gitbook/assets/workflow_test9_match_check_detail.png" alt="Detalle de comprobación de coincidencia del Test 9 del flujo de trabajo"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_detail-es.png" alt="Selector de tarjetas de comparación con pedidos."><figcaption><p>Selector de tarjetas de comparación con pedidos.</p></figcaption></figure>
 
 **Logic Card: Quantity or Unit Price or Discount Match**
 
@@ -128,9 +130,9 @@ Esta tarjeta de lógica está diseñada para verificar automáticamente que la c
 
 La lógica se activa cuando se cumple cualquiera de las siguientes condiciones en una confirmación de pedido en relación con el pedido de compra original:
 
-* **Quantity**: La cantidad de artículos pedidos coincide con la cantidad confirmada por el proveedor.
-* **Unit Price**: El precio por artículo acordado coincide con la confirmación del proveedor.
-* **Discount**: Cualquier descuento aplicado es coherente entre el pedido de compra y la confirmación de pedido.
+* **Tolerancia de cantidad**: La cantidad de artículos pedidos coincide con la cantidad confirmada por el proveedor.
+* **Tolerancia del precio unitario**: El precio por artículo acordado coincide con la confirmación del proveedor.
+* **Descuento**: Cualquier descuento aplicado es coherente entre el pedido de compra y la confirmación de pedido.
 * **Define Comparison Parameters**: Configure los campos específicos (cantidad, precio unitario, descuento) que la tarjeta de lógica comprobará para detectar una coincidencia.
 * **Automate Verification**: Configure el sistema para comparar automáticamente estos detalles al recibir una confirmación de pedido.
 * **Customize Alerts**: Decida el flujo de trabajo para gestionar las discrepancias, incluida la personalización de las alertas para la revisión manual.

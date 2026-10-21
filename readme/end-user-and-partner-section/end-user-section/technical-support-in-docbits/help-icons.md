@@ -4,4 +4,4 @@ Se han colocado iconos de ayuda en todo DocBits para ayudarte a aprender y compr
 
 Estos iconos de ayuda se ven de la siguiente manera
 
-<figure><img src="../../../.gitbook/assets/help-icon.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-help-icon-es.png" alt="Icono de ayuda en la parte superior derecha de los ajustes."><figcaption><p>Icono de ayuda en la parte superior derecha de los ajustes.</p></figcaption></figure>

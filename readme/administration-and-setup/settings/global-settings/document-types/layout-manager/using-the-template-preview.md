@@ -1,47 +1,11 @@
-# Uso de la vista previa de la plantilla
+# Usar la vista previa del diseño
 
-## La vista previa de la plantilla es una herramienta sumamente útil para comprobar y ajustar la configuración del diseño en tiempo real antes de realizar cambios en un documento o una plantilla.
+La vista previa del **Creador de diseño** permite revisar la disposición de grupos, campos y tablas de un diseño existente.
 
-### A continuación se explica cómo puede utilizar la vista previa de la plantilla:
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_script_example_2-es.png" alt="Vista previa de la plantilla en el editor de diseños."><figcaption><p>Vista previa de la plantilla en el editor de diseños.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (152).png" alt=""><figcaption></figcaption></figure>
+Abra el tipo de documento y el diseño previstos. Use **Elementos** para consultar los grupos y controles disponibles. Seleccione un campo para abrir sus **Propiedades** y revisar etiquetas, anchos y visibilidad.
 
-#### Abrir la vista previa de la plantilla:
+El selector de origen permite consultar el contexto configurado. Los nombres de origen permanecen sin traducir. El ejemplo muestra un diseño existente; no demuestra la creación de un diseño ni su aplicación a otros orígenes.
 
-* Normalmente encontrará la opción de vista previa de la plantilla en la interfaz del editor de plantillas.
-
-<figure><img src="../../../../../.gitbook/assets/image (153).png" alt=""><figcaption></figcaption></figure>
-
-#### Seleccionar la plantilla:
-
-* Seleccione la plantilla cuyo diseño desea comprobar.
-* Puede ser una plantilla existente que desea modificar o una plantilla nueva que desea crear.
-
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-24 um 12.31.04.png" alt="" width="186"><figcaption></figcaption></figure>
-
-#### Ajustar la configuración del diseño:
-
-* Cambie la configuración del diseño según sea necesario. Esto puede incluir añadir, quitar o ajustar grupos, campos, columnas, filas, fuentes, etc.
-
-<figure><img src="../../../../../.gitbook/assets/image (155).png" alt="" width="271"><figcaption></figcaption></figure>
-
-#### Vista previa en tiempo real:
-
-* Al cambiar la configuración del diseño, la vista previa se actualiza en tiempo real.
-* Puede ver de inmediato cómo afectan sus cambios al aspecto y a la estructura de la plantilla.
-
-#### Personalización interactiva:
-
-* Aproveche la posibilidad de personalizar el diseño de forma interactiva moviendo, redimensionando o realizando otros ajustes en los elementos mientras comprueba los efectos en tiempo real en la vista previa.
-
-#### Probar diferentes configuraciones:
-
-* Experimente con diferentes configuraciones de diseño para encontrar el mejor diseño para sus necesidades.
-* Utilice la vista previa de la plantilla para ver cómo afecta cada cambio al aspecto final.
-
-#### Guardar y confirmar los cambios:
-
-* Cuando esté satisfecho con el diseño, guarde sus cambios.
-* Dependiendo del software, también puede encontrar la opción de confirmar sus cambios directamente para actualizar la plantilla y utilizarla en otros documentos o procesos.
-
-El uso de la vista previa de la plantilla le permite asegurarse de que su diseño cumple las necesidades deseadas antes de confirmar los cambios. Esto le permite personalizar de forma eficiente el diseño y la estructura de sus documentos y garantizar que cumplan los estándares visuales y funcionales deseados.
+Guarde los cambios previstos y compruebe la vista de documento resultante.

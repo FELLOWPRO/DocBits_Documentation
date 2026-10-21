@@ -1,6 +1,6 @@
 # Rule Management
 
-<figure><img src="../../../../.gitbook/assets/rule_management.png" alt="Rule Management"><figcaption><p>Página Rule Management</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_management-es.png" alt="Administración de reglas con los nombres configurados ocultos."><figcaption><p>Administración de reglas con los nombres configurados ocultos.</p></figcaption></figure>
 
 Rule Management le permite crear y gestionar reglas de resolución de conflictos basadas en TOML que se utilizan durante el PO matching y la exportación de documentos. Cada conjunto de reglas define cómo gestiona DocBits las discrepancias entre los datos de la factura y los datos del pedido de compra.
 
@@ -10,11 +10,11 @@ La tabla principal muestra todas las configuraciones de reglas:
 
 | Columna | Descripción |
 |--------|-------------|
-| **Name** | El nombre del conjunto de reglas. Los elementos etiquetados como **default** son plantillas proporcionadas por el sistema. |
-| **Description** | Un resumen de lo que gestiona el conjunto de reglas. |
-| **Last Modified By** | El usuario que editó por última vez este conjunto de reglas. |
+| **Nombre** | El nombre del conjunto de reglas. Los elementos etiquetados como **por defecto** son plantillas proporcionadas por el sistema. |
+| **Descripción** | Un resumen de lo que gestiona el conjunto de reglas. |
+| **Última modificación por** | El usuario que editó por última vez este conjunto de reglas. |
 | **Last Modified At** | Marca de tiempo del último cambio. |
-| **Actions** | Menú de tres puntos para editar, copiar o eliminar. |
+| **Acciones** | Menú de tres puntos para editar, copiar o eliminar. |
 
 Haga clic en **+ New** para crear un nuevo conjunto de reglas o haga clic en un nombre existente para abrir el editor de reglas.
 
@@ -144,13 +144,11 @@ Define las acciones específicas que deben realizarse cuando se detecta una disc
 • Acción: el sistema acepta los valores de la factura y calcula el importe total.
 
 
-
 #### [Caso 4, 5: cantidad dentro de la tolerancia, precio unitario fuera de la tolerancia (aprobado)](./#caso-4-5-cantidad-dentro-de-la-tolerancia-precio-unitario-fuera-de-la-tolerancia-aprobado)
 
 • Finalidad: se aplica cuando la cantidad está dentro de la tolerancia, pero el precio unitario está fuera de la tolerancia y ha sido aprobado.
 
 • Acción: el sistema ajusta el precio unitario para que coincida con el del pedido de compra y aplica los cargos de línea necesarios.
-
 
 
 #### [Caso 6: cantidad dentro de la tolerancia, precio unitario fuera de la tolerancia negativa (rechazado)](transactionconfig-pro-template/case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
@@ -180,7 +178,7 @@ Define las acciones específicas que deben realizarse cuando se detecta una disc
 
 ### Captura de pantalla 1: interfaz de Rule Management
 
-<figure><img src="../../../../.gitbook/assets/rule_management_interface.png" alt="Interfaz de Rule Management"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_management_interface-es.png" alt="Resumen de reglas y acciones disponibles."><figcaption><p>Resumen de reglas y acciones disponibles.</p></figcaption></figure>
 
 Esta captura de pantalla muestra la interfaz de Rule Management, donde los administradores pueden ver y gestionar todas las reglas de resolución de conflictos. Los elementos clave son:
 
@@ -192,7 +190,7 @@ Esta captura de pantalla muestra la interfaz de Rule Management, donde los admin
 
 ### Captura de pantalla 2: edición detallada de reglas
 
-<figure><img src="../../../../.gitbook/assets/rule_detailed_editing.png" alt="Edición detallada de reglas"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_detailed_editing-es.png" alt="Editor de reglas TOML con un ejemplo técnico de configuración."><figcaption><p>Editor de reglas TOML con un ejemplo técnico de configuración.</p></figcaption></figure>
 
 Esta captura de pantalla ilustra la vista detallada de una regla específica en edición. Los elementos clave son:
 

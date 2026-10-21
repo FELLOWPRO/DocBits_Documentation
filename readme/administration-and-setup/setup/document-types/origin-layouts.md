@@ -6,7 +6,9 @@ Configuración de Origin en DocBits explicada: Estándares de país para formato
 
 DocBits se destaca en adaptar diseños de documentos según sus orígenes geográficos mientras estandariza elementos como formatos de moneda basándose en la configuración del navegador del usuario. Exploremos cómo puede aprovechar el Layout Builder para personalizar diseños para diferentes orígenes, como EE.UU. y Alemania.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_1.png)
+
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_1-es.png" alt="Editor de diseños con controles en español."><figcaption><p>Editor de diseños con controles en español.</p></figcaption></figure>
+
 
 ## **Entendiendo la personalización basada en origen**
 
@@ -36,10 +38,14 @@ DocBits se destaca en adaptar diseños de documentos según sus orígenes geogr�
 
 Cuando desee aplicar el diseño predeterminado a múltiples orígenes, presione **Aplicar diseño predeterminado a Origins**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_3.png)
+
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_3-es.png" alt="Selección de origen; los nombres configurados se mantienen."><figcaption><p>Selección de origen; los nombres configurados se mantienen.</p></figcaption></figure>
+
 
 Aparecerá un popup donde puede seleccionar los orígenes a los que desea aplicar el diseño predeterminado. Puede usar **Seleccionar todo** o **Deseleccionar todo** para gestionar rápidamente su selección. El popup muestra el número de orígenes actualmente seleccionados.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_4.png)
+
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_4-es.png" alt="Diálogo para aplicar el diseño predeterminado a los orígenes seleccionados."><figcaption><p>Diálogo para aplicar el diseño predeterminado a los orígenes seleccionados.</p></figcaption></figure>
+
 
 Después de hacer su selección, haga clic en **Aplicar a Origins**. Un mensaje de éxito confirmará que los orígenes fueron actualizados.

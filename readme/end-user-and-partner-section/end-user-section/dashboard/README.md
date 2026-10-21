@@ -24,7 +24,7 @@ Das kurze Suchbeispiel beginnt am Arbeitsplatz einer fiktiven Anwenderin in Köl
 
 Die fiktive Kundin in Köln zeigt die deutsche DocBits-Oberfläche: eine kombinierte Suche mit AND, Statusfilter, die Hilfe zu Suchfeldern, die Spalteneinstellungen sowie Statusübersicht und Aktualisierung. Die sichtbaren Rechnungswerte stammen aus synthetischen Testdaten. Figur und Stimme sind KI-generiert; die Bedienung wurde im echten DocBits-Testkonto aufgenommen.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v3/de.html" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v3/de.mp4" %}
 
 [Video im eigenen Player öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v3/de.html) · [Deutsche Untertitel (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v3/de.vtt) · [Transkript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v3/de.txt)
 

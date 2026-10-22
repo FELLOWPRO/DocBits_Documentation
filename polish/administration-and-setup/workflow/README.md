@@ -114,3 +114,7 @@ DocBits Workflow Engine działa w oparciu o prostą, a zarazem potężną zasad�
 ### Podsumowanie
 
 Reguła „Easy When-And-Then” w DocBits Workflow Engine jest przykładem tego, jak silnik ten dąży do zapewnienia przyjaznej dla użytkownika platformy do automatyzacji procesów. Ta prosta reguła, dzieląc automatyzację na podstawowe elementy wyzwalacza, warunku i akcji, ułatwia użytkownikom zrozumienie, tworzenie i zarządzanie przepływami pracy. Niezależnie od tego, czy dopiero zaczynasz z automatyzacją przepływów pracy, czy jesteś doświadczonym profesjonalistą, DocBits Workflow Engine oferuje wydajne i dostępne narzędzie, które zwiększa produktywność i usprawnia działanie.
+
+## Ścieżka od początkującego do eksperta
+
+[Ścieżka od początkującego do eksperta](workflow-learning-path.md). Przechodź poziomy po kolei. Samo czytanie nie wystarcza: każdy kończy się własną konfiguracją, sprawdzalnym oczekiwaniem i dowodem. P0 zapobiega podstawowym błędom wykonania; P1 rozwija dane, decyzje biznesowe i integracje.

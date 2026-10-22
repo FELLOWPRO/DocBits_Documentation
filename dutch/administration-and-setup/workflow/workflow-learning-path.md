@@ -20,6 +20,10 @@ Gebruik een eigen testorganisatie en synthetisch document. Controleer organisati
 
 ## 1. Oriëntatie en uitvoeringsmodel <a id="level-1"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/nl.mp4" %}
+
+[Open de video met Nederlandse ondertiteling en transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/nl.html).
+
 **Oefening:** Leg organisatie, toegang, When–And–Then en het verschil tussen lineaire regel en Advanced-graaf uit. Onderscheid documentfilter, gebeurtenis, opslaan en activeren.
 
 **Afrondingscriterium:** U kunt uitleggen wanneer de regel wordt meegenomen en welk bewijs simulatie van documentuitvoering onderscheidt.
@@ -27,6 +31,10 @@ Gebruik een eigen testorganisatie en synthetisch document. Controleer organisati
 Lezen en bouwen: [Wanneer wordt mijn workflow uitgevoerd?](workflow-execution-model.md) · [P0: Status wijzigen en herhaalde uitvoering begrenzen](masterclass/status-and-reentry.md).
 
 ## 2. Uw eerste eigen regel <a id="level-2"></a>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/nl.mp4" %}
+
+[Open de video met Nederlandse ondertiteling en transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/nl.html).
 
 **Oefening:** Bouw When Invoice → And invoice_id = WF-TRAINING-001 → And total_amount > 1000 → Then wf_training_route = REVIEW. Houd deze inactief. Test volledige gegevens voor 999, 1000 en 1000.01. Deze lineaire regel heeft nog geen controleknoop nodig.
 

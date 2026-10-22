@@ -54,7 +54,7 @@ Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden
 
 Administrator, Büro und Stimme sind synthetisch erzeugt. Die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos. Die Rechnungsergebnisse sind erwartete Beispiele; es wurde kein Workflow ausgeführt.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-numeric-comparison-admin/v1/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/workflow-card-numeric-comparison-admin/v1/de.mp4" %}
 
 [Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-numeric-comparison-admin/v1/de.html)
 

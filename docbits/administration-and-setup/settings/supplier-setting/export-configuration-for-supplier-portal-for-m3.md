@@ -1,6 +1,6 @@
 # Export Configuration for Supplier Portal
 
-<figure><img src="../../../.gitbook/assets/supplier_export_configuration.png" alt="Supplier Export Configuration"><figcaption><p>Supplier Export Configuration Page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t014-en.png" alt="Supplier-portal export configuration."><figcaption><p>Supplier-portal export configuration.</p></figcaption></figure>
 
 ## Overview
 

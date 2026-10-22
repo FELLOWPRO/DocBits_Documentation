@@ -4,6 +4,8 @@ description: "Build, connect, test, save and activate document workflows with al
 
 # Advanced Workflows
 
+<figure><img src="../../../.gitbook/assets/prior-u034-en.png" alt="Advanced workflow builder node menu."><figcaption><p>Advanced workflow builder node menu.</p></figcaption></figure>
+
 An **Advanced Workflow** routes a document through a graph of triggers, conditions and actions. Use it when the next action depends on a result, several checks feed a common action, or an error needs its own handling path. **Connections determine execution order**; placing a card farther to the right does not make it run later.
 
 Use a [Standard Workflow](../standard-workflow-builder/README.md) for a linear **When → And → Then** automation. Both builders use the same [card catalog](../cards-overview/README.md). The advanced builder adds explicit connections and control nodes.

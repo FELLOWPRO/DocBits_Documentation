@@ -16,7 +16,7 @@ The toolbar also offers **Templates**, which opens the [Workflow Templates](stan
 
 The **Test Manager** lets you save test scenarios per workflow and run them together, so you can confirm your workflows still behave correctly after changes:
 
-<figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Workflow Test Manager List with test scenarios and Run All Tests"><figcaption><p>The Test Manager List — each scenario shows a pass/fail result; use <strong>Run All Tests</strong> to re-run them all.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-u032-en.png" alt="Workflow test-scenario list."><figcaption><p>Workflow test-scenario list.</p></figcaption></figure>
 
 ## Next steps
 

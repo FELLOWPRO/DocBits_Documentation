@@ -4,7 +4,7 @@
 DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
 {% endembed %}
 
-<figure><img src="../../../../../.gitbook/assets/groups_and_permissions.png" alt="Groups and Permissions"><figcaption><p>Groups and Permissions Page</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-t009-en.png" alt="Selected group details with personal data hidden."><figcaption><p>Selected group details with personal data hidden.</p></figcaption></figure>
 
 Groups and Permissions allow you to control which users can access specific document types and what actions they can perform.
 

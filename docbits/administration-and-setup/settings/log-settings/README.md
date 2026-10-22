@@ -1,6 +1,6 @@
 # Activity Logging
 
-<figure><img src="../../../.gitbook/assets/activity_logging.png" alt="Activity Logging"><figcaption><p>Activity Logging Page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t011-en.png" alt="Activity-log filters with log entries hidden."><figcaption><p>Activity-log filters with log entries hidden.</p></figcaption></figure>
 
 Activity Logging provides a real-time view of system events across all DocBits services. Use it to monitor processing activity, troubleshoot errors, and audit system behavior.
 

@@ -4,7 +4,7 @@
 
 > **Access:** Open **Settings → Organization & Access → Users** and click the **Login Analytics** button in the top-right corner (`/settings/login-analytics`).
 
-<figure><img src="../../../../../.gitbook/assets/login_analytics_overview.png" alt="Login Analytics page with the activity chart and summary cards"><figcaption><p>Organization login activity over the selected period</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u003-en.png" alt="Login analytics overview."><figcaption><p>Login analytics overview.</p></figcaption></figure>
 
 ## Time range
 

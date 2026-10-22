@@ -1,6 +1,6 @@
 # Configuring Field Properties
 
-Use **Settings → Document Types → Fields** to control how fields behave for a document type. Select the document type first; the example below shows **Invoice** in the English interface.
+Open **Settings → Document Types → Fields** and select the document type. The images show Invoice fields in the English interface; technical identifiers such as `invoice_id` remain unchanged.
 
 <figure><img src="../../../../../.gitbook/assets/s150-dbdc155-field-properties-overview.png" alt="English field settings for required, read-only, hidden and force-validation properties."><figcaption><p>English field settings for required, read-only, hidden and force-validation properties.</p></figcaption></figure>
 
@@ -17,7 +17,7 @@ Use **Settings → Document Types → Fields** to control how fields behave for 
 | **Required** | Mark information that must be present for validation. Check the document's validation result after changing this setting. |
 | **Read Only** | Show a field without allowing users to edit its value. |
 | **Hidden** | Keep the field out of the normal document view. |
-| **Force Validation** | Require the field to pass validation. Configure detailed rules separately; this checkbox is not a rule editor. |
+| **Force Validation** | Requires an explicit check of the field. It does not create a comparison rule or regular expression; configure custom validation rules separately. |
 | **Use AI** | Request or stop AI extraction for this field. The row displays whether extraction is requested. |
 | **OCR** | Enter the field's OCR confidence threshold. This is a number, not an on/off switch or a language setting. |
 | **Match Score** | Enter the field's matching threshold. This is a number, not an on/off switch. |
@@ -29,6 +29,6 @@ The **OCR** and **Match Score** sliders under **Recognition Settings** apply val
 - **Create new group** and **Create field** add a group or a field. See [Adding and Editing Fields](adding-and-editing-fields.md).
 - **Master Data Settings** opens the [master data configuration](master-data-settings.md).
 - The leftmost checkboxes select fields. The adjacent menu offers **Reassign Field Group** for selected fields.
-- The **Formula** plus button opens the formula editor for that field. The **info** icon shows field information. The delete icon is unavailable for standard fields.
+- The **FORMULA** plus button opens the formula editor for that field. The **info** icon shows field information. The delete icon is unavailable for standard fields.
 
 For more on validation and matching, see [Setting Validation and Match Score](setting-validation-and-match-score.md).

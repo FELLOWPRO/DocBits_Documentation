@@ -6,10 +6,10 @@
 
 1.  Open **Settings → Document Types**. Find the document type used for your invoices and select the gear on its card to open **More Settings**. The screenshot shows the **Invoice** card. Leave the **Activate** and **Extraction** switches as they are.
 
-    <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-document-types-en.png" alt="Document Types page with the Invoice card and its More Settings gear"><figcaption><p>Open More Settings from the Invoice card.</p></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u044-en.png" alt="Access to additional Invoice document-type settings."><figcaption><p>Access to additional Invoice document-type settings.</p></figcaption></figure>
 2.  Expand **Purchase Order** if it is collapsed. Find **Consumed PO line status** and turn on its switch. This is a separate setting from **Update Document Purchase Order Status** further down the same section.
 
-    <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-settings-en.png" alt="Purchase Order section of More Settings, with the Consumed PO line status switch visible"><figcaption><p>Choose the Consumed PO line status switch.</p></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u045-en.png" alt="Settings for already consumed purchase-order lines."><figcaption><p>Settings for already consumed purchase-order lines.</p></figcaption></figure>
 
 
 3. Open an invoice with purchase order matching and inspect its PO lines. The table below explains how line colors relate to matching state. For the matching steps, see [Purchase Order Matching](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/).

@@ -1,6 +1,8 @@
 # Company Information
 
-<figure><img src="../../../../.gitbook/assets/company_information.png" alt="Company Information form in the English DocBits Sandbox test organization"><figcaption><p>Company Information: edit the organization name, address, legal identifiers and contact details, then select Save.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-i002-en.png" alt="Company email-domain configuration."><figcaption><p>Company email-domain configuration.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/prior-i001-en.png" alt="Company information with organization values hidden."><figcaption><p>Company information with organization values hidden.</p></figcaption></figure>
 
 The Company Information page lets you manage your company profile, preferences, and subscription details. It is organized into the following sections:
 

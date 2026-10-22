@@ -20,13 +20,13 @@ To access the **Company Preferences**:
     <figure><img src="../../../../.gitbook/assets/settings_company_information.png" alt=""><figcaption></figcaption></figure>
 2.  Scroll to the **Company Preferences** section
 
-    <figure><img src="../../../../.gitbook/assets/company_preferences_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/prior-i003-en.png" alt="Company preferences and amount/date formats."><figcaption><p>Company preferences and amount/date formats.</p></figcaption></figure>
 
 ## Date Pattern
 
 In this setting, you can choose the **date format** to be used throughout **DocBits**. Several formatting options are available, allowing you to customize how dates are displayed.
 
-<figure><img src="../../../../.gitbook/assets/company_preferences_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-i004-en.png" alt="Date-format selection in company preferences."><figcaption><p>Date-format selection in company preferences.</p></figcaption></figure>
 
 The following placeholders are used in the date pattern:
 

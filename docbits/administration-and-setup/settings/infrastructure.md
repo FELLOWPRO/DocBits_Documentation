@@ -49,7 +49,7 @@ Components that belong to an optional module (Full-Text Search, DocFlow, Auto-Ac
 
 The Processing tab shows the document-processing pipeline for **your organization** — when each step last ran and whether work is flowing or backing up.
 
-<figure><img src="../../.gitbook/assets/infrastructure_processing.png" alt="Processing tasks table with status badges"><figcaption><p>Per-step processing status for your organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-t004-en.png" alt="Infrastructure processes and their last execution."><figcaption><p>Infrastructure processes and their last execution.</p></figcaption></figure>
 
 | Column | Description |
 |--------|-------------|
@@ -71,7 +71,7 @@ Errors and *in progress* are independent signals, so a step can show both badges
 
 The Scheduled tasks tab lists the recurring background jobs that keep DocBits running (cache refreshes, status alerts, document timeouts, outbound syncs, and more) and confirms each one is firing on time.
 
-<figure><img src="../../.gitbook/assets/infrastructure_scheduled.png" alt="Scheduled tasks table"><figcaption><p>Recurring background jobs and their schedule status</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-t005-en.png" alt="Scheduled infrastructure background tasks."><figcaption><p>Scheduled infrastructure background tasks.</p></figcaption></figure>
 
 | Column | Description |
 |--------|-------------|

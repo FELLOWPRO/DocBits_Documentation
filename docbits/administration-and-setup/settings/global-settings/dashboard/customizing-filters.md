@@ -30,7 +30,7 @@ Using filters allows users to quickly find relevant information and reduce the a
 
 * Open the filter menu in the settings under Dashboard and click on "Filters".
 
-<figure><img src="../../../../.gitbook/assets/customizing_filters_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u015-en.png" alt="Dashboard status-filter style and custom status filter."><figcaption><p>Dashboard status-filter style and custom status filter.</p></figcaption></figure>
 
 * Select the field to be filtered (e.g. Status).
 

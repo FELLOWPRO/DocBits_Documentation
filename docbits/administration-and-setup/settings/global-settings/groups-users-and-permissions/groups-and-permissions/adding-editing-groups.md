@@ -8,20 +8,20 @@ DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Yo
 
 * **Navigate to Group Settings:** Log in to your admin account and go to Group Settings in the admin panel.
 
-<figure><img src="../../../../../.gitbook/assets/groups_settings_overview.png" alt="Groups Settings Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-t002-en.png" alt="Access to group and permission settings."><figcaption><p>Access to group and permission settings.</p></figcaption></figure>
 
 This window will open:
 
-<figure><img src="../../../../../.gitbook/assets/groups_list_overview.png" alt="Groups List Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-t003-en.png" alt="Group list with configured names hidden."><figcaption><p>Group list with configured names hidden.</p></figcaption></figure>
 
 * **Click the + New button:** If you want to add a new group, click the + New button to start the process of adding a new group.
 
-<figure><img src="../../../../../.gitbook/assets/add_new_group_button.png" alt="Add New Group Button"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u005-en.png" alt="Unsaved new-group dialog."><figcaption><p>Unsaved new-group dialog.</p></figcaption></figure>
 
 * **Fill out the table:** Provide the group name and a description of the group.
 * **Save the details:** Once you have filled in the group and description, click the "Save" button.
 
-<figure><img src="../../../../../.gitbook/assets/new_group_form_save.png" alt="New Group Form Save"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u006-en.png" alt="Group and permission management."><figcaption><p>Group and permission management.</p></figcaption></figure>
 
 ## Editing Groups:
 

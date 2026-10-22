@@ -8,13 +8,12 @@ You can choose to automatically calculate the **unit price** of every purchase o
 
 1.  Navigate to **Settings** -> **Global Settings** -> **Document Types**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1.png" alt=""><figcaption></figcaption></figure>
 2.  Select the desired document type and click on **More Settings**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u044-en.png" alt="Access to additional Invoice document-type settings."><figcaption><p>Access to additional Invoice document-type settings.</p></figcaption></figure>
 3.  In the **Purchase Order** section, enable the option **Calculate PO Unit Price**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u045-en.png" alt="Settings for already consumed purchase-order lines."><figcaption><p>Settings for already consumed purchase-order lines.</p></figcaption></figure>
 
 ## How the price is calculated
 

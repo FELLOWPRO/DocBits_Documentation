@@ -33,4 +33,4 @@ Finvoice 2.01 ist ein Wartungsrelease, das Schemafehler in Version 2.0 korrigier
 
 ## Verwandte Themen
 
-* [Supported Electronic Documents](./)
+* [Unterstützte elektronische Dokumente](./)

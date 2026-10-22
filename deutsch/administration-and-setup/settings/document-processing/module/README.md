@@ -4,18 +4,18 @@
 
 Auf der Seite „Module“ aktivieren oder deaktivieren Sie optionale Funktionen in DocBits. Jeder Abschnitt fasst zusammengehörige Module zusammen, die ein- oder ausgeschaltet werden können.
 
-## Purchase Order
+## Bestellung
 
 Einstellungen für PO Matching und Validierung.
 
 | Einstellung | Beschreibung |
 |---------|-------------|
-| **Auto Export if PO matched 100%** | Exportiert das Dokument automatisch, wenn das PO Matching 100 % erreicht. |
+| **Auto Export if PO matched 100%** | Ermöglicht den automatischen Export des aktuellen Dokuments bei vollständig erfolgreichem Bestellabgleich, sofern auch die konfigurierten Validierungs-, Genehmigungs- und Exportvoraussetzungen erfüllt sind. |
 | **PO Dashboard** | Aktiviert das Bestellungs-Dashboard. Enthält das Feld **PO Date Limit**, um die Bestelldaten nach Datum einzugrenzen. |
 | **PO Shipment Order** | Aktiviert die Verarbeitung von Lieferaufträgen, die mit Bestellungen verknüpft sind. |
 | **Shipment Order Dashboard** | Aktiviert ein eigenes Dashboard für Lieferaufträge. |
 
-## Auto Accounting
+## Automatische Kontierung
 
 | Einstellung | Beschreibung |
 |---------|-------------|
@@ -30,13 +30,13 @@ Einstellungen für PO Matching und Validierung.
 | **Full Text Search** | Aktiviert die Volltextsuche über Dokumente hinweg. |
 | **Analytics Dashboard** | Aktiviert das Analytics-Übersichts-Dashboard. |
 
-## Database Access
+## Datenbankzugriff
 
 | Einstellung | Beschreibung |
 |---------|-------------|
 | **DB Access** | Aktiviert den direkten Datenbankzugriff für die Organisation. |
 
-## AI Dashboard
+## KI-Dashboard
 
 | Einstellung | Beschreibung |
 |---------|-------------|
@@ -45,13 +45,13 @@ Einstellungen für PO Matching und Validierung.
 | **Clickhouse Direct Access** | Aktiviert den direkten Zugriff auf die Clickhouse-Datenbank. |
 | **Supplier Statistics** | Aktiviert Statistiken und Berichte auf Lieferantenebene. |
 
-## Shipping & Supplier
+## Versand und Lieferanten
 
 | Einstellung | Beschreibung |
 |---------|-------------|
 | **Supplier Portal** | Aktiviert das Lieferantenportal für die Zusammenarbeit mit Lieferanten. |
 
-## Document Type
+## Dokumenttyp
 
 | Einstellung | Beschreibung |
 |---------|-------------|
@@ -71,19 +71,19 @@ Einstellungen für PO Matching und Validierung.
 | **Barcode Assignment** | Aktiviert die Zuweisung von Barcodes zu Dokumenten. |
 | **Set Negative Sign For Credit Notes** | Setzt bei Gutschriftsbeträgen automatisch ein negatives Vorzeichen. |
 
-## BOD Connection Stream
+## BOD-Verbindungsstream
 
 | Einstellung | Beschreibung |
 |---------|-------------|
 | **BOD Connection Stream** | Aktiviert die BOD-Integration (Business Object Document). Zeigt den für die Verbindung verwendeten **Stream Name** an. |
 
-## Analytics
+## Analysen
 
 | Einstellung | Beschreibung |
 |---------|-------------|
 | **Use PostgreSQL for Quality Analytics** | Wechselt zwischen Prometheus (Echtzeit, wird bei Deployments zurückgesetzt) und PostgreSQL (dauerhaft 90 Tage, Trendanalyse, Felder mit der schlechtesten Leistung). |
 
-## Vertex Tax Integration
+## Integration von Vertex Tax
 
 | Einstellung | Beschreibung |
 |---------|-------------|

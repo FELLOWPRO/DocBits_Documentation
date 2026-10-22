@@ -61,6 +61,6 @@ Der frühere Regex-Link auf der Dokumenttypkarte ist in der aktuellen Oberfläch
 
 * Sobald Sie sicher sind, dass die Änderungen erfolgreich sind und wie erwartet funktionieren, speichern Sie das aktualisierte Regex-Muster in Ihrer Codebasis oder Ihren Konfigurationsdateien, um sicherzustellen, dass sie für die zukünftige Verwendung verfügbar sind.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_model_training_continuous.png" alt="Docbits Model Training Continuous"><figcaption><p>Änderungen speichern</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_model_training_continuous.png" alt="Kontinuierliches Modelltraining in DocBits"><figcaption><p>Änderungen speichern</p></figcaption></figure>
 
 Durch Befolgen dieser Schritte und sorgfältiges Testen von Änderungen an Regex-Mustern können Sie sicherstellen, dass Ihr Regex-Muster weiterhin korrekt funktioniert, während es neue Anforderungen erfüllt.

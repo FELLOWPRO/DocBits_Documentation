@@ -61,7 +61,7 @@ Im Abschnitt **Amount Formatting** stehen Ihnen zwei Optionen zur Verfügung:
 {% hint style="info" %}
 **Voraussetzungen für eine funktionierende Tabellenextraktion**
 
-* Der Dokumenttyp hat **Tabellenspalten** (Settings → Global Settings → Document Types → [Table Columns](../../global-settings/document-types/table-columns/README.md)). Ohne Spalten gibt es nichts, in das extrahiert werden könnte.
+* Der Dokumenttyp hat **Tabellenspalten** (Settings → Global Settings → Document Types → [Tabellenspalten](../../global-settings/document-types/table-columns/README.md)). Ohne Spalten gibt es nichts, in das extrahiert werden könnte.
 * **Table Extraction** oder **AI Table Extraction** ist unten für die gesamte Organisation eingeschaltet.
 * Das Dokument enthält lesbaren Text: OCR wurde ausgeführt, oder bei digital erzeugten PDFs wird E-Text verwendet ([OCR-Einstellungen](../ocr-settings.md)).
 * Training und KI-Modelle gelten **pro Lieferant**. Eine trainierte Tabelle wird nur auf Dokumente des Lieferanten angewendet, für den sie trainiert wurde.

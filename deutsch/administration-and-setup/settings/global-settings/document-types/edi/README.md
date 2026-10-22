@@ -1,26 +1,22 @@
-# E-Dokumente (e-docs)
+# Elektronische Dokumente und EDI-Konfiguration
 
 {% embed url="https://youtu.be/AxrHNEmmXtg" %}
-DocBits E-Invoice Tutorial: Process XRechnung / ZUGFeRD (Factur-X), Validate Data & Automate Workflows
+DocBits-Anleitung für E-Rechnungen: XRechnung und ZUGFeRD (Factur-X) verarbeiten, Daten validieren und Workflows automatisieren
 {% endembed %}
 
-<figure><img src="../../../../../.gitbook/assets/docbits_edi_overview.png" alt="Docbits Edi Overview"><figcaption></figcaption></figure>
+Wählen Sie in den E-Dokument-Einstellungen den Dokumenttyp und das elektronische Format. Die folgende Konfiguration verarbeitet eingehende EDI-Nachrichten; sie richtet keinen ausgehenden EDI-Versand ein.
 
-#### Übersicht
+<figure><img src="../../../../../.gitbook/assets/site-all-edi-list-de.png" alt="Vorhandenes EDI-Format mit seinen vier konfigurierten Attributen."><figcaption><p>Vorhandenes EDI-Format mit seinen vier konfigurierten Attributen.</p></figcaption></figure>
 
-In Docbits bieten die EDI-Einstellungen Tools zum Definieren und Verwalten der Struktur und des Formats von EDI-Nachrichten, die verschiedenen Dokumenttypen wie Rechnungen oder Bestellungen entsprechen. Die Einstellungen ermöglichen die Anpassung von EDI-Nachrichten an die Standards und Anforderungen verschiedener Handelspartner und Branchen.
+* STRUCTUREDESCRIPTOR: Eine JSON-Strukturbeschreibung liest die EDI-Rohnachricht als JSON ein. Anschließend erzeugt DocBits ein XML-Zwischenformat.
 
-#### Hauptfunktionen und Optionen
+* TRANSFORMATION: Ein XSLT-Stylesheet wandelt das XML-Zwischenformat in das Standard-XML für die weitere Verarbeitung um.
 
-1. **EDI-Konfigurationselemente**:
-   * **Strukturdeskriptor**: Definiert die grundlegende Struktur des EDI-Dokuments, einschließlich Segmentreihenfolge, Pflichtfelder und Qualifizierer, die für die Gültigkeit des EDI-Dokuments erforderlich sind.
-   * **Transformation**: Gibt die Transformationen an, die angewendet werden, um die Dokumentdaten in eine EDI-formatierte Nachricht zu konvertieren. Dies beinhaltet typischerweise die Angabe von Zuordnungen von Dokumentfeldern zu EDI-Segmenten und -Elementen.
-   * **Vorschau**: Ermöglicht Administratoren, zu sehen, wie die EDI-Nachricht nach der Transformation aussehen wird, um die Genauigkeit vor der Übertragung sicherzustellen.
-   * **Extraktionspfade**: Zeigt die Pfade an, die zum Extrahieren von Werten aus dem Dokument verwendet werden, die dann zum Auffüllen der EDI-Nachricht verwendet werden.
-2. **XSLT-Editor**:
-   * Wird zum Bearbeiten und Validieren der XSLT (eXtensible Stylesheet Language Transformations) verwendet, die im Transformationsprozess verwendet wird. XSLT ist eine leistungsstarke Sprache, die für die Transformation von XML-Dokumenten in andere XML-Dokumente oder andere Formate wie HTML, Text oder sogar andere XML-Strukturen entwickelt wurde.
+* PREVIEW: Ein XSLT-Stylesheet erzeugt aus dem transformierten XML eine lesbare Darstellung. Das Editorbild zeigt den Quelltext, keine gerenderte Dokumentvorschau.
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.49.59.png" alt=""><figcaption></figcaption></figure>
+* EXTRACTIONPATHS: Eine JSON-Konfiguration ordnet Dokumentfelder und Tabellenspalten XPath-Ausdrücken zu, die auf dem transformierten XML ausgewertet werden.
+
+<figure><img src="../../../../../.gitbook/assets/site-all-edi-detail-de.png" alt="Aktives Attribut STRUCTUREDESCRIPTOR: JSON-Strukturbeschreibung im schreibgeschützten Editor."><figcaption><p>Aktives Attribut STRUCTUREDESCRIPTOR: JSON-Strukturbeschreibung im schreibgeschützten Editor.</p></figcaption></figure>
 
 ## Verwendete Regeln und Aktivierung
 
@@ -29,3 +25,8 @@ Wenn eine elektronische Gutschrift als Invoice erscheint, folgen Sie der [Anleit
 ## Länderanleitungen
 
 Die Länderanleitungen enthalten genaue Formatbezeichnungen, Syntax, Versionsgrenzen und den geprüften Konfigurationsstand. [eDocs-Formate, Versionen und Länderanleitungen](supported-electronic-documents/README.md).
+
+
+Die Ansichten zeigen eine vorhandene Konfiguration und Version. Die Einstellungen unterscheiden sich je nach Dokumenttyp und Format. Prüfen Sie Änderungen in einem Entwurf vor der Aktivierung.
+
+Einzelne Bezeichnungen wie Custom, Default und Electronice im Feldnamen entsprechen der derzeitigen Produktoberfläche. Die technischen Attributnamen und der Konfigurationscode bleiben unverändert.

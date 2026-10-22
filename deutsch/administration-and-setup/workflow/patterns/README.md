@@ -169,8 +169,8 @@ Transformieren, berechnen, formatieren und reichern Sie Dokumentdaten an, um sie
 
 | Branche/Abteilung    | Empfohlene Muster                                                                                                                        |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Finanzen/Buchhaltung** | [PO Matching](po-matching-pattern.md), [Aufgabenverwaltung](task-management-pattern.md), [Datentransformation](data-transformation-pattern.md) |
-| **Beschaffung**        | [PO Matching](po-matching-pattern.md), [Entscheidungslogik](decision-logic-pattern.md), [API-Integration](api-integration-pattern.md)           |
+| **Finanzen/Buchhaltung** | [Bestellabgleich](po-matching-pattern.md), [Aufgabenverwaltung](task-management-pattern.md), [Datentransformation](data-transformation-pattern.md) |
+| **Beschaffung**        | [Bestellabgleich](po-matching-pattern.md), [Entscheidungslogik](decision-logic-pattern.md), [API-Integration](api-integration-pattern.md)           |
 | **Operationen**         | [Aufgabenverwaltung](task-management-pattern.md), [Entscheidungslogik](decision-logic-pattern.md)                                                  |
 | **IT/Integration**     | [API-Integration](api-integration-pattern.md), [Datentransformation](data-transformation-pattern.md)                                        |
 | **Alle Abteilungen**    | [Entscheidungslogik](decision-logic-pattern.md), [Aufgabenmanagement](task-management-pattern.md)                                                  |

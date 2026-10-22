@@ -67,6 +67,6 @@ Die DocBits-MCP-Tools sind auf der Seite *DocBits MCP* der englischen Dokumentat
 ## Weitere Seiten
 
 * [Tabellenauszug Fehlerbehebung](table-extraction-troubleshoot.md): Extraktionsqualität, OCR, E-Text, Meldungen an der Tabelle
-* [Schulung Linienfelder/Tabelle Schulung](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md)
+* [Positionsfelder und Tabellen trainieren](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md)
 * [KI-Tabelle](../../../end-user-and-partner-section/end-user-section/ai-table/README.md)
 * [Log-Einstellungen](../../../administration-and-setup/settings/log-settings/README.md)

@@ -14,9 +14,9 @@ Sie können diese Workflows (Test 1, 2, 3) verwenden, um verschiedene Dokumente 
 
 Wenn eine Rechnung oder ein anderes Dokument einen bestimmten Gesamtbetrag überschreitet, der eine vorherige Prüfung und Genehmigung erfordert, können diese Dokumente sofort der richtigen Person zugewiesen werden.
 
-<figure><img src="../../.gitbook/assets/workflow_amount_check.png" alt="Workflow Amount Check"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_amount_check.png" alt="Betragsprüfung im Workflow"><figcaption></figcaption></figure>
 
-**Test 1: Logic Card**
+**Test 1: Logikkarte**
 
 Wenn: **Zugewiesen an:** Eingangsprüfung
 
@@ -26,7 +26,7 @@ Dann: **Dokument zuweisen an:** Rechnungsprüfung
 
 ![](<../../.gitbook/assets/3 (1).png>)
 
-**Test 2: Logic Card**
+**Test 2: Logikkarte**
 
 Wenn: **Zugewiesen an:** Eingangsprüfung
 
@@ -36,7 +36,7 @@ Dann: **Dokument zuweisen an:** Lieferscheinprüfung
 
 ![](<../../.gitbook/assets/4 (1).png>)
 
-**Test 3: Logic Card**
+**Test 3: Logikkarte**
 
 **Wenn:** **Zugewiesen an:** Eingangsprüfung
 
@@ -48,11 +48,11 @@ Dann: **Dokument zuweisen an:** Lieferscheinprüfung
 
 Es ist auch möglich, ein Dokument von Anfang an einem bestimmten Mitarbeiter zuzuweisen, wenn es nicht einer einzelnen Person zugeordnet ist.
 
-<figure><img src="../../.gitbook/assets/workflow_assign_to_employee_start.png" alt="Workflow Assign to Employee Start" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_assign_to_employee_start.png" alt="Dokument zu Beginn des Workflows einem Mitarbeiter zuweisen" width="375"><figcaption></figcaption></figure>
 
 Für eine einfachere Übersicht darüber, was mit einem Dokument geschehen soll, können Sie in diesem Workflow den Status für eingehende Dokumente festlegen. Dieser Workflow ermöglicht es, sofort zu erkennen, ob beispielsweise eine ausstehende Genehmigung vorliegt.
 
-**Test 4: Logic Card**
+**Test 4: Logikkarte**
 
 **Wenn:** **Dokumenttyp ist:** Delivery Note
 
@@ -64,7 +64,7 @@ Für eine einfachere Übersicht darüber, was mit einem Dokument geschehen soll,
 
 ![](<../../.gitbook/assets/8 (1).png>)
 
-**Test 5: Logic Card**
+**Test 5: Logikkarte**
 
 Wenn: **Dokumenttyp ist:** Invoice
 
@@ -72,7 +72,7 @@ Und: **Zugewiesen an:** Rechnungsprüfung
 
 Dann: **Status ändern in:** Zweite Genehmigung ausstehend
 
-<figure><img src="../../.gitbook/assets/workflow_test5_invoice_approval_status.png" alt="Workflow Test 5 Invoice Approval Status"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_test5_invoice_approval_status.png" alt="Workflow-Test 5: Genehmigungsstatus der Rechnung"><figcaption></figcaption></figure>
 
 ![](<../../.gitbook/assets/10 (1).png>)
 
@@ -80,25 +80,25 @@ Wenn eine Rechnung oder ein anderes Dokument einen bestimmten Gesamtbetrag über
 
 ![](<../../.gitbook/assets/11 (1).png>)
 
-**Test 6: Logic Card**
+**Test 6: Logikkarte**
 
 Wenn: **Zugewiesen an:** Eingangsprüfung
 
-Und: Docfield **total\_amount** is **Greater than 500**
+Und: Das Dokumentfeld **total\_amount** ist **größer als 500**
 
 Dann: **Dokument zuweisen an:** Freigabeverantwortliche
 
-<figure><img src="../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Workflow Test 6 Total Amount Assign"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Workflow-Test 6: Dokument anhand des Gesamtbetrags zuweisen"><figcaption></figcaption></figure>
 
 ![](<../../.gitbook/assets/13 (1).png>)
 
 Es ist auch möglich, den Status in den Workflow einzutragen, sodass die zugewiesene Person sofort erkennen kann, welchen Status dieses Dokument hat und was als Nächstes damit geschehen soll.
 
-**Test 7: Logic Card**
+**Test 7: Logikkarte**
 
 **Wenn:** **Zugewiesen an:** Eingangsprüfung
 
-**Und:** Docfield **total\_amount** is **Greater then 500**
+**Und:** Das Dokumentfeld **total\_amount** ist **größer als 500**
 
 **Dann:** **Dokument zuweisen an:** Freigabeverantwortliche
 
@@ -110,7 +110,7 @@ Es ist auch möglich, den Status in den Workflow einzutragen, sodass die zugewie
 
 Wenn beispielsweise bestimmte oder wichtige Informationen in einem Dokument fehlen, die aber für die weitere Verarbeitung wichtig sind und enthalten sein müssen, können Sie den Workflow so einrichten, dass diese Dokumente sofort an den Einkäufer und einen Stellvertreter (Ersatz) weitergeleitet werden.
 
-<figure><img src="../../.gitbook/assets/workflow_test8_missing_info.png" alt="Workflow Test 8 Missing Info"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_test8_missing_info.png" alt="Workflow-Test 8: fehlende Informationen"><figcaption></figcaption></figure>
 
 **Test 9:**
 
@@ -122,7 +122,7 @@ Sie können diesen Dokumenten einen bestimmten Status geben oder sie einem besti
 
 <figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_detail-de.png" alt="Workflow-Baustein für den Bestellabgleich im deutschen Auswahldialog."><figcaption><p>Workflow-Baustein für den Bestellabgleich im deutschen Auswahldialog.</p></figcaption></figure>
 
-**Logic Card: Quantity or Unit Price or Discount Match**
+**Logikkarte: Übereinstimmung von Menge, Stückpreis oder Rabatt**
 
 Diese Logic Card ist darauf ausgelegt, automatisch zu überprüfen, ob die in einer Auftragsbestätigung angegebene Menge, der Stückpreis oder der Rabatt mit den entsprechenden Angaben in der Bestellung übereinstimmen. Diese Überprüfung gewährleistet Konsistenz und Genauigkeit zwischen dem, was bestellt wurde, und dem, was der Lieferant zu liefern bestätigt.
 
@@ -165,6 +165,6 @@ Wenn Sie alle Zuschläge als negativen Rabatt in die Rabattspalte einfügen möc
 
 Nach der Berechnung der Zuschläge möchten Sie möglicherweise einen bestimmten Benutzer benachrichtigen, um die Auftragsbestätigung zu autorisieren. Dafür können Sie die Benachrichtigungs-Card verwenden.
 
-<figure><img src="../../.gitbook/assets/workflow_notification_card_overview.png" alt="Workflow Notification Card"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_notification_card_overview.png" alt="Workflow-Benachrichtigungskarte"><figcaption></figcaption></figure>
 
 Je nach Einstellungen wird dem Benutzer eine neue Aufgabe in DocBits zugewiesen und optional eine E-Mail gesendet, um ihn über seine neue Aufgabe zu informieren.

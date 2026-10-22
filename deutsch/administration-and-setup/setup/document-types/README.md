@@ -13,7 +13,7 @@ Die Seite zeigt zuerst die **Standard-Dokumenttypen**, die DocBits bereitstellt 
 | **Aktivieren** | Macht diesen Dokumenttyp in Ihrer Organisation verfügbar oder nicht verfügbar. Ein blauer Schalter ist eingeschaltet, ein grauer ausgeschaltet. |
 | **Extraktion** | Legt den Extraktionsmodus fest: **Flex**, wenn eingeschaltet, oder **Fix**, wenn ausgeschaltet. Der Schalter schaltet die Extraktion nicht einfach ein oder aus. Bewegen Sie den Mauszeiger über den Schalter, um den aktuellen Modus anzuzeigen. |
 | **Einstellungen** (Zahnrad) | Öffnet **Weitere Einstellungen** für diesen Typ. Erweitern Sie dort eine Kategorie, um ihre Optionen anzuzeigen. Die Kategorien hängen vom Dokumenttyp ab. |
-| **Layouts** | Öffnet die Layout-Konfiguration. Die nächsten Schritte finden Sie im [Layout Builder](layout-builder.md). |
+| **Layouts** | Öffnet die Layout-Konfiguration. Die nächsten Schritte finden Sie im [Layout-Editor](layout-builder.md). |
 | **Felder** | Öffnet die Feld- und Erkennungseinstellungen für diesen Typ. Wie Sie diese konfigurieren, erfahren Sie unter [Felder](../../settings/global-settings/document-types/fields/README.md). |
 | **Tabellen** | Öffnet die Konfiguration der Tabellenspalten für diesen Typ. |
 | **Skripte** | Öffnet die Verarbeitungsskripte, sofern diese Funktion verfügbar ist. |

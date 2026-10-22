@@ -52,8 +52,8 @@ Sie können auch XPath-Funktionen (z. B. `sum()`) und Ausdrücke verwenden, um W
 
 Copy
 
-```
-jsonCopyEdit"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
+```json
+"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
 ```
 
 ## 5. Vorschaufunktion (Extraktion auswerten)
@@ -82,3 +82,13 @@ Eine Videoanleitung für diesen Dateityp finden Sie auf der [Videos-Seite.](http
 ## Verwendete Regeln und Aktivierung
 
 Wenn eine elektronische Gutschrift als Invoice erscheint, folgen Sie der [Anleitung zur Fehlerbehebung bei der Klassifizierung](../credit-note-recognized-as-invoice.md). Sie erläutert die verwendete angepasste oder standardmäßige Quelle, die Typcodes, Extraction Paths und die sichere Aktivierung.
+
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-de.png" alt="Vorhandenes EDI-Format mit seinen vier konfigurierten Attributen."><figcaption><p>Vorhandenes EDI-Format mit seinen vier konfigurierten Attributen.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-extraction-paths-de.png" alt="Aktives Attribut EXTRACTIONPATHS: JSON-Konfiguration mit XPath-Ausdrücken für die Extraktion."><figcaption><p>Aktives Attribut EXTRACTIONPATHS: JSON-Konfiguration mit XPath-Ausdrücken für die Extraktion.</p></figcaption></figure>
+
+
+Die Ansichten zeigen eine vorhandene Konfiguration und Version. Die Einstellungen unterscheiden sich je nach Dokumenttyp und Format. Prüfen Sie Änderungen in einem Entwurf vor der Aktivierung.
+
+Einzelne Bezeichnungen wie Custom, Default und Electronice im Feldnamen entsprechen der derzeitigen Produktoberfläche. Die technischen Attributnamen und der Konfigurationscode bleiben unverändert.

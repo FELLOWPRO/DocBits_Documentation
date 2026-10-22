@@ -1,6 +1,6 @@
 # Kartenbeschreibung
 
-## **When Cards: Dokumenttyp**
+## **Wenn-Karten: Dokumenttyp**
 
 Ein Workflow kann mit diesen beiden Karten gestartet werden. Hier können Sie entscheiden, mit welchem Dokumenttyp der Workflow beginnt oder ob er ausgewählte Dokumenttypen nicht beeinflussen soll.
 

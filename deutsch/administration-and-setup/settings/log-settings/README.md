@@ -4,7 +4,7 @@
 
 Die Aktivitätsprotokollierung bietet eine Echtzeitsicht auf Systemereignisse über alle DocBits-Dienste hinweg. Verwenden Sie es, um die Verarbeitungsaktivität zu überwachen, Fehler zu beheben und das Systemverhalten zu prüfen.
 
-## Analytics Banner
+## Analysebanner
 
 Oben auf der Seite verlinkt ein Banner auf das **Analyse-Dashboard** mit Diagrammen, Kennzahlen und Echtzeit-Monitoring.
 

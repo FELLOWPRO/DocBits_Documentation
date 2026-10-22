@@ -1,22 +1,22 @@
-# REST API Lookup Configurations
+# Konfiguration von REST-API-Abfragen
 
 ## Tabelle `public.rest_api_lookup_configurations`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `sub_org_id`: internal
-* `data_key`: internal
-* `url`: internal
-* `method`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `sub_org_id`: intern
+* `data_key`: intern
+* `url`: intern
+* `method`: intern
 * `params`: text
 * `headers`: text
 * `body`: text
-* `body_type`: internal
-* `authentication_type`: internal
+* `body_type`: intern
+* `authentication_type`: intern
 * `authentication_json`: text
-* `data_base_path`: internal
+* `data_base_path`: intern
 * `column_paths`: text
 * `created_by`: integer
 * `created_on`: timestamp with time zone

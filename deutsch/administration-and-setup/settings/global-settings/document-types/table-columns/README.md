@@ -40,7 +40,7 @@ Jeder Dokumenttyp wird mit einer Reihe von Standardspalten ausgeliefert (für Re
 * [Zweck und Verwendung](purpose-and-use.md): wo Tabellenspalten erscheinen
 * [Neue Spalte hinzufügen](adding-a-new-column.md)
 * [Spalten bearbeiten und löschen](editing-and-deleting-columns.md)
-* [Best Practices](best-practices-2.md)
+* [Bewährte Vorgehensweisen](best-practices-2.md)
 * [Fehlerbehebung](troubleshooting-1.md)
-* [Training Line Fields / Table Training](../../../../setup/document-training/training-line-fields-table-training/README.md): DocBits beibringen, wo sich die Tabelle eines Lieferanten befindet
-* [AI Table](../../../../../end-user-and-partner-section/end-user-section/ai-table/README.md): was der Benutzer in der Validierungsmaske sieht
+* [Positionsfelder und Tabellen trainieren](../../../../setup/document-training/training-line-fields-table-training/README.md): DocBits beibringen, wo sich die Tabelle eines Lieferanten befindet
+* [KI-Tabelle](../../../../../end-user-and-partner-section/end-user-section/ai-table/README.md): was der Benutzer in der Validierungsmaske sieht

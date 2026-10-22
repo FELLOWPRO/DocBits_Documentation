@@ -1,15 +1,15 @@
-# Document table column
+# Dokumenttabellenspalte
 
 ## Spalten
 
-* `id`: internal
-* `document_table_id`: internal
-* `table_name`: internal
-* `org_id`: ID to organisation
-* `column_name`: internal
-* `column_type`: internal
-* `title`: internal
-* `translation_key`: internal
+* `id`: intern
+* `document_table_id`: intern
+* `table_name`: intern
+* `org_id`: ID der Organisation
+* `column_name`: intern
+* `column_type`: intern
+* `title`: intern
+* `translation_key`: intern
 * `sort_order`: integer
 * `clean_field`: boolean
 * `alphanumeric_field`: boolean

@@ -2,12 +2,15 @@
 
 {% embed url="https://youtu.be/OmYbGG0ea0w?si=7okB6WP8kiKIZuec" %}
 
-<figure><img src="../../../.gitbook/assets/EDI.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-all-edi-list-de.png" alt="Vorhandenes EDI-Format mit seinen vier konfigurierten Attributen."><figcaption><p>Vorhandenes EDI-Format mit seinen vier konfigurierten Attributen.</p></figcaption></figure>
 
-#### Schritt 1: Strukturbeschreibung (Structure Descriptor)
+DocBits verarbeitet die EDI-Rohnachricht mithilfe einer JSON-Strukturbeschreibung zu JSON. Anschließend erzeugt es ein XML-Zwischenformat, wandelt dieses mit XSLT in Standard-XML um und nutzt das Ergebnis für die Feld- und Tabellenextraktion sowie die Vorschau.
 
-* **Format**: JSON
-* **Zweck**: In diesem Schritt wird die Struktur der EDI-Daten definiert. Dazu gehört die Angabe von Segmenten wie `SAC`, `N1` und `PO1` sowie die Beschreibung der Felder, die in den einzelnen Segmenten enthalten sind. Für Segmente mit verschachtelten Strukturen werden Schleifen (Loops) definiert, damit die Datenhierarchie korrekt abgebildet wird.
+Die folgenden Beispiele sind illustrative Ausschnitte und keine vollständigen, direkt importierbaren Konfigurationen. Manche lassen Inhalte aus oder enthalten Platzhalter wie `...`. Passen Sie sie an Ihre tatsächliche EDI-Nachricht an und testen Sie sie mit dem XML-Zwischenformat und der transformierten Ausgabe. Behalten Sie die von Ihrer Konfiguration benötigten Feldkennungen bei.
+
+## Schritt 1: EDI-Struktur beschreiben
+
+Die JSON-Strukturbeschreibung definiert Segmente wie SAC, N1 und PO1, deren Felder und verschachtelte Schleifen. Sie steuert, wie die EDI-Rohnachricht in strukturiertes JSON eingelesen wird.
 
 ```json
 {
@@ -22,10 +25,9 @@
 }
 ```
 
-#### Schritt 2: Transformation mit XSLT
+## Schritt 2: XML-Zwischenformat mit XSLT transformieren
 
-* **Format**: XSLT
-* **Zweck**: In diesem Schritt werden die strukturierten JSON-Daten in ein strukturiertes XML-Format transformiert. Die Ausgabe wird dabei gezielt auf die Anforderungen der Weiterverarbeitung oder Integration zugeschnitten. Diese Transformation hilft, präzise Informationen wie Bestätigungstypen, Bestelldetails und bedingte Elemente anhand bestimmter Werte zu extrahieren.
+DocBits wandelt das eingelesene JSON vor der Transformation in ein XML-Zwischenformat um. XSLT liest dieses XML und nicht direkt das JSON. Es erzeugt die Standard-XML-Struktur für die weitere Verarbeitung. Das Beispiel liest Bestätigungsdaten und Bedingungen aus XML-Knoten.
 
 ```xml
 <xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -49,10 +51,9 @@
 
 ```
 
-#### Schritt 3: Vorschau (HTML-Konvertierung)
+## Schritt 3: HTML-Vorschau erstellen
 
-* **Format**: XSLT (mit HTML-Ausgabe)
-* **Zweck**: Konvertiert die XML-Daten aus Schritt 2 in ein HTML-Format, um die transformierten Daten in einer gut lesbaren und ansprechenden Form als Vorschau anzuzeigen. Das HTML-Layout enthält Stile für die Darstellung und strukturiert Daten wie Bestellungen, Lieferantendetails und Bestellbedingungen für eine übersichtliche Ansicht.
+Ein Vorschau-Stylesheet wandelt das transformierte XML aus Schritt 2 in HTML um. Passen Sie Layout und Datenbindungen an den Dokumenttyp an und prüfen Sie, ob die Vorschau die transformierten Daten richtig darstellt.
 
 ```xml
 <xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -77,10 +78,9 @@
 
 ```
 
-#### Schritt 4: Extraktionspfade
+## Schritt 4: XPath-Extraktion konfigurieren
 
-* **Format**: JSON
-* **Zweck**: Legt JSON-Pfade fest, mit denen Schlüsselwerte aus den in Schritt 2 erzeugten XML-Daten extrahiert werden. Diese Pfade dienen dazu, bestimmte Datenpunkte wie Bestellungen und Währung abzurufen, die für die nachgelagerte Verarbeitung und die Integration in andere Systeme entscheidend sind.
+Die Extraktionskonfiguration wird als JSON gespeichert. Ihre Pfade sind jedoch XPath-Ausdrücke, die gegen das transformierte XML aus Schritt 2 ausgewertet werden. Feldpfade wählen Werte aus; ein Tabellenzeilenpfad wählt Zeilen aus, und Spaltenpfade wählen Werte innerhalb der jeweiligen Zeile. Es handelt sich nicht um JSONPath-Ausdrücke.
 
 ```json
 {
@@ -102,4 +102,9 @@
 }
 ```
 
-Diese aktualisierte Abfolge gewährleistet einen durchgängigen Prozess, der rohe EDI-Daten in strukturierte, verwertbare Informationen umwandelt: JSON für die Datenstrukturierung, XSLT für die Transformation und die HTML-Vorschau, anschließend JSON-Pfade für die Datenextraktion und Integration.
+Der vollständige Ablauf lautet: EDI-Rohdaten → strukturiertes JSON → XML-Zwischenformat → Standard-XML durch XSLT → Feld- und Tabellenextraktion mit XPath sowie HTML-Vorschau. Prüfen Sie Ausgabe und extrahierte Werte mit repräsentativen Nachrichten, bevor Sie eine Konfiguration produktiv einsetzen.
+
+
+Die Ansichten zeigen eine vorhandene Konfiguration und Version. Die Einstellungen unterscheiden sich je nach Dokumenttyp und Format. Prüfen Sie Änderungen in einem Entwurf vor der Aktivierung.
+
+Einzelne Bezeichnungen wie Custom, Default und Electronice im Feldnamen entsprechen der derzeitigen Produktoberfläche. Die technischen Attributnamen und der Konfigurationscode bleiben unverändert.

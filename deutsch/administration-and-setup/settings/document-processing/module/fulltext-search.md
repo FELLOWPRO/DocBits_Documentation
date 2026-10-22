@@ -128,5 +128,5 @@ Die Preisgestaltung für das Volltext-Modul wird über Ihren DocBits-Vertriebsko
 ## Siehe auch
 
 * [Volltextsuche-Einstellungen](../../log-settings/fulltext-search-settings.md) — Indexverwaltung und der Schalter für den Vektor-Index.
-* [Fulltext & Vector Search Funktionen](../../global-settings/document-types/script/scripting-in-docbits/fulltext-search-functions.md) — Scripting-API für `fulltext_search()` und `vector_search()`.
+* [Funktionen für Volltext- und Vektorsuche](../../global-settings/document-types/script/scripting-in-docbits/fulltext-search-functions.md) — Scripting-API für `fulltext_search()` und `vector_search()`.
 * [Modulübersicht](README.md) — vollständige Liste der optionalen DocBits-Module.

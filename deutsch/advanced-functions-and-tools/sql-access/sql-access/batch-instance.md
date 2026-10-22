@@ -1,11 +1,11 @@
-# Batch instance
+# Stapelinstanz
 
 ## Tabelle `public.batch_instance`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
+* `id`: intern
+* `org_id`: ID der Organisation
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone

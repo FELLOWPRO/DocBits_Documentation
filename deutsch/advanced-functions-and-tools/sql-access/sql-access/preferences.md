@@ -1,10 +1,10 @@
-# Preferences
+# Präferenzen
 
 ## Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `pref_key`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `pref_key`: intern
 * `pref_value`: text
 * `created_by`: integer
 * `created_on`: timestamp with time zone
@@ -12,7 +12,7 @@
 * `deleted_on`: timestamp with time zone
 * `is_deleted`: boolean
 * `user_id`: integer
-* `sub_org_id`: internal
+* `sub_org_id`: intern
 
 ## Analyse & Beschreibung
 

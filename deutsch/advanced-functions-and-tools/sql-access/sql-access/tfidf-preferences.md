@@ -1,20 +1,20 @@
-# Tfidf preferences
+# TF-IDF-Präferenzen
 
 ## Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `tfidf_id`: internal
-* `pref_key`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `tfidf_id`: intern
+* `pref_key`: intern
 * `pref_value`: text
 * `created_by`: integer
 * `created_on`: timestamp with time zone
-* `last_modified_by`: internal
+* `last_modified_by`: intern
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
-* `deleted_by`: internal
+* `deleted_by`: intern
 * `deleted_on`: timestamp with time zone
-* `supplier_id`: internal
+* `supplier_id`: intern
 
 ## Analyse & Beschreibung
 

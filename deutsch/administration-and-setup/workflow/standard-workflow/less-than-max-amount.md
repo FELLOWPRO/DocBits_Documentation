@@ -1,4 +1,4 @@
-# Less than Max Amount
+# Unterhalb des Höchstbetrags
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.48.55 (1).png" alt=""><figcaption></figcaption></figure>
 

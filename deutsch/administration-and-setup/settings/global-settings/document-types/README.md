@@ -1,7 +1,7 @@
 # Dokumenttypen
 
 {% embed url="https://youtu.be/pFz_6tvNlU4" %}
-DocBits Document Types Explained: Create, Configure & Assign Processing Settings
+DocBits-Dokumenttypen: erstellen, konfigurieren und Verarbeitungseinstellungen zuweisen
 {% endembed %}
 
 <figure><img src="../../../../.gitbook/assets/document_types.png" alt="Dokumenttypen"><figcaption><p>Seite „Dokumenttypen“</p></figcaption></figure>

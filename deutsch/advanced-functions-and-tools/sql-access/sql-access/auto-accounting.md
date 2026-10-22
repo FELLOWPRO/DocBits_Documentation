@@ -1,19 +1,19 @@
-# Auto accounting
+# Automatische Kontierung
 
 ## Tabelle `public.auto_accounting`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `supplier_name`: Supplier Name
-* `description`: internal
-* `item_number`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `supplier_name`: Lieferantenname
+* `description`: intern
+* `item_number`: intern
 * `line_amount`: double precision
 * `total_amount`: double precision
 * `mapped_amount`: double precision
-* `ledger_account`: internal
-* `doc_id`: internal
+* `ledger_account`: intern
+* `doc_id`: intern
 
 ### Analyse & Beschreibung
 

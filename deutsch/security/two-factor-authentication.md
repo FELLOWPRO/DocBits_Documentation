@@ -54,7 +54,7 @@ Backup-Codes werden nur im Moment ihrer Erstellung angezeigt. DocBits kann sie n
 
 1. Geben Sie wie gewohnt Ihre E-Mail-Adresse und Ihr Passwort ein.
 
-    <figure><img src="../.gitbook/assets/mfa-login.png" alt="The DocBits login screen"><figcaption><p>Der Anmeldebildschirm. Sie können sich auch ohne Passwort über <strong>Mit Passkey anmelden</strong> anmelden.</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/mfa-login.png" alt="Der DocBits-Anmeldebildschirm"><figcaption><p>Der Anmeldebildschirm. Sie können sich auch ohne Passwort über <strong>Mit Passkey anmelden</strong> anmelden.</p></figcaption></figure>
 2. DocBits fragt nach Ihrem zweiten Faktor. Wählen Sie Ihre Methode:
    * **Authentifikator** — geben Sie den aktuellen 6-stelligen Code aus Ihrer App ein.
    * **E-Mail** — klicken Sie auf **Code per E-Mail senden**, um einen Code per E-Mail zu erhalten, und geben Sie ihn dann ein.

@@ -1,4 +1,4 @@
-# PO Matching
+# Bestellabgleich
 
 Um Ihre PO-Matching-Konfiguration zu testen, müssen Sie in LN/M3 eine Bestellung (Purchase Order) anlegen, um zu prüfen, ob INFOR mit DocBits synchronisiert ist.&#x20;
 

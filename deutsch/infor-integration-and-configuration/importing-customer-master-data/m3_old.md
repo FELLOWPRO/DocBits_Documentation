@@ -11,7 +11,7 @@ Diese Anleitung erklärt, wie Sie ein API-Connection-Template importieren, um wi
 
 <mark style="color:red;">**Hinweis**</mark>: Detaillierte Informationen zur Konfiguration einzelner Bereiche wie Auto Accounting, Lieferantenintegration, Bestellungen oder Tabellenextraktion für Kostenelemente finden Sie in der jeweiligen Dokumentation:
 
-* [Auto Accounting](m3/auto-accounting.md)
+* [Automatische Kontierung](m3/auto-accounting.md)
 * [Lieferanten und Bestellung](m3/suppliers-and-purchase-orders.md)
 * [So importieren Sie alle Lieferanten](m3/how-to-import-all-suppliers.md)
 * [Tabellenextraktion für Kostenelemente](m3/table-extraction-for-costing-element.md)

@@ -1,4 +1,4 @@
-# Best Practices
+# Bewährte Vorgehensweisen
 
 ## Best Practices für kontinuierliches Modelltraining, wie Trainingshäufigkeit, Auswahl von Beispielbelegen und Überwachung von Modellleistungsmetriken.
 

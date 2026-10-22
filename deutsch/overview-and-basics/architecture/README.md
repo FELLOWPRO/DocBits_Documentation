@@ -2,11 +2,11 @@
 
 ## **DocBits Cloud-Kunde**
 
-<figure><img src="../../.gitbook/assets/docbits_cloud_customer_architecture.png" alt="DocBits Cloud Customer Architecture"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_cloud_customer_architecture.png" alt="DocBits-Architektur für Cloud-Kunden"><figcaption></figcaption></figure>
 
 ## DocBits On-Premise
 
-<figure><img src="../../.gitbook/assets/docbits_on_premise_architecture.png" alt="DocBits On Premise Architecture"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_on_premise_architecture.png" alt="DocBits-On-Premise-Architektur"><figcaption></figcaption></figure>
 
 Doc**Bits** integriert sich nahtlos in Infor LN/M3 über die ION API, ION Desk und die Infor-Standard-BODs. Unsere API-Integration ermöglicht es uns, Daten nach Infor zu exportieren und die Stammdatenvalidierung in Doc**Bits** durchzuführen.
 
@@ -19,7 +19,7 @@ Alle Verbindungen zwischen den Komponenten werden mit branchenüblichen Verschl�
 <figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt=""><figcaption></figcaption></figure>
 
 {% content-ref url="prefect-local-setup-requirements.md" %}
-[prefect-local-setup-requirements.md](prefect-local-setup-requirements.md)
+[Anforderungen an die lokale Prefect-Einrichtung](prefect-local-setup-requirements.md)
 {% endcontent-ref %}
 
 **Cloud**:

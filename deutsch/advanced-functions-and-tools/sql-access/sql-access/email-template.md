@@ -1,21 +1,21 @@
-# Email template
+# E-Mail-Vorlage
 
 ## Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `name`: internal
-* `email_type`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `name`: intern
+* `email_type`: intern
 * `value`: text
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
 * `deleted_on`: timestamp with time zone
-* `subject`: internal
-* `last_modified_by`: internal
-* `deleted_by`: internal
-* `doc_type`: DOC Type
+* `subject`: intern
+* `last_modified_by`: intern
+* `deleted_by`: intern
+* `doc_type`: Dokumenttyp
 
 ## Analyse & Beschreibung
 

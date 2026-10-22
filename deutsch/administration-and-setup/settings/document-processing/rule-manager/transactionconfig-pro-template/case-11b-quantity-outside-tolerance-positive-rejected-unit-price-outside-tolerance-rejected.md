@@ -1,36 +1,39 @@
-# Case 11b: Quantity Outside Tolerance (Positive Rejected), Unit Price Outside Tolerance (Rejected)
+# Fall 11b: Menge oberhalb der Toleranz abgelehnt, Stückpreisabweichung abgelehnt
 
-## Scenario:
+> **Hinweis zu den Beispielen:** Die folgenden Abläufe veranschaulichen eine konfigurierte Exportzuordnung. Tatsächliche Ausgaben, Beträge, Vorzeichen und Dokumenttypen hängen von der aktiven Exportzuordnung, ihren Konfliktregeln und den Genehmigungsentscheidungen ab. Die Beispiele beschreiben keine bedingungslose automatische Ausstellung rechtlich wirksamer Belastungsanzeigen oder Gutschriften.
 
-The quantity exceeds the acceptable range (positive) and is rejected, and the unit price is also outside tolerance and rejected.
 
-## Action:
+## Szenario:
 
-The system adjusts the quantity and unit price to match the approved levels from the purchase order, rejecting any excesses, and processes the transaction.
+Die Menge überschreitet den zulässigen Bereich (positive Abweichung) und wird abgelehnt. Auch der Stückpreis liegt außerhalb der Toleranz und wird abgelehnt.
 
-## Example:
+## Aktion:
 
-* **Purchase Order (PO):**
-  * Quantity: 200 units
-  * Unit Price: $50.00 per unit
-  * Total Amount: $10,000.00
-* **Invoice Received:**
-  * Quantity: 220 units (outside tolerance of 10%, rejected)
-  * Unit Price: $55.00 per unit (outside tolerance of 10%, rejected)
-  * Total Amount: $12,100.00
-* **Tolerance Levels:**
-  * Quantity Tolerance: ±5%
-  * Unit Price Tolerance: ±2%
+Das System passt Menge und Stückpreis an die genehmigten Bestellwerte an, lehnt darüber hinausgehende Werte ab und verarbeitet die Transaktion.
 
-Since both the quantity (220 units) and unit price ($55.00) exceed the acceptable tolerance limits and neither has been approved, the system will:
+## Beispiel:
 
-1. **Reject the Excess Quantity:** The system does not accept the invoiced quantity of 220 units and adjusts it to match the original purchase order.
-   * Adjusted Quantity = 200 units (from PO)
-2. **Reject the Invoice Unit Price:** The system does not accept the invoiced unit price of $55.00 and adjusts it to match the original purchase order.
-   * Adjusted Unit Price = $50.00 per unit (from PO)
-3. **Recalculate the Total Amount:** The system calculates the total amount using the adjusted quantity and unit price:
-   * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
-   * **Corrected Total Amount = 200 units × $50.00 per unit = $10,000.00**
-4. **Process the Invoice:** The system processes the invoice with the corrected total amount of $10,000.00, rejecting the excess quantity and higher unit price.
+* **Bestellung (PO):**
+  * Menge: 200 Einheiten
+  * Stückpreis: $50.00 je Einheit
+  * Gesamtbetrag: $10,000.00
+* **Eingegangene Rechnung:**
+  * Menge: 220 Einheiten (Abweichung außerhalb der Toleranz: 10%, abgelehnt)
+  * Stückpreis: $55.00 je Einheit (Abweichung außerhalb der Toleranz: 10%, abgelehnt)
+  * Gesamtbetrag: $12,100.00
+* **Toleranzgrenzen:**
+  * Mengentoleranz: ±5%
+  * Stückpreistoleranz: ±2%
 
-This approach ensures that the transaction aligns with the original terms of the purchase order, maintaining consistent pricing and quantity controls while rejecting unapproved variances.
+Sowohl die Menge (220 Einheiten) als auch der Stückpreis ($55.00) überschreiten die zulässigen Toleranzgrenzen; keiner der Werte wurde genehmigt. Das System führt folgende Schritte aus:
+
+1. **Mehrmenge ablehnen:** Das System akzeptiert die berechnete Menge von 220 Einheiten nicht und passt sie an die ursprüngliche Bestellung an.
+   * Angepasste Menge = 200 Einheiten (aus der Bestellung)
+2. **Rechnungsstückpreis ablehnen:** Das System akzeptiert den berechneten Stückpreis von $55.00 nicht und passt ihn an die ursprüngliche Bestellung an.
+   * Angepasster Stückpreis = $50.00 je Einheit (aus der Bestellung)
+3. **Gesamtbetrag neu berechnen:** Das System berechnet den Gesamtbetrag anhand der angepassten Menge und des angepassten Stückpreises:
+   * **Korrigierter Gesamtbetrag = Angepasste Menge × Angepasster Stückpreis**
+   * **Korrigierter Gesamtbetrag = 200 Einheiten × $50.00 je Einheit = $10,000.00**
+4. **Rechnung verarbeiten:** Das System verarbeitet die Rechnung mit dem korrigierten Gesamtbetrag von $10,000.00. Die Mehrmenge und der höhere Stückpreis werden abgelehnt.
+
+Damit entspricht die Transaktion den ursprünglichen Bestellbedingungen. Preise und Mengen werden einheitlich kontrolliert und nicht genehmigte Abweichungen abgelehnt.

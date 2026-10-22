@@ -33,4 +33,4 @@ FatturaPA ist der italienische E-Rechnungsstandard, der von der Agenzia delle En
 
 ## Verwandte Themen
 
-* [Supported Electronic Documents](./)
+* [Unterstützte elektronische Dokumente](./)

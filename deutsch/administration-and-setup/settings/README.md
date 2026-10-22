@@ -38,7 +38,7 @@ Steuern Sie, wie DocBits mit Benutzern kommuniziert und eingehende E-Mails verar
 * **Email Templates**: Erstellen und verwalten Sie wiederverwendbare E-Mail-Vorlagen für Benachrichtigungen, nach Dokumenttyp organisiert.
 * **Email Ingestion**: Konfigurieren Sie, wie eingehende E-Mails automatisch klassifiziert und in Dokumente umgewandelt werden. Enthält Regeln für Klassifizierung, Feldextraktion, Verarbeitung, Absenderverwaltung und Training, organisiert nach Dokumenttyp (Orders, Invoices, Quotes, Delivery Notes, COA, PO Confirm).
 
-## 4. System & Administration
+## 4. System und Administration
 
 Überwachen Sie den Systemzustand, verwalten Sie Integrationen und sorgen Sie für Sicherheit.
 

@@ -1,152 +1,73 @@
 # Configuración de WatchDog
 
-Esta guía explica cómo configurar el servicio WatchDog dentro de la aplicación DocBits. Todas las configuraciones se gestionan directamente en **Settings → Document Processing → WatchDog**.
+Abra **Ajustes → Procesamiento de documentos → WatchDog**. La interfaz actual tiene cuatro pestañas: **General**, **Configuraciones**, **Registros** y **Plantillas XSLT**. El estado del servicio está en General y las exportaciones se gestionan desde Configuraciones.
 
 <figure><img src="../../../.gitbook/assets/watchdog-configuration-es.svg" alt="Configuración de WatchDog: funciones de las cuatro pestañas."><figcaption><p>Configuración de WatchDog: funciones de las cuatro pestañas.</p></figcaption></figure>
 
----
+## 1. General: servicio, descarga y conexión
 
-## 1. Pestaña General
+Consulte el estado de conexión y la información de versión disponible. Esta pestaña también ofrece la descarga y las instrucciones de configuración para el entorno actual. Un estado **Desconectado** no acredita una instalación correcta.
 
-La pestaña General ofrece instrucciones de configuración, enlaces de descarga y ajustes de actualización.
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-general-safe-es.png" alt="Vista General de WatchDog con las cuatro pestañas actuales y el estado Desconectado del entorno de prueba. Los comandos con la clave de API y la ruta de instalación están ocultos. Esta imagen no acredita una instalación ni una conexión correcta."><figcaption><p>Vista General de WatchDog con las cuatro pestañas actuales y el estado Desconectado del entorno de prueba. Los comandos con la clave de API y la ruta de instalación están ocultos. Esta imagen no acredita una instalación ni una conexión correcta.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="Pestaña General de WatchDog"><figcaption></figcaption></figure>
-
-### 1.1 Descarga y configuración
-
-* Descargue la última versión de `WatchDog.exe` directamente desde la pestaña General
-* Copie la clave de API que se muestra
-* Ejecute el comando de configuración en un Símbolo del sistema de administrador:
+Descargue el ejecutable correspondiente a su entorno y utilice una clave de API autorizada de su organización. Ejecute el comando en un Símbolo del sistema de administrador, sustituyendo el marcador de posición:
 
 ```powershell
 WatchDog.exe -api YOUR_API_KEY
 ```
 
-### 1.2 Programación de actualización automática
+No publique claves ni comandos que las contengan. La programación de actualización se ajusta en General; revise las opciones de su versión antes de elegir la frecuencia.
 
-| Opción | Intervalo |
-| :--- | :--- |
-| On Startup Only | Comprobar una vez al iniciar |
-| Hourly | Cada 3600 segundos |
-| Daily | Cada 86400 segundos |
-| Weekly | Cada 604800 segundos |
+## 2. Configuraciones: importación y exportación
 
----
+La pestaña reúne las configuraciones de importación y exportación. Los recuentos y estados que aparecen corresponden a su organización; no son valores predeterminados del producto.
 
-## 2. Pestaña Configurations
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-configurations-es.png" alt="Pestaña Configuraciones con las acciones Nueva configuración de importación y Nueva configuración de exportación. Las listas contienen configuraciones existentes; sus nombres y valores están ocultos."><figcaption><p>Pestaña Configuraciones con las acciones Nueva configuración de importación y Nueva configuración de exportación. Las listas contienen configuraciones existentes; sus nombres y valores están ocultos.</p></figcaption></figure>
 
-Cree y gestione configuraciones de importación y exportación. Todas las configuraciones se crean directamente en DocBits, sin necesidad de archivos de configuración locales.
+### 2.1 Nueva configuración de importación
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_03.png" alt="Resumen de configuraciones de WatchDog"><figcaption></figcaption></figure>
+Abra **Nueva configuración de importación** y elija la acción para crear una configuración nueva. El formulario inicial permite indicar el nombre, la suborganización, el tipo de documento y las rutas de vigilancia y éxito. Las opciones globales de los selectores tienen un alcance distinto de seleccionar una suborganización o un tipo concreto: compruebe ese alcance antes de guardar.
 
-### 2.1 Configuraciones de importación
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-import-dialog-es.png" alt="Formulario inicial de importación con Nombre de la configuración y las rutas de vigilancia y éxito. El título Nueva configuración Importar es la redacción actual de la interfaz. Las rutas visibles son ejemplos del formulario; no se guardó una configuración."><figcaption><p>Formulario inicial de importación con Nombre de la configuración y las rutas de vigilancia y éxito. El título Nueva configuración Importar es la redacción actual de la interfaz. Las rutas visibles son ejemplos del formulario; no se guardó una configuración.</p></figcaption></figure>
 
-Defina dónde supervisa WatchDog la llegada de nuevos documentos.
+| Campo | Uso |
+| --- | --- |
+| Nombre de la configuración | Identifica esta configuración en la lista. |
+| Suborganización | Limita el ámbito cuando se selecciona una suborganización. |
+| Tipo de Documento | Define qué tipo de documento corresponde a la importación. |
+| Ruta de la carpeta de vigilancia | Carpeta donde WatchDog busca los archivos entrantes. |
+| Ruta de la carpeta de éxito | Destino de los archivos importados correctamente. |
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_02.png" alt="Configuración de importación de WatchDog"><figcaption></figcaption></figure>
+Las rutas `C:\WatchDog\import` y `C:\WatchDog\success` del formulario son ejemplos. Las carpetas deben existir y la cuenta del servicio debe tener los permisos adecuados. El título **Nueva configuración Importar** es la redacción que muestra actualmente la interfaz; se refiere al formulario de importación.
 
-| Campo | Descripción |
-| :--- | :--- |
-| **Name** | Nombre visible de esta configuración |
-| **Watch Folder** | Directorio que se supervisa en busca de nuevos documentos (obligatorio) |
-| **Success Folder** | Carpeta a la que se mueven los archivos tras una importación correcta |
-| **Document Type** | INVOICE, CREDIT\_NOTE, PURCHASE\_ORDER, etc. |
-| **Sub-Organisation** | Opcional: dirige los documentos a una suborganización concreta |
+### 2.2 Nueva configuración de exportación
 
-### 2.2 Configuraciones de exportación
+**Nueva configuración de exportación** abre el asistente de ajustes de exportación. Empiece por **Información básica**: título, ámbito de suborganización, **Tipo de Documento** y método del selector **Exportar**.
 
-Defina cómo y dónde se exportan los documentos procesados.
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-export-draft-es.png" alt="Primer paso de una nueva exportación: Información básica, Título de configuración, Tipo de Documento y selector Exportar. Los campos posteriores dependen del método elegido. No se seleccionó un método ni se guardó el borrador."><figcaption><p>Primer paso de una nueva exportación: Información básica, Título de configuración, Tipo de Documento y selector Exportar. Los campos posteriores dependen del método elegido. No se seleccionó un método ni se guardó el borrador.</p></figcaption></figure>
 
-> **Importante:** Las configuraciones de exportación ahora **requieren un tipo de documento** (`doc_type`). El sistema rechazará las configuraciones sin tipo de documento.
+El tipo de documento (`doc_type`) es obligatorio para una configuración de exportación. Los campos siguientes dependen del método elegido; la carpeta de destino, la transformación XSLT o las credenciales no se introducen necesariamente en este primer paso. Revise el destino y el ámbito antes de guardar.
 
-| Campo | Descripción |
-| :--- | :--- |
-| **Name** | Nombre visible de esta configuración |
-| **Document Type** | Obligatorio: INVOICE, CREDIT\_NOTE, etc. |
-| **Export Method** | Cómo se exportan los documentos (véase más abajo) |
-| **Export Folder** | Directorio de destino para las exportaciones a carpeta |
-| **Execution Order** | Prioridad cuando coinciden varias configuraciones (por defecto: 1) |
-| **XSLT Template** | Opcional: plantilla de transformación XML |
+Entre los métodos de integración se encuentran la carpeta local (`Folder`/`watcher`), Infor IDM, Infor BOD, ION API, GLS840MI y REST API. Son nombres técnicos. Su disponibilidad y sus campos dependen de la configuración y versión del entorno. Infor BOD requiere un BOD y un flujo adecuados para el sistema de destino; elegirlo no convierte automáticamente un documento para cualquier ERP. En una integración REST, compruebe el contrato de la API y su autenticación específica.
 
-### 2.3 Métodos de exportación
+Opciones como **Barcode Divider** o **DocBits Operator** pertenecen a su configuración correspondiente; no son pestañas adicionales de WatchDog.
 
-| Método | Descripción |
-| :--- | :--- |
-| **Folder (watcher)** | Exporta PDF + XML a una carpeta local |
-| **Infor IDM** | Carga en Infor Document Management |
-| **Infor BOD** | Envía BOD XML a Infor ERP / SAP / M3 |
-| **ION API** | Llama a los endpoints de la API de Infor ION |
-| **GLS840MI** | Procesamiento por lotes de M3 (mediante REST API) |
-| **REST API** | Envía a una API externa con autenticación ION OAuth |
+## 3. Registros: diagnóstico
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_04.png" alt="Configuración de exportación de WatchDog"><figcaption></figcaption></figure>
+Use **Nivel de registro**, **Intervalo de tiempo** y la búsqueda para acotar los registros disponibles. El intervalo seleccionado se aplica a esta consulta, no establece una regla universal de retención.
 
-### 2.4 Opciones de procesamiento
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-logs-es.png" alt="Pestaña Registros con Nivel de registro, Intervalo de tiempo y búsqueda. El intervalo visible pertenece a esta consulta; los datos de los registros están ocultos y no acreditan una conexión correcta del servicio."><figcaption><p>Pestaña Registros con Nivel de registro, Intervalo de tiempo y búsqueda. El intervalo visible pertenece a esta consulta; los datos de los registros están ocultos y no acreditan una conexión correcta del servicio.</p></figcaption></figure>
 
-* **Barcode Divider:** divide automáticamente los documentos de varias páginas según los códigos de barras
-* **DocBits Operator:** habilita tareas de automatización del navegador
+Los identificadores técnicos de eventos pueden aparecer en los mensajes: `FILE_IMPORT_STARTED`, `FILE_IMPORT_COMPLETED`, `FILE_IMPORT_FAILED`, `EXPORT_STARTED`, `EXPORT_COMPLETED`, `EXPORT_FAILED`, `FOLDER_VALIDATION_FAILED`, `CONFIG_LOADED`, `SERVICE_RESTART_INITIATED` y `SERVICE_RESTART_COMPLETED`. Su presencia en esta referencia no significa que se haya ejecutado cada evento en su entorno. No confunda la búsqueda de texto con un selector independiente de tipo de evento.
 
----
+## 4. Plantillas XSLT: gestión y editor
 
-## 3. Pestaña Status
+La pestaña **Plantillas XSLT** muestra las plantillas disponibles. **Nueva plantilla** abre el administrador; dentro del administrador, **Nueva plantilla** permite iniciar un editor vacío.
 
-Supervise el estado y la actividad del servicio WatchDog.
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-templates-es.png" alt="Pestaña Plantillas XSLT con Nueva plantilla y una lista existente cuyos nombres están ocultos. No se abrió ningún menú de fila ni se ejecutó una transformación."><figcaption><p>Pestaña Plantillas XSLT con Nueva plantilla y una lista existente cuyos nombres están ocultos. No se abrió ningún menú de fila ni se ejecutó una transformación.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_status.png" alt="Estado del servicio WatchDog"><figcaption></figcaption></figure>
+Indique **Nombre de la plantilla** y **Contenido XSLT**. **Validar contra** selecciona el contexto para **Validar XSLT**. La validación debe evaluarse con datos y una estructura compatibles; abrir el editor o ver un botón no demuestra una transformación correcta.
 
-### Información de estado
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-xslt-new-dialog-es.png" alt="Editor inicial sin guardar de Administrar plantillas XSLT, con Nombre de la plantilla, Contenido XSLT y Validar contra. Los nombres de las plantillas existentes están ocultos; el editor está vacío y no se ejecutó una validación."><figcaption><p>Editor inicial sin guardar de Administrar plantillas XSLT, con Nombre de la plantilla, Contenido XSLT y Validar contra. Los nombres de las plantillas existentes están ocultos; el editor está vacío y no se ejecutó una validación.</p></figcaption></figure>
 
-| Campo | Descripción |
-| :--- | :--- |
-| **Online/Offline** | Estado actual de la conexión (umbral de heartbeat de 30 s) |
-| **Version** | Versión de WatchDog instalada |
-| **Version First Seen** | Cuándo se notificó por primera vez esta versión |
-| **Last Restart** | Marca de tiempo del último reinicio del servicio |
-| **Auto-Update Enabled** | Si las actualizaciones automáticas están activas |
-| **Latest Version** | Versión más reciente disponible |
-| **Latest Version Checked At** | Cuándo se comprobó por última vez la versión más reciente |
-| **System Info** | Ruta de instalación, RAM libre, espacio libre en disco |
-
-### Indicador de estado
-
-| Estado | Significado |
-| :--- | :--- |
-| ✅ **Online** | WatchDog está conectado y activo |
-| ⚠️ **Offline** | No se ha recibido ningún heartbeat desde hace más de 30 segundos |
-| ❌ **Not Installed** | WatchDog nunca se ha conectado a esta organización |
-
----
-
-## 4. Pestaña Logs
-
-Consulte todos los eventos de WatchDog almacenados en OpenSearch.
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_05.png" alt="Registros de WatchDog"><figcaption></figcaption></figure>
-
-* Filtre por fecha, tipo de evento o palabras clave
-* Tipos de evento: `FILE_IMPORT_STARTED`, `FILE_IMPORT_COMPLETED`, `FILE_IMPORT_FAILED`, `EXPORT_STARTED`, `EXPORT_COMPLETED`, `EXPORT_FAILED`, `FOLDER_VALIDATION_FAILED`, `CONFIG_LOADED`, `SERVICE_RESTART_INITIATED`, `SERVICE_RESTART_COMPLETED`
-
----
-
-## 5. Pestaña XSLT Templates
-
-Gestione las plantillas de transformación XSLT utilizadas para las exportaciones XML.
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_06.png" alt="Lista de plantillas XSLT"><figcaption></figcaption></figure>
-
-* Cargue y edite plantillas XSLT
-* **Validación en vivo**: pruebe las plantillas con un XML de muestra y análisis de campos
-* Vincule plantillas a configuraciones de exportación
-* Consulte el recuento de uso (qué configuraciones utilizan cada plantilla)
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_07.png" alt="Editor de plantillas XSLT"><figcaption></figcaption></figure>
-
----
-
-## 6. Pestaña Configuración de exportacións
-
-Resumen de todas las configuraciones de exportación activas con su estado de conexión.
-
-* Supervise la marca de tiempo de la última conexión correcta
-* Gestione las configuraciones en línea (editar, copiar, eliminar)
-* Copie configuraciones en bloque entre suborganizaciones
+Vincule la plantilla desde la configuración de exportación cuando el método lo requiera. Revise su uso antes de modificar una plantilla compartida. Las imágenes muestran los formularios iniciales; no representan una configuración guardada ni una exportación realizada.

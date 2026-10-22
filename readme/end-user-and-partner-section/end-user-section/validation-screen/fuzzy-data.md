@@ -12,8 +12,8 @@ Mit Fuzzy-Data-Feldern (unscharfe Daten) können Benutzer verwandte Felder anhan
 
 * Sie befüllen verwandte Felder anhand ihres Wertes oder der Eingabe.
 * Die drei Standardfelder mit Fuzzy Data sind:
-  * **Purchase Order**
-  * **Supplier**
+  * **Bestellung**
+  * **Lieferant**
   * **Vendor ID**
 
 #### **Fuzzy-Data-Felder verwenden**
@@ -24,17 +24,17 @@ Mit Fuzzy-Data-Feldern (unscharfe Daten) können Benutzer verwandte Felder anhan
        <figure><img src="../../../.gitbook/assets/s150-fuzzy_data_selection_window-de.png" alt="Auswahldialog für einen Stammdatenabgleich; Datensätze sind ausgeblendet."><figcaption><p>Auswahldialog für einen Stammdatenabgleich; Datensätze sind ausgeblendet.</p></figcaption></figure>
    * Dieses Fenster enthält eine Tabelle mit allen Bestellungen aus der **Stammdaten-Nachschlagetabelle**.
    * Wenn Sie die Option **„Display all columns“** aktivieren, werden zusätzliche Details angezeigt.
-   * Wählen Sie eine **Bestellung** aus und klicken Sie auf **Proceed**:
+   * Wählen Sie eine **Bestellung** aus und klicken Sie auf **Weiter**:
      * Findet das System im Dokument eine Bestellung, filtert es automatisch danach.
      * Wird keine Übereinstimmung gefunden, können Sie **eigene Filter erstellen**, um die richtige Bestellung zu finden.
      * Es können mehrere Filter hinzugefügt werden; wenn Sie **„Match all filters“** aktivieren, müssen alle Bedingungen erfüllt sein.
      * Verfügbare Filteroptionen:
        * **Smart**
-       * **Contains**
-       * **Exact**
-       * **Starts with**
-       * **Ends with**
-   * Über eine Schaltfläche neben **Proceed** können Benutzer eine **neue Aufgabe/Benachrichtigung erstellen**.
+       * **enthält**
+       * **Genau**
+       * **Beginnt mit**
+       * **Endet mit**
+   * Über eine Schaltfläche neben **Weiter** können Benutzer eine **neue Aufgabe/Benachrichtigung erstellen**.
 2. **Einen Lieferanten oder eine Vendor ID auswählen**
    * Der Ablauf ist derselbe wie bei Bestellungen.
    * Der Unterschied: Die Felder Supplier und Vendor ID verwenden die **Lieferanten-Stammdatentabelle** statt der Stammdatentabelle der Bestellkopfdaten.

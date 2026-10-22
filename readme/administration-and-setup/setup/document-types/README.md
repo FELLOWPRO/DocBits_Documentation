@@ -11,7 +11,7 @@ Die Seite zeigt zuerst die **Standard-Dokumenttypen**, die DocBits bereitstellt 
 | Steuerelement | Funktion |
 | --- | --- |
 | **Aktivieren** | Macht diesen Dokumenttyp in Ihrer Organisation verfügbar oder nicht verfügbar. Ein blauer Schalter ist eingeschaltet, ein grauer ausgeschaltet. |
-| **Extraction** | Legt den Extraktionsmodus fest: **Flex**, wenn eingeschaltet, oder **Fix**, wenn ausgeschaltet. Der Schalter schaltet die Extraktion nicht einfach ein oder aus. Bewegen Sie den Mauszeiger über den Schalter, um den aktuellen Modus anzuzeigen. |
+| **Extraktion** | Legt den Extraktionsmodus fest: **Flex**, wenn eingeschaltet, oder **Fix**, wenn ausgeschaltet. Der Schalter schaltet die Extraktion nicht einfach ein oder aus. Bewegen Sie den Mauszeiger über den Schalter, um den aktuellen Modus anzuzeigen. |
 | **Einstellungen** (Zahnrad) | Öffnet **Weitere Einstellungen** für diesen Typ. Erweitern Sie dort eine Kategorie, um ihre Optionen anzuzeigen. Die Kategorien hängen vom Dokumenttyp ab. |
 | **Layouts** | Öffnet die Layout-Konfiguration. Die nächsten Schritte finden Sie im [Layout Builder](layout-builder.md). |
 | **Felder** | Öffnet die Feld- und Erkennungseinstellungen für diesen Typ. Wie Sie diese konfigurieren, erfahren Sie unter [Felder](../../settings/global-settings/document-types/fields/README.md). |
@@ -25,9 +25,9 @@ Je nach den Funktionen Ihrer Organisation sehen Sie möglicherweise weitere Link
 
 ## Felder und Erkennungseinstellungen bearbeiten
 
-Klicken Sie auf einer Karte auf **Felder**, um die Feldgruppen anzuzeigen. Oben auf dieser Seite legen **OCR** und **Match Score** die Schwellenwerte für die Erkennung fest, **Restore Defaults** setzt diese Schwellenwerte zurück und mit **Search by Name** finden Sie ein Feld. Mit **Create new group** ordnen Sie Felder in Gruppen, mit **Create field** fügen Sie innerhalb einer Gruppe ein Feld hinzu. **Master Data Settings** öffnet die zugehörige Stammdatenkonfiguration.
+Klicken Sie auf einer Karte auf **Felder**, um die Feldgruppen anzuzeigen. Oben auf dieser Seite legen **OCR** und **Abgleichswert** die Schwellenwerte für die Erkennung fest, **Standardwerte wiederherstellen** setzt diese Schwellenwerte zurück und mit **Suche nach Name** finden Sie ein Feld. Mit **Neue Gruppe erstellen** ordnen Sie Felder in Gruppen, mit **Feld erstellen** fügen Sie innerhalb einer Gruppe ein Feld hinzu. **Stammdaten-Einstellungen** öffnet die zugehörige Stammdatenkonfiguration.
 
-Jede Feldzeile enthält Steuerelemente wie **Required**, **Read Only**, **Hidden**, **Force Validation**, **Use AI**, OCR, Match Score und Formula. Lesen Sie die [Anleitung zu Feldern](../../settings/global-settings/document-types/fields/README.md), bevor Sie einzelne Werte ändern. Klicken Sie auf der Seite „Fields“ auf **Save Settings**, um Ihre Änderungen zu speichern.
+Jede Feldzeile enthält Steuerelemente wie **Pflichtfeld**, **Schreibgeschützt**, **Ausgeblendet**, **Validierung erzwingen**, **KI nutzen**, OCR, Match Score und Formula. Lesen Sie die [Anleitung zu Feldern](../../settings/global-settings/document-types/fields/README.md), bevor Sie einzelne Werte ändern. Klicken Sie auf der Seite „Fields“ auf **Einstellungen speichern**, um Ihre Änderungen zu speichern.
 
 <figure><img src="../../../.gitbook/assets/s150-document-types-invoice-fields-de.png" alt="Felder des Dokumenttyps Rechnung in der deutschen Verwaltung."><figcaption><p>Felder des Dokumenttyps Rechnung in der deutschen Verwaltung.</p></figcaption></figure>
 

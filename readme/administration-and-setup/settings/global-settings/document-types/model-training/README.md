@@ -19,4 +19,4 @@ Das Modelltraining bietet Administratoren eine Übersicht über Trainingsbeispie
 - **Trainingsmodel** führt zur Funktion für das Modelltraining.
 - **Test-Klassifizierung** dient der Prüfung der Klassifizierung an Beispieldokumenten.
 
-Verwenden Sie repräsentative Beispiele und prüfen Sie ein trainiertes Modell an bisher nicht verwendeten Dokumenten. Die Tabellenspalte für Aktionen ist im Produkt derzeit noch mit **Actions** beschriftet.
+Verwenden Sie repräsentative Beispiele und prüfen Sie ein trainiertes Modell an bisher nicht verwendeten Dokumenten. Die Tabellenspalte für Aktionen ist im Produkt derzeit noch mit **Aktionen** beschriftet.

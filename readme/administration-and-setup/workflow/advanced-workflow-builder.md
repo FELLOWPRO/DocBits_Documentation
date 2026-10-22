@@ -1,6 +1,6 @@
-# Advanced Workflow
+# Erweiterter Workflow
 
-Der **Advanced Workflow**-Builder ist ein Node-Graph-Editor für Workflows, die Verzweigungen, parallele Pfade und Ablaufsteuerung benötigen — über das lineare When/And/Then des Standard-Builders hinaus. Sie ordnen Knoten auf einer Canvas an und verbinden sie, um den Ausführungsfluss zu definieren.
+Der **Erweiterter Workflow**-Builder ist ein Node-Graph-Editor für Workflows, die Verzweigungen, parallele Pfade und Ablaufsteuerung benötigen — über das lineare When/And/Then des Standard-Builders hinaus. Sie ordnen Knoten auf einer Canvas an und verbinden sie, um den Ausführungsfluss zu definieren.
 
 ## Video: Rechnungsrouting direkt in DocBits
 
@@ -81,10 +81,10 @@ Klicken Sie auf **+ Hinzufügen**, um das Knoten-Menü zu öffnen. Zusätzlich z
 <figure><img src="../../.gitbook/assets/s50-workflow_advanced_add_menu-de.png" alt="Deutsches Hinzufügen-Menü des Advanced Workflow Builders mit Wenn, Und, Dann, Warten und Notiz."><figcaption><p>Deutsches Hinzufügen-Menü des Advanced Workflow Builders mit Wenn, Und, Dann, Warten und Notiz.</p></figcaption></figure>
 
 - **Wenn / Und / Dann** — dieselben Bedingungs- und Aktionskarten wie im Standard-Builder.
-- **Wait ALL** — wartet, bis *alle* eingehenden Zweige abgeschlossen sind, bevor es weitergeht.
-- **Wait ANY** — fährt fort, sobald *irgendein* eingehender Zweig abgeschlossen ist.
+- **Warten Sie alle** — wartet, bis *alle* eingehenden Zweige abgeschlossen sind, bevor es weitergeht.
+- **Warten Sie auf IRGENDWELCHE** — fährt fort, sobald *irgendein* eingehender Zweig abgeschlossen ist.
 - **OR** — verzweigt den Ablauf auf alternative Pfade.
-- **Note** — eine freie Text-Anmerkung auf der Canvas (ohne Einfluss auf die Ausführung).
+- **Notiz** — eine freie Text-Anmerkung auf der Canvas (ohne Einfluss auf die Ausführung).
 
 Führen Sie den Ablauf über die Play-Schaltfläche aus, validieren Sie ihn und speichern Sie ihn über die Speichern-Schaltfläche in der Toolbar.
 
@@ -93,4 +93,4 @@ Führen Sie den Ablauf über die Play-Schaltfläche aus, validieren Sie ihn und 
 ## Nächste Schritte
 
 - Was die einzelnen Karten tun, sehen Sie im Abschnitt **Karten**.
-- Für einfache lineare Automatisierungen ist der **Standard Workflow**-Builder schneller eingerichtet.
+- Für einfache lineare Automatisierungen ist der **Standard-Workflow**-Builder schneller eingerichtet.

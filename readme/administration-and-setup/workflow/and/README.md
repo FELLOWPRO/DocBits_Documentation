@@ -1,6 +1,6 @@
 # Und
 
-Die Aufnahmen zeigen die deutsche Und-Kartenauswahl. Einzelne Platzhalter wie **Search Pattern**, **data** und **status code** sowie einige Sätze der Angebotspreis-Karten sind im Produkt noch englisch.
+Die Aufnahmen zeigen die deutsche Und-Kartenauswahl. Einzelne Platzhalter wie **Search Pattern**, **data** und **Statuscode** sowie einige Sätze der Angebotspreis-Karten sind im Produkt noch englisch.
 
 Verwenden Sie eine **Und**-Karte, um zu entscheiden, ob ein Workflow nach seinem **Wenn**-Auslöser fortgesetzt werden soll. Fügen Sie die erforderlichen Prüfungen vor der Aktion **Dann** hinzu. Auf jeder Karte werden die auszufüllenden Felder angezeigt, z. B. **Operator**, **Feldname** oder **Wert**; Die Screenshots zeigen die verfügbaren Kartenvorlagen, keine abgeschlossenen Regeln.
 

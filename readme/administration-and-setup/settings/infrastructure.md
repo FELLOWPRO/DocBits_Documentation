@@ -75,7 +75,7 @@ Die Registerkarte „Geplante Aufgaben" listet die wiederkehrenden Hintergrundau
 
 | Spalte | Beschreibung |
 |--------|-------------|
-| **Task** | Der Name der geplanten Aufgabe. |
+| **Aufgabe** | Der Name der geplanten Aufgabe. |
 | **Letzte Ausführung** | Wie lange es her ist, dass sie zuletzt ausgeführt wurde. Bewegen Sie den Mauszeiger darüber, um den genauen Zeitstempel zu sehen; *„Nie ausgeführt"* bedeutet, dass sie noch nicht ausgelöst wurde. |
 | **Status** | Zeitplanzustand (siehe unten). |
 

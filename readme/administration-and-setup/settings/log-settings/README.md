@@ -1,4 +1,4 @@
-# Activity Logging
+# Registro attività
 
 <figure><img src="../../../.gitbook/assets/prior-t011-it.png" alt="Filtri del registro delle attività; le voci sono nascoste."><figcaption><p>Filtri del registro delle attività; le voci sono nascoste.</p></figcaption></figure>
 

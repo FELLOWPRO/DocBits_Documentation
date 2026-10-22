@@ -8,13 +8,12 @@ Puoi scegliere di calcolare automaticamente il **prezzo unitario** di ogni riga 
 
 1.  Vai su **Impostazioni** -> **Impostazioni globali** -> **Tipi di documento**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1.png" alt=""><figcaption></figcaption></figure>
 2.  Seleziona il tipo di documento desiderato e clicca su **Altre impostazioni**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u044-it.png" alt="Accesso alle impostazioni aggiuntive del tipo di documento Fattura. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati."><figcaption><p>Accesso alle impostazioni aggiuntive del tipo di documento Fattura. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati.</p></figcaption></figure>
 3.  Nella sezione **Ordine di acquisto**, abilita l'opzione **Calcola prezzo unitario PO**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u045-it.png" alt="Impostazioni dello stato delle righe di ordine già utilizzate."><figcaption><p>Impostazioni dello stato delle righe di ordine già utilizzate.</p></figcaption></figure>
 
 ## Come viene calcolato il prezzo
 

@@ -3275,5 +3275,6 @@
       "sha256": "4dc6d13bf00c0febd4984b662981f4a7900b21261cd388605249816e2249961a",
       "caption": "Filtri della dashboard per assegnazione e necessità di riavvio."
     }
-  ]
+  ],
+  "additional_native_image_reuses": 2
 }

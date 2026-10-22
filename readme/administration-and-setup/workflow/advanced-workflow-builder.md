@@ -1,4 +1,4 @@
-# Advanced Workflow
+# Flusso avanzato
 
 Il builder **Flusso di lavoro avanzato** è un editor a grafo di nodi per i workflow che necessitano di ramificazioni, percorsi paralleli e controllo del flusso — oltre il modello lineare When/And/Then del builder Standard. Disponi i nodi su un canvas e li colleghi per definire il flusso di esecuzione.
 
@@ -91,6 +91,6 @@ Esegui il flusso con il controllo di riproduzione, validalo e salvalo con il pul
 ## Prossimi passi
 
 - Scopri cosa fa ogni scheda nella sezione **Schede**.
-- Per automazioni lineari semplici, il builder **Standard Workflow** è più rapido da configurare.
+- Per automazioni lineari semplici, il builder **Flusso standard** è più rapido da configurare.
 
 [Guarda i cinque capitoli](advanced-workflow-videos.md)

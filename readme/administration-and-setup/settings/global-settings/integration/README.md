@@ -1,4 +1,4 @@
-# Integration & SSO
+# Integrazione e SSO
 
 <figure><img src="../../../../.gitbook/assets/prior-t010-it.png" alt="Configurazione dell’integrazione e dei provider SSO."><figcaption><p>Configurazione dell’integrazione e dei provider SSO.</p></figcaption></figure>
 

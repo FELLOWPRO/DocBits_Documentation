@@ -9,9 +9,9 @@ The menu currently provides **Full**, **Fast**, **Nexus**, **Nexus Flash**, **Au
 
 Selecting a different model can require confirmation and restart extraction. Check the document and scope before confirming. Opening the menu alone does not change the setting; no model was selected or confirmed for these illustrations.
 
-<figure><img src="../../../.gitbook/assets/selecting_a_supplier_specific_ai_model_1.png" alt="Options menu of the validation screen with the AI Model dropdown"><figcaption><p>Options menu for the illustrated extraction-template context, using a synthetic example invoice.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/selecting_a_supplier_specific_ai_model_1.png" alt="Options menu for the illustrated extraction-template context, using a synthetic example invoice."><figcaption><p>Options menu for the illustrated extraction-template context, using a synthetic example invoice.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/selecting_a_supplier_specific_ai_model_2.png" alt="AI Model dropdown open with Full, Fast, Nexus, Nexus Flash, Auto and Auto Nexus"><figcaption><p>The AI Model dropdown with six options and a synthetic example invoice; no model change is shown.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/selecting_a_supplier_specific_ai_model_2.png" alt="The AI Model dropdown with six options and a synthetic example invoice; no model change is shown."><figcaption><p>The AI Model dropdown with six options and a synthetic example invoice; no model change is shown.</p></figcaption></figure>
 
 If extraction results are unsatisfactory, compare other available models using approved test documents and check the extracted values, processing time and charges. A switch may reprocess a document and does not guarantee improvement.
 

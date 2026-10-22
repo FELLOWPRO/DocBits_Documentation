@@ -19,8 +19,8 @@ Chaque carte de type de document affiche :
 
 | Contrôle | Description |
 |---------|-------------|
-| **Activate** | Interrupteur pour activer ou désactiver ce type de document pour le traitement. |
-| **Extraction** | Interrupteur pour activer ou désactiver l'extraction de données par IA pour ce type. |
+| **Activate** | Interrupteur pour activer ou désactiver ce type de document pour le traitement. Ce contrôle est distinct de **Extraction**. |
+| **Extraction** | Bascule le mode d'extraction entre **Flex** (activé) et **Fix** (désactivé). L'interrupteur n'active ni ne désactive l'extraction par IA. Pointez sur l'interrupteur pour voir le mode actif. |
 | **Settings** (icône d'engrenage) | Ouvre des options de configuration supplémentaires pour le type de document. |
 
 ## Onglets de configuration

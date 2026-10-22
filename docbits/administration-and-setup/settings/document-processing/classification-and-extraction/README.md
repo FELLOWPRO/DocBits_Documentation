@@ -1,62 +1,71 @@
 # Classification and Extraction
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction.png" alt="Classification and Extraction"><figcaption><p>Classification and Extraction Page</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction.png" alt=""><figcaption><p>Classification and Extraction settings</p></figcaption></figure>
 
 ## Overview
 
 In the **Classification and Extraction** settings, you can:
 
-* Enable **Document Splitting** based on QR codes
-* Configure **amount formatting**
-* Set up **table extraction**
+* Control how uploaded documents are **split** and how many pages are processed
+* Configure **amount formatting** for amount comparison
+* Set up **table extraction**, including the AI model used per supplier
 * Toggle processing of unsupported **ZUGFeRD** files
-* Define special classification rules
-* Monitor Custom-Trained **AI Models** used in the classification process
+* Define **classification rules** that assign a document type automatically
+* Review the **AI Models** and their trained labels
 
-This page provides a detailed explanation of all available settings.
+The page has three tabs: **General**, **Classification Rules** and **AI Models**. The *AI Models* tab is only shown when the model and label module is enabled for your organization.
 
-## **Accessing Classification and Extraction Settings**
+| Tab | Contents |
+|---|---|
+| General | Document Splitting, Document Processing, Amount Formatting, Table Extraction, Electronic Document |
+| Classification Rules | Regex rules that classify documents by source name |
+| AI Models | Custom-trained models with their labels, document types and priority |
 
-To access the **Classification and Extraction** settings, go to:\
-**Settings → Document Processing → Classification and Extraction**
+## Accessing Classification and Extraction Settings
 
-<figure><img src="../../../../.gitbook/assets/settings_classification_and_extraction.png" alt=""><figcaption></figcaption></figure>
+Go to **Settings → Document Types → Classification and Extraction**.
 
-## Document Splitting
+## General
 
-In the **Document Splitting** section, you can configure whether an uploaded document should be split into multiple documents whenever a **barcode** appears on one of its pages.
+The **General** tab groups the settings into collapsible sections. All changes are saved immediately when you change a value; there is no separate save button.
 
-To activate this feature:
+### Document Splitting
 
-1. Go to the **Document Splitting** section.
-2.  Open the dropdown menu.
+**Split** decides whether an uploaded document is split into several documents when a barcode appears on one of its pages. The dropdown offers:
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt=""><figcaption></figcaption></figure>
-3.  Select **Split by Barcode/QR Code**.
+* **Do not split uploaded documents** – the default; the document is processed as one file.
+* **Split by Barcode/QR-Code** – the document is split at every detected barcode.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_document_splitting.png" alt=""><figcaption><p>Split options in the Document Splitting section</p></figcaption></figure>
 
-You will then have the option to:
+When **Split by Barcode/QR-Code** is selected, two more fields appear:
 
-* Select one or more barcode types to be detected.
-*   Specify a regex pattern that the barcode must match in order to trigger document splitting.
+* **Barcode Type** – one or more barcode types to detect, for example *CODE-128* or *QR-CODE*.
+* **Barcode Pattern** – a regex the barcode value must match before the split is triggered. Leave it empty to split on any barcode of the selected types. The pattern is validated before it is stored; an invalid expression is reported immediately.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt=""><figcaption></figcaption></figure>
+After a successful split, the parent document is deleted and the pages continue as separate documents that share the same batch.
 
-## Amount Formatting
+### Document Processing
 
-In the **Amount Formatting** section, you have two options:
+**Pages to process** limits how many pages are OCRed, classified and extracted per document.
 
-* **Allow Rounding During Amount Comparison:**\
-  If enabled, a tolerance of ±0.5 is allowed during amount comparison.\
-  If disabled, a default tolerance of ±0.05 applies.
-* **Require Exact Match for Amount Comparison:**\
-  If enabled, amounts must match exactly with zero tolerance.\
-  If disabled, a tolerance of ±0.05 is allowed.
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_document_processing.png" alt=""><figcaption><p>Pages to process in the Document Processing section</p></figcaption></figure>
 
-<mark style="color:red;">**Note**</mark>: Only one of these settings can be active at a time.
+* Empty or **0** means all pages are processed.
+* A number *N* limits OCR, classification and extraction to the first *N* pages. The complete document is still stored, displayed and exported; pages beyond the limit are shown read-only.
 
-## Table Extraction
+### Amount Formatting
+
+Two switches control how amounts are compared against master data and purchase orders.
+
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_amount_formatting.png" alt=""><figcaption><p>Amount Formatting section</p></figcaption></figure>
+
+* **Allow Rounding During Amount Comparison** – when enabled, a tolerance of ±0.5 is allowed. When disabled, ±0.05 applies.
+* **Require Exact Match for Amount Comparison** – when enabled, amounts must match exactly, with zero tolerance. When disabled, ±0.05 applies.
+
+Only one of the two switches can be active at a time; enabling one disables the other.
+
+### Table Extraction
 
 {% hint style="info" %}
 **Prerequisites for a working table extraction**
@@ -68,6 +77,8 @@ In the **Amount Formatting** section, you have two options:
 {% endhint %}
 
 You can extract tables from documents by enabling either **Table Extraction** or **AI Table Extraction**. A trained table (whether AI-based or manual) is always linked to a specific supplier.
+
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_extraction.png" alt=""><figcaption><p>Table extraction switches</p></figcaption></figure>
 
 **Table Extraction:** Activates rule-based table extraction. Tables are trained per supplier on the validation screen (*Go to table extraction view*).\
 Learn more about training [here](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
@@ -81,8 +92,6 @@ Learn more about training [here](../../../setup/document-training/training-line-
 * **Hybrid (text and images)** – Text layer and page image are combined in the same request.
 * **Auto (decided per document)** – DocBits decides per document whether the text layer suffices.
 
-The mode is stored under the preference key `TABLE_EXTRACTION_VISION_MODE`; the legacy switch `TABLE_EXTRACTION_USE_VISION` remains and effectively means *Images only*.
-
 **Use Structured Extraction (AI):** The AI returns the table in a fixed structure that maps directly onto the configured table columns. Recommended when column headers on the documents vary a lot. Clicking the setting opens a preview of exactly which fields and columns the AI will be asked for: header fields and line columns are listed with their source (requested or disabled standard fields), and the expected output mode (e.g. *strict* – no additional columns). Fields that are configured for the document type but switched off are not requested from the AI.
 
 **Table Extraction for Costing Element:** When enabled, DocBits can extract costing elements from tables at the line level and classify them accordingly.\
@@ -93,6 +102,8 @@ More information on this setting [here](auto-extract-tax-code.md).
 
 **Save extraction rules (Admin only):** Only administrators can click *Save Rules* in table training. Switch it on when users keep saving rules that break a supplier's extraction.
 
+**Extract hidden fields:** Fields marked as hidden in the field settings are extracted as well. Use it when a value is needed for a rule or an export but should not be shown on the validation screen.
+
 **AI Model:** Selects the AI tier used for table extraction. Six options are available: **Full** (highest accuracy, slowest, 2 tokens per document), **Fast** (default; 1 token per document), **Nexus** and **Nexus Flash** (alternative model family, opt-in), plus **Auto** and **Auto Nexus**, where DocBits decides per document how strong a model is needed. The table below the selector shows:
 
 * Which **suppliers** use which AI model
@@ -101,7 +112,7 @@ More information on this setting [here](auto-extract-tax-code.md).
 
 This setting is explained in detail [here](ai-model.md).
 
-### Why does the table look different per supplier?
+#### Why does the table look different per supplier?
 
 Everything that DocBits learns about a table is stored **per supplier**:
 
@@ -111,12 +122,18 @@ Everything that DocBits learns about a table is stored **per supplier**:
 
 So supplier A with saved rules shows a deterministic table in the *Extracted table* tab of the validation screen, while supplier B without rules gets the *AI Extracted table*. To make supplier B behave like A, train B's table once. To reset a supplier, delete its rules on the validation screen or reset its training data in the AI Model table.
 
-### Preference keys
+#### Preference keys
 
 Every toggle in this section is stored as an organization preference. Use the key when you set the value through the API (`/preferences/set_preference`), a script, or the DocBits MCP (`get_preference` / `set_preference`).
 
 | Setting (UI label) | Preference key | Values |
 |---|---|---|
+| Split | `SPLIT_DOCUMENT_ON_BARCODE` | `true` / `false` |
+| Barcode Type | `SPLIT_DOCUMENT_BARCODE_TYPE` | list of barcode type names |
+| Barcode Pattern | `SPLIT_DOCUMENT_BARCODE_PATTERN` | regex string |
+| Pages to process | `RESTRICT_TO_PAGES` | number; empty or `0` = all pages |
+| Allow Rounding During Amount Comparison | `AMOUNTS_ROUNDING` | `true` / `false` |
+| Require Exact Match for Amount Comparison | `AMOUNTS_NO_ROUNDING` | `true` / `false` |
 | Table Extraction | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
 | AI Table extraction | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
 | Use Table Extraction Vision (AI) | `TABLE_EXTRACTION_VISION_MODE` | `off` (default), `vision`, `hybrid`, `auto` |
@@ -125,6 +142,7 @@ Every toggle in this section is stored as an organization preference. Use the ke
 | Table extraction for costing element | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
 | Auto extract tax code | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
 | Save extraction rules (Admin only) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
+| Extract hidden fields | `EXTRACT_HIDDEN_FIELDS` | `true` / `false` |
 | AI Model | `AI_MODEL` | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
 | Table extraction version (confirmation dialog) | `TBL_EXT_VERSION` | version string |
 | OCR Settings → Use AI data for tables if available | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
@@ -138,110 +156,121 @@ Notes:
 * Changing a key takes effect for documents processed afterwards. Restart a document to re-extract it with the new setting.
 * Per-supplier choices (E-Text, AI model, saved rules) are not organization preferences; they are set on the validation screen under *More settings* for a document of that supplier.
 
-## Electronic Document
+### Electronic Document
 
 **Process Unsupported ZUGFeRD PDF:** If enabled, unsupported **ZUGFeRD** versions will be processed as standard PDFs, and the embedded XML will be ignored.
 
 The list of supported **ZUGFeRD** versions can be found [here](../../global-settings/document-types/edi/zugferd/README.md).
 
-## **Classification Rules**
+## Classification Rules
 
-In the **Classification Rules** section, you can define specific **regex** patterns and criteria to help the system automatically classify documents during processing.
+The **Classification Rules** tab lists the rules that assign a document type automatically during processing. Each rule matches a **regex pattern** against the source name of the document and, on a match, sets the document type and optionally a sub document type.
 
-To access this section, click the **Classification Rules** tab at the top of the page.
+Switch to the tab by clicking **Classification Rules** at the top of the page.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules.png" alt=""><figcaption><p>Classification Rules tab with the rule table</p></figcaption></figure>
 
-### **Add a New Classification Rule**
+The table has one row per rule with these columns:
 
-To create a new rule:
+* **Type** – where the pattern is applied. Two types exist: **Barcode** and **E-Mail**.
+* **Pattern** – the regex stored for the rule.
+* **Document Type** – the document type assigned when the pattern matches.
+* **Sub Document Type** – the sub document type assigned when the pattern matches.
+* **Sub Organization** – the sub organization the rule is limited to. Empty means the rule applies to all sub organizations.
+* **Actions** – the row menu with *Edit* and *Delete*.
 
-1.  Click **Add** in the top-right corner.
+The search field above the table filters all columns, including the display labels of the dropdown columns.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt=""><figcaption></figcaption></figure>
-2. Fill in the following fields:
-   * **Pattern**: The regex pattern the system should search for to trigger classification.
-   * **Type**: Where the pattern should be searched (e.g., **Barcode**).
-   * **Sub Organization** _(optional)_: Specify which sub organization the rule applies to.
-   * **Document Type**: Define the document type to assign when the pattern is matched.
-   *   **Sub Document Type** _(optional)_: Specify a sub type for more detailed classification.
+### Add a New Classification Rule
 
-       <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt=""><figcaption></figcaption></figure>
-3.  Click **Save** to save your classification rule.
+1.  Click **Add** above the table.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_add.png" alt=""><figcaption><p>Configure classification Rule dialog</p></figcaption></figure>
+2. Fill in the fields:
+   * **Pattern** (required) – the regex the rule looks for.
+   * **Type** (required) – **Barcode** or **E-Mail**. This decides which source name the pattern is matched against.
+   * **Sub Organization** *(optional)* – limits the rule to one sub organization.
+   * **Document Type** – the document type assigned when the pattern matches.
+   * **Sub Document Type** *(optional)* – a more specific type; the list depends on the selected document type. Changing the document type clears the sub document type.
+3.  Click **Save**.
 
-### **Edit a Classification Rule**
+The dialog validates the pattern before saving. A pattern that is already used by another rule is rejected with *Pattern already exists*; an empty pattern is rejected with the required-field message.
 
-To edit an existing rule:
+#### Pattern help
 
-1.  Click the three dots in the **Actions** column.
+The **Show help** switch below the pattern field opens an inline reference with the source-name formats the pattern is matched against:
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
-2.  Select **Edit**.
+* **O365** – `Shared Email + Folder › Shared Email › Folder › Email › Id`
+* **Gmail** – `Email + Folder › Folder › Email › Id`
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt=""><figcaption></figcaption></figure>
-3. Make your desired changes.
-4.  Click **Save** to apply the updates.
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_pattern_help.png" alt=""><figcaption><p>Pattern help panel inside the rule dialog</p></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+Examples given in the panel:
 
-### **Delete a Classification Rule**
+* `.*@acme\.de.*` – any source from that mailbox
+* `^ap@acme\.de:.*` – a specific mailbox, any folder
 
-To delete a rule:
+Tip: anchor with `^` / `$` for exact matches, escape dots as `\.`, and use `:` as the field separator. The first set of fields present in the source name wins.
 
-1.  Click the three dots in the **Actions** column.
+If you use the **E-Mail** type, the pattern is matched against the mailbox and folder names of the imported mail, not against the document content.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
-2.  Select **Delete**.
+### Edit a Classification Rule
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt=""><figcaption></figcaption></figure>
+1.  Click the three dots in the **Actions** column of the rule you want to change.
+
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_row_menu.png" alt=""><figcaption><p>Row menu with Edit and Delete</p></figcaption></figure>
+2.  Select **Edit**. The dialog opens with the rule's current values.
+
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_edit.png" alt=""><figcaption><p>Editing an existing classification rule</p></figcaption></figure>
+3. Make your changes to the pattern, type, sub organization, document type or sub document type.
+4.  Click **Save**.
+
+The same validation applies as when adding a rule: the pattern must not be empty and must not duplicate another rule's pattern.
+
+### Delete a Classification Rule
+
+1. Click the three dots in the **Actions** column.
+2. Select **Delete**.
+
+The rule is removed from the list immediately. Deleting a rule does not change documents that were already classified with it.
 
 ## AI Models
 
-The **AI Models** section displays all custom-trained models that have been specifically fine-tuned for your needs.
+The **AI Models** tab shows the custom-trained models available for document classification and their labels. It only appears when the model and label module is enabled for your organization.
 
-### Accessing the AI Models Section
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_ai_models.png" alt=""><figcaption><p>AI Models tab</p></figcaption></figure>
 
-To open this section, click the **AI Models** tab located at the top of the page.
+If no custom model is available for the organization, the tab shows *No Record Found!*.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt=""><figcaption></figcaption></figure>
+### Models
 
-### Model Categories
+Each model is an expandable entry with:
 
-Models are organized into categories. Below each category name, the number of models it contains is shown.\
-Click on a category to view its details.
+* The **model name** and a badge **Default** on the model that is used when nothing else applies.
+* The number of **labels** trained for that model.
+* Per model, once expanded: **Type**, **First page only** and **Version**.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt=""><figcaption></figcaption></figure>
+Below that information, the labels of the model are listed.
 
-At the top of the selected category page, you’ll see key information about each model:
+### Labels
 
-* **Type**: The type of model.
-* **First Page Only**: Indicates whether the model processes only the first page of a document.
-* **Version**: The version number of the model.
+Labels are what the model learns. Each label maps a pattern the model recognises to a document type.
 
-### Model Table
+* **Name** – the label's name.
+* **Next model** – a model that continues processing the output of this label.
+* **DOC TYPE** – the document type assigned by the label.
+* **Sub Document Type** – a more specific type for the label.
+* **Priority** – the order in which the labels are evaluated; lower numbers first.
 
-All models within a category are listed in a table, which includes the following information:
+The search field above the label table filters the labels of the selected model.
 
-* **Name**: The name of the model.
-* **Next Model**: The model that will further process the output of the current model.
-* **Document Type**: The primary document type assigned by the model during classification.
-* **Document Sub Types**: The sub types into which the document is further classified.
-* **Priority**: The priority level that determines the model’s position in the classification queue.
+### Editing a label
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt=""><figcaption></figcaption></figure>
+Click the pen icon on a label row to open the edit dialog. It offers **Next model** and **Document Type**; set one of them, since the dialog requires either a next model or a document type. Click **Save** to apply the change.
 
-### Editing a Model
+## Related pages
 
-To edit a model:
-
-1.  Click the pen icon in the **Actions** column next to the model you want to edit.
-
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt=""><figcaption></figcaption></figure>
-2. Update the available fields:
-   * **Next Model**: Select the model that should process the output from the current model.
-   * **Document Type**: Choose the document type the model should classify the input as.
-3.  Click **Save** to apply your changes.
-
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt=""><figcaption></figcaption></figure>
+* [AI Model](ai-model.md) – the six extraction tiers and how a supplier gets its own model
+* [Auto Extract Tax Code](auto-extract-tax-code.md)
+* [Table Extraction for Costing Element](table-extraction-for-costing-element.md)
+* [OCR Settings](../ocr-settings.md)

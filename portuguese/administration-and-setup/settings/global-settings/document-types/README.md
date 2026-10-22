@@ -1,55 +1,57 @@
-# Document Types
+# Tipos de documento
 
-{% embed url="https://youtu.be/pFz_6tvNlU4" %}
-DocBits Document Types explicado: criar, configurar e atribuir configurações de processamento
+Configurar o campo de referência de um tipo de teste personalizado, guardar as opções e confirmá-las após recarregar a página.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/document-types-fields-admin/v1/pt.mp4" %}
+Tipos de documento
 {% endembed %}
 
-<figure><img src="../../../../.gitbook/assets/document_types.png" alt="Document Types"><figcaption><p>Página Document Types</p></figcaption></figure>
+[Ver com legendas](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/document-types-fields-admin/v1/pt.html)
+
+A gravação mostra a interface real. Alguns textos do produto podem ainda não estar traduzidos.
 
 ## Visão geral
 
-A página Document Types lista todos os tipos de documento reconhecidos e processados pelo DocBits. Ela é dividida em duas seções:
+Os tipos de documento definem os campos e as definições de processamento de cada categoria de documentos. O DocBits fornece tipos predefinidos, como faturas e notas de crédito. Um administrador pode configurar tipos personalizados para outras categorias. Os tipos predefinidos não podem ser eliminados; a gestão dos tipos personalizados depende das permissões da organização.
 
-* **Default Document Types**: tipos pré-configurados fornecidos pelo DocBits (Invoice, Credit Note, Delivery Note, Order Confirmation, Contract, ZUGFeRD etc.). Eles não podem ser excluídos.
-* **Custom Document Types**: tipos que você cria para as necessidades específicas do seu negócio. Eles podem ser editados e excluídos.
+## Controlos de cada cartão
 
-## Controles por tipo de documento
+| Controlo | Função |
+| --- | --- |
+| Ativar | Ativa ou desativa o processamento deste tipo de documento. |
+| Extraction | Seleciona o modo de extração apresentado no controlo: Flex ou Fix. Esta escolha é independente do interruptor de ativação. |
+| Roda dentada | Abre outras definições deste tipo de documento. |
 
-Cada card de tipo de documento mostra:
+As ligações disponíveis dependem do tipo, das permissões e dos módulos ativos. Podem incluir disposições, campos, tabelas, scripts, treino de modelos e subtipos de documento. As regras de transformação, as regras de validação e as definições de documentos eletrónicos surgem quando as respetivas funcionalidades se aplicam. Outras opções podem encontrar-se dentro das definições do tipo de documento.
 
-| Controle | Descrição |
-|---------|-------------|
-| **Activate** | Chave para ativar ou desativar este tipo de documento para processamento. |
-| **Extraction** | Chave para ativar ou desativar a extração de dados baseada em IA para este tipo. |
-| **Settings** (ícone de engrenagem) | Abre opções de configuração adicionais para o tipo de documento. |
+## Configurar campos e dados obrigatórios
 
-## Guias de configuração
+O vídeo utiliza um tipo de documento de teste personalizado, criado previamente e separado das definições de faturas existentes. As alterações apresentadas aplicam-se ao seu campo de referência.
 
-Abaixo de cada tipo de documento, você pode acessar as seguintes guias de configuração:
+1. Abra o tipo de documento e selecione os respetivos campos.
+2. Verifique o grupo e o nome técnico do campo. A designação apresentada pode ser alterada sem criar um novo identificador técnico.
+3. Defina a referência como campo obrigatório, mantendo-o visível e editável. É necessário fornecer um valor; esta definição não preenche um valor em falta nem garante uma extração correta.
+4. Configure separadamente a confirmação explícita da verificação do campo. As opções só de leitura e oculto, bem como os limiares de OCR e Match Score, têm funções distintas.
+5. Guarde as definições, volte a abrir a página e confirme a designação e as opções guardadas.
 
-| Guia | Descrição |
-|-----|-------------|
-| **Labels** | Gerencie os rótulos de exibição e as traduções do tipo de documento. |
-| **Edit layout** | Modifique como o documento aparece na tela de validação, incluindo a posição dos campos. |
-| **Document Sub Types** | Configure subcategorias para este tipo de documento (por exemplo, diferentes formatos de fatura). |
-| **Table columns** | Personalize quais colunas de dados aparecem na tabela de itens de linha. |
-| **Fields** | Gerencie os campos de dados extraídos do documento (adicionar, editar ou remover campos). |
-| **Model Training** | Configure e treine o modelo de IA usado para reconhecer e extrair dados. |
-| **Regex** | Configure expressões regulares para a extração de dados baseada em padrões. |
-| **Scripts** | Escreva scripts de processamento personalizados que são executados durante o processamento de documentos. |
-| **E-Doc** | Configure padrões de documentos eletrônicos (XRechnung, ZUGFeRD, EDI, FatturaPA). |
+<figure><img src="../../../../.gitbook/assets/admin-reload-pt-3014b56ab379.png" alt="Opções de campo guardadas num tipo de documento de teste separado."><figcaption><p>Opções de campo guardadas num tipo de documento de teste separado.</p></figcaption></figure>
 
-## Custom Validation Rules
+O vídeo demonstra a gravação e o recarregamento da configuração. Antes da utilização em produção, teste documentos representativos e o fluxo previsto com uma conta de utilizador normal. O treino de modelos, a aprovação de faturas e a exportação têm procedimentos próprios.
 
-Abra um tipo de documento e selecione **Custom Validation Rules** para gerenciar as regras de validação próprias desse tipo. Para reutilizar uma regra existente sem recriá-la, siga [Duplicar uma regra de validação personalizada](duplicate-a-custom-validation-rule.md). O guia explica o nome da regra, a chave da regra e os controles de confirmação.
+## Regras de validação personalizadas
+
+Se a funcionalidade estiver disponível, abra as regras de validação do tipo de documento. Para reutilizar uma regra, consulte [Duplicar uma regra de validação personalizada](duplicate-a-custom-validation-rule.md). Estas regras são configuradas separadamente das opções de cada campo apresentadas no vídeo.
 
 ## Criar um tipo de documento personalizado
 
-1. Role a página para baixo até a seção **Custom Document Types**.
-2. Clique em **+ New**.
-3. Insira um nome para o novo tipo de documento.
-4. Configure os campos, o layout e as configurações de extração conforme necessário.
+Abra a secção de tipos personalizados, escolha Novo e indique um nome claro. Complete os passos apresentados para o modo de extração, os campos, os grupos e, quando aplicável, as tabelas. A configuração do tipo e o eventual treino de modelos são procedimentos distintos da gravação de uma opção de campo obrigatório.
 
 {% hint style="info" %}
-Consulte [Setup Document Type](../../../setup/document-types/) para ver instruções de configuração detalhadas.
+Consulte [Configurar um tipo de documento](../../../setup/document-types/) para conhecer o procedimento de configuração.
 {% endhint %}
+
+## Vídeo adicional
+
+{% embed url="https://youtu.be/pFz_6tvNlU4" %}
+Tipos de documento
+{% endembed %}

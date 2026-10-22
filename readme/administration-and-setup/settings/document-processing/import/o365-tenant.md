@@ -24,7 +24,7 @@
 6. 根据需要选择以下帐户类型之一：
 
 * **Accounts in any organizational directory (Any Azure AD directory Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**（任何组织目录中的账户〔任何 Azure AD 目录，多租户〕及个人 Microsoft 账户，例如 Skype、Xbox）
-* **Accounts in any organizational directory (Any Azure AD directory Multitenant)**
+* **Accounts in any organizational directory (Any Azure AD directory Multitenant)**（任何组织目录中的帐户，即任何 Azure AD 目录中的多租户帐户）
 
 <figure><img src="../../../../.gitbook/assets/o365_tenant_5.png" alt=""><figcaption></figcaption></figure>
 

@@ -1,8 +1,8 @@
 # WatchDog
 
-<figure><img src="../../../.gitbook/assets/watchdog-overview-infographic.svg" alt="WatchDog 概览"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-overview-zh.svg" alt="WatchDog 的文件夹监控、DocBits 处理流程及导出目标。"><figcaption><p>WatchDog 的文件夹监控、DocBits 处理流程及导出目标。</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/watchdog-infographic-en.png" alt="WatchDog 信息图"><figcaption></figcaption></figure>
+<!-- Obsolete illustration retired: Retire redundant English architecture illustration; the individually reviewed Chinese WatchDog overview SVG above remains. -->
 
 **WatchDog** 是一项基于 Windows 的本地部署服务，可监控本地文件夹中的新文档，将其上传到 DocBits Cloud 进行处理，并将处理完成的文档导出到本地文件夹或 ERP 系统。
 
@@ -16,7 +16,7 @@
 
 ## 快速入门
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="WatchDog 常规选项卡"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-general-safe-zh.png" alt="当前中文 WatchDog“一般的”页面，同时展示服务状态和安装入口。图中的离线状态只是测试环境的当前值；命令和安装路径已隐藏，未重启或配置服务。"><figcaption><p>当前中文 WatchDog“一般的”页面，同时展示服务状态和安装入口。图中的离线状态只是测试环境的当前值；命令和安装路径已隐藏，未重启或配置服务。</p></figcaption></figure>
 
 ### 1. 下载 WatchDog
 
@@ -46,7 +46,7 @@ WatchDog.exe start
 **设置 → 文档处理 → WatchDog → 配置选项卡**
 
 * **导入配置** — 定义监控文件夹和文档类型
-* **导出配置** — 定义导出目标、XSLT 模板和导出方式
+* **导出配置** — 从“新建导出配置”进入通用导出向导，选择文档类型、导出方式及其所需的目标和模板。
 
 > **重要：** 导出配置必须指定**文档类型**（`doc_type`）。未指定文档类型的配置将被拒绝。
 

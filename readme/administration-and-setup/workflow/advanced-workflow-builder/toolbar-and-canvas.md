@@ -82,13 +82,13 @@
 - **Validate / Test** — 检查并运行流程（参见[验证和测试](validation-and-testing.md)）。
 - **Snap to grid** — 切换节点是否吸附到网格，以便整齐布局。
 - **Mini-map** — 切换小型概览地图，以便浏览大型图表。
-- **Save** — 保存工作流。**auto-save** 指示器会显示流程最近一次自动保存的时间。
+- **保存** — 将工作流明确保存到服务器。自动草稿提示指浏览器本地副本，并不表示流程已保存到服务器或已启用。
 
 ## 键盘快捷键
 
 在画布上随时按 <kbd>?</kbd> 打开快捷键和帮助对话框。
 
-<figure><img src="../../../.gitbook/assets/workflow_advanced_shortcuts.png" alt="键盘快捷键和帮助对话框"><figcaption><p>键盘快捷键和帮助对话框——快捷键、执行路径高亮和连接线颜色。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-advanced-shortcuts-zh.png" alt="中文高级工作流快捷键窗口。Ctrl、Cmd 等按键名称保持原文；连接说明位于可滚动窗口的后续部分。"><figcaption><p>中文高级工作流快捷键窗口。Ctrl、Cmd 等按键名称保持原文；连接说明位于可滚动窗口的后续部分。</p></figcaption></figure>
 
 | 快捷键 | 操作 |
 |---|---|

@@ -4,20 +4,20 @@
 
 仪表板设置旨在帮助管理员控制 DocBits 仪表板中的数据显示和交互方式。这些设置决定用户登录后即可查看哪些信息，确保用户能够快速访问与其任务最相关的数据。
 
-<figure><img src="../../../../.gitbook/assets/dashboard_settings.png" alt="仪表板设置"><figcaption><p>仪表板设置页面</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/site-complete-dashboard-settings-zh.png" alt="中文仪表板常规设置及导出历史记录。导出历史的列标题仍为英文；历史数据已隐藏，未执行导出。"><figcaption><p>中文仪表板常规设置及导出历史记录。导出历史的列标题仍为英文；历史数据已隐藏，未执行导出。</p></figcaption></figure>
 
 ## 访问仪表板设置
 
 要访问仪表板设置，请转到：\
-**设置 → 全局设置 → 仪表板**
+**设置 → 仪表板**
 
-<figure><img src="../../../../.gitbook/assets/dashboard_settings.png" alt=""><figcaption></figcaption></figure>
+
 
 ## **常规** <a id="general"></a>
 
 * **重置筛选器**：可配置仪表板筛选器在何时重置，例如在文档上传、文档重启或文档导出后重置。这有助于在工作流的特定阶段清除筛选条件，便于查看数据。
 * **仪表板数据**：
-  * **自动加载仪表板数据**：控制用户访问时仪表板是否自动加载数据。仅在需要时加载数据，有助于缩短加载时间并改善用户体验。
+  * **文档更新时自动刷新仪表板**：文档发生更新时刷新仪表板数据。此设置控制更新后的刷新行为，并非首次访问页面时的数据加载开关。
   *   **导出仪表板数据**：此功能会在仪表板工具栏中添加一个新的 **导出** 按钮，允许您将当前仪表板视图导出为 **.csv** 或 **.xlsx** 文件。
 
       <figure><img src="../../../../.gitbook/assets/dashboard_settings_3.png" alt=""><figcaption></figcaption></figure>

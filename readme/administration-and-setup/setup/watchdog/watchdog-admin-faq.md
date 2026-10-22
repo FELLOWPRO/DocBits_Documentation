@@ -1,6 +1,6 @@
 # WatchDog 管理员常见问题与故障排查
 
-<figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-infographic.svg" alt="WatchDog 故障排查快速参考"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-zh.svg" alt="WatchDog 导入、导出及连接问题的诊断。"><figcaption><p>WatchDog 导入、导出及连接问题的诊断。</p></figcaption></figure>
 
 本文档帮助管理员了解 WatchDog 错误消息并排查问题。
 
@@ -12,7 +12,7 @@
 
 ### 1.1 常规选项卡
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="WatchDog 常规选项卡"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-general-safe-zh.png" alt="当前中文 WatchDog“一般的”页面，同时展示服务状态和安装入口。图中的离线状态只是测试环境的当前值；命令和安装路径已隐藏，未重启或配置服务。"><figcaption><p>当前中文 WatchDog“一般的”页面，同时展示服务状态和安装入口。图中的离线状态只是测试环境的当前值；命令和安装路径已隐藏，未重启或配置服务。</p></figcaption></figure>
 
 * **下载：** 获取最新的 WatchDog.exe
 * **API Key：** 复制配置命令
@@ -22,23 +22,23 @@
 ### 1.2 配置选项卡
 
 * **导入配置：** 定义监视文件夹和文档类型
-* **导出配置：** 定义导出目标位置和方法
+* **导出配置：** “新建导出配置”会打开通用导出向导；先选择文档类型，再按实际目标完成导出配置。
 * **批量复制：** 在子组织之间复制配置
 * **导入/导出：** 以 JSON 格式导入/导出配置
 
 > **重要：** 导出配置现在**必须指定文档类型**（`doc_type`）。缺少有效文档类型的配置将被拒绝。
 
-### 1.3 状态选项卡
+### 1.3 常规页面中的服务状态
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_status.png" alt="WatchDog 服务状态"><figcaption></figcaption></figure>
 
-* 显示 WatchDog 的实时连接状态
+
+* 当前界面在**一般的**页面顶部显示 WatchDog 服务状态，没有独立的状态选项卡。
 * **新增字段：** `last_restart`、`version_first_seen`、`latest_version_checked_at`
 * **系统信息：** 安装路径、可用 RAM、可用磁盘空间
 
 ### 1.4 日志选项卡
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_05.png" alt="WatchDog 日志"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-logs-zh.png" alt="中文 WatchDog 日志选项卡；日志内容已隐藏。可按日志级别和时间范围检查记录，本图不代表服务连接已成功。"><figcaption><p>中文 WatchDog 日志选项卡；日志内容已隐藏。可按日志级别和时间范围检查记录，本图不代表服务连接已成功。</p></figcaption></figure>
 
 * 显示来自 OpenSearch 的所有 WatchDog 事件
 * 可按事件类型、时间段等筛选
@@ -56,7 +56,7 @@
 
 ### 1.5 XSLT 模板选项卡
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_06.png" alt="XSLT 模板列表"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-templates-zh.png" alt="中文 WatchDog XSLT 模板概览；模板内容已隐藏，未创建、上传或执行模板。"><figcaption><p>中文 WatchDog XSLT 模板概览；模板内容已隐藏，未创建、上传或执行模板。</p></figcaption></figure>
 
 * 上传和管理 XSLT 转换模板
 * 使用字段分析进行实时验证

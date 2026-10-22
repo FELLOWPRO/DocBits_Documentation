@@ -1,12 +1,14 @@
 # 访问审计
 
-<figure><img src="../../../.gitbook/assets/access_audit.png" alt="审计跟踪已禁用时的审计日志页面；页面显示组织切换器、筛选器、Enable Now、Auto-refresh、Refresh 和 Export"><figcaption><p>启用审计日志之前的英文 Sandbox 页面。</p></figcaption></figure>
+<!-- Obsolete illustration retired: Retire legacy English audit screenshots: current native zh feature body is still English (verified product localization gap). Preserve complete bilingual procedure and state the limitation; do not present an English image as localized. -->
+
+当前中文界面的访问审计正文和控件仍显示英文，这是已确认的产品翻译缺口。因此下表保留实际英文控件名，并提供中文说明；本页不将该功能标为已完整本地化。
 
 访问审计会记录谁在何时创建、更改或删除了资源。打开 **Settings → Activity Logging → Access Audit** 查看日志。只有在计划收集审计事件时，才为组织启用此服务。
 
 ## 审计日志关闭时
 
-<figure><img src="../../../.gitbook/assets/access_audit_disabled_dialog.png" alt="Audit Trail is Disabled 对话框，包含 Close 和 Enable Audit Trail 按钮"><figcaption><p>此对话框会在启用服务前说明将记录哪些内容。</p></figcaption></figure>
+<!-- Obsolete illustration retired: Retire legacy English audit screenshots: current native zh feature body is still English (verified product localization gap). Preserve complete bilingual procedure and state the limitation; do not present an English image as localized. -->
 
 在浏览器会话中首次访问时，可能会显示 **Audit Trail is Disabled**。**Close** 会关闭对话框并保持审计日志关闭。**Enable Audit Trail** 会为当前组织启用该服务。对话框后方页面上的 **Enable Now** 和 **Enable Audit Trail Service** 开关也可以启用该服务。这些控件会更改组织设置；它们并非仅用于预览功能。
 

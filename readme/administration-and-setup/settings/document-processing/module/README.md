@@ -1,6 +1,10 @@
 # 模块
 
-<figure><img src="../../../../.gitbook/assets/module_settings.png" alt="模块设置"><figcaption><p>模块设置页面</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/site-extra-modules-order-finance-zh.png" alt="订单与财务模块，画面保留已有配置状态。"><figcaption><p>订单与财务模块，画面保留已有配置状态。</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/site-extra-modules-document-integration-zh.png" alt="中文文档集成模块：脚本、扫描、条码及自定义主数据等选项；Select 仍为英文。未改动任何开关。"><figcaption><p>中文文档集成模块：脚本、扫描、条码及自定义主数据等选项；Select 仍为英文。未改动任何开关。</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/site-extra-modules-dashboards-analytics-zh.png" alt="仪表板与分析模块，画面保留已有配置状态。"><figcaption><p>仪表板与分析模块，画面保留已有配置状态。</p></figcaption></figure>
 
 “模块”页面可用于启用或停用 DocBits 中的可选功能。每个部分将相关模块归在一起，可分别开启或关闭。
 
@@ -13,7 +17,7 @@
 | **Auto Export if PO matched 100%** | 采购订单匹配度达到 100% 时自动导出文档。 |
 | **PO Dashboard** | 启用采购订单仪表板。包含 **PO Date Limit** 字段，可按日期限制采购订单数据。 |
 | **PO Shipment Order** | 启用与采购订单关联的装运订单处理。 |
-| **Shipment Order Dashboard** | 启用专用的装运订单仪表板。 |
+| **Shipment Order Dashboard**（发货订单仪表板） | 启用专用的装运订单仪表板。 |
 
 ## 自动记账
 
@@ -25,7 +29,7 @@
 
 | 设置 | 说明 |
 |---------|-------------|
-| **Advance Shipment Dashboard** | 用于监控预先装运活动的仪表板。 |
+| **Advance Shipment Dashboard**（预先发货通知仪表板） | 用于监控预先装运活动的仪表板。 |
 | **Invoice Dashboard** | 用于发票监控和分析的仪表板。 |
 | **Full Text Search** | 启用跨文档全文搜索。 |
 | **Analytics Dashboard** | 启用分析概览仪表板。 |
@@ -62,14 +66,14 @@
 | **Models & Labels** | 管理用于文档识别的 AI 模型和标签。 |
 | **Document Script** | 启用文档处理自定义脚本。 |
 | **Document Scan** | 启用文档扫描功能。 |
-| **Bar-Code/QR Code Extraction** | 从文档中提取条形码或二维码数据。选择支持的代码类型。 |
-| **Custom Master Data** | 启用自定义主数据字段。 |
+| **Bar-Code/QR Code Extraction**（条形码和二维码提取） | 从文档中提取条形码或二维码数据。选择支持的代码类型。 |
+| **Custom Master Data**（自定义主数据） | 启用自定义主数据字段。 |
 | **Tasks & Notifications** | 启用任务管理和通知功能。包含 **Dashboard Tasks Count** 开关。 |
 | **DocBits Operator** | 启用 DocBits Operator 浏览器自动化功能。 |
 | **DocNet** | 启用 DocNet 文档网络功能。 |
 | **IDM ACL Updater** | 更新 Infor Document Management 访问控制列表。上传 ION-Mapping 文件，并配置 Infor-Doctype 与 ACL 的映射。 |
 | **Barcode Assignment** | 启用为文档分配条形码的功能。 |
-| **Set Negative Sign For Credit Notes** | 自动将贷项通知单金额设为负数。 |
+| **Set Negative Sign For Credit Notes**（为贷项通知单设置负号） | 自动将贷项通知单金额设为负数。 |
 
 ## BOD 连接流
 
@@ -81,10 +85,10 @@
 
 | 设置 | 说明 |
 |---------|-------------|
-| **Use PostgreSQL for Quality Analytics** | 可在 Prometheus（实时数据，部署时会重置）与 PostgreSQL（数据持久保留 90 天，支持趋势分析和最差表现字段分析）之间切换。 |
+| **Use PostgreSQL for Quality Analytics**（使用 PostgreSQL 进行质量分析） | 可在 Prometheus（实时数据，部署时会重置）与 PostgreSQL（数据持久保留 90 天，支持趋势分析和最差表现字段分析）之间切换。 |
 
 ## Vertex 税务集成
 
 | 设置 | 说明 |
 |---------|-------------|
-| **Vertex Tax Integration** | 启用 Vertex 税额计算。配置 **Base URL**、**Client ID** 和 **Client Secret**。使用 **Test Connection** 验证连接。 |
+| **Vertex Tax Integration**（Vertex 税务集成） | 启用 Vertex 税额计算。配置 **Base URL**、**Client ID** 和 **Client Secret**。使用 **Test Connection** 验证连接。 |

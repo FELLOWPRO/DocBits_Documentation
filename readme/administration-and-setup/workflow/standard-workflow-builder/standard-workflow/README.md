@@ -1,6 +1,6 @@
 # 工作流示例
 
-<figure><img src="../../../../.gitbook/assets/DocBits-APWorkflow-Gronbach.drawio (1).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-standard-zh.png" alt="采购订单发票与非采购订单发票的工作流示例。审批路径、两天通知期限和 ERP 连接均属于此示例，应按组织的实际配置调整。"><figcaption><p>采购订单发票与非采购订单发票的工作流示例。审批路径、两天通知期限和 ERP 连接均属于此示例，应按组织的实际配置调整。</p></figcaption></figure>
 
 #### 工作流组件概览：
 

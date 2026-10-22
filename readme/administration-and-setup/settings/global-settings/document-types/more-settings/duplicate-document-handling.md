@@ -1,8 +1,8 @@
 # 重复检测
 
-<figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_3-zh.png" alt="重复文档检测设置。"><figcaption><p>重复文档检测设置。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-complete-duplicate-controls-zh.png" alt="当前中文发票重复检测设置，显示检测字段、检测间隔和四个开关。“忽略免税热线”在此实际指忽略免税发票行；未更改设置，图示值不是推荐配置。"><figcaption><p>当前中文发票重复检测设置，显示检测字段、检测间隔和四个开关。“忽略免税热线”在此实际指忽略免税发票行；未更改设置，图示值不是推荐配置。</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_4-zh.png" alt="可用于重复检测的字段。"><figcaption><p>可用于重复检测的字段。</p></figcaption></figure>
+
 
 使用 **重复检测** 可根据选定字段，在指定时间范围内标记与其他文档匹配的文档。这些选项适用于各个文档类型。
 
@@ -12,7 +12,7 @@
 2. 在要配置的文档类型上，选择 **设置**。
 3. 在 **更多设置**中，打开 **重复检测**。
 
-<figure><img src="../../../../../.gitbook/assets/dbdc156-duplicate-settings-off-en.png" alt="发票的更多设置，其中已展开重复检测部分，且检测选项均已关闭"><figcaption><p>发票设置中显示了四个独立开关。启用检测后，会显示字段和时间间隔选择器。</p></figcaption></figure>
+
 
 ## 选择重复项的判定条件
 
@@ -22,9 +22,9 @@
 
 每次更改都会立即保存；此部分没有单独的“保存”按钮。如果关闭检测，字段和时间间隔选择器将隐藏。
 
-<figure><img src="../../../../../.gitbook/assets/dbdc156-duplicate-settings-on-en.png" alt="已启用重复文档检测，并显示字段和时间间隔选择器"><figcaption><p>请先启用检测，再选择比较字段和时间间隔。</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/dbdc156-duplicate-interval-options-en.png" alt="重复检测时间间隔菜单，包含一个月、三个月、六个月和一年"><figcaption><p>菜单中将三个月标记为推荐时间间隔。</p></figcaption></figure>
+
+<!-- Obsolete illustration retired: Retire obsolete English interval-menu illustration. The current native selector is visible in the overview and the interval explanation remains as text; no unsupported menu choice is fabricated. -->
 
 对于 **发票**，此部分还提供 **重复发票检测**、**阻止重复文档导出**和 **忽略免税行**。这些是独立开关；请仅启用发票流程所需的行为。其他文档类型不会显示这些额外开关。
 

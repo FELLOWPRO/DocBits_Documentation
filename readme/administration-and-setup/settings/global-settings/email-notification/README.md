@@ -1,6 +1,6 @@
 # 电子邮件通知
 
-<figure><img src="../../../../.gitbook/assets/email_notification.png" alt="电子邮件通知"><figcaption><p>电子邮件通知页面</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/site-complete-email-notifications-zh.png" alt="中文电子邮件通知列表，显示名称、文档类型、状态、延迟和收件人等列；规则及收件人数据已隐藏。"><figcaption><p>中文电子邮件通知列表，显示名称、文档类型、状态、延迟和收件人等列；规则及收件人数据已隐藏。</p></figcaption></figure>
 
 配置电子邮件通知至关重要。在 DocBits 中，您可以配置电子邮件通知，在发生各种与文档相关的事件时通知用户，例如：处理完成、导入或导出错误，或需要用户介入的请求。这项功能对于在文档处理环境中保持有效沟通和运营连续性至关重要。以下是其重要性的几个原因：
 

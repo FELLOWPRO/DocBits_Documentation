@@ -2,13 +2,13 @@
 
 PO 匹配屏幕在 PO 行项目上方显示采购订单搜索栏和工具。发票预览仍位于右侧。可用操作可能因您的权限、文档数据和组织设置而异。
 
-<figure><img src="../../../.gitbook/assets/dbdc-190-po-tools-overview-en.png" alt="DocBits Documentation Test A 沙盒中的英文 PO 匹配屏幕：PO 搜索栏、操作工具栏、PO 行项目、发票区域和文档预览"><figcaption><p>搜索栏和操作工具栏位于采购订单行项目上方。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-po-tools-overview-zh.png" alt="中文验证界面的采购订单匹配工具，使用本次生成的虚构中文测试发票。文档未关联采购订单，界面提示缺少采购订单号；未执行匹配、保存或导出，拍摄后已删除该自有测试文档并验证删除结果。"><figcaption><p>中文验证界面的采购订单匹配工具，使用本次生成的虚构中文测试发票。文档未关联采购订单，界面提示缺少采购订单号；未执行匹配、保存或导出，拍摄后已删除该自有测试文档并验证删除结果。</p></figcaption></figure>
 
 ## 查找正确的采购订单
 
 在 **Search purchase order number** 中输入采购订单编号，然后选择一个结果。字段旁边的筛选图标可打开更多搜索选项：关键字、供应商、状态、订单状态、日期范围、订单金额、排序方式和记录数。选择 **Apply** 应用筛选条件，或选择 **Clear** 重置筛选条件。筛选列表不会匹配或导出发票。
 
-<figure><img src="../../../.gitbook/assets/dbdc-190-po-tools-filter-en.png" alt="采购订单搜索筛选器，包含供应商、状态、日期、金额和排序字段"><figcaption><p>选择 PO 搜索栏旁边的筛选图标，打开更多搜索选项。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-po-tools-filter-zh.png" alt="中文采购订单匹配筛选菜单，仅展开查看选项；没有应用筛选或执行匹配。示例发票数据为虚构测试数据，列表记录值已隐藏。"><figcaption><p>中文采购订单匹配筛选菜单，仅展开查看选项；没有应用筛选或执行匹配。示例发票数据为虚构测试数据，列表记录值已隐藏。</p></figcaption></figure>
 
 ## 工具栏操作
 
@@ -19,7 +19,7 @@ PO 匹配屏幕在 PO 行项目上方显示采购订单搜索栏和工具。发�
 | **Matching history**（时钟） | 打开此文档之前的匹配活动记录。此操作不会启动新的匹配。 |
 | **Help**（?） | 在新的浏览器标签页中打开 PO 匹配帮助页面。 |
 | **Keyboard shortcuts**（键盘） | 显示此屏幕上可用的快捷键。请参阅 [键盘快捷键](keyboard-shortcuts.md)。 |
-| **Training mode**（表格） | 开启或关闭将 PO 行拖入发票表格的功能。仅当文档包含发票行项目时，此功能才有用；下方示例屏幕不包含发票行项目。 |
+| **Training mode**（表格） | 开启或关闭将 PO 行拖入发票表格的功能。需要可用的发票行项目及采购订单数据；本次只查看工具栏，没有执行拖放训练。 |
 | **Tasks / Create task** | 打开文档任务，或在这些操作适用于您的文档和角色时创建任务。请参阅 [任务](../tasks.md)。 |
 | **Auto Accounting** | 当此文档包含会计数据时，打开该文档的会计信息。 |
 | **Auto PO match**（魔棒） | 运行自动匹配。如果组织已启用自动导出，且匹配结果符合相关条件，此操作也可能导出文档。使用前请先检查文档。请参阅 [自动采购订单数据匹配](automatic-purchase-order-data-matching.md)。 |
@@ -33,8 +33,8 @@ PO 标签页还提供刷新图标，可重新加载该采购订单。表格标�
 
 选择键盘图标，查看当前快捷键列表。常见示例包括 **Ctrl+F** 将焦点移至 PO 搜索栏、**Ctrl+K** 重新打开快捷键对话框、**Ctrl+S** 保存，以及 **Ctrl+E** 导出。当前屏幕上的完整快捷键列表以该对话框显示的内容为准。
 
-<figure><img src="../../../.gitbook/assets/dbdc-190-po-tools-shortcuts-en.png" alt="英文 PO 匹配屏幕上的键盘快捷键对话框"><figcaption><p>选择键盘图标，查看此屏幕支持的快捷键。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-po-tools-shortcuts-zh.png" alt="中文采购订单匹配快捷键窗口。标题和列名为中文，17 条操作说明仍为英文，属于已确认的产品翻译缺口；组合键按实际界面原样保留。本次没有按下快捷键或执行文档操作。"><figcaption><p>中文采购订单匹配快捷键窗口。标题和列名为中文，17 条操作说明仍为英文，属于已确认的产品翻译缺口；组合键按实际界面原样保留。本次没有按下快捷键或执行文档操作。</p></figcaption></figure>
 
 {% hint style="info" %}
-此截图使用 DocBits Documentation Test A 沙盒中的合成发票和采购订单。该发票没有提取的行项目，因此无法展示成功匹配。制作这些截图时未运行匹配、保存、同步或导出操作。
+截图使用 Dev 中专门生成的虚构中文发票，包含两条测试明细；没有关联可用采购订单，也没有展示成功匹配。拍摄时未运行匹配、保存、同步或导出；两个自有测试文档均已按 ID 删除，并验证文档不存在及原有布局未变。
 {% endhint %}

@@ -18,11 +18,11 @@
 
 1. 前往 **设置 → 文档类型** → \[您的文档（例如，_采购订单_）] → **E-Doc.**\\
 
-    <figure><img src="../../../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-zh.png" alt="EDI 配置中的转换、提取路径、预览及结构描述入口。"><figcaption><p>EDI 配置中的转换、提取路径、预览及结构描述入口。</p></figcaption></figure>
 2. 在 **E-Doc** 选项卡下，选择您的格式（例如，**EDI**）。
 3. 点击 **转换**以查看或编辑。\\
 
-    <figure><img src="../../../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/site-all-edi-transformation-zh.png" alt="已生效的转换版本：将电子文档转换为 DocBits XML 的 XSLT 源代码。"><figcaption><p>已生效的转换版本：将电子文档转换为 DocBits XML 的 XSLT 源代码。</p></figcaption></figure>
 
 #### 草稿管理
 
@@ -50,13 +50,13 @@
 * 前往**转换文件**界面。
 * 打开**预览功能**。\\
 
-    <div align="left"><figure><img src="../../../../../../.gitbook/assets/image (21).png" alt="" width="375"><figcaption></figcaption></figure></div>
+    <div align="left"></div>
 * 在字段中输入**文档 ID**，然后点击 **Test**。
 * 系统将显示生成的**转换后 XML 输出**。
 
 这对于调试 XSLT 映射以及确保最终 XML 结构符合格式要求特别有用。
 
-<figure><img src="../../../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
 
 ## 6. 视频演示
 
@@ -67,3 +67,8 @@
 ## 实际生效的规则与激活
 
 对于检测出的 eDoc 格式，组织专属规则优先于默认规则。请检查活动的 TRANSFORMATION，并确认转换后 XML 中哪个节点提供 invoice_type；路径取决于格式。Save 只保存草稿；测试后需使用勾号激活。渲染后的 Preview 不能证明已保存的文档类型正确。有关代码 381/261、后续脚本和重新处理的注意事项，请参阅[分类故障排查指南](../credit-note-recognized-as-invoice.md)。
+
+
+这些视图显示现有配置及其版本。设置因文档类型和格式而异。请在草稿中验证更改后再激活。
+
+图片展示中文流程卡片和只读配置。在所示版本中，Active 状态误译为“积极的”，实际表示已生效。技术编辑器标题、属性标识符及配置代码保留原文。

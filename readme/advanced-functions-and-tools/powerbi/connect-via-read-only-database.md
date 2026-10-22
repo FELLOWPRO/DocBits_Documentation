@@ -41,7 +41,7 @@
 <figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt=""><figcaption></figcaption></figure>
 
 * 点击 **确定**。如果系统提示，请再次输入凭据。
-  * <mark style="color:red;">**注意：**</mark> 如果看到错误 **“password authentication failed for user”**，请尝试将密码用**花括号 `{}`**括起来后输入。
+  * 出现 `password authentication failed for user` 时，请检查主机、数据库、用户名和密码。在凭据对话框中输入实际密码。ODBC 连接字符串中使用花括号转义属于驱动程序语法，并不是修复身份验证失败的通用方法。
 
 #### 4. 加载和转换数据
 
@@ -49,7 +49,9 @@
 * 打开 **`public`** 架构。
 * 选择要导入的表。
 
-![](../../.gitbook/assets/connect_read_only_1.png)        ![](../../.gitbook/assets/connect_read_only_2.png)
+![](../../.gitbook/assets/connect_read_only_1.png)
+
+![](../../.gitbook/assets/connect_read_only_2.png)
 
 * 选择：
   * **加载** → 直接导入 Power BI
@@ -60,15 +62,15 @@
 * 使用 Power BI 报表画布构建仪表板。
 * 拖动字段、添加切片器、选择图表类型并应用 DAX 计算。
 * 创建可视化内容前，使用 **Power Query 编辑器**清理或联接数据。
-* 参考：[Power BI 文档](https://learn.microsoft.com/en-us/power-bi/?utm_source=chatgpt.com)
+* 参考：[Power BI 文档](https://learn.microsoft.com/en-us/power-bi/)
 
 #### 6. 启用计划刷新（可选）
 
-<mark style="color:red;">**注意：**</mark> **需要 Power BI Pro 或 Premium 以及网关**
+计划刷新取决于工作区的许可证或容量、连接器及连接模式。对于此 ODBC 连接，请配置可访问的网关，并安装匹配的驱动程序、配置 DSN 和凭据。请在官方文档中确认当前要求。
 
-* 若要使报表与 ClickHouse 保持同步：
+* 若要使报表与 PostgreSQL 保持同步：
 * 将 `.pbix` 文件发布到 **Power BI Service**。
-* 在可访问 ClickHouse 网络的计算机上以标准模式安装 **Power BI Gateway**。
+* 在可访问 PostgreSQL 网络的计算机上以标准模式安装 **Power BI Gateway**。
 * 在 Power BI Service 中：
   * 转到数据集 → **设置** → **计划刷新**
   * 映射 DSN 并提供凭据
@@ -77,3 +79,9 @@
 #### 7. 仪表板和数据视图示例&#x20;
 
 <div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Power BI 仪表板示例 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Power BI 仪表板示例 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Power BI 仪表板示例 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Power BI 仪表板示例 4"><figcaption></figcaption></figure></div>
+
+[官方文档 — ODBC](https://learn.microsoft.com/en-us/power-query/connectors/odbc)
+
+[官方文档 — psqlODBC](https://odbc.postgresql.org/docs/config-opt.html)
+
+[官方文档 — Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)

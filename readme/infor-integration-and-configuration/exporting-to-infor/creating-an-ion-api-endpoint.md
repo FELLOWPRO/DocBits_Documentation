@@ -17,10 +17,10 @@ Infor 管理员会为**特定的 DocBits 环境和组织**配置 API Gateway 端
 
 在目标 DocBits 组织中，打开 **Settings → Export**，然后选择 **New**。下方展示的英文 Sandbox Test A 组织没有已保存的配置。
 
-![当前英文 DocBits Sandbox 导出列表，显示 New 操作且没有已保存的配置。](../../.gitbook/assets/dbdc-197-export-list-en.png)
+<figure><img src="../../.gitbook/assets/s150-export_settings_menu_access-zh.png" alt="中文导出配置列表；Actions 仍为英文，配置值已隐藏。"><figcaption><p>中文导出配置列表；Actions 仍为英文，配置值已隐藏。</p></figcaption></figure>
 
 输入 **Configuration Title**，选择 **Document Type**，并仅在需要时选择 **Sub-Organization**。将 **Export** 设置为 **Infor**，并将 **Infor Type** 设置为 **Infor IDM + ION BOD**。当前表单随后会要求填写 **Deployment Type**（**CLOUD** 或 **ON-PREMISE**）、**ION API File**（`.ionapi`，必填）、**IDM Mapping File**（`.properties`）和 **BOD Mapping File**（`.properties`）。请向管理员获取这些特定于租户的文件。截图中有意将所有上传项留空。
 
-![当前英文 DocBits Sandbox Infor IDM + ION BOD 导出表单，显示部署选项以及留空的 ION API、IDM 和 BOD 文件上传项。](../../.gitbook/assets/dbdc-197-export-ion-bod-en.png)
+<figure><img src="../../.gitbook/assets/prior-u020-zh.png" alt="Infor ION BOD 的中文导出草稿。“信息”和“离子生化需氧量”分别误译了品牌 Infor 和技术名称 ION BOD；部署方式仍为英文。本图未上传文件、保存或测试连接。"><figcaption><p>Infor ION BOD 的中文导出草稿。“信息”和“离子生化需氧量”分别误译了品牌 Infor 和技术名称 ION BOD；部署方式仍为英文。本图未上传文件、保存或测试连接。</p></figcaption></figure>
 
 管理员验证 ION 路由后，保存配置并测试一份非生产文档。在 DocBits 和 Infor ION 中检查其状态。保存表单或 API metadata 条目并不能证明导出成功。

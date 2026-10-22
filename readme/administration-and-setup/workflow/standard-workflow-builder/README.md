@@ -101,7 +101,7 @@
 
 ## When / And / Then 模型
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="包含 When、And 和 Then 卡片的标准工作流画布"><figcaption><p>标准工作流画布。此示例会在子组织中的发票触发，并将其分配给一位用户。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-workflow_test9_match_check_overview-zh.png" alt="中文标准工作流设计器中的未保存草稿，包含条件卡和操作卡。该草稿尚不完整，参数占位符不代表已配置或已执行的规则。"><figcaption><p>中文标准工作流设计器中的未保存草稿，包含条件卡和操作卡。该草稿尚不完整，参数占位符不代表已配置或已执行的规则。</p></figcaption></figure>
 
 * **什么时候** — 启动工作流的触发条件（例如，_Document type is Invoice_）。
 * **和** — 还必须满足的其他条件（例如，_Document is part of sub-organization_）。留空时，只要符合 When 卡片的条件就会运行。
@@ -111,7 +111,7 @@
 
 在任意分组中点击 **添加卡**，打开卡片库。卡片按类别整理，方便你找到所需的构建模块：
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="按类别分组的 Add Card 卡片库"><figcaption><p><strong>Add Card</strong> 卡片库 — 按类别分组的条件卡片、比较卡片、操作卡片等。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-workflow_test9_match_check_detail-zh.png" alt="中文条件卡选择器，显示“与采购订单比较”类别。界面中的“操作员”“桌子”“受让人”在此分别指运算符、数据表和负责人。"><figcaption><p>中文条件卡选择器，显示“与采购订单比较”类别。界面中的“操作员”“桌子”“受让人”在此分别指运算符、数据表和负责人。</p></figcaption></figure>
 
 点击 **保存工作流程** 保存，或点击 **保存模板** 将布局保存为可重复使用的模板。
 

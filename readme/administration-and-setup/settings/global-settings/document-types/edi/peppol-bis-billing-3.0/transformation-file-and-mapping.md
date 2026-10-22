@@ -55,7 +55,7 @@
   * **可出现多次**：否。
 * **供应商地址行 3**
   * **源**：`//AccountingSupplierParty/Party/PostalAddress/AddressLine/Line/text()`
-  * **映射到**：`<InvoINVOICEice><SUPPLIER><ADDRESS_LINE_3>`
+  * **映射到**：`<INVOICE><SUPPLIER><ADDRESS_LINE_3>`
   * **可出现多次**：否。
 * **供应商 VAT ID**
   * **源**：`//AccountingSupplierParty/Party/PartyTaxScheme/CompanyID/text()`

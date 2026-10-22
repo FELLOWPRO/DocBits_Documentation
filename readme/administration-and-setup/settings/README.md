@@ -1,6 +1,6 @@
 # 设置
 
-<figure><img src="../../.gitbook/assets/settings_overview.png" alt="设置概览"><figcaption><p>设置概览页面</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-settings-overview-zh.png" alt="中文公司信息页面；名称、地址及组织数据已隐藏。所示界面将导入导航误译为“进口”，联系信息区段误译为“接触”，分别指数据导入和联系方式。"><figcaption><p>中文公司信息页面；名称、地址及组织数据已隐藏。所示界面将导入导航误译为“进口”，联系信息区段误译为“接触”，分别指数据导入和联系方式。</p></figcaption></figure>
 
 设置区域是配置 DocBits 的中心。它分为五个主要部分：
 

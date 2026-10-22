@@ -2,7 +2,7 @@
 
 Film przedstawia zwykłego użytkownika testowego pracującego nad zadaniem z syntetycznymi dokumentami.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/document-tasks-customer/v1/pl.mp4" %}
+{% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/document-tasks-customer/v1/pl.mp4" %}
 Zadania
 {% endembed %}
 

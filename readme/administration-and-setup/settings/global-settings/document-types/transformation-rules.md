@@ -34,7 +34,7 @@ Zasady transformacji zastępują większość małych skryptów, które organiza
 
 Zasady transformacji włącza **administrator organizacji** **osobno dla każdego typu dokumentu**.
 
-1. Przejdź do **Settings → Global Settings → Document Types**.
+1. Przejdź do **Ustawienia → Ustawienia ogólne → Typy dokumentów**.
 2. Kliknij ikonę **ustawień** (koło zębate) na karcie typu dokumentu.
 3. Otwórz **Zasady transformacji** i włącz przełącznik. Kliknij **Zarządzaj regułami transformacji**, aby otworzyć listę.
 
@@ -113,7 +113,7 @@ Zasady **Wiersze tabeli** używają dwóch innych kroków, które działają na 
 | Krok | Efekt |
 | --- | --- |
 | **Wyczyść wszystkie wiersze** | usuwa każdy wyodrębniony wiersz. Wiersze dodane przez późniejszy krok pozostają. |
-| **Add a row** | dodaje jeden wiersz **po ostatnim wierszu** lub **przed pierwszym wierszem**. Dla każdej kolumny wybierz **Wartość** (stała wartość) lub **Pole** (wartość pola nagłówka). Pominięte kolumny pozostają puste. |
+| **Dodaj wiersz** | dodaje jeden wiersz **po ostatnim wierszu** lub **przed pierwszym wierszem**. Dla każdej kolumny wybierz **Wartość** (stała wartość) lub **Pole** (wartość pola nagłówka). Pominięte kolumny pozostają puste. |
 
 {% hint style="info" %}
 **Data formatowania** oczekuje daty w postaci, w jakiej DocBits przechowuje ją wewnętrznie (`YYYY-MM-DD`). Stosuj ją do samego pola, a nie do tekstu, który już zawiera sformatowaną datę.
@@ -148,7 +148,7 @@ Wiersze tabeli **INVOICE_TABLE** · tylko gdy *Supplier ID is HP0000278* · Clea
 
 <figure><img src="../../../../.gitbook/assets/s150-transformation-add-row-columns-pl.png" alt="Niezapisany krok transformacji dodający wiersz tabeli. Pytanie Dokąd zmierza ten spór dotyczy tutaj miejsca dodania wiersza."><figcaption><p>Niezapisany krok transformacji dodający wiersz tabeli. Pytanie Dokąd zmierza ten spór dotyczy tutaj miejsca dodania wiersza.</p></figcaption></figure>
 
-Kolejność ma znaczenie: **Wyczyść wszystkie wiersze** musi być **przed** **Add a row**. Kreator ostrzega, jeśli tak nie jest („Clear all rows runs after Add a row …”), a także gdy krok **Add a row** nie jest poprzedzony krokiem **Wyczyść wszystkie wiersze**, ponieważ zasada dodawałaby wtedy kolejną kopię wiersza przy każdym zapisie. Połącz tę zasadę z regułą dopasowania zamówień zakupu na sumę, aktywną dla dokumentów jednowierszowych.
+Kolejność ma znaczenie: **Wyczyść wszystkie wiersze** musi być **przed** **Dodaj wiersz**. Kreator ostrzega, jeśli tak nie jest („Clear all rows runs after Add a row …”), a także gdy krok **Dodaj wiersz** nie jest poprzedzony krokiem **Wyczyść wszystkie wiersze**, ponieważ zasada dodawałaby wtedy kolejną kopię wiersza przy każdym zapisie. Połącz tę zasadę z regułą dopasowania zamówień zakupu na sumę, aktywną dla dokumentów jednowierszowych.
 
 ### Wypełnij zamówienie zakupu na podstawie pola numeru faktury
 
@@ -204,7 +204,7 @@ Większość kroków daje ten sam wynik, gdy działa na własnym wyniku — przy
 **Wybór fragmentu**, **Ekstrakt** i **Znajdź i zamień** są inne: uruchomione ponownie na własnym wyniku, wciąż go zmieniają (wycinek bierze pierwsze cztery znaki z pierwszych czterech znaków …). Dlatego DocBits nie pozwala zapisać zasady, która stosuje te kroki do własnego pola docelowego. Należy albo:
 
 * włączyć **Uruchom tylko raz dla każdego dokumentu**, albo
-* użyć **Read from another field**, aby wejście pozostało niezmienione.
+* użyć **Odczytaj z innego pola**, aby wejście pozostało niezmienione.
 
 ## Zasady transformacji a dopasowanie zamówień zakupu
 
@@ -225,7 +225,7 @@ Zasady tabeli i kolumn zmieniają to, co widzi moduł dopasowania zamówień (PO
 
 ## Logi
 
-Gdy **Wykonywanie dziennika** jest włączone, każde zastosowanie zasady jest zapisywane w **Document Types → (typ dokumentu) → Logs**, wraz z wynikiem (applied, no change, skipped), dokumentem oraz — dla pominiętych zasad — śladem warunku, który wyjaśnia dlaczego. Zobacz [Read the condition trace](rule-conditions-applies-when.md#odczyt-sladu-warunku-w-logach).
+Gdy **Wykonywanie dziennika** jest włączone, każde zastosowanie zasady jest zapisywane w **Typy dokumentów → (typ dokumentu) → Dzienniki**, wraz z wynikiem (applied, no change, skipped), dokumentem oraz — dla pominiętych zasad — śladem warunku, który wyjaśnia dlaczego. Zobacz [Read the condition trace](rule-conditions-applies-when.md#odczyt-sladu-warunku-w-logach).
 
 ## Najlepsze praktyki
 
@@ -242,7 +242,7 @@ Gdy **Wykonywanie dziennika** jest włączone, każde zastosowanie zasady jest z
 | --- | --- |
 | Zasada niczego nie zmieniła | Czy jest aktywna i czy funkcja jest włączona dla typu dokumentu? Czy warunek jest prawdziwy dla tego dokumentu (dokładna wartość, łącznie ze spacjami i wielkością liter)? Czy zasada z opcją **Uruchom tylko raz dla każdego dokumentu** została już zastosowana do dokumentu? Sprawdź ślad w logu. |
 | Wartość zmienia się ponownie przy każdym zapisie | Potok zawiera Take a slice, Extract lub Find & replace. Włącz **Uruchom tylko raz dla każdego dokumentu** albo odczytuj z innego pola. |
-| Tabela dostaje o jeden wiersz więcej przy każdym zapisie | Krok **Add a row** bez **Wyczyść wszystkie wiersze** przed nim. Dodaj najpierw krok czyszczenia albo włącz opcję **Uruchom tylko raz dla każdego dokumentu**. |
+| Tabela dostaje o jeden wiersz więcej przy każdym zapisie | Krok **Dodaj wiersz** bez **Wyczyść wszystkie wiersze** przed nim. Dodaj najpierw krok czyszczenia albo włącz opcję **Uruchom tylko raz dla każdego dokumentu**. |
 | Dopasowanie zamówienia zakupu znika po zapisie | Zasada tabeli zastąpiła dopasowane pozycje. Przyczyna na dokumencie wskazuje zasadę; zmień zasadę tak, aby odtwarzała te same pozycje, albo włącz dla niej opcję **Uruchom tylko raz dla każdego dokumentu**. |
 | Reguła dopasowania nigdy się nie uruchamia po transformacji | Zasada zmieniła liczbę pozycji; dostosuj warunek aktywacji reguły dopasowania. |
 | Zasada potrzebuje wartości z danych podstawowych dostawcy, ale jest ona nadal pusta | Włącz **Run after lookup population (before PO match)**. |

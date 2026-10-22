@@ -4,7 +4,7 @@
 
 ## Włączanie ustawienia
 
-1. Otwórz **Settings → Document Types**. Znajdź typ dokumentu używany dla Twoich faktur i wybierz koło zębate na jego karcie, aby otworzyć **More Settings**. Zrzut ekranu pokazuje kartę **Faktura**. Pozostaw przełączniki **Aktywować** i **Ekstrakcja** bez zmian.
+1. Otwórz **Ustawienia → Typy dokumentów**. Znajdź typ dokumentu używany dla Twoich faktur i wybierz koło zębate na jego karcie, aby otworzyć **Więcej ustawień**. Zrzut ekranu pokazuje kartę **Faktura**. Pozostaw przełączniki **Aktywować** i **Ekstrakcja** bez zmian.
 
    <figure><img src="../../../../../../.gitbook/assets/prior-u044-pl.png" alt="Dostęp do dodatkowych ustawień typu dokumentu Faktura."><figcaption><p>Dostęp do dodatkowych ustawień typu dokumentu Faktura.</p></figcaption></figure>
 

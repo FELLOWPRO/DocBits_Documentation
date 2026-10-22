@@ -10,8 +10,8 @@ Pola określają dane zbierane dla typu dokumentu i sposób ich kontroli. Otwór
 * **Tylko do odczytu** uniemożliwia edycję; **Ukryte** usuwa pole ze zwykłego widoku.
 * **Wymuszona walidacja** wymaga jawnego sprawdzenia pola. Nie tworzy reguły porównania ani wyrażenia regularnego; niestandardowe reguły walidacji konfiguruje się oddzielnie.
 * **OCR** ustawia liczbowy próg pewności rozpoznawania. Nie jest przełącznikiem włączającym OCR.
-* **Match Score** ustawia liczbowy próg dopasowania. Nie jest tekstem odniesienia ani listą wartości.
-* Opcja **AI** określa żądaną ekstrakcję pola.
+* **Próg dopasowania** ustawia liczbowy próg dopasowania. Nie jest tekstem odniesienia ani listą wartości.
+* Opcja **Sztuczna inteligencja** określa żądaną ekstrakcję pola.
 
 Wyszukaj pole po nazwie i sprawdź jego wiersz przed zmianą właściwości. Możesz organizować grupy, dodawać pola i otwierać opcje formuł lub danych podstawowych. Dostępne działania zależą od pola i uprawnień; usuwanie pól standardowych może być ograniczone.
 

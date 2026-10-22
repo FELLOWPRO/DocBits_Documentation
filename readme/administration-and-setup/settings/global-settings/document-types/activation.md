@@ -2,7 +2,7 @@
 
 Administratorzy mogą wybierać, które typy dokumentów są dostępne w ich organizacji. Możesz to zmienić na stronie **Typy dokumentów** bez usuwania typu ani jego konfiguracji.
 
-1. Otwórz **Settings → Document Types**.
+1. Otwórz **Ustawienia → Typy dokumentów**.
 2. Znajdź typ dokumentu, na przykład **Faktura**, w sekcji **Domyślne typy dokumentów** lub **Niestandardowe typy dokumentów**.
 3. Użyj przełącznika **Aktywować** na karcie tego typu. Kolorowy przełącznik oznacza, że typ jest aktywny; szary przełącznik oznacza, że jest nieaktywny. Przed opuszczeniem strony poczekaj na komunikat potwierdzający. Dla tego przełącznika nie ma osobnego przycisku Save.
 

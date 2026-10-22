@@ -3,7 +3,7 @@ description: >-
   Jak znaleźć i utworzyć klucze API, które dają innym systemom dostęp do DocBits
 ---
 
-# API Key Management
+# Zarządzanie kluczami API
 
 Klucz API pozwala innemu systemowi — Twojemu ERP, skryptowi albo aplikacji partnera — rozmawiać z DocBits bez logowania się użytkownika. Twoja organizacja może mieć tyle kluczy, ile potrzebujesz, a każdy z nich jest zarządzany osobno: nadaj mu własną nazwę, zdecyduj, czy ma wygasać, i unieważnij go pojedynczo, jeśli kiedykolwiek zostanie ujawniony.
 

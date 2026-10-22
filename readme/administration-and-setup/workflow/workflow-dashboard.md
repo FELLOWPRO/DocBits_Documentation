@@ -1,4 +1,4 @@
-# Dashboard
+# Panel
 
 **Panel przepływu pracy** to strona główna obszaru przepływów pracy. Pokazuje, jak działają Twoje przepływy pracy — łączne liczby uruchomień, wskaźniki sukcesu i niepowodzeń, wykres uruchomień w czasie oraz ostatnią aktywność — i daje dostęp do listy przepływów pracy, menedżera testów oraz Card SDK.
 
@@ -14,11 +14,11 @@
 
 Pasek narzędzi oferuje także **Szablony**, który otwiera bibliotekę [Workflow Templates](standard-workflow-builder.md#workflow-templates), oraz **Importuj przepływ pracy**, który importuje przepływ pracy z pliku JSON.
 
-**Test Manager** pozwala zapisywać scenariusze testowe dla każdego przepływu pracy i uruchamiać je razem, dzięki czemu możesz sprawdzić, czy Twoje przepływy pracy nadal działają poprawnie po wprowadzeniu zmian:
+**Zarządzanie testami** pozwala zapisywać scenariusze testowe dla każdego przepływu pracy i uruchamiać je razem, dzięki czemu możesz sprawdzić, czy Twoje przepływy pracy nadal działają poprawnie po wprowadzeniu zmian:
 
 <figure><img src="../../.gitbook/assets/prior-u032-pl.png" alt="Lista scenariuszy testowych przepływów."><figcaption><p>Lista scenariuszy testowych przepływów.</p></figcaption></figure>
 
 ## Następne kroki
 
-- Zbuduj liniową automatyzację za pomocą buildera **Standard Workflow**.
+- Zbuduj liniową automatyzację za pomocą buildera **Standardowy przepływ**.
 - Zbuduj rozgałęziony przepływ za pomocą buildera **Zaawansowany przepływ pracy**.

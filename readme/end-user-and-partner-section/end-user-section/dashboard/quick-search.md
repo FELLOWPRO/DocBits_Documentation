@@ -186,7 +186,7 @@ ap_assignment_code=""
 
 ## Filtry inteligentne — jedno kliknięcie
 
-U góry listy rozwijanej Quick Search (kliknij w pasek wyszukiwania) znajdziesz **Smart Filters**: gotowe wyszukiwania stosowane jednym kliknięciem. Każdy z nich to po prostu skrót zapytania, które możesz też wpisać samodzielnie:
+U góry listy rozwijanej Quick Search (kliknij w pasek wyszukiwania) znajdziesz **Inteligentne filtry**: gotowe wyszukiwania stosowane jednym kliknięciem. Każdy z nich to po prostu skrót zapytania, które możesz też wpisać samodzielnie:
 
 | Filtr inteligentny | Znajduje | To samo co wpisanie |
 |--------------|-------|----------------|

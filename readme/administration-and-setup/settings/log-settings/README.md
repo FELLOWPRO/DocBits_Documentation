@@ -1,4 +1,4 @@
-# Activity Logging
+# Dziennik aktywności
 
 <figure><img src="../../../.gitbook/assets/prior-t011-pl.png" alt="Filtry dziennika aktywności; wpisy są ukryte."><figcaption><p>Filtry dziennika aktywności; wpisy są ukryte.</p></figcaption></figure>
 

@@ -147,7 +147,7 @@ Powyżej znajduje się przykład obliczenia dla MTZ z filtrem dla numerów pozyc
 
 W przypadku konfiguracji ręcznej zaleca się podzielenie obliczeń, które zależą od nowych kolumn, na osobny przepływ pracy. Aby kontynuować obliczenia, możesz użyć karty Run Workflow.
 
-**Run Workflow**
+**Uruchom przepływ**
 
 <figure><img src="../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -159,7 +159,7 @@ Za pomocą tej karty możesz określić nazwę przepływu pracy, który ma zosta
 
 Jeśli chcesz dodać wszystkie dopłaty jako ujemny rabat do kolumny rabatu, możesz użyć karty obliczeń. W tej kolumnie mogą istnieć wpisy, możesz ustawić ją jako jedną ze zmiennych na karcie, odjąć od niej MTZ i dodać wynik z powrotem do tej kolumny. W przypadku gdy istnieją puste pola (dopłaty tylko dla niektórych pozycji), na potrzeby obliczeń przyjmie wartość 0
 
-**Notify user to authorize the order confirmation in DocBits**
+**Powiadom użytkownika o konieczności zatwierdzenia potwierdzenia zamówienia w DocBits**
 
 Po obliczeniu dopłat możesz chcieć powiadomić konkretnego użytkownika, aby autoryzował potwierdzenie zamówienia. W tym celu możesz użyć karty powiadomień
 

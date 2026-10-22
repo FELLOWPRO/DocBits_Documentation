@@ -17,7 +17,7 @@ Otwórz **Ustawienia → Typy dokumentów → Pola** i wybierz typ dokumentu. Ob
 | **Obowiązkowe** | Oznacza informacje, które muszą być obecne do walidacji. Po zmianie tego ustawienia sprawdź wynik walidacji dokumentu. |
 | **Tylko do odczytu** | Wyświetla pole bez możliwości edycji jego wartości przez użytkowników. |
 | **Ukryty** | Ukrywa pole w zwykłym widoku dokumentu. |
-| **Wymuszenie walidacji** | Wymaga jawnego sprawdzenia pola. Nie tworzy reguł porównania ani wyrażeń regularnych; niestandardowe reguły walidacji konfiguruje się osobno. |
+| **Wymuszenie walidacji** | Wymaga jawnego sprawdzenia pola. Nie tworzy reguły porównania ani wyrażenia regularnego; niestandardowe reguły walidacji konfiguruje się oddzielnie. |
 | **Użyj sztucznej inteligencji** | Włącza lub wyłącza żądanie ekstrakcji AI dla tego pola. Wiersz pokazuje, czy ekstrakcja jest żądana. |
 | **OCR** | Wprowadź próg pewności OCR dla pola. Jest to liczba, a nie przełącznik włącz/wyłącz ani ustawienie języka. |
 | **Próg dopasowania** | Wprowadź próg dopasowania dla pola. Jest to liczba, a nie przełącznik włącz/wyłącz. |

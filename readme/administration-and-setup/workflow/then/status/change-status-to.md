@@ -44,10 +44,16 @@ La tarjeta de flujo de trabajo **"Change Status"** ofrece un enfoque ágil para 
 
 ## Ejemplo práctico
 
-**Cuándo utilizar:** Mover un documento revisado a un estado de procesamiento definido.
+**Cuándo utilizarla:** Enviar un documento comprobado al paso de aprobación.
 
-**Configuración:** Seleccione su estado `Demo Review` configurado y deshabilite la activación de flujos de trabajo adicionales para este ejemplo.
+**Dónde:** Diseñador de flujos estándar → Entonces → Estado → Cambiar estado a.
 
-**Resultado esperado y contraejemplo:** El documento recibe el estado seleccionado. Esta acción por sí sola no ejecuta la exportación configurada por separado.
+**Configuración:** Seleccione la versión 3 de `staus_change`, el estado Pendiente de aprobación (`validated_pending_approval`) y la activación de otros flujos en `false` (`trigger_docflow=false`). Use una factura sintética aislada que cumpla las comprobaciones anteriores.
 
-Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.
+**Resultado esperado y contraejemplo:** Una actualización permitida y correcta coloca el documento en el estado seleccionado. Si una condición anterior es falsa, esta acción no se alcanza y no cambia el estado. Una actualización rechazada o fallida de la API no es un éxito: compruebe el estado real y los registros. La tarjeta no realiza por sí misma una exportación.
+
+### Versiones de la tarjeta
+
+El interruptor explícito para activar otros flujos está disponible en v3. Las versiones 1 y 2 no lo ofrecen; su ruta de actualización antigua usa el comportamiento predeterminado de activación. No suponga que un ajuste `false` de v3 se conserva al cambiar a una versión anterior.
+
+Configuración y resultado esperado revisados contra el código. No se ejecutó ningún flujo ni cambio de estado.

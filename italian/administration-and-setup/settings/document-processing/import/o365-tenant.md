@@ -23,8 +23,8 @@
 
 6. Selezionare uno dei seguenti tipi di account a seconda delle proprie esigenze:
 
-* **Accounts in any organizational directory (Any Azure AD directory Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**
-* **Accounts in any organizational directory (Any Azure AD directory Multitenant)**
+* **Account in qualsiasi directory organizzativa (qualsiasi directory Azure AD Multitenant) e account Microsoft personali (ad esempio Skype, Xbox)**
+* **Account in qualsiasi directory organizzativa (qualsiasi directory Azure AD multitenant)**
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/o365_tenant_5.png)
 

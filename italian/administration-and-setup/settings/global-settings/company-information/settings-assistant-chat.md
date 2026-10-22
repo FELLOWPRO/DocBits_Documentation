@@ -29,17 +29,17 @@ Quando apri il pannello in una pagina delle impostazioni, ti saluta per **quella
 
 | Pagina | Domande di esempio |
 | --- | --- |
-| Informazioni sulla società | "How do I change our company address?", "Where do I upload our logo?", "Which domains are registered for our organization?" |
-| Importazione | "Is email import active for us?", "Which email address do we send documents to?", "How do I set up an FTP or SFTP import?" |
-| Classificazione ed estrazione | "Which AI model is used for extraction?", "Is splitting documents on barcodes active for us?", "Can I use a different AI model for one supplier?" |
-| Utenti | "How do I invite a new user?", "How do I make a user an administrator?", "How do I deactivate a user?" |
-| Panoramica delle impostazioni | "How do I enable barcode detection?", "Why isn't PO matching active?", "Where do I find the email import settings?" |
+| Informazioni sulla società | "Come modifico l’indirizzo della nostra azienda?", "Dove carico il nostro logo?", "Quali domini sono registrati per la nostra organizzazione?" |
+| Importazione | "L’importazione tramite e-mail è attiva per noi?", "A quale indirizzo e-mail inviamo i documenti?", "Come configuro un’importazione FTP o SFTP?" |
+| Classificazione ed estrazione | "Quale modello di IA viene utilizzato per l’estrazione?", "La suddivisione dei documenti tramite codici a barre è attiva per noi?", "Posso utilizzare un altro modello di IA per un fornitore?" |
+| Utenti | "Come invito un nuovo utente?", "Come assegno a un utente il ruolo di amministratore?", "Come disattivo un utente?" |
+| Panoramica delle impostazioni | "Come attivo il rilevamento dei codici a barre?", "Perché l’abbinamento degli ordini non è attivo?", "Dove trovo le impostazioni di importazione tramite e-mail?" |
 
 Fai clic su una domanda e viene inviata subito. Sotto le tre domande il pannello dice *I can also help with any other setting — just ask.* Durante una conversazione, il chip **Aiuto per questa pagina** (Help with this page) resta in basso e chiede "What can I configure on this page?".
 
 ### Esempio 1: trovare un'impostazione
 
-Chiedi **"How do I change our company address?"**
+Chiedi **"Come modifico l’indirizzo della nostra azienda?"**
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address-it.png" alt="L'assistente risponde con il percorso verso l'indirizzo della società e un pulsante Open setting"><figcaption><p>La risposta indica il posto, e la scheda ti dà il percorso esatto e un pulsante <strong>Open setting</strong>.</p></figcaption></figure>
 
@@ -47,7 +47,7 @@ La risposta dice dove si trova l'indirizzo. La scheda sotto mostra il percorso (
 
 ### Esempio 2: capire un'impostazione che ha più nomi
 
-Chiedi **"How do I enable barcode detection?"**
+Chiedi **"Come attivo il rilevamento dei codici a barre?"**
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode-it.png" alt="L'assistente spiega le tre impostazioni dei codici a barre e quando abilitare ciascuna"><figcaption><p>Quando una parola corrisponde a più impostazioni, l'assistente elenca ciascuna con <strong>Enable when</strong> e <strong>Leave off when</strong>.</p></figcaption></figure>
 
@@ -59,7 +59,7 @@ Chiedi **"How do I enable barcode detection?"**
 
 ### Esempio 3: scoprire perché qualcosa non accade
 
-Chiedi **"Why isn't PO matching active?"**
+Chiedi **"Perché l’abbinamento degli ordini non è attivo?"**
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching-it.png" alt="L'assistente mostra il valore attuale di ogni impostazione dell'abbinamento ordini"><figcaption><p>Per una domanda "perché" l'assistente legge la tua configurazione e mostra ogni impostazione con il suo valore <strong>Current</strong>.</p></figcaption></figure>
 
@@ -90,9 +90,9 @@ Non confondere le **Regole di convalida personalizzate** (regole per i campi di 
 
 ### Esempio 6: altre domande da provare
 
-* "Which AI model is used for extraction?"
-* "Is splitting documents on barcodes active for us?"
-* "How do I deactivate a user?"
+* "Quale modello di IA viene utilizzato per l’estrazione?"
+* "La suddivisione dei documenti tramite codici a barre è attiva per noi?"
+* "Come disattivo un utente?"
 * "Where do I set how long documents are kept?"
 * "Which settings affect the touchless rate?"
 * "Show me a screenshot of the supplier portal settings."

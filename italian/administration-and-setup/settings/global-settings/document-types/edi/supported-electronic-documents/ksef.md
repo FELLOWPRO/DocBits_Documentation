@@ -13,7 +13,7 @@ Consultate la guida del paese per i limiti delle versioni, la configurazione eff
 | Proprietà             | Valore                                   |
 | --------------------- | ---------------------------------------- |
 | **Paese / Regione**   | Polonia                                  |
-| **Tipi di documento** | Invoice, Credit Note, Corrective Invoice |
+| **Tipi di documento** | Fattura, nota di credito, fattura correttiva |
 | **Formato**           | XML                                      |
 | **Standard**          | KSeF (Krajowy System e-Faktur)           |
 

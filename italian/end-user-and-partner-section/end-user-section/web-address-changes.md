@@ -92,7 +92,7 @@ I segnaposto nella tabella rappresentano valori reali:
 |---|---|
 | `/task/<task-id>` | `/tasks/<task-id>` |
 
-### Workflow
+### Flusso di lavoro
 
 | Vecchio indirizzo | Nuovo indirizzo |
 |---|---|

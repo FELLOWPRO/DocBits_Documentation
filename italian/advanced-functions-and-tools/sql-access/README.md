@@ -33,8 +33,8 @@ GROUP BY
 
 I risultati seguenti mostrano il numero di documenti per stato e tipo di fattura:
 
-* **Ready for Validation:** 71 fatture, 6 non specificati
-* **Pending Confirmation:** 1 non specificato
+* **Pronto per la validazione:** 71 fatture, 6 non specificate
+* **In attesa di conferma:** 1 non specificato
 * **Finished:** 3 non specificati, 1 fattura
 * **Error:** 2 non specificati
 
@@ -47,9 +47,9 @@ clickhouse-client --host <hostname_or_ip> --port <port> --user <username> --pass
 
 ```
 
-### Creare viste materializzate
+### Esempio di aggregazione con SELECT
 
-Consigliamo di creare viste materializzate per precalcolare i dati e migliorare le prestazioni negli strumenti di analisi come PowerBI:
+La query seguente aggrega righe esistenti e non crea una vista materializzata. L’accesso in sola lettura non concede i permessi di scrittura necessari per crearla. Adattare nomi delle tabelle e conversioni allo schema, al formato numerico e alla valuta. Non sommare valute diverse senza una conversione esplicita.
 
 ```sql
 SELECT toStartOfWeek(created_on) as week_start, sum(toFloat64OrZero(field_value)) as total_sum

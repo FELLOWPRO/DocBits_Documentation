@@ -30,7 +30,7 @@ ebInterface 6.0 ha introdotto l'allineamento con lo standard europeo EN 16931 ma
 
 ## Anteprima predefinita
 
-<figure><img src="austria-ebinterface-preview.png" alt="Anteprima fattura Austria ebInterface 6.0 in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura AUSTRIA EBINTERFACE 6.0</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Anteprima fattura Austria ebInterface 6.0 in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura AUSTRIA EBINTERFACE 6.0</p></figcaption></figure>
 
 ## Mappatura dei campi
 

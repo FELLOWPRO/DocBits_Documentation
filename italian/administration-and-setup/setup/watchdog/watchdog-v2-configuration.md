@@ -2,7 +2,7 @@
 
 Questa guida spiega come configurare il servizio WatchDog all'interno dell'applicazione DocBits. Tutte le configurazioni vengono gestite direttamente in **Settings → Document Processing → WatchDog**.
 
-<figure><img src="../../../.gitbook/assets/watchdog-v2-config-infographic.svg" alt="Panoramica della configurazione di WatchDog"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-configuration-it.svg" alt="Configurazione di WatchDog: funzioni delle quattro schede."><figcaption><p>Configurazione di WatchDog: funzioni delle quattro schede.</p></figcaption></figure>
 
 ---
 
@@ -39,7 +39,7 @@ Crea e gestisci le configurazioni di importazione e di esportazione. Tutte le co
 
 <figure><img src="../../../.gitbook/assets/watchdog_v2_03.png" alt="Panoramica delle configurazioni di WatchDog"><figcaption></figcaption></figure>
 
-### 2.1 Import Configurations
+### 2.1 Importare le configurazioni
 
 Definisci dove WatchDog cerca i nuovi documenti.
 
@@ -53,7 +53,7 @@ Definisci dove WatchDog cerca i nuovi documenti.
 | **Document Type** | INVOICE, CREDIT\_NOTE, PURCHASE\_ORDER, ecc. |
 | **Sub-Organisation** | Facoltativo — instrada i documenti a una sub-organizzazione specifica |
 
-### 2.2 Export Configurations
+### 2.2 Configurazione dell’esportaziones
 
 Definisci come e dove vengono esportati i documenti elaborati.
 
@@ -143,7 +143,7 @@ Gestisci i template di trasformazione XSLT utilizzati per le esportazioni XML.
 
 ---
 
-## 6. Scheda Export Configurations
+## 6. Scheda Configurazione dell’esportaziones
 
 Panoramica di tutte le configurazioni di esportazione attive con lo stato della connessione.
 

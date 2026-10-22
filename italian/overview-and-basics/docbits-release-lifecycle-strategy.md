@@ -51,7 +51,7 @@ VESTA R1.0.x e NOVA R1.1.x sono entrambe release di produzione attive. La Sua or
 
 Per adottare NOVA durante questa fase:
 
-1. Valuti la release nella sandbox NOVA.
+1. Valuta la release nella sandbox NOVA.
 2. Consulti l'annuncio della release o chieda conferma al supporto FELLOWPRO che entrambi gli ambienti di produzione siano pronti e disponibili per il passaggio.
 3. Decida quando la Sua organizzazione è pronta a utilizzare la nuova release in produzione.
 4. In DocBits, vada su **Settings > Company Information > Release Channel** e selezioni **NOVA**.

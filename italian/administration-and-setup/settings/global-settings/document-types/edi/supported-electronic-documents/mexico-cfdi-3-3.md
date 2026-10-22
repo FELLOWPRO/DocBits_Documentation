@@ -13,7 +13,7 @@ Consultate la guida del paese per i limiti delle versioni, la configurazione eff
 | Proprietà             | Valore                                             |
 | --------------------- | -------------------------------------------------- |
 | **Paese / Regione**   | Messico                                            |
-| **Tipi di documento** | Invoice, Credit Note, Payment Receipt              |
+| **Tipi di documento** | Fattura, nota di credito, ricevuta di pagamento              |
 | **Formato**           | XML                                                |
 | **Standard**          | CFDI 3.3 (Comprobante Fiscal Digital por Internet) |
 

@@ -1,6 +1,6 @@
-# Cost Invoice - Export
+# Fattura di costo: esportazione
 
-<figure><img src="../../../../.gitbook/assets/docbits_purchase_order_export_4.png" alt="DocBits Acquisto Ordine Esporta 4"><figcaption></figcaption></figure>
+
 
 Questo titolo indica che la regola è configurata specificamente per la gestione delle fatture di costo e prevede un'azione di esportazione, eventualmente per la reportistica, l'ulteriore elaborazione o l'integrazione con altri sistemi.
 
@@ -19,7 +19,7 @@ Questo titolo indica che la regola è configurata specificamente per la gestione
 #### Scopo di Questa Regola:
 
 * **Workflow Efficiency**: questa regola aiuta ad automatizzare la gestione delle fatture di costo garantendo che vengano elaborate attraverso le fasi di approvazione necessarie senza intervento manuale, aumentando la velocità e l'accuratezza delle operazioni finanziarie.
-* **Control and Compliance**: richiedendo una seconda approvazione, il sistema applica un meccanismo di controllo che garantisce una revisione approfondita delle fatture di costo, migliorando la supervisione finanziaria.
-* **Integration and Reporting**: l'azione di esportazione suggerisce che, una volta completamente approvate, le fatture possono essere integrate in altri sistemi per ulteriore elaborazione o analisi, aspetto fondamentale per la reportistica finanziaria e gli audit.
+* **Controllo e conformità**: richiedendo una seconda approvazione, il sistema applica un meccanismo di controllo che garantisce una revisione approfondita delle fatture di costo, migliorando la supervisione finanziaria.
+* **Integrazione e report**: l'azione di esportazione suggerisce che, una volta completamente approvate, le fatture possono essere integrate in altri sistemi per ulteriore elaborazione o analisi, aspetto fondamentale per la reportistica finanziaria e gli audit.
 
 Questo tipo di regola è essenziale per le organizzazioni che trattano vari tipi di fatture e devono garantire che ciascun tipo sia gestito secondo protocolli specifici. Riduce il rischio di errori e garantisce la conformità ai controlli interni e alle normative esterne.

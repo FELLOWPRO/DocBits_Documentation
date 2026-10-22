@@ -36,7 +36,7 @@ Il catalogo comprende Fapiao, E-Fapiao, General VAT Invoice e Special VAT Invoic
 
 ## Anteprima predefinita
 
-<figure><img src="china-fapiao-preview.png" alt="Anteprima China Fapiao General VAT Invoice in DocBits"><figcaption><p>Anteprima predefinita DocBits per una China Fapiao General VAT Invoice (普通发票)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/china-fapiao-preview.png" alt="Anteprima China Fapiao General VAT Invoice in DocBits"><figcaption><p>Anteprima predefinita DocBits per una China Fapiao General VAT Invoice (普通发票)</p></figcaption></figure>
 
 ## Mappatura dei campi
 
@@ -89,5 +89,5 @@ L'elemento radice è `<fapiao>` con il namespace `urn:china:tax:fapiao:1.0`. La 
 
 ## Vedi anche
 
-- [Standard di e-fatturazione attualmente supportati](../../currently-supported-e-invoice-standards/)
+- [Standard di e-fatturazione attualmente supportati](../currently-supported-e-invoice-standards/README.md)
 - [Documenti elettronici supportati](./)

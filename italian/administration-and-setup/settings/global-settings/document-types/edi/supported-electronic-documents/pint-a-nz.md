@@ -30,7 +30,7 @@ PINT A-NZ (Peppol International Model for Australia-New Zealand) è la specifica
 
 ## Anteprima predefinita
 
-<figure><img src="aunz-pint-preview.png" alt="Anteprima fattura PINT A-NZ in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura PINT A-NZ</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="Anteprima fattura PINT A-NZ in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura PINT A-NZ</p></figcaption></figure>
 
 ## Mappatura dei campi
 

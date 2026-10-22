@@ -69,10 +69,10 @@ Oltre alle mappature dinamiche, per ogni tipo di riga vengono utilizzati diversi
 
 * **Campi statici dell'intestazione**:
   * Financial Company: 0200
-  * Rate Determiner: docd
-  * External Rate Factor: 1
+  * Determinatore della tariffa: docd
+  * Fattore di tasso esterno: 1
 * **Campi statici della riga di ricezione**:
-  * Order Type: purchase
+  * Tipo di ordine: acquisto
   * Logistic Company: 200
   * Order Sequence: 1
 * **Campi statici della riga di costo**:

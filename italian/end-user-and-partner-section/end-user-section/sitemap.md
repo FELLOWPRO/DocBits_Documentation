@@ -6,7 +6,7 @@ La Mappa del Sito è l'indice completo e ricercabile di tutto ciò che DocBits e
 
 Apri la Mappa del Sito dalla barra laterale (voce in fondo) o premi <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> e scegli **Vedi tutti i risultati**. L'URL diretto è `/sitemap`.
 
-<figure><img src="../../.gitbook/assets/sitemap-overview.png" alt="Panoramica della Mappa del Sito"><figcaption><p>Mappa del Sito con panoramica per categorie e intestazione di ricerca.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-sitemap-it.png" alt="Catalogo delle pagine in italiano. I filtri fissi All, Pages, Dialogs, Sidebars e User e le indicazioni more restano in inglese nella versione illustrata."><figcaption><p>Catalogo delle pagine in italiano. I filtri fissi All, Pages, Dialogs, Sidebars e User e le indicazioni more restano in inglese nella versione illustrata.</p></figcaption></figure>
 
 ## Sfogliare il catalogo
 

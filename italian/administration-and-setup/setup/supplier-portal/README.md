@@ -17,7 +17,7 @@ Questa pagina spiega come attivare e utilizzare il **Portale fornitori**, così 
 
 Una volta attivata la funzionalità **Portale fornitori**, apparirà una nuova sezione **Impostazioni del fornitore** in fondo al menu **Impostazioni**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_suppplier_settings.png)
+<figure><img src="../../../.gitbook/assets/prior-t012-it.png" alt="Impostazioni generali del portale fornitori: campi aggiuntivi per l’invito. Nessuna impostazione è stata modificata."><figcaption><p>Impostazioni generali del portale fornitori: campi aggiuntivi per l’invito. Nessuna impostazione è stata modificata.</p></figcaption></figure>
 
 [**Impostazioni generali del fornitore**](../../settings/supplier-setting/supplier-general-settings.md): Qui puoi personalizzare il **Portale fornitori** caricando il logo della tua azienda—visualizzato nell'intestazione di tutti i modelli di e-mail—e gestendo documenti legali come i Termini di utilizzo e l'Informativa sulla privacy.
 

@@ -8,7 +8,7 @@ questo periodo._
 
 ---
 
-## Highlights
+## Novità principali
 
 - **Deploy senza downtime, in tutta la flotta.** API, Auto Accounting,
   Docflow, Extraction, OCR e PO Match ora si arrestano in modo pulito quando

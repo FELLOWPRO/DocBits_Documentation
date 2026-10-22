@@ -18,7 +18,7 @@ Questa norma internazionale definisce i requisiti per stabilire, implementare, m
 
 {% file src="../../.gitbook/assets/FELLOWPRO-ISO27001-Client-Report-2025.pdf" %}
 
-## 2. SOC 1 (Service Organization Control 1)
+## 2. SOC 1 (Controllo del fornitore di servizi 1)
 
 <figure><img src="../../.gitbook/assets/certifications2.avif" alt=""><figcaption></figcaption></figure>
 
@@ -30,7 +30,7 @@ I rapporti SOC 1 sono progettati per le organizzazioni che devono dimostrare l'e
 
 {% file src="../../.gitbook/assets/FELLOWPRO-SOC1-Type2-Report-2025.pdf" %}
 
-## 3. SOC 2 (Service Organization Control 2)
+## 3. SOC 2 (Controllo del fornitore di servizi 2)
 
 <figure><img src="../../.gitbook/assets/certifications3.png" alt=""><figcaption></figcaption></figure>
 
@@ -42,7 +42,7 @@ SOC 2 si concentra sui controlli di un'organizzazione di servizi rilevanti per l
 
 {% file src="../../.gitbook/assets/FELLOWPRO-SOC2-Type2-Report-2026.pdf" %}
 
-## 4. GDPR (General Data Protection Regulation) Compliance
+## 4. Conformità al GDPR (regolamento generale sulla protezione dei dati).
 
 <figure><img src="../../.gitbook/assets/certifications4.png" alt=""><figcaption></figcaption></figure>
 

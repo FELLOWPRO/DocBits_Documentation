@@ -30,7 +30,7 @@ ebInterface 6.1 è l'ultima versione dello standard austriaco per la fatturazion
 
 ## Anteprima predefinita
 
-<figure><img src="austria-ebinterface-preview.png" alt="Anteprima fattura Austria ebInterface 6.1 in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura AUSTRIA EBINTERFACE 6.1</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Anteprima fattura Austria ebInterface 6.1 in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura AUSTRIA EBINTERFACE 6.1</p></figcaption></figure>
 
 ## Mappatura dei campi
 

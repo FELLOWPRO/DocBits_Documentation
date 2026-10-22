@@ -8,7 +8,7 @@ I servizi non elencati non hanno avuto modifiche visibili ai clienti._
 
 ---
 
-## Highlights
+## Novità principali
 
 - **Autenticazione a due fattori.** Gli account DocBits possono ora essere
   protetti con un secondo fattore: un'app di autenticazione (TOTP), un codice

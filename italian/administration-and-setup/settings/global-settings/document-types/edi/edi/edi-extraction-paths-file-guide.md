@@ -52,8 +52,8 @@ Puoi anche utilizzare funzioni XPath (es. `sum()`) ed espressioni per calcolare 
 
 Copy
 
-```
-jsonCopyEdit"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
+```json
+"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
 ```
 
 ## 5. Funzione Anteprima (Valutazione Estrazione)
@@ -82,3 +82,13 @@ Una guida video per questo tipo di file è disponibile sulla [pagina dei Video.]
 ## Regole effettivamente utilizzate e attivazione
 
 Se una nota di credito elettronica appare come Invoice, seguite la [guida alla diagnosi della classificazione](../credit-note-recognized-as-invoice.md). Descrive la sorgente personalizzata o predefinita effettivamente utilizzata, i codici del tipo, Extraction Paths e l’attivazione in sicurezza.
+
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-it.png" alt="Formato EDI esistente con i quattro attributi configurati."><figcaption><p>Formato EDI esistente con i quattro attributi configurati.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-extraction-paths-it.png" alt="Attributo EXTRACTIONPATHS attivo: configurazione JSON contenente espressioni XPath di estrazione."><figcaption><p>Attributo EXTRACTIONPATHS attivo: configurazione JSON contenente espressioni XPath di estrazione.</p></figcaption></figure>
+
+
+Le viste mostrano una configurazione e una versione esistenti. Le impostazioni variano in base al tipo di documento e al formato. Convalidare le modifiche in una bozza prima dell’attivazione.
+
+Nella versione dell’interfaccia illustrata, l’intestazione Version del pannello delle versioni resta in inglese. Gli identificatori tecnici degli attributi e il codice di configurazione restano invariati.

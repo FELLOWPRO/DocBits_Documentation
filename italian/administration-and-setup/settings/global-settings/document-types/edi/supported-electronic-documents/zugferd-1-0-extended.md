@@ -35,5 +35,5 @@ Il profilo Extended di ZUGFeRD 1.0 è il profilo più completo e supporta ulteri
 ## Correlati
 
 * [Configurazione di ZUGFeRD](../zugferd/)
-* [Mappatura dei campi ZUGFeRD](../zugferd/versions/)
+* [Mappatura dei campi ZUGFeRD](../zugferd/README.md)
 * [Documenti elettronici supportati](./)

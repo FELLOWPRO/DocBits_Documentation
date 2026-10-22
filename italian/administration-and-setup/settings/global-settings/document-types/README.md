@@ -1,7 +1,7 @@
-# Document Types
+# Tipi di documenti
 
 {% embed url="https://youtu.be/pFz_6tvNlU4" %}
-DocBits Document Types Explained: Create, Configure & Assign Processing Settings
+DocBits Spiegazione dei tipi di documento: crea, configura e assegna impostazioni di elaborazione
 {% endembed %}
 
 <figure><img src="../../../../.gitbook/assets/document_types.png" alt="Document Types"><figcaption><p>Pagina Document Types</p></figcaption></figure>
@@ -10,7 +10,7 @@ DocBits Document Types Explained: Create, Configure & Assign Processing Settings
 
 La pagina Document Types elenca tutti i tipi di documento riconosciuti ed elaborati da DocBits. È divisa in due sezioni:
 
-* **Default Document Types**: tipi preconfigurati forniti da DocBits (Invoice, Credit Note, Delivery Note, Order Confirmation, Contract, ZUGFeRD, ecc.). Non possono essere eliminati.
+* **Tipi Documento Default**: tipi preconfigurati forniti da DocBits (Fattura, Nota di Credito, Nota di Consegna, Conferma d'Ordine, Contratto, ZUGFeRD, ecc.). Non possono essere eliminati.
 * **Custom Document Types**: tipi che crei per le esigenze specifiche della tua attività. Possono essere modificati ed eliminati.
 
 ## Controlli per tipo di documento
@@ -31,7 +31,7 @@ Sotto ogni tipo di documento puoi accedere alle seguenti schede di configurazion
 |-----|-------------|
 | **Labels** | Gestisce le etichette visualizzate e le traduzioni per il tipo di documento. |
 | **Edit layout** | Modifica l'aspetto del documento nella vista di validazione, comprese le posizioni dei campi. |
-| **Document Sub Types** | Configura le sottocategorie per questo tipo di documento (ad es. diversi formati di fattura). |
+| **Sottotipi documento** | Configura le sottocategorie per questo tipo di documento (ad es. diversi formati di fattura). |
 | **Table columns** | Personalizza quali colonne di dati compaiono nella tabella delle righe. |
 | **Fields** | Gestisce i campi di dati estratti dal documento (aggiungere, modificare o rimuovere campi). |
 | **Model Training** | Configura e addestra il modello IA usato per riconoscere ed estrarre i dati. |
@@ -39,7 +39,7 @@ Sotto ogni tipo di documento puoi accedere alle seguenti schede di configurazion
 | **Scripts** | Scrivi script di elaborazione personalizzati che vengono eseguiti durante l'elaborazione del documento. |
 | **E-Doc** | Configura gli standard dei documenti elettronici (XRechnung, ZUGFeRD, EDI, FatturaPA). |
 
-## Custom Validation Rules
+## Regole di convalida personalizzate
 
 Apri un tipo di documento e seleziona **Custom Validation Rules** per gestirne le regole di validazione. Per riutilizzare una regola esistente senza ricrearla, segui [Duplicate a Custom Validation Rule](duplicate-a-custom-validation-rule.md). La guida spiega il nome della regola, la chiave della regola e i controlli di conferma.
 

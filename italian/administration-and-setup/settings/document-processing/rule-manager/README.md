@@ -38,7 +38,7 @@ Questa sezione offre una spiegazione approfondita delle regole di risoluzione de
 
 • created_at & updated_at: data e ora di creazione e dell'ultimo aggiornamento del file.
 
-### 2. Export Configuration
+### 2. Configurazione dell’esportazione
 
 La sezione di configurazione dell'esportazione definisce il mapping tra i campi dati del sistema e i campi corrispondenti nei file di esportazione.
 
@@ -56,7 +56,7 @@ La sezione di configurazione dell'esportazione definisce il mapping tra i campi 
 
 • Debit Note & Credit Note: definisce i campi per la generazione di note di debito e di credito in caso di discrepanze.
 
-### 3. Conflict Resolution Rules
+### 3. Regole per la risoluzione dei conflitti
 
 Queste regole gestiscono le discrepanze tra i dati della fattura e i corrispondenti dati del PO. Ogni regola è composta da diversi elementi:
 

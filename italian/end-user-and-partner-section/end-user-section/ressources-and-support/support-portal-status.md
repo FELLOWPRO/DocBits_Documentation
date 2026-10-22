@@ -8,19 +8,19 @@ Per darti una migliore visibilità sulle tue richieste, ecco cosa significa cias
   – Il tuo ticket è stato esaminato ed è in coda per l'azione.
 * **In Progress**\
   – DocBits sta lavorando attivamente sul tuo problema.
-* **Waiting on Customer Response**\
+* **In attesa della risposta del cliente**\
   – Abbiamo bisogno di ulteriori informazioni o chiarimenti da parte tua. Vedrai questo quando abbiamo posto domande o richiesto file.
-* **Waiting for Customer Confirmation**\
+* **In attesa della conferma del cliente**\
   – Abbiamo implementato una soluzione o fornito indicazioni e stiamo aspettando che tu confermi che il problema è risolto.
-* **Waiting on Product Team**\
+* **In attesa del team del prodotto**\
   – La tua richiesta è un suggerimento per una funzionalità o riguarda un problema di prodotto noto ed è stata registrata per la roadmap del team Prodotto.
 * **Closed – Resolved**\
   – Il problema è completamente risolto e confermato, oppure non è necessaria ulteriore azione.
-* **Closed – No Response**\
+* **Chiuso – Nessuna risposta**\
   – Dopo diversi solleciti senza risposta, chiudiamo il ticket. Puoi sempre riaprirlo rispondendo.
-* **Closed – Known Issue**\
+* **Chiuso – Problema noto**\
   – Questo ticket tiene traccia di un bug di prodotto noto che è già nel nostro backlog. È chiuso qui ma rimane visibile nella nostra pianificazione interna.
-* **Closed – Logged as Idea**\
+* **Chiuso – Registrato come Idea**\
   – Il tuo suggerimento è stato annotato per una futura considerazione da parte del nostro team Prodotto.
 * **Duplicate**\
   – Abbiamo unito questo ticket in uno esistente che copre lo stesso problema.

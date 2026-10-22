@@ -1,7 +1,7 @@
 # Costruttore di Layout
 
 {% embed url="https://youtu.be/-m45XGiIeig" %}
-DocBits Layout Builder Tutorial: Create Custom Document Layouts for Faster, Cleaner Validation
+DocBits Tutorial per la creazione di layout: crea layout di documenti personalizzati per una convalida più rapida e pulita
 {% endembed %}
 
 ## Accesso al Layout Builder

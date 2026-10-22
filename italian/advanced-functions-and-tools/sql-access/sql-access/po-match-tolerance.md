@@ -1,4 +1,4 @@
-# PO match tolerance
+# Tolleranza di abbinamento degli ordini di acquisto
 
 ## Tabella `public.po_match_tolerance`
 
@@ -12,8 +12,8 @@
 * `unit_price_tolerance`: double precision
 * `quantity_tolerance`: double precision
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: timestamp con fuso orario
+* `last_modified_on`: timestamp con fuso orario
 * `is_deleted`: boolean
 * `unit_price_tolerance_type`: interno
 * `quantity_tolerance_type`: interno

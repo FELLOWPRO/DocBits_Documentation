@@ -77,7 +77,7 @@ Due opzioni controllano la frequenza con cui la regola viene applicata:
 | Opzione | Effetto |
 | --- | --- |
 | **Eseguire una sola volta per documento** | Normalmente le regole vengono eseguite di nuovo a ogni salvataggio. Con questa opzione attiva, la regola si applica **al massimo una volta** a un documento e poi ha finito con esso. Un'esecuzione in cui le condizioni non corrispondono non conta, quindi la regola può ancora applicarsi a un salvataggio successivo. Necessaria per i passaggi che cambierebbero di nuovo il valore a ogni salvataggio (vedi [Idempotenza](#esecuzione-singola-e-idempotenza)) e per le regole di tabella che non devono ricostruire di nuovo le righe. |
-| **Run after lookup population (before PO match)** | *(versioni più recenti)* Esegue la regola in una passata aggiuntiva dopo che i dati di lookup (ad esempio i dati anagrafici del fornitore) sono stati compilati e prima del matching degli ordini di acquisto. Usala quando la regola ha bisogno di un valore fornito da un lookup. La regola viene comunque eseguita anche nelle fasi consuete; una regola a esecuzione singola con questa opzione attende questa passata invece di essere eseguita subito dopo l'estrazione. |
+| **Esegui dopo la ricerca della popolazione (prima della corrispondenza di PO)** | *(versioni più recenti)* Esegue la regola in una passata aggiuntiva dopo che i dati di lookup (ad esempio i dati anagrafici del fornitore) sono stati compilati e prima del matching degli ordini di acquisto. Usala quando la regola ha bisogno di un valore fornito da un lookup. La regola viene comunque eseguita anche nelle fasi consuete; una regola a esecuzione singola con questa opzione attende questa passata invece di essere eseguita subito dopo l'estrazione. |
 
 ### La pipeline
 
@@ -93,7 +93,7 @@ Due opzioni controllano la frequenza con cui la regola viene applicata:
 
 | Passaggio | Impostazioni | Esempio input → output |
 | --- | --- | --- |
-| **Cambiare il caso** (Change case) | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
+| **Cambiare il caso** (Change case) | UPPERCASE, minuscolo, titolo maiuscolo, prima maiuscolo | `inv-4711` → `INV-4711` |
 | **Ordinare** (Trim) | lato (entrambi, sinistro, destro); caratteri (vuoto = spazi bianchi) | `  4711 ` → `4711`; con caratteri `0` e lato sinistro: `004711` → `4711` |
 | **Pad** | lunghezza, carattere di riempimento, lato | lunghezza 10, `0`, sinistra: `4711` → `0000004711` |
 | **Troncare** | lunghezza massima | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
@@ -173,7 +173,7 @@ Se la fattura riporta `Art.-Nr. ab-12/3` e l'ordine di acquisto ha `AB123`, le r
 | Rimuovere spazi e punti dalla partita IVA | Header *Supplier Tax ID* | sempre | Igienizzare: mantieni alfanumerici |
 | Rimuovere il prefisso dell'articolo | Colonna *ITEM_NUMBER* | sempre | Apporre: rimuovi prefisso `Art.-Nr. ` |
 | Numeri fornitore a 10 cifre | Header *Supplier ID* | sempre | Ordinare → Pad lunghezza 10 con `0`, sinistra |
-| Estrarre il numero PO da un testo di riferimento | Header *Purchase Order*, lettura da un altro campo | solo quando *Purchase Order is empty* | Extract `PO[- ]?(\d+)`, gruppo 1 |
+| Estrarre il numero PO da un testo di riferimento | Header *Purchase Order*, lettura da un altro campo | solo quando *L'ordine di acquisto è vuoto* | Extract `PO[- ]?(\d+)`, gruppo 1 |
 | Usare sempre un'unica valuta per un fornitore | Header *Currency* | solo quando *Supplier ID is 10040* | Fix value `CHF` |
 | Rimuovere un valore estratto in modo errato | Header *Discount Term* | solo quando *Supplier ID is 20723* | Clear |
 | Base prezzo per unità | Colonna *UNIT_PRICE_PER* | solo quando *row.UNIT_PRICE_PER is empty* | Fix value `1` |
@@ -227,7 +227,7 @@ Le regole di tabella e di colonna modificano ciò che vede il matcher PO:
 
 Con **Registra l’esecuzione** (Log execution) attivo, ogni applicazione della regola viene scritta in **Tipi di Documento → (tipo di documento) → Registri**, con l'esito (applicata, nessuna modifica, saltata), il documento e — per le regole saltate — la traccia della condizione che ne spiega il motivo. Vedi [Leggere la traccia della condizione nei log](rule-conditions-applies-when.md#leggere-la-traccia-della-condizione-nei-log).
 
-## Best practice
+## Buone pratiche
 
 * **Uno scopo per regola.** "Pulisci il numero fattura" e "Mappa i codici unità" sono due regole, non una.
 * **Costruisci con l'anteprima dal vivo**, usando valori reali copiati dai documenti, compresi quelli insoliti (spazi, minuscole, prefissi).
@@ -245,7 +245,7 @@ Con **Registra l’esecuzione** (Log execution) attivo, ogni applicazione della 
 | Una tabella ottiene una riga in più a ogni salvataggio | Un passaggio **Aggiungere una riga** senza **Cancella tutte le righe** prima. Aggiungi prima il passaggio di cancellazione, oppure attiva l'esecuzione singola. |
 | L'abbinamento dell'ordine di acquisto si perde dopo il salvataggio | Una regola di tabella ha sostituito le righe abbinate. Il motivo nel documento indica la regola; fai in modo che la regola riproduca le stesse righe, oppure impostala sull'esecuzione singola. |
 | Una regola di matching non viene mai eseguita dopo la trasformazione | La regola ha cambiato il numero di righe; modifica la condizione di attivazione della regola di matching. |
-| La regola ha bisogno di un valore dei dati anagrafici del fornitore, ma è ancora vuoto | Attiva **Run after lookup population (before PO match)**. |
+| La regola ha bisogno di un valore dei dati anagrafici del fornitore, ma è ancora vuoto | Attiva **Esegui dopo la ricerca popolazione (prima della corrispondenza di PO)**. |
 | Una data non viene riformattata | Reformat date si aspetta `YYYY-MM-DD` come input. |
 
 ## Correlati

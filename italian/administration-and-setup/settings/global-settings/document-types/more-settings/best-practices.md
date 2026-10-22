@@ -1,4 +1,4 @@
-# Best practice
+# Buone pratiche
 
 ## Ecco alcune raccomandazioni collaudate per utilizzare le impostazioni in modo efficace, ottimizzare l'elaborazione dei documenti, migliorare l'accuratezza dei dati e garantire la conformità.
 

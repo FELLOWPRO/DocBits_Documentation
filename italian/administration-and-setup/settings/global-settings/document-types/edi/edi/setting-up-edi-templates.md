@@ -2,35 +2,22 @@
 hidden: true
 ---
 
-# Impostazione dei Modelli EDI
+# Configurare gli attributi EDI
 
-## Ecco le istruzioni passo dopo passo per impostare i modelli EDI:
+Selezionare il formato effettivo del messaggio e il tipo di documento. Controllare gli attributi esistenti e le versioni attive prima di modificare la configurazione.
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_sso_cert_metadata.png" alt="Docbits Sso Cert Metadata"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-it.png" alt="Formato EDI esistente con i quattro attributi configurati."><figcaption><p>Formato EDI esistente con i quattro attributi configurati.</p></figcaption></figure>
 
-**Definire il descrittore di struttura:**
+Definire segmenti, elementi e cicli in un descrittore di struttura JSON. Provare messaggi rappresentativi e controllare l’XML intermedio generato.
 
-* Identificare il tipo di messaggio EDI con cui si sta lavorando, ad esempio ANSI X12, EDIFACT o un formato personalizzato.
-* Determinare i segmenti, gli elementi e i sottoelementi all'interno della struttura EDI.
-* Creare un descrittore di struttura che rifletta accuratamente la gerarchia e l'organizzazione del messaggio EDI. Ciò può essere fatto utilizzando una sintassi speciale come XML o JSON.
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-detail-it.png" alt="Attributo STRUCTUREDESCRIPTOR attivo: descrittore di struttura JSON nell’editor di sola lettura."><figcaption><p>Attributo STRUCTUREDESCRIPTOR attivo: descrittore di struttura JSON nell’editor di sola lettura.</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_sso_access_settings.png" alt="Docbits Sso Access Settings" width="273"><figcaption></figcaption></figure>
+Utilizzare TRANSFORMATION con XSLT per convertire l’XML intermedio nell’XML standard richiesto. Configurare PREVIEW separatamente per la presentazione; XSLT non elabora direttamente il JSON.
 
-**Impostare le trasformazioni:**
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-transformation-it.png" alt="Attributo TRANSFORMATION attivo: codice sorgente XSLT per trasformare l’XML intermedio."><figcaption><p>Attributo TRANSFORMATION attivo: codice sorgente XSLT per trasformare l’XML intermedio.</p></figcaption></figure>
 
-* Utilizzare uno strumento o un software appropriato che supporti le trasformazioni EDI, come un traduttore EDI.
-* Definire le regole per la conversione del messaggio EDI nel formato interno del proprio sistema e viceversa.
-* Configurare le trasformazioni per interpretare ed elaborare segmenti, elementi e sottoelementi in base ai requisiti del proprio sistema. Testare accuratamente le trasformazioni per assicurarsi che i dati siano interpretati e formattati correttamente.
+Configurare EXTRACTIONPATHS come JSON con espressioni XPath per l’XML risultante. Controllare campi, righe e importi con esempi reali. Validare una bozza prima dell’attivazione; le schermate mostrano una configurazione attiva esistente.
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_sso_idp_config.png" alt="Docbits Sso Idp Config" width="268"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-extraction-paths-it.png" alt="Attributo EXTRACTIONPATHS attivo: configurazione JSON contenente espressioni XPath di estrazione."><figcaption><p>Attributo EXTRACTIONPATHS attivo: configurazione JSON contenente espressioni XPath di estrazione.</p></figcaption></figure>
 
-**Configurare i percorsi di estrazione per un'estrazione e una formattazione dei dati ottimali:**
-
-* Identificare i campi dati da estrarre e trasferire al proprio sistema interno.
-* Definire percorsi o regole di estrazione per estrarre i campi dati rilevanti dai messaggi EDI.
-* Considerare le diverse variazioni e formati che possono verificarsi nei messaggi EDI in entrata e assicurarsi che i percorsi di estrazione siano sufficientemente flessibili per adattarvisi.
-* Convalidare i risultati dell'estrazione per assicurarsi che vengano estratti i campi dati corretti e che siano formattati correttamente.
-
-<figure><img src="../../../../../../.gitbook/assets/docbits_edi_validate_extraction.png" alt="Docbits Edi Validate Extraction" width="92"><figcaption></figcaption></figure>
-
-Definendo attentamente il descrittore di struttura, impostando le trasformazioni e configurando i percorsi di estrazione, è possibile garantire che l'estrazione e la formattazione dei dati vengano eseguite in modo ottimale nei modelli EDI. Ciò contribuirà a migliorare l'efficienza e l'accuratezza delle proprie comunicazioni aziendali elettroniche.
+Nella versione dell’interfaccia illustrata, l’intestazione Version del pannello delle versioni resta in inglese. Gli identificatori tecnici degli attributi e il codice di configurazione restano invariati.

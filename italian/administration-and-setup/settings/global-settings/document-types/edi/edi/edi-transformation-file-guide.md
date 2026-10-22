@@ -66,3 +66,13 @@ Una guida video per questo tipo di file è disponibile nella [pagina dei Video.]
 ## Regole effettivamente utilizzate e attivazione
 
 Le regole specifiche dell’organizzazione hanno la precedenza su quelle predefinite per il formato eDoc rilevato. Verificate la TRANSFORMATION attiva e verificate quale nodo fornisce invoice_type nell’XML trasformato; il percorso dipende dal formato. Save salva una bozza; usate il segno di spunta per attivarla dopo i test. Il rendering di Preview non dimostra il tipo di documento memorizzato. Consultate la [guida alla diagnosi della classificazione](../credit-note-recognized-as-invoice.md) per i codici 381/261, gli script successivi e le precauzioni prima della rielaborazione.
+
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-it.png" alt="Formato EDI esistente con i quattro attributi configurati."><figcaption><p>Formato EDI esistente con i quattro attributi configurati.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-transformation-it.png" alt="Attributo TRANSFORMATION attivo: codice sorgente XSLT per trasformare l’XML intermedio."><figcaption><p>Attributo TRANSFORMATION attivo: codice sorgente XSLT per trasformare l’XML intermedio.</p></figcaption></figure>
+
+
+Le viste mostrano una configurazione e una versione esistenti. Le impostazioni variano in base al tipo di documento e al formato. Convalidare le modifiche in una bozza prima dell’attivazione.
+
+Nella versione dell’interfaccia illustrata, l’intestazione Version del pannello delle versioni resta in inglese. Gli identificatori tecnici degli attributi e il codice di configurazione restano invariati.

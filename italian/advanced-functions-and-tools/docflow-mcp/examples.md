@@ -224,7 +224,7 @@ Se le tue card partner si trovano in un repository GitHub, puoi importarle diret
 }
 ```
 
-Per repository privati, includi un token GitHub:
+Per repository privati, include un token GitHub:
 
 ```json
 {

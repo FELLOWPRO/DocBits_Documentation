@@ -137,7 +137,7 @@ Ora segui un documento concreto — la fattura **INV-4711**, che **Maria ha cari
 
 **Maria (proprietaria *e* assegnataria di INV-4711):**
 
-* ✅ Vede INV-4711 nell'elenco della dashboard *(Elenco = Everyone)*.
+* ✅ Vedi INV-4711 nell'elenco della dashboard *(Elenco = Everyone)*.
 * ✅ Lo apre *(Visualizza = Everyone)*.
 * ✅ Modifica il nome del fornitore e le righe *(Modifica = Owner & Assignee — è la proprietaria)*.
 * 🔒 Vede `TOTAL_AMOUNT`, ma il campo è in grigio e non può modificarlo *(Sola lettura)*.

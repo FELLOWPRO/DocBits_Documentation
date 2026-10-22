@@ -2,7 +2,7 @@
 description: Come importare un Purchase Order BOD in DocBits manualmente tramite API
 ---
 
-# Importare Ordini di Acquisto (Purchase Order BOD)
+# Importare Ordini di Acquisto (Ordine di Acquisto BOD)
 
 Gli ordini di acquisto arrivano normalmente in DocBits in automatico attraverso il flusso di dati ION. Questa pagina descrive come inviare un **Purchase Order BOD** manualmente — utile quando si vuole reimportare un ordine, caricare un lotto che non è mai arrivato o testare una nuova mappatura prima di attivare il flusso automatico.
 
@@ -186,7 +186,7 @@ Se qualcosa non andava nella richiesta, si ottiene `"success": false` insieme a 
 
 ### 5. Verificare che i dati siano arrivati
 
-* In DocBits, andare in **Settings → Document Processing → Lookup Master Data**.
+* In DocBits, vai in **Impostazioni → Elaborazione documenti → Ricerca dati anagrafici**.
 * Selezionare **BOD Input Data** a sinistra, poi aprire la scheda **Purchase Order**.
 * Cercare il numero d'ordine del proprio BOD.
 

@@ -30,7 +30,7 @@ AUNZ PINT è l'implementazione australiana/neozelandese del modello di fatturazi
 
 ## Anteprima predefinita
 
-<figure><img src="aunz-pint-preview.png" alt="Anteprima fattura AUNZ PINT in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura AUNZ PINT</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="Anteprima fattura AUNZ PINT in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura AUNZ PINT</p></figcaption></figure>
 
 ## Mappatura dei campi
 

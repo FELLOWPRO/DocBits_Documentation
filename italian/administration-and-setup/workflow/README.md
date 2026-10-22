@@ -2,13 +2,13 @@
 description: DocBits Workflow Engine
 ---
 
-# Workflow
+# Flusso di lavoro
 
 <figure><img src="../../.gitbook/assets/docbits_workflow_3.png" alt="DocBits Flusso di lavoro 3"><figcaption></figcaption></figure>
 
 ## Motore di Workflow DocBits: Semplificazione dell'Automazione dei Processi
 
-### Comprendere e preparare i workflow <a id="workflow-orientation"></a>
+### Comprendere e preparare il flusso di lavoro <a id="workflow-orientation"></a>
 
 Scopra il vero account di test DocBits: otto esecuzioni nella dashboard, due workflow salvati con ordine di esecuzione 100/200 e tre scenari di test superati. Il tutorial spiega anche i workflow Standard e Advanced, le licenze, i modelli e il Card SDK.
 

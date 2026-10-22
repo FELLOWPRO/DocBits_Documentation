@@ -1,7 +1,7 @@
 # Supporto Utente
 
 {% embed url="https://youtu.be/fQUIrp-qz9c" %}
-DocBits Support Ticket Tutorial: Report Bugs, Attach Files & Get Help Faster
+DocBits Tutorial sui ticket di supporto: segnala bug, allega file e ricevi assistenza più velocemente
 {% endembed %}
 
 ### Supporto Utente <a href="#ikpwh4qbrq82" id="ikpwh4qbrq82"></a>

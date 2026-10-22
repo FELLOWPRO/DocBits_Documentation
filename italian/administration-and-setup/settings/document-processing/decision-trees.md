@@ -19,7 +19,7 @@ Gli alberi decisionali sono una funzionalità potente che consente di automatizz
 
 L'elenco degli alberi decisionali mostra tutti gli alberi decisionali configurati. Aprilo da **Settings → Document Processing → Decision Trees**.
 
-<figure><img src="../../../.gitbook/assets/decision_trees.png" alt="Elenco degli alberi decisionali"><figcaption><p>L'elenco degli alberi decisionali</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-decision-trees-it.png" alt="Elenco degli alberi decisionali con nomi e dati dell’organizzazione nascosti. Le righe mascherate non indicano un elenco vuoto."><figcaption><p>Elenco degli alberi decisionali con nomi e dati dell’organizzazione nascosti. Le righe mascherate non indicano un elenco vuoto.</p></figcaption></figure>
 
 Ogni voce mostra:
 

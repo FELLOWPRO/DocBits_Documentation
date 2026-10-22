@@ -1,4 +1,4 @@
-# Additional charge costing element
+# Elemento di costo dell’addebito aggiuntivo
 
 ## Tabella `public.additional_charge_costing_element`
 

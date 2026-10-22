@@ -14,7 +14,7 @@ La pagina mostra:
 * **Esempi recenti** (Recent examples): documenti di esempio, in due schede: **Needed attention** (hanno richiesto attenzione) e **Went touchless** (sono passati in modalità touchless).
 * **Diagnosi del fornitore con l'IA** (Diagnose supplier with AI): analizza tutti i cluster del fornitore (amministratori).
 
-Una breve nota spiega una pagina vuota, ad esempio: *5 documents from this supplier are still being processed and have no analysis result yet.* oppure *All 40 completed documents from this supplier ran touchless: there is nothing to diagnose.*
+Una breve nota spiega una pagina vuota, ad esempio: *5 documenti di questo fornitore sono ancora in fase di elaborazione e non hanno ancora risultati di analisi.* oppure *Tutti i 40 documenti completati di questo fornitore sono stati eseguiti senza intervento: non c'è nulla da diagnosticare.*
 
 ### Cluster di problemi
 
@@ -24,7 +24,7 @@ Un **cluster** raggruppa i documenti di un fornitore che si sono fermati per lo 
 
 **Esempio di cluster (illustrativo).**
 
-* **Titolo**: *Required field missing* alla fase *Field Validation*
+* **Titolo**: *Campo obbligatorio mancante* alla fase *Campo Validazione*
 * **Interessati**: 28 documenti. **Recuperabili**: 28 documenti. **Incremento atteso**: +2,8 pp
 * **Causa sospetta**: il fornitore stampa il numero d'ordine sotto la tabella, dove l'estrazione non cerca
 * **Cosa cambiare**: *Master data change*: aggiungi il layout di questo fornitore. **Apri** (Open) ti porta alla pagina di impostazioni giusta
@@ -34,10 +34,10 @@ Cosa mostra la scheda di un cluster:
 
 | Parte | Significato |
 | --- | --- |
-| **Primo blocco** (First blocker) e **fase** (stage) | Il motivo e la fase della pipeline in cui i documenti si fermano. I motivi sono più di 30, ad esempio *Supplier not identified*, *Purchase order not found*, *Unit price outside PO tolerance*, *Rejected by the ERP*, *E-invoice validation failed* |
-| **Interessati / Recuperabili / Incremento atteso** (Affected / Recoverable / Expected lift) | Quanti documenti, quanti si possono recuperare, quanti punti percentuali si otterrebbero |
+| **Primo blocco** (Primo bloccante) e **fase** (fase) | Il motivo e la fase della pipeline in cui i documenti si fermano. I motivi sono più di 30, ad esempio *Supplier not identified*, *Purchase order not found*, *Unit price outside PO tolerance*, *Rejected by the ERP*, *E-invoice validation failed* |
+| **Interessati / Recuperabili / Incremento atteso** (Interessato / Recuperabile / Incremento previsto) | Quanti documenti, quanti si possono recuperare, quanti punti percentuali si otterrebbero |
 | **Causa sospetta / Causa confermata** (Suspected cause / Confirmed cause) | Cosa ritiene DocBits (o cosa ha confermato una persona) essere il motivo |
-| **Prove** e **Prove mancanti** (Evidence, Missing evidence) | Su cosa si basa il risultato e cosa DocBits **non** ha potuto stabilire. Leggi le **Prove mancanti** prima di fidarti del resto |
+| **Prove** e **Prove mancanti** (Evidenza, Evidenza mancante) | Su cosa si basa il risultato e cosa DocBits **non** ha potuto stabilire. Leggi le **Prove mancanti** prima di fidarti del resto |
 | **Cosa cambiare** (What to change) | Passi concreti con link **Apri** (Open) alle impostazioni. Un'etichetta indica il tipo: *Configuration change*, *Master data change*, *Supplier template change*, *Process change*, *Supplier action needed*, *Not fixable* |
 | **Responsabile** (Owner) | DocBits, Cliente, Consulente, Fornitore o Non assegnato |
 | **Documenti di esempio** (Sample documents) | Documenti reali del cluster da guardare |

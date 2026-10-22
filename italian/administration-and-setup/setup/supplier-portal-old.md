@@ -37,7 +37,7 @@ Poi assegna semplicemente al gruppo un nome che descriva con precisione i fornit
 
 <div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fq9G7MzWkqzFzxQVoZpdp%2F9_Supplier_Groups_3.png?alt=media&#x26;token=230ba964-784c-4c2e-b611-addf95d9743e" alt="" width="375"><figcaption></figcaption></figure></div>
 
-**User and Supplier Group Mapping**
+**Mappatura Gruppi Utenti e Fornitori**
 
 Qui vengono mostrati tutti i gruppi di fornitori che hai creato, perché è qui che puoi assegnare gli utenti DocBits ai gruppi di fornitori creati.
 
@@ -49,7 +49,7 @@ Per assegnare un nuovo utente a un gruppo di fornitori, fai clic sul pulsante +N
 
 Seleziona dall'elenco a discesa l'utente che desideri assegnare al gruppo di fornitori, quindi fai clic su Add per assegnarlo.
 
-**Policy and Privacy Statement**
+**Politica e Informativa sulla privacy**
 
 Qui puoi caricare la tua informativa sulla privacy e sulle policy destinata ai fornitori che inviterai tramite il Supplier Portal. Per caricare un documento, fai semplicemente clic su Upload Document nell'angolo in alto a destra dello schermo.
 

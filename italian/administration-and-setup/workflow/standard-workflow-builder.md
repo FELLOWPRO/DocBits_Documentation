@@ -2,7 +2,7 @@
 
 Il builder **Flusso standard** è l'editor lineare basato su schede per automatizzare l'elaborazione dei documenti. Un workflow è composto da tre gruppi di schede — **Quando** (il trigger), **E** (condizioni aggiuntive) e **Allora** (le azioni da eseguire). Quando un documento soddisfa le condizioni When/And, le azioni Then vengono eseguite automaticamente.
 
-## Creare e testare uno Standard Workflow <a id="standard-workflow-tutorial"></a>
+## Creare e testare uno Flusso di lavoro standard <a id="standard-workflow-tutorial"></a>
 
 Crea uno Standard Workflow completo nella vera interfaccia DocBits: seleziona la fattura, verifica il numero e un importo superiore a 1000, assegna un revisore e modifica lo stato. Salva la regola, esegui tre scenari di test e verifica il risultato effettivo sul documento.
 

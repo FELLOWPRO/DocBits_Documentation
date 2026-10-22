@@ -30,7 +30,7 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 - Le regole di selezione del layout ottengono le stesse condizioni annidate e un
   log di esecuzione facoltativo. La selezione del layout funziona
   indipendentemente dalla provenienza del documento.
-- Manage Layouts, Custom Validation Rules e Transformation Rules non richiedono
+- Gestisci layout, regole di validazione personalizzate e regole di trasformazione non richieste
   più l'interruttore beta.
 - Regole di precedenza chiare per le etichette dei campi di intestazione e delle
   colonne di tabella. Gli utenti possono creare le proprie chiavi di traduzione
@@ -126,7 +126,7 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 - Più dettagli nel report Touchless, e la casella di controllo Touchless
   riflette l'impostazione salvata.
 
-**Dashboard, account e abbonamento**
+**Dashboard, conto e abbonamento**
 
 - La dashboard può contenere fino a 10.000 documenti per ricerca, e un filtro
   data personalizzato viene applicato correttamente.
@@ -147,7 +147,7 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 - Una packing list con più numeri di container viene esportata come un record
   per container.
 - La reimportazione di una receive delivery non fallisce più per una chiave
-  duplicata, e i BOD di receive delivery vengono applicati nell'ordine
+  duplicata, e i BOD di ricezione vengono applicati nell'ordine
   corretto.
 - Le mappature EDI per fattura, ordine di acquisto e conferma d'ordine sono
   aggiornate.
@@ -204,7 +204,7 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 
 ## R1.3 — Sandbox 1° giugno 2027 · Produzione 16 giugno 2027
 
-**Rule Manager di Auto Accounting**
+**Gestione regole di Auto Accounting**
 
 - Le regole assegnano automaticamente conti e dimensioni, con ambito per
   sotto-organizzazione e tipo di documento, con una schermata di audit che

@@ -61,13 +61,3 @@ Dies sind erwartete Rechenergebnisse. Die Aufnahme zeigt eine ungespeicherte Kon
 Prüfen Sie mit geeigneten Testdaten einen passenden Fall, einen unpassenden Fall und die Grenzwerte. Untersuchen Sie fehlende Felder, nichtnumerische Werte und Konfigurationsfehler gesondert. Kontrollieren Sie im Ausführungsprotokoll die tatsächlich verwendeten Werte, den Operator, die Toleranz und das Ergebnis.
 
 Wenn beide Beträge aus Belegfeldern stammen, verwenden Sie die separate Karte zum [Vergleich zweier Felder mit Toleranz](compare-two-fields-with-tolerance.md).
-
-## Admin-Beispielvideo
-
-Administrator, Büro und Stimme sind synthetisch erzeugt. Die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos.
-
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-reference-tolerance-admin/v4/de.mp4" %}
-
-[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-reference-tolerance-admin/v4/de.html)
-
-[Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-reference-tolerance-admin/v4/de.txt)

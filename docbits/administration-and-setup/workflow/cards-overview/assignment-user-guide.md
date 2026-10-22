@@ -345,58 +345,29 @@ Document passes through all three
 
 ### Card: ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP
 
-#### Purpose
+<!-- workflow-facility-example-direct-20261022 -->
 
-Assigns document to specific facility group
+Use this workflow action to assign a document by the locations of its matched purchase orders. In version 2, `group_name` is a text fragment matched against group names.
 
-#### When to Use
+Example: a synthetic document matches purchase order `DEMO-PO-100` with `location_id=BERLIN`. The configured groups are `Receiving BERLIN` and `Receiving MUNICH`. Enter `Receiving` as `group_name`. Matching is case-insensitive and requires both the text fragment and the purchase-order location in the group name.
 
-* Document for specific warehouse/facility
-* Facility-based operations
-* Location-specific processing
+Expected: the document is assigned directly to `Receiving BERLIN`, provided its status permits assignment. Without a matched purchase order or matching group, this is not a successful assignment; inspect the workflow logs. Avoid ambiguous group names: if several groups match, this card does not guarantee a stable selection order.
 
-#### Example
-
-```
-Shipment notification
-
-Assign to: Berlin Warehouse Team
-    ↓
-Berlin warehouse processes shipment
-    ↓
-Or
-
-Assign to: Munich Warehouse Team
-    ↓
-Munich warehouse processes shipment
-```
+This is an illustrative configuration; no workflow was executed.
 
 ***
 
 ### Card: ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP\_SEQUENTIAL
 
-#### Purpose
+<!-- workflow-facility-example-sequential-20261022 -->
 
-Assigns sequentially across facilities
+Use this workflow action to add the matching location groups to the sequential assignment queue at a configured priority. It does not model a shipment moving through factories or warehouses.
 
-#### When to Use
+Example: use the same synthetic purchase order, location and groups as above. Set `group_name=Receiving` and priority `value=10`. Version 2 reads the location from the matched purchase order and finds `Receiving BERLIN`.
 
-* Multi-location processing
-* Shipment passes through facilities
-* Location-based workflow
+Expected: an assignment request for that group is added to the queue at priority `10`. If several groups match, they receive the same priority; their names do not establish a processing order. Verify the queue and subsequent approval separately. A missing match does not create a successful assignment.
 
-#### Example
-
-```
-Manufacturing Order:
-
-Step 1: Factory A (Manufacturing) - Build product
-Step 2: Quality Center (Testing) - Test product
-Step 3: Distribution Center (Packing) - Package
-Step 4: Warehouse (Storage) - Store
-
-Document/shipment passes through each
-```
+This is an illustrative configuration; no workflow was executed.
 
 ***
 

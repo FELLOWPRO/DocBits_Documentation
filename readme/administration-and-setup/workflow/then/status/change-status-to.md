@@ -48,7 +48,7 @@ La carte de workflow **« Change Status »** offre une approche rationalisée po
 
 **Où:** Concepteur de workflows standard → Dans ce cas → Statut → Modifier le statut en.
 
-**Configuration:** Sélectionnez la version 3 de `staus_change`, le statut En attente d’approbation (`validated_pending_approval`) et le déclenchement des autres workflows sur `false` (`trigger_docflow=false`). Utilisez une facture synthétique isolée dont les contrôles précédents sont satisfaits.
+**Configuration:** Sélectionnez la version 3 de `staus_change`, le statut Validé en attente d'approbation (`validated_pending_approval`) et le déclenchement des autres workflows sur `false` (`trigger_docflow=false`). Utilisez une facture synthétique isolée dont les contrôles précédents sont satisfaits.
 
 **Résultat attendu et contre-exemple:** Une mise à jour autorisée et réussie place le document dans le statut choisi. Si une condition précédente est fausse, cette action n’est pas atteinte et ne modifie aucun statut. Une mise à jour refusée ou échouée de l’API n’est pas un succès : vérifiez le statut réel et les journaux. La carte n’effectue pas elle-même une exportation.
 

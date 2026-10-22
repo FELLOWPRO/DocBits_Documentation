@@ -1,11 +1,11 @@
 # Resolução de Problemas de Extração de Tabelas
 
 {% embed url="https://youtu.be/LFw-JXqYWzw" %}
-DocBits Tables Explained: AI Table Extraction vs Standard Extraction (When to Use Which)
+Tabelas do DocBits: extração de tabelas com IA ou extração padrão — quando usar cada uma
 {% endembed %}
 
 {% embed url="https://youtu.be/5XqEP-5fq6M" %}
-DocBits OCR & E-Text Explained: OCR View, Debug Mode, Quality Settings, Deskew & Header Extraction
+OCR e texto eletrónico no DocBits: vista OCR, modo de depuração, qualidade, correção de inclinação e extração de cabeçalho
 {% endembed %}
 
 ## **Passo 1: Abrir Visualização OCR para Resultados de Extração Ruins**

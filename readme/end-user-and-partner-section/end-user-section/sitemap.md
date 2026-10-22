@@ -6,7 +6,7 @@ O Mapa do Site é o índice completo e pesquisável de tudo o que o DocBits exp�
 
 Abra o Mapa do Site pela barra lateral (entrada perto do final) ou pressione <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> e escolha **Ver todos os resultados**. A URL direta é `/sitemap`.
 
-<figure><img src="../../.gitbook/assets/sitemap-overview.png" alt="Visão geral do Mapa do Site"><figcaption><p>Mapa do Site com visão geral de categorias e cabeçalho de pesquisa.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-sitemap-pt.png" alt="Catálogo de páginas no interface português. Os filtros de tipo de página estão traduzidos; a indicação de função User mantém-se em inglês na versão ilustrada."><figcaption><p>Catálogo de páginas no interface português. Os filtros de tipo de página estão traduzidos; a indicação de função User mantém-se em inglês na versão ilustrada.</p></figcaption></figure>
 
 ## Navegando pelo catálogo
 

@@ -11,7 +11,7 @@ Para configurar suas preferências, clique no Ícone do Usuário localizado no c
 **Idioma**
 
 {% embed url="https://youtu.be/h_knkUZkNyI" %}
-How to Change Language in DocBits (User Settings Tutorial)
+Como alterar o idioma no DocBits (tutorial das configurações do utilizador)
 {% endembed %}
 
 * **Selecionar Idioma Preferido:** Escolha seu idioma desejado entre as opções disponíveis.

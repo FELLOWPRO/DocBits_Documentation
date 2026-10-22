@@ -1,74 +1,74 @@
-# Test: Email Import and Handling Tests
+# Testes de importação e tratamento de e-mails
 
-## Purpose
+## Finalidade
 
-These tests ensure that our system can handle email importing correctly. This includes sending emails, receiving and moving them to specific folders, checking if they are read or unread, importing them into the system, and performing cleanup afterward.
+Estes testes verificam o tratamento da importação de e-mails: envio, receção, movimentação para pastas específicas, verificação do estado lido ou não lido, importação para o sistema e limpeza posterior.
 
-## Test Steps
+## Passos do teste
 
-1. **Setup:**
-   * **Get Environment Settings:** Load necessary details like email server information and credentials from environment variables.
-   * **Encrypt Email Password:** Securely encrypt the email password for safe usage.
-2. **Email Sending and Management:**
-   * **Send an Email:** Use an SMTP function to send an email with a specific subject and attachment.
-   * **Move the Email:** Use IMAP functions to move the email to a target folder.
-   * **List Folders:** Ensure the target folder exists.
-   * **Delete the Email:** Clean up by deleting the email from the folder.
-   * **Check Email Status:** Verify if the email is marked as read or unread.
-3.  **Test Sequence**
+1. **Preparação:**
+   * **Obter as configurações do ambiente:** carregar os dados necessários, como a informação do servidor de e-mail e as credenciais, a partir de variáveis de ambiente.
+   * **Cifrar a palavra-passe do e-mail:** cifrar a palavra-passe de forma segura para a sua utilização.
+2. **Envio e gestão de e-mails:**
+   * **Enviar um e-mail:** utilizar uma função SMTP para enviar um e-mail com assunto e anexo específicos.
+   * **Mover o e-mail:** utilizar funções IMAP para o mover para uma pasta de destino.
+   * **Listar pastas:** confirmar que a pasta de destino existe.
+   * **Eliminar o e-mail:** limpar os dados, eliminando o e-mail da pasta.
+   * **Verificar o estado do e-mail:** confirmar se está marcado como lido ou não lido.
+3.  **Sequência de teste**
 
-    **Initial Setup:**
+    **Preparação inicial:**
 
-    * **Check Connection:** Verify connection to the email server and get the connection ID.
-    * **Login Test:** Confirm that logging in with stored credentials works.
-    * **Folder Check:** Ensure the target folder exists on the email server.
+    * **Verificar a ligação:** confirmar a ligação ao servidor de e-mail e obter o identificador da ligação.
+    * **Testar o início de sessão:** confirmar que é possível iniciar sessão com as credenciais guardadas.
+    * **Verificar a pasta:** confirmar que a pasta de destino existe no servidor de e-mail.
 
-    **Email Operations:**
+    **Operações de e-mail:**
 
-    * **Send a Test Email:** Send an email with a specific subject.
-    * **Retrieve Email ID:** Get the ID of the sent email from the inbox.
-    * **Move the Email:** Move the email from the inbox to the target folder.
-    * **Check Email Status:** Ensure the email in the target folder is marked as unread.
+    * **Enviar um e-mail de teste:** enviar um e-mail com um assunto específico.
+    * **Obter o identificador do e-mail:** obter o identificador do e-mail enviado a partir da caixa de entrada.
+    * **Mover o e-mail:** mover o e-mail da caixa de entrada para a pasta de destino.
+    * **Verificar o estado do e-mail:** confirmar que o e-mail na pasta de destino está marcado como não lido.
 
-    **Email Importing:**
+    **Importação de e-mails:**
 
-    * **Fetch the Email:** Import the email from the target folder into our system.
-    * **Check Imported Email:** Ensure the imported email is correctly fetched and logged.
+    * **Obter o e-mail:** importar o e-mail da pasta de destino para o sistema.
+    * **Verificar o e-mail importado:** confirmar que foi obtido e registado corretamente.
 
-    **Log Verification:**
+    **Verificação dos registos:**
 
-    * **Check Import Log:** Verify that the subject of the sent email is recorded in the import log.
+    * **Verificar o registo de importação:** confirmar que contém o assunto do e-mail enviado.
 
-    **Cleanup:**
+    **Limpeza:**
 
-    * **Delete Imported Document:** Remove the document that was imported from the email.
-    * **Delete the Email:** Delete the sent and moved email from the folders to keep everything clean.
+    * **Eliminar o documento importado:** remover o documento importado do e-mail.
+    * **Eliminar o e-mail:** eliminar das pastas o e-mail enviado e movido para limpar os dados.
 
-## Detailed Explanation of Each Test
+## Explicação detalhada de cada teste
 
-* **Setup and Initialization:**
-  * **Initialize Shared Data:** Prepare shared data for tests.
-* **Email Connection Tests:**
-  * **Get Connection ID:** Check if we can connect to the email server and get an ID for the connection.
-  * **Login Verification:** Ensure that logging in to the email server works properly.
-* **Folder Verification Tests:**
-  * **Check Target Folder:** Make sure the target folder exists on the email server.
-  * **Verify Folder Listing:** Ensure the list of folders from the server matches our expectations.
-* **Email Sending and ID Retrieval:**
-  * **Send an Email:** Send a test email with a specific subject and attachment.
-  * **Get Email ID:** Retrieve the unique ID of this sent email from the inbox.
-* **Email Moving and Status Checking:**
-  * **Move Email to Folder:** Move the test email from the inbox to the target folder.
-  * **Check Unread Status:** Ensure the email is marked as unread after moving.
-* **Email Fetching and Response Validation:**
-  * **Fetch Email from Folder:** Import the email from the target folder into our system.
-  * **Validate Fetched Email:** Confirm that the fetched email is present in the response.
-* **Import Log Verification:**
-  * **Fetch Import Log:** Retrieve the log of imported emails.
-  * **Check Email Subject in Log:** Ensure the subject of the test email is present in the import log.
-* **Cleanup:**
-  * **Delete Imported Document:** Remove the document that was imported from the email.
-  * **Delete the Email:** Delete the test email from the inbox and the target folder to keep everything clean.
+* **Preparação e inicialização:**
+  * **Inicializar os dados partilhados:** preparar os dados partilhados dos testes.
+* **Testes de ligação ao e-mail:**
+  * **Obter o identificador da ligação:** verificar se é possível ligar ao servidor de e-mail e obter um identificador para a ligação.
+  * **Verificar o início de sessão:** confirmar que o início de sessão no servidor de e-mail funciona corretamente.
+* **Testes de verificação de pastas:**
+  * **Verificar a pasta de destino:** confirmar que existe no servidor de e-mail.
+  * **Verificar a listagem de pastas:** confirmar que a lista devolvida pelo servidor corresponde ao esperado.
+* **Envio de e-mails e obtenção de identificadores:**
+  * **Enviar um e-mail:** enviar um e-mail de teste com assunto e anexo específicos.
+  * **Obter o identificador do e-mail:** obter o identificador único do e-mail enviado a partir da caixa de entrada.
+* **Movimentação de e-mails e verificação do estado:**
+  * **Mover o e-mail para a pasta:** mover o e-mail de teste da caixa de entrada para a pasta de destino.
+  * **Verificar o estado não lido:** confirmar que o e-mail fica marcado como não lido depois de ser movido.
+* **Obtenção de e-mails e validação da resposta:**
+  * **Obter o e-mail da pasta:** importar o e-mail da pasta de destino para o sistema.
+  * **Validar o e-mail obtido:** confirmar que o e-mail está presente na resposta.
+* **Verificação do registo de importação:**
+  * **Obter o registo de importação:** consultar o registo dos e-mails importados.
+  * **Verificar o assunto no registo:** confirmar que o assunto do e-mail de teste consta do registo de importação.
+* **Limpeza:**
+  * **Eliminar o documento importado:** remover o documento importado do e-mail.
+  * **Eliminar o e-mail:** eliminar o e-mail de teste da caixa de entrada e da pasta de destino para limpar os dados.
 
 \
 

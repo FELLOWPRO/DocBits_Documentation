@@ -40,7 +40,7 @@ O identificador do contribuinte é o **GSTIN** (Goods and Services Tax Identific
 
 ## Pré-visualização padrão
 
-<figure><img src="india-gst-e-invoice-preview.png" alt="India GST E-Invoice preview in DocBits"><figcaption><p>Pré-visualização padrão do DocBits para uma fatura eletrónica GST da Índia</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/india-gst-e-invoice-preview.png" alt="India GST E-Invoice preview in DocBits"><figcaption><p>Pré-visualização padrão do DocBits para uma fatura eletrónica GST da Índia</p></figcaption></figure>
 
 ## Mapeamento de campos
 
@@ -102,5 +102,5 @@ O DocBits deteta documentos India GST E-Invoice correspondendo ao elemento raiz:
 
 ## Relacionados
 
-- [Padrões de fatura eletrónica atualmente suportados](../../currently-supported-e-invoice-standards/)
+- [Padrões de fatura eletrónica atualmente suportados](../currently-supported-e-invoice-standards/README.md)
 - [Documentos eletrónicos suportados](./)

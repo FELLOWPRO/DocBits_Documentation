@@ -1,79 +1,79 @@
-# Classification And Extraction
+# Classificação e extração
 
-## Overview
+## Visão geral
 
-In the **Classification and Extraction** settings, you can:
+Nas configurações de **Classificação e extração**, pode:
 
-* Enable **Document Splitting** based on QR codes
-* Configure **amount formatting**
-* Set up **table extraction**
-* Toggle processing of unsupported **ZUGFeRD** files
-* Define special classification rules
-* Monitor Custom-Trained **AI Models** used in the classification process
+* Ativar a **divisão de documentos** com base em códigos QR
+* Configurar a **formatação de valores**
+* Configurar a **extração de tabelas**
+* Ativar ou desativar o processamento de ficheiros **ZUGFeRD** não suportados
+* Definir regras especiais de classificação
+* Monitorizar os **modelos de IA** treinados especificamente para a classificação
 
-This page provides a detailed explanation of all available settings.
+Esta página explica as configurações disponíveis.
 
-## **Accessing Classification and Extraction Settings**
+## **Aceder às configurações de classificação e extração**
 
-To access the **Classification and Extraction** settings, go to:\
-**Settings → Document Processing → Classification and Extraction**
+Para abrir as configurações de **Classificação e extração**, aceda a:\
+**Configurações → Processamento de documentos → Classificação e extração**
 
 <figure><img src="../../../../.gitbook/assets/dbdc865-settings-nav-pt-20261012.png" alt="Navegação das configurações com Processamento de documentos e Classificação e Extração realçados"><figcaption><p>Abra <strong>Configurações → Processamento de documentos → Classificação e Extração</strong>.</p></figcaption></figure>
 
-## Document Splitting
+## Divisão de documentos
 
-In the **Document Splitting** section, you can configure whether an uploaded document should be split into multiple documents whenever a **barcode** appears on one of its pages.
+Na secção **Divisão de documentos**, pode configurar a divisão de um documento carregado em vários documentos sempre que surgir um **código de barras** numa página.
 
-To activate this feature:
+Para ativar esta funcionalidade:
 
-1. Go to the **Document Splitting** section.
-2.  Open the dropdown menu.
+1. Abra a secção **Divisão de documentos**.
+2.  Abra a lista suspensa.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt=""><figcaption></figcaption></figure>
-3.  Select **Split by Barcode/QR Code**.
+3.  Selecione **Dividir por código de barras/QR**.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt=""><figcaption></figcaption></figure>
 
-You will then have the option to:
+Depois, poderá:
 
-* Select one or more barcode types to be detected.
-*   Specify a regex pattern that the barcode must match in order to trigger document splitting.
+* Selecionar um ou mais tipos de código de barras a detetar.
+*   Indicar um padrão de expressão regular que o código de barras deve cumprir para provocar a divisão do documento.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt=""><figcaption></figcaption></figure>
 
-## Amount Formatting
+## Formatação de valores
 
-In the **Amount Formatting** section, you have two options:
+Na secção **Formatação de valores**, tem duas opções:
 
-* **Allow Rounding During Amount Comparison:**\
-  If enabled, a tolerance of ±0.5 is allowed during amount comparison.\
-  If disabled, a default tolerance of ±0.05 applies.
-* **Require Exact Match for Amount Comparison:**\
-  If enabled, amounts must match exactly with zero tolerance.\
-  If disabled, a tolerance of ±0.05 is allowed.
+* **Permitir arredondamento na comparação de valores:**\
+  Quando ativa, permite uma tolerância de ±0.5 na comparação de valores.\
+  Quando desativada, aplica-se a tolerância padrão de ±0.05.
+* **Exigir correspondência exata na comparação de valores:**\
+  Quando ativa, os valores têm de corresponder exatamente, sem tolerância.\
+  Quando desativada, permite uma tolerância de ±0.05.
 
-<mark style="color:red;">**Note**</mark>: Only one of these settings can be active at a time.
+<mark style="color:red;">**Nota**</mark>: apenas uma destas configurações pode estar ativa de cada vez.
 
-## Table Extraction
+## Extração de tabelas
 
 {% embed url="https://youtu.be/LFw-JXqYWzw" %}
-DocBits Tables Explained: AI Table Extraction vs Standard Extraction (When to Use Which)
+Tabelas do DocBits: extração de tabelas com IA ou extração padrão — quando usar cada uma
 {% endembed %}
 
-In this video, we compare two ways to process tables in DocBits: AI-based table extraction and standard (non-AI) extraction. You’ll learn what the differences are, when each method performs best, and how to choose the right approach for your document types.
+Neste vídeo, comparamos a extração de tabelas por IA com a extração padrão, sem IA, no DocBits. Aprenderá as diferenças, quando utilizar cada método e como escolher a abordagem para os seus tipos de documento.
 
-**What you’ll learn:**
-*   What AI table extraction does (pattern recognition, flexible layouts)
-*   What standard table extraction does (structured, more controlled behavior)
-*   Pros & cons: accuracy vs consistency, speed, and maintainability
-*   When AI is best (varying layouts, noisy scans, supplier differences)
-*   When standard extraction is best (stable templates, strict control, predictable output)
-*   Practical tips to improve table results and reduce mismatches
+**O que irá aprender:**
+*   O que faz a extração de tabelas por IA: reconhecimento de padrões e layouts flexíveis
+*   O que faz a extração padrão de tabelas: comportamento estruturado e mais controlado
+*   Vantagens e limitações: precisão, consistência, velocidade e manutenção
+*   Quando utilizar IA: layouts variáveis, digitalizações com ruído e diferenças entre fornecedores
+*   Quando utilizar extração padrão: modelos estáveis, controlo rigoroso e resultados previsíveis
+*   Conselhos práticos para melhorar as tabelas extraídas e reduzir divergências
 
 {% hint style="info" %}
 **Pré-requisitos para uma extração de tabelas funcional**
 
-* O tipo de documento tem **colunas de tabela** (Definições → Definições Globais → Tipos de Documento → [Colunas da Tabela](../../global-settings/document-types/table-columns.md)). Sem colunas, não há para onde extrair.
+* O tipo de documento tem **colunas de tabela** (Definições → Definições Globais → Tipos de Documento → [Colunas da Tabela](../../global-settings/document-types/table-columns/README.md)). Sem colunas, não há para onde extrair.
 * A **Extração de tabelas** ou a **Extração de tabelas por IA** está ativada abaixo, para toda a organização.
 * O documento tem texto legível: o OCR foi executado, ou o E-Text é usado para PDFs nativos digitais ([Definições OCR](../ocr-settings.md)).
 * O treino e os modelos de IA são **por fornecedor**. Uma tabela treinada aplica-se apenas aos documentos do fornecedor com que foi treinada.
@@ -150,110 +150,110 @@ Notas:
 * A alteração de uma chave produz efeito nos documentos processados posteriormente. Reinicie um documento para o extrair novamente com a nova definição.
 * As escolhas por fornecedor (E-Text, modelo de IA, regras guardadas) não são preferências da organização; são definidas no ecrã de validação em *Mais definições* num documento desse fornecedor.
 
-## Electronic Document
+## Documento eletrónico
 
-**Process Unsupported ZUGFeRD PDF:** If enabled, unsupported **ZUGFeRD** versions will be processed as standard PDFs, and the embedded XML will be ignored.
+**Processar PDF ZUGFeRD não suportado:** quando esta opção está ativa, as versões **ZUGFeRD** não suportadas são processadas como PDF padrão e o XML incorporado é ignorado.
 
-The list of supported **ZUGFeRD** versions can be found [here](../../global-settings/document-types/edi/zugferd/README.md).
+A lista de versões **ZUGFeRD** suportadas está disponível [aqui](../../global-settings/document-types/edi/zugferd/README.md).
 
-## **Classification Rules**
+## **Regras de classificação**
 
-In the **Classification Rules** section, you can define specific **regex** patterns and criteria to help the system automatically classify documents during processing.
+Na secção **Regras de classificação**, pode definir padrões de **expressões regulares** e critérios específicos para classificar automaticamente os documentos durante o processamento.
 
-To access this section, click the **Classification Rules** tab at the top of the page.
+Para abrir esta secção, clique no separador **Regras de classificação** no topo da página.
 
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt=""><figcaption></figcaption></figure>
 
-### **Add a New Classification Rule**
+### **Adicionar uma regra de classificação**
 
-To create a new rule:
+Para criar uma regra:
 
-1.  Click **Add** in the top-right corner.
+1.  Clique em **Adicionar** no canto superior direito.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt=""><figcaption></figcaption></figure>
-2. Fill in the following fields:
-   * **Pattern**: The regex pattern the system should search for to trigger classification.
-   * **Type**: Where the pattern should be searched (e.g., **Barcode**).
-   * **Sub Organization** _(optional)_: Specify which sub organization the rule applies to.
-   * **Document Type**: Define the document type to assign when the pattern is matched.
-   *   **Sub Document Type** _(optional)_: Specify a sub type for more detailed classification.
+2. Preencha os campos seguintes:
+   * **Padrão**: expressão regular que o sistema deve procurar para iniciar a classificação.
+   * **Tipo**: local onde o padrão deve ser procurado, por exemplo no **código de barras**.
+   * **Suborganização** _(opcional)_: suborganização à qual a regra se aplica.
+   * **Tipo de documento**: tipo a atribuir ao documento quando o padrão corresponder.
+   *   **Subtipo de documento** _(opcional)_: indique um subtipo para uma classificação mais detalhada.
 
        <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt=""><figcaption></figcaption></figure>
-3.  Click **Save** to save your classification rule.
+3.  Clique em **Guardar** para guardar a regra de classificação.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
 
-### **Edit a Classification Rule**
+### **Editar uma regra de classificação**
 
-To edit an existing rule:
+Para editar uma regra existente:
 
-1.  Click the three dots in the **Actions** column.
+1.  Clique nos três pontos da coluna **Ações**.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
-2.  Select **Edit**.
+2.  Selecione **Editar**.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt=""><figcaption></figcaption></figure>
-3. Make your desired changes.
-4.  Click **Save** to apply the updates.
+3. Efetue as alterações pretendidas.
+4.  Clique em **Guardar** para aplicar as alterações.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
 
-### **Delete a Classification Rule**
+### **Eliminar uma regra de classificação**
 
-To delete a rule:
+Para eliminar uma regra:
 
-1.  Click the three dots in the **Actions** column.
+1.  Clique nos três pontos da coluna **Ações**.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
-2.  Select **Delete**.
+2.  Selecione **Eliminar**.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt=""><figcaption></figcaption></figure>
 
-## AI Models
+## Modelos de IA
 
-The **AI Models** section displays all custom-trained models that have been specifically fine-tuned for your needs.
+A secção **Modelos de IA** apresenta os modelos treinados e ajustados especificamente às suas necessidades.
 
-### Accessing the AI Models Section
+### Aceder à secção de modelos de IA
 
-To open this section, click the **AI Models** tab located at the top of the page.
+Para abrir esta secção, clique no separador **Modelos de IA** no topo da página.
 
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt=""><figcaption></figcaption></figure>
 
-### Model Categories
+### Categorias de modelos
 
-Models are organized into categories. Below each category name, the number of models it contains is shown.\
-Click on a category to view its details.
+Os modelos estão organizados por categorias. Por baixo do nome de cada categoria, é apresentado o número de modelos que contém.\
+Clique numa categoria para consultar os detalhes.
 
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt=""><figcaption></figcaption></figure>
 
-At the top of the selected category page, you’ll see key information about each model:
+No topo da página da categoria selecionada, encontrará informação sobre cada modelo:
 
-* **Type**: The type of model.
-* **First Page Only**: Indicates whether the model processes only the first page of a document.
-* **Version**: The version number of the model.
+* **Tipo**: tipo de modelo.
+* **Apenas primeira página**: indica se o modelo processa apenas a primeira página do documento.
+* **Versão**: número da versão do modelo.
 
-### Model Table
+### Tabela de modelos
 
-All models within a category are listed in a table, which includes the following information:
+Os modelos da categoria são apresentados numa tabela com a seguinte informação:
 
-* **Name**: The name of the model.
-* **Next Model**: The model that will further process the output of the current model.
-* **Document Type**: The primary document type assigned by the model during classification.
-* **Document Sub Types**: The sub types into which the document is further classified.
-* **Priority**: The priority level that determines the model’s position in the classification queue.
+* **Nome**: nome do modelo.
+* **Próximo modelo**: modelo que irá processar o resultado do modelo atual.
+* **Tipo de documento**: tipo principal atribuído pelo modelo durante a classificação.
+* **Subtipos de documento**: subtipos nos quais o documento é classificado adicionalmente.
+* **Prioridade**: nível que determina a posição do modelo na fila de classificação.
 
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt=""><figcaption></figcaption></figure>
 
-### Editing a Model
+### Editar um modelo
 
-To edit a model:
+Para editar um modelo:
 
-1.  Click the pen icon in the **Actions** column next to the model you want to edit.
+1.  Clique no ícone de lápis da coluna **Ações**, junto ao modelo que pretende editar.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt=""><figcaption></figcaption></figure>
-2. Update the available fields:
-   * **Next Model**: Select the model that should process the output from the current model.
-   * **Document Type**: Choose the document type the model should classify the input as.
-3.  Click **Save** to apply your changes.
+2. Atualize os campos disponíveis:
+   * **Próximo modelo**: selecione o modelo que deve processar o resultado do modelo atual.
+   * **Tipo de documento**: escolha o tipo que o modelo deve atribuir ao documento de entrada.
+3.  Clique em **Guardar** para aplicar as alterações.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt=""><figcaption></figcaption></figure>

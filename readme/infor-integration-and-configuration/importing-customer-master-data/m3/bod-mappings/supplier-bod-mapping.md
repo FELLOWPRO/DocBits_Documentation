@@ -1,4 +1,4 @@
-# Supplier BOD Mapping
+# Mapeamento BOD de fornecedores
 
 Esta página documenta como o DocBits ingere os dados mestres de fornecedores do Infor M3 através dos BODs `SyncSupplierPartyMaster` e `SyncRemitToPartyMaster`. Ambos os BODs preenchem a mesma tabela de dados mestres `SUPPLIER` no DocBits.
 

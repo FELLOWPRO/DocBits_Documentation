@@ -11,7 +11,7 @@ O cartão de fluxo de trabalho **"Atribuir usuário do campo com substituto"** a
 1. **Nome do campo**
    * **Descrição:** Especifica o **campo do documento** que contém a informação do utilizador a atribuir.
    * **Detalhe:** Este campo é avaliado para determinar que utilizador deve ser atribuído. Se o campo contiver um utilizador válido, esse utilizador será atribuído à tarefa. Se o campo estiver vazio ou for inválido, será atribuído o utilizador alternativo.
-2. **User (alternativo)**
+2. **Utilizador (alternativo)**
    * **Descrição:** Especifica o **utilizador alternativo** a atribuir caso o campo do documento não contenha um utilizador válido.
    * **Detalhe:** É disponibilizada uma lista pendente de todos os utilizadores disponíveis para seleção. Este utilizador será atribuído se o campo do documento estiver vazio ou não contiver um utilizador válido.
 

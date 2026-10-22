@@ -55,7 +55,7 @@ Este arquivo é responsável por extrair dados de um arquivo XML Peppol BIS Bill
   * **Pode aparecer várias vezes**: Não.
 * **Endereço do Fornecedor Linha 3**
   * **Origem**:`//AccountingSupplierParty/Party/PostalAddress/AddressLine/Line/text()`
-  * **Mapeado para**: `<InvoINVOICEice><SUPPLIER><ADDRESS_LINE_3>`
+  * **Mapeado para**: `<INVOICE><SUPPLIER><ADDRESS_LINE_3>`
   * **Pode aparecer várias vezes**: Não.
 * **ID de IVA do Fornecedor**
   * **Origem**:`//AccountingSupplierParty/Party/PartyTaxScheme/CompanyID/text()`

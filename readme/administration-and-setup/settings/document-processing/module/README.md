@@ -1,10 +1,14 @@
-# Module
+# Módulos
 
-<figure><img src="../../../../.gitbook/assets/module_settings.png" alt="Configurações de Module"><figcaption><p>Página de configurações de Module</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/site-extra-modules-order-finance-pt.png" alt="Módulos de ordens e finanças no estado de configuração existente."><figcaption><p>Módulos de ordens e finanças no estado de configuração existente.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/site-extra-modules-document-integration-pt.png" alt="Módulos de integração de documentos: scripts, digitalização, códigos de barras e dados mestre personalizados. A etiqueta Select do seletor de códigos de barras mantém-se em inglês na versão ilustrada."><figcaption><p>Módulos de integração de documentos: scripts, digitalização, códigos de barras e dados mestre personalizados. A etiqueta Select do seletor de códigos de barras mantém-se em inglês na versão ilustrada.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/site-extra-modules-dashboards-analytics-pt.png" alt="Módulos de painéis e análises no estado de configuração existente."><figcaption><p>Módulos de painéis e análises no estado de configuração existente.</p></figcaption></figure>
 
 A página Module permite ativar ou desativar recursos opcionais no DocBits. Cada seção agrupa módulos relacionados que podem ser ativados ou desativados.
 
-## Purchase Order
+## Pedido de compra
 
 Configurações de PO Matching e validação.
 
@@ -15,13 +19,13 @@ Configurações de PO Matching e validação.
 | **PO Shipment Order** | Ativa o processamento de ordens de remessa vinculadas a pedidos de compra. |
 | **Shipment Order Dashboard** | Ativa um painel dedicado para ordens de remessa. |
 
-## Auto Accounting
+## Contabilidade automática
 
 | Configuração | Descrição |
 |---------|-------------|
 | **Auto Accounting** | Ativa a contabilização automática de documentos. Selecione o tipo de ERP (por exemplo, LN, M3). |
 
-## Dashboards
+## Painéis
 
 | Configuração | Descrição |
 |---------|-------------|
@@ -45,7 +49,7 @@ Configurações de PO Matching e validação.
 | **Clickhouse Direct Access** | Ativa o acesso direto ao banco de dados Clickhouse. |
 | **Supplier Statistics** | Ativa estatísticas e relatórios por fornecedor. |
 
-## Shipping & Supplier
+## Expedição e fornecedores
 
 | Configuração | Descrição |
 |---------|-------------|
@@ -71,7 +75,7 @@ Configurações de PO Matching e validação.
 | **Barcode Assignment** | Ativa a atribuição de códigos de barras a documentos. |
 | **Set Negative Sign For Credit Notes** | Aplica automaticamente sinais negativos aos valores de notas de crédito. |
 
-## BOD Connection Stream
+## Fluxo de ligação BOD
 
 | Configuração | Descrição |
 |---------|-------------|
@@ -83,7 +87,7 @@ Configurações de PO Matching e validação.
 |---------|-------------|
 | **Use PostgreSQL for Quality Analytics** | Alterna entre Prometheus (em tempo real, reinicia a cada deploy) e PostgreSQL (persistente por 90 dias, análise de tendências, campos com pior desempenho). |
 
-## Vertex Tax Integration
+## Integração fiscal Vertex
 
 | Configuração | Descrição |
 |---------|-------------|

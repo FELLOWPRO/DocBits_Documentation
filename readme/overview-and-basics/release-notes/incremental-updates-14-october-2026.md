@@ -86,7 +86,7 @@ alterações visíveis para o cliente._
 
 ## Web App — `10.78.9.4`
 
-**Settings Assistant**
+**Assistente de Configurações**
 - Uma gaveta de chat do lado direito, com um interruptor, está presente em
   todas as páginas de definições. A conversa sobrevive à mudança de página, é
   limitada a 20 mensagens e mostra as alterações que aplicou, com opção de
@@ -167,7 +167,7 @@ alterações visíveis para o cliente._
 
 ## API Service — `12.83.293`
 
-**Settings Assistant e MCP**
+**Assistente de Configurações e MCP**
 - Endpoint de chat com salvaguardas: apenas perguntas sobre o DocBits,
   nenhuma alteração sem confirmação, perguntas pouco claras ou meta recebem
   ajuda em vez de uma recusa, e as respostas transmitem primeiro os cartões e

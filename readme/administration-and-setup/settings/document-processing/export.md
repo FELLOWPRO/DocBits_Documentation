@@ -94,7 +94,7 @@ Para criar uma nova exportação:
 * **URL do servidor** O nome do host ou endereço IP do servidor SFTP de destino.
 * **Porta** A porta usada para conectar ao servidor SFTP.
 * **Pasta** O caminho no servidor SFTP onde os documentos devem ser carregados (ex.: `/incoming/invoices/`). Deve existir e ser gravável.
-*   **XSLT File (Opcional)**
+*   **Ficheiro XSLT (opcional)**
 
     O **arquivo XSLT** permite a transformação do formato de exportação padrão do DocBits.
 
@@ -153,7 +153,7 @@ Para criar uma nova exportação:
 * **URL do servidor** O endereço do servidor SMB.
 * **Porta** Número da porta usado para acessar o compartilhamento SMB.
 * **Pasta** O caminho da pasta dentro do compartilhamento SMB onde os documentos devem ser salvos (ex.: `/incoming/invoices/`). Deve existir e ser gravável.
-*   **JPL Mapping File (Opcional)**
+*   **Ficheiro de mapeamento JPL (opcional)**
 
     O **arquivo JPL** é usado para definir uma transformação dos dados exportados antes de serem gravados no compartilhamento SMB.
 

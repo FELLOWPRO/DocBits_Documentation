@@ -7,7 +7,7 @@
 3. Configure as seguintes definições:
    * **Name**: Defina como `DocBits_Export`.
    * **Description**: Defina como `DocBits_Export`.
-   * **Uncheck**: _Application has IMS End Point_.
+   * **Desmarque**: _Application has IMS End Point_.
    * **ION API Client ID**:
      * Abra o ficheiro ION API.
      * Procure por `"ci"` dentro do ficheiro.

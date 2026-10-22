@@ -32,4 +32,4 @@ Uma coluna de tabela é um campo da tabela de itens de linha. Tudo o que o DocBi
 
 * [Adicionando uma nova coluna](adding-a-new-column.md)
 * [Editando e excluindo colunas](editing-and-deleting-columns.md)
-* [Table Extraction Troubleshoot](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md)
+* [Resolução de problemas de extração de tabelas](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md)

@@ -32,7 +32,7 @@ Este guia irá orientá-lo através do processo de configuração para garantir 
 
     * Se você tiver vários valores, pode clicar em **Adicionar Mais Valores** para adicioná-los.
 
-    <div><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2lnyo3G6vlowfPiN0Nb5%252FTaxCodes_5.png%3Falt%3Dmedia%26token%3D52280de9-dd51-4bee-baf8-2b77a2209675&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=fb8c44b8&#x26;sv=2" alt=""> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt=""><figcaption></figcaption></figure></div>
+    <div><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2lnyo3G6vlowfPiN0Nb5%252FTaxCodes_5.png%3Falt%3Dmedia%26token%3D52280de9-dd51-4bee-baf8-2b77a2209675&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=fb8c44b8&#x26;sv=2" alt=""> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-pt.png" alt="Formulário de um novo valor com suborganização, sinónimos e traduções. Nenhum valor foi introduzido ou guardado; a seleção do idioma refere-se à tradução do valor."><figcaption><p>Formulário de um novo valor com suborganização, sinónimos e traduções. Nenhum valor foi introduzido ou guardado; a seleção do idioma refere-se à tradução do valor.</p></figcaption></figure></div>
 
     * **NOTA:** Você pode encontrar os Códigos Fiscais no LN em: **Comum** → **Tributação** → **Dados Mestres** → **Códigos Fiscais** → **Códigos Fiscais por País**
 
@@ -122,7 +122,7 @@ Após fazer o upload de um novo documento no DocBits com as configurações de d
 
     * Se você tiver vários valores, pode clicar em **Adicionar Mais Valores** para adicioná-los.
 
-    <div><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2lnyo3G6vlowfPiN0Nb5%252FTaxCodes_5.png%3Falt%3Dmedia%26token%3D52280de9-dd51-4bee-baf8-2b77a2209675&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=fb8c44b8&#x26;sv=2" alt=""> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt=""><figcaption></figcaption></figure></div>
+    <div><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2lnyo3G6vlowfPiN0Nb5%252FTaxCodes_5.png%3Falt%3Dmedia%26token%3D52280de9-dd51-4bee-baf8-2b77a2209675&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=fb8c44b8&#x26;sv=2" alt=""> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-pt.png" alt="Formulário de um novo valor com suborganização, sinónimos e traduções. Nenhum valor foi introduzido ou guardado; a seleção do idioma refere-se à tradução do valor."><figcaption><p>Formulário de um novo valor com suborganização, sinónimos e traduções. Nenhum valor foi introduzido ou guardado; a seleção do idioma refere-se à tradução do valor.</p></figcaption></figure></div>
 
     * **NOTA:** Você pode encontrar os Códigos Fiscais no LN em: **Comum** → **Tributação** → **Dados Mestres** → **Códigos Fiscais** → **Códigos Fiscais por País**
 

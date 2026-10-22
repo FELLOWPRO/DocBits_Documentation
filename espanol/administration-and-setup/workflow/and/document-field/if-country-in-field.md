@@ -2,56 +2,36 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-70b0b5860da5-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
-## **Propósito:**
+Utilice esta condición cuando un paso de procesamiento adicional deba depender de un grupo de países. El ejemplo comprueba si el país de un campo del documento pertenece a la Unión Europea.
 
-Esta tarjeta de flujo de trabajo está diseñada para evaluar si un país especificado, ubicado en un campo designado, forma parte de un área comercial o política particular (Unión Europea, espacio Schengen o NAFTA). Según esta evaluación, el flujo de trabajo puede continuar con una condición verdadera o falsa, posibilitando acciones adicionales dentro del sistema. Es especialmente útil para automatizar reglas de negocio específicas de la región, garantizar el cumplimiento o disparar flujos de trabajo específicos según las afiliaciones geográficas.
+**Ubicación:** Flujo estándar → condiciones adicionales (AND) → Campo del documento. Configure la acción posterior por separado en THEN.
 
-## **Componentes de la tarjeta:**
+## Configuración — versión 2
 
-1. **Nombre de campo**
-   * **Descripción:** Especifica el campo del documento donde se almacena el nombre o el código del país.
-   * **Detalle:** Debe coincidir con el identificador exacto del campo de los datos del país dentro del documento.
-2. **Operador**
-   * **Descripción:** Especifica si el país del campo seleccionado debe coincidir o no con la región o el acuerdo seleccionado.
-   * **Opciones:**
-     * **Is:** El país debe formar parte del acuerdo seleccionado (UE, Schengen o NAFTA) para que la condición sea verdadera.
-     * **No es:** El país no debe formar parte del acuerdo seleccionado para que la condición sea verdadera.
-3. **Comparación de países**
-   * **Descripción:** Define si el país del campo se comprueba frente a un acuerdo político o comercial específico.
-   * **Opciones:**
-     * **European Union:** La tarjeta comprueba si el país es miembro de la Unión Europea.
-     * **Schengen Area:** La tarjeta comprueba si el país forma parte del espacio Schengen.
-     * **NAFTA:** La tarjeta comprueba si el país es miembro del acuerdo NAFTA.
-4. **booleano**
-   * **Descripción:** Define el resultado de la comparación. Si el país cumple la condición, el flujo de trabajo continúa con el valor booleano especificado.
-   * **Opciones:**
-     * **True:** El flujo de trabajo continúa si la condición coincide.
-     * **False:** El flujo de trabajo continúa si la condición no coincide.
-
-## **Funcionalidad:**
-
-* **Evaluación de la condición:**
-  * El sistema evalúa si el país especificado en el campo forma parte de la región o el acuerdo elegido (UE, espacio Schengen o NAFTA) según el operador seleccionado. Esta evaluación comprueba el nombre o el código del país frente a una lista predefinida de países que pertenecen a cada grupo respectivo.
-* **Ejecución de la acción:**
-  * **Condición verdadera:** Si el país del campo coincide con la región seleccionada (según el operador), el flujo de trabajo continúa con la condición verdadera especificada. Esto puede disparar acciones adicionales, como enrutar documentos, aplicar reglas de procesamiento especiales o habilitar funciones específicas de la región.
-  * **Condición falsa:** Si el país no coincide con la región seleccionada (según el operador), el flujo de trabajo continúa con la condición falsa especificada, permitiendo la ejecución de acciones alternativas o la finalización del flujo de trabajo según la configuración del sistema.
-
-## **Configuración:**
-
-* Los usuarios configuran la tarjeta seleccionando el campo del documento que contiene el país y especificando la región (Unión Europea, espacio Schengen o NAFTA). A continuación, se elige el operador de una lista desplegable para definir si el país debe formar parte o no de la región seleccionada. Por último, los usuarios establecen la condición de continuación (verdadera o falsa), que determina el siguiente paso del flujo de trabajo.
-
-## **Conclusión:**
-
-La tarjeta de flujo de trabajo "Country in Field Comparison" es una herramienta esencial para automatizar procesos que dependen de reglas geográficas, como el cumplimiento de acuerdos comerciales o afiliaciones políticas. Al comparar los datos del país con regiones específicas como la Unión Europea, el espacio Schengen o NAFTA, esta tarjeta garantiza que el sistema aplique la lógica de procesamiento correcta, mejorando la eficiencia y garantizando una ejecución precisa del flujo de trabajo según las condiciones geográficas.
+| Ajuste | Valor |
+| --- | --- |
+| Campo | Un campo de texto existente que contenga el nombre del país |
+| Operador | `is` |
+| Región | Unión Europea (UE) |
+| Valor de continuación | `true` |
 
 <!-- workflow-card-practical-example-20261021 -->
 
 ## Ejemplo práctico
 
-**Cuándo utilizar:** Separe los documentos por región del país.
+| Valor del país en el campo | Condición esperada |
+| --- | --- |
+| `Germany` | Se cumple |
+| `United States` | No se cumple |
 
-**Configuración:** Elija un campo de país de documento que contenga `DE`, seleccione la región que contenga Alemania y establezca la opción de continuación en `true`.
+Los nombres de países mostrados como código son valores de entrada fijos para este ejemplo.
 
-**Resultado esperado y contraejemplo:** El código de país alemán satisface la región seleccionada. Un código fuera de esa región no; Pruebe la opción de continuación por separado cuando necesite la rama inversa.
+## Límites y comprobaciones
 
-Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.
+`false` no invierte la comparación. Con ese ajuste, ni siquiera un país coincidente produce una condición positiva. Para comprobar la condición contraria, seleccione `isnot` con `true`.
+
+Gestione por separado los campos ausentes y los valores de país vacíos; pueden devolver un resultado de datos faltantes en lugar de una falta de coincidencia normal.
+
+La revisión del código fuente de la versión de desarrollo del 22 de octubre de 2026 muestra un error de conversión para entradas ISO como `DE` y `DEU`. Por eso, estos ejemplos utilizan nombres de países completos. Compruebe por separado el tratamiento de códigos ISO en su versión instalada.
+
+Los grupos disponibles, incluidos UE, Schengen y NAFTA, proceden de la implementación de la tarjeta. Compruebe qué países incluye su versión antes de utilizar un grupo en una regla de negocio.

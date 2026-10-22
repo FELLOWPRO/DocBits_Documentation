@@ -44,6 +44,10 @@ Lire et construire: [Cas Advanced : acheminement des factures](advanced-workflow
 
 ## 3. Champs, types et limites <a id="level-3"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/fr.mp4" %}
+
+[Ouvrir la vidéo avec sous-titres français et transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/fr.html).
+
 **Exercice:** Contrôlez absent, null, texte vide, espaces, false, 0 et nombres textuels. Calculez la tolérance avec référence commande puis document. Comparez une puis toutes les lignes réellement rapprochées.
 
 **Critère de fin:** Expliquez vrai, faux et erreur selon valeur, type, référence et données. Aucune ligne comparable ne vaut pas approbation réussie.

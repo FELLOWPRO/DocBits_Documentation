@@ -55,6 +55,14 @@ Daarnaast kun je snel filteren op de statussen **In afwachting van goedkeuring**
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
 
+## Leveranciersgegevens (interne weergave)
+
+Klik op de rij van een leverancier in het **Leveranciersdashboard** om de weergave **Leveranciersgegevens** van die leverancier te openen. Deze interne weergave toont dezelfde zes secties die de leverancier tijdens de registratie invult — **Leverancier Gegevens**, **Adresgegevens**, **Leverancier Contact**, **Leverancier Financieel**, **Leverancier Aankoop** en **Leverancier Certificaten** — samen met de badge met de huidige status van de leverancier (rechtsboven, bijvoorbeeld **STATUS: IN AFWACHTING VAN GOEDKEURING**).
+
+<figure><img src="../../../.gitbook/assets/supplier-details-internal-view-nl-20261009.png" alt="Interne weergave «Leveranciersgegevens» van een fictieve leverancier in de DocBits-interface in het Nederlands"><figcaption><p>Interne weergave «Leveranciersgegevens»: links de zes registratiesecties, rechtsboven de status van de leverancier. Alle namen en gegevens zijn verzonnen voorbeeldwaarden (voorbeeldorganisatie Musterfirma GmbH, voorbeeldleverancier Fabrikam Metallbau KG).</p></figcaption></figure>
+
+Gebruik deze weergave om het leveranciersprofiel te controleren, ontbrekende gegevens aan te vullen of te corrigeren en de goedkeuringsbeslissing voor te bereiden. Voor een beschrijving van elke sectie zie [Leverancier Registratie](supplier-registration.md). Met de terugknop bovenaan de weergave keert u terug naar het **Leveranciersdashboard** zonder iets op te slaan.
+
 ## Leverancier Status
 
 Als je het **Leveranciersportaal** gebruikt, is het belangrijk om de verschillende statussen te begrijpen die leveranciers kunnen hebben. Hieronder staat een lijst van alle mogelijke leveranciersstatussen en hun betekenissen:

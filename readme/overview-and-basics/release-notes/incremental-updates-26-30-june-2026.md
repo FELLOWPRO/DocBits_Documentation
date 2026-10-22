@@ -7,7 +7,7 @@ periodo._
 
 ---
 
-## Highlights
+## Novità principali
 
 - **Un'unica connessione per gli assistenti AI ([DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp)).** Un unico gateway
   unificato serve ora tutti gli strumenti DocBits — incluso DocFlow — attraverso

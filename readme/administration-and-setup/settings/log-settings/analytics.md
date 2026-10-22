@@ -32,7 +32,7 @@ Quattro riepiloghi compaiono sotto i filtri:
 | **AVVERTENZE** | Numero totale di avvertenze nel periodo selezionato. |
 | **TOP SOURCE** | Il servizio che produce più log, con il relativo conteggio. |
 
-## Real User Monitoring (RUM)
+## Monitoraggio degli utenti reali (RUM)
 
 Sotto i riepiloghi, gli indicatori RUM mostrano i dati di prestazione del frontend raccolti dalle sessioni reali dei browser degli utenti.
 

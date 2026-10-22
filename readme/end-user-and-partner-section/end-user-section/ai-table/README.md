@@ -96,8 +96,8 @@ Se la tua organizzazione ha disattivato il consulente AI, DocBits te lo comunica
 | --- | --- | --- |
 | **Modifica del test** | Esegue la tua modifica e mostra un confronto. **Non viene scritto nulla**, né nel documento né come regola. | No |
 | **Applicare** | Rilegge la tabella con le tue modifiche e inserisce il risultato in questo documento nell'editor. Diventa permanente solo quando salvi il documento. | No |
-| **Salva come addestramento** (tooltip *Save Rules*) | Memorizza il prompt, le colonne aggiuntive, la mappatura delle colonne, le colonne nascoste, i formati degli importi e le impostazioni **Extract From** per questo layout del fornitore. I documenti successivi con questo layout vengono letti allo stesso modo. | Sì |
-| **Cancellare** (tooltip *Delete Rules*) | Elimina le regole di tabella salvate di questo layout del fornitore, senza ulteriore conferma, ed esegue di nuovo l'AI senza di esse. Rimuove anche l'addestramento classico della tabella salvato per lo stesso layout. | Le rimuove |
+| **Salva come addestramento** (tooltip *Salva regole*) | Memorizza il prompt, le colonne aggiuntive, la mappatura delle colonne, le colonne nascoste, i formati degli importi e le impostazioni **Extract From** per questo layout del fornitore. I documenti successivi con questo layout vengono letti allo stesso modo. | Sì |
+| **Cancellare** (tooltip *Elimina regole*) | Elimina le regole di tabella salvate di questo layout del fornitore, senza ulteriore conferma, ed esegue di nuovo l'AI senza di esse. Rimuove anche l'addestramento classico della tabella salvato per lo stesso layout. | Le rimuove |
 | **Esportazione** | Scarica la tabella come file CSV. | No |
 
 {% hint style="info" %}
@@ -140,7 +140,7 @@ Queste spiegazioni appartengono al modulo **Dashboard di analisi**. Senza la lic
 | L'AI non sa cosa fare (nulla nel prompt) | Fai clic su **Suggerisci con Nexus** e inserisci ciò che è adatto. |
 | Un prezzo deve essere diviso o arrotondato | Scrivi la regola nel prompt, ad esempio *Il prezzo unitario è l'importo netto diviso per la quantità*. |
 | Gli importi vengono letti con separatori errati (1.234,50 anziché 1,234.50) | Apri il menu con i tre puntini della colonna, scegli **Formattazione degli importi** e seleziona il formato giusto. |
-| L'etichetta si trova sotto il valore | Menu con i tre puntini → **Extract From** → **Below**. |
+| L'etichetta si trova sotto il valore | Menu con i tre puntini → **Estrai da** → **Sotto**. |
 | Una colonna non serve per questo fornitore | Menu con i tre puntini → **Cancellare la colonna**. **Salva come addestramento** la mantiene nascosta per il fornitore. |
 | Una riga è errata o mancante | Rimuovila con la **x**, oppure aggiungine una con **Aggiungere una nuova riga di tabella** e digita i valori. |
 | Le stesse correzioni servono ripetutamente | Usa **Salva come addestramento** così i documenti successivi di questo fornitore vengono estratti correttamente. Per i layout complessi [addestra invece la tabella](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md). |

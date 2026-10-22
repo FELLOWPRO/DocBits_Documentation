@@ -1,6 +1,6 @@
 # FAQ per Amministratori di WatchDog e Risoluzione dei Problemi
 
-<figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-infographic.svg" alt="Riferimento rapido per la risoluzione dei problemi di WatchDog"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-it.svg" alt="Diagnosi dei problemi di importazione, esportazione e connessione di WatchDog."><figcaption><p>Diagnosi dei problemi di importazione, esportazione e connessione di WatchDog.</p></figcaption></figure>
 
 Questa documentazione aiuta gli amministratori a comprendere i messaggi di errore di WatchDog e a risolvere i problemi.
 
@@ -180,7 +180,7 @@ WatchDog invia un heartbeat a DocBits ogni ~10 secondi con le informazioni di si
 ### Problema: WatchDog non importa i file
 
 1. Controlla se il servizio è in esecuzione: `services.msc` → WatchDog
-2. Controlla i log: Settings → WatchDog → Logs Tab
+2. Controlla i log: Impostazioni → WatchDog → Scheda Log
 3. Controlla i permessi delle cartelle per l'account di servizio di WatchDog
 4. Testa la connessione API: `WatchDog.exe debug` nel CMD
 5. Verifica che il tipo di file sia PDF

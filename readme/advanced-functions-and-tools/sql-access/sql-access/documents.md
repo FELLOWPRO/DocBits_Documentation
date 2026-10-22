@@ -1,4 +1,4 @@
-# Documents
+# Documenti
 
 ## Colonne
 
@@ -10,16 +10,16 @@
 * `status`: interno
 * `message`: text
 * `export_attempts`: integer
-* `last_attempted_on`: timestamp with time zone
-* `next_attempt_on`: timestamp with time zone
+* `last_attempted_on`: timestamp con fuso orario
+* `next_attempt_on`: timestamp con fuso orario
 * `assigned_to`: integer
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: timestamp con fuso orario
+* `last_modified_on`: timestamp con fuso orario
 * `is_deleted`: boolean
 * `task_id`: interno
 * `filename`: interno
-* `assigned_on`: timestamp with time zone
+* `assigned_on`: timestamp con fuso orario
 * `pages`: integer
 * `auto_processed`: boolean
 * `exception_info`: text
@@ -35,18 +35,18 @@
 * `table_version`: interno
 * `force_ocr`: boolean
 * `locked_by`: integer
-* `locked_on`: timestamp with time zone
-* `lock_renewed_on`: timestamp with time zone
+* `locked_on`: timestamp con fuso orario
+* `lock_renewed_on`: timestamp con fuso orario
 * `lock_key`: interno
 * `last_saved_by`: integer
-* `last_saved_on`: timestamp with time zone
+* `last_saved_on`: timestamp con fuso orario
 * `document_version`: integer
 * `lock_session_key`: interno
 * `sub_org_id`: interno
 * `doc_source`: interno
 * `sub_doc_type`: interno
 * `assigned_to_group`: interno
-* `status_changed_on`: timestamp with time zone
+* `status_changed_on`: timestamp con fuso orario
 * `improve_quality`: boolean
 * `priority`: integer
 * `metadata_field`: json
@@ -58,7 +58,7 @@
 * `celery_task_priority`: integer
 * `has_zugferd`: boolean
 * `has_peppol`: boolean
-* `timestamp_for_validation`: timestamp with time zone
+* `timestamp_for_validation`: timestamp con fuso orario
 * `exception_details`: text
 * `has_annotated_version`: boolean
 * `po_match_status`: interno

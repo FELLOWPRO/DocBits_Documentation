@@ -1,55 +1,22 @@
 # Test del modello
 
-## Passaggi per eseguire i test di classificazione e valutare l'accuratezza e l'idoneità operativa del modello
+Il test deve misurare i risultati su documenti rappresentativi non usati per l’addestramento. Prepara le risposte attese per ciascuno: tipo di documento e, per valutare l’estrazione, valori dei campi.
 
-Per testare il modello addestrato e valutarne l'accuratezza e l'idoneità operativa, puoi seguire i passaggi riportati di seguito:
+## Eseguire il test
 
+1. Apri l’addestramento del tipo di documento da valutare.
+2. Scegli il test di classificazione quando disponibile; nella versione illustrata il pulsante è denominato **Classificazione del test**.
+3. Seleziona il campione e avvia la valutazione con le opzioni offerte.
+4. Attendi il completamento e registra risultati ed errori. Un errore tecnico o un test incompleto non equivale a una classificazione corretta.
 
+<figure><img src="../../../../../.gitbook/assets/site-extra-model-training-overview-it.png" alt="Comandi di importazione, addestramento e test del modello. Non è stato eseguito alcun addestramento o test: questa vista non mostra un risultato di accuratezza. La colonna Name resta in inglese nella versione illustrata."><figcaption><p>Comandi di importazione, addestramento e test del modello. Non è stato eseguito alcun addestramento o test: questa vista non mostra un risultato di accuratezza. La colonna Name resta in inglese nella versione illustrata.</p></figcaption></figure>
 
-**Preparazione dei dati di test:**&#x20;
+## Interpretare i risultati
 
-* Raccogli un campione rappresentativo di dati di test che copra i diversi tipi di documenti e scenari che il modello gestirà sul campo. Assicurati che i dati di test siano di alta qualità e etichettati correttamente.
+Confronta le previsioni con le risposte attese e analizza gli errori per tipo e formato. Se calcoli accuratezza, precisione, richiamo o punteggio F1, indica anche la dimensione del campione e le categorie valutate. Non attribuire al prodotto metriche che la tua versione non visualizza: puoi calcolarle separatamente dai risultati esportati o rilevati.
 
+Le regole di classificazione e di estrazione sono impostazioni distinte dall’addestramento. Verificane l’effetto se intervengono nell’elaborazione; non modificare una regola soltanto per nascondere un errore nel campione di test.
 
+## Correggere e ripetere
 
-**Esecuzione dei test di classificazione:**&#x20;
-
-* Esegui i test di classificazione sui dati di test preparati.&#x20;
-* Fornisci i dati di test al modello e lascia che il modello formuli le previsioni per classificare i documenti.
-
-<figure><img src="../../../../../.gitbook/assets/image (91).png" alt="" width="375"><figcaption><p>Impostazioni</p></figcaption></figure>
-
-* Aggiungi una nuova regola di classificazione oppure modificane una esistente.
-
-<figure><img src="../../../../../.gitbook/assets/image (92).png" alt=""><figcaption><p>Impostazioni: Classificazione ed estrazione </p></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/image (90).png" alt="" width="276"><figcaption><p>Configurare la regola di classificazione</p></figcaption></figure>
-
-**Valutazione dell'accuratezza del modello:**&#x20;
-
-* Confronta le previsioni del modello con le classificazioni effettive dei dati di test. Calcola metriche come accuratezza, precisione, richiamo e punteggio F1 per valutare le prestazioni del modello. Queste metriche forniscono indicazioni su quanto bene il modello abbia classificato i documenti e su quanto sia affidabile.
-
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 08.53.41.png" alt=""><figcaption></figcaption></figure>
-
-
-
-**Analisi degli errori:**&#x20;
-
-* Esamina gli errori commessi dal modello nella classificazione dei dati di test e analizzane le cause. Individua schemi o tendenze negli errori e, se necessario, apporta modifiche al modello per migliorarne le prestazioni.
-
-
-
-**Ottimizzazione del modello**:&#x20;
-
-* In base ai risultati dei test di classificazione e dell'analisi degli errori, puoi ottimizzare il modello aggiungendo dati di addestramento, regolando i parametri di addestramento o cambiando l'architettura del modello. Ripeti il processo di test per verificare se le ottimizzazioni hanno migliorato le prestazioni del modello.
-
-
-
-**Documentazione dei risultati:**&#x20;
-
-* Documenta i risultati dei test di classificazione ed eventuali regolazioni o ottimizzazioni apportate al modello. Questo ti aiuterà a monitorare i progressi del modello nel tempo e a garantire che migliori costantemente.
-
-Eseguendo regolarmente i test di classificazione e valutando le prestazioni del tuo modello, puoi assicurarti che sia adatto all'uso in produzione e fornisca risultati accurati.
-
-
-
+Correggi i dati di addestramento, le relative etichette o le impostazioni effettivamente disponibili nella tua installazione, poi addestra nuovamente il modello se necessario. Ripeti il test con lo stesso protocollo e mantieni un campione indipendente. Documenta versione, dati, risultati e regressioni. Un buon risultato sul campione non garantisce le stesse prestazioni su tutti i documenti futuri.

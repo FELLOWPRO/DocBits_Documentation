@@ -1,7 +1,7 @@
 # Aggiunta/Modifica dei Gruppi
 
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
-DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
+DocBits Tutorial su gruppi e autorizzazioni: imposta ruoli utente, diritti di accesso e proteggi il tuo spazio di lavoro
 {% endembed %}
 
 ## Per aggiungere un nuovo gruppo o modificare i permessi di un gruppo esistente, puoi fare quanto segue:

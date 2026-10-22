@@ -19,6 +19,6 @@ L'Electronic Data Interchange (EDI) consente lo scambio automatizzato e standard
    * Consente la fatturazione elettronica, gli avvisi di pagamento e altri scambi di documenti finanziari.
    * Accelera i cicli di pagamento, riduce l'inserimento manuale dei dati e garantisce l'accuratezza delle transazioni.
 
-## **Conclusion**
+## **Conclusione**
 
 Le impostazioni EDI sono un pilastro delle moderne operazioni aziendali, guidando l'efficienza, la trasparenza e l'automazione attraverso le catene di approvvigionamento, gli acquisti e le finanze. Eliminando i processi manuali, le aziende possono ottenere flussi di lavoro più rapidi, affidabili ed economici.

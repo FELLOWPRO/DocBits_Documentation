@@ -1,4 +1,4 @@
-# Scripting in DocBits
+# Script in DocBits
 
 ## Guida allo Scripting di Docbits
 

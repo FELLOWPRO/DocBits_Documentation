@@ -1,4 +1,4 @@
-# Debug Collector
+# Raccoglitore di debug
 
 Il Debug Collector cattura un'istantanea completa della tua sessione DocBits — attività di rete, errori, ambiente del browser e metriche di prestazione — la confeziona come un report JSON e, se vuoi, apre direttamente un ticket di supporto dalla stessa finestra.
 

@@ -14,31 +14,31 @@ Se una fattura o un altro documento supera un determinato importo totale che ric
 
 <figure><img src="../../.gitbook/assets/workflow_amount_check.png" alt="Workflow Amount Check"><figcaption></figcaption></figure>
 
-**Test 1: Logic Card**
+**Test 1: Scheda logica**
 
 When: **Assignee is:** Responsabile della ricezione
 
-And: **Document type is:** Invoice
+E: **Il tipo di documento è:** Fattura
 
 Then: **Assign document to:** Revisore delle fatture
 
 ![](<../../.gitbook/assets/3 (1).png>)
 
-**Test 2: Logic Card**
+**Test 2: Scheda logica**
 
 When: **Assignee is:** Responsabile della ricezione
 
-And: **Document type is:** Delivery Note
+E: **Il tipo di documento è:** Nota di consegna
 
 Then: **Assign document to:** Revisore delle consegne
 
 ![](<../../.gitbook/assets/4 (1).png>)
 
-**Test 3: Logic Card**
+**Test 3: Scheda logica**
 
 **When:** **Assignee is:** Responsabile della ricezione
 
-**And:** **Document type is:** Order Confirmation
+**E:Il tipo di documento è:** Conferma d'ordine
 
 **Then:** **Assign document to:** Revisore degli ordini
 
@@ -50,25 +50,25 @@ Then: **Assign document to:** Revisore delle consegne
 
 Per avere una visione più semplice di cosa debba accadere a un documento, puoi impostare lo stato dei documenti in entrata in questo workflow. Questo workflow consente di vedere immediatamente se, ad esempio, è presente un'approvazione in sospeso.
 
-**Test 4: Logic Card**
+**Test 4: Scheda logica**
 
-**When:** **Document type is:** Delivery Note
+**Quando:Il tipo di documento è:** Nota di consegna
 
 **And:** **Assignee is:** Responsabile della ricezione
 
-**Then:** **Change Status to:** Pending Approval
+**Poi:Cambia stato in:** In attesa di approvazione
 
 <figure><img src="../../.gitbook/assets/s150-workflow_test4_delivery_note_status-it.png" alt="Bozza non salvata di un workflow di modifica dello stato."><figcaption><p>Bozza non salvata di un workflow di modifica dello stato.</p></figcaption></figure>
 
 ![](<../../.gitbook/assets/8 (1).png>)
 
-**Test 5: Logic Card**
+**Test 5: Scheda logica**
 
-When: **Document type is:** Invoice
+Quando: **Il tipo di documento è:** Fattura
 
 And: **Assignee is:** Revisore delle fatture
 
-Then: **Change Status to:** Pending Second Approval
+Quindi: **Cambia stato in:** In attesa di seconda approvazione
 
 <figure><img src="../../.gitbook/assets/workflow_test5_invoice_approval_status.png" alt="Workflow Test 5 Invoice Approval Status"><figcaption></figcaption></figure>
 
@@ -78,11 +78,11 @@ Se una fattura o un altro documento supera un determinato importo totale che ric
 
 ![](<../../.gitbook/assets/11 (1).png>)
 
-**Test 6: Logic Card**
+**Test 6: Scheda logica**
 
 When: **Assignee is:** Responsabile della ricezione
 
-And: Docfield **total\_amount** is **Greater than 500**
+E: Docfield **total\_amount** è **Maggiore di 500**
 
 Then: **Assign document to:** Responsabile delle approvazioni
 
@@ -92,15 +92,15 @@ Then: **Assign document to:** Responsabile delle approvazioni
 
 È inoltre possibile inserire lo stato nel workflow, in modo che la persona assegnata possa vedere immediatamente in quale stato si trova il documento e cosa dovrà accadere successivamente.
 
-**Test 7: Logic Card**
+**Test 7: Scheda logica**
 
 **When:** **Assignee is:** Responsabile della ricezione
 
-**And:** Docfield **total\_amount** is **Greater then 500**
+**E:** Docfield **total\_amount** è **Maggiore di 500**
 
 **Then:** **Assign document to:** Responsabile delle approvazioni
 
-**Change Status to:** Pending Approval
+**Cambia stato in:** In attesa di approvazione
 
 <figure><img src="../../.gitbook/assets/s150-workflow_test7_status_update-it.png" alt="Azione di modifica dello stato in una bozza di workflow."><figcaption><p>Azione di modifica dello stato in una bozza di workflow.</p></figcaption></figure>
 
@@ -120,7 +120,7 @@ Puoi assegnare a questi documenti uno stato specifico o assegnarli a un dipenden
 
 <figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_detail-it.png" alt="Selezione delle condizioni di confronto con un ordine di acquisto."><figcaption><p>Selezione delle condizioni di confronto con un ordine di acquisto.</p></figcaption></figure>
 
-**Logic Card: Quantity or Unit Price or Discount Match**
+**Scheda logica: quantità o prezzo unitario o corrispondenza sconto**
 
 Questa logic card è progettata per verificare automaticamente che la quantità, il prezzo unitario o lo sconto indicati in una conferma d'ordine corrispondano ai valori corrispondenti nell'ordine di acquisto. Questa verifica garantisce coerenza e accuratezza tra ciò che è stato ordinato e ciò che il fornitore conferma di consegnare.
 
@@ -131,7 +131,7 @@ La logica si attiva quando una qualsiasi delle seguenti condizioni viene soddisf
 * **Quantità**: la quantità degli articoli ordinati corrisponde alla quantità confermata dal fornitore.
 * **Prezzo unitario**: il prezzo per articolo concordato corrisponde alla conferma del fornitore.
 * **Sconto**: eventuali sconti applicati sono coerenti tra l'ordine di acquisto e la conferma d'ordine.
-* **Define Comparison Parameters**: configura i campi specifici (quantità, prezzo unitario, sconto) di cui la logic card verificherà la corrispondenza.
+* **Definire i parametri di confronto**: configura i campi specifici (quantità, prezzo unitario, sconto) di cui la logic card verificherà la corrispondenza.
 * **Automate Verification**: configura il sistema per confrontare automaticamente questi dettagli alla ricezione di una conferma d'ordine.
 * **Customize Alerts**: decidi il workflow per la gestione delle discrepanze, inclusa la personalizzazione degli avvisi per la revisione manuale.
 
@@ -153,9 +153,9 @@ Con una configurazione manuale è consigliabile suddividere i calcoli che dipend
 
 Con questa card puoi specificare il nome di un workflow che deve essere eseguito dopo il workflow corrente, se le sue condizioni sono soddisfatte e dopo le precedenti card "then" del workflow corrente. Pur dando priorità ai workflow eseguibili e attivi, consente anche di eseguire workflow disattivati se il documento soddisfa le condizioni del workflow.
 
-### **Adding calculated surcharges into an existing column** <a href="#pekg4i18rshn" id="pekg4i18rshn"></a>
+### **Aggiunta dei supplementi calcolati in una colonna esistente** <a href="#pekg4i18rshn" id="pekg4i18rshn"></a>
 
-<figure><img src="https://lh7-us.googleusercontent.com/XYY1xsFpp7_-Bi0WOSbotiVzspDLdaufx_xgoopMHmxdZnSDhroLpb0AE_si5PhwMq1jHfndc9FwOte9MOoCoTP5_JUYawO5cr4uIctIDHmwVjz3KacQrLJd8iBQy5KY4N-dMaWEi3IeTcc5OBRNJk4" alt=""><figcaption></figcaption></figure>
+
 
 Se desideri aggiungere tutti i sovrapprezzi come sconto negativo nella colonna dello sconto, puoi utilizzare la card di calcolo. Potrebbero esserci già voci in questa colonna: puoi impostarla come una delle variabili sulla card, sottrarvi il MTZ e aggiungere nuovamente il risultato in questa colonna. Nel caso siano presenti campi vuoti (sovrapprezzi solo per alcuni articoli), assumerà uno 0 per il suo calcolo.
 

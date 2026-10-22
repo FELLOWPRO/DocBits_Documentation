@@ -41,7 +41,7 @@ Questa guida ti accompagna nel collegamento del **database in sola lettura di Do
 <figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt=""><figcaption></figcaption></figure>
 
 * Fai clic su **OK**. Se richiesto, inserisci di nuovo le credenziali.
-  * <mark style="color:red;">**Nota:**</mark> se visualizzi l'errore **"password authentication failed for user"**, prova a inserire la password racchiusa tra **parentesi graffe `{}`**.
+  * Se compare `password authentication failed for user`, verificare host, database, nome utente e password. Nella finestra delle credenziali inserire la password effettiva. Le parentesi graffe per l’escape in una stringa di connessione ODBC fanno parte della sintassi del driver e non risolvono in generale gli errori di autenticazione.
 
 #### 4. Carica e trasforma i dati
 
@@ -60,20 +60,26 @@ Questa guida ti accompagna nel collegamento del **database in sola lettura di Do
 * Utilizza l'area di lavoro dei report di Power BI per creare dashboard.
 * Trascina i campi, aggiungi filtri dinamici (slicer), scegli i tipi di grafico e applica calcoli DAX.
 * Utilizza **Power Query Editor** per pulire o unire i dati prima di creare le visualizzazioni.
-* Riferimento: [Documentazione di Power BI](https://learn.microsoft.com/en-us/power-bi/?utm_source=chatgpt.com)
+* Riferimento: [Documentazione di Power BI](https://learn.microsoft.com/en-us/power-bi/)
 
 #### 6. Abilita l'aggiornamento pianificato (facoltativo)
 
-<mark style="color:red;">**Nota:**</mark> **Richiede Power BI Pro o Premium + Gateway**
+L’aggiornamento pianificato dipende dalla licenza o capacità dell’area di lavoro, dal connettore e dalla modalità di connessione. Per questa connessione ODBC, configurare un gateway raggiungibile con driver, DSN e credenziali appropriati. Verificare i requisiti attuali nella documentazione ufficiale.
 
-* Per mantenere i tuoi report sincronizzati con ClickHouse:
+* Per mantenere i tuoi report sincronizzati con PostgreSQL:
 * Pubblica il tuo file `.pbix` su **Power BI Service**.
-* Installa il **Power BI Gateway** (modalità Standard) su una macchina con accesso di rete a ClickHouse.
-* In Power BI Service:
-  * Vai al tuo dataset → **Settings** → **Scheduled Refresh**
+* Installa il **Power BI Gateway** (modalità Standard) su una macchina con accesso di rete a PostgreSQL.
+* In servizio Power BI:
+  * Vai al tuo dataset → **Impostazioni** → **Aggiornamento pianificato**
   * Associa il tuo DSN e fornisci le credenziali
 * Ulteriori informazioni [qui](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).&#x20;
 
 #### 7. Esempi di dashboard e viste dati&#x20;
 
 <div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Esempio di dashboard Power BI 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Esempio di dashboard Power BI 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Esempio di dashboard Power BI 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Esempio di dashboard Power BI 4"><figcaption></figcaption></figure></div>
+
+[Documentazione ufficiale — ODBC](https://learn.microsoft.com/en-us/power-query/connectors/odbc)
+
+[Documentazione ufficiale — psqlODBC](https://odbc.postgresql.org/docs/config-opt.html)
+
+[Documentazione ufficiale — Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)

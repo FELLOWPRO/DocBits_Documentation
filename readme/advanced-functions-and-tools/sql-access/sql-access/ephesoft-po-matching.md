@@ -1,4 +1,4 @@
-# Ephesoft PO matching
+# Abbinamento degli ordini di acquisto Ephesoft
 
 ## Tabella `public.ephesoft_po_matching`
 
@@ -11,8 +11,8 @@
 * `ephesoft_doc_id`: interno
 * `extracted_data`: text
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: timestamp con fuso orario
+* `last_modified_on`: timestamp con fuso orario
 * `is_deleted`: boolean
 
 ### Analisi e descrizione

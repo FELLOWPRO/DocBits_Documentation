@@ -28,14 +28,14 @@
   * È il nome visualizzato del campo.
   * Definisce come il campo appare nell'interfaccia utente.
   * <mark style="color:red;">**Nota:**</mark> **Il titolo può essere modificato in un secondo momento, se necessario.**
-*   **Select Field Type**
+*   **Seleziona tipo di campo**
 
     * Scegli il tipo di campo da un elenco a discesa.
     * I tipi di campo disponibili comprendono diverse opzioni per soddisfare le varie esigenze di inserimento dei dati.
     * <mark style="color:red;">**Nota:**</mark> **Una volta creato, il tipo non può più essere modificato.**
 
     <figure><img src="../../../../../.gitbook/assets/field_type_selection.png" alt="Selezione del tipo di campo" width="375"><figcaption></figcaption></figure>
-* **Optional: Enable Charges Element**
+* **Opzionale: Abilita Elemento Addebiti**
   * È possibile selezionare una casella di controllo denominata **Enable Charges Element**.
   * Se è selezionata, devi scegliere un elemento di costo da un elenco a discesa.
   * **Importante:** gli elementi di costo devono essere configurati in precedenza.

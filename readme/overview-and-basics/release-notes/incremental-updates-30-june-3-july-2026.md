@@ -7,7 +7,7 @@ periodo._
 
 ---
 
-## Highlights
+## Novità principali
 
 - **Chat AI sui log delle attività.** Un nuovo pannello di chat AI nella pagina
   Activity Logs consente di porre domande direttamente sull'attività dei log,

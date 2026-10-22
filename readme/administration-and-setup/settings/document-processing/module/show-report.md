@@ -1,4 +1,4 @@
-# Show Report
+# Mostra report
 
 ### Panoramica
 

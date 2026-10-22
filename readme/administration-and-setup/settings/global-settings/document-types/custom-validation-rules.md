@@ -111,7 +111,7 @@ Scegli un controllo. Le impostazioni sotto le schede cambiano in base al control
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-step3-checks.png" alt="Passaggio 3 con il controllo Required selezionato"><figcaption><p>I sette controlli. Required non richiede ulteriori impostazioni</p></figcaption></figure>
 
-#### Required — il campo deve avere un valore
+#### Obbligatorio — il campo deve avere un valore
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-required.png" alt="una verifica Required"><figcaption><p>Una verifica Required: nessuna configurazione aggiuntiva</p></figcaption></figure>
 
@@ -170,11 +170,11 @@ Il valore deve essere un numero compreso tra **Minimo** e **Massimo** (entrambi 
 
 Confronta il valore di un campo con un altro campo, con **oggi** o con un valore fisso, usando *equal to*, *not equal to*, *greater than*, *less than*, *on or after (≥)* o *on or before (≤)*. I numeri vengono confrontati come numeri e le date come date.
 
-* Due Date **on or after (≥)** Invoice Date
+* Data di scadenza **il o dopo (≥)** Data fattura
 * Invoice Date **on or before (≤)** oggi: nessuna fattura con data futura
 * Discount **meno di** 100
 
-#### Allowed values — da un elenco fisso
+#### Valori consentiti — da un elenco fisso
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-allowed.png" alt="una verifica Allowed values"><figcaption><p>Allowed values: un valore per riga, eventualmente senza distinzione tra maiuscole e minuscole</p></figcaption></figure>
 
@@ -195,7 +195,7 @@ Ad eccezione di **Obbligatorio**, ogni controllo **viene superato quando il valo
 * **Messaggio di errore visualizzato all'utente che effettua l'elaborazione.** — il testo mostrato nella schermata di convalida. Indica cosa non va **e** cosa fare: "La partita IVA del fornitore manca. Le fatture tedesche superiori a 250 EUR devono riportarla."
 * **Codice di errore** — un breve codice tecnico, ad esempio `REQUIRED_CONDITIONAL`, `FORMAT_MISMATCH`, `OUT_OF_RANGE`, `DATE_ORDER`, `LINES_HEADER_MISMATCH`, `VALUE_NOT_ALLOWED`. Compare nelle esportazioni e permette di raggruppare gli errori.
 
-## Test rule
+## Testare la regola
 
 Clicca su **Regola di prova** per eseguire la versione corrente della regola, salvata o meno, su un documento. Inserisci un **ID documento** oppure passa a **Tramite documento JSON** e incolla i dati estratti. **Non viene salvato nulla** e il documento non viene modificato.
 
@@ -244,19 +244,19 @@ Table line · Error · tabella `INVOICE_TABLE`, colonna `QUANTITY` · Applies wh
 Table line · Warning · colonna `NET_AMOUNT` · sempre · **Formula** `row.NET_AMOUNT == row.QUANTITY * row.UNIT_PRICE`, tolleranza `0.01`.
 
 **6. Formato del numero di fattura di un fornitore**
-Header field · Error · *Invoice Number* · Applies when *Supplier ID* is *20723* · **Modello** `^INV-\d{6}$`.
+Campo intestazione · Errore · *Numero fattura* · Si applica quando *Fornitore ID* è *20723* · **Modello** `^INV-\d{6}$`.
 
 **7. Data di scadenza non precedente alla data della fattura**
-Header field · Error · *Due Date* · sempre · **Confronta i campi** Due Date *on or after (≥)* Invoice Date · Codice `DATE_ORDER`.
+Campo intestazione · Errore · *Data di scadenza* · sempre · **Confronta i campi** Data di scadenza *on or after (≥)* Data fattura · Codice `DATE_ORDER`.
 
 **8. Nessuna fattura con data futura**
-Header field · Error · *Invoice Date* · sempre · **Confronta i campi** Invoice Date *on or before (≤)* oggi.
+Campo intestazione · Errore · *Data fattura* · sempre · **Confronta i campi** Data fattura *on or before (≤)* oggi.
 
 **9. Solo valute approvate (solo avviso)**
 Header field · **Avvertimento** · *Currency* · sempre · **Elenco dei valori** *approved_currencies* · Codice `VALUE_NOT_ALLOWED`.
 
 **10. Ordine di acquisto obbligatorio oltre 5.000**
-Header field · Error · *Purchase Order* · Applies when *Total Amount* greater than *5000* · **Obbligatorio**.
+Campo intestazione · Errore · *Ordine d'acquisto* · Si applica quando *Importo totale* maggiore di *5000* · **Obbligatorio**.
 
 ## Buone pratiche
 

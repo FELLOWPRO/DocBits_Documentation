@@ -1,6 +1,6 @@
 # Installazione di WatchDog
 
-<figure><img src="../../../.gitbook/assets/watchdog-installation-infographic.svg" alt="Passaggi di installazione di WatchDog"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-installation-it.svg" alt="Installazione di WatchDog e requisiti principali."><figcaption><p>Installazione di WatchDog e requisiti principali.</p></figcaption></figure>
 
 > **Consigliato:** Utilizza la configurazione moderna descritta di seguito. Le configurazioni di WatchDog vengono ora create direttamente nell'applicazione DocBits — non sono necessari file di configurazione locali.
 
@@ -30,7 +30,7 @@ C:\WatchDog\Export\        ← Export folder for exported files
 
 Scarica `WatchDog.exe` dall'applicazione DocBits:
 
-**Settings → Document Processing → WatchDog → General Tab → Download**
+**Impostazioni → Elaborazione documenti → WatchDog → Scheda Generale → Download**
 
 Inserisci il file `WatchDog.exe` scaricato in `C:\WatchDog\`.
 
@@ -59,7 +59,7 @@ WatchDog.exe start
 
 ### 6. Crea le Configurazioni in DocBits
 
-Vai a **Settings → Document Processing → WatchDog → Configurations Tab** in DocBits:
+Vai a **Impostazioni → Elaborazione documenti → WatchDog → Scheda Configurazioni** in DocBits:
 
 * Clicca su **New Import Configuration** per impostare le cartelle da monitorare
 * Clicca su **New Export Configuration** per impostare le destinazioni di esportazione
@@ -78,7 +78,7 @@ Vai a **Settings → Document Processing → WatchDog → Configurations Tab** i
 
 Dopo l'installazione, controlla lo stato di WatchDog in DocBits:
 
-**Settings → WatchDog → General Tab**
+**Impostazioni → WatchDog → Scheda Generale**
 
 <figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="Scheda General di WatchDog — Stato del servizio"><figcaption></figcaption></figure>
 
@@ -112,7 +112,7 @@ Il seguente metodo di configurazione V1 con file di configurazione locali è **o
 ### Configurazione di WatchDog in DocBits (V1)
 
 1. **Accedi alle impostazioni di WatchDog**
-   * Vai a **Settings → Document Processing → WatchDog**
+   * Vai a **Impostazioni → Elaborazione documenti → WatchDog**
 2. **Impostazioni delle cartelle**
    * Definisci i percorsi: `C:/WatchDog/Read` e `C:/WatchDog/Processed`
 

@@ -60,7 +60,7 @@ La configurazione dei tipi di documenti in Docbits richiede cura e competenza pe
 
 **Suggerimenti:**&#x20;
 
-**Transfer learning:**&#x20;
+**Apprendimento per trasferimento:**
 
 * Sfrutta modelli pre-addestrati e perfezionali con esempi di documenti specifici per ridurre il tempo di addestramento e aumentare l'accuratezza.&#x20;
 

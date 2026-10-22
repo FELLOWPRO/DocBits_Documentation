@@ -1,6 +1,6 @@
 # DocBits
 
-**DocBits. Make room for ambition.**
+**DocBits. Fate spazio all'ambizione.**
 
 Da OCR e IDP alla logica di business, alle approvazioni e ad Advanced Workflows.
 
@@ -38,7 +38,7 @@ Di seguito trovi una sintesi delle sue caratteristiche e dei suoi vantaggi princ
    * Facilita la registrazione automatica sui conti contabili.
    * Consente di suddividere gli importi per reparto.
    * Supporta la definizione dei conti contabili da parte del team contabilità fornitori.
-5. **Processi integrati di validazione e** [**approvazione**](broken-reference)
+5. **Processi integrati di validazione e** [**approvazione**](administration-and-setup/settings/global-settings/document-types/more-settings/approval/README.md)
    * Offre processi di validazione integrati per garantire l'accuratezza dei dati.
    * Include [workflow](administration-and-setup/workflow/) di approvazione per semplificare la gestione dei documenti.
 6. **Integrazione senza interruzioni**

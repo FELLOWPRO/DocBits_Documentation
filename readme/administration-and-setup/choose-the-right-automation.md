@@ -98,7 +98,7 @@ Un workflow che scrive un campo si comporta come una persona che salva il docume
 * **Non può** importare moduli o chiamare servizi esterni. È Python con restrizioni. Un errore in uno script viene registrato e non ferma mai l'elaborazione del documento, quindi uno script **non** è un modo affidabile per bloccare un documento: contrassegna invece il campo come non valido o crea un'attività.
 * **Approfondisci:** [Script](settings/global-settings/document-types/script/README.md)
 
-### Standard Workflow
+### Flusso di lavoro standard
 
 * **Usalo quando** il passo successivo dipende dal documento: assegnare a un utente o a un gruppo, approvare o rifiutare, creare un'attività, inviare un'e-mail, esportare, impostare uno stato, chiamare un'API.
 * **Viene eseguito** quando un documento raggiunge uno stato che hai scelto, cioè dopo la convalida. Può anche partire da un web hook, da una pianificazione o manualmente.
@@ -106,7 +106,7 @@ Un workflow che scrive un campo si comporta come una persona che salva il docume
 * **Non può** creare rami, attendere più condizioni o reagire all'errore di una scheda in un percorso separato. Per questo usa un Advanced Workflow.
 * **Approfondisci:** [Standard Workflow](workflow/standard-workflow-builder.md)
 
-### Advanced Workflow
+### Flusso di lavoro avanzato
 
 * **Usalo quando** un documento richiede percorsi diversi: rami per condizione, più condizioni combinate con ALL / ANY e un percorso per errori o condizioni non soddisfatte.
 * **Viene eseguito** sugli stessi eventi di uno Standard Workflow. Richiede l'abbonamento DocFlow Advanced.
@@ -114,7 +114,7 @@ Un workflow che scrive un campo si comporta come una persona che salva il docume
 * **Non può** agire su ciò che accade prima della convalida: parte dopo un cambio di stato. La logica precedente alla convalida appartiene a uno Script o a una regola.
 * **Approfondisci:** [Advanced Workflow](workflow/advanced-workflow-builder.md)
 
-### Workflow SDK (Card SDK)
+### SDK dei flussi di lavoro (Card SDK)
 
 * **Usalo quando** ti serve una scheda che non esiste, per esempio una condizione o un'azione specifica di un'applicazione partner.
 * **Viene eseguito** ogni volta che viene eseguito un workflow che contiene la scheda.
@@ -122,7 +122,7 @@ Un workflow che scrive un campo si comporta come una persona che salva il docume
 * **Non può** aprire connessioni di rete. Un'esecuzione è limitata a 60 secondi e 200 chiamate SDK. Una scheda diventa attiva solo dopo che DocBits l'ha verificata e approvata.
 * **Approfondisci:** [Card SDK](workflow/card-sdk.md)
 
-## Best practice
+## Buone pratiche
 
 * **Inizia dallo strumento più semplice.** Una Regola di Trasformazione è meglio di uno Script per la formattazione. Una Regola di convalida personalizzata è meglio di uno Script per un controllo. Ricorri a uno Script o a una scheda SDK solo quando una regola o una scheda integrata non basta.
 * **Prima correggere, poi controllare, infine instradare.** Le Regole di Trasformazione e gli Script preparano i dati, le Regole di convalida personalizzate li giudicano, i Workflow decidono cosa fare del documento. È l'ordine del flusso.
@@ -142,7 +142,7 @@ Un workflow che scrive un campo si comporta come una persona che salva il docume
 | Uno Script da cui ci si aspetta che fermi un documento non valido | Una Regola di convalida personalizzata |
 | Una Regola di convalida personalizzata da cui ci si aspetta che corregga un valore | Una Regola di Trasformazione, poi la regola di convalida |
 | Riscrivere il numero PO in una regola di corrispondenza PO | Una Regola di Trasformazione sul campo *Purchase Order*, prima dell'abbinamento |
-| Un Advanced Workflow per un singolo *When → Then* | Uno Standard Workflow |
+| Un flusso di lavoro avanzato per un singolo *Quando → Allora* | Uno Standard Workflow |
 | Una scheda SDK per qualcosa che una scheda integrata sa fare | La scheda integrata |
 
 ## Pagine correlate

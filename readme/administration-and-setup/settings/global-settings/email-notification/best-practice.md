@@ -1,4 +1,4 @@
-# Best Practice
+# Buone pratiche
 
 ### Ecco alcune best practice per utilizzare efficacemente le notifiche email:
 

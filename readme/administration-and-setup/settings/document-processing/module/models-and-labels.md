@@ -1,4 +1,4 @@
-# Models & Labels
+# Modelli ed etichette
 
 ### Panoramica
 

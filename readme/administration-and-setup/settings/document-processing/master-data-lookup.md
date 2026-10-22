@@ -5,7 +5,7 @@
 
 La **Ricerca dei dati anagrafici** (barra laterale: **Lookup Master Data**) consente di visualizzare e gestire i dati anagrafici che DocBits utilizza per convalidare i dati estratti dai documenti rispetto al sistema ERP. È essenziale per un PO matching accurato, la convalida dei fornitori e il completamento automatico dei campi. Aprila da **Impostazioni → Elaborazione dei documenti → Lookup Master Data**.
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_overview.png" alt="Ricerca dei dati anagrafici"><figcaption><p>Pagina Ricerca dei dati anagrafici: origini dati e tabella dati</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-overview-it.png" alt="Ricerca dei dati anagrafici: sorgenti e tabella dei fornitori, con i valori dell’organizzazione nascosti."><figcaption><p>Ricerca dei dati anagrafici: sorgenti e tabella dei fornitori, con i valori dell’organizzazione nascosti.</p></figcaption></figure>
 
 ## Origini dati
 
@@ -33,16 +33,16 @@ Le tabelle Fornitore e Ordine d'acquisto includono colonne come ID fornitore, No
 
 Fai clic su **Settings** (icona dell'ingranaggio) in basso a sinistra nel pannello delle origini dati per aprire le impostazioni dei dati anagrafici.
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_settings.png" alt="Impostazioni della Ricerca dei dati anagrafici"><figcaption><p>Impostazioni Supplier BOD ed eliminazione degli ordini d'acquisto</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-settings-it.png" alt="Impostazioni dei dati anagrafici: sincronizzazione dei fornitori e conservazione degli ordini di acquisto. I valori visualizzati non sono stati modificati."><figcaption><p>Impostazioni dei dati anagrafici: sincronizzazione dei fornitori e conservazione degli ordini di acquisto. I valori visualizzati non sono stati modificati.</p></figcaption></figure>
 
-### Supplier BOD
+### BOD del fornitore
 
-**Allow Multiple Supplier Accounts Sync**
+**Consenti sincronizzazione di più account fornitore**
 
 * **Attivato**: un singolo fornitore può avere più elementi `<FinancialParty>` nel BOD (spesso a causa di più IBAN o conti finanziari). Tutte le voci `<FinancialParty>` vengono estratte e salvate nella tabella dei fornitori, in modo da poter memorizzare più attributi finanziari.
 * **Disattivato**: viene estratto solo l'ultimo elemento `<FinancialParty>` trovato per il fornitore. Gli attributi finanziari precedenti (ad esempio IBAN aggiuntivi) vengono ignorati e vengono salvati solo i dati dell'ultima occorrenza.
 
-### Purchase Order Deletion Assistant
+### Assistente per l’eliminazione degli ordini di acquisto
 
 **Delete Purchase Order After**: scegli quando devono essere rimossi gli ordini d'acquisto chiusi. Dopo il periodo selezionato, i record vengono eliminati automaticamente.
 

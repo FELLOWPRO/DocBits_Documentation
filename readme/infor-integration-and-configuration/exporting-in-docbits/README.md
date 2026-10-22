@@ -1,3 +1,3 @@
-# Exporting in DocBits
+# Esportazione in DocBits
 
-A guide to exporting documents in DocBits.
+Una guida per esportare documenti in DocBits.

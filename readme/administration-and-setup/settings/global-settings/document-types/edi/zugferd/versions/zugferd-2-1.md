@@ -21,7 +21,7 @@ Oltre a `INVOICE_TYPE_CODE` grezzo, l'XSLT di TRANSFORMATION predefinito emette 
 | Campo DocBits | Sorgente | Logica |
 | :--- | :--- | :--- |
 | `INVOICE_TYPE` | `CrossIndustryInvoice/ExchangedDocument/TypeCode` | UNCL 1001 `381` o `261` → **Credit Note**; qualsiasi altro codice → **Invoice** |
-| `INVOICE_SUB_TYPE` | `SupplyChainTradeTransaction/ApplicableHeaderTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | Non vuoto → **Purchase Invoice**; vuoto/assente → **Cost Invoice** |
+| `INVOICE_SUB_TYPE` | `SupplyChainTradeTransaction/ApplicableHeaderTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | Non vuoto → **Fattura d'acquisto**; vuoto/assente → **Fattura costi** |
 
 ### Ripartizione fiscale (classificata per fascia)
 

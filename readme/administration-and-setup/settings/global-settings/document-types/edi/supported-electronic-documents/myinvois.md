@@ -13,7 +13,7 @@ Consultate la guida del paese per i limiti delle versioni, la configurazione eff
 | Proprietà             | Valore                                                |
 | --------------------- | ----------------------------------------------------- |
 | **Paese / Regione**   | Malesia                                               |
-| **Tipi di documento** | Invoice, Credit Note, Debit Note, Self-Billed Invoice |
+| **Tipi di documento** | Fattura, nota di credito, nota di addebito, fattura autofatturata |
 | **Formato**           | UBL 2.1 XML                                    |
 | **Standard**          | MyInvois (LHDN - Lembaga Hasil Dalam Negeri)          |
 

@@ -35,5 +35,5 @@ ZUGFeRD 1.0 è stato il primo standard tedesco di fattura ibrida, pubblicato nel
 ## Correlati
 
 * [Configurazione di ZUGFeRD](../zugferd/)
-* [Mappatura dei campi ZUGFeRD](../zugferd/versions/)
+* [Mappatura dei campi ZUGFeRD](../zugferd/README.md)
 * [Documenti elettronici supportati](./)

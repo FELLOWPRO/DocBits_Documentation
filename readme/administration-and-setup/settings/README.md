@@ -1,6 +1,6 @@
 # Impostazioni
 
-<figure><img src="../../.gitbook/assets/settings_overview.png" alt="Panoramica delle impostazioni"><figcaption><p>Pagina di panoramica delle impostazioni</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-settings-overview-it.png" alt="Impostazioni dell’organizzazione: dati identificativi nascosti. Il paese visualizzato è un valore configurato; nessuna impostazione è stata modificata."><figcaption><p>Impostazioni dell’organizzazione: dati identificativi nascosti. Il paese visualizzato è un valore configurato; nessuna impostazione è stata modificata.</p></figcaption></figure>
 
 L'area Impostazioni è il tuo punto centrale per configurare DocBits. È organizzata in cinque sezioni principali:
 

@@ -1,7 +1,7 @@
 # Attività
 
 {% embed url="https://youtu.be/MZoDMibM-7E" %}
-DocBits Tasks & Notifications Tutorial: Assign Work, Track Status & Handle Workflow Tasks
+DocBits Tutorial su attività e notifiche: assegna lavoro, monitora lo stato e gestisci le attività del flusso di lavoro
 {% endembed %}
 
 Questo è il luogo dove puoi tenere d'occhio le tue attività. Puoi scegliere tra due layout diversi: uno è un po' più dettagliato dell'altro. Puoi anche filtrare le attività in base a diversi criteri, come se sono assegnate a te o lo stato dell'attività.

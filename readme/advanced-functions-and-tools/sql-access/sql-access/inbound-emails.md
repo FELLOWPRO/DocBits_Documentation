@@ -1,4 +1,4 @@
-# Inbound Emails
+# E-mail in arrivo
 
 ## Tabella `public.inbound_emails`
 
@@ -11,12 +11,12 @@
 * `email_receiver`: interno
 * `token`: interno
 * `created_by`: integer
-* `created_on`: timestamp with time zone
+* `created_on`: timestamp con fuso orario
 * `last_modified_by`: interno
-* `last_modified_on`: timestamp with time zone
+* `last_modified_on`: timestamp con fuso orario
 * `is_deleted`: boolean
 * `deleted_by`: interno
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: timestamp con fuso orario
 
 ### Analisi e descrizione
 

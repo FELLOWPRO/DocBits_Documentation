@@ -1,4 +1,4 @@
-# Document Report
+# Informe de documentos
 
 ## Columnas
 
@@ -15,8 +15,8 @@
 * `table_values_total`: integer
 * `table_values_correct`: integer
 * `detail_report`: text
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: marca de tiempo con zona horaria
+* `last_modified_on`: marca de tiempo con zona horaria
 * `is_deleted`: boolean
 * `validated_by`: integer
 * `sub_org_id`: interno

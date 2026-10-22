@@ -1,4 +1,4 @@
-# Lookup field configuration
+# Configuración del campo de búsqueda
 
 ## Tabla `public.lookup_field_configuration`
 
@@ -13,10 +13,10 @@
 * `parent_field_id`: interno
 * `auto_trigger`: boolean
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: marca de tiempo con zona horaria
+* `last_modified_on`: marca de tiempo con zona horaria
 * `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: marca de tiempo con zona horaria
 * `search_operator`: interno
 * `last_modified_by`: interno
 * `deleted_by`: interno

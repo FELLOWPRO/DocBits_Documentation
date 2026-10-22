@@ -1,18 +1,18 @@
-# Workflow Description: Conditional Export Trigger
+# Descripción del flujo de trabajo: Activador de exportación condicional
 
 
 
-<figure><img src="../../../.gitbook/assets/docbits_settings_workflow.png" alt="DocBits Configuración Flujo de trabajo"><figcaption></figcaption></figure>
+
 
 Este flujo de trabajo describe las condiciones bajo las cuales debe iniciarse un proceso de exportación. Garantiza que solo los documentos que cumplen todos los criterios especificados se procesen para su exportación, mejorando la integridad de los datos y la alineación con las reglas de negocio.
 
-### When:
+### Cuándo:
 
 * Un documento dentro del sistema se evalúa para determinar su elegibilidad para la exportación.
 
-### Logic:
+### Lógica:
 
-1. **Document Type Check**
+1. **Verificación de tipo de documento**
    * El documento debe ser de un tipo determinado (por ejemplo, "Invoice" o "Receipt"). Especifique el tipo de documento que califica para el proceso de exportación.
 2. **Status Verification**
    * El estado actual del documento debe cumplir criterios predefinidos (por ejemplo, "Approved" o "Ready for Export") que indiquen que está listo para su procesamiento posterior.
@@ -22,15 +22,15 @@ Este flujo de trabajo describe las condiciones bajo las cuales debe iniciarse un
      * El importe total de la confirmación del pedido coincide con el importe total del pedido de compra.
      * Las fechas de entrega especificadas en la confirmación del pedido se ajustan a las del pedido de compra.
 
-### Then:
+### Entonces:
 
-#### Action:
+#### Acción:
 
 * **Initiate Export**
   * Si se cumplen todas las condiciones anteriores, el sistema inicia automáticamente el proceso de exportación del documento.
   * Esto puede implicar la generación de un archivo de exportación, el envío de datos a un sistema externo o la activación de un flujo de trabajo en otra aplicación.
 
-#### Implementation Example:
+#### Ejemplo de implementación:
 
 ```yaml
 rules:

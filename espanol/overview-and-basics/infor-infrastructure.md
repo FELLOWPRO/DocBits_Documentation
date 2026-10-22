@@ -14,7 +14,7 @@ Cuando se trata de comunicación con la base de datos, no tomamos riesgos. Nuest
 
 El manejo de documentos es muy sencillo con Docbits. Todos los documentos subidos se almacenan de forma segura en un ‘Espacio’ dedicado. Utilizamos encriptación SSL para el tráfico de datos y requerimos múltiples claves para el acceso a archivos, asegurando que sus documentos estén tan seguros como una bóveda.
 
-### Traffic Security
+### Seguridad del tráfico de red
 
 Solo permitimos conexiones aseguradas por HTTPS para comunicarnos con nuestros servidores. Esto asegura que todos los datos transferidos estén encriptados, manteniendo su información sensible segura y protegida. Es como tener un guardia de seguridad para sus datos, 24/7.
 

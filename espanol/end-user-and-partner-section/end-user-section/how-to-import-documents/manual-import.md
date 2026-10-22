@@ -3,7 +3,7 @@
 Si deseas importar documentos manualmente en DocBits, sigue estos sencillos pasos:
 
 {% embed url="https://youtu.be/5_11Q0JbeaU" %}
-DocBits Import Tutorial: Upload Documents, Drag & Drop + Manual vs Automatic Classification
+DocBits Tutorial de importación: cargar documentos, arrastrar y soltar + clasificación manual versus automática
 {% endembed %}
 
 * Haz clic en el botón de Subir en el Panel de Control de DocBits.

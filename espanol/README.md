@@ -1,6 +1,6 @@
 # DocBits
 
-**DocBits. Make room for ambition.**
+**DocBits. Haz espacio para la ambición.**
 
 De OCR e IDP a la lógica de negocio, las aprobaciones y Advanced Workflows: descubre la evolución de DocBits.
 
@@ -38,7 +38,7 @@ A continuación se presenta un resumen de sus características y ventajas única
    * Facilita la contabilización automática en cuentas del libro mayor.
    * Permite dividir los importes por departamento.
    * Admite la definición de cuentas del libro mayor por parte del equipo de cuentas a pagar.
-5. **Procesos integrados de validación y** [**aprobación**](broken-reference)
+5. **Procesos integrados de validación y** [**aprobación**](administration-and-setup/settings/global-settings/document-types/more-settings/approval/README.md)
    * Ofrece procesos de validación integrados para garantizar la exactitud de los datos.
    * Incluye [flujos de trabajo](administration-and-setup/workflow/) de aprobación para agilizar la gestión de documentos.
 6. **Integración fluida**

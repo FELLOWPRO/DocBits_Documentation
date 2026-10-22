@@ -1,4 +1,4 @@
-# Sitemap
+# Mapa del sitio
 
 La Sitemap es el índice completo y consultable de todo lo que DocBits ofrece — cada página, diálogo, entrada de barra lateral, acción y función dentro de la página, agrupados por categoría. Es el complemento extenso de la [Búsqueda Rápida Global](global-quick-search.md).
 

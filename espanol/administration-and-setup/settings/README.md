@@ -1,10 +1,10 @@
-# Settings
+# Configuración
 
 <figure><img src="../../.gitbook/assets/settings_overview.png" alt="Settings Overview"><figcaption><p>Página Settings Overview</p></figcaption></figure>
 
 El área Settings es su centro de control para configurar DocBits. Está organizada en cinco secciones principales:
 
-## 1. Organization & Access
+## 1. Organización y acceso
 
 Gestione el perfil de su empresa y controle quién puede acceder a qué.
 
@@ -13,7 +13,7 @@ Gestione el perfil de su empresa y controle quién puede acceder a qué.
 * **Sub-Organizations**: cree y gestione suborganizaciones para configuraciones con varias entidades.
 * **Groups and Permissions**: defina grupos de usuarios y configure permisos detallados para cada grupo.
 
-## 2. Document Processing
+## 2. Procesamiento de documentos
 
 Configure cómo se importan, procesan y exportan los documentos.
 
@@ -30,7 +30,7 @@ Configure cómo se importan, procesan y exportan los documentos.
 * **Decision Trees**: cree lógica de decisión basada en reglas con un diseñador visual. Admite varias políticas (Unique, First, Priority, Collect, etc.).
 * **Agent Setup**: cree y gestione agentes de automatización y canales de comunicación para flujos de trabajo de procesamiento automático de documentos.
 
-## 3. Communication & Notifications
+## 3. Comunicación y notificaciones
 
 Controle cómo se comunica DocBits con los usuarios y cómo procesa los correos electrónicos entrantes.
 
@@ -38,7 +38,7 @@ Controle cómo se comunica DocBits con los usuarios y cómo procesa los correos 
 * **Email Templates**: cree y gestione plantillas de correo electrónico reutilizables para notificaciones, organizadas por tipo de documento.
 * **Email Ingestion**: configure cómo se clasifican automáticamente los correos electrónicos entrantes y se convierten en documentos. Incluye reglas de clasificación, extracción de campos, procesamiento, gestión de remitentes y entrenamiento, organizadas por tipo de documento (Orders, Invoices, Quotes, Delivery Notes, COA, PO Confirm).
 
-## 4. System & Administration
+## 4. Sistema y administración
 
 Supervise el estado del sistema, gestione las integraciones y mantenga la seguridad.
 
@@ -52,7 +52,7 @@ Supervise el estado del sistema, gestione las integraciones y mantenga la seguri
 * **Cache Management**: configure los intervalos de limpieza automática de caché (TTL) para las cachés de Received Delivery, Purchase Order y Task/Notification.
 * **Fulltext Search Settings**: configure las capacidades de búsqueda de texto completo en sus documentos y datos (requiere que el módulo Fulltext Search esté activado).
 
-## 5. Supplier Settings
+## 5. Supplier Configuración
 
 Configure el Supplier Portal y gestione los flujos de trabajo relacionados con proveedores.
 

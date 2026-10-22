@@ -4,7 +4,7 @@
 
 Deberá crear el punto de conexión de la API de DocBits (Connection Point) para poder crear después el flujo de datos.
 
-Primero, en InforOS, navegue a ION Desk → Connect → Connection Points
+Primero, en InforOS, navega a ION Desk → Conectar → Puntos de conexión
 
 ![](https://lh7-us.googleusercontent.com/852EogukgFvteFTdg6_a6MPLaBUUqDw1J4x4H2q9BMjaVzZIGlpASC_fImhvAxe-nPBvIvOPFTI0oG8D3RlkAHiFDbLsVrsjaJMD1B5otXyIzPDkvoJvrj-JvMEHao73jgcZ5aKLAP4fCpkP7XV08JE)
 

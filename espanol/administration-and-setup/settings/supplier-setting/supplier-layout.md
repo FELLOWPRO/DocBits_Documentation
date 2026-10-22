@@ -1,4 +1,4 @@
-# Supplier Layout
+# Diseño del proveedor
 
 Aquí es donde decides qué información deseas incluir y defines qué información es necesaria. Puedes diseñar fácilmente tu diseño utilizando las funciones de arrastrar y soltar.
 

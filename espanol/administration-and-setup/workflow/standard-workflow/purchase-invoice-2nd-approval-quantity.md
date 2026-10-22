@@ -1,6 +1,6 @@
-# Purchase Invoice - 2nd Approval Quantity
+# Factura de compra: segunda aprobación de cantidad
 
-<figure><img src="../../../../.gitbook/assets/docbits_approval_invoice_4.png" alt="DocBits Aprobación Factura 4"><figcaption></figcaption></figure>
+
 
 Este título indica que la regla se refiere específicamente al tratamiento de las facturas de compra durante una fase de aprobación secundaria, con énfasis en la verificación de la exactitud de las cantidades indicadas.
 
@@ -19,8 +19,8 @@ Este título indica que la regla se refiere específicamente al tratamiento de l
 
 #### Propósito de esta regla:
 
-* **Accuracy and Compliance**: La regla es vital para garantizar que el proceso de facturación sea preciso y se ajuste a los términos acordados en el pedido de compra. Ayuda a prevenir discrepancias financieras y posibles errores de inventario.
+* **Precisión y cumplimiento**: La regla es vital para garantizar que el proceso de facturación sea preciso y se ajuste a los términos acordados en el pedido de compra. Ayuda a prevenir discrepancias financieras y posibles errores de inventario.
 * **Streamlined Approvals**: La automatización del proceso de revisión para discrepancias específicas ayuda a agilizar las aprobaciones y garantiza que cualquier problema sea abordado rápidamente por el personal adecuado.
-* **Enhanced Financial Oversight**: Exigir una aprobación secundaria para las verificaciones de cantidad refuerza los controles financieros y la rendición de cuentas dentro de la organización.
+* **Mayor supervisión financiera**: Exigir una aprobación secundaria para las verificaciones de cantidad refuerza los controles financieros y la rendición de cuentas dentro de la organización.
 
 Esta configuración ejemplifica cómo la automatización de flujos de trabajo puede utilizarse para mejorar la eficiencia operativa y garantizar la integridad financiera, especialmente en la gestión de procesos de compra complejos dentro de una empresa.

@@ -41,7 +41,7 @@ Siga estos pasos para acceder a la **página de informes** en DocBits:
 
 <figure><img src="../.gitbook/assets/average_system_time_display.png" alt="Indicador del tiempo medio del sistema" width="437"><figcaption></figcaption></figure>
 
-### **6. Sección Changed Fields**
+### **6. Sección Campos modificados**
 
 * Debajo de la información relacionada con el tiempo se encuentra la sección **Changed Fields**. Esta sección muestra un diagrama con la frecuencia con la que los usuarios modificaron manualmente cada campo del documento durante el período seleccionado.
 * Cada campo se muestra con el número de cambios correspondiente, representado como barras en el diagrama.
@@ -59,13 +59,13 @@ Siga estos pasos para acceder a la **página de informes** en DocBits:
 
 Debajo de la sección **Changed Fields** encontrará cuatro botones adicionales que ofrecen información más detallada al hacer clic en ellos. Cada botón se expande al hacer clic para mostrar más información.
 
-1.  **Total Documents per Type**
+1.  **Total de documentos por tipo**
 
     * Este botón muestra el número total de documentos de cada tipo de documento (por ejemplo, Invoice, Purchase Order, etc.) durante el período seleccionado.
     * Al hacer clic en el botón, se expande y muestra una lista de tipos de documento con el recuento de los documentos de cada tipo procesados en el período seleccionado.
 
     <figure><img src="../.gitbook/assets/total_documents_per_type_report.png" alt="Informe de total de documentos por tipo" width="563"><figcaption></figcaption></figure>
-2.  **Daily Average per Doctype**
+2.  **Promedio diario por tipo de documento**
 
     * Este botón muestra el promedio diario de documentos procesados, clasificados por tipo de documento.
     * Al hacer clic en el botón, se expande y muestra los tipos de documento con su promedio diario correspondiente.

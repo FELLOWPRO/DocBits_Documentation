@@ -1,4 +1,4 @@
-# Document type attributes
+# Atributos del tipo de documento
 
 ## Columnas
 
@@ -9,8 +9,8 @@
 * `attribute_key`: interno
 * `attribute_value`: text
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: marca de tiempo con zona horaria
+* `last_modified_on`: marca de tiempo con zona horaria
 * `is_deleted`: boolean
 * `sub_org_id`: interno
 

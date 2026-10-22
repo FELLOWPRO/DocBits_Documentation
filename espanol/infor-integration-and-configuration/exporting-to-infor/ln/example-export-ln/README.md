@@ -69,10 +69,10 @@ Además de las asignaciones dinámicas, se utilizan varios campos estáticos par
 
 * **Campos estáticos de cabecera**:
   * Financial Company: 0200
-  * Rate Determiner: docd
-  * External Rate Factor: 1
+  * Determinador de tarifas: docd
+  * Factor de Tarifa Externa: 1
 * **Campos estáticos de línea de recepción**:
-  * Order Type: purchase
+  * Tipo de pedido: compra
   * Logistic Company: 200
   * Order Sequence: 1
 * **Campos estáticos de línea de costes**:

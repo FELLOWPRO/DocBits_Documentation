@@ -32,7 +32,7 @@ Debajo de los filtros aparecen cuatro tarjetas de resumen:
 | **ADVERTENCIAS** | Número total de advertencias del periodo seleccionado. |
 | **TOP SOURCE** | El servicio que genera más registros, con su recuento. |
 
-## Real User Monitoring (RUM)
+## Supervisión de usuarios reales (RUM)
 
 Debajo de las tarjetas de resumen, las métricas RUM muestran datos de rendimiento del frontend recogidos en sesiones reales de navegador de los usuarios.
 

@@ -1,7 +1,7 @@
 # Soporte para usuarios
 
 {% embed url="https://youtu.be/fQUIrp-qz9c" %}
-DocBits Support Ticket Tutorial: Report Bugs, Attach Files & Get Help Faster
+DocBits Tutorial de tickets de soporte: informar errores, adjuntar archivos y obtener ayuda más rápido
 {% endembed %}
 
 ### Soporte al Usuario <a href="#ikpwh4qbrq82" id="ikpwh4qbrq82"></a>

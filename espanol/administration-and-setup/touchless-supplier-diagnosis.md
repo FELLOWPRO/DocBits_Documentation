@@ -16,7 +16,7 @@ La página muestra:
 
 Una breve nota explica una página vacía, por ejemplo: *5 documents from this supplier are still being processed and have no analysis result yet.* (5 documentos de este proveedor aún se están procesando y todavía no tienen resultado de análisis) o *All 40 completed documents from this supplier ran touchless: there is nothing to diagnose.* (los 40 documentos completados de este proveedor se procesaron touchless: no hay nada que diagnosticar).
 
-### Issue clusters
+### Grupos de incidencias
 
 Un **clúster** agrupa los documentos de un proveedor que se detuvieron por el **mismo primer motivo**. En lugar de 40 problemas individuales, ve "3 problemas".
 
@@ -25,18 +25,18 @@ Un **clúster** agrupa los documentos de un proveedor que se detuvieron por el *
 **Clúster de ejemplo (ilustrativo).**
 
 * **Headline**: *Required field missing* en la etapa *Field Validation*
-* **Affected**: 28 documentos. **Recoverable**: 28 documentos. **Expected lift**: +2.8 pp
+* **Afectados**: 28 documentos. **Recuperable**: 28 documentos. **Aumento esperado**: +2.8 pp
 * **Suspected cause**: el proveedor imprime el número de OC debajo de la tabla, donde la extracción no busca
 * **What to change**: *Master data change*: añadir el diseño de este proveedor. **Open** le lleva a la página de ajustes correcta
-* **Owner**: Consultant. **Confidence**: Medium. **Source**: Hypothesis
+* **Propietario**: Consultor. **Confianza**: Media. **Fuente**: Hipótesis
 
 Qué muestra una tarjeta de clúster:
 
 | Parte | Significado |
 | --- | --- |
 | **First blocker** y **stage** | El motivo y la etapa del pipeline en la que se detienen los documentos. Hay más de 30 motivos, por ejemplo *Supplier not identified*, *Purchase order not found*, *Unit price outside PO tolerance*, *Rejected by the ERP*, *E-invoice validation failed* |
-| **Affected / Recoverable / Expected lift** | Cuántos documentos, cuántos se pueden recuperar y cuántos puntos porcentuales supondría |
-| **Suspected cause / Confirmed cause** | Lo que DocBits cree que es el motivo (o lo que una persona confirmó) |
+| **Afectado/Recuperable/Aumento esperado** | Cuántos documentos, cuántos se pueden recuperar y cuántos puntos porcentuales supondría |
+| **Causa sospechada / Causa confirmada** | Lo que DocBits cree que es el motivo (o lo que una persona confirmó) |
 | **Evidence** y **Missing evidence** | En qué se basa el hallazgo y lo que DocBits **no** pudo establecer. Lea **Missing evidence** antes de fiarse del resto |
 | **What to change** | Pasos concretos con enlaces **Open** a los ajustes. Una etiqueta indica el tipo: *Configuration change*, *Master data change*, *Supplier template change*, *Process change*, *Supplier action needed*, *Not fixable* |
 | **Owner** | DocBits, Customer, Consultant, Supplier o Unassigned |

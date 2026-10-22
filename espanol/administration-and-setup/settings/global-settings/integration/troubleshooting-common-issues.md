@@ -1,4 +1,4 @@
-# Troubleshooting Common Issues
+# Solución de problemas habituales
 
 Estos son los pasos de resolución de problemas para los incidentes habituales al integrar DocBits con un Identity Service Provider (IdP) u otros servicios:
 

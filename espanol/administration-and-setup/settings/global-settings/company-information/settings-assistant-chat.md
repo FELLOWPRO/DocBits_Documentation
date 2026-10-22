@@ -1,4 +1,4 @@
-# Settings Assistant: qué puede hacer el chat
+# Asistente de configuración: qué puede hacer el chat
 
 ## Descripción general
 
@@ -29,17 +29,17 @@ Cuando abre el panel en una página de ajustes, le saluda para **esa página** y
 
 | Página | Preguntas de ejemplo |
 | --- | --- |
-| Company Information | "How do I change our company address?", "Where do I upload our logo?", "Which domains are registered for our organization?" |
-| Import | "Is email import active for us?", "Which email address do we send documents to?", "How do I set up an FTP or SFTP import?" |
-| Classify & Extract | "Which AI model is used for extraction?", "Is splitting documents on barcodes active for us?", "Can I use a different AI model for one supplier?" |
-| Users | "How do I invite a new user?", "How do I make a user an administrator?", "How do I deactivate a user?" |
-| Settings overview | "How do I enable barcode detection?", "Why isn't PO matching active?", "Where do I find the email import settings?" |
+| Información de la empresa | "¿Cómo cambio la dirección de nuestra empresa?", "¿Dónde subo nuestro logotipo?", "¿Qué dominios están registrados para nuestra organización?" |
+| Importación | "¿Tenemos activada la importación por correo electrónico?", "¿A qué dirección de correo electrónico enviamos los documentos?", "¿Cómo configuro una importación por FTP o SFTP?" |
+| Clasificación y extracción | "¿Qué modelo de IA se utiliza para la extracción?", "¿Tenemos activada la división de documentos por códigos de barras?", "¿Puedo utilizar otro modelo de IA para un proveedor?" |
+| Usuarios | "¿Cómo invito a un nuevo usuario?", "¿Cómo convierto a un usuario en administrador?", "¿Cómo desactivo a un usuario?" |
+| Resumen de ajustes | "¿Cómo activo la detección de códigos de barras?", "¿Por qué no está activo el cotejo de pedidos?", "¿Dónde encuentro los ajustes de importación por correo electrónico?" |
 
 Haga clic en una pregunta y se envía de inmediato. Debajo de las tres preguntas, el panel dice *I can also help with any other setting — just ask.* (también puedo ayudarle con cualquier otro ajuste, solo pregunte). Durante una conversación, el chip **Help with this page** permanece en la parte inferior y pregunta "What can I configure on this page?".
 
 ### Ejemplo 1: Encontrar un ajuste
 
-Usted pregunta **"How do I change our company address?"**
+Usted pregunta **"¿Cómo cambio la dirección de nuestra empresa?"**
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address-es.png" alt="El asistente responde con la ruta a la dirección de la empresa y un botón Open setting"><figcaption><p>La respuesta nombra el lugar, y la tarjeta le da la ruta exacta y un botón <strong>Open setting</strong>.</p></figcaption></figure>
 
@@ -47,7 +47,7 @@ La respuesta indica dónde está la dirección. La tarjeta de debajo muestra la 
 
 ### Ejemplo 2: Entender un ajuste que tiene varios nombres
 
-Usted pregunta **"How do I enable barcode detection?"**
+Usted pregunta **"¿Cómo activo la detección de códigos de barras?"**
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode-es.png" alt="El asistente explica los tres ajustes de códigos de barras y cuándo activar cada uno"><figcaption><p>Cuando una palabra encaja con varios ajustes, el asistente enumera cada uno con <strong>Enable when</strong> y <strong>Leave off when</strong>.</p></figcaption></figure>
 
@@ -59,7 +59,7 @@ Usted pregunta **"How do I enable barcode detection?"**
 
 ### Ejemplo 3: Averiguar por qué algo no ocurre
 
-Usted pregunta **"Why isn't PO matching active?"**
+Usted pregunta **"¿Por qué no está activo el cotejo de pedidos?"**
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching-es.png" alt="El asistente muestra el valor actual de cada ajuste de la coincidencia con la OC"><figcaption><p>Ante una pregunta de "por qué", el asistente lee su configuración y muestra cada ajuste con su valor <strong>Current</strong>.</p></figcaption></figure>
 
@@ -90,9 +90,9 @@ No confunda **Custom Validation Rules** (reglas para los campos de un tipo de do
 
 ### Ejemplo 6: Más preguntas para probar
 
-* "Which AI model is used for extraction?"
-* "Is splitting documents on barcodes active for us?"
-* "How do I deactivate a user?"
+* "¿Qué modelo de IA se utiliza para la extracción?"
+* "¿Tenemos activada la división de documentos por códigos de barras?"
+* "¿Cómo desactivo a un usuario?"
 * "Where do I set how long documents are kept?"
 * "Which settings affect the touchless rate?"
 * "Show me a screenshot of the supplier portal settings."

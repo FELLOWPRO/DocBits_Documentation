@@ -1,4 +1,4 @@
-# Bar Code Extractions
+# Extracción de códigos de barras
 
 ## Descripción general
 
@@ -17,7 +17,7 @@ Para activar la función Bar-Code Extraction, siga estos pasos:
 
 ## **Ajustes adicionales**
 
-### **Barcode Assignment**
+### **Asignación de códigos de barras**
 
 #### **Finalidad:** permite a los validadores asignar manualmente un valor de código de barras extraído a un campo concreto del documento durante la validación de campos.
 
@@ -37,7 +37,7 @@ Para activar la función **Barcode Assignment**, siga estos pasos:
 * Habilita una opción “Assign Barcode” en la pantalla de validación de campos.\\
 * Los usuarios pueden seleccionar un valor de código de barras detectado y asignarlo a un campo del documento, como PO Number o Invoice Number.\\
 
-### Split of Document by Barcode / QR Code
+### División del documento por código de barras o código QR
 
 **Finalidad:** divide automáticamente los documentos de varias páginas en documentos independientes según la presencia de determinados códigos de barras o códigos QR.
 

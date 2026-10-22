@@ -2,7 +2,7 @@
 description: Usar DocBits con tu inicio de sesión de Microsoft sin utilizar una contraseña (independiente)
 ---
 
-# Azure SSO
+# SSO de Azure
 
 ### Crear SAML SSO en Azure AD
 

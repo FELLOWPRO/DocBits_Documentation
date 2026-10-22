@@ -6,7 +6,7 @@ Lo que ocurre con la tabla de líneas de detalle cuando un documento se aprueba 
 
 | Método de exportación | Qué se envía de la tabla |
 |---|---|
-| **webhook**, **watcher**, **sftp**, **infor_sftp** (JSON / XML) | La tabla tal como está en la pantalla de validación: todas las [columnas de tabla](../global-settings/document-types/table-columns.md) no ocultas de todas las filas, con valor, valor formateado y confianza. |
+| **webhook**, **watcher**, **sftp**, **infor_sftp** (JSON / XML) | La tabla tal como está en la pantalla de validación: todas las [columnas de tabla](../global-settings/document-types/table-columns/README.md) no ocultas de todas las filas, con valor, valor formateado y confianza. |
 | **infor-m3-cloud**, **infor-m3-toml-cloud**, **infor-idm-***, **infor-gls840-onpremise**, **infor-m3-oc-charges-onpremise** (BOD de Infor ERP / SAP) | No la tabla en bruto. DocBits construye a partir de ella **líneas de recepción** y **líneas de coste** (ver más abajo) y las asigna a los campos del BOD con el mapeo configurado en [Exportación a INFOR](../../../infor-integration-and-configuration/exporting-to-infor/README.md). |
 
 ## Líneas de recepción y líneas de coste (exportaciones a Infor)
@@ -48,5 +48,5 @@ Los partners y el soporte con acceso a la API o al MCP pueden solicitar la carga
 ## Páginas relacionadas
 
 * [Exportar](export.md): configuraciones y métodos de exportación
-* [Columnas de tabla](../global-settings/document-types/table-columns.md)
+* [Columnas de tabla](../global-settings/document-types/table-columns/README.md)
 * [Exportación a INFOR](../../../infor-integration-and-configuration/exporting-to-infor/README.md): mapeos de campos del BOD para líneas de recepción, de coste y de impuestos

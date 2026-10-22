@@ -1,11 +1,11 @@
 ---
 description: >-
-  Explore the step-by-step workflow for material ordering, goods receipt, and
-  invoice processing with INFOR ERP and DocBits integration. Effective supplier
-  and document management in one.
+  Conozca paso a paso el flujo de pedido de materiales, recepción de mercancías
+  y procesamiento de facturas con la integración de INFOR ERP y DocBits.
+  Gestione proveedores y documentos de forma eficaz en un solo lugar.
 ---
 
-# Material Ordering and Processing Workflow
+# Flujo de trabajo de pedido y procesamiento de materiales
 
 Este documento describe el flujo de trabajo para pedir materiales a los proveedores, recibir mercancías y procesar facturas, con la integración entre los proveedores, el sistema INFOR ERP y DocBits para la gestión documental.
 
@@ -14,10 +14,10 @@ Este documento describe el flujo de trabajo para pedir materiales a los proveedo
 1. **Ordering Materials**
    * Iniciar el pedido con el proveedor.
    * Enviar el pedido al proveedor a través de INFOR.
-2. **Receiving Order Confirmation**
+2. **Recibiendo confirmación de pedido**
    * El proveedor confirma la recepción del pedido.
    * Creación y envío de la confirmación del pedido.
-3. **Goods Receipt and Inspection**
+3. **Recepción e inspección de mercancías**
    * Recibir las mercancías del proveedor.
    * Registrar la entrada de mercancías en INFOR y cotejarla con el albarán de entrega.
 4. **Invoice Processing**

@@ -1,39 +1,35 @@
-# Case 6: Quantity Within Tolerance, Unit Price Outside Negative Tolerance (Rejected)
+# Caso 6: Cantidad dentro de tolerancia y precio inferior al permitido (rechazado)
 
-## Scenario:
+El siguiente escenario es un ejemplo de asignación configurada, no una plantilla predeterminada cuyo despliegue se haya verificado. La salida real, los importes, los signos y los tipos de documento dependen de las reglas y expresiones `conflict_resolution` activas, de la asignación de exportación y de las decisiones de aprobación. Cualquier nota de débito o crédito descrita está condicionada a esa configuración; el ejemplo no garantiza su emisión automática ni el cumplimiento legal.
 
-The quantity is within tolerance, but the unit price is below the acceptable range (negative tolerance) and is not approved.
+## Escenario
 
-## Action:
+La cantidad está dentro de tolerancia, pero el precio unitario de la factura está por debajo del intervalo permitido y la desviación de precio no se ha aprobado.
 
-The system rejects the unit price, adjusts it to match the purchase order, and generates a credit note for the difference. Additional header charges may be applied as necessary.
+## Acción ilustrativa
 
-## Example:
+Una asignación configurada para utilizar el precio del PO tras el rechazo conservaría la cantidad y sustituiría el precio unitario de la factura por el del PO. Que la diferencia origine un ajuste, una nota de débito, una nota de crédito o ningún documento separado depende de la asignación activa y de las aprobaciones. Los cargos de cabecera adicionales solo se aplican si están configurados expresamente.
 
-* **Purchase Order (PO):**
-  * Quantity: 100 units
-  * Unit Price: $10.00 per unit
-  * Total Amount: $1,000.00
-* **Invoice Received:**
-  * Quantity: 100 units (within tolerance of 0%)
-  * Unit Price: $9.00 per unit (outside negative tolerance of -10%)
-  * Total Amount: $900.00
-* **Tolerance Levels:**
-  * Quantity Tolerance: ±2%
-  * Unit Price Tolerance: ±1%
+## Ejemplo
 
-Since the quantity (100 units) is within the acceptable tolerance range but the unit price ($9.00) is below the acceptable tolerance and is not approved, the system will:
+* **Pedido de compra (PO):**
+  * Cantidad: 100 unidades
+  * Precio unitario: $10.00 por unidad
+  * Total: $1,000.00
+* **Factura recibida:**
+  * Cantidad: 100 unidades — desviación real del 0%, dentro de la tolerancia configurada de ±2%.
+  * Precio unitario: $9.00 — desviación real del -10%, fuera de la tolerancia configurada de ±1%; rechazada.
+  * Total: $900.00
+* **Tolerancias configuradas:**
+  * Cantidad: ±2%
+  * Precio unitario: ±1%
 
-1. **Reject the Unit Price:** The system does not accept the invoiced unit price of $9.00.
-2. **Adjust the Unit Price:** The system adjusts the unit price to match the original purchase order unit price.
-   * Adjusted Unit Price = $10.00 (from PO)
-3. **Calculate the Corrected Total Amount:** Using the adjusted unit price, the system recalculates the total amount.
-   * **Corrected Total Amount = Quantity × Adjusted Unit Price**
-   * **Corrected Total Amount = 100 units × $10.00 per unit = $1,000.00**
-4. **Generate a Credit Note:** The system generates a credit note for the difference between the incorrect total amount on the invoice and the corrected total amount.
-   * **Credit Note Amount = Original Invoice Total - Corrected Total Amount**
-   * **Credit Note Amount = $900.00 - $1,000.00 = -$100.00**
-   * The credit note will effectively reverse the undercharge.
-5. **Process the Invoice:** The system processes the invoice with the adjusted total amount of $1,000.00 and applies the credit note for $100.00 to account for the undercharged unit price.
+En esta asignación ilustrativa:
 
-This approach ensures that the pricing aligns with the purchase order terms, even when an incorrect, lower price is invoiced.
+1. Se rechaza el precio unitario facturado de $9.00 porque la desviación supera la tolerancia y no está aprobada.
+2. Se utiliza el precio unitario del PO de $10.00.
+3. Se recalcula el total del ejemplo: **100 unidades × $10.00 = $1,000.00**.
+4. Se calcula la diferencia con signo como total facturado menos total recalculado: **$900.00 - $1,000.00 = -$100.00**.
+5. Se aplica la asignación de exportación y la decisión de aprobación configuradas. El valor -$100.00 es una diferencia con signo, no una instrucción incondicional de emitir una nota de crédito. La asignación determina el importe, el signo y el tipo de documento de cualquier ajuste.
+
+Este ejemplo no significa que una nota de crédito revierta automáticamente un importe cobrado de menos. Confirme el tratamiento contable previsto en la asignación de exportación activa antes de utilizar la regla.

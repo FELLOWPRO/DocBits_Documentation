@@ -22,7 +22,7 @@ Este recorrido de solo lectura muestra la configuración existente del país en 
 
 ## Variantes y límites de versión
 
-EHF Invoice 3.0 figura junto a EHF Order, Order Response y Despatch Advice.
+EHF Factura 3.0 figura junto a EHF Pedido, Respuesta de pedido y Aviso de despacho.
 
 **Sintaxis:** UBL XML
 

@@ -30,7 +30,7 @@ AUNZ PINT Self-Billing es la variante de autofacturación del modelo de facturac
 
 ## Vista previa predeterminada
 
-<figure><img src="aunz-pint-preview.png" alt="Vista previa de factura AUNZ PINT Self-Billing en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una factura AUNZ PINT Self-Billing</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="Vista previa de factura AUNZ PINT Self-Billing en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una factura AUNZ PINT Self-Billing</p></figcaption></figure>
 
 ## Asignación de campos
 

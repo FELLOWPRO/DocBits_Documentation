@@ -1,80 +1,80 @@
-# Test: Email Import and Handling Tests
+# Prueba: importación y gestión del correo electrónico
 
-## What's Being Tested?
+## ¿Qué se prueba?
 
-These tests ensure that our email import system works correctly. The main goals are to:
+Estas pruebas garantizan que nuestro sistema de importación de correo electrónico funcione correctamente. Los principales objetivos son:
 
-1. **Send emails** with attachments.
-2. **Receive and move emails** to specific folders.
-3. **Check if emails are read or unread.**
-4. **Import emails into our system.**
-5. **Clean up** by deleting emails and imported documents afterward.
+1. **Enviar correos electrónicos** con archivos adjuntos.
+2. **Recibir y mover correos electrónicos** a carpetas específicas.
+3. **Compruebe si los correos electrónicos están leídos o no leídos.**
+4. **Importar correos electrónicos a nuestro sistema.**
+5. **Limpie** eliminando correos electrónicos y documentos importados posteriormente.
 
-## Steps Involved
+## Pasos necesarios
 
 1. **Setup:**
-   * **Get Environment Settings:** Load the email server details and credentials from environment variables.
-   * **Encrypt Email Password:** Securely encrypt the email password.
-2. **Send and Manage Emails:**
-   * **Send Emails:** Use an SMTP function to send emails with specific subjects and attachments.
-   * **Move Emails:** Use IMAP functions to move emails to the target folder.
-   * **List Folders:** Check if the target folder exists.
-   * **Delete Emails:** Clean up emails by deleting them from folders.
-   * **Check Email Status:** Verify if emails are marked as unread or read.
+   * **Obtener configuración del entorno:** Cargue los detalles y las credenciales del servidor de correo electrónico desde las variables de entorno.
+   * **Cifrar contraseña de correo electrónico:** Cifre de forma segura la contraseña de correo electrónico.
+2. **Enviar y administrar correos electrónicos:**
+   * **Enviar correos electrónicos:** Utilice una función SMTP para enviar correos electrónicos con asuntos y archivos adjuntos específicos.
+   * **Mover correos electrónicos:** Utilice las funciones IMAP para mover correos electrónicos a la carpeta de destino.
+   * **Listar carpetas:** Compruebe si la carpeta de destino existe.
+   * **Eliminar correos electrónicos:** Limpia los correos electrónicos eliminándolos de las carpetas.
+   * **Verificar el estado del correo electrónico:** Verifique si los correos electrónicos están marcados como leídos o no leídos.
 3.  **Test Sequence**
 
     **Initial Setup:**
 
-    * **Check Connection:** Verify connection to the email server and get the connection ID.
-    * **Login Test:** Confirm that logging in with stored credentials works.
-    * **Folder Check:** Ensure the target folder exists on the email server.
+    * **Verificar conexión:** Verifique la conexión al servidor de correo electrónico y obtenga el ID de la conexión.
+    * **Prueba de inicio de sesión:** Confirme que el inicio de sesión con las credenciales almacenadas funciona.
+    * **Comprobación de carpeta:** Asegúrese de que la carpeta de destino exista en el servidor de correo electrónico.
 
     **Email Operations:**
 
-    * **Send Test Emails:** Send three emails with unique subjects.
-    * **Retrieve Email IDs:** Get the IDs of the sent emails from the inbox.
-    * **Move Emails:** Move these emails from the inbox to the target folder.
-    * **Check Email Status:** Ensure the emails in the target folder are marked as unread.
+    * **Enviar correos electrónicos de prueba:** Envíe tres correos electrónicos con asuntos únicos.
+    * **Recuperar ID de correo electrónico:** Obtenga los ID de los correos electrónicos enviados desde la bandeja de entrada.
+    * **Mover correos electrónicos:** Mueva estos correos electrónicos desde la bandeja de entrada a la carpeta de destino.
+    * **Verificar el estado del correo electrónico:** Asegúrese de que los correos electrónicos en la carpeta de destino estén marcados como no leídos.
 
     **Email Importing:**
 
-    * **Fetch Emails:** Import emails from the target folder into our system.
-    * **Check Imported Emails:** Ensure the imported emails are correctly fetched and logged.
+    * **Obtener correos electrónicos:** Importar correos electrónicos de la carpeta de destino a nuestro sistema.
+    * **Verificar correos electrónicos importados:** Asegúrese de que los correos electrónicos importados se obtengan y registren correctamente.
 
     **Log Verification:**
 
-    * **Check Import Logs:** Verify that the subjects of the sent emails are recorded in the import logs.
+    * **Verificar registros de importación:** Verifique que los asuntos de los correos electrónicos enviados estén registrados en los registros de importación.
 
     **Cleanup:**
 
-    * **Delete Imported Documents:** Remove the documents that were imported from the emails.
-    * **Delete Emails:** Clean up by deleting the sent and moved emails from the folders.
+    * **Eliminar documentos importados:** Elimina los documentos que se importaron de los correos electrónicos.
+    * **Eliminar correos electrónicos:** Limpie eliminando los correos electrónicos enviados y movidos de las carpetas.
 
-### Detailed Explanation of Each Test
+### Explicación detallada de cada prueba
 
-* **Setup and Initialization:**
-  * **Initialize Shared Data:** Prepare shared data for tests.
-* **Email Connection Tests:**
-  * **Get Connection ID:** Check if we can connect to the email server and get an ID for the connection.
-  * **Login Verification:** Ensure that logging in to the email server works properly.
-* **Folder Verification Tests:**
-  * **Check Target Folder:** Make sure the target folder exists on the email server.
-  * **Verify Folder Listing:** Ensure the list of folders from the server matches our expectations.
-* **Email Sending and ID Retrieval:**
-  * **Send Emails:** Send three test emails with specific subjects and attachments.
-  * **Get Email IDs:** Retrieve the unique IDs of these sent emails from the inbox.
-* **Email Moving and Status Checking:**
-  * **Move Emails to Folder:** Move the test emails from the inbox to the target folder.
-  * **Check Unread Status:** Ensure the emails are marked as unread after moving.
-* **Email Fetching and Response Validation:**
-  * **Fetch Emails from Folder:** Import the emails from the target folder into our system.
-  * **Validate Fetched Emails:** Confirm that the fetched emails match the sent emails.
-* **Import Log Verification:**
-  * **Fetch Import Log:** Retrieve the log of imported emails.
-  * **Check Email Subjects in Log:** Ensure the subjects of the test emails are present in the import log.
+* **Configuración e inicialización:**
+  * **Inicializar datos compartidos:** Preparar datos compartidos para las pruebas.
+* **Pruebas de conexión de correo electrónico:**
+  * **Obtener ID de conexión:** Comprobar si podemos conectarnos al servidor de correo electrónico y obtener un ID para la conexión.
+  * **Verificación de inicio de sesión:** Asegúrese de que el inicio de sesión en el servidor de correo electrónico funcione correctamente.
+* **Pruebas de verificación de carpetas:**
+  * **Verificar la carpeta de destino:** Asegúrese de que la carpeta de destino exista en el servidor de correo electrónico.
+  * **Verificar lista de carpetas:** Asegúrese de que la lista de carpetas del servidor coincida con nuestras expectativas.
+* **Envío y recuperación de ID del correo electrónico:**
+  * **Enviar correos electrónicos:** Envíe tres correos electrónicos de prueba con asuntos y archivos adjuntos específicos.
+  * **Obtener ID de correo electrónico:** Recupere los ID únicos de estos correos electrónicos enviados desde la bandeja de entrada.
+* **Movimiento de correo electrónico y verificación de estado:**
+  * **Mover correos electrónicos a la carpeta:** Mueva los correos electrónicos de prueba de la bandeja de entrada a la carpeta de destino.
+  * **Verificar estado no leído:** Asegúrese de que los correos electrónicos estén marcados como no leídos después de moverse.
+* **Obtención de correo electrónico y validación de respuesta:**
+  * **Obtener correos electrónicos de la carpeta:** Importar los correos electrónicos de la carpeta de destino a nuestro sistema.
+  * **Validar correos electrónicos recuperados:** Confirme que los correos electrónicos recuperados coincidan con los correos electrónicos enviados.
+* **Verificación de registro de importación:**
+  * **Recuperar registro de importación:** Recupera el registro de correos electrónicos importados.
+  * **Verifique los asuntos de los correos electrónicos en el registro:** Asegúrese de que los asuntos de los correos electrónicos de prueba estén presentes en el registro de importación.
 * **Cleanup:**
-  * **Delete Imported Documents:** Remove the documents that were imported from the emails.
-  * **Delete Emails:** Delete the test emails from the inbox and the target folder to keep everything clean.
+  * **Eliminar documentos importados:** Elimina los documentos que se importaron de los correos electrónicos.
+  * **Eliminar correos electrónicos:** Elimina los correos electrónicos de prueba de la bandeja de entrada y de la carpeta de destino para mantener todo limpio.
 
 \
 

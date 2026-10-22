@@ -1,4 +1,4 @@
-# Group cache
+# Caché de grupos
 
 ## Tabla `public.group_cache`
 
@@ -9,8 +9,8 @@
 * `name`: interno
 * `description`: interno
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: marca de tiempo con zona horaria
+* `last_modified_on`: marca de tiempo con zona horaria
 * `is_deleted`: boolean
 * `only_assigned_documents`: boolean
 

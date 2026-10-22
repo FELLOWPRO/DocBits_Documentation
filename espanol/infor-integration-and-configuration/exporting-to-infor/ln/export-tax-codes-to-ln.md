@@ -78,7 +78,7 @@ Esta guía te guiará a través del proceso de configuración para asegurar que 
 6.  En la sección **Tax Details**, utiliza la herramienta **Horizontal Separator**. Arrástrala y suéltala entre las subsecciones dentro de la sección de impuestos para separarlas claramente y reducir la confusión.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_22.png" alt=""><figcaption></figcaption></figure>
-7. Expande el menú desplegable **Campos**.
+7. Expanda el menú desplegable **Campos**.
 8.  Busca **Tax Country** y arrastra y suelta el campo en su área respectiva.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_23.png" alt=""><figcaption></figcaption></figure>
@@ -174,7 +174,7 @@ Después de subir un nuevo documento a DocBits con la configuración de document
 8.  Arrastra y suelta los campos que correspondan a este grupo en el campo **Sub Group**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodeMulti_4.png" alt=""><figcaption></figcaption></figure>
-9. Expande el menú desplegable **Campos**.
+9. Expanda el menú desplegable **Campos**.
 10. Busca **Tax** y arrastra y suelta los campos respectivos, como **Tax Country** y **Tax Code**, en el subgrupo correspondiente.
 
     <figure><img src="../../../.gitbook/assets/TaxCodeMulti_5.png" alt=""><figcaption></figcaption></figure>

@@ -1,4 +1,4 @@
-# Standard Workflow
+# Flujo de trabajo estándar
 
 <figure><img src="../../../../.gitbook/assets/docbits_workflow_purchase_order_4.svg" alt="DocBits Flujo de trabajo Compra Pedido 4"><figcaption></figcaption></figure>
 
@@ -13,13 +13,13 @@
 1. **Initial Review**:
    * Las facturas se reciben y se procesan inicialmente con DocBits.
    * Luego son revisadas por el equipo financiero para garantizar que se retiren del flujo de trabajo si están completas, o que avancen para su procesamiento posterior.
-2. **PO vs Non-PO Invoices**:
+2. **PO frente a facturas que no son PO**:
    * El flujo de trabajo distingue entre facturas relacionadas con pedidos de compra (PO) y facturas sin PO.
    * Las facturas sin PO se enrutan para su aprobación o rechazo según criterios predefinidos como el ID del proveedor, la cantidad, el precio unitario y el número de artículo.
-3. **Matching and Mismatching**:
+3. **Coincidencia y no coincidencia**:
    * Las facturas se cotejan con los recibos de mercancías para garantizar que los detalles coincidan (como el ID del proveedor y la cantidad).
    * Si se producen discrepancias, la factura queda sujeta a una revisión adicional y posiblemente al rechazo.
-4. **Finance and Buyer Review**:
+4. **Revisión del comprador y finanzas**:
    * Para las facturas relacionadas con PO, se lleva a cabo un proceso detallado de cotejo que implica una revisión por parte del comprador.
    * Pueden ser necesarios ajustes en los pedidos de compra o en los recibos de mercancías.
 5. **Final Decisions**:

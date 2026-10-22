@@ -77,7 +77,7 @@ Dos opciones controlan con qué frecuencia se aplica la regla:
 | Opción | Efecto |
 | --- | --- |
 | **Ejecutar solo una vez por documento** | Normalmente las reglas se vuelven a ejecutar en cada guardado. Con esta opción activada, la regla se aplica **como máximo una vez** a un documento y después termina con él. Una pasada en la que las condiciones no coinciden no cuenta, por lo que la regla aún puede aplicarse en un guardado posterior. Es necesaria para pasos que volverían a cambiar el valor en cada guardado (consulte [Idempotencia](#ejecutar-una-vez-e-idempotencia)) y para reglas de tabla que no deben reconstruir las líneas de nuevo. |
-| **Run after lookup population (before PO match)** | *(versiones recientes)* Ejecuta la regla en una pasada adicional después de que se hayan rellenado los datos de búsqueda (por ejemplo, los datos maestros de proveedores) y antes del PO matching. Úsela cuando la regla necesite un valor que proporciona una búsqueda. La regla se sigue ejecutando también en las etapas habituales; una regla de ejecución única con esta opción espera a esta pasada en lugar de ejecutarse justo después de la extracción. |
+| **Ejecutar después de la población de búsqueda (antes de la coincidencia PO)** | *(versiones recientes)* Ejecuta la regla en una pasada adicional después de que se hayan rellenado los datos de búsqueda (por ejemplo, los datos maestros de proveedores) y antes del PO matching. Úsela cuando la regla necesite un valor que proporciona una búsqueda. La regla se sigue ejecutando también en las etapas habituales; una regla de ejecución única con esta opción espera a esta pasada en lugar de ejecutarse justo después de la extracción. |
 
 ### Paso 3 — The pipeline
 
@@ -93,7 +93,7 @@ Dos opciones controlan con qué frecuencia se aplica la regla:
 
 | Paso | Ajustes | Ejemplo de entrada → salida |
 | --- | --- | --- |
-| **Cambio de caso** | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
+| **Cambio de caso** | UPPERCASE, minúscula, título, mayúscula primero | `inv-4711` → `INV-4711` |
 | **Recortar** | lado (ambos, izquierda, derecha); caracteres (vacío = espacios en blanco) | `  4711 ` → `4711`; con el carácter `0` y lado izquierdo: `004711` → `4711` |
 | **Almohadilla** | longitud, carácter de relleno, lado | longitud 10, `0`, izquierda: `4711` → `0000004711` |
 | **Truncar** | longitud máxima | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
@@ -173,7 +173,7 @@ Si la factura indica `Art.-Nr. ab-12/3` y la orden de compra tiene `AB123`, las 
 | Quitar espacios y puntos del NIF/ID fiscal | Encabezado *Supplier Tax ID* | siempre | Desinfectar: conservar alfanuméricos |
 | Quitar el prefijo del artículo | Columna *ITEM_NUMBER* | siempre | Afijo: quitar prefijo `Art.-Nr. ` |
 | Números de proveedor de 10 dígitos | Encabezado *Supplier ID* | siempre | Recortar → Pad longitud 10 con `0`, izquierda |
-| Extraer el número de orden de compra de un texto de referencia | Encabezado *Purchase Order*, leído de otro campo | solo cuando *Purchase Order is empty* | Extract `PO[- ]?(\d+)`, grupo 1 |
+| Extraer el número de orden de compra de un texto de referencia | Encabezado *Purchase Order*, leído de otro campo | solo cuando *La orden de compra está vacía* | Extract `PO[- ]?(\d+)`, grupo 1 |
 | Usar siempre una única moneda para un proveedor | Encabezado *Currency* | solo cuando *Supplier ID is 10040* | Fix value `CHF` |
 | Eliminar un valor extraído erróneamente | Encabezado *Discount Term* | solo cuando *Supplier ID is 20723* | Clear |
 | Base de precio por unidad | Columna *UNIT_PRICE_PER* | solo cuando *row.UNIT_PRICE_PER is empty* | Fix value `1` |
@@ -223,7 +223,7 @@ Las reglas de tabla y de columna cambian lo que ve el conciliador de órdenes de
 * Si una regla **sustituye o elimina líneas que estaban conciliadas**, la conciliación no se puede conservar. El documento registra entonces qué regla la descartó, la pantalla de Purchase Order Matching lo muestra como motivo ("_The PO match could not be saved: the transformation rule "…" rebuilt the table_") y los administradores reciben un enlace a la regla. El **historial de conciliación** del documento muestra un paso _Transformation rules_ antes de la primera etapa de conciliación, con las reglas que se ejecutaron.
 * El número de líneas tras las reglas es lo que cuentan las [condiciones de activación](more-settings/purchase-order/purchase-order-matching-rules.md#condiciones-de-activacion) de las reglas de conciliación. Una regla que colapsa una factura en **una** línea solo tiene sentido junto con una regla de conciliación por total que esté activa para documentos de una línea (`[[count(table_lines)]] >= 1`).
 
-## Logs
+## Registros
 
 Con **Ejecución de registro** activado, cada aplicación de la regla se escribe en **Tipos de documento → (tipo de documento) → Registros**, con el resultado (applied, no change, skipped), el documento y, para las reglas omitidas, el rastro de condiciones que explica el motivo. Consulte [Leer el rastro de condiciones](rule-conditions-applies-when.md#leer-el-rastro-de-condiciones-en-los-registros).
 
@@ -245,7 +245,7 @@ Con **Ejecución de registro** activado, cada aplicación de la regla se escribe
 | Una tabla obtiene una fila más en cada guardado | Un paso **Añadir una fila** sin **Borrar todas las filas** antes. Añada primero el paso de borrado, o active la ejecución única. |
 | La conciliación de la orden de compra se pierde tras guardar | Una regla de tabla sustituyó las líneas conciliadas. El motivo en el documento nombra la regla; haga que la regla reproduzca las mismas líneas o configúrela para ejecutarse una sola vez. |
 | Una regla de conciliación nunca se ejecuta tras la transformación | La regla cambió el número de líneas; ajuste la condición de activación de la regla de conciliación. |
-| La regla necesita un valor de los datos maestros del proveedor, pero sigue vacío | Active **Run after lookup population (before PO match)**. |
+| La regla necesita un valor de los datos maestros del proveedor, pero sigue vacío | Activo **Ejecutar después de la población de búsqueda (antes de la coincidencia PO)**. |
 | Una fecha no se reformatea | Reformat date espera `YYYY-MM-DD` como entrada. |
 
 ## Relacionado
@@ -253,4 +253,4 @@ Con **Ejecución de registro** activado, cada aplicación de la regla se escribe
 * [Rule Conditions (Applies when)](rule-conditions-applies-when.md) — las condiciones en detalle
 * [Custom Validation Rules](custom-validation-rules.md) — compruebe los valores transformados
 * [Layout Selection Rules](layout-manager/layout-selection-rules.md) — elija el layout que usa un documento
-* [Purchase Order Matching Rules](more-settings/purchase-order/purchase-order-matching-rules.md)
+* [Reglas de conciliación de órdenes de compra](more-settings/purchase-order/purchase-order-matching-rules.md)

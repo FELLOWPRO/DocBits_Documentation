@@ -1,4 +1,4 @@
-# Training data
+# Datos de entrenamiento
 
 ## Tabla `public.training_data`
 
@@ -13,12 +13,12 @@
 * `first_page_content`: text
 * `supplier_name`: Supplier Name
 * `supplier_vat`: interno
-* `doc_created_on`: timestamp with time zone
+* `doc_created_on`: marca de tiempo con zona horaria
 * `is_training_sample`: boolean
 * `sample_doc_id`: interno
 * `sample_file_name`: interno
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: marca de tiempo con zona horaria
+* `last_modified_on`: marca de tiempo con zona horaria
 * `is_deleted`: boolean
 * `is_table_training_sample`: boolean
 

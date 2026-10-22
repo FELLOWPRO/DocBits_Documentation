@@ -1,37 +1,33 @@
-# Case 15: Charge Line - Charge Per Unit Outside Tolerance (Rejected)
+# Caso 15: Cargo de línea por unidad fuera de tolerancia (rechazado)
 
-## Scenario:
+El siguiente escenario es un ejemplo de asignación configurada, no una plantilla predeterminada cuyo despliegue se haya verificado. La salida real, los importes, los signos y los tipos de documento dependen de las reglas y expresiones `conflict_resolution` activas, de la asignación de exportación y de las decisiones de aprobación. Cualquier nota de débito o crédito descrita está condicionada a esa configuración; el ejemplo no garantiza su emisión automática ni el cumplimiento legal.
 
-The header charge per unit is outside tolerance and has not been approved.
+## Escenario
 
-## Action:
+El cargo por unidad de una línea está fuera de tolerancia y la desviación no se ha aprobado. Este caso trata de un cargo de línea, no de un cargo de cabecera.
 
-The system adjusts the header charge to match the purchase order, processing the transaction accordingly, and generating any necessary notes.
+## Acción ilustrativa
 
-## Example:
+Una asignación configurada para utilizar el cargo del PO tras el rechazo sustituiría el cargo unitario de la factura por el del PO. Cualquier ajuste o nota de débito o crédito depende de la asignación de exportación y de las decisiones de aprobación.
 
-* **Purchase Order (PO):**
-  * Header Charge Per Unit: $4.00
-  * Quantity: 1,500 units
-  * Total Header Charge Amount: $6,000.00
-* **Invoice Received:**
-  * Header Charge Per Unit: $5.00 (outside tolerance of 25%, rejected)
-  * Quantity: 1,500 units
-  * Total Header Charge Amount: $7,500.00
-* **Tolerance Levels:**
-  * Header Charge Per Unit Tolerance: ±5%
+## Ejemplo
 
-Since the header charge per unit ($5.00) exceeds the acceptable tolerance range of 5% and has not been approved, the system will:
+* **Pedido de compra (PO):**
+  * Cargo de línea por unidad: $4.00
+  * Cantidad: 1,500 unidades
+  * Cargo de línea total: $6,000.00
+* **Factura recibida:**
+  * Cargo de línea por unidad: $5.00 — un 25% superior al PO, fuera de la tolerancia configurada de ±5%; rechazado.
+  * Cantidad: 1,500 unidades
+  * Cargo de línea total: $7,500.00
+* **Tolerancia configurada:** Cargo por unidad ±5%.
 
-1. **Reject the Invoiced Header Charge Per Unit:** The system does not accept the invoiced header charge per unit of $5.00 due to the variance exceeding the tolerance limit.
-2. **Adjust the Header Charge Per Unit:** The system adjusts the charge per unit to match the original purchase order or the approved charge per unit:
-   * Adjusted Header Charge Per Unit = $4.00 (from PO)
-3. **Recalculate the Total Header Charge Amount:** The system recalculates the total charge amount based on the adjusted charge per unit:
-   * **Corrected Total Header Charge Amount = Quantity × Adjusted Header Charge Per Unit**
-   * **Corrected Total Header Charge Amount = 1,500 units × $4.00 = $6,000.00**
-4. **Generate a Credit Note:** Since the original invoice total was higher than the corrected total, the system generates a credit note for the overcharged amount:
-   * **Credit Note Amount = Original Invoice Total - Corrected Total Header Charge Amount**
-   * **Credit Note Amount = $7,500.00 - $6,000.00 = $1,500.00**
-5. **Process the Invoice:** The system processes the invoice with the corrected total charge amount of $6,000.00 and issues a credit note for $1,500.00 to account for the overcharged amount.
+En esta asignación ilustrativa:
 
-This approach ensures that the transaction is aligned with the original terms of the purchase order, maintaining accurate financial processing while correcting any overcharges.
+1. Se rechaza el cargo facturado de $5.00 por unidad porque la desviación del 25% supera ±5% y no está aprobada.
+2. Se utiliza el cargo del PO de $4.00 por unidad.
+3. Se recalcula el cargo de línea total: **1,500 unidades × $4.00 = $6,000.00**.
+4. Se calcula el exceso facturado: **$7,500.00 - $6,000.00 = $1,500.00**.
+5. Se aplica el tratamiento configurado para la diferencia. Una nota de crédito de $1,500.00 es un resultado posible de la asignación, no una acción garantizada. Su importe, signo, tipo de documento y emisión dependen de las reglas activas, de la asignación de exportación y de las aprobaciones.
+
+Valide la asignación de cargos de línea y los documentos contables resultantes antes de utilizar este escenario en producción.

@@ -30,7 +30,7 @@ CT-e (Conhecimento de Transporte Eletrônico, `<mod>57</mod>`) es el documento e
 
 ## Vista previa predeterminada
 
-<figure><img src="brazil-cte-preview.png" alt="Vista previa de Brazil CT-e en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para un documento BRAZIL CT-E</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/brazil-cte-preview.png" alt="Vista previa de Brazil CT-e en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para un documento BRAZIL CT-E</p></figcaption></figure>
 
 ## Mapeo de campos
 

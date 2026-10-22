@@ -56,6 +56,10 @@ Lire et construire: [P1 : choisir Field is, Docfield is ou Compare two Fields](m
 
 ## 4. Règles métier et approbations <a id="level-4"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/fr.mp4" %}
+
+[Ouvrir la vidéo avec les sous-titres français et la transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/fr.html).
+
 **Exercice:** Configurez deux règles de montant sans chevauchement. Suivez le retour utilisateur stocké jusqu’à l’affectation. Prévoyez A à l’ordre 10, B à 20, refus et repli.
 
 **Critère de fin:** Distinguez responsabilité, tâche, notification et approbation réelle. Le transfert à B exige une décision de A effectivement traitée.
@@ -63,6 +67,10 @@ Lire et construire: [P1 : choisir Field is, Docfield is ou Compare two Fields](m
 Lire et construire: [P1 : suivre la table de décision jusqu’à l’affectation](masterclass/decision-table-routing.md) · [P1 : distinguer affectation, tâche et approbation séquentielle](masterclass/assignment-task-sequential.md).
 
 ## 5. Contrôle Advanced et sous-workflows <a id="level-5"></a>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/fr.mp4" %}
+
+[Ouvrir la vidéo avec les sous-titres français et la transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/fr.html).
 
 **Exercice:** Comparez ALL, ANY et OR avec deux contrôles atteints. Examinez une branche non choisie. Exécutez les sept cas v2 et testez Run Workflow avec votre cible inactive.
 

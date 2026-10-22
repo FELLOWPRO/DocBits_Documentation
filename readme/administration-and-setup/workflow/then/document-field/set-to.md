@@ -18,8 +18,8 @@ Diese Workflow-Karte ist darauf ausgelegt, ein angegebenes Feld im Dokument auto
 ## **Funktionalität:**
 
 * **Bedingungsauswertung**: Das System wertet die Bedingungen in den Abschnitten **„Wenn“** und **„Und“** aus:
-  * Sind **beide Bedingungen erfüllt**, werden die im **"Then"-Abschnitt** definierten Aktionen ausgeführt. Konkret wird das Zielfeld (Feldname) mit dem angegebenen Text befüllt.
-  * Ist **entweder der "Where"- oder der "And"-Abschnitt nicht erfüllt**, wird keine Aktion ausgeführt, und das Feld bleibt unverändert. Die Aktionen des **"Then"-Abschnitts** werden vollständig übersprungen, wenn eine der Bedingungen nicht erfüllt ist.
+  * Sind **beide Bedingungen erfüllt**, werden die im **„Dann“-Abschnitt** definierten Aktionen ausgeführt. Konkret wird das Zielfeld (Feldname) mit dem angegebenen Text befüllt.
+  * Ist **entweder der "Where"- oder der "And"-Abschnitt nicht erfüllt**, wird keine Aktion ausgeführt, und das Feld bleibt unverändert. Die Aktionen des **„Dann“-Abschnitts** werden vollständig übersprungen, wenn eine der Bedingungen nicht erfüllt ist.
 * **Ausführung der Aktion**: Sind beide Bedingungen in den Abschnitten **„Wenn“** und **„Und“** erfüllt, befüllt das System das angegebene Feld automatisch mit dem gewählten Textwert. Sind die Bedingungen nicht erfüllt, werden keine Änderungen am Feld vorgenommen.
 
 ## **Einrichtung und Konfiguration:**
@@ -38,10 +38,22 @@ Die Workflow-Karte **„Feld auf Text setzen“** bietet eine unkomplizierte Mö
 
 ## Praxisbeispiel
 
-**Verwendungszweck:** Schreiben Sie ein Routing-Ergebnis in ein Dokumentfeld.
+**Wann nutzen:** Ein Dokument mit einer festen Kennzeichnung zur manuellen Prüfung versehen.
 
-**Konfiguration:** Wählen Sie das Textfeld `routing_result` und stellen Sie den Text auf `manual review` ein.
+**Wo:** Standard-Workflow-Designer → Dann → Dokumentenfeld.
 
-**Erwartetes Ergebnis und Gegenbeispiel:** Das Feld enthält genau `manual review`. Eine nachfolgende Gleichheitsbedingung kann diesen Wert verwenden; Es handelt sich eher um ein Dokumentfeld als um eine Organisationsvariable.
+**Konfiguration:** Wählen Sie in Version 2 das vorhandene Textfeld `custom_field_1` und tragen Sie den festen Text `MANUAL_REVIEW` ein.
 
-Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.
+**Erwartetes Ergebnis und Gegenbeispiel:** Erreicht der Beleg die Aktion und gelingt die Aktualisierung, enthält das Feld `MANUAL_REVIEW`. Eine falsche vorhergehende Bedingung verhindert das Erreichen der Aktion. Die Karte weist keinen Benutzer zu. Prüfen Sie Feldtyp, gespeicherten Wert und mögliche Aktualisierungsfehler.
+
+Die Beispiele beschreiben erwartete Ergebnisse. Verwenden Sie die in Ihrer Organisation tatsächlich konfigurierten Felder und angebotenen Werte.
+
+## Admin-Beispielvideo
+
+Wann ich einen festen Text als Kennzeichnung benötige und wie ich ein vorhandenes Dokumentenfeld dafür auswähle. Die Beispiele zeigen erwartete Ergebnisse. Administrator, Büro und Stimme sind synthetisch erzeugt; die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-set-field-text-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-set-field-text-admin/v1/de.html)
+
+[Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-set-field-text-admin/v1/de.txt)

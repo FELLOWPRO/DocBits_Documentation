@@ -2,22 +2,30 @@
 
 Gebruik **PO-matching** om de inkooporderregels die voor een document zijn geladen te vergelijken met de geëxtraheerde factuurregels. De inkoopordergegevens kunnen afkomstig zijn uit een ERP-integratie of een andere geconfigureerde import. Het scherm toont het document naast de twee tabellen, zodat u aantallen, hoeveelheden, prijzen en verschillen kunt controleren voordat u opslaat of exporteert.
 
+## Factuurregels met een inkooporder vergelijken
+
+De rondleiding begint met een herkend inkoopordernummer en drie gematchte factuurregels. Daarna volgen handmatig zoeken als uitzondering, een opzettelijk verkeerde koppeling, een gedeeltelijke match, automatisch matchen en opslaan. Controleer het resultaat na opnieuw laden: opslaan keurt de factuur op zichzelf niet goed en exporteert haar ook niet.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v4/nl.mp4" %}
+
+[Bekijk de video met ondertiteling](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v4/nl.html)
+
 {% hint style="info" %}
-Het voorbeeld hieronder gebruikt een synthetische FellowPro-factuur en -inkooporder in **DocBits Documentation Test A**. De factuurtabel geeft momenteel **GEEN REGELPOSTEN GEVONDEN** weer. Dit demonstreert navigatie en zoeken, maar kan geen geslaagde regelmatch demonstreren. Exporteer dit voorbeeld niet als een gematchte factuur.
+De opname gebruikt synthetische testgegevens met drie geëxtraheerde factuurregels en de bijbehorende inkooporder. Papier, archiefdozen en levering bedragen netto EUR 118. De volledige match toont EUR 118 gematcht en niets open.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/dbdc-321-po-screen-nl.png" alt="Nederlandstalig PO-matching-scherm in de synthetische Sandbox-organisatie: zoeken, werkbalk, inkooporderregels, lege factuurregeltabel en factuurvoorbeeld"><figcaption><p>De inkooporder is geladen; de voorbeeldfactuur heeft geen geëxtraheerde regels om mee te verbinden.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-full-nl.png" alt="Volledige match: alle drie de regels zijn gekoppeld, met EUR 118 gematcht en EUR 0 open."><figcaption><p>Volledige match: alle drie de regels zijn gekoppeld, met EUR 118 gematcht en EUR 0 open.</p></figcaption></figure>
 
 ## Een inkooporder zoeken en inspecteren
 
-1. Open een factuur in **PO-matching**. Als uw organisatie meerdere inkooporders heeft, voert u een nummer in bij **Zoek inkoopordernummer**.
+1. Open de factuur in **PO-matching**. Bij een herkend inkoopordernummer laadt DocBits de bijbehorende order. Gebruik handmatig zoeken wanneer het nummer ontbreekt of om een andere order te bekijken.
 2. Selecteer het filterpictogram naast het zoekveld voor **Trefwoord**, **Leverancier**, **Status**, **Bestelstatus**, datums, bedragbereik, sortering en het aantal weer te geven records. Selecteer **Meer** voor aanvullende criteria. Selecteer **Toepassen** om te zoeken of **Duidelijk** om de filters te resetten.
 3. Selecteer een inkoopordernummer boven de tabel om de regels te inspecteren. Het ververspictogram naast het nummer herlaadt de gegevens van die order. Een herlading kan afhangen van de geconfigureerde integratie.
-4. Vergelijk elke inkooporderregel met de factuur en de geëxtraheerde tabel. De **+** op een regel opent de matchgegevens; hierdoor wordt de regel zelf nog niet met de factuur verbonden. In het voorbeeld verschijnt **No multi-match Information** omdat een dergelijke match niet bestaat.
+4. Vergelijk elke inkooporderregel met de factuur en de geëxtraheerde tabel. De **+** opent bestaande matchdetails; deze koppelt de regel niet zelf aan de factuur.
 
-<figure><img src="../../../.gitbook/assets/dbdc-321-po-filters-nl.png" alt="Nederlandstalige zoekfilters voor inkooporders met leverancier, statussen, datum- en bedraglimieten, sortering en de knoppen Toepassen en Duidelijk"><figcaption><p>Gebruik het filterpaneel om de getoonde inkooporders te beperken.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-search-nl.png" alt="Handmatig zoeken toont de drie regels van de testorder. Gebruik zo nodig de filters; een herkend ordernummer hoeft niet opnieuw te worden gezocht."><figcaption><p>Handmatig zoeken toont de drie regels van de testorder. Gebruik zo nodig de filters; een herkend ordernummer hoeft niet opnieuw te worden gezocht.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc-321-po-line-nl.png" alt="Uitgeklapte inkooporderregel met No multi-match Information en een lege factuurregeltabel"><figcaption><p>De uitgeklapte regel toont matchgegevens wanneer die beschikbaar zijn.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-partial-nl.png" alt="Gedeeltelijke match: EUR 50 aan papier is gematcht en EUR 68 staat nog open. Dit betekent geen vaste grens van vijftig procent."><figcaption><p>Gedeeltelijke match: EUR 50 aan papier is gematcht en EUR 68 staat nog open. Dit betekent geen vaste grens van vijftig procent.</p></figcaption></figure>
 
 ## Regels matchen en het resultaat controleren
 
@@ -44,7 +52,7 @@ Gebruik **Matchgeschiedenis** (klokpictogram, voor zover uw rechten dat toestaan
 
 ### Meerdere regels per match
 
-Eén factuurregel kan aan meerdere orderregels corresponderen, of omgekeerd, wanneer uw matchregels dat toestaan. Open de **+**-details op een regel om een bestaande multi-match te inspecteren. Controleer de gecombineerde hoeveelheid en prijs, niet slechts één regel. Een leeg detailpaneel zoals het synthetische voorbeeld hierboven betekent dat er geen multi-match te inspecteren is. Zie [Hulpmiddelen voor PO-matching](purchase-order-matching-tools.md) voor het wijzigen van verbindingen.
+Eén factuurregel kan aan meerdere orderregels corresponderen, of omgekeerd, wanneer uw matchregels dat toestaan. Open de **+**-details op een regel om een bestaande multi-match te inspecteren. Controleer de gecombineerde hoeveelheid en prijs, niet slechts één regel. Een leeg detailpaneel betekent dat er geen multi-match te inspecteren is. Zie [Hulpmiddelen voor PO-matching](purchase-order-matching-tools.md) voor het wijzigen van verbindingen.
 
 ### Hoeveelheden, verschillen en kortingen
 

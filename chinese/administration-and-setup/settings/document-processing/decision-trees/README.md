@@ -19,7 +19,7 @@
 
 决策树列表会显示所有已配置的决策树。可从 **设置 → 文档处理 → 决策树** 打开该列表。
 
-<figure><img src="../../../../.gitbook/assets/decision_trees.png" alt="决策树列表"><figcaption><p>决策树列表</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/site-extra-decision-trees-zh.png" alt="决策树列表，已隐藏名称和组织数据；隐藏的行不表示列表为空。"><figcaption><p>决策树列表，已隐藏名称和组织数据；隐藏的行不表示列表为空。</p></figcaption></figure>
 
 每个条目显示：
 

@@ -5,7 +5,7 @@
 
 **主数据查询**（侧边栏：**Lookup Master Data**）可让您查看和管理 DocBits 用于将提取的文档数据与 ERP 系统进行验证的主数据。它对于准确匹配采购订单、验证供应商以及自动补全字段至关重要。请从 **Settings → Document Processing → Lookup Master Data** 打开此页面。
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_overview.png" alt="主数据查询"><figcaption><p>主数据查询页面 — 数据源和数据表</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-overview-zh.png" alt="中文主数据页面；已隐藏供应商及组织数据，所示配置的英语列标题保留原文。"><figcaption><p>中文主数据页面；已隐藏供应商及组织数据，所示配置的英语列标题保留原文。</p></figcaption></figure>
 
 ## 数据源
 
@@ -33,7 +33,7 @@
 
 点击数据源面板左下角的 **Settings**（齿轮图标）可打开主数据设置。
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_settings.png" alt="主数据查询设置"><figcaption><p>供应商 BOD 和采购订单删除设置</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-settings-zh.png" alt="供应商 BOD 与采购订单保留期限设置。界面中的“供应商董事会”实际指供应商 BOD 设置，BOD 不是董事会。未保存更改。"><figcaption><p>供应商 BOD 与采购订单保留期限设置。界面中的“供应商董事会”实际指供应商 BOD 设置，BOD 不是董事会。未保存更改。</p></figcaption></figure>
 
 ### 供应商 BOD
 

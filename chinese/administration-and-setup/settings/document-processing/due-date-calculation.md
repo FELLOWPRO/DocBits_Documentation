@@ -1,6 +1,6 @@
 # 到期日计算
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_overview.png" alt="到期日计算设置"><figcaption><p>到期日计算设置</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-due-date-calculation-zh.png" alt="中文到期日计算设置；“周末大会”在此指周末日期调整规则，“AP作业代码”指应付账款分配代码。Custom Field 2 是已配置的字段名；本图未更改设置。"><figcaption><p>中文到期日计算设置；“周末大会”在此指周末日期调整规则，“AP作业代码”指应付账款分配代码。Custom Field 2 是已配置的字段名；本图未更改设置。</p></figcaption></figure>
 
 **到期日计算**页面（**文档处理 → 到期日计算**）用于控制 DocBits 如何根据发票中的付款条件代码计算发票到期日、折扣（Skonto）到期日和付款条件。
 
@@ -12,7 +12,7 @@
 
 ### 周末处理方式
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_weekend_options.png" alt="周末规则选项"><figcaption><p>周末规则选项</p></figcaption></figure>
+<!-- Obsolete illustration retired: Obsolete dropdown illustration or wrong-topic agent-settings image retired; the complete weekend rules and supported payment/discount code tables remain as text. -->
 
 选择到期日落在星期六或星期日时的调整方式。此设置同时适用于**发票到期日**和**折扣（Skonto）到期日**。
 
@@ -30,13 +30,13 @@
 
 ## 折扣条件覆盖
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_formats.png" alt="折扣条件覆盖"><figcaption><p>折扣条件覆盖</p></figcaption></figure>
+<!-- Obsolete illustration retired: Obsolete dropdown illustration or wrong-topic agent-settings image retired; the complete weekend rules and supported payment/discount code tables remain as text. -->
 
 使用**折扣条件覆盖**将特定前缀映射到折扣百分比和天数。点击**+ 添加映射**，添加包含**前缀**、**百分比**和**天数**的行。
 
 ## 支持的格式
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_formats.png" alt="支持的付款条件和折扣格式"><figcaption><p>支持的付款条件和折扣格式</p></figcaption></figure>
+<!-- Obsolete illustration retired: Obsolete dropdown illustration or wrong-topic agent-settings image retired; the complete weekend rules and supported payment/discount code tables remain as text. -->
 
 DocBits 可识别以下付款条件代码和折扣条件代码。
 

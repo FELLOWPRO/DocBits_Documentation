@@ -1,6 +1,6 @@
 # 分类与提取
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction.png" alt="分类与提取"><figcaption><p>分类与提取页面</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/site-complete-classification-extraction-zh.png" alt="当前中文“分类与提取”中的提取设置；AI、税码和成本要素选项以组织订阅及配置为准。图中的“自动提取税号”指税码提取，未更改任何开关。"><figcaption><p>当前中文“分类与提取”中的提取设置；AI、税码和成本要素选项以组织订阅及配置为准。图中的“自动提取税号”指税码提取，未更改任何开关。</p></figcaption></figure>
 
 ## 概述
 
@@ -20,7 +20,7 @@
 要访问**分类与提取**设置，请前往：\
 **设置 → 文档处理 → 分类与提取**
 
-<figure><img src="../../../../.gitbook/assets/settings_classification_and_extraction.png" alt=""><figcaption></figcaption></figure>
+
 
 ## 文档拆分
 

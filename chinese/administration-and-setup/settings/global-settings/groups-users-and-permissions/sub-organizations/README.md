@@ -2,7 +2,7 @@
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/en.mp4" %}
 
-<figure><img src="../../../../../.gitbook/assets/sub_organizations.png" alt="子组织"><figcaption><p>子组织页面</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-complete-sub-organizations-zh.png" alt="中文子组织列表及搜索入口；组织数据已隐藏。顶部开关用于显示跨子组织选项，本图未切换该设置。"><figcaption><p>中文子组织列表及搜索入口；组织数据已隐藏。顶部开关用于显示跨子组织选项，本图未切换该设置。</p></figcaption></figure>
 
 子组织可帮助您在 DocBits 中创建层级结构，以便跨不同部门、团队或实体管理文档、用户和工作流。
 

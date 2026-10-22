@@ -6,7 +6,7 @@
 
 从侧边栏打开站点地图（靠近底部的条目），或按 <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd>，然后选择 **查看所有结果（View all results）**。直接访问 URL：`/sitemap`。
 
-<figure><img src="../../.gitbook/assets/sitemap-overview.png" alt="站点地图概览"><figcaption><p>站点地图，包含类别概览和搜索栏。</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-sitemap-zh.png" alt="中文应用站点地图；User 角色标记仍为英文。“录音脚本”在此指创建脚本，非录音。"><figcaption><p>中文应用站点地图；User 角色标记仍为英文。“录音脚本”在此指创建脚本，非录音。</p></figcaption></figure>
 
 ## 浏览目录
 

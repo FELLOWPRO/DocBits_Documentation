@@ -68,7 +68,7 @@
     * 填写所需详细信息：
       * **Configuration Name**
       * **Lookup Table**（要使用的主数据表）
-      * **Conflict Handler**（选择一项：Best Score、Return None、Return First）
+      * **Conflict Handler**（冲突处理方式；可选 Best Score：最高匹配分数，Return None：不返回结果，Return First：返回首个结果）
       * **Context Type** → 定义应用查找的位置：
         * **Header** → 用于文档级字段，例如发票编号、日期等。
         * **Line** → 用于发票表格中的行项目字段。如果选择 **Line**，用户还必须指定要使用的**发票表格**。
@@ -103,7 +103,7 @@
 2. 提供以下详细信息：
    * **Lookup Field** → 主数据查找表中的列名。
    * **Validation Field** → 对应的 DocBits 字段。
-   * **Parent Field** →&#x20;
+   * **Parent Field**（父字段） →&#x20;
    * **Search Operator** → 选择一项：
      * Smart
      * Contains

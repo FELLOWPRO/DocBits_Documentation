@@ -12,7 +12,7 @@
 | 了解设置               | “如何启用条码检测？”                                  | 对每项匹配设置的简短说明：何时启用，何时保持关闭                                                                            |
 | 检查配置               | “为什么 PO 匹配未启用？”                              | 组织中每项相关设置的当前值（**Current: On** 或 **Current: Off**），以及阻止其生效的设置                                       |
 | 发现导入故障           | 面板顶部的红色卡片                                     | 哪个邮箱或 FTP 连接发生故障、故障频率，以及可能的原因                                                                       |
-| 安全地更改设置         | 在发现卡片中，对故障邮箱点击 **Switch off**            | 更改预览。确认前不会保存任何内容。每项更改都可以撤销。                                                                       |
+| 安全地更改设置         | 在发现卡片中，对故障邮箱点击 **Switch off**            | 更改预览。确认前不会保存；能否撤销及其时限以具体操作的说明为准。                                                                       |
 | 了解页面               | **Watch video explanation**                          | 当前页面的简短视频（仅适用于部分页面）                                                                                      |
 
 {% hint style="info" %}
@@ -21,11 +21,11 @@
 
 ## 提问
 
-在底部的输入框中输入问题（“Ask a question about your settings…”），然后按 **Enter**。助手会显示当前操作（“Reading configuration…”、“Searching documentation…”、“Writing answer…”），你可以随时点击 **Stop** 停止。
+在底部的问题输入框中输入问题，然后按 **Enter**。助手会显示当前操作（“Reading configuration…”、“Searching documentation…”、“Writing answer…”），你可以随时点击 **Stop** 停止。
 
 ### 面板会识别你所在的页面
 
-在设置页面打开面板时，助手会针对**该页面**向你问候，并提供三个相关问题。以下是真实示例：
+在设置页面打开面板时，助手会针对**该页面**向你问候，并提供三个相关问题。以下是可尝试的示例问题，实际问候语和回答以当前页面、语言及组织配置为准：
 
 | 页面                | 示例问题                                                                                                                                       |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -41,7 +41,7 @@
 
 你提问：**“如何更改公司地址？”**
 
-<figure><img src="../../../../../.gitbook/assets/settings-assistant-answer-company-address.png" alt="助手回答了公司地址的路径，并提供一个 Open setting 按钮"><figcaption><p>回答会指出设置位置，卡片会显示确切路径和 <strong>Open setting</strong> 按钮。</p></figcaption></figure>
+<!-- Obsolete illustration retired: Retire the obsolete English answer/finding illustration. The procedure remains as an explicitly conditional example; no current answer, fault, configuration or successful change is claimed. -->
 
 回答会告诉你地址设置在哪里。下方的卡片会显示路径（**Settings / Company Settings**）和 **Open setting** 按钮。点击该按钮后，DocBits 会打开相应页面，滚动到该设置并将其突出显示几秒钟。
 
@@ -49,7 +49,7 @@
 
 你提问：**“如何启用条码检测？”**
 
-<figure><img src="../../../../../.gitbook/assets/settings-assistant-answer-barcode.png" alt="助手说明了三项条码设置以及各自的启用时机"><figcaption><p>一个词可能对应多项设置时，助手会逐一列出，并说明<strong>适合启用的情况</strong>和<strong>适合保持关闭的情况</strong>。</p></figcaption></figure>
+<!-- Obsolete illustration retired: Retire the obsolete English answer/finding illustration. The procedure remains as an explicitly conditional example; no current answer, fault, configuration or successful change is claimed. -->
 
 “条码检测”可能指三种不同的设置，因此助手会询问 _你指的是：QR Code Extraction、Barcode Assignment，还是 Split Document on Barcode？_ 并逐一说明：
 
@@ -61,17 +61,17 @@
 
 你提问：**“为什么 PO 匹配未启用？”**
 
-<figure><img src="../../../../../.gitbook/assets/settings-assistant-answer-po-matching.png" alt="助手显示了每项 PO 匹配设置的当前值"><figcaption><p>对于“为什么”类问题，助手会读取你的配置，并显示每项设置的 <strong>Current</strong> 值。</p></figcaption></figure>
+<!-- Obsolete illustration retired: Retire the obsolete English answer/finding illustration. The procedure remains as an explicitly conditional example; no current answer, fault, configuration or successful change is claimed. -->
 
-助手会读取组织的设置并报告检查结果。在此示例中，所有四种文档类型的 PO Matching 都是 **On**，而 **Auto export if PO matched 100%** 设置是 **Off**，因此自动匹配和导出不会运行。每张卡片都会显示 **Current: On / Off** 和 **Open setting** 按钮，你可以立即修复设置。
+助手会读取组织的设置并报告检查结果。例如，PO Matching 开启而 **Auto export if PO matched 100%** 关闭时，匹配功能和匹配后的自动导出必须分别判断：关闭自动导出并不等于关闭匹配。请根据回答中的当前值和设置路径，检查相关条件；不要把示例值当作自己组织的配置。
 
 ### 示例 4：PO 匹配
 
 你打开 **Settings → Document Types** 并提问：**“发票是否启用了 PO 匹配？”**（此问题也是该页面三个建议问题之一。）
 
-<figure><img src="../../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching.png" alt="Settings 中的 Document Types 页面，右侧打开了 Settings Assistant，助手回答发票已启用 PO 匹配，并显示三项相关设置"><figcaption><p><strong>Document Types</strong> 页面右侧显示助手。回答说明<strong>你的组织已为发票启用 PO Matching</strong>，并显示三项相关设置：<strong>PO Matching</strong>（Current: On）、<strong>PO match rules</strong> 和 <strong>Auto export if PO matched 100%</strong>（Current: Off）。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-complete-assistant-document-types-zh.png" alt="文档类型页面上的中文设置助手初始面板，提供与当前页面相关的问题；本图没有执行提问，也不表示任何匹配或导出开关已启用。"><figcaption><p>文档类型页面上的中文设置助手初始面板，提供与当前页面相关的问题；本图没有执行提问，也不表示任何匹配或导出开关已启用。</p></figcaption></figure>
 
-助手会读取该文档类型的设置，并补充与其相关的设置。在此示例中，匹配已启用，但 100% 匹配后的自动导出已关闭，因此匹配成功的发票仍需等待人工处理。每张卡片都有一个 **Open setting** 按钮。
+助手会读取该文档类型及相关设置。若匹配开启而匹配后的自动导出关闭，不能仅据此断言发票必须人工处理：还应检查其他导出规则、审批要求和工作流。下图展示当前中文问候语与提问入口，没有执行此问题或确认任何开关状态。
 
 * 有关**匹配规则和容差**，请参阅页面 [Purchase Order Matching Rules](../../document-types/more-settings/purchase-order/purchase-order-matching-rules.md)。
 * 若要查看**供应商的文档为何无法匹配**，请打开 [Touchless Intelligence: PO Matching Diagnosis](../../../../analytics-dashboard/touchless-intelligence/touchless-po-matching-diagnosis.md)。该页面会显示原因、受影响的文档以及决策流程。
@@ -80,9 +80,9 @@
 
 在 **Settings → Document Types → Custom Validation Rules** 页面上，面板会针对该页面向你问候并建议三个问题。
 
-<figure><img src="../../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules.png" alt="Settings 中的 Custom Validation Rules 页面，规则列表位于中间，右侧的 Settings Assistant 提供三个建议问题"><figcaption><p><strong>Custom Validation Rules</strong> 页面右侧显示助手。规则列表位于中间，面板提供的三个建议问题是：<strong>此文档类型有哪些验证规则？</strong>、<strong>如何创建新的验证规则？</strong>以及<strong>验证规则失败时会发生什么？</strong></p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-complete-assistant-validation-rules-zh.png" alt="自定义校验规则页面上的中文设置助手问候语和建议问题。本图只展示提问入口，未创建或激活规则。"><figcaption><p>自定义校验规则页面上的中文设置助手问候语和建议问题。本图只展示提问入口，未创建或激活规则。</p></figcaption></figure>
 
-在此使用助手可以**查找**正确的设置，并了解规则的作用。若要**创建或更改**规则，请直接在页面上操作：参阅 [Custom Validation Rules](../../document-types/custom-validation-rules.md) 和 [Duplicate a Custom Validation Rule](../../document-types/duplicate-a-custom-validation-rule.md)。如果助手为你创建规则，该规则始终会以**非活动**状态创建，你需要自行启用。
+在此使用助手可以**查找**正确的设置，并了解规则的作用。若要**创建或更改**规则，请直接在页面上操作：参阅 [自定义校验规则](../../document-types/custom-validation-rules.md) 和 [Duplicate a Custom Validation Rule](../../document-types/duplicate-a-custom-validation-rule.md)。如果助手为你创建规则，该规则始终会以**非活动**状态创建，你需要自行启用。
 
 {% hint style="info" %}
 不要混淆 **Custom Validation Rules**（适用于文档类型字段的规则）和 **E-Invoice Validation**（对 XRechnung、ZUGFeRD 和 Factur-X 文件进行的检查）。它们是两个不同的页面。
@@ -111,7 +111,7 @@
 
 设置中出现故障时，面板顶部会显示一张**红色卡片**。你无需提问。每次打开面板，以及每次返回浏览器标签页时，助手都会再次检查。
 
-<figure><img src="../../../../../.gitbook/assets/settings-assistant-finding-expanded.png" alt="展开的发现卡片，显示一个邮箱在三次尝试失败后被关闭"><figcaption><p>展开的发现项：邮箱、其状态（<strong>Switched off</strong>）、失败尝试次数以及原因。</p></figcaption></figure>
+<!-- Obsolete illustration retired: Retire the obsolete English answer/finding illustration. The procedure remains as an explicitly conditional example; no current answer, fault, configuration or successful change is claimed. -->
 
 目前有两项检查：
 

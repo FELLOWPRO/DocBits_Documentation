@@ -18,7 +18,7 @@
 
 路径：**设置** → **文档处理** → **出口**
 
-<figure><img src="../../../../.gitbook/assets/export_list_view.png" alt="导出设置菜单入口"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-export_settings_menu_access-zh.png" alt="中文导出配置列表，配置内容已隐藏；Actions 仍为英文。此处展示配置入口，不代表已执行导出。"><figcaption><p>中文导出配置列表，配置内容已隐藏；Actions 仍为英文。此处展示配置入口，不代表已执行导出。</p></figcaption></figure>
 
 ## **使用导出页面**
 
@@ -35,7 +35,7 @@
 * **导出方式** – 文档的发送位置（例如 Infor、IDM、SFTP）
 * **操作** – 用于**编辑、删除**或**启用/停用**配置的按钮
 
-<figure><img src="../../../../.gitbook/assets/export_list_view.png" alt="导出列表视图"><figcaption></figcaption></figure>
+
 
 #### **导出配置的重要规则**
 
@@ -161,7 +161,7 @@
 * **服务器 URL** SMB 服务器的地址。
 * **港口** 用于访问 SMB 共享的端口号。
 * **文件夹** SMB 共享中用于保存文档的文件夹路径（例如 `/incoming/invoices/`）。该路径必须已存在且可写入。
-*   **JPL Mapping File (Optional)**
+*   **JPL Mapping File (Optional)**（JPL 映射文件，可选）
 
     **JPL 文件**用于在导出数据写入 SMB 共享之前定义数据转换。
 

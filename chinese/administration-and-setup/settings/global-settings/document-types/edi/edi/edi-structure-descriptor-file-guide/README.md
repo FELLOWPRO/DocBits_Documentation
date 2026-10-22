@@ -15,11 +15,11 @@ _如需查看包含片段详情的完整示例，请参阅_ [_结构描述示例
 
 1.  **设置** → **文档类型** → \[你的文档（例如，_采购订单_）] → **电子文档。**\\
 
-    <figure><img src="../../../../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../../.gitbook/assets/site-all-edi-list-zh.png" alt="EDI 配置中的转换、提取路径、预览及结构描述入口。"><figcaption><p>EDI 配置中的转换、提取路径、预览及结构描述入口。</p></figcaption></figure>
 2. 在 **电子文档**下，选择你的格式（例如，_EDI_）。
 3.  点击 **结构描述**。\\
 
-    <figure><img src="../../../../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../../.gitbook/assets/site-all-edi-detail-zh.png" alt="已生效的结构描述版本：只读编辑器中显示 JSON 配置。"><figcaption><p>已生效的结构描述版本：只读编辑器中显示 JSON 配置。</p></figcaption></figure>
 
 #### **草稿管理**
 
@@ -39,15 +39,20 @@ _如需查看包含片段详情的完整示例，请参阅_ [_结构描述示例
 * 前往**结构描述文件**界面。
 *   打开**预览功能。**\\
 
-    <div align="left"><figure><img src="../../../../../../../.gitbook/assets/image (21).png" alt="" width="375"><figcaption></figcaption></figure></div>
+    <div align="left"></div>
 * 在输入框中输入**文档 ID**，然后点击**测试**。
 * 系统将显示生成的**结构化 XML 输出**。
 
 此功能特别适用于实时调试映射和验证结构分组。
 
-<figure><img src="../../../../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
 
 ## 6. 视频演示
 
 此文件类型的视频指南可在[视频页面](../edi-videos.md)查看。\
 你可以跟随视频完成设置、编辑和预览操作。
+
+
+这些视图显示现有配置及其版本。设置因文档类型和格式而异。请在草稿中验证更改后再激活。
+
+图片展示中文流程卡片和只读配置。在所示版本中，Active 状态误译为“积极的”，实际表示已生效。技术编辑器标题、属性标识符及配置代码保留原文。

@@ -1,6 +1,6 @@
 # WatchDog 安装
 
-<figure><img src="../../../.gitbook/assets/watchdog-installation-infographic.svg" alt="WatchDog 安装步骤"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-installation-zh.svg" alt="WatchDog 安装流程与主要要求。"><figcaption><p>WatchDog 安装流程与主要要求。</p></figcaption></figure>
 
 > **推荐：** 使用下文介绍的现代设置方式。现在可以直接在 DocBits 应用中创建 WatchDog 配置，无需本地配置文件。
 
@@ -62,7 +62,7 @@ WatchDog.exe start
 在 DocBits 中导航至**设置 → 文档处理 → WatchDog → 配置**选项卡：
 
 * 点击**新建导入配置**以设置监视文件夹
-* 点击**新建导出配置**以设置导出目标位置
+* 点击**新建导出配置**进入通用导出向导，选择文档类型和导出类型，再设置对应目标。
 
 > **重要：** 导出配置需要指定**文档类型**。所有配置都在 DocBits 中集中管理，而不是保存在本地配置文件中。
 
@@ -80,7 +80,7 @@ WatchDog.exe start
 
 **设置 → WatchDog → 常规选项卡**
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="WatchDog 常规选项卡 — 服务状态"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-general-safe-zh.png" alt="当前中文 WatchDog“一般的”页面，同时展示服务状态和安装入口。图中的离线状态只是测试环境的当前值；命令和安装路径已隐藏，未重启或配置服务。"><figcaption><p>当前中文 WatchDog“一般的”页面，同时展示服务状态和安装入口。图中的离线状态只是测试环境的当前值；命令和安装路径已隐藏，未重启或配置服务。</p></figcaption></figure>
 
 * ✅ **在线** — WatchDog 已连接并正在发送心跳信号
 * 应显示版本、上次重启时间和系统信息
@@ -116,21 +116,21 @@ WatchDog.exe start
 2. **文件夹设置**
    * 定义路径：`C:/WatchDog/Read` 和 `C:/WatchDog/Processed`
 
-   <figure><img src="../../../.gitbook/assets/watchdog_folder_settings.png" alt="WatchDog 文件夹设置"><figcaption></figcaption></figure>
+   <!-- Obsolete illustration retired: Retire obsolete English V1 configuration illustration. The complete explicitly deprecated V1 instructions remain in their historical section, without substituting an unrelated modern screen. -->
 
 3. **常规设置**
    * 选择文档类型，配置导出目标位置
 
-   <figure><img src="../../../.gitbook/assets/watchdog_general_settings_doctypes.png" alt="WatchDog 常规设置"><figcaption></figcaption></figure>
+   <!-- Obsolete illustration retired: Retire obsolete English V1 configuration illustration. The complete explicitly deprecated V1 instructions remain in their historical section, without substituting an unrelated modern screen. -->
 
 4. **导出配置**
    * 显示为本地部署处理配置的导出项
 
-   <figure><img src="../../../.gitbook/assets/watchdog_export_configurations_list.png" alt="WatchDog 导出配置"><figcaption></figcaption></figure>
+   <!-- Obsolete illustration retired: Retire obsolete English V1 configuration illustration. The complete explicitly deprecated V1 instructions remain in their historical section, without substituting an unrelated modern screen. -->
 
 5. **下载配置**
    * 下载 `watchdog-config.json` 并将其放在 `C:\WatchDog\` 中
 
-   <figure><img src="../../../.gitbook/assets/watchdog_download_configuration.png" alt="下载配置"><figcaption></figcaption></figure>
+   <!-- Obsolete illustration retired: Retire obsolete English V1 configuration illustration. The complete explicitly deprecated V1 instructions remain in their historical section, without substituting an unrelated modern screen. -->
 
 </details>

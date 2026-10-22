@@ -11,7 +11,7 @@
 ## 步骤
 
 1. 打开 **Settings → Global Settings → Document Types → Table Columns**。
-2. 点击 **Add new table column**。
+2. 点击 **Add new table column**（添加新的表格列）。
 
 <figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="包含 Title、Is column required、Select column type 和 Select Table 的新增表格列对话框"><figcaption><p>添加新表格列</p></figcaption></figure>
 

@@ -1,5 +1,13 @@
 # Configurações de tolerância de pedido de compra / Tolerância adicional de pedido de compra
 
+## Configurar regras de correspondência e tolerâncias
+
+O percurso abre o tipo de documento fatura, verifica a versão publicada das regras e cria um rascunho inativo. Explica os tipos de regra, a prioridade dentro da fase de correspondência, as colunas, a base de quantidade, os modos e os cálculos de tolerância. Apenas o rascunho do tutorial é guardado; a versão ativa e as tolerâncias globais mantêm-se. O cálculo com cinco por cento é ilustrativo e não altera a tolerância ativa.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/pt.mp4" %}
+
+[Ver o vídeo com legendas](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/pt.html)
+
 ### **Configuração para configurar Tolerâncias de Pedido de Compra**
 
 Vá para **Configurações → Configurações Gerais → Tipos de Documentos → Mais Configurações → Seção de Pedido de Compra → Configuração de Tolerância de PO**

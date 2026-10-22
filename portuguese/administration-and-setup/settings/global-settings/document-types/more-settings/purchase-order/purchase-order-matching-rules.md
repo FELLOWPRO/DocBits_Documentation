@@ -1,5 +1,13 @@
 # Regras de Correspondência de Pedido de Compra
 
+## Configurar regras de correspondência e tolerâncias
+
+O percurso abre o tipo de documento fatura, verifica a versão publicada das regras e cria um rascunho inativo. Explica os tipos de regra, a prioridade dentro da fase de correspondência, as colunas, a base de quantidade, os modos e os cálculos de tolerância. Apenas o rascunho do tutorial é guardado; a versão ativa e as tolerâncias globais mantêm-se. O cálculo com cinco por cento é ilustrativo e não altera a tolerância ativa.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/pt.mp4" %}
+
+[Ver o vídeo com legendas](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/pt.html)
+
 ## Introdução: Pedidos de Compra e Gestão de Regras de PO
 
 A Correspondência de Pedido de Compra (PO) é um processo crítico para garantir a consistência entre os Pedidos de Compra (POs) e as faturas ou recibos de mercadorias correspondentes. Um conjunto robusto de regras é essencial para alcançar uma alta taxa de correspondência automática, prevenir fraudes e garantir pagamentos corretos.

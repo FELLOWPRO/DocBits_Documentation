@@ -2,7 +2,11 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-70b0b5860da5-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
-Use esta condição quando uma etapa adicional de processamento deva depender de um grupo de países. O exemplo verifica se o país lido de um campo do documento pertence à União Europeia.
+Utilização prevista: uma etapa adicional de processamento depende de um grupo de países. O exemplo abaixo descreve uma regra de pertença à União Europeia.
+
+## Limitação atual — código-fonte verificado em 22 de outubro de 2026
+
+Os testes locais do código-fonte com o tipo nativo da seleção de região falham antes da comparação do país e devolvem `missing_variable` ou `error`. Os nomes completos dos países não contornam este problema. Não foi verificada uma execução bem-sucedida no backend implementado para esta versão.
 
 **Localização:** Workflow padrão → condições adicionais (AND) → Campo do documento. Configure a ação seguinte separadamente em THEN.
 
@@ -17,12 +21,14 @@ Use esta condição quando uma etapa adicional de processamento deva depender de
 
 <!-- workflow-card-practical-example-20261021 -->
 
-## Exemplo prático
+## Exemplo previsto — verifique a correção antes da utilização
 
-| Valor do país no campo | Condição esperada |
+Verifique a correção e ambos os casos do exemplo na sua versão instalada antes de ativar esta regra. A tabela descreve a regra de negócio prevista, não uma execução bem-sucedida confirmada.
+
+| Valor do país no campo | Agrupamento de países previsto |
 | --- | --- |
-| `Germany` | Satisfeita |
-| `United States` | Não satisfeita |
+| `Germany` | Dentro da UE |
+| `United States` | Fora da UE |
 
 Os nomes dos países apresentados como código são valores de entrada fixos para este exemplo.
 
@@ -32,6 +38,6 @@ Os nomes dos países apresentados como código são valores de entrada fixos par
 
 Trate separadamente campos ausentes e valores de país vazios; eles podem devolver um resultado de dados em falta em vez de uma falta de correspondência normal.
 
-A análise do código-fonte da versão de desenvolvimento de 22 de outubro de 2026 mostra um erro de conversão para entradas ISO como `DE` e `DEU`. Por isso, estes exemplos usam nomes de países completos. Verifique separadamente o tratamento de códigos ISO na versão instalada.
+O problema de conversão ISO para entradas como `DE` e `DEU` é independente. Substituir códigos ISO por nomes completos de países não resolve o erro de seleção de região.
 
 Os grupos disponíveis, incluindo UE, Schengen e NAFTA, vêm da implementação do cartão. Confirme os países incluídos na sua versão antes de usar um grupo numa regra de negócio.

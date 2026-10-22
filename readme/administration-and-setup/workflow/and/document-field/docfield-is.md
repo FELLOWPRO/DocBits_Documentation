@@ -46,6 +46,6 @@ La tarjeta de flujo de trabajo "DocField Comparison Validation" es una herramien
 
 **Configuración:** Seleccionar campo numérico `total_amount`, operador `>` y valor de referencia `1000`.
 
-**Resultado esperado y contraejemplo:** Pasa un valor de `1200`. `1000` y `900` fallan porque la comparación es estrictamente mayor que.
+**Resultado esperado y contraejemplo:** Un valor de `1200` cumple la condición. `1000` y `900` no la cumplen: el operador `>` exige un valor estrictamente mayor que `1000`.
 
 Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

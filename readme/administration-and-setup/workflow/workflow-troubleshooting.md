@@ -36,6 +36,18 @@ Zwei Linien von derselben Quelle sind keine zwei unabhängigen Freigaben. Bei Zu
 
 Notieren Sie abschließend Ursache, Korrektur, nachgewiesenes Ergebnis und verbleibende Einschränkungen. Trennen Sie Wartezeit und Ausführungszeit; eine lange Gesamtdauer allein belegt keinen langsamen Einzelknoten.
 
+## Eingabedatei und einzelnen Knoten gemeinsam lesen
+
+Beginnen Sie mit einer vollständigen synthetischen Eingabe. Kontrollieren Sie den tatsächlichen technischen Feldschlüssel und seinen Typ, bevor Sie einen Vergleich oder Leerwertfehler beurteilen.
+
+<figure><img src="../../.gitbook/assets/wf-companion-20261022-complete-custom-data-de.png" alt="Deutscher Testdialog mit ausgewähltem Reiter Benutzerdefinierte Daten und JSON-Feldern invoice_id WF-TRAINING-001 sowie total_amount 1785.00"><figcaption><p>Ausschnitt der vollständigen synthetischen Eingabe für 1785.00. Weitere Schlüssel und Layoutdaten liegen in der Übungsdatei und sind im Eingabefeld scrollbar. Nicht nur den sichtbaren Ausschnitt als JSON übernehmen. Bild aus dem bestehenden deutschen Lernvideo, Stufe 2.</p></figcaption></figure>
+
+Lesen Sie anschließend die Antwort desselben Testfalls. Der folgende getrennte Grenzfall 1000,01 zeigt den erfolgreichen REVIEW-Weg. Klappen Sie bei einer Abweichung die betroffene Bedingung auf und vergleichen Sie deren tatsächlich gelesenen Wert mit Ihrer Eingabedatei. Der Dialogkopf allein ersetzt diesen Vergleich nicht.
+
+<figure><img src="../../.gitbook/assets/wf-companion-20261022-positive-test-result-de.png" alt="Tatsächliche deutsche Testantwort zum getrennten Grenzfall 1000,01: sechs erfolgreiche Knoten und REVIEW sowie die simulierte Statusaktion"><figcaption><p>Separat ausgeführter Grenzfall 1000,01: sechs erfolgreiche Knoten, REVIEW und simulierte Statusaktion. Die Eingabeabbildung mit 1785.00 gehört zu einem anderen Übungsfall. Für die Abnahme immer Eingabe und Antwort desselben Falls gemeinsam prüfen. Bild aus dem bestehenden deutschen Lernvideo, Stufe 2.</p></figcaption></figure>
+
+Die Bilder stammen aus den vorhandenen deutschen Lernaufnahmen. [Stufe 2](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/de.html) zeigt Eingabe und Ergebnis; [Stufe 7 mit deutschen Untertiteln](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/de.html) behandelt den Bezug zwischen Änderung, Test und Nachweis. Eine Advanced-Testantwort ist weiterhin kein persönlicher Freigabe- oder Zustellbeleg.
+
 ## WF-04: Übung und Abnahme
 
 Starten Sie mit invalid-number. Sichern Sie die erste Fehlermeldung von amount und den Gesamtausgang error. Wiederholen Sie mit above und vergleichen Sie die neuen Ergebnisse. Das alte Fehlerprotokoll bleibt erhalten; eine erfolgreiche Fehlerbehandlung allein genügt nicht.

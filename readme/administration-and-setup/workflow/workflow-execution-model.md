@@ -35,6 +35,14 @@ Kleinere Werte der **Ausführungsreihenfolge** laufen zuerst. Beispiel: Workflow
 
 Weiter mit dem [Advanced-Geschäftsfall](advanced-workflow-case-study.md), dem [Übungspaket](workflow-training-kit.md) und der [Fehlerdiagnose](workflow-troubleshooting.md).
 
+## Zustand und Ausführung getrennt am Bildschirm prüfen
+
+<figure><img src="../../.gitbook/assets/wf-companion-20261022-inactive-import-check-de.png" alt="Deutsche Workflow-Liste mit eigener Trainingsregel, ausgeschaltetem Aktivschalter, Advanced Workflow, Reihenfolge 500 sowie den Aktionen Aktivieren und Workflow testen"><figcaption><p>Zustandskontrolle an der vorhandenen Trainingsregel: Schalter aus, Menüeintrag „Aktivieren“, eigener Testzugang. Aufnahme aus dem bereits veröffentlichten deutschen Lernvideo, Stufe 1. Das Bild zeigt den kontrollierten Zustand; es ist kein neuer Importnachweis.</p></figcaption></figure>
+
+Der Schalter bestätigt den inaktiven Zustand. **Workflow testen** öffnet einen Testweg; es ist keine Aktivierung für alle passenden Dokumentereignisse. Prüfen Sie anschließend am konkreten Test beziehungsweise gespeicherten Lauf, welcher Einstieg und welche Aktion tatsächlich erreicht wurden. Die angezeigte Ausführungsreihenfolge 500 ordnet diese Regel ein; sie legt nicht die Position ihrer Karten auf der Zeichenfläche fest.
+
+Im [bestehenden Lernvideo Stufe 1](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/de.html) zeigt Thomas die Liste und diesen Zustand ab etwa 0:21. Die Unterscheidung zwischen Test und tatsächlicher Dokumentwirkung folgt im selben Film. Es ist kein zusätzliches Einführungsvideo nötig.
+
 ## WF-01: Übung und Abnahme
 
 Notieren Sie für Ihre Regel Anlass, Filter, Aktivzustand und Kartenversion. Prüfen Sie zwei aufeinanderfolgende Ausführungen und die Reihenfolge 100/200 mit einem tatsächlich gelesenen Folgefeld. Trennen Sie erwartete Folgeausführung und beobachteten Lauf.

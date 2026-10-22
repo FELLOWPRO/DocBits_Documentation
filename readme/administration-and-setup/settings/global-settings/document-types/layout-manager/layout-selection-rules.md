@@ -19,8 +19,8 @@ El origen sigue estando disponible, como una condición más entre muchas. Una r
 | Las facturas de un proveedor necesitan campos adicionales (proyecto, número de aduanas) | imposible sin un origen nuevo | regla *Supplier ID is 20723* → diseño “Invoice with project fields” |
 | Los documentos DE, AT y CH deben tener el mismo aspecto | tres copias del mismo diseño que mantener | un diseño, una regla por origen (o un grupo ANY) que apunta a él |
 | Las facturas electrónicas necesitan una pantalla más sencilla que los PDF escaneados | no es posible | regla *Extraction Method is ELECTRONIC_DOCUMENT* → diseño “E-invoice” |
-| Las facturas de gran importe necesitan más campos en la pantalla de aprobación | no es posible | regla de Approval *Total Amount greater than 10000* → diseño “High value approval” |
-| El segundo aprobador debe ver una pantalla distinta de la del primero | un tipo de diseño “second approval” aparte | regla de Approval *Document Status is Pending second approval* → diseño “Second approval” |
+| Las facturas de gran importe necesitan más campos en la pantalla de aprobación | no es posible | regla de Aprobación *Monto Total mayor a 10000* → diseño “High value approval” |
+| El segundo aprobador debe ver una pantalla distinta de la del primero | un tipo de diseño “second approval” aparte | regla de Aprobación *El estado del documento es Pendiente de segunda aprobación* → diseño “Second approval” |
 
 ## Activar los diseños basados en reglas
 
@@ -47,7 +47,7 @@ No se elimina ni se modifica nada en los propios diseños. Por tanto, justo desp
 
 **Al desactivarlo**, el tipo de documento vuelve de inmediato a la selección basada en el origen. Las reglas se conservan pero no se utilizan, y vuelven a surtir efecto cuando se reactiva el interruptor.
 
-## La pantalla Layouts & Selection Rules
+## La pantalla Diseños y reglas de selección
 
 <figure><img src="../../../../../.gitbook/assets/s150-layouts-overview-es.png" alt="Resumen con las pestañas de diseños y reglas de selección."><figcaption><p>Resumen con las pestañas de diseños y reglas de selección.</p></figcaption></figure>
 
@@ -75,7 +75,7 @@ Reglas de la pantalla **Validación de campos**:
 
 | Prioridad | Regla | Condición | Diseño |
 | --- | --- | --- | --- |
-| 5 | Behaelterbau invoices | *Supplier ID is HP0000278* | Invoice with project fields |
+| 5 | Behaelterbau invoices | *Supplier ID is HP0000278* | Factura con campos de proyecto |
 | 10 | E-invoices | *Extraction Method is ELECTRONIC_DOCUMENT* | E-invoice |
 | 2020 | Layout for DE | *Document Origin is DE* | Field Validation Layout (DE) |
 | — | Default layout | — | Field Validation Layout (Base) |
@@ -149,7 +149,7 @@ Las columnas de tabla no están disponibles: el diseño se elige una sola vez pa
 
 Deje el paso vacío para que coincida con todos los documentos en esta prioridad. Cómo funcionan las condiciones (ALL / ANY, grupos anidados, todos los operadores, valores vacíos, mayúsculas/minúsculas) se explica en [Rule Conditions (Applies when)](../rule-conditions-applies-when.md).
 
-### Paso 3 — Target layout
+### Paso 3 — Diseño de destino
 
 Haga clic en el diseño que debe recibir el documento. La lista muestra sus propios diseños y los diseños del sistema de la pantalla seleccionada. Un diseño no se puede eliminar mientras una regla siga apuntando a él.
 
@@ -218,7 +218,7 @@ Pantalla **Rechazar** · prioridad **10** · *Supplier ID is one of* `10040, 100
 
 ## Relacionado
 
-* [Rule Conditions (Applies when)](../rule-conditions-applies-when.md)
-* [Custom Validation Rules](../custom-validation-rules.md)
+* [Condiciones de la regla (se aplica cuando)](../rule-conditions-applies-when.md)
+* [Reglas de validación personalizadas](../custom-validation-rules.md)
 * [Transformation Rules](../transformation-rules.md)
-* [Navigating the Layout Manager](navigating-the-layout-manager.md)
+* [Navegando por el gestor de diseños](navigating-the-layout-manager.md)

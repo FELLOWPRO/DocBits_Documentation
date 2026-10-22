@@ -1,4 +1,4 @@
-# Additional charge costing element
+# Elemento de coste del recargo adicional
 
 ## Tabla `public.additional_charge_costing_element`
 
@@ -12,10 +12,10 @@
 * `distribution_method`: interno
 * `distribution_type`: interno
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: marca de tiempo con zona horaria
+* `last_modified_on`: marca de tiempo con zona horaria
 * `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: marca de tiempo con zona horaria
 * `sub_org_id`: interno
 * `charge_count`: integer
 * `charge_icon`: interno

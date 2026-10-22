@@ -35,5 +35,5 @@ ZUGFeRD 1.0 fue el estándar híbrido alemán de facturación original, publicad
 ## Relacionado
 
 * [Configuración de ZUGFeRD](../zugferd/)
-* [Asignación de campos de ZUGFeRD](../zugferd/versions/)
+* [Asignación de campos de ZUGFeRD](../zugferd/README.md)
 * [Documentos electrónicos compatibles](./)

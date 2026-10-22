@@ -67,3 +67,13 @@ Esta función es crucial para depurar las vinculaciones de datos, refinar el dis
 ## 6. Video Tutorial
 
 Una guía en video para este tipo de archivo está disponible en la [página de Videos.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Úsala para seguir la configuración, edición y vista previa.
+
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-es.png" alt="Formato EDI existente con sus cuatro atributos configurados."><figcaption><p>Formato EDI existente con sus cuatro atributos configurados.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-preview-es.png" alt="Atributo PREVIEW activo: código XSLT en el editor; esta vista no muestra la vista previa renderizada del documento."><figcaption><p>Atributo PREVIEW activo: código XSLT en el editor; esta vista no muestra la vista previa renderizada del documento.</p></figcaption></figure>
+
+
+Las vistas muestran una configuración y una versión existentes. Los ajustes varían según el tipo de documento y el formato. Valide los cambios en un borrador antes de activarlos.
+
+Algunas etiquetas, como Custom, Default, Version y Last Modified At, siguen apareciendo en inglés en la interfaz actual del producto. Los identificadores técnicos de atributos y el código de configuración se conservan sin cambios.

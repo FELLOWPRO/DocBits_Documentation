@@ -1,43 +1,34 @@
-# Configuración de inicio de sesión único (SSO)
+# Configurar el inicio de sesión único (SSO)
 
-Configurar el inicio de sesión único (SSO) en DocBits requiere unos pocos pasos de preparación y configuración. Esta es una guía paso a paso:
+Configure DocBits como proveedor de servicios SAML (SP) y conecte su proveedor de identidad (IdP). Necesita acceso de administrador a los ajustes correspondientes de ambos sistemas.
 
-**Acceso a los ajustes de SSO:**
+## Abrir los ajustes de SSO
 
-<figure><img src="../../../../../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
+Inicie sesión en DocBits como administrador y abra Inicio de sesión único en los ajustes de integración.
 
-* Inicie sesión en su cuenta de DocBits como administrador.
-* Vaya a los ajustes y busque Single Sign-On o SSO.
+<figure><img src="../../../../../.gitbook/assets/prior-u010-es.png" alt="Configuración de SSO con los valores de la organización ocultos."><figcaption><p>Configuración de SSO con los valores de la organización ocultos.</p></figcaption></figure>
 
-**Configuración de los parámetros de SSO:**
+## Consultar los valores del proveedor de servicios de DocBits
 
-<figure><img src="../../../../../.gitbook/assets/image (79).png" alt=""><figcaption><p>Ajustes del proveedor de servicios SSO</p></figcaption></figure>
 
-* Introduzca los parámetros de SSO necesarios, como la ID de entidad, la URL de cierre de sesión único (SLO) y la URL de inicio de sesión único (SSO).
-* La ID de entidad es un identificador único de su servicio o aplicación.
-* La URL SLO es la URL que se usa para el cierre de sesión único y desconecta a los usuarios de todos los servicios cuando es necesario.
-* La URL SSO es la URL que redirige a los usuarios al proveedor de identidad para la autenticación.
 
-**Descarga de certificados y metadatos:**
+DocBits muestra Entity ID, SSO URL y SLO URL como valores de solo lectura. Cópielos o utilice los metadatos del SP para configurar la aplicación DocBits en su IdP; no introduzca valores de sustitución en estos campos de DocBits. Entity ID identifica al proveedor de servicios. Utilice los puntos de conexión mostrados según los requisitos SAML de su IdP.
 
-<figure><img src="../../../../../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
+## Descargar el certificado y los metadatos del SP
 
-* El proveedor de identidad (IdP) suele proporcionar un certificado que DocBits usa para verificar la respuesta de autenticación SAML.
-* Descargue el certificado y guárdelo de forma segura.
-* La descarga de metadatos contiene toda la información de configuración necesaria para la integración SSO, como la ID de entidad, la URL SSO, la información del certificado y más.
-* Descargue los metadatos y guárdelos localmente o facilítelos al proveedor de identidad.
 
-**Configuración del proveedor de identidad (IdP):**
 
-<figure><img src="../../../../../.gitbook/assets/image (81).png" alt=""><figcaption><p>Ajustes del proveedor de servicios de identidad</p></figcaption></figure>
+Utilice Download Certificate y la descarga de metadatos en los ajustes del proveedor de servicios de DocBits. Estas descargas describen a DocBits como SP. Entregue al IdP los metadatos del SP y, si se requiere, el certificado del SP descargado. Este certificado es distinto de los metadatos del IdP que se cargan en DocBits.
 
-* Inicie sesión en el proveedor de identidad y configure la aplicación o el servicio para la integración SAML.
-* Use los metadatos descargados o los parámetros de SSO introducidos manualmente para añadir DocBits como aplicación o servicio de confianza.
-* Asegúrese de que la configuración del IdP coincide con los parámetros de SSO especificados en DocBits.
+## Configurar el proveedor de identidad
 
-**Prueba de la integración SSO:**
 
-* Una vez completada la configuración, pruebe la integración SSO para comprobar que los usuarios pueden iniciar sesión en DocBits mediante SSO.
-* Verifique también que el cierre de sesión único funciona correctamente: cierre sesión en DocBits y compruebe que también se cierra en los demás servicios conectados.
 
-Una configuración correcta del SSO permite a los usuarios iniciar sesión en DocBits con sus credenciales existentes, lo que mejora la experiencia de usuario y aumenta la seguridad.
+1. En su IdP, configure DocBits con los valores del SP mostrados en DocBits o con los metadatos del SP descargados.
+2. Utilice la Tenant ID de DocBits si su proveedor la requiere. Compruebe el contexto del tenant y del proveedor en los ajustes del proveedor de identidad de DocBits.
+3. Obtenga del IdP los metadatos SAML XML de la aplicación configurada y cargue esos metadatos XML del IdP en DocBits. No los sustituya por los metadatos del SP de DocBits descargados anteriormente.
+4. Guarde la configuración mediante la acción Configure/Save en los ajustes del proveedor de identidad de DocBits.
+
+## Probar el inicio de sesión y el cierre de sesión admitido
+
+Compruebe que un usuario pueda iniciar sesión en DocBits mediante el IdP configurado. Pruebe Single Log-Out solo si tanto DocBits como el IdP lo admiten y está configurado en ambos sistemas. Cerrar la sesión en DocBits no garantiza por sí solo el cierre de sesión en todas las demás aplicaciones conectadas.

@@ -1,13 +1,13 @@
 # M3
 
-## Paso 1: Crear un Connection Point
+## Paso 1: Crear un punto de conexión
 
-1. Navegue a **OS > ION > Connect > Connection Points**
+1. Navegue a **OS > ION > Conectar > Puntos de Conexión**
 2. Haga clic en **Add** y seleccione **IMS via API Gateway** como tipo de conexión.
 3. Configure los siguientes ajustes:
    * **Name**: Establezca en `DocBits_Export`.
    * **Description**: Establezca en `DocBits_Export`.
-   * **Uncheck**: _Application has IMS End Point_.
+   * **Desmarque**: _La aplicación tiene IMS Punto final_.
    * **ION API Client ID**:
      * Abra el archivo ION API.
      * Busque `"ci"` dentro del archivo.
@@ -43,7 +43,7 @@
    * **Name**: `DocBits_Export_to_M3`
 4. Agregue nodos al flujo:
 
-#### Application Node
+#### Nodo de aplicación
 
 1. Agregue un **Application Node** al flujo.
    * **Name**: `DocBits` o `DocBits-Export`.
@@ -56,7 +56,7 @@
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_6.png)
 
-#### Mapping Node
+#### Nodo de asignación
 
 1. Agregue un **Mapping Node** a la derecha del Application Node.
    * **Name**: `Capt2process`.
@@ -64,7 +64,7 @@
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_7.png)
 
-#### Application Node
+#### Nodo de aplicación
 
 1. Agregue un **Application Node** a la derecha del Mapping Node anterior.
    * **Name**: `M3`.
@@ -77,7 +77,7 @@
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_9.png)
 
-#### API Node
+#### Nodo de API
 
 1. Agregue un **API Node** a la derecha del Application Node.
    * **Name**: `DocBits-Error`.
@@ -95,7 +95,7 @@
 
 ## Paso 4: Configurar Export en DocBits
 
-### On-Premise:
+### Instalación local:
 
 1. Abra **DocBits**.
 2.  Navegue a **Configuración > Procesamiento de documentos > Exportar**.
@@ -111,7 +111,7 @@
    * **IDM Mapping File**: (Proporcione la ruta del archivo relevante o ubicación).
    * **BOD Mapping File**: (Proporcione la ruta del archivo relevante o ubicación).
 
-### Cloud:
+### Nube:
 
 1. Abra **DocBits**.
 2.  Navegue a **Configuración > Procesamiento de documentos > Exportar**.

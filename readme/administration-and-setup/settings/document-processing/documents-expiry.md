@@ -1,4 +1,4 @@
-# Documents Expiry
+# Caducidad de documentos
 
 <figure><img src="../../../.gitbook/assets/document_expiry_settings_overview.png" alt="Configuración de Documents Expiry"><figcaption><p>Configuración de Documents Expiry</p></figcaption></figure>
 
@@ -9,7 +9,7 @@ Dos ajustes controlan la eliminación automática:
 | Ajuste | Qué controla |
 |---------|------------------|
 | **Delete document after** | Durante cuánto tiempo se conserva cualquier documento procesado antes de eliminarse automáticamente. |
-| **Delete finished document after** | Durante cuánto tiempo se conserva un documento finalizado (completamente procesado y exportado) antes de eliminarse automáticamente. |
+| **Eliminar documento terminado después de** | Durante cuánto tiempo se conserva un documento finalizado (completamente procesado y exportado) antes de eliminarse automáticamente. |
 
 Para cada ajuste se elige un período de tiempo en la lista desplegable:
 

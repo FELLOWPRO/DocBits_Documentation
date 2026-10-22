@@ -30,7 +30,7 @@ C:\WatchDog\Export\        ← Export folder for exported files
 
 Descargue `WatchDog.exe` desde la aplicación DocBits:
 
-**Settings → Document Processing → WatchDog → General Tab → Download**
+**Configuración → Procesamiento de documentos → WatchDog → Pestaña General → Descargar**
 
 Coloque el archivo `WatchDog.exe` descargado en `C:\WatchDog\`.
 
@@ -78,7 +78,7 @@ Vaya a **Settings → Document Processing → WatchDog → Configurations Tab** 
 
 Después de la instalación, compruebe el estado de WatchDog en DocBits:
 
-**Settings → WatchDog → General Tab**
+**Configuración → WatchDog → Pestaña General**
 
 <figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="Pestaña General de WatchDog: estado del servicio"><figcaption></figcaption></figure>
 
@@ -112,7 +112,7 @@ El siguiente método de configuración V1, basado en archivos de configuración 
 ### Configuración de WatchDog en DocBits (V1)
 
 1. **Acceda a los ajustes de WatchDog**
-   * Vaya a **Settings → Document Processing → WatchDog**
+   * Vaya a **Configuración → Procesamiento de documentos → WatchDog**
 2. **Ajustes de carpetas**
    * Defina las rutas: `C:/WatchDog/Read` y `C:/WatchDog/Processed`
 

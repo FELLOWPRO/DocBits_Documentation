@@ -39,7 +39,7 @@ El número de factura es un compuesto de tres campos: `estab-ptoEmi-secuencial` 
 
 ## Vista Previa Predeterminada
 
-<figure><img src="ecuador-sri-preview.png" alt="Vista previa de Ecuador SRI Factura en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una Factura Electrónica Ecuador SRI (versión 2.1.0)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/ecuador-sri-preview.png" alt="Vista previa de Ecuador SRI Factura en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una Factura Electrónica Ecuador SRI (versión 2.1.0)</p></figcaption></figure>
 
 ## Mapeo de Campos
 
@@ -93,5 +93,5 @@ El elemento raíz es `<factura>` con `id="comprobante"`. El atributo `version` d
 
 ## Relacionado
 
-- [Estándares de Factura Electrónica Actualmente Compatibles](../../currently-supported-e-invoice-standards/)
+- [Estándares de Factura Electrónica Actualmente Compatibles](../currently-supported-e-invoice-standards/README.md)
 - [Documentos Electrónicos Compatibles](./)

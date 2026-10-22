@@ -35,5 +35,5 @@ El perfil Extended de ZUGFeRD 1.0 es el más completo y admite escenarios de neg
 ## Relacionados
 
 * [Configuración de ZUGFeRD](../zugferd/)
-* [Mapeo de campos de ZUGFeRD](../zugferd/versions/)
+* [Mapeo de campos de ZUGFeRD](../zugferd/README.md)
 * [Documentos electrónicos compatibles](./)

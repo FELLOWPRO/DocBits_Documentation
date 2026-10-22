@@ -1,8 +1,8 @@
-# Table Columns
+# Columnas de tabla
 
 Table Columns define qué columnas tiene la tabla de líneas de un tipo de documento: qué extrae DocBits en cada columna, qué ve el usuario en la pantalla de validación y qué se envía al ERP en la exportación.
 
-**Dónde:** Settings → Global Settings → Document Types → Table Columns
+**Dónde:** Configuración → Configuración global → Tipos de documento → Columnas de tabla
 
 <figure><img src="../../../../../.gitbook/assets/table-columns_list.png" alt="Lista de Table Columns con los indicadores Required, Read Only, Hidden y Use AI por columna"><figcaption><p>Table Columns: una fila por columna; los indicadores se cambian directamente en la lista</p></figcaption></figure>
 

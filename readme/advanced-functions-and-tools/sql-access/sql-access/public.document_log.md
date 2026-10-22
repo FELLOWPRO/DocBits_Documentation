@@ -10,8 +10,8 @@
 * `action_type`: interno
 * `action_description`: text
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: marca de tiempo con zona horaria
+* `last_modified_on`: marca de tiempo con zona horaria
 * `is_deleted`: boolean
 * `is_hidden`: boolean
 * `previous_status`: interno

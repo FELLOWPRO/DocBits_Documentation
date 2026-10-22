@@ -35,5 +35,5 @@ El perfil Comfort de ZUGFeRD 1.0 amplía el perfil Basic con campos adicionales 
 ## Relacionados
 
 * [Configuración de ZUGFeRD](../zugferd/)
-* [Mapeo de campos de ZUGFeRD](../zugferd/versions/)
+* [Mapeo de campos de ZUGFeRD](../zugferd/README.md)
 * [Documentos electrónicos compatibles](./)

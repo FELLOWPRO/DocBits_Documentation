@@ -26,7 +26,7 @@ Esta función te ayuda a gestionar y conciliar los números de artículo entre t
 * **Acción:** Opciones para gestionar los mapeos, como eliminar mapeos incorrectos.
 
 {% hint style="info" %}
-Consulta también la [Sección de Administración](broken-reference)
+Consulta también la [Sección de Administración](../../../administration-and-setup/settings/README.md)
 {% endhint %}
 
 ## **Beneficios**

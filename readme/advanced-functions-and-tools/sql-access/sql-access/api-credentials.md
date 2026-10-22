@@ -1,4 +1,4 @@
-# API credentials
+# Credenciales de API
 
 ## Columnas
 
@@ -9,10 +9,10 @@
 * `credentials_type`: interno
 * `credentials_json`: text
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: marca de tiempo con zona horaria
+* `last_modified_on`: marca de tiempo con zona horaria
 * `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: marca de tiempo con zona horaria
 * `last_modified_by`: interno
 * `deleted_by`: interno
 

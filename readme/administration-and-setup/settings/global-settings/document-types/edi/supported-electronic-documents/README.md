@@ -32,7 +32,7 @@ La vista general enlaza a 39 guías de países y una guía internacional. Cada g
 | [Alemania](countries/germany.md) | XRechnung tiene trece etiquetas de versión de 1.0 a 3.0.2, cada una en CII y UBL. ZUGFeRD incluye perfiles antiguos y entradas 2.5 en CII y UBL. | Entradas encontradas |
 | [Italia](countries/italy.md) | FatturaPA es la familia italiana configurada. | Entradas encontradas |
 | [Países Bajos](countries/netherlands.md) | SI-UBL 2.0 tiene una entrada dedicada. | Entradas encontradas |
-| [Noruega](countries/norway.md) | EHF Invoice 3.0 figura junto a EHF Order, Order Response y Despatch Advice. | Entradas encontradas |
+| [Noruega](countries/norway.md) | EHF Factura 3.0 figura junto a EHF Pedido, Respuesta de pedido y Aviso de despacho. | Entradas encontradas |
 | [Polonia](countries/poland.md) | KSeF tiene entradas genéricas, FA2 y FA3. | Entradas encontradas |
 | [Eslovenia](countries/slovenia.md) | e-SLOG 1.6 y 2.0 tienen entradas independientes. | Entradas encontradas |
 | [España](countries/spain.md) | Facturae tiene entradas genéricas, 3.2, 3.2.1 y 3.2.2. | Entradas encontradas |

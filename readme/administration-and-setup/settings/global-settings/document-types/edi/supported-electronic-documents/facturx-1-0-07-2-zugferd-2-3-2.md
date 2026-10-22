@@ -35,5 +35,5 @@ Factur-X 1.0.07.2 equivale a ZUGFeRD 2.3.2, publicada en noviembre de 2024. Esta
 ## Relacionado
 
 * [Configuración de ZUGFeRD](../zugferd/)
-* [Asignación de campos de ZUGFeRD](../zugferd/versions/)
+* [Asignación de campos de ZUGFeRD](../zugferd/README.md)
 * [Documentos electrónicos compatibles](./)

@@ -30,7 +30,7 @@ NFC-e (Nota Fiscal de Consumidor Eletrônica, `<mod>65</mod>`) es la factura ele
 
 ## Vista previa predeterminada
 
-<figure><img src="brazil-nfce-preview.png" alt="Vista previa de Brazil NFC-e en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para un documento BRAZIL NFC-E</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/brazil-nfce-preview.png" alt="Vista previa de Brazil NFC-e en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para un documento BRAZIL NFC-E</p></figcaption></figure>
 
 ## Mapeo de campos
 

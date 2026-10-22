@@ -1,4 +1,4 @@
-# Sales order
+# Pedido de venta
 
 ## Tabla `public.sales_order`
 
@@ -15,8 +15,8 @@
 * `warehouse_id`: interno
 * `warehouse_name`: interno
 * `transportation_method`: interno
-* `requested_delivery_date`: timestamp with time zone
-* `order_date`: timestamp with time zone
+* `requested_delivery_date`: marca de tiempo con zona horaria
+* `order_date`: marca de tiempo con zona horaria
 * `sales_person_id`: interno
 * `sales_person_name`: interno
 * `ship_to_party_id`: interno
@@ -27,10 +27,10 @@
 * `ship_to_party_zip`: interno
 * `status`: interno
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: marca de tiempo con zona horaria
+* `last_modified_on`: marca de tiempo con zona horaria
 * `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: marca de tiempo con zona horaria
 * `preview_path`: interno
 * `last_modified_by`: interno
 * `deleted_by`: interno

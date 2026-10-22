@@ -8,7 +8,7 @@ El rol de un administrador es crucial para gestionar sistemas de TI, redes y pla
 
 Además de estas responsabilidades, los administradores también se encargan de gestionar configuraciones sensibles y de garantizar que los sistemas cumplan los requisitos de conformidad y las mejores prácticas de seguridad de la información. Esto incluye gestionar datos sensibles, configurar controles de acceso y permisos, y supervisar y analizar los registros del sistema para identificar y abordar posibles riesgos de seguridad.
 
-## Admin vs System Admin
+## Administrador y administrador del sistema
 
 DocBits tiene dos roles de administrador: **Admin** y **System Admin**. Suenan parecido, pero cumplen funciones distintas. Aquí va la versión sencilla.
 

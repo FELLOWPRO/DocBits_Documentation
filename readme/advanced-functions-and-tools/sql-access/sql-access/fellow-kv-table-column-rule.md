@@ -1,4 +1,4 @@
-# Fellow kv table column rule
+# Regla de columna de tabla KV de Fellow
 
 ## Tabla `public.fellow_kv_table_column_rule`
 
@@ -34,8 +34,8 @@
 * `ruleWeight`: integer
 * `user_id`: integer
 * `org_id`: ID de la organización
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: marca de tiempo con zona horaria
+* `last_modified_on`: marca de tiempo con zona horaria
 * `is_deleted`: boolean
 * `is_new`: boolean
 

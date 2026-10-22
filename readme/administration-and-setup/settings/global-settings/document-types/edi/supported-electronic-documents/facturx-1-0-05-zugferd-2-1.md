@@ -35,5 +35,5 @@ Factur-X 1.0.05 equivale a ZUGFeRD 2.1. Publicada en 2020, fue la primera versi�
 ## Relacionado
 
 * [Configuración de ZUGFeRD](../zugferd/)
-* [Asignación de campos de ZUGFeRD](../zugferd/versions/)
+* [Asignación de campos de ZUGFeRD](../zugferd/README.md)
 * [Documentos electrónicos compatibles](./)

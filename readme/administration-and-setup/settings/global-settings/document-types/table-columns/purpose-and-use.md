@@ -32,4 +32,4 @@ Una columna de tabla es un campo de la tabla de líneas. Todo lo que DocBits hac
 
 * [Añadir una nueva columna](adding-a-new-column.md)
 * [Editar y eliminar columnas](editing-and-deleting-columns.md)
-* [Table Extraction Troubleshoot](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md)
+* [Solución de problemas de extracción de tablas](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md)

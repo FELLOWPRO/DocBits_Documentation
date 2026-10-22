@@ -22,7 +22,7 @@ Esta guía le explica cómo conectar **ClickHouse** a **Power BI Desktop** media
 * Seleccione **ClickHouse ODBC Driver** en la lista y haga clic en **Finalizar**.
 *   Rellene los campos obligatorios. Encontrará la información necesaria en:
 
-    **DocBits** → **Settings** → **Document Processing** → **Module** → **AI Dashboard** → **ClickHouse Direct Access**
+    **DocBits** → **Configuración** → **Procesamiento de documentos** → **Módulo** → **AI Panel de control** → **ClickHouse Acceso directo**
 
     <figure><img src="../../.gitbook/assets/clickhouse_direct_access_settings.png" alt="Ajustes de ClickHouse Direct Access en DocBits"><figcaption></figcaption></figure>
 

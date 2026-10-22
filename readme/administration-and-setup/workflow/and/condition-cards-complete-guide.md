@@ -299,7 +299,7 @@ NO: Stop
 
 ## Condiciones de fecha y hora
 
-### Tarjeta: CONDITION\_TIME\_IS\_ISNOT\_BETWEEN / Date Range Check
+### Tarjeta: CONDITION\_TIME\_IS\_ISNOT\_BETWEEN / Verificación de rango de fechas
 
 #### Propósito
 
@@ -463,7 +463,7 @@ If NO: Use default routing
 
 ***
 
-### Tarjeta: CONDITION\_CONTINUE\_CHANCE / Random Probability
+### Tarjeta: CONDITION\_CONTINUE\_CHANCE / Probabilidad aleatoria
 
 #### Propósito
 

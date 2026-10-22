@@ -1,4 +1,4 @@
-# Show Report
+# Mostrar informe
 
 ### Descripción general
 

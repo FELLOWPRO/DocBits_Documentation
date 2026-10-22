@@ -1,4 +1,4 @@
-# Settings Assistant
+# Asistente de configuración
 
 El **Settings Assistant** es un panel de chat dentro del área de Settings. Usted hace una pregunta en lenguaje natural, y el asistente lee la configuración de su organización, responde y le lleva directamente al ajuste correcto. También puede avisarle cuando algo de su configuración ha dejado de funcionar y, con su confirmación, cambiar un ajuste por usted.
 
@@ -18,7 +18,7 @@ El asistente está **desactivado por defecto**. Esta página muestra dónde acti
 
 1. Vaya a **Settings → Global Settings → Company Information**. El encabezado de la página muestra **Company Settings**.
 2. Abra la sección **Assistants**.
-3. Active **Enable the settings assistant**.
+3. Activo **Habilita el asistente de configuración**.
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-org-switch-es.png" alt="La sección Assistants en Company Information con los interruptores del settings assistant, el validation assistant y la locución del explainer"><figcaption><p>La sección Assistants. El settings assistant tiene su propio interruptor. El validation assistant y la locución del explainer son funciones independientes.</p></figcaption></figure>
 
@@ -50,7 +50,7 @@ En todas las páginas del área de Settings encontrará un pequeño **botón con
 | --- | --- |
 | No hay botón con lámpara de genio en el área de Settings | El interruptor de la organización está desactivado. Un administrador de la organización lo activa en **Company Information → Assistants** |
 | Falta la sección **Assistants** en Company Information | Solo la ven los administradores de la organización |
-| El panel dice **The assistant is being set up** | La función todavía no está disponible en su entorno |
+| El panel dice **Se está configurando el asistente** | La función todavía no está disponible en su entorno |
 | El panel está ahí, pero las respuestas dicen *Available to administrators only.* | Su cuenta no es administrador de la organización |
 
 ## Páginas relacionadas

@@ -51,7 +51,7 @@ Con XRechnung o ZUGFeRD no se reconoce nada: el valor ya es un campo de datos en
 * **Ejemplo:** número de factura del campo XML del remitente.
 * **Si es incorrecto:** el error está en el remitente. DocBits muestra exactamente de qué campo XML procede el valor.
 
-### Script / regla de transformación
+### Script/ regla de transformación
 
 Tras la lectura interviene la lógica del cliente y remodela el valor. El documento sigue igual; el valor no.
 

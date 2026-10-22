@@ -32,7 +32,7 @@ Con DocBits MCP, un asistente puede, en su nombre:
 
 DocBits MCP agrupa bastante más de un centenar de herramientas en las categorías siguientes (el número exacto crece con cada versión; su asistente lista el conjunto actual). La mayoría reflejan endpoints REST existentes de DocBits; consulte la [API Reference](../../README.md) para ver el detalle de solicitudes y respuestas. Un asistente elige automáticamente la herramienta adecuada a partir de su solicitud; las tablas son un mapa de lo que está disponible.
 
-### Documents & Processing
+### Documentos y procesamiento
 
 | Herramienta | Descripción |
 |------|-------------|
@@ -46,7 +46,7 @@ DocBits MCP agrupa bastante más de un centenar de herramientas en las categorí
 | `delete_document` | Elimina un documento |
 | `get_pending_documents_count` | Cuántos documentos esperan validación |
 
-### Extraction & Validation
+### Extracción y validación
 
 | Herramienta | Descripción |
 |------|-------------|
@@ -60,7 +60,7 @@ DocBits MCP agrupa bastante más de un centenar de herramientas en las categorí
 | `validate_and_export` | Valida y después exporta al ERP |
 | `get_export_preview` | Vista previa de la carga útil de exportación antes de enviarla |
 
-### Table Extraction
+### Extracción de tablas
 
 Todo lo que la pantalla de validación y los ajustes de columnas de tabla pueden hacer con las tablas de líneas. Las herramientas de configuración modifican los tipos de documento de la organización; las herramientas de extracción y corrección trabajan sobre un documento; las herramientas de reglas almacenan lo que DocBits aprendió de un proveedor.
 
@@ -80,7 +80,7 @@ Todo lo que la pantalla de validación y los ajustes de columnas de tabla pueden
 | `get_table_extraction_report` / `list_table_report_suppliers` | Informe por proveedor sobre cómo se extraen las tablas (reglas, IA, modelo), con vista previa |
 | `compare_table_extraction_models` | Extrae el mismo documento con dos niveles de IA y compara las tablas |
 
-### Search & Dashboard
+### Búsqueda y panel
 
 | Herramienta | Descripción |
 |------|-------------|
@@ -113,7 +113,7 @@ Por qué los documentos necesitan intervención humana y qué cambiar para que l
 | `touchless_apply_change` | Aplica a la organización una propuesta previsualizada |
 | `touchless_verify_change` | Qué valor aportó finalmente un cambio aplicado |
 
-### Analytics & BI
+### Análisis e inteligencia empresarial
 
 | Herramienta | Descripción |
 |------|-------------|
@@ -123,7 +123,7 @@ Por qué los documentos necesitan intervención humana y qué cambiar para que l
 | `get_top_document_types` | Tipos de documento más frecuentes |
 | `get_pending_tasks_detail` | Detalle del trabajo pendiente |
 
-### Electronic Documents (e-invoices)
+### Documentos electrónicos (facturas electrónicas)
 
 | Herramienta | Descripción |
 |------|-------------|
@@ -132,7 +132,7 @@ Por qué los documentos necesitan intervención humana y qué cambiar para que l
 | `verify_electronic_documents` / `validate_all_edocs` | Verifica la extracción de documentos electrónicos |
 | `list_edoc_custom_attributes` / `create_edoc_custom_attribute` | Gestiona atributos de extracción personalizados |
 
-### Master Data
+### Datos maestros
 
 | Herramienta | Descripción |
 |------|-------------|
@@ -142,7 +142,7 @@ Por qué los documentos necesitan intervención humana y qué cambiar para que l
 | `get_supplier_invoice` | Lee los datos persistidos de la factura de proveedor (BOD) por factura, proveedor o documento |
 | `upsert_payment_term_mapping` / `upsert_discount_mapping` | Mantiene las asignaciones de cálculo |
 
-### Configuration, Admin & Health
+### Configuración, administración y estado del sistema
 
 | Herramienta | Descripción |
 |------|-------------|

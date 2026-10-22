@@ -20,7 +20,7 @@ El XSLT TRANSFORMATION predeterminado emite dos campos derivados:
 | Campo DocBits | Origen | Lógica |
 | :--- | :--- | :--- |
 | `INVOICE_TYPE` | `CrossIndustryInvoice/ExchangedDocument/TypeCode` | UNCL 1001 `381` o `261` → **Credit Note**; cualquier otro código → **Invoice** |
-| `INVOICE_SUB_TYPE` | `SupplyChainTradeTransaction/ApplicableHeaderTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | No vacío → **Purchase Invoice**; vacío/ausente → **Cost Invoice** |
+| `INVOICE_SUB_TYPE` | `SupplyChainTradeTransaction/ApplicableHeaderTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | No vacío → **Factura de Compra**; vacío/ausente → **Factura de Costo** |
 
 ### Información de pago
 

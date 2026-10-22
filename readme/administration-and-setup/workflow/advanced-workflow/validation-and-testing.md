@@ -39,7 +39,7 @@ El guardado automático conserva un borrador local aproximadamente cada treinta 
 
 Mientras construyes un flujo de trabajo Avanzado, dos controles de la barra de herramientas te permiten comprobarlo sin salir del editor. Son para *comprobaciones rápidas durante la construcción*; para pruebas guardadas y repetibles, usa el [Test Manager](../test-manager.md).
 
-## Validate
+## Validar
 
 Haz clic en el control **Validate** (el icono de círculo con marca de verificación, o pulsa <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). La validación revisa el grafo en busca de problemas (nodos sin conectar, configuración faltante y conexiones no válidas) y los señala para que puedas corregirlos antes de que el flujo de trabajo se ejecute con documentos reales.
 

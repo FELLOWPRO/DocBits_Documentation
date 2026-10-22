@@ -1,4 +1,4 @@
-# REST API Lookup Configurations
+# Configuración de búsquedas mediante API REST
 
 ## Tabla `public.rest_api_lookup_configurations`
 
@@ -19,10 +19,10 @@
 * `data_base_path`: interno
 * `column_paths`: text
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: marca de tiempo con zona horaria
+* `last_modified_on`: marca de tiempo con zona horaria
 * `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: marca de tiempo con zona horaria
 * `is_template`: boolean
 * `is_dynamic`: boolean
 

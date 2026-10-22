@@ -374,7 +374,7 @@ Si necesita datos adicionales en correos electrónicos:
 
 * **ACTION\_SEND\_EMAIL** - Enviar a persona individual
 * **ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP**: asigna tarea en lugar de simplemente notificar
-* **ACTION\_CREATE\_TASK\_FOR\_GROUP\_SEQUENTIAL** - Crear tarea y notificar
+* **ACTION\_CREATE\_TASK\_FOR\_GROUP\_SEQUENTIAL** - Crear tarea y notificación
 * **STAUS\_CHANGE** - Cambiar estado y notificar
 
 ***

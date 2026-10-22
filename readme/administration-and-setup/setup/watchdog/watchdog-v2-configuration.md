@@ -143,7 +143,7 @@ Gestione las plantillas de transformación XSLT utilizadas para las exportacione
 
 ---
 
-## 6. Pestaña Export Configurations
+## 6. Pestaña Configuración de exportacións
 
 Resumen de todas las configuraciones de exportación activas con su estado de conexión.
 

@@ -16,31 +16,31 @@ Si una factura u otro documento supera un determinado importe total que requiere
 
 <figure><img src="../../.gitbook/assets/workflow_amount_check.png" alt="Comprobación de importe del flujo de trabajo"><figcaption></figcaption></figure>
 
-**Test 1: Logic Card**
+**Prueba 1: Tarjeta Lógica**
 
 When: **Assignee is:** Responsable de entrada
 
-And: **Document type is:** Invoice
+Y: **El tipo de documento es:** Factura
 
 Then: **Assign document to:** Revisor de facturas
 
 ![](<../../.gitbook/assets/3 (1).png>)
 
-**Test 2: Logic Card**
+**Prueba 2: Tarjeta Lógica**
 
 When: **Assignee is:** Responsable de entrada
 
-And: **Document type is:** Delivery Note
+Y: **El tipo de documento es:** Albarán
 
 Then: **Assign document to:** Revisor de albaranes
 
 ![](<../../.gitbook/assets/4 (1).png>)
 
-**Test 3: Logic Card**
+**Prueba 3: Tarjeta Lógica**
 
 **When:** **Assignee is:** Responsable de entrada
 
-**And:** **Document type is:** Order Confirmation
+**Y:El tipo de documento es:** Confirmación de pedido
 
 **Then:** **Assign document to:** Revisor de pedidos
 
@@ -52,25 +52,25 @@ También es posible, si el documento no está asignado a una sola persona, asign
 
 Para tener una visión más sencilla de lo que debe ocurrir con un documento, puede establecer el estado de los documentos entrantes en este flujo de trabajo. Este flujo de trabajo permite ver de inmediato si existe, por ejemplo, una aprobación pendiente.
 
-**Test 4: Logic Card**
+**Prueba 4: Tarjeta Lógica**
 
-**When:** **Document type is:** Delivery Note
+**Cuando:El tipo de documento es:** Albarán
 
 **And:** **Assignee is:** Responsable de entrada
 
-**Then:** **Change Status to:** Pending Approval
+**Luego:Cambiar estado a:** Pendiente de aprobación
 
 <figure><img src="../../.gitbook/assets/s150-workflow_test4_delivery_note_status-es.png" alt="Borrador de flujo para cambiar el estado de un documento."><figcaption><p>Borrador de flujo para cambiar el estado de un documento.</p></figcaption></figure>
 
 ![](<../../.gitbook/assets/8 (1).png>)
 
-**Test 5: Logic Card**
+**Prueba 5: Tarjeta Lógica**
 
-When: **Document type is:** Invoice
+Cuándo: **El tipo de documento es:** Factura
 
 And: **Assignee is:** Revisor de facturas
 
-Then: **Change Status to:** Pending Second Approval
+Luego: **Cambiar estado a:** Pendiente de segunda aprobación
 
 <figure><img src="../../.gitbook/assets/workflow_test5_invoice_approval_status.png" alt="Estado de aprobación de factura del Test 5 del flujo de trabajo"><figcaption></figcaption></figure>
 
@@ -80,11 +80,11 @@ Si una factura u otro documento supera un determinado importe total que requiere
 
 ![](<../../.gitbook/assets/11 (1).png>)
 
-**Test 6: Logic Card**
+**Prueba 6: Tarjeta Lógica**
 
 When: **Assignee is:** Responsable de entrada
 
-And: Docfield **total\_amount** is **Greater than 500**
+Y: Docfield **total\_amount** es **Mayor que 500**
 
 Then: **Assign document to:** Responsable de aprobación
 
@@ -94,15 +94,15 @@ Then: **Assign document to:** Responsable de aprobación
 
 También es posible introducir el estado en el flujo de trabajo, de modo que la persona asignada pueda ver de inmediato en qué estado se encuentra el documento y qué debe ocurrir a continuación con él.
 
-**Test 7: Logic Card**
+**Prueba 7: Tarjeta Lógica**
 
 **When:** **Assignee is:** Responsable de entrada
 
-**And:** Docfield **total\_amount** is **Greater then 500**
+**Y:** Docfield **total\_amount** es **Mayor que 500**
 
 **Then:** **Assign document to:** Responsable de aprobación
 
-**Change Status to:** Pending Approval
+**Cambiar estado a:** Aprobación pendiente
 
 <figure><img src="../../.gitbook/assets/s150-workflow_test7_status_update-es.png" alt="Acción de cambio de estado en un flujo sin guardar."><figcaption><p>Acción de cambio de estado en un flujo sin guardar.</p></figcaption></figure>
 
@@ -122,7 +122,7 @@ Puede asignar a estos documentos un estado concreto o asignarlos a un empleado e
 
 <figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_detail-es.png" alt="Selector de tarjetas de comparación con pedidos."><figcaption><p>Selector de tarjetas de comparación con pedidos.</p></figcaption></figure>
 
-**Logic Card: Quantity or Unit Price or Discount Match**
+**Tarjeta lógica: Cantidad o precio unitario o coincidencia de descuento**
 
 Esta tarjeta de lógica está diseñada para verificar automáticamente que la cantidad, el precio unitario o el descuento detallados en una confirmación de pedido coincidan con las cifras correspondientes del pedido de compra. Esta verificación garantiza la coherencia y la exactitud entre lo que se pidió y lo que el proveedor confirma que va a entregar.
 
@@ -133,7 +133,7 @@ La lógica se activa cuando se cumple cualquiera de las siguientes condiciones e
 * **Tolerancia de cantidad**: La cantidad de artículos pedidos coincide con la cantidad confirmada por el proveedor.
 * **Tolerancia del precio unitario**: El precio por artículo acordado coincide con la confirmación del proveedor.
 * **Descuento**: Cualquier descuento aplicado es coherente entre el pedido de compra y la confirmación de pedido.
-* **Define Comparison Parameters**: Configure los campos específicos (cantidad, precio unitario, descuento) que la tarjeta de lógica comprobará para detectar una coincidencia.
+* **Definir los parámetros de comparación**: Configure los campos específicos (cantidad, precio unitario, descuento) que la tarjeta de lógica comprobará para detectar una coincidencia.
 * **Automate Verification**: Configure el sistema para comparar automáticamente estos detalles al recibir una confirmación de pedido.
 * **Customize Alerts**: Decida el flujo de trabajo para gestionar las discrepancias, incluida la personalización de las alertas para la revisión manual.
 
@@ -155,9 +155,9 @@ Con una configuración manual, se recomienda dividir los cálculos que dependen 
 
 Con esta tarjeta puede especificar el nombre de un flujo de trabajo que debe ejecutarse después del flujo de trabajo actual si se cumplen sus condiciones, y después de las tarjetas "then" anteriores del flujo de trabajo actual. Aunque da prioridad a los flujos de trabajo ejecutables y activos, también permite ejecutar flujos de trabajo desactivados si el documento cumple las condiciones de dichos flujos.
 
-### **Adding calculated surcharges into an existing column** <a href="#pekg4i18rshn" id="pekg4i18rshn"></a>
+### **Agregar recargos calculados en una columna existente** <a href="#pekg4i18rshn" id="pekg4i18rshn"></a>
 
-<figure><img src="https://lh7-us.googleusercontent.com/XYY1xsFpp7_-Bi0WOSbotiVzspDLdaufx_xgoopMHmxdZnSDhroLpb0AE_si5PhwMq1jHfndc9FwOte9MOoCoTP5_JUYawO5cr4uIctIDHmwVjz3KacQrLJd8iBQy5KY4N-dMaWEi3IeTcc5OBRNJk4" alt=""><figcaption></figcaption></figure>
+
 
 Si desea añadir todos los recargos como un descuento negativo en la columna de descuentos, puede utilizar la tarjeta de cálculo. Puede que ya haya entradas en esta columna; puede configurarla como una de las variables de la tarjeta, restarle el MTZ y volver a añadir el resultado a esta columna. En caso de que haya campos vacíos (recargos solo para algunos artículos), se asumirá un 0 para su cálculo.
 

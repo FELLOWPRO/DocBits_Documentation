@@ -12,9 +12,9 @@ Esta guía explica cómo importar una plantilla de conexión API para configurar
 <mark style="color:red;">**Nota**</mark>: Para la configuración detallada de áreas específicas como Auto Accounting, la integración de proveedores, las órdenes de compra o la extracción de tablas para elementos de costes, consulte la documentación correspondiente:
 
 * [Auto Accounting](m3/auto-accounting.md)
-* [Suppliers and Purchase Order](m3/suppliers-and-purchase-orders.md)
-* [How to import all suppliers](m3/how-to-import-all-suppliers.md)
-* [Table Extraction for costing element](m3/table-extraction-for-costing-element.md)
+* [Proveedores y Orden de Compra](m3/suppliers-and-purchase-orders.md)
+* [Cómo importar todos los proveedores](m3/how-to-import-all-suppliers.md)
+* [Extracción de tabla para elemento de costeo](m3/table-extraction-for-costing-element.md)
 
 ### **Descargar la plantilla**
 
@@ -27,7 +27,7 @@ Antes de importar, descargue la plantilla de conexión necesaria con el siguient
 #### Pasos para importar una plantilla de conexión
 
 1. **Acceda a Infor ION Desk:**
-   *   Navegue a **InforOS** → **ION Desk** → **Connect** → **Connection Points**.
+   *   Navegue a **InforOS** → **ION Desk** → **Conectar** → **Puntos de conexión**.
 
        ![](https://lh7-us.googleusercontent.com/ySRjNzMXFzwSOYKx9hnlKLPHPuXpmfTvRADBfV6cpT8ajiEUbS4oXpd9InhXG09mHLakhqBTJMH4yQJNG5z9RXmbAjh8YbuGhxnXSeooIH_r3RAGOvJE6Ok67ST_272zFfhB_TTFYg3b-NwFq0CAv2o)
 2. **Importe la plantilla:**

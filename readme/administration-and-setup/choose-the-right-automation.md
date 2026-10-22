@@ -11,7 +11,7 @@ DocBits ofrece varias formas de modificar, comprobar y enrutar documentos: **Tra
 | Quiero … | Usar | Por qué |
 | --- | --- | --- |
 | Limpiar o reescribir un valor (recortar, prefijo, formato de fecha, mapeo de unidades, valor por defecto) | [Reglas de transformación](settings/global-settings/document-types/transformation-rules.md) | Sin código, vista previa en directo, se ejecutan en cada pasada y al guardar |
-| Asegurarme de que los datos estén completos y sean plausibles, y detener los documentos que no lo sean | [Custom Validation Rules](settings/global-settings/document-types/custom-validation-rules.md) | Comprobaciones declarativas, error o advertencia, bloquean la exportación automática |
+| Asegurarme de que los datos estén completos y sean plausibles, y detener los documentos que no lo sean | [Reglas de validación personalizadas](settings/global-settings/document-types/custom-validation-rules.md) | Comprobaciones declarativas, error o advertencia, bloquean la exportación automática |
 | Conciliar las líneas de factura con las líneas de la orden de compra | [Reglas de coincidencia de órdenes de compra](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) | Conjuntos de reglas con tolerancias, alternativas y un diagrama visual |
 | Hacer algo que una regla no puede expresar: una búsqueda, un cálculo entre campos y tablas, una tarea, un cambio de estado en un momento exacto | [Script](settings/global-settings/document-types/script/README.md) | Python en 13 puntos de activación del flujo |
 | Decidir **qué ocurre a continuación** con un documento: asignar, aprobar, crear una tarea, enviar un correo, exportar, llamar a una API | [Standard Workflow](workflow/standard-workflow-builder.md) | Tarjetas When / And / Then sobre eventos de estado |
@@ -46,7 +46,7 @@ Un workflow que escribe un campo se comporta como una persona que guarda el docu
 
 <figure><img src="../.gitbook/assets/automation-reach-es.svg" alt="Comparación de lo que puede hacer cada herramienta de automatización"><figcaption></figcaption></figure>
 
-| | Reglas de transformación | Custom Validation Rules | Reglas de coincidencia de OC | Script | Standard Workflow | Advanced Workflow | Tarjeta SDK |
+| | Reglas de transformación | Reglas de validación personalizadas | Reglas de coincidencia de OC | Script | Standard Workflow | Advanced Workflow | Tarjeta SDK |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Se ejecuta cuando** | En cada pasada de transformación y en cada guardado | En cada ejecución de validación | Tras la búsqueda, **Auto PO Match**, nuevo número de OC | 13 puntos de activación | Tras un cambio de estado | Tras un cambio de estado | Cuando se ejecuta su workflow |
 | **Puede leer** | Campos de encabezado, columnas de tabla | Campos, celdas de tabla, totales sobre filas | Tablas, números de OC, líneas de orden de compra, tolerancias | Todos los datos extraídos, búsquedas, usuarios, grupos, búsqueda de texto completo | Datos del documento, usuarios, grupos, variables | Lo mismo, más los resultados de nodos anteriores | Campos, tablas, búsquedas, usuarios, grupos |
@@ -74,7 +74,7 @@ Un workflow que escribe un campo se comporta como una persona que guarda el docu
 * **No pueden** detener un documento, llamar a otros sistemas, usar búsquedas en datos maestros ni crear tareas. Una regla que no se puede aplicar deja el valor como está.
 * **Más información:** [Reglas de transformación](settings/global-settings/document-types/transformation-rules.md)
 
-### Custom Validation Rules
+### Reglas de validación personalizadas
 
 * **Úselas cuando** un documento no debe continuar con datos incorrectos: campos obligatorios, patrones, rangos numéricos, valores permitidos, comparación entre dos campos, totales que deben cuadrar.
 * **Se ejecutan** en cada validación: en el pipeline, en cada guardado y después de que un workflow haya escrito datos.
@@ -98,7 +98,7 @@ Un workflow que escribe un campo se comporta como una persona que guarda el docu
 * **No puede** importar módulos ni llamar a servicios externos. Es Python restringido. Un error en un script se registra y nunca detiene el procesamiento del documento, por lo que un script **no** es una forma fiable de bloquear un documento: marque el campo como no válido o cree una tarea.
 * **Más información:** [Script](settings/global-settings/document-types/script/README.md)
 
-### Standard Workflow
+### Flujo de trabajo estándar
 
 * **Úselo cuando** el siguiente paso dependa del documento: asignar a un usuario o grupo, aprobar o rechazar, crear una tarea, enviar un correo, exportar, establecer un estado, llamar a una API.
 * **Se ejecuta** cuando un documento alcanza un estado que usted elija, es decir, después de la validación. También puede iniciarse desde un web hook, una programación o manualmente.
@@ -106,7 +106,7 @@ Un workflow que escribe un campo se comporta como una persona que guarda el docu
 * **No puede** ramificarse, esperar varias condiciones ni reaccionar al error de una tarjeta en una ruta separada. Para eso use un Advanced Workflow.
 * **Más información:** [Standard Workflow](workflow/standard-workflow-builder.md)
 
-### Advanced Workflow
+### Flujo de trabajo avanzado
 
 * **Úselo cuando** un documento necesite distintas rutas: ramas según una condición, varias condiciones combinadas con ALL / ANY, y una ruta para errores o condiciones fallidas.
 * **Se ejecuta** en los mismos eventos que un Standard Workflow. Requiere la suscripción DocFlow Advanced.
@@ -114,7 +114,7 @@ Un workflow que escribe un campo se comporta como una persona que guarda el docu
 * **No puede** actuar antes de la validación: se inicia tras un cambio de estado. La lógica previa a la validación pertenece a un Script o a una regla.
 * **Más información:** [Advanced Workflow](workflow/advanced-workflow-builder.md)
 
-### Workflow SDK (Card SDK)
+### SDK de flujos de trabajo (Card SDK)
 
 * **Úselo cuando** necesite una tarjeta que no existe, por ejemplo una condición o una acción específica de una aplicación de un partner.
 * **Se ejecuta** siempre que se ejecuta un workflow que contiene la tarjeta.
@@ -148,7 +148,7 @@ Un workflow que escribe un campo se comporta como una persona que guarda el docu
 ## Páginas relacionadas
 
 * [Reglas de transformación](settings/global-settings/document-types/transformation-rules.md)
-* [Custom Validation Rules](settings/global-settings/document-types/custom-validation-rules.md)
+* [Reglas de validación personalizadas](settings/global-settings/document-types/custom-validation-rules.md)
 * [Reglas de coincidencia de órdenes de compra](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
 * [Script](settings/global-settings/document-types/script/README.md)
 * [Workflow](workflow/README.md)

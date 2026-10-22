@@ -6,10 +6,10 @@ El archivo de mapeo de exportación a M3 se divide en 5 secciones, y cada secci�
 
 * Header (Cabecera)
   * Header Static Fields (Campos estáticos de cabecera)
-  * Header Fields (Campos de cabecera)
+  * Campos de cabecera (Campos de cabecera)
 * Tax Lines (Líneas de impuestos)
   * Tax Line Static Fields (Campos estáticos de línea de impuestos)
-  * Tax Line Fields (Campos de línea de impuestos)
+  * Campos de línea de impuestos
 * Receipt Lines (Líneas de recepción)
   * Receipt Line Static Fields (Campos estáticos de línea de recepción)
   * Receipt Line Fields (Campos de línea de recepción)
@@ -18,7 +18,7 @@ El archivo de mapeo de exportación a M3 se divide en 5 secciones, y cada secci�
   * Order Charge Fields (Campos de cargos del pedido)
 * Cost Lines (Líneas de costes)
   * Cost Line Static Fields (Campos estáticos de línea de costes)
-  * Cost Line Fields (Campos de línea de costes)
+  * Campos de línea de costos
 
 ### Añadir y eliminar campos
 
@@ -53,7 +53,7 @@ Prefijo de los campos de la sección: SF\_
 
 Campos disponibles: Puede mapear cualquier campo de la API de M3 con cualquier valor estático
 
-#### **Header Fields**
+#### **Campos de cabecera**
 
 Propiedad de lista de campos: HeaderFields
 
@@ -63,7 +63,7 @@ Campos disponibles: Puede mapear cualquier campo de DocBits a cualquier campo de
 
 ### Línea de impuestos (Tax Line):
 
-#### Tax Line Static Fields:
+#### Campos estáticos de línea de impuesto:
 
 Propiedad de lista de campos: InvoiceTaxStaticFields
 
@@ -73,7 +73,7 @@ Campos de M3 disponibles: Consulte la API o la interfaz de M3
 
 Campos de DocBits disponibles: Puede introducir cualquier valor, ya que son campos estáticos
 
-#### Tax Line Fields:
+#### Campos de línea de impuesto:
 
 Propiedad de lista de campos: InvoiceTaxFields
 
@@ -87,7 +87,7 @@ Campos de DocBits disponibles: line\_number, tax\_amount, tax\_rate, net\_amount
 
 ### Línea de recepción (Receipt Line):
 
-#### Receipt Line Static Fields:
+#### Campos estáticos de línea de recepción:
 
 Propiedad de lista de campos: InvoiceReceiptStaticFields
 
@@ -97,7 +97,7 @@ Campos de M3 disponibles: Consulte la API o la interfaz de M3
 
 Campos de DocBits disponibles: Puede introducir cualquier valor, ya que son campos estáticos
 
-#### Receipt Line Fields:
+#### Campos de línea de recepción:
 
 Propiedad de lista de campos: InvoiceReceiptFields
 
@@ -111,7 +111,7 @@ Campos de DocBits disponibles: packing\_slip, purchase\_order, line\_number, lin
 
 ### Línea de cargos del pedido (Order Charge Line):
 
-#### Order Charge Static Fields:
+#### Campos estáticos de recargo del pedido:
 
 Propiedad de lista de campos: OrderChargeStaticFields
 
@@ -121,7 +121,7 @@ Campos de M3 disponibles: Consulte la API o la interfaz de M3
 
 Campos de DocBits disponibles: Puede introducir cualquier valor, ya que son campos estáticos
 
-#### Order Charge Fields:
+#### Campos de recargo del pedido:
 
 Propiedad de lista de campos: OrderChargeFields
 
@@ -135,7 +135,7 @@ Campos de DocBits disponibles: ledger\_account, dimension\_2-7, amount, quantity
 
 ### Línea de costes (Cost Line):
 
-#### Cost Line Static Fields:
+#### Campos estáticos de línea de coste:
 
 Propiedad de lista de campos: InvoiceCostStaticFields
 
@@ -145,7 +145,7 @@ Campos de M3 disponibles: Consulte la API o la interfaz de M3
 
 Campos de DocBits disponibles: Puede introducir cualquier valor, ya que son campos estáticos
 
-#### Cost Line Fields:
+#### Campos de línea de coste:
 
 Propiedad de lista de campos: InvoiceCostFields
 

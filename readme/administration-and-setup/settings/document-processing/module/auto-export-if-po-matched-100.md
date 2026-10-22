@@ -1,39 +1,38 @@
-# Auto Export if PO Matched 100%
+# Exportación automática con coincidencia del PO del 100%
 
-### Overview
+### Descripción
 
-The **Auto Export if PO matched 100%** setting is a feature within the Purchase Order (PO) module that automates the export process when a purchase order matches perfectly with its expected criteria. This functionality is designed to streamline the workflow by reducing manual intervention in the export process, ensuring that perfectly matched purchase orders are handled efficiently.
+La opción **Auto Export if PO matched 100%**, en el módulo de pedidos de compra (PO), permite que una coincidencia completa con el PO habilite el avance de la factura o documento actual hacia la exportación automática. El pedido de compra es la referencia de comparación; esta opción no exporta el propio pedido.
 
-### What Does It Do?
+### Funcionamiento
 
-When this setting is enabled, the system automatically exports the purchase order as soon as it matches 100% with the expected data. This means that if all items, quantities, prices, and other relevant details in the purchase order align with the predefined criteria, the order is immediately processed and exported without requiring additional steps from the user.
+Al activarla, se comprueba el resultado de la conciliación del documento actual con el PO. Una coincidencia del 100% cumple esta condición de conciliación, pero no garantiza una exportación inmediata. La validación del documento, el flujo de exportación configurado, las aprobaciones necesarias y las tareas pendientes aún pueden bloquear o retrasar la exportación. Si la coincidencia es incompleta, esta condición bloquea la exportación automática.
 
-### Benefits
+### Ventajas
 
-* **Efficiency**: By automating the export of perfectly matched POs, this feature saves time and reduces the workload on administrators and users.
-* **Accuracy**: Ensures that only those POs which have been verified to match 100% with the expected criteria are exported, reducing the risk of errors.
-* **Speed**: The immediate processing of matching POs allows for faster order handling and reduces delays in the supply chain.
+* **Eficiencia:** Puede reducir la intervención manual en facturas que coincidan completamente con su PO y cumplan los demás requisitos.
+* **Control:** Añade el resultado de la conciliación con el PO como condición de exportación.
+* **Tiempo de procesamiento:** Puede agilizar las facturas aptas; el momento de exportación depende del resto del flujo.
 
-### How to Use
+### Uso
 
-1. **Enable the Feature**:
-   * Go to Settings
-   * Select **Document Processing**.
-   * Select **Module**.
-   * Navigate to the **Purchase Order**.
-   * Activate the **Auto Export if PO matched 100%** by enabling the corresponding slider
+1. **Activar la función:**
+   * Vaya a **Configuración** → **Procesamiento de documentos** → **Módulo** → **Pedido de compra**.
+   * Active el control **Auto Export if PO matched 100%**.
 
 <figure><img src="../../../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
 
-1. **Monitoring**:
-   * Once enabled, the system will automatically export POs that match 100% with their expected criteria.
-   * You can monitor the export activity through the PO dashboard or other related monitoring tools.
-2. **Considerations**:
-   * Ensure that your PO criteria are correctly defined and accurate to avoid any unwanted exports.
-   * Regularly review the POs processed through this feature to ensure that the automation is functioning as expected.
+2. **Supervisar el procesamiento:**
+   * Revise los estados de conciliación, validación y exportación de la factura actual.
+   * Si no se exporta pese a una coincidencia del 100%, revise la configuración de exportación, las aprobaciones y las tareas pendientes.
+3. **Revisar la configuración:**
+   * Compruebe que los criterios de conciliación y exportación reflejen el flujo previsto.
+   * Revise periódicamente las facturas exportadas y las excepciones.
 
-### When to Use This Feature
+### Cuándo utilizarla
 
-* **High Volume Processing**: Ideal for environments where a large number of POs are processed regularly, and there is a high confidence in the data matching.
-* **Routine Orders**: Useful for standard or routine orders where variations are minimal and accuracy is consistent.
-* **Time-Sensitive Orders**: Beneficial when time is of the essence, and you need to expedite the processing of matching POs.
+* **Grandes volúmenes de facturas:** Cuando muchas facturas puedan conciliarse de forma fiable con pedidos de compra.
+* **Compras habituales:** Cuando las cantidades, los precios y los demás criterios sean estables.
+* **Procesos urgentes:** Cuando las facturas aptas deban avanzar automáticamente una vez cumplidas todas las condiciones.
+
+Cuando la conciliación con pedidos está activa para el tipo de documento, la opción independiente `ALLOW_AUTO_EXPORT_FOR_NON_MATCHABLE_PO_LINES` también permite el estado `NO_MATCHABLE_PO_LINES`. No autoriza de forma general otros estados de conciliación incompleta.

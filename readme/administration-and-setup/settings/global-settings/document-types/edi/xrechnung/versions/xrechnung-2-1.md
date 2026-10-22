@@ -1,12 +1,12 @@
-# XRechnung 2.1 CII Field Mapping
+# XRechnung 2.1 asignación de campos CII
 
-## Overview
+## Descripción general
 
-This document describes the complete field mapping flow for XRechnung 2.1 CII (Cross-Industry Invoice) format.
+Este documento describe el flujo completo de asignación de campos para el formato XRechnung 2.1 CII (Factura entre industrias).
 
-## 1. CII XML Structure
+## 1. Estructura XML de CII
 
-XRechnung CII uses UN/CEFACT Cross-Industry Invoice format with these namespaces:
+XRechnung CII utiliza el formato de factura multisectorial UN/CEFACT con estos espacios de nombres:
 
 | Prefix | Namespace | Purpose |
 | :--- | :--- | :--- |
@@ -17,9 +17,9 @@ XRechnung CII uses UN/CEFACT Cross-Industry Invoice format with these namespaces
 
 **Classification URN**: `urn:cen.eu:en16931:2017#compliant#urn:xeinkauf.de:kosit:xrechnung_2.1`
 
-## 2. CII XML → DocBits Field Extraction
+## 2. XML de CII → extracción de campos de DocBits
 
-### Header Fields
+### Campos de cabecera
 
 | CII XML Path | DocBits Field | Data Type |
 | :--- | :--- | :--- |
@@ -41,7 +41,7 @@ El XSLT TRANSFORMATION sustituye el valor numérico de `TypeCode` por una etique
 | `381` / `261` | Nota de crédito / Nota de crédito autofacturada | **Credit Note** |
 | Cualquier otro código (`380`, `383`, `384`, `386`, `389`, `325`, …) | Factura / nota de débito / proforma / etc. | **Invoice** |
 
-### Supplier Fields
+### Campos del proveedor
 
 | CII XML Path | DocBits Field |
 | :--- | :--- |
@@ -55,7 +55,7 @@ El XSLT TRANSFORMATION sustituye el valor numérico de `TypeCode` por una etique
 | `PayeePartyCreditorFinancialAccount/IBANID` | `iban` |
 | `PayeeSpecifiedCreditorFinancialInstitution/BICID` | `bic` |
 
-### Customer Fields
+### Campos del cliente
 
 | CII XML Path | DocBits Field |
 | :--- | :--- |
@@ -64,7 +64,7 @@ El XSLT TRANSFORMATION sustituye el valor numérico de `TypeCode` por una etique
 | `BuyerTradeParty/PostalTradeAddress/LineOne` | `customer_address` |
 | `BuyerTradeParty/SpecifiedTaxRegistration/ID` | `customer_vat` |
 
-### Amount Fields
+### Campos de importe
 
 | CII XML Path | DocBits Field |
 | :--- | :--- |
@@ -74,7 +74,7 @@ El XSLT TRANSFORMATION sustituye el valor numérico de `TypeCode` por una etique
 | `ApplicableTradeTax/RateApplicablePercent` | `tax_rate` |
 | `ApplicableTradeTax/BasisAmount` | `taxable_amount` |
 
-### Line Item Fields
+### Campos de las líneas de detalle
 
 | CII XML Path | DocBits Table Column |
 | :--- | :--- |
@@ -90,9 +90,9 @@ El XSLT TRANSFORMATION sustituye el valor numérico de `TypeCode` por una etique
 | `ApplicableTradeTax/RateApplicablePercent` | `VAT_RATE` |
 | `ApplicableTradeTax/CategoryCode` | `VAT_CATEGORY` |
 
-## 3. DocBits → Infor BOD Export (SyncSupplierInvoice)
+## 3. DocBits → exportación BOD a Infor (SyncSupplierInvoice)
 
-### Header Mapping
+### Asignación de cabecera
 
 | DocBits Field | BOD XML Path |
 | :--- | :--- |
@@ -107,7 +107,7 @@ El XSLT TRANSFORMATION sustituye el valor numérico de `TypeCode` por una etique
 | `PAYMENT_TERMS` | `DataArea/SupplierInvoice/SupplierInvoiceHeader/PaymentTerm/Term/Description` |
 | `PURCHASE_ORDER` | `UserArea/Property/NameValue[@name='PONumber']` |
 
-### Line Item Mapping
+### Asignación de líneas de detalle
 
 | DocBits Column | BOD XML Path |
 | :--- | :--- |

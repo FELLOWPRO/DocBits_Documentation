@@ -30,7 +30,7 @@ ebInterface 6.0 introdujo la alineación con el estándar europeo EN 16931 mante
 
 ## Vista previa predeterminada
 
-<figure><img src="austria-ebinterface-preview.png" alt="Vista previa de factura Austria ebInterface 6.0 en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una factura AUSTRIA EBINTERFACE 6.0</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Vista previa de factura Austria ebInterface 6.0 en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una factura AUSTRIA EBINTERFACE 6.0</p></figcaption></figure>
 
 ## Asignación de campos
 

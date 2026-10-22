@@ -48,7 +48,7 @@ Karta przepływu pracy **"Change Status"** oferuje usprawnione podejście do zar
 
 **Gdzie:** Standardowy projektant procesów → Następnie → Status → Zmień status na.
 
-**Konfiguracja:** Wybierz wersję 3 karty `staus_change`, status Oczekuje na zatwierdzenie (`validated_pending_approval`) i ustaw uruchamianie innych procesów na `false` (`trigger_docflow=false`). Użyj odizolowanej faktury syntetycznej, która spełnia wcześniejsze warunki kontrolne.
+**Konfiguracja:** Wybierz wersję 3 karty `staus_change`, status Oczekujące na zatwierdzenie (`validated_pending_approval`) i ustaw uruchamianie innych procesów na `false` (`trigger_docflow=false`). Użyj odizolowanej faktury syntetycznej, która spełnia wcześniejsze warunki kontrolne.
 
 **Oczekiwany wynik i kontrprzykład:** Dozwolona i pomyślna aktualizacja nadaje dokumentowi wybrany status. Jeśli wcześniejszy warunek jest fałszywy, ta akcja nie zostaje osiągnięta i nie zmienia statusu. Odrzucona lub nieudana aktualizacja API nie jest sukcesem: sprawdź rzeczywisty status i logi. Sama karta nie wykonuje eksportu.
 

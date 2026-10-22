@@ -44,6 +44,10 @@ Lezen en bouwen: [Advanced-praktijkvoorbeeld: factuurrouting](advanced-workflow-
 
 ## 3. Velden, types en grenzen <a id="level-3"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/nl.mp4" %}
+
+[Bekijk de video met Nederlandse ondertiteling en het transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/nl.html).
+
 **Oefening:** Controleer ontbrekend, null, lege tekst, spaties, false, 0 en getallen als tekst. Bereken tolerantie met bestel- en documentreferentie. Vergelijk één tegenover alle werkelijk gekoppelde regels.
 
 **Afrondingscriterium:** Verklaar waar, onwaar en fout vanuit waarde, type, referentie en gegevens. Geen vergelijkbare regel is geen geslaagde goedkeuring.
@@ -51,6 +55,10 @@ Lezen en bouwen: [Advanced-praktijkvoorbeeld: factuurrouting](advanced-workflow-
 Lezen en bouwen: [P1: Field is, Docfield is of Compare two Fields kiezen](masterclass/field-conditions.md) · [P1: Referentie voor toleranties en PO-vergelijkingen vastleggen](masterclass/tolerances-and-po.md).
 
 ## 4. Bedrijfsregels en goedkeuringen <a id="level-4"></a>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/nl.mp4" %}
+
+[Bekijk de video met Nederlandse ondertiteling en het transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/nl.html).
 
 **Oefening:** Configureer twee niet-overlappende bedragregels. Volg het opgeslagen gebruikersresultaat tot de toewijzing. Plan A met volgorde 10 en B met 20, afwijzing en terugvalroute.
 
@@ -60,6 +68,10 @@ Lezen en bouwen: [P1: Een beslissingstabel tot de toewijzing volgen](masterclass
 
 ## 5. Advanced-besturing en onderliggende workflows <a id="level-5"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/nl.mp4" %}
+
+[Bekijk de video met Nederlandse ondertiteling en het transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/nl.html).
+
 **Oefening:** Vergelijk ALL, ANY en OR met twee bereikte controles. Bekijk een niet-gekozen tak. Voer de zeven v2-gevallen uit en test Run Workflow met een eigen inactief doel.
 
 **Afrondingscriterium:** Verklaar test/planner-verschillen, brontelling en fouten. V2 bereikt voltooiing zonder vastgelopen OR; controleer een groene aanroep bij het doel.
@@ -68,6 +80,10 @@ Lezen en bouwen: [P0: Wait ALL, Wait ANY en OR correct verbinden](masterclass/co
 
 ## 6. Berekening, integratie en export <a id="level-6"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/nl.mp4" %}
+
+[Bekijk de video met Nederlandse ondertiteling en het transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/nl.html).
+
 **Oefening:** Vergelijk de hele tabel voor/na, inclusief niet-passende regex en delen door nul. Definieer de echte terugschrijfafspraak van de integratie. Plan export na goedkeuring met eigen testconfiguratie.
 
 **Afrondingscriterium:** Bewijs vervolgwaarden, ontvangst en ERP-verwerking apart. Registreer simulatie of exportaanvraag niet als aflevering.
@@ -75,6 +91,10 @@ Lezen en bouwen: [P0: Wait ALL, Wait ANY en OR correct verbinden](masterclass/co
 Lezen en bouwen: [P1: Tabelkolommen berekenen en regex-afhankelijkheid controleren](masterclass/table-calculations.md) · [P1: API-aanroepen en gebruik van antwoorden verifiëren](masterclass/api-response-contract.md) · [P1: Exportvarianten, open taken en eindstatus kiezen](masterclass/export-lifecycle.md).
 
 ## 7. Wijzigingen en deskundig beheer <a id="level-7"></a>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/nl.mp4" %}
+
+[Bekijk de video met Nederlandse ondertiteling en het transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/nl.html).
 
 **Oefening:** Bewaar een workflow-export en kaartversies vóór wijziging. Herhaal positieve, negatieve, fout- en grensgevallen plus tweede uitvoering. Koppel de eerste fout aan concrete invoer en configuratie.
 

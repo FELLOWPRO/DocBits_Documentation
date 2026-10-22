@@ -47,8 +47,8 @@ Aan het rechteruiteinde van de balk:
 
 - **ⓘ Help** — opent de ingebouwde referentie **Zoeken in het dashboard — Velden en syntaxis**
   met alle velden, operatoren en sneltoetsen die in uw werkruimte beschikbaar zijn.
-- **Filters (tune)** — een snel paneel voor de gangbare filters Status / User / Restart,
-  met **Filters wissen** en **Toepassen**.
+- **Filters** (drie schuifbalken) — een snel paneel voor de gangbare filters **Status**,
+  **Toegewezen aan** en **Opnieuw opstarten vereist**, met **Filters wissen** en **Toepassen**.
 - **Indexring** — een kleine voortgangsring die toont hoeveel van uw fulltext-index
   is opgebouwd (alleen zichtbaar wanneer fulltext-zoeken is ingeschakeld).
 
@@ -223,9 +223,9 @@ ap_assignment_code=""
 
 ## Slimme filters — één klik
 
-Bovenaan het dropdownmenu van Snel zoeken (klik in de zoekbalk) vindt u de
-**Slimme filters** (Smart Filters): kant-en-klare zoekopdrachten die u met één klik toepast. Elk filter
-is een sneltoets voor een query die u ook zelf kunt typen:
+Het pictogram **bliksem** aan het begin van het zoekvak opent de veldkeuze. Bovenaan die
+veldkeuze staan de **Slimme filters**: kant-en-klare zoekopdrachten die u met één klik
+toepast. Elk filter is een sneltoets voor een query die u ook zelf kunt typen:
 
 | Slim filter | Vindt | Gelijk aan typen van |
 |-------------|-------|----------------------|
@@ -239,7 +239,7 @@ is een sneltoets voor een query die u ook zelf kunt typen:
 | ➗ **Gedeeltelijke PO-match** | Gedeeltelijk afgestemd op een inkooporder | `po_match_status=partial_matched` |
 | 📉 **Onder PO-match** | Hoeveelheid of eenheidsprijs onder de inkooporder | `po_match_status=under_matched` |
 
-De drie **PO match**-filters en de fulltext-velden vereisen dat fulltext-zoeken
+De drie **PO-match**-filters en de fulltext-velden vereisen dat fulltext-zoeken
 is ingeschakeld voor uw organisatie.
 
 <figure><img src="../../../.gitbook/assets/prior-u030-nl.png" alt="Hulp bij query&#x27;s en filters voor snelzoeken."><figcaption><p>Hulp bij query&#x27;s en filters voor snelzoeken.</p></figcaption></figure>

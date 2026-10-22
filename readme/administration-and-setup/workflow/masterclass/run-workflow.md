@@ -24,13 +24,13 @@ Prüfen Sie die beiden Konfigurationsfehler zusätzlich im Test: Selbstaufruf un
 
 ## Native Zielauswahl und eigene Einstiegsbedingungen
 
-![Die tatsächliche Run-Workflow-Karte v2 wählt den eigenen Zielworkflow; die nächste Karte dient ausdrücklich dem Test der unmittelbaren Feldweitergabe.](../../../.gitbook/assets/wf-practice-20261022-child-caller-target-de.png)
+<figure><img src="../../../.gitbook/assets/wf-practice-20261022-child-caller-target-de.png" alt="Die tatsächliche Run-Workflow-Karte v2 wählt den eigenen Zielworkflow; die nächste Karte dient ausdrücklich dem Test der unmittelbaren Feldweitergabe."><figcaption>Die tatsächliche Run-Workflow-Karte v2 wählt den eigenen Zielworkflow; die nächste Karte dient ausdrücklich dem Test der unmittelbaren Feldweitergabe.</figcaption></figure>
 
 Im Prüfaufbau wurde **WF Praxis 20261022 – Unterworkflow Ziel** in der nativen Auswahl gewählt und der Aufrufer gespeichert. Anschließend enthielt die geladene Karte die ID dieses eigenen Ziels und als versteckte Aufruferkennung die ID des tatsächlichen Aufrufers. Beide Workflows blieben inaktiv.
 
-![Das eigene Ziel beginnt mit Rechnung und begrenzt den Aufruf zusätzlich auf die eigene Trainingsrechnungsnummer.](../../../.gitbook/assets/wf-practice-20261022-child-entry-de.png)
+<figure><img src="../../../.gitbook/assets/wf-practice-20261022-child-entry-de.png" alt="Das eigene Ziel beginnt mit Rechnung und begrenzt den Aufruf zusätzlich auf die eigene Trainingsrechnungsnummer."><figcaption>Das eigene Ziel beginnt mit Rechnung und begrenzt den Aufruf zusätzlich auf die eigene Trainingsrechnungsnummer.</figcaption></figure>
 
-![Das Ziel prüft den Gesamtbetrag gegen 1000 und setzt bei einem Treffer das ausschließlich für diesen Nachweis verwendete Kennzeichen.](../../../.gitbook/assets/wf-practice-20261022-child-condition-de.png)
+<figure><img src="../../../.gitbook/assets/wf-practice-20261022-child-condition-de.png" alt="Das Ziel prüft den Gesamtbetrag gegen 1000 und setzt bei einem Treffer das ausschließlich für diesen Nachweis verwendete Kennzeichen."><figcaption>Das Ziel prüft den Gesamtbetrag gegen 1000 und setzt bei einem Treffer das ausschließlich für diesen Nachweis verwendete Kennzeichen.</figcaption></figure>
 
 Das Ziel prüft **Rechnung**, `invoice_id=WF-TRAINING-001` und `total_amount > 1000`. Danach setzt es im eigenen synthetischen Beleg die Rechnungsnummer auf `WF-TRAINING-CHILD-OK`. Dieser ungewöhnliche Feldwechsel dient nur dazu, den Datenübergang eindeutig zu beobachten; er ist kein fachlicher Rechnungsprozess.
 
@@ -44,7 +44,7 @@ Für die geprüfte Fassung belegt der erfolgreiche synchrone Aufruf damit **kein
 
 ## Passenden Ziellauf und Fehlerursache verfolgen
 
-![Die gefilterten echten Laufprotokolle zeigen Aufrufer und Ziel sowohl für den Kontextvergleich als auch für den absichtlichen Zielfehler.](../../../.gitbook/assets/wf-practice-20261022-child-matched-runs-de.png)
+<figure><img src="../../../.gitbook/assets/wf-practice-20261022-child-matched-runs-de.png" alt="Die gefilterten echten Laufprotokolle zeigen Aufrufer und Ziel sowohl für den Kontextvergleich als auch für den absichtlichen Zielfehler."><figcaption>Die gefilterten echten Laufprotokolle zeigen Aufrufer und Ziel sowohl für den Kontextvergleich als auch für den absichtlichen Zielfehler.</figcaption></figure>
 
 Für jeden tatsächlichen Aufruf wurde die `wf_run_id` aus seinem Kartenlog mit der primären `id` des veröffentlichten Zielprotokolls abgeglichen. Die gemeinsame Uhrzeit und ähnliche Namen allein wären dafür kein ausreichender Nachweis. Die angezeigten `0.00 s` in den Zielzeilen belegen keine fehlende Ausführung; die einzelnen Zielkarten und ihre Ergebnisse wurden gesondert geprüft.
 
@@ -54,9 +54,9 @@ Für jeden tatsächlichen Aufruf wurde die `wf_run_id` aus seinem Kartenlog mit 
 | Vergleich `> 2000` | Bedingung falsch; Kennzeichenaktion nicht ausgeführt | `success` | Kennzeichenvergleich falsch |
 | Ungültiger Vergleichsparameter `abc` | Fehler der Zielkarte; Kennzeichenaktion nicht ausgeführt | `error` | Nicht ausgeführt |
 
-![Der echte Aufruferlauf zeigt den weitergereichten Zielfehler an Run Workflow; seine Folgeaktionen bleiben unausgeführt.](../../../.gitbook/assets/wf-practice-20261022-child-caller-error-de.png)
+<figure><img src="../../../.gitbook/assets/wf-practice-20261022-child-caller-error-de.png" alt="Der echte Aufruferlauf zeigt den weitergereichten Zielfehler an Run Workflow; seine Folgeaktionen bleiben unausgeführt."><figcaption>Der echte Aufruferlauf zeigt den weitergereichten Zielfehler an Run Workflow; seine Folgeaktionen bleiben unausgeführt.</figcaption></figure>
 
-![Im zugehörigen Ziel liegt der Fehler am Vergleichsparameter abc; die native Meldung nennt den fehlenden Wert für die Kartenvariablen.](../../../.gitbook/assets/wf-practice-20261022-child-target-error-de.png)
+<figure><img src="../../../.gitbook/assets/wf-practice-20261022-child-target-error-de.png" alt="Im zugehörigen Ziel liegt der Fehler am Vergleichsparameter abc; die native Meldung nennt den fehlenden Wert für die Kartenvariablen."><figcaption>Im zugehörigen Ziel liegt der Fehler am Vergleichsparameter abc; die native Meldung nennt den fehlenden Wert für die Kartenvariablen.</figcaption></figure>
 
 Nach den Proben wurde die reguläre Zielgrenze wieder auf 1000 gestellt. Beide Workflows blieben inaktiv, die eigene Trainingsnummer und der Betrag 1785 waren wiederhergestellt. [Tatsächliche Fallresultate und Zuordnungsmethode herunterladen](../../../.gitbook/assets/wf-practice-20261022-child-call-evidence-de.zip).
 

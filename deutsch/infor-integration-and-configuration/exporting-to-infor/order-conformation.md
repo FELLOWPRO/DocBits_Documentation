@@ -5,7 +5,7 @@ Kleines Update für die Bestellbestätigung
 
 
 {% hint style="info" %}
-Link zur [Datei](../../.gitbook/assets/BOD-Mapping (OrderConfirmation).properties)
+Link zur [Datei](<../../.gitbook/assets/BOD-Mapping (OrderConfirmation).properties>)
 {% endhint %}
 
 ```

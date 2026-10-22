@@ -1,39 +1,41 @@
-# Case 7: Quantity Within Tolerance, Unit Price Outside Tolerance (Positive Rejected)
+# Cas 7: Quantité dans les tolérances, Prix unitaire hors tolérances (Dépassement positif rejeté)
 
-## Scenario:
+Le scénario suivant illustre un mappage configuré ; il ne constitue pas un modèle par défaut dont le déploiement aurait été vérifié. La sortie réelle, les montants, les signes et les types de documents dépendent des règles et expressions `conflict_resolution` actives, du mappage d’export et des décisions d’approbation. Toute note de débit ou de crédit décrite ci-dessous est soumise à cette configuration ; cet exemple ne garantit ni son émission automatique ni la conformité juridique.
 
-The quantity is within tolerance, but the unit price exceeds the acceptable range (positive tolerance) and is not approved.
+## Scénario :
 
-## Action:
+La quantité est dans les limites de tolérance, mais le prix unitaire dépasse la fourchette acceptable (tolérance positive) et n'est pas approuvé.
 
-The system rejects the invoice unit price, adjusts it to match the purchase order, and may generate a debit note to account for the overcharged amount.
+## Action :
 
-## Example:
+Le système rejette le prix unitaire facturé, l'ajuste pour correspondre au bon de commande et peut générer une note de débit pour tenir compte du montant facturé en trop.
+
+## Exemple :
 
 * **Purchase Order (PO):**
   * Quantity: 200 units
-  * Unit Price: $15.00 per unit
+  * Prix unitaire : $15.00 par unité
   * Total Amount: $3,000.00
 * **Invoice Received:**
-  * Quantity: 198 units (within tolerance of 1%)
-  * Unit Price: $17.00 per unit (outside positive tolerance of 13.33%)
+  * Quantité : 198 unités (avec une tolérance de 1%)
+  * Prix unitaire : $17.00 par unité (en dehors de la tolérance positive de 13.33 %)
   * Total Amount: $3,366.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±2%
   * Unit Price Tolerance: ±1%
 
-Since the quantity (198 units) is within the acceptable tolerance range but the unit price ($17.00) exceeds the acceptable tolerance and is not approved, the system will:
+Étant donné que la quantité (198 unités) se situe dans la plage de tolérance acceptable mais que le prix unitaire ($17.00) dépasse la tolérance acceptable et n'est pas approuvé, le système :
 
-1. **Reject the Invoice Unit Price:** The system does not accept the invoiced unit price of $17.00.
-2. **Adjust the Unit Price:** The system adjusts the unit price to match the original purchase order unit price.
-   * Adjusted Unit Price = $15.00 (from PO)
-3. **Calculate the Corrected Total Amount:** Using the adjusted unit price, the system recalculates the total amount.
-   * **Corrected Total Amount = Quantity × Adjusted Unit Price**
-   * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**
-4. **Generate a Debit Note:** The system generates a debit note to account for the difference due to the overcharge.
-   * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
-   * **Debit Note Amount = $3,366.00 - $2,970.00 = $396.00**
-   * This debit note represents the amount overcharged by the supplier.
-5. **Process the Invoice:** The system processes the invoice with the corrected total amount of $2,970.00 and issues a debit note for $396.00 to offset the overcharge.
+1. **Rejeter le prix unitaire facturé :** Le système n'accepte pas le prix unitaire facturé de $17.00.
+2. **Ajuster le prix unitaire :** Le système ajuste le prix unitaire pour qu'il corresponde au prix unitaire du bon de commande d'origine.
+   * Prix unitaire ajusté = $15.00 (à partir de PO)
+3. **Calculer le montant total corrigé :** À l'aide du prix unitaire ajusté, le système recalcule le montant total.
+   * **Montant total corrigé = Quantité × Prix unitaire ajusté**
+   * **Montant total corrigé = 198 unités × $15.00 par unité = $2,970.00**
+4. **Générer une note de débit :** Le système génère une note de débit pour tenir compte de la différence due au surfacturation.
+   * **Montant de la note de débit = Total de la facture originale - Montant total corrigé**
+   * **Montant de la note de débit = $3,366.00 - $2,970.00 = $396.00**
+   * Cette note de débit représente le montant surfacturé par le fournisseur.
+5. **Traiter la facture :** Le système traite la facture pour un montant total corrigé de $2,970.00 et émet une note de débit de $396.00 pour compenser la surfacturation.
 
-This approach ensures that any overcharging is corrected, aligning the transaction with the purchase order terms and protecting the financial interests of the business.
+Cette approche garantit que toute surfacturation est corrigée, alignant la transaction sur les conditions du bon de commande et protégeant les intérêts financiers de l'entreprise.

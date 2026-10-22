@@ -66,3 +66,13 @@ Un guide vidéo pour ce type de fichier est disponible sur la [page Vidéos.](ht
 ## Règles effectivement utilisées et activation
 
 Les règles propres à l’organisation ont priorité sur celles par défaut pour le format eDoc détecté. Vérifiez la TRANSFORMATION active et vérifiez quel nœud fournit invoice_type dans le XML transformé ; le chemin dépend du format. Save enregistre un brouillon ; utilisez la coche pour l’activer après les tests. Le rendu Preview ne prouve pas le type de document enregistré. Consultez le [guide de diagnostic de la classification](../credit-note-recognized-as-invoice.md) pour les codes 381/261, les scripts suivants et les précautions à prendre avant un retraitement.
+
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-fr.png" alt="Format EDI existant avec ses quatre attributs configurés."><figcaption><p>Format EDI existant avec ses quatre attributs configurés.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-transformation-fr.png" alt="Attribut TRANSFORMATION actif : code source XSLT pour transformer le XML intermédiaire."><figcaption><p>Attribut TRANSFORMATION actif : code source XSLT pour transformer le XML intermédiaire.</p></figcaption></figure>
+
+
+Les vues montrent une configuration et une version existantes. Les paramètres varient selon le type de document et le format. Validez les modifications dans un brouillon avant leur activation.
+
+Certaines mentions, telles que Custom et Default, correspondent à l’interface actuelle du produit. Les identifiants techniques des attributs et le code de configuration restent inchangés.

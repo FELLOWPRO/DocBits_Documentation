@@ -1,4 +1,4 @@
-# Inbound Emails
+# E-mails entrants
 
 ## Table `public.inbound_emails`
 
@@ -11,12 +11,12 @@
 * `email_receiver` : interne
 * `token` : interne
 * `created_by` : integer
-* `created_on` : timestamp with time zone
+* `created_on` : horodatage avec fuseau horaire
 * `last_modified_by` : interne
-* `last_modified_on` : timestamp with time zone
+* `last_modified_on` : horodatage avec fuseau horaire
 * `is_deleted` : boolean
 * `deleted_by` : interne
-* `deleted_on` : timestamp with time zone
+* `deleted_on` : horodatage avec fuseau horaire
 
 ### Analyse et description
 

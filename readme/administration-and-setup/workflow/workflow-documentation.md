@@ -28,7 +28,7 @@ Then : **Assign document to:** Réviseur des factures
 
 When : **Assignee is:** Responsable de réception
 
-And : **Document type is:** Delivery Note
+Et : **Le type de document est :** Bon de livraison
 
 Then : **Assign document to:** Réviseur des livraisons
 
@@ -52,11 +52,11 @@ Pour avoir une vue d'ensemble plus facile de ce qui doit arriver à un document,
 
 **Test 4 : Logic Card**
 
-**When :** **Document type is:** Delivery Note
+**Quand :Le type de document est :** Bon de livraison
 
 **And :** **Assignee is:** Responsable de réception
 
-**Then :** **Change Status to:** Pending Approval
+**Puis :Changer le statut en :** En attente d'approbation
 
 <figure><img src="../../.gitbook/assets/s150-workflow_test4_delivery_note_status-fr.png" alt="Brouillon non enregistré d’un workflow de changement de statut."><figcaption><p>Brouillon non enregistré d’un workflow de changement de statut.</p></figcaption></figure>
 
@@ -68,7 +68,7 @@ When : **Document type is:** Invoice
 
 And : **Assignee is:** Réviseur des factures
 
-Then : **Change Status to:** Pending Second Approval
+Ensuite : **Changer le statut en :** En attente de la deuxième approbation
 
 <figure><img src="../../.gitbook/assets/workflow_test5_invoice_approval_status.png" alt="Statut d'approbation de la facture du test 5 du flux de travail"><figcaption></figcaption></figure>
 
@@ -82,7 +82,7 @@ Si une facture ou un autre document dépasse un certain montant total qui néces
 
 When : **Assignee is:** Responsable de réception
 
-And : Docfield **total\_amount** is **Greater than 500**
+Et : Docfield **total\_amount** est **Supérieur à 500**
 
 Then : **Assign document to:** Responsable des approbations
 
@@ -96,11 +96,11 @@ Il est également possible de saisir le statut dans le flux de travail, afin que
 
 **When :** **Assignee is:** Responsable de réception
 
-**And :** Docfield **total\_amount** is **Greater then 500**
+**Et :** Docfield **total\_amount** est **Supérieur à 500**
 
 **Then :** **Assign document to:** Responsable des approbations
 
-**Change Status to:** Pending Approval
+**Changer le statut en :** En attente d'approbation
 
 <figure><img src="../../.gitbook/assets/s150-workflow_test7_status_update-fr.png" alt="Action de changement de statut dans un brouillon de workflow."><figcaption><p>Action de changement de statut dans un brouillon de workflow.</p></figcaption></figure>
 
@@ -120,7 +120,7 @@ Vous pouvez donner à ces documents un statut spécifique ou les assigner à un 
 
 <figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_detail-fr.png" alt="Sélection des conditions de comparaison avec une commande."><figcaption><p>Sélection des conditions de comparaison avec une commande.</p></figcaption></figure>
 
-**Logic Card : Quantity or Unit Price or Discount Match**
+**Carte Logique : Quantité ou Prix Unitaire ou Correspondance de Remise**
 
 Cette logic card est conçue pour vérifier automatiquement que la quantité, le prix unitaire ou la remise détaillés dans une confirmation de commande correspondent aux chiffres correspondants de la commande d'achat. Cette vérification garantit la cohérence et l'exactitude entre ce qui a été commandé et ce que le fournisseur confirme livrer.
 
@@ -155,7 +155,7 @@ Avec cette carte, vous pouvez spécifier le nom d'un flux de travail à exécute
 
 ### **Ajouter des surcharges calculées dans une colonne existante** <a href="#pekg4i18rshn" id="pekg4i18rshn"></a>
 
-<figure><img src="https://lh7-us.googleusercontent.com/XYY1xsFpp7_-Bi0WOSbotiVzspDLdaufx_xgoopMHmxdZnSDhroLpb0AE_si5PhwMq1jHfndc9FwOte9MOoCoTP5_JUYawO5cr4uIctIDHmwVjz3KacQrLJd8iBQy5KY4N-dMaWEi3IeTcc5OBRNJk4" alt=""><figcaption></figcaption></figure>
+
 
 Si vous souhaitez ajouter toutes les surcharges comme une remise négative dans la colonne de remise, vous pouvez utiliser la carte de calcul. Il peut y avoir des entrées dans cette colonne ; vous pouvez la définir comme l'une des variables de la carte, y soustraire le MTZ et ajouter le résultat à nouveau dans cette colonne. Au cas où il y aurait des champs vides (surcharges uniquement pour certains articles), il supposera une valeur de 0 pour son calcul.
 

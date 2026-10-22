@@ -35,5 +35,5 @@ ZUGFeRD 2.2, publiée en 2022, s'aligne sur la norme européenne EN 16931 et éq
 ## Voir aussi
 
 * [Configuration ZUGFeRD](../zugferd/)
-* [Correspondance des champs ZUGFeRD](../zugferd/versions/)
+* [Correspondance des champs ZUGFeRD](../zugferd/README.md)
 * [Documents électroniques pris en charge](./)

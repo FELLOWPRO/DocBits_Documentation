@@ -1,36 +1,38 @@
-# Case 10a: Quantity Outside Tolerance (Negative Rejected), Unit Price Within Tolerance
+# Cas 10a: Quantité hors tolérances (Dépassement négatif rejeté), Prix unitaire dans les tolérances
 
-## Scenario:
+Le scénario suivant illustre un mappage configuré ; il ne constitue pas un modèle par défaut dont le déploiement aurait été vérifié. La sortie réelle, les montants, les signes et les types de documents dépendent des règles et expressions `conflict_resolution` actives, du mappage d’export et des décisions d’approbation. Toute note de débit ou de crédit décrite ci-dessous est soumise à cette configuration ; cet exemple ne garantit ni son émission automatique ni la conformité juridique.
 
-The quantity is below the acceptable range (negative tolerance) and is not approved, though the unit price is within tolerance.
+## Scénario :
 
-## Action:
+La quantité est inférieure à la fourchette acceptable (tolérance négative) et n'est pas approuvée, bien que le prix unitaire soit dans la tolérance.
 
-The system adjusts the quantity to match the approved level, keeping the unit price consistent. The transaction is processed accordingly.
+## Action :
 
-## Example:
+Le système ajuste la quantité pour qu'elle corresponde au niveau approuvé, gardant ainsi le prix unitaire cohérent. La transaction est traitée en conséquence.
+
+## Exemple :
 
 * **Purchase Order (PO):**
   * Quantity: 150 units
-  * Unit Price: $20.00 per unit
+  * Prix unitaire : $20.00 par unité
   * Total Amount: $3,000.00
 * **Invoice Received:**
-  * Quantity: 140 units (outside tolerance of -6.67%, rejected)
-  * Unit Price: $20.00 per unit (within tolerance)
+  * Quantité : 140 unités (hors tolérance de -6.67%, rejeté)
+  * Prix unitaire : $20.00 par unité (dans les limites de tolérance)
   * Total Amount: $2,800.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
   * Unit Price Tolerance: ±2%
 
-Since the quantity (140 units) is below the acceptable tolerance limit (negative variance of -6.67%) and is not approved, but the unit price ($20.00) is within tolerance, the system will:
+Étant donné que la quantité (140 unités) est inférieure à la limite de tolérance acceptable (écart négatif de -6.67 %) et n'est pas approuvée, mais que le prix unitaire ($20.00) est dans la tolérance, le système :
 
-1. **Reject the Lower Quantity:** The system does not accept the lower quantity since it is outside the approved tolerance range.
-2. **Adjust the Quantity:** The system adjusts the quantity to match the approved level specified in the purchase order.
-   * Approved Quantity = 150 units (from PO)
-3. **Maintain the Unit Price:** The unit price of $20.00 per unit is within tolerance and remains unchanged.
-4. **Recalculate the Total Amount:** The system calculates the total amount using the approved quantity and the accepted unit price:
-   * **Total Amount = Approved Quantity × Unit Price**
-   * **Total Amount = 150 units × $20.00 per unit = $3,000.00**
-5. **Process the Invoice:** The system processes the invoice with the adjusted total amount of $3,000.00, reflecting the approved quantity and unit price. The supplier is expected to invoice for the full approved quantity.
+1. **Rejeter la quantité inférieure :** Le système n'accepte pas la quantité inférieure car elle se situe en dehors de la plage de tolérance approuvée.
+2. **Ajuster la quantité :** Le système ajuste la quantité pour qu'elle corresponde au niveau approuvé spécifié dans le bon de commande.
+   * Quantité approuvée = 150 unités (à partir de PO)
+3. **Maintenir le prix unitaire :** Le prix unitaire de $20.00 par unité est dans les limites de tolérance et reste inchangé.
+4. **Recalculer le montant total :** Le système calcule le montant total en utilisant la quantité approuvée et le prix unitaire accepté :
+   * **Montant total = Quantité approuvée × Prix unitaire**
+   * **Montant total = 150 unités × $20.00 par unité = $3,000.00**
+5. **Traiter la facture :** Le système traite la facture pour un montant total ajusté de $3,000.00, correspondant à la quantité et au prix unitaire approuvés. Le fournisseur est censé facturer la totalité de la quantité approuvée.
 
-This approach ensures that the financial transaction aligns with the purchase order's terms, and prevents under-invoicing while maintaining accurate financial records.
+Cette approche garantit que la transaction financière est conforme aux conditions du bon de commande et évite la sous-facturation tout en conservant des registres financiers précis.

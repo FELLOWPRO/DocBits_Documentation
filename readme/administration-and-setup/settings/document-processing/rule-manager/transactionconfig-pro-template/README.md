@@ -1,125 +1,121 @@
 # TransactionConfig Pro Template
 
-## Comprehensive Configuration Tool for Financial Document Processing
+## Configuration du traitement des documents financiers
 
-_TransactionConfig Pro Template_ is a powerful configuration tool designed for enterprise environments to manage the processing of financial documents, such as invoices, debit notes, and credit notes. The tool provides detailed mapping and field definitions that allow businesses to automate and customize their financial workflows with precision. Integrating seamlessly with existing Infor ERP systems, _TransactionConfig Pro Template_ ensures accurate handling of complex transactions while maintaining compliance with global financial standards.
+_TransactionConfig Pro Template_ présente des exemples de mappage de documents financiers : factures, notes de débit et notes de crédit. Le gestionnaire de règles peut utiliser des règles et expressions `conflict_resolution` configurées pour déterminer les actions de traitement. Cette documentation ne prouve pas qu’un modèle prédéfini soit déployé dans votre environnement.
 
-### Key Features
+Les mappages de champs, les types de transactions et les décisions du processus doivent être configurés pour l’intégration Infor M3/LN concernée. Ces exemples expliquent cette configuration ; ils ne garantissent ni des résultats exacts, ni une intégration sans adaptation, ni la conformité aux normes financières internationales.
 
-• Detailed Mapping: Allows for precise mapping of fields across various transaction types, ensuring data consistency and accuracy.
+### Domaines de configuration
 
-• Customization: Supports customization of financial document workflows to meet specific business needs.
+* **Mappage :** Définir les champs source et cible pour chaque type de transaction et vérifier les données produites.
+* **Personnalisation :** Configurer les règles du processus métier et des approbations.
+* **Automatisation :** Automatiser uniquement les décisions explicitement couvertes par les règles et expressions actives.
+* **Intégration :** Vérifier le mappage d’export et les exigences du système Infor M3/LN cible.
+* **Conformité :** Examiner séparément les exigences comptables et fiscales ; la configuration seule ne garantit pas la conformité juridique.
 
-• Automation: Automates the handling of financial transactions, reducing manual errors and increasing efficiency.
+## Cas illustratifs de résolution des conflits
 
-• Integration: Easily integrates with existing Infor M3/LN ERP systems, enhancing the overall financial processing capabilities of the organization.
+Le scénario suivant illustre un mappage configuré ; il ne constitue pas un modèle par défaut dont le déploiement aurait été vérifié. La sortie réelle, les montants, les signes et les types de documents dépendent des règles et expressions `conflict_resolution` actives, du mappage d’export et des décisions d’approbation. Toute note de débit ou de crédit décrite ci-dessous est soumise à cette configuration ; cet exemple ne garantit ni son émission automatique ni la conformité juridique.
 
-• Compliance: Ensures compliance with international financial standards and regulations, helping businesses manage global transactions effectively.
+### [Cas 1, 2, 3 : Quantité et prix unitaire dans la tolérance](case-1-2-3-quantity-and-unit-price-within-tolerance.md)
 
+**Scénario:** La quantité et le prix facturés respectent les tolérances configurées par rapport au PO.
 
+**Action illustrative:** Le mappage illustratif accepte les valeurs facturées et calcule quantité × prix unitaire.
 
-## Detailed Explanation of Conflict Resolution Cases
+### [Cas 4, 5 : Quantité dans la tolérance, prix hors tolérance (approuvé)](case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved.md)
 
-_TransactionConfig Pro Template_ includes a series of predefined rules to handle common discrepancies between invoice data and purchase order (PO) data. These rules are designed to automate decision-making when variances occur, ensuring consistency and accuracy in financial processing.
+**Scénario:** La quantité respecte la tolérance ; l’écart de prix la dépasse et a été approuvé.
 
-### [Case 1, 2, 3: Quantity and Unit Price Within Tolerance](case-1-2-3-quantity-and-unit-price-within-tolerance.md)
+**Action illustrative:** Le mappage illustratif retient le prix du PO et affecte l’écart approuvé à des frais de ligne si cela est configuré.
 
-**Scenario:** Both the quantity and unit price on the invoice are within an acceptable tolerance range compared to the purchase order.
+### [Cas 6 : Quantité dans la tolérance, prix inférieur à la limite (rejeté)](case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
 
-• **Action:** The system accepts the invoice values and calculates the total amount based on the provided quantity and unit price.
+**Scénario:** La quantité respecte la tolérance ; le prix est inférieur à la plage autorisée et a été rejeté.
 
-### [Case 4, 5: Quantity Within Tolerance, Unit Price Outside Tolerance (Approved)](case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved.md)
+**Action illustrative:** Le mappage illustratif retient le prix du PO. L’écart signé n’est pas automatiquement une note de crédit ; le type et le signe de l’ajustement dépendent du mappage.
 
-**Scenario:** The quantity on the invoice is within tolerance, but the unit price is outside tolerance, and this variance has been approved.
+### [Cas 7 : Quantité dans la tolérance, prix supérieur à la limite (rejeté)](case-7-quantity-within-tolerance-unit-price-outside-tolerance-positive-rejected.md)
 
-• **Action:** The system adjusts the unit price to match the purchase order and applies any necessary line charges to account for the difference.
+**Scénario:** La quantité respecte la tolérance ; l’écart de prix positif a été rejeté.
 
-### [Case 6: Quantity Within Tolerance, Unit Price Outside Negative Tolerance (Rejected)](case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
+**Action illustrative:** Le mappage illustratif retient le prix du PO. Toute note ou tout ajustement de l’écart dépend du mappage d’export.
 
-**Scenario:** The quantity is within tolerance, but the unit price is below the acceptable range (negative tolerance) and is not approved.
+### [Cas 8a, 9a : Quantité hors tolérance (approuvée), prix dans la tolérance](case-8a-9a-quantity-outside-tolerance-approved-unit-price-within-tolerance.md)
 
-• **Action:** The system rejects the unit price, adjusts it to match the purchase order, and generates a credit note for the difference. Additional header charges may be applied as necessary.
+**Scénario:** L’écart de quantité est approuvé et le prix reste dans la tolérance.
 
-### [Case 7: Quantity Within Tolerance, Unit Price Outside Tolerance (Positive Rejected)](case-7-quantity-within-tolerance-unit-price-outside-tolerance-positive-rejected.md)
+**Action illustrative:** Le mappage illustratif utilise la quantité facturée approuvée et le prix unitaire facturé.
 
-**Scenario:** The quantity is within tolerance, but the unit price exceeds the acceptable range (positive tolerance) and is not approved.
+### [Cas 11a : Quantité supérieure à la limite (rejetée), prix dans la tolérance](case-11a-quantity-outside-tolerance-positive-rejected-unit-price-within-tolerance.md)
 
-• **Action:** The system rejects the invoice unit price, adjusts it to match the purchase order, and may generate a debit note to account for the overcharged amount.
+**Scénario:** La quantité dépasse la limite et a été rejetée ; le prix respecte la tolérance.
 
-### [Case 8a, 9a: Quantity Outside Tolerance (Approved), Unit Price Within Tolerance](case-8a-9a-quantity-outside-tolerance-approved-unit-price-within-tolerance.md)
+**Action illustrative:** Le mappage illustratif utilise la quantité approuvée et conserve le prix. Le traitement de l’excédent dépend des règles configurées.
 
-**Scenario:** The quantity on the invoice is outside the acceptable tolerance but has been approved, while the unit price remains within tolerance.
+### [Cas 10a : Quantité inférieure à la limite (rejetée), prix dans la tolérance](case-10a-quantity-outside-tolerance-negative-rejected-unit-price-within-tolerance.md)
 
-• **Action:** The system accepts the approved quantity and the unit price as per the invoice and processes the transaction accordingly.
+**Scénario:** La quantité est inférieure à la limite et a été rejetée ; le prix respecte la tolérance.
 
-### [Case 11a: Quantity Outside Tolerance (Positive Rejected), Unit Price Within Tolerance](case-11a-quantity-outside-tolerance-positive-rejected-unit-price-within-tolerance.md)
+**Action illustrative:** Le mappage illustratif utilise la quantité approuvée et conserve le prix unitaire.
 
-**Scenario:** The quantity on the invoice exceeds the acceptable range (positive) and is rejected, but the unit price is within tolerance.
+### [Cas 8b, 9b : Quantité et prix hors tolérance (approuvés)](case-8b-9b-quantity-outside-tolerance-approved-unit-price-outside-tolerance-approved.md)
 
-• **Action:** The system adjusts the quantity to the approved level, maintaining the unit price, and processes the transaction. Any excess quantity is rejected and not invoiced.
+**Scénario:** Les écarts de quantité et de prix ont tous deux été approuvés.
 
-### [Case 10a: Quantity Outside Tolerance (Negative Rejected), Unit Price Within Tolerance](case-10a-quantity-outside-tolerance-negative-rejected-unit-price-within-tolerance.md)
+**Action illustrative:** Le mappage illustratif utilise les valeurs facturées approuvées et les frais de ligne ou ajustements explicitement configurés.
 
-**Scenario:** The quantity is below the acceptable range (negative tolerance) and is not approved, though the unit price is within tolerance.
+### [Cas 10b : Quantité inférieure à la limite et prix hors tolérance (rejetés)](case-10b-quantity-outside-tolerance-negative-rejected-unit-price-outside-tolerance-rejected.md)
 
-• **Action:** The system adjusts the quantity to match the approved level, keeping the unit price consistent. The transaction is processed accordingly.
+**Scénario:** Ni l’écart négatif de quantité ni l’écart de prix n’a été approuvé.
 
-### [Case 8b, 9b: Quantity Outside Tolerance (Approved), Unit Price Outside Tolerance (Approved)](case-8b-9b-quantity-outside-tolerance-approved-unit-price-outside-tolerance-approved.md)
+**Action illustrative:** Le mappage illustratif utilise les valeurs du PO ou les valeurs approuvées. Toute note de débit ou de crédit nécessite le mappage et la décision d’approbation correspondants.
 
-**Scenario:** Both the quantity and unit price are outside the tolerance range but have been approved.
+### [Cas 11b : Quantité supérieure à la limite et prix hors tolérance (rejetés)](case-11b-quantity-outside-tolerance-positive-rejected-unit-price-outside-tolerance-rejected.md)
 
-• **Action:** The system processes the transaction using the invoice values for both quantity and unit price, applying any necessary adjustments or line charges.
+**Scénario:** L’écart positif de quantité et l’écart de prix ont été rejetés.
 
-### [Case 10b: Quantity Outside Tolerance (Negative Rejected), Unit Price Outside Tolerance (Rejected)](case-10b-quantity-outside-tolerance-negative-rejected-unit-price-outside-tolerance-rejected.md)
+**Action illustrative:** Le mappage illustratif utilise les valeurs approuvées du PO ; le traitement des excédents dépend de la configuration active.
 
-**Scenario:** Both the quantity and unit price are outside tolerance, and neither has been approved.
+### [Cas 12, 13 : Frais de ligne par unité dans la tolérance](charge-per-unit-within-tolerance.md)
 
-• **Action:** The system rejects the invoice data, adjusts the values to match the purchase order, and generates necessary debit or credit notes.
+**Scénario:** Les frais de ligne par unité respectent la tolérance configurée par rapport au PO.
 
-### [Case 11b: Quantity Outside Tolerance (Positive Rejected), Unit Price Outside Tolerance (Rejected)](case-11b-quantity-outside-tolerance-positive-rejected-unit-price-outside-tolerance-rejected.md)
+**Action illustrative:** Le mappage illustratif accepte les frais de ligne facturés sans ajustement.
 
-**Scenario:** The quantity exceeds the acceptable range (positive) and is rejected, and the unit price is also outside tolerance and rejected.
+### [Cas 14 : Frais de ligne par unité hors tolérance (approuvés)](charge-per-unit-outside-tolerance-approved-1.md)
 
-• **Action:** The system adjusts the quantity and unit price to match the approved levels from the purchase order, rejecting any excesses, and processes the transaction.
+**Scénario:** Les frais de ligne par unité dépassent la tolérance et ont été approuvés.
 
-### [Case 12, 13: Charge Line - Charge Per Unit Within Tolerance](case-12-13-header-charge-charge-per-unit-within-tolerance.md)
+**Action illustrative:** Le mappage illustratif applique les frais de ligne approuvés.
 
-**Scenario:** The charge per unit on the invoice is within the acceptable tolerance range compared to the purchase order.
+### [Cas 15 : Frais de ligne par unité hors tolérance (rejetés)](charge-per-unit-outside-tolerance-rejected.md)
 
-• **Action:** The system accepts the charge per unit as invoiced and processes the transaction without adjustments.
+**Scénario:** Les frais de ligne par unité dépassent la tolérance et ont été rejetés.
 
-### [Case 14: Charge Line - Charge Per Unit Outside Tolerance (Approved)](charge-per-unit-outside-tolerance-approved-1.md)
+**Action illustrative:** Le mappage illustratif retient les frais de ligne du PO ou les frais approuvés. Toute note pour l’écart dépend du mappage d’export.
 
-**Scenario:** The charge per unit is outside tolerance but has been approved.
+### [Cas 12, 13 : Frais d’en-tête par unité dans la tolérance](case-12-13-header-charge-charge-per-unit-within-tolerance.md)
 
-• **Action:** The system accepts the charge per unit and applies the approved charges, processing the transaction accordingly.
+**Scénario:** Les frais d’en-tête par unité respectent la tolérance configurée par rapport au PO.
 
-### [Case 15: Charge Line - Charge Per Unit Outside Tolerance (Rejected)](charge-per-unit-outside-tolerance-rejected.md)
+**Action illustrative:** Le mappage illustratif applique les frais d’en-tête facturés sans ajustement.
 
-**Scenario:** The charge per unit is outside tolerance and has not been approved.
+### [Cas 14 : Frais d’en-tête par unité hors tolérance (approuvés)](charge-per-unit-outside-tolerance-approved.md)
 
-• **Action:** The system adjusts the charge per unit to match the purchase order or approved levels, generating any necessary debit or credit notes.
+**Scénario:** Les frais d’en-tête par unité dépassent la tolérance et ont été approuvés.
 
-### [Case 12, 13: Header Charge - Charge Per Unit Within Tolerance](case-12-13-header-charge-charge-per-unit-within-tolerance.md)
+**Action illustrative:** Le mappage illustratif applique les frais d’en-tête approuvés.
 
-**Scenario:** The header charge per unit is within the acceptable tolerance range compared to the purchase order.
+### [Cas 15 : Frais d’en-tête par unité hors tolérance (rejetés)](case-15-header-charge-charge-per-unit-outside-tolerance-rejected.md)
 
-• **Action:** The system processes the header charge as invoiced, applying it without adjustments.
+**Scénario:** Les frais d’en-tête par unité dépassent la tolérance et ont été rejetés.
 
-### [Case 14: Header Charge - Charge Per Unit Outside Tolerance (Approved)](charge-per-unit-outside-tolerance-approved.md)
+**Action illustrative:** Le mappage illustratif retient les frais d’en-tête du PO ou les frais approuvés. Toute note distincte dépend du traitement configuré.
 
-**Scenario:** The header charge per unit is outside tolerance but has been approved.
+### [Lignes de taxe](tax-lines.md "mention")
 
-• **Action:** The system processes the approved charge per unit, applying it to the transaction.
+**Scénario:** Les montants de taxe de la facture et du PO diffèrent.
 
-### [Case 15: Header Charge - Charge Per Unit Outside Tolerance (Rejected)](case-15-header-charge-charge-per-unit-outside-tolerance-rejected.md)
-
-**Scenario:** The header charge per unit is outside tolerance and has not been approved.
-
-• **Action:** The system adjusts the header charge to match the purchase order, processing the transaction accordingly, and generating any necessary notes.
-
-### [tax-lines.md](tax-lines.md "mention")
-
-**Scenario:** Handles discrepancies in tax amounts between the invoice and purchase order.
-
-• **Action:** The system adjusts the tax lines according to the approved tax rates and amounts, ensuring compliance with applicable tax regulations.
+**Action illustrative:** Le mappage illustratif utilise les taux et montants de taxe approuvés. La configuration doit être vérifiée au regard des exigences fiscales applicables ; cet exemple ne garantit pas la conformité juridique.

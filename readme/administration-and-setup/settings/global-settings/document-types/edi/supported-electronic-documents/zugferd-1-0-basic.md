@@ -35,5 +35,5 @@ Le profil Basic de ZUGFeRD 1.0 comprend les champs de facture essentiels, tels q
 ## Pages liées
 
 * [Configuration ZUGFeRD](../zugferd/)
-* [Correspondance des champs ZUGFeRD](../zugferd/versions/)
+* [Correspondance des champs ZUGFeRD](../zugferd/README.md)
 * [Documents électroniques pris en charge](./)

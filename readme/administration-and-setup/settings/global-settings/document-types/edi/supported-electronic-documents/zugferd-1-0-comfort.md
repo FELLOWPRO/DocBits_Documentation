@@ -35,5 +35,5 @@ Le profil Comfort de ZUGFeRD 1.0 complète le profil Basic avec des champs suppl
 ## Pages liées
 
 * [Configuration ZUGFeRD](../zugferd/)
-* [Correspondance des champs ZUGFeRD](../zugferd/versions/)
+* [Correspondance des champs ZUGFeRD](../zugferd/README.md)
 * [Documents électroniques pris en charge](./)

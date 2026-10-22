@@ -1,4 +1,4 @@
-# Custom classification tag
+# Étiquette de classification personnalisée
 
 ## Table `public.custom_classification_tag`
 
@@ -8,8 +8,8 @@
 * `org_id`: ID to organisation
 * `name`: internal
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on` : horodatage avec fuseau horaire
+* `last_modified_on` : horodatage avec fuseau horaire
 * `is_deleted`: boolean
 
 ### Analyse et description

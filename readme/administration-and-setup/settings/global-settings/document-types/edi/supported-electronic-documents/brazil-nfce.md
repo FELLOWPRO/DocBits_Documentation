@@ -30,7 +30,7 @@ La NFC-e (Nota Fiscal de Consumidor Eletrônica, `<mod>65</mod>`) est la facture
 
 ## Aperçu par défaut
 
-<figure><img src="brazil-nfce-preview.png" alt="Aperçu Brazil NFC-e dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour un document BRAZIL NFC-E</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/brazil-nfce-preview.png" alt="Aperçu Brazil NFC-e dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour un document BRAZIL NFC-E</p></figcaption></figure>
 
 ## Correspondance des champs
 

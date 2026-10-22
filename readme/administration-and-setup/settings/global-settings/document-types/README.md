@@ -1,7 +1,7 @@
-# Document Types
+# Types de documents
 
 {% embed url="https://youtu.be/pFz_6tvNlU4" %}
-DocBits Document Types Explained: Create, Configure & Assign Processing Settings
+DocBits Types de documents expliqués : créer, configurer et attribuer des paramètres de traitement
 {% endembed %}
 
 <figure><img src="../../../../.gitbook/assets/document_types.png" alt="Document Types"><figcaption><p>Page Document Types</p></figcaption></figure>
@@ -39,7 +39,7 @@ Sous chaque type de document, vous avez accès aux onglets de configuration suiv
 | **Scripts** | Permet d'écrire des scripts de traitement personnalisés exécutés pendant le traitement des documents. |
 | **E-Doc** | Configure les standards de documents électroniques (XRechnung, ZUGFeRD, EDI, FatturaPA). |
 
-## Custom Validation Rules
+## Règles de validation personnalisées
 
 Ouvrez un type de document et sélectionnez **Custom Validation Rules** pour gérer ses propres règles de validation. Pour réutiliser une règle existante sans la recréer, suivez [Duplicate a Custom Validation Rule](duplicate-a-custom-validation-rule.md). Le guide explique le nom de la règle, la clé de la règle et les contrôles de confirmation.
 

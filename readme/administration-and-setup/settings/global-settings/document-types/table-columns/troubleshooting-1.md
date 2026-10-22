@@ -39,4 +39,4 @@ Le script ou le mapping d'export fait toujours référence au *Column name* supp
 ## Pour aller plus loin
 
 * [Table Extraction Troubleshoot](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md) : qualité de l'extraction, OCR, E-Text
-* [Training Line Fields / Table Training](../../../../setup/document-training/training-line-fields-table-training/README.md)
+* [Champs de ligne de formation / Formation de table](../../../../setup/document-training/training-line-fields-table-training/README.md)

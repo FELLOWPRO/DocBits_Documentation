@@ -20,7 +20,7 @@ Le XSLT TRANSFORMATION par défaut produit deux champs dérivés :
 | Champ DocBits | Source | Logique |
 | :--- | :--- | :--- |
 | `INVOICE_TYPE` | `CrossIndustryInvoice/ExchangedDocument/TypeCode` | UNCL 1001 `381` ou `261` → **Credit Note** ; tout autre code → **Invoice** |
-| `INVOICE_SUB_TYPE` | `SupplyChainTradeTransaction/ApplicableHeaderTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | Non vide → **Purchase Invoice** ; vide/absent → **Cost Invoice** |
+| `INVOICE_SUB_TYPE` | `SupplyChainTradeTransaction/ApplicableHeaderTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | Non vide → **Facture d'achat** ; vide/absent → **Facture de coûts** |
 
 ### Ventilation des taxes (classée par niveaux)
 

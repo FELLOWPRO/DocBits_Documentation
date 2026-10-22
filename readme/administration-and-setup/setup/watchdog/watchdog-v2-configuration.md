@@ -22,7 +22,7 @@ L'onglet General fournit les instructions d'installation, les liens de télécha
 WatchDog.exe -api YOUR_API_KEY
 ```
 
-### 1.2 Auto-Update Schedule
+### 1.2 Calendrier de mise à jour automatique
 
 | Option | Intervalle |
 | :--- | :--- |
@@ -39,7 +39,7 @@ Créez et gérez les configurations d'importation et d'exportation. Toutes les c
 
 <figure><img src="../../../.gitbook/assets/watchdog_v2_03.png" alt="Aperçu des configurations WatchDog"><figcaption></figcaption></figure>
 
-### 2.1 Import Configurations
+### 2.1 Importer les configurations
 
 Définissez les emplacements que WatchDog surveille pour détecter de nouveaux documents.
 
@@ -53,7 +53,7 @@ Définissez les emplacements que WatchDog surveille pour détecter de nouveaux d
 | **Document Type** | INVOICE, CREDIT\_NOTE, PURCHASE\_ORDER, etc. |
 | **Sub-Organisation** | Facultatif — achemine les documents vers une sous-organisation spécifique |
 
-### 2.2 Export Configurations
+### 2.2 Configuration d’exportations
 
 Définissez comment et où les documents traités sont exportés.
 
@@ -143,7 +143,7 @@ Gérez les modèles de transformation XSLT utilisés pour les exportations XML.
 
 ---
 
-## 6. Onglet Export Configurations
+## 6. Onglet Configuration d’exportations
 
 Vue d'ensemble de toutes les configurations d'exportation actives avec leur état de connexion.
 

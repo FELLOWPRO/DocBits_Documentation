@@ -6,7 +6,9 @@ DocFlow MCP fournit des outils pour gérer et tester les workflows avancés, ain
 **Noms des outils via la passerelle DocBits MCP.** Lorsque vous vous connectez via le DocBits MCP unifié (`api.docbits.com/v3/mcp`), chaque outil DocFlow porte le préfixe `docflow_` : `list_workflows` s'appelle `docflow_list_workflows`, `run_workflow_with_assertions` devient `docflow_run_workflow_with_assertions`. Les paramètres sont identiques. Les noms ci-dessous sont les noms DocFlow sans préfixe.
 
 Les workflows sont **créés et modifiés dans le concepteur DocFlow** de l'application web. Le MCP les lit, les teste, les exécute et les supprime ; il ne crée ni ne modifie les graphes de workflow.
-{% endhint %} Les outils du SDK de cartes ont leur propre page, voir [Outils du SDK de Cartes](card-sdk-tools.md).
+{% endhint %}
+
+Les outils du SDK de cartes ont leur propre page, voir [Outils du SDK de Cartes](card-sdk-tools.md).
 
 ## list\_workflows
 

@@ -6,7 +6,7 @@ Le Plan du Site est l'index complet et consultable de tout ce que DocBits propos
 
 Ouvrez le Plan du Site depuis la barre latérale (entrée proche du bas) ou appuyez sur <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> et choisissez **Voir tous les résultats**. L'URL directe est `/sitemap`.
 
-<figure><img src="../../.gitbook/assets/sitemap-overview.png" alt="Aperçu du Plan du Site"><figcaption><p>Plan du Site avec aperçu des catégories et en-tête de recherche.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-sitemap-fr.png" alt="Catalogue des pages en français. Les filtres fixes All, Dialogs, Sidebars et User, ainsi que certaines indications « more », restent en anglais dans la version actuelle du produit."><figcaption><p>Catalogue des pages en français. Les filtres fixes All, Dialogs, Sidebars et User, ainsi que certaines indications « more », restent en anglais dans la version actuelle du produit.</p></figcaption></figure>
 
 ## Parcourir le catalogue
 

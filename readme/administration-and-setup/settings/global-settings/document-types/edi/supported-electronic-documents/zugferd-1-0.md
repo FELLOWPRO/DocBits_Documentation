@@ -35,5 +35,5 @@ ZUGFeRD 1.0 était la norme allemande originelle de facture hybride, publiée en
 ## Voir aussi
 
 * [Configuration ZUGFeRD](../zugferd/)
-* [Correspondance des champs ZUGFeRD](../zugferd/versions/)
+* [Correspondance des champs ZUGFeRD](../zugferd/README.md)
 * [Documents électroniques pris en charge](./)

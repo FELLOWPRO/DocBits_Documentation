@@ -41,7 +41,7 @@ Suivez ces étapes pour accéder à la **page de rapport** dans DocBits :
 
 <figure><img src="../.gitbook/assets/average_system_time_display.png" alt="Affichage Average System Time" width="437"><figcaption></figcaption></figure>
 
-### **6. Section Changed Fields**
+### **6. Section Champs modifiés**
 
 * Sous les informations relatives au temps, vous trouverez la section **Changed Fields**. Elle affiche un diagramme montrant à quelle fréquence chaque champ du document a été modifié manuellement par les utilisateurs pendant la période sélectionnée.
 * Chaque champ est affiché avec le nombre de modifications correspondant, représenté par des barres dans le diagramme.
@@ -65,7 +65,7 @@ Sous la section **Changed Fields**, vous trouverez quatre boutons supplémentair
     * Lorsque vous cliquez sur le bouton, il se déploie et affiche la liste des types de documents avec le nombre de documents de chaque type traités pendant la période sélectionnée.
 
     <figure><img src="../.gitbook/assets/total_documents_per_type_report.png" alt="Rapport Total Documents per Type" width="563"><figcaption></figcaption></figure>
-2.  **Daily Average per Doctype**
+2.  **Moyenne quotidienne par Doctype**
 
     * Ce bouton affiche le nombre moyen quotidien de documents traités, par type de document.
     * Lorsque vous cliquez sur le bouton, il se déploie et affiche les types de documents avec leur moyenne quotidienne correspondante.

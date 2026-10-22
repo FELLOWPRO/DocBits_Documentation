@@ -1,26 +1,22 @@
-# e-docs
+# Documents électroniques et configuration EDI
 
 {% embed url="https://youtu.be/AxrHNEmmXtg" %}
-DocBits E-Invoice Tutorial: Process XRechnung / ZUGFeRD (Factur-X), Validate Data & Automate Workflows
+DocBits Tutoriel sur la facture électronique : traiter XRechnung / ZUGFeRD (Factur-X), valider les données et automatiser les flux de travail
 {% endembed %}
 
-<figure><img src="../../../../../.gitbook/assets/docbits_edi_overview.png" alt="Docbits Edi Overview"><figcaption></figcaption></figure>
+Sélectionnez le type de document et le format électronique dans les paramètres des documents électroniques. Cette configuration traite les messages EDI entrants ; elle ne configure pas leur transmission sortante.
 
-#### Overview
+<figure><img src="../../../../../.gitbook/assets/site-all-edi-list-fr.png" alt="Format EDI existant avec ses quatre attributs configurés."><figcaption><p>Format EDI existant avec ses quatre attributs configurés.</p></figcaption></figure>
 
-In Docbits, the EDI settings provide tools for defining and managing the structure and format of EDI messages that correspond to various document types, such as invoices or purchase orders. The settings enable the customization of EDI messages to comply with the standards and requirements specific to different trading partners and industries.
+* STRUCTUREDESCRIPTOR : un descripteur de structure JSON analyse le message EDI brut et produit du JSON. DocBits crée ensuite un XML intermédiaire.
 
-#### Key Features and Options
+* TRANSFORMATION : une feuille XSLT transforme le XML intermédiaire en XML standard pour les traitements suivants.
 
-1. **EDI Configuration Elements**:
-   * **Structure Descriptor**: Defines the basic structure of the EDI document, including segment ordering, mandatory fields, and qualifiers necessary for the EDI document to be valid.
-   * **Transformation**: Specifies the transformations applied to convert the document data into an EDI formatted message. This typically involves specifying mappings from document fields to EDI segments and elements.
-   * **Preview**: Allows administrators to view how the EDI message will look after transformation, helping to ensure accuracy before transmission.
-   * **Extraction Paths**: Shows the paths used to extract values from the document, which are then used to populate the EDI message.
-2. **XSLT Editor**:
-   * Used for editing and validating the XSLT (eXtensible Stylesheet Language Transformations) used in the transformation process. XSLT is a powerful language designed for transforming XML documents into other XML documents or other formats like HTML, text, or even other XML structures.
+* PREVIEW : une feuille XSLT produit une présentation lisible à partir du XML transformé. La capture de l’éditeur montre le code source, pas le document rendu.
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.49.59.png" alt=""><figcaption></figcaption></figure>
+* EXTRACTIONPATHS : la configuration JSON associe les champs et les colonnes à des expressions XPath évaluées sur le XML transformé.
+
+<figure><img src="../../../../../.gitbook/assets/site-all-edi-detail-fr.png" alt="Attribut STRUCTUREDESCRIPTOR actif : descripteur de structure JSON dans l’éditeur en lecture seule."><figcaption><p>Attribut STRUCTUREDESCRIPTOR actif : descripteur de structure JSON dans l’éditeur en lecture seule.</p></figcaption></figure>
 
 ## Règles effectivement utilisées et activation
 
@@ -29,3 +25,8 @@ Si un avoir électronique apparaît comme Invoice, suivez le [guide de diagnosti
 ## Guides par pays
 
 Consultez les guides par pays pour connaître les libellés exacts des formats, la syntaxe, les limites de version et l’état de configuration examiné. [Formats eDocs, versions et guides par pays](supported-electronic-documents/README.md).
+
+
+Les vues montrent une configuration et une version existantes. Les paramètres varient selon le type de document et le format. Validez les modifications dans un brouillon avant leur activation.
+
+Certaines mentions, telles que Custom et Default, correspondent à l’interface actuelle du produit. Les identifiants techniques des attributs et le code de configuration restent inchangés.

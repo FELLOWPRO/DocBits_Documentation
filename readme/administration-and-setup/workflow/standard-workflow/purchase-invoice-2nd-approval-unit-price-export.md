@@ -1,6 +1,6 @@
-# Purchase Invoice - 2nd Approval Unit Price Export
+# Facture d’achat : exportation après la deuxième approbation du prix unitaire
 
-<figure><img src="../../../../.gitbook/assets/docbits_purchase_order_export_5.png" alt="DocBits Achat Commande Exporter 5"><figcaption></figcaption></figure>
+
 
 Ce titre indique que la règle est mise en place pour gérer la seconde phase d'approbation des factures d'achat en mettant l'accent sur le prix unitaire, garantissant qu'il correspond aux conditions convenues.
 

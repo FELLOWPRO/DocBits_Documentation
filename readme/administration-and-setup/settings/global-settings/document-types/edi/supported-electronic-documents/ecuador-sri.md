@@ -39,7 +39,7 @@ Le numéro de facture est un composite de trois champs : `estab-ptoEmi-secuencia
 
 ## Aperçu par défaut
 
-<figure><img src="ecuador-sri-preview.png" alt="Aperçu de la Factura Ecuador SRI dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour une Factura Electrónica Ecuador SRI (version 2.1.0)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/ecuador-sri-preview.png" alt="Aperçu de la Factura Ecuador SRI dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour une Factura Electrónica Ecuador SRI (version 2.1.0)</p></figcaption></figure>
 
 ## Correspondance des champs
 
@@ -93,5 +93,5 @@ L'élément racine est `<factura>` avec `id="comprobante"`. L'attribut `version`
 
 ## Liens connexes
 
-- [Normes e-Facture actuellement prises en charge](../../currently-supported-e-invoice-standards/)
+- [Normes e-Facture actuellement prises en charge](../currently-supported-e-invoice-standards/README.md)
 - [Documents électroniques pris en charge](./)

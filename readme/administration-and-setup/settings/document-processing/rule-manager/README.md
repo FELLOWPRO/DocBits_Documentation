@@ -80,11 +80,11 @@ Ces opérateurs définissent la manière dont les valeurs réelles de la facture
 
 • greater than
 
-• greater than or equal to
+• supérieur ou égal à
 
 • less than
 
-• less than or equal to
+• inférieur ou égal à
 
 • within tolerance
 
@@ -114,23 +114,23 @@ Définit les actions spécifiques à exécuter lorsqu'un écart est détecté :
 
 • tax line
 
-• debit note receipt line
+• ligne de reçu de note de débit
 
-• debit note cost line
+• ligne de coût de la note de débit
 
-• debit note header charge
+• frais d'en-tête de note de débit
 
-• debit note line charge
+• frais de ligne de note de débit
 
-• credit note receipt line
+• ligne de reçu de note de crédit
 
-• credit note cost line
+• ligne de coût de la note de crédit
 
-• credit note header charge
+• frais d'en-tête de note de crédit
 
 • credit note line charge
 
-• credit note tax line
+• ligne fiscale sur les notes de crédit
 
 ### Exemples de règles
 

@@ -46,7 +46,7 @@ Le moteur de flux de travail DocBits met en œuvre un contrôle de version robus
 #### 1. CALL_API
 **Versions :** v1, v2 (Actuelle : v2)
 
-📖 **Guide :** [Guide d'appel d'API externe](../then/action/call-api-guide.md)
+📖 **Guide :** [Guide d'appel d'API externe](then/action/call-api-guide.md)
 
 | Version | Traduction | Statut | Changements clés |
 |---------|-------------|--------|-------------|
@@ -106,7 +106,7 @@ trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [
 #### 4. ACTION_TASK_FOR_GROUP
 **Versions :** v2, v3 (Obsolète), v4 (Actuelle)
 
-📖 **Guide :** [Guide d'assignation de tâches](../then/task/task-assignment-guide.md)
+📖 **Guide :** [Guide d'assignation de tâches](then/task/task-assignment-guide.md)
 
 | Version | Changements | Statut | Paramètre de type |
 |---------|---------|--------|-----------------|
@@ -167,7 +167,7 @@ After (v4):  "Create a new [param] with the title: [param] ... "
 #### 1. CONDITION_DOC_TO_PO_UNIT_PRICE ⭐ (La plus évoluée - 5 versions)
 **Versions :** v2, v3, v4, v5 (Actuelle)
 
-📖 **Guide :** [Guide complet du rapprochement de PO](../and/compare-with-purchase-order/po-matching-complete-guide.md#2-unit-price-comparison-document-vs-po)
+📖 **Guide :** [Guide complet du rapprochement de PO](and/compare-with-purchase-order/po-matching-complete-guide.md)
 
 | Version | Changements | Statut | Tolérance | Comparaison |
 |---------|---------|--------|-----------|------------|
@@ -351,7 +351,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 #### 1. tasks_create ⭐ (Carte de tâche la plus évoluée - 4 versions)
 **Versions :** v1 (Obsolète), v2 (Obsolète), v3 (Obsolète), v4 (Actuelle)
 
-📖 **Guide :** [Guide d'assignation de tâches](../then/task/task-assignment-guide.md#card-tasks_create--create-task-and-assign-to-user)
+📖 **Guide :** [Guide d'assignation de tâches](then/task/task-assignment-guide.md)
 
 | Version | Traduction | Arbre de décision | Type d'élément de travail | Statut |
 |---------|-------------|---------------|-----------------|--------|
@@ -650,10 +650,10 @@ v4: + "Compare as [param1] [param2]"
 
 ## Documentation associée
 
-- 📖 [Référence du versionnage des cartes](../changelog/card-versioning.md) - Informations détaillées sur les versions
-- 📚 [Guides de flux de travail](../) - Utilisation des cartes étape par étape
-- 🔄 [Base de données des versions de cartes](../docs/card_version.md) - Historique complet des versions
-- 📋 [Journaux de flux de travail](../workflow-logs/) - Exécution et débogage
+- 📖 [Référence du versionnage des cartes](cards-overview/card-versions-guide.md) - Informations détaillées sur les versions
+- 📚 [Guides de flux de travail](README.md) - Utilisation des cartes étape par étape
+- 🔄 [Base de données des versions de cartes](cards-overview/card-versions-guide.md) - Historique complet des versions
+- 📋 [Journaux de flux de travail](workflow-logs.md) - Exécution et débogage
 
 ---
 

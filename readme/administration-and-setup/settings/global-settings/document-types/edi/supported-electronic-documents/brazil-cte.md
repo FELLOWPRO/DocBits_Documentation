@@ -30,7 +30,7 @@ Le CT-e (Conhecimento de Transporte Eletrônico, `<mod>57</mod>`) est le documen
 
 ## Aperçu par défaut
 
-<figure><img src="brazil-cte-preview.png" alt="Aperçu Brazil CT-e dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour un document BRAZIL CT-E</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/brazil-cte-preview.png" alt="Aperçu Brazil CT-e dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour un document BRAZIL CT-E</p></figcaption></figure>
 
 ## Correspondance des champs
 

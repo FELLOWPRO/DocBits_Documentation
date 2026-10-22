@@ -1,4 +1,4 @@
-# Documents Expiry
+# Expiration des documents
 
 <figure><img src="../../../.gitbook/assets/document_expiry_settings_overview.png" alt="Paramètres Documents Expiry"><figcaption><p>Paramètres Documents Expiry</p></figcaption></figure>
 
@@ -9,7 +9,7 @@ Deux paramètres contrôlent la suppression automatique :
 | Paramètre | Ce qu'il contrôle |
 |---------|------------------|
 | **Delete document after** | Durée de conservation de tout document traité avant sa suppression automatique. |
-| **Delete finished document after** | Durée de conservation d'un document terminé (entièrement traité et exporté) avant sa suppression automatique. |
+| **Supprimer le document terminé après** | Durée de conservation d'un document terminé (entièrement traité et exporté) avant sa suppression automatique. |
 
 Pour chaque paramètre, vous choisissez une durée dans la liste déroulante :
 

@@ -30,7 +30,7 @@ ebInterface 6.1 est la dernière version de la norme autrichienne de facturation
 
 ## Aperçu par défaut
 
-<figure><img src="austria-ebinterface-preview.png" alt="Aperçu de la facture Austria ebInterface 6.1 dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour une facture AUSTRIA EBINTERFACE 6.1</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Aperçu de la facture Austria ebInterface 6.1 dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour une facture AUSTRIA EBINTERFACE 6.1</p></figcaption></figure>
 
 ## Correspondance des champs
 

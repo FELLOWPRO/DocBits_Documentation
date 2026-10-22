@@ -30,7 +30,7 @@ AUNZ PINT est l'implémentation australienne/néo-zélandaise du modèle de fact
 
 ## Aperçu par défaut
 
-<figure><img src="aunz-pint-preview.png" alt="Aperçu de facture AUNZ PINT dans DocBits"><figcaption><p>Aperçu par défaut de DocBits pour une facture AUNZ PINT</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="Aperçu de facture AUNZ PINT dans DocBits"><figcaption><p>Aperçu par défaut de DocBits pour une facture AUNZ PINT</p></figcaption></figure>
 
 ## Mappage des champs
 

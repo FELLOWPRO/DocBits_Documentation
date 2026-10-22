@@ -35,5 +35,5 @@ Le profil Extended de ZUGFeRD 1.0 est le plus complet : il prend en charge des s
 ## Pages liées
 
 * [Configuration ZUGFeRD](../zugferd/)
-* [Correspondance des champs ZUGFeRD](../zugferd/versions/)
+* [Correspondance des champs ZUGFeRD](../zugferd/README.md)
 * [Documents électroniques pris en charge](./)

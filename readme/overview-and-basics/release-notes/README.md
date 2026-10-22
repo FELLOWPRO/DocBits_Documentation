@@ -778,7 +778,7 @@ DocBits offre désormais la possibilité de changer la version de l'OCR (reconna
 
 ### Nouvelles fonctionnalités :
 
-## Rule Manager
+## Gestionnaire de règles
 
 [rule-manager](../../administration-and-setup/settings/document-processing/rule-manager/ "mention") offre la flexibilité de créer et de modifier des règles de résolution de conflits adaptées au système de facturation de DocBits. Ces règles sont conçues pour gérer automatiquement les écarts entre les détails de la facture et les données du bon de commande (PO), garantissant un rapprochement financier précis. Le système applique ces règles pour traiter les lignes de facture, les frais et les taxes, et génère des ajustements ou des notes appropriés si nécessaire.
 

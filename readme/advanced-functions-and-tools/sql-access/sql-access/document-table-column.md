@@ -1,4 +1,4 @@
-# Document table column
+# Colonne de tableau du document
 
 ## Colonnes
 
@@ -14,8 +14,8 @@
 * `clean_field`: boolean
 * `alphanumeric_field`: boolean
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on` : horodatage avec fuseau horaire
+* `last_modified_on` : horodatage avec fuseau horaire
 * `is_deleted`: boolean
 
 ## Analyse et description

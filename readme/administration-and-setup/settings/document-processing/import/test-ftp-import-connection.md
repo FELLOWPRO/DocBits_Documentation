@@ -1,87 +1,87 @@
-# Test: FTP Import Connection
+# Test : connexion d’importation FTP
 
-#### Purpose
+#### Objectif
 
-These tests ensure that our FTP import system works correctly. We verify that we can add a new FTP import connection, test the connection, activate/deactivate it, and clean it up afterward.
+Ces tests garantissent le bon fonctionnement de notre système d'importation FTP. Nous vérifions que nous pouvons ajouter une nouvelle connexion d'importation FTP, tester la connexion, l'activer/désactiver et la nettoyer par la suite.
 
 
 
 {% embed url="https://grafana.polydocs.io/d-solo/b6ad3a9c-260c-46a3-9ade-47691e743d4d/docbits?from=1715746603760&orgId=1&panelId=84&refresh=1m&to=1715768203760" %}
 
-## Test Scenarios
+## Scénarios de test
 
 1. **Setup:**
-   * **Environment Variables:** Load necessary details like FTP server information and credentials from environment variables.
+   * **Variables d'environnement :** Chargez les détails nécessaires tels que les informations sur le serveur FTP et les informations d'identification à partir des variables d'environnement.
 2.  **FTP Connection Tests:**
 
-    **Add New Connection:**
+    **Ajouter une nouvelle connexion :**
 
-    * **Test Add New FTP Import Connection (`test_add_new_ftp_import_connection`):**
-      * Add a new FTP import connection with the given credentials and server details.
-      * **Expected Outcome:** The connection should be added successfully.
+    * **Test d’ajout d’une connexion d’importation FTP (`test_add_new_ftp_import_connection`):**
+      * Ajoutez une nouvelle connexion d'importation FTP avec les informations d'identification et les détails du serveur fournis.
+      * **Résultat attendu :** La connexion doit être ajoutée avec succès.
 
     **Deactivate Connection:**
 
-    * **Test Deactivate FTP Import Connection (`test_deactivate_ftp_import_connection`):**
-      * Deactivate the newly added FTP import connection.
-      * **Expected Outcome:** The connection should be deactivated successfully.
+    * **Test Désactiver FTP Importer la connexion (`test_deactivate_ftp_import_connection`) :**
+      * Désactivez la connexion d'importation FTP nouvellement ajoutée.
+      * **Résultat attendu :** La connexion doit être désactivée avec succès.
 
     **Test Connection:**
 
-    * **Test FTP Connection (`test_test_ftp_connection`):**
-      * Test if the FTP import connection can successfully connect to the FTP server.
-      * **Expected Outcome:** The connection should be tested successfully.
+    * **Test de connexion FTP (`test_test_ftp_connection`):**
+      * Testez si la connexion d'importation FTP peut se connecter avec succès au serveur FTP.
+      * **Résultat attendu :** La connexion doit être testée avec succès.
 
-    **Check Connection in List:**
+    **Vérifier la connexion dans la liste:**
 
-    * **Test Check FTP Connection in List (`test_check_ftp_connection_in_list`):**
-      * Check if the newly added FTP import connection is present in the list of connections.
-      * **Expected Outcome:** The connection should be found in the list.
+    * **Test de présence de la connexion FTP dans la liste (`test_check_ftp_connection_in_list`):**
+      * Vérifiez si la connexion d'importation FTP nouvellement ajoutée est présente dans la liste des connexions.
+      * **Résultat attendu :** La connexion doit être trouvée dans la liste.
 
-    **Check Connection Deactivated:**
+    **Vérifier la connexion désactivée :**
 
-    * **Test Check FTP Connection Deactivated (`test_check_ftp_connection_deactivated`):**
-      * Verify that the FTP import connection is marked as inactive in the list.
-      * **Expected Outcome:** The connection should be inactive.
+    * **Test de vérification FTP Connexion désactivée (`test_check_ftp_connection_deactivated`) :**
+      * Vérifiez que la connexion d'importation FTP est marquée comme inactive dans la liste.
+      * **Résultat attendu :** La connexion doit être inactive.
 
-    **Add Test Folder:**
+    **Ajouter un dossier de test :**
 
-    * **Test Add Test Folder to Connection (`test_add_test_folder_to_connection`):**
-      * Add a default directory (test folder) to the FTP import connection.
-      * **Expected Outcome:** The default directory should be added successfully.
+    * **Test Ajouter un dossier de test à la connexion (`test_add_test_folder_to_connection`) :**
+      * Ajoutez un répertoire par défaut (dossier de test) à la connexion d'importation FTP.
+      * **Résultat attendu :** Le répertoire par défaut doit être ajouté avec succès.
 
     **Reactivate Connection:**
 
-    * **Test Reactivate FTP Import Connection (`test_reactivate_ftp_import_connection`):**
-      * Reactivate the previously deactivated FTP import connection.
-      * **Expected Outcome:** The connection should be reactivated successfully.
+    * **Test Réactiver FTP Importer la connexion (`test_reactivate_ftp_import_connection`) :**
+      * Réactivez la connexion d'importation FTP précédemment désactivée.
+      * **Résultat attendu :** La connexion doit être réactivée avec succès.
 
-    **Check Connection Reactivated:**
+    **Vérifier la connexion réactivée :**
 
-    * **Test Check FTP Connection Reactivated (`test_check_ftp_connection_reactivated`):**
-      * Verify that the FTP import connection is marked as active in the list.
-      * **Expected Outcome:** The connection should be active.
+    * **Test de vérification FTP Connexion réactivée (`test_check_ftp_connection_reactivated`) :**
+      * Vérifiez que la connexion d'importation FTP est marquée comme active dans la liste.
+      * **Résultat attendu :** La connexion doit être active.
 
     **Cleanup:**
 
-    * **Test Cleanup FTP Import (`test_cleanup_ftp_import`):**
-      * Delete the FTP import connection to clean up after the tests.
-      * **Expected Outcome:** The connection should be deleted successfully.
+    * **Test de nettoyage FTP Importation (`test_cleanup_ftp_import`) :**
+      * Supprimez la connexion d'importation FTP pour nettoyer après les tests.
+      * **Résultat attendu :** La connexion doit être supprimée avec succès.
 
-## Detailed Explanation of Each Test
+## Explication détaillée de chaque test
 
-* **Setup and Initialization:**
-  * **Initialize Shared Data:** Prepare shared data for tests.
+* **Configuration et initialisation :**
+  * **Initialiser les données partagées :** Préparer les données partagées pour les tests.
 * **FTP Connection Tests:**
-  * **Add New Connection:** Add a new FTP import connection with the provided credentials and server details.
-  * **Deactivate Connection:** Deactivate the newly added FTP import connection.
-  * **Test Connection:** Test if the FTP import connection can successfully connect to the FTP server.
-  * **Check Connection in List:** Verify that the new FTP import connection is present in the list of connections.
-  * **Check Connection Deactivated:** Confirm that the FTP import connection is marked as inactive in the list.
-  * **Add Test Folder:** Add a default directory (test folder) to the FTP import connection.
-  * **Reactivate Connection:** Reactivate the previously deactivated FTP import connection.
-  * **Check Connection Reactivated:** Ensure that the FTP import connection is marked as active in the list.
-  * **Cleanup:** Delete the FTP import connection to clean up after the tests.
+  * **Ajouter une nouvelle connexion :** Ajoutez une nouvelle connexion d'importation FTP avec les informations d'identification fournies et les détails du serveur.
+  * **Désactiver la connexion :** Désactivez la connexion d'importation FTP nouvellement ajoutée.
+  * **Test de connexion :** Testez si la connexion d'importation FTP peut se connecter avec succès au serveur FTP.
+  * **Vérifier la connexion dans la liste :** Vérifiez que la nouvelle connexion d'importation FTP est présente dans la liste des connexions.
+  * **Vérifier la connexion désactivée :** Confirmez que la connexion d'importation FTP est marquée comme inactive dans la liste.
+  * **Ajouter un dossier de test :** Ajoutez un répertoire par défaut (dossier de test) à la connexion d'importation FTP.
+  * **Réactiver la connexion :** Réactivez la connexion d'importation FTP précédemment désactivée.
+  * **Vérifier la connexion réactivée :** Assurez-vous que la connexion d'importation FTP est marquée comme active dans la liste.
+  * **Cleanup :** Supprimez la connexion d'importation FTP pour nettoyer après les tests.
 
 \
 

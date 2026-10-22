@@ -1,4 +1,4 @@
-# Document Status alert
+# Alerte d’état du document
 
 ## Table `public.document_status_alert`
 
@@ -14,8 +14,8 @@
 * `delay_delta`: integer
 * `delay_delta_type`: internal
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on` : horodatage avec fuseau horaire
+* `last_modified_on` : horodatage avec fuseau horaire
 * `is_deleted`: boolean
 * `name`: internal
 * `is_recursive`: boolean

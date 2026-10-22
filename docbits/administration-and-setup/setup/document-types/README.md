@@ -4,7 +4,7 @@ Document types tell DocBits which kinds of documents your organisation works wit
 
 The page shows **Default Document Types**, which DocBits provides and you cannot delete, followed by **Custom Document Types** created for your organisation. Each type has its own card.
 
-<figure><img src="../../../.gitbook/assets/document-types-overview-en-20260928.png" alt="Document Types page with Invoice and other default document type cards, activation and extraction switches, settings gear, and configuration links"><figcaption><p>Choose a document type card to configure that type.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u025-en.png" alt="Default document types and links to their settings."><figcaption><p>Default document types and links to their settings.</p></figcaption></figure>
 
 ## What you can do on a card
 
@@ -35,4 +35,4 @@ Each field row has controls such as **Required**, **Read Only**, **Hidden**, **F
 
 Scroll to **Custom Document Types** and click **+ New**. Follow [Adding/Editing Document Types](../../settings/global-settings/document-types/adding-editing-document-types.md) to set up the new type.
 
-<figure><img src="../../../.gitbook/assets/document-types-custom-new-en-20260928.png" alt="Bottom of Document Types page showing the Custom Document Types section and New button"><figcaption><p>Use New under Custom Document Types to begin creating a type.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u026-en.png" alt="Unsaved new-document-type form."><figcaption><p>Unsaved new-document-type form.</p></figcaption></figure>

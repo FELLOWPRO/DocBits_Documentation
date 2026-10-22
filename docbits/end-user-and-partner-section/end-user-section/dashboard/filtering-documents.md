@@ -1,5 +1,7 @@
 # Filtering Documents
 
+<figure><img src="../../../.gitbook/assets/prior-i005-en.png" alt="Dashboard filters for assignment and required restart."><figcaption><p>Dashboard filters for assignment and required restart.</p></figcaption></figure>
+
 Use the Dashboard search bar, filter panel, date range, and document type tabs to narrow the document list. The controls work together: a document must match the active search and filters to remain in the table.
 
 ## Find a document by name

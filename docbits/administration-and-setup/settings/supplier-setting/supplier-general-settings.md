@@ -1,6 +1,6 @@
 # Supplier General Settings
 
-<figure><img src="../../../.gitbook/assets/supplier_general_settings.png" alt="Supplier General Settings"><figcaption><p>Supplier General Settings Page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t012-en.png" alt="General supplier-portal settings."><figcaption><p>General supplier-portal settings.</p></figcaption></figure>
 
 ### Overview
 

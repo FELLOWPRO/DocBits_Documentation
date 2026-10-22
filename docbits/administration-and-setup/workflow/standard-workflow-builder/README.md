@@ -97,7 +97,7 @@ Back in Workflow List, I activate the tested rule and check that its switch is o
 
 Open **Workflow Dashboard → Workflow List**, then click **New Workflow** to create a new Standard workflow, or click an existing workflow to edit it.
 
-<figure><img src="../../../.gitbook/assets/workflow_list.png" alt="Workflow List with type, execution order and trigger"><figcaption><p>The Workflow List — each row is a workflow you can open, toggle on/off or edit.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u033-en.png" alt="Workflow list and import actions."><figcaption><p>Workflow list and import actions.</p></figcaption></figure>
 
 ## The When / And / Then model
 

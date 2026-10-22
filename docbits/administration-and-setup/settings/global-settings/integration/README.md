@@ -1,6 +1,6 @@
 # Integration & SSO
 
-<figure><img src="../../../../.gitbook/assets/integration_sso.png" alt="Integration & SSO"><figcaption><p>Integration & SSO Page</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-t010-en.png" alt="Integration and SSO provider configuration."><figcaption><p>Integration and SSO provider configuration.</p></figcaption></figure>
 
 The Integration & SSO page manages API keys for programmatic access, organization IDs, and Single Sign-On (SSO) configuration.
 
@@ -58,8 +58,3 @@ Click **Configure** to save your IdP settings.
 * **Improved user experience:** A well-configured integration ensures a seamless user experience as users do not have to switch between different systems to access relevant information. This improves user satisfaction and contributes to efficiency.
 
 To properly configure the integration settings, it is important to understand the organization's requirements and ensure that the integration is seamlessly integrated into existing workflows and processes. This requires thorough planning, configuration, and monitoring of the integration to ensure that it works smoothly and delivers the desired value.
-
-
-
-
-

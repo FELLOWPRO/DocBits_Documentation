@@ -13,11 +13,11 @@ Because each integration can have its own key, you can switch one off without di
 
 Go to **Settings** and select **Integration & SSO** under **System & Administration**.
 
-<figure><img src="../../../../.gitbook/assets/api-key-settings-overview.png" alt="Settings overview with Integration &#x26; SSO highlighted in the left menu"><figcaption><p>Settings → Integration &#x26; SSO</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-t020-en.png" alt="Access to API-key management."><figcaption><p>Access to API-key management.</p></figcaption></figure>
 
 The **API Key** section at the top of the page lists every key your organization has.
 
-<figure><img src="../../../../.gitbook/assets/api-key-list.png" alt="The API Keys list with the Create API Key button highlighted"><figcaption><p>The API Keys list</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-t017-en.png" alt="API-key list with keys and associated names hidden."><figcaption><p>API-key list with keys and associated names hidden.</p></figcaption></figure>
 
 ## Understanding the list
 
@@ -43,7 +43,7 @@ If you have more keys than fit on one page, use the paging controls at the botto
 1. Click **+ Create API Key** at the top right of the API Keys section.
 2. Fill in the dialog:
 
-<figure><img src="../../../../.gitbook/assets/api-key-create-dialog.png" alt="The Create API Key dialog"><figcaption><p>Creating a new key</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-t018-en.png" alt="Create API key dialog before saving."><figcaption><p>Create API key dialog before saving.</p></figcaption></figure>
 
 | Field | What to enter |
 | --- | --- |

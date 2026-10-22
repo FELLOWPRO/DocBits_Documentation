@@ -1,5 +1,9 @@
 # Export
 
+<figure><img src="../../../../.gitbook/assets/prior-t006-en.png" alt="Unsaved Webhook export configuration."><figcaption><p>Unsaved Webhook export configuration.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/prior-u019-en.png" alt="Unsaved Infor IDM export configuration."><figcaption><p>Unsaved Infor IDM export configuration.</p></figcaption></figure>
+
 ## Overview
 
 The Export page displays all configured export setups, including whether they are active or inactive. From here, users can:
@@ -80,7 +84,7 @@ To create a new export:
 
 <summary>SFTP</summary>
 
-<figure><img src="../../../../.gitbook/assets/export_sftp_configuration.png" alt="Export SFTP Configuration"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-t007-en.png" alt="Unsaved SFTP export configuration."><figcaption><p>Unsaved SFTP export configuration.</p></figcaption></figure>
 
 **Field Descriptions**
 
@@ -108,7 +112,7 @@ To create a new export:
 
 <figure><img src="../../../../.gitbook/assets/export_sftp_2.png" alt="" width="316"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/export_sftp_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u016-en.png" alt="Unsaved advanced SFTP export options."><figcaption><p>Unsaved advanced SFTP export options.</p></figcaption></figure>
 
 </details>
 
@@ -118,7 +122,7 @@ To create a new export:
 
 <summary>Infor Export to SFTP</summary>
 
-<figure><img src="../../../../.gitbook/assets/export_infor_sftp_configuration.png" alt="Export Infor SFTP Configuration"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u017-en.png" alt="Unsaved Infor SFTP export configuration."><figcaption><p>Unsaved Infor SFTP export configuration.</p></figcaption></figure>
 
 **Field Descriptions**
 
@@ -139,7 +143,7 @@ To create a new export:
 
 <summary>SMB</summary>
 
-<figure><img src="../../../../.gitbook/assets/export_smb_configuration.png" alt="Export SMB Configuration"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u018-en.png" alt="Unsaved SMB export configuration."><figcaption><p>Unsaved SMB export configuration.</p></figcaption></figure>
 
 **Field Descriptions**
 
@@ -191,7 +195,7 @@ To create a new export:
 
 <summary>Infor ION</summary>
 
-<figure><img src="../../../../.gitbook/assets/export_infor_ion_configuration.png" alt="Export Infor ION Configuration"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u020-en.png" alt="Unsaved Infor ION export configuration."><figcaption><p>Unsaved Infor ION export configuration.</p></figcaption></figure>
 
 **Field Descriptions**
 
@@ -214,7 +218,7 @@ To create a new export:
 
 <summary>Infor IDM + ION BOD</summary>
 
-<figure><img src="../../../../.gitbook/assets/export_infor_idm_ion_bod_configuration.png" alt="Export Infor IDM + ION BOD Configuration"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u021-en.png" alt="Unsaved Infor IDM ION BOD export configuration."><figcaption><p>Unsaved Infor IDM ION BOD export configuration.</p></figcaption></figure>
 
 **Field Descriptions**
 
@@ -240,7 +244,7 @@ To create a new export:
 
 <summary>Infor IDM + LN</summary>
 
-<figure><img src="../../../../.gitbook/assets/export_infor_idm_ln_configuration.png" alt="Export Infor IDM + LN Configuration"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u022-en.png" alt="Unsaved Infor IDM LN export configuration."><figcaption><p>Unsaved Infor IDM LN export configuration.</p></figcaption></figure>
 
 **Field Descriptions**
 
@@ -261,7 +265,7 @@ To create a new export:
 
 <summary>Infor IDM + M3</summary>
 
-<figure><img src="../../../../.gitbook/assets/export_infor_idm_m3_configuration.png" alt="Export Infor IDM + M3 Configuration"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u023-en.png" alt="Unsaved Infor IDM M3 export configuration."><figcaption><p>Unsaved Infor IDM M3 export configuration.</p></figcaption></figure>
 
 **Field Descriptions**
 
@@ -282,7 +286,7 @@ To create a new export:
 
 <summary>Infor IDM + M3 (toml)</summary>
 
-<figure><img src="../../../../.gitbook/assets/export_infor_idm_m3_toml_configuration.png" alt="Export Infor IDM + M3 (toml) Configuration"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u024-en.png" alt="Unsaved Infor IDM M3 export configuration with TOML."><figcaption><p>Unsaved Infor IDM M3 export configuration with TOML.</p></figcaption></figure>
 
 **Field Descriptions**
 

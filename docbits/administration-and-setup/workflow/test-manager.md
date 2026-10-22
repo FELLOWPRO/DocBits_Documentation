@@ -16,7 +16,7 @@ A test scenario captures a workflow, a sample input and the **expected outcome**
 * **Run All Tests** — run every scenario at once and see, at a glance, which workflows still pass.
 * **View Details** — open a scenario to inspect its result.
 
-<figure><img src="../../.gitbook/assets/workflow_test_manager_detail.png" alt="Workflow test scenario details with status, run time and data"><figcaption><p>Scenario details — name, status, run time, and the actual vs. extracted data the run produced.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-u027-en.png" alt="Test-scenario details with data hidden."><figcaption><p>Test-scenario details with data hidden.</p></figcaption></figure>
 
 The details view shows the scenario name and **status**, the **workflow name**, the **run time**, and the **actual** and **extracted data** the run produced — so you can see exactly why a scenario passed or failed.
 

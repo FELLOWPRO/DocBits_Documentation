@@ -7,8 +7,7 @@ To configure your settings, click on the User Icon located in the bottom-left co
 
 <figure><img src="../../.gitbook/assets/User-Config.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/user_settings_menu_dropdown.png" alt="User Settings Menu Dropdown" width="308"><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/prior-u031-en.png" alt="User menu and language selection."><figcaption><p>User menu and language selection.</p></figcaption></figure>
 
 
 **Language**

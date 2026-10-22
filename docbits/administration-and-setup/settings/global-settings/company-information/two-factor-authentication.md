@@ -14,7 +14,7 @@ This setting lives in **Settings → Global Settings → Company Information →
 2. Open the **Two-factor authentication** section.
 3. Turn on **Require two-factor authentication for all members** and click **Save**.
 
-<figure><img src="../../../../.gitbook/assets/mfa-admin-requirement.png" alt="The organisation MFA requirement toggle and adoption report"><figcaption><p>Turn on the requirement for all members, and monitor adoption below.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-t001-en.png" alt="Organization requirement for two-factor authentication."><figcaption><p>Organization requirement for two-factor authentication.</p></figcaption></figure>
 
 Once saved, the change takes effect within a minute. From then on:
 

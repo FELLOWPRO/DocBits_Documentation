@@ -11,7 +11,7 @@
 
 * When enabled, the system **automatically populates the tax code field** in the **Validation Screen**, provided that a **tax code field** is set up.
 
-<figure><img src="../../../../.gitbook/assets/auto_extract_tax_code_2.png" alt=""><figcaption></figcaption></figure>
+
 
 * The logic used to determine the tax code is outlined in the table below.
 

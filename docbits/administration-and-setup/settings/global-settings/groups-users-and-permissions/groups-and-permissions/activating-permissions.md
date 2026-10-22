@@ -1,5 +1,13 @@
 # Activating Permissions
 
+<figure><img src="../../../../../.gitbook/assets/prior-u004-en.png" alt="Permission matrix by document type and action."><figcaption><p>Permission matrix by document type and action.</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/prior-u007-en.png" alt="Select a group to inspect its permissions."><figcaption><p>Select a group to inspect its permissions.</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/prior-u008-en.png" alt="Action-specific access levels in the permission matrix."><figcaption><p>Action-specific access levels in the permission matrix.</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/prior-u009-en.png" alt="Option to enable group and permission management."><figcaption><p>Option to enable group and permission management.</p></figcaption></figure>
+
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
 DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
 {% endembed %}

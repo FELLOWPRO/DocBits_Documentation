@@ -1,27 +1,20 @@
 # Fields
 
+Fields define the data collected for a document type and how it is checked. Open the document type in settings, then its fields.
+
 <figure><img src="../../../../../.gitbook/assets/s150-docbits_fields_overview.png" alt="English invoice document-type field overview."><figcaption><p>English invoice document-type field overview.</p></figcaption></figure>
 
-## Overview
+## Properties and recognition
 
-The Fields setting provides a user interface where administrators can manage the properties and behavior of individual data fields associated with a document type. Each field can be adjusted to optimize the accuracy and efficiency of data capture and validation.
+* **Required** requires a value for validation.
+* **Read Only** prevents editing; **Hidden** removes the field from the normal view.
+* **Force Validation** requires an explicit check of the field. It does not create a comparison rule or regular expression; configure custom validation rules separately.
+* **OCR** sets a numeric recognition-confidence threshold. It is not an on/off switch for OCR.
+* **Match Score** sets a numeric matching threshold. It is neither reference text nor a list of values.
+* The **AI** option controls the extraction requested for the field.
 
-{% hint style="info" %}
-[Fields with Charges](new-fields-with-charges.md)
-{% endhint %}
+Search for a field by name and check its row before changing properties. You can organize groups, add fields, and open formula or master-data options. Available actions depend on the field and your permissions; standard fields may have deletion restrictions.
 
-## Key Features and Options
+Save only intended changes and test validation with representative documents. The images do not demonstrate saved changes.
 
-1. **Fields Configuration**:
-   * **Field Names**: Lists the names of the fields, typically corresponding to the data elements within the document, like "Invoice Number" or "Purchase Order Date".
-   * **Required**: Administrators can mark fields as required, making sure that data must be entered or captured for these fields to complete the document processing.
-   * **Read Only**: Fields can be set to read-only to prevent modification after data capture or during certain stages of document processing.
-   * **Hidden**: Fields can be hidden from view in the user interface, useful for sensitive information or for simplifying user workflows.
-2. **Advanced Settings**:
-   * **Force Validation**: Ensures that data entered into a field passes certain validation rules before being accepted.
-   * **OCR (Optical Character Recognition)**: This toggle can be switched on to enable OCR processing for a specific field, useful for automated data extraction from scanned or digital documents.
-   * **Match Score**: Administrators can define a match score, a threshold used to determine the confidence level of data recognition or matching, impacting how data validation and quality checks are performed.
-3. **Action Buttons**:
-   * **Create New Field**: Allows adding new fields to the document type.
-   * **Edit Icons**: Each field has an edit icon that allows administrators to further configure field-specific settings, such as data type, default values, or connected business logic.
-   * **Save Settings**: Commits the changes made to the field configuration
+See [Field properties](configuring-field-properties-1.md), [Validation and Match Score](setting-validation-and-match-score.md), and [Fields with additional charges](new-fields-with-charges.md).

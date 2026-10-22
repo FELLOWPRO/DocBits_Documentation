@@ -1,6 +1,6 @@
 # Modifying User Details
 
-<figure><img src="../../../../../.gitbook/assets/user_settings_menu_overview.png" alt="User Settings Menu Overview"><figcaption><p>User Settings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u001-en.png" alt="User management with personal data hidden."><figcaption><p>User management with personal data hidden.</p></figcaption></figure>
 
 * **Logging in as an administrator:** Log in with your administrator privileges.
 * **Accessing user management:** Navigate to user settings where you can edit existing users.
@@ -15,8 +15,7 @@
     * User role or permission level
 
 
-
-    <figure><img src="../../../../../.gitbook/assets/user_edit_details_form.png" alt="User Edit Details Form" width="300"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/prior-u002-en.png" alt="Edit user form with field values hidden."><figcaption><p>Edit user form with field values hidden.</p></figcaption></figure>
 * **Saving Changes:** Review any changes you made and click Save to save the new user details.
 
 <figure><img src="../../../../../.gitbook/assets/user_save_changes_button.png" alt="User Save Changes Button"><figcaption></figcaption></figure>
@@ -25,7 +24,6 @@
 * **Send notification (optional):** You can send a notification to the user to inform them of the changes made.
 
 After completing these steps, the user details are successfully updated and the user has the new information and permissions according to the changes made.
-
 
 
 ## Removing Users:

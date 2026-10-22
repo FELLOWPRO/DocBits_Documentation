@@ -18,7 +18,7 @@ Anything outside these fields is ignored. There is no content-level search and n
 
 Activating Fulltext Search unlocks search across every extracted field on a document and replaces the dashboard search bar with a richer query language. Queries can combine field filters, range comparisons, logical operators, relative dates, and smart-filter shortcuts.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-dashboard-query.png" alt="Dashboard search bar showing a range query and the resulting filtered document list"><figcaption><p>The dashboard search bar accepts the extended query language. Type a query and press <kbd>Enter</kbd> to filter the document list.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u049-en.png" alt="Entering an amount query on the dashboard."><figcaption><p>Entering an amount query on the dashboard.</p></figcaption></figure>
 
 ### Field-scoped queries
 
@@ -101,7 +101,7 @@ ai: invoices from Ruiz over 1000 last quarter
 
 AI search and Vector search are not interchangeable: Vector matches similar content, AI translates language into filters. AI search has no separate switch — it routes through the existing Fulltext and Vector indexes.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-settings-page.png" alt="Fulltext Search Settings page showing the Documents, Vector Index and Fulltext (text) sub-indexes"><figcaption><p>Fulltext Search Settings. The Vector Index has its own toggle; the Fulltext text index runs whenever the module is on.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u048-en.png" alt="Full-text indexing settings and information."><figcaption><p>Full-text indexing settings and information.</p></figcaption></figure>
 
 ## Prerequisites
 
@@ -116,7 +116,7 @@ AI search and Vector search are not interchangeable: Vector matches similar cont
 3. Confirm the subscription dialog when it appears.
 4. Wait for the initial reindex to finish before relying on Fulltext queries.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-module-toggle.png" alt="Modules page with the Full text search toggle under the Dashboards group"><figcaption><p>The Full text search toggle lives under <strong>Module → Dashboards &#x26; Analytics</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u050-en.png" alt="Availability of the full-text search module."><figcaption><p>Availability of the full-text search module.</p></figcaption></figure>
 
 {% hint style="info" %}
 Pricing for the Fulltext Search module is handled through your DocBits sales contact. The subscription confirmation appears the first time the module is activated.

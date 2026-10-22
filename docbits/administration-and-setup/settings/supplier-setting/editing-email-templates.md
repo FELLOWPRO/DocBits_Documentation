@@ -1,6 +1,6 @@
 # Editing Email Templates
 
-<figure><img src="../../../.gitbook/assets/supplier_email_templates.png" alt="Supplier Email Templates"><figcaption><p>Supplier Email Templates Page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t013-en.png" alt="Supplier email-template list."><figcaption><p>Supplier email-template list.</p></figcaption></figure>
 
 ### Overview
 

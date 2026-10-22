@@ -18,7 +18,7 @@ When you turn on your first factor, DocBits also gives you **ten backup codes** 
 
 Open your **profile / account settings** (top-right account menu → **Edit profile**) and select **Two-factor authentication**. The 2FA dialog shows your current status and the methods you can add.
 
-<figure><img src="../.gitbook/assets/mfa-2fa-dialog.png" alt="The Two-factor authentication dialog"><figcaption><p>The Two-factor authentication dialog. From here you can enable an authenticator app, email verification, add a passkey, or open <strong>Manage</strong>.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/prior-u047-en.png" alt="Available two-factor authentication methods."><figcaption><p>Available two-factor authentication methods.</p></figcaption></figure>
 
 ## Set up an authenticator app (TOTP)
 

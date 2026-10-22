@@ -2,7 +2,7 @@
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/en.mp4" %}
 
-<figure><img src="../../../../../.gitbook/assets/users_settings.png" alt="Users Management"><figcaption><p>Users Management Page</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u046-en.png" alt="User list with names and accounts hidden."><figcaption><p>User list with names and accounts hidden.</p></figcaption></figure>
 
 The Users page allows administrators to manage all user accounts in your DocBits organization. Here you can add new users, assign roles, and control access.
 

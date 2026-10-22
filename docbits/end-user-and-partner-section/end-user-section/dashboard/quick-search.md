@@ -90,7 +90,7 @@ Invoice.xml   iNVoice.xml   iNvoiCE.edi   …
 It does **not** match `XYZ_Invoice.pdf` (there "invoice" is in the middle — use
 `:` for that).
 
-<figure><img src="../../../.gitbook/assets/quick_search_02_filename_starts.png" alt="filename=invoice matches only names that start with invoice, any case"><figcaption><p><code>filename=invoice</code> — only names that <strong>start with</strong> "invoice", any capitalisation (<code>Invoice.pdf</code>, <code>iNVoice.pdf</code>, <code>INVOICE_2026.pdf</code> … all match). Compare with <code>:</code> below.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u028-en.png" alt="Entering a document-filename query."><figcaption><p>Entering a document-filename query.</p></figcaption></figure>
 
 #### `:` → contains (anywhere)
 
@@ -243,7 +243,7 @@ is just a shortcut for a query you could also type yourself:
 The three **PO match** filters and the fulltext fields require fulltext search
 to be enabled for your organisation.
 
-<figure><img src="../../../.gitbook/assets/quick_search_11_smart_filters.png" alt="The Smart Filters dropdown panel"><figcaption><p>The Smart Filters at the top of the Quick Search dropdown — one click applies the filter (Overdue, Due soon, Assigned to me, Today's inbox, Pending validation, Electronic documents, Full / Partial / Under PO match).</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u030-en.png" alt="Quick-search query and filter help."><figcaption><p>Quick-search query and filter help.</p></figcaption></figure>
 
 ---
 
@@ -261,7 +261,7 @@ The list then shows collapsible **group headers**, each with the group's name an
 a **count** (e.g. *Sample Supplier (12)*). Click a header to expand or collapse that
 group. For date fields you can group by **day, week or month**.
 
-<figure><img src="../../../.gitbook/assets/quick_search_16_grouping.png" alt="Results grouped by supplier with collapsible headers"><figcaption><p><code>group by supplier_name</code> — results collapse into one expandable header per supplier.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u029-en.png" alt="Entering a query grouped by supplier."><figcaption><p>Entering a query grouped by supplier.</p></figcaption></figure>
 
 Grouping combines with any filter — `status=ready_for_validation group by
 supplier_name` groups only the matching documents. Clicking into a group

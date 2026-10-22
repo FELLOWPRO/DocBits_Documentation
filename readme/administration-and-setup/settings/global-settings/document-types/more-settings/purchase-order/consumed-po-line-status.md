@@ -4,7 +4,7 @@
 
 ## Activar la configuración
 
-1. Abra **Configuración → Tipos de documento**. Localice el tipo de documento utilizado para sus facturas y seleccione el engranaje de su tarjeta para abrir **More Settings**. La captura muestra la tarjeta **Factura**. Deje los interruptores **Activar** y **Extracción** como están.
+1. Abra **Configuración → Tipos de documento**. Localice el tipo de documento utilizado para sus facturas y seleccione el engranaje de su tarjeta para abrir **Más ajustes**. La captura muestra la tarjeta **Factura**. Deje los interruptores **Activar** y **Extracción** como están.
 
    <figure><img src="../../../../../../.gitbook/assets/prior-u044-es.png" alt="Acceso a los ajustes adicionales del tipo de documento Factura."><figcaption><p>Acceso a los ajustes adicionales del tipo de documento Factura.</p></figcaption></figure>
 

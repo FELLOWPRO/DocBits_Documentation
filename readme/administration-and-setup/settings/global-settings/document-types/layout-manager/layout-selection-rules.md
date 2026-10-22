@@ -1,8 +1,8 @@
-# Layout Selection Rules
+# Reglas de selección de diseño
 
 ## Descripción general
 
-Un **layout** (diseño) decide qué campos y grupos ve un usuario, y en qué orden, en las pantallas de **validación**, **aprobación**, **rechazo** y **revisión** de un documento. Los diseños se crean en el [Layout Manager](README.md).
+Un **Disposición** (diseño) decide qué campos y grupos ve un usuario, y en qué orden, en las pantallas de **validación**, **aprobación**, **rechazo** y **revisión** de un documento. Los diseños se crean en el [Layout Manager](README.md).
 
 Tradicionalmente, DocBits elegía el diseño según el **origen** del documento: el país o la región tomados de los ajustes de idioma del documento, como `DE` o `US`. Cada origen tenía su propia copia del diseño y nada más podía influir en la elección.
 
@@ -26,7 +26,7 @@ El origen sigue estando disponible, como una condición más entre muchas. Una r
 
 Los diseños basados en reglas los activa **por tipo de documento** un **administrador de la organización**.
 
-1. Vaya a **Settings → Global Settings → Document Types**.
+1. Vaya a **Ajustes → Ajustes generales → Tipos de documento**.
 2. Haga clic en el icono de **ajustes** (engranaje) de la tarjeta del tipo de documento.
 3. Abra **Gestionar diseños** y active el interruptor.
 
@@ -114,7 +114,7 @@ La insignia de **origen** indica de dónde procede una regla: las reglas **Siste
 
 ### El diseño predeterminado
 
-La última fila, marcada como **RETROCEDER** e **es_predeterminado**, es el diseño predeterminado: se utiliza siempre que ninguna regla anterior coincide y no tiene condición. Se crea al activar la función (a partir del diseño del origen DEFAULT).
+La última fila, marcada como **RETROCEDER** e **is_default**, es el diseño predeterminado: se utiliza siempre que ninguna regla anterior coincide y no tiene condición. Se crea al activar la función (a partir del diseño del origen DEFAULT).
 
 {% hint style="info" %}
 Para usar otro diseño de reserva, cree una regla **sin ninguna condición** y asígnele el número de prioridad más alto, de modo que se compruebe en último lugar. Coincide con todos los documentos con los que no coincidió ninguna regla anterior, antes de llegar al diseño predeterminado.
@@ -160,10 +160,10 @@ El panel de la derecha muestra lo que hace la regla para un documento de muestra
 | Línea | Significado |
 | --- | --- |
 | **Documento de muestra** | Los valores utilizados para la vista previa, tomados de sus condiciones |
-| **emparejado_por** | `rule` si coincidió una regla; en caso contrario, el predeterminado |
+| **matched_by** | `rule` si coincidió una regla; en caso contrario, el predeterminado |
 | **Diseño resuelto** | El diseño que recibiría el documento de muestra |
 | **Golpe de prioridad** | La prioridad de la regla que coincidió |
-| **campos observados** | Los campos de los que depende la elección del diseño. Cuando un usuario cambia uno de ellos, el diseño se vuelve a elegir. |
+| **watched_fields** | Los campos de los que depende la elección del diseño. Cuando un usuario cambia uno de ellos, el diseño se vuelve a elegir. |
 
 Haga clic en **Crear regla** (o **Regla de guardado** al editar) para guardar. **Cancelar** vuelve a la lista de reglas.
 
@@ -175,7 +175,7 @@ Pantalla **Validación de campos** · prioridad **5** · *Supplier ID is HP00002
 
 ### Un diseño para varios países
 
-Pantalla **Validación de campos** · prioridad **100** · **ANY of**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · destino *DACH invoice*. Desactive las reglas migradas “Layout for AT” y “Layout for CH” si apuntan a copias más antiguas.
+Pantalla **Validación de campos** · prioridad **100** · **Cualquiera de las condiciones**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · destino *DACH invoice*. Desactive las reglas migradas “Layout for AT” y “Layout for CH” si apuntan a copias más antiguas.
 
 ### Una pantalla más sencilla para facturas electrónicas
 
@@ -210,7 +210,7 @@ Pantalla **Rechazar** · prioridad **10** · *Supplier ID is one of* `10040, 100
 | --- | --- |
 | Un documento recibe el diseño equivocado | Coincide antes una regla anterior. Revise las reglas situadas por encima o el **Golpe de prioridad** de la vista previa. |
 | Se usa el predeterminado aunque una regla debería coincidir | ¿Está la regla **Activo**? ¿La condición coincide con el valor exacto (mayúsculas, espacios)? ¿Está la regla en la pestaña de **pantalla** correcta? |
-| El diseño cambia mientras un usuario trabaja | Se ha cambiado un campo de **campos observados**. Base la regla en un campo más estable. |
+| El diseño cambia mientras un usuario trabaja | Se ha cambiado un campo de **watched_fields**. Base la regla en un campo más estable. |
 | Un diseño no se puede eliminar | Una regla todavía apunta a él. Cambie el destino de esa regla o elimínela primero. |
 | No se muestra ningún diseño | Ninguna regla coincidió, no hay predeterminado y no existe un diseño basado en el origen para esta pantalla. Añada una regla sin condición como regla comodín. |
 | No cambió nada tras la activación | Es lo esperado: la activación reproduce la elección anterior basada en el origen. Añada sus propias reglas. |

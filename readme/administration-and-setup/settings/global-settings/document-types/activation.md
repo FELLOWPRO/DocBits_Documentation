@@ -2,7 +2,7 @@
 
 Los administradores pueden elegir qué tipos de documento están disponibles para su organización. Puede cambiarlo en la página **Tipos de documentos** sin eliminar el tipo ni su configuración.
 
-1. Abra **Settings → Document Types**.
+1. Abra **Ajustes → Tipos de documento**.
 2. Busque el tipo de documento, por ejemplo **Factura**, en **Tipos de documentos predeterminados** o en **Tipos de documentos personalizados**.
 3. Utilice el interruptor denominado **Activar** en la tarjeta de ese tipo. Un interruptor de color significa que el tipo está activo; un interruptor gris significa que está inactivo. Espere al mensaje de confirmación antes de salir de la página. Este interruptor no tiene un botón Save independiente.
 

@@ -1,4 +1,4 @@
-# Transformation Rules
+# Reglas de transformación
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/es.mp4" %}
 
@@ -34,7 +34,7 @@ Las reglas de transformación sustituyen a la mayoría de los pequeños scripts 
 
 Las reglas de transformación las activa **por tipo de documento** un **administrador de la organización**.
 
-1. Vaya a **Settings → Global Settings → Document Types**.
+1. Vaya a **Ajustes → Ajustes generales → Tipos de documento**.
 2. Haga clic en el icono de **ajustes** (engranaje) de la tarjeta del tipo de documento.
 3. Abra **Reglas de transformación** y active el interruptor. Haga clic en **Gestionar las reglas de transformación** para abrir la lista.
 
@@ -113,7 +113,7 @@ Las reglas de **Filas de la tabla** usan dos pasos distintos, que trabajan sobre
 | Paso | Efecto |
 | --- | --- |
 | **Borrar todas las filas** | elimina todas las filas extraídas. Las filas añadidas por un paso posterior se conservan. |
-| **Add a row** | añade una fila **después de la última fila** o **antes de la primera fila**. Para cada columna, elija **Valor** (un valor fijo) o **Campo** (el valor de un campo de encabezado). Las columnas que omita permanecen vacías. |
+| **Añadir una fila** | añade una fila **después de la última fila** o **antes de la primera fila**. Para cada columna, elija **Valor** (un valor fijo) o **Campo** (el valor de un campo de encabezado). Las columnas que omita permanecen vacías. |
 
 {% hint style="info" %}
 **Fecha de reformateo** espera la fecha tal como DocBits la almacena internamente (`YYYY-MM-DD`). Aplíquelo al propio campo, no a un texto que ya contenga una fecha con formato.
@@ -148,7 +148,7 @@ Filas de la tabla **INVOICE_TABLE** · solo cuando *Supplier ID is HP0000278* ·
 
 <figure><img src="../../../../.gitbook/assets/s150-transformation-add-row-columns-es.png" alt="Paso de transformación sin guardar para añadir una fila."><figcaption><p>Paso de transformación sin guardar para añadir una fila.</p></figcaption></figure>
 
-El orden importa: **Borrar todas las filas** debe ir **antes** de **Add a row**. El constructor le avisa si no es así ("Clear all rows runs after Add a row …") y también le avisa si un paso **Add a row** no va precedido de **Borrar todas las filas**, porque entonces la regla añadiría otra copia de la fila en cada guardado. Combine esta regla con una regla de PO matching por total que esté activa para documentos de una sola línea.
+El orden importa: **Borrar todas las filas** debe ir **antes** de **Añadir una fila**. El constructor le avisa si no es así ("Clear all rows runs after Add a row …") y también le avisa si un paso **Añadir una fila** no va precedido de **Borrar todas las filas**, porque entonces la regla añadiría otra copia de la fila en cada guardado. Combine esta regla con una regla de PO matching por total que esté activa para documentos de una sola línea.
 
 ### Rellenar la orden de compra a partir del campo del número de factura
 
@@ -204,7 +204,7 @@ La mayoría de los pasos dan el mismo resultado cuando se ejecutan sobre su prop
 **Toma una rebanada**, **Extracto** y **Buscar y reemplazar** son distintos: si se ejecutan de nuevo sobre su propio resultado, siguen cambiándolo (un fragmento toma los cuatro primeros caracteres de los cuatro primeros caracteres …). Por eso DocBits no le permite guardar una regla que aplique estos pasos a su propio campo de destino. Haga una de estas dos cosas:
 
 * active **Ejecutar solo una vez por documento**, o
-* **Read from another field**, de modo que la entrada permanezca sin cambios.
+* **Leer desde otro campo**, de modo que la entrada permanezca sin cambios.
 
 ## Reglas de transformación y PO matching
 
@@ -225,7 +225,7 @@ Las reglas de tabla y de columna cambian lo que ve el conciliador de órdenes de
 
 ## Logs
 
-Con **Ejecución de registro** activado, cada aplicación de la regla se escribe en **Document Types → (tipo de documento) → Logs**, con el resultado (applied, no change, skipped), el documento y, para las reglas omitidas, el rastro de condiciones que explica el motivo. Consulte [Leer el rastro de condiciones](rule-conditions-applies-when.md#leer-el-rastro-de-condiciones-en-los-registros).
+Con **Ejecución de registro** activado, cada aplicación de la regla se escribe en **Tipos de documento → (tipo de documento) → Registros**, con el resultado (applied, no change, skipped), el documento y, para las reglas omitidas, el rastro de condiciones que explica el motivo. Consulte [Leer el rastro de condiciones](rule-conditions-applies-when.md#leer-el-rastro-de-condiciones-en-los-registros).
 
 ## Buenas prácticas
 
@@ -242,7 +242,7 @@ Con **Ejecución de registro** activado, cada aplicación de la regla se escribe
 | --- | --- |
 | La regla no cambió nada | ¿Está activa y está habilitada la función para el tipo de documento? ¿Se cumple la condición para este documento (valor exacto, incluidos espacios y mayúsculas/minúsculas)? ¿Se ha aplicado ya al documento una regla de **ejecución única**? Revise el rastro del registro. |
 | El valor cambia de nuevo en cada guardado | La pipeline contiene Take a slice, Extract o Find & replace. Active **Ejecutar solo una vez por documento**, o lea de otro campo. |
-| Una tabla obtiene una fila más en cada guardado | Un paso **Add a row** sin **Borrar todas las filas** antes. Añada primero el paso de borrado, o active la ejecución única. |
+| Una tabla obtiene una fila más en cada guardado | Un paso **Añadir una fila** sin **Borrar todas las filas** antes. Añada primero el paso de borrado, o active la ejecución única. |
 | La conciliación de la orden de compra se pierde tras guardar | Una regla de tabla sustituyó las líneas conciliadas. El motivo en el documento nombra la regla; haga que la regla reproduzca las mismas líneas o configúrela para ejecutarse una sola vez. |
 | Una regla de conciliación nunca se ejecuta tras la transformación | La regla cambió el número de líneas; ajuste la condición de activación de la regla de conciliación. |
 | La regla necesita un valor de los datos maestros del proveedor, pero sigue vacío | Active **Run after lookup population (before PO match)**. |

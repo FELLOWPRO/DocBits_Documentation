@@ -1,8 +1,8 @@
-# Test Manager
+# Gestión de pruebas
 
-El **Test Manager** te permite guardar **escenarios de prueba** reutilizables para tus flujos de trabajo y ejecutarlos en conjunto, de modo que puedas confirmar que un flujo de trabajo sigue comportándose correctamente después de modificarlo. Funciona tanto para flujos de trabajo Estándar como Avanzados.
+El **Gestión de pruebas** te permite guardar **escenarios de prueba** reutilizables para tus flujos de trabajo y ejecutarlos en conjunto, de modo que puedas confirmar que un flujo de trabajo sigue comportándose correctamente después de modificarlo. Funciona tanto para flujos de trabajo Estándar como Avanzados.
 
-Ábrelo desde **Workflow Dashboard → Test Manager List**.
+Ábrelo desde **Panel de flujos de trabajo → Lista de pruebas**.
 
 <figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Lista del Test Manager con escenarios de prueba, estado y Run All Tests"><figcaption><p>La Test Manager List: cada escenario guardado muestra un resultado de aprobado/fallido.</p></figcaption></figure>
 
@@ -24,5 +24,5 @@ La vista de detalles muestra el nombre del escenario y su **estado**, el **nombr
 
 Son dos cosas diferentes:
 
-- **Test Manager** (esta página) — escenarios *guardados y repetibles* con resultados esperados, ejecutados en conjunto con **Ejecutar todas las pruebas**. Úsalo para pruebas de regresión tras realizar cambios.
+- **Gestión de pruebas** (esta página) — escenarios *guardados y repetibles* con resultados esperados, ejecutados en conjunto con **Ejecutar todas las pruebas**. Úsalo para pruebas de regresión tras realizar cambios.
 - **Pruebas en el editor** — los controles integrados **Validar** y **Prueba** dentro del editor de flujos de trabajo Avanzados, para comprobaciones rápidas mientras construyes. Consulta [Validación y pruebas](advanced-workflow/validation-and-testing.md).

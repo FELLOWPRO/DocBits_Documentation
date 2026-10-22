@@ -1,4 +1,4 @@
-# Groups and Permissions
+# Grupos y permisos
 
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
 DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace

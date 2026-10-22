@@ -1,4 +1,4 @@
-# Rule Management
+# Gestion des règles
 
 <figure><img src="../../../../.gitbook/assets/s150-rule_management-fr.png" alt="Gestion des règles avec les noms configurés masqués."><figcaption><p>Gestion des règles avec les noms configurés masqués.</p></figcaption></figure>
 

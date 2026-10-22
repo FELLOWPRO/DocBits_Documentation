@@ -27,9 +27,9 @@ The manifest records source equivalents and retired alias references. Live deliv
 | S017 | [Affectation par code-barres](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/module/barcode-assignment.md) | Native UI image |
 | S018 | [Affectation par code-barres](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/module/barcode-assignment.md) | Native UI image |
 | S019 | [Recherche plein texte](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/module/fulltext-search.md) | Updated explanatory text |
-| S020 | [Rule Management](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/rule-manager/README.md) | Native UI image |
-| S021 | [Rule Management](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/rule-manager/README.md) | Native UI image |
-| S022 | [Rule Management](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/rule-manager/README.md) | Native UI image |
+| S020 | [Gestion des règles](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/rule-manager/README.md) | Native UI image |
+| S021 | [Gestion des règles](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/rule-manager/README.md) | Native UI image |
+| S022 | [Gestion des règles](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/rule-manager/README.md) | Native UI image |
 | S023 | [Dupliquer une règle de validation personnalisée](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/document-types/duplicate-a-custom-validation-rule.md) | Native UI image |
 | S024 | [Configuration des propriétés de champ](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md) | Native UI image |
 | S025 | [Configuration des propriétés de champ](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md) | Native UI image |
@@ -53,8 +53,8 @@ The manifest records source equivalents and retired alias references. Live deliv
 | S043 | [Règles de transformation](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/document-types/transformation-rules.md) | Native UI image |
 | S044 | [Règles de transformation](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/document-types/transformation-rules.md) | Native UI image |
 | S045 | [Comment créer une sous-organisation](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations/how-to-create-a-sub-organization.md) | Native UI image |
-| S046 | [API Key Management](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/integration/api-key-management.md) | Updated explanatory text |
-| S047 | [API Key Management](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/integration/api-key-management.md) | Native UI image |
+| S046 | [Gestion des clés API](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/integration/api-key-management.md) | Updated explanatory text |
+| S047 | [Gestion des clés API](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/integration/api-key-management.md) | Native UI image |
 | S048 | [Infrastructure](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/infrastructure.md) | Native UI image |
 | S049 | [Modification des modèles d'e-mails](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/supplier-setting/editing-email-templates.md) | Native UI image |
 | S050 | [Champs d'en-tête de formation](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/setup/document-training/training-header-fields.md) | Native UI image |
@@ -68,9 +68,9 @@ The manifest records source equivalents and retired alias references. Live deliv
 | S058 | [Définir les tableaux et les colonnes](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md) | Native UI image |
 | S059 | [Définir les tableaux et les colonnes](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md) | Native UI image |
 | S060 | [Types de Document](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/setup/document-types/README.md) | Native UI image |
-| S061 | [Origin Layouts](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/setup/document-types/origin-layouts.md) | Native UI image |
-| S062 | [Origin Layouts](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/setup/document-types/origin-layouts.md) | Native UI image |
-| S063 | [Origin Layouts](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/setup/document-types/origin-layouts.md) | Native UI image |
+| S061 | [Mises en page par origine](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/setup/document-types/origin-layouts.md) | Native UI image |
+| S062 | [Mises en page par origine](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/setup/document-types/origin-layouts.md) | Native UI image |
+| S063 | [Mises en page par origine](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/setup/document-types/origin-layouts.md) | Native UI image |
 | S064 | [Card SDK](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/workflow/card-sdk.md) | Native UI image |
 | S065 | [Attribution et statut — Exemples pratiques](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/workflow/workflow-documentation.md) | Native UI image |
 | S066 | [Attribution et statut — Exemples pratiques](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/workflow/workflow-documentation.md) | Native UI image |
@@ -111,9 +111,9 @@ The manifest records source equivalents and retired alias references. Live deliv
 | S101 | [Configurer les propriétés d’un champ](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/document-types/layout-manager/configuring-field-properties.md) | Native UI image |
 | S102 | [Utiliser l’aperçu d’un modèle](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/document-types/layout-manager/using-the-template-preview.md) | Native UI image |
 | S103 | [Règles de validation personnalisées](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) | Native UI image |
-| S104 | [List Of Values](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/list-of-values.md) | Native UI image |
-| S105 | [Import](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/import/README.md) | Native UI image |
-| S106 | [Import](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/import/README.md) | Native UI image |
+| S104 | [Listes de valeurs](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/list-of-values.md) | Native UI image |
+| S105 | [Importation](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/import/README.md) | Native UI image |
+| S106 | [Importation](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/import/README.md) | Native UI image |
 | S107 | [Recherche rapide](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md) | Native UI image |
 | S108 | [Recherche rapide](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md) | Native UI image |
 | S109 | [Recherche rapide](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md) | Native UI image |
@@ -156,7 +156,7 @@ The manifest records source equivalents and retired alias references. Live deliv
 | S146 | [Créer des champs avec des frais supplémentaires](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/document-types/fields/new-fields-with-charges.md) | Native UI image |
 | S147 | [Créer des champs avec des frais supplémentaires](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/document-types/fields/new-fields-with-charges.md) | Native UI image |
 | S148 | [Extraire automatiquement le code fiscal](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/classification-and-extraction/auto-extract-tax-code.md) | Native UI image |
-| S149 | [Fields](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/document-types/fields/README.md) | Native UI image |
+| S149 | [Champs](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/document-types/fields/README.md) | Native UI image |
 | S150 | [Entraînement du modèle](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/document-types/model-training/README.md) | Native UI image |
 | T001 | [Authentification à deux facteurs (Admin)](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/company-information/two-factor-authentication.md) | Native UI image |
 | T002 | [Ajout/modification de groupes](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/adding-editing-groups.md) | Native UI image |
@@ -165,19 +165,19 @@ The manifest records source equivalents and retired alias references. Live deliv
 | T005 | [Infrastructure](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/infrastructure.md) | Native UI image |
 | T006 | [Exportation](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/export.md) | Native UI image |
 | T007 | [Exportation](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/export.md) | Native UI image |
-| T008 | [Groups, Users and Permissions](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/README.md) | Native UI image |
+| T008 | [Groupes, utilisateurs et autorisations](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/README.md) | Native UI image |
 | T009 | [Groupes et autorisations](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/README.md) | Native UI image |
-| T010 | [Integration & SSO](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/integration/README.md) | Native UI image |
-| T011 | [Activity Logging](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/log-settings/README.md) | Native UI image |
-| T012 | [Supplier General Settings](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/supplier-setting/supplier-general-settings.md) | Native UI image |
+| T010 | [Intégration et SSO](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/integration/README.md) | Native UI image |
+| T011 | [Journal d’activité](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/log-settings/README.md) | Native UI image |
+| T012 | [Paramètres généraux des fournisseurs](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/supplier-setting/supplier-general-settings.md) | Native UI image |
 | T013 | [Modification des modèles d'e-mails](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/supplier-setting/editing-email-templates.md) | Native UI image |
 | T014 | [Configuration d'export pour le portail fournisseur](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md) | Native UI image |
 | T015 | [Autorisations fournisseur](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/supplier-setting/supplier-permissions.md) | Native UI image |
 | T016 | [Autorisations fournisseur](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/supplier-setting/supplier-permissions.md) | Native UI image |
-| T017 | [API Key Management](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/integration/api-key-management.md) | Native UI image |
-| T018 | [API Key Management](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/integration/api-key-management.md) | Native UI image |
+| T017 | [Gestion des clés API](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/integration/api-key-management.md) | Native UI image |
+| T018 | [Gestion des clés API](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/integration/api-key-management.md) | Native UI image |
 | T019 | [Activer ou désactiver un type de document](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/document-types/activation.md) | Native UI image |
-| T020 | [API Key Management](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/integration/api-key-management.md) | Native UI image |
+| T020 | [Gestion des clés API](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/integration/api-key-management.md) | Native UI image |
 | U001 | [Modification des détails de l'utilisateur](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/users/modifying-user-details.md) | Native UI image |
 | U002 | [Modification des détails de l'utilisateur](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/users/modifying-user-details.md) | Native UI image |
 | U003 | [Statistiques de connexion](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/users/login-analytics.md) | Native UI image |
@@ -204,14 +204,14 @@ The manifest records source equivalents and retired alias references. Live deliv
 | U024 | [Exportation](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/export.md) | Native UI image |
 | U025 | [Types de Document](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/setup/document-types/README.md) | Native UI image |
 | U026 | [Types de Document](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/setup/document-types/README.md) | Native UI image |
-| U027 | [Test Manager](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/workflow/test-manager.md) | Native UI image |
+| U027 | [Gestion des tests](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/workflow/test-manager.md) | Native UI image |
 | U028 | [Recherche rapide](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md) | Native UI image |
 | U029 | [Recherche rapide](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md) | Native UI image |
 | U030 | [Recherche rapide](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md) | Native UI image |
 | U031 | [Options de Configuration de l'Utilisateur](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/end-user-and-partner-section/end-user-section/user-configuration-options.md) | Native UI image |
-| U032 | [Dashboard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/workflow/workflow-dashboard.md) | Native UI image |
-| U033 | [Standard Workflow](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/workflow/standard-workflow-builder.md) | Native UI image |
-| U034 | [Advanced Workflow](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/workflow/advanced-workflow-builder.md) | Native UI image |
+| U032 | [Tableau de bord](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/workflow/workflow-dashboard.md) | Native UI image |
+| U033 | [Flux standard](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/workflow/standard-workflow-builder.md) | Native UI image |
+| U034 | [Flux avancé](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/workflow/advanced-workflow-builder.md) | Native UI image |
 | U035 | [Et](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/workflow/and/README.md) | Native UI image |
 | U036 | [Et](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/workflow/and/README.md) | Native UI image |
 | U037 | [Et](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/workflow/and/README.md) | Native UI image |
@@ -228,8 +228,8 @@ The manifest records source equivalents and retired alias references. Live deliv
 | U048 | [Recherche plein texte](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/module/fulltext-search.md) | Native UI image |
 | U049 | [Recherche plein texte](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/module/fulltext-search.md) | Native UI image |
 | U050 | [Recherche plein texte](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/document-processing/module/fulltext-search.md) | Native UI image |
-| I001 | [Company Information](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/company-information/README.md) | Native UI image |
-| I002 | [Company Information](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/company-information/README.md) | Native UI image |
+| I001 | [Informations sur l’entreprise](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/company-information/README.md) | Native UI image |
+| I002 | [Informations sur l’entreprise](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/company-information/README.md) | Native UI image |
 | I003 | [Préférences de l’entreprise](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/company-information/company-preferences.md) | Native UI image |
 | I004 | [Préférences de l’entreprise](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/administration-and-setup/settings/global-settings/company-information/company-preferences.md) | Native UI image |
 | I005 | [Filtrer les documents](https://github.com/FELLOWPRO/DocBits_Documentation/blob/fr/readme/end-user-and-partner-section/end-user-section/dashboard/filtering-documents.md) | Native UI image |

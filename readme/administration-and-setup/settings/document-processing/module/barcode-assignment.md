@@ -18,7 +18,7 @@ Voici l'icône en contexte sur l'écran de validation, à côté du document en 
 
 ### Comment les codes-barres sont lus
 
-DocBits détecte les codes-barres pendant le traitement du document et propose leurs valeurs décodées pour l'affectation. Un même document peut comporter plusieurs types de codes-barres — par exemple un **QR code**, un **Code 128** et un **EAN-13** — chacun encodant une valeur différente, telle qu'un numéro de commande, un numéro de facture ou un GLN de fournisseur.
+DocBits détecte les codes-barres pendant le traitement du document et propose leurs valeurs décodées pour l'affectation. Un même document peut comporter plusieurs types de codes-barres — par exemple un **Code QR**, un **Code 128** et un **EAN-13** — chacun encodant une valeur différente, telle qu'un numéro de commande, un numéro de facture ou un GLN de fournisseur.
 
 <figure><img src="../../../../.gitbook/assets/barcode_assignment_demo_invoice.png" alt="Facture de démonstration comportant plusieurs types de codes-barres"><figcaption><p>Exemple de facture de démonstration DocBits comportant trois types de codes-barres (QR code → numéro de commande, Code 128 → numéro de facture, EAN-13 → GLN de fournisseur), chacun encodant une valeur que vous pouvez affecter à un champ.</p></figcaption></figure>
 

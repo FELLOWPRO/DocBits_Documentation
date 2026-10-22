@@ -1,4 +1,4 @@
-# Dashboard
+# Tableau de bord
 
 Le **Tableau de bord du flux de travail** est la page d'accueil de la zone des workflows. Il montre les performances de vos workflows — totaux d'exécutions, taux de réussite et d'échec, graphique des exécutions dans le temps et activité récente — et vous donne accès à la liste des workflows, au Test Manager et au Card SDK.
 
@@ -14,11 +14,11 @@ Le **Tableau de bord du flux de travail** est la page d'accueil de la zone des w
 
 La barre d'outils propose également **Modèles**, qui ouvre la bibliothèque [Workflow Templates](standard-workflow-builder.md#workflow-templates), et **Processus d'importation**, qui importe un workflow à partir d'un fichier JSON.
 
-Le **Test Manager** vous permet d'enregistrer des scénarios de test par workflow et de les exécuter ensemble, afin de confirmer que vos workflows se comportent toujours correctement après des modifications :
+Le **Gestion des tests** vous permet d'enregistrer des scénarios de test par workflow et de les exécuter ensemble, afin de confirmer que vos workflows se comportent toujours correctement après des modifications :
 
 <figure><img src="../../.gitbook/assets/prior-u032-fr.png" alt="Liste des scénarios de test de workflows."><figcaption><p>Liste des scénarios de test de workflows.</p></figcaption></figure>
 
 ## Étapes suivantes
 
-- Créez une automatisation linéaire avec le builder **Standard Workflow**.
+- Créez une automatisation linéaire avec le builder **Flux standard**.
 - Créez un flux avec branches grâce au builder **Flux de travail avancé**.

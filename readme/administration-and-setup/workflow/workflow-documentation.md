@@ -147,7 +147,7 @@ Ci-dessus se trouve un exemple de calcul pour MTZ avec un filtre pour les numér
 
 Avec une configuration manuelle, il est conseillé de séparer les calculs qui dépendent de nouvelles colonnes dans un flux de travail distinct. Pour poursuivre le calcul, vous pouvez utiliser la carte Run Workflow.
 
-**Run Workflow**
+**Exécuter le flux**
 
 <figure><img src="../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
 

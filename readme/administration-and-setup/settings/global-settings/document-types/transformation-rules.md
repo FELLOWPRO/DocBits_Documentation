@@ -34,8 +34,8 @@ Les règles de transformation remplacent la plupart des petits scripts que les o
 
 Les règles de transformation sont activées **par type de document** par un **administrateur de l'organisation**.
 
-1. Allez dans **Settings → Global Settings → Document Types**.
-2. Cliquez sur l'icône **settings** (engrenage) de la carte du type de document.
+1. Allez dans **Paramètres → Paramètres généraux → Types de documents**.
+2. Cliquez sur l'icône **Paramètres** (engrenage) de la carte du type de document.
 3. Ouvrez **Règles de transformation** et activez le commutateur. Cliquez sur **Gérer les règles de transformation** pour ouvrir la liste.
 
 <figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="Le commutateur Transformation Rules"><figcaption><p>Le commutateur Transformation Rules dans les paramètres supplémentaires d'un type de document</p></figcaption></figure>
@@ -46,7 +46,7 @@ La carte du type de document affiche désormais un lien **Règles de transformat
 
 La liste affiche toutes les règles du type de document dans l'ordre d'exécution, chacune avec un résumé en une phrase (« When invoice_id is abcd, take invoice_id, make it UPPERCASE, and save it back. »), sa portée (**En-tête**, **Tableau**, **Colonne**, **Routage**), le nombre d'étapes, sa source et si **Exécution du journal** est activé. Filtrez par portée et par **Active / Inactive**, recherchez, et utilisez le menu **⋮** pour dupliquer ou supprimer une règle.
 
-Les règles proviennent de trois sources, comme pour les règles de validation : les règles **Valeurs par défaut du système** livrées avec DocBits (cliquez sur **Customize** pour obtenir une copie modifiable), les règles système **Personnalisé** (**Réinitialiser par défaut** rétablit l'original) et les règles **Coutume** que vous avez créées.
+Les règles proviennent de trois sources, comme pour les règles de validation : les règles **Valeurs par défaut du système** livrées avec DocBits (cliquez sur **Personnaliser** pour obtenir une copie modifiable), les règles système **Personnalisé** (**Réinitialiser par défaut** rétablit l'original) et les règles **Coutume** que vous avez créées.
 
 ## Créer une règle
 
@@ -113,7 +113,7 @@ Les règles **lignes du tableau** utilisent deux autres étapes, qui travaillent
 | Étape | Effet |
 | --- | --- |
 | **Effacer toutes les lignes** | supprime toutes les lignes extraites. Les lignes ajoutées par une étape ultérieure sont conservées. |
-| **Add a row** | ajoute une ligne **après la dernière ligne** ou **avant la première ligne**. Pour chaque colonne, choisissez **Valeur** (une valeur fixe) ou **Champ** (la valeur d'un champ d'en-tête). Les colonnes que vous omettez restent vides. |
+| **Ajouter une ligne** | ajoute une ligne **après la dernière ligne** ou **avant la première ligne**. Pour chaque colonne, choisissez **Valeur** (une valeur fixe) ou **Champ** (la valeur d'un champ d'en-tête). Les colonnes que vous omettez restent vides. |
 
 {% hint style="info" %}
 **Date de reformatage** attend la date telle que DocBits la stocke en interne (`YYYY-MM-DD`). Appliquez-la au champ lui-même, pas à un texte qui contient déjà une date formatée.
@@ -148,7 +148,7 @@ Lignes du tableau **INVOICE_TABLE** · uniquement lorsque *Supplier ID is HP0000
 
 <figure><img src="../../../../.gitbook/assets/s150-transformation-add-row-columns-fr.png" alt="Étape de transformation non enregistrée pour ajouter une ligne de tableau."><figcaption><p>Étape de transformation non enregistrée pour ajouter une ligne de tableau.</p></figcaption></figure>
 
-L'ordre est important : **Effacer toutes les lignes** doit venir **avant** **Add a row**. L'éditeur vous avertit dans le cas contraire (« Clear all rows runs after Add a row … »), et il vous avertit aussi si une étape **Add a row** n'est pas précédée de **Effacer toutes les lignes**, car la règle ajouterait alors une nouvelle copie de la ligne à chaque enregistrement. Associez cette règle à une règle de rapprochement des bons de commande sur le total, active pour les documents à une seule ligne.
+L'ordre est important : **Effacer toutes les lignes** doit venir **avant** **Ajouter une ligne**. L'éditeur vous avertit dans le cas contraire (« Clear all rows runs after Add a row … »), et il vous avertit aussi si une étape **Ajouter une ligne** n'est pas précédée de **Effacer toutes les lignes**, car la règle ajouterait alors une nouvelle copie de la ligne à chaque enregistrement. Associez cette règle à une règle de rapprochement des bons de commande sur le total, active pour les documents à une seule ligne.
 
 ### Renseigner le bon de commande à partir du champ numéro de facture
 
@@ -225,7 +225,7 @@ Les règles de tableau et de colonne modifient ce que voit le moteur de rapproch
 
 ## Logs
 
-Avec **Exécution du journal** activé, chaque application de la règle est écrite dans **Document Types → (type de document) → Logs**, avec le résultat (applied, no change, skipped), le document et — pour les règles ignorées — la trace de condition qui explique pourquoi. Voir [Lire la trace de condition](rule-conditions-applies-when.md#lire-la-trace-de-la-condition-dans-les-journaux).
+Avec **Exécution du journal** activé, chaque application de la règle est écrite dans **Types de documents → (type de document) → Journaux**, avec le résultat (applied, no change, skipped), le document et — pour les règles ignorées — la trace de condition qui explique pourquoi. Voir [Lire la trace de condition](rule-conditions-applies-when.md#lire-la-trace-de-la-condition-dans-les-journaux).
 
 ## Bonnes pratiques
 
@@ -242,7 +242,7 @@ Avec **Exécution du journal** activé, chaque application de la règle est écr
 | --- | --- |
 | La règle n'a rien modifié | Est-elle active, et la fonctionnalité est-elle activée pour le type de document ? La condition est-elle vraie pour ce document (valeur exacte, espaces et casse compris) ? Une règle **run once** a-t-elle déjà été appliquée au document ? Consultez la trace dans le journal. |
 | La valeur change de nouveau à chaque enregistrement | Le pipeline contient Take a slice, Extract ou Find & replace. Activez **Exécuter une seule fois par document**, ou lisez depuis un autre champ. |
-| Un tableau reçoit une ligne de plus à chaque enregistrement | Une étape **Add a row** sans **Effacer toutes les lignes** avant elle. Ajoutez d'abord l'étape de suppression, ou activez l'exécution unique. |
+| Un tableau reçoit une ligne de plus à chaque enregistrement | Une étape **Ajouter une ligne** sans **Effacer toutes les lignes** avant elle. Ajoutez d'abord l'étape de suppression, ou activez l'exécution unique. |
 | Le rapprochement du bon de commande est perdu après l'enregistrement | Une règle de tableau a remplacé les lignes rapprochées. Le motif indiqué sur le document nomme la règle ; faites en sorte que la règle reproduise les mêmes lignes, ou réglez-la sur l'exécution unique. |
 | Une règle de rapprochement ne s'exécute jamais après la transformation | La règle a modifié le nombre de lignes ; adaptez la condition d'activation de la règle de rapprochement. |
 | La règle a besoin d'une valeur issue des données de base fournisseur, mais elle est encore vide | Activez **Run after lookup population (before PO match)**. |

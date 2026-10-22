@@ -8,13 +8,12 @@ Vous pouvez choisir de calculer automatiquement le **prix unitaire** de chaque l
 
 1.  Naviguez vers **Paramètres** -> **Paramètres globaux** -> **Types de documents**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1.png" alt=""><figcaption></figcaption></figure>
 2.  Sélectionnez le type de document souhaité et cliquez sur **Paramètres avancés**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u044-fr.png" alt="Accès aux paramètres supplémentaires du type de document Facture."><figcaption><p>Accès aux paramètres supplémentaires du type de document Facture.</p></figcaption></figure>
 3.  Dans la section **Bon de commande**, activez l’option **Calculer le prix unitaire du BC**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u045-fr.png" alt="Paramètres du statut des lignes de commande consommées."><figcaption><p>Paramètres du statut des lignes de commande consommées.</p></figcaption></figure>
 
 ## Comment le prix est calculé
 

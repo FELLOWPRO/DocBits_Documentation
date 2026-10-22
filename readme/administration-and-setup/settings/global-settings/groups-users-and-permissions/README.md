@@ -1,4 +1,4 @@
-# Groups, Users and Permissions
+# Groupes, utilisateurs et autorisations
 
 Ces paramètres répondent à trois questions différentes : qui peut se connecter, dans quelle sous-organisation la personne travaille, et ce que son groupe est autorisé à faire.
 

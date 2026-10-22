@@ -1,6 +1,6 @@
-# Standard Workflow
+# Flux standard
 
-Le constructeur **Standard Workflow** est l'éditeur linéaire, basé sur des cartes, qui permet d'automatiser le traitement des documents. Un workflow est composé de trois groupes de cartes — **Quand** (le déclencheur), **Et** (des conditions supplémentaires) et **Alors** (les actions à exécuter). Lorsqu'un document satisfait les conditions When/And, les actions Then s'exécutent automatiquement.
+Le constructeur **Flux standard** est l'éditeur linéaire, basé sur des cartes, qui permet d'automatiser le traitement des documents. Un workflow est composé de trois groupes de cartes — **Quand** (le déclencheur), **Et** (des conditions supplémentaires) et **Alors** (les actions à exécuter). Lorsqu'un document satisfait les conditions When/And, les actions Then s'exécutent automatiquement.
 
 ## Créer et tester un Standard Workflow <a id="standard-workflow-tutorial"></a>
 
@@ -95,7 +95,7 @@ Dans la liste des workflows, j’active la règle testée et vérifie son interr
 
 ## Comment y accéder
 
-Ouvrez **Workflow Dashboard → Workflow List**, puis cliquez sur **Ajouter un flux de travail** pour créer un nouveau workflow Standard, ou cliquez sur un workflow existant pour le modifier.
+Ouvrez **Tableau de bord des flux → Liste des flux**, puis cliquez sur **Ajouter un flux de travail** pour créer un nouveau workflow Standard, ou cliquez sur un workflow existant pour le modifier.
 
 <figure><img src="../../.gitbook/assets/prior-u033-fr.png" alt="Liste des workflows et commandes d’import."><figcaption><p>Liste des workflows et commandes d’import.</p></figcaption></figure>
 
@@ -118,5 +118,5 @@ Enregistrez avec **Enregistrer le flux de travail**, ou enregistrez la dispositi
 ## Étapes suivantes
 
 - Découvrez ce que fait chaque carte dans la section **Cartes**.
-- Combinez des cartes en solutions éprouvées avec les **Workflow Pattern Guides**.
+- Combinez des cartes en solutions éprouvées avec les **Guides des modèles de flux**.
 - Pour des flux avec branches et chemins parallèles (Wait ALL / Wait ANY / OR), utilisez le constructeur **Flux de travail avancé**.

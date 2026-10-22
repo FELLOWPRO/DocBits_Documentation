@@ -4,7 +4,7 @@
 
 ## Activer le paramètre
 
-1. Ouvrez **Settings → Document Types**. Trouvez le type de document utilisé pour vos factures et sélectionnez l'engrenage sur sa carte pour ouvrir **More Settings**. La capture d'écran montre la carte **Facture**. Laissez les commutateurs **Activer** et **Extraction** tels quels.
+1. Ouvrez **Paramètres → Types de documents**. Trouvez le type de document utilisé pour vos factures et sélectionnez l'engrenage sur sa carte pour ouvrir **Autres paramètres**. La capture d'écran montre la carte **Facture**. Laissez les commutateurs **Activer** et **Extraction** tels quels.
 
    <figure><img src="../../../../../../.gitbook/assets/prior-u044-fr.png" alt="Accès aux paramètres supplémentaires du type de document Facture."><figcaption><p>Accès aux paramètres supplémentaires du type de document Facture.</p></figcaption></figure>
 

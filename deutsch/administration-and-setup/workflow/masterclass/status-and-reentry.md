@@ -4,6 +4,10 @@ description: "P0: Status wechseln und erneute Ausführung begrenzen"
 
 # P0: Status wechseln und erneute Ausführung begrenzen
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-02-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-02-admin/v1/de.html).
+
 Mit **Change Status to** ändern Sie den Dokumentstatus. In Version 3 steuert `trigger_docflow`, ob eine weitere Workflow-Verarbeitung angefordert wird. Wählen Sie den Wert ausdrücklich. Bei fehlendem Parameter verwendet der Code `true`; die Ausführung der älteren Versionen 1/2 liest diesen Schalter nicht auf dieselbe Weise. Prüfen Sie die gespeicherte Kartenversion.
 
 Beginnen Sie mit `validated_pending_approval` und `trigger_docflow=false`. Der Schlüssel ist eine technische Auswahl; ein frei erfundenes `pending_approval` ist kein Ersatz. Ein Advanced-Test simuliert den Statuswechsel. Er belegt weder die gespeicherte Änderung noch die Verarbeitung einer angeforderten Folgeausführung.

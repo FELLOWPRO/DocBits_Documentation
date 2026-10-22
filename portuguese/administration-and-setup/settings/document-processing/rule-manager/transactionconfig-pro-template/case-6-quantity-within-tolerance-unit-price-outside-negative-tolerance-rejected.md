@@ -1,39 +1,41 @@
-# Case 6: Quantity Within Tolerance, Unit Price Outside Negative Tolerance (Rejected)
+# Caso 6: Quantidade dentro da tolerância, Preço unitário abaixo da tolerância inferior (Rejeitado)
 
-## Scenario:
+> **Nota sobre o exemplo:** Este cenário ilustra um mapeamento de exportação configurado. A saída real, os montantes, o sinal e o tipo de documento dependem do mapeamento ativo, das expressões das regras e das decisões de aprovação. A geração de dados para uma nota de débito ou de crédito não significa, por si só, a emissão de um documento fiscal válido. Verifique a configuração e o resultado no ERP; este exemplo não garante conformidade legal.
 
-The quantity is within tolerance, but the unit price is below the acceptable range (negative tolerance) and is not approved.
+## Cenário:
 
-## Action:
+A quantidade está dentro da tolerância, mas o preço unitário está abaixo do limite inferior e o desvio não foi aprovado.
 
-The system rejects the unit price, adjusts it to match the purchase order, and generates a credit note for the difference. Additional header charges may be applied as necessary.
+## Ação:
 
-## Example:
+Neste exemplo de mapeamento, o preço unitário é rejeitado e ajustado ao pedido de compra. O tratamento do desvio e de eventuais encargos de cabeçalho depende das ações configuradas.
 
-* **Purchase Order (PO):**
-  * Quantity: 100 units
-  * Unit Price: $10.00 per unit
-  * Total Amount: $1,000.00
-* **Invoice Received:**
-  * Quantity: 100 units (within tolerance of 0%)
-  * Unit Price: $9.00 per unit (outside negative tolerance of -10%)
-  * Total Amount: $900.00
-* **Tolerance Levels:**
-  * Quantity Tolerance: ±2%
-  * Unit Price Tolerance: ±1%
+## Exemplo:
 
-Since the quantity (100 units) is within the acceptable tolerance range but the unit price ($9.00) is below the acceptable tolerance and is not approved, the system will:
+* **Pedido de compra (PO):**
+  * Quantidade: 100 unidades
+  * Preço unitário: $10.00 por unidade
+  * Valor total: $1,000.00
+* **Fatura recebida:**
+  * Quantidade: 100 unidades (desvio de 0%; dentro da tolerância de ±2%)
+  * Preço unitário: $9.00 por unidade (desvio de −10%; fora da tolerância de ±1%)
+  * Valor total: $900.00
+* **Níveis de tolerância:**
+  * Tolerância da quantidade: ±2%
+  * Tolerância do preço unitário: ±1%
 
-1. **Reject the Unit Price:** The system does not accept the invoiced unit price of $9.00.
-2. **Adjust the Unit Price:** The system adjusts the unit price to match the original purchase order unit price.
-   * Adjusted Unit Price = $10.00 (from PO)
-3. **Calculate the Corrected Total Amount:** Using the adjusted unit price, the system recalculates the total amount.
-   * **Corrected Total Amount = Quantity × Adjusted Unit Price**
-   * **Corrected Total Amount = 100 units × $10.00 per unit = $1,000.00**
-4. **Generate a Credit Note:** The system generates a credit note for the difference between the incorrect total amount on the invoice and the corrected total amount.
-   * **Credit Note Amount = Original Invoice Total - Corrected Total Amount**
-   * **Credit Note Amount = $900.00 - $1,000.00 = -$100.00**
-   * The credit note will effectively reverse the undercharge.
-5. **Process the Invoice:** The system processes the invoice with the adjusted total amount of $1,000.00 and applies the credit note for $100.00 to account for the undercharged unit price.
+Como a quantidade (100 unidades) está dentro da tolerância, mas o preço unitário ($9.00) está abaixo do limite inferior e não foi aprovado, o sistema irá:
 
-This approach ensures that the pricing aligns with the purchase order terms, even when an incorrect, lower price is invoiced.
+1. **Rejeitar o preço unitário:** o sistema não aceita o preço faturado de $9.00.
+2. **Ajustar o preço unitário:** o sistema repõe o preço unitário do pedido de compra original.
+   * Preço unitário ajustado = $10.00 (do pedido de compra)
+3. **Calcular o total corrigido:** o sistema recalcula o total com o preço unitário ajustado.
+   * **Valor total corrigido = Quantidade × Preço unitário ajustado**
+   * **Valor total corrigido = 100 unidades × $10.00 por unidade = $1,000.00**
+4. **Calcular o desvio com sinal:** o mapeamento compara o total original da fatura com o total corrigido. O tipo de saída depende das ações de débito ou crédito configuradas; o sinal do desvio não determina, por si só, um documento fiscal.
+   * **Desvio com sinal = Total original da fatura - Valor total corrigido**
+   * **Desvio com sinal = $900.00 - $1,000.00 = -$100.00**
+   * O resultado de -$100.00 é a diferença com sinal entre 900 e 1,000. Não demonstra, por si só, que uma nota de crédito corrige o valor cobrado a menos.
+5. **Processar o resultado configurado:** neste exemplo, o total ajustado é $1,000.00 e o valor absoluto do desvio é $100.00. Verifique no mapeamento ativo e no ERP se existe uma saída adicional, qual o seu sinal e qual o tipo de documento aplicado.
+
+Esta abordagem alinha o preço com as condições do pedido de compra, mesmo quando é faturado um preço inferior incorreto.

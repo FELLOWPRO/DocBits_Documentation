@@ -12,7 +12,7 @@ As colunas padrão de que você não precisa são ocultadas, não excluídas; de
 
 Toda coluna obrigatória precisa estar preenchida em todas as linhas antes que um usuário possa aprovar o documento. Use isso para valores que o ERP rejeita quando ausentes (por exemplo, o centro de custo em uma exportação contábil), não para valores que são apenas úteis.
 
-## Use *Read Only* para valores consultados
+## Utilize *Read Only* (somente leitura) para valores consultados
 
 Valores que um script ou uma consulta de dados mestres grava na tabela (descrição do artigo a partir do cadastro de itens, código de imposto a partir do fornecedor) devem ser somente leitura, para que os usuários corrijam a origem e não a cópia.
 

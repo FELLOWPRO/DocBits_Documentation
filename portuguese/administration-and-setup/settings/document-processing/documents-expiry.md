@@ -1,4 +1,4 @@
-# Documents Expiry
+# Validade dos documentos
 
 <figure><img src="../../../.gitbook/assets/document_expiry_settings_overview.png" alt="Configurações de Documents Expiry"><figcaption><p>Configurações de Documents Expiry</p></figcaption></figure>
 

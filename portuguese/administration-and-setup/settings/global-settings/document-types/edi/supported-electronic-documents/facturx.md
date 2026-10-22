@@ -35,5 +35,5 @@ Um Guideline ID CII harmonizado pode identificar uma família e um perfil, embor
 ## Relacionado
 
 * [Configuração do ZUGFeRD](../zugferd/)
-* [Mapeamento de campos do ZUGFeRD](../zugferd/versions/)
+* [Mapeamento de campos do ZUGFeRD](../zugferd/README.md)
 * [Documentos Eletrônicos Suportados](./)

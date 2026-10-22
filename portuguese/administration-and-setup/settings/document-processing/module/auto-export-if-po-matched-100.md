@@ -1,39 +1,41 @@
-# Auto Export if PO Matched 100%
+# Exportar automaticamente com correspondência de PO a 100%
 
-### Overview
+### Visão geral
 
-The **Auto Export if PO matched 100%** setting is a feature within the Purchase Order (PO) module that automates the export process when a purchase order matches perfectly with its expected criteria. This functionality is designed to streamline the workflow by reducing manual intervention in the export process, ensuring that perfectly matched purchase orders are handled efficiently.
+A configuração **Auto Export if PO matched 100%** automatiza a exportação do documento atual quando a correspondência com o pedido de compra atinge 100%. A exportação continua sujeita às restantes condições configuradas de validação, aprovação e exportação. Esta opção reduz a intervenção manual no processamento de documentos totalmente correspondidos.
 
-### What Does It Do?
+### O que faz?
 
-When this setting is enabled, the system automatically exports the purchase order as soon as it matches 100% with the expected data. This means that if all items, quantities, prices, and other relevant details in the purchase order align with the predefined criteria, the order is immediately processed and exported without requiring additional steps from the user.
+Quando esta opção está ativa e a correspondência com o pedido de compra atinge 100%, o sistema pode exportar automaticamente o documento atual. A correspondência inclui os artigos, as quantidades, os preços e os restantes critérios configurados. As condições de validação, aprovação e exportação da organização continuam a aplicar-se; a opção não exporta o pedido de compra em si.
 
-### Benefits
+### Benefícios
 
-* **Efficiency**: By automating the export of perfectly matched POs, this feature saves time and reduces the workload on administrators and users.
-* **Accuracy**: Ensures that only those POs which have been verified to match 100% with the expected criteria are exported, reducing the risk of errors.
-* **Speed**: The immediate processing of matching POs allows for faster order handling and reduces delays in the supply chain.
+* **Eficiência**: a exportação automática dos documentos totalmente correspondidos reduz o trabalho manual dos administradores e utilizadores.
+* **Precisão**: a condição de correspondência a 100% reduz o risco de exportar documentos com divergências de correspondência pendentes.
+* **Rapidez**: o processamento automático dos documentos correspondidos reduz os atrasos no fluxo de trabalho.
 
-### How to Use
+### Como utilizar
 
-1. **Enable the Feature**:
-   * Go to Settings
-   * Select **Document Processing**.
-   * Select **Module**.
-   * Navigate to the **Purchase Order**.
-   * Activate the **Auto Export if PO matched 100%** by enabling the corresponding slider
+1. **Ativar a funcionalidade**:
+   * Abra Configurações.
+   * Selecione **Processamento de documentos**.
+   * Selecione **Módulo**.
+   * Abra **Pedido de compra**.
+   * Ative o interruptor **Auto Export if PO matched 100%**.
 
 <figure><img src="../../../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
 
-1. **Monitoring**:
-   * Once enabled, the system will automatically export POs that match 100% with their expected criteria.
-   * You can monitor the export activity through the PO dashboard or other related monitoring tools.
-2. **Considerations**:
-   * Ensure that your PO criteria are correctly defined and accurate to avoid any unwanted exports.
-   * Regularly review the POs processed through this feature to ensure that the automation is functioning as expected.
+2. **Monitorização**:
+   * Os documentos com correspondência a 100% tornam-se elegíveis para exportação automática, sujeitos às restantes condições configuradas.
+   * Acompanhe o estado da exportação no painel de documentos e nos respetivos registos.
+3. **Considerações**:
+   * Verifique se os critérios de correspondência estão corretamente definidos para evitar exportações indesejadas.
+   * Reveja regularmente os documentos processados por esta opção para confirmar o funcionamento da automatização.
 
-### When to Use This Feature
+### Quando utilizar esta funcionalidade
 
-* **High Volume Processing**: Ideal for environments where a large number of POs are processed regularly, and there is a high confidence in the data matching.
-* **Routine Orders**: Useful for standard or routine orders where variations are minimal and accuracy is consistent.
-* **Time-Sensitive Orders**: Beneficial when time is of the essence, and you need to expedite the processing of matching POs.
+* **Grandes volumes**: quando são processados muitos documentos e existe confiança nos dados de correspondência.
+* **Pedidos de rotina**: quando existem poucas variações e a precisão é consistente.
+* **Processamento urgente**: quando é necessário acelerar o tratamento dos documentos correspondidos.
+
+Quando a correspondência com pedidos está ativa para o tipo de documento, a opção separada `ALLOW_AUTO_EXPORT_FOR_NON_MATCHABLE_PO_LINES` permite também o estado `NO_MATCHABLE_PO_LINES`. Não autoriza de forma geral outros estados de correspondência incompleta.

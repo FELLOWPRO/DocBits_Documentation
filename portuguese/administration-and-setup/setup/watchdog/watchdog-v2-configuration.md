@@ -2,7 +2,7 @@
 
 Este guia explica como configurar o serviço WatchDog no aplicativo DocBits. Todas as configurações são gerenciadas diretamente em **Configurações → Processamento de documentos → WatchDog**.
 
-<figure><img src="../../../.gitbook/assets/watchdog-v2-config-infographic.svg" alt="Visão geral da configuração do WatchDog"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-configuration-pt.svg" alt="Configuração do WatchDog: funções dos quatro separadores."><figcaption><p>Configuração do WatchDog: funções dos quatro separadores.</p></figcaption></figure>
 
 ---
 
@@ -143,7 +143,7 @@ Gerencie os modelos de transformação XSLT usados nas exportações XML.
 
 ---
 
-## 6. Aba Export Configurations
+## 6. Aba Configurações de exportação
 
 Visão geral de todas as configurações de exportação ativas com o status da conexão.
 

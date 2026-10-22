@@ -26,7 +26,7 @@ Esta seção apresenta uma explicação detalhada das regras de resolução de c
 
 ## Estrutura das regras
 
-### 1. Metadata
+### 1. Metadados
 
 • version: identifica a versão do arquivo de mapeamento.
 
@@ -38,7 +38,7 @@ Esta seção apresenta uma explicação detalhada das regras de resolução de c
 
 • created_at & updated_at: datas e horas de criação e da última atualização do arquivo.
 
-### 2. Export Configuration
+### 2. Configuração da exportação
 
 A seção de configuração de exportação define o mapeamento entre os campos de dados do sistema e os campos correspondentes nos arquivos de exportação.
 
@@ -56,7 +56,7 @@ A seção de configuração de exportação define o mapeamento entre os campos 
 
 • Debit Note & Credit Note: define os campos para gerar notas de débito e de crédito em caso de divergências.
 
-### 3. Conflict Resolution Rules
+### 3. Regras de resolução de conflitos
 
 Essas regras tratam as divergências entre os dados da fatura e os dados correspondentes do pedido de compra. Cada regra é composta por vários componentes:
 

@@ -1,4 +1,4 @@
-# o valor deve ser numérico.
+# O valor deve ser numérico
 
 ## **Passo 1: Investigar o Pedido de Compra**
 
@@ -39,7 +39,7 @@ Se o **Pedido de Compra** parecer correto e contiver os detalhes necessários, v
 4. Na seção de **Exportação**, clique no ícone dos **três pontos** ao lado da exportação que não está funcionando e selecione **Editar**.
 5. No menu de **Editar Configurações de Exportação**, clique em **Baixar o arquivo de Mapeamento LN**.
 
-## **Passo 3: Editar o Arquivo de Mapeamento LN**
+## **Passo 4: Editar o Arquivo de Mapeamento LN**
 
 1. Abra o arquivo de **Mapeamento LN** baixado.
 2. Procure pelo campo **IRF\_ReceiptLine**.
@@ -51,12 +51,12 @@ Deve parecer com o seguinte:
 
 <figure><img src="../../../../.gitbook/assets/ReceiptLine.png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Passo 4: Adicionar o Arquivo Atualizado de Volta ao DocBits**
+## **Passo 5: Adicionar o Arquivo Atualizado de Volta ao DocBits**
 
 1. Volte para a seção de **Exportação** no DocBits onde você baixou anteriormente o arquivo de **Mapeamento LN**.
 2. Faça o upload do arquivo de **Mapeamento LN** editado com as novas atualizações.
 
-## Passo 5: Tentar a Exportação
+## Passo 6: Tentar a Exportação
 
 Após confirmar que o **Pedido de Compra** possui um **Número de Entrega** e garantir que o **arquivo de exportação esteja correto**, siga estas etapas para tentar a exportação novamente:
 

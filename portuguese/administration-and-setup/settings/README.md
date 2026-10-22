@@ -1,6 +1,6 @@
 # Configurações
 
-<figure><img src="../../.gitbook/assets/settings_overview.png" alt="Visão Geral das Configurações"><figcaption><p>Página de Visão Geral das Configurações</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-settings-overview-pt.png" alt="Definições da organização com dados identificativos ocultos. O país apresentado é um valor configurado; a secção App-Color mantém a designação inglesa na versão ilustrada."><figcaption><p>Definições da organização com dados identificativos ocultos. O país apresentado é um valor configurado; a secção App-Color mantém a designação inglesa na versão ilustrada.</p></figcaption></figure>
 
 A área de Configurações é o seu centro de controle para configurar o DocBits. Ela é organizada em cinco seções principais:
 

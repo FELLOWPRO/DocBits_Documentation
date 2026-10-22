@@ -1,26 +1,26 @@
 # e-docs
 
 {% embed url="https://youtu.be/AxrHNEmmXtg" %}
-DocBits E-Invoice Tutorial: Process XRechnung / ZUGFeRD (Factur-X), Validate Data & Automate Workflows
+Tutorial de faturação eletrónica do DocBits: processar XRechnung / ZUGFeRD (Factur-X), validar dados e automatizar fluxos de trabalho
 {% endembed %}
 
-<figure><img src="../../../../../.gitbook/assets/docbits_edi_overview.png" alt="Docbits Edi Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-all-edi-list-pt.png" alt="Formato EDI existente com os seus quatro atributos configurados."><figcaption><p>Formato EDI existente com os seus quatro atributos configurados.</p></figcaption></figure>
 
-#### Overview
+#### Visão geral
 
-In Docbits, the EDI settings provide tools for defining and managing the structure and format of EDI messages that correspond to various document types, such as invoices or purchase orders. The settings enable the customization of EDI messages to comply with the standards and requirements specific to different trading partners and industries.
+No DocBits, as configurações EDI permitem definir e gerir a estrutura e o formato das mensagens EDI correspondentes a vários tipos de documento, como faturas ou pedidos de compra. Estas configurações permitem adaptar as mensagens às normas e aos requisitos dos diferentes parceiros comerciais e setores.
 
-#### Key Features and Options
+#### Principais funcionalidades e opções
 
-1. **EDI Configuration Elements**:
-   * **Structure Descriptor**: Defines the basic structure of the EDI document, including segment ordering, mandatory fields, and qualifiers necessary for the EDI document to be valid.
-   * **Transformation**: Specifies the transformations applied to convert the document data into an EDI formatted message. This typically involves specifying mappings from document fields to EDI segments and elements.
-   * **Preview**: Allows administrators to view how the EDI message will look after transformation, helping to ensure accuracy before transmission.
-   * **Extraction Paths**: Shows the paths used to extract values from the document, which are then used to populate the EDI message.
+1. **Elementos da configuração EDI**:
+   * **Descritor de estrutura**: define a estrutura básica do documento EDI, incluindo a ordem dos segmentos, os campos obrigatórios e os qualificadores necessários para que o documento seja válido.
+   * **Transformação**: define as transformações que convertem os dados do documento numa mensagem EDI. Normalmente, inclui o mapeamento dos campos do documento para segmentos e elementos EDI.
+   * **Pré-visualização**: permite aos administradores verificar o aspeto da mensagem EDI após a transformação, ajudando a confirmar a exatidão antes da transmissão.
+   * **Caminhos de extração**: apresenta os caminhos utilizados para extrair os valores do documento que irão preencher a mensagem EDI.
 2. **XSLT Editor**:
-   * Used for editing and validating the XSLT (eXtensible Stylesheet Language Transformations) used in the transformation process. XSLT is a powerful language designed for transforming XML documents into other XML documents or other formats like HTML, text, or even other XML structures.
+   * Permite editar e validar o XSLT (eXtensible Stylesheet Language Transformations) utilizado na transformação. O XSLT transforma documentos XML noutros documentos XML ou em formatos como HTML e texto.
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.49.59.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-all-edi-detail-pt.png" alt="Atributo STRUCTUREDESCRIPTOR ativo: descritor de estrutura JSON no editor só de leitura."><figcaption><p>Atributo STRUCTUREDESCRIPTOR ativo: descritor de estrutura JSON no editor só de leitura.</p></figcaption></figure>
 
 ## Regras efetivas e ativação
 
@@ -29,3 +29,8 @@ Se uma nota de crédito eletrónica aparecer como Invoice, siga o [guia de resol
 ## Guias por país
 
 Consulte os guias por país para obter as designações exatas dos formatos, a sintaxe, os limites das versões e o estado da configuração examinada. [Formatos, versões e guias por país para eDocs](supported-electronic-documents/README.md).
+
+
+As vistas mostram uma configuração e uma versão existentes. As definições variam consoante o tipo de documento e o formato. Valide as alterações num rascunho antes da ativação.
+
+As imagens mostram as etapas em português e a versão ativa da configuração em modo só de leitura. Os nomes técnicos dos editores, os identificadores de atributos e o código de configuração mantêm-se como na versão ilustrada.

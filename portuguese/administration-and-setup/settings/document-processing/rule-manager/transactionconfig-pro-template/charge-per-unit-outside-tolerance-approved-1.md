@@ -1,32 +1,34 @@
-# Case 14: Charge Line - Charge Per Unit Outside Tolerance (Approved)
+# Caso 14: Linha de encargo - Encargo por unidade fora da tolerância (Aprovado)
 
-## Scenario:
+> **Nota sobre o exemplo:** Este cenário ilustra um mapeamento de exportação configurado. A saída real, os montantes, o sinal e o tipo de documento dependem do mapeamento ativo, das expressões das regras e das decisões de aprovação. A geração de dados para uma nota de débito ou de crédito não significa, por si só, a emissão de um documento fiscal válido. Verifique a configuração e o resultado no ERP; este exemplo não garante conformidade legal.
 
-The charge per unit is outside tolerance but has been approved.
+## Cenário:
 
-## Action:
+O encargo por unidade está fora da tolerância, mas foi aprovado.
 
-The system accepts the charge per unit and applies the approved charges, processing the transaction accordingly.
+## Ação:
 
-## Example:
+O sistema aceita o encargo por unidade aprovado e processa a transação.
 
-* **Purchase Order (PO):**
-  * Charge Per Unit: $4.50
-  * Quantity: 1,000 units
-  * Total Charge Amount: $4,500.00
-* **Invoice Received:**
-  * Charge Per Unit: $5.00 (outside tolerance of 11.11%, approved)
-  * Quantity: 1,000 units
-  * Total Charge Amount: $5,000.00
-* **Tolerance Levels:**
-  * Charge Per Unit Tolerance: ±5%
+## Exemplo:
 
-Since the charge per unit ($5.00) is outside the acceptable tolerance range of 5% but has been approved, the system will:
+* **Pedido de compra (PO):**
+  * Encargo por unidade: $4.50
+  * Quantidade: 1,000 unidades
+  * Valor total dos encargos: $4,500.00
+* **Fatura recebida:**
+  * Encargo por unidade: $5.00 (fora da tolerância de 11.11%, aprovado)
+  * Quantidade: 1,000 unidades
+  * Valor total dos encargos: $5,000.00
+* **Níveis de tolerância:**
+  * Tolerância do encargo por unidade: ±5%
 
-1. **Accept the Approved Charge Per Unit:** The system accepts the invoiced charge per unit of $5.00 as it has been approved despite exceeding the tolerance limit.
-2. **Process the Transaction:** The system processes the invoice using the approved charge per unit and the quantity:
-   * **Total Charge Amount = Quantity × Approved Charge Per Unit**
-   * **Total Charge Amount = 1,000 units × $5.00 = $5,000.00**
-3. **Finalize the Invoice:** The system processes the transaction with the approved charges, reflecting the total amount of $5,000.00.
+Como o encargo por unidade ($5.00) está fora da tolerância de 5%, mas foi aprovado, o sistema irá:
 
-This approach ensures that the system can accommodate approved variances in charges, allowing flexibility while maintaining accurate financial records.
+1. **Aceitar o encargo aprovado por unidade:** o sistema aceita o valor faturado de $5.00, apesar de exceder a tolerância, porque foi aprovado.
+2. **Processar a transação:** o sistema processa a fatura com o encargo por unidade aprovado e a quantidade:
+   * **Valor total dos encargos = Quantidade × Encargo aprovado por unidade**
+   * **Valor total dos encargos = 1,000 unidades × $5.00 = $5,000.00**
+3. **Finalizar a fatura:** o sistema processa a transação com os encargos aprovados, refletindo o total de $5,000.00.
+
+Esta abordagem permite processar os desvios aprovados dos encargos, mantendo os registos financeiros.

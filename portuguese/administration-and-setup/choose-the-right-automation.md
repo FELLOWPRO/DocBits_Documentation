@@ -98,15 +98,15 @@ Um workflow que grava um campo se comporta como uma pessoa que salva o documento
 * **Ele não pode** importar módulos nem chamar serviços externos. É Python restrito. Um erro em um script é registrado no log e nunca interrompe o processamento do documento; portanto, um script **não** é uma forma confiável de barrar um documento: marque o campo como inválido ou crie uma tarefa.
 * **Saiba mais:** [Script](settings/global-settings/document-types/script/README.md)
 
-### Standard Workflow
+### Fluxo de trabalho padrão
 
 * **Use quando** o próximo passo depende do documento: atribuir a um usuário ou grupo, aprovar ou rejeitar, criar uma tarefa, enviar um e-mail, exportar, definir um status, chamar uma API.
 * **Ele é executado** quando um documento alcança um status que você escolheu, ou seja, após a validação. Ele também pode ser iniciado por um web hook, por um agendamento ou manualmente.
 * **Ele pode** executar uma cadeia de cards: **When** (início), **And** (condições, todas devem ser atendidas), **Then** (ações em ordem).
 * **Ele não pode** ramificar, aguardar várias condições nem reagir ao erro de um card em um caminho separado. Para isso, use um Advanced Workflow.
-* **Saiba mais:** [Standard Workflow](workflow/standard-workflow-builder.md)
+* **Saiba mais:** [Fluxo de trabalho padrão](workflow/standard-workflow-builder.md)
 
-### Advanced Workflow
+### Fluxo de trabalho avançado
 
 * **Use quando** um documento precisa de caminhos diferentes: ramificações por condição, várias condições combinadas com ALL / ANY e um caminho para erros ou condições não atendidas.
 * **Ele é executado** nos mesmos eventos de um Standard Workflow. Requer a assinatura DocFlow Advanced.

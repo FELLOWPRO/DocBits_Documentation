@@ -1,40 +1,42 @@
-# Tax Lines
+# Linhas de imposto
 
-## Scenario:
+> **Nota sobre o exemplo:** Este cenário ilustra um mapeamento de exportação configurado. A saída real, os montantes, o sinal e o tipo de documento dependem do mapeamento ativo, das expressões das regras e das decisões de aprovação. A geração de dados para uma nota de débito ou de crédito não significa, por si só, a emissão de um documento fiscal válido. Verifique a configuração e o resultado no ERP; este exemplo não garante conformidade legal.
 
-Handles discrepancies in tax amounts between the invoice and purchase order.
+## Cenário:
 
-## Action:
+Trata as divergências nos valores dos impostos entre a fatura e o pedido de compra.
 
-The system adjusts the tax lines according to the approved tax rates and amounts, ensuring compliance with applicable tax regulations.
+## Ação:
 
-## Example:
+O sistema ajusta as linhas de imposto às taxas e aos valores aprovados, de acordo com as regras fiscais aplicáveis.
 
-* **Purchase Order (PO):**
-  * Subtotal Amount: $10,000.00
-  * Tax Rate: 8%
-  * Expected Tax Amount: $800.00
-  * Total Amount with Tax: $10,800.00
-* **Invoice Received:**
-  * Subtotal Amount: $10,000.00
-  * Tax Rate: 10% (discrepancy)
-  * Invoiced Tax Amount: $1,000.00
-  * Total Amount with Tax: $11,000.00
+## Exemplo:
 
-Since the tax rate on the invoice (10%) differs from the expected tax rate (8%) and is not approved, the system will:
+* **Pedido de compra (PO):**
+  * Subtotal: $10,000.00
+  * Taxa de imposto: 8%
+  * Valor esperado do imposto: $800.00
+  * Valor total com impostos: $10,800.00
+* **Fatura recebida:**
+  * Subtotal: $10,000.00
+  * Taxa de imposto: 10% (divergência)
+  * Valor do imposto faturado: $1,000.00
+  * Valor total com impostos: $11,000.00
 
-1. **Reject the Invoiced Tax Rate:** The system does not accept the 10% tax rate because it does not match the approved rate in the purchase order.
-2. **Adjust the Tax Rate:** The system adjusts the tax rate to match the approved rate from the purchase order.
-   * Adjusted Tax Rate = 8% (from PO)
-3. **Recalculate the Tax Amount:** The system recalculates the tax amount based on the adjusted tax rate:
-   * **Corrected Tax Amount = Subtotal Amount × Adjusted Tax Rate**
-   * **Corrected Tax Amount = $10,000.00 × 8% = $800.00**
-4. **Recalculate the Total Amount:** The system recalculates the total amount including tax:
-   * **Corrected Total Amount with Tax = Subtotal Amount + Corrected Tax Amount**
-   * **Corrected Total Amount with Tax = $10,000.00 + $800.00 = $10,800.00**
-5. **Generate a Credit Note:** The system generates a credit note to correct the overcharged tax:
-   * **Credit Note Amount = Original Invoice Tax Amount - Corrected Tax Amount**
-   * **Credit Note Amount = $1,000.00 - $800.00 = $200.00**
-6. **Process the Invoice:** The system processes the invoice with the corrected tax amount of $800.00 and the total amount of $10,800.00, issuing a credit note for the $200.00 tax discrepancy.
+Como a taxa de imposto da fatura (10%) difere da taxa esperada (8%) e não foi aprovada, o sistema irá:
 
-This approach ensures that the invoice tax is consistent with the purchase order and complies with applicable tax regulations, preventing overpayment and ensuring accuracy in financial records.
+1. **Rejeitar a taxa de imposto faturada:** o sistema não aceita a taxa de 10% por não corresponder à taxa aprovada no pedido de compra.
+2. **Ajustar a taxa de imposto:** o sistema ajusta a taxa à que foi aprovada no pedido de compra.
+   * Taxa de imposto ajustada = 8% (do pedido de compra)
+3. **Recalcular o valor do imposto:** o sistema recalcula o imposto com a taxa ajustada:
+   * **Valor corrigido do imposto = Subtotal × Taxa de imposto ajustada**
+   * **Valor corrigido do imposto = $10,000.00 × 8% = $800.00**
+4. **Recalcular o valor total:** o sistema recalcula o total com impostos:
+   * **Valor total corrigido com impostos = Subtotal + Valor corrigido do imposto**
+   * **Valor total corrigido com impostos = $10,000.00 + $800.00 = $10,800.00**
+5. **Gerar uma nota de crédito:** o sistema gera uma nota de crédito para corrigir o imposto cobrado em excesso:
+   * **Valor da nota de crédito = Valor original do imposto da fatura - Valor corrigido do imposto**
+   * **Valor da nota de crédito = $1,000.00 - $800.00 = $200.00**
+6. **Processar a fatura:** o sistema processa a fatura com o imposto corrigido de $800.00 e o total de $10,800.00, emitindo uma nota de crédito para a diferença de $200.00.
+
+Esta abordagem alinha o imposto da fatura com o pedido de compra e as regras fiscais aplicáveis, evitando pagamentos em excesso e mantendo os registos financeiros.

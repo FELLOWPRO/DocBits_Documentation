@@ -1,42 +1,21 @@
 # Importar Dados: Treinamento do Modelo
 
-Forneça instruções detalhadas sobre como importar documentos de amostra para treinamento, incluindo o formato e os tipos de documentos a serem usados.
+Prepare documentos representativos dos formatos, idiomas e tipos que a organização precisa de processar. Use apenas os formatos de ficheiro aceites pela sua instalação. Evite duplicados e separe os documentos de treino dos documentos reservados para avaliação.
 
-**Para importar documentos de amostra para treinamento, siga estas etapas:**
+## Abrir a importação
 
-* **Prepare os documentos de amostra:** Certifique-se de que os documentos de amostra estejam em um formato compatível, como PDF, Word, Excel, etc. Esses documentos devem cobrir uma variedade de tipos e formatos que podem ser encontrados nas operações de produção do sistema de processamento de documentos.
-* **Navegue até a função de importação:** Faça login na área de administração do sistema de processamento de documentos e navegue até a área onde você pode importar novos documentos.
+Nas configurações do tipo de documento pretendido, abra o treino do modelo e escolha a função de importação.
 
-* **Selecione a opção para importar documentos:** Clique no botão ou link para importar documentos. Pode haver uma opção como "Importar".
+<figure><img src="../../../../../.gitbook/assets/site-extra-model-training-overview-pt.png" alt="Importação, treino do modelo e teste de classificação. Na versão ilustrada, a ação de teste apresenta a designação confusa Classificação do teste. Não foi iniciado nenhum treino ou teste."><figcaption><p>Importação, treino do modelo e teste de classificação. Na versão ilustrada, a ação de teste apresenta a designação confusa Classificação do teste. Não foi iniciado nenhum treino ou teste.</p></figcaption></figure>
 
-* **Selecione o formato de valor e data:**
+## Escolher o formato e os ficheiros
 
-**Formato de Valor:**
+Selecione os formatos de números e datas correspondentes aos ficheiros e escolha os documentos a importar. Por exemplo, `1.234,56` e `1,234.56` usam separadores diferentes. Uma data como `05/06/2026` também deve ser interpretada segundo o formato selecionado.
 
-O formato de valor pode variar por região, mas em geral existem algumas convenções comuns:
+<figure><img src="../../../../../.gitbook/assets/site-extra-model-import-dialog-pt.png" alt="Importação de documentos com seleção do formato dos montantes e das datas; nenhum ficheiro foi enviado."><figcaption><p>Importação de documentos com seleção do formato dos montantes e das datas; nenhum ficheiro foi enviado.</p></figcaption></figure>
 
-1. Símbolo da moeda: O símbolo da moeda geralmente é fornecido antes do valor, por exemplo, "$" para dólares americanos, "€" para euros, "£" para libras esterlinas, etc.
-2. Separador de milhar: Em alguns países, números longos são separados por um separador de milhar para melhor legibilidade. Nos EUA, uma vírgula é comumente usada (por exemplo, 1,000), enquanto em muitos países europeus um ponto é usado (por exemplo, 1.000).
-3. Separador decimal: O separador decimal é usado para separar a parte inteira das casas decimais. A maioria dos países de língua inglesa usa um ponto (por exemplo, 10.99), enquanto muitos países europeus usam uma vírgula (por exemplo, 10,99).
+Verifique a seleção antes de iniciar a importação. Aguarde o fim do processamento e verifique os erros e o tipo de documento atribuído. Corrija as classificações e extrações incorretas antes de utilizar os exemplos no treino.
 
-#### Formato de Data:
+## Treinar e avaliar
 
-O formato de data também varia por região, com diferentes países tendo convenções diferentes. Aqui estão os formatos mais comuns:
-
-1. Dia-Mês-Ano (DD-MM-AA ou DD.MM.AA): Em muitos países europeus, a data é especificada no formato dia-mês-ano. Por exemplo, "21.05.24" representa 21 de maio de 2024.
-2. Mês-Dia-Ano (MM-DD-AA ou MM/DD/AA): Nos Estados Unidos, o formato mês-dia-ano é frequentemente usado. Por exemplo, "05/21/24" representa 21 de maio de 2024.
-3. Ano-Mês-Dia (AA-MM-DD ou AA/MM/DD): Em alguns outros países, o formato ano-mês-dia é preferido. Por exemplo, "24/05/21" representa 21 de maio de 2024.
-
-É importante observar o formato específico para evitar mal-entendidos, especialmente em comunicações internacionais ou transações financeiras.
-
-* **Selecione os documentos de amostra:** Selecione os documentos de amostra que deseja importar. Isso pode ser feito carregando os arquivos do seu computador local ou selecionando documentos de um local já conectado.
-
-<figure><img src="../../../../../.gitbook/assets/s150-image-85-1-pt.png" alt="Importação de dados de treino com formatos de montante e data."><figcaption><p>Importação de dados de treino com formatos de montante e data.</p></figcaption></figure>
-
-* **Configure os tipos e subtipos de documentos (se necessário):** Se o seu sistema suportar diferentes tipos ou subtipos de documentos, atribua o tipo apropriado a cada documento importado. Isso ajudará o sistema a categorizar e processar os documentos corretamente.
-* **Inicie o processo de importação:** Confirme a seleção dos documentos e inicie o processo de importação. Dependendo do tamanho e do número de documentos, esse processo pode levar algum tempo.
-
-* **Verifique o status da importação:** Verifique o status do processo de importação para garantir que todos os documentos foram importados com sucesso. Certifique-se de que nenhum erro ocorreu e que os documentos foram processados corretamente.
-* **Treine o modelo:** Após a importação dos documentos, use-os para treinar o modelo do sistema de processamento de documentos. Realize o treinamento de acordo com as instruções do sistema para garantir que ele possa processar os dados de amostra de forma eficaz.
-
-Ao adicionar regularmente documentos de amostra para treinamento, você pode garantir que seu sistema de processamento de documentos esteja sempre atualizado e forneça um processamento preciso e eficiente.
+Treine o modelo de acordo com as funções e permissões da sua versão. Depois, avalie o resultado numa amostra separada. Adicionar documentos não garante, por si só, maior exatidão. Consulte [Testar o modelo](testing-the-model.md).

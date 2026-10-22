@@ -1,4 +1,4 @@
-# O365 Tenant
+# Tenant do Office 365
 
 ## Registrar App no Azure AD
 

@@ -1,32 +1,34 @@
-# Charge Per Unit Within Tolerance
+# Encargo por unidade dentro da tolerância
 
-## Scenario:
+> **Nota sobre o exemplo:** Este cenário ilustra um mapeamento de exportação configurado. A saída real, os montantes, o sinal e o tipo de documento dependem do mapeamento ativo, das expressões das regras e das decisões de aprovação. A geração de dados para uma nota de débito ou de crédito não significa, por si só, a emissão de um documento fiscal válido. Verifique a configuração e o resultado no ERP; este exemplo não garante conformidade legal.
 
-The header charge per unit is within the acceptable tolerance range compared to the purchase order.
+## Cenário:
 
-## Action:
+O encargo de cabeçalho por unidade está dentro da tolerância aceite em relação ao pedido de compra.
 
-The system processes the header charge as invoiced, applying it without adjustments.
+## Ação:
 
-## Example:
+O sistema processa o encargo de cabeçalho faturado sem ajustes.
 
-* **Purchase Order (PO):**
-  * Header Charge Per Unit: $3.50
-  * Quantity: 1,200 units
-  * Total Header Charge Amount: $4,200.00
-* **Invoice Received:**
-  * Header Charge Per Unit: $3.55 (within tolerance of 1.43%)
-  * Quantity: 1,200 units
-  * Total Header Charge Amount: $4,260.00
-* **Tolerance Levels:**
-  * Header Charge Per Unit Tolerance: ±2%
+## Exemplo:
 
-Since the header charge per unit ($3.55) is within the acceptable tolerance range of 2% compared to the purchase order, the system will:
+* **Pedido de compra (PO):**
+  * Encargo de cabeçalho por unidade: $3.50
+  * Quantidade: 1,200 unidades
+  * Valor total do encargo de cabeçalho: $4,200.00
+* **Fatura recebida:**
+  * Encargo de cabeçalho por unidade: $3.55 (dentro da tolerância de 1.43%)
+  * Quantidade: 1,200 unidades
+  * Valor total do encargo de cabeçalho: $4,260.00
+* **Níveis de tolerância:**
+  * Tolerância do encargo de cabeçalho por unidade: ±2%
 
-1. **Accept the Header Charge Per Unit:** The system accepts the invoiced header charge per unit of $3.55 as it falls within the defined tolerance limit.
-2. **Process the Header Charge:** The system processes the invoice with the total header charge amount based on the invoiced charge per unit and quantity:
-   * **Total Header Charge Amount = Quantity × Header Charge Per Unit**
-   * **Total Header Charge Amount = 1,200 units × $3.55 = $4,260.00**
-3. **Finalize the Invoice:** The system processes the transaction without any adjustments, accepting the invoice as it is.
+Como o encargo de cabeçalho por unidade ($3.55) está dentro da tolerância de 2% em relação ao pedido de compra, o sistema irá:
 
-This approach ensures smooth and efficient processing of transactions when the header charges fall within the acceptable tolerance range, avoiding unnecessary rejections or delays.
+1. **Aceitar o encargo de cabeçalho por unidade:** o sistema aceita o valor faturado de $3.55 por estar dentro do limite definido.
+2. **Processar o encargo de cabeçalho:** o sistema processa a fatura com o total calculado a partir do encargo faturado por unidade e da quantidade:
+   * **Valor total do encargo de cabeçalho = Quantidade × Encargo de cabeçalho por unidade**
+   * **Valor total do encargo de cabeçalho = 1,200 unidades × $3.55 = $4,260.00**
+3. **Finalizar a fatura:** o sistema processa a transação sem ajustes e aceita a fatura tal como foi apresentada.
+
+Esta abordagem permite processar os encargos de cabeçalho dentro da tolerância aceite sem rejeições ou atrasos desnecessários.

@@ -5,7 +5,7 @@
 
 A **Pesquisa de dados mestre** (barra lateral: **Lookup Master Data**) permite visualizar e gerir os dados mestre que o DocBits utiliza para validar os dados extraídos dos documentos relativamente ao seu sistema ERP. É essencial para um PO matching preciso, a validação de fornecedores e o preenchimento automático de campos. Abra-a a partir de **Definições → Processamento de documentos → Lookup Master Data**.
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_overview.png" alt="Pesquisa de dados mestre"><figcaption><p>Página Pesquisa de dados mestre – fontes de dados e a tabela de dados</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-overview-pt.png" alt="Consulta de dados mestre: fontes e tabela de fornecedores com valores ocultos."><figcaption><p>Consulta de dados mestre: fontes e tabela de fornecedores com valores ocultos.</p></figcaption></figure>
 
 ## Fontes de dados
 
@@ -33,16 +33,16 @@ As tabelas de Fornecedor e Ordem de compra incluem colunas como ID do fornecedor
 
 Clique em **Settings** (ícone de engrenagem) no canto inferior esquerdo do painel de fontes de dados para abrir as definições de dados mestre.
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_settings.png" alt="Definições da Pesquisa de dados mestre"><figcaption><p>Definições de Supplier BOD e eliminação de ordens de compra</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-settings-pt.png" alt="Configurações de sincronização de fornecedores e conservação de ordens de compra."><figcaption><p>Configurações de sincronização de fornecedores e conservação de ordens de compra.</p></figcaption></figure>
 
-### Supplier BOD
+### BOD de fornecedores
 
-**Allow Multiple Supplier Accounts Sync**
+**Permitir a sincronização de várias contas de fornecedor**
 
 * **Ativado**: um único fornecedor pode ter vários elementos `<FinancialParty>` no BOD (frequentemente devido a vários IBAN ou contas financeiras). Todas as entradas `<FinancialParty>` são extraídas e guardadas na tabela de fornecedores, permitindo armazenar vários atributos financeiros.
 * **Desativado**: apenas o último elemento `<FinancialParty>` encontrado para o fornecedor é extraído. Os atributos financeiros anteriores (por exemplo, IBAN adicionais) são ignorados e apenas os dados da última ocorrência são guardados.
 
-### Purchase Order Deletion Assistant
+### Assistente de eliminação de pedidos de compra
 
 **Delete Purchase Order After** – escolha quando as ordens de compra fechadas devem ser removidas. Após o período selecionado, os registos são eliminados automaticamente.
 

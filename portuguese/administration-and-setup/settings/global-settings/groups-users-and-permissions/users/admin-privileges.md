@@ -8,7 +8,7 @@ O papel de um administrador é fundamental para gerenciar sistemas de TI, redes 
 
 Além dessas responsabilidades, os administradores também são encarregados de gerenciar configurações sensíveis e garantir que os sistemas atendam aos requisitos de conformidade e às melhores práticas de segurança da informação. Isso inclui gerenciar dados sensíveis, configurar controles de acesso e permissões, além de monitorar e analisar os registros (logs) do sistema para identificar e tratar possíveis riscos de segurança.
 
-## Admin vs System Admin
+## Administrador e administrador do sistema
 
 O DocBits tem duas funções de administrador: **Admin** e **System Admin**. Os nomes parecem semelhantes, mas elas têm finalidades diferentes. Veja a versão simples.
 

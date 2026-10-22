@@ -14,7 +14,7 @@ Se uma fatura ou outro documento exceder um determinado valor total que exija re
 
 <figure><img src="../../.gitbook/assets/workflow_amount_check.png" alt="Workflow Amount Check"><figcaption></figcaption></figure>
 
-**Test 1: Logic Card**
+**Teste 1: Cartão lógico**
 
 When: **Assignee is:** Responsável pela receção
 
@@ -24,7 +24,7 @@ Then: **Assign document to:** Responsável pela verificação da fatura
 
 ![](<../../.gitbook/assets/3 (1).png>)
 
-**Test 2: Logic Card**
+**Teste 2: Cartão lógico**
 
 When: **Assignee is:** Responsável pela receção
 
@@ -34,7 +34,7 @@ Then: **Assign document to:** Responsável pela verificação da entrega
 
 ![](<../../.gitbook/assets/4 (1).png>)
 
-**Test 3: Logic Card**
+**Teste 3: Cartão lógico**
 
 **When:** **Assignee is:** Responsável pela receção
 
@@ -50,7 +50,7 @@ Também é possível, caso o documento não esteja atribuído a uma única pesso
 
 Para uma visão geral mais fácil do que deve acontecer com um documento, você pode definir o status dos documentos recebidos neste workflow. Este workflow torna possível ver imediatamente se há, por exemplo, uma aprovação pendente.
 
-**Test 4: Logic Card**
+**Teste 4: Cartão lógico**
 
 **When:** **Document type is:** Delivery Note
 
@@ -62,7 +62,7 @@ Para uma visão geral mais fácil do que deve acontecer com um documento, você 
 
 ![](<../../.gitbook/assets/8 (1).png>)
 
-**Test 5: Logic Card**
+**Teste 5: Cartão lógico**
 
 When: **Document type is:** Invoice
 
@@ -78,7 +78,7 @@ Se uma fatura ou outro documento exceder um determinado valor total que exija re
 
 ![](<../../.gitbook/assets/11 (1).png>)
 
-**Test 6: Logic Card**
+**Teste 6: Cartão lógico**
 
 When: **Assignee is:** Responsável pela receção
 
@@ -92,7 +92,7 @@ Then: **Assign document to:** Responsável pela aprovação
 
 Também é possível inserir o status no workflow, para que a pessoa atribuída possa ver imediatamente em qual status este documento se encontra e o que deve acontecer em seguida com ele.
 
-**Test 7: Logic Card**
+**Teste 7: Cartão lógico**
 
 **When:** **Assignee is:** Responsável pela receção
 
@@ -110,7 +110,7 @@ Por exemplo, se faltarem informações específicas ou importantes em um documen
 
 <figure><img src="../../.gitbook/assets/workflow_test8_missing_info.png" alt="Workflow Test 8 Missing Info"><figcaption></figcaption></figure>
 
-**Test 9:**
+**Teste 9:**
 
 O Workflow com esses logic cards foi projetado para verificar automaticamente se a quantidade, o preço unitário ou o desconto detalhados em uma confirmação de pedido correspondem aos valores correspondentes no pedido de compra. Essa verificação garante consistência e precisão entre o que foi pedido e o que o fornecedor confirma entregar.
 
@@ -120,7 +120,7 @@ Você pode atribuir a esses documentos um status específico ou atribuí-los a u
 
 <figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_detail-pt.png" alt="Seleção de condições de comparação com uma ordem de compra. Mesa significa tabela de dados e Cessionário indica a atribuição a um responsável."><figcaption><p>Seleção de condições de comparação com uma ordem de compra. Mesa significa tabela de dados e Cessionário indica a atribuição a um responsável.</p></figcaption></figure>
 
-**Logic Card: Quantity or Unit Price or Discount Match**
+**Cartão lógico: correspondência da quantidade, do preço unitário ou do desconto**
 
 Este logic card foi projetado para verificar automaticamente se a quantidade, o preço unitário ou o desconto detalhados em uma confirmação de pedido correspondem aos valores correspondentes no pedido de compra. Essa verificação garante consistência e precisão entre o que foi pedido e o que o fornecedor confirma entregar.
 
@@ -137,7 +137,7 @@ A lógica é ativada quando qualquer uma das seguintes condições é atendida e
 
 Este logic card é vital para garantir que os detalhes de uma confirmação de pedido estejam alinhados com o pedido de compra original, protegendo a integridade do ciclo de compras.
 
-**Test 10:**
+**Teste 10:**
 
 Se você tiver um cálculo diferente para sobretaxas, ou tiver sobretaxas apenas em alguns itens, você pode usar os generic table calculation cards; alguns deles também permitem filtrar por expressões regulares.
 
@@ -153,9 +153,9 @@ Com uma configuração manual, é recomendável dividir os cálculos que depende
 
 Com este card você pode especificar o nome de um workflow que deve ser executado após o workflow atual, caso suas condições sejam atendidas, e após os then cards anteriores do workflow atual. Embora ele priorize workflows executáveis e ativos, também permite executar workflows desativados se o documento atender às condições do workflow.
 
-### **Adding calculated surcharges into an existing column** <a href="#pekg4i18rshn" id="pekg4i18rshn"></a>
+### **Adicionar encargos calculados a uma coluna existente** <a href="#pekg4i18rshn" id="pekg4i18rshn"></a>
 
-<figure><img src="https://lh7-us.googleusercontent.com/XYY1xsFpp7_-Bi0WOSbotiVzspDLdaufx_xgoopMHmxdZnSDhroLpb0AE_si5PhwMq1jHfndc9FwOte9MOoCoTP5_JUYawO5cr4uIctIDHmwVjz3KacQrLJd8iBQy5KY4N-dMaWEi3IeTcc5OBRNJk4" alt=""><figcaption></figcaption></figure>
+
 
 Se você quiser adicionar todas as sobretaxas como um desconto negativo na coluna de desconto, você pode usar o calculation card. Pode haver entradas nesta coluna; você pode defini-la como uma das variáveis no card, ter o MTZ subtraído dela e adicionar o resultado de volta a esta coluna. Caso existam campos vazios (sobretaxas apenas para alguns itens), ele assumirá 0 para o seu cálculo.
 

@@ -4,7 +4,7 @@
 
 <figure><img src="../../.gitbook/assets/docbits_cloud_customer_architecture.png" alt="Arquitetura do cliente DocBits Cloud"><figcaption></figcaption></figure>
 
-## DocBits On premise
+## DocBits em instalações próprias
 
 <figure><img src="../../.gitbook/assets/docbits_on_premise_architecture.png" alt="Arquitetura do DocBits On Premise"><figcaption></figcaption></figure>
 
@@ -14,7 +14,7 @@ Doc**Bits** integra-se perfeitamente com Infor ERP / SAP e M3 por meio da ION AP
 
 Todas as conexões entre os componentes são protegidas com protocolos de criptografia padrão do setor. SSH, HTTPS e outros canais seguros garantem a integridade e a confidencialidade dos dados em todo o sistema.
 
-**On Premise:**&#x20;
+**Em instalações próprias:**&#x20;
 
 <figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt=""><figcaption></figcaption></figure>
 

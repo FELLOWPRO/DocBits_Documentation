@@ -1,6 +1,6 @@
-# Cost Invoice - Export
+# Fatura de custo — Exportação
 
-<figure><img src="../../../../.gitbook/assets/docbits_purchase_order_export_4.png" alt="DocBits Compra Pedido Exportar 4"><figcaption></figcaption></figure>
+
 
 Este título indica que a regra está especificamente configurada para gerir faturas de custo e envolve uma ação de exportação, possivelmente para relatórios, processamento adicional ou integração com outros sistemas.
 

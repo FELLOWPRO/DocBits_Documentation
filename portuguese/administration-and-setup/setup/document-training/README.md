@@ -1,5 +1,5 @@
-# Document Training
+# Treino de documentos
 
-A guide to training new documnets with DocBits.
+Guia para treinar novos documentos no DocBits.
 
 

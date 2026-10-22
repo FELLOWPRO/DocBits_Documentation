@@ -1,24 +1,21 @@
 # Goedkeuringsgeschiedenis
 
-Om de **Goedkeuringsgeschiedenis** functie in te schakelen:
+Met Goedkeuringsgeschiedenis kunnen gebruikers de beslissingen in de goedkeuringsworkflow van een document bekijken. De vorige versie van deze pagina verwees naar een oud pad via **Algemene instellingen** en toonde drie afbeeldingen van een oudere interface zonder uitleg over de bediening. Gebruik de huidige instellingen van het documenttype om de optie in te schakelen en controleer het resultaat daarna met een synthetische goedkeuring in uw eigen organisatie.
 
-1. Ga naar **Instellingen** → **Algemene instellingen** → **Documenttypen** → **Meer instellingen** → **Goedkeuring**.
-2. Zet **Goedkeuringsgeschiedenis** aan.
+## De optie voor een documenttype inschakelen
 
-Eenmaal ingeschakeld, zal de goedkeuringsgeschiedenis zichtbaar zijn op het **In afwachting van goedkeuring** scherm. Je kunt schakelen naar het **Goedkeuringsgeschiedenis** scherm door op de knop in de linkerbovenhoek te klikken.
+1. Open met een beheerdersaccount **Instellingen → Documenttypen**. Zoek het documenttype, bijvoorbeeld **Factuur**, en selecteer het **tandwielpictogram** om **Meer Instellingen** te openen. De links **Indelingen** en **Velden** op de kaart leiden naar andere editors.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_1.png)
+   <figure><img src="../../../../../../.gitbook/assets/dbdc222-document-types-nl-20261009.png" alt="Nederlandse DocBits-pagina Documenttypen met een kaart Factuur en tandwielpictogram voor Meer Instellingen"><figcaption><p>Open Meer Instellingen op het documenttype waarvan u de goedkeuringsworkflow wilt bekijken.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_2.png)
+2. Klap **Goedkeuring en afwijzing** open en zoek **Goedkeuringsgeschiedenis**. Deze schakelaar staat los van **Goedkeuren vóór export**, **Tweede goedkeuring** en **Goedkeuringsstempel**. De Nederlandse screenshot toont het documenttype **Factuur** met verzonnen voorbeeldgegevens; de vier schakelaars staan in dit voorbeeld **uit**. Er is voor deze handleiding geen instelling gewijzigd.
 
-In het **Goedkeuringsgeschiedenis** scherm zie je de volgende details:
+   <figure><img src="../../../../../../.gitbook/assets/dbdc222-approval-history-nl-20261009.png" alt="Nederlandse pagina Meer Instellingen van het documenttype Factuur met Goedkeuring en afwijzing uitgeklapt en Goedkeuringsgeschiedenis uitgeschakeld"><figcaption><p>Controleer de schakelaar Goedkeuringsgeschiedenis voor het geselecteerde documenttype.</p></figcaption></figure>
 
-* **Wie** het document heeft goedgekeurd of afgewezen.
-* De **tijd** en **volgorde** van goedkeuringen of afwijzingen.
-* Als ingesteld, **opmerkingen** die de redenen achter de beslissingen uitleggen.
-* **Rood** geeft een **afwijzing** aan.
-* De kleur die overeenkomt met de omgeving (bijv. groen) geeft **goedkeuring** aan.
+3. Schakel Goedkeuringsgeschiedenis pas in nadat u de bedoelde goedkeuringsworkflow hebt bevestigd en weet wie de beslissingen mag zien. Noteer de vorige instelling zodat een test ermee kan worden vergeleken.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_3.png)
+## Controleren met een testdocument
 
-Deze functie biedt verbeterde transparantie door het volgen en visualiseren van het goedkeuringsproces.
+Gebruik een synthetisch document van het ingestelde type dat daadwerkelijk in de goedkeuringsworkflow terechtkomt. Laat een gemachtigde testgebruiker het goedkeuren of afwijzen en open daarna de goedkeuringsweergave van dat document om de beschikbare geschiedenis te bekijken. Controleer de beslissing, gebruiker, tijd en een eventueel ingevoerde opmerking tegen de actie die u hebt uitgevoerd. Controleer bij een workflow met meer dan één goedkeurder de volgorde na elke beslissing. Als er geen geschiedenis zichtbaar is, controleer dan het documenttype, de workflowstatus, de schakelaar en de weergaverechten voordat u dit als documentatie- of productfout behandelt.
+
+De kleuren en de navigatie linksboven in de oude screenshots worden niet als huidig gedrag gepresenteerd, omdat er in Test A geen goedgekeurd of afgewezen document beschikbaar was. De twee nieuwe afbeeldingen verifiëren alleen het huidige pad naar de instellingen en de schakelaar; de geschiedenisweergave moet nog met een synthetisch document met goedkeuringsactiviteit worden gecontroleerd.

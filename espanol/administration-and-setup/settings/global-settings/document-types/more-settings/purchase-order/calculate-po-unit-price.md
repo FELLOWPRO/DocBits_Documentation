@@ -8,13 +8,12 @@ Puede elegir calcular automáticamente el **precio unitario** de cada línea de 
 
 1.  Navegue a **Configuración** -> **Configuración global** -> **Tipos de documento**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1.png" alt=""><figcaption></figcaption></figure>
 2.  Seleccione el tipo de documento deseado y haga clic en **Más configuraciones**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u044-es.png" alt="Acceso a los ajustes adicionales del tipo de documento Factura."><figcaption><p>Acceso a los ajustes adicionales del tipo de documento Factura.</p></figcaption></figure>
 3.  En la sección **Orden de compra**, active la opción **Calcular precio unitario de OC**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u045-es.png" alt="Configuración del estado de las líneas de pedido consumidas."><figcaption><p>Configuración del estado de las líneas de pedido consumidas.</p></figcaption></figure>
 
 ## Cómo se calcula el precio
 
@@ -40,13 +39,11 @@ El precio calculado se escribe en la instantánea de la orden de compra que se a
 
 ## Ejemplo:
 
-
 En este caso, el precio unitario (sin el descuento) se extrae del documento, mientras que la orden de compra en el ERP almacena el precio unitario con el descuento aplicado. Esto resulta en una discrepancia en el precio unitario. Con la configuración activada, el precio unitario se toma del importe de la línea y la cantidad, por lo que ambas partes coinciden.
 
 ## Configuraciones relacionadas
 
 * [Reglas de conciliación de órdenes de compra](purchase-order-matching-rules.md) — las reglas comparan el precio unitario **efectivo**, que es este precio calculado cuando la configuración está activada.
 * [Configuración de tolerancia de órdenes de compra](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) — cuánto puede desviarse el precio de la factura del precio calculado.
-
 
 Ejemplo con cantidad 9 y base de precio 1: 879,84 ÷ 9 × 1 = 97,76 de precio unitario neto. Un total de 954,63 con el 8,5 % de impuesto produce 106,07. Compare una factura con precios netos usando el importe neto.

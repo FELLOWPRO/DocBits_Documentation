@@ -1,4 +1,4 @@
-# Advanced Workflow
+# Flujo avanzado
 
 El constructor **Flujo de trabajo avanzado** es un editor de grafos de nodos para flujos de trabajo que necesitan ramificaciones, rutas paralelas y control de flujo, más allá del modelo lineal When/And/Then del constructor Standard. Usted dispone los nodos en un lienzo y los conecta para definir el flujo de ejecución.
 
@@ -91,6 +91,6 @@ Ejecute el flujo con el control de reproducción, valídelo y guárdelo con el b
 ## Próximos pasos
 
 - Vea qué hace cada tarjeta en la sección **Tarjetas**.
-- Para automatizaciones lineales sencillas, el constructor **Standard Workflow** es más rápido de configurar.
+- Para automatizaciones lineales sencillas, el constructor **Flujo estándar** es más rápido de configurar.
 
 [Ver los cinco capítulos](advanced-workflow-videos.md)

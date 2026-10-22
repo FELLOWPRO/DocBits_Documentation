@@ -1,4 +1,4 @@
-# Custom Validation Rules
+# Reglas de validación personalizadas
 
 
 
@@ -35,10 +35,10 @@ Las reglas se definen por **tipo de documento** y se ejecutan en cada documento 
 
 Las reglas de validación personalizadas se activan **por tipo de documento**. No existe un interruptor para toda la organización.
 
-1. Vaya a **Settings → Global Settings → Document Types**.
+1. Vaya a **Ajustes → Ajustes generales → Tipos de documento**.
 2. En la tarjeta del tipo de documento, haga clic en el icono de **ajustes** (engranaje).
 3. Abra la sección **Reglas de validación personalizadas** y active el interruptor.
-4. Haga clic en **Manage validation rules** para abrir la lista de reglas.
+4. Haga clic en **Gestionar reglas de validación** para abrir la lista de reglas.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-toggles.png" alt="Los interruptores de reglas en los ajustes adicionales de un tipo de documento"><figcaption><p>Los interruptores de Manage Layouts, Custom Validation Rules y Transformation Rules</p></figcaption></figure>
 
@@ -52,7 +52,7 @@ A partir de ese momento, la tarjeta del tipo de documento también muestra un en
 
 ## La lista de reglas
 
-**Document Types → (tipo de documento) → Validation Rules** muestra todas las reglas del tipo de documento.
+**Tipos de documento → (tipo de documento) → Reglas de validación** muestra todas las reglas del tipo de documento.
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-es.png" alt="Reglas de validación personalizadas con los nombres ocultos."><figcaption><p>Reglas de validación personalizadas con los nombres ocultos.</p></figcaption></figure>
 
@@ -133,7 +133,7 @@ Una comparación aritmética. La expresión contiene exactamente **una** compara
 * Haga clic en los chips situados debajo de la expresión para insertar funciones y prefijos de campos: `sum()`, `count()`, `min()`, `max()`, `default()`, `coalesce()`, `header.`, `doc.`. Mientras escribe un nombre de campo, se abre una lista de campos coincidentes.
 * `sum(row.NET_AMOUNT)`, `count(row.ITEM_NUMBER)`, `min(...)`, `max(...)` funcionan sobre todas las filas y solo están disponibles en el nivel **Tabla entera**. `count()` cuenta las filas en las que la columna está rellenada.
 * `default(header.discount, 0)` usa `0` cuando el campo está vacío; `coalesce(header.a, header.b, 0)` usa el primer valor rellenado.
-* **Tolerance**: para `==` y `!=`, las diferencias de hasta este importe se consideran iguales. Utilice `0.01` o `0.05` para absorber redondeos. No tiene efecto en `<`, `>`, `<=` ni `>=`.
+* **Tolerancia**: para `==` y `!=`, las diferencias de hasta este importe se consideran iguales. Utilice `0.01` o `0.05` para absorber redondeos. No tiene efecto en `<`, `>`, `<=` ni `>=`.
 * Los importes vacíos o ilegibles cuentan como `0`. Una división por cero omite la regla en lugar de provocar un error.
 * En el mensaje de error, `{actual}` se sustituye por el resultado del lado izquierdo y `{expected}` por el resultado del lado derecho.
 

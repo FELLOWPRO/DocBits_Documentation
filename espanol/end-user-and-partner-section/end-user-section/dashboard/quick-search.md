@@ -51,7 +51,7 @@ En el extremo derecho de la barra:
   con todos los campos, operadores y atajos disponibles en su espacio de trabajo.
 - **Filters (tune)** — un panel rápido con los filtros habituales de Status / User / Restart,
   con **Borrar filtros** y **Aplicar**.
-- **Index ring** — un pequeño anillo de progreso que muestra qué parte de su índice de texto completo
+- **Resumen del índice** — un pequeño anillo de progreso que muestra qué parte de su índice de texto completo
   está construida (solo se muestra cuando la búsqueda de texto completo está activada).
 
 ### Vista estándar frente a vista en bruto
@@ -226,7 +226,7 @@ ap_assignment_code=""
 ## Filtros inteligentes — con un clic
 
 En la parte superior del menú desplegable de la Búsqueda rápida (haga clic en la barra de búsqueda) encontrará los
-**Smart Filters**: búsquedas predefinidas que se aplican con un solo clic. Cada una
+**Filtros rápidos**: búsquedas predefinidas que se aplican con un solo clic. Cada una
 es simplemente un atajo de una consulta que también podría escribir usted mismo:
 
 | Smart Filter | Encuentra | Equivale a escribir |
@@ -310,7 +310,7 @@ Toda la comparación de texto ignora las mayúsculas y minúsculas.
 
 ### Conectores
 
-Combine condiciones con **AND** (ambas verdaderas), **O** (cualquiera de las dos), **NO** y
+Combine condiciones con **AND** (ambas verdaderas), **OR** (cualquiera de las dos), **NOT** y
 paréntesis `( … )` para agrupar:
 
 ```

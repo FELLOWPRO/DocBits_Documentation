@@ -40,7 +40,7 @@ Qué tipos de código de barras se detectan lo controla la opción **Bar-Code / 
 
 5. En cuanto selecciona un campo, este se rellena con el valor del código de barras.
 
-<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_field_mapped-es.png" alt="Borrador de asignación de un código de barras al pedido."><figcaption><p>Borrador de asignación de un código de barras al pedido.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_field_mapped-es.png" alt="Borrador sin guardar: DEMO-PO-150 asignado a Orden de compra; el identificador de la factura queda sin asignar."><figcaption><p>Borrador sin guardar: DEMO-PO-150 asignado a Orden de compra; el identificador de la factura queda sin asignar.</p></figcaption></figure>
 
 ### Cómo activarla
 

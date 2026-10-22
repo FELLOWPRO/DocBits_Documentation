@@ -1,4 +1,4 @@
-# Groups, Users and Permissions
+# Grupos, usuarios y permisos
 
 Estos ajustes responden a tres preguntas distintas: quién puede iniciar sesión, en qué suborganización trabaja y qué puede hacer su grupo.
 

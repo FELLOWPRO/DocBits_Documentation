@@ -1,6 +1,6 @@
 # Activando Permisos
 
-La interfaz actual usa una matriz de permisos por tipo de documento y acción. Los valores **Owner**, **Everyone** y **No Access** todavía se muestran en inglés. Las instrucciones sobre el antiguo interruptor «Only Assigned Documents» solo se aplican a versiones que dispongan de ese interruptor.
+La interfaz actual usa una matriz de permisos por tipo de documento y acción. Los valores **Dueño**, **Everyone** y **Sin acceso** todavía se muestran en inglés. Las instrucciones sobre el antiguo interruptor «Only Assigned Documents» solo se aplican a versiones que dispongan de ese interruptor.
 
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
 DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
@@ -22,7 +22,7 @@ Habilitar o deshabilitar el sistema de permisos mediante el interruptor tiene va
 
 <figure><img src="../../../../../.gitbook/assets/prior-u008-es.png" alt="Opciones de acceso por acción en la matriz de permisos."><figcaption><p>Opciones de acceso por acción en la matriz de permisos.</p></figcaption></figure>
 
-El botón de alternancia **Only Assigned Documents** controla la visibilidad de los documentos para los usuarios en función de sus asignaciones de grupo. Cuando está activado, los usuarios solo pueden ver los documentos que se les han asignado específicamente a ellos o a un grupo al que pertenecen. Cuando está desactivado, los usuarios con el permiso de visualización adecuado pueden ver todos los documentos, independientemente de la asignación.
+El botón de alternancia **Sólo documentos asignados** controla la visibilidad de los documentos para los usuarios en función de sus asignaciones de grupo. Cuando está activado, los usuarios solo pueden ver los documentos que se les han asignado específicamente a ellos o a un grupo al que pertenecen. Cuando está desactivado, los usuarios con el permiso de visualización adecuado pueden ver todos los documentos, independientemente de la asignación.
 
 #### Funcionamiento
 

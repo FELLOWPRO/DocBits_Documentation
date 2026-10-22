@@ -1,5 +1,7 @@
 # Case 4, 5: Quantity Within Tolerance, Unit Price Outside Tolerance (Approved)
 
+The following scenario is an illustrative configured mapping, not a verified deployed default template. Actual output, amounts, signs and document types depend on the active `conflict_resolution` rules and expressions, export mapping and approval decisions. Any debit or credit note described below is conditional on that configuration; the example does not guarantee automatic issuance or legal compliance.
+
 ## Scenario:
 
 The quantity on the invoice is within tolerance, but the unit price is outside the acceptable tolerance range. However, this variance in the unit price has been reviewed and approved by the appropriate authorities.

@@ -1,26 +1,22 @@
-# e-docs
+# Electronic documents and EDI configuration
 
 {% embed url="https://youtu.be/AxrHNEmmXtg" %}
 DocBits E-Invoice Tutorial: Process XRechnung / ZUGFeRD (Factur-X), Validate Data & Automate Workflows
 {% endembed %}
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.49.21.png" alt=""><figcaption></figcaption></figure>
+Select the document type and electronic format in the E-Documents settings. The configuration below processes incoming EDI messages; it is not an outbound EDI transmission setup.
 
-#### Overview
+<figure><img src="../../../../../.gitbook/assets/site-all-edi-list-en.png" alt="Existing EDI format with its four configured attributes."><figcaption><p>Existing EDI format with its four configured attributes.</p></figcaption></figure>
 
-In Docbits, the EDI settings provide tools for defining and managing the structure and format of EDI messages that correspond to various document types, such as invoices or purchase orders. The settings enable the customization of EDI messages to comply with the standards and requirements specific to different trading partners and industries.
+* STRUCTUREDESCRIPTOR: a JSON structure descriptor parses the raw EDI message into JSON. DocBits then creates intermediate XML.
 
-#### Key Features and Options
+* TRANSFORMATION: an XSLT stylesheet transforms the intermediate XML into the standard XML used for subsequent processing.
 
-1. **EDI Configuration Elements**:
-   * **Structure Descriptor**: Defines the basic structure of the EDI document, including segment ordering, mandatory fields, and qualifiers necessary for the EDI document to be valid.
-   * **Transformation**: Specifies the transformations applied to convert the document data into an EDI formatted message. This typically involves specifying mappings from document fields to EDI segments and elements.
-   * **Preview**: Allows administrators to view how the EDI message will look after transformation, helping to ensure accuracy before transmission.
-   * **Extraction Paths**: Shows the paths used to extract values from the document, which are then used to populate the EDI message.
-2. **XSLT Editor**:
-   * Used for editing and validating the XSLT (eXtensible Stylesheet Language Transformations) used in the transformation process. XSLT is a powerful language designed for transforming XML documents into other XML documents or other formats like HTML, text, or even other XML structures.
+* PREVIEW: an XSLT stylesheet creates the human-readable presentation from the transformed XML. The editor screenshot shows the stylesheet, not the rendered document.
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.49.59.png" alt=""><figcaption></figcaption></figure>
+* EXTRACTIONPATHS: JSON configuration maps document fields and table columns to XPath expressions evaluated against the transformed XML.
+
+<figure><img src="../../../../../.gitbook/assets/site-all-edi-detail-en.png" alt="Active STRUCTUREDESCRIPTOR attribute: JSON structure descriptor in the read-only editor."><figcaption><p>Active STRUCTUREDESCRIPTOR attribute: JSON structure descriptor in the read-only editor.</p></figcaption></figure>
 
 ## Effective rules and activation
 
@@ -29,3 +25,6 @@ If an electronic credit note appears as Invoice, follow the [classification trou
 ## Country guides
 
 See the country guides for exact format labels, syntax, version limits and the inspected configuration state. [eDocs formats, versions and country guides](supported-electronic-documents/README.md).
+
+
+The views show an existing configuration and version. Settings vary by document type and format. Validate changes in a draft before activation.

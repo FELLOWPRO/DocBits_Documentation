@@ -1,44 +1,47 @@
-# Mandatory PDP/PPF Channels – PEPPOL as Transport Only for France’s 2026 E-Invoicing
+# France E-Invoicing: Approved Platforms and PEPPOL
 
-## PDP or PPF Required for Domestic B2B E-Invoices
+## Current Rules and Timetable
 
-Under France’s 2026 e-invoicing mandate, companies cannot rely solely on the PEPPOL network to exchange domestic B2B invoices. The law requires that all invoices between French VAT-registered businesses be routed through either a certified private platform (PDP) or the state’s public invoicing portal (PPF) to satisfy legal [requirements](https://www.ey.com/en_gl/technical/tax-alerts/france-revises-schedule-for-adopting-e-invoicing-reform) ￼. In other words, businesses will no longer send invoices directly to customers – they must transmit them via an approved e-invoicing platform (a PDP) or via the government [portal](https://www.avalara.com/blog/en/europe/2022/09/france-publishes-updated-specifications-for-e-invoicing-and-e-reporting.html) ￼. This ensures the tax authority receives the required data in real-time. Simply exchanging invoices over PEPPOL without involving an accredited PDP/PPF would not meet the mandated reporting and transmission obligations.
+For French domestic B2B invoices within the scope of the reform between businesses subject to VAT, invoice exchange must go through an **approved platform (plateforme agréée, PA; formerly PDP)**. The **public invoicing portal (PPF)** serves the public directory and tax-data collection functions; it is not an alternative invoice exchange platform for these transactions.
+
+* **1 September 2026:** All businesses in scope must be able to receive electronic invoices. Large enterprises (GE) and intermediate-sized enterprises (ETI) must also issue electronic invoices and meet their e-reporting obligations from that date.
+* **1 September 2027:** Issuance and e-reporting obligations apply to small and medium-sized enterprises (PME) and micro-enterprises.
+
+The applicable obligation depends on the transaction's scope and the business category. Refer to the official [approved platform guidance](https://www.impots.gouv.fr/facturation-electronique-et-plateformes-agreees), [implementation timetable](https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation) and [ministry response](https://www.senat.fr/questions/base/2026/qSEQ260107185.html).
+
+## PEPPOL and Interoperability
+
+PEPPOL can provide transport and interoperability between connected systems and platforms. Using PEPPOL does not replace the requirement to use a PA for invoice exchanges within the French mandate. Do not treat a PEPPOL connection alone as evidence that French exchange and reporting obligations are fulfilled.
+
+## Historical Technical Context
+
+The six diagrams and the API descriptions below are retained from earlier PPF/PDP material for historical technical context. They use the former terminology and architecture; they do not describe a current option to exchange mandated B2B invoices through the PPF. Check current PA and public-service specifications before implementing an integration.
 
 <figure><img src="../../.gitbook/assets/Picture 1.png" alt=""><figcaption></figcaption></figure>
 
-### Introduction to the service offer
+### Historical API Service Model
 
-The API mode allows users to access all features available to them from the IT tools already deployed within the partner structures. There are two integration methods:
+The earlier API model described accessing available functions from the IT tools deployed by partner organizations, through two integration methods:
 
-### ·       Integration into Information Systems (IS):
-
-APIs are integrated directly into information systems or management software for parties issuing and receiving invoices or their dematerialising operators (ODs). Users can thus directly access the solution’s features and their upgrades from their usual IT tools, internal or offered by their OD.
-
-APIs can also be integrated into the IS of the PDPs to give them more flexibility (compared with EDI mode), with some APIs dedicated to their use.
-
-### ·       Integration into third-party software:
-
-Editors will be able to offer software based on the APIs. Depending on the mode chosen by the editor, connection can then be effected by the editor, or by the customer itself during installation or deployment in its IS. This third-party software will complement the customer’s information system by adding a communication layer to the PPF.
+* **Information systems (IS):** APIs were described as integrated into the systems of invoice issuers, recipients or their dematerialisation operators (ODs). Some APIs were intended for PDP systems, offering an alternative to EDI integration.
+* **Third-party software:** Software publishers could add a communication layer to customer systems. Earlier references to a connection to the PPF belong to that historical model and are not a current invoice exchange route.
 
 <figure><img src="../../.gitbook/assets/Picture 6.png" alt=""><figcaption></figcaption></figure>
 
-## PEPPOL Used Only as an Interoperability Layer
+### Historical Interconnection Diagram
 
-France is adopting PEPPOL as part of its infrastructure, but only as a transport layer within the PDP framework, not as an independent compliance route.  The French tax authority (DGFiP) is becoming the Peppol Authority to standardize how PDPs [interconnect](https://www.avalara.com/blog/en/europe/2025/01/e-invoicing-reform-france.html) . All certified PDPs are required to interconnect via the PEPPOL network for exchanging [invoices](https://nymus.be/fr/facturation-electronique-en-france/) .  This means PEPPOL will facilitate interoperability between authorized platforms – not replace the need for those platforms.  In practice, a company may use PEPPOL only by working through a PDP (or the PPF acting in its limited role) that uses PEPPOL to send or receive invoices. This has been confirmed in official guidance: the public portal is focusing on data collection, while invoice distribution will happen exclusively through PDPs, with those PDPs leveraging networks like [PEPPOL](https://edicomgroup.com/blog/status-of-b2b-electronic-invoicing-in-france) for [exchange](https://nymus.be/fr/facturation-electronique-en-france/) .
-
-\
-
+This diagram illustrates the earlier platform interconnection context. Current implementation must follow PA requirements; no general requirement that every exchange use a single transport network is asserted here.
 
 <figure><img src="../../.gitbook/assets/Picture 2.png" alt=""><figcaption></figcaption></figure>
 
-## Connection of a hub:
+### Historical Hub Connection
 
-The hub provides its customers with a web or application solution to enable them to make the various API calls. **It is thus the hub that makes API calls on behalf of all its customers**. In this case, each partner must have a technical account, but only the hub needs an application under PISTE and a connection to the PPF.
+The earlier hub model described a web or application solution in which **the hub made API calls on behalf of its customers**. It referred to a technical account for each partner and an application under PISTE plus a PPF connection for the hub. These are historical architecture details, not a verified current integration procedure.
 
 <figure><img src="../../.gitbook/assets/Picture 5.png" alt=""><figcaption></figcaption></figure>
 
+### Historical References
 
-
-Source: Article 91 of France’s 2024 Finance Law (summarized by EY) mandates e-invoices be sent via a certified PDP or the state portal .  The French tax authority’s updates further clarify that after 2024 reforms, businesses must use a registered PDP for B2B e-invoicing (the PPF will no longer serve as a free exchange platform) .  PEPPOL is being implemented to connect these PDPs, not as an alternate channel outside the system . This confirms that using the PEPPOL network alone is insufficient – compliance in France’s 2026 e-invoicing regime requires integration with the PPF or a certified PDP, with PEPPOL serving only as the underlying delivery network among those platforms.
+The earlier material cited [the former timetable and legal overview](https://www.ey.com/en_gl/technical/tax-alerts/france-revises-schedule-for-adopting-e-invoicing-reform), [2022 specifications](https://www.avalara.com/blog/en/europe/2022/09/france-publishes-updated-specifications-for-e-invoicing-and-e-reporting.html), [a 2025 reform overview](https://www.avalara.com/blog/en/europe/2025/01/e-invoicing-reform-france.html), [platform interconnection background](https://nymus.be/fr/facturation-electronique-en-france/), [PEPPOL background](https://edicomgroup.com/blog/status-of-b2b-electronic-invoicing-in-france) and [exchange background](https://nymus.be/fr/facturation-electronique-en-france/). These links and the remaining diagrams are retained as historical context. Use the official sources above for current obligations, including the distinction between PA invoice exchange and PPF public functions. The earlier reference to Article 91 of the 2024 Finance Law does not establish a current PPF exchange option.
 
 <div><figure><img src="../../.gitbook/assets/Picture 3.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Picture 4.png" alt=""><figcaption></figcaption></figure></div>

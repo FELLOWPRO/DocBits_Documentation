@@ -18,11 +18,11 @@ This transformation is performed using **XSLT (Extensible Stylesheet Language Tr
 
 1.  Go to **Settings → Document Type** → \[Your Document (e.g., _Purchase Order_)] → **E-Doc.**\\
 
-    <figure><img src="../../../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-en.png" alt="Existing EDI format with its four configured attributes."><figcaption><p>Existing EDI format with its four configured attributes.</p></figcaption></figure>
 2. Under the **E-Doc** tab, select your format (e.g., **EDI** ).
 3.  Click **Transformation** to view or edit.\\
 
-    <figure><img src="../../../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/site-all-edi-transformation-en.png" alt="Active TRANSFORMATION attribute: XSLT source for transforming the intermediate XML."><figcaption><p>Active TRANSFORMATION attribute: XSLT source for transforming the intermediate XML.</p></figcaption></figure>
 
 #### Draft Management
 
@@ -50,13 +50,13 @@ The **Preview Function** allows you to test and preview how an uploaded EDI file
 * Navigate to the **Transformation File** interface.
 *   Open the **Preview Function**.\\
 
-    <div align="left"><figure><img src="../../../../../../.gitbook/assets/image (21).png" alt="" width="375"><figcaption></figcaption></figure></div>
+    <div align="left"></div>
 * Enter the **Document ID** into the field and press **Test**.
 * The resulting **transformed XML output** will be displayed.
 
 This is especially useful for debugging XSLT mappings and ensuring the final XML structure meets your format requirements.
 
-<figure><img src="../../../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
 
 ## 6. Video Walkthrough
 
@@ -67,3 +67,6 @@ Use it to follow along with setup, editing, and previewing.\
 ## Effective rules and activation
 
 Organization-specific rules take precedence over defaults for the detected eDoc format. Check the active TRANSFORMATION and check which node supplies invoice_type in the transformed XML; the path depends on the format. Save stores a draft; use the checkmark to activate it after testing. A rendered Preview does not prove the stored document type. See the [classification troubleshooting guide](../credit-note-recognized-as-invoice.md) for codes 381/261, later scripts and reprocessing safeguards.
+
+
+The views show an existing configuration and version. Settings vary by document type and format. Validate changes in a draft before activation.

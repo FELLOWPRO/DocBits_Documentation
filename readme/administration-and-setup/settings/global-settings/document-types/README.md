@@ -1,55 +1,57 @@
 # Dokumenttypen
 
-{% embed url="https://youtu.be/pFz_6tvNlU4" %}
-DocBits-Dokumenttypen: erstellen, konfigurieren und Verarbeitungseinstellungen zuweisen
+Das Referenzfeld eines eigenen Testtyps konfigurieren, Beschriftung und Prüfmerkmale speichern und nach dem Neuladen kontrollieren.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/document-types-fields-admin/v1/de.mp4" %}
+Dokumenttypen
 {% endembed %}
 
-<figure><img src="../../../../.gitbook/assets/document_types.png" alt="Dokumenttypen"><figcaption><p>Seite „Dokumenttypen“</p></figcaption></figure>
+[Mit Untertiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/document-types-fields-admin/v1/de.html)
+
+Die Aufnahme zeigt die echte Oberfläche. Einzelne Produktbeschriftungen können noch unübersetzt sein.
 
 ## Übersicht
 
-Die Seite „Document Types“ listet alle Dokumenttypen auf, die DocBits erkennt und verarbeitet. Sie ist in zwei Bereiche unterteilt:
+Dokumenttypen legen fest, welche Felder und Verarbeitungseinstellungen für eine Belegart gelten. DocBits stellt Standardtypen wie Rechnung und Gutschrift bereit. Für weitere Belegarten können Administratoren eigene Typen konfigurieren. Standardtypen lassen sich nicht löschen; eigene Typen verwalten Sie mit den entsprechenden Organisationsberechtigungen.
 
-* **Default Document Types**: Vorkonfigurierte Typen von DocBits (Rechnung, Gutschrift, Lieferschein, Auftragsbestätigung, Vertrag, ZUGFeRD usw.). Diese können nicht gelöscht werden.
-* **Custom Document Types**: Typen, die Sie für Ihre spezifischen geschäftlichen Anforderungen erstellen. Diese können bearbeitet und gelöscht werden.
+## Steuerelemente einer Dokumenttyp-Karte
 
-## Steuerelemente pro Dokumenttyp
+| Steuerelement | Bedeutung |
+| --- | --- |
+| Aktivieren | Schaltet den Dokumenttyp für die Verarbeitung ein oder aus. |
+| Extraction | Wählt den angezeigten Extraktionsmodus Flex oder Fix. Dieser Schalter ist von der Aktivierung des Dokumenttyps getrennt. |
+| Zahnrad | Öffnet weitere Einstellungen des Dokumenttyps. |
 
-Jede Dokumenttyp-Karte zeigt:
+Welche Verknüpfungen erscheinen, hängt vom Dokumenttyp, den Berechtigungen und den aktivierten Modulen ab. Dazu gehören Layouts, Felder, Tabellen, Skripte, Modelltraining und Dokument-Untertypen. Transformationsregeln, Validierungsregeln und E-Doc-Einstellungen werden bei den entsprechenden Funktionen angeboten. Weitere Optionen können innerhalb der Dokumenttyp-Einstellungen liegen.
 
-| Steuerelement | Beschreibung |
-|---------|-------------|
-| **Activate** | Schalter, um diesen Dokumenttyp für die Verarbeitung zu aktivieren oder zu deaktivieren. |
-| **Extraction** | Schalter, um die KI-basierte Datenextraktion für diesen Typ zu aktivieren oder zu deaktivieren. |
-| **Settings** (Zahnradsymbol) | Öffnet weitere Konfigurationsoptionen für den Dokumenttyp. |
+## Felder und Pflichtangaben konfigurieren
 
-## Konfigurations-Tabs
+Das Video verwendet einen bereits angelegten eigenen Testtyp. Die gezeigten Änderungen betreffen dessen Referenzfeld.
 
-Unterhalb jedes Dokumenttyps erreichen Sie die folgenden Konfigurations-Tabs:
+1. Öffnen Sie den Dokumenttyp und wählen Sie **Felder**.
+2. Prüfen Sie Feldgruppe und technischen Feldnamen. Die sichtbare Beschriftung lässt sich ändern; die technische Feld-ID bleibt dabei erhalten.
+3. Aktivieren Sie **Erforderlich** für das Referenzfeld. Das Feld bleibt sichtbar und bearbeitbar. Die Pflichtangabe muss ausgefüllt werden; die Einstellung ergänzt keinen fehlenden Wert und garantiert keine korrekte Erkennung.
+4. Legen Sie mit **Überprüfung erforderlich** die ausdrückliche Feldprüfung gesondert fest. Schreibschutz, Sichtbarkeit sowie OCR- und Match-Score-Schwellenwerte haben jeweils eine eigene Bedeutung.
+5. Wählen Sie **Einstellungen speichern**, öffnen Sie die Seite erneut und kontrollieren Sie die gespeicherte Beschriftung und die gesetzten Merkmale.
 
-| Tab | Beschreibung |
-|-----|-------------|
-| **Labels** | Anzeigebezeichnungen und Übersetzungen für den Dokumenttyp verwalten. |
-| **Edit layout** | Anpassen, wie das Dokument in der Validierungsansicht erscheint, einschließlich der Feldpositionen. |
-| **Document Sub Types** | Unterkategorien für diesen Dokumenttyp konfigurieren (z. B. verschiedene Rechnungsformate). |
-| **Table columns** | Festlegen, welche Datenspalten in der Tabelle der Positionen erscheinen. |
-| **Fields** | Die aus dem Dokument extrahierten Datenfelder verwalten (Felder hinzufügen, bearbeiten oder entfernen). |
-| **Model Training** | Das KI-Modell zur Erkennung und Extraktion von Daten konfigurieren und trainieren. |
-| **Regex** | Reguläre Ausdrücke für die musterbasierte Datenextraktion einrichten. |
-| **Scripts** | Eigene Verarbeitungsskripte schreiben, die während der Dokumentenverarbeitung ausgeführt werden. |
-| **E-Doc** | Standards für elektronische Dokumente konfigurieren (XRechnung, ZUGFeRD, EDI, FatturaPA). |
+<figure><img src="../../../../.gitbook/assets/admin-reload-de-47188f97ee80.png" alt="Gespeicherte Feldmerkmale eines eigenen Testtyps."><figcaption><p>Gespeicherte Feldmerkmale eines eigenen Testtyps.</p></figcaption></figure>
+
+Das Video zeigt das Speichern und erneute Laden der Konfiguration. Prüfen Sie vor dem produktiven Einsatz zusätzlich repräsentative Dokumente und den vorgesehenen Ablauf mit einem normalen Benutzerkonto. Modelltraining, Rechnungsfreigabe und Export haben eigene Abläufe.
 
 ## Benutzerdefinierte Validierungsregeln
 
-Öffnen Sie einen Dokumenttyp und wählen Sie **Custom Validation Rules**, um seine eigenen Validierungsregeln zu verwalten. Um eine vorhandene Regel wiederzuverwenden, ohne sie neu aufzubauen, folgen Sie der Anleitung [Benutzerdefinierte Validierungsregel duplizieren](duplicate-a-custom-validation-rule.md). Die Anleitung erklärt den Regelnamen, den Regelschlüssel und die Bestätigungssteuerelemente.
+Falls die Funktion verfügbar ist, öffnen Sie die Validierungsregeln des Dokumenttyps. Eine vorhandene Regel können Sie nach der Anleitung [Benutzerdefinierte Validierungsregel duplizieren](duplicate-a-custom-validation-rule.md) wiederverwenden. Diese Regeln werden getrennt von den einzelnen Feldmerkmalen im Video verwaltet.
 
-## Einen benutzerdefinierten Dokumenttyp erstellen
+## Eigenen Dokumenttyp anlegen
 
-1. Scrollen Sie nach unten zum Abschnitt **Custom Document Types**.
-2. Klicken Sie auf **+ New**.
-3. Geben Sie einen Namen für den neuen Dokumenttyp ein.
-4. Konfigurieren Sie Felder, Layout und Extraktionseinstellungen nach Bedarf.
+Öffnen Sie den Bereich für benutzerdefinierte Dokumenttypen, wählen Sie **Neu** und vergeben Sie einen verständlichen Namen. Durchlaufen Sie die angebotenen Schritte für Extraktionsmodus, Felder, Gruppen und gegebenenfalls Tabellen. Die Einrichtung und ein erforderliches Modelltraining gehen über das Speichern eines Pflichtfeldmerkmals hinaus.
 
 {% hint style="info" %}
-Detaillierte Anleitungen zur Einrichtung finden Sie unter [Dokumenttyp einrichten](../../../setup/document-types/).
+Die Einrichtung beschreibt [Dokumenttyp einrichten](../../../setup/document-types/).
 {% endhint %}
+
+## Weiteres Video
+
+{% embed url="https://youtu.be/pFz_6tvNlU4" %}
+Dokumenttypen
+{% endembed %}

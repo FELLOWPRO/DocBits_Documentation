@@ -1,12 +1,12 @@
 # Standaardworkflow
 
-<figure><img src="../../../../.gitbook/assets/docbits_standard_workflow_diagram_2.svg" alt="DocBits Standaardworkflow Diagram 2"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-standard-nl.png" alt="Voorbeeld van een factuurworkflow met en zonder inkooporder. De goedkeuringsroutes, de termijn van twee dagen en de ERP-koppeling zijn onderdelen van dit voorbeeld en moeten passen bij de eigen configuratie."><figcaption><p>Voorbeeld van een factuurworkflow met en zonder inkooporder. De goedkeuringsroutes, de termijn van twee dagen en de ERP-koppeling zijn onderdelen van dit voorbeeld en moeten passen bij de eigen configuratie.</p></figcaption></figure>
 
 #### Overzicht van de workflowcomponenten:
 
-* **AP Invoice Email**: Het proces begint waarschijnlijk met een factuur die per e-mail wordt ontvangen.
+* **Ontvangst van facturen per e-mail**: Het proces begint waarschijnlijk met een factuur die per e-mail wordt ontvangen.
 * **DocBits**: Deze tool wordt mogelijk gebruikt voor de initiële documentbeheertaken, zoals het vastleggen en digitaliseren van facturen.
-* **Finance Review**: Facturen ondergaan een financiële beoordeling waarbij beslissingen worden genomen over de geldigheid en juistheid ervan.
+* **Financiële controle**: Facturen ondergaan een financiële beoordeling waarbij beslissingen worden genomen over de geldigheid en juistheid ervan.
 
 #### Stappen in de workflow:
 

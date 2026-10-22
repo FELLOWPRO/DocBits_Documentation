@@ -1,4 +1,4 @@
-# Toolbar & Canvas
+# Werkbalk en canvas
 
 ## Video: Bouwer en canvas
 

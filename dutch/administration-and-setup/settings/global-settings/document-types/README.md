@@ -1,7 +1,7 @@
 # Documenttypes
 
 {% embed url="https://youtu.be/pFz_6tvNlU4" %}
-DocBits Document Types Explained: Create, Configure & Assign Processing Settings
+DocBits Documenttypen uitgelegd: verwerkingsinstellingen maken, configureren en toewijzen
 {% endembed %}
 
 <figure><img src="../../../../.gitbook/assets/document_types.png" alt="Documenttypes"><figcaption><p>Pagina Documenttypes</p></figcaption></figure>
@@ -31,7 +31,7 @@ Onder elk documenttype hebt u toegang tot de volgende configuratietabbladen:
 |-----|-------------|
 | **Labels** | Beheer weergavelabels en vertalingen voor het documenttype. |
 | **Edit layout** | Wijzig hoe het document in de validatieweergave wordt getoond, inclusief veldposities. |
-| **Document Sub Types** | Configureer subcategorieën voor dit documenttype (bijv. verschillende factuurformaten). |
+| **Documentsubtypen** | Configureer subcategorieën voor dit documenttype (bijv. verschillende factuurformaten). |
 | **Table columns** | Pas aan welke gegevenskolommen in de tabel met regelitems verschijnen. |
 | **Fields** | Beheer de gegevensvelden die uit het document worden geëxtraheerd (velden toevoegen, bewerken of verwijderen). |
 | **Model Training** | Configureer en train het AI-model dat wordt gebruikt voor het herkennen en extraheren van gegevens. |

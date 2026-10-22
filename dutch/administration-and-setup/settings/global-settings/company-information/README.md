@@ -32,7 +32,7 @@ Dit onderdeel bevat de kerngegevens van uw bedrijf, gegroepeerd in vier gebieden
 
 Klik na het invoeren of bijwerken van velden op **Opslaan** om uw wijzigingen toe te passen. De **?**-pictogrammen naast de juridische identificatiegegevens tonen extra uitleg bij het veld. Selecteer de kop van een onderdeel om het formulier uit of in te klappen.
 
-## E-mail domains
+## E-maildomeinen
 
 Organisatiebeheerders kunnen **Instellingen → Bedrijfsinformatie → E-maildomeinen** openen om de domeinen te beheren die worden gebruikt voor automatische toewijzing aan een organisatie. Wanneer iemand zich aanmeldt met Microsoft of Google en nog geen lid is van een organisatie, kan DocBits die persoon aan deze organisatie toewijzen als het e-mailadres een van de vermelde domeinen gebruikt. Een domein kan slechts bij één organisatie horen.
 
@@ -52,7 +52,7 @@ Configureer standaardinstellingen voor het hele bedrijf:
 
 Klik na het aanbrengen van wijzigingen op **Opslaan**.
 
-## App-Color
+## Applicatiekleur
 
 Pas de primaire kleur van de DocBits-interface aan. Dit is handig om verschillende omgevingen visueel van elkaar te onderscheiden (bijv. dev versus productie).
 

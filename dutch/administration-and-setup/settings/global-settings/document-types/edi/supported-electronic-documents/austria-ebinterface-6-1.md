@@ -30,7 +30,7 @@ ebInterface 6.1 is de nieuwste versie van de Oostenrijkse e-factuurstandaard. He
 
 ## Standaard voorvertoning
 
-<figure><img src="austria-ebinterface-preview.png" alt="Voorvertoning van Austria ebInterface 6.1 factuur in DocBits"><figcaption><p>Standaard DocBits-voorvertoning voor een AUSTRIA EBINTERFACE 6.1-factuur</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Voorvertoning van Austria ebInterface 6.1 factuur in DocBits"><figcaption><p>Standaard DocBits-voorvertoning voor een AUSTRIA EBINTERFACE 6.1-factuur</p></figcaption></figure>
 
 ## Veldtoewijzing
 

@@ -1,4 +1,4 @@
-# Auto Accounting BOD Mapping
+# BOD-mapping voor automatische boeking
 
 De Auto-Accounting-workflow van DocBits consumeert twee BODs uit Infor M3 om kostenfacturen te verrijken met geldige boekhoudkundige dimensies:
 

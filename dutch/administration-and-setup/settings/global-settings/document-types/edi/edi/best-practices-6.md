@@ -2,37 +2,37 @@
 hidden: true
 ---
 
-# Best Practices
+# Aanbevolen werkwijzen
 
-Best practices for managing EDI configurations include regular updates to adapt to changing standards, thorough testing of EDI templates, and maintaining clear documentation of all transformations and structure descriptions.
+Voor goed beheer van EDI-configuraties zijn regelmatige updates bij veranderende normen, grondige tests van EDI-sjablonen en duidelijke documentatie van transformaties en structuurbeschrijvingen belangrijk.
 
-## Here are some best practices for managing EDI configurations:
+## Aanbevolen werkwijzen voor het beheer van EDI-configuraties
 
-**Regular updates and adaptations to changing standards:**
+**Regelmatig bijwerken bij veranderende normen:**
 
-* Stay up to date with changes in the EDI standards such as ANSI X12, EDIFACT, or industry-specific standards.
-* Schedule regular reviews of your EDI configurations to ensure they comply with current standards.
-* Adapt your EDI templates and transformations accordingly to reflect new requirements and changes in the standards.
+* Volg wijzigingen in EDI-normen zoals ANSI X12, EDIFACT en sectorspecifieke normen.
+* Plan regelmatige controles om na te gaan of uw EDI-configuraties aan de actuele normen voldoen.
+* Pas EDI-sjablonen en transformaties aan nieuwe eisen en gewijzigde normen aan.
 
-**Thorough testing of EDI templates:**
+**EDI-sjablonen grondig testen:**
 
-* Perform comprehensive testing of your EDI templates to ensure they deliver the expected results.
-* Use both automated and manual testing methods to verify the accuracy and reliability of your transformations. Test different scenarios and edge cases to ensure your templates are robust enough to handle different data formats.
+* Test EDI-sjablonen uitgebreid om te controleren of ze de verwachte resultaten opleveren.
+* Controleer de nauwkeurigheid en betrouwbaarheid van transformaties met geautomatiseerde en handmatige tests. Test uiteenlopende scenario's en grensgevallen om na te gaan of de sjablonen verschillende gegevensformaten aankunnen.
 
-**Clear documentation of all transformations and structure descriptions:**
+**Transformaties en structuurbeschrijvingen duidelijk documenteren:**
 
-* Maintain detailed documentation of all EDI transformations, including the XSLT scripts or other transformation rules you use.
-* Also document the structure descriptions of your EDI messages, including the segment, element and data type definitions.
-* Keep the documentation up to date and accessible to all team members working with the EDI implementation.
+* Houd gedetailleerde documentatie bij van alle EDI-transformaties, inclusief gebruikte XSLT-scripts en andere transformatieregels.
+* Documenteer ook de structuur van EDI-berichten, inclusief de definities van segmenten, elementen en gegevenstypen.
+* Houd de documentatie actueel en toegankelijk voor alle teamleden die aan de EDI-implementatie werken.
 
-**Versioning of configurations:**
+**Configuraties onder versiebeheer plaatsen:**
 
-* Implement versioning of your EDI configurations to track changes and revert to previous versions if necessary.
-* Use an appropriate version control system to track changes and ensure that all team members have access to the most current version.
+* Gebruik versiebeheer om wijzigingen in EDI-configuraties te volgen en zo nodig een eerdere versie te herstellen.
+* Gebruik een geschikt versiebeheersysteem, zodat wijzigingen traceerbaar zijn en iedereen toegang heeft tot de actuele versie.
 
-**Training and education of employees:**
+**Medewerkers opleiden:**
 
-* Ensure that your employees have the necessary knowledge and skills to effectively handle the EDI configurations.
-* Provide training and education to ensure your team is aware of the latest developments in EDI standards and practices.
+* Zorg dat medewerkers de kennis en vaardigheden hebben om EDI-configuraties effectief te beheren.
+* Bied training aan over de nieuwste ontwikkelingen in EDI-normen en werkwijzen.
 
-By implementing these best practices, you can improve the efficiency, accuracy and reliability of your EDI configurations and ensure they meet the ever-changing needs of your business and your business partners.
+Met deze werkwijzen verbetert u de efficiëntie, nauwkeurigheid en betrouwbaarheid van EDI-configuraties en houdt u deze afgestemd op de veranderende behoeften van uw bedrijf en zakenpartners.

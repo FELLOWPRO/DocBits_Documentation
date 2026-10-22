@@ -1,4 +1,4 @@
-# Inbound Emails
+# Inkomende e-mails
 
 ## Tabel `public.inbound_emails`
 
@@ -61,7 +61,7 @@ De tabel `public.inbound_emails` is ontworpen om informatie op te slaan en te be
 #### token
 
 * **Betekenis**: Een token gekoppeld aan de e-mail, mogelijk voor authenticatie of identificatie.
-* **Rol**: Authenticatie- of trackingveld.
+* **Rol**: Authenticatie- van trackingveld.
 * **Typische Inhoud**: Een lange, willekeurig gegenereerde reeks.
 
 #### created\_by

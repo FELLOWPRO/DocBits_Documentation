@@ -1,4 +1,4 @@
-# Email template
+# E-mailsjabloon
 
 ## Kolommen
 

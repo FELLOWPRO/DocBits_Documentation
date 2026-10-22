@@ -1,34 +1,35 @@
-# Auto Export if PO Matched 100%
+# Automatisch exporteren bij een PO-overeenkomst van 100%
 
-### Overview
+### Overzicht
 
-The **Auto Export if PO matched 100%** setting is a feature within the Purchase Order (PO) module that automates the export process when a purchase order matches perfectly with its expected criteria. This functionality is designed to streamline the workflow by reducing manual intervention in the export process, ensuring that perfectly matched purchase orders are handled efficiently.
+De instelling **Auto Export if PO matched 100%** in de module voor inkooporders (PO) bepaalt of een volledige overeenkomst met de PO de huidige factuur of het huidige document kan laten doorgaan naar automatische export. De inkooporder is de vergelijkingsreferentie; deze instelling exporteert de inkooporder zelf niet.
 
-### What Does It Do?
+### Werking
 
-When this setting is enabled, the system automatically exports the purchase order as soon as it matches 100% with the expected data. This means that if all items, quantities, prices, and other relevant details in the purchase order align with the predefined criteria, the order is immediately processed and exported without requiring additional steps from the user.
+Als de instelling actief is, wordt het resultaat van de PO-matching van het huidige document gecontroleerd. Een overeenkomst van 100% voldoet aan deze matchvoorwaarde, maar garandeert geen onmiddellijke export. Documentvalidatie, het geconfigureerde exportproces, vereiste goedkeuringen en openstaande taken kunnen de export nog blokkeren of vertragen. Een onvolledige overeenkomst blokkeert automatische export op grond van deze voorwaarde.
 
-### Benefits
+### Voordelen
 
-* **Efficiency**: By automating the export of perfectly matched POs, this feature saves time and reduces the workload on administrators and users.
-* **Accuracy**: Ensures that only those POs which have been verified to match 100% with the expected criteria are exported, reducing the risk of errors.
-* **Speed**: The immediate processing of matching POs allows for faster order handling and reduces delays in the supply chain.
+* **Efficiëntie:** Kan handmatig werk verminderen voor facturen die volledig overeenkomen met hun PO en aan de overige vereisten voldoen.
+* **Controle:** Gebruikt het resultaat van de PO-matching als extra exportvoorwaarde.
+* **Verwerkingstijd:** Kan de verwerking van geschikte facturen versnellen; het moment van export hangt af van de andere procesvoorwaarden.
 
-### How to Use
+### Gebruik
 
-1. **Enable the Feature**:
-   * Navigate to the Purchase Order settings.
-   * Locate the **Auto Export if PO matched 100%** toggle.
-   * Turn on the toggle to enable the feature.
-2. **Monitoring**:
-   * Once enabled, the system will automatically export POs that match 100% with their expected criteria.
-   * You can monitor the export activity through the PO dashboard or other related monitoring tools.
-3. **Considerations**:
-   * Ensure that your PO criteria are correctly defined and accurate to avoid any unwanted exports.
-   * Regularly review the POs processed through this feature to ensure that the automation is functioning as expected.
+1. **Functie inschakelen:**
+   * Open de instellingen voor de inkooporder.
+   * Zoek de schakelaar **Auto Export if PO matched 100%** en zet deze aan.
+2. **Verwerking volgen:**
+   * Controleer de match-, validatie- en exportstatus van de huidige factuur.
+   * Wordt deze ondanks een overeenkomst van 100% niet geëxporteerd, controleer dan de exportconfiguratie, vereiste goedkeuringen en openstaande taken.
+3. **Configuratie controleren:**
+   * Controleer of de matchcriteria en exportinstellingen bij het gewenste proces passen.
+   * Beoordeel regelmatig de geëxporteerde facturen en uitzonderingen.
 
-### When to Use This Feature
+### Wanneer gebruiken?
 
-* **High Volume Processing**: Ideal for environments where a large number of POs are processed regularly, and there is a high confidence in the data matching.
-* **Routine Orders**: Useful for standard or routine orders where variations are minimal and accuracy is consistent.
-* **Time-Sensitive Orders**: Beneficial when time is of the essence, and you need to expedite the processing of matching POs.
+* **Veel facturen:** Wanneer veel facturen betrouwbaar met inkooporders kunnen worden vergeleken.
+* **Terugkerende inkopen:** Wanneer hoeveelheden, prijzen en andere matchcriteria stabiel zijn.
+* **Tijdkritische verwerking:** Wanneer geschikte facturen automatisch moeten doorgaan zodra aan alle voorwaarden is voldaan.
+
+Als de PO-matching voor het documenttype actief is, staat de afzonderlijke optie `ALLOW_AUTO_EXPORT_FOR_NON_MATCHABLE_PO_LINES` ook de status `NO_MATCHABLE_PO_LINES` toe. Andere onvolledige matches worden hierdoor niet algemeen voor export vrijgegeven.

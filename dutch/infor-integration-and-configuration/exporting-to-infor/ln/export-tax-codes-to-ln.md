@@ -11,9 +11,9 @@ Deze handleiding leidt u door het installatieproces om ervoor te zorgen dat bela
 
 ### **Stap 1: Lijst met waarden instellen**
 
-1.  Ga naar **Settings** -> **Document Processing** -> **List of Values**.
+1.  Ga naar **Instellingen** -> **Documentverwerking** -> **Lijst met waarden**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-nl.png" alt="Waardenlijsten in DocBits; de namen van organisatiespecifieke lijsten zijn afgeschermd."><figcaption><p>Waardenlijsten in DocBits; de namen van organisatiespecifieke lijsten zijn afgeschermd.</p></figcaption></figure>
 2.  Klik op **New**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2 (1).png" alt=""><figcaption></figcaption></figure>
@@ -38,7 +38,7 @@ Deze handleiding leidt u door het installatieproces om ervoor te zorgen dat bela
 
     * Als u meerdere waarden hebt, kunt u op **Add More Values** klikken om ze toe te voegen.
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt=""><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-nl.png" alt="Formulier voor een nieuwe waarde met suborganisatie, synoniemen en vertalingen. Er is geen waarde ingevoerd of opgeslagen; de taalselectie betreft de vertaling van de waarde."><figcaption><p>Formulier voor een nieuwe waarde met suborganisatie, synoniemen en vertalingen. Er is geen waarde ingevoerd of opgeslagen; de taalselectie betreft de vertaling van de waarde.</p></figcaption></figure></div>
 
     * **OPMERKING:** U vindt de belastingcodes in LN onder: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
@@ -48,7 +48,7 @@ Deze handleiding leidt u door het installatieproces om ervoor te zorgen dat bela
 
 1.  Ga naar **Settings** -> **Global Settings** -> **Document Types**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-nl.png" alt="Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd."><figcaption><p>Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd.</p></figcaption></figure>
 2.  Kies het menu **Fields** van het documenttype waaraan u de velden wilt toevoegen.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
@@ -56,7 +56,7 @@ Deze handleiding leidt u door het installatieproces om ervoor te zorgen dat bela
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_8.png" alt=""><figcaption></figcaption></figure>
 
-<table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>Name</strong></td><td><strong>Title</strong></td><td><strong>Field Type</strong></td><td><strong>List of Values</strong></td></tr><tr><td><code>tax_country</code></td><td>Tax Country</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>Tax Country Reduced</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>Tax Country Free</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>Tax Code</td><td>Dropdown</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>Tax Code Reduced</td><td>Dropdown</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>Tax Code Free</td><td>Dropdown</td><td>Tax_Code_Free</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>Naam</strong></td><td><strong>Titel</strong></td><td><strong>Veldtype</strong></td><td><strong>Lijst met waarden</strong></td></tr><tr><td><code>tax_country</code></td><td>Belasting land</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>Belastingland verlaagd</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>Belastingland Gratis</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>Belastingcode</td><td>Dropdown</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>Belastingwet verlaagd</td><td>Dropdown</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>Belastingcode gratis</td><td>Dropdown</td><td>Tax_Code_Free</td></tr></tbody></table>
 
 <div><figure><img src="../../../.gitbook/assets/TaxCodes_10.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_11.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_12.png" alt=""><figcaption></figcaption></figure></div>
 
@@ -70,7 +70,7 @@ Deze handleiding leidt u door het installatieproces om ervoor te zorgen dat bela
 
 1.  Ga naar **Settings** -> **Global Settings** -> **Document Types**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-nl.png" alt="Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd."><figcaption><p>Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd.</p></figcaption></figure>
 2.  Open het menu **Edit Layout** voor het documenttype dat u wilt bewerken.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt=""><figcaption></figcaption></figure>
@@ -105,9 +105,9 @@ Nadat u een nieuw document in DocBits hebt geüpload met de juiste documentinste
 
 ### **Stap 1: Lijst met waarden instellen**
 
-1.  Ga naar **Settings** -> **Document Processing** -> **List of Values**.
+1.  Ga naar **Instellingen** -> **Documentverwerking** -> **Lijst met waarden**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-nl.png" alt="Waardenlijsten in DocBits; de namen van organisatiespecifieke lijsten zijn afgeschermd."><figcaption><p>Waardenlijsten in DocBits; de namen van organisatiespecifieke lijsten zijn afgeschermd.</p></figcaption></figure>
 2.  Klik op **New**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2 (1).png" alt=""><figcaption></figcaption></figure>
@@ -132,7 +132,7 @@ Nadat u een nieuw document in DocBits hebt geüpload met de juiste documentinste
 
     * Als u meerdere waarden hebt, kunt u op **Add More Values** klikken om ze toe te voegen.
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt=""><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-nl.png" alt="Formulier voor een nieuwe waarde met suborganisatie, synoniemen en vertalingen. Er is geen waarde ingevoerd of opgeslagen; de taalselectie betreft de vertaling van de waarde."><figcaption><p>Formulier voor een nieuwe waarde met suborganisatie, synoniemen en vertalingen. Er is geen waarde ingevoerd of opgeslagen; de taalselectie betreft de vertaling van de waarde.</p></figcaption></figure></div>
 
     * **OPMERKING:** U vindt de belastingcodes in LN onder: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
@@ -142,7 +142,7 @@ Nadat u een nieuw document in DocBits hebt geüpload met de juiste documentinste
 
 1.  Ga naar **Settings** -> **Global Settings** -> **Document Types**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-nl.png" alt="Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd."><figcaption><p>Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd.</p></figcaption></figure>
 2.  Kies het menu **Fields** van het documenttype waaraan u de velden wilt toevoegen.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
@@ -150,7 +150,7 @@ Nadat u een nieuw document in DocBits hebt geüpload met de juiste documentinste
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_8.png" alt=""><figcaption></figcaption></figure>
 
-<table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>Name</strong></td><td><strong>Title</strong></td><td><strong>Field Type</strong></td><td><strong>Value</strong></td></tr><tr><td><code>tax_country</code></td><td>Tax Country</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>Tax Country Reduced</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>Tax Country Free</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>Tax Code</td><td>Dropdown</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>Tax Code Reduced</td><td>Dropdown</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>Tax Code Free</td><td>Dropdown</td><td>Tax_Code_Free</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>Naam</strong></td><td><strong>Titel</strong></td><td><strong>Veldtype</strong></td><td><strong>Waarde</strong></td></tr><tr><td><code>tax_country</code></td><td>Belasting land</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>Belastingland verlaagd</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>Belastingland Gratis</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>Belastingcode</td><td>Dropdown</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>Belastingwet verlaagd</td><td>Dropdown</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>Belastingcode gratis</td><td>Dropdown</td><td>Tax_Code_Free</td></tr></tbody></table>
 
 <div><figure><img src="../../../.gitbook/assets/TaxCodes_10.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_11.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_12.png" alt=""><figcaption></figcaption></figure></div>
 
@@ -164,7 +164,7 @@ Nadat u een nieuw document in DocBits hebt geüpload met de juiste documentinste
 
 1.  Ga naar **Settings** -> **Global Settings** -> **Document Types**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-nl.png" alt="Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd."><figcaption><p>Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd.</p></figcaption></figure>
 2.  Open het menu **Edit Layout** voor het documenttype dat u wilt bewerken.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt=""><figcaption></figcaption></figure>

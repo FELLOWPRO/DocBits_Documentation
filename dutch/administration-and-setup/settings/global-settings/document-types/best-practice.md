@@ -1,120 +1,120 @@
-# Best Practice
+# Aanbevolen werkwijze
 
-Configuring document types in Docbits requires care and expertise to ensure that document processing is efficient and accurate. Here are some best practices for configuring document types, including recommendations for setting up effective regex patterns and tips for training models to improve accuracy:
+Documenttypen instellen in DocBits vereist zorgvuldigheid en deskundigheid voor een efficiënte en nauwkeurige documentverwerking. Hieronder vindt u aanbevelingen voor de configuratie, waaronder effectieve regex-patronen en het trainen van modellen om de nauwkeurigheid te verbeteren:
 
 
 
-### **Planning and analysis**&#x20;
+### **Planning en analyse**&#x20;
 
-**Best practices**
+**Aanbevolen werkwijzen**
 
-**Requirements analysis:**&#x20;
+**Behoefteanalyse:**&#x20;
 
-* Conduct a thorough analysis of the requirements to understand which document types are needed and what information needs to be extracted from them.&#x20;
+* Analyseer grondig welke documenttypen nodig zijn en welke informatie eruit moet worden gehaald.&#x20;
 
-**Pilot projects:**&#x20;
+**Proefprojecten:**&#x20;
 
-* Start with pilot projects to test the configuration and extraction rules before applying them to the entire system.
+* Begin met proefprojecten om de configuratie en extractieregels te testen voordat u ze in het hele systeem toepast.
 
-### Setting up layouts&#x20;
+### Lay-outs instellen&#x20;
 
-**Best practices**
+**Aanbevolen werkwijzen**
 
-**Consistency:**&#x20;
+**Consistentie:**&#x20;
 
-* Make sure that documents of one type have a consistent layout. This makes configuration and data extraction easier.&#x20;
+* Zorg dat documenten van hetzelfde type een consistente lay-out hebben. Dit vereenvoudigt de configuratie en gegevensextractie.&#x20;
 
-**Use templates:**&#x20;
+**Sjablonen gebruiken:**&#x20;
 
-* Use document templates to ensure consistency and simplify setup.
+* Gebruik documentsjablonen voor consistentie en een eenvoudigere inrichting.
 
-### Field definitions and metadata&#x20;
+### Velddefinities en metadata&#x20;
 
-**Best practices**
+**Aanbevolen werkwijzen**
 
-**Unique field names:**&#x20;
+**Unieke veldnamen:**&#x20;
 
-* Use unique and meaningful names for fields to avoid confusion.&#x20;
+* Geef velden unieke en betekenisvolle namen om verwarring te voorkomen.&#x20;
 
-**Relevant metadata:**&#x20;
+**Relevante metadata:**&#x20;
 
-* Define only the fields that are really necessary to reduce complexity and increase efficiency.&#x20;
+* Definieer alleen de noodzakelijke velden om de complexiteit te beperken en de efficiëntie te verhogen.&#x20;
 
-**Formatting guidelines:**&#x20;
+**Opmaakrichtlijnen:**&#x20;
 
-* Set clear formatting guidelines for each field to facilitate validation and extraction
+* Leg voor elk veld duidelijke opmaakrichtlijnen vast om validatie en extractie te vereenvoudigen.
 
-### Training models for data extraction&#x20;
+### Modellen trainen voor gegevensextractie&#x20;
 
-**Best practices**
+**Aanbevolen werkwijzen**
 
-**Use quality data:**&#x20;
+**Kwalitatieve gegevens gebruiken:**&#x20;
 
-* Use high-quality and representative data to train the models.&#x20;
+* Gebruik hoogwaardige en representatieve gegevens om de modellen te trainen.&#x20;
 
-**Data enrichment:**&#x20;
+**Gegevensverrijking:**&#x20;
 
-* Enrich the training dataset by adding different document examples to increase the robustness of the model.&#x20;
+* Voeg uiteenlopende documentvoorbeelden toe aan de trainingsgegevens om het model robuuster te maken.&#x20;
 
-**Iterative training:**&#x20;
+**Iteratief trainen:**&#x20;
 
-* Train the model iteratively and evaluate the results regularly to achieve continuous improvements.&#x20;
+* Train het model in meerdere rondes en beoordeel de resultaten regelmatig voor voortdurende verbetering.&#x20;
 
 **Tips:**&#x20;
 
 **Transfer learning:**&#x20;
 
-* Leverage pre-trained models and tune them with specific document examples to reduce training time and increase accuracy.&#x20;
+* Gebruik vooraf getrainde modellen en stem ze af met specifieke documentvoorbeelden om de trainingstijd te verkorten en de nauwkeurigheid te verbeteren.&#x20;
 
-**Hyperparameter tuning:**&#x20;
+**Hyperparameters afstemmen:**&#x20;
 
-* Experiment with different hyperparameters to find the optimal configuration for your model.
+* Probeer verschillende hyperparameters om de beste configuratie voor uw model te vinden.
 
-### Validation and extraction rules&#x20;
+### Validatie- en extractieregels&#x20;
 
-**Best practices**&#x20;
+**Aanbevolen werkwijzen**&#x20;
 
-**Multi-step validation:**&#x20;
+**Validatie in meerdere stappen:**&#x20;
 
-* Implement multi-step validation rules to check the correctness of the extracted data.&#x20;
+* Implementeer validatieregels in meerdere stappen om de juistheid van de geëxtraheerde gegevens te controleren.&#x20;
 
-**Combine rule-based and ML-based approaches:**&#x20;
+**Regelgebaseerde en ML-gebaseerde methoden combineren:**&#x20;
 
-* Use a combination of rule-based and machine learning approaches to extract and validate data.&#x20;
+* Combineer regelgebaseerde methoden en machinelearning om gegevens te extraheren en te valideren.&#x20;
 
-**Error management:**&#x20;
+**Foutenbeheer:**&#x20;
 
-* Set up mechanisms to detect and fix faulty extractions.
+* Richt mechanismen in om onjuiste extracties te herkennen en te corrigeren.
 
-### Automation workflows&#x20;
+### Geautomatiseerde workflows&#x20;
 
-**Best practices**
+**Aanbevolen werkwijzen**
 
-**Clearly defined workflows:**&#x20;
+**Duidelijk gedefinieerde workflows:**&#x20;
 
-* Define clear and traceable automation workflows for each document type.&#x20;
+* Definieer duidelijke en controleerbare geautomatiseerde workflows voor elk documenttype.&#x20;
 
-**Continuous monitoring:**&#x20;
+**Voortdurende bewaking:**&#x20;
 
-* Monitor automation workflows regularly to evaluate their performance and identify optimization potential.&#x20;
+* Controleer geautomatiseerde workflows regelmatig om hun prestaties te beoordelen en verbeterpunten te vinden.&#x20;
 
-**Incorporate user feedback:**&#x20;
+**Gebruikersfeedback verwerken:**&#x20;
 
-* Integrate user feedback to continuously improve workflows.
+* Gebruik feedback van gebruikers om workflows voortdurend te verbeteren.
 
-### User rights and access control&#x20;
+### Gebruikersrechten en toegangsbeheer&#x20;
 
-**Best practices**&#x20;
+**Aanbevolen werkwijzen**&#x20;
 
-**Role-based access:**&#x20;
+**Rolgebaseerde toegang:**&#x20;
 
-* Implement role-based access controls to ensure that only authorized users have access to certain document types and fields.&#x20;
+* Richt rolgebaseerd toegangsbeheer in, zodat alleen bevoegde gebruikers toegang hebben tot bepaalde documenttypen en velden.&#x20;
 
-**Regular review:**&#x20;
+**Regelmatige controle:**&#x20;
 
-* Regularly review access controls and adapt them to changing requirements.
+* Controleer de toegangsrechten regelmatig en pas ze aan veranderende eisen aan.
 
 
 
-Configuring document types in Docbits requires careful planning and continuous adjustment to achieve optimal results. By applying the best practices above, you can significantly increase the efficiency and accuracy of document processing and data extraction.
+Een optimale configuratie van documenttypen in DocBits vraagt om zorgvuldige planning en voortdurende aanpassing. Met de bovenstaande werkwijzen kunt u de efficiëntie en nauwkeurigheid van documentverwerking en gegevensextractie aanzienlijk verbeteren.
 

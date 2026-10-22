@@ -9,7 +9,7 @@ Deze functies vereisen dat de **OPENSEARCH\_ENABLED** licentie/voorkeur is geact
 Functies voor het doorzoeken van documentarchieven, het vinden van vergelijkbare documenten en het opvragen van ERP-stamgegevens. Deze zoeken in **alle documenten** van de organisatie — in tegenstelling tot `get_document_content()` dat alleen de tekst van het huidige document leest.
 
 {% hint style="success" %}
-**Security:** The `org_id` is automatically injected by the script sandbox. You never need to pass it — your scripts always operate within your own organization's data.
+**Beveiliging:** De `org_id` wordt automatisch geïnjecteerd door de scriptsandbox. U hoeft het nooit door te geven; uw scripts werken altijd binnen de gegevens van uw eigen organisatie.
 {% endhint %}
 
 **Bron:** `module/script/helper/document_script_functions.py`

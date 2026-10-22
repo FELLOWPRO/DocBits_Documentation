@@ -21,7 +21,7 @@ Touchless Intelligence laat u zien **waarom** een PO-match mislukte en **hoe** D
 | Fase | Vraag | Stopt met |
 | --- | --- | --- |
 | **9 · PO-opzoeking** | Is er een inkooporder voor deze factuur? | *Purchase order not found* (inkooporder niet gevonden) |
-| **10 · PO-regelmatch** | Komt elke factuurregel overeen met een PO-regel? | *PO item mismatch*, *PO line identifier mismatch*, *Unit price outside PO tolerance*, *Quantity outside PO tolerance* |
+| **10 · PO-regelmatch** | Komt elke factuurregel overeen met een PO-regel? | *PO item komt niet overeen*, *PO lijn-ID komt niet overeen*, *Eenheidsprijs buiten PO tolerantie*, *Aantal buiten PO tolerantie* |
 
 Een document dat bij fase 9 of 10 stopt, verschijnt in de leverancierswachtrij met de eerste blokkade **PO-matching**.
 
@@ -126,4 +126,4 @@ Nadat een transformatieregel voor de tabel van een leverancier live ging, daalde
 * [Documentspoor](touchless-document-trace.md)
 * [Wijzigingsvoorstellen en rapporten](touchless-change-proposals.md)
 * [Regels voor het Matchen van Inkooporders](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
-* PO Matching Cards: Complete Guide
+* PO Bijpassende kaarten: complete gids

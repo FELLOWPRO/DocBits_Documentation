@@ -30,7 +30,7 @@ NF-e (Nota Fiscal Eletrônica, `<mod>55</mod>`) is de Braziliaanse elektronische
 
 ## Standaard Voorbeeld
 
-<figure><img src="brazil-nfe-preview.png" alt="Brazil NF-e voorbeeld in DocBits"><figcaption><p>Standaard DocBits-voorbeeld voor een BRAZIL NF-E document</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/brazil-nfe-preview.png" alt="Brazil NF-e voorbeeld in DocBits"><figcaption><p>Standaard DocBits-voorbeeld voor een BRAZIL NF-E document</p></figcaption></figure>
 
 ## Veldmapping
 

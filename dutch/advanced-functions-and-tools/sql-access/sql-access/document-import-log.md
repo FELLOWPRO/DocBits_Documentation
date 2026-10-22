@@ -1,4 +1,4 @@
-# Document Import log
+# Logboek voor documentimport
 
 ## Kolommen
 

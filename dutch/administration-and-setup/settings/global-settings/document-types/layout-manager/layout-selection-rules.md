@@ -19,8 +19,8 @@ De herkomst blijft beschikbaar — als één voorwaarde van vele. Een regel kan 
 | Facturen van één leverancier hebben extra velden nodig (project, douanenummer) | onmogelijk zonder nieuwe herkomst | regel *Supplier ID is 20723* → lay-out "Factuur met projectvelden" |
 | DE-, AT- en CH-documenten moeten er hetzelfde uitzien | drie kopieën van dezelfde lay-out om te onderhouden | één lay-out, één regel per herkomst (of een ANY-groep) die ernaar verwijst |
 | E-facturen hebben een eenvoudiger scherm nodig dan gescande pdf's | niet mogelijk | regel *Extraction Method is ELECTRONIC_DOCUMENT* → lay-out "E-factuur" |
-| Facturen met hoge waarde hebben meer velden nodig op het goedkeuringsscherm | niet mogelijk | Approval-regel *Total Amount greater than 10000* → lay-out "Goedkeuring hoge waarde" |
-| De tweede goedkeurder moet een ander scherm zien dan de eerste | apart lay-outtype "tweede goedkeuring" | Approval-regel *Document Status is Pending second approval* → lay-out "Tweede goedkeuring" |
+| Facturen met hoge waarde hebben meer velden nodig op het goedkeuringsscherm | niet mogelijk | Goedkeuringsregel *Totaalbedrag groter dan 10000* → lay-out "Goedkeuring hoge waarde" |
+| De tweede goedkeurder moet een ander scherm zien dan de eerste | apart lay-outtype "tweede goedkeuring" | Goedkeuringsregel *Documentstatus is in afwachting van tweede goedkeuring* → lay-out "Tweede goedkeuring" |
 
 ## Op regels gebaseerde lay-outs inschakelen
 
@@ -47,7 +47,7 @@ Er wordt niets verwijderd of gewijzigd aan de lay-outs zelf. Direct na activerin
 
 **Uitschakelen** brengt het documenttype onmiddellijk terug naar selectie op basis van herkomst. De regels blijven bewaard maar worden niet gebruikt, en ze werken weer zodra u de schakelaar opnieuw aanzet.
 
-## Het scherm Layouts & Selection Rules
+## Het scherm Layouts & Selectieregels
 
 <figure><img src="../../../../../.gitbook/assets/s150-layouts-overview-nl.png" alt="Overzicht van lay-outs en selectieregels. De schermnaam Field validation blijft Engelstalig in het product."><figcaption><p>Overzicht van lay-outs en selectieregels. De schermnaam Field validation blijft Engelstalig in het product.</p></figcaption></figure>
 
@@ -195,7 +195,7 @@ Scherm **Goedkeuring** · prioriteit **5** · *Document Status is Pending second
 
 Scherm **Afwijzen** · prioriteit **10** · *Supplier ID is one of* `10040, 10041` · doel *Reject with reason codes*.
 
-## Best practices
+## Aanbevolen werkwijzen
 
 * **Specifiek vóór algemeen.** Leveranciersregels boven landregels, landregels boven de standaard.
 * **Laat prioriteitsruimte** (5, 10, 20 …) zodat nieuwe regels passen zonder hernummering.

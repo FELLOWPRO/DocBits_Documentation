@@ -35,5 +35,5 @@ Het Extended-profiel van ZUGFeRD 1.0 is het meest uitgebreide profiel en onderst
 ## Gerelateerd
 
 * [ZUGFeRD-configuratie](../zugferd/)
-* [ZUGFeRD-veldtoewijzing](../zugferd/versions/)
+* [ZUGFeRD-veldtoewijzing](../zugferd/README.md)
 * [Ondersteunde elektronische documenten](./)

@@ -30,7 +30,7 @@ ebInterface 6.0 introduceerde afstemming op de Europese norm EN 16931, met behou
 
 ## Standaard voorvertoning
 
-<figure><img src="austria-ebinterface-preview.png" alt="Voorvertoning van Austria ebInterface 6.0 factuur in DocBits"><figcaption><p>Standaard DocBits-voorvertoning voor een AUSTRIA EBINTERFACE 6.0-factuur</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Voorvertoning van Austria ebInterface 6.0 factuur in DocBits"><figcaption><p>Standaard DocBits-voorvertoning voor een AUSTRIA EBINTERFACE 6.0-factuur</p></figcaption></figure>
 
 ## Veldtoewijzing
 

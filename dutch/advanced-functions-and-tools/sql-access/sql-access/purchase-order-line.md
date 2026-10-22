@@ -1,4 +1,4 @@
-# Purchase Order line
+# Inkooporderregel
 
 ## Tabel `public.purchase_order_line`
 

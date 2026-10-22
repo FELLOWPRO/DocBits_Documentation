@@ -1,6 +1,6 @@
 # DocBits
 
-**DocBits. Make room for ambition.**
+**DocBits. Maak ruimte voor ambitie.**
 
 Van OCR/IDP naar businesslogica, goedkeuringen en Advanced Workflows.
 
@@ -38,7 +38,7 @@ Hieronder vindt u een overzicht van de unieke kenmerken en voordelen:
    * Maakt automatische boeking naar grootboekrekeningen mogelijk.
    * Staat het splitsen van bedragen per afdeling toe.
    * Ondersteunt het toewijzen van grootboekrekeningen door het team voor crediteurenbeheer.
-5. **Geïntegreerde validatie- en** [**goedkeuringsprocessen**](broken-reference)
+5. **Geïntegreerde validatie- en** [**goedkeuringsprocessen**](administration-and-setup/settings/global-settings/document-types/more-settings/approval/README.md)
    * Biedt geïntegreerde validatieprocessen om gegevensnauwkeurigheid te waarborgen.
    * Beschikt over goedkeurings[workflows](administration-and-setup/workflow/) om het documentbeheer te stroomlijnen.
 6. **Naadloze integratie**

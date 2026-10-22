@@ -825,7 +825,7 @@ DocBits biedt nu de mogelijkheid om de OCR (Optical Character Recognition) versi
 
 ### Nieuwe Functies:
 
-## Rule Manager
+## Regelbeheer
 
 [rule-manager](../../administration-and-setup/settings/document-processing/rule-manager/ "mention") biedt de flexibiliteit om conflictoplossingsregels te creëren en bewerken die zijn afgestemd op het DocBits factureringssysteem. Deze regels zijn ontworpen om automatisch discrepanties tussen factuurdetails en inkoopordergegevens (PO) af te handelen, wat nauwkeurige financiële reconciliatie garandeert. Het systeem past deze regels toe om factuurregels, kosten en belastingen te verwerken, en genereert waar nodig passende aanpassingen of notities.
 
@@ -1055,7 +1055,7 @@ In de komende release zal een belangrijke verbetering aan de classificatie- en e
 
 ## Maypole Release 5.55.8.10 - (17 mei)
 
-### Release Notes - Web App
+### Releaseopmerkingen: webapp
 
 #### Nieuwe Functies:
 
@@ -1089,7 +1089,7 @@ In de komende release zal een belangrijke verbetering aan de classificatie- en e
 
 ▪ Merge Activiteiten: Talrijke merges om functies, fixes en verbeteringen van meerdere ontwikkelingsbranches te integreren in de hoofdbranch.
 
-### What's New - API
+### Wat is er nieuw: API
 
 ▪ Cache Management Verbeteringen: De get\_receive\_delivery\_cache bijgewerkt om prestaties en betrouwbaarheid te verbeteren.
 
@@ -1109,7 +1109,7 @@ In de komende release zal een belangrijke verbetering aan de classificatie- en e
 
 ▪ Configuratie Updates: Verschillende updates aan de configuratiebestanden om systeemsetup en parameters te verbeteren.
 
-### Release Notes - Workflow
+### Releaseopmerkingen: workflows
 
 #### Verbeteringen:
 

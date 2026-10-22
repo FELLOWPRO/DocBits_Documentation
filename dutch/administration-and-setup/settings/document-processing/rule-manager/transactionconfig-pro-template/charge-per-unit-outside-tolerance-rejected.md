@@ -1,37 +1,33 @@
-# Case 15: Charge Line - Charge Per Unit Outside Tolerance (Rejected)
+# Geval 15: Regelkosten per eenheid buiten tolerantie (afgewezen)
 
-## Scenario:
+Het volgende scenario is een voorbeeld van een geconfigureerde mapping en geen aantoonbaar uitgerold standaardsjabloon. De werkelijke uitvoer, bedragen, tekens en documenttypen hangen af van de actieve `conflict_resolution`-regels en -expressies, de exportmapping en de goedkeuringsbesluiten. Elke hieronder beschreven debet- of creditnota is afhankelijk van die configuratie; het voorbeeld garandeert geen automatische uitgifte of wettelijke naleving.
 
-The header charge per unit is outside tolerance and has not been approved.
+## Scenario
 
-## Action:
+De kosten per eenheid op een kostenregel vallen buiten de tolerantie en de afwijking is niet goedgekeurd. Dit geval betreft regelkosten, geen kosten op kopniveau.
 
-The system adjusts the header charge to match the purchase order, processing the transaction accordingly, and generating any necessary notes.
+## Voorbeeldactie
 
-## Example:
+Een mapping die na afwijzing de PO-kosten gebruikt, zou de gefactureerde kosten per eenheid vervangen door de PO-waarde. Elke afzonderlijke correctie, debetnota of creditnota hangt af van de exportmapping en goedkeuringsbesluiten.
 
-* **Purchase Order (PO):**
-  * Header Charge Per Unit: $4.00
-  * Quantity: 1,500 units
-  * Total Header Charge Amount: $6,000.00
-* **Invoice Received:**
-  * Header Charge Per Unit: $5.00 (outside tolerance of 25%, rejected)
-  * Quantity: 1,500 units
-  * Total Header Charge Amount: $7,500.00
-* **Tolerance Levels:**
-  * Header Charge Per Unit Tolerance: ±5%
+## Voorbeeld
 
-Since the header charge per unit ($5.00) exceeds the acceptable tolerance range of 5% and has not been approved, the system will:
+* **Inkooporder (PO):**
+  * Regelkosten per eenheid: $4.00
+  * Hoeveelheid: 1,500 eenheden
+  * Totale regelkosten: $6,000.00
+* **Ontvangen factuur:**
+  * Regelkosten per eenheid: $5.00 — 25% boven de PO-waarde, buiten de geconfigureerde tolerantie van ±5%; afgewezen.
+  * Hoeveelheid: 1,500 eenheden
+  * Totale regelkosten: $7,500.00
+* **Geconfigureerde tolerantie:** Kosten per eenheid ±5%.
 
-1. **Reject the Invoiced Header Charge Per Unit:** The system does not accept the invoiced header charge per unit of $5.00 due to the variance exceeding the tolerance limit.
-2. **Adjust the Header Charge Per Unit:** The system adjusts the charge per unit to match the original purchase order or the approved charge per unit:
-   * Adjusted Header Charge Per Unit = $4.00 (from PO)
-3. **Recalculate the Total Header Charge Amount:** The system recalculates the total charge amount based on the adjusted charge per unit:
-   * **Corrected Total Header Charge Amount = Quantity × Adjusted Header Charge Per Unit**
-   * **Corrected Total Header Charge Amount = 1,500 units × $4.00 = $6,000.00**
-4. **Generate a Credit Note:** Since the original invoice total was higher than the corrected total, the system generates a credit note for the overcharged amount:
-   * **Credit Note Amount = Original Invoice Total - Corrected Total Header Charge Amount**
-   * **Credit Note Amount = $7,500.00 - $6,000.00 = $1,500.00**
-5. **Process the Invoice:** The system processes the invoice with the corrected total charge amount of $6,000.00 and issues a credit note for $1,500.00 to account for the overcharged amount.
+Voor deze voorbeeldmapping:
 
-This approach ensures that the transaction is aligned with the original terms of the purchase order, maintaining accurate financial processing while correcting any overcharges.
+1. Wijs de gefactureerde kosten van $5.00 per eenheid af, omdat de afwijking van 25% de tolerantie van ±5% overschrijdt en niet is goedgekeurd.
+2. Gebruik de PO-kosten van $4.00 per eenheid.
+3. Bereken de totale regelkosten opnieuw: **1,500 eenheden × $4.00 = $6,000.00**.
+4. Bereken het te veel gefactureerde bedrag: **$7,500.00 - $6,000.00 = $1,500.00**.
+5. Pas de geconfigureerde verwerking van het verschil toe. Een creditnota van $1,500.00 is een mogelijke uitkomst van de mapping en geen gegarandeerde systeemactie. Bedrag, teken, documenttype en uitgifte hangen af van de actieve regels, exportmapping en goedkeuringen.
+
+Valideer de mapping voor regelkosten en de resulterende boekhoudkundige documenten voordat u dit scenario in productie gebruikt.

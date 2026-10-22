@@ -1,28 +1,30 @@
-# Case 1, 2, 3: Quantity and Unit Price Within Tolerance
+# Geval 1, 2, 3: Hoeveelheid en eenheidsprijs binnen tolerantie
+
+Het volgende scenario is een voorbeeld van een geconfigureerde mapping en geen aantoonbaar uitgerold standaardsjabloon. De werkelijke uitvoer, bedragen, tekens en documenttypen hangen af van de actieve `conflict_resolution`-regels en -expressies, de exportmapping en de goedkeuringsbesluiten. Elke hieronder beschreven debet- of creditnota is afhankelijk van die configuratie; het voorbeeld garandeert geen automatische uitgifte of wettelijke naleving.
 
 ## Scenario:
 
-Both the quantity and unit price on the invoice are within an acceptable tolerance range compared to the purchase order.
+Zowel de hoeveelheid als de eenheidsprijs op de factuur liggen binnen een acceptabel tolerantiebereik vergeleken met de inkooporder.
 
-## Action:
+## Actie:
 
-The system accepts the invoice values and calculates the total amount based on the provided quantity and unit price.
+Het systeem accepteert de factuurwaarden en berekent het totaalbedrag op basis van de opgegeven hoeveelheid en eenheidsprijs.
 
-## Example:
+## Voorbeeld:
 
 **Purchase Order (PO):**
 
 Quantity: 100 units
 
-Unit Price: $10.00 per unit
+Eenheidsprijs: $10.00 per eenheid
 
 Total Amount: $1,000.00
 
 **Invoice Received:**
 
-Quantity: 101 units (within tolerance of 1%)
+Hoeveelheid: 101 eenheden (binnen tolerantie van 1%)
 
-Unit Price: $10.05 per unit (within tolerance of 0.5%)
+Eenheidsprijs: $10.05 per eenheid (binnen tolerantie van 0.5%)
 
 Total Amount: $1,015.05
 
@@ -30,20 +32,20 @@ Total Amount: $1,015.05
 
 Quantity Tolerance: ±2%
 
-Unit Price Tolerance: ±1%\
+Tolerantie per eenheidsprijs: ±1%\
 
 
-Since the quantity (101 units) and unit price ($10.05) are both within the acceptable tolerance levels compared to the purchase order, the system will:\
+Omdat de hoeveelheid (101 eenheden) en de eenheidsprijs ($10.05) beide binnen de aanvaardbare tolerantieniveaus vallen in vergelijking met de inkooporder, zal het systeem:\
 
 
-1\. **Accept the Invoice Values:** The quantity and unit price on the invoice are accepted as valid because they fall within the defined tolerance limits.
+1\. **Accepteer de factuurwaarden:** De hoeveelheid en eenheidsprijs op de factuur worden als geldig geaccepteerd omdat ze binnen de gedefinieerde tolerantiegrenzen vallen.
 
-2\. **Calculate the Total Amount:** The total amount is calculated using the accepted values:
+2\. **Bereken het totale bedrag:** Het totale bedrag wordt berekend met behulp van de geaccepteerde waarden:
 
-• Total Amount = Quantity × Unit Price
+• Totaalbedrag = Aantal × eenheidsprijs
 
-• Total Amount = 101 units × $10.05 per unit = $1,015.05
+• Totaalbedrag = 101 eenheden × $10.05 per eenheid = $1,015.05
 
-3\. **Process the Invoice:** The invoice is processed with the total amount of $1,015.05, and the financial records are updated accordingly.
+3\. **De factuur verwerken:** De factuur wordt verwerkt met een totaalbedrag van $1,015.05 en de financiële gegevens worden dienovereenkomstig bijgewerkt.
 
-This approach ensures that minor discrepancies that fall within acceptable tolerance levels do not lead to invoice rejections or delays in payment, thus streamlining the financial process.
+Deze aanpak zorgt ervoor dat kleine afwijkingen die binnen aanvaardbare tolerantieniveaus vallen, niet leiden tot factuurafwijzingen of vertragingen in de betaling, waardoor het financiële proces wordt gestroomlijnd.

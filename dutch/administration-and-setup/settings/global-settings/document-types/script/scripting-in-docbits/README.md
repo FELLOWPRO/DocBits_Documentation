@@ -1,4 +1,4 @@
-# Scripting in DocBits
+# Scripts in DocBits
 
 ## Docbits Scripting Gids
 

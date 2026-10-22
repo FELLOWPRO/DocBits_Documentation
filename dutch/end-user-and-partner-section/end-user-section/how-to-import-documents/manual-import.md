@@ -3,7 +3,7 @@
 Als je documenten handmatig wilt importeren in DocBits, volg dan deze eenvoudige stappen:
 
 {% embed url="https://youtu.be/5_11Q0JbeaU" %}
-DocBits Import Tutorial: Upload Documents, Drag & Drop + Manual vs Automatic Classification
+DocBits Tutorial importeren: documenten uploaden, slepen en neerzetten + handmatig versus automatische classificatie
 {% endembed %}
 
 * Klik op de Upload-knop op het DocBits Dashboard.

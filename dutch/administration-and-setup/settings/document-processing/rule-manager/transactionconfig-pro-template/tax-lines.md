@@ -1,40 +1,42 @@
-# Tax Lines
+# Belastingregels
+
+Het volgende scenario is een voorbeeld van een geconfigureerde mapping en geen aantoonbaar uitgerold standaardsjabloon. De werkelijke uitvoer, bedragen, tekens en documenttypen hangen af van de actieve `conflict_resolution`-regels en -expressies, de exportmapping en de goedkeuringsbesluiten. Elke hieronder beschreven debet- of creditnota is afhankelijk van die configuratie; het voorbeeld garandeert geen automatische uitgifte of wettelijke naleving.
 
 ## Scenario:
 
-Handles discrepancies in tax amounts between the invoice and purchase order.
+Verwerkt verschillen in belastingbedragen tussen de factuur en de inkooporder.
 
-## Action:
+## Actie:
 
-The system adjusts the tax lines according to the approved tax rates and amounts, ensuring compliance with applicable tax regulations.
+Het systeem past de belastingregels aan op basis van de goedgekeurde belastingtarieven en -bedragen, waardoor naleving van de toepasselijke belastingregels wordt gegarandeerd.
 
-## Example:
+## Voorbeeld:
 
 * **Purchase Order (PO):**
   * Subtotal Amount: $10,000.00
   * Tax Rate: 8%
-  * Expected Tax Amount: $800.00
-  * Total Amount with Tax: $10,800.00
+  * Verwacht belastingbedrag: $800.00
+  * Totaalbedrag inclusief belasting: $10,800.00
 * **Invoice Received:**
   * Subtotal Amount: $10,000.00
-  * Tax Rate: 10% (discrepancy)
-  * Invoiced Tax Amount: $1,000.00
-  * Total Amount with Tax: $11,000.00
+  * Belastingtarief: 10% (verschil)
+  * Gefactureerd belastingbedrag: $1,000.00
+  * Totaalbedrag inclusief belasting: $11,000.00
 
-Since the tax rate on the invoice (10%) differs from the expected tax rate (8%) and is not approved, the system will:
+Omdat het belastingtarief op de factuur (10%) afwijkt van het verwachte belastingtarief (8%) en niet is goedgekeurd, zal het systeem:
 
-1. **Reject the Invoiced Tax Rate:** The system does not accept the 10% tax rate because it does not match the approved rate in the purchase order.
-2. **Adjust the Tax Rate:** The system adjusts the tax rate to match the approved rate from the purchase order.
-   * Adjusted Tax Rate = 8% (from PO)
-3. **Recalculate the Tax Amount:** The system recalculates the tax amount based on the adjusted tax rate:
-   * **Corrected Tax Amount = Subtotal Amount × Adjusted Tax Rate**
-   * **Corrected Tax Amount = $10,000.00 × 8% = $800.00**
-4. **Recalculate the Total Amount:** The system recalculates the total amount including tax:
-   * **Corrected Total Amount with Tax = Subtotal Amount + Corrected Tax Amount**
-   * **Corrected Total Amount with Tax = $10,000.00 + $800.00 = $10,800.00**
-5. **Generate a Credit Note:** The system generates a credit note to correct the overcharged tax:
-   * **Credit Note Amount = Original Invoice Tax Amount - Corrected Tax Amount**
-   * **Credit Note Amount = $1,000.00 - $800.00 = $200.00**
-6. **Process the Invoice:** The system processes the invoice with the corrected tax amount of $800.00 and the total amount of $10,800.00, issuing a credit note for the $200.00 tax discrepancy.
+1. **Het gefactureerde belastingtarief afwijzen:** Het systeem accepteert het belastingtarief van 10% niet omdat dit niet overeenkomt met het goedgekeurde tarief in de inkooporder.
+2. **Het belastingtarief aanpassen:** Het systeem past het belastingtarief aan zodat het overeenkomt met het goedgekeurde tarief uit de inkooporder.
+   * Aangepast belastingtarief = 8% (vanaf PO)
+3. **Bereken het belastingbedrag opnieuw:** Het systeem berekent het belastingbedrag opnieuw op basis van het aangepaste belastingtarief:
+   * **Gecorrigeerd belastingbedrag = Subtotaal × Aangepast belastingtarief**
+   * **Gecorrigeerd belastingbedrag = $10,000.00 × 8% = $800.00**
+4. **Herbereken het totaalbedrag:** Het systeem herberekent het totaalbedrag inclusief belasting:
+   * **Gecorrigeerd totaalbedrag inclusief belasting = Subtotaal + Gecorrigeerd belastingbedrag**
+   * **Gecorrigeerd totaalbedrag met belasting = $10,000.00 + $800.00 = $10,800.00**
+5. **Een creditnota genereren:** Het systeem genereert een creditnota om de te veel in rekening gebrachte belasting te corrigeren:
+   * **Bedrag creditnota = Oorspronkelijk belastingbedrag op factuur - Gecorrigeerd belastingbedrag**
+   * **Bedrag creditnota = $1,000.00 - $800.00 = $200.00**
+6. **De factuur verwerken:** Het systeem verwerkt de factuur met het gecorrigeerde belastingbedrag van $800.00 en het totale bedrag van $10,800.00, en geeft een creditnota uit voor het belastingverschil van $200.00.
 
-This approach ensures that the invoice tax is consistent with the purchase order and complies with applicable tax regulations, preventing overpayment and ensuring accuracy in financial records.
+Deze aanpak zorgt ervoor dat de factuurbelasting consistent is met de inkooporder en voldoet aan de toepasselijke belastingregels, waardoor te hoge betalingen worden voorkomen en de nauwkeurigheid van de financiële administratie wordt gewaarborgd.

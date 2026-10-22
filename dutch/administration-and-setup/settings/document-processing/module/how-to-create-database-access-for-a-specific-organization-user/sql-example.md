@@ -2,5 +2,5 @@
 hidden: true
 ---
 
-# SQL Example
+# SQL-voorbeeld
 

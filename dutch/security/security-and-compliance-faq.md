@@ -225,7 +225,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 - **Leveranciers:** Sync.SupplierPartyMaster, Sync.RemitToPartyMaster
 - **Inkooporders:** Sync.PurchaseOrder
 - **Rekeningschema:** Sync.CodeDefinition (ChartOfAccounts)
-- **Flex Dimensions:** Sync.CodeDefinition (FlexDimensions)
+- **Flex-afmetingen:** Sync.CodeDefinition (FlexDimensions)
 - **Belastingcodes:** via BOD publish
 
 **Status:** ✅ Bevestigd

@@ -1,14 +1,14 @@
 # Faktura
 
-## Display attribute on every line item
+## Geef het attribuut weer op elk regelitem
 
-If you want to display a specific attribute (like the Purchase Order number) on every line item, follow the steps below. The approach will differ depending on whether you need the attribute in the JSON extraction or in the XSL output.
+Als u op elk regelitem een specifiek kenmerk (zoals het inkoopordernummer) wilt weergeven, volgt u de onderstaande stappen. De aanpak zal verschillen afhankelijk van of u het attribuut nodig hebt in de JSON-extractie of in de XSL-uitvoer.
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 14.33.16.png" alt=""><figcaption></figcaption></figure>
 
-### Method 1: Display Attribute in the JSON Extraction (DocBits config)
+### Methode 1: Attribuut weergeven in de JSON-extractie (DocBits config)
 
-1. Go to **Settings**
+1. Ga naar **Instellingen**
 2. Go to **Document Types**
 3. Select **Invoice/E-Doc**
 
@@ -19,11 +19,11 @@ If you want to display a specific attribute (like the Purchase Order number) on 
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.01.13.png" alt=""><figcaption></figcaption></figure>
 
-6. To create a draft, click the **pen** icon
+6. Om een concept te maken, klikt u op het pictogram **pen**
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 14.58.56.png" alt=""><figcaption></figcaption></figure>
 
-7. Inside the `"tables"` array, add the specific column you want to display by providing a name and path:
+7. Voeg binnen de `"tables"`-array de specifieke kolom toe die u wilt weergeven door een naam en pad op te geven:
 
 ```
 { 
@@ -32,19 +32,19 @@ If you want to display a specific attribute (like the Purchase Order number) on 
 }
 ```
 
-**NOTE:**  E-documents will always have the origin set to **Great Britain**, so the amounts will be saved in international format, using a **dot (.)** as the decimal separator.
+**NOTE:** Bij e-documenten is de oorsprong altijd ingesteld op **Groot-Brittannië**, dus de bedragen worden in internationaal formaat opgeslagen, met een **punt (.)** als decimaalteken.
 
 8. Save the draft
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.11.04.png" alt=""><figcaption></figcaption></figure>
 
-9. Make sure that your draft is the **active** one.
+9. Zorg ervoor dat uw concept **actief** is.
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 16.03.50.png" alt=""><figcaption></figcaption></figure>
 
-### Method 2: Display Attribute in the XSL Output (HTML/PDF preview)
+### Methode 2: Attribuut weergeven in de XSL-uitvoer (HTML/PDF voorbeeld)
 
-1. Go to **Settings**
+1. Ga naar **Instellingen**
 2. Go to **Document Types**
 3. Select **Invoice/E-Doc**
 
@@ -55,11 +55,11 @@ If you want to display a specific attribute (like the Purchase Order number) on 
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.23.06.png" alt=""><figcaption></figcaption></figure>
 
-6. To create a draft, click the **pen** icon
+6. Om een concept te maken, klikt u op het pictogram **pen**
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 14.58.56.png" alt=""><figcaption></figcaption></figure>
 
-7. In the `<xsl:for-each select="path">` block that generates the table rows, add a snippet like this where you want the attribute to appear (e.g., in its own column):
+7. In het `<xsl:for-each select="path">` blok dat de tabelrijen genereert, voegt u een fragment als dit toe waar u het attribuut wilt laten verschijnen (bijvoorbeeld in een eigen kolom):
 
 ```
 <tr>
@@ -75,12 +75,12 @@ If you want to display a specific attribute (like the Purchase Order number) on 
 </tr>
 ```
 
-**NOTE:**  E-documents will always have the origin set to **Great Britain**, so the amounts will be saved in international format, using a **dot (.)** as the decimal separator.
+**NOTE:** Bij e-documenten is de oorsprong altijd ingesteld op **Groot-Brittannië**, dus de bedragen worden in internationaal formaat opgeslagen, met een **punt (.)** als decimaalteken.
 
 8. Save the draft
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.11.04.png" alt=""><figcaption></figcaption></figure>
 
-9. Make sure that your draft is the **active** one.
+9. Zorg ervoor dat uw concept **actief** is.
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 16.03.50.png" alt=""><figcaption></figcaption></figure>

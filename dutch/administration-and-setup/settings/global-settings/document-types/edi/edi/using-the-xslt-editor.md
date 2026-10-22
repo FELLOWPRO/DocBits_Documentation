@@ -2,27 +2,27 @@
 hidden: true
 ---
 
-# Using the XSLT Editor
+# De XSLT-editor gebruiken
 
-Guide to using the XSLT Editor to create or modify transformations. Includes tips for testing and validating XSLT scripts to ensure they correctly transform document data into the required EDI format.
+Handleiding voor het maken en wijzigen van transformaties met de XSLT-editor, met tips om scripts te testen en te valideren en documentgegevens correct naar het vereiste EDI-formaat om te zetten.
 
-## Here's a guide to using the XSLT Editor to create or modify transformations, as well as tips for testing and validating XSLT scripts:
+## Transformaties maken, wijzigen, testen en valideren met de XSLT-editor
 
-**Opening the XSLT Editor:**
+**De XSLT-editor openen:**
 
-* Launch the XSLT editor of your choice. Popular options include Oxygen XML Editor, Altova XMLSpy, or simply a text editor with syntax highlighting for XSLT.
+* Open een XSLT-editor naar keuze, zoals Oxygen XML Editor, Altova XMLSpy of een teksteditor met syntaxisaccentuering voor XSLT.
 
-**Creating or modifying transformations:**
+**Transformaties maken of wijzigen:**
 
-* Define the rules for transforming the input data (e.g. XML) into the desired EDI format. Use XSLT templates to select the elements and attributes of the input XML and format them accordingly.
-* Use XSLT functions and statements such as [xsl:template](xsl:template), [xsl:apply-templates](xsl:apply-templates), [xsl:for-each](xsl:for-each)´, [xsl:value-of](xsl:value-of), etc. to perform the transformations.
-* Check your transformations carefully to ensure that all required data is extracted and formatted correctly.
+* Definieer regels om invoergegevens, zoals XML, naar het gewenste EDI-formaat om te zetten. Gebruik XSLT-sjablonen om elementen en attributen uit de invoer-XML te selecteren en correct op te maken.
+* Gebruik XSLT-functies en instructies zoals [xsl:template](xsl:template), [xsl:apply-templates](xsl:apply-templates), [xsl:for-each](xsl:for-each), [xsl:value-of](xsl:value-of) enzovoort om de transformaties uit te voeren.
+* Controleer de transformaties zorgvuldig om na te gaan of alle vereiste gegevens correct worden geëxtraheerd en opgemaakt.
 
-**Testing and validating XSLT scripts:**
+**XSLT-scripts testen en valideren:**
 
-* Use sample data to test your XSLT transformations. Ideally, this sample data should cover various scenarios and edge cases that may occur in the actual input data.
-* Run your XSLT scripts with the sample data and carefully check the output result. Make sure that the generated EDI output meets the expected specifications.
-* Validate your XSLT scripts against the XSLT specification to ensure they are syntactically correct and do not contain errors that could cause unexpected behavior.
-* Use tools such as XSLT debuggers to perform step-by-step testing when necessary and identify potential problems in your transformations.
+* Test uw XSLT-transformaties met voorbeeldgegevens die uiteenlopende scenario's en grensgevallen uit de werkelijke invoer afdekken.
+* Voer de XSLT-scripts uit met de voorbeeldgegevens en controleer de uitvoer zorgvuldig. Ga na of de EDI-uitvoer aan de verwachte specificaties voldoet.
+* Valideer de scripts tegen de XSLT-specificatie om syntaxisfouten en fouten die onverwacht gedrag veroorzaken te vinden.
+* Gebruik zo nodig hulpmiddelen zoals XSLT-debuggers om stapsgewijs te testen en problemen in de transformaties op te sporen.
 
-By carefully creating, testing, and validating your XSLT scripts, you can ensure that they correctly transform the input data into the required EDI format. This is critical for successful electronic data interaction between different business systems.
+Door XSLT-scripts zorgvuldig te maken, testen en valideren, kunt u invoergegevens correct naar het vereiste EDI-formaat omzetten. Dit is essentieel voor een geslaagde elektronische gegevensuitwisseling tussen bedrijfssystemen.

@@ -1,6 +1,6 @@
-# Variables
+# Variabelen
 
-## Video: Variabelen, tests en activering
+## Video: Variabelen, testen en activering
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/nl.mp4" %}
 

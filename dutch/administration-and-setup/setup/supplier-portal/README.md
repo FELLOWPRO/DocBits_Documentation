@@ -17,7 +17,7 @@ Deze pagina legt uit hoe je het **Leveranciersportaal** activeert en gebruikt, e
 
 Zodra de functie **Leveranciersportaal** is ingeschakeld, verschijnt er een nieuwe sectie **Leveranciersinstellingen** onderaan het menu **Instellingen**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_suppplier_settings.png)
+<figure><img src="../../../.gitbook/assets/prior-t012-nl.png" alt="Algemene instellingen van het leveranciersportaal: aanvullende uitnodigingsvelden."><figcaption><p>Algemene instellingen van het leveranciersportaal: aanvullende uitnodigingsvelden.</p></figcaption></figure>
 
 [**Algemene instellingen leverancier**](../../settings/supplier-setting/supplier-general-settings.md): Hier kun je het **Leveranciersportaal** aanpassen door je bedrijfslogo te uploaden—weergegeven in de header van alle e-mailsjablonen—en door juridische documenten zoals de Gebruiksvoorwaarden en Privacybeleid te beheren.
 

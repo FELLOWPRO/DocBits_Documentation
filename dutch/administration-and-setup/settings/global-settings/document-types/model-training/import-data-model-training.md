@@ -1,16 +1,21 @@
 # Gegevens importeren voor modeltraining
 
-Gebruik representatieve voorbeelddocumenten om de classificatie van het documenttype te trainen en te controleren. Kies bestanden in een door de import ondersteund formaat. Gebruik verschillende leveranciers en lay-outs die in uw proces voorkomen.
+Bereid documenten voor die representatief zijn voor de formaten, talen en documenttypen van de organisatie. Gebruik alleen bestandsformaten die je installatie accepteert. Vermijd duplicaten en houd trainingsdocumenten gescheiden van de documenten voor de evaluatie.
 
-## Voorbeelden importeren
+## Import openen
 
-Open de modeltraining van het bedoelde documenttype en kies import.
+Open de modeltraining bij het gewenste documenttype en kies de importfunctie.
 
-<figure><img src="../../../../../.gitbook/assets/s150-image-85-1-nl.png" alt="Trainingsgegevens importeren met bedrag- en datumformaat."><figcaption><p>Trainingsgegevens importeren met bedrag- en datumformaat.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-extra-model-training-overview-nl.png" alt="Bediening voor importeren, modeltraining en classificatietests. Deze opname toont geen uitgevoerd trainings- of nauwkeurigheidsresultaat."><figcaption><p>Bediening voor importeren, modeltraining en classificatietests. Deze opname toont geen uitgevoerd trainings- of nauwkeurigheidsresultaat.</p></figcaption></figure>
 
-1. Controleer het bedrag- en datumformaat voordat u bestanden toevoegt. Een punt of komma als decimaalteken en de volgorde van dag, maand en jaar beïnvloeden de interpretatie. Gebruik bijvoorbeeld 1.234,56 tegenover 1,234.56 en controleer welke notatie bij de documenten hoort.
-2. Selecteer de bedoelde bestanden of sleep ze naar het importgebied.
-3. Controleer zo nodig documenttype en subtype, en start uitsluitend de bedoelde import.
-4. Controleer de importstatus en eventuele foutmeldingen voordat u de voorbeelden voor training gebruikt.
+## Formaat en bestanden kiezen
 
-Open daarna de [modeltraining](README.md), controleer de beschikbare voorbeelden en start de bedoelde trainingsactie. Test de classificatie met andere, representatieve documenten. Een succesvolle import bewijst op zichzelf geen betrouwbare classificatie. De afbeelding toont het importvenster; zij bewijst geen uitgevoerde import of training.
+Kies het getal- en datumformaat dat bij de bestanden past en selecteer vervolgens de documenten. `1.234,56` en `1,234.56` gebruiken bijvoorbeeld verschillende scheidingstekens. Ook een datum zoals `05/06/2026` moet volgens het gekozen formaat worden geïnterpreteerd.
+
+<figure><img src="../../../../../.gitbook/assets/s150-image-85-1-nl.png" alt="Documentimport met de keuze voor bedrag- en datumnotatie; er is geen bestand geüpload."><figcaption><p>Documentimport met de keuze voor bedrag- en datumnotatie; er is geen bestand geüpload.</p></figcaption></figure>
+
+Controleer de selectie voordat je de import start. Wacht tot de verwerking klaar is en controleer fouten en het toegewezen documenttype. Corrigeer onjuiste classificaties en extracties voordat je de voorbeelden voor training gebruikt.
+
+## Trainen en evalueren
+
+Train het model met de functies en rechten die je versie biedt. Evalueer het resultaat vervolgens met een afzonderlijke steekproef. Meer trainingsdocumenten garanderen op zichzelf geen betere nauwkeurigheid. Zie [Het model testen](testing-the-model.md).

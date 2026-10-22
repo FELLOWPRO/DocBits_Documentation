@@ -33,7 +33,7 @@ ZATCA Fatoora gebruikt een **binair TLV**-formaat (1 byte tag-ID, 1 byte lengte,
 | 5 | 1 | BTW-totaal |
 | 6 | 2 | XML-factuurhash (Base64) |
 | 7 | 2 | Digitale handtekening (Base64) |
-| 8 | 2 | Public key (Base64) |
+| 8 | 2 | Publieke sleutel (Base64) |
 | 9 | 2 | Certificaathandtekening (Base64) |
 
 ### Geëxtraheerde Velden

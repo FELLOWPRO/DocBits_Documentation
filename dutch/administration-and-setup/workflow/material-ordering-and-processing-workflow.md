@@ -1,8 +1,8 @@
 ---
 description: >-
-  Explore the step-by-step workflow for material ordering, goods receipt, and
-  invoice processing with INFOR ERP and DocBits integration. Effective supplier
-  and document management in one.
+  Ontdek stap voor stap de workflow voor materiaalbestelling, goederenontvangst
+  en factuurverwerking met de integratie van INFOR ERP en DocBits. Beheer
+  leveranciers en documenten efficiënt op één plek.
 ---
 
 # Materiaalbestelling en -verwerkingsworkflow
@@ -46,4 +46,4 @@ Dit document beschrijft de workflow voor het bestellen van materialen bij levera
 * Zorg ervoor dat alle documenten geverifieerd en gearchiveerd zijn voor de administratie.
 * Afwijkingen in bestel- of factuurgegevens moeten direct worden opgelost om vertragingen te voorkomen.
 
-<figure><img src="../../../.gitbook/assets/docbits_material_workflow.svg" alt="DocBits Materiaal Workflow"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-material-nl.png" alt="Voorbeeldstroom voor materiaalbestellingen, orderbevestigingen, goederenontvangst en facturen tussen leverancier, inkoop, IDM, DocBits en boekhouding. Stem de controles en koppelingen af op de eigen configuratie."><figcaption><p>Voorbeeldstroom voor materiaalbestellingen, orderbevestigingen, goederenontvangst en facturen tussen leverancier, inkoop, IDM, DocBits en boekhouding. Stem de controles en koppelingen af op de eigen configuratie.</p></figcaption></figure>

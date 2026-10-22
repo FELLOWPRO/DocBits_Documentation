@@ -30,7 +30,7 @@ ebInterface is de Oostenrijkse e-factuurstandaard die wordt beheerd door de Oost
 
 ## Standaard voorvertoning
 
-<figure><img src="austria-ebinterface-preview.png" alt="Voorvertoning van Austria ebInterface factuur in DocBits"><figcaption><p>Standaard DocBits-voorvertoning voor een AUSTRIA EBINTERFACE-factuur</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Voorvertoning van Austria ebInterface factuur in DocBits"><figcaption><p>Standaard DocBits-voorvertoning voor een AUSTRIA EBINTERFACE-factuur</p></figcaption></figure>
 
 ## Veldtoewijzing
 

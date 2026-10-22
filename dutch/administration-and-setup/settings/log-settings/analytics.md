@@ -32,7 +32,7 @@ Onder de filters verschijnen vier samenvattingskaarten:
 | **WAARSCHUWINGEN** | Totaal aantal waarschuwingen in de geselecteerde periode. |
 | **TOP SOURCE** | De dienst die de meeste logs produceert, met het aantal. |
 
-## Real User Monitoring (RUM)
+## Monitoring van echte gebruikers (RUM)
 
 Onder de samenvattingskaarten tonen RUM-statistieken frontend-prestatiegegevens die zijn verzameld uit echte browsersessies van gebruikers.
 

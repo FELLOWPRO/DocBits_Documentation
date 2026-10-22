@@ -1,4 +1,4 @@
-# Lookup Configuration
+# Opzoekconfiguratie
 
 ## Tabel `public.lookup_configuration`
 
@@ -11,10 +11,10 @@
 * `lookup_name`: intern
 * `conflict_handle`: intern
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: tijdstempel met tijdzone
+* `last_modified_on`: tijdstempel met tijdzone
 * `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: tijdstempel met tijdzone
 * `match_all`: boolean
 * `last_modified_by`: intern
 * `deleted_by`: intern

@@ -1,4 +1,4 @@
-# Training Line Fields/Tabel Training
+# Regelvelden trainen/Tabel Training
 
 ## Tabel Training: Wanneer en Hoe te Gebruiken
 

@@ -1,4 +1,4 @@
-# Training data
+# Trainingsgegevens
 
 ## Tabel `public.training_data`
 

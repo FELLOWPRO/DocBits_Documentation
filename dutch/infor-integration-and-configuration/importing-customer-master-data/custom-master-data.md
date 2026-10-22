@@ -1,67 +1,67 @@
 ---
-description: How to Import Master Data directly within DocBits.
+description: Stamgegevens rechtstreeks in DocBits importeren.
 ---
 
-# Custom Master Data
+# Aangepaste stamgegevens
 
-#### Activating Custom Master Data <a href="#activating-custom-master-data" id="activating-custom-master-data"></a>
+#### Aangepaste stamgegevens activeren <a href="#activating-custom-master-data" id="activating-custom-master-data"></a>
 
-From the Dashboard navigate to Settings → Document Processing → Module.
+Ga vanaf het dashboard naar Settings → Document Processing → Module.
 
 ![](<../../.gitbook/assets/DocBits_CMD_1 (1).png>)
 
-<div align="left"><figure><img src="../../.gitbook/assets/docbits_cmd_activate_slider.png" alt="Docbits Cmd Activate Slider" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/docbits_cmd_activate_slider.png" alt="Schuifregelaar voor aangepaste stamgegevens activeren in DocBits" width="375"><figcaption></figcaption></figure></div>
 
-In Module, activate Custom Master Data by pressing the slider as shown below.
+Activeer Custom Master Data in Module met de schuifregelaar zoals hieronder weergegeven.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_3.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"></div>
 
-#### Feature Overview <a href="#feature-overview" id="feature-overview"></a>
+#### Functieoverzicht <a href="#feature-overview" id="feature-overview"></a>
 
-In order to add your own master data into DocBits, navigate to Master Data Lookup in Settings.
+Ga naar Master Data Lookup in Settings om eigen stamgegevens aan DocBits toe te voegen.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_4.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/site-extra-master-data-overview-nl.png" alt="Stamgegevens opzoeken: gegevensbronnen en leverancierstabel met afgeschermde waarden."><figcaption><p>Stamgegevens opzoeken: gegevensbronnen en leverancierstabel met afgeschermde waarden.</p></figcaption></figure></div>
 
-Click on “Custom Master Data”
+Klik op “Custom Master Data”.
 
 <div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_5.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-You then have the option to create a Template or an Endpoint.
+U kunt vervolgens een sjabloon of een eindpunt aanmaken.
 
 <div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_6.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-#### Create a Template <a href="#create-a-template" id="create-a-template"></a>
+#### Een sjabloon maken <a href="#create-a-template" id="create-a-template"></a>
 
-The first step is to choose between using your organizations ION API file or to use OAuth2 and enter the necessary data.
+Kies eerst of u het ION API-bestand van uw organisatie of OAuth2 gebruikt en voer de vereiste gegevens in.
 
 <div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_7.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-Next, we will configure the presets. Here you will enter the Master Data table name the API call URL.
+Stel vervolgens de voorinstellingen in. Voer de naam van de stamgegevenstabel en de URL van de API-aanroep in.
 
 <div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-You will then be required to enter the JSON path using dot notation, for more information on dot notation click [here](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/).
+Voer daarna het JSON-pad in met puntnotatie. Lees [hier](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/) meer over puntnotatie.
 
-Lastly, you will need to map the data to the columns you would like to create like in the example below.
+Koppel tot slot de gegevens aan de kolommen die u wilt aanmaken, zoals in het onderstaande voorbeeld.
 
 <div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-After you have done this, click on Done for your new master data to be created and populated .
+Klik daarna op Done om de nieuwe stamgegevens aan te maken en te vullen.
 
-#### Create an Endpoint <a href="#create-an-endpoint" id="create-an-endpoint"></a>
+#### Een eindpunt maken <a href="#create-an-endpoint" id="create-an-endpoint"></a>
 
-The first step is to choose between using your organizations ION API file, to use OAuth2 or to leave this blank and enter the necessary data.
+Kies eerst of u het ION API-bestand van uw organisatie, OAuth2 of geen van beide gebruikt en voer de vereiste gegevens in.
 
 <div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_10.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-Next, we will configure the presets. Here you will enter the Master Data table name the API call URL.
+Stel vervolgens de voorinstellingen in. Voer de naam van de stamgegevenstabel en de URL van de API-aanroep in.
 
-<div align="left"><figure><img src="../../.gitbook/assets/docbits_cmd_presets_config.png" alt="Docbits Cmd Presets Config" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/docbits_cmd_presets_config.png" alt="Voorinstellingen voor aangepaste stamgegevens in DocBits" width="375"><figcaption></figcaption></figure></div>
 
-You will then be required to enter the JSON path using dot notation, for more information on dot notation click [here](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/).
+Voer daarna het JSON-pad in met puntnotatie. Lees [hier](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/) meer over puntnotatie.
 
-Lastly, you will need to map the data to the columns you would like to create like in the example below.
+Koppel tot slot de gegevens aan de kolommen die u wilt aanmaken, zoals in het onderstaande voorbeeld.
 
-<div align="left"><figure><img src="../../.gitbook/assets/docbits_cmd_map_columns.png" alt="Docbits Cmd Map Columns" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/docbits_cmd_map_columns.png" alt="Kolommen koppelen voor aangepaste stamgegevens in DocBits" width="375"><figcaption></figcaption></figure></div>
 
-After you have done this, click on Done for your new master data to be created and populated .
+Klik daarna op Done om de nieuwe stamgegevens aan te maken en te vullen.

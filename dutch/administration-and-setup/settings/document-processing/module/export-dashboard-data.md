@@ -1,14 +1,14 @@
-# Export Dashboard Data
+# Dashboardgegevens exporteren
 
-1.  **Navigate to Settings**: Go to **Settings → Module**.\
+1.  **Navigeer naar Instellingen**: Ga naar **Instellingen → Module**.\
 
 
     <figure><img src="../../../../.gitbook/assets/image (10) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
-2.  **Enable Export Dashboard Data**: Locate and activate the **Export Dashboard Data** option.\
+2.  **Exporteren van dashboardgegevens inschakelen**: Zoek en activeer de optie **Exporteren van dashboardgegevens**.\
 
 
     <figure><img src="../../../../.gitbook/assets/image (11) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
-3. **Export Dashboard**: Once enabled, a button will appear on the dashboard, allowing you to export the data as a CSV file.
+3. **Dashboard exporteren**: Eenmaal ingeschakeld, verschijnt er een knop op het dashboard waarmee u de gegevens kunt exporteren als een CSV-bestand.
 
 <figure><img src="../../../../.gitbook/assets/docbits_notification_card_2.png" alt="Docbits Melding Card 2"><figcaption></figcaption></figure>
 

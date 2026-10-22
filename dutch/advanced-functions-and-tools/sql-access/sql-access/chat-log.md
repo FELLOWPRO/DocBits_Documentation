@@ -1,4 +1,4 @@
-# Chat Log
+# Chatlogboek
 
 ## Tabel `public.chat_log`
 
@@ -9,10 +9,10 @@
 * `supplier_as_org_id`: intern
 * `message`: intern
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: tijdstempel met tijdzone
+* `last_modified_on`: tijdstempel met tijdzone
 * `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: tijdstempel met tijdzone
 * `last_modified_by`: intern
 * `deleted_by`: intern
 * `chat_type`: intern

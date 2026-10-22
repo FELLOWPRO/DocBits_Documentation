@@ -1,5 +1,13 @@
 # Purchase Order Matching Rules
 
+## Configure PO matching rules and tolerances
+
+The walkthrough opens the invoice document type, checks the published rule version and clones an inactive draft. It explains rule types, priority within the matching stage, comparison columns, quantity basis, matching modes and tolerance calculations. Only the tutorial draft is saved; the active version and configured global tolerances are preserved. The five-percent calculation is an illustration, not a change to the active tolerance.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/en.mp4" %}
+
+[Watch the video with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/en.html)
+
 ## Introduction: Purchase Orders and PO Rule Management
 
 Purchase Order (PO) Matching is a critical process for ensuring consistency between Purchase Orders (POs) and corresponding incoming invoices or goods receipts. A robust set of rules is essential to achieve a high rate of automatic matching, prevent fraud, and ensure correct payments.

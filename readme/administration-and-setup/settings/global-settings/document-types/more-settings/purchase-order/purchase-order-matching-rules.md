@@ -1,5 +1,13 @@
 # Zasady Dopasowywania Zamówień Zakupu
 
+## Konfigurowanie reguł uzgadniania zamówień i tolerancji
+
+Prezentacja otwiera typ dokumentu faktura, sprawdza opublikowaną wersję reguł i tworzy nieaktywną wersję roboczą. Wyjaśnia typy reguł, priorytet w danym etapie dopasowania, kolumny porównania, podstawę ilości, tryby i obliczanie tolerancji. Zapisywana jest wyłącznie wersja robocza samouczka; aktywna wersja i tolerancje globalne pozostają bez zmian. Obliczenie z pięcioma procentami jest przykładem, a nie zmianą aktywnej tolerancji.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/pl.mp4" %}
+
+[Obejrzyj film z napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/pl.html)
+
 ## Wprowadzenie: Zamówienia Zakupu i Zarządzanie Zasadami PO
 
 Dopasowywanie Zamówień Zakupu (PO) to kluczowy proces zapewniający spójność między Zamówieniami Zakupu (PO) a odpowiadającymi im przychodzącymi fakturami lub przyjęciami towarów. Solidny zestaw zasad jest niezbędny, aby osiągnąć wysoki wskaźnik automatycznego dopasowania, zapobiegać oszustwom i zapewnić prawidłowe płatności.

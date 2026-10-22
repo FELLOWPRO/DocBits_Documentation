@@ -114,7 +114,7 @@ leading code or a file ending.
 
 > **The three in one line:** `=` → starts with · `:` → contains · `="…"` →
 > starts or ends with. All ignore upper/lower case. You can see this summarised
-> any time via the **help icon** in the search bar (next section).
+> any time via the **help icon** at the right end of the search bar (next section).
 
 ### Find documents by status
 
@@ -274,7 +274,7 @@ flat list for that selection.
 
 ### The built-in help
 
-The **help icon** in the search bar opens a complete reference of every field,
+The **help icon** at the right end of the search bar opens a complete reference of every field,
 operator and shortcut available in your workspace — including which fields are
 standard vs. fulltext.
 

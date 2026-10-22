@@ -1,6 +1,6 @@
 # Customizing Filters
 
-If you are looking for one or more specific documents, the following options are available to you. Within the search bar, we have provided you with various tools to help you find the document you are looking for. To access them, select the following icon.
+If you are looking for one or more specific documents, the following options are available to you. The dashboard search bar provides several tools to help you find a document. The **Filters** icon (three slider bars) at the right end of the search bar opens the filter menu.
 
 <figure><img src="../../../../.gitbook/assets/customizing_filters_1.png" alt=""><figcaption></figcaption></figure>
 
@@ -14,7 +14,7 @@ Using filters allows users to quickly find relevant information and reduce the a
 
 **Accessing the filter menu:**
 
-* Click the filter icon or search field.
+* Select the **Filters** icon (three slider bars) at the right end of the search bar.
 
 <figure><img src="../../../../.gitbook/assets/image (300).png" alt=""><figcaption></figcaption></figure>
 

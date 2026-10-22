@@ -46,7 +46,7 @@ The customer, office opening and narration are AI-generated. The dashboard actio
 
 ## Search and filter documents
 
-Enter a document name, invoice number or other business value in the search box and press **Enter**. Use the filter icon inside the search box for **Status**, **Assigned To** and **Restart required**, then choose **Apply**. Remove individual filter badges or use **Clear filters** when a document seems to be missing. Document-type tabs and saved views also narrow the list.
+Enter a document name, invoice number or other business value in the search box and press **Enter**. Select the **Filters** icon (three slider bars) at the right end of the search bar for **Status**, **Assigned To** and **Restart Required**, then choose **Apply**. Remove individual filter badges or use **Clear filters** when a document seems to be missing. Document-type tabs and saved views also narrow the list.
 
 The **bolt** icon at the start of the search box opens the field picker. It lists the **Smart Filters** first — ready-made searches such as **Overdue**, **Due soon**, **Assigned to me**, **Today's inbox**, **Pending validation** or **Electronic documents** — followed by every field you can search. Selecting an entry inserts the matching condition into the search box, so you do not have to know the syntax.
 
@@ -68,7 +68,7 @@ If grouping is available, select a grouping field above the table. For date fiel
 
 Use the **+** next to the document-type tabs to show additional tabs. The tabs can be reordered by dragging. Removing a tab changes your view; it does not delete documents.
 
-Open the gear icon and the column-settings button to choose visible columns, move columns between the hidden and visible lists, and drag visible columns into order. You can also add fields from a document type. See [Change document columns](change-document-columns.md).
+Open the **Advanced settings** gear to the right of the search bar, then select the **Column settings** button in its menu to choose visible columns, move columns between the hidden and visible lists, and drag visible columns into order. You can also add fields from a document type. See [Change document columns](change-document-columns.md).
 
 <figure><img src="../../../.gitbook/assets/dashboard-columns.png" alt="Column settings let you choose and order the information shown in the table."><figcaption><p>Column settings let you choose and order the information shown in the table.</p></figcaption></figure>
 

@@ -44,7 +44,7 @@ La tarjeta de flujo de trabajo "DocField Comparison Validation" es una herramien
 
 **Cuándo utilizar:** Revisar las facturas que superen un monto definido.
 
-**Configuración:** Seleccionar campo numérico `net_total`, operador `>` y valor de referencia `1000`.
+**Configuración:** Seleccionar campo numérico `total_amount`, operador `>` y valor de referencia `1000`.
 
 **Resultado esperado y contraejemplo:** Pasa un valor de `1200`. `1000` y `900` fallan porque la comparación es estrictamente mayor que.
 

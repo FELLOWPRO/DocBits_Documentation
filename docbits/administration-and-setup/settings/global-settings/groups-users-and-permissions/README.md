@@ -1,5 +1,13 @@
 # Groups, Users and Permissions
 
+## Create a group and test document access
+
+With group permissions already enabled, create an isolated reviewer group and add a non-admin test user. Allow listing, viewing and editing assigned invoices; leave deletion, bulk changes and approvals unavailable. Save and reopen the settings, then sign in as the ordinary user: the assigned invoice is visible and an unassigned control document is absent.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/en.mp4" %}
+
+[Watch with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/en.html)
+
 These settings answer three different questions: who can sign in, which sub-organisation they work in, and what their group may do.
 
 | If you need to… | Open… |

@@ -345,58 +345,29 @@ Document passes through all three
 
 ### Carta: ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP
 
-#### Scopo
+<!-- workflow-facility-example-direct-20261022 -->
 
-Assegna il documento a un gruppo di strutture specifico
+Questa azione del workflow assegna un documento a un gruppo in base alle sedi dei suoi ordini di acquisto abbinati. Nella versione 2, `group_name` è un frammento di testo cercato nei nomi dei gruppi.
 
-#### Quando usarlo
+Esempio: un documento sintetico è abbinato all’ordine `DEMO-PO-100`, con `location_id=BERLIN`. I gruppi configurati sono `Receiving BERLIN` e `Receiving MUNICH`. Inserire `Receiving` in `group_name`. Il nome del gruppo deve contenere sia questo frammento sia la sede dell’ordine; il confronto non distingue maiuscole e minuscole.
 
-* Documento per magazzino/struttura specifico
-* Operazioni basate sulle strutture
-* Elaborazione specifica della posizione
+Risultato previsto: il documento viene assegnato direttamente a `Receiving BERLIN`, se il suo stato consente l’assegnazione. Senza un ordine abbinato o un gruppo corrispondente, l’assegnazione non è riuscita; controllare i log del workflow. Evitare nomi ambigui: se corrispondono più gruppi, questa scheda non garantisce un ordine di selezione fisso.
 
-#### Esempio
-
-```
-Shipment notification
-
-Assign to: Berlin Warehouse Team
-    ↓
-Berlin warehouse processes shipment
-    ↓
-Or
-
-Assign to: Munich Warehouse Team
-    ↓
-Munich warehouse processes shipment
-```
+Questa è una configurazione illustrativa; non è stato eseguito alcun workflow.
 
 ***
 
 ### Carta: ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP\_SEQUENTIAL
 
-#### Scopo
+<!-- workflow-facility-example-sequential-20261022 -->
 
-Assegna in sequenza tra le strutture
+Questa azione del workflow aggiunge i gruppi di sede corrispondenti alla coda di assegnazione sequenziale con una priorità configurata. Non rappresenta il trasferimento di merci tra fabbriche o magazzini.
 
-#### Quando usarlo
+Esempio: usare lo stesso ordine sintetico, la stessa sede e gli stessi gruppi dell’esempio precedente. Impostare `group_name=Receiving` e la priorità `value=10`. La versione 2 legge la sede dall’ordine abbinato e trova `Receiving BERLIN`.
 
-* Elaborazione multi-sede
-* La spedizione passa attraverso le strutture
-* Flusso di lavoro basato sulla posizione
+Risultato previsto: una richiesta di assegnazione a quel gruppo viene aggiunta alla coda con priorità `10`. Se corrispondono più gruppi, ricevono tutti la stessa priorità; i loro nomi non stabiliscono un ordine di elaborazione. Verificare separatamente la coda e la successiva approvazione. Senza corrispondenze non viene creata un’assegnazione riuscita.
 
-#### Esempio
-
-```
-Manufacturing Order:
-
-Step 1: Factory A (Manufacturing) - Build product
-Step 2: Quality Center (Testing) - Test product
-Step 3: Distribution Center (Packing) - Package
-Step 4: Warehouse (Storage) - Store
-
-Document/shipment passes through each
-```
+Questa è una configurazione illustrativa; non è stato eseguito alcun workflow.
 
 ***
 

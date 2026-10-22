@@ -10,17 +10,17 @@ Navigieren Sie vom Dashboard zu Settings → Document Processing → Module.
 
 ![](<../../.gitbook/assets/DocBits_CMD_1 (1).png>)
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-de.png" alt="Module der Dokumentintegration: Skripte, Dokumentenscan, Barcode-Erkennung und benutzerdefinierte Stammdaten."><figcaption><p>Module der Dokumentintegration: Skripte, Dokumentenscan, Barcode-Erkennung und benutzerdefinierte Stammdaten.</p></figcaption></figure></div>
 
 Aktivieren Sie im Bereich Module die Option Custom Master Data, indem Sie wie unten gezeigt auf den Schieberegler klicken.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_3.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"></div>
 
 #### Funktionsübersicht <a href="#feature-overview" id="feature-overview"></a>
 
 Um eigene Stammdaten in DocBits hinzuzufügen, navigieren Sie in den Settings zu Master Data Lookup.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_4.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/site-extra-master-data-overview-de.png" alt="Deutsche Stammdatenansicht mit ausgeblendeten Datensätzen. Spaltenbezeichnungen der Datenquelle wie Address und Custom Field bleiben im Bild englisch."><figcaption><p>Deutsche Stammdatenansicht mit ausgeblendeten Datensätzen. Spaltenbezeichnungen der Datenquelle wie Address und Custom Field bleiben im Bild englisch.</p></figcaption></figure></div>
 
 Klicken Sie auf „Custom Master Data“.
 

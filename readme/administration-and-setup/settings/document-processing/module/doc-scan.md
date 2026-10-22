@@ -53,7 +53,7 @@ Wenn https://local.polydocs.io:12500/ nicht erreichbar ist, weil eine FRITZ!Box 
 
 Führen Sie zum Deinstallieren von Doc2Scan Manager unter macOS folgenden Befehl aus:
 
-```javascript
+```bash
 sudo bash /Library/doc2scan/uninstall.sh
 ```
 

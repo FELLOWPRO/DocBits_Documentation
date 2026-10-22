@@ -55,7 +55,7 @@ Diese Datei ist dafür verantwortlich, Daten aus einer PEPPOL BIS Billing 3.0 XM
   * **Kann mehrfach vorkommen**: Nein.
 * **Lieferantenadresse Zeile 3**
   * **Quelle**:`//AccountingSupplierParty/Party/PostalAddress/AddressLine/Line/text()`
-  * **Zugeordnet zu**: `<InvoINVOICEice><SUPPLIER><ADDRESS_LINE_3>`
+  * **Zugeordnet zu**: `<INVOICE><SUPPLIER><ADDRESS_LINE_3>`
   * **Kann mehrfach vorkommen**: Nein.
 * **Lieferanten-USt-ID**
   * **Quelle**:`//AccountingSupplierParty/Party/PartyTaxScheme/CompanyID/text()`

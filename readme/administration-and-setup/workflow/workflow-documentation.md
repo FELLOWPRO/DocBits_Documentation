@@ -157,7 +157,7 @@ Mit dieser Card können Sie den Namen eines Workflows angeben, der nach dem aktu
 
 ### **Berechnete Zuschläge in eine bestehende Spalte einfügen** <a href="#pekg4i18rshn" id="pekg4i18rshn"></a>
 
-<figure><img src="https://lh7-us.googleusercontent.com/XYY1xsFpp7_-Bi0WOSbotiVzspDLdaufx_xgoopMHmxdZnSDhroLpb0AE_si5PhwMq1jHfndc9FwOte9MOoCoTP5_JUYawO5cr4uIctIDHmwVjz3KacQrLJd8iBQy5KY4N-dMaWEi3IeTcc5OBRNJk4" alt=""><figcaption></figcaption></figure>
+
 
 Wenn Sie alle Zuschläge als negativen Rabatt in die Rabattspalte einfügen möchten, können Sie die Berechnungs-Card verwenden. Es kann sein, dass in dieser Spalte bereits Einträge vorhanden sind; Sie können sie als eine der Variablen auf der Card festlegen, davon den MTZ abziehen und das Ergebnis wieder in diese Spalte einfügen. Falls leere Felder vorhanden sind (Zuschläge nur für einige Artikel), wird für die Berechnung ein Wert von 0 angenommen.
 

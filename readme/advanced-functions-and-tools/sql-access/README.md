@@ -47,9 +47,9 @@ clickhouse-client --host <hostname_or_ip> --port <port> --user <username> --pass
 
 ```
 
-### Materialisierte Ansichten erstellen
+### Beispielaggregation mit SELECT
 
-Wir empfehlen, materialisierte Ansichten zu erstellen, um Daten vorab zu berechnen und die Leistung in Analysetools wie PowerBI zu verbessern:
+Die folgende Abfrage aggregiert vorhandene Zeilen. Sie erstellt keine materialisierte Sicht. Ein Nur-Lese-Zugang gewährt nicht die dafür nötigen Schreibrechte. Passen Sie Tabellennamen und Konvertierungen an Schema, Zahlenformat und Währung an. Summieren Sie unterschiedliche Währungen nicht ohne ausdrückliche Umrechnung.
 
 ```sql
 SELECT toStartOfWeek(created_on) as week_start, sum(toFloat64OrZero(field_value)) as total_sum

@@ -7,7 +7,7 @@ De **Card SDK** stelt partners en ontwikkelaars in staat om aangepaste workflow-
 ## Hoe het werkt
 
 - **Download SDK-sjabloon** — begin met de officiële template die de verwachte structuur bevat.
-- **Upload ZIP** — de ZIP moet `app.json` en een `.docflowcompose/flow/`-map met de kaartdefinities bevatten (max. 10 MB). Upload &#x26; Validate controleert het pakket voordat het wordt geaccepteerd.
+- **ZIP uploaden** — de ZIP moet `app.json` en een `.docflowcompose/flow/`-map met de kaartdefinities bevatten (max. 10 MB). Upload &#x26; Validate controleert het pakket voordat het wordt geaccepteerd.
 - **GitHub-import** — importeer een kaartdefinitie rechtstreeks uit een GitHub-repository.
 - **Inzendingen** — volg de status van kaarten die u hebt ingediend.
 

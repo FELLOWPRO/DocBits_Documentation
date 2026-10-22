@@ -1,6 +1,6 @@
 # Veldeigenschappen configureren
 
-Gebruik **Settings → Document Types → Fields** om te bepalen hoe velden zich gedragen voor een documenttype. Selecteer eerst het documenttype; het onderstaande voorbeeld toont **Factuur** in de Engelse interface.
+Open **Instellingen → Documenttypen → Velden** en selecteer het documenttype. De afbeeldingen tonen Factuur in de Nederlandstalige interface; technische identifiers zoals `invoice_id` blijven ongewijzigd.
 
 <figure><img src="../../../../../.gitbook/assets/s150-dbdc155-field-properties-overview-nl.png" alt="Veldeigenschappen: verplicht, alleen-lezen, verborgen en geforceerde validatie. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie."><figcaption><p>Veldeigenschappen: verplicht, alleen-lezen, verborgen en geforceerde validatie. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie.</p></figcaption></figure>
 
@@ -17,12 +17,12 @@ Gebruik **Settings → Document Types → Fields** om te bepalen hoe velden zich
 | **Verplicht** | Markeer informatie die aanwezig moet zijn voor de validatie. Controleer het validatieresultaat van het document nadat u deze instelling hebt gewijzigd. |
 | **Alleen lezen** | Toon een veld zonder dat gebruikers de waarde kunnen bewerken. |
 | **Verborgen** | Houd het veld buiten de normale documentweergave. |
-| **Force Validation** | Eis dat het veld de validatie doorstaat. Configureer gedetailleerde regels apart; dit selectievakje is geen regeleditor. |
+| **Geforceerde validatie** | Vereist een expliciete controle van het veld. Deze maakt geen vergelijkingsregel of reguliere expressie; stel aangepaste validatieregels afzonderlijk in. |
 | **Gebruik AI** | Schakel AI-extractie voor dit veld in of uit. De rij toont of extractie is aangevraagd. |
 | **OCR** | Voer de OCR-betrouwbaarheidsdrempel van het veld in. Dit is een getal, geen aan/uit-schakelaar en geen taalinstelling. |
-| **Match Score** | Voer de matchingdrempel van het veld in. Dit is een getal, geen aan/uit-schakelaar. |
+| **Overeenkomstscore** | Voer de matchingdrempel van het veld in. Dit is een getal, geen aan/uit-schakelaar. |
 
-De schuifregelaars **OCR** en **Match Score** onder **Recognition Settings** passen waarden toe op de hele veldenlijst. De selectievakjes direct onder de kolomtitels passen **Verplicht**, **Alleen lezen**, **Verborgen** of **Force Validation** toe op de hele lijst. Controleer de betreffende rijen voordat u **Instellingen opslaan** selecteert. **Restore Defaults** zet de veldconfiguratie terug; gebruik dit alleen als u uw wijzigingen wilt vervangen.
+De schuifregelaars **OCR** en **Overeenkomstscore** onder **Herkenningsinstellingen** passen waarden toe op de hele veldenlijst. De selectievakjes direct onder de kolomtitels passen **Verplicht**, **Alleen lezen**, **Verborgen** of **Geforceerde validatie** toe op de hele lijst. Controleer de betreffende rijen voordat u **Instellingen opslaan** selecteert. **Standaardwaarden herstellen** zet de veldconfiguratie terug; gebruik dit alleen als u uw wijzigingen wilt vervangen.
 
 ## Overige bedieningselementen in deze weergave
 

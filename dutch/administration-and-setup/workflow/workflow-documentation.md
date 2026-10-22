@@ -147,7 +147,7 @@ Hierboven staat een berekeningsvoorbeeld voor MTZ met een filter voor artikelnum
 
 Bij een handmatige opzet wordt geadviseerd om berekeningen die afhankelijk zijn van nieuwe kolommen in een aparte workflow te splitsen. Om met de berekening door te gaan, kunt u de Run Workflow-kaart gebruiken.
 
-**Run Workflow**
+**Workflow uitvoeren**
 
 <figure><img src="../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -159,7 +159,7 @@ Met deze kaart kunt u de naam opgeven van een workflow die na de huidige workflo
 
 Als u alle toeslagen als een negatieve korting in de kortingskolom wilt opnemen, kunt u de berekeningskaart gebruiken. Mogelijk staan er al gegevens in deze kolom; u kunt deze instellen als een van de variabelen op de kaart, de MTZ ervan laten aftrekken en het resultaat weer aan deze kolom toevoegen. Mocht er sprake zijn van lege velden (toeslagen slechts voor sommige items), dan gaat het voor de berekening uit van een 0.
 
-**Notify user to authorize the order confirmation in DocBits**
+**De gebruiker melden dat de orderbevestiging in DocBits moet worden goedgekeurd**
 
 Nadat u de toeslagen heeft berekend, wilt u mogelijk een specifieke gebruiker informeren om de orderbevestiging te autoriseren. Hiervoor kunt u de meldingskaart gebruiken.
 

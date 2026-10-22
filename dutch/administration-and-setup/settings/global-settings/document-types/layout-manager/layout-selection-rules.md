@@ -2,7 +2,7 @@
 
 ## Overzicht
 
-Een **lay-out** bepaalt welke velden en groepen een gebruiker ziet — en in welke volgorde — op de schermen **validation**, **goedkeuring**, **reject** en **review** van een document. U ontwerpt lay-outs in de [Lay-outbouwer](README.md).
+Een **lay-out** bepaalt welke velden en groepen een gebruiker ziet — en in welke volgorde — op de schermen **Validatie**, **goedkeuring**, **Afwijzen** en **Beoordeling** van een document. U ontwerpt lay-outs in de [Lay-outbouwer](README.md).
 
 Klassiek koos DocBits de lay-out op basis van de **herkomst** van het document: het land of de regio uit de taalinstellingen van het document, zoals `DE` of `US`. Elke herkomst had een eigen kopie van de lay-out, en niets anders kon de keuze beïnvloeden.
 
@@ -175,7 +175,7 @@ Scherm **Veldvalidatie** · prioriteit **5** · *Supplier ID is HP0000278* · do
 
 ### Eén lay-out voor meerdere landen
 
-Scherm **Veldvalidatie** · prioriteit **100** · **ANY of**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · doel *DACH-factuur*. Deactiveer de gemigreerde regels "Layout for AT" en "Layout for CH" als ze naar oudere kopieën verwijzen.
+Scherm **Veldvalidatie** · prioriteit **100** · **Een van de voorwaarden**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · doel *DACH-factuur*. Deactiveer de gemigreerde regels "Layout for AT" en "Layout for CH" als ze naar oudere kopieën verwijzen.
 
 ### Een eenvoudiger scherm voor e-facturen
 

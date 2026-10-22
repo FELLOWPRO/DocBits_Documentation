@@ -34,7 +34,7 @@ Transformatieregels vervangen de meeste kleine scripts die organisaties vroeger 
 
 Transformatieregels worden **per documenttype** ingeschakeld door een **organisatiebeheerder**.
 
-1. Ga naar **Settings → Global Settings → Document Types**.
+1. Ga naar **Instellingen → Algemene instellingen → Documenttypen**.
 2. Klik op het **instellingen**-pictogram (tandwiel) op de kaart van het documenttype.
 3. Open **Transformatieregels** en zet de schakelaar aan. Klik op **Transformatieregels beheren** om de lijst te openen.
 
@@ -50,7 +50,7 @@ Regels komen uit drie bronnen, net als bij validatieregels: **Systeemstandaard**
 
 ## Een regel maken
 
-Klik op **Nieuwe regel**. De bouwer heeft links drie stappen en rechts een **Live preview**. Bovenaan vat hij de regel tijdens het bouwen samen in één zin.
+Klik op **Nieuwe regel**. De bouwer heeft links drie stappen en rechts een **Livevoorbeeld**. Bovenaan vat hij de regel tijdens het bouwen samen in één zin.
 
 <figure><img src="../../../../.gitbook/assets/s150-transformation-rule-scope-nl.png" alt="Transformatiebereik: kopveld, tabelrijen, kolom en routering."><figcaption><p>Transformatiebereik: kopveld, tabelrijen, kolom en routering.</p></figcaption></figure>
 
@@ -100,7 +100,7 @@ Twee opties onder **Verwerkingsopties** bepalen hoe vaak de regel wordt toegepas
 | **Toevoegen** (Affix) | voorvoegsel toevoegen, achtervoegsel toevoegen, voorvoegsel verwijderen, achtervoegsel verwijderen; tekst | voorvoegsel `INV-` toevoegen: `4711` → `INV-4711`; voorvoegsel `Art.-Nr. ` verwijderen: `Art.-Nr. 4711` → `4711` |
 | **Desinfecteren** (Sanitise) | alleen behouden (alfanumeriek, letters, cijfers, alfanumeriek + spatie) of opgegeven tekens verwijderen | alfanumeriek behouden: `DE 123.456.789` → `DE123456789` |
 | **Een deel selecteren** | begin, lengte of einde | begin 0, lengte 4: `2026-09-29` → `2026` |
-| **Extract** | patroon, capture group | patroon `PO[- ]?(\d+)`, groep 1: `Order PO-45001234` → `45001234` |
+| **Extraheren** | patroon, capture group | patroon `PO[- ]?(\d+)`, groep 1: `Order PO-45001234` → `45001234` |
 | **Zoeken en vervangen** | patroon, vervangen door, aantal (0 = alles) | patroon `\s+`, vervangen door ` `: `ACME    GmbH` → `ACME GmbH` |
 | **Waarden toewijzen** | mappings (van → naar), waarde bij geen overeenkomst (leeg = invoer behouden), hoofdletters negeren | `STK → PCE`: `stk` → `PCE` |
 | **Datum opnieuw formatteren** | uitvoerpatroon (`%d.%m.%Y`, `%m/%d/%Y`, `%Y-%m-%d`, `%d %b %Y`) | `%d.%m.%Y`: `2026-09-29` → `29.09.2026` |
@@ -113,7 +113,7 @@ Regels van het type **Tabelrijen** gebruiken twee andere stappen, die op rijen w
 | Stap | Effect |
 | --- | --- |
 | **Wis alle rijen** | verwijdert elke geëxtraheerde rij. Rijen die door een latere stap worden toegevoegd blijven behouden. |
-| **Add a row** | voegt één rij toe **na de laatste rij** of **vóór de eerste rij**. Kies voor elke kolom **Waarde** (een vaste waarde) of **Veld** (de waarde van een headerveld). Kolommen die u weglaat blijven leeg. |
+| **Een rij toevoegen** | voegt één rij toe **na de laatste rij** of **vóór de eerste rij**. Kies voor elke kolom **Waarde** (een vaste waarde) of **Veld** (de waarde van een headerveld). Kolommen die u weglaat blijven leeg. |
 
 {% hint style="info" %}
 **Datum opnieuw formatteren** verwacht de datum zoals DocBits die intern opslaat (`YYYY-MM-DD`). Pas de stap toe op het veld zelf, niet op een tekst die al een opgemaakte datum bevat.
@@ -121,7 +121,7 @@ Regels van het type **Tabelrijen** gebruiken twee andere stappen, die op rijen w
 
 ### Live preview
 
-De **Live preview** voert de regel tijdens het bouwen uit op een voorbeeldwaarde:
+De **Livevoorbeeld** voert de regel tijdens het bouwen uit op een voorbeeldwaarde:
 
 * **Voorbeeldinvoer** (Sample input) — typ een waarde zoals die uit het document zou komen. Voer voor tabelregels het aantal geëxtraheerde rijen in (**Voorbeeldtabel**) en waarden voor de velden die nieuwe rijen lezen (**Rijbronwaarden**).
 * **Conditiewaarden** (Condition values) — typ bij regels met een voorwaarde de waarden van de voorwaardevelden. De preview toont **Voorwaarden komen overeen — regel wordt uitgevoerd** of de melding dat de voorwaarden niet overeenkomen en de regel wordt overgeslagen.
@@ -148,7 +148,7 @@ Tabelrijen **INVOICE_TABLE** · alleen wanneer *Supplier ID is HP0000278* · Cle
 
 <figure><img src="../../../../.gitbook/assets/s150-transformation-add-row-columns-nl.png" alt="Niet-opgeslagen transformatiestap om een tabelrij toe te voegen. Op de tafel aangebracht verwijst hier naar een gegevenstabel."><figcaption><p>Niet-opgeslagen transformatiestap om een tabelrij toe te voegen. Op de tafel aangebracht verwijst hier naar een gegevenstabel.</p></figcaption></figure>
 
-De volgorde is belangrijk: **Wis alle rijen** moet **vóór** **Add a row** komen. De bouwer waarschuwt u als dat niet zo is ("Clear all rows runs after Add a row …"), en ook als een stap **Add a row** niet wordt voorafgegaan door **Wis alle rijen**, omdat de regel dan bij elke keer opslaan nog een kopie van de rij zou toevoegen. Combineer deze regel met een matchingregel voor inkooporders op basis van het totaal die actief is voor documenten met één regel.
+De volgorde is belangrijk: **Wis alle rijen** moet **vóór** **Een rij toevoegen** komen. De bouwer waarschuwt u als dat niet zo is ("Clear all rows runs after Add a row …"), en ook als een stap **Een rij toevoegen** niet wordt voorafgegaan door **Wis alle rijen**, omdat de regel dan bij elke keer opslaan nog een kopie van de rij zou toevoegen. Combineer deze regel met een matchingregel voor inkooporders op basis van het totaal die actief is voor documenten met één regel.
 
 ### De inkooporder vullen vanuit het veld factuurnummer
 
@@ -201,10 +201,10 @@ Een **Routering**-regel wijzigt geen veld. Hij zet een attribuut op het document
 
 De meeste stappen geven hetzelfde resultaat wanneer ze op hun eigen uitvoer draaien — een getrimde waarde trimmen, `PCE` opnieuw mappen, een voorvoegsel toevoegen dat er al staat. Dergelijke regels kunnen veilig bij elke keer opslaan draaien.
 
-**Een deel selecteren**, **Extract** en **Zoeken en vervangen** zijn anders: wanneer ze opnieuw op hun eigen resultaat draaien, blijven ze het wijzigen (een slice neemt de eerste vier tekens van de eerste vier tekens …). DocBits laat u daarom geen regel opslaan die deze stappen op haar eigen doelveld toepast. Kies in dat geval een van beide:
+**Een deel selecteren**, **Extraheren** en **Zoeken en vervangen** zijn anders: wanneer ze opnieuw op hun eigen resultaat draaien, blijven ze het wijzigen (een slice neemt de eerste vier tekens van de eerste vier tekens …). DocBits laat u daarom geen regel opslaan die deze stappen op haar eigen doelveld toepast. Kies in dat geval een van beide:
 
 * zet **Voer dit document slechts één keer uit** aan, of
-* **Read from another field**, zodat de invoer ongewijzigd blijft.
+* **Uit een ander veld lezen**, zodat de invoer ongewijzigd blijft.
 
 ## Transformatieregels en inkooporder-matching
 
@@ -225,7 +225,7 @@ Tabelregels en kolomregels wijzigen wat de PO-matcher ziet:
 
 ## Logboeken
 
-Met **Logboekuitvoering** aan wordt elke toepassing van de regel weggeschreven naar **Document Types → (documenttype) → Logs**, met de uitkomst (toegepast, geen wijziging, overgeslagen), het document en — bij overgeslagen regels — het voorwaardespoor dat verklaart waarom. Zie [Het voorwaardespoor in de logboeken lezen](rule-conditions-applies-when.md#het-voorwaardespoor-in-de-logboeken-lezen).
+Met **Logboekuitvoering** aan wordt elke toepassing van de regel weggeschreven naar **Documenttypen → (documenttype) → Logboeken**, met de uitkomst (toegepast, geen wijziging, overgeslagen), het document en — bij overgeslagen regels — het voorwaardespoor dat verklaart waarom. Zie [Het voorwaardespoor in de logboeken lezen](rule-conditions-applies-when.md#het-voorwaardespoor-in-de-logboeken-lezen).
 
 ## Best practices
 
@@ -242,7 +242,7 @@ Met **Logboekuitvoering** aan wordt elke toepassing van de regel weggeschreven n
 | --- | --- |
 | De regel heeft niets gewijzigd | Is hij actief en is de functie ingeschakeld voor het documenttype? Is de voorwaarde waar voor dit document (exacte waarde, inclusief spaties en hoofdletters)? Is een regel met **run once** al op het document toegepast? Controleer het logspoor. |
 | De waarde verandert bij elke keer opslaan opnieuw | De pijplijn bevat Take a slice, Extract of Find & replace. Zet **Voer dit document slechts één keer uit** aan of lees uit een ander veld. |
-| Een tabel krijgt bij elke keer opslaan een extra rij | Een stap **Add a row** zonder **Wis alle rijen** ervoor. Voeg eerst de wisstap toe of zet eenmalige uitvoering aan. |
+| Een tabel krijgt bij elke keer opslaan een extra rij | Een stap **Een rij toevoegen** zonder **Wis alle rijen** ervoor. Voeg eerst de wisstap toe of zet eenmalige uitvoering aan. |
 | De inkoopordermatch gaat verloren na het opslaan | Een tabelregel heeft de gematchte regels vervangen. De reden op het document noemt de regel; zorg dat de regel dezelfde regels reproduceert, of stel in dat hij eenmalig draait. |
 | Een matchingregel draait nooit na de transformatie | De regel heeft het aantal regels gewijzigd; pas de activeringsvoorwaarde van de matchingregel aan. |
 | De regel heeft een waarde uit de stamgegevens van de leverancier nodig, maar die is nog leeg | Zet **Run after lookup population (before PO match)** aan. |

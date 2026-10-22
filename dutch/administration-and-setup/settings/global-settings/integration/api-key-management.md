@@ -4,7 +4,7 @@ description: >-
   krijgen
 ---
 
-# API Key Management
+# API-sleutels beheren
 
 Met een API key kan een ander systeem — uw ERP, een script of een partnerapplicatie — met DocBits praten zonder dat een gebruiker inlogt. Uw organisatie kan zoveel sleutels aanhouden als u nodig hebt, en elke sleutel wordt apart beheerd: geef die een eigen naam, bepaal of die verloopt, en trek die afzonderlijk in als die ooit wordt blootgesteld.
 

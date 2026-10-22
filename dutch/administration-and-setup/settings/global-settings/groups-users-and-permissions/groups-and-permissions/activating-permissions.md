@@ -20,7 +20,7 @@ Het in- of uitschakelen van het machtigingssysteem met de schakelaar heeft versc
 
 <figure><img src="../../../../../.gitbook/assets/prior-u008-nl.png" alt="Toegangsniveaus per actie in de rechtenmatrix. De toegangsniveaus Owner, Everyone en No Access blijven Engelstalig."><figcaption><p>Toegangsniveaus per actie in de rechtenmatrix. De toegangsniveaus Owner, Everyone en No Access blijven Engelstalig.</p></figcaption></figure>
 
-De schakelaar **Only Assigned Documents** bepaalt de zichtbaarheid van documenten voor gebruikers op basis van hun groepstoewijzingen. Wanneer de schakelaar aan staat, kunnen gebruikers alleen documenten zien die specifiek aan hen of aan een groep waartoe zij behoren zijn toegewezen. Wanneer de schakelaar uit staat, kunnen gebruikers met de juiste weergavemachtiging alle documenten zien, ongeacht de toewijzing.
+De schakelaar **Alleen toegewezen documenten** bepaalt de zichtbaarheid van documenten voor gebruikers op basis van hun groepstoewijzingen. Wanneer de schakelaar aan staat, kunnen gebruikers alleen documenten zien die specifiek aan hen of aan een groep waartoe zij behoren zijn toegewezen. Wanneer de schakelaar uit staat, kunnen gebruikers met de juiste weergavemachtiging alle documenten zien, ongeacht de toewijzing.
 
 #### Functionaliteit
 

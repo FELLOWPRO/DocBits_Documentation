@@ -1,4 +1,4 @@
-# Origin Layouts
+# Lay-outs per oorsprong
 
 {% embed url="https://youtu.be/-m45XGiIeig" %}
 DocBits Origin-instelling uitgelegd: Landstandaarden voor datum- en nummerformaten

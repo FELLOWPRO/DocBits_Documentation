@@ -1,6 +1,6 @@
-# Standard Workflow
+# Standaardworkflow
 
-De **Standard Workflow** builder is de lineaire, op kaarten gebaseerde editor voor het automatiseren van documentverwerking. Een workflow bestaat uit drie groepen kaarten — **Wanneer** (de trigger), **En** (aanvullende voorwaarden) en **Dan** (de acties die worden uitgevoerd). Wanneer een document voldoet aan de When/And-voorwaarden, worden de Then-acties automatisch uitgevoerd.
+De **Standaardworkflow** builder is de lineaire, op kaarten gebaseerde editor voor het automatiseren van documentverwerking. Een workflow bestaat uit drie groepen kaarten — **Wanneer** (de trigger), **En** (aanvullende voorwaarden) en **Dan** (de acties die worden uitgevoerd). Wanneer een document voldoet aan de When/And-voorwaarden, worden de Then-acties automatisch uitgevoerd.
 
 ## Een Standard Workflow maken en testen <a id="standard-workflow-tutorial"></a>
 
@@ -95,7 +95,7 @@ In de workflowlijst schakel ik de geteste regel in en controleer de schakelaar. 
 
 ## Toegang krijgen
 
-Open **Workflow Dashboard → Workflow List** en klik vervolgens op **Workflow toevoegen** om een nieuwe Standard-workflow aan te maken, of klik op een bestaande workflow om deze te bewerken.
+Open **Workflowdashboard → Workflowlijst** en klik vervolgens op **Workflow toevoegen** om een nieuwe Standard-workflow aan te maken, of klik op een bestaande workflow om deze te bewerken.
 
 <figure><img src="../../.gitbook/assets/prior-u033-nl.png" alt="Workflowlijst en importacties."><figcaption><p>Workflowlijst en importacties.</p></figcaption></figure>
 
@@ -118,5 +118,5 @@ Sla op met **Workflow opslaan**, of sla de lay-out op als herbruikbare template 
 ## Volgende stappen
 
 - Bekijk in het **Kaarten**-gedeelte wat elke kaart doet.
-- Combineer kaarten tot beproefde oplossingen met de **Workflow Pattern Guides**.
+- Combineer kaarten tot beproefde oplossingen met de **Handleidingen voor workflowpatronen**.
 - Voor vertakkende flows met parallelle paden (Wait ALL / Wait ANY / OR) gebruikt u de **Geavanceerde workflow** builder.

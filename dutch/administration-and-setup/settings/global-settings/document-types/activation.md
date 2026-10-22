@@ -2,7 +2,7 @@
 
 Beheerders kunnen kiezen welke documenttypes voor hun organisatie beschikbaar zijn. U kunt dit wijzigen op de pagina **Documenttypen**, zonder het type of de configuratie ervan te verwijderen.
 
-1. Open **Settings → Document Types**.
+1. Open **Instellingen → Documenttypen**.
 2. Zoek het documenttype, bijvoorbeeld **Factuur**, onder **Standaarddocumenttypen** of **Aangepaste documenttypen**.
 3. Gebruik de schakelaar met het label **Activeren** op de kaart van dat type. Een gekleurde schakelaar betekent dat het type actief is; een grijze schakelaar betekent dat het inactief is. Wacht op de bevestigingsmelding voordat u de pagina verlaat. Voor deze schakelaar is er geen aparte knop Save.
 

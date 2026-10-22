@@ -2,57 +2,62 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4ee291b0848d-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
-## **Objectif :**
+## Quand utiliser cette carte
 
-Cette carte de workflow est conçue pour comparer la valeur d'un champ à une valeur de référence spécifiée tout en autorisant des tolérances. Elle permet un traitement conditionnel précis dans les workflows où de petits écarts sont acceptables, ce qui la rend idéale pour des scénarios tels que l'assurance qualité, l'analyse financière ou les actions basées sur des seuils.
+Utilisez cette condition pour comparer un champ numérique du document à une référence fixe, en autorisant un écart défini. Par exemple, un montant total peut être considéré comme correspondant à la référence 100 si l'écart ne dépasse pas 5.
 
-## **Composants de la carte :**
+## Où la trouver
 
-1. **Nom du champ**
-   * **Descriptif :** le champ à évaluer dans la comparaison.
-   * **Détail :** il doit correspondre à l'identifiant exact du premier champ dans le document.
-2. **Opérateur de comparaison**
-   * **Descriptif :** spécifie comment la valeur du champ sélectionné sera comparée à la valeur de référence.
-   * **Possibilités :**
-     * **Est égal à (=) :** vérifie si la valeur du champ correspond exactement à la valeur de référence.
-     * **Différent (≠) :** vérifie si la valeur du champ ne correspond pas à la valeur de référence.
-     * **Supérieur à (>) :** vérifie si la valeur du champ est supérieure à la valeur de référence.
-     * **Supérieur ou égal à (≥) :** vérifie si la valeur du champ est supérieure ou égale à la valeur de référence.
-     * **Inférieur à (<) :** vérifie si la valeur du champ est inférieure à la valeur de référence.
-     * **Inférieur ou égal à (≤) :** vérifie si la valeur du champ est inférieure ou égale à la valeur de référence.
-3. **Valeur de référence**
-   * **Descriptif :** la valeur à laquelle le champ est comparé.
-   * **Détail :** cette valeur peut être numérique, textuelle ou de type date, selon le contexte de la comparaison.
-4. **Montant de tolérance**
-   * **Descriptif :** définit la marge d'erreur acceptable pour la comparaison.
-   * **Détail :** le montant de tolérance est une valeur numérique qui indique l'écart maximal autorisé entre les deux valeurs de champ pour que la comparaison soit considérée comme vraie.
-5. **Type de tolérance**
-   * **Descriptif :** spécifie l'unité de mesure du montant de tolérance.
-   * **Possibilités :**
-     * **Valeur :** la tolérance est une valeur absolue, ce qui signifie que les deux champs peuvent différer du montant de tolérance spécifié.
-     * **Percent :** la tolérance est calculée en pourcentage de la valeur du second champ, autorisant une marge d'erreur relative.
+Dans le concepteur de workflows standard, ajoutez une carte sous **Et**, ouvrez **Champ du document**, puis sélectionnez la comparaison d'un champ avec une référence et des tolérances. L'exemple suivant utilise la version 2.
 
-## **Fonctionnalité :**
+## Paramètres
 
-* **Évaluation de la condition :** le système évalue la valeur du champ par rapport à la valeur de référence à l'aide de l'opérateur de comparaison sélectionné. Si une tolérance est configurée, le système considère la comparaison réussie si la valeur du champ se situe dans la plage de tolérance définie.
-* **Exécution de l'action :**
-  * **Dans la tolérance :** si la valeur du champ satisfait la condition dans la tolérance spécifiée, le workflow se poursuit en déclenchant les actions associées.
-  * **Hors tolérance :** si la valeur du champ ne satisfait pas la condition ou se situe en dehors de la plage de tolérance, des actions alternatives peuvent être exécutées, comme la journalisation, l'envoi d'alertes ou l'arrêt du workflow.
+Utilisez un champ numérique configuré dans votre organisation. La valeur du champ, la référence et la tolérance sont évaluées numériquement. Utilisez des unités cohérentes.
 
-## **Mise en place et configuration :**
+| Paramètre | Signification |
+| --- | --- |
+| Nom du champ | Le champ configuré, par exemple `total_amount`. |
+| Opérateur | La comparaison à appliquer : `eq`, `neq`, `gt`, `ge`, `lt` ou `le`. |
+| Valeur de référence | Le nombre fixe auquel le champ est comparé. |
+| Tolérance | L'écart numérique autorisé. |
+| Type de tolérance | **Valeur** (`value`) pour un montant absolu ou **Pour cent** (`percent`) pour un écart relatif. |
 
-* Les utilisateurs configurent la carte en sélectionnant le champ à évaluer dans une liste de champs disponibles et en choisissant l'opérateur de comparaison (par ex. equals, greater than) dans une liste déroulante. Ils spécifient ensuite la valeur de référence à laquelle comparer et définissent le montant de tolérance, puis sélectionnent le type de tolérance (par ex. percent ou value).
+Avec une référence positive de 200, une tolérance de 5 pour cent autorise un écart de 10. Une tolérance absolue de 5 autorise un écart de 5. Vérifiez les limites pertinentes pour l'opérateur et les valeurs choisis.
 
-## **Conclusion :**
+## Effet de la tolérance sur la comparaison
 
-La carte « Field Comparison with Tolerances » est un outil polyvalent pour les workflows nécessitant des évaluations flexibles. En permettant des comparaisons avec tolérances, elle garantit que les workflows restent efficaces et adaptables, tenant compte des variations du monde réel sans compromettre la précision.
+Avec une référence de **100** et une tolérance absolue de **5**, la limite inférieure est **95** et la limite supérieure est **105**.
+
+| Opérateur | La condition est remplie lorsque la valeur du champ… |
+| --- | --- |
+| `eq` (=) | Est comprise entre 95 et 105, limites incluses. |
+| `neq` (≠) | Est inférieure à 95 ou supérieure à 105. |
+| `gt` (>) | Est supérieure à 105. |
+| `ge` (≥) | Est au moins égale à 95. |
+| `lt` (<) | Est inférieure à 95. |
+| `le` (≤) | Est au plus égale à 105. |
+
+Cette carte renvoie le résultat d'une condition. Les étapes suivantes dépendent du déclencheur, des autres conditions et des actions configurées dans le workflow.
 
 <!-- workflow-card-complete-example-20261021 condition_docfield_operator_value_tolerances -->
 
-### Exemple de tolérance de valeur de référence
+## Exemple pratique
 
-**Configuration :** Choisissez le champ de document numérique `total_amount`, l'égalité, la valeur de référence `100`, la tolérance absolue `5` et le type de tolérance Valeur.
+1. Sélectionnez le champ numérique configuré **Montant total** (`total_amount`).
+2. Sélectionnez **Est** (`eq`).
+3. Saisissez la référence **100** et la tolérance **5**.
+4. Sélectionnez le type de tolérance **Valeur** (`value`).
 
-**Résultat attendu et contre-exemple :** Avec la valeur `103`, la condition est vraie car la différence est dans la tolérance autorisée. Avec la valeur `110`, la condition est fausse car la différence dépasse cette tolérance. Cette carte compare un champ avec une valeur de référence configurée. Utilisez la carte séparée à deux champs lorsque les deux côtés doivent provenir de champs de document. Les données manquantes ou non numériques nécessitent une enquête et non une correspondance supposée.
+| Valeur du champ | Écart absolu par rapport à 100 | Résultat attendu |
+| --- | --- | --- |
+| 103 | 3 | Condition remplie. |
+| 110 | 10 | Condition non remplie. |
+| 95 ou 105 | 5 | Condition remplie : l'égalité inclut les limites de tolérance. |
 
-Il s'agit d'une configuration de test illustrative et du résultat attendu ; il n'a pas été exécuté. Utilisez les données et les destinataires configurés dans votre organisation de test.
+Il s'agit des résultats de calcul attendus pour une configuration d'exemple. Aucun workflow n'a été exécuté pour cet exemple.
+
+## Avant d'activer la règle
+
+Vérifiez un cas correspondant, un cas non correspondant et les limites avec des données de test appropriées. Examinez séparément les champs manquants, les valeurs non numériques et les erreurs de configuration. Consultez le journal d'exécution pour vérifier les valeurs, l'opérateur, la tolérance et le résultat réellement utilisés.
+
+Si les deux montants proviennent de champs du document, utilisez la carte distincte de [comparaison de deux champs avec tolérance](compare-two-fields-with-tolerance.md).

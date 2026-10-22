@@ -26,7 +26,7 @@ A origem continua disponível — como uma condição entre muitas. Uma regra ta
 
 Os layouts baseados em regras são ativados **por tipo de documento** por um **administrador da organização**.
 
-1. Acesse **Settings → Global Settings → Document Types**.
+1. Acesse **Definições → Definições gerais → Tipos de documento**.
 2. Clique no ícone de **configurações** (engrenagem) no card do tipo de documento.
 3. Abra **Gerenciar layouts** e ative o interruptor.
 
@@ -175,7 +175,7 @@ Tela **Validação de Campo** · prioridade **5** · *Supplier ID is HP0000278* 
 
 ### Um layout para vários países
 
-Tela **Validação de Campo** · prioridade **100** · **ANY of**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · destino *DACH invoice*. Desative as regras migradas "Layout for AT" e "Layout for CH" se elas apontarem para cópias mais antigas.
+Tela **Validação de Campo** · prioridade **100** · **Qualquer uma das condições**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · destino *DACH invoice*. Desative as regras migradas "Layout for AT" e "Layout for CH" se elas apontarem para cópias mais antigas.
 
 ### Uma tela mais simples para faturas eletrônicas
 

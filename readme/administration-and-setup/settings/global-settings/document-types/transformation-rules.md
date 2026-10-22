@@ -34,7 +34,7 @@ As regras de transformação substituem a maioria dos pequenos scripts que as or
 
 As regras de transformação são ativadas **por tipo de documento** por um **administrador da organização**.
 
-1. Acesse **Settings → Global Settings → Document Types**.
+1. Acesse **Definições → Definições gerais → Tipos de documento**.
 2. Clique no ícone de **configurações** (engrenagem) no cartão do tipo de documento.
 3. Abra **Regras de Transformação** e ative o botão. Clique em **Gerenciar regras de transformação** para abrir a lista.
 
@@ -113,7 +113,7 @@ As regras de **Linhas da tabela** usam duas etapas diferentes, que trabalham com
 | Etapa | Efeito |
 | --- | --- |
 | **Limpar todas as linhas** | exclui todas as linhas extraídas. As linhas adicionadas por uma etapa posterior são mantidas. |
-| **Add a row** | adiciona uma linha **após a última linha** ou **antes da primeira linha**. Para cada coluna, escolha **Valor** (um valor fixo) ou **Campo** (o valor de um campo de cabeçalho). As colunas que você deixar de fora permanecem vazias. |
+| **Adicionar uma linha** | adiciona uma linha **após a última linha** ou **antes da primeira linha**. Para cada coluna, escolha **Valor** (um valor fixo) ou **Campo** (o valor de um campo de cabeçalho). As colunas que você deixar de fora permanecem vazias. |
 
 {% hint style="info" %}
 **Data de reformatação** espera a data como o DocBits a armazena internamente (`YYYY-MM-DD`). Aplique-a ao próprio campo, não a um texto que já contém uma data formatada.
@@ -148,7 +148,7 @@ Linhas da tabela **INVOICE_TABLE** · somente quando *Supplier ID is HP0000278* 
 
 <figure><img src="../../../../.gitbook/assets/s150-transformation-add-row-columns-pt.png" alt="Etapa de transformação para adicionar uma linha à tabela, sem guardar. A pergunta sobre a fila indica a posição da nova linha da tabela."><figcaption><p>Etapa de transformação para adicionar uma linha à tabela, sem guardar. A pergunta sobre a fila indica a posição da nova linha da tabela.</p></figcaption></figure>
 
-A ordem importa: **Limpar todas as linhas** deve vir **antes** de **Add a row**. O construtor avisa você caso contrário ("Clear all rows runs after Add a row …") e também avisa se uma etapa **Add a row** não for precedida por **Limpar todas as linhas**, pois a regra acrescentaria outra cópia da linha a cada salvamento. Combine esta regra com uma regra de correspondência de pedidos de compra por total que esteja ativa para documentos de uma linha.
+A ordem importa: **Limpar todas as linhas** deve vir **antes** de **Adicionar uma linha**. O construtor avisa você caso contrário ("Clear all rows runs after Add a row …") e também avisa se uma etapa **Adicionar uma linha** não for precedida por **Limpar todas as linhas**, pois a regra acrescentaria outra cópia da linha a cada salvamento. Combine esta regra com uma regra de correspondência de pedidos de compra por total que esteja ativa para documentos de uma linha.
 
 ### Preencher o pedido de compra a partir do campo do número da fatura
 
@@ -225,7 +225,7 @@ As regras de tabela e de coluna alteram o que o sistema de correspondência de p
 
 ## Logs
 
-Com **Execução de logs** ativado, cada aplicação da regra é gravada em **Document Types → (tipo de documento) → Logs**, com o resultado (aplicada, sem alteração, ignorada), o documento e — para regras ignoradas — o rastreamento da condição que explica o motivo. Consulte [Ler o rastreamento da condição](rule-conditions-applies-when.md#ler-o-rastreamento-da-condicao-nos-logs).
+Com **Execução de logs** ativado, cada aplicação da regra é gravada em **Tipos de documento → (tipo de documento) → Registos**, com o resultado (aplicada, sem alteração, ignorada), o documento e — para regras ignoradas — o rastreamento da condição que explica o motivo. Consulte [Ler o rastreamento da condição](rule-conditions-applies-when.md#ler-o-rastreamento-da-condicao-nos-logs).
 
 ## Melhores práticas
 
@@ -242,7 +242,7 @@ Com **Execução de logs** ativado, cada aplicação da regra é gravada em **Do
 | --- | --- |
 | A regra não alterou nada | Ela está ativa e o recurso está ativado para o tipo de documento? A condição é verdadeira para este documento (valor exato, incluindo espaços e maiúsculas/minúsculas)? Uma regra de **execução única** já foi aplicada ao documento? Verifique o rastreamento no log. |
 | O valor muda novamente a cada salvamento | O pipeline contém Take a slice, Extract ou Find & replace. Ative **Executar apenas uma vez por documento** ou use Read from com outro campo. |
-| Uma tabela ganha mais uma linha a cada salvamento | Uma etapa **Add a row** sem **Limpar todas as linhas** antes dela. Adicione primeiro a etapa de limpeza ou ative a execução única. |
+| Uma tabela ganha mais uma linha a cada salvamento | Uma etapa **Adicionar uma linha** sem **Limpar todas as linhas** antes dela. Adicione primeiro a etapa de limpeza ou ative a execução única. |
 | A correspondência do pedido de compra é perdida após salvar | Uma regra de tabela substituiu as linhas correspondidas. O motivo no documento nomeia a regra; faça a regra reproduzir as mesmas linhas ou defina-a para execução única. |
 | Uma regra de correspondência nunca é executada após a transformação | A regra alterou o número de linhas; ajuste a condição de ativação da regra de correspondência. |
 | A regra precisa de um valor dos dados mestres do fornecedor, mas ele ainda está vazio | Ative **Run after lookup population (before PO match)**. |

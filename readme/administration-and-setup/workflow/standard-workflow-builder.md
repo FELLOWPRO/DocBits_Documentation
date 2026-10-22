@@ -1,6 +1,6 @@
 # Fluxo padrão
 
-O construtor **Standard Workflow** é o editor linear, baseado em cartões, para automatizar o processamento de documentos. Um fluxo de trabalho é composto por três grupos de cartões — **Quando** (o gatilho), **E** (condições adicionais) e **Então** (as ações a executar). Quando um documento corresponde às condições When/And, as ações Then são executadas automaticamente.
+O construtor **Fluxo padrão** é o editor linear, baseado em cartões, para automatizar o processamento de documentos. Um fluxo de trabalho é composto por três grupos de cartões — **Quando** (o gatilho), **E** (condições adicionais) e **Então** (as ações a executar). Quando um documento corresponde às condições When/And, as ações Then são executadas automaticamente.
 
 ## Criar e testar um Standard Workflow <a id="standard-workflow-tutorial"></a>
 
@@ -95,7 +95,7 @@ Na lista de workflows, ativo a regra testada e confirmo o interruptor ligado. An
 
 ## Como aceder
 
-Abra o **Workflow Dashboard → Workflow List** e clique em **Adicionar fluxo de trabalho** para criar um novo fluxo de trabalho Standard, ou clique num fluxo de trabalho existente para o editar.
+Abra o **Painel de fluxos → Lista de fluxos** e clique em **Adicionar fluxo de trabalho** para criar um novo fluxo de trabalho Standard, ou clique num fluxo de trabalho existente para o editar.
 
 <figure><img src="../../.gitbook/assets/prior-u033-pt.png" alt="Lista de fluxos e ações de importação."><figcaption><p>Lista de fluxos e ações de importação.</p></figcaption></figure>
 
@@ -118,5 +118,5 @@ Guarde com **Salvar fluxo de trabalho** ou guarde o esquema como um modelo reuti
 ## Próximos passos
 
 - Veja o que cada cartão faz na secção **Cartas**.
-- Combine cartões em soluções comprovadas com os **Workflow Pattern Guides**.
+- Combine cartões em soluções comprovadas com os **Guias de padrões de fluxos**.
 - Para fluxos com ramificações e caminhos paralelos (Wait ALL / Wait ANY / OR), utilize o construtor **Fluxo de trabalho avançado**.

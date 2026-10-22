@@ -28,7 +28,7 @@ Regelbasierte Layouts werden **pro Dokumenttyp** von einem **Organisationsadmini
 
 1. Gehen Sie zu **Einstellungen → Dokumenttypen**.
 2. Klicken Sie auf das **Einstellungen**-Symbol (Zahnrad) auf der Karte des Dokumenttyps.
-3. Öffnen Sie **Manage Layouts** und schalten Sie den Schalter ein.
+3. Öffnen Sie **Layouts verwalten** und schalten Sie den Schalter ein.
 
 <figure><img src="../../../../../.gitbook/assets/doc-type-settings-rule-toggles-de.png" alt="Der Schalter Manage Layouts"><figcaption><p>Der Schalter Manage Layouts in den zusätzlichen Einstellungen eines Dokumenttyps</p></figcaption></figure>
 
@@ -56,7 +56,7 @@ Es wird nichts gelöscht oder an den Layouts selbst geändert. Unmittelbar nach 
 * Auf dem Tab **Layouts** können Sie Layouts erstellen, bearbeiten, klonen und löschen. Jede Karte zeigt, ob eine Regel das Layout verwendet („Not targeted by rules“, wenn keine es tut). Filtern Sie mit **All / My layouts / System**; Systemlayouts werden mit DocBits ausgeliefert und können angezeigt und geklont, aber nicht geändert werden.
 
 {% hint style="info" %}
-Erste und zweite Genehmigung teilen sich die **Approval**-Layouts und -Regeln. Damit die zweite Genehmigungsstufe einen eigenen Bildschirm erhält, fügen Sie eine Approval-Regel mit der Bedingung *Document Status is Pending second approval* hinzu – siehe das [Beispiel](#unterschiedliche-bildschirme-fur-erste-und-zweite-genehmigung).
+Erste und zweite Genehmigung teilen sich die **Freigabe**-Layouts und -Regeln. Damit die zweite Genehmigungsstufe einen eigenen Bildschirm erhält, fügen Sie eine Approval-Regel mit der Bedingung *Document Status is Pending second approval* hinzu – siehe das [Beispiel](#unterschiedliche-bildschirme-fur-erste-und-zweite-genehmigung).
 {% endhint %}
 
 ## So wird ein Layout ausgewählt
@@ -71,7 +71,7 @@ Regeln, deren Layout gelöscht wurde oder leer ist, werden übersprungen.
 
 ### Ein durchgängiges Beispiel
 
-Regeln des Bildschirms **Field Validation**:
+Regeln des Bildschirms **Feldvalidierung**:
 
 | Priorität | Regel | Bedingung | Layout |
 | --- | --- | --- | --- |
@@ -110,7 +110,7 @@ Jede Zeile zeigt die **Priorität** (die erste Zeile ist mit **FIRST** markiert)
 | Duplizieren oder löschen | Menü **⋮** der Zeile |
 | Eine Regel suchen | **Regeln durchsuchen…** |
 
-Das Badge **Quelle** zeigt, woher eine Regel stammt: **System**-Regeln werden mit DocBits ausgeliefert. Wenn Sie eine bearbeiten, wird eine Kopie für Ihre Organisation erstellt und als **Customized** angezeigt; das Original bleibt unverändert und kann wiederhergestellt werden. Von Ihnen erstellte Regeln sind **Custom**.
+Das Badge **Quelle** zeigt, woher eine Regel stammt: **System**-Regeln werden mit DocBits ausgeliefert. Wenn Sie eine bearbeiten, wird eine Kopie für Ihre Organisation erstellt und als **Maßgeschneidert** angezeigt; das Original bleibt unverändert und kann wiederhergestellt werden. Von Ihnen erstellte Regeln sind **BENUTZERDEFINIERT**.
 
 ### Das Standardlayout
 
@@ -134,7 +134,7 @@ Der Satz oben fasst die Regel zusammen, während Sie Geltungsbereich, Bedingunge
 | --- | --- |
 | **Regelname** | Wird in der Regelliste angezeigt. Beschreiben Sie den Geschäftsfall: „Beispiel-Lieferant-Rechnungen“, „E-Rechnungen“, „Genehmigung hoher Beträge“. |
 | **Regelschlüssel** | Wird aus dem Namen erzeugt und bleibt gleich, wenn Sie die Regel umbenennen. |
-| **Document Type** / **Layout type** | Der Dokumenttyp und der Bildschirm, für den die Regel gilt. Wird übernommen von der Stelle, an der Sie **Neue Regel** angeklickt haben. |
+| **Dokumenttyp** / **Layouttyp** | Der Dokumenttyp und der Bildschirm, für den die Regel gilt. Wird übernommen von der Stelle, an der Sie **Neue Regel** angeklickt haben. |
 | **Priorität** | Niedrigere Zahlen werden zuerst geprüft. Lassen Sie Lücken (5, 10, 20 …), damit Sie später Regeln einfügen können. |
 
 ### Schritt 2 – Applies when
@@ -159,41 +159,41 @@ Der Bereich rechts zeigt, was die Regel für ein Beispieldokument bewirkt, das d
 
 | Zeile | Bedeutung |
 | --- | --- |
-| **Sample document** | Die für die Vorschau verwendeten Werte, entnommen aus Ihren Bedingungen |
+| **Beispieldokument** | Die für die Vorschau verwendeten Werte, entnommen aus Ihren Bedingungen |
 | **matched_by** | `rule`, wenn eine Regel gepasst hat, andernfalls das Standardlayout |
-| **Resolved layout** | Das Layout, das das Beispieldokument erhalten würde |
-| **Priority hit** | Die Priorität der Regel, die gepasst hat |
+| **Aufgelöstes Layout** | Das Layout, das das Beispieldokument erhalten würde |
+| **Prioritätstreffer** | Die Priorität der Regel, die gepasst hat |
 | **watched_fields** | Die Felder, von denen die Layoutauswahl abhängt. Ändert ein Benutzer eines davon, wird das Layout erneut gewählt. |
 
-Klicken Sie zum Speichern auf **Create Rule** (beim Bearbeiten auf **Save rule**). **Cancel** führt zurück zur Regelliste.
+Klicken Sie zum Speichern auf **Regel anlegen** (beim Bearbeiten auf **Regel speichern**). **Abbrechen** führt zurück zur Regelliste.
 
 ## Beispiele
 
 ### Zusätzliche Felder für einen Lieferanten
 
-Bildschirm **Field Validation** · Priorität **5** · *Supplier ID is DEMO-LIEFERANT-01* · Ziel *Rechnung mit Projektfeldern* (ein Klon Ihres Standardlayouts mit den zusätzlichen Feldern für Projekt und Kostenstelle).
+Bildschirm **Feldvalidierung** · Priorität **5** · *Supplier ID is DEMO-LIEFERANT-01* · Ziel *Rechnung mit Projektfeldern* (ein Klon Ihres Standardlayouts mit den zusätzlichen Feldern für Projekt und Kostenstelle).
 
 ### Ein Layout für mehrere Länder
 
-Bildschirm **Field Validation** · Priorität **100** · **ANY of**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · Ziel *DACH-Rechnung*. Deaktivieren Sie die migrierten Regeln „Layout for AT“ und „Layout for CH“, falls sie auf ältere Kopien verweisen.
+Bildschirm **Feldvalidierung** · Priorität **100** · **Beliebige Bedingung**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · Ziel *DACH-Rechnung*. Deaktivieren Sie die migrierten Regeln „Layout for AT“ und „Layout for CH“, falls sie auf ältere Kopien verweisen.
 
 ### Ein einfacherer Bildschirm für E-Rechnungen
 
-Bildschirm **Field Validation** · Priorität **10** · *Extraction Method is ELECTRONIC_DOCUMENT* · Ziel *E-Rechnung* (ohne OCR-bezogene Felder).
+Bildschirm **Feldvalidierung** · Priorität **10** · *Extraction Method is ELECTRONIC_DOCUMENT* · Ziel *E-Rechnung* (ohne OCR-bezogene Felder).
 
 ### Ein strengerer Genehmigungsbildschirm für hohe Beträge
 
-Bildschirm **Approval** · Priorität **10** · *Total Amount greater than 10000* · Ziel *Genehmigung hoher Beträge* (mit Kostenstelle, Budgetverantwortlichem und Vertragsnummer).
+Bildschirm **Freigabe** · Priorität **10** · *Total Amount greater than 10000* · Ziel *Genehmigung hoher Beträge* (mit Kostenstelle, Budgetverantwortlichem und Vertragsnummer).
 
 ### Unterschiedliche Bildschirme für erste und zweite Genehmigung
 
-Bildschirm **Approval** · Priorität **5** · *Document Status is Pending second approval* · Ziel *Second Approval Layout*. Dokumente in der ersten Genehmigungsstufe passen nicht und erhalten das Approval-Standardlayout.
+Bildschirm **Freigabe** · Priorität **5** · *Document Status is Pending second approval* · Ziel *Second Approval Layout*. Dokumente in der ersten Genehmigungsstufe passen nicht und erhalten das Approval-Standardlayout.
 
 <figure><img src="../../../../../.gitbook/assets/s150-layout-rule-approval-status-de.png" alt="Ungespeicherter Entwurf im Editor für Layout-Auswahlregeln."><figcaption><p>Ungespeicherter Entwurf im Editor für Layout-Auswahlregeln.</p></figcaption></figure>
 
 ### Ein spezieller Ablehnungsbildschirm für bestimmte Lieferanten
 
-Bildschirm **Reject** · Priorität **10** · *Supplier ID is one of* `10040, 10041` · Ziel *Ablehnung mit Grundcodes*.
+Bildschirm **Ablehnen** · Priorität **10** · *Supplier ID is one of* `10040, 10041` · Ziel *Ablehnung mit Grundcodes*.
 
 ## Best Practices
 
@@ -208,7 +208,7 @@ Bildschirm **Reject** · Priorität **10** · *Supplier ID is one of* `10040, 10
 
 | Symptom | Was zu prüfen ist |
 | --- | --- |
-| Ein Dokument erhält das falsche Layout | Eine frühere Regel passt zuerst. Sehen Sie sich die Regeln darüber an oder den **Priority hit** in der Vorschau. |
+| Ein Dokument erhält das falsche Layout | Eine frühere Regel passt zuerst. Sehen Sie sich die Regeln darüber an oder den **Prioritätstreffer** in der Vorschau. |
 | Das Standardlayout wird verwendet, obwohl eine Regel passen sollte | Ist die Regel **Aktiv**? Passt die Bedingung auf den exakten Wert (Groß-/Kleinschreibung, Leerzeichen)? Befindet sich die Regel auf dem richtigen **Bildschirm**-Tab? |
 | Das Layout wechselt, während ein Benutzer arbeitet | Ein Feld in **watched_fields** wurde geändert. Stützen Sie die Regel auf ein stabileres Feld. |
 | Ein Layout kann nicht gelöscht werden | Eine Regel verweist noch darauf. Ändern Sie zuerst das Ziel dieser Regel oder löschen Sie sie. |

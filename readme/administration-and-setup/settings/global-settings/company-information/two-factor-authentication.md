@@ -32,7 +32,7 @@ Unterhalb des Schalters zeigt das Panel **MFA-Verbreitung**, wie verbreitet die 
 
 * den gesamten **Verbreitungsprozentsatz** und einen Fortschrittsbalken,
 * wie viele Ihrer Mitglieder die 2FA aktiviert haben (z. B. *0 von 74 Mitgliedern*),
-* eine Aufschlüsselung nach Faktor — **Authenticator**, **E-Mail** und **Passkey**.
+* eine Aufschlüsselung nach Faktor — **Authentifikator**, **E-Mail** und **Passkey**.
 
 <figure><img src="../../../../.gitbook/assets/mfa-adoption-report.png" alt="The MFA adoption report"><figcaption><p>Der MFA-Verbreitungsbericht: Gesamtprozentsatz, eingerichtete Mitglieder und eine Aufschlüsselung nach Faktor.</p></figcaption></figure>
 

@@ -1,6 +1,6 @@
-# Order Type of Purchase Order
+# Auftragsart der Bestellung
 
-<figure><img src="../../../../.gitbook/assets/image (277).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8a1cb3a5f80f-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -8,7 +8,7 @@ Diese Workflow-Karte ist darauf ausgelegt, den Auftragstyp einer Bestellung mit 
 
 ## **Bestandteile der Karte:**
 
-1. **Any/All:**
+1. **Alle/Alle:**
    * **Beschreibung**: Legt fest, ob die Bedingung für irgendeine oder alle im Workflow ausgewerteten Bestellungen gilt.
    * **Optionen**:
      * **Any**: Die Bedingung ist erfüllt, wenn irgendeine der Bestellungen die angegebene Bedingung erfüllt.
@@ -20,7 +20,7 @@ Diese Workflow-Karte ist darauf ausgelegt, den Auftragstyp einer Bestellung mit 
      * **Ungleich (≠)**: Stellt sicher, dass sich der Auftragstyp vom angegebenen Wert unterscheidet.
 3. **Auftragstyp:**
    * **Beschreibung**: Gibt den Wert an, mit dem der Auftragstyp der Bestellung verglichen wird.
-   * **Detail**: Der Wert muss mit dem Auftragstyp oder der Klassifizierung im System übereinstimmen.
+   * **Detailliert**: Der Wert muss mit dem Auftragstyp oder der Klassifizierung im System übereinstimmen.
 
 ## **Funktionalität:**
 

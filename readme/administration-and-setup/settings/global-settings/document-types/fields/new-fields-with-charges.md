@@ -15,4 +15,4 @@
 
 <figure><img src="../../../../../.gitbook/assets/s150-docbits_add_field_with_charges_2-de.png" alt="Ungespeicherter Feldentwurf mit aktivierter Option Zusatzkosten aktivieren."><figcaption><p>Ungespeicherter Feldentwurf mit aktivierter Option Zusatzkosten aktivieren.</p></figcaption></figure>
 
-Das Beispiel zeigt einen noch nicht gespeicherten Entwurf. Mit **Speichern** legen Sie das Feld an; **Zurück** führt aus dem Dialog zurück. Prüfen Sie anschließend in der Feldübersicht die Eigenschaften des neuen Feldes, beispielsweise **Erforderlich**, **OCR** und **Match Score**, und übernehmen Sie beabsichtigte Änderungen mit **Einstellungen speichern**.
+Das Beispiel zeigt einen noch nicht gespeicherten Entwurf. Mit **Speichern** legen Sie das Feld an; **Zurück** führt aus dem Dialog zurück. Prüfen Sie anschließend in der Feldübersicht die Eigenschaften des neuen Feldes, beispielsweise **Erforderlich**, **OCR** und **Abgleichswert**, und übernehmen Sie beabsichtigte Änderungen mit **Einstellungen speichern**.

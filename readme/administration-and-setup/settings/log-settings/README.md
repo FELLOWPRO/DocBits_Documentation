@@ -6,14 +6,14 @@ Die Aktivitätsprotokollierung bietet eine Echtzeitsicht auf Systemereignisse ü
 
 ## Analytics Banner
 
-Oben auf der Seite verlinkt ein Banner auf das **Analytics Dashboard** mit Diagrammen, Kennzahlen und Echtzeit-Monitoring.
+Oben auf der Seite verlinkt ein Banner auf das **Analyse-Dashboard** mit Diagrammen, Kennzahlen und Echtzeit-Monitoring.
 
 ## Filter
 
 | Filter | Beschreibung |
 |--------|-------------|
 | **Zeitbereich** | Wählen Sie ein Zeitfenster (z. B. Heute, Letzte 7 Tage, Letzte 30 Tage). |
-| **Schweregrad** | Schalten Sie Schweregrade ein oder aus: **Debug**, **Info**, **Warning**, **Error**. Jeder Chip zeigt die aktuelle Anzahl. |
+| **Schweregrad** | Schalten Sie Schweregrade ein oder aus: **Fehlersuche**, **Info**, **Warnung**, **FEHLER**. Jeder Chip zeigt die aktuelle Anzahl. |
 | **Service** | Filtern Sie Protokolle nach Dienst (z. B. api, auth, api-service). |
 | **Protokolle durchsuchen** | Freitextsuche in den Protokollmeldungen. |
 

@@ -12,13 +12,13 @@ Weil jede Integration ihren eigenen Key haben kann, können Sie einen abschalten
 
 ## Die API-Key-Verwaltung öffnen
 
-Gehen Sie zu **Einstellungen** und wählen Sie **Integration & SSO** unter **System & Verwaltung**.
+Gehen Sie zu **Einstellungen** und wählen Sie **Integration und SSO** unter **System & Verwaltung**.
 
-![Deutscher Abschnitt API-Schlüssel mit Schaltfläche API-Schlüssel erstellen](../../../../.gitbook/assets/api-key-settings-overview-de.png)
+<figure><img src="../../../../.gitbook/assets/api-key-settings-overview-de.png" alt="Deutscher Abschnitt API-Schlüssel mit Schaltfläche API-Schlüssel erstellen"><figcaption><p>Deutscher Abschnitt API-Schlüssel mit Schaltfläche API-Schlüssel erstellen</p></figcaption></figure>
 
 Der Abschnitt **API-Schlüssel** oben auf der Seite listet jeden Key auf, den Ihre Organisation besitzt.
 
-![Deutsche API-Schlüsselliste; Schlüsselwerte und Organisationsdaten sind ausgeblendet](../../../../.gitbook/assets/api-key-list-de.png)
+<figure><img src="../../../../.gitbook/assets/api-key-list-de.png" alt="Deutsche API-Schlüsselliste; Schlüsselwerte und Organisationsdaten sind ausgeblendet"><figcaption><p>Deutsche API-Schlüsselliste; Schlüsselwerte und Organisationsdaten sind ausgeblendet</p></figcaption></figure>
 
 ## Die Liste verstehen
 
@@ -28,10 +28,10 @@ Der Abschnitt **API-Schlüssel** oben auf der Seite listet jeden Key auf, den Ih
 | --- | --- |
 | **Schlüssel** | Die ersten Zeichen des Keys, gefolgt von `****`. Der Rest wird nach dem Erstellen nie wieder angezeigt — siehe [Einen API Key erstellen](#einen-api-key-erstellen). |
 | **Name** | Der Name, den Sie dem Key gegeben haben, mit seiner Beschreibung darunter. |
-| **Läuft Ab** | Das Datum, an dem der Key aufhört zu funktionieren, oder **Never**, wenn Sie keines gesetzt haben. |
-| **Zuletzt Verwendet** | Wann zuletzt eine Anfrage mit diesem Key eingegangen ist. **Never used** bedeutet, dass ihn noch kein System verwendet hat — nützlich, um Keys zu erkennen, die Sie gefahrlos entfernen können. |
-| **Status** | **Active** bedeutet, dass der Key funktioniert. Ein widerrufener Key ist dauerhaft abgeschaltet. |
-| **Actions** | Das Drei-Punkte-Menü, über das Sie den Key widerrufen können. |
+| **Läuft Ab** | Das Datum, an dem der Key aufhört zu funktionieren, oder **Nie**, wenn Sie keines gesetzt haben. |
+| **Zuletzt Verwendet** | Wann zuletzt eine Anfrage mit diesem Key eingegangen ist. **Nie verwendet** bedeutet, dass ihn noch kein System verwendet hat — nützlich, um Keys zu erkennen, die Sie gefahrlos entfernen können. |
+| **Status** | **aktiv** bedeutet, dass der Key funktioniert. Ein widerrufener Key ist dauerhaft abgeschaltet. |
+| **Aktionen** | Das Drei-Punkte-Menü, über das Sie den Key widerrufen können. |
 
 Wenn Sie mehr Keys haben, als auf eine Seite passen, verwenden Sie die Blätterelemente unten in der Liste.
 
@@ -44,7 +44,7 @@ Wenn Sie mehr Keys haben, als auf eine Seite passen, verwenden Sie die Blättere
 1. Klicken Sie oben rechts im Abschnitt API-Schlüssel auf **+ API-Schlüssel erstellen**.
 2. Füllen Sie den Dialog aus:
 
-![Deutscher Dialog API-Schlüssel erstellen mit Schlüsselname, Beschreibung und Ablauf](../../../../.gitbook/assets/api-key-create-dialog-de.png)
+<figure><img src="../../../../.gitbook/assets/api-key-create-dialog-de.png" alt="Deutscher Dialog API-Schlüssel erstellen mit Schlüsselname, Beschreibung und Ablauf"><figcaption><p>Deutscher Dialog API-Schlüssel erstellen mit Schlüsselname, Beschreibung und Ablauf</p></figcaption></figure>
 
 | Feld | Was Sie eintragen |
 | --- | --- |

@@ -1,48 +1,48 @@
-# Entscheidungslogik-Pattern
+# Entscheidungslogikmuster
 
-**Pattern-Typ:** Bedingtes Routing & Logik
-**Komplexität:** Mittel
-**Geschätzte Einrichtung:** 30–45 Minuten
-**Typische Anwendungsfälle:** Mehrpfad-Routing, bedingte Verarbeitung, Entscheidungsbäume, Umsetzung von Geschäftsregeln
+**Pattern-Typ:** Bedingtes Routing & Logik **Komplexität:** Mittel **Geschätzte Einrichtung:** 30–45 Minuten **Typische Anwendungsfälle:** Mehrpfad-Routing, bedingte Verarbeitung, Entscheidungsbäume, Umsetzung von Geschäftsregeln
 
----
+***
 
-Dieses Pattern bauen Sie im **Workflow-Builder** (Workflow Dashboard → Workflow List → Add Workflow). Klicken Sie auf **Add Card** und öffnen Sie die Kategorie **Logic** — sie enthält die Bedingungs- und Verzweigungskarten, die den Entscheidungsbaum steuern und die Sie mit der **And**-Gruppe kombinieren, um mehrere Bedingungen auszuwerten:
+Dieses Pattern bauen Sie im **Workflow-Builder** (Workflow Dashboard → Workflow List → Add Workflow). Klicken Sie auf **Karte hinzufügen** und öffnen Sie die Kategorie **Logik** — sie enthält die Bedingungs- und Verzweigungskarten, die den Entscheidungsbaum steuern und die Sie mit der **Und**-Gruppe kombinieren, um mehrere Bedingungen auszuwerten:
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card-Bibliothek im Workflow-Builder, nach Kategorie gruppiert"><figcaption><p>Die <strong>Add Card</strong>-Bibliothek — Bedingungs- und Verzweigungskarten finden Sie unter der Kategorie <strong>Logic</strong>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
----
+***
 
 ## Pattern-Überblick
 
 Dieses Pattern zeigt, wie Sie in DocBits-Workflows komplexe Entscheidungslogik umsetzen. Mit Bedingungskarten leiten Sie Dokumente anhand von Dokumentattributen, Feldwerten und Geschäftsregeln über verschiedene Verarbeitungspfade.
 
 **Was dieses Pattern macht:**
+
 1. Wertet mehrere Bedingungen nacheinander oder parallel aus
 2. Leitet Dokumente anhand von Bedingungen über verschiedene Pfade
 3. Setzt Geschäftsregeln und Richtlinien um
 4. Behandelt komplexe Entscheidungsbäume
 5. Kombiniert mehrere Kriterien für Routing-Entscheidungen
 
----
+***
 
 ## Wann dieses Pattern verwenden
 
 Verwenden Sie dieses Pattern, wenn Sie Folgendes benötigen:
-- ✅ Dokumente nach Betragsschwellen leiten
-- ✅ Unterschiedliche Regeln für unterschiedliche Dokumenttypen anwenden
-- ✅ Mehrstufige Freigabelogik umsetzen
-- ✅ Komplexe Geschäftsrichtlinien abbilden
-- ✅ Dynamisches Routing anhand mehrerer Kriterien erstellen
-- ✅ Logik zur Ausnahmebehandlung umsetzen
-- ✅ Freigabematrizen erstellen
+
+* ✅ Dokumente nach Betragsschwellen leiten
+* ✅ Unterschiedliche Regeln für unterschiedliche Dokumenttypen anwenden
+* ✅ Mehrstufige Freigabelogik umsetzen
+* ✅ Komplexe Geschäftsrichtlinien abbilden
+* ✅ Dynamisches Routing anhand mehrerer Kriterien erstellen
+* ✅ Logik zur Ausnahmebehandlung umsetzen
+* ✅ Freigabematrizen erstellen
 
 **Verwenden Sie dieses Pattern nicht, wenn:**
-- ❌ ein einfacher linearer Workflow genügt
-- ❌ alle Dokumente denselben Pfad durchlaufen
-- ❌ keine bedingte Verarbeitung erforderlich ist
 
----
+* ❌ ein einfacher linearer Workflow genügt
+* ❌ alle Dokumente denselben Pfad durchlaufen
+* ❌ keine bedingte Verarbeitung erforderlich ist
+
+***
 
 ## Typen von Entscheidungslogik
 
@@ -56,6 +56,7 @@ ELSE:
 ```
 
 **Beispiel:**
+
 ```
 IF Amount > €10,000:
   → Assign to Director
@@ -73,6 +74,7 @@ ELSE:
 ```
 
 **Beispiel:**
+
 ```
 IF Amount > €10,000 AND Supplier = "New" AND Department = "IT":
   → Assign to IT Director + CFO (dual approval)
@@ -90,6 +92,7 @@ ELSE:
 ```
 
 **Beispiel:**
+
 ```
 IF Amount > €50,000 OR Supplier is "Blocked" OR Document has "Urgent" flag:
   → Escalate immediately
@@ -113,6 +116,7 @@ ELSE:
 ```
 
 **Beispiel:**
+
 ```
 IF Document_Type = "Invoice":
   IF Amount > €10,000:
@@ -126,13 +130,14 @@ ELSE IF Document_Type = "Credit Note":
     → Standard credit workflow
 ```
 
----
+***
 
 ## Vollständiges Workflow-Beispiel
 
 ### Szenario: Freigabematrix für Rechnungen
 
 **Geschäftsregeln:**
+
 1. Betrag < 1.000 €: Automatisch freigeben
 2. Betrag 1.000–10.000 €: Freigabe durch die Führungskraft
 3. Betrag > 10.000 € UND neuer Lieferant: Freigabe durch Direktor + CFO
@@ -179,13 +184,14 @@ STEP 3: Amount-Based Routing (if not urgent)
         → Deadline: 2 days
 ```
 
----
+***
 
 ## Schritt-für-Schritt-Umsetzung
 
 ### Schritt 1: Bedingungskarten definieren
 
 **Bedingung 1: Betragsschwelle**
+
 ```
 Card: CONDITION_DOC_FIELD_AMOUNT
 Field: Total_Amount
@@ -195,6 +201,7 @@ Currency: EUR
 ```
 
 **Bedingung 2: Dokumenttyp-Prüfung**
+
 ```
 Card: CONDITION_DOC_TYPE_IS_ISNOT
 Document Type: IS
@@ -202,6 +209,7 @@ Type: Invoice
 ```
 
 **Bedingung 3: Lieferantenstatus**
+
 ```
 Card: CONDITION_SUPPLIER_STATUS_IS_ISNOT
 Supplier Status: IS
@@ -209,6 +217,7 @@ Status: ACTIVE
 ```
 
 **Bedingung 4: Prüfung auf neuen Lieferanten**
+
 ```
 Card: CONDITION_DOC_FIELD_DATE
 Field: Supplier_First_Transaction_Date
@@ -218,11 +227,12 @@ Value: {{TODAY_MINUS_180_DAYS}}
 
 **Leitfaden-Referenz:** [Leitfaden Bedingungskarten (komplett)](../and/condition-cards-complete-guide.md)
 
----
+***
 
 ### Schritt 2: Entscheidungsbaum aufbauen
 
 **Ebene 1: Dokumenttyp**
+
 ```
 Workflow: "Invoice Processing"
 
@@ -240,6 +250,7 @@ ELSE:
 ```
 
 **Ebene 2: Betragsschwellen (für Rechnungen)**
+
 ```
 IF Amount < €1,000:
   → Branch to "Auto-Approve Path"
@@ -257,6 +268,7 @@ ELSE (Amount ≥ €50,000):
 ```
 
 **Ebene 3: Lieferantenanalyse (für hochwertige Rechnungen)**
+
 ```
 IF Supplier_Status = "BLOCKED":
   → STOP processing
@@ -277,11 +289,12 @@ ELSE:
   → Standard high-value workflow
 ```
 
----
+***
 
 ### Schritt 3: Routing-Aktionen erstellen
 
 **Pfad A: Automatische Freigabe (Betrag < 1.000 €)**
+
 ```
 Actions:
 1. Set field "Approval_Type" = "AUTO"
@@ -292,6 +305,7 @@ Actions:
 ```
 
 **Pfad B: Freigabe durch die Führungskraft (1.000–10.000 €)**
+
 ```
 Actions:
 1. Set field "Approval_Type" = "MANUAL"
@@ -308,6 +322,7 @@ Actions:
 ```
 
 **Pfad C: Freigabe durch den Direktor (10.000–50.000 €)**
+
 ```
 Actions:
 1. Set field "Approval_Type" = "MANUAL"
@@ -328,6 +343,7 @@ Actions:
 ```
 
 **Pfad D: Freigabe durch die Geschäftsleitung (≥ 50.000 €)**
+
 ```
 Actions:
 1. Set field "Approval_Type" = "EXECUTIVE"
@@ -345,7 +361,7 @@ Actions:
 10. If any rejected: Executive review meeting
 ```
 
----
+***
 
 ## Erweiterte Entscheidungslogik-Patterns
 
@@ -373,6 +389,7 @@ Routing:
 ```
 
 **Umsetzung:**
+
 ```
 1. ACTION_CALCULATE_FIELD: Calculate risk score
 2. ACTION_SET_FIELD_TO_NUMBER: Store score
@@ -380,7 +397,7 @@ Routing:
 4. Route based on score
 ```
 
----
+***
 
 ### Pattern 2: Abteilungsbasierte Matrix
 
@@ -407,6 +424,7 @@ Department Matrix:
 ```
 
 **Umsetzung:**
+
 ```
 1. Check Department field
 2. Based on department, check amount threshold
@@ -414,7 +432,7 @@ Department Matrix:
 4. Different thresholds per department
 ```
 
----
+***
 
 ### Pattern 3: Zeitbasierte Logik
 
@@ -448,7 +466,7 @@ Fiscal Period:
     - Additional checks
 ```
 
----
+***
 
 ### Pattern 4: Ausnahmebasiertes Routing
 
@@ -485,7 +503,7 @@ Exception Types:
   - Amount discrepancy
 ```
 
----
+***
 
 ## Vollständiges Entscheidungslogik-Diagramm
 
@@ -616,13 +634,14 @@ INVOICE ARRIVES
 └─ [All decision levels processed]
 ```
 
----
+***
 
 ## Best Practices für die Konfiguration
 
 ### 1. Logik klar und wartbar halten
 
 ✅ **Gut:**
+
 ```
 IF Amount > 10000:
   → High value path
@@ -631,12 +650,14 @@ ELSE:
 ```
 
 ❌ **Schlecht (zu komplex):**
+
 ```
 IF (Amount > 10000 AND (Supplier = "A" OR Supplier = "B") AND NOT (Status = "X" OR Status = "Y") AND Department IN [1,2,3]):
   → Complex path
 ```
 
 **Besser: In Schritte aufteilen:**
+
 ```
 Step 1: IF Amount > 10000: Continue, ELSE: Standard path
 Step 2: IF Supplier in allowed list: Continue, ELSE: Review
@@ -644,17 +665,19 @@ Step 3: IF Status valid: Continue, ELSE: Reject
 Step 4: IF Department authorized: Approve, ELSE: Escalate
 ```
 
----
+***
 
 ### 2. Entscheidungslogik dokumentieren
 
 **Immer aufnehmen:**
-- Zweck jedes Entscheidungspunkts
-- Umgesetzte Geschäftsregel
-- Erwartete Ergebnisse
-- Ausnahmebehandlung
+
+* Zweck jedes Entscheidungspunkts
+* Umgesetzte Geschäftsregel
+* Erwartete Ergebnisse
+* Ausnahmebehandlung
 
 **Beispiel-Dokumentation:**
+
 ```
 Decision Point: Amount Threshold Check
 Business Rule: BR-INV-001 (Invoice Approval Matrix)
@@ -668,34 +691,36 @@ Updated: 2025-10-23
 Owner: Finance Department
 ```
 
----
+***
 
 ### 3. Alle Pfade testen
 
 **Test-Matrix:**
 
-| Testfall | Betrag | Typ | Lieferant | Erwarteter Pfad | Status |
-|-----------|--------|------|----------|---------------|--------|
-| TC1 | €500 | Invoice | Existing | Auto-approve | ✅ |
-| TC2 | €5,000 | Invoice | Existing | Manager | ✅ |
-| TC3 | €15,000 | Invoice | New | Director+CFO | ✅ |
-| TC4 | €60,000 | Invoice | Existing | Executive | ✅ |
-| TC5 | €2,000 | Credit Note | Existing | Credit workflow | ✅ |
-| TC6 | €100,000 | Invoice | Blocked | Stop & Escalate | ✅ |
+| Testfall | Betrag   | Typ         | Lieferant | Erwarteter Pfad | Status |
+| -------- | -------- | ----------- | --------- | --------------- | ------ |
+| TC1      | €500     | Rechnung     | Vorhanden  | Auto-approve    | ✅      |
+| TC2      | €5,000   | Rechnung     | Vorhanden  | Manager         | ✅      |
+| TC3      | €15,000  | Rechnung     | New       | Director+CFO    | ✅      |
+| TC4      | €60,000  | Rechnung     | Vorhanden  | Executive       | ✅      |
+| TC5      | €2,000   | Gutschrift | Vorhanden  | Kredit-Workflow | ✅      |
+| TC6      | €100,000 | Rechnung     | Blockiert   | Stoppen und eskalieren | ✅      |
 
----
+***
 
 ### 4. Entscheidungskennzahlen überwachen
 
 **Verfolgen:**
-- Verteilung auf die Entscheidungspfade
-- Automatische Freigabequote
-- Manuelle Prüfquote
-- Durchschnittliche Verarbeitungszeit pro Pfad
-- Ausnahmequoten
-- Pfad-Auslastung
+
+* Verteilung auf die Entscheidungspfade
+* Automatische Freigabequote
+* Manuelle Prüfquote
+* Durchschnittliche Verarbeitungszeit pro Pfad
+* Ausnahmequoten
+* Pfad-Auslastung
 
 **Beispiel-Kennzahlen:**
+
 ```
 Month: October 2025
 Total Invoices: 1,250
@@ -715,42 +740,41 @@ Processing Time:
 Exceptions: 15 (1.2%)
 ```
 
----
+***
 
 ## Verwandte Patterns
 
 ### Patterns, die gut zusammenpassen:
 
-- **[Aufgabenverwaltungs-Pattern](task-management-pattern.md)** – Aufgaben anhand von Entscheidungen erstellen
-- **[API-Integrations-Pattern](api-integration-pattern.md)** – Daten für die Entscheidungsfindung abrufen
-- **[PO-Matching-Pattern](po-matching-pattern.md)** – PO-Ergebnisse in Entscheidungen verwenden
-- **[Datentransformations-Pattern](data-transformation-pattern.md)** – Daten vor Entscheidungen transformieren
+* [**Aufgabenverwaltungs-Pattern**](task-management-pattern.md) – Aufgaben anhand von Entscheidungen erstellen
+* [**API-Integrations-Pattern**](api-integration-pattern.md) – Daten für die Entscheidungsfindung abrufen
+* [**PO-Matching-Muster**](po-matching-pattern.md) – PO-Ergebnisse in Entscheidungen verwenden
+* [**Datentransformations-Pattern**](data-transformation-pattern.md) – Daten vor Entscheidungen transformieren
 
----
+***
 
 ## Verwandte Leitfäden
 
 ### Voraussetzungen
-- [Leitfaden Bedingungskarten (komplett)](../and/condition-cards-complete-guide.md) – Alle Bedingungskarten
-- [Leitfaden Feldmanipulation](../then/document-field/field-manipulation-guide.md) – Feldoperationen
-- [Zuweisungs-Leitfaden](../then/assignee/assignment-user-guide.md) – Routing-Logik
+
+* [Leitfaden Bedingungskarten (komplett)](../and/condition-cards-complete-guide.md) – Alle Bedingungskarten
+* [Leitfaden Feldmanipulation](../then/document-field/field-manipulation-guide.md) – Feldoperationen
+* [Zuweisungs-Leitfaden](../then/assignee/assignment-user-guide.md) – Routing-Logik
 
 ### Verwandte Karten
-- **CONDITION_DOC_FIELD_AMOUNT** – [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md#field-conditions)
-- **CONDITION_DOC_TYPE_IS_ISNOT** – [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md#condition-doc-type-is-isnot)
-- **CONDITION_SUPPLIER_STATUS_IS_ISNOT** – [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md#condition-supplier-status-is-isnot)
-- **ACTION_ASSIGN_TO_USER** – [Zuweisungs-Leitfaden](../then/assignee/assignment-user-guide.md)
-- **tasks_create** – [Leitfaden Aufgabenzuweisung](../then/task/task-assignment-guide.md)
+
+* **CONDITION\_DOC\_FIELD\_AMOUNT** – [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md)
+* **CONDITION\_DOC\_TYPE\_IS\_ISNOT** – [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md)
+* **CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT** – [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md)
+* **ACTION\_ASSIGN\_TO\_USER** – [Zuweisungs-Leitfaden](../then/assignee/assignment-user-guide.md)
+* **tasks\_create** – [Leitfaden Aufgabenzuweisung](../then/task/task-assignment-guide.md)
 
 ### Nächste Schritte
-- Aufgaben erstellen: [Aufgabenverwaltungs-Pattern](task-management-pattern.md)
-- Komplexen Abgleich hinzufügen: [PO-Matching-Pattern](po-matching-pattern.md)
-- APIs integrieren: [API-Integrations-Pattern](api-integration-pattern.md)
 
----
+* Aufgaben erstellen: [Aufgabenverwaltungs-Pattern](task-management-pattern.md)
+* Komplexen Abgleich hinzufügen: [PO-Matching-Pattern](po-matching-pattern.md)
+* APIs integrieren: [API-Integrations-Pattern](api-integration-pattern.md)
 
-**Pattern-Version:** 1.0
-**Zuletzt aktualisiert:** 23. Oktober 2025
-**Schwierigkeit:** Mittel
-**Geschätzte Zeit:** 30–45 Minuten
-**Erfolgsquote:** Hoch
+***
+
+**Pattern-Version:** 1.0 **Zuletzt aktualisiert:** 23. Oktober 2025 **Schwierigkeit:** Mittel **Geschätzte Zeit:** 30–45 Minuten **Erfolgsquote:** Hoch

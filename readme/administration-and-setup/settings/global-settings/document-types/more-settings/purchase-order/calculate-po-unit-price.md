@@ -8,13 +8,12 @@ Sie können wählen, den **Stückpreis** jeder Bestellposition automatisch aus d
 
 1.  Navigieren Sie zu **Einstellungen** -> **Globale Einstellungen** -> **Dokumenttypen**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1_de.png" alt=""><figcaption></figcaption></figure>
 2.  Wählen Sie den gewünschten Dokumenttyp aus und klicken Sie auf **Weitere Einstellungen**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2_de.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/s50-consumed-po-line-document-types-de.png" alt="Deutsche Dokumenttypenübersicht. Über das Zahnrad der Rechnung öffnen Sie die weiteren Einstellungen."><figcaption><p>Deutsche Dokumenttypenübersicht. Über das Zahnrad der Rechnung öffnen Sie die weiteren Einstellungen.</p></figcaption></figure>
 3.  Aktivieren Sie im Abschnitt **Bestellung** die Option **PO-Stückpreis berechnen**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_3_de.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/s50-consumed-po-line-settings-de.png" alt="Deutsche Bestelleinstellungen mit Status der verbrauchten Bestellposition. Die Schalter zeigen den vorgefundenen Zustand."><figcaption><p>Deutsche Bestelleinstellungen mit Status der verbrauchten Bestellposition. Die Schalter zeigen den vorgefundenen Zustand.</p></figcaption></figure>
 
 ## Wie der Preis berechnet wird
 

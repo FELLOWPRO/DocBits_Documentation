@@ -1,45 +1,52 @@
-# Document Assignment & User Cards - Complete Guide
+# Dokumentenzuweisung und Benutzerkarten
 
-Diese Karten gehören in die **Then**-Gruppe des Workflow-Builders – die Aktionen, die ausgeführt werden, sobald die When-/And-Bedingungen zutreffen:
+## Dokumentenzuweisung und Benutzerkarten – Vollständiger Leitfaden
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Karten werden über <strong>Add Card</strong> zur <strong>Then</strong>-Gruppe hinzugefügt.</p></figcaption></figure>
+**Umfasst:** 13 aufgaben- und benutzerbezogene Karten
 
-**Covers:** 13 assignment and user-related cards
+***
 
----
+Die Karten auf dieser Seite gehören zur Gruppe **Dann** des Workflow Builder – die Aktionen, die ausgeführt werden, sobald die Wenn/Und-Bedingungen übereinstimmen:
 
-## 📌 Version Information
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-de.png" alt="Nicht gespeichertes Beispiel mit Wenn-, Und- und Dann-Karten. Füllen Sie alle Platzhalter vor der Ausführung aus."><figcaption><p>Nicht gespeichertes Beispiel mit Wenn-, Und- und Dann-Karten. Füllen Sie alle Platzhalter vor der Ausführung aus.</p></figcaption></figure>
 
-**Multi-Version Cards:** DOC_USER_ASSIGN (v2 latest, v3 deprecated), DOC_GROUP_ASSIGN (v2 latest, v3 deprecated), OC_ASSIGN_DOC (v2)
+***
 
-**Important:** v3 versions added decision tree support but are now deprecated
-**Recommendation:** Use v2 for both DOC_USER_ASSIGN and DOC_GROUP_ASSIGN
+### 📌 Versionsinformationen
 
-📖 [Complete Version History](../../../changelog/release.md#-assignment--routing-cards) | [Card Version Database](../../../../DocFlow/docs/card_version.md)
+**Mehrversionskarten:** DOC\_USER\_ASSIGN (v2 aktuell, v3 veraltet), DOC\_GROUP\_ASSIGN (v2 aktuell, v3 veraltet), OC\_ASSIGN\_DOC (v2)
 
----
+**Wichtig:** v3-Versionen haben Entscheidungsbaumunterstützung hinzugefügt, sind jetzt jedoch veraltet. **Empfehlung:** Verwenden Sie v2 sowohl für DOC\_USER\_ASSIGN als auch für DOC\_GROUP\_ASSIGN
 
-# Basic Document Assignment
+📖 [Vollständiger Versionsverlauf](../../release.md) | [Kartenversionen und Verhalten](../../cards-overview/card-versions-guide.md)
 
-## Card: DOC_USER_ASSIGN / Assign Document to User
+***
 
-### Purpose
-Assigns document to a specific person for their action
+## Grundlegende Dokumentzuweisung
 
-### When to Use
-- Document needs specific person's review
-- Handoff to individual team member
-- Accountability tracking
-- Assign work to named person
+### Karte: DOC\_USER\_ASSIGN / Dokument dem Benutzer zuweisen
 
-### How It Works
+#### Zweck
+
+Weist das Dokument einer bestimmten Person für deren Aktion zu
+
+#### Wann zu verwenden
+
+* Das Dokument muss von einer bestimmten Person überprüft werden
+* Übergabe an einzelnes Teammitglied
+* Nachverfolgung der Verantwortlichkeit
+* Weisen Sie der benannten Person Arbeit zu
+
+#### Wie es funktioniert
+
 ```
 Document is "assigned to" = John Smith
 Only John can see it as assigned to him
 John is responsible for this document
 ```
 
-### Example
+#### Beispiel
+
 ```
 Invoice arrives
     ↓
@@ -49,39 +56,46 @@ Only John sees "Assigned to Me"
 John must take action on it
 ```
 
-### Parameters
+#### Parameter
+
 ```
 User: [Select which person]
 ```
 
-### Note
-Assigning means:
-- Document shows as "assigned to me" for that person
-- That person is responsible
-- Others can still see document (but not as assigned to them)
-- One assignment at a time per document
+#### Hinweis
 
----
+Zuweisen bedeutet:
 
-## Card: DOC_GROUP_ASSIGN / Assign Document to Group
+* Das Dokument wird für diese Person als „Mir zugewiesen“ angezeigt
+* Diese Person ist verantwortlich
+* Andere können das Dokument weiterhin sehen (jedoch nicht in der ihnen zugewiesenen Form)
+* Jeweils eine Aufgabe pro Dokument
 
-### Purpose
-Assigns document to a group (all members see it as assigned to them)
+***
 
-### When to Use
-- Document for team, not individual
-- Multiple people can handle
-- Shared responsibility
-- Team workload distribution
+### Karte: DOC\_GROUP\_ASSIGN / Dokument einer Gruppe zuordnen
 
-### How It Works
+#### Zweck
+
+Weist das Dokument einer Gruppe zu (alle Mitglieder sehen es als ihnen zugewiesen)
+
+#### Wann zu verwenden
+
+* Dokument für das Team, nicht für Einzelpersonen
+* Mehrere Personen können damit umgehen
+* Geteilte Verantwortung
+* Arbeitslastverteilung im Team
+
+#### Wie es funktioniert
+
 ```
 Document is "assigned to" = Finance Team (10 people)
 All 10 team members see "Assigned to My Group"
 Any team member can take action
 ```
 
-### Example
+#### Beispiel
+
 ```
 New vendor invoice
     ↓
@@ -91,12 +105,14 @@ All procurement team members see it
 First available person handles it
 ```
 
-### Parameters
+#### Parameter
+
 ```
 Group: [Select which group]
 ```
 
-### Difference
+#### Unterschied
+
 ```
 Individual Assignment:
 - One person responsible
@@ -109,20 +125,23 @@ Group Assignment:
 - Anyone can claim/process
 ```
 
----
+***
 
-## Card: ACTION_ASSIGN_DOC_BASED_ON_DECISION_TABLE
+### Karte: ACTION\_ASSIGN\_DOC\_BASED\_ON\_DECISION\_TABLE
 
-### Purpose
-Assigns document based on decision table logic
+#### Zweck
 
-### When to Use
-- Different suppliers need different handlers
-- Assignment based on amount
-- Complex routing logic
-- Multiple conditions for assignment
+Weist ein Dokument basierend auf der Entscheidungstabellenlogik zu
 
-### How It Works
+#### Wann zu verwenden
+
+* Unterschiedliche Lieferanten benötigen unterschiedliche Handler
+* Zuordnung nach Betrag
+* Komplexe Routing-Logik
+* Mehrere Bedingungen für die Zuweisung
+
+#### Wie es funktioniert
+
 ```
 Decision Table Logic:
   If Supplier = "ABC Corp" → Assign to: Procurement Team
@@ -136,7 +155,8 @@ Check: Which condition matches?
 Assign accordingly
 ```
 
-### Example: Amount-Based Assignment
+#### Beispiel: Betragsmäßige Abtretung
+
 ```
 Invoice: €2000 from ABC Corp
 
@@ -148,7 +168,8 @@ Decision Table checks:
 Result: Assign to: Finance Manager
 ```
 
-### Example: Supplier-Based Assignment
+#### Beispiel: Lieferantenbasierte Zuordnung
+
 ```
 Invoice from: Preferred Supplier
 
@@ -160,26 +181,30 @@ Decision Table:
 Result: Assign to: Finance Team
 ```
 
-### Parameters
+#### Parameter
+
 ```
 Decision Table: [Select decision table]
 (Decision table contains assignment logic)
 ```
 
----
+***
 
-## Card: ACTION_ASSIGN_DOC_DECISION_TABLE_SEQUENTIAL
+### Karte: ACTION\_ASSIGN\_DOC\_DECISION\_TABLE\_SEQUENTIAL
 
-### Purpose
-Assigns document sequentially based on decision table with priorities
+#### Zweck
 
-### When to Use
-- Multiple sequential approvals
-- Different people at different levels
-- Approval chain based on amount
-- Escalation path
+Ordnet Dokumente der Reihe nach basierend auf der Entscheidungstabelle mit Prioritäten zu
 
-### How It Works
+#### Wann zu verwenden
+
+* Mehrere aufeinanderfolgende Genehmigungen
+* Unterschiedliche Menschen auf unterschiedlichen Ebenen
+* Genehmigungskette basierend auf Betrag
+* Eskalationspfad
+
+#### Wie es funktioniert
+
 ```
 First Decision: Who approves first?
     ↓
@@ -196,7 +221,8 @@ Person 2 approves (final)
 Document Complete
 ```
 
-### Priority System
+#### Prioritätssystem
+
 ```
 Priority 1: First assignment
 Priority 2: Second assignment
@@ -206,7 +232,8 @@ Priority 3: Third assignment
 Each must complete before next begins
 ```
 
-### Example: Multi-Level Approval
+#### Beispiel: Mehrstufige Genehmigung
+
 ```
 Invoice: €50,000
 
@@ -223,25 +250,29 @@ Invoice Flow:
 Each step depends on previous completion
 ```
 
-### Parameters
+#### Parameter
+
 ```
 Decision Table: [Select]
 Priority Order: [Determined by decision table]
 ```
 
----
+***
 
-## Card: ACTION_ASSIGN_DOC_TO_USER_SEQUENTIAL
+### Karte: ACTION\_ASSIGN\_DOC\_TO\_USER\_SEQUENTIAL
 
-### Purpose
-Assigns document to user with sequential priority
+#### Zweck
 
-### When to Use
-- Document needs specific person
-- Clear sequential processing
-- Single assignment with order
+Weist das Dokument dem Benutzer mit fortlaufender Priorität zu
 
-### How It Works
+#### Wann zu verwenden
+
+* Das Dokument benötigt eine bestimmte Person
+* Klare sequentielle Verarbeitung
+* Einzelauftrag mit Bestellung
+
+#### Wie es funktioniert
+
 ```
 Assign Document to: User A (Priority 1)
     ↓
@@ -252,7 +283,8 @@ Then: Assign to User B (Priority 2)
 User B processes
 ```
 
-### Example
+#### Beispiel
+
 ```
 Invoice processing:
 1. Assign to: Accounts Payable Clerk
@@ -262,19 +294,22 @@ Invoice processing:
 Each person has their turn
 ```
 
----
+***
 
-## Card: ACTION_ASSIGN_DOC_TO_GROUP_SEQUENTIAL
+### Karte: ACTION\_ASSIGN\_DOC\_TO\_GROUP\_SEQUENTIAL
 
-### Purpose
-Assigns document sequentially to groups
+#### Zweck
 
-### When to Use
-- Multiple group approvals
-- Different departments at each stage
-- Team-based sequential processing
+Ordnet Dokumente nacheinander Gruppen zu
 
-### How It Works
+#### Wann zu verwenden
+
+* Mehrere Gruppengenehmigungen
+* Unterschiedliche Abteilungen in jeder Phase
+* Teambasierte sequentielle Bearbeitung
+
+#### Wie es funktioniert
+
 ```
 Step 1: Assign to Group A (Quality Team)
         Quality verifies
@@ -286,7 +321,8 @@ Step 3: Assign to Group C (Procurement)
         Procurement approves
 ```
 
-### Example
+#### Beispiel
+
 ```
 New Supplier Onboarding:
 
@@ -305,19 +341,22 @@ Step 3: Procurement Team
 Document passes through all three
 ```
 
----
+***
 
-## Card: ACTION_ASSIGN_DOC_TO_FACILITY_GROUP
+### Karte: ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP
 
-### Purpose
-Assigns document to specific facility group
+#### Zweck
 
-### When to Use
-- Document for specific warehouse/facility
-- Facility-based operations
-- Location-specific processing
+Weist das Dokument einer bestimmten Einrichtungsgruppe zu
 
-### Example
+#### Wann zu verwenden
+
+* Dokument für ein bestimmtes Lager/eine bestimmte Einrichtung
+* Anlagenbasierter Betrieb
+* Standortbezogene Verarbeitung
+
+#### Beispiel
+
 ```
 Shipment notification
 
@@ -332,19 +371,22 @@ Assign to: Munich Warehouse Team
 Munich warehouse processes shipment
 ```
 
----
+***
 
-## Card: ACTION_ASSIGN_DOC_TO_FACILITY_GROUP_SEQUENTIAL
+### Karte: ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP\_SEQUENTIAL
 
-### Purpose
-Assigns sequentially across facilities
+#### Zweck
 
-### When to Use
-- Multi-location processing
-- Shipment passes through facilities
-- Location-based workflow
+Weist einrichtungsübergreifend nacheinander zu
 
-### Example
+#### Wann zu verwenden
+
+* Verarbeitung an mehreren Standorten
+* Der Versand erfolgt über Einrichtungen
+* Standortbasierter Workflow
+
+#### Beispiel
+
 ```
 Manufacturing Order:
 
@@ -356,19 +398,22 @@ Step 4: Warehouse (Storage) - Store
 Document/shipment passes through each
 ```
 
----
+***
 
-## Card: ACTION_ASSIGN_DOC_TO_PROCUREMENT_GROUP
+### Karte: ACTION\_ASSIGN\_DOC\_TO\_PROCUREMENT\_GROUP
 
-### Purpose
-Assigns document to procurement department
+#### Zweck
 
-### When to Use
-- Procurement team handling
-- Supplier-related work
-- Purchase order related
+Weist das Dokument der Beschaffungsabteilung zu
 
-### Example
+#### Wann zu verwenden
+
+* Abwicklung durch das Beschaffungsteam
+* Lieferantenbezogene Arbeiten
+* Bestellbezogen
+
+#### Beispiel
+
 ```
 Vendor evaluation document
     ↓
@@ -377,18 +422,21 @@ Assign to: Procurement Group
 Procurement team evaluates vendor
 ```
 
----
+***
 
-## Card: ACTION_ASSIGN_DOC_TO_PROCUREMENT_GROUP_SEQUENTIAL
+### Karte: ACTION\_ASSIGN\_DOC\_TO\_PROCUREMENT\_GROUP\_SEQUENTIAL
 
-### Purpose
-Sequential assignment within procurement
+#### Zweck
 
-### When to Use
-- Multi-step procurement process
-- Approval chain in procurement
+Sequentielle Zuordnung innerhalb der Beschaffung
 
-### Example
+#### Wann zu verwenden
+
+* Mehrstufiger Beschaffungsprozess
+* Genehmigungskette im Einkauf
+
+#### Beispiel
+
 ```
 Purchase Requisition:
 
@@ -399,19 +447,22 @@ Step 3: Director (Final sign-off)
 Each step in sequence
 ```
 
----
+***
 
-## Card: ACTION_CHANGE_DOC_SUBORG / Change Document Sub-Organization
+### Karte: ACTION\_CHANGE\_DOC\_SUBORG / Unterorganisation des Dokuments ändern
 
-### Purpose
-Assigns document to different sub-organization
+#### Zweck
 
-### When to Use
-- Wrong organization selected
-- Need to move to correct department
-- Organizational restructuring
+Weist das Dokument einer anderen Unterorganisation zu
 
-### How It Works
+#### Wann zu verwenden
+
+* Falsche Organisation ausgewählt
+* Muss in die richtige Abteilung wechseln
+* Organisatorische Umstrukturierung
+
+#### Wie es funktioniert
+
 ```
 Current Sub-Org: Finance Department
     ↓
@@ -420,7 +471,8 @@ Change to: Accounting Department
 Document now belongs to Accounting
 ```
 
-### Example
+#### Beispiel
+
 ```
 Document for: Berlin Office
     ↓
@@ -429,19 +481,22 @@ Realize should be: Munich Office
 Change Sub-Organization to: Munich Office
 ```
 
----
+***
 
-## Card: ACTION_CHANGE_DOC_SUBORG_BY_FIELD_TEXT
+### Karte: ACTION\_CHANGE\_DOC\_SUBORG\_BY\_FIELD\_TEXT
 
-### Purpose
-Changes sub-organization based on document field value
+#### Zweck
 
-### When to Use
-- Sub-organization stored in field
-- Match document location with field
-- Automatic org assignment
+Ändert die Unterorganisation basierend auf dem Dokumentfeldwert
 
-### How It Works
+#### Wann zu verwenden
+
+* Im Feld gespeicherte Unterorganisation
+* Ordnen Sie den Speicherort des Dokuments dem Feld zu
+* Automatische Organisationszuweisung
+
+#### Wie es funktioniert
+
 ```
 Document Field: "Delivery_Location" = "Berlin"
     ↓
@@ -453,7 +508,8 @@ Decision Table:
 Document assigned to: Berlin Sub-Org
 ```
 
-### Example
+#### Beispiel
+
 ```
 Invoice field: "Cost Center: CC-Berlin-001"
     ↓
@@ -462,19 +518,22 @@ System recognizes: Berlin location
 Change document to: Berlin Sub-Organization
 ```
 
----
+***
 
-## Card: ACTION_ASSIGN_USER_FROM_FIELD_WITH_FALLBACK
+### Karte: ACTION\_ASSIGN\_USER\_FROM\_FIELD\_WITH\_FALLBACK
 
-### Purpose
-Assigns document to user from field, with fallback if user not found
+#### Zweck
 
-### When to Use
-- User name stored in document field
-- May not exist in system
-- Need backup if user unavailable
+Weist dem Benutzer ein Dokument aus dem Feld zu, mit Fallback, wenn der Benutzer nicht gefunden wird
 
-### How It Works
+#### Wann zu verwenden
+
+* Im Dokumentfeld gespeicherter Benutzername
+* Möglicherweise nicht im System vorhanden
+* Backup erforderlich, wenn der Benutzer nicht verfügbar ist
+
+#### Wie es funktioniert
+
 ```
 Document Field: "Approver: John Smith"
     ↓
@@ -487,13 +546,15 @@ Use Fallback: Sarah Johnson (Manager)
 Document assigned to: Sarah Johnson
 ```
 
-### Parameters
+#### Parameter
+
 ```
 Source Field: [Field containing user name]
 Fallback User: [If source user not found]
 ```
 
-### Example
+#### Beispiel
+
 ```
 Invoice has field: "Contact Person: Mike Johnson"
 
@@ -504,19 +565,22 @@ If Mike not in system:
 Fallback to: Finance Manager (Robert)
 ```
 
----
+***
 
-## Card: ACTION_ASSIGN_USER_TO_SUPPLIER
+### Karte: ACTION\_ASSIGN\_USER\_TO\_SUPPLIER
 
-### Purpose
-Assigns document to user who manages that supplier
+#### Zweck
 
-### When to Use
-- User linked to supplier
-- Supplier account manager
-- Supplier relationship owner
+Weist das Dokument dem Benutzer zu, der diesen Lieferanten verwaltet
 
-### How It Works
+#### Wann zu verwenden
+
+* Benutzer mit Lieferant verknüpft
+* Lieferanten-Account-Manager
+* Eigentümer der Lieferantenbeziehung
+
+#### Wie es funktioniert
+
 ```
 Document Supplier: ABC Corp
     ↓
@@ -525,11 +589,12 @@ System checks: Who manages ABC Corp?
 Assign to: John Smith (ABC Corp Account Manager)
 ```
 
----
+***
 
-# Assignment Decision Trees
+## Zuweisungsentscheidungsbäume
 
-## Decision Table Example 1: Amount-Based
+### Entscheidungstabelle Beispiel 1: Betragsbasiert
+
 ```
 Amount ≤ €1000
   → Assign to: Finance Team
@@ -544,7 +609,8 @@ Amount > €20000
   → Assign to: CFO
 ```
 
-## Decision Table Example 2: Supplier-Based
+### Entscheidungstabelle Beispiel 2: Lieferantenbasiert
+
 ```
 Supplier Type = "Preferred"
   → Assign to: Account Manager
@@ -556,7 +622,8 @@ Supplier Type = "Problem"
   → Assign to: Procurement Director
 ```
 
-## Decision Table Example 3: Document Type-Based
+### Entscheidungstabelle Beispiel 3: Dokumenttypbasiert
+
 ```
 Document Type = "Invoice"
   → Assign to: Accounts Payable Team
@@ -568,11 +635,12 @@ Document Type = "PO"
   → Assign to: Procurement Team
 ```
 
----
+***
 
-# Assignment Workflow Examples
+## Beispiele für Zuweisungsworkflows
 
-## Example 1: Simple Routing
+### Beispiel 1: Einfaches Routing
+
 ```
 Document Arrives
     ↓
@@ -584,7 +652,8 @@ Assign to: John Smith
 John reviews and approves
 ```
 
-## Example 2: Sequential Approval
+### Beispiel 2: Sequentielle Genehmigung
+
 ```
 Document Arrives
     ↓
@@ -601,7 +670,8 @@ Passes to: CFO (Step 3)
 CFO approves final
 ```
 
-## Example 3: Amount-Based Routing
+### Beispiel 3: Betragsbasiertes Routing
+
 ```
 Invoice: €50,000
     ↓
@@ -612,7 +682,8 @@ YES → Assign to: CFO
 CFO approves directly
 ```
 
-## Example 4: Facility-Based
+### Beispiel 4: Einrichtungsbasiert
+
 ```
 Shipment for: Berlin Office
     ↓
@@ -623,81 +694,108 @@ Then assign to: Berlin Distribution Team
 Both teams process in sequence
 ```
 
----
+***
 
-# Assignment Best Practices
+## Best Practices für Aufgaben
 
 ✅ **Do:**
-- Keep decision tables simple
-- Test routing logic with samples
-- Ensure all paths lead somewhere
-- Have fallback for missing users
-- Document routing decisions
 
-❌ **Don't:**
-- Create circular assignments (A→B→A)
-- Assign to non-existent users (without fallback)
-- Make routing too complex
-- Forget to test routing
-- Assign to unavailable people
+* Halten Sie Entscheidungstabellen einfach
+* Testen Sie die Routing-Logik mit Beispielen
+* Stellen Sie sicher, dass alle Wege irgendwohin führen
+* Haben Sie einen Ersatz für fehlende Benutzer
+* Entscheidungen zur Dokumentenweiterleitung
 
----
+❌ **Nicht:**
 
-# Troubleshooting Assignment
+* Zirkuläre Aufgaben erstellen (A→B→A)
+* Nicht vorhandenen Benutzern zuweisen (ohne Fallback)
+* Machen Sie das Routing zu komplex
+* Vergessen Sie, das Routing zu testen
+* Nicht verfügbaren Personen zuweisen
 
-## "Document not assigned"
-**Cause:** Condition not met or user doesn't exist
+***
 
-**Solution:**
-- Check condition is true
-- Verify user exists in system
-- Check fallback settings
-- Review decision table logic
+## Aufgabe zur Fehlerbehebung
 
-## "Wrong person assigned"
-**Cause:** Decision table or routing logic incorrect
+### „Dokument nicht zugeordnet“
 
-**Solution:**
-- Test decision table
-- Check conditions
-- Verify user mapping
-- Review field values
+**Ursache:** Bedingung nicht erfüllt oder Benutzer existiert nicht
 
-## "Assignment seems to skip someone"
-**Cause:** Sequential order incorrect
+**Lösung:**
 
-**Solution:**
-- Check priority numbers
-- Verify sequence is correct
-- Test with sample
-- Review decision table ordering
+* Überprüfen Sie, ob die Bedingung wahr ist
+* Überprüfen Sie, ob der Benutzer im System vorhanden ist
+* Überprüfen Sie die Fallback-Einstellungen
+* Überprüfen Sie die Logik der Entscheidungstabelle
 
----
+### „Falsche Person zugewiesen“
 
-# Assignment Cards Comparison
+**Ursache:** Entscheidungstabelle oder Routing-Logik falsch
 
-| Card | Assigns To | Route Type | Use Case |
-|------|-----------|-----------|----------|
-| DOC_USER_ASSIGN | Individual | Direct | Simple assignment |
-| DOC_GROUP_ASSIGN | Group | Direct | Team assignment |
-| ACTION_ASSIGN_DOC_BASED_ON_DECISION_TABLE | Decision Result | Conditional | Complex routing |
-| ACTION_ASSIGN_DOC_DECISION_TABLE_SEQUENTIAL | Multiple (Sequential) | Conditional | Approval chain |
-| ACTION_ASSIGN_DOC_TO_USER_SEQUENTIAL | User (Sequential) | Ordered | Sequential user steps |
-| ACTION_ASSIGN_DOC_TO_GROUP_SEQUENTIAL | Groups (Sequential) | Ordered | Sequential group steps |
-| ACTION_ASSIGN_DOC_TO_FACILITY_GROUP | Facility Group | Direct | Facility-specific |
-| ACTION_ASSIGN_DOC_TO_FACILITY_GROUP_SEQUENTIAL | Facilities (Sequential) | Ordered | Multi-facility |
-| ACTION_ASSIGN_DOC_TO_PROCUREMENT_GROUP | Procurement | Direct | Procurement workflow |
-| ACTION_ASSIGN_DOC_TO_PROCUREMENT_GROUP_SEQUENTIAL | Procurement (Sequential) | Ordered | Procurement approval chain |
-| ACTION_CHANGE_DOC_SUBORG | Sub-Organization | Direct | Department change |
-| ACTION_CHANGE_DOC_SUBORG_BY_FIELD_TEXT | Sub-Org by Field | Conditional | Field-based assignment |
-| ACTION_ASSIGN_USER_FROM_FIELD_WITH_FALLBACK | Field/Fallback | Conditional | Dynamic user assignment |
+**Lösung:**
 
----
+* Testentscheidungstabelle
+* Konditionen prüfen
+* Überprüfen Sie die Benutzerzuordnung
+* Überprüfen Sie die Feldwerte
 
-# Related Cards
+### „Aufgabe scheint jemanden zu überspringen“
 
-- **ACTION_CREATE_TASK_FOR_USER** - Assign task to same person
-- **ACTION_SEND_EMAIL** - Notify assigned person
-- **CONDITION_USER_IS_ISNOT** - Check if correct person assigned
-- **CONDITION_GROUP_IS_ISNOT** - Check if correct group assigned
+**Ursache:** Reihenfolge falsch
 
+**Lösung:**
+
+* Überprüfen Sie die Prioritätsnummern
+* Überprüfen Sie, ob die Reihenfolge korrekt ist
+* Mit Probe testen
+* Überprüfen Sie die Reihenfolge der Entscheidungstabellen
+
+***
+
+## Vergleich der Aufgabenkarten
+
+| Karte                                                    | Weist zu               | Routentyp  | Anwendungsfall                   |
+| ------------------------------------------------------- | ------------------------ | ----------- | -------------------------- |
+| DOC\_USER\_ASSIGN                                       | Individuell               | Direkt      | Einfache Zuordnung          |
+| DOC\_GROUP\_ASSIGN                                      | Gruppe                    | Direkt      | Teamzuordnung            |
+| ACTION\_ASSIGN\_DOC\_BASED\_ON\_DECISION\_TABLE         | Entscheidungsergebnis          | Bedingt | Komplexes Routing            |
+| ACTION\_ASSIGN\_DOC\_DECISION\_TABLE\_SEQUENTIAL        | Mehrere (sequentiell)    | Bedingt | Genehmigungskette             |
+| ACTION\_ASSIGN\_DOC\_TO\_USER\_SEQUENTIAL               | Benutzer (sequentiell)        | Bestellt     | Sequentielle Benutzerschritte      |
+| ACTION\_ASSIGN\_DOC\_TO\_GROUP\_SEQUENTIAL              | Gruppen (sequentiell)      | Bestellt     | Sequentielle Gruppenschritte     |
+| ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP                | Einrichtungsgruppe           | Direkt      | Einrichtungsspezifisch          |
+| ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP\_SEQUENTIAL    | Einrichtungen (sequentiell)  | Bestellt     | Multi-Einrichtung             |
+| ACTION\_ASSIGN\_DOC\_TO\_PROCUREMENT\_GROUP             | Beschaffung              | Direkt      | Beschaffungsworkflow       |
+| ACTION\_ASSIGN\_DOC\_TO\_PROCUREMENT\_GROUP\_SEQUENTIAL | Beschaffung (sequenziell) | Bestellt     | Beschaffungsgenehmigungskette |
+| ACTION\_CHANGE\_DOC\_SUBORG                             | Unterorganisation         | Direkt      | Abteilungswechsel          |
+| ACTION\_CHANGE\_DOC\_SUBORG\_BY\_FIELD\_TEXT            | Unterorganisation nach Feld         | Bedingt | Feldbezogene Zuordnung     |
+| ACTION\_ASSIGN\_USER\_FROM\_FIELD\_WITH\_FALLBACK       | Feld/Fallback           | Bedingt | Dynamische Benutzerzuweisung    |
+
+***
+
+## Verwandte Karten
+
+* **ACTION\_CREATE\_TASK\_FOR\_USER** – Aufgabe derselben Person zuweisen
+* **ACTION\_SEND\_EMAIL** – Zugeordnete Person benachrichtigen
+* **CONDITION\_USER\_IS\_ISNOT** – Überprüfen Sie, ob die richtige Person zugewiesen ist
+* **CONDITION\_GROUP\_IS\_ISNOT** – Überprüfen Sie, ob die richtige Gruppe zugewiesen ist
+
+<!-- workflow-card-example-action_assign_doc_to_first_user_and_tasks-20261021 -->
+
+### Weisen Sie das Dokument dem ersten zurückgegebenen Benutzer zu und erstellen Sie Aufgaben
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-ae5af7c6bdc2-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+
+`ACTION_ASSIGN_DOC_TO_FIRST_USER_AND_TASKS` · Version 2
+
+Verwenden Sie eine Demo-Entscheidungstabellenregel, die die konfigurierten Benutzer `Demo Reviewer A` und `Demo Reviewer B` in dieser Reihenfolge zurückgibt. Wählen Sie die Aufgaben-/Benachrichtigungsoption, den Titel `Review invoice`, die Beschreibung, die Priorität und die E-Mail-Präferenz aus. Der erste zurückgegebene Benutzer ist das Dokumentzuweisungsziel und die konfigurierten Aufgaben/Benachrichtigungen richten sich an die zurückgegebenen Benutzer. Überprüfen Sie beide Ausgänge; Eine leere Rückgabe darf nicht als Zuweisung behandelt werden.
+
+<!-- workflow-card-example-action_assign_supplier_user_first_return_of_dt-20261021 -->
+
+### Ordnen Sie den ersten zurückgegebenen Benutzer dem Lieferanten zu
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-0c3d87c8a5e7-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+
+`ACTION_ASSIGN_SUPPLIER_USER_FIRST_RETURN_OF_DT` · Version 2
+
+Verwenden Sie einen registrierten Demo-Anbieter und eine Entscheidungstabellenregel, deren erstes Benutzerergebnis `Demo Supplier Owner` ist. Wählen Sie die Entscheidungstabelle und bei Bedarf E-Mail-Vorlagen aus. Die Lieferanten-Benutzer-Zuordnung verwendet den ersten zurückgegebenen Benutzer. Es ist nicht derselbe Vorgang wie das Zuweisen des Dokuments. Überprüfen Sie das Lieferantenergebnis separat und testen Sie eine leere Regelrückgabe.

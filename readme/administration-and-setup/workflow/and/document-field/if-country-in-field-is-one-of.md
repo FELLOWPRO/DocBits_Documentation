@@ -1,6 +1,6 @@
-# If Country in Field is One of
+# Land im Feld mit einer Länderliste vergleichen
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-364a45ddb67d-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck**
 
@@ -10,12 +10,12 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob ein angegebenes Land, 
 
 1. **Feldname**
    * **Beschreibung:** Gibt das Dokumentfeld an, in dem der Ländername oder -code gespeichert ist.
-   * **Detail:** Dieser sollte exakt mit dem Feldbezeichner der Länderdaten innerhalb des Dokuments übereinstimmen.&#x20;
+   * **Detail:** Dieser sollte exakt mit dem Feldbezeichner der Länderdaten innerhalb des Dokuments übereinstimmen.
 2. **Operator**
    * **Beschreibung:** Legt fest, ob das Land im Feld Teil einer vordefinierten Länderliste sein muss.
    * **Optionen:**
      * **Is:** Das Land muss in der Liste der angegebenen Länder enthalten sein, damit die Bedingung erfüllt ist.
-     * **Is Not:** Das Land darf nicht in der Liste der angegebenen Länder enthalten sein, damit die Bedingung erfüllt ist.
+     * **Ist nicht:** Das Land darf nicht in der Liste der angegebenen Länder enthalten sein, damit die Bedingung erfüllt ist.
 3. **Länder**
    * **Beschreibung:** Gibt die Liste der Länder an, mit denen das ausgewählte Land verglichen wird.
    * **Detail:** Dies ist eine durch Kommas getrennte Länderliste. Der Vergleich prüft, ob das Land im Feld in dieser Liste enthalten ist.
@@ -41,3 +41,15 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob ein angegebenes Land, 
 ## **Fazit:**
 
 Die Workflow-Karte "Country in Field Comparison with List" ist ein wertvolles Werkzeug, um Aktionen darauf basieren zu lassen, ob ein Land Teil einer vordefinierten Gruppe ist. Indem sie die Länderdaten mit einer Liste zulässiger oder eingeschränkter Länder vergleicht, steigert diese Karte die Workflow-Effizienz und stellt sicher, dass Systemprozesse den korrekten geografischen Regeln folgen.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Leiten Sie Rechnungen aus zwei angegebenen Ländern weiter.
+
+**Konfiguration:** Wählen Sie das Länderfeld aus, ist eines davon, die Ländercodes `DE` und `FR` und die Fortsetzung `true`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** `DE` besteht; `US` entspricht nicht der ausgewählten Länderliste.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

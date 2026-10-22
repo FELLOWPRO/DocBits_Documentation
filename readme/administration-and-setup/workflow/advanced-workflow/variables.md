@@ -49,6 +49,8 @@ Klicken Sie auf **New Variable**, geben Sie ihr einen Namen und einen Typ und le
 - Sehen Sie, wie Knoten diese Werte verwenden, unter [Knoten](nodes.md).
 - Validieren und starten Sie den Workflow unter [Validierung & Test](validation-and-testing.md).
 
-## Datenumfang und Speichern
+## Zahlenvariablen
 
-Variablen gelten für die **Organisation**. Anlegen, Bearbeiten und Löschen werden sofort auf dem Server gespeichert. Andere Workflows können dieselben Werte verwenden. Speichern oder Verwerfen des Canvas macht diese Änderungen nicht rückgängig. Verwenden Sie für pro Rechnung unterschiedliche Werte die von der Karte unterstützten Dokumentdaten. [Das Ausführungsmodell](../workflow-execution-model.md) und [die Fehlerdiagnose](../workflow-troubleshooting.md) erklären den Zusammenhang.
+**Number (Zahl)** ist neben Text, Yes/No und Document ein eigener Variablentyp. Geben Sie einen Zahlenwert ohne Währungssymbol ein. Organisationsvariablen werden von mehreren Workflows gemeinsam genutzt; Anlegen, Ändern und Löschen speichern sofort, unabhängig vom Speichern oder Verwerfen des Canvas. Prüfen Sie vor einer Änderung die betroffenen Workflows und testen Sie Werte unterhalb, genau auf und oberhalb eines Schwellenwerts.
+
+Organisationsvariablen sind nicht die passenden Daten für einen je Rechnung unterschiedlichen Wert. Verwenden Sie dafür unterstützte Dokumentdaten. [Ausführungsmodell](../workflow-execution-model.md) · [Fehlerdiagnose](../workflow-troubleshooting.md).

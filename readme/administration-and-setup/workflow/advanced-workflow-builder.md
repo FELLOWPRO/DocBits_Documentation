@@ -1,4 +1,6 @@
-# Advanced Workflow
+# Erweiterter Workflow
+
+Der **Erweiterter Workflow**-Builder ist ein Node-Graph-Editor für Workflows, die Verzweigungen, parallele Pfade und Ablaufsteuerung benötigen — über das lineare When/And/Then des Standard-Builders hinaus. Sie ordnen Knoten auf einer Canvas an und verbinden sie, um den Ausführungsfluss zu definieren.
 
 ## Aktueller Konfigurations- und Ergebnisvertrag
 
@@ -106,4 +108,4 @@ Führen Sie den Ablauf über die Play-Schaltfläche aus, validieren Sie ihn und 
 ## Nächste Schritte
 
 - Was die einzelnen Karten tun, sehen Sie im Abschnitt **Karten**.
-- Für einfache lineare Automatisierungen ist der **Standard Workflow**-Builder schneller eingerichtet.
+- Für einfache lineare Automatisierungen ist der **Standard-Workflow**-Builder schneller eingerichtet.

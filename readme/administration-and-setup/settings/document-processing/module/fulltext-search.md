@@ -1,6 +1,6 @@
 # Volltextsuche
 
-Die neuen Aufnahmen verwenden die deutsche UI-Sprache. Einzelne Registerkarten, Statusmeldungen und Wartungsaktionen wie **Index out of sync** und **Full Rebuild** sind im Produkt noch englisch. Dokumentdaten sind ausgeblendet.
+Die neuen Aufnahmen verwenden die deutsche UI-Sprache. Einzelne Registerkarten, Statusmeldungen und Wartungsaktionen wie **Index out of sync** und **Kompletter Neuaufbau** sind im Produkt noch englisch. Dokumentdaten sind ausgeblendet.
 
 Mit der Volltextsuche können Benutzer den tatsächlichen Inhalt von Dokumenten und jedes extrahierte Feld durchsuchen — nicht nur Dateinamen und IDs.
 

@@ -1,6 +1,6 @@
-# If Country in Field
+# Land im Feld prüfen
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-70b0b5860da5-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -10,19 +10,19 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob ein angegebenes Land, 
 
 1. **Feldname**
    * **Beschreibung:** Gibt das Dokumentfeld an, in dem der Ländername oder -code gespeichert ist.
-   * **Detail:** Dieser sollte exakt mit dem Feldbezeichner der Länderdaten innerhalb des Dokuments übereinstimmen.&#x20;
+   * **Detail:** Dieser sollte exakt mit dem Feldbezeichner der Länderdaten innerhalb des Dokuments übereinstimmen.
 2. **Operator**
    * **Beschreibung:** Gibt an, ob das Land im ausgewählten Feld mit der ausgewählten Region oder dem Abkommen übereinstimmen soll oder nicht.
    * **Optionen:**
      * **Is:** Das Land muss Teil des ausgewählten Abkommens (EU, Schengen oder NAFTA) sein, damit die Bedingung erfüllt ist.
-     * **Is Not:** Das Land darf nicht Teil des ausgewählten Abkommens sein, damit die Bedingung erfüllt ist.
+     * **Ist nicht:** Das Land darf nicht Teil des ausgewählten Abkommens sein, damit die Bedingung erfüllt ist.
 3. **Ländervergleich**
    * **Beschreibung:** Legt fest, ob das Land im Feld anhand eines bestimmten politischen oder Handelsabkommens geprüft wird.
    * **Optionen:**
      * **Europäische Union:** Die Karte prüft, ob das Land Mitglied der Europäischen Union ist.
      * **Schengen-Raum:** Die Karte prüft, ob das Land Teil des Schengen-Raums ist.
      * **NAFTA:** Die Karte prüft, ob das Land Mitglied des NAFTA-Abkommens ist.
-4. **Boolean**
+4. **Boolescher Wert**
    * **Beschreibung:** Legt das Ergebnis des Vergleichs fest. Erfüllt das Land die Bedingung, wird der Workflow mit dem angegebenen Boolean-Wert fortgesetzt.
    * **Optionen:**
      * **True:** Der Workflow wird fortgesetzt, wenn die Bedingung übereinstimmt.
@@ -36,10 +36,22 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob ein angegebenes Land, 
   * **Bedingung erfüllt (True):** Stimmt das Land im Feld mit der ausgewählten Region überein (gemäß dem Operator), wird der Workflow mit der angegebenen True-Bedingung fortgesetzt. Dies kann weitere Aktionen auslösen, etwa das Weiterleiten von Dokumenten, das Anwenden besonderer Verarbeitungsregeln oder das Aktivieren regionsspezifischer Funktionen.
   * **Bedingung nicht erfüllt (False):** Stimmt das Land nicht mit der ausgewählten Region überein (gemäß dem Operator), wird der Workflow mit der angegebenen False-Bedingung fortgesetzt und ermöglicht so je nach Systemeinrichtung die Ausführung alternativer Aktionen oder das Beenden des Workflows.
 
-## **Einrichtung und Konfiguration:**&#x20;
+## **Einrichtung und Konfiguration:**
 
 * Benutzer konfigurieren die Karte, indem sie das Dokumentfeld auswählen, das das Land enthält, und die Region (Europäische Union, Schengen-Raum oder NAFTA) angeben. Anschließend wird der Operator aus einer Dropdown-Liste gewählt, um festzulegen, ob das Land Teil der ausgewählten Region sein muss oder nicht. Zuletzt legen die Benutzer die Fortsetzungsbedingung (True oder False) fest, die den nächsten Schritt im Workflow bestimmt.
 
 ## **Fazit:**
 
 Die Workflow-Karte "Country in Field Comparison" ist ein unverzichtbares Werkzeug, um Prozesse zu automatisieren, die von geografischen Regeln abhängen, etwa die Einhaltung von Handelsabkommen oder politische Zugehörigkeiten. Indem sie Länderdaten mit bestimmten Regionen wie der Europäischen Union, dem Schengen-Raum oder NAFTA vergleicht, stellt diese Karte sicher, dass das System die richtige Verarbeitungslogik anwendet, und verbessert so die Effizienz und gewährleistet eine präzise Workflow-Ausführung auf Basis geografischer Bedingungen.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Trennen Sie Dokumente nach einer Länderregion.
+
+**Konfiguration:** Wählen Sie ein Dokumentlandfeld mit `DE`, wählen Sie die Region mit Deutschland aus und setzen Sie die Fortsetzungsoption auf `true`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Der deutsche Ländercode entspricht der ausgewählten Region. Bei einem Code außerhalb dieser Region ist dies nicht der Fall. Testen Sie die Fortsetzungsoption separat, wenn Sie den umgekehrten Zweig benötigen.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

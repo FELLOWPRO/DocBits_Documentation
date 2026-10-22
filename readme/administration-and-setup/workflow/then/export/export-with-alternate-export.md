@@ -1,13 +1,31 @@
-# Export with alternate Export
+# Export mit alternativem Export
 
-**Start Export** verwendet den eingerichteten Exportweg. **Export with Export Configuration** führt eine ausgewählte Konfiguration aus. Die verzögerte Variante merkt diese Konfiguration für den finalen Export am Ende des aktuellen Laufs vor. Vormerken heißt nicht „nach allen späteren Benutzerfreigaben automatisch senden“.
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-379e4b3a5355-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
-Die geprüften neuen Versionen bieten `status=finished` oder `status=exported`: finished schließt das Dokument, exported lässt die weitere Bearbeitung zu. Start Export trägt die Auswahl ab v4, konfigurierter und verzögerter Export ab v3. Ältere Versionen verwenden finished. Fehlt die Auswahl in den neuen Versionen, sieht der Code ebenfalls finished vor; ein ungültiger Wert ist ein Konfigurationsfehler.
+## Wann sollte diese Karte verwendet werden?
 
-Mit `ignore_pending_tasks=false` werden offene Aufgaben berücksichtigt. Beim unmittelbaren konfigurierten Export kann der Dienst den Export deshalb verweigern. Die Karte belegt keine automatische Wiederaufnahme nach späterer Erledigung. Klären Sie den erneuten Ausführungsanlass und prüfen Sie vor einem neuen Versand, ob bereits ein Zielbeleg existiert. Aktivieren Sie das Ignorieren nicht als Ersatz für die Freigabe.
+Verwenden Sie diese Dann-Aktion für den alternativen Export, der für den aktuellen Dokumenttyp konfiguriert ist. Konfigurieren und validieren Sie diese Route, bevor Sie die Aktion hinzufügen.
 
-Schließen Sie den Export erst an eine ausdrücklich geprüfte Freigabebedingung an. Die Abnahme umfasst offene Aufgabe, erledigte Aufgabe, fehlende Freigabe, erfolgreichen Testziel-Empfang und erneuten Lauf. Unterscheiden Sie Export angefordert, vom Empfänger erhalten und im ERP verarbeitet. Das Übungspaket enthält keine echten Exportziele; seine Testergebnisse belegen keine Zustellung.
+## Die Konfiguration ergibt sich aus dem Dokumenttyp
 
-[P1: Exportvarianten, offene Aufgaben und Abschlussstatus](../../masterclass/export-lifecycle.md)
+Die Karte verfügt über keinen Exportkonfigurationsselektor. Es liest, ob der alternative Export aktiviert ist, die alternative Exportkonfiguration und den Status nach dem Export aus den Dokumenttypeinstellungen. Intern sind dies `DOC_ALTERNATE_EXPORT_SETTING`, `DOC_ALTERNATE_EXPORT_EXPORT_CONFIG` und `DOC_ALTERNATE_EXPORT_STATUS`.
 
-<figure><img src="../../../../.gitbook/assets/image (286).png" alt="" width="563"><figcaption></figcaption></figure>
+Ein explizit deaktivierter alternativer Export führt zu einer fehlgeschlagenen Bedingung. Fehlende Aktivierungsdaten, Konfigurationen oder Ergebnisstatus werden gemeldet, anstatt stillschweigend die Standardroute zu ersetzen. Der Exportauftrag prüft anstehende Aufgaben.
+
+## Überprüfen Sie das Ergebnis
+
+Überprüfen Sie das Kartenprotokoll, den Exportverlauf, den Dokumentenstatus und das autorisierte Testziel. Eine Anfrage, ein Timeout oder eine Statusänderung allein beweist nicht, dass die Daten das Ziel erreicht haben. Überprüfen Sie den Exportverlauf, bevor Sie einen Vorgang wiederholen, der zu Duplikaten führen könnte.
+
+<!-- workflow-card-complete-example-20261021 action_alternate_export -->
+
+### Alternatives Exportbeispiel
+
+**Konfiguration:** Bereiten Sie den synthetischen Dokumenttyp `DEMO_INVOICE` mit aktiviertem alternativen Export, einer autorisierten Testexportkonfiguration und dem gewünschten Ergebnisstatus in seinen Dokumenttypeinstellungen vor. Fügen Sie diese Dann-Aktion nach den erforderlichen Prüfungen hinzu. Diese Karte liest diese Einstellungen; Es bietet keinen Exportkonfigurationsselektor.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Die Aktion fordert den Export über diese alternative Konfiguration an und prüft ausstehende Aufgaben. Überprüfen Sie das Exportergebnis und das Testziel separat. Das Deaktivieren des alternativen Exports führt zu einer fehlgeschlagenen Bedingung. Eine fehlende Aktivierungseinstellung oder -konfiguration ist kein erfolgreicher Export. Führen Sie dieses Beispiel nicht für ein Buchhaltungsziel aus.
+
+Dies ist eine beispielhafte Testkonfiguration und das erwartete Ergebnis. es wurde nicht ausgeführt. Verwenden Sie die in Ihrer Testorganisation konfigurierten Daten und Empfänger.
+
+## Lernweg und Wirkungsnachweis
+
+[P1: Exportvarianten, offene Aufgaben und Abschlussstatus](../../masterclass/export-lifecycle.md) trennt Konfigurationsauswahl, Vormerken, Exportanforderung, tatsächlichen Empfang und ERP-Verarbeitung. Eine grüne Simulation oder eine Statusänderung belegt den Empfang nicht.

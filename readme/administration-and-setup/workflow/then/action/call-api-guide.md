@@ -1,13 +1,37 @@
-# Call External API
+# DocBits-API aufrufen
 
-**Call API**, Version 2, ergänzt den konfigurierten Pfad um die DocBits-API-Basis und verwendet den aktuellen Organisationskontext. **Send HTTPS Request**, Version 2, verwendet eine externe URL und eigene Header. Ein vollständig fremder URL-Wert ist kein austauschbarer Call-API-Pfad. Beide Karten simulieren im Advanced-Test den Versand.
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6a1c780ee588-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
-Die geprüfte HTTPS-Aktion protokolliert Status und Antworttext, stellt aber keinen frei benannten JSON-Antwortspeicher für Folgekarten bereit. Call API wertet den Antworttext über eine Bool-Konvertierung aus. HTTP 200, ein gültiger JSON-Body und eine fachlich erfolgreiche Folgeaktion sind daher getrennte Nachweise. Erfinden Sie keine Zugriffssyntax wie `api.response.cost_center`.
+<!-- workflow-card-api-guide-contract-20261022 -->
 
-Für `{"cost_center":"4711"}` aus einem Fremdsystem vereinbaren Sie einen ausdrücklich unterstützten Rückschreibweg oder Callback in ein Dokumentfeld. Prüfen Sie das gespeicherte Feld und lesen Sie es im dafür vorgesehenen Folgelauf. Für direkten Antwortdatentransfer ist eine Karte oder Erweiterung mit dokumentiertem Ausgabevertrag erforderlich. JSON in der Kartenkonfiguration bestätigt außerdem nicht automatisch die tatsächlich gesendeten JSON-Bytes.
+Beobachtete Karte: `call_api`, Vorlage `6ca5e621-af72-4f55-aa2e-b3caa288722a`, Version `1`. Verwenden Sie die tatsächlich angebotene Version Ihrer Organisation.
 
-Verwenden Sie ein eigenes Testziel und prüfen Sie Methode, Header, tatsächlichen Body, Status und Antwortschema. Nehmen Sie 4xx, 5xx, Timeout, ungültiges JSON und doppelte Auslösung ab. Wiederholen Sie Schreibaufrufe erst, nachdem ein möglicher erster Empfang geprüft wurde. Die URL im Beispiel ist ein reservierter Platzhalter; sie wurde nicht als erreichbarer Dienst getestet.
+## Zweck
 
-[P1: API-Aufruf und Weiterverwendung der Antwort prüfen](../../masterclass/api-response-contract.md)
+Mit `call_api` rufe ich einen Endpunkt innerhalb der konfigurierten DocBits-API auf. Der Endpunkt ist ein relativer Pfad, der an die Basisadresse der DocBits-API angehängt wird. Eine beliebige externe URL richtet keine Integration zu einer fremden API ein.
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Karten werden über <strong>Add Card</strong> zur <strong>Then</strong>-Gruppe hinzugefügt.</p></figcaption></figure>
+## Konfiguration
+
+Tragen Sie Endpunktpfad, HTTP-Methode, Abfrageparameter und die vom Endpunkt unterstützten Anfragedaten ein. Die Anfrage verwendet den aktuellen DocBits-Benutzerkontext. Fehlende Werte für `org_id` und `triggered_by_docflow` werden automatisch ergänzt. Parameter- und Datenobjekte beziehungsweise ihre unterstützte Textdarstellung müssen zum Format dieser Kartenversion passen. Die Version bietet keine allgemeine Zuordnung von JSON-Antwortfeldern.
+
+## Ergebnis und Grenzen
+
+Der Antworttext wird in einen Wahrheitswert umgewandelt: Reines `true`, `1`, `yes` oder `on` ergibt wahr; unbekannte Antworten einschließlich beliebiger JSON-Objekte ergeben standardmäßig falsch. Der HTTP-Status allein bestimmt diesen Wahrheitswert nicht. Zeitüberschreitungen oder Anfragefehler ergeben falsch. Im Kartentest wird der Aufruf nur simuliert und ohne Anfrage wahr zurückgegeben; das belegt weder Anmeldung noch Erreichbarkeit oder Endpunktverhalten.
+
+
+
+## Praxisbeispiel
+
+Wenn ich einen Wahrheitswert von einem konfigurierten DocBits-API-Endpunkt benötige, verwende ich diese Karte nach den erforderlichen Bedingungen. Wählen Sie für einen isolierten Test einen vorhandenen, dokumentierten, nur lesenden DocBits-Endpunkt mit passendem Wahrheitswert-Vertrag und die passende Methode, etwa `GET`. Verwenden Sie ausschließlich dessen unterstützte Demo-Parameter.
+
+Erwartetes Ergebnis und Gegenbeispiel: Bei einer hypothetischen HTTP-Antwort `200` mit dem vollständigen Text `true` ist das Kartenergebnis wahr. Bei `false` ist es falsch. Ein Objekt wie `{"approved": true}` wird nicht automatisch zu wahr zugeordnet. Prüfen Sie die tatsächliche Antwort und die Protokolle getrennt. Dieses Beispiel wurde am Ausführungscode geprüft; es wurde keine Anfrage und kein Workflow ausgeführt.
+
+## Fehlerbehebung
+
+Die HTTPS-Anfragekarte verwendet eine konfigurierte HTTPS-URL und eigene Header. `call_api` verwendet einen relativen DocBits-API-Pfad und den aktuellen DocBits-Benutzerkontext; das Ergebnis wird aus dem Antworttext abgeleitet. Entscheidend sind Endpunkt und Antwortvertrag, nicht die Unterscheidung zwischen einfacher und komplexer API.
+
+[Referenz](call-api.md)
+
+## Lernweg und Rückschreibvertrag
+
+[P1: API-Aufruf und Weiterverwendung der Antwort prüfen](../../masterclass/api-response-contract.md) erklärt Simulation, Antwortauswertung und den ausdrücklich zu vereinbarenden Rückschreibweg. Eine erfolgreiche Anfrage stellt nicht automatisch ein Feld wie `api.response.cost_center` bereit.

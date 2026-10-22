@@ -31,3 +31,7 @@ Erwartetes Ergebnis und Gegenbeispiel: Bei einer hypothetischen HTTP-Antwort `20
 Die HTTPS-Anfragekarte verwendet eine konfigurierte HTTPS-URL und eigene Header. `call_api` verwendet einen relativen DocBits-API-Pfad und den aktuellen DocBits-Benutzerkontext; das Ergebnis wird aus dem Antworttext abgeleitet. Entscheidend sind Endpunkt und Antwortvertrag, nicht die Unterscheidung zwischen einfacher und komplexer API.
 
 [Referenz](call-api.md)
+
+## Lernweg und Rückschreibvertrag
+
+[P1: API-Aufruf und Weiterverwendung der Antwort prüfen](../../masterclass/api-response-contract.md) erklärt Simulation, Antwortauswertung und den ausdrücklich zu vereinbarenden Rückschreibweg. Eine erfolgreiche Anfrage stellt nicht automatisch ein Feld wie `api.response.cost_center` bereit.

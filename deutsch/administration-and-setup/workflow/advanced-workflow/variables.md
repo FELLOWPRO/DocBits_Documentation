@@ -34,8 +34,9 @@ Mit **Variablen** speichern Sie Werte einmal und verwenden sie über die Knoten 
 Variablen werden nach ihrem Typ gruppiert:
 
 - **Text** — ein Zeichenkettenwert (z. B. eine Beschreibung oder eine feste Bezeichnung).
+- **Number** — ein numerischer Wert, etwa ein Schwellenwert ohne Währungssymbol.
 - **Yes/No** — ein boolesches Kennzeichen (Yes / No).
-- **Document** — ein Verweis auf ein Dokument oder Dokumentfeld.
+- **Document** — eine Dokumentreferenz, die eine geeignete Workflow-Aktion setzt; das Formular nimmt keinen eingegebenen Dokument-Standardwert an.
 
 Verwenden Sie das Suchfeld, um eine Variable schnell zu finden, wenn die Liste wächst.
 
@@ -51,3 +52,5 @@ Klicken Sie auf **New Variable**, geben Sie ihr einen Namen und einen Typ und le
 ## Zahlenvariablen
 
 **Number (Zahl)** ist neben Text, Yes/No und Document ein eigener Variablentyp. Geben Sie einen Zahlenwert ohne Währungssymbol ein. Organisationsvariablen werden von mehreren Workflows gemeinsam genutzt; Anlegen, Ändern und Löschen speichern sofort, unabhängig vom Speichern oder Verwerfen des Canvas. Prüfen Sie vor einer Änderung die betroffenen Workflows und testen Sie Werte unterhalb, genau auf und oberhalb eines Schwellenwerts.
+
+Organisationsvariablen sind nicht die passenden Daten für einen je Rechnung unterschiedlichen Wert. Verwenden Sie dafür unterstützte Dokumentdaten. [Ausführungsmodell](../workflow-execution-model.md) · [Fehlerdiagnose](../workflow-troubleshooting.md).

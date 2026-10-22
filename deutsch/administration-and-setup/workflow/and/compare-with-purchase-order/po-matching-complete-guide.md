@@ -807,3 +807,8 @@ Beispiel: Bestelleinheitspreis `200`, Grundpreis `100` und konfigurierte Toleran
 `CONDITION_COMPARE_PO_LINE_VALUE` · Version 2
 
 Wählen Sie die übereinstimmende PO-Spalte `item_number`, Gleichheit und Wert `DEMO-A` aus. Eine Linie mit `DEMO-A` geht durch; `DEMO-B` schlägt fehl. Verwenden Sie nur Operatoren, die für den ausgewählten Datentyp unterstützt werden, und testen Sie fehlende Matched-Line-Daten separat.
+
+
+## Aktueller Konfigurations- und Ergebnisvertrag
+
+[P1: Toleranzen und PO-Vergleich mit eindeutiger Referenz](../../masterclass/tolerances-and-po.md)

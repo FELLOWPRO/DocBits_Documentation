@@ -51,3 +51,7 @@ Die Workflow-Karte **"Send HTTPS Request"** ermöglicht es Benutzern, HTTPS-Anfr
 ## Fazit:
 
 Die Workflow-Karte **"Send HTTPS Request"** vereinfacht die API-Integration, indem sie es Benutzern ermöglicht, direkt aus ihren Workflows angepasste Anfragen an externe Dienste zu senden. Indem sie den Prozess des Sendens von HTTPS-Anfragen und der Verwaltung von Antworten automatisiert, steigert diese Karte die Flexibilität und Funktionalität von Workflows.
+
+## Lernweg und Rückschreibvertrag
+
+[P1: API-Aufruf und Weiterverwendung der Antwort prüfen](../../masterclass/api-response-contract.md) erklärt Simulation, Antwortauswertung und den ausdrücklich zu vereinbarenden Rückschreibweg. Eine erfolgreiche Anfrage stellt nicht automatisch ein Feld wie `api.response.cost_center` bereit.

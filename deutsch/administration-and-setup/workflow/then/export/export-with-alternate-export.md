@@ -25,3 +25,7 @@ Ein explizit deaktivierter alternativer Export führt zu einer fehlgeschlagenen 
 **Erwartetes Ergebnis und Gegenbeispiel:** Die Aktion fordert den Export über diese alternative Konfiguration an und prüft ausstehende Aufgaben. Überprüfen Sie das Exportergebnis und das Testziel separat. Das Deaktivieren des alternativen Exports führt zu einer fehlgeschlagenen Bedingung. Eine fehlende Aktivierungseinstellung oder -konfiguration ist kein erfolgreicher Export. Führen Sie dieses Beispiel nicht für ein Buchhaltungsziel aus.
 
 Dies ist eine beispielhafte Testkonfiguration und das erwartete Ergebnis. es wurde nicht ausgeführt. Verwenden Sie die in Ihrer Testorganisation konfigurierten Daten und Empfänger.
+
+## Lernweg und Wirkungsnachweis
+
+[P1: Exportvarianten, offene Aufgaben und Abschlussstatus](../../masterclass/export-lifecycle.md) trennt Konfigurationsauswahl, Vormerken, Exportanforderung, tatsächlichen Empfang und ERP-Verarbeitung. Eine grüne Simulation oder eine Statusänderung belegt den Empfang nicht.

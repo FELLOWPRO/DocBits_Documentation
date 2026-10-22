@@ -345,58 +345,29 @@ Document passes through all three
 
 ### Cartão: ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP
 
-#### Objetivo
+<!-- workflow-facility-example-direct-20261022 -->
 
-Atribui documento a um grupo de instalações específico
+Esta ação do workflow atribui um documento a um grupo com base nos locais dos pedidos de compra correspondentes. Na versão 2, `group_name` é um fragmento de texto pesquisado nos nomes dos grupos.
 
-#### Quando usar
+Exemplo: um documento sintético corresponde ao pedido `DEMO-PO-100`, com `location_id=BERLIN`. Os grupos configurados são `Receiving BERLIN` e `Receiving MUNICH`. Introduza `Receiving` em `group_name`. O nome do grupo deve conter tanto esse fragmento como o local do pedido; a pesquisa não distingue maiúsculas de minúsculas.
 
-* Documento para armazém/instalação específico
-* Operações baseadas em instalações
-* Processamento específico do local
+Resultado esperado: o documento é atribuído diretamente a `Receiving BERLIN`, se o seu estado permitir a atribuição. Sem um pedido correspondente ou um grupo compatível, a atribuição não é bem-sucedida; consulte os registos do workflow. Evite nomes ambíguos: se vários grupos corresponderem, este cartão não garante uma ordem fixa de seleção.
 
-#### Exemplo
-
-```
-Shipment notification
-
-Assign to: Berlin Warehouse Team
-    ↓
-Berlin warehouse processes shipment
-    ↓
-Or
-
-Assign to: Munich Warehouse Team
-    ↓
-Munich warehouse processes shipment
-```
+Esta é uma configuração ilustrativa; nenhum workflow foi executado.
 
 ***
 
 ### Cartão: ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP\_SEQUENTIAL
 
-#### Objetivo
+<!-- workflow-facility-example-sequential-20261022 -->
 
-Atribui sequencialmente entre instalações
+Esta ação do workflow adiciona os grupos de local correspondentes à fila de atribuição sequencial com uma prioridade configurada. Não representa a movimentação de mercadorias entre fábricas ou armazéns.
 
-#### Quando usar
+Exemplo: utilize o mesmo pedido sintético, local e grupos do exemplo anterior. Defina `group_name=Receiving` e a prioridade `value=10`. A versão 2 lê o local do pedido correspondente e encontra `Receiving BERLIN`.
 
-* Processamento em vários locais
-* A remessa passa pelas instalações
-* Fluxo de trabalho baseado em localização
+Resultado esperado: um pedido de atribuição a esse grupo é adicionado à fila com prioridade `10`. Se vários grupos corresponderem, todos recebem a mesma prioridade; os nomes não determinam a ordem de processamento. Verifique separadamente a fila e a aprovação posterior. Sem correspondência, não é criada uma atribuição bem-sucedida.
 
-#### Exemplo
-
-```
-Manufacturing Order:
-
-Step 1: Factory A (Manufacturing) - Build product
-Step 2: Quality Center (Testing) - Test product
-Step 3: Distribution Center (Packing) - Package
-Step 4: Warehouse (Storage) - Store
-
-Document/shipment passes through each
-```
+Esta é uma configuração ilustrativa; nenhum workflow foi executado.
 
 ***
 

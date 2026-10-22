@@ -345,58 +345,29 @@ Document passes through all three
 
 ### Karta: ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP
 
-#### Cel
+<!-- workflow-facility-example-direct-20261022 -->
 
-Przypisuje dokument do określonej grupy obiektów
+Ta akcja workflow przypisuje dokument do grupy na podstawie lokalizacji powiązanych z nim zamówień zakupu. W wersji 2 `group_name` jest fragmentem tekstu wyszukiwanym w nazwach grup.
 
-#### Kiedy stosować
+Przykład: dokument syntetyczny jest powiązany z zamówieniem `DEMO-PO-100`, dla którego `location_id=BERLIN`. Skonfigurowane grupy to `Receiving BERLIN` i `Receiving MUNICH`. W polu `group_name` wpisz `Receiving`. Nazwa grupy musi zawierać zarówno ten fragment, jak i lokalizację zamówienia; wielkość liter nie ma znaczenia.
 
-* Dokument dla konkretnego magazynu/obiektu
-* Operacje oparte na obiekcie
-* Przetwarzanie specyficzne dla lokalizacji
+Oczekiwany wynik: dokument zostaje przypisany bezpośrednio do `Receiving BERLIN`, jeśli jego status na to pozwala. Bez powiązanego zamówienia lub pasującej grupy przypisanie nie kończy się sukcesem; sprawdź logi workflow. Unikaj niejednoznacznych nazw: gdy pasuje kilka grup, ta karta nie gwarantuje stałej kolejności wyboru.
 
-#### Przykład
-
-```
-Shipment notification
-
-Assign to: Berlin Warehouse Team
-    ↓
-Berlin warehouse processes shipment
-    ↓
-Or
-
-Assign to: Munich Warehouse Team
-    ↓
-Munich warehouse processes shipment
-```
+To przykładowa konfiguracja; nie uruchomiono workflow.
 
 ***
 
 ### Karta: ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP\_SEQUENTIAL
 
-#### Cel
+<!-- workflow-facility-example-sequential-20261022 -->
 
-Przypisuje sekwencyjnie pomiędzy obiektami
+Ta akcja workflow dodaje pasujące grupy lokalizacji do kolejki sekwencyjnego przypisywania z ustawionym priorytetem. Nie odwzorowuje przemieszczania towarów między fabrykami lub magazynami.
 
-#### Kiedy stosować
+Przykład: użyj tego samego syntetycznego zamówienia, lokalizacji i grup co powyżej. Ustaw `group_name=Receiving` i priorytet `value=10`. Wersja 2 odczytuje lokalizację z powiązanego zamówienia i znajduje `Receiving BERLIN`.
 
-* Przetwarzanie w wielu lokalizacjach
-* Przesyłka przechodzi przez obiekty
-* Przepływ pracy oparty na lokalizacji
+Oczekiwany wynik: żądanie przypisania do tej grupy zostaje dodane do kolejki z priorytetem `10`. Jeśli pasuje kilka grup, otrzymują ten sam priorytet; ich nazwy nie określają kolejności przetwarzania. Osobno sprawdź kolejkę i późniejsze zatwierdzenie. Bez dopasowania nie powstaje pomyślne przypisanie.
 
-#### Przykład
-
-```
-Manufacturing Order:
-
-Step 1: Factory A (Manufacturing) - Build product
-Step 2: Quality Center (Testing) - Test product
-Step 3: Distribution Center (Packing) - Package
-Step 4: Warehouse (Storage) - Store
-
-Document/shipment passes through each
-```
+To przykładowa konfiguracja; nie uruchomiono workflow.
 
 ***
 

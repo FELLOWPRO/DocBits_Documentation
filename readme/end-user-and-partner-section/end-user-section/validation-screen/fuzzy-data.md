@@ -21,8 +21,7 @@
 1. **选择采购订单**
    *   单击采购订单字段旁边的**蓝色图标**，打开**选择窗口**。
 
-
-       <figure><img src="../../../.gitbook/assets/fuzzy_data_selection_window.png" alt="模糊数据选择窗口"><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/s150-fuzzy_data_selection_window-zh.png" alt="主数据查询窗口；记录已隐藏。 过滤方式“聪明的”指智能匹配；部分已配置的列名称仍为英文。"><figcaption><p>主数据查询窗口；记录已隐藏。 过滤方式“聪明的”指智能匹配；部分已配置的列名称仍为英文。</p></figcaption></figure>
    * 此窗口中的表格包含主数据查询表中的所有采购订单。
    * 启用 **“Display all columns”（显示所有列）** 选项可查看其他详细信息。
    * 选择一个**采购订单**，然后单击 **Proceed（继续）**：
@@ -53,7 +52,5 @@
 {% content-ref url="../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md" %}
 [使用值列表配置模糊数据](../../../administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md)
 {% endcontent-ref %}
-
-
 
 {% embed url="https://www.youtube.com/watch?v=vT5HuGjAYV0" %}

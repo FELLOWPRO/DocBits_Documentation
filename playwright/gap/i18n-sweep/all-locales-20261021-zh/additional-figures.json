@@ -1,0 +1,18 @@
+[
+  {
+    "case": "S034",
+    "source_capture_id": "U044",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md",
+    "url": "https://docs.docbits.com/chinese/guan-li-yu-she-zhi/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price",
+    "asset": "prior-u044-zh.png",
+    "caption": "打开发票文档类型的更多设置。 “Standard”和“Extraction”仍是当前界面保留的英文标签。"
+  },
+  {
+    "case": "S034",
+    "source_capture_id": "U045",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md",
+    "url": "https://docs.docbits.com/chinese/guan-li-yu-she-zhi/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price",
+    "asset": "prior-u045-zh.png",
+    "caption": "已使用采购订单行的状态设置。"
+  }
+]

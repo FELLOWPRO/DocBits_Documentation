@@ -41,7 +41,7 @@ DocBits 会按文档类型和每个界面，将现有的基于来源地的布局
 * 来源地为 **DEFAULT** 的布局会成为**默认布局**（回退布局）。
 * 每个特定来源地的布局都会转换为一条名为**“XX 的布局”**的规则，条件为 *Document Origin is XX*，并指向该布局。这些规则的优先级按 10 递增（例如 2000、2010、2020……），因此您可以在它们之前、之间或之后添加自己的规则。
 
-<figure><img src="../../../../../.gitbook/assets/layout-selection-default-row.png" alt="启用时创建的来源地规则和默认布局"><figcaption><p>启用时创建的来源地规则，以及其后的默认布局（FALLBACK）</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-default-row-zh.png" alt="选择规则列表末尾的备用布局。 “Field validation”是当前界面保留的英文布局类别；已配置的来源名称保持原样。"><figcaption><p>选择规则列表末尾的备用布局。 “Field validation”是当前界面保留的英文布局类别；已配置的来源名称保持原样。</p></figcaption></figure>
 
 布局本身不会被删除或更改。因此，启用后，每个文档获得的布局与启用前完全相同。只有在添加或更改规则后，行为才会改变。
 
@@ -49,7 +49,7 @@ DocBits 会按文档类型和每个界面，将现有的基于来源地的布局
 
 ## “布局与选择规则”界面
 
-<figure><img src="../../../../../.gitbook/assets/layouts-overview.png" alt="布局选项卡"><figcaption><p>布局选项卡：文档类型的每个布局都以卡片形式显示</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layouts-overview-zh.png" alt="布局及选择规则概览。"><figcaption><p>布局及选择规则概览。</p></figcaption></figure>
 
 * 右上角的**布局 / 选择规则**用于切换布局列表和规则列表。数字表示相应项目的数量。
 * **字段验证 / 审批 / 驳回 / 审核**用于切换**界面**。每个界面都有自己的布局、规则和默认布局；审批规则不会更改验证界面。
@@ -75,7 +75,7 @@ DocBits 会按文档类型和每个界面，将现有的基于来源地的布局
 
 | 优先级 | 规则 | 条件 | 布局 |
 | --- | --- | --- | --- |
-| 5 | Behaelterbau 发票 | *Supplier ID is HP0000278* | 包含项目字段的发票 |
+| 5 | Example Supplier 发票 | *Supplier ID is HP0000278* | 包含项目字段的发票 |
 | 10 | 电子发票 | *Extraction Method is ELECTRONIC_DOCUMENT* | 电子发票 |
 | 2020 | DE 的布局 | *Document Origin is DE* | 字段验证布局（DE） |
 | — | 默认布局 | — | 字段验证布局（基础） |
@@ -97,7 +97,7 @@ DocBits 会按文档类型和每个界面，将现有的基于来源地的布局
 
 ## 管理选择规则
 
-<figure><img src="../../../../../.gitbook/assets/layout-selection-rules-list.png" alt="选择规则选项卡"><figcaption><p>字段验证界面的选择规则选项卡</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-rules-list-zh.png" alt="布局选择规则；已配置的名称已隐藏。 “Field validation”是当前界面保留的英文布局类别；已配置的来源名称保持原样。"><figcaption><p>布局选择规则；已配置的名称已隐藏。 “Field validation”是当前界面保留的英文布局类别；已配置的来源名称保持原样。</p></figcaption></figure>
 
 每行都会显示**优先级**（第一行标有 **FIRST**）、包含条件的**规则名称和键**、**目标布局**、**来源**徽标以及**启用**开关。
 
@@ -124,7 +124,7 @@ DocBits 会按文档类型和每个界面，将现有的基于来源地的布局
 
 在要更改的界面的选择规则选项卡中点击**新建规则**。
 
-<figure><img src="../../../../../.gitbook/assets/layout-rule-editor.png" alt="布局选择规则编辑器"><figcaption><p>规则编辑器：顶部显示摘要句，左侧显示三个步骤，右侧显示实时预览</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor-zh.png" alt="布局选择规则的作用范围、条件和目标布局。 界面中的“场地”指字段，“价值”指字段值；部分运算符及“Field validation”名称仍为英文。"><figcaption><p>布局选择规则的作用范围、条件和目标布局。 界面中的“场地”指字段，“价值”指字段值；部分运算符及“Field validation”名称仍为英文。</p></figcaption></figure>
 
 随着您构建规则，顶部的句子会概括规则内容：“当 header.supplier_id = HP0000278 时，INVOICE 文档会在 Field validation 界面使用 Field Validation Layout (Base) 布局。检查优先级为 5——第一个匹配的规则生效。”
 
@@ -132,7 +132,7 @@ DocBits 会按文档类型和每个界面，将现有的基于来源地的布局
 
 | 设置 | 作用 |
 | --- | --- |
-| **规则名称** | 显示在规则列表中。请描述业务场景，例如“Behaelterbau 发票”“电子发票”“高金额审批”。 |
+| **规则名称** | 显示在规则列表中。请描述业务场景，例如“Example Supplier 发票”“电子发票”“高金额审批”。 |
 | **规则键** | 根据名称生成；重命名规则后保持不变。 |
 | **文档类型** / **布局类型** | 规则适用的文档类型和界面。根据您点击**新建规则**的位置确定。 |
 | **优先级** | 数字越小，越早检查。请保留间隔（5、10、20……），以便稍后插入规则。 |
@@ -159,10 +159,10 @@ DocBits 会按文档类型和每个界面，将现有的基于来源地的布局
 
 | 行 | 含义 |
 | --- | --- |
-| **Sample document** | 用于预览的值，取自您的条件 |
+| **示例文件** | 用于预览的值，取自您的条件 |
 | **matched_by** | 如果规则匹配，则为 `rule`；否则为默认布局 |
-| **Resolved layout** | 示例文档将使用的布局 |
-| **Priority hit** | 匹配规则的优先级 |
+| **已解决的布局** | 示例文档将使用的布局 |
+| **匹配规则的优先级** | 匹配规则的优先级 |
 | **watched_fields** | 布局选择所依赖的字段。用户更改其中一个字段后，会重新选择布局。 |
 
 点击**创建规则**（编辑时点击**保存规则**）以保存。点击**取消**返回规则列表。
@@ -171,29 +171,29 @@ DocBits 会按文档类型和每个界面，将现有的基于来源地的布局
 
 ### 为一个供应商添加额外字段
 
-界面 **Field Validation** · 优先级 **5** · *Supplier ID is HP0000278* · 目标布局 *包含项目字段的发票*（标准布局的克隆版本，额外包含项目和成本中心字段）。
+界面 **字段验证** · 优先级 **5** · *Supplier ID is HP0000278* · 目标布局 *包含项目字段的发票*（标准布局的克隆版本，额外包含项目和成本中心字段）。
 
 ### 多个国家使用一个布局
 
-界面 **Field Validation** · 优先级 **100** · **ANY of**：*Document Origin is Deutsch*、*Document Origin is Austria*、*Document Origin is Switzerland* · 目标布局 *DACH invoice*。如果迁移的“AT 的布局”和“CH 的布局”规则指向旧布局副本，请停用这些规则。
+界面 **字段验证** · 优先级 **100** · **任一条件**：*Document Origin is Deutsch*、*Document Origin is Austria*、*Document Origin is Switzerland* · 目标布局 *DACH invoice*。如果迁移的“AT 的布局”和“CH 的布局”规则指向旧布局副本，请停用这些规则。
 
 ### 为电子发票提供更简单的界面
 
-界面 **Field Validation** · 优先级 **10** · *Extraction Method is ELECTRONIC_DOCUMENT* · 目标布局 *E-invoice*（不包含与 OCR 相关的字段）。
+界面 **字段验证** · 优先级 **10** · *Extraction Method is ELECTRONIC_DOCUMENT* · 目标布局 *E-invoice*（不包含与 OCR 相关的字段）。
 
 ### 高金额发票使用更严格的审批界面
 
-界面 **Approval** · 优先级 **10** · *Total Amount greater than 10000* · 目标布局 *High value approval*（显示成本中心、预算负责人和合同编号）。
+界面 **赞同** · 优先级 **10** · *Total Amount greater than 10000* · 目标布局 *High value approval*（显示成本中心、预算负责人和合同编号）。
 
 ### 首次审批和第二次审批使用不同界面 <a id="different-screens-for-first-and-second-approval"></a>
 
-界面 **Approval** · 优先级 **5** · *Document Status is Pending second approval* · 目标布局 *Second Approval Layout*。处于首次审批阶段的文档不匹配此规则，会使用审批默认布局。
+界面 **赞同** · 优先级 **5** · *Document Status is Pending second approval* · 目标布局 *Second Approval Layout*。处于首次审批阶段的文档不匹配此规则，会使用审批默认布局。
 
-<figure><img src="../../../../../.gitbook/assets/layout-rule-approval-status.png" alt="基于文档状态的审批规则"><figcaption><p>用于第二次审批阶段的审批规则；预览解析为“第二次审批布局”</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-approval-status-zh.png" alt="未保存的布局选择规则草稿。 界面中的“场地”指字段，“价值”指字段值；部分运算符及“Field validation”名称仍为英文。"><figcaption><p>未保存的布局选择规则草稿。 界面中的“场地”指字段，“价值”指字段值；部分运算符及“Field validation”名称仍为英文。</p></figcaption></figure>
 
 ### 为部分供应商设置专用驳回界面
 
-界面 **Reject** · 优先级 **10** · *Supplier ID is one of* `10040, 10041` · 目标布局 *Reject with reason codes*。
+界面 **拒绝** · 优先级 **10** · *Supplier ID is one of* `10040, 10041` · 目标布局 *Reject with reason codes*。
 
 ## 最佳实践
 

@@ -10,7 +10,7 @@
 
 系统将显示以下菜单：
 
-<figure><img src="../../../../../.gitbook/assets/create_sub_organization_form.png" alt="创建子组织表单" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-edit_user_in_sub_organization-zh.png" alt="保存前的创建子组织窗口。 界面中的“节省”实际表示保存；本例只展示空白表单。"><figcaption><p>保存前的创建子组织窗口。 界面中的“节省”实际表示保存；本例只展示空白表单。</p></figcaption></figure>
 
 输入要创建的子组织的名称和描述等详细信息，然后点击 `SAVE` 按钮。随后，您可以在现有子组织列表的底部找到新创建的子组织。
 
@@ -31,8 +31,6 @@
 您可以向组织添加新用户，并选择是否将该用户从其他组中移除。
 
 **编辑用户：**
-
-<figure><img src="../../../../../.gitbook/assets/edit_user_in_sub_organization.png" alt="编辑子组织中的用户" width="375"><figcaption></figcaption></figure>
 
 * **编辑子组织设置：**管理员可以编辑子组织的设置和属性，包括名称、描述或其在系统中的层级。
 * **编辑用户详情：**管理员可以编辑各个子组织中用户的详细信息，例如调整其访问权限或更新联系信息。

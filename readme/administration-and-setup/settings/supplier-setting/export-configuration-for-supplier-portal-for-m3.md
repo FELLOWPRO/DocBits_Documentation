@@ -1,6 +1,6 @@
 # 供应商门户导出配置
 
-<figure><img src="../../../.gitbook/assets/supplier_export_configuration.png" alt="供应商导出配置"><figcaption><p>供应商导出配置页面</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t014-zh.png" alt="供应商门户的导出配置。 品牌 ION 在界面中误译为“离子”；“节省”实际表示保存。"><figcaption><p>供应商门户的导出配置。 品牌 ION 在界面中误译为“离子”；“节省”实际表示保存。</p></figcaption></figure>
 
 ## 概述
 

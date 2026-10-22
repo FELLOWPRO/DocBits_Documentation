@@ -24,7 +24,7 @@
 1. 前往 **设置 → 文档处理 → 模块 → 仪表板与分析**。
 2. 启用 **分析仪表板**选项。
 
-<mark style="color:red;">**注意**</mark>：分析仪表板需要 **AI Dashboard Subscription**。
+<mark style="color:red;">**注意**</mark>：分析仪表板需要 **AI 仪表板订阅**。
 
 <mark style="color:red;">**注意**</mark>：只有拥有**管理员**权限的用户才能访问分析仪表板。
 
@@ -40,25 +40,25 @@
 
 使用仪表板顶部的**流程类型**切换开关，在不同视角之间切换。
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_flow_types.png" alt="流程类型切换开关"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_flow_types-zh.png" alt="处理流程、用户操作和状态视图。 界面中的“变压器”指数据转换步骤，并非电气设备；该产品翻译仍待修正。"><figcaption><p>处理流程、用户操作和状态视图。 界面中的“变压器”指数据转换步骤，并非电气设备；该产品翻译仍待修正。</p></figcaption></figure>
 
 ### 状态流程
 
 跟踪文档从**新建**到**已导出**的处理过程，适用于端到端生命周期分析。
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_status_flow.png" alt="状态流程"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_status_flow-zh.png" alt="分析中的状态视图。"><figcaption><p>分析中的状态视图。</p></figcaption></figure>
 
 ### 处理流程
 
 分析所有**技术处理模块**（OCR、分类、提取、验证）的绩效，适用于发现系统端的瓶颈。
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_processing_flow.png" alt="处理流程"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_processing_flow-zh.png" alt="按阶段汇总的流程视图。 界面中的“变压器”指数据转换步骤，并非电气设备；该产品翻译仍待修正。"><figcaption><p>按阶段汇总的流程视图。 界面中的“变压器”指数据转换步骤，并非电气设备；该产品翻译仍待修正。</p></figcaption></figure>
 
 ### 用户交互流程
 
 聚焦于**人工操作环节**，包括队列等待时间、人工验证、审核和审批，适用于发现工作流和人员配置方面的瓶颈。
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_user_interaction_flow.png" alt="用户交互流程"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_user_interaction_flow-zh.png" alt="用户操作汇总视图。"><figcaption><p>用户操作汇总视图。</p></figcaption></figure>
 
 ## 筛选选项
 
@@ -68,13 +68,13 @@
 
 按**名称**或**唯一 ID**即时查找任意文档。
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_filter_search.png" alt="搜索筛选器"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_filter_search-zh.png" alt="按验证阶段筛选的分析视图。"><figcaption><p>按验证阶段筛选的分析视图。</p></figcaption></figure>
 
 ### 流程步骤
 
 选择特定步骤以聚焦分析。启用或停用步骤也会重新计算仪表板其他组件中的时间指标。
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_filter_flow_steps.png" alt="流程步骤筛选器"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_filter_flow_steps-zh.png" alt="在分析筛选器中选择处理阶段。"><figcaption><p>在分析筛选器中选择处理阶段。</p></figcaption></figure>
 
 ### 子组织、文档类型、供应商、组
 
@@ -85,7 +85,7 @@
 * **供应商** — 识别哪些供应商导致处理时间最长
 * **组** — 比较不同已分配用户组的绩效（适用于**状态**和**用户交互**流程类型）
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_filter_dimensions.png" alt="子组织、文档类型、供应商和组筛选器"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_filter_dimensions-zh.png" alt="按处理阶段、子组织、文档类型和供应商筛选分析数据。"><figcaption><p>按处理阶段、子组织、文档类型和供应商筛选分析数据。</p></figcaption></figure>
 
 <mark style="color:red;">**注意**</mark>：**组**筛选器仅适用于**直接分配给组**的文档。分配给单个用户的文档，即使该用户属于某个组，**也不会**纳入组筛选结果。
 
@@ -95,13 +95,13 @@
 
 <mark style="color:red;">**注意**</mark>：停用此选项可能会导致平均值不准确，因为尚未完成处理的文档也会纳入计算。
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_only_exported_toggle.png" alt="仅显示已导出的文档切换开关"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_only_exported_toggle-zh.png" alt="仅分析已导出文档的选项。"><figcaption><p>仅分析已导出文档的选项。</p></figcaption></figure>
 
 ### 时间范围
 
 分析从 **7 天**到**整年**的任意时段，也可以使用日期选择器设置**自定义范围**。
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_filter_time_range.png" alt="时间范围筛选器"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_filter_time_range-zh.png" alt="分析筛选器中的自定义时间范围选项。 日期范围按钮“风俗”实际表示自定义范围。"><figcaption><p>分析筛选器中的自定义时间范围选项。 日期范围按钮“风俗”实际表示自定义范围。</p></figcaption></figure>
 
 ## 流程步骤卡片
 
@@ -115,7 +115,7 @@
 
 标题区域中的**全选**切换开关可一次性纳入或排除所有步骤。
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_flow_steps_card.png" alt="显示最小、平均和最大耗时的流程步骤卡片"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_flow_steps_card-zh.png" alt="显示汇总处理时间的阶段卡片。 “变压器”指数据转换阶段；Splitter 和 Classify 等技术阶段名称仍为英文。"><figcaption><p>显示汇总处理时间的阶段卡片。 “变压器”指数据转换阶段；Splitter 和 Classify 等技术阶段名称仍为英文。</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/analytics_dashboard_step_toggle.png" alt="启用或停用流程步骤"><figcaption></figcaption></figure>
 
@@ -127,7 +127,7 @@
 * **橙色** — 您的平均耗时比全球平均值高出不超过 **+25%**
 * **红色** — 您的平均耗时比全球平均值高出 **+25%** 或更多
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_global_average_comparison.png" alt="与 DocBits 全球平均值比较"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_global_average_comparison-zh.png" alt="平均耗时与总体平均值的比较。 界面中的“流动”指分析数据流，相关产品译文仍待修正。"><figcaption><p>平均耗时与总体平均值的比较。 界面中的“流动”指分析数据流，相关产品译文仍待修正。</p></figcaption></figure>
 
 ## 平均耗时图表
 
@@ -179,7 +179,7 @@
 * 点击列标题进行**排序**，并通过拖放**调整**列顺序。
 * 点击卡片标题区域中的按钮可**下载 CSV**，导出的内容仅包含当前可见列。
 
-<figure><img src="../../.gitbook/assets/analytics_dashboard_data_table.png" alt="数据表"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_data_table-zh.png" alt="分析表格及中文标签；文档数据已隐藏。 “桌子”在此实际指数据表格，“流动”指处理流程；文档数据行已隐藏。"><figcaption><p>分析表格及中文标签；文档数据已隐藏。 “桌子”在此实际指数据表格，“流动”指处理流程；文档数据行已隐藏。</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/analytics_dashboard_data_table_hide_columns.png" alt="隐藏列以重新计算汇总值"><figcaption></figcaption></figure>
 

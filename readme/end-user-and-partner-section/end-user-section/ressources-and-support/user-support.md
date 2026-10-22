@@ -16,6 +16,6 @@
 
 <figure><img src="../../../.gitbook/assets/validation_screen_create_ticket_button.png" alt="验证界面中的创建工单按钮"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/validation_screen_support_window.png" alt="验证界面中的支持窗口"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-user-support4-zh.png" alt="发送前的支持表单。"><figcaption><p>发送前的支持表单。</p></figcaption></figure>
 
 {% embed url="https://www.youtube.com/watch?v=zkpFu8Q1Z-A" %}

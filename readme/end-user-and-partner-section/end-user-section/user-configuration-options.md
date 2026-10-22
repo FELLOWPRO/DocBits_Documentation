@@ -4,12 +4,9 @@
 
 {% embed url="https://youtu.be/TLmAHw3EXs4" %}
 
-
 <figure><img src="../../.gitbook/assets/User-Config.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/user_settings_menu_dropdown.png" alt="用户设置菜单下拉列表" width="308"><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/prior-u031-zh.png" alt="用户菜单和语言选择。"><figcaption><p>用户菜单和语言选择。</p></figcaption></figure>
 
 **语言**
 

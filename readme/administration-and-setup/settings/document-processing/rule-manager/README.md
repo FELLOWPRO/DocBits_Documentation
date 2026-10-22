@@ -1,6 +1,6 @@
 # 规则管理
 
-<figure><img src="../../../../.gitbook/assets/rule_management.png" alt="规则管理"><figcaption><p>规则管理页面</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_management-zh.png" alt="规则管理；已配置的名称已隐藏。 界面中的“姓名”列实际表示规则名称，“Actions”列尚未翻译。"><figcaption><p>规则管理；已配置的名称已隐藏。 界面中的“姓名”列实际表示规则名称，“Actions”列尚未翻译。</p></figcaption></figure>
 
 规则管理功能允许你创建和管理基于 TOML 的冲突解决规则，这些规则用于采购订单匹配和文档导出。每个规则集定义 DocBits 如何处理发票数据与采购订单数据之间的差异。
 
@@ -10,7 +10,7 @@
 
 | 列 | 描述 |
 |--------|-------------|
-| **名称** | 规则集的名称。标记为 **default** 的项目是系统提供的模板。 |
+| **名称** | 规则集的名称。标记为 **默认** 的项目是系统提供的模板。 |
 | **描述** | 规则集处理内容的摘要。 |
 | **最后修改者** | 上次编辑此规则集的用户。 |
 | **最后修改时间** | 上次更改的时间戳。 |
@@ -90,7 +90,6 @@
 
 • outside tolerance
 
-
 ### 审批状态
 
 指明差异是否已获审批：
@@ -100,7 +99,6 @@
 • rejected
 
 • any
-
 
 ### 操作类型
 
@@ -134,7 +132,6 @@
 
 • credit note tax line
 
-
 ### 规则示例
 
 #### [案例 1、2、3：数量和单价在容差范围内](transactionconfig-pro-template/case-1-2-3-quantity-and-unit-price-within-tolerance.md)
@@ -143,22 +140,17 @@
 
 • 操作：系统接受发票中的值并计算总金额。
 
-
-
 #### [案例 4、5：数量在容差范围内，单价超出容差范围（已审批）](./#case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved) <a id="case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved"></a>
 
 • 用途：适用于数量在容差范围内、但单价超出容差范围且已获审批的情况。
 
 • 操作：系统将单价调整为与采购订单一致，并应用所需的行费用。
 
-
-
 #### [案例 6：数量在容差范围内，单价低于负容差范围（已拒绝）](transactionconfig-pro-template/case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
 
 • 用途：处理单价低于预期且超出容差范围，导致被拒绝的情况。
 
 • 操作：系统将单价调整为与采购订单一致，为差额生成贷项通知单，并根据需要应用表头费用。
-
 
 ### 费用和税费处理
 
@@ -180,7 +172,7 @@
 
 ### 截图 1：规则管理界面
 
-<figure><img src="../../../../.gitbook/assets/rule_management_interface.png" alt="规则管理界面"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_management_interface-zh.png" alt="规则管理概览及可用操作。 界面中的“姓名”列实际表示规则名称，“Actions”列尚未翻译。"><figcaption><p>规则管理概览及可用操作。 界面中的“姓名”列实际表示规则名称，“Actions”列尚未翻译。</p></figcaption></figure>
 
 此截图展示了规则管理界面，管理员可在此查看和管理所有冲突解决规则。主要元素包括：
 
@@ -192,7 +184,7 @@
 
 ### 截图 2：规则详细编辑
 
-<figure><img src="../../../../.gitbook/assets/rule_detailed_editing.png" alt="规则详细编辑"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_detailed_editing-zh.png" alt="TOML 规则编辑器中的技术配置示例。 界面把通用名称显示为“姓名”，把保存显示为“节省”；本例仅查看未保存的表单。"><figcaption><p>TOML 规则编辑器中的技术配置示例。 界面把通用名称显示为“姓名”，把保存显示为“节省”；本例仅查看未保存的表单。</p></figcaption></figure>
 
 此截图展示了正在编辑的特定规则的详细视图。主要元素包括：
 

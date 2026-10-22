@@ -1,6 +1,6 @@
 # 编辑电子邮件模板
 
-<figure><img src="../../../.gitbook/assets/supplier_email_templates.png" alt="供应商电子邮件模板"><figcaption><p>供应商电子邮件模板页面</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t013-zh.png" alt="供应商邮件模板列表。 “姓名”在此表示通知名称，“Actions”列尚未翻译。"><figcaption><p>供应商邮件模板列表。 “姓名”在此表示通知名称，“Actions”列尚未翻译。</p></figcaption></figure>
 
 ### 概述
 
@@ -12,12 +12,12 @@
 
 ### 编辑电子邮件模板
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.35.53.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-bildschirmfoto-2024-08-25-um-12-35-53-zh.png" alt="新建供应商邮件模板的编辑器。 界面中的“姓名”实际表示模板名称，“节省”表示保存；本例未保存或发送邮件。"><figcaption><p>新建供应商邮件模板的编辑器。 界面中的“姓名”实际表示模板名称，“节省”表示保存；本例未保存或发送邮件。</p></figcaption></figure>
 
 #### 访问电子邮件模板编辑器
 
 1. **导航至电子邮件模板**：
-   * 从主菜单进入 **Email Templates**（电子邮件模板）部分。
+   * 从主菜单进入 **电子邮件模板**（电子邮件模板）部分。
 2. **选择要编辑的模板**：
    * 点击模板名称，选择要编辑的电子邮件模板（例如，“Supplier Invitation Email”（供应商邀请电子邮件））。
 3. **编辑模板**：
@@ -78,6 +78,5 @@
 在电子邮件模板中正确设置 \{{magic\_link\}}，可确保收件人收到个性化且便于操作的电子邮件，引导他们在供应商门户中完成相应任务。这有助于提升用户体验，并确保顺利完成入驻和沟通流程。
 
 \
-
 
 本文档为管理员提供了逐步说明，介绍如何在电子邮件模板中设置和使用 \{{magic\_link\}}，确保电子邮件功能正常且外观清晰。

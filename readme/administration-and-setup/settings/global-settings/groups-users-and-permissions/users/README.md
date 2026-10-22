@@ -2,7 +2,7 @@
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/en.mp4" %}
 
-<figure><img src="../../../../../.gitbook/assets/users_settings.png" alt="用户管理"><figcaption><p>用户管理页面</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u046-zh.png" alt="用户视图；姓名和账户已隐藏。 “Actions”列尚未翻译；用户身份和数据行已隐藏。"><figcaption><p>用户视图；姓名和账户已隐藏。 “Actions”列尚未翻译；用户身份和数据行已隐藏。</p></figcaption></figure>
 
 “用户”页面允许管理员管理 DocBits 组织中的所有用户账户。您可以在此添加新用户、分配角色并控制访问权限。
 

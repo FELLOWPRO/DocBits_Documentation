@@ -6,12 +6,11 @@
 
 1.  打开**设置 → 文档类型**。找到用于发票的文档类型，并选择其卡片上的齿轮图标以打开**更多设置**。截图显示的是**发票**卡片。请保持**激活**和**提取**开关的当前状态。
 
-    <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-document-types-en.png" alt="文档类型页面，其中显示发票卡片及其更多设置齿轮图标"><figcaption><p>从发票卡片打开更多设置。</p></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u044-zh.png" alt="打开发票文档类型的更多设置。 “Standard”和“Extraction”仍是当前界面保留的英文标签。"><figcaption><p>打开发票文档类型的更多设置。 “Standard”和“Extraction”仍是当前界面保留的英文标签。</p></figcaption></figure>
 2.  如果**采购订单**处于折叠状态，请展开该部分。找到**已消耗采购订单行状态**并打开其开关。这是一个独立设置，与同一部分下方的**更新文档采购订单状态**不同。
 
-    <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-settings-en.png" alt="更多设置中的采购订单部分，其中显示已消耗采购订单行状态开关"><figcaption><p>选择已消耗采购订单行状态开关。</p></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u045-zh.png" alt="已使用采购订单行的状态设置。"><figcaption><p>已使用采购订单行的状态设置。</p></figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-toggle-en.png" alt="已消耗采购订单行状态标签和开关的近景"><figcaption><p>此示例中的开关处于关闭状态；打开后即可显示匹配颜色。</p></figcaption></figure>
 3. 打开启用了采购订单匹配的发票，并检查其中的采购订单行。以下示例展示了行颜色与匹配状态之间的关系。匹配步骤请参阅[采购订单匹配](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/)。
 
 ## 查看采购订单行颜色
@@ -23,12 +22,6 @@
 | 浅橙色    | 已匹配部分数量，但匹配数量低于所选采购订单数量。 | 检查剩余数量。                                    |
 | 浅紫色    | 匹配数量大于或等于所选采购订单数量。                                  | 不要假设还有更多可用数量。                           |
 
-<figure><img src="../../../../../../.gitbook/assets/image (450).png" alt="采购订单行的已匹配数量为零，且没有状态颜色"><figcaption><p>尚未匹配任何数量。</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/image (451).png" alt="匹配视图中带有蓝色选中阴影的采购订单行"><figcaption><p>该行已被选中用于当前匹配。</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/consumed_po_line_status.png" alt="背景为浅橙色且已匹配数量低于采购订单数量的采购订单行"><figcaption><p>该行已部分使用。</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/image (452).png" alt="背景为浅紫色且已匹配数量等于采购订单数量的采购订单行"><figcaption><p>该行已全部使用。</p></figcaption></figure>
-
 带删除线的行含义不同：其采购订单状态可能被[禁用的采购订单状态](purchase-order-disable-statuses.md)排除。如果某一行无法选中，请检查该设置。
+
+以下说明解释匹配状态，替代旧版本图片。再次使用某一行前，请检查已经使用的数量。

@@ -1,6 +1,6 @@
 # 脚本
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.43.25.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-25-zh.png" alt="脚本列表；名称和日期已隐藏。"><figcaption><p>脚本列表；名称和日期已隐藏。</p></figcaption></figure>
 
 {% embed url="https://youtu.be/n8NpWWIjmlA" %}
 DocBits 文档脚本说明：在文档工作流中自动执行自定义逻辑
@@ -21,4 +21,4 @@ DocBits 中的脚本通常使用系统支持的脚本语言 Python 编写。脚�
    * 提供用于编写和编辑脚本的界面。编辑器通常支持语法高亮、错误高亮和其他辅助脚本开发的功能。
    * **脚本示例**：脚本可以执行多种操作，例如遍历发票行项目以验证总额，或移除不符合特定条件的条目。
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.43.37.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-37-zh.png" alt="脚本编辑器中的 Python 技术示例。 “姓名”在此表示脚本名称；代码及其示例注释保持原样。"><figcaption><p>脚本编辑器中的 Python 技术示例。 “姓名”在此表示脚本名称；代码及其示例注释保持原样。</p></figcaption></figure>

@@ -6,15 +6,14 @@
 
 ## **启用步骤**
 
-1.  前往 **Settings** -> **Global Settings** -> **Document Types**。
+1.  前往 **设置** -> **全局设置** -> **文档类型**。
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1.png" alt=""><figcaption></figcaption></figure>
-2.  选择所需的文档类型，然后点击 **More Settings**。
+2.  选择所需的文档类型，然后点击 **更多设置**。
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2.png" alt=""><figcaption></figcaption></figure>
-3.  在 **Purchase Order** 部分，启用 **Calculate PO Unit Price** 选项。
+    <figure><img src="../../../../../../.gitbook/assets/prior-u044-zh.png" alt="打开发票文档类型的更多设置。 “Standard”和“Extraction”仍是当前界面保留的英文标签。"><figcaption><p>打开发票文档类型的更多设置。 “Standard”和“Extraction”仍是当前界面保留的英文标签。</p></figcaption></figure>
+3.  在 **采购订单** 部分，启用 **计算采购订单单价** 选项。
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u045-zh.png" alt="已使用采购订单行的状态设置。"><figcaption><p>已使用采购订单行的状态设置。</p></figcaption></figure>
 
 ## 价格计算方式
 
@@ -40,11 +39,11 @@
 
 ## 示例：
 
-<figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_4.png" alt="" width="563"><figcaption></figcaption></figure>
-
 在此示例中，从文档中提取的是未折扣的单价，而 ERP 中的采购订单存储的是已应用折扣的单价，因此单价不匹配。启用此设置后，系统会改为根据行项目金额和数量计算单价，使两边的价格一致。
 
 ## 相关设置
 
 * [采购订单匹配规则](purchase-order-matching-rules.md) — 这些规则比较的是**有效**单价；启用此设置时，有效单价就是计算得出的价格。
 * [采购订单容差设置](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) — 设置发票价格与计算价格之间允许的偏差。
+
+数量为 9、价格基数为 1 时，879.84 ÷ 9 × 1 = 97.76，即未税单价。含 8.5% 税的总额 954.63 对应 106.07。对于未税价格的发票，应比较未税单价。

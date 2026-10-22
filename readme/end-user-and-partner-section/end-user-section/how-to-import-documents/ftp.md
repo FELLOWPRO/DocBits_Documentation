@@ -3,37 +3,20 @@ hidden: true
 noIndex: true
 ---
 
-# FTP
+# FTP 导入
 
-如果您希望将 SFTP 与 DocBits 集成以导入文档。
+打开导入设置中的 FTP 区域，查看现有连接。
 
-要求
+<figure><img src="../../../.gitbook/assets/s150-ftp1-zh.png" alt="FTP 连接概览；连接数据已隐藏。 “Actions”列尚未翻译；连接信息保持空白。"><figcaption><p>FTP 连接概览；连接数据已隐藏。 “Actions”列尚未翻译；连接信息保持空白。</p></figcaption></figure>
 
-* 配置正确且兼容 Linux 的 SFTP 服务器
-* SFTP 主机名、用户名和密码
-* 专用导入文件夹
+## 创建连接
 
-**导入配置**
+开始创建连接以打开配置向导。先选择服务器类型并填写所需连接信息。
 
-在仪表板中，打开 Settings（设置）并导航至 Import（导入）。在 FTP Import（FTP 导入）下，选择添加新配置。
+<figure><img src="../../../.gitbook/assets/s150-ftp_import_configuration_form-zh.png" alt="FTP 导入向导的第一步：服务器配置。"><figcaption><p>FTP 导入向导的第一步：服务器配置。</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/ftp1.png" alt="添加新的 FTP 配置"><figcaption></figcaption></figure>
+检查主机、端口、凭据和路径，后续按配置设置文档选项。只有在检查预期设置后才保存。图片展示未保存的向导第一步，没有建立连接或验证导入。
 
-在相应字段中输入 SFTP 凭据，然后选择保存（API Key（API 密钥）字段会自动填入您当前使用环境的 API Key）。
+有关支持的文件及路由选项，参阅[导入](../../../administration-and-setup/settings/document-processing/import/README.md)。
 
-<figure><img src="../../../.gitbook/assets/ftp_import_configuration_form.png" alt="FTP 导入配置表单"><figcaption></figcaption></figure>
-
-输入 SFTP 的所有必要信息后，点击 SAVE（保存）。
-
-### **FTP 文件归档**
-
-1. **启用文件归档**
-   * 找到“File Archiving”（文件归档）选项。
-   * 将开关切换到“On”（开启）位置以启用归档。
-2. **选择归档目录**
-   * 启用“File Archiving”（文件归档）开关后，会显示一个字段，供您指定归档文件的目录路径。
-   * 在 SFTP/FTP 服务器上选择用于存储归档文件的目标文件夹路径。
-3. **保存更改**
-   * 点击 **Save（保存）** 按钮以应用更改。
-
-<figure><img src="../../../.gitbook/assets/ftp_3.png" alt="FTP 文件归档设置"><figcaption></figcaption></figure>
+旧版独立归档表单已由当前导入向导替代。

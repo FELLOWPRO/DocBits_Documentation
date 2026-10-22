@@ -1,0 +1,3249 @@
+{
+  "locale": "zh",
+  "all_passed": true,
+  "case_count": 225,
+  "page_count": 82,
+  "replacement_cases": 206,
+  "distinct_capture_hashes": 190,
+  "text_replacement_cases": 19,
+  "cleanup": {
+    "restored": true,
+    "owned_fixtures_deleted": true,
+    "baseline_layouts_preserved": true
+  },
+  "owned_fixture_deletion_count": 6,
+  "capture_environment": "dev.docbits.com",
+  "ui_code": "zh",
+  "note": "Alignment of the latest150 cases plus75 changes from the first5,20 and50 screenshot rounds. Equivalent localized source names and current navigation paths were checked. Source captures use the actual native UI, including separately reported untranslated or inaccurate product labels. No configuration changes were saved; own synthetic documents were removed and account language restored.",
+  "cases": [
+    {
+      "id": "S001",
+      "doc": "readme/administration-and-setup/analytics-dashboard/README.md",
+      "action": "replace",
+      "old_blob": "eabdd149dd5efa58d18683ba51de3e305fbc4577",
+      "original_references": [
+        "analytics_dashboard_data_table.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_data_table-zh.png",
+      "sha256": "fb1e127300c1722c2a38b0f490994a03c725bebcd07488ee9792ebfe51a93f69",
+      "caption": "分析表格及中文标签；文档数据已隐藏。 “桌子”在此实际指数据表格，“流动”指处理流程；文档数据行已隐藏。"
+    },
+    {
+      "id": "S002",
+      "doc": "readme/administration-and-setup/analytics-dashboard/README.md",
+      "action": "replace",
+      "old_blob": "02986181a9a73ec8d059f6df36a3365b393f1ac8",
+      "original_references": [
+        "analytics_dashboard_filter_dimensions.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_filter_dimensions-zh.png",
+      "sha256": "885ac31bca11bf6709efcafbb956f94f3fbea861b67adbab60107c3376d7f82f",
+      "caption": "按处理阶段、子组织、文档类型和供应商筛选分析数据。"
+    },
+    {
+      "id": "S003",
+      "doc": "readme/administration-and-setup/analytics-dashboard/README.md",
+      "action": "replace",
+      "old_blob": "53cbeddbd830b2e600df0070ca4a3b84f5b6ce29",
+      "original_references": [
+        "analytics_dashboard_filter_flow_steps.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_filter_flow_steps-zh.png",
+      "sha256": "949d25f740aaa472a94f1315748fb74262cd401e9c04b1c21320bc5c8095127e",
+      "caption": "在分析筛选器中选择处理阶段。"
+    },
+    {
+      "id": "S004",
+      "doc": "readme/administration-and-setup/analytics-dashboard/README.md",
+      "action": "replace",
+      "old_blob": "cdb306d4e240cddf1df8b494ac0ef2fdd662257c",
+      "original_references": [
+        "analytics_dashboard_filter_search.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_filter_search-zh.png",
+      "sha256": "e2a0e6532c28f16e07972d107079e68445d5b3602d66b72e35e09fbfd4367ecd",
+      "caption": "按验证阶段筛选的分析视图。"
+    },
+    {
+      "id": "S005",
+      "doc": "readme/administration-and-setup/analytics-dashboard/README.md",
+      "action": "replace",
+      "old_blob": "e10cd0cbdb06984c851f901735c8af053ba5640a",
+      "original_references": [
+        "analytics_dashboard_filter_time_range.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_filter_time_range-zh.png",
+      "sha256": "4e2e6158884ab0e39e49bf0be2f8371c016c8b3876d2d7a4a9f412269059d093",
+      "caption": "分析筛选器中的自定义时间范围选项。 日期范围按钮“风俗”实际表示自定义范围。"
+    },
+    {
+      "id": "S006",
+      "doc": "readme/administration-and-setup/analytics-dashboard/README.md",
+      "action": "replace",
+      "old_blob": "24d8f019f2a9574d2e6379346693b131da3abd29",
+      "original_references": [
+        "analytics_dashboard_flow_steps_card.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_flow_steps_card-zh.png",
+      "sha256": "39c75c92ef79662f91fc8682bf78acf81725e77d4bda88f10d9ba032266b30b4",
+      "caption": "显示汇总处理时间的阶段卡片。 “变压器”指数据转换阶段；Splitter 和 Classify 等技术阶段名称仍为英文。"
+    },
+    {
+      "id": "S007",
+      "doc": "readme/administration-and-setup/analytics-dashboard/README.md",
+      "action": "replace",
+      "old_blob": "ab925c32da026e21fd4bcf0b33274384092066c7",
+      "original_references": [
+        "analytics_dashboard_flow_types.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_flow_types-zh.png",
+      "sha256": "e784f33556ae018f7e78e948f2a4e61255736db4ec39d6c8ee4faab83aa029ec",
+      "caption": "处理流程、用户操作和状态视图。 界面中的“变压器”指数据转换步骤，并非电气设备；该产品翻译仍待修正。"
+    },
+    {
+      "id": "S008",
+      "doc": "readme/administration-and-setup/analytics-dashboard/README.md",
+      "action": "replace",
+      "old_blob": "d05e17b32ee3c32937c4ce255a5b59474aee6e19",
+      "original_references": [
+        "analytics_dashboard_global_average_comparison.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_global_average_comparison-zh.png",
+      "sha256": "451c3ceb24d6be921355993dc91601d9bfdfd1d752a69d3caabf6733141299e9",
+      "caption": "平均耗时与总体平均值的比较。 界面中的“流动”指分析数据流，相关产品译文仍待修正。"
+    },
+    {
+      "id": "S009",
+      "doc": "readme/administration-and-setup/analytics-dashboard/README.md",
+      "action": "replace",
+      "old_blob": "d8061592247ecd7cc7a62a146e6cb381174b9b58",
+      "original_references": [
+        "analytics_dashboard_only_exported_toggle.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_only_exported_toggle-zh.png",
+      "sha256": "4ca90ac74cbca5630d9b76f4c0db86677cd28aee563a234414dc62d647bbc50b",
+      "caption": "仅分析已导出文档的选项。"
+    },
+    {
+      "id": "S010",
+      "doc": "readme/administration-and-setup/analytics-dashboard/README.md",
+      "action": "replace",
+      "old_blob": "9d288370e43004b581bce4d8961174b18932ed4c",
+      "original_references": [
+        "analytics_dashboard_processing_flow.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_processing_flow-zh.png",
+      "sha256": "e784f33556ae018f7e78e948f2a4e61255736db4ec39d6c8ee4faab83aa029ec",
+      "caption": "按阶段汇总的流程视图。 界面中的“变压器”指数据转换步骤，并非电气设备；该产品翻译仍待修正。"
+    },
+    {
+      "id": "S011",
+      "doc": "readme/administration-and-setup/analytics-dashboard/README.md",
+      "action": "replace",
+      "old_blob": "d9dffaf4242a66f59409db491e20fc03e0f86402",
+      "original_references": [
+        "analytics_dashboard_status_flow.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_status_flow-zh.png",
+      "sha256": "569da2a6c581ff33ee07406315615a5dbcc99366ec359a9b18ad4b78012fd936",
+      "caption": "分析中的状态视图。"
+    },
+    {
+      "id": "S012",
+      "doc": "readme/administration-and-setup/analytics-dashboard/README.md",
+      "action": "replace",
+      "old_blob": "f4aecce8f26c9ecc253f5fb86e703fc0a8fbc8de",
+      "original_references": [
+        "analytics_dashboard_user_interaction_flow.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-analytics_dashboard_user_interaction_flow-zh.png",
+      "sha256": "ad9a97c4707f6eb8ff016a2c813a9697f7210efae38c6f305ee501a504859de0",
+      "caption": "用户操作汇总视图。"
+    },
+    {
+      "id": "S013",
+      "doc": "readme/administration-and-setup/settings/document-processing/export/README.md",
+      "action": "replace",
+      "old_blob": "fda3547a98faa31db230712de99594c6dbdbeb5c",
+      "original_references": [
+        "export_create_new_button.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-export_create_new_button-zh.png",
+      "sha256": "fb779084f67815935335a58d5e7e76a1c9fc2a80732fd37c2cc012e25d025d3b",
+      "caption": "未保存的导出配置草稿。 界面中的“节省”按钮实际表示保存配置；本例未保存。"
+    },
+    {
+      "id": "S014",
+      "doc": "readme/administration-and-setup/settings/document-processing/export/README.md",
+      "action": "replace",
+      "old_blob": "4dbb926c4114dc86b385d8f6881f2ed65f3140d0",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-export_settings_menu_access-zh.png",
+      "sha256": "c25625532b4173e8854866876080de8c76aa87b81b587bdc23653d84078c9255",
+      "caption": "从设置页面打开导出配置。"
+    },
+    {
+      "id": "T006",
+      "doc": "readme/administration-and-setup/settings/document-processing/export/README.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "prior-t006-zh.png",
+      "sha256": "b9b6fcd0cb4ea6cf3943d6eda4e8afa33070fc32b9753cf98db75a0340eed0d7",
+      "caption": "Webhook 导出配置草稿。 Webhook 地址标签和说明仍为英文，“节省”实际表示保存；本例未保存或测试连接。"
+    },
+    {
+      "id": "T007",
+      "doc": "readme/administration-and-setup/settings/document-processing/export/README.md",
+      "action": "replace",
+      "old_blob": "6c62f58c029117b6afa6f021145e17c90935deb1",
+      "original_references": [
+        "export_sftp_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t007-zh.png",
+      "sha256": "aafc98ff1177ea331a06c2d6797123aafc644ebdc9aef80b7baf07f017f6d01a",
+      "caption": "SFTP 导出配置草稿。 “节省”实际表示保存；本例未保存或测试连接。"
+    },
+    {
+      "id": "U016",
+      "doc": "readme/administration-and-setup/settings/document-processing/export/README.md",
+      "action": "replace",
+      "old_blob": "83bd2ad928a95aef64e60417dffa86b930e9d845",
+      "original_references": [
+        "export_sftp_3.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u016-zh.png",
+      "sha256": "431f7cfedc85c8e8152ec73761f771ae64b22e31a2d2dab6fe08da7b7b6e09b2",
+      "caption": "未保存的 SFTP 导出高级选项。"
+    },
+    {
+      "id": "U017",
+      "doc": "readme/administration-and-setup/settings/document-processing/export/README.md",
+      "action": "replace",
+      "old_blob": "6c19ab01b75955b0463e0272dd9b457483ce5eb5",
+      "original_references": [
+        "export_infor_sftp_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u017-zh.png",
+      "sha256": "0c66439ebe78fbc69e9a3cb025a109b570c2a31f62423c149bf13351ee2b9e62",
+      "caption": "Infor SFTP 导出草稿。 品牌 Infor 在界面中误译为“信息”；“节省”表示保存，本例未保存或测试连接。"
+    },
+    {
+      "id": "U018",
+      "doc": "readme/administration-and-setup/settings/document-processing/export/README.md",
+      "action": "replace",
+      "old_blob": "12e8fc3fd9c736a2e29b526f6859c399f92c76ce",
+      "original_references": [
+        "export_smb_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u018-zh.png",
+      "sha256": "bcb1faee87e2738ed46458fb0406cd4be21d8ccda72c43fb8ec5614eacfd3f4d",
+      "caption": "SMB 导出草稿；协议名称保持不变。 协议 SMB 在界面中误译为“中小企业”；“节省”表示保存，本例未保存或测试连接。"
+    },
+    {
+      "id": "U019",
+      "doc": "readme/administration-and-setup/settings/document-processing/export/README.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "prior-u019-zh.png",
+      "sha256": "d09548115ebb7740b62a0a668b36b751679ba79fea54fa7f97f9b7d6fc873cd8",
+      "caption": "Infor IDM 导出草稿。 品牌 Infor 在界面中误译为“信息”；部署方式标签仍为英文，本例未保存。"
+    },
+    {
+      "id": "U020",
+      "doc": "readme/administration-and-setup/settings/document-processing/export/README.md",
+      "action": "replace",
+      "old_blob": "56d792229594404e64f1df762f56ae17581263e7",
+      "original_references": [
+        "export_infor_ion_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u020-zh.png",
+      "sha256": "e05bd65e9f4231e67933d4d10b2941d8a230970a8bb0ba7ae4726689b9d56bd2",
+      "caption": "Infor ION 导出草稿。 Infor 被误译为“信息”，ION BOD 被误译为“离子生化需氧量”；它们是集成技术名称，本例未保存。"
+    },
+    {
+      "id": "U021",
+      "doc": "readme/administration-and-setup/settings/document-processing/export/README.md",
+      "action": "replace",
+      "old_blob": "e95dccd60f29c5d76a83ccaf422cd737f3398210",
+      "original_references": [
+        "export_infor_idm_ion_bod_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u021-zh.png",
+      "sha256": "2a41c92b8384b83c99bd810695a8cb53fb7aecf44f0b04eda8ec5cc2c2178b58",
+      "caption": "Infor IDM ION BOD 导出草稿。 品牌 Infor 在界面中误译为“信息”；部署方式标签仍为英文，本例未保存。"
+    },
+    {
+      "id": "U022",
+      "doc": "readme/administration-and-setup/settings/document-processing/export/README.md",
+      "action": "replace",
+      "old_blob": "ef5186e59af1b5c598a4b76f7e6be10381bf6c14",
+      "original_references": [
+        "export_infor_idm_ln_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u022-zh.png",
+      "sha256": "9d62af2417418ed31bd8df91c5d5aae75ff0173f9b238b97e1aec7eb7c1db8ea",
+      "caption": "Infor IDM LN 导出草稿。 品牌 Infor 在界面中误译为“信息”；本例未保存。"
+    },
+    {
+      "id": "U023",
+      "doc": "readme/administration-and-setup/settings/document-processing/export/README.md",
+      "action": "replace",
+      "old_blob": "a1f6bf398be7a099469aa177e14a80f6d2d144b1",
+      "original_references": [
+        "export_infor_idm_m3_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u023-zh.png",
+      "sha256": "1a3258914ad5bf30119c7f3828837c2c471a3202c02d17cdc12fb0a5b69f1c5e",
+      "caption": "Infor IDM M3 导出草稿。 品牌 Infor 在界面中误译为“信息”；本例未保存。"
+    },
+    {
+      "id": "U024",
+      "doc": "readme/administration-and-setup/settings/document-processing/export/README.md",
+      "action": "replace",
+      "old_blob": "10ecfd884269a5218a40d07360698b8dd0e088f9",
+      "original_references": [
+        "export_infor_idm_m3_toml_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u024-zh.png",
+      "sha256": "c544fe33e91b8919535b6f06e6a768a7b78b5f293bc4a93b094672807a42a005",
+      "caption": "带 TOML 的 Infor IDM M3 导出草稿。 品牌 Infor 在界面中误译为“信息”；本例未保存。"
+    },
+    {
+      "id": "S015",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+      "action": "replace",
+      "old_blob": "dd0d7022b2260d09d175ad8e858b29de5e47dc95",
+      "original_references": [
+        "barcode_assignment_dialog.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-barcode_assignment_dialog-zh.png",
+      "sha256": "c94ccf5d04e1990d0516531b7065b483c705e77227f130732dfba6e9655b9876",
+      "caption": "将识别到的条形码映射到文档字段。"
+    },
+    {
+      "id": "S016",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+      "action": "replace",
+      "old_blob": "86d1d50ff5dcd0173c00b554ba2eed49cfe98591",
+      "original_references": [
+        "barcode_assignment_field_mapped.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-barcode_assignment_field_mapped-zh.png",
+      "sha256": "0fdc7105d0ff3c5e779e4f53fa88012c55001b5f9d68f205997aac861ad3d0a5",
+      "caption": "未保存的采购订单字段映射。"
+    },
+    {
+      "id": "S017",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+      "action": "replace",
+      "old_blob": "9e145851326dcdab875629e2ffa01f21e2597124",
+      "original_references": [
+        "barcode_assignment_field_options.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-barcode_assignment_field_options-zh.png",
+      "sha256": "7a2a78b4b0d7a7427a7389bb93acc0a12f3635e23a9398ae789d522d1f6e641c",
+      "caption": "条形码映射窗口中可选的文档字段。"
+    },
+    {
+      "id": "S018",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+      "action": "replace",
+      "old_blob": "aa7bf673ec02b386c8164f346031e02447b41b7d",
+      "original_references": [
+        "barcode_assignment_validation_screen.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-barcode_assignment_validation_screen-zh.png",
+      "sha256": "18b44078493b7242145052440538c0b855f180086717157b631d1f115a237d13",
+      "caption": "含条形码和二维码的虚构发票验证视图。"
+    },
+    {
+      "id": "S019",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/fulltext-search.md",
+      "action": "remove",
+      "old_blob": "6360a3977345d81c519e7475cfab7b06f463efe8",
+      "original_references": [
+        "fulltext-search-required-dialog.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-fulltext-search-required-dialog-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "U048",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/fulltext-search.md",
+      "action": "replace",
+      "old_blob": "33cee82ed2d7ea5a4a8c662831bb7e697e49b4d9",
+      "original_references": [
+        "fulltext-search-settings-page.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u048-zh.png",
+      "sha256": "58b687037f196d7349f8c3f5179798025a7d0ace62e76586a54ad2c8c12d0270",
+      "caption": "在模块设置中检查全文搜索的可用性。此图展示模块开关，不是索引状态或向量索引设置；本例未更改开关。"
+    },
+    {
+      "id": "U049",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/fulltext-search.md",
+      "action": "replace",
+      "old_blob": "8dd964ab7d9de0e342ca03e2e95f69612f074841",
+      "original_references": [
+        "fulltext-search-dashboard-query.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u049-zh.png",
+      "sha256": "7fa8b502d9bfc8391017e955517733c2e33527f1d3018a2957f6d57f364abe7e",
+      "caption": "在仪表盘中输入金额查询条件。"
+    },
+    {
+      "id": "U050",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/fulltext-search.md",
+      "action": "replace",
+      "old_blob": "2b318378b05da8897b253a17d9ac80fad7bfc801",
+      "original_references": [
+        "fulltext-search-module-toggle.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u050-zh.png",
+      "sha256": "58b687037f196d7349f8c3f5179798025a7d0ace62e76586a54ad2c8c12d0270",
+      "caption": "全文搜索模块的可用情况。"
+    },
+    {
+      "id": "S020",
+      "doc": "readme/administration-and-setup/settings/document-processing/rule-manager/README.md",
+      "action": "replace",
+      "old_blob": "bb5a84f82f3f82fae8c6a1ba436c5f44e3b29cb4",
+      "original_references": [
+        "rule_detailed_editing.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-rule_detailed_editing-zh.png",
+      "sha256": "c8ca13d339b97b3b5f33e55dbacb6249722107c4a553bc09dcaebce6ef59e469",
+      "caption": "TOML 规则编辑器中的技术配置示例。 界面把通用名称显示为“姓名”，把保存显示为“节省”；本例仅查看未保存的表单。"
+    },
+    {
+      "id": "S021",
+      "doc": "readme/administration-and-setup/settings/document-processing/rule-manager/README.md",
+      "action": "replace",
+      "old_blob": "bdca306615d93d33e45d5f5981196194eb14de89",
+      "original_references": [
+        "rule_management.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-rule_management-zh.png",
+      "sha256": "a2f88020243dd3e37d5db164f2eec3e177dedc232ad79d4bca1e12a0e39af309",
+      "caption": "规则管理；已配置的名称已隐藏。 界面中的“姓名”列实际表示规则名称，“Actions”列尚未翻译。"
+    },
+    {
+      "id": "S022",
+      "doc": "readme/administration-and-setup/settings/document-processing/rule-manager/README.md",
+      "action": "replace",
+      "old_blob": "1d2dd9e4027df8807c577f9250e13c25fcb1ceff",
+      "original_references": [
+        "rule_management_interface.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-rule_management_interface-zh.png",
+      "sha256": "201c39c0f394c3a5fca0f4f39e78f7a3e4d7beec6ad4ca048577d4685dc7fd33",
+      "caption": "规则管理概览及可用操作。 界面中的“姓名”列实际表示规则名称，“Actions”列尚未翻译。"
+    },
+    {
+      "id": "S023",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/duplicate-a-custom-validation-rule.md",
+      "action": "replace",
+      "old_blob": "e10552cb9beb16e3eddb0cfd501a492389606530",
+      "original_references": [
+        "custom_validation_rule_duplicate_en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-custom_validation_rule_duplicate_en-zh.png",
+      "sha256": "a9c103ca2375160712ab6aa6cd091f93b84a5a49c01c4dec71448af04cc140d7",
+      "caption": "自定义验证规则；已配置的名称已隐藏。 表格类别在界面中误译为“桌子”，部分相对时间仍为德语；实际含义是数据表格。"
+    },
+    {
+      "id": "S024",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md",
+      "action": "replace",
+      "old_blob": "9a345f19ca91e9d6959233bdbbd54872ec2e8f33",
+      "original_references": [
+        "dbdc155-field-properties-filtered-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-dbdc155-field-properties-filtered-zh.png",
+      "sha256": "1c6e7cb0f5ae1f14852b66ca8cb708f40dff329d9320b2b47c3a86cc877be13b",
+      "caption": "按 invoice_id 筛选的字段及 OCR、Match Score 阈值。"
+    },
+    {
+      "id": "S025",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md",
+      "action": "replace",
+      "old_blob": "3eee090d25fd183ab7958ab5c1fdd8c5400a6d06",
+      "original_references": [
+        "dbdc155-field-properties-overview-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-dbdc155-field-properties-overview-zh.png",
+      "sha256": "37c5c3b267bed77f7fb4c5aa1b4e3e00ef005c566c9b1ddcd3d342f298a890d0",
+      "caption": "字段属性：必填、只读、隐藏和强制验证。"
+    },
+    {
+      "id": "S026",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "ccd76cdf95a3639351d2bd98628b802ab8df0ded",
+      "original_references": [
+        "layout-rule-approval-status.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-layout-rule-approval-status-zh.png",
+      "sha256": "aab9b896b42d0933a622a0df36f51c4b83ae05422fbb7e53079459829344d226",
+      "caption": "未保存的布局选择规则草稿。 界面中的“场地”指字段，“价值”指字段值；部分运算符及“Field validation”名称仍为英文。"
+    },
+    {
+      "id": "S027",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "ea5c82f992a63888b28465c13b079fa154bc316b",
+      "original_references": [
+        "layout-rule-editor.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-layout-rule-editor-zh.png",
+      "sha256": "78350aba93b510bcd6913cc449a45979f889885261eaa629400a407ead682ddc",
+      "caption": "布局选择规则的作用范围、条件和目标布局。 界面中的“场地”指字段，“价值”指字段值；部分运算符及“Field validation”名称仍为英文。"
+    },
+    {
+      "id": "S028",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "c7feb2371122d30dc88f9ea678bff4e5e3ae78b9",
+      "original_references": [
+        "layout-selection-default-row.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-layout-selection-default-row-zh.png",
+      "sha256": "4a12041819536c6188f74e1b99ceba56f21e1c1bf5b2b21a9c81dc64e4e517ec",
+      "caption": "选择规则列表末尾的备用布局。 “Field validation”是当前界面保留的英文布局类别；已配置的来源名称保持原样。"
+    },
+    {
+      "id": "S029",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "db7c1b42719e0ca04e68edd75b15018ac2356963",
+      "original_references": [
+        "layout-selection-rules-list.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-layout-selection-rules-list-zh.png",
+      "sha256": "536e890e5966a7a1593e3ec199acc58b06071bcdcf907409caa9e09a6ab7c0a9",
+      "caption": "布局选择规则；已配置的名称已隐藏。 “Field validation”是当前界面保留的英文布局类别；已配置的来源名称保持原样。"
+    },
+    {
+      "id": "S030",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "b21fa250b06842decb0f1315ab880a28a9398e18",
+      "original_references": [
+        "layouts-overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-layouts-overview-zh.png",
+      "sha256": "bfe910cc06c9e30d0351b8c04d464c446de90bc4ce3832075b6addd546261ae5",
+      "caption": "布局及选择规则概览。"
+    },
+    {
+      "id": "S031",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-duplicatedocument_3-zh.png",
+      "sha256": "cf623d6435693c959eaf2df1fc1650875ec6f543c5cc6c804c3cffd4438b93b7",
+      "caption": "重复文档检测设置。"
+    },
+    {
+      "id": "S032",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-duplicatedocument_4-zh.png",
+      "sha256": "c140873cc1daf5f73b8fdcc8090c1f7c2fabda1686808963e5deb4c5ecfe7ef7",
+      "caption": "可用于重复检测的字段。"
+    },
+    {
+      "id": "S033",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling.md",
+      "action": "remove",
+      "old_blob": "f46238d16030439b84cba791bb89ffa10468aaa6",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "source_figure_already_absent",
+      "new": "s150-duplicatedocument_7-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S034",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md",
+      "action": "remove",
+      "old_blob": "1393267cdcb91a3f940e79195ef8ced95942b9ee",
+      "original_references": [
+        "Calculate_PO_unit_price_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-calculate_po_unit_price_4-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S035",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "remove",
+      "old_blob": "8e035c26b6df9e2fc957dd4dce320a02d8cfbe42",
+      "original_references": [
+        "consumed_po_line_status.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-consumed_po_line_status-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S036",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "remove",
+      "old_blob": "1ba43fcd136bad48c2ed5ff72e80e322dd621c74",
+      "original_references": [
+        "image (450).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-image-470-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S037",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "remove",
+      "old_blob": "faed71d8a697c751cdf7b7b0f9b80d4dcd2bdd20",
+      "original_references": [
+        "image (451).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-image-472-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S038",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "remove",
+      "old_blob": "4ef0056a8af4f751f21dbe0b8414d590354fdc17",
+      "original_references": [
+        "image (452).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-image-473-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "U044",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "replace",
+      "old_blob": "ff08a56aa625366824b7fd015bf91a67abfb0bbf",
+      "original_references": [
+        "consumed-po-line-document-types-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u044-zh.png",
+      "sha256": "a389464e24d7b79e5b65f45b2b2e643a8bf66c127120ec291854dec59501b047",
+      "caption": "打开发票文档类型的更多设置。 “Standard”和“Extraction”仍是当前界面保留的英文标签。"
+    },
+    {
+      "id": "U045",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "replace",
+      "old_blob": "edbe3c3f367809c4a41422e27bb5859bb2b18deb",
+      "original_references": [
+        "consumed-po-line-settings-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u045-zh.png",
+      "sha256": "558806b445298f46cdda77287ffa5b7b0fd517e00b4534cc764dfe6d1ecee167",
+      "caption": "已使用采购订单行的状态设置。"
+    },
+    {
+      "id": "S039",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/script/README.md",
+      "action": "replace",
+      "old_blob": "f77adfe209ae633c17f4cc740f8f47c5c9f541fe",
+      "original_references": [
+        "Bildschirmfoto 2024-05-08 um 09.43.25.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-bildschirmfoto-2024-05-08-um-09-43-25-zh.png",
+      "sha256": "fc400d48145f9f186cb9fb99fcbc66b9a0a70e1ca1ab22acf4e1797c70d821d3",
+      "caption": "脚本列表；名称和日期已隐藏。"
+    },
+    {
+      "id": "S040",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/script/README.md",
+      "action": "replace",
+      "old_blob": "aedd3c173f4526dbffd873058be8105e798f9ff8",
+      "original_references": [
+        "Bildschirmfoto 2024-05-08 um 09.43.37.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-bildschirmfoto-2024-05-08-um-09-43-37-zh.png",
+      "sha256": "a651b38a90e2f930a114705bd1bd944e3dae0d23b5ee22daec1243def02af3a4",
+      "caption": "脚本编辑器中的 Python 技术示例。 “姓名”在此表示脚本名称；代码及其示例注释保持原样。"
+    },
+    {
+      "id": "S041",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+      "action": "replace",
+      "old_blob": "9d6324f98d2040977290a0b6c097dfe0db33aa78",
+      "original_references": [
+        "transformation-add-row-columns.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-transformation-add-row-columns-zh.png",
+      "sha256": "f9d8f23e97f5b3391b2105b1196f93e0f9ab8aa6046085027a88d2b327cd1f8c",
+      "caption": "向表格添加行的转换步骤，尚未保存。 界面中的“价值”指固定值，“场地”指字段；技术列标识符保持原样。"
+    },
+    {
+      "id": "S042",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+      "action": "replace",
+      "old_blob": "472b72c6804ca4a1a4f5a0fe540eed23c843195a",
+      "original_references": [
+        "transformation-column-value-map.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-transformation-column-value-map-zh.png",
+      "sha256": "6d450f916edc7ac5b76a58c7bf27061dcab47b1e6448ccf2bb15f5830d12b5e3",
+      "caption": "表格列的值映射。 界面中的“柱子本身”指当前列，“地图值”指值映射，“添加地图”指添加映射项。"
+    },
+    {
+      "id": "S043",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+      "action": "replace",
+      "old_blob": "bb71b4d92fb7e578b5b898d094302b5fd94fdaf9",
+      "original_references": [
+        "transformation-rule-pipeline.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-transformation-rule-pipeline-zh.png",
+      "sha256": "9fe4f943f131f92d05ff881b39484ea5b8fa23b4e8ad6288e23f468845290cd9",
+      "caption": "转换规则的处理步骤。 界面中的“场地本身”指当前字段；“管道”指数据处理流水线。"
+    },
+    {
+      "id": "S044",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+      "action": "replace",
+      "old_blob": "525a2cb7224758b9df24a4434cfbadbd7dc7c217",
+      "original_references": [
+        "transformation-rule-scope.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-transformation-rule-scope-zh.png",
+      "sha256": "2fbbb300192f092cf14680a2ae8559f1147709f8219cee6f6178b017e9b594b4",
+      "caption": "转换范围：页眉字段、表格行、列和路由。 界面中的“节省”实际表示保存规则；本例未保存。"
+    },
+    {
+      "id": "S045",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations/how-to-create-a-sub-organization.md",
+      "action": "replace",
+      "old_blob": "e90879645ac0010e0d74de076232cbe52e10fbc5",
+      "original_references": [
+        "edit_user_in_sub_organization.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-edit_user_in_sub_organization-zh.png",
+      "sha256": "1d47e8b298b06e6620c42bbd1b341fd9d18c6a27d7756d919d9186f99d4a8e2e",
+      "caption": "保存前的创建子组织窗口。 界面中的“节省”实际表示保存；本例只展示空白表单。"
+    },
+    {
+      "id": "S046",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+      "action": "remove",
+      "old_blob": "9c8c746b746d75d3c22f5a7d96d71151c5d61a1f",
+      "original_references": [
+        "api-key-created.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-api-key-created-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S047",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+      "action": "replace",
+      "old_blob": "6ec0d07fbb68518af275ea5f33af60f85a9c80ae",
+      "original_references": [
+        "api-key-list-row.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-api-key-list-row-zh.png",
+      "sha256": "6377d7b55eaa7f7f32f007fd45861d9e799400af6ba78778cb856507b91f715d",
+      "caption": "API 密钥列表；密钥和账户数据已隐藏。 “姓名”列实际表示密钥名称，“Actions”列尚未翻译；未创建任何密钥。"
+    },
+    {
+      "id": "T017",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+      "action": "replace",
+      "old_blob": "80e9141204557807c68da305b23ed60a6ffa6938",
+      "original_references": [
+        "api-key-list.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t017-zh.png",
+      "sha256": "f3cdd8f8fd5c883d9747ba5ec29ab6a0a30e299c5cd8bf1e32f313f841af087f",
+      "caption": "API 密钥列表；密钥及关联名称已隐藏。 “姓名”在此表示密钥名称，“Actions”列尚未翻译。"
+    },
+    {
+      "id": "T018",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+      "action": "replace",
+      "old_blob": "4477a249adfbb5b2b7756defc547dbc305dc5736",
+      "original_references": [
+        "api-key-create-dialog.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t018-zh.png",
+      "sha256": "41f521cf9a8b23d96ca605818e5fef056895ed1a2c6820bbd8fe15bc1fe5a957",
+      "caption": "保存前的创建 API 密钥窗口。"
+    },
+    {
+      "id": "T020",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+      "action": "replace",
+      "old_blob": "9164f34163b7f0c6ce1871eea9f3971aa415db74",
+      "original_references": [
+        "api-key-settings-overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t020-zh.png",
+      "sha256": "6cfd47135b9ac5323d3d25cb4f62c02723272377746bae5a92404eecdb72162f",
+      "caption": "打开 API 密钥管理。"
+    },
+    {
+      "id": "S048",
+      "doc": "readme/administration-and-setup/settings/infrastructure.md",
+      "action": "replace",
+      "old_blob": "c147e91766c155c4d0b445768987b2409fc5276b",
+      "original_references": [
+        "infrastructure_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-infrastructure_overview-zh.png",
+      "sha256": "7cbccac1329408d03897c9ecd0e55e80217ac8d6a04e0416c8e758cdb0d8c155",
+      "caption": "基础设施概览。"
+    },
+    {
+      "id": "T004",
+      "doc": "readme/administration-and-setup/settings/infrastructure.md",
+      "action": "replace",
+      "old_blob": "b04449025ed99ca237f89ec0b6921a95c8097223",
+      "original_references": [
+        "infrastructure_processing.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t004-zh.png",
+      "sha256": "aa7cadebc1e2b10c8fd5ce1e2ee492bc525b46c4ebe1df9a97c8361d02f694a7",
+      "caption": "基础设施进程及上次运行情况。 部分相对时间仍为德语；处理服务的技术名称保持原样。"
+    },
+    {
+      "id": "T005",
+      "doc": "readme/administration-and-setup/settings/infrastructure.md",
+      "action": "replace",
+      "old_blob": "e3bc37387b0fa2dd217da2a1c62c1a3d9d1de1e8",
+      "original_references": [
+        "infrastructure_scheduled.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t005-zh.png",
+      "sha256": "d3ea0dbb24c689140f1891d3196329cc28b8a12c6aafa3762f296e68aafe57a5",
+      "caption": "基础设施计划任务。 部分相对时间仍为德语；后台任务的技术名称保持原样。"
+    },
+    {
+      "id": "S049",
+      "doc": "readme/administration-and-setup/settings/supplier-setting/editing-email-templates.md",
+      "action": "replace",
+      "old_blob": "646ee5343fabc7e8a269167255751e21bc1a643a",
+      "original_references": [
+        "Bildschirmfoto 2024-08-25 um 12.35.53.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-bildschirmfoto-2024-08-25-um-12-35-53-zh.png",
+      "sha256": "a1a1f007c9fd1c6cbb16f7d65f5a2fd24664dec9265089376070dfa002fe3e3f",
+      "caption": "新建供应商邮件模板的编辑器。 界面中的“姓名”实际表示模板名称，“节省”表示保存；本例未保存或发送邮件。"
+    },
+    {
+      "id": "T013",
+      "doc": "readme/administration-and-setup/settings/supplier-setting/editing-email-templates.md",
+      "action": "replace",
+      "old_blob": "66db8452b61a72b3657b223053cd2503ee33032a",
+      "original_references": [
+        "supplier_email_templates.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t013-zh.png",
+      "sha256": "01aceb6525fc5d989f4706d0472f1a824e5d09539567af6147173b1ed517c47b",
+      "caption": "供应商邮件模板列表。 “姓名”在此表示通知名称，“Actions”列尚未翻译。"
+    },
+    {
+      "id": "S050",
+      "doc": "readme/administration-and-setup/setup/document-training/training-header-fields.md",
+      "action": "replace",
+      "old_blob": "864b0dec41fd8bd82ac0353fe5872dd84e612a7c",
+      "original_references": [
+        "header_field_training_0.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-header_field_training_0-zh.png",
+      "sha256": "e97750d0e318b840e28037ba2cc6ef917cf98eb037bb64b544cb606b948e04e7",
+      "caption": "训练页眉字段前的虚构发票验证视图。"
+    },
+    {
+      "id": "S051",
+      "doc": "readme/administration-and-setup/setup/document-training/training-header-fields.md",
+      "action": "replace",
+      "old_blob": "766cb3a4b96bb8a0a7e32cafe99acb8cb977b0a8",
+      "original_references": [
+        "header_field_training_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-header_field_training_1-zh.png",
+      "sha256": "985fadb026cd10703b6cb1b969443cdc291c6257e6938ffbc359614a8bc55d28",
+      "caption": "选择发票编号作为训练起点。"
+    },
+    {
+      "id": "S052",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "7b9b3aa2b9ce093be324d9a9c21dfcb1ff316c5f",
+      "original_references": [
+        "define_tables_and_columns_1.png",
+        "define_tables_and_columns_2.png",
+        "define_tables_and_columns_3.png",
+        "define_tables_and_columns_4.png",
+        "define_tables_and_columns_5.png",
+        "define_tables_and_columns_6.png",
+        "define_tables_and_columns_7.png",
+        "define_tables_and_columns_9.png",
+        "define_tables_and_columns_8.png",
+        "define_tables_and_columns_10.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-define_tables_and_columns_1-zh.png",
+      "sha256": "ca3c49986c09960bee375e2432720222fe4238041592721b825452532c0e5ebd",
+      "caption": "定义表格和列的界面。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。"
+    },
+    {
+      "id": "S053",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "bce1b9d5a01319091c246da720599bc1bcfb84fe",
+      "original_references": [
+        "define_tables_and_columns_10.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_10-zh.png",
+      "sha256": "fc1b9a5bfbbf5e1e21fe5331ec1791f3a65b17ace062d3033f0ce962f34f41df",
+      "caption": "验证界面中自动提取的虚构发票明细行。"
+    },
+    {
+      "id": "S054",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "95e6358348a1ef553692a41cf761cae10145a872",
+      "original_references": [
+        "define_tables_and_columns_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_2-zh.png",
+      "sha256": "3142cf28af84e2038aeb54fb32d8b5f34bb6519cf0461dc55ee460551a18cad7",
+      "caption": "训练模式已开启的表格训练界面。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。"
+    },
+    {
+      "id": "S055",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "41129ebb6eae74f2b32a19f02564acf860801a3d",
+      "original_references": [
+        "define_tables_and_columns_3.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_3-zh.png",
+      "sha256": "3142cf28af84e2038aeb54fb32d8b5f34bb6519cf0461dc55ee460551a18cad7",
+      "caption": "包括自动检测在内的表格训练工具。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。"
+    },
+    {
+      "id": "S056",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "5aa31ae86aeeead17f9eae6c8f04bebeb235c647",
+      "original_references": [
+        "define_tables_and_columns_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_4-zh.png",
+      "sha256": "b1810fb3a0df4e72fa4f3a3f1aa0cf0db58836f889f28be1199a182e734a7695",
+      "caption": "虚构发票明细行上的表格区域，尚未保存。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。"
+    },
+    {
+      "id": "S057",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "4240ac3b80e3e5265c22d72a6230e758376038af",
+      "original_references": [
+        "define_tables_and_columns_5.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_5-zh.png",
+      "sha256": "c48bb7b4615238ab8c1f00d320607fefa7f777bdf8d1988fc63aaba58b9033e6",
+      "caption": "带有垂直列分隔线的表格区域。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。"
+    },
+    {
+      "id": "S058",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "d9b39626458c7eca8899435394bce46ee807ed29",
+      "original_references": [
+        "define_tables_and_columns_8.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_8-zh.png",
+      "sha256": "c48bb7b4615238ab8c1f00d320607fefa7f777bdf8d1988fc63aaba58b9033e6",
+      "caption": "未保存的训练草稿中的区域和分隔线。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。"
+    },
+    {
+      "id": "S059",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "caaf11d993b2aa1ac2375d0ead818454229f4e1b",
+      "original_references": [
+        "define_tables_and_columns_9.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-define_tables_and_columns_9-zh.png",
+      "sha256": "c48bb7b4615238ab8c1f00d320607fefa7f777bdf8d1988fc63aaba58b9033e6",
+      "caption": "虚构发票各列之间的分隔线。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。"
+    },
+    {
+      "id": "S060",
+      "doc": "readme/administration-and-setup/setup/document-types/README.md",
+      "action": "replace",
+      "old_blob": "17891ff3051160ae164fdb82cdcdeee24836ab03",
+      "original_references": [
+        "document-types-invoice-fields-en-20260928.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-document-types-invoice-fields-zh.png",
+      "sha256": "395025aaf6aa4aeab99185030af6824ee660620e5452ea67baf6e5cf930c0693",
+      "caption": "发票文档类型的字段设置。"
+    },
+    {
+      "id": "U025",
+      "doc": "readme/administration-and-setup/setup/document-types/README.md",
+      "action": "replace",
+      "old_blob": "3e9f5855f6411d7aea92c05eab7913fd89529fe8",
+      "original_references": [
+        "document-types-overview-en-20260928.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u025-zh.png",
+      "sha256": "4499f64436f2cfed358ada99a1d09adb49c8dab6f9e9e37787c2fba7c4106929",
+      "caption": "默认文档类型及其设置入口。 “Standard”和“Extraction”仍是当前界面保留的英文标签。"
+    },
+    {
+      "id": "U026",
+      "doc": "readme/administration-and-setup/setup/document-types/README.md",
+      "action": "replace",
+      "old_blob": "b92b2de1e2e71cce7175e757f9b737af04d67153",
+      "original_references": [
+        "document-types-custom-new-en-20260928.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u026-zh.png",
+      "sha256": "a1e7ab83ad52c0fb42e9ec449a6e20c3f21a7a0a3ab0bd0e2d767abc3bcc4bcd",
+      "caption": "未保存的新建文档类型表单。 “汽车”实际表示自动模式，“有空位”实际指文档包含行项目；这些产品译文仍待修正。"
+    },
+    {
+      "id": "S061",
+      "doc": "readme/administration-and-setup/setup/document-types/origin-layouts.md",
+      "action": "replace",
+      "old_blob": "43a1da9852f3ef2ab887501fb50176aa6f5e513f",
+      "original_references": [
+        "origin_layout_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-origin_layout_1-zh.png",
+      "sha256": "26604014afebccf49b7f464ba4a69e0f5591ec10b6b54dfab6f183313eafa18a",
+      "caption": "带中文控件的布局构建器。"
+    },
+    {
+      "id": "S062",
+      "doc": "readme/administration-and-setup/setup/document-types/origin-layouts.md",
+      "action": "replace",
+      "old_blob": "5fe6d5bf2d79d8b2dad302d77bb67db548398c64",
+      "original_references": [
+        "origin_layout_3.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-origin_layout_3-zh.png",
+      "sha256": "79460b5c321bc2e621b3c753f6038c8d9cbaa9209bff8200d496ec4473c9e2d7",
+      "caption": "选择来源；已配置的来源名称保持不变。"
+    },
+    {
+      "id": "S063",
+      "doc": "readme/administration-and-setup/setup/document-types/origin-layouts.md",
+      "action": "replace",
+      "old_blob": "01830f3300af552b84f1900e55de25fbcc426050",
+      "original_references": [
+        "origin_layout_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-origin_layout_4-zh.png",
+      "sha256": "d08497403b501ced8711c50a931a72bb7caa39d8a898e16b467d6a50d1c31046",
+      "caption": "将默认布局应用到来源的窗口。"
+    },
+    {
+      "id": "S064",
+      "doc": "readme/administration-and-setup/workflow/card-sdk.md",
+      "action": "replace",
+      "old_blob": "85e251c7b975d5ec09d78d7ec75c470e1d7c8bfa",
+      "original_references": [
+        "workflow_card_sdk.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-workflow_card_sdk-zh.png",
+      "sha256": "cd2dbecc502edb686bdeb4a05930cf5dd38a42078e0bf381a0b84570de95da53",
+      "caption": "Card SDK 显示所需的 AI Workforce 订阅。"
+    },
+    {
+      "id": "S065",
+      "doc": "readme/administration-and-setup/workflow/standard-workflow-builder/workflow-documentation.md",
+      "action": "replace",
+      "old_blob": "5b56c6edc6e7acc8343c009add46a0f2654d9035",
+      "original_references": [
+        "workflow_test4_delivery_note_status.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-workflow_test4_delivery_note_status-zh.png",
+      "sha256": "2529dd4b5b9448f6aa93d2aee85904d9787b4fb32ed2bb82cdbb890c0cbfe2a0",
+      "caption": "更改状态的工作流草稿，尚未保存。"
+    },
+    {
+      "id": "S066",
+      "doc": "readme/administration-and-setup/workflow/standard-workflow-builder/workflow-documentation.md",
+      "action": "replace",
+      "old_blob": "bc14a2fac0b062396ebc1248f7c1c1537c92e6e2",
+      "original_references": [
+        "image (6) (1).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-workflow_test7_status_update-zh.png",
+      "sha256": "177a217c0ea8bd1a8fc4cec24ce5562b45c7b09d302880c50a86c8981507bf4c",
+      "caption": "工作流草稿中的状态更改操作。"
+    },
+    {
+      "id": "S067",
+      "doc": "readme/administration-and-setup/workflow/standard-workflow-builder/workflow-documentation.md",
+      "action": "replace",
+      "old_blob": "da6a133492c46304bda67e1f6162504bcd8262cf",
+      "original_references": [
+        "image (27) (1).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-workflow_test9_match_check_detail-zh.png",
+      "sha256": "be5961bdef9f2ecde80dd0533e2675d4bcff7d998beebb19cf332983a844911c",
+      "caption": "选择与采购订单进行比较的条件。 界面中的“操作员”实际表示比较运算符，“价值”表示字段值，“桌子”表示数据表格。"
+    },
+    {
+      "id": "S068",
+      "doc": "readme/administration-and-setup/workflow/standard-workflow-builder/workflow-documentation.md",
+      "action": "replace",
+      "old_blob": "2c70bbc084befb579accd057538c54d2dd7673d7",
+      "original_references": [
+        "workflow_test9_match_check_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-workflow_test9_match_check_overview-zh.png",
+      "sha256": "1cce09c9cf9745fa9a39c77fc63fe6e0189ba873cf86e69ff22276092999f2bc",
+      "caption": "含采购订单比较条件的工作流草稿。 卡片中的“操作员”实际表示比较运算符；该示例未保存工作流。"
+    },
+    {
+      "id": "S069",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+      "action": "replace",
+      "old_blob": "a5e795181fa7e8537e1f768499a686cd1dbd575d",
+      "original_references": [
+        "document-flow-dashboard-menu-en.png",
+        "document-flow-validation-menu-en.png",
+        "document-flow-overview-en.png",
+        "document-flow-later-steps-en.png",
+        "document-flow-step-details-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-document-flow-dashboard-menu-zh.png",
+      "sha256": "716fe1f2a3f5d613163b209ba64304947ad4f8e876df3e6e946ea190812466e3",
+      "caption": "在仪表盘中查找虚构文档；文档数据已隐藏。"
+    },
+    {
+      "id": "S070",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+      "action": "replace",
+      "old_blob": "44e6c24e25c0bb4371cab63787ffd7f3c348da27",
+      "original_references": [
+        "document-flow-overview-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-document-flow-overview-zh.png",
+      "sha256": "0027841ddc1effdf806bcd43bda2f4a6290ca42c04abbcb09df668d2b00c9a45",
+      "caption": "虚构发票的处理阶段；技术代码保持不变。 “变压器”在此指数据转换阶段；部分技术阶段和状态名称仍为英文。"
+    },
+    {
+      "id": "S071",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+      "action": "remove",
+      "old_blob": "e2418c8bb4e3c9f90979eee87377da5e483621d8",
+      "original_references": [
+        "document-flow-step-details-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-document-flow-step-details-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S072",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+      "action": "replace",
+      "old_blob": "c39d76787089aee30b1e3f7d728f01ce388d66fd",
+      "original_references": [
+        "document-flow-validation-menu-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-document-flow-validation-menu-zh.png",
+      "sha256": "eb34611a4ee1e73fbb03b5228107cc74dad4e0931552f10051040b460fcb0840",
+      "caption": "用于打开文档流程的验证菜单。"
+    },
+    {
+      "id": "S073",
+      "doc": "readme/end-user-and-partner-section/end-user-section/technical-support-in-docbits/debug-collector.md",
+      "action": "remove",
+      "old_blob": "a25517b079dde1a6e425518b5e8417c57b135697",
+      "original_references": [
+        "debug-collector-dialog.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-debug-collector-dialog-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S074",
+      "doc": "readme/end-user-and-partner-section/end-user-section/error-page.md",
+      "action": "replace",
+      "old_blob": "907a12d4f1b62b5e5faa61b6acf28ff0d2832f7e",
+      "original_references": [
+        "error_2.png",
+        "error_3.png",
+        "error_4.png",
+        "error_5.png",
+        "error_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-error_1-zh.png",
+      "sha256": "9fea1d97f4acf89d57c792d92ce7a97e5204b94fbb7d21e966736b9921f5e4b2",
+      "caption": "错误视图中的操作；示例没有已记录的错误详情。 该页面用于展示诊断操作入口；示例文档没有实际处理异常，因此技术占位消息仍为英文。"
+    },
+    {
+      "id": "S075",
+      "doc": "readme/end-user-and-partner-section/end-user-section/error-page.md",
+      "action": "replace",
+      "old_blob": "df2e5541239ea95ebf5184eb435fe7501dbc4fe4",
+      "original_references": [
+        "error_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-error_2-zh.png",
+      "sha256": "897d008155730e099c2db1550e18f5495b74b065345b4561b9505cb6579dec4b",
+      "caption": "没有已记录消息的错误消息和异常视图。 该页面用于展示诊断操作入口；示例文档没有实际处理异常，因此技术占位消息仍为英文。"
+    },
+    {
+      "id": "S076",
+      "doc": "readme/end-user-and-partner-section/end-user-section/error-page.md",
+      "action": "remove",
+      "old_blob": "735687cf3182e1616dc43b537c4a72aa74c90071",
+      "original_references": [
+        "error_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-error_4-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S077",
+      "doc": "readme/end-user-and-partner-section/end-user-section/error-page.md",
+      "action": "remove",
+      "old_blob": "e2c27b6ea1c0dba0fd3ecd3b3d9b18c1c40be4a3",
+      "original_references": [
+        "error_5.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-error_5-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S078",
+      "doc": "readme/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md",
+      "action": "replace",
+      "old_blob": "e0806ff62231c6dedd8e99f0074d50dd817c31cc",
+      "original_references": [
+        "ftp1.png",
+        "ftp_import_configuration_form.png",
+        "ftp_3.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-ftp1-zh.png",
+      "sha256": "1a603e44f080e7980325f20a096bd4e771e0a753a0f13fa26aa9c081c5ce1efc",
+      "caption": "FTP 连接概览；连接数据已隐藏。 “Actions”列尚未翻译；连接信息保持空白。"
+    },
+    {
+      "id": "S079",
+      "doc": "readme/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md",
+      "action": "remove",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "source_figure_already_absent",
+      "new": "s150-ftp_file_archiving_settings-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S080",
+      "doc": "readme/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md",
+      "action": "replace",
+      "old_blob": "972b718673b02f29cb8674f14efeee7b296cd29b",
+      "original_references": [
+        "ftp_import_configuration_form.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-ftp_import_configuration_form-zh.png",
+      "sha256": "6b0cfa93e257e1413699956df720eabb554c1aa56fd7170f9ee7f284579a9391",
+      "caption": "FTP 导入向导的第一步：服务器配置。"
+    },
+    {
+      "id": "S081",
+      "doc": "readme/end-user-and-partner-section/end-user-section/how-to-import-documents/manual-import.md",
+      "action": "replace",
+      "old_blob": "0611b1068bf8f4129f1c077414ce4d58d10faae4",
+      "original_references": [
+        "manual-import1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-manual-import1-zh.png",
+      "sha256": "fe4a17eeb74a840f21da99442ab6538a989c390fc442cc5926aa91f27fe22281",
+      "caption": "手动导入文档窗口。"
+    },
+    {
+      "id": "S082",
+      "doc": "readme/end-user-and-partner-section/end-user-section/idea-board.md",
+      "action": "replace",
+      "old_blob": "2c4848092bb54346ed300879742fab72e643db7a",
+      "original_references": [
+        "idea-board-new-idea.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-idea-board-new-idea-zh.png",
+      "sha256": "88e53be19b03615322472b5591f9ec1fd63747d0f8df9a978d671dbe72b58273",
+      "caption": "不含个人数据的提交建议窗口。 该对话框仍混用英文标题、字段标签和提交按钮；本例未提交想法。"
+    },
+    {
+      "id": "S083",
+      "doc": "readme/end-user-and-partner-section/end-user-section/invoice-dashboard.md",
+      "action": "remove",
+      "old_blob": "cb29d7263370f66a465f221931d90a8d8fa937f6",
+      "original_references": [
+        "invoice_dashboard_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-invoice-dashboard-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S084",
+      "doc": "readme/end-user-and-partner-section/end-user-section/purchase-order-dashboard.md",
+      "action": "replace",
+      "old_blob": "660b75b002d3ac86841d47fb630a19d4a9a998fc",
+      "original_references": [
+        "purchase_order_dashboard_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-purchase-order-zh.png",
+      "sha256": "e841ea3feccf4cc08cbfee8b880280c96b6ce40c80dc050fb88ddc72e071031d",
+      "caption": "采购订单视图；订单数据已隐藏。"
+    },
+    {
+      "id": "S085",
+      "doc": "readme/end-user-and-partner-section/end-user-section/purchase-order-matching/supplier-item-number-map.md",
+      "action": "replace",
+      "old_blob": "64ca9a777d534c3fd2aeef3235a6ce5abb359b50",
+      "original_references": [
+        "supplier_item_number_map_interface.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-supplier-item-number-map-zh.png",
+      "sha256": "c1d91442cfbb601286c322992bcbcc8286aff40223483d33a81ea5fc3d6b0dec",
+      "caption": "供应商物料编号映射。"
+    },
+    {
+      "id": "S086",
+      "doc": "readme/end-user-and-partner-section/end-user-section/ressources-and-support/user-support.md",
+      "action": "replace",
+      "old_blob": "920bc9aad80086ebb4536fa7140ee625c8517e55",
+      "original_references": [
+        "validation_screen_support_window.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-user-support4-zh.png",
+      "sha256": "610dcf925382dd7847d83c453ccf45f942043e4dd4f4d45a89d051361947e2b6",
+      "caption": "发送前的支持表单。"
+    },
+    {
+      "id": "S087",
+      "doc": "readme/end-user-and-partner-section/end-user-section/tasks.md",
+      "action": "replace",
+      "old_blob": "dafbde24bee224321fad075490749ee8fb08b4c1",
+      "original_references": [
+        "tasks_dashboard_layout_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-tasks1-zh.png",
+      "sha256": "4cf27856b89f4284b13227dbfb0fe5fa1c436d84f9e76784529ef56fb021fe1e",
+      "caption": "按状态分组的任务看板；任务内容已隐藏。"
+    },
+    {
+      "id": "S088",
+      "doc": "readme/end-user-and-partner-section/end-user-section/tasks.md",
+      "action": "replace",
+      "old_blob": "72c1c34a7cc85f7b5e76ac82512a2604dc4d8f6d",
+      "original_references": [
+        "tasks_dashboard_layout_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-tasks2-zh.png",
+      "sha256": "431cab16c24444cb8a55159d681a10393ebace7eb509a8019060e3e0437877b5",
+      "caption": "任务列表；文档数据已隐藏。"
+    },
+    {
+      "id": "S089",
+      "doc": "readme/end-user-and-partner-section/end-user-section/technical-support-in-docbits/help-icons.md",
+      "action": "replace",
+      "old_blob": "2a17c40c3689fef6b3a0ff38e8c33eed8c74ec91",
+      "original_references": [
+        "help-icon.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-help-icon-zh.png",
+      "sha256": "b52993131a652450357cccd62eeb1f192a8033866bb97c5149b4192d407eb77e",
+      "caption": "设置页面右上角的帮助图标。"
+    },
+    {
+      "id": "S090",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/fuzzy-data.md",
+      "action": "replace",
+      "old_blob": "03adade5d0c10860149dd13b2abaab03ddb53ac9",
+      "original_references": [
+        "fuzzy_data_selection_window.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-fuzzy_data_selection_window-zh.png",
+      "sha256": "2e22cdfd2a49dc9c51180854ebaaa3dc4bf6efd6e5a43eaa2c3c91d913689605",
+      "caption": "主数据查询窗口；记录已隐藏。 过滤方式“聪明的”指智能匹配；部分已配置的列名称仍为英文。"
+    },
+    {
+      "id": "S091",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": "d7b5210d472e53682e0a713263ebc8f128759da9",
+      "original_references": [
+        "settings_ocr.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-settings_ocr-zh.png",
+      "sha256": "4b489b305be98bcc2a394e34b8cd70d9eafbea88077091734e3c3e9fb66c97d8",
+      "caption": "中文界面中的 OCR 设置。"
+    },
+    {
+      "id": "S092",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": "11968f849fcfd3add748999ee9c91357e5d3a33e",
+      "original_references": [
+        "troubleshooting_ocr_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-troubleshooting_ocr_1-zh.png",
+      "sha256": "3135bff6b5ed72d19cb201cbd9a215d46821154e49455f1a0402c1b92c542e36",
+      "caption": "包含电子文本选项的常规 OCR 设置。"
+    },
+    {
+      "id": "S093",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": "2a7d9474cf03d32987e69b40f7a8e9bc4a948102",
+      "original_references": [
+        "troubleshooting_ocr_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-troubleshooting_ocr_2-zh.png",
+      "sha256": "eb34611a4ee1e73fbb03b5228107cc74dad4e0931552f10051040b460fcb0840",
+      "caption": "字段验证中的更多选项菜单。"
+    },
+    {
+      "id": "S094",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": "f89cccdd444f03093ff1995d787e03878ed6ccb7",
+      "original_references": [
+        "troubleshooting_ocr_3.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-troubleshooting_ocr_3-zh.png",
+      "sha256": "eb34611a4ee1e73fbb03b5228107cc74dad4e0931552f10051040b460fcb0840",
+      "caption": "文档菜单中的电子文本选项。"
+    },
+    {
+      "id": "S095",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": "05d67bea927fa93604cfa8efd0faac3f4a127d17",
+      "original_references": [
+        "troubleshooting_ocr_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-troubleshooting_ocr_4-zh.png",
+      "sha256": "3f86f45662c713c315bf69577d0966e4b87eb369b6a73b29a63e8d14117970e1",
+      "caption": "更改电子文本使用方式前的确认窗口。"
+    },
+    {
+      "id": "S096",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": "38905b23cc965d0c464c08d32fb1178c50bdb668",
+      "original_references": [
+        "troubleshooting_ocr_5.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-troubleshooting_ocr_5-zh.png",
+      "sha256": "985fadb026cd10703b6cb1b969443cdc291c6257e6938ffbc359614a8bc55d28",
+      "caption": "检查虚构发票的字段。"
+    },
+    {
+      "id": "S097",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": "0607533fd4dbffa32484f8ecc2877c3f8eda8646",
+      "original_references": [
+        "troubleshooting_ocr_6.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-troubleshooting_ocr_6-zh.png",
+      "sha256": "c975b82bf404bca1d8f11857eecd04e44a8e6419819c35591b7ab1a3867110c5",
+      "caption": "虚构发票识别文本的 OCR 视图。 该视图展示识别文字的位置；当前界面中的部分中文会在窄框内逐字换行。原始 PDF 在验证页面中可以正常阅读。"
+    },
+    {
+      "id": "S098",
+      "doc": "readme/security/two-factor-authentication.md",
+      "action": "remove",
+      "old_blob": "dd8b851701c0d1f78d1f34822d5ece134d7fe31a",
+      "original_references": [
+        "mfa-backup-codes.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-mfa-backup-codes-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S099",
+      "doc": "readme/security/two-factor-authentication.md",
+      "action": "remove",
+      "old_blob": "bc74a9e955a382dd95b72dc7254ced621d07ea12",
+      "original_references": [
+        "mfa-email-otp.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-mfa-email-otp-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S100",
+      "doc": "readme/security/two-factor-authentication.md",
+      "action": "remove",
+      "old_blob": "3099913ebc3a73a099e667e68defdd86b31836c5",
+      "original_references": [
+        "mfa-totp-setup.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-mfa-totp-setup-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "U047",
+      "doc": "readme/security/two-factor-authentication.md",
+      "action": "replace",
+      "old_blob": "cb309224b86e2bf441e0cb5a36e65e153e953a68",
+      "original_references": [
+        "mfa-2fa-dialog.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u047-zh.png",
+      "sha256": "2c491875b1ad5b9ae5ee8a4dbbc50d0b2aa2cc2b69eade9556e38534fe56a42b",
+      "caption": "可用的双因素身份验证方式。 “添加密码”按钮实际用于添加 Passkey，并非设置新的登录密码；本例未启用或添加身份验证方式。"
+    },
+    {
+      "id": "S101",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/configuring-field-properties.md",
+      "action": "replace",
+      "old_blob": "c763134c3450a2be84e866c8df54a8aa380f3233",
+      "original_references": [
+        "Bildschirmfoto 2024-05-24 um 11.06.36.png",
+        "Bildschirmfoto 2024-05-24 um 11.06.56.png",
+        "image (247).png",
+        "image (248).png",
+        "image (249).png",
+        "image (251).png",
+        "image (252).png",
+        "image (250).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-image-146-zh.png",
+      "sha256": "2957491429f02acdccd69a06474b105a92e019f50e89f433ac5afe915d935c9f",
+      "caption": "布局构建器中的字段属性。 “Tab Index”是当前界面保留的英文控件标签。"
+    },
+    {
+      "id": "S102",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/using-the-template-preview.md",
+      "action": "replace",
+      "old_blob": "fab22ea0d2aee17b11a3e34669abf1866e8bd239",
+      "original_references": [
+        "image (253).png",
+        "image (254).png",
+        "Bildschirmfoto 2024-05-24 um 12.31.04.png",
+        "image (256).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_script_example_2-zh.png",
+      "sha256": "26604014afebccf49b7f464ba4a69e0f5591ec10b6b54dfab6f183313eafa18a",
+      "caption": "布局构建器中的模板预览。"
+    },
+    {
+      "id": "S103",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md",
+      "action": "replace",
+      "old_blob": "dc2a86d457409efc0d8cfdda26bac03c36260ce1",
+      "original_references": [
+        "validation-rules-list.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-validation-rules-list-zh.png",
+      "sha256": "a9c103ca2375160712ab6aa6cd091f93b84a5a49c01c4dec71448af04cc140d7",
+      "caption": "验证规则管理；已配置的名称已隐藏。 表格类别在界面中误译为“桌子”，部分相对时间仍为德语；实际含义是数据表格。"
+    },
+    {
+      "id": "S104",
+      "doc": "readme/administration-and-setup/settings/document-processing/list-of-values.md",
+      "action": "replace",
+      "old_blob": "41662668b7f25af5b0ca5ff01eaf02be668b6ff5",
+      "original_references": [
+        "settings_list_of_values.png",
+        "list_of_values_1.png",
+        "list_of_values_2.png",
+        "list_of_values_13.png",
+        "list_of_values_3.png",
+        "list_of_values_4.png",
+        "list_of_values_5.png",
+        "list_of_values_6.png",
+        "list_of_values_11.png",
+        "list_of_values_3.png",
+        "list_of_values_4.png",
+        "list_of_values_7.png",
+        "list_of_values_8.png",
+        "list_of_values_10.png",
+        "list_of_values_11.png",
+        "list_of_values_12.png",
+        "list_of_values_14.png",
+        "list_of_values_15.png",
+        "list_of_values_16.png",
+        "list_of_values_17.png",
+        "list_of_values_18.png",
+        "list_of_values_19.png",
+        "list_of_values_9.png",
+        "list_of_values_20.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-list_of_values_1-zh.png",
+      "sha256": "946636ba4b36cab1ab1ab79df2cb1958d80f4ab775a6b17afc80b8116f337972",
+      "caption": "值列表；已配置的名称已隐藏。"
+    },
+    {
+      "id": "S105",
+      "doc": "readme/administration-and-setup/settings/document-processing/import/README.md",
+      "action": "replace",
+      "old_blob": "54785540ec3978d183a01675c013111b1d55063b",
+      "original_references": [
+        "ftp_0.png",
+        "ftp_0.png",
+        "document_settins_1.png",
+        "ftp_7.png",
+        "email_4.png",
+        "ftp_5.png",
+        "email_1.png",
+        "email_7.png",
+        "email_1.png",
+        "email_3.png",
+        "email_4.png",
+        "email_5.png",
+        "email_6.png",
+        "email_8.png"
+      ],
+      "retired_aliases": 1,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-ftp_0-zh.png",
+      "sha256": "1a603e44f080e7980325f20a096bd4e771e0a753a0f13fa26aa9c081c5ce1efc",
+      "caption": "FTP 导入连接概览。 “Actions”列尚未翻译；连接信息保持空白。"
+    },
+    {
+      "id": "S106",
+      "doc": "readme/administration-and-setup/settings/document-processing/import/README.md",
+      "action": "replace",
+      "old_blob": "d394712d55d18c826616037d48bb3c55312fb2da",
+      "original_references": [
+        "ftp_5.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-ftp_5-zh.png",
+      "sha256": "6b0cfa93e257e1413699956df720eabb554c1aa56fd7170f9ee7f284579a9391",
+      "caption": "FTP 导入向导中的服务器配置。"
+    },
+    {
+      "id": "S107",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "c14d804853477b6c57719edac48b67dc19661fa5",
+      "original_references": [
+        "quick_search_01_entry.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_01_entry-zh.png",
+      "sha256": "d07e574e2c185a99ccf3f61d6e7373f13b9c94c3c1ed1c62d2c1c3eb76a79d00",
+      "caption": "中文仪表盘中的快速搜索。"
+    },
+    {
+      "id": "S108",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "0be7b25a53f732f49b263387ad356272ceb0cb46",
+      "original_references": [
+        "quick_search_03_filename_contains.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_03_filename_contains-zh.png",
+      "sha256": "e978d1ae26ac53cd33d58b2b2bfc52ea293921a12cb234f853620eb831b54947",
+      "caption": "按文件名片段搜索：filename:invoice。"
+    },
+    {
+      "id": "S109",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "c7467e73759b0a6514c8696eb9279e1be4e7f15d",
+      "original_references": [
+        "quick_search_05_status.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_05_status-zh.png",
+      "sha256": "fe70363e771abde6b3721a4891f03849babf50cd340932a60e88881e17b0bb86",
+      "caption": "输入技术状态 ready_for_validation 筛选条件。"
+    },
+    {
+      "id": "S110",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "bd60b6dae8164c566cfd267ecb04c0de77e77532",
+      "original_references": [
+        "quick_search_06_date.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_06_date-zh.png",
+      "sha256": "598ff850dfbe53e82dc8c25361ffb571496992a6cbd3038c4f108791a9fd33b1",
+      "caption": "查询 2026 年 5 月 25 日之后创建的文档。"
+    },
+    {
+      "id": "S111",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "8a2d09d2dd64ae7b586807a53c67da5c30e410bf",
+      "original_references": [
+        "quick_search_09_supplier.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_09_supplier-zh.png",
+      "sha256": "7956397229a2a8422e6c764d066ec9a8100af2f8a802cc8c7a35d5fb101bc59a",
+      "caption": "供应商查询示例：supplier_name=Test。"
+    },
+    {
+      "id": "S112",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "e013649a816f0ee2cc51999a1230e3cce91dcc67",
+      "original_references": [
+        "quick_search_10_purchase_order.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_10_purchase_order-zh.png",
+      "sha256": "bff06d09a2076aa454985ef8a4f4d1e0fa80818012f8c628511e3f7b00ff3255",
+      "caption": "采购订单查询示例：purchase_order=PO。"
+    },
+    {
+      "id": "S113",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "824ce23c87e98c55111d32fad62b46e974b20195",
+      "original_references": [
+        "quick_search_07_amount.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_07_amount-zh.png",
+      "sha256": "1bc487b9787be805b1f1a3f526360c9eaecb02cbee4e4a3bfc2464f4741fb179",
+      "caption": "输入总金额大于 5000 的筛选条件。"
+    },
+    {
+      "id": "S114",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "d8a6fafc4ea6dd38e33fc8e455b3b1a275df37bd",
+      "original_references": [
+        "quick_search_14_between.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_14_between-zh.png",
+      "sha256": "f9c17b255d79d17877e17724655626291478754f6ad20301ab0db5d112076d9c",
+      "caption": "输入金额在 1000 到 5000 之间的查询。"
+    },
+    {
+      "id": "S115",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "d7fed1e54177f83ab8af6383ef7d8d429c4cc77e",
+      "original_references": [
+        "quick_search_12_empty.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_12_empty-zh.png",
+      "sha256": "c765abe8b37ccec09901640a9ad8c75dc0457c65e37298766565d31ac7b3e1a8",
+      "caption": "输入供应商名称为空的筛选条件。"
+    },
+    {
+      "id": "S116",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "d29c1777d6925dfe7800138478fdf73a309cc755",
+      "original_references": [
+        "quick_search_15_ap_empty.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_15_ap_empty-zh.png",
+      "sha256": "0cbad5981448c1170db69d48299233da45dab78afcbf361bcec31b9dd9d25021",
+      "caption": "搜索没有 AP 分配的文档。"
+    },
+    {
+      "id": "S117",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "6bd87cc7ab5a3294e0f5d57821d594ef48ee6ba5",
+      "original_references": [
+        "quick_search_13_combined.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_13_combined-zh.png",
+      "sha256": "208599dbe5b076fdcfa46086011a0a260e4f28b8ee257b1f5034e9c513529b94",
+      "caption": "使用 AND 连接状态与供应商条件。"
+    },
+    {
+      "id": "S118",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "9a1941e416ec7e4199ff9da073909f550d6f275d",
+      "original_references": [
+        "quick_search_shortcut_01_operator_aliases.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_01_operator_aliases-zh.png",
+      "sha256": "e4065e365001435b7ce4b2058417153ac5c3e348ba4362d5790c186dd0c0c46f",
+      "caption": "日期查询中的 gt 比较运算符。"
+    },
+    {
+      "id": "S119",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "c84fe737db4656e07dfbd0557fc3656ba6abae77",
+      "original_references": [
+        "quick_search_shortcut_02_bare_date.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_02_bare_date-zh.png",
+      "sha256": "093fd428ec64dd59f7eae19ea1fe8a667f3e39c810fe9f8949bf5f20ddeba185",
+      "caption": "将 created_on 与 today() 比较。"
+    },
+    {
+      "id": "S120",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "ccdd9edea200748465ee5d069cf08bc03f15b703",
+      "original_references": [
+        "quick_search_shortcut_03_period.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_03_period-zh.png",
+      "sha256": "283a5b26c4bd97ae3aa8785f27a2b5719f443eb48254ca1225f70c9fb0438451",
+      "caption": "输入从 2026 年 6 月 1 日开始的创建日期条件。"
+    },
+    {
+      "id": "S121",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "a3f7c5617f012f6f03ab1bf5041fb95ac2a12884",
+      "original_references": [
+        "quick_search_shortcut_04_presence.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_04_presence-zh.png",
+      "sha256": "dcf0a16bb4188bf186c9ec8f9e6f0bb71eda72fe3d26a2548d487a3ed050f2e0",
+      "caption": "搜索尚未分配负责人的文档。"
+    },
+    {
+      "id": "S122",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "d5b841afcfc8b2221d88c71a91dec986a5b6f2c7",
+      "original_references": [
+        "quick_search_shortcut_05_status_open.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_05_status_open-zh.png",
+      "sha256": "de85ca658fb11276e2c7a682b39bdd36719f4fa0369a630604a28332e6bb939b",
+      "caption": "快速搜索中的状态筛选示例。"
+    },
+    {
+      "id": "S123",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "740c29715582094357f9157ec5dec411d136e8eb",
+      "original_references": [
+        "quick_search_shortcut_06_not_between.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_06_not_between-zh.png",
+      "sha256": "9e6de5dd56ab2691345227b6c48dc9159f3d5160e4eef62b2c8f02c9e3c7a715",
+      "caption": "输入日期范围之外的查询条件。"
+    },
+    {
+      "id": "S124",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "d725c87c3f8d9cb9ae1acd028d37cde6ae36008f",
+      "original_references": [
+        "quick_search_shortcut_07_in_list.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_07_in_list-zh.png",
+      "sha256": "84708afe351d54bebe44c5f37aa903221c435b09426ee5f597405ea8ef887b2a",
+      "caption": "使用 OR 连接两个技术状态。"
+    },
+    {
+      "id": "S125",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "6f5f2a67328712db3e382e8305c88a1a6228d15c",
+      "original_references": [
+        "quick_search_shortcut_08_negation.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_08_negation-zh.png",
+      "sha256": "902a4b87b5a11f69e3b68f0572b7b5f3a4dc17f63e481ac41396e2bae84de4e7",
+      "caption": "使用 NOT 排除供应商条件。"
+    },
+    {
+      "id": "S126",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "8f79234f3f18afe7945a0e7c2d219b206a2a060f",
+      "original_references": [
+        "quick_search_shortcut_09_contains.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_09_contains-zh.png",
+      "sha256": "9cc386e9eaddccf197f62e69aa589445c565b5601dc84e4f8b3bc8891711b24c",
+      "caption": "在文件名中搜索关键词。"
+    },
+    {
+      "id": "S127",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "f5b0ef88ffab9a96ad35208b8ad103298f487194",
+      "original_references": [
+        "quick_search_shortcut_12_invoice_prefix.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_12_invoice_prefix-zh.png",
+      "sha256": "d32cd2e10a8b77554c43bf94c18719195b9c74bf11d08828285124a081df8570",
+      "caption": "使用 invoice_number 的查询示例。"
+    },
+    {
+      "id": "S128",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "6d03e0929fef21d1575005bebbb87a6d99eb28cd",
+      "original_references": [
+        "quick_search_shortcut_13_assignee_prefix.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_13_assignee_prefix-zh.png",
+      "sha256": "7ef1cdc2c8ac4975d100f4e838d8aec3389ce8d80db5db3102112a5c3eabdf7f",
+      "caption": "输入空分配条件：assigned_to=\"\"。"
+    },
+    {
+      "id": "S129",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "9de610a7ffa28eb7ae80b92ae7018666f97361ac",
+      "original_references": [
+        "quick_search_shortcut_10_currency_suffix.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_10_currency_suffix-zh.png",
+      "sha256": "657f2c5213718ad7ebca4cfffbf4aa5d66a68a689adee8d36c68a522ffe0c9cb",
+      "caption": "输入货币筛选条件：currency=EUR。"
+    },
+    {
+      "id": "S130",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "2d7bf0cfff87a9c8c95af8cfb440be6e3c8b68e1",
+      "original_references": [
+        "quick_search_shortcut_11_overdue.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_11_overdue-zh.png",
+      "sha256": "5cab81dac757799b321d8e250e42661123baadc13db264935af02b80aa96dada",
+      "caption": "输入到期日期早于 today() 的条件。"
+    },
+    {
+      "id": "S131",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "cf69177d53170f760559c0637ef3bf1b28f34ce5",
+      "original_references": [
+        "quick_search_shortcut_14_amount_prefix.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_shortcut_14_amount_prefix-zh.png",
+      "sha256": "b155ca31251bcb5efa10732eb59f6c20cbd2627fba8b2cfe997b9c71317c90e6",
+      "caption": "输入总金额大于或等于 1000 的条件。"
+    },
+    {
+      "id": "S132",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "b770cf68b34f0c328a1d231c98f4220232438f4f",
+      "original_references": [
+        "quick_search_17_vector.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_17_vector-zh.png",
+      "sha256": "6f5eef98af86286d96aba8022661282a06917e3fde310a977881ffdc98009516",
+      "caption": "快速搜索自动包含文档内容。"
+    },
+    {
+      "id": "S133",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "25b1c2cf95957000a71091f9860ebc099e97ef08",
+      "original_references": [
+        "quick_search_18_ocr.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_18_ocr-zh.png",
+      "sha256": "b59e6875cb3c776f3e5820ac4293622d6903fb631cde02a3ba36fe5195e6d247",
+      "caption": "快速搜索始终包含文档内容。"
+    },
+    {
+      "id": "S134",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "5b8d8f12be7d662b4b73e0d88af642f39df17d6c",
+      "original_references": [
+        "quick_search_19_ai.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-quick_search_19_ai-zh.png",
+      "sha256": "e89151f336fb6ed56b3c2a7c99f90c7a7ddeb197d6997ca4edbbb94a9a0c6cd9",
+      "caption": "搜索仅限可见列。"
+    },
+    {
+      "id": "U028",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "6f880b4d7b3a8e470bf70bd0f384bc0c0687b9f0",
+      "original_references": [
+        "quick_search_02_filename_starts.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u028-zh.png",
+      "sha256": "795a11e6e32fb63a8519856a287d806c782aa67509a13d81f896cf74d3cc66a8",
+      "caption": "输入按文件名查询的条件。"
+    },
+    {
+      "id": "U029",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "afb1b8eb06122331d54044b07008da6c403ceb2e",
+      "original_references": [
+        "quick_search_16_grouping.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u029-zh.png",
+      "sha256": "01b4f294c8a12cbf38516dbd7104b512a71b6e61ccb1f6496f77eec6b4992ed4",
+      "caption": "输入按供应商分组的查询。"
+    },
+    {
+      "id": "U030",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "938e1bd855d10de8184eb50cb5cf90ea6c1f862b",
+      "original_references": [
+        "quick_search_11_smart_filters.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u030-zh.png",
+      "sha256": "e3b41be132784920551da20975c526dd1e3c413a87771f47c5afea11801fa358",
+      "caption": "快速搜索的查询与筛选帮助。"
+    },
+    {
+      "id": "S135",
+      "doc": "readme/administration-and-setup/settings/global-settings/email-notification/configuring-notifications.md",
+      "action": "replace",
+      "old_blob": "62990876d45817eb85bc7c230604b0d61859cc28",
+      "original_references": [
+        "Bildschirmfoto 2024-05-15 um 08.56.36.png",
+        "Bildschirmfoto 2024-05-08 um 10.15.45.png",
+        "Bildschirmfoto 2024-05-15 um 01.28.41.png",
+        "image (29).png",
+        "image (135).png",
+        "image (132).png",
+        "image (30).png",
+        "image (134).png",
+        "image (133).png",
+        "image (136).png",
+        "image (31).png",
+        "image (32).png",
+        "image (33).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-image-41-1-zh.png",
+      "sha256": "99a46e4703e51fd6e46479337fb96a724e36d05678c94c53849ac5077ebc1cae",
+      "caption": "电子邮件通知配置窗口。 界面中的“姓名”实际表示通知名称，“节省”表示保存；本例未保存通知。"
+    },
+    {
+      "id": "S136",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/inbound-emails.md",
+      "action": "replace",
+      "old_blob": "655f454431c6517836367f019686226425b1adc1",
+      "original_references": [
+        "inbound_emails_protocol_select.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "s150-inbound_emails_protocol_select-zh.png",
+      "sha256": "2ab1b982b103afbd694fd97837d857f89a95cac06e7fec621f722a543506bbce",
+      "caption": "入站邮件向导中的协议选择。"
+    },
+    {
+      "id": "S137",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/regex/editing-and-saving-regex-patterns.md",
+      "action": "remove",
+      "old_blob": "b6b1b6fb1d5c0f488a698e6148cfd6d4c7930329",
+      "original_references": [
+        "Bildschirmfoto 2024-05-22 um 12.46.56.png",
+        "Bildschirmfoto 2024-05-22 um 14.18.25.png",
+        "image (223).png",
+        "image (224).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_regex_edit_settings-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S138",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/document-sub-types.md",
+      "action": "replace",
+      "old_blob": "edf001aa8e61445bc75337a7f7362fd858eb5f3e",
+      "original_references": [
+        "Bildschirmfoto 2024-05-21 um 10.16.14.png",
+        "Bildschirmfoto 2024-05-08 um 08.54.08.png",
+        "image (193).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_document_sub_types_list-zh.png",
+      "sha256": "2386ad9fc5089f87973c3ac160c59c33df1bebceeeead83a6306602a6db380b4",
+      "caption": "设置中的文档子类型列表。"
+    },
+    {
+      "id": "S139",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/document-sub-types.md",
+      "action": "replace",
+      "old_blob": "ab7d1755422095e47119a390f2d5c51674c4da5e",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-docbits_document_sub_types_overview-zh.png",
+      "sha256": "634fff7658222bd5df230f4e7ff82ffdb53ca28aad86aa6f2c17e791d6817608",
+      "caption": "文档子类型概览。"
+    },
+    {
+      "id": "S140",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/regex/README.md",
+      "action": "remove",
+      "old_blob": "f3e72bf22290bff49efd720c12362b9cc20df7f8",
+      "original_references": [
+        "Bildschirmfoto 2024-05-08 um 09.38.59.png",
+        "Bildschirmfoto 2024-05-08 um 09.38.59.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_regex_management-de.png",
+      "sha256": null,
+      "caption": null
+    },
+    {
+      "id": "S141",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/model-training/import-data-model-training.md",
+      "action": "replace",
+      "old_blob": "96a827ba47b76bfc6d3ecf17e66b5b4ab45992fe",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-image-85-1-zh.png",
+      "sha256": "848971de5a1031816236814ccf781130c846207cb9ee1905f3710c0f06752f45",
+      "caption": "含金额和日期格式的训练数据导入。"
+    },
+    {
+      "id": "S142",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/script/script-activation-and-management.md",
+      "action": "replace",
+      "old_blob": "198b66f74a49a1d46b9300628b6b5afca15de9bb",
+      "original_references": [
+        "dbdc157-scripts-list-inactive-en.png",
+        "dbdc157-script-published-version-en.png",
+        "dbdc157-script-editable-draft-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_edit_script_icon-zh.png",
+      "sha256": "dadca5d3c5efd3f209d4225128ef25444b3f26f924cae7104fb623d6f51b0ec1",
+      "caption": "脚本管理及编辑操作；名称已隐藏。"
+    },
+    {
+      "id": "S143",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md",
+      "action": "replace",
+      "old_blob": "cc866f8726bd38bea8895b6f80f3b33ac6980591",
+      "original_references": [
+        "dbdc-143-fields-overview-en.png",
+        "dbdc-143-invoice-id-settings-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_choose_column_type-zh.png",
+      "sha256": "395025aaf6aa4aeab99185030af6824ee660620e5452ea67baf6e5cf930c0693",
+      "caption": "强制验证、OCR 和 Match Score 的独立列。"
+    },
+    {
+      "id": "S144",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md",
+      "action": "replace",
+      "old_blob": "cb3d91a891a5bcf7892e2b3e25b40396a4aee469",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-image-120-zh.png",
+      "sha256": "80c6c1464f7421e1861f98731b064555ca9e3253f464f7e2b7375526c6dba7ff",
+      "caption": "每个字段的验证和识别设置相互独立。"
+    },
+    {
+      "id": "S145",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md",
+      "action": "replace",
+      "old_blob": "eb6665a71ff39841238b24491f20340103ff8126",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-docbits_decide_column_necessity-zh.png",
+      "sha256": "98368c4b8c6c8af34339454e269c20367ea84bbdcc1f4a2b6a31a15055fc6592",
+      "caption": "按发票编号筛选的强制验证与 Match Score 设置。"
+    },
+    {
+      "id": "S146",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/new-fields-with-charges.md",
+      "action": "replace",
+      "old_blob": "f84738fefc288660c9d8f2f6edb49f2ac57c1688",
+      "original_references": [
+        "Bildschirmfoto 2024-06-07 um 17.00.52.png",
+        "Bildschirmfoto 2024-06-07 um 17.01.11.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_add_field_with_charges_1-zh.png",
+      "sha256": "172c980fb98aff85dcb26920d94d5088f502c711e2cb89c4391acdb5b7442dd6",
+      "caption": "新建字段前的字段信息。 界面中的“姓名”实际表示字段名称，“节省”表示保存；本例未保存。"
+    },
+    {
+      "id": "S147",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/new-fields-with-charges.md",
+      "action": "replace",
+      "old_blob": "3b0a9c5bcff08bf57891a7c14597aeabeefeff54",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "s150-docbits_add_field_with_charges_2-zh.png",
+      "sha256": "a0a7d338317b8c303179711debd22d242ce14121843c13bf49e22dd94e0e469d",
+      "caption": "已启用附加费用选项的字段草稿。 界面中的“姓名”实际表示字段名称，“节省”表示保存；本例未保存。"
+    },
+    {
+      "id": "S148",
+      "doc": "readme/administration-and-setup/settings/document-processing/classification-and-extraction/auto-extract-tax-code.md",
+      "action": "replace",
+      "old_blob": "d19f8f744b2c42973273f56183e6f3294bc73b23",
+      "original_references": [
+        "auto_extract_tax_code_1.png",
+        "auto_extract_tax_code_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-auto_extract_tax_code_1-zh.png",
+      "sha256": "289414c0e72a44b1b89ec5dcb0c26e658970e12df4c4ee9f9e67af8c3d806213",
+      "caption": "自动提取税码的设置。 “Full”和“Actions”仍是当前界面保留的英文标签；ERP 技术代码保持原样。"
+    },
+    {
+      "id": "S149",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/README.md",
+      "action": "replace",
+      "old_blob": "64e9ca7e31b27f3fecee19c9eaefe912b6352de6",
+      "original_references": [
+        "Bildschirmfoto 2024-05-08 um 09.02.31.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_fields_overview-zh.png",
+      "sha256": "97aee9ec48604ff9c82665178894b0c1c551817bbc3a6348438298e8aa1b43f8",
+      "caption": "发票文档类型的字段。"
+    },
+    {
+      "id": "S150",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/model-training/README.md",
+      "action": "replace",
+      "old_blob": "e1f480a78eaa5e1beaae1068df6d241e8f2e719f",
+      "original_references": [
+        "Bildschirmfoto 2024-05-08 um 09.07.01.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "s150-docbits_model_training_overview-zh.png",
+      "sha256": "14ddafaff1d24d24c16ce9abad27949a0437d8132dd510b237be21df4aeca446",
+      "caption": "中文模型训练概览。 “Name”和“Actions”列尚未翻译。"
+    },
+    {
+      "id": "T001",
+      "doc": "readme/administration-and-setup/settings/global-settings/company-information/two-factor-authentication.md",
+      "action": "replace",
+      "old_blob": "db5668e3345c19c2de9e500b2e76daa2355671b6",
+      "original_references": [
+        "mfa-admin-requirement.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t001-zh.png",
+      "sha256": "ce702f0237489885df5ebe144ba1e421fa748dce6f732b1a4add773987dff38c",
+      "caption": "组织的双因素身份验证要求。 “节省”按钮实际表示保存；本例未更改 MFA 要求。"
+    },
+    {
+      "id": "T002",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/adding-editing-groups.md",
+      "action": "replace",
+      "old_blob": "45603395938ceba8bdb0a9cff732bd27ea123505",
+      "original_references": [
+        "groups_settings_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t002-zh.png",
+      "sha256": "6384487ea2d5b4323c4469a31212581261177221891a749a8818ba46a3a2c7cb",
+      "caption": "打开群组和权限设置。"
+    },
+    {
+      "id": "T003",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/adding-editing-groups.md",
+      "action": "replace",
+      "old_blob": "dbdc2b35f363a3fbbaca91a62a7d1a23881bb505",
+      "original_references": [
+        "groups_list_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t003-zh.png",
+      "sha256": "88a60cb05b234de0bb8bd8dc0db0f9e0934a4c739917ac373230b748b8ad6aa4",
+      "caption": "群组列表；名称已隐藏。"
+    },
+    {
+      "id": "U005",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/adding-editing-groups.md",
+      "action": "replace",
+      "old_blob": "e385081cdbeb86035c28cf6028b40efa36ae3480",
+      "original_references": [
+        "add_new_group_button.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u005-zh.png",
+      "sha256": "cc993033a088c5a82024e9fe47fa3465a33128fced2c444d209092d4b4e036d7",
+      "caption": "未保存的新建群组窗口。 “节省”按钮实际表示保存；本例未创建组。"
+    },
+    {
+      "id": "U006",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/adding-editing-groups.md",
+      "action": "replace",
+      "old_blob": "f40847e59865482d89c87744260b72ba57f7be1a",
+      "original_references": [
+        "new_group_form_save.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u006-zh.png",
+      "sha256": "1d8abcdd4fd0dcac0904e007e63b7365fa8c8d23cef4d3484bd42249377bcd62",
+      "caption": "群组和权限管理。"
+    },
+    {
+      "id": "T008",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/README.md",
+      "action": "replace",
+      "old_blob": "b00f0eb9450c24fe4f83ed6edd26c1fec9c5c168",
+      "original_references": [
+        "dbdc232-groups-permissions-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t008-zh.png",
+      "sha256": "491adc4baae11a68c6311f5645df1e84d03e789ae4ece898c69966e90d7f5205",
+      "caption": "群组选择面板。"
+    },
+    {
+      "id": "T009",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/README.md",
+      "action": "replace",
+      "old_blob": "82a8276a37a242d1c4c6a72fc6b4038a67edaefa",
+      "original_references": [
+        "groups_and_permissions.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t009-zh.png",
+      "sha256": "9d61946f0938a142ef0331b4b36dd61e6514b85cac01a8098159f8400bd543ea",
+      "caption": "所选群组详情；个人数据已隐藏。 “Actions”列尚未翻译；成员身份已隐藏。"
+    },
+    {
+      "id": "T010",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/README.md",
+      "action": "replace",
+      "old_blob": "f1dfbbce72a065d248b72b69506dc3c2a285b69b",
+      "original_references": [
+        "integration_sso.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t010-zh.png",
+      "sha256": "94f35dfc3fa3345e0dfc305a55752ca2603b8ac2d470b14dc4e40770ebe993e7",
+      "caption": "集成和 SSO 提供商配置。"
+    },
+    {
+      "id": "T011",
+      "doc": "readme/administration-and-setup/settings/log-settings/README.md",
+      "action": "replace",
+      "old_blob": "98fb206c2f8d0c58df6db354d9f2f9ae815c9adf",
+      "original_references": [
+        "activity_logging.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t011-zh.png",
+      "sha256": "9edb085c44b5e7cff905c030756ffaa739ce956f64f9d53b2fb75beb15fee06e",
+      "caption": "活动日志筛选器；日志条目已隐藏。"
+    },
+    {
+      "id": "T012",
+      "doc": "readme/administration-and-setup/settings/supplier-setting/supplier-general-settings.md",
+      "action": "replace",
+      "old_blob": "40957d816bec6947c2664bbed8b3807a1f1abf7d",
+      "original_references": [
+        "supplier_general_settings.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t012-zh.png",
+      "sha256": "73bacfd2373e6a882b7d8290640029a138c96da4f44283364b2cf9e22b3b2392",
+      "caption": "供应商门户的常规设置。"
+    },
+    {
+      "id": "T014",
+      "doc": "readme/administration-and-setup/settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md",
+      "action": "replace",
+      "old_blob": "281f20b531de808ca7ad2b0fce4f95389481bee7",
+      "original_references": [
+        "supplier_export_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t014-zh.png",
+      "sha256": "81caca59d13f3c71425faa77ef67d8b8bcd4cce72329f843919b9be29868a04c",
+      "caption": "供应商门户的导出配置。 品牌 ION 在界面中误译为“离子”；“节省”实际表示保存。"
+    },
+    {
+      "id": "T015",
+      "doc": "readme/administration-and-setup/settings/supplier-setting/supplier-permissions.md",
+      "action": "replace",
+      "old_blob": "8ec3b3a270de246771e620514964e1d378466b6a",
+      "original_references": [
+        "supplier_group.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t015-zh.png",
+      "sha256": "55b4157a50441d32d5e94515316639c3f7c6fde69f22e64642ff3375ed7501e4",
+      "caption": "供应商群组；名称已隐藏。 “Actions”列尚未翻译。"
+    },
+    {
+      "id": "T016",
+      "doc": "readme/administration-and-setup/settings/supplier-setting/supplier-permissions.md",
+      "action": "replace",
+      "old_blob": "8062257be3429210a78a3d2f946b02c221816083",
+      "original_references": [
+        "user_supplier_group_mapping.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t016-zh.png",
+      "sha256": "cd1699303703c409cb7dcfa01145d5ef08308db19b0c8064fc62c88b79c9cefe",
+      "caption": "用户与供应商群组的关联。 此概览中的用户身份标题已隐藏；折叠条目展示用户与供应商组映射的入口。"
+    },
+    {
+      "id": "T019",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/activation.md",
+      "action": "replace",
+      "old_blob": "4261b17251bf67f7284a186141461fa0b9ffec78",
+      "original_references": [
+        "document-type-activation-en-2026.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-t019-zh.png",
+      "sha256": "1ecbad7ec71882d1643e86bbcd12da552440ba76e7144b372e17d30bccd41abe",
+      "caption": "文档类型及启用选项。 “Standard”和“Extraction”仍是当前界面保留的英文标签。"
+    },
+    {
+      "id": "U001",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/users/modifying-user-details.md",
+      "action": "replace",
+      "old_blob": "a0d93065a0019dfb027ee15a83239be840ca4bf8",
+      "original_references": [
+        "user_settings_menu_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u001-zh.png",
+      "sha256": "a145e117a703bb7da2fd57a90d00edc337ea33755315ac1ef3130a2f0df1d970",
+      "caption": "用户管理；个人数据已隐藏。 “Actions”列尚未翻译；用户身份和数据行已隐藏。"
+    },
+    {
+      "id": "U002",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/users/modifying-user-details.md",
+      "action": "replace",
+      "old_blob": "0e06df6a17da2e914339e14a6a7868d02d72f223",
+      "original_references": [
+        "user_edit_details_form.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u002-zh.png",
+      "sha256": "486c56164fa97b0d50c29abb7894bb60ebe5d1455515b5502afc4f39bafdb259",
+      "caption": "用户编辑表单；字段值已隐藏。 “行政”选项表示管理员权限，“节省”实际表示保存；本例未保存更改。"
+    },
+    {
+      "id": "U003",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/users/login-analytics.md",
+      "action": "replace",
+      "old_blob": "499e97629be9a0f061dd281a87ec06bf70b928ee",
+      "original_references": [
+        "login_analytics_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u003-zh.png",
+      "sha256": "f59d8421010296359d9325d936804e9e7df3dd7c9a82a3d8719123eebceb534e",
+      "caption": "访问权限分析概览。 日期范围按钮“风俗”实际表示自定义范围。"
+    },
+    {
+      "id": "U004",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/activating-permissions.md",
+      "action": "replace",
+      "old_blob": "282842425736f79256f14f676bde1242d621bb55",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "prior-u004-zh.png",
+      "sha256": "96031efa5756d8b22ab7f4f67e4da262f6f70d4bc381321a08584dee05259125",
+      "caption": "按文档类型和操作划分的权限矩阵。 权限值“Owner”“Everyone”“No Access”以及文档类型名称仍为英文，“节省”表示保存。"
+    },
+    {
+      "id": "U007",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/activating-permissions.md",
+      "action": "replace",
+      "old_blob": "f10da530a3876841b25eae399fe73746c8fc3f6e",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "prior-u007-zh.png",
+      "sha256": "491adc4baae11a68c6311f5645df1e84d03e789ae4ece898c69966e90d7f5205",
+      "caption": "选择群组以查看权限。"
+    },
+    {
+      "id": "U008",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/activating-permissions.md",
+      "action": "replace",
+      "old_blob": "af9947a970febd1a4474aa2abfded0c9ae41b9dc",
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "new_figure",
+      "new": "prior-u008-zh.png",
+      "sha256": "7b75e62d2057a60819298174ac6a4f53693a6a3bbe0b2679d98c2f3f1afdb943",
+      "caption": "权限矩阵中各项操作的访问级别。 权限值“Owner”“Everyone”“No Access”以及文档类型名称仍为英文，“节省”表示保存。"
+    },
+    {
+      "id": "U009",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/activating-permissions.md",
+      "action": "replace",
+      "old_blob": "6b64baf7172948a09f1da5b3338efe7e0ffb2f9e",
+      "original_references": [
+        "image (273).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u009-zh.png",
+      "sha256": "1d8abcdd4fd0dcac0904e007e63b7365fa8c8d23cef4d3484bd42249377bcd62",
+      "caption": "启用权限管理的选项。"
+    },
+    {
+      "id": "U010",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/v2.md",
+      "action": "replace",
+      "old_blob": "372b0db6b5030b8e8df3011b1b3940cab8e9594f",
+      "original_references": [
+        "dbdc-182-infor-v2-sso-settings-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u010-zh.png",
+      "sha256": "7ce73759d3188a8102991a4d90d4a79daf39d131827559c106ffcbe6db92e8f3",
+      "caption": "SSO 配置；组织数据已隐藏。"
+    },
+    {
+      "id": "U011",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md",
+      "action": "replace",
+      "old_blob": "af5549d806a46d7d3cee72d5ba99ad860ccce580",
+      "original_references": [
+        "dbdc177-document-types-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u011-zh.png",
+      "sha256": "83e42593fd48079d533a6aa213b44420707706728258da96f1363c528300848a",
+      "caption": "从设置页面打开文档类型。 “Standard”和“Extraction”仍是当前界面保留的英文标签。"
+    },
+    {
+      "id": "U012",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md",
+      "action": "replace",
+      "old_blob": "8a7883d30a3aed3573e8ce2c45c3955aec529926",
+      "original_references": [
+        "dbdc177-layout-elements-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u012-zh.png",
+      "sha256": "086bb74c7484dc312abeed34c3e2e734c3560fb66c0f13cdabc74eccf2805459",
+      "caption": "现有布局的元素和分组。"
+    },
+    {
+      "id": "U013",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md",
+      "action": "replace",
+      "old_blob": "63a236607758685a97b8d969bba1f9426992226d",
+      "original_references": [
+        "dbdc177-layout-fields-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u013-zh.png",
+      "sha256": "8372f6fe9f6e4165660a20cc8ce5cded86f37e9de2ad6610607d1cfea05f8fa6",
+      "caption": "布局构建器中可用的字段。"
+    },
+    {
+      "id": "U014",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md",
+      "action": "replace",
+      "old_blob": "b833bc2e313d5c2e6c5a10373c907c12e4eb3439",
+      "original_references": [
+        "dbdc177-layout-form-elements-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u014-zh.png",
+      "sha256": "2ff3af3694b64808a30b97d1e13983ea77a472109db89cd85b337af9b1d19acb",
+      "caption": "布局构建器中的表单元素。 表单元素类型列表仍使用英文名称。"
+    },
+    {
+      "id": "U015",
+      "doc": "readme/administration-and-setup/settings/global-settings/dashboard/customizing-filters.md",
+      "action": "replace",
+      "old_blob": "7e94529e134c589c07d8c56ba774a41b507a9668",
+      "original_references": [
+        "customizing_filters_3.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u015-zh.png",
+      "sha256": "13a287bb764d4edbbb78b95ff8593a10f7fd43dd117f544bad32b2cf0e98e8cf",
+      "caption": "仪表盘的状态筛选样式和自定义筛选器。 “Custom”尚未翻译，“申请”实际表示应用筛选。"
+    },
+    {
+      "id": "U027",
+      "doc": "readme/administration-and-setup/workflow/test-manager.md",
+      "action": "replace",
+      "old_blob": "4fa686d15533a86c2de991ed105566d6c5199e58",
+      "original_references": [
+        "workflow_test_manager_detail.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u027-zh.png",
+      "sha256": "63d73d6d4507354ef5395b80cfb09df936600ce678eb3318cc4890932b3dfb5e",
+      "caption": "测试场景详情；数据已隐藏。"
+    },
+    {
+      "id": "U031",
+      "doc": "readme/end-user-and-partner-section/end-user-section/user-configuration-options.md",
+      "action": "replace",
+      "old_blob": "83e0469136b2c09056298e383ba0d2ec6315a26d",
+      "original_references": [
+        "user_settings_menu_dropdown.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u031-zh.png",
+      "sha256": "23d531cc54617860070affba912fe43a7a8b6e360af2bf520f45d9dd56971d42",
+      "caption": "用户菜单和语言选择。"
+    },
+    {
+      "id": "U032",
+      "doc": "readme/administration-and-setup/workflow/workflow-dashboard.md",
+      "action": "replace",
+      "old_blob": "eaea7f8bcd373e3257a68bafcf776f80d26630c7",
+      "original_references": [
+        "workflow_test_manager.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u032-zh.png",
+      "sha256": "f7bbee5fae2339cbb1d3b45cc3cf9f5222142b9997e8b8319dbc7955808e9f57",
+      "caption": "工作流测试场景列表。 “姓名”实际表示测试名称，“Actions”列尚未翻译。"
+    },
+    {
+      "id": "U033",
+      "doc": "readme/administration-and-setup/workflow/standard-workflow-builder/README.md",
+      "action": "replace",
+      "old_blob": "14e68b1c06422900e386b8cbdea466a7a52f99f2",
+      "original_references": [
+        "workflow_list.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u033-zh.png",
+      "sha256": "c7e6f8a2ae4531c89d73c93ca11a484c4c9421d64862c61265a1e2a066ef2437",
+      "caption": "工作流列表及导入操作。 “姓名”实际表示工作流名称，“Actions”列尚未翻译。"
+    },
+    {
+      "id": "U034",
+      "doc": "readme/administration-and-setup/workflow/advanced-workflow-builder/README.md",
+      "action": "replace",
+      "old_blob": "def1766fe506cd28e275fefb9e97accfaa554b27",
+      "original_references": [
+        "workflow_advanced_add_menu.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u034-zh.png",
+      "sha256": "50ad2e1e4df7b3f1de33da9c2f439f1d8f637d5a3e38ad26a325c96df0100c95",
+      "caption": "高级工作流构建器的节点菜单。"
+    },
+    {
+      "id": "U035",
+      "doc": "readme/administration-and-setup/workflow/cards-overview/and/README.md",
+      "action": "replace",
+      "old_blob": "5674879ca781360e2f3ae5c17dd6b26808f0c027",
+      "original_references": [
+        "workflow-card-qa-20261021-category-72e8f3204ac8-zh.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-u035-zh.png",
+      "sha256": "be5961bdef9f2ecde80dd0533e2675d4bcff7d998beebb19cf332983a844911c",
+      "caption": "采购订单比较条件。 类别“桌子”指数据表格，“受让人”指负责人；卡片中的“操作员”和“价值”分别指运算符和值。"
+    },
+    {
+      "id": "U036",
+      "doc": "readme/administration-and-setup/workflow/cards-overview/and/README.md",
+      "action": "replace",
+      "old_blob": "2c4de967e24975ce63c579a45aa1a39c265358db",
+      "original_references": [
+        "workflow-card-qa-20261021-category-833c7249ffc8-zh.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-u036-zh.png",
+      "sha256": "133c86c26e0922151f69cd928a4e00526098ee1a8e6946a3bad1b328bf9fae4b",
+      "caption": "文档字段条件。 类别“桌子”指数据表格，“受让人”指负责人；卡片中的“操作员”和“价值”分别指运算符和值。"
+    },
+    {
+      "id": "U037",
+      "doc": "readme/administration-and-setup/workflow/cards-overview/and/README.md",
+      "action": "replace",
+      "old_blob": "29d42329ba34ce316ec990d9d8a1e895f3d86b2e",
+      "original_references": [
+        "workflow-card-qa-20261021-category-1ee68574d713-zh.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-u037-zh.png",
+      "sha256": "a7446811eb00116d167559ebd3d9390818e04b4d63bc25188b9e53b4c9e41e04",
+      "caption": "日期和时间条件。 类别“桌子”指数据表格，“受让人”指负责人；卡片中的“操作员”和“价值”分别指运算符和值。"
+    },
+    {
+      "id": "U038",
+      "doc": "readme/administration-and-setup/workflow/cards-overview/and/README.md",
+      "action": "replace",
+      "old_blob": "8a00856629a2950551c057566c67f5c3df60bb08",
+      "original_references": [
+        "workflow-card-qa-20261021-category-3c1a15fa2e11-zh.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-u038-zh.png",
+      "sha256": "2945aacd22cc1bca5f9b17ec018ba0db047646e44bd396bb4bbc07a40c45d4cc",
+      "caption": "文档条件。 类别“桌子”指数据表格，“受让人”指负责人；卡片中的“操作员”和“价值”分别指运算符和值。"
+    },
+    {
+      "id": "U039",
+      "doc": "readme/administration-and-setup/workflow/cards-overview/and/README.md",
+      "action": "replace",
+      "old_blob": "be91b58b75afb6dccbe385817ab07ca9eb62fa29",
+      "original_references": [
+        "workflow-card-qa-20261021-category-6b17199fc268-zh.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-u039-zh.png",
+      "sha256": "47742073378d6094f927abe56d37f2baeba6e3eb97509972992657b9336d9ee7",
+      "caption": "逻辑条件。 类别“桌子”指数据表格，“受让人”指负责人；卡片中的“操作员”和“价值”分别指运算符和值。 “店铺”实际表示存储返回数据；当前版本已使用正确的“返回值”措辞。"
+    },
+    {
+      "id": "U040",
+      "doc": "readme/administration-and-setup/workflow/cards-overview/and/README.md",
+      "action": "replace",
+      "old_blob": "40b7c30e451752ad64b564629211f2ce7b0a4e9c",
+      "original_references": [
+        "workflow-card-qa-20261021-category-ff11a606e5a1-zh.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-u040-zh.png",
+      "sha256": "bc22bd183c88abe03d21917282ae792271b8c3afa88865579a2e13425f299075",
+      "caption": "状态条件。 类别“桌子”指数据表格，“受让人”指负责人；卡片中的“操作员”和“价值”分别指运算符和值。"
+    },
+    {
+      "id": "U041",
+      "doc": "readme/administration-and-setup/workflow/cards-overview/and/README.md",
+      "action": "replace",
+      "old_blob": "95de9cc2dc1b7ec761c97125ce7579bc335fe57b",
+      "original_references": [
+        "workflow-card-qa-20261021-category-526dc164847b-zh.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-u041-zh.png",
+      "sha256": "fded715828333a26ba345e8a1f2ae0572edbd2ccb0071822c09db09e968294ed",
+      "caption": "数据表格条件。 类别“桌子”指数据表格，“受让人”指负责人；卡片中的“操作员”和“价值”分别指运算符和值。"
+    },
+    {
+      "id": "U042",
+      "doc": "readme/administration-and-setup/workflow/cards-overview/and/README.md",
+      "action": "replace",
+      "old_blob": "5372750e89e6a8b012ed7f64643dadf42e849815",
+      "original_references": [
+        "workflow-card-qa-20261021-category-4a7af1d99c73-zh.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-u042-zh.png",
+      "sha256": "b6980ebe31fcf2e45cd83f16785dca90599f48690e94aefec78c60024d57eedc",
+      "caption": "报价价格条件。 类别“桌子”指数据表格，“受让人”指负责人；卡片中的“操作员”和“价值”分别指运算符和值。 该类别的部分卡片说明仍混用英文；技术字段标识符保持原样。"
+    },
+    {
+      "id": "U043",
+      "doc": "readme/administration-and-setup/workflow/cards-overview/and/README.md",
+      "action": "replace",
+      "old_blob": "8fb39d3833dfdf3d49ddd7096962d6a847029941",
+      "original_references": [
+        "workflow-card-qa-20261021-category-08cbb6fd429c-zh.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-u043-zh.png",
+      "sha256": "0e9497250c2fe649d5842f7be9621980fccf7f8b04e297c627ea2ef47702bc00",
+      "caption": "分配条件。 类别“桌子”指数据表格，“受让人”指负责人；卡片中的“操作员”和“价值”分别指运算符和值。"
+    },
+    {
+      "id": "U046",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md",
+      "action": "replace",
+      "old_blob": "29cf52d9dd38c6e8d9cdc930c2f7f7be1701ce4c",
+      "original_references": [
+        "users_settings.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-u046-zh.png",
+      "sha256": "0ba755d8416c85396b7fc82a1786de5ac00e19e20dc6c48b92ec6dd68a20c978",
+      "caption": "用户视图；姓名和账户已隐藏。 “Actions”列尚未翻译；用户身份和数据行已隐藏。"
+    },
+    {
+      "id": "I001",
+      "doc": "readme/administration-and-setup/settings/global-settings/company-information/README.md",
+      "action": "replace",
+      "old_blob": "dc0797b3236d11fca0a0e9275be51511c5074d01",
+      "original_references": [
+        "company_information.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "blob_match",
+      "new": "prior-i001-zh.png",
+      "sha256": "79a3b853a0a6b567d397d4405925a2f3fbe5101660233627ba8c4703545c51fb",
+      "caption": "公司信息；组织字段值已隐藏。 “姓名”在此表示公司名称，“节省”表示保存；公司资料已隐藏，本例未保存。"
+    },
+    {
+      "id": "I002",
+      "doc": "readme/administration-and-setup/settings/global-settings/company-information/README.md",
+      "action": "replace",
+      "old_blob": "712c713dd6aee73ffa53eb1def9bd4f7a9ce80ac",
+      "original_references": [
+        "company_email_domains_en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "equivalent_existing_asset",
+      "new": "prior-i002-zh.png",
+      "sha256": "0d0d54f15ce23a1298a60499ba3f430747abcea5000244967dd5e4d8eeb3504b",
+      "caption": "公司邮件域名配置。"
+    },
+    {
+      "id": "I003",
+      "doc": "readme/administration-and-setup/settings/global-settings/company-information/company-preferences.md",
+      "action": "replace",
+      "old_blob": "7a6232cb7544cddc62822837a38ed6ec33651b23",
+      "original_references": [
+        "settings_company_information.png",
+        "company_preferences_1.png",
+        "company_preferences_2.png",
+        "company_preferences_5.png",
+        "company_preferences_3.png",
+        "company_preferences_5.png",
+        "company_preferences_4.png",
+        "company_preferences_5.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "prior-i003-zh.png",
+      "sha256": "33698aa164f856666386b0c492574a254ad8d39ff7f8aff29662b6bb54f1d353",
+      "caption": "公司偏好及金额、日期格式。 金额格式的已配置语言名称保持原样；“节省”表示保存，本例未修改配置。"
+    },
+    {
+      "id": "I004",
+      "doc": "readme/administration-and-setup/settings/global-settings/company-information/company-preferences.md",
+      "action": "replace",
+      "old_blob": "8b6bd740a9e6cb67ea85ebaf2de267adfcfb1d32",
+      "original_references": [
+        "settings_company_information.png",
+        "company_preferences_1.png",
+        "company_preferences_2.png",
+        "company_preferences_5.png",
+        "company_preferences_3.png",
+        "company_preferences_5.png",
+        "company_preferences_4.png",
+        "company_preferences_5.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "prior-i004-zh.png",
+      "sha256": "fa5a3a85f4dc51689c3da4704950b9e623dce2f8bf2f4a8f154e84af10e8052a",
+      "caption": "在公司偏好中选择日期格式。 日期格式占位符及金额格式的已配置语言名称保持原样；本例未修改配置。"
+    },
+    {
+      "id": "I005",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/filtering-documents.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [
+        "dbdc167_search_result_en.png",
+        "dbdc167_filter_panel_en.png",
+        "dbdc167_status_options_en.png",
+        "dbdc167_assignee_options_en.png",
+        "dbdc167_custom_dates_en.png",
+        "dbdc167_document_type_menu_en.png",
+        "dbdc167_invoice_tab_en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "current_interface_article_refresh",
+      "new": "prior-i005-zh.png",
+      "sha256": "94ecd077306f54b1b6c9d2ba3d9283578c3bda6bf00b82d2d28eb1e6dc2cc109",
+      "caption": "仪表盘中按分配和所需重新处理状态进行筛选。 “申请”按钮实际表示应用筛选。"
+    }
+  ],
+  "additional_native_image_reuses": 2
+}

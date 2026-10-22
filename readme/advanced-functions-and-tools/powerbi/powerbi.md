@@ -62,7 +62,7 @@ Ce guide vous explique comment connecter **ClickHouse** à **Power BI Desktop** 
 
 ### 6. Activer l'actualisation planifiée (Optionnel)
 
-**Remarque :** **Nécessite Power BI Pro ou Premium + Gateway**
+L’actualisation planifiée dépend de la licence ou de la capacité de l’espace de travail, du connecteur et du mode de connexion. Pour cette connexion ODBC, configurez une passerelle accessible avec le pilote, le DSN et les identifiants appropriés. Vérifiez les conditions actuelles dans la documentation officielle.
 
 * Pour maintenir vos rapports synchronisés avec ClickHouse :
 * Publiez votre fichier `.pbix` sur **Power BI Service**.
@@ -75,3 +75,9 @@ Ce guide vous explique comment connecter **ClickHouse** à **Power BI Desktop** 
 ### 7. Exemples de tableaux de bord et de vues de données
 
 ![](../../.gitbook/assets/example_4.avif)![](../../.gitbook/assets/example_3.avif)![](../../.gitbook/assets/example_2.avif)![](../../.gitbook/assets/example_1.avif)
+
+[Documentation officielle — ODBC](https://learn.microsoft.com/en-us/power-query/connectors/odbc)
+
+[Documentation officielle — psqlODBC](https://odbc.postgresql.org/docs/config-opt.html)
+
+[Documentation officielle — Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)

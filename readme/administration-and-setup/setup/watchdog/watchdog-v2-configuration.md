@@ -2,7 +2,7 @@
 
 Ce guide explique comment configurer le service WatchDog dans l'application DocBits. Toutes les configurations sont gérées directement dans **Settings → Document Processing → WatchDog**.
 
-<figure><img src="../../../.gitbook/assets/watchdog-v2-config-infographic.svg" alt="Aperçu de la configuration de WatchDog"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-configuration-fr.svg" alt="Configuration de WatchDog : fonctions des quatre onglets."><figcaption><p>Configuration de WatchDog : fonctions des quatre onglets.</p></figcaption></figure>
 
 ---
 

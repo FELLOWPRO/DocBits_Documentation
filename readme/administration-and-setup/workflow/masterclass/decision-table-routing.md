@@ -70,7 +70,11 @@ Die folgenden vier Zuweisungsläufe wurden tatsächlich ausgeführt. Die Regeln 
 
 Der Rückfalllauf ist insgesamt grün, obwohl die Entscheidungskarte keinen Treffer lieferte: Der ausdrücklich verbundene Rückfallzweig wurde erfolgreich ausgeführt. Prüfen Sie deshalb sowohl den genommenen Pfad als auch die gespeicherte Zuständigkeit.
 
-Für diese Routingproben wurde ausschließlich der eigene synthetische Beleg verwendet. Seine temporären Beträge passten zwischenzeitlich nicht zu den Summen der PDF; es gab keine Freigabe und keinen Export. Nach der Aufnahme wurde der Betrag auf 1785 zurückgestellt. Während der vier eigentlichen Zuweisungsläufe blieben sämtliche Dokumentfelder, Tabellen und der Status unverändert. [Tatsächliche Fallübersicht und Tabellen-Aufbauvorlage herunterladen](../../../.gitbook/assets/wf-practice-20261022-decision-evidence-de.zip).
+Für diese Routingproben wurde ausschließlich der eigene synthetische Beleg verwendet. Seine temporären Beträge passten zwischenzeitlich nicht zu den Summen der PDF; es gab keine Freigabe und keinen Export. Nach der Aufnahme wurde der Betrag auf 1785 zurückgestellt. Während der vier eigentlichen Zuweisungsläufe blieben sämtliche Dokumentfelder, Tabellen und der Status unverändert. Tatsächliche Fallübersicht und Tabellen-Aufbauvorlage herunterladen.
+
+{% file src="../../../.gitbook/assets/wf-practice-20261022-decision-evidence-de.zip" %}
+Tatsächliche Fallübersicht und Tabellen-Aufbauvorlage
+{% endfile %}
 
 ## Karten und Beispielparameter
 

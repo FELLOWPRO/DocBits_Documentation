@@ -63,7 +63,11 @@ Danach wurden vollständige Belegdaten mit Layout und vorhandenen Zeilenverbindu
 
 <figure><img src="../../../.gitbook/assets/wf-practice-20261022-po-stale-row-de.png" alt="Nativer Advanced Test mit rotem Kartenfehler, weil alte Verbindungen keine der neuen Zeilen-IDs abdecken"><figcaption><p>Vorhandene Verbindungsdatensätze allein reichen nicht: Ohne passende aktuelle Zeilen-IDs kann v5 keinen Wert vergleichen. Der allgemeine Hinweis auf gefundene Bestellzeilen steht hier vor dem eigentlichen Vergleichsfehler.</p></figcaption></figure>
 
-Die [sechs Testergebnisse und drei inaktiven Trainingsvorlagen](../../../.gitbook/assets/wf-practice-20261022-po-evidence-de.zip) enthalten die beobachteten Kartenpfade und Vergleichsmeldungen. Ein Any-Erfolg beweist nur einen passenden Vergleich; die Abdeckung aller Rechnungszeilen bleibt eine eigene Prüfung.
+Die sechs Testergebnisse und drei inaktiven Trainingsvorlagen enthalten die beobachteten Kartenpfade und Vergleichsmeldungen. Ein Any-Erfolg beweist nur einen passenden Vergleich; die Abdeckung aller Rechnungszeilen bleibt eine eigene Prüfung.
+
+{% file src="../../../.gitbook/assets/wf-practice-20261022-po-evidence-de.zip" %}
+sechs Testergebnisse und drei inaktiven Trainingsvorlagen
+{% endfile %}
 
 ## Karten und Beispielparameter
 

@@ -58,7 +58,11 @@ Für jeden tatsächlichen Aufruf wurde die `wf_run_id` aus seinem Kartenlog mit 
 
 <figure><img src="../../../.gitbook/assets/wf-practice-20261022-child-target-error-de.png" alt="Im zugehörigen Ziel liegt der Fehler am Vergleichsparameter abc; die native Meldung nennt den fehlenden Wert für die Kartenvariablen."><figcaption>Im zugehörigen Ziel liegt der Fehler am Vergleichsparameter abc; die native Meldung nennt den fehlenden Wert für die Kartenvariablen.</figcaption></figure>
 
-Nach den Proben wurde die reguläre Zielgrenze wieder auf 1000 gestellt. Beide Workflows blieben inaktiv, die eigene Trainingsnummer und der Betrag 1785 waren wiederhergestellt. [Tatsächliche Fallresultate und Zuordnungsmethode herunterladen](../../../.gitbook/assets/wf-practice-20261022-child-call-evidence-de.zip).
+Nach den Proben wurde die reguläre Zielgrenze wieder auf 1000 gestellt. Beide Workflows blieben inaktiv, die eigene Trainingsnummer und der Betrag 1785 waren wiederhergestellt. Tatsächliche Fallresultate und Zuordnungsmethode herunterladen.
+
+{% file src="../../../.gitbook/assets/wf-practice-20261022-child-call-evidence-de.zip" %}
+Tatsächliche Fallresultate und Zuordnungsmethode
+{% endfile %}
 
 ## Karten und Beispielparameter
 

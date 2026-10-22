@@ -65,7 +65,9 @@ Die Zeiten stammen aus der deutschen Oberfläche vom 22. Oktober 2026. Vor dem z
 
 Nach jedem Anlass wurde die eigene Regel wieder ausgeschaltet. Bereits angenommene Aufträge wurden bis zum gespeicherten Ergebnis geprüft. Anschließend wurden die ursprünglich leeren Zahlungsbedingungen wiederhergestellt und die übrigen Geschäftsdaten erneut verglichen. Der Beleg blieb Bereit zur Validierung. Dieser Nachweis bestätigt zwei nacheinander ausgelöste Dokumentereignisse und den Marker-Schutz. Er bestätigt weder eine atomare Sperre bei Gleichzeitigkeit noch eine zweite Ausführung derselben Regel durch den automatisch angeforderten Fehler-Folgelauf: Zu diesem Zeitpunkt war die Trainingsregel bereits inaktiv.
 
-[Ergebnistabelle und Abnahmehinweise herunterladen](../../../.gitbook/assets/wf-practice-20261022-status-evidence-de.zip).
+{% file src="../../../.gitbook/assets/wf-practice-20261022-status-evidence-de.zip" %}
+Ergebnistabelle und Abnahmehinweise
+{% endfile %}
 
 ## Karten und Beispielparameter
 

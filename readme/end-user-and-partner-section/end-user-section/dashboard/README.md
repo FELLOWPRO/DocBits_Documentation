@@ -42,7 +42,7 @@ Geben Sie einen Dokumentnamen, eine Rechnungsnummer oder einen anderen Geschäft
 
 Im Suchbeispiel wird `350495` als Teil eines Dateinamens eingegeben und mit **Enter** bestätigt. Die Trefferliste zeigt den passenden Demobeleg.
 
-Das Symbol **Blitz** am Anfang des Suchfelds öffnet die Feldauswahl. Sie zeigt zuerst die **Smart Filter** – fertige Suchen wie **Überfällig**, **Bald fällig**, **Mir zugewiesen**, **Heute eingegangen**, **Wartet auf Validierung** oder **Elektronische Dokumente** – und danach alle durchsuchbaren Felder. Mit der Auswahl wird die passende Bedingung in das Suchfeld übernommen.
+Das Symbol **Blitz** am Anfang des Suchfelds öffnet die Feldauswahl. Sie zeigt zuerst die **Schnellfilter** – fertige Suchen wie **Überfällig**, **Bald fällig**, **Mir zugewiesen**, **Heute eingegangen**, **Wartet auf Validierung** oder **Elektronische Dokumente** – und danach alle durchsuchbaren Felder. Mit der Auswahl wird die passende Bedingung in das Suchfeld übernommen.
 
 Die Suchleiste bietet außerdem strukturierte Suchchips, eine Ansicht für die direkte Suchabfrage und eine Hilfe zu Feldern und Syntax. Übernehmen Sie Feldnamen und Beispiele aus dieser Hilfe. Technische Feldnamen bleiben beim Sprachwechsel unverändert. Erweiterte Suchfunktionen setzen die entsprechenden Suchmodule Ihrer Organisation voraus.
 

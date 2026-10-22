@@ -4,7 +4,7 @@ Ein gespeichertes Dashboard ist eine benannte Ansicht Ihrer Arbeitsliste: Suche,
 
 ## Ein Dashboard erstellen
 
-1. Stellen Sie die Ansicht zusammen, die Sie behalten möchten. Geben Sie die Suche in die Suchleiste ein, verwenden Sie die **Smart Filter** aus der Feldauswahl, die **Filter**, einen Dokumenttyp-Reiter, die Sortierung der Tabelle und die Spalten.
+1. Stellen Sie die Ansicht zusammen, die Sie behalten möchten. Geben Sie die Suche in die Suchleiste ein, verwenden Sie die **Schnellfilter** aus der Feldauswahl, die **Filter**, einen Dokumenttyp-Reiter, die Sortierung der Tabelle und die Spalten.
 
 2. Öffnen Sie die Ansichts-Schaltfläche unter dem Suchfeld. Sie zeigt die aktive Ansicht und wie viele Dokumente gerade dazu passen, zum Beispiel **Alle Dokumente (5986)**.
 

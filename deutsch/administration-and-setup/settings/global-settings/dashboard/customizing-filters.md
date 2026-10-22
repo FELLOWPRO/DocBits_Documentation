@@ -30,7 +30,7 @@ Die Verwendung von Filtern ermöglicht es den Benutzern, schnell relevante Infor
 
 * Öffnen Sie **Einstellungen → Dashboard** und dort den Abschnitt **Filter**. Hier finden Sie **Statusfilter-Stil** und **Benutzerdefinierter Statusfilter**.
 
-![Deutscher Abschnitt Filter mit Statusfilter-Stil, benutzerdefiniertem Statusfilter und Anwenden.](../../../../.gitbook/assets/s50-customizing_filters_3-de.png)
+<figure><img src="../../../../.gitbook/assets/s50-customizing_filters_3-de.png" alt="Deutscher Abschnitt Filter mit Statusfilter-Stil, benutzerdefiniertem Statusfilter und Anwenden."><figcaption><p>Deutscher Abschnitt Filter mit Statusfilter-Stil, benutzerdefiniertem Statusfilter und Anwenden.</p></figcaption></figure>
 
 * Wählen Sie das Feld aus, das gefiltert werden soll (z.B. Status).
 

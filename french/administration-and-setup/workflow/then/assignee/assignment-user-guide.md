@@ -345,58 +345,29 @@ Document passes through all three
 
 ### Carte : ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP
 
-#### Objectif
+<!-- workflow-facility-example-direct-20261022 -->
 
-Attribue le document à un groupe d'installations spécifique
+Cette action de workflow affecte un document à un groupe selon les sites de ses commandes d’achat rapprochées. Dans la version 2, `group_name` est un fragment de texte recherché dans les noms des groupes.
 
-#### Quand utiliser
+Exemple : un document synthétique est rapproché de la commande `DEMO-PO-100`, avec `location_id=BERLIN`. Les groupes configurés sont `Receiving BERLIN` et `Receiving MUNICH`. Saisissez `Receiving` dans `group_name`. Le nom du groupe doit contenir à la fois ce fragment et le site de la commande ; la recherche ne distingue pas les majuscules des minuscules.
 
-* Document pour un entrepôt/installation spécifique
-* Opérations basées sur les installations
-* Traitement spécifique à l'emplacement
+Résultat attendu : le document est directement affecté à `Receiving BERLIN`, si son statut autorise cette affectation. Sans commande rapprochée ou groupe correspondant, l’affectation n’est pas réussie ; consultez les journaux du workflow. Évitez les noms ambigus : si plusieurs groupes correspondent, cette carte ne garantit pas un ordre de sélection fixe.
 
-#### Exemple
-
-```
-Shipment notification
-
-Assign to: Berlin Warehouse Team
-    ↓
-Berlin warehouse processes shipment
-    ↓
-Or
-
-Assign to: Munich Warehouse Team
-    ↓
-Munich warehouse processes shipment
-```
+Il s’agit d’une configuration illustrative ; aucun workflow n’a été exécuté.
 
 ***
 
 ### Carte : ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP\_SEQUENTIAL
 
-#### Objectif
+<!-- workflow-facility-example-sequential-20261022 -->
 
-Attribué de manière séquentielle dans les installations
+Cette action de workflow ajoute les groupes de site correspondants à la file d’affectation séquentielle avec une priorité configurée. Elle ne représente pas le déplacement de marchandises entre usines ou entrepôts.
 
-#### Quand utiliser
+Exemple : utilisez la même commande synthétique, le même site et les mêmes groupes que ci-dessus. Définissez `group_name=Receiving` et la priorité `value=10`. La version 2 lit le site dans la commande rapprochée et trouve `Receiving BERLIN`.
 
-* Traitement multi-sites
-* L'expédition passe par des installations
-* Flux de travail basé sur la localisation
+Résultat attendu : une demande d’affectation à ce groupe est ajoutée à la file avec la priorité `10`. Si plusieurs groupes correspondent, ils reçoivent tous la même priorité ; leurs noms ne définissent pas un ordre de traitement. Vérifiez séparément la file et l’approbation ultérieure. Sans correspondance, aucune affectation réussie n’est créée.
 
-#### Exemple
-
-```
-Manufacturing Order:
-
-Step 1: Factory A (Manufacturing) - Build product
-Step 2: Quality Center (Testing) - Test product
-Step 3: Distribution Center (Packing) - Package
-Step 4: Warehouse (Storage) - Store
-
-Document/shipment passes through each
-```
+Il s’agit d’une configuration illustrative ; aucun workflow n’a été exécuté.
 
 ***
 

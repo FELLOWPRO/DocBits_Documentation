@@ -44,10 +44,16 @@ The **"Change Status"** workflow card offers a streamlined approach to managing 
 
 ## Practical example
 
-**When to use:** Move a reviewed document to a defined processing state.
+**When to use:** Move a checked document to the approval step.
 
-**Configuration:** Select your configured `Demo Review` status and disable triggering additional workflows for this example.
+**Where:** Standard workflow designer → Then → Status → Change Status to.
 
-**Expected result and counterexample:** The document receives the selected status. This action alone does not execute the separately configured export.
+**Configuration:** Select version 3 of `staus_change`, choose Pending Approval (`validated_pending_approval`) and set workflow triggering to `false` (`trigger_docflow=false`). Use an isolated synthetic invoice whose preceding checks are satisfied.
 
-This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.
+**Expected result and counterexample:** An allowed, successful update places the document in the selected status. If a preceding condition is false, this action is not reached and makes no status change. A refused or failed API update is not success: inspect the actual status and logs. This card does not itself perform an export.
+
+### Card versions
+
+The explicit workflow-triggering switch is available in v3. Versions 1 and 2 do not expose it; their legacy update call uses the default workflow-triggering behavior. Do not assume a v3 `false` setting applies after switching to an older card version.
+
+This is a source-reviewed configuration and expected result. No workflow or status update was executed.

@@ -37,7 +37,7 @@ Na extremidade direita da barra:
 
 - **ⓘ Help** — abre a referência **Pesquisa no painel — Campos e sintaxe** do aplicativo, com todos os campos, operadores e atalhos disponíveis no seu workspace.
 - **Filters (tune)** — um painel rápido para os filtros comuns de Status / User / Restart, com **Limpar filtros** e **Aplicar**.
-- **Index ring** — um pequeno anel de progresso que mostra quanto do seu índice fulltext já foi construído (exibido apenas quando a pesquisa fulltext está ativada).
+- **Resumo do índice** — um pequeno anel de progresso que mostra quanto do seu índice fulltext já foi construído (exibido apenas quando a pesquisa fulltext está ativada).
 
 ### Visualização padrão vs. bruta
 
@@ -186,7 +186,7 @@ ap_assignment_code=""
 
 ## Smart Filters — com um clique
 
-No topo da lista suspensa da Quick Search (clique na barra de pesquisa) você encontra os **Smart Filters**: pesquisas prontas que você aplica com um único clique. Cada uma é apenas um atalho para uma consulta que você também poderia digitar:
+No topo da lista suspensa da Quick Search (clique na barra de pesquisa) você encontra os **Filtros inteligentes**: pesquisas prontas que você aplica com um único clique. Cada uma é apenas um atalho para uma consulta que você também poderia digitar:
 
 | Smart Filter | Encontra | Equivale a digitar |
 |--------------|----------|--------------------|

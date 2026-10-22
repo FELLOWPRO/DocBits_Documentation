@@ -2,7 +2,7 @@
 
 Os administradores podem escolher quais tipos de documento ficam disponíveis para a organização. Você pode alterar isso na página **Tipos de documentos** sem excluir o tipo nem a configuração dele.
 
-1. Abra **Settings → Document Types**.
+1. Abra **Definições → Tipos de documento**.
 2. Encontre o tipo de documento, por exemplo **Fatura**, em **Tipos de documento padrão** ou **Tipos de documentos personalizados**.
 3. Use a chave chamada **Ativar** no card desse tipo. Uma chave colorida significa que o tipo está ativo; uma chave cinza significa que ele está inativo. Aguarde a mensagem de confirmação antes de sair da página. Não há um botão Save separado para essa chave.
 

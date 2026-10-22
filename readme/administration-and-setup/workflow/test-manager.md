@@ -1,8 +1,8 @@
 # Gestão de testes
 
-O **Test Manager** permite-lhe guardar **cenários de teste** reutilizáveis para os seus fluxos de trabalho e executá-los em conjunto — para que possa confirmar que um fluxo de trabalho continua a funcionar corretamente depois de o alterar. Funciona tanto para fluxos de trabalho Standard como Advanced.
+O **Gestão de testes** permite-lhe guardar **cenários de teste** reutilizáveis para os seus fluxos de trabalho e executá-los em conjunto — para que possa confirmar que um fluxo de trabalho continua a funcionar corretamente depois de o alterar. Funciona tanto para fluxos de trabalho Standard como Advanced.
 
-Abra-o a partir de **Workflow Dashboard → Test Manager List**.
+Abra-o a partir de **Painel de fluxos → Lista de testes**.
 
 <figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Test Manager List com cenários de teste, estado e Run All Tests"><figcaption><p>A Test Manager List — cada cenário guardado mostra um resultado de aprovação/reprovação.</p></figcaption></figure>
 
@@ -24,5 +24,5 @@ A vista de detalhes mostra o nome do cenário e o **estado**, o **nome do fluxo 
 
 São duas coisas diferentes:
 
-- **Test Manager** (esta página) — cenários *guardados e repetíveis* com resultados esperados, executados em conjunto com **Executar todos os testes**. Use-o para testes de regressão após alterações.
+- **Gestão de testes** (esta página) — cenários *guardados e repetíveis* com resultados esperados, executados em conjunto com **Executar todos os testes**. Use-o para testes de regressão após alterações.
 - **Testar no construtor** — os controlos inline **Validar** e **Teste** dentro do construtor de Advanced Workflow, para verificações rápidas enquanto está a construir. Consulte [Validação e Testes](advanced-workflow/validation-and-testing.md).

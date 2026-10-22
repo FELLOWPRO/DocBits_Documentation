@@ -48,8 +48,9 @@ At the right-hand end of the bar:
 
 - **ⓘ Help** — opens the in-app **Dashboard Search — Fields & Syntax** reference
   listing every field, operator and shortcut available in your workspace.
-- **Filters (tune)** — a quick panel for the common Status / User / Restart
-  filters, with **Clear filters** and **Apply**.
+- **Filters** (three slider bars) — a quick panel for the common **Status**,
+  **Assigned To** and **Restart Required** filters, with **Clear filters** and
+  **Apply**.
 - **Index ring** — a small progress ring showing how much of your fulltext index
   is built (only shown when fulltext search is enabled).
 
@@ -222,13 +223,14 @@ ap_assignment_code=""
 
 ---
 
-## Smart Filters — one click
+## Smart filters — one click
 
-At the top of the Quick Search dropdown (click into the search bar) you'll find
-**Smart Filters**: ready-made searches you apply with a single click. Each one
-is just a shortcut for a query you could also type yourself:
+The **bolt** icon at the start of the search field opens the field picker. At the
+top of that picker are the **Smart filters**: ready-made searches you apply with a
+single click. Each one is just a shortcut for a query you could also type
+yourself:
 
-| Smart Filter | Finds | Same as typing |
+| Smart filter | Finds | Same as typing |
 |--------------|-------|----------------|
 | ⚠️ **Overdue** | Past their due date | `invoice_due_date<today()` |
 | 🕐 **Due soon** | Within the next 7 days | `invoice_due_date<=today()+7` |

@@ -2,56 +2,36 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-70b0b5860da5-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
-## **Scopo:**
+Utilizzare questa condizione quando un passaggio di elaborazione aggiuntivo deve dipendere da un gruppo di paesi. L’esempio verifica se il paese letto da un campo del documento appartiene all’Unione europea.
 
-Questa scheda di workflow è progettata per valutare se un paese specificato, situato in un campo designato, fa parte di una particolare area commerciale o politica (Unione Europea, Area Schengen o NAFTA). In base a questa valutazione, il workflow può proseguire con una condizione vera o falsa, abilitando ulteriori azioni all'interno del sistema. È particolarmente utile per automatizzare regole aziendali specifiche per regione, garantire la conformità o attivare workflow specifici in base alle affiliazioni geografiche.
+**Posizione:** Workflow standard → condizioni aggiuntive (AND) → Campo del documento. Configurare separatamente l’azione successiva in THEN.
 
-## **Componenti della scheda:**
+## Configurazione — versione 2
 
-1. **Nome campo**
-   * **Descrizione:** Specifica il campo del documento in cui è memorizzato il nome o il codice del paese.
-   * **Dettaglio:** Deve corrispondere all'identificatore esatto del campo dei dati del paese all'interno del documento.
-2. **Operatore**
-   * **Descrizione:** Specifica se il paese nel campo selezionato debba corrispondere o meno alla regione o all'accordo selezionato.
-   * **Opzioni:**
-     * **Is:** Il paese deve far parte dell'accordo selezionato (EU, Schengen o NAFTA) affinché la condizione sia vera.
-     * **Non è:** Il paese non deve far parte dell'accordo selezionato affinché la condizione sia vera.
-3. **Confronto tra paesi**
-   * **Descrizione:** Definisce se il paese nel campo viene confrontato con un accordo politico o commerciale specifico.
-   * **Opzioni:**
-     * **European Union:** La scheda verifica se il paese è membro dell'Unione Europea.
-     * **Schengen Area:** La scheda verifica se il paese fa parte dell'Area Schengen.
-     * **NAFTA:** La scheda verifica se il paese è membro dell'accordo NAFTA.
-4. **Booleano**
-   * **Descrizione:** Definisce il risultato del confronto. Se il paese soddisfa la condizione, il workflow prosegue con il valore Boolean specificato.
-   * **Opzioni:**
-     * **True:** Il workflow prosegue se la condizione corrisponde.
-     * **False:** Il workflow prosegue se la condizione non corrisponde.
-
-## **Funzionalità:**
-
-* **Valutazione della condizione:**
-  * Il sistema valuta se il paese specificato nel campo fa parte della regione o dell'accordo scelti (EU, Area Schengen o NAFTA) in base all'operatore selezionato. Questa valutazione confronta il nome o il codice del paese con un elenco predefinito di paesi che appartengono a ciascun rispettivo gruppo.
-* **Esecuzione dell'azione:**
-  * **Condizione vera:** Se il paese nel campo corrisponde alla regione selezionata (secondo l'operatore), il workflow prosegue con la condizione vera specificata. Ciò può attivare ulteriori azioni, come l'instradamento dei documenti, l'applicazione di regole di elaborazione speciali o l'abilitazione di funzionalità specifiche per regione.
-  * **Condizione falsa:** Se il paese non corrisponde alla regione selezionata (secondo l'operatore), il workflow prosegue con la condizione falsa specificata, consentendo l'esecuzione di azioni alternative o la terminazione del workflow in base alla configurazione del sistema.
-
-## **Configurazione e impostazione:**
-
-* Gli utenti configurano la scheda selezionando il campo del documento contenente il paese e specificando la regione (Unione Europea, Area Schengen o NAFTA). L'operatore viene quindi scelto da un menu a discesa per definire se il paese debba o meno far parte della regione selezionata. Infine, gli utenti impostano la condizione di continuazione (vera o falsa), che determina il passaggio successivo nel workflow.
-
-## **Conclusione:**
-
-La scheda di workflow "Country in Field Comparison" è uno strumento essenziale per automatizzare i processi che dipendono da regole geografiche, come la conformità agli accordi commerciali o le affiliazioni politiche. Confrontando i dati del paese con regioni specifiche come l'Unione Europea, l'Area Schengen o il NAFTA, questa scheda garantisce che il sistema applichi la logica di elaborazione corretta, migliorando l'efficienza e garantendo un'esecuzione accurata del workflow in base alle condizioni geografiche.
+| Impostazione | Valore |
+| --- | --- |
+| Campo | Un campo di testo esistente contenente il nome del paese |
+| Operatore | `is` |
+| Regione | Unione europea (UE) |
+| Valore di continuazione | `true` |
 
 <!-- workflow-card-practical-example-20261021 -->
 
 ## Esempio pratico
 
-**Quando utilizzarlo:** Documenti separati per regione del paese.
+| Valore del paese nel campo | Condizione attesa |
+| --- | --- |
+| `Germany` | Soddisfatta |
+| `United States` | Non soddisfatta |
 
-**Configurazione:** Scegli un campo Paese del documento contenente `DE`, seleziona la regione contenente la Germania e imposta l'opzione di continuazione su `true`.
+I nomi dei paesi mostrati come codice sono valori di input fissi per questo esempio.
 
-**Risultato atteso e controesempio:** Il codice paese tedesco soddisfa la regione selezionata. Un codice al di fuori di quella regione no; testare l'opzione di continuazione separatamente quando è necessario il ramo inverso.
+## Limiti e verifiche
 
-Questa è una configurazione illustrativa e il risultato atteso. Utilizza campi, utenti e gruppi configurati nella tua organizzazione di test; non si afferma che questo esempio sia stato eseguito.
+`false` non inverte il confronto. Con questa impostazione, nemmeno un paese corrispondente produce una condizione positiva. Per verificare la condizione opposta, selezionare `isnot` con `true`.
+
+Gestire separatamente i campi mancanti e i valori di paese vuoti: possono restituire un risultato di dati mancanti anziché una normale mancata corrispondenza.
+
+L’esame del codice sorgente della versione di sviluppo del 22 ottobre 2026 mostra un errore di conversione per input ISO come `DE` e `DEU`. Questi esempi utilizzano quindi nomi di paesi completi. Verificare separatamente la gestione dei codici ISO nella versione installata.
+
+I gruppi disponibili, tra cui UE, Schengen e NAFTA, provengono dall’implementazione della scheda. Verificare i paesi inclusi nella propria versione prima di utilizzare un gruppo in una regola aziendale.

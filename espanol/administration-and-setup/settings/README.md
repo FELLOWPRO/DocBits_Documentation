@@ -1,6 +1,6 @@
 # Configuración
 
-<figure><img src="../../.gitbook/assets/settings_overview.png" alt="Settings Overview"><figcaption><p>Página Settings Overview</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-settings-overview-es.png" alt="Configuración de la organización con los datos identificativos ocultos. El país es un valor configurado. La etiqueta defectuosa «Phonenenene de la empresa oficial» se refiere al teléfono de la empresa."><figcaption><p>Configuración de la organización con los datos identificativos ocultos. El país es un valor configurado. La etiqueta defectuosa «Phonenenene de la empresa oficial» se refiere al teléfono de la empresa.</p></figcaption></figure>
 
 El área Settings es su centro de control para configurar DocBits. Está organizada en cinco secciones principales:
 

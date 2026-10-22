@@ -1,36 +1,21 @@
 # Flujo de trabajo estándar
 
-<figure><img src="../../../../.gitbook/assets/docbits_workflow_purchase_order_4.svg" alt="DocBits Flujo de trabajo Compra Pedido 4"><figcaption></figcaption></figure>
+El diagrama muestra un ejemplo de tramitación de facturas con y sin pedido. Adapte las rutas, las personas responsables, los plazos y la integración ERP a su configuración.
 
-#### Resumen de los componentes del flujo de trabajo:
+<figure><img src="../../../.gitbook/assets/workflow-standard-es.png" alt="Ejemplo de flujo de trabajo de facturas con y sin pedido. Las rutas de aprobación, el plazo de dos días y la conexión ERP forman parte de este ejemplo y deben ajustarse a la configuración propia."><figcaption><p>Ejemplo de flujo de trabajo de facturas con y sin pedido. Las rutas de aprobación, el plazo de dos días y la conexión ERP forman parte de este ejemplo y deben ajustarse a la configuración propia.</p></figcaption></figure>
 
-* **AP Invoice Email**: El proceso probablemente comienza con una factura recibida por correo electrónico.
-* **DocBits**: Esta herramienta puede utilizarse para las tareas iniciales de gestión de documentos, como la captura y digitalización de facturas.
-* **Finance Review**: Las facturas pasan por una revisión financiera en la que se toman decisiones sobre su validez y exactitud.
+## Entrada y revisión inicial
 
-#### Pasos del flujo de trabajo:
+En este ejemplo, una factura recibida por correo pasa por DocBits y una revisión financiera. Desde esa revisión puede retirarse del flujo o continuar por la ruta de facturas con pedido o sin pedido.
 
-1. **Initial Review**:
-   * Las facturas se reciben y se procesan inicialmente con DocBits.
-   * Luego son revisadas por el equipo financiero para garantizar que se retiren del flujo de trabajo si están completas, o que avancen para su procesamiento posterior.
-2. **PO frente a facturas que no son PO**:
-   * El flujo de trabajo distingue entre facturas relacionadas con pedidos de compra (PO) y facturas sin PO.
-   * Las facturas sin PO se enrutan para su aprobación o rechazo según criterios predefinidos como el ID del proveedor, la cantidad, el precio unitario y el número de artículo.
-3. **Coincidencia y no coincidencia**:
-   * Las facturas se cotejan con los recibos de mercancías para garantizar que los detalles coincidan (como el ID del proveedor y la cantidad).
-   * Si se producen discrepancias, la factura queda sujeta a una revisión adicional y posiblemente al rechazo.
-4. **Revisión del comprador y finanzas**:
-   * Para las facturas relacionadas con PO, se lleva a cabo un proceso detallado de cotejo que implica una revisión por parte del comprador.
-   * Pueden ser necesarios ajustes en los pedidos de compra o en los recibos de mercancías.
-5. **Final Decisions**:
-   * Las facturas que superan todas las comprobaciones se aprueban y se integran en los sistemas financieros para su registro.
-   * Las facturas rechazadas generan notificaciones, y el comprador puede solicitar una nueva factura.
-6. **Integration with Infor IDM & LN+M3**:
-   * Las facturas aprobadas probablemente se envían a IDM de Infor para la gestión documental y a LN para el registro contable.
-   * Esta integración garantiza que todos los registros financieros estén actualizados y que el flujo de trabajo se integre sin problemas en el sistema ERP más amplio.
+## Facturas sin pedido
 
-#### Puntos de decisión:
+La asignación del aprobador se basa en el proveedor, mediante una tabla de correspondencias o los campos BOD/CDF indicados. El esquema contempla aprobar, rechazar o dejar en revisión. El aviso tras dos días es un plazo del ejemplo. Las rutas de rechazo archivan el PDF con el identificador técnico `Invoice_Reject`; una revisión puede devolver el documento a validación.
 
-* A lo largo del flujo de trabajo hay varios puntos de decisión en los que una factura puede aprobarse, rechazarse o devolverse para obtener información adicional. Se envían notificaciones tras los retrasos, garantizando un procesamiento oportuno.
+## Facturas con pedido
 
-Estos flujos de trabajo se incluirán en el Standard Workflow
+La ruta de pedidos compara la factura con la recepción de mercancías y contempla ID del proveedor, cantidad, precio unitario y número de artículo. Las discrepancias pasan por revisión financiera y, según la decisión, por revisión del comprador. El esquema permite actualizar el pedido o la recepción y repetir la comprobación, o rechazar y solicitar una nueva factura.
+
+## Destino del ejemplo
+
+Las rutas aprobadas convergen en Infor IDM y LN antes del final. Compruebe los conectores, las condiciones y las acciones configuradas en su organización; el diagrama no acredita una aprobación o transferencia ERP ejecutada.

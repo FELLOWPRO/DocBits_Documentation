@@ -41,7 +41,7 @@ Esta guía le explica cómo conectar la **base de datos de solo lectura de DocBi
 <figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt=""><figcaption></figcaption></figure>
 
 * Haga clic en **Aceptar**. Introduzca de nuevo las credenciales si se le solicita.
-  * <mark style="color:red;">**Nota:**</mark> Si aparece el error **"password authentication failed for user"**, intente introducir su contraseña entre **llaves `{}`**.
+  * Si aparece `password authentication failed for user`, compruebe el servidor, la base de datos, el usuario y la contraseña. Introduzca la contraseña real en el diálogo de credenciales. El escape con llaves en una cadena de conexión ODBC es sintaxis del controlador, no una solución general a los errores de autenticación.
 
 #### 4. Cargar y transformar los datos
 
@@ -49,7 +49,9 @@ Esta guía le explica cómo conectar la **base de datos de solo lectura de DocBi
 * Abra el esquema **`public`**.
 * Seleccione las tablas que desea importar.
 
-![](../../.gitbook/assets/connect_read_only_1.png)        ![](../../.gitbook/assets/connect_read_only_2.png)
+![](../../.gitbook/assets/connect_read_only_1.png)
+
+![](../../.gitbook/assets/connect_read_only_2.png)
 
 * Elija:
   * **Cargar** → Importar directamente en Power BI
@@ -60,15 +62,15 @@ Esta guía le explica cómo conectar la **base de datos de solo lectura de DocBi
 * Utilice el lienzo de informes de Power BI para crear paneles.
 * Arrastre campos, añada segmentaciones de datos, elija tipos de gráfico y aplique cálculos DAX.
 * Utilice el **Editor de Power Query** para limpiar o combinar datos antes de crear los elementos visuales.
-* Referencia: [Documentación de Power BI](https://learn.microsoft.com/en-us/power-bi/?utm_source=chatgpt.com)
+* Referencia: [Documentación de Power BI](https://learn.microsoft.com/en-us/power-bi/)
 
 #### 6. Habilitar la actualización programada (opcional)
 
-<mark style="color:red;">**Nota:**</mark> **Requiere Power BI Pro o Premium + Gateway**
+La actualización programada depende de la licencia o capacidad del área de trabajo, del conector y del modo de conexión. Para esta conexión ODBC, configure una puerta de enlace accesible con el controlador, el DSN y las credenciales adecuados. Consulte los requisitos actuales en la documentación oficial.
 
-* Para mantener sus informes sincronizados con ClickHouse:
+* Para mantener sus informes sincronizados con PostgreSQL:
 * Publique su archivo `.pbix` en **Power BI Service**.
-* Instale el **Power BI Gateway** (modo Standard) en una máquina con acceso de red a ClickHouse.
+* Instale el **Power BI Gateway** (modo Standard) en una máquina con acceso de red a PostgreSQL.
 * En Power BI Service:
   * Vaya a su conjunto de datos → **Configuración** → **Actualización programada**
   * Asigne su DSN e indique las credenciales
@@ -77,3 +79,9 @@ Esta guía le explica cómo conectar la **base de datos de solo lectura de DocBi
 #### 7. Ejemplos de paneles y vistas de datos&#x20;
 
 <div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Ejemplo de panel de Power BI 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Ejemplo de panel de Power BI 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Ejemplo de panel de Power BI 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Ejemplo de panel de Power BI 4"><figcaption></figcaption></figure></div>
+
+[Documentación oficial — ODBC](https://learn.microsoft.com/en-us/power-query/connectors/odbc)
+
+[Documentación oficial — psqlODBC](https://odbc.postgresql.org/docs/config-opt.html)
+
+[Documentación oficial — Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)

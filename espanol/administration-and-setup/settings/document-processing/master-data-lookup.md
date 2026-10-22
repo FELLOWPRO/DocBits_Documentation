@@ -5,7 +5,7 @@
 
 La **Búsqueda de datos maestros** (barra lateral: **Lookup Master Data**) le permite ver y gestionar los datos maestros que DocBits utiliza para validar los datos extraídos de los documentos frente a su sistema ERP. Es esencial para un PO matching preciso, la validación de proveedores y el autocompletado de campos. Ábrala desde **Configuración → Procesamiento de documentos → Lookup Master Data**.
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_overview.png" alt="Búsqueda de datos maestros"><figcaption><p>Página de Búsqueda de datos maestros: fuentes de datos y la tabla de datos</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-overview-es.png" alt="Fuentes y tabla de datos maestros con los valores ocultos. La etiqueta «DBO Datos de entrada» contiene el acrónimo incorrecto: se trata de BOD. Address y Custom Field son nombres de columnas de la fuente."><figcaption><p>Fuentes y tabla de datos maestros con los valores ocultos. La etiqueta «DBO Datos de entrada» contiene el acrónimo incorrecto: se trata de BOD. Address y Custom Field son nombres de columnas de la fuente.</p></figcaption></figure>
 
 ## Fuentes de datos
 
@@ -33,7 +33,7 @@ Las tablas de Proveedor y Orden de compra incluyen columnas como ID de proveedor
 
 Haga clic en **Settings** (icono de engranaje) en la parte inferior izquierda del panel de fuentes de datos para abrir la configuración de datos maestros.
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_settings.png" alt="Configuración de la Búsqueda de datos maestros"><figcaption><p>Configuración de Supplier BOD y eliminación de órdenes de compra</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-settings-es.png" alt="Configuración existente de sincronización de proveedores BOD y conservación de pedidos. La etiqueta defectuosa «Eliminación de orden de compra Asistente» corresponde al asistente de eliminación de pedidos. No se ejecutó ninguna eliminación ni sincronización."><figcaption><p>Configuración existente de sincronización de proveedores BOD y conservación de pedidos. La etiqueta defectuosa «Eliminación de orden de compra Asistente» corresponde al asistente de eliminación de pedidos. No se ejecutó ninguna eliminación ni sincronización.</p></figcaption></figure>
 
 ### BOD de proveedor
 

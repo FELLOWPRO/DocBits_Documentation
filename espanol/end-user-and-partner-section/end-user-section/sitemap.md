@@ -6,7 +6,7 @@ La Sitemap es el índice completo y consultable de todo lo que DocBits ofrece �
 
 Abra la Sitemap desde la barra lateral (entrada cercana al final) o pulse <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> y elija **Ver todos los resultados**. La URL directa es `/sitemap`.
 
-<figure><img src="../../.gitbook/assets/sitemap-overview.png" alt="Resumen de la Sitemap"><figcaption><p>Sitemap con resumen por categorías y cabecera de búsqueda.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-sitemap-es.png" alt="Parte visible del catálogo de páginas en español. «API Licencias» es una etiqueta incorrecta para las claves de API; se conservan las etiquetas reales de la aplicación."><figcaption><p>Parte visible del catálogo de páginas en español. «API Licencias» es una etiqueta incorrecta para las claves de API; se conservan las etiquetas reales de la aplicación.</p></figcaption></figure>
 
 ## Explorar el catálogo
 

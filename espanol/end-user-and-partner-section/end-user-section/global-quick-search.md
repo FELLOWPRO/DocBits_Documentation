@@ -6,7 +6,7 @@ La Búsqueda Rápida Global es un lanzador accesible por teclado que encuentra p
 
 Pulse <kbd>Cmd</kbd> + <kbd>K</kbd> en macOS o <kbd>Ctrl</kbd> + <kbd>K</kbd> en Windows y Linux. El atajo funciona desde cualquier pantalla.
 
-<figure><img src="../../.gitbook/assets/quick-search-modal.png" alt="Modal de Búsqueda Rápida Global"><figcaption><p>La Búsqueda Rápida se abre sobre la página actual.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-global-quick-search-es.png" alt="Búsqueda global de páginas con resultados de navegación por la configuración. El control «Open» sigue en inglés y significa abrir. No son resultados de documentos."><figcaption><p>Búsqueda global de páginas con resultados de navegación por la configuración. El control «Open» sigue en inglés y significa abrir. No son resultados de documentos.</p></figcaption></figure>
 
 ## Búsqueda
 

@@ -1,66 +1,36 @@
 # Preguntas frecuentes de administración de WatchDog y resolución de problemas
 
-<figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-infographic.svg" alt="Guía rápida de resolución de problemas de WatchDog"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-es.svg" alt="Diagnóstico de problemas de importación, exportación y conexión de WatchDog."><figcaption><p>Diagnóstico de problemas de importación, exportación y conexión de WatchDog.</p></figcaption></figure>
 
 Esta documentación ayuda a los administradores a entender los mensajes de error de WatchDog y a resolver problemas.
 
-**Ubicación en la interfaz:** Settings → Document Processing → WatchDog
+**Ubicación en la interfaz:** Ajustes → Procesamiento de documentos → WatchDog
 
 ---
 
-## 1. Páginas de ajustes de WatchDog (interfaz)
+## 1. Áreas de WatchDog en la interfaz
 
-### 1.1 Pestaña General
+### 1.1 General
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="Pestaña General de WatchDog"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-general-safe-es.png" alt="Vista General de WatchDog con las cuatro pestañas actuales y el estado Desconectado del entorno de prueba. Los comandos con la clave de API y la ruta de instalación están ocultos. Esta imagen no acredita una instalación ni una conexión correcta."><figcaption><p>Vista General de WatchDog con las cuatro pestañas actuales y el estado Desconectado del entorno de prueba. Los comandos con la clave de API y la ruta de instalación están ocultos. Esta imagen no acredita una instalación ni una conexión correcta.</p></figcaption></figure>
 
-* **Download:** obtenga la última versión de WatchDog.exe
-* **API Key:** copie el comando de configuración
-* **Auto-Update Schedule:** configure la frecuencia de actualización
-* **Installation Guide:** instrucciones de configuración paso a paso
+General reúne el estado de conexión, la información de versión, la descarga y las instrucciones del entorno actual. Utilice una clave de API de su organización y no comparta comandos que contengan secretos. No existe una pestaña independiente de estado.
 
-### 1.2 Pestaña Configurations
+### 1.2 Configuraciones
 
-* **Import Configurations:** definen las carpetas vigiladas y los tipos de documento
-* **Export Configurations:** definen los destinos y métodos de exportación
-* **Bulk Copy:** copia configuraciones entre suborganizaciones
-* **Import/Export:** importa y exporta configuraciones como JSON
+Las importaciones definen las carpetas vigiladas y el ámbito de los documentos. Las exportaciones definen el método y el destino; requieren un tipo de documento válido (`doc_type`). **Nueva configuración de exportación** abre el asistente de exportación, cuyos campos dependen del método elegido. Las acciones de copia e importación/exportación de configuraciones tienen su propio alcance: revise sus destinos antes de ejecutarlas.
 
-> **Importante:** Las configuraciones de exportación ahora **requieren un tipo de documento** (`doc_type`). Las configuraciones sin un tipo de documento válido serán rechazadas.
+### 1.3 Registros
 
-### 1.3 Pestaña Status
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-logs-es.png" alt="Pestaña Registros con Nivel de registro, Intervalo de tiempo y búsqueda. El intervalo visible pertenece a esta consulta; los datos de los registros están ocultos y no acreditan una conexión correcta del servicio."><figcaption><p>Pestaña Registros con Nivel de registro, Intervalo de tiempo y búsqueda. El intervalo visible pertenece a esta consulta; los datos de los registros están ocultos y no acreditan una conexión correcta del servicio.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_status.png" alt="Estado del servicio WatchDog"><figcaption></figcaption></figure>
+Acote la consulta mediante **Nivel de registro**, **Intervalo de tiempo** y búsqueda de texto. Los eventos pueden incluir `FILE_IMPORT_STARTED`, `FILE_IMPORT_COMPLETED`, `FILE_IMPORT_FAILED`, `EXPORT_STARTED`, `EXPORT_COMPLETED`, `EXPORT_FAILED`, `FOLDER_VALIDATION_FAILED`, `CONFIG_LOADED`, `SERVICE_RESTART_INITIATED` y `SERVICE_RESTART_COMPLETED`.
 
-* Muestra en tiempo real el estado de conexión de WatchDog
-* **Campos nuevos:** `last_restart`, `version_first_seen`, `latest_version_checked_at`
-* **Información del sistema:** ruta de instalación, RAM libre, espacio libre en disco
+### 1.4 Plantillas XSLT
 
-### 1.4 Pestaña Logs
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-templates-es.png" alt="Pestaña Plantillas XSLT con Nueva plantilla y una lista existente cuyos nombres están ocultos. No se abrió ningún menú de fila ni se ejecutó una transformación."><figcaption><p>Pestaña Plantillas XSLT con Nueva plantilla y una lista existente cuyos nombres están ocultos. No se abrió ningún menú de fila ni se ejecutó una transformación.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_05.png" alt="Registros de WatchDog"><figcaption></figcaption></figure>
-
-* Muestra todos los eventos de WatchDog desde OpenSearch
-* Se puede filtrar por tipo de evento, período de tiempo, etc.
-* **Tipos de evento:**
-  * `FILE_IMPORT_STARTED`: inicio de la importación de archivos
-  * `FILE_IMPORT_COMPLETED`: importación correcta
-  * `FILE_IMPORT_FAILED`: importación fallida
-  * `EXPORT_STARTED`: inicio de la exportación
-  * `EXPORT_COMPLETED`: exportación correcta
-  * `EXPORT_FAILED`: exportación fallida
-  * `FOLDER_VALIDATION_FAILED`: carpeta no accesible
-  * `CONFIG_LOADED`: configuración cargada
-  * `SERVICE_RESTART_INITIATED`: reinicio del servicio solicitado
-  * `SERVICE_RESTART_COMPLETED`: servicio reiniciado
-
-### 1.5 Pestaña XSLT Templates
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_06.png" alt="Lista de plantillas XSLT"><figcaption></figcaption></figure>
-
-* Cargue y gestione plantillas de transformación XSLT
-* Validación en vivo con análisis de campos
-* Vincule plantillas a configuraciones de exportación
+Gestione las transformaciones desde **Plantillas XSLT**. **Nueva plantilla** abre el administrador; allí puede iniciar un editor vacío y usar **Validar contra** y **Validar XSLT** antes de guardar una plantilla. La configuración de exportación determina si la transformación se utiliza.
 
 ---
 
@@ -121,7 +91,7 @@ Cuando se desactiva una configuración, aparece uno de estos motivos:
 | `Success folder: not_found` | La carpeta de éxito no existe |
 | `Success folder: no_write_access` | La carpeta de éxito no admite escritura |
 
-**Reactivación automática:** WatchDog comprueba las carpetas con regularidad (cada 60 segundos). En cuanto la carpeta vuelve a estar accesible, la configuración se reactiva automáticamente.
+**Reactivación automática:** WatchDog vuelve a comprobar las carpetas. El intervalo y la reactivación dependen de la versión y del estado del servicio; después de reparar la ruta o los permisos, confirme en los registros que la configuración vuelve a estar activa.
 
 ---
 
@@ -147,7 +117,7 @@ Original Path: C:\WatchDog\Import\invoice_001.pdf
 
 ## 7. Heartbeat y estado de la conexión
 
-WatchDog envía un heartbeat a DocBits aproximadamente cada 10 segundos con información del sistema:
+WatchDog comunica su estado a DocBits mediante latidos (heartbeats). Según la versión, la información comunicada puede incluir:
 
 | Datos enviados | Descripción |
 | :--- | :--- |
@@ -164,7 +134,7 @@ WatchDog envía un heartbeat a DocBits aproximadamente cada 10 segundos con info
 | Estado | Significado |
 | :--- | :--- |
 | ✅ **Online** | WatchDog está conectado y activo |
-| ⚠️ **Offline** | Sin heartbeat desde hace más de 30 segundos |
+| ⚠️ **Offline** | No se ha recibido una comunicación reciente del servicio; revise la antigüedad y los registros |
 | ❌ **Not Installed** | WatchDog nunca se ha conectado |
 
 **Errores de heartbeat:**
@@ -180,7 +150,7 @@ WatchDog envía un heartbeat a DocBits aproximadamente cada 10 segundos con info
 ### Problema: WatchDog no importa archivos
 
 1. Compruebe si el servicio se está ejecutando: `services.msc` → WatchDog
-2. Revisar los registros: Configuración → WatchDog → Pestaña Registros
+2. Revisar los registros: Ajustes → Procesamiento de documentos → WatchDog → Registros
 3. Revise los permisos de carpeta de la cuenta de servicio de WatchDog
 4. Pruebe la conexión con la API: `WatchDog.exe debug` en CMD
 5. Verifique que el tipo de archivo sea PDF
@@ -198,11 +168,11 @@ WatchDog envía un heartbeat a DocBits aproximadamente cada 10 segundos con info
 1. ¿Existe la ruta de la carpeta?
 2. ¿Hay permisos para `NT AUTHORITY\LOCAL SERVICE` o la cuenta de servicio?
 3. ¿Se puede acceder a la unidad de red? (Revise las rutas UNC)
-4. WatchDog se reactivará automáticamente cuando las carpetas vuelvan a estar disponibles
+4. Después de recuperar el acceso a las carpetas, confirme que la configuración vuelve a estar activa
 
 ### Problema: falla la transformación XSLT
 
-1. ¿Es válida la plantilla XSLT? (use la pestaña XSLT Templates → Validate)
+1. ¿Es válida la plantilla XSLT? (use la pestaña Plantillas XSLT → administrador → Validar XSLT)
 2. ¿Corresponde la plantilla al tipo de documento?
 3. Revise la estructura XML del documento
 4. La exportación a carpeta V3 utiliza transformación en el servidor: compruebe la conectividad con la API
@@ -264,4 +234,4 @@ INFO  - 2026-03-26 10:00:00 - module_name - Message - function=func_name - line=
 
 **Nivel de registro:** DEBUG, INFO, WARNING, ERROR
 
-**Registros remotos:** WatchDog también envía registros a DocBits (visibles en la pestaña Logs) y, opcionalmente, al registro en la nube de Logtail.
+**Registros remotos:** WatchDog también envía registros a DocBits (visibles en la pestaña Registros) y, opcionalmente, al registro en la nube de Logtail.

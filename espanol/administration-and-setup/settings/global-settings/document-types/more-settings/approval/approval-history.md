@@ -1,24 +1,17 @@
 # Historial de aprobaciones
 
-Para habilitar la función de **Historial de aprobaciones**:
+El historial permite revisar decisiones de aprobación y rechazo registradas para un documento. Los datos disponibles dependen del procesamiento previo y de sus permisos.
 
-1. Ve a **Ajustes** → **Ajustes generales** → **Tipos de documentos** → **Más ajustes** → **Aprobación**.
-2. Activa **Historial de aprobaciones**.
+## Encontrar el ajuste
 
-Una vez habilitado, el historial de aprobaciones será visible en la pantalla de **Pendiente de aprobación**. Puedes cambiar a la pantalla de **Historial de aprobaciones** haciendo clic en el botón en la esquina superior izquierda.
+1. Abra **Ajustes → Tipos de Documento**.
+2. Abra el engranaje del tipo correspondiente.
+3. Despliegue **Aprobación y rechazo** y revise **Historial de aprobaciones**. Modifique la configuración únicamente si lo requiere su flujo.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_1.png)
+<figure><img src="../../../../../../.gitbook/assets/site-complete-invoice-approval-settings-es.png" alt="Configuración actual de Aprobación y rechazo con Historial de aprobaciones. Se muestra el estado encontrado; no se cambió ninguna opción ni se ejecutó una decisión de aprobación."><figcaption><p>Configuración actual de Aprobación y rechazo con Historial de aprobaciones. Se muestra el estado encontrado; no se cambió ninguna opción ni se ejecutó una decisión de aprobación.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_2.png)
+## Revisar las decisiones
 
-En la pantalla de **Historial de aprobaciones**, verás los siguientes detalles:
+Abra el documento y el historial que ofrezca la interfaz, si está disponible. Revise la decisión, la persona que la registró, el momento y el orden. Los comentarios pueden aportar razones adicionales cuando se hayan registrado.
 
-* **Quién** aprobó o rechazó el documento.
-* La **hora** y **orden** de las aprobaciones o rechazos.
-* Si está configurado, **comentarios** que explican las razones detrás de las decisiones.
-* **Rojo** indica un **rechazo**.
-* El color que coincide con el entorno (por ejemplo, verde) indica **aprobación**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_3.png)
-
-Esta función proporciona una mayor transparencia al rastrear y visualizar el proceso de aprobación.
+Evalúe el texto de la decisión y no únicamente su color. Un historial vacío no acredita una aprobación. La imagen muestra la configuración; para esta guía no se aprobó o rechazó ningún documento ni se creó un historial de decisiones.

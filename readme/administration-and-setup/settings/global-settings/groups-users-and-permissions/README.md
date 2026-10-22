@@ -1,5 +1,13 @@
 # Grupy, użytkownicy i uprawnienia
 
+## Tworzenie grupy i sprawdzanie dostępu do dokumentów
+
+Gdy uprawnienia grupowe są już włączone, utwórz grupę sprawdzającą i dodaj użytkownika testowego bez uprawnień administratora. Zezwól na wyświetlanie na liście, przeglądanie i edycję przypisanych faktur; pozostaw wyłączone usuwanie, zmiany zbiorcze i zatwierdzanie. Zapisz i ponownie otwórz ustawienia, a następnie zaloguj się jako zwykły użytkownik: przypisana faktura jest widoczna, a nieprzypisany dokument kontrolny nie jest.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/pl.mp4" %}
+
+[Obejrzyj z napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/pl.html)
+
 Te ustawienia odpowiadają na trzy różne pytania: kto może się zalogować, w której podorganizacji pracuje oraz co może robić jego grupa.
 
 | Jeśli chcesz… | Otwórz… |

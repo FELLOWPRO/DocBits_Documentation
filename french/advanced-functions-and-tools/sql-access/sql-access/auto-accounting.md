@@ -1,4 +1,4 @@
-# Auto accounting
+# Comptabilisation automatique
 
 ## Table `public.auto_accounting`
 

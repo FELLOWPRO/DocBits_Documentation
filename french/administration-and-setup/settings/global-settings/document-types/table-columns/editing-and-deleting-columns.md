@@ -2,7 +2,7 @@
 
 Tout, à l'exception du titre, se modifie directement dans la liste ; il n'y a pas de boîte de dialogue de modification.
 
-**Où :** Settings → Global Settings → Document Types → Table Columns
+**Où :** Paramètres → Paramètres globaux → Types de documents → Colonnes du tableau
 
 ## Activer ou désactiver une option
 

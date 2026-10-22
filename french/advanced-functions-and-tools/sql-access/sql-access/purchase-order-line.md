@@ -1,4 +1,4 @@
-# Purchase Order line
+# Ligne de commande fournisseur
 
 ## Table `public.purchase_order_line`
 
@@ -19,9 +19,9 @@
 * `currency` : interne
 * `status` : interne
 * `created_by` : integer
-* `created_on` : timestamp with time zone
-* `last_modified_on` : timestamp with time zone
-* `deleted_on` : timestamp with time zone
+* `created_on` : horodatage avec fuseau horaire
+* `last_modified_on` : horodatage avec fuseau horaire
+* `deleted_on` : horodatage avec fuseau horaire
 * `is_deleted` : boolean
 * `open_quantity` : double precision
 * `received_quantity` : double precision
@@ -34,7 +34,7 @@
 * `buyer_name` : interne
 * `unit_code_price` : interne
 * `geo_code` : interne
-* `promised_delivery_date` : timestamp with time zone
+* `promised_delivery_date` : horodatage avec fuseau horaire
 * `delivery_method` : interne
 * `requested_ship_date` : date
 * `received_base_mou_quantity` : double precision

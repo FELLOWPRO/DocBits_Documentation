@@ -1,39 +1,38 @@
-# Auto Export if PO Matched 100%
+# Export automatique en cas de rapprochement PO à 100%
 
-### Overview
+### Présentation
 
-The **Auto Export if PO matched 100%** setting is a feature within the Purchase Order (PO) module that automates the export process when a purchase order matches perfectly with its expected criteria. This functionality is designed to streamline the workflow by reducing manual intervention in the export process, ensuring that perfectly matched purchase orders are handled efficiently.
+L’option **Auto Export if PO matched 100%**, dans le module des commandes d’achat (PO), permet à un rapprochement complet avec la commande d’autoriser la poursuite du traitement de la facture ou du document courant vers l’export automatique. La commande sert de référence de comparaison ; cette option n’exporte pas la commande elle-même.
 
-### What Does It Do?
+### Fonctionnement
 
-When this setting is enabled, the system automatically exports the purchase order as soon as it matches 100% with the expected data. This means that if all items, quantities, prices, and other relevant details in the purchase order align with the predefined criteria, the order is immediately processed and exported without requiring additional steps from the user.
+Lorsque l’option est activée, le résultat du rapprochement du document courant avec le PO est contrôlé. Un rapprochement à 100% satisfait cette condition, sans garantir un export immédiat. La validation du document, le processus d’export configuré, les approbations requises et les tâches en attente peuvent encore bloquer ou retarder l’export. Un rapprochement incomplet bloque l’export automatique au titre de cette condition.
 
-### Benefits
+### Avantages
 
-* **Efficiency**: By automating the export of perfectly matched POs, this feature saves time and reduces the workload on administrators and users.
-* **Accuracy**: Ensures that only those POs which have been verified to match 100% with the expected criteria are exported, reducing the risk of errors.
-* **Speed**: The immediate processing of matching POs allows for faster order handling and reduces delays in the supply chain.
+* **Efficacité :** Peut réduire les interventions manuelles pour les factures entièrement rapprochées qui satisfont les autres exigences.
+* **Contrôle :** Ajoute le résultat du rapprochement PO aux conditions d’export.
+* **Délai de traitement :** Peut accélérer le traitement des factures admissibles ; le délai dépend des autres conditions du processus.
 
-### How to Use
+### Utilisation
 
-1. **Enable the Feature**:
-   * Go to Settings
-   * Select **Document Processing**.
-   * Select **Module**.
-   * Navigate to the **Purchase Order**.
-   * Activate the **Auto Export if PO matched 100%** by enabling the corresponding slider
+1. **Activer la fonction :**
+   * Accédez à **Paramètres** → **Traitement des documents** → **Module** → **Commande d’achat**.
+   * Activez le curseur **Auto Export if PO matched 100%**.
 
 <figure><img src="../../../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
 
-1. **Monitoring**:
-   * Once enabled, the system will automatically export POs that match 100% with their expected criteria.
-   * You can monitor the export activity through the PO dashboard or other related monitoring tools.
-2. **Considerations**:
-   * Ensure that your PO criteria are correctly defined and accurate to avoid any unwanted exports.
-   * Regularly review the POs processed through this feature to ensure that the automation is functioning as expected.
+2. **Surveiller le traitement :**
+   * Vérifiez les états de rapprochement, de validation et d’export de la facture courante.
+   * Si elle n’est pas exportée malgré un rapprochement à 100%, vérifiez la configuration d’export, les approbations et les tâches en attente.
+3. **Vérifier la configuration :**
+   * Assurez-vous que les critères de rapprochement et les paramètres d’export correspondent au processus prévu.
+   * Examinez régulièrement les factures exportées et les exceptions.
 
-### When to Use This Feature
+### Quand utiliser cette fonction ?
 
-* **High Volume Processing**: Ideal for environments where a large number of POs are processed regularly, and there is a high confidence in the data matching.
-* **Routine Orders**: Useful for standard or routine orders where variations are minimal and accuracy is consistent.
-* **Time-Sensitive Orders**: Beneficial when time is of the essence, and you need to expedite the processing of matching POs.
+* **Volumes élevés de factures :** Lorsque de nombreuses factures peuvent être rapprochées de façon fiable avec des commandes.
+* **Achats récurrents :** Lorsque quantités, prix et autres critères sont stables.
+* **Traitement urgent :** Lorsque les factures admissibles doivent avancer automatiquement une fois toutes les conditions remplies.
+
+Lorsque le rapprochement avec les commandes est actif pour le type de document, l’option distincte `ALLOW_AUTO_EXPORT_FOR_NON_MATCHABLE_PO_LINES` autorise aussi le statut `NO_MATCHABLE_PO_LINES`. Elle n’autorise pas globalement les autres rapprochements incomplets.

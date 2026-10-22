@@ -60,7 +60,7 @@ Cliquez sur **Nouvelle règle**. L'éditeur comporte trois étapes à gauche et 
 
 | Portée | Modifie | Cible | S'exécute |
 | --- | --- | --- | --- |
-| **Champ d'en-tête** | une valeur par document | un champ d'en-tête, p. ex. *Invoice Number* | une fois par document |
+| **Champ d'en-tête** | une valeur par document | un champ d'en-tête, p. ex. *Numéro de facture* | une fois par document |
 | **lignes du tableau** | des lignes entières du tableau — les vider ou en ajouter | un tableau, p. ex. `INVOICE_TABLE` | une fois par document |
 | **Colonne du tableau** | une valeur dans chaque ligne du tableau | un tableau et une colonne, p. ex. `INVOICE_TABLE` / `UNIT` | une fois par ligne |
 | **Routage** | un attribut du document — aujourd'hui la sous-organisation | *sous-organisation* | une fois par document |
@@ -77,7 +77,7 @@ Deux options contrôlent la fréquence d'application de la règle :
 | Option | Effet |
 | --- | --- |
 | **Exécuter une seule fois par document** | Normalement, les règles s'exécutent de nouveau à chaque enregistrement. Avec cette option, la règle s'applique **au plus une fois** à un document, puis en a terminé avec lui. Un passage dans lequel les conditions ne correspondent pas ne compte pas, la règle peut donc encore s'appliquer lors d'un enregistrement ultérieur. Nécessaire pour les étapes qui modifieraient de nouveau la valeur à chaque enregistrement (voir [Idempotence](#execution-unique-et-idempotence)) et pour les règles de tableau qui ne doivent pas reconstruire les lignes une nouvelle fois. |
-| **Run after lookup population (before PO match)** | *(versions récentes)* Exécute la règle dans un passage supplémentaire une fois les données de recherche (par exemple les données de base fournisseur) renseignées, et avant le rapprochement des bons de commande. À utiliser lorsque la règle a besoin d'une valeur fournie par une recherche. La règle s'exécute aussi aux étapes habituelles ; une règle « run once » avec cette option attend ce passage au lieu de s'exécuter juste après l'extraction. |
+| **Exécuter après la population de recherche (avant la correspondance PO)** | *(versions récentes)* Exécute la règle dans un passage supplémentaire une fois les données de recherche (par exemple les données de base fournisseur) renseignées, et avant le rapprochement des bons de commande. À utiliser lorsque la règle a besoin d'une valeur fournie par une recherche. La règle s'exécute aussi aux étapes habituelles ; une règle « run once » avec cette option attend ce passage au lieu de s'exécuter juste après l'extraction. |
 
 ### Étape 3 — The pipeline
 
@@ -93,7 +93,7 @@ Deux options contrôlent la fréquence d'application de la règle :
 
 | Étape | Paramètres | Exemple entrée → sortie |
 | --- | --- | --- |
-| **Changer la casse** | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
+| **Changer la casse** | UPPERCASE, minuscule, casse du titre, mettre d'abord en majuscule | `inv-4711` → `INV-4711` |
 | **Supprimer les espaces** | côté (both, left, right) ; caractères (vide = espaces) | `  4711 ` → `4711` ; avec les caractères `0` et le côté left : `004711` → `4711` |
 | **Tampon** | longueur, caractère de remplissage, côté | longueur 10, `0`, left : `4711` → `0000004711` |
 | **Tronquer** | longueur maximale | 10 : `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
@@ -223,7 +223,7 @@ Les règles de tableau et de colonne modifient ce que voit le moteur de rapproch
 * Si une règle **remplace ou supprime des lignes qui avaient été rapprochées**, le rapprochement ne peut pas être conservé. Le document enregistre alors quelle règle l'a abandonné, l'écran Purchase Order Matching l'affiche comme motif (« _The PO match could not be saved: the transformation rule "…" rebuilt the table_ ») et les administrateurs obtiennent un lien vers la règle. L'**historique de rapprochement** du document affiche une étape _Transformation rules_ avant la première étape de rapprochement, avec les règles exécutées.
 * Le nombre de lignes après application des règles est ce que comptent les [conditions d'activation](more-settings/purchase-order/purchase-order-matching-rules.md#conditions-dactivation) des règles de rapprochement. Une règle qui condense une facture en **une seule** ligne n'a de sens qu'associée à une règle de rapprochement sur le total active pour les documents à une ligne (`[[count(table_lines)]] >= 1`).
 
-## Logs
+## Journaux
 
 Avec **Exécution du journal** activé, chaque application de la règle est écrite dans **Types de documents → (type de document) → Journaux**, avec le résultat (applied, no change, skipped), le document et — pour les règles ignorées — la trace de condition qui explique pourquoi. Voir [Lire la trace de condition](rule-conditions-applies-when.md#lire-la-trace-de-la-condition-dans-les-journaux).
 
@@ -245,7 +245,7 @@ Avec **Exécution du journal** activé, chaque application de la règle est écr
 | Un tableau reçoit une ligne de plus à chaque enregistrement | Une étape **Ajouter une ligne** sans **Effacer toutes les lignes** avant elle. Ajoutez d'abord l'étape de suppression, ou activez l'exécution unique. |
 | Le rapprochement du bon de commande est perdu après l'enregistrement | Une règle de tableau a remplacé les lignes rapprochées. Le motif indiqué sur le document nomme la règle ; faites en sorte que la règle reproduise les mêmes lignes, ou réglez-la sur l'exécution unique. |
 | Une règle de rapprochement ne s'exécute jamais après la transformation | La règle a modifié le nombre de lignes ; adaptez la condition d'activation de la règle de rapprochement. |
-| La règle a besoin d'une valeur issue des données de base fournisseur, mais elle est encore vide | Activez **Run after lookup population (before PO match)**. |
+| La règle a besoin d'une valeur issue des données de base fournisseur, mais elle est encore vide | Activez **Exécuter après la population de recherche (avant la correspondance PO)**. |
 | Une date n'est pas reformatée | Reformat date attend `YYYY-MM-DD` en entrée. |
 
 ## Pages associées
@@ -253,4 +253,4 @@ Avec **Exécution du journal** activé, chaque application de la règle est écr
 * [Rule Conditions (Applies when)](rule-conditions-applies-when.md) — les conditions en détail
 * [Custom Validation Rules](custom-validation-rules.md) — vérifier les valeurs transformées
 * [Layout Selection Rules](layout-manager/layout-selection-rules.md) — choisir la mise en page utilisée par un document
-* [Purchase Order Matching Rules](more-settings/purchase-order/purchase-order-matching-rules.md)
+* [Règles de correspondance des bons de commande](more-settings/purchase-order/purchase-order-matching-rules.md)

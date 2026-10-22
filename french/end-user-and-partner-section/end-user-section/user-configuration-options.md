@@ -11,7 +11,7 @@ Pour configurer vos paramètres, cliquez sur l'icône Utilisateur située dans l
 **Langue**
 
 {% embed url="https://youtu.be/h_knkUZkNyI" %}
-How to Change Language in DocBits (User Settings Tutorial)
+Comment changer la langue dans DocBits (Tutoriel sur les paramètres utilisateur)
 {% endembed %}
 
 * **Sélectionner la Langue Préférée :** Choisissez votre langue souhaitée parmi les options disponibles.

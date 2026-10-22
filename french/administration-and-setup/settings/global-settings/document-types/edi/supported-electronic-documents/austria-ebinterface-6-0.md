@@ -30,7 +30,7 @@ ebInterface 6.0 a introduit l'alignement sur la norme européenne EN 16931 tout 
 
 ## Aperçu par défaut
 
-<figure><img src="austria-ebinterface-preview.png" alt="Aperçu de la facture Austria ebInterface 6.0 dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour une facture AUSTRIA EBINTERFACE 6.0</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Aperçu de la facture Austria ebInterface 6.0 dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour une facture AUSTRIA EBINTERFACE 6.0</p></figcaption></figure>
 
 ## Correspondance des champs
 

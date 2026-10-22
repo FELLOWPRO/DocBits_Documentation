@@ -1,4 +1,4 @@
-# Ephesoft PO matching
+# Rapprochement des commandes fournisseur Ephesoft
 
 ## Table `public.ephesoft_po_matching`
 
@@ -11,8 +11,8 @@
 * `ephesoft_doc_id` : interne
 * `extracted_data` : texte
 * `created_by` : integer
-* `created_on` : timestamp with time zone
-* `last_modified_on` : timestamp with time zone
+* `created_on` : horodatage avec fuseau horaire
+* `last_modified_on` : horodatage avec fuseau horaire
 * `is_deleted` : boolean
 
 ### Analyse et description

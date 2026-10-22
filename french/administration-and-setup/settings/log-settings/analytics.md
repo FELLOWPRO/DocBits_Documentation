@@ -32,7 +32,7 @@ Quatre cartes de synthèse apparaissent sous les filtres :
 | **AVERTISSEMENTS** | Nombre total d'avertissements pour la période sélectionnée. |
 | **TOP SOURCE** | Le service produisant le plus de journaux, avec son nombre. |
 
-## Real User Monitoring (RUM)
+## Suivi des utilisateurs réels (RUM)
 
 Sous les cartes de synthèse, les métriques RUM affichent les données de performance du front-end collectées lors de véritables sessions de navigation d'utilisateurs.
 

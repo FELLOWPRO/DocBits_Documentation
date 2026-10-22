@@ -1,28 +1,30 @@
-# Case 1, 2, 3: Quantity and Unit Price Within Tolerance
+# Cas 1, 2, 3: Quantité et prix unitaire dans les tolérances
 
-## Scenario:
+Le scénario suivant illustre un mappage configuré ; il ne constitue pas un modèle par défaut dont le déploiement aurait été vérifié. La sortie réelle, les montants, les signes et les types de documents dépendent des règles et expressions `conflict_resolution` actives, du mappage d’export et des décisions d’approbation. Toute note de débit ou de crédit décrite ci-dessous est soumise à cette configuration ; cet exemple ne garantit ni son émission automatique ni la conformité juridique.
 
-Both the quantity and unit price on the invoice are within an acceptable tolerance range compared to the purchase order.
+## Scénario :
 
-## Action:
+La quantité et le prix unitaire sur la facture se situent dans une plage de tolérance acceptable par rapport au bon de commande.
 
-The system accepts the invoice values and calculates the total amount based on the provided quantity and unit price.
+## Action :
 
-## Example:
+Le système accepte les valeurs de la facture et calcule le montant total en fonction de la quantité et du prix unitaire fournis.
+
+## Exemple :
 
 **Purchase Order (PO):**
 
 Quantity: 100 units
 
-Unit Price: $10.00 per unit
+Prix unitaire : $10.00 par unité
 
 Total Amount: $1,000.00
 
 **Invoice Received:**
 
-Quantity: 101 units (within tolerance of 1%)
+Quantité : 101 unités (avec une tolérance de 1%)
 
-Unit Price: $10.05 per unit (within tolerance of 0.5%)
+Prix unitaire : $10.05 par unité (dans les limites d'une tolérance de 0.5 %)
 
 Total Amount: $1,015.05
 
@@ -33,17 +35,17 @@ Quantity Tolerance: ±2%
 Unit Price Tolerance: ±1%\
 
 
-Since the quantity (101 units) and unit price ($10.05) are both within the acceptable tolerance levels compared to the purchase order, the system will:\
+Étant donné que la quantité (101 unités) et le prix unitaire ($10.05) se situent tous deux dans les niveaux de tolérance acceptables par rapport au bon de commande, le système :\
 
 
-1\. **Accept the Invoice Values:** The quantity and unit price on the invoice are accepted as valid because they fall within the defined tolerance limits.
+1\. **Accepter les valeurs de la facture :** La quantité et le prix unitaire sur la facture sont acceptés comme valides car ils se situent dans les limites de tolérance définies.
 
-2\. **Calculate the Total Amount:** The total amount is calculated using the accepted values:
+2\. **Calculer le Montant Total :** Le montant total est calculé à partir des valeurs acceptées :
 
-• Total Amount = Quantity × Unit Price
+• Montant total = Quantité × Prix unitaire
 
 • Total Amount = 101 units × $10.05 per unit = $1,015.05
 
-3\. **Process the Invoice:** The invoice is processed with the total amount of $1,015.05, and the financial records are updated accordingly.
+3\. **Traiter la facture :** La facture est traitée pour un montant total de $1,015.05 et les écritures comptables sont mises à jour en conséquence.
 
-This approach ensures that minor discrepancies that fall within acceptable tolerance levels do not lead to invoice rejections or delays in payment, thus streamlining the financial process.
+Cette approche garantit que les écarts mineurs qui se situent dans des niveaux de tolérance acceptables n'entraînent pas de rejets de factures ou de retards de paiement, rationalisant ainsi le processus financier.

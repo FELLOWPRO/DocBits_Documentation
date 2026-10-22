@@ -7,7 +7,7 @@
 3. Configurez les paramètres suivants :
    * **Name** : Définissez sur `DocBits_Export`.
    * **Description** : Définissez sur `DocBits_Export`.
-   * **Uncheck** : _Application has IMS End Point_.
+   * **Décocher** : _L'application a IMS End Point_.
    * **ION API Client ID** :
      * Ouvrez le fichier ION API.
      * Recherchez `"ci"` dans le fichier.
@@ -43,7 +43,7 @@
    * **Name** : `DocBits_Export_to_M3`
 4. Ajoutez des nœuds au flux :
 
-#### Application Node
+#### Nœud d’application
 
 1. Ajoutez un **Application Node** au flux.
    * **Name** : `DocBits` ou `DocBits-Export`.
@@ -56,7 +56,7 @@
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_6.png)
 
-#### Mapping Node
+#### Nœud de mappage
 
 1. Ajoutez un **Mapping Node** à droite de l'Application Node.
    * **Name** : `Capt2process`.
@@ -64,7 +64,7 @@
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_7.png)
 
-#### Application Node
+#### Nœud d’application
 
 1. Ajoutez un **Application Node** à droite du Mapping Node précédent.
    * **Name** : `M3`.
@@ -77,7 +77,7 @@
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_9.png)
 
-#### API Node
+#### Nœud API
 
 1. Ajoutez un **API Node** à droite de l'Application Node.
    * **Name** : `DocBits-Error`.

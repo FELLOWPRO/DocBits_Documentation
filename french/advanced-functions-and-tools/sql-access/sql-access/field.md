@@ -1,4 +1,4 @@
-# Field
+# Champ
 
 ## Colonnes
 
@@ -36,8 +36,8 @@
 * `list_of_values` : interne
 * `enforce_list_of_values` : boolean
 * `created_by` : integer
-* `created_on` : timestamp with time zone
-* `last_modified_on` : timestamp with time zone
+* `created_on` : horodatage avec fuseau horaire
+* `last_modified_on` : horodatage avec fuseau horaire
 * `is_deleted` : boolean
 * `costing_element` : interne
 * `erp_field_name` : interne

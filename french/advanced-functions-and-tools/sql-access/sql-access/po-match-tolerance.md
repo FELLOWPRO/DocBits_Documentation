@@ -1,4 +1,4 @@
-# PO match tolerance
+# Tolérance de rapprochement des commandes fournisseur
 
 ## Table `public.po_match_tolerance`
 
@@ -12,8 +12,8 @@
 * `unit_price_tolerance` : double precision
 * `quantity_tolerance` : double precision
 * `created_by` : integer
-* `created_on` : timestamp with time zone
-* `last_modified_on` : timestamp with time zone
+* `created_on` : horodatage avec fuseau horaire
+* `last_modified_on` : horodatage avec fuseau horaire
 * `is_deleted` : boolean
 * `unit_price_tolerance_type` : interne
 * `quantity_tolerance_type` : interne

@@ -25,7 +25,7 @@ Une fois la fonctionnalité **Tableau de bord du fournisseur** activée, une nou
 
 **Disposition du fournisseur:** Ici, vous pouvez créer et gérer les dispositions qui définissent quelles informations les nouveaux fournisseurs doivent fournir lors du processus d'enregistrement.
 
-[**Configuration d'exportation**](../../settings/supplier-setting/export-configuration-for-supplier-portal.md): Ici, vous pouvez définir comment les données sont mappées et synchronisées entre le **Tableau de bord du fournisseur** et le système **Infor M3** à l'aide de fichiers de mappage ION et IDM.
+[**Configuration d'exportation**](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md): Ici, vous pouvez définir comment les données sont mappées et synchronisées entre le **Tableau de bord du fournisseur** et le système **Infor M3** à l'aide de fichiers de mappage ION et IDM.
 
 **Autorisations du fournisseur**: Ici, vous pouvez configurer les autorisations que les fournisseurs auront dans le **Tableau de bord du fournisseur**. Vous pouvez également regrouper les fournisseurs, ce qui facilite la gestion des accès et des paramètres entre plusieurs fournisseurs.
 

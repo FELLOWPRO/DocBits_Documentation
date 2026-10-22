@@ -32,4 +32,4 @@ Une colonne de table est un champ du tableau des lignes d'articles. Tout ce que 
 
 * [Ajouter une nouvelle colonne](adding-a-new-column.md)
 * [Modifier et supprimer des colonnes](editing-and-deleting-columns.md)
-* [Table Extraction Troubleshoot](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md)
+* [Dépannage de l'extraction de table](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md)

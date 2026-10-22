@@ -10,16 +10,16 @@
 * `status` : interne
 * `message` : texte
 * `export_attempts` : integer
-* `last_attempted_on` : timestamp with time zone
-* `next_attempt_on` : timestamp with time zone
+* `last_attempted_on` : horodatage avec fuseau horaire
+* `next_attempt_on` : horodatage avec fuseau horaire
 * `assigned_to` : integer
 * `created_by` : integer
-* `created_on` : timestamp with time zone
-* `last_modified_on` : timestamp with time zone
+* `created_on` : horodatage avec fuseau horaire
+* `last_modified_on` : horodatage avec fuseau horaire
 * `is_deleted` : boolean
 * `task_id` : interne
 * `filename` : interne
-* `assigned_on` : timestamp with time zone
+* `assigned_on` : horodatage avec fuseau horaire
 * `pages` : integer
 * `auto_processed` : boolean
 * `exception_info` : texte
@@ -35,18 +35,18 @@
 * `table_version` : interne
 * `force_ocr` : boolean
 * `locked_by` : integer
-* `locked_on` : timestamp with time zone
-* `lock_renewed_on` : timestamp with time zone
+* `locked_on` : horodatage avec fuseau horaire
+* `lock_renewed_on` : horodatage avec fuseau horaire
 * `lock_key` : interne
 * `last_saved_by` : integer
-* `last_saved_on` : timestamp with time zone
+* `last_saved_on` : horodatage avec fuseau horaire
 * `document_version` : integer
 * `lock_session_key` : interne
 * `sub_org_id` : interne
 * `doc_source` : interne
 * `sub_doc_type` : interne
 * `assigned_to_group` : interne
-* `status_changed_on` : timestamp with time zone
+* `status_changed_on` : horodatage avec fuseau horaire
 * `improve_quality` : boolean
 * `priority` : integer
 * `metadata_field` : json
@@ -58,7 +58,7 @@
 * `celery_task_priority` : integer
 * `has_zugferd` : boolean
 * `has_peppol` : boolean
-* `timestamp_for_validation` : timestamp with time zone
+* `timestamp_for_validation` : horodatage avec fuseau horaire
 * `exception_details` : texte
 * `has_annotated_version` : boolean
 * `po_match_status` : interne

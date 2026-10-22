@@ -418,7 +418,7 @@ dans le PO Match Service :
 - Un numéro de bon de commande corrigé est mis en correspondance lors de
   l'enregistrement qui le corrige.
 
-### Analytics
+### Analytique
 
 - Touchless : toutes les modifications côté serveur derrière la section
   Web App ci-dessus, y compris les preuves enregistrées par chaque étape du

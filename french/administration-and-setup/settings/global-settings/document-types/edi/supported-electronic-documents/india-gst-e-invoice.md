@@ -40,7 +40,7 @@ L'identifiant du contribuable est le **GSTIN** (Goods and Services Tax Identific
 
 ## Aperçu par défaut
 
-<figure><img src="india-gst-e-invoice-preview.png" alt="India GST E-Invoice preview in DocBits"><figcaption><p>Aperçu DocBits par défaut pour une facture électronique GST indienne</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/india-gst-e-invoice-preview.png" alt="India GST E-Invoice preview in DocBits"><figcaption><p>Aperçu DocBits par défaut pour une facture électronique GST indienne</p></figcaption></figure>
 
 ## Correspondance des champs
 
@@ -102,5 +102,5 @@ DocBits détecte les documents India GST E-Invoice en faisant correspondre l'él
 
 ## Voir aussi
 
-- [Standards de facture électronique actuellement pris en charge](../../currently-supported-e-invoice-standards/)
+- [Standards de facture électronique actuellement pris en charge](../currently-supported-e-invoice-standards/README.md)
 - [Documents électroniques pris en charge](./)

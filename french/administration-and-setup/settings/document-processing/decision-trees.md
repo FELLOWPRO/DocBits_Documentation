@@ -19,7 +19,7 @@ Les arbres de décision sont une fonctionnalité puissante qui permet d'automati
 
 La liste des arbres de décision affiche tous les arbres de décision configurés. Ouvrez-la depuis **Settings → Document Processing → Decision Trees**.
 
-<figure><img src="../../../.gitbook/assets/decision_trees.png" alt="Liste des arbres de décision"><figcaption><p>La liste des arbres de décision</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-decision-trees-fr.png" alt="Liste des arbres de décision avec les noms et données de l’organisation masqués ; les lignes masquées ne représentent pas une liste vide."><figcaption><p>Liste des arbres de décision avec les noms et données de l’organisation masqués ; les lignes masquées ne représentent pas une liste vide.</p></figcaption></figure>
 
 Chaque entrée affiche :
 

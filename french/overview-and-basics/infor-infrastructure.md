@@ -14,7 +14,7 @@ En ce qui concerne la communication avec la base de données, nous ne prenons au
 
 La gestion des documents est un jeu d'enfant avec Docbits. Tous les documents téléchargés sont stockés en toute sécurité dans un 'Espace' dédié. Nous utilisons le cryptage SSL pour le trafic de données et exigeons plusieurs clés pour l'accès aux fichiers, veillant à ce que vos documents soient aussi sécurisés qu'un coffre-fort.
 
-### Traffic Security
+### Sécurité du trafic réseau
 
 Nous n'autorisons que les connexions sécurisées par HTTPS pour communiquer avec nos serveurs. Cela garantit que toutes les données transférées sont cryptées, gardant vos informations sensibles en sécurité. C'est comme avoir un garde de sécurité pour vos données, 24/7.
 

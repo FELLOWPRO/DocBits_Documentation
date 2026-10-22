@@ -1,6 +1,6 @@
 # DocBits
 
-**DocBits. Make room for ambition.**
+**DocBits. Faites place à l'ambition.**
 
 Du OCR/IDP à la logique métier, aux approbations et à Advanced Workflows.
 
@@ -38,7 +38,7 @@ Voici un résumé de ses fonctionnalités et avantages uniques :
    * Facilite la comptabilisation automatique sur les comptes du grand livre.
    * Permet de répartir les montants par service.
    * Permet à l'équipe comptable fournisseurs de définir les comptes du grand livre.
-5. **Processus de validation et d'**[**approbation**](broken-reference) **intégrés**
+5. **Processus de validation et d'**[**approbation**](administration-and-setup/settings/global-settings/document-types/more-settings/approval/README.md) **intégrés**
    * Propose des processus de validation intégrés pour garantir l'exactitude des données.
    * Comprend des [workflows](administration-and-setup/workflow/) d'approbation pour simplifier le traitement des documents.
 6. **Intégration transparente**

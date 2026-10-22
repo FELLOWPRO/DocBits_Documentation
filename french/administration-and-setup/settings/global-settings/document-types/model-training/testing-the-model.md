@@ -1,55 +1,22 @@
 # Tester le modèle
 
-## Étapes pour exécuter des tests de classification afin d'évaluer la précision et l'état de préparation opérationnelle du modèle
+Un test doit mesurer le résultat sur des documents représentatifs qui n’ont pas servi à l’entraînement. Préparez pour chacun les réponses attendues : type de document et, pour une évaluation de l’extraction, valeurs des champs.
 
-Pour tester le modèle entraîné et évaluer sa précision et son état de préparation opérationnelle, vous pouvez suivre les étapes ci-dessous :
+## Exécuter le test
 
+1. Ouvrez l’entraînement du type de document à évaluer.
+2. Choisissez **Test de classification** lorsque cette commande est disponible dans votre version.
+3. Sélectionnez l’échantillon de test et lancez l’évaluation selon les options proposées.
+4. Attendez la fin du traitement et relevez les résultats et les erreurs. Une erreur technique ou un test incomplet ne vaut pas une classification correcte.
 
+<figure><img src="../../../../../.gitbook/assets/site-extra-model-training-overview-fr.png" alt="Vue de l’entraînement du modèle avec les commandes Importer, Entraîner le modèle et Test de classification. Aucun entraînement ni test n’a été exécuté ; cette vue ne présente pas un résultat de précision. Le titre de colonne Name reste en anglais dans le produit."><figcaption><p>Vue de l’entraînement du modèle avec les commandes Importer, Entraîner le modèle et Test de classification. Aucun entraînement ni test n’a été exécuté ; cette vue ne présente pas un résultat de précision. Le titre de colonne Name reste en anglais dans le produit.</p></figcaption></figure>
 
-**Préparation des données de test :**&#x20;
+## Interpréter les résultats
 
-* Collectez un échantillon représentatif de données de test couvrant les différents types de documents et scénarios que le modèle traitera sur le terrain. Assurez-vous que les données de test sont de haute qualité et correctement étiquetées.
+Comparez les prédictions aux réponses attendues. Relevez les erreurs par type de document et par format. Si vous calculez l’exactitude, la précision, le rappel ou le score F1, indiquez aussi la taille de l’échantillon et les catégories évaluées. N’attribuez pas au produit une métrique que l’écran de votre version ne fournit pas : vous pouvez la calculer séparément à partir des résultats exportés ou relevés.
 
+Les règles de classification et d’extraction sont des réglages distincts de l’entraînement. Vérifiez leur effet si elles interviennent dans le traitement ; ne modifiez pas une règle simplement pour masquer un échec sur l’échantillon de test.
 
+## Corriger puis refaire le test
 
-**Exécution des tests de classification :**&#x20;
-
-* Exécutez les tests de classification sur les données de test préparées.&#x20;
-* Fournissez les données de test au modèle et laissez-le établir ses prédictions pour classer les documents.
-
-<figure><img src="../../../../../.gitbook/assets/image (91).png" alt="" width="375"><figcaption><p>Setting</p></figcaption></figure>
-
-* Ajoutez une nouvelle règle de classification ou modifiez une règle existante.
-
-<figure><img src="../../../../../.gitbook/assets/image (92).png" alt=""><figcaption><p>Settings: Classification and Extraction </p></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/image (90).png" alt="" width="276"><figcaption><p>Configure classification Rule</p></figcaption></figure>
-
-**Évaluation de la précision du modèle :**&#x20;
-
-* Comparez les prédictions du modèle avec les classifications réelles des données de test. Calculez des métriques telles que l'exactitude, la précision, le rappel et le score F1 pour évaluer les performances du modèle. Ces métriques indiquent dans quelle mesure le modèle a bien classé les documents et son degré de fiabilité.
-
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 08.53.41.png" alt=""><figcaption></figcaption></figure>
-
-
-
-**Analyse des erreurs :**&#x20;
-
-* Examinez les erreurs commises par le modèle lors de la classification des données de test et analysez leurs causes. Identifiez les schémas ou tendances dans les erreurs et, si nécessaire, ajustez le modèle pour améliorer ses performances.
-
-
-
-**Optimisation du modèle :**&#x20;
-
-* À partir des résultats des tests de classification et de l'analyse des erreurs, vous pouvez optimiser le modèle en ajoutant des données d'entraînement, en ajustant les paramètres d'entraînement ou en modifiant l'architecture du modèle. Répétez le processus de test pour vérifier si les optimisations ont amélioré les performances du modèle.
-
-
-
-**Documentation des résultats :**&#x20;
-
-* Documentez les résultats des tests de classification ainsi que les ajustements ou optimisations apportés au modèle. Cela vous aidera à suivre la progression du modèle dans le temps et à vous assurer qu'il s'améliore constamment.
-
-En exécutant régulièrement des tests de classification et en évaluant les performances de votre modèle, vous vous assurez qu'il est adapté à une utilisation en production et fournit des résultats précis.
-
-
-
+Corrigez les données d’entraînement, leurs libellés ou les paramètres réellement accessibles dans votre installation, puis entraînez à nouveau si nécessaire. Refaites le test avec le même protocole et conservez un échantillon indépendant. Documentez la version, les données utilisées, les résultats et les régressions. Une bonne performance sur cet échantillon ne garantit pas le même résultat sur tous les futurs documents.

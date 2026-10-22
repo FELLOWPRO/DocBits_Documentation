@@ -21,7 +21,7 @@ Parallèlement au `INVOICE_TYPE_CODE` brut, la XSLT TRANSFORMATION par défaut �
 | Champ DocBits | Source (schéma 1.0) | Logique |
 | :--- | :--- | :--- |
 | `INVOICE_TYPE` | `CrossIndustryDocument/HeaderExchangedDocument/TypeCode` | UNCL 1001 `381` ou `261` → **Credit Note** ; tout autre code → **Invoice** |
-| `INVOICE_SUB_TYPE` | `SpecifiedSupplyChainTradeTransaction/ApplicableSupplyChainTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | Non vide → **Purchase Invoice** ; vide/absent → **Cost Invoice** |
+| `INVOICE_SUB_TYPE` | `SpecifiedSupplyChainTradeTransaction/ApplicableSupplyChainTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | Non vide → **Facture d'achat** ; vide/absent → **Facture de coûts** |
 
 ### Ventilation des taxes (classification par tranches)
 

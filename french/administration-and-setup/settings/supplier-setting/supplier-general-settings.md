@@ -6,7 +6,7 @@
 
 L'interface **Paramètres généraux du fournisseur** fournit aux administrateurs les outils essentiels pour personnaliser le portail fournisseur. Parmi les fonctionnalités clés figurent la possibilité de téléverser le logo de l'entreprise et de définir la politique et la déclaration de confidentialité. Ces paramètres sont essentiels pour préserver la cohérence de la marque et garantir le respect des exigences légales.
 
-### Upload Logo
+### Téléverser le logo
 
 #### Objectif
 
@@ -32,7 +32,7 @@ La fonctionnalité **Télécharger le logo** permet aux administrateurs de perso
 * **Taille du fichier** : utilisez un fichier image compressé pour réduire les temps de chargement et améliorer l'expérience utilisateur.
 * **Cohérence de la marque** : utilisez le même logo sur toutes les plateformes afin de conserver une identité de marque cohérente.
 
-### Policy and Privacy Statement
+### Politique et déclaration de confidentialité
 
 #### Objectif
 
@@ -42,7 +42,7 @@ La section **Politique et déclaration de confidentialité** permet aux administ
 
 1. **Accédez à Supplier General Settings** :
    * Accédez à la section **Paramètres généraux du fournisseur** depuis le menu principal.
-2. **Repérez la section Policy and Privacy Statement** :
+2. **Repérez la section Politique et déclaration de confidentialité** :
    * Faites défiler la page jusqu'à la section **Politique et déclaration de confidentialité**.
 3. **Téléversez ou mettez à jour les documents** :
    * Cliquez sur le bouton **Importer le document** pour sélectionner le ou les fichiers concernés.

@@ -67,6 +67,6 @@ Les outils du DocBits MCP sont décrits sous [DocBits MCP](https://docs.docbits.
 ## Pages associées
 
 * [Dépannage de l'extraction de table](table-extraction-troubleshoot.md) : qualité d'extraction, OCR, E-Text, messages sur le tableau
-* [Training Line Fields / Table Training](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md)
+* [Champs de ligne de formation / Formation de table](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md)
 * [Tableau AI](../../../end-user-and-partner-section/end-user-section/ai-table/README.md)
 * [Paramètres de journal](../../../administration-and-setup/settings/log-settings/README.md)

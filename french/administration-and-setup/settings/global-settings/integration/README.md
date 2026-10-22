@@ -4,7 +4,7 @@
 
 La page Integration & SSO permet de gérer les clés d'API pour l'accès programmatique, les identifiants d'organisation et la configuration de l'authentification unique (SSO).
 
-## API Key
+## Clé API
 
 Gérez les clés d'API utilisées pour l'accès programmatique à DocBits.
 
@@ -28,7 +28,7 @@ Affiche les identifiants de votre organisation :
 | **ID de l'organe** | L'identifiant unique de votre organisation. |
 | **ID de l'organe secondaire** | L'identifiant de la sous-organisation actuellement sélectionnée. |
 
-## SSO Service Provider Settings
+## Paramètres du fournisseur de services SSO
 
 Valeurs de configuration SSO de DocBits nécessaires pour configurer votre fournisseur d'identité (Identity Provider) :
 
@@ -40,7 +40,7 @@ Valeurs de configuration SSO de DocBits nécessaires pour configurer votre fourn
 
 Vous pouvez également utiliser **Télécharger le certificat** et **Télécharger les métadonnées** pour la configuration de votre IdP.
 
-## Identity Service Provider Settings
+## Paramètres du fournisseur de services d’identité
 
 Configurez votre fournisseur d'identité (IdP) externe :
 

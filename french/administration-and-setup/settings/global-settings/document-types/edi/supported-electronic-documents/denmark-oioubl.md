@@ -30,7 +30,7 @@ OIOUBL (Offentlig Information Online UBL) est le standard danois de facturation 
 
 ## Aperçu par défaut
 
-<figure><img src="denmark-oioubl-preview.png" alt="Aperçu de la facture Denmark OIOUBL 2.1 dans DocBits"><figcaption><p>Aperçu par défaut DocBits pour une facture Denmark OIOUBL 2.1 (Faktura)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/denmark-oioubl-preview.png" alt="Aperçu de la facture Denmark OIOUBL 2.1 dans DocBits"><figcaption><p>Aperçu par défaut DocBits pour une facture Denmark OIOUBL 2.1 (Faktura)</p></figcaption></figure>
 
 ## Correspondance des champs
 
@@ -91,5 +91,5 @@ L'élément racine est `<Invoice>` (ou `<CreditNote>`) dans l'espace de noms UBL
 
 ## Liens connexes
 
-- [Standards de facturation électronique actuellement pris en charge](../../currently-supported-e-invoice-standards/)
+- [Standards de facturation électronique actuellement pris en charge](../currently-supported-e-invoice-standards/README.md)
 - [Documents électroniques pris en charge](./)

@@ -1,14 +1,14 @@
-# Export Dashboard Data
+# Exporter les données du tableau de bord
 
-1.  **Navigate to Settings**: Go to **Settings → Module**.\
+1.  **Naviguez vers Paramètres** : Accédez à **Paramètres → Module**.\
 
 
     <figure><img src="../../../../.gitbook/assets/image (10) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
-2.  **Enable Export Dashboard Data**: Locate and activate the **Export Dashboard Data** option.\
+2.  **Activer l'exportation des données du tableau de bord** : localisez et activez l'option **Exporter les données du tableau de bord**.\
 
 
     <figure><img src="../../../../.gitbook/assets/image (11) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
-3. **Export Dashboard**: Once enabled, a button will appear on the dashboard, allowing you to export the data as a CSV file.
+3. **Exporter le tableau de bord** : Une fois activé, un bouton apparaîtra sur le tableau de bord, vous permettant d'exporter les données sous forme de fichier CSV.
 
 <figure><img src="../../../../.gitbook/assets/image (14) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 

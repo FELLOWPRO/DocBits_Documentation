@@ -30,7 +30,7 @@ PINT A-NZ (Modèle Peppol International pour l'Australie-Nouvelle-Zélande) est 
 
 ## Aperçu par défaut
 
-<figure><img src="aunz-pint-preview.png" alt="Aperçu de facture PINT A-NZ dans DocBits"><figcaption><p>Aperçu par défaut de DocBits pour une facture PINT A-NZ</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="Aperçu de facture PINT A-NZ dans DocBits"><figcaption><p>Aperçu par défaut de DocBits pour une facture PINT A-NZ</p></figcaption></figure>
 
 ## Mappage des champs
 

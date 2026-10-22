@@ -1,4 +1,4 @@
-# Lookup table
+# Table de recherche
 
 ## Table `public.lookup_table`
 
@@ -11,12 +11,12 @@
 * `prop_name` : interne
 * `prop_value` : interne
 * `created_by` : integer
-* `created_on` : timestamp with time zone
-* `last_modified_on` : timestamp with time zone
+* `created_on` : horodatage avec fuseau horaire
+* `last_modified_on` : horodatage avec fuseau horaire
 * `is_deleted` : boolean
 * `prop_value_clean` : interne
 * `version` : integer
-* `deleted_on` : timestamp with time zone
+* `deleted_on` : horodatage avec fuseau horaire
 * `sub_org_id` : interne
 
 ### Analyse et description

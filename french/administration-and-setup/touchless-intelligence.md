@@ -44,7 +44,7 @@ Chaque document se termine par exactement **un** résultat :
 | **Touchless pur** (Pure touchless) | Traité de l'importation à l'exportation **sans aucune intervention humaine** | Oui, comme un succès |
 | **Touchless AP** (AP touchless) | Traité automatiquement, et une personne a seulement donné l'**approbation métier**. Aucune correction n'a été nécessaire | Oui, comme un succès |
 | **AP assisté** (AP assisted) | Une personne a dû **corriger un champ, redémarrer le document** ou intervenir d'une autre manière | Oui, comme un échec. Ce n'est pas une défaillance, seulement une automatisation qui n'a pas mené le document jusqu'au bout |
-| **Exception de processus** (Process exception) | S'est terminé par une **erreur**, a été **rejeté**, a été **refusé par l'ERP** ou s'est **bloqué** dans le pipeline | Oui, comme un échec |
+| **Exception de processus** | S'est terminé par une **erreur**, a été **rejeté**, a été **refusé par l'ERP** ou s'est **bloqué** dans le pipeline | Oui, comme un échec |
 | **En cours** (In progress) | Pas encore terminé | **Non**. Il n'a pas encore de résultat |
 | **Non éligible** (Not eligible) | Supprimé, archivé, document de test ou type de document exclu | **Non** |
 

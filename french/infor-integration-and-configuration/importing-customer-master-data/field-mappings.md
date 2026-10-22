@@ -1,8 +1,8 @@
-# Field Mappings
+# Mappage des champs
 
-Below you will find the necessary field mappings for importing master data, from Infor, into DocBits.
+Vous trouverez ci-dessous les mappages de champs nécessaires pour importer les données de base, de Infor vers DocBits.
 
-## Auto Accounting (LN)
+## Comptabilisation automatique (LN)
 
 ### ChartOfAccounts
 
@@ -42,7 +42,7 @@ Below you will find the necessary field mappings for importing master data, from
 }
 ```
 
-## Auto Accounting (M3)
+## Comptabilisation automatique (M3)
 
 ### ChartOfAccounts
 
@@ -82,9 +82,9 @@ Below you will find the necessary field mappings for importing master data, from
 }
 ```
 
-## Tax Code
+## Code fiscal
 
-### Full
+### Complet
 
 ```javascript
 {
@@ -98,7 +98,7 @@ Below you will find the necessary field mappings for importing master data, from
 }
 ```
 
-### Reduced
+### Réduit
 
 ```javascript
 {
@@ -112,7 +112,7 @@ Below you will find the necessary field mappings for importing master data, from
 }
 ```
 
-### Free
+### Gratuit
 
 ```javascript
 {

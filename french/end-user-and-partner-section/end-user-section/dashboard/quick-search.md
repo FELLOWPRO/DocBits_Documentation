@@ -388,7 +388,7 @@ assigned_to=""
 currency=EUR
 ```
 
-<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_10_currency_suffix-fr.png" alt="Saisie d’une requête en euros : currency=EUR."><figcaption><p>Saisie d’une requête en euros : currency=EUR.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_10_currency_suffix-fr.png" alt="Saisie d’une requête en euros : currency=EUR."><figcaption><p>Saisie d'une requête en euros : monnaie=EUR.</p></figcaption></figure>
 
 #### Échéance antérieure à aujourd’hui
 

@@ -28,9 +28,9 @@ The visibility setting controls who can **use** the view. It does not grant acce
 
 ## Switch, update or remove a view
 
-Use the view badge to switch to a saved dashboard or to return to **Default Dashboard**, the unsaved view of all documents. The dashboard you open last is kept, so it is still active after a page reload or the next sign-in.
+Use the view badge to switch to a saved dashboard or to return to **Default Dashboard**, the unsaved view of all documents. The dashboard you open last stays active when you reload the page.
 
-After changing a loaded dashboard — including changes to columns or sorting only — **Save Dashboard Changes** becomes available in the badge menu. Select it to store the change under the same name. It stays unavailable when nothing has changed or when the dashboard belongs to somebody else; a shared view cannot be overwritten, so create your own instead.
+After changing a loaded dashboard — including changes to columns only — **Save Dashboard Changes** becomes available in the badge menu. Select it to store the change under the same name. It stays unavailable when nothing has changed or when the dashboard belongs to somebody else; a shared view cannot be overwritten, so create your own instead.
 
 ## Rename or reshare a dashboard
 

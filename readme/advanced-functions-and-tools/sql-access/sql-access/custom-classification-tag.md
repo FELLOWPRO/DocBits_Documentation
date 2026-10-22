@@ -1,4 +1,4 @@
-# Custom classification tag
+# Label voor aangepaste classificatie
 
 ## Tabel `public.custom_classification_tag`
 
@@ -8,8 +8,8 @@
 * `org_id`: ID naar organisatie
 * `name`: intern
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: tijdstempel met tijdzone
+* `last_modified_on`: tijdstempel met tijdzone
 * `is_deleted`: boolean
 
 ### Analyse & beschrijving

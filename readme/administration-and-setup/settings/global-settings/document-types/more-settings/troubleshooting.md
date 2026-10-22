@@ -1,33 +1,33 @@
-# Troubleshooting
+# Problemen oplossen
 
-## Even with careful configuration, document processing can occasionally encounter problems. Here are some troubleshooting tips for common problems that may arise from the configurations:
+## Veelvoorkomende problemen met de configuratie oplossen
 
-### Additional order settings:
+### Aanvullende orderinstellingen:
 
-* Check that all additional parameters are correctly configured and meet business requirements.
-* Make sure that the configuration matches system requirements and user needs.
+* Controleer of alle aanvullende parameters correct zijn ingesteld en aan de bedrijfseisen voldoen.
+* Zorg dat de configuratie bij de systeemvereisten en gebruikersbehoeften past.
 
-### Export to IDM:
+### Export naar IDM:
 
-* Make sure that the connection to the IDM system is correctly configured and that all necessary permissions are in place.
-* Check that the document format is compatible with the requirements of the IDM system.
+* Controleer of de verbinding met het IDM-systeem correct is ingesteld en alle noodzakelijke rechten aanwezig zijn.
+* Controleer of het documentformaat aan de vereisten van het IDM-systeem voldoet.
 
-### Additional tolerance settings:
+### Aanvullende tolerantie-instellingen:
 
-* Make sure that the tolerance limits are realistic and feasible.
-* Check regularly that the tolerance limits meet current business requirements.
+* Zorg dat tolerantiegrenzen realistisch en haalbaar zijn.
+* Controleer regelmatig of tolerantiegrenzen nog bij de bedrijfseisen passen.
 
-### Alternative document export:
+### Alternatieve documentexport:
 
-* Test the export in different formats to make sure that all required information is exported correctly.
-* Make sure that the export formats are compatible with the requirements of the recipients or target systems.
+* Test de export in verschillende formaten om te controleren of alle vereiste informatie correct wordt geëxporteerd.
+* Controleer of exportformaten aan de eisen van ontvangers en doelsystemen voldoen.
 
-### Order deactivation status:
+### Status voor orderdeactivering:
 
-* Review the status deactivation configuration to ensure it is not unnecessarily blocking the workflow.
-* Make sure all users are aware of the status changes and know how to respond.
+* Controleer de configuratie voor statusdeactivering, zodat deze de workflow niet onnodig blokkeert.
+* Zorg dat gebruikers de statuswijzigingen kennen en weten hoe zij daarop moeten reageren.
 
 
 
-By applying these settings and best practices, organizations can streamline their document processing processes, improve data accuracy, and ensure regulatory compliance.
+Met deze instellingen en werkwijzen kunnen organisaties documentverwerking stroomlijnen, de gegevensnauwkeurigheid verbeteren en de naleving van regelgeving ondersteunen.
 

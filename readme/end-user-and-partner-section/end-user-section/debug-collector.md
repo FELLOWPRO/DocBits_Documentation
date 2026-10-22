@@ -1,4 +1,4 @@
-# Debug Collector
+# Debugverzamelaar
 
 De Debug Collector legt een volledige momentopname van uw DocBits-sessie vast — netwerkactiviteit, fouten, browseromgeving en prestatiestatistieken — verpakt deze als een JSON-rapport en kan desgewenst direct vanuit hetzelfde dialoogvenster een supportticket aanmaken.
 

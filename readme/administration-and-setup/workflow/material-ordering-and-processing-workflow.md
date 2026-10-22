@@ -1,8 +1,8 @@
 ---
 description: >-
-  Explore the step-by-step workflow for material ordering, goods receipt, and
-  invoice processing with INFOR ERP and DocBits integration. Effective supplier
-  and document management in one.
+  Ontdek stap voor stap de workflow voor materiaalbestelling, goederenontvangst
+  en factuurverwerking met de integratie van INFOR ERP en DocBits. Beheer
+  leveranciers en documenten efficiënt op één plek.
 ---
 
 # Materiaalbestelling en -verwerkingsworkflow

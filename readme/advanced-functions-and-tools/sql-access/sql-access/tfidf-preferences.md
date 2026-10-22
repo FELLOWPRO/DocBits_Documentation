@@ -1,4 +1,4 @@
-# Tfidf preferences
+# TF-IDF-voorkeuren
 
 ## Kolommen
 

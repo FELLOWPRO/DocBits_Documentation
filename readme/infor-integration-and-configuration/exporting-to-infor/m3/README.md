@@ -7,7 +7,7 @@
 3. Configureer de volgende instellingen:
    * **Name**: Stel in op `DocBits_Export`.
    * **Description**: Stel in op `DocBits_Export`.
-   * **Uncheck**: _Application has IMS End Point_.
+   * **Deselecteer**: _Applicatie heeft IMS Eindpunt_.
    * **ION API Client ID**:
      * Open het ION API bestand.
      * Zoek naar `"ci"` binnen het bestand.
@@ -43,7 +43,7 @@
    * **Name**: `DocBits_Export_to_M3`
 4. Voeg nodes toe aan de flow:
 
-#### Application Node
+#### Applicatieknooppunt
 
 1. Voeg een **Application Node** toe aan de flow.
    * **Name**: `DocBits` of `DocBits-Export`.
@@ -56,7 +56,7 @@
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_6.png)
 
-#### Mapping Node
+#### Mappingknooppunt
 
 1. Voeg een **Mapping Node** toe rechts van de Application Node.
    * **Name**: `Capt2process`.
@@ -64,7 +64,7 @@
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_7.png)
 
-#### Application Node
+#### Applicatieknooppunt
 
 1. Voeg een **Application Node** toe rechts van de vorige Mapping Node.
    * **Name**: `M3`.
@@ -77,7 +77,7 @@
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_9.png)
 
-#### API Node
+#### API-knooppunt
 
 1. Voeg een **API Node** toe rechts van de Application Node.
    * **Name**: `DocBits-Error`.
@@ -95,7 +95,7 @@
 
 ## Stap 4: Export configureren in DocBits
 
-### On-Premise:
+### Op locatie:
 
 1. Open **DocBits**.
 2.  Navigeer naar **Instellingen > Documentverwerking > Exporteren**.

@@ -1,4 +1,4 @@
-# Supplier BOD Mapping
+# Leveranciers-BOD-mapping
 
 Deze pagina documenteert hoe DocBits leveranciers-stamgegevens uit Infor M3 inleest via de BODs `SyncSupplierPartyMaster` en `SyncRemitToPartyMaster`. Beide BODs vullen dezelfde `SUPPLIER`-stamgegevenstabel in DocBits.
 

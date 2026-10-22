@@ -1,7 +1,7 @@
 # Problemen oplossen
 
 {% embed url="https://youtu.be/fQUIrp-qz9c" %}
-DocBits Support Ticket Tutorial: Report Bugs, Attach Files & Get Help Faster
+DocBits Tutorial voor ondersteuningstickets: rapporteer bugs, voeg bestanden toe en krijg sneller hulp
 {% endembed %}
 
 ## Het oplossen van problemen met de configuratie van documenttypen in DocBits kan complex zijn omdat verschillende factoren de herkenning en extractie van gegevens kunnen beïnvloeden.

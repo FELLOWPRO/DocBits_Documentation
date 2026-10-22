@@ -4,7 +4,7 @@
 
 <figure><img src="../../.gitbook/assets/docbits_cloud_customer_architecture.png" alt="Architectuur voor DocBits Cloud-klanten"><figcaption></figcaption></figure>
 
-## DocBits On premise
+## DocBits op locatie
 
 <figure><img src="../../.gitbook/assets/docbits_on_premise_architecture.png" alt="Architectuur van DocBits On Premise"><figcaption></figcaption></figure>
 

@@ -1,31 +1,31 @@
-# Purpose and Use
+# Doel en gebruik
 
-### The Layout Manager is an essential tool for ensuring that document types are properly configured to accurately capture and organize data. Here are some reasons why using a Layout Manager is important:
+### Waarom de lay-outbeheerder belangrijk is
 
-#### Structured Presentation:
+#### Gestructureerde weergave:
 
-* A Layout Manager enables an orderly and structured presentation of information.
-* Setting placement rules for different data elements ensures that information is presented consistently and clearly.
+* Een lay-outbeheerder zorgt voor een geordende en gestructureerde weergave van informatie.
+* Met plaatsingsregels voor de gegevenselementen wordt informatie consistent en duidelijk weergegeven.
 
-#### Efficient Data Capture:
+#### Efficiënte gegevensinvoer:
 
-* Using a Layout Manager enables users to capture information more efficiently.
-* A well-designed layout results in users knowing intuitively where to enter specific data, which speeds up data capture and reduces the risk of errors.
+* Met een lay-outbeheerder kunnen gebruikers informatie efficiënter invoeren.
+* In een goed ontworpen lay-out weten gebruikers intuïtief waar zij gegevens moeten invoeren. Dit versnelt de invoer en verkleint de kans op fouten.
 
-#### Consistency:
+#### Consistentie:
 
-* Consistent layouts ensure consistency in documentation.
-* When different documents use the same Layout Manager, a consistent presentation of information across different documents is ensured.
-* This is especially important in environments where many different users access or collaborate on documents.
+* Consistente lay-outs zorgen voor een uniforme documentatie.
+* Gebruik van dezelfde lay-outbeheerder zorgt voor een consistente weergave van informatie in verschillende documenten.
+* Dit is vooral belangrijk wanneer veel gebruikers documenten raadplegen of eraan samenwerken.
 
-#### Adaptability:
+#### Aanpasbaarheid:
 
-* A Layout Manager enables the appearance of documents to be customized depending on requirements.
-* Depending on the type of document or specific requirements, layouts can be customized to better present different types of data or information.
+* Met een lay-outbeheerder kunt u de weergave van documenten afstemmen op de behoeften.
+* U kunt lay-outs aanpassen aan het documenttype of specifieke eisen, zodat verschillende soorten gegevens duidelijker worden weergegeven.
 
-#### Scalability:
+#### Schaalbaarheid:
 
-* A well-configured layout manager makes it easier to scale documents.
-* When new data needs to be added or requirements change, the layout manager can be customized to easily handle those changes without the need for a major redesign.
+* Een goed ingestelde lay-outbeheerder vereenvoudigt het uitbreiden van documenten.
+* Wanneer u nieuwe gegevens moet toevoegen of de eisen veranderen, kunt u de lay-outbeheerder aanpassen zonder een volledig nieuw ontwerp te maken.
 
-Overall, using a layout manager is critical to ensure that data is captured and organized accurately. A well-designed layout improves the user experience, promotes efficiency in data entry, and contributes to the consistency and adaptability of documents.
+Een lay-outbeheerder helpt gegevens nauwkeurig vast te leggen en te ordenen. Een goed ontworpen lay-out verbetert de gebruikerservaring en de efficiëntie van de gegevensinvoer en maakt documenten consistenter en beter aanpasbaar.

@@ -4,9 +4,9 @@
 
 #### Overzicht van de workflowcomponenten:
 
-* **AP Invoice Email**: Het proces begint waarschijnlijk met een factuur die per e-mail wordt ontvangen.
+* **Ontvangst van facturen per e-mail**: Het proces begint waarschijnlijk met een factuur die per e-mail wordt ontvangen.
 * **DocBits**: Deze tool wordt mogelijk gebruikt voor de initiële documentbeheertaken, zoals het vastleggen en digitaliseren van facturen.
-* **Finance Review**: Facturen ondergaan een financiële beoordeling waarbij beslissingen worden genomen over de geldigheid en juistheid ervan.
+* **Financiële controle**: Facturen ondergaan een financiële beoordeling waarbij beslissingen worden genomen over de geldigheid en juistheid ervan.
 
 #### Stappen in de workflow:
 

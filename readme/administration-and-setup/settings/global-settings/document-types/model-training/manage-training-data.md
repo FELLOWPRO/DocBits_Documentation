@@ -1,34 +1,36 @@
-# Manage training data
+# Trainingsgegevens beheren
 
-## Manage existing training data, including adding, editing, or removing records.
+**Toepassing van deze richtlijnen:** dit zijn algemene aanbevelingen voor machinelearning. Beschikbare trainingsopties hangen af van de gebruikte DocBits-versie, configuratie en ondersteunde API of editor. Verwijzingen naar hyperparameters, modelarchitectuur, versleuteling of automatisering betekenen niet dat hiervoor in elke installatie een instelbare gebruikersinterface bestaat.
 
-**To effectively manage training data, you can take the following steps:**
+## Bestaande trainingsgegevens toevoegen, bewerken en verwijderen
 
-**Adding new records:**
+**Stappen om trainingsgegevens effectief te beheren:**
 
-* Collect new documents to serve as training data for your model.
-* Make sure these documents are a representative sample of the different types of data the model is designed to process.
-* Upload the new records to your training data repository.
+**Nieuwe records toevoegen:**
 
-**Editing existing records**:
+* Verzamel nieuwe documenten als trainingsgegevens voor uw model.
+* Zorg dat deze documenten een representatieve steekproef vormen van de verschillende gegevens die het model moet verwerken.
+* Upload de nieuwe records naar uw opslag voor trainingsgegevens.
 
-* Regularly review your existing training data and update it as needed. This may include editing document metadata, adding additional labels, or removing erroneous or non-representative records.
+**Bestaande records bewerken**:
 
-**Removing records:**
+* Controleer bestaande trainingsgegevens regelmatig en werk ze zo nodig bij. Bewerk bijvoorbeeld documentmetadata, voeg labels toe of verwijder onjuiste of niet-representatieve records.
 
-* Identify outdated, inaccurate, or no longer relevant records and remove them from your training data set.
-* Make sure you have a clear process for deciding which records to remove and document that process.
+**Records verwijderen:**
 
-**Training data versioning:**
+* Verwijder verouderde, onjuiste of niet meer relevante records uit de trainingsgegevens.
+* Leg duidelijk vast hoe u bepaalt welke records moeten worden verwijderd.
 
-* Implement a version control system for your training data to track changes and keep a clear history of dataset changes. This allows you to restore older versions of the training data when needed and track changes.
+**Versiebeheer van trainingsgegevens:**
 
-**Training data security:**
+* Gebruik versiebeheer om wijzigingen in de trainingsgegevens bij te houden en een duidelijke wijzigingsgeschiedenis te bewaren. Zo kunt u eerdere versies herstellen en wijzigingen volgen.
 
-* Ensure your training data is appropriately protected, especially if it contains sensitive or confidential information. Implement access controls to ensure only authorized users can access the training data, and encrypt the data during transfer and storage.
+**Beveiliging van trainingsgegevens:**
 
-**Documentation and tracking:**
+* Bescherm trainingsgegevens adequaat, vooral wanneer deze gevoelige of vertrouwelijke informatie bevatten. Beperk de toegang tot bevoegde gebruikers en versleutel de gegevens tijdens overdracht en opslag.
 
-* Document all changes to your training data, including adding, editing, and removing datasets. This allows you to track the history of your training data and ensure you have current and relevant data for training your model.
+**Documenteren en volgen:**
 
-By regularly managing and updating your training data, you can ensure that your model is trained with current and representative data and achieves optimal performance.
+* Documenteer alle wijzigingen in trainingsgegevens, waaronder het toevoegen, bewerken en verwijderen van datasets. Zo kunt u de geschiedenis volgen en actuele en relevante gegevens voor modeltraining behouden.
+
+Door trainingsgegevens regelmatig te beheren en bij te werken, traint u het model met actuele en representatieve gegevens en ondersteunt u optimale prestaties.

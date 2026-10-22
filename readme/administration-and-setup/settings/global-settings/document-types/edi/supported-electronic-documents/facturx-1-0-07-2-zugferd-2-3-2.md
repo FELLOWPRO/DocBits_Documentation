@@ -35,5 +35,5 @@ Factur-X 1.0.07.2 is gelijkwaardig aan ZUGFeRD 2.3.2, uitgebracht in november 20
 ## Gerelateerd
 
 * [ZUGFeRD-configuratie](../zugferd/)
-* [ZUGFeRD-veldtoewijzing](../zugferd/versions/)
+* [ZUGFeRD-veldtoewijzing](../zugferd/README.md)
 * [Ondersteunde elektronische documenten](./)

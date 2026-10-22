@@ -1,22 +1,22 @@
-# Best practices
+# Aanbevolen werkwijzen
 
-## Best practices for efficient and precise document layouts.
+## Aanbevolen werkwijzen voor efficiënte en nauwkeurige documentlay-outs
 
-### Logical organization of fields:
+### Velden logisch ordenen:
 
-* Group related fields together to create a logical and intuitive structure. This makes it easier for users to navigate and enter data.
-* Arrange fields so that frequently used or important information is easily accessible and placed in a prominent location.
+* Groepeer bij elkaar horende velden voor een logische en intuïtieve structuur. Dit vereenvoudigt navigatie en gegevensinvoer.
+* Plaats veelgebruikte of belangrijke informatie op een opvallende en gemakkelijk bereikbare plek.
 
-### Ensuring data completeness:
+### Volledige gegevens waarborgen:
 
-* Identify all required data fields and mark them accordingly. Ensure users are prompted to enter all necessary information to avoid incomplete records.
-* Use validation rules to ensure that entered data conforms to expected formats and criteria.
+* Bepaal welke velden verplicht zijn en markeer ze als zodanig. Vraag gebruikers alle noodzakelijke informatie in te voeren om onvolledige records te voorkomen.
+* Gebruik validatieregels om te controleren of de ingevoerde gegevens aan de verwachte formaten en criteria voldoen.
 
-### Clear labels and instructions:
+### Duidelijke labels en instructies:
 
-* Use clear and precise labels for fields to help users enter the expected data.
-* Add instructions or notes when additional information is required to ensure users provide the correct data.
+* Gebruik duidelijke en nauwkeurige veldlabels, zodat gebruikers weten welke gegevens zij moeten invoeren.
+* Voeg instructies of opmerkingen toe wanneer extra uitleg nodig is om de juiste gegevens in te voeren.
 
-### Test and optimize:
+### Testen en optimaliseren:
 
-* Test the layout and data entry thoroughly to ensure that all data is captured and stored correctly. Collect feedback from users and make adjustments to continuously improve user experience and data integrity.
+* Test de lay-out en gegevensinvoer grondig om te controleren of alle gegevens correct worden vastgelegd en opgeslagen. Verzamel feedback en pas de lay-out aan om de gebruikerservaring en gegevensintegriteit te verbeteren.

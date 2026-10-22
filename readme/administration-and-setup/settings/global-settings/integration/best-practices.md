@@ -1,4 +1,4 @@
-# Best practices
+# Aanbevolen werkwijzen
 
 Best practices voor het configureren and onderhouden van integratie-instellingen helpen bij het waarborgen van de efficiëntie, beveiliging and betrouwbaarheid van de integratie tussen DocBits and uw Identity Service Provider (IdP).
 

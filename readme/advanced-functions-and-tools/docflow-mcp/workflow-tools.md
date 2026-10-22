@@ -1,4 +1,4 @@
-# Workflow Tools
+# Workflowhulpmiddelen
 
 DocFlow MCP biedt tools voor het beheren en testen van geavanceerde workflows, plus tools voor het lezen van workflowlogs en het beheren van workflowvariabelen.
 
@@ -6,7 +6,9 @@ DocFlow MCP biedt tools voor het beheren en testen van geavanceerde workflows, p
 **Toolnamen via de DocBits MCP-gateway.** Wanneer u verbinding maakt via de gecombineerde DocBits MCP (`api.docbits.com/v3/mcp`), krijgt elke DocFlow-tool het voorvoegsel `docflow_`: `list_workflows` heet dan `docflow_list_workflows`, `run_workflow_with_assertions` heet `docflow_run_workflow_with_assertions`. De parameters zijn identiek. De namen hieronder zijn de kale DocFlow-namen.
 
 Workflows worden **aangemaakt en bewerkt in de DocFlow-designer** in de webapp. De MCP leest, test, voert uit en verwijdert ze; de MCP maakt of wijzigt geen workflowgrafen.
-{% endhint %} De Card SDK-tools staan op een eigen pagina, zie [Card SDK Tools](card-sdk-tools.md).
+{% endhint %}
+
+De Card SDK-tools staan op een eigen pagina, zie [Card SDK Tools](card-sdk-tools.md).
 
 ## list\_workflows
 

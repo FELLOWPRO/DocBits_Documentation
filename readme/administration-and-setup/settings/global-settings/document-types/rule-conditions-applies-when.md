@@ -9,7 +9,7 @@ Dezelfde voorwaardenbouwer wordt gebruikt in alle drie de regelfuncties:
 | Functie | Label in de bouwer | Als de voorwaarde waar is… | Als de voorwaarde onwaar is… | Als de voorwaarde leeg is gelaten… |
 | --- | --- | --- | --- | --- |
 | [Aangepaste validatieregels](custom-validation-rules.md) | Stap 2 **Applies when** | wordt de controle uit stap 3 uitgevoerd | wordt de regel overgeslagen — geen fout, geen waarschuwing | wordt de controle op elk document uitgevoerd |
-| [Transformatieregels](transformation-rules.md) | Stap 2 **When it runs** → **Only when…** | wijzigt de pipeline de waarde | blijft de waarde ongewijzigd | kies **Always**: de regel wordt op elk document uitgevoerd |
+| [Transformatieregels](transformation-rules.md) | Stap 2 **Als het actief is** → **Alleen als…** | wijzigt de pipeline de waarde | blijft de waarde ongewijzigd | kies **Always**: de regel wordt op elk document uitgevoerd |
 | [Lay-outselectieregels](layout-manager/layout-selection-rules.md) | Stap 2 **Applies when** | krijgt het document de lay-out van deze regel (de eerste overeenkomst wint) | probeert DocBits de volgende regel | komt de regel overeen met elk document op zijn prioriteit |
 
 Leer het hier één keer en u kunt het overal gebruiken.
@@ -85,7 +85,7 @@ Informatie die DocBits over het document zelf kent, los van de geëxtraheerde ve
 | --- | --- | --- | --- |
 | **Document Origin** | `doc.doc_origin` | `DE`, `AT`, `US` (getoond als Deutsch, Austria, United States) | landspecifieke regels en lay-outs |
 | **Extraction Method** | `doc.extraction_method` | `ELECTRONIC_DOCUMENT`, `FELLOW_KV2`, `MANUAL` | e-facturen (XRechnung, ZUGFeRD) anders behandelen dan gescande pdf's |
-| **Document Status** | `doc.status` | Ready for validation, Pending Approval, Pending second approval … | lay-outs per workflowfase, regels die alleen vóór de goedkeuring gelden |
+| **Document Status** | `doc.status` | Klaar voor validatie, In afwachting van goedkeuring, In afwachting van tweede goedkeuring … | lay-outs per workflowfase, regels die alleen vóór de goedkeuring gelden |
 | **Sub Document Type** | `doc.sub_doc_type` | uw subtypen, bijv. creditnota | regels voor slechts één subtype |
 
 ### Headervelden (`header.`)
@@ -142,7 +142,7 @@ Gebruik JSON-paden spaarzaam. Ze hangen af van de interne structuur van de geëx
 | **is empty** | het veld geen waarde heeft (ontbreekt, of alleen spaties) | – | Purchase Order **is empty** |
 | **is not empty** | het veld een waarde heeft | – | Purchase Order **is not empty** |
 | **greater than** / **less than** | het veld een getal is boven / onder de waarde | getal | Total Amount **greater than** `10000` |
-| **greater or equal** / **less or equal** | hetzelfde, inclusief de waarde zelf | getal | Total Amount **less or equal** `250` |
+| **groter of gelijk** / **minder of gelijk** | hetzelfde, inclusief de waarde zelf | getal | Total Amount **less or equal** `250` |
 
 ### Welke operatoren een veld aanbiedt
 
@@ -151,10 +151,10 @@ De lijst past zich aan het type van het veld aan:
 | Veldtype | Operatoren |
 | --- | --- |
 | Tekst | alle operatoren |
-| Getal en bedrag (Total Amount, Quantity …) | is, is not, greater than, less than, greater or equal, less or equal, is empty, is not empty |
-| Velden met een vaste lijst (Document Origin, Status, Currency …) | is, is not, is one of, is empty, is not empty |
-| Datum (Invoice Date, Due Date …) | is, is not, is empty, is not empty |
-| Ja/Nee | is, is not, is empty, is not empty |
+| Getal en bedrag (Total Amount, Quantity …) | is, is niet, groter dan, kleiner dan, groter of gelijk, kleiner of gelijk, is leeg, is niet leeg |
+| Velden met een vaste lijst (Document Origin, Status, Currency …) | is, is niet, is een van, is leeg, is niet leeg |
+| Datum (Invoice Date, Due Date …) | is, is niet, is leeg, is niet leeg |
+| Ja/Nee | is, is niet, is leeg, is niet leeg |
 | Aangepast JSON-pad | is, is not, matches, is empty, is not empty |
 
 {% hint style="warning" %}

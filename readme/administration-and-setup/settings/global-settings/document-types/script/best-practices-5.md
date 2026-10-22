@@ -1,40 +1,40 @@
-# Best Practices
+# Aanbevolen werkwijzen
 
-## Here are some best practices for script development in DocBits, such as keeping scripts modular, handling errors properly, and documenting the purpose and function of each script.
+## Scripts modulair ontwikkelen, fouten afhandelen en de werking documenteren
 
-### Modular Development:
+### Modulair ontwikkelen:
 
-* Keep your scripts modular and well-structured.
-* Break complex tasks into smaller, more manageable modules.
-* Not only does this make your scripts easier to maintain and update, but it also allows you to reuse code and improve readability.
+* Houd scripts modulair en goed gestructureerd.
+* Verdeel complexe taken in kleinere, beter beheersbare modules.
+* Dit vereenvoudigt onderhoud en updates en maakt hergebruik van code en betere leesbaarheid mogelijk.
 
-### Error Handling:
+### Foutafhandeling:
 
-* Implement robust error handling in your scripts.
-* Make sure your code detects error cases and responds appropriately, whether by catching and logging errors, issuing helpful error messages, or taking action to recover.
+* Zorg voor robuuste foutafhandeling in uw scripts.
+* Zorg dat de code fouten herkent en passend reageert, bijvoorbeeld door fouten op te vangen en vast te leggen, duidelijke foutmeldingen te geven of herstelacties uit te voeren.
 
-### Documentation:
+### Documentatie:
 
-* Document the purpose, functions, and usage of each script in detail.
-* Describe what tasks the script performs, what inputs it expects, what outputs it generates, and how it integrates with the document processing workflow.
-* Clear documentation makes it easier for other developers to understand and maintain your scripts.
+* Documenteer het doel, de functies en het gebruik van elk script uitvoerig.
+* Beschrijf welke taken het script uitvoert, welke invoer het verwacht, welke uitvoer het oplevert en hoe het in de documentworkflow past.
+* Duidelijke documentatie helpt andere ontwikkelaars uw scripts te begrijpen en onderhouden.
 
-### Commenting:
+### Code van commentaar voorzien:
 
-* Comment your code thoroughly to explain its functionality and logic.
-* Use meaningful comments to explain important steps or complex parts of the code.
-* This not only makes the code easier for others to understand, but also for yourself when making future changes or updates.
+* Licht de werking en logica van uw code grondig toe met opmerkingen.
+* Gebruik betekenisvolle opmerkingen om belangrijke stappen en complexe code uit te leggen.
+* Dit helpt anderen en uzelf de code bij toekomstige wijzigingen en updates te begrijpen.
 
-### Versioning:
+### Versiebeheer:
 
-* Implement an effective version control system for your scripts.
-* This allows you to track changes, manage different versions, and revert to previous versions when needed.
-* This is especially useful when multiple developers are working on the same scripts or when you want to test different iterations.
+* Gebruik een effectief versiebeheersysteem voor uw scripts.
+* Zo kunt u wijzigingen volgen, versies beheren en zo nodig terugkeren naar een eerdere versie.
+* Dit is vooral nuttig wanneer meerdere ontwikkelaars aan dezelfde scripts werken of u verschillende varianten wilt testen.
 
-### Security:
+### Beveiliging:
 
-* Make sure your scripts are secure and free of potential security vulnerabilities.
-* For example, avoid unsafe practices such as directly executing user input or storing sensitive information in plain text.
-* Instead, implement security best practices and regularly audit your code for security vulnerabilities.
+* Controleer of uw scripts veilig zijn en geen kwetsbaarheden bevatten.
+* Vermijd onveilige werkwijzen, zoals gebruikersinvoer rechtstreeks uitvoeren of gevoelige informatie als platte tekst opslaan.
+* Pas veilige ontwikkelpraktijken toe en controleer de code regelmatig op kwetsbaarheden.
 
-By following these best practices for script development in DocBits, you can create efficient, reliable, and well-documented scripts that improve the functionality and security of your document processing workflow.
+Met deze werkwijzen ontwikkelt u efficiënte, betrouwbare en goed gedocumenteerde scripts die de werking en beveiliging van uw documentworkflow verbeteren.

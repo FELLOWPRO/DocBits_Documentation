@@ -4,7 +4,7 @@
 
 Op de pagina Integration & SSO beheert u API-sleutels voor programmatische toegang, organisatie-ID's en de configuratie van Single Sign-On (SSO).
 
-## API Key
+## API-sleutel
 
 Beheer de API-sleutels die worden gebruikt voor programmatische toegang tot DocBits.
 
@@ -28,7 +28,7 @@ Toont de identificatiegegevens van uw organisatie:
 | **Organisatie-ID** | De unieke identificatie van uw organisatie. |
 | **Sub-org-ID** | De ID van de momenteel geselecteerde suborganisatie. |
 
-## SSO Service Provider Settings
+## Instellingen van de SSO-serviceprovider
 
 De DocBits SSO-configuratiewaarden die u nodig hebt bij het instellen van uw Identity Provider:
 
@@ -40,9 +40,9 @@ De DocBits SSO-configuratiewaarden die u nodig hebt bij het instellen van uw Ide
 
 U kunt ook **Certificaat downloaden** en **Metagegevens downloaden** gebruiken voor de configuratie van uw IdP.
 
-## Identity Service Provider Settings
+## Instellingen van de identiteitsserviceprovider
 
-Configureer uw externe Identity Provider (IdP):
+Configureer uw externe identiteitsprovider (IdP):
 
 | Veld | Beschrijving |
 |-------|-------------|

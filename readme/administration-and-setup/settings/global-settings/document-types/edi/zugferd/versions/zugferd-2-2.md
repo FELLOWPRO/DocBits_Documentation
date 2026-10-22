@@ -19,7 +19,7 @@ De standaard TRANSFORMATION-XSLT geeft twee afgeleide velden uit:
 
 | DocBits-veld | Bron | Logica |
 | :--- | :--- | :--- |
-| `INVOICE_TYPE` | `CrossIndustryInvoice/ExchangedDocument/TypeCode` | UNCL 1001 `381` of `261` → **Credit Note**; elke andere code → **Invoice** |
+| `INVOICE_TYPE` | `CrossIndustryInvoice/ExchangedDocument/TypeCode` | UNCL 1001 `381` van `261` → **Creditnota**; elke andere code → **Factuur** |
 | `INVOICE_SUB_TYPE` | `SupplyChainTradeTransaction/ApplicableHeaderTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | Niet leeg → **Purchase Invoice**; leeg/ontbrekend → **Cost Invoice** |
 
 ### Belastingverdeling (op tier geclassificeerd)

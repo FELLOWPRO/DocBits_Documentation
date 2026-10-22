@@ -4,7 +4,7 @@
 
 We begrijpen het belang van veilige gegevensoverdracht. Daarom gebruiken we open poort 443, de standaardpoort voor HTTPS, wat ervoor zorgt dat alle overgedragen gegevens versleuteld en veilig zijn. Onze SSL-beveiligde verbindingen garanderen dat uw gegevens veilig zijn tijdens elke stap van het proces.
 
-<figure><img src="../.gitbook/assets/secure.svg" alt="Open Port 443 &#x26; Secure Communication - DocBits"><figcaption><p>Secure Data Transfer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/secure.svg" alt="Open Port 443 &#x26; Secure Communication - DocBits"><figcaption><p>Veilige gegevensoverdracht</p></figcaption></figure>
 
 ### Communicatie Met De Database
 
@@ -14,7 +14,7 @@ Als het gaat om databasecommunicatie nemen we geen risico's. Onze Kubernetes-con
 
 Documentbeheer is een fluitje van een cent met Docbits. Alle geüploade documenten worden veilig opgeslagen in een speciale ‘Ruimte’. We gebruiken SSL-versleuteling voor dataverkeer en vereisen meerdere sleutels voor bestandsaccess, zodat uw documenten net zo veilig zijn als een kluis.
 
-### Traffic Security
+### Beveiliging van netwerkverkeer
 
 We staan alleen HTTPS-beveiligde verbindingen toe voor communicatie met onze servers. Dit zorgt ervoor dat alle overgedragen gegevens versleuteld zijn, waardoor uw gevoelige informatie veilig en wel blijft. Het is alsof je een beveiligingsagent voor je gegevens hebt, 24/7.
 

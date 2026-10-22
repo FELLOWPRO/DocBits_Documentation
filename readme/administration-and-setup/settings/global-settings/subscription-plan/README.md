@@ -23,7 +23,7 @@ In dit gedeelte staat elke DocBits-app en -functie en of deze voor uw organisati
 
 | Kolom | Beschrijving |
 |--------|-------------|
-| **App** | De DocBits-app of -functie (bijv. AI Workforce, Operator, DocFlow, AI Search, BOD Ingestion, SQL BI Connector). |
+| **App** | De DocBits-app of -functie (bijv. AI Workforce, Operator, DocFlow, AI Zoeken, BOD Ingestion, SQL BI Connector). |
 | **Abonnement** | Het afgenomen abonnement voor die app. |
 | **Status** | **Actief**, **Wordt opgezegd** (actief tot de einddatum en daarna beëindigd) of **Geen** wanneer de app niet is afgenomen. |
 | **Begin / Einde** | De abonnementsperiode. |

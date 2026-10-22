@@ -1,7 +1,7 @@
-# Supplier Layout
+# Leverancierslay-out
 
-This is where you decide what information you want to include and define what information is needed. You can easily design your layout using the drag-and-drop functions.
+Hier bepaalt u welke informatie moet worden opgenomen en welke gegevens nodig zijn. Met slepen en neerzetten kunt u eenvoudig uw lay-out ontwerpen.
 
-<figure><img src="../../../.gitbook/assets/docbits_scan_doc_browser_test.png" alt="Docbits Scan Doc Browser Test"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/docbits_scan_doc_browser_test.png" alt="Test van de documentbrowser in DocBits Scan"><figcaption></figcaption></figure>
 
-You can use it to create layouts for supplier users and for supplier management.
+U kunt lay-outs maken voor leveranciersgebruikers en voor leveranciersbeheer.

@@ -1,37 +1,37 @@
-# Troubleshooting
+# Problemen oplossen
 
-## When troubleshooting common regex problems, there are a few best practices to identify and fix the cause of the problem:
+## Oorzaken van veelvoorkomende regex-problemen herkennen en oplossen
 
-**Use online regex testers:**
+**Online regex-testers gebruiken:**
 
-* Online regex testers are useful tools to check your regex patterns with test data and visualize the behavior of the pattern. They allow you to step through the matching process and identify potential problems.
+* Met online regex-testers kunt u patronen op testgegevens controleren en hun gedrag zichtbaar maken. U kunt het zoekproces stap voor stap volgen om problemen op te sporen.
 
-**Check the data context:**
+**De gegevenscontext controleren:**
 
-* Make sure you understand the context of the data your regex pattern is working with. Sometimes unexpected characters or structures in the text can cause the pattern to not work as expected.
+* Zorg dat u de context van de gegevens begrijpt waarop uw patroon wordt toegepast. Onverwachte tekens of structuren kunnen ervoor zorgen dat het patroon anders werkt dan verwacht.
 
-**Check greedy quantifiers:**
+**Gulzige kwantoren controleren:**
 
-* Greedy quantifiers like \* and + can cause the pattern to capture too many characters and thus produce unexpected matches. Use greedy quantifiers with caution and check that the matching process is working as expected.
+* Gulzige kwantoren zoals \* en + kunnen te veel tekens opnemen en onverwachte overeenkomsten opleveren. Gebruik ze zorgvuldig en controleer of het zoekproces naar verwachting werkt.
 
-**Debugging with grouping:**
+**Fouten opsporen met groepen:**
 
-* Use groupings ( ) to isolate subsections of your regex pattern and check their match separately. This allows you to understand which parts of the pattern might be causing problems.
+* Gebruik groepen ( ) om delen van uw regex-patroon te isoleren en afzonderlijk te controleren. Zo ziet u welke onderdelen problemen veroorzaken.
 
-**Watch for special characters:**
+**Op speciale tekens letten:**
 
-* Some characters in regex have special meanings and need to be escaped if they are to be treated as normal characters. Make sure you use the correct escape characters to avoid unexpected results.
+* Sommige tekens hebben een speciale betekenis in regex en moeten worden geëscapet om als gewone tekens te worden behandeld. Gebruik de juiste escapetekens om onverwachte resultaten te voorkomen.
 
-**Test with different datasets:**
+**Met verschillende datasets testen:**
 
-* Use a variety of test data to make sure your regex pattern works correctly in different scenarios. This includes typical datasets as well as edge cases and unexpected variations.
+* Gebruik uiteenlopende testgegevens om de werking in verschillende scenario's te controleren. Test zowel normale gegevens als grensgevallen en onverwachte variaties.
 
-**Consult the documentation:**
+**De documentatie raadplegen:**
 
-* Check the documentation of your regex implementation to make sure you understand the specific properties and peculiarities of the regex syntax used. Sometimes nuances in the syntax can lead to unexpected behavior.
+* Raadpleeg de documentatie van uw regex-implementatie om de specifieke eigenschappen en bijzonderheden van de gebruikte syntaxis te begrijpen. Kleine syntaxisverschillen kunnen onverwacht gedrag veroorzaken.
 
-**Seek community support:**
+**Hulp vragen aan de gemeenschap:**
 
-* If you continue to have problems with your regex pattern, you can seek support in developer forums or Q\&A platforms. Other developers may be able to offer helpful insights or solutions.
+* Blijft u problemen ondervinden, vraag dan hulp op ontwikkelaarsfora of Q\&A-platforms. Andere ontwikkelaars kunnen bruikbare inzichten of oplossingen bieden.
 
-By following these tips and working systematically, you can identify and fix most common regex pattern issues to ensure reliable data extraction.
+Met deze tips en een systematische aanpak kunt u veelvoorkomende regex-problemen herkennen en oplossen voor een betrouwbare gegevensextractie.

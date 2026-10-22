@@ -1,4 +1,4 @@
-# Auto accounting
+# Automatische boeking
 
 ## Tabel `public.auto_accounting`
 

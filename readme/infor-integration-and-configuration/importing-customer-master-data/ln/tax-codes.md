@@ -1,84 +1,84 @@
-# Tax Codes
+# Belastingcodes
 
-## **Create DocBits Connection Point(s)**
+## **DocBits-verbindingspunten maken**
 
-Open ION Desk → Connect → Connection Points
+Open ION Desk → Verbinden → Verbindingspunten
 
 ![](https://lh7-us.googleusercontent.com/QLQB17W_hywZWBqme8Wio-orbdOdFHXLv5zTd89B3EkeS0WCuuo5Pv1CndLRQ2rFUefvQYM95U2Unhrl3YU3WAR23Ij_tDw_TOEVenWjyCh-9H8CPFSezF2gmED7u5QTR7q9WV4CSXRvDqkmKJYPqAI)
 
-You will need 4 connection points for this dataflow, 3 API connection points for the different tax code categories (full, reduced and free) and an Application connection point representing your LN company.
+Voor deze gegevensstroom heeft u 4 verbindingspunten nodig, 3 API verbindingspunten voor de verschillende belastingcodecategorieën (standaardtarief, verlaagd tarief en vrijgesteld) en een Applicatieverbindingspunt dat uw LN bedrijf vertegenwoordigt.
 
-In order to create new connection points, select the “+ADD” button”
+Om nieuwe aansluitpunten aan te maken, selecteert u de knop “+ADD””
 
 ![](https://lh7-us.googleusercontent.com/cECLuIswRSK3WWhUMi1n3tm2AIcrksZdpz7ZCO6-H_MzaKe9CDT0w1b7GKJ8GtT_d6nvvDe4ukLJfWcMocbHZ5dSSCw25Ky7-JUdrYb893GYYyaHL9tTjG1ZniORJPLSu1zJxL3c-1VQRw4IC0LpYuA)
 
-Select “API” at the bottom of the list of options
+Selecteer “API” onderaan de lijst met opties
 
 ![](https://lh7-us.googleusercontent.com/bpeLxdmi8b10LLMGy02vMRXuLoic9kFLywnpd6SSYV0fNv82dQahyvaA85mC1PEVScNW4m63fOw89vkhQr0-ou8VWOSjkwGWG5GnP7GQl77THtjXWP3YNo8LUzAstpCs0Q5fOjxaoT__ZKM4jciHA5I)
 
-You will be taken to the following page
+U wordt naar de volgende pagina geleid
 
 ![](https://lh7-us.googleusercontent.com/4pcN0B7aibjn_Qn8nMgkzRc_NiXev-c1wJudDKo2V5r0ORuajVzfzAWnWu0Wt68hKMKSLYkieUhOYChkcZuCZDWkg-F22Rq2WvVqgPweSg3by2TGrrJHweKWTlf_DK1X2pCkoNU4yoGo3DyHsoqcGjg)
 
-This is where you will enter all the details of the TaxCode connection point. For each of the three connection points you will be creating do the following
+Hier vult u alle gegevens van het TaxCode aansluitpunt in. Voor elk van de drie verbindingspunten die u gaat maken, doet u het volgende
 
-* Enter a Name: TaxCodeFull, TaxCodeReduced, TaxCodeFree
-* Description: This can be the same as the Name or similar
-* Import a service account you created.
+* Voer een naam in: TaxCodeFull, TaxCodeReduced, TaxCodeFree
+* Beschrijving: Dit kan hetzelfde zijn als de Naam of iets dergelijks
+* Importeer een serviceaccount dat u heeft gemaakt.
 
-Switch to the “Documents” tab and select the PLUS icon to add the BOD we need, like below
+Schakel over naar het tabblad “Documents” en selecteer het pictogram PLUS om de BOD toe te voegen die we nodig hebben, zoals hieronder
 
 ![](https://lh7-us.googleusercontent.com/byhA18LzkcY9ZyfnzyDlru5qBx88E8U1yggMNNkoHGsYVCbNkflNFXGVvJwMvE_104VCjoYOM0SQIJVniyBBdn5UKasVR0uat6UvmCmpzz9ZYsY2Wv14B4ElOwqcg2qklxYAQVU84UOG70l3fMLRrwo)
 
-Search for the BOD
+Zoek naar de BOD
 
 ![](https://lh7-us.googleusercontent.com/DAKzvEsjCmk1jy7L6GwrVY2DWg3_InluNftWnR7hGlnyeBxSDW6XTDPBMLqtJuUc9Lq3Nga6-EKS4tZpOjE09h5FUJaTm_E70UdA4l17jWGQ6BSr121lC3LzhffUXi6Bsk5EZEz4XHyjekk1Njb3H4I)
 
-Search for the BOD called “Sync.LnTaxCode”, click on it and press “OK” to add the BOD.
+Zoek naar de BOD genaamd “Sync.LnTaxCode”, klik erop en druk op “OK” om de BOD toe te voegen.
 
 ![](https://lh7-us.googleusercontent.com/7BLwrq8kr9OTHleI2anmAr2-4ChksQ0pptddwm1quFHquGfnMBEW32RFx31ETGbrxf0KGVr-VzlZC9h9heD3ymTq9L5NZEV1b9E67IIR0is18UGBCoJ5j7KIMmF533EDMvZzgi4LXqAkV9zgCyl0_Lk)
 
-Move on to the ION API section. Under API Call Name you can use the name of the BOD, Sync.LnTaxCode
+Ga verder naar de sectie ION API. Onder API Oproepnaam kunt u de naam van de BOD, Sync.LnTaxCode gebruiken
 
-Press the “SELECT” button
+Druk op de knop “SELECT”
 
 ![](https://lh7-us.googleusercontent.com/7MukO6oUAzVBFMPhFepwMvugqnhDDMhX9j7wZRU7BU0OusW3CKpMgqQNC7uNlehPp6eFniVxrX3DxjgsGZ_Tmt_cQOWGGiBfXAQfCC85amOGp1VY8RGo3nPABCiwzaIkYmnQF6t3FPVZ1fPV6fLazNc)
 
-Select the API you configured for the environment you are working with and search for the following API. Once you have selected it, press “OK”.
+Selecteer de API die u hebt geconfigureerd voor de omgeving waarmee u werkt en zoek naar de volgende API. Zodra u het hebt geselecteerd, drukt u op “OK”.
 
 ![](https://lh7-us.googleusercontent.com/IpUUqJaXF0MmIeR6gtE9GDCccLfNsQLZ-RSHhQGVwJEj8WJwI-twgiHpFomBKhbnTUUKrhxJ0EUZ7F_21MCSBjNS2VQq3azprekoxctRJZ-NJUHhb4J9rHUSRDoR_OCzDHTG5q5KTwWMHOR5qNoNd38)
 
-Next, switch to the Request Body tab.
+Ga vervolgens naar het tabblad Verzoektekst.
 
-Here is where there will be a slight change for each connection point, this is seen in the field mappings you will assign to each tax code as they differ slightly.
+Hier vindt een kleine verandering plaats voor elk verbindingspunt. Dit is te zien aan de veldtoewijzingen die u aan elke belastingcode toewijst, aangezien deze enigszins verschillen.
 
 ![](https://lh7-us.googleusercontent.com/f4c-1M9mgCci2jjxkhaCDFX9bRWzMDaRwVv4XiaUH7BpHchPklvMnWoP_ILSm6VB7GoFJNJzHsEPzk3eCFyLm1Kc3QI8OufjQ1mr7PqowjzViFDWc2opiNE1ODICtI9yEyUOi_d_hzN8CGo8gu6Ec84)
 
-In the field\_mappings row, under value, is where you will put the specific field mappings for the specific tax code connection point you are creating (full, reduced or free). These mappings are available at https://docbits.com/doc/field-mappings/.
+In de rij field\_mappings, onder waarde, plaatst u de specifieke veldtoewijzingen voor het specifieke belastingcodeverbindingspunt dat u maakt (standaardtarief, verlaagd tarief of vrijgesteld). Deze toewijzingen zijn beschikbaar op https://docbits.com/doc/field-mappings/.
 
-The end result should look the same or similar to the image above. Once this is done, click the SAVE option located here.
+Het eindresultaat moet er hetzelfde uitzien als of vergelijkbaar zijn met de afbeelding hierboven. Zodra dit is gebeurd, klikt u hier op de optie SAVE.
 
 ![](https://lh7-us.googleusercontent.com/LSYrbElw6BgQbbIdSstbakfwLENZ_09WQcQhjO7kbb2U3jSK__wFnr43tIj2hTHYegQ9lrSZBuJ9N7MNewr2W3yjPCrrVLeP9UAZjvrKKBzeY9h-q6FrVd5gPtlH0iP0GpMcvhGxjAnHN7BlY8CmT3c)
 
-## **Data Flow Configuration**
+## **Configuratie van de gegevensstroom**
 
-Navigate to ION Desk → Connect → Data Flows
+Navigeer naar ION Desk → Verbinden → Gegevensstromen
 
 ![](https://lh7-us.googleusercontent.com/cpWAepQyLP8V0b-Oj7djzl21eZLU2JdnJPEMPs53Uq-adZbaCegl35RjguLx8rsP2E87ZmwbNgISFIpAy6kOeahaBCSygDVSJzmv1GQGn1w1MgR8N08mnnfhb02XjsLnt_rVJKr4Y0UtiTf14NqTHLQ)
 
-Click on “+ADD” and select document flow
+Klik op “+ADD” en selecteer documentstroom
 
 ![](https://lh7-us.googleusercontent.com/HYqc_P2DQjBoc-mpsyZ_nlPFNiU17ZCLHfiOa282-Sa5JSA3Hv1XlwFjmlPhVGnAaEAqqalJ5ka43AJOzEO3uljwVAogAHkTVer7Q9JgI0WaOVX2Uo5Z8KGEqoa3BH_zZwup7Bh4lKe4O5kr6hmAZm4)
 
-Create the following data flow by dragging and dropping the components from the to menu
+Creëer de volgende gegevensstroom door de componenten vanuit het menu naar te slepen en neer te zetten
 
 ![](https://lh7-us.googleusercontent.com/V_aJHPhFJssPUQ4mAHU20SVPSfhqhjU8BOQ2Ws1MtaauKp6OVAENLXod2uQe6Zbuc5JKZx6Bp3WyJtkQtkbnDluZZS5GLMGcaC9EuCrV8cn2aJk2y-Cih3PP2dg-umW0iDhak5UXNUuPxwkgqVg-mvk)
 
-### **Application (LN)**
+### **Applicatie (LN)**
 
 ![](https://lh7-us.googleusercontent.com/2CCNlz0S-Z8p_l9kPPUMqPkreoO3aLy8MkqY6UFMIABJRNFXGTFMXbaw78E42g8fEO4ZxFL_oJMf2QnWn2xZLtS4zjN8AzCS_B2i2x-tjWmmjyVLa1jSLQAnSB8-EhNfNISzf2uuX9kcqN-QixUUXvw)
 
-Here is where you will select your LN company, the final result should look similar to the following
+Hier selecteert u uw LN bedrijf. Het eindresultaat zou er ongeveer als volgt uit moeten zien
 
 ![](https://lh7-us.googleusercontent.com/b5pb4YfbZMCSi2X-xT4mj-Yw_Uu77zNyJGl3rntVdqf907PwgX6Z9uQJIoHA2FS5M_mVbdQgkh0HWgsOgtkoySmtrT7W8CrqsqlCnPEt6hv_yODGulfp1qdxXvrB1HL-en3W9bY285fC3kARLZfSfck)
 
@@ -86,7 +86,7 @@ Here is where you will select your LN company, the final result should look simi
 
 ![](https://lh7-us.googleusercontent.com/U8cqu3jABU3RQLGEGsS5qCnDkc-boTpAdZEVIUA9AlmD9Oz33JvnzD43SBTmLY55i8Bsr4lbi6udeIimCcRG1NgWbynv6OllCLaJPC50kJ0gPq7rsR5Rvj50yKngMiNvnYoLLT_Hzn5cyhp18jq_IyI)
 
-This is where you will add the Sync.LnTaxCode BOD from earlier, the result looks as follows
+Hier voegt u de Sync.LnTaxCode BOD van eerder toe, het resultaat ziet er als volgt uit
 
 ![](https://lh7-us.googleusercontent.com/bgC1y3NtmX09XBjng_pKmP5VQ5w0E_VuFOfMF1rYs3iGGL5OaMHkKoyQJNtcVtbS6bEvF4KdtFNaX0VxT9MF0P-zTDnOnt5mhA0Gxcs4eMcRLtbXl5a_8y84XyLyvh61-LdoQ7f15j-wE1nl_TSYSDg)
 
@@ -94,9 +94,9 @@ This is where you will add the Sync.LnTaxCode BOD from earlier, the result looks
 
 ![](https://lh7-us.googleusercontent.com/1Cv1XxqdpiNfonz6jdFgz9zGibQTRLd_0ONFHf3FvzPB9-sQuX4lTUyuDWzm-RffuPf5jDmZAZwUqbXX-1kers1sEb9ykRMHeYYP6zGgF8yZ247Dx0nG04kSYUTTKSwt3NLS-3TwXA5tbvy5z8HA2bw)
 
-#### **Filter 1 (top) – Full**
+#### **Filter 1 (boven): standaardtarief**
 
-The Name and Description will depend on the environment you are using and your preferences.
+De Naam en Beschrijving zijn afhankelijk van de omgeving die u gebruikt en uw voorkeuren.
 
 ![](https://lh7-us.googleusercontent.com/WVKWUme9uUjRRn7dZ5c_RyPk_GCTFEfiNxU_H5aA979k5hOv2coDYEJHu4K1EaTLUf8_Pd9ffOk757DaflF0Se0gZ1ZYvRk4QHlpKP0IeirfNr-L6JU3Z_xFZJ2eeFI-Rhcctwk9QOHRORGNt1oIEpE)
 
@@ -104,9 +104,9 @@ The Name and Description will depend on the environment you are using and your p
 
 ![](https://lh7-us.googleusercontent.com/ijzGaLt9Uhzw6Wf66ah3auWo5TbkCnM-xGDYezsXXjPEkdCe5RO1wWfhhhG0qRuKbojijLKUm-WUV21eRdq36moWu9Ft0ujexe_1lTUUEQbfXPvtrzP7iudkSaG_oiX_LV7AqZRGlNAp0OXnN8BXRIM)
 
-#### **Filter 2 (middle) – Reduced**
+#### **Filter 2 (midden): verlaagd tarief**
 
-The Name and Description will depend on the environment you are using and your preferences.
+De Naam en Beschrijving zijn afhankelijk van de omgeving die u gebruikt en uw voorkeuren.
 
 ![](https://lh7-us.googleusercontent.com/pKLo6q5zCQOZQhiRppyd8M-nlIrX5leGUiCct4Xn-4teIZTip5GAJVP0EFc2PrJ6EeDmU2KVOHRKVCaaML4sK8jCnsgTmxbTYjc-9CNd6bOfU-WD9tySeKL7gSRltjzoTEI5Ozrd_s-7qj2KVNOWN7s)
 
@@ -114,9 +114,9 @@ The Name and Description will depend on the environment you are using and your p
 
 ![](https://lh7-us.googleusercontent.com/Pa19AN6Mhxbn6bHSc5qKEGM0xRsEV6v77ooyeg5-91i8qGhaThb4328nr_g6a_z-7BOCJmWpo8Gbd2twl9FQkOf1Q8QZqOkJmxsIxaTP0R6dASgZdIV6z7p8PFYPYUJ1eKp8btYOBapliANstQSUgAQ)
 
-#### **Filter 3 (bottom) – Free**
+#### **Filter 3 (onder): vrijgesteld**
 
-The Name and Description will depend on the environment you are using and your preferences.
+De Naam en Beschrijving zijn afhankelijk van de omgeving die u gebruikt en uw voorkeuren.
 
 ![](https://lh7-us.googleusercontent.com/c_SuWaZ3gF-FbOPWkxB_eFgkT-TGJEYwV_fQT05wGWHFNzI9SDZRQfauVMeBl0rn79QdU-W3kRgN-hWsYkfdMSevlYyiNPxxT_3RxXcETo-lkjvI5TCygUag91PFJycrRdMA5hSQJCuzt8FekMwpu98)
 
@@ -128,54 +128,54 @@ The Name and Description will depend on the environment you are using and your p
 
 ![](https://lh7-us.googleusercontent.com/XDhVCKHYaxrRIFyYfq0guXwnZH6jK-WZIFj2i0Wkr4kxyNcdCH1TzKd0Pb3-H6qs-b7JZ3UUIGm0BVHiUL7Aya-D7YOSV8p8tnwQeAfBN30T4fW5-ANePN1TcvUr1gzLJPwj7rRO4Hw4ziuyYrqZBX8)
 
-This is where you select the API connection points you created earlier, this is done by selecting the API under the “Select ION API Connector” drop down menu.
+Hier selecteert u de API-verbindingspunten die u eerder hebt gemaakt. Dit doet u door API te selecteren onder het vervolgkeuzemenu “Select ION API Connector”.
 
-#### **API 1 (top) – Full**
+#### **API 1 (boven): standaardtarief**
 
-The Name and Description will depend on the environment you are using and your preferences.
+De Naam en Beschrijving zijn afhankelijk van de omgeving die u gebruikt en uw voorkeuren.
 
 ![](https://lh7-us.googleusercontent.com/90c2E47fMC9CKNVY8DtgyaNUAqAnQmfErZm_R-njUlEdIX6mafMUOk3GcAooaWfCzD4-OmdPUq5VSuMXmTSNjVEc924ASIPqmTxAQXqsq6eKs5y82rvwHxqnsT4S-sEm2mQRNwleiubkwIO_kS9Vwzg)
 
-#### **API 2 (middle) – Reduced**
+#### **API 2 (midden): verlaagd tarief**
 
-The Name and Description will depend on the environment you are using and your preferences.
+De Naam en Beschrijving zijn afhankelijk van de omgeving die u gebruikt en uw voorkeuren.
 
 ![](https://lh7-us.googleusercontent.com/vw1hM3W4eCt_8OG7Ht203tckaWarPOLi463WvQzGgixTMnfk7iC27JzL3iNgd5LmvBzWTFnYa3QNy5y_oNSHJ9R-Ck5CAgLoBmGurbCn1RZ32jiSJr-LUnL3b0nhHctBqcCx_25L1Ce-_va3ZgfKXY8)
 
-#### **API 3 (bottom) – Free**
+#### **API 3 (onder): vrijgesteld**
 
-The Name and Description will depend on the environment you are using and your preferences.
+De Naam en Beschrijving zijn afhankelijk van de omgeving die u gebruikt en uw voorkeuren.
 
 ![](https://lh7-us.googleusercontent.com/C0wmqAkrlgyXlMjKsGMOqre4MPLuHawrZB1oYDzkGFocperUB5dKea7kx44hrA_Kz6Ptx495cQbwq_EHfEGNvvpr_0dvCuUS2zz0-SARyuNbf2gKsK3vTdd4Sfg3jWtE1YAN3o0VpoK_HRn7T-fFOR8)
 
-Once all the above is done, SAVE and ACTIVATE the data flow by pressing the following buttons
+Zodra al het bovenstaande is gedaan, SAVE en ACTIVATE de gegevensstroom door op de volgende knoppen te drukken
 
 ![](https://lh7-us.googleusercontent.com/f8gkYY1Z_W1if2h1es9vbjebtDX0zGiqY4p9OD68gKSAcNU6si-guvyIg8hzdjP7TulZ6Yq8NcbT2EyuHleVeNxpY_6TDlbgIUaxDJ72ILcy8kVvFuSja7FT6gpYhMLFGw7wv-r0XyFN8xIrQ3OuUGI)
 
-## **BOD Triggering (LN)**
+## **BOD’s activeren (LN)**
 
 Open LN in Infor
 
 ![](https://lh7-us.googleusercontent.com/aAKRLInqsogQLv9nye2rHLtVFlW4yaCpnQ8A4cKG5A2145Tl6poOxthfo2InYimNk5dd8RabYrX9xP7sPO0aJ5ThF07ZVfKvUXBqVoxRJg53IhpeOeiA4B_CGOpeLKWlPbCf4EaFXjgzmBOcezocF9k)
 
-Navigate to Common → BOD Messaging → Publish BODs → Publish Financial Master Data
+Navigeer naar Algemeen → BOD Berichten → BOD's publiceren → Financiële stamgegevens publiceren
 
 ![](https://lh7-us.googleusercontent.com/pMAgPzyhBNrEsFkTm8-iniHBhEXIPswoJ8URt_v0fv_7dSayrS8UkN7F9WMAOZQB9Q6sCe9faRl4rRDDft3VdrzfNUT-IbWxE6GyWPPKZh4R67JRmXmJ2NsTVPdjLo6uJdCpki7QDpgiY_azWtqaqKA)
 
-Select MORE and click on LnTaxCode
+Selecteer MORE en klik op LnTaxCode
 
 ![](https://lh7-us.googleusercontent.com/MtjE7Glgv7e_F_CJ4LXMuWk6SaInmNFlKzhGJu71iGgxRWtjI96lX5J0gqxRcj3y1u4E6Aq-xNEpuf83dsjHh6op0qeH89oBMvlVTTD_VhGs10-gjuIb0eyc9b3dcCk75Wa5sASreXKW6SbQPYrs8sM)
 
-Tick the checkbox to select the LnTaxCode BODs
+Vink het selectievakje aan om de LnTaxCode BOD's te selecteren
 
 ![](https://lh7-us.googleusercontent.com/VTFntcBK0GVsUdr_fZBUaN8rXYdufObLE7PnwwNg9QU69zYwKHvwFZ7En9WZ6p_WGIkVdqEjBBYeIYSuHHJWBWYonwd6Edtr0ZZuGsX3qhNMDWQWefOaGfrYxrq_yLm6_gEw967PGp3HK0hzO-G2XiQ)
 
-Navigate back to the OPTIONS tab, your configuration should look as follows
+Navigeer terug naar het tabblad OPTIONS. Uw configuratie zou er als volgt uit moeten zien
 
 ![](https://lh7-us.googleusercontent.com/2tr7VHNOLActJCiLGC6jyWsdyqwZV7Je6UsekeoBo57qNpOBDYtOQuoelKOdvLMRo6uQJWn1S4ir_zRZHAx2C96NyKp4ZjIUyFCYt58T59TqO3ml0ZfiEtSLwdRPp9g8pkMemN0xDS5ao8DL5xgosWE)
 
-When you would like to publish the BODs, select PROCESS.
+Wanneer u de BOD's wilt publiceren, selecteert u PROCESS.
 
-The end result should give you a similar table in your DocBits environment.
+Het eindresultaat zou u een vergelijkbare tabel moeten opleveren in uw DocBits-omgeving.
 
 ![](https://lh7-us.googleusercontent.com/4wK-mfKl0UNqvp5ngolE54miiwAKxAcOERO2mSDWzZ5t838VhFZrZGzCMeIyg7WDPpHvNzkeWRJV7ZZdsaxwXiFS9uxm29QZUYHhs9gU2v6QgSz07vfjpHXW3oTb5ZiiiTjI93gmV9MDTHbNWJmrvHY)

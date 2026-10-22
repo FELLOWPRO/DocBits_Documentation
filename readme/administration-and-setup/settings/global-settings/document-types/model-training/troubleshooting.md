@@ -1,36 +1,38 @@
-# Troubleshooting
+# Problemen oplossen
 
-## Provide solutions to typical problems that can arise during model training, such as data format errors, training model convergence issues, or unexpected model performance degradation.
+**Toepassing van deze richtlijnen:** dit zijn algemene aanbevelingen voor machinelearning. Beschikbare trainingsopties hangen af van de gebruikte DocBits-versie, configuratie en ondersteunde API of editor. Verwijzingen naar hyperparameters, modelarchitectuur, versleuteling of automatisering betekenen niet dat hiervoor in elke installatie een instelbare gebruikersinterface bestaat.
 
-**Here are solutions to some typical problems that can arise during model training:**
+## Problemen met gegevensformaten, convergentie en modelprestaties oplossen
 
-**Data format errors:**
+**Oplossingen voor veelvoorkomende problemen tijdens modeltraining:**
 
-* Make sure the training data is in the correct format and meets the model's requirements.
-* Check the data for missing values, incorrect encodings, or unexpected structures.
-* If necessary, convert the data to the correct format and perform preprocessing to ensure it is suitable for training.
+**Fouten in gegevensformaten:**
 
-**Training model convergence issues:**
+* Controleer of trainingsgegevens het juiste formaat hebben en aan de eisen van het model voldoen.
+* Controleer op ontbrekende waarden, onjuiste coderingen en onverwachte structuren.
+* Zet gegevens zo nodig om naar het juiste formaat en verwerk ze vooraf, zodat ze geschikt zijn voor training.
 
-* If the model is struggling to converge or show consistent improvements, check the hyperparameters and training configurations.
-* Experiment with different learning rates, batch sizes, or optimization algorithms to facilitate convergence.
-* If necessary, reduce the model complexity or increase the amount of training data to improve model performance.
+**Problemen met modelconvergentie:**
 
-**Unexpected model performance degradation:**
+* Controleer hyperparameters en trainingsinstellingen als het model moeilijk convergeert of geen consistente verbetering laat zien.
+* Probeer andere leersnelheden, batchgroottes of optimalisatie-algoritmen om convergentie te bevorderen.
+* Verminder zo nodig de modelcomplexiteit of vergroot de hoeveelheid trainingsgegevens om de prestaties te verbeteren.
 
-* If the model shows unexpectedly poor performance after training, check the training data for possible errors or inaccuracies.
-* Analyze the error patterns and check if certain classes or features are classified poorly.
-* Run further tests with new training data to ensure that the model is consistent and reliable.
+**Onverwachte verslechtering van modelprestaties:**
 
-**Overfitting or underfitting:**
+* Controleer de trainingsgegevens op fouten en onnauwkeurigheden als het model na de training onverwacht slecht presteert.
+* Analyseer foutpatronen en controleer of bepaalde klassen of kenmerken slecht worden geclassificeerd.
+* Voer aanvullende tests uit met nieuwe trainingsgegevens om de consistentie en betrouwbaarheid te controleren.
 
-* Monitor model performance for overfitting or underfitting, which can lead to poor generalization ability.
-* Experiment with regularization techniques such as L2 regularization or dropout to reduce overfitting.
-* Increase the amount of training data or data variation to avoid underfitting and improve model performance.
+**Overfitting of underfitting:**
 
-**Lack of representativeness of training data:**
+* Controleer op overfitting en underfitting, die het vermogen om nieuwe gegevens te verwerken kunnen beperken.
+* Probeer regularisatietechnieken zoals L2-regularisatie of dropout om overfitting te verminderen.
+* Bij underfitting kunnen rijkere kenmerken, een geschikter model of een aangepaste trainingsconfiguratie nodig zijn, voor zover de beschikbare trainingsopties dit ondersteunen. Meer trainingsgegevens zijn op zichzelf geen gegarandeerde oplossing.
 
-* Make sure your training data covers a sufficient variety of scenarios and use cases to prepare the model for different situations.
-* If necessary, supplement the training data with additional examples or synthetic data to improve coverage and increase model performance.
+**Onvoldoende representatieve trainingsgegevens:**
 
-By identifying and fixing these issues specifically, you can improve the performance of your model and ensure that it works effectively and reliably to meet the needs of your use case.
+* Zorg dat de trainingsgegevens voldoende uiteenlopende scenario's en toepassingen bevatten om het model op verschillende situaties voor te bereiden.
+* Voeg zo nodig extra voorbeelden of synthetische gegevens toe om de dekking en modelprestaties te verbeteren.
+
+Door deze problemen gericht te herkennen en op te lossen, kunt u de modelprestaties verbeteren en het model effectief en betrouwbaar laten werken voor uw toepassing.

@@ -30,7 +30,7 @@ OIOUBL (Offentlig Information Online UBL) is de Deense e-factuurstandaard gebase
 
 ## Standaard voorbeeld
 
-<figure><img src="denmark-oioubl-preview.png" alt="Denemarken OIOUBL 2.1 factuurvoorbeeld in DocBits"><figcaption><p>Standaard DocBits-voorbeeld voor een Deense OIOUBL 2.1-factuur (Faktura)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/denmark-oioubl-preview.png" alt="Denemarken OIOUBL 2.1 factuurvoorbeeld in DocBits"><figcaption><p>Standaard DocBits-voorbeeld voor een Deense OIOUBL 2.1-factuur (Faktura)</p></figcaption></figure>
 
 ## Veldtoewijzing
 
@@ -91,5 +91,5 @@ Het rootelement is `<Invoice>` (of `<CreditNote>`) in de UBL 2.1-namespace `urn:
 
 ## Gerelateerd
 
-- [Momenteel ondersteunde e-factuurstandaarden](../../currently-supported-e-invoice-standards/)
+- [Momenteel ondersteunde e-factuurstandaarden](../currently-supported-e-invoice-standards/README.md)
 - [Ondersteunde elektronische documenten](./)

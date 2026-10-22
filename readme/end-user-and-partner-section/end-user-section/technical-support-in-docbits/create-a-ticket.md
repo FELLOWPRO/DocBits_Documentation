@@ -1,7 +1,7 @@
 # Maak een ticket aan
 
 {% embed url="https://youtu.be/fQUIrp-qz9c" %}
-DocBits Support Ticket Tutorial: Report Bugs, Attach Files & Get Help Faster
+DocBits Tutorial voor ondersteuningstickets: rapporteer bugs, voeg bestanden toe en krijg sneller hulp
 {% endembed %}
 
 Zodra u erop klikt, wordt het volgende ticketformulier aan u getoond.

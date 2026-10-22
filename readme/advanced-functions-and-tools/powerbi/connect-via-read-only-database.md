@@ -37,13 +37,13 @@ Deze gids begeleidt u bij het verbinden van **DocBits' Alleen-Lezen Database met
 * Open **Power BI Desktop**.
 *   Selecteer **Gegevens ophalen** → **ODBC** → **Verbinden**.
 
-    <figure><img src="../../.gitbook/assets/Screenshot 2025-05-19 163621.png" alt=""><figcaption></figcaption></figure>
+
 * Selecteer uit de DSN-lijst uw geconfigureerde bron (bijv. `Sandbox-Read_Only`).
 
 <figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt=""><figcaption></figcaption></figure>
 
 * Klik op **OK**. Voer inloggegevens opnieuw in indien gevraagd.
-  * <mark style="color:red;">**Opmerking:**</mark> Als u de fout **“wachtwoordverificatie mislukt voor gebruiker”** ziet, probeer dan uw wachtwoord in te voeren verpakt in **accolades `{}`**.
+  * Controleer bij `password authentication failed for user` de host, database, gebruikersnaam en het wachtwoord. Voer in het aanmeldvenster het werkelijke wachtwoord in. Accolades voor escaping in een ODBC-verbindingsreeks zijn driversyntaxis en geen algemene oplossing voor mislukte authenticatie.
 
 #### 4. Gegevens Laden en Transformeren
 
@@ -51,7 +51,7 @@ Deze gids begeleidt u bij het verbinden van **DocBits' Alleen-Lezen Database met
 * Open het **`public`** schema.
 * Selecteer de tabellen die u wilt importeren.
 
-![](../../.gitbook/assets/connect_read_only_1.png)        ![](../../.gitbook/assets/connect_read_only_2.png)
+![](../../.gitbook/assets/connect_read_only_1.png)
 
 * Kies:
   * **Laden** → Importeer direct in Power BI
@@ -62,20 +62,26 @@ Deze gids begeleidt u bij het verbinden van **DocBits' Alleen-Lezen Database met
 * Gebruik het Power BI-rapportcanvas om dashboards te bouwen.
 * Sleep velden, voeg slicers toe, kies grafiektypen en pas DAX-berekeningen toe.
 * Gebruik **Power Query Editor** om gegevens op te schonen of samen te voegen voordat u visuals maakt.
-* Referentie: [Power BI Documentatie](https://learn.microsoft.com/en-us/power-bi/?utm_source=chatgpt.com)
+* Referentie: [Power BI Documentatie](https://learn.microsoft.com/en-us/power-bi/)
 
 #### 6. Schakel Geplande Vernieuwing In (Optioneel)
 
-<mark style="color:red;">**Opmerking:**</mark> **Vereist Power BI Pro of Premium + Gateway**
+Geplande vernieuwing hangt af van de licentie of capaciteit van de werkruimte, de connector en de verbindingsmodus. Configureer voor deze ODBC-verbinding een bereikbare gateway met het juiste stuurprogramma, DSN en de juiste aanmeldgegevens. Controleer de actuele vereisten in de officiële documentatie.
 
-* Om uw rapporten gesynchroniseerd te houden met ClickHouse:
+* Om uw rapporten gesynchroniseerd te houden met PostgreSQL:
 * Publiceer uw `.pbix`-bestand naar **Power BI Service**.
-* Installeer de **Power BI Gateway** (Standaardmodus) op een machine met netwerktoegang tot ClickHouse.
-* In Power BI Service:
+* Installeer de **Power BI Gateway** (Standaardmodus) op een machine met netwerktoegang tot PostgreSQL.
+* In Power BI-service:
   * Ga naar uw dataset → **Instellingen** → **Geplande Vernieuwing**
   * Wijs uw DSN toe en geef inloggegevens op
-* Meer informatie [hier](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance). 
+* Meer informatie [hier](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).
 
-#### 7. Voorbeelddashboards & Gegevensweergaven 
+#### 7. Voorbeelddashboards & Gegevensweergaven
 
-<div><figure><img src="../../.gitbook/assets/Screenshot 2025-05-13 at 12.23.07.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2025-05-13 at 12.23.17.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2025-05-13 at 12.23.26.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2025-05-13 at 12.23.34.png" alt=""><figcaption></figcaption></figure></div>
+
+
+[Officiële documentatie — ODBC](https://learn.microsoft.com/en-us/power-query/connectors/odbc)
+
+[Officiële documentatie — psqlODBC](https://odbc.postgresql.org/docs/config-opt.html)
+
+[Officiële documentatie — Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)

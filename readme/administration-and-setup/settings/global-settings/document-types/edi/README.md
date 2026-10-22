@@ -1,6 +1,6 @@
 # e-docs
 
-<figure><img src="../../../../../.gitbook/assets/docbits_edi_overview.png" alt="Docbits Edi Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-all-edi-list-nl.png" alt="Bestaand EDI-formaat met de vier geconfigureerde attributen."><figcaption><p>Bestaand EDI-formaat met de vier geconfigureerde attributen.</p></figcaption></figure>
 
 ## **Overzicht**
 
@@ -16,7 +16,7 @@ In Docbits bieden de EDI-instellingen tools voor het definiëren en beheren van 
 2. **XSLT-editor**:
    * Gebruikt voor het bewerken en valideren van de XSLT (eXtensible Stylesheet Language Transformations) die wordt gebruikt in het transformatieproces. XSLT is een krachtige taal die is ontworpen voor het transformeren van XML-documenten naar andere XML-documenten of andere formaten zoals HTML, tekst of zelfs andere XML-structuren.
 
-<figure><img src="../../../../../.gitbook/assets/e-docs.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-all-edi-detail-nl.png" alt="Actief attribuut STRUCTUREDESCRIPTOR: JSON-structuurbeschrijving in de alleen-lezen editor."><figcaption><p>Actief attribuut STRUCTUREDESCRIPTOR: JSON-structuurbeschrijving in de alleen-lezen editor.</p></figcaption></figure>
 
 ## Effectieve regels en activering
 
@@ -25,3 +25,8 @@ Als een elektronische creditnota als Invoice verschijnt, volg dan de [handleidin
 ## Landengidsen
 
 Raadpleeg de landengidsen voor exacte formaatlabels, syntaxis, versiebeperkingen en de onderzochte configuratiestatus. [eDocs-formaten, versies en landengidsen](supported-electronic-documents/README.md).
+
+
+De weergaven tonen een bestaande configuratie en versie. De instellingen verschillen per documenttype en formaat. Valideer wijzigingen in een concept voordat u ze activeert.
+
+De afbeeldingen tonen de Nederlandstalige proceskaarten en de actieve, alleen-lezen configuratieversie. De tabnaam Builder, technische attribuutnamen en configuratiecode zijn overgenomen uit de geïllustreerde productversie.

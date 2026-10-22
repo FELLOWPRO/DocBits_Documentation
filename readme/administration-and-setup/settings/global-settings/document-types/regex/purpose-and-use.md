@@ -1,31 +1,31 @@
-# Purpose and use
+# Doel en gebruik
 
-Regex, short for "Regular Expressions", is an extremely powerful method for pattern recognition in texts. It allows you to search for specific strings or patterns within texts, offering a high level of flexibility and precision.
+Regex, een afkorting van "Regular Expressions" (reguliere expressies), is een krachtige methode om patronen in tekst te herkennen. U kunt er specifieke tekenreeksen of patronen mee zoeken, met veel flexibiliteit en precisie.
 
-**In terms of data extraction from structured text formats such as documents, Regex plays a crucial role for several reasons:**
+**Regex speelt om verschillende redenen een belangrijke rol bij gegevensextractie uit gestructureerde tekst, zoals documenten:**
 
-**Precise pattern recognition:**
+**Nauwkeurige patroonherkenning:**
 
-* Regex allows you to define precise patterns for which text should be searched.
-* This is particularly useful when the data to be extracted follows a specific format or structure.
+* Met regex kunt u nauwkeurig definiëren naar welke patronen in tekst moet worden gezocht.
+* Dit is vooral nuttig als de te extraheren gegevens een specifiek formaat of een vaste structuur volgen.
 
-**Flexible adaptation:**
+**Flexibel aanpassen:**
 
-* Since Regex offers a wide range of operators and constructs, complex patterns can be defined to extract data in different formats and variants.
-* This allows for flexible adaptation to different document structures.
+* Regex biedt uiteenlopende operatoren en constructies om complexe patronen te definiëren en gegevens in verschillende formaten en varianten te extraheren.
+* Zo kunt u de extractie flexibel afstemmen op verschillende documentstructuren.
 
-**Efficient processing:**
+**Efficiënte verwerking:**
 
-* Regex enables efficient processing of large amounts of text, since pattern searches are usually quick and even large text documents can be searched in an acceptable time.
+* Regex maakt efficiënte verwerking van grote hoeveelheden tekst mogelijk, doordat patroonzoekacties doorgaans snel zijn en ook grote tekstdocumenten binnen een aanvaardbare tijd doorzocht kunnen worden.
 
-**Automation:**
+**Automatisering:**
 
-* Regex can be used in scripts and programs to automate the extraction process.
-* This is especially useful when large volumes of documents need to be processed as extraction manually would be time-consuming and error-prone.
+* Regex kan in scripts en programma's worden gebruikt om de extractie te automatiseren.
+* Dit is vooral nuttig bij grote aantallen documenten, omdat handmatige extractie tijdrovend en foutgevoelig is.
 
-**Validation and Cleansing:**
+**Validatie en opschoning:**
 
-* Apart from extracting data, Regex also allows validation and cleaning of texts.
-* By defining patterns, unwanted strings can be identified and removed, resulting in cleaner and more consistent data.
+* Naast gegevensextractie ondersteunt regex ook het valideren en opschonen van tekst.
+* Met patronen kunt u ongewenste tekenreeksen herkennen en verwijderen, zodat gegevens schoner en consistenter worden.
 
-Overall, using Regex provides an effective way to analyze structured text formats and extract data accurately and efficiently, which in turn is of great use for various applications such as data analysis, text processing, information extraction, and machine learning.
+Met regex kunt u gestructureerde tekst analyseren en gegevens nauwkeurig en efficiënt extraheren. Dit is nuttig voor onder meer gegevensanalyse, tekstverwerking, informatie-extractie en machinelearning.

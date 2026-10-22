@@ -1,29 +1,29 @@
-# Layout Manager
+# Lay-outbeheer
 
 <figure><img src="../../../../../.gitbook/assets/docbits_layout_manager_overview.png" alt="Docbits Layout Manager Overview"><figcaption></figcaption></figure>
 
-#### Overview
+#### Overzicht
 
-The Layout Manager allows administrators to visually configure and modify the layout of document types by setting properties for various data fields and groups within a document. This interface helps ensure that the extraction models and manual data entry points align precisely with the document's structure as scanned or uploaded into Docbits.
+Met de Layout Manager kunnen beheerders de lay-out van documenttypen visueel configureren en wijzigen door eigenschappen in te stellen voor verschillende gegevensvelden en groepen binnen een document. Deze interface zorgt ervoor dat de extractiemodellen en handmatige gegevensinvoerpunten precies aansluiten op de structuur van het document zoals gescand of geüpload naar Docbits.
 
-#### Key Components
+#### Belangrijkste onderdelen
 
-1. **Groups and Fields**:
-   * **Groups**: Organizational units within a document type that categorize related fields (e.g., Invoice Details, Payment Details). These can be expanded or collapsed and arranged to mirror the logical grouping in the actual document.
-   * **Fields**: Individual data points within each group (e.g., Invoice Number, Payment Terms). Each field can be customized for how data is captured, displayed, and processed.
+1. **Groepen en velden**:
+   * **Groepen**: Organisatie-eenheden binnen een documenttype die gerelateerde velden categoriseren (bijvoorbeeld Factuurgegevens, Betalingsgegevens). Deze kunnen worden uitgevouwen of samengevouwen en zo worden gerangschikt dat ze de logische groepering in het daadwerkelijke document weerspiegelen.
+   * **Velden**: individuele gegevenspunten binnen elke groep (bijvoorbeeld factuurnummer, betalingsvoorwaarden). Elk veld kan worden aangepast voor de manier waarop gegevens worden vastgelegd, weergegeven en verwerkt.
 2. **Properties Panel**:
-   * This panel displays the properties of the selected field or group, allowing for detailed configuration, such as:
-     * **Label**: The visible label for the field in the user interface.
-     * **Field Name**: The technical identifier used within the system.
-     * **Element Width in Percentage**: Determines the width of the field in relation to the document layout.
-     * **Tab Index**: Controls the tabbing order for navigation.
-     * **Run Script on Change**: Whether to execute a script when the field value changes.
-     * **Display Label On Left**: Whether the label is displayed to the left of the field or above it.
-     * **Is Textarea**: Specifies if the field should be a textarea, accommodating larger amounts of text.
-     * **Select Model Type**: Option to select which model type will handle the extraction of this field.
-     * **Field Length**: Maximum length of data to be accepted in this field.
-     * **Banned Keywords**: Keywords that are not allowed within the field.
+   * Dit paneel toont de eigenschappen van het geselecteerde veld of de geselecteerde groep, waardoor gedetailleerde configuratie mogelijk is, zoals:
+     * **Label**: Het zichtbare label voor het veld in de gebruikersinterface.
+     * **Veldnaam**: de technische identificatie die binnen het systeem wordt gebruikt.
+     * **Elementbreedte in percentage**: Bepaalt de breedte van het veld in relatie tot de documentindeling.
+     * **Tabindex**: regelt de tabvolgorde voor navigatie.
+     * **Script uitvoeren bij wijziging**: Of een script moet worden uitgevoerd wanneer de veldwaarde verandert.
+     * **Label links weergeven**: Of het label links van het veld of erboven wordt weergegeven.
+     * **Is Tekstgebied**: Specificeert of het veld een tekstgebied moet zijn, waarin grotere hoeveelheden tekst kunnen worden geplaatst.
+     * **Selecteer modeltype**: Optie om te selecteren welk modeltype de extractie van dit veld afhandelt.
+     * **Veldlengte**: Maximale lengte van de gegevens die in dit veld worden geaccepteerd.
+     * **Verboden trefwoorden**: trefwoorden die niet zijn toegestaan binnen het veld.
 3. **Template Preview**:
-   * Shows a real-time preview of how the document will appear based on the current layout configuration. This helps in ensuring that the layout matches the actual document structure and is vital for testing and refining the document processing setup.
+   * Toont een realtime voorbeeld van hoe het document eruit zal zien op basis van de huidige lay-outconfiguratie. Dit helpt ervoor te zorgen dat de lay-out overeenkomt met de daadwerkelijke documentstructuur en is van cruciaal belang voor het testen en verfijnen van de documentverwerkingsinstellingen.
 
 {% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2490" %}

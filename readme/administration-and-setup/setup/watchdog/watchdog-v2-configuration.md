@@ -2,7 +2,7 @@
 
 Deze handleiding legt uit hoe u de WatchDog-service binnen de DocBits-applicatie configureert. Alle configuraties worden rechtstreeks beheerd onder **Instellingen → Documentverwerking → WatchDog**.
 
-<figure><img src="../../../.gitbook/assets/watchdog-v2-config-infographic.svg" alt="WatchDog Configuration Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-configuration-nl.svg" alt="WatchDog-configuratie: functies van de vier tabbladen."><figcaption><p>WatchDog-configuratie: functies van de vier tabbladen.</p></figcaption></figure>
 
 ---
 
@@ -143,7 +143,7 @@ Beheer de XSLT-transformatiesjablonen die voor XML-exports worden gebruikt.
 
 ---
 
-## 6. Tabblad Export Configurations
+## 6. Tabblad Exportconfiguraties
 
 Overzicht van alle actieve exportconfiguraties met verbindingsstatus.
 

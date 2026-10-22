@@ -117,7 +117,7 @@ Maak knooppunten bereikbaar vanaf een ingang. Vermijd cycli en inkomende verbind
 
 </details>
 
-## Variabelen, tests en activering {#variables-tests-and-activation}
+## Variabelen, testen en activering {#variables-tests-and-activation}
 
 Volg de verbonden factuurworkflow in de echte DocBits-editor. Open Variabelen, vergelijk de typen en de documentverwijzing, zoek Valideren, bereid tests met documenten of aangepaste gegevens voor en bekijk Opslaan en activering. De testscènes tonen de configuratie van voorbeeldgegevens; ze tonen geen uitgevoerd testresultaat.
 

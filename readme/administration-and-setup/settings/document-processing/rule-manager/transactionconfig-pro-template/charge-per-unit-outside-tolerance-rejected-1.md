@@ -1,37 +1,39 @@
-# Charge Per Unit Outside Tolerance (Rejected)
+# Toeslag per eenheid buiten tolerantie (Afgewezen)
+
+Het volgende scenario is een voorbeeld van een geconfigureerde mapping en geen aantoonbaar uitgerold standaardsjabloon. De werkelijke uitvoer, bedragen, tekens en documenttypen hangen af van de actieve `conflict_resolution`-regels en -expressies, de exportmapping en de goedkeuringsbesluiten. Elke hieronder beschreven debet- of creditnota is afhankelijk van die configuratie; het voorbeeld garandeert geen automatische uitgifte of wettelijke naleving.
 
 ## Scenario:
 
-The charge per unit is outside tolerance and has not been approved.
+De toeslag per eenheid valt buiten de tolerantie en is niet goedgekeurd.
 
-## Action:
+## Actie:
 
-The system adjusts the charge per unit to match the purchase order or approved levels, generating any necessary debit or credit notes.
+Het systeem past de kosten per eenheid aan zodat deze overeenkomen met de inkooporder of goedgekeurde niveaus, en genereert de benodigde debet- of creditnota's.
 
-## Example:
+## Voorbeeld:
 
 * **Purchase Order (PO):**
-  * Charge Per Unit: $6.00
+  * Kosten per eenheid: $6.00
   * Quantity: 800 units
-  * Total Charge Amount: $4,800.00
+  * Totaal kostenbedrag: $4,800.00
 * **Invoice Received:**
-  * Charge Per Unit: $7.00 (outside tolerance of 16.67%, rejected)
+  * Kosten per eenheid: $7.00 (buiten de tolerantie van 16.67%, afgewezen)
   * Quantity: 800 units
-  * Total Charge Amount: $5,600.00
+  * Totaal kostenbedrag: $5,600.00
 * **Tolerance Levels:**
-  * Charge Per Unit Tolerance: ±5%
+  * Tolerantie per eenheid: ±5%
 
-Since the charge per unit ($7.00) exceeds the acceptable tolerance range of 5% and has not been approved, the system will:
+Aangezien de kosten per eenheid ($7.00) het aanvaardbare tolerantiebereik van 5% overschrijden en niet zijn goedgekeurd, zal het systeem:
 
-1. **Reject the Invoiced Charge Per Unit:** The system does not accept the invoiced charge per unit of $7.00 due to the variance exceeding the tolerance limit.
-2. **Adjust the Charge Per Unit:** The system adjusts the charge per unit to match the purchase order or the approved charge per unit:
-   * Adjusted Charge Per Unit = $6.00 (from PO)
-3. **Recalculate the Total Charge Amount:** The system recalculates the total charge amount based on the adjusted charge per unit:
-   * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**
-   * **Corrected Total Charge Amount = 800 units × $6.00 = $4,800.00**
-4. **Generate a Debit Note:** Since the original invoice total was higher than the corrected total, the system generates a debit note for the overcharged amount:
-   * **Debit Note Amount = Original Invoice Total - Corrected Total Charge Amount**
-   * **Debit Note Amount = $5,600.00 - $4,800.00 = $800.00**
-5. **Process the Invoice:** The system processes the invoice with the corrected total charge amount of $4,800.00 and issues a debit note for $800.00 to account for the overcharged amount.
+1. **De gefactureerde kosten per eenheid afwijzen:** Het systeem accepteert de gefactureerde kosten per eenheid van $7.00 niet omdat de afwijking de tolerantielimiet overschrijdt.
+2. **De kosten per eenheid aanpassen:** Het systeem past de kosten per eenheid aan zodat deze overeenkomen met de inkooporder of de goedgekeurde kosten per eenheid:
+   * Aangepaste kosten per eenheid = $6.00 (vanaf PO)
+3. **Herbereken het totale kostenbedrag:** Het systeem herberekent het totale kostenbedrag op basis van de aangepaste kosten per eenheid:
+   * **Gecorrigeerd totaalbedrag = Aantal × aangepaste kosten per eenheid**
+   * **Gecorrigeerd totaalbedrag = 800 eenheden × $6.00 = $4,800.00**
+4. **Een debetnota genereren:** Omdat het oorspronkelijke factuurtotaal hoger was dan het gecorrigeerde totaal, genereert het systeem een debetnota voor het te veel in rekening gebrachte bedrag:
+   * **Bedrag debetnota = Totaal origineel factuur - Gecorrigeerd totaalbedrag**
+   * **Bedrag debetnota = $5,600.00 - $4,800.00 = $800.00**
+5. **De factuur verwerken:** Het systeem verwerkt de factuur met het gecorrigeerde totale bedrag van $4,800.00 en geeft een debetnota uit van $800.00 om het te veel in rekening gebrachte bedrag te verantwoorden.
 
-This approach ensures that financial transactions are consistent with the purchase order terms, rejecting unapproved variances and maintaining accurate billing practices.
+Deze aanpak zorgt ervoor dat financiële transacties consistent zijn met de voorwaarden van de inkooporder, waarbij niet-goedgekeurde afwijkingen worden afgewezen en nauwkeurige factureringspraktijken worden gehandhaafd.

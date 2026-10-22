@@ -1,7 +1,7 @@
 # Gebruikersondersteuning
 
 {% embed url="https://youtu.be/fQUIrp-qz9c" %}
-DocBits Support Ticket Tutorial: Report Bugs, Attach Files & Get Help Faster
+DocBits Tutorial voor ondersteuningstickets: rapporteer bugs, voeg bestanden toe en krijg sneller hulp
 {% endembed %}
 
 ### Gebruikersondersteuning <a href="#ikpwh4qbrq82" id="ikpwh4qbrq82"></a>
@@ -12,7 +12,7 @@ Als u problemen ondervindt of vragen heeft bij het gebruik van DocBits, raadplee
 
 <figure><img src="../../../.gitbook/assets/docbits_fellowpro_contact.png" alt="Docbits Fellowpro Contact"><figcaption></figcaption></figure>
 
-You can also contact us via our FELLOWPRO page:
+U kunt ook contact met ons opnemen via onze FELLOWPRO pagina:
 
 {% embed url="https://fellowpro.com/de/fellow/kontakt-fellowpro-ag/" %}
 

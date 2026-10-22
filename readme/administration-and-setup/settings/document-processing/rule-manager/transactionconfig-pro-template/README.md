@@ -1,125 +1,121 @@
 # TransactionConfig Pro Template
 
-## Comprehensive Configuration Tool for Financial Document Processing
+## Verwerking van financiële documenten configureren
 
-_TransactionConfig Pro Template_ is a powerful configuration tool designed for enterprise environments to manage the processing of financial documents, such as invoices, debit notes, and credit notes. The tool provides detailed mapping and field definitions that allow businesses to automate and customize their financial workflows with precision. Integrating seamlessly with existing Infor ERP systems, _TransactionConfig Pro Template_ ensures accurate handling of complex transactions while maintaining compliance with global financial standards.
+_TransactionConfig Pro Template_ beschrijft voorbeeldmappings voor facturen, debetnota’s en creditnota’s. Regelbeheer kan geconfigureerde `conflict_resolution`-regels en -expressies gebruiken om verwerkingsacties te bepalen. Deze documentatie toont niet aan dat een vooraf gedefinieerd sjabloon in uw omgeving is uitgerold.
 
-### Key Features
+Veldmappings, transactietypen en procesbesluiten moeten voor de betreffende Infor M3/LN-integratie worden geconfigureerd. De voorbeelden lichten die configuratie toe; ze garanderen geen juiste resultaten, integratie zonder aanpassingen of naleving van internationale financiële normen.
 
-• Detailed Mapping: Allows for precise mapping of fields across various transaction types, ensuring data consistency and accuracy.
+### Configuratiegebieden
 
-• Customization: Supports customization of financial document workflows to meet specific business needs.
+* **Mapping:** Definieer bron- en doelvelden per transactietype en controleer de resulterende gegevens.
+* **Aanpassing:** Configureer de regels voor het bedrijfsproces en de goedkeuringen.
+* **Automatisering:** Automatiseer alleen besluiten die expliciet door actieve regels en expressies worden gedekt.
+* **Integratie:** Controleer de exportmapping en de vereisten van het Infor M3/LN-doelsysteem.
+* **Naleving:** Beoordeel boekhoudkundige en fiscale vereisten afzonderlijk; configuratie alleen garandeert geen wettelijke naleving.
 
-• Automation: Automates the handling of financial transactions, reducing manual errors and increasing efficiency.
+## Voorbeelden van conflictoplossing
 
-• Integration: Easily integrates with existing Infor M3/LN ERP systems, enhancing the overall financial processing capabilities of the organization.
+Het volgende scenario is een voorbeeld van een geconfigureerde mapping en geen aantoonbaar uitgerold standaardsjabloon. De werkelijke uitvoer, bedragen, tekens en documenttypen hangen af van de actieve `conflict_resolution`-regels en -expressies, de exportmapping en de goedkeuringsbesluiten. Elke hieronder beschreven debet- of creditnota is afhankelijk van die configuratie; het voorbeeld garandeert geen automatische uitgifte of wettelijke naleving.
 
-• Compliance: Ensures compliance with international financial standards and regulations, helping businesses manage global transactions effectively.
+### [Gevallen 1, 2, 3: Hoeveelheid en eenheidsprijs binnen tolerantie](case-1-2-3-quantity-and-unit-price-within-tolerance.md)
 
+**Scenario:** De hoeveelheid en prijs op de factuur vallen binnen de geconfigureerde PO-toleranties.
 
+**Voorbeeldactie:** De voorbeeldmapping accepteert de factuurwaarden en berekent hoeveelheid × eenheidsprijs.
 
-## Detailed Explanation of Conflict Resolution Cases
+### [Gevallen 4, 5: Hoeveelheid binnen, prijs buiten tolerantie (goedgekeurd)](case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved.md)
 
-_TransactionConfig Pro Template_ includes a series of predefined rules to handle common discrepancies between invoice data and purchase order (PO) data. These rules are designed to automate decision-making when variances occur, ensuring consistency and accuracy in financial processing.
+**Scenario:** De hoeveelheid valt binnen de tolerantie; de prijsafwijking valt erbuiten en is goedgekeurd.
 
-### [Case 1, 2, 3: Quantity and Unit Price Within Tolerance](case-1-2-3-quantity-and-unit-price-within-tolerance.md)
+**Voorbeeldactie:** De voorbeeldmapping gebruikt de PO-prijs en boekt het goedgekeurde verschil als regelkosten als dit zo is geconfigureerd.
 
-**Scenario:** Both the quantity and unit price on the invoice are within an acceptable tolerance range compared to the purchase order.
+### [Geval 6: Hoeveelheid binnen tolerantie, prijs onder de grens (afgewezen)](case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
 
-• **Action:** The system accepts the invoice values and calculates the total amount based on the provided quantity and unit price.
+**Scenario:** De hoeveelheid valt binnen de tolerantie; de prijs ligt onder het toegestane bereik en is afgewezen.
 
-### [Case 4, 5: Quantity Within Tolerance, Unit Price Outside Tolerance (Approved)](case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved.md)
+**Voorbeeldactie:** De voorbeeldmapping gebruikt de PO-prijs. Het verschil met teken is niet automatisch een creditnota; type en teken van de correctie hangen af van de mapping.
 
-**Scenario:** The quantity on the invoice is within tolerance, but the unit price is outside tolerance, and this variance has been approved.
+### [Geval 7: Hoeveelheid binnen tolerantie, prijs boven de grens (afgewezen)](case-7-quantity-within-tolerance-unit-price-outside-tolerance-positive-rejected.md)
 
-• **Action:** The system adjusts the unit price to match the purchase order and applies any necessary line charges to account for the difference.
+**Scenario:** De hoeveelheid valt binnen de tolerantie; de positieve prijsafwijking is afgewezen.
 
-### [Case 6: Quantity Within Tolerance, Unit Price Outside Negative Tolerance (Rejected)](case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
+**Voorbeeldactie:** De voorbeeldmapping gebruikt de PO-prijs. Een eventuele nota of correctie voor het verschil hangt af van de exportmapping.
 
-**Scenario:** The quantity is within tolerance, but the unit price is below the acceptable range (negative tolerance) and is not approved.
+### [Gevallen 8a, 9a: Hoeveelheid buiten tolerantie (goedgekeurd), prijs binnen](case-8a-9a-quantity-outside-tolerance-approved-unit-price-within-tolerance.md)
 
-• **Action:** The system rejects the unit price, adjusts it to match the purchase order, and generates a credit note for the difference. Additional header charges may be applied as necessary.
+**Scenario:** De hoeveelheidafwijking is goedgekeurd en de prijs blijft binnen de tolerantie.
 
-### [Case 7: Quantity Within Tolerance, Unit Price Outside Tolerance (Positive Rejected)](case-7-quantity-within-tolerance-unit-price-outside-tolerance-positive-rejected.md)
+**Voorbeeldactie:** De voorbeeldmapping gebruikt de goedgekeurde factuurhoeveelheid en de gefactureerde eenheidsprijs.
 
-**Scenario:** The quantity is within tolerance, but the unit price exceeds the acceptable range (positive tolerance) and is not approved.
+### [Geval 11a: Hoeveelheid boven de grens (afgewezen), prijs binnen tolerantie](case-11a-quantity-outside-tolerance-positive-rejected-unit-price-within-tolerance.md)
 
-• **Action:** The system rejects the invoice unit price, adjusts it to match the purchase order, and may generate a debit note to account for the overcharged amount.
+**Scenario:** De hoeveelheid overschrijdt de tolerantie en is afgewezen; de prijs valt binnen de tolerantie.
 
-### [Case 8a, 9a: Quantity Outside Tolerance (Approved), Unit Price Within Tolerance](case-8a-9a-quantity-outside-tolerance-approved-unit-price-within-tolerance.md)
+**Voorbeeldactie:** De voorbeeldmapping gebruikt de goedgekeurde hoeveelheid en behoudt de prijs. De verwerking van het overschot hangt af van de geconfigureerde regels.
 
-**Scenario:** The quantity on the invoice is outside the acceptable tolerance but has been approved, while the unit price remains within tolerance.
+### [Geval 10a: Hoeveelheid onder de grens (afgewezen), prijs binnen tolerantie](case-10a-quantity-outside-tolerance-negative-rejected-unit-price-within-tolerance.md)
 
-• **Action:** The system accepts the approved quantity and the unit price as per the invoice and processes the transaction accordingly.
+**Scenario:** De hoeveelheid ligt onder de tolerantie en is afgewezen; de prijs valt binnen de tolerantie.
 
-### [Case 11a: Quantity Outside Tolerance (Positive Rejected), Unit Price Within Tolerance](case-11a-quantity-outside-tolerance-positive-rejected-unit-price-within-tolerance.md)
+**Voorbeeldactie:** De voorbeeldmapping gebruikt de goedgekeurde hoeveelheid en behoudt de eenheidsprijs.
 
-**Scenario:** The quantity on the invoice exceeds the acceptable range (positive) and is rejected, but the unit price is within tolerance.
+### [Gevallen 8b, 9b: Hoeveelheid en prijs buiten tolerantie (goedgekeurd)](case-8b-9b-quantity-outside-tolerance-approved-unit-price-outside-tolerance-approved.md)
 
-• **Action:** The system adjusts the quantity to the approved level, maintaining the unit price, and processes the transaction. Any excess quantity is rejected and not invoiced.
+**Scenario:** Zowel de hoeveelheidafwijking als de prijsafwijking is goedgekeurd.
 
-### [Case 10a: Quantity Outside Tolerance (Negative Rejected), Unit Price Within Tolerance](case-10a-quantity-outside-tolerance-negative-rejected-unit-price-within-tolerance.md)
+**Voorbeeldactie:** De voorbeeldmapping gebruikt goedgekeurde factuurwaarden en expliciet geconfigureerde regelkosten of correcties.
 
-**Scenario:** The quantity is below the acceptable range (negative tolerance) and is not approved, though the unit price is within tolerance.
+### [Geval 10b: Hoeveelheid onder de grens en prijs buiten tolerantie (afgewezen)](case-10b-quantity-outside-tolerance-negative-rejected-unit-price-outside-tolerance-rejected.md)
 
-• **Action:** The system adjusts the quantity to match the approved level, keeping the unit price consistent. The transaction is processed accordingly.
+**Scenario:** De negatieve hoeveelheidafwijking en de prijsafwijking zijn niet goedgekeurd.
 
-### [Case 8b, 9b: Quantity Outside Tolerance (Approved), Unit Price Outside Tolerance (Approved)](case-8b-9b-quantity-outside-tolerance-approved-unit-price-outside-tolerance-approved.md)
+**Voorbeeldactie:** De voorbeeldmapping gebruikt PO-waarden of goedgekeurde waarden. Debet- of creditnota’s vereisen de bijbehorende mapping en het bijbehorende goedkeuringsbesluit.
 
-**Scenario:** Both the quantity and unit price are outside the tolerance range but have been approved.
+### [Geval 11b: Hoeveelheid boven de grens en prijs buiten tolerantie (afgewezen)](case-11b-quantity-outside-tolerance-positive-rejected-unit-price-outside-tolerance-rejected.md)
 
-• **Action:** The system processes the transaction using the invoice values for both quantity and unit price, applying any necessary adjustments or line charges.
+**Scenario:** De positieve hoeveelheidafwijking en de prijsafwijking zijn afgewezen.
 
-### [Case 10b: Quantity Outside Tolerance (Negative Rejected), Unit Price Outside Tolerance (Rejected)](case-10b-quantity-outside-tolerance-negative-rejected-unit-price-outside-tolerance-rejected.md)
+**Voorbeeldactie:** De voorbeeldmapping gebruikt goedgekeurde PO-waarden; de verwerking van overschotten hangt af van de actieve configuratie.
 
-**Scenario:** Both the quantity and unit price are outside tolerance, and neither has been approved.
+### [Gevallen 12, 13: Regelkosten per eenheid binnen tolerantie](charge-per-unit-within-tolerance.md)
 
-• **Action:** The system rejects the invoice data, adjusts the values to match the purchase order, and generates necessary debit or credit notes.
+**Scenario:** De regelkosten per eenheid vallen binnen de geconfigureerde PO-tolerantie.
 
-### [Case 11b: Quantity Outside Tolerance (Positive Rejected), Unit Price Outside Tolerance (Rejected)](case-11b-quantity-outside-tolerance-positive-rejected-unit-price-outside-tolerance-rejected.md)
+**Voorbeeldactie:** De voorbeeldmapping accepteert de gefactureerde regelkosten zonder correctie.
 
-**Scenario:** The quantity exceeds the acceptable range (positive) and is rejected, and the unit price is also outside tolerance and rejected.
+### [Geval 14: Regelkosten per eenheid buiten tolerantie (goedgekeurd)](charge-per-unit-outside-tolerance-approved-1.md)
 
-• **Action:** The system adjusts the quantity and unit price to match the approved levels from the purchase order, rejecting any excesses, and processes the transaction.
+**Scenario:** De regelkosten per eenheid vallen buiten de tolerantie en zijn goedgekeurd.
 
-### [Case 12, 13: Charge Line - Charge Per Unit Within Tolerance](case-12-13-header-charge-charge-per-unit-within-tolerance.md)
+**Voorbeeldactie:** De voorbeeldmapping past de goedgekeurde regelkosten toe.
 
-**Scenario:** The charge per unit on the invoice is within the acceptable tolerance range compared to the purchase order.
+### [Geval 15: Regelkosten per eenheid buiten tolerantie (afgewezen)](charge-per-unit-outside-tolerance-rejected.md)
 
-• **Action:** The system accepts the charge per unit as invoiced and processes the transaction without adjustments.
+**Scenario:** De regelkosten per eenheid vallen buiten de tolerantie en zijn afgewezen.
 
-### [Case 14: Charge Line - Charge Per Unit Outside Tolerance (Approved)](charge-per-unit-outside-tolerance-approved-1.md)
+**Voorbeeldactie:** De voorbeeldmapping gebruikt de PO-regelkosten of goedgekeurde regelkosten. Een eventuele nota voor het verschil hangt af van de exportmapping.
 
-**Scenario:** The charge per unit is outside tolerance but has been approved.
+### [Gevallen 12, 13: Kosten op kopniveau per eenheid binnen tolerantie](case-12-13-header-charge-charge-per-unit-within-tolerance.md)
 
-• **Action:** The system accepts the charge per unit and applies the approved charges, processing the transaction accordingly.
+**Scenario:** De kosten op kopniveau per eenheid vallen binnen de geconfigureerde PO-tolerantie.
 
-### [Case 15: Charge Line - Charge Per Unit Outside Tolerance (Rejected)](charge-per-unit-outside-tolerance-rejected.md)
+**Voorbeeldactie:** De voorbeeldmapping past de gefactureerde kosten op kopniveau zonder correctie toe.
 
-**Scenario:** The charge per unit is outside tolerance and has not been approved.
+### [Geval 14: Kosten op kopniveau per eenheid buiten tolerantie (goedgekeurd)](charge-per-unit-outside-tolerance-approved.md)
 
-• **Action:** The system adjusts the charge per unit to match the purchase order or approved levels, generating any necessary debit or credit notes.
+**Scenario:** De kosten op kopniveau per eenheid vallen buiten de tolerantie en zijn goedgekeurd.
 
-### [Case 12, 13: Header Charge - Charge Per Unit Within Tolerance](case-12-13-header-charge-charge-per-unit-within-tolerance.md)
+**Voorbeeldactie:** De voorbeeldmapping past de goedgekeurde kosten op kopniveau toe.
 
-**Scenario:** The header charge per unit is within the acceptable tolerance range compared to the purchase order.
+### [Geval 15: Kosten op kopniveau per eenheid buiten tolerantie (afgewezen)](case-15-header-charge-charge-per-unit-outside-tolerance-rejected.md)
 
-• **Action:** The system processes the header charge as invoiced, applying it without adjustments.
+**Scenario:** De kosten op kopniveau per eenheid vallen buiten de tolerantie en zijn afgewezen.
 
-### [Case 14: Header Charge - Charge Per Unit Outside Tolerance (Approved)](charge-per-unit-outside-tolerance-approved.md)
+**Voorbeeldactie:** De voorbeeldmapping gebruikt PO-kosten op kopniveau of goedgekeurde waarden. Een eventuele afzonderlijke nota hangt af van de geconfigureerde verwerking.
 
-**Scenario:** The header charge per unit is outside tolerance but has been approved.
+### [Belastingregels](tax-lines.md "mention")
 
-• **Action:** The system processes the approved charge per unit, applying it to the transaction.
+**Scenario:** De belastingbedragen op de factuur en PO verschillen.
 
-### [Case 15: Header Charge - Charge Per Unit Outside Tolerance (Rejected)](case-15-header-charge-charge-per-unit-outside-tolerance-rejected.md)
-
-**Scenario:** The header charge per unit is outside tolerance and has not been approved.
-
-• **Action:** The system adjusts the header charge to match the purchase order, processing the transaction accordingly, and generating any necessary notes.
-
-### [tax-lines.md](tax-lines.md "mention")
-
-**Scenario:** Handles discrepancies in tax amounts between the invoice and purchase order.
-
-• **Action:** The system adjusts the tax lines according to the approved tax rates and amounts, ensuring compliance with applicable tax regulations.
+**Voorbeeldactie:** De voorbeeldmapping gebruikt goedgekeurde belastingtarieven en bedragen. De configuratie moet aan de toepasselijke belastingvereisten worden getoetst; het voorbeeld garandeert geen wettelijke naleving.

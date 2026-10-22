@@ -1,4 +1,4 @@
-# Document Status alert
+# Melding over documentstatus
 
 ## Tabel `public.document_status_alert`
 

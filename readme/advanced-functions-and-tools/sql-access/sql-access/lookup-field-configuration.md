@@ -1,4 +1,4 @@
-# Lookup field configuration
+# Configuratie van het opzoekveld
 
 ## Tabel `public.lookup_field_configuration`
 
@@ -13,10 +13,10 @@
 * `parent_field_id`: intern
 * `auto_trigger`: boolean
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: tijdstempel met tijdzone
+* `last_modified_on`: tijdstempel met tijdzone
 * `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: tijdstempel met tijdzone
 * `search_operator`: intern
 * `last_modified_by`: intern
 * `deleted_by`: intern

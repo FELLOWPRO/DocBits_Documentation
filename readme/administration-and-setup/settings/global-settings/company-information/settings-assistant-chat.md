@@ -1,4 +1,4 @@
-# Settings Assistant: wat de chat kan doen
+# Instellingenassistent: wat de chat kan doen
 
 ## Overzicht
 
@@ -8,9 +8,9 @@ De chat van de **Settings Assistant** beantwoordt vragen over uw instellingen, w
 
 | U wilt… | Voorbeeld | Wat u krijgt |
 | --- | --- | --- |
-| Een instelling vinden | "Where do I find the email import settings?" (waar vind ik de instellingen voor e-mailimport?) | Het pad (bijvoorbeeld Settings / Import) en een knop **Open setting** (instelling openen) die naar de instelling springt en deze markeert |
-| Een instelling begrijpen | "How do I enable barcode detection?" (hoe schakel ik barcodedetectie in?) | Een korte uitleg van elke passende instelling: wanneer u haar inschakelt, wanneer u haar uit laat |
-| Uw configuratie controleren | "Why isn't PO matching active?" (waarom is PO-matching niet actief?) | De huidige waarde van elke gerelateerde instelling in uw organisatie (**Current: On** of **Current: Off**) en welke instelling u blokkeert |
+| Een instelling vinden | "Waar vind ik de instellingen voor e-mailimport?" (waar vind ik de instellingen voor e-mailimport?) | Het pad (bijvoorbeeld Settings / Import) en een knop **Open setting** (instelling openen) die naar de instelling springt en deze markeert |
+| Een instelling begrijpen | "Hoe schakel ik barcodedetectie in?" (hoe schakel ik barcodedetectie in?) | Een korte uitleg van elke passende instelling: wanneer u haar inschakelt, wanneer u haar uit laat |
+| Uw configuratie controleren | "Waarom is de bestelafstemming niet actief?" (waarom is PO-matching niet actief?) | De huidige waarde van elke gerelateerde instelling in uw organisatie (**Current: On** of **Current: Off**) en welke instelling u blokkeert |
 | Een kapotte import opmerken | Een rode kaart bovenaan het paneel | Welke mailbox of FTP-verbinding faalt, hoe vaak en een waarschijnlijke reden |
 | Een instelling veilig wijzigen | **Switch off** (uitschakelen) bij een falende mailbox in een bevindingskaart | Een voorbeeld van de wijziging. Er wordt niets opgeslagen voordat u bevestigt. Elke wijziging kan ongedaan worden gemaakt. |
 | Een pagina leren kennen | **Watch video explanation** (uitlegvideo bekijken) | Een korte video voor de pagina waarop u zich bevindt (beschikbaar voor geselecteerde pagina's) |
@@ -29,17 +29,17 @@ Wanneer u het paneel op een instellingenpagina opent, begroet het u voor **die p
 
 | Pagina | Voorbeeldvragen |
 | --- | --- |
-| Bedrijfsinformatie | "How do I change our company address?", "Where do I upload our logo?", "Which domains are registered for our organization?" |
-| Import | "Is email import active for us?", "Which email address do we send documents to?", "How do I set up an FTP or SFTP import?" |
-| Classify & Extract | "Which AI model is used for extraction?", "Is splitting documents on barcodes active for us?", "Can I use a different AI model for one supplier?" |
-| Gebruikers | "How do I invite a new user?", "How do I make a user an administrator?", "How do I deactivate a user?" |
-| Instellingenoverzicht | "How do I enable barcode detection?", "Why isn't PO matching active?", "Where do I find the email import settings?" |
+| Bedrijfsinformatie | "Hoe wijzig ik ons bedrijfsadres?", "Waar upload ik ons logo?", "Welke domeinen zijn voor onze organisatie geregistreerd?" |
+| Importeren | "Is e-mailimport voor ons actief?", "Naar welk e-mailadres sturen we documenten?", "Hoe stel ik een FTP- of SFTP-import in?" |
+| Classificeren en extraheren | "Welk AI-model wordt voor extractie gebruikt?", "Is het splitsen van documenten op barcodes voor ons actief?", "Kan ik voor een leverancier een ander AI-model gebruiken?" |
+| Gebruikers | "Hoe nodig ik een nieuwe gebruiker uit?", "Hoe maak ik een gebruiker beheerder?", "Hoe deactiveer ik een gebruiker?" |
+| Instellingenoverzicht | "Hoe schakel ik barcodedetectie in?", "Waarom is de bestelafstemming niet actief?", "Waar vind ik de instellingen voor e-mailimport?" |
 
 Klik op een vraag en ze wordt direct verstuurd. Onder de drie vragen zegt het paneel *I can also help with any other setting — just ask.* (ik kan ook helpen met elke andere instelling, vraag maar). Tijdens een gesprek blijft de chip **Help with this page** (hulp bij deze pagina) onderaan staan en vraagt "What can I configure on this page?" (wat kan ik op deze pagina configureren?).
 
 ### Voorbeeld 1: Een instelling vinden
 
-U vraagt **"How do I change our company address?"** (hoe wijzig ik ons bedrijfsadres?)
+U vraagt **"Hoe wijzig ik ons bedrijfsadres?"** (hoe wijzig ik ons bedrijfsadres?)
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address-nl.png" alt="De assistent antwoordt met het pad naar het bedrijfsadres en een knop Open setting"><figcaption><p>Het antwoord noemt de plek, en de kaart geeft u het exacte pad en een knop <strong>Open setting</strong>.</p></figcaption></figure>
 
@@ -47,7 +47,7 @@ Het antwoord zegt waar het adres staat. De kaart eronder toont het pad (**Settin
 
 ### Voorbeeld 2: Een instelling begrijpen die meerdere namen heeft
 
-U vraagt **"How do I enable barcode detection?"** (hoe schakel ik barcodedetectie in?)
+U vraagt **"Hoe schakel ik barcodedetectie in?"** (hoe schakel ik barcodedetectie in?)
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode-nl.png" alt="De assistent legt de drie barcode-instellingen uit en wanneer u elk moet inschakelen"><figcaption><p>Wanneer een woord bij meerdere instellingen past, somt de assistent ze allemaal op met <strong>Enable when</strong> (inschakelen wanneer) en <strong>Leave off when</strong> (uit laten wanneer).</p></figcaption></figure>
 
@@ -59,7 +59,7 @@ U vraagt **"How do I enable barcode detection?"** (hoe schakel ik barcodedetecti
 
 ### Voorbeeld 3: Uitzoeken waarom iets niet gebeurt
 
-U vraagt **"Why isn't PO matching active?"** (waarom is PO-matching niet actief?)
+U vraagt **"Waarom is de bestelafstemming niet actief?"** (waarom is PO-matching niet actief?)
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching-nl.png" alt="De assistent toont de huidige waarde van elke instelling voor PO-matching"><figcaption><p>Bij een "waarom"-vraag leest de assistent uw configuratie en toont elke instelling met haar <strong>Current</strong>-waarde (huidige waarde).</p></figcaption></figure>
 
@@ -90,9 +90,9 @@ Verwar **Custom Validation Rules** (regels voor de velden van een documenttype) 
 
 ### Voorbeeld 6: Meer vragen om te proberen
 
-* "Which AI model is used for extraction?"
-* "Is splitting documents on barcodes active for us?"
-* "How do I deactivate a user?"
+* "Welk AI-model wordt voor extractie gebruikt?"
+* "Is het splitsen van documenten op barcodes voor ons actief?"
+* "Hoe deactiveer ik een gebruiker?"
 * "Where do I set how long documents are kept?"
 * "Which settings affect the touchless rate?"
 * "Show me a screenshot of the supplier portal settings."

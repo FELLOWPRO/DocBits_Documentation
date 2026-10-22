@@ -6,7 +6,7 @@ De Sitemap is de complete, doorzoekbare index van alles wat DocBits biedt — el
 
 Open de Sitemap vanuit de zijbalk (vermelding nabij de onderkant) of druk op <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> en kies **Alle resultaten bekijken**. De directe URL is `/sitemap`.
 
-<figure><img src="../../.gitbook/assets/sitemap-overview.png" alt="Sitemap overzicht"><figcaption><p>Sitemap met categorieoverzicht en zoekkop.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-sitemap-nl.png" alt="Paginacatalogus in de geselecteerde interfacetaal. Enkele vaste filters en aanduidingen kunnen in de afgebeelde versie nog Engels zijn."><figcaption><p>Paginacatalogus in de geselecteerde interfacetaal. Enkele vaste filters en aanduidingen kunnen in de afgebeelde versie nog Engels zijn.</p></figcaption></figure>
 
 ## Door de catalogus bladeren
 

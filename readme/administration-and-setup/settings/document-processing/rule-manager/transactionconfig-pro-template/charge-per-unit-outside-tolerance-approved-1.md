@@ -1,32 +1,34 @@
-# Case 14: Charge Line - Charge Per Unit Outside Tolerance (Approved)
+# Geval 14: Toeslagregel - Toeslag per eenheid buiten tolerantie (Goedgekeurd)
+
+Het volgende scenario is een voorbeeld van een geconfigureerde mapping en geen aantoonbaar uitgerold standaardsjabloon. De werkelijke uitvoer, bedragen, tekens en documenttypen hangen af van de actieve `conflict_resolution`-regels en -expressies, de exportmapping en de goedkeuringsbesluiten. Elke hieronder beschreven debet- of creditnota is afhankelijk van die configuratie; het voorbeeld garandeert geen automatische uitgifte of wettelijke naleving.
 
 ## Scenario:
 
-The charge per unit is outside tolerance but has been approved.
+De toeslag per eenheid valt buiten de tolerantie, maar is goedgekeurd.
 
-## Action:
+## Actie:
 
-The system accepts the charge per unit and applies the approved charges, processing the transaction accordingly.
+Het systeem accepteert de kosten per eenheid en past de goedgekeurde kosten toe, waarbij de transactie dienovereenkomstig wordt verwerkt.
 
-## Example:
+## Voorbeeld:
 
 * **Purchase Order (PO):**
-  * Charge Per Unit: $4.50
+  * Kosten per eenheid: $4.50
   * Quantity: 1,000 units
-  * Total Charge Amount: $4,500.00
+  * Totaal kostenbedrag: $4,500.00
 * **Invoice Received:**
-  * Charge Per Unit: $5.00 (outside tolerance of 11.11%, approved)
+  * Kosten per eenheid: $5.00 (buiten de tolerantie van 11.11%, goedgekeurd)
   * Quantity: 1,000 units
-  * Total Charge Amount: $5,000.00
+  * Totaal kostenbedrag: $5,000.00
 * **Tolerance Levels:**
-  * Charge Per Unit Tolerance: ±5%
+  * Tolerantie per eenheid: ±5%
 
-Since the charge per unit ($5.00) is outside the acceptable tolerance range of 5% but has been approved, the system will:
+Aangezien de kosten per eenheid ($5.00) buiten het aanvaardbare tolerantiebereik van 5% vallen, maar wel zijn goedgekeurd, zal het systeem:
 
-1. **Accept the Approved Charge Per Unit:** The system accepts the invoiced charge per unit of $5.00 as it has been approved despite exceeding the tolerance limit.
-2. **Process the Transaction:** The system processes the invoice using the approved charge per unit and the quantity:
-   * **Total Charge Amount = Quantity × Approved Charge Per Unit**
-   * **Total Charge Amount = 1,000 units × $5.00 = $5,000.00**
-3. **Finalize the Invoice:** The system processes the transaction with the approved charges, reflecting the total amount of $5,000.00.
+1. **Accepteer de goedgekeurde kosten per eenheid:** Het systeem accepteert de gefactureerde kosten per eenheid van $5.00, aangezien deze zijn goedgekeurd ondanks het overschrijden van de tolerantielimiet.
+2. **De transactie verwerken:** Het systeem verwerkt de factuur met behulp van de goedgekeurde kosten per eenheid en de hoeveelheid:
+   * **Totaal bedrag aan kosten = Aantal × goedgekeurde kosten per eenheid**
+   * **Totaal bedrag van de kosten = 1,000 eenheden × $5.00 = $5,000.00**
+3. **De factuur afronden:** Het systeem verwerkt de transactie met de goedgekeurde kosten, die het totale bedrag van $5,000.00 weerspiegelen.
 
-This approach ensures that the system can accommodate approved variances in charges, allowing flexibility while maintaining accurate financial records.
+Deze aanpak zorgt ervoor dat het systeem goedgekeurde afwijkingen in de kosten kan opvangen, waardoor flexibiliteit mogelijk is en tegelijkertijd nauwkeurige financiële gegevens worden bijgehouden.

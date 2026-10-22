@@ -1,75 +1,80 @@
-# Creating and Editing Scripts
+# Scripts maken en bewerken
 
 {% embed url="https://youtu.be/n8NpWWIjmlA" %}
-DocBits Scripting Guide: Automate Workflows with Python Code
+DocBits-scripthandleiding: workflows automatiseren met Python-code
 {% endembed %}
 
-## To create a new script in DocBits, follow these detailed instructions:
+## Een nieuw script aanmaken in DocBits
 
-**Choose the scripting language:**
+**De scripttaal kiezen:**
 
-First, you need to choose the scripting language you want to use. DocBits typically supports common scripting languages ​​such as Python, JavaScript, or SQL. The choice of language depends on the needs of your project and your own competency.
+Kies een taal die de editor en runtime van uw DocBits-installatie daadwerkelijk aanbieden. In de scriptlijst kunnen onder meer Python en JavaScript worden aangeduid; de beschikbare mogelijkheden hangen af van de implementatie. Ga niet zonder controle uit van SQL-ondersteuning.
 
-**Open the script development environment:**
+**De scriptontwikkelomgeving openen:**
 
-Log in to DocBits and navigate to the script development environment. This is in the administration area.
+Meld u aan bij DocBits en open de scriptontwikkelomgeving in het beheergedeelte.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_dev_environment.png" alt="Docbits Script Dev Environment"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-25-nl.png" alt="Scriptlijst met verborgen namen, datums en organisatiegegevens."><figcaption><p>Scriptlijst met verborgen namen, datums en organisatiegegevens.</p></figcaption></figure>
 
-**Create a new script:**
+**Een nieuw script aanmaken:**
 
-Click the "+ New" button to open a new script editor.
+Klik op de knop "+ New" om een nieuwe scripteditor te openen.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_new_script_editor.png" alt="Docbits New Script Editor"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-37-nl.png" alt="Editor voor een nieuw script met het meegeleverde startsjabloon; dit staat los van het zelfstandige Python-voorbeeld hieronder."><figcaption><p>Editor voor een nieuw script met het meegeleverde startsjabloon; dit staat los van het zelfstandige Python-voorbeeld hieronder.</p></figcaption></figure>
 
-**Write the code:**
+**De code schrijven:**
 
-Use the editor to write the code for your script. Start with the basic syntax of your chosen scripting language.
+Schrijf de code voor uw script in de editor. Begin met de basissyntaxis van de gekozen scripttaal.
 
-For example, if you are using Python, your script might look like this:
+Als u Python gebruikt, kan uw script er bijvoorbeeld als volgt uitzien:
 
-## 1. Example script in Python
+## 1. Voorbeeldscript in Python
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_python_example_2.png" alt="Docbits Script Python Example 2"><figcaption></figcaption></figure>
 
-## Function to clean patient names
 
-def clean\_patient\_name(name): cleaned\_name = name.strip().title() # Remove spaces and apply capitalization
+## Functie om patiëntnamen op te schonen
 
-return cleaned\_name
+Dit zelfstandige Python-voorbeeld demonstreert alleen de syntaxis. Het is geen geverifieerde DocBits-lifecyclehook en moet voor de juiste scriptcontext worden aangepast.
 
-## Main program
+```python
+def clean_patient_name(name):
+    cleaned_name = name.strip().title()
+    return cleaned_name
 
-if **name** == "**main**": patient\_name = " john doe " cleaned\_name = clean\_patient\_name(patient\_name) print("Cleaned patient name:", cleaned\_name)
+if __name__ == "__main__":
+    patient_name = " john doe "
+    cleaned_name = clean_patient_name(patient_name)
+    print("Cleaned patient name:", cleaned_name)
+```
 
-## 2. Example script
+## 2. Voorbeeldscript
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_example_2.png" alt="Docbits Script Example 2"><figcaption></figcaption></figure>
 
-**Test the script:**
 
-Check the code for errors and test it in a test environment. Make sure the script produces the expected results and works correctly.
+**Het script testen:**
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_test_code.png" alt="Docbits Script Test Code"><figcaption></figcaption></figure>
+Controleer de code op fouten en test deze in een testomgeving. Ga na of het script de verwachte resultaten oplevert en correct werkt.
 
-**Save the script:**
 
-Save the script in DocBits and give it a meaningful name that describes the purpose of the script.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_save_name.png" alt="Docbits Script Save Name" width="84"><figcaption></figcaption></figure>
+**Het script opslaan:**
 
-**Mapping the script to document types:**
+Sla het script op in DocBits en geef het een betekenisvolle naam die het doel beschrijft.
 
-An important step is mapping the script to the appropriate document types. This determines when and how the script is applied. This can usually be done through a configuration interface in DocBits, where you can assign the script to a specific document type and specify under which conditions it should be applied.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_mapping_doc_type.png" alt="Docbits Script Mapping Doc Type"><figcaption></figcaption></figure>
 
-**Review and publish:**
+**Het script aan documenttypen koppelen:**
 
-After you have created, tested and mapped the script, check it again for errors and inconsistencies. If everything is OK, you can publish the script to the DocBits production environment.
+Koppel het script aan de juiste documenttypen om te bepalen wanneer en hoe het wordt toegepast. Dit gebeurt doorgaans via een configuratiescherm in DocBits, waar u het script aan een documenttype toewijst en de toepassingsvoorwaarden opgeeft.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_publish_script_button.png" alt="Docbits Publish Script Button"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_publish_button.png" alt="Docbits Script Publish Button"><figcaption></figcaption></figure>
 
-Through these steps, you can successfully create, test and implement a new script in DocBits to automate processes and improve the efficiency of medical documentation.
+**Controleren en publiceren:**
+
+Controleer het script na het aanmaken, testen en koppelen nogmaals op fouten en inconsistenties. Als alles klopt, kunt u het publiceren naar de productieomgeving van DocBits.
+
+
+
+
+
+Met deze stappen kunt u een script in DocBits aanmaken, testen en implementeren om processen te automatiseren en medische documentatie efficiënter te verwerken.

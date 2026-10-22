@@ -2,7 +2,7 @@
 
 De **Standaardworkflow** builder is de lineaire, op kaarten gebaseerde editor voor het automatiseren van documentverwerking. Een workflow bestaat uit drie groepen kaarten — **Wanneer** (de trigger), **En** (aanvullende voorwaarden) en **Dan** (de acties die worden uitgevoerd). Wanneer een document voldoet aan de When/And-voorwaarden, worden de Then-acties automatisch uitgevoerd.
 
-## Een Standard Workflow maken en testen <a id="standard-workflow-tutorial"></a>
+## Een standaard workflow maken en testen <a id="standard-workflow-tutorial"></a>
 
 Maak een volledige Standard Workflow in de echte DocBits-interface: selecteer de factuur, controleer het factuurnummer en een bedrag boven 1000, wijs een beoordelaar toe en wijzig de status. Sla de regel op, voer drie testscenario’s uit en controleer het werkelijke resultaat op het document.
 

@@ -1,105 +1,105 @@
-# Suppliers and Purchase Orders
+# Leveranciers en inkooporders
 
-## **Connection Point**
+## **Verbindingspunt**
 
-You will need to create the DocBits API connection point in order to create the data flow later.
+Maak eerst het DocBits-API-verbindingspunt aan om later de gegevensstroom te kunnen inrichten.
 
-First, in InforOS, navigate to ION Desk → Connect → Connection Points
+Ga in InforOS naar ION Desk → Connect → Connection Points.
 
 ![](https://lh7-us.googleusercontent.com/852EogukgFvteFTdg6_a6MPLaBUUqDw1J4x4H2q9BMjaVzZIGlpASC_fImhvAxe-nPBvIvOPFTI0oG8D3RlkAHiFDbLsVrsjaJMD1B5otXyIzPDkvoJvrj-JvMEHao73jgcZ5aKLAP4fCpkP7XV08JE)
 
-Once here, you will need to create a new connection point.
+Maak hier een nieuw verbindingspunt aan.
 
 ![](https://lh7-us.googleusercontent.com/eh1NyUDTS0k-59ePv89PjZpfh5IT0iyFPoV5M9xmo3fmai-Iz0ptQFXgI9onZM-sTICHii32MkAw22AhZZAT5iKs_Hjw3_NDT49XG_KRONAvyK4OuL-bX667F9UGr-juckRmcE2hATOkSQ5x8QlugxU)
 
-**Select API**
+**API selecteren**
 
-Give the connection point a name and description that describes its nature and its environment. Under the Connection tab, import the service account you created for the environment you are working with.
+Geef het verbindingspunt een naam en beschrijving die de functie en omgeving duidelijk maken. Importeer op het tabblad Connection het serviceaccount voor de betreffende omgeving.
 
 ![](https://lh7-us.googleusercontent.com/WZKJSckXWzztmEHmySnz6oDSbgFDvPmxku48HCiDJn7O1vTUcpUBYnwDHMT_Ja8aSGd8sFm-YQQYzyn5DnYLw77PQeFwTxcOV6C9aPWHyj2VofevH4S6ciyduIUy5YaNvmuNV6WgVJKOZ89_6oJjuq0)
 
-Next, switch to the Documents tab. You will need to add the following BODs to the connection point.
+Open vervolgens het tabblad Documents. Voeg de volgende BOD's toe aan het verbindingspunt.
 
 ![](https://lh7-us.googleusercontent.com/3Q4XIpxXLixaDqXhh7CRKPl0yUwBce34CqLfw0BGS1UFXsvFIaxD6XelEgbnwfYFUCa5En-C1oAZR74C4lQ15as_M7JIQ20Nf9ZVmrVK8zCGuLS2YtphX4bgQ5uOwS2-MJLLZvsflDC31XLrTZzTKCg)
 
 * Ack-SupplierInvoice
 
-This BOD is used to signal on DocBits that an error has occurred within Infor. The configuration for these two BODs should look similar to the following (API Call Name changing for each)
+Dit BOD meldt in DocBits dat er een fout is opgetreden in Infor. De configuratie voor deze twee BOD's ziet er ongeveer als volgt uit; API Call Name verschilt per BOD.
 
 ![](https://lh7-us.googleusercontent.com/vmcVsltij144O3NeysAS2YduFNds98X_VJOpn6v356vAZI3v10SO8-ZMBd7zWyBUJKR9-UMQgGcT2U34HdGgpQ8rhtbFxsmuhgwJ_K6qXbtu04AP67G8jrNwkdj32LCgAhy_m4tnFQJApQehnfX8w5Y)
 
 * Sync.PurchaseOrder
 
-The configuration for this BOD should look similar to the following
+De configuratie voor dit BOD ziet er ongeveer als volgt uit.
 
 ![](https://lh7-us.googleusercontent.com/LPmOwFuzOnYNjwcKDfpI2S-IYJPKhjHYy4xKSUtB7EXSmPGfnG1lDfR-q6fdk4Uh9QBr-PIWjkpW3clbq31z8BP4_CGgoryKguS4GhR44gCG8xt6FJxRvqV-1i5Ul_3-wFjmiroYcchb5Ou5wBA0DF0)
 
 * Sync.ReceiveDelivery
 
-The configuration for this BOD should look similar to the following
+De configuratie voor dit BOD ziet er ongeveer als volgt uit.
 
 ![](https://lh7-us.googleusercontent.com/75TPWASsqnzrWdeoyHZ4T23Zm5DbctQLOZKVe4N05ni32ecs0kZmBAihWnr7j0J7TisLvF2lncmUbEGGF9dKz8glVcRe7pmCvmEx8TMTesh0zGeewNpveNIsQqw-gkHvcITTF4a067MhoMgY8Jp6Prc)
 
-Once these BODs are configured, you can save the connection point by pressing the icon located right to the back button.
+Sla het verbindingspunt na het instellen van de BOD's op met het pictogram rechts naast de knop Terug.
 
-## **Data Flow**
+## **Gegevensstroom**
 
-The data flow will look similar to the following
+De gegevensstroom ziet er ongeveer als volgt uit.
 
 ![](https://lh7-us.googleusercontent.com/yhSunSyXrzx2Q0VIulIa6b989LxG36g5-kyYXGwniU0okKb3cJWDe65GYhpOfkHWTYJR4xdT85Us2Ba7tHhoJsE51I-g-82ZQ2bRM5zkgF5VmaRSno8M5bfhMCbUAw4-xx5oEudkqZWYoeIUUYhJPDU)
 
-(The reason for multiple DocBits APIs is due to each connection representing a different environment meaning, depending on the amount of environments you have, your data flow could differ slightly)
+Elke DocBits-API-verbinding vertegenwoordigt een andere omgeving. Afhankelijk van het aantal omgevingen kan uw gegevensstroom daarom afwijken van dit voorbeeld.
 
-For the purpose of this explanation we will use the example of having four separate environments.
+Voor deze uitleg gebruiken we een voorbeeld met vier afzonderlijke omgevingen.
 
 ### **LN**
 
-The start of the data flow consists of your LN application
+De gegevensstroom begint bij uw LN-toepassing.
 
-### **DocBits API**
+### **DocBits-API**
 
-Here you will add an application and select the DocBits API(s) you created earlier
+Voeg hier een toepassing toe en selecteer de eerder aangemaakte DocBits-API's.
 
-### **Files**
+### **Bestanden**
 
-The configuration should look as follows
+De configuratie ziet er als volgt uit.
 
 ![](https://lh7-us.googleusercontent.com/OEG6wQFd9LT6J_Ttcsdj7GgM2bTxrS-dpO2EbcVx4vGH1NLtZyaRTbYnr4-SDIWL2hk1zeVGr3bjuebNmwAMEx0S0U7xmNGztp-8HVjRLYyc-3lbQBL8lDU_TahhNxBugX_Bnu3QjZsKHX0Pafae-zU)
 
-## **LN BOD Triggering**
+## **LN-BOD's activeren**
 
-Once all the above is completed, you will need to navigate to Infor LN and trigger the BODs in order for the various master data you need for Suppliers and Purchase Orders to arrive in DocBits.
+Ga na het voltooien van deze stappen naar Infor LN en activeer de BOD's, zodat de benodigde stamgegevens voor leveranciers en inkooporders in DocBits aankomen.
 
 ![](https://lh7-us.googleusercontent.com/b6IsSx-x5Ri0cfYU9TTpgipqsoCkDPTxXdKoMBPaumyaopp-NRAJhoNnBfksnVVdz9Y26M0KlfdcKP4S1n_PjcTYKIu3MbVMQIfuIaTYYAL2ctyYsp29mEOrVh2TxmLPkUofeqJQ8nvBQbTOwj0-V0Y)
 
 ### **PurchaseOrder**
 
-From the above menu, in the left menu tab, select Common → BOD-Messaging → Publish BODs → Publish Order Management Transactional Data
+Selecteer in het linkermenu Common → BOD-Messaging → Publish BODs → Publish Order Management Transactional Data.
 
-Select the PurchaseOrder tab and check the box.
+Open het tabblad PurchaseOrder en schakel het selectievakje in.
 
 ![](https://lh7-us.googleusercontent.com/UJlicSuDjbEVtr_pzOeqkP8kkiBJIdAgzPK46FlhubqIIHiaJRYp27B__08e9IcNHdcctrBeBfZ6vFPQI3Xf3duL6R2Hu-iaL9dY7hANmy8ukiL61CTxcel0jd_66GAySp3dC1ptYKBaqLqaP1TwJco)
 
-### **Suppliers**
+### **Leveranciers**
 
-From the LN homepage, in the left menu tab, navigate to Common → BOD-Messaging → Publish BODs → Publish Logistics Master Data
+Ga vanaf de LN-startpagina via het linkermenu naar Common → BOD-Messaging → Publish BODs → Publish Logistics Master Data.
 
-Select the PartyMaster tab and check the Supplier → Buy-from or SupplierPartyMaster box.
+Open het tabblad PartyMaster en schakel Supplier → Buy-from of SupplierPartyMaster in.
 
 ![](https://lh7-us.googleusercontent.com/KY_cFaUegEZmqAlcsBLVOTaxKOkkBkMeaQUbv996H946oOa-jvxB3lDqrkWV-17elt0mZDGews6Lr_6ojbFXtReDnV1PmqzwLXfE-IX5fKJr2IeJkAdnf1R9Sk5WYoxOLGolgo2MPQ3SNeoPnQ-ysy0)
 
-### **BOD Triggering**
+### **BOD's activeren**
 
-Once all the correct BODs have been checked for publication, select the Options tab.
+Open het tabblad Options nadat u alle juiste BOD's voor publicatie hebt geselecteerd.
 
-The following options should be selected.
+Selecteer de volgende opties.
 
 ![](https://lh7-us.googleusercontent.com/7KpYALL1XL0pqWLRCPFng8-WT8IWI4o9lEtrp2zAN5bOBnYdz-6EHfAPc_StaY9raJTWbfrksra9UUxyQAQdtg4nOZggpHox3AV3C_cL9xhDAdHV4n79yyCfbyGH2NmS30fQGfsLTe_4_tXKy54nI8U)
 
-Once this is complete, press the PROCESS button and the BODs will be triggered. A message will appear on screen to notify you that the BODs have been triggered.
+Klik daarna op PROCESS om de BOD's te activeren. Een melding op het scherm bevestigt dit.
 
 ![](https://lh7-us.googleusercontent.com/BPX5vIBHIFv641srJPwW-19Dx1N1T2QnadGwVMQu-6pBZUxnUdOjdY1olMqorIyN_oeTBqz_1knMoYsSxEA-_NtGVx_j9dBixvOfic8rKJDT91tYqwSSLNpk8YkMW8ndelpH9_fzrTZUCMs_vnoxbvM)
 
-If done successfully, the Supplier and Purchase Order tables should now be available under Settings → Master Data Lookup.
+Als de publicatie is geslaagd, zijn de tabellen voor leveranciers en inkooporders beschikbaar onder Settings → Master Data Lookup.
 
 \\

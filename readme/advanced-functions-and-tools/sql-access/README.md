@@ -1,4 +1,4 @@
-# SQL Access
+# SQL-toegang
 
 <figure><img src="../../.gitbook/assets/sql_direct_access_settings.png" alt="Instellingen voor SQL Direct Access"><figcaption></figcaption></figure>
 
@@ -33,8 +33,8 @@ GROUP BY
 
 De volgende resultaten tonen het aantal documenten per status en factuurtype:
 
-* **Ready for Validation:** 71 facturen, 6 ongespecificeerd
-* **Pending Confirmation:** 1 ongespecificeerd
+* **Klaar voor validatie:** 71 facturen, 6 ongespecificeerd
+* **In afwachting van bevestiging:** 1 ongespecificeerd
 * **Finished:** 3 ongespecificeerd, 1 factuur
 * **Error:** 2 ongespecificeerd
 
@@ -47,9 +47,9 @@ clickhouse-client --host <hostname_or_ip> --port <port> --user <username> --pass
 
 ```
 
-### Materialized views aanmaken
+### Voorbeeldaggregatie met SELECT
 
-We raden aan materialized views aan te maken om gegevens vooraf te berekenen en zo de prestaties in analysetools zoals PowerBI te verbeteren:
+De volgende query aggregeert bestaande rijen en maakt geen gematerialiseerde weergave aan. Alleen-lezentoegang geeft niet de schrijfrechten die daarvoor nodig zijn. Pas tabelnamen en conversies aan het schema, de getalnotatie en valuta aan. Tel verschillende valuta niet op zonder expliciete omrekening.
 
 ```sql
 SELECT toStartOfWeek(created_on) as week_start, sum(toFloat64OrZero(field_value)) as total_sum

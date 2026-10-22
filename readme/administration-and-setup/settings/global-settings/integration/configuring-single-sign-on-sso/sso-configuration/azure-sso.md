@@ -1,91 +1,91 @@
 ---
-description: Using DocBis with your Microsoft Login without using a (separate) password
+description: DocBits met uw Microsoft-account gebruiken zonder een afzonderlijk wachtwoord
 ---
 
-# Azure SSO
+# Azure-SSO
 
-### Create SAML SSO in Azure AD
+### SAML-SSO aanmaken in Azure AD
 
-Perform the following steps to add SAML SSO in Azure AD:
+Voer de volgende stappen uit om SAML-SSO toe te voegen in Azure AD:
 
-*   In Azure, go to your \`Azure Active Directory\` console
+*   Open in Azure de console \`Azure Active Directory\`.
 
     ![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_1.png)
-* In the left panel, click \`Enterprise applications\`
+* Klik in het linkerpaneel op \`Enterprise applications\`.
 
 ![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_2.png)
 
-* Click \`+ New application
+* Klik op \`+ New application\`.
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_azure_sso_new_app_2.png" alt="Docbits Azure Sso New App 2"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/docbits_azure_sso_new_app_2.png" alt="Nieuwe toepassing voor Azure-SSO aanmaken in DocBits"><figcaption></figcaption></figure>
 
-* Click \`+ Create your own application\`
+* Klik op \`+ Create your own application\`.
 
-<div align="left"><figure><img src="../../../../../../.gitbook/assets/docbits_azure_sso_create_own_app_2.png" alt="Docbits Azure Sso Create Own App 2"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/docbits_azure_sso_create_own_app_2.png" alt="Eigen toepassing voor Azure-SSO aanmaken in DocBits"><figcaption></figcaption></figure></div>
 
-* Enter a name for your application. Keep the remaining default selections.
+* Voer een naam voor uw toepassing in. Behoud de overige standaardkeuzes.
 
 <figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_5.png" alt=""><figcaption></figcaption></figure>
 
-* Click on \`Create\`
+* Klik op \`Create\`.
 
-### Assign Users to the SSO Configuration
+### Gebruikers toewijzen aan de SSO-configuratie
 
-Next, assign users or groups to the SSO configuration.
+Wijs vervolgens gebruikers of groepen toe aan de SSO-configuratie.
 
-**Important**: You should already have created users and groups in Azure AD. If you don’t have any users or groups, create them now before proceeding.
+**Belangrijk**: maak eerst gebruikers en groepen aan in Azure AD. Als die nog ontbreken, maakt u ze aan voordat u doorgaat.
 
-* Under \`Getting Started\`, click \`Assign Users and Groups\`.
-* Click \`+ Add user\`
+* Klik onder \`Getting Started\` op \`Assign Users and Groups\`.
+* Klik op \`+ Add user\`.
 
 <figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_6.png" alt="" width="563"><figcaption></figcaption></figure>
 
-* Select the users and groups you want to assign to this SSO configuration. These users will be able to authenticated in DocBits (using SSO).
+* Selecteer de gebruikers en groepen die u aan deze SSO-configuratie wilt toewijzen. Deze gebruikers kunnen zich met SSO aanmelden bij DocBits.
 
 <figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_7.png" alt=""><figcaption></figcaption></figure>
 
-* Click \`Select\`
-* When you’re satisfied with your selection, click \`Assign\`
+* Klik op \`Select\`.
+* Klik op \`Assign\` wanneer de selectie klopt.
 
 ![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_8.png)
 
-<div align="left"><figure><img src="../../../../../../.gitbook/assets/docbits_azure_sso_groups.png" alt="Docbits Azure Sso Groups"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/docbits_azure_sso_groups.png" alt="Groepen voor Azure-SSO in DocBits"><figcaption></figcaption></figure></div>
 
-* Go to the \`Groups\` view list and find the assigned groups.
+* Open de lijstweergave \`Groups\` en zoek de toegewezen groepen.
 
-### Set up SSO in Azure
+### SSO instellen in Azure
 
-Next, you need to finish setting up single-sign-on in Azure.\\
+Voltooi vervolgens de configuratie voor eenmalige aanmelding in Azure.\\
 
-* In the left panel, click \`Single sign-on\`
+* Klik in het linkerpaneel op \`Single sign-on\`.
 
 ![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_10.png)
 
-* Click \`SAML\`
+* Klik op \`SAML\`.
 
 ![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_11.png)
 
-* Click \`Upload metadata file\`
+* Klik op \`Upload metadata file\`.
 
 ![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_12.png)
 
-* Upload the DocBits **metadata.xml**, which you can find in the Settings menu **Integration** under **SSO Service Provider Settings** of your DocBits account.
+* Upload het DocBits-bestand **metadata.xml**. U vindt dit in uw DocBits-account in het instellingenmenu **Integration**, onder **SSO Service Provider Settings**.
 
 <figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_Metadata-1024x216.png" alt=""><figcaption></figcaption></figure>
 
-* Edit the \`Basic SAML Configuration\`
+* Bewerk \`Basic SAML Configuration\`.
 
 <figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_13.png" alt=""><figcaption></figcaption></figure>
 
-* Check if the \`Entity ID\`, \`ACS URL\`, \`Sign on URL\` and \`Logout URL\` are populated right.
+* Controleer of \`Entity ID\`, \`ACS URL\`, \`Sign on URL\` en \`Logout URL\` correct zijn ingevuld.
 
 <figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_13.1.png" alt=""><figcaption></figcaption></figure>
 
-* Download the newly generated **Federation Metadata XML**.
+* Download het nieuw gegenereerde bestand **Federation Metadata XML**.
 
 <figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_14.png" alt=""><figcaption></figcaption></figure>
 
-* Upload the FederationMetadata.xml into the **Identity Service Provider Settings** of your DocBits account which you can find in the Settings menu **Integration**.
+* Upload FederationMetadata.xml naar **Identity Service Provider Settings** in uw DocBits-account, in het instellingenmenu **Integration**.
 
 \\
 

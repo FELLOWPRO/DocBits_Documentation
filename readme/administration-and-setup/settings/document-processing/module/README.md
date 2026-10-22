@@ -1,10 +1,14 @@
 # Module
 
-<figure><img src="../../../../.gitbook/assets/module_settings.png" alt="Module-instellingen"><figcaption><p>Pagina Module-instellingen</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/site-extra-modules-order-finance-nl.png" alt="Modules voor orders en financiën, weergegeven in hun bestaande instelling."><figcaption><p>Modules voor orders en financiën, weergegeven in hun bestaande instelling.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/site-extra-modules-document-integration-nl.png" alt="Modules voor documentintegratie, waaronder documentscripts, barcode-extractie en aangepaste stamgegevens. De ingestelde schakelaars zijn niet gewijzigd."><figcaption><p>Modules voor documentintegratie, waaronder documentscripts, barcode-extractie en aangepaste stamgegevens. De ingestelde schakelaars zijn niet gewijzigd.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/site-extra-modules-dashboards-analytics-nl.png" alt="Modules voor dashboards en analyses, weergegeven in hun bestaande instelling."><figcaption><p>Modules voor dashboards en analyses, weergegeven in hun bestaande instelling.</p></figcaption></figure>
 
 Op de pagina Module schakelt u optionele functies in DocBits in of uit. Elk onderdeel groepeert gerelateerde modules die u aan of uit kunt zetten.
 
-## Purchase Order
+## Inkooporder
 
 Instellingen voor PO Matching & Validatie.
 
@@ -13,9 +17,9 @@ Instellingen voor PO Matching & Validatie.
 | **Auto Export if PO matched 100%** | Exporteert het document automatisch wanneer de PO-matching 100% bereikt. |
 | **PO Dashboard** | Schakelt het Purchase Order-dashboard in. Bevat een veld **PO Date Limit** om PO-gegevens op datum te beperken. |
 | **PO Shipment Order** | Schakelt de verwerking van verzendorders in die aan inkooporders zijn gekoppeld. |
-| **Shipment Order Dashboard** | Schakelt een speciaal dashboard voor verzendorders in. |
+| **Dashboard voor verzendingsorders** | Schakelt een speciaal dashboard voor verzendorders in. |
 
-## Auto Accounting
+## Automatische boeking
 
 | Instelling | Beschrijving |
 |---------|-------------|
@@ -25,18 +29,18 @@ Instellingen voor PO Matching & Validatie.
 
 | Instelling | Beschrijving |
 |---------|-------------|
-| **Advance Shipment Dashboard** | Dashboard voor het monitoren van geavanceerde verzendactiviteiten. |
+| **Geavanceerd verzenddashboard** | Dashboard voor het monitoren van geavanceerde verzendactiviteiten. |
 | **Invoice Dashboard** | Dashboard voor factuurmonitoring en -analyses. |
-| **Full Text Search** | Schakelt full-text zoeken in alle documenten in. |
+| **Zoeken in volledige tekst** | Schakelt full-text zoeken in alle documenten in. |
 | **Analytics Dashboard** | Schakelt het analyseoverzichtsdashboard in. |
 
-## Database Access
+## Databasetoegang
 
 | Instelling | Beschrijving |
 |---------|-------------|
 | **DB Access** | Schakelt directe databasetoegang voor de organisatie in. |
 
-## AI Dashboard
+## AI-dashboard
 
 | Instelling | Beschrijving |
 |---------|-------------|
@@ -45,13 +49,13 @@ Instellingen voor PO Matching & Validatie.
 | **Clickhouse Direct Access** | Schakelt directe toegang tot de Clickhouse-database in. |
 | **Supplier Statistics** | Schakelt statistieken en rapportage op leveranciersniveau in. |
 
-## Shipping & Supplier
+## Verzending en leverancier
 
 | Instelling | Beschrijving |
 |---------|-------------|
 | **Supplier Portal** | Schakelt het leveranciersportaal in voor samenwerking met leveranciers. |
 
-## Document Type
+## Documenttype
 
 | Instelling | Beschrijving |
 |---------|-------------|
@@ -69,22 +73,22 @@ Instellingen voor PO Matching & Validatie.
 | **DocNet** | Schakelt DocNet-documentnetwerken in. |
 | **IDM ACL Updater** | Werkt de toegangscontrolelijsten (ACL's) van Infor Document Management bij. Upload een ION-Mapping-bestand en configureer de koppelingen van Infor-Doctype naar ACL. |
 | **Barcode Assignment** | Schakelt het toewijzen van barcodes aan documenten in. |
-| **Set Negative Sign For Credit Notes** | Past automatisch negatieve tekens toe op bedragen van creditnota's. |
+| **Negatief teken instellen voor creditnota's** | Past automatisch negatieve tekens toe op bedragen van creditnota's. |
 
-## BOD Connection Stream
+## BOD-verbindingsstroom
 
 | Instelling | Beschrijving |
 |---------|-------------|
 | **BOD Connection Stream** | Schakelt de BOD-integratie (Business Object Document) in. Toont de **Stream Name** die voor de verbinding wordt gebruikt. |
 
-## Analytics
+## Analyse
 
 | Instelling | Beschrijving |
 |---------|-------------|
 | **Use PostgreSQL for Quality Analytics** | Schakel tussen Prometheus (realtime, wordt bij elke deployment gereset) en PostgreSQL (permanent 90 dagen, trendanalyse, slechtst presterende velden). |
 
-## Vertex Tax Integration
+## Vertex-belastingintegratie
 
 | Instelling | Beschrijving |
 |---------|-------------|
-| **Vertex Tax Integration** | Schakelt Vertex-belastingberekening in. Configureer **Base URL**, **Client ID** en **Client Secret**. Gebruik **Test Connection** om te verifiëren. |
+| **Vertex-belastingintegratie** | Schakelt Vertex-belastingberekening in. Configureer **Base URL**, **Client ID** en **Client Secret**. Gebruik **Test Connection** om te verifiëren. |

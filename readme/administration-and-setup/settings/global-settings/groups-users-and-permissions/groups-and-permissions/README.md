@@ -1,7 +1,7 @@
 # Groepen en machtigingen
 
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
-DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
+DocBits Zelfstudie Groepen en machtigingen: gebruikersrollen en toegangsrechten instellen en uw werkruimte beveiligen
 {% endembed %}
 
 <figure><img src="../../../../../.gitbook/assets/prior-t009-nl.png" alt="Details van de geselecteerde groep; persoonsgegevens zijn afgeschermd."><figcaption><p>Details van de geselecteerde groep; persoonsgegevens zijn afgeschermd.</p></figcaption></figure>

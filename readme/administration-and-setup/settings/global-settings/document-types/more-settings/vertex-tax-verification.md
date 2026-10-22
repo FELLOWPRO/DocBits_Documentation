@@ -34,7 +34,7 @@ Open **Instellingen** → **Module** → **Bestellen & Financiering** en ga naar
 2. Voer de **Basis-URL** van je Vertex-tokenendpoint, je **Klant-ID** en je **Klantgeheim** in.
 3. Klik op **Testverbinding** en daarna op **Opslaan**.
 4. Stel de tolerantie en de trigger in:
-   * **Variatietype:** **Vast bedrag** of **Percentage**.
+   * **Variatietype:Groot bedrag** van **Percentage**.
    * **Variantiedrempel:** De afwijking die nog wordt geaccepteerd. De standaard is een vast bedrag van 25. In de percentagemodus voer je de waarde in als decimaal getal, bijvoorbeeld 0,05 voor 5 %.
    * **Verificatietrigger:** **Vóór export** of **Voor goedkeuring**. Bij **Voor goedkeuring** wordt de controle uitgevoerd terwijl het document wordt verwerkt, voordat het naar goedkeuring gaat. Als de controle zelf mislukt, krijgt het document de status **Exportfout**.
 

@@ -1,4 +1,4 @@
-# Sales order
+# Verkooporder
 
 ## Tabel `public.sales_order`
 

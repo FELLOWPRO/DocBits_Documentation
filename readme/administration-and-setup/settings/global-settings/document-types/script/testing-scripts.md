@@ -1,32 +1,32 @@
-# Testing Scripts
+# Scripts testen
 
-## Testing scripts thoroughly in a controlled environment is critical before deploying them to a live document processing workflow. Here are a few reasons why it's important.
+## Scripts testen vóór gebruik in een live documentworkflow
 
-### Error Prevention:
+### Fouten voorkomen:
 
-* Scripts can contain errors, whether due to syntax errors, logic errors, or unforeseen edge cases.
-* Testing in a controlled environment allows these errors to be identified and fixed before the script is deployed in a live workflow.
-* This helps avoid potential issues and downtime.
+* Scripts kunnen syntaxisfouten, logische fouten of onvoorziene grensgevallen bevatten.
+* In een gecontroleerde testomgeving kunt u deze fouten herkennen en oplossen voordat u het script in een live workflow gebruikt.
+* Dit helpt problemen en uitval te voorkomen.
 
-### Data Security:
+### Gegevensbeveiliging:
 
-* In a live workflow, using faulty scripts can result in data loss or data corruption, which can lead to serious security issues.
-* Testing in a controlled environment allows potential security vulnerabilities to be identified and fixed before sensitive data is affected.
+* Onjuiste scripts in een live workflow kunnen gegevensverlies of beschadigde gegevens veroorzaken, met mogelijk ernstige beveiligingsproblemen tot gevolg.
+* Door in een gecontroleerde omgeving te testen, kunt u kwetsbaarheden opsporen en verhelpen voordat gevoelige gegevens worden geraakt.
 
-### Ensuring Functionality:
+### De werking controleren:
 
-* Scripts are designed to automate specific tasks or improve processes.
-* Thorough testing helps you ensure that the script performs the desired functions properly and produces the intended results.
-* This helps improve the efficiency and quality of document processing.
+* Scripts automatiseren specifieke taken of verbeteren processen.
+* Met grondige tests controleert u of het script de gewenste functies correct uitvoert en de bedoelde resultaten oplevert.
+* Dit helpt de efficiëntie en kwaliteit van documentverwerking te verbeteren.
 
-### Adaptation to different environments:
+### Aanpassen aan verschillende omgevingen:
 
-* A controlled test environment allows you to test the script under different conditions and ensure that it works stably in different environments.
-* This is especially important when the script is deployed in different system configurations or with different data sets.
+* In een gecontroleerde testomgeving kunt u het script onder verschillende omstandigheden testen en controleren of het stabiel werkt.
+* Dit is vooral belangrijk bij gebruik met verschillende systeemconfiguraties of datasets.
 
-### Usability:
+### Gebruiksvriendelijkheid:
 
-* Testing in a controlled environment also allows you to check the usability of the script and ensure that it is easy to use and understand.
-* Feedback from the testing process allows you to tweak the script if necessary to improve the user experience.
+* In een gecontroleerde testomgeving kunt u ook beoordelen of het script eenvoudig te gebruiken en te begrijpen is.
+* Met feedback uit het testproces kunt u het script zo nodig aanpassen om de gebruikerservaring te verbeteren.
 
-Overall, thoroughly testing scripts in a controlled environment helps ensure the reliability, security, and effectiveness of document processing. It is an indispensable step to identify potential issues and ensure that the script works optimally before deploying it in a live workflow.
+Grondige tests in een gecontroleerde omgeving ondersteunen betrouwbare, veilige en effectieve documentverwerking. Dit is een noodzakelijke stap om problemen te herkennen en de werking te controleren voordat u het script in een live workflow gebruikt.

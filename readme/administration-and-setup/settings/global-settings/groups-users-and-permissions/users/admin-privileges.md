@@ -8,7 +8,7 @@ De rol van een beheerder is van cruciaal belang voor het beheren van IT-systemen
 
 Naast deze verantwoordelijkheden hebben beheerders ook de taak om gevoelige instellingen te beheren en ervoor te zorgen dat systemen voldoen aan de nalevingsvereisten en aan de best practices voor informatiebeveiliging. Dit omvat het beheren van gevoelige gegevens, het configureren van toegangscontroles en machtigingen, en het monitoren en analyseren van systeemlogboeken om mogelijke beveiligingsrisico's te herkennen en aan te pakken.
 
-## Admin vs System Admin
+## Beheerder en systeembeheerder
 
 DocBits kent twee beheerdersrollen: **Admin** en **System Admin**. Ze klinken hetzelfde, maar doen verschillend werk. Hier is de eenvoudige uitleg.
 

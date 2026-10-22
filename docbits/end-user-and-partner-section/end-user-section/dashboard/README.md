@@ -84,7 +84,7 @@ Select the checkboxes for several documents and open the menu in the table heade
 
 ## Save a personal dashboard
 
-Open the blue view badge below the search box and choose **Create New Dashboard**. Give the view a name and choose whether it is private, visible to all users or shared with selected groups and users. Save the filters, sort order and columns you need for recurring work.
+Open the view badge below the search box and choose **Create new Dashboard**. Give the view a name and choose whether it is **Visible only to me**, **Visible to all users** or **Share with Groups and Users**. Save the filters, sort order and columns you need for recurring work.
 
 Select a saved view from the same menu. Save later changes with **Save Dashboard Changes** when the view is yours and has changed. A view shared with you cannot be overwritten by you; create your own view instead. Sharing a view does not grant additional access to documents. See [Personal dashboards](personal-dashboards.md).
 

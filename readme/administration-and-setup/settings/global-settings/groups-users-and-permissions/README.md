@@ -1,5 +1,13 @@
 # Gruppen, Benutzer und Berechtigungen
 
+## Gruppe anlegen und Dokumentzugriff testen
+
+Bei bereits aktivierten Gruppenberechtigungen legen Sie eine eigene Prüfergruppe an und fügen ein Testkonto ohne Administratorrechte hinzu. Erlauben Sie das Auflisten, Anzeigen und Bearbeiten zugewiesener Rechnungen; Löschen, Massenänderungen und Genehmigungen bleiben gesperrt. Speichern Sie, öffnen Sie die Einstellungen erneut und melden Sie sich als normaler Benutzer an: Die zugewiesene Rechnung ist sichtbar, ein nicht zugewiesenes Kontrolldokument nicht.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/de.mp4" %}
+
+[Mit Untertiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/de.html)
+
 Diese Einstellungen beantworten drei verschiedene Fragen: Wer kann sich anmelden, in welcher Unterorganisation arbeitet er, und was darf seine Gruppe tun.
 
 | Wenn Sie … möchten | Öffnen Sie … |

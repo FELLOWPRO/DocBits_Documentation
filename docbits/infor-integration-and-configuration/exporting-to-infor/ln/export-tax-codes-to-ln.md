@@ -11,7 +11,7 @@ This guide will walk you through the setup process to ensure tax codes are corre
 
 1.  Go to **Settings** -> **Document Processing** -> **List of Values**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-en.png" alt="Value lists in DocBits; organization-specific list names are hidden."><figcaption><p>Value lists in DocBits; organization-specific list names are hidden.</p></figcaption></figure>
 2.  Click **New**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2 (1).png" alt=""><figcaption></figcaption></figure>
@@ -32,7 +32,7 @@ This guide will walk you through the setup process to ensure tax codes are corre
 
     * If you have multiple values, you can click **Add More Values** to add them.
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt=""><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-en.png" alt="New-value form: suborganization, synonyms and translations. No value was entered or saved; the language choice concerns the value translation."><figcaption><p>New-value form: suborganization, synonyms and translations. No value was entered or saved; the language choice concerns the value translation.</p></figcaption></figure></div>
 
     * **NOTE:** You can find the Tax Codes in LN under: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
@@ -42,7 +42,7 @@ This guide will walk you through the setup process to ensure tax codes are corre
 
 1.  Navigate to **Settings** -> **Global Settings** -> **Document Types**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-en.png" alt="Document types: select the fields for the relevant type. No switches were changed."><figcaption><p>Document types: select the fields for the relevant type. No switches were changed.</p></figcaption></figure>
 2.  Choose the **Fields** menu corresponding to the Document Type where you wish to add the fields.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
@@ -64,7 +64,7 @@ This guide will walk you through the setup process to ensure tax codes are corre
 
 1.  Go to **Settings** -> **Global Settings** -> **Document Types**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-en.png" alt="Document types: select the fields for the relevant type. No switches were changed."><figcaption><p>Document types: select the fields for the relevant type. No switches were changed.</p></figcaption></figure>
 2.  Open the **Edit Layout** menu for the Document Type you want to edit.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt=""><figcaption></figcaption></figure>
@@ -101,7 +101,7 @@ After uploading a new document into DocBits with the correct document settings s
 
 1.  Go to **Settings** -> **Document Processing** -> **List of Values**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-en.png" alt="Value lists in DocBits; organization-specific list names are hidden."><figcaption><p>Value lists in DocBits; organization-specific list names are hidden.</p></figcaption></figure>
 2.  Click **New**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2 (1).png" alt=""><figcaption></figcaption></figure>
@@ -122,7 +122,7 @@ After uploading a new document into DocBits with the correct document settings s
 
     * If you have multiple values, you can click **Add More Values** to add them.
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt=""><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-en.png" alt="New-value form: suborganization, synonyms and translations. No value was entered or saved; the language choice concerns the value translation."><figcaption><p>New-value form: suborganization, synonyms and translations. No value was entered or saved; the language choice concerns the value translation.</p></figcaption></figure></div>
 
     * **NOTE:** You can find the Tax Codes in LN under: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
@@ -132,7 +132,7 @@ After uploading a new document into DocBits with the correct document settings s
 
 1.  Navigate to **Settings** -> **Global Settings** -> **Document Types**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-en.png" alt="Document types: select the fields for the relevant type. No switches were changed."><figcaption><p>Document types: select the fields for the relevant type. No switches were changed.</p></figcaption></figure>
 2.  Choose the **Fields** menu corresponding to the Document Type where you wish to add the fields.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
@@ -154,7 +154,7 @@ After uploading a new document into DocBits with the correct document settings s
 
 1.  Go to **Settings** -> **Global Settings** -> **Document Types**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-en.png" alt="Document types: select the fields for the relevant type. No switches were changed."><figcaption><p>Document types: select the fields for the relevant type. No switches were changed.</p></figcaption></figure>
 2.  Open the **Edit Layout** menu for the Document Type you want to edit.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt=""><figcaption></figcaption></figure>

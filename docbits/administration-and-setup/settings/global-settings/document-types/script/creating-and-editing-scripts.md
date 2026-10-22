@@ -8,19 +8,19 @@ DocBits Document Scripts Explained: Automate Custom Logic in Your Document Workf
 
 **Choose the scripting language:**
 
-First, you need to choose the scripting language you want to use. DocBits typically supports common scripting languages ​​such as Python, JavaScript, or SQL. The choice of language depends on the needs of your project and your own competency.
+Choose a script type and language actually offered by the editor and runtime in your DocBits installation. Available types and execution contexts depend on the deployed version.
 
 **Open the script development environment:**
 
 Log in to DocBits and navigate to the script development environment. This is in the administration area.
 
-<figure><img src="../../../../../.gitbook/assets/script_development_environment_overview.png" alt="Script Development Environment Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-25.png" alt="Script list with names, dates and organization data hidden."><figcaption><p>Script list with names, dates and organization data hidden.</p></figcaption></figure>
 
 **Create a new script:**
 
 Click the "+ New" button to open a new script editor.
 
-<figure><img src="../../../../../.gitbook/assets/create_new_script_button.png" alt="Create New Script Button"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-37.png" alt="New script editor with its supplied starter template; this is separate from the standalone Python example below."><figcaption><p>New script editor with its supplied starter template; this is separate from the standalone Python example below.</p></figcaption></figure>
 
 **Write the code:**
 
@@ -30,46 +30,35 @@ For example, if you are using Python, your script might look like this:
 
 ## 1. Example script in Python
 
-<figure><img src="../../../../../.gitbook/assets/python_script_example_1.png" alt="Python Script Example 1"><figcaption></figcaption></figure>
-
 ## Function to clean patient names
 
-def clean\_patient\_name(name): cleaned\_name = name.strip().title() # Remove spaces and apply capitalization
+This standalone Python example demonstrates syntax. It is not a verified DocBits lifecycle hook; adapt it to the documented script context before using it.
 
-return cleaned\_name
+```python
+def clean_patient_name(name):
+    cleaned_name = name.strip().title()
+    return cleaned_name
 
-## Main program
-
-if **name** == "**main**": patient\_name = " john doe " cleaned\_name = clean\_patient\_name(patient\_name) print("Cleaned patient name:", cleaned\_name)
-
-## 2. Example script
-
-<figure><img src="../../../../../.gitbook/assets/python_script_example_2.png" alt="Python Script Example 2"><figcaption></figcaption></figure>
+if __name__ == "__main__":
+    patient_name = " john doe "
+    cleaned_name = clean_patient_name(patient_name)
+    print("Cleaned patient name:", cleaned_name)
+```
 
 **Test the script:**
 
 Check the code for errors and test it in a test environment. Make sure the script produces the expected results and works correctly.
 
-<figure><img src="../../../../../.gitbook/assets/script_testing_interface.png" alt="Script Testing Interface"><figcaption></figcaption></figure>
-
 **Save the script:**
 
 Save the script in DocBits and give it a meaningful name that describes the purpose of the script.
-
-<figure><img src="../../../../../.gitbook/assets/save_script_button.png" alt="Save Script Button" width="84"><figcaption></figcaption></figure>
 
 **Mapping the script to document types:**
 
 An important step is mapping the script to the appropriate document types. This determines when and how the script is applied. This can usually be done through a configuration interface in DocBits, where you can assign the script to a specific document type and specify under which conditions it should be applied.
 
-<figure><img src="../../../../../.gitbook/assets/script_document_type_mapping.png" alt="Script Document Type Mapping"><figcaption></figcaption></figure>
-
 **Review and publish:**
 
 After you have created, tested and mapped the script, check it again for errors and inconsistencies. If everything is OK, you can publish the script to the DocBits production environment.
 
-<figure><img src="../../../../../.gitbook/assets/script_review_and_publish.png" alt="Script Review and Publish"><figcaption></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/script_publish_confirmation.png" alt="Script Publish Confirmation"><figcaption></figcaption></figure>
-
-Through these steps, you can successfully create, test and implement a new script in DocBits to automate processes and improve the efficiency of medical documentation.
+Before deployment, verify the script against the documented execution context and representative test documents. Retain the tested version and check its effect on processing.

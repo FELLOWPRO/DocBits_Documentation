@@ -8,12 +8,12 @@ This page explains how to set up this option.
 ## Activation Steps
 
 1. Go to **Settings** -> **Global Settings** -> **Document Types**
-2.  Select the desired document type and click on **More Settings**.
+2.  Select the desired document type and open its settings with the gear icon.
 
-    <figure><img src="../../../../../../.gitbook/assets/po_settings_1.png" alt=""><figcaption></figcaption></figure>
-3.  In the **Purchase Order** section, navigate to the **Alternate Export** option.
+    <figure><img src="../../../../../../.gitbook/assets/site-complete-invoice-export-settings-en.png" alt="Current English invoice Export Settings with Alternate Export, eligibility Status and Export Configuration. Test is an existing example configuration; no settings changed or export performed."><figcaption><p>Current English invoice Export Settings with Alternate Export, eligibility Status and Export Configuration. Test is an existing example configuration; no settings changed or export performed.</p></figcaption></figure>
+3.  Expand **Export Settings** and locate **Alternate Export**.
 
-    <figure><img src="../../../../../../.gitbook/assets/po_settings_alternate_export_1 (1).png" alt=""><figcaption></figcaption></figure>
+
 
 ## How to set up
 
@@ -37,5 +37,3 @@ You can choose between the following statuses:
 * In Review
 
 After setup, an additional export option will appear in the purchase order matching export options. This option uses the specified export configuration when the document matches the defined status.
-
-<figure><img src="../../../../../../.gitbook/assets/po_settings_alternate_export_2.png" alt=""><figcaption></figcaption></figure>

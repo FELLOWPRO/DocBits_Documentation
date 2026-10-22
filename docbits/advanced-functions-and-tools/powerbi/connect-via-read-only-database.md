@@ -41,7 +41,7 @@ This guide walks you through connecting **DocBits’ Read-Only Database to Power
 <figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt=""><figcaption></figcaption></figure>
 
 * Click **OK**. Enter credentials again if prompted.
-  * <mark style="color:red;">**Note:**</mark> If you see the error **“password authentication failed for user”**, try entering your password wrapped in **curly braces `{}`**.
+  * If `password authentication failed for user` appears, verify the host, database, username and password. Enter the actual password in the credential dialog. Curly-brace escaping in an ODBC connection string is driver syntax; it is not a general fix for failed authentication.
 
 #### 4. Load and Transform Data
 
@@ -49,7 +49,9 @@ This guide walks you through connecting **DocBits’ Read-Only Database to Power
 * Open the **`public`** schema.
 * Select the tables you want to import.
 
-![](../../.gitbook/assets/connect_read_only_1.png)        ![](../../.gitbook/assets/connect_read_only_2.png)
+![](../../.gitbook/assets/connect_read_only_1.png)
+
+![](../../.gitbook/assets/connect_read_only_2.png)
 
 * Choose:
   * **Load** → Import directly into Power BI
@@ -60,20 +62,26 @@ This guide walks you through connecting **DocBits’ Read-Only Database to Power
 * Use the Power BI report canvas to build dashboards.
 * Drag fields, add slicers, choose chart types, and apply DAX calculations.
 * Use **Power Query Editor** to clean or join data before creating visuals.
-* Reference: [Power BI Documentation](https://learn.microsoft.com/en-us/power-bi/?utm_source=chatgpt.com)
+* Reference: [Power BI Documentation](https://learn.microsoft.com/en-us/power-bi/)
 
 #### 6. Enable Scheduled Refresh (Optional)
 
-<mark style="color:red;">**Note:**</mark> **Requires Power BI Pro or Premium + Gateway**
+Scheduled refresh depends on the workspace license/capacity, connector and connection mode. For this ODBC connection, configure a reachable gateway with the appropriate driver, DSN and credentials; check the current requirements in the official documentation.
 
-* To keep your reports in sync with ClickHouse:
+* To keep your reports in sync with PostgreSQL:
 * Publish your `.pbix` file to **Power BI Service**.
-* Install the **Power BI Gateway** (Standard mode) on a machine with network access to ClickHouse.
+* Install the **Power BI Gateway** (Standard mode) on a machine with network access to PostgreSQL.
 * In Power BI Service:
-  * Go to your dataset → **Settings** → **Scheduled Refresh**
+  * Open the semantic model → **Refresh** → **Schedule refresh** (the location can differ in older versions)
   * Map your DSN and provide credentials
 * More informations [here](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).&#x20;
 
 #### 7. Example Dashboards & Data Views&#x20;
 
 <div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Power BI Dashboard Example 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Power BI Dashboard Example 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Power BI Dashboard Example 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Power BI Dashboard Example 4"><figcaption></figcaption></figure></div>
+
+[Official documentation — ODBC](https://learn.microsoft.com/en-us/power-query/connectors/odbc)
+
+[Official documentation — psqlODBC](https://odbc.postgresql.org/docs/config-opt.html)
+
+[Official documentation — Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)

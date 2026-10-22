@@ -1,5 +1,13 @@
 # Gruppi, Utenti e Autorizzazioni
 
+## Creare un gruppo e verificare l’accesso ai documenti
+
+Con le autorizzazioni di gruppo già attive, crea un gruppo di revisione e aggiungi un utente di prova senza diritti di amministratore. Consenti di elencare, visualizzare e modificare le fatture assegnate; lascia disabilitate eliminazione, modifiche massive e approvazioni. Salva e riapri le impostazioni, poi accedi come utente normale: la fattura assegnata è visibile e il documento di controllo non assegnato non compare.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/it.mp4" %}
+
+[Guarda con i sottotitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/it.html)
+
 Queste impostazioni rispondono a tre domande diverse: chi può accedere, in quale sotto-organizzazione lavora e che cosa può fare il suo gruppo.
 
 | Se devi… | Apri… |

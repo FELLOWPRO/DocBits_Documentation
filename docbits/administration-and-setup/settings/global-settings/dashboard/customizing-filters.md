@@ -1,75 +1,21 @@
 # Customizing Filters
 
-If you are looking for one or more specific documents, the following options are available to you. Within the search bar, we have provided you with various tools to help you find the document you are looking for. To access them, select the following icon.
+Use dashboard filters to narrow the visible document list. Dashboard search criteria and the organization’s status-filter configuration are separate controls.
 
-<figure><img src="../../../../.gitbook/assets/customizing_filters_1.png" alt=""><figcaption></figcaption></figure>
+## Filter the document list
 
-Using filters allows users to quickly find relevant information and reduce the amount of data to the essentials.
+Open the dashboard and use the search field or filter controls. The smart-filter menu includes shortcuts such as **Overdue**, **Due soon**, **Assigned to me**, **Pending validation**, **Full PO match** and **Partial PO match**. Select the filter appropriate to your search and inspect the resulting list.
 
-## How to customize and apply filters in DocBits
+<figure><img src="../../../../.gitbook/assets/prior-u030-en.png" alt="Document search and quick filters with document values hidden."><figcaption><p>Document search and quick filters with document values hidden.</p></figcaption></figure>
 
-**Accessing the filter settings Opening the dashboard:**
+Combine criteria using the controls available in your version. Verify the displayed results when combining filters; selecting a filter does not change a document’s extracted values, approval or export status.
 
-* Log in to DocBits and open the dashboard that contains the data you want to filter.
+To remove a criterion, use its visible X/remove control or the available clear-filter action. Check that the list now reflects the remaining criteria.
 
-**Accessing the filter menu:**
+## Configure the status filter
 
-* Click the filter icon or search field.
+Open **Settings → Dashboard → Filters**. Choose **Status filter style**. If you select **Custom**, choose the statuses to expose through **Custom status filter**, then use **Apply** to save this configuration. Changing this setting is different from filtering the list for one search.
 
-<figure><img src="../../../../.gitbook/assets/image (300).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u015-en.png" alt="Dashboard status-filter settings; displayed values were not changed."><figcaption><p>Dashboard status-filter settings; displayed values were not changed.</p></figcaption></figure>
 
-### Customizing filters
-
-#### **Using predefined filters**
-
-* Open the filter menu.
-* Choose from the predefined filter options (e.g. Date, Document Type, Assigned Person).
-* Adjust the filter criteria by selecting or entering the appropriate values ​​(e.g. date range, specific document type).
-
-#### **Create your own filters**
-
-* Open the filter menu in the settings under Dashboard and click on "Filters".
-
-<figure><img src="../../../../.gitbook/assets/prior-u015-en.png" alt="Dashboard status-filter style and custom status filter."><figcaption><p>Dashboard status-filter style and custom status filter.</p></figcaption></figure>
-
-* Select the field to be filtered (e.g. Status).
-
-<div data-full-width="true"><figure><img src="../../../../.gitbook/assets/image (301).png" alt=""><figcaption></figcaption></figure></div>
-
-* Define the filter criteria, e.g.: Status filter style.
-
-<figure><img src="../../../../.gitbook/assets/customizing_filters_5.png" alt=""><figcaption></figcaption></figure>
-
-* Dropdown menus: Choose from predefined options.
-
-<figure><img src="../../../../.gitbook/assets/image (302).png" alt=""><figcaption></figcaption></figure>
-
-* Save the custom filter by clicking "Apply".
-
-<figure><img src="../../../../.gitbook/assets/image (303).png" alt=""><figcaption></figcaption></figure>
-
-#### **Use combined filters**
-
-* Open the filter menu and select multiple filter criteria at once.
-* Combine filter criteria.
-* **Example:** Documents that were created by both the author "Max Mustermann" AND were created in the last month.
-* Once you have selected a filter, it will be applied automatically.
-
-#### **Applying and Managing Filters**
-
-**Applying Filters**
-
-* After you select and adjust the desired filters, the filters are automatically applied.
-
-**Removing Filters**
-
-* Open the Filters menu.
-* Step 2: Clear or remove the applied filters by clicking "Clear Filters", the X icon next to the selected filter either in the Filters menu or below the Filters bar.
-
-<figure><img src="../../../../.gitbook/assets/image (309).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/customizing_filters_9.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/customizing_filters_10.png" alt=""><figcaption></figcaption></figure>
-
-* The data is displayed again without the previous filter criteria.
+The illustrations show the controls only. No filter configuration was applied and no document was modified for these screenshots.

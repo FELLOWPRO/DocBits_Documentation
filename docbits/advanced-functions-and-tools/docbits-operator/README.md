@@ -1,92 +1,49 @@
 # DocBits Operator
 
-## Overview
+DocBits Operator performs tasks from user instructions. An instruction describes the steps, while variables supply the data required for a particular run.
 
-The **DocBits Operator** is an AI-powered automation assistant designed to simplify repetitive tasks in your workflows. Users create _prompts_—step-by-step instructions enhanced with variables—that guide the AI to navigate, input data, and click through interfaces automatically. This reduces manual effort and speeds up routine operations.
+## Enable and open
 
-## Enabling the DocBits Operator
+1. Open **Settings → Module → Document Integration**.
+2. Scroll to **DocBits Operator** and enable the feature if you have the required permissions.
+3. Open **DocBits Operator** from the application's main navigation.
 
-To enable the DocBits Operator, follow these steps:
+<figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-en.png" alt="Document-integration modules: scripts, document scanning, barcode extraction and custom master data."><figcaption><p>Document-integration modules: scripts, document scanning, barcode extraction and custom master data.</p></figcaption></figure>
 
-1. **Navigate to Settings**:
-   * From the Dashboard, go to **Settings**.
-   *   Select **Document Processing** and then choose **Module**.
+## Enter an instruction
 
-       <figure><img src="../../.gitbook/assets/docbits_operator_module_selection.png" alt="DocBits Operator Module Selection"><figcaption></figcaption></figure>
-2. **Enable the Feature**:
-   * Scroll down to locate the **DocBits Operator** option.
-   *   Toggle the slider to enable the **DocBits Operator**.
+Use the input at the bottom of the screen to describe the expected result and the steps to take. Write variables in braces, such as `{invoice_number}` or `{url}`. The gear button opens the window for defining variable names and values.
 
-       <div align="left"><figure><img src="../../.gitbook/assets/docbits_operator_enable_toggle.png" alt="DocBits Operator Enable Toggle" width="563"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/site-extra-docbits-operator-en.png" alt="English DocBits Operator interface with an empty instruction field. No task was started."><figcaption><p>English DocBits Operator interface with an empty instruction field. No task was started.</p></figcaption></figure>
 
-## Accessing the Interface
+The arrow starts execution. The download icon opens the prompt-saving dialog, and the trash icon clears the conversation. Opening the save dialog does not save a template.
 
-* Once the feature is enabled, open the **DocBits Operator** from the main navigation menu.
+See the [prompt-writing guide](prompt-writing-guide.md) for examples.
 
-### **1. Prompt Input**
+## Save an instruction
 
-At the bottom of the screen, there is an input field labeled _“Enter your prompt here…”_. This is where users write instructions for the operator to follow.
+Enter a **prompt name** in the save dialog. The public-sharing option controls sharing of the template. When preparing a shared template, use variable names in the instruction and supply the values required for each run before execution.
 
-Next to the input field are several control buttons:
+<figure><img src="../../.gitbook/assets/site-extra-operator-prompt-dialog-en.png" alt="Empty English prompt-saving dialog. No values were entered and the final Save button was not clicked."><figcaption><p>Empty English prompt-saving dialog. No values were entered and the final Save button was not clicked.</p></figcaption></figure>
 
-* **Prompt Variables** – Opens a popup where you can enter key-value pairs used in the prompt. Variables are written using curly braces, like `{invoice_number}` or `{url}`. These values apply only to the current prompt in the input field.
-* **Save Prompt** – Saves the current prompt. Choose to save it as either:
-  * **Organization Prompt** – Editable within your organization; includes both the prompt and defined variable values.
-  * **Global Prompt** – Shared across all tenants; includes only the prompt and variable placeholders (no values are saved).
-* **Clear Chat** – Clears the current conversation with the operator, but leaves the prompt in the input field unchanged. Useful when reusing or refining a prompt.
+When enabled, the variable-editing button opens the variable definitions. The save button saves the template. Use the cross in the upper-right corner to close the dialog without saving.
 
-For detailed guidance on how to write effective prompts—including syntax, variables and examples—please see the [**Prompt Writing Guide**](prompt-writing-guide.md).
+In the illustrated version, **Cancel** closes this dialog without saving. **Edit Variables** can be disabled for an empty prompt; enter the intended instruction and variables before using it.
 
-### **2. Sidebar Navigation**
+## Saved instructions
 
-Use the top-left icon to open or close the sidebar. The sidebar shows saved prompts, organized in two categories:
+The menu in the upper-right corner opens the saved-prompt sidebar. It has separate sections for organization and public prompts, together with search by name.
 
-* **Organization Prompts**: Editable and reusable within your organization.
-* **Global Prompts**: Shared across all tenants. These cannot store variables and cannot be edited or deleted.
-  * A global prompt is still editable and deletable by the **organization that created it**, where it appears under Organization Prompts.
-* **Search Functionality:** a search bar at the top of the sidebar allows users to quickly find saved prompts by name or keyword.
-* **Icon Reference:** Each saved prompt has a set of action icons
-  * **Arrow** – Start the prompt
-  * **Pen** – Edit the prompt (available only for your own organization’s prompts)
-  * **Trashcan** – Delete the prompt (available only for your own organization’s prompts)
+Organization prompts have run, edit and delete icons. In the public section, the arrow runs the selected template. Supply its variable values before running it.
 
-### 3. Save Prompt
+## Execution controls
 
-Clicking the **Save Prompt** button opens a popup where you can save the current prompt for future use.
+During execution you can pause, resume, cancel or take control. Pausing stops further steps while you inspect the current state. Resuming continues the work; cancelling ends the run. Taking control lets you interact manually with the browser view.
 
-<div align="left"><figure><img src="../../.gitbook/assets/workflow_notification_card_overview.png" alt="Save Prompt Popup"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/image (4).png" alt="Example resume and stop icons."><figcaption><p>Example resume and stop icons.</p></figcaption></figure>
 
-#### **Save Prompt Popup Fields**
+## Detail view
 
-* **Prompt Name:** Enter a name to identify the prompt.
-* **Save Prompt Publicly (Checkbox):** When checked, the prompt will be saved as a **Global Prompt**. Global Prompts are shared across all tenants and cannot store variable **values** (only variable **names**).
-* **Edit Variables:** Opens the [**Prompt Variables Popup**](prompt-writing-guide.md#prompt-variables-popup) to review or adjust variable definitions before saving.
+The expand button opens the execution detail view. Use it to follow the actions, current step and Operator messages, and to access the execution controls.
 
-**Actions**
-
-* **Cancel:** Closes the popup without saving.
-* **Save:** Saves the prompt using the specified name and visibility setting.
-
-### 4. Prompt Execution Controls
-
-When a prompt is running, users have several control options to manage or intervene in the execution process:
-
-* **Pause Prompt:** Temporarily halts the current execution. Useful if you want to observe the current state or prepare the system for the next steps.
-* **Resume Prompt:** Continues execution from the point where it was paused. ![](<../../.gitbook/assets/image (4).png>)
-* **Cancel Prompt:** Stops the execution entirely and resets the session. This is helpful if the prompt needs to be aborted or restarted due to incorrect behavior or changes in input.
-* **Take Control:** Allows the user to manually intervene by interacting directly with the system. This is useful if the operator gets stuck or misinterprets a step. Taking control **automatically pauses** the prompt and switches to manual mode until you choose to resume or cancel.
-
-### 5. Operator Detail View
-
-Once a prompt is started, an additional button becomes available that allows users to switch to a **detailed execution view**. ![](<../../.gitbook/assets/Detailed view .jpg>)
-
-* **Open Detail View:** This button takes you to a dedicated view that shows, step-by-step, what the operator is doing in real time.
-
-In the detail view, users can:
-
-* Monitor each action being performed (e.g., clicks, inputs, waits).
-* See which step is currently active.
-* Identify where issues occur if the prompt encounters problems.
-* Use the same **Pause**, **Resume**, **Cancel**, and **Take Control** actions.
-
-<div align="left"><figure><img src="../../.gitbook/assets/detailed view 2 .jpg" alt="" width="563"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/Detailed view .jpg" alt="Expand icon for the detail view."><figcaption><p>Expand icon for the detail view.</p></figcaption></figure>

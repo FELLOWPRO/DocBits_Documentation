@@ -83,7 +83,7 @@ An organisation administrator enables the Validation Assistant separately from t
 
 ## Turn repeated corrections into automation improvements
 
-The existing [Touchless Intelligence](../../administration-and-setup/touchless-intelligence.md) dashboard gains a review and follow-up process:
+The existing [Touchless Intelligence](../../administration-and-setup/analytics-dashboard/touchless-intelligence/README.md) dashboard gains a review and follow-up process:
 
 * **Learned rule proposals.** Repeated manual corrections can suggest a [transformation rule](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). Administrators see what it would write, the supporting examples and the documents on which it would replace a value the team had accepted. A proposal is reviewed before becoming an active rule.
 * **Improvement requests from reviewers.** Users can submit an improvement from the document assistant for an administrator to review in Touchless Intelligence. The request keeps its explanation and decision together.
@@ -94,7 +94,7 @@ The existing [Touchless Intelligence](../../administration-and-setup/touchless-i
 
 ## Settings Assistant: additional actions and page explanations
 
-The [Settings Assistant](../../administration-and-setup/settings/global-settings/company-information/settings-assistant.md), including proactive email/FTP health warnings, already shipped in VESTA. NOVA adds actions and context to that existing experience:
+The [Settings Assistant](../../administration-and-setup/settings/global-settings/company-information/settings-assistant/README.md), including proactive email/FTP health warnings, already shipped in VESTA. NOVA adds actions and context to that existing experience:
 
 * **Connection actions from a health notice.** Open the affected connection, review the available action and confirm it from the assistant. Health notices can also be dismissed. The basic per-channel warning cards and their error/retry information already exist in VESTA.
 * **Visible deactivation history.** Where recorded, a disabled import shows when it was switched off and by whom.
@@ -123,7 +123,7 @@ For setup steps, examples and testing, see [Custom Validation Rules](../../admin
 * **Reject with a recorded reason.** An authorised reviewer can reject an eligible document from the validation report. The report prepares a reason from its errors for the reviewer to check before confirming.
 * **Further format corrections.** EDNA utility CII invoices are recognised, and corrections to XRechnung VAT mapping improve how relevant invoice values reach DocBits fields.
 
-See [E-Document Validation Rules](../../administration-and-setup/settings/document-processing/e-documents/validation-rules.md).
+See [E-Document Validation Rules](../../administration-and-setup/settings/document-processing/e-documents/validation-rules/README.md).
 
 ## FTP/SFTP and email imports
 

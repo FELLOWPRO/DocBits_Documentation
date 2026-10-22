@@ -5,7 +5,7 @@
 
 **Master Data Lookup** (sidebar: **Lookup Master Data**) lets you view and manage the master data that DocBits uses to validate extracted document data against your ERP system. It is essential for accurate PO matching, supplier validation and field auto-completion. Open it from **Settings → Document Processing → Lookup Master Data**.
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_overview.png" alt="Master Data Lookup"><figcaption><p>Master Data Lookup page — data sources and the data table</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-overview-en.png" alt="Master-data lookup: sources and supplier table with values hidden."><figcaption><p>Master-data lookup: sources and supplier table with values hidden.</p></figcaption></figure>
 
 ## Data Sources
 
@@ -33,7 +33,7 @@ The Supplier and Purchase Order tables include columns such as Supplier ID, Supp
 
 Click **Settings** (gear icon) at the bottom-left of the data-sources panel to open the master-data settings.
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_settings.png" alt="Master Data Lookup settings"><figcaption><p>Supplier BOD and Purchase Order Deletion settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-settings-en.png" alt="Supplier synchronization and purchase-order retention settings."><figcaption><p>Supplier synchronization and purchase-order retention settings.</p></figcaption></figure>
 
 ### Supplier BOD
 

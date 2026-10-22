@@ -155,7 +155,7 @@ With this card you can specify the name of a workflow that is to be run after th
 
 ### **Adding calculated surcharges into an existing column** <a href="#pekg4i18rshn" id="pekg4i18rshn"></a>
 
-<figure><img src="https://lh7-us.googleusercontent.com/XYY1xsFpp7_-Bi0WOSbotiVzspDLdaufx_xgoopMHmxdZnSDhroLpb0AE_si5PhwMq1jHfndc9FwOte9MOoCoTP5_JUYawO5cr4uIctIDHmwVjz3KacQrLJd8iBQy5KY4N-dMaWEi3IeTcc5OBRNJk4" alt=""><figcaption></figcaption></figure>
+
 
 If you want to add all surcharges as a negative discount into the discount column, you can use the calculation card. There might be entries in this column, you can set it as one of the variables on the card, have the MTZ subtracted from it and add the result back into this column. In case there are empty fields (surcharges only for some items) it will assume a 0 for its calculation
 

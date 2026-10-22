@@ -1,6 +1,6 @@
 # Settings
 
-<figure><img src="../../.gitbook/assets/settings_overview.png" alt="Settings Overview"><figcaption><p>Settings Overview Page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-settings-overview-en.png" alt="Organization settings with identifying values hidden. The displayed country is a configured value."><figcaption><p>Organization settings with identifying values hidden. The displayed country is a configured value.</p></figcaption></figure>
 
 The Settings area is your central hub for configuring DocBits. It is organized into five main sections:
 

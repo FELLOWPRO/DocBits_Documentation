@@ -6,7 +6,7 @@ Global Quick Search is a keyboard-driven launcher that finds pages, settings, da
 
 Press <kbd>Cmd</kbd> + <kbd>K</kbd> on macOS or <kbd>Ctrl</kbd> + <kbd>K</kbd> on Windows and Linux. The shortcut works from any screen.
 
-<figure><img src="../../.gitbook/assets/quick-search-modal.png" alt="Global Quick Search modal"><figcaption><p>Quick Search opens above the current page.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-global-quick-search-en.png" alt="Global page search showing settings-navigation results."><figcaption><p>Global page search showing settings-navigation results.</p></figcaption></figure>
 
 ## Searching
 

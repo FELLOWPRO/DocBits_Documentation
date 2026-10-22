@@ -10,17 +10,17 @@ From the Dashboard navigate to Settings → Document Processing → Module.
 
 ![](<../../.gitbook/assets/DocBits_CMD_1 (1).png>)
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-en.png" alt="Document-integration modules: scripts, document scanning, barcode extraction and custom master data."><figcaption><p>Document-integration modules: scripts, document scanning, barcode extraction and custom master data.</p></figcaption></figure></div>
 
 In Module, activate Custom Master Data by pressing the slider as shown below.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_3.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"></div>
 
 #### Feature Overview <a href="#feature-overview" id="feature-overview"></a>
 
 In order to add your own master data into DocBits, navigate to Master Data Lookup in Settings.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_4.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/site-extra-master-data-overview-en.png" alt="Master-data lookup: sources and supplier table with values hidden."><figcaption><p>Master-data lookup: sources and supplier table with values hidden.</p></figcaption></figure></div>
 
 Click on “Custom Master Data”
 

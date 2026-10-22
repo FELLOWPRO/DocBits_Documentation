@@ -1,39 +1,21 @@
 # Import sample documents for model training
 
-Use this page to add sample PDFs for a document type, then train or test its classification model. You need access to **Settings** and **Document Types**. For the purpose of the training features, see [Purpose and Use: Model Training](purpose-and-use-model-training.md).
+Prepare documents that represent the formats, languages and document types your organization processes. Use only file formats accepted by your installation. Remove duplicates and keep training documents separate from documents reserved for evaluation.
 
-## Open the document type
+## Open the import
 
-1. Go to **Settings → Document Types**.
-2. Find the document type you want to train. In its row, select **Model Training**. The example below uses **Invoice**.
+Open model training in the relevant document type's settings and select the import function.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc163-document-types-en.png" alt="Invoice row on the Document Types page with the Model Training link"><figcaption><p>Open Model Training from the chosen document type.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-extra-model-training-overview-en.png" alt="Model-training overview: available data and actions; no training or import was started."><figcaption><p>Model-training overview: available data and actions; no training or import was started.</p></figcaption></figure>
 
-The other controls on this card serve different purposes: **Activate** enables the document type, **Extraction** switches its extraction mode, the gear opens its settings, and the remaining links open other configuration areas. You do not need to change them just to open Model Training.
+## Select formats and files
 
-The **Train Model** page shows the sample count and a list of uploaded training documents. In the example organization, the list is empty; your organization can show different documents and counts.
+Choose the number and date formats that match the files, then select the documents to import. For example, `1.234,56` and `1,234.56` use different separators. A date such as `05/06/2026` must also be interpreted according to the selected format.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc163-model-training-en.png" alt="Invoice Train Model page showing sample count, Import, Train model, Test classification, and the document list"><figcaption><p>The three actions are at the top right of the training list.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-extra-model-import-dialog-en.png" alt="Model-training import dialog: amount and date format, with no files selected or uploaded."><figcaption><p>Model-training import dialog: amount and date format, with no files selected or uploaded.</p></figcaption></figure>
 
-## Import sample PDFs
+Check the selection before starting the import. Wait for processing to finish and review errors and assigned document types. Correct classification and extraction errors before using the examples for training.
 
-1. Select **Import**.
-2. Choose the **Amount & Date Format** that matches the sample document. For example, choose **United States** for US number and date conventions. This selection tells DocBits how to interpret values in the uploaded document; it does not change the app language.
-3. Drag PDF files into the dialog or use **Upload** to select them. The current sample-document importer accepts **PDF files**; it rejects other file types. Selecting the files starts the upload.
-4. Close the dialog and check that the documents appear in the training list. If DocBits reports an upload error or a document already exists, correct the file or choose a different sample before continuing.
+## Train and evaluate
 
-<figure><img src="../../../../../.gitbook/assets/s150-image-85-1.png" alt="Model-training import dialog with amount and date format."><figcaption><p>Model-training import dialog with amount and date format.</p></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/dbdc163-format-menu-en.png" alt="Amount and Date Format menu with country and region choices, including United States and Great Britain"><figcaption><p>Pick the format used in the document, not your preferred interface language.</p></figcaption></figure>
-
-For actions on imported samples, see [Manage training data](manage-training-data.md).
-
-## Train and check the model
-
-When the intended sample PDFs are in the list, select **Train model**. DocBits may process training in the background; wait for its completion message before treating the new model as ready. The sample count and any plan limit shown on this page belong to your organization.
-
-To check classification, select **Test classification**, then upload a separate example file in the dialog. After processing, DocBits shows whether the predicted document type matches this page and reports classification details. The empty test dialog below is shown without submitting a file.
-
-<figure><img src="../../../../../.gitbook/assets/dbdc163-test-dialog-en.png" alt="Test classification dialog with drag-and-drop area and Upload field"><figcaption><p>Use Test classification to check the model with another document.</p></figcaption></figure>
-
-For interpreting the result, see [Testing the model](testing-the-model.md). If the result is poor, review the [training data](manage-training-data.md) and the [troubleshooting guide](troubleshooting.md) before adding more samples.
+Train the model using the functions and permissions available in your version. Then evaluate it on a separate sample. Adding documents does not itself guarantee higher accuracy. See [Testing the model](testing-the-model.md).

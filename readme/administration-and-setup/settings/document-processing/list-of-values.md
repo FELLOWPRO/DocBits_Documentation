@@ -1,146 +1,41 @@
-# List Of Values
+# Listas de valores
 
-## Overview
+Las listas de valores contienen opciones predefinidas para los campos del documento. Un campo puede utilizar una lista durante la validación. Las etiquetas se pueden traducir; el valor técnico permanece igual en todos los idiomas.
 
-The **Lista de valores** feature allows you to create and manage predefined sets of values. This is particularly useful for configuring dropdown menus in the [**Campos**](../global-settings/document-types/fields/) section, which can later be used in **Validación de campos**.
+## Abrir las listas
 
-These lists can be customized for different sub-organizations and support multiple languages, providing flexibility across **DocBits**.
+En los ajustes, abrir los datos maestros y las listas de valores. Seleccionar una lista para consultar sus entradas. Los nombres configurados están ocultos en la imagen.
 
-## How to Access?
+<figure><img src="../../../.gitbook/assets/s150-list_of_values_1-es.png" alt="Listas de valores con los nombres configurados ocultos."><figcaption><p>Listas de valores con los nombres configurados ocultos.</p></figcaption></figure>
 
-You can access the **Lista de valores** by navigating to **Settings → Document Processing → List of Values**.
+## Crear una lista
 
+1. Elegir la creación de una nueva lista.
+2. Introducir un nombre y, si es necesario, limitarla a una suborganización.
+3. Comprobar los datos antes de guardar.
 
-## How to Add or Delete a List
+Las listas estándar las proporciona el sistema y no se pueden eliminar. Antes de eliminar una lista personalizada, comprobar qué campos la utilizan: la acción puede tener efecto inmediato.
 
-### Create a New List of Values
+## Añadir y editar entradas
 
-1.  Click **New** in the upper-right corner of the screen.
+Abrir la lista prevista y añadir una fila. Comprobar las propiedades de cada entrada:
 
-    <figure><img src="../../../.gitbook/assets/s150-list_of_values_1-es.png" alt="Listas de valores con los nombres configurados ocultos."><figcaption><p>Listas de valores con los nombres configurados ocultos.</p></figcaption></figure>
-2. Enter a **Nombre** for your list.
-3. _(Optional)_ Select a **Suborganización** for which the list should be active.
-4.  Click **Guardar** to create the list.
+| Propiedad | Significado |
+| --- | --- |
+| Valor | Valor técnico almacenado por DocBits, igual en todos los idiomas. |
+| Etiqueta | Texto mostrado en el idioma seleccionado. Si no existe una etiqueta para el idioma activo, se muestra el valor técnico. |
+| Idioma | Idioma de la etiqueta. |
+| Suborganizaciones | Ámbito de disponibilidad de la entrada; sin restricciones, se aplica a todas las suborganizaciones. |
+| Sinónimos | Variantes asociadas al valor, por ejemplo EURO y € para EUR. Confirmar cada sinónimo en el campo correspondiente. |
 
+Comprobar todas las propiedades antes de guardar. Las acciones de edición y eliminación dependen de los permisos y de la entrada seleccionada. Las entradas del sistema no se pueden eliminar.
 
+## Importar un archivo CSV
 
-### How to Delete a List
+Abrir las acciones de la lista prevista y la importación CSV. Seleccionar el archivo y el delimitador correcto, por ejemplo `;` o `,`. Comprobar la estructura y el contenido antes de iniciar la importación.
 
-To delete a list, click the trash can icon next to the corresponding list.
+## Añadir traducciones
 
+Para una entrada, añadir un idioma e introducir la etiqueta prevista. Repetir para los demás idiomas necesarios, comprobar y guardar. Las entradas del sistema pueden recibir etiquetas traducidas aunque no se puedan eliminar.
 
-<mark style="color:red;">**Nota**</mark>: The list will be deleted immediately. Lists marked with the [**Estándar**](list-of-values.md#system-defined-lists-and-rows) tag cannot be deleted.
-
-## How to Add, Edit, or Remove Values from an Existing List&#x20;
-
-You can manage values in an existing **Lista de valores** using one of the following methods:
-
-* [**Manually add values**](list-of-values.md#manually-add-values) – Enter values individually through the interface.
-* [**Import values from a CSV file**](list-of-values.md#import-values-from-a-csv-file) – Upload a CSV file to add multiple values at once.
-
-### Manually Add Values
-
-1.  Click on the list you want to modify.
-
-
-2.  Click on **Actions.**
-
-
-3.  Click on **Add Row.**
-
-
-
-Now you can specify multiple properties for each entry:
-
-
-**Valor**: This is how the item will be stored internally within **DocBits**. It remains the same across all languages and also serves as the default display text during field validation if no label is specified for the selected language.
-
-**Etiqueta**: This is the text displayed on the validation screen, based on the selected language. If no label is available for the active language in DocBits, the system will default to displaying the **Valor**.
-
-**Idioma**: Specifies the language in which the label will be displayed.\
-A more detailed explanation can be found [here](list-of-values.md#add-translations-to-your-values).
-
-**Suborganizaciones**: Specifies which **sub-organization** the row should be active for. If left blank, the row will be available for all organizations.
-
-**Sinónimos**: Here you can specify additional values that help train your document.\
-For example, if **EUR** is your primary **value**, you can add EURO and € as **synonyms**. When the document is trained using any of these **synonyms**, **DocBits** will automatically recognize and select EUR as the corresponding value from your list.\
-<mark style="color:red;">**Nota**</mark>: Each synonym must be confirmed by pressing **Enter** to add it to the list.
-
-4.  After entering all desired properties, click the **Guardar** button to add the row.
-
-
-
-### Import Values from a CSV File
-
-To add multiple values at once via CSV import:
-
-1.  Click on the list you want to update.
-
-
-2.  Click **Acciones**.
-
-
-3.  Click on **Cargar CSV**.
-
-
-4. Click **Archivo** to browse and select the CSV file you want to upload.
-5. Choose the appropriate **Delimitador** used in the CSV file (`;` or `,`).
-6.  Click **Subir** to import the values.
-
-
-
-### Edit Existing Values
-
-1. Locate the row you want to edit.
-2. Click the three dots in the **Acciones** column.
-3.  Select **Editar** from the dropdown menu.
-
-
-4. Make the required changes.
-5.  Click **Guardar** to apply your changes.
-
-
-
-### Delete Values
-
-1. Locate the row you want to delete.
-2. Click the three dots in the **Acciones** column.
-3.  Select **Borrar** from the dropdown menu.
-
-
-
-<mark style="color:red;">**Nota**</mark>: The row will be deleted immediately. Rows marked with the [**Defecto**](list-of-values.md#system-defined-lists-and-rows) tag cannot be deleted.
-
-## Add Translations to Your Values
-
-You can add as many translations as there are supported languages in **DocBits**.
-
-To add a translation:
-
-1.  Click the plus (+) icon.
-
-
-2.  Select a language from the dropdown menu.
-
-
-3.  Enter the desired translation in the **Etiqueta** field.
-
-
-4.  To add another translation, click the plus (+) icon again.
-
-
-5.  To remove a translation, click the trash can icon.
-
-
-6.  When finished, click the **Guardar** button to save your translations.
-
-
-
-<mark style="color:red;">**Nota**</mark>: If no **Etiqueta** is available for the active language, DocBits will default to displaying the **Valor**.
-
-## System-Defined Lists and Rows
-
-Some lists are pre-created by the system and are marked with the **Estándar** tag. These lists cannot be deleted, but you can add new rows to them and remove those newly added rows if necessary.
-
-
-Within these standard lists, certain rows are marked with the **Defecto** tag—these are system-defined entries. You can add new **labels** in different languages, but these default rows cannot be deleted.
+Traducir la etiqueta no cambia el valor técnico. Después de las modificaciones previstas, comprobar el campo durante la validación en el idioma deseado. La imagen muestra la consulta de las listas, no cambios guardados ni una importación ejecutada.

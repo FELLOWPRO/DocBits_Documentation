@@ -1,6 +1,6 @@
-# Standard Workflow
+# Flujo estándar
 
-El constructor **Standard Workflow** es el editor lineal basado en tarjetas para automatizar el procesamiento de documentos. Un flujo de trabajo se compone de tres grupos de tarjetas: **Cuando** (el disparador), **Y** (condiciones adicionales) y **Entonces** (las acciones a ejecutar). Cuando un documento cumple las condiciones When/And, las acciones Then se ejecutan automáticamente.
+El constructor **Flujo estándar** es el editor lineal basado en tarjetas para automatizar el procesamiento de documentos. Un flujo de trabajo se compone de tres grupos de tarjetas: **Cuando** (el disparador), **Y** (condiciones adicionales) y **Entonces** (las acciones a ejecutar). Cuando un documento cumple las condiciones When/And, las acciones Then se ejecutan automáticamente.
 
 ## Crear y probar un Standard Workflow <a id="standard-workflow-tutorial"></a>
 
@@ -95,7 +95,7 @@ En la lista activo la regla probada y compruebo que el interruptor esté encendi
 
 ## Cómo acceder
 
-Abra **Workflow Dashboard → Workflow List** y, a continuación, haga clic en **Agregar flujo de trabajo** para crear un nuevo flujo de trabajo Standard, o haga clic en un flujo de trabajo existente para editarlo.
+Abra **Panel de flujos de trabajo → Lista de flujos de trabajo** y, a continuación, haga clic en **Agregar flujo de trabajo** para crear un nuevo flujo de trabajo Standard, o haga clic en un flujo de trabajo existente para editarlo.
 
 <figure><img src="../../.gitbook/assets/prior-u033-es.png" alt="Lista de flujos de trabajo y controles de importación."><figcaption><p>Lista de flujos de trabajo y controles de importación.</p></figcaption></figure>
 
@@ -118,5 +118,5 @@ Guarde con **Guardar flujo de trabajo**, o guarde el diseño como una plantilla 
 ## Próximos pasos
 
 - Vea qué hace cada tarjeta en la sección **Tarjetas**.
-- Combine tarjetas en soluciones probadas con las **Workflow Pattern Guides**.
+- Combine tarjetas en soluciones probadas con las **Guías de patrones de flujo**.
 - Para flujos con ramificaciones y rutas paralelas (Wait ALL / Wait ANY / OR), utilice el constructor **Flujo de trabajo avanzado**.

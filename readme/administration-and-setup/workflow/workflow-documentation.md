@@ -149,7 +149,7 @@ Arriba se muestra un ejemplo de cálculo para MTZ con un filtro para los número
 
 Con una configuración manual, se recomienda dividir los cálculos que dependen de nuevas columnas en un flujo de trabajo independiente. Para continuar con el cálculo puede utilizar la tarjeta Run Workflow.
 
-**Run Workflow**
+**Ejecutar el flujo**
 
 <figure><img src="../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -161,7 +161,7 @@ Con esta tarjeta puede especificar el nombre de un flujo de trabajo que debe eje
 
 Si desea añadir todos los recargos como un descuento negativo en la columna de descuentos, puede utilizar la tarjeta de cálculo. Puede que ya haya entradas en esta columna; puede configurarla como una de las variables de la tarjeta, restarle el MTZ y volver a añadir el resultado a esta columna. En caso de que haya campos vacíos (recargos solo para algunos artículos), se asumirá un 0 para su cálculo.
 
-**Notify user to authorize the order confirmation in DocBits**
+**Notificar al usuario para autorizar la confirmación del pedido en DocBits**
 
 Después de calcular los recargos, es posible que desee notificar a un usuario concreto para que autorice la confirmación de pedido. Para ello puede utilizar la tarjeta de notificación.
 

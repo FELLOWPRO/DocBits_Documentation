@@ -11,6 +11,7 @@
     "owned_fixtures_deleted": true,
     "baseline_layouts_preserved": true
   },
+  "owned_fixture_deletion_count": 4,
   "capture_environment": "dev.docbits.com",
   "ui_code": "es-es",
   "note": "Alignment of the latest150 cases plus75 changes from the first5,20 and50 screenshot rounds. Equivalent localized source names and current navigation paths were checked. Source captures use the actual native UI, including separately reported untranslated or inaccurate product labels. No configuration changes were saved; own synthetic documents were removed and account language restored.",
@@ -377,7 +378,7 @@
       "retired_aliases": 0,
       "mapping": "blob_match",
       "new": "s150-barcode_assignment_dialog-es.png",
-      "sha256": "d057d62f9735877eb82da6ede2ca1ce342eb77b613d41ac87ff7fdcf82d20607",
+      "sha256": "ed2bedbd3aae8b7f49bf8ab9997e81d3176cbe5ea12d2dee9c528655ad61b0f6",
       "caption": "Asignación de códigos de barras a campos del documento."
     },
     {
@@ -391,8 +392,8 @@
       "retired_aliases": 0,
       "mapping": "blob_match",
       "new": "s150-barcode_assignment_field_mapped-es.png",
-      "sha256": "1311613c22e1ad0c02d5a148c37632bbed0239f5950c6057097b64f678267704",
-      "caption": "Borrador de asignación de un código de barras al pedido."
+      "sha256": "bae48d1595d697616b17f8e5514c22fe158da69a3530219a9bfc17760cdf1693",
+      "caption": "Borrador sin guardar: DEMO-PO-150 asignado a Orden de compra; el identificador de la factura queda sin asignar."
     },
     {
       "id": "S017",
@@ -405,7 +406,7 @@
       "retired_aliases": 0,
       "mapping": "blob_match",
       "new": "s150-barcode_assignment_field_options-es.png",
-      "sha256": "95562ee019abea62f73eb9878ad0b670a6395085db9f62cd44590364663ebf46",
+      "sha256": "b145ff6c7cc9ca10825f93e8312f42d37d2c8c88ebcd4a7abc97a0e67373b2ff",
       "caption": "Campos disponibles en la asignación de códigos de barras."
     },
     {
@@ -419,7 +420,7 @@
       "retired_aliases": 0,
       "mapping": "blob_match",
       "new": "s150-barcode_assignment_validation_screen-es.png",
-      "sha256": "f6a4ba07eeb7244df7011da9da39dd773dc3ccab167ee87a5ae5702cdfe278fb",
+      "sha256": "b0660addbe3f58d9f340e510618511476fb9b12d9fa3da60f01c5d4221783e6f",
       "caption": "Validación de una factura ficticia con código de barras y código QR."
     },
     {
@@ -3265,5 +3266,6 @@
       "sha256": "ffe1eb8f2396b528dcc301b4f8584afddd3fd655abd1cc2c7b46429ce724ca12",
       "caption": "Filtros del panel por asignación y necesidad de reinicio."
     }
-  ]
+  ],
+  "additional_native_image_reuses": 2
 }

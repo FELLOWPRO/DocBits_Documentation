@@ -1,4 +1,4 @@
-# Rule Management
+# Gestión de reglas
 
 <figure><img src="../../../../.gitbook/assets/s150-rule_management-es.png" alt="Administración de reglas con los nombres configurados ocultos."><figcaption><p>Administración de reglas con los nombres configurados ocultos.</p></figcaption></figure>
 
@@ -13,7 +13,7 @@ La tabla principal muestra todas las configuraciones de reglas:
 | **Nombre** | El nombre del conjunto de reglas. Los elementos etiquetados como **por defecto** son plantillas proporcionadas por el sistema. |
 | **Descripción** | Un resumen de lo que gestiona el conjunto de reglas. |
 | **Última modificación por** | El usuario que editó por última vez este conjunto de reglas. |
-| **Last Modified At** | Marca de tiempo del último cambio. |
+| **Última modificación** | Marca de tiempo del último cambio. |
 | **Acciones** | Menú de tres puntos para editar, copiar o eliminar. |
 
 Haga clic en **+ New** para crear un nuevo conjunto de reglas o haga clic en un nombre existente para abrir el editor de reglas.

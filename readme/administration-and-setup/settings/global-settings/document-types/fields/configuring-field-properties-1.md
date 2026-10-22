@@ -1,6 +1,6 @@
 # Configuración de propiedades de campo
 
-Utilice **Configuración → Tipos de documento → Campos** para controlar cómo se comportan los campos de un tipo de documento. Seleccione primero el tipo de documento; el siguiente ejemplo muestra **Factura** en la interfaz en inglés.
+Abra **Configuración → Tipos de documento → Campos** y seleccione el tipo de documento. Las imágenes muestran Factura en la interfaz española; los identificadores técnicos como `invoice_id` no se traducen.
 
 <figure><img src="../../../../../.gitbook/assets/s150-dbdc155-field-properties-overview-es.png" alt="Propiedades de los campos: obligatorio, solo lectura, oculto y validación."><figcaption><p>Propiedades de los campos: obligatorio, solo lectura, oculto y validación.</p></figcaption></figure>
 
@@ -17,18 +17,18 @@ Utilice **Configuración → Tipos de documento → Campos** para controlar cóm
 | **Obligatorio** | Marca la información que debe estar presente para la validación. Compruebe el resultado de validación del documento después de cambiar esta configuración. |
 | **Solo lectura** | Muestra un campo sin permitir que los usuarios editen su valor. |
 | **Oculto** | Mantiene el campo fuera de la vista normal del documento. |
-| **Force Validation** | Exige que el campo supere la validación. Configure las reglas detalladas por separado; esta casilla no es un editor de reglas. |
+| **Validación forzada** | Exige una comprobación explícita del campo. No crea reglas de comparación ni expresiones regulares; las reglas de validación personalizadas se configuran aparte. |
 | **Utilizar IA** | Solicita o detiene la extracción mediante IA para este campo. La fila muestra si la extracción está solicitada. |
 | **OCR** | Introduzca el umbral de confianza de OCR del campo. Es un número, no un interruptor de activación ni una configuración de idioma. |
-| **Match Score** | Introduzca el umbral de coincidencia del campo. Es un número, no un interruptor de activación. |
+| **Puntuación de coincidencia** | Introduzca el umbral de coincidencia del campo. Es un número, no un interruptor de activación. |
 
-Los controles deslizantes **OCR** y **Match Score** de **Recognition Settings** aplican valores a toda la lista de campos. Las casillas situadas justo debajo de los títulos de las columnas aplican **Obligatorio**, **Solo lectura**, **Oculto** o **Force Validation** a toda la lista. Revise las filas afectadas antes de seleccionar **Guardar ajustes**. **Restore Defaults** restablece la configuración de los campos; utilícelo solo cuando desee reemplazar sus cambios.
+Los controles deslizantes **OCR** y **Puntuación de coincidencia** de **Ajustes de reconocimiento** aplican valores a toda la lista de campos. Las casillas situadas justo debajo de los títulos de las columnas aplican **Obligatorio**, **Solo lectura**, **Oculto** o **Validación forzada** a toda la lista. Revise las filas afectadas antes de seleccionar **Guardar ajustes**. **Restaurar valores predeterminados** restablece la configuración de los campos; utilícelo solo cuando desee reemplazar sus cambios.
 
 ## Otros controles de esta vista
 
-- **Crear un nuevo grupo** y **Crear campo** añaden un grupo o un campo. Consulte [Adding and Editing Fields](adding-and-editing-fields.md).
+- **Crear un nuevo grupo** y **Crear campo** añaden un grupo o un campo. Consulte [Añadir y editar campos](adding-and-editing-fields.md).
 - **Ajustes de datos maestros** abre la [configuración de datos maestros](master-data-settings.md).
 - Las casillas situadas en el extremo izquierdo seleccionan campos. El menú contiguo ofrece **Reasignar el grupo de campo** para los campos seleccionados.
 - El botón más de **Fórmula** abre el editor de fórmulas de ese campo. El icono de **info** muestra información del campo. El icono de eliminar no está disponible para los campos estándar.
 
-Para más información sobre validación y coincidencia, consulte [Setting Validation and Match Score](setting-validation-and-match-score.md).
+Para más información sobre validación y coincidencia, consulte [Validación y Match Score](setting-validation-and-match-score.md).

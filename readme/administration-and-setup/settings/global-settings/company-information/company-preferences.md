@@ -11,3 +11,5 @@ Seleccione un patrón compatible con sus documentos. Los símbolos como `%d`, `%
 <figure><img src="../../../../.gitbook/assets/prior-i004-es.png" alt="Selección del patrón de fecha en las preferencias de la empresa."><figcaption><p>Selección del patrón de fecha en las preferencias de la empresa.</p></figcaption></figure>
 
 El formato de importe es una configuración independiente; el valor configurado puede conservar su nombre original. Revise ambos formatos antes de guardar. El antiguo diálogo de notificación de versión no forma parte de esta vista actual. No se modificó ninguna preferencia para obtener estas imágenes.
+
+{% embed url="https://youtu.be/TLmAHw3EXs4" %}

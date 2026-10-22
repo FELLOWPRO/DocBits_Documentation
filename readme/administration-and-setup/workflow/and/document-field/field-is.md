@@ -1,48 +1,40 @@
 # Vérifier la présence et le contenu d’un champ
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-db30554e1eb1-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-fieldstatus-fr-current-20261022.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
-## **Objectif :**
+## Quand l’utiliser
 
-Cette carte de workflow est conçue pour automatiser des actions en fonction de la présence ou de l'état d'un champ spécifié dans un document. En évaluant si le champ est vide, manquant ou renseigné, elle permet aux workflows de traiter les documents avec précision et exactitude.
+Utilisez cette carte pour vérifier si un champ du document est vide ou absent, par exemple lorsqu’une facture sans numéro nécessite un contrôle supplémentaire. Il s’agit d’une condition ; configurez séparément l’action suivante.
 
-## **Composants de la carte :**
+**Emplacement :** Workflow standard → conditions supplémentaires (AND) → Champ du document.
 
-1. **Nom du champ**
-   * **Descriptif :** spécifie le nom du champ à évaluer.
-   * **Détail :** il doit correspondre à l'identifiant exact utilisé dans le document pour garantir une détection précise du champ.
-2. **Opérateurs**
-   * **Descriptif** : définit la condition qui déclenche le workflow, en fonction de la présence ou de l'état du champ.
-   * **Possibilités** :
-     * **Vide/Pas dans le document :** le workflow se déclenche si le champ est soit absent du document, soit présent mais vide.
-     * **Dans Document/Non Vide :** le workflow se déclenche si le champ existe dans le document et contient une valeur.
+## Configuration — version 2
 
-## **Fonctionnalité :**
+| Paramètre | Valeur de l’exemple |
+| --- | --- |
+| Champ | `invoice_id` — numéro de facture |
+| État du champ | Vide ou absent (`field_empty`) |
 
-* **Détection de l'état :** la carte surveille le champ spécifié pour évaluer sa présence et son état.
-* **Évaluation de la condition :**
-  * Le système évalue si le champ spécifié est dans l'état (Empty/Not in Document ou In Document/Not Empty) défini par l'opérateur sélectionné.
-*
-
-**Exécution de l'action :**
-* **Condition Vide/Pas dans le document :** si l'état du champ correspond à cette condition (c.-à-d. que le champ est soit absent du document, soit présent mais vide), le système déclenche les actions associées. Celles-ci peuvent inclure la génération d'alertes, le signalement du document pour examen ou l'arrêt du workflow.
-* **État dans le document/non vide :** si l'état du champ correspond à cette condition (c.-à-d. que le champ existe dans le document et contient une valeur), le système déclenche les actions associées. Celles-ci peuvent inclure l'activation des étapes suivantes du workflow, la mise à jour d'enregistrements ou le déclenchement de notifications.
-## **Mise en place et configuration :**
-
-* Les utilisateurs sélectionnent le champ dans une liste de champs de document disponibles. L'opérateur est choisi via un menu déroulant, offrant des options claires entre « Empty/Not in Document » ou « In Document/Not Empty ».
-
-## **Conclusion :**
-
-La carte de workflow « Field Presence and State Validation » est un outil essentiel pour les workflows de traitement de documents, garantissant un traitement précis des champs manquants ou renseignés. En automatisant des actions en fonction de l'état des champs, cette carte améliore l'intégrité des données, réduit les erreurs et garantit que les workflows fonctionnent de manière fluide et efficace.
+Sélectionnez un champ réellement configuré dans votre organisation. L’option `field_not_empty` vérifie si le champ contient une valeur.
 
 <!-- workflow-card-practical-example-20261021 -->
 
 ## Exemple pratique
 
-**Quand utiliser :** Détectez les factures dont le numéro de facture doit encore être révisé.
+| Valeur de l’exemple | Résultat attendu pour `field_empty` |
+| --- | --- |
+| Champ vide ou absent | Condition satisfaite |
+| `DEMO-001` | Condition non satisfaite |
+| Numéro présent mais incorrect | Condition non satisfaite — le champ contient toujours une valeur |
 
-**Configuration :** Sélectionnez le champ `invoice_number` et Vide/Pas dans le document.
+Ces exemples présentent les résultats attendus. Pour vérifier la validité du numéro lui-même, ajoutez une condition adaptée à son contenu ; cette carte vérifie l’état du champ. Dans la version 2, les espaces en début et en fin de texte sont supprimés avant de vérifier si le champ est vide.
 
-**Résultat attendu et contre-exemple :** Un champ vide ou manquant est réussi. Une valeur renseignée telle que `DEMO-001` ne remplit pas cette condition.
+## Vidéo d’exemple avec un administrateur
 
-Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.
+Quand j’utilise cette carte, où la trouver et comment repérer les numéros de facture manquants. L’administrateur, le bureau et la voix sont synthétiques ; la démonstration présente la véritable interface DocBits d’un compte de test. Les exemples présentent les résultats attendus.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/fr.mp4" %}
+
+[Ouvrir la vidéo avec les sous-titres français](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/fr.html)
+
+[Lire la transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/fr.txt)

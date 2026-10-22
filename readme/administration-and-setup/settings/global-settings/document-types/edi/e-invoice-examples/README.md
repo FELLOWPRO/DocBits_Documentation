@@ -1,4 +1,4 @@
-# E-Invoice examples
+# Voorbeelden van e-facturen
 
 {% embed url="https://youtu.be/li8KjWO18eU" %}
 DocBits EDI Configuration Guide: Structure Descriptors, Transformation & Extraction Paths
@@ -10,7 +10,7 @@ DocBits EDI Configuration Guide: Structure Descriptors, Transformation & Extract
 
 {% file src="../../../../../../.gitbook/assets/Xrechung_1-2_example.xml" %}
 
-How  the file gets exported:
+Hoe het bestand wordt geëxporteerd:
 
 {% content-ref url="xrechnung-1.2.md" %}
 [xrechnung-1.2.md](xrechnung-1.2.md)
@@ -22,7 +22,7 @@ How  the file gets exported:
 
 {% file src="../../../../../../.gitbook/assets/INVOICE_ubl2-0.xml" %}
 
-How  the file gets exported:
+Hoe het bestand wordt geëxporteerd:
 
 {% content-ref url="xrechnung-2.0.md" %}
 [xrechnung-2.0.md](xrechnung-2.0.md)
@@ -32,7 +32,7 @@ How  the file gets exported:
 
 * Example file:
 
-How  the file gets exported:
+Hoe het bestand wordt geëxporteerd:
 
 {% content-ref url="xrechnung-2.1.md" %}
 [xrechnung-2.1.md](xrechnung-2.1.md)
@@ -44,7 +44,7 @@ How  the file gets exported:
 
 {% file src="../../../../../../.gitbook/assets/INVOICE_ubl2-2.xml" %}
 
-How  the file gets exported:
+Hoe het bestand wordt geëxporteerd:
 
 {% content-ref url="xrechnung-2.2.md" %}
 [xrechnung-2.2.md](xrechnung-2.2.md)
@@ -56,7 +56,7 @@ How  the file gets exported:
 
 {% file src="../../../../../../.gitbook/assets/INVOICE_ubl2-3.xml" %}
 
-How  the file gets exported:
+Hoe het bestand wordt geëxporteerd:
 
 {% content-ref url="xrechnung-2.3.md" %}
 [xrechnung-2.3.md](xrechnung-2.3.md)
@@ -68,19 +68,19 @@ How  the file gets exported:
 
 {% file src="../../../../../../.gitbook/assets/INVOICE_ubl3-0.xml" %}
 
-How  the file gets exported:
+Hoe het bestand wordt geëxporteerd:
 
 {% content-ref url="xrechnung-3.0.md" %}
 [xrechnung-3.0.md](xrechnung-3.0.md)
 {% endcontent-ref %}
 
-**XRechnung Cross Industry Invoice:**
+**XRechnung Brancheoverschrijdende factuur:**
 
 * Example file:
 
 {% file src="../../../../../../.gitbook/assets/INVOICE_uncefact.xml" %}
 
-How  the file gets exported:
+Hoe het bestand wordt geëxporteerd:
 
 {% content-ref url="xrechnung-cross-industry-invoice.md" %}
 [xrechnung-cross-industry-invoice.md](xrechnung-cross-industry-invoice.md)
@@ -97,7 +97,7 @@ How  the file gets exported:
 
 {% file src="../../../../../../.gitbook/assets/Basic.xml" %}
 
-How  the file gets exported:
+Hoe het bestand wordt geëxporteerd:
 
 {% content-ref url="facturx.md" %}
 [facturx.md](facturx.md)

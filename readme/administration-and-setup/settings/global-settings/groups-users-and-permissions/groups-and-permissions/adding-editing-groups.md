@@ -1,38 +1,38 @@
 # Groepen toevoegen en bewerken
 
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
-DocBits Admin Guide: Managing Users, Groups & Permissions (Full Walkthrough)
+DocBits-beheerdershandleiding: gebruikers, groepen en rechten beheren (volledige uitleg)
 {% endembed %}
 
-## To add a new group or change the permissions of an existing group, you can do the following:
+## Een groep toevoegen of de rechten van een bestaande groep wijzigen
 
-* **Navigate to Group Settings:** Log in to your admin account and go to Group Settings in the admin panel.
+* **Groepsinstellingen openen:** meld u aan met uw beheerdersaccount en open de groepsinstellingen in het beheerpaneel.
 
 <figure><img src="../../../../../.gitbook/assets/prior-t002-nl.png" alt="Toegang tot instellingen voor groepen en rechten."><figcaption><p>Toegang tot instellingen voor groepen en rechten.</p></figcaption></figure>
 
-This window will open:
+Het volgende venster wordt geopend:
 
 <figure><img src="../../../../../.gitbook/assets/prior-t003-nl.png" alt="Groepslijst met afgeschermde namen."><figcaption><p>Groepslijst met afgeschermde namen.</p></figcaption></figure>
 
-* **Click the + New button:** If you want to add a new group, click the + New button to start the process of adding a new group.
+* **Op de knop + New klikken:** klik op + New om een nieuwe groep toe te voegen.
 
 <figure><img src="../../../../../.gitbook/assets/prior-u005-nl.png" alt="Venster voor een niet-opgeslagen nieuwe groep."><figcaption><p>Venster voor een niet-opgeslagen nieuwe groep.</p></figcaption></figure>
 
-* **Fill out the table:** Provide the group name and a description of the group.
-* **Save the details:** Once you have filled in the group and description, click the "Save" button.
+* **Het formulier invullen:** voer de groepsnaam en een beschrijving van de groep in.
+* **Gegevens opslaan:** klik na het invullen van de groepsnaam en beschrijving op de knop "Save" om op te slaan.
 
 <figure><img src="../../../../../.gitbook/assets/prior-u006-nl.png" alt="Beheer van groepen en rechten."><figcaption><p>Beheer van groepen en rechten.</p></figcaption></figure>
 
-## Editing Groups:
+## Groepen bewerken:
 
-* **Edit Groups:** To edit groups, click on "edit", here you can change the group name
+* **Groepen bewerken:** klik op "edit" om de groepsnaam te wijzigen.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_edit_group_name.png" alt="Docbits Edit Group Name"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_edit_group_name.png" alt="Groepsnaam bewerken in DocBits"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_enable_groups_permissions_2.png" alt="Docbits Enable Groups Permissions 2"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_enable_groups_permissions_2.png" alt="Groepen en rechten inschakelen in DocBits, tweede weergave"><figcaption></figcaption></figure>
 
-* **Enable Groups & permissions:** To make the group visible, "Groups & permissions" must be enabled.
+* **Groepen en rechten inschakelen:** schakel "Groups & permissions" in om de groep zichtbaar te maken.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_enable_groups_permissions.png" alt="Docbits Enable Groups Permissions"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_enable_groups_permissions.png" alt="Groepen en rechten inschakelen in DocBits"><figcaption></figcaption></figure>
 
-* **Check the results:** After saving, review the results to make sure the group was successfully added, edited, or updated.
+* **Resultaat controleren:** controleer na het opslaan of de groep correct is toegevoegd, bewerkt of bijgewerkt.

@@ -1,6 +1,6 @@
-# Above Max Amount
+# Boven het maximumbedrag
 
-<figure><img src="../../../../.gitbook/assets/docbits_rule_above_max.png" alt="DocBits Regel Above Max"><figcaption></figcaption></figure>
+
 
 Deze titel geeft aan dat de regel is ontworpen om gevallen te beheren waarin het factuurtotaal hoger is dan het maximumbedrag dat een goedkeurder mag verwerken.
 

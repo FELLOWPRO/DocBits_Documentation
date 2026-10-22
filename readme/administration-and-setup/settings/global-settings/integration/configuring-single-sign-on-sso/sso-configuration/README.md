@@ -1,3 +1,3 @@
-# Infor SSO Configuration
+# Infor-SSO-configuratie
 
-First check which type of M3 your organization is currently using, V1 or V2.
+Controleer eerst welk type M3 uw organisatie momenteel gebruikt, V1 of V2.

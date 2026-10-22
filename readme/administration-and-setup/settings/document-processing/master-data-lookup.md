@@ -5,7 +5,7 @@
 
 Met **Stamgegevens opzoeken** (zijbalk: **Lookup Master Data**) kunt u de stamgegevens bekijken en beheren die DocBits gebruikt om uit documenten geëxtraheerde gegevens te valideren tegen uw ERP-systeem. Dit is essentieel voor nauwkeurige PO matching, leveranciersvalidatie en het automatisch invullen van velden. Open de pagina via **Instellingen → Documentverwerking → Lookup Master Data**.
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_overview.png" alt="Stamgegevens opzoeken"><figcaption><p>Pagina Stamgegevens opzoeken – gegevensbronnen en de gegevenstabel</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-overview-nl.png" alt="Stamgegevens opzoeken: gegevensbronnen en leverancierstabel met afgeschermde waarden."><figcaption><p>Stamgegevens opzoeken: gegevensbronnen en leverancierstabel met afgeschermde waarden.</p></figcaption></figure>
 
 ## Gegevensbronnen
 
@@ -33,16 +33,16 @@ De tabellen Leverancier en Inkooporder bevatten kolommen zoals Leverancier-ID, L
 
 Klik linksonder in het gegevensbronnenpaneel op **Settings** (tandwielpictogram) om de stamgegevens-instellingen te openen.
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_settings.png" alt="Instellingen voor Stamgegevens opzoeken"><figcaption><p>Instellingen voor Supplier BOD en het verwijderen van inkooporders</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-settings-nl.png" alt="Stamgegevensinstellingen voor leverancierssynchronisatie en het bewaren van inkooporders."><figcaption><p>Stamgegevensinstellingen voor leverancierssynchronisatie en het bewaren van inkooporders.</p></figcaption></figure>
 
-### Supplier BOD
+### Leveranciers-BOD
 
-**Allow Multiple Supplier Accounts Sync**
+**Synchronisatie van meerdere leveranciersaccounts toestaan**
 
 * **Ingeschakeld**: een enkele leverancier kan meerdere `<FinancialParty>`-elementen in de BOD hebben (vaak vanwege meerdere IBAN's of financiële rekeningen). Alle `<FinancialParty>`-vermeldingen worden geëxtraheerd en opgeslagen in de leverancierstabel, zodat meerdere financiële attributen kunnen worden opgeslagen.
 * **Uitgeschakeld**: alleen het laatst gevonden `<FinancialParty>`-element voor de leverancier wordt geëxtraheerd. Eerdere financiële attributen (bijvoorbeeld extra IBAN's) worden genegeerd en alleen de gegevens van het laatste voorkomen worden opgeslagen.
 
-### Purchase Order Deletion Assistant
+### Assistent voor het verwijderen van inkooporders
 
 **Delete Purchase Order After** – kies wanneer afgesloten inkooporders moeten worden verwijderd. Na de geselecteerde periode worden de records automatisch verwijderd.
 

@@ -35,5 +35,5 @@ ZUGFeRD 2.3, uitgebracht in september 2024, is gelijkwaardig aan Factur-X 1.0.07
 ## Gerelateerd
 
 * [ZUGFeRD-configuratie](../zugferd/)
-* [ZUGFeRD-veldtoewijzing](../zugferd/versions/)
+* [ZUGFeRD-veldtoewijzing](../zugferd/README.md)
 * [Ondersteunde elektronische documenten](./)

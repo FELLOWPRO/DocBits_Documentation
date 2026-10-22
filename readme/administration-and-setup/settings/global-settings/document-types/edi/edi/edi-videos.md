@@ -1,43 +1,43 @@
-# EDI Videos
+# EDI-video’s
 
-This page contains a series of short video guides explaining how DocBits processes EDI documents. The following videos illustrate different aspects of the process, including an example using an EDI 850 (Purchase Order).
+Deze pagina bevat korte videohandleidingen over de verwerking van EDI-documenten in DocBits. De video's belichten verschillende onderdelen, waaronder een voorbeeld met een EDI 850-inkooporder.
 
 
 
-## **Understanding the Structure Descriptor File**
+## **Het structuurbeschrijvingsbestand begrijpen**
 
-&#x20;This video explains the purpose of the structure descriptor file used by DocBits to interpret EDI documents.
+&#x20;Deze video legt uit waarvoor DocBits het structuurbeschrijvingsbestand gebruikt bij het interpreteren van EDI-documenten.
 
 {% embed url="https://youtu.be/_U6yyYFMo84" %}
 
-**Related Guide**:\
-For a detailed walkthrough and editing instructions, see the [**Structure Descriptor File Guide**](edi-structure-descriptor-file-guide/)
+**Bijbehorende handleiding**:\
+Zie de [**handleiding voor het structuurbeschrijvingsbestand**](edi-structure-descriptor-file-guide/) voor een uitgebreide uitleg en bewerkingsinstructies.
 
 
 
-## **Working with the Transformation File**
+## **Met het transformatiebestand werken**
 
-&#x20;This video demonstrates how the transformation file defines the rules for converting EDI data into the desired output format within DocBits.
+&#x20;Deze video laat zien hoe het transformatiebestand bepaalt hoe EDI-gegevens in DocBits naar het gewenste uitvoerformaat worden omgezet.
 
 {% embed url="https://www.youtube.com/watch?v=x7ZNkx13D5I" %}
 
-**Related Guide**:\
-For a detailed walkthrough and editing instructions, see the [**Transformation File Guide**](edi-transformation-file-guide.md)
+**Bijbehorende handleiding**:\
+Zie de [**handleiding voor het transformatiebestand**](edi-transformation-file-guide.md) voor een uitgebreide uitleg en bewerkingsinstructies.
 
-## **Exploring the Preview Functionality**
+## **De voorbeeldweergave verkennen**
 
-&#x20;This video showcases how the preview feature in DocBits allows you to visualize the processed EDI data.
+&#x20;Deze video laat zien hoe u verwerkte EDI-gegevens in de voorbeeldweergave van DocBits kunt bekijken.
 
 {% embed url="https://youtu.be/9ioes44TAWs" %}
 
-**Related Guide**:\
-For a detailed walkthrough and editing instructions, see the [**Preview File Guide**](edi-preview-file-guide.md)
+**Bijbehorende handleiding**:\
+Zie de [**handleiding voor het voorbeeldbestand**](edi-preview-file-guide.md) voor een uitgebreide uitleg en bewerkingsinstructies.
 
-## **Mapping Information to Header Fields**
+## **Gegevens aan kopvelden koppelen**
 
-&#x20;This video details the process of mapping specific data elements from the EDI document to the corresponding header fields within DocBits.
+&#x20;Deze video legt uit hoe u specifieke gegevenselementen uit een EDI-document aan de bijbehorende kopvelden in DocBits koppelt.
 
 {% embed url="https://youtu.be/9xcXZY73GmE" %}
 
-**Related Guide**:\
-For a detailed walkthrough and editing instructions, see the [**Extraction Pahts File Guide**](edi-extraction-paths-file-guide.md)
+**Bijbehorende handleiding**:\
+Zie de [**handleiding voor het bestand met extractiepaden**](edi-extraction-paths-file-guide.md) voor een uitgebreide uitleg en bewerkingsinstructies.

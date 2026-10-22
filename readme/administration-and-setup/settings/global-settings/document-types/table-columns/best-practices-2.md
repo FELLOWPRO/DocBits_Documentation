@@ -1,4 +1,4 @@
-# Best practices
+# Aanbevolen werkwijzen
 
 ## Behoud de standaardkolommen voor bedragen en hoeveelheden
 

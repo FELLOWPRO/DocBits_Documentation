@@ -1,7 +1,7 @@
 # OCR-instellingen
 
 {% embed url="https://youtu.be/5XqEP-5fq6M" %}
-DocBits OCR & E-Text Explained: Settings, Quality & Header Extraction
+DocBits OCR & E-tekst uitgelegd: instellingen, kwaliteit en koptekstextractie
 {% endembed %}
 
 ## Overzicht

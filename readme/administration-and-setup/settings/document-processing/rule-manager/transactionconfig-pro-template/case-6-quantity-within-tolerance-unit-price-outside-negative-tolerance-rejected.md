@@ -1,39 +1,35 @@
-# Case 6: Quantity Within Tolerance, Unit Price Outside Negative Tolerance (Rejected)
+# Geval 6: Hoeveelheid binnen tolerantie, prijs onder de grens (afgewezen)
 
-## Scenario:
+Het volgende scenario is een voorbeeld van een geconfigureerde mapping en geen aantoonbaar uitgerold standaardsjabloon. De werkelijke uitvoer, bedragen, tekens en documenttypen hangen af van de actieve `conflict_resolution`-regels en -expressies, de exportmapping en de goedkeuringsbesluiten. Elke hieronder beschreven debet- of creditnota is afhankelijk van die configuratie; het voorbeeld garandeert geen automatische uitgifte of wettelijke naleving.
 
-The quantity is within tolerance, but the unit price is below the acceptable range (negative tolerance) and is not approved.
+## Scenario
 
-## Action:
+De hoeveelheid ligt binnen de tolerantie, maar de gefactureerde eenheidsprijs ligt onder het toegestane bereik en de prijsafwijking is niet goedgekeurd.
 
-The system rejects the unit price, adjusts it to match the purchase order, and generates a credit note for the difference. Additional header charges may be applied as necessary.
+## Voorbeeldactie
 
-## Example:
+Een mapping die na afwijzing de PO-prijs gebruikt, zou de hoeveelheid behouden en de gefactureerde eenheidsprijs vervangen door de PO-prijs. Of het verschil leidt tot een correctie, debetnota, creditnota of geen afzonderlijk document, hangt af van de actieve mapping en goedkeuringsbesluiten. Extra kosten op kopniveau gelden alleen als deze expliciet zijn geconfigureerd.
 
-* **Purchase Order (PO):**
-  * Quantity: 100 units
-  * Unit Price: $10.00 per unit
-  * Total Amount: $1,000.00
-* **Invoice Received:**
-  * Quantity: 100 units (within tolerance of 0%)
-  * Unit Price: $9.00 per unit (outside negative tolerance of -10%)
-  * Total Amount: $900.00
-* **Tolerance Levels:**
-  * Quantity Tolerance: ±2%
-  * Unit Price Tolerance: ±1%
+## Voorbeeld
 
-Since the quantity (100 units) is within the acceptable tolerance range but the unit price ($9.00) is below the acceptable tolerance and is not approved, the system will:
+* **Inkooporder (PO):**
+  * Hoeveelheid: 100 eenheden
+  * Eenheidsprijs: $10.00 per eenheid
+  * Totaal: $1,000.00
+* **Ontvangen factuur:**
+  * Hoeveelheid: 100 eenheden — werkelijke afwijking 0%, binnen de geconfigureerde tolerantie van ±2%.
+  * Eenheidsprijs: $9.00 — werkelijke prijsafwijking -10%, buiten de geconfigureerde tolerantie van ±1%; afgewezen.
+  * Totaal: $900.00
+* **Geconfigureerde toleranties:**
+  * Hoeveelheid: ±2%
+  * Eenheidsprijs: ±1%
 
-1. **Reject the Unit Price:** The system does not accept the invoiced unit price of $9.00.
-2. **Adjust the Unit Price:** The system adjusts the unit price to match the original purchase order unit price.
-   * Adjusted Unit Price = $10.00 (from PO)
-3. **Calculate the Corrected Total Amount:** Using the adjusted unit price, the system recalculates the total amount.
-   * **Corrected Total Amount = Quantity × Adjusted Unit Price**
-   * **Corrected Total Amount = 100 units × $10.00 per unit = $1,000.00**
-4. **Generate a Credit Note:** The system generates a credit note for the difference between the incorrect total amount on the invoice and the corrected total amount.
-   * **Credit Note Amount = Original Invoice Total - Corrected Total Amount**
-   * **Credit Note Amount = $900.00 - $1,000.00 = -$100.00**
-   * The credit note will effectively reverse the undercharge.
-5. **Process the Invoice:** The system processes the invoice with the adjusted total amount of $1,000.00 and applies the credit note for $100.00 to account for the undercharged unit price.
+Voor deze voorbeeldmapping:
 
-This approach ensures that the pricing aligns with the purchase order terms, even when an incorrect, lower price is invoiced.
+1. Wijs de gefactureerde eenheidsprijs van $9.00 af, omdat de afwijking buiten de tolerantie valt en niet is goedgekeurd.
+2. Gebruik de PO-eenheidsprijs van $10.00.
+3. Bereken het voorbeeldtotaal opnieuw: **100 eenheden × $10.00 = $1,000.00**.
+4. Bereken het verschil met teken als factuurtotaal min herberekend totaal: **$900.00 - $1,000.00 = -$100.00**.
+5. Pas de geconfigureerde exportmapping en het goedkeuringsbesluit toe. De waarde -$100.00 is een verschil met teken en geen onvoorwaardelijke opdracht om een creditnota uit te geven. De mapping bepaalt bedrag, teken en documenttype van een eventuele correctie.
+
+Dit voorbeeld betekent niet dat een creditnota automatisch een te laag gefactureerd bedrag herstelt. Controleer vóór gebruik van de regel de gewenste boekhoudkundige verwerking in de actieve exportmapping.

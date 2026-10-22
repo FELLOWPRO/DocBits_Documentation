@@ -1,31 +1,31 @@
-# Alternate Export
+# Alternatieve export
 
-## **Step 1: Create a New Export**
+## **Stap 1: een nieuwe export aanmaken**
 
-1. Navigate to **Settings** > **Document Processing** > **Export**.
-2. Click on **Create New Export** to define a new export configuration.
-3. Save the configuration and ensure the export is **disabled**.
+1. Ga naar **Settings** > **Document Processing** > **Export**.
+2. Klik op **Create New Export** om een nieuwe exportconfiguratie te definiëren.
+3. Sla de configuratie op en controleer of de export **uitgeschakeld** is.
 
 <figure><img src="../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
 
-### **Step 2: Enable Alternate Export**
+### **Stap 2: alternatieve export inschakelen**
 
-1. Go to **Settings** > **Global Settings** > **Document Type** > **More Settings**.
-2. Locate the **Alternate Export** setting and toggle it **on**.
-3. Configure the following:
-   * **Document Status**: Specify the status of documents after the alternate export.
-   * **Export Configuration**: Select the newly created export configuration to be used for the alternate export.
+1. Ga naar **Settings** > **Global Settings** > **Document Type** > **More Settings**.
+2. Zoek **Alternate Export** en schakel deze instelling **in**.
+3. Stel het volgende in:
+   * **Document Status**: de status van documenten na de alternatieve export.
+   * **Export Configuration**: de nieuwe exportconfiguratie voor de alternatieve export.
 
 <figure><img src="../../.gitbook/assets/image (369).png" alt=""><figcaption></figcaption></figure>
 
-## Using the Alternate Export
+## Alternatieve export gebruiken
 
-**In the PO-Matching Screen**
+**In het scherm voor inkoopordermatching**
 
-* After enabling the alternate export, you will have the option to select the alternate export directly in the **PO-Matching** screen.
+* Na het inschakelen kunt u de alternatieve export rechtstreeks selecteren in het scherm **PO-Matching**.
 
 <figure><img src="../../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
 
-**With the Workflow Card**
+**Met de workflowkaart**
 
-* The **Alternate Export** workflow card can also be used to automate this process. Configure the card as needed to apply the alternate export logic to your workflow.
+* U kunt het proces ook automatiseren met de workflowkaart **Alternate Export**. Stel de kaart in om de alternatieve exportlogica op uw workflow toe te passen.

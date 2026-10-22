@@ -6,7 +6,7 @@ Globale Snelzoek is een snelstarter via het toetsenbord die pagina's, instelling
 
 Druk op <kbd>Cmd</kbd> + <kbd>K</kbd> op macOS of <kbd>Ctrl</kbd> + <kbd>K</kbd> op Windows en Linux. De sneltoets werkt vanaf elk scherm.
 
-<figure><img src="../../.gitbook/assets/quick-search-modal.png" alt="Globale Snelzoek"><figcaption><p>De Snelzoek opent boven de huidige pagina.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-global-quick-search-nl.png" alt="Globaal zoeken naar pagina’s met resultaten voor de instellingen."><figcaption><p>Globaal zoeken naar pagina’s met resultaten voor de instellingen.</p></figcaption></figure>
 
 ## Zoeken
 

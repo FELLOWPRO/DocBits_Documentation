@@ -1,11 +1,11 @@
-# Key Features of DocBits
+# Belangrijkste functies van DocBits
 
-DocBits is a cloud-based document capture solution that harnesses the power of Artificial Intelligence (AI) and Machine Learning (ML) to effectively recognize, classify, analyze, and extract information from various types of documents, regardless of their format. Here’s a closer look at its key features:
+DocBits is een cloudoplossing voor documentverwerking die kunstmatige intelligentie (AI) en machinelearning (ML) gebruikt om uiteenlopende documenten te herkennen, classificeren en analyseren en er informatie uit te halen, ongeacht het formaat. De belangrijkste functies zijn:
 
-<figure><img src="../../.gitbook/assets/napkin-selection.svg" alt="Key Features of DocBits"><figcaption><p>Key Features of DocBits</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/napkin-selection.svg" alt="Belangrijkste functies van DocBits"><figcaption><p>Belangrijkste functies van DocBits</p></figcaption></figure>
 
-* Document Recognition\_:\_ DocBits employs AI algorithms to accurately identify and recognize documents, whether they are in paper form or electronic files.
-* Document Classification: It classifies documents into relevant categories, facilitating easy organization and retrieval.
-* Data Extraction: DocBits extracts critical data from documents, transforming unstructured information into structured data that can be integrated into your workflow.
-* Machine Learning: The system continually learns and improves its recognition accuracy with each processed document, making it more proficient over time.
-* Swarm Intelligence: DocBits utilizes swarm intelligence to enhance its learning capabilities, creating a self-improving system.
+* Documentherkenning: DocBits gebruikt AI-algoritmen om papieren en elektronische documenten nauwkeurig te identificeren en te herkennen.
+* Documentclassificatie: documenten worden ingedeeld in relevante categorieën, zodat u ze eenvoudig kunt ordenen en terugvinden.
+* Gegevensextractie: DocBits haalt belangrijke gegevens uit documenten en zet ongestructureerde informatie om in gestructureerde gegevens die u in uw workflow kunt gebruiken.
+* Machinelearning: het systeem leert voortdurend en verbetert zijn herkenningsnauwkeurigheid met elk verwerkt document.
+* Zwermintelligentie: DocBits gebruikt zwermintelligentie om het leervermogen te verbeteren en een systeem te creëren dat zichzelf verder ontwikkelt.

@@ -1,25 +1,25 @@
-# Troubleshooting
+# Problemen oplossen
 
-## Troubleshooting common issues
+## Veelvoorkomende problemen oplossen
 
-### Fields do not match the scanned documents:
+### Velden komen niet overeen met de gescande documenten:
 
-* Check the configuration of the fields in the Layout Manager and make sure they match the actual fields in the scanned documents.
-* Check that the positions and dimensions of the fields in the layout are correct and that they cover all relevant information.
+* Controleer de veldconfiguratie in de lay-outbeheerder en zorg dat deze overeenkomt met de velden in de gescande documenten.
+* Controleer of de posities en afmetingen van de velden in de lay-out kloppen en alle relevante informatie omvatten.
 
-### Data is not extracted correctly:
+### Gegevens worden niet correct geëxtraheerd:
 
-* Check the validation rules and format settings for the affected fields to make sure that the expected data can be captured correctly.
-* Make sure that the OCR (Optical Character Recognition) or other data capture technologies are properly configured and calibrated to ensure accurate extraction of the data.
+* Controleer de validatieregels en formaatinstellingen van de betrokken velden, zodat de verwachte gegevens correct kunnen worden vastgelegd.
+* Controleer of OCR (optische tekenherkenning) of andere technieken voor gegevensinvoer correct zijn ingesteld en gekalibreerd om gegevens nauwkeurig te extraheren.
 
-### Faulty data validation:
+### Onjuiste gegevensvalidatie:
 
-* Check the validation rules for fields to make sure they are appropriate and configured correctly.
-* Adjust the validation rules if necessary to ensure that they meet the requirements and formats of the captured data.
+* Controleer of de validatieregels voor de velden geschikt en correct ingesteld zijn.
+* Pas de validatieregels zo nodig aan de vereisten en formaten van de vastgelegde gegevens aan.
 
-### Document layouts are confusing or inefficient:
+### Documentlay-outs zijn onduidelijk of inefficiënt:
 
-* Revise the layout to improve the structure and organization of fields and ensure that important information is easily accessible.
-* Run user testing to get feedback on the usability of the layout and make adjustments to increase efficiency.
+* Herzie de lay-out om velden beter te structureren en te ordenen en belangrijke informatie gemakkelijk toegankelijk te maken.
+* Laat gebruikers de lay-out testen en pas deze op basis van hun feedback aan om de efficiëntie te verhogen.
 
-By applying these best practices and troubleshooting as appropriate, you can create efficient and accurate document layouts that enable smooth data capture and processing.
+Met deze werkwijzen en gerichte probleemoplossing kunt u efficiënte en nauwkeurige documentlay-outs maken die een soepele gegevensinvoer en verwerking ondersteunen.

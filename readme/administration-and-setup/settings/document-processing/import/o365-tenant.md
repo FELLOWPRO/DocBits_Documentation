@@ -23,8 +23,8 @@
 
 6. Selecteer een van de volgende accounttypen afhankelijk van uw behoeften:
 
-* **Accounts in any organizational directory (Any Azure AD directory Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**
-* **Accounts in any organizational directory (Any Azure AD directory Multitenant)**
+* **Accounts in elke organisatiemap (elke Azure AD map Multitenant) en persoonlijke Microsoft-accounts (bijvoorbeeld Skype, Xbox)**
+* **Accounts in elke organisatiemap (elke Azure AD map Multitenant)**
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/o365_tenant_5.png)
 

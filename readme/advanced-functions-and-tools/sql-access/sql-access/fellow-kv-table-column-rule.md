@@ -1,4 +1,4 @@
-# Fellow kv table column rule
+# Kolomregel voor Fellow-KV-tabel
 
 ## Tabel `public.fellow_kv_table_column_rule`
 

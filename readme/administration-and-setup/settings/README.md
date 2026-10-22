@@ -1,6 +1,6 @@
 # Instellingen
 
-<figure><img src="../../.gitbook/assets/settings_overview.png" alt="Overzicht van de instellingen"><figcaption><p>Overzichtspagina van de instellingen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-settings-overview-nl.png" alt="Organisatie-instellingen met afgeschermde identificatiegegevens. Het getoonde land is een ingestelde waarde."><figcaption><p>Organisatie-instellingen met afgeschermde identificatiegegevens. Het getoonde land is een ingestelde waarde.</p></figcaption></figure>
 
 Het gedeelte Instellingen is uw centrale punt voor het configureren van DocBits. Het is ingedeeld in vijf hoofdonderdelen:
 

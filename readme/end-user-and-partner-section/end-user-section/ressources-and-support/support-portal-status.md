@@ -1,4 +1,4 @@
-# Support Portal Status
+# Status van het ondersteuningsportaal
 
 Om je beter inzicht te geven in je verzoeken, hier is wat elke ticketstatus betekent en wanneer je deze zult zien:
 
@@ -8,19 +8,19 @@ Om je beter inzicht te geven in je verzoeken, hier is wat elke ticketstatus bete
   – Je ticket is beoordeeld en in de wachtrij voor actie.
 * **In Progress**\
   – DocBits werkt actief aan je probleem.
-* **Waiting on Customer Response**\
+* **Wachten op reactie van klant**\
   – We hebben meer informatie of verduidelijking van jou nodig. Je zult dit zien wanneer we vragen hebben gesteld of bestanden hebben aangevraagd.
-* **Waiting for Customer Confirmation**\
+* **Wachten op klantbevestiging**\
   – We hebben een oplossing geïmplementeerd of begeleiding gegeven en wachten op jouw bevestiging dat het probleem is opgelost.
-* **Waiting on Product Team**\
+* **Wachten op productteam**\
   – Je verzoek is een functievoorstel of betreft een bekend productprobleem en is geregistreerd voor de roadmap van het Productteam.
 * **Closed – Resolved**\
   – Het probleem is volledig opgelost en bevestigd, of er is geen verdere actie nodig.
-* **Closed – No Response**\
+* **Gesloten – geen reactie**\
   – Na meerdere follow-ups zonder antwoord sluiten we het ticket. Je kunt het altijd opnieuw openen door te reageren.
-* **Closed – Known Issue**\
+* **Gesloten – Bekend probleem**\
   – Dit ticket volgt een bekend productbug dat al op onze backlog staat. Het is hier gesloten, maar blijft zichtbaar in onze interne planning.
-* **Closed – Logged as Idea**\
+* **Gesloten – geregistreerd als idee**\
   – Je suggestie is genoteerd voor toekomstige overweging door ons Productteam.
 * **Duplicate**\
   – We hebben dit ticket samengevoegd met een bestaand ticket dat hetzelfde probleem dekt.

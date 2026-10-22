@@ -25,7 +25,7 @@ Deze functie helpt je bij het beheren en reconciliëren van artikelnummers tusse
 * **Actie:** Opties om de mappings te beheren, zoals het verwijderen van onjuiste mappings.
 
 {% hint style="info" %}
-Zie hier ook de [Beheer Sectie](broken-reference)
+Zie hier ook de [Beheer Sectie](../../../administration-and-setup/settings/README.md)
 {% endhint %}
 
 ### **Voordelen**

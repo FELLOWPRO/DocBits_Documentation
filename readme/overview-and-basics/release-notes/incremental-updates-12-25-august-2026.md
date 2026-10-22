@@ -133,7 +133,7 @@ zichtbaar zijn voor klanten._
   "toegewezen op" blijft de datum van toewijzing. Taak-e-mails worden
   bovendien correct weergegeven in Outlook.
 
-### Workflow Builder
+### Workfloweditor
 
 - Zoekopdracht, sorteervolgorde en paginering in de workflowlijst blijven
   consistent terwijl u filtert.

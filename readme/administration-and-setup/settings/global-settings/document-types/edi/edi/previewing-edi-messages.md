@@ -2,32 +2,32 @@
 hidden: true
 ---
 
-# Previewing EDI Messages
+# EDI-berichten vooraf bekijken
 
-## How to use the preview feature to check the appearance and content of EDI messages before sending them to ensure they meet the partner's requirements.
+## EDI-berichten vóór verzending controleren met de voorbeeldweergave
 
-The preview feature is an extremely useful tool to check the appearance and content of EDI messages before they are actually sent.
+Met de voorbeeldweergave kunt u de weergave en inhoud van EDI-berichten controleren voordat u ze verzendt.
 
-**Here are some steps on how to use the preview feature to ensure that EDI messages meet the partner's requirements:**
+**Stappen om in de voorbeeldweergave te controleren of berichten aan de partnereisen voldoen:**
 
-**Previewing the EDI format:**
+**Het EDI-formaat bekijken:**
 
-* Open the preview feature in your EDI system to get a preview of the generated EDI format. This allows you to check the layout and structure of the message to ensure that it meets the standards and specifications that your business partner expects.
+* Open de voorbeeldweergave in uw EDI-systeem en bekijk het gegenereerde EDI-formaat. Controleer of de lay-out en structuur aan de normen en specificaties van uw zakenpartner voldoen.
 
-**Validating the data content:**
+**De gegevensinhoud valideren:**
 
-* Check the data content in the preview to ensure that all required fields are present and contain correct values. Make sure that data fields are placed in the correct segments and use the correct codes or labels.
+* Controleer of alle vereiste velden aanwezig zijn en correcte waarden bevatten. Ga na of velden in de juiste segmenten staan en de juiste codes of labels gebruiken.
 
-**Identifying formatting errors:**
+**Opmaakfouten herkennen:**
 
-* Ensure that the formatting of the EDI message follows standards, such as proper segment separators, field separators, and decimal separators. Also check the indentation and arrangement of segments to ensure the message is clear and easy to read.
+* Controleer of het EDI-bericht de normen volgt voor onder meer segment-, veld- en decimaalscheidingstekens. Controleer ook de inspringing en ordening van segmenten op duidelijkheid en leesbaarheid.
 
-**Considering partner requirements:**
+**Rekening houden met partnereisen:**
 
-* Consider your business partner's specific requirements regarding the EDI format. This may include using certain segments, elements, or codes that need to be previewed to ensure they are implemented correctly.
+* Houd rekening met specifieke eisen van uw zakenpartner voor het EDI-formaat. Controleer bijvoorbeeld of verplichte segmenten, elementen en codes correct zijn opgenomen.
 
-**Conducting test transactions:**
+**Testtransacties uitvoeren:**
 
-* Use the preview feature to conduct test transactions with your business partner before sending real data. This allows you to identify and resolve potential problems early, before they impact business operations.
+* Gebruik de voorbeeldweergave om samen met uw zakenpartner testtransacties uit te voeren voordat u echte gegevens verzendt. Zo kunt u problemen vroeg herkennen en oplossen voordat zij de bedrijfsvoering raken.
 
-Careful use of the preview feature helps you ensure that your EDI messages meet your business partner's requirements and ensure a smooth exchange of business data.
+Door de voorbeeldweergave zorgvuldig te gebruiken, controleert u of EDI-berichten aan de eisen van uw zakenpartner voldoen en ondersteunt u een soepele gegevensuitwisseling.

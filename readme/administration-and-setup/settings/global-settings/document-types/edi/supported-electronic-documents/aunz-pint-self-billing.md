@@ -30,7 +30,7 @@ AUNZ PINT Self-Billing is de self-billing-variant van het A-NZ Peppol Internatio
 
 ## Standaard voorbeeld
 
-<figure><img src="aunz-pint-preview.png" alt="AUNZ PINT Self-Billing factuur voorbeeld in DocBits"><figcaption><p>Standaard DocBits voorbeeld voor een AUNZ PINT Self-Billing factuur</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="AUNZ PINT Self-Billing factuur voorbeeld in DocBits"><figcaption><p>Standaard DocBits voorbeeld voor een AUNZ PINT Self-Billing factuur</p></figcaption></figure>
 
 ## Veldtoewijzing
 

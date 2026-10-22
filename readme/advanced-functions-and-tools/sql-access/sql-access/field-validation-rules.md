@@ -1,4 +1,4 @@
-# Field validation rules
+# Veldvalidatieregels
 
 ## Kolommen
 

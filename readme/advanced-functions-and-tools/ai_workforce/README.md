@@ -21,7 +21,7 @@ Een typische uitvoering, van begin tot eind: er komt een factuur binnen per e-ma
 AI Workforce wordt per organisatie ingeschakeld via de hoofdinstellingen.
 
 1. Ga naar **Instellingen → Modules**.
-2. Schakel de module **AI Workforce** in.
+2. Schakel de module **AI Personeelsbestand** in.
 3. Bevestig het abonnement in het dialoogvenster dat verschijnt.
 
 Zodra AI Workforce is ingeschakeld, verschijnt **AI Workforce** in de hoofdnavigatiebalk en wordt de werkruimte beschikbaar voor je organisatie.

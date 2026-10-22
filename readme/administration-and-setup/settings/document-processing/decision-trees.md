@@ -19,7 +19,7 @@ Beslissingsbomen zijn een krachtige functie die het geautomatiseerd routeren en 
 
 De lijst met beslissingsbomen toont alle geconfigureerde beslissingsbomen. Open deze via **Settings → Document Processing → Decision Trees**.
 
-<figure><img src="../../../.gitbook/assets/decision_trees.png" alt="Lijst met beslissingsbomen"><figcaption><p>De lijst met beslissingsbomen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-decision-trees-nl.png" alt="Lijst met beslisbomen; namen en organisatiegegevens zijn afgeschermd. De verborgen rijen betekenen niet dat de lijst leeg is."><figcaption><p>Lijst met beslisbomen; namen en organisatiegegevens zijn afgeschermd. De verborgen rijen betekenen niet dat de lijst leeg is.</p></figcaption></figure>
 
 Elke vermelding toont:
 

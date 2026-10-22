@@ -1,4 +1,4 @@
-# FTP Import Configurations
+# Configuraties voor FTP-import
 
 ## Kolommen
 

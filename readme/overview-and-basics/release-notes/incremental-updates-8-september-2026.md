@@ -2,7 +2,7 @@
 
 > Purchase order matching: wat is er veranderd met de hotfixes die op 8 september 2026 zijn uitgerold. Het onderstaande gedrag is live op de ontwikkelomgeving en bereikt stage, sandbox en productie met de volgende upgrades.
 
-## Purchase order matching
+## Inkooporders matchen
 
 - **De match blijft behouden na opslaan.** Een purchase order match die een transformatieregel vroeger stilzwijgend liet vallen bij elke opslag (regels die de regelitems herbouwen) wordt nu behouden zolang de regel dezelfde regels produceert. Wanneer een regel daadwerkelijk de gematchte regels vervangt, registreert het document de regel en noemt het scherm deze.
 - **Matching wordt opnieuw uitgevoerd bij opslaan.** Wanneer het purchase order nummer op het document verandert — of wanneer masterdata het invulde na verwerking en er nog geen matching run heeft gezocht — matcht de opslag het document direct. Een bestaande match wordt nooit overschreven door een opslag.

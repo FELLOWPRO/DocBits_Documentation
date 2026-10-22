@@ -1,60 +1,60 @@
-# Suppliers and Purchase Orders
+# Leveranciers en inkooporders
 
-## **Connection Point**
+## **Verbindingspunt**
 
-You will need to create the DocBits API connection point in order to create the data flow later.
+U moet het verbindingspunt DocBits API maken om de gegevensstroom later te kunnen maken.
 
-In InforOS, navigate to ION Desk → Connect → Connection Points
+Navigeer in InforOS naar ION Desk → Verbinden → Verbindingspunten
 
 ![](https://lh7-us.googleusercontent.com/ySRjNzMXFzwSOYKx9hnlKLPHPuXpmfTvRADBfV6cpT8ajiEUbS4oXpd9InhXG09mHLakhqBTJMH4yQJNG5z9RXmbAjh8YbuGhxnXSeooIH_r3RAGOvJE6Ok67ST_272zFfhB_TTFYg3b-NwFq0CAv2o)
 
-Once here, you will need to create a new connection point.
+Eenmaal hier moet u een nieuw verbindingspunt maken.
 
 ![](https://lh7-us.googleusercontent.com/ZDv-F3iayFqnsvVLlAE1kr0NNncsvuYtzcE_WQj-0ONoE7McRl-f6_DDH9ErQ0KLspZFFJ43t5EfnPBJjVg25YISMEQ--X4MmK6SVWzB60-Fq6mtwdhiOBwSnL-8vASXsto9iab0dnve6eeG8yuqNoI)
 
 **Select API**
 
-Give the connection point a name and description that describes its nature and its environment. Under the Connection tab, import the service account you created for the environment you are working with.
+Geef het verbindingspunt een naam en beschrijving die de aard en omgeving beschrijft. Importeer op het tabblad Verbinding het serviceaccount dat u hebt gemaakt voor de omgeving waarmee u werkt.
 
 ![](https://lh7-us.googleusercontent.com/UCuGTwKARn3auhYdDDUbQ78Ok3qBNE1KpGEMealfPvgRju4VRLn2AfKaL5tLDcAh00poLHNQU-Q6koBhG5RdxK4CJrrL6Qeb4D52qnhw3aG1LZniuzHRXwOyzGcJvRnQtLGbp6PIseXvWxHlk-AMlz0)
 
-Next, switch to the Documents tab. You will need to add the following BODs to the connection point, not all are necessary for the supplier and purchase order master data but will be useful when other features such as Auto Accounting need to be implemented.
+Ga vervolgens naar het tabblad Documenten. U moet de volgende BOD's aan het verbindingspunt toevoegen. Deze zijn niet allemaal nodig voor de stamgegevens van de leverancier en de inkooporder, maar zijn wel handig wanneer andere functies, zoals automatische boekhouding, moeten worden geïmplementeerd.
 
 ![](https://lh7-us.googleusercontent.com/25Hizkx23i1c8-QHSrE7mPAH7zW6ux9iHTcP8_l6EJJy548CvuNPF1R86Fuqx5iYZP9HF-Z4G6hntkaUtlOMetHIzAVZyBM6VIQ-vsvy6P5YBuAj4yscdJe8ySOHwIRQwFpShRiFGC83v467LLBaXq8)
 
-For now we will only focus on the necessary BODs, these being: Sync.RemitToPartyMasterData, Sync.SupplierPartyMaster and Sync.PurchaseOrder.
+Voorlopig concentreren we ons alleen op de noodzakelijke BOD's, namelijk: Sync.RemitToPartyMasterData, Sync.SupplierPartyMaster en Sync.PurchaseOrder.
 
-* Sync.RemitToPartyMasterData and Sync.SupplierPartyMaster
+* Sync.RemitToPartyMasterData en Sync.SupplierPartyMaster
 
-The configuration for these two BODs should look similar to the following (API Call Name changing for each)
+De configuratie voor deze twee BOD's zou er ongeveer als volgt uit moeten zien (API Oproepnaam verandert voor elk)
 
 ![](https://lh7-us.googleusercontent.com/1SeyL73b7K9vxkTzKk-pumRleoY1sx9MVwgEBMZ-oUf6GXG2C7fKIRMbnhWHHhIQhUDBS3oKQidrQIN08FZ_7eKEt1Yp0cRqnsDlv1R5ShdZdNKmaXmU_19DAVtiT3U0m2qm4cBOj9FcnT0eyawfJXk)
 
 * Sync.PurchaseOrder
 
-The configuration for this BOD should look similar to the following
+De configuratie voor deze BOD zou er ongeveer als volgt uit moeten zien
 
 ![](https://lh7-us.googleusercontent.com/ljXpQxwepI3u6kcITZfACV9yYL1ZZZtBbWimkXW6aWFTI-yd7Gajrxw2pwxdcF1Xv3KoGDalq72yXvaipjQ-OmbcTzJ0PUUKnmE0pBa5pASEPg0amqKSbU82ZDOKr5alWXynAd53IM2i9HgZ1CsYIB4)
 
-Once these BODs are configured, you can save the connection point by pressing the icon located right to the back button.
+Zodra deze BOD's zijn geconfigureerd, kunt u het verbindingspunt opslaan door op het pictogram rechts naast de terugknop te drukken.
 
-## **Data Flow**
+## **Gegevensstroom**
 
-The data flow will look similar to the following
+De gegevensstroom ziet er ongeveer als volgt uit
 
 ![](https://lh7-us.googleusercontent.com/BtszuCXPwv-WYCGtnd_beU9t0uNntEu6U2iCSstxu1GAziuCfFafQdy2LKZkYw4kbQVfzI5lBYYajOeNwXkn84xy7AXWlCFX4GLo6dukWtfkFPMsXaPga0EkbnrI0bHSKqezXsvYJKymemZYDySIfA8)
 
-(The reason for multiple DocBits APIs is due to each connection representing a different environment meaning, depending on the amount of environments you have, your data flow could differ slightly)
+(De reden voor meerdere DocBits API's is te wijten aan het feit dat elke verbinding een andere omgeving vertegenwoordigt, wat betekent dat uw gegevensstroom enigszins kan verschillen, afhankelijk van het aantal omgevingen dat u heeft)
 
-For the purpose of this explanation we will use the example of having four separate environments.
+Voor het doel van deze uitleg zullen we het voorbeeld gebruiken van vier afzonderlijke omgevingen.
 
 ### **M3**
 
-The start of the data flow consists of your M3 application
+Het begin van de datastroom bestaat uit uw M3 applicatie
 
 ### **Filter**
 
-Configuration of the filter looks as follows
+De configuratie van het filter ziet er als volgt uit
 
 ![](https://lh7-us.googleusercontent.com/-rMMaL3ToAoxqMFXybclIcd61H4S25HI90xnHANGl3J7ldZ374_T2V0q__QSwuNSuXfu829G7kYRCfVslx-l9b1j5LAVKonCQqO3aK2FuWNwmtyvytAF6PaIv8jiEJhhxSwU47eKEo1ozbzyndSW7BY)
 
@@ -62,27 +62,27 @@ Configuration of the filter looks as follows
 
 ![](https://lh7-us.googleusercontent.com/saiZJD9diyo2JC-XV0vYCboPZJP-87zDH7LIGuBNMNzhL5alDZkShpCARfYd21oroC8eYBfYdckJiONty9IuOc7zHkIIlUWNqoxnPfygEc1R1Tnjt1KPZpSTr7-RLaa5lqS3_2DPj96aV0vLdZk2tzw)
 
-(The accounting entity ID of course being unique to your organization)
+(De boekhoudkundige entiteits-ID is uiteraard uniek voor uw organisatie)
 
-### **DocBits API**
+### **DocBits-API**
 
-Here you will add an application and select the DocBits API(s) you created earlier
+Hier voegt u een applicatie toe en selecteert u de DocBits API(s) die u eerder hebt gemaakt
 
-### **Files**
+### **Bestanden**
 
-The configuration should look as follows
+De configuratie zou er als volgt uit moeten zien
 
 ![](https://lh7-us.googleusercontent.com/GLI8kFjQHePMo4ZBWIR1WPNAhkvmtG0BfYADpdlmNqEFMYJclMInVYmKPdaElPLyPR5qtkWOKTnqDFXMDV2pML3igNOFyFj3R9fj2XHRAs6-Rl3KWz4a8-ednk15wyLDJUziAR6ZT4GjuZO2ANw1ymY)
 
-## **M3 BOD Triggering**
+## **BOD’s activeren in M3**
 
-Navigate to the Infor M3 application
+Navigeer naar de toepassing Infor M3
 
-Once at the main menu, type Command + R to open the command prompt search box. Then type evs006 and search.
+Eenmaal in het hoofdmenu typt u Command + R om het zoekvak van de opdrachtprompt te openen. Typ vervolgens evs006 en zoek.
 
 ![](https://lh7-us.googleusercontent.com/Vn2WD1-8RuDURsYmzrTARO4mBafwhBUvDImM3z2Nd_hDnVRWjbHgOoplV8QhBC9QtslnWqZyJNIhudvGFGaEl5S-qgloKn0rpwQsF0EuVnrzVplg1urqvSQ9fNa5Qetx8TwLuxZzL3N7wHz9kX4xr_o)
 
-Once on this page, you will need to add the SupplierPartyMaster, RemitToPartyMaster and PurchaseOrder to the list.
+Eenmaal op deze pagina moet u de SupplierPartyMaster, RemitToPartyMaster en PurchaseOrder aan de lijst toevoegen.
 
 BOD noun: SupplierPartyMaster
 
@@ -96,18 +96,18 @@ BOD noun: PurchaseOrder
 
 Table: MPHEAD
 
-For each case you will need to press the plus icon to add them to list.
+Voor elk geval moet u op het pluspictogram drukken om ze aan de lijst toe te voegen.
 
 ![](https://lh7-us.googleusercontent.com/3y5xAtk4nSc5Eqk-vOJLL59jQHc1w-Fmtn0PIjSiBWTeOo974zg4UjjrK890MjfnsU1a4UtiSqtwcNlHmr6el6GRBd8GrSN_ZlPk3W_IQIVcppHOYwnAzHEgRF22JmeRRkJSHotXvd3k_94_pYjt6Uw)
 
-After you have added each of the BODs, right click on the BOD noun of the BOD and select Related → Run
+Nadat u elk van de BOD's hebt toegevoegd, klikt u met de rechtermuisknop op het zelfstandig naamwoord BOD van de BOD en selecteert u Gerelateerd → Uitvoeren
 
 ![](https://lh7-us.googleusercontent.com/HjkKvk7khjPgpjXmfyTyOLE2vNeB2qt2oN9ShOmrQiYhhvokRlBaZ0rlPtbwWUld54EhUJZLK0OVNGH_eIYzFj22XgFHZccEM9g2nVQ_5BgouHYoMfzfWYQVwluSdcednqrjilSByCdt44ytHgfCNyo)
 
-You will be taken to the following menu, where you will need to change BOD verb to Sync and then press NEXT to trigger the BODs.
+U wordt naar het volgende menu gebracht, waar u het werkwoord BOD moet wijzigen in Sync en vervolgens op NEXT moet drukken om de BOD's te activeren.
 
 ![](https://lh7-us.googleusercontent.com/FoJTP89zGI0FwRTyLjkIKfW75MbCrvcvqD_ka--G1SFdzIhBAp7dq63_WKMIEC-ouCHWA7sRd25rWfWclZJmWd7SGIZLwnSQ4id3nq82hOuFV9-mzMHAtGlhfCKtYwcQnrLyMSsrTmKNyME7lpYSeNA)
 
-Once you trigger the BODs, you will get a notification confirming this.
+Zodra u de BOD's activeert, ontvangt u een melding waarin dit wordt bevestigd.
 
-If done successfully, the Supplier and Purchase Order tables should now be available under Settings → Master Data Lookup.
+Als dit succesvol is gedaan, zouden de leveranciers- en inkoopordertabellen nu beschikbaar moeten zijn onder Instellingen → Mastergegevens opzoeken.

@@ -1,26 +1,26 @@
-# Purchase Invoice - 2nd Approval Quantity
+# Inkoopfactuur: tweede goedkeuring van hoeveelheid
 
-<figure><img src="../../../../.gitbook/assets/docbits_rule_purchase_invoice_quantity.png" alt="DocBits Regel Aankoop Factuur Quantity"><figcaption></figcaption></figure>
 
-This title indicates that the rule pertains specifically to handling purchase invoices during a secondary approval phase, with a focus on verifying the accuracy of the quantities listed.
 
-#### Rule Configuration:
+Deze regel behandelt inkoopfacturen tijdens een tweede goedkeuringsfase en richt zich op de juistheid van de vermelde aantallen.
 
-1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is activated only for documents classified as invoices. This is essential for maintaining specificity and relevance in the workflow.
-2. **And…**
-   * **Document Status is Pending Second Approval**: This specifies that the invoice is currently pending a second approval. This stage is typically intended to provide additional oversight before finalizing the invoice.
-   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: This condition further refines the rule to apply exclusively to invoices identified as "Purchase Invoices." This categorization helps differentiate them from other invoice types.
-   * **Logic Quantity in order confirmation Not Equals purchase order**: This critical condition checks whether the quantity stated in the order confirmation matches the quantity on the original purchase order. The action is triggered if there is a discrepancy, indicating a potential error or issue that needs resolution.
+#### Regelconfiguratie:
 
-#### Action (Then…):
+1. **Wanneer…**
+   * **Document Type is Invoice**: de regel wordt alleen geactiveerd voor documenten die als factuur zijn geclassificeerd.
+2. **En…**
+   * **Document Status is Pending Second Approval**: de factuur wacht op een tweede goedkeuring, bedoeld als extra controle vóór de definitieve verwerking.
+   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: beperkt de regel tot facturen van het subtype "Purchase Invoice".
+   * **Logic Quantity in order confirmation Not Equals purchase order**: vergelijkt het aantal in de orderbevestiging met het aantal op de oorspronkelijke inkooporder. Een verschil activeert de actie, zodat een mogelijke fout kan worden onderzocht.
 
-* **Assign user from field Buyer Name, use user User as fallback**: If the rule's conditions are met (i.e., there's a discrepancy in quantities), the invoice is automatically assigned to the person listed in the 'Buyer Name' field for further review. If this field is empty or the specified person is unavailable, a default user (likely an administrator or another designated staff member) takes over to ensure timely review and resolution.
+#### Actie (dan…):
 
-#### Purpose of This Rule:
+* **Assign user from field Buyer Name, use user User as fallback**: bij een verschil in aantallen wordt de factuur ter controle toegewezen aan de persoon uit het veld Buyer Name. Is dit veld leeg of is de persoon niet beschikbaar, dan wordt de ingestelde gebruiker User als terugvaloptie gebruikt.
 
-* **Accuracy and Compliance**: The rule is vital for ensuring that the invoicing process is accurate and aligns with the terms agreed upon in the purchase order. It helps prevent financial discrepancies and potential inventory errors.
-* **Streamlined Approvals**: Automating the review process for specific discrepancies helps streamline approvals and ensures that any issues are quickly addressed by the appropriate personnel.
-* **Enhanced Financial Oversight**: Requiring a secondary approval for quantity verifications strengthens financial controls and accountability within the organization.
+#### Doel van deze regel:
 
-This setup exemplifies how workflow automation can be utilized to enhance operational efficiency and ensure financial integrity, particularly in managing complex purchase processes within a company.
+* **Nauwkeurigheid en naleving**: de regel helpt facturatie af te stemmen op de afspraken in de inkooporder en financiële verschillen en voorraadfouten te voorkomen.
+* **Snellere goedkeuring**: automatische toewijzing bij specifieke afwijkingen zorgt dat de juiste medewerker problemen snel kan beoordelen.
+* **Sterkere financiële controle**: een tweede goedkeuring voor de controle van aantallen versterkt het toezicht en de verantwoording binnen de organisatie.
+
+Dit voorbeeld laat zien hoe workflowautomatisering de efficiëntie en financiële betrouwbaarheid kan verbeteren bij complexe inkoopprocessen.

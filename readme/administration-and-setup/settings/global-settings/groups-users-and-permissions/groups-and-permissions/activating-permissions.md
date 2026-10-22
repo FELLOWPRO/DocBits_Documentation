@@ -1,7 +1,7 @@
 # Machtigingen activeren
 
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
-DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
+DocBits Zelfstudie Groepen en machtigingen: gebruikersrollen en toegangsrechten instellen en uw werkruimte beveiligen
 {% endembed %}
 
 Het in- of uitschakelen van het machtigingssysteem met de schakelaar heeft verschillende effecten op de functionaliteit in DocBits.
@@ -16,7 +16,7 @@ Het in- of uitschakelen van het machtigingssysteem met de schakelaar heeft versc
 
 <figure><img src="../../../../../.gitbook/assets/prior-u004-nl.png" alt="Rechtenmatrix per documenttype en actie. De toegangsniveaus Owner, Everyone en No Access blijven Engelstalig."><figcaption><p>Rechtenmatrix per documenttype en actie. De toegangsniveaus Owner, Everyone en No Access blijven Engelstalig.</p></figcaption></figure>
 
-## Only Assigned Documents
+## Alleen toegewezen documenten
 
 <figure><img src="../../../../../.gitbook/assets/prior-u008-nl.png" alt="Toegangsniveaus per actie in de rechtenmatrix. De toegangsniveaus Owner, Everyone en No Access blijven Engelstalig."><figcaption><p>Toegangsniveaus per actie in de rechtenmatrix. De toegangsniveaus Owner, Everyone en No Access blijven Engelstalig.</p></figcaption></figure>
 

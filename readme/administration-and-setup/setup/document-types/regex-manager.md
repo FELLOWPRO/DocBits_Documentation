@@ -1,4 +1,4 @@
-# Regex Manager
+# Beheer van reguliere expressies
 
 Deze functie van DocBits biedt u een alternatief voor modelclassificatie: u kunt er doorzoekbare reguliere expressies voor een documenttype mee schrijven, voor classificatie en andere doeleinden.
 

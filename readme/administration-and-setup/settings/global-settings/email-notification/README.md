@@ -1,7 +1,7 @@
-# Email Notification
+# E-mailmelding
 
 {% embed url="https://youtu.be/MZoDMibM-7E" %}
-DocBits Tasks & Notifications Tutorial: Assign Work, Track Status & Handle Workflow Tasks
+DocBits Tutorial voor taken en meldingen: werk toewijzen, status volgen en workflowtaken afhandelen
 {% endembed %}
 
 <figure><img src="../../../../.gitbook/assets/docbits_email_notifications_header.png" alt="Docbits Email Notifications Header"><figcaption></figcaption></figure>

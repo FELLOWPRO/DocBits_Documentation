@@ -1,37 +1,39 @@
-# Best practices
+# Aanbevolen werkwijzen
 
-## Best practices for continuous model training, such as training frequency, selecting sample documents, and monitoring model performance metrics.
+**Toepassing van deze richtlijnen:** dit zijn algemene aanbevelingen voor machinelearning. Beschikbare trainingsopties hangen af van de gebruikte DocBits-versie, configuratie en ondersteunde API of editor. Verwijzingen naar hyperparameters, modelarchitectuur, versleuteling of automatisering betekenen niet dat hiervoor in elke installatie een instelbare gebruikersinterface bestaat.
 
-**Here are some best practices for continuous model training:**
+## Voortdurende modeltraining: frequentie, voorbeeldselectie en prestatiebewaking
 
-**Perform regular training:**
+**Aanbevolen werkwijzen voor voortdurende modeltraining:**
 
-* Perform regular training cycles to ensure your model is up to date and adapts to changes in data and requirements.
-* The frequency of training can vary depending on the type of data and training progress, but it is important to train regularly to maintain model performance.
+**Regelmatig trainen:**
 
-**Use updated sample documents:**
+* Voer regelmatige trainingsrondes uit, zodat uw model actueel blijft en zich aanpast aan veranderingen in gegevens en vereisten.
+* De trainingsfrequentie kan afhangen van het gegevenstype en de voortgang, maar regelmatig trainen is belangrijk om de prestaties op peil te houden.
 
-* Use recent sample documents that are representative of the data your model will face.
-* This may include adding new documents, removing outdated documents, or editing metadata to ensure the training data is current and relevant.
+**Actuele voorbeelddocumenten gebruiken:**
 
-**Select diverse samples:**
+* Gebruik recente voorbeelddocumenten die representatief zijn voor de gegevens die uw model zal verwerken.
+* Voeg bijvoorbeeld nieuwe documenten toe, verwijder verouderde documenten of werk metadata bij, zodat trainingsgegevens actueel en relevant blijven.
 
-* Make sure your training data covers a wide variety of scenarios and use cases to ensure the model is robust and versatile.
-* Consider different variations in layouts, languages, formats, and content to ensure the model works well in different situations.
+**Uiteenlopende voorbeelden selecteren:**
 
-**Monitor model performance:**
+* Dek met uw trainingsgegevens uiteenlopende scenario's en toepassingen af, zodat het model robuust en veelzijdig is.
+* Houd rekening met variaties in lay-outs, talen, formaten en inhoud om het model in verschillende situaties goed te laten werken.
 
-* Regularly monitor the performance of the model using relevant metrics such as accuracy, precision, and recall.
-* Analyze the results of classification tests and validation checks to identify weak points and spot opportunities for improvement.
+**Modelprestaties bewaken:**
 
-**Incorporate continuous feedback:**
+* Controleer regelmatig de modelprestaties met relevante maten zoals accuracy, precision en recall.
+* Analyseer classificatietests en validatiecontroles om zwakke punten en verbeterkansen te vinden.
 
-* Incorporate feedback from users and experts to continuously improve the model.
-* Collect feedback on misclassifications or inadequate results and use this information to adjust and optimize the model.
+**Doorlopend feedback verwerken:**
 
-**Automate the training process:**
+* Gebruik feedback van gebruikers en deskundigen om het model voortdurend te verbeteren.
+* Verzamel feedback over onjuiste classificaties of onvoldoende resultaten en gebruik deze om het model aan te passen en te optimaliseren.
 
-* Automate the training process to increase efficiency and minimize human error.
-* Use tools and scripts to automatically perform model training, evaluation, and updating when new data is available or changes are required.
+**Het trainingsproces automatiseren:**
 
-By implementing these best practices for continuous model training, you can ensure that your model is constantly improving and achieving optimal performance to meet the needs of your use case.
+* Automatiseer het trainingsproces om de efficiëntie te verhogen en menselijke fouten te beperken.
+* Gebruik tools en scripts om training, beoordeling en updates automatisch uit te voeren wanneer nieuwe gegevens beschikbaar zijn of wijzigingen nodig zijn.
+
+Met deze werkwijzen kan uw model zich blijven verbeteren en optimaal presteren voor uw toepassing.

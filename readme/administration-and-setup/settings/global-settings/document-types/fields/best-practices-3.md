@@ -1,30 +1,30 @@
-# Best practices
+# Aanbevolen werkwijzen
 
-## Here are best practices for field configuration in a document processing system, emphasizing the importance of understanding the document workflow and data requirements.
+## Aanbevolen veldconfiguratie op basis van de documentworkflow en gegevensvereisten
 
-### **Understanding the document workflow:**
+### **De documentworkflow begrijpen:**
 
-* Analyze your document workflow thoroughly to identify the different phases and steps a document goes through, from capture to processing to storage or release.
-* Identify the specific data that needs to be captured, reviewed, processed, or extracted at each step of the workflow.
+* Analyseer de documentworkflow grondig en bepaal welke fasen en stappen een document doorloopt, van invoer en verwerking tot opslag of vrijgave.
+* Bepaal welke gegevens bij elke stap moeten worden vastgelegd, gecontroleerd, verwerkt of geëxtraheerd.
 
-### **Identify key data points:**
+### **Belangrijke gegevens bepalen:**
 
-* Determine the key data that is critical to your business process or analysis.
-* Prioritize fields according to their importance to the business process or analysis to ensure they are captured and processed correctly.
+* Bepaal welke gegevens essentieel zijn voor uw bedrijfsproces of analyse.
+* Geef velden prioriteit op basis van hun belang voor het bedrijfsproces of de analyse, zodat deze gegevens correct worden vastgelegd en verwerkt.
 
-### **Match fields to data requirements:**
+### **Velden afstemmen op gegevensvereisten:**
 
-* Match field properties to specific data requirements, including their type (text, date, numeric, etc.), validation rules, and any required properties such as required or read-only.
-* Also consider security requirements, privacy regulations, and legal requirements when configuring field properties.
+* Stem veldeigenschappen af op de gegevensvereisten, waaronder het type (tekst, datum, getal enzovoort), validatieregels en eigenschappen zoals verplicht of alleen-lezen.
+* Houd bij het instellen van veldeigenschappen ook rekening met beveiliging, privacyregels en wettelijke vereisten.
 
-### **Consider flexibility and extensibility:**
+### **Rekening houden met flexibiliteit en uitbreidbaarheid:**
 
-* Design the fields to be flexible and extensible to accommodate future customizations or changes in document workflow or data requirements.
-* Make sure the configuration of the fields allows new data points or changed requirements to be easily and efficiently incorporated.
+* Ontwerp velden flexibel en uitbreidbaar, zodat toekomstige wijzigingen in de documentworkflow of gegevensvereisten mogelijk blijven.
+* Zorg dat nieuwe gegevens en gewijzigde vereisten eenvoudig en efficiënt in de veldconfiguratie kunnen worden opgenomen.
 
-### **Test and validate:**
+### **Testen en valideren:**
 
-* Perform extensive testing to ensure that the configured fields work correctly and produce the expected results.
-* Validate the field configuration by processing a large number of documents and verifying that the data captured meets the requirements.
+* Test uitgebreid of de ingestelde velden correct werken en de verwachte resultaten opleveren.
+* Valideer de veldconfiguratie door veel documenten te verwerken en te controleren of de vastgelegde gegevens aan de eisen voldoen.
 
-By understanding the document workflow and data requirements and applying best practices in field configuration, you can ensure that your document processing system functions efficiently and accurately. This will help improve the quality of your data, optimize workflow, and increase the overall performance of your business.
+Door de documentworkflow en gegevensvereisten te begrijpen en deze werkwijzen toe te passen, kan uw documentverwerkingssysteem efficiënt en nauwkeurig functioneren. Dit verbetert de gegevenskwaliteit, de workflow en de algehele bedrijfsprestaties.

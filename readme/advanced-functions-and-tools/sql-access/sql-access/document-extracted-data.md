@@ -1,4 +1,4 @@
-# Document extracted data
+# Geëxtraheerde documentgegevens
 
 ## Kolommen
 

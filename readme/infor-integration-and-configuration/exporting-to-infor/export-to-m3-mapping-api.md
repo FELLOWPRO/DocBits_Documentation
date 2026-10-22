@@ -1,163 +1,163 @@
-# Export to M3 Mapping (API)
+# Exportmapping naar M3 (API)
 
-### Sections
+### Secties
 
-M3 export mapping file is divided in 5 sections and each section is further divided into 2 sections
+Het M3-exportmappingbestand bestaat uit vijf secties die elk in twee onderdelen zijn verdeeld.
 
-* Header
-  * Header Static Fields
-  * Header Fields
-* Tax Lines
-  * Tax Line Static Fields
-  * Tax Line Fields
-* Receipt Lines
-  * Receipt Line Static Fields
-  * Receipt Line Fields
-* Order Charge Lines (Additional Amounts)
-  * Order Charge Static Fields
-  * Order Charge Fields
-* Cost Lines
-  * Cost Line Static Fields
-  * Cost Line Fields
+* Kop
+  * Statische kopvelden
+  * Kopvelden
+* Belastingregels
+  * Statische belastingregelvelden
+  * Belastingregelvelden
+* Ontvangstregels
+  * Statische ontvangstregelvelden
+  * Ontvangstregelvelden
+* Orderkostenregels (aanvullende bedragen)
+  * Statische orderkostenvelden
+  * Orderkostenvelden
+* Kostenregels
+  * Statische kostenregelvelden
+  * Kostenregelvelden
 
-### Adding and Removing Fields
+### Velden toevoegen en verwijderen
 
-Adding New Field:
+Een nieuw veld toevoegen:
 
-* First we need to add the **M3 api field name** to the relevant section’s fields list property (e.g. StaticFields, HeaderFields, InvoiceTaxFields)
-* Define the static value or document field name for the api field with appropriate prefix for the section
-  * Example 1: To define a static value of **AAA** for the M3 api field **DIVI.** First we added DIVI to **StaticFields** property. Then we add a line **SF\_DIVI = AAA** as SF\_ is the prefix for static fields
-  * Example2: To map header field **IVDT (invoice data)** to invoice\_date field of DocBits. First we add IVDT to **HeaderFields** property. Then we add a line HF\_IVDT = invoice\_date as HF\_ is the prefix for header fields
+* Voeg eerst de **M3-API-veldnaam** toe aan de veldenlijst van de juiste sectie, bijvoorbeeld StaticFields, HeaderFields of InvoiceTaxFields.
+* Definieer de statische waarde of documentveldnaam voor het API-veld met het juiste voorvoegsel voor de sectie.
+  * Voorbeeld 1: om de statische waarde **AAA** aan M3-API-veld **DIVI** toe te kennen, voegen we DIVI toe aan **StaticFields**. Vervolgens voegen we **SF\_DIVI = AAA** toe, omdat SF\_ het voorvoegsel voor statische velden is.
+  * Voorbeeld 2: om kopveld **IVDT (factuurdatum)** aan invoice\_date in DocBits te koppelen, voegen we IVDT toe aan **HeaderFields**. Vervolgens voegen we HF\_IVDT = invoice\_date toe, omdat HF\_ het voorvoegsel voor kopvelden is.
 
-Removing Field:
+Een veld verwijderen:
 
-* Just remove the field from section’s field list property and remove the line defining value for the field.
+* Verwijder het veld uit de veldenlijst van de sectie en verwijder de regel die de waarde definieert.
 
-#### **Available M3 Api Fields:**
+#### **Beschikbare M3-API-velden:**
 
-* Available M3 fields can be checked by opening appropriate screen in M3.
+* Open het bijbehorende scherm in M3 om de beschikbare velden te bekijken.
 
-<figure><img src="../../../.gitbook/assets/m3_export_mapping_screen.png" alt="M3 Exporteren Toewijzing Scherm"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/m3_export_mapping_field_names.png" alt="M3 Exporteren Toewijzing Field Names"><figcaption></figcaption></figure>
 
-* Similarly you can get field names for lines
 
-### Header:
 
-<figure><img src="../../../.gitbook/assets/m3_export_mapping_header.png" alt="M3 Exporteren Toewijzing Koptekst"><figcaption></figcaption></figure>
+* Op dezelfde manier kunt u de veldnamen voor regels vinden.
 
-Fields List Property: StaticFields
+### Kop:
 
-Section Fields Prefix: SF\_
 
-Available Fields: You can map any M3 api field with any static value
 
-#### **Header Fields**
+Eigenschap van de veldenlijst: StaticFields
 
-Fields List Property: HeaderFields
+Voorvoegsel voor sectievelden: SF\_
 
-Section Fields Prefix: HF\_
+Beschikbare velden: u kunt elk M3-API-veld aan een statische waarde koppelen.
 
-Available Fields: You can map any DocBits field to any M3 api field
+#### **Kopvelden**
 
-### Tax Line:
+Eigenschap van de veldenlijst: HeaderFields
 
-#### Tax Line Static Fields:
+Voorvoegsel voor sectievelden: HF\_
 
-Fields List Property: InvoiceTaxStaticFields
+Beschikbare velden: u kunt elk DocBits-veld aan een M3-API-veld koppelen.
 
-Section Fields Prefix: IT\_SF\_
+### Belastingregel:
 
-Available M3 Fields: Please check M3 API or UI
+#### Statische belastingregelvelden:
 
-Available DocBits Fields: You can put any value as they are static fields
+Eigenschap van de veldenlijst: InvoiceTaxStaticFields
 
-#### Tax Line Fields:
+Voorvoegsel voor sectievelden: IT\_SF\_
 
-Fields List Property: InvoiceTaxFields
+Beschikbare M3-velden: raadpleeg de M3-API of gebruikersinterface.
 
-M3 Fields Prefix: ITF\_
+Beschikbare DocBits-velden: voor deze statische velden kunt u een vaste waarde invoeren.
 
-DocBits Table Field Prefix: TF\_
+#### Belastingregelvelden:
 
-Available M3 Fields: Please check M3 API or UI
+Eigenschap van de veldenlijst: InvoiceTaxFields
 
-Available DocBits Fields: line\_number, tax\_amount, tax\_rate, net\_amount, gross\_amount, tax\_code\_full, tax\_code, tax\_country
+Voorvoegsel voor M3-velden: ITF\_
 
-### Receipt Line:
+Voorvoegsel voor DocBits-tabelvelden: TF\_
 
-#### Receipt Line Static Fields:
+Beschikbare M3-velden: raadpleeg de M3-API of gebruikersinterface.
 
-Fields List Property: InvoiceReceiptStaticFields
+Beschikbare DocBits-velden: line\_number, tax\_amount, tax\_rate, net\_amount, gross\_amount, tax\_code\_full, tax\_code, tax\_country
 
-Section Fields Prefix: IR\_SF\_
+### Ontvangstregel:
 
-Available M3 Fields: Please check M3 API or UI
+#### Statische ontvangstregelvelden:
 
-Available DocBits Fields: You can put any value as they are static fields
+Eigenschap van de veldenlijst: InvoiceReceiptStaticFields
 
-#### Receipt Line Fields:
+Voorvoegsel voor sectievelden: IR\_SF\_
 
-Fields List Property: InvoiceReceiptFields
+Beschikbare M3-velden: raadpleeg de M3-API of gebruikersinterface.
 
-M3 Fields Prefix: IRF\_
+Beschikbare DocBits-velden: voor deze statische velden kunt u een vaste waarde invoeren.
 
-DocBits Table Field Prefix: TF\_
+#### Ontvangstregelvelden:
 
-Available M3 Fields: Please check M3 API or UI
+Eigenschap van de veldenlijst: InvoiceReceiptFields
 
-Available DocBits Fields: packing\_slip, purchase\_order, line\_number, line\_sequence, delivery\_number, delivery\_line, amount, quantity, total\_net\_amount
+Voorvoegsel voor M3-velden: IRF\_
 
-### Order Charge Line:
+Voorvoegsel voor DocBits-tabelvelden: TF\_
 
-#### Order Charge Static Fields:
+Beschikbare M3-velden: raadpleeg de M3-API of gebruikersinterface.
 
-Fields List Property: OrderChargeStaticFields
+Beschikbare DocBits-velden: packing\_slip, purchase\_order, line\_number, line\_sequence, delivery\_number, delivery\_line, amount, quantity, total\_net\_amount
 
-Section Fields Prefix: OC\_SF\_
+### Orderkostenregel:
 
-Available M3 Fields: Please check M3 API or UI
+#### Statische orderkostenvelden:
 
-Available DocBits Fields: You can put any value as they are static fields
+Eigenschap van de veldenlijst: OrderChargeStaticFields
 
-#### Order Charge Fields:
+Voorvoegsel voor sectievelden: OC\_SF\_
 
-Fields List Property: OrderChargeFields
+Beschikbare M3-velden: raadpleeg de M3-API of gebruikersinterface.
 
-M3 Fields Prefix: OCF\_
+Beschikbare DocBits-velden: voor deze statische velden kunt u een vaste waarde invoeren.
 
-DocBits Table Field Prefix: TF\_
+#### Orderkostenvelden:
 
-Available M3 Fields: Please check M3 API or UI
+Eigenschap van de veldenlijst: OrderChargeFields
 
-Available DocBits Fields: ledger\_account, dimension\_2-7, amount, quantity, quantity2, position
+Voorvoegsel voor M3-velden: OCF\_
 
-### Cost Line:
+Voorvoegsel voor DocBits-tabelvelden: TF\_
 
-#### Cost Line Static Fields:
+Beschikbare M3-velden: raadpleeg de M3-API of gebruikersinterface.
 
-Fields List Property: InvoiceCostStaticFields
+Beschikbare DocBits-velden: ledger\_account, dimension\_2-7, amount, quantity, quantity2, position
 
-Section Fields Prefix: IC\_SF\_
+### Kostenregel:
 
-Available M3 Fields: Please check M3 API or UI
+#### Statische kostenregelvelden:
 
-Available DocBits Fields: You can put any value as they are static fields
+Eigenschap van de veldenlijst: InvoiceCostStaticFields
 
-#### Cost Line Fields:
+Voorvoegsel voor sectievelden: IC\_SF\_
 
-Fields List Property: InvoiceCostFields
+Beschikbare M3-velden: raadpleeg de M3-API of gebruikersinterface.
 
-M3 Fields Prefix: ICF\_
+Beschikbare DocBits-velden: voor deze statische velden kunt u een vaste waarde invoeren.
 
-DocBits Table Field Prefix: TF\_
+#### Kostenregelvelden:
 
-Available M3 Fields: Please check M3 API or UI
+Eigenschap van de veldenlijst: InvoiceCostFields
 
-Available DocBits Fields: ledger\_account, dimension\_1-12, amount, quantity, quantity2, position
+Voorvoegsel voor M3-velden: ICF\_
 
-New update
+Voorvoegsel voor DocBits-tabelvelden: TF\_
+
+Beschikbare M3-velden: raadpleeg de M3-API of gebruikersinterface.
+
+Beschikbare DocBits-velden: ledger\_account, dimension\_1-12, amount, quantity, quantity2, position
+
+Nieuwe update
 
 ```
 ###########################
@@ -294,7 +294,7 @@ ICF_AO06=TF_accounting_object_6
 ICF_AO07=TF_accounting_object_7
 ```
 
-### For US Customer we update this mapping to V3
+### Mapping bijgewerkt naar V3 voor Amerikaanse klanten
 
 ````
 ```

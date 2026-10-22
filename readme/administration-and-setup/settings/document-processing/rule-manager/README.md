@@ -86,7 +86,7 @@ Deze operatoren bepalen hoe de werkelijke factuurwaarden worden vergeleken met d
 
 • less than or equal to (kleiner dan of gelijk aan)
 
-• within tolerance (binnen tolerantie)
+• binnen tolerantie (binnen tolerantie)
 
 • outside tolerance (buiten tolerantie)
 
@@ -114,23 +114,23 @@ Definieert specifieke acties die worden uitgevoerd wanneer een discrepantie word
 
 • tax line
 
-• debit note receipt line
+• debetnota-ontvangstregel
 
-• debit note cost line
+• kostenregel voor debetnota's
 
-• debit note header charge
+• kosten voor de kop van de debetnota's
 
-• debit note line charge
+• kosten voor debetnotaregels
 
-• credit note receipt line
+• Creditnota-ontvangstregel
 
-• credit note cost line
+• Creditnotakostenregel
 
-• credit note header charge
+• Creditnotakoptekst
 
-• credit note line charge
+• Creditnotaregelkosten
 
-• credit note tax line
+• Creditnotabelastingregel
 
 ### Regelvoorbeelden
 

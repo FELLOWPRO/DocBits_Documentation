@@ -1,4 +1,4 @@
-# Document Script activation status
+# Activeringsstatus van het documentscript
 
 ## Tabel `public.document_script_activation_status`
 

@@ -1,28 +1,30 @@
-# Case 4, 5: Quantity Within Tolerance, Unit Price Outside Tolerance (Approved)
+# Geval 4, 5: Hoeveelheid binnen tolerantie, Eenheidsprijs buiten tolerantie (Goedgekeurd)
+
+Het volgende scenario is een voorbeeld van een geconfigureerde mapping en geen aantoonbaar uitgerold standaardsjabloon. De werkelijke uitvoer, bedragen, tekens en documenttypen hangen af van de actieve `conflict_resolution`-regels en -expressies, de exportmapping en de goedkeuringsbesluiten. Elke hieronder beschreven debet- of creditnota is afhankelijk van die configuratie; het voorbeeld garandeert geen automatische uitgifte of wettelijke naleving.
 
 ## Scenario:
 
-The quantity on the invoice is within tolerance, but the unit price is outside the acceptable tolerance range. However, this variance in the unit price has been reviewed and approved by the appropriate authorities.
+Het aantal op de factuur valt binnen de tolerantie, maar de eenheidsprijs ligt buiten het aanvaardbare tolerantiebereik. Dit verschil in de eenheidsprijs is echter beoordeeld en goedgekeurd door de bevoegde autoriteiten.
 
-## Action:
+## Actie:
 
-The system adjusts the unit price to match the purchase order and applies any necessary line charges to account for the difference.
+Het systeem past de eenheidsprijs aan zodat deze overeenkomt met de inkooporder en past eventuele noodzakelijke regelkosten toe om het verschil te compenseren.
 
-## Example:
+## Voorbeeld:
 
 **Purchase Order (PO):**
 
 Quantity: <mark style="color:green;">100</mark> units
 
-Unit Price: $10.00 per unit
+Eenheidsprijs: $10.00 per eenheid
 
 Total Amount: <mark style="color:purple;">$1,000.00</mark>
 
 **Invoice Received:**
 
-Quantity: <mark style="color:green;">100</mark> units (within tolerance)
+Aantal: <mark style="color:green;">100</mark> eenheden (binnen tolerantie)
 
-Unit Price: <mark style="color:red;">$11.00</mark> per unit (outside tolerance of ±5%)
+Eenheidsprijs: <mark style="color:red;">$11.00</mark> per eenheid (buiten tolerantie van ±5%)
 
 Total Amount: <mark style="color:red;">$1,100.00</mark>
 
@@ -30,32 +32,32 @@ Total Amount: <mark style="color:red;">$1,100.00</mark>
 
 Quantity Tolerance: ±2%
 
-Unit Price Tolerance: ±5% (expected range: $9.50 to $10.50)
+Tolerantie per eenheidsprijs: ±5% (verwacht bereik: $9.50 tot $10.50)
 
 **Approval:**
 
-• The $11.00 unit price is outside the tolerance range but has been manually approved by the appropriate department.
+• De eenheidsprijs van $11.00 valt buiten het tolerantiebereik, maar is handmatig goedgekeurd door de betreffende afdeling.
 
-Since the quantity is within tolerance but the unit price is outside tolerance (yet approved), the system will:
+Aangezien de hoeveelheid binnen de tolerantie valt, maar de eenheidsprijs buiten de tolerantie valt (toch goedgekeurd), zal het systeem:
 
-1\. **Adjust the Unit Price**: The system adjusts the unit price back to the PO’s unit price because the variance was approved:
+1\. **Pas de eenheidsprijs aan**: Het systeem past de eenheidsprijs terug aan de eenheidsprijs van PO aan, omdat de afwijking is goedgekeurd:
 
-• **Adjusted Unit Price = $10.00 per unit**
+• **Aangepaste eenheidsprijs = $10.00 per eenheid**
 
-• **Adjusted Total Amount = 100 units × $10.00 per unit = $1,000.00**
+• **Aangepast totaalbedrag = 100 eenheden × $10.00 per eenheid = $1,000.00**
 
-2\. **Apply a Line Charge for the Difference**: Since the approved unit price of $11.00 is higher than the PO unit price of $10.00, the system applies a line charge to account for this difference:
+2\. **Pas regeltoeslagen toe voor het verschil**: Omdat de goedgekeurde eenheidsprijs van $11.00 hoger is dan de PO eenheidsprijs van $10.00, past het systeem regeltoeslagen toe om rekening te houden met dit verschil:
 
-• **Line Charge Amount = (Approved Invoice Unit Price - PO Unit Price) × Quantity**
+• **Bedrag regelkosten = (goedgekeurde eenheidsprijs factuur - PO eenheidsprijs) × hoeveelheid**
 
-• **Line Charge Amount = ($11.00 - $10.00) × 100 units = $100.00**
+• **Bedrag regeltoeslagen = ($11.00 - $10.00) × 100 eenheden = $100.00**
 
-3\. **Process the Invoice**: The system processes the invoice with:
+3\. **De factuur verwerken**: Het systeem verwerkt de factuur met:
 
 • **Base Amount:** $1,000.00
 
 • **Line Charge:** $100.00
 
-• **Total Processed Amount:** $1,100.00
+• **Totaal verwerkt bedrag:** $1,100.00
 
-This ensures that while the base PO values are maintained for consistency, the approved variance in the unit price is accounted for through an additional line charge, resulting in accurate financial processing and record-keeping.
+Dit zorgt ervoor dat, hoewel de basis-PO-waarden behouden blijven voor consistentie, de goedgekeurde variantie in de eenheidsprijs wordt verantwoord via een extra regeltoeslag, wat resulteert in een nauwkeurige financiële verwerking en administratie.

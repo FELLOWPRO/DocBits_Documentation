@@ -132,7 +132,7 @@ die zichtbaar zijn voor klanten._
 - Donkere modus: de schaarcursor op het splitsscherm en de modusschakelaar op
   het Auto Accounting-scherm zijn weer leesbaar.
 
-### Purchase order matching
+### Inkooporders matchen
 
 De wijzigingen die zijn aangekondigd in [Hotfixes 8 september 2026](incremental-updates-8-september-2026.md)
 bereiken productie met deze release: de match blijft behouden na opslaan,
@@ -156,7 +156,7 @@ wordt berekend uit het nettobedrag. Daarnaast:
 - De pagina met PO matching regels tekent de regelset als een stroomdiagram, en
   de matching geschiedenis is verhuisd naar de actiewerkbalk.
 
-### Auto Accounting
+### Automatische boeking
 
 - Organisaties met meer dan 2.000 rekeningen doorzoeken de rekeninglijst op de
   server. De keuzelijst was op sandbox leeg voor zulke organisaties, en het
@@ -202,7 +202,7 @@ wordt berekend uit het nettobedrag. Daarnaast:
 - Taakdeadlines gebruiken het datumformaat uit uw gebruikersinstellingen in de
   lijst, het bord en de detailweergave.
 
-### Analytics: Touchless Intelligence
+### Analyse: Touchless Intelligence
 
 Het tabblad Touchless (Analytics → Touchless) meet hoeveel documenten DocBits
 doorlopen zonder dat iemand ze aanraakt, en waarom de andere dat niet deden.
@@ -380,7 +380,7 @@ Deze release maakt het compleet:
 - Documentscripts die de volledige-tekstzoekfunctie aanroepen, authenticeren
   correct en tonen fouten in plaats van een leeg resultaat terug te geven.
 
-### Purchase order matching (in-process matcher)
+### Inkooporders matchen (ingebouwde matcher)
 
 Voor organisaties die in de API matchen in plaats van in de PO Match Service:
 
@@ -391,7 +391,7 @@ Voor organisaties die in de API matchen in plaats van in de PO Match Service:
   automatisch matchen.
 - Een gecorrigeerd PO nummer wordt gematcht in de opslag die het corrigeert.
 
-### Analytics
+### Analyse
 
 - Touchless: alle backend-wijzigingen achter de Web App-sectie hierboven,
   inclusief fasebewijs dat elke pijplijnfase vastlegt, de PO-match-trace,

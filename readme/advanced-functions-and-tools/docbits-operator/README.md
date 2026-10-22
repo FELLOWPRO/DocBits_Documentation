@@ -12,12 +12,12 @@ Volg deze stappen om de DocBits Operator in te schakelen:
    * Ga vanaf het Dashboard naar **Instellingen**.
    *   Selecteer **Documentverwerking** en kies vervolgens **Module**.
 
-       <figure><img src="../../.gitbook/assets/docbits_operator_module_selection.png" alt="DocBits Operator Module Selection"><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-nl.png" alt="Modules voor documentintegratie, waaronder documentscripts, barcode-extractie en aangepaste stamgegevens. De ingestelde schakelaars zijn niet gewijzigd."><figcaption><p>Modules voor documentintegratie, waaronder documentscripts, barcode-extractie en aangepaste stamgegevens. De ingestelde schakelaars zijn niet gewijzigd.</p></figcaption></figure>
 2. **Schakel de functie in**:
    * Scroll omlaag naar de optie **DocBits Operator**.
    *   Zet de schuifschakelaar aan om de **DocBits Operator** in te schakelen.
 
-       <div align="left"><figure><img src="../../.gitbook/assets/docbits_operator_enable_toggle.png" alt="DocBits Operator Enable Toggle" width="563"><figcaption></figcaption></figure></div>
+       <div align="left"></div>
 
 ## Toegang tot de interface
 

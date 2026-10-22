@@ -1,57 +1,57 @@
-# Test: File Import 1
+# Test: bestandsimport 1
 
-## Purpose
+## Doel
 
-These tests are designed to ensure that our file import system works correctly. We specifically test the import of PDF and TIFF files into the system, ensuring that they are processed and stored successfully.
+Deze tests zijn bedoeld om ervoor te zorgen dat ons bestandsimportsysteem correct werkt. We testen specifiek de import van PDF- en TIFF-bestanden in het systeem, om ervoor te zorgen dat ze met succes worden verwerkt en opgeslagen.
 
-#### Test Setup and Cleanup
+#### Testvoorbereiding en opruimen
 
 * **Setup:**
-  * Before each test, we log a setup message.
-  * **Cleanup:** After each test, we clean up by deleting any documents created by the test user from the database to ensure no leftover data affects subsequent tests.
+  * Vóór elke test registreren we een installatiebericht.
+  * **Opschonen:** Na elke test ruimen we op door alle documenten die door de testgebruiker zijn gemaakt uit de database te verwijderen om ervoor te zorgen dat overgebleven gegevens geen invloed hebben op volgende tests.
 
-#### Test Scenarios
+#### Testscenario’s
 
 1. **Import PDF File:**
-   * **Test Import PDF (`test_import_pdf`):**
-     * Import a PDF file (`FellowBananaInvoice.pdf`) into the system.
-     * **Expected Outcome:** The file should be imported successfully, returning a document ID.
+   * **Test voor PDF-import (`test_import_pdf`):**
+     * Importeer een PDF-bestand (`FellowBananaInvoice.pdf`) in het systeem.
+     * **Verwachte uitkomst:** Het bestand zou met succes moeten worden geïmporteerd, waarbij een document ID wordt geretourneerd.
 2. **Import TIFF File:**
-   * **Test Import TIFF (`test_import_tiff`):**
-     * Import a TIFF file (`TIFF_FILE.TIF`) into the system.
-     * **Expected Outcome:** The file should be imported successfully, returning a document ID.
+   * **Test voor TIFF-import (`test_import_tiff`):**
+     * Importeer een TIFF-bestand (`TIFF_FILE.TIF`) in het systeem.
+     * **Verwachte uitkomst:** Het bestand zou met succes moeten worden geïmporteerd, waarbij een document ID wordt geretourneerd.
 
-## Detailed Explanation of Each Test
+## Gedetailleerde uitleg van elke test
 
-* **Setup and Cleanup:**
-  * **Logging:** A setup and cleanup message is logged for each test.
-  * **Database Cleanup (`clean_documents`):** Deletes any documents created by the test user from the database to maintain a clean state.
-*   **File Import Tests:**
+* **Instellen en opruimen:**
+  * **Logging:** Voor elke test wordt een installatie- en opschoonbericht vastgelegd.
+  * **Database opruimen (`clean_documents`):** Verwijdert alle documenten die door de testgebruiker zijn gemaakt uit de database om de status schoon te houden.
+*   **Bestandimporttests:**
 
     **Import PDF File:**
 
-    * **Load User:** Load the test user.
-    * **File Path:** Specify the path to the PDF file (`tests/files/pdfs/FellowBananaInvoice.pdf`).
-    * **Import File:** Use the `FileImporter` class to import the PDF file.
-    * **Check Response:** Ensure the response is a list containing a success message and a document ID.
+    * **Gebruiker laden:** Laad de testgebruiker.
+    * **Bestandspad:** Geef het pad op naar het PDF bestand (`tests/files/pdfs/FellowBananaInvoice.pdf`).
+    * **Bestand importeren:** Gebruik de klasse `FileImporter` om het bestand PDF te importeren.
+    * **Reactie controleren:** Zorg ervoor dat het antwoord een lijst is met een succesbericht en een document ID.
 
     **Import TIFF File:**
 
-    * **Load User:** Load the test user.
-    * **File Path:** Specify the path to the TIFF file (`tests/files/pdfs/TIFF_FILE.TIF`).
-    * **Import File:** Use the `FileImporter` class to import the TIFF file.
-    * **Check Response:** Ensure the response is a list containing a success message and a document ID.
+    * **Gebruiker laden:** Laad de testgebruiker.
+    * **Bestandspad:** Geef het pad op naar het TIFF bestand (`tests/files/pdfs/TIFF_FILE.TIF`).
+    * **Bestand importeren:** Gebruik de klasse `FileImporter` om het bestand TIFF te importeren.
+    * **Reactie controleren:** Zorg ervoor dat het antwoord een lijst is met een succesbericht en een document ID.
 
-## Code Structure
+## Codestructuur
 
-* **Logger:** Used to log debug messages during setup, cleanup, and test execution.
-* **Database Helper:** Executes queries without returning results for cleanup.
-* **File Importer:** Handles the import of files into the system.
-* **Fixtures:** `set_up` fixture to manage setup and cleanup for tests.
+* **Logger:** Wordt gebruikt om foutopsporingsberichten te loggen tijdens installatie, opschoning en testuitvoering.
+* **Database Helper:** Voert query's uit zonder resultaten te retourneren voor opschoning.
+* **Bestandimporteur:** Verwerkt de import van bestanden in het systeem.
+* **Fixtures:** `set_up` armatuur om de installatie en opruiming voor tests te beheren.
 * **Tests:**
-  * `test_import_pdf`: Tests importing a PDF file.
-  * `test_import_tiff`: Tests importing a TIFF file.
+  * `test_import_pdf`: Tests waarbij een PDF-bestand wordt geïmporteerd.
+  * `test_import_tiff`: Tests waarbij een TIFF-bestand wordt geïmporteerd.
 
-#### Summary
+#### Samenvatting
 
-These tests ensure that our file import functionality works as expected for both PDF and TIFF files. By following this approach, we verify that files are imported correctly and that the system can handle different file types without issues.
+Deze tests zorgen ervoor dat onze functionaliteit voor het importeren van bestanden werkt zoals verwacht voor zowel PDF- als TIFF-bestanden. Door deze aanpak te volgen, verifiëren we dat bestanden correct worden geïmporteerd en dat het systeem zonder problemen verschillende bestandstypen kan verwerken.

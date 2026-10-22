@@ -1,5 +1,13 @@
 # Purchase order tolerance settings / Additional purchase order tolerance
 
+## Configure PO matching rules and tolerances
+
+The walkthrough opens the invoice document type, checks the published rule version and clones an inactive draft. It explains rule types, priority within the matching stage, comparison columns, quantity basis, matching modes and tolerance calculations. Only the tutorial draft is saved; the active version and configured global tolerances are preserved. The five-percent calculation is an illustration, not a change to the active tolerance.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v2/en.mp4" %}
+
+[Watch the video with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v2/en.html)
+
 ## **Setting to configure Purchase Order Tolerances**
 
 Go to **Settings → General Settings → Document Types → More Settings → Purchase Order Section → PO Tolerance Setting**

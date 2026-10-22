@@ -8,4 +8,4 @@ Use Ctrl on Windows/Linux and Cmd on macOS for the shortcuts below. Browser or o
 | Ctrl/Cmd + Q | Refresh the dashboard list. |
 | Ctrl/Cmd + H | Open documentation/help. |
 
-Open the dashboard gear menu and choose the keyboard button to see the in-app shortcut reference. The question-mark button inside the search box opens the fields and syntax reference.
+Open the **Advanced settings** gear menu and choose the keyboard button to see the in-app shortcut reference. The question-mark button at the right end of the search bar opens the fields and syntax reference.

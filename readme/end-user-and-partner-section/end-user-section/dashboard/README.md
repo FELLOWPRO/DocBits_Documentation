@@ -23,6 +23,19 @@ This short example starts at the desk of a fictional customer in Austin, Texas. 
 The customer and office are AI-generated. The actions and search results are real recordings from the DocBits test account.
 
 
+## Dashboard tools — English walkthrough
+
+The same fictional customer from Austin shows how she works with the dashboard: find a test invoice, apply and clear a status filter, open the search help, inspect the column settings, check the status overview and refresh the worklist. The walkthrough uses the current US English interface. Available controls depend on your permissions and enabled modules.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v2/en.mp4" %}
+
+[Open the player with English subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v2/en.html) · [Open the MP4](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v2/en.mp4) · [English captions (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v2/en.vtt) · [English transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v2/en.txt)
+
+Use full-screen playback to read the interface on smaller screens.
+
+The customer, office opening and narration are AI-generated. The dashboard actions are real recordings from the DocBits test interface. Invoice numbers, supplier names, purchase orders and amounts come from a synthetic sample invoice; private account details are masked. The sample selection stays active throughout the walkthrough. The column settings are inspected and closed without saving changes.
+
+
 ## Start your daily work
 
 1. Check the active organization and, if available, the suborganization.
@@ -33,7 +46,11 @@ The customer and office are AI-generated. The actions and search results are rea
 
 ## Search and filter documents
 
-Enter a document name, invoice number or other business value in the search box and press **Enter**. Use the filter icon inside the search box for **Status**, **Assigned To** and **Restart required**, then choose **Apply**. Remove individual filter badges or use **Clear filters** when a document seems to be missing. Document-type tabs and saved views also narrow the list.
+Enter a document name, invoice number or other business value in the search box and press **Enter**. Select the **Filters** icon (three slider bars) at the right end of the search bar for **Status**, **Assigned To** and **Restart Required**, then choose **Apply**. Remove individual filter badges or use **Clear filters** when a document seems to be missing. Document-type tabs and saved views also narrow the list.
+
+The **bolt** icon at the start of the search box opens the field picker. It lists the **Smart Filters** first — ready-made searches such as **Overdue**, **Due soon**, **Assigned to me**, **Today's inbox**, **Pending validation** or **Electronic documents** — followed by every field you can search. Selecting an entry inserts the matching condition into the search box, so you do not have to know the syntax.
+
+<figure><img src="../../../.gitbook/assets/dbdc189-dashboard-search-fields-en.png" alt="Field picker in the dashboard search box listing Smart Filters such as Overdue, Due soon, Assigned to me and Pending validation, followed by searchable fields"><figcaption><p>The field picker: Smart Filters on top, then the searchable fields.</p></figcaption></figure>
 
 The search toolbar also provides structured search chips, a raw query view and a **Fields & Syntax** help dialog. Copy field names and examples from that dialog; keep technical field names unchanged when changing the UI language. Advanced search features depend on the search capabilities enabled for your organization.
 
@@ -51,7 +68,7 @@ If grouping is available, select a grouping field above the table. For date fiel
 
 Use the **+** next to the document-type tabs to show additional tabs. The tabs can be reordered by dragging. Removing a tab changes your view; it does not delete documents.
 
-Open the gear icon and the column-settings button to choose visible columns, move columns between the hidden and visible lists, and drag visible columns into order. You can also add fields from a document type. See [Change document columns](change-document-columns.md).
+Open the **Advanced settings** gear to the right of the search bar, then select the **Column settings** button in its menu to choose visible columns, move columns between the hidden and visible lists, and drag visible columns into order. You can also add fields from a document type. See [Change document columns](change-document-columns.md).
 
 <figure><img src="../../../.gitbook/assets/dashboard-columns.png" alt="Column settings let you choose and order the information shown in the table."><figcaption><p>Column settings let you choose and order the information shown in the table.</p></figcaption></figure>
 
@@ -67,7 +84,7 @@ Select the checkboxes for several documents and open the menu in the table heade
 
 ## Save a personal dashboard
 
-Open the blue view badge below the search box and choose **Create New Dashboard**. Give the view a name and choose whether it is private, visible to all users or shared with selected groups and users. Save the filters, sort order and columns you need for recurring work.
+Open the view badge below the search box and choose **Create new Dashboard**. Give the view a name and choose whether it is **Visible only to me**, **Visible to all users** or **Share with Groups and Users**. Save the filters, sort order and columns you need for recurring work.
 
 Select a saved view from the same menu. Save later changes with **Save Dashboard Changes** when the view is yours and has changed. A view shared with you cannot be overwritten by you; create your own view instead. Sharing a view does not grant additional access to documents. See [Personal dashboards](personal-dashboards.md).
 

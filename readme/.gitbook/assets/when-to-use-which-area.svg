@@ -1,0 +1,100 @@
+<svg viewBox="0 0 1080 820" role="img" lang="en" aria-labelledby="wtu-title wtu-desc" width="1080" height="820" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <title id="wtu-title">Which configuration area acts at which pipeline stage</title>
+  <desc id="wtu-desc">DocBits processes a document through a fixed order of stages: Intake, Transformation, Extraction, Validation, PO Matching, Approval and Workflow, Export. Seven configuration areas are pinned to the stage where they run. Transformation Rules act before Extraction. Custom Validation Rules and Script act inside Validation. PO Matching Rules act at PO Matching. Workflow, Advanced Workflow and Card SDK act at Approval and Workflow. Intake, Extraction and Export have no configuration area of their own.</desc>
+  <style>
+    .stage   { fill:#f8fafc; stroke:#cbd5e1; stroke-width:1.5; }
+    .stagetx { fill:#0f172a; font-size:16px; font-weight:600; }
+    .stagesub{ fill:#64748b; font-size:12.5px; }
+    .rules   { fill:#ecfeff; stroke:#0891b2; stroke-width:1.5; }
+    .rulestx { fill:#0e7490; font-size:14px; font-weight:600; }
+    .code    { fill:#fffbeb; stroke:#d97706; stroke-width:1.5; }
+    .codetx  { fill:#b45309; font-size:14px; font-weight:600; }
+    .flow    { fill:#ecfdf5; stroke:#059669; stroke-width:1.5; }
+    .flowtx  { fill:#047857; font-size:14px; font-weight:600; }
+    .link    { stroke:#94a3b8; stroke-width:1.5; fill:none; }
+    .arrow   { stroke:#94a3b8; stroke-width:2; fill:none; }
+    .head    { fill:#0f172a; font-size:22px; font-weight:700; }
+    .legend  { fill:#334155; font-size:13px; }
+    .note    { fill:#64748b; font-size:12.5px; }
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <text class="head" x="70" y="48">Which area acts at which stage</text>
+  <text class="note" x="70" y="72">The order is fixed by the pipeline, not by preference. Each area can only act at its own stage.</text>
+
+  <!-- legend, right of the title -->
+  <rect class="rules" x="628" y="28" width="16" height="16" rx="3"/>
+  <text class="legend" x="652" y="41">Rules — configuration</text>
+  <rect class="code" x="802" y="28" width="16" height="16" rx="3"/>
+  <text class="legend" x="826" y="41">Code — script</text>
+  <rect class="flow" x="930" y="28" width="16" height="16" rx="3"/>
+  <text class="legend" x="954" y="41">Workflow family</text>
+
+  <text class="note" x="70" y="100">Intake, Extraction and Export have no configuration area of their own — they are controlled by the import channel and the ERP connection.</text>
+
+  <!-- ================= pipeline (left) ================= -->
+  <rect class="stage" x="70" y="132" width="360" height="70" rx="10"/>
+  <text class="stagetx" x="90" y="163">Intake</text>
+  <text class="stagesub" x="90" y="184">mailbox, FTP, upload, split, barcode</text>
+
+  <rect class="stage" x="70" y="236" width="360" height="70" rx="10"/>
+  <text class="stagetx" x="90" y="267">Transformation</text>
+  <text class="stagesub" x="90" y="288">e-document XML is rewritten</text>
+
+  <rect class="stage" x="70" y="340" width="360" height="70" rx="10"/>
+  <text class="stagetx" x="90" y="371">Extraction</text>
+  <text class="stagesub" x="90" y="392">header fields and table rows</text>
+
+  <rect class="stage" x="70" y="444" width="360" height="70" rx="10"/>
+  <text class="stagetx" x="90" y="475">Validation</text>
+  <text class="stagesub" x="90" y="496">field and table checks, severities</text>
+
+  <rect class="stage" x="70" y="548" width="360" height="70" rx="10"/>
+  <text class="stagetx" x="90" y="579">PO Matching</text>
+  <text class="stagesub" x="90" y="600">invoice lines against PO lines</text>
+
+  <rect class="stage" x="70" y="652" width="360" height="70" rx="10"/>
+  <text class="stagetx" x="90" y="683">Approval and Workflow</text>
+  <text class="stagesub" x="90" y="704">routing, approvals, conditions</text>
+
+  <rect class="stage" x="70" y="756" width="360" height="56" rx="10"/>
+  <text class="stagetx" x="90" y="790">Export</text>
+
+  <path class="arrow" d="M250 202 L250 236" marker-end="url(#a)"/>
+  <path class="arrow" d="M250 306 L250 340" marker-end="url(#a)"/>
+  <path class="arrow" d="M250 410 L250 444" marker-end="url(#a)"/>
+  <path class="arrow" d="M250 514 L250 548" marker-end="url(#a)"/>
+  <path class="arrow" d="M250 618 L250 652" marker-end="url(#a)"/>
+  <path class="arrow" d="M250 722 L250 756" marker-end="url(#a)"/>
+
+  <!-- ================= areas (right), pinned to their stage ================= -->
+  <!-- Transformation Rules -> Transformation (centre y=271) -->
+  <path class="link" d="M430 271 L470 271"/>
+  <rect class="rules" x="470" y="250" width="540" height="42" rx="8"/>
+  <text class="rulestx" x="490" y="277">Transformation Rules — configuration, no code</text>
+
+  <!-- Custom Validation Rules + Script -> Validation (centre y=479) -->
+  <path class="link" d="M430 479 L470 479"/>
+  <rect class="rules" x="470" y="458" width="265" height="42" rx="8"/>
+  <text class="rulestx" x="486" y="485">Custom Validation Rules</text>
+  <rect class="code" x="745" y="458" width="265" height="42" rx="8"/>
+  <text class="codetx" x="761" y="485">Script</text>
+
+  <!-- PO Matching Rules -> PO Matching (centre y=583) -->
+  <path class="link" d="M430 583 L470 583"/>
+  <rect class="rules" x="470" y="562" width="540" height="42" rx="8"/>
+  <text class="rulestx" x="490" y="589">PO Matching Rules — tolerances and line matching</text>
+
+  <!-- Workflow family -> Approval and Workflow (centre y=687) -->
+  <path class="link" d="M430 687 L470 687"/>
+  <rect class="flow" x="470" y="624" width="540" height="38" rx="8"/>
+  <text class="flowtx" x="490" y="649">Workflow — routing and approvals</text>
+  <rect class="flow" x="470" y="668" width="540" height="38" rx="8"/>
+  <text class="flowtx" x="490" y="693">Advanced Workflow — conditions and branching</text>
+  <rect class="flow" x="470" y="712" width="540" height="38" rx="8"/>
+  <text class="flowtx" x="490" y="737">Card SDK — partner cards, own actions and conditions</text>
+</svg>

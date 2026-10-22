@@ -83,9 +83,9 @@ Informations que DocBits connaît sur le document lui-même, indépendamment des
 
 | Champ dans le sélecteur | Clé | Exemples de valeurs | Utilisation typique |
 | --- | --- | --- | --- |
-| **Origine du document** | `doc.doc_origin` | `DE`, `AT`, `US` (affichés comme Deutsch, Austria, United States) | règles et mises en page propres à un pays |
+| **Origine du document** | `doc.doc_origin` | `DE`, `AT`, `US` (affichés comme Deutsch, Autriche, États-Unis) | règles et mises en page propres à un pays |
 | **Méthode d'extraction** | `doc.extraction_method` | `ELECTRONIC_DOCUMENT`, `FELLOW_KV2`, `MANUAL` | traiter les factures électroniques (XRechnung, ZUGFeRD) différemment des PDF numérisés |
-| **Statut du document** | `doc.status` | Ready for validation, Pending Approval, Pending second approval … | mises en page par étape de workflow, règles qui ne s'appliquent qu'avant l'approbation |
+| **Statut du document** | `doc.status` | Prêt pour validation, En attente d’approbation, En attente de deuxième approbation… | mises en page par étape de workflow, règles qui ne s'appliquent qu'avant l'approbation |
 | **Sous-type de document** | `doc.sub_doc_type` | vos sous-types, par ex. avoir | règles pour un seul sous-type |
 
 ### Champs d'en-tête (`header.`)

@@ -170,11 +170,11 @@ La valeur doit être un nombre compris entre **Minimum** et **Maximum** (inclus)
 
 Compare la valeur d'un champ avec un autre champ, avec **aujourd'hui** ou avec une valeur fixe, à l'aide de *equal to*, *not equal to*, *greater than*, *less than*, *on or after (≥)* ou *on or before (≤)*. Les nombres sont comparés comme des nombres et les dates comme des dates.
 
-* Due Date **on or after (≥)** Invoice Date
+* Date d'échéance **à compter de (≥)** Date de facture
 * Invoice Date **on or before (≤)** aujourd'hui : aucune facture datée dans le futur
 * Discount **moins que** 100
 
-#### Allowed values : à partir d'une liste fixe
+#### Valeurs autorisées : à partir d'une liste fixe
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-allowed.png" alt="un contrôle Allowed values"><figcaption><p>Allowed values : une valeur par ligne, éventuellement sans tenir compte de la casse</p></figcaption></figure>
 
@@ -195,7 +195,7 @@ Comme *Allowed values*, mais les valeurs proviennent d'une **Liste des valeurs**
 * **Message d'erreur affiché à l'utilisateur en cours de traitement** : le texte affiché sur l'écran de validation. Indiquez ce qui ne va pas **et** ce qu'il faut faire : « Le numéro fiscal du fournisseur est manquant. Les factures allemandes de plus de 250 EUR doivent l'indiquer. »
 * **Code d'erreur** : un court code technique, par exemple `REQUIRED_CONDITIONAL`, `FORMAT_MISMATCH`, `OUT_OF_RANGE`, `DATE_ORDER`, `LINES_HEADER_MISMATCH`, `VALUE_NOT_ALLOWED`. Il apparaît dans les exportations et les journaux et permet de regrouper les erreurs.
 
-## Test rule
+## Tester la règle
 
 Cliquez sur **Règle de test** pour exécuter la version actuelle de la règle (enregistrée ou non) sur un document. Saisissez un **ID du document**, ou passez à **Par document JSON** et collez des données extraites. **Rien n'est enregistré**, et le document n'est pas modifié.
 
@@ -256,7 +256,7 @@ Header field · Error · *Invoice Date* · toujours · **Comparer les champs** I
 Header field · **Avertissement** · *Currency* · toujours · **Liste des valeurs** *approved_currencies* · Code `VALUE_NOT_ALLOWED`.
 
 **10. Commande d'achat obligatoire au-dessus de 5 000**
-Header field · Error · *Purchase Order* · Applies when *Total Amount* greater than *5000* · **Obligatoire**.
+Champ d'en-tête · Erreur · *Bon de commande* · S'applique lorsque *Montant total* supérieur à *5000* · **Obligatoire**.
 
 ## Bonnes pratiques
 

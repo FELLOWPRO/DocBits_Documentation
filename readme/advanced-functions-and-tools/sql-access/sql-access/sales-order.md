@@ -1,4 +1,4 @@
-# Sales order
+# Commande client
 
 ## Table `public.sales_order`
 
@@ -15,8 +15,8 @@
 * `warehouse_id` : interne
 * `warehouse_name` : interne
 * `transportation_method` : interne
-* `requested_delivery_date` : timestamp with time zone
-* `order_date` : timestamp with time zone
+* `requested_delivery_date` : horodatage avec fuseau horaire
+* `order_date` : horodatage avec fuseau horaire
 * `sales_person_id` : interne
 * `sales_person_name` : interne
 * `ship_to_party_id` : interne
@@ -27,10 +27,10 @@
 * `ship_to_party_zip` : interne
 * `status` : interne
 * `created_by` : integer
-* `created_on` : timestamp with time zone
-* `last_modified_on` : timestamp with time zone
+* `created_on` : horodatage avec fuseau horaire
+* `last_modified_on` : horodatage avec fuseau horaire
 * `is_deleted` : boolean
-* `deleted_on` : timestamp with time zone
+* `deleted_on` : horodatage avec fuseau horaire
 * `preview_path` : interne
 * `last_modified_by` : interne
 * `deleted_by` : interne

@@ -1,4 +1,4 @@
-# Test Auto Accounting
+# Tester la comptabilité automatique
 
 Auto Accounting nécessite un module activé, des données comptables maîtresses et une facture avec des montants ou des lignes utilisables. Ce guide sépare les paramètres que vous pouvez vérifier avant d'ouvrir une facture des contrôles qui nécessitent une connexion LN ou M3 configurée.
 

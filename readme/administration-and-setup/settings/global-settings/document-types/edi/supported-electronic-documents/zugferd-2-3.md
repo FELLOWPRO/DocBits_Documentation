@@ -35,5 +35,5 @@ ZUGFeRD 2.3, publiée en septembre 2024, équivaut à Factur-X 1.0.07. Elle met 
 ## Voir aussi
 
 * [Configuration ZUGFeRD](../zugferd/)
-* [Correspondance des champs ZUGFeRD](../zugferd/versions/)
+* [Correspondance des champs ZUGFeRD](../zugferd/README.md)
 * [Documents électroniques pris en charge](./)

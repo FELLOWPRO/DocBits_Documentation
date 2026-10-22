@@ -69,10 +69,10 @@ En plus des mappages dynamiques, plusieurs champs statiques sont utilisés pour 
 
 * **Champs statiques de l'en-tête** :
   * Financial Company : 0200
-  * Rate Determiner : docd
-  * External Rate Factor : 1
+  * Déterminateur de taux : docd
+  * Facteur de taux externe : 1
 * **Champs statiques de la ligne de réception** :
-  * Order Type : purchase
+  * Type de commande : achat
   * Logistic Company : 200
   * Order Sequence : 1
 * **Champs statiques de la ligne de coûts** :

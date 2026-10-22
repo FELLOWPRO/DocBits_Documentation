@@ -2,7 +2,7 @@
 
 ## Cartes de condition - Guide complet
 
-Les cartes de condition de cette page se placent dans les groupes **Quand** et **Et** du Concepteur de workflow — elles déterminent si les actions Then s'exécutent. Pour le fonctionnement du canevas — **Ajouter une carte**, **Enregistrer le flux de travail**, **Enregistrer le modèle** — consultez le [guide du Standard Workflow](../standard-workflow-builder) :
+Les cartes de condition de cette page se placent dans les groupes **Quand** et **Et** du Concepteur de workflow — elles déterminent si les actions Then s'exécutent. Pour le fonctionnement du canevas — **Ajouter une carte**, **Enregistrer le flux de travail**, **Enregistrer le modèle** — consultez le [guide du Standard Workflow](../README.md) :
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-fr.png" alt="Exemple non enregistré avec les cartes Quand, Et et Alors. Renseignez tous les champs avant exécution."><figcaption><p>Exemple non enregistré avec les cartes Quand, Et et Alors. Renseignez tous les champs avant exécution.</p></figcaption></figure>
 

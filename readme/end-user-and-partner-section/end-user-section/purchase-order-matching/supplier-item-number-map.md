@@ -25,7 +25,7 @@ Cette fonctionnalité vous aide à gérer et à réconcilier les numéros d'arti
 * **Action :** Options pour gérer les correspondances, telles que la suppression des correspondances incorrectes.
 
 {% hint style="info" %}
-Voir ici la [Section Admin](broken-reference) également
+Voir ici la [Section Admin](../../../administration-and-setup/settings/README.md) également
 {% endhint %}
 
 ## **Avantages**

@@ -1,4 +1,4 @@
-# Additional charge costing element
+# Élément de coût des frais supplémentaires
 
 ## Table `public.additional_charge_costing_element`
 
@@ -12,10 +12,10 @@
 * `distribution_method`: internal
 * `distribution_type`: internal
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on` : horodatage avec fuseau horaire
+* `last_modified_on` : horodatage avec fuseau horaire
 * `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
+* `deleted_on` : horodatage avec fuseau horaire
 * `sub_org_id`: internal
 * `charge_count`: integer
 * `charge_icon`: internal

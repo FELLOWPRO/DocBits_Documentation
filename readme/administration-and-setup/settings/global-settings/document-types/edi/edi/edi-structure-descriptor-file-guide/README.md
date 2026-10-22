@@ -51,3 +51,13 @@ Ceci est particulièrement utile pour le débogage des mappages et la validation
 ## 6. Guide Vidéo
 
 Un guide vidéo pour ce type de fichier est disponible sur la [page Vidéos.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Utilisez-le pour suivre la configuration, l'édition et la prévisualisation.
+
+
+<figure><img src="../../../../../../../.gitbook/assets/site-all-edi-list-fr.png" alt="Format EDI existant avec ses quatre attributs configurés."><figcaption><p>Format EDI existant avec ses quatre attributs configurés.</p></figcaption></figure>
+
+<figure><img src="../../../../../../../.gitbook/assets/site-all-edi-detail-fr.png" alt="Attribut STRUCTUREDESCRIPTOR actif : descripteur de structure JSON dans l’éditeur en lecture seule."><figcaption><p>Attribut STRUCTUREDESCRIPTOR actif : descripteur de structure JSON dans l’éditeur en lecture seule.</p></figcaption></figure>
+
+
+Les vues montrent une configuration et une version existantes. Les paramètres varient selon le type de document et le format. Validez les modifications dans un brouillon avant leur activation.
+
+Certaines mentions, telles que Custom et Default, correspondent à l’interface actuelle du produit. Les identifiants techniques des attributs et le code de configuration restent inchangés.

@@ -1,8 +1,8 @@
-# Table Columns
+# Colonnes de tableau
 
 Les Table Columns définissent les colonnes du tableau des lignes d'un type de document : ce que DocBits extrait dans chaque colonne, ce que l'utilisateur voit sur l'écran de validation et ce qui est envoyé à l'ERP lors de l'export.
 
-**Où :** Settings → Global Settings → Document Types → Table Columns
+**Où :** Paramètres → Paramètres globaux → Types de documents → Colonnes du tableau
 
 <figure><img src="../../../../../.gitbook/assets/table-columns_list.png" alt="Liste des Table Columns avec les indicateurs Required, Read Only, Hidden et Use AI pour chaque colonne"><figcaption><p>Table Columns : une ligne par colonne, les indicateurs se modifient directement dans la liste</p></figcaption></figure>
 

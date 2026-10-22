@@ -30,7 +30,7 @@ La NFS-e (Nota Fiscal de Serviços Eletrônica) est la facture électronique br�
 
 ## Aperçu par défaut
 
-<figure><img src="brazil-nfse-preview.png" alt="Aperçu Brazil NFS-e dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour un document BRAZIL NFS-E</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/brazil-nfse-preview.png" alt="Aperçu Brazil NFS-e dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour un document BRAZIL NFS-E</p></figcaption></figure>
 
 ## Correspondance des champs
 

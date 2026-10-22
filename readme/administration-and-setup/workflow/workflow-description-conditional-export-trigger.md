@@ -2,7 +2,7 @@
 
 
 
-<figure><img src="../../../.gitbook/assets/docbits_settings_workflow.png" alt="DocBits Paramètres Workflow"><figcaption></figcaption></figure>
+
 
 Ce flux de travail décrit les conditions dans lesquelles un processus d'exportation doit être initié. Il garantit que seuls les documents répondant à tous les critères spécifiés sont traités pour l'exportation, renforçant l'intégrité des données et l'alignement sur les règles métier.
 

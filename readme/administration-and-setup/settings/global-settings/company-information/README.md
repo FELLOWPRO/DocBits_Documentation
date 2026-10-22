@@ -4,22 +4,22 @@
 
 La page Company Information vous permet de gérer le profil de votre entreprise, vos préférences et les détails de votre abonnement. Elle est organisée en plusieurs sections :
 
-## Company Information
+## Informations sur l’entreprise
 
 Cette section contient les données de base de votre entreprise, regroupées en quatre zones :
 
-### Company Identity
+### Identité de l’entreprise
 
 * **Nom** *(obligatoire)* : la dénomination légale de votre entreprise.
 
-### Address
+### Adresse
 
 * **Rue + Numéro** : l'adresse postale de votre entreprise.
 * **Code Postal** : le code postal.
 * **Ville** : le nom de la ville.
 * **Pays** : sélectionnez votre pays dans la liste déroulante.
 
-### Legal Information
+### Informations juridiques
 
 * **ID de l'entreprise** : un identifiant unique de votre entreprise, utilisé pour les intégrations et comme référence interne.
 * **Numéro d'identification fiscale** : votre numéro d'identification fiscale pour les rapports financiers.
@@ -32,7 +32,7 @@ Cette section contient les données de base de votre entreprise, regroupées en 
 
 Après avoir saisi ou mis à jour des champs, cliquez sur **Enregistrer** pour appliquer vos modifications. Les icônes **?** à côté des identifiants légaux affichent des indications supplémentaires sur le champ. Sélectionnez le titre de la section pour développer ou réduire le formulaire.
 
-## E-mail domains
+## Domaines de messagerie
 
 Les administrateurs de l'organisation peuvent ouvrir **Paramètres → Informations sur l’entreprise → Domaines de messagerie** pour gérer les domaines utilisés pour l'affectation automatique à l'organisation. Lorsqu'une personne se connecte avec Microsoft ou Google et n'est pas encore membre d'une organisation, DocBits peut l'affecter à cette organisation si son adresse e-mail utilise l'un des domaines listés. Un domaine ne peut appartenir qu'à une seule organisation.
 
@@ -42,7 +42,7 @@ Saisissez uniquement le domaine, par exemple `example.com`, dans le champ, puis 
 
 Avant d'ajouter un domaine, vérifiez quelle organisation doit recevoir les nouvelles connexions. Pour gérer les appartenances existantes, poursuivez avec [Users](../groups-users-and-permissions/users/README.md).
 
-## Company Preferences
+## Préférences de l’entreprise
 
 Configurez les paramètres par défaut applicables à toute l'entreprise :
 
@@ -52,14 +52,14 @@ Configurez les paramètres par défaut applicables à toute l'entreprise :
 
 Cliquez sur **Enregistrer** après avoir effectué des modifications.
 
-## App-Color
+## Couleur de l’application
 
 Personnalisez la couleur principale de l'interface DocBits. C'est utile pour distinguer visuellement différents environnements (p. ex. dev et production).
 
 * **Couleur** : saisissez un code couleur hexadécimal (p. ex. `#2388AE`) ou utilisez le sélecteur de couleur.
 * Cliquez sur **Enregistrer** pour appliquer, ou sur **Réinitialiser** pour rétablir la couleur par défaut.
 
-## Subscription Plan
+## Formule d’abonnement
 
 Consultez vos plans d'abonnement actifs et leurs détails :
 
@@ -70,7 +70,7 @@ Consultez vos plans d'abonnement actifs et leurs détails :
 * **Nombre de sous-organisations** : le nombre de sous-organisations configurées.
 * **Nombre de fournisseurs** : le nombre de fournisseurs enregistrés.
 
-## Subscription Usage
+## Utilisation de l’abonnement
 
 Suivez votre consommation mensuelle de jetons et de workflows :
 

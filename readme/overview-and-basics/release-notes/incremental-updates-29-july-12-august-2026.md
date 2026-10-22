@@ -75,7 +75,7 @@ client._
   le contexte de votre sous-organisation, et non dans celui du document
   ouvert à ce moment-là.
 
-### Workflow Builder
+### Éditeur de workflows
 
 - La liste des workflows conserve votre recherche, l'ordre de tri, la page et
   la taille de page lorsque vous ouvrez un workflow puis revenez, y compris

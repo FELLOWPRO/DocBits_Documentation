@@ -1,4 +1,4 @@
-# Training data
+# Données d’entraînement
 
 ## Table `public.training_data`
 
@@ -13,12 +13,12 @@
 * `first_page_content` : text
 * `supplier_name` : nom du fournisseur
 * `supplier_vat` : interne
-* `doc_created_on` : timestamp with time zone
+* `doc_created_on` : horodatage avec fuseau horaire
 * `is_training_sample` : boolean
 * `sample_doc_id` : interne
 * `sample_file_name` : interne
-* `created_on` : timestamp with time zone
-* `last_modified_on` : timestamp with time zone
+* `created_on` : horodatage avec fuseau horaire
+* `last_modified_on` : horodatage avec fuseau horaire
 * `is_deleted` : boolean
 * `is_table_training_sample` : boolean
 

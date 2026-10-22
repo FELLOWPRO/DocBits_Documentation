@@ -1,6 +1,6 @@
-# Less than Max Amount
+# Inférieur au montant maximal
 
-<figure><img src="../../../../.gitbook/assets/docbits_invoice.png" alt="DocBits Facture"><figcaption></figcaption></figure>
+
 
 Ce titre suggère que la règle ou la condition mise en place est conçue pour gérer les factures dont le montant total est inférieur ou égal à un montant maximum spécifié.
 

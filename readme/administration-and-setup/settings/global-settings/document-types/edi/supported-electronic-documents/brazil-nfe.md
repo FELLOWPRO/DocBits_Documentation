@@ -30,7 +30,7 @@ La NF-e (Nota Fiscal Eletrônica, `<mod>55</mod>`) est la facture électronique 
 
 ## Aperçu par défaut
 
-<figure><img src="brazil-nfe-preview.png" alt="Aperçu Brazil NF-e dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour un document BRAZIL NF-E</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/brazil-nfe-preview.png" alt="Aperçu Brazil NF-e dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour un document BRAZIL NF-E</p></figcaption></figure>
 
 ## Correspondance des champs
 

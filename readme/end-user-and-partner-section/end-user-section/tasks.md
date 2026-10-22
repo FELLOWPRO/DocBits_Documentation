@@ -1,7 +1,7 @@
 # Tâches
 
 {% embed url="https://youtu.be/MZoDMibM-7E" %}
-DocBits Tasks & Notifications Tutorial: Assign Work, Track Status & Handle Workflow Tasks
+DocBits Tutoriel sur les tâches et les notifications : attribuer du travail, suivre l'état et gérer les tâches de flux de travail
 {% endembed %}
 
 C'est ici que vous pouvez garder un œil sur vos tâches. Vous pouvez choisir entre deux mises en page différentes – l'une est un peu plus détaillée que l'autre. Vous pouvez également filtrer les tâches selon différents critères, comme si elles vous sont assignées ou l'état de la tâche.

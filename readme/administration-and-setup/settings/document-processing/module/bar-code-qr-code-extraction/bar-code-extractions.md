@@ -1,4 +1,4 @@
-# Bar Code Extractions
+# Extraction des codes-barres
 
 ## Aperçu
 
@@ -17,7 +17,7 @@ Pour activer la fonctionnalité Bar-Code Extraction, procédez comme suit :
 
 ## **Paramètres supplémentaires**
 
-### **Barcode Assignment**
+### **Attribution des codes-barres**
 
 #### **Objectif :** permet aux validateurs d'affecter manuellement une valeur de code-barres extraite à un champ de document précis pendant la validation des champs.
 

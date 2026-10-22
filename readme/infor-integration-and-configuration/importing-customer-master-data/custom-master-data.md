@@ -10,17 +10,17 @@ Depuis le tableau de bord, accédez à Settings → Document Processing → Modu
 
 ![](<../../.gitbook/assets/DocBits_CMD_1 (1).png>)
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-fr.png" alt="Module d’intégration des documents : option des données de base personnalisées, affichée sans modification."><figcaption><p>Module d’intégration des documents : option des données de base personnalisées, affichée sans modification.</p></figcaption></figure></div>
 
 Dans Module, activez Custom Master Data en cliquant sur le curseur, comme illustré ci-dessous.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_3.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"></div>
 
 #### Aperçu de la fonctionnalité <a href="#feature-overview" id="feature-overview"></a>
 
 Pour ajouter vos propres données de base dans DocBits, accédez à Master Data Lookup dans Settings.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_4.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/site-extra-master-data-overview-fr.png" alt="Consultation des données de base ; les données de l’organisation sont masquées."><figcaption><p>Consultation des données de base ; les données de l’organisation sont masquées.</p></figcaption></figure></div>
 
 Cliquez sur « Custom Master Data ».
 

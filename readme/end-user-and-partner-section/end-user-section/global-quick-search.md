@@ -6,7 +6,7 @@ La Recherche Rapide Globale est un lanceur accessible au clavier qui retrouve le
 
 Appuyez sur <kbd>Cmd</kbd> + <kbd>K</kbd> sous macOS ou <kbd>Ctrl</kbd> + <kbd>K</kbd> sous Windows et Linux. Le raccourci fonctionne depuis n'importe quel écran.
 
-<figure><img src="../../.gitbook/assets/quick-search-modal.png" alt="Recherche Rapide Globale"><figcaption><p>La Recherche Rapide s'ouvre au-dessus de la page courante.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-global-quick-search-fr.png" alt="Recherche globale de pages avec des résultats de paramètres en français. Le libellé « Paramètres de terrain » est une erreur de terminologie de l’interface actuelle : il désigne les paramètres des champs."><figcaption><p>Recherche globale de pages avec des résultats de paramètres en français. Le libellé « Paramètres de terrain » est une erreur de terminologie de l’interface actuelle : il désigne les paramètres des champs.</p></figcaption></figure>
 
 ## Rechercher
 

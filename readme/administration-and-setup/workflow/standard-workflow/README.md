@@ -4,9 +4,9 @@
 
 #### Aperçu des composants du flux de travail :
 
-* **AP Invoice Email** : Le processus commence vraisemblablement par une facture reçue par e-mail.
+* **Réception des factures par e-mail** : Le processus commence vraisemblablement par une facture reçue par e-mail.
 * **DocBits** : Cet outil peut être utilisé pour les tâches initiales de gestion documentaire telles que la capture et la numérisation des factures.
-* **Finance Review** : Les factures font l'objet d'un examen financier au cours duquel des décisions sont prises concernant leur validité et leur exactitude.
+* **Examen financier** : Les factures font l'objet d'un examen financier au cours duquel des décisions sont prises concernant leur validité et leur exactitude.
 
 #### Étapes du flux de travail :
 

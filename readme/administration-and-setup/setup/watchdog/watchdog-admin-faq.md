@@ -4,7 +4,7 @@
 
 Cette documentation aide les administrateurs à comprendre les messages d'erreur de WatchDog et à résoudre les problèmes.
 
-**Emplacement dans l'interface :** Settings → Document Processing → WatchDog
+**Emplacement dans l'interface :** Paramètres → Traitement des documents → WatchDog
 
 ---
 

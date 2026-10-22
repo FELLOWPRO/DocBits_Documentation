@@ -1,4 +1,4 @@
-# Organisation document type
+# Type de document de l’organisation
 
 ## Colonnes
 
@@ -11,8 +11,8 @@
 * `is_active` : boolean
 * `extraction_type` : interne
 * `created_by` : integer
-* `created_on` : timestamp with time zone
-* `last_modified_on` : timestamp with time zone
+* `created_on` : horodatage avec fuseau horaire
+* `last_modified_on` : horodatage avec fuseau horaire
 * `is_deleted` : boolean
 * `sub_org_id` : interne
 

@@ -1,6 +1,6 @@
 # Paramètres
 
-<figure><img src="../../.gitbook/assets/settings_overview.png" alt="Aperçu des paramètres"><figcaption><p>Page d'aperçu des paramètres</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-settings-overview-fr.png" alt="Paramètres de l’organisation : informations d’identification masquées ; les sections restent accessibles dans le menu."><figcaption><p>Paramètres de l’organisation : informations d’identification masquées ; les sections restent accessibles dans le menu.</p></figcaption></figure>
 
 La zone Settings est votre point central pour configurer DocBits. Elle est organisée en cinq sections principales :
 

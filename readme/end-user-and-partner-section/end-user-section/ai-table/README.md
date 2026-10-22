@@ -140,7 +140,7 @@ Ces explications relèvent du module **Tableau de bord analytique**. Sans licenc
 | L'IA ne sait pas quoi faire (rien dans le prompt) | Cliquez sur **Suggérer avec Nexus** et insérez ce qui convient. |
 | Un prix doit être divisé ou arrondi | Écrivez la règle dans le prompt, par exemple *Le prix unitaire est le montant net divisé par la quantité.* |
 | Les montants sont lus avec de mauvais séparateurs (1.234,50 au lieu de 1,234.50) | Ouvrez le menu trois points de la colonne, choisissez **Formatage du montant** et sélectionnez le bon format. |
-| Le libellé se trouve sous la valeur | Menu trois points → **Extract From** → **Below**. |
+| Le libellé se trouve sous la valeur | Menu trois points → **Extrait de** → **Below**. |
 | Une colonne n'est pas nécessaire pour ce fournisseur | Menu trois points → **Supprimer la colonne**. **Enregistrer comme formation** la garde masquée pour le fournisseur. |
 | Une ligne est erronée ou manquante | Supprimez-la avec le **x**, ou ajoutez-en une avec **Ajouter une nouvelle ligne de tableau** et saisissez les valeurs. |
 | Les mêmes corrections sont nécessaires encore et encore | Utilisez **Enregistrer comme formation** pour que les documents suivants de ce fournisseur soient corrects. Pour les mises en page complexes, [entraînez plutôt le tableau](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md). |

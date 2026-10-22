@@ -9,7 +9,7 @@
 * Windows Server ou Windows 10/11
 * Accès administrateur
 * Connectivité réseau vers l'API DocBits
-* API Key DocBits (disponible dans Settings → WatchDog → onglet General)
+* API Touche DocBits (disponible dans Paramètres → WatchDog → onglet Général)
 
 ## Étapes d'installation
 
@@ -30,7 +30,7 @@ C:\WatchDog\Export\        ← Export folder for exported files
 
 Téléchargez `WatchDog.exe` depuis l'application DocBits :
 
-**Settings → Document Processing → WatchDog → onglet General → Download**
+**Paramètres → Traitement des documents → WatchDog → onglet Général → Télécharger**
 
 Placez le fichier `WatchDog.exe` téléchargé dans `C:\WatchDog\`.
 

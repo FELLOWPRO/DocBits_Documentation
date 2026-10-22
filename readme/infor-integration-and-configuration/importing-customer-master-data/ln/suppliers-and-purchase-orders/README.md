@@ -56,7 +56,7 @@ Pour les besoins de cette explication, nous prendrons l'exemple de quatre enviro
 
 Le début du flux de données est constitué de votre application LN.
 
-### **DocBits API**
+### **API DocBits**
 
 Ajoutez ici une application et sélectionnez la ou les API DocBits que vous avez créées précédemment.
 

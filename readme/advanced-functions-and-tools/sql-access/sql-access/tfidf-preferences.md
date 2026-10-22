@@ -1,4 +1,4 @@
-# Tfidf preferences
+# Préférences TF-IDF
 
 ## Colonnes
 
@@ -8,12 +8,12 @@
 * `pref_key` : interne
 * `pref_value` : text
 * `created_by` : integer
-* `created_on` : timestamp with time zone
+* `created_on` : horodatage avec fuseau horaire
 * `last_modified_by` : interne
-* `last_modified_on` : timestamp with time zone
+* `last_modified_on` : horodatage avec fuseau horaire
 * `is_deleted` : boolean
 * `deleted_by` : interne
-* `deleted_on` : timestamp with time zone
+* `deleted_on` : horodatage avec fuseau horaire
 * `supplier_id` : interne
 
 ## Analyse et description

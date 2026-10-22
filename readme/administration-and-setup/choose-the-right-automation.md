@@ -98,7 +98,7 @@ Un workflow qui écrit dans un champ se comporte comme une personne qui enregist
 * **Il ne peut pas** importer de modules ni appeler des services externes. C'est du Python restreint. Une erreur dans un script est consignée et n'arrête jamais le traitement du document ; un script n'est donc **pas** un moyen fiable de bloquer un document : marquez plutôt le champ comme invalide ou créez une tâche.
 * **En savoir plus :** [Script](settings/global-settings/document-types/script/README.md)
 
-### Standard Workflow
+### Workflow standard
 
 * **Utilisez-le lorsque** la suite dépend du document : attribuer à un utilisateur ou à un groupe, approuver ou rejeter, créer une tâche, envoyer un e-mail, exporter, définir un statut, appeler une API.
 * **Il s'exécute** lorsqu'un document atteint un statut que vous avez choisi, donc après la validation. Il peut aussi démarrer depuis un web hook, une planification ou manuellement.
@@ -106,7 +106,7 @@ Un workflow qui écrit dans un champ se comporte comme une personne qui enregist
 * **Il ne peut pas** créer de branches, attendre plusieurs conditions ni réagir à l'erreur d'une carte dans un chemin distinct. Utilisez pour cela un Advanced Workflow.
 * **En savoir plus :** [Standard Workflow](workflow/standard-workflow-builder.md)
 
-### Advanced Workflow
+### Workflow avancé
 
 * **Utilisez-le lorsque** un document nécessite des chemins différents : branches selon une condition, plusieurs conditions combinées avec ALL / ANY, et un chemin pour les erreurs ou les conditions non remplies.
 * **Il s'exécute** sur les mêmes événements qu'un Standard Workflow. Il nécessite l'abonnement DocFlow Advanced.
@@ -114,7 +114,7 @@ Un workflow qui écrit dans un champ se comporte comme une personne qui enregist
 * **Il ne peut pas** agir avant la validation : il démarre après un changement de statut. La logique préalable à la validation relève d'un script ou d'une règle.
 * **En savoir plus :** [Advanced Workflow](workflow/advanced-workflow-builder.md)
 
-### Workflow SDK (Card SDK)
+### SDK de workflow (Card SDK)
 
 * **Utilisez-le lorsque** vous avez besoin d'une carte qui n'existe pas, par exemple une condition ou une action propre à une application partenaire.
 * **Il s'exécute** chaque fois qu'un workflow contenant la carte s'exécute.

@@ -1,4 +1,4 @@
-# Document Import log
+# Journal d’importation des documents
 
 ## Colonnes
 
@@ -12,8 +12,8 @@
 * `source`: internal
 * `success`: boolean
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on` : horodatage avec fuseau horaire
+* `last_modified_on` : horodatage avec fuseau horaire
 * `is_deleted`: boolean
 * `import_id`: text
 * `extra_data`: text
@@ -23,7 +23,7 @@
 * `body`: text
 * `sender`: internal
 * `error_resp`: internal
-* `source_received_on`: timestamp with time zone
+* `source_received_on` : horodatage avec fuseau horaire
 
 ## Analyse et description
 

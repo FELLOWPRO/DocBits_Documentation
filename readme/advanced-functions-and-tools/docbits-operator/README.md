@@ -50,7 +50,7 @@ Utilisez l'icône en haut à gauche pour ouvrir ou fermer la barre latérale. El
   * **Stylo** – Modifier l'invite (disponible uniquement pour les invites de votre propre organisation)
   * **Corbeille** – Supprimer l'invite (disponible uniquement pour les invites de votre propre organisation)
 
-### 3. Save Prompt
+### 3. Enregistrer le prompt
 
 Un clic sur le bouton **Save Prompt** ouvre une fenêtre contextuelle dans laquelle vous pouvez enregistrer l'invite en cours pour un usage ultérieur.
 

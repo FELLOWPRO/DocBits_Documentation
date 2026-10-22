@@ -1,4 +1,4 @@
-# Debug Collector
+# Collecteur de débogage
 
 Le Debug Collector capture un instantané complet de votre session DocBits — activité réseau, erreurs, environnement du navigateur et indicateurs de performance — l'emballe en rapport JSON et peut, sur demande, ouvrir un ticket de support directement depuis la même boîte de dialogue.
 

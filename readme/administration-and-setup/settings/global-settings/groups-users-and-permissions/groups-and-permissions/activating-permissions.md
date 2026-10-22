@@ -1,7 +1,7 @@
 # Activation des autorisations
 
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
-DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
+DocBits Tutoriel Groupes et autorisations : définissez les rôles des utilisateurs, les droits d'accès et sécurisez votre espace de travail
 {% endembed %}
 
 L'activation ou la désactivation du système d'autorisations à l'aide du commutateur a divers effets sur les fonctionnalités de DocBits.
@@ -16,7 +16,7 @@ L'activation ou la désactivation du système d'autorisations à l'aide du commu
 
 <figure><img src="../../../../../.gitbook/assets/prior-u004-fr.png" alt="Matrice de permissions par type de document et action."><figcaption><p>Matrice de permissions par type de document et action.</p></figcaption></figure>
 
-## Only Assigned Documents
+## Documents attribués uniquement
 
 <figure><img src="../../../../../.gitbook/assets/prior-u008-fr.png" alt="Niveaux d’accès par action dans la matrice de permissions."><figcaption><p>Niveaux d’accès par action dans la matrice de permissions.</p></figcaption></figure>
 

@@ -1,4 +1,4 @@
-# Validation & Testing
+# Validation et tests
 
 ## Vidéo: Variables, tests et activation
 
@@ -39,7 +39,7 @@ Le brouillon local est enregistré automatiquement environ toutes les trente sec
 
 Pendant que vous construisez un Advanced Workflow, deux contrôles de la barre d'outils vous permettent de le vérifier sans quitter le générateur. Ils servent aux *vérifications rapides pendant la construction* — pour des tests enregistrés et reproductibles, utilisez le [Test Manager](../test-manager.md).
 
-## Validate
+## Valider
 
 Cliquez sur le contrôle **Validate** (l'icône cercle coché, ou appuyez sur <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). La validation vérifie le graphe à la recherche de problèmes — nœuds non connectés, configuration manquante et connexions invalides — et les signale pour que vous puissiez les corriger avant que le workflow ne s'exécute sur des documents réels.
 

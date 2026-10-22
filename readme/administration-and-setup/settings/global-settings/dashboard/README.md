@@ -58,7 +58,7 @@ Les détails suivants sont inclus :
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_5.png)
 
-## Advance Shipment Dashboard
+## Tableau de bord des avis d’expédition
 
 * **Visibilité des commandes livrées** : Cette fonctionnalité permet à l'utilisateur de spécifier la durée pendant laquelle les commandes livrées seront visibles.
 

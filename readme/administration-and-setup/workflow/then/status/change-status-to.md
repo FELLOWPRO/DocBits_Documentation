@@ -48,7 +48,7 @@ La tarjeta de flujo de trabajo **"Change Status"** ofrece un enfoque ágil para 
 
 **Dónde:** Diseñador de flujos estándar → Entonces → Estado → Cambiar estado a.
 
-**Configuración:** Seleccione la versión 3 de `staus_change`, el estado Pendiente de aprobación (`validated_pending_approval`) y la activación de otros flujos en `false` (`trigger_docflow=false`). Use una factura sintética aislada que cumpla las comprobaciones anteriores.
+**Configuración:** Seleccione la versión 3 de `staus_change`, el estado Aprobación pendiente (`validated_pending_approval`) y la activación de otros flujos en `false` (`trigger_docflow=false`). Use una factura sintética aislada que cumpla las comprobaciones anteriores.
 
 **Resultado esperado y contraejemplo:** Una actualización permitida y correcta coloca el documento en el estado seleccionado. Si una condición anterior es falsa, esta acción no se alcanza y no cambia el estado. Una actualización rechazada o fallida de la API no es un éxito: compruebe el estado real y los registros. La tarjeta no realiza por sí misma una exportación.
 

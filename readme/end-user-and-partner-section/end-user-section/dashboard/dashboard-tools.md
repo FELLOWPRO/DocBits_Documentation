@@ -5,7 +5,7 @@ Las herramientas se encuentran junto al buscador. Pase el puntero por un icono p
 | Herramienta | Uso |
 | --- | --- |
 | Actualizar | Vuelva a cargar la lista y los estados. Un indicador de cambios señala que hay datos más recientes. |
-| Ajustes avanzados (engranaje) | Abra los ajustes de columnas, atajos y registro de importación de correo. Los ajustes de organización requieren permisos de administrador. |
+| Ajustes avanzados (engranaje) | Abra **Más ajustes**, la referencia **Atajos de teclado**, el **Registro de importación** y el diálogo **Configuración de columnas**. Los ajustes de toda la organización requieren permisos de administrador. |
 | Escanear documento | Abra el diálogo si el escaneo está habilitado y hay un escáner compatible. Elija dispositivo y ajustes antes de empezar. |
 | Análisis | Muestre estadísticas por estado y seleccione una categoría para filtrar la lista. |
 | Iniciar importación de correo | Inicie una importación con la configuración de buzón existente. Esta acción no configura un buzón. |

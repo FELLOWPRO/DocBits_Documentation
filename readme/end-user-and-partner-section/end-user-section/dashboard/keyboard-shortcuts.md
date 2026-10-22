@@ -8,4 +8,4 @@ Use Ctrl en Windows/Linux y Cmd en macOS. Los atajos del navegador o sistema pue
 | Ctrl/Cmd + Q | Actualizar la lista del panel. |
 | Ctrl/Cmd + H | Abrir documentación/ayuda. |
 
-Abra el engranaje y el botón del teclado para consultar los atajos en la aplicación. El signo de interrogación del buscador abre la ayuda de campos y sintaxis.
+Abra el menú del engranaje **Ajustes avanzados** y allí **Atajos de teclado** para consultar los atajos en la aplicación. El botón con el signo de interrogación al final derecho de la barra de búsqueda abre la ayuda de campos y sintaxis.

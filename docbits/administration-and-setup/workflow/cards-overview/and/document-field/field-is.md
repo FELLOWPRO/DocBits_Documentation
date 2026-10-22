@@ -2,47 +2,39 @@
 
 <figure><img src="../../../../../.gitbook/assets/image (50).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## When to use it
 
-This workflow card is designed to automate actions based on the presence or state of a specified field within a document. By evaluating whether the field is empty, missing, or populated, it enables workflows to handle documents with precision and accuracy.
+Use this card to check whether a document field is empty or missing, for example when an invoice has no invoice number and needs an additional check. This is a condition; configure the subsequent action separately.
 
-## **Components of the Card:**
+**Where:** Standard workflow → additional conditions (AND) → Document Field.
 
-1. **Field Name**
-   * **Description:** Specifies the name of the field to be evaluated.
-   * **Detail:** This must match the exact identifier used in the document to ensure accurate field detection.
-2. **Operators**
-   * **Description**: Defines the condition that triggers the workflow, based on the presence or state of the field.
-   * **Options**:
-     * **Empty/Not in Document:** The workflow triggers if the field is either missing from the document or is present but empty.
-     * **In Document/Not Empty:** The workflow triggers if the field exists in the document and contains a value.
+## Configuration — version 2
 
-## **Functionality:**
+| Setting | Example value |
+| --- | --- |
+| Field | `invoice_id` — invoice number |
+| Field status | Empty or missing (`field_empty`) |
 
-* **State Detection:** The card monitors the specified field to evaluate its presence and state.
-* **Condition Evaluation:**
-  * The system evaluates whether the specified field is in the state (Empty/Not in Document or In Document/Not Empty) defined by the selected operator.
-*
-
-**Action Execution:**
-* **Empty/Not in Document Condition:** If the field's state matches this condition (i.e., the field is either absent from the document or present but empty), the system initiates the associated actions. These may include generating alerts, flagging the document for review, or halting the workflow.
-* **In Document/Not Empty Condition:** If the field's state matches this condition (i.e., the field exists in the document and contains a value), the system triggers the associated actions. These could involve enabling subsequent workflow steps, updating records, or triggering notifications.
-## **Setup and Configuration:**
-
-* Users select the field from a list of available document fields. The operator is chosen via a dropdown menu, offering clear options for "Empty/Not in Document" or "In Document/Not Empty."
-
-## **Conclusion:**
-
-The "Field Presence and State Validation" workflow card is a critical tool for document processing workflows, ensuring accurate handling of missing or populated fields. By automating actions based on field states, this card enhances data integrity, reduces errors, and ensures workflows operate smoothly and efficiently.
+Select an actual field configured in your organization. The `field_not_empty` option checks whether the field contains a value.
 
 <!-- workflow-card-practical-example-20261021 -->
 
 ## Practical example
 
-**When to use:** Detect invoices whose invoice number still needs review.
+| Example value | Expected result for `field_empty` |
+| --- | --- |
+| Empty or missing field | Condition met |
+| `DEMO-001` | Condition not met |
+| Number present but incorrect | Condition not met — the field still contains a value |
 
-**Configuration:** Select field `invoice_number` and Empty/Not in Document.
+These are expected-result examples. Add an appropriate content condition to validate the number itself; this card checks the field state. In version 2, leading and trailing spaces are removed from text before checking whether the field is empty.
 
-**Expected result and counterexample:** An empty or missing field passes. A populated value such as `DEMO-001` fails this condition.
+## Administrator example video
 
-This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.
+When I use the card, where to find it and how to detect missing invoice numbers. The administrator, office and voice are synthetic; the demonstration shows the real DocBits interface of a test account. The examples show expected results.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/en.mp4" %}
+
+[Open video with English captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/en.html)
+
+[Read transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/en.txt)

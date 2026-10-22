@@ -44,8 +44,8 @@ O cartão de fluxo de trabalho "DocField Comparison Validation" é uma ferrament
 
 **Quando usar:** Revise faturas acima de um valor definido.
 
-**Configuração:** Selecione o campo numérico `net_total`, operador `>` e valor de referência `1000`.
+**Configuração:** Selecione o campo numérico `total_amount`, operador `>` e valor de referência `1000`.
 
-**Resultado esperado e contra-exemplo:** Um valor de `1200` é aprovado. `1000` e `900` falham porque a comparação é estritamente maior que.
+**Resultado esperado e contra-exemplo:** Um valor de `1200` satisfaz a condição. Os valores `1000` e `900` não a satisfazem: o operador `>` exige um valor superior a `1000`.
 
 Esta é uma configuração ilustrativa e resultado esperado. Utilize campos, usuários e grupos configurados em sua organização de teste; não é uma afirmação de que este exemplo foi executado.

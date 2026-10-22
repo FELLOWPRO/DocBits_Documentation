@@ -14,7 +14,7 @@ Prüfen Sie, dass der Export den erwarteten Namen, die erwarteten Karten und bei
 
 Erfassen Sie Abhängigkeiten separat: Organisationsvariablen, Entscheidungstabellen, Benutzer und Gruppen, Dokumentfelder, Unterworkflows und Exportkonfigurationen. Ein Workflow-Export belegt nicht automatisch, dass alle diese Objekte mitgesichert oder in einer anderen Organisation gültig sind.
 
-![Im Aktionsmenü des eigenen Trainingsworkflows lädt Herunterladen den gespeicherten Workflow herunter.](../../.gitbook/assets/wf-practice-20261022-recovery-export-menu-de.png)
+<figure><img src="../../.gitbook/assets/wf-practice-20261022-recovery-export-menu-de.png" alt="Im Aktionsmenü des eigenen Trainingsworkflows lädt Herunterladen den gespeicherten Workflow herunter."><figcaption>Im Aktionsmenü des eigenen Trainingsworkflows lädt Herunterladen den gespeicherten Workflow herunter.</figcaption></figure>
 
 Im Praxisnachweis wurde die tatsächlich heruntergeladene Datei unverändert gesichert: Exportformat `2`, Workflow-Version `3`, sechs Knoten und sechs Verbindungen. Diese Zahlen beschreiben den geprüften Export und sind keine Vorgabe, ältere Dateien von Hand umzuschreiben.
 
@@ -34,7 +34,7 @@ Der [Regressionstest-Leitfaden mit Video](workflow-regression-tests.md) zeigt de
 
 Die App-Version im SDK, die Version einer Karte und die Exportversion einer Workflow-Datei sind unterschiedliche Angaben. Ändern Sie sie nicht nach Vermutung. Verwenden Sie den Export der aktuellen Oberfläche und erhalten Sie dessen Metadaten.
 
-![Die native Versionsauswahl der Dokumenttyp-Karte zeigt im geprüften Trainingsworkflow v2.](../../.gitbook/assets/wf-practice-20261022-recovery-card-version-de.png)
+<figure><img src="../../.gitbook/assets/wf-practice-20261022-recovery-card-version-de.png" alt="Die native Versionsauswahl der Dokumenttyp-Karte zeigt im geprüften Trainingsworkflow v2."><figcaption>Die native Versionsauswahl der Dokumenttyp-Karte zeigt im geprüften Trainingsworkflow v2.</figcaption></figure>
 
 Hier bietet die Versionsauswahl ausschließlich `v2` an. Daraus folgt keine verfügbare ältere Version und keine automatische Wiederherstellung eines früheren Workflow-Stands. Im Beispiel wurde keine Kartenversion gewechselt.
 
@@ -46,11 +46,11 @@ Importieren Sie eine Übung zunächst als eigene inaktive Kopie. Vergleichen Sie
 
 Verwenden Sie die zuvor gesicherte Datei, um eine eigene inaktive Vergleichskopie anzulegen. Kontrollieren Sie nach dem Laden ihre tatsächlichen Werte und führen Sie dieselben Tests aus. Prüfen Sie, ob der eingesetzte Importweg eine neue Regel erstellt oder einen bestehenden Stand aktualisiert; nehmen Sie kein eingebautes Versions-Rollback an.
 
-![Der importierte Workflow Wiederhergestellt ALL erscheint als eigene inaktive Regel.](../../.gitbook/assets/wf-practice-20261022-recovery-inactive-copy-de.png)
+<figure><img src="../../.gitbook/assets/wf-practice-20261022-recovery-inactive-copy-de.png" alt="Der importierte Workflow Wiederhergestellt ALL erscheint als eigene inaktive Regel."><figcaption>Der importierte Workflow Wiederhergestellt ALL erscheint als eigene inaktive Regel.</figcaption></figure>
 
 Für diese Übung wurde nur der Name in der Exportdatei ergänzt und die Datei über **Workflow importieren** hochgeladen. Nach der Dateiauswahl begann der Import unmittelbar. Das Original blieb erhalten; die neue Regel war inaktiv. Der anschließend geladene Graph enthielt dieselben Knoten, Verbindungen, Parameter und gewählten Kartenversionen. Die Ladefunktion ergänzte lediglich Informationen zu den verfügbaren Kartenversionen.
 
-![Der Advanced Test des wiederhergestellten Workflows besteht alle sechs Knoten ohne Fehler.](../../.gitbook/assets/wf-practice-20261022-recovery-test-result-de.png)
+<figure><img src="../../.gitbook/assets/wf-practice-20261022-recovery-test-result-de.png" alt="Der Advanced Test des wiederhergestellten Workflows besteht alle sechs Knoten ohne Fehler."><figcaption>Der Advanced Test des wiederhergestellten Workflows besteht alle sechs Knoten ohne Fehler.</figcaption></figure>
 
 Der unveränderte Positivfall mit `invoice_id=WF-TRAINING-001` und `total_amount=1785` als `AMOUNT` bestand erneut alle sechs Schritte. Das ist ein **Advanced Test mit benutzerdefinierten Daten**. Er belegt die geprüfte Graph-Ausführung; eine gespeicherte Änderung an einem realen Beleg oder die Rücknahme früherer Aktionen ist damit nicht nachgewiesen.
 

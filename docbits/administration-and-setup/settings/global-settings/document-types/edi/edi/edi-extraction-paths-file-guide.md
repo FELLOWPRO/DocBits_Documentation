@@ -25,11 +25,11 @@ Example field mapping:
 
 1.  Go to **Settings** → **Document Type** → _\[Your Document (e.g., Purchase Order)]_ → **E-Doc**.\\
 
-    <figure><img src="../../../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-en.png" alt="Existing EDI format with its four configured attributes."><figcaption><p>Existing EDI format with its four configured attributes.</p></figcaption></figure>
 2. Under the **E-Doc** tab, select your format (e.g., **EDI**).
 3.  Click **Extraction Paths** to view or edit the file.\\
 
-    <figure><img src="../../../../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/site-all-edi-extraction-paths-en.png" alt="Active EXTRACTIONPATHS attribute: JSON configuration containing XPath extraction expressions."><figcaption><p>Active EXTRACTIONPATHS attribute: JSON configuration containing XPath extraction expressions.</p></figcaption></figure>
 
 #### **Draft Management:**
 
@@ -50,8 +50,8 @@ The Extraction Paths File is written in **JSON** and contains two main component
 
 You can also use XPath functions (e.g., `sum()`) and expressions to calculate values dynamically from repeating elements.
 
-```
-jsonCopyEdit"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
+```json
+"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
 ```
 
 ## 5. Preview Function (Evaluate Extraction)
@@ -65,13 +65,13 @@ The **Preview Function** allows you to simulate how the extraction paths will be
 * Go to the **Extraction Paths** interface.
 * Open the **Preview Function**.\
   \
-  ![](<../../../../../../.gitbook/assets/image (21).png>)
+
 * Enter the Document ID and click **Test**.
 * The result will show how each field and table is populated based on the configured paths.
 
 This feature is essential for verifying that your XPath expressions are correctly defined and pulling the expected values before activating the draft.
 
-<figure><img src="../../../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+
 
 ## 6. Video Walkthrough
 
@@ -81,3 +81,6 @@ Use it to follow along with setup, editing, and previewing.
 ## Effective rules and activation
 
 If an electronic credit note appears as Invoice, follow the [classification troubleshooting guide](../credit-note-recognized-as-invoice.md). It covers the effective custom/default source, type codes, Extraction Paths and safe activation.
+
+
+The views show an existing configuration and version. Settings vary by document type and format. Validate changes in a draft before activation.

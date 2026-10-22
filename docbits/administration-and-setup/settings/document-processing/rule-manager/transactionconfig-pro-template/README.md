@@ -1,125 +1,121 @@
 # TransactionConfig Pro Template
 
-## Comprehensive Configuration Tool for Financial Document Processing
+## Configuring Financial Document Processing
 
-_TransactionConfig Pro Template_ is a powerful configuration tool designed for enterprise environments to manage the processing of financial documents, such as invoices, debit notes, and credit notes. The tool provides detailed mapping and field definitions that allow businesses to automate and customize their financial workflows with precision. Integrating seamlessly with existing Infor ERP systems, _TransactionConfig Pro Template_ ensures accurate handling of complex transactions while maintaining compliance with global financial standards.
+_TransactionConfig Pro Template_ documents mapping examples for financial documents such as invoices, debit notes and credit notes. Rule Manager can use configured `conflict_resolution` rules and expressions to determine processing actions. This documentation does not establish that a predefined template is deployed in your environment.
 
-### Key Features
+Field mappings, transaction types and workflow decisions must be configured for the relevant Infor M3/LN integration. These examples can help explain that configuration; they do not guarantee accurate results, seamless integration or compliance with global financial standards.
 
-• Detailed Mapping: Allows for precise mapping of fields across various transaction types, ensuring data consistency and accuracy.
+### Configuration Areas
 
-• Customization: Supports customization of financial document workflows to meet specific business needs.
+* **Mapping:** Define source and target fields for each transaction type and verify the resulting data.
+* **Customization:** Configure the rules for the business workflow and approval process.
+* **Automation:** Automate only the decisions explicitly covered by the active rules and expressions.
+* **Integration:** Check the export mapping and requirements of the target Infor M3/LN system.
+* **Compliance:** Review accounting and tax requirements separately; configuration alone is no guarantee of legal compliance.
 
-• Automation: Automates the handling of financial transactions, reducing manual errors and increasing efficiency.
+## Illustrative Conflict Resolution Cases
 
-• Integration: Easily integrates with existing Infor M3/LN ERP systems, enhancing the overall financial processing capabilities of the organization.
+The following scenario is an illustrative configured mapping, not a verified deployed default template. Actual output, amounts, signs and document types depend on the active `conflict_resolution` rules and expressions, export mapping and approval decisions. Any debit or credit note described below is conditional on that configuration; the example does not guarantee automatic issuance or legal compliance.
 
-• Compliance: Ensures compliance with international financial standards and regulations, helping businesses manage global transactions effectively.
+### [Cases 1, 2, 3: Quantity and Unit Price Within Tolerance](case-1-2-3-quantity-and-unit-price-within-tolerance.md)
 
+**Scenario:** Both invoice quantity and unit price are within the configured PO tolerances.
 
+**Illustrative action:** The illustrative mapping accepts the invoice values and calculates quantity × unit price.
 
-## Detailed Explanation of Conflict Resolution Cases
+### [Cases 4, 5: Quantity Within Tolerance, Price Outside Tolerance (Approved)](case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved.md)
 
-_TransactionConfig Pro Template_ includes a series of predefined rules to handle common discrepancies between invoice data and purchase order (PO) data. These rules are designed to automate decision-making when variances occur, ensuring consistency and accuracy in financial processing.
+**Scenario:** Quantity is within tolerance; the price variance is outside tolerance and approved.
 
-### [Case 1, 2, 3: Quantity and Unit Price Within Tolerance](case-1-2-3-quantity-and-unit-price-within-tolerance.md)
+**Illustrative action:** The illustrative mapping uses the PO unit price and maps the approved difference as a line charge where configured.
 
-**Scenario:** Both the quantity and unit price on the invoice are within an acceptable tolerance range compared to the purchase order.
+### [Case 6: Quantity Within Tolerance, Price Below Tolerance (Rejected)](case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
 
-• **Action:** The system accepts the invoice values and calculates the total amount based on the provided quantity and unit price.
+**Scenario:** Quantity is within tolerance; the price is below the permitted range and rejected.
 
-### [Case 4, 5: Quantity Within Tolerance, Unit Price Outside Tolerance (Approved)](case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved.md)
+**Illustrative action:** The illustrative mapping uses the PO price. The signed difference is not automatically a credit note; adjustment type and sign depend on the mapping.
 
-**Scenario:** The quantity on the invoice is within tolerance, but the unit price is outside tolerance, and this variance has been approved.
+### [Case 7: Quantity Within Tolerance, Price Above Tolerance (Rejected)](case-7-quantity-within-tolerance-unit-price-outside-tolerance-positive-rejected.md)
 
-• **Action:** The system adjusts the unit price to match the purchase order and applies any necessary line charges to account for the difference.
+**Scenario:** Quantity is within tolerance; the positive price variance is rejected.
 
-### [Case 6: Quantity Within Tolerance, Unit Price Outside Negative Tolerance (Rejected)](case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
+**Illustrative action:** The illustrative mapping uses the PO price. Any note or adjustment for the difference depends on the export mapping.
 
-**Scenario:** The quantity is within tolerance, but the unit price is below the acceptable range (negative tolerance) and is not approved.
+### [Cases 8a, 9a: Quantity Outside Tolerance (Approved), Price Within Tolerance](case-8a-9a-quantity-outside-tolerance-approved-unit-price-within-tolerance.md)
 
-• **Action:** The system rejects the unit price, adjusts it to match the purchase order, and generates a credit note for the difference. Additional header charges may be applied as necessary.
+**Scenario:** The quantity variance is approved and the price remains within tolerance.
 
-### [Case 7: Quantity Within Tolerance, Unit Price Outside Tolerance (Positive Rejected)](case-7-quantity-within-tolerance-unit-price-outside-tolerance-positive-rejected.md)
+**Illustrative action:** The illustrative mapping uses the approved invoice quantity and the invoice unit price.
 
-**Scenario:** The quantity is within tolerance, but the unit price exceeds the acceptable range (positive tolerance) and is not approved.
+### [Case 11a: Quantity Above Tolerance (Rejected), Price Within Tolerance](case-11a-quantity-outside-tolerance-positive-rejected-unit-price-within-tolerance.md)
 
-• **Action:** The system rejects the invoice unit price, adjusts it to match the purchase order, and may generate a debit note to account for the overcharged amount.
+**Scenario:** Quantity exceeds tolerance and is rejected; price is within tolerance.
 
-### [Case 8a, 9a: Quantity Outside Tolerance (Approved), Unit Price Within Tolerance](case-8a-9a-quantity-outside-tolerance-approved-unit-price-within-tolerance.md)
+**Illustrative action:** The illustrative mapping uses the approved quantity and retains the unit price. Handling of excess quantity depends on the configured rules.
 
-**Scenario:** The quantity on the invoice is outside the acceptable tolerance but has been approved, while the unit price remains within tolerance.
+### [Case 10a: Quantity Below Tolerance (Rejected), Price Within Tolerance](case-10a-quantity-outside-tolerance-negative-rejected-unit-price-within-tolerance.md)
 
-• **Action:** The system accepts the approved quantity and the unit price as per the invoice and processes the transaction accordingly.
+**Scenario:** Quantity is below tolerance and rejected; price is within tolerance.
 
-### [Case 11a: Quantity Outside Tolerance (Positive Rejected), Unit Price Within Tolerance](case-11a-quantity-outside-tolerance-positive-rejected-unit-price-within-tolerance.md)
+**Illustrative action:** The illustrative mapping uses the approved quantity while retaining the unit price.
 
-**Scenario:** The quantity on the invoice exceeds the acceptable range (positive) and is rejected, but the unit price is within tolerance.
+### [Cases 8b, 9b: Quantity and Price Outside Tolerance (Approved)](case-8b-9b-quantity-outside-tolerance-approved-unit-price-outside-tolerance-approved.md)
 
-• **Action:** The system adjusts the quantity to the approved level, maintaining the unit price, and processes the transaction. Any excess quantity is rejected and not invoiced.
+**Scenario:** Both quantity and price variances are approved.
 
-### [Case 10a: Quantity Outside Tolerance (Negative Rejected), Unit Price Within Tolerance](case-10a-quantity-outside-tolerance-negative-rejected-unit-price-within-tolerance.md)
+**Illustrative action:** The illustrative mapping uses approved invoice values and any explicitly configured line charges or adjustments.
 
-**Scenario:** The quantity is below the acceptable range (negative tolerance) and is not approved, though the unit price is within tolerance.
+### [Case 10b: Quantity Below Tolerance and Price Outside Tolerance (Rejected)](case-10b-quantity-outside-tolerance-negative-rejected-unit-price-outside-tolerance-rejected.md)
 
-• **Action:** The system adjusts the quantity to match the approved level, keeping the unit price consistent. The transaction is processed accordingly.
+**Scenario:** Neither the negative quantity variance nor the price variance is approved.
 
-### [Case 8b, 9b: Quantity Outside Tolerance (Approved), Unit Price Outside Tolerance (Approved)](case-8b-9b-quantity-outside-tolerance-approved-unit-price-outside-tolerance-approved.md)
+**Illustrative action:** The illustrative mapping uses PO or approved values. Any debit or credit note requires the corresponding mapping and approval outcome.
 
-**Scenario:** Both the quantity and unit price are outside the tolerance range but have been approved.
+### [Case 11b: Quantity Above Tolerance and Price Outside Tolerance (Rejected)](case-11b-quantity-outside-tolerance-positive-rejected-unit-price-outside-tolerance-rejected.md)
 
-• **Action:** The system processes the transaction using the invoice values for both quantity and unit price, applying any necessary adjustments or line charges.
+**Scenario:** The positive quantity variance and the price variance are rejected.
 
-### [Case 10b: Quantity Outside Tolerance (Negative Rejected), Unit Price Outside Tolerance (Rejected)](case-10b-quantity-outside-tolerance-negative-rejected-unit-price-outside-tolerance-rejected.md)
+**Illustrative action:** The illustrative mapping uses approved PO values; handling of excesses depends on the active configuration.
 
-**Scenario:** Both the quantity and unit price are outside tolerance, and neither has been approved.
+### [Cases 12, 13: Charge Line - Charge Per Unit Within Tolerance](charge-per-unit-within-tolerance.md)
 
-• **Action:** The system rejects the invoice data, adjusts the values to match the purchase order, and generates necessary debit or credit notes.
+**Scenario:** The line charge per unit is within the configured PO tolerance.
 
-### [Case 11b: Quantity Outside Tolerance (Positive Rejected), Unit Price Outside Tolerance (Rejected)](case-11b-quantity-outside-tolerance-positive-rejected-unit-price-outside-tolerance-rejected.md)
-
-**Scenario:** The quantity exceeds the acceptable range (positive) and is rejected, and the unit price is also outside tolerance and rejected.
-
-• **Action:** The system adjusts the quantity and unit price to match the approved levels from the purchase order, rejecting any excesses, and processes the transaction.
-
-### [Case 12, 13: Charge Line - Charge Per Unit Within Tolerance](case-12-13-header-charge-charge-per-unit-within-tolerance.md)
-
-**Scenario:** The charge per unit on the invoice is within the acceptable tolerance range compared to the purchase order.
-
-• **Action:** The system accepts the charge per unit as invoiced and processes the transaction without adjustments.
+**Illustrative action:** The illustrative mapping accepts the invoiced line charge without adjustment.
 
 ### [Case 14: Charge Line - Charge Per Unit Outside Tolerance (Approved)](charge-per-unit-outside-tolerance-approved-1.md)
 
-**Scenario:** The charge per unit is outside tolerance but has been approved.
+**Scenario:** The line charge per unit is outside tolerance and approved.
 
-• **Action:** The system accepts the charge per unit and applies the approved charges, processing the transaction accordingly.
+**Illustrative action:** The illustrative mapping applies the approved line charge.
 
 ### [Case 15: Charge Line - Charge Per Unit Outside Tolerance (Rejected)](charge-per-unit-outside-tolerance-rejected.md)
 
-**Scenario:** The charge per unit is outside tolerance and has not been approved.
+**Scenario:** The line charge per unit is outside tolerance and rejected.
 
-• **Action:** The system adjusts the charge per unit to match the purchase order or approved levels, generating any necessary debit or credit notes.
+**Illustrative action:** The illustrative mapping uses the PO or approved line charge. Any note for the difference depends on the export mapping.
 
-### [Case 12, 13: Header Charge - Charge Per Unit Within Tolerance](case-12-13-header-charge-charge-per-unit-within-tolerance.md)
+### [Cases 12, 13: Header Charge - Charge Per Unit Within Tolerance](case-12-13-header-charge-charge-per-unit-within-tolerance.md)
 
-**Scenario:** The header charge per unit is within the acceptable tolerance range compared to the purchase order.
+**Scenario:** The header charge per unit is within the configured PO tolerance.
 
-• **Action:** The system processes the header charge as invoiced, applying it without adjustments.
+**Illustrative action:** The illustrative mapping applies the invoiced header charge without adjustment.
 
 ### [Case 14: Header Charge - Charge Per Unit Outside Tolerance (Approved)](charge-per-unit-outside-tolerance-approved.md)
 
-**Scenario:** The header charge per unit is outside tolerance but has been approved.
+**Scenario:** The header charge per unit is outside tolerance and approved.
 
-• **Action:** The system processes the approved charge per unit, applying it to the transaction.
+**Illustrative action:** The illustrative mapping applies the approved header charge.
 
 ### [Case 15: Header Charge - Charge Per Unit Outside Tolerance (Rejected)](case-15-header-charge-charge-per-unit-outside-tolerance-rejected.md)
 
-**Scenario:** The header charge per unit is outside tolerance and has not been approved.
+**Scenario:** The header charge per unit is outside tolerance and rejected.
 
-• **Action:** The system adjusts the header charge to match the purchase order, processing the transaction accordingly, and generating any necessary notes.
+**Illustrative action:** The illustrative mapping uses the PO or approved header charge. Any separate note depends on the configured handling.
 
-### [tax-lines.md](tax-lines.md "mention")
+### [Tax Lines](tax-lines.md "mention")
 
-**Scenario:** Handles discrepancies in tax amounts between the invoice and purchase order.
+**Scenario:** Tax amounts on the invoice and PO differ.
 
-• **Action:** The system adjusts the tax lines according to the approved tax rates and amounts, ensuring compliance with applicable tax regulations.
+**Illustrative action:** The illustrative mapping uses approved tax rates and amounts. The configuration must be checked against applicable tax requirements; the example guarantees no legal compliance.

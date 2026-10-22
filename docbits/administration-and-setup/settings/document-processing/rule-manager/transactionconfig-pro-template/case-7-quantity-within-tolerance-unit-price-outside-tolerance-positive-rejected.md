@@ -1,5 +1,7 @@
 # Case 7: Quantity Within Tolerance, Unit Price Outside Tolerance (Positive Rejected)
 
+The following scenario is an illustrative configured mapping, not a verified deployed default template. Actual output, amounts, signs and document types depend on the active `conflict_resolution` rules and expressions, export mapping and approval decisions. Any debit or credit note described below is conditional on that configuration; the example does not guarantee automatic issuance or legal compliance.
+
 ## Scenario:
 
 The quantity is within tolerance, but the unit price exceeds the acceptable range (positive tolerance) and is not approved.

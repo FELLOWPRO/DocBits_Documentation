@@ -18,11 +18,11 @@ This preview is displayed during **field validation** and is also included when 
 
 1.  Go to **Settings** → **Document Type** → _\[Your Document (e.g., Purchase Order)]_ → **E-Doc**.\\
 
-    <figure><img src="../../../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-en.png" alt="Existing EDI format with its four configured attributes."><figcaption><p>Existing EDI format with its four configured attributes.</p></figcaption></figure>
 2. Under the **E-Doc** tab, select your format (e.g., **EDI**).
 3.  Click **Preview** to view or edit the file.\\
 
-    <figure><img src="../../../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/site-all-edi-preview-en.png" alt="Active PREVIEW attribute: XSLT source in the editor; this view does not show the rendered document preview."><figcaption><p>Active PREVIEW attribute: XSLT source in the editor; this view does not show the rendered document preview.</p></figcaption></figure>
 
 #### **Draft Management:**
 
@@ -55,15 +55,18 @@ The Preview Function allows you to test and verify how an EDI document is render
 * Navigate to the **Preview** interface.
 * Open the **Preview Function**.\
   \
-  ![](<../../../../../../.gitbook/assets/image (21).png>)
+
 * Enter the Document ID and click **Test**.
 * The rendered PDF-style preview will be displayed using the HTML/CSS/XSLT setup.
 
 This feature is crucial for debugging data bindings, refining layout, and ensuring the document is both accurate and visually clear for users and downstream systems like **IDM**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+
 
 ## 6. Video Walkthrough
 
 A video guide for this file type is available on the [Videos page.](edi-videos.md)\
 Use it to follow along with setup, editing, and previewing.
+
+
+The views show an existing configuration and version. Settings vary by document type and format. Validate changes in a draft before activation.

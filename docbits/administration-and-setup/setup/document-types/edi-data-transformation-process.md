@@ -2,12 +2,15 @@
 
 {% embed url="https://youtu.be/OmYbGG0ea0w?si=7okB6WP8kiKIZuec" %}
 
-<figure><img src="../../../.gitbook/assets/EDI.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-all-edi-list-en.png" alt="Existing EDI format with its four configured attributes."><figcaption><p>Existing EDI format with its four configured attributes.</p></figcaption></figure>
 
-#### Step 1: Structure Descriptor
+DocBits parses the raw EDI message into JSON using a JSON structure descriptor. It then creates intermediate XML, applies XSLT to produce the standard XML, and uses that XML for field/table extraction and the preview.
 
-* **Format**: JSON
-* **Purpose**: This step involves defining the structure of the EDI data. It includes specifying segments such as `SAC`, `N1`, and `PO1`, and details the fields contained within each segment. For segments that contain nested structures, loops are defined to properly organize the data hierarchy.
+The examples below are illustrative fragments, not complete configurations ready to import. Some omit content or contain placeholders such as `...`. Adapt and test them against your actual EDI message, intermediate XML and transformed output; retain the field identifiers required by your configuration.
+
+## Step 1: Describe the EDI structure
+
+The JSON structure descriptor defines segments such as SAC, N1 and PO1, their fields and nested loops. It controls how the raw EDI message is parsed into structured JSON.
 
 ```json
 {
@@ -22,10 +25,9 @@
 }
 ```
 
-#### Step 2: Transformation Using XSLT
+## Step 2: Transform intermediate XML with XSLT
 
-* **Format**: XSLT
-* **Purpose**: This step involves transforming the structured JSON data into a structured XML format, specifically tailoring the output to meet the requirements for further processing or integration. This transformation helps in extracting precise information like acknowledgement types, order details, and conditional elements based on specific values.
+DocBits converts the parsed JSON to intermediate XML before applying the transformation stylesheet. XSLT reads this intermediate XML, not the JSON directly, and produces the standard XML structure used for further processing. The example selects acknowledgement data and conditions from XML nodes.
 
 ```xml
 <xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -49,10 +51,9 @@
 
 ```
 
-#### Step 3: Preview (HTML Conversion)
+## Step 3: Build an HTML preview
 
-* **Format**: XSLT (outputting HTML)
-* **Purpose**: Converts the XML data from Step 2 into an HTML format for previewing the transformed data in a readable and visually appealing format. The HTML layout includes styles for presentation and structures data like purchase orders, supplier details, and order terms for easy viewing.
+A preview stylesheet converts the transformed XML from step 2 to HTML. Adapt its layout and data bindings to the document type and verify that the preview represents the transformed data correctly.
 
 ```xml
 <xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -77,10 +78,9 @@
 
 ```
 
-#### Step 4: Extraction Paths
+## Step 4: Configure XPath extraction
 
-* **Format**: JSON
-* **Purpose**: Specifies JSON paths for extracting key values from the XML data produced in Step 2. These paths are used to retrieve specific data points such as purchase orders and currency, which are crucial for downstream processing and integration into other systems.
+The extraction configuration is stored in JSON, but its paths are XPath expressions evaluated against the transformed XML from step 2. Field paths select values; a table row path selects rows, and column paths select values within each row. These are not JSONPath expressions.
 
 ```json
 {
@@ -102,4 +102,7 @@
 }
 ```
 
-This updated sequence ensures a thorough process, transforming raw EDI data into structured, actionable information using JSON for data structuring, XSLT for transformation and HTML preview, followed by JSON paths for data extraction and integration.
+The complete flow is raw EDI → structured JSON → intermediate XML → standard XML through XSLT → field/table extraction with XPath and an HTML preview. Validate the output and extracted values with representative messages before using a configuration in production.
+
+
+The views show an existing configuration and version. Settings vary by document type and format. Validate changes in a draft before activation.

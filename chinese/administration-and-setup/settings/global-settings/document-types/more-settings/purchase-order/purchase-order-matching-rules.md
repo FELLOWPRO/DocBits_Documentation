@@ -1,5 +1,13 @@
 # 采购订单匹配规则
 
+## 配置采购订单匹配规则和容差
+
+本教程打开“发票”文档类型，检查已发布的规则版本，并将其克隆为未激活的草稿。内容包括规则类型、匹配阶段内的优先级、比较列、数量基准、匹配模式以及容差计算。仅保存教程草稿；活动版本和全局容差保持不变。百分之五的计算只是示例，并不修改当前容差。
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/zh.mp4" %}
+
+[观看带字幕的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/zh.html)
+
 ## 简介：采购订单与采购订单规则管理
 
 采购订单（PO）匹配是确保采购订单（PO）与相应的收到的发票或收货单保持一致的关键流程。建立完善的规则集对于提高自动匹配率、防止欺诈并确保付款正确至关重要。

@@ -44,7 +44,7 @@ Die Workflow-Karte "DocField Comparison Validation" ist ein robustes Werkzeug f�
 
 **Wann zu verwenden:** Überprüfen Sie Rechnungen über einem definierten Betrag.
 
-**Konfiguration:** Wählen Sie das numerische Feld `net_total`, den Operator `>` und den Referenzwert `1000`.
+**Konfiguration:** Wählen Sie das numerische Feld `total_amount`, den Operator `>` und den Referenzwert `1000`.
 
 **Erwartetes Ergebnis und Gegenbeispiel:** Ein Wert von `1200` gilt. `1000` und `900` schlagen fehl, weil der Vergleich unbedingt größer als ist.
 

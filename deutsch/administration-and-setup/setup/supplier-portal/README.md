@@ -21,7 +21,7 @@ Diese Seite erklärt, wie man das **Lieferanten-Portal** aktiviert und nutzt, so
 
 Sobald die Funktion **Lieferanten-Portal** aktiviert ist, erscheint ein neuer Abschnitt **Einstellungen des Lieferanten** am Ende des Menüs **Einstellungen**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_suppplier_settings.png)
+<figure><img src="../../../.gitbook/assets/supplier_general_settings-de.png" alt="Allgemeine Einstellungen des Lieferantenportals: zusätzliche Felder der Einladung."><figcaption><p>Allgemeine Einstellungen des Lieferantenportals: zusätzliche Felder der Einladung.</p></figcaption></figure>
 
 [**Allgemeine Einstellungen des Lieferanten**](../../settings/supplier-setting/supplier-general-settings.md): Hier können Sie das **Lieferanten-Portal** anpassen, indem Sie Ihr Firmenlogo hochladen, das im Header aller E-Mail-Vorlagen angezeigt wird, und rechtliche Dokumente wie die Nutzungsbedingungen und die Datenschutzrichtlinie verwalten.
 

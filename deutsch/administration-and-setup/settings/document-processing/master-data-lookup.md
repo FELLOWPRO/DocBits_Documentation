@@ -5,7 +5,7 @@
 
 Mit dem **Master Data Lookup** (Seitenleiste: **Lookup Master Data**) können Sie die Stammdaten einsehen und verwalten, mit denen DocBits extrahierte Dokumentdaten gegen Ihr ERP-System validiert. Er ist unverzichtbar für ein korrektes PO Matching, die Lieferantenvalidierung und die automatische Vervollständigung von Feldern. Sie öffnen ihn über **Settings → Document Processing → Lookup Master Data**.
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_overview.png" alt="Master Data Lookup"><figcaption><p>Seite „Master Data Lookup“ – Datenquellen und Datentabelle</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-overview-de.png" alt="Deutsche Stammdatenansicht mit ausgeblendeten Datensätzen. Spaltenbezeichnungen der Datenquelle wie Address und Custom Field bleiben im Bild englisch."><figcaption><p>Deutsche Stammdatenansicht mit ausgeblendeten Datensätzen. Spaltenbezeichnungen der Datenquelle wie Address und Custom Field bleiben im Bild englisch.</p></figcaption></figure>
 
 ## Datenquellen
 
@@ -33,7 +33,7 @@ Die Tabellen Supplier und Purchase Order enthalten Spalten wie Supplier ID, Supp
 
 Klicken Sie unten links im Datenquellen-Panel auf **Settings** (Zahnradsymbol), um die Stammdaten-Einstellungen zu öffnen.
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_settings.png" alt="Einstellungen für den Master Data Lookup"><figcaption><p>Einstellungen für Supplier BOD und Purchase Order Deletion</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-settings-de.png" alt="Deutsche Einstellungen für Lieferanten-BOD und Bestellaufbewahrung. Die fehlerhafte Überschrift „Löschung von Bestellungen Assistentin“ ist der tatsächliche Produkttext; Einstellungen wurden nicht geändert."><figcaption><p>Deutsche Einstellungen für Lieferanten-BOD und Bestellaufbewahrung. Die fehlerhafte Überschrift „Löschung von Bestellungen Assistentin“ ist der tatsächliche Produkttext; Einstellungen wurden nicht geändert.</p></figcaption></figure>
 
 ### Supplier BOD
 

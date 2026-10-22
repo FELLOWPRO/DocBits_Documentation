@@ -2,18 +2,18 @@
 
 ## Übersicht
 
-Sie können eine alternative Exportoption konfigurieren, die im Dropdown-Menü für den Export im Bereich der Bestellnummer angezeigt wird, wenn ein Dokument einen bestimmten Status hat.\
+Sie können eine alternative Exportoption konfigurieren, die im Dropdown-Menü für den Export im Bestellabgleich angezeigt wird, wenn ein Dokument einen bestimmten Status hat.\
 Diese Seite erklärt, wie Sie diese Option einrichten.
 
 ## Aktivierungsschritte
 
-1. Gehen Sie zu **Einstellungen** -> **Globale Einstellungen** -> **Dokumenttypen**
-2.  Wählen Sie den gewünschten Dokumenttyp aus und klicken Sie auf **Weitere Einstellungen**.
+1. Gehen Sie zu **Einstellungen → Dokumenttypen**
+2.  Öffnen Sie über das Zahnrad des gewünschten Dokumenttyps dessen Einstellungen.
 
-    ![](../../../../../../.gitbook/assets/po_settings_1_de.png)
-3.  Im Bereich **Bestellnummer** navigieren Sie zur Option **Alternativer Export**.
+    <figure><img src="../../../../../../.gitbook/assets/site-extra-document-types-de.png" alt="Aktuelle deutsche Dokumenttypenübersicht. Über das Zahnrad des gewünschten Dokumenttyps öffnen Sie dessen Einstellungen; es wurde kein Schalter geändert."><figcaption><p>Aktuelle deutsche Dokumenttypenübersicht. Über das Zahnrad des gewünschten Dokumenttyps öffnen Sie dessen Einstellungen; es wurde kein Schalter geändert.</p></figcaption></figure>
+3.  Öffnen Sie den Bereich **Einstellungen exportieren** und dort **Alternativer Export**. Die aktuelle Bereichsüberschrift ist fehlerhaft übersetzt; gemeint sind die Exporteinstellungen.
 
-    ![](../../../../../../.gitbook/assets/po_settings_alternate_export_1_de.png)
+    <figure><img src="../../../../../../.gitbook/assets/site-complete-invoice-export-settings-de.png" alt="Aktuelle deutsche Einstellungen zum alternativen Export. Die Überschrift lautet fehlerhaft „Einstellungen exportieren“ und meint Exporteinstellungen. Status legt die Verfügbarkeit fest; „Test“ ist eine Beispielkonfiguration. Es wurde kein Export ausgeführt."><figcaption><p>Aktuelle deutsche Einstellungen zum alternativen Export. Die Überschrift lautet fehlerhaft „Einstellungen exportieren“ und meint Exporteinstellungen. Status legt die Verfügbarkeit fest; „Test“ ist eine Beispielkonfiguration. Es wurde kein Export ausgeführt.</p></figcaption></figure>
 
 ## So richten Sie es ein
 
@@ -36,6 +36,6 @@ Sie können zwischen den folgenden Status wählen:
 * Fehler
 * In Überprüfung
 
-Nach der Einrichtung wird eine zusätzliche Exportoption im Bereich der Bestellnummer angezeigt, die mit den Exportoptionen übereinstimmt. Diese Option verwendet die angegebene Exportkonfiguration, wenn das Dokument den definierten Status erfüllt.
+Nach der Einrichtung wird eine zusätzliche Exportoption im Bestellabgleich angezeigt, die mit den Exportoptionen übereinstimmt. Diese Option verwendet die angegebene Exportkonfiguration, wenn das Dokument den definierten Status erfüllt.
 
-![](../../../../../../.gitbook/assets/po_settings_alternate_export_2_de.png)
+<!-- Obsolete illustration retired: Unverified historical matching result is not current export-configuration evidence -->

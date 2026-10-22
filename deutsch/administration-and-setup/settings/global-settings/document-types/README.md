@@ -19,7 +19,7 @@ Dokumenttypen legen fest, welche Felder und Verarbeitungseinstellungen für eine
 | Steuerelement | Bedeutung |
 | --- | --- |
 | Aktivieren | Schaltet den Dokumenttyp für die Verarbeitung ein oder aus. |
-| Extraction | Wählt den angezeigten Extraktionsmodus Flex oder Fix. Dieser Schalter ist von der Aktivierung des Dokumenttyps getrennt. |
+| Extraktion (in älteren Ansichten „Extraction“) | Wählt den angezeigten Extraktionsmodus Flex oder Fix. Dieser Schalter ist von der Aktivierung des Dokumenttyps getrennt. |
 | Zahnrad | Öffnet weitere Einstellungen des Dokumenttyps. |
 
 Welche Verknüpfungen erscheinen, hängt vom Dokumenttyp, den Berechtigungen und den aktivierten Modulen ab. Dazu gehören Layouts, Felder, Tabellen, Skripte, Modelltraining und Dokument-Untertypen. Transformationsregeln, Validierungsregeln und E-Doc-Einstellungen werden bei den entsprechenden Funktionen angeboten. Weitere Optionen können innerhalb der Dokumenttyp-Einstellungen liegen.

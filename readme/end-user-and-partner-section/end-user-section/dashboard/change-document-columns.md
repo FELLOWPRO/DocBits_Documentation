@@ -1,7 +1,7 @@
 # Modificare le colonne del documento
 
-1. Apri l’ingranaggio accanto alla ricerca.
-2. Apri le impostazioni delle colonne.
+1. Seleziona l’ingranaggio **Impostazioni avanzate** a destra della barra di ricerca della dashboard.
+2. Seleziona il pulsante **Impostazioni delle colonne** nel menu.
 3. Cerca nelle colonne nascoste o visibili. Seleziona le colonne e spostale con le frecce.
 4. Trascina le maniglie delle colonne visibili per ordinarle.
 5. Se necessario, aggiungi campi scegliendo un tipo di documento e i campi richiesti.

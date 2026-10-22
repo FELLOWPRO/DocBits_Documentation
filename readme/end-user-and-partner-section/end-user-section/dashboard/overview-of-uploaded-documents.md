@@ -10,6 +10,6 @@ Se il raggruppamento è disponibile, seleziona un campo sopra la tabella. Per i 
 
 Usa **+** accanto alle schede per mostrare altri tipi di documento. Riordina le schede trascinandole. Rimuovere una scheda cambia solo la vista e non elimina documenti.
 
-Apri l’ingranaggio e le impostazioni delle colonne. Sposta le colonne tra gli elenchi nascosti e visibili e trascina quelle visibili per ordinarle. Puoi aggiungere anche campi di un tipo di documento. Vedi [Modificare le colonne del documento](change-document-columns.md).
+Apri l’ingranaggio **Impostazioni avanzate** a destra della barra di ricerca, poi il pulsante **Impostazioni delle colonne** nel suo menu. Sposta le colonne tra gli elenchi nascosti e visibili e trascina quelle visibili per ordinarle. Puoi aggiungere anche campi di un tipo di documento. Vedi [Modificare le colonne del documento](change-document-columns.md).
 
 La [guida alla dashboard](README.md) descrive ricerca, azioni e viste salvate.

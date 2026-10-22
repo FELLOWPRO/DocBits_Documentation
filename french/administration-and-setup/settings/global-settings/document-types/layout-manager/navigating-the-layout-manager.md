@@ -4,7 +4,7 @@ Utilisez le **Module de création de mise en page** pour organiser les champs et
 
 ## Ouvrir la mise en page Invoice
 
-1. Allez dans **Settings → Document Types**.
+1. Allez dans **Paramètres → Types de documents**.
 2. Trouvez **Facture** et sélectionnez **Plans** sur sa carte. Le Layout Builder s'ouvre pour ce type de document.
 3. Vérifiez le sélecteur de mise en page en haut à gauche. L'exemple ci-dessous affiche **DEFAULT**.
 

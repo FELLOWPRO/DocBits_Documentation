@@ -1,27 +1,20 @@
-# Fields
+# Champs
+
+Les champs définissent les données recueillies pour un type de document et leur contrôle. Ouvrez le type de document dans les paramètres, puis ses champs.
 
 <figure><img src="../../../../../.gitbook/assets/s150-docbits_fields_overview-fr.png" alt="Vue des champs du type de document Facture."><figcaption><p>Vue des champs du type de document Facture.</p></figcaption></figure>
 
-## Overview
+## Propriétés et reconnaissance
 
-The Fields setting provides a user interface where administrators can manage the properties and behavior of individual data fields associated with a document type. Each field can be adjusted to optimize the accuracy and efficiency of data capture and validation.
+* **Obligatoire** exige une valeur pour la validation.
+* **Lecture seule** empêche la modification ; **Masqué** retire le champ de la vue habituelle.
+* La **validation forcée** exige un contrôle explicite du champ. Elle ne crée ni règle de comparaison ni expression régulière ; configurez les règles de validation personnalisées séparément.
+* **OCR** définit un seuil numérique de confiance de reconnaissance. Ce n’est pas un interrupteur d’activation d’OCR.
+* **Score de correspondance** définit un seuil numérique de correspondance. Ce n’est ni un texte de référence ni une liste de valeurs.
+* L’option **IA** contrôle l’extraction demandée pour le champ.
 
-{% hint style="info" %}
-[Fields with Charges](new-fields-with-charges.md)
-{% endhint %}
+Recherchez un champ par son nom et vérifiez sa ligne avant de modifier ses propriétés. Vous pouvez organiser les groupes, ajouter des champs et ouvrir les options de formule ou de données de référence. Les actions dépendent du champ et des droits ; la suppression des champs standard peut être limitée.
 
-## Key Features and Options
+Enregistrez uniquement les modifications prévues et vérifiez la validation sur des documents représentatifs. Les images ne prouvent aucune modification enregistrée.
 
-1. **Fields Configuration**:
-   * **Field Names**: Lists the names of the fields, typically corresponding to the data elements within the document, like "Invoice Number" or "Purchase Order Date".
-   * **Obligatoire**: Administrators can mark fields as required, making sure that data must be entered or captured for these fields to complete the document processing.
-   * **Lecture seule**: Fields can be set to read-only to prevent modification after data capture or during certain stages of document processing.
-   * **Caché**: Fields can be hidden from view in the user interface, useful for sensitive information or for simplifying user workflows.
-2. **Paramètres avancés**:
-   * **Force Validation**: Ensures that data entered into a field passes certain validation rules before being accepted.
-   * **OCR (Optical Character Recognition)**: This toggle can be switched on to enable OCR processing for a specific field, useful for automated data extraction from scanned or digital documents.
-   * **Match Score**: Administrators can define a match score, a threshold used to determine the confidence level of data recognition or matching, impacting how data validation and quality checks are performed.
-3. **Action Buttons**:
-   * **Create New Field**: Allows adding new fields to the document type.
-   * **Edit Icons**: Each field has an edit icon that allows administrators to further configure field-specific settings, such as data type, default values, or connected business logic.
-   * **Enregistrer les paramètres**: Commits the changes made to the field configuration
+Consultez les [propriétés des champs](configuring-field-properties-1.md), la [validation et Match Score](setting-validation-and-match-score.md) et les [champs avec frais](new-fields-with-charges.md).

@@ -1,4 +1,4 @@
-# Supplier General Settings
+# Paramètres généraux des fournisseurs
 
 <figure><img src="../../../.gitbook/assets/prior-t012-fr.png" alt="Paramètres généraux du portail fournisseur."><figcaption><p>Paramètres généraux du portail fournisseur.</p></figcaption></figure>
 

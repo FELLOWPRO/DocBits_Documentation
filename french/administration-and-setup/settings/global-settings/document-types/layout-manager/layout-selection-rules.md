@@ -114,7 +114,7 @@ Le badge de **source** indique l'origine d'une règle : les règles **Système**
 
 ### La mise en page par défaut
 
-La dernière ligne, marquée **RETOMBER** et **est_par_défaut**, est la mise en page par défaut : elle est utilisée chaque fois qu'aucune règle ci-dessus ne correspond et n'a pas de condition. Elle est créée lorsque vous activez la fonction (à partir de la mise en page de l'origine DEFAULT).
+La dernière ligne, marquée **RETOMBER** et **is_default**, est la mise en page par défaut : elle est utilisée chaque fois qu'aucune règle ci-dessus ne correspond et n'a pas de condition. Elle est créée lorsque vous activez la fonction (à partir de la mise en page de l'origine DEFAULT).
 
 {% hint style="info" %}
 Pour utiliser une autre mise en page de repli, créez une règle **sans aucune condition** et donnez-lui le numéro de priorité le plus élevé, afin qu'elle soit vérifiée en dernier. Elle correspond à tous les documents qu'aucune règle précédente n'a retenus, avant que la mise en page par défaut ne soit atteinte.
@@ -160,10 +160,10 @@ Le panneau de droite montre ce que fait la règle pour un exemple de document do
 | Ligne | Signification |
 | --- | --- |
 | **Exemple de document** | Les valeurs utilisées pour l'aperçu, tirées de vos conditions |
-| **correspondant_par** | `rule` si une règle a correspondu, sinon la mise en page par défaut |
+| **matched_by** | `rule` si une règle a correspondu, sinon la mise en page par défaut |
 | **Mise en page résolue** | La mise en page que l'exemple de document obtiendrait |
 | **Coup prioritaire** | La priorité de la règle qui a correspondu |
-| **champs surveillés** | Les champs dont dépend le choix de la mise en page. Lorsqu'un utilisateur en modifie un, la mise en page est choisie de nouveau. |
+| **watched_fields** | Les champs dont dépend le choix de la mise en page. Lorsqu'un utilisateur en modifie un, la mise en page est choisie de nouveau. |
 
 Cliquez sur **Créer la règle** (ou **Enregistrer la règle** lors d'une modification) pour enregistrer. **Annuler** ramène à la liste des règles.
 
@@ -210,7 +210,7 @@ Cliquez sur **Créer la règle** (ou **Enregistrer la règle** lors d'une modifi
 | --- | --- |
 | Un document obtient la mauvaise mise en page | Une règle précédente correspond en premier. Examinez les règles au-dessus, ou le **Coup prioritaire** dans l'aperçu. |
 | La mise en page par défaut est utilisée alors qu'une règle devrait correspondre | La règle est-elle **Actif** ? La condition correspond-elle exactement à la valeur (casse, espaces) ? La règle est-elle sur le bon onglet d'**écran** ? |
-| La mise en page change pendant le travail d'un utilisateur | Un champ de **champs surveillés** a été modifié. Basez la règle sur un champ plus stable. |
+| La mise en page change pendant le travail d'un utilisateur | Un champ de **watched_fields** a été modifié. Basez la règle sur un champ plus stable. |
 | Une mise en page ne peut pas être supprimée | Une règle y renvoie encore. Redirigez ou supprimez d'abord cette règle. |
 | Aucune mise en page n'est affichée | Aucune règle n'a correspondu, il n'y a pas de mise en page par défaut et aucune mise en page basée sur l'origine n'existe pour cet écran. Ajoutez une règle sans condition comme règle fourre-tout. |
 | Rien n'a changé après l'activation | C'est normal : l'activation reproduit le choix précédent basé sur l'origine. Ajoutez vos propres règles. |

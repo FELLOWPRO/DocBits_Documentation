@@ -1,4 +1,4 @@
-# Advanced Workflow
+# Flux avancé
 
 Le constructeur **Flux de travail avancé** est un éditeur de graphe de nœuds pour les workflows nécessitant des branches, des chemins parallèles et un contrôle de flux — au-delà du modèle linéaire When/And/Then du constructeur Standard. Vous disposez des nœuds sur un canevas et les reliez pour définir le flux d'exécution.
 
@@ -91,6 +91,6 @@ Exécutez le flux avec la commande de lecture, validez-le, puis enregistrez avec
 ## Étapes suivantes
 
 - Découvrez ce que fait chaque carte dans la section **Cartes**.
-- Pour des automatisations linéaires simples, le constructeur **Standard Workflow** est plus rapide à configurer.
+- Pour des automatisations linéaires simples, le constructeur **Flux standard** est plus rapide à configurer.
 
 [Voir les cinq chapitres](advanced-workflow-videos.md)

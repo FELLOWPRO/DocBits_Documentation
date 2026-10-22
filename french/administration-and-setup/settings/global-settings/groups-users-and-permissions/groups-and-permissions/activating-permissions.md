@@ -20,7 +20,7 @@ L'activation ou la désactivation du système d'autorisations à l'aide du commu
 
 <figure><img src="../../../../../.gitbook/assets/prior-u008-fr.png" alt="Niveaux d’accès par action dans la matrice de permissions."><figcaption><p>Niveaux d’accès par action dans la matrice de permissions.</p></figcaption></figure>
 
-Le commutateur **Only Assigned Documents** contrôle la visibilité des documents pour les utilisateurs en fonction de leurs appartenances à des groupes. Lorsqu'il est activé, les utilisateurs ne peuvent voir que les documents qui leur sont spécifiquement attribués ou qui sont attribués à un groupe auquel ils appartiennent. Lorsqu'il est désactivé, les utilisateurs disposant de l'autorisation de visualisation appropriée peuvent voir tous les documents, indépendamment de l'attribution.
+Le commutateur **Uniquement les documents attribués** contrôle la visibilité des documents pour les utilisateurs en fonction de leurs appartenances à des groupes. Lorsqu'il est activé, les utilisateurs ne peuvent voir que les documents qui leur sont spécifiquement attribués ou qui sont attribués à un groupe auquel ils appartiennent. Lorsqu'il est désactivé, les utilisateurs disposant de l'autorisation de visualisation appropriée peuvent voir tous les documents, indépendamment de l'attribution.
 
 #### Fonctionnement
 

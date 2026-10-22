@@ -1,5 +1,13 @@
 # Règles de Correspondance des Bons de Commande
 
+## Configurer les règles de rapprochement et les tolérances
+
+Le parcours ouvre le type de document facture, vérifie la version publiée des règles et la clone en brouillon inactif. Il explique les types de règles, la priorité au sein de l’étape de rapprochement, les colonnes, la quantité de référence, les modes et le calcul des tolérances. Seul le brouillon du tutoriel est enregistré ; la version active et les tolérances globales restent inchangées. Le calcul à cinq pour cent est une illustration, pas une modification de la tolérance active.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/fr.mp4" %}
+
+[Regarder la vidéo avec les sous-titres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/fr.html)
+
 ## Introduction : Bons de Commande et Gestion des Règles de BC
 
 La correspondance des Bons de Commande (BC) est un processus crucial pour garantir la cohérence entre les Bons de Commande (BC) et les factures entrantes ou réceptions de marchandises correspondantes. Un ensemble robuste de règles est essentiel pour atteindre un taux élevé de correspondance automatique, prévenir la fraude et assurer des paiements corrects.

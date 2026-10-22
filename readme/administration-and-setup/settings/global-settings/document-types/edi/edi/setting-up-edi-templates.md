@@ -19,3 +19,5 @@ Ordnen Sie mit TRANSFORMATION-XSLT das XML-Zwischenformat dem benötigten Standa
 Konfigurieren Sie EXTRACTIONPATHS als JSON mit XPath-Ausdrücken für das resultierende XML. Prüfen Sie Felder, Zeilen und Beträge anhand echter Beispiele. Validieren Sie einen Entwurf vor der Aktivierung; die Bilder zeigen eine vorhandene aktive Konfiguration.
 
 <figure><img src="../../../../../../.gitbook/assets/site-all-edi-extraction-paths-de.png" alt="Aktives Attribut EXTRACTIONPATHS: JSON-Konfiguration mit XPath-Ausdrücken für die Extraktion."><figcaption><p>Aktives Attribut EXTRACTIONPATHS: JSON-Konfiguration mit XPath-Ausdrücken für die Extraktion.</p></figcaption></figure>
+
+Einzelne Bezeichnungen wie Custom, Default und Electronice im Feldnamen entsprechen der derzeitigen Produktoberfläche. Die technischen Attributnamen und der Konfigurationscode bleiben unverändert.

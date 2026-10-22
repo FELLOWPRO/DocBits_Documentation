@@ -44,10 +44,16 @@ La carte de workflow **« Change Status »** offre une approche rationalisée po
 
 ## Exemple pratique
 
-**Quand utiliser :** Déplacer un document révisé vers un état de traitement défini.
+**Quand l’utiliser:** Transmettre un document vérifié à l’étape d’approbation.
 
-**Configuration :** Sélectionnez votre statut `Demo Review` configuré et désactivez le déclenchement de workflows supplémentaires pour cet exemple.
+**Où:** Concepteur de workflows standard → Dans ce cas → Statut → Modifier le statut en.
 
-**Résultat attendu et contre-exemple :** Le document reçoit le statut sélectionné. Cette action à elle seule n’exécute pas l’exportation configurée séparément.
+**Configuration:** Sélectionnez la version 3 de `staus_change`, le statut En attente d’approbation (`validated_pending_approval`) et le déclenchement des autres workflows sur `false` (`trigger_docflow=false`). Utilisez une facture synthétique isolée dont les contrôles précédents sont satisfaits.
 
-Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.
+**Résultat attendu et contre-exemple:** Une mise à jour autorisée et réussie place le document dans le statut choisi. Si une condition précédente est fausse, cette action n’est pas atteinte et ne modifie aucun statut. Une mise à jour refusée ou échouée de l’API n’est pas un succès : vérifiez le statut réel et les journaux. La carte n’effectue pas elle-même une exportation.
+
+### Versions de la carte
+
+Le réglage explicite du déclenchement des workflows est disponible en v3. Les versions 1 et 2 ne le proposent pas ; leur ancienne méthode de mise à jour utilise le comportement de déclenchement par défaut. Ne supposez pas qu’un réglage `false` de v3 s’applique après un passage à une version antérieure.
+
+Configuration et résultat attendu vérifiés dans le code d’exécution. Aucun workflow ni changement de statut n’a été exécuté.

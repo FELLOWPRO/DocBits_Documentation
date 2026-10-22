@@ -6,7 +6,9 @@ Der Administrator zeigt, wie er eine veröffentlichte Regelversion als Entwurf k
 
 Im zweiten Teil richtet er beim Dokumenttyp eine **Einzelpreistoleranz von fünf Prozent** ein und erklärt Prozentwerte, feste Beträge, artikelbezogene Vorgaben sowie getrennte Toleranzen für Fracht, Zusatzkosten und Steuern. Die Veröffentlichung und Aktivierung einer Regelversion erfolgen erst nach fachlichen Tests.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v1/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/de.mp4" %}
+
+[Video mit Untertiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/de.html)
 
 **Full Match ist ein Dokumentstatus, kein Regeltyp:** Alle relevanten Rechnungspositionen sind erfolgreich abgeglichen. Ein **Partial Match** lässt weitere Rechnungspositionen offen und bedeutet keine feste 50-Prozent-Grenze. Eine Regel vom Typ **Match on Total** kann zu einem vollständigen Abgleich beitragen, hat aber eine andere Bedeutung. Freigabe und Export bleiben eigene Prozessschritte. Den Ablauf für Anwender zeigt der [Rundgang zum Bestellabgleich](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md).
 

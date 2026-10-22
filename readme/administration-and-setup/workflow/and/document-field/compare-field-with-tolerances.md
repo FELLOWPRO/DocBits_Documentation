@@ -2,57 +2,72 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4ee291b0848d-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
-## **Zweck:**
+## Wann Sie diese Karte verwenden
 
-Diese Workflow-Karte ist darauf ausgelegt, den Wert eines Feldes mit einem angegebenen Referenzwert zu vergleichen und dabei Toleranzen zuzulassen. Sie ermöglicht eine präzise bedingte Verarbeitung in Workflows, in denen kleine Abweichungen akzeptabel sind, und eignet sich damit ideal für Szenarien wie Qualitätssicherung, Finanzanalyse oder schwellenwertbasierte Aktionen.
+Mit dieser Bedingung vergleichen Sie ein numerisches Belegfeld mit einem festen Referenzwert und lassen eine festgelegte Abweichung zu. Beispielsweise kann ein Gesamtbetrag als passend gelten, wenn er höchstens 5 vom Sollwert 100 abweicht.
 
-## **Bestandteile der Karte:**
+## Wo Sie die Karte finden
 
-1. **Feldname**
-   * **Beschreibung:** Das im Vergleich auszuwertende Feld.
-   * **Detail:** Dieser muss exakt mit dem Bezeichner des ersten Feldes innerhalb des Dokuments übereinstimmen.
-2. **Vergleichsoperator**
-   * **Beschreibung:** Gibt an, wie der ausgewählte Feldwert mit dem Referenzwert verglichen wird.
-   * **Optionen:**
-     * **Gleich (=):** Überprüft, ob der Feldwert exakt mit dem Referenzwert übereinstimmt.
-     * **Ungleich (≠):** Überprüft, ob der Feldwert nicht mit dem Referenzwert übereinstimmt.
-     * **Größer als (>):** Prüft, ob der Feldwert größer als der Referenzwert ist.
-     * **Größer oder gleich (≥):** Prüft, ob der Feldwert größer oder gleich dem Referenzwert ist.
-     * **Kleiner als (<):** Prüft, ob der Feldwert kleiner als der Referenzwert ist.
-     * **Kleiner oder gleich (≤):** Prüft, ob der Feldwert kleiner oder gleich dem Referenzwert ist.
-3. **Referenzwert**
-   * **Beschreibung:** Der Wert, mit dem das Feld verglichen wird.
-   * **Detail:** Dieser Wert kann je nach Kontext des Vergleichs numerisch, textbasiert oder datumsbasiert sein.
-4. **Toleranzbetrag**
-   * **Beschreibung:** Legt die zulässige Fehlertoleranz für den Vergleich fest.
-   * **Detail:** Der Toleranzbetrag ist ein numerischer Wert, der die maximal zulässige Differenz zwischen den beiden Feldwerten angibt, damit der Vergleich als erfüllt gilt.
-5. **Toleranztyp**
-   * **Beschreibung:** Gibt die Maßeinheit für den Toleranzbetrag an.
-   * **Optionen:**
-     * **Wert:** Die Toleranz ist ein absoluter Wert, das heißt, die beiden Felder dürfen sich um den angegebenen Toleranzbetrag unterscheiden.
-     * **Prozent:** Die Toleranz wird als Prozentsatz des zweiten Feldwerts berechnet und lässt so eine relative Fehlertoleranz zu.
+Fügen Sie im Standard-Workflow-Designer unter **Und** eine Karte hinzu. Öffnen Sie **Dokument Feld** und wählen Sie den Vergleich eines Feldes mit Referenzwert und Toleranzen. Das folgende Beispiel verwendet Version 2.
 
-## **Funktionalität:**
+## Einstellungen
 
-* **Bedingungsauswertung:** Das System wertet den Wert des Feldes anhand des Referenzwerts mithilfe des ausgewählten Vergleichsoperators aus. Ist eine Toleranz konfiguriert, betrachtet das System den Vergleich als erfolgreich, wenn der Feldwert innerhalb des definierten Toleranzbereichs liegt.
-* **Ausführung der Aktion:**
-  * **Innerhalb der Toleranz:** Erfüllt der Feldwert die Bedingung innerhalb der angegebenen Toleranz, wird der Workflow fortgesetzt und löst die zugehörigen Aktionen aus.
-  * **Außerhalb der Toleranz:** Erfüllt der Feldwert die Bedingung nicht oder liegt er außerhalb des Toleranzbereichs, können alternative Aktionen ausgeführt werden, etwa Protokollierung, das Senden von Warnungen oder das Anhalten des Workflows.
+Verwenden Sie ein in Ihrer Organisation konfiguriertes numerisches Feld. Feldwert, Referenzwert und Toleranz werden numerisch ausgewertet. Achten Sie auf übereinstimmende Einheiten.
 
-## **Einrichtung und Konfiguration:**
+| Einstellung | Bedeutung |
+| --- | --- |
+| Feldname | Das konfigurierte Belegfeld, beispielsweise `total_amount`. |
+| Operator | Der gewünschte Vergleich: `eq`, `neq`, `gt`, `ge`, `lt` oder `le`. |
+| Referenzwert | Die feste Zahl, mit der das Feld verglichen wird. |
+| Toleranzbetrag | Die zulässige numerische Abweichung. |
+| Toleranztyp | **Wert** (`value`) für einen absoluten Betrag oder **Prozentsatz** (`percent`) für eine relative Abweichung. |
 
-* Benutzer konfigurieren die Karte, indem sie das auszuwertende Feld aus einer Liste verfügbarer Felder auswählen und den Vergleichsoperator (z. B. gleich, größer als) aus einer Dropdown-Liste wählen. Anschließend geben sie den Referenzwert an, mit dem verglichen wird, und legen den Toleranzbetrag fest; danach wählen sie den Toleranztyp (z. B. Prozent oder Wert).
+Bei einem positiven Referenzwert von 200 entspricht eine prozentuale Toleranz von 5 einer Abweichung von 10. Eine absolute Toleranz von 5 entspricht dagegen einer Abweichung von 5. Prüfen Sie die relevanten Grenzfälle für Ihren Operator und Ihre Werte.
 
-## **Fazit:**
+## Wie die Toleranz den Vergleich verändert
 
-Die Karte "Field Comparison with Tolerances" ist ein vielseitiges Werkzeug für Workflows, die flexible Auswertungen erfordern. Indem sie Vergleiche mit Toleranzen ermöglicht, sorgt sie dafür, dass Workflows effizient und anpassungsfähig bleiben und reale Abweichungen berücksichtigen, ohne Kompromisse bei der Genauigkeit einzugehen.
+Bei Referenzwert **100** und absoluter Toleranz **5** liegt die untere Grenze bei **95**, die obere bei **105**.
+
+| Operator | Die Bedingung ist erfüllt, wenn der Feldwert… |
+| --- | --- |
+| `eq` (=) | Zwischen 95 und 105 liegt, einschließlich beider Grenzen. |
+| `neq` (≠) | Unter 95 oder über 105 liegt. |
+| `gt` (>) | Über 105 liegt. |
+| `ge` (≥) | Mindestens 95 beträgt. |
+| `lt` (<) | Unter 95 liegt. |
+| `le` (≤) | Höchstens 105 beträgt. |
+
+Die Karte liefert ein Bedingungsergebnis. Nachfolgende Schritte hängen vom Auslöser, weiteren Bedingungen und den konfigurierten Aktionen des Workflows ab.
 
 <!-- workflow-card-complete-example-20261021 condition_docfield_operator_value_tolerances -->
 
-### Beispiel für Referenzwerttoleranz
+## Praktisches Beispiel
 
-**Konfiguration:** Wählen Sie numerisches Dokumentfeld `total_amount`, Gleichheit, Referenzwert `100`, absolute Toleranz `5` und Toleranztypwert.
+1. Wählen Sie das konfigurierte numerische Feld **Gesamtbetrag** (`total_amount`).
+2. Wählen Sie **Entspricht** (`eq`).
+3. Tragen Sie Referenzwert **100** und Toleranz **5** ein.
+4. Wählen Sie den Toleranztyp **Wert** (`value`).
 
-**Erwartetes Ergebnis und Gegenbeispiel:** Bei Wert `103` ist die Bedingung wahr, da die Differenz innerhalb der erlaubten Toleranz liegt. Bei Wert `110` ist die Bedingung falsch, da die Differenz diese Toleranz überschreitet. Diese Karte vergleicht ein Feld mit einem konfigurierten Referenzwert. Verwenden Sie die separate Zwei-Felder-Karte, wenn beide Seiten aus Dokumentenfeldern stammen müssen. Fehlende oder nicht numerische Daten bedürfen einer Untersuchung, nicht einer vermuteten Übereinstimmung.
+| Feldwert | Absolute Differenz zu 100 | Erwartetes Ergebnis |
+| --- | --- | --- |
+| 103 | 3 | Bedingung erfüllt. |
+| 110 | 10 | Bedingung nicht erfüllt. |
+| 95 oder 105 | 5 | Bedingung erfüllt: Der Gleichheitsvergleich schließt die Toleranzgrenzen ein. |
 
-Dies ist eine beispielhafte Testkonfiguration und das erwartete Ergebnis. es wurde nicht ausgeführt. Verwenden Sie die in Ihrer Testorganisation konfigurierten Daten und Empfänger.
+Dies sind erwartete Rechenergebnisse. Die Aufnahme zeigt eine ungespeicherte Konfiguration; ein Workflow wurde dafür nicht ausgeführt.
+
+## Vor dem Aktivieren
+
+Prüfen Sie mit geeigneten Testdaten einen passenden Fall, einen unpassenden Fall und die Grenzwerte. Untersuchen Sie fehlende Felder, nichtnumerische Werte und Konfigurationsfehler gesondert. Kontrollieren Sie im Ausführungsprotokoll die tatsächlich verwendeten Werte, den Operator, die Toleranz und das Ergebnis.
+
+Wenn beide Beträge aus Belegfeldern stammen, verwenden Sie die separate Karte zum [Vergleich zweier Felder mit Toleranz](compare-two-fields-with-tolerance.md).
+
+## Admin-Beispielvideo
+
+Administrator, Büro und Stimme sind synthetisch erzeugt. Die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-reference-tolerance-admin/v4/de.mp4" %}
+
+[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-reference-tolerance-admin/v4/de.html)
+
+[Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-reference-tolerance-admin/v4/de.txt)

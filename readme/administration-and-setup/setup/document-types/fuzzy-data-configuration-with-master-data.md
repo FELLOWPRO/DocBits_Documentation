@@ -143,7 +143,7 @@ Tenga presente che gli operatori **Smart** e **Contains** cercano una parte del 
 
 ### **Passo 3 — Cosa succede quando l'elenco contiene più fornitori**
 
-Il **Gestore dei conflitti (Conflict Handler)** decide:
+Il **Gestore dei conflitti** decide:
 
 * **Best Score** → prende il fornitore che corrisponde al maggior numero di campi. Non lascia mai il fornitore vuoto.
 * **Return None** → lascia il fornitore vuoto, così un utente lo sceglie.

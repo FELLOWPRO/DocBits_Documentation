@@ -30,7 +30,7 @@ ebInterface è lo standard austriaco per la fatturazione elettronica gestito dal
 
 ## Anteprima predefinita
 
-<figure><img src="austria-ebinterface-preview.png" alt="Anteprima fattura Austria ebInterface in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura AUSTRIA EBINTERFACE</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Anteprima fattura Austria ebInterface in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura AUSTRIA EBINTERFACE</p></figcaption></figure>
 
 ## Mappatura dei campi
 

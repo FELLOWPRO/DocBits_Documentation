@@ -1,6 +1,6 @@
 # WatchDog
 
-<figure><img src="../../../.gitbook/assets/watchdog-overview-infographic.svg" alt="Panoramica di WatchDog"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-overview-it.svg" alt="WatchDog: monitoraggio delle cartelle, elaborazione in DocBits e destinazioni di esportazione."><figcaption><p>WatchDog: monitoraggio delle cartelle, elaborazione in DocBits e destinazioni di esportazione.</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/watchdog-infographic-en.png" alt="Infografica di WatchDog"><figcaption></figcaption></figure>
 
@@ -43,7 +43,7 @@ WatchDog.exe start
 
 Tutte le configurazioni di importazione ed esportazione vengono create direttamente nell'**applicazione DocBits**:
 
-**Settings → Document Processing → WatchDog → Configurations Tab**
+**Impostazioni → Elaborazione documenti → WatchDog → Scheda Configurazioni**
 
 * **Import Configurations** — definiscono le cartelle da monitorare e i tipi di documento
 * **Export Configurations** — definiscono le destinazioni di esportazione, i template XSLT e i metodi di esportazione

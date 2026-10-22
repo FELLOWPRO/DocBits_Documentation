@@ -1,32 +1,34 @@
-# Case 14: Header Charge - Charge Per Unit Outside Tolerance (Approved)
+# Caso 14: Addebito di intestazione - Addebito per unità fuori tolleranza (Approvato)
+
+Lo scenario seguente illustra una mappatura configurata, non un modello predefinito di cui sia stata verificata la distribuzione. L’output effettivo, gli importi, i segni e i tipi di documento dipendono dalle regole e dalle espressioni `conflict_resolution` attive, dalla mappatura di esportazione e dalle decisioni di approvazione. Qualsiasi nota di debito o di credito descritta è subordinata a tale configurazione; l’esempio non ne garantisce l’emissione automatica né la conformità legale.
 
 ## Scenario:
 
-The header charge per unit is outside tolerance but has been approved.
+L'addebito dell'intestazione per unità è fuori tolleranza ma è stato approvato.
 
-## Action:
+## Azione:
 
-The system processes the approved charge per unit, applying it to the transaction.
+Il sistema elabora l'addebito unitario approvato, applicandolo alla transazione.
 
-## Example:
+## Esempio:
 
 * **Purchase Order (PO):**
-  * Header Charge Per Unit: $2.50
+  * Costo di intestazione per unità: $2.50
   * Quantity: 2,000 units
-  * Total Header Charge Amount: $5,000.00
+  * Importo totale addebito intestazione: $5,000.00
 * **Invoice Received:**
-  * Header Charge Per Unit: $3.00 (outside tolerance of 20%, approved)
+  * Addebito di intestazione per unità: $3.00 (tolleranza esterna del 20%, approvata)
   * Quantity: 2,000 units
-  * Total Header Charge Amount: $6,000.00
+  * Importo totale addebito intestazione: $6,000.00
 * **Tolerance Levels:**
-  * Header Charge Per Unit Tolerance: ±5%
+  * Tolleranza addebito intestazione per unità: ±5%
 
-Since the header charge per unit ($3.00) exceeds the acceptable tolerance range of 5% but has been approved, the system will:
+Poiché l'addebito dell'intestazione per unità ($3.00) supera l'intervallo di tolleranza accettabile del 5% ma è stato approvato, il sistema:
 
-1. **Accept the Approved Header Charge Per Unit:** The system accepts the invoiced header charge per unit of $3.00 as it has been approved despite exceeding the tolerance limit.
-2. **Process the Header Charge:** The system processes the invoice using the approved charge per unit and the quantity:
-   * **Total Header Charge Amount = Quantity × Approved Header Charge Per Unit**
-   * **Total Header Charge Amount = 2,000 units × $3.00 = $6,000.00**
-3. **Finalize the Invoice:** The system processes the transaction with the approved charges, reflecting the total amount of $6,000.00.
+1. **Accetta l'addebito dell'intestazione approvata per unitàà:** Il sistema accetta l'addebito dell'intestazione fatturata per unità di $3.00 poiché è stato approvato nonostante il superamento del limite di tolleranza.
+2. **Elabora l'addebito di testata:** Il sistema elabora la fattura utilizzando l'addebito unitario approvato e la quantità:
+   * **Importo totale addebito intestazione = Quantità × Addebito intestazione approvato per unitàà**
+   * **Importo totale addebito intestazione = 2,000 unità × $3.00 = $6,000.00**
+3. **Finalizza la fattura:** Il sistema elabora la transazione con le spese approvate, riflettendo l'importo totale di $6,000.00.
 
-This approach allows the system to accommodate approved variances in header charges, ensuring that the transaction is processed according to the approval while maintaining accurate financial records.
+Questo approccio consente al sistema di accogliere le variazioni approvate nelle spese di intestazione, garantendo che la transazione venga elaborata in base all'approvazione mantenendo allo stesso tempo registri finanziari accurati.

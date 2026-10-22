@@ -39,7 +39,7 @@ Il salvataggio automatico conserva una bozza locale circa ogni trenta secondi do
 
 Mentre costruisci un Workflow Avanzato, due controlli nella barra degli strumenti ti permettono di verificarlo senza uscire dal builder. Servono per *verifiche rapide durante la costruzione*; per test salvati e ripetibili, usa il [Test Manager](../test-manager.md).
 
-## Validate
+## Convalidare
 
 Fai clic sul controllo **Validate** (l'icona con il cerchio e la spunta, oppure premi <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). La validazione controlla il grafo alla ricerca di problemi — nodi non collegati, configurazione mancante e connessioni non valide — e li segnala così puoi correggerli prima che il workflow venga eseguito su documenti reali.
 

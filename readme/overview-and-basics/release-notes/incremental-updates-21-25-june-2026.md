@@ -7,7 +7,7 @@ periodo._
 
 ---
 
-## Highlights
+## Novità principali
 
 - **Ricerca più intelligente nella dashboard.** Cerca i documenti in modo
   affidabile per importi e numeri — trova le fatture al di sopra di un valore,

@@ -141,7 +141,7 @@ A differenza delle importazioni di BOD, questi endpoint segnalano i problemi con
 
 ### 5. Verificare che i dati siano arrivati
 
-* In DocBits, andare in **Settings → Document Processing → Lookup Master Data**.
+* In DocBits, vai in **Impostazioni → Elaborazione documenti → Ricerca dati anagrafici**.
 * Selezionare **Imported** a sinistra, poi aprire la scheda del proprio tipo di dati.
 * Le colonne sono i nomi usati sul lato sinistro di `field_mappings`.
 

@@ -3,7 +3,7 @@
 <figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-25-it.png" alt="Elenco degli script con nomi e date nascosti."><figcaption><p>Elenco degli script con nomi e date nascosti.</p></figcaption></figure>
 
 {% embed url="https://youtu.be/n8NpWWIjmlA" %}
-DocBits Document Scripts Explained: Automate Custom Logic in Your Document Workflow
+DocBits Spiegazione degli script dei documenti: automatizza la logica personalizzata nel flusso di lavoro dei documenti
 {% endembed %}
 
 #### Panoramica

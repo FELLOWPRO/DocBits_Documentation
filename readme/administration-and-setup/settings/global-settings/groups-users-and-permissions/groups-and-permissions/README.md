@@ -1,7 +1,7 @@
 # Gruppi e Autorizzazioni
 
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
-DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
+DocBits Tutorial su gruppi e autorizzazioni: imposta ruoli utente, diritti di accesso e proteggi il tuo spazio di lavoro
 {% endembed %}
 
 <figure><img src="../../../../../.gitbook/assets/prior-t009-it.png" alt="Dettagli del gruppo selezionato; i dati personali sono nascosti."><figcaption><p>Dettagli del gruppo selezionato; i dati personali sono nascosti.</p></figcaption></figure>

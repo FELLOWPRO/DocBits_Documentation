@@ -1,43 +1,43 @@
-# Table extraction for costing element
+# Estrazione delle tabelle per l’elemento di costo
 
-### **What Does It Do?**
+### **Che cosa fa?**
 
-When enabled, **DocBits** can extract **costing elements** from tables at the **line level** and classify them accordingly.
+Se abilitato, **DocBits** può estrarre **elementi di costo** dalle tabelle a livello di linea  e classificarli di conseguenza.
 
-* If the system does not classify an item or classifies it incorrectly, an **icon** appears on the left side.
-* Clicking this icon opens a list of all **configured costing elements**, allowing you to:
+* Se il sistema non classifica un articolo o lo classifica in modo errato, sul lato sinistro appare un'icona .
+* Facendo clic su questa icona si apre un elenco di tutti gli elementi di costo **configurati**, consentendo di:
   * **Change the classification** if it is incorrect.
-  * **Set the item to "Uncategorized"** if it is a regular item and not a costing element.
+  * **Imposta l'articolo su "Uncategorized"** se si tratta di un articolo normale e non di un elemento di costo.
 
-### **How to Configure Costing Elements**
+### **Come configurare gli elementi di costo**
 
-You can find the **guide on setting up costing elements** in **DocBits** here.
+Puoi trovare la guida **sull'impostazione degli elementi di costo** in **DocBits** qui.
 
 {% content-ref url="../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md" %}
 [table-extraction-for-costing-element.md](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)
 {% endcontent-ref %}
 
-### **Where to Enable It**
+### **Dove attivarlo**
 
-1. Go to **Settings → Document Processing → Classification and Extraction → Table Extraction**.
-2. Enable **Costing Element Extraction**.
+1. Vai a **Impostazioni → Elaborazione documenti → Classificazione ed estrazione → Estrazione tabella**.
+2. Abilita **Estrazione elemento di costo**.
 
 <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211105422.jpg" alt=""><figcaption></figcaption></figure>
 
-### **How to Set or Change the Classification**
+### **Come impostare o modificare la classificazione**
 
 1.  Click on the **box icon** next to the item.\
 
 
     <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211104810.jpg" alt=""><figcaption></figcaption></figure>
-2.  A **dropdown menu** with all configured costing elements will appear.\
+2.  Apparirà un menu a discesa  con tutti gli elementi di costo configurati.\
 
 
     <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102530.jpg" alt=""><figcaption></figcaption></figure>
-3.  Select the correct **costing element type**.\
+3.  Selezionare il tipo di elemento di costo **corretto**.\
 
 
     <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102650.jpg" alt=""><figcaption></figcaption></figure>
-4. The classification is now updated accordingly.
+4. La classificazione è ora aggiornata di conseguenza.
 
 <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211103411.jpg" alt=""><figcaption></figcaption></figure>

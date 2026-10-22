@@ -2,7 +2,7 @@
 
 ## Carte Condizioni - Guida Completa
 
-Le schede di condizione di questa pagina vanno nei gruppi **Quando** e **E** del Generatore di workflow — decidono se eseguire le azioni Then. Per usare il canvas — **Aggiungi scheda**, **Salva modello**, **Salva flusso di lavoro** — consulta la [guida Standard Workflow](../standard-workflow-builder):
+Le schede di condizione di questa pagina vanno nei gruppi **Quando** e **E** del Generatore di workflow — decidono se eseguire le azioni Then. Per usare il canvas — **Aggiungi scheda**, **Salva modello**, **Salva flusso di lavoro** — consulta la [guida Standard Workflow](../README.md):
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-it.png" alt="Esempio non salvato con schede Quando, E e Allora. Configurare tutti i campi prima dell’esecuzione. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale."><figcaption><p>Esempio non salvato con schede Quando, E e Allora. Configurare tutti i campi prima dell’esecuzione. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 

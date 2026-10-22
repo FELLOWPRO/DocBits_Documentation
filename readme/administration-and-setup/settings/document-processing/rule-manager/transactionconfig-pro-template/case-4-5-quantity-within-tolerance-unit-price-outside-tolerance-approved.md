@@ -1,28 +1,30 @@
-# Case 4, 5: Quantity Within Tolerance, Unit Price Outside Tolerance (Approved)
+# Caso 4, 5: Quantità entro la tolleranza, Prezzo unitario fuori tolleranza (Approvato)
+
+Lo scenario seguente illustra una mappatura configurata, non un modello predefinito di cui sia stata verificata la distribuzione. L’output effettivo, gli importi, i segni e i tipi di documento dipendono dalle regole e dalle espressioni `conflict_resolution` attive, dalla mappatura di esportazione e dalle decisioni di approvazione. Qualsiasi nota di debito o di credito descritta è subordinata a tale configurazione; l’esempio non ne garantisce l’emissione automatica né la conformità legale.
 
 ## Scenario:
 
-The quantity on the invoice is within tolerance, but the unit price is outside the acceptable tolerance range. However, this variance in the unit price has been reviewed and approved by the appropriate authorities.
+La quantità sulla fattura rientra nella tolleranza, ma il prezzo unitario non rientra nell'intervallo di tolleranza accettabile. Tuttavia, questa variazione del prezzo unitario è stata esaminata e approvata dalle autorità competenti.
 
-## Action:
+## Azione:
 
-The system adjusts the unit price to match the purchase order and applies any necessary line charges to account for the difference.
+Il sistema rettifica il prezzo unitario in modo che corrisponda all'ordine d'acquisto e applica eventuali addebiti di riga necessari per tenere conto della differenza.
 
-## Example:
+## Esempio:
 
 **Purchase Order (PO):**
 
 Quantity: <mark style="color:green;">100</mark> units
 
-Unit Price: $10.00 per unit
+Prezzo unitario: $10.00 per unità
 
 Total Amount: <mark style="color:purple;">$1,000.00</mark>
 
 **Invoice Received:**
 
-Quantity: <mark style="color:green;">100</mark> units (within tolerance)
+Quantità: <mark style="color:green;">100</mark> unità (entro la tolleranza)
 
-Unit Price: <mark style="color:red;">$11.00</mark> per unit (outside tolerance of ±5%)
+Prezzo unitario: <mark style="color:red;">$11.00</mark> per unità (tolleranza esterna di ±5%)
 
 Total Amount: <mark style="color:red;">$1,100.00</mark>
 
@@ -30,32 +32,32 @@ Total Amount: <mark style="color:red;">$1,100.00</mark>
 
 Quantity Tolerance: ±2%
 
-Unit Price Tolerance: ±5% (expected range: $9.50 to $10.50)
+Tolleranza prezzo unitario: ±5% (intervallo previsto: da $9.50 a $10.50)
 
 **Approval:**
 
-• The $11.00 unit price is outside the tolerance range but has been manually approved by the appropriate department.
+• Il prezzo unitario di $11.00 non rientra nell'intervallo di tolleranza ma è stato approvato manualmente dal reparto appropriato.
 
-Since the quantity is within tolerance but the unit price is outside tolerance (yet approved), the system will:
+Poiché la quantità rientra nella tolleranza ma il prezzo unitario è fuori tolleranza (comunque approvato), il sistema:
 
-1\. **Adjust the Unit Price**: The system adjusts the unit price back to the PO’s unit price because the variance was approved:
+1\. **Adegua il prezzo unitario**: il sistema adegua il prezzo unitario al prezzo unitario di PO perché la varianza è stata approvata:
 
-• **Adjusted Unit Price = $10.00 per unit**
+• **Prezzo unitario rettificato = $10.00 per unitàà**
 
-• **Adjusted Total Amount = 100 units × $10.00 per unit = $1,000.00**
+• **Importo totale rettificato = 100 unità × $10.00 per unitàà = $1,000.00**
 
-2\. **Apply a Line Charge for the Difference**: Since the approved unit price of $11.00 is higher than the PO unit price of $10.00, the system applies a line charge to account for this difference:
+2\. **Applica un addebito di riga per la differenza**: poiché il prezzo unitario approvato di $11.00 è superiore al prezzo unitario PO di $10.00, il sistema applica un addebito di riga per tenere conto di questa differenza:
 
-• **Line Charge Amount = (Approved Invoice Unit Price - PO Unit Price) × Quantity**
+• **Importo addebito riga = (Prezzo unitario della fattura approvata - PO Prezzo unitario) × Quantità**
 
-• **Line Charge Amount = ($11.00 - $10.00) × 100 units = $100.00**
+• **Importo addebito linea = ($11.00 - $10.00) × 100 unità = $100.00**
 
-3\. **Process the Invoice**: The system processes the invoice with:
+3\. **Elabora la fattura**: Il sistema elabora la fattura con:
 
 • **Base Amount:** $1,000.00
 
 • **Line Charge:** $100.00
 
-• **Total Processed Amount:** $1,100.00
+• **Importo totale elaborato:** $1,100.00
 
-This ensures that while the base PO values are maintained for consistency, the approved variance in the unit price is accounted for through an additional line charge, resulting in accurate financial processing and record-keeping.
+Ciò garantisce che, mentre i valori di base PO siano mantenuti per coerenza, la variazione approvata del prezzo unitario venga contabilizzata attraverso un addebito di riga aggiuntivo, con conseguente elaborazione finanziaria e tenuta dei registri accurati.

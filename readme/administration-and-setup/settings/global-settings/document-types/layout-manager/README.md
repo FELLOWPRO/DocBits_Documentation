@@ -1,30 +1,30 @@
-# Layout Manager
+# Gestore dei layout
 
 <figure><img src="../../../../../.gitbook/assets/docbits_layout_manager_overview.png" alt="Docbits Layout Manager Overview"><figcaption></figcaption></figure>
 
-#### Overview
+#### Panoramica
 
-The Layout Manager allows administrators to visually configure and modify the layout of document types by setting properties for various data fields and groups within a document. This interface helps ensure that the extraction models and manual data entry points align precisely with the document's structure as scanned or uploaded into Docbits.
+Il Layout Manager consente agli amministratori di configurare e modificare visivamente il layout dei tipi di documenti impostando le proprietà per vari campi e gruppi di dati all'interno di un documento. Questa interfaccia aiuta a garantire che i modelli di estrazione e i punti di immissione manuale dei dati si allineino esattamente con la struttura del documento scansionato o caricato in Docbits.
 
-#### Key Components
+#### Componenti principali
 
-1. **Groups and Fields**:
-   * **Groups**: Organizational units within a document type that categorize related fields (e.g., Invoice Details, Payment Details). These can be expanded or collapsed and arranged to mirror the logical grouping in the actual document.
-   * **Fields**: Individual data points within each group (e.g., Invoice Number, Payment Terms). Each field can be customized for how data is captured, displayed, and processed.
+1. **Gruppi e Campi**:
+   * **Gruppi**: unità organizzative all'interno di un tipo di documento che classificano i campi correlati (ad esempio, Dettagli fattura, Dettagli pagamento). Questi possono essere espansi o compressi e disposti in modo da rispecchiare il raggruppamento logico nel documento reale.
+   * **Campi**: punti dati individuali all'interno di ciascun gruppo (ad esempio, numero di fattura, termini di pagamento). Ogni campo può essere personalizzato per il modo in cui i dati vengono acquisiti, visualizzati ed elaborati.
 2. **Properties Panel**:
-   * This panel displays the properties of the selected field or group, allowing for detailed configuration, such as:
-     * **Label**: The visible label for the field in the user interface.
-     * **Field Name**: The technical identifier used within the system.
-     * **Element Width in Percentage**: Determines the width of the field in relation to the document layout.
-     * **Tab Index**: Controls the tabbing order for navigation.
-     * **Run Script on Change**: Whether to execute a script when the field value changes.
-     * **Display Label On Left**: Whether the label is displayed to the left of the field or above it.
-     * **Is Textarea**: Specifies if the field should be a textarea, accommodating larger amounts of text.
-     * **Select Model Type**: Option to select which model type will handle the extraction of this field.
-     * **Field Length**: Maximum length of data to be accepted in this field.
-     * **Banned Keywords**: Keywords that are not allowed within the field.
+   * Questo pannello visualizza le proprietà del campo o gruppo selezionato, consentendo una configurazione dettagliata, come:
+     * **Label**: l'etichetta visibile per il campo nell'interfaccia utente.
+     * **Nome campo**: l'identificatore tecnico utilizzato all'interno del sistema.
+     * **Larghezza elemento in percentuale**: Determina la larghezza del campo in relazione al layout del documento.
+     * **Tab Index**: controlla l'ordine di tabulazione per la navigazione.
+     * **Esegui script su modifica**: se eseguire uno script quando cambia il valore del campo.
+     * **Visualizza etichetta a sinistra**: se l'etichetta viene visualizzata a sinistra del campo o sopra di esso.
+     * **Is Textarea**: specifica se il campo deve essere un'area di testo, in grado di ospitare quantità maggiori di testo.
+     * **Seleziona tipo di modello**: opzione per selezionare quale tipo di modello gestirà l'estrazione di questo campo.
+     * **Lunghezza campo**: lunghezza massima dei dati da accettare in questo campo.
+     * **Parole chiave vietate**: parole chiave non consentite nel campo.
 3. **Template Preview**:
-   * Shows a real-time preview of how the document will appear based on the current layout configuration. This helps in ensuring that the layout matches the actual document structure and is vital for testing and refining the document processing setup.
+   * Mostra un'anteprima in tempo reale di come apparirà il documento in base alla configurazione del layout corrente. Ciò aiuta a garantire che il layout corrisponda alla struttura effettiva del documento ed è vitale per testare e perfezionare l'impostazione dell'elaborazione del documento.
 
 {% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2490" %}
 

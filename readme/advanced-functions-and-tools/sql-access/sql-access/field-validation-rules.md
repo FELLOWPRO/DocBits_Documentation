@@ -1,4 +1,4 @@
-# Field validation rules
+# Regole di convalida dei campi
 
 ## Colonne
 
@@ -19,8 +19,8 @@
 * `confidence_threshold`: integer
 * `match_score_threshold`: integer
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: timestamp con fuso orario
+* `last_modified_on`: timestamp con fuso orario
 * `is_deleted`: boolean
 * `additional_attributes`: text
 

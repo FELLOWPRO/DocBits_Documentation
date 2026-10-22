@@ -12,12 +12,12 @@ Per abilitare il DocBits Operator, segui questi passaggi:
    * Dalla Dashboard, vai su **Settings**.
    *   Seleziona **Document Processing** e poi scegli **Module**.
 
-       <figure><img src="../../.gitbook/assets/docbits_operator_module_selection.png" alt="Selezione del modulo DocBits Operator"><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-it.png" alt="Moduli di integrazione dei documenti, inclusi i dati anagrafici personalizzati e DocBits Operator. Nessun modulo è stato attivato durante la cattura."><figcaption><p>Moduli di integrazione dei documenti, inclusi i dati anagrafici personalizzati e DocBits Operator. Nessun modulo è stato attivato durante la cattura.</p></figcaption></figure>
 2. **Abilita la funzionalità**:
    * Scorri verso il basso per trovare l'opzione **DocBits Operator**.
    *   Attiva l'interruttore per abilitare il **DocBits Operator**.
 
-       <div align="left"><figure><img src="../../.gitbook/assets/docbits_operator_enable_toggle.png" alt="Interruttore per abilitare il DocBits Operator" width="563"><figcaption></figcaption></figure></div>
+       <div align="left"></div>
 
 ## Accedere all'Interfaccia
 

@@ -9,8 +9,8 @@ I dati master arrivano normalmente in DocBits in automatico attraverso il flusso
 Ogni pagina segue gli stessi cinque passaggi: aprire il link dell'API del proprio ambiente, autorizzarsi con Org ID e API key, compilare il modulo, eseguire e verificare che i dati siano arrivati.
 
 * [Importare Fornitori (Supplier BOD)](supplier-bod.md)
-* [Importare Ordini di Acquisto (Purchase Order BOD)](purchase-order-bod.md)
-* [Importare Entrate Merci (Receive Delivery BOD)](receive-delivery-bod.md)
+* [Importare Ordini di Acquisto (Ordine di Acquisto BOD)](purchase-order-bod.md)
+* [Importare Entrate Merci (Ricevi Consegna BOD)](receive-delivery-bod.md)
 * [Importare Dati Master da XML](master-data-xml.md)
 
 ## Cosa serve

@@ -21,7 +21,7 @@ Touchless Intelligence ti mostra **perché** un abbinamento ordini è fallito e 
 | Fase | Domanda | Si ferma con |
 | --- | --- | --- |
 | **9 · PO Lookup** | Esiste un ordine d'acquisto per questa fattura? | *Purchase order not found* |
-| **10 · PO Line Match** | Ogni riga della fattura corrisponde a una riga dell'ordine? | *PO item mismatch*, *PO line identifier mismatch*, *Unit price outside PO tolerance*, *Quantity outside PO tolerance* |
+| **10 · PO Line Match** | Ogni riga della fattura corrisponde a una riga dell'ordine? | *Mancata corrispondenza articolo PO*, *Mancata corrispondenza identificatore di linea PO*, *Prezzo unitario al di fuori della tolleranza PO*, *Quantità al di fuori della tolleranza PO* |
 
 Un documento che si ferma alla fase 9 o 10 compare nella coda dei fornitori con il primo blocco **Abbinamento ordini**.
 
@@ -53,7 +53,7 @@ Il flusso decisionale mostra come DocBits cerca di abbinare una riga di fattura 
 
 All'interno delle fasi DocBits prova, in quest'ordine:
 
-* **Exact match for all rules**: ogni valore confrontato è identico
+* **Corrispondenza esatta per tutte le regole**: ogni valore confrontato è identico
 * **Tolerance-based match**: i valori numerici possono scostarsi entro la tolleranza
 * **Package criteria**: l'ultimo passaggio, basato sui criteri relativi alla confezione del set di regole
 
@@ -90,7 +90,7 @@ Una riga di fattura ha un prezzo unitario di **10,40**. La riga d'ordine dice **
 
 * **Exact match** fallisce (10,40 non è 10,00).
 * **Tolerance-based match** riesce: la differenza è **4 %**, entro il 5 %.
-* La riga è abbinata. **Match found.**
+* La riga è abbinata. **Corrispondenza trovata.**
 
 Con una tolleranza del **3 %** anche il tolerance-based match fallisce. Dopo tutte le fasi il documento si ferma con **Unit price outside PO tolerance**. Il diagramma mostra esattamente questo percorso, e la soluzione è o la tolleranza (se il 4 % è accettabile per la tua attività) o una correzione presso il fornitore.
 
@@ -98,7 +98,7 @@ Con una tolleranza del **3 %** anche il tolerance-based match fallisce. Dopo tut
 
 Un fornitore fattura l'articolo **"A-4711-X"**, il tuo ordine dice **"4711"**. Nessuna regola confronta i due, quindi non viene trovata alcuna corrispondenza, e Touchless Intelligence raggruppa tutte le fatture di questo fornitore in un cluster: **PO line match, PO item mismatch**, 27 documenti.
 
-* Nel cluster leggi *27 affected, 27 recoverable*, incremento atteso ad esempio **+8,7 pp**.
+* Nel cluster leggi *27 interessati, 27 recuperabili*, incremento atteso ad esempio **+8,7 pp**.
 * La correzione è dalla tua parte: aggiungi o riordina una regola che abbini sul codice articolo del fornitore o sulla descrizione, oppure mantieni i codici articolo del fornitore nei dati anagrafici.
 * Dopo aver cambiato la regola, applica la modifica con una [proposta di modifica](touchless-change-proposals.md) e leggi la **Cronologia delle modifiche** due settimane dopo: tasso puro prima e dopo.
 

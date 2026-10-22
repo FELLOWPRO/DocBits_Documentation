@@ -11,7 +11,7 @@ Questa guida ti guiderà attraverso il processo di configurazione per garantire 
 
 1.  Vai su **Impostazioni** -> **Elaborazione Documenti** -> **Elenco di Valori**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-it.png" alt="Elenco dei valori nell’interfaccia italiana. I nomi degli elenchi dell’organizzazione sono nascosti; nessun elenco è stato creato."><figcaption><p>Elenco dei valori nell’interfaccia italiana. I nomi degli elenchi dell’organizzazione sono nascosti; nessun elenco è stato creato.</p></figcaption></figure>
 2.  Clicca su **Nuovo**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2.png" alt=""><figcaption></figcaption></figure>
@@ -32,7 +32,7 @@ Questa guida ti guiderà attraverso il processo di configurazione per garantire 
 
     * Se hai più valori, puoi cliccare su **Aggiungi altri valori** per aggiungerli.
 
-    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt=""><figcaption></figcaption></figure></div>
+    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-it.png" alt="Modulo italiano per creare un valore, con sotto-organizzazione, sinonimi e traduzioni. Nessun codice di imposta è stato inserito o salvato. Inglese indica la lingua di una traduzione, non quella dell’interfaccia."><figcaption><p>Modulo italiano per creare un valore, con sotto-organizzazione, sinonimi e traduzioni. Nessun codice di imposta è stato inserito o salvato. Inglese indica la lingua di una traduzione, non quella dell’interfaccia.</p></figcaption></figure></div>
 
     * **NOTA:** Puoi trovare i Codici Fiscali in LN sotto: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
@@ -42,7 +42,7 @@ Questa guida ti guiderà attraverso il processo di configurazione per garantire 
 
 1.  Naviga su **Impostazioni** -> **Impostazioni Globali** -> **Tipi di Documento**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-it.png" alt="Tipi di documento nell’interfaccia italiana: scegliere Campi nella scheda del tipo interessato. Nessun interruttore è stato modificato; alcune etichette del prodotto restano in inglese."><figcaption><p>Tipi di documento nell’interfaccia italiana: scegliere Campi nella scheda del tipo interessato. Nessun interruttore è stato modificato; alcune etichette del prodotto restano in inglese.</p></figcaption></figure>
 2.  Scegli il menu **Campi** corrispondente al Tipo di Documento dove desideri aggiungere i campi.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
@@ -50,7 +50,7 @@ Questa guida ti guiderà attraverso il processo di configurazione per garantire 
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_8.png" alt=""><figcaption></figcaption></figure>
 
-<table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>Nome</strong></td><td><strong>Titolo</strong></td><td><strong>Tipo di Campo</strong></td><td><strong>Elenco di Valori</strong></td></tr><tr><td><code>tax_country</code></td><td>Tax Country</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>Tax Country Reduced</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>Tax Country Free</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>Tax Code</td><td>Dropdown</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>Tax Code Reduced</td><td>Dropdown</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>Tax Code Free</td><td>Dropdown</td><td>Tax_Code_Free</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>Nome</strong></td><td><strong>Titolo</strong></td><td><strong>Tipo di Campo</strong></td><td><strong>Elenco dei Valori</strong></td></tr><tr><td><code>tax_country</code></td><td>Paese fiscale</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>Paese fiscale ridotto</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>Paese esente da tasse</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>Codice Fiscale</td><td>Dropdown</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>Codice Fiscale Ridotto</td><td>Dropdown</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>Codice Fiscale Libero</td><td>Dropdown</td><td>Tax_Code_Free</td></tr></tbody></table>
 
 <div><figure><img src="../../../.gitbook/assets/TaxCodes_10.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_11.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_12.png" alt=""><figcaption></figcaption></figure></div>
 
@@ -64,7 +64,7 @@ Questa guida ti guiderà attraverso il processo di configurazione per garantire 
 
 1.  Vai su **Impostazioni** -> **Impostazioni Globali** -> **Tipi di Documento**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-it.png" alt="Tipi di documento nell’interfaccia italiana: scegliere Campi nella scheda del tipo interessato. Nessun interruttore è stato modificato; alcune etichette del prodotto restano in inglese."><figcaption><p>Tipi di documento nell’interfaccia italiana: scegliere Campi nella scheda del tipo interessato. Nessun interruttore è stato modificato; alcune etichette del prodotto restano in inglese.</p></figcaption></figure>
 2.  Apri il menu **Modifica layout** per il Tipo di Documento che desideri modificare.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt=""><figcaption></figcaption></figure>
@@ -101,7 +101,7 @@ Dopo aver caricato un nuovo documento in DocBits con le impostazioni di document
 
 1.  Vai su **Impostazioni** -> **Elaborazione Documenti** -> **Elenco di Valori**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-it.png" alt="Elenco dei valori nell’interfaccia italiana. I nomi degli elenchi dell’organizzazione sono nascosti; nessun elenco è stato creato."><figcaption><p>Elenco dei valori nell’interfaccia italiana. I nomi degli elenchi dell’organizzazione sono nascosti; nessun elenco è stato creato.</p></figcaption></figure>
 2.  Clicca su **Nuovo**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2.png" alt=""><figcaption></figcaption></figure>
@@ -122,7 +122,7 @@ Dopo aver caricato un nuovo documento in DocBits con le impostazioni di document
 
     * Se hai più valori, puoi cliccare su **Aggiungi altri valori** per aggiungerli.
 
-    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt=""><figcaption></figcaption></figure></div>
+    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-it.png" alt="Modulo italiano per creare un valore, con sotto-organizzazione, sinonimi e traduzioni. Nessun codice di imposta è stato inserito o salvato. Inglese indica la lingua di una traduzione, non quella dell’interfaccia."><figcaption><p>Modulo italiano per creare un valore, con sotto-organizzazione, sinonimi e traduzioni. Nessun codice di imposta è stato inserito o salvato. Inglese indica la lingua di una traduzione, non quella dell’interfaccia.</p></figcaption></figure></div>
 
     * **NOTA:** Puoi trovare i Codici Fiscali in LN sotto: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
@@ -132,7 +132,7 @@ Dopo aver caricato un nuovo documento in DocBits con le impostazioni di document
 
 1.  Naviga su **Impostazioni** -> **Impostazioni Globali** -> **Tipi di Documento**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-it.png" alt="Tipi di documento nell’interfaccia italiana: scegliere Campi nella scheda del tipo interessato. Nessun interruttore è stato modificato; alcune etichette del prodotto restano in inglese."><figcaption><p>Tipi di documento nell’interfaccia italiana: scegliere Campi nella scheda del tipo interessato. Nessun interruttore è stato modificato; alcune etichette del prodotto restano in inglese.</p></figcaption></figure>
 2.  Scegli il menu **Campi** corrispondente al Tipo di Documento dove desideri aggiungere i campi.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
@@ -140,7 +140,7 @@ Dopo aver caricato un nuovo documento in DocBits con le impostazioni di document
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_8.png" alt=""><figcaption></figcaption></figure>
 
-<table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>Nome</strong></td><td><strong>Titolo</strong></td><td><strong>Tipo di Campo</strong></td><td><strong>Elenco di Valori</strong></td></tr><tr><td><code>tax_country</code></td><td>Tax Country</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>Tax Country Reduced</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>Tax Country Free</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>Tax Code</td><td>Dropdown</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>Tax Code Reduced</td><td>Dropdown</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>Tax Code Free</td><td>Dropdown</td><td>Tax_Code_Free</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>Nome</strong></td><td><strong>Titolo</strong></td><td><strong>Tipo di Campo</strong></td><td><strong>Elenco dei Valori</strong></td></tr><tr><td><code>tax_country</code></td><td>Paese fiscale</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>Paese fiscale ridotto</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>Paese esente da tasse</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>Codice Fiscale</td><td>Dropdown</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>Codice Fiscale Ridotto</td><td>Dropdown</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>Codice Fiscale Libero</td><td>Dropdown</td><td>Tax_Code_Free</td></tr></tbody></table>
 
 <div><figure><img src="../../../.gitbook/assets/TaxCodes_10.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_11.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_12.png" alt=""><figcaption></figcaption></figure></div>
 
@@ -154,7 +154,7 @@ Dopo aver caricato un nuovo documento in DocBits con le impostazioni di document
 
 1.  Vai su **Impostazioni** -> **Impostazioni Globali** -> **Tipi di Documento**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-it.png" alt="Tipi di documento nell’interfaccia italiana: scegliere Campi nella scheda del tipo interessato. Nessun interruttore è stato modificato; alcune etichette del prodotto restano in inglese."><figcaption><p>Tipi di documento nell’interfaccia italiana: scegliere Campi nella scheda del tipo interessato. Nessun interruttore è stato modificato; alcune etichette del prodotto restano in inglese.</p></figcaption></figure>
 2.  Apri il menu **Modifica layout** per il Tipo di Documento che desideri modificare.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt=""><figcaption></figcaption></figure>
@@ -175,7 +175,7 @@ Dopo aver caricato un nuovo documento in DocBits con le impostazioni di document
 
     <figure><img src="../../../.gitbook/assets/TaxCodeMulti_4.png" alt=""><figcaption></figcaption></figure>
 9. Espandi il menu a discesa **Campi**.
-10. Cerca **Tax** e trascina e rilascia i campi rispettivi, come **Tax Country** e **Tax Code**, nel corrispondente subgroup.
+10. Cerca **Tax** e trascina e rilascia i rispettivi campi, come **Tax Country** e **Tax Code**, nel corrispondente sottogruppo.
 
     <figure><img src="../../../.gitbook/assets/TaxCodeMulti_5.png" alt=""><figcaption></figcaption></figure>
 11. Ripeti i passaggi 5 fino a 10 2 volte per raggiungere il seguente stato:

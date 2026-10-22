@@ -22,7 +22,7 @@ Questa guida ti accompagna nel collegamento di **ClickHouse** a **Power BI Deskt
 * Seleziona **ClickHouse ODBC Driver** dall'elenco e fai clic su **Finish**.
 *   Compila i campi richiesti. Le informazioni necessarie si trovano in:
 
-    **DocBits** → **Settings** → **Document Processing** → **Module** → **AI Dashboard** → **ClickHouse Direct Access**
+    **DocBits** → **Impostazioni** → **Elaborazione documenti** → **Modulo** → **AI Cruscotto** → **ClickHouse Accesso diretto**
 
     <figure><img src="../../.gitbook/assets/clickhouse_direct_access_settings.png" alt="Impostazioni ClickHouse Direct Access in DocBits"><figcaption></figcaption></figure>
 
@@ -68,16 +68,22 @@ Questa guida ti accompagna nel collegamento di **ClickHouse** a **Power BI Deskt
 
 #### 6. Abilita l'aggiornamento pianificato (facoltativo)
 
-<mark style="color:red;">**Nota:**</mark> **Richiede Power BI Pro o Premium + Gateway**
+L’aggiornamento pianificato dipende dalla licenza o capacità dell’area di lavoro, dal connettore e dalla modalità di connessione. Per questa connessione ODBC, configurare un gateway raggiungibile con driver, DSN e credenziali appropriati. Verificare i requisiti attuali nella documentazione ufficiale.
 
 * Per mantenere i tuoi report sincronizzati con ClickHouse:
 * Pubblica il tuo file `.pbix` su **Power BI Service**.
 * Installa il **Power BI Gateway** (modalità Standard) su una macchina con accesso di rete a ClickHouse.
-* In Power BI Service:
-  * Vai al tuo dataset → **Settings** → **Scheduled Refresh**
+* In servizio Power BI:
+  * Vai al tuo dataset → **Impostazioni** → **Aggiornamento pianificato**
   * Associa il tuo DSN e fornisci le credenziali
 * Ulteriori informazioni [qui](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).&#x20;
 
 #### 7. Esempi di dashboard e viste dati&#x20;
 
 <div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Esempio di dashboard Power BI 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Esempio di dashboard Power BI 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Esempio di dashboard Power BI 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Esempio di dashboard Power BI 4"><figcaption></figcaption></figure></div>
+
+[Documentazione ufficiale — ODBC](https://learn.microsoft.com/en-us/power-query/connectors/odbc)
+
+[Documentazione ufficiale — psqlODBC](https://odbc.postgresql.org/docs/config-opt.html)
+
+[Documentazione ufficiale — Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)

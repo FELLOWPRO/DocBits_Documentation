@@ -8,7 +8,7 @@ clienti in questo periodo._
 
 ---
 
-## Highlights
+## Novità principali
 
 - **Login multi-organizzazione.** Gli utenti che appartengono a più
   organizzazioni ora dispongono di un vero selettore di organizzazione al

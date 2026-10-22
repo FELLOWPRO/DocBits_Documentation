@@ -25,7 +25,7 @@ Questa funzionalità ti aiuta a gestire e riconciliare i numeri degli articoli t
 * **Azione:** Opzioni per gestire le mappature, come eliminare mappature errate.
 
 {% hint style="info" %}
-Vedi qui anche la [Sezione Amministratore](broken-reference)
+Vedi qui anche la [Sezione Amministratore](../../../administration-and-setup/settings/README.md)
 {% endhint %}
 
 ## **Vantaggi**

@@ -1,4 +1,4 @@
-# Supplier BOD Mapping
+# Mappatura del BOD fornitore
 
 Questa pagina documenta come DocBits ingerisce i dati anagrafici fornitori di Infor M3 tramite i BOD `SyncSupplierPartyMaster` e `SyncRemitToPartyMaster`. Entrambi i BOD popolano la stessa tabella di dati anagrafici `SUPPLIER` in DocBits.
 

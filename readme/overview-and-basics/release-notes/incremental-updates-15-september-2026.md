@@ -8,7 +8,7 @@ non elencati non hanno avuto modifiche visibili ai clienti._
 
 ---
 
-## Highlights
+## Novità principali
 
 - **Un unico insieme di regole per la ricerca nella dashboard.** `field=value`
   significa ora esattamente questo valore su ogni motore di ricerca,
@@ -198,7 +198,7 @@ prezzo unitario PO viene calcolato dall'importo netto. Inoltre:
   così il file può essere caricato di nuovo. Era denominato `.xml` e veniva
   rifiutato al ricaricamento.
 
-### Workflow
+### Flusso di lavoro
 
 - Rinominare un workflow conserva le modifiche alle card fatte nella stessa
   sessione. I nuovi workflow vengono creati con un'unica richiesta di
@@ -213,7 +213,7 @@ prezzo unitario PO viene calcolato dall'importo netto. Inoltre:
 - Le scadenze delle attività usano il formato data delle vostre impostazioni
   utente nell'elenco, nella board e nella vista di dettaglio.
 
-### Analytics: Touchless Intelligence
+### Analisi: Touchless Intelligence
 
 La scheda Touchless (Analytics → Touchless) misura quanti documenti
 attraversano DocBits senza che una persona li tocchi, e perché gli altri non
@@ -412,7 +412,7 @@ PO Match Service:
 - Un numero di ordine di acquisto corretto viene abbinato nello stesso
   salvataggio che lo corregge.
 
-### Analytics
+### Analisi
 
 - Touchless: tutte le modifiche backend dietro la sezione Web App qui sopra,
   incluse le evidenze di fase registrate da ogni fase della pipeline, la

@@ -1,6 +1,6 @@
-# Purchase Invoice - 2nd Approval Unit Price
+# Fattura di acquisto: seconda approvazione del prezzo unitario
 
-<figure><img src="../../../../.gitbook/assets/docbits_approval_invoice_3.png" alt="DocBits Approvazione Fattura 3"><figcaption></figcaption></figure>
+
 
 Questo titolo indica che la regola è configurata per gestire la seconda fase di approvazione di una fattura d'acquisto, con particolare attenzione alla convalida del prezzo unitario.
 
@@ -19,6 +19,6 @@ Questo titolo indica che la regola è configurata per gestire la seconda fase di
 
 #### Scopo di Questa Regola:
 
-* **Ensure Accuracy and Compliance**: questa regola è fondamentale per garantire che il processo di fatturazione sia accurato e conforme ai termini concordati. Attivando una revisione in presenza di una discrepanza nei prezzi unitari, il sistema aiuta a prevenire errori finanziari o potenziali frodi.
+* **Garantire precisione e conformità**: questa regola è fondamentale per garantire che il processo di fatturazione sia accurato e conforme ai termini concordati. Attivando una revisione in presenza di una discrepanza nei prezzi unitari, il sistema aiuta a prevenire errori finanziari o potenziali frodi.
 * **Streamline Approvals**: l'automazione dell'assegnazione per la revisione in base a discrepanze specifiche aiuta a semplificare il processo di approvazione e garantisce che i problemi vengano affrontati tempestivamente dal personale appropriato.
 * **Financial Oversight**: richiedere una seconda approvazione, soprattutto basata sulla corrispondenza dei prezzi, rafforza i controlli finanziari e la responsabilità all'interno dell'organizzazione.

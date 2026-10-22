@@ -35,5 +35,5 @@ Un Guideline ID CII armonizzato può identificare una famiglia e un profilo pur 
 ## Correlati
 
 * [Configurazione ZUGFeRD](../zugferd/)
-* [Mappatura dei campi ZUGFeRD](../zugferd/versions/)
+* [Mappatura dei campi ZUGFeRD](../zugferd/README.md)
 * [Documenti elettronici supportati](./)

@@ -40,7 +40,7 @@ L'identificatore DIAN (**NIT** — Número de Identificación Tributaria) utiliz
 
 ## Anteprima predefinita
 
-<figure><img src="colombia-dian-preview.png" alt="Anteprima della Factura Electrónica Colombia DIAN in DocBits"><figcaption><p>Anteprima predefinita DocBits per una COLOMBIA FACTURA ELECTRONICA (CustomizationID 10)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/colombia-dian-preview.png" alt="Anteprima della Factura Electrónica Colombia DIAN in DocBits"><figcaption><p>Anteprima predefinita DocBits per una COLOMBIA FACTURA ELECTRONICA (CustomizationID 10)</p></figcaption></figure>
 
 ## Mappatura dei campi
 
@@ -85,5 +85,5 @@ L'elemento radice è `<Invoice>` (UBL 2.1) per le fatture e `<CreditNote>` per l
 
 ## Correlati
 
-- [Standard di fatturazione elettronica supportati](../../currently-supported-e-invoice-standards/)
+- [Standard di fatturazione elettronica supportati](../currently-supported-e-invoice-standards/README.md)
 - [Documenti elettronici supportati](./)

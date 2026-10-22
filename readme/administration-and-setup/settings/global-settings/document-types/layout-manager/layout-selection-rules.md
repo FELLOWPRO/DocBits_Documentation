@@ -18,7 +18,7 @@ L'origine resta disponibile, ma come una condizione tra le tante. Una regola pu�
 | --- | --- | --- |
 | Le fatture di un fornitore richiedono campi aggiuntivi (progetto, numero doganale) | impossibile senza una nuova origine | regola *Supplier ID is 20723* → layout "Fattura con campi progetto" |
 | I documenti DE, AT e CH devono avere lo stesso aspetto | tre copie dello stesso layout da mantenere | un solo layout, una regola per origine (o un gruppo ANY) che punta ad esso |
-| Le fatture elettroniche richiedono una schermata più semplice dei PDF scansionati | non possibile | regola *Extraction Method is ELECTRONIC_DOCUMENT* → layout "Fattura elettronica" |
+| Le fatture elettroniche richiedono una schermata più semplice dei PDF scansionati | non possibile | regola *Il metodo di estrazione è ELECTRONIC_DOCUMENT* → layout "Fattura elettronica" |
 | Le fatture di importo elevato richiedono più campi nella schermata di approvazione | non possibile | regola di approvazione *Total Amount greater than 10000* → layout "Approvazione importi elevati" |
 | Il secondo approvatore deve vedere una schermata diversa dal primo | tipo di layout separato "seconda approvazione" | regola di approvazione *Document Status is Pending second approval* → layout "Seconda approvazione" |
 
@@ -47,7 +47,7 @@ Nei layout stessi non viene eliminato né modificato nulla. Subito dopo l'attiva
 
 **Disattivando** la funzione, il tipo di documento torna subito alla selezione basata sull'origine. Le regole vengono conservate ma non utilizzate, e tornano a essere efficaci se si riattiva l'interruttore.
 
-## La schermata Layouts & Selection Rules
+## La schermata Layout e regole di selezione
 
 <figure><img src="../../../../../.gitbook/assets/s150-layouts-overview-it.png" alt="Panoramica dei layout e delle regole di selezione. Il nome della schermata Field validation resta in inglese nel prodotto."><figcaption><p>Panoramica dei layout e delle regole di selezione. Il nome della schermata Field validation resta in inglese nel prodotto.</p></figcaption></figure>
 
@@ -141,7 +141,7 @@ La frase in alto riassume la regola man mano che viene costruita — "When heade
 
 La condizione che un documento deve soddisfare. È possibile utilizzare:
 
-* **attributi del documento**: Document Origin, Extraction Method, Document Status, Sub Document Type,
+* **attributi del documento**: Origine del documento, Metodo di estrazione, Stato del documento, Tipo di documento secondario,
 * **campi dell'intestazione**: Supplier ID, Total Amount, Currency, Purchase Order e ogni altro campo del tipo di documento,
 * un **percorso JSON personalizzato** (Advanced).
 
@@ -195,7 +195,7 @@ Schermata **Approvazione** · priorità **5** · *Document Status is Pending sec
 
 Schermata **Rifiuta** · priorità **10** · *Supplier ID is one of* `10040, 10041` · destinazione *Rifiuto con codici motivo*.
 
-## Best practice
+## Buone pratiche
 
 * **Prima le regole specifiche, poi quelle generali.** Regole per fornitore sopra le regole per paese, regole per paese sopra il layout predefinito.
 * **Lasciare intervalli di priorità** (5, 10, 20 …) in modo che le nuove regole si inseriscano senza rinumerare.

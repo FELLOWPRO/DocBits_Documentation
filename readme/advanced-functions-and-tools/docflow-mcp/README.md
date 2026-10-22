@@ -7,7 +7,7 @@ DocFlow espone un server **Model Context Protocol (MCP)** che consente agli assi
 Con DocFlow MCP puoi:
 
 - **Elencare, creare, aggiornare ed eliminare** workflow avanzati
-- **Testare workflow** con documenti reali o simulati
+- **Testare il flusso di lavoro** con documenti reali o simulati
 - **Creare card personalizzate** utilizzando il Partner Card SDK
 - **Validare, testare, approvare e gestire** le sottomissioni di card partner
 - **Importare card** direttamente da repository GitHub

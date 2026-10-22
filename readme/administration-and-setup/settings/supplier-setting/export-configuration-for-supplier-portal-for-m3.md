@@ -194,7 +194,7 @@ Il file di configurazione per l'esportazione è strutturato come un oggetto JSON
 
 ### 1. Caricamento del File di Configurazione
 
-#### 1. Vai su Export Configuration:
+#### 1. Vai su Configurazione dell’esportazione:
 
 • Vai alla sezione Export Configuration dal menu principale.
 

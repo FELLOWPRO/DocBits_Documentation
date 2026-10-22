@@ -4,35 +4,35 @@
 
 La pagina Company Information ti permette di gestire il profilo della tua azienda, le preferenze e i dettagli dell'abbonamento. È organizzata nelle sezioni seguenti:
 
-## Company Information
+## Informazioni sull’azienda
 
 Questa sezione contiene i dati principali della tua azienda, raggruppati in quattro aree:
 
-### Company Identity
+### Identità dell’azienda
 
 * **Nome** *(obbligatorio)*: la ragione sociale della tua azienda.
 
-### Address
+### Indirizzo
 
 * **Via + numero**: l'indirizzo (via e numero civico) della tua azienda.
 * **Codice postale**: il codice postale (CAP).
 * **Città**: il nome della città.
 * **Paese**: seleziona il tuo paese dal menu a discesa.
 
-### Legal Information
+### Informazioni legali
 
 * **ID azienda**: un identificatore univoco della tua azienda, usato per le integrazioni e come riferimento interno.
 * **Codice fiscale**: il tuo numero di identificazione fiscale per la rendicontazione finanziaria.
 * **ID del registro commerciale**: il tuo numero di registro commerciale per la documentazione legale.
 
-### Contact
+### Contatto
 
 * **Telefono ufficiale dell’azienda**: il numero di telefono principale della tua azienda.
 * **Posta elettronica**: l'indirizzo e-mail principale usato per le comunicazioni ufficiali.
 
 Dopo aver inserito o aggiornato i campi, fai clic su **Salva** per applicare le modifiche. Le icone **?** accanto agli identificatori legali mostrano indicazioni aggiuntive sul campo. Seleziona il titolo della sezione per espandere o comprimere il modulo.
 
-## E-mail domains
+## Domini di posta elettronica
 
 Gli amministratori dell'organizzazione possono aprire **Impostazioni → Informazioni aziendali → Domini di posta elettronica** per gestire i domini usati per l'assegnazione automatica all'organizzazione. Quando una persona accede con Microsoft o Google e non è ancora membro di un'organizzazione, DocBits può assegnarla a questa organizzazione se il suo indirizzo e-mail utilizza uno dei domini elencati. Un dominio può appartenere a una sola organizzazione.
 
@@ -42,7 +42,7 @@ Inserisci solo il dominio, ad esempio `example.com`, nel campo e seleziona **Agg
 
 Prima di aggiungere un dominio, verifica quale organizzazione deve ricevere i nuovi accessi. Per gestire le appartenenze esistenti, continua con [Utenti](../groups-users-and-permissions/users/README.md).
 
-## Company Preferences
+## Preferenze dell’azienda
 
 Configura le impostazioni predefinite valide per tutta l'azienda:
 
@@ -52,14 +52,14 @@ Configura le impostazioni predefinite valide per tutta l'azienda:
 
 Fai clic su **Salva** dopo aver apportato le modifiche.
 
-## App-Color
+## Colore dell’applicazione
 
 Personalizza il colore principale dell'interfaccia di DocBits. È utile per distinguere visivamente ambienti diversi (ad es. dev e produzione).
 
 * **Colore**: inserisci un codice colore esadecimale (ad es. `#2388AE`) oppure usa il selettore di colori.
 * Fai clic su **Salva** per applicare, oppure su **Ripristina** per ripristinare il colore predefinito.
 
-## Subscription Plan
+## Piano di abbonamento
 
 Visualizza i tuoi piani di abbonamento attivi e i relativi dettagli:
 
@@ -70,7 +70,7 @@ Visualizza i tuoi piani di abbonamento attivi e i relativi dettagli:
 * **Numero di sotto-organizzazioni**: il numero di sotto-organizzazioni configurate.
 * **Numero di fornitori**: il numero di fornitori registrati.
 
-## Subscription Usage
+## Utilizzo dell’abbonamento
 
 Monitora il consumo mensile di token e workflow:
 

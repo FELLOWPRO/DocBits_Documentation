@@ -59,7 +59,7 @@ Nella sezione **Formattazione degli importi** hai due opzioni:
 {% hint style="info" %}
 **Prerequisiti per un'estrazione delle tabelle funzionante**
 
-* Il tipo di documento ha delle **colonne della tabella** (Impostazioni → Impostazioni Globali → Tipi di Documento → [Colonne della Tabella](../../global-settings/document-types/table-columns.md)). Senza colonne non c'è nulla in cui estrarre i dati.
+* Il tipo di documento ha delle **colonne della tabella** (Impostazioni → Impostazioni Globali → Tipi di Documento → [Colonne della Tabella](../../global-settings/document-types/table-columns/README.md)). Senza colonne non c'è nulla in cui estrarre i dati.
 * **Estrazione delle tabelle** o **Estrazione AI delle tabelle** è attivata qui sotto, per l'intera organizzazione.
 * Il documento ha testo leggibile: l'OCR è stato eseguito, oppure viene usato l'E-Text per i PDF nativi digitali ([Impostazioni OCR](../ocr-settings.md)).
 * L'addestramento e i modelli AI sono **per fornitore**. Una tabella addestrata vale solo per i documenti del fornitore su cui è stata addestrata.

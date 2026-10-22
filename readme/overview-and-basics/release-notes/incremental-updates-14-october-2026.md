@@ -16,7 +16,7 @@ hanno avuto modifiche visibili ai clienti._
 
 ---
 
-## Highlights
+## Novità principali
 
 - **Il Settings Assistant.** Una barra di chat in ogni pagina delle
   impostazioni risponde alle domande sulla configurazione della vostra

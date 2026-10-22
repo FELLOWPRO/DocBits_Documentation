@@ -8,14 +8,14 @@ Il file di mapping per l'esportazione verso M3 è suddiviso in 5 sezioni e ciasc
   * Header Static Fields (Campi statici della testata)
   * Header Fields (Campi della testata)
 * Tax Lines (Righe IVA)
-  * Tax Line Static Fields (Campi statici delle righe IVA)
+  * Campi statici riga imposta (Campi statici delle righe IVA)
   * Tax Line Fields (Campi delle righe IVA)
-* Receipt Lines (Righe di ricezione)
+* Righe di ricezione (Righe di ricezione)
   * Receipt Line Static Fields (Campi statici delle righe di ricezione)
   * Receipt Line Fields (Campi delle righe di ricezione)
 * Order Charge Lines (Importi aggiuntivi)
-  * Order Charge Static Fields (Campi statici degli addebiti d'ordine)
-  * Order Charge Fields (Campi degli addebiti d'ordine)
+  * Campi statici addebito ordine (Campi statici degli addebiti d'ordine)
+  * Campi Addebito Ordine (Campi degli addebiti d'ordine)
 * Cost Lines (Righe di costo)
   * Cost Line Static Fields (Campi statici delle righe di costo)
   * Cost Line Fields (Campi delle righe di costo)
@@ -109,7 +109,7 @@ Campi M3 disponibili: consulta l'API o l'interfaccia di M3
 
 Campi DocBits disponibili: packing\_slip, purchase\_order, line\_number, line\_sequence, delivery\_number, delivery\_line, amount, quantity, total\_net\_amount
 
-### Riga di addebito d'ordine (Order Charge Line):
+### Riga di addebito d'ordine (Riga di addebito dell'ordine):
 
 #### Campi statici dell'addebito d'ordine:
 

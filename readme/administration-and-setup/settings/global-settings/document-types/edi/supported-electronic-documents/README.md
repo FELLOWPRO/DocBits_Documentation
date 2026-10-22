@@ -61,7 +61,7 @@ La panoramica rimanda a 39 guide nazionali e a una guida internazionale. Ogni gu
 | [Perù](countries/peru.md) | Peru CPE ha voci generiche, UBL 2.0 e UBL 2.1. Factura Electronica è un’altra etichetta. | Voci trovate |
 | [Uruguay](countries/uruguay.md) | Uruguay CFE ha voci generiche, 24 e 25. Sono elencate anche E-Factura ed E-Nota Credito. | Voci trovate |
 | [Kazakistan](countries/kazakhstan.md) | Kazakhstan ESF è la famiglia configurata. | Voci trovate |
-| [Arabia Saudita](countries/saudi-arabia.md) | ZATCA Fatoorah, Reporting, Simplified e Tax Invoice hanno voci separate. | Voci trovate |
+| [Arabia Saudita](countries/saudi-arabia.md) | ZATCA Fatoorah, Reporting, Semplificato e Fattura Fiscale hanno voci separate. | Voci trovate |
 | [Turchia](countries/turkey.md) | Turkey E-Fatura ed E-Arsiv sono famiglie configurate separate. | Voci trovate |
 | [Emirati Arabi Uniti](countries/united-arab-emirates.md) | UAE VAT Invoice è l’etichetta configurata. | Voci trovate |
 | [Internazionale](countries/international.md) | Le voci internazionali comprendono Peppol BIS 3.0, UBL 2.1, CII puro, EDI, INVOIC02, cXML, OCI, BOD e SPS Commerce RSX 7.7.4. | Voci trovate |

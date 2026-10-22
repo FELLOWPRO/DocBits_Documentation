@@ -6,7 +6,7 @@ La Ricerca Rapida Globale è un avviatore accessibile da tastiera che trova pagi
 
 Premi <kbd>Cmd</kbd> + <kbd>K</kbd> su macOS o <kbd>Ctrl</kbd> + <kbd>K</kbd> su Windows e Linux. La scorciatoia funziona da qualsiasi schermata.
 
-<figure><img src="../../.gitbook/assets/quick-search-modal.png" alt="Ricerca Rapida Globale"><figcaption><p>La Ricerca Rapida si apre sopra la pagina corrente.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-global-quick-search-it.png" alt="Ricerca globale delle pagine con risultati delle impostazioni in italiano. Il comando Open resta in inglese nella versione illustrata."><figcaption><p>Ricerca globale delle pagine con risultati delle impostazioni in italiano. Il comando Open resta in inglese nella versione illustrata.</p></figcaption></figure>
 
 ## Ricerca
 

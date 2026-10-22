@@ -22,7 +22,7 @@ Questa panoramica in sola lettura mostra la configurazione esistente del paese i
 
 ## Varianti e limiti delle versioni
 
-ZATCA Fatoorah, Reporting, Simplified e Tax Invoice hanno voci separate.
+ZATCA Fatoorah, Reporting, Semplificato e Fattura Fiscale hanno voci separate.
 
 **Sintassi:** UBL XML
 

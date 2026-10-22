@@ -1,6 +1,6 @@
 # Fornitori e ordini di acquisto
 
-## **Connection Point**
+## **Punto di connessione**
 
 Dovrai creare il connection point DocBits API per poter creare successivamente il data flow.
 
@@ -42,7 +42,7 @@ La configurazione di questo BOD dovrebbe essere simile alla seguente
 
 Una volta configurati questi BOD, puoi salvare il connection point premendo l'icona situata a destra del pulsante Indietro.
 
-## **Data Flow**
+## **Flusso di dati**
 
 Il data flow avrà un aspetto simile al seguente
 
@@ -56,7 +56,7 @@ Ai fini di questa spiegazione useremo l'esempio di quattro ambienti separati.
 
 L'inizio del data flow è costituito dalla tua applicazione LN
 
-### **DocBits API**
+### **API DocBits**
 
 Qui aggiungerai un'applicazione e selezionerai le DocBits API create in precedenza
 

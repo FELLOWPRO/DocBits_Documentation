@@ -33,7 +33,7 @@
 * Gli altri utenti la vedono quando un amministratore ha concesso al loro ruolo la scheda **Dashboard di analisi** (**Impostazioni → Ruoli**). Senza questa autorizzazione, solo gli amministratori hanno accesso.
 * Alcune azioni sono riservate agli amministratori: **Analisi con l'IA** (AI analysis), **applicare e annullare una modifica**, **proposte di regole apprese** e il **Report di consulenza** (Consulting report).
 
-Se non hai l'autorizzazione, la pagina mostra *Action not allowed, please contact the administrator*.
+Se non hai l'autorizzazione, la pagina mostra *Azione non consentita, contatta l'amministratore*.
 
 ## Cosa significa "touchless"
 
@@ -145,10 +145,10 @@ La coda risponde a **"Quale fornitore dovremmo correggere per primo?"** È ordin
 | **Numero fornitore / Fornitore** (Supplier Number / Supplier) | Il fornitore. I documenti senza fornitore riconosciuto compaiono come **No supplier identified (n documents)** |
 | **Volume** | Documenti idonei del fornitore nel periodo |
 | **Tasso puro** (Pure Rate) | Quota di documenti touchless puri. Verde se pari o sopra l'obiettivo, rosso se sotto |
-| **Documenti persi** (Lost Documents) | Documenti terminati come AP assistito o come eccezione di processo. Non sempre una persona: contano anche un rifiuto dell'ERP o un documento fermo per sette giorni |
+| **Documenti persi** (Documenti smarriti) | Documenti terminati come AP assistito o come eccezione di processo. Non sempre una persona: contano anche un rifiuto dell'ERP o un documento fermo per sette giorni |
 | **Causa radice** (Root Cause) | Chi è responsabile della correzione: Configurazione, Integrazione ERP, Esportazione, Estrazione, Dati anagrafici, Misurazione, Abbinamento ordini, Processo utente, Convalida o Sconosciuta |
 | **Recuperabili** (Recoverable) | Documenti persi la cui causa DocBits può correggere: configurazione, dati anagrafici o modello del fornitore |
-| **Incremento atteso** (Expected Lift) | Di quanti **punti percentuali** salirebbe il tasso della tua organizzazione se ogni documento recuperabile di questo fornitore fosse elaborato in modalità touchless (**+x pp**) |
+| **Incremento atteso** (Innalzamento previsto) | Di quanti **punti percentuali** salirebbe il tasso della tua organizzazione se ogni documento recuperabile di questo fornitore fosse elaborato in modalità touchless (**+x pp**) |
 | **Affidabilità** (Confidence) | **Alta**, **Media** o **Bassa**: quanto è sicura la diagnosi |
 | **Stato** (Status) | Nuovo, Aperto, In analisi, In corso, Confermato, Risolto, Respinto. Un fornitore con troppi pochi documenti mostra **NEEDS_DIAGNOSIS** |
 

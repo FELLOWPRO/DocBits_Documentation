@@ -6,8 +6,6 @@
 
 在 Windows 和 Linux 上按 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>，或在 macOS 上按 <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>。性能报告对话框会立即打开。
 
-<figure><img src="../../../.gitbook/assets/debug-collector-dialog.png" alt="调试收集器对话框"><figcaption><p>性能报告对话框会显示捕获的快照以及内置的支持工单表单。</p></figcaption></figure>
-
 ## 捕获的内容
 
 * **API 调用** — 最近 60 次 REST 和 WebSocket 调用，包括耗时、状态码和访问过的 URL。耗时超过两秒的调用会单独标记。
@@ -35,3 +33,5 @@
 * 在您点击**发送报告**之前，任何数据都不会离开浏览器——快捷键只会打开对话框。
 
 如果您处理过包含客户数据的文档，请在发送前检查快照。URL 中显示的文档 ID 也会出现在报告中。
+
+从支持选项打开诊断报告，描述问题并检查收集的信息，然后再共享。报告收集证据，本身并不确定根本原因。

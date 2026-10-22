@@ -16,31 +16,31 @@
 
 **Test 1：逻辑卡片**
 
-When：**Assignee is:** Amier Haider
+When：**Assignee is:** 收件负责人
 
 And：**Document type is:** Invoice
 
-Then：**Assign document to:** Stefan Reppermund
+Then：**Assign document to:** 发票审核人
 
 ![](<../../../.gitbook/assets/3 (2).png>)
 
 **Test 2：逻辑卡片**
 
-When：**Assignee is:** Amier Haider
+When：**Assignee is:** 收件负责人
 
 And：**Document type is:** Delivery Note
 
-Then：**Assign document to:** James Edwards
+Then：**Assign document to:** 交付审核人
 
 ![](<../../../.gitbook/assets/4 (2).png>)
 
 **Test 3：逻辑卡片**
 
-**When：****Assignee is:** Amier Haider
+**When：****Assignee is:** 收件负责人
 
 **And：****Document type is:** Order Confirmation
 
-**Then：****Assign document to:** Anian Sollinger
+**Then：****Assign document to:** 订单审核人
 
 ![](<../../../.gitbook/assets/5 (2).png>)
 
@@ -54,11 +54,11 @@ Then：**Assign document to:** James Edwards
 
 **When：****Document type is:** Delivery Note
 
-**And：****Assignee is:** Amier Haider
+**And：****Assignee is:** 收件负责人
 
 **Then：****Change Status to:** Pending Approval
 
-<figure><img src="../../../.gitbook/assets/workflow_test4_delivery_note_status.png" alt="工作流 Test 4 交货单状态"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-workflow_test4_delivery_note_status-zh.png" alt="更改状态的工作流草稿，尚未保存。"><figcaption><p>更改状态的工作流草稿，尚未保存。</p></figcaption></figure>
 
 ![](<../../../.gitbook/assets/8 (2).png>)
 
@@ -66,7 +66,7 @@ Then：**Assign document to:** James Edwards
 
 When：**Document type is:** Invoice
 
-And：**Assignee is:** Stefan Reppermund
+And：**Assignee is:** 发票审核人
 
 Then：**Change Status to:** Pending Second Approval
 
@@ -80,11 +80,11 @@ Then：**Change Status to:** Pending Second Approval
 
 **Test 6：逻辑卡片**
 
-When：**Assignee is:** Amier Haider
+When：**Assignee is:** 收件负责人
 
 And：Docfield **total\_amount** is **Greater than 500**
 
-Then：**Assign document to:** Asad Usman Khan
+Then：**Assign document to:** 审批负责人
 
 <figure><img src="../../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="工作流 Test 6 总金额分配"><figcaption></figcaption></figure>
 
@@ -94,15 +94,15 @@ Then：**Assign document to:** Asad Usman Khan
 
 **Test 7：逻辑卡片**
 
-**When：****Assignee is:** Amier Haider
+**When：****Assignee is:** 收件负责人
 
 **And：**Docfield **total\_amount** is **Greater then 500**
 
-**Then：****Assign document to:** Asad Usman Khan
+**Then：****Assign document to:** 审批负责人
 
 **Change Status to:** Pending Approval
 
-<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt="工作流 Test 7 状态更新"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-workflow_test7_status_update-zh.png" alt="工作流草稿中的状态更改操作。"><figcaption><p>工作流草稿中的状态更改操作。</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -116,9 +116,9 @@ Then：**Assign document to:** Asad Usman Khan
 
 你可以为这些文档设置特定状态，或将其分配给指定员工。
 
-<div align="center"><figure><img src="../../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="工作流 Test 9 匹配检查概览"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../../.gitbook/assets/s150-workflow_test9_match_check_overview-zh.png" alt="含采购订单比较条件的工作流草稿。 卡片中的“操作员”实际表示比较运算符；该示例未保存工作流。"><figcaption><p>含采购订单比较条件的工作流草稿。 卡片中的“操作员”实际表示比较运算符；该示例未保存工作流。</p></figcaption></figure></div>
 
-<figure><img src="../../../.gitbook/assets/image (27) (1).png" alt="工作流 Test 9 匹配检查详情"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-workflow_test9_match_check_detail-zh.png" alt="选择与采购订单进行比较的条件。 界面中的“操作员”实际表示比较运算符，“价值”表示字段值，“桌子”表示数据表格。"><figcaption><p>选择与采购订单进行比较的条件。 界面中的“操作员”实际表示比较运算符，“价值”表示字段值，“桌子”表示数据表格。</p></figcaption></figure>
 
 **逻辑卡片：数量、单价或折扣匹配**
 
@@ -147,7 +147,7 @@ Then：**Assign document to:** Asad Usman Khan
 
 对于手动设置，建议将依赖新增列的计算拆分到单独的工作流中。要继续执行计算，可以使用 Run Workflow 卡片。
 
-**Run Workflow**
+**运行工作流**
 
 <figure><img src="../../../.gitbook/assets/20.png" alt=""><figcaption></figcaption></figure>
 
@@ -166,3 +166,5 @@ Then：**Assign document to:** Asad Usman Khan
 <figure><img src="../../../.gitbook/assets/workflow_notification_card_overview.png" alt="工作流通知卡片"><figcaption></figcaption></figure>
 
 根据设置，用户会在 DocBits 中收到一项新任务，也可以选择通过电子邮件通知用户有新任务。
+
+更新后的图片展示未保存的条件和操作草稿。请根据自己的组织调整角色和条件。

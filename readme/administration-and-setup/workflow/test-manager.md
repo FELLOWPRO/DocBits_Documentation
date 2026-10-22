@@ -12,11 +12,11 @@
 
 ## 使用测试场景
 
-* **Add Test Scenario** — 根据工作流和示例文档创建新的场景。
-* **Run All Tests** — 一次运行所有场景，一目了然地查看哪些工作流仍能通过测试。
-* **View Details** — 打开场景并检查其结果。
+* **添加测试场景** — 根据工作流和示例文档创建新的场景。
+* **运行所有测试** — 一次运行所有场景，一目了然地查看哪些工作流仍能通过测试。
+* **查看详情** — 打开场景并检查其结果。
 
-<figure><img src="../../.gitbook/assets/workflow_test_manager_detail.png" alt="工作流测试场景详情，包含状态、运行时间和数据"><figcaption><p>场景详情 — 名称、状态、运行时间，以及本次运行生成的实际数据与提取数据。</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-u027-zh.png" alt="测试场景详情；数据已隐藏。"><figcaption><p>测试场景详情；数据已隐藏。</p></figcaption></figure>
 
 详情视图会显示场景名称和**状态**、**工作流名称**、**运行时间**，以及本次运行生成的**实际数据**和**提取数据** — 让您准确了解场景通过或失败的原因。
 
@@ -24,5 +24,5 @@
 
 这是两种不同的功能：
 
-* **Test Manager**（本页）— 使用**Run All Tests**批量运行具有预期结果的_已保存、可重复执行_场景。用于更改后的回归测试。
-* **构建器中的测试** — Advanced Workflow 构建器中的内联 **Validate** 和 **Test** 控件，供您在构建时快速检查。请参阅[验证与测试](advanced-workflow-builder/validation-and-testing.md)。
+* **测试管理器**（本页）— 使用**运行所有测试**批量运行具有预期结果的_已保存、可重复执行_场景。用于更改后的回归测试。
+* **构建器中的测试** — Advanced Workflow 构建器中的内联 **证实** 和 **测试** 控件，供您在构建时快速检查。请参阅[验证与测试](advanced-workflow-builder/validation-and-testing.md)。

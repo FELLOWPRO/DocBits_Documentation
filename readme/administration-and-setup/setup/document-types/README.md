@@ -4,7 +4,7 @@
 
 页面首先显示 DocBits 提供且无法删除的**默认文档类型**，随后显示为您的组织创建的**自定义文档类型**。每种类型都有自己的卡片。
 
-<figure><img src="../../../.gitbook/assets/document-types-overview-en-20260928.png" alt="文档类型页面，显示发票及其他默认文档类型卡片、激活和提取开关、设置齿轮以及配置链接"><figcaption><p>选择文档类型卡片以配置该类型。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u025-zh.png" alt="默认文档类型及其设置入口。 “Standard”和“Extraction”仍是当前界面保留的英文标签。"><figcaption><p>默认文档类型及其设置入口。 “Standard”和“Extraction”仍是当前界面保留的英文标签。</p></figcaption></figure>
 
 ## 卡片上的可用操作
 
@@ -29,10 +29,10 @@
 
 每个字段行都包含一些控件，例如**必填**、**只读**、**隐藏**、**强制验证**、**使用 AI**、OCR、匹配分数和公式。更改单个值前，请先查看[字段指南](../../settings/global-settings/document-types/fields/README.md)。在字段页面点击**保存设置**以保留更改。
 
-<figure><img src="../../../.gitbook/assets/document-types-invoice-fields-en-20260928.png" alt="发票字段页面，显示识别设置、字段组、各字段控件和保存设置"><figcaption><p>字段页面有自己的“保存设置”按钮。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-document-types-invoice-fields-zh.png" alt="发票文档类型的字段设置。"><figcaption><p>发票文档类型的字段设置。</p></figcaption></figure>
 
 ## 创建自定义文档类型
 
 滚动到**自定义文档类型**，然后点击**+ 新建**。按照[添加/编辑文档类型](../../settings/global-settings/document-types/adding-editing-document-types.md)设置新类型。
 
-<figure><img src="../../../.gitbook/assets/document-types-custom-new-en-20260928.png" alt="文档类型页面底部，显示自定义文档类型部分和新建按钮"><figcaption><p>使用自定义文档类型下方的“新建”开始创建类型。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u026-zh.png" alt="未保存的新建文档类型表单。 “汽车”实际表示自动模式，“有空位”实际指文档包含行项目；这些产品译文仍待修正。"><figcaption><p>未保存的新建文档类型表单。 “汽车”实际表示自动模式，“有空位”实际指文档包含行项目；这些产品译文仍待修正。</p></figcaption></figure>

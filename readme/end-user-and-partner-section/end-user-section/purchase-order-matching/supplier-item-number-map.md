@@ -4,12 +4,11 @@
 
 此功能可帮助您管理并核对系统与供应商之间的物料编号。您在内部使用的物料编号通常可能与供应商使用的编号不同。DocBits 可通过建立内部物料编号与供应商物料编号之间的映射，帮助您轻松处理这些差异。
 
-<figure><img src="../../../.gitbook/assets/supplier_item_number_map_interface.png" alt="供应商物料编号映射界面"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-supplier-item-number-map-zh.png" alt="供应商物料编号映射。"><figcaption><p>供应商物料编号映射。</p></figcaption></figure>
 
 ## **工作原理**
 
 {% embed url="https://youtu.be/agxk8WQhtJA" %}
-
 
 1. **手动匹配：**
    * 首次遇到内部物料编号与供应商物料编号不一致时，您需要手动匹配。

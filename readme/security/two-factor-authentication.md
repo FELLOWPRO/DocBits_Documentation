@@ -18,7 +18,7 @@
 
 打开你的**个人资料 / 账户设置**（右上角账户菜单 → **编辑个人资料**），然后选择**双重身份验证**。2FA 对话框会显示当前状态以及可添加的验证方式。
 
-<figure><img src="../.gitbook/assets/mfa-2fa-dialog.png" alt="双重身份验证对话框"><figcaption><p>双重身份验证对话框。在此处可以启用身份验证器应用、邮箱验证、添加通行密钥，或打开<strong>管理</strong>。</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/prior-u047-zh.png" alt="可用的双因素身份验证方式。 “添加密码”按钮实际用于添加 Passkey，并非设置新的登录密码；本例未启用或添加身份验证方式。"><figcaption><p>可用的双因素身份验证方式。 “添加密码”按钮实际用于添加 Passkey，并非设置新的登录密码；本例未启用或添加身份验证方式。</p></figcaption></figure>
 
 ## 设置身份验证器应用（TOTP）
 
@@ -26,8 +26,6 @@
 2. 使用身份验证器应用扫描二维码（Google Authenticator、1Password、Authy 等）。如果无法扫描，请使用二维码下方显示的**手动密钥**。
 3. 输入应用显示的 6 位验证码并确认。
 4. DocBits 会启用 2FA 并显示你的**备用码**（见下文）。
-
-<figure><img src="../.gitbook/assets/mfa-totp-setup.png" alt="显示二维码的身份验证器应用设置页面"><figcaption><p>使用身份验证器应用扫描二维码，或输入手动密钥。然后输入应用显示的 6 位验证码进行确认。</p></figcaption></figure>
 
 ## 设置邮箱验证
 
@@ -48,8 +46,6 @@
 * 将备用码保存在安全的地方（密码管理器是理想选择）。
 * 你可以随时使用**重新生成备用码**创建一组新码（旧码将失效）。
 
-<figure><img src="../.gitbook/assets/mfa-backup-codes.png" alt="备用码页面"><figcaption><p>你的十个备用码，仅显示一次。每个码只能使用一次，请将它们保存在安全的地方。</p></figcaption></figure>
-
 {% hint style="warning" %}
 备用码只会在生成时显示。DocBits 无法再次显示这些备用码，请立即保存。
 {% endhint %}
@@ -65,14 +61,11 @@
    * **通行密钥** — 点击**使用通行密钥**，并使用 Touch ID / Windows Hello / 密钥进行确认。
    * **备用码** — 如果无法使用常用验证方式，请使用备用码。
 
-    <figure><img src="../.gitbook/assets/mfa-challenge.png" alt="第二步验证页面"><figcaption><p>输入密码后，DocBits 会要求你提供第二种验证方式。点击<strong>使用通行密钥</strong>或<strong>通过邮件发送验证码</strong>切换方式；你也可以选择信任此设备 30 天。</p></figcaption></figure>
 3. 验证成功后，你便会登录。
 
 ### 邮箱验证码的样式
 
 如果选择**邮箱**，DocBits 会发送一封包含 6 位验证码的邮件，该验证码会在 10 分钟后过期：
-
-<figure><img src="../.gitbook/assets/mfa-email-otp.png" alt="DocBits 验证码邮件"><figcaption><p>验证码邮件。验证码在 10 分钟后过期，且只能使用一次。</p></figcaption></figure>
 
 ## 信任此设备
 
@@ -85,8 +78,6 @@
 * **通行密钥** — 点击通行密钥名称即可重命名，也可以将其删除。删除最后一个剩余的验证方式会关闭 2FA。
 * **受信任设备** — 撤销对单台设备的信任，或点击**撤销所有设备**，以便在所有设备上重新触发 2FA 验证。
 
-<figure><img src="../.gitbook/assets/mfa-passkeys-list.png" alt="管理已注册的通行密钥和受信任设备"><figcaption><p>管理视图会列出已注册的通行密钥和受信任设备，你可以在此重命名或移除它们。</p></figcaption></figure>
-
 ## 关闭 2FA
 
 在 2FA 对话框中点击**禁用 2FA**，然后使用当前的身份验证器验证码或备用码进行确认。关闭 2FA 也会清除你的备用码并撤销对受信任设备的信任。
@@ -98,3 +89,9 @@
 ## 无密码登录（可选）
 
 设置通行密钥后，你可以在登录页面点击**使用通行密钥登录**，**无需输入密码**即可登录。密码仍可用作备用方式。无密码登录需要通过通行密钥验证你的身份（Touch ID / Windows Hello / PIN），因此速度更快，也能抵御网络钓鱼。
+
+安全保存恢复代码，并与身份验证设备分开存放。每个恢复代码仅可使用一次。
+
+在双因素身份验证窗口中配置邮件验证。输入自己账户收到的代码，并按流程确认。
+
+在双因素身份验证窗口中配置身份验证应用。仅在获准的应用中保存密钥，并使用当前临时代码确认。

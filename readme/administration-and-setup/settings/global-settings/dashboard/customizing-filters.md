@@ -30,7 +30,7 @@
 
 * 在设置中的“Dashboard”（仪表板）下打开筛选器菜单，然后点击“Filters”（筛选器）。
 
-<figure><img src="../../../../.gitbook/assets/customizing_filters_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u015-zh.png" alt="仪表盘的状态筛选样式和自定义筛选器。 “Custom”尚未翻译，“申请”实际表示应用筛选。"><figcaption><p>仪表盘的状态筛选样式和自定义筛选器。 “Custom”尚未翻译，“申请”实际表示应用筛选。</p></figcaption></figure>
 
 * 选择要筛选的字段（例如：状态）。
 

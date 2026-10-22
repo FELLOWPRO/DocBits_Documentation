@@ -4,10 +4,10 @@
 
 | 如果你需要…… | 打开…… |
 | --- | --- |
-| 添加或编辑某人的账户 | **Settings** → **Users**；然后阅读[用户](users/README.md)。 |
-| 管理公司各单位的访问权限 | **Settings** → **Sub-Organizations**；然后阅读[子组织](sub-organizations/README.md)。 |
-| 按用户组控制访问权限 | **Settings** → **Groups and Permissions**；然后阅读[用户组和权限](groups-and-permissions/README.md)。 |
+| 添加或编辑某人的账户 | **设置** → **用户**；然后阅读[用户](users/README.md)。 |
+| 管理公司各单位的访问权限 | **设置** → **子组织**；然后阅读[子组织](sub-organizations/README.md)。 |
+| 按用户组控制访问权限 | **设置** → **组和权限**；然后阅读[用户组和权限](groups-and-permissions/README.md)。 |
 
-<figure><img src="../../../../.gitbook/assets/dbdc232-groups-permissions-en.png" alt="Sandbox 中的英文用户组和权限界面"><figcaption>DocBits Documentation Test A 的当前英文 Sandbox 视图。此示例中，“Groups and Permissions”处于关闭状态；未更改任何权限。</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-t008-zh.png" alt="群组选择面板。"><figcaption><p>群组选择面板。</p></figcaption></figure>
 
 如果用户看不到某份文档或某项操作，请先检查其账户和所属组织，然后检查相关用户组的权限。在更改正式组织的设置前，请使用非管理员测试账户确认普通用户实际拥有的访问权限。

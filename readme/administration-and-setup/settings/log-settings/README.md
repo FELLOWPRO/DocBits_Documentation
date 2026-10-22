@@ -1,6 +1,6 @@
 # 活动日志
 
-<figure><img src="../../../.gitbook/assets/activity_logging.png" alt="活动日志"><figcaption><p>活动日志页面</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t011-zh.png" alt="活动日志筛选器；日志条目已隐藏。"><figcaption><p>活动日志筛选器；日志条目已隐藏。</p></figcaption></figure>
 
 活动日志可实时查看所有 DocBits 服务中的系统事件。您可以使用它监控处理活动、排查错误并审计系统行为。
 

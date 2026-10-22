@@ -1,6 +1,6 @@
 # 修改用户详细信息
 
-<figure><img src="../../../../../.gitbook/assets/user_settings_menu_overview.png" alt="用户设置菜单概览"><figcaption><p>用户设置</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u001-zh.png" alt="用户管理；个人数据已隐藏。 “Actions”列尚未翻译；用户身份和数据行已隐藏。"><figcaption><p>用户管理；个人数据已隐藏。 “Actions”列尚未翻译；用户身份和数据行已隐藏。</p></figcaption></figure>
 
 * **以管理员身份登录：** 使用管理员权限登录。
 * **访问用户管理：** 导航至用户设置，在此可以编辑现有用户。
@@ -14,9 +14,7 @@
     * 电子邮件地址
     * 用户角色或权限级别
 
-
-
-    <figure><img src="../../../../../.gitbook/assets/user_edit_details_form.png" alt="用户详细信息编辑表单" width="300"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/prior-u002-zh.png" alt="用户编辑表单；字段值已隐藏。 “行政”选项表示管理员权限，“节省”实际表示保存；本例未保存更改。"><figcaption><p>用户编辑表单；字段值已隐藏。 “行政”选项表示管理员权限，“节省”实际表示保存；本例未保存更改。</p></figcaption></figure>
 * **保存更改：** 检查所做的更改，然后点击 Save 保存新的用户详细信息。
 
 <figure><img src="../../../../../.gitbook/assets/user_save_changes_button.png" alt="保存用户更改按钮"><figcaption></figcaption></figure>
@@ -25,8 +23,6 @@
 * **发送通知（可选）：** 可以向用户发送通知，告知其所做的更改。
 
 完成这些步骤后，用户详细信息即已成功更新，用户将获得根据所做更改更新后的信息和权限。
-
-
 
 ## 移除用户：
 

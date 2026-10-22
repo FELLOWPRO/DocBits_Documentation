@@ -1,6 +1,6 @@
 # 集成与 SSO
 
-<figure><img src="../../../../.gitbook/assets/integration_sso.png" alt="集成与 SSO"><figcaption><p>集成与 SSO 页面</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-t010-zh.png" alt="集成和 SSO 提供商配置。"><figcaption><p>集成和 SSO 提供商配置。</p></figcaption></figure>
 
 “集成与 SSO”页面用于管理编程访问所需的 API 密钥、组织 ID 和单点登录（SSO）配置。
 
@@ -25,8 +25,8 @@
 
 | 字段 | 描述 |
 |-------|-------------|
-| **Org ID** | 您组织的唯一标识符。 |
-| **Sub Org ID** | 当前所选子组织的 ID。 |
+| **组织 ID** | 您组织的唯一标识符。 |
+| **子组织 ID** | 当前所选子组织的 ID。 |
 
 ## SSO 服务提供商设置
 
@@ -34,7 +34,7 @@
 
 | 字段 | 描述 |
 |-------|-------------|
-| **Entity ID** | DocBits 的 SAML 元数据 URL。 |
+| **实体 ID** | DocBits 的 SAML 元数据 URL。 |
 | **SLO URL** | 单点注销 URL。 |
 | **SSO URL** | 断言使用者服务 URL。 |
 
@@ -46,10 +46,10 @@
 
 | 字段 | 描述 |
 |-------|-------------|
-| **Tenant ID** | 您的 IdP 租户标识符。 |
-| **Upload file** | 上传 IdP 元数据 XML 文件。 |
+| **租户 ID** | 您的 IdP 租户标识符。 |
+| **上传文件** | 上传 IdP 元数据 XML 文件。 |
 
-点击 **Configure** 保存 IdP 设置。
+点击 **配置** 保存 IdP 设置。
 
 * **提高效率：** 与其他工具和服务集成可以简化工作流并提高效率。例如，文档可以在 Docbits 与 CRM 系统之间自动交换，从而减少手动录入并提高生产力
 * **数据一致性：** 集成可在不同系统之间无缝交换数据，从而提升数据的一致性和准确性。这可以避免数据不一致或重复录入导致的错误。

@@ -4,7 +4,7 @@
 
 > **访问权限：**基础设施页面仅供管理员访问。打开 **设置 → 组织与访问权限 → 基础设施**。
 
-<figure><img src="../../.gitbook/assets/infrastructure_overview.png" alt="基础设施页面，已打开拓扑选项卡"><figcaption><p>基础设施页面的拓扑选项卡</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-infrastructure_overview-zh.png" alt="基础设施概览。"><figcaption><p>基础设施概览。</p></figcaption></figure>
 
 页面分为三个选项卡：
 
@@ -49,7 +49,7 @@
 
 处理选项卡显示**你组织**的文档处理流水线——每个步骤上次运行的时间，以及工作是否正常流转或出现积压。
 
-<figure><img src="../../.gitbook/assets/infrastructure_processing.png" alt="带有状态标记的处理任务表"><figcaption><p>你组织各处理步骤的状态</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-t004-zh.png" alt="基础设施进程及上次运行情况。 部分相对时间仍为德语；处理服务的技术名称保持原样。"><figcaption><p>基础设施进程及上次运行情况。 部分相对时间仍为德语；处理服务的技术名称保持原样。</p></figcaption></figure>
 
 | 列 | 说明 |
 |--------|-------------|
@@ -71,7 +71,7 @@
 
 计划任务选项卡列出维持 DocBits 运行的周期性后台作业（缓存刷新、状态提醒、文档超时处理、出站同步等），并确认每项任务是否按时触发。
 
-<figure><img src="../../.gitbook/assets/infrastructure_scheduled.png" alt="计划任务表"><figcaption><p>周期性后台作业及其计划状态</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-t005-zh.png" alt="基础设施计划任务。 部分相对时间仍为德语；后台任务的技术名称保持原样。"><figcaption><p>基础设施计划任务。 部分相对时间仍为德语；后台任务的技术名称保持原样。</p></figcaption></figure>
 
 | 列 | 说明 |
 |--------|-------------|

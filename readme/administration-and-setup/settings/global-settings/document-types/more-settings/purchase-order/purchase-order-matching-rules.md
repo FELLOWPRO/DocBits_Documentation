@@ -1,5 +1,13 @@
 # Reglas de Coincidencia de Órdenes de Compra
 
+## Configurar reglas de conciliación y tolerancias
+
+El recorrido abre el tipo de documento factura, comprueba la versión publicada y crea un borrador inactivo. Explica los tipos de regla, la prioridad dentro de la etapa de coincidencia, las columnas comparadas, la base de cantidad, los modos y los cálculos de tolerancia. Solo se guarda el borrador del tutorial; la versión activa y las tolerancias globales se conservan. El cálculo del cinco por ciento es ilustrativo y no cambia la tolerancia activa.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/es.mp4" %}
+
+[Ver el vídeo con subtítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/es.html)
+
 ## Introducción: Órdenes de Compra y Gestión de Reglas de OC
 
 La Coincidencia de Órdenes de Compra (OC) es un proceso crítico para asegurar la consistencia entre las Órdenes de Compra (OC) y las facturas entrantes o recibos de mercancías correspondientes. Un conjunto robusto de reglas es esencial para lograr una alta tasa de coincidencia automática, prevenir fraudes y garantizar pagos correctos.

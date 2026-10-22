@@ -1,5 +1,13 @@
 # Groupes, utilisateurs et autorisations
 
+## Créer un groupe et tester l’accès aux documents
+
+Les autorisations de groupe étant déjà activées, créez un groupe de vérification et ajoutez un utilisateur de test sans droits administrateur. Autorisez la liste, la consultation et la modification des factures attribuées ; laissez la suppression, les modifications en masse et les approbations désactivées. Enregistrez et rouvrez les réglages, puis connectez-vous comme utilisateur ordinaire : la facture attribuée est visible, contrairement au document témoin non attribué.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/fr.mp4" %}
+
+[Voir avec les sous-titres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/fr.html)
+
 Ces paramètres répondent à trois questions différentes : qui peut se connecter, dans quelle sous-organisation la personne travaille, et ce que son groupe est autorisé à faire.
 
 | Si vous devez… | Ouvrez… |

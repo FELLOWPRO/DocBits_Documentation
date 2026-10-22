@@ -2,47 +2,39 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-db30554e1eb1-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
-## **Propósito:**
+## Quando utilizar
 
-Este cartão de fluxo de trabalho foi concebido para automatizar ações com base na presença ou no estado de um campo especificado dentro de um documento. Ao avaliar se o campo está vazio, em falta ou preenchido, permite que os fluxos de trabalho tratem os documentos com precisão e exatidão.
+Utilize esta carta para verificar se um campo do documento está vazio ou em falta, por exemplo quando uma fatura sem número necessita de uma verificação adicional. Trata-se de uma condição; configure a ação seguinte separadamente.
 
-## **Componentes do cartão:**
+**Localização:** Workflow padrão → condições adicionais (AND) → Campo do documento.
 
-1. **Nome do campo**
-   * **Descrição:** Especifica o nome do campo a avaliar.
-   * **Detalhe:** Tem de corresponder ao identificador exato utilizado no documento para assegurar uma deteção de campo precisa.
-2. **Operadores**
-   * **Descrição**: Define a condição que aciona o fluxo de trabalho, com base na presença ou no estado do campo.
-   * **Opções**:
-     * **Vazio/Não no documento:** O fluxo de trabalho é acionado se o campo estiver em falta no documento ou se estiver presente mas vazio.
-     * **No documento/não vazio:** O fluxo de trabalho é acionado se o campo existir no documento e contiver um valor.
+## Configuração — versão 2
 
-## **Funcionalidade:**
+| Definição | Valor do exemplo |
+| --- | --- |
+| Campo | `invoice_id` — número da fatura |
+| Estado do campo | Vazio ou em falta (`field_empty`) |
 
-* **Deteção de estado:** O cartão monitoriza o campo especificado para avaliar a sua presença e estado.
-* **Avaliação da condição:**
-  * O sistema avalia se o campo especificado está no estado (Empty/Not in Document ou In Document/Not Empty) definido pelo operador selecionado.
-*
-
-**Execução da ação:**
-* **Condição Empty/Not in Document:** Se o estado do campo corresponder a esta condição (ou seja, o campo está ausente do documento ou presente mas vazio), o sistema inicia as ações associadas. Estas podem incluir a geração de alertas, a sinalização do documento para revisão ou a interrupção do fluxo de trabalho.
-* **Condição In Document/Not Empty:** Se o estado do campo corresponder a esta condição (ou seja, o campo existe no documento e contém um valor), o sistema aciona as ações associadas. Estas podem envolver a ativação de passos subsequentes do fluxo de trabalho, a atualização de registos ou o acionamento de notificações.
-## **Configuração:**
-
-* Os utilizadores selecionam o campo a partir de uma lista de campos de documento disponíveis. O operador é escolhido através de um menu pendente, oferecendo opções claras para "Empty/Not in Document" ou "In Document/Not Empty".
-
-## **Conclusão:**
-
-O cartão de fluxo de trabalho "Field Presence and State Validation" é uma ferramenta crucial para os fluxos de processamento de documentos, assegurando o tratamento preciso de campos em falta ou preenchidos. Ao automatizar ações com base nos estados dos campos, este cartão reforça a integridade dos dados, reduz erros e assegura que os fluxos de trabalho funcionam de forma fluida e eficiente.
+Selecione um campo realmente configurado na sua organização. A opção `field_not_empty` verifica se o campo contém um valor.
 
 <!-- workflow-card-practical-example-20261021 -->
 
 ## Exemplo prático
 
-**Quando usar:** Detecta faturas cujo número de fatura ainda precisa de revisão.
+| Valor do exemplo | Resultado esperado para `field_empty` |
+| --- | --- |
+| Campo vazio ou em falta | Condição satisfeita |
+| `DEMO-001` | Condição não satisfeita |
+| Número presente mas incorreto | Condição não satisfeita — o campo continua a conter um valor |
 
-**Configuração:** Selecione o campo `invoice_number` e Vazio/Não no Documento.
+Estes exemplos mostram os resultados esperados. Para validar o próprio número, adicione uma condição adequada ao conteúdo; esta carta verifica o estado do campo. Na versão 2, os espaços no início e no fim do texto são removidos antes de verificar se o campo está vazio.
 
-**Resultado esperado e contra-exemplo:** Um campo vazio ou ausente é aprovado. Um valor preenchido como `DEMO-001` falha nesta condição.
+## Vídeo de exemplo com um administrador
 
-Esta é uma configuração ilustrativa e resultado esperado. Utilize campos, usuários e grupos configurados em sua organização de teste; não é uma afirmação de que este exemplo foi executado.
+Quando uso esta carta, onde a encontro e como deteto números de fatura em falta. O administrador, o escritório e a voz são sintéticos; a demonstração mostra a interface real do DocBits de uma conta de teste. Os exemplos mostram os resultados esperados.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pt.mp4" %}
+
+[Abrir vídeo com legendas em português](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pt.html)
+
+[Ler transcrição](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pt.txt)

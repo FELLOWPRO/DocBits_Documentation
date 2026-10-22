@@ -44,10 +44,16 @@ La scheda di workflow **"Change Status"** offre un approccio semplificato per ge
 
 ## Esempio pratico
 
-**Quando utilizzarlo:** Sposta un documento rivisto in uno stato di elaborazione definito.
+**Quando usarla:** Inviare un documento verificato alla fase di approvazione.
 
-**Configurazione:** Seleziona lo stato `Demo Review` configurato e disabilita l'attivazione di flussi di lavoro aggiuntivi per questo esempio.
+**Dove:** Designer dei workflow standard → Poi → Stato → Cambiare lo stato in.
 
-**Risultato atteso e controesempio:** Il documento riceve lo stato selezionato. Questa azione da sola non esegue l'esportazione configurata separatamente.
+**Configurazione:** Selezionare la versione 3 di `staus_change`, lo stato In attesa di approvazione (`validated_pending_approval`) e l’attivazione di altri workflow su `false` (`trigger_docflow=false`). Usare una fattura sintetica isolata che soddisfi i controlli precedenti.
 
-Questa è una configurazione illustrativa e il risultato atteso. Utilizza campi, utenti e gruppi configurati nella tua organizzazione di test; non si afferma che questo esempio sia stato eseguito.
+**Risultato atteso e controesempio:** Un aggiornamento consentito e riuscito porta il documento allo stato scelto. Se una condizione precedente è falsa, questa azione non viene raggiunta e non modifica lo stato. Un aggiornamento API rifiutato o non riuscito non è un successo: controllare lo stato effettivo e i log. La scheda non esegue da sola un’esportazione.
+
+### Versioni della scheda
+
+Il controllo esplicito per attivare altri workflow è disponibile nella v3. Le versioni 1 e 2 non lo offrono; il loro percorso di aggiornamento precedente usa il comportamento di attivazione predefinito. Non presumere che un’impostazione `false` della v3 valga passando a una versione precedente.
+
+Configurazione e risultato atteso verificati nel codice di esecuzione. Non sono stati eseguiti workflow o cambi di stato.

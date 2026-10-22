@@ -14,4 +14,4 @@ El historial permite revisar decisiones de aprobación y rechazo registradas par
 
 Abra el documento y el historial que ofrezca la interfaz, si está disponible. Revise la decisión, la persona que la registró, el momento y el orden. Los comentarios pueden aportar razones adicionales cuando se hayan registrado.
 
-Evalúe el texto de la decisión y no únicamente su color. Un historial vacío no acredita una aprobación. La imagen muestra la configuración; para esta guía no se aprobó o rechazó ningún documento ni se creó un historial de decisiones.
+Evalúe el texto de la decisión y no únicamente su color. Un historial vacío no acredita una aprobación. La imagen muestra la configuración; para esta guía no se aprobó ni se rechazó ningún documento ni se creó un historial de decisiones.

@@ -16,4 +16,4 @@ Abra **Ajustes → Exportar** y defina la configuración adecuada para el destin
 
 Cuando el documento cumpla el estado configurado y la opción esté disponible en su flujo, seleccione el destino alternativo en la pantalla de conciliación de pedidos. También puede utilizar la tarjeta de exportación alternativa en un flujo de trabajo, configurando su destino y condiciones.
 
-Para esta revisión solo se observó la configuración: no se creó un destino, se guardó un cambio ni se ejecutó una exportación.
+Para esta revisión solo se observó la configuración: no se creó ningún destino, no se guardaron cambios ni se ejecutó ninguna exportación.

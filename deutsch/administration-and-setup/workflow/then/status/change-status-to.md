@@ -11,11 +11,11 @@ Die Workflow-Karte **"Change Status"** wird verwendet, um den Status eines Dokum
 1. **Status**
    * **Beschreibung**: Gibt den neuen Status an, der auf das Dokument angewendet wird.
    * **Optionen**:
-     * **Error**: Markiert das Dokument als fehlerbehaftet.
+     * **Fehler**: Markiert das Dokument als fehlerbehaftet.
      * **Abgelehnt**: Gibt an, dass das Dokument abgelehnt wurde und nicht weiter fortfährt.
      * **Bereit zur Validierung**: Setzt das Dokument so, dass es vom nächsten Benutzer oder Systemprozess geprüft und validiert wird.
-     * **Ausstehende Genehmigung**: Versetzt das Dokument in einen Wartezustand zur Freigabe.
-     * **Bis zur zweiten Genehmigung**: Stellt das Dokument für eine zweite Freigabestufe zurück, sofern zutreffend.
+     * **Genehmigung ausstehend**: Versetzt das Dokument in einen Wartezustand zur Freigabe.
+     * **Zweite Genehmigung ausstehend**: Stellt das Dokument für eine zweite Freigabestufe zurück, sofern zutreffend.
 2. **Workflows auslösen**
    * **Beschreibung**: Legt fest, ob nach der Statusänderung nachfolgende Workflows ausgelöst werden sollen.
    * **Optionen**:
@@ -25,14 +25,14 @@ Die Workflow-Karte **"Change Status"** wird verwendet, um den Status eines Dokum
 ## **Funktionalität:**
 
 * **Bedingungsauswertung**: Das System wertet die in den Abschnitten **„Wenn“** und **„Und“** festgelegten Bedingungen aus. Sind diese Bedingungen erfüllt, fährt die Karte fort und ändert den Status des Dokuments in den ausgewählten Wert.
-* **Statusaktualisierung**: Sind die Bedingungen erfüllt, wird der Status des Dokuments je nach Auswahl des Benutzers auf eine der vordefinierten Optionen aktualisiert (Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval).
+* **Statusaktualisierung**: Sind die Bedingungen erfüllt, wird der Status des Dokuments je nach Auswahl des Benutzers auf eine der vordefinierten Optionen aktualisiert (Fehler, Abgelehnt, Bereit zur Validierung, Genehmigung ausstehend, Zweite Genehmigung ausstehend).
 * **Workflow-Auslöseaktion**: Ist **Workflows auslösen** auf **True** gesetzt, startet das System nach der Statusaktualisierung automatisch alle zugehörigen Workflows. Ist die Einstellung auf **False** gesetzt, werden keine zusätzlichen Workflows ausgelöst, und der Prozess endet mit der Statusänderung.
 
 ## **Einrichtung und Konfiguration:**
 
 Um diese Karte zu konfigurieren, müssen Benutzer:
 
-1. Den gewünschten **Status** angeben, auf den das Dokument bei der Bedingungsauswertung gesetzt wird (Error, Rejected, Ready for Validation, Pending Approval oder Pending Second Approval).
+1. Den gewünschten **Status** angeben, auf den das Dokument bei der Bedingungsauswertung gesetzt wird (Fehler, Abgelehnt, Bereit zur Validierung, Genehmigung ausstehend oder Zweite Genehmigung ausstehend).
 2. Wählen, ob nach der Statusänderung **Workflows ausgelöst** werden sollen, indem **True** oder **False** ausgewählt wird.
 3. Die Karte führt ihre Aktion nur aus, wenn beide Bedingungen in den Abschnitten **„Wenn“** und **„Und“** als erfüllt ausgewertet werden.
 
@@ -57,3 +57,13 @@ Die Workflow-Karte **"Change Status"** bietet einen optimierten Ansatz zur Verwa
 Der ausdrückliche Schalter zum Auslösen weiterer Workflows ist in v3 verfügbar. Version 1 und 2 bieten ihn nicht; ihr älterer Aktualisierungspfad verwendet das Standardverhalten zum Auslösen von Workflows. Übertragen Sie eine v3-Einstellung `false` nicht ungeprüft auf eine ältere Kartenversion.
 
 Dies ist eine am Ausführungscode geprüfte Konfiguration mit erwartetem Ergebnis. Es wurde kein Workflow und keine Statusänderung ausgeführt.
+
+## Admin-Beispielvideo
+
+Wann ich einen geprüften Beleg auf eine Freigabestufe setze und wie ich in Version 3 das Auslösen weiterer Workflows steuere. Die Beispiele zeigen erwartete Ergebnisse. Administrator, Büro und Stimme sind synthetisch erzeugt; die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-change-status-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-change-status-admin/v1/de.html)
+
+[Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-change-status-admin/v1/de.txt)

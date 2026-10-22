@@ -15,7 +15,7 @@ Diese Workflow-Karte ist darauf zugeschnitten, Operationen an Dokumenten auf Bas
      * **ist nicht**: Löst die Operation aus, wenn der aktuelle Status des Dokuments nicht mit dem ausgewählten Status übereinstimmt.
 2. **Status**
    * **Beschreibung**: Ermöglicht die Auswahl eines einzelnen Dokumentstatus zur Festlegung der Bedingung.
-   * **Statusbeispiele**: „Fehler“, „Exportfehler“, „Bereit zur Validierung“, „Bereit zur Überprüfung“, „Ausstehende Genehmigung“, „Ausstehende zweite Genehmigung“.
+   * **Statusbeispiele**: „Fehler“, „Exportfehler“, „Bereit zur Validierung“, „Bereit zur Überprüfung“, „Genehmigung ausstehend“, „Zweite Genehmigung ausstehend“.
    * **Detailliert**: Benutzer wählen einen Status aus einem Dropdown oder einer Reihe von Optionsfeldern. Dieser Status dient dann als Kriterium für die Operation der Karte.
 
 **Funktionalität**
@@ -38,12 +38,26 @@ Diese Workflow-Karte ist darauf zugeschnitten, Operationen an Dokumenten auf Bas
 
 Die Workflow-Karte "Single Document Status Condition" vereinfacht das Dokumentenmanagement, indem sie sich auf einzelne Statusbedingungen konzentriert. Diese Spezifikation hilft in Fällen, in denen eine präzise Kontrolle über Dokumentflüsse erforderlich ist, insbesondere in Umgebungen mit strengen Verarbeitungskriterien. Eine klare Dokumentation dieser Version der Karte stellt sicher, dass Benutzer ihre Anwendung vollständig verstehen und sie effektiv in ihre täglichen Abläufe integrieren können, und steigert so sowohl die Compliance als auch die Effizienz bei der Dokumentverarbeitung.
 
-<!-- workflow-card-complete-example-20261021 condition_doc_status_is_isnot -->
+<!-- workflow-card-practical-example-20261021 -->
 
-### Beispiel für einen Einzelstatus
+## Praxisbeispiel
 
-**Konfiguration:** Wählen Sie Operator `is` und Status `Pending Approval`. Fügen Sie eine folgende Überprüfungsaktion hinzu, die für diesen Status geeignet ist.
+**Wann nutzen:** Eine Folgeregel auf Belege in der ersten Freigabestufe begrenzen.
 
-**Erwartetes Ergebnis und Gegenbeispiel:** Die Bedingung ist wahr für ein Dokument, das derzeit `Pending Approval` ist; Für ein Dokument mit dem Status `Ready in Validation` ist es falsch. Verwenden Sie den aktuell ausgewählten Status aus Ihrer Freigabe. Durch das Ändern eines Status wird das Dokument nicht automatisch exportiert.
+**Wo:** Standard-Workflow-Designer → Und → Status.
 
-Dies ist eine beispielhafte Testkonfiguration und das erwartete Ergebnis. es wurde nicht ausgeführt. Verwenden Sie die in Ihrer Testorganisation konfigurierten Daten und Empfänger.
+**Konfiguration:** Wählen Sie in Version 2 den Operator „ist“ (`is`) und den vorhandenen Status Genehmigung ausstehend (`validated_pending_approval`).
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein Beleg mit genau diesem Status erfüllt die Bedingung. Ein bereits exportierter Beleg erfüllt sie nicht. Die Karte prüft den Status und ändert ihn nicht. Für mehrere zulässige Status verwenden Sie die gesonderte Statuslisten-Karte.
+
+Die Beispiele beschreiben erwartete Ergebnisse. Verwenden Sie die in Ihrer Organisation tatsächlich konfigurierten Felder und angebotenen Werte.
+
+## Admin-Beispielvideo
+
+Wann ich eine Bedingung auf einen bestimmten Belegstatus beschränke und wie ich den vorhandenen Status auswähle. Die Beispiele zeigen erwartete Ergebnisse. Administrator, Büro und Stimme sind synthetisch erzeugt; die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-single-document-status-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-single-document-status-admin/v1/de.html)
+
+[Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-single-document-status-admin/v1/de.txt)

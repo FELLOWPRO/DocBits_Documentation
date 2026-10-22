@@ -13,7 +13,7 @@ Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfi
 | Eigenschaft | Wert |
 |----------|-------|
 | **Land/Regio** | Australien / Neuseeland |
-| **Dokumenttypen** | Self-Billed-Rechnung |
+| **Dokumenttypen** | Selbstfakturierte Rechnung |
 | **Format** | UBL 2.1 XML |
 | **Standard** | PINT A-NZ Self-Billing |
 | **Locale** | `en_AU` |
@@ -30,7 +30,7 @@ AUNZ PINT Self-Billing ist die Self-Billing-Variante des A-NZ Peppol Internation
 
 ## Standardvorschau
 
-<figure><img src="aunz-pint-preview.png" alt="AUNZ PINT Self-Billing Rechnungsvorschau in DocBits"><figcaption><p>Standard-DocBits-Vorschau für eine AUNZ PINT Self-Billing-Rechnung</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="AUNZ PINT Self-Billing Rechnungsvorschau in DocBits"><figcaption><p>Standard-DocBits-Vorschau für eine AUNZ PINT Self-Billing-Rechnung</p></figcaption></figure>
 
 ## Feldzuordnung
 

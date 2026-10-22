@@ -1,7 +1,7 @@
-# Layout Builder
+# Layout-Editor
 
 {% embed url="https://youtu.be/-m45XGiIeig" %}
-DocBits Layout Builder Tutorial: Create Custom Document Layouts for Faster, Cleaner Validation
+DocBits-Anleitung zum Layout-Editor: eigene Dokumentlayouts für eine schnellere und übersichtlichere Validierung erstellen
 {% endembed %}
 
 ## **Auf den Layout Builder zugreifen**
@@ -44,7 +44,7 @@ Mit Gruppen können Sie in einem Layout verschiedene Abschnitte anlegen. So lass
 
 ![](https://lh7-us.googleusercontent.com/lWqIEC-TCOp4rKytTbhn2fYWY618_Yra2mjWHA9oMyWPqHXA5JKCLoZoEtM8xQHAkn4HFNTPYpbMePUYnQhQGL0KmgBfTEDWPDAMy7PjZinZl2s_kHQlsLAGjYbzSINWTme3qRO9tHLcpVaDVvS_8F4)
 
-### **Form Elements**
+### **Formularelemente**
 
 ![](https://lh7-us.googleusercontent.com/OFBRSGdol7loocu5uGVe4Q8URMDojvXTN0xj3TCgL-jb-wUgt1fjEqfXCyMPz_HNh94LVVmg6ifQDhxvlQsgbbChRfrw2Ohx4ICOUwHix3iiAFY9hI3BPGBfcNABiHLhgXQJVZmGvEO_niVWkIXz_6g)
 

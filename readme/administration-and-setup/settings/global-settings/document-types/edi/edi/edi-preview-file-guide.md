@@ -68,3 +68,11 @@ Diese Funktion ist entscheidend für das Debuggen von Datenbindungen, die Verfei
 ## 6. Videoanleitung
 
 Eine Videoanleitung für diesen Dateityp ist auf der [Videos-Seite](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) verfügbar. Verwende sie, um die Einrichtung, Bearbeitung und Vorschau zu verfolgen.
+
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-de.png" alt="Vorhandenes EDI-Format mit seinen vier konfigurierten Attributen."><figcaption><p>Vorhandenes EDI-Format mit seinen vier konfigurierten Attributen.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-preview-de.png" alt="Aktives Attribut PREVIEW: XSLT-Quelltext im Editor; diese Ansicht zeigt keine gerenderte Dokumentvorschau."><figcaption><p>Aktives Attribut PREVIEW: XSLT-Quelltext im Editor; diese Ansicht zeigt keine gerenderte Dokumentvorschau.</p></figcaption></figure>
+
+
+Die Ansichten zeigen eine vorhandene Konfiguration und Version. Die Einstellungen unterscheiden sich je nach Dokumenttyp und Format. Prüfen Sie Änderungen in einem Entwurf vor der Aktivierung.

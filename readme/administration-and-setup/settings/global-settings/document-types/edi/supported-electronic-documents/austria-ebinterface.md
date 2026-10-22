@@ -12,10 +12,10 @@ Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfi
 
 | Eigenschaft | Wert |
 |-------------|------|
-| **Land / Region** | Austria |
-| **Dokumenttypen** | Invoice, Credit Note |
+| **Land / Region** | Österreich |
+| **Dokumenttypen** | Rechnung, Gutschrift |
 | **Format** | XML |
-| **Standard** | ebInterface (versions 4.3 – 6.1) |
+| **Standard** | ebInterface (Versionen 4.3 – 6.1) |
 | **Locale** | `de_AT` |
 
 ebInterface ist der österreichische E-Rechnungsstandard, der von der Wirtschaftskammer Österreich (WKÖ — Wirtschaftskammer Österreich) gepflegt wird. Er definiert ein strukturiertes XML-Format für elektronische Rechnungen, das hauptsächlich im B2G- (Business-to-Government) und B2B-Bereich in Österreich eingesetzt wird. DocBits unterstützt alle Versionen von 4.3 bis 6.1, die jeweils durch ihren eigenen XML-Namespace identifiziert werden.
@@ -24,13 +24,13 @@ ebInterface ist der österreichische E-Rechnungsstandard, der von der Wirtschaft
 
 | Komponente | Status |
 |------------|--------|
-| Vorschau | ✅ Supported |
-| Feldextraktion | ✅ Supported |
-| Transformation | ✅ Supported |
+| Vorschau | ✅ Unterstützt |
+| Feldextraktion | ✅ Unterstützt |
+| Transformation | ✅ Unterstützt |
 
 ## Standard-Vorschau
 
-<figure><img src="austria-ebinterface-preview.png" alt="Austria ebInterface Rechnungsvorschau in DocBits"><figcaption><p>Standardvorschau in DocBits für eine AUSTRIA EBINTERFACE-Rechnung</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Austria ebInterface Rechnungsvorschau in DocBits"><figcaption><p>Standardvorschau in DocBits für eine AUSTRIA EBINTERFACE-Rechnung</p></figcaption></figure>
 
 ## Feldzuordnung
 

@@ -1,6 +1,6 @@
 # Lieferanten und Bestellungen
 
-## **Connection Point**
+## **Verbindungspunkt**
 
 Sie müssen den DocBits-API-Connection-Point erstellen, um später den Data Flow anlegen zu können.
 
@@ -60,7 +60,7 @@ Den Anfang des Data Flows bildet Ihre Infor-ERP-/SAP-Anwendung
 
 Hier fügen Sie eine Anwendung hinzu und wählen die zuvor erstellte(n) DocBits-API(s) aus
 
-### **Files**
+### **Dateien**
 
 Die Konfiguration sollte wie folgt aussehen
 

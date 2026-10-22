@@ -34,7 +34,7 @@ Unterhalb des Schalters zeigt das Panel **MFA-Verbreitung**, wie verbreitet die 
 * wie viele Ihrer Mitglieder die 2FA aktiviert haben (z. B. *0 von 74 Mitgliedern*),
 * eine Aufschlüsselung nach Faktor — **Authentifikator**, **E-Mail** und **Passkey**.
 
-<figure><img src="../../../../.gitbook/assets/mfa-adoption-report.png" alt="The MFA adoption report"><figcaption><p>Der MFA-Verbreitungsbericht: Gesamtprozentsatz, eingerichtete Mitglieder und eine Aufschlüsselung nach Faktor.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/mfa-adoption-report.png" alt="Bericht zur Nutzung der Mehrfaktor-Authentifizierung"><figcaption><p>Der MFA-Verbreitungsbericht: Gesamtprozentsatz, eingerichtete Mitglieder und eine Aufschlüsselung nach Faktor.</p></figcaption></figure>
 
 Nutzen Sie ihn, um die Bereitschaft einzuschätzen: Steigern Sie zunächst die Verbreitung und aktivieren Sie dann die Anforderung, sodass weniger Mitglieder beim Einrichtungsschritt blockiert werden.
 

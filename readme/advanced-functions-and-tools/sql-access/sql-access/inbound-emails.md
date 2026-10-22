@@ -1,21 +1,21 @@
-# Inbound Emails
+# Eingehende E-Mails
 
 ## Tabelle `public.inbound_emails`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
+* `id`: intern
+* `org_id`: ID der Organisation
 * `is_active`: boolean
-* `email_senders`: internal
-* `email_receiver`: internal
-* `token`: internal
+* `email_senders`: intern
+* `email_receiver`: intern
+* `token`: intern
 * `created_by`: integer
 * `created_on`: timestamp with time zone
-* `last_modified_by`: internal
+* `last_modified_by`: intern
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
-* `deleted_by`: internal
+* `deleted_by`: intern
 * `deleted_on`: timestamp with time zone
 
 ### Analyse & Beschreibung

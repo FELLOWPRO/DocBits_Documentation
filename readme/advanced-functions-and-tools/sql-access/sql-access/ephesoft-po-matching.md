@@ -1,14 +1,14 @@
-# Ephesoft PO matching
+# Ephesoft-Bestellabgleich
 
 ## Tabelle `public.ephesoft_po_matching`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_id`: internal
-* `doc_type`: DOC Type
-* `ephesoft_doc_id`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `doc_id`: intern
+* `doc_type`: Dokumenttyp
+* `ephesoft_doc_id`: intern
 * `extracted_data`: text
 * `created_by`: integer
 * `created_on`: timestamp with time zone

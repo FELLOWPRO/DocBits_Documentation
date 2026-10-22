@@ -228,7 +228,7 @@ Nein. Die KI schreibt nur Erklärungen. Eine Einstellung ändert sich erst, wenn
 * [Bestellabgleich-Diagnose](touchless-po-matching-diagnosis.md)
 * [Dokumentverlauf](touchless-document-trace.md)
 * [Änderungsvorschläge und Berichte](touchless-change-proposals.md)
-* [Analytics Dashboard](analytics-dashboard.md)
+* [Analyse-Dashboard](analytics-dashboard.md)
 * [Einstellungs-Assistent](settings/global-settings/company-information/settings-assistant.md)
 * [DocBits MCP](../advanced-functions-and-tools/docbits-mcp/README.md)
 

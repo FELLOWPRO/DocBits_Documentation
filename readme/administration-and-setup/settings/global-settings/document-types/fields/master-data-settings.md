@@ -27,7 +27,7 @@ Konfigurationen unter **Stammdaten** durchsuchen ein Dataset und ordnen einen pa
 
 <figure><img src="../../../../../.gitbook/assets/dbdc202-lookup-config-de-20261009.png" alt="Dialog „Stammdatenkonfiguration erstellen“ mit Dataset, Konfliktverarbeitung, Kontext Typ und Alle abgleichen"><figcaption><p>Das Formular für eine Lookup-Konfiguration einer Rechnung im Kopfbereich.</p></figcaption></figure>
 
-**Alle abgleichen** und **Konfliktverarbeitung** wirken zusammen und entscheiden, ob ein Lieferant automatisch erkannt wird. Beispiele dafür finden Sie unter [Fuzzy Data Konfiguration mit Masterdaten](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md).
+**Alle abgleichen** und **Konfliktverarbeitung** wirken zusammen und entscheiden, ob ein Lieferant automatisch erkannt wird. Beispiele dafür finden Sie unter [Fuzzy-Daten mit Stammdaten konfigurieren](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md).
 
 ### Felder in einer Konfiguration zuordnen
 

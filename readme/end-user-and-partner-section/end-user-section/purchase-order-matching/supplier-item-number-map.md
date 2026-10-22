@@ -25,7 +25,7 @@ Diese Funktion hilft Ihnen, Artikelnummern zwischen Ihrem System und Ihren Liefe
 * **Aktion:** Optionen zur Verwaltung der Zuordnungen, wie z.B. das Löschen falscher Zuordnungen.
 
 {% hint style="info" %}
-Siehe hier auch den [Admin-Bereich](broken-reference)
+Siehe hier auch den [Admin-Bereich](../../../administration-and-setup/settings/README.md)
 {% endhint %}
 
 ## **Vorteile**

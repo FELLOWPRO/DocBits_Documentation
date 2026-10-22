@@ -32,7 +32,7 @@ Beispielsweise liefern zwei vergleichbare Linien bei Gleichheit die Ergebnisse �
 
 Verwenden Sie genaue Artikel- und Lieferanten-IDs, die beabsichtigte Preisquelle und passende Einheiten. Testen Sie, dass alle Zeilen übereinstimmen, ein gemischtes Ergebnis, keine vergleichbaren Preise, fehlende Angebotsdaten und eine falsche Lieferanten-ID. Überprüfen Sie sowohl das Vergleichsergebnis als auch die übersprungenen Zeilen. Halten Sie die Genehmigung bzw. Ausfuhr hinter den tatsächlich erforderlichen betriebswirtschaftlichen Prüfungen zurück; Eine erfolgreiche Identifikatorprüfung ist keine vollständige Beschaffungsvalidierung.
 
-Siehe [PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md) für Bestellvergleiche und [Workflow-Protokolle](../workflow-logs.md) für die Fehlerbehebung.
+Siehe [Bestellabgleich](../and/compare-with-purchase-order/po-matching-complete-guide.md) für Bestellvergleiche und [Workflow-Protokolle](../workflow-logs.md) für die Fehlerbehebung.
 
 
 

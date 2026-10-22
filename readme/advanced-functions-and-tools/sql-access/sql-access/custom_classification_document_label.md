@@ -5,8 +5,8 @@
 ### Spalten
 
 * `id`: integer
-* `org_id`: ID to organisation
-* `doc_id`: internal
+* `org_id`: ID der Organisation
+* `doc_id`: intern
 * `label_id`: integer
 * `created_by`: integer
 * `created_on`: timestamp with time zone

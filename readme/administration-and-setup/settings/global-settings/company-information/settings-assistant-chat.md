@@ -223,7 +223,7 @@ Eine Unterhaltung behält die letzten 50 Beiträge in Ihrem Browser. Eine Frage 
 ## Weiterführende Seiten
 
 * [Einstellungs-Assistent: Einschalten](settings-assistant.md)
-* [Analytics Dashboard](../../../analytics-dashboard.md)
+* [Analyse-Dashboard](../../../analytics-dashboard.md)
 * [DocBits MCP](../../../../advanced-functions-and-tools/docbits-mcp/README.md)
 
 <!-- Source notes (not shown): the assistant answers for custom validation rules and for PO tolerance / "why not matched" questions are weak on dev (tracked in the CORE project, CORE-6433), so this page shows only the greeting for validation and the PO matching status answer. Re-test and add answer screenshots after the fix. facts read from the doc2app code on dev (SettingsAssistant, AssistantChat components) and checked in the dev UI on 14 Oct 2026. "Fast tier, no organisation switch" and "documentation search not configured on Sandbox yet" come from the feature team (CORE-6379). Strings for the apply/action cards not verified in the UI are described, not quoted. -->

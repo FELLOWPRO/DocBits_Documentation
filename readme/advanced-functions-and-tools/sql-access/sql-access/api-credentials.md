@@ -1,20 +1,20 @@
-# API credentials
+# API-Zugangsdaten
 
 ## Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `sub_org_id`: internal
-* `title`: internal
-* `credentials_type`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `sub_org_id`: intern
+* `title`: intern
+* `credentials_type`: intern
 * `credentials_json`: text
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
 * `deleted_on`: timestamp with time zone
-* `last_modified_by`: internal
-* `deleted_by`: internal
+* `last_modified_by`: intern
+* `deleted_by`: intern
 
 ## Analyse & Beschreibung
 

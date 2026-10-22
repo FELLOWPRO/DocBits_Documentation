@@ -3,7 +3,7 @@ hidden: true
 noIndex: true
 ---
 
-# Supplier Portal (old)
+# Lieferantenportal (alt)
 
 #### Aktivierung <a href="#activation" id="activation"></a>
 
@@ -19,11 +19,11 @@ In diesem Bereich haben Sie Zugriff auf Folgendes.
 
 <div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fw49U8RhmJH8ichVjB0zr%2F7_Supplier_Groups_1.png?alt=media&#x26;token=ee824fa5-45d6-4317-9841-8e87e6308910" alt="" width="375"><figcaption></figcaption></figure></div>
 
-**Supplier Permissions**
+**Lieferantenberechtigungen (Supplier Permissions)**
 
 Hier können Sie alle Lieferanten verwalten, indem Sie sie gruppieren. Das erleichtert die Verwaltung aller Lieferanten. Außerdem können Sie den verschiedenen Lieferantengruppen, die Sie hier anlegen, Benutzer zuweisen.
 
-**Supplier Group**
+**Lieferantengruppe (Supplier Group)**
 
 Um die Verwaltung aller Lieferanten zu erleichtern, können Sie in diesem Bereich Gruppen anlegen und Lieferanten diesen Gruppen zuordnen, zum Beispiel nach geografischem Standort, Lieferantentyp usw. Die Wahl liegt bei Ihnen.
 
@@ -37,7 +37,7 @@ Geben Sie der Gruppe anschließend einfach einen Namen, der die Lieferanten, die
 
 <div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fq9G7MzWkqzFzxQVoZpdp%2F9_Supplier_Groups_3.png?alt=media&#x26;token=230ba964-784c-4c2e-b611-addf95d9743e" alt="" width="375"><figcaption></figcaption></figure></div>
 
-**User and Supplier Group Mapping**
+**Zuordnung von Benutzern zu Lieferantengruppen (User and Supplier Group Mapping)**
 
 Hier werden alle von Ihnen angelegten Lieferantengruppen angezeigt. In diesem Bereich weisen Sie den von Ihnen angelegten Lieferantengruppen DocBits-Benutzer zu.
 
@@ -49,19 +49,19 @@ Um einer Lieferantengruppe einen neuen Benutzer zuzuweisen, klicken Sie auf die 
 
 Wählen Sie den Benutzer, den Sie der Lieferantengruppe zuweisen möchten, aus der Dropdown-Liste aus und klicken Sie dann auf Add, um den Benutzer zuzuweisen.
 
-**Policy and Privacy Statement**
+**Richtlinien- und Datenschutzerklärung (Policy and Privacy Statement)**
 
 Hier können Sie Ihre Richtlinien- und Datenschutzerklärung für die Lieferanten hochladen, die Sie über das Lieferantenportal einladen. Um ein Dokument hochzuladen, klicken Sie einfach oben rechts auf dem Bildschirm auf Upload Document.
 
 <div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FIrN7krduOEKQVcpU0wyh%2F12_Policy_and_Privacy_Statement.png?alt=media&#x26;token=2d1fbdb6-51d6-4e10-8f4d-3cf2ac5ffb68" alt="" width="375"><figcaption></figcaption></figure></div>
 
-**Email Templates**
+**E-Mail-Vorlagen (Email Templates)**
 
 In diesem Bereich können Sie verschiedene E-Mail-Vorlagen hochladen. Sie bilden die Struktur der E-Mails, die der Lieferant erhält, wenn Sie ihn einladen, dem Lieferantenportal beizutreten. Erforderlich sind folgende Vorlagen: Einladung, Genehmigung, Abschluss der Registrierung und Ablehnung, denn dies sind alle E-Mails, die ein Lieferant erhalten kann. Um eine Vorlage hochzuladen, klicken Sie auf +New.
 
 <div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2F61Erb9aVMRNmKKi1DCXj%2F13_Email_Templates.png?alt=media&#x26;token=6e554119-9677-4516-9f09-0304b021317d" alt="" width="375"><figcaption></figcaption></figure></div>
 
-**Supplier Layout**
+**Lieferantenlayout (Supplier Layout)**
 
 Sie können das Layout des Registrierungsformulars anpassen, das die von Ihnen eingeladenen Lieferanten bei der Registrierung im Lieferantenportal sehen. Sie können also Felder hinzufügen oder entfernen, je nachdem, was Sie von den eingeladenen Lieferanten benötigen. Der Supplier Layout Builder funktioniert genauso wie der Layout Builder für Dokumenttypen. Weitere Informationen dazu erhalten Sie hier.
 
@@ -77,7 +77,7 @@ Innerhalb des Layouts können Sie Dropdown-Listen hinzufügen, die mit der Funkt
 
 Damit der Export funktioniert, dürfen in diesen Listen nur Werte verwendet werden, die in INFOR vorhanden sind. Im oben gezeigten Beispiel sind alle auswählbaren Werte für das Feld „Supplier Group“ in INFOR vorhanden. Dasselbe Prinzip gilt für alle Listen, egal ob für Zahlungsbedingungen, Währungen usw. Um Probleme beim Export zu vermeiden, prüfen Sie vor der Konfiguration dieser Listen zunächst die in INFOR gespeicherten Werte.
 
-**Supplier General Settings**
+**Allgemeine Lieferanteneinstellungen (Supplier General Settings)**
 
 Hier können Sie Ihr Firmenlogo oder eine Alternative hochladen. Es wird in der Kopfzeile aller versendeten E-Mail-Vorlagen sowie auf dem DocBits-Anmeldebildschirm angezeigt, sobald Lieferanten den Registrierungsprozess beginnen. Bleibt das Feld leer, wird das Standard-DocBits-Logo angezeigt.
 
@@ -85,7 +85,7 @@ Supplier Portal Additional Invitation Fields: Mit dieser Option können Sie der 
 
 <figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FLdyOv43jUPchvBTBKI1g%2Fsupplier-portal2.png?alt=media&#x26;token=73b1d4bd-06d0-408a-9abe-975a5a4af5c2" alt="" width="315"><figcaption></figcaption></figure>
 
-**Export Configuration**
+**Exportkonfiguration (Export Configuration)**
 
 Laden Sie hier Ihre ION API sowie Ihre IDM-Mapping-Datei hoch. Ihre M3-Mapping-Datei wird dann rechts generiert.
 

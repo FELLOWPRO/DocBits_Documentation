@@ -338,7 +338,7 @@ Wenn Sie zusätzliche Daten in E-Mails benötigen:
 
 ***
 
-## Best Practices
+## Bewährte Vorgehensweisen
 
 ✅ **Do:**
 

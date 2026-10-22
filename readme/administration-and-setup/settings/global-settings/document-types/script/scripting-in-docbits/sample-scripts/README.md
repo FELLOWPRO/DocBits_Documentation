@@ -18,7 +18,7 @@ Produktionsreife Skriptbeispiele für häufige DocBits-Automatisierungsanwendung
 - [Aufgabe bei hohem Betrag](task-high-amount.md) — Genehmigungsaufgabe für große Rechnungen erstellen
 - [Dynamische Pflichtfelder](dynamic-required-fields.md) — Pflichtfelder basierend auf Währung anpassen
 
-### Fulltext & Vector Search
+### Volltext- und Vektorsuche
 - [Duplikat-Rechnungserkennung](duplicate-invoice-detection.md) — Duplikate per Volltextsuche finden
 - [Ähnliche Dokumente erkennen](similar-document-detection.md) — Ähnliche Dokumente per Vektorsuche markieren
 - [Compliance-Textsuche](compliance-text-search.md) — Nach Compliance-Schlüsselwörtern suchen (z.B. Reverse Charge)

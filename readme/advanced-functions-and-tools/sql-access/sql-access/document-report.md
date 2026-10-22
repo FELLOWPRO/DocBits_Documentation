@@ -1,13 +1,13 @@
-# Document Report
+# Dokumentbericht
 
 ## Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_id`: internal
-* `doc_type`: DOC Type
-* `sub_doc_type`: internal
-* `time_spent`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `doc_id`: intern
+* `doc_type`: Dokumenttyp
+* `sub_doc_type`: intern
+* `time_spent`: intern
 * `fields_total`: integer
 * `fields_correct`: integer
 * `checkbox_fields_total`: integer
@@ -19,7 +19,7 @@
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
 * `validated_by`: integer
-* `sub_org_id`: internal
+* `sub_org_id`: intern
 
 ## Analyse & Beschreibung
 

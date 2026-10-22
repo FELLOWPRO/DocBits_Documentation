@@ -17,19 +17,19 @@ Um das trainierte Modell zu testen und seine Genauigkeit und Betriebsbereitschaf
 * Führen Sie die Klassifizierungstests mit den vorbereiteten Testdaten durch.
 * Speisen Sie die Testdaten in das Modell ein und lassen Sie das Modell Vorhersagen zur Klassifizierung der Belege treffen.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_remove_user_access.png" alt="Docbits Remove User Access" width="375"><figcaption><p>Einstellungen</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_remove_user_access.png" alt="Benutzerzugriff in DocBits entfernen" width="375"><figcaption><p>Einstellungen</p></figcaption></figure>
 
 * Fügen Sie eine neue Klassifizierungsregel hinzu oder bearbeiten Sie eine bestehende.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_confirm_user_removal.png" alt="Docbits Confirm User Removal"><figcaption><p>Einstellungen: Klassifizierung und Extraktion</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_confirm_user_removal.png" alt="Entfernen eines Benutzers in DocBits bestätigen"><figcaption><p>Einstellungen: Klassifizierung und Extraktion</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_save_user_changes.png" alt="Docbits Save User Changes" width="276"><figcaption><p>Klassifizierungsregel konfigurieren</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_save_user_changes.png" alt="Benutzeränderungen in DocBits speichern" width="276"><figcaption><p>Klassifizierungsregel konfigurieren</p></figcaption></figure>
 
 **Bewerten der Modellgenauigkeit:**
 
 * Vergleichen Sie die Vorhersagen des Modells mit den tatsächlichen Klassifizierungen der Testdaten. Berechnen Sie Metriken wie Genauigkeit (Accuracy), Präzision (Precision), Recall und F1-Score, um die Leistung des Modells zu bewerten. Diese Metriken geben Aufschluss darüber, wie gut das Modell die Belege klassifiziert hat und wie zuverlässig es ist.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_model_training_metrics.png" alt="Docbits Model Training Metrics"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_model_training_metrics.png" alt="Kennzahlen des Modelltrainings in DocBits"><figcaption></figcaption></figure>
 
 
 

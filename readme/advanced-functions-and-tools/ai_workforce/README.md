@@ -1,6 +1,6 @@
 # AI Workforce
 
-<figure><img src="../../.gitbook/assets/docnet-agents-infographic-en.png" alt="AI Workforce Agents Infographic"><figcaption><p>DocBits Multi-Agenten-System für die autonome Dokumentenverarbeitung</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docnet-agents-infographic-en.png" alt="Infografik der AI-Workforce-Agenten"><figcaption><p>DocBits Multi-Agenten-System für die autonome Dokumentenverarbeitung</p></figcaption></figure>
 
 ## Überblick
 

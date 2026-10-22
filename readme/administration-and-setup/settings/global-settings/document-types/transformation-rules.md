@@ -227,7 +227,7 @@ Tabellen- und Spaltenregeln ändern, was der PO-Matcher sieht:
 
 Ist **Ausführung protokollieren** eingeschaltet, wird jede Anwendung der Regel unter **Dokumenttypen → (Dokumenttyp) → Protokolle** protokolliert, mit dem Ergebnis (angewendet, keine Änderung, übersprungen), dem Dokument und — bei übersprungenen Regeln — der Bedingungsspur, die erklärt, warum. Siehe [Die Bedingungsspur in den Protokollen lesen](rule-conditions-applies-when.md#die-bedingungsspur-in-den-protokollen-lesen).
 
-## Best Practices
+## Bewährte Vorgehensweisen
 
 * **Ein Zweck pro Regel.** „Rechnungsnummer bereinigen“ und „Einheitencodes abbilden“ sind zwei Regeln, nicht eine.
 * **Bauen Sie mit der Live-Vorschau**, mit echten Werten aus Dokumenten, auch mit ungewöhnlichen (Leerzeichen, Kleinschreibung, Präfixe).

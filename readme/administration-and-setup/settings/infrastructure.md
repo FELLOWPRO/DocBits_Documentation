@@ -18,7 +18,7 @@ Die Seite ist in drei Registerkarten unterteilt:
 
 Die Registerkarte „Topologie" stellt die gesamte DocBits-Plattform als Diagramm dar, gruppiert in Ebenen – **Edge / Web**, **Core API**, **Import**, **Hintergrunddienste**, **Datenspeicher** und **Authentifizierung**. Jedes Kästchen ist eine Komponente (die Web-App/CDN, das API-Gateway, der OCR-Worker, die Datenbank usw.).
 
-<figure><img src="../../.gitbook/assets/infrastructure_topology.png" alt="Topology diagram with region badges"><figcaption><p>Jede Komponente ist mit der Region gekennzeichnet, in der sie läuft</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/infrastructure_topology.png" alt="Topologiediagramm mit Regionskennzeichnungen"><figcaption><p>Jede Komponente ist mit der Region gekennzeichnet, in der sie läuft</p></figcaption></figure>
 
 ### Regionserkennung
 

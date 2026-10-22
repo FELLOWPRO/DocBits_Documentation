@@ -3,7 +3,7 @@
 <figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-25-de.png" alt="Skriptübersicht in deutscher Sprache; Namen und Datumsangaben sind ausgeblendet."><figcaption><p>Skriptübersicht in deutscher Sprache; Namen und Datumsangaben sind ausgeblendet.</p></figcaption></figure>
 
 {% embed url="https://youtu.be/n8NpWWIjmlA" %}
-DocBits Document Scripts Explained: Automate Custom Logic in Your Document Workflow
+DocBits-Dokumentskripte: individuelle Logik im Dokumenten-Workflow automatisieren
 {% endembed %}
 
 #### Übersicht

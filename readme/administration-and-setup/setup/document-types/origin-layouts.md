@@ -1,7 +1,7 @@
 # Herkunftsabhängige Layouts
 
 {% embed url="https://youtu.be/-m45XGiIeig" %}
-DocBits Origin Setting Explained: Country Standards for Dates & Number Formats
+DocBits-Herkunftseinstellung: länderspezifische Standards für Datums- und Zahlenformate
 {% endembed %}
 
 DocBits passt Dokumentlayouts hervorragend an ihre geografische Herkunft an und standardisiert gleichzeitig Elemente wie Währungsformate anhand der Browser-Einstellungen des Benutzers. Sehen wir uns an, wie Sie mit dem Layout Builder Layouts für unterschiedliche Herkunftsländer anpassen können, zum Beispiel für die USA und Deutschland.

@@ -33,4 +33,4 @@ Finvoice 2.0 erweiterte den Standard um eine verbesserte Unterstützung für Zah
 
 ## Verwandte Themen
 
-* [Supported Electronic Documents](./)
+* [Unterstützte elektronische Dokumente](./)

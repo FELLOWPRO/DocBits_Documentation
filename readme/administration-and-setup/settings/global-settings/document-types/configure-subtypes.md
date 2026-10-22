@@ -10,7 +10,7 @@ Wählen Sie **Felder**, um festzulegen, welche Informationen Benutzer für diese
 
 <figure><img src="../../../../.gitbook/assets/subtype-fields-de-20261011.png" alt="Deutsche Feldeinstellungen für einen synthetischen Rechnungs-Untertyp mit Feldgruppen, Eigenschaftsspalten und Einstellungen speichern"><figcaption><p>Feldeinstellungen in der Dokumentations-Testorganisation. Es werden keine Kundendaten angezeigt.</p></figcaption></figure>
 
-## Layout Builder
+## Layout-Editor
 
 Wählen Sie **Layout Builder**, um Gruppen und Felder auf dem Dokument-Validierungsbildschirm anzuordnen. Links werden die Elemente aufgelistet; rechts fügen Sie ein Beispieldokument für die Vorschau ein. Prüfen Sie das Ergebnis und wählen Sie **Speichern**, wenn das Layout fertig ist. Die [Layout-Builder-Anleitung](../../../setup/document-types/layout-builder.md) erklärt Elemente, die Dokumentvorschau und das Speichern eines Layouts.
 

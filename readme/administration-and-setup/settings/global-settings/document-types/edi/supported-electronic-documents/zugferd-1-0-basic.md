@@ -12,8 +12,8 @@ Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfi
 
 | Eigenschaft | Wert |
 |---|---|
-| **Land / Region** | Germany |
-| **Dokumenttypen** | Invoice, Credit Note |
+| **Land / Region** | Deutschland |
+| **Dokumenttypen** | Rechnung, Gutschrift |
 | **Format** | CII (PDF/A-3 eingebettet) |
 | **Standard** | ZUGFeRD 1.0, Basic-Profil |
 | **Basiert auf** | ZUGFeRD 1.0 Spezifikation |
@@ -24,9 +24,9 @@ Das Basic-Profil von ZUGFeRD 1.0 enthält die wesentlichen Rechnungsfelder wie R
 
 | Komponente | Status |
 | ---------- | ------ |
-| Vorschau | ✅ Supported |
-| Feldextraktion | ✅ Supported |
-| Transformation | ✅ Supported |
+| Vorschau | ✅ Unterstützt |
+| Feldextraktion | ✅ Unterstützt |
+| Transformation | ✅ Unterstützt |
 
 ## Standard-Vorschau
 
@@ -35,5 +35,5 @@ Das Basic-Profil von ZUGFeRD 1.0 enthält die wesentlichen Rechnungsfelder wie R
 ## Verwandte Seiten
 
 * [ZUGFeRD-Konfiguration](../zugferd/)
-* [ZUGFeRD-Feldzuordnung](../zugferd/versions/)
+* [ZUGFeRD-Feldzuordnung](../zugferd/README.md)
 * [Unterstützte elektronische Dokumente](./)

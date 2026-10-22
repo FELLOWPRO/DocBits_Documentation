@@ -5,17 +5,17 @@
 ### Spalten
 
 * `id`: integer
-* `org_id`: ID to organisation
-* `doc_id`: internal
-* `action_type`: internal
+* `org_id`: ID der Organisation
+* `doc_id`: intern
+* `action_type`: intern
 * `action_description`: text
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
 * `is_hidden`: boolean
-* `previous_status`: internal
-* `current_status`: internal
+* `previous_status`: intern
+* `current_status`: intern
 
 ### Analyse & Beschreibung
 

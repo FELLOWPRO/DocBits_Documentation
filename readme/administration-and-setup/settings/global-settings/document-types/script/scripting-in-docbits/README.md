@@ -1,6 +1,6 @@
-# Scripting in DocBits
+# Skripterstellung in DocBits
 
-## Docbits Scripting Guide
+## Leitfaden zur Skripterstellung in DocBits
 
 Willkommen im Docbits Scripting Guide! Hier lernen Sie, wie Sie Skripte verwenden, um die Dokumentenverarbeitung in Docbits zu automatisieren und zu verbessern. Skripte ermöglichen die benutzerdefinierte Feldmanipulation, Datenumwandlung und Logikimplementierung über verschiedene Dokumenttypen hinweg.
 

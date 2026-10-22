@@ -33,4 +33,4 @@ e-Faktur ist das indonesische elektronische Steuerrechnungssystem der Steuerbeh√
 
 ## Verwandte Themen
 
-* [Supported Electronic Documents](./)
+* [Unterst√ºtzte elektronische Dokumente](./)

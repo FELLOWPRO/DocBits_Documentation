@@ -34,6 +34,6 @@ Eine harmonisierte CII Guideline ID kann eine Familie und ein Profil identifizie
 
 ## Verwandte Themen
 
-* [ZUGFeRD Configuration](../zugferd/)
-* [ZUGFeRD Field Mapping](../zugferd/versions/)
-* [Supported Electronic Documents](./)
+* [ZUGFeRD-Konfiguration](../zugferd/)
+* [ZUGFeRD-Feldzuordnung](../zugferd/README.md)
+* [Unterstützte elektronische Dokumente](./)

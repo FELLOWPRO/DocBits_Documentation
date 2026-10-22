@@ -1,18 +1,18 @@
-# Document type attributes
+# Dokumenttypattribute
 
 ## Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_type_key`: internal
-* `sub_doc_type_key`: internal
-* `attribute_key`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `doc_type_key`: intern
+* `sub_doc_type_key`: intern
+* `attribute_key`: intern
 * `attribute_value`: text
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
-* `sub_org_id`: internal
+* `sub_org_id`: intern
 
 ## Analyse & Beschreibung
 

@@ -1,4 +1,4 @@
-# Purchase Order line
+# Pozycja zamówienia zakupu
 
 ## Tabela `public.purchase_order_line`
 
@@ -19,9 +19,9 @@
 * `currency`: internal
 * `status`: internal
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `deleted_on`: timestamp with time zone
+* `created_on`: znacznik czasu ze strefą czasową
+* `last_modified_on`: znacznik czasu ze strefą czasową
+* `deleted_on`: znacznik czasu ze strefą czasową
 * `is_deleted`: boolean
 * `open_quantity`: double precision
 * `received_quantity`: double precision
@@ -34,7 +34,7 @@
 * `buyer_name`: internal
 * `unit_code_price`: internal
 * `geo_code`: internal
-* `promised_delivery_date`: timestamp with time zone
+* `promised_delivery_date`: znacznik czasu ze strefą czasową
 * `delivery_method`: internal
 * `requested_ship_date`: date
 * `received_base_mou_quantity`: double precision

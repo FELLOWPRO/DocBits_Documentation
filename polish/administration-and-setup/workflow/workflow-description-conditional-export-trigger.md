@@ -2,11 +2,11 @@
 
 
 
-<figure><img src="../../../.gitbook/assets/docbits_settings_workflow.png" alt="DocBits Ustawienia Przepływ pracy"><figcaption></figcaption></figure>
+
 
 Ten przepływ pracy określa warunki, w jakich należy zainicjować proces eksportu. Zapewnia, że tylko dokumenty spełniające wszystkie określone kryteria są przetwarzane do eksportu, co zwiększa integralność danych i zgodność z regułami biznesowymi.
 
-### When:
+### Kiedy:
 
 * Dokument w systemie jest oceniany pod kątem kwalifikowalności do eksportu.
 
@@ -22,11 +22,11 @@ Ten przepływ pracy określa warunki, w jakich należy zainicjować proces ekspo
      * Łączna kwota w potwierdzeniu zamówienia jest zgodna z łączną kwotą w zamówieniu zakupu.
      * Daty dostawy określone w potwierdzeniu zamówienia są zgodne z tymi w zamówieniu zakupu.
 
-### Then:
+### Wtedy:
 
-#### Action:
+#### Działanie:
 
-* **Initiate Export**
+* **Rozpoczęcie eksportu**
   * Jeśli wszystkie powyższe warunki są spełnione, system automatycznie rozpoczyna proces eksportu dokumentu.
   * Może to obejmować wygenerowanie pliku eksportu, wysłanie danych do systemu zewnętrznego lub uruchomienie przepływu pracy w innej aplikacji.
 

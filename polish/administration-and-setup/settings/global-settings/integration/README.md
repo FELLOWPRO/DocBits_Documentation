@@ -4,7 +4,7 @@
 
 Strona Integration & SSO służy do zarządzania kluczami API dla dostępu programistycznego, identyfikatorami organizacji oraz konfiguracją jednokrotnego logowania (Single Sign-On, SSO).
 
-## API Key
+## Klucz API
 
 Zarządzaj kluczami API używanymi do programistycznego dostępu do DocBits.
 
@@ -28,7 +28,7 @@ Pokazuje identyfikatory Twojej organizacji:
 | **ID organizacji** | Unikalny identyfikator Twojej organizacji. |
 | **ID podorganizacji** | Identyfikator aktualnie wybranej podorganizacji. |
 
-## SSO Service Provider Settings
+## Ustawienia dostawcy usług SSO
 
 Wartości konfiguracji SSO DocBits potrzebne podczas konfigurowania Twojego dostawcy tożsamości (Identity Provider):
 
@@ -40,7 +40,7 @@ Wartości konfiguracji SSO DocBits potrzebne podczas konfigurowania Twojego dost
 
 Możesz także użyć **Pobierz certyfikat** i **Pobierz metadane** na potrzeby konfiguracji IdP.
 
-## Identity Service Provider Settings
+## Ustawienia dostawcy usług tożsamości
 
 Skonfiguruj zewnętrznego dostawcę tożsamości (IdP):
 

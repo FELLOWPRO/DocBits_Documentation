@@ -77,7 +77,7 @@ Dwie opcje w sekcji **Opcje przetwarzania** określają, jak często zasada jest
 | Opcja | Efekt |
 | --- | --- |
 | **Uruchom tylko raz dla każdego dokumentu** | Zwykle zasady uruchamiają się ponownie przy każdym zapisie. Gdy opcja jest włączona, zasada stosuje się do dokumentu **co najwyżej raz** i na tym kończy. Przebieg, w którym warunki nie są spełnione, nie jest liczony, więc zasada może jeszcze zadziałać przy późniejszym zapisie. Wymagane dla kroków, które zmieniałyby wartość ponownie przy każdym zapisie (zobacz [Idempotentność](#uruchom-raz-i-idempotentnosc)) oraz dla zasad tabeli, które nie powinny ponownie budować pozycji. |
-| **Run after lookup population (before PO match)** | *(nowsze wersje)* Uruchamia zasadę w dodatkowym przebiegu po uzupełnieniu danych wyszukiwania (na przykład danych podstawowych dostawcy), a przed dopasowaniem zamówień zakupu. Użyj, gdy zasada potrzebuje wartości dostarczanej przez wyszukiwanie. Zasada nadal uruchamia się także na zwykłych etapach; zasada uruchamiana tylko raz z tą opcją czeka na ten przebieg zamiast uruchamiać się zaraz po ekstrakcji. |
+| **Uruchom po przeszukaniu populacji (przed dopasowaniem PO)** | *(nowsze wersje)* Uruchamia zasadę w dodatkowym przebiegu po uzupełnieniu danych wyszukiwania (na przykład danych podstawowych dostawcy), a przed dopasowaniem zamówień zakupu. Użyj, gdy zasada potrzebuje wartości dostarczanej przez wyszukiwanie. Zasada nadal uruchamia się także na zwykłych etapach; zasada uruchamiana tylko raz z tą opcją czeka na ten przebieg zamiast uruchamiać się zaraz po ekstrakcji. |
 
 ### Krok 3 — The pipeline
 
@@ -93,11 +93,11 @@ Dwie opcje w sekcji **Opcje przetwarzania** określają, jak często zasada jest
 
 | Krok | Ustawienia | Przykład wejście → wyjście |
 | --- | --- | --- |
-| **Zmień przypadek** (Change case) | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
+| **Zmień przypadek** (Change case) | UPPERCASE, małe litery, wielkość liter w tytule, zacznij od wielkich liter | `inv-4711` → `INV-4711` |
 | **Przycinać** (Trim) | strona (obie, lewa, prawa); znaki (puste = białe znaki) | `  4711 ` → `4711`; ze znakiem `0` i stroną lewą: `004711` → `4711` |
 | **Podkładka** | długość, znak wypełnienia, strona | długość 10, `0`, lewa: `4711` → `0000004711` |
 | **Ścięty** | maksymalna długość | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
-| **Afiks** (Affix) | add prefix, add suffix, strip prefix, strip suffix; tekst | add prefix `INV-`: `4711` → `INV-4711`; strip prefix `Art.-Nr. `: `Art.-Nr. 4711` → `4711` |
+| **Afiks** (Affix) | dodaj przedrostek, dodaj przyrostek, przedrostek paska, przyrostek paska; tekst | add prefix `INV-`: `4711` → `INV-4711`; strip prefix `Art.-Nr. `: `Art.-Nr. 4711` → `4711` |
 | **Dezynfekcja** (Sanitise) | zachowaj tylko (alfanumeryczne, litery, cyfry, alfanumeryczne + spacja) lub usuń podane znaki | keep alphanumeric: `DE 123.456.789` → `DE123456789` |
 | **Wybór fragmentu** | początek, długość lub koniec | początek 0, długość 4: `2026-09-29` → `2026` |
 | **Ekstrakt** | wzorzec, grupa przechwytująca | wzorzec `PO[- ]?(\d+)`, grupa 1: `Order PO-45001234` → `45001234` |
@@ -253,4 +253,4 @@ Gdy **Wykonywanie dziennika** jest włączone, każde zastosowanie zasady jest z
 * [Rule Conditions (Applies when)](rule-conditions-applies-when.md) — warunki szczegółowo
 * [Custom Validation Rules](custom-validation-rules.md) — sprawdzanie przekształconych wartości
 * [Layout Selection Rules](layout-manager/layout-selection-rules.md) — wybór layoutu używanego przez dokument
-* [Purchase Order Matching Rules](more-settings/purchase-order/purchase-order-matching-rules.md)
+* [Zasady dopasowywania zamówień zakupu](more-settings/purchase-order/purchase-order-matching-rules.md)

@@ -1,7 +1,7 @@
 # Typy dokumentów
 
 {% embed url="https://youtu.be/pFz_6tvNlU4" %}
-DocBits Document Types Explained: Create, Configure & Assign Processing Settings
+DocBits Wyjaśnienie typów dokumentów: tworzenie, konfigurowanie i przypisywanie ustawień przetwarzania
 {% endembed %}
 
 <figure><img src="../../../../.gitbook/assets/document_types.png" alt="Typy dokumentów"><figcaption><p>Strona typów dokumentów</p></figcaption></figure>
@@ -31,7 +31,7 @@ Pod każdym typem dokumentu dostępne są następujące karty konfiguracji:
 |-----|-------------|
 | **Labels** | Zarządzanie etykietami wyświetlanymi i tłumaczeniami dla typu dokumentu. |
 | **Edit layout** | Modyfikowanie wyglądu dokumentu w widoku walidacji, w tym pozycji pól. |
-| **Document Sub Types** | Konfigurowanie podkategorii tego typu dokumentu (np. różnych formatów faktur). |
+| **Podtypy dokumentów** | Konfigurowanie podkategorii tego typu dokumentu (np. różnych formatów faktur). |
 | **Table columns** | Dostosowanie, które kolumny danych pojawiają się w tabeli pozycji. |
 | **Fields** | Zarządzanie polami danych wyodrębnianymi z dokumentu (dodawanie, edytowanie lub usuwanie pól). |
 | **Model Training** | Konfigurowanie i trenowanie modelu AI używanego do rozpoznawania i ekstrakcji danych. |

@@ -1,4 +1,4 @@
-# Master PO Matching with DocBits
+# Opanuj dopasowanie zamówień zakupu w DocBits
 
 {% embed url="https://youtu.be/qR-lrSaj4Ug" %}
 DocBits PO Matching Tutorial: Auto/Manual Line Matching, Tolerances & Mismatch Indicators

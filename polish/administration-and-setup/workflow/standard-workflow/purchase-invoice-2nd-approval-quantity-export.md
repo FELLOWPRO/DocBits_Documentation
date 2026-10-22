@@ -1,6 +1,6 @@
-# Purchase Invoice - 2nd Approval Quantity Export
+# Faktura zakupu — eksport po drugim zatwierdzeniu ilości
 
-<figure><img src="../../../../.gitbook/assets/docbits_purchase_order_export_6.png" alt="DocBits Zakup Zamówienie Eksport 6"><figcaption></figcaption></figure>
+
 
 Ten tytuł wskazuje, że reguła została skonfigurowana do zarządzania drugim etapem zatwierdzania faktur zakupowych z naciskiem na szczegóły ilości, zapewniając, że ilości na fakturze są zgodne z tymi w oryginalnym zamówieniu zakupu.
 
@@ -13,7 +13,7 @@ Ten tytuł wskazuje, że reguła została skonfigurowana do zarządzania drugim 
    * **Document Field Invoice Sub Type is Equals Purchase Invoice**: Ten warunek dodatkowo określa, że reguła ma zastosowanie tylko do faktur sklasyfikowanych konkretnie jako "Purchase Invoices", odróżniając je od innych typów faktur.
    * **Logic Quantity in order confirmation Equals purchase order**: Ten warunek sprawdza, czy ilość wymieniona w potwierdzeniu zamówienia jest zgodna z ilością w zamówieniu zakupu. Zapewnia, że przetwarzanie faktury postępuje tylko wtedy, gdy ilości są spójne, co jest kluczowe dla zarządzania stanami magazynowymi i dokładności finansowej.
 
-#### Action (Then…):
+#### Działanie (Then…):
 
 * **Start Export**: Gdy faktura spełnia określone warunki (tj. ilości są zgodne między potwierdzeniem zamówienia a zamówieniem zakupu), wyzwalana jest akcja "Start Export". Prawdopodobnie obejmuje to eksport danych faktury do dalszego przetwarzania, ewentualnie do innego systemu finansowego lub na potrzeby raportowania.
 

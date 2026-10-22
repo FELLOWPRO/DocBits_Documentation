@@ -4,7 +4,7 @@
 
 Activity Logging zapewnia podgląd zdarzeń systemowych we wszystkich usługach DocBits w czasie rzeczywistym. Używaj go do monitorowania przetwarzania, diagnozowania błędów i audytu zachowania systemu.
 
-## Analytics Banner
+## Baner analityczny
 
 U góry strony baner prowadzi do **Panel analityczny** z wykresami, metrykami i monitorowaniem w czasie rzeczywistym.
 

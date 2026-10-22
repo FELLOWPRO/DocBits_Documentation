@@ -1,39 +1,41 @@
-# Case 7: Quantity Within Tolerance, Unit Price Outside Tolerance (Positive Rejected)
+# Przypadek 7: Ilość w tolerancji; cena za wysoka — odrzucenie
 
-## Scenario:
+Poniższy scenariusz ilustruje skonfigurowane mapowanie, a nie domyślny szablon o zweryfikowanym wdrożeniu. Rzeczywiste dane wyjściowe, kwoty, znaki i typy dokumentów zależą od aktywnych reguł i wyrażeń `conflict_resolution`, mapowania eksportu oraz decyzji zatwierdzających. Każda opisana nota obciążeniowa lub uznaniowa jest uzależniona od tej konfiguracji; przykład nie gwarantuje jej automatycznego wystawienia ani zgodności z prawem.
 
-The quantity is within tolerance, but the unit price exceeds the acceptable range (positive tolerance) and is not approved.
+## Scenariusz:
 
-## Action:
+Ilość mieści się w tolerancji, ale cena jednostkowa przekracza dopuszczalny zakres (tolerancja dodatnia) i nie jest zatwierdzana.
 
-The system rejects the invoice unit price, adjusts it to match the purchase order, and may generate a debit note to account for the overcharged amount.
+## Działanie:
 
-## Example:
+System odrzuca cenę jednostkową faktury, dostosowuje ją do zamówienia i może wygenerować notę obciążeniową w celu rozliczenia zawyżonej kwoty.
+
+## Przykład:
 
 * **Purchase Order (PO):**
   * Quantity: 200 units
-  * Unit Price: $15.00 per unit
+  * Cena jednostkowa: $15.00 za sztukę
   * Total Amount: $3,000.00
 * **Invoice Received:**
-  * Quantity: 198 units (within tolerance of 1%)
-  * Unit Price: $17.00 per unit (outside positive tolerance of 13.33%)
+  * Ilość: 198 szt. (w tolerancji 1%)
+  * Cena jednostkowa: $17.00 za sztukę (poza dodatnią tolerancją 13.33%)
   * Total Amount: $3,366.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±2%
-  * Unit Price Tolerance: ±1%
+  * Tolerancja ceny jednostkowej: ±1%
 
-Since the quantity (198 units) is within the acceptable tolerance range but the unit price ($17.00) exceeds the acceptable tolerance and is not approved, the system will:
+Ponieważ ilość (198 jednostek) mieści się w dopuszczalnym zakresie tolerancji, ale cena jednostkowa ($17.00) przekracza dopuszczalną tolerancję i nie jest zatwierdzona, system:
 
-1. **Reject the Invoice Unit Price:** The system does not accept the invoiced unit price of $17.00.
-2. **Adjust the Unit Price:** The system adjusts the unit price to match the original purchase order unit price.
-   * Adjusted Unit Price = $15.00 (from PO)
-3. **Calculate the Corrected Total Amount:** Using the adjusted unit price, the system recalculates the total amount.
-   * **Corrected Total Amount = Quantity × Adjusted Unit Price**
-   * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**
-4. **Generate a Debit Note:** The system generates a debit note to account for the difference due to the overcharge.
-   * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
-   * **Debit Note Amount = $3,366.00 - $2,970.00 = $396.00**
-   * This debit note represents the amount overcharged by the supplier.
-5. **Process the Invoice:** The system processes the invoice with the corrected total amount of $2,970.00 and issues a debit note for $396.00 to offset the overcharge.
+1. **Odrzuć fakturowaną cenę jednostkową:** System nie akceptuje zafakturowanej ceny jednostkowej wynoszącej $17.00.
+2. **Dostosuj cenę jednostkową:** System dostosowuje cenę jednostkową, aby odpowiadała cenie jednostkowej pierwotnego zamówienia zakupu.
+   * Skorygowana cena jednostkowa = $15.00 (od PO)
+3. **Oblicz skorygowaną kwotę całkowitą:** Korzystając ze skorygowanej ceny jednostkowej, system ponownie oblicza całkowitą kwotę.
+   * **Skorygowana kwota całkowita = ilość × skorygowana cena jednostkowa**
+   * **Skorygowana kwota całkowita = 198 jednostek × $15.00 za jednostkę = $2,970.00**
+4. **Wygeneruj notę debetową:** System generuje notę debetową w celu uwzględnienia różnicy wynikającej z nadmiernego obciążenia.
+   * **Kwota noty debetowej = Suma oryginalnej faktury – Skorygowana kwota całkowita**
+   * **Kwota noty debetowej = $3,366.00 - $2,970.00 = $396.00**
+   * Niniejsza nota debetowa przedstawia kwotę zawyżoną przez dostawcę.
+5. **Przetwórz fakturę:** System przetwarza fakturę na skorygowaną łączną kwotę $2,970.00 i wystawia notę debetową na kwotę $396.00 w celu skompensowania nadmiernego obciążenia.
 
-This approach ensures that any overcharging is corrected, aligning the transaction with the purchase order terms and protecting the financial interests of the business.
+Takie podejście gwarantuje skorygowanie wszelkich nadmiernych opłat, dostosowanie transakcji do warunków zamówienia i ochronę interesów finansowych firmy.

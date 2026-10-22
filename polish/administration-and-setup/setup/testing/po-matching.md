@@ -1,8 +1,8 @@
-# PO Matching
+# Dopasowanie zamówień zakupu
 
-When it comes to testing your PO Matching configuration, you will need to create a Purchase order in LN/M3 in order to check whether INFOR is synced with DocBits.&#x20;
+Jeśli chodzi o testowanie zgodnej konfiguracji PO, będziesz musiał utworzyć zamówienie zakupu w LN/M3, aby sprawdzić, czy INFOR jest zsynchronizowane z DocBits.
 
-## Creating a Purchase Order in INFOR
+## Tworzenie zamówienia zakupu w INFOR
 
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
 {% endembed %}
@@ -11,14 +11,14 @@ When it comes to testing your PO Matching configuration, you will need to create
 * LN: https://docs.infor.com/ln/10.4/en-us/lnolh/docs/ln\_10.4\_procpoug\_\_en-us.pdf&#x20;
 * M3: https://docs.infor.com/m3udi/16.x/en-us/m3beud/default.html?helpcontent=ois610.html&#x20;
 
-Once you have created your purchase order, go to Settings → Master Data Lookup and search for the purchase order number of the PO you just created as it should now appear in your purchase order master data in DocBits.
+Po utworzeniu zamówienia przejdź do Ustawienia → Wyszukiwanie danych podstawowych i wyszukaj numer zamówienia zakupu dla właśnie utworzonego PO, który powinien teraz pojawiać się w danych podstawowych zamówienia w DocBits.
 
 ![](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X\_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs\_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
 
-You should see your unique PO number here, this means that DocBits and INFOR are correctly synced.
+Powinieneś zobaczyć tutaj swój unikalny numer PO, co oznacza, że DocBits i INFOR są poprawnie zsynchronizowane.
 
-Now upload your invoice that matches the quantity and unit prices of the purchase order you created. Validate the document and select PO Matching on the validation screen.
+Teraz prześlij fakturę odpowiadającą ilości i cenom jednostkowym utworzonego zamówienia zakupu. Zatwierdź dokument i wybierz Dopasowanie zamówień zakupu na ekranie walidacji.
 
-The PO and invoice line items should automatically match, then simply select the export option and check whether or not the document gets exported without any errors. If you do encounter an export error, create a ticket for the DocBits support team to assist you. If you are unsure of how to create a ticket within DocBits, please consult our DocBits Overview documentation for assistance.
+Pozycje zamówienia zakupu i faktury powinny zostać automatycznie dopasowane. Następnie wybierz eksport i sprawdź, czy dokument jest eksportowany bez błędów. W razie błędu eksportu utwórz zgłoszenie do zespołu wsparcia DocBits. Instrukcję tworzenia zgłoszeń znajdziesz w dokumentacji z przeglądem funkcji DocBits.
 
 \

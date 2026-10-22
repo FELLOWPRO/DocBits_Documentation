@@ -4,7 +4,7 @@
 
 <figure><img src="../../.gitbook/assets/docbits_cloud_customer_architecture.png" alt="Architektura klienta DocBits Cloud"><figcaption></figcaption></figure>
 
-## DocBits On premise
+## DocBits lokalnie
 
 <figure><img src="../../.gitbook/assets/docbits_on_premise_architecture.png" alt="Architektura DocBits On Premise"><figcaption></figcaption></figure>
 
@@ -14,7 +14,7 @@ Doc**Bits** bezproblemowo integruje się z Infor LN/M3 za pośrednictwem ION API
 
 Wszystkie połączenia między komponentami są zabezpieczone przy użyciu standardowych w branży protokołów szyfrowania. SSH, HTTPS i inne bezpieczne kanały zapewniają integralność i poufność danych w całym systemie.
 
-**On Premise:**&#x20;
+**W siedzibie:**
 
 <figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt=""><figcaption></figcaption></figure>
 

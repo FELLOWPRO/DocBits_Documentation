@@ -1,9 +1,9 @@
-# Script
+# Skrypt
 
 <figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-25-pl.png" alt="Lista skryptów z ukrytymi nazwami i datami."><figcaption><p>Lista skryptów z ukrytymi nazwami i datami.</p></figcaption></figure>
 
 {% embed url="https://youtu.be/n8NpWWIjmlA" %}
-DocBits Document Scripts Explained: Automate Custom Logic in Your Document Workflow
+DocBits Wyjaśnienie skryptów dokumentów: Zautomatyzuj niestandardową logikę w obiegu dokumentów
 {% endembed %}
 
 #### Przegląd

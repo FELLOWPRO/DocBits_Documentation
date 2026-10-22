@@ -1,30 +1,30 @@
-# Layout Manager
+# Menedżer układu
 
 <figure><img src="../../../../../.gitbook/assets/docbits_layout_manager_overview.png" alt="Docbits Layout Manager Overview"><figcaption></figcaption></figure>
 
-#### Overview
+#### Przegląd
 
-The Layout Manager allows administrators to visually configure and modify the layout of document types by setting properties for various data fields and groups within a document. This interface helps ensure that the extraction models and manual data entry points align precisely with the document's structure as scanned or uploaded into Docbits.
+Menedżer układu umożliwia administratorom wizualne konfigurowanie i modyfikowanie układu typów dokumentów poprzez ustawianie właściwości różnych pól danych i grup w dokumencie. Interfejs ten pomaga zapewnić, że modele ekstrakcji i punkty ręcznego wprowadzania danych są dokładnie dopasowane do struktury dokumentu w postaci zeskanowanej lub przesłanej do Docbits.
 
-#### Key Components
+#### Główne składniki
 
-1. **Groups and Fields**:
-   * **Groups**: Organizational units within a document type that categorize related fields (e.g., Invoice Details, Payment Details). These can be expanded or collapsed and arranged to mirror the logical grouping in the actual document.
-   * **Fields**: Individual data points within each group (e.g., Invoice Number, Payment Terms). Each field can be customized for how data is captured, displayed, and processed.
+1. **Grupy i pola**:
+   * **Grupy**: Jednostki organizacyjne w obrębie typu dokumentu, które kategoryzują powiązane pola (np. Szczegóły faktury, Szczegóły płatności). Można je rozwijać lub zwijać i układać tak, aby odzwierciedlały logiczne grupowanie w rzeczywistym dokumencie.
+   * **Fields**: Poszczególne punkty danych w każdej grupie (np. numer faktury, warunki płatności). Każde pole można dostosować pod kątem sposobu przechwytywania, wyświetlania i przetwarzania danych.
 2. **Properties Panel**:
-   * This panel displays the properties of the selected field or group, allowing for detailed configuration, such as:
-     * **Label**: The visible label for the field in the user interface.
-     * **Field Name**: The technical identifier used within the system.
-     * **Element Width in Percentage**: Determines the width of the field in relation to the document layout.
-     * **Tab Index**: Controls the tabbing order for navigation.
-     * **Run Script on Change**: Whether to execute a script when the field value changes.
-     * **Display Label On Left**: Whether the label is displayed to the left of the field or above it.
-     * **Is Textarea**: Specifies if the field should be a textarea, accommodating larger amounts of text.
-     * **Select Model Type**: Option to select which model type will handle the extraction of this field.
-     * **Field Length**: Maximum length of data to be accepted in this field.
-     * **Banned Keywords**: Keywords that are not allowed within the field.
+   * Panel ten wyświetla właściwości wybranego pola lub grupy, umożliwiając szczegółową konfigurację, taką jak:
+     * **Label**: Widoczna etykieta pola w interfejsie użytkownika.
+     * **Nazwa pola**: Identyfikator techniczny używany w systemie.
+     * **Szerokość elementu w procentach**: Określa szerokość pola w stosunku do układu dokumentu.
+     * **Indeks zakładek**: Kontroluje kolejność tabulatorów podczas nawigacji.
+     * **Uruchom skrypt po zmianie**: Określa, czy wykonać skrypt po zmianie wartości pola.
+     * **Wyświetl etykietę po lewej stronie**: Określa, czy etykieta jest wyświetlana po lewej stronie pola, czy nad nim.
+     * **Is Textarea**: Określa, czy pole powinno być obszarem tekstowym, mieszczącym większą ilość tekstu.
+     * **Wybierz typ modelu**: Opcja pozwalająca wybrać typ modelu, który będzie obsługiwał ekstrakcję tego pola.
+     * **Długość pola**: Maksymalna długość danych akceptowanych w tym polu.
+     * **Zablokowane słowa kluczowe**: Słowa kluczowe niedozwolone w tym polu.
 3. **Template Preview**:
-   * Shows a real-time preview of how the document will appear based on the current layout configuration. This helps in ensuring that the layout matches the actual document structure and is vital for testing and refining the document processing setup.
+   * Pokazuje podgląd w czasie rzeczywistym wyglądu dokumentu w oparciu o bieżącą konfigurację układu. Pomaga to zapewnić, że układ odpowiada rzeczywistej strukturze dokumentu i jest niezbędne do testowania i udoskonalania konfiguracji przetwarzania dokumentu.
 
 {% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2490" %}
 

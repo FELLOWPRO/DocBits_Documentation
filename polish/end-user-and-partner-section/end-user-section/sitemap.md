@@ -6,7 +6,7 @@ Mapa Witryny to pełny, przeszukiwalny indeks wszystkiego, co udostępnia DocBit
 
 Otwórz Mapę Witryny z paska bocznego (wpis bliżej dołu) lub naciśnij <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> i wybierz **Zobacz wszystkie wyniki**. Bezpośredni adres URL to `/sitemap`.
 
-<figure><img src="../../.gitbook/assets/sitemap-overview.png" alt="Przegląd Mapy Witryny"><figcaption><p>Mapa Witryny z przeglądem kategorii i nagłówkiem wyszukiwania.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-sitemap-pl.png" alt="Katalog stron w polskim interfejsie. Filtry typów stron są przetłumaczone; etykieta roli „User” pozostaje angielska w przedstawionej wersji."><figcaption><p>Katalog stron w polskim interfejsie. Filtry typów stron są przetłumaczone; etykieta roli „User” pozostaje angielska w przedstawionej wersji.</p></figcaption></figure>
 
 ## Przeglądanie katalogu
 

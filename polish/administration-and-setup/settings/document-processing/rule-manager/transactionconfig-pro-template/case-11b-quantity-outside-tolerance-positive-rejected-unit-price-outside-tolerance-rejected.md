@@ -1,36 +1,38 @@
-# Case 11b: Quantity Outside Tolerance (Positive Rejected), Unit Price Outside Tolerance (Rejected)
+# Przypadek 11b: Ilość za duża i cena poza tolerancją — odrzucenie
 
-## Scenario:
+Poniższy scenariusz ilustruje skonfigurowane mapowanie, a nie domyślny szablon o zweryfikowanym wdrożeniu. Rzeczywiste dane wyjściowe, kwoty, znaki i typy dokumentów zależą od aktywnych reguł i wyrażeń `conflict_resolution`, mapowania eksportu oraz decyzji zatwierdzających. Każda opisana nota obciążeniowa lub uznaniowa jest uzależniona od tej konfiguracji; przykład nie gwarantuje jej automatycznego wystawienia ani zgodności z prawem.
 
-The quantity exceeds the acceptable range (positive) and is rejected, and the unit price is also outside tolerance and rejected.
+## Scenariusz:
 
-## Action:
+Ilość przekracza dopuszczalny zakres (dodatni) i zostaje odrzucona, a cena jednostkowa również znajduje się poza tolerancją i zostaje odrzucona.
 
-The system adjusts the quantity and unit price to match the approved levels from the purchase order, rejecting any excesses, and processes the transaction.
+## Działanie:
 
-## Example:
+System dostosowuje ilość i cenę jednostkową do zatwierdzonych poziomów z zamówienia, odrzucając ewentualne nadwyżki i realizuje transakcję.
+
+## Przykład:
 
 * **Purchase Order (PO):**
   * Quantity: 200 units
-  * Unit Price: $50.00 per unit
+  * Cena jednostkowa: $50.00 za sztukę
   * Total Amount: $10,000.00
 * **Invoice Received:**
-  * Quantity: 220 units (outside tolerance of 10%, rejected)
-  * Unit Price: $55.00 per unit (outside tolerance of 10%, rejected)
+  * Ilość: 220 sztuk (poza tolerancją 10%, odrzucona)
+  * Cena jednostkowa: $55.00 za sztukę (poza tolerancją 10%, odrzucona)
   * Total Amount: $12,100.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Unit Price Tolerance: ±2%
+  * Tolerancja ceny jednostkowej: ±2%
 
-Since both the quantity (220 units) and unit price ($55.00) exceed the acceptable tolerance limits and neither has been approved, the system will:
+Ponieważ zarówno ilość (220 sztuk), jak i cena jednostkowa ($55.00) przekraczają dopuszczalne granice tolerancji i żadna z nich nie została zatwierdzona, system:
 
-1. **Reject the Excess Quantity:** The system does not accept the invoiced quantity of 220 units and adjusts it to match the original purchase order.
-   * Adjusted Quantity = 200 units (from PO)
-2. **Reject the Invoice Unit Price:** The system does not accept the invoiced unit price of $55.00 and adjusts it to match the original purchase order.
-   * Adjusted Unit Price = $50.00 per unit (from PO)
-3. **Recalculate the Total Amount:** The system calculates the total amount using the adjusted quantity and unit price:
-   * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
-   * **Corrected Total Amount = 200 units × $50.00 per unit = $10,000.00**
-4. **Process the Invoice:** The system processes the invoice with the corrected total amount of $10,000.00, rejecting the excess quantity and higher unit price.
+1. **Odrzuć nadwyżkę:** System nie akceptuje zafakturowanej ilości 220 sztuk i dostosowuje ją tak, aby odpowiadała pierwotnemu zamówieniu.
+   * Skorygowana ilość = 200 jednostek (od PO)
+2. **Odrzuć fakturowaną cenę jednostkową:** System nie akceptuje zafakturowanej ceny jednostkowej wynoszącej $55.00 i dostosowuje ją do pierwotnego zamówienia.
+   * Skorygowana cena jednostkowa = $50.00 za jednostkę (od PO)
+3. **Przelicz kwotę całkowitą:** System oblicza kwotę całkowitą na podstawie skorygowanej ilości i ceny jednostkowej:
+   * **Skorygowana kwota całkowita = skorygowana ilość × skorygowana cena jednostkowa**
+   * **Skorygowana kwota całkowita = 200 sztuk × $50.00 za jednostkę = $10,000.00**
+4. **Przetwórz fakturę:** System przetwarza fakturę ze skorygowaną kwotą całkowitą $10,000.00, odrzucając nadmierną ilość i wyższą cenę jednostkową.
 
-This approach ensures that the transaction aligns with the original terms of the purchase order, maintaining consistent pricing and quantity controls while rejecting unapproved variances.
+Takie podejście gwarantuje, że transakcja jest zgodna z pierwotnymi warunkami zamówienia, zachowując spójną kontrolę cen i ilości, jednocześnie odrzucając niezatwierdzone odchylenia.

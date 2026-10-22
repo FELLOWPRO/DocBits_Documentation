@@ -5,7 +5,7 @@
 
 **Wyszukiwanie danych podstawowych** (pasek boczny: **Lookup Master Data**) umożliwia przeglądanie danych podstawowych, których DocBits używa do walidacji danych wyodrębnionych z dokumentów względem systemu ERP, oraz zarządzanie nimi. Jest to niezbędne do precyzyjnego PO matchingu, walidacji dostawców i automatycznego uzupełniania pól. Otwórz tę stronę z poziomu **Ustawienia → Przetwarzanie dokumentów → Lookup Master Data**.
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_overview.png" alt="Wyszukiwanie danych podstawowych"><figcaption><p>Strona Wyszukiwanie danych podstawowych – źródła danych i tabela danych</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-overview-pl.png" alt="Wyszukiwanie danych podstawowych: źródła i tabela dostawców z ukrytymi wartościami."><figcaption><p>Wyszukiwanie danych podstawowych: źródła i tabela dostawców z ukrytymi wartościami.</p></figcaption></figure>
 
 ## Źródła danych
 
@@ -33,16 +33,16 @@ Tabele Dostawca i Zamówienie zakupu zawierają kolumny takie jak ID dostawcy, N
 
 Kliknij **Settings** (ikona koła zębatego) w lewym dolnym rogu panelu źródeł danych, aby otworzyć ustawienia danych podstawowych.
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_settings.png" alt="Ustawienia Wyszukiwania danych podstawowych"><figcaption><p>Ustawienia Supplier BOD i usuwania zamówień zakupu</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-settings-pl.png" alt="Ustawienia synchronizacji dostawców i okresu przechowywania zamówień zakupu."><figcaption><p>Ustawienia synchronizacji dostawców i okresu przechowywania zamówień zakupu.</p></figcaption></figure>
 
-### Supplier BOD
+### BOD dostawcy
 
-**Allow Multiple Supplier Accounts Sync**
+**Zezwalaj na synchronizację wielu kont dostawców**
 
 * **Włączone**: pojedynczy dostawca może mieć wiele elementów `<FinancialParty>` w BOD (często z powodu wielu numerów IBAN lub kont finansowych). Wszystkie wpisy `<FinancialParty>` są wyodrębniane i zapisywane w tabeli dostawców, dzięki czemu można przechowywać wiele atrybutów finansowych.
 * **Wyłączone**: wyodrębniany jest tylko ostatni znaleziony dla dostawcy element `<FinancialParty>`. Wcześniejsze atrybuty finansowe (na przykład dodatkowe numery IBAN) są ignorowane i zapisywane są tylko dane z ostatniego wystąpienia.
 
-### Purchase Order Deletion Assistant
+### Asystent usuwania zamówień zakupu
 
 **Delete Purchase Order After** – wybierz, kiedy zamknięte zamówienia zakupu mają zostać usunięte. Po wybranym okresie rekordy są usuwane automatycznie.
 

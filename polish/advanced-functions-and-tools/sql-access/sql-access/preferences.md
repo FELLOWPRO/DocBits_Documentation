@@ -1,4 +1,4 @@
-# Preferences
+# Preferencje
 
 ## Kolumny
 
@@ -7,9 +7,9 @@
 * `pref_key`: internal
 * `pref_value`: text
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `deleted_on`: timestamp with time zone
+* `created_on`: znacznik czasu ze strefą czasową
+* `last_modified_on`: znacznik czasu ze strefą czasową
+* `deleted_on`: znacznik czasu ze strefą czasową
 * `is_deleted`: boolean
 * `user_id`: integer
 * `sub_org_id`: internal

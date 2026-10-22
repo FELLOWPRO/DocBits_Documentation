@@ -1,7 +1,7 @@
 # Aktywacja uprawnień
 
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
-DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
+DocBits Poradnik dotyczący grup i uprawnień: ustawianie ról użytkowników, praw dostępu i zabezpieczanie przestrzeni roboczej
 {% endembed %}
 
 Włączenie lub wyłączenie systemu uprawnień za pomocą przełącznika ma różne skutki dla funkcjonalności w DocBits.
@@ -16,7 +16,7 @@ Włączenie lub wyłączenie systemu uprawnień za pomocą przełącznika ma ró
 
 <figure><img src="../../../../../.gitbook/assets/prior-u004-pl.png" alt="Macierz uprawnień według typu dokumentu i działania. Poziomy Owner, Everyone i No Access pozostają w języku angielskim."><figcaption><p>Macierz uprawnień według typu dokumentu i działania. Poziomy Owner, Everyone i No Access pozostają w języku angielskim.</p></figcaption></figure>
 
-## Only Assigned Documents
+## Tylko przypisane dokumenty
 
 <figure><img src="../../../../../.gitbook/assets/prior-u008-pl.png" alt="Poziomy dostępu dla działań w macierzy uprawnień. Poziomy Owner, Everyone i No Access pozostają w języku angielskim."><figcaption><p>Poziomy dostępu dla działań w macierzy uprawnień. Poziomy Owner, Everyone i No Access pozostają w języku angielskim.</p></figcaption></figure>
 

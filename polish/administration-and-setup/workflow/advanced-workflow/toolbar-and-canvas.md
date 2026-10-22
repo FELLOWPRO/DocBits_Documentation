@@ -76,7 +76,7 @@ Pasek narzędzi Zaawansowanego Workflow biegnie wzdłuż dolnej krawędzi kanwy 
 - **Undo / Redo** — cofa lub przywraca Twoje zmiany.
 - **Zoom in / Zoom out** — zmienia poziom powiększenia kanwy.
 - **Workflow name** — nadaje nazwę workflow w miejscu.
-- **Edit description** — dodaje opis workflow.
+- **Edytuj opis** — dodanie opisu przepływu pracy.
 - **Variables** — otwiera panel [Zmiennych](variables.md).
 - **Help** — otwiera okno skrótów klawiszowych i pomocy.
 - **Validate / Test** — sprawdza i uruchamia przepływ (zobacz [Walidacja i Testowanie](validation-and-testing.md)).

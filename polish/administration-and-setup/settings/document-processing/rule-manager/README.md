@@ -80,11 +80,11 @@ Operatory te określają, w jaki sposób rzeczywiste wartości z faktury są por
 
 • greater than
 
-• greater than or equal to
+• większy lub równy
 
 • less than
 
-• less than or equal to
+• mniejszy lub równy
 
 • within tolerance
 
@@ -114,23 +114,23 @@ Określa konkretne działania podejmowane po wykryciu rozbieżności:
 
 • tax line
 
-• debit note receipt line
+• linia otrzymania noty debetowej
 
-• debit note cost line
+• linia kosztowa noty debetowej
 
-• debit note header charge
+• opłata za nagłówek noty debetowej
 
-• debit note line charge
+• opłata za linię noty debetowej
 
-• credit note receipt line
+• linia otrzymania noty kredytowej
 
-• credit note cost line
+• linia kosztowa noty kredytowej
 
-• credit note header charge
+• opłata za nagłówek noty kredytowej
 
-• credit note line charge
+• opłata za linię noty kredytowej
 
-• credit note tax line
+• Linia podatkowa dotycząca not kredytowych
 
 ### Przykłady reguł
 

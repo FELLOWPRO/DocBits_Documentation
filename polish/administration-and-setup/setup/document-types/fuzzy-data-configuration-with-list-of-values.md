@@ -10,7 +10,7 @@ Każdy typ dokumentu ma własne konfiguracje listy wartości (List of Values, Lo
 
 ### Aby skonfigurować listę wartości, przejdź do:
 
-Settings → Global Settings → Document Types → Invoice → Fields → Master Data Settings → LOV Master Data
+Ustawienia → Ustawienia globalne → Typy dokumentów → Faktura → Pola → Ustawienia danych podstawowych → LOV Dane podstawowe
 
 ### **Tworzenie nowej konfiguracji listy wartości**
 

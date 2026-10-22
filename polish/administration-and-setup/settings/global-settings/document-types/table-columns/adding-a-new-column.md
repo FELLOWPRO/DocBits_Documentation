@@ -13,7 +13,7 @@ Dodaj kolumnę, gdy dla każdej pozycji trzeba zapisać wartość, której nie o
 1. Otwórz **Settings → Global Settings → Document Types → Table Columns**.
 2. Kliknij **Add new table column**.
 
-<figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="Okno Add new table column z polami Title, Is column required, Select column type i Select Table"><figcaption><p>Add new table column</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="Okno Add new table column z polami Title, Is column required, Select column type i Select Table"><figcaption><p>Dodaj nową kolumnę tabeli</p></figcaption></figure>
 
 3. Wypełnij okno:
 

@@ -44,8 +44,8 @@ La carte de workflow « DocField Comparison Validation » est un outil robuste p
 
 **Quand utiliser :** Examinez les factures supérieures à un montant défini.
 
-**Configuration :** Sélectionnez le champ numérique `net_total`, l'opérateur `>` et la valeur de référence `1000`.
+**Configuration :** Sélectionnez le champ numérique `total_amount`, l'opérateur `>` et la valeur de référence `1000`.
 
-**Résultat attendu et contre-exemple :** Une valeur de `1200` est réussie. `1000` et `900` échouent car la comparaison est strictement supérieure à.
+**Résultat attendu et contre-exemple :** Une valeur de `1200` satisfait la condition. Les valeurs `1000` et `900` ne la satisfont pas : l’opérateur `>` exige une valeur strictement supérieure à `1000`.
 
 Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.

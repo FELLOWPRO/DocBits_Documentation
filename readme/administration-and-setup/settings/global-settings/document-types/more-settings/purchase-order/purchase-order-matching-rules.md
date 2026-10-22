@@ -1,5 +1,13 @@
 # Regole di Corrispondenza degli Ordini di Acquisto
 
+## Configurare regole di abbinamento e tolleranze
+
+Il percorso apre il tipo di documento fattura, controlla la versione pubblicata e crea un clone come bozza inattiva. Spiega tipi di regola, priorità nella fase di abbinamento, colonne, quantità di riferimento, modalità e calcoli delle tolleranze. Viene salvata solo la bozza del tutorial; versione attiva e tolleranze globali restano invariate. Il calcolo al cinque per cento è un esempio e non cambia la tolleranza attiva.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/it.mp4" %}
+
+[Guarda il video con i sottotitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/it.html)
+
 ## Introduzione: Ordini di Acquisto e Gestione delle Regole PO
 
 La corrispondenza degli Ordini di Acquisto (PO) è un processo critico per garantire la coerenza tra gli Ordini di Acquisto (PO) e le corrispondenti fatture in entrata o ricevute di merci. Un insieme solido di regole è essenziale per ottenere un alto tasso di corrispondenza automatica, prevenire frodi e garantire pagamenti corretti.

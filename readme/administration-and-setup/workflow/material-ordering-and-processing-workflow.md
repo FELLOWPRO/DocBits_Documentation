@@ -46,4 +46,4 @@ Dit document beschrijft de workflow voor het bestellen van materialen bij levera
 * Zorg ervoor dat alle documenten geverifieerd en gearchiveerd zijn voor de administratie.
 * Afwijkingen in bestel- of factuurgegevens moeten direct worden opgelost om vertragingen te voorkomen.
 
-<figure><img src="../../../.gitbook/assets/docbits_material_workflow.svg" alt="DocBits Materiaal Workflow"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-material-nl.png" alt="Voorbeeldstroom voor materiaalbestellingen, orderbevestigingen, goederenontvangst en facturen tussen leverancier, inkoop, IDM, DocBits en boekhouding. Stem de controles en koppelingen af op de eigen configuratie."><figcaption><p>Voorbeeldstroom voor materiaalbestellingen, orderbevestigingen, goederenontvangst en facturen tussen leverancier, inkoop, IDM, DocBits en boekhouding. Stem de controles en koppelingen af op de eigen configuratie.</p></figcaption></figure>

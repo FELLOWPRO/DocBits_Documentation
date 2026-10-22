@@ -1,6 +1,6 @@
 # Standaardworkflow
 
-<figure><img src="../../../../.gitbook/assets/docbits_standard_workflow_diagram_2.svg" alt="DocBits Standaardworkflow Diagram 2"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-standard-nl.png" alt="Voorbeeld van een factuurworkflow met en zonder inkooporder. De goedkeuringsroutes, de termijn van twee dagen en de ERP-koppeling zijn onderdelen van dit voorbeeld en moeten passen bij de eigen configuratie."><figcaption><p>Voorbeeld van een factuurworkflow met en zonder inkooporder. De goedkeuringsroutes, de termijn van twee dagen en de ERP-koppeling zijn onderdelen van dit voorbeeld en moeten passen bij de eigen configuratie.</p></figcaption></figure>
 
 #### Overzicht van de workflowcomponenten:
 

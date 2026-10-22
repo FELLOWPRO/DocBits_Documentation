@@ -48,7 +48,7 @@ De workflow-kaart **"Change Status"** biedt een gestroomlijnde benadering voor h
 
 **Waar:** Standaard workflowontwerper → Dan → Status → Wijzig status naar.
 
-**Instellen:** Kies versie 3 van `staus_change`, de status Wacht op goedkeuring (`validated_pending_approval`) en zet het starten van andere workflows op `false` (`trigger_docflow=false`). Gebruik een geïsoleerde synthetische factuur die aan de voorafgaande controles voldoet.
+**Instellen:** Kies versie 3 van `staus_change`, de status In afwachting van goedkeuring (`validated_pending_approval`) en zet het starten van andere workflows op `false` (`trigger_docflow=false`). Gebruik een geïsoleerde synthetische factuur die aan de voorafgaande controles voldoet.
 
 **Verwachte uitkomst en tegenvoorbeeld:** Een toegestane, geslaagde wijziging zet het document op de gekozen status. Als een eerdere voorwaarde onwaar is, wordt deze actie niet bereikt en wijzigt zij geen status. Een geweigerde of mislukte API-wijziging is geen succes: controleer de werkelijke status en logboeken. De kaart voert zelf geen export uit.
 

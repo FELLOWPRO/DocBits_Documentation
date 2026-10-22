@@ -33,9 +33,9 @@ GROUP BY
 
 Los siguientes resultados muestran el número de documentos por estado y tipo de factura:
 
-* **Ready for Validation:** 71 facturas, 6 sin especificar
-* **Pending Confirmation:** 1 sin especificar
-* **Finished:** 3 sin especificar, 1 factura
+* **Listo para validación:** 71 facturas, 6 sin especificar
+* **Pendiente de Confirmación:** 1 sin especificar
+* **Terminado:** 3 sin especificar, 1 factura
 * **Error:** 2 sin especificar
 
 #### Uso de clickhouse-client para el acceso desde la terminal

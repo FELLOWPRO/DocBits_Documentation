@@ -59,7 +59,7 @@ En la sección **Formato de importes** tienes dos opciones:
 {% hint style="info" %}
 **Requisitos para que la extracción de tablas funcione**
 
-* El tipo de documento tiene **columnas de tabla** (Configuración → Configuración global → Tipos de documentos → [Columnas de tabla](../../global-settings/document-types/table-columns.md)). Sin columnas no hay dónde extraer.
+* El tipo de documento tiene **columnas de tabla** (Configuración → Configuración global → Tipos de documentos → [Columnas de tabla](../../global-settings/document-types/table-columns/README.md)). Sin columnas no hay dónde extraer.
 * **Extracción de tablas** o **Extracción de tablas por IA** está activada más abajo, para toda la organización.
 * El documento tiene texto legible: se ejecutó el OCR, o se usa E-Text en los PDF generados digitalmente ([Configuración de OCR](../ocr-settings.md)).
 * El entrenamiento y los modelos de IA son **por proveedor**. Una tabla entrenada solo se aplica a los documentos del proveedor con el que se entrenó.

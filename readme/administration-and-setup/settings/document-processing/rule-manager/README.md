@@ -116,23 +116,23 @@ Define las acciones específicas que deben realizarse cuando se detecta una disc
 
 • tax line
 
-• debit note receipt line
+• línea de recepción de nota de débito
 
-• debit note cost line
+• línea de costo de la nota de débito
 
-• debit note header charge
+• recargo de cabecera de nota de débito
 
-• debit note line charge
+• cargo por línea de nota de débito
 
-• credit note receipt line
+• línea de recepción de nota de crédito
 
-• credit note cost line
+• línea de costo de la nota de crédito
 
-• credit note header charge
+• recargo de cabecera de nota de crédito
 
-• credit note line charge
+• cargo por línea de nota de crédito
 
-• credit note tax line
+• línea de impuestos de nota de crédito
 
 
 ### Ejemplos de reglas

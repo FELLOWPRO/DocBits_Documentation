@@ -1,10 +1,10 @@
-# Cache Management
+# Gestión de caché
 
 <figure><img src="../../.gitbook/assets/cache_management.png" alt="Cache Management"><figcaption><p>Página Cache Management</p></figcaption></figure>
 
 Cache Management controla la limpieza automática de la caché de los datos a los que se accede con frecuencia. Activar el almacenamiento en caché mejora el rendimiento al reducir las llamadas repetidas a la API.
 
-## Clear Cache
+## Vaciar caché
 
 Haga clic en el botón **Clear Cache** (arriba a la derecha) para invalidar manualmente y de inmediato todos los datos almacenados en caché.
 

@@ -38,5 +38,5 @@ El script o el mapeo de exportación sigue haciendo referencia al *Column name* 
 
 ## Dónde buscar más
 
-* [Table Extraction Troubleshoot](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md): calidad de extracción, OCR, E-Text
-* [Training Line Fields / Table Training](../../../../setup/document-training/training-line-fields-table-training/README.md)
+* [Solución de problemas de extracción de tablas](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md): calidad de extracción, OCR, E-Text
+* [Campos de línea de entrenamiento / Entrenamiento de tabla](../../../../setup/document-training/training-line-fields-table-training/README.md)

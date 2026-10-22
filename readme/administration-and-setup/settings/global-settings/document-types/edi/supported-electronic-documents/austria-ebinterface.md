@@ -26,7 +26,7 @@ ebInterface es el estándar austriaco de facturación electrónica mantenido por
 | Transformación | ✅ Compatible |
 
 ## Vista previa predeterminada
-<figure><img src="austria-ebinterface-preview.png" alt="Vista previa de factura Austria ebInterface en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una factura AUSTRIA EBINTERFACE</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Vista previa de factura Austria ebInterface en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una factura AUSTRIA EBINTERFACE</p></figcaption></figure>
 
 ## Asignación de campos
 ### Campos de encabezado

@@ -1,2 +1,2 @@
-# Partner Section
+# Sección de socios
 

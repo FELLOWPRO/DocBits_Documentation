@@ -5,12 +5,12 @@
 1. Vaya a la página de inicio de sesión de su aplicación.
 2. Introduzca sus credenciales (nombre de usuario y contraseña) para iniciar sesión.
 
-### **2. Acceda a Settings** <a href="#id-2.-access-the-settings" id="id-2.-access-the-settings"></a>
+### **2. Acceda a Configuración** <a href="#id-2.-access-the-settings" id="id-2.-access-the-settings"></a>
 
 1. Una vez iniciada la sesión, localice el icono de **Settings** (engranaje ⚙️) en la barra lateral izquierda.
 2. Haga clic en **Settings** para abrir el panel de configuración del sistema.
 
-### **3. Abra el módulo Document Processing** <a href="#id-3.-open-the-document-processing-module" id="id-3.-open-the-document-processing-module"></a>
+### **3. Abra el módulo Procesamiento de documentos** <a href="#id-3.-open-the-document-processing-module" id="id-3.-open-the-document-processing-module"></a>
 
 1. En **Settings**, localice la sección **Document Processing**.
 2. Dentro de **Document Processing**, busque y haga clic en la opción **Module**.

@@ -2,11 +2,11 @@
 description: Cómo importar datos maestros directamente en DocBits.
 ---
 
-# Custom Master Data
+# Datos maestros personalizados
 
 #### Activar Custom Master Data <a href="#activating-custom-master-data" id="activating-custom-master-data"></a>
 
-Desde el Dashboard, navegue a Settings → Document Processing → Module.
+Desde el Panel de control, navegue a Configuración → Procesamiento de documentos → Módulo.
 
 ![](<../../.gitbook/assets/DocBits_CMD_1 (1).png>)
 

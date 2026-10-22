@@ -43,7 +43,7 @@ WatchDog.exe start
 
 Todas las configuraciones de importación y exportación se crean directamente en la **aplicación DocBits**:
 
-**Settings → Document Processing → WatchDog → Configurations Tab**
+**Configuración → Procesamiento de documentos → WatchDog → Pestaña Configuraciones**
 
 * **Import Configurations** — definen las carpetas vigiladas y los tipos de documento
 * **Export Configurations** — definen los destinos de exportación, las plantillas XSLT y los métodos de exportación

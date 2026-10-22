@@ -1,4 +1,4 @@
-# Lookup table
+# Tabla de búsqueda
 
 ## Tabla `public.lookup_table`
 
@@ -11,12 +11,12 @@
 * `prop_name`: interno
 * `prop_value`: interno
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: marca de tiempo con zona horaria
+* `last_modified_on`: marca de tiempo con zona horaria
 * `is_deleted`: boolean
 * `prop_value_clean`: interno
 * `version`: integer
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: marca de tiempo con zona horaria
 * `sub_org_id`: interno
 
 ### Análisis y descripción

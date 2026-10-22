@@ -2,7 +2,7 @@
 
 ## **Paso 1: Crear una nueva exportación**
 
-1. Vaya a **Settings** > **Document Processing** > **Export**.
+1. Vaya a **Configuración** > **Procesamiento de documentos** > **Exportar**.
 2. Haga clic en **Create New Export** para definir una nueva configuración de exportación.
 3. Guarde la configuración y asegúrese de que la exportación esté **desactivada**.
 
@@ -10,7 +10,7 @@
 
 ### **Paso 2: Activar la exportación alternativa**
 
-1. Vaya a **Settings** > **Global Settings** > **Document Type** > **More Settings**.
+1. Vaya a **Configuración** > **Configuración global** > **Tipo de documento** > **Más configuraciones**.
 2. Localice el ajuste **Alternate Export** y actívelo.
 3. Configure lo siguiente:
    * **Document Status**: especifique el estado de los documentos después de la exportación alternativa.

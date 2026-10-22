@@ -180,7 +180,7 @@ WatchDog envía un heartbeat a DocBits aproximadamente cada 10 segundos con info
 ### Problema: WatchDog no importa archivos
 
 1. Compruebe si el servicio se está ejecutando: `services.msc` → WatchDog
-2. Revise los registros: Settings → WatchDog → Logs Tab
+2. Revisar los registros: Configuración → WatchDog → Pestaña Registros
 3. Revise los permisos de carpeta de la cuenta de servicio de WatchDog
 4. Pruebe la conexión con la API: `WatchDog.exe debug` en CMD
 5. Verifique que el tipo de archivo sea PDF

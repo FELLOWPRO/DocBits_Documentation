@@ -58,7 +58,7 @@ A partir de ese momento, la tarjeta del tipo de documento también muestra un en
 
 Cada tarjeta muestra el nombre y la descripción de la regla, y las insignias de su **nivel** (Header / Line / Table), **gravedad** (Error / Warning), el **campo** al que se asocia el error y su **origen**. Utilice el interruptor de la derecha para activar o desactivar una regla, y el menú **⋮** para duplicarla o eliminarla. Filtre la lista por nivel (**All / Header / Line / Table**) y por estado (**All / Active / Inactive**), o búsquela.
 
-### Reglas System default, Customized y Custom
+### Sistema de Reglas por defecto, Personalizadas y Personalizadas
 
 | Origen | Qué es | Qué puede hacer |
 | --- | --- | --- |
@@ -108,7 +108,7 @@ En las reglas de línea de tabla, la condición también puede utilizar las colu
 
 Las condiciones se explican en detalle (cada campo, operador y regla de comparación, con muchos ejemplos) en [Rule Conditions (Applies when)](rule-conditions-applies-when.md).
 
-### Paso 3 — Check: what must be true
+### Paso 3 — Verificar: lo que debe ser cierto
 
 Elija una comprobación. Los ajustes situados debajo de las tarjetas cambian según la comprobación elegida.
 
@@ -122,7 +122,7 @@ Falla cuando el campo está vacío (ausente o solo con espacios). Sin más ajust
 
 Úsela junto con **Se aplica cuando** para que un campo sea obligatorio **de forma condicional**. Un campo que siempre debe estar rellenado se configura mejor como campo obligatorio en los ajustes de campos.
 
-> *Supplier Tax ID is required* — se aplica cuando *Document Origin is Deutsch* y *Total Amount greater than 250*.
+> *Se requiere Impuesto de Proveedor ID* — se aplica cuando *El Origen del Documento es Deutsch* y *Monto Total mayor a 250*.
 
 #### Formula — los importes deben cuadrar
 
@@ -177,7 +177,7 @@ Compara el valor de un campo con otro campo, con **hoy** o con un valor fijo, me
 * Invoice Date **igual o anterior a (≤)** hoy: sin facturas con fecha futura
 * Discount **menor que** 100
 
-#### Allowed values — de una lista fija
+#### Valores permitidos — de una lista fija
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-allowed.png" alt="Una comprobación Allowed values"><figcaption><p>Allowed values: un valor por línea, opcionalmente sin distinguir mayúsculas</p></figcaption></figure>
 
@@ -198,7 +198,7 @@ Salvo **Obligatorio**, todas las comprobaciones **se superan cuando el valor est
 * **Mensaje de error mostrado al usuario que procesa el mensaje.**: el texto de la pantalla de validación. Indique qué está mal **y** qué hacer: “Supplier tax ID is missing. German invoices over 250 EUR must show it.”
 * **Código de error**: un código técnico corto, por ejemplo `REQUIRED_CONDITIONAL`, `FORMAT_MISMATCH`, `OUT_OF_RANGE`, `DATE_ORDER`, `LINES_HEADER_MISMATCH`, `VALUE_NOT_ALLOWED`. Aparece en las exportaciones y permite agrupar errores.
 
-## Test rule
+## Probar regla
 
 Haga clic en **Regla de prueba** para ejecutar la versión actual de la regla, guardada o no, contra un documento. Introduzca un **ID del documento** o cambie a **Por documento JSON** y pegue datos extraídos. **No se guarda nada** y el documento no se modifica.
 
@@ -248,19 +248,19 @@ Table line · Error · tabla `INVOICE_TABLE`, columna `QUANTITY` · Applies when
 Table line · Warning · columna `NET_AMOUNT` · siempre · **Fórmula** `row.NET_AMOUNT == row.QUANTITY * row.UNIT_PRICE`, tolerancia `0.01`.
 
 **6. Formato del número de factura de un proveedor**
-Header field · Error · *Invoice Number* · Applies when *Supplier ID* is *20723* · **Patrón** `^INV-\d{6}$`.
+Campo de encabezado · Error · *Número de factura* · Aplica cuando *Proveedor ID* es *20723* · **Patrón** `^INV-\d{6}$`.
 
 **7. La fecha de vencimiento no es anterior a la fecha de la factura**
 Header field · Error · *Due Date* · siempre · **Comparar campos** Due Date *on or after (≥)* Invoice Date · Código `DATE_ORDER`.
 
 **8. Sin facturas con fecha futura**
-Header field · Error · *Invoice Date* · siempre · **Comparar campos** Invoice Date *on or before (≤)* today.
+Campo de encabezado · Error · *Fecha de factura* · siempre · **Comparar campos** Fecha de factura *en o antes (≤)* hoy.
 
 **9. Solo monedas aprobadas (solo aviso)**
 Header field · **Advertencia** · *Currency* · siempre · **Lista de valores** *approved_currencies* · Código `VALUE_NOT_ALLOWED`.
 
 **10. Pedido de compra obligatorio a partir de 5.000**
-Header field · Error · *Purchase Order* · Applies when *Total Amount* greater than *5000* · **Obligatorio**.
+Campo de encabezado · Error · *Orden de Compra* · Aplica cuando *Monto Total* mayor a *5000* · **Obligatorio**.
 
 ## Buenas prácticas
 
@@ -288,4 +288,4 @@ Header field · Error · *Purchase Order* · Applies when *Total Amount* greater
 * [Rule Conditions (Applies when)](rule-conditions-applies-when.md) — las condiciones en profundidad
 * [Transformation Rules](transformation-rules.md) — corrija los valores antes de que se validen
 * [Layout Selection Rules](layout-manager/layout-selection-rules.md) — elija el diseño que utiliza un documento
-* [Setting Validation and Match Score](fields/setting-validation-and-match-score.md) — ajustes de validación por campo
+* [Validación de configuración y puntuación de coincidencia](fields/setting-validation-and-match-score.md) — ajustes de validación por campo

@@ -35,14 +35,14 @@ Haga clic en **Settings** (icono de engranaje) en la parte inferior izquierda de
 
 <figure><img src="../../../.gitbook/assets/master_data_lookup_settings.png" alt="Configuración de la Búsqueda de datos maestros"><figcaption><p>Configuración de Supplier BOD y eliminación de órdenes de compra</p></figcaption></figure>
 
-### Supplier BOD
+### BOD de proveedor
 
-**Allow Multiple Supplier Accounts Sync**
+**Permitir sincronización de cuentas de múltiples proveedores**
 
 * **Activado**: un único proveedor puede tener varios elementos `<FinancialParty>` en el BOD (a menudo debido a varios IBAN o cuentas financieras). Todas las entradas `<FinancialParty>` se extraen y se guardan en la tabla de proveedores, de modo que se pueden almacenar varios atributos financieros.
 * **Desactivado**: solo se extrae el último elemento `<FinancialParty>` encontrado para el proveedor. Los atributos financieros anteriores (por ejemplo, IBAN adicionales) se ignoran y solo se guardan los datos de la última aparición.
 
-### Purchase Order Deletion Assistant
+### Asistente de eliminación de órdenes de compra
 
 **Delete Purchase Order After**: elija cuándo deben eliminarse las órdenes de compra cerradas. Tras el período seleccionado, los registros se eliminan automáticamente.
 

@@ -1,4 +1,4 @@
-# Batch instance
+# Instancia de lote
 
 ## Tabla `public.batch_instance`
 
@@ -7,8 +7,8 @@
 * `id`: interno
 * `org_id`: ID de la organización
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: marca de tiempo con zona horaria
+* `last_modified_on`: marca de tiempo con zona horaria
 * `is_deleted`: boolean
 
 ### Análisis y descripción

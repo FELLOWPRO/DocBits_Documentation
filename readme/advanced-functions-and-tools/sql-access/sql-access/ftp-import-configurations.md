@@ -1,4 +1,4 @@
-# FTP Import Configurations
+# Configuraciones de importación FTP
 
 ## Columnas
 
@@ -10,10 +10,10 @@
 * `password`: interno
 * `is_active`: boolean
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: marca de tiempo con zona horaria
+* `last_modified_on`: marca de tiempo con zona horaria
 * `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: marca de tiempo con zona horaria
 * `port`: integer
 * `default_directory`: interno
 * `ftp_type`: interno

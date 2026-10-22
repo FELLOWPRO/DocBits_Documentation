@@ -2,7 +2,7 @@
 description: DocBits Workflow Engine
 ---
 
-# Workflow
+# Flujo de trabajo
 
 <figure><img src="../../.gitbook/assets/docbits_workflow_3.png" alt="DocBits Flujo de trabajo 3"><figcaption></figcaption></figure>
 

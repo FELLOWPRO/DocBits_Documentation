@@ -2,7 +2,7 @@
 
 Todo excepto el título se cambia directamente en la lista; no hay cuadro de diálogo de edición.
 
-**Dónde:** Settings → Global Settings → Document Types → Table Columns
+**Dónde:** Configuración → Configuración global → Tipos de documento → Columnas de tabla
 
 ## Cambiar un indicador
 

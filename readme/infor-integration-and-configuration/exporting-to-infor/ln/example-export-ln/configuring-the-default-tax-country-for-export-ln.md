@@ -13,7 +13,7 @@ El país fiscal (Tax Country) predeterminado para la exportación es **DE (Alema
 
 #### 1. Obtener el archivo de asignación
 
-* Navegue a **DocBits → Settings → Document Processing → Export**.
+* Navegue a **DocBits → Configuración → Procesamiento de documentos → Exportar**.
 * Abra la configuración de exportación que desea modificar.
 *   Haga clic en **Download** para obtener el archivo de asignación.\\
 

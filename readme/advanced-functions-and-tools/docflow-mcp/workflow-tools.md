@@ -1,4 +1,4 @@
-# Workflow Tools
+# Herramientas de flujo de trabajo
 
 DocFlow MCP expone herramientas para gestionar y probar flujos de trabajo avanzados, además de herramientas para leer los registros de los flujos de trabajo y gestionar las variables de flujo de trabajo.
 
@@ -6,7 +6,9 @@ DocFlow MCP expone herramientas para gestionar y probar flujos de trabajo avanza
 **Nombres de las herramientas a través de la pasarela DocBits MCP.** Cuando se conecta a través del DocBits MCP unificado (`api.docbits.com/v3/mcp`), todas las herramientas de DocFlow llevan el prefijo `docflow_`: `list_workflows` se llama `docflow_list_workflows`, `run_workflow_with_assertions` es `docflow_run_workflow_with_assertions`. Los parámetros son idénticos. Los nombres que figuran a continuación son los nombres de DocFlow sin prefijo.
 
 Los flujos de trabajo se **crean y editan en el diseñador de DocFlow** de la aplicación web. El MCP los lee, los prueba, los ejecuta y los elimina; no crea ni modifica grafos de flujos de trabajo.
-{% endhint %} Las herramientas del Card SDK tienen su propia página, consulte [Card SDK Tools](card-sdk-tools.md).
+{% endhint %}
+
+Las herramientas del Card SDK tienen su propia página, consulte [Card SDK Tools](card-sdk-tools.md).
 
 ## list\_workflows
 

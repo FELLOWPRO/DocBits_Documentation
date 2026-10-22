@@ -10,18 +10,18 @@ Touchless Intelligence le muestra **por qué** falló una coincidencia con la OC
 
 | Dónde | Qué ve |
 | --- | --- |
-| **Where touchless is lost first** (pestaña de resumen) | Una barra como *PO line match: PO item mismatch*. Le indica cuántos documentos se detuvieron ahí |
+| **Donde el touchless se pierde primero** (pestaña de resumen) | Una barra como *PO line match: PO item mismatch*. Le indica cuántos documentos se detuvieron ahí |
 | **Supplier opportunities** | Un proveedor con la causa raíz **PO matching** |
 | **Supplier Diagnosis**, sección **How this organisation matches** y el **issue cluster** | El flujo de decisión con el conjunto de reglas de su organización |
 | **Document Trace** | La etapa **PO Line Match** con el estado **blocked** y el motivo |
-| **Settings → Document Types → More Settings → Purchase Order** | Las reglas de coincidencia en sí. Véase [Reglas de Coincidencia de Órdenes de Compra](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) |
+| **Configuración → Tipos de documentos → Más configuraciones → Orden de compra** | Las reglas de coincidencia en sí. Véase [Reglas de Coincidencia de Órdenes de Compra](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) |
 
 ## Las dos etapas de la OC
 
 | Etapa | Pregunta | Se detiene con |
 | --- | --- | --- |
 | **9 · PO Lookup** | ¿Existe una orden de compra para esta factura? | *Purchase order not found* |
-| **10 · PO Line Match** | ¿Coincide cada línea de la factura con una línea de la OC? | *PO item mismatch*, *PO line identifier mismatch*, *Unit price outside PO tolerance*, *Quantity outside PO tolerance* |
+| **10 · PO Line Match** | ¿Coincide cada línea de la factura con una línea de la OC? | *PO no coincide el artículo*, *PO el identificador de línea no coincide*, *Precio unitario fuera de la tolerancia PO*, *Cantidad fuera de la tolerancia PO* |
 
 Un documento que se detiene en la etapa 9 o 10 aparece en la cola de proveedores con el primer bloqueo **PO matching**.
 
@@ -126,4 +126,4 @@ Después de que entrara en vigor una regla de transformación para la tabla de u
 * [Seguimiento del documento](touchless-document-trace.md)
 * [Propuestas de cambio e informes](touchless-change-proposals.md)
 * [Reglas de Coincidencia de Órdenes de Compra](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
-* [PO Matching Cards - Complete Guide](workflow/and/compare-with-purchase-order/po-matching-complete-guide.md)
+* [PO Tarjetas coincidentes - Guía completa](workflow/and/compare-with-purchase-order/po-matching-complete-guide.md)

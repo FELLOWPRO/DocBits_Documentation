@@ -1,4 +1,4 @@
-# Rule Conditions (Applies when)
+# Condiciones de la regla (se aplica cuando)
 
 ## Descripción general
 
@@ -8,9 +8,9 @@ El mismo constructor de condiciones se utiliza en las tres funciones de reglas:
 
 | Función | Etiqueta en el constructor | Cuando la condición es verdadera… | Cuando es falsa… | Cuando se deja vacía… |
 | --- | --- | --- | --- | --- |
-| [Custom Validation Rules](custom-validation-rules.md) | Paso 2 **Applies when** | se ejecuta la comprobación del paso 3 | la regla se omite: sin error ni advertencia | la comprobación se ejecuta en todos los documentos |
-| [Transformation Rules](transformation-rules.md) | Paso 2 **When it runs** → **Only when…** | el pipeline cambia el valor | el valor se deja como está | elija **Always**: la regla se ejecuta en todos los documentos |
-| [Layout Selection Rules](layout-manager/layout-selection-rules.md) | Paso 2 **Applies when** | el documento recibe el diseño de esta regla (gana la primera coincidencia) | DocBits prueba con la siguiente regla | la regla coincide con todos los documentos en su prioridad |
+| [Reglas de validación personalizadas](custom-validation-rules.md) | Paso 2 **Applies when** | se ejecuta la comprobación del paso 3 | la regla se omite: sin error ni advertencia | la comprobación se ejecuta en todos los documentos |
+| [Transformation Rules](transformation-rules.md) | Paso 2 **Cuando se ejecuta** → **Solo cuando…** | el pipeline cambia el valor | el valor se deja como está | elija **Always**: la regla se ejecuta en todos los documentos |
+| [Reglas de selección de diseño](layout-manager/layout-selection-rules.md) | Paso 2 **Applies when** | el documento recibe el diseño de esta regla (gana la primera coincidencia) | DocBits prueba con la siguiente regla | la regla coincide con todos los documentos en su prioridad |
 
 Apréndala una vez aquí y podrá usarla en todas partes.
 
@@ -85,7 +85,7 @@ Información que DocBits conoce sobre el propio documento, independiente de los 
 | --- | --- | --- | --- |
 | **Document Origin** | `doc.doc_origin` | `DE`, `AT`, `US` (mostrados como Deutsch, Austria, United States) | reglas y diseños específicos de cada país |
 | **Extraction Method** | `doc.extraction_method` | `ELECTRONIC_DOCUMENT`, `FELLOW_KV2`, `MANUAL` | tratar las facturas electrónicas (XRechnung, ZUGFeRD) de forma distinta de los PDF escaneados |
-| **Document Status** | `doc.status` | Ready for validation, Pending Approval, Pending second approval … | diseños por fase del flujo de trabajo, reglas que solo se aplican antes de la aprobación |
+| **Document Status** | `doc.status` | Listo para validación, Pendiente de aprobación, Pendiente de segunda aprobación… | diseños por fase del flujo de trabajo, reglas que solo se aplican antes de la aprobación |
 | **Sub Document Type** | `doc.sub_doc_type` | sus subtipos, p. ej., abono | reglas para un solo subtipo |
 
 ### Campos de cabecera (`header.`)
@@ -119,7 +119,7 @@ Utilice las rutas JSON con moderación. Dependen de la estructura interna de los
 
 ### Dónde se puede usar cada tipo de campo
 
-| | Validation: Header field | Validation: Table line | Validation: Whole table | Transformation: Header / Routing / Table rows | Transformation: Table column | Layout selection |
+| | Validation: Header field | Validation: Table line | Validation: Whole table | Transformación: encabezado/enrutamiento/filas de tabla | Transformation: Table column | Layout selection |
 | --- | --- | --- | --- | --- | --- | --- |
 | Atributos del documento `doc.` | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Campos de cabecera `header.` | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -142,7 +142,7 @@ Utilice las rutas JSON con moderación. Dependen de la estructura interna de los
 | **is empty** | el campo no tiene valor (ausente o solo espacios) | – | Purchase Order **is empty** |
 | **is not empty** | el campo tiene un valor | – | Purchase Order **is not empty** |
 | **greater than** / **less than** | el campo es un número superior / inferior al valor | número | Total Amount **greater than** `10000` |
-| **greater or equal** / **less or equal** | lo mismo, incluido el propio valor | número | Total Amount **less or equal** `250` |
+| **mayor o igual** / **menor o igual** | lo mismo, incluido el propio valor | número | Total Amount **less or equal** `250` |
 
 ### Qué operadores ofrece un campo
 
@@ -151,10 +151,10 @@ La lista se adapta al tipo del campo:
 | Tipo de campo | Operadores |
 | --- | --- |
 | Texto | todos los operadores |
-| Número e importe (Total Amount, Quantity …) | is, is not, greater than, less than, greater or equal, less or equal, is empty, is not empty |
-| Campos con una lista fija (Document Origin, Status, Currency …) | is, is not, is one of, is empty, is not empty |
-| Fecha (Invoice Date, Due Date …) | is, is not, is empty, is not empty |
-| Sí/No | is, is not, is empty, is not empty |
+| Número e importe (Total Amount, Quantity …) | es, no es, mayor que, menor que, mayor o igual, menor o igual, está vacío, no está vacío |
+| Campos con una lista fija (Document Origin, Status, Currency …) | es, no es, es uno de, está vacío, no está vacío |
+| Fecha (Invoice Date, Due Date …) | está, no está, está vacío, no está vacío |
+| Sí/No | está, no está, está vacío, no está vacío |
 | Ruta JSON personalizada | is, is not, matches, is empty, is not empty |
 
 {% hint style="warning" %}

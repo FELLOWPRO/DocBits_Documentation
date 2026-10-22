@@ -18,8 +18,8 @@ Es una pestaña del [Panel de Análisis](analytics-dashboard.md). No añade trab
 | Usted quiere… | Utilice | Ejemplo |
 | --- | --- | --- |
 | Ver cuán automatizado está | Las cinco **cifras clave** de la parte superior | "El 63.2 % de nuestros documentos se procesó sin intervención de una persona el mes pasado" |
-| Ver la tendencia | **Touchless rate over time** | "La tasa subió del 55 % al 68 % desde que corregimos los datos maestros de proveedores" |
-| Saber dónde se atascan los documentos | **Where touchless is lost first** | "La mayoría de los documentos se detiene en Field Validation" |
+| Ver la tendencia | **Tasa sin contacto a lo largo del tiempo** | "La tasa subió del 55 % al 68 % desde que corregimos los datos maestros de proveedores" |
+| Saber dónde se atascan los documentos | **Donde se pierde primero la tecnología sin contacto** | "La mayoría de los documentos se detiene en Field Validation" |
 | Decidir qué proveedor corregir primero | **Supplier opportunities** | "El proveedor A nos daría +4.0 puntos porcentuales" |
 | Entender a un proveedor | Página **Supplier Diagnosis** | "Sus facturas no tienen número de OC, por eso falla la coincidencia con la OC" |
 | Entender un documento | **Document Trace** | "Esta factura se detuvo en la etapa 8, Field Validation" |
@@ -118,7 +118,7 @@ La **suborganización** que seleccionó en la parte superior de DocBits limita l
 * **Diagnosis coverage** = documentos con un motivo de bloqueo conocido ÷ todos los documentos bloqueados. Ejemplo: 50 documentos bloqueados, 10 con una causa desconocida → 40 ÷ 50 = **80 %**. Un valor bajo significa "todavía no entendemos por qué se detienen los documentos". Mejórelo antes de intentar corregir causas individuales.
 * **Haga clic en una tarjeta** para abrir en una pestaña nueva la lista de documentos que hay detrás de la cifra ("View the documents behind this number"). Las tarjetas con 0 documentos no se pueden pulsar.
 
-### Touchless rate over time
+### Evolución de la tasa de procesamiento sin intervención
 
 <figure><img src="../.gitbook/assets/touchless-trend-es.png" alt="Gráfico de líneas de la tasa pure touchless y AP touchless por día con la línea del objetivo del 70 por ciento"><figcaption><p>La tasa por día con la línea del objetivo. Aquí la tasa se mantiene entre el 40 y el 60 % y cae bruscamente a partir del 10 de octubre. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
 
@@ -126,7 +126,7 @@ Un gráfico con una línea para **Pure touchless**, una para **AP touchless** y 
 
 **Ejemplo.** Después de activar la coincidencia automática con la OC el 1 de octubre, la tasa pura sube del 55 % al 68 % en dos semanas. El gráfico muestra el día en que la curva cambia, de modo que puede relacionarlo con su cambio.
 
-### Where touchless is lost first
+### Dónde se interrumpe primero el procesamiento sin intervención
 
 <figure><img src="../.gitbook/assets/touchless-blocking-stages-es.png" alt="Gráfico de barras de los documentos bloqueados por primera etapa de bloqueo y motivo"><figcaption><p>Documentos bloqueados según la etapa y el motivo en los que se detuvieron primero. Aquí <strong>Field validation: Required field missing</strong> cuesta más documentos (58), seguido de <strong>Export mapping failed</strong> (46) y <strong>PO item mismatch</strong> (27). Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
 
@@ -134,7 +134,7 @@ Un gráfico de barras de **Blocked documents** por etapa del pipeline: la **prim
 
 **Ejemplo.** Barras: Supplier Identification 12, Field Validation 41, PO Line Match 7. La barra más grande le indica que debe revisar primero **Field Validation**, normalmente porque no se extrae un campo obligatorio.
 
-### Supplier opportunities
+### Oportunidades por proveedor
 
 <figure><img src="../.gitbook/assets/touchless-supplier-queue-es.png" alt="La tabla Supplier opportunities con volumen, tasa pura, documentos perdidos, causa raíz, documentos recuperables, mejora esperada, confianza y estado"><figcaption><p>La cola de proveedores (abreviada a las cuatro primeras filas). El primer proveedor tiene 106 documentos, una tasa pura del 38.7 % y 65 documentos recuperables, de modo que corregirlo vale <strong>+21 pp</strong>. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
 
@@ -161,7 +161,7 @@ La cola clasifica a A por encima de B porque la **mejora esperada** se mide con 
 
 Utilice el cuadro de búsqueda ("Search supplier number or name") para encontrar un proveedor. Haga clic en una fila para abrir el **Supplier Diagnosis**.
 
-### Compare suppliers
+### Comparar proveedores
 
 <figure><img src="../.gitbook/assets/touchless-compare-suppliers-es.png" alt="La página Compare suppliers con tres proveedores lado a lado y un gráfico de barras de sus resultados"><figcaption><p>Tres proveedores lado a lado: tasa pura, documentos perdidos y recuperables, causa raíz, mejora esperada y un gráfico de barras de los resultados. Cada <strong>Open</strong> lleva al Supplier Diagnosis. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
 
@@ -171,7 +171,7 @@ La comparación muestra los proveedores lado a lado: **Pure rate**, **Lost docum
 
 **Ejemplo.** Los proveedores A y B envían el mismo diseño de factura. B tiene una tasa pura del 80 %, A solo del 35 %. Ambos tienen la causa raíz "Master data". La comparación muestra que el diseño es correcto y que el registro del proveedor A está incompleto. Corrija los datos maestros de A en lugar de cambiar la plantilla.
 
-### Analyse with AI
+### Analizar con IA
 
 El botón **Analyse n clusters with AI** analiza los clústeres de problemas con mayor potencial touchless (como mínimo un número mínimo de documentos cada uno). Tarda unos 13 segundos por clúster y abarca **toda la organización**. Solo los administradores pueden iniciarlo.
 

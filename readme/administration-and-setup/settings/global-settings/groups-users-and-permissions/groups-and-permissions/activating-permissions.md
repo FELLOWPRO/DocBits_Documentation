@@ -3,7 +3,7 @@
 La interfaz actual usa una matriz de permisos por tipo de documento y acción. Los valores **Dueño**, **Everyone** y **Sin acceso** todavía se muestran en inglés. Las instrucciones sobre el antiguo interruptor «Only Assigned Documents» solo se aplican a versiones que dispongan de ese interruptor.
 
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
-DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
+DocBits Tutorial de grupos y permisos: establezca roles de usuario, derechos de acceso y proteja su espacio de trabajo
 {% endembed %}
 
 Habilitar o deshabilitar el sistema de permisos mediante el interruptor tiene varios efectos en la funcionalidad de DocBits.
@@ -18,7 +18,7 @@ Habilitar o deshabilitar el sistema de permisos mediante el interruptor tiene va
 
 <figure><img src="../../../../../.gitbook/assets/prior-u004-es.png" alt="Matriz de permisos por tipo de documento y acción."><figcaption><p>Matriz de permisos por tipo de documento y acción.</p></figcaption></figure>
 
-## Only Assigned Documents
+## Solo documentos asignados
 
 <figure><img src="../../../../../.gitbook/assets/prior-u008-es.png" alt="Opciones de acceso por acción en la matriz de permisos."><figcaption><p>Opciones de acceso por acción en la matriz de permisos.</p></figcaption></figure>
 

@@ -2,7 +2,7 @@
 
 #### Para activar la configuración de Stream en DocBits <a href="#to-enable-stream-settings-in-docbits" id="to-enable-stream-settings-in-docbits"></a>
 
-Vaya a _Settings → Module → BOD Connection Stream_
+Vaya a _Configuración → Módulo → BOD Flujo de conexión_
 
 <figure><img src="../../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
 

@@ -42,7 +42,7 @@ La sección **Política de privacidad** permite a los administradores subir o de
 
 1. **Acceda a Supplier General Settings**:
    * Vaya a la sección **Configuración general del proveedor** desde el menú principal.
-2. **Localice la sección Policy and Privacy Statement**:
+2. **Localice la sección Política y Declaración de Privacidad**:
    * Desplácese hacia abajo hasta la sección **Política de privacidad**.
 3. **Suba o actualice los documentos**:
    * Haga clic en el botón **Cargar documento** para seleccionar los archivos correspondientes.

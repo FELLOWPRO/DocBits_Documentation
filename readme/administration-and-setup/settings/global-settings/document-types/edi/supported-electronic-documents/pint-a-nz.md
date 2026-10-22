@@ -30,7 +30,7 @@ PINT A-NZ (Modelo Peppol Internacional para Australia-Nueva Zelanda) es la espec
 
 ## Vista previa predeterminada
 
-<figure><img src="aunz-pint-preview.png" alt="Vista previa de factura PINT A-NZ en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una factura PINT A-NZ</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="Vista previa de factura PINT A-NZ en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una factura PINT A-NZ</p></figcaption></figure>
 
 ## Asignación de campos
 

@@ -3,7 +3,7 @@
 <figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-25-es.png" alt="Lista de scripts con los nombres y las fechas ocultos."><figcaption><p>Lista de scripts con los nombres y las fechas ocultos.</p></figcaption></figure>
 
 {% embed url="https://youtu.be/n8NpWWIjmlA" %}
-DocBits Document Scripts Explained: Automate Custom Logic in Your Document Workflow
+DocBits Explicación de los scripts de documentos: automatice la lógica personalizada en su flujo de trabajo de documentos
 {% endembed %}
 
 #### Visión general

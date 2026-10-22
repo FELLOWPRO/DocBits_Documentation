@@ -1,4 +1,4 @@
-# System Licenses
+# Licencias del sistema
 
 <figure><img src="../../.gitbook/assets/system_licenses.png" alt="System Licenses"><figcaption><p>Página System Licenses</p></figcaption></figure>
 

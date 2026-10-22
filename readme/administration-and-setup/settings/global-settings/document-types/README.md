@@ -1,7 +1,7 @@
-# Document Types
+# Tipos de documentos
 
 {% embed url="https://youtu.be/pFz_6tvNlU4" %}
-DocBits Document Types Explained: Create, Configure & Assign Processing Settings
+DocBits Explicación de los tipos de documentos: crear, configurar y asignar ajustes de procesamiento
 {% endembed %}
 
 <figure><img src="../../../../.gitbook/assets/document_types.png" alt="Document Types"><figcaption><p>Página Document Types</p></figcaption></figure>
@@ -31,7 +31,7 @@ Debajo de cada tipo de documento puede acceder a las siguientes pestañas de con
 |-----|-------------|
 | **Labels** | Gestione las etiquetas de visualización y las traducciones del tipo de documento. |
 | **Edit layout** | Modifique cómo aparece el documento en la vista de validación, incluidas las posiciones de los campos. |
-| **Document Sub Types** | Configure subcategorías para este tipo de documento (por ejemplo, distintos formatos de factura). |
+| **Subtipos de documentos** | Configure subcategorías para este tipo de documento (por ejemplo, distintos formatos de factura). |
 | **Table columns** | Personalice qué columnas de datos aparecen en la tabla de posiciones. |
 | **Fields** | Gestione los campos de datos extraídos del documento (añadir, editar o eliminar campos). |
 | **Model Training** | Configure y entrene el modelo de IA utilizado para reconocer y extraer datos. |
@@ -39,7 +39,7 @@ Debajo de cada tipo de documento puede acceder a las siguientes pestañas de con
 | **Scripts** | Escriba scripts de procesamiento personalizados que se ejecutan durante el procesamiento de documentos. |
 | **E-Doc** | Configure estándares de documentos electrónicos (XRechnung, ZUGFeRD, EDI, FatturaPA). |
 
-## Custom Validation Rules
+## Reglas de validación personalizadas
 
 Abra un tipo de documento y seleccione **Custom Validation Rules** para gestionar sus propias reglas de validación. Para reutilizar una regla existente sin volver a crearla, siga [Duplicate a Custom Validation Rule](duplicate-a-custom-validation-rule.md). La guía explica el nombre de la regla, la clave de la regla y los controles de confirmación.
 

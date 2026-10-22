@@ -12,12 +12,12 @@ Aby włączyć DocBits Operator, wykonaj następujące kroki:
    * Z Dashboard przejdź do **Settings**.
    *   Wybierz **Document Processing**, a następnie **Module**.
 
-       <figure><img src="../../.gitbook/assets/docbits_operator_module_selection.png" alt="Wybór modułu DocBits Operator"><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-pl.png" alt="Moduły integracji dokumentów: skrypty, skanowanie, kody kreskowe i niestandardowe dane podstawowe. W przedstawionej wersji etykieta wyboru kodów kreskowych „Select” pozostaje angielska."><figcaption><p>Moduły integracji dokumentów: skrypty, skanowanie, kody kreskowe i niestandardowe dane podstawowe. W przedstawionej wersji etykieta wyboru kodów kreskowych „Select” pozostaje angielska.</p></figcaption></figure>
 2. **Włącz funkcję**:
    * Przewiń w dół, aby znaleźć opcję **DocBits Operator**.
    *   Przełącz suwak, aby włączyć **DocBits Operator**.
 
-       <div align="left"><figure><img src="../../.gitbook/assets/docbits_operator_enable_toggle.png" alt="Przełącznik włączania DocBits Operator" width="563"><figcaption></figcaption></figure></div>
+       <div align="left"></div>
 
 ## Dostęp do interfejsu
 
@@ -25,7 +25,7 @@ Aby włączyć DocBits Operator, wykonaj następujące kroki:
 
 ### **1. Wprowadzanie promptu**
 
-Na dole ekranu znajduje się pole wprowadzania z etykietą _„Enter your prompt here…”_. Tutaj użytkownicy wpisują instrukcje, które ma wykonać operator.
+Na dole ekranu znajduje się pole do wpisania polecenia. Tutaj użytkownicy wpisują instrukcje, które ma wykonać operator.
 
 Obok pola wprowadzania znajduje się kilka przycisków sterujących:
 

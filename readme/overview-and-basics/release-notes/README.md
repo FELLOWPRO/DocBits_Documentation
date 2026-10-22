@@ -778,7 +778,7 @@ DocBits oferuje teraz możliwość zmiany wersji OCR (Optical Character Recognit
 
 ### Nowe funkcje:
 
-## Rule Manager
+## Menedżer reguł
 
 [rule-manager](../../administration-and-setup/settings/document-processing/rule-manager/ "mention") zapewnia elastyczność tworzenia i edycji reguł rozwiązywania konfliktów dostosowanych do systemu fakturowania DocBits. Reguły te służą do automatycznej obsługi rozbieżności między szczegółami faktury a danymi zamówienia zakupu (PO), co zapewnia dokładne uzgodnienia finansowe. System stosuje te reguły do przetwarzania linii faktury, opłat i podatków oraz generuje odpowiednie korekty lub notatki, gdy jest to konieczne.
 

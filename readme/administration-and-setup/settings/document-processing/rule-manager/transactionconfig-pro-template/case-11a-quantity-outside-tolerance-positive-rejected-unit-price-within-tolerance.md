@@ -1,36 +1,38 @@
-# Case 11a: Quantity Outside Tolerance (Positive Rejected), Unit Price Within Tolerance
+# Przypadek 11a: Ilość za duża — odrzucenie; cena w tolerancji
 
-## Scenario:
+Poniższy scenariusz ilustruje skonfigurowane mapowanie, a nie domyślny szablon o zweryfikowanym wdrożeniu. Rzeczywiste dane wyjściowe, kwoty, znaki i typy dokumentów zależą od aktywnych reguł i wyrażeń `conflict_resolution`, mapowania eksportu oraz decyzji zatwierdzających. Każda opisana nota obciążeniowa lub uznaniowa jest uzależniona od tej konfiguracji; przykład nie gwarantuje jej automatycznego wystawienia ani zgodności z prawem.
 
-The quantity on the invoice exceeds the acceptable range (positive) and is rejected, but the unit price is within tolerance.
+## Scenariusz:
 
-## Action:
+Ilość na fakturze przekracza dopuszczalny zakres (dodatnia) i zostaje odrzucona, ale cena jednostkowa mieści się w tolerancji.
 
-The system adjusts the quantity to the approved level, maintaining the unit price, and processes the transaction. Any excess quantity is rejected and not invoiced.
+## Działanie:
 
-## Example:
+System dostosowuje ilość do zatwierdzonego poziomu, zachowując cenę jednostkową i realizuje transakcję. Jakakolwiek nadwyżka jest odrzucana i nie fakturowana.
+
+## Przykład:
 
 * **Purchase Order (PO):**
   * Quantity: 100 units
-  * Unit Price: $8.00 per unit
+  * Cena jednostkowa: $8.00 za sztukę
   * Total Amount: $800.00
 * **Invoice Received:**
-  * Quantity: 110 units (outside tolerance of 10%, rejected)
-  * Unit Price: $8.00 per unit (within tolerance)
+  * Ilość: 110 sztuk (poza tolerancją 10%, odrzucona)
+  * Cena jednostkowa: $8.00 za sztukę (w granicach tolerancji)
   * Total Amount: $880.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Unit Price Tolerance: ±2%
+  * Tolerancja ceny jednostkowej: ±2%
 
-Since the quantity (110 units) exceeds the acceptable tolerance limit (positive variance of 10%) and is not approved, but the unit price ($8.00) is within tolerance, the system will:
+Ponieważ ilość (110 sztuk) przekracza akceptowalny limit tolerancji (dodatnie odchylenie 10%) i nie została zatwierdzona, ale cena jednostkowa ($8.00) mieści się w tolerancji, system:
 
-1. **Reject the Excess Quantity:** The system rejects the quantity that exceeds the approved tolerance level.
-2. **Adjust the Quantity:** The system adjusts the quantity to match the approved level specified in the purchase order.
-   * Approved Quantity = 100 units (from PO)
-3. **Maintain the Unit Price:** The unit price of $8.00 per unit is within tolerance and remains unchanged.
-4. **Recalculate the Total Amount:** The system calculates the total amount using the approved quantity and the accepted unit price:
-   * **Total Amount = Approved Quantity × Unit Price**
-   * **Total Amount = 100 units × $8.00 per unit = $800.00**
-5. **Process the Invoice:** The system processes the invoice with the adjusted total amount of $800.00, reflecting only the approved quantity and unit price. The excess quantity of 10 units is rejected and not invoiced.
+1. **Odrzuć nadmiarową ilość:** System odrzuca ilość przekraczającą zatwierdzony poziom tolerancji.
+2. **Dostosuj ilość:** System dostosowuje ilość, aby odpowiadała zatwierdzonemu poziomowi określonemu w zamówieniu.
+   * Zatwierdzona ilość = 100 jednostek (od PO)
+3. **Utrzymaj cenę jednostkową:** Cena jednostkowa wynosząca $8.00 za jednostkę mieści się w granicach tolerancji i pozostaje niezmieniona.
+4. **Przelicz kwotę całkowitą:** System oblicza całkowitą kwotę na podstawie zatwierdzonej ilości i zaakceptowanej ceny jednostkowej:
+   * **Kwota całkowita = Zatwierdzona ilość × Cena jednostkowa**
+   * **Kwota całkowita = 100 jednostek × $8.00 za jednostkę = $800.00**
+5. **Przetwórz fakturę:** System przetwarza fakturę na skorygowaną łączną kwotę $800.00, uwzględniającą jedynie zatwierdzoną ilość i cenę jednostkową. Nadwyżka wynosząca 10 sztuk jest odrzucana i nie fakturowana.
 
-This approach ensures that the invoiced amount aligns with the agreed terms in the purchase order, even when the supplier attempts to invoice for an excess quantity.
+Takie podejście gwarantuje, że zafakturowana kwota jest zgodna z warunkami uzgodnionymi w zamówieniu, nawet jeśli dostawca próbuje wystawić fakturę za nadwyżkę.

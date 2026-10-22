@@ -1,59 +1,59 @@
-# Test: File Import 1
+# Test: import pliku 1
 
-## Purpose
+## Cel
 
-These tests are designed to ensure that our file import system works correctly. We specifically test the import of PDF and TIFF files into the system, ensuring that they are processed and stored successfully.
+Testy te mają na celu zapewnienie prawidłowego działania naszego systemu importu plików. W szczególności testujemy import plików PDF i TIFF do systemu, upewniając się, że są one pomyślnie przetwarzane i przechowywane.
 
-#### Test Setup and Cleanup
+#### Przygotowanie i sprzątanie po testach
 
 * **Setup:**
-  * Before each test, we log a setup message.
-  * **Cleanup:** After each test, we clean up by deleting any documents created by the test user from the database to ensure no leftover data affects subsequent tests.
+  * Przed każdym testem rejestrujemy komunikat konfiguracyjny.
+  * **Oczyszczanie:** Po każdym teście sprzątamy, usuwając z bazy danych wszelkie dokumenty utworzone przez użytkownika testowego, aby mieć pewność, że żadne pozostałości danych nie będą miały wpływu na kolejne testy.
 
-#### Test Scenarios
+#### Scenariusze testowe
 
 1. **Import PDF File:**
-   * **Test Import PDF (`test_import_pdf`):**
-     * Import a PDF file (`FellowBananaInvoice.pdf`) into the system.
-     * **Expected Outcome:** The file should be imported successfully, returning a document ID.
+   * **Test importu PDF (`test_import_pdf`):**
+     * Zaimportuj plik PDF (`FellowBananaInvoice.pdf`) do systemu.
+     * **Oczekiwany wynik:** Plik powinien zostać pomyślnie zaimportowany, zwracając dokument ID.
 2. **Import TIFF File:**
-   * **Test Import TIFF (`test_import_tiff`):**
-     * Import a TIFF file (`TIFF_FILE.TIF`) into the system.
-     * **Expected Outcome:** The file should be imported successfully, returning a document ID.
+   * **Test importu TIFF (`test_import_tiff`):**
+     * Zaimportuj plik TIFF (`TIFF_FILE.TIF`) do systemu.
+     * **Oczekiwany wynik:** Plik powinien zostać pomyślnie zaimportowany, zwracając dokument ID.
 
-## Detailed Explanation of Each Test
+## Szczegółowe wyjaśnienie każdego testu
 
-* **Setup and Cleanup:**
-  * **Logging:** A setup and cleanup message is logged for each test.
-  * **Database Cleanup (`clean_documents`):** Deletes any documents created by the test user from the database to maintain a clean state.
-*   **File Import Tests:**
+* **Konfiguracja i czyszczenie:**
+  * **Logowanie:** Dla każdego testu rejestrowany jest komunikat dotyczący konfiguracji i czyszczenia.
+  * **Oczyszczanie bazy danych (`clean_documents`):** Usuwa z bazy danych wszelkie dokumenty utworzone przez użytkownika testowego, aby zachować czysty stan.
+*   **Testy importu plików:**
 
     **Import PDF File:**
 
-    * **Load User:** Load the test user.
-    * **File Path:** Specify the path to the PDF file (`tests/files/pdfs/FellowBananaInvoice.pdf`).
-    * **Import File:** Use the `FileImporter` class to import the PDF file.
-    * **Check Response:** Ensure the response is a list containing a success message and a document ID.
+    * **Załaduj użytkownika:** Załaduj użytkownika testowego.
+    * **Ścieżka pliku:** Określ ścieżkę do pliku PDF (`tests/files/pdfs/FellowBananaInvoice.pdf`).
+    * **Importuj plik:** Użyj klasy `FileImporter`, aby zaimportować plik PDF.
+    * **Sprawdź odpowiedź:** Upewnij się, że odpowiedzią jest lista zawierająca komunikat o powodzeniu i dokument ID.
 
     **Import TIFF File:**
 
-    * **Load User:** Load the test user.
-    * **File Path:** Specify the path to the TIFF file (`tests/files/pdfs/TIFF_FILE.TIF`).
-    * **Import File:** Use the `FileImporter` class to import the TIFF file.
-    * **Check Response:** Ensure the response is a list containing a success message and a document ID.
+    * **Załaduj użytkownika:** Załaduj użytkownika testowego.
+    * **Ścieżka pliku:** Określ ścieżkę do pliku TIFF (`tests/files/pdfs/TIFF_FILE.TIF`).
+    * **Importuj plik:** Użyj klasy `FileImporter`, aby zaimportować plik TIFF.
+    * **Sprawdź odpowiedź:** Upewnij się, że odpowiedzią jest lista zawierająca komunikat o powodzeniu i dokument ID.
 
-## Code Structure
+## Struktura kodu
 
-* **Logger:** Used to log debug messages during setup, cleanup, and test execution.
-* **Database Helper:** Executes queries without returning results for cleanup.
-* **File Importer:** Handles the import of files into the system.
-* **Fixtures:** `set_up` fixture to manage setup and cleanup for tests.
+* **Logger:** Służy do rejestrowania komunikatów debugowania podczas instalacji, czyszczenia i wykonywania testów.
+* **Pomocnik bazy danych:** Wykonuje zapytania bez zwracania wyników w celu oczyszczenia.
+* **Importer plików:** Obsługuje import plików do systemu.
+* **Urządzenia:** `set_up`urządzenie do zarządzania konfiguracją i czyszczeniem na potrzeby testów.
 * **Tests:**
-  * `test_import_pdf`: Tests importing a PDF file.
-  * `test_import_tiff`: Tests importing a TIFF file.
+  * `test_import_pdf`: Testuje import pliku PDF.
+  * `test_import_tiff`: Testuje import pliku TIFF.
 
-#### Summary
+#### Podsumowanie
 
-These tests ensure that our file import functionality works as expected for both PDF and TIFF files. By following this approach, we verify that files are imported correctly and that the system can handle different file types without issues.
+Testy te zapewniają, że nasza funkcja importowania plików działa zgodnie z oczekiwaniami zarówno w przypadku plików PDF, jak i TIFF. Stosując to podejście, sprawdzamy, czy pliki są importowane poprawnie i czy system może bez problemów obsługiwać różne typy plików.
 
 

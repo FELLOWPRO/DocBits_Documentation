@@ -1,4 +1,4 @@
-# SPAYD / Short Payment Descriptor (Czeski)
+# SPAYD / Krótki deskryptor płatności (Czeski)
 
 ## Przegląd
 

@@ -1,6 +1,6 @@
 # Ustawienia
 
-<figure><img src="../../.gitbook/assets/settings_overview.png" alt="Przegląd ustawień"><figcaption><p>Strona przeglądu ustawień</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-settings-overview-pl.png" alt="Ustawienia organizacji z ukrytymi danymi identyfikacyjnymi. Widoczny kraj jest wartością konfiguracji."><figcaption><p>Ustawienia organizacji z ukrytymi danymi identyfikacyjnymi. Widoczny kraj jest wartością konfiguracji.</p></figcaption></figure>
 
 Obszar Ustawień to centralne miejsce konfiguracji DocBits. Jest podzielony na pięć głównych sekcji:
 

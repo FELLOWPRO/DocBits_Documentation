@@ -28,7 +28,7 @@ Typowy przypadek: `CHARGES` otrzymuje wartość pozycji, a każdy wiersz kończy
 * Jeśli dostawca nie ma reguł, wytrenuj tabelę raz (Table training), aby kolumna została powiązana z właściwą pozycją, albo ukryj kolumnę, jeśli dostawca nigdy nie drukuje tej wartości.
 * W ostateczności *Skip table validation* w More Settings typu dokumentu wyłącza wszystkie kontrole tabel dla całego typu dokumentu; niezgodność nie jest wtedy wykrywana, podobnie jak puste wymagane kolumny.
 
-## PO matching: „Line Item Table is missing Mandatory column"
+## Dopasowanie PO: „Brak tabeli pozycji zamówienia Kolumna obowiązkowa”
 
 PO matching wymaga kolumn domyślnych: numer artykułu, cena jednostkowa, ilość i kwota całkowita. Jedna z nich jest ukryta lub została zastąpiona kolumną własną. Odkryj kolumnę domyślną albo zmapuj wartość na nią podczas trenowania tabeli.
 
@@ -39,4 +39,4 @@ Skrypt lub mapowanie eksportu nadal odwołuje się do usuniętej *Column name*. 
 ## Gdzie szukać dalej
 
 * [Table Extraction Troubleshoot](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md): jakość ekstrakcji, OCR, E-Text
-* [Training Line Fields / Table Training](../../../../setup/document-training/training-line-fields-table-training/README.md)
+* [Pola linii treningowych / Trening na stole](../../../../setup/document-training/training-line-fields-table-training/README.md)

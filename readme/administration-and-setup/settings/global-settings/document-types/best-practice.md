@@ -60,7 +60,7 @@ Konfiguracja typów dokumentów w Docbits wymaga staranności i wiedzy, aby zape
 
 **Wskazówki:**&#x20;
 
-**Transfer learning:**&#x20;
+**Przeniesienie nauki:**
 
 * Wykorzystaj wstępnie wytrenowane modele i dostrój je za pomocą konkretnych przykładów dokumentów, aby skrócić czas treningu i zwiększyć dokładność.&#x20;
 

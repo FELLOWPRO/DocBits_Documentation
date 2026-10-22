@@ -32,7 +32,7 @@ Pod filtrami pojawiają się cztery karty podsumowujące:
 | **OSTRZEŻENIA** | Łączna liczba ostrzeżeń w wybranym okresie. |
 | **TOP SOURCE** | Usługa generująca najwięcej dzienników wraz z ich liczbą. |
 
-## Real User Monitoring (RUM)
+## Monitorowanie rzeczywistych użytkowników (RUM)
 
 Pod kartami podsumowującymi metryki RUM pokazują dane o wydajności front-endu zebrane z rzeczywistych sesji przeglądarki użytkowników.
 

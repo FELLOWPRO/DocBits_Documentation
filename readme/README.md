@@ -1,6 +1,6 @@
 # DocBits
 
-**DocBits. Make room for ambition.**
+**DocBits. Zrób miejsce na ambicje.**
 
 Od OCR/IDP do logiki biznesowej, zatwierdzeń i Advanced Workflows.
 
@@ -38,7 +38,7 @@ Poniżej znajduje się podsumowanie unikalnych funkcji i korzyści:
    * Umożliwia automatyczne księgowanie na kontach księgi głównej.
    * Pozwala dzielić kwoty według działów.
    * Obsługuje definiowanie kont księgi głównej przez zespół zobowiązań.
-5. **Zintegrowane procesy walidacji i** [**zatwierdzania**](broken-reference)
+5. **Zintegrowane procesy walidacji i** [**zatwierdzania**](administration-and-setup/settings/global-settings/document-types/more-settings/approval/README.md)
    * Zapewnia zintegrowane procesy walidacji gwarantujące poprawność danych.
    * Oferuje [workflowy](administration-and-setup/workflow/) zatwierdzania, które usprawniają obsługę dokumentów.
 6. **Bezproblemowa integracja**

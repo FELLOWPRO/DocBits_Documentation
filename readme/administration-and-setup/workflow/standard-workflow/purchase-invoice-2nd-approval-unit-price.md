@@ -1,6 +1,6 @@
-# Purchase Invoice - 2nd Approval Unit Price
+# Faktura zakupu — drugie zatwierdzenie ceny jednostkowej
 
-<figure><img src="../../../../.gitbook/assets/docbits_approval_invoice_3.png" alt="DocBits Zatwierdzenie Faktura 3"><figcaption></figcaption></figure>
+
 
 Ten tytuł wskazuje, że reguła została skonfigurowana do zarządzania drugim etapem zatwierdzania faktury zakupowej, ze szczególnym naciskiem na walidację ceny jednostkowej.
 
@@ -13,7 +13,7 @@ Ten tytuł wskazuje, że reguła została skonfigurowana do zarządzania drugim 
    * **Document Field Invoice Sub Type is Equals Purchase Invoice**: To dodatkowo zawęża zastosowanie tej reguły tylko do tych faktur, które są sklasyfikowane jako "Purchase Invoices", odróżniając je od innych podtypów faktur.
    * **Logic Unit Price in order confirmation Not Equals purchase order**: Ta kontrola logiczna jest kluczowa, ponieważ porównuje cenę jednostkową wymienioną w potwierdzeniu zamówienia z ceną jednostkową w oryginalnym zamówieniu zakupu. Akcja jest wyzwalana, jeśli te wartości nie są zgodne, co może wskazywać na rozbieżność wymagającą rozwiązania.
 
-#### Action (Then…):
+#### Działanie (Then…):
 
 * **Assign user from field Buyer Name, use user User as fallback**: Jeśli określone warunki są spełnione (tj. występuje niezgodność w cenach jednostkowych), faktura jest automatycznie przypisywana do kupującego (nazwa określona w polu 'Buyer Name') w celu dalszego przeglądu. Jeśli pole 'Buyer Name' jest puste lub nieokreślone, przypisywany jest domyślny użytkownik (prawdopodobnie administrator lub inny wyznaczony pracownik) jako rozwiązanie zapasowe do obsługi zatwierdzenia.
 

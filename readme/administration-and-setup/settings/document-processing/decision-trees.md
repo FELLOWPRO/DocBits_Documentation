@@ -19,7 +19,7 @@ Drzewa decyzyjne to zaawansowana funkcja umożliwiająca zautomatyzowane kierowa
 
 Lista drzew decyzyjnych wyświetla wszystkie skonfigurowane drzewa decyzyjne. Otwórz ją w **Settings → Document Processing → Decision Trees**.
 
-<figure><img src="../../../.gitbook/assets/decision_trees.png" alt="Lista drzew decyzyjnych"><figcaption><p>Lista drzew decyzyjnych</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-decision-trees-pl.png" alt="Lista drzew decyzyjnych z ukrytymi nazwami i danymi organizacji. Zamaskowane wiersze nie oznaczają pustej listy."><figcaption><p>Lista drzew decyzyjnych z ukrytymi nazwami i danymi organizacji. Zamaskowane wiersze nie oznaczają pustej listy.</p></figcaption></figure>
 
 Każdy wpis pokazuje:
 

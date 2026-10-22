@@ -35,5 +35,5 @@ Zharmonizowany CII Guideline ID może identyfikować rodzinę i profil, mimo że
 ## Powiązane
 
 * [Konfiguracja ZUGFeRD](../zugferd/)
-* [Mapowanie pól ZUGFeRD](../zugferd/versions/)
+* [Mapowanie pól ZUGFeRD](../zugferd/README.md)
 * [Obsługiwane dokumenty elektroniczne](./)

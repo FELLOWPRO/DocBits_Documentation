@@ -32,7 +32,7 @@ Ten przewodnik przeprowadzi Cię przez proces konfiguracji, aby upewnić się, �
 
     * Jeśli masz wiele wartości, możesz kliknąć **Dodaj Więcej Wartości**, aby je dodać.
 
-    <div><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2lnyo3G6vlowfPiN0Nb5%252FTaxCodes_5.png%3Falt%3Dmedia%26token%3D52280de9-dd51-4bee-baf8-2b77a2209675&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=fb8c44b8&#x26;sv=2" alt=""> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt=""><figcaption></figcaption></figure></div>
+    <div><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2lnyo3G6vlowfPiN0Nb5%252FTaxCodes_5.png%3Falt%3Dmedia%26token%3D52280de9-dd51-4bee-baf8-2b77a2209675&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=fb8c44b8&#x26;sv=2" alt=""> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-pl.png" alt="Formularz nowej wartości: podorganizacja, synonimy i tłumaczenia. Nie wpisano ani nie zapisano wartości; wybór języka dotyczy tłumaczenia wartości."><figcaption><p>Formularz nowej wartości: podorganizacja, synonimy i tłumaczenia. Nie wpisano ani nie zapisano wartości; wybór języka dotyczy tłumaczenia wartości.</p></figcaption></figure></div>
 
     * **UWAGA:** Możesz znaleźć Kody Podatkowe w LN pod: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
@@ -122,7 +122,7 @@ Po przesłaniu nowego dokumentu do DocBits z wybranymi odpowiednimi ustawieniami
 
     * Jeśli masz wiele wartości, możesz kliknąć **Dodaj Więcej Wartości**, aby je dodać.
 
-    <div><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2lnyo3G6vlowfPiN0Nb5%252FTaxCodes_5.png%3Falt%3Dmedia%26token%3D52280de9-dd51-4bee-baf8-2b77a2209675&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=fb8c44b8&#x26;sv=2" alt=""> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt=""><figcaption></figcaption></figure></div>
+    <div><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2lnyo3G6vlowfPiN0Nb5%252FTaxCodes_5.png%3Falt%3Dmedia%26token%3D52280de9-dd51-4bee-baf8-2b77a2209675&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=fb8c44b8&#x26;sv=2" alt=""> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-pl.png" alt="Formularz nowej wartości: podorganizacja, synonimy i tłumaczenia. Nie wpisano ani nie zapisano wartości; wybór języka dotyczy tłumaczenia wartości."><figcaption><p>Formularz nowej wartości: podorganizacja, synonimy i tłumaczenia. Nie wpisano ani nie zapisano wartości; wybór języka dotyczy tłumaczenia wartości.</p></figcaption></figure></div>
 
     * **UWAGA:** Możesz znaleźć Kody Podatkowe w LN pod: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 

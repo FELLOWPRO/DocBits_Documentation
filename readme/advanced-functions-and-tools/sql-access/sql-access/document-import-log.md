@@ -1,4 +1,4 @@
-# Document Import log
+# Dziennik importu dokumentów
 
 ## Kolumny
 
@@ -12,8 +12,8 @@
 * `source`: wewnętrzne
 * `success`: boolean
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: znacznik czasu ze strefą czasową
+* `last_modified_on`: znacznik czasu ze strefą czasową
 * `is_deleted`: boolean
 * `import_id`: text
 * `extra_data`: text
@@ -23,7 +23,7 @@
 * `body`: text
 * `sender`: wewnętrzne
 * `error_resp`: wewnętrzne
-* `source_received_on`: timestamp with time zone
+* `source_received_on`: znacznik czasu ze strefą czasową
 
 ## Analiza i opis
 

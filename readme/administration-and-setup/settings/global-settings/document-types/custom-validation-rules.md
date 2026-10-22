@@ -174,7 +174,7 @@ Porównuje wartość pola z innym polem, z **dzisiejszą datą** lub ze stałą 
 * Invoice Date **w dniu lub przed (≤)** dzisiaj — brak faktur z datą przyszłą
 * Discount **mniejszy niż** 100
 
-#### Allowed values — ze stałej listy
+#### Dozwolone wartości — ze stałej listy
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-allowed.png" alt="kontrola Allowed values"><figcaption><p>Allowed values: jedna wartość w wierszu, opcjonalnie bez rozróżniania wielkości liter</p></figcaption></figure>
 

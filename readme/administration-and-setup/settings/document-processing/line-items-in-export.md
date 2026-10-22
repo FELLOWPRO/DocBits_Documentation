@@ -6,7 +6,7 @@ To, co dzieje się z tabelą pozycji, gdy dokument zostaje zatwierdzony i wyeksp
 
 | Metoda eksportu | Co jest wysyłane dla tabeli |
 |---|---|
-| **webhook**, **watcher**, **sftp**, **infor_sftp** (JSON / XML) | Tabela w takiej postaci, jak na ekranie walidacji: każda nieukryta [kolumna tabeli](../global-settings/document-types/table-columns.md) każdego wiersza, z wartością, wartością sformatowaną i pewnością. |
+| **webhook**, **watcher**, **sftp**, **infor_sftp** (JSON / XML) | Tabela w takiej postaci, jak na ekranie walidacji: każda nieukryta [kolumna tabeli](../global-settings/document-types/table-columns/README.md) każdego wiersza, z wartością, wartością sformatowaną i pewnością. |
 | **infor-m3-cloud**, **infor-m3-toml-cloud**, **infor-idm-***, **infor-gls840-onpremise**, **infor-m3-oc-charges-onpremise** (BOD-y Infor ERP / SAP) | Nie surowa tabela. DocBits buduje z niej **pozycje przyjęcia** (receipt lines) i **pozycje kosztowe** (cost lines) (patrz poniżej) i mapuje je na pola BOD zgodnie z mapowaniem skonfigurowanym w sekcji [Eksportowanie do Infor](../../../infor-integration-and-configuration/exporting-to-infor/README.md). |
 
 ## Pozycje przyjęcia i pozycje kosztowe (eksporty Infor)
@@ -48,5 +48,5 @@ Partnerzy i wsparcie z dostępem do API lub MCP mogą pobrać ładunek eksportu 
 ## Powiązane strony
 
 * [Eksport](export.md): konfiguracje i metody eksportu
-* [Kolumny tabeli](../global-settings/document-types/table-columns.md)
+* [Kolumny tabeli](../global-settings/document-types/table-columns/README.md)
 * [Eksportowanie do Infor](../../../infor-integration-and-configuration/exporting-to-infor/README.md): mapowania pól BOD dla pozycji przyjęcia, kosztowych i podatkowych

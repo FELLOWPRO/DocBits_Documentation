@@ -191,7 +191,7 @@ jednostkowa PO jest obliczana z kwoty netto. Dodatkowo:
   ponownie przesłać. Był nazywany `.xml` i odrzucany przy ponownym
   przesyłaniu.
 
-### Workflow
+### Przepływ pracy
 
 - Zmiana nazwy workflow zachowuje zmiany kart wykonane w tej samej sesji.
   Nowe workflow są tworzone jednym żądaniem zapisu, a zmiany nazw szablonów

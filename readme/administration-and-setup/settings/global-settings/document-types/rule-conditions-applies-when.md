@@ -9,7 +9,7 @@ Ten sam kreator warunków jest używany we wszystkich trzech funkcjach reguł:
 | Funkcja | Etykieta w kreatorze | Gdy warunek jest prawdziwy… | Gdy jest fałszywy… | Gdy pozostawiono go pusty… |
 | --- | --- | --- | --- | --- |
 | [Niestandardowe reguły walidacji](custom-validation-rules.md) | Krok 2 **Applies when** | uruchamiana jest kontrola z kroku 3 | reguła jest pomijana — bez błędu i bez ostrzeżenia | kontrola działa dla każdego dokumentu |
-| [Zasady transformacji](transformation-rules.md) | Krok 2 **When it runs** → **Only when…** | potok zmienia wartość | wartość pozostaje bez zmian | wybierz **Always**: reguła działa dla każdego dokumentu |
+| [Zasady transformacji](transformation-rules.md) | Krok 2 **Kiedy działa** → **Tylko gdy…** | potok zmienia wartość | wartość pozostaje bez zmian | wybierz **Always**: reguła działa dla każdego dokumentu |
 | [Reguły wyboru układu](layout-manager/layout-selection-rules.md) | Krok 2 **Applies when** | dokument otrzymuje układ tej reguły (wygrywa pierwsze dopasowanie) | DocBits sprawdza następną regułę | reguła pasuje do każdego dokumentu przy swoim priorytecie |
 
 Naucz się tego raz tutaj, a użyjesz tego wszędzie.
@@ -85,7 +85,7 @@ Informacje, które DocBits zna o samym dokumencie, niezależnie od wyekstrahowan
 | --- | --- | --- | --- |
 | **Document Origin** | `doc.doc_origin` | `DE`, `AT`, `US` (wyświetlane jako Deutsch, Austria, United States) | reguły i układy specyficzne dla kraju |
 | **Extraction Method** | `doc.extraction_method` | `ELECTRONIC_DOCUMENT`, `FELLOW_KV2`, `MANUAL` | inne traktowanie e-faktur (XRechnung, ZUGFeRD) niż skanowanych plików PDF |
-| **Document Status** | `doc.status` | Ready for validation, Pending Approval, Pending second approval … | układy dla poszczególnych etapów procesu, reguły obowiązujące tylko przed akceptacją |
+| **Document Status** | `doc.status` | Gotowy do zatwierdzenia, w oczekiwaniu na zatwierdzenie, w oczekiwaniu na drugie zatwierdzenie… | układy dla poszczególnych etapów procesu, reguły obowiązujące tylko przed akceptacją |
 | **Sub Document Type** | `doc.sub_doc_type` | Twoje podtypy, np. nota kredytowa | reguły tylko dla jednego podtypu |
 
 ### Pola nagłówka (`header.`)
@@ -142,7 +142,7 @@ Używaj ścieżek JSON oszczędnie. Zależą od wewnętrznej struktury wyekstrah
 | **is empty** | pole nie ma wartości (brak lub same spacje) | – | Purchase Order **is empty** |
 | **is not empty** | pole ma wartość | – | Purchase Order **is not empty** |
 | **greater than** / **less than** | pole jest liczbą większą / mniejszą od wartości | liczba | Total Amount **greater than** `10000` |
-| **greater or equal** / **less or equal** | to samo, łącznie z samą wartością | liczba | Total Amount **less or equal** `250` |
+| **większy lub równy** / **mniejszy lub równy** | to samo, łącznie z samą wartością | liczba | Total Amount **less or equal** `250` |
 
 ### Jakie operatory oferuje pole
 
@@ -151,10 +151,10 @@ Lista dostosowuje się do typu pola:
 | Typ pola | Operatory |
 | --- | --- |
 | Tekst | wszystkie operatory |
-| Liczba i kwota (Total Amount, Quantity …) | is, is not, greater than, less than, greater or equal, less or equal, is empty, is not empty |
-| Pola ze stałą listą (Document Origin, Status, Currency …) | is, is not, is one of, is empty, is not empty |
-| Data (Invoice Date, Due Date …) | is, is not, is empty, is not empty |
-| Tak/Nie | is, is not, is empty, is not empty |
+| Liczba i kwota (Total Amount, Quantity …) | jest, nie jest, większy niż, mniejszy niż, większy lub równy, mniejszy lub równy, jest pusty, nie jest pusty |
+| Pola ze stałą listą (Document Origin, Status, Currency …) | jest, nie jest, jest jednym z, jest pusty, nie jest pusty |
+| Data (Invoice Date, Due Date …) | jest, nie jest, jest pusty, nie jest pusty |
+| Tak/Nie | jest, nie jest, jest pusty, nie jest pusty |
 | Własna ścieżka JSON | is, is not, matches, is empty, is not empty |
 
 {% hint style="warning" %}

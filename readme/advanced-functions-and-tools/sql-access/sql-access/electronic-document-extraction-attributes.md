@@ -1,4 +1,4 @@
-# Electronic document extraction attributes
+# Atrybuty wyodrębniania dokumentów elektronicznych
 
 ## Tabela `public.electronic_document_extraction_attributes`
 
@@ -12,10 +12,10 @@
 * `attribute_name`: wewnętrzne
 * `attribute_type`: wewnętrzne
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: znacznik czasu ze strefą czasową
+* `last_modified_on`: znacznik czasu ze strefą czasową
 * `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: znacznik czasu ze strefą czasową
 * `last_modified_by`: wewnętrzne
 * `deleted_by`: wewnętrzne
 

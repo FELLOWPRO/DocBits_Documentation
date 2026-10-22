@@ -2,7 +2,7 @@
 
 Wszystko oprócz tytułu zmienia się bezpośrednio na liście; nie ma okna edycji.
 
-**Gdzie:** Settings → Global Settings → Document Types → Table Columns
+**Gdzie:** Ustawienia → Ustawienia globalne → Typy dokumentów → Kolumny tabeli
 
 ## Przełączanie flagi
 

@@ -56,11 +56,11 @@ Na potrzeby tego wyjaśnienia użyjemy przykładu z czterema oddzielnymi środow
 
 Początek przepływu danych stanowi Twoja aplikacja LN
 
-### **DocBits API**
+### **API DocBits**
 
 Tutaj dodajesz aplikację i wybierasz utworzone wcześniej DocBits API
 
-### **Files**
+### **Pliki**
 
 Konfiguracja powinna wyglądać następująco
 
@@ -80,7 +80,7 @@ Wybierz kartę PurchaseOrder i zaznacz pole wyboru.
 
 ![](https://lh7-us.googleusercontent.com/UJlicSuDjbEVtr_pzOeqkP8kkiBJIdAgzPK46FlhubqIIHiaJRYp27B__08e9IcNHdcctrBeBfZ6vFPQI3Xf3duL6R2Hu-iaL9dY7hANmy8ukiL61CTxcel0jd_66GAySp3dC1ptYKBaqLqaP1TwJco)
 
-### **Suppliers**
+### **Dostawcy**
 
 Na stronie głównej LN, w lewej zakładce menu, przejdź do Common → BOD-Messaging → Publish BODs → Publish Logistics Master Data
 

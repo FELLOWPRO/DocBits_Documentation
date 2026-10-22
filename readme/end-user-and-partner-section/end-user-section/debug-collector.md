@@ -1,4 +1,4 @@
-# Debug Collector
+# Kolektor danych debugowania
 
 Debug Collector wykonuje pełną migawkę twojej sesji DocBits — aktywność sieci, błędy, środowisko przeglądarki i metryki wydajności — pakuje ją jako raport JSON i opcjonalnie otwiera zgłoszenie wsparcia bezpośrednio z tego samego okna.
 

@@ -1,6 +1,6 @@
-# Purchase Invoice - 2nd Approval Quantity
+# Faktura zakupu — drugie zatwierdzenie ilości
 
-<figure><img src="../../../../.gitbook/assets/docbits_approval_invoice_4.png" alt="DocBits Zatwierdzenie Faktura 4"><figcaption></figcaption></figure>
+
 
 Ten tytuł wskazuje, że reguła dotyczy konkretnie obsługi faktur zakupowych podczas drugiego etapu zatwierdzania, z naciskiem na weryfikację dokładności wymienionych ilości.
 
@@ -13,7 +13,7 @@ Ten tytuł wskazuje, że reguła dotyczy konkretnie obsługi faktur zakupowych p
    * **Document Field Invoice Sub Type is Equals Purchase Invoice**: Ten warunek dodatkowo zawęża regułę, aby miała zastosowanie wyłącznie do faktur zidentyfikowanych jako "Purchase Invoices". Ta kategoryzacja pomaga odróżnić je od innych typów faktur.
    * **Logic Quantity in order confirmation Not Equals purchase order**: Ten kluczowy warunek sprawdza, czy ilość podana w potwierdzeniu zamówienia jest zgodna z ilością w oryginalnym zamówieniu zakupu. Akcja jest wyzwalana, jeśli występuje rozbieżność, wskazując na potencjalny błąd lub problem wymagający rozwiązania.
 
-#### Action (Then…):
+#### Działanie (Then…):
 
 * **Assign user from field Buyer Name, use user User as fallback**: Jeśli warunki reguły są spełnione (tj. występuje rozbieżność w ilościach), faktura jest automatycznie przypisywana do osoby wymienionej w polu 'Buyer Name' w celu dalszego przeglądu. Jeśli to pole jest puste lub określona osoba jest niedostępna, domyślny użytkownik (prawdopodobnie administrator lub inny wyznaczony pracownik) przejmuje obowiązki, aby zapewnić terminowy przegląd i rozwiązanie.
 

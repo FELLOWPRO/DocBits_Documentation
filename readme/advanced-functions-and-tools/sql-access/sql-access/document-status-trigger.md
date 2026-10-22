@@ -1,4 +1,4 @@
-# Document status trigger
+# Wyzwalacz stanu dokumentu
 
 ## Tabela `public.document_status_trigger`
 
@@ -11,8 +11,8 @@
 * `trigger_url`: wewnętrzne
 * `is_active`: boolean
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: znacznik czasu ze strefą czasową
+* `last_modified_on`: znacznik czasu ze strefą czasową
 * `is_deleted`: boolean
 
 ### Analiza i opis

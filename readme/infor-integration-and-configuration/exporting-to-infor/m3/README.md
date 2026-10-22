@@ -91,7 +91,7 @@
 * Sobald alle Nodes hinzugefügt und konfiguriert sind, klicken Sie auf **Save**.
 * Aktivieren Sie den Flow, um die Einrichtung abzuschließen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_11%20\(1\).png)
+![](<https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_11%20(1).png>)
 
 ## Schritt 4: Export in DocBits konfigurieren
 

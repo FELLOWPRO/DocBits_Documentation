@@ -345,58 +345,29 @@ Document passes through all three
 
 ### Karte: ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP
 
-#### Zweck
+<!-- workflow-facility-example-direct-20261022 -->
 
-Weist das Dokument einer bestimmten Einrichtungsgruppe zu
+Diese Workflow-Aktion ordnet ein Dokument anhand der Standorte seiner zugeordneten Bestellungen einer Gruppe zu. In Version 2 ist `group_name` ein Textbestandteil, nach dem in Gruppennamen gesucht wird.
 
-#### Wann zu verwenden
+Beispiel: Ein synthetisches Dokument ist der Bestellung `DEMO-PO-100` mit `location_id=BERLIN` zugeordnet. Die eingerichteten Gruppen heißen `Receiving BERLIN` und `Receiving MUNICH`. Tragen Sie für `group_name` den Wert `Receiving` ein. Der Gruppenname muss sowohl diesen Textbestandteil als auch die Standortkennung der Bestellung enthalten; Groß- und Kleinschreibung spielen dabei keine Rolle.
 
-* Dokument für ein bestimmtes Lager/eine bestimmte Einrichtung
-* Anlagenbasierter Betrieb
-* Standortbezogene Verarbeitung
+Erwartet: Das Dokument wird direkt `Receiving BERLIN` zugewiesen, sofern sein Status die Zuweisung erlaubt. Ohne zugeordnete Bestellung oder passende Gruppe liegt keine erfolgreiche Zuweisung vor; prüfen Sie die Workflow-Protokolle. Vermeiden Sie mehrdeutige Gruppennamen: Bei mehreren Treffern garantiert diese Karte keine feste Auswahlreihenfolge.
 
-#### Beispiel
-
-```
-Shipment notification
-
-Assign to: Berlin Warehouse Team
-    ↓
-Berlin warehouse processes shipment
-    ↓
-Or
-
-Assign to: Munich Warehouse Team
-    ↓
-Munich warehouse processes shipment
-```
+Dies ist eine beispielhafte Konfiguration; ein Workflow wurde nicht ausgeführt.
 
 ***
 
 ### Karte: ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP\_SEQUENTIAL
 
-#### Zweck
+<!-- workflow-facility-example-sequential-20261022 -->
 
-Weist einrichtungsübergreifend nacheinander zu
+Diese Workflow-Aktion fügt die passenden Standortgruppen mit einer festgelegten Priorität zur Warteschlange für sequenzielle Zuweisungen hinzu. Sie bildet keinen Warenversand durch Fabriken oder Lager ab.
 
-#### Wann zu verwenden
+Beispiel: Verwenden Sie dieselbe synthetische Bestellung, Standortkennung und Gruppen wie oben. Setzen Sie `group_name=Receiving` und die Priorität `value=10`. Version 2 liest den Standort aus der zugeordneten Bestellung und findet `Receiving BERLIN`.
 
-* Verarbeitung an mehreren Standorten
-* Der Versand erfolgt über Einrichtungen
-* Standortbasierter Workflow
+Erwartet: Eine Zuweisungsanforderung für diese Gruppe wird mit Priorität `10` eingereiht. Bei mehreren passenden Gruppen erhalten alle dieselbe Priorität; aus ihren Namen ergibt sich keine Bearbeitungsreihenfolge. Prüfen Sie Warteschlange und anschließende Freigabe gesondert. Ohne passenden Treffer entsteht keine erfolgreiche Zuweisung.
 
-#### Beispiel
-
-```
-Manufacturing Order:
-
-Step 1: Factory A (Manufacturing) - Build product
-Step 2: Quality Center (Testing) - Test product
-Step 3: Distribution Center (Packing) - Package
-Step 4: Warehouse (Storage) - Store
-
-Document/shipment passes through each
-```
+Dies ist eine beispielhafte Konfiguration; ein Workflow wurde nicht ausgeführt.
 
 ***
 

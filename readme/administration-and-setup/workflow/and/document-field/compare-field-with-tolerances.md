@@ -2,57 +2,62 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4ee291b0848d-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
 
-## **Propósito:**
+## Quando utilizar este cartão
 
-Este cartão de fluxo de trabalho foi concebido para comparar o valor de um campo com um valor de referência especificado, permitindo tolerâncias. Possibilita um processamento condicional preciso em fluxos de trabalho onde pequenos desvios são aceitáveis, sendo ideal para cenários como garantia de qualidade, análise financeira ou ações baseadas em limiares.
+Utilize esta condição para comparar um campo numérico do documento com uma referência fixa, permitindo um desvio definido. Por exemplo, um montante total pode corresponder à referência 100 se a diferença não ultrapassar 5.
 
-## **Componentes do cartão:**
+## Onde encontrar o cartão
 
-1. **Nome do campo**
-   * **Descrição:** O campo a avaliar na comparação.
-   * **Detalhe:** Tem de corresponder ao identificador exato do primeiro campo dentro do documento.
-2. **Operador de comparação**
-   * **Descrição:** Especifica como o valor do campo selecionado será comparado com o valor de referência.
-   * **Opções:**
-     * **Igual a (=):** Verifica se o valor do campo corresponde exatamente ao valor de referência.
-     * **Não é igual (≠):** Verifica se o valor do campo não corresponde ao valor de referência.
-     * **Maior que (>):** Verifica se o valor do campo é superior ao valor de referência.
-     * **Maior ou Igual (≥):** Verifica se o valor do campo é superior ou igual ao valor de referência.
-     * **Menor que (<):** Verifica se o valor do campo é inferior ao valor de referência.
-     * **Menor ou igual (≤):** Verifica se o valor do campo é inferior ou igual ao valor de referência.
-3. **Valor de referência**
-   * **Descrição:** O valor com o qual o campo é comparado.
-   * **Detalhe:** Este valor pode ser numérico, de texto ou de data, consoante o contexto da comparação.
-4. **Valor de tolerância**
-   * **Descrição:** Define a margem de erro aceitável para a comparação.
-   * **Detalhe:** O valor de tolerância é um valor numérico que indica a diferença máxima permitida entre os dois valores de campo para que a comparação seja considerada verdadeira.
-5. **Tipo de tolerância**
-   * **Descrição:** Especifica a unidade de medida do valor de tolerância.
-   * **Opções:**
-     * **Valor:** A tolerância é um valor absoluto, ou seja, os dois campos podem diferir pelo valor de tolerância especificado.
-     * **Percent:** A tolerância é calculada como uma percentagem do valor do segundo campo, permitindo uma margem de erro relativa.
+No editor de workflows padrão, adicione um cartão em **E**, abra **Campo de documento** e selecione a comparação de um campo com uma referência e tolerâncias. O exemplo seguinte utiliza a versão 2.
 
-## **Funcionalidade:**
+## Definições
 
-* **Avaliação da condição:** O sistema avalia o valor do campo face ao valor de referência utilizando o operador de comparação selecionado. Se estiver configurada uma tolerância, o sistema considera a comparação bem-sucedida se o valor do campo estiver dentro do intervalo de tolerância definido.
-* **Execução da ação:**
-  * **Dentro da tolerância:** Se o valor do campo cumprir a condição dentro da tolerância especificada, o fluxo de trabalho continua, acionando as ações associadas.
-  * **Fora da tolerância:** Se o valor do campo não cumprir a condição ou ficar fora do intervalo de tolerância, podem ser executadas ações alternativas, como registo, envio de alertas ou interrupção do fluxo de trabalho.
+Utilize um campo numérico configurado na sua organização. O valor do campo, a referência e a tolerância são avaliados numericamente. Utilize unidades consistentes.
 
-## **Configuração:**
+| Definição | Significado |
+| --- | --- |
+| Nome do campo | O campo configurado, por exemplo `total_amount`. |
+| Operador | A comparação: `eq`, `neq`, `gt`, `ge`, `lt` ou `le`. |
+| Valor de referência | O número fixo com o qual o campo é comparado. |
+| Tolerância | O desvio numérico permitido. |
+| Tipo de tolerância | **Valor** (`value`) para um montante absoluto ou **Por cento** (`percent`) para um desvio relativo. |
 
-* Os utilizadores configuram o cartão selecionando o campo a avaliar a partir de uma lista de campos disponíveis e escolhendo o operador de comparação (por exemplo, equals, greater than) a partir de uma lista pendente. De seguida, especificam o valor de referência a comparar e definem o valor de tolerância, e depois selecionam o tipo de tolerância (por exemplo, percent ou value).
+Com uma referência positiva de 200, uma tolerância percentual de 5 permite um desvio de 10. Uma tolerância absoluta de 5 permite um desvio de 5. Verifique os limites relevantes para o operador e os valores escolhidos.
 
-## **Conclusão:**
+## Como a tolerância altera a comparação
 
-O cartão "Field Comparison with Tolerances" é uma ferramenta versátil para fluxos de trabalho que exigem avaliações flexíveis. Ao permitir comparações com tolerâncias, assegura que os fluxos de trabalho permanecem eficientes e adaptáveis, acomodando variações do mundo real sem comprometer a precisão.
+Com referência **100** e tolerância absoluta **5**, o limite inferior é **95** e o superior é **105**.
+
+| Operador | A condição é satisfeita quando o valor do campo… |
+| --- | --- |
+| `eq` (=) | Está entre 95 e 105, incluindo ambos os limites. |
+| `neq` (≠) | É inferior a 95 ou superior a 105. |
+| `gt` (>) | É superior a 105. |
+| `ge` (≥) | É pelo menos 95. |
+| `lt` (<) | É inferior a 95. |
+| `le` (≤) | É no máximo 105. |
+
+O cartão devolve o resultado de uma condição. Os passos seguintes dependem do evento que inicia o workflow, das outras condições e das ações configuradas.
 
 <!-- workflow-card-complete-example-20261021 condition_docfield_operator_value_tolerances -->
 
-### Exemplo de tolerância de valor de referência
+## Exemplo prático
 
-**Configuração:** Escolha o campo numérico do documento `total_amount`, igualdade, valor de referência `100`, tolerância absoluta `5` e tipo de tolerância Valor.
+1. Selecione o campo numérico configurado **Montante total** (`total_amount`).
+2. Selecione **É igual a** (`eq`).
+3. Introduza a referência **100** e a tolerância **5**.
+4. Selecione o tipo de tolerância **Valor** (`value`).
 
-**Resultado esperado e contraexemplo:** Com valor `103`, a condição é verdadeira porque a diferença está dentro da tolerância permitida. Com o valor `110`, a condição é falsa porque a diferença excede essa tolerância. Este cartão compara um campo com um valor de referência configurado. Use o cartão de dois campos separado quando ambos os lados precisarem vir dos campos do documento. Dados ausentes ou não numéricos requerem investigação, não uma correspondência presumida.
+| Valor do campo | Diferença absoluta em relação a 100 | Resultado esperado |
+| --- | --- | --- |
+| 103 | 3 | Condição satisfeita. |
+| 110 | 10 | Condição não satisfeita. |
+| 95 ou 105 | 5 | Condição satisfeita: a comparação de igualdade inclui os limites de tolerância. |
 
-Esta é uma configuração de teste ilustrativa e resultado esperado; não foi executado. Use dados e destinatários configurados na sua organização de teste.
+Estes são os resultados de cálculo esperados para uma configuração de exemplo. Não foi executado nenhum workflow para este exemplo.
+
+## Antes de ativar a regra
+
+Verifique um caso que satisfaça a condição, um que não a satisfaça e os limites com dados de teste adequados. Investigue separadamente campos em falta, valores não numéricos e erros de configuração. Consulte o registo de execução para verificar os valores, o operador, a tolerância e o resultado realmente utilizados.
+
+Se ambos os montantes vierem de campos do documento, utilize o cartão separado para [comparar dois campos com tolerância](compare-two-fields-with-tolerance.md).

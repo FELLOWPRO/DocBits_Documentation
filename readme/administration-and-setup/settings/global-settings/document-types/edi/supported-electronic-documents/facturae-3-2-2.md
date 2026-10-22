@@ -33,4 +33,4 @@ Facturae 3.2.2 ist die aktuellste Version des spanischen E-Rechnungsstandards. S
 
 ## Verwandte Themen
 
-* [Supported Electronic Documents](./)
+* [Unterstützte elektronische Dokumente](./)

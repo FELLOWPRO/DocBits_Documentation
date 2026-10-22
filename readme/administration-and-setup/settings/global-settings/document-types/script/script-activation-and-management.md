@@ -6,7 +6,7 @@
 
 * Öffnen Sie Ihren Webbrowser und melden Sie sich mit Ihren Zugangsdaten bei DocBits an.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_field_match_score_setting.png" alt="Docbits Field Match Score Setting"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_field_match_score_setting.png" alt="Match-Score-Einstellung eines Felds in DocBits"><figcaption></figcaption></figure>
 
 **Navigieren zur Skriptverwaltung:**
 
@@ -18,7 +18,7 @@
 * Sobald Sie sich in der Skriptverwaltungsoberfläche befinden, sehen Sie eine Liste aller vorhandenen Skripte.
 * Hier können Sie durch die Liste scrollen, um das gewünschte Skript zu finden, das Sie aktivieren, deaktivieren oder bearbeiten möchten.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_field_match_score_threshold.png" alt="Docbits Field Match Score Threshold"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_field_match_score_threshold.png" alt="Match-Score-Schwellenwert eines Felds in DocBits"><figcaption></figcaption></figure>
 
 **Aktivieren oder Deaktivieren eines Skripts:**
 
@@ -34,14 +34,14 @@
 * Klicken Sie darauf, um den Editor zu öffnen, in dem Sie den Code des Skripts ändern können.
 * Nachdem Sie Ihre Änderungen vorgenommen haben, speichern Sie das Skript erneut.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_force_validation_setting.png" alt="Docbits Force Validation Setting"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_force_validation_setting.png" alt="Einstellung zur erzwungenen Validierung in DocBits"><figcaption></figcaption></figure>
 
 **Überprüfung und Test:**
 
 * Bevor Sie Änderungen an einem Skript vornehmen, überprüfen Sie sorgfältig den vorhandenen Code und überlegen Sie, welche Auswirkungen Ihre Änderungen haben könnten.
 * Testen Sie das Skript in einer Testumgebung, um sicherzustellen, dass es wie erwartet funktioniert.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_validation_rules_example.png" alt="Docbits Validation Rules Example"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_validation_rules_example.png" alt="Beispiel für Validierungsregeln in DocBits"><figcaption></figcaption></figure>
 
 **Dokumentation:**
 

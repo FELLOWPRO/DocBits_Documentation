@@ -16,7 +16,7 @@ Sie können DocBits-Daten auf zwei verschiedene Arten mit Power BI verbinden. Di
   * **Historische Trends und Dashboards**.
 
 {% content-ref url="powerbi/powerbi.md" %}
-[powerbi.md](powerbi/powerbi.md)
+[Verbindung über ClickHouse](powerbi/powerbi.md)
 {% endcontent-ref %}
 
 * **Methode 2: Verbindung über eine schreibgeschützte Datenbank**
@@ -24,5 +24,5 @@ Sie können DocBits-Daten auf zwei verschiedene Arten mit Power BI verbinden. Di
   * **Direkter Zugriff auf aktuelle DocBits-Tabellen**.
 
 {% content-ref url="powerbi/connect-via-read-only-database.md" %}
-[connect-via-read-only-database.md](powerbi/connect-via-read-only-database.md)
+[Verbindung über schreibgeschützte Datenbank](powerbi/connect-via-read-only-database.md)
 {% endcontent-ref %}

@@ -33,6 +33,6 @@ Alle fünf Profile werden unterstützt: MINIMUM, BASIC WL, BASIC, EN 16931 (COMF
 ## Verwandte Themen
 
 - [ZUGFeRD 2.5](zugferd-2-5.md)
-- [ZUGFeRD Configuration](../zugferd/configuration.md)
-- [ZUGFeRD Field Mapping](../zugferd/README.md)
-- [Supported Electronic Documents](./)
+- [ZUGFeRD-Konfiguration](../zugferd/configuration.md)
+- [ZUGFeRD-Feldzuordnung](../zugferd/README.md)
+- [Unterstützte elektronische Dokumente](./)

@@ -278,7 +278,7 @@ Das **Hilfesymbol** in der Suchleiste öffnet eine vollständige Referenz aller 
 Operatoren und Kurzformen, die in Ihrem Workspace verfügbar sind — einschließlich der Angabe, welche Felder
 Standard- bzw. Volltextfelder sind.
 
-<figure><img src="../../../.gitbook/assets/quick_search_08_help_modal.png" alt="The in-app Dashboard Search help with all operators"><figcaption><p>Die integrierte Hilfe <strong>Dashboard-Suche — Felder &#38; Syntax</strong>, die jeden Operator und die Art des Wertabgleichs auflistet.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/quick_search_08_help_modal.png" alt="Hilfe zur Dashboard-Suche mit allen Operatoren direkt in der Anwendung"><figcaption><p>Die integrierte Hilfe <strong>Dashboard-Suche — Felder &#38; Syntax</strong>, die jeden Operator und die Art des Wertabgleichs auflistet.</p></figcaption></figure>
 
 ### Wie `=` je nach Feldtyp abgleicht
 

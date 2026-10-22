@@ -412,7 +412,7 @@ Click "Next" (assumes it's always there)
 
 ***
 
-## Best Practices
+## Bewährte Vorgehensweisen
 
 ✅ **Do:**
 

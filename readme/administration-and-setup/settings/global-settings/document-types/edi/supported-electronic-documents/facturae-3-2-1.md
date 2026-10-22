@@ -33,4 +33,4 @@ Facturae 3.2.1 ist ein Wartungsupdate, das Korrekturen am XML-Schema, verbessert
 
 ## Verwandte Themen
 
-* [Supported Electronic Documents](./)
+* [Unterstützte elektronische Dokumente](./)

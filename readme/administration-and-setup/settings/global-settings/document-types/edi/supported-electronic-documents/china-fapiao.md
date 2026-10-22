@@ -13,7 +13,7 @@ Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfi
 | Eigenschaft | Wert |
 |----------|-------|
 | **Land / Region** | China |
-| **Dokumenttypen** | General VAT Invoice (普通发票), Special VAT Invoice (专用发票), E-Fapiao |
+| **Dokumenttypen** | Allgemeine Umsatzsteuerrechnung (普通发票), spezielle Umsatzsteuerrechnung (专用发票), E-Fapiao |
 | **Format** | XML |
 | **Standard** | Fapiao (发票), State Taxation Administration |
 | **Locale** | `zh_CN` |
@@ -30,13 +30,13 @@ Der Katalog enthält Fapiao, E-Fapiao, General VAT Invoice und Special VAT Invoi
 
 | Komponente | Status |
 |-----------|--------|
-| Vorschau | ✅ Supported |
-| Feldextraktion | ✅ Supported |
-| Transformation | ✅ Supported |
+| Vorschau | ✅ Unterstützt |
+| Feldextraktion | ✅ Unterstützt |
+| Transformation | ✅ Unterstützt |
 
 ## Standardvorschau
 
-<figure><img src="china-fapiao-preview.png" alt="Vorschau einer China Fapiao General VAT Invoice in DocBits"><figcaption><p>Standard DocBits-Vorschau für eine China Fapiao General VAT Invoice (普通发票)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/china-fapiao-preview.png" alt="Vorschau einer China Fapiao General VAT Invoice in DocBits"><figcaption><p>Standard DocBits-Vorschau für eine China Fapiao General VAT Invoice (普通发票)</p></figcaption></figure>
 
 ## Feldzuordnung
 
@@ -89,5 +89,5 @@ Das Wurzelelement ist `<fapiao>` mit dem Namespace `urn:china:tax:fapiao:1.0`. D
 
 ## Siehe auch
 
-- [Aktuell unterstützte E-Rechnungsstandards](../../currently-supported-e-invoice-standards/)
+- [Aktuell unterstützte E-Rechnungsstandards](../currently-supported-e-invoice-standards/README.md)
 - [Unterstützte elektronische Dokumente](./)

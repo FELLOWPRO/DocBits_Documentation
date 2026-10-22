@@ -1,15 +1,15 @@
-# Document Import log
+# Dokumentimportprotokoll
 
 ## Spalten
 
 * `id`: integer
-* `org_id`: ID to organisation
-* `sub_org_id`: internal
-* `original_filename`: internal
-* `filename`: internal
-* `imported_on`: internal
-* `source_type`: internal
-* `source`: internal
+* `org_id`: ID der Organisation
+* `sub_org_id`: intern
+* `original_filename`: intern
+* `filename`: intern
+* `imported_on`: intern
+* `source_type`: intern
+* `source`: intern
 * `success`: boolean
 * `created_by`: integer
 * `created_on`: timestamp with time zone
@@ -17,12 +17,12 @@
 * `is_deleted`: boolean
 * `import_id`: text
 * `extra_data`: text
-* `doc_id`: internal
+* `doc_id`: intern
 * `email_connection_id`: integer
-* `subject`: internal
+* `subject`: intern
 * `body`: text
-* `sender`: internal
-* `error_resp`: internal
+* `sender`: intern
+* `error_resp`: intern
 * `source_received_on`: timestamp with time zone
 
 ## Analyse & Beschreibung

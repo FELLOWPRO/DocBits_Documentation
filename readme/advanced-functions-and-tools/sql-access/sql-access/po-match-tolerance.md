@@ -1,22 +1,22 @@
-# PO match tolerance
+# Toleranz für den Bestellabgleich
 
 ## Tabelle `public.po_match_tolerance`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `item_number`: internal
-* `supplier_item_number`: internal
-* `description`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `item_number`: intern
+* `supplier_item_number`: intern
+* `description`: intern
 * `unit_price_tolerance`: double precision
 * `quantity_tolerance`: double precision
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
-* `unit_price_tolerance_type`: internal
-* `quantity_tolerance_type`: internal
+* `unit_price_tolerance_type`: intern
+* `quantity_tolerance_type`: intern
 
 ### Analyse & Beschreibung
 

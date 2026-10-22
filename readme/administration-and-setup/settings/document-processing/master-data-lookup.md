@@ -42,7 +42,7 @@ Klicken Sie unten links im Datenquellen-Panel auf **Settings** (Zahnradsymbol), 
 * **Aktiviert**: Ein einzelner Lieferant kann im BOD mehrere `<FinancialParty>`-Elemente haben (oft wegen mehrerer IBANs oder Finanzkonten). Alle `<FinancialParty>`-Einträge werden extrahiert und in der Lieferantentabelle gespeichert, sodass mehrere finanzielle Attribute abgelegt werden können.
 * **Deaktiviert**: Nur das zuletzt gefundene `<FinancialParty>`-Element des Lieferanten wird extrahiert. Frühere finanzielle Attribute (z. B. zusätzliche IBANs) werden ignoriert, und nur die Daten des letzten Vorkommens werden gespeichert.
 
-### Purchase Order Deletion Assistant
+### Assistent zum Löschen von Bestellungen
 
 **Delete Purchase Order After** – legen Sie fest, wann abgeschlossene Bestellungen entfernt werden sollen. Nach dem gewählten Zeitraum werden die Datensätze automatisch gelöscht.
 

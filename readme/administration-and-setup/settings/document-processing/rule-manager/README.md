@@ -26,7 +26,7 @@ Dieser Abschnitt erklärt ausführlich die Regeln zur Konfliktlösung, die im Do
 
 ## Struktur der Regeln
 
-### 1. Metadata
+### 1. Metadaten
 
 • version: Kennzeichnet die Version der Mapping-Datei.
 
@@ -38,7 +38,7 @@ Dieser Abschnitt erklärt ausführlich die Regeln zur Konfliktlösung, die im Do
 
 • created_at & updated_at: Zeitstempel für die Erstellung und die letzte Aktualisierung der Datei.
 
-### 2. Export Configuration
+### 2. Exportkonfiguration
 
 Der Abschnitt „Export Configuration“ definiert die Zuordnung zwischen den Datenfeldern im System und den entsprechenden Feldern in den Exportdateien.
 
@@ -56,7 +56,7 @@ Der Abschnitt „Export Configuration“ definiert die Zuordnung zwischen den Da
 
 • Debit Note & Credit Note: Definiert Felder für die Erstellung von Belastungs- und Gutschriftsanzeigen bei Abweichungen.
 
-### 3. Conflict Resolution Rules
+### 3. Regeln zur Konfliktlösung
 
 Diese Regeln behandeln Abweichungen zwischen den Rechnungsdaten und den zugehörigen Bestelldaten. Jede Regel besteht aus mehreren Komponenten:
 
@@ -76,61 +76,61 @@ Diese Regeln behandeln Abweichungen zwischen den Rechnungsdaten und den zugehör
 
 Diese Operatoren legen fest, wie die tatsächlichen Rechnungswerte mit den erwarteten Bestellwerten verglichen werden:
 
-• equal
+• equal – gleich
 
-• greater than
+• greater than – größer als
 
-• greater than or equal to
+• greater than or equal to – größer oder gleich
 
-• less than
+• less than – kleiner als
 
-• less than or equal to
+• less than or equal to – kleiner oder gleich
 
-• within tolerance
+• within tolerance – innerhalb der Toleranz
 
-• outside tolerance
+• outside tolerance – außerhalb der Toleranz
 
 ### Genehmigungsstatus
 
 Gibt an, ob eine Abweichung genehmigt ist oder nicht:
 
-• approved
+• approved – genehmigt
 
-• rejected
+• rejected – abgelehnt
 
-• any
+• any – beliebiger Genehmigungsstatus
 
 ### Aktionstypen
 
 Legt fest, welche Aktionen bei einer erkannten Abweichung ausgeführt werden:
 
-• receipt line
+• receipt line – Wareneingangsposition
 
-• cost line
+• cost line – Kostenposition
 
-• header charge
+• header charge – Kopfzuschlag
 
-• line charge
+• line charge – Positionszuschlag
 
-• tax line
+• tax line – Steuerposition
 
-• debit note receipt line
+• debit note receipt line – Wareneingangsposition der Belastungsanzeige
 
-• debit note cost line
+• debit note cost line – Kostenposition der Belastungsanzeige
 
-• debit note header charge
+• debit note header charge – Kopfzuschlag der Belastungsanzeige
 
-• debit note line charge
+• debit note line charge – Positionszuschlag der Belastungsanzeige
 
-• credit note receipt line
+• credit note receipt line – Wareneingangsposition der Gutschrift
 
-• credit note cost line
+• credit note cost line – Kostenposition der Gutschrift
 
-• credit note header charge
+• credit note header charge – Kopfzuschlag der Gutschrift
 
-• credit note line charge
+• credit note line charge – Positionszuschlag der Gutschrift
 
-• credit note tax line
+• credit note tax line – Steuerposition der Gutschrift
 
 ### Regelbeispiele
 
@@ -176,11 +176,11 @@ Legt fest, welche Aktionen bei einer erkannten Abweichung ausgeführt werden:
 
 Dieser Screenshot zeigt die Oberfläche der Regelverwaltung, in der Administratoren alle Regeln zur Konfliktlösung einsehen und verwalten können. Zu den wichtigsten Elementen gehören:
 
-• Add Rule Button: Ermöglicht das Hinzufügen neuer Regeln.
+• Schaltfläche zum Hinzufügen einer Regel: Ermöglicht das Hinzufügen neuer Regeln.
 
-• List of Rules: Zeigt alle aktiven Regeln mit Details wie Name, Section und Active-Status an.
+• Regelliste: Zeigt alle aktiven Regeln mit Details wie Name, Section und Active-Status an.
 
-• Section Dropdown: Filtert die Regeln nach dem Bereich, auf den sie angewendet werden (z. B. Receipt Lines, Line Charges).
+• Auswahl des Regelbereichs (Section): Filtert die Regeln nach dem Bereich, auf den sie angewendet werden (z. B. Receipt Lines, Line Charges).
 
 ### Screenshot 2: Detaillierte Regelbearbeitung
 
@@ -188,8 +188,8 @@ Dieser Screenshot zeigt die Oberfläche der Regelverwaltung, in der Administrato
 
 Dieser Screenshot zeigt die Detailansicht einer Regel, die gerade bearbeitet wird. Zu den wichtigsten Elementen gehören:
 
-• Criteria Section: Definiert die Bedingungen, unter denen die Regel ausgelöst wird. Die Kriterien könnten z. B. festlegen, dass die Regel angewendet werden soll, wenn Menge und Einzelpreis von der Bestellung abweichen, aber innerhalb der Toleranz liegen.
+• Kriterienbereich: Definiert die Bedingungen, unter denen die Regel ausgelöst wird. Die Kriterien könnten z. B. festlegen, dass die Regel angewendet werden soll, wenn Menge und Einzelpreis von der Bestellung abweichen, aber innerhalb der Toleranz liegen.
 
-• Actions Section: Legt fest, welche Aktionen ausgeführt werden, wenn die Kriterien erfüllt sind. Dazu können die Anpassung der Rechnungspositionen, die Erstellung von Gutschriften oder Belastungsanzeigen oder die Anwendung zusätzlicher Kosten gehören.
+• Aktionsbereich: Legt fest, welche Aktionen ausgeführt werden, wenn die Kriterien erfüllt sind. Dazu können die Anpassung der Rechnungspositionen, die Erstellung von Gutschriften oder Belastungsanzeigen oder die Anwendung zusätzlicher Kosten gehören.
 
-• Document Type and Costing Elements: Ermöglicht dem Administrator, bestimmte Aktionen Dokumenttypen und Kostenelementen zuzuordnen, was Flexibilität im Umgang mit verschiedenen Szenarien bietet.
+• Dokumenttyp und Kostenelemente: Ermöglicht dem Administrator, bestimmte Aktionen Dokumenttypen und Kostenelementen zuzuordnen, was Flexibilität im Umgang mit verschiedenen Szenarien bietet.

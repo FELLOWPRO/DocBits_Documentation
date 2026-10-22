@@ -33,5 +33,5 @@ EHF (Elektronisk Handelsformat) Invoice 3.0 ist der norwegische E-Rechnungsstand
 
 ## Verwandte Themen
 
-* [Supported Electronic Documents](./)
+* [Unterstützte elektronische Dokumente](./)
 * [Peppol BIS 3.0](peppol-bis-3-0.md)

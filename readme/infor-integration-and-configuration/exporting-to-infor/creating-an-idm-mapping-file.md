@@ -114,7 +114,7 @@ Searchable_PDF_Name=IF_INVOICE_ID
 
 
 
-<figure><img src="../../.gitbook/assets/idm_mapping_file_example.png" alt="IDM Mapping File Example"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/idm_mapping_file_example.png" alt="Beispiel einer IDM-Zuordnungsdatei"><figcaption></figcaption></figure>
 
 ## Export von XML- und EDI-Dateien
 
@@ -141,7 +141,7 @@ SV_EDI_FILE_EXTENSION=.xml
 SV_XML_FILE_EXTENSION=.xml
 ```
 
-<figure><img src="../../.gitbook/assets/static_values_configuration_example.png" alt="Static Values Configuration Example"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/static_values_configuration_example.png" alt="Beispiel für die Konfiguration statischer Werte"><figcaption></figcaption></figure>
 
 ### XML-Mapping
 
@@ -159,7 +159,7 @@ EFE_XML_EXPORT_FILENAME = SV_XML_FILE_PREFIX+IF_INVOICE_ID+SV_XML_FILE_EXTENSION
 
 Hinweis: Stellen Sie sicher, dass **export_doc_type** auf den IDM-Rechnungstyp gesetzt ist. In diesem Beispiel ist es für **M3** festgelegt.
 
-<figure><img src="../../.gitbook/assets/xml_mapping_example.png" alt="XML Mapping Example"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/xml_mapping_example.png" alt="Beispiel einer XML-Zuordnung"><figcaption></figcaption></figure>
 
 ### EDI-Mapping
 
@@ -178,9 +178,9 @@ EFE_EDI_EXPORT_FILENAME = SV_EDI_FILE_PREFIX+IF_INVOICE_NUMBER+SV_EDI_FILE_EXTEN
 
 Hinweis: Stellen Sie sicher, dass **export_doc_type** auf den IDM-Rechnungstyp gesetzt ist. In diesem Beispiel ist es für **M3** festgelegt.
 
-<figure><img src="../../.gitbook/assets/edi_mapping_example.png" alt="EDI Mapping Example"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/edi_mapping_example.png" alt="Beispiel einer EDI-Zuordnung"><figcaption></figcaption></figure>
 
-### Document Manager in Infor
+### Dokumentenverwaltung in Infor
 
 Gehen Sie zum Document Manager und wählen Sie den Namen des aktuellen Dokumenttyps aus, den Sie exportieren möchten, zum Beispiel Supplier Invoice.
 

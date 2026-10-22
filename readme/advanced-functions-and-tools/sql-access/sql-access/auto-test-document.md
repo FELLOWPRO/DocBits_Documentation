@@ -1,17 +1,17 @@
-# Auto test document
+# Automatisches Testdokument
 
 ## Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_id`: internal
-* `doc_type`: DOC Type
+* `id`: intern
+* `org_id`: ID der Organisation
+* `doc_id`: intern
+* `doc_type`: Dokumenttyp
 * `extracted_data`: text
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
-* `filename`: internal
+* `filename`: intern
 
 ## Analyse & Beschreibung
 

@@ -1,46 +1,46 @@
-# Field
+# Feld
 
 ## Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_type`: DOC Type
+* `id`: intern
+* `org_id`: ID der Organisation
+* `doc_type`: Dokumenttyp
 * `is_sub_doc_type_field`: boolean
-* `profile`: internal
-* `field_name`: internal
-* `field_type`: internal
-* `title`: internal
-* `translation_key`: internal
+* `profile`: intern
+* `field_name`: intern
+* `field_type`: intern
+* `title`: intern
+* `translation_key`: intern
 * `hide_label`: boolean
-* `input_type`: internal
-* `input_size`: internal
-* `icon_left`: internal
-* `icon_right`: internal
-* `icon_above`: internal
-* `group_id`: internal
+* `input_type`: intern
+* `input_size`: intern
+* `icon_left`: intern
+* `icon_right`: intern
+* `icon_above`: intern
+* `group_id`: intern
 * `row_order`: integer
 * `sort_order`: integer
-* `fuzzy_name`: internal
-* `fuzzy_field`: internal
+* `fuzzy_name`: intern
+* `fuzzy_field`: intern
 * `fuzzy_primary_field`: boolean
-* `label_align`: internal
+* `label_align`: intern
 * `calculation_formula`: text
 * `clean_field`: boolean
 * `alphanumeric_field`: boolean
-* `placeholder`: internal
-* `coordinates`: internal
-* `normalized_coordinates`: internal
-* `threshold`: internal
-* `reference_point`: internal
-* `checkbox_group`: internal
-* `list_of_values`: internal
+* `placeholder`: intern
+* `coordinates`: intern
+* `normalized_coordinates`: intern
+* `threshold`: intern
+* `reference_point`: intern
+* `checkbox_group`: intern
+* `list_of_values`: intern
 * `enforce_list_of_values`: boolean
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
-* `costing_element`: internal
-* `erp_field_name`: internal
+* `costing_element`: intern
+* `erp_field_name`: intern
 
 ## Analyse & Beschreibung
 

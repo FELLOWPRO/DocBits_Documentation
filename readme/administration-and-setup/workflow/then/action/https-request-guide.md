@@ -326,7 +326,7 @@ Die HTTPS-Anfragekarte verwendet eine konfigurierte HTTPS-URL und eigene Header.
 
 ***
 
-## Best Practices
+## Bewährte Vorgehensweisen
 
 ✅ **Do:**
 

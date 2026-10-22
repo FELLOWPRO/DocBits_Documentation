@@ -25,7 +25,7 @@ Dokument-Untertypen in Docbits ermöglichen eine flexiblere und maßgeschneidert
     *   Enthält den Namen des Untertyps und eine Reihe von Aktionen, die darauf ausgeführt werden können.
 2.  **Aktionen**:
 
-<figure><img src="../../../../.gitbook/assets/docbits_sub_organizations_nav.png" alt="Docbits Sub Organizations Nav"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/docbits_sub_organizations_nav.png" alt="Navigation zu den Unterorganisationen in DocBits"><figcaption></figcaption></figure>
 
 *   **Felder**: Konfigurieren Sie, welche Datenfelder im Untertyp enthalten sind und wie sie verwaltet werden.
 *   **Layout bearbeiten**: Ändern Sie das visuelle Layout, wie Informationen für diesen Untertyp angezeigt und eingegeben werden.

@@ -1,10 +1,10 @@
-# Cache Management
+# Cache-Verwaltung
 
-<figure><img src="../../.gitbook/assets/cache_management-de.png" alt="Cache Management"><figcaption><p>Seite „Cache Management“</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/cache_management-de.png" alt="Cache-Verwaltung"><figcaption><p>Seite „Cache Management“</p></figcaption></figure>
 
 Cache Management steuert das automatische Leeren von Caches für häufig abgerufene Daten. Die Aktivierung des Cachings verbessert die Leistung, da wiederholte API-Aufrufe reduziert werden.
 
-## Clear Cache
+## Cache leeren
 
 Klicken Sie auf die Schaltfläche **Clear Cache** (oben rechts), um alle zwischengespeicherten Daten sofort manuell zu invalidieren.
 

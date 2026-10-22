@@ -2,11 +2,11 @@
 
 ## **Übersicht**
 
-Wenn Ihre extrahierte Tabelle die **Rabatt**- oder **Rabattprozentsatz**-Spalte enthält, wird **DocBits** automatisch den entsprechenden Rabatt auf den Einzelpreis während der Verarbeitung im [**Bestellnummer-Abgleichsbildschirm**](../../../end-user-section/purchase-order-matching/) anwenden.
+Wenn Ihre extrahierte Tabelle die **Rabatt**- oder **Rabattprozentsatz**-Spalte enthält, wird **DocBits** automatisch den entsprechenden Rabatt auf den Einzelpreis während der Verarbeitung im [**Bestellnummer-Abgleichsbildschirm**](README.md) anwenden.
 
 ## Ausnahmen
 
-Rabatte werden nicht automatisch angewendet, wenn die Mehrfachabgleiche-Funktion verwendet wird. Weitere Informationen zur Mehrfachabgleiche-Funktion finden Sie [hier](../../../end-user-section/purchase-order-matching/#mehrfachabgleiche).
+Rabatte werden nicht automatisch angewendet, wenn die Mehrfachabgleiche-Funktion verwendet wird. Weitere Informationen zur Mehrfachabgleiche-Funktion finden Sie [hier](README.md#mehrfachabgleiche).
 
 ## Rabattberechnung
 

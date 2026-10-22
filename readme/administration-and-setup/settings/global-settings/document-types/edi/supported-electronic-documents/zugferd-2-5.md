@@ -12,8 +12,8 @@ Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfi
 
 | Eigenschaft | Wert |
 |-------------|------|
-| **Land / Region** | Germany |
-| **Dokumenttypen** | Invoice, Credit Note |
+| **Land / Region** | Deutschland |
+| **Dokumenttypen** | Rechnung, Gutschrift |
 | **Format** | CII (PDF/A-3 eingebettet) oder UBL XML |
 | **Standard** | ZUGFeRD 2.5 |
 | **Basiert auf** | EN 16931 |
@@ -26,9 +26,9 @@ Alle fünf Profile werden unterstützt: MINIMUM, BASIC WL, BASIC, EN 16931 (COMF
 
 | Komponente | Status |
 |-----------|--------|
-| Vorschau | ✅ Supported |
-| Feldextraktion | ✅ Supported |
-| Transformation | ✅ Supported |
+| Vorschau | ✅ Unterstützt |
+| Feldextraktion | ✅ Unterstützt |
+| Transformation | ✅ Unterstützt |
 
 ## Verwandte Seiten
 

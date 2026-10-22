@@ -544,7 +544,7 @@ Document now has all calculated and populated fields
 
 ***
 
-## Best Practices
+## Bewährte Vorgehensweisen
 
 ✅ **Do:**
 

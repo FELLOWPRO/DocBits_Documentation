@@ -778,7 +778,7 @@ DocBits bietet nun die Möglichkeit, die innerhalb der Plattform verwendete OCR-
 
 ### Neue Funktionen:
 
-## Rule Manager
+## Regelmanager
 
 [rule-manager](../../administration-and-setup/settings/document-processing/rule-manager/ "mention") bietet die Flexibilität, Regeln zur Konfliktlösung zu erstellen und zu bearbeiten, die auf das DocBits-Rechnungssystem zugeschnitten sind. Diese Regeln sind darauf ausgelegt, Abweichungen zwischen Rechnungsdetails und Bestelldaten (PO) automatisch zu behandeln und so einen genauen finanziellen Abgleich sicherzustellen. Das System wendet diese Regeln auf Rechnungspositionen, Zuschläge und Steuern an und erzeugt bei Bedarf entsprechende Anpassungen oder Hinweise.
 

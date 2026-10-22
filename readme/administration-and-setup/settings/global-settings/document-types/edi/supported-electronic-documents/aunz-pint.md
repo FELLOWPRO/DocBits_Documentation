@@ -30,7 +30,7 @@ AUNZ PINT ist die australische/neuseeländische Implementierung des Peppol Inter
 
 ## Standardvorschau
 
-<figure><img src="aunz-pint-preview.png" alt="AUNZ PINT Rechnungsvorschau in DocBits"><figcaption><p>Standard-DocBits-Vorschau für eine AUNZ PINT-Rechnung</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="AUNZ PINT Rechnungsvorschau in DocBits"><figcaption><p>Standard-DocBits-Vorschau für eine AUNZ PINT-Rechnung</p></figcaption></figure>
 
 ## Feldzuordnung
 

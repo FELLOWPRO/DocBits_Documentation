@@ -2,7 +2,7 @@
 hidden: true
 ---
 
-# Fuzzy Data Configuration with List of Values
+# Fuzzy-Daten mit Wertelisten konfigurieren
 
 ### **Überblick**
 

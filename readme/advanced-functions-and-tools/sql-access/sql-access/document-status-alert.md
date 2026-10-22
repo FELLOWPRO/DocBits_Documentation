@@ -1,27 +1,27 @@
-# Document Status alert
+# Dokumentstatusbenachrichtigung
 
 ## Tabelle `public.document_status_alert`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_type_id`: internal
-* `doc_type_key`: internal
-* `doc_status`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `doc_type_id`: intern
+* `doc_type_key`: intern
+* `doc_status`: intern
 * `email_address`: text
 * `send_to_assigned_user`: boolean
 * `delay_delta`: integer
-* `delay_delta_type`: internal
+* `delay_delta_type`: intern
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
-* `name`: internal
+* `name`: intern
 * `is_recursive`: boolean
 * `is_active`: boolean
-* `priority`: internal
-* `email_template_id`: internal
+* `priority`: intern
+* `email_template_id`: intern
 
 ### Analyse & Beschreibung
 

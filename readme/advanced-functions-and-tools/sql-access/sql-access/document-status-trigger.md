@@ -1,14 +1,14 @@
-# Document status trigger
+# Dokumentstatusauslöser
 
 ## Tabelle `public.document_status_trigger`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `trigger_doc_type`: internal
-* `trigger_doc_status`: internal
-* `trigger_url`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `trigger_doc_type`: intern
+* `trigger_doc_status`: intern
+* `trigger_url`: intern
 * `is_active`: boolean
 * `created_by`: integer
 * `created_on`: timestamp with time zone

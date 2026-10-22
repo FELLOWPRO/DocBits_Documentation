@@ -195,7 +195,7 @@ Bildschirm **Freigabe** · Priorität **5** · *Document Status is Pending secon
 
 Bildschirm **Ablehnen** · Priorität **10** · *Supplier ID is one of* `10040, 10041` · Ziel *Ablehnung mit Grundcodes*.
 
-## Best Practices
+## Bewährte Vorgehensweisen
 
 * **Spezifisch vor allgemein.** Lieferantenregeln oberhalb von Länderregeln, Länderregeln oberhalb des Standardlayouts.
 * **Lassen Sie Prioritätslücken** (5, 10, 20 …), damit neue Regeln ohne Neunummerierung hineinpassen.

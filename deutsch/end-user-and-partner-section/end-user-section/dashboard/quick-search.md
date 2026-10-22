@@ -144,7 +144,7 @@ Verwenden Sie `>`, `<`, `>=`, `<=` für Datumsbereiche. Sie können auch **relat
 invoice_sub_type="Cost Invoice"
 ```
 
-Der Rechnungs-Untertyp ist eine feste Liste (zum Beispiel **Cost Invoice** oder **Purchase
+Der Rechnungs-Untertyp ist eine feste Liste (zum Beispiel **Kostenrechnung** oder **Purchase
 Invoice**), daher ist `=` ein **exakter** Abgleich, und die Leiste bietet eine Wertauswahl an, wenn
 Sie `invoice_sub_type=` eingeben. Verwenden Sie `invoice_sub_type!="Cost Invoice"` für
 alles außer diesem Untertyp.

@@ -149,7 +149,7 @@ Oben sehen Sie ein Berechnungsbeispiel für MTZ mit einem Filter für Artikelnum
 
 Bei einer manuellen Einrichtung wird empfohlen, Berechnungen, die von neuen Spalten abhängen, in einen separaten Workflow auszulagern. Um mit der Berechnung fortzufahren, können Sie die Run Workflow Card verwenden.
 
-**Run Workflow**
+**Workflow ausführen**
 
 <figure><img src="../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
 

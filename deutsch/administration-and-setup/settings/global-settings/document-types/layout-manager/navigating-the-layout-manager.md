@@ -1,6 +1,6 @@
 # Im Layout Builder navigieren
 
-Verwenden Sie den **Layout Builder**, um die Felder und Gruppen anzuordnen, die Benutzer in einem Dokument sehen. Die Aufnahmen zeigen die deutsche Oberfläche mit dem Layout **Standard** für Rechnungen. Eingabewerte sind ausgeblendet; die Dokumentvorschau liegt außerhalb des Bildausschnitts.
+Verwenden Sie den **Layout-Editor**, um die Felder und Gruppen anzuordnen, die Benutzer in einem Dokument sehen. Die Aufnahmen zeigen die deutsche Oberfläche mit dem Layout **Standard** für Rechnungen. Eingabewerte sind ausgeblendet; die Dokumentvorschau liegt außerhalb des Bildausschnitts.
 
 ## Das Rechnungs-Layout öffnen
 

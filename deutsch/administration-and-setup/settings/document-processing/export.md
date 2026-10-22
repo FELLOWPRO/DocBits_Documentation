@@ -10,7 +10,7 @@ Die Exportseite zeigt alle konfigurierten Exporteinstellungen an, einschließlic
 
 ## Wo finde ich es
 
-Sie finden es unter: **Einstellungen** → **Dokumentenverarbeitung** → **Export**
+Sie finden es unter: **Einstellungen** → **Dokumentenverarbeitung** → **Exportieren**
 
 <figure><img src="../../../.gitbook/assets/s150-export_settings_menu_access-de.png" alt="Exportkonfiguration über die deutschen Einstellungen öffnen."><figcaption><p>Exportkonfiguration über die deutschen Einstellungen öffnen.</p></figcaption></figure>
 
@@ -184,7 +184,7 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 * **ION API-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager.
 * **IDM-Mapping-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe IDM-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **Cloud / On-Prem Toggle** Ein Schalter zur Angabe des Infor-Bereitstellungstyps:
-  * **Cloud**: Wählen Sie dies, wenn Sie Infor CloudSuite-Kunde sind.
+  * **Cloud-Bereitstellung**: Wählen Sie dies, wenn Sie Infor CloudSuite-Kunde sind.
   * **On-Prem**: Wählen Sie dies, wenn Infor selbst gehostet wird.
 
 </details>
@@ -207,7 +207,7 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 * **ION API-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager.
 * **BOD-Zuordnungsdatei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe BOD-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
 * **Cloud / On-Prem Toggle** Ein Schalter zur Angabe des Infor-Bereitstellungstyps:
-  * **Cloud**: Wählen Sie dies, wenn Sie Infor CloudSuite-Kunde sind.
+  * **Cloud-Bereitstellung**: Wählen Sie dies, wenn Sie Infor CloudSuite-Kunde sind.
   * **On-Prem**: Wählen Sie dies, wenn Infor selbst gehostet wird.
 
 </details>
@@ -231,7 +231,7 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 * **IDM-Mapping-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe IDM-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **BOD-Zuordnungsdatei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe BOD-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
 * **Cloud / On-Prem Toggle** Ein Schalter zur Angabe des Infor-Bereitstellungstyps:
-  * **Cloud**: Wählen Sie dies, wenn Sie Infor CloudSuite-Kunde sind.
+  * **Cloud-Bereitstellung**: Wählen Sie dies, wenn Sie Infor CloudSuite-Kunde sind.
   * **On-Prem**: Wählen Sie dies, wenn Infor selbst gehostet wird.
 
 </details>
@@ -255,7 +255,7 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 * **Dokumenttyp** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
 * **ION API-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager.
 * **IDM-Mapping-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe IDM-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **LN Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe LN-Mapping-Beispiel](../../../infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/)
+* **LN-Mapping-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe LN-Mapping-Beispiel](../../../infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/)
 
 </details>
 
@@ -276,7 +276,7 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 * **Dokumenttyp** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
 * **ION API-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager.
 * **IDM-Mapping-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe IDM-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **M3 Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe M3-Mapping-Beispiel](../../../infor-integration-and-configuration/exporting-to-infor/m3/example-export-m3.md)
+* **M3 Mapping-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe M3-Mapping-Beispiel](../../../infor-integration-and-configuration/exporting-to-infor/m3/example-export-m3.md)
 
 </details>
 
@@ -297,6 +297,6 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 * **Dokumenttyp** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
 * **ION API-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager.
 * **IDM-Mapping-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe IDM-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **M3 toml Mapping File** Wählen Sie eine Mapping-Datei aus dem Dateimanager oder verwenden Sie die Option Toml auswählen, um ein mit dem Regel-Manager erstelltes toml zu verwenden. [Benötigen Sie Hilfe bei der Erstellung? Siehe Regel-Manager-Leitfaden](rule-manager/)
+* **M3-TOML-Zuordnungsdatei** Wählen Sie eine Mapping-Datei aus dem Dateimanager oder verwenden Sie die Option Toml auswählen, um ein mit dem Regel-Manager erstelltes toml zu verwenden. [Benötigen Sie Hilfe bei der Erstellung? Siehe Regel-Manager-Leitfaden](rule-manager/)
 
 </details>

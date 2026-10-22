@@ -8,9 +8,9 @@ Der Zugriff auf das Card SDK setzt die entsprechende Freischaltung voraus. Ohne 
 
 ## Funktionsweise
 
-- **Download SDK Template** — starten Sie mit der offiziellen Vorlage, die die erwartete Struktur enthält.
-- **Upload ZIP** — das ZIP muss `app.json` und einen Ordner `.docflowcompose/flow/` mit den Kartendefinitionen enthalten (max. 10 MB). Upload &#x26; Validate prüft das Paket, bevor es akzeptiert wird.
-- **GitHub Import** — eine Kartendefinition direkt aus einem GitHub-Repository importieren.
-- **Submissions** — den Status der von Ihnen eingereichten Karten verfolgen.
+- **SDK-Vorlage herunterladen** — starten Sie mit der offiziellen Vorlage, die die erwartete Struktur enthält.
+- **ZIP hochladen** — das ZIP muss `app.json` und einen Ordner `.docflowcompose/flow/` mit den Kartendefinitionen enthalten (max. 10 MB). Upload &#x26; Validate prüft das Paket, bevor es akzeptiert wird.
+- **GitHub-Import** — eine Kartendefinition direkt aus einem GitHub-Repository importieren.
+- **Einreichungen** — den Status der von Ihnen eingereichten Karten verfolgen.
 
-Nach Validierung und Annahme erscheinen Ihre eigenen Karten in der **Add Card**-Bibliothek neben den eingebauten Karten.
+Nach Validierung und Annahme erscheinen Ihre eigenen Karten in der **Karte hinzufügen**-Bibliothek neben den eingebauten Karten.

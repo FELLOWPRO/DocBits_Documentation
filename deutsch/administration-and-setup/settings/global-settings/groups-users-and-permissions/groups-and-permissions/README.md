@@ -22,11 +22,11 @@ Wählen Sie eine Gruppe links aus und öffnen Sie in ihren Details die Zugriffsk
 
 | Berechtigung | Beschreibung |
 |------------|-------------|
-| **View** | Berechtigung, Dokumente dieses Typs zu sehen. |
-| **Update** | Berechtigung, Dokumente dieses Typs zu ändern. |
-| **Delete** | Berechtigung, Dokumente dieses Typs zu entfernen. |
-| **First Approval** | Berechtigung, die erste Genehmigung durchzuführen. |
-| **Second Approval** | Berechtigung, eine zweite Genehmigungsstufe durchzuführen (falls zutreffend). |
+| **Anzeigen** | Berechtigung, Dokumente dieses Typs zu sehen. |
+| **Aktualisieren** | Berechtigung, Dokumente dieses Typs zu ändern. |
+| **Löschen** | Berechtigung, Dokumente dieses Typs zu entfernen. |
+| **Erste Genehmigung** | Berechtigung, die erste Genehmigung durchzuführen. |
+| **Zweite Genehmigung** | Berechtigung, eine zweite Genehmigungsstufe durchzuführen (falls zutreffend). |
 
 Jede Zeile der Berechtigungstabelle steht für einen Dokumenttyp (z. B. Rechnung, Gutschrift, Lieferschein). Aktivieren oder deaktivieren Sie die Kontrollkästchen, um der Gruppe Berechtigungen zu erteilen oder zu entziehen.
 

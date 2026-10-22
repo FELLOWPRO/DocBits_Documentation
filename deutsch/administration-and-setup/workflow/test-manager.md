@@ -1,6 +1,6 @@
-# Test Manager
+# Testverwaltung
 
-Mit dem **Test Manager** können Sie wiederverwendbare **Testszenarien** für Ihre Workflows speichern und gemeinsam ausführen — so können Sie sicherstellen, dass sich ein Workflow auch nach einer Änderung noch korrekt verhält. Er funktioniert sowohl für Standard- als auch für Advanced-Workflows.
+Mit dem **Testverwaltung** können Sie wiederverwendbare **Testszenarien** für Ihre Workflows speichern und gemeinsam ausführen — so können Sie sicherstellen, dass sich ein Workflow auch nach einer Änderung noch korrekt verhält. Er funktioniert sowohl für Standard- als auch für Advanced-Workflows.
 
 Öffnen Sie ihn über **Workflow-Dashboard → Testmanagerliste**.
 
@@ -24,5 +24,5 @@ Die Detailansicht zeigt den Szenarionamen und **Status**, den **Workflow-Namen**
 
 Das sind zwei verschiedene Dinge:
 
-- **Test Manager** (diese Seite) — *gespeicherte, wiederholbare* Szenarien mit erwarteten Ergebnissen, die gemeinsam mit **Alle Tests ausführen** ausgeführt werden. Verwenden Sie ihn für Regressionstests nach Änderungen.
-- **Testen im Builder** — die direkten Steuerelemente **Validate** und **Test** innerhalb des Advanced Workflow-Builders, für schnelle Prüfungen während des Erstellens. Siehe [Validierung & Testen](advanced-workflow/validation-and-testing.md).
+- **Testverwaltung** (diese Seite) — *gespeicherte, wiederholbare* Szenarien mit erwarteten Ergebnissen, die gemeinsam mit **Alle Tests ausführen** ausgeführt werden. Verwenden Sie ihn für Regressionstests nach Änderungen.
+- **Testen im Builder** — die direkten Steuerelemente **Validiere** und **prüfen** innerhalb des Advanced Workflow-Builders, für schnelle Prüfungen während des Erstellens. Siehe [Validierung & Testen](advanced-workflow/validation-and-testing.md).

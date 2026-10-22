@@ -1,7 +1,27 @@
 # 任务
 
-你可以在这里查看自己的任务。你可以选择两种不同的布局，其中一种显示的信息更详细。你还可以按不同条件筛选任务，例如任务是否分配给你，或任务的状态。
+视频显示普通测试用户正在处理带有合成文档的任务。
 
-<figure><img src="../../.gitbook/assets/s150-tasks1-zh.png" alt="按状态分组的任务看板；任务内容已隐藏。"><figcaption><p>按状态分组的任务看板；任务内容已隐藏。</p></figcaption></figure>
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/document-tasks-customer/v1/zh.mp4" %}
+任务
+{% endembed %}
 
-<figure><img src="../../.gitbook/assets/s150-tasks2-zh.png" alt="任务列表；文档数据已隐藏。"><figcaption><p>任务列表；文档数据已隐藏。</p></figcaption></figure>
+[带字幕观看](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/document-tasks-customer/v1/zh.html)
+
+注意：某些原生产品标签可能未翻译。录像保留了实际的用户界面。
+
+使用任务概览查找分配的工作并跟踪其进度。看板按状态对任务进行分组；列表提供更多详细信息。按分配过滤并使用搜索来定位特定任务。优先级和截止日期有助于规划工作顺序。
+
+## 处理分配的文档任务
+
+1. 打开任务并阅读其描述和分配。
+2. 检查链接的原始文档。仅凭任务标题不能证明文档是正确的。
+3. 将任务设置为进行中，并在执行工作时保存。
+4. 在任务描述中记录结果。
+5. 完成任务，保存并重新加载以确认存储的状态和反馈。检查其在任务概览中的位置。
+
+视频使用普通测试用户和合成文档。完成任务与批准或导出其发票是分开的。可用操作取决于帐户的权限。
+
+<figure><img src="../../.gitbook/assets/customer-overview-zh-1128586609a0.png" alt="使用合成数据的任务概览。"><figcaption><p>使用合成数据的任务概览。</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/customer-find-zh-1128586609a0.png" alt="使用合成演示数据的任务列表。"><figcaption><p>使用合成演示数据的任务列表。</p></figcaption></figure>

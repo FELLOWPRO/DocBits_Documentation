@@ -43,7 +43,7 @@
   * [Infor M3（M3 集成）](overview-and-basics/faq/infor-m3-m3-integration/README.md)
     * [成本要素配置不正确。请联系管理员进行配置。](overview-and-basics/faq/infor-m3-m3-integration/costing-elements-are-not-properly-configured.-please-ask-your-admin-to-configure-it..md)
     * [M3 API 导出诊断指南](overview-and-basics/faq/infor-m3-m3-integration/m3-api-export-diagnostic-guide.md)
-  * [法国 2026 年电子发票：必须使用 PDP/PPF 渠道，PEPPOL 仅作为传输方式](overview-and-basics/faq/mandatory-pdp-ppf-channels-peppol-as-transport-only-for-frances-2026-e-invoicing.md)
+  * [法国电子发票：获批平台与 PEPPOL](overview-and-basics/faq/mandatory-pdp-ppf-channels-peppol-as-transport-only-for-frances-2026-e-invoicing.md)
 
 ## 最终用户与合作伙伴 <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
@@ -505,7 +505,7 @@
       * [TransactionConfig Pro Template](administration-and-setup/settings/document-processing/rule-manager/transactionconfig-pro-template/README.md)
         * [案例 1、2、3：数量和单价在容差范围内](administration-and-setup/settings/document-processing/rule-manager/transactionconfig-pro-template/case-1-2-3-quantity-and-unit-price-within-tolerance.md)
         * [情况 4、5：数量在容差范围内，单价超出容差（已审批）](administration-and-setup/settings/document-processing/rule-manager/transactionconfig-pro-template/case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved.md)
-        * [案例 15：费用行 - 单位费用超出容差（已拒绝）](administration-and-setup/settings/document-processing/rule-manager/transactionconfig-pro-template/charge-per-unit-outside-tolerance-rejected.md)
+        * [案例 15：明细费用的单位费用超出容差（已拒绝）](administration-and-setup/settings/document-processing/rule-manager/transactionconfig-pro-template/charge-per-unit-outside-tolerance-rejected.md)
         * [案例 14：抬头费用 - 单位费用超出容差（已审批）](administration-and-setup/settings/document-processing/rule-manager/transactionconfig-pro-template/charge-per-unit-outside-tolerance-approved.md)
         * [单位抬头费用在容差范围内](administration-and-setup/settings/document-processing/rule-manager/transactionconfig-pro-template/case-12-13-header-charge-charge-per-unit-within-tolerance.md)
         * [超出容差的单位费用（已拒绝）](administration-and-setup/settings/document-processing/rule-manager/transactionconfig-pro-template/charge-per-unit-outside-tolerance-rejected-1.md)
@@ -517,7 +517,7 @@
         * [案例 11a：数量超出容差（正向超差被拒绝），单价在容差范围内](administration-and-setup/settings/document-processing/rule-manager/transactionconfig-pro-template/case-11a-quantity-outside-tolerance-positive-rejected-unit-price-within-tolerance.md)
         * [案例 10a：数量超出容差（负向偏差不予接受），单价在容差范围内](administration-and-setup/settings/document-processing/rule-manager/transactionconfig-pro-template/case-10a-quantity-outside-tolerance-negative-rejected-unit-price-within-tolerance.md)
         * [案例 7：数量在容差范围内，单价超出容差（正向超差，已拒绝）](administration-and-setup/settings/document-processing/rule-manager/transactionconfig-pro-template/case-7-quantity-within-tolerance-unit-price-outside-tolerance-positive-rejected.md)
-        * [案例 6：数量在容差范围内，单价超出负向容差（拒绝）](administration-and-setup/settings/document-processing/rule-manager/transactionconfig-pro-template/case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
+        * [案例 6：数量在容差内，单价低于允许下限（已拒绝）](administration-and-setup/settings/document-processing/rule-manager/transactionconfig-pro-template/case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
         * [案例 8a、9a：数量超出容差（已批准），单价在容差范围内](administration-and-setup/settings/document-processing/rule-manager/transactionconfig-pro-template/case-8a-9a-quantity-outside-tolerance-approved-unit-price-within-tolerance.md)
         * [案例 15：抬头费用——单位费用超出容差范围（已拒绝）](administration-and-setup/settings/document-processing/rule-manager/transactionconfig-pro-template/case-15-header-charge-charge-per-unit-outside-tolerance-rejected.md)
         * [税费行](administration-and-setup/settings/document-processing/rule-manager/transactionconfig-pro-template/tax-lines.md)

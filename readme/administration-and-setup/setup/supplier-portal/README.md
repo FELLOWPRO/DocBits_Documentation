@@ -6,18 +6,18 @@
 
 ## 如何启用供应商门户
 
-1.  前往 **Settings → Document Processing → Module**。
+1.  前往**设置 → 文档处理 → 模块 → 文档集成**。
 
-    <figure><img src="../../../.gitbook/assets/settings_module.png" alt=""><figcaption></figcaption></figure>
-2.  在 **Shipping & Supplier** 部分中，启用 **Supplier Portal** 选项。
+    <figure><img src="../../../.gitbook/assets/site-complete-supplier-portal-module-zh.png" alt="当前中文“模块 → 文档集成 → 运输和供应商”中的供应商门户开关。只查看现有状态，没有切换模块、修改订阅或邀请供应商。"><figcaption><p>当前中文“模块 → 文档集成 → 运输和供应商”中的供应商门户开关。只查看现有状态，没有切换模块、修改订阅或邀请供应商。</p></figcaption></figure>
+2.  在**运输和供应商**部分检查**供应商门户**。如需启用，由获准管理员核对订阅、组织和访问范围后操作；本次只查看已有状态。
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_1.png" alt=""><figcaption></figcaption></figure>
+
 
 ## 供应商设置
 
 启用**供应商门户**功能后，**设置**菜单底部会显示新的 **Supplier Settings** 部分。
 
-<figure><img src="../../../.gitbook/assets/image (453).png" alt=""><figcaption></figcaption></figure>
+<!-- Obsolete illustration retired: Retire legacy English supplier navigation, analytics or create/invitation result illustration. Current native module/list/filter/column context is shown; preserve complete conditional steps without opening row actions, creating suppliers or sending email. -->
 
 [**Supplier General Settings**](../../settings/supplier-setting/supplier-general-settings.md)：在这里，您可以上传公司徽标来自定义**供应商门户**。徽标会显示在所有电子邮件模板的页眉中。您还可以管理法律文件，例如使用条款和隐私政策。
 
@@ -35,13 +35,13 @@
 
 您可以通过左侧菜单访问**供应商仪表板**，如下所示。
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-supplier-portal-overview-zh.png" alt="当前中文供应商仪表板及工具栏，所有供应商记录值已隐藏。显示所有供应商、待批准、等待注册以及刷新、列设置、分析和新增入口；没有创建、审批或修改供应商，也没有发送邀请。"><figcaption><p>当前中文供应商仪表板及工具栏，所有供应商记录值已隐藏。显示所有供应商、待批准、等待注册以及刷新、列设置、分析和新增入口；没有创建、审批或修改供应商，也没有发送邀请。</p></figcaption></figure>
 
 这里会显示您创建的所有供应商。
 
 ## 筛选供应商
 
-您可以按供应商**姓名**或**编号**搜索，也可以使用高级筛选条件缩小结果范围：
+您可以按供应商**名称**或**编号**搜索，也可以使用高级筛选条件缩小结果范围：
 
 * **供应商组**
 * **状态**
@@ -49,11 +49,11 @@
 
 您还可以指定每页显示的供应商数量。
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-supplier-portal-filters-zh.png" alt="当前中文供应商筛选菜单，包含供应商组（界面写作“供应商团体”）、状态、创建日期及每页数量。只打开菜单，没有应用或清除筛选。"><figcaption><p>当前中文供应商筛选菜单，包含供应商组（界面写作“供应商团体”）、状态、创建日期及每页数量。只打开菜单，没有应用或清除筛选。</p></figcaption></figure>
 
 此外，您可以点击筛选栏左侧的相应类别，快速筛选**待审批**或**待注册**状态的供应商。
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_10.png" alt=""><figcaption></figcaption></figure>
+
 
 ## 供应商详情（内部视图）
 
@@ -79,26 +79,26 @@
 
 ### 刷新表格 <a href="#refresh-table" id="refresh-table"></a>
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_3.png" alt=""><figcaption></figcaption></figure>
+
 
 点击此按钮可刷新仪表板，加载最新的数据和状态。
 
 ### 设置表格列以便整理 <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-supplier-portal-columns-zh.png" alt="当前中文供应商列设置窗口。只查看可见／隐藏列和顺序配置，没有选择列、拖动或保存；此窗口控制供应商表格，不能据此推断采购订单表格已更改。"><figcaption><p>当前中文供应商列设置窗口。只查看可见／隐藏列和顺序配置，没有选择列、拖动或保存；此窗口控制供应商表格，不能据此推断采购订单表格已更改。</p></figcaption></figure>
 
-点击此按钮可打开菜单，管理采购订单表格中列的显示情况。使用复选框和箭头按钮可在显示和隐藏区域之间移动列。您还可以拖放列名称来调整列的顺序。点击 **Done** 保存更改。
+点击列设置按钮，管理供应商表格中列的显示情况。使用复选框和箭头按钮可在显示和隐藏区域之间移动列。您还可以拖放列名称来调整列的顺序。按当前窗口的**完毕（Done）**保存更改；取消会放弃本次调整。相同显示名称可能对应不同列配置，修改前请核对目标列。
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_7.png" alt=""><figcaption></figcaption></figure>
+
 
 ### 分析 <a href="#analytics" id="analytics"></a>
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_5.png" alt=""><figcaption></figcaption></figure>
+<!-- Obsolete illustration retired: Retire legacy English supplier navigation, analytics or create/invitation result illustration. Current native module/list/filter/column context is shown; preserve complete conditional steps without opening row actions, creating suppliers or sending email. -->
 
-点击此按钮会打开一个新部分，显示即将到期的供应商数量及其到期时间。\
+若当前版本提供此分析按钮，可打开到期统计区域；请确认统计字段和时间范围，不要把历史截图中的数量当作当前数据。\
 点击任意类别可应用筛选，仅查看符合条件的供应商。
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_8.png" alt=""><figcaption></figcaption></figure>
+<!-- Obsolete illustration retired: Retire legacy English supplier navigation, analytics or create/invitation result illustration. Current native module/list/filter/column context is shown; preserve complete conditional steps without opening row actions, creating suppliers or sending email. -->
 
 ## 创建供应商并发送注册邮件
 
@@ -106,11 +106,11 @@
 
 1.  点击右上角的加号（+）图标。
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_6.png" alt=""><figcaption></figcaption></figure>
+
 2.  填写必填字段，然后点击 **Save**。
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_11.png" alt=""><figcaption></figcaption></figure>
-3. 系统会自动向供应商发送一封包含账户创建链接的电子邮件。
+    <!-- Obsolete illustration retired: Retire legacy English supplier navigation, analytics or create/invitation result illustration. Current native module/list/filter/column context is shown; preserve complete conditional steps without opening row actions, creating suppliers or sending email. -->
+3. 根据实际邀请与邮件配置，系统可能发起注册邮件。保存供应商记录不等于邮件已经送达；请核对发送结果和收件地址，必要时按下述流程发送邀请。本文没有创建供应商或发送邮件。
 
 ### **向现有供应商发送注册邮件：**
 
@@ -118,11 +118,11 @@
 2. 点击 **Actions** 列中的三点菜单。
 3.  选择 **Magic Link**。
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_12.png" alt=""><figcaption></figcaption></figure>
+    <!-- Obsolete illustration retired: Retire legacy English supplier navigation, analytics or create/invitation result illustration. Current native module/list/filter/column context is shown; preserve complete conditional steps without opening row actions, creating suppliers or sending email. -->
 4. 核实供应商信息。
 5.  点击 **Send**，通过电子邮件发送注册链接。
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_13.png" alt=""><figcaption></figcaption></figure>
+    <!-- Obsolete illustration retired: Retire legacy English supplier navigation, analytics or create/invitation result illustration. Current native module/list/filter/column context is shown; preserve complete conditional steps without opening row actions, creating suppliers or sending email. -->
 
 ## 供应商的注册流程是怎样的？
 

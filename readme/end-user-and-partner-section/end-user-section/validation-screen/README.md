@@ -1,5 +1,13 @@
 # 验证界面
 
+## 以审核人员身份更正并保存发票
+
+将发票原件与字段和三条行项目进行比较，更正发票号码，保存后重新加载以确认存储的值。录屏使用合成电子发票和普通审核账户。保存本次更正与提取训练、审批和导出是不同操作。
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-validation-customer/v1/zh.mp4" %}
+
+[观看带字幕的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-validation-customer/v1/zh.html)
+
 ## 核对发票并完成审核
 
 从仪表板打开发票，对照原始单据核对供应商、日期、发票号码、金额和币种，并查看必填字段提示。直接在原始单据上选择发票号码，确认字段对应，再通过 **Save Rules**（保存提取规则）保留这条提取规则。本示例随后将核对完成的发票提交审批。可执行的操作取决于你的权限和企业配置的流程。

@@ -345,58 +345,29 @@ Document passes through all three
 
 ### Tarjeta: ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP
 
-#### Propósito
+<!-- workflow-facility-example-direct-20261022 -->
 
-Asigna un documento a un grupo de instalaciones específico
+Esta acción del workflow asigna un documento a un grupo según las ubicaciones de sus pedidos de compra vinculados. En la versión 2, `group_name` es un fragmento de texto que se busca en los nombres de los grupos.
 
-#### Cuando usar
+Ejemplo: un documento sintético está vinculado al pedido `DEMO-PO-100`, con `location_id=BERLIN`. Los grupos configurados son `Receiving BERLIN` y `Receiving MUNICH`. Introduzca `Receiving` en `group_name`. El nombre del grupo debe contener tanto ese fragmento como la ubicación del pedido; la comparación no distingue mayúsculas de minúsculas.
 
-* Documento para almacén/instalación específica
-* Operaciones basadas en instalaciones
-* Procesamiento específico de la ubicación
+Resultado esperado: el documento se asigna directamente a `Receiving BERLIN`, siempre que su estado permita la asignación. Sin un pedido vinculado o un grupo coincidente, la asignación no es correcta; revise los registros del workflow. Evite nombres ambiguos: si coinciden varios grupos, esta tarjeta no garantiza un orden de selección fijo.
 
-#### Ejemplo
-
-```
-Shipment notification
-
-Assign to: Berlin Warehouse Team
-    ↓
-Berlin warehouse processes shipment
-    ↓
-Or
-
-Assign to: Munich Warehouse Team
-    ↓
-Munich warehouse processes shipment
-```
+Es una configuración ilustrativa; no se ha ejecutado ningún workflow.
 
 ***
 
 ### Tarjeta: ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP\_SEQUENTIAL
 
-#### Propósito
+<!-- workflow-facility-example-sequential-20261022 -->
 
-Asigna secuencialmente entre instalaciones
+Esta acción del workflow añade los grupos de ubicación coincidentes a la cola de asignación secuencial con una prioridad configurada. No representa el traslado de mercancías entre fábricas o almacenes.
 
-#### Cuando usar
+Ejemplo: utilice el mismo pedido sintético, ubicación y grupos del ejemplo anterior. Establezca `group_name=Receiving` y la prioridad `value=10`. La versión 2 lee la ubicación del pedido vinculado y encuentra `Receiving BERLIN`.
 
-* Procesamiento en múltiples ubicaciones
-* El envío pasa por las instalaciones.
-* Flujo de trabajo basado en la ubicación
+Resultado esperado: se añade a la cola una solicitud de asignación para ese grupo con prioridad `10`. Si coinciden varios grupos, todos reciben la misma prioridad; sus nombres no determinan el orden de procesamiento. Compruebe por separado la cola y la aprobación posterior. Sin coincidencias, no se crea una asignación correcta.
 
-#### Ejemplo
-
-```
-Manufacturing Order:
-
-Step 1: Factory A (Manufacturing) - Build product
-Step 2: Quality Center (Testing) - Test product
-Step 3: Distribution Center (Packing) - Package
-Step 4: Warehouse (Storage) - Store
-
-Document/shipment passes through each
-```
+Es una configuración ilustrativa; no se ha ejecutado ningún workflow.
 
 ***
 

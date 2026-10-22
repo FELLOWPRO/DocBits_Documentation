@@ -91,7 +91,7 @@ Clique em **Nova regra**. O construtor tem três etapas. **Regra de teste** e **
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-line-step1.png" alt="Etapa 1 para uma regra de linha de tabela"><figcaption><p>Uma regra de linha de tabela: a tabela e a coluna que exibe o erro</p></figcaption></figure>
 
-### Etapa 2 — Applies when
+### Passo 2 — Condições de aplicação (Applies when)
 
 Decida se a regra é executada para todos os documentos ou apenas para alguns. Deixe vazio para verificar todos os documentos. Caso contrário, adicione linhas de condição — por exemplo "Document Origin is Deutsch" e "Total Amount greater than 250" — e combine-as com **Todos** / **ANY** e grupos aninhados.
 
@@ -193,7 +193,7 @@ Exceto **Obrigatório**, toda verificação **é aprovada quando o valor está v
 * **Mensagem de erro exibida ao usuário que está processando o erro.** — o texto na tela de validação. Diga o que está errado **e** o que fazer: "Supplier tax ID is missing. German invoices over 250 EUR must show it."
 * **Código de erro** — um código técnico curto, por exemplo `REQUIRED_CONDITIONAL`, `FORMAT_MISMATCH`, `OUT_OF_RANGE`, `DATE_ORDER`, `LINES_HEADER_MISMATCH`, `VALUE_NOT_ALLOWED`. Ele aparece nas exportações e permite agrupar erros.
 
-## Test rule
+## Testar a regra
 
 Clique em **Regra de teste** para executar a versão atual da regra — salva ou não — em um documento. Informe um **ID do documento** ou mude para **Por documento JSON** e cole os dados extraídos. **Nada é salvo** e o documento não é alterado.
 

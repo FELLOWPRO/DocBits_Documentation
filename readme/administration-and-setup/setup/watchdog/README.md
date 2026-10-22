@@ -1,6 +1,6 @@
 # WatchDog
 
-<figure><img src="../../../.gitbook/assets/watchdog-overview-infographic.svg" alt="Visão geral do WatchDog"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-overview-pt.svg" alt="WatchDog: monitorização de pastas, processamento no DocBits e destinos de exportação."><figcaption><p>WatchDog: monitorização de pastas, processamento no DocBits e destinos de exportação.</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/watchdog-infographic-en.png" alt="Infográfico do WatchDog"><figcaption></figcaption></figure>
 

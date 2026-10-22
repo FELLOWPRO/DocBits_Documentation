@@ -1,4 +1,4 @@
-# Statuses de desativação de pedidos de compra
+# Estados de desativação de pedidos de compra
 
 ## **Visão Geral**
 

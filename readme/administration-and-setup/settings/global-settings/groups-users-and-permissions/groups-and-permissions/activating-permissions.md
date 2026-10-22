@@ -1,7 +1,7 @@
 # Ativando Permissões
 
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
-DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
+Tutorial de grupos e permissões do DocBits: definir funções dos utilizadores, direitos de acesso e proteger a sua área de trabalho
 {% endembed %}
 
 Habilitar ou desabilitar o sistema de permissões usando o interruptor tem vários efeitos na funcionalidade do DocBits.
@@ -16,7 +16,7 @@ Habilitar ou desabilitar o sistema de permissões usando o interruptor tem vári
 
 <figure><img src="../../../../../.gitbook/assets/prior-u004-pt.png" alt="Matriz de permissões por tipo de documento e ação. Alguns níveis de acesso permanecem em inglês."><figcaption><p>Matriz de permissões por tipo de documento e ação. Alguns níveis de acesso permanecem em inglês.</p></figcaption></figure>
 
-## Only Assigned Documents
+## Apenas documentos atribuídos
 
 <figure><img src="../../../../../.gitbook/assets/prior-u008-pt.png" alt="Níveis de acesso por ação na matriz de permissões. Alguns níveis de acesso permanecem em inglês."><figcaption><p>Níveis de acesso por ação na matriz de permissões. Alguns níveis de acesso permanecem em inglês.</p></figcaption></figure>
 

@@ -30,7 +30,7 @@
 
 
 
-**Overfitting ou underfitting:**
+**Sobreajuste ou subajuste do modelo:**
 
 * Monitore o desempenho do modelo em relação ao overfitting ou underfitting, o que pode levar a uma baixa capacidade de generalização.
 * Experimente técnicas de regularização, como regularização L2 ou dropout, para reduzir o overfitting.

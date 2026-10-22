@@ -25,7 +25,7 @@ Este recurso ajuda você a gerenciar e reconciliar números de itens entre seu s
 * **Ação:** Opções para gerenciar os mapeamentos, como excluir mapeamentos incorretos.
 
 {% hint style="info" %}
-Veja também a[ Seção de Administração](broken-reference)
+Veja também a[ Seção de Administração](../../../administration-and-setup/settings/README.md)
 {% endhint %}
 
 ## **Benefícios**

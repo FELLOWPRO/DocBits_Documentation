@@ -1,36 +1,38 @@
-# Case 10a: Quantity Outside Tolerance (Negative Rejected), Unit Price Within Tolerance
+# Caso 10a: Quantidade abaixo da tolerância rejeitada; preço unitário dentro da tolerância
 
-## Scenario:
+> **Nota sobre o exemplo:** Este cenário ilustra um mapeamento de exportação configurado. A saída real, os montantes, o sinal e o tipo de documento dependem do mapeamento ativo, das expressões das regras e das decisões de aprovação. A geração de dados para uma nota de débito ou de crédito não significa, por si só, a emissão de um documento fiscal válido. Verifique a configuração e o resultado no ERP; este exemplo não garante conformidade legal.
 
-The quantity is below the acceptable range (negative tolerance) and is not approved, though the unit price is within tolerance.
+## Cenário:
 
-## Action:
+A quantidade está abaixo do limite inferior e o desvio não foi aprovado, embora o preço unitário esteja dentro da tolerância.
 
-The system adjusts the quantity to match the approved level, keeping the unit price consistent. The transaction is processed accordingly.
+## Ação:
 
-## Example:
+O sistema ajusta a quantidade ao valor aprovado, mantém o preço unitário e processa a transação.
 
-* **Purchase Order (PO):**
-  * Quantity: 150 units
-  * Unit Price: $20.00 per unit
-  * Total Amount: $3,000.00
-* **Invoice Received:**
-  * Quantity: 140 units (outside tolerance of -6.67%, rejected)
-  * Unit Price: $20.00 per unit (within tolerance)
-  * Total Amount: $2,800.00
-* **Tolerance Levels:**
-  * Quantity Tolerance: ±5%
-  * Unit Price Tolerance: ±2%
+## Exemplo:
 
-Since the quantity (140 units) is below the acceptable tolerance limit (negative variance of -6.67%) and is not approved, but the unit price ($20.00) is within tolerance, the system will:
+* **Pedido de compra (PO):**
+  * Quantidade: 150 unidades
+  * Preço unitário: $20.00 por unidade
+  * Valor total: $3,000.00
+* **Fatura recebida:**
+  * Quantidade: 140 unidades (fora da tolerância de -6.67%, rejeitado)
+  * Preço unitário: $20.00 por unidade (dentro da tolerância)
+  * Valor total: $2,800.00
+* **Níveis de tolerância:**
+  * Tolerância da quantidade: ±5%
+  * Tolerância do preço unitário: ±2%
 
-1. **Reject the Lower Quantity:** The system does not accept the lower quantity since it is outside the approved tolerance range.
-2. **Adjust the Quantity:** The system adjusts the quantity to match the approved level specified in the purchase order.
-   * Approved Quantity = 150 units (from PO)
-3. **Maintain the Unit Price:** The unit price of $20.00 per unit is within tolerance and remains unchanged.
-4. **Recalculate the Total Amount:** The system calculates the total amount using the approved quantity and the accepted unit price:
-   * **Total Amount = Approved Quantity × Unit Price**
-   * **Total Amount = 150 units × $20.00 per unit = $3,000.00**
-5. **Process the Invoice:** The system processes the invoice with the adjusted total amount of $3,000.00, reflecting the approved quantity and unit price. The supplier is expected to invoice for the full approved quantity.
+Como a quantidade (140 unidades) está abaixo do limite inferior, com um desvio de -6.67% não aprovado, mas o preço unitário ($20.00) está dentro da tolerância, o sistema irá:
 
-This approach ensures that the financial transaction aligns with the purchase order's terms, and prevents under-invoicing while maintaining accurate financial records.
+1. **Rejeitar a quantidade inferior:** o sistema não aceita a quantidade inferior por estar fora da tolerância aprovada.
+2. **Ajustar a quantidade:** o sistema ajusta a quantidade ao valor aprovado no pedido de compra.
+   * Quantidade aprovada = 150 unidades (do pedido de compra)
+3. **Manter o preço unitário:** o preço de $20.00 por unidade está dentro da tolerância e mantém-se.
+4. **Recalcular o valor total:** o sistema calcula o total com a quantidade aprovada e o preço unitário aceite:
+   * **Valor total = Quantidade aprovada × Preço unitário**
+   * **Valor total = 150 unidades × $20.00 por unidade = $3,000.00**
+5. **Processar a fatura:** o sistema processa a fatura com o total ajustado de $3,000.00, refletindo a quantidade e o preço unitário aprovados. Espera-se que o fornecedor fature a quantidade aprovada na totalidade.
+
+Esta abordagem alinha a transação com as condições do pedido de compra e evita a faturação de uma quantidade inferior, mantendo os registos financeiros.

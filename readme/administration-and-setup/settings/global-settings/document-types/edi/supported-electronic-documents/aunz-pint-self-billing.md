@@ -30,7 +30,7 @@ AUNZ PINT Self-Billing é a variante de auto-faturação do modelo de faturaçã
 
 ## Pré-visualização padrão
 
-<figure><img src="aunz-pint-preview.png" alt="Pré-visualização da fatura AUNZ PINT Self-Billing no DocBits"><figcaption><p>Pré-visualização padrão do DocBits para uma fatura AUNZ PINT Self-Billing</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="Pré-visualização da fatura AUNZ PINT Self-Billing no DocBits"><figcaption><p>Pré-visualização padrão do DocBits para uma fatura AUNZ PINT Self-Billing</p></figcaption></figure>
 
 ## Mapeamento de campos
 

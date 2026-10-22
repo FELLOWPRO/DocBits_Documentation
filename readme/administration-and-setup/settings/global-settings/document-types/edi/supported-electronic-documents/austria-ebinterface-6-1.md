@@ -30,7 +30,7 @@ O ebInterface 6.1 é a versão mais recente do padrão austríaco de faturação
 
 ## Pré-visualização padrão
 
-<figure><img src="austria-ebinterface-preview.png" alt="Pré-visualização da fatura Austria ebInterface 6.1 no DocBits"><figcaption><p>Pré-visualização padrão do DocBits para uma fatura AUSTRIA EBINTERFACE 6.1</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Pré-visualização da fatura Austria ebInterface 6.1 no DocBits"><figcaption><p>Pré-visualização padrão do DocBits para uma fatura AUSTRIA EBINTERFACE 6.1</p></figcaption></figure>
 
 ## Mapeamento de campos
 

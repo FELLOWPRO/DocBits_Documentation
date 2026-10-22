@@ -29,5 +29,5 @@ O vídeo utiliza uma conta de teste normal e documentos sintéticos. Concluir um
 ## Vídeo adicional
 
 {% embed url="https://youtu.be/MZoDMibM-7E" %}
-Tarefas
+Tutorial de tarefas e notificações do DocBits: atribuir trabalho, acompanhar estados e gerir tarefas de fluxo de trabalho
 {% endembed %}

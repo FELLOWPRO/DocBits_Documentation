@@ -1,92 +1,49 @@
-# DocBits Operator
+# Operador DocBits
 
-## Visão geral
+O DocBits Operator executa tarefas a partir das instruções do utilizador. A instrução descreve os passos, enquanto as variáveis fornecem os dados necessários para cada execução.
 
-O **DocBits Operator** é um assistente de automação com IA criado para simplificar tarefas repetitivas nos seus workflows. Os usuários criam _prompts_ — instruções passo a passo enriquecidas com variáveis — que orientam a IA a navegar, inserir dados e clicar pelas interfaces automaticamente. Isso reduz o esforço manual e acelera as operações de rotina.
+## Ativação e acesso
 
-## Habilitando o DocBits Operator
+1. Abra **Definições → Módulo → Integração de documentos**.
+2. Desloque-se até **DocBits Operator** e ative a funcionalidade se tiver as permissões necessárias.
+3. Abra o **Operador DocBits** na navegação principal da aplicação.
 
-Para habilitar o DocBits Operator, siga estas etapas:
+<figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-pt.png" alt="Módulos de integração de documentos: scripts, digitalização, códigos de barras e dados mestre personalizados. A etiqueta Select do seletor de códigos de barras mantém-se em inglês na versão ilustrada."><figcaption><p>Módulos de integração de documentos: scripts, digitalização, códigos de barras e dados mestre personalizados. A etiqueta Select do seletor de códigos de barras mantém-se em inglês na versão ilustrada.</p></figcaption></figure>
 
-1. **Acesse as configurações**:
-   * No Dashboard, acesse **Configurações**.
-   *   Selecione **Processamento de documentos** e depois escolha **Módulo**.
+## Introduzir uma instrução
 
-       <figure><img src="../../.gitbook/assets/docbits_operator_module_selection.png" alt="Seleção de módulo do DocBits Operator"><figcaption></figcaption></figure>
-2. **Habilite o recurso**:
-   * Role a página para baixo até encontrar a opção **DocBits Operator**.
-   *   Ative o controle deslizante para habilitar o **DocBits Operator**.
+Introduza a instrução no campo na parte inferior do ecrã. Descreva o resultado esperado e os passos necessários. As variáveis usam chavetas, por exemplo `{invoice_number}` ou `{url}`. O botão com a roda dentada abre a janela para definir os nomes e valores das variáveis.
 
-       <div align="left"><figure><img src="../../.gitbook/assets/docbits_operator_enable_toggle.png" alt="Controle para habilitar o DocBits Operator" width="563"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/site-extra-docbits-operator-pt.png" alt="Interface portuguesa do DocBits Operator com o campo de instruções vazio. Não foi iniciada nenhuma tarefa."><figcaption><p>Interface portuguesa do DocBits Operator com o campo de instruções vazio. Não foi iniciada nenhuma tarefa.</p></figcaption></figure>
 
-## Acessando a interface
+O botão com a seta inicia a execução. O ícone de transferência abre a janela para guardar a instrução, e o caixote do lixo limpa a conversa. Abrir a janela de gravação não guarda o modelo.
 
-* Depois que o recurso estiver habilitado, abra o **DocBits Operator** no menu de navegação principal.
+Consulte os exemplos no [guia de escrita de instruções](prompt-writing-guide.md).
 
-### **1. Entrada do prompt**
+## Guardar uma instrução
 
-Na parte inferior da tela há um campo de entrada com o rótulo _“Enter your prompt here…”_. É aqui que os usuários escrevem as instruções que o operador deve seguir.
+Na janela de gravação, introduza um **nome para a instrução**. A opção de publicação define a partilha do modelo. Ao preparar um modelo para partilha, use nomes de variáveis no texto e preencha os valores necessários antes de cada execução.
 
-Ao lado do campo de entrada há vários botões de controle:
+<figure><img src="../../.gitbook/assets/site-extra-operator-prompt-dialog-pt.png" alt="Janela portuguesa para guardar uma instrução, sem valores introduzidos e sem acionar o botão final de gravação."><figcaption><p>Janela portuguesa para guardar uma instrução, sem valores introduzidos e sem acionar o botão final de gravação.</p></figcaption></figure>
 
-* **Prompt Variables** – Abre um pop-up onde você pode inserir pares chave-valor usados no prompt. As variáveis são escritas entre chaves, como `{invoice_number}` ou `{url}`. Esses valores se aplicam somente ao prompt atual no campo de entrada.
-* **Save Prompt** – Salva o prompt atual. Você pode salvá-lo como:
-  * **Organization Prompt** – Editável dentro da sua organização; inclui o prompt e os valores de variáveis definidos.
-  * **Global Prompt** – Compartilhado entre todos os tenants; inclui apenas o prompt e os marcadores de variáveis (nenhum valor é salvo).
-* **Clear Chat** – Limpa a conversa atual com o operador, mas mantém o prompt do campo de entrada inalterado. Útil ao reutilizar ou refinar um prompt.
+O botão de edição das variáveis abre as respetivas definições. O botão de gravação guarda o modelo. Para fechar a janela sem guardar, use a cruz no canto superior direito.
 
-Para orientações detalhadas sobre como escrever prompts eficazes — incluindo sintaxe, variáveis e exemplos — consulte o [**Guia de redação de prompts**](prompt-writing-guide.md).
+Na versão ilustrada, o botão Limpar fecha a janela; o seu rótulo não descreve corretamente essa ação.
 
-### **2. Navegação na barra lateral**
+## Lista de instruções guardadas
 
-Use o ícone no canto superior esquerdo para abrir ou fechar a barra lateral. Ela mostra os prompts salvos, organizados em duas categorias:
+O menu no canto superior direito abre o painel de instruções guardadas. A lista tem secções separadas para instruções da organização e instruções públicas, além de pesquisa por nome.
 
-* **Organization Prompts**: editáveis e reutilizáveis dentro da sua organização.
-* **Global Prompts**: compartilhados entre todos os tenants. Eles não podem armazenar variáveis e não podem ser editados nem excluídos.
-  * Um prompt global ainda pode ser editado e excluído pela **organização que o criou**, onde ele aparece em Organization Prompts.
-* **Função de pesquisa:** uma barra de pesquisa no topo da barra lateral permite encontrar rapidamente os prompts salvos por nome ou palavra-chave.
-* **Referência dos ícones:** cada prompt salvo tem um conjunto de ícones de ação
-  * **Seta** – Inicia o prompt
-  * **Caneta** – Edita o prompt (disponível somente para os prompts da sua própria organização)
-  * **Lixeira** – Exclui o prompt (disponível somente para os prompts da sua própria organização)
+As instruções da organização apresentam ícones para executar, editar e eliminar. Na secção pública, a seta executa o modelo selecionado. Preencha os valores das variáveis antes da execução.
 
-### 3. Salvar prompt
+## Controlar a execução
 
-Ao clicar no botão **Save Prompt**, abre-se um pop-up onde você pode salvar o prompt atual para uso futuro.
+Durante a execução, pode colocar em pausa, retomar, cancelar ou assumir o controlo. A pausa interrompe os passos seguintes para permitir verificar o estado atual. Retomar continua o trabalho; cancelar termina a execução. Assumir o controlo permite interagir manualmente com a vista do navegador.
 
-<div align="left"><figure><img src="../../.gitbook/assets/workflow_notification_card_overview.png" alt="Pop-up Save Prompt"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt="Exemplo dos ícones para retomar e parar."><figcaption><p>Exemplo dos ícones para retomar e parar.</p></figcaption></figure>
 
-#### **Campos do pop-up Save Prompt**
+## Vista detalhada
 
-* **Prompt Name:** informe um nome para identificar o prompt.
-* **Save Prompt Publicly (caixa de seleção):** quando marcada, o prompt é salvo como **Global Prompt**. Os Global Prompts são compartilhados entre todos os tenants e não podem armazenar **valores** de variáveis (somente **nomes** de variáveis).
-* **Edit Variables:** abre o [**pop-up Prompt Variables**](prompt-writing-guide.md#popup-de-variaveis-do-prompt) para revisar ou ajustar as definições das variáveis antes de salvar.
+O botão de expansão abre a vista detalhada da execução. Esta permite acompanhar as ações, o passo atual e as mensagens do operador, bem como usar os controlos da execução.
 
-**Ações**
-
-* **Cancel:** fecha o pop-up sem salvar.
-* **Save:** salva o prompt com o nome e a configuração de visibilidade informados.
-
-### 4. Controles de execução do prompt
-
-Quando um prompt está em execução, os usuários têm várias opções de controle para gerenciar ou intervir no processo de execução:
-
-* **Pause Prompt:** interrompe temporariamente a execução atual. Útil se você quiser observar o estado atual ou preparar o sistema para as próximas etapas.&#x20;
-* **Resume Prompt:** continua a execução do ponto em que foi pausada. ![](<../../.gitbook/assets/image (3) (1).png>)
-* **Cancel Prompt:** interrompe a execução por completo e redefine a sessão. Útil quando o prompt precisa ser abortado ou reiniciado por causa de um comportamento incorreto ou de mudanças na entrada.&#x20;
-* **Take Control:** permite que o usuário intervenha manualmente, interagindo diretamente com o sistema. Útil se o operador travar ou interpretar uma etapa de forma errada. Ao assumir o controle, o prompt é **pausado automaticamente** e passa para o modo manual até que você escolha retomar ou cancelar.
-
-### 5. Visualização detalhada do operador
-
-Quando um prompt é iniciado, um botão adicional passa a ficar disponível e permite alternar para uma **visualização detalhada da execução**. ![](<../../.gitbook/assets/Detailed view .jpg>)
-
-* **Open Detail View:** este botão leva a uma visualização dedicada que mostra, passo a passo e em tempo real, o que o operador está fazendo.
-
-Na visualização detalhada, os usuários podem:
-
-* Acompanhar cada ação executada (por exemplo, cliques, entradas, esperas).
-* Ver qual etapa está ativa no momento.
-* Identificar onde ocorrem problemas se o prompt encontrar dificuldades.
-* Usar as mesmas ações **Pause**, **Resume**, **Cancel** e **Take Control**.
-
-<div align="left"><figure><img src="../../.gitbook/assets/detailed view 2 .jpg" alt="" width="563"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/Detailed view .jpg" alt="Ícone para expandir a vista detalhada."><figcaption><p>Ícone para expandir a vista detalhada.</p></figcaption></figure>

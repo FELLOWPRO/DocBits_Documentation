@@ -11,7 +11,7 @@ O cartão de fluxo de trabalho **"Calcular com dependência de Regex"** permite 
 1. **Nome da tabela**
    * **Descrição:** Especifica a **tabela** na qual as colunas serão calculadas.
    * **Detalhe:** É disponibilizada uma lista pendente com todas as **tabelas** disponíveis para seleção.
-2. **Column Name (1ª coluna)**
+2. **Nome da coluna (1.ª coluna)**
    * **Descrição:** Especifica a **primeira coluna** envolvida no cálculo.
    * **Detalhe:** É disponibilizada uma lista de todas as **colunas** disponíveis para seleção.
 3. **Operação**
@@ -21,7 +21,7 @@ O cartão de fluxo de trabalho **"Calcular com dependência de Regex"** permite 
      * **Subtrair (-):** Subtrai o valor da segunda coluna à primeira coluna.
      * **Multiply (\*):** Multiplica o valor da primeira coluna pelo valor na segunda coluna.
      * **Dividir (/):** Divide o valor da primeira coluna pela segunda coluna.
-4. **Column Name (2ª coluna)**
+4. **Nome da coluna (2.ª coluna)**
    * **Descrição:** Especifica a **segunda coluna** envolvida no cálculo.
    * **Detalhe:** É disponibilizada uma lista de todas as **colunas** disponíveis para seleção.
 5. **Nome da coluna (dependência)**

@@ -1,43 +1,43 @@
-# Table extraction for costing element
+# Extração de elementos de custo das tabelas
 
-### **What Does It Do?**
+### **O que faz?**
 
-When enabled, **DocBits** can extract **costing elements** from tables at the **line level** and classify them accordingly.
+Quando esta opção está ativa, o **DocBits** pode extrair e classificar **elementos de custo** nas **linhas** das tabelas.
 
-* If the system does not classify an item or classifies it incorrectly, an **icon** appears on the left side.
-* Clicking this icon opens a list of all **configured costing elements**, allowing you to:
-  * **Change the classification** if it is incorrect.
-  * **Set the item to "Uncategorized"** if it is a regular item and not a costing element.
+* Se o sistema não classificar um item ou o classificar incorretamente, aparece um **ícone** à esquerda.
+* Clique no ícone para abrir a lista dos **elementos de custo configurados** e:
+  * **Alterar a classificação**, se estiver incorreta.
+  * **Definir o item como «Sem categoria»**, se for um artigo normal e não um elemento de custo.
 
-### **How to Configure Costing Elements**
+### **Como configurar elementos de custo**
 
-You can find the **guide on setting up costing elements** in **DocBits** here.
+O guia de configuração de elementos de custo no **DocBits** está disponível aqui.
 
 {% content-ref url="../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md" %}
-[table-extraction-for-costing-element.md](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)
+[Extração de elementos de custo das tabelas](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)
 {% endcontent-ref %}
 
-### **Where to Enable It**
+### **Onde ativar**
 
-1. Go to **Settings → Document Processing → Classification and Extraction → Table Extraction**.
-2. Enable **Costing Element Extraction**.
+1. Abra **Configurações → Processamento de documentos → Classificação e extração → Extração de tabelas**.
+2. Ative **Extração de elementos de custo**.
 
 <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211105422.jpg" alt=""><figcaption></figcaption></figure>
 
-### **How to Set or Change the Classification**
+### **Como definir ou alterar a classificação**
 
-1.  Click on the **box icon** next to the item.\
+1.  Clique no **ícone de caixa** junto ao item.\
 
 
     <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211104810.jpg" alt=""><figcaption></figcaption></figure>
-2.  A **dropdown menu** with all configured costing elements will appear.\
+2.  Aparece uma **lista suspensa** com os elementos de custo configurados.\
 
 
     <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102530.jpg" alt=""><figcaption></figcaption></figure>
-3.  Select the correct **costing element type**.\
+3.  Selecione o **tipo de elemento de custo** correto.\
 
 
     <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102650.jpg" alt=""><figcaption></figcaption></figure>
-4. The classification is now updated accordingly.
+4. A classificação é atualizada.
 
 <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211103411.jpg" alt=""><figcaption></figcaption></figure>

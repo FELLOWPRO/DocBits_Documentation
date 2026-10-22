@@ -69,63 +69,63 @@ Os anúncios de lançamento originais permanecem abaixo para referência.
 
 ### Novas funcionalidades:
 
-* **Activity Logging / Access Audit:**\
+* **Registo de atividade / Auditoria de acesso:**\
   Registro detalhado de atividades e trilha de auditoria de acessos em todo o aplicativo, para conformidade e monitoramento. Diferentes tipos de logging para todos os microsserviços, com base em intervalo de tempo.
-* **Global Quick Search:**\
+* **Pesquisa rápida global:**\
   Pressione Cmd+K / Ctrl+K em qualquer parte do aplicativo para pesquisar em mais de 200 rotas e mais de 40 funcionalidades dentro das páginas. Mostra os 8 melhores resultados com correspondência aproximada (fuzzy), navegação com as teclas de seta e links para a App Index Page completa.
-* **Sitemap (App Index Page):**\
+* **Mapa do site (índice da aplicação):**\
   Página de índice pesquisável que cataloga cada página navegável e cada funcionalidade dentro das páginas (diálogos, barras laterais, painéis) no DocBits. Organizada em 18 categorias, com filtros por tipo, pills de categoria, pesquisa sincronizada com a URL e entradas protegidas por permissão exibidas como bloqueadas para usuários não administradores.
 * **Analytics Dashboard:**\
   Análises abrangentes do processamento de documentos com Executive Overview, API Metrics, Quality Metrics, Processing Performance, Document Flow Analytics, Activity Log, Event Log e Audit Trail.
-* **Dashboard Export Functionality:**\
+* **Exportação do painel:**\
   Nova funcionalidade de exportação do dashboard, que permite exportar uma lista nos formatos CSV ou XLSX.
-* **Full-Text Search / DocSearch:**\
+* **Pesquisa de texto completo / DocSearch:**\
   Pesquisa vetorial baseada em IA em todos os documentos indexados, com filtro de fornecedores em tempo real, a funcionalidade "Find Similar" e configurações de indexação ajustáveis.
-* **Supplier Delivery Statistics:**\
+* **Estatísticas de entregas de fornecedores:**\
   Novas visões com informações sobre métricas de processamento de documentos relacionadas a fornecedores.
 * **Debug Collector:**\
   Pressione Ctrl+Shift+P para capturar um snapshot de depuração completo, incluindo chamadas de API, estado do WebSocket, erros, logs do console, métricas de desempenho e informações do ambiente. Os snapshots podem ser copiados para a área de transferência ou enviados diretamente como ticket de suporte, com um relatório em formato HTML e um arquivo JSON anexado.
-* **AI Agents (DocNet):**\
+* **Agentes de IA (DocNet):**\
   Agentes autônomos em segundo plano que processam automaticamente os e-mails recebidos — classificando, extraindo e encaminhando documentos sem intervenção manual. Os agentes trabalham de forma independente nas tarefas atribuídas e acionam os usuários por meio de solicitações de aprovação quando é necessário o julgamento humano. Inclui um dashboard dedicado aos agentes para monitorar atividade e desempenho.
 * **New E-Documents:**\
   Mais de 80 novos tipos globais de e-invoice e mais de 40 novos formatos, incluindo XRechnung 3.0.2, ZUGFeRD 2.2/2.3.2, variantes do Factur-X e Asia-Pacific PINT Credit Notes. Cobertura de 100% em classificação e extração.
-* **AI Script Chat:**\
+* **Chat de scripts com IA:**\
   Assistente de chat baseado em IA para o desenvolvimento básico de scripts, com respostas em streaming em tempo real.
-* **Script Versioning:**\
+* **Controlo de versões de scripts:**\
   Histórico completo de versões dos scripts, com rastreamento de alterações, comparação e restauração. Oferece aos scripts um gerenciamento de versões semelhante ao das versões dos E-Docs.
-* **Export History in Dashboard Actions:**\
+* **Histórico de exportação nas ações do painel:**\
   Acesso ao histórico de exportação de um documento diretamente pelo menu de ações do dashboard.
-* **Generic API Exporter (APS450, GLS840):**\
+* **Exportador genérico de API (APS450, GLS840):**\
   Destino de exportação de API genérico e configurável por meio de uma configuração de Mapping-File, para uma integração flexível com sistemas externos. Foram implementados os suportes a APS450 e GLS840.
-* **Multiple Export Configurations:**\
+* **Múltiplas configurações de exportação:**\
   Suporte a várias configurações de exportação ativas por tipo de documento, com ordem de execução e um botão de reexportação para tentar novamente a partir da etapa que falhou.
-* **New Watchdog Version:**\
+* **Nova versão do WatchDog:**\
   Reformulação completa da página de configurações do WatchDog. Foram adicionados novos recursos de conveniência, incluindo o status atual do WatchDog, guia e comandos de instalação, configuração de templates XSLT e uma configuração de atualização automática. Também foi implementada a funcionalidade para que o WatchDog gerencie várias configurações ao mesmo tempo.
 * **Vertex Integration:**\
   Integração do Consumer Use Tax por meio da Vertex, para cálculo automatizado de impostos e conformidade durante o processamento de documentos.
-* **UI Redesign & Settings Rework:**\
+* **Novo desenho da interface e revisão das configurações:**\
   Renovação abrangente da interface em todo o aplicativo. Páginas de login e autenticação redesenhadas. Área de configurações redesenhada, com barra lateral recolhível, subcategorias organizadas, navegação baseada em âncoras, painel de ajuda contextual e badges de acompanhamento de status. Alterações na interface dos scripts de documento. Nova interface do Document Flow. List of Values com interface aprimorada.
-* **Idea Board:**\
+* **Quadro de Ideias:**\
   Quadro de sugestões em que os usuários podem enviar, discutir e votar em novas funcionalidades, melhorias, correções de bugs necessárias etc., com editor de texto rico e suporte a imagens.
-* **API Key Management:**\
+* **Gestão de chaves API:**\
   Página de configurações dedicada à criação, visualização e gerenciamento de várias chaves de API.
-* **Master Data Lookup Search Functionality:**\
+* **Pesquisa nas consultas de dados mestre:**\
   Capacidade de pesquisa de Master Data aprimorada, com opções de pesquisa adequadas aos campos selecionados.
-* **User Activity Chart:**\
+* **Gráfico de atividade dos utilizadores:**\
   Gráfico visual com os padrões de atividade e as métricas de engajamento dos usuários. Dashboard de atividade de login com gráficos comparativos de tendência, agregação diária/semanal e geolocalização baseada em GeoLite2.
-* **User Login History:**\
+* **Histórico de início de sessão dos utilizadores:**\
   Visão de detalhes do usuário com o histórico de logins.
-* **Customizable Sidebar:**\
+* **Barra lateral personalizável:**\
   Reordenação por arrastar e soltar, alternância de mostrar/ocultar e fixação no topo para os itens do menu da barra lateral. As preferências são mantidas por usuário, com a opção "Reset to default". Respeita as feature flags.
-* **Video Carousel:**\
+* **Carrossel de vídeos:**\
   Carrossel de vídeos com reprodução automática na página prepare-dashboard, exibindo vídeos animados curtos com dicas do produto (Global Search, Keyboard Shortcuts, Document Upload, Table Customization). Layout em duas colunas, com os vídeos à esquerda e a preparação do dashboard à direita. O redirecionamento automático fica em pausa enquanto os usuários assistem aos vídeos.
-* **Advanced Workflow Designer:**\
+* **Editor avançado de fluxos de trabalho:**\
   Construtor de automação visual baseado em nós, com canvas de arrastar e soltar para pipelines de processamento de várias etapas. Suporta etapas de espera, caminhos paralelos, templates reutilizáveis, Or condition cards, botão manual de teste/execução, execução parcial "Test from Here" e logs de execução por nó, com destaque visual do fluxo mostrando exatamente quais nós foram executados.
-* **Workflow KPI Dashboard:**\
+* **Painel de indicadores dos fluxos de trabalho:**\
   Dashboard de métricas-chave para monitorar a execução dos workflows.
-* **Workflow Partner Card SDK:**\
+* **SDK de cartões de fluxo de trabalho para parceiros:**\
   SDK para desenvolvedores terceiros criarem cards de workflow personalizados, com revisão baseada em IA, validação em sandbox e documentação de primeiros passos.
-* **Workflow Test Manager:**\
+* **Gestão de testes de fluxos de trabalho:**\
   Gerenciador de testes automatizados para workflows, que permite aos administradores criar e executar testes individualmente ou em lote.
 
 ### Melhorias:
@@ -136,13 +136,13 @@ Os anúncios de lançamento originais permanecem abaixo para referência.
   Alteração da lógica de exportação relacionada ao número máximo de páginas consideradas — agora o documento inteiro será exportado. Durante a validação do documento, o usuário terá a opção de substituir o limite máximo de páginas padrão para esse documento específico. O cálculo do Pending Document Counter foi aprimorado.
 * **Versões, status e data de implantação dos serviços:**\
   Status de disponibilidade dos serviços exibido no popup "Service Versions".
-* **Language Expansion:**\
+* **Mais idiomas:**\
   Suporte ampliado para 22 idiomas, com seletor de idioma atualizado.
 * **Controle de acesso no nível do campo:**\
   Controle de acesso redesenhado e aprimorado, com estado de ativação mais claro, acesso no nível do campo, tratamento consistente das regras e permissões simplificadas baseadas em grupos. Corrige regras conflitantes entre Access Control e View Permissions, exibe o proprietário da importação na interface e aplica o controle de acesso de forma consistente na validação de campos, nas tabelas extraídas por IA e em todas as visões.
 * **Activity Stream em todas as telas:**\
   O Activity Stream agora está disponível em todas as telas de processamento de documentos (Ready for Validation, PO Matching, Accounting, Quote Details, Reject) — não apenas em Pending Approval. Movido para uma posição consistente no painel direito em todas as telas.
-* **Document Flow Page:**\
+* **Página do fluxo do documento:**\
   Página dedicada à visualização e ao acompanhamento do fluxo de processamento de documentos, mostrando as transições de status e o progresso ao longo do pipeline.
 * **Dual Monitor Mode (configuração global do usuário):**\
   O modo de monitor duplo passou a ser uma configuração global do usuário, mantida entre as sessões.
@@ -404,7 +404,7 @@ Os anúncios de lançamento originais permanecem abaixo para referência.
     Temos o prazer de anunciar a implementação de um novo sistema de testes automatizados, criado para melhorar a funcionalidade e a confiabilidade gerais da nossa plataforma. Essa nova configuração executará verificações consistentes e minuciosas no sistema para identificar problemas antes que eles afetem a sua experiência. Ao automatizar esses testes, podemos responder mais rapidamente a possíveis problemas e manter os mais altos padrões de qualidade do nosso sistema.
 * **Implementação da arquitetura de microsserviços:**\
   Reestruturamos a plataforma dividindo os componentes principais em microsserviços dedicados. Essa mudança arquitetônica aumenta a escalabilidade, melhora o desempenho do sistema e permite ciclos de desenvolvimento e implantação mais rápidos e modulares.
-*   **Walkthrough:**\
+*   **Visita guiada:**\
     Agora há um walkthrough guiado para ajudar os usuários a navegar e entender mais facilmente as diferentes partes do aplicativo. Isso é especialmente útil para integrar novos usuários ou explorar funcionalidades desconhecidas.
 
     <figure><img src="../../.gitbook/assets/image (430).png" alt=""><figcaption></figcaption></figure>
@@ -560,7 +560,7 @@ Ao incorporar o ZUGFeRD 2.1 e os padrões mais recentes, o DocBits simplifica as
 
 O DocBits introduz uma capacidade avançada de usar APIs externas durante o processamento de documentos, aumentando a completude e a precisão dos dados extraídos. Esse recurso reduz significativamente a entrada manual ao preencher campos ausentes com informações precisas e atualizadas, obtidas em tempo real de fontes confiáveis. Ele garante que os documentos sejam processados com mais rapidez e consistência.
 
-### Cross Sub-Organizations Access
+### Acesso entre suborganizações
 
 Para organizações com várias suborganizações habilitadas, o DocBits agora introduz o recurso Cross Sub-Organizations. Essa melhoria permite que usuários administrativos simplifiquem o gerenciamento de documentos em todas as suborganizações sob um único guarda-chuva. Os administradores agora podem acessar e visualizar todos os documentos de todas as suborganizações sem precisar trocar de suborganização. Essa visibilidade centralizada permite que os administradores vejam todos os documentos de todas as suborganizações, facilitando a localização de arquivos específicos sem perder a visão geral. [Saiba mais](https://docs.docbits.com/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations#cross-sub-organisations-access)
 
@@ -779,7 +779,7 @@ O DocBits agora oferece a possibilidade de alterar a versão do OCR (Optical Cha
 
 ### Novas funcionalidades:
 
-## Rule Manager
+## Gestão de regras
 
 O [rule-manager](../../administration-and-setup/settings/document-processing/rule-manager/ "mention") oferece a flexibilidade de criar e editar regras de resolução de conflitos adaptadas ao sistema de faturamento do DocBits. Essas regras foram projetadas para tratar automaticamente as divergências entre os detalhes da fatura e os dados do pedido de compra (PO), garantindo uma conciliação financeira precisa. O sistema aplica essas regras ao processar linhas de fatura, encargos e impostos e gera ajustes ou observações apropriados quando necessário.
 
@@ -830,7 +830,7 @@ O DocBits agora processa XRechnung (faturas eletrônicas) sem problemas, criando
 11. Novo campo Label\
     Problema: novo campo Label na lista de valores para adicionar um rótulo junto com o valor e o sinônimo\
     Resolução: corrigido
-12. Card Country Origin no workflow\
+12. Cartão de país de origem no fluxo de trabalho\
     Problema: novo card no workflow que verifica o país de origem de um fornecedor e cria uma tarefa ou continua o processamento do documento de acordo\
     Resolução: corrigido
 13. Correção do modo escuro na barra de pesquisa das configurações\
@@ -1043,7 +1043,7 @@ Na próxima release, será introduzida uma melhoria significativa nas capacidade
 
 ▪ Merge Activities: diversos merges para integrar recursos, correções e melhorias de várias branches de desenvolvimento à branch principal.
 
-### What's New - API
+### Novidades da API
 
 ▪ Cache Management Enhancements: atualizado o get\_receive\_delivery\_cache para melhorar o desempenho e a confiabilidade.
 

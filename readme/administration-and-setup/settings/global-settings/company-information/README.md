@@ -4,7 +4,7 @@
 
 A página Company Information permite gerenciar o perfil da sua empresa, as preferências e os detalhes da assinatura. Ela é organizada nas seguintes seções:
 
-## Company Information
+## Informações da empresa
 
 Esta seção contém os dados principais da sua empresa, agrupados em quatro áreas:
 
@@ -42,7 +42,7 @@ Insira apenas o domínio, como `example.com`, no campo e selecione **Adicionar d
 
 Antes de adicionar um domínio, verifique qual organização deve receber os novos logins. Para gerenciar as associações existentes, continue em [Users](../groups-users-and-permissions/users/README.md).
 
-## Company Preferences
+## Preferências da empresa
 
 Configure as definições padrão válidas para toda a empresa:
 
@@ -59,7 +59,7 @@ Personalize a cor primária da interface do DocBits. Isso é útil para distingu
 * **Cor**: insira um código de cor hexadecimal (por exemplo, `#2388AE`) ou use o seletor de cores.
 * Clique em **Salvar** para aplicar ou em **Reiniciar** para restaurar a cor padrão.
 
-## Subscription Plan
+## Plano de subscrição
 
 Veja seus planos de assinatura ativos e os respectivos detalhes:
 
@@ -70,7 +70,7 @@ Veja seus planos de assinatura ativos e os respectivos detalhes:
 * **Número de suborganizações**: número de suborganizações configuradas.
 * **Número de fornecedores**: número de fornecedores cadastrados.
 
-## Subscription Usage
+## Utilização da subscrição
 
 Acompanhe seu consumo mensal de tokens e de workflows:
 

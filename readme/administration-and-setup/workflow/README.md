@@ -1,8 +1,8 @@
 ---
-description: DocBits Workflow Engine
+description: Motor de fluxos de trabalho do DocBits
 ---
 
-# Workflow
+# Fluxos de trabalho
 
 <figure><img src="../../.gitbook/assets/docbits_workflow_3.png" alt="DocBits Fluxo de trabalho 3"><figcaption></figcaption></figure>
 
@@ -29,7 +29,7 @@ Conheça a conta de teste real do DocBits: oito execuções no painel, dois work
 | Lista de workflows | [0:54](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pt.mp4#t=54.208) |
 | Ordem de execução | [1:08](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pt.mp4#t=68.458) |
 | Standard Workflow | [1:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pt.mp4#t=86.417) |
-| Advanced Workflow | [1:38](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pt.mp4#t=98.917) |
+| Fluxo de trabalho avançado | [1:38](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pt.mp4#t=98.917) |
 | Licenças | [1:55](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pt.mp4#t=115.083) |
 | Modelos | [2:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pt.mp4#t=130.750) |
 | Test Manager | [2:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/pt.mp4#t=143.333) |
@@ -56,11 +56,11 @@ Na lista faço a gestão de cada workflow. Verifico o nome, o tipo Standard ou A
 
 A ordem de execução importa quando vários workflows processam o mesmo documento. Verifico qual deve correr primeiro e de que dados precisa o seguinte. Aqui, a revisão da fatura tem a ordem cem e a verificação seguinte duzentos. Os valores mais baixos são executados primeiro.
 
-**Standard Workflow**
+**Fluxo de trabalho padrão**
 
 Para uma regra linear escolho Standard Workflow. Quando define o evento inicial, E acrescenta condições, e Então executa as ações. A biblioteca contém os cartões disponíveis.
 
-**Advanced Workflow**
+**Fluxo de trabalho avançado**
 
 Para percursos alternativos utilizo Advanced Workflow. Esta pré-visualização mostra Start e ligações explícitas. Sucesso, condição não cumprida e erro podem seguir percursos diferentes. A posição dos cartões não define a ordem.
 
@@ -72,7 +72,7 @@ Em Licença verifico separadamente Workflow e Advanced Workflow. Aqui ambos est�
 
 Os modelos permitem reutilizar um ponto de partida. Abro a biblioteca e a opção dos modelos predefinidos. Verifico sempre os campos, destinatários e ações para o meu próprio processo.
 
-**Test Manager**
+**Gestor de testes**
 
 O Test Manager guarda cenários para workflows Standard e Advanced. Depois da configuração acrescento dados representativos e resultados esperados. Executar todos os testes ajuda-me a verificar as alterações.
 

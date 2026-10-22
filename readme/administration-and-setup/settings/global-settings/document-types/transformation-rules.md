@@ -223,7 +223,7 @@ As regras de tabela e de coluna alteram o que o sistema de correspondência de p
 * Se uma regra **substitui ou remove linhas que foram correspondidas**, a correspondência não pode ser mantida. O documento registra então qual regra a descartou, a tela de correspondência de pedidos de compra mostra isso como motivo ("_The PO match could not be saved: the transformation rule "…" rebuilt the table_") e os administradores recebem um link para a regra. O **histórico de correspondência** do documento mostra uma etapa _Transformation rules_ antes da primeira etapa de correspondência, com as regras que foram executadas.
 * O número de linhas após as regras é o que as [condições de ativação](more-settings/purchase-order/purchase-order-matching-rules.md#condicoes-de-ativacao) das regras de correspondência contam. Uma regra que reduz uma fatura a **uma** linha só faz sentido junto com uma regra de correspondência por total que esteja ativa para documentos de uma linha (`[[count(table_lines)]] >= 1`).
 
-## Logs
+## Registos
 
 Com **Execução de logs** ativado, cada aplicação da regra é gravada em **Tipos de documento → (tipo de documento) → Registos**, com o resultado (aplicada, sem alteração, ignorada), o documento e — para regras ignoradas — o rastreamento da condição que explica o motivo. Consulte [Ler o rastreamento da condição](rule-conditions-applies-when.md#ler-o-rastreamento-da-condicao-nos-logs).
 
@@ -253,4 +253,4 @@ Com **Execução de logs** ativado, cada aplicação da regra é gravada em **Ti
 * [Condições da regra (Applies when)](rule-conditions-applies-when.md) — condições em detalhes
 * [Custom Validation Rules](custom-validation-rules.md) — verifique os valores transformados
 * [Layout Selection Rules](layout-manager/layout-selection-rules.md) — escolha o layout que um documento usa
-* [Purchase Order Matching Rules](more-settings/purchase-order/purchase-order-matching-rules.md)
+* [Regras de correspondência de pedidos de compra](more-settings/purchase-order/purchase-order-matching-rules.md)

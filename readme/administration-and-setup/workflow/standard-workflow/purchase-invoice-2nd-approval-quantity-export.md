@@ -1,6 +1,6 @@
-# Purchase Invoice - 2nd Approval Quantity Export
+# Fatura de compra — Exportação após segunda aprovação da quantidade
 
-<figure><img src="../../../../.gitbook/assets/docbits_purchase_order_export_6.png" alt="DocBits Compra Pedido Exportar 6"><figcaption></figcaption></figure>
+
 
 Este título indica que a regra está configurada para gerir a fase de segunda aprovação de faturas de compra, com ênfase nos detalhes das quantidades, garantindo que as quantidades na fatura correspondem às da ordem de compra original.
 

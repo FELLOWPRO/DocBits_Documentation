@@ -126,7 +126,7 @@ Um gráfico com uma linha para **Pure touchless**, uma para **AP touchless** e a
 
 **Exemplo.** Depois que você ativou o PO Matching automático em 1º de outubro, a taxa pure sobe de 55 % para 68 % em duas semanas. O gráfico mostra o dia em que a curva vira, para que você possa relacioná-lo com a sua alteração.
 
-### Where touchless is lost first (onde o touchless se perde primeiro)
+### Onde o processamento sem intervenção se perde primeiro (Where touchless is lost first)
 
 <figure><img src="../.gitbook/assets/touchless-blocking-stages-pt.png" alt="Gráfico de barras dos documentos bloqueados por primeira etapa de bloqueio e motivo"><figcaption><p>Documentos bloqueados por etapa e motivo em que pararam primeiro. Aqui <strong>Field validation: Required field missing</strong> custa mais documentos (58), depois <strong>Export mapping failed</strong> (46) e <strong>PO item mismatch</strong> (27). Organização de exemplo com dados de demonstração; os nomes dos fornecedores são fictícios.</p></figcaption></figure>
 
@@ -161,7 +161,7 @@ A fila classifica A acima de B porque o **ganho esperado** é medido em relaçã
 
 Use a caixa de busca ("Search supplier number or name") para encontrar um fornecedor. Clique em uma linha para abrir o **Supplier Diagnosis**.
 
-### Compare suppliers (comparar fornecedores)
+### Comparar fornecedores (Compare suppliers)
 
 <figure><img src="../.gitbook/assets/touchless-compare-suppliers-pt.png" alt="A página Compare suppliers com três fornecedores lado a lado e um gráfico de barras dos seus resultados"><figcaption><p>Três fornecedores lado a lado: taxa pure, documentos perdidos e recuperáveis, causa raiz, ganho esperado e um gráfico de barras dos resultados. Cada <strong>Open</strong> leva ao Supplier Diagnosis. Organização de exemplo com dados de demonstração; os nomes dos fornecedores são fictícios.</p></figcaption></figure>
 
@@ -171,7 +171,7 @@ A comparação mostra os fornecedores lado a lado: **Pure rate**, **Lost documen
 
 **Exemplo.** Os fornecedores A e B enviam o mesmo layout de fatura. B tem uma taxa pure de 80 %, A apenas 35 %. Os dois têm a causa raiz "Master data". A comparação mostra que o layout está correto e que o cadastro do fornecedor A está incompleto. Corrija os dados mestres de A em vez de alterar o modelo.
 
-### Analyse with AI (analisar com IA)
+### Analisar com IA (Analyse with AI)
 
 O botão **Analyse n clusters with AI** analisa os clusters de problemas com o maior potencial touchless (com no mínimo um número mínimo de documentos cada). Leva cerca de 13 segundos por cluster e abrange a **organização inteira**. Somente administradores podem iniciá-lo.
 

@@ -40,7 +40,7 @@ O identificador DIAN (**NIT** — Número de Identificación Tributaria) usa `sc
 
 ## Pré-visualização padrão
 
-<figure><img src="colombia-dian-preview.png" alt="Pré-visualização da Colombia DIAN Factura Electrónica no DocBits"><figcaption><p>Pré-visualização padrão do DocBits para uma COLOMBIA FACTURA ELECTRONICA (CustomizationID 10)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/colombia-dian-preview.png" alt="Pré-visualização da Colombia DIAN Factura Electrónica no DocBits"><figcaption><p>Pré-visualização padrão do DocBits para uma COLOMBIA FACTURA ELECTRONICA (CustomizationID 10)</p></figcaption></figure>
 
 ## Mapeamento de campos
 
@@ -85,5 +85,5 @@ O elemento raiz é `<Invoice>` (UBL 2.1) para faturas, `<CreditNote>` para notas
 
 ## Relacionado
 
-- [Padrões de fatura eletrônica atualmente suportados](../../currently-supported-e-invoice-standards/)
+- [Padrões de fatura eletrônica atualmente suportados](../currently-supported-e-invoice-standards/README.md)
 - [Documentos eletrônicos suportados](./)

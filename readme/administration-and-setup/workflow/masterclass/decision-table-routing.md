@@ -35,23 +35,23 @@ Die eigene Übungstabelle **WF Praxis 20261022 – Betragsrouting** verwendet de
 
 Die bewusst begrenzten Bereiche lassen auch einen Fall ohne Treffer zu: Ein gespeicherter Betrag über 100000 ist in dieser Übung keiner der beiden Regeln zugeordnet. Die Entscheidungstabelle liest den gespeicherten Feldwert; kontrollieren Sie diesen nach einer Eingabe oder Normalisierung. Daraus folgt keine allgemeine geschäftliche Betragsobergrenze.
 
-![Die gespeicherte eigene Entscheidungstabelle zeigt Einzigartig, die unteren Betragsgrenzen und zwei Benutzer-Rückgaben.](../../../.gitbook/assets/wf-practice-20261022-decision-rules-de.png)
+<figure><img src="../../../.gitbook/assets/wf-practice-20261022-decision-rules-de.png" alt="Die gespeicherte eigene Entscheidungstabelle zeigt Einzigartig, die unteren Betragsgrenzen und zwei Benutzer-Rückgaben."><figcaption>Die gespeicherte eigene Entscheidungstabelle zeigt Einzigartig, die unteren Betragsgrenzen und zwei Benutzer-Rückgaben.</figcaption></figure>
 
-![Nach horizontalem Scrollen sind die zweite Bedingung mit den oberen Grenzen 1000 und 100000 sowie dieselben Benutzer-Rückgaben sichtbar.](../../../.gitbook/assets/wf-practice-20261022-decision-upper-bounds-de.png)
+<figure><img src="../../../.gitbook/assets/wf-practice-20261022-decision-upper-bounds-de.png" alt="Nach horizontalem Scrollen sind die zweite Bedingung mit den oberen Grenzen 1000 und 100000 sowie dieselben Benutzer-Rückgaben sichtbar."><figcaption>Nach horizontalem Scrollen sind die zweite Bedingung mit den oberen Grenzen 1000 und 100000 sowie dieselben Benutzer-Rückgaben sichtbar.</figcaption></figure>
 
 Die beiden Ausschnitte zeigen denselben gespeicherten Tabellenstand. Scrollen Sie in einer schmalen Ansicht innerhalb des Regelbereichs, damit keine zusätzliche Bedingung übersehen wird. Verwenden Sie im eigenen System vorhandene Testbenutzer; die Namen in der Übung sind keine übertragbaren Benutzerreferenzen.
 
 ## Rückgabe speichern und eine Rückfallroute verbinden
 
-![Die tatsächliche Prüfkarte v3 speichert die Rückgabe; die nachfolgende Zuweisung v2 liest Benutzer, während die Rückfallkarte v3 einen festen Testadministrator verwendet.](../../../.gitbook/assets/wf-practice-20261022-decision-store-and-assign-de.png)
+<figure><img src="../../../.gitbook/assets/wf-practice-20261022-decision-store-and-assign-de.png" alt="Die tatsächliche Prüfkarte v3 speichert die Rückgabe; die nachfolgende Zuweisung v2 liest Benutzer, während die Rückfallkarte v3 einen festen Testadministrator verwendet."><figcaption>Die tatsächliche Prüfkarte v3 speichert die Rückgabe; die nachfolgende Zuweisung v2 liest Benutzer, während die Rückfallkarte v3 einen festen Testadministrator verwendet.</figcaption></figure>
 
 Der Übungsworkflow prüft vor diesen Karten den Dokumenttyp und die eigene Rechnungsnummer `WF-TRAINING-001`. Die Entscheidungskarte v3 verwendet **Speichern** (`wf_store_data`); die nachfolgende Zuweisung v2 verwendet **Benutzer** (`user`). Für keinen Treffer und für einen Fehler ist eine eigene Zuweisung an **Super Admin** verbunden. Auch ein Fehler der normalen Zuweisung führt dorthin. In dieser Rückfallkarte ist **Entscheidungsbaum verwenden** ausdrücklich **Falsch**, damit sie den festen Testbenutzer verwendet.
 
-![Der gespeicherte echte Lauf bestätigt den Tabellentreffer und das Speichern seiner Ergebnisdaten.](../../../.gitbook/assets/wf-practice-20261022-decision-stored-result-log-de.png)
+<figure><img src="../../../.gitbook/assets/wf-practice-20261022-decision-stored-result-log-de.png" alt="Der gespeicherte echte Lauf bestätigt den Tabellentreffer und das Speichern seiner Ergebnisdaten."><figcaption>Der gespeicherte echte Lauf bestätigt den Tabellentreffer und das Speichern seiner Ergebnisdaten.</figcaption></figure>
 
 Der erste tatsächliche Lauf mit 1785 bestand die Typ- und Rechnungsnummerprüfung, erhielt eine Benutzer-Rückgabe, speicherte sie und führte die Zuweisung aus. Danach war am eigenen Dokument `Demo Reviewer bc5faa` als Zuständiger gespeichert. Dokumentfelder, Tabellen und Status blieben bei diesem Zuweisungslauf unverändert. Der graue Rückfallzweig wurde in diesem Erfolgsfall nicht ausgeführt.
 
-![Das native Dashboard zeigt den eigenen Trainingsbeleg und die tatsächlich gespeicherte Zuweisung an Demo Reviewer.](../../../.gitbook/assets/wf-practice-20261022-decision-assignee-normal-de.png)
+<figure><img src="../../../.gitbook/assets/wf-practice-20261022-decision-assignee-normal-de.png" alt="Das native Dashboard zeigt den eigenen Trainingsbeleg und die tatsächlich gespeicherte Zuweisung an Demo Reviewer."><figcaption>Das native Dashboard zeigt den eigenen Trainingsbeleg und die tatsächlich gespeicherte Zuweisung an Demo Reviewer.</figcaption></figure>
 
 ## Grenze und Rückfall am eigenen Beleg abnehmen
 
@@ -64,9 +64,9 @@ Die folgenden vier Zuweisungsläufe wurden tatsächlich ausgeführt. Die Regeln 
 | 1000.01 | `success` | Benutzer aus der gespeicherten Rückgabe | Demo Reviewer |
 | 100001 | `failed_condition`, kein Treffer | Feste Rückfallkarte | Super Admin |
 
-![Beim Betrag ohne Tabellentreffer bestätigt das native Dashboard die Zuweisung an Super Admin.](../../../.gitbook/assets/wf-practice-20261022-decision-assignee-fallback-de.png)
+<figure><img src="../../../.gitbook/assets/wf-practice-20261022-decision-assignee-fallback-de.png" alt="Beim Betrag ohne Tabellentreffer bestätigt das native Dashboard die Zuweisung an Super Admin."><figcaption>Beim Betrag ohne Tabellentreffer bestätigt das native Dashboard die Zuweisung an Super Admin.</figcaption></figure>
 
-![Der gespeicherte Lauf zeigt den Nichttreffer, die nicht ausgeführte normale Zuweisung und die erfolgreich ausgeführte Rückfallkarte.](../../../.gitbook/assets/wf-practice-20261022-decision-fallback-log-de.png)
+<figure><img src="../../../.gitbook/assets/wf-practice-20261022-decision-fallback-log-de.png" alt="Der gespeicherte Lauf zeigt den Nichttreffer, die nicht ausgeführte normale Zuweisung und die erfolgreich ausgeführte Rückfallkarte."><figcaption>Der gespeicherte Lauf zeigt den Nichttreffer, die nicht ausgeführte normale Zuweisung und die erfolgreich ausgeführte Rückfallkarte.</figcaption></figure>
 
 Der Rückfalllauf ist insgesamt grün, obwohl die Entscheidungskarte keinen Treffer lieferte: Der ausdrücklich verbundene Rückfallzweig wurde erfolgreich ausgeführt. Prüfen Sie deshalb sowohl den genommenen Pfad als auch die gespeicherte Zuständigkeit.
 

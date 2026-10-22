@@ -26,7 +26,7 @@ Halten Sie Kartenkonfiguration, tatsächlich empfangenen Request, Antwort und na
 
 ## Tatsächlich geprüft: JSON-Header, zwei Requests und eine Antwort ohne Rückschreibwirkung
 
-![Die native HTTPS-Karte v2 enthält POST, das eigene Testziel, JSON-Daten und einen nicht geheimen Demo-Header.](../../../.gitbook/assets/wf-practice-20261022-https-config-de.png)
+<figure><img src="../../../.gitbook/assets/wf-practice-20261022-https-config-de.png" alt="Die native HTTPS-Karte v2 enthält POST, das eigene Testziel, JSON-Daten und einen nicht geheimen Demo-Header."><figcaption>Die native HTTPS-Karte v2 enthält POST, das eigene Testziel, JSON-Daten und einen nicht geheimen Demo-Header.</figcaption></figure>
 
 Die inaktive Übungsregel war zusätzlich auf die eigene Rechnungsnummer `WF-TRAINING-001` begrenzt. Nur diese statischen synthetischen Daten wurden versendet; der Callback-Kontext blieb ausgeschaltet:
 
@@ -36,17 +36,17 @@ Die inaktive Übungsregel war zusätzlich auf die eigene Rechnungsnummer `WF-TRA
 
 Als Header waren `Content-Type: application/json` und `X-WF-Demo: wf-docs-demo-20261022` gesetzt. Der Demo-Header ist ein sichtbares Versuchskennzeichen und kein Zugangsschlüssel. Die Kartenbeschriftung stellt Unterstriche teilweise als Leerzeichen dar; vergleichen Sie deshalb den tatsächlichen Eingabewert und die empfangenen Bytes.
 
-![Das eigene Testziel protokolliert zuerst Formulardaten mit HTTP 400 und anschließend echte JSON-Bytes mit HTTP 200.](../../../.gitbook/assets/wf-practice-20261022-https-actual-receipts-de.png)
+<figure><img src="../../../.gitbook/assets/wf-practice-20261022-https-actual-receipts-de.png" alt="Das eigene Testziel protokolliert zuerst Formulardaten mit HTTP 400 und anschließend echte JSON-Bytes mit HTTP 200."><figcaption>Das eigene Testziel protokolliert zuerst Formulardaten mit HTTP 400 und anschließend echte JSON-Bytes mit HTTP 200.</figcaption></figure>
 
 Beim ersten Request enthielt der Body **Formulardaten**, obwohl der Header JSON ankündigte. Das Ziel lehnte ihn mit HTTP `400` und `input must be a valid json object` ab. Auf genau diese Antwort reagierte die geprüfte Karte mit einem automatischen zweiten Versand als JSON. Der zweite Eingang erhielt HTTP `200` und `{"accepted":true,"cost_center":"4711","duplicate":false}`. Ein einmaliger Workflow-Aufruf bedeutete hier also zwei HTTP-Requests. Eine beliebige 400-Antwort ist damit nicht als allgemeiner Wiederholungsmechanismus belegt.
 
 Nach dem Lauf enthielt der Beleg weiterhin kein Feld `cost_center`. Alle Geschäftsfelder, Tabellen und der Dokumentstatus waren unverändert. Die empfangene JSON-Antwort wurde protokolliert, aber nicht automatisch als Dokumentfeld oder frei benanntes Antwortobjekt für Folgekarten bereitgestellt.
 
-![Der gespeicherte native Lauf zeigt die automatische JSON-Wiederholung, HTTP 503 und die fehlerhafte HTTPS-Karte.](../../../.gitbook/assets/wf-practice-20261022-https-503-log-de.png)
+<figure><img src="../../../.gitbook/assets/wf-practice-20261022-https-503-log-de.png" alt="Der gespeicherte native Lauf zeigt die automatische JSON-Wiederholung, HTTP 503 und die fehlerhafte HTTPS-Karte."><figcaption>Der gespeicherte native Lauf zeigt die automatische JSON-Wiederholung, HTTP 503 und die fehlerhafte HTTPS-Karte.</figcaption></figure>
 
 Beim absichtlichen Fehlerfall antwortete der zweite Request mit HTTP `503`; die HTTPS-Karte erhielt `error`. Der ausgewählte Ausführungsendpunkt antwortete dennoch mit HTTP `200`, `success=true` und `outcome=executed`. Prüfen Sie deshalb das gespeicherte Lauf- und Kartenergebnis, bevor Sie den fachlichen Erfolg bestätigen.
 
-![Der gespeicherte Timeout-Lauf zeigt die fehlgeschlagene HTTPS-Karte und 60,3439 Sekunden Kartenlaufzeit.](../../../.gitbook/assets/wf-practice-20261022-https-timeout-log-de.png)
+<figure><img src="../../../.gitbook/assets/wf-practice-20261022-https-timeout-log-de.png" alt="Der gespeicherte Timeout-Lauf zeigt die fehlgeschlagene HTTPS-Karte und 60,3439 Sekunden Kartenlaufzeit."><figcaption>Der gespeicherte Timeout-Lauf zeigt die fehlgeschlagene HTTPS-Karte und 60,3439 Sekunden Kartenlaufzeit.</figcaption></figure>
 
 Beim verzögerten Ziel war auch der zweite Request tatsächlich angekommen. Die Karte brach nach ungefähr 60 Sekunden mit `ReadTimeout` ab; der Empfänger versuchte seine Antwort erst nach 65 Sekunden. Dieser Fall wurde anschließend über das gespeicherte Laufprotokoll und den Empfang abgeglichen. Es gab keinen erneuten Versand dieses Timeout-Versuchs.
 

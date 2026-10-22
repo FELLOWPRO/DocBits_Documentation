@@ -42,12 +42,18 @@ De workflow-kaart **"Change Status"** biedt een gestroomlijnde benadering voor h
 
 <!-- workflow-card-practical-example-20261021 -->
 
-## Praktisch voorbeeld
+## Praktijkvoorbeeld
 
-**Wanneer gebruiken:** Verplaats een gereviewd document naar een gedefinieerde verwerkingsstatus.
+**Wanneer gebruiken:** Een gecontroleerd document doorgeven voor goedkeuring.
 
-**Configuratie:** Selecteer uw geconfigureerde `Demo Review`-status en schakel het activeren van extra workflows uit voor dit voorbeeld.
+**Waar:** Standaard workflowontwerper → Dan → Status → Wijzig status naar.
 
-**Verwacht resultaat en tegenvoorbeeld:** Het document krijgt de geselecteerde status. Met deze actie alleen wordt de afzonderlijk geconfigureerde export niet uitgevoerd.
+**Instellen:** Kies versie 3 van `staus_change`, de status Wacht op goedkeuring (`validated_pending_approval`) en zet het starten van andere workflows op `false` (`trigger_docflow=false`). Gebruik een geïsoleerde synthetische factuur die aan de voorafgaande controles voldoet.
 
-Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.
+**Verwachte uitkomst en tegenvoorbeeld:** Een toegestane, geslaagde wijziging zet het document op de gekozen status. Als een eerdere voorwaarde onwaar is, wordt deze actie niet bereikt en wijzigt zij geen status. Een geweigerde of mislukte API-wijziging is geen succes: controleer de werkelijke status en logboeken. De kaart voert zelf geen export uit.
+
+### Kaartversies
+
+De expliciete schakelaar voor het starten van workflows is beschikbaar in v3. Versies 1 en 2 bieden deze niet; hun oudere updatepad gebruikt het standaardgedrag voor het starten van workflows. Ga er niet van uit dat een v3-instelling `false` ook geldt na overschakelen naar een oudere versie.
+
+Deze configuratie en verwachte uitkomst zijn aan de uitvoeringscode getoetst. Er is geen workflow of statuswijziging uitgevoerd.

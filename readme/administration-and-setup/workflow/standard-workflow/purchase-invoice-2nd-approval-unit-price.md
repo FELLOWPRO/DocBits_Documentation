@@ -1,24 +1,22 @@
 # Factura de compra: segunda aprobación del precio unitario
 
+Este ejemplo dirige una discrepancia de precio unitario a una revisión adicional. Las condiciones y los nombres de campos que aparecen a continuación pertenecen a la configuración descrita; no establecen valores predeterminados para todas las organizaciones.
 
+## Condiciones de la regla
 
-Este título indica que la regla está configurada para gestionar la segunda fase de aprobación de una factura de compra, con un enfoque específico en la validación del precio unitario.
+* **Document Type is Invoice:** limita el ejemplo al tipo de documento de factura configurado.
+* **Document Status is Pending Second Approval:** exige el estado de segunda aprobación de este flujo.
+* **Document Field Invoice Sub Type is Equals Purchase Invoice:** comprueba el subtipo de factura de compra configurado.
+* **Logic Unit Price in order confirmation Not Equals purchase order:** compara el precio unitario de la confirmación con el del pedido de compra, según las referencias y la lógica de la regla.
 
-#### Configuración de la regla:
+Son referencias a la regla del ejemplo. Antes de reproducirla, compruebe los nombres técnicos, los estados, las tolerancias y la disponibilidad de los datos en su entorno. La comparación de precios no demuestra por sí sola que el documento esté aprobado o que todas sus condiciones comerciales sean correctas.
 
-1. **When…**
-   * **Document Type is Invoice**: Esta condición garantiza que la regla se active únicamente para los documentos identificados como facturas, filtrando otros tipos de documentos y manteniendo la relevancia del flujo de trabajo.
-2. **And…**
-   * **Document Status is Pending Second Approval**: Esto especifica que la factura se encuentra en la fase en la que está a la espera de una segunda aprobación. Suele ser un paso diseñado para garantizar una supervisión adicional antes del procesamiento final.
-   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: Esto restringe aún más la aplicación de esta regla únicamente a las facturas clasificadas como "Purchase Invoices", distinguiéndolas de otros subtipos de facturas.
-   * **Logic Unit Price in order confirmation Not Equals purchase order**: Esta comprobación lógica es crucial, ya que compara el precio unitario indicado en la confirmación del pedido con el precio unitario del pedido de compra original. La acción se activa si estos valores no coinciden, lo que podría indicar una discrepancia que requiere resolución.
+## Acción de asignación
 
-#### Acción (Then…):
+**Assign user from field Buyer Name, use user User as fallback** intenta resolver al responsable a partir del campo **Buyer Name** y utiliza el usuario alternativo que se haya configurado. **User** representa la selección de este ejemplo; no significa que DocBits elija automáticamente un administrador predeterminado.
 
-* **Assign user from field Buyer Name, use user User as fallback**: Si se cumplen las condiciones especificadas (es decir, hay una discrepancia en los precios unitarios), la factura se asigna automáticamente a un comprador (el nombre especificado en el campo 'Buyer Name') para su revisión adicional. Si el campo 'Buyer Name' está vacío o no se especifica, se asigna un usuario predeterminado (probablemente un administrador u otro miembro del personal designado) como alternativa para gestionar la aprobación.
+Configure un destinatario principal y un respaldo válidos, con los permisos necesarios. Pruebe ambas rutas y compruebe la asignación almacenada y los registros. Si no puede resolverse ningún usuario autorizado, corrija la configuración antes de confiar en la automatización.
 
-#### Propósito de esta regla:
+## Propósito de la revisión
 
-* **Garantizar la precisión y el cumplimiento**: Esta regla es fundamental para garantizar que el proceso de facturación sea preciso y cumpla con los términos acordados. Al activar una revisión cuando hay una discrepancia en los precios unitarios, el sistema ayuda a prevenir errores financieros o posibles fraudes.
-* **Streamline Approvals**: La automatización de la asignación para revisión basada en discrepancias específicas ayuda a agilizar el proceso de aprobación y garantiza que los problemas sean abordados rápidamente por el personal adecuado.
-* **Financial Oversight**: Exigir una segunda aprobación, especialmente basada en la coincidencia de precios, refuerza los controles financieros y la rendición de cuentas dentro de la organización.
+La regla ayuda a dirigir las discrepancias al personal responsable para que revise el precio. La asignación no constituye una aprobación, un control de fraude completo, un pago ni una exportación. El resultado depende de la configuración y de los datos disponibles.

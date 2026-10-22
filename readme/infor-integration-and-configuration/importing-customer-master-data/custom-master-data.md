@@ -32,4 +32,4 @@ La pantalla **Crear Preselección** permite empezar por **ION API** u **OAUTH2**
 
 <figure><img src="../../.gitbook/assets/site-extra-custom-master-data-preset-es.png" alt="Paso inicial de Crear Preselección con las opciones ION API y OAUTH2. Son nombres de protocolos. No se introdujeron credenciales ni se guardó una preselección."><figcaption><p>Paso inicial de Crear Preselección con las opciones ION API y OAUTH2. Son nombres de protocolos. No se introdujeron credenciales ni se guardó una preselección.</p></figcaption></figure>
 
-Las credenciales y los valores de API pertenecen al entorno y a la organización correspondientes. No los copie de una captura de ejemplo. Durante esta revisión no se eligió una API, se introdujeron credenciales, se continuó el asistente ni se guardó una tabla o preselección.
+Las credenciales y los valores de API pertenecen al entorno y a la organización correspondientes. No los copie de una captura de ejemplo. Durante esta revisión no se eligió ninguna API, no se introdujeron credenciales, no se continuó el asistente ni se guardó ninguna tabla o preselección.

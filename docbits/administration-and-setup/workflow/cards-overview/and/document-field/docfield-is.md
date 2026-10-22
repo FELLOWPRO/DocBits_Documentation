@@ -46,6 +46,6 @@ The "DocField Comparison Validation" workflow card is a robust tool for dynamic 
 
 **Configuration:** Select numeric field `total_amount`, operator `>` and reference value `1000`.
 
-**Expected result and counterexample:** A value of `1200` passes. `1000` and `900` fail because the comparison is strictly greater than.
+**Expected result and counterexample:** A value of `1200` satisfies the condition. `1000` and `900` do not: the `>` operator requires a value strictly greater than `1000`.
 
 This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

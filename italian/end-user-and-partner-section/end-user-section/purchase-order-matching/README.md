@@ -2,22 +2,30 @@
 
 Usa **Corrispondenza PO** per confrontare le righe dell'ordine di acquisto caricate per un documento con le righe di fattura estratte. I dati dell'ordine di acquisto possono provenire da un'integrazione ERP o da un altro import configurato. La schermata mostra il documento accanto alle due tabelle, così puoi controllare numeri, quantità, prezzi e differenze prima di salvare o esportare.
 
+## Abbinare le righe della fattura a un ordine
+
+Il percorso inizia con un numero d’ordine riconosciuto e tre righe di fattura abbinate. Mostra poi la ricerca manuale come eccezione, un collegamento intenzionalmente errato, un abbinamento parziale, quello automatico e il salvataggio. Verifica il risultato dopo il ricaricamento: salvare l’abbinamento non approva né esporta da solo la fattura.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v4/it.mp4" %}
+
+[Guarda il video con i sottotitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v4/it.html)
+
 {% hint style="info" %}
-L'esempio seguente usa una fattura e un ordine di acquisto sintetici FellowPro in **DocBits Documentation Test A**. La sua tabella della fattura attualmente indica **NESSUNA VOCE DI LINEA TROVATA**. Questo dimostra la navigazione e la ricerca, ma non può dimostrare un abbinamento riuscito tra righe. Non esportare questo esempio come fattura abbinata.
+La registrazione usa dati di prova sintetici con tre righe di fattura estratte e il relativo ordine. Carta, scatole per archivio e consegna ammontano a 118 EUR netti. L’abbinamento completo mostra 118 EUR abbinati e nessun importo aperto.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/dbdc-320-po-screen-it.png" alt="Schermata di Corrispondenza PO in italiano nell'organizzazione sintetica Sandbox: ricerca, barra degli strumenti, righe dell'ordine di acquisto, tabella delle righe di fattura vuota e anteprima della fattura"><figcaption><p>L'ordine di acquisto è caricato; la fattura di esempio non ha righe estratte da collegare.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-full-it.png" alt="Abbinamento completo: tutte e tre le righe sono collegate, con 118 EUR abbinati e 0 EUR aperti."><figcaption><p>Abbinamento completo: tutte e tre le righe sono collegate, con 118 EUR abbinati e 0 EUR aperti.</p></figcaption></figure>
 
 ## Trovare e ispezionare un ordine di acquisto
 
-1. Apri una fattura in **Corrispondenza PO**. Se la tua organizzazione ha più ordini di acquisto, inserisci un numero in **Cerca il numero dell'ordine di acquisto**.
+1. Apri la fattura in **Corrispondenza PO**. Quando il numero d’ordine viene riconosciuto, DocBits carica l’ordine corrispondente. Usa la ricerca manuale se il numero manca o per controllare un altro ordine.
 2. Seleziona l'icona del filtro accanto alla casella di ricerca per **Parola chiave**, **Fornitore**, **Stato**, **Stato ordine**, date, intervallo di importo, ordinamento e numero di record mostrati. Seleziona **Più** per criteri aggiuntivi. Seleziona **Applica** per cercare o **Elimina** per ripristinare i filtri.
 3. Seleziona un numero di ordine di acquisto sopra la tabella per ispezionarne le righe. L'icona di aggiornamento accanto al numero ricarica i dati di quell'ordine. Un ricaricamento può dipendere dall'integrazione configurata.
-4. Confronta ogni riga dell'ordine di acquisto con la fattura e la sua tabella estratta. Il **+** su una riga espande i dettagli di abbinamento; di per sé non collega la riga alla fattura. Nell'esempio mostra **No multi-match Information** perché non esiste alcun abbinamento di quel tipo.
+4. Confronta ogni riga dell’ordine con la fattura e la tabella estratta. Il **+** apre i dettagli di abbinamento esistenti; non collega da solo la riga alla fattura.
 
-<figure><img src="../../../.gitbook/assets/dbdc-320-po-filters-it.png" alt="Filtri di ricerca dell'ordine di acquisto in italiano con fornitore, stati, limiti di data e importo, ordinamento e pulsanti Applica ed Elimina"><figcaption><p>Usa il pannello dei filtri per ridurre gli ordini di acquisto mostrati.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-search-it.png" alt="La ricerca manuale mostra le tre righe dell’ordine di prova. Usa i filtri quando servono; un numero d’ordine riconosciuto non richiede una seconda ricerca."><figcaption><p>La ricerca manuale mostra le tre righe dell’ordine di prova. Usa i filtri quando servono; un numero d’ordine riconosciuto non richiede una seconda ricerca.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc-320-po-line-it.png" alt="Riga dell'ordine di acquisto espansa con No multi-match Information e una tabella delle righe di fattura vuota"><figcaption><p>La riga espansa mostra i dettagli di abbinamento quando disponibili.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-partial-it.png" alt="Abbinamento parziale: la carta corrisponde a 50 EUR abbinati; restano aperti 68 EUR. Non indica una soglia fissa del cinquanta per cento."><figcaption><p>Abbinamento parziale: la carta corrisponde a 50 EUR abbinati; restano aperti 68 EUR. Non indica una soglia fissa del cinquanta per cento.</p></figcaption></figure>
 
 ## Abbinare le righe e verificare il risultato
 
@@ -44,7 +52,7 @@ Usa **Cronologia dell'abbinamento** (icona dell'orologio, dove i tuoi permessi l
 
 ### Più di una riga per abbinamento
 
-Una singola riga di fattura può corrispondere a diverse righe dell'ordine, o viceversa, dove le tue regole di abbinamento lo consentono. Apri i dettagli **+** su una riga per ispezionare un eventuale abbinamento multiplo esistente. Controlla la quantità e il prezzo combinati, non solo una riga. Un pannello di dettagli vuoto come l'esempio sintetico qui sopra significa che non c'è alcun abbinamento multiplo da ispezionare. Vedi [Strumenti di Abbinamento Ordine di Acquisto](purchase-order-matching-tools.md) per modificare i collegamenti.
+Una singola riga di fattura può corrispondere a diverse righe dell'ordine, o viceversa, dove le tue regole di abbinamento lo consentono. Apri i dettagli **+** su una riga per ispezionare un eventuale abbinamento multiplo esistente. Controlla la quantità e il prezzo combinati, non solo una riga. Un pannello di dettagli vuoto significa che non c'è alcun abbinamento multiplo da ispezionare. Vedi [Strumenti di Abbinamento Ordine di Acquisto](purchase-order-matching-tools.md) per modificare i collegamenti.
 
 ### Quantità, differenze e sconti
 

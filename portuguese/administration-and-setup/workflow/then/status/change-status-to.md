@@ -44,10 +44,16 @@ O cartão de fluxo de trabalho **"Change Status"** oferece uma abordagem simplif
 
 ## Exemplo prático
 
-**Quando usar:** Move um documento revisado para um estado de processamento definido.
+**Quando usar:** Encaminhar um documento verificado para a etapa de aprovação.
 
-**Configuração:** Selecione o status `Demo Review` configurado e desative o acionamento de fluxos de trabalho adicionais para este exemplo.
+**Onde:** Designer de fluxos padrão → Então → Status → Alterar status para.
 
-**Resultado esperado e contraexemplo:** O documento recebe o status selecionado. Esta ação por si só não executa a exportação configurada separadamente.
+**Configuração:** Selecione a versão 3 de `staus_change`, o estado Aprovação pendente (`validated_pending_approval`) e defina a ativação de outros fluxos como `false` (`trigger_docflow=false`). Utilize uma fatura sintética isolada que cumpra as verificações anteriores.
 
-Esta é uma configuração ilustrativa e resultado esperado. Utilize campos, usuários e grupos configurados em sua organização de teste; não é uma afirmação de que este exemplo foi executado.
+**Resultado esperado e contraexemplo:** Uma atualização permitida e bem-sucedida coloca o documento no estado escolhido. Se uma condição anterior for falsa, esta ação não é alcançada e não altera o estado. Uma atualização da API recusada ou falhada não é um sucesso: verifique o estado real e os registos. O cartão não executa por si só uma exportação.
+
+### Versões do cartão
+
+O controlo explícito para ativar outros fluxos está disponível na v3. As versões 1 e 2 não o disponibilizam; o seu caminho de atualização anterior utiliza o comportamento de ativação predefinido. Não presuma que uma definição `false` da v3 se aplica ao mudar para uma versão anterior.
+
+Configuração e resultado esperado verificados no código de execução. Não foi executado qualquer fluxo ou alteração de estado.

@@ -44,8 +44,8 @@ De workflow-kaart "DocField Comparison Validation" is een robuust hulpmiddel voo
 
 **Wanneer gebruiken:** Facturen boven een bepaald bedrag bekijken.
 
-**Configuratie:** Selecteer numeriek veld `net_total`, operator `>` en referentiewaarde `1000`.
+**Configuratie:** Selecteer numeriek veld `total_amount`, operator `>` en referentiewaarde `1000`.
 
-**Verwacht resultaat en tegenvoorbeeld:** Een waarde van `1200` is voldoende. `1000` en `900` mislukken omdat de vergelijking strikt groter is dan.
+**Verwacht resultaat en tegenvoorbeeld:** Een waarde van `1200` voldoet aan de voorwaarde. `1000` en `900` voldoen niet: de operator `>` vereist een waarde groter dan `1000`.
 
 Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

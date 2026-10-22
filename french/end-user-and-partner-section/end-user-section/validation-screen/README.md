@@ -1,5 +1,13 @@
 # Écran de validation
 
+## Corriger et enregistrer une facture en tant que vérificatrice
+
+Comparez la facture originale avec les champs et les trois lignes, corrigez le numéro de facture, enregistrez puis rechargez pour vérifier la valeur conservée. La vidéo utilise une facture électronique synthétique et un compte de vérification ordinaire. Cet enregistrement est distinct de l’apprentissage de l’extraction, de l’approbation et de l’exportation.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-validation-customer/v1/fr.mp4" %}
+
+[Voir avec les sous-titres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-validation-customer/v1/fr.html)
+
 ## Vérifier une facture et terminer son traitement
 
 Suivez une facture du tableau de bord à sa transmission : comparez le fournisseur, les dates, le numéro, les montants et la devise avec l’original et consultez un avertissement de champ obligatoire. Sélectionnez le numéro directement dans le document, confirmez son association et conservez la règle d’extraction avec **Save Rules**. La facture vérifiée est ensuite transmise pour approbation dans cet exemple. Les actions disponibles dépendent de vos droits et de votre processus.

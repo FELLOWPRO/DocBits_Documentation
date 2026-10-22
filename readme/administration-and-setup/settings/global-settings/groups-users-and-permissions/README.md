@@ -1,5 +1,13 @@
 # 用户组、用户和权限
 
+## 创建用户组并测试文档访问权限
+
+在用户组权限已启用的环境中，创建审核用户组并添加无管理员权限的测试用户。允许列出、查看和编辑分配给该用户的发票，保持删除、批量修改和审批权限关闭。保存并重新打开设置，然后以普通用户登录：已分配的发票可见，未分配的对照文档不可见。
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/zh.mp4" %}
+
+[观看带字幕的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/zh.html)
+
 这些设置分别回答三个不同的问题：谁可以登录、他们在哪个子组织中工作，以及其所属用户组可以执行哪些操作。
 
 | 如果你需要…… | 打开…… |

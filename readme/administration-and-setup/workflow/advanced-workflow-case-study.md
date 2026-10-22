@@ -8,7 +8,7 @@ Eine Trainingsrechnung über 1000 Euro benötigt eine Prüfung. Bis einschließl
 
 ## Voraussetzungen und Aufbau
 
-Verwenden Sie eine Testorganisation mit aktiver Advanced-Freigabe und das [Übungspaket](workflow-training-kit.md). Importieren Sie `advanced-workflow.json` über **Import Workflow**, lassen Sie die Regel inaktiv und öffnen Sie den importierten Graphen. Der When-Einstieg prüft Rechnung; die erste And-Karte begrenzt die Übung auf `invoice_id = WF-TRAINING-001`. Die Regel wird inaktiv importiert und enthält keine Empfänger und keinen Export.
+Verwenden Sie eine Testorganisation mit aktiver Advanced-Freigabe und das [Übungspaket](workflow-training-kit.md). Importieren Sie `advanced-workflow.json` über **Workflow importieren**, lassen Sie die Regel inaktiv und öffnen Sie den importierten Graphen. Der When-Einstieg prüft Rechnung; die erste And-Karte begrenzt die Übung auf `invoice_id = WF-TRAINING-001`. Die Regel wird inaktiv importiert und enthält keine Empfänger und keinen Export.
 
 ```mermaid
 flowchart LR
@@ -29,11 +29,21 @@ Die vorgeschaltete Feldprüfung verwendet `invoice_id`, `eq` und `WF-TRAINING-00
 
 **v2:** Die Statuskarte der gewählten Route verbindet sich direkt mit der gemeinsamen Then-Karte `complete`, die `wf_training_complete = YES` schreibt. Es gibt hier keinen wartenden OR-Knoten. v1 belegte nur den Testmodus: Bei unerreichten Vorgängern kann der echte Scheduler eine Zusammenführung überspringen, die der Test trotzdem auswertet. Die [P0-Knotenreferenz](masterclass/control-nodes.md) zeigt den Unterschied. Eine direkte gemeinsame Then-Karte ersetzt bei mehreren gleichzeitig laufenden Pflichtaktionen keine Wartebarriere.
 
+## Den vollständigen Aufbau in zwei Ansichten verfolgen
+
+Der v2-Graph hat zehn Knoten: Einstieg, Trainingsnummer-Prüfung, Betragsprüfung, drei Routenmarkierungen, drei Statuskarten und eine gemeinsame Abschlussaktion. Die beiden echten, überlappenden Ansichten zeigen den breiten Graphen in lesbarer Größe. Prüfen Sie die gemeinsame Betragskarte als Anschluss zwischen beiden Bildern; links davon liegen die zwei Einstiegskarten, rechts davon die drei Routen und der Abschluss.
+
+<figure><img src="../../.gitbook/assets/wf-companion-20261022-entry-and-guards-de.png" alt="Linker Teil des echten v2-Trainingsgraphen: Dokumenttyp Rechnung, Rechnungsnummer WF-TRAINING-001 und Gesamtbetrag größer als 1000"><figcaption><p>Einstieg und Begrenzung des v2-Geschäftsfalls. Die Betragskarte erscheint auch in der folgenden überlappenden Ansicht. Bild aus dem bestehenden deutschen Lernvideo, Stufe 2.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/wf-companion-20261022-three-route-graph-de.png" alt="Rechter Teil desselben v2-Trainingsgraphen mit REVIEW, STANDARD und DATA_ERROR, ihren drei Statuskarten und der gemeinsamen Then-Abschlusskarte"><figcaption><p>Alle drei exklusiven Routen münden direkt in dieselbe Abschlussaktion. Zusammen mit der vorherigen Ansicht ist der Zehn-Knoten-Aufbau nachvollziehbar; dieses einzelne Bild zeigt dessen rechten Teil. Bild aus dem bestehenden deutschen Lernvideo, Stufe 5.</p></figcaption></figure>
+
+Die Statuskarten fordern in diesem Übungsfall keine weiteren Workflows an. Die Abschlusskarte ist eine **Then**-Aktion für exklusive Wege. Ersetzen Sie sie nicht ungeprüft durch einen wartenden ALL-/ANY-/OR-Knoten. Der [bestehende Film Stufe 5](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/de.html) zeigt die Zusammenführung ab etwa 0:41.
+
 ## Nachbauen und prüfen
 
 1. Validieren Sie den vollständigen Graphen.
 2. Bereiten Sie die Dateien für Ihre Organisation nach der Anleitung im Übungspaket vor.
-3. Öffnen Sie **Test → Custom Data** und verwenden Sie die vollständige Datei des jeweiligen Falls. Ein Objekt nur mit `total_amount` genügt nicht.
+3. Öffnen Sie den Testdialog und wählen Sie **Benutzerdefinierte Daten** und verwenden Sie die vollständige Datei des jeweiligen Falls. Ein Objekt nur mit `total_amount` genügt nicht.
 4. Starten Sie vom vollständigen Einstieg. Prüfen Sie den Ausgang von `amount`, den erreichten Routenknoten, die Statusmeldung und `complete`.
 5. Vergleichen Sie mit den unabhängig festgelegten Erwartungen. Die gespeicherten Testantworten im Paket zeigen die tatsächlich beobachteten Knotenergebnisse.
 

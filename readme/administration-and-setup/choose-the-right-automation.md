@@ -24,7 +24,7 @@ DocBits 提供了多种方式来更改、检查和路由文档：**转换规则*
 
 每份文档都要经过相同的步骤。每种工具在流程中都有自己的位置，这决定了它能读取哪些内容，以及还能更改哪些内容。
 
-<figure><img src="../.gitbook/assets/automation-phases-zh.svg" alt="自动化执行阶段示例。脚本仅在配置的触发点运行；具体规则轮次、保存及状态事件行为应使用测试文档验证。"><figcaption><p>自动化执行阶段示例。脚本仅在配置的触发点运行；具体规则轮次、保存及状态事件行为应使用测试文档验证。</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/automation-phases-zh.png" alt="自动化执行阶段示例。脚本仅在配置的触发点运行；具体规则轮次、保存及状态事件行为应使用测试文档验证。"><figcaption><p>自动化执行阶段示例。脚本仅在配置的触发点运行；具体规则轮次、保存及状态事件行为应使用测试文档验证。</p></figcaption></figure>
 
 具体来说：
 
@@ -44,7 +44,7 @@ DocBits 提供了多种方式来更改、检查和路由文档：**转换规则*
 
 ## 对比各工具
 
-<figure><img src="../.gitbook/assets/automation-tool-capabilities-zh.svg" alt="自动化工具能力对比。后续处理取决于规则结果、所选卡片及自动导出条件，应区分提示性警告与阻断错误。"><figcaption><p>自动化工具能力对比。后续处理取决于规则结果、所选卡片及自动导出条件，应区分提示性警告与阻断错误。</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/automation-tool-capabilities-zh.png" alt="自动化工具能力对比。后续处理取决于规则结果、所选卡片及自动导出条件，应区分提示性警告与阻断错误。"><figcaption><p>自动化工具能力对比。后续处理取决于规则结果、所选卡片及自动导出条件，应区分提示性警告与阻断错误。</p></figcaption></figure>
 
 | | 转换规则 | 自定义验证规则 | 采购订单匹配规则 | 脚本 | 标准工作流 | 高级工作流 | SDK 卡片 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -57,7 +57,7 @@ DocBits 提供了多种方式来更改、检查和路由文档：**转换规则*
 
 ## 通过四个问题做出选择
 
-<figure><img src="../.gitbook/assets/automation-tool-choice-zh.svg" alt="自动化工具选择示意；根据所需修改、检查、采购订单匹配或流程动作，选择已配置且有权限使用的功能。"><figcaption><p>自动化工具选择示意；根据所需修改、检查、采购订单匹配或流程动作，选择已配置且有权限使用的功能。</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/automation-tool-choice-zh.png" alt="自动化工具选择示意；根据所需修改、检查、采购订单匹配或流程动作，选择已配置且有权限使用的功能。"><figcaption><p>自动化工具选择示意；根据所需修改、检查、采购订单匹配或流程动作，选择已配置且有权限使用的功能。</p></figcaption></figure>
 
 1. **需要更改某个值吗？** 使用**转换规则**。如果更改需要主数据、任务或状态，请使用**脚本**。
 2. **需要检查某个值吗？** 使用**自定义验证规则**。它们可以阻止文档，但不会更改文档。如果检查需要主数据或代码，可以用**脚本**将字段标记为无效。

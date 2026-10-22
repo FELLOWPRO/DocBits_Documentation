@@ -2,6 +2,14 @@
 
 Mengen, Einzelpreise und zusätzliche Kosten dürfen nur innerhalb der fachlich festgelegten Grenzen vom Bestellwert abweichen. Administratoren richten diese Grenzen pro Dokumenttyp ein. Ein erfolgreicher Abgleich innerhalb der Toleranz ersetzt die Freigabe oder den Exportprozess nicht.
 
+## PO-Abgleichsregeln und Toleranzen konfigurieren
+
+Der Rundgang öffnet den Dokumenttyp Rechnung, prüft die veröffentlichte Regelversion und erstellt daraus einen inaktiven Entwurf. Er erklärt Regeltypen, Priorität innerhalb der Abgleichstufe, Vergleichsspalten, Mengenbasis, Abgleichmodi und Toleranzberechnungen. Gespeichert wird nur der Tutorial-Entwurf; die aktive Version und die globalen Toleranzen bleiben unverändert. Die Rechnung mit fünf Prozent dient als Beispiel und ändert keine aktive Toleranz.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/de.mp4" %}
+
+[Video mit Untertiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/de.html)
+
 ## Mengen- und Einzelpreistoleranzen einrichten
 
 1. Öffnen Sie **Einstellungen → Dokumenttypen**, wählen Sie den Dokumenttyp, zum Beispiel **Rechnung**, und öffnen Sie **Weitere Einstellungen → Bestellung**.

@@ -1,55 +1,57 @@
 # Document Types
 
-{% embed url="https://youtu.be/pFz_6tvNlU4" %}
-DocBits Document Types Explained: Create, Configure & Assign Processing Settings
+Configure the reference field in an isolated custom test type, save its label and required-review settings, and verify them after reloading.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/document-types-fields-admin/v1/en.mp4" %}
+Document Types
 {% endembed %}
 
-<figure><img src="../../../../.gitbook/assets/document_types.png" alt="Document Types"><figcaption><p>Document Types Page</p></figcaption></figure>
+[Watch with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/document-types-fields-admin/v1/en.html)
+
+The recording shows the actual test interface. Configured values and technical labels retain their original meaning.
 
 ## Overview
 
-The Document Types page lists all document types recognized and processed by DocBits. It is divided into two sections:
+Document types define the configuration used for different kinds of documents. DocBits provides standard types such as invoices and credit notes. Custom types let an administrator define fields and processing settings for another document category. Standard types cannot be deleted; manage custom types within the organization's permissions.
 
-* **Default Document Types**: Pre-configured types provided by DocBits (Invoice, Credit Note, Delivery Note, Order Confirmation, Contract, ZUGFeRD, etc.). These cannot be deleted.
-* **Custom Document Types**: Types you create for your specific business needs. These can be edited and deleted.
+## Controls on a document type card
 
-## Controls per Document Type
+| Control | Purpose |
+| --- | --- |
+| Activate | Enable or disable the document type for processing. |
+| Extraction | Choose the extraction mode shown by the native control: Flex or Fix. This is a mode selection, separate from the Activate switch. |
+| Settings, shown as a gear | Open further configuration for that document type. |
 
-Each document type card shows:
+The available links depend on the type, permissions and enabled modules. The current interface can offer layouts, fields, tables, scripts, model training and document subtypes. Transformation rules, validation rules and electronic document configuration are available where their respective features apply. Other configuration options can be inside the document type's settings rather than a separate tab below every card.
 
-| Control | Description |
-|---------|-------------|
-| **Activate** | Toggle to enable or disable this document type for processing. |
-| **Extraction** | Toggle to enable or disable AI-based data extraction for this type. |
-| **Settings** (gear icon) | Open additional configuration options for the document type. |
+## Configure fields and required information
 
-## Configuration Tabs
+The video uses an already-created, isolated custom test type. It changes that type's reference field; it does not change the existing invoice configuration.
 
-Below each document type, you can access the following configuration tabs:
+1. Open the document type and select its fields.
+2. Check the field group and stable technical field name. A readable display label is a separate setting; changing it does not create a new field ID.
+3. Make the reference field required while keeping it visible and editable. Required information must be supplied; the setting does not invent a missing value or guarantee correct extraction.
+4. Configure explicit field review separately from the required value. Read-only, hidden, OCR thresholds and Match Score thresholds have their own effects; they are not interchangeable switches.
+5. Save the configuration, reopen it and verify the stored display label and flags.
 
-| Tab | Description |
-|-----|-------------|
-| **Labels** | Manage display labels and translations for the document type. |
-| **Edit layout** | Modify how the document appears in the validation view, including field positions. |
-| **Document Sub Types** | Configure subcategories for this document type (e.g., different invoice formats). |
-| **Table columns** | Customize which data columns appear in the line items table. |
-| **Fields** | Manage the data fields extracted from the document (add, edit, or remove fields). |
-| **Model Training** | Configure and train the AI model used for recognizing and extracting data. |
-| **Regex** | Set up regular expressions for pattern-based data extraction. |
-| **Scripts** | Write custom processing scripts that run during document processing. |
-| **E-Doc** | Configure electronic document standards (XRechnung, ZUGFeRD, EDI, FatturaPA). |
+<figure><img src="../../../../.gitbook/assets/admin-reload-en-36dbf8128abf.png" alt="Saved field settings in an isolated custom test type."><figcaption><p>Saved field settings in an isolated custom test type.</p></figcaption></figure>
 
-## Custom Validation Rules
+The demonstrated result proves that the field configuration was saved and reloaded. It does not constitute model training, invoice approval, export or a downstream validation test. Before using a configuration in production, test representative documents and the intended ordinary-user workflow.
 
-Open a document type and select **Custom Validation Rules** to manage its own validation rules. To reuse an existing rule without rebuilding it, follow [Duplicate a Custom Validation Rule](duplicate-a-custom-validation-rule.md). The guide explains the rule name, rule key and confirmation controls.
+## Custom validation rules
 
-## Creating a Custom Document Type
+Where this feature is available, open the document type's validation rules. To reuse an existing rule, follow [Duplicate a Custom Validation Rule](duplicate-a-custom-validation-rule.md). This is separate from the individual field flags shown in the video.
 
-1. Scroll down to the **Custom Document Types** section.
-2. Click **+ New**.
-3. Enter a name for the new document type.
-4. Configure the fields, layout, and extraction settings as needed.
+## Create a custom document type
+
+Open the custom document types section, choose New and enter a clear name. Complete the offered setup steps for the intended extraction mode, fields, groups and any tables. Model training and extraction configuration are separate from merely saving a required-field flag.
 
 {% hint style="info" %}
-See [Setup Document Type](../../../setup/document-types/) for detailed setup instructions.
+See [Setup Document Type](../../../setup/document-types/) for the setup procedure.
 {% endhint %}
+
+## Additional recording
+
+{% embed url="https://youtu.be/pFz_6tvNlU4" %}
+Document Types
+{% endembed %}

@@ -115,3 +115,7 @@ Al ensamblar estos tres componentes—Disparador, Condición y Acción—el Moto
 ### Conclusión
 
 La regla "Easy When-And-Then" del Motor de Flujo de Trabajo DocBits ejemplifica el compromiso del motor de proporcionar una plataforma fácil de usar para automatizar procesos. Esta regla sencilla, al descomponer la automatización en los elementos esenciales de Disparador, Condición y Acción, facilita que los usuarios conceptualicen, creen y gestionen flujos de trabajo. Ya sea que sea nuevo en la automatización de flujos de trabajo o un profesional experimentado, el Motor de Flujo de Trabajo DocBits ofrece una herramienta eficiente y accesible para mejorar la productividad y optimizar las operaciones.
+
+## Aprendizaje desde principiante hasta experto
+
+[Aprendizaje desde principiante hasta experto](workflow-learning-path.md). Recorra los niveles en orden. Leer no basta: cada nivel termina con una configuración propia, una expectativa verificable y pruebas. P0 evita errores básicos de ejecución; P1 profundiza en datos, decisiones de negocio e integraciones.

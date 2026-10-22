@@ -115,3 +115,7 @@ Assemblando questi tre componenti—Trigger, Condizione e Azione—il Motore di 
 ### Conclusione
 
 La regola "Easy When-And-Then" del Motore di Workflow DocBits esemplifica l'impegno del motore nel fornire una piattaforma user-friendly per l'automazione dei processi. Questa regola semplice, scomponendo l'automazione negli elementi essenziali di Trigger, Condizione e Azione, rende più facile per gli utenti concettualizzare, creare e gestire i flussi di lavoro. Che tu sia nuovo nell'automazione dei flussi di lavoro o un professionista esperto, il Motore di Workflow DocBits offre uno strumento efficiente e accessibile per migliorare la produttività e semplificare le operazioni.
+
+## Percorso dal principiante all’esperto
+
+[Percorso dal principiante all’esperto](workflow-learning-path.md). Seguire i livelli nell’ordine. Leggere non basta: ogni livello termina con una configurazione propria, un’aspettativa verificabile e una prova. P0 evita errori fondamentali di esecuzione; P1 approfondisce dati, decisioni aziendali e integrazioni.

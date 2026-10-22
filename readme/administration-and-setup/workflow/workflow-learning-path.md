@@ -32,6 +32,10 @@ Lire et construire: [Quand mon workflow s’exécute-t-il ?](workflow-execution-
 
 ## 2. Votre première règle <a id="level-2"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/fr.mp4" %}
+
+[Ouvrir la vidéo avec les sous-titres français et la transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/fr.html).
+
 **Exercice:** Construisez When Invoice → And invoice_id = WF-TRAINING-001 → And total_amount > 1000 → Then wf_training_route = REVIEW. Gardez-la inactive. Testez les données complètes pour 999, 1000 et 1000.01. Aucun nœud de contrôle n’est encore nécessaire.
 
 **Critère de fin:** REVIEW n’est atteint qu’au-dessus de 1000. Notez type, opérateur et sortie choisie. Traitez séparément l’entrée absente.

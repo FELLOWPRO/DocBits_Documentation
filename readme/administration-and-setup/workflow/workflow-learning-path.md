@@ -125,3 +125,7 @@ Diese Kapitel begleiten die Übungen durchgehend: Ausführungsmodell → nachgeb
 ## Abschlussprotokoll
 
 Verwenden Sie acceptance-record-template.json aus dem Übungspaket. Halten Sie Szenario, Konfigurationsstand, Erwartung, Beobachtung und Nachweisart fest. Unterscheiden Sie Dev-Test, isolierten Quelltest, echten Dokumentlauf, Empfang und ERP-Verarbeitung. Markieren Sie nicht geprüfte Schritte ausdrücklich als offen.
+
+## Vom Lernfall in den Betrieb
+
+Nach den Übungen helfen [kontrollierte Aktivierung](workflow-go-live.md), [Änderung und Wiederherstellung](workflow-change-and-recovery.md) sowie der [Meldungskatalog](workflow-error-catalog.md). Belegen Sie den vorgesehenen Ausführungsanlass, die tatsächliche Wirkung und eine Wiederholung getrennt.

@@ -1,5 +1,13 @@
 # Pantalla de Validación
 
+## Corregir y guardar una factura como revisora
+
+Compare la factura original con los campos y sus tres líneas, corrija el número, guarde y recargue para comprobar el valor almacenado. La grabación utiliza una factura electrónica sintética y una cuenta de revisión normal. Guardar esta corrección es distinto del entrenamiento de extracción, la aprobación y la exportación.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-validation-customer/v1/es.mp4" %}
+
+[Ver con subtítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-validation-customer/v1/es.html)
+
 ## Revisar una factura y completar su comprobación
 
 Sigue una factura desde el panel hasta su entrega al siguiente paso: compara proveedor, fechas, número, importes y moneda con el original y consulta un aviso de campo obligatorio. Selecciona el número directamente en el documento, confirma su asociación y conserva la regla de extracción con **Save Rules**. En este ejemplo, la factura revisada se envía después para su aprobación. Las acciones disponibles dependen de tus permisos y del proceso de tu empresa.

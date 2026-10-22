@@ -65,7 +65,7 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 
 <summary>Webhook</summary>
 
-![Deutsches Formular für einen neuen Webhook-Export](../../../.gitbook/assets/export_webhook_configuration-de.png)
+<figure><img src="../../../.gitbook/assets/export_webhook_configuration-de.png" alt="Deutsches Formular für einen neuen Webhook-Export"><figcaption><p>Deutsches Formular für einen neuen Webhook-Export</p></figcaption></figure>
 
 **Feldbeschreibungen**
 
@@ -84,7 +84,7 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 
 <summary>SFTP</summary>
 
-![Deutsches Formular für einen neuen SFTP-Export](../../../.gitbook/assets/export_sftp_configuration-de.png)
+<figure><img src="../../../.gitbook/assets/export_sftp_configuration-de.png" alt="Deutsches Formular für einen neuen SFTP-Export"><figcaption><p>Deutsches Formular für einen neuen SFTP-Export</p></figcaption></figure>
 
 **Feldbeschreibungen**
 
@@ -112,7 +112,7 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_sftp_2.png)
 
-![Erweiterte SFTP-Einstellungen für Dateinamen und Dokumentenverlauf in der deutschen Oberfläche.](../../../.gitbook/assets/s50-export_sftp_3-de.png)
+<figure><img src="../../../.gitbook/assets/s50-export_sftp_3-de.png" alt="Erweiterte SFTP-Einstellungen für Dateinamen und Dokumentenverlauf in der deutschen Oberfläche."><figcaption><p>Erweiterte SFTP-Einstellungen für Dateinamen und Dokumentenverlauf in der deutschen Oberfläche.</p></figcaption></figure>
 
 </details>
 
@@ -122,7 +122,7 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 
 <summary>Infor-Export nach SFTP</summary>
 
-![Deutsches Formular Infor Export nach SFTP mit Exportordnerpfad, BOD- und IDM-Mapping.](../../../.gitbook/assets/s50-export_infor_sftp_configuration-de.png)
+<figure><img src="../../../.gitbook/assets/s50-export_infor_sftp_configuration-de.png" alt="Deutsches Formular Infor Export nach SFTP mit Exportordnerpfad, BOD- und IDM-Mapping."><figcaption><p>Deutsches Formular Infor Export nach SFTP mit Exportordnerpfad, BOD- und IDM-Mapping.</p></figcaption></figure>
 
 **Feldbeschreibungen**
 
@@ -143,7 +143,7 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 
 <summary>SMB</summary>
 
-![Deutsches SMB-Exportformular. Die Exportauswahl heißt im Produkt derzeit KMU; gemeint ist die SMB-Freigabe.](../../../.gitbook/assets/s50-export_smb_configuration-de.png)
+<figure><img src="../../../.gitbook/assets/s50-export_smb_configuration-de.png" alt="Deutsches SMB-Exportformular. Die Exportauswahl heißt im Produkt derzeit KMU; gemeint ist die SMB-Freigabe."><figcaption><p>Deutsches SMB-Exportformular. Die Exportauswahl heißt im Produkt derzeit KMU; gemeint ist die SMB-Freigabe.</p></figcaption></figure>
 
 **Feldbeschreibungen**
 
@@ -172,7 +172,7 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 
 <summary>Infor IDM</summary>
 
-![Deutsches Exportformular für Infor IDM. Deployment Type und technische Formatbezeichnungen bleiben englisch.](../../../.gitbook/assets/s50-export_infor_idm_configuration-de.png)
+<figure><img src="../../../.gitbook/assets/s50-export_infor_idm_configuration-de.png" alt="Deutsches Exportformular für Infor IDM. Deployment Type und technische Formatbezeichnungen bleiben englisch."><figcaption><p>Deutsches Exportformular für Infor IDM. Deployment Type und technische Formatbezeichnungen bleiben englisch.</p></figcaption></figure>
 
 **Feldbeschreibungen**
 
@@ -195,7 +195,7 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 
 <summary>Infor ION</summary>
 
-![Deutsches Exportformular für Infor ION BOD mit ION-API und BOD-Zuordnungsdatei.](../../../.gitbook/assets/s50-export_infor_ion_configuration-de.png)
+<figure><img src="../../../.gitbook/assets/s50-export_infor_ion_configuration-de.png" alt="Deutsches Exportformular für Infor ION BOD mit ION-API und BOD-Zuordnungsdatei."><figcaption><p>Deutsches Exportformular für Infor ION BOD mit ION-API und BOD-Zuordnungsdatei.</p></figcaption></figure>
 
 **Feldbeschreibungen**
 
@@ -218,7 +218,7 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 
 <summary>Infor IDM + ION BOD</summary>
 
-![Deutsches Exportformular für Infor IDM + ION BOD mit ION-, IDM- und BOD-Dateien.](../../../.gitbook/assets/s50-export_infor_idm_ion_bod_configuration-de.png)
+<figure><img src="../../../.gitbook/assets/s50-export_infor_idm_ion_bod_configuration-de.png" alt="Deutsches Exportformular für Infor IDM + ION BOD mit ION-, IDM- und BOD-Dateien."><figcaption><p>Deutsches Exportformular für Infor IDM + ION BOD mit ION-, IDM- und BOD-Dateien.</p></figcaption></figure>
 
 **Feldbeschreibungen**
 
@@ -244,7 +244,7 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 
 <summary>Infor IDM + LN</summary>
 
-![Deutsches Exportformular für die Infor-ERP-Variante mit zusätzlicher LN-Mapping-Datei.](../../../.gitbook/assets/s50-export_infor_idm_ln_configuration-de.png)
+<figure><img src="../../../.gitbook/assets/s50-export_infor_idm_ln_configuration-de.png" alt="Deutsches Exportformular für die Infor-ERP-Variante mit zusätzlicher LN-Mapping-Datei."><figcaption><p>Deutsches Exportformular für die Infor-ERP-Variante mit zusätzlicher LN-Mapping-Datei.</p></figcaption></figure>
 
 **Feldbeschreibungen**
 
@@ -265,7 +265,7 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 
 <summary>Infor IDM + M3</summary>
 
-![Deutsches Exportformular für Infor IDM + M3 mit zusätzlicher M3-Mapping-Datei.](../../../.gitbook/assets/s50-export_infor_idm_m3_configuration-de.png)
+<figure><img src="../../../.gitbook/assets/s50-export_infor_idm_m3_configuration-de.png" alt="Deutsches Exportformular für Infor IDM + M3 mit zusätzlicher M3-Mapping-Datei."><figcaption><p>Deutsches Exportformular für Infor IDM + M3 mit zusätzlicher M3-Mapping-Datei.</p></figcaption></figure>
 
 **Feldbeschreibungen**
 
@@ -286,7 +286,7 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 
 <summary>Infor IDM + M3 (toml)</summary>
 
-![Deutsches Exportformular für Infor IDM + M3 (TOML) mit TOML-Zuordnungsdatei.](../../../.gitbook/assets/s50-export_infor_idm_m3_toml_configuration-de.png)
+<figure><img src="../../../.gitbook/assets/s50-export_infor_idm_m3_toml_configuration-de.png" alt="Deutsches Exportformular für Infor IDM + M3 (TOML) mit TOML-Zuordnungsdatei."><figcaption><p>Deutsches Exportformular für Infor IDM + M3 (TOML) mit TOML-Zuordnungsdatei.</p></figcaption></figure>
 
 **Feldbeschreibungen**
 

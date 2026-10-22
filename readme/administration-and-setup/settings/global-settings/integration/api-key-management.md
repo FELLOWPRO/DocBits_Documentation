@@ -14,11 +14,11 @@ Weil jede Integration ihren eigenen Key haben kann, können Sie einen abschalten
 
 Gehen Sie zu **Einstellungen** und wählen Sie **Integration und SSO** unter **System & Verwaltung**.
 
-![Deutscher Abschnitt API-Schlüssel mit Schaltfläche API-Schlüssel erstellen](../../../../.gitbook/assets/api-key-settings-overview-de.png)
+<figure><img src="../../../../.gitbook/assets/api-key-settings-overview-de.png" alt="Deutscher Abschnitt API-Schlüssel mit Schaltfläche API-Schlüssel erstellen"><figcaption><p>Deutscher Abschnitt API-Schlüssel mit Schaltfläche API-Schlüssel erstellen</p></figcaption></figure>
 
 Der Abschnitt **API-Schlüssel** oben auf der Seite listet jeden Key auf, den Ihre Organisation besitzt.
 
-![Deutsche API-Schlüsselliste; Schlüsselwerte und Organisationsdaten sind ausgeblendet](../../../../.gitbook/assets/api-key-list-de.png)
+<figure><img src="../../../../.gitbook/assets/api-key-list-de.png" alt="Deutsche API-Schlüsselliste; Schlüsselwerte und Organisationsdaten sind ausgeblendet"><figcaption><p>Deutsche API-Schlüsselliste; Schlüsselwerte und Organisationsdaten sind ausgeblendet</p></figcaption></figure>
 
 ## Die Liste verstehen
 
@@ -44,7 +44,7 @@ Wenn Sie mehr Keys haben, als auf eine Seite passen, verwenden Sie die Blättere
 1. Klicken Sie oben rechts im Abschnitt API-Schlüssel auf **+ API-Schlüssel erstellen**.
 2. Füllen Sie den Dialog aus:
 
-![Deutscher Dialog API-Schlüssel erstellen mit Schlüsselname, Beschreibung und Ablauf](../../../../.gitbook/assets/api-key-create-dialog-de.png)
+<figure><img src="../../../../.gitbook/assets/api-key-create-dialog-de.png" alt="Deutscher Dialog API-Schlüssel erstellen mit Schlüsselname, Beschreibung und Ablauf"><figcaption><p>Deutscher Dialog API-Schlüssel erstellen mit Schlüsselname, Beschreibung und Ablauf</p></figcaption></figure>
 
 | Feld | Was Sie eintragen |
 | --- | --- |

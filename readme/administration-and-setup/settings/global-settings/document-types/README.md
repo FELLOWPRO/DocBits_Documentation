@@ -1,55 +1,57 @@
 # Typy dokumentów
 
-{% embed url="https://youtu.be/pFz_6tvNlU4" %}
-DocBits Wyjaśnienie typów dokumentów: tworzenie, konfigurowanie i przypisywanie ustawień przetwarzania
+Film demonstruje konfigurację pól w izolowanym niestandardowym typie dokumentu testowego.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/document-types-fields-admin/v1/pl.mp4" %}
+Typy dokumentów
 {% endembed %}
 
-<figure><img src="../../../../.gitbook/assets/document_types.png" alt="Typy dokumentów"><figcaption><p>Strona typów dokumentów</p></figcaption></figure>
+[Oglądaj z napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/document-types-fields-admin/v1/pl.html)
+
+Uwaga: Niektóre natywne etykiety produktów mogą pozostać nieprzetłumaczone. Nagranie zachowuje rzeczywisty interfejs użytkownika.
 
 ## Przegląd
 
-Strona Document Types wyświetla wszystkie typy dokumentów rozpoznawane i przetwarzane przez DocBits. Jest podzielona na dwie sekcje:
+Typy dokumentów definiują konfigurację używaną dla różnych rodzajów dokumentów. DocBits zapewnia standardowe typy, takie jak faktury i dokumenty korygujące. Niestandardowe typy pozwalają administratorowi skonfigurować inną kategorię dokumentów biznesowych. Standardowych typów nie można usunąć; zarządzaj niestandardowymi typami w ramach uprawnień organizacji.
 
-* **Default Document Types**: Wstępnie skonfigurowane typy dostarczane przez DocBits (Invoice, Credit Note, Delivery Note, Order Confirmation, Contract, ZUGFeRD itd.). Nie można ich usunąć.
-* **Custom Document Types**: Typy tworzone na potrzeby Twojej firmy. Można je edytować i usuwać.
+## Kontrolki na karcie typu dokumentu
 
-## Elementy sterujące dla każdego typu dokumentu
+| Kontrolka | Cel |
+| --- | --- |
+| Aktywuj | Włącz lub wyłącz typ dokumentu do przetwarzania. |
+| Extraction | Wybierz tryb ekstrakcji pokazywany przez natywną kontrolkę: Flex lub Fix. Jest to wybór trybu, niezależny od przełącznika Aktywuj. |
+| Ustawienia, pokazane jako koło zębate | Otwórz dalszą konfigurację dla tego typu dokumentu. |
 
-Karta każdego typu dokumentu zawiera:
+Dostępne linki zależą od typu, uprawnień i włączonych modułów. Obecny interfejs może oferować układy, pola, tabele, skrypty, trenowanie modelu i podtypy dokumentów. Reguły transformacji, reguły walidacji i konfiguracja dokumentów elektronicznych są dostępne tam, gdzie mają zastosowanie ich odpowiednie funkcje. Inne opcje konfiguracji mogą znajdować się w ustawieniach typu dokumentu, a nie w osobnej zakładce pod każdą kartą.
 
-| Element | Opis |
-|---------|-------------|
-| **Activate** | Przełącznik włączający lub wyłączający ten typ dokumentu w przetwarzaniu. |
-| **Extraction** | Przełącznik włączający lub wyłączający ekstrakcję danych opartą na AI dla tego typu. |
-| **Settings** (ikona koła zębatego) | Otwiera dodatkowe opcje konfiguracji typu dokumentu. |
+## Konfiguruj pola i wymagane informacje
 
-## Karty konfiguracji
+Film wykorzystuje już utworzony, izolowany niestandardowy typ dokumentu testowego. Zmienia pole referencyjne tego typu; nie zmienia istniejącej konfiguracji faktury.
 
-Pod każdym typem dokumentu dostępne są następujące karty konfiguracji:
+1. Otwórz typ dokumentu i wybierz jego pola.
+2. Sprawdź grupę pól i stabilną techniczną nazwę pola. Czytelna etykieta wyświetlania to osobne ustawienie; jej zmiana nie tworzy nowego identyfikatora pola.
+3. Ustaw pole referencyjne jako wymagane, zachowując je widocznym i edytowalnym. Wymagane informacje muszą zostać podane; ustawienie nie wymyśla brakującej wartości ani nie gwarantuje poprawnej ekstrakcji.
+4. Skonfiguruj jawną weryfikację pola niezależnie od wymaganej wartości. Tylko do odczytu, ukryte, progi OCR i progi Match Score mają swoje własne efekty; nie są to przełączniki zamienne.
+5. Zapisz konfigurację, otwórz ją ponownie i sprawdź zapisaną etykietę wyświetlania oraz ustawienia.
 
-| Karta | Opis |
-|-----|-------------|
-| **Labels** | Zarządzanie etykietami wyświetlanymi i tłumaczeniami dla typu dokumentu. |
-| **Edit layout** | Modyfikowanie wyglądu dokumentu w widoku walidacji, w tym pozycji pól. |
-| **Podtypy dokumentów** | Konfigurowanie podkategorii tego typu dokumentu (np. różnych formatów faktur). |
-| **Table columns** | Dostosowanie, które kolumny danych pojawiają się w tabeli pozycji. |
-| **Fields** | Zarządzanie polami danych wyodrębnianymi z dokumentu (dodawanie, edytowanie lub usuwanie pól). |
-| **Model Training** | Konfigurowanie i trenowanie modelu AI używanego do rozpoznawania i ekstrakcji danych. |
-| **Regex** | Definiowanie wyrażeń regularnych do ekstrakcji danych opartej na wzorcach. |
-| **Scripts** | Pisanie własnych skryptów przetwarzania uruchamianych podczas przetwarzania dokumentu. |
-| **E-Doc** | Konfigurowanie standardów dokumentów elektronicznych (XRechnung, ZUGFeRD, EDI, FatturaPA). |
+<figure><img src="../../../../.gitbook/assets/admin-reload-pl-ec9dcd271a35.png" alt="Zapisane pola w izolowanym typie dokumentu testowego."><figcaption><p>Zapisane pola w izolowanym typie dokumentu testowego.</p></figcaption></figure>
+
+Zademonstrowany wynik dowodzi, że konfiguracja pola została zapisana i ponownie załadowana. Nie stanowi to trenowania modelu, zatwierdzenia faktury, eksportu ani testu walidacji na dalszym etapie. Przed użyciem konfiguracji w środowisku produkcyjnym przetestuj reprezentatywne dokumenty i zamierzony przepływ pracy zwykłego użytkownika.
 
 ## Niestandardowe reguły walidacji
 
-Otwórz typ dokumentu i wybierz **Custom Validation Rules**, aby zarządzać jego własnymi regułami walidacji. Aby ponownie wykorzystać istniejącą regułę bez jej odtwarzania, postępuj zgodnie z przewodnikiem [Duplikowanie niestandardowej reguły walidacji](duplicate-a-custom-validation-rule.md). Przewodnik opisuje nazwę reguły, klucz reguły oraz przyciski potwierdzenia.
+Tam, gdzie ta funkcja jest dostępna, otwórz reguły walidacji typu dokumentu. Aby ponownie użyć istniejącej reguły, postępuj zgodnie z [Duplikowanie niestandardowej reguły walidacji](duplicate-a-custom-validation-rule.md). Jest to niezależne od poszczególnych ustawień pól pokazanych na filmie.
 
-## Tworzenie niestandardowego typu dokumentu
+## Utwórz niestandardowy typ dokumentu
 
-1. Przewiń w dół do sekcji **Custom Document Types**.
-2. Kliknij **+ New**.
-3. Wprowadź nazwę nowego typu dokumentu.
-4. Skonfiguruj pola, układ i ustawienia ekstrakcji według potrzeb.
+Otwórz sekcję niestandardowych typów dokumentów, wybierz Nowy i wprowadź jasną nazwę. Zakończ oferowane kroki konfiguracji dla zamierzonego trybu ekstrakcji, pól, grup i wszelkich tabel. Trenowanie modelu i konfiguracja ekstrakcji są niezależne od samego zapisania ustawienia pola wymaganego.
 
 {% hint style="info" %}
-Szczegółowe instrukcje konfiguracji znajdziesz w [Setup Document Type](../../../setup/document-types/).
+Zobacz [Konfiguracja typu dokumentu](../../../setup/document-types/) w celu zapoznania się z procedurą konfiguracji.
 {% endhint %}
+
+## Dodatkowe nagranie
+
+{% embed url="https://youtu.be/pFz_6tvNlU4" %}
+Typy dokumentów
+{% endembed %}

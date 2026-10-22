@@ -345,58 +345,29 @@ Document passes through all three
 
 ### Kaart: ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP
 
-#### Doel
+<!-- workflow-facility-example-direct-20261022 -->
 
-Wijst een document toe aan een specifieke faciliteitsgroep
+Deze workflowactie wijst een document toe aan een groep op basis van de locaties van de gekoppelde inkooporders. In versie 2 is `group_name` een tekstfragment dat in groepsnamen wordt gezocht.
 
-#### Wanneer te gebruiken
+Voorbeeld: een synthetisch document is gekoppeld aan inkooporder `DEMO-PO-100`, met `location_id=BERLIN`. De ingestelde groepen heten `Receiving BERLIN` en `Receiving MUNICH`. Vul `Receiving` in bij `group_name`. De groepsnaam moet zowel dit tekstfragment als de locatie van de inkooporder bevatten; de vergelijking is niet hoofdlettergevoelig.
 
-* Document voor specifiek magazijn/faciliteit
-* Facilitaire activiteiten
-* Locatiespecifieke verwerking
+Verwacht resultaat: het document wordt rechtstreeks toegewezen aan `Receiving BERLIN`, als de documentstatus dit toestaat. Zonder gekoppelde inkooporder of passende groep is de toewijzing niet geslaagd; controleer de workflowlogboeken. Vermijd dubbelzinnige groepsnamen: bij meerdere overeenkomsten garandeert deze kaart geen vaste selectievolgorde.
 
-#### Voorbeeld
-
-```
-Shipment notification
-
-Assign to: Berlin Warehouse Team
-    ↓
-Berlin warehouse processes shipment
-    ↓
-Or
-
-Assign to: Munich Warehouse Team
-    ↓
-Munich warehouse processes shipment
-```
+Dit is een voorbeeldconfiguratie; er is geen workflow uitgevoerd.
 
 ***
 
 ### Kaart: ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP\_SEQUENTIAL
 
-#### Doel
+<!-- workflow-facility-example-sequential-20261022 -->
 
-Wordt opeenvolgend aan faciliteiten toegewezen
+Deze workflowactie voegt de passende locatiegroepen met een ingestelde prioriteit toe aan de wachtrij voor opeenvolgende toewijzingen. Zij beschrijft geen goederenverplaatsing tussen fabrieken of magazijnen.
 
-#### Wanneer te gebruiken
+Voorbeeld: gebruik dezelfde synthetische inkooporder, locatie en groepen als hierboven. Stel `group_name=Receiving` en prioriteit `value=10` in. Versie 2 leest de locatie uit de gekoppelde inkooporder en vindt `Receiving BERLIN`.
 
-* Verwerking op meerdere locaties
-* Verzending gaat via faciliteiten
-* Locatiegebaseerde workflow
+Verwacht resultaat: een toewijzingsverzoek voor die groep wordt met prioriteit `10` aan de wachtrij toegevoegd. Als meerdere groepen overeenkomen, krijgen ze dezelfde prioriteit; hun namen bepalen geen verwerkingsvolgorde. Controleer de wachtrij en de latere goedkeuring afzonderlijk. Zonder overeenkomst ontstaat geen geslaagde toewijzing.
 
-#### Voorbeeld
-
-```
-Manufacturing Order:
-
-Step 1: Factory A (Manufacturing) - Build product
-Step 2: Quality Center (Testing) - Test product
-Step 3: Distribution Center (Packing) - Package
-Step 4: Warehouse (Storage) - Store
-
-Document/shipment passes through each
-```
+Dit is een voorbeeldconfiguratie; er is geen workflow uitgevoerd.
 
 ***
 

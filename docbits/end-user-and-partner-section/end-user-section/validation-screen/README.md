@@ -1,5 +1,13 @@
 # Validation Screen
 
+## Correct and save an invoice as a reviewer
+
+Compare the original invoice with its fields and three line items, correct the invoice number, save and reload to verify the stored value. The recording uses a synthetic electronic invoice and an ordinary reviewer account. Saving this correction is separate from extraction training, approval and export.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-validation-customer/v1/en.mp4" %}
+
+[Watch with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-validation-customer/v1/en.html)
+
 ## Review and finish processing an invoice
 
 Follow an invoice from the dashboard to handoff: compare the supplier, dates, invoice number, amounts and currency with the original and read a required-field warning. Select the invoice number directly on the document, confirm its mapping and store the extraction rule with Save Rules. In this example, the checked invoice is then submitted for approval. The available actions depend on your permissions and workflow.

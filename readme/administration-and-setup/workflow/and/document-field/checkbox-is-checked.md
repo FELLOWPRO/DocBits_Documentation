@@ -19,7 +19,7 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen auf Basis des Zustands (akti
 
 #### **Funktionalität:**
 
-* **Zustandserkennung:** Die Karte überwacht kontinuierlich den Zustand des angegebenen Kontrollkästchenfelds.
+* **Zustandserkennung:** Die Karte prüft bei ihrer Auswertung den Zustand des angegebenen Kontrollkästchenfelds.
 * **Bedingungsauswertung:** Das System prüft, ob sich das Kontrollkästchen in dem durch die Boolean-Bedingung angegebenen Zustand (aktiviert oder deaktiviert) befindet.
 * **Ausführung der Aktion:**
   * **Bedingung erfüllt (True):**\
@@ -41,10 +41,22 @@ Die Workflow-Karte "Checkbox Field Condition" ist ein grundlegendes Werkzeug fü
 
 ## Praxisbeispiel
 
-**Wann zu verwenden ist:** Führen Sie eine Nachverfolgung nur durch, nachdem ein explizites Überprüfungsflag gesetzt wurde.
+**Wann nutzen:** Eine Folgeaktion nur nach einer ausdrücklich gesetzten Prüfmarkierung erreichen.
 
-**Konfiguration:** Aktivieren Sie das Kontrollkästchenfeld `review_complete` und den booleschen Wert `true`.
+**Wo:** Standard-Workflow-Designer → Und → Dokumentenfeld.
 
-**Erwartetes Ergebnis und Gegenbeispiel:** Ein aktiviertes Kontrollkästchen besteht. Ein nicht aktiviertes Kontrollkästchen schlägt fehl; Verwenden Sie ein fehlendes Feld nicht als Nachweis für die abgeschlossene Überprüfung.
+**Konfiguration:** Wählen Sie in Version 2 das vorhandene Boolesche Feld `validation_complete` und den Vergleichswert Wahr (`true`).
 
-Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.
+**Erwartetes Ergebnis und Gegenbeispiel:** Eine gesetzte Checkbox erfüllt diese Bedingung; eine vorhandene, nicht gesetzte Checkbox erfüllt sie nicht. Ein fehlendes Feld ist ein eigener Fehlerfall. Prüfen Sie, dass das gewählte Feld tatsächlich Boolesche Werte verwendet.
+
+Die Beispiele beschreiben erwartete Ergebnisse. Verwenden Sie die in Ihrer Organisation tatsächlich konfigurierten Felder und angebotenen Werte.
+
+## Admin-Beispielvideo
+
+Wann ich ein angehaktes Kontrollkästchen als Bedingung verwende und wie ich den Booleschen Wert prüfe. Die Beispiele zeigen erwartete Ergebnisse. Administrator, Büro und Stimme sind synthetisch erzeugt; die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-checkbox-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-checkbox-admin/v1/de.html)
+
+[Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-checkbox-admin/v1/de.txt)

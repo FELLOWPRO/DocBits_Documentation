@@ -15,7 +15,7 @@ Diese Karte ist darauf ausgelegt, Workflow-Aktionen auf Basis des aktuellen Stat
      * **ist nicht**: Löst die Aktionen aus, wenn der Status des Dokuments mit keinem der angegebenen Status übereinstimmt.
 2. **Status (Liste)**
    * **Beschreibung**: Listet die spezifischen Status auf, mit denen der aktuelle Status des Dokuments verglichen wird.
-   * **Beispiele**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval". Diese stellen verschiedene Phasen oder Zustände dar, in denen sich ein Dokument innerhalb eines Workflow-Prozesses befinden kann.
+   * **Beispiele**: "Fehler", "Exportfehler", "Bereit zur Validierung", "Bereit zur Überprüfung", "Genehmigung ausstehend", "Zweite Genehmigung ausstehend". Diese stellen verschiedene Phasen oder Zustände dar, in denen sich ein Dokument innerhalb eines Workflow-Prozesses befinden kann.
 
 **Funktionalität**
 
@@ -38,12 +38,26 @@ Diese Karte ist darauf ausgelegt, Workflow-Aktionen auf Basis des aktuellen Stat
 
 Die Workflow-Karte "Document Status Condition" ist unverzichtbar, um sicherzustellen, dass Dokumente entsprechend ihrem aktuellen Status korrekt verarbeitet werden, und stärkt so Kontrolle und Effizienz innerhalb des ERP-Systems. Eine klare Dokumentation dieser Karte im Systemhandbuch hilft den Benutzern, sie effektiv einzusetzen und zu verwalten und ihre Funktionalität zu nutzen, um reibungslose und konforme Dokument-Workflows aufrechtzuerhalten. Diese Karte ist besonders nützlich für die Verwaltung von Dokumentlebenszyklen und stellt sicher, dass nur Dokumente, die bestimmte Kriterien erfüllen, in nachfolgende Phasen von Geschäftsprozessen übergehen.
 
-<!-- workflow-card-complete-example-20261021 condition_doc_status_is_isnot_in_list -->
+<!-- workflow-card-practical-example-20261021 -->
 
-### Beispiel für eine Statusliste
+## Praxisbeispiel
 
-**Konfiguration:** Wählen Sie den Operator, der erfordert, dass der aktuelle Status in der Liste enthalten ist. Wählen Sie in der Statusliste `Pending Approval` und `Pending Second Approval` aus.
+**Wann nutzen:** Eine gemeinsame Prüfung auf die erste oder zweite Freigabestufe anwenden.
 
-**Erwartetes Ergebnis und Gegenbeispiel:** Die Bedingung ist wahr für ein Dokument mit einem der ausgewählten Status. Für ein Dokument mit dem Status `Ready in Validation` ist dies falsch. Mit dem Operator, der erfordert, dass der Status außerhalb der Liste liegt, sind diese Bedingungsergebnisse umgekehrt. Überprüfen Sie die tatsächliche Liste, anstatt einen durch Kommas getrennten Freitextwert zu vergleichen.
+**Wo:** Standard-Workflow-Designer → Und → Status.
 
-Dies ist eine beispielhafte Testkonfiguration und das erwartete Ergebnis. es wurde nicht ausgeführt. Verwenden Sie die in Ihrer Testorganisation konfigurierten Daten und Empfänger.
+**Konfiguration:** Wählen Sie in Version 2 den Operator „ist“ (`is`) und in der Mehrfachauswahl Genehmigung ausstehend (`validated_pending_approval`) sowie Zweite Genehmigung ausstehend (`approved_pending_second_approval`). Prüfen Sie nach dem Schließen der Auswahl beide Einträge auf der Karte.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Einer der ausgewählten Status genügt. Ein exportierter Beleg erfüllt diese Bedingung nicht. Ein Beleg muss nicht zwei Status gleichzeitig besitzen.
+
+Die Beispiele beschreiben erwartete Ergebnisse. Verwenden Sie die in Ihrer Organisation tatsächlich konfigurierten Felder und angebotenen Werte.
+
+## Admin-Beispielvideo
+
+Wann einer von mehreren Belegstatus passen darf und wie ich die Statusliste als Bedingung einrichte. Die Beispiele zeigen erwartete Ergebnisse. Administrator, Büro und Stimme sind synthetisch erzeugt; die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-document-status-list-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-document-status-list-admin/v1/de.html)
+
+[Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-document-status-list-admin/v1/de.txt)

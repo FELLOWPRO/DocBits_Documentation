@@ -53,10 +53,22 @@ Die Workflow-Karte "Compare Two Fields with Tolerance" ist ein leistungsstarkes 
 
 ## Praxisbeispiel
 
-**Wann zu verwenden ist:** Akzeptieren Sie eine kleine Differenz zwischen einer extrahierten Menge und einer separat berechneten Menge.
+**Wann nutzen:** Bei einer kontrollierten Rechnung mit genau einer Nettogruppe ohne weitere Nettobestandteile zwei fachlich gleichartige Beträge abgleichen.
 
-**Konfiguration:** Wählen Sie numerische Felder `net_total` und `calculated_total`, Gleichheitsvergleich und eine absolute Toleranz von `5`. Verwenden Sie die Werte `103` und `100`.
+**Wo:** Standard-Workflow-Designer → Und → Dokumentenfeld.
 
-**Erwartetes Ergebnis und Gegenbeispiel:** Die Differenz beträgt `3`, liegt also innerhalb der Toleranz. Bei `110` und `100` beträgt der Unterschied `10` und die Gleichheit-mit-Toleranz-Bedingung schlägt fehl.
+**Konfiguration:** Wählen Sie in Version 2 die vorhandenen Betragsfelder `net_amount` und `total_net_amount`, Gleichheit (`eq`), Toleranz `5` und den absoluten Typ Wert (`value`).
 
-Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.
+**Erwartetes Ergebnis und Gegenbeispiel:** Bei `103` gegenüber `100` beträgt die Differenz `3`; die Bedingung ist erfüllt. Bei `110` gegenüber `100` beträgt sie `10`; die Bedingung ist nicht erfüllt. Bei mehreren Steuergruppen oder unterschiedlichen fachlichen Bedeutungen müssen andere passende Felder gewählt werden. Fehlende oder nicht numerische Werte sind getrennte Fehlerfälle.
+
+Die Beispiele beschreiben erwartete Ergebnisse. Verwenden Sie die in Ihrer Organisation tatsächlich konfigurierten Felder und angebotenen Werte.
+
+## Admin-Beispielvideo
+
+Wann ich zwei Beträge mit einer zulässigen Abweichung vergleiche und wie ich die Felder und Toleranzen einstelle. Die Beispiele zeigen erwartete Ergebnisse. Administrator, Büro und Stimme sind synthetisch erzeugt; die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-two-fields-tolerance-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-two-fields-tolerance-admin/v1/de.html)
+
+[Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-two-fields-tolerance-admin/v1/de.txt)

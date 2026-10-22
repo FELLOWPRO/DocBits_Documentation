@@ -1,6 +1,6 @@
 # Instalación de WatchDog
 
-<figure><img src="../../../.gitbook/assets/watchdog-installation-infographic.svg" alt="Pasos de instalación de WatchDog"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-installation-es.svg" alt="Instalación de WatchDog y requisitos principales."><figcaption><p>Instalación de WatchDog y requisitos principales.</p></figcaption></figure>
 
 > **Recomendado:** Utilice la configuración moderna que se describe a continuación. Las configuraciones de WatchDog ahora se crean directamente en la aplicación DocBits, sin necesidad de archivos de configuración locales.
 

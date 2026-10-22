@@ -1,6 +1,10 @@
 # Módulo
 
-<figure><img src="../../../../.gitbook/assets/module_settings.png" alt="Module Settings"><figcaption><p>Página Module Settings</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/site-extra-modules-order-finance-es.png" alt="Módulos de pedidos y finanzas en su estado de configuración existente."><figcaption><p>Módulos de pedidos y finanzas en su estado de configuración existente.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/site-extra-modules-document-integration-es.png" alt="Módulos de integración de documentos: scripts, escaneo, extracción de códigos de barras y datos maestros personalizados."><figcaption><p>Módulos de integración de documentos: scripts, escaneo, extracción de códigos de barras y datos maestros personalizados.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/site-extra-modules-dashboards-analytics-es.png" alt="Módulos de paneles y análisis en su estado de configuración existente."><figcaption><p>Módulos de paneles y análisis en su estado de configuración existente.</p></figcaption></figure>
 
 La página Module le permite activar o desactivar funciones opcionales de DocBits. Cada sección agrupa módulos relacionados que pueden activarse o desactivarse.
 

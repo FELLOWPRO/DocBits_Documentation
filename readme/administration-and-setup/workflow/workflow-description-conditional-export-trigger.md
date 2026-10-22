@@ -14,9 +14,9 @@ Este flujo de trabajo describe las condiciones bajo las cuales debe iniciarse un
 
 1. **Verificación de tipo de documento**
    * El documento debe ser de un tipo determinado (por ejemplo, "Invoice" o "Receipt"). Especifique el tipo de documento que califica para el proceso de exportación.
-2. **Status Verification**
+2. **Verificación del estado**
    * El estado actual del documento debe cumplir criterios predefinidos (por ejemplo, "Approved" o "Ready for Export") que indiquen que está listo para su procesamiento posterior.
-3. **Contextual Conditions**
+3. **Condiciones contextuales**
    * Se realizan comprobaciones adicionales para garantizar que los detalles del documento se ajusten a requisitos específicos. Estas comprobaciones pueden implicar la verificación de información en las confirmaciones de pedidos o los pedidos de compra. Especifique las condiciones concretas que deben cumplirse. Por ejemplo:
      * Todos los artículos indicados en la confirmación del pedido coinciden con los del pedido de compra.
      * El importe total de la confirmación del pedido coincide con el importe total del pedido de compra.
@@ -26,7 +26,7 @@ Este flujo de trabajo describe las condiciones bajo las cuales debe iniciarse un
 
 #### Acción:
 
-* **Initiate Export**
+* **Iniciar la exportación**
   * Si se cumplen todas las condiciones anteriores, el sistema inicia automáticamente el proceso de exportación del documento.
   * Esto puede implicar la generación de un archivo de exportación, el envío de datos a un sistema externo o la activación de un flujo de trabajo en otra aplicación.
 

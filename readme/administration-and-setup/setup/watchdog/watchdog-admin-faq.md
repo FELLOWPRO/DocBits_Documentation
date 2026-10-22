@@ -1,6 +1,6 @@
 # Preguntas frecuentes de administración de WatchDog y resolución de problemas
 
-<figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-infographic.svg" alt="Guía rápida de resolución de problemas de WatchDog"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-es.svg" alt="Diagnóstico de problemas de importación, exportación y conexión de WatchDog."><figcaption><p>Diagnóstico de problemas de importación, exportación y conexión de WatchDog.</p></figcaption></figure>
 
 Esta documentación ayuda a los administradores a entender los mensajes de error de WatchDog y a resolver problemas.
 

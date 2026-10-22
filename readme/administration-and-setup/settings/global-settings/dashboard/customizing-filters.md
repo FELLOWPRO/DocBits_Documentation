@@ -1,77 +1,19 @@
-# Personalizando Filtros
+# Personalizar filtros
 
-Si estás buscando uno o más documentos específicos, las siguientes opciones están disponibles para ti. Dentro de la barra de búsqueda, te hemos proporcionado varias herramientas para ayudarte a encontrar el documento que buscas. Para acceder a ellas, selecciona el siguiente ícono.
+La búsqueda del **Panel** filtra documentos. La configuración administrativa del panel permite ajustar la presentación de los filtros de estado.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_1.png)
+## Buscar documentos con filtros rápidos
 
-Usar filtros permite a los usuarios encontrar rápidamente información relevante y reducir la cantidad de datos a lo esencial.
+En el Panel, sitúe el cursor en la búsqueda y pulse la flecha abajo para abrir el menú. Elija un filtro rápido o un campo y complete el criterio que solicite la interfaz. La imagen muestra la parte inferior del menú, desplazada hasta las últimas opciones.
 
-## Cómo personalizar y aplicar filtros en DocBits
+<figure><img src="../../../../.gitbook/assets/site-complete-dashboard-smart-filters-es.png" alt="Parte inferior del menú real de filtros rápidos, desplazada hasta las últimas opciones. Se muestran filtros de conciliación de pedidos y campos estándar. «Bajo coincidencia de PO» es una etiqueta defectuosa. No se seleccionó ningún filtro ni se introdujo una consulta."><figcaption><p>Parte inferior del menú real de filtros rápidos, desplazada hasta las últimas opciones. Se muestran filtros de conciliación de pedidos y campos estándar. «Bajo coincidencia de PO» es una etiqueta defectuosa. No se seleccionó ningún filtro ni se introdujo una consulta.</p></figcaption></figure>
 
-### Accediendo a la configuración de filtros Abriendo el PANEL:
+Revise la consulta y los resultados cuando termine la carga. Compruebe que los documentos mostrados cumplen los criterios deseados. Las etiquetas del menú no acreditan por sí solas que se haya ejecutado una conciliación o que un documento haya alcanzado un estado concreto.
 
-* Inicia sesión en DocBits y abre el PANEL que contiene los datos que deseas filtrar.
+## Configurar los filtros de estado del panel
 
-**Accediendo al menú de filtros:**
+Abra **Ajustes → Panel** y despliegue **Filtros**. Revise **Estilo de filtro de estado** y, cuando corresponda, **Filtro de estado personalizado**. La opción Custom sigue en inglés y significa personalizado.
 
-* Haz clic en el ícono de filtro o en el campo de búsqueda.
+<figure><img src="../../../../.gitbook/assets/site-complete-dashboard-status-filters-es.png" alt="Configuración actual de los filtros de estado del panel. La opción fija Custom sigue en inglés y significa personalizado. No se modificó el estilo ni se pulsó Aplicar."><figcaption><p>Configuración actual de los filtros de estado del panel. La opción fija Custom sigue en inglés y significa personalizado. No se modificó el estilo ni se pulsó Aplicar.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_2.png)
-
-### Personalizando filtros
-
-#### **Usando filtros predefinidos**
-
-* Abre el menú de filtros.
-* Elige entre las opciones de filtro predefinidas (por ejemplo, Fecha, Tipo de Documento, Persona Asignada).
-* Ajusta los criterios del filtro seleccionando o ingresando los valores apropiados (por ejemplo, rango de fechas, tipo de documento específico).
-
-#### **Crea tus propios filtros**
-
-* Abre el menú de filtros en la configuración bajo PANEL y haz clic en "Filtros".
-
-
-<figure><img src="../../../../.gitbook/assets/prior-u015-es.png" alt="Estilo de filtro de estado y filtro personalizado del panel."><figcaption><p>Estilo de filtro de estado y filtro personalizado del panel.</p></figcaption></figure>
-
-
-* Selecciona el campo a filtrar (por ejemplo, Estado).
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_4.png)
-
-* Define los criterios del filtro, por ejemplo: estilo de filtro de Estado.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_4.png)
-
-* Menús desplegables: Elige entre opciones predefinidas.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_6.png)
-
-* Guarda el filtro personalizado haciendo clic en "Aplicar".
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_7.png)
-
-#### **Usar filtros combinados**
-
-* Abre el menú de filtros y selecciona múltiples criterios de filtro a la vez.
-* Combina criterios de filtro.
-* **Ejemplo:** Documentos que fueron creados por el autor "Max Mustermann" Y que fueron creados en el último mes.
-* Una vez que hayas seleccionado un filtro, se aplicará automáticamente.
-
-#### **Aplicando y Gestionando Filtros**
-
-**Aplicando Filtros**
-
-* Después de seleccionar y ajustar los filtros deseados, los filtros se aplican automáticamente.
-
-**Eliminando Filtros**
-
-* Abre el menú de Filtros.
-* Paso 2: Limpia o elimina los filtros aplicados haciendo clic en "Filtros claros", el ícono de X junto al filtro seleccionado ya sea en el menú de Filtros o debajo de la barra de Filtros.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_8.png)
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_9.png)
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_10.png)
-
-* Los datos se muestran nuevamente sin los criterios de filtro anteriores.
+El botón **Aplicar** guarda un cambio deliberado de esta configuración administrativa. Para estas imágenes no se modificó el estilo ni la selección de estados, no se pulsó Aplicar y no se seleccionó un filtro en la búsqueda de documentos.

@@ -1,6 +1,6 @@
 # API 密钥
 
-<figure><img src="../../../../.gitbook/assets/api-key-settings-page-en.png" alt="API 密钥面板，包含“创建 API 密钥”按钮、密钥列表列以及为文档隐藏的密钥前缀"><figcaption><p>设置 → 集成与 SSO → API 密钥。此截图中隐藏了密钥前缀。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/site-complete-api-key-context-zh.png" alt="中文集成页面的 API 密钥入口及“创建 API 密钥”按钮；密钥和列表数据已隐藏，未创建或复制凭据。"><figcaption><p>中文集成页面的 API 密钥入口及“创建 API 密钥”按钮；密钥和列表数据已隐藏，未创建或复制凭据。</p></figcaption></figure>
 
 集成与 SSO 页面顶部的 **API 密钥** 部分会列出组织创建的所有 API 密钥。API 密钥允许其他系统（例如 ERP、脚本或合作伙伴应用程序）在无需用户登录的情况下访问 DocBits。有关分步说明，请参阅 [API 密钥管理](api-key-management.md)。
 

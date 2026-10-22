@@ -4,7 +4,7 @@
 DocBits 电子发票教程：处理 XRechnung / ZUGFeRD (Factur-X)、验证数据并自动化工作流
 {% endembed %}
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.49.21.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-all-edi-list-zh.png" alt="EDI 配置中的转换、提取路径、预览及结构描述入口。"><figcaption><p>EDI 配置中的转换、提取路径、预览及结构描述入口。</p></figcaption></figure>
 
 #### 概览
 
@@ -20,7 +20,7 @@ DocBits 电子发票教程：处理 XRechnung / ZUGFeRD (Factur-X)、验证数�
 2. **XSLT 编辑器**：
    * 用于编辑和验证转换过程中使用的 XSLT（可扩展样式表语言转换）。XSLT 是一种功能强大的语言，专为将 XML 文档转换为其他 XML 文档或 HTML、文本等其他格式，甚至其他 XML 结构而设计。
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.49.59.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-all-edi-detail-zh.png" alt="已生效的结构描述版本：只读编辑器中显示 JSON 配置。"><figcaption><p>已生效的结构描述版本：只读编辑器中显示 JSON 配置。</p></figcaption></figure>
 
 ## 实际生效的规则与激活
 
@@ -29,3 +29,8 @@ DocBits 电子发票教程：处理 XRechnung / ZUGFeRD (Factur-X)、验证数�
 ## 国家指南
 
 请参阅国家指南，了解准确格式名称、语法、版本限制和已检查的配置状态。 [eDocs 格式、版本和国家指南](supported-electronic-documents/README.md).
+
+
+这些视图显示现有配置及其版本。设置因文档类型和格式而异。请在草稿中验证更改后再激活。
+
+图片展示中文流程卡片和只读配置。在所示版本中，Active 状态误译为“积极的”，实际表示已生效。技术编辑器标题、属性标识符及配置代码保留原文。

@@ -44,4 +44,4 @@ description: >-
 * 请确保所有文档均经过验证并归档，以便留存记录。
 * 必须及时解决订单或发票详情中的差异，以避免延误。
 
-<figure><img src="../../../.gitbook/assets/embed.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-material-zh.png" alt="物料订购、订单确认、收货和发票处理的示例流程，涉及供应商、采购、IDM、DocBits 和财务记账。请按实际配置调整检查步骤与系统连接。"><figcaption><p>物料订购、订单确认、收货和发票处理的示例流程，涉及供应商、采购、IDM、DocBits 和财务记账。请按实际配置调整检查步骤与系统连接。</p></figcaption></figure>

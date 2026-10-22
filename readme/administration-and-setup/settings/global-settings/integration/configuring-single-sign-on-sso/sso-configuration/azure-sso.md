@@ -2,7 +2,7 @@
 description: 使用 Microsoft 登录 DocBits，无需单独设置密码
 ---
 
-# Azure SSO
+# Azure 单点登录
 
 ### 在 Azure AD 中创建 SAML SSO
 

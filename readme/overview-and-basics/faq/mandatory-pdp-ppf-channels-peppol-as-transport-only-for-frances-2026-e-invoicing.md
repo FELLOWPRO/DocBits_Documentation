@@ -1,44 +1,47 @@
-# 法国 2026 年电子发票：必须使用 PDP/PPF 渠道，PEPPOL 仅作为传输方式
+# 法国电子发票：获批平台与 PEPPOL
 
-## 国内 B2B 电子发票必须通过 PDP 或 PPF
+## 当前规则及实施时间
 
-根据法国 2026 年电子发票强制规定，企业不能仅依靠 PEPPOL 网络交换国内 B2B 发票。法律要求，法国增值税登记企业之间的所有发票都必须通过经认证的私人平台（PDP）或国家公共发票门户（PPF）传输，以满足法律[要求](https://www.ey.com/en_gl/technical/tax-alerts/france-revises-schedule-for-adopting-e-invoicing-reform) ￼。换言之，企业将不再直接向客户发送发票，而必须通过获批的电子发票平台（PDP）或政府[门户](https://www.avalara.com/blog/en/europe/2022/09/france-publishes-updated-specifications-for-e-invoicing-and-e-reporting.html) ￼进行传输。这样可确保税务机关实时收到所需数据。仅通过 PEPPOL 交换发票而不经过认可的 PDP/PPF，将无法满足强制规定的数据报告和传输义务。
+对于法国改革范围内、增值税纳税企业之间的国内 B2B 发票，必须通过**获批平台（plateforme agréée，PA；原称 PDP）**进行交换。**公共发票门户（PPF）**承担公共目录和税务数据汇总职能，并非这些发票的另一种交换平台。
+
+* **2026 年 9 月 1 日：** 所有适用企业均须能够接收电子发票。大型企业（GE）和中间规模企业（ETI，法国企业分类）还须从该日起开具电子发票，并履行电子报告（e-reporting）义务。
+* **2027 年 9 月 1 日：** 开具电子发票及电子报告义务适用于中小企业（PME）和微型企业。
+
+具体义务取决于交易是否属于适用范围及企业类别。请参阅官方的[获批平台说明](https://www.impots.gouv.fr/facturation-electronique-et-plateformes-agreees)、[实施时间表](https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation)及[主管部门答复](https://www.senat.fr/questions/base/2026/qSEQ260107185.html)。
+
+## PEPPOL 与互操作性
+
+PEPPOL 可为互联的系统和平台提供传输及互操作能力。使用 PEPPOL 并不能替代法国强制制度下通过 PA 交换发票的要求。仅建立 PEPPOL 连接，并不足以证明已履行法国的发票交换和数据报告义务。
+
+## 历史技术背景
+
+以下六张图及 API 说明来自早期 PPF/PDP 资料，保留用于历史技术背景参考。其术语和架构已属旧版，不表示当前可以通过 PPF 交换强制制度下的 B2B 发票。实施集成前，请核对 PA 及公共服务的现行规范。
 
 <figure><img src="../../.gitbook/assets/Picture 1.png" alt=""><figcaption></figcaption></figure>
 
-### 服务方案简介
+### 历史 API 服务模型
 
-API 模式使用户可以通过合作伙伴组织已部署的 IT 工具，使用其可用的所有功能。有两种集成方式：
+早期模型描述了通过合作伙伴组织已有 IT 工具使用相关功能的两种集成方式：
 
-### ·       集成到信息系统（IS）中：
-
-API 直接集成到开具和接收发票的各方所使用的信息系统或管理软件中，也可集成到其无纸化处理运营商（OD）的系统中。这样，用户就能直接通过日常使用的 IT 工具（无论是内部工具还是 OD 提供的工具）访问解决方案的功能及其升级。
-
-API 也可以集成到 PDP 的信息系统中，以提供更大的灵活性（相比 EDI 模式），其中一些 API 专供 PDP 使用。
-
-### ·       集成到第三方软件中：
-
-软件开发商可以基于这些 API 提供软件。根据开发商选择的模式，连接可以由开发商完成，也可以由客户在其信息系统中安装或部署软件时自行完成。此类第三方软件会通过添加与 PPF 通信的层来扩展客户的信息系统。
+* **信息系统（IS）：** 将 API 集成到发票开具方、接收方或其无纸化处理运营商（OD）的系统中。部分 API 面向 PDP 系统，作为 EDI 集成之外的技术方式。
+* **第三方软件：** 软件开发商可为客户系统添加通信层。早期资料中连接 PPF 的描述属于这一历史模型，并非当前的发票交换渠道。
 
 <figure><img src="../../.gitbook/assets/Picture 6.png" alt=""><figcaption></figcaption></figure>
 
-## PEPPOL 仅用作互操作层
+### 历史互联示意图
 
-法国正在将 PEPPOL 纳入其基础设施，但仅将其作为 PDP 框架内的传输层，而不是独立的合规渠道。法国税务机关（DGFiP）将成为 Peppol Authority，以统一 PDP 之间的[互联](https://www.avalara.com/blog/en/europe/2025/01/e-invoicing-reform-france.html)方式。所有经认证的 PDP 都必须通过 PEPPOL 网络互联，以交换[发票](https://nymus.be/fr/facturation-electronique-en-france/)。这意味着 PEPPOL 将促进授权平台之间的互操作，而不会取代对这些平台的需求。实际上，企业只有通过使用 PEPPOL 发送或接收发票的 PDP（或在其有限职责范围内运行的 PPF），才能使用 PEPPOL。官方指南也已确认这一点：公共门户侧重于数据收集，而发票分发将完全由 PDP 负责，这些 PDP 会利用 [PEPPOL](https://edicomgroup.com/blog/status-of-b2b-electronic-invoicing-in-france) 等网络进行[交换](https://nymus.be/fr/facturation-electronique-en-france/)。
-
-\
-
+此图展示早期平台互联的背景。当前实施须符合 PA 要求；此处并未断言所有交换都必须使用同一种传输网络。
 
 <figure><img src="../../.gitbook/assets/Picture 2.png" alt=""><figcaption></figcaption></figure>
 
-## 枢纽连接：
+### 历史枢纽连接模型
 
-枢纽会向客户提供 Web 或应用程序解决方案，以便客户发起各类 API 调用。**因此，API 调用由枢纽代表其所有客户发起**。在这种情况下，每个合作伙伴都必须拥有一个技术账户，但只有枢纽需要在 PISTE 下注册应用程序并连接到 PPF。
+早期模型描述了一种 Web 或应用程序方案，由**枢纽代表客户发起 API 调用**。其中提到每个合作伙伴需要技术账户，而枢纽需要 PISTE 中的应用程序及 PPF 连接。这些是历史架构细节，并非已核实的现行集成步骤。
 
 <figure><img src="../../.gitbook/assets/Picture 5.png" alt=""><figcaption></figcaption></figure>
 
+### 历史参考资料
 
-
-来源：法国《2024 年财政法》第 91 条（由 EY 概述）规定，电子发票必须通过经认证的 PDP 或国家门户发送。法国税务机关的更新进一步明确，2024 年改革后，企业必须使用已注册的 PDP 进行 B2B 电子发票处理（PPF 将不再作为免费交换平台）。PEPPOL 正在用于连接这些 PDP，而不是作为系统之外的替代渠道。这证实，仅使用 PEPPOL 网络并不足以合规——要符合法国 2026 年电子发票制度的要求，必须接入 PPF 或经认证的 PDP，而 PEPPOL 仅作为这些平台之间的底层传输网络。
+早期资料引用了[旧版时间安排及法律概述](https://www.ey.com/en_gl/technical/tax-alerts/france-revises-schedule-for-adopting-e-invoicing-reform)、[2022 年规范](https://www.avalara.com/blog/en/europe/2022/09/france-publishes-updated-specifications-for-e-invoicing-and-e-reporting.html)、[2025 年改革概述](https://www.avalara.com/blog/en/europe/2025/01/e-invoicing-reform-france.html)、[平台互联背景](https://nymus.be/fr/facturation-electronique-en-france/)、[PEPPOL 背景](https://edicomgroup.com/blog/status-of-b2b-electronic-invoicing-in-france)及[交换背景](https://nymus.be/fr/facturation-electronique-en-france/)。这些链接和其余图表均保留为历史背景。了解当前义务，以及 PA 发票交换与 PPF 公共职能之间的区别时，应以上述官方资料为准。早期资料对法国《2024 年财政法》第 91 条的引用，并不构成当前可通过 PPF 交换发票的依据。
 
 <div><figure><img src="../../.gitbook/assets/Picture 3.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Picture 4.png" alt=""><figcaption></figcaption></figure></div>

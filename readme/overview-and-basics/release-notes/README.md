@@ -244,7 +244,7 @@
 *   **将默认布局应用于所有来源：**\
     布局配置屏幕新增 **将默认布局应用于来源** 按钮。管理员现在可以通过一次操作，将默认布局应用于组织中的所有来源，无需再逐个来源手动复制和粘贴布局 JSON。这在新客户上线时特别有用，因为需要为多个来源统一配置布局。
 
-    <figure><img src="../../.gitbook/assets/image (460).png" alt=""><figcaption></figcaption></figure>
+    <!-- Obsolete illustration retired: Obsolete English illustration retired; the dated release text or complete procedure remains, and historical image files are preserved. -->
 *   **FTP 导入的文档类型选择：**\
     FTP 导入配置现支持按文件夹指定文档类型。配置 FTP 导入时，用户可以指定从该文件夹导入的所有文档所应用的文档类型，例如发票或确认订单。文档在导入时会自动分类，无需在导入后手动分配文档类型。此功能适用于在不同子组织和文件夹中管理多种文档类型的组织。
 
@@ -343,7 +343,7 @@
 
     重复检测新增两项强大的配置选项。 **重复检测间隔** 可让您定义时间范围，以便更精确地检查重复项； **禁止导出重复项** 设置则会自动阻止导出检测到的重复文档。两项改进相结合，可提供更多控制并确保更高的数据准确性。
 
-    <figure><img src="../../.gitbook/assets/image (340).png" alt=""><figcaption></figcaption></figure>
+    <!-- Obsolete illustration retired: Obsolete English illustration retired; the dated release text or complete procedure remains, and historical image files are preserved. -->
 *   **决策树改进：**
 
     决策树现更加灵活，能够返回文档字段值。这有助于构建更高级的自动化逻辑，使工作流能够根据实际文档数据做出决策。
@@ -387,7 +387,7 @@
 *   **值列表多语言支持：**\
     我们扩展了值列表功能的多语言能力。管理员现在可以使用多种语言定义标签，系统会根据用户的系统语言设置自动显示相应标签。这项改进提升了可访问性和本地化水平，方便全球用户使用母语与平台交互。
 
-    <figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+    <!-- Obsolete illustration retired: Obsolete English illustration retired; the dated release text or complete procedure remains, and historical image files are preserved. -->
 * **设置中的用户详情改进：**\
   设置界面现在会显示全面的用户信息。管理员可以轻松查看用户所属组、子组织详情及其他重要数据，从而更好地管理用户角色，并更清晰地了解团队结构。此外，管理员现在可以为组织创建系统管理员。
 * **审批屏幕中的自动会计信息：**\
@@ -414,7 +414,7 @@
 *   **电子文档预览选项：**\
     新增电子文档（eDocs）预览功能，用户可以在设置中直接测试和查看更改，然后再部署。\\
 
-    <figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+    <!-- Obsolete illustration retired: Obsolete English illustration retired; the dated release text or complete procedure remains, and historical image files are preserved. -->
 * **新增语言支持——中文：**\
   DocBits 现已支持中文，进一步提升全球市场用户的可访问性和本地化体验。
 * **改进任务仪表板：**\
@@ -435,7 +435,7 @@
 *   **Watchdog 改进：**\
     Watchdog 配置已移至主应用界面，管理起来更加方便。还新增了其他功能，以便更好地进行监控和控制。\\
 
-    <figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+    <!-- Obsolete illustration retired: Obsolete English illustration retired; the dated release text or complete procedure remains, and historical image files are preserved. -->
 * **行项目拒收改进：**\
   拒收行项目时，用户现在必须提供原因，以便更好地在审核工作流中进行追溯和问责。
 * **设置中的供应商 AI 模型列表：**\
@@ -619,7 +619,7 @@ DocBits 的 SFTP/FTP 文档归档改进基于现有导入功能，新增了处�
 
 <figure><img src="../../.gitbook/assets/MultipleTaxLInes.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/MultipleTaxLineAuto Accounting.png" alt=""><figcaption></figcaption></figure>
+<!-- Obsolete illustration retired: Obsolete English illustration retired; the dated release text or complete procedure remains, and historical image files are preserved. -->
 
 ### 仪表板改进
 

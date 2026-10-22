@@ -4,7 +4,7 @@
 
 当您知道**想要做什么**（“停止按条形码拆分文档”），但不知道设置**在哪里**，或者想了解**为什么**某项功能没有生效（“为什么采购订单匹配没有启用？”）时，它最能派上用场。
 
-<figure><img src="../../../../../.gitbook/assets/settings-assistant-panel-open.png" alt="Settings Assistant 面板位于 Settings 区域右侧，显示当前页面的问候语、三个示例问题和问题输入框"><figcaption><p>Company Information 页面上的 Settings Assistant：显示当前页面的问候语、三个示例问题和问题输入框。当某项导入停止运行时，问候语上方会显示警告卡片（请参阅<a href="settings-assistant-chat.md#findings-the-assistant-warns-you">问题发现</a>）。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-complete-assistant-company-zh.png" alt="公司信息页面上的中文设置助手问候语、示例问题和输入框。尚未发送问题，也未更改组织配置。"><figcaption><p>公司信息页面上的中文设置助手问候语、示例问题和输入框。尚未发送问题，也未更改组织配置。</p></figcaption></figure>
 
 默认情况下，助手**处于关闭状态**。本页介绍如何启用助手并打开面板。关于您可以询问什么以及助手可以更改什么，请参阅[设置助手：聊天功能](settings-assistant-chat.md)。
 
@@ -20,7 +20,7 @@
 2. 打开**助手**部分。
 3. 启用**启用设置助手**。
 
-<figure><img src="../../../../../.gitbook/assets/settings-assistant-org-switch.png" alt="公司信息中的助手部分，包含设置助手、验证助手和讲解画外音的开关"><figcaption><p>助手部分。设置助手有自己的开关。验证助手和讲解画外音是独立功能。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-complete-assistant-company-controls-zh.png" alt="当前中文“助手”区域分别控制设置助手、验证助手和讲解配音。图示开关状态是测试环境现值；本次只展开区域，没有切换开关。"><figcaption><p>当前中文“助手”区域分别控制设置助手、验证助手和讲解配音。图示开关状态是测试环境现值；本次只展开区域，没有切换开关。</p></figcaption></figure>
 
 系统会显示简短消息，确认**设置助手已启用**。该设置默认处于关闭状态。关闭时，任何位置都不会显示面板及其按钮。
 
@@ -32,7 +32,7 @@
 
 在设置区域的每个页面上，您都可以在设置搜索框旁找到一个小型**神灯按钮**。点击该按钮即可**显示**或**隐藏**助手。
 
-<figure><img src="../../../../../.gitbook/assets/settings-assistant-in-company-settings.png" alt="设置中的公司信息页面，左侧为设置导航，中间为页面内容，右侧为 Settings Assistant 面板"><figcaption><p>助手位于每个设置页面的<strong>右侧</strong>：左侧是导航，中间是页面内容，旁边是助手。此处显示的是<strong>公司设置 → 公司信息</strong>。用于显示或隐藏助手的按钮是导航顶部<strong>搜索设置</strong>旁边的灯图标。</p></figcaption></figure>
+
 
 * 面板会按用户记住您的选择，因此下次回来时仍会保持打开。
 * 在较宽的屏幕上（1280 像素及以上），面板会显示在页面旁边。您可以拖动面板边缘来调整宽度。

@@ -155,7 +155,7 @@ Then：**Assign document to:** 审批负责人
 
 ### **将计算出的附加费用添加到现有列中** <a href="#pekg4i18rshn" id="pekg4i18rshn"></a>
 
-<figure><img src="https://lh7-us.googleusercontent.com/XYY1xsFpp7_-Bi0WOSbotiVzspDLdaufx_xgoopMHmxdZnSDhroLpb0AE_si5PhwMq1jHfndc9FwOte9MOoCoTP5_JUYawO5cr4uIctIDHmwVjz3KacQrLJd8iBQy5KY4N-dMaWEi3IeTcc5OBRNJk4" alt=""><figcaption></figcaption></figure>
+
 
 如果你想将所有附加费用作为负折扣添加到折扣列中，可以使用计算卡片。该列中可能已有值；你可以将该列设为卡片中的一个变量，从中减去 MTZ，然后将计算结果写回该列。如果字段为空（附加费用仅适用于部分行项目），系统会在计算时将其视为 0。
 

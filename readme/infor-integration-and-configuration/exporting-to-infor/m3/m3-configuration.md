@@ -19,10 +19,10 @@
 
 在目标 DocBits 组织中，打开 **Settings → Export** 并选择 **New**。此处展示的英文版 Sandbox Test A 组织尚无已保存的导出配置。
 
-![当前英文版 DocBits Sandbox 导出列表，显示 New 操作且没有已保存的配置。](../../../.gitbook/assets/dbdc-197-export-list-en.png)
+<figure><img src="../../../.gitbook/assets/s150-export_settings_menu_access-zh.png" alt="中文导出配置列表；Actions 仍为英文，配置值已隐藏。"><figcaption><p>中文导出配置列表；Actions 仍为英文，配置值已隐藏。</p></figcaption></figure>
 
 输入 **Configuration Title**，选择 **Document Type**（此工作流选择 Invoice），并仅在需要时选择 **Sub-Organization**。对于 **Export**，选择 **Infor**；对于 **Infor Type**，选择 **Infor IDM + M3**。当前表单要求填写 **ION API File**（`.ionapi`，必填）、**IDM Mapping File**（`.properties`）和 **M3 Mapping File**（`.properties`）。仅使用此租户的文件，并在保存前进行审核。截图中特意将所有上传字段留空。
 
-![当前英文版 DocBits Sandbox Infor IDM + M3 导出表单，ION API、IDM 和 M3 文件上传字段均为空。](../../../.gitbook/assets/dbdc-204-export-m3-en.png)
+<figure><img src="../../../.gitbook/assets/prior-u023-zh.png" alt="Infor IDM + M3 的中文导出草稿；界面将 Infor 误译为“信息”，将保存误译为“节省”。本图未上传文件、保存或验证导出。"><figcaption><p>Infor IDM + M3 的中文导出草稿；界面将 Infor 误译为“信息”，将保存误译为“节省”。本图未上传文件、保存或验证导出。</p></figcaption></figure>
 
 Infor 流激活后，请使用一张非生产环境发票进行测试。检查它在 DocBits、ION 和 M3 中的结果。仅保存配置或激活流，并不能证明发票已送达。

@@ -23,7 +23,7 @@
 3. 选择 **Module.**（模块）。
 4. 启用滑块以激活 **Access Control**（访问控制）。
 
-<figure><img src="../../../../../.gitbook/assets/Access-Control3.png" alt=""><figcaption></figcaption></figure>
+<!-- Obsolete illustration retired: Retire an obsolete English menu/scope/example illustration. Complete access-scope and field-permission explanations remain; the native matrix is shown separately without claiming hidden policy values. -->
 
 ## 打开组的访问控制
 
@@ -34,7 +34,7 @@
 5. 要管理某个组（例如 PROCUREMENT\_DIRECTOR）的权限，请点击屏幕右侧的三个点。
 6. 选择 **Manage Access Control**（管理访问控制）。
 
-<figure><img src="../../../../../.gitbook/assets/access_control_open_menu.png" alt="打开组的行菜单并选择 Manage Access Control"><figcaption><p>在 Groups and Permissions 页面上，打开某个组的<strong>⋮</strong>菜单，然后选择 <strong>Manage Access Control</strong>。</p></figcaption></figure>
+<!-- Obsolete illustration retired: Retire an obsolete English menu/scope/example illustration. Complete access-scope and field-permission explanations remain; the native matrix is shown separately without claiming hidden policy values. -->
 
 ## 如何评估权限
 
@@ -61,7 +61,7 @@
 | **First Approval**（首次审批） | 授予第一级审批。 |
 | **Second Approval**（二级审批） | 授予第二级审批。 |
 
-<figure><img src="../../../../../.gitbook/assets/access_control_matrix.png" alt="访问控制权限矩阵"><figcaption><p>文档类型权限矩阵。此处启用了 <strong>Invoice</strong>（发票）类型，并为其操作设置了不同的访问范围；其他类型均已禁用。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-complete-access-control-matrix-zh.png" alt="中文访问控制矩阵的列结构。AI_TEST_ACL 是测试组标识；权限范围和字段数据已隐藏，不能据此判断某个用户的有效权限。"><figcaption><p>中文访问控制矩阵的列结构。AI_TEST_ACL 是测试组标识；权限范围和字段数据已隐藏，不能据此判断某个用户的有效权限。</p></figcaption></figure>
 
 ### 访问范围
 
@@ -76,10 +76,10 @@
 | **Owner & Assignee**（所有者与受派人） | 所有者**或**受派人。 | 如果用户是上传者*或*受派人，则可以执行此操作。 |
 
 {% hint style="info" %}
-**Owner**（所有者）和 **Assignee**（受派人）取决于*用户与每个具体文档之间的关系*，因此同一组的两名成员对同一张发票可能拥有不同权限 — 请参阅下方的实际示例。
+**Owner**（所有者）和 **Assignee**（受派人）取决于*用户与每个具体文档之间的关系*，因此同一组的两名成员对同一张发票可能拥有不同权限 — 请参阅下方的虚构示例。
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/access_control_scope_dropdown.png" alt="访问范围下拉菜单"><figcaption><p>每个操作列都提供相同的五种访问范围。</p></figcaption></figure>
+<!-- Obsolete illustration retired: Retire an obsolete English menu/scope/example illustration. Complete access-scope and field-permission explanations remain; the native matrix is shown separately without claiming hidden policy values. -->
 
 ### 审批还需要编辑权限
 
@@ -106,9 +106,9 @@
 字段级规则对该组的**所有**成员一视同仁 — 不受所有者 / 受派人关系影响。可使用这些规则为整个组隐藏或锁定敏感字段（例如折扣或总金额）。
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/access_control_field_permissions.png" alt="字段权限面板"><figcaption><p>Invoice（发票）类型的字段权限面板。<code>CUSTOMER_DISCOUNT</code> 已隐藏（无访问权限），其他字段仍为读写。</p></figcaption></figure>
+<!-- Obsolete illustration retired: Retire an obsolete English menu/scope/example illustration. Complete access-scope and field-permission explanations remain; the native matrix is shown separately without claiming hidden policy values. -->
 
-## 实际示例：访问控制对一张真实发票的影响
+## 虚构示例：访问控制对一张发票的影响
 
 假设你为应付账款文员创建了一个 **AP_CLERK** 组，并按以下方式配置 **Invoice**（发票）文档类型：
 
@@ -133,7 +133,7 @@
 | `CUSTOMER_DISCOUNT` | No Access（无访问权限） |
 | *(所有其他字段)* | Read/Write（读写） |
 
-现在来看一份实际文档 — 发票 **INV-4711**。该发票由 **Maria 上传**，并且**指派给了 Maria**。Maria 和她的同事 Tom 都属于 **AP_CLERK** 组。
+假设有一张发票 **INV-4711**；以下姓名、编号和权限均为讲解用的虚构示例。该发票由 **Maria 上传**，并且**指派给了 Maria**。Maria 和她的同事 Tom 都属于 **AP_CLERK** 组。
 
 **Maria（INV-4711 的所有者*和*受派人）：**
 

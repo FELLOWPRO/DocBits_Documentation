@@ -114,3 +114,7 @@ Door deze drie componenten, Trigger, Voorwaarde en Actie, te combineren, kunnen 
 ### Conclusie
 
 De "Easy When-And-Then"-regel van de DocBits Workflow Engine laat zien hoe sterk de engine zich richt op een gebruiksvriendelijk platform voor procesautomatisering. Door automatisering op te splitsen in de essentiële elementen Trigger, Voorwaarde en Actie, kunnen gebruikers workflows eenvoudiger bedenken, opbouwen en beheren. Of u nu nieuw bent met workflowautomatisering of een ervaren professional, de DocBits Workflow Engine biedt een efficiënte en toegankelijke tool om de productiviteit te verhogen en bedrijfsprocessen te stroomlijnen.
+
+## Leerpad van beginner tot expert
+
+[Leerpad van beginner tot expert](workflow-learning-path.md). Werk de niveaus op volgorde af. Alleen lezen volstaat niet: elk niveau eindigt met een eigen configuratie, toetsbare verwachting en bewijs. P0 voorkomt fundamentele uitvoeringsfouten; P1 verdiept gegevens, zakelijke besluiten en integraties.

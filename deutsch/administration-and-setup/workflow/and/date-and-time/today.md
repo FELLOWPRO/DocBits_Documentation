@@ -1,28 +1,52 @@
-# Heute
+# Heute mit einem Datum vergleichen
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-bd785752f7b5-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+Die Karte **Today** (`condition_today_is_isnot`, Version 2) vergleicht das aktuelle Datum der Ausführung mit einem eingetragenen Datum. Im geprüften Dev-Stand wird „heute“ aus UTC gebildet. Die Karte startet keinen Workflow zu einem Termin und wartet nicht bis zum eingetragenen Datum.
 
-## **Zweck:**
+<figure><img src="../../../../.gitbook/assets/wf-practice-20261022-today-card-de.png" alt="Heute-Karte mit Gleich-Vergleich und konkretem Datum."><figcaption><p>Heute-Karte mit Gleich-Vergleich und konkretem Datum.</p></figcaption></figure>
 
-Diese DocBits-Karte vergleicht das heutige Datum mit einem angegebenen Datum und ermöglicht es Workflows, basierend auf der Beziehung zwischen dem aktuellen Datum und dem angegebenen Datum ausgeführt zu werden. Sie ist besonders nützlich für zeitbasierte Automatisierung, Fristenmanagement oder das Auslösen geplanter Aufgaben.
+<figure><img src="../../../../.gitbook/assets/wf-practice-20261022-today-result-de.png" alt="Tatsächlicher Vergleich am 22. Oktober 2026: wahr."><figcaption><p>Tatsächlicher Vergleich am 22. Oktober 2026: wahr.</p></figcaption></figure>
 
-## **Funktionalität:**
+## Beispiel vollständig ausfüllen
 
-* **Datumsvergleich:** Diese Karte wertet das heutige Datum im Vergleich zu einem angegebenen Datum aus und verwendet dabei die folgenden Bedingungen:
-  * **Gleich (=):** Prüft, ob das heutige Datum mit dem angegebenen Datum übereinstimmt.
-  * **Ungleich (≠):** Stellt sicher, dass sich das heutige Datum vom angegebenen Datum unterscheidet.
-  * **Größer als (>):** Bestätigt, dass das heutige Datum nach dem angegebenen Datum liegt.
-  * **Größer oder gleich (≥):** Stellt sicher, dass das heutige Datum am oder nach dem angegebenen Datum liegt.
-  * **Kleiner als (<):** Prüft, ob das heutige Datum vor dem angegebenen Datum liegt.
-  * **Kleiner oder gleich (≤):** Stellt sicher, dass das heutige Datum am oder vor dem angegebenen Datum liegt.
-* **Datumseingabe:** Benutzer geben das Datum an, mit dem das heutige Datum verglichen wird.
+Nutzen Sie einen eigenen inaktiven Trainingsworkflow mit dem Dokumenttyp Rechnung und der synthetischen Rechnungsnummer `WF-TRAINING-001`. Fügen Sie unter **UND → Datum und Uhrzeit** die Heute-Karte hinzu.
 
-## **Verwendung:**
+| Parameter | Beispielwert | Bedeutung |
+| --- | --- | --- |
+| Datum (`date`) | `2026-10-22` | Vergleichsdatum im Format Jahr-Monat-Tag |
+| Operator | `eq` / Gleich | Heute muss auf dasselbe Kalenderdatum fallen. |
+| Kartenversion | `2` | Geprüfter Katalogstand des Beispiels |
 
-Diese Karte eignet sich ideal für Workflows mit Fristen, Erinnerungen oder zeitkritischen Bedingungen und stellt sicher, dass Aktionen basierend auf dem aktuellen Datum ausgeführt oder eingeschränkt werden.
+Führen Sie **Test → Benutzerdefinierte Daten** aus und öffnen Sie **Details**. Klappen Sie die Heute-Karte auf. Das Protokoll nennt das tatsächliche heutige Datum, das Vergleichsdatum, den Operator und das Ergebnis. Am 22. Oktober 2026 war der Vergleich mit `2026-10-22` erfolgreich.
 
-## **Beispiel-Szenario:**
+Ein späterer Test desselben gespeicherten Beispiels darf ein anderes Ergebnis liefern: „Heute“ wird bei jeder Ausführung neu ermittelt. Passen Sie für eine neue Übung das Datum bewusst an und notieren Sie das tatsächliche Testdatum.
 
-* Ein Benutzer konfiguriert die Karte so, dass sie prüft, ob **heute größer als (>) "2024-11-15"** ist. Ist die Bedingung erfüllt, löst der Workflow eine Folgebenachrichtigung für überfällige Aufgaben aus. Andernfalls wird der Workflow ohne Unterbrechung fortgesetzt.
+## Die Operatoren wählen
 
-Durch die Verwendung der Karte "Today's Date Validation" können Organisationen zeitbasierte Prozesse automatisieren, Fristen effizient einhalten und die Genauigkeit von Workflows wahren.
+| Operator | Bedeutung von links nach rechts |
+| --- | --- |
+| `eq` | Heute ist gleich dem Vergleichsdatum. |
+| `neq` | Heute ist ungleich dem Vergleichsdatum. |
+| `gt` | Heute liegt nach dem Vergleichsdatum. |
+| `ge` | Heute liegt auf oder nach dem Vergleichsdatum. |
+| `lt` | Heute liegt vor dem Vergleichsdatum. |
+| `le` | Heute liegt auf oder vor dem Vergleichsdatum. |
+
+Für „Frist ist ab heute abgelaufen“ wählen Sie den Operator nach Ihrer fachlichen Grenze: `gt` schließt das Fristdatum aus, `ge` schließt es ein. Verbinden Sie den passenden Bedingungsausgang mit der Folgeaktion.
+
+## Tatsächlich geprüfte Fälle
+
+| Eingabe bei Ausführung am 22.10.2026 | Operator | Knotenpfad |
+| --- | --- | --- |
+| `2026-10-22` | `eq` | `success` |
+| `2026-10-23` | `eq` | `failed_condition` |
+| `2026-10-22 23:59:59` | `eq` | `success` |
+
+Die dritte Prüfung zeigt: Die Karte vergleicht die **Datumsanteile**. Sie eignet sich nicht für eine sekundengenaue Fristprüfung. Verwenden Sie für Uhrzeitgrenzen die entsprechende Zeitkarte und prüfen Sie ihre Zeitzone separat.
+
+Ein unlesbares oder fehlendes Datum ist ein Eingabefehler. Verwenden Sie eindeutige ISO-Datumswerte. Zeitzonenangaben werden im geprüften Parser nicht als Umrechnungsauftrag behandelt. Rund um Mitternacht kann das UTC-Datum vom lokal angezeigten Datum abweichen.
+
+## Vor einer produktiven Nutzung
+
+Prüfen Sie jeweils den Tag vor der Grenze, den Grenztag und den Tag danach. Erfassen Sie aktuelles Ausführungsdatum, Kartenversion, Parameter und Knotenpfad. Ein grünes Ergebnis am Erstellungstag garantiert kein dauerhaft grünes Ergebnis an späteren Tagen.
+
+[Datum oder Uhrzeit prüfen](date-or-time.md) · [Test und Echtlauf unterscheiden](../../workflow-logs.md) · [Sicher aktivieren](../../workflow-go-live.md)

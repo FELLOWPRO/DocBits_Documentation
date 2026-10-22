@@ -45,3 +45,7 @@ Starten Sie mit invalid-number. Sichern Sie die erste Fehlermeldung von amount u
 ## Einzelkartentests gezielt wiederholen
 
 Im geprüften Dev-Designer wechselte „Erneuter Test“ nach „Test von diesem Knoten“ zum gesamten Graphen. Öffnen Sie den Kontextmenütest der gewünschten Karte erneut und prüfen Sie die tatsächlich besuchten Knoten. Ein Ergebnis mit sechs Knoten belegt nicht den Test einer einzelnen Leerprüfkarte. Ein Zähler für gescheiterte Aktionen kann auch eine nicht erfüllte Bedingung enthalten: Lesen Sie zusätzlich Kartenausgang, Logmeldung und Gesamtergebnis.
+
+## Beobachtete Meldungen gezielt einordnen
+
+Der [Meldungskatalog](workflow-error-catalog.md) verbindet tatsächliche Meldungen mit Eingabe, Konfiguration und Nachtest. Vergleichen Sie Knotenpfad und Gesamtergebnis getrennt. Für einen neuen Dokumentlauf verwenden Sie den [Leitfaden zur kontrollierten Aktivierung](workflow-go-live.md); für Änderungen den [gesicherten Wiederherstellungsablauf](workflow-change-and-recovery.md).

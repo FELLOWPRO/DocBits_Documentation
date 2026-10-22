@@ -7,43 +7,20 @@ description: >-
 
 # Flujo de trabajo de pedido y procesamiento de materiales
 
-Este documento describe el flujo de trabajo para pedir materiales a los proveedores, recibir mercancías y procesar facturas, con la integración entre los proveedores, el sistema INFOR ERP y DocBits para la gestión documental.
+El diagrama presenta un flujo de ejemplo entre compras, proveedor, IDM, DocBits y contabilidad. Ajuste los responsables, las comprobaciones y las integraciones a su configuración.
 
-### Resumen del proceso
+## Pedido y confirmación
 
-1. **Ordering Materials**
-   * Iniciar el pedido con el proveedor.
-   * Enviar el pedido al proveedor a través de INFOR.
-2. **Recibiendo confirmación de pedido**
-   * El proveedor confirma la recepción del pedido.
-   * Creación y envío de la confirmación del pedido.
-3. **Recepción e inspección de mercancías**
-   * Recibir las mercancías del proveedor.
-   * Registrar la entrada de mercancías en INFOR y cotejarla con el albarán de entrega.
-4. **Invoice Processing**
-   * Recibir la factura y enviarla a DocBits para su procesamiento.
-   * Comprobar y verificar los detalles de la factura con el pedido y la entrada de mercancías.
-5. **Final Steps**
-   * Archivar el pedido y los documentos relacionados en DocBits.
-   * Actualizar INFOR con los detalles de la transacción para la contabilidad financiera.
+Compras crea el pedido en INFOR, lo archiva en IDM y lo envía al proveedor. El proveedor comprueba si puede entregar las piezas. Puede confirmar el pedido, proponer ajustes o seguir examinándolo.
 
-### Puntos de decisión y acciones
+En el ejemplo, DocBits recibe la confirmación y comprueba si puede compararla automáticamente con el pedido. Cuando no es posible, el empleado revisa los datos OCR. El esquema contempla archivar la confirmación en IDM o actualizar la confirmación y el plazo de entrega.
 
-* **¿Las mercancías recibidas coinciden con el pedido?**
-  * Sí: Continuar con el procesamiento de la factura.
-  * No: Se requiere una comprobación y actualización manual.
-* **¿Es correcta la factura según las mercancías recibidas y los detalles del pedido?**
-  * Sí: Completar la transacción y actualizar los registros financieros.
-  * No: Se necesitan más comprobaciones y correcciones.
+## Entrega, recepción y factura
 
-### Puntos de integración
+El proveedor prepara las piezas, crea el albarán y la factura y expide las mercancías. La factura se envía a DocBits. Compras registra la recepción y la compara con el albarán; si encuentra una discrepancia, el esquema contempla una corrección manual de los datos antes de enviar el registro de recepción a DocBits.
 
-* **INFOR ERP**: Sistema principal para el procesamiento de pedidos, la entrada de mercancías y la contabilidad financiera.
-* **DocBits**: Gestión documental para el procesamiento y archivado de facturas y confirmaciones de pedidos.
+## Destino contable
 
-### Notas
+La factura y la comprobación de entrega y recepción convergen en el destino contable del ejemplo. Compruebe la configuración y los resultados de su propio proceso. El diagrama no acredita un registro contable o un pago ejecutado.
 
-* Asegúrese de que todos los documentos estén verificados y archivados para su registro.
-* Las discrepancias en los detalles del pedido o de la factura deben resolverse con prontitud para evitar retrasos.
-
-<figure><img src="../../../.gitbook/assets/embed.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-material-es.png" alt="Flujo de ejemplo para pedidos de materiales, confirmaciones, recepciones de mercancías y facturas entre proveedor, compras, IDM, DocBits y contabilidad. Adapte los controles y las integraciones a su configuración."><figcaption><p>Flujo de ejemplo para pedidos de materiales, confirmaciones, recepciones de mercancías y facturas entre proveedor, compras, IDM, DocBits y contabilidad. Adapte los controles y las integraciones a su configuración.</p></figcaption></figure>

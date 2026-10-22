@@ -1,21 +1,15 @@
 # Modelo de IA Específico del Proveedor para Extracción de Campos y Tablas
 
-En la sección de herramientas de la **Pantalla de Validación**, puedes elegir el modelo de IA utilizado para la **Extracción de Campos** y la **Extracción de Tablas**.\
-El **modelo de IA** seleccionado se aplica solo a todos los documentos del proveedor actual.
+En las herramientas de la pantalla de validación puede elegir el modelo de extracción de campos y tablas para el contexto de la plantilla actual. La preferencia se guarda por organización y plantilla (`tfidf_id`); no modifica automáticamente todas las plantillas o documentos históricos del mismo proveedor. Sin una preferencia específica se utiliza la configuración aplicable de la organización.
 
-Para cambiar el modelo, abre el menú de opciones haciendo clic en el botón **Más opciones** (tres puntos) en el lado derecho de la pantalla y, a continuación, elige uno de los modelos disponibles:<br>
+Abra **Más opciones** y el selector del modelo de IA. El menú ofrece **Full**, **Fast**, **Nexus**, **Nexus Flash**, **Auto** y **Auto Nexus**. Consulte la disponibilidad y los costes actuales de su entorno y las condiciones contratadas. Ninguna opción es siempre la más precisa o rápida; Fast no es un valor predeterminado universal.
 
-* **Full** – Máxima precisión; cuesta 2 tokens por documento
-* **Fast** – Nivel predeterminado; cuesta 1 token por documento
-* **Nexus** – Cuesta 1 token por documento
-* **Nexus Flash** – Nivel más rápido de la familia Nexus; cuesta 1 token por documento
-* **Auto** – DocBits decide por documento si Fast es suficiente o si hace falta Full; cuesta 1 token por documento
-* **Auto Nexus** – Como Auto, pero limitado a la familia de modelos Nexus; cuesta 1 token por documento
+Un cambio puede requerir confirmación y reiniciar la extracción. Compruebe primero el documento y el ámbito del cambio. Abrir el menú no cambia la preferencia; las ilustraciones no demuestran un cambio de modelo ejecutado.
 
-<figure><img src="../../../.gitbook/assets/dbdc860-supplier-ai-model-menu-es-20261012.png" alt="Menú de opciones de la pantalla de validación con el desplegable Modelo de IA"><figcaption><p>Abre el menú de opciones y elige el modelo de IA para este proveedor.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc860-supplier-ai-model-menu-es-20261012.png" alt="Vista de ejemplo existente con una factura sintética: Más opciones abre el menú Modelo de IA para el contexto de la plantilla actual. Los títulos de grupos y Go to Layout Template permanecen en inglés en este ejemplo."><figcaption><p>Vista de ejemplo existente con una factura sintética: Más opciones abre el menú Modelo de IA para el contexto de la plantilla actual. Los títulos de grupos y Go to Layout Template permanecen en inglés en este ejemplo.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc860-supplier-ai-model-options-es-20261012.png" alt="Desplegable Modelo de IA abierto con Full, Fast, Nexus, Nexus Flash, Auto y Auto Nexus"><figcaption><p>El desplegable Modelo de IA con las seis opciones disponibles.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc860-supplier-ai-model-options-es-20261012.png" alt="Vista de ejemplo existente del menú Modelo de IA con Full, Fast, Nexus, Nexus Flash, Auto y Auto Nexus. Son nombres de niveles del producto; los títulos de grupos del ejemplo permanecen en inglés. No se ejecutó ningún cambio de modelo."><figcaption><p>Vista de ejemplo existente del menú Modelo de IA con Full, Fast, Nexus, Nexus Flash, Auto y Auto Nexus. Son nombres de niveles del producto; los títulos de grupos del ejemplo permanecen en inglés. No se ejecutó ningún cambio de modelo.</p></figcaption></figure>
 
-Si los resultados de la **extracción de campos** o la **extracción de tablas** no son satisfactorios, intenta cambiar a otro modelo para mejorar la precisión.
+Compare los modelos con documentos de prueba autorizados y compruebe valores, tiempos y costes. Cambiar de modelo puede volver a procesar un documento y no garantiza una mejora. Para configurar el valor de la organización o revisar preferencias de plantillas, consulte la documentación relacionada.
 
-Para configurar el modelo de IA **globalmente para proveedores sin un modelo personalizado** o para **administrar qué modelo está activo para cada proveedor**, consulta la documentación correspondiente [**aquí**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md).
+[**aquí**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md)

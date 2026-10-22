@@ -2,124 +2,81 @@
 
 ## Descripción general
 
-Esta página explica cómo activar y usar el **Panel de proveedores**, así como dónde encontrar todos los ajustes relevantes. El Panel de proveedores te permite invitar a proveedores a **DocBits**. Una vez que se concede el acceso, los proveedores pueden iniciar sesión para ver el estado de sus **Órdenes de compra** y **Facturas** directamente dentro de **DocBits**.
+El **Panel de proveedores** permite gestionar el registro y el acceso de proveedores. La información y las acciones disponibles para cada proveedor dependen de los permisos, el diseño del portal y la integración de su organización. Dar de alta un registro no concede por sí solo acceso a todos los documentos de DocBits.
 
 ## Cómo activar el Panel de proveedores
 
-1.  Ve a **Ajustes → Procesamiento de documentos → Módulo**.
+1. Abra **Ajustes → Procesamiento de documentos → Módulos → Integración de documentos**.
+2. En **Envío y proveedor**, revise el interruptor **Supplier Dashboard**. Este nombre aún aparece en inglés en la interfaz española.
+3. Si debe cambiar la opción, compruebe antes que su organización está autorizada a usarla. Las imágenes muestran el estado existente; no representan una activación realizada durante la documentación.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_module.png)
-2.  En la sección **Envío y proveedor**, habilita la opción **Panel de proveedores**.
+<figure><img src="../../../.gitbook/assets/site-extra-modules-document-integration-es.png" alt="Módulos de integración de documentos en español. Abra Envío y proveedor para revisar la opción del portal; esta imagen no acredita una activación o un cambio de suscripción."><figcaption><p>Módulos de integración de documentos en español. Abra Envío y proveedor para revisar la opción del portal; esta imagen no acredita una activación o un cambio de suscripción.</p></figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_1.png)
+<figure><img src="../../../.gitbook/assets/site-complete-supplier-portal-module-es.png" alt="Envío y proveedor muestra el interruptor Supplier Dashboard, cuyo nombre aún aparece en inglés. La opción ya estaba activa en este entorno; no se cambió su estado."><figcaption><p>Envío y proveedor muestra el interruptor Supplier Dashboard, cuyo nombre aún aparece en inglés. La opción ya estaba activa en este entorno; no se cambió su estado.</p></figcaption></figure>
 
 ## Configuración del proveedor
 
-Una vez que la función **Panel de proveedores** está habilitada, aparecerá una nueva sección de **Configuración del proveedor** en la parte inferior del menú **Ajustes**.
+Abra el área de proveedores de **Ajustes**. En **General** puede revisar los campos adicionales de la invitación, el estado del proveedor y la agrupación de identificadores. Los nombres de estados configurados, como **Open**, pueden pertenecer al flujo de su organización.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_suppplier_settings.png)
+<figure><img src="../../../.gitbook/assets/site-complete-supplier-general-settings-es.png" alt="Ajustes generales del proveedor: campos adicionales de invitación, Estado del proveedor y agrupación de identificadores. Assigned User, Save Changes y Reset son las etiquetas inglesas que todavía muestra el producto. No se cambiaron ajustes ni se envió una invitación."><figcaption><p>Ajustes generales del proveedor: campos adicionales de invitación, Estado del proveedor y agrupación de identificadores. Assigned User, Save Changes y Reset son las etiquetas inglesas que todavía muestra el producto. No se cambiaron ajustes ni se envió una invitación.</p></figcaption></figure>
 
-[**Configuración general del proveedor**](../../settings/supplier-setting/supplier-general-settings.md): Aquí puedes personalizar el **Panel de proveedores** subiendo el logotipo de tu empresa—que se mostrará en el encabezado de todas las plantillas de correo electrónico—y gestionando documentos legales como los Términos de uso y la Política de privacidad.
+Use las guías específicas para cada área:
 
-[**Plantillas de correo electrónico**](../../settings/supplier-setting/editing-email-templates.md)**:** Aquí puedes crear y probar las plantillas de correo electrónico de invitación que se enviarán a los proveedores invitados.
+* [Configuración general del proveedor](../../settings/supplier-setting/supplier-general-settings.md): ajustes del portal y referencias a los documentos legales y a la identidad visual.
+* [Plantillas de correo electrónico](../../settings/supplier-setting/editing-email-templates.md): contenido de los mensajes de invitación.
+* [Diseño del proveedor](../../settings/supplier-setting/supplier-layout.md): campos que debe aportar el proveedor al registrarse.
+* [Configuración de exportación](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md): integración y mapeo del portal con Infor M3.
+* [Permisos para proveedores](../../settings/supplier-setting/supplier-permissions.md): alcance de acceso y grupos de proveedores.
 
-[**Diseño del proveedor**](../../settings/supplier-setting/supplier-layout.md)**:** Aquí puedes crear y gestionar los diseños que definen qué información deben proporcionar los nuevos proveedores durante el proceso de registro.
-
-[**Configuración de exportación**](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md): Aquí puedes definir cómo se mapean y sincronizan los datos entre el **Panel de proveedores** y el sistema **Infor M3** utilizando archivos de mapeo ION e IDM.
-
-[**Permisos para proveedores**](../../settings/supplier-setting/supplier-permissions.md): Aquí puedes configurar los permisos que tendrán los proveedores dentro del **Panel de proveedores**. También puedes agrupar proveedores, facilitando la gestión del acceso y los ajustes entre múltiples proveedores.
-
-Una guía detallada de todas las configuraciones del proveedor se puede encontrar [aquí](../../settings/supplier-setting/).
+El [índice de ajustes del proveedor](../../settings/supplier-setting/) reúne estas guías. La captura de General no muestra una exportación, el envío de un correo ni el acceso de un proveedor.
 
 ## Panel de proveedores <a href="#supplier-permissions" id="supplier-permissions"></a>
 
-Puedes acceder al **Panel de proveedores** desde el menú de la izquierda, como se muestra a continuación.
+Abra el panel desde la navegación de proveedores. La tabla muestra los registros accesibles para su usuario. Los recuentos, las columnas y los estados de la imagen corresponden al entorno mostrado; no son valores predeterminados.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_2.png)
-
-Todos los proveedores que has creado se muestran aquí.
+<figure><img src="../../../.gitbook/assets/site-complete-supplier-dashboard-overview-es.png" alt="Panel actual con Todos los proveedores, Pendiente de aprobación, Registro pendiente y búsqueda por nombre o número. La tabla contiene registros con sus datos ocultos; los recuentos pertenecen al entorno de prueba."><figcaption><p>Panel actual con Todos los proveedores, Pendiente de aprobación, Registro pendiente y búsqueda por nombre o número. La tabla contiene registros con sus datos ocultos; los recuentos pertenecen al entorno de prueba.</p></figcaption></figure>
 
 ## Filtrar por proveedores
 
-Puedes buscar proveedores por N**ombre** o N**úmero**, o usar los filtros avanzados para reducir los resultados por:
-
-* **Grupos de proveedores**
-* **Estado**
-* **Creado el**
-
-También puedes especificar cuántos proveedores deben mostrarse por página.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_9.png)
-
-Además, puedes filtrar rápidamente por los estados **Pendiente de aprobación** o **Registro pendiente** haciendo clic en la categoría correspondiente a la izquierda de la barra de filtros.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
+Utilice **Búsqueda por nombre, número** para localizar un proveedor. El control de filtros junto a la búsqueda permite revisar las opciones de su entorno. Las categorías **Todos los proveedores**, **Pendiente de aprobación** y **Registro pendiente** permiten acotar la lista. La paginación controla cuántos registros se muestran por página.
 
 ## Estado del proveedor
 
-Si estás utilizando el **Panel de proveedores**, es importante entender los diferentes estados que pueden tener los proveedores. A continuación se muestra una lista de todos los posibles estados de los proveedores y sus significados:
-
-* **Open**: Proveedor existente que aún no ha sido invitado al panel.
-* **Registro pendiente**: El proveedor ha sido invitado pero aún no ha completado el proceso de registro.
-* **A la espera de las aportaciones de los proveedores**: El registro está completo, pero se requieren más aportaciones o cambios por parte del proveedor.
-* **Pendiente de aprobación**: El proveedor ha completado el registro y está a la espera de la primera aprobación.
-* **Pendiente de aprobación de AP**: El proveedor ha recibido la primera aprobación y está a la espera de una segunda aprobación (Cuentas por pagar).
-* **Aprobado**: El proveedor ha completado el proceso y ha sido completamente aprobado.
-* **Rechazado**: El registro o la aprobación del proveedor ha sido rechazado.
+Revise el estado y el flujo configurados en su organización. Un registro pendiente de inscripción indica una fase distinta de una aprobación pendiente; no deduzca de un único estado que el proveedor ya tiene acceso o que se han cumplido todos los controles internos. Los nombres y pasos pueden variar según la configuración.
 
 ## Herramientas en el Panel de proveedores
 
-A la derecha de la barra de búsqueda, encontrarás varias herramientas que te ayudarán a interactuar y gestionar el panel de manera más eficiente.
-
 ### Refrescar tabla <a href="#refresh-table" id="refresh-table"></a>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_3.png)
-
-Haz clic en este botón para refrescar el panel y cargar los datos y estados más actualizados.
+El botón con la flecha circular vuelve a cargar la lista. Actualizar la tabla no envía una invitación ni modifica el estado de un proveedor.
 
 ### Establecer columnas de tabla para la organización <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_4.png)
+Abra el botón de configuración de columnas junto a la búsqueda. Este diálogo corresponde a la **tabla de proveedores**. Seleccione campos y use las flechas para moverlos entre **Columnas ocultas** y **Columnas visibles**; arrastre los campos visibles para cambiar su orden. **Hecho** confirma los cambios y **Cancelar** permite salir sin confirmarlos. Revise el alcance de la configuración de su organización antes de guardarla.
 
-Haz clic en este botón para abrir un menú donde puedes gestionar la visibilidad de las columnas en la tabla de órdenes de compra. Usa las casillas de verificación y los botones de flecha para mover columnas entre las secciones visibles y ocultas. También puedes reordenar columnas arrastrando y soltando los nombres de las columnas. Haz clic en **Hecho** para guardar tus cambios.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_7.png)
+<figure><img src="../../../.gitbook/assets/site-complete-supplier-columns-dialog-es.png" alt="Configuración de columnas de la tabla de proveedores, con Columnas ocultas y Columnas visibles. Las casillas y flechas permiten cambiar la visibilidad, y Hecho confirma los cambios. En esta captura no se modificó ni guardó la selección."><figcaption><p>Configuración de columnas de la tabla de proveedores, con Columnas ocultas y Columnas visibles. Las casillas y flechas permiten cambiar la visibilidad, y Hecho confirma los cambios. En esta captura no se modificó ni guardó la selección.</p></figcaption></figure>
 
 ### Analítica <a href="#analytics" id="analytics"></a>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_5.png)
-
-Hacer clic en este botón abrirá una nueva sección que muestra cuántos proveedores están a punto de expirar y cuándo.\
-Haz clic en cualquier categoría para aplicar un filtro y ver solo esos proveedores.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_8.png)
+El botón con el gráfico abre el resumen de vencimientos disponible para los proveedores. Los períodos y recuentos dependen de los datos de su organización; no representan necesariamente una fecha de caducidad del acceso a DocBits. Compruebe el filtro aplicado antes de interpretar la lista resultante.
 
 ## Crear proveedor y enviar correo electrónico de registro
 
-### **Para crear un nuevo proveedor:**
+### Para crear un nuevo proveedor
 
-1.  Haz clic en el ícono de más (+) en la esquina superior derecha.
+1. Pulse **+** en la barra de herramientas para abrir **Añadir proveedor**.
+2. Revise el grupo, el nombre del proveedor y los datos de la persona de contacto. Los campos adicionales dependen de la configuración.
+3. Antes de pulsar **Guardar**, compruebe el destinatario y la autorización para enviar la invitación. Esta acción puede iniciar el envío del enlace de registro; no debe tratarse como un borrador sin comunicación externa.
+4. Compruebe el resultado de la operación. Una confirmación de la solicitud no garantiza que el mensaje haya llegado al buzón; revise la entrega si el proveedor no lo recibe.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_6.png)
-2.  Completa los campos requeridos y luego haz clic en **Guardar**.
+<figure><img src="../../../.gitbook/assets/site-complete-supplier-create-dialog-es.png" alt="Formulario inicial Añadir proveedor, vacío y sin guardar. Guardar puede iniciar el envío del enlace de registro; compruebe los destinatarios y la autorización antes de usarlo. En esta captura no se creó un proveedor ni se envió correo."><figcaption><p>Formulario inicial Añadir proveedor, vacío y sin guardar. Guardar puede iniciar el envío del enlace de registro; compruebe los destinatarios y la autorización antes de usarlo. En esta captura no se creó un proveedor ni se envió correo.</p></figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_11.png)
-3. El proveedor recibirá automáticamente un correo electrónico con un enlace para crear su cuenta.
+La imagen muestra únicamente el formulario inicial, sin datos ni envío.
 
-### **Para enviar un correo electrónico de registro a un proveedor existente:**
+### Para enviar un correo electrónico de registro a un proveedor existente
 
-1. Localiza al proveedor en el **Panel de proveedores**.
-2. Haz clic en el menú de tres puntos en la columna de **Comportamiento**.
-3.  Selecciona **Magic Link**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_12.png)
-4. Verifica los detalles del proveedor.
-5.  Haz clic en **Enviar** para enviar el enlace de registro por correo electrónico.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_13.png)
+Localice el registro correcto y revise la acción **Magic Link** cuando esté disponible para su rol y el estado del proveedor. Compruebe los datos de contacto antes de confirmar **Enviar**. Esta operación solicita el correo de registro; no se ejecutó durante la preparación de esta guía. No use una cuenta real para probar un envío sin autorización.
 
 ## ¿Cómo funciona el proceso de registro para el proveedor?
 
-Después de que se envía un correo electrónico de invitación, el proveedor debe completar el proceso de registro para acceder al **Panel de proveedores**.
-
-Una guía detallada paso a paso sobre el proceso de registro se puede encontrar [aquí](supplier-registration.md).
+Tras recibir una invitación válida, el proveedor sigue el enlace y completa los datos y pasos requeridos por su organización. Consulte la [guía del proceso de registro](supplier-registration.md). El acceso final depende de los permisos y de las aprobaciones configuradas.

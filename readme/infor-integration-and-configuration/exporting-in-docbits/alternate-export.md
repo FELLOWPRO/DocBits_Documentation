@@ -1,31 +1,19 @@
 # Exportación alternativa
 
-## **Paso 1: Crear una nueva exportación**
+## Paso 1: Preparar la configuración de destino
 
-1. Vaya a **Configuración** > **Procesamiento de documentos** > **Exportar**.
-2. Haga clic en **Create New Export** para definir una nueva configuración de exportación.
-3. Guarde la configuración y asegúrese de que la exportación esté **desactivada**.
+Abra **Ajustes → Exportar** y defina la configuración adecuada para el destino y el tipo de documento. Guárdela y compruebe que esté desactivada para la exportación habitual si su flujo la reserva como destino alternativo.
 
-<figure><img src="../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
+## Paso 2: Configurar la exportación alternativa
 
-### **Paso 2: Activar la exportación alternativa**
+1. Abra **Ajustes → Tipos de Documento** y el engranaje del tipo correspondiente.
+2. Despliegue **Configuración de exportación** y localice **Exportación alternativa**.
+3. Seleccione **Estado** para definir cuándo está disponible esta opción y asigne la **Configuración de exportación** del destino. Estado no es un estado posterior a la exportación.
 
-1. Vaya a **Configuración** > **Configuración global** > **Tipo de documento** > **Más configuraciones**.
-2. Localice el ajuste **Alternate Export** y actívelo.
-3. Configure lo siguiente:
-   * **Document Status**: especifique el estado de los documentos después de la exportación alternativa.
-   * **Export Configuration**: seleccione la configuración de exportación recién creada que se utilizará para la exportación alternativa.
+<figure><img src="../../.gitbook/assets/site-complete-invoice-export-settings-es.png" alt="Configuración actual de Exportación alternativa. Estado determina su disponibilidad; no es el estado que se escribe después de exportar. La etiqueta real «Exportación validada y pendiente» tiene una redacción defectuosa. Test es una configuración de ejemplo; no se ejecutó ninguna exportación."><figcaption><p>Configuración actual de Exportación alternativa. Estado determina su disponibilidad; no es el estado que se escribe después de exportar. La etiqueta real «Exportación validada y pendiente» tiene una redacción defectuosa. Test es una configuración de ejemplo; no se ejecutó ninguna exportación.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (369).png" alt=""><figcaption></figcaption></figure>
+## Utilizar la exportación alternativa
 
-## Uso de la exportación alternativa
+Cuando el documento cumpla el estado configurado y la opción esté disponible en su flujo, seleccione el destino alternativo en la pantalla de conciliación de pedidos. También puede utilizar la tarjeta de exportación alternativa en un flujo de trabajo, configurando su destino y condiciones.
 
-**En la pantalla de PO-Matching**
-
-* Después de activar la exportación alternativa, tendrá la opción de seleccionarla directamente en la pantalla de **PO-Matching**.
-
-<figure><img src="../../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
-
-**Con la tarjeta de flujo de trabajo**
-
-* La tarjeta de flujo de trabajo **Alternate Export** también se puede utilizar para automatizar este proceso. Configure la tarjeta según sea necesario para aplicar la lógica de exportación alternativa a su flujo de trabajo.
+Para esta revisión solo se observó la configuración: no se creó un destino, se guardó un cambio ni se ejecutó una exportación.

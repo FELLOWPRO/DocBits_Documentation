@@ -55,7 +55,7 @@ Este archivo es responsable de extraer datos de un archivo XML Peppol BIS Billin
   * **Puede aparecer varias veces**: No.
 * **Dirección del Proveedor Línea 3**
   * **Fuente**:`//AccountingSupplierParty/Party/PostalAddress/AddressLine/Line/text()`
-  * **Mapeado a**: `<InvoINVOICEice><SUPPLIER><ADDRESS_LINE_3>`
+  * **Mapeado a**: `<INVOICE><SUPPLIER><ADDRESS_LINE_3>`
   * **Puede aparecer varias veces**: No.
 * **ID de IVA del Proveedor**
   * **Fuente**:`//AccountingSupplierParty/Party/PartyTaxScheme/CompanyID/text()`

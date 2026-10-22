@@ -4,7 +4,7 @@ A saved dashboard is a named view of your worklist: the search, filters, documen
 
 ## Create a dashboard
 
-1. Build the view you want to keep. Type your search in the search bar, apply **Smart Filters** from the field picker, use the **tune** filters, pick a document type tab, sort the table and adjust the columns.
+1. Build the view you want to keep. Type your search in the search bar, apply **Smart filters** from the field picker, use the **Filters** panel, pick a document type tab, sort the table and adjust the columns.
 
    <figure><img src="../../../.gitbook/assets/dbdc189-dashboard-search-bar-en.png" alt="Dashboard search bar with a completed condition shown as a chip, next to the toolbar for filters, raw view, content search and help"><figcaption><p>The saved view is exactly what the search bar and table show at the moment you save it.</p></figcaption></figure>
 

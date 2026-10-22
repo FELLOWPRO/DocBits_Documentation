@@ -48,9 +48,9 @@ The customer, office opening and narration are AI-generated. The dashboard actio
 
 Enter a document name, invoice number or other business value in the search box and press **Enter**. Select the **Filters** icon (three slider bars) at the right end of the search bar for **Status**, **Assigned To** and **Restart Required**, then choose **Apply**. Remove individual filter badges or use **Clear filters** when a document seems to be missing. Document-type tabs and saved views also narrow the list.
 
-The **bolt** icon at the start of the search box opens the field picker. It lists the **Smart Filters** first — ready-made searches such as **Overdue**, **Due soon**, **Assigned to me**, **Today's inbox**, **Pending validation** or **Electronic documents** — followed by every field you can search. Selecting an entry inserts the matching condition into the search box, so you do not have to know the syntax.
+The **bolt** icon at the start of the search box opens the field picker. It lists the **Smart filters** first — ready-made searches such as **Overdue**, **Due soon**, **Assigned to me**, **Today's inbox**, **Pending validation** or **Electronic documents** — followed by every field you can search. Selecting an entry inserts the matching condition into the search box, so you do not have to know the syntax.
 
-<figure><img src="../../../.gitbook/assets/dbdc189-dashboard-search-fields-en.png" alt="Field picker in the dashboard search box listing Smart Filters such as Overdue, Due soon, Assigned to me and Pending validation, followed by searchable fields"><figcaption><p>The field picker: Smart Filters on top, then the searchable fields.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc189-dashboard-search-fields-en.png" alt="Field picker in the dashboard search box listing Smart filters such as Overdue, Due soon, Assigned to me and Pending validation, followed by searchable fields"><figcaption><p>The field picker: Smart filters on top, then the searchable fields.</p></figcaption></figure>
 
 The search toolbar also provides structured search chips, a raw query view and a **Fields & Syntax** help dialog. Copy field names and examples from that dialog; keep technical field names unchanged when changing the UI language. Advanced search features depend on the search capabilities enabled for your organization.
 

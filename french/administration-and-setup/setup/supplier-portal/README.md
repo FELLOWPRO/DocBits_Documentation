@@ -17,7 +17,7 @@ Cette page explique comment activer et utiliser le **Tableau de bord du fourniss
 
 Une fois la fonctionnalité **Tableau de bord du fournisseur** activée, une nouvelle section **Paramètres du fournisseur** apparaîtra en bas du menu **Paramètres**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_suppplier_settings.png)
+<figure><img src="../../../.gitbook/assets/prior-t012-fr.png" alt="Paramètres généraux du portail fournisseurs : champs supplémentaires de l’invitation. L’interrupteur est affiché dans son état existant, sans modification."><figcaption><p>Paramètres généraux du portail fournisseurs : champs supplémentaires de l’invitation. L’interrupteur est affiché dans son état existant, sans modification.</p></figcaption></figure>
 
 [**Paramètres généraux du fournisseur**](../../settings/supplier-setting/supplier-general-settings.md): Ici, vous pouvez personnaliser le **Tableau de bord du fournisseur** en téléchargeant le logo de votre entreprise—affiché dans l'en-tête de tous les modèles d'e-mails—et en gérant des documents légaux tels que les Conditions d'utilisation et la Politique de confidentialité.
 

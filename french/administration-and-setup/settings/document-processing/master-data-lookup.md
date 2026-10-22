@@ -33,7 +33,7 @@ Les tableaux Fournisseur et Bon de commande comprennent des colonnes telles que 
 
 Cliquez sur **Settings** (icône en forme d'engrenage) en bas à gauche du panneau des sources de données pour ouvrir les paramètres des données de référence.
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_settings.png" alt="Paramètres de la Recherche de données de référence"><figcaption><p>Paramètres Supplier BOD et suppression des bons de commande</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-settings-fr.png" alt="Paramètres des données de base : synchronisation des comptes fournisseurs et durée de conservation des bons de commande. Les réglages affichés n’ont pas été modifiés."><figcaption><p>Paramètres des données de base : synchronisation des comptes fournisseurs et durée de conservation des bons de commande. Les réglages affichés n’ont pas été modifiés.</p></figcaption></figure>
 
 ### BOD fournisseur
 

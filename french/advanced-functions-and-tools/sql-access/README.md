@@ -47,9 +47,9 @@ clickhouse-client --host <hostname_or_ip> --port <port> --user <username> --pass
 
 ```
 
-### Créer des vues matérialisées
+### Exemple d’agrégation avec SELECT
 
-Nous recommandons de créer des vues matérialisées pour précalculer les données et améliorer les performances dans les outils d'analyse tels que PowerBI :
+La requête suivante agrège les lignes existantes ; elle ne crée pas de vue matérialisée. Un accès en lecture seule ne donne pas les droits d’écriture nécessaires à cette création. Adaptez les noms de tables et les conversions au schéma, au format des nombres et à la devise. Ne totalisez pas des devises différentes sans conversion explicite.
 
 ```sql
 SELECT toStartOfWeek(created_on) as week_start, sum(toFloat64OrZero(field_value)) as total_sum

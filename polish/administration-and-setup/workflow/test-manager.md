@@ -1,8 +1,8 @@
-# Test Manager
+# Zarządzanie testami
 
-**Test Manager** umożliwia zapisywanie wielokrotnego użytku **scenariuszy testowych** dla Twoich przepływów pracy i uruchamianie ich razem — dzięki czemu możesz potwierdzić, że przepływ pracy nadal działa poprawnie po wprowadzeniu w nim zmian. Działa zarówno dla przepływów Standard, jak i Advanced.
+**Zarządzanie testami** umożliwia zapisywanie wielokrotnego użytku **scenariuszy testowych** dla Twoich przepływów pracy i uruchamianie ich razem — dzięki czemu możesz potwierdzić, że przepływ pracy nadal działa poprawnie po wprowadzeniu w nim zmian. Działa zarówno dla przepływów Standard, jak i Advanced.
 
-Otwórz go z poziomu **Workflow Dashboard → Test Manager List**.
+Otwórz go z poziomu **Panel przepływów → Lista testów**.
 
 <figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Lista Test Manager ze scenariuszami testowymi, statusem i Run All Tests"><figcaption><p>Test Manager List — każdy zapisany scenariusz pokazuje wynik zaliczono/niezaliczono.</p></figcaption></figure>
 
@@ -24,5 +24,5 @@ Widok szczegółów pokazuje nazwę scenariusza i **status**, **nazwę przepływ
 
 To dwie różne rzeczy:
 
-- **Test Manager** (ta strona) — *zapisane, powtarzalne* scenariusze z oczekiwanymi wynikami, uruchamiane razem za pomocą **Uruchom wszystkie testy**. Używaj go do testów regresji po wprowadzeniu zmian.
+- **Zarządzanie testami** (ta strona) — *zapisane, powtarzalne* scenariusze z oczekiwanymi wynikami, uruchamiane razem za pomocą **Uruchom wszystkie testy**. Używaj go do testów regresji po wprowadzeniu zmian.
 - **Testowanie w kreatorze** — wbudowane elementy sterujące **Uprawomocnić** i **Test** wewnątrz kreatora Advanced Workflow, do szybkich kontroli podczas budowania. Zobacz [Walidacja i testowanie](advanced-workflow/validation-and-testing.md).

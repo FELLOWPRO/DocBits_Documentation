@@ -1,4 +1,4 @@
-# Groups, Users and Permissions
+# Grupy, użytkownicy i uprawnienia
 
 Te ustawienia odpowiadają na trzy różne pytania: kto może się zalogować, w której podorganizacji pracuje oraz co może robić jego grupa.
 

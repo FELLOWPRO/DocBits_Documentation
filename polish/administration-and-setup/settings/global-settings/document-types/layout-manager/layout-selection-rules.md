@@ -26,7 +26,7 @@ Pochodzenie nadal jest dostępne — jako jeden z wielu warunków. Reguła może
 
 Układy oparte na regułach włącza się **dla każdego typu dokumentu** osobno, jako **administrator organizacji**.
 
-1. Przejdź do **Settings → Global Settings → Document Types**.
+1. Przejdź do **Ustawienia → Ustawienia ogólne → Typy dokumentów**.
 2. Kliknij ikonę **ustawień** (koło zębate) na karcie typu dokumentu.
 3. Otwórz **Zarządzaj układami** i włącz przełącznik.
 
@@ -175,7 +175,7 @@ Ekran **Walidacja pola** · priorytet **5** · *Supplier ID is HP0000278* · cel
 
 ### Jeden układ dla kilku krajów
 
-Ekran **Walidacja pola** · priorytet **100** · **ANY of**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · cel *Faktura DACH*. Dezaktywuj zmigrowane reguły „Layout for AT” i „Layout for CH”, jeśli wskazują na starsze kopie.
+Ekran **Walidacja pola** · priorytet **100** · **Dowolny z warunków**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · cel *Faktura DACH*. Dezaktywuj zmigrowane reguły „Layout for AT” i „Layout for CH”, jeśli wskazują na starsze kopie.
 
 ### Prostszy ekran dla e-faktur
 

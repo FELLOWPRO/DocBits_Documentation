@@ -11,10 +11,10 @@ Die Haupttabelle zeigt alle Regelkonfigurationen:
 | Spalte | Beschreibung |
 |--------|-------------|
 | **Name** | Der Name des Regelwerks. Einträge mit dem Tag **default** sind vom System bereitgestellte Vorlagen. |
-| **Description** | Eine Zusammenfassung dessen, was das Regelwerk behandelt. |
-| **Last Modified By** | Der Benutzer, der dieses Regelwerk zuletzt bearbeitet hat. |
-| **Last Modified At** | Zeitstempel der letzten Änderung. |
-| **Actions** | Drei-Punkte-Menü zum Bearbeiten, Kopieren oder Löschen. |
+| **Beschreibung** | Eine Zusammenfassung dessen, was das Regelwerk behandelt. |
+| **Zuletzt geändert von** | Der Benutzer, der dieses Regelwerk zuletzt bearbeitet hat. |
+| **Zuletzt geändert am** | Zeitstempel der letzten Änderung. |
+| **Aktionen** | Drei-Punkte-Menü zum Bearbeiten, Kopieren oder Löschen. |
 
 Klicken Sie auf **+ New**, um ein neues Regelwerk zu erstellen, oder klicken Sie auf einen vorhandenen Namen, um den Regeleditor zu öffnen.
 

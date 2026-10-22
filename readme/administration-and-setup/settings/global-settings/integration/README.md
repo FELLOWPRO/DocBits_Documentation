@@ -1,4 +1,4 @@
-# Integration & SSO
+# Integration und SSO
 
 <figure><img src="../../../../.gitbook/assets/integration_sso-de.png" alt="Integration & SSO"><figcaption><p>SSO-Einstellungen in der deutschen Oberfläche. Organisationskennungen und Eingabewerte sind ausgeblendet.</p></figcaption></figure>
 
@@ -15,7 +15,7 @@ Verwalten Sie API-Schlüssel, die für den programmatischen Zugriff auf DocBits 
 | **Läuft Ab** | Ablaufdatum (oder „Never“). |
 | **Zuletzt Verwendet** | Wann der Schlüssel zuletzt verwendet wurde. |
 | **Status** | Active oder Inactive. |
-| **Actions** | Drei-Punkte-Menü zum Widerrufen oder Löschen. |
+| **Aktionen** | Drei-Punkte-Menü zum Widerrufen oder Löschen. |
 
 Klicken Sie auf **+ API-Schlüssel erstellen**, um einen neuen Schlüssel zu erzeugen.
 
@@ -49,7 +49,7 @@ Konfigurieren Sie Ihren externen Identity Provider (IdP):
 | **Mandanten-ID** | Die Mandantenkennung Ihres IdP. |
 | **Datei hochladen** | Laden Sie die Metadaten-XML-Datei Ihres IdP hoch. |
 
-Klicken Sie auf **Configure**, um Ihre IdP-Einstellungen zu speichern.
+Klicken Sie auf **Konfigurieren Sie**, um Ihre IdP-Einstellungen zu speichern.
 
 * **Höhere Effizienz:** Die Integration mit anderen Tools und Diensten kann Arbeitsabläufe straffen und die Effizienz steigern. Beispielsweise können Dokumente automatisch zwischen Docbits und einem CRM-System ausgetauscht werden, was manuelle Eingaben reduziert und die Produktivität erhöht
 * **Datenkonsistenz:** Die Integration ermöglicht den nahtlosen Datenaustausch zwischen verschiedenen Systemen und verbessert so Konsistenz und Genauigkeit der Daten. Das vermeidet Inkonsistenzen oder doppelte Dateneingaben, die zu Fehlern führen könnten.

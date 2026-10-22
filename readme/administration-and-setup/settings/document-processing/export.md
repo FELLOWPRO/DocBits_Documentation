@@ -5,7 +5,7 @@
 La page Exportation affiche toutes les configurations d'exportation configurées, y compris si elles sont actives ou inactives. À partir de là, les utilisateurs peuvent :
 
 * Consulter et gérer les configurations d'exportation existantes
-* Créer de nouvelles connexions d'exportation (par exemple, vers **Informations**, **Infor & IDM**, **Webhook** ou **SFTP**)
+* Créer de nouvelles connexions d'exportation (par exemple, vers **Infor**, **Infor & IDM**, **Webhook** ou **SFTP**)
 * Modifier ou supprimer les configurations d'exportation existantes
 
 ## Où le trouver
@@ -133,7 +133,7 @@ Pour créer une nouvelle exportation :
 
 </details>
 
-#### **PME**
+#### **SMB**
 
 <details>
 
@@ -177,10 +177,10 @@ Pour créer une nouvelle exportation :
   * Si laissé vide : s'applique à l'organisation principale.
   * Si sélectionné : l'exportation ne s'appliquera qu'à la sous-organisation choisie.
 * **Type de document** Menu déroulant listant tous les types de documents disponibles. Cela détermine à quel type de document cette configuration d'exportation s'applique.
-* **ION Mapping File** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers.
+* **Fichier de mappage ION** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers.
 * **Fichier de mappage IDM** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers. [Besoin d'aide pour en créer un ? Consultez le Guide de Mappage IDM](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **Cloud / On-Prem Toggle** Un commutateur pour indiquer le type de déploiement Infor :
-  * **Cloud** : Sélectionnez ceci si vous êtes client Infor CloudSuite.
+  * **Déploiement dans le cloud** : Sélectionnez ceci si vous êtes client Infor CloudSuite.
   * **On-Prem** : Sélectionnez ceci si Infor est auto-hébergé.
 
 </details>
@@ -200,10 +200,10 @@ Pour créer une nouvelle exportation :
   * Si laissé vide : s'applique à l'organisation principale.
   * Si sélectionné : l'exportation ne s'appliquera qu'à la sous-organisation choisie.
 * **Type de document** Menu déroulant listant tous les types de documents disponibles. Cela détermine à quel type de document cette configuration d'exportation s'applique.
-* **ION Mapping File** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers.
+* **Fichier de mappage ION** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers.
 * **Fichier de cartographie de la DBO** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers. [Besoin d'aide pour en créer un ? Consultez le Guide de Mappage BOD](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
 * **Cloud / On-Prem Toggle** Un commutateur pour indiquer le type de déploiement Infor :
-  * **Cloud** : Sélectionnez ceci si vous êtes client Infor CloudSuite.
+  * **Déploiement dans le cloud** : Sélectionnez ceci si vous êtes client Infor CloudSuite.
   * **On-Prem** : Sélectionnez ceci si Infor est auto-hébergé.
 
 </details>
@@ -223,11 +223,11 @@ Pour créer une nouvelle exportation :
   * Si laissé vide : s'applique à l'organisation principale.
   * Si sélectionné : l'exportation ne s'appliquera qu'à la sous-organisation choisie.
 * **Type de document** Menu déroulant listant tous les types de documents disponibles. Cela détermine à quel type de document cette configuration d'exportation s'applique.
-* **ION Mapping File** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers.
+* **Fichier de mappage ION** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers.
 * **Fichier de mappage IDM** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers. [Besoin d'aide pour en créer un ? Consultez le Guide de Mappage IDM](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **Fichier de cartographie de la DBO** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers. [Besoin d'aide pour en créer un ? Consultez le Guide de Mappage BOD](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
 * **Cloud / On-Prem Toggle** Un commutateur pour indiquer le type de déploiement Infor :
-  * **Cloud** : Sélectionnez ceci si vous êtes client Infor CloudSuite.
+  * **Déploiement dans le cloud** : Sélectionnez ceci si vous êtes client Infor CloudSuite.
   * **On-Prem** : Sélectionnez ceci si Infor est auto-hébergé.
 
 </details>
@@ -249,7 +249,7 @@ Pour créer une nouvelle exportation :
   * Si laissé vide : s'applique à l'organisation principale.
   * Si sélectionné : l'exportation ne s'appliquera qu'à la sous-organisation choisie.
 * **Type de document** Menu déroulant listant tous les types de documents disponibles. Cela détermine à quel type de document cette configuration d'exportation s'applique.
-* **ION Mapping File** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers.
+* **Fichier de mappage ION** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers.
 * **Fichier de mappage IDM** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers. [Besoin d'aide pour en créer un ? Consultez le Guide de Mappage IDM](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **Fichier de cartographie LN** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers. [Besoin d'aide pour en créer un ? Consultez l'Exemple de Mappage LN](../../../infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/)
 
@@ -270,7 +270,7 @@ Pour créer une nouvelle exportation :
   * Si laissé vide : s'applique à l'organisation principale.
   * Si sélectionné : l'exportation ne s'appliquera qu'à la sous-organisation choisie.
 * **Type de document** Menu déroulant listant tous les types de documents disponibles. Cela détermine à quel type de document cette configuration d'exportation s'applique.
-* **ION Mapping File** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers.
+* **Fichier de mappage ION** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers.
 * **Fichier de mappage IDM** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers. [Besoin d'aide pour en créer un ? Consultez le Guide de Mappage IDM](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **Fichier de cartographie M3** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers. [Besoin d'aide pour en créer un ? Consultez l'Exemple de Mappage M3](../../../infor-integration-and-configuration/exporting-to-infor/m3/example-export-m3.md)
 
@@ -291,8 +291,8 @@ Pour créer une nouvelle exportation :
   * Si laissé vide : s'applique à l'organisation principale.
   * Si sélectionné : l'exportation ne s'appliquera qu'à la sous-organisation choisie.
 * **Type de document** Menu déroulant listant tous les types de documents disponibles. Cela détermine à quel type de document cette configuration d'exportation s'applique.
-* **ION Mapping File** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers.
+* **Fichier de mappage ION** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers.
 * **Fichier de mappage IDM** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers. [Besoin d'aide pour en créer un ? Consultez le Guide de Mappage IDM](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **M3 toml Mapping File** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers ou utilisez l'option sélectionner Toml pour utiliser un toml créé avec le gestionnaire de règles. [Besoin d'aide pour en créer un ? Consultez le Guide du Gestionnaire de Règles](rule-manager/)
+* **Fichier de mappage M3 TOML** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers ou utilisez l'option sélectionner Toml pour utiliser un toml créé avec le gestionnaire de règles. [Besoin d'aide pour en créer un ? Consultez le Guide du Gestionnaire de Règles](rule-manager/)
 
 </details>

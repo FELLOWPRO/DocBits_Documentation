@@ -1,8 +1,8 @@
-# Test Manager
+# Gestion des tests
 
-Le **Test Manager** vous permet d'enregistrer des **scénarios de test** réutilisables pour vos workflows et de les exécuter ensemble — afin de confirmer qu'un workflow se comporte toujours correctement après une modification. Il fonctionne aussi bien pour les workflows Standard que Avancés.
+Le **Gestion des tests** vous permet d'enregistrer des **scénarios de test** réutilisables pour vos workflows et de les exécuter ensemble — afin de confirmer qu'un workflow se comporte toujours correctement après une modification. Il fonctionne aussi bien pour les workflows Standard que Avancés.
 
-Ouvrez-le depuis **Workflow Dashboard → Test Manager List**.
+Ouvrez-le depuis **Tableau de bord des flux → Liste des tests**.
 
 <figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Test Manager List avec les scénarios de test, leur statut et Run All Tests"><figcaption><p>La Test Manager List — chaque scénario enregistré affiche un résultat réussite/échec.</p></figcaption></figure>
 
@@ -24,5 +24,5 @@ La vue des détails affiche le nom du scénario et son **statut**, le **nom du w
 
 Ce sont deux choses différentes :
 
-- **Test Manager** (cette page) — des scénarios *enregistrés et reproductibles* avec des résultats attendus, exécutés ensemble grâce à **Exécuter tous les tests**. Utilisez-le pour les tests de régression après des modifications.
+- **Gestion des tests** (cette page) — des scénarios *enregistrés et reproductibles* avec des résultats attendus, exécutés ensemble grâce à **Exécuter tous les tests**. Utilisez-le pour les tests de régression après des modifications.
 - **Les tests dans le générateur** — les contrôles intégrés **Valider** et **Test** à l'intérieur du générateur Advanced Workflow, pour des vérifications rapides pendant que vous construisez. Voir [Validation et tests](advanced-workflow/validation-and-testing.md).

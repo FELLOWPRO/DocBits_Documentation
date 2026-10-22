@@ -1,4 +1,4 @@
-# Origin Layouts
+# Mises en page par origine
 
 {% embed url="https://youtu.be/-m45XGiIeig" %}
 Paramètre Origin de DocBits expliqué : Normes de pays pour les formats de date et de nombre

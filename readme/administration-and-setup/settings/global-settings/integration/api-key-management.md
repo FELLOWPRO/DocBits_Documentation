@@ -4,7 +4,7 @@ description: >-
   DocBits
 ---
 
-# API Key Management
+# Gestion des clés API
 
 Une API key permet à un autre système — votre ERP, un script ou une application partenaire — de dialoguer avec DocBits sans qu'un utilisateur se connecte. Votre organisation peut détenir autant de clés que nécessaire, et chacune se gère séparément : donnez-lui son propre nom, décidez si elle expire, et révoquez-la individuellement si elle venait à être exposée.
 

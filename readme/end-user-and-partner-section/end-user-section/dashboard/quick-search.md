@@ -260,7 +260,7 @@ Toute correspondance de texte ignore la casse.
 
 ### Connecteurs
 
-Combinez des conditions avec **AND** (les deux vraies), **OU** (l'une ou l'autre), **PAS** et des parenthèses `( … )` pour grouper :
+Combinez des conditions avec **AND** (les deux vraies), **OR** (l'une ou l'autre), **NOT** et des parenthèses `( … )` pour grouper :
 
 ```
 status=ready_for_validation AND supplier_name=Test

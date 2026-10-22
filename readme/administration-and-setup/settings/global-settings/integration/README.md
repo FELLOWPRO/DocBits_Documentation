@@ -1,4 +1,4 @@
-# Integration & SSO
+# Intégration et SSO
 
 <figure><img src="../../../../.gitbook/assets/prior-t010-fr.png" alt="Configuration de l’intégration et des fournisseurs SSO."><figcaption><p>Configuration de l’intégration et des fournisseurs SSO.</p></figcaption></figure>
 
@@ -49,7 +49,7 @@ Configurez votre fournisseur d'identité (IdP) externe :
 | **Identifiant du locataire** | L'identifiant de tenant de votre IdP. |
 | **Téléverser un fichier** | Téléversez le fichier XML de métadonnées de votre IdP. |
 
-Cliquez sur **Configure** pour enregistrer vos paramètres IdP.
+Cliquez sur **Configurer** pour enregistrer vos paramètres IdP.
 
 * **Efficacité accrue :** L'intégration avec d'autres outils et services peut simplifier les flux de travail et accroître l'efficacité. Par exemple, des documents peuvent être échangés automatiquement entre DocBits et un système CRM, ce qui réduit la saisie manuelle et augmente la productivité
 * **Cohérence des données :** L'intégration permet d'échanger des données sans rupture entre différents systèmes, ce qui améliore la cohérence et l'exactitude des données. Cela évite les incohérences ou les saisies en double qui pourraient entraîner des erreurs.

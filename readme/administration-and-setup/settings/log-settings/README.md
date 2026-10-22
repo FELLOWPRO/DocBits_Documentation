@@ -1,4 +1,4 @@
-# Activity Logging
+# Journal d’activité
 
 <figure><img src="../../../.gitbook/assets/prior-t011-fr.png" alt="Filtres du journal d’activité ; les entrées sont masquées."><figcaption><p>Filtres du journal d’activité ; les entrées sont masquées.</p></figcaption></figure>
 

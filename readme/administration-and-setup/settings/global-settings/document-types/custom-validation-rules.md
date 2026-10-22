@@ -32,10 +32,10 @@ Les règles sont définies par **type de document** et s'exécutent sur chaque d
 
 Les règles de validation personnalisées s'activent **par type de document**. Il n'existe pas de commutateur à l'échelle de l'organisation.
 
-1. Accédez à **Settings → Global Settings → Document Types**.
-2. Sur la carte du type de document, cliquez sur l'icône **settings** (engrenage).
+1. Accédez à **Paramètres → Paramètres généraux → Types de documents**.
+2. Sur la carte du type de document, cliquez sur l'icône **Paramètres** (engrenage).
 3. Ouvrez la section **Règles de validation personnalisées** et activez le bouton.
-4. Cliquez sur **Manage validation rules** pour ouvrir la liste des règles.
+4. Cliquez sur **Gérer les règles de validation** pour ouvrir la liste des règles.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-toggles.png" alt="Les boutons de règles dans les paramètres supplémentaires d'un type de document"><figcaption><p>Les boutons pour Manage Layouts, Custom Validation Rules et Transformation Rules</p></figcaption></figure>
 
@@ -49,7 +49,7 @@ Désormais, la carte du type de document affiche aussi un lien **Règles de vali
 
 ## La liste des règles
 
-**Document Types → (type de document) → Validation Rules** répertorie toutes les règles du type de document.
+**Types de documents → (type de document) → Règles de validation** répertorie toutes les règles du type de document.
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-fr.png" alt="Gestion des règles de validation avec les noms configurés masqués."><figcaption><p>Gestion des règles de validation avec les noms configurés masqués.</p></figcaption></figure>
 
@@ -59,7 +59,7 @@ Chaque carte affiche le nom et la description de la règle, ainsi que les badges
 
 | Source | De quoi s'agit-il | Ce que vous pouvez faire |
 | --- | --- | --- |
-| **Valeurs par défaut du système** | Une règle livrée avec DocBits pour toutes les organisations. | Elle ne peut pas être modifiée directement : le générateur affiche « This is a system default rule and cannot be edited. » Cliquez sur **Customize** pour créer votre propre copie modifiable, ou désactivez-la pour l'arrêter dans votre organisation. |
+| **Valeurs par défaut du système** | Une règle livrée avec DocBits pour toutes les organisations. | Elle ne peut pas être modifiée directement : le générateur affiche « This is a system default rule and cannot be edited. » Cliquez sur **Personnaliser** pour créer votre propre copie modifiable, ou désactivez-la pour l'arrêter dans votre organisation. |
 | **Personnalisé** | Une règle système par défaut que votre organisation a modifiée ou désactivée. | Modifiez-la comme votre propre règle. **Réinitialiser par défaut** supprime votre copie et rétablit l'original. |
 | **Coutume** | Une règle créée par votre organisation. | Modifier, **Dupliquer**, **Supprimer**. |
 
@@ -130,7 +130,7 @@ Une comparaison arithmétique. L'expression contient exactement **une** comparai
 * Cliquez sur les puces sous l'expression pour insérer des fonctions et des préfixes de champ : `sum()`, `count()`, `min()`, `max()`, `default()`, `coalesce()`, `header.`, `doc.`. Pendant que vous saisissez un nom de champ, une liste des champs correspondants s'ouvre.
 * `sum(row.NET_AMOUNT)`, `count(row.ITEM_NUMBER)`, `min(...)`, `max(...)` fonctionnent sur toutes les lignes et ne sont disponibles qu'au niveau **Table entière**. `count()` compte les lignes dans lesquelles la colonne est renseignée.
 * `default(header.discount, 0)` utilise `0` lorsque le champ est vide ; `coalesce(header.a, header.b, 0)` utilise la première valeur renseignée.
-* **Tolerance** : pour `==` et `!=`, les écarts jusqu'à ce montant sont considérés comme égaux. Utilisez `0.01` ou `0.05` pour absorber les arrondis. Elle n'a aucun effet sur `<`, `>`, `<=` et `>=`.
+* **Tolérance** : pour `==` et `!=`, les écarts jusqu'à ce montant sont considérés comme égaux. Utilisez `0.01` ou `0.05` pour absorber les arrondis. Elle n'a aucun effet sur `<`, `>`, `<=` et `>=`.
 * Les montants vides ou illisibles comptent pour `0`. Une division par zéro ignore la règle au lieu de provoquer une erreur.
 * Dans le message d'erreur, `{actual}` est remplacé par le résultat du côté gauche et `{expected}` par le résultat du côté droit.
 
@@ -277,7 +277,7 @@ Header field · Error · *Purchase Order* · Applies when *Total Amount* greater
 | Un Pattern correspond à des valeurs qu'il ne devrait pas | Les motifs recherchent à l'intérieur de la valeur. Ancrez avec `^` et `$`. |
 | Une seule de deux erreurs est affichée sur un champ | Un champ n'affiche que la première règle en échec. Ajustez les priorités ou rattachez l'une des règles à un autre champ. |
 | Les colonnes de tableau manquent dans *Applies when* | Elles ne sont disponibles qu'au niveau **Ligne du tableau**. |
-| La règle système par défaut ne peut pas être modifiée | Cliquez sur **Customize** pour créer votre propre copie. |
+| La règle système par défaut ne peut pas être modifiée | Cliquez sur **Personnaliser** pour créer votre propre copie. |
 
 ## Voir aussi
 

@@ -3270,5 +3270,6 @@
       "sha256": "9caf51f5fe62dedae7413cd28f26c174427f49866e6e6d170e52f72dd289fc17",
       "caption": "Filtres du tableau de bord par affectation et besoin de redémarrage."
     }
-  ]
+  ],
+  "additional_native_image_reuses": 2
 }

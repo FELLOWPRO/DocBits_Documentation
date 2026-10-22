@@ -59,7 +59,11 @@ Beim verzögerten Ziel war auch der zweite Request tatsächlich angekommen. Die 
 | Bewusst wiederholter `request_id` des Erfolgsfalls | Wieder empfangen; erst das Testziel meldet `duplicate=true` |
 | Verzögerte Antwort nach 65 Sekunden | Request angekommen, Karte nach etwa 60 Sekunden mit Lesetimeout abgebrochen |
 
-Die fünf ausgewählten Läufe erzeugten insgesamt zehn eingegangene Requests. Die Geschäftsfelder, Tabellen und der Status des eigenen Trainingsbelegs blieben in allen fünf Fällen unverändert. [Empfangsjournal, Fallübersicht und eigener Testempfänger herunterladen](../../../.gitbook/assets/wf-practice-20261022-https-evidence-de.zip). Die temporäre Adresse ist kein Dienst für Ihre Integration; verwenden Sie ein eigenes Testziel.
+Die fünf ausgewählten Läufe erzeugten insgesamt zehn eingegangene Requests. Die Geschäftsfelder, Tabellen und der Status des eigenen Trainingsbelegs blieben in allen fünf Fällen unverändert. Empfangsjournal, Fallübersicht und eigener Testempfänger herunterladen. Die temporäre Adresse ist kein Dienst für Ihre Integration; verwenden Sie ein eigenes Testziel.
+
+{% file src="../../../.gitbook/assets/wf-practice-20261022-https-evidence-de.zip" %}
+Empfangsjournal, Fallübersicht und eigener Testempfänger
+{% endfile %}
 
 ## Karten und Beispielparameter
 

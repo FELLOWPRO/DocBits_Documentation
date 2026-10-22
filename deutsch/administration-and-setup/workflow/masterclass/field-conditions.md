@@ -24,7 +24,11 @@ Verwenden Sie Compare two Fields, wenn beide Seiten aus dem Dokument stammen. Ei
 
 ## Vollständige Eingaben und echte Designer-Ergebnisse
 
-[Die zehn vollständigen Testeingaben, den inaktiven Beispielworkflow und die beobachteten Knotenergebnisse herunterladen](../../../.gitbook/assets/wf-practice-20261022-field-tests-de.zip). Ersetzen Sie vor dem Test beide `YOUR_ORG_ID` durch Ihre eigene Testorganisation. Ein isoliertes Objekt nur mit `total_amount` genügt nicht: Layout, Dokumenttyp und Organisationskontext gehören zur Eingabe. Die Screenshots zeigen den relevanten Feldabschnitt; die vollständigen JSON-Dateien stehen im Download.
+Die zehn vollständigen Testeingaben, den inaktiven Beispielworkflow und die beobachteten Knotenergebnisse herunterladen. Ersetzen Sie vor dem Test beide `YOUR_ORG_ID` durch Ihre eigene Testorganisation. Ein isoliertes Objekt nur mit `total_amount` genügt nicht: Layout, Dokumenttyp und Organisationskontext gehören zur Eingabe. Die Screenshots zeigen den relevanten Feldabschnitt; die vollständigen JSON-Dateien stehen im Download.
+
+{% file src="../../../.gitbook/assets/wf-practice-20261022-field-tests-de.zip" %}
+Die zehn vollständigen Testeingaben, den inaktiven Beispielworkflow und die beobachteten Knotenergebnisse
+{% endfile %}
 
 Die folgende Konfiguration verwendet zwei unabhängig erreichbare UND-Karten für dasselbe Feld: Zahlenvergleich `> 1000` und Leerprüfung. Beide Karten sind v2. Der technische Schlüssel ist `total_amount`; im Zahlen-Positivfall ist er im Layout und in den Felddaten als `AMOUNT` angegeben.
 

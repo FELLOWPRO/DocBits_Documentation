@@ -1,5 +1,13 @@
 # Regels voor het matchen van inkooporders
 
+## Regels en toleranties voor inkoopordermatching instellen
+
+De rondleiding opent het documenttype factuur, controleert de gepubliceerde regelversie en maakt een inactief concept. Ze behandelt regeltypen, prioriteit binnen de matchfase, vergelijkingskolommen, hoeveelheidsbasis, matchmodi en tolerantieberekeningen. Alleen het tutorialconcept wordt opgeslagen; de actieve versie en globale toleranties blijven behouden. De berekening met vijf procent is een voorbeeld en wijzigt de actieve tolerantie niet.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/nl.mp4" %}
+
+[Bekijk de video met ondertiteling](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/nl.html)
+
 ## Introductie: Inkooporders en beheer van PO-regels
 
 Het matchen van inkooporders (PO) is een cruciaal proces om consistentie te waarborgen tussen inkooporders (PO's) en de bijbehorende binnenkomende facturen of goederenontvangsten. Een robuuste set regels is essentieel om een hoge mate van automatische matching te bereiken, fraude te voorkomen en correcte betalingen te garanderen.

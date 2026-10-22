@@ -1,5 +1,13 @@
 # Validatiescherm
 
+## Een factuur corrigeren en opslaan als beoordelaar
+
+Vergelijk de oorspronkelijke factuur met de velden en drie factuurregels, corrigeer het factuurnummer, sla op en laad opnieuw om de opgeslagen waarde te controleren. De opname gebruikt een synthetische elektronische factuur en een gewoon beoordelaarsaccount. Deze correctie opslaan staat los van extractietraining, goedkeuring en export.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-validation-customer/v1/nl.mp4" %}
+
+[Bekijk met ondertiteling](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-validation-customer/v1/nl.html)
+
 ## Een factuur controleren en de verificatie afronden
 
 Volg een factuur van het dashboard tot de overdracht: vergelijk leverancier, datums, factuurnummer, bedragen en valuta met het origineel en lees een melding over een verplicht veld. Selecteer het nummer rechtstreeks op het document, bevestig de koppeling en bewaar de extractieregel met **Save Rules**. In dit voorbeeld wordt de gecontroleerde factuur daarna ter goedkeuring doorgestuurd. De beschikbare acties hangen af van je rechten en het proces van je bedrijf.

@@ -1,245 +1,276 @@
-# Classification And Extraction
+# Klasyfikacja i ekstrakcja
 
-## Overview
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction.png" alt=""><figcaption><p>Ustawienia klasyfikacji i ekstrakcji</p></figcaption></figure>
 
-In the **Classification and Extraction** settings, you can:
+## Przegląd
 
-* Enable **Document Splitting** based on QR codes
-* Configure **amount formatting**
-* Set up **table extraction**
-* Toggle processing of unsupported **ZUGFeRD** files
-* Define special classification rules
-* Monitor Custom-Trained **AI Models** used in the classification process
+W ustawieniach **Klasyfikacja i ekstrakcja** możesz:
 
-This page provides a detailed explanation of all available settings.
+* kontrolować, jak przesyłane dokumenty są **dzielone** i ile stron jest przetwarzanych
+* skonfigurować **formatowanie kwoty** na potrzeby porównywania kwot
+* skonfigurować **ekstrakcję tabeli**, w tym model AI używany dla danego dostawcy
+* włączyć lub wyłączyć przetwarzanie nieobsługiwanych plików **ZUGFeRD**
+* zdefiniować **zasady klasyfikacji**, które automatycznie przypisują typ dokumentu
+* przejrzeć **modele AI** i ich wytrenowane etykiety
 
-## **Accessing Classification and Extraction Settings**
+Strona ma trzy karty: **Ogólny**, **Zasady klasyfikacji** i **Modele AI**. Karta *Modele AI* jest wyświetlana tylko wtedy, gdy moduł modeli i etykiet jest włączony dla Twojej organizacji.
 
-To access the **Classification and Extraction** settings, go to:\
-**Settings → Document Processing → Classification and Extraction**
+| Karta | Zawartość |
+|---|---|
+| Ogólny | Podział dokumentów, Przetwarzanie dokumentów, Formatowanie kwoty, Ekstrakcja, Dokument elektroniczny |
+| Zasady klasyfikacji | Reguły regex, które klasyfikują dokumenty na podstawie nazwy źródła |
+| Modele AI | Modele trenowane indywidualnie wraz z etykietami, typami dokumentów i priorytetem |
 
-<figure><img src="../../../../.gitbook/assets/dbdc864-settings-nav-pl-20261012.png" alt="Nawigacja Ustawień z wyróżnionymi pozycjami Przetwarzanie dokumentów oraz Klasyfikacja i ekstrakcja"><figcaption><p>Otwórz <strong>Ustawienia → Przetwarzanie dokumentów → Klasyfikacja i ekstrakcja</strong>.</p></figcaption></figure>
+## Dostęp do ustawień klasyfikacji i ekstrakcji
 
-## Document Splitting
+Przejdź do **Ustawienia → Typy Dokumentu → Klasyfikacja i Ekstrakcja**.
 
-In the **Document Splitting** section, you can configure whether an uploaded document should be split into multiple documents whenever a **barcode** appears on one of its pages.
+## Ogólny
 
-To activate this feature:
+Karta **Ogólny** grupuje ustawienia w rozwijanych sekcjach. Wszystkie zmiany są zapisywane natychmiast po zmianie wartości; nie ma osobnego przycisku zapisu.
 
-1. Go to the **Document Splitting** section.
-2.  Open the dropdown menu.
+### Podział dokumentów
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt=""><figcaption></figcaption></figure>
-3.  Select **Split by Barcode/QR Code**.
+**Podział** określa, czy przesyłany dokument jest dzielony na kilka dokumentów, gdy na jednej z jego stron pojawi się kod kreskowy. Lista rozwijana oferuje:
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt=""><figcaption></figcaption></figure>
+* **Nie dziel przesłanych dokumentów** – wartość domyślna; dokument jest przetwarzany jako jeden plik.
+* **Podział według kodu kreskowego/kodu QR** – dokument jest dzielony przy każdym wykrytym kodzie kreskowym.
 
-You will then have the option to:
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_document_splitting.png" alt=""><figcaption><p>Opcje podziału w sekcji «Podział dokumentów»</p></figcaption></figure>
 
-* Select one or more barcode types to be detected.
-*   Specify a regex pattern that the barcode must match in order to trigger document splitting.
+Po wybraniu **Podział według kodu kreskowego/kodu QR** pojawiają się dwa dodatkowe pola:
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt=""><figcaption></figcaption></figure>
+* **Typ kodu kreskowego** – jeden lub więcej typów kodów kreskowych do wykrycia, na przykład *CODE-128* lub *QR-CODE*.
+* **Wzór kodu kreskowego** – wyrażenie regularne, które musi spełniać wartość kodu kreskowego, zanim zostanie wywołany podział. Pozostaw puste, aby dzielić przy każdym kodzie kreskowym wybranych typów. Wzór jest sprawdzany przed zapisaniem; nieprawidłowe wyrażenie jest zgłaszane od razu.
 
-## Amount Formatting
+Po udanym podziale dokument nadrzędny jest usuwany, a strony kontynuują jako osobne dokumenty w tym samym wsadzie.
 
-In the **Amount Formatting** section, you have two options:
+### Przetwarzanie dokumentów
 
-* **Allow Rounding During Amount Comparison:**\
-  If enabled, a tolerance of ±0.5 is allowed during amount comparison.\
-  If disabled, a default tolerance of ±0.05 applies.
-* **Require Exact Match for Amount Comparison:**\
-  If enabled, amounts must match exactly with zero tolerance.\
-  If disabled, a tolerance of ±0.05 is allowed.
+**Strony do przetworzenia** ogranicza, ile stron na dokument jest rozpoznawanych przez OCR, klasyfikowanych i wyodrębnianych.
 
-<mark style="color:red;">**Note**</mark>: Only one of these settings can be active at a time.
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_document_processing.png" alt=""><figcaption><p>Strony do przetworzenia w sekcji «Przetwarzanie dokumentów»</p></figcaption></figure>
 
-## Ekstrakcja tabeli
+* Puste lub **0** oznacza, że przetwarzane są wszystkie strony.
+* Liczba *N* ogranicza OCR, klasyfikację i ekstrakcję do pierwszych *N* stron. Cały dokument jest nadal zapisywany, wyświetlany i eksportowany; strony powyżej limitu są wyświetlane tylko do odczytu.
+
+### Formatowanie kwoty
+
+Dwa przełączniki kontrolują, jak kwoty są porównywane z danymi głównymi i zamówieniami zakupu.
+
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_amount_formatting.png" alt=""><figcaption><p>Sekcja «Formatowanie kwoty»</p></figcaption></figure>
+
+* **Zezwalaj na zaokrąglanie podczas porównywania kwot** – po włączeniu dopuszczalna jest tolerancja ±0,5. Po wyłączeniu obowiązuje ±0,05.
+* **Wymagaj dokładnego dopasowania do porównania kwot** – po włączeniu kwoty muszą się zgadzać dokładnie, bez tolerancji. Po wyłączeniu obowiązuje ±0,05.
+
+Tylko jeden z dwóch przełączników może być aktywny jednocześnie; włączenie jednego wyłącza drugi.
+
+### Ekstrakcja
 
 {% hint style="info" %}
-**Warunki wstępne działającej ekstrakcji tabeli**
+**Warunki działającej ekstrakcji tabeli**
 
-* Typ dokumentu ma **kolumny tabeli** (Ustawienia → Ustawienia globalne → Typy dokumentów → [Kolumny tabeli](../../global-settings/document-types/table-columns.md)). Bez kolumn nie ma do czego wyodrębniać.
-* Poniżej włączona jest opcja **Ekstrakcja tabeli** lub **Ekstrakcja tabeli AI**, dla całej organizacji.
-* Dokument ma czytelny tekst: wykonano OCR albo dla plików PDF utworzonych cyfrowo używany jest E-Text ([Ustawienia OCR](../ocr-settings.md)).
-* Szkolenie i modele AI działają **dla każdego dostawcy osobno**. Wytrenowana tabela dotyczy tylko dokumentów dostawcy, na którym została wytrenowana.
+* Typ dokumentu ma **kolumny tabeli** (Ustawienia → Ustawienia globalne → Typy Dokumentu → [Kolumny tabeli](../../global-settings/document-types/table-columns/README.md)). Bez kolumn nie ma do czego wyodrębniać.
+* **Ekstrakcja tabeli** lub **Ekstrakcja tabeli AI** jest włączona poniżej, dla całej organizacji.
+* Dokument zawiera czytelny tekst: uruchomiono OCR lub dla PDF-ów utworzonych cyfrowo używany jest E-Text ([Ustawienia OCR](../ocr-settings.md)).
+* Trenowanie i modele AI dotyczą **konkretnego dostawcy**. Wytrenowana tabela jest stosowana tylko do dokumentów dostawcy, dla którego została wytrenowana.
 {% endhint %}
 
-Tabele z dokumentów można wyodrębniać, włączając opcję **Ekstrakcja tabeli** lub **Ekstrakcja tabeli AI**. Wytrenowana tabela (oparta na AI lub ręczna) jest zawsze powiązana z konkretnym dostawcą.
+Możesz wyodrębniać tabele z dokumentów, włączając **Ekstrakcję tabeli** lub **Ekstrakcję tabeli AI**. Wytrenowana tabela (oparta na AI lub ręczna) jest zawsze powiązana z konkretnym dostawcą.
 
-**Ekstrakcja tabeli (Table Extraction):** Włącza ekstrakcję tabeli opartą na regułach. Tabele trenuje się dla każdego dostawcy na ekranie walidacji (*Go to table extraction view*).\
-Więcej o szkoleniu [tutaj](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_extraction.png" alt=""><figcaption><p>Przełączniki ekstrakcji tabeli</p></figcaption></figure>
 
-**Ekstrakcja tabeli AI (AI Table Extraction):** Wykorzystuje AI do wyodrębniania tabeli dowolnego dostawcy bez szkolenia. Jeśli wyniki dla jednego dostawcy nie są wystarczająco dokładne, wytrenuj tabelę tego dostawcy; zapisane reguły mają wtedy pierwszeństwo przed AI dla tego dostawcy.
+**Ekstrakcja tabeli:** Włącza opartą na regułach ekstrakcję tabel. Tabele są trenowane dla każdego dostawcy na ekranie walidacji (*Go to table extraction view*).\
+Więcej o trenowaniu dowiesz się [tutaj](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
 
-**Użyj wizji ekstrakcji tabeli (AI):** AI odczytuje obraz strony zamiast warstwy tekstowej. Pomaga przy dokumentach skanowanych i tabelach bez wyraźnej struktury tekstowej; działa wolniej. Rozwijana lista obok przełącznika określa, jak intensywnie używany jest obraz strony:
+**Ekstrakcja tabeli AI:** Wykorzystuje AI do wyodrębniania tabeli dowolnego dostawcy bez trenowania. Jeśli wyniki dla danego dostawcy nie są wystarczająco dokładne, wytrenuj tabelę tego dostawcy; zapisane reguły mają wtedy pierwszeństwo przed AI dla tego dostawcy.
 
-* **Wyłączone (tylko tekst)** – Używana jest tylko warstwa tekstowa. To ustawienie domyślne.
-* **Tylko obrazy** – Odczytywany jest wyłącznie obraz strony.
-* **Hybrydowy (tekst i obrazy)** – Warstwa tekstowa i obraz strony są łączone w tym samym żądaniu.
-* **Auto (decydowane dla każdego dokumentu)** – DocBits decyduje dla każdego dokumentu osobno, czy warstwa tekstowa wystarcza.
+**Użyj wizji ekstrakcji tabeli (AI):** AI czyta obraz strony zamiast warstwy tekstowej. Pomaga przy skanowanych dokumentach i tabelach bez wyraźnej struktury tekstu; jest wolniejsza. Lista rozwijana obok przełącznika określa, jak intensywnie używany jest obraz strony:
 
-Tryb jest zapisywany pod kluczem preferencji `TABLE_EXTRACTION_VISION_MODE`; starszy przełącznik `TABLE_EXTRACTION_USE_VISION` pozostaje i oznacza w praktyce *Tylko obrazy*.
+* **Wyłączone (tylko tekst)** – Używana jest tylko warstwa tekstowa. To wartość domyślna.
+* **Tylko obrazy** – Odczytiwany jest tylko obraz strony.
+* **Hybrydowe (tekst i obrazy)** – Warstwa tekstowa i obraz strony są łączone w jednym żądaniu.
+* **Auto (decydowane dla dokumentu)** – DocBits decyduje dla każdego dokumentu, czy warstwa tekstowa wystarcza.
 
-**Użyj ekstrakcji strukturalnej (AI):** AI zwraca tabelę w stałej strukturze, która mapuje się bezpośrednio na skonfigurowane kolumny tabeli. Zalecane, gdy nagłówki kolumn na dokumentach mocno się różnią. Kliknięcie tego ustawienia otwiera podgląd tego, o jakie pola i kolumny AI zostanie dokładnie poproszona: pola nagłówka oraz kolumny wierszy są wymienione wraz z ich źródłem (żądane albo wyłączone pola standardowe) wraz z oczekiwanym trybem wyjścia (na przykład *strict* – bez dodatkowych kolumn). Pola skonfigurowane dla typu dokumentu, ale wyłączone, nie są żądane od AI.
+**Użyj ekstrakcji strukturalnej (AI):** AI zwraca tabelę w stałej strukturze, która jest odwzorowywana bezpośrednio na skonfigurowane kolumny tabeli. Zalecane, gdy nagłówki kolumn na dokumentach mocno się różnią. Kliknięcie ustawienia otwiera podgląd dokładnie tych pól i kolumn, o które AI zostanie poproszona: pola nagłówka i kolumny wierszy są wymienione wraz ze swoim źródłem (żądane lub wyłączone pola standardowe), a także oczekiwany tryb wyjścia (na przykład *strict* – bez dodatkowych kolumn). Pola skonfigurowane dla typu dokumentu, ale wyłączone, nie są żądane od AI.
 
-**Ekstrakcja tabeli dla elementu kosztowego (Table Extraction for Costing Element):** Po włączeniu DocBits może wyodrębniać elementy kosztowe z tabel na poziomie pozycji i odpowiednio je klasyfikować.\
-Szczegółowe wyjaśnienie [tutaj](table-extraction-for-costing-element.md).
+**Ekstrakcja tabeli dla elementu kosztowego:** Po włączeniu DocBits może wyodrębniać elementy kosztowe z tabel na poziomie pozycji i odpowiednio je klasyfikować.\
+Szczegółowe wyjaśnienie znajdziesz [tutaj](table-extraction-for-costing-element.md).
 
-**Automatyczne wyodrębnianie kodu podatkowego (Auto Extract Tax Code):** Po włączeniu system automatycznie wypełnia pole **Kod podatkowy** na ekranie walidacji, pod warunkiem że pole kodu podatkowego jest skonfigurowane.\
+**Automatyczne wyodrębnianie kodu podatkowego:** Po włączeniu system automatycznie wypełnia pole **Kod podatkowy** na ekranie walidacji, o ile skonfigurowano pole kodu podatkowego.\
 Więcej informacji o tym ustawieniu [tutaj](auto-extract-tax-code.md).
 
-**Zapisywanie reguł ekstrakcji (tylko administrator) (Save extraction rules (Admin only)):** Tylko administratorzy mogą kliknąć *Save Rules* w szkoleniu tabeli. Włącz tę opcję, gdy użytkownicy zapisują reguły, które psują ekstrakcję dostawcy.
+**Zapisz zasady ekstrakcji (tylko administrator):** Tylko administratorzy mogą klikać *Save Rules* podczas trenowania tabel. Włącz to, gdy użytkownicy stale zapisują reguły, które psują ekstrakcję dostawcy.
 
-**Model sztucznej inteligencji:** Wybiera poziom AI używany do ekstrakcji tabeli. Dostępnych jest sześć opcji: **Full** (najwyższa dokładność, najwolniejsza, 2 tokeny na dokument), **Fast** (domyślna; 1 token na dokument), **Nexus** i **Nexus Flash** (alternatywna rodzina modeli, opcjonalnie) oraz **Auto** i **Auto Nexus**, w których DocBits decyduje dla każdego dokumentu, jak silny model jest potrzebny. Tabela pod selektorem pokazuje:
+**Wyodrębnij ukryte pola:** Pola oznaczone jako ukryte w ustawieniach pól są również wyodrębniane. Przydatne, gdy wartość jest potrzebna do reguły lub eksportu, ale nie powinna być widoczna na ekranie walidacji.
 
-* Którzy **dostawcy** używają którego modelu AI
-* Czy używają ekstrakcji strukturalnej (AI) i E-Textu
-* Opcje usunięcia wpisu i zresetowania w ten sposób dostawcy do wartości domyślnej
+**Model sztucznej inteligencji:** Wybiera poziom AI używany do ekstrakcji tabeli. Dostępnych jest sześć opcji: **Full** (najwyższa dokładność, najwolniejszy, 2 tokeny na dokument), **Fast** (domyślnie; 1 token na dokument), **Nexus** i **Nexus Flash** (alternatywna rodzina modeli, opcjonalnie), a także **Auto** i **Auto Nexus**, w których DocBits decyduje dla każdego dokumentu, jak silny model jest potrzebny. Tabela pod selektorem pokazuje:
+
+* którzy **dostawcy** używają którego modelu AI
+* czy używają ekstrakcji strukturalnej (AI) i E-Textu
+* opcje usunięcia wpisu i przywrócenia w ten sposób dostawcy do wartości domyślnej
 
 To ustawienie jest szczegółowo opisane [tutaj](ai-model.md).
 
-### Dlaczego tabela wygląda inaczej u każdego dostawcy?
+#### Dlaczego tabela wygląda inaczej u każdego dostawcy?
 
-Wszystko, czego DocBits uczy się o tabeli, jest zapisywane **dla każdego dostawcy osobno**:
+Wszystko, czego DocBits uczy się o tabeli, jest przechowywane **dla konkretnego dostawcy**:
 
-* **Zapisane reguły** (szkolenie tabeli): położenie tabeli i mapowanie jej kolumn w układzie tego dostawcy.
+* **Zapisane reguły** (trenowanie tabeli): pozycja tabeli i odwzorowanie jej kolumn w układzie tego dostawcy.
 * **Tagi tabeli AI i reguły formatowania**: wskazówki zapisane przez użytkownika dla tabeli AI tego dostawcy.
-* **Model AI specyficzny dla dostawcy**: poziom wybrany dla tego dostawcy w *Więcej ustawień* na ekranie walidacji.
+* **Model AI specyficzny dla dostawcy**: poziom wybrany dla tego dostawcy w *More settings* na ekranie walidacji.
 
-Dlatego dostawca A z zapisanymi regułami pokazuje deterministyczną tabelę w zakładce *Extracted table* na ekranie walidacji, a dostawca B bez reguł otrzymuje zakładkę *AI Extracted table*. Aby dostawca B zachowywał się jak A, wytrenuj raz tabelę dostawcy B. Aby zresetować dostawcę, usuń jego reguły na ekranie walidacji albo zresetuj jego dane szkoleniowe w tabeli Model AI.
+Dostawca A z zapisanymi regułami pokazuje więc deterministyczną tabelę na karcie *Extracted table* ekranu walidacji, a dostawca B bez reguł otrzymuje *AI Extracted table*. Aby dostawca B zachowywał się jak A, raz wytrenuj tabelę B. Aby zresetować dostawcę, usuń jego reguły na ekranie walidacji lub zresetuj jego dane treningowe w tabeli Model sztucznej inteligencji.
 
-### Klucze preferencji
+#### Klucze preferencji
 
-Każdy przełącznik w tej sekcji jest zapisywany jako preferencja organizacji. Użyj klucza, gdy ustawiasz wartość przez API (`/preferences/set_preference`), skrypt lub DocBits MCP (`get_preference` / `set_preference`).
+Każdy przełącznik w tej sekcji jest przechowywany jako preferencja organizacji. Użyj klucza, gdy ustawiasz wartość przez API (`/preferences/set_preference`), skrypt lub DocBits MCP (`get_preference` / `set_preference`).
 
-| Ustawienie (etykieta w interfejsie) | Klucz preferencji | Wartości |
+| Ustawienie (etykieta interfejsu) | Klucz preferencji | Wartości |
 |---|---|---|
-| Table Extraction | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
-| AI Table extraction | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
-| Use Table Extraction Vision (AI) | `TABLE_EXTRACTION_VISION_MODE` | `off` (domyślnie), `vision`, `hybrid`, `auto` |
-| Use Table Extraction Vision (AI) – starszy przełącznik | `TABLE_EXTRACTION_USE_VISION` | `true` / `false`; oznacza w praktyce `vision` |
-| Use Structured Extraction (AI) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
-| Table extraction for costing element | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
-| Auto extract tax code | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
-| Save extraction rules (Admin only) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
+| Podział | `SPLIT_DOCUMENT_ON_BARCODE` | `true` / `false` |
+| Typ kodu kreskowego | `SPLIT_DOCUMENT_BARCODE_TYPE` | lista nazw typów kodów kreskowych |
+| Wzór kodu kreskowego | `SPLIT_DOCUMENT_BARCODE_PATTERN` | ciąg regex |
+| Strony do przetworzenia | `RESTRICT_TO_PAGES` | liczba; puste lub `0` = wszystkie strony |
+| Zezwalaj na zaokrąglanie podczas porównywania kwot | `AMOUNTS_ROUNDING` | `true` / `false` |
+| Wymagaj dokładnego dopasowania do porównania kwot | `AMOUNTS_NO_ROUNDING` | `true` / `false` |
+| Ekstrakcja tabeli | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
+| Ekstrakcja tabeli AI | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
+| Użyj wizji ekstrakcji tabeli (AI) | `TABLE_EXTRACTION_VISION_MODE` | `off` (domyślnie), `vision`, `hybrid`, `auto` |
+| Użyj wizji ekstrakcji tabeli (AI) – stary przełącznik | `TABLE_EXTRACTION_USE_VISION` | `true` / `false`; oznacza `vision` |
+| Użyj ekstrakcji strukturalnej (AI) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
+| Ekstrakcja tabeli dla elementu kosztowego | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
+| Automatyczne wyodrębnianie kodu podatkowego | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
+| Zapisz zasady ekstrakcji (tylko administrator) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
+| Wyodrębnij ukryte pola | `EXTRACT_HIDDEN_FIELDS` | `true` / `false` |
 | Model sztucznej inteligencji | `AI_MODEL` | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
 | Wersja ekstrakcji tabeli (okno potwierdzenia) | `TBL_EXT_VERSION` | ciąg wersji |
-| Ustawienia OCR → Use AI data for tables if available | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
-| Ustawienia OCR → Use E-Text if available | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
+| Ustawienia OCR → Używaj danych AI dla tabel, jeśli są dostępne | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
+| Ustawienia OCR → Używaj E-Textu, jeśli jest dostępny | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
 
 Uwagi:
 
-* Preferencje logiczne są zapisywane jako ciągi `true` / `false`; klucz, który nigdy nie został ustawiony, liczy się jako `false`. Jeśli wyślesz `1` lub `0`, DocBits zapisze `true` / `false`.
+* Preferencje logiczne są przechowywane jako ciągi `true` / `false`; klucz nigdy nieustawiony liczy się jako `false`. Jeśli wyślesz `1` lub `0`, DocBits zapisze `true` / `false`.
 * Nieustawiony `AI_MODEL` oznacza **Fast**.
-* Nieustawiony `TABLE_EXTRACTION_VISION_MODE` jest wyznaczany ze starszego przełącznika `TABLE_EXTRACTION_USE_VISION`: `true` daje `vision`, każda inna wartość daje `off`.
-* Zmiana klucza obowiązuje dla dokumentów przetwarzanych później. Uruchom dokument ponownie, aby wyodrębnić go ponownie z nowym ustawieniem.
-* Wybory dla poszczególnych dostawców (E-Text, model AI, zapisane reguły) nie są preferencjami organizacji; ustawia się je na ekranie walidacji w *Więcej ustawień* dla dokumentu tego dostawcy.
+* Nieustawiony `TABLE_EXTRACTION_VISION_MODE` jest wyliczany ze starego przełącznika `TABLE_EXTRACTION_USE_VISION`: `true` daje `vision`, każda inna wartość daje `off`.
+* Zmiana klucza działa dla dokumentów przetwarzanych później. Uruchom dokument ponownie, aby wyodrębnić go z nowym ustawieniem.
+* Wybory dla dostawcy (E-Text, model AI, zapisane reguły) nie są preferencjami organizacji; ustawia się je na ekranie walidacji w *More settings* dla dokumentu tego dostawcy.
 
-## Electronic Document
+### Dokument elektroniczny
 
-**Process Unsupported ZUGFeRD PDF:** If enabled, unsupported **ZUGFeRD** versions will be processed as standard PDFs, and the embedded XML will be ignored.
+**Przetwarzaj nieobsługiwany ZUGFeRD PDF:** Po włączeniu nieobsługiwane wersje **ZUGFeRD** są przetwarzane jako standardowe pliki PDF, a osadzony XML jest ignorowany.
 
-The list of supported **ZUGFeRD** versions can be found [here](../../global-settings/document-types/edi/zugferd/README.md).
+Listę obsługiwanych wersji **ZUGFeRD** znajdziesz [tutaj](../../global-settings/document-types/edi/zugferd/README.md).
 
-## **Classification Rules**
+## Zasady klasyfikacji
 
-In the **Classification Rules** section, you can define specific **regex** patterns and criteria to help the system automatically classify documents during processing.
+Karta **Zasady klasyfikacji** zawiera listę reguł, które podczas przetwarzania automatycznie przypisują typ dokumentu. Każda reguła porównuje **wzór regex** z nazwą źródła dokumentu i w razie dopasowania ustawia typ dokumentu oraz opcjonalnie typ dokumentu podrzędnego.
 
-To access this section, click the **Classification Rules** tab at the top of the page.
+Przejdź na kartę, klikając **Zasady klasyfikacji** u góry strony.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules.png" alt=""><figcaption><p>Karta «Zasady klasyfikacji» z tabelą reguł</p></figcaption></figure>
 
-### **Add a New Classification Rule**
+Tabela ma jeden wiersz na regułę z następującymi kolumnami:
 
-To create a new rule:
+* **Typ** – gdzie stosowany jest wzór. Istnieją dwa typy: **Kod kreskowy** i **E-mail**.
+* **Wzór** – wyrażenie regularne zapisane dla reguły.
+* **Typ Dokumentu** – typ dokumentu przypisywany przy dopasowaniu wzoru.
+* **Typ Dokumentu Podrzędnego** – typ dokumentu podrzędnego przypisywany przy dopasowaniu wzoru.
+* **Podorganizacja** – podorganizacja, do której ogranicza się reguła. Puste oznacza, że reguła dotyczy wszystkich podorganizacji.
+* **Akcje** – menu wiersza z pozycjami *Redagować* i *Usuwać*.
 
-1.  Click **Add** in the top-right corner.
+Pole wyszukiwania nad tabelą filtruje wszystkie kolumny, w tym wyświetlane etykiety kolumn list rozwijanych.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt=""><figcaption></figcaption></figure>
-2. Fill in the following fields:
-   * **Pattern**: The regex pattern the system should search for to trigger classification.
-   * **Type**: Where the pattern should be searched (e.g., **Barcode**).
-   * **Sub Organization** _(optional)_: Specify which sub organization the rule applies to.
-   * **Document Type**: Define the document type to assign when the pattern is matched.
-   *   **Sub Document Type** _(optional)_: Specify a sub type for more detailed classification.
+### Dodawanie zasady klasyfikacji
 
-       <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt=""><figcaption></figcaption></figure>
-3.  Click **Save** to save your classification rule.
+1.  Kliknij **Dodać** nad tabelą.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_add.png" alt=""><figcaption><p>Okno «Konfigurowanie reguły klasyfikacji»</p></figcaption></figure>
+2. Wypełnij pola:
+   * **Wzór** (wymagane) – wyrażenie regularne, którego szuka reguła.
+   * **Typ** (wymagane) – **Kod kreskowy** lub **E-mail**. To decyduje, z którą nazwą źródła porównywany jest wzór.
+   * **Podorganizacja** *(opcjonalnie)* – ogranicza regułę do jednej podorganizacji.
+   * **Typ Dokumentu** – typ dokumentu przypisywany przy dopasowaniu wzoru.
+   * **Typ Dokumentu Podrzędnego** *(opcjonalnie)* – bardziej szczegółowy typ; lista zależy od wybranego typu dokumentu. Zmiana typu dokumentu czyści typ dokumentu podrzędnego.
+3.  Kliknij **Ratować**.
 
-### **Edit a Classification Rule**
+Okno sprawdza wzór przed zapisaniem. Wzór już używany przez inną regułę jest odrzucany z komunikatem *Wzór już istnieje*; pusty wzór jest odrzucany z komunikatem o polu wymaganym.
 
-To edit an existing rule:
+#### Pomoc dotycząca wzoru
 
-1.  Click the three dots in the **Actions** column.
+Przełącznik **Pokaż pomoc** pod polem wzoru otwiera wbudowane odniesienie z formatami nazwy źródła, z którymi porównywany jest wzór:
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
-2.  Select **Edit**.
+* **O365** – `Współdzielony e-mail + Folder › Współdzielony e-mail › Folder › E-mail › Identyfikator`
+* **Gmail** – `E-mail + Folder › Folder › E-mail › Identyfikator`
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt=""><figcaption></figcaption></figure>
-3. Make your desired changes.
-4.  Click **Save** to apply the updates.
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_pattern_help.png" alt=""><figcaption><p>Panel pomocy dotyczącej wzoru w oknie reguły</p></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+Przykłady w panelu:
 
-### **Delete a Classification Rule**
+* `.*@acme\.de.*` – dowolne źródło z tej skrzynki pocztowej
+* `^ap@acme\.de:.*` – konkretna skrzynka pocztowa, dowolny folder
 
-To delete a rule:
+Wskazówka: użyj `^` / `$` jako kotwicy dla dokładnych dopasowań, escapuj kropki jako `\.` i używaj `:` jako separatora pól. Wygrywa pierwszy obecny zestaw pól w nazwie źródła.
 
-1.  Click the three dots in the **Actions** column.
+Jeśli używasz typu **E-mail**, wzór jest porównywany z nazwami skrzynki pocztowej i folderu importowanego maila, a nie z treścią dokumentu.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
-2.  Select **Delete**.
+### Edytowanie zasady klasyfikacji
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt=""><figcaption></figcaption></figure>
+1.  Kliknij trzy kropki w kolumnie **Akcje** reguły, którą chcesz zmienić.
 
-## AI Models
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_row_menu.png" alt=""><figcaption><p>Menu wiersza z pozycjami Redagować i Usuwać</p></figcaption></figure>
+2.  Wybierz **Redagować**. Okno otwiera się z bieżącymi wartościami reguły.
 
-The **AI Models** section displays all custom-trained models that have been specifically fine-tuned for your needs.
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_edit.png" alt=""><figcaption><p>Edytowanie istniejącej zasady klasyfikacji</p></figcaption></figure>
+3. Wprowadź zmiany we wzorze, typie, podorganizacji, typie dokumentu lub typie dokumentu podrzędnego.
+4.  Kliknij **Ratować**.
 
-### Accessing the AI Models Section
+Obowiązuje ta sama walidacja co przy dodawaniu: wzór nie może być pusty ani duplikować wzoru innej reguły.
 
-To open this section, click the **AI Models** tab located at the top of the page.
+### Usuwanie zasady klasyfikacji
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt=""><figcaption></figcaption></figure>
+1. Kliknij trzy kropki w kolumnie **Akcje**.
+2. Wybierz **Usuwać**.
 
-### Model Categories
+Reguła jest natychmiast usuwana z listy. Usunięcie reguły nie zmienia dokumentów, które zostały już z jej pomocą sklasyfikowane.
 
-Models are organized into categories. Below each category name, the number of models it contains is shown.\
-Click on a category to view its details.
+## Modele AI
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt=""><figcaption></figcaption></figure>
+Karta **Modele AI** pokazuje modele trenowane indywidualnie, dostępne do klasyfikacji dokumentów, oraz ich etykiety. Pojawia się tylko wtedy, gdy moduł modeli i etykiet jest włączony dla Twojej organizacji.
 
-At the top of the selected category page, you’ll see key information about each model:
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_ai_models.png" alt=""><figcaption><p>Karta «Modele AI»</p></figcaption></figure>
 
-* **Type**: The type of model.
-* **First Page Only**: Indicates whether the model processes only the first page of a document.
-* **Version**: The version number of the model.
+Jeśli dla organizacji nie ma własnego modelu, karta pokazuje *Nie znaleziono żadnego rekordu!*.
 
-### Model Table
+### Modele
 
-All models within a category are listed in a table, which includes the following information:
+Każdy model to rozwijany wpis z:
 
-* **Name**: The name of the model.
-* **Next Model**: The model that will further process the output of the current model.
-* **Document Type**: The primary document type assigned by the model during classification.
-* **Document Sub Types**: The sub types into which the document is further classified.
-* **Priority**: The priority level that determines the model’s position in the classification queue.
+* **nazwą modelu** i plakietką **Domyślny** przy modelu używanym, gdy nic innego nie ma zastosowania.
+* liczbą **etykiet** wytrenowanych dla tego modelu.
+* dla każdego modelu, po rozwinięciu: **Typ**, **Tylko pierwsza strona** i **Wersja**.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt=""><figcaption></figcaption></figure>
+Pod tymi informacjami wymienione są etykiety modelu.
 
-### Editing a Model
+### Etykiety
 
-To edit a model:
+Etykiety to to, czego uczy się model. Każda etykieta przypisuje wzór rozpoznawany przez model do typu dokumentu.
 
-1.  Click the pen icon in the **Actions** column next to the model you want to edit.
+* **Nazwa** – nazwa etykiety.
+* **Następny model** – model, który kontynuuje przetwarzanie wyniku tej etykiety.
+* **TYP DOKUMENTU** – typ dokumentu przypisywany przez etykietę.
+* **Typ Dokumentu Podrzędnego** – bardziej szczegółowy typ dla etykiety.
+* **Priorytet** – kolejność oceniania etykiet; najpierw niższe liczby.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt=""><figcaption></figcaption></figure>
-2. Update the available fields:
-   * **Next Model**: Select the model that should process the output from the current model.
-   * **Document Type**: Choose the document type the model should classify the input as.
-3.  Click **Save** to apply your changes.
+Pole wyszukiwania nad tabelą etykiet filtruje etykiety wybranego modelu.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt=""><figcaption></figcaption></figure>
+### Edytowanie etykiety
+
+Kliknij ikonę ołówka w wierszu etykiety, aby otworzyć okno edycji. Oferuje ono **Następny model** i **Typ Dokumentu**; ustaw jedno z nich, ponieważ okno wymaga następnego modelu lub typu dokumentu. Kliknij **Ratować**, aby zastosować zmianę.
+
+## Powiązane strony
+
+* [Model sztucznej inteligencji](ai-model.md) – sześć poziomów ekstrakcji i sposób, w jaki dostawca otrzymuje własny model
+* [Automatyczne wyodrębnianie kodu podatkowego](auto-extract-tax-code.md)
+* [Ekstrakcja tabeli dla elementu kosztowego](table-extraction-for-costing-element.md)
+* [Ustawienia OCR](../ocr-settings.md)

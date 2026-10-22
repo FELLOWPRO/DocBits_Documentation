@@ -44,7 +44,7 @@ The "DocField Comparison Validation" workflow card is a robust tool for dynamic 
 
 **When to use:** Review invoices above a defined amount.
 
-**Configuration:** Select numeric field `net_total`, operator `>` and reference value `1000`.
+**Configuration:** Select numeric field `total_amount`, operator `>` and reference value `1000`.
 
 **Expected result and counterexample:** A value of `1200` passes. `1000` and `900` fail because the comparison is strictly greater than.
 

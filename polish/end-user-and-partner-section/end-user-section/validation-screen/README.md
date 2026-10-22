@@ -1,5 +1,13 @@
 # Ekran walidacji
 
+## Poprawianie i zapisywanie faktury jako osoba sprawdzająca
+
+Porównaj oryginalną fakturę z polami i trzema pozycjami, popraw numer faktury, zapisz i wczytaj ponownie, aby sprawdzić zachowaną wartość. Nagranie wykorzystuje syntetyczną fakturę elektroniczną oraz zwykłe konto osoby sprawdzającej. Zapis tej korekty jest odrębny od uczenia ekstrakcji, zatwierdzania i eksportu.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-validation-customer/v1/pl.mp4" %}
+
+[Obejrzyj z napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-validation-customer/v1/pl.html)
+
 ## Sprawdź fakturę i zakończ weryfikację
 
 Przejdź od panelu do przekazania faktury dalej: porównaj dostawcę, daty, numer, kwoty i walutę z oryginałem oraz odczytaj komunikat o wymaganym polu. Wybierz numer bezpośrednio na dokumencie, potwierdź powiązanie i zachowaj regułę odczytu przyciskiem **Save Rules**. W tym przykładzie sprawdzona faktura zostaje następnie przekazana do zatwierdzenia. Dostępne działania zależą od uprawnień i procesu w Twojej firmie.
